@@ -1,127 +1,178 @@
-.class public abstract synthetic Lvx2;
-.super Ljava/lang/Object;
+.class public final Lvx2;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:I
+
+.field public final synthetic c:LJP9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(ILkotlin/jvm/functions/Function0;I)V
+    .locals 0
 
     .line 1
-    invoke-static {}, LPij;->values()[LPij;
+    iput p3, p0, Lvx2;->a:I
 
     .line 2
     .line 3
+    packed-switch p3, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput p1, p0, Lvx2;->b:I
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, LPij;->b:LPij;
+    check-cast p2, LJP9;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iput-object p2, p0, Lvx2;->c:LJP9;
 
     .line 11
     .line 12
+    const/4 p1, 0x0
+
     .line 13
-    move-result v1
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     .line 14
-    const/4 v2, 0x1
-
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
+    return-void
+
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, LPij;->c:LPij;
+    :pswitch_0
+    iput p1, p0, Lvx2;->b:I
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    check-cast p2, LJP9;
 
     .line 20
     .line 21
-    .line 22
-    move-result v1
+    iput-object p2, p0, Lvx2;->c:LJP9;
 
+    .line 22
     .line 23
-    const/4 v2, 0x2
+    const/4 p1, 0x0
 
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     .line 25
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, LPij;->a:LPij;
-
     .line 27
+    return-void
+
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    nop
 
     .line 29
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lvx2;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LOdh;->b:LtGi;
+
+    .line 7
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    iget v1, p0, Lvx2;->b:I
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1}, LtGi;->k(I)V
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
+    iget-object v0, p0, Lvx2;->c:LJP9;
+
+    .line 16
+    .line 17
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 21
+    .line 22
+    return-object v0
+
+    .line 23
+    :pswitch_0
+    sget-object v0, LOdh;->b:LtGi;
+
+    .line 24
+    .line 25
+    if-eqz v0, :cond_1
+
+    .line 26
+    .line 27
+    iget v1, p0, Lvx2;->b:I
+
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, LtGi;->k(I)V
+
     .line 30
     .line 31
-    move-result v1
-
     .line 32
-    const/4 v2, 0x3
+    :cond_1
+    iget-object v0, p0, Lvx2;->c:LJP9;
 
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
     .line 34
-    .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, LPij;->t:LPij;
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
+    .line 35
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 38
     .line 39
+    return-object v0
+
     .line 40
-    move-result v1
+    nop
 
     .line 41
-    const/4 v2, 0x4
-
-    .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 43
-    .line 44
-    :catch_3
-    sput-object v0, Lvx2;->a:[I
-
-    .line 45
-    .line 46
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

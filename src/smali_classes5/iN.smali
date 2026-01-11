@@ -1,29 +1,3 @@
-.class public final LiN;
-.super Lhqk;
+.class public abstract LiN;
+.super LnN;
 .source "SourceFile"
-
-
-# static fields
-.field public static final a:LiN;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, LiN;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LiN;->a:LiN;
-
-    .line 7
-    .line 8
-    return-void
-.end method

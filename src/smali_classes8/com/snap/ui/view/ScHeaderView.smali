@@ -94,7 +94,7 @@
 
     move-result-object v2
 
-    sget-object v3, LCve;->k:[I
+    sget-object v3, LlNe;->k:[I
 
     invoke-virtual {v2, p2, v3, v0, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -228,7 +228,7 @@
 
     check-cast v3, Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0e0613
+    const v4, 0x7f0e0634
 
     .line 23
     invoke-virtual {v3, v4, p0, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -253,7 +253,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070508
+    const p2, 0x7f07052f
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -264,7 +264,7 @@
 
     move-result-object p2
 
-    const v3, 0x7f070c00
+    const v3, 0x7f070c27
 
     invoke-virtual {p2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -280,7 +280,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f070f35
+    const v5, 0x7f070f5a
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -307,7 +307,7 @@
 
     if-ne v1, p3, :cond_3
 
-    const v1, 0x7f0b0fda
+    const v1, 0x7f0b10fc
 
     .line 35
     invoke-virtual {p0, v1}, Landroid/view/View;->setId(I)V
@@ -319,44 +319,44 @@
     if-eqz v1, :cond_5
 
     .line 37
-    sget-object v1, LGwh;->a:LHwh;
+    sget-object v1, LHUh;->a:LIUh;
 
     .line 38
-    invoke-virtual {v1}, LHwh;->a()I
+    invoke-virtual {v1}, LIUh;->a()I
 
     move-result v4
 
     iput v4, p0, Lcom/snap/ui/view/ScHeaderView;->a:I
 
     .line 39
-    iget v4, v1, LHwh;->c:I
+    iget v4, v1, LIUh;->c:I
 
     if-nez v4, :cond_4
 
     .line 40
-    iget-object v4, v1, LHwh;->a:Landroid/content/Context;
+    iget-object v4, v1, LIUh;->a:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    const v5, 0x7f070c09
+    const v5, 0x7f070c30
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v4
 
-    invoke-virtual {v1}, LHwh;->a()I
+    invoke-virtual {v1}, LIUh;->a()I
 
     move-result v5
 
     add-int/2addr v5, v4
 
-    iput v5, v1, LHwh;->c:I
+    iput v5, v1, LIUh;->c:I
 
     .line 41
     :cond_4
-    iget v1, v1, LHwh;->c:I
+    iget v1, v1, LIUh;->c:I
 
     .line 42
     iput v1, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
@@ -367,7 +367,7 @@
 
     if-eqz v1, :cond_6
 
-    const v1, 0x7f0b1314
+    const v1, 0x7f0b144b
 
     .line 44
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -377,7 +377,7 @@
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
     :cond_6
-    const v1, 0x7f0b1316
+    const v1, 0x7f0b144d
 
     .line 45
     invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -499,7 +499,7 @@
 
     if-eqz p1, :cond_f
 
-    const p1, 0x7f0b1313
+    const p1, 0x7f0b144a
 
     .line 64
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -511,27 +511,27 @@
     iput-object p1, p0, Lcom/snap/ui/view/ScHeaderView;->c:Landroid/widget/ImageView;
 
     .line 65
-    new-instance p2, Lgy1;
+    new-instance p2, LtB1;
 
-    invoke-direct {p2, p1}, Lgy1;-><init>(Landroid/view/View;)V
+    invoke-direct {p2, p1}, LtB1;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 66
     iget-object p1, p0, Lcom/snap/ui/view/ScHeaderView;->c:Landroid/widget/ImageView;
 
-    new-instance p2, LJD0;
+    new-instance p2, LDG0;
 
-    const/16 v1, 0x8
+    const/16 v1, 0x9
 
-    invoke-direct {p2, v1, p0}, LJD0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v1, p0}, LDG0;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 67
     iget p1, p0, Lcom/snap/ui/view/ScHeaderView;->g0:I
 
-    const p2, 0x7f060327
+    const p2, 0x7f0603af
 
     if-eq p1, p2, :cond_b
 
@@ -630,7 +630,7 @@
 
     if-eq p1, p3, :cond_11
 
-    const p1, 0x7f0b1315
+    const p1, 0x7f0b144c
 
     .line 82
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -657,9 +657,9 @@
     .line 84
     iget-object p1, p0, Lcom/snap/ui/view/ScHeaderView;->t:Landroid/widget/ImageView;
 
-    new-instance p2, Lgy1;
+    new-instance p2, LtB1;
 
-    invoke-direct {p2, p1}, Lgy1;-><init>(Landroid/view/View;)V
+    invoke-direct {p2, p1}, LtB1;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -745,7 +745,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f070bff
+    const p3, 0x7f070c26
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -759,7 +759,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f070c01
+    const p3, 0x7f070c28
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 

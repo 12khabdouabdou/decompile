@@ -145,7 +145,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/AppInstallContent;->iconUri:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -158,7 +158,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/AppInstallContent;->title:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -171,7 +171,7 @@
 
     iget-object p1, p1, Lcom/snap/discover/playback/content/model/AppInstallContent;->appInstallPackageInfo:Lcom/snap/discover/playback/content/model/AppInstallPackageInfo;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -244,7 +244,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 14
     .line 15
@@ -298,7 +298,7 @@
 
     .line 12
     .line 13
-    invoke-static {v3, v0, v4, v1, v5}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v0, v4, v1, v5}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 14
     .line 15

@@ -4,55 +4,57 @@
 
 
 # virtual methods
-.method public abstract batchSnapStats(LTQ0;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LTQ0;
-        .annotation runtime Ljv1;
+.method public abstract batchSnapStats(LaU0;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LaU0;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LTQ0;",
+            "LaU0;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LUQ0;",
+            "LbU0;",
             ">;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract batchStories(Ljava/lang/String;LdJh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract batchStories(Ljava/lang/String;Lt7i;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LdJh;
-        .annotation runtime Ljv1;
+    .param p2    # Lt7i;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .param p4    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "X-Snap-Route-Tag"
+        .end annotation
+    .end param
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -63,35 +65,36 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LdJh;",
+            "Lt7i;",
+            "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LWGh;",
+            "Ljnf<",
+            "Ln5i;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract searchTopics(Ljava/lang/String;LQDf;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract searchTopics(Ljava/lang/String;LlXf;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LQDf;
-        .annotation runtime Ljv1;
+    .param p2    # LlXf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -102,35 +105,40 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LQDf;",
+            "LlXf;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LRDf;",
+            "Ljnf<",
+            "LmXf;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract stories(Ljava/lang/String;LdJh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract stories(Ljava/lang/String;Lt7i;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LdJh;
-        .annotation runtime Ljv1;
+    .param p2    # Lt7i;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .param p4    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "X-Snap-Route-Tag"
+        .end annotation
+    .end param
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -141,13 +149,17 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LdJh;",
+            "Lt7i;",
+            "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LgJh;",
+            "Ljnf<",
+            "Lw7i;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

@@ -8,23 +8,23 @@
 
 
 # instance fields
-.field public A0:LUY0;
+.field public A0:LF21;
 
 .field public A1:F
 
-.field public B0:LkAg;
+.field public B0:LxVg;
 
 .field public B1:F
 
-.field public C0:LJ7d;
+.field public C0:LYmd;
 
 .field public C1:F
 
-.field public D0:LYG1;
+.field public D0:LQw1;
 
 .field public D1:F
 
-.field public E0:Ln2j;
+.field public E0:LH4j;
 
 .field public E1:F
 
@@ -36,35 +36,35 @@
 
 .field public G1:I
 
-.field public H0:LYD3;
+.field public H0:LAH3;
 
 .field public H1:I
 
-.field public I0:LFl2;
+.field public I0:Lhl2;
 
 .field public I1:F
 
-.field public J0:Led2;
+.field public J0:LBe2;
 
 .field public J1:F
 
-.field public K0:LNg2;
+.field public K0:LTf2;
 
 .field public K1:F
 
-.field public L0:Lzq2;
+.field public L0:LdQ1;
 
 .field public L1:F
 
-.field public final M0:LIB2;
+.field public final M0:LyE2;
 
 .field public M1:F
 
-.field public final N0:LOze;
+.field public final N0:LFRe;
 
 .field public N1:F
 
-.field public final O0:LXfi;
+.field public final O0:LREi;
 
 .field public O1:F
 
@@ -72,95 +72,95 @@
 
 .field public P1:F
 
-.field public final Q0:LXfi;
+.field public final Q0:LREi;
 
 .field public Q1:F
 
-.field public final R0:LXfi;
+.field public final R0:LREi;
 
 .field public R1:F
 
-.field public final S0:LXfi;
+.field public final S0:LREi;
 
 .field public S1:I
 
-.field public final T0:LXfi;
+.field public final T0:LREi;
 
 .field public T1:I
 
-.field public final U0:LXfi;
+.field public final U0:LREi;
 
 .field public U1:I
 
-.field public final V0:LXfi;
+.field public final V0:LREi;
 
 .field public V1:I
 
-.field public final W0:LXfi;
+.field public final W0:LREi;
 
 .field public W1:I
 
-.field public final X0:LXfi;
+.field public final X0:LREi;
 
 .field public X1:I
 
-.field public final Y0:LXfi;
+.field public final Y0:LREi;
 
 .field public Y1:F
 
-.field public final Z0:LXfi;
+.field public final Z0:LREi;
 
 .field public Z1:F
 
-.field public final a1:LXfi;
+.field public final a1:LREi;
 
 .field public a2:F
 
-.field public final b1:LXfi;
+.field public final b1:LREi;
 
 .field public b2:F
 
-.field public final c1:LXfi;
+.field public final c1:LREi;
 
 .field public final c2:Ljava/util/ArrayList;
 
-.field public final d1:LXfi;
+.field public final d1:LREi;
 
-.field public d2:LjC8;
+.field public d2:LfJ8;
 
-.field public final e1:LXfi;
+.field public final e1:LREi;
 
 .field public final e2:Ljava/util/LinkedHashMap;
 
-.field public final f1:LXfi;
+.field public final f1:LREi;
 
 .field public final f2:Ljava/util/LinkedHashMap;
 
-.field public final g1:LXfi;
+.field public final g1:LREi;
 
-.field public g2:LrB2;
+.field public g2:LhE2;
 
-.field public final h1:LXfi;
+.field public final h1:LREi;
 
 .field public h2:J
 
-.field public final i1:LXfi;
+.field public final i1:LREi;
 
 .field public final i2:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final j1:LXfi;
+.field public final j1:LREi;
 
-.field public final k1:LXfi;
+.field public final k1:LREi;
 
-.field public final l1:LXfi;
+.field public final l1:LREi;
 
-.field public final m1:LXfi;
+.field public final m1:LREi;
 
-.field public final n1:LXfi;
+.field public final n1:LREi;
 
-.field public final o1:LXfi;
+.field public final o1:LREi;
 
-.field public final p1:LXfi;
+.field public final p1:LREi;
 
 .field public final q1:J
 
@@ -174,19 +174,19 @@
 
 .field public v1:F
 
-.field public w0:LHB2;
+.field public w0:LxE2;
 
 .field public w1:F
 
-.field public x0:LTqc;
+.field public x0:LmGc;
 
 .field public x1:F
 
-.field public y0:Lzre;
+.field public y0:LlJe;
 
 .field public y1:F
 
-.field public z0:LgZ0;
+.field public z0:LR21;
 
 .field public z1:F
 
@@ -201,20 +201,20 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LIB2;
+    new-instance v0, LyE2;
 
     .line 5
     .line 6
-    invoke-direct {v0, p0}, LIB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;)V
+    invoke-direct {v0, p0}, LyE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;)V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->M0:LIB2;
+    iput-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->M0:LyE2;
 
     .line 10
     .line 11
-    invoke-static {}, LE73;->a()LOze;
+    invoke-static {}, LV93;->a()LFRe;
 
     .line 12
     .line 13
@@ -222,24 +222,24 @@
     move-result-object v0
 
     .line 15
-    iput-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->N0:LOze;
+    iput-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->N0:LFRe;
 
     .line 16
     .line 17
-    sget-object v0, LHu2;->n0:LHu2;
+    sget-object v0, LAE2;->g0:LAE2;
 
     .line 18
     .line 19
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 20
     .line 21
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 22
     .line 23
     .line 24
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->O0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->O0:LREi;
 
     .line 25
     .line 26
@@ -278,445 +278,445 @@
 
     .line 40
     .line 41
-    sget-object v0, LHu2;->e0:LHu2;
+    sget-object v0, LSc2;->B0:LSc2;
 
     .line 42
     .line 43
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 44
     .line 45
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 46
     .line 47
     .line 48
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Q0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Q0:LREi;
 
     .line 49
     .line 50
-    sget-object v0, LHu2;->t0:LHu2;
+    sget-object v0, LAE2;->m0:LAE2;
 
     .line 51
     .line 52
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 53
     .line 54
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 55
     .line 56
     .line 57
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->R0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->R0:LREi;
 
     .line 58
     .line 59
-    sget-object v0, LHu2;->Z:LHu2;
+    sget-object v0, LSc2;->A0:LSc2;
 
     .line 60
     .line 61
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 62
     .line 63
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 64
     .line 65
     .line 66
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->S0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->S0:LREi;
 
     .line 67
     .line 68
-    sget-object v0, LHu2;->A0:LHu2;
+    sget-object v0, LAE2;->t0:LAE2;
 
     .line 69
     .line 70
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 71
     .line 72
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 73
     .line 74
     .line 75
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->T0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->T0:LREi;
 
     .line 76
     .line 77
-    sget-object v0, LHu2;->i0:LHu2;
+    sget-object v0, LAE2;->X:LAE2;
 
     .line 78
     .line 79
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 80
     .line 81
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 82
     .line 83
     .line 84
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->U0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->U0:LREi;
 
     .line 85
     .line 86
-    sget-object v0, LHu2;->h0:LHu2;
+    sget-object v0, LAE2;->t:LAE2;
 
     .line 87
     .line 88
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 89
     .line 90
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 91
     .line 92
     .line 93
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->V0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->V0:LREi;
 
     .line 94
     .line 95
-    sget-object v0, LHu2;->f0:LHu2;
+    sget-object v0, LAE2;->b:LAE2;
 
     .line 96
     .line 97
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 98
     .line 99
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 100
     .line 101
     .line 102
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->W0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->W0:LREi;
 
     .line 103
     .line 104
-    sget-object v0, LHu2;->w0:LHu2;
+    sget-object v0, LAE2;->p0:LAE2;
 
     .line 105
     .line 106
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 107
     .line 108
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 109
     .line 110
     .line 111
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->X0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->X0:LREi;
 
     .line 112
     .line 113
-    sget-object v0, LHu2;->l0:LHu2;
+    sget-object v0, LAE2;->e0:LAE2;
 
     .line 114
     .line 115
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 116
     .line 117
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 118
     .line 119
     .line 120
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Y0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Y0:LREi;
 
     .line 121
     .line 122
-    sget-object v0, LHu2;->m0:LHu2;
+    sget-object v0, LAE2;->f0:LAE2;
 
     .line 123
     .line 124
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 125
     .line 126
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 127
     .line 128
     .line 129
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Z0:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Z0:LREi;
 
     .line 130
     .line 131
-    sget-object v0, LHu2;->B0:LHu2;
+    sget-object v0, LAE2;->u0:LAE2;
 
     .line 132
     .line 133
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 134
     .line 135
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 136
     .line 137
     .line 138
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->a1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->a1:LREi;
 
     .line 139
     .line 140
-    sget-object v0, LHu2;->u0:LHu2;
+    sget-object v0, LAE2;->n0:LAE2;
 
     .line 141
     .line 142
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 143
     .line 144
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 145
     .line 146
     .line 147
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->b1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->b1:LREi;
 
     .line 148
     .line 149
-    sget-object v0, LHu2;->o0:LHu2;
+    sget-object v0, LAE2;->h0:LAE2;
 
     .line 150
     .line 151
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 152
     .line 153
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 154
     .line 155
     .line 156
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->c1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->c1:LREi;
 
     .line 157
     .line 158
-    sget-object v0, LHu2;->s0:LHu2;
+    sget-object v0, LAE2;->l0:LAE2;
 
     .line 159
     .line 160
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 161
     .line 162
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 163
     .line 164
     .line 165
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d1:LREi;
 
     .line 166
     .line 167
-    sget-object v0, LHu2;->y0:LHu2;
+    sget-object v0, LAE2;->r0:LAE2;
 
     .line 168
     .line 169
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 170
     .line 171
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 172
     .line 173
     .line 174
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->e1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->e1:LREi;
 
     .line 175
     .line 176
-    sget-object v0, LHu2;->v0:LHu2;
+    sget-object v0, LAE2;->o0:LAE2;
 
     .line 177
     .line 178
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 179
     .line 180
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 181
     .line 182
     .line 183
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->f1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->f1:LREi;
 
     .line 184
     .line 185
-    sget-object v0, LTB2;->b:LTB2;
+    sget-object v0, LAE2;->v0:LAE2;
 
     .line 186
     .line 187
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 188
     .line 189
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 190
     .line 191
     .line 192
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->g1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->g1:LREi;
 
     .line 193
     .line 194
-    sget-object v0, LHu2;->k0:LHu2;
+    sget-object v0, LAE2;->Z:LAE2;
 
     .line 195
     .line 196
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 197
     .line 198
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 199
     .line 200
     .line 201
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->h1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->h1:LREi;
 
     .line 202
     .line 203
-    sget-object v0, LHu2;->Y:LHu2;
+    sget-object v0, LSc2;->z0:LSc2;
 
     .line 204
     .line 205
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 206
     .line 207
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 208
     .line 209
     .line 210
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->i1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->i1:LREi;
 
     .line 211
     .line 212
-    sget-object v0, LHu2;->q0:LHu2;
+    sget-object v0, LAE2;->j0:LAE2;
 
     .line 213
     .line 214
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 215
     .line 216
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 217
     .line 218
     .line 219
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->j1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->j1:LREi;
 
     .line 220
     .line 221
-    sget-object v0, LHu2;->z0:LHu2;
+    sget-object v0, LAE2;->s0:LAE2;
 
     .line 222
     .line 223
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 224
     .line 225
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 226
     .line 227
     .line 228
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->k1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->k1:LREi;
 
     .line 229
     .line 230
-    sget-object v0, LHu2;->p0:LHu2;
+    sget-object v0, LAE2;->i0:LAE2;
 
     .line 231
     .line 232
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 233
     .line 234
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 235
     .line 236
     .line 237
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->l1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->l1:LREi;
 
     .line 238
     .line 239
-    sget-object v0, LHu2;->j0:LHu2;
+    sget-object v0, LAE2;->Y:LAE2;
 
     .line 240
     .line 241
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 242
     .line 243
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 244
     .line 245
     .line 246
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->m1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->m1:LREi;
 
     .line 247
     .line 248
-    sget-object v0, LHu2;->g0:LHu2;
+    sget-object v0, LAE2;->c:LAE2;
 
     .line 249
     .line 250
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 251
     .line 252
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 253
     .line 254
     .line 255
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->n1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->n1:LREi;
 
     .line 256
     .line 257
-    sget-object v0, LHu2;->r0:LHu2;
+    sget-object v0, LAE2;->k0:LAE2;
 
     .line 258
     .line 259
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 260
     .line 261
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 262
     .line 263
     .line 264
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->o1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->o1:LREi;
 
     .line 265
     .line 266
-    sget-object v0, LHu2;->x0:LHu2;
+    sget-object v0, LAE2;->q0:LAE2;
 
     .line 267
     .line 268
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 269
     .line 270
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 271
     .line 272
     .line 273
-    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->p1:LXfi;
+    iput-object v1, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->p1:LREi;
 
     .line 274
     .line 275
@@ -818,7 +818,7 @@
     return p0
 .end method
 
-.method public static final V1(Lcom/snap/charms/details/CharmsDetailsFragment;Lyo4;J)LyAi;
+.method public static final V1(Lcom/snap/charms/details/CharmsDetailsFragment;Lft4;J)LFZi;
     .locals 16
 
     .line 1
@@ -846,15 +846,15 @@
     .line 9
     .line 10
     .line 11
-    new-instance v7, Legi;
+    new-instance v7, LGBi;
 
     .line 12
     .line 13
-    new-instance v8, LRg;
+    new-instance v8, LRh;
 
     .line 14
     .line 15
-    sget-object v10, Lw1g;->a:Lrq9;
+    sget-object v10, LzNe;->a:Lrz9;
 
     .line 16
     .line 17
@@ -868,7 +868,7 @@
     const/4 v9, 0x3
 
     .line 21
-    const-class v11, Lrq9;
+    const-class v11, Lrz9;
 
     .line 22
     .line 23
@@ -880,17 +880,17 @@
 
     .line 26
     .line 27
-    invoke-direct/range {v8 .. v15}, LRg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-direct/range {v8 .. v15}, LRh;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
     .line 28
     .line 29
     .line 30
-    invoke-direct {v7, v8, v6}, Legi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
+    invoke-direct {v7, v8, v6}, LGBi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
 
     .line 31
     .line 32
     .line 33
-    new-array v8, v5, [Lyo4;
+    new-array v8, v5, [Lft4;
 
     .line 34
     .line 35
@@ -898,12 +898,12 @@
 
     .line 36
     .line 37
-    invoke-virtual {v7, v8}, Legi;->b([Lyo4;)V
+    invoke-virtual {v7, v8}, LGBi;->a([Lft4;)V
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
 
     .line 41
     .line 42
@@ -911,7 +911,7 @@
     move-result-object v8
 
     .line 44
-    new-array v9, v5, [Lhuh;
+    new-array v9, v5, [LURh;
 
     .line 45
     .line 46
@@ -919,7 +919,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {v7, v9}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v7, v9}, LGBi;->e([LURh;)LEZi;
 
     .line 49
     .line 50
@@ -938,11 +938,11 @@
     move-result-object v10
 
     .line 57
-    iput-object v10, v8, LxAi;->a:Ljava/lang/Number;
+    iput-object v10, v8, LEZi;->a:Ljava/lang/Number;
 
     .line 58
     .line 59
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
 
     .line 60
     .line 61
@@ -950,7 +950,7 @@
     move-result-object v8
 
     .line 63
-    new-array v10, v5, [Lhuh;
+    new-array v10, v5, [LURh;
 
     .line 64
     .line 65
@@ -958,7 +958,7 @@
 
     .line 66
     .line 67
-    invoke-virtual {v7, v10}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v7, v10}, LGBi;->e([LURh;)LEZi;
 
     .line 68
     .line 69
@@ -986,12 +986,12 @@
     move-result-object v12
 
     .line 81
-    invoke-virtual {v8, v10, v12, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {v8, v10, v12, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 82
     .line 83
     .line 84
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
 
     .line 85
     .line 86
@@ -999,7 +999,7 @@
     move-result-object v8
 
     .line 88
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->b2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->b2()LURh;
 
     .line 89
     .line 90
@@ -1007,7 +1007,7 @@
     move-result-object v10
 
     .line 92
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->o2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->o2()LURh;
 
     .line 93
     .line 94
@@ -1015,7 +1015,7 @@
     move-result-object v12
 
     .line 96
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->q2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->q2()LURh;
 
     .line 97
     .line 98
@@ -1023,7 +1023,7 @@
     move-result-object v13
 
     .line 100
-    new-array v14, v3, [Lhuh;
+    new-array v14, v3, [LURh;
 
     .line 101
     .line 102
@@ -1043,7 +1043,7 @@
 
     .line 109
     .line 110
-    invoke-virtual {v7, v14}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v7, v14}, LGBi;->e([LURh;)LEZi;
 
     .line 111
     .line 112
@@ -1059,11 +1059,11 @@
     move-result-object v10
 
     .line 118
-    iput-object v10, v8, LxAi;->a:Ljava/lang/Number;
+    iput-object v10, v8, LEZi;->a:Ljava/lang/Number;
 
     .line 119
     .line 120
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
 
     .line 121
     .line 122
@@ -1071,7 +1071,7 @@
     move-result-object v8
 
     .line 124
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
 
     .line 125
     .line 126
@@ -1079,7 +1079,7 @@
     move-result-object v10
 
     .line 128
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->r2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->r2()LURh;
 
     .line 129
     .line 130
@@ -1087,7 +1087,7 @@
     move-result-object v12
 
     .line 132
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()LURh;
 
     .line 133
     .line 134
@@ -1095,7 +1095,7 @@
     move-result-object v13
 
     .line 136
-    new-array v3, v3, [Lhuh;
+    new-array v3, v3, [LURh;
 
     .line 137
     .line 138
@@ -1115,7 +1115,7 @@
 
     .line 145
     .line 146
-    invoke-virtual {v7, v3}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v7, v3}, LGBi;->e([LURh;)LEZi;
 
     .line 147
     .line 148
@@ -1139,12 +1139,12 @@
     move-result-object v8
 
     .line 158
-    invoke-virtual {v2, v3, v8, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {v2, v3, v8, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 159
     .line 160
     .line 161
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
 
     .line 162
     .line 163
@@ -1152,7 +1152,7 @@
     move-result-object v0
 
     .line 165
-    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
+    invoke-virtual/range {p0 .. p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
 
     .line 166
     .line 167
@@ -1160,7 +1160,7 @@
     move-result-object v1
 
     .line 169
-    new-array v2, v4, [Lhuh;
+    new-array v2, v4, [LURh;
 
     .line 170
     .line 171
@@ -1172,7 +1172,7 @@
 
     .line 174
     .line 175
-    invoke-virtual {v7, v2}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v7, v2}, LGBi;->e([LURh;)LEZi;
 
     .line 176
     .line 177
@@ -1188,11 +1188,11 @@
     move-result-object v1
 
     .line 183
-    iput-object v1, v0, LxAi;->a:Ljava/lang/Number;
+    iput-object v1, v0, LEZi;->a:Ljava/lang/Number;
 
     .line 184
     .line 185
-    invoke-virtual {v7}, Legi;->c()LyAi;
+    invoke-virtual {v7}, LGBi;->d()LFZi;
 
     .line 186
     .line 187
@@ -1203,7 +1203,7 @@
     return-object v0
 .end method
 
-.method public static final W1(Lcom/snap/charms/details/CharmsDetailsFragment;FLyo4;Lyo4;JJ)LyAi;
+.method public static final W1(Lcom/snap/charms/details/CharmsDetailsFragment;FLft4;Lft4;JJ)LFZi;
     .locals 14
 
     .line 1
@@ -1225,15 +1225,15 @@
     .line 7
     .line 8
     .line 9
-    new-instance v5, Legi;
+    new-instance v5, LGBi;
 
     .line 10
     .line 11
-    new-instance v6, LRg;
+    new-instance v6, LRh;
 
     .line 12
     .line 13
-    sget-object v8, Lw1g;->a:Lrq9;
+    sget-object v8, LzNe;->a:Lrz9;
 
     .line 14
     .line 15
@@ -1247,7 +1247,7 @@
     const/4 v7, 0x3
 
     .line 19
-    const-class v9, Lrq9;
+    const-class v9, Lrz9;
 
     .line 20
     .line 21
@@ -1259,17 +1259,17 @@
 
     .line 24
     .line 25
-    invoke-direct/range {v6 .. v13}, LRg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-direct/range {v6 .. v13}, LRh;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
     .line 26
     .line 27
     .line 28
-    invoke-direct {v5, v6, v4}, Legi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
+    invoke-direct {v5, v6, v4}, LGBi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
 
     .line 29
     .line 30
     .line 31
-    new-array v6, v2, [Lyo4;
+    new-array v6, v2, [Lft4;
 
     .line 32
     .line 33
@@ -1281,12 +1281,12 @@
 
     .line 36
     .line 37
-    invoke-virtual {v5, v6}, Legi;->b([Lyo4;)V
+    invoke-virtual {v5, v6}, LGBi;->a([Lft4;)V
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
 
     .line 41
     .line 42
@@ -1294,7 +1294,7 @@
     move-result-object v6
 
     .line 44
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
 
     .line 45
     .line 46
@@ -1302,7 +1302,7 @@
     move-result-object v7
 
     .line 48
-    new-array v8, v2, [Lhuh;
+    new-array v8, v2, [LURh;
 
     .line 49
     .line 50
@@ -1314,7 +1314,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
 
     .line 55
     .line 56
@@ -1333,11 +1333,11 @@
     move-result-object v8
 
     .line 63
-    iput-object v8, v6, LxAi;->a:Ljava/lang/Number;
+    iput-object v8, v6, LEZi;->a:Ljava/lang/Number;
 
     .line 64
     .line 65
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
 
     .line 66
     .line 67
@@ -1345,7 +1345,7 @@
     move-result-object v6
 
     .line 69
-    new-array v8, v3, [Lhuh;
+    new-array v8, v3, [LURh;
 
     .line 70
     .line 71
@@ -1353,7 +1353,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
 
     .line 74
     .line 75
@@ -1381,12 +1381,12 @@
     move-result-object v10
 
     .line 87
-    invoke-virtual {v6, v8, v10, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {v6, v8, v10, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 88
     .line 89
     .line 90
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
 
     .line 91
     .line 92
@@ -1394,7 +1394,7 @@
     move-result-object v6
 
     .line 94
-    new-array v8, v3, [Lhuh;
+    new-array v8, v3, [LURh;
 
     .line 95
     .line 96
@@ -1402,7 +1402,7 @@
 
     .line 97
     .line 98
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
 
     .line 99
     .line 100
@@ -1418,11 +1418,11 @@
     move-result-object v8
 
     .line 106
-    iput-object v8, v6, LxAi;->a:Ljava/lang/Number;
+    iput-object v8, v6, LEZi;->a:Ljava/lang/Number;
 
     .line 107
     .line 108
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->n2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->n2()LURh;
 
     .line 109
     .line 110
@@ -1430,7 +1430,7 @@
     move-result-object v6
 
     .line 112
-    new-array v8, v3, [Lhuh;
+    new-array v8, v3, [LURh;
 
     .line 113
     .line 114
@@ -1438,7 +1438,7 @@
 
     .line 115
     .line 116
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
 
     .line 117
     .line 118
@@ -1466,12 +1466,12 @@
 
     .line 129
     .line 130
-    invoke-virtual {v6, v8, v10, v11, v12}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {v6, v8, v10, v11, v12}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 131
     .line 132
     .line 133
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->p2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->p2()LURh;
 
     .line 134
     .line 135
@@ -1479,7 +1479,7 @@
     move-result-object v6
 
     .line 137
-    new-array v8, v3, [Lhuh;
+    new-array v8, v3, [LURh;
 
     .line 138
     .line 139
@@ -1487,7 +1487,7 @@
 
     .line 140
     .line 141
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
 
     .line 142
     .line 143
@@ -1503,11 +1503,11 @@
     move-result-object v8
 
     .line 149
-    iput-object v8, v6, LxAi;->a:Ljava/lang/Number;
+    iput-object v8, v6, LEZi;->a:Ljava/lang/Number;
 
     .line 150
     .line 151
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
 
     .line 152
     .line 153
@@ -1515,7 +1515,7 @@
     move-result-object v6
 
     .line 155
-    new-array v8, v3, [Lhuh;
+    new-array v8, v3, [LURh;
 
     .line 156
     .line 157
@@ -1523,7 +1523,7 @@
 
     .line 158
     .line 159
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
 
     .line 160
     .line 161
@@ -1547,12 +1547,12 @@
     move-result-object v10
 
     .line 171
-    invoke-virtual {v6, v8, v10, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {v6, v8, v10, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 172
     .line 173
     .line 174
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->r2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->r2()LURh;
 
     .line 175
     .line 176
@@ -1560,7 +1560,7 @@
     move-result-object v6
 
     .line 178
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()LURh;
 
     .line 179
     .line 180
@@ -1568,7 +1568,7 @@
     move-result-object v8
 
     .line 182
-    new-array v10, v2, [Lhuh;
+    new-array v10, v2, [LURh;
 
     .line 183
     .line 184
@@ -1580,7 +1580,7 @@
 
     .line 187
     .line 188
-    invoke-virtual {v5, v10}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v10}, LGBi;->e([LURh;)LEZi;
 
     .line 189
     .line 190
@@ -1604,12 +1604,12 @@
     move-result-object v8
 
     .line 200
-    invoke-virtual {v6, p1, v8, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {v6, p1, v8, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 201
     .line 202
     .line 203
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
 
     .line 204
     .line 205
@@ -1617,7 +1617,7 @@
     move-result-object p1
 
     .line 207
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
 
     .line 208
     .line 209
@@ -1625,7 +1625,7 @@
     move-result-object p0
 
     .line 211
-    new-array v2, v2, [Lhuh;
+    new-array v2, v2, [LURh;
 
     .line 212
     .line 213
@@ -1637,7 +1637,7 @@
 
     .line 216
     .line 217
-    invoke-virtual {v5, v2}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v2}, LGBi;->e([LURh;)LEZi;
 
     .line 218
     .line 219
@@ -1661,12 +1661,12 @@
     move-result-object v2
 
     .line 229
-    invoke-virtual {p0, p1, v2, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p0, p1, v2, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 230
     .line 231
     .line 232
-    invoke-virtual {v5}, Legi;->c()LyAi;
+    invoke-virtual {v5}, LGBi;->d()LFZi;
 
     .line 233
     .line 234
@@ -1677,7 +1677,7 @@
     return-object p0
 .end method
 
-.method public static final X1(Lcom/snap/charms/details/CharmsDetailsFragment;Lyo4;Lyo4;JJ)LyAi;
+.method public static final X1(Lcom/snap/charms/details/CharmsDetailsFragment;Lft4;Lft4;JJ)LFZi;
     .locals 14
 
     .line 1
@@ -1699,15 +1699,15 @@
     .line 7
     .line 8
     .line 9
-    new-instance v5, Legi;
+    new-instance v5, LGBi;
 
     .line 10
     .line 11
-    new-instance v6, LRg;
+    new-instance v6, LRh;
 
     .line 12
     .line 13
-    sget-object v8, Lw1g;->a:Lrq9;
+    sget-object v8, LzNe;->a:Lrz9;
 
     .line 14
     .line 15
@@ -1721,7 +1721,7 @@
     const/4 v7, 0x3
 
     .line 19
-    const-class v9, Lrq9;
+    const-class v9, Lrz9;
 
     .line 20
     .line 21
@@ -1733,17 +1733,17 @@
 
     .line 24
     .line 25
-    invoke-direct/range {v6 .. v13}, LRg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-direct/range {v6 .. v13}, LRh;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
     .line 26
     .line 27
     .line 28
-    invoke-direct {v5, v6, v4}, Legi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
+    invoke-direct {v5, v6, v4}, LGBi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
 
     .line 29
     .line 30
     .line 31
-    new-array v6, v2, [Lyo4;
+    new-array v6, v2, [Lft4;
 
     .line 32
     .line 33
@@ -1755,12 +1755,12 @@
 
     .line 36
     .line 37
-    invoke-virtual {v5, v6}, Legi;->b([Lyo4;)V
+    invoke-virtual {v5, v6}, LGBi;->a([Lft4;)V
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
 
     .line 41
     .line 42
@@ -1768,7 +1768,7 @@
     move-result-object p1
 
     .line 44
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
 
     .line 45
     .line 46
@@ -1776,7 +1776,7 @@
     move-result-object v6
 
     .line 48
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
 
     .line 49
     .line 50
@@ -1784,7 +1784,7 @@
     move-result-object v7
 
     .line 52
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
 
     .line 53
     .line 54
@@ -1792,7 +1792,7 @@
     move-result-object v8
 
     .line 56
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
 
     .line 57
     .line 58
@@ -1800,7 +1800,7 @@
     move-result-object v9
 
     .line 60
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
 
     .line 61
     .line 62
@@ -1811,7 +1811,7 @@
     const/4 v11, 0x6
 
     .line 65
-    new-array v11, v11, [Lhuh;
+    new-array v11, v11, [LURh;
 
     .line 66
     .line 67
@@ -1848,7 +1848,7 @@
 
     .line 81
     .line 82
-    invoke-virtual {v5, v11}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v11}, LGBi;->e([LURh;)LEZi;
 
     .line 83
     .line 84
@@ -1867,11 +1867,11 @@
     move-result-object v6
 
     .line 91
-    iput-object v6, p1, LxAi;->a:Ljava/lang/Number;
+    iput-object v6, p1, LEZi;->a:Ljava/lang/Number;
 
     .line 92
     .line 93
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->q2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->q2()LURh;
 
     .line 94
     .line 95
@@ -1879,7 +1879,7 @@
     move-result-object p1
 
     .line 97
-    new-array v6, v3, [Lhuh;
+    new-array v6, v3, [LURh;
 
     .line 98
     .line 99
@@ -1887,7 +1887,7 @@
 
     .line 100
     .line 101
-    invoke-virtual {v5, v6}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v6}, LGBi;->e([LURh;)LEZi;
 
     .line 102
     .line 103
@@ -1907,11 +1907,11 @@
     move-result-object v7
 
     .line 111
-    iput-object v7, p1, LxAi;->a:Ljava/lang/Number;
+    iput-object v7, p1, LEZi;->a:Ljava/lang/Number;
 
     .line 112
     .line 113
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->n2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->n2()LURh;
 
     .line 114
     .line 115
@@ -1919,7 +1919,7 @@
     move-result-object p1
 
     .line 117
-    new-array v7, v3, [Lhuh;
+    new-array v7, v3, [LURh;
 
     .line 118
     .line 119
@@ -1927,7 +1927,7 @@
 
     .line 120
     .line 121
-    invoke-virtual {v5, v7}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v7}, LGBi;->e([LURh;)LEZi;
 
     .line 122
     .line 123
@@ -1955,12 +1955,12 @@
 
     .line 134
     .line 135
-    invoke-virtual {p1, v7, v8, v9, v10}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p1, v7, v8, v9, v10}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 136
     .line 137
     .line 138
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->s2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->s2()LURh;
 
     .line 139
     .line 140
@@ -1968,7 +1968,7 @@
     move-result-object p1
 
     .line 142
-    new-array v7, v3, [Lhuh;
+    new-array v7, v3, [LURh;
 
     .line 143
     .line 144
@@ -1976,7 +1976,7 @@
 
     .line 145
     .line 146
-    invoke-virtual {v5, v7}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, v7}, LGBi;->e([LURh;)LEZi;
 
     .line 147
     .line 148
@@ -2000,12 +2000,12 @@
     move-result-object v8
 
     .line 158
-    invoke-virtual {p1, v7, v8, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p1, v7, v8, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 159
     .line 160
     .line 161
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()LURh;
 
     .line 162
     .line 163
@@ -2013,7 +2013,7 @@
     move-result-object p0
 
     .line 165
-    new-array p1, v3, [Lhuh;
+    new-array p1, v3, [LURh;
 
     .line 166
     .line 167
@@ -2021,7 +2021,7 @@
 
     .line 168
     .line 169
-    invoke-virtual {v5, p1}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v5, p1}, LGBi;->e([LURh;)LEZi;
 
     .line 170
     .line 171
@@ -2045,12 +2045,12 @@
     move-result-object v2
 
     .line 181
-    invoke-virtual {p0, p1, v2, v0, v1}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p0, p1, v2, v0, v1}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 182
     .line 183
     .line 184
-    invoke-virtual {v5}, Legi;->c()LyAi;
+    invoke-virtual {v5}, LGBi;->d()LFZi;
 
     .line 185
     .line 186
@@ -2061,7 +2061,7 @@
     return-object p0
 .end method
 
-.method public static final Y1(Lcom/snap/charms/details/CharmsDetailsFragment;Ljava/lang/Number;Ljava/lang/Number;Lyo4;JLkotlin/jvm/functions/Function3;)LyAi;
+.method public static final Y1(Lcom/snap/charms/details/CharmsDetailsFragment;Ljava/lang/Number;Ljava/lang/Number;Lft4;JLkotlin/jvm/functions/Function3;)LFZi;
     .locals 6
 
     .line 1
@@ -2079,16 +2079,16 @@
     .line 5
     .line 6
     .line 7
-    new-instance v3, Legi;
+    new-instance v3, LGBi;
 
     .line 8
     .line 9
-    invoke-direct {v3, p6, v2}, Legi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
+    invoke-direct {v3, p6, v2}, LGBi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
 
     .line 10
     .line 11
     .line 12
-    new-array p6, v1, [Lyo4;
+    new-array p6, v1, [Lft4;
 
     .line 13
     .line 14
@@ -2096,12 +2096,12 @@
 
     .line 15
     .line 16
-    invoke-virtual {v3, p6}, Legi;->b([Lyo4;)V
+    invoke-virtual {v3, p6}, LGBi;->a([Lft4;)V
 
     .line 17
     .line 18
     .line 19
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
 
     .line 20
     .line 21
@@ -2109,7 +2109,7 @@
     move-result-object p3
 
     .line 23
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
 
     .line 24
     .line 25
@@ -2117,7 +2117,7 @@
     move-result-object p6
 
     .line 27
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
 
     .line 28
     .line 29
@@ -2128,7 +2128,7 @@
     const/4 v5, 0x3
 
     .line 32
-    new-array v5, v5, [Lhuh;
+    new-array v5, v5, [LURh;
 
     .line 33
     .line 34
@@ -2144,7 +2144,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v3, v5}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v3, v5}, LGBi;->e([LURh;)LEZi;
 
     .line 41
     .line 42
@@ -2152,11 +2152,11 @@
     move-result-object p3
 
     .line 44
-    iput-object p1, p3, LxAi;->a:Ljava/lang/Number;
+    iput-object p1, p3, LEZi;->a:Ljava/lang/Number;
 
     .line 45
     .line 46
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
 
     .line 47
     .line 48
@@ -2164,7 +2164,7 @@
     move-result-object p3
 
     .line 50
-    new-array p6, v1, [Lhuh;
+    new-array p6, v1, [LURh;
 
     .line 51
     .line 52
@@ -2172,7 +2172,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {v3, p6}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v3, p6}, LGBi;->e([LURh;)LEZi;
 
     .line 55
     .line 56
@@ -2180,12 +2180,12 @@
     move-result-object p3
 
     .line 58
-    invoke-virtual {p3, p1, p2, p4, p5}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p3, p1, p2, p4, p5}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 59
     .line 60
     .line 61
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
 
     .line 62
     .line 63
@@ -2193,7 +2193,7 @@
     move-result-object p3
 
     .line 65
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
 
     .line 66
     .line 67
@@ -2201,7 +2201,7 @@
     move-result-object p6
 
     .line 69
-    new-array v4, v0, [Lhuh;
+    new-array v4, v0, [LURh;
 
     .line 70
     .line 71
@@ -2213,7 +2213,7 @@
 
     .line 74
     .line 75
-    invoke-virtual {v3, v4}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v3, v4}, LGBi;->e([LURh;)LEZi;
 
     .line 76
     .line 77
@@ -2221,12 +2221,12 @@
     move-result-object p3
 
     .line 79
-    invoke-virtual {p3, p2, p1, p4, p5}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p3, p2, p1, p4, p5}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 80
     .line 81
     .line 82
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->r2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->r2()LURh;
 
     .line 83
     .line 84
@@ -2234,7 +2234,7 @@
     move-result-object p3
 
     .line 86
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->m2()LURh;
 
     .line 87
     .line 88
@@ -2242,7 +2242,7 @@
     move-result-object p0
 
     .line 90
-    new-array p6, v0, [Lhuh;
+    new-array p6, v0, [LURh;
 
     .line 91
     .line 92
@@ -2254,7 +2254,7 @@
 
     .line 95
     .line 96
-    invoke-virtual {v3, p6}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v3, p6}, LGBi;->e([LURh;)LEZi;
 
     .line 97
     .line 98
@@ -2262,12 +2262,12 @@
     move-result-object p0
 
     .line 100
-    invoke-virtual {p0, p2, p1, p4, p5}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p0, p2, p1, p4, p5}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 101
     .line 102
     .line 103
-    invoke-virtual {v3}, Legi;->c()LyAi;
+    invoke-virtual {v3}, LGBi;->d()LFZi;
 
     .line 104
     .line 105
@@ -2278,7 +2278,7 @@
     return-object p0
 .end method
 
-.method public static final Z1(Lcom/snap/charms/details/CharmsDetailsFragment;Ljava/lang/Number;Ljava/lang/Number;Lyo4;JLkotlin/jvm/functions/Function3;)LyAi;
+.method public static final Z1(Lcom/snap/charms/details/CharmsDetailsFragment;Ljava/lang/Number;Ljava/lang/Number;Lft4;JLkotlin/jvm/functions/Function3;)LFZi;
     .locals 3
 
     .line 1
@@ -2293,16 +2293,16 @@
     .line 4
     .line 5
     .line 6
-    new-instance v2, Legi;
+    new-instance v2, LGBi;
 
     .line 7
     .line 8
-    invoke-direct {v2, p6, v1}, Legi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
+    invoke-direct {v2, p6, v1}, LGBi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
 
     .line 9
     .line 10
     .line 11
-    new-array p6, v0, [Lyo4;
+    new-array p6, v0, [Lft4;
 
     .line 12
     .line 13
@@ -2310,12 +2310,12 @@
 
     .line 14
     .line 15
-    invoke-virtual {v2, p6}, Legi;->b([Lyo4;)V
+    invoke-virtual {v2, p6}, LGBi;->a([Lft4;)V
 
     .line 16
     .line 17
     .line 18
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
 
     .line 19
     .line 20
@@ -2323,7 +2323,7 @@
     move-result-object p3
 
     .line 22
-    new-array p6, v0, [Lhuh;
+    new-array p6, v0, [LURh;
 
     .line 23
     .line 24
@@ -2331,7 +2331,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {v2, p6}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v2, p6}, LGBi;->e([LURh;)LEZi;
 
     .line 27
     .line 28
@@ -2339,11 +2339,11 @@
     move-result-object p3
 
     .line 30
-    iput-object p2, p3, LxAi;->a:Ljava/lang/Number;
+    iput-object p2, p3, LEZi;->a:Ljava/lang/Number;
 
     .line 31
     .line 32
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->o2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->o2()LURh;
 
     .line 33
     .line 34
@@ -2351,7 +2351,7 @@
     move-result-object p3
 
     .line 36
-    new-array p6, v0, [Lhuh;
+    new-array p6, v0, [LURh;
 
     .line 37
     .line 38
@@ -2359,7 +2359,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v2, p6}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v2, p6}, LGBi;->e([LURh;)LEZi;
 
     .line 41
     .line 42
@@ -2367,12 +2367,12 @@
     move-result-object p3
 
     .line 44
-    invoke-virtual {p3, p2, p1, p4, p5}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p3, p2, p1, p4, p5}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 45
     .line 46
     .line 47
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->q2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->q2()LURh;
 
     .line 48
     .line 49
@@ -2380,7 +2380,7 @@
     move-result-object p3
 
     .line 51
-    new-array p6, v0, [Lhuh;
+    new-array p6, v0, [LURh;
 
     .line 52
     .line 53
@@ -2388,7 +2388,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {v2, p6}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v2, p6}, LGBi;->e([LURh;)LEZi;
 
     .line 56
     .line 57
@@ -2396,11 +2396,11 @@
     move-result-object p3
 
     .line 59
-    iput-object p1, p3, LxAi;->a:Ljava/lang/Number;
+    iput-object p1, p3, LEZi;->a:Ljava/lang/Number;
 
     .line 60
     .line 61
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
 
     .line 62
     .line 63
@@ -2408,7 +2408,7 @@
     move-result-object p3
 
     .line 65
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
 
     .line 66
     .line 67
@@ -2419,7 +2419,7 @@
     const/4 p6, 0x2
 
     .line 70
-    new-array p6, p6, [Lhuh;
+    new-array p6, p6, [LURh;
 
     .line 71
     .line 72
@@ -2431,7 +2431,7 @@
 
     .line 75
     .line 76
-    invoke-virtual {v2, p6}, Legi;->d([Lhuh;)LxAi;
+    invoke-virtual {v2, p6}, LGBi;->e([LURh;)LEZi;
 
     .line 77
     .line 78
@@ -2439,12 +2439,12 @@
     move-result-object p0
 
     .line 80
-    invoke-virtual {p0, p2, p1, p4, p5}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+    invoke-virtual {p0, p2, p1, p4, p5}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
 
     .line 81
     .line 82
     .line 83
-    invoke-virtual {v2}, Legi;->c()LyAi;
+    invoke-virtual {v2}, LGBi;->d()LFZi;
 
     .line 84
     .line 85
@@ -2459,7 +2459,7 @@
     .locals 9
 
     .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->g2:LrB2;
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->g2:LhE2;
 
     .line 2
     .line 3
@@ -2520,7 +2520,7 @@
     move-result-wide v5
 
     .line 31
-    iget-object v2, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->N0:LOze;
+    iget-object v2, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->N0:LFRe;
 
     .line 32
     .line 33
@@ -2627,11 +2627,2506 @@
 
 
 # virtual methods
-.method public final B1(Landroid/os/Bundle;)V
+.method public final A1()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->i2:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final F1()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LfJ8;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->h2()LYt9;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-virtual {v0, v1}, LpM6;->j(LYt9;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+
+    .line 13
+    :cond_0
+    const-string v0, "details"
+
+    .line 14
+    .line 15
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 v0, 0x0
+
+    .line 19
+    throw v0
+.end method
+
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 37
+
+    .line 1
+    move-object/from16 v2, p0
+
+    .line 2
+    .line 3
+    const/4 v1, 0x5
+
+    .line 4
+    const/4 v13, 0x3
+
+    .line 5
+    const/4 v3, 0x4
+
+    .line 6
+    iget-object v5, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->w0:LxE2;
+
+    .line 7
+    .line 8
+    const/16 v16, 0x0
+
+    .line 9
+    .line 10
+    if-eqz v5, :cond_4
+
+    .line 11
+    .line 12
+    iget-object v5, v5, LxE2;->a:LTE2;
+
+    .line 13
+    .line 14
+    iget-object v6, v5, LTE2;->g0:Ljava/lang/Iterable;
+
+    .line 15
+    .line 16
+    invoke-static {v6}, Llh3;->v4(Ljava/lang/Iterable;)Ljava/util/List;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v10
+
+    .line 20
+    new-instance v11, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 21
+    .line 22
+    invoke-direct {v11, v10}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v6
+
+    .line 29
+    invoke-static {v6}, LTVd;->S(Landroid/content/Context;)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v6
+
+    .line 33
+    int-to-float v6, v6
+
+    .line 34
+    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v7
+
+    .line 38
+    invoke-static {v7}, LTVd;->P(Landroid/content/Context;)I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v7
+
+    .line 42
+    int-to-float v7, v7
+
+    .line 43
+    move v8, v6
+
+    .line 44
+    new-instance v6, Leyg;
+
+    .line 45
+    .line 46
+    iget v9, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->L1:F
+
+    .line 47
+    .line 48
+    invoke-static {v9}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v9
+
+    .line 52
+    invoke-direct {v6, v3, v9}, Leyg;-><init>(ILjava/lang/Object;)V
+
+    .line 53
+    .line 54
+    .line 55
+    move v9, v8
+
+    .line 56
+    new-instance v8, Leyg;
+
+    .line 57
+    .line 58
+    iget v12, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->Y1:F
+
+    .line 59
+    .line 60
+    invoke-static {v12}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v12
+
+    .line 64
+    invoke-direct {v8, v3, v12}, Leyg;-><init>(ILjava/lang/Object;)V
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-virtual {v2}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v12
+
+    .line 71
+    invoke-static {v12, v3}, LFmj;->b(Landroid/content/Context;I)Landroid/graphics/Typeface;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v12
+
+    .line 75
+    const/16 p1, 0x1
+
+    .line 76
+    .line 77
+    invoke-virtual {v2}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v15
+
+    .line 81
+    invoke-static {v15, v13}, LFmj;->b(Landroid/content/Context;I)Landroid/graphics/Typeface;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v15
+
+    .line 85
+    const/16 p2, 0x0
+
+    .line 86
+    .line 87
+    invoke-virtual {v2}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v4
+
+    .line 91
+    invoke-static {v4, v1}, LFmj;->b(Landroid/content/Context;I)Landroid/graphics/Typeface;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object v4
+
+    .line 95
+    const/16 p3, 0x6
+
+    .line 96
+    .line 97
+    invoke-virtual {v2}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object v0
+
+    .line 101
+    const/16 v17, 0x5
+
+    .line 102
+    .line 103
+    const v1, 0x7f0605e9
+
+    .line 104
+    .line 105
+    .line 106
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
+
+    .line 107
+    .line 108
+    .line 109
+    move-result v0
+
+    .line 110
+    move-object v1, v12
+
+    .line 111
+    new-instance v12, LO0f;
+
+    .line 112
+    .line 113
+    invoke-direct {v12}, Ljava/lang/Object;-><init>()V
+
+    .line 114
+    .line 115
+    .line 116
+    const/16 v18, 0x4
+
+    .line 117
+    .line 118
+    iget-object v3, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->E0:LH4j;
+
+    .line 119
+    .line 120
+    const-string v19, "openViewBuilders"
+
+    .line 121
+    .line 122
+    if-eqz v3, :cond_3
+
+    .line 123
+    .line 124
+    new-instance v3, LO96;
+
+    .line 125
+    .line 126
+    invoke-direct {v3}, LO96;-><init>()V
+
+    .line 127
+    .line 128
+    .line 129
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
+
+    .line 130
+    .line 131
+    .line 132
+    move-result-object v20
+
+    .line 133
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
+
+    .line 134
+    .line 135
+    .line 136
+    move-result-object v21
+
+    .line 137
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
+
+    .line 138
+    .line 139
+    .line 140
+    move-result-object v22
+
+    .line 141
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v23
+
+    .line 145
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
+
+    .line 146
+    .line 147
+    .line 148
+    move-result-object v24
+
+    .line 149
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object v25
+
+    .line 153
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object v26
+
+    .line 157
+    const/16 v27, 0x2
+
+    .line 158
+    .line 159
+    const/4 v14, 0x7
+
+    .line 160
+    new-array v14, v14, [LURh;
+
+    .line 161
+    .line 162
+    aput-object v20, v14, p2
+
+    .line 163
+    .line 164
+    aput-object v21, v14, p1
+
+    .line 165
+    .line 166
+    aput-object v22, v14, v27
+
+    .line 167
+    .line 168
+    aput-object v23, v14, v13
+
+    .line 169
+    .line 170
+    aput-object v24, v14, v18
+
+    .line 171
+    .line 172
+    aput-object v25, v14, v17
+
+    .line 173
+    .line 174
+    aput-object v26, v14, p3
+
+    .line 175
+    .line 176
+    invoke-static {v14}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v14
+
+    .line 180
+    iput-object v14, v3, LO96;->b:Ljava/lang/Object;
+
+    .line 181
+    .line 182
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
+
+    .line 183
+    .line 184
+    .line 185
+    move-result-object v14
+
+    .line 186
+    iput-object v14, v3, LO96;->X:Ljava/lang/Object;
+
+    .line 187
+    .line 188
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
+
+    .line 189
+    .line 190
+    .line 191
+    move-result-object v14
+
+    .line 192
+    invoke-virtual {v3, v14}, LO96;->g(LURh;)Let4;
+
+    .line 193
+    .line 194
+    .line 195
+    move-result-object v14
+
+    .line 196
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->h2()LYt9;
+
+    .line 197
+    .line 198
+    .line 199
+    move-result-object v13
+
+    .line 200
+    invoke-virtual {v14, v13}, Let4;->a(LYt9;)V
+
+    .line 201
+    .line 202
+    .line 203
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
+
+    .line 204
+    .line 205
+    .line 206
+    move-result-object v13
+
+    .line 207
+    iput-object v13, v14, Let4;->b:LURh;
+
+    .line 208
+    .line 209
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
+
+    .line 210
+    .line 211
+    .line 212
+    move-result-object v13
+
+    .line 213
+    invoke-virtual {v3, v13}, LO96;->g(LURh;)Let4;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v13
+
+    .line 217
+    move-object/from16 v21, v15
+
+    .line 218
+    .line 219
+    iget-wide v14, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->q1:J
+
+    .line 220
+    .line 221
+    iput-wide v14, v13, Let4;->d:J
+
+    .line 222
+    .line 223
+    move/from16 v22, v0
+
+    .line 224
+    .line 225
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
+
+    .line 226
+    .line 227
+    .line 228
+    move-result-object v0
+
+    .line 229
+    iput-object v0, v13, Let4;->b:LURh;
+
+    .line 230
+    .line 231
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
+
+    .line 232
+    .line 233
+    .line 234
+    move-result-object v0
+
+    .line 235
+    invoke-virtual {v3, v0}, LO96;->g(LURh;)Let4;
+
+    .line 236
+    .line 237
+    .line 238
+    move-result-object v0
+
+    .line 239
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->e2()LYt9;
+
+    .line 240
+    .line 241
+    .line 242
+    move-result-object v13
+
+    .line 243
+    invoke-virtual {v0, v13}, Let4;->a(LYt9;)V
+
+    .line 244
+    .line 245
+    .line 246
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
+
+    .line 247
+    .line 248
+    .line 249
+    move-result-object v13
+
+    .line 250
+    iput-object v13, v0, Let4;->b:LURh;
+
+    .line 251
+    .line 252
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
+
+    .line 253
+    .line 254
+    .line 255
+    move-result-object v0
+
+    .line 256
+    invoke-virtual {v3, v0}, LO96;->g(LURh;)Let4;
+
+    .line 257
+    .line 258
+    .line 259
+    move-result-object v0
+
+    .line 260
+    iget-object v13, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->l1:LREi;
+
+    .line 261
+    .line 262
+    invoke-virtual {v13}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 263
+    .line 264
+    .line 265
+    move-result-object v13
+
+    .line 266
+    check-cast v13, LYt9;
+
+    .line 267
+    .line 268
+    invoke-virtual {v0, v13}, Let4;->a(LYt9;)V
+
+    .line 269
+    .line 270
+    .line 271
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
+
+    .line 272
+    .line 273
+    .line 274
+    move-result-object v13
+
+    .line 275
+    iput-object v13, v0, Let4;->b:LURh;
+
+    .line 276
+    .line 277
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
+
+    .line 278
+    .line 279
+    .line 280
+    move-result-object v0
+
+    .line 281
+    invoke-virtual {v3, v0}, LO96;->g(LURh;)Let4;
+
+    .line 282
+    .line 283
+    .line 284
+    move-result-object v0
+
+    .line 285
+    iput-wide v14, v0, Let4;->d:J
+
+    .line 286
+    .line 287
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
+
+    .line 288
+    .line 289
+    .line 290
+    move-result-object v13
+
+    .line 291
+    iput-object v13, v0, Let4;->b:LURh;
+
+    .line 292
+    .line 293
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
+
+    .line 294
+    .line 295
+    .line 296
+    move-result-object v0
+
+    .line 297
+    invoke-virtual {v3, v0}, LO96;->g(LURh;)Let4;
+
+    .line 298
+    .line 299
+    .line 300
+    move-result-object v0
+
+    .line 301
+    iget-object v13, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->m1:LREi;
+
+    .line 302
+    .line 303
+    invoke-virtual {v13}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 304
+    .line 305
+    .line 306
+    move-result-object v13
+
+    .line 307
+    check-cast v13, LYt9;
+
+    .line 308
+    .line 309
+    invoke-virtual {v0, v13}, Let4;->a(LYt9;)V
+
+    .line 310
+    .line 311
+    .line 312
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
+
+    .line 313
+    .line 314
+    .line 315
+    move-result-object v13
+
+    .line 316
+    iput-object v13, v0, Let4;->b:LURh;
+
+    .line 317
+    .line 318
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
+
+    .line 319
+    .line 320
+    .line 321
+    move-result-object v0
+
+    .line 322
+    invoke-virtual {v3, v0}, LO96;->g(LURh;)Let4;
+
+    .line 323
+    .line 324
+    .line 325
+    move-result-object v0
+
+    .line 326
+    iput-wide v14, v0, Let4;->d:J
+
+    .line 327
+    .line 328
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
+
+    .line 329
+    .line 330
+    .line 331
+    move-result-object v13
+
+    .line 332
+    iput-object v13, v0, Let4;->b:LURh;
+
+    .line 333
+    .line 334
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
+
+    .line 335
+    .line 336
+    .line 337
+    move-result-object v0
+
+    .line 338
+    new-instance v13, LCE2;
+
+    .line 339
+    .line 340
+    move-object/from16 v23, v1
+
+    .line 341
+    .line 342
+    const/4 v1, 0x3
+
+    .line 343
+    invoke-direct {v13, v2, v1}, LCE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 344
+    .line 345
+    .line 346
+    invoke-virtual {v3, v0, v13}, LO96;->l(LURh;Lkotlin/jvm/functions/Function0;)V
+
+    .line 347
+    .line 348
+    .line 349
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
+
+    .line 350
+    .line 351
+    .line 352
+    move-result-object v0
+
+    .line 353
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
+
+    .line 354
+    .line 355
+    .line 356
+    move-result-object v1
+
+    .line 357
+    move-object/from16 v24, v0
+
+    .line 358
+    .line 359
+    const/4 v13, 0x2
+
+    .line 360
+    new-array v0, v13, [LURh;
+
+    .line 361
+    .line 362
+    aput-object v24, v0, p2
+
+    .line 363
+    .line 364
+    aput-object v1, v0, p1
+
+    .line 365
+    .line 366
+    invoke-static {v0}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 367
+    .line 368
+    .line 369
+    move-result-object v0
+
+    .line 370
+    new-instance v1, LCE2;
+
+    .line 371
+    .line 372
+    const/4 v13, 0x4
+
+    .line 373
+    invoke-direct {v1, v2, v13}, LCE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 374
+    .line 375
+    .line 376
+    invoke-virtual {v3, v0, v1}, LO96;->m(Ljava/util/List;Lkotlin/jvm/functions/Function0;)V
+
+    .line 377
+    .line 378
+    .line 379
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
+
+    .line 380
+    .line 381
+    .line 382
+    move-result-object v0
+
+    .line 383
+    new-instance v1, LCE2;
+
+    .line 384
+    .line 385
+    const/4 v13, 0x5
+
+    .line 386
+    invoke-direct {v1, v2, v13}, LCE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 387
+    .line 388
+    .line 389
+    invoke-virtual {v3, v0, v1}, LO96;->l(LURh;Lkotlin/jvm/functions/Function0;)V
+
+    .line 390
+    .line 391
+    .line 392
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
+
+    .line 393
+    .line 394
+    .line 395
+    move-result-object v0
+
+    .line 396
+    new-instance v1, LCE2;
+
+    .line 397
+    .line 398
+    const/4 v13, 0x6
+
+    .line 399
+    invoke-direct {v1, v2, v13}, LCE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 400
+    .line 401
+    .line 402
+    invoke-virtual {v3, v0, v1}, LO96;->l(LURh;Lkotlin/jvm/functions/Function0;)V
+
+    .line 403
+    .line 404
+    .line 405
+    invoke-virtual {v3}, LO96;->d()Lft4;
+
+    .line 406
+    .line 407
+    .line 408
+    move-result-object v0
+
+    .line 409
+    new-instance v1, LBE2;
+
+    .line 410
+    .line 411
+    const/4 v3, 0x0
+
+    .line 412
+    invoke-direct {v1, v3}, LBE2;-><init>(I)V
+
+    .line 413
+    .line 414
+    .line 415
+    invoke-virtual {v0, v1}, Lft4;->a(Ldt4;)V
+
+    .line 416
+    .line 417
+    .line 418
+    iget-object v13, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->c2:Ljava/util/ArrayList;
+
+    .line 419
+    .line 420
+    invoke-virtual {v13, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 421
+    .line 422
+    .line 423
+    move-object v1, v5
+
+    .line 424
+    move-object v5, v4
+
+    .line 425
+    move-object v4, v0
+
+    .line 426
+    new-instance v0, LIE2;
+
+    .line 427
+    .line 428
+    move/from16 v28, v7
+
+    .line 429
+    .line 430
+    move/from16 v18, v9
+
+    .line 431
+    .line 432
+    move-object/from16 v17, v13
+
+    .line 433
+    .line 434
+    move-object/from16 v9, v21
+
+    .line 435
+    .line 436
+    move/from16 v7, v22
+
+    .line 437
+    .line 438
+    move-object/from16 v3, v23
+
+    .line 439
+    .line 440
+    const/4 v13, 0x0
+
+    .line 441
+    invoke-direct/range {v0 .. v12}, LIE2;-><init>(LTE2;Lcom/snap/charms/details/CharmsDetailsFragment;Landroid/graphics/Typeface;Lft4;Landroid/graphics/Typeface;Leyg;ILeyg;Landroid/graphics/Typeface;Ljava/util/List;Lio/reactivex/rxjava3/subjects/BehaviorSubject;LO0f;)V
+
+    .line 442
+    .line 443
+    .line 444
+    iget-boolean v3, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->P0:Z
+
+    .line 445
+    .line 446
+    if-eqz v3, :cond_0
+
+    .line 447
+    .line 448
+    sget-object v3, Llf7;->v0:Llf7;
+
+    .line 449
+    .line 450
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 451
+    .line 452
+    invoke-direct {v5, v11, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 453
+    .line 454
+    .line 455
+    move-object v11, v5
+
+    .line 456
+    :cond_0
+    new-instance v3, Lxza;
+
+    .line 457
+    .line 458
+    invoke-direct {v3, v11}, Lxza;-><init>(Lio/reactivex/rxjava3/core/Observable;)V
+
+    .line 459
+    .line 460
+    .line 461
+    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
+
+    .line 462
+    .line 463
+    .line 464
+    move-result-object v5
+
+    .line 465
+    iput-object v5, v3, LsN0;->b:Ljava/lang/Object;
+
+    .line 466
+    .line 467
+    iput-object v0, v3, Lxza;->Y:LIE2;
+
+    .line 468
+    .line 469
+    iget v0, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->t1:F
+
+    .line 470
+    .line 471
+    iget v5, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
+
+    .line 472
+    .line 473
+    const/4 v6, 0x1
+
+    .line 474
+    iput-boolean v6, v3, Lxza;->Z:Z
+
+    .line 475
+    .line 476
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 477
+    .line 478
+    .line 479
+    move-result-object v0
+
+    .line 480
+    iput-object v0, v3, Lxza;->e0:Ljava/lang/Float;
+
+    .line 481
+    .line 482
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 483
+    .line 484
+    .line 485
+    move-result-object v0
+
+    .line 486
+    iput-object v0, v3, Lxza;->f0:Ljava/lang/Float;
+
+    .line 487
+    .line 488
+    sget-object v0, Lyza;->b:Lyza;
+
+    .line 489
+    .line 490
+    iput-object v0, v3, Lxza;->h0:Lyza;
+
+    .line 491
+    .line 492
+    iget v0, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->v1:F
+
+    .line 493
+    .line 494
+    iput v0, v3, Lxza;->g0:F
+
+    .line 495
+    .line 496
+    iget-object v0, v1, LTE2;->f0:LhE2;
+
+    .line 497
+    .line 498
+    iput-object v0, v3, Lxza;->i0:Ljava/lang/Object;
+
+    .line 499
+    .line 500
+    new-instance v0, LFE2;
+
+    .line 501
+    .line 502
+    invoke-direct {v0, v2, v13}, LFE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 503
+    .line 504
+    .line 505
+    iput-object v0, v3, Lxza;->j0:LFE2;
+
+    .line 506
+    .line 507
+    new-instance v0, LFE2;
+
+    .line 508
+    .line 509
+    const/4 v6, 0x1
+
+    .line 510
+    invoke-direct {v0, v2, v6}, LFE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 511
+    .line 512
+    .line 513
+    iput-object v0, v3, Lxza;->k0:LFE2;
+
+    .line 514
+    .line 515
+    new-instance v0, Lzza;
+
+    .line 516
+    .line 517
+    invoke-direct {v0, v3}, Lzza;-><init>(Lxza;)V
+
+    .line 518
+    .line 519
+    .line 520
+    iget-object v1, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->i2:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 521
+    .line 522
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 523
+    .line 524
+    .line 525
+    invoke-virtual {v2}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
+
+    .line 526
+    .line 527
+    .line 528
+    move-result-object v1
+
+    .line 529
+    const v3, 0x7f06039f
+
+    .line 530
+    .line 531
+    .line 532
+    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
+
+    .line 533
+    .line 534
+    .line 535
+    move-result v1
+
+    .line 536
+    iget-object v3, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->E0:LH4j;
+
+    .line 537
+    .line 538
+    if-eqz v3, :cond_2
+
+    .line 539
+    .line 540
+    new-instance v3, LcJ8;
+
+    .line 541
+    .line 542
+    invoke-direct {v3}, LcJ8;-><init>()V
+
+    .line 543
+    .line 544
+    .line 545
+    iput-object v4, v3, LsN0;->c:Ljava/lang/Object;
+
+    .line 546
+    .line 547
+    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
+
+    .line 548
+    .line 549
+    .line 550
+    move-result-object v5
+
+    .line 551
+    iput-object v5, v3, LsN0;->b:Ljava/lang/Object;
+
+    .line 552
+    .line 553
+    new-instance v5, LGBi;
+
+    .line 554
+    .line 555
+    new-instance v29, LRh;
+
+    .line 556
+    .line 557
+    sget-object v31, LzNe;->a:Lrz9;
+
+    .line 558
+    .line 559
+    const-class v32, Lrz9;
+
+    .line 560
+    .line 561
+    const-string v33, "colorInterpolator"
+
+    .line 562
+    .line 563
+    const/16 v30, 0x3
+
+    .line 564
+    .line 565
+    const-string v34, "colorInterpolator(IIF)I"
+
+    .line 566
+    .line 567
+    const/16 v35, 0x0
+
+    .line 568
+    .line 569
+    const/16 v36, 0xf
+
+    .line 570
+    .line 571
+    invoke-direct/range {v29 .. v36}, LRh;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+
+    .line 572
+    .line 573
+    .line 574
+    move-object/from16 v6, v29
+
+    .line 575
+    .line 576
+    invoke-direct {v5, v6, v13}, LGBi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
+
+    .line 577
+    .line 578
+    .line 579
+    const/4 v6, 0x1
+
+    .line 580
+    new-array v7, v6, [Lft4;
+
+    .line 581
+    .line 582
+    aput-object v4, v7, v13
+
+    .line 583
+    .line 584
+    invoke-virtual {v5, v7}, LGBi;->a([Lft4;)V
+
+    .line 585
+    .line 586
+    .line 587
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()LURh;
+
+    .line 588
+    .line 589
+    .line 590
+    move-result-object v7
+
+    .line 591
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()LURh;
+
+    .line 592
+    .line 593
+    .line 594
+    move-result-object v8
+
+    .line 595
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()LURh;
+
+    .line 596
+    .line 597
+    .line 598
+    move-result-object v9
+
+    .line 599
+    const/4 v10, 0x3
+
+    .line 600
+    new-array v10, v10, [LURh;
+
+    .line 601
+    .line 602
+    aput-object v7, v10, v13
+
+    .line 603
+    .line 604
+    aput-object v8, v10, v6
+
+    .line 605
+    .line 606
+    const/16 v27, 0x2
+
+    .line 607
+    .line 608
+    aput-object v9, v10, v27
+
+    .line 609
+    .line 610
+    invoke-virtual {v5, v10}, LGBi;->e([LURh;)LEZi;
+
+    .line 611
+    .line 612
+    .line 613
+    move-result-object v7
+
+    .line 614
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 615
+    .line 616
+    .line 617
+    move-result-object v8
+
+    .line 618
+    iput-object v8, v7, LEZi;->a:Ljava/lang/Number;
+
+    .line 619
+    .line 620
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()LURh;
+
+    .line 621
+    .line 622
+    .line 623
+    move-result-object v7
+
+    .line 624
+    new-array v8, v6, [LURh;
+
+    .line 625
+    .line 626
+    aput-object v7, v8, v13
+
+    .line 627
+    .line 628
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
+
+    .line 629
+    .line 630
+    .line 631
+    move-result-object v7
+
+    .line 632
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 633
+    .line 634
+    .line 635
+    move-result-object v8
+
+    .line 636
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 637
+    .line 638
+    .line 639
+    move-result-object v9
+
+    .line 640
+    invoke-virtual {v7, v8, v9, v14, v15}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+
+    .line 641
+    .line 642
+    .line 643
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()LURh;
+
+    .line 644
+    .line 645
+    .line 646
+    move-result-object v7
+
+    .line 647
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()LURh;
+
+    .line 648
+    .line 649
+    .line 650
+    move-result-object v8
+
+    .line 651
+    const/4 v9, 0x2
+
+    .line 652
+    new-array v10, v9, [LURh;
+
+    .line 653
+    .line 654
+    aput-object v7, v10, v13
+
+    .line 655
+    .line 656
+    aput-object v8, v10, v6
+
+    .line 657
+    .line 658
+    invoke-virtual {v5, v10}, LGBi;->e([LURh;)LEZi;
+
+    .line 659
+    .line 660
+    .line 661
+    move-result-object v7
+
+    .line 662
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 663
+    .line 664
+    .line 665
+    move-result-object v8
+
+    .line 666
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 667
+    .line 668
+    .line 669
+    move-result-object v9
+
+    .line 670
+    invoke-virtual {v7, v8, v9, v14, v15}, LEZi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
+
+    .line 671
+    .line 672
+    .line 673
+    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()LURh;
+
+    .line 674
+    .line 675
+    .line 676
+    move-result-object v7
+
+    .line 677
+    new-array v8, v6, [LURh;
+
+    .line 678
+    .line 679
+    aput-object v7, v8, v13
+
+    .line 680
+    .line 681
+    invoke-virtual {v5, v8}, LGBi;->e([LURh;)LEZi;
+
+    .line 682
+    .line 683
+    .line 684
+    move-result-object v6
+
+    .line 685
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 686
+    .line 687
+    .line 688
+    move-result-object v1
+
+    .line 689
+    iput-object v1, v6, LEZi;->a:Ljava/lang/Number;
+
+    .line 690
+    .line 691
+    invoke-virtual {v5}, LGBi;->d()LFZi;
+
+    .line 692
+    .line 693
+    .line 694
+    move-result-object v1
+
+    .line 695
+    iput-object v1, v3, LcJ8;->X:LFZi;
+
+    .line 696
+    .line 697
+    invoke-virtual {v3, v0}, LcJ8;->B(LpM6;)LeJ8;
+
+    .line 698
+    .line 699
+    .line 700
+    move-result-object v0
+
+    .line 701
+    iget v1, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
+
+    .line 702
+    .line 703
+    move/from16 v8, v18
+
+    .line 704
+    .line 705
+    iput v8, v0, LeJ8;->b:F
+
+    .line 706
+    .line 707
+    iput v1, v0, LeJ8;->c:F
+
+    .line 708
+    .line 709
+    iput-boolean v13, v0, LeJ8;->g:Z
+
+    .line 710
+    .line 711
+    iget v5, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->t1:F
+
+    .line 712
+    .line 713
+    sub-float v6, v8, v5
+
+    .line 714
+    .line 715
+    const/4 v9, 0x2
+
+    .line 716
+    int-to-float v5, v9
+
+    .line 717
+    div-float/2addr v6, v5
+
+    .line 718
+    move/from16 v7, v28
+
+    .line 719
+    .line 720
+    sub-float v1, v7, v1
+
+    .line 721
+    .line 722
+    div-float/2addr v1, v5
+
+    .line 723
+    iput v6, v0, LeJ8;->d:F
+
+    .line 724
+    .line 725
+    iput v1, v0, LeJ8;->e:F
+
+    .line 726
+    .line 727
+    new-instance v0, LOn8;
+
+    .line 728
+    .line 729
+    iget-object v1, v3, LsN0;->b:Ljava/lang/Object;
+
+    .line 730
+    .line 731
+    check-cast v1, Landroid/content/Context;
+
+    .line 732
+    .line 733
+    const/4 v6, 0x1
+
+    .line 734
+    invoke-direct {v0, v1, v6}, LOn8;-><init>(Landroid/content/Context;I)V
+
+    .line 735
+    .line 736
+    .line 737
+    iget-object v1, v3, LsN0;->t:Ljava/lang/Object;
+
+    .line 738
+    .line 739
+    check-cast v1, Ljava/util/ArrayList;
+
+    .line 740
+    .line 741
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 742
+    .line 743
+    .line 744
+    new-instance v1, LCE2;
+
+    .line 745
+    .line 746
+    invoke-direct {v1, v2, v13}, LCE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 747
+    .line 748
+    .line 749
+    iput-object v1, v0, LOn8;->d:LCE2;
+
+    .line 750
+    .line 751
+    new-instance v1, LCE2;
+
+    .line 752
+    .line 753
+    invoke-direct {v1, v2, v6}, LCE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 754
+    .line 755
+    .line 756
+    iput-object v1, v0, LOn8;->e:LCE2;
+
+    .line 757
+    .line 758
+    new-instance v0, LfJ8;
+
+    .line 759
+    .line 760
+    invoke-direct {v0, v3}, LfJ8;-><init>(LcJ8;)V
+
+    .line 761
+    .line 762
+    .line 763
+    iput-object v0, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LfJ8;
+
+    .line 764
+    .line 765
+    new-instance v1, Lv7d;
+
+    .line 766
+    .line 767
+    iget-object v3, v0, LpM6;->a:Landroid/content/Context;
+
+    .line 768
+    .line 769
+    invoke-direct {v1, v3}, Lv7d;-><init>(Landroid/content/Context;)V
+
+    .line 770
+    .line 771
+    .line 772
+    iget-object v3, v1, Lv7d;->a:Ljava/util/ArrayList;
+
+    .line 773
+    .line 774
+    iget-object v6, v0, LfJ8;->Y:LfO7;
+
+    .line 775
+    .line 776
+    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 777
+    .line 778
+    .line 779
+    iget-object v3, v1, Lv7d;->b:Ljava/util/ArrayList;
+
+    .line 780
+    .line 781
+    iget-object v6, v0, LfJ8;->e0:LFx6;
+
+    .line 782
+    .line 783
+    check-cast v6, LVF9;
+
+    .line 784
+    .line 785
+    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 786
+    .line 787
+    .line 788
+    invoke-virtual {v0}, LfJ8;->e()LCbj;
+
+    .line 789
+    .line 790
+    .line 791
+    move-result-object v3
+
+    .line 792
+    iget-object v6, v1, Lv7d;->c:Ljava/util/ArrayList;
+
+    .line 793
+    .line 794
+    invoke-virtual {v6, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 795
+    .line 796
+    .line 797
+    new-instance v3, Lm89;
+
+    .line 798
+    .line 799
+    invoke-direct {v3, v13}, Lm89;-><init>(I)V
+
+    .line 800
+    .line 801
+    .line 802
+    iget-object v9, v1, Lv7d;->t:Ljava/util/ArrayList;
+
+    .line 803
+    .line 804
+    invoke-virtual {v9, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 805
+    .line 806
+    .line 807
+    invoke-virtual {v0, v1}, LpM6;->m(Lv7d;)V
+
+    .line 808
+    .line 809
+    .line 810
+    const v0, 0x7f0b04ff
+
+    .line 811
+    .line 812
+    .line 813
+    invoke-virtual {v1, v0}, Landroid/view/View;->setId(I)V
+
+    .line 814
+    .line 815
+    .line 816
+    new-instance v0, LOq2;
+
+    .line 817
+    .line 818
+    const/16 v3, 0x8
+
+    .line 819
+    .line 820
+    invoke-direct {v0, v3, v1}, LOq2;-><init>(ILjava/lang/Object;)V
+
+    .line 821
+    .line 822
+    .line 823
+    iput-object v0, v12, LO0f;->a:Ljava/lang/Object;
+
+    .line 824
+    .line 825
+    invoke-virtual/range {v17 .. v17}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 826
+    .line 827
+    .line 828
+    move-result-object v0
+
+    .line 829
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 830
+    .line 831
+    .line 832
+    move-result v3
+
+    .line 833
+    if-eqz v3, :cond_1
+
+    .line 834
+    .line 835
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 836
+    .line 837
+    .line 838
+    move-result-object v3
+
+    .line 839
+    check-cast v3, Lft4;
+
+    .line 840
+    .line 841
+    new-instance v9, LDE2;
+
+    .line 842
+    .line 843
+    invoke-direct {v9, v2, v12, v1}, LDE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;LO0f;Lv7d;)V
+
+    .line 844
+    .line 845
+    .line 846
+    invoke-virtual {v3, v9}, Lft4;->a(Ldt4;)V
+
+    .line 847
+    .line 848
+    .line 849
+    goto :goto_0
+
+    .line 850
+    :cond_1
+    new-instance v0, LEE2;
+
+    .line 851
+    .line 852
+    invoke-direct {v0, v2, v1}, LEE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;Lv7d;)V
+
+    .line 853
+    .line 854
+    .line 855
+    invoke-virtual {v4, v0}, Lft4;->a(Ldt4;)V
+
+    .line 856
+    .line 857
+    .line 858
+    new-instance v0, Lz53;
+
+    .line 859
+    .line 860
+    invoke-direct {v0}, Lz53;-><init>()V
+
+    .line 861
+    .line 862
+    .line 863
+    new-instance v3, Landroid/graphics/RectF;
+
+    .line 864
+    .line 865
+    iget v4, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
+
+    .line 866
+    .line 867
+    sub-float v4, v7, v4
+
+    .line 868
+    .line 869
+    div-float/2addr v4, v5
+
+    .line 870
+    const/4 v9, 0x0
+
+    .line 871
+    invoke-direct {v3, v9, v9, v8, v4}, Landroid/graphics/RectF;-><init>(FFFF)V
+
+    .line 872
+    .line 873
+    .line 874
+    iget-object v4, v0, Lz53;->a:Ljava/util/ArrayList;
+
+    .line 875
+    .line 876
+    invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 877
+    .line 878
+    .line 879
+    new-instance v3, Landroid/graphics/RectF;
+
+    .line 880
+    .line 881
+    iget v10, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
+
+    .line 882
+    .line 883
+    add-float/2addr v10, v7
+
+    .line 884
+    div-float/2addr v10, v5
+
+    .line 885
+    invoke-direct {v3, v9, v10, v8, v7}, Landroid/graphics/RectF;-><init>(FFFF)V
+
+    .line 886
+    .line 887
+    .line 888
+    invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 889
+    .line 890
+    .line 891
+    new-instance v3, LCE2;
+
+    .line 892
+    .line 893
+    const/4 v9, 0x2
+
+    .line 894
+    invoke-direct {v3, v2, v9}, LCE2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
+
+    .line 895
+    .line 896
+    .line 897
+    iput-object v3, v0, Lz53;->b:LCE2;
+
+    .line 898
+    .line 899
+    invoke-virtual {v6, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 900
+    .line 901
+    .line 902
+    return-object v1
+
+    .line 903
+    :cond_2
+    invoke-static/range {v19 .. v19}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 904
+    .line 905
+    .line 906
+    throw v16
+
+    .line 907
+    :cond_3
+    invoke-static/range {v19 .. v19}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 908
+    .line 909
+    .line 910
+    throw v16
+
+    .line 911
+    :cond_4
+    const-string v0, "configuration"
+
+    .line 912
+    .line 913
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 914
+    .line 915
+    .line 916
+    throw v16
+.end method
+
+.method public final G1()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->L0:LdQ1;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, v0, LdQ1;->b:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    check-cast v0, LTE2;
+
+    .line 8
+    .line 9
+    iget-object v0, v0, LTE2;->k0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 10
+    .line 11
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    :cond_0
+    return-void
+.end method
+
+.method public final b2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->S0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final c2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Q0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LfJ8;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    const-string v2, "details"
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_1
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->h2()LYt9;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v3
+
+    .line 12
+    invoke-virtual {v0, v3}, LpM6;->f(LYt9;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LfJ8;
+
+    .line 16
+    .line 17
+    if-eqz v0, :cond_0
+
+    .line 18
+    .line 19
+    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->e2()LYt9;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-virtual {v0, v1}, LpM6;->j(LYt9;)V
+
+    .line 24
+    .line 25
+    .line 26
+    const/4 v0, 0x1
+
+    .line 27
+    return v0
+
+    .line 28
+    :cond_0
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    throw v1
+
+    .line 32
+    :cond_1
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    throw v1
+.end method
+
+.method public final d2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->W0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final e2()LYt9;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->n1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LYt9;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final f2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->V0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final g2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->U0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final h2()LYt9;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->h1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LYt9;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final i2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Y0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final j2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Z0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final k2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->c1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final l2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->R0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final m2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->b1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final n2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->f1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final o2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->X0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final p2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->e1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final q2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->T0:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final r2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->a1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final s2()LURh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->g1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LURh;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final t2(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/BitmapDrawable;
+    .locals 6
+
+    .line 1
+    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->A0:LF21;
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    const/4 v4, 0x1
+
+    .line 12
+    const-string v5, "CharmsDetailsFragment"
+
+    .line 13
+    .line 14
+    move v2, p2
+
+    .line 15
+    move v3, p3
+
+    .line 16
+    invoke-interface/range {v0 .. v5}, LF21;->O1(Landroid/graphics/Bitmap;IIZLjava/lang/String;)LQ0f;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    invoke-static {p1}, LMC8;->K0(LQ0f;)Landroid/graphics/Bitmap;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    new-instance p2, Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 25
+    .line 26
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p3
+
+    .line 30
+    invoke-direct {p2, p3, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-object p2
+
+    .line 34
+    :cond_0
+    const-string p1, "bitmapFactory"
+
+    .line 35
+    .line 36
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    const/4 p1, 0x0
+
+    .line 40
+    throw p1
+.end method
+
+.method public final z1(Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->B1(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->z1(Landroid/os/Bundle;)V
 
     .line 2
     .line 3
@@ -2644,7 +5139,7 @@
     move-result-object p1
 
     .line 8
-    const v0, 0x7f0713d4
+    const v0, 0x7f0713ef
 
     .line 9
     .line 10
@@ -2662,7 +5157,7 @@
     move-result-object p1
 
     .line 18
-    const v0, 0x7f0713fc
+    const v0, 0x7f071417
 
     .line 19
     .line 20
@@ -2680,7 +5175,7 @@
     move-result-object p1
 
     .line 28
-    const v0, 0x7f0713d1
+    const v0, 0x7f0713ec
 
     .line 29
     .line 30
@@ -2704,7 +5199,7 @@
     move-result-object v0
 
     .line 40
-    const v1, 0x7f0713d6
+    const v1, 0x7f0713f1
 
     .line 41
     .line 42
@@ -2722,7 +5217,7 @@
     move-result-object v0
 
     .line 50
-    const v1, 0x7f0713fb
+    const v1, 0x7f071416
 
     .line 51
     .line 52
@@ -2740,7 +5235,7 @@
     move-result-object v0
 
     .line 60
-    const v1, 0x7f0713e9
+    const v1, 0x7f071404
 
     .line 61
     .line 62
@@ -2758,7 +5253,7 @@
     move-result-object v0
 
     .line 70
-    const v2, 0x7f071400
+    const v2, 0x7f07141b
 
     .line 71
     .line 72
@@ -2776,7 +5271,7 @@
     move-result-object v0
 
     .line 80
-    const v2, 0x7f0713ff
+    const v2, 0x7f07141a
 
     .line 81
     .line 82
@@ -2794,7 +5289,7 @@
     move-result-object v0
 
     .line 90
-    const v2, 0x7f0713dd
+    const v2, 0x7f0713f8
 
     .line 91
     .line 92
@@ -2819,7 +5314,7 @@
     move-result-object v0
 
     .line 103
-    const v2, 0x7f0713d9
+    const v2, 0x7f0713f4
 
     .line 104
     .line 105
@@ -2844,7 +5339,7 @@
     move-result-object v0
 
     .line 116
-    const v2, 0x7f0713da
+    const v2, 0x7f0713f5
 
     .line 117
     .line 118
@@ -2869,7 +5364,7 @@
     move-result-object v0
 
     .line 129
-    const v2, 0x7f0713db
+    const v2, 0x7f0713f6
 
     .line 130
     .line 131
@@ -2894,7 +5389,7 @@
     move-result-object v0
 
     .line 142
-    const v2, 0x7f0713dc
+    const v2, 0x7f0713f7
 
     .line 143
     .line 144
@@ -2938,7 +5433,7 @@
     move-result-object p1
 
     .line 164
-    const v0, 0x7f0713e7
+    const v0, 0x7f071402
 
     .line 165
     .line 166
@@ -2963,7 +5458,7 @@
     move-result-object p1
 
     .line 177
-    const v0, 0x7f0713ea
+    const v0, 0x7f071405
 
     .line 178
     .line 179
@@ -2988,7 +5483,7 @@
     move-result-object p1
 
     .line 190
-    const v0, 0x7f0713e8
+    const v0, 0x7f071403
 
     .line 191
     .line 192
@@ -3013,7 +5508,7 @@
     move-result-object p1
 
     .line 203
-    const v0, 0x7f0713ec
+    const v0, 0x7f071407
 
     .line 204
     .line 205
@@ -3038,7 +5533,7 @@
     move-result-object p1
 
     .line 216
-    const v0, 0x7f0713df
+    const v0, 0x7f0713fa
 
     .line 217
     .line 218
@@ -3083,7 +5578,7 @@
     move-result-object p1
 
     .line 239
-    const v0, 0x7f0713e6
+    const v0, 0x7f071401
 
     .line 240
     .line 241
@@ -3108,7 +5603,7 @@
     move-result-object p1
 
     .line 252
-    const v0, 0x7f0713e5
+    const v0, 0x7f071400
 
     .line 253
     .line 254
@@ -3133,7 +5628,7 @@
     move-result-object p1
 
     .line 265
-    const v0, 0x7f0713eb
+    const v0, 0x7f071406
 
     .line 266
     .line 267
@@ -3158,7 +5653,7 @@
     move-result-object p1
 
     .line 278
-    const v0, 0x7f0713f3
+    const v0, 0x7f07140e
 
     .line 279
     .line 280
@@ -3183,7 +5678,7 @@
     move-result-object p1
 
     .line 291
-    const v0, 0x7f0713f2
+    const v0, 0x7f07140d
 
     .line 292
     .line 293
@@ -3208,7 +5703,7 @@
     move-result-object p1
 
     .line 304
-    const v0, 0x7f0713f4
+    const v0, 0x7f07140f
 
     .line 305
     .line 306
@@ -3233,7 +5728,7 @@
     move-result-object p1
 
     .line 317
-    const v0, 0x7f0713f5
+    const v0, 0x7f071410
 
     .line 318
     .line 319
@@ -3266,12 +5761,12 @@
     move-result-object p1
 
     .line 334
-    const v0, 0x7f0406f4
+    const v0, 0x7f0407b5
 
     .line 335
     .line 336
     .line 337
-    invoke-static {p1, v0}, LI0j;->p(Landroid/content/res/Resources$Theme;I)F
+    invoke-static {p1, v0}, LNC8;->l(Landroid/content/res/Resources$Theme;I)F
 
     .line 338
     .line 339
@@ -3291,7 +5786,7 @@
     move-result-object p1
 
     .line 347
-    const v0, 0x7f0713f0
+    const v0, 0x7f07140b
 
     .line 348
     .line 349
@@ -3316,7 +5811,7 @@
     move-result-object p1
 
     .line 360
-    const v0, 0x7f0713ef
+    const v0, 0x7f07140a
 
     .line 361
     .line 362
@@ -3341,7 +5836,7 @@
     move-result-object p1
 
     .line 373
-    const v0, 0x7f0713f1
+    const v0, 0x7f07140c
 
     .line 374
     .line 375
@@ -3374,12 +5869,12 @@
     move-result-object p1
 
     .line 390
-    const v0, 0x7f0801b5
+    const v0, 0x7f0801e5
 
     .line 391
     .line 392
     .line 393
-    invoke-static {p1, v0}, LsX3;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, v0}, LV14;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 394
     .line 395
@@ -3428,12 +5923,12 @@
     move-result-object p1
 
     .line 415
-    const v0, 0x7f080076
+    const v0, 0x7f080078
 
     .line 416
     .line 417
     .line 418
-    invoke-static {p1, v0}, LsX3;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, v0}, LV14;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 419
     .line 420
@@ -3504,7 +5999,7 @@
     move-result-object p1
 
     .line 451
-    const v0, 0x7f060208
+    const v0, 0x7f060260
 
     .line 452
     .line 453
@@ -3529,7 +6024,7 @@
     move-result-object p1
 
     .line 464
-    const v0, 0x7f060509
+    const v0, 0x7f0605e8
 
     .line 465
     .line 466
@@ -3554,7 +6049,7 @@
     move-result-object p1
 
     .line 477
-    const v0, 0x7f0600a6
+    const v0, 0x7f0600ba
 
     .line 478
     .line 479
@@ -3579,7 +6074,7 @@
     move-result-object p1
 
     .line 490
-    const v0, 0x7f0600a5
+    const v0, 0x7f0600b9
 
     .line 491
     .line 492
@@ -3604,7 +6099,7 @@
     move-result-object p1
 
     .line 503
-    const v0, 0x7f060327
+    const v0, 0x7f0603af
 
     .line 504
     .line 505
@@ -3629,7 +6124,7 @@
     move-result-object p1
 
     .line 516
-    const v0, 0x7f060198
+    const v0, 0x7f0601ca
 
     .line 517
     .line 518
@@ -3654,7 +6149,7 @@
     move-result-object p1
 
     .line 529
-    const v0, 0x7f0713e3
+    const v0, 0x7f0713fe
 
     .line 530
     .line 531
@@ -3679,7 +6174,7 @@
     move-result-object p1
 
     .line 542
-    const v0, 0x7f0713e4
+    const v0, 0x7f0713ff
 
     .line 543
     .line 544
@@ -3704,7 +6199,7 @@
     move-result-object p1
 
     .line 555
-    const v0, 0x7f0713e2
+    const v0, 0x7f0713fd
 
     .line 556
     .line 557
@@ -3729,7 +6224,7 @@
     move-result-object p1
 
     .line 568
-    const v0, 0x7f0713e1
+    const v0, 0x7f0713fc
 
     .line 569
     .line 570
@@ -3747,2506 +6242,4 @@
     .line 576
     .line 577
     return-void
-.end method
-
-.method public final C1()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->i2:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final H1()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LjC8;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->h2()Lml9;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    invoke-virtual {v0, v1}, LKI6;->j(Lml9;)V
-
-    .line 10
-    .line 11
-    .line 12
-    return-void
-
-    .line 13
-    :cond_0
-    const-string v0, "details"
-
-    .line 14
-    .line 15
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 16
-    .line 17
-    .line 18
-    const/4 v0, 0x0
-
-    .line 19
-    throw v0
-.end method
-
-.method public final I1()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->L0:Lzq2;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, v0, Lzq2;->b:Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    check-cast v0, LeC2;
-
-    .line 8
-    .line 9
-    iget-object v0, v0, LeC2;->k0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 10
-    .line 11
-    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 14
-    .line 15
-    .line 16
-    :cond_0
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 37
-
-    .line 1
-    move-object/from16 v2, p0
-
-    .line 2
-    .line 3
-    const/4 v1, 0x5
-
-    .line 4
-    const/4 v3, 0x4
-
-    .line 5
-    const/16 v13, 0xf
-
-    .line 6
-    .line 7
-    const/4 v14, 0x3
-
-    .line 8
-    iget-object v6, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->w0:LHB2;
-
-    .line 9
-    .line 10
-    const/16 v16, 0x0
-
-    .line 11
-    .line 12
-    if-eqz v6, :cond_4
-
-    .line 13
-    .line 14
-    iget-object v6, v6, LHB2;->a:LeC2;
-
-    .line 15
-    .line 16
-    iget-object v7, v6, LeC2;->g0:Ljava/lang/Iterable;
-
-    .line 17
-    .line 18
-    invoke-static {v7}, Lue3;->w1(Ljava/lang/Iterable;)Ljava/util/List;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v10
-
-    .line 22
-    new-instance v11, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 23
-    .line 24
-    invoke-direct {v11, v10}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
-
-    .line 25
-    .line 26
-    .line 27
-    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v7
-
-    .line 31
-    invoke-static {v7}, Lsc5;->B0(Landroid/content/Context;)I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v7
-
-    .line 35
-    int-to-float v7, v7
-
-    .line 36
-    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v8
-
-    .line 40
-    invoke-static {v8}, Lsc5;->y0(Landroid/content/Context;)I
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v8
-
-    .line 44
-    int-to-float v8, v8
-
-    .line 45
-    move-object v9, v6
-
-    .line 46
-    new-instance v6, LEVf;
-
-    .line 47
-    .line 48
-    iget v12, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->L1:F
-
-    .line 49
-    .line 50
-    invoke-static {v12}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v12
-
-    .line 54
-    invoke-direct {v6, v13, v12}, LEVf;-><init>(ILjava/lang/Object;)V
-
-    .line 55
-    .line 56
-    .line 57
-    move v12, v8
-
-    .line 58
-    new-instance v8, LEVf;
-
-    .line 59
-    .line 60
-    const/16 p1, 0x1
-
-    .line 61
-    .line 62
-    iget v4, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->Y1:F
-
-    .line 63
-    .line 64
-    invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object v4
-
-    .line 68
-    invoke-direct {v8, v13, v4}, LEVf;-><init>(ILjava/lang/Object;)V
-
-    .line 69
-    .line 70
-    .line 71
-    invoke-virtual {v2}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object v4
-
-    .line 75
-    invoke-static {v4, v3}, LlXi;->b(Landroid/content/Context;I)Landroid/graphics/Typeface;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v4
-
-    .line 79
-    invoke-virtual {v2}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 80
-    .line 81
-    .line 82
-    move-result-object v13
-
-    .line 83
-    invoke-static {v13, v14}, LlXi;->b(Landroid/content/Context;I)Landroid/graphics/Typeface;
-
-    .line 84
-    .line 85
-    .line 86
-    move-result-object v13
-
-    .line 87
-    const/16 p3, 0x0
-
-    .line 88
-    .line 89
-    invoke-virtual {v2}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 90
-    .line 91
-    .line 92
-    move-result-object v5
-
-    .line 93
-    invoke-static {v5, v1}, LlXi;->b(Landroid/content/Context;I)Landroid/graphics/Typeface;
-
-    .line 94
-    .line 95
-    .line 96
-    move-result-object v5
-
-    .line 97
-    const/16 v17, 0x6
-
-    .line 98
-    .line 99
-    invoke-virtual {v2}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
-
-    .line 100
-    .line 101
-    .line 102
-    move-result-object v0
-
-    .line 103
-    const/16 v18, 0x5
-
-    .line 104
-    .line 105
-    const v1, 0x7f06050a
-
-    .line 106
-    .line 107
-    .line 108
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v0
-
-    .line 112
-    move v1, v12
-
-    .line 113
-    new-instance v12, LeJe;
-
-    .line 114
-    .line 115
-    invoke-direct {v12}, Ljava/lang/Object;-><init>()V
-
-    .line 116
-    .line 117
-    .line 118
-    const/16 v19, 0x4
-
-    .line 119
-    .line 120
-    iget-object v3, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->E0:Ln2j;
-
-    .line 121
-    .line 122
-    const-string v20, "openViewBuilders"
-
-    .line 123
-    .line 124
-    if-eqz v3, :cond_3
-
-    .line 125
-    .line 126
-    new-instance v3, Lzuf;
-
-    .line 127
-    .line 128
-    const/16 v21, 0x2
-
-    .line 129
-    .line 130
-    const/16 v15, 0x10
-
-    .line 131
-    .line 132
-    invoke-direct {v3, v15}, Lzuf;-><init>(I)V
-
-    .line 133
-    .line 134
-    .line 135
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
-
-    .line 136
-    .line 137
-    .line 138
-    move-result-object v15
-
-    .line 139
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
-
-    .line 140
-    .line 141
-    .line 142
-    move-result-object v22
-
-    .line 143
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
-
-    .line 144
-    .line 145
-    .line 146
-    move-result-object v23
-
-    .line 147
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-object v24
-
-    .line 151
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
-
-    .line 152
-    .line 153
-    .line 154
-    move-result-object v25
-
-    .line 155
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
-
-    .line 156
-    .line 157
-    .line 158
-    move-result-object v26
-
-    .line 159
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
-
-    .line 160
-    .line 161
-    .line 162
-    move-result-object v27
-
-    .line 163
-    const/16 v28, 0x3
-
-    .line 164
-    .line 165
-    const/4 v14, 0x7
-
-    .line 166
-    new-array v14, v14, [Lhuh;
-
-    .line 167
-    .line 168
-    aput-object v15, v14, p3
-
-    .line 169
-    .line 170
-    aput-object v22, v14, p1
-
-    .line 171
-    .line 172
-    aput-object v23, v14, v21
-
-    .line 173
-    .line 174
-    aput-object v24, v14, v28
-
-    .line 175
-    .line 176
-    aput-object v25, v14, v19
-
-    .line 177
-    .line 178
-    aput-object v26, v14, v18
-
-    .line 179
-    .line 180
-    aput-object v27, v14, v17
-
-    .line 181
-    .line 182
-    invoke-static {v14}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 183
-    .line 184
-    .line 185
-    move-result-object v14
-
-    .line 186
-    iput-object v14, v3, Lzuf;->b:Ljava/lang/Object;
-
-    .line 187
-    .line 188
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
-
-    .line 189
-    .line 190
-    .line 191
-    move-result-object v14
-
-    .line 192
-    iput-object v14, v3, Lzuf;->X:Ljava/lang/Object;
-
-    .line 193
-    .line 194
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
-
-    .line 195
-    .line 196
-    .line 197
-    move-result-object v14
-
-    .line 198
-    invoke-virtual {v3, v14}, Lzuf;->k(Lhuh;)Lxo4;
-
-    .line 199
-    .line 200
-    .line 201
-    move-result-object v14
-
-    .line 202
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->h2()Lml9;
-
-    .line 203
-    .line 204
-    .line 205
-    move-result-object v15
-
-    .line 206
-    invoke-virtual {v14, v15}, Lxo4;->a(Lml9;)V
-
-    .line 207
-    .line 208
-    .line 209
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
-
-    .line 210
-    .line 211
-    .line 212
-    move-result-object v15
-
-    .line 213
-    iput-object v15, v14, Lxo4;->b:Lhuh;
-
-    .line 214
-    .line 215
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
-
-    .line 216
-    .line 217
-    .line 218
-    move-result-object v14
-
-    .line 219
-    invoke-virtual {v3, v14}, Lzuf;->k(Lhuh;)Lxo4;
-
-    .line 220
-    .line 221
-    .line 222
-    move-result-object v14
-
-    .line 223
-    move v15, v0
-
-    .line 224
-    move/from16 v22, v1
-
-    .line 225
-    .line 226
-    iget-wide v0, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->q1:J
-
-    .line 227
-    .line 228
-    iput-wide v0, v14, Lxo4;->d:J
-
-    .line 229
-    .line 230
-    move-object/from16 v23, v4
-
-    .line 231
-    .line 232
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
-
-    .line 233
-    .line 234
-    .line 235
-    move-result-object v4
-
-    .line 236
-    iput-object v4, v14, Lxo4;->b:Lhuh;
-
-    .line 237
-    .line 238
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
-
-    .line 239
-    .line 240
-    .line 241
-    move-result-object v4
-
-    .line 242
-    invoke-virtual {v3, v4}, Lzuf;->k(Lhuh;)Lxo4;
-
-    .line 243
-    .line 244
-    .line 245
-    move-result-object v4
-
-    .line 246
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->e2()Lml9;
-
-    .line 247
-    .line 248
-    .line 249
-    move-result-object v14
-
-    .line 250
-    invoke-virtual {v4, v14}, Lxo4;->a(Lml9;)V
-
-    .line 251
-    .line 252
-    .line 253
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
-
-    .line 254
-    .line 255
-    .line 256
-    move-result-object v14
-
-    .line 257
-    iput-object v14, v4, Lxo4;->b:Lhuh;
-
-    .line 258
-    .line 259
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
-
-    .line 260
-    .line 261
-    .line 262
-    move-result-object v4
-
-    .line 263
-    invoke-virtual {v3, v4}, Lzuf;->k(Lhuh;)Lxo4;
-
-    .line 264
-    .line 265
-    .line 266
-    move-result-object v4
-
-    .line 267
-    iget-object v14, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->l1:LXfi;
-
-    .line 268
-    .line 269
-    invoke-virtual {v14}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 270
-    .line 271
-    .line 272
-    move-result-object v14
-
-    .line 273
-    check-cast v14, Lml9;
-
-    .line 274
-    .line 275
-    invoke-virtual {v4, v14}, Lxo4;->a(Lml9;)V
-
-    .line 276
-    .line 277
-    .line 278
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
-
-    .line 279
-    .line 280
-    .line 281
-    move-result-object v14
-
-    .line 282
-    iput-object v14, v4, Lxo4;->b:Lhuh;
-
-    .line 283
-    .line 284
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
-
-    .line 285
-    .line 286
-    .line 287
-    move-result-object v4
-
-    .line 288
-    invoke-virtual {v3, v4}, Lzuf;->k(Lhuh;)Lxo4;
-
-    .line 289
-    .line 290
-    .line 291
-    move-result-object v4
-
-    .line 292
-    iput-wide v0, v4, Lxo4;->d:J
-
-    .line 293
-    .line 294
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
-
-    .line 295
-    .line 296
-    .line 297
-    move-result-object v14
-
-    .line 298
-    iput-object v14, v4, Lxo4;->b:Lhuh;
-
-    .line 299
-    .line 300
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
-
-    .line 301
-    .line 302
-    .line 303
-    move-result-object v4
-
-    .line 304
-    invoke-virtual {v3, v4}, Lzuf;->k(Lhuh;)Lxo4;
-
-    .line 305
-    .line 306
-    .line 307
-    move-result-object v4
-
-    .line 308
-    iget-object v14, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->m1:LXfi;
-
-    .line 309
-    .line 310
-    invoke-virtual {v14}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 311
-    .line 312
-    .line 313
-    move-result-object v14
-
-    .line 314
-    check-cast v14, Lml9;
-
-    .line 315
-    .line 316
-    invoke-virtual {v4, v14}, Lxo4;->a(Lml9;)V
-
-    .line 317
-    .line 318
-    .line 319
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
-
-    .line 320
-    .line 321
-    .line 322
-    move-result-object v14
-
-    .line 323
-    iput-object v14, v4, Lxo4;->b:Lhuh;
-
-    .line 324
-    .line 325
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
-
-    .line 326
-    .line 327
-    .line 328
-    move-result-object v4
-
-    .line 329
-    invoke-virtual {v3, v4}, Lzuf;->k(Lhuh;)Lxo4;
-
-    .line 330
-    .line 331
-    .line 332
-    move-result-object v4
-
-    .line 333
-    iput-wide v0, v4, Lxo4;->d:J
-
-    .line 334
-    .line 335
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
-
-    .line 336
-    .line 337
-    .line 338
-    move-result-object v14
-
-    .line 339
-    iput-object v14, v4, Lxo4;->b:Lhuh;
-
-    .line 340
-    .line 341
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
-
-    .line 342
-    .line 343
-    .line 344
-    move-result-object v4
-
-    .line 345
-    new-instance v14, LLB2;
-
-    .line 346
-    .line 347
-    move-wide/from16 v24, v0
-
-    .line 348
-    .line 349
-    const/4 v0, 0x3
-
-    .line 350
-    invoke-direct {v14, v2, v0}, LLB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 351
-    .line 352
-    .line 353
-    invoke-virtual {v3, v4, v14}, Lzuf;->z(Lhuh;Lkotlin/jvm/functions/Function0;)V
-
-    .line 354
-    .line 355
-    .line 356
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
-
-    .line 357
-    .line 358
-    .line 359
-    move-result-object v0
-
-    .line 360
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
-
-    .line 361
-    .line 362
-    .line 363
-    move-result-object v1
-
-    .line 364
-    const/4 v4, 0x2
-
-    .line 365
-    new-array v14, v4, [Lhuh;
-
-    .line 366
-    .line 367
-    aput-object v0, v14, p3
-
-    .line 368
-    .line 369
-    aput-object v1, v14, p1
-
-    .line 370
-    .line 371
-    invoke-static {v14}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 372
-    .line 373
-    .line 374
-    move-result-object v0
-
-    .line 375
-    new-instance v1, LLB2;
-
-    .line 376
-    .line 377
-    const/4 v4, 0x4
-
-    .line 378
-    invoke-direct {v1, v2, v4}, LLB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 379
-    .line 380
-    .line 381
-    invoke-virtual {v3, v0, v1}, Lzuf;->A(Ljava/util/List;Lkotlin/jvm/functions/Function0;)V
-
-    .line 382
-    .line 383
-    .line 384
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
-
-    .line 385
-    .line 386
-    .line 387
-    move-result-object v0
-
-    .line 388
-    new-instance v1, LLB2;
-
-    .line 389
-    .line 390
-    const/4 v4, 0x5
-
-    .line 391
-    invoke-direct {v1, v2, v4}, LLB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 392
-    .line 393
-    .line 394
-    invoke-virtual {v3, v0, v1}, Lzuf;->z(Lhuh;Lkotlin/jvm/functions/Function0;)V
-
-    .line 395
-    .line 396
-    .line 397
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
-
-    .line 398
-    .line 399
-    .line 400
-    move-result-object v0
-
-    .line 401
-    new-instance v1, LLB2;
-
-    .line 402
-    .line 403
-    const/4 v4, 0x6
-
-    .line 404
-    invoke-direct {v1, v2, v4}, LLB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 405
-    .line 406
-    .line 407
-    invoke-virtual {v3, v0, v1}, Lzuf;->z(Lhuh;Lkotlin/jvm/functions/Function0;)V
-
-    .line 408
-    .line 409
-    .line 410
-    invoke-virtual {v3}, Lzuf;->b()Lyo4;
-
-    .line 411
-    .line 412
-    .line 413
-    move-result-object v4
-
-    .line 414
-    new-instance v0, LKB2;
-
-    .line 415
-    .line 416
-    const/4 v1, 0x0
-
-    .line 417
-    invoke-direct {v0, v1}, LKB2;-><init>(I)V
-
-    .line 418
-    .line 419
-    .line 420
-    invoke-virtual {v4, v0}, Lyo4;->a(Lwo4;)V
-
-    .line 421
-    .line 422
-    .line 423
-    iget-object v14, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->c2:Ljava/util/ArrayList;
-
-    .line 424
-    .line 425
-    invoke-virtual {v14, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 426
-    .line 427
-    .line 428
-    new-instance v0, LSB2;
-
-    .line 429
-    .line 430
-    move/from16 v18, v7
-
-    .line 431
-    .line 432
-    move-object v1, v9
-
-    .line 433
-    move-object v9, v13
-
-    .line 434
-    move-object/from16 v17, v14
-
-    .line 435
-    .line 436
-    move v7, v15
-
-    .line 437
-    move-object/from16 v3, v23
-
-    .line 438
-    .line 439
-    move-wide/from16 v14, v24
-
-    .line 440
-    .line 441
-    const/4 v13, 0x1
-
-    .line 442
-    invoke-direct/range {v0 .. v12}, LSB2;-><init>(LeC2;Lcom/snap/charms/details/CharmsDetailsFragment;Landroid/graphics/Typeface;Lyo4;Landroid/graphics/Typeface;LEVf;ILEVf;Landroid/graphics/Typeface;Ljava/util/List;Lio/reactivex/rxjava3/subjects/BehaviorSubject;LeJe;)V
-
-    .line 443
-    .line 444
-    .line 445
-    iget-boolean v3, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->P0:Z
-
-    .line 446
-    .line 447
-    if-eqz v3, :cond_0
-
-    .line 448
-    .line 449
-    sget-object v3, Lmjk;->A0:Lmjk;
-
-    .line 450
-    .line 451
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 452
-    .line 453
-    invoke-direct {v5, v11, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 454
-    .line 455
-    .line 456
-    move-object v11, v5
-
-    .line 457
-    :cond_0
-    new-instance v3, Ljna;
-
-    .line 458
-    .line 459
-    invoke-direct {v3, v11}, Ljna;-><init>(Lio/reactivex/rxjava3/core/Observable;)V
-
-    .line 460
-    .line 461
-    .line 462
-    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
-
-    .line 463
-    .line 464
-    .line 465
-    move-result-object v5
-
-    .line 466
-    iput-object v5, v3, LwK0;->b:Ljava/lang/Object;
-
-    .line 467
-    .line 468
-    iput-object v0, v3, Ljna;->Y:LSB2;
-
-    .line 469
-    .line 470
-    iget v0, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->t1:F
-
-    .line 471
-    .line 472
-    iget v5, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
-
-    .line 473
-    .line 474
-    iput-boolean v13, v3, Ljna;->Z:Z
-
-    .line 475
-    .line 476
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 477
-    .line 478
-    .line 479
-    move-result-object v0
-
-    .line 480
-    iput-object v0, v3, Ljna;->e0:Ljava/lang/Float;
-
-    .line 481
-    .line 482
-    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 483
-    .line 484
-    .line 485
-    move-result-object v0
-
-    .line 486
-    iput-object v0, v3, Ljna;->f0:Ljava/lang/Float;
-
-    .line 487
-    .line 488
-    sget-object v0, Lkna;->b:Lkna;
-
-    .line 489
-    .line 490
-    iput-object v0, v3, Ljna;->h0:Lkna;
-
-    .line 491
-    .line 492
-    iget v0, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->v1:F
-
-    .line 493
-    .line 494
-    iput v0, v3, Ljna;->g0:F
-
-    .line 495
-    .line 496
-    iget-object v0, v1, LeC2;->f0:LrB2;
-
-    .line 497
-    .line 498
-    iput-object v0, v3, Ljna;->i0:Ljava/lang/Object;
-
-    .line 499
-    .line 500
-    new-instance v0, LOB2;
-
-    .line 501
-    .line 502
-    const/4 v1, 0x0
-
-    .line 503
-    invoke-direct {v0, v2, v1}, LOB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 504
-    .line 505
-    .line 506
-    iput-object v0, v3, Ljna;->j0:LOB2;
-
-    .line 507
-    .line 508
-    new-instance v0, LOB2;
-
-    .line 509
-    .line 510
-    invoke-direct {v0, v2, v13}, LOB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 511
-    .line 512
-    .line 513
-    iput-object v0, v3, Ljna;->k0:LOB2;
-
-    .line 514
-    .line 515
-    new-instance v0, Llna;
-
-    .line 516
-    .line 517
-    invoke-direct {v0, v3}, Llna;-><init>(Ljna;)V
-
-    .line 518
-    .line 519
-    .line 520
-    iget-object v1, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->i2:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 521
-    .line 522
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 523
-    .line 524
-    .line 525
-    invoke-virtual {v2}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
-
-    .line 526
-    .line 527
-    .line 528
-    move-result-object v1
-
-    .line 529
-    const v3, 0x7f060317
-
-    .line 530
-    .line 531
-    .line 532
-    invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getColor(I)I
-
-    .line 533
-    .line 534
-    .line 535
-    move-result v1
-
-    .line 536
-    iget-object v3, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->E0:Ln2j;
-
-    .line 537
-    .line 538
-    if-eqz v3, :cond_2
-
-    .line 539
-    .line 540
-    new-instance v3, LgC8;
-
-    .line 541
-    .line 542
-    invoke-direct {v3}, LgC8;-><init>()V
-
-    .line 543
-    .line 544
-    .line 545
-    iput-object v4, v3, LwK0;->c:Ljava/lang/Object;
-
-    .line 546
-    .line 547
-    invoke-virtual {v2}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
-
-    .line 548
-    .line 549
-    .line 550
-    move-result-object v5
-
-    .line 551
-    iput-object v5, v3, LwK0;->b:Ljava/lang/Object;
-
-    .line 552
-    .line 553
-    new-instance v5, Legi;
-
-    .line 554
-    .line 555
-    new-instance v29, LRg;
-
-    .line 556
-    .line 557
-    sget-object v31, Lw1g;->a:Lrq9;
-
-    .line 558
-    .line 559
-    const-class v32, Lrq9;
-
-    .line 560
-    .line 561
-    const-string v33, "colorInterpolator"
-
-    .line 562
-    .line 563
-    const/16 v30, 0x3
-
-    .line 564
-    .line 565
-    const-string v34, "colorInterpolator(IIF)I"
-
-    .line 566
-    .line 567
-    const/16 v35, 0x0
-
-    .line 568
-    .line 569
-    const/16 v36, 0xf
-
-    .line 570
-    .line 571
-    invoke-direct/range {v29 .. v36}, LRg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
-    .line 572
-    .line 573
-    .line 574
-    move-object/from16 v6, v29
-
-    .line 575
-    .line 576
-    const/4 v7, 0x0
-
-    .line 577
-    invoke-direct {v5, v6, v7}, Legi;-><init>(Lkotlin/jvm/functions/Function3;Z)V
-
-    .line 578
-    .line 579
-    .line 580
-    new-array v6, v13, [Lyo4;
-
-    .line 581
-    .line 582
-    aput-object v4, v6, v7
-
-    .line 583
-    .line 584
-    invoke-virtual {v5, v6}, Legi;->b([Lyo4;)V
-
-    .line 585
-    .line 586
-    .line 587
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->c2()Lhuh;
-
-    .line 588
-    .line 589
-    .line 590
-    move-result-object v6
-
-    .line 591
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->f2()Lhuh;
-
-    .line 592
-    .line 593
-    .line 594
-    move-result-object v8
-
-    .line 595
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->g2()Lhuh;
-
-    .line 596
-    .line 597
-    .line 598
-    move-result-object v9
-
-    .line 599
-    const/4 v10, 0x3
-
-    .line 600
-    new-array v10, v10, [Lhuh;
-
-    .line 601
-    .line 602
-    aput-object v6, v10, v7
-
-    .line 603
-    .line 604
-    aput-object v8, v10, v13
-
-    .line 605
-    .line 606
-    const/16 v21, 0x2
-
-    .line 607
-    .line 608
-    aput-object v9, v10, v21
-
-    .line 609
-    .line 610
-    invoke-virtual {v5, v10}, Legi;->d([Lhuh;)LxAi;
-
-    .line 611
-    .line 612
-    .line 613
-    move-result-object v6
-
-    .line 614
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 615
-    .line 616
-    .line 617
-    move-result-object v8
-
-    .line 618
-    iput-object v8, v6, LxAi;->a:Ljava/lang/Number;
-
-    .line 619
-    .line 620
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->d2()Lhuh;
-
-    .line 621
-    .line 622
-    .line 623
-    move-result-object v6
-
-    .line 624
-    new-array v8, v13, [Lhuh;
-
-    .line 625
-    .line 626
-    aput-object v6, v8, v7
-
-    .line 627
-    .line 628
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
-
-    .line 629
-    .line 630
-    .line 631
-    move-result-object v6
-
-    .line 632
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 633
-    .line 634
-    .line 635
-    move-result-object v8
-
-    .line 636
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 637
-    .line 638
-    .line 639
-    move-result-object v9
-
-    .line 640
-    invoke-virtual {v6, v8, v9, v14, v15}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
-
-    .line 641
-    .line 642
-    .line 643
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->i2()Lhuh;
-
-    .line 644
-    .line 645
-    .line 646
-    move-result-object v6
-
-    .line 647
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->j2()Lhuh;
-
-    .line 648
-    .line 649
-    .line 650
-    move-result-object v8
-
-    .line 651
-    const/4 v9, 0x2
-
-    .line 652
-    new-array v10, v9, [Lhuh;
-
-    .line 653
-    .line 654
-    aput-object v6, v10, v7
-
-    .line 655
-    .line 656
-    aput-object v8, v10, v13
-
-    .line 657
-    .line 658
-    invoke-virtual {v5, v10}, Legi;->d([Lhuh;)LxAi;
-
-    .line 659
-    .line 660
-    .line 661
-    move-result-object v6
-
-    .line 662
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 663
-    .line 664
-    .line 665
-    move-result-object v8
-
-    .line 666
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 667
-    .line 668
-    .line 669
-    move-result-object v9
-
-    .line 670
-    invoke-virtual {v6, v8, v9, v14, v15}, LxAi;->a(Ljava/lang/Number;Ljava/lang/Number;J)V
-
-    .line 671
-    .line 672
-    .line 673
-    invoke-virtual {v2}, Lcom/snap/charms/details/CharmsDetailsFragment;->l2()Lhuh;
-
-    .line 674
-    .line 675
-    .line 676
-    move-result-object v6
-
-    .line 677
-    new-array v8, v13, [Lhuh;
-
-    .line 678
-    .line 679
-    aput-object v6, v8, v7
-
-    .line 680
-    .line 681
-    invoke-virtual {v5, v8}, Legi;->d([Lhuh;)LxAi;
-
-    .line 682
-    .line 683
-    .line 684
-    move-result-object v6
-
-    .line 685
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 686
-    .line 687
-    .line 688
-    move-result-object v1
-
-    .line 689
-    iput-object v1, v6, LxAi;->a:Ljava/lang/Number;
-
-    .line 690
-    .line 691
-    invoke-virtual {v5}, Legi;->c()LyAi;
-
-    .line 692
-    .line 693
-    .line 694
-    move-result-object v1
-
-    .line 695
-    iput-object v1, v3, LgC8;->X:LyAi;
-
-    .line 696
-    .line 697
-    invoke-virtual {v3, v0}, LgC8;->B(LKI6;)LiC8;
-
-    .line 698
-    .line 699
-    .line 700
-    move-result-object v0
-
-    .line 701
-    iget v1, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
-
-    .line 702
-    .line 703
-    move/from16 v5, v18
-
-    .line 704
-    .line 705
-    iput v5, v0, LiC8;->b:F
-
-    .line 706
-    .line 707
-    iput v1, v0, LiC8;->c:F
-
-    .line 708
-    .line 709
-    const/4 v7, 0x0
-
-    .line 710
-    iput-boolean v7, v0, LiC8;->g:Z
-
-    .line 711
-    .line 712
-    iget v6, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->t1:F
-
-    .line 713
-    .line 714
-    sub-float v7, v5, v6
-
-    .line 715
-    .line 716
-    const/4 v9, 0x2
-
-    .line 717
-    int-to-float v6, v9
-
-    .line 718
-    div-float/2addr v7, v6
-
-    .line 719
-    sub-float v8, v22, v1
-
-    .line 720
-    .line 721
-    div-float/2addr v8, v6
-
-    .line 722
-    iput v7, v0, LiC8;->d:F
-
-    .line 723
-    .line 724
-    iput v8, v0, LiC8;->e:F
-
-    .line 725
-    .line 726
-    new-instance v0, Llh8;
-
-    .line 727
-    .line 728
-    iget-object v1, v3, LwK0;->b:Ljava/lang/Object;
-
-    .line 729
-    .line 730
-    check-cast v1, Landroid/content/Context;
-
-    .line 731
-    .line 732
-    invoke-direct {v0, v1, v13}, Llh8;-><init>(Landroid/content/Context;I)V
-
-    .line 733
-    .line 734
-    .line 735
-    iget-object v1, v3, LwK0;->t:Ljava/lang/Object;
-
-    .line 736
-    .line 737
-    check-cast v1, Ljava/util/ArrayList;
-
-    .line 738
-    .line 739
-    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 740
-    .line 741
-    .line 742
-    new-instance v1, LLB2;
-
-    .line 743
-    .line 744
-    const/4 v7, 0x0
-
-    .line 745
-    invoke-direct {v1, v2, v7}, LLB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 746
-    .line 747
-    .line 748
-    iput-object v1, v0, Llh8;->d:LLB2;
-
-    .line 749
-    .line 750
-    new-instance v1, LLB2;
-
-    .line 751
-    .line 752
-    invoke-direct {v1, v2, v13}, LLB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 753
-    .line 754
-    .line 755
-    iput-object v1, v0, Llh8;->e:LLB2;
-
-    .line 756
-    .line 757
-    new-instance v0, LjC8;
-
-    .line 758
-    .line 759
-    invoke-direct {v0, v3}, LjC8;-><init>(LgC8;)V
-
-    .line 760
-    .line 761
-    .line 762
-    iput-object v0, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LjC8;
-
-    .line 763
-    .line 764
-    new-instance v1, LFSc;
-
-    .line 765
-    .line 766
-    iget-object v3, v0, LKI6;->a:Landroid/content/Context;
-
-    .line 767
-    .line 768
-    invoke-direct {v1, v3}, LFSc;-><init>(Landroid/content/Context;)V
-
-    .line 769
-    .line 770
-    .line 771
-    iget-object v3, v1, LFSc;->a:Ljava/util/ArrayList;
-
-    .line 772
-    .line 773
-    iget-object v7, v0, LjC8;->Y:LzI7;
-
-    .line 774
-    .line 775
-    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 776
-    .line 777
-    .line 778
-    iget-object v3, v1, LFSc;->b:Ljava/util/ArrayList;
-
-    .line 779
-    .line 780
-    iget-object v7, v0, LjC8;->e0:Lxu6;
-
-    .line 781
-    .line 782
-    check-cast v7, LSw9;
-
-    .line 783
-    .line 784
-    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 785
-    .line 786
-    .line 787
-    invoke-virtual {v0}, LjC8;->e()LbMi;
-
-    .line 788
-    .line 789
-    .line 790
-    move-result-object v3
-
-    .line 791
-    iget-object v7, v1, LFSc;->c:Ljava/util/ArrayList;
-
-    .line 792
-    .line 793
-    invoke-virtual {v7, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 794
-    .line 795
-    .line 796
-    new-instance v3, LE09;
-
-    .line 797
-    .line 798
-    const/4 v8, 0x0
-
-    .line 799
-    invoke-direct {v3, v8}, LE09;-><init>(I)V
-
-    .line 800
-    .line 801
-    .line 802
-    iget-object v8, v1, LFSc;->t:Ljava/util/ArrayList;
-
-    .line 803
-    .line 804
-    invoke-virtual {v8, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 805
-    .line 806
-    .line 807
-    invoke-virtual {v0, v1}, LKI6;->m(LFSc;)V
-
-    .line 808
-    .line 809
-    .line 810
-    const v0, 0x7f0b0476
-
-    .line 811
-    .line 812
-    .line 813
-    invoke-virtual {v1, v0}, Landroid/view/View;->setId(I)V
-
-    .line 814
-    .line 815
-    .line 816
-    new-instance v0, LZh2;
-
-    .line 817
-    .line 818
-    const/16 v3, 0xf
-
-    .line 819
-    .line 820
-    invoke-direct {v0, v3, v1}, LZh2;-><init>(ILjava/lang/Object;)V
-
-    .line 821
-    .line 822
-    .line 823
-    iput-object v0, v12, LeJe;->a:Ljava/lang/Object;
-
-    .line 824
-    .line 825
-    invoke-virtual/range {v17 .. v17}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 826
-    .line 827
-    .line 828
-    move-result-object v0
-
-    .line 829
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 830
-    .line 831
-    .line 832
-    move-result v3
-
-    .line 833
-    if-eqz v3, :cond_1
-
-    .line 834
-    .line 835
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 836
-    .line 837
-    .line 838
-    move-result-object v3
-
-    .line 839
-    check-cast v3, Lyo4;
-
-    .line 840
-    .line 841
-    new-instance v8, LMB2;
-
-    .line 842
-    .line 843
-    invoke-direct {v8, v2, v12, v1}, LMB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;LeJe;LFSc;)V
-
-    .line 844
-    .line 845
-    .line 846
-    invoke-virtual {v3, v8}, Lyo4;->a(Lwo4;)V
-
-    .line 847
-    .line 848
-    .line 849
-    goto :goto_0
-
-    .line 850
-    :cond_1
-    new-instance v0, LNB2;
-
-    .line 851
-    .line 852
-    invoke-direct {v0, v2, v1}, LNB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;LFSc;)V
-
-    .line 853
-    .line 854
-    .line 855
-    invoke-virtual {v4, v0}, Lyo4;->a(Lwo4;)V
-
-    .line 856
-    .line 857
-    .line 858
-    new-instance v0, Lm33;
-
-    .line 859
-    .line 860
-    invoke-direct {v0}, Lm33;-><init>()V
-
-    .line 861
-    .line 862
-    .line 863
-    new-instance v3, Landroid/graphics/RectF;
-
-    .line 864
-    .line 865
-    iget v4, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
-
-    .line 866
-    .line 867
-    sub-float v8, v22, v4
-
-    .line 868
-    .line 869
-    div-float/2addr v8, v6
-
-    .line 870
-    const/4 v4, 0x0
-
-    .line 871
-    invoke-direct {v3, v4, v4, v5, v8}, Landroid/graphics/RectF;-><init>(FFFF)V
-
-    .line 872
-    .line 873
-    .line 874
-    iget-object v8, v0, Lm33;->a:Ljava/util/ArrayList;
-
-    .line 875
-    .line 876
-    invoke-virtual {v8, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 877
-    .line 878
-    .line 879
-    new-instance v3, Landroid/graphics/RectF;
-
-    .line 880
-    .line 881
-    iget v9, v2, Lcom/snap/charms/details/CharmsDetailsFragment;->u1:F
-
-    .line 882
-    .line 883
-    add-float v9, v22, v9
-
-    .line 884
-    .line 885
-    div-float/2addr v9, v6
-
-    .line 886
-    move/from16 v12, v22
-
-    .line 887
-    .line 888
-    invoke-direct {v3, v4, v9, v5, v12}, Landroid/graphics/RectF;-><init>(FFFF)V
-
-    .line 889
-    .line 890
-    .line 891
-    invoke-virtual {v8, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 892
-    .line 893
-    .line 894
-    new-instance v3, LLB2;
-
-    .line 895
-    .line 896
-    const/4 v9, 0x2
-
-    .line 897
-    invoke-direct {v3, v2, v9}, LLB2;-><init>(Lcom/snap/charms/details/CharmsDetailsFragment;I)V
-
-    .line 898
-    .line 899
-    .line 900
-    iput-object v3, v0, Lm33;->b:LLB2;
-
-    .line 901
-    .line 902
-    invoke-virtual {v7, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 903
-    .line 904
-    .line 905
-    return-object v1
-
-    .line 906
-    :cond_2
-    invoke-static/range {v20 .. v20}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 907
-    .line 908
-    .line 909
-    throw v16
-
-    .line 910
-    :cond_3
-    invoke-static/range {v20 .. v20}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 911
-    .line 912
-    .line 913
-    throw v16
-
-    .line 914
-    :cond_4
-    const-string v0, "configuration"
-
-    .line 915
-    .line 916
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 917
-    .line 918
-    .line 919
-    throw v16
-.end method
-
-.method public final b2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->S0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final c2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Q0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final d()Z
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LjC8;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    const-string v2, "details"
-
-    .line 5
-    .line 6
-    if-eqz v0, :cond_1
-
-    .line 7
-    .line 8
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->h2()Lml9;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v3
-
-    .line 12
-    invoke-virtual {v0, v3}, LKI6;->f(Lml9;)V
-
-    .line 13
-    .line 14
-    .line 15
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->d2:LjC8;
-
-    .line 16
-    .line 17
-    if-eqz v0, :cond_0
-
-    .line 18
-    .line 19
-    invoke-virtual {p0}, Lcom/snap/charms/details/CharmsDetailsFragment;->e2()Lml9;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v1
-
-    .line 23
-    invoke-virtual {v0, v1}, LKI6;->j(Lml9;)V
-
-    .line 24
-    .line 25
-    .line 26
-    const/4 v0, 0x1
-
-    .line 27
-    return v0
-
-    .line 28
-    :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    throw v1
-
-    .line 32
-    :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 33
-    .line 34
-    .line 35
-    throw v1
-.end method
-
-.method public final d2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->W0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final e2()Lml9;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->n1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lml9;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final f2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->V0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final g2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->U0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final h2()Lml9;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->h1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lml9;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final i2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Y0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final j2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->Z0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final k2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->c1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final l2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->R0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final m2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->b1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final n2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->f1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final o2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->X0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final p2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->e1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final q2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->T0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final r2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->a1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final s2()Lhuh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->g1:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lhuh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-.method public final t2(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/BitmapDrawable;
-    .locals 6
-
-    .line 1
-    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v1
-
-    .line 7
-    iget-object v0, p0, Lcom/snap/charms/details/CharmsDetailsFragment;->A0:LUY0;
-
-    .line 8
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v4, 0x1
-
-    .line 12
-    const-string v5, "CharmsDetailsFragment"
-
-    .line 13
-    .line 14
-    move v2, p2
-
-    .line 15
-    move v3, p3
-
-    .line 16
-    invoke-interface/range {v0 .. v5}, LUY0;->U1(Landroid/graphics/Bitmap;IIZLjava/lang/String;)LgJe;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object p1
-
-    .line 20
-    invoke-static {p1}, Lgye;->G(LgJe;)Landroid/graphics/Bitmap;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    new-instance p2, Landroid/graphics/drawable/BitmapDrawable;
-
-    .line 25
-    .line 26
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p3
-
-    .line 30
-    invoke-direct {p2, p3, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-object p2
-
-    .line 34
-    :cond_0
-    const-string p1, "bitmapFactory"
-
-    .line 35
-    .line 36
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    const/4 p1, 0x0
-
-    .line 40
-    throw p1
 .end method

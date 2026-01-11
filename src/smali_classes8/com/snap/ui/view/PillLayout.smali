@@ -36,7 +36,7 @@
     const/4 p1, 0x1
 
     .line 3
-    invoke-static {p1}, Llva;->o(Z)Landroid/graphics/Paint;
+    invoke-static {p1}, LJF0;->l(Z)Landroid/graphics/Paint;
 
     move-result-object p1
 

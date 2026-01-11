@@ -1,237 +1,290 @@
 .class public final LlGe;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Thread$UncaughtExceptionHandler;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:Lbke;
+.field public final synthetic a:I
 
-.field public final b:Ljava/lang/Thread$UncaughtExceptionHandler;
+.field public final synthetic b:Libe;
+
+.field public final synthetic c:Lmj7;
 
 
 # direct methods
-.method public constructor <init>(Lbke;Ljava/lang/Thread$UncaughtExceptionHandler;)V
+.method public synthetic constructor <init>(Libe;Lmj7;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p3, p0, LlGe;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LlGe;->a:Lbke;
+    iput-object p1, p0, LlGe;->b:Libe;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LlGe;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iput-object p2, p0, LlGe;->c:Lmj7;
 
-    .line 7
-    .line 8
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
-    .locals 7
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LlGe;->a:I
 
     .line 2
-    const/16 v1, 0xa
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    const/4 v2, 0x0
-
     .line 5
-    move-object v4, p2
-
     .line 6
-    const/4 v3, 0x0
+    check-cast p1, Ljava/util/List;
 
     .line 7
-    :goto_0
-    if-ge v3, v1, :cond_1
-
     .line 8
+    iget-object v0, p0, LlGe;->b:Libe;
+
     .line 9
-    if-eqz v4, :cond_1
-
     .line 10
-    .line 11
-    instance-of v5, v4, Ljava/lang/RuntimeException;
+    invoke-virtual {v0}, Libe;->b()Lejd;
 
+    .line 11
     .line 12
     .line 13
-    if-eqz v5, :cond_0
+    move-result-object v1
 
     .line 14
+    iget-object v3, v1, Lejd;->l:LPq6;
+
     .line 15
-    invoke-virtual {v4}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
     .line 16
-    .line 17
-    .line 18
-    move-result-object v5
+    move-object v4, p1
 
+    .line 17
+    check-cast v4, Ljava/util/Collection;
+
+    .line 18
     .line 19
-    if-eqz v5, :cond_0
+    new-instance v2, LMGe;
 
     .line 20
     .line 21
-    const-string v6, "Canvas: trying to use a recycled bitmap "
+    new-instance v6, LMXc;
 
     .line 22
     .line 23
-    invoke-static {v5, v6, v2}, LZ4i;->i1(Ljava/lang/String;Ljava/lang/String;Z)Z
+    const/4 p1, 0x1
 
     .line 24
+    const/16 v1, 0x1b
+
     .line 25
     .line 26
-    move-result v6
+    invoke-direct {v6, p1, v1}, LMXc;-><init>(II)V
 
     .line 27
-    if-eqz v6, :cond_0
-
     .line 28
     .line 29
-    const/16 v6, 0x28
+    iget-object v5, p0, LlGe;->c:Lmj7;
 
     .line 30
     .line 31
-    invoke-virtual {v5, v6}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+    const/4 v7, 0x2
 
     .line 32
+    invoke-direct/range {v2 .. v7}, LMGe;-><init>(LPq6;Ljava/util/Collection;Lmj7;LJP9;I)V
+
     .line 33
     .line 34
-    move-result-object v5
-
     .line 35
-    iget-object v6, p0, LlGe;->a:Lbke;
+    iget-object p1, v0, Libe;->c:Ljava/lang/Object;
 
     .line 36
     .line 37
-    invoke-interface {v6}, Lbke;->get()Ljava/lang/Object;
+    check-cast p1, LgWg;
 
     .line 38
     .line 39
+    invoke-virtual {p1, v2}, LgWg;->g(LtJe;)Ljava/util/List;
+
     .line 40
-    move-result-object v6
-
     .line 41
-    check-cast v6, LkO5;
-
     .line 42
+    move-result-object p1
+
     .line 43
-    iget-object v6, v6, LkO5;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    return-object p1
 
     .line 44
-    .line 45
-    invoke-virtual {v6, v5}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_0
+    check-cast p1, Ljava/util/List;
 
+    .line 45
     .line 46
+    iget-object v0, p0, LlGe;->b:Libe;
+
     .line 47
     .line 48
-    move-result-object v6
+    invoke-virtual {v0}, Libe;->b()Lejd;
 
     .line 49
-    check-cast v6, Ljava/lang/Throwable;
-
     .line 50
     .line 51
-    if-eqz v6, :cond_0
+    move-result-object v1
 
     .line 52
-    .line 53
-    new-instance v3, Lj2;
+    iget-object v3, v1, Lejd;->l:LPq6;
 
+    .line 53
     .line 54
+    move-object v4, p1
+
     .line 55
-    const-string v4, " was recycled but still in use"
+    check-cast v4, Ljava/util/Collection;
 
     .line 56
     .line 57
-    invoke-virtual {v5, v4}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    iget-object v5, p0, LlGe;->c:Lmj7;
 
     .line 58
     .line 59
-    .line 60
-    move-result-object v4
+    new-instance v2, LMGe;
 
+    .line 60
     .line 61
-    invoke-direct {v3, v1, v6, v4}, Lj2;-><init>(ILjava/lang/Throwable;Ljava/lang/String;)V
+    new-instance v6, LMXc;
 
     .line 62
     .line 63
+    const/4 p1, 0x1
+
     .line 64
-    goto :goto_1
+    const/16 v1, 0x14
 
     .line 65
-    :cond_0
-    invoke-virtual {v4}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
-
     .line 66
+    invoke-direct {v6, p1, v1}, LMXc;-><init>(II)V
+
     .line 67
     .line 68
-    move-result-object v4
-
     .line 69
-    add-int/2addr v3, v0
+    const/4 v7, 0x1
 
     .line 70
-    goto :goto_0
+    invoke-direct/range {v2 .. v7}, LMGe;-><init>(LPq6;Ljava/util/Collection;Lmj7;LJP9;I)V
 
     .line 71
-    :cond_1
-    const/4 v3, 0x0
-
     .line 72
-    :goto_1
-    if-eqz v3, :cond_2
-
     .line 73
+    iget-object p1, v0, Libe;->c:Ljava/lang/Object;
+
     .line 74
-    new-instance v1, Lio/reactivex/rxjava3/exceptions/CompositeException;
-
     .line 75
-    .line 76
-    const/4 v4, 0x2
+    check-cast p1, LgWg;
 
+    .line 76
     .line 77
-    new-array v4, v4, [Ljava/lang/Throwable;
+    invoke-virtual {p1, v2}, LgWg;->g(LtJe;)Ljava/util/List;
 
     .line 78
     .line 79
-    aput-object v3, v4, v2
-
     .line 80
+    move-result-object p1
+
     .line 81
-    aput-object p2, v4, v0
+    return-object p1
 
     .line 82
-    .line 83
-    invoke-direct {v1, v4}, Lio/reactivex/rxjava3/exceptions/CompositeException;-><init>([Ljava/lang/Throwable;)V
+    :pswitch_1
+    check-cast p1, Ljava/util/List;
 
+    .line 83
     .line 84
+    iget-object v0, p0, LlGe;->b:Libe;
+
     .line 85
     .line 86
-    move-object p2, v1
+    invoke-virtual {v0}, Libe;->b()Lejd;
 
     .line 87
-    :cond_2
-    iget-object v0, p0, LlGe;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
-
     .line 88
     .line 89
-    invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+    move-result-object v1
 
     .line 90
+    iget-object v3, v1, Lejd;->l:LPq6;
+
     .line 91
     .line 92
-    return-void
+    move-object v4, p1
+
+    .line 93
+    check-cast v4, Ljava/util/Collection;
+
+    .line 94
+    .line 95
+    new-instance v2, LMGe;
+
+    .line 96
+    .line 97
+    new-instance v6, LPGe;
+
+    .line 98
+    .line 99
+    const/4 p1, 0x0
+
+    .line 100
+    invoke-direct {v6, v3, p1}, LPGe;-><init>(LPq6;I)V
+
+    .line 101
+    .line 102
+    .line 103
+    iget-object v5, p0, LlGe;->c:Lmj7;
+
+    .line 104
+    .line 105
+    const/4 v7, 0x0
+
+    .line 106
+    invoke-direct/range {v2 .. v7}, LMGe;-><init>(LPq6;Ljava/util/Collection;Lmj7;LJP9;I)V
+
+    .line 107
+    .line 108
+    .line 109
+    iget-object p1, v0, Libe;->c:Ljava/lang/Object;
+
+    .line 110
+    .line 111
+    check-cast p1, LgWg;
+
+    .line 112
+    .line 113
+    invoke-virtual {p1, v2}, LgWg;->g(LtJe;)Ljava/util/List;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object p1
+
+    .line 117
+    return-object p1
+
+    .line 118
+    nop
+
+    .line 119
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -25,11 +25,11 @@
 
 
 # instance fields
-.field public final t:LV6i;
+.field public final t:Lmvi;
 
 
 # direct methods
-.method public constructor <init>(LV6i;Ljava/util/Iterator;)V
+.method public constructor <init>(Lmvi;Ljava/util/Iterator;)V
     .locals 0
 
     .line 1
@@ -38,7 +38,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->t:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->t:Lmvi;
 
     .line 5
     .line 6
@@ -55,7 +55,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->t:LV6i;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->t:Lmvi;
 
     .line 4
     .line 5
@@ -112,7 +112,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-interface {v1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 29
     .line 30
@@ -121,7 +121,7 @@
 
     .line 32
     :cond_3
-    invoke-interface {v1, v2}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, v2}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 33
     .line 34
@@ -161,7 +161,7 @@
 
     .line 49
     .line 50
-    invoke-interface {v1}, LV6i;->onComplete()V
+    invoke-interface {v1}, Lmvi;->onComplete()V
 
     .line 51
     .line 52
@@ -180,7 +180,7 @@
     .line 56
     .line 57
     .line 58
-    invoke-interface {v1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 59
     .line 60
@@ -197,7 +197,7 @@
     .line 64
     .line 65
     .line 66
-    invoke-interface {v1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 67
     .line 68
@@ -205,7 +205,7 @@
     return-void
 .end method
 
-.method public final b(J)V
+.method public final c(J)V
     .locals 8
 
     .line 1
@@ -213,7 +213,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->t:LV6i;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->t:Lmvi;
 
     .line 4
     .line 5
@@ -287,7 +287,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-interface {v1, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 36
     .line 37
@@ -296,7 +296,7 @@
 
     .line 39
     :cond_4
-    invoke-interface {v1, v6}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, v6}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 40
     .line 41
@@ -336,7 +336,7 @@
 
     .line 56
     .line 57
-    invoke-interface {v1}, LV6i;->onComplete()V
+    invoke-interface {v1}, Lmvi;->onComplete()V
 
     .line 58
     .line 59
@@ -364,7 +364,7 @@
     .line 67
     .line 68
     .line 69
-    invoke-interface {v1, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 70
     .line 71
@@ -381,7 +381,7 @@
     .line 75
     .line 76
     .line 77
-    invoke-interface {v1, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 78
     .line 79

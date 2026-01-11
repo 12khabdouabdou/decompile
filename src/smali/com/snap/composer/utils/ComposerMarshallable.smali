@@ -9,16 +9,16 @@
 
 
 # static fields
-.field public static final Companion:Ley3;
+.field public static final Companion:LsB3;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    sget-object v0, Ley3;->a:Ley3;
+    sget-object v0, LsB3;->a:LsB3;
 
-    sput-object v0, Lcom/snap/composer/utils/ComposerMarshallable;->Companion:Ley3;
+    sput-object v0, Lcom/snap/composer/utils/ComposerMarshallable;->Companion:LsB3;
 
     return-void
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/camera_mode_widgets/FlashFeatureWidgetContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'enablePageNavigation\':f?(),\'disablePageNavigation\':f?(),\'onWidgetUpdate\':f?(d@, d@),\'onSlideToChangeFlashSelection\':f?(r<e>:\'[0]\'),\'onSlideToChangeFlashSelectionWithSliderValue\':f?(r<e>:\'[0]\', d@),\'onTapToChangeFlashSelection\':f?(r<e>:\'[0]\'),\'onWidgetUpdateWithFlashSelection\':f?(d@, d@, r<e>:\'[0]\')"
     typeReferences = {
@@ -149,7 +149,7 @@
 
 
 # virtual methods
-.method public final a(LPx7;)V
+.method public final a(LJC7;)V
     .locals 0
 
     .line 1
@@ -160,7 +160,7 @@
     return-void
 .end method
 
-.method public final b(LPx7;)V
+.method public final b(LJC7;)V
     .locals 0
 
     .line 1
@@ -171,7 +171,7 @@
     return-void
 .end method
 
-.method public final c(LEr7;)V
+.method public final c(Ljk7;)V
     .locals 0
 
     .line 1
@@ -182,7 +182,7 @@
     return-void
 .end method
 
-.method public final d(Lpq6;)V
+.method public final d(LsR5;)V
     .locals 0
 
     .line 1
@@ -193,7 +193,7 @@
     return-void
 .end method
 
-.method public final e(LiT0;)V
+.method public final e(LZz;)V
     .locals 0
 
     .line 1

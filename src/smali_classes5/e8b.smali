@@ -2,128 +2,150 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field public final a:Lc8b;
+.field public final synthetic a:I
 
-.field public final b:LeNe;
-
-.field public final c:LXab;
-
-.field public final d:LBtj;
-
-.field public final e:Lu00;
-
-.field public final f:Lb8b;
-
-.field public final g:LbQ6;
-
-.field public final h:LBre;
-
-.field public final i:LXfi;
+.field public final synthetic b:Lf8b;
 
 
 # direct methods
-.method public constructor <init>(Lc8b;LlW4;LeNe;LXab;LBtj;Lu00;Lb8b;)V
+.method public synthetic constructor <init>(Lf8b;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Le8b;->a:I
+
+    iput-object p1, p0, Le8b;->b:Lf8b;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Le8b;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Le8b;->a:Lc8b;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p3, p0, Le8b;->b:LeNe;
+    check-cast p1, Ljava/util/Map;
 
     .line 7
     .line 8
-    iput-object p4, p0, Le8b;->c:LXab;
+    iget-object v0, p0, Le8b;->b:Lf8b;
 
     .line 9
     .line 10
-    iput-object p5, p0, Le8b;->d:LBtj;
+    iput-object p1, v0, Lf8b;->e:Ljava/util/Map;
 
     .line 11
     .line 12
-    iput-object p6, p0, Le8b;->e:Lu00;
+    return-void
 
     .line 13
+    :pswitch_0
+    check-cast p1, Ljava/util/List;
+
     .line 14
-    iput-object p7, p0, Le8b;->f:Lb8b;
-
     .line 15
+    check-cast p1, Ljava/lang/Iterable;
+
     .line 16
-    new-instance p1, LbQ6;
-
     .line 17
+    new-instance v0, Ljava/util/ArrayList;
+
     .line 18
-    const-string p4, "MapStartupStoreUpdater"
-
     .line 19
-    .line 20
-    invoke-direct {p1, p3, p4}, LbQ6;-><init>(LeNe;Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 20
     .line 21
     .line 22
-    .line 23
-    iput-object p1, p0, Le8b;->g:LbQ6;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
+    .line 23
     .line 24
     .line 25
-    sget-object p1, LpYa;->Z:LpYa;
-
-    .line 26
-    .line 27
-    invoke-static {p1, p1, p4}, Ln9f;->f(LpYa;LpYa;Ljava/lang/String;)LWm0;
-
-    .line 28
-    .line 29
-    .line 30
     move-result-object p1
 
+    .line 26
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v1
+
+    .line 30
+    if-eqz v1, :cond_1
+
     .line 31
-    new-instance p3, LBre;
-
     .line 32
-    .line 33
-    invoke-direct {p3, p1}, LBre;-><init>(LWm0;)V
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 33
     .line 34
     .line 35
+    move-result-object v1
+
     .line 36
-    iput-object p3, p0, Le8b;->h:LBre;
+    check-cast v1, La8b;
 
     .line 37
     .line 38
-    new-instance p1, LvC7;
+    iget-object v1, v1, La8b;->a:Ljava/lang/String;
 
     .line 39
     .line 40
-    const/16 p3, 0xa
+    if-eqz v1, :cond_0
 
     .line 41
     .line 42
-    invoke-direct {p1, p2, p3}, LvC7;-><init>(LlW4;I)V
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 43
     .line 44
     .line 45
-    new-instance p2, LXfi;
+    goto :goto_0
 
     .line 46
-    .line 47
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    :cond_1
+    invoke-static {v0}, Llh3;->x4(Ljava/lang/Iterable;)Ljava/util/Set;
 
+    .line 47
     .line 48
     .line 49
+    move-result-object p1
+
     .line 50
-    iput-object p2, p0, Le8b;->i:LXfi;
+    iget-object v0, p0, Le8b;->b:Lf8b;
 
     .line 51
     .line 52
+    iput-object p1, v0, Lf8b;->f:Ljava/util/Set;
+
+    .line 53
+    .line 54
     return-void
+
+    .line 55
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/subscriptions/SubscriptionEntityID;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'entityID\':s,\'legacyInfoForFetching\':r?:\'[0]\',\'entityType\':r<e>:\'[1]\'"
     typeReferences = {

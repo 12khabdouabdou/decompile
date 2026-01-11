@@ -1,330 +1,321 @@
-.class public final enum LL0b;
-.super Ljava/lang/Enum;
+.class public final synthetic LL0b;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LL0b;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # static fields
-.field public static final enum X:LL0b;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "INFATUATION"
-    .end annotation
-.end field
-
-.field public static final enum Y:LL0b;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "ATOM_TICKETS"
-    .end annotation
-.end field
-
-.field public static final enum Z:LL0b;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "HEATMAP"
-    .end annotation
-.end field
-
-.field public static final enum b:LL0b;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "EXPLORE_CONTENT"
-    .end annotation
-.end field
-
-.field public static final enum c:LL0b;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "MEMORIES"
-    .end annotation
-.end field
-
-.field public static final enum e0:LL0b;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SATELLITE"
-    .end annotation
-.end field
-
-.field public static final synthetic f0:[LL0b;
-
-.field public static final enum t:LL0b;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "TICKETMASTER"
-    .end annotation
-.end field
-
-
-# instance fields
-.field public final a:I
+.field public static final f0:LL0b;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 6
 
     .line 1
     new-instance v0, LL0b;
 
     .line 2
     .line 3
-    const-string v1, "EXPLORE_CONTENT"
+    const-string v5, "defaultPicker(ILcom/snap/ui/view/recycler/looping/LoopingLayoutManager;)Landroid/view/View;"
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v2, 0x1
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, LL0b;-><init>(Ljava/lang/String;II)V
+    const/4 v1, 0x2
 
     .line 7
+    const-class v3, LS0b;
+
     .line 8
     .line 9
-    sput-object v0, LL0b;->b:LL0b;
+    const-string v4, "defaultPicker"
 
     .line 10
     .line 11
-    new-instance v1, LL0b;
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
     .line 13
-    const-string v3, "MEMORIES"
-
     .line 14
+    sput-object v0, LL0b;->f0:LL0b;
+
     .line 15
-    const/4 v4, 0x1
-
     .line 16
-    invoke-direct {v1, v3, v4, v4}, LL0b;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, LL0b;->c:LL0b;
-
-    .line 20
-    .line 21
-    new-instance v3, LL0b;
-
-    .line 22
-    .line 23
-    const-string v5, "TICKETMASTER"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, LL0b;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, LL0b;->t:LL0b;
-
-    .line 30
-    .line 31
-    new-instance v5, LL0b;
-
-    .line 32
-    .line 33
-    const-string v7, "INFATUATION"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8, v8}, LL0b;-><init>(Ljava/lang/String;II)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, LL0b;->X:LL0b;
-
-    .line 40
-    .line 41
-    new-instance v7, LL0b;
-
-    .line 42
-    .line 43
-    const-string v9, "ATOM_TICKETS"
-
-    .line 44
-    .line 45
-    const/4 v10, 0x4
-
-    .line 46
-    invoke-direct {v7, v9, v10, v10}, LL0b;-><init>(Ljava/lang/String;II)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v7, LL0b;->Y:LL0b;
-
-    .line 50
-    .line 51
-    new-instance v9, LL0b;
-
-    .line 52
-    .line 53
-    const-string v11, "HEATMAP"
-
-    .line 54
-    .line 55
-    const/4 v12, 0x5
-
-    .line 56
-    invoke-direct {v9, v11, v12, v12}, LL0b;-><init>(Ljava/lang/String;II)V
-
-    .line 57
-    .line 58
-    .line 59
-    sput-object v9, LL0b;->Z:LL0b;
-
-    .line 60
-    .line 61
-    new-instance v11, LL0b;
-
-    .line 62
-    .line 63
-    const-string v13, "SATELLITE"
-
-    .line 64
-    .line 65
-    const/4 v14, 0x6
-
-    .line 66
-    invoke-direct {v11, v13, v14, v14}, LL0b;-><init>(Ljava/lang/String;II)V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v11, LL0b;->e0:LL0b;
-
-    .line 70
-    .line 71
-    const/4 v13, 0x7
-
-    .line 72
-    new-array v13, v13, [LL0b;
-
-    .line 73
-    .line 74
-    aput-object v0, v13, v2
-
-    .line 75
-    .line 76
-    aput-object v1, v13, v4
-
-    .line 77
-    .line 78
-    aput-object v3, v13, v6
-
-    .line 79
-    .line 80
-    aput-object v5, v13, v8
-
-    .line 81
-    .line 82
-    aput-object v7, v13, v10
-
-    .line 83
-    .line 84
-    aput-object v9, v13, v12
-
-    .line 85
-    .line 86
-    aput-object v11, v13, v14
-
-    .line 87
-    .line 88
-    sput-object v13, LL0b;->f0:[LL0b;
-
-    .line 89
-    .line 90
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LL0b;->a:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LL0b;
-    .locals 1
-
-    .line 1
-    const-class v0, LL0b;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LL0b;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LL0b;
-    .locals 1
-
-    .line 1
-    sget-object v0, LL0b;->f0:[LL0b;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LL0b;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LL0b;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget v0, p0, LL0b;->a:I
+    check-cast p1, Ljava/lang/Number;
 
     .line 2
     .line 3
-    return v0
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    check-cast p2, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;
+
+    .line 8
+    .line 9
+    iget v0, p2, Landroidx/recyclerview/widget/LinearLayoutManager;->q:I
+
+    .line 10
+    .line 11
+    if-nez v0, :cond_0
+
+    .line 12
+    .line 13
+    invoke-virtual {p2}, LfYe;->d0()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    iget v1, p2, LfYe;->o:I
+
+    .line 18
+    .line 19
+    invoke-virtual {p2}, LfYe;->d0()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v2
+
+    .line 23
+    sub-int/2addr v1, v2
+
+    .line 24
+    invoke-virtual {p2}, LfYe;->e0()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v2
+
+    .line 28
+    sub-int/2addr v1, v2
+
+    .line 29
+    div-int/lit8 v1, v1, 0x2
+
+    .line 30
+    .line 31
+    :goto_0
+    add-int/2addr v1, v0
+
+    .line 32
+    goto :goto_1
+
+    .line 33
+    :cond_0
+    invoke-virtual {p2}, LfYe;->f0()I
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v0
+
+    .line 37
+    iget v1, p2, LfYe;->p:I
+
+    .line 38
+    .line 39
+    invoke-virtual {p2}, LfYe;->f0()I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v2
+
+    .line 43
+    sub-int/2addr v1, v2
+
+    .line 44
+    invoke-virtual {p2}, LfYe;->c0()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v2
+
+    .line 48
+    sub-int/2addr v1, v2
+
+    .line 49
+    div-int/lit8 v1, v1, 0x2
+
+    .line 50
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :goto_1
+    invoke-virtual {p2}, LfYe;->N()I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    const v2, 0x7fffffff
+
+    .line 57
+    .line 58
+    .line 59
+    const/4 v3, 0x0
+
+    .line 60
+    const/4 v4, 0x0
+
+    .line 61
+    move-object v5, v3
+
+    .line 62
+    :goto_2
+    if-ge v4, v0, :cond_5
+
+    .line 63
+    .line 64
+    invoke-virtual {p2, v4}, LfYe;->M(I)Landroid/view/View;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v6
+
+    .line 68
+    if-nez v6, :cond_1
+
+    .line 69
+    .line 70
+    return-object v3
+
+    .line 71
+    :cond_1
+    invoke-static {v6}, LfYe;->g0(Landroid/view/View;)I
+
+    .line 72
+    .line 73
+    .line 74
+    move-result v7
+
+    .line 75
+    if-eq v7, p1, :cond_2
+
+    .line 76
+    .line 77
+    goto :goto_5
+
+    .line 78
+    :cond_2
+    iget v7, p2, Landroidx/recyclerview/widget/LinearLayoutManager;->q:I
+
+    .line 79
+    .line 80
+    if-nez v7, :cond_3
+
+    .line 81
+    .line 82
+    invoke-static {v6}, LfYe;->S(Landroid/view/View;)I
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v7
+
+    .line 86
+    invoke-static {v6}, LfYe;->U(Landroid/view/View;)I
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v8
+
+    .line 90
+    div-int/lit8 v8, v8, 0x2
+
+    .line 91
+    .line 92
+    :goto_3
+    add-int/2addr v8, v7
+
+    .line 93
+    goto :goto_4
+
+    .line 94
+    :cond_3
+    invoke-static {v6}, LfYe;->W(Landroid/view/View;)I
+
+    .line 95
+    .line 96
+    .line 97
+    move-result v7
+
+    .line 98
+    invoke-static {v6}, LfYe;->T(Landroid/view/View;)I
+
+    .line 99
+    .line 100
+    .line 101
+    move-result v8
+
+    .line 102
+    div-int/lit8 v8, v8, 0x2
+
+    .line 103
+    .line 104
+    goto :goto_3
+
+    .line 105
+    :goto_4
+    sub-int/2addr v8, v1
+
+    .line 106
+    invoke-static {v8}, Ljava/lang/Math;->abs(I)I
+
+    .line 107
+    .line 108
+    .line 109
+    move-result v7
+
+    .line 110
+    if-ge v7, v2, :cond_4
+
+    .line 111
+    .line 112
+    move-object v5, v6
+
+    .line 113
+    move v2, v7
+
+    .line 114
+    :cond_4
+    :goto_5
+    add-int/lit8 v4, v4, 0x1
+
+    .line 115
+    .line 116
+    goto :goto_2
+
+    .line 117
+    :cond_5
+    return-object v5
 .end method

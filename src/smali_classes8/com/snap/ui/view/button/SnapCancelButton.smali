@@ -12,7 +12,7 @@
 
     const/4 v1, 0x2
 
-    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/button/SnapCancelButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/button/SnapCancelButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
 
     return-void
 .end method
@@ -28,7 +28,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0700de
+    const p2, 0x7f0700df
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -46,7 +46,7 @@
     .line 6
     invoke-virtual {p0, p1, p2}, Lcom/snap/ui/view/SnapFontTextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
-    const p1, 0x7f131278
+    const p1, 0x7f13132f
 
     .line 7
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setText(I)V
@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2

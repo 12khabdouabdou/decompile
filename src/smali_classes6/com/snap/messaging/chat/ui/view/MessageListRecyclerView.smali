@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public A1:LFRb;
+.field public A1:Lb6c;
 
-.field public B1:Lbke;
+.field public B1:LDBe;
 
 .field public C1:Ljava/lang/Boolean;
 
@@ -14,7 +14,7 @@
 
 .field public final E1:F
 
-.field public z1:LmOb;
+.field public z1:LD2c;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p4, p4, 0x4
@@ -267,7 +267,7 @@
     move-result v4
 
     .line 18
-    invoke-virtual {p0, v0, v4}, Landroidx/recyclerview/widget/RecyclerView;->K(FF)Landroid/view/View;
+    invoke-virtual {p0, v0, v4}, Landroidx/recyclerview/widget/RecyclerView;->J(FF)Landroid/view/View;
 
     .line 19
     .line 20
@@ -291,7 +291,7 @@
     move-result-object v5
 
     .line 30
-    const v6, 0x7f070328
+    const v6, 0x7f07032f
 
     .line 31
     .line 32
@@ -348,11 +348,11 @@
 
     .line 56
     .line 57
-    iget-object v6, p0, Landroidx/recyclerview/widget/RecyclerView;->l0:LrGe;
+    iget-object v6, p0, Landroidx/recyclerview/widget/RecyclerView;->l0:LZXe;
 
     .line 58
     .line 59
-    instance-of v7, v6, LwKc;
+    instance-of v7, v6, LfZc;
 
     .line 60
     .line 61
@@ -360,7 +360,7 @@
 
     .line 62
     .line 63
-    check-cast v6, LwKc;
+    check-cast v6, LfZc;
 
     .line 64
     .line 65
@@ -384,7 +384,7 @@
     move-result v4
 
     .line 73
-    invoke-virtual {v6, v4}, LwKc;->a(I)LKu;
+    invoke-virtual {v6, v4}, LfZc;->a(I)Lsw;
 
     .line 74
     .line 75
@@ -400,7 +400,7 @@
 
     .line 79
     :goto_2
-    instance-of v6, v4, LEP2;
+    instance-of v6, v4, LgS2;
 
     .line 80
     .line 81
@@ -408,7 +408,7 @@
 
     .line 82
     .line 83
-    check-cast v4, LEP2;
+    check-cast v4, LgS2;
 
     .line 84
     .line 85
@@ -424,7 +424,7 @@
 
     .line 88
     .line 89
-    invoke-virtual {v4}, LEP2;->Z()Z
+    invoke-virtual {v4}, LgS2;->Y()Z
 
     .line 90
     .line 91
@@ -436,7 +436,7 @@
 
     .line 94
     .line 95
-    iget-object v6, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->B1:Lbke;
+    iget-object v6, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->B1:LDBe;
 
     .line 96
     .line 97
@@ -444,7 +444,7 @@
 
     .line 98
     .line 99
-    invoke-interface {v6}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v6}, LDBe;->get()Ljava/lang/Object;
 
     .line 100
     .line 101
@@ -452,7 +452,7 @@
     move-result-object v6
 
     .line 103
-    check-cast v6, LTOb;
+    check-cast v6, Lp3c;
 
     .line 104
     .line 105
@@ -460,15 +460,15 @@
 
     .line 106
     .line 107
-    check-cast v6, LVOb;
+    check-cast v6, Lr3c;
 
     .line 108
     .line 109
-    iget-object v4, v4, LEP2;->Z:LeLj;
+    iget-object v4, v4, LgS2;->Z:LIak;
 
     .line 110
     .line 111
-    invoke-virtual {v6, v4}, LVOb;->a(LeLj;)Z
+    invoke-virtual {v6, v4}, Lr3c;->a(LIak;)Z
 
     .line 112
     .line 113
@@ -511,7 +511,7 @@
 
     .line 128
     :cond_6
-    sput-boolean v2, LQtc;->d:Z
+    sput-boolean v2, LlFg;->f:Z
 
     .line 129
     .line 130
@@ -520,7 +520,7 @@
     .line 131
     :cond_7
     :goto_5
-    sput-boolean v3, LQtc;->d:Z
+    sput-boolean v3, LlFg;->f:Z
 
     .line 132
     .line 133
@@ -528,12 +528,12 @@
 
     .line 134
     :cond_8
-    sput-boolean v3, LQtc;->d:Z
+    sput-boolean v3, LlFg;->f:Z
 
     .line 135
     .line 136
     :goto_6
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->z1:LmOb;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->z1:LD2c;
 
     .line 137
     .line 138
@@ -541,13 +541,13 @@
 
     .line 139
     .line 140
-    invoke-virtual {v0, p0, p1}, LmOb;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p0, p1}, LD2c;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 141
     .line 142
     .line 143
     :cond_9
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->A1:LFRb;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->A1:Lb6c;
 
     .line 144
     .line 145
@@ -555,11 +555,11 @@
 
     .line 146
     .line 147
-    iget-object v0, v0, LFRb;->A:Ljava/lang/Object;
+    iget-object v0, v0, Lb6c;->x:Ljava/lang/Object;
 
     .line 148
     .line 149
-    invoke-interface {v0}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 150
     .line 151
@@ -731,7 +731,7 @@
 
     .line 229
     .line 230
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 231
     .line 232
@@ -821,7 +821,7 @@
 
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->z1:LmOb;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/MessageListRecyclerView;->z1:LD2c;
 
     .line 12
     .line 13
@@ -829,7 +829,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {v0, p0, p1}, LmOb;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v0, p0, p1}, LD2c;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 16
     .line 17

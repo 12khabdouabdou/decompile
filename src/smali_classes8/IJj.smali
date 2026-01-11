@@ -1,82 +1,74 @@
-.class public final synthetic LIJj;
-.super Ljava/lang/Object;
+.class public final LIJj;
+.super Ljava/lang/RuntimeException;
 .source "SourceFile"
-
-# interfaces
-.implements LjO1;
 
 
 # instance fields
-.field public final synthetic X:I
+.field public final a:LeVh;
 
-.field public final synthetic a:I
-
-.field public final synthetic b:LOFf;
-
-.field public final synthetic c:LOFf;
-
-.field public final synthetic t:I
+.field public final b:Lcom/snapchat/client/grpc/Status;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILOFf;LOFf;II)V
+.method public constructor <init>(LeVh;Lcom/snapchat/client/grpc/Status;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
 
-    iput p1, p0, LIJj;->a:I
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LIJj;->a:LeVh;
 
-    iput-object p2, p0, LIJj;->b:LOFf;
+    .line 5
+    .line 6
+    iput-object p2, p0, LIJj;->b:Lcom/snapchat/client/grpc/Status;
 
-    iput-object p3, p0, LIJj;->c:LOFf;
-
-    iput p4, p0, LIJj;->t:I
-
-    iput p5, p0, LIJj;->X:I
-
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 6
+.method public final toString()Ljava/lang/String;
+    .locals 4
 
     .line 1
-    new-instance v0, LMJj;
+    iget-object v0, p0, LIJj;->a:LeVh;
 
     .line 2
     .line 3
-    iget-object v2, p0, LIJj;->b:LOFf;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 4
     .line 5
-    iget v4, p0, LIJj;->t:I
-
     .line 6
+    move-result-object v0
+
     .line 7
-    iget v5, p0, LIJj;->X:I
+    iget-object v1, p0, LIJj;->b:Lcom/snapchat/client/grpc/Status;
 
     .line 8
     .line 9
-    iget v1, p0, LIJj;->a:I
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 10
     .line 11
-    iget-object v3, p0, LIJj;->c:LOFf;
-
     .line 12
+    move-result-object v1
+
     .line 13
-    invoke-direct/range {v0 .. v5}, LMJj;-><init>(ILOFf;LOFf;II)V
+    const-string v2, "Exception: "
 
     .line 14
     .line 15
-    .line 16
-    const/4 v1, 0x0
+    const-string v3, "with status: "
 
+    .line 16
     .line 17
-    invoke-static {v0, v1}, Lupa;->f(LQpk;Z)LT76;
+    invoke-static {v2, v0, v3, v1}, LBv7;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 18
     .line 19

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LeW8;
+    proxyClass = LF39;
     schema = "\'launchInviteFriendsFlow\':f|m|(s),\'launchFriendProfile\':f|m|(r:\'[0]\', s),\'launchFriendActionMenu\':f|m|(r:\'[0]\', s),\'addFriend\':f|m|(r:\'[1]\', f(b@)),\'unblockUser\':f|m|(r:\'[0]\', f(b@))"
     typeReferences = {
         Lcom/snap/composer/people/User;,

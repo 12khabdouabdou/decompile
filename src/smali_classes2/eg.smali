@@ -1,63 +1,185 @@
 .class public final Leg;
-.super Lcom/snap/composer/utils/b;
+.super Landroidx/activity/result/ActivityResultLauncher;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'x\':d,\'y\':d"
-    typeReferences = {}
-.end annotation
-
-
 # instance fields
-.field private _x:D
+.field public final synthetic a:Landroidx/activity/result/ActivityResultRegistry;
 
-.field private _y:D
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Landroidx/activity/result/contract/ActivityResultContract;
 
 
 # direct methods
-.method public constructor <init>(DD)V
+.method public constructor <init>(Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;Landroidx/activity/result/contract/ActivityResultContract;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Leg;->a:Landroidx/activity/result/ActivityResultRegistry;
 
     .line 2
     .line 3
+    iput-object p2, p0, Leg;->b:Ljava/lang/String;
+
     .line 4
-    iput-wide p1, p0, Leg;->_x:D
-
     .line 5
-    .line 6
-    iput-wide p3, p0, Leg;->_y:D
+    iput-object p3, p0, Leg;->c:Landroidx/activity/result/contract/ActivityResultContract;
 
+    .line 6
     .line 7
+    invoke-direct {p0}, Landroidx/activity/result/ActivityResultLauncher;-><init>()V
+
     .line 8
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()D
-    .locals 2
+.method public final a(LBx9;)V
+    .locals 5
 
     .line 1
-    iget-wide v0, p0, Leg;->_x:D
+    iget-object v0, p0, Leg;->a:Landroidx/activity/result/ActivityResultRegistry;
 
     .line 2
     .line 3
-    return-wide v0
-.end method
+    iget-object v1, v0, Landroidx/activity/result/ActivityResultRegistry;->b:Ljava/util/LinkedHashMap;
 
-.method public final b()D
-    .locals 2
+    .line 4
+    .line 5
+    iget-object v2, p0, Leg;->b:Ljava/lang/String;
 
-    .line 1
-    iget-wide v0, p0, Leg;->_y:D
+    .line 6
+    .line 7
+    invoke-virtual {v1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    return-wide v0
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    iget-object v3, p0, Leg;->c:Landroidx/activity/result/contract/ActivityResultContract;
+
+    .line 12
+    .line 13
+    if-eqz v1, :cond_0
+
+    .line 14
+    .line 15
+    check-cast v1, Ljava/lang/Number;
+
+    .line 16
+    .line 17
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    iget-object v4, v0, Landroidx/activity/result/ActivityResultRegistry;->d:Ljava/util/ArrayList;
+
+    .line 22
+    .line 23
+    invoke-virtual {v4, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    :try_start_0
+    invoke-virtual {v0, v1, v3, p1}, Landroidx/activity/result/ActivityResultRegistry;->b(ILandroidx/activity/result/contract/ActivityResultContract;LBx9;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :catch_0
+    move-exception p1
+
+    .line 31
+    invoke-virtual {v4, v2}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 32
+    .line 33
+    .line 34
+    throw p1
+
+    .line 35
+    :cond_0
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    const-string v1, "Attempting to launch an unregistered ActivityResultLauncher with contract "
+
+    .line 38
+    .line 39
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 43
+    .line 44
+    .line 45
+    const-string v1, " and input "
+
+    .line 46
+    .line 47
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string p1, ". You must ensure the ActivityResultLauncher is registered before calling launch()."
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p1
+
+    .line 62
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 63
+    .line 64
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object p1
+
+    .line 68
+    invoke-direct {v0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 69
+    .line 70
+    .line 71
+    throw v0
 .end method

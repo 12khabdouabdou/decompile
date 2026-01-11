@@ -1,29 +1,53 @@
-.class public final LFV1;
-.super Lgye;
+.class public interface abstract LFV1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final c:LFV1;
+# virtual methods
+.method public abstract b()LFU1;
+.end method
 
+.method public abstract c()LPU1;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public abstract d()LMU1;
+.end method
 
-    .line 1
-    new-instance v0, LFV1;
+.method public abstract g()LVV1;
+.end method
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+.method public abstract h()LJV1;
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LFV1;->c:LFV1;
+.method public abstract l()LxU1;
+.end method
 
-    .line 7
-    .line 8
-    return-void
+.method public abstract m()LuV1;
+.end method
+
+.method public abstract n()LSU1;
+.end method
+
+.method public abstract o()LKU1;
+.end method
+
+.method public abstract p()LSV1;
+.end method
+
+.method public abstract q()LBU1;
+.end method
+
+.method public abstract s()LUU1;
+.end method
+
+.method public abstract u()LyV1;
+.end method
+
+.method public abstract v()LCV1;
+.end method
+
+.method public abstract w()LWU1;
+.end method
+
+.method public abstract y()LwV1;
 .end method

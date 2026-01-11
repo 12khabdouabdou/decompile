@@ -1,240 +1,160 @@
-.class public final enum LLLe;
-.super Ljava/lang/Enum;
+.class public final LLLe;
+.super LmQ0;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LLLe;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum X:LLLe;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "EXIT"
-    .end annotation
-.end field
-
-.field public static final synthetic Y:[LLLe;
-
-.field public static final enum b:LLLe;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SHOWN"
-    .end annotation
-.end field
-
-.field public static final enum c:LLLe;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "DISMISS"
-    .end annotation
-.end field
-
-.field public static final enum t:LLLe;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "RESUME"
-    .end annotation
-.end field
 
 
 # instance fields
-.field public final a:I
+.field public final X:LCBe;
+
+.field public final Y:LCBe;
+
+.field public final Z:Li3c;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
+.method public constructor <init>(LCBe;LCBe;Li3c;)V
+    .locals 2
 
     .line 1
-    new-instance v0, LLLe;
+    sget-object v0, Lc2i;->Z:Lc2i;
 
     .line 2
     .line 3
-    const-string v1, "SHOWN"
+    const-string v1, "QuickReplyStickersService"
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    invoke-static {v0, v0, v1}, LoVh;->b(Lc2i;Lc2i;Ljava/lang/String;)Lnp0;
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, LLLe;-><init>(Ljava/lang/String;II)V
-
     .line 7
     .line 8
+    move-result-object v0
+
     .line 9
-    sput-object v0, LLLe;->b:LLLe;
+    new-instance v1, LnJe;
 
     .line 10
     .line 11
-    new-instance v1, LLLe;
+    invoke-direct {v1, v0}, LnJe;-><init>(Lnp0;)V
 
     .line 12
     .line 13
-    const-string v3, "DISMISS"
-
     .line 14
+    invoke-direct {p0, v1}, LNui;-><init>(LnJe;)V
+
     .line 15
-    const/4 v4, 0x1
-
     .line 16
-    invoke-direct {v1, v3, v4, v4}, LLLe;-><init>(Ljava/lang/String;II)V
-
     .line 17
+    iput-object p1, p0, LLLe;->X:LCBe;
+
     .line 18
     .line 19
-    sput-object v1, LLLe;->c:LLLe;
+    iput-object p2, p0, LLLe;->Y:LCBe;
 
     .line 20
     .line 21
-    new-instance v3, LLLe;
+    iput-object p3, p0, LLLe;->Z:Li3c;
 
     .line 22
     .line 23
-    const-string v5, "RESUME"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, LLLe;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, LLLe;->t:LLLe;
-
-    .line 30
-    .line 31
-    new-instance v5, LLLe;
-
-    .line 32
-    .line 33
-    const-string v7, "EXIT"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8, v8}, LLLe;-><init>(Ljava/lang/String;II)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, LLLe;->X:LLLe;
-
-    .line 40
-    .line 41
-    const/4 v7, 0x4
-
-    .line 42
-    new-array v7, v7, [LLLe;
-
-    .line 43
-    .line 44
-    aput-object v0, v7, v2
-
-    .line 45
-    .line 46
-    aput-object v1, v7, v4
-
-    .line 47
-    .line 48
-    aput-object v3, v7, v6
-
-    .line 49
-    .line 50
-    aput-object v5, v7, v8
-
-    .line 51
-    .line 52
-    sput-object v7, LLLe;->Y:[LLLe;
-
-    .line 53
-    .line 54
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LLLe;->a:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LLLe;
-    .locals 1
-
-    .line 1
-    const-class v0, LLLe;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LLLe;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LLLe;
-    .locals 1
-
-    .line 1
-    sget-object v0, LLLe;->Y:[LLLe;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LLLe;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LLLe;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final a(Lj1i;)Lio/reactivex/rxjava3/core/Flowable;
+    .locals 2
 
     .line 1
-    iget v0, p0, LLLe;->a:I
+    iget-object p1, p0, LLLe;->X:LCBe;
 
     .line 2
     .line 3
-    return v0
+    invoke-interface {p1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, LQeh;
+
+    .line 8
+    .line 9
+    invoke-interface {p1}, LQeh;->D()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    const-wide/16 v0, 0x1
+
+    .line 14
+    .line 15
+    invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->Q0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    new-instance v0, LMxe;
+
+    .line 20
+    .line 21
+    const/4 v1, 0x7
+
+    .line 22
+    invoke-direct {v0, v1, p0}, LMxe;-><init>(ILjava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    sget-object v0, Lio/reactivex/rxjava3/core/BackpressureStrategy;->t:Lio/reactivex/rxjava3/core/BackpressureStrategy;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->V0(Lio/reactivex/rxjava3/core/BackpressureStrategy;)Lio/reactivex/rxjava3/core/Flowable;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    return-object p1
+.end method
+
+.method public final dispose()V
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, LNui;->dispose()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, LLLe;->Z:Li3c;
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Li3c;->dispose()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talkcore/MediaSelection;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'audio\':b,\'screen\':b,\'video\':b"
     typeReferences = {}

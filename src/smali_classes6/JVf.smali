@@ -2,16 +2,21 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LKVf;
-
 
 # instance fields
-.field public final a:LHmh;
+.field public final a:LxU4;
+
+.field public final b:LxU4;
+
+.field public final c:LxU4;
+
+.field public final d:LREi;
+
+.field public final e:LnJe;
 
 
 # direct methods
-.method public constructor <init>(LHmh;)V
+.method public constructor <init>(LoMb;LxU4;LxU4;LxU4;)V
     .locals 0
 
     .line 1
@@ -20,137 +25,60 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LJVf;->a:LHmh;
+    iput-object p2, p0, LJVf;->a:LxU4;
 
     .line 5
     .line 6
-    return-void
-.end method
+    iput-object p3, p0, LJVf;->b:LxU4;
 
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LJVf;
-
-    .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    iput-object p4, p0, LJVf;->c:LxU4;
 
     .line 9
     .line 10
-    return v2
+    new-instance p2, LLu0;
 
     .line 11
-    :cond_1
-    check-cast p1, LJVf;
-
     .line 12
+    const/16 p3, 0x9
+
     .line 13
-    iget-object v1, p0, LJVf;->a:LHmh;
-
     .line 14
-    .line 15
-    iget-object p1, p1, LJVf;->a:LHmh;
+    invoke-direct {p2, p1, p3}, LLu0;-><init>(LoMb;I)V
 
+    .line 15
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    new-instance p1, LREi;
 
     .line 18
     .line 19
+    invoke-direct {p1, p2}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 20
-    move-result p1
-
     .line 21
-    if-nez p1, :cond_2
-
     .line 22
+    iput-object p1, p0, LJVf;->d:LREi;
+
     .line 23
-    return v2
-
     .line 24
-    :cond_2
-    return v0
-.end method
+    sget-object p1, LKVf;->a:Lnp0;
 
-.method public final hashCode()I
-    .locals 1
+    .line 25
+    .line 26
+    new-instance p2, LnJe;
 
-    .line 1
-    iget-object v0, p0, LJVf;->a:LHmh;
+    .line 27
+    .line 28
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LHmh;->hashCode()I
+    .line 29
+    .line 30
+    .line 31
+    iput-object p2, p0, LJVf;->e:LnJe;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "VenueFilterOrSticker(place="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LJVf;->a:LHmh;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
+    .line 32
+    .line 33
+    return-void
 .end method

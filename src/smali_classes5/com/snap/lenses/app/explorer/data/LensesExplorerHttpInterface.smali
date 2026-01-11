@@ -12,14 +12,14 @@
 
 
 # virtual methods
-.method public abstract getItems(LyV9;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getItems(LQ7a;)Lio/reactivex/rxjava3/core/Single;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LyV9;",
+            "LQ7a;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LzV9;",
+            "LR7a;",
             ">;"
         }
     .end annotation

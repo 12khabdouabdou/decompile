@@ -1,72 +1,46 @@
 .class public final Loq8;
-.super LYj8;
+.super Lpq8;
 .source "SourceFile"
 
 
-# instance fields
-.field public final g:Ljava/lang/String;
-
-.field public final h:Ljava/lang/String;
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 8
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    invoke-static {p1}, LEik;->f(Ljava/lang/String;)Landroid/os/Bundle;
+    invoke-direct {p0, p1, p2}, Lpq8;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v2
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     .line 5
-    invoke-static {p1}, LEik;->f(Ljava/lang/String;)Landroid/os/Bundle;
-
     .line 6
     .line 7
+    move-result p1
+
     .line 8
-    move-result-object v3
+    if-lez p1, :cond_0
 
     .line 9
-    sget-object v6, LIL6;->a:LIL6;
-
     .line 10
+    return-void
+
     .line 11
-    const-string v1, "com.google.android.libraries.identity.googleid.TYPE_GOOGLE_ID_TOKEN_CREDENTIAL"
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
     .line 12
     .line 13
-    const/4 v4, 0x1
+    const-string p2, "type must not be empty"
 
     .line 14
-    const/4 v5, 0x1
-
     .line 15
-    const/16 v7, 0x7d0
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
     .line 16
     .line 17
-    move-object v0, p0
-
     .line 18
-    invoke-direct/range {v0 .. v7}, LCf4;-><init>(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;ZZLjava/util/Set;I)V
-
-    .line 19
-    .line 20
-    .line 21
-    const-string v1, "126465353735-roc09gbavk44p8apa5mnm498cpa00ujk.apps.googleusercontent.com"
-
-    .line 22
-    .line 23
-    iput-object v1, v0, Loq8;->g:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    iput-object p1, v0, Loq8;->h:Ljava/lang/String;
-
-    .line 26
-    .line 27
-    return-void
+    throw p1
 .end method

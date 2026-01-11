@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LAW8;
+    proxyClass = Lb49;
     schema = "\'onMusicButtonClicked\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/music/core/composer/PickerTrack;

@@ -1,76 +1,186 @@
-.class public final synthetic LoE5;
+.class public abstract LoE5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lio/reactivex/rxjava3/core/CompletableEmitter;
+# static fields
+.field public static final a:LE7k;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/CompletableEmitter;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput p2, p0, LoE5;->a:I
-
-    iput-object p1, p0, LoE5;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LoE5;->a:I
+    new-instance v0, LD7k;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0}, LD7k;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LoE5;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
+    const v1, 0x7f080b0e
 
     .line 7
     .line 8
-    invoke-interface {v0}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
+    .line 9
+    iput v1, v0, LD7k;->j:I
+
+    .line 10
+    .line 11
+    new-instance v1, LE7k;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v0}, LE7k;-><init>(LD7k;)V
+
+    .line 14
+    .line 15
+    .line 16
+    sput-object v1, LoE5;->a:LE7k;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+.method public static a(Landroid/view/View;F)Landroid/animation/ObjectAnimator;
+    .locals 5
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    sget-object v2, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+
+    .line 4
+    .line 5
+    new-array v3, v1, [F
+
+    .line 6
+    .line 7
+    aput p1, v3, v0
+
+    .line 8
+    .line 9
+    invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    sget-object v2, Landroid/view/View;->ALPHA:Landroid/util/Property;
+
+    .line 14
+    .line 15
+    new-array v3, v1, [F
+
+    .line 16
+    .line 17
+    const/4 v4, 0x0
+
+    .line 18
+    aput v4, v3, v0
+
+    .line 19
+    .line 20
+    invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    const/4 v3, 0x2
+
+    .line 25
+    new-array v3, v3, [Landroid/animation/PropertyValuesHolder;
+
+    .line 26
+    .line 27
+    aput-object p1, v3, v0
+
+    .line 28
+    .line 29
+    aput-object v2, v3, v1
+
+    .line 30
+    .line 31
+    invoke-static {p0, v3}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p0
+
+    .line 35
+    const-wide/16 v0, 0x64
+
+    .line 36
+    .line 37
+    invoke-virtual {p0, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p0
+
+    .line 41
+    return-object p0
+.end method
+
+.method public static b(Landroid/view/View;)Landroid/animation/ObjectAnimator;
+    .locals 4
+
+    .line 1
+    sget-object v0, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    new-array v1, v1, [F
+
+    .line 5
+    .line 6
+    const/4 v2, 0x0
+
+    .line 7
+    const/4 v3, 0x0
+
+    .line 8
+    aput v2, v1, v3
 
     .line 9
     .line 10
+    invoke-static {p0, v0, v1}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
+
     .line 11
-    return-void
-
     .line 12
-    :pswitch_0
-    iget-object v0, p0, LoE5;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
     .line 13
+    move-result-object p0
+
     .line 14
-    invoke-interface {v0}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
+    const-wide/16 v0, 0x64
 
     .line 15
     .line 16
+    invoke-virtual {p0, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+
     .line 17
-    return-void
-
     .line 18
-    nop
-
     .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    move-result-object p0
+
+    .line 20
+    return-object p0
 .end method

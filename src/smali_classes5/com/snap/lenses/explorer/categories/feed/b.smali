@@ -1,5 +1,5 @@
 .class public final Lcom/snap/lenses/explorer/categories/feed/b;
-.super LrE9;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic a:Lcom/snap/lenses/explorer/categories/feed/c$a;
 
-.field public final synthetic b:LuX9;
+.field public final synthetic b:LT9a;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/lenses/explorer/categories/feed/c$a;LuX9;)V
+.method public constructor <init>(Lcom/snap/lenses/explorer/categories/feed/c$a;LT9a;)V
     .locals 0
 
     .line 1
@@ -21,14 +21,14 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Lcom/snap/lenses/explorer/categories/feed/b;->b:LuX9;
+    iput-object p2, p0, Lcom/snap/lenses/explorer/categories/feed/b;->b:LT9a;
 
     .line 4
     .line 5
     const/4 p1, 0x0
 
     .line 6
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     .line 7
     .line 8
@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
+.method public final d()Ljava/lang/Object;
     .locals 3
 
     .line 1
@@ -46,7 +46,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LJ04;->E()LEX0;
+    invoke-virtual {v0}, Ln54;->E()Lk11;
 
     .line 4
     .line 5
@@ -54,37 +54,37 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LlB5;
+    check-cast v0, LjF5;
 
     .line 8
     .line 9
-    new-instance v1, Ldu9;
+    new-instance v1, LhD9;
 
     .line 10
     .line 11
-    iget-object v2, p0, Lcom/snap/lenses/explorer/categories/feed/b;->b:LuX9;
+    iget-object v2, p0, Lcom/snap/lenses/explorer/categories/feed/b;->b:LT9a;
 
     .line 12
     .line 13
-    iget-object v2, v2, LuX9;->X:Lo09;
+    iget-object v2, v2, LT9a;->X:LY79;
 
     .line 14
     .line 15
-    invoke-direct {v1, v2}, Ldu9;-><init>(Lo09;)V
+    invoke-direct {v1, v2}, LhD9;-><init>(LY79;)V
 
     .line 16
     .line 17
     .line 18
-    iget-object v0, v0, LlB5;->c:LqB5;
+    iget-object v0, v0, LjF5;->c:LoF5;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, LqB5;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, LoF5;->accept(Ljava/lang/Object;)V
 
     .line 21
     .line 22
     .line 23
-    sget-object v0, Li7j;->a:Li7j;
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 24
     .line 25

@@ -1,555 +1,801 @@
-.class public final Lnrg;
+.class public abstract synthetic Lnrg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
-
-
-# instance fields
-.field public final synthetic X:LS4f;
-
-.field public final synthetic Y:LS4f;
-
-.field public final synthetic a:I
-
-.field public final synthetic b:LS4f;
-
-.field public final synthetic c:Lqrg;
-
-.field public final synthetic t:LMI3;
-
 
 # direct methods
-.method public synthetic constructor <init>(LS4f;Lqrg;LMI3;LS4f;LS4f;I)V
-    .locals 0
+.method public static final a(I)Ltyg;
+    .locals 1
 
     .line 1
-    iput p6, p0, Lnrg;->a:I
-
-    iput-object p1, p0, Lnrg;->b:LS4f;
-
-    iput-object p2, p0, Lnrg;->c:Lqrg;
-
-    iput-object p3, p0, Lnrg;->t:LMI3;
-
-    iput-object p4, p0, Lnrg;->X:LS4f;
-
-    iput-object p5, p0, Lnrg;->Y:LS4f;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
-
-    .line 1
-    iget v0, p0, Lnrg;->a:I
+    invoke-static {p0}, LzHa;->L(I)I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    .line 4
+    move-result p0
+
+    .line 5
+    if-eqz p0, :cond_2
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    if-eq p0, v0, :cond_1
+
+    .line 9
+    .line 10
+    const/4 v0, 0x2
+
+    .line 11
+    if-ne p0, v0, :cond_0
+
+    .line 12
+    .line 13
+    sget-object p0, Ltyg;->t:Ltyg;
+
+    .line 14
+    .line 15
+    return-object p0
+
+    .line 16
+    :cond_0
+    new-instance p0, LwOc;
+
+    .line 17
+    .line 18
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 19
+    .line 20
+    .line 21
+    throw p0
+
+    .line 22
+    :cond_1
+    sget-object p0, Ltyg;->b:Ltyg;
+
+    .line 23
+    .line 24
+    return-object p0
+
+    .line 25
+    :cond_2
+    sget-object p0, Ltyg;->c:Ltyg;
+
+    .line 26
+    .line 27
+    return-object p0
+.end method
+
+.method public static final b(I)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, LzHa;->L(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    packed-switch p0, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance p0, LwOc;
+
+    .line 9
+    .line 10
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    throw p0
+
+    .line 14
+    :pswitch_0
+    const/4 p0, 0x5
+
+    .line 15
+    return p0
+
+    .line 16
+    :pswitch_1
+    const/4 p0, 0x6
+
+    .line 17
+    return p0
+
+    .line 18
+    :pswitch_2
+    const/4 p0, 0x3
+
+    .line 19
+    return p0
+
+    .line 20
+    :pswitch_3
+    const/16 p0, 0x8
+
+    .line 21
+    .line 22
+    return p0
+
+    .line 23
+    :pswitch_4
+    const/4 p0, 0x1
+
+    .line 24
+    return p0
+
+    .line 25
+    :pswitch_5
+    const/4 p0, 0x2
+
+    .line 26
+    return p0
+
+    .line 27
+    :pswitch_6
+    const/4 p0, 0x0
+
+    .line 28
+    return p0
+
+    .line 29
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static synthetic c()I
+    .locals 2
+
+    .line 1
+    const-wide v0, -0x100000000L
+
+    .line 2
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    long-to-int v1, v0
+
+    .line 7
+    return v1
+.end method
+
+.method public static d(I)LtU6;
+    .locals 1
+
+    .line 1
+    new-instance v0, LtU6;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, LtU6;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Lkrg;
+    invoke-virtual {v0, p0}, LtU6;->setPreview(I)LtU6;
 
     .line 7
     .line 8
-    iget-object p1, p1, Lkrg;->a:Ljava/util/Set;
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+.end method
+
+.method public static bridge synthetic e(Lcom/snap/shortcuts/list/SnapChooserTargetService;)Landroid/content/Context;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static bridge synthetic f(Lcom/snap/talk/core/telecom/SnapConnectionService;)Landroid/content/Context;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static g(Landroid/content/Context;I)Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0, p1}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p0
 
     .line 9
-    .line 10
-    iget-object v0, p0, Lnrg;->b:LS4f;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 10
     .line 11
     .line 12
-    invoke-interface {v0}, LBI3;->getName()Ljava/lang/String;
+    move-result-object p0
 
     .line 13
+    return-object p0
+.end method
+
+.method public static synthetic h(LjTg;)V
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public static synthetic i(Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    :cond_0
+    invoke-virtual {p0, p1, p2}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_1
+
+    .line 6
+    .line 7
+    const/4 p0, 0x1
+
+    .line 8
+    return p0
+
+    .line 9
+    :cond_1
+    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    if-eq v0, p1, :cond_0
+
     .line 14
     .line 15
-    move-result-object v1
+    const/4 p0, 0x0
 
     .line 16
-    invoke-interface {p1, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    return p0
+.end method
 
-    .line 17
-    .line 18
-    .line 19
-    move-result p1
+.method public static synthetic j(I)Ljava/lang/String;
+    .locals 1
 
-    .line 20
-    iget-object v4, p0, Lnrg;->X:LS4f;
+    .line 1
+    const/4 v0, 0x1
 
-    .line 21
-    .line 22
-    iget-object v2, p0, Lnrg;->t:LMI3;
+    if-eq p0, v0, :cond_3
 
-    .line 23
-    .line 24
-    if-eqz p1, :cond_2
+    const/4 v0, 0x2
 
-    .line 25
-    .line 26
-    iget-object v3, p0, Lnrg;->c:Lqrg;
+    if-eq p0, v0, :cond_2
 
-    .line 27
-    .line 28
-    iget-object p1, v3, Lqrg;->d:Ljava/util/concurrent/ConcurrentHashMap;
+    const/4 v0, 0x3
 
-    .line 29
-    .line 30
-    invoke-virtual {p1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eq p0, v0, :cond_1
 
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v1
+    const/4 v0, 0x4
 
-    .line 34
-    if-nez v1, :cond_1
+    if-ne p0, v0, :cond_0
 
-    .line 35
-    .line 36
-    new-instance v7, LYG3;
+    const-string p0, "FULL"
 
-    .line 37
-    .line 38
-    new-instance v1, Llrg;
+    return-object p0
 
-    .line 39
-    .line 40
-    iget-object v5, p0, Lnrg;->Y:LS4f;
-
-    .line 41
-    .line 42
-    const/4 v6, 0x5
-
-    .line 43
-    invoke-direct/range {v1 .. v6}, Llrg;-><init>(LMI3;Lqrg;LS4f;LS4f;I)V
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-direct {v7, v1}, LYG3;-><init>(Lc85;)V
-
-    .line 47
-    .line 48
-    .line 49
-    invoke-virtual {p1, v0, v7}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object p1
-
-    .line 53
-    if-nez p1, :cond_0
-
-    .line 54
-    .line 55
-    move-object v1, v7
-
-    .line 56
-    goto :goto_0
-
-    .line 57
     :cond_0
-    move-object v1, p1
+    const/4 p0, 0x0
 
-    .line 58
+    throw p0
+
     :cond_1
-    :goto_0
-    check-cast v1, LYG3;
+    const-string p0, "PARTIAL"
 
-    .line 59
-    .line 60
-    iget-object p1, v1, LYG3;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+    return-object p0
 
-    .line 61
-    .line 62
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Single;->B()Lio/reactivex/rxjava3/core/Observable;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object p1
-
-    .line 66
-    new-instance v1, LVof;
-
-    .line 67
-    .line 68
-    const/16 v2, 0x1c
-
-    .line 69
-    .line 70
-    invoke-direct {v1, v2, v0}, LVof;-><init>(ILjava/lang/Object;)V
-
-    .line 71
-    .line 72
-    .line 73
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 74
-    .line 75
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 76
-    .line 77
-    .line 78
-    goto :goto_1
-
-    .line 79
     :cond_2
-    invoke-interface {v2, v4}, LMI3;->d(LS4f;)Lio/reactivex/rxjava3/core/Observable;
+    const-string p0, "NONE"
 
-    .line 80
-    .line 81
-    .line 82
-    move-result-object v0
+    return-object p0
 
-    .line 83
-    :goto_1
-    return-object v0
-
-    .line 84
-    :pswitch_0
-    check-cast p1, Lkrg;
-
-    .line 85
-    .line 86
-    iget-object p1, p1, Lkrg;->a:Ljava/util/Set;
-
-    .line 87
-    .line 88
-    iget-object v0, p0, Lnrg;->b:LS4f;
-
-    .line 89
-    .line 90
-    invoke-interface {v0}, LBI3;->getName()Ljava/lang/String;
-
-    .line 91
-    .line 92
-    .line 93
-    move-result-object v1
-
-    .line 94
-    invoke-interface {p1, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
-
-    .line 95
-    .line 96
-    .line 97
-    move-result p1
-
-    .line 98
-    iget-object v4, p0, Lnrg;->X:LS4f;
-
-    .line 99
-    .line 100
-    iget-object v2, p0, Lnrg;->t:LMI3;
-
-    .line 101
-    .line 102
-    if-eqz p1, :cond_5
-
-    .line 103
-    .line 104
-    iget-object v3, p0, Lnrg;->c:Lqrg;
-
-    .line 105
-    .line 106
-    iget-object p1, v3, Lqrg;->d:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 107
-    .line 108
-    invoke-virtual {p1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 109
-    .line 110
-    .line 111
-    move-result-object v1
-
-    .line 112
-    if-nez v1, :cond_4
-
-    .line 113
-    .line 114
-    new-instance v7, LYG3;
-
-    .line 115
-    .line 116
-    new-instance v1, Llrg;
-
-    .line 117
-    .line 118
-    iget-object v5, p0, Lnrg;->Y:LS4f;
-
-    .line 119
-    .line 120
-    const/4 v6, 0x3
-
-    .line 121
-    invoke-direct/range {v1 .. v6}, Llrg;-><init>(LMI3;Lqrg;LS4f;LS4f;I)V
-
-    .line 122
-    .line 123
-    .line 124
-    invoke-direct {v7, v1}, LYG3;-><init>(Lc85;)V
-
-    .line 125
-    .line 126
-    .line 127
-    invoke-virtual {p1, v0, v7}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 128
-    .line 129
-    .line 130
-    move-result-object p1
-
-    .line 131
-    if-nez p1, :cond_3
-
-    .line 132
-    .line 133
-    move-object v1, v7
-
-    .line 134
-    goto :goto_2
-
-    .line 135
     :cond_3
-    move-object v1, p1
+    const-string p0, "UNKNOWN"
 
-    .line 136
-    :cond_4
-    :goto_2
-    check-cast v1, LYG3;
+    return-object p0
+.end method
 
-    .line 137
-    .line 138
-    iget-object p1, v1, LYG3;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+.method public static synthetic k(I)Ljava/lang/String;
+    .locals 1
 
-    .line 139
-    .line 140
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Single;->B()Lio/reactivex/rxjava3/core/Observable;
+    .line 1
+    const/4 v0, 0x1
 
-    .line 141
-    .line 142
-    .line 143
-    move-result-object p1
+    if-eq p0, v0, :cond_2
 
-    .line 144
-    new-instance v1, LA6g;
+    const/4 v0, 0x2
 
-    .line 145
-    .line 146
-    const/16 v2, 0xa
+    if-eq p0, v0, :cond_1
 
-    .line 147
-    .line 148
-    invoke-direct {v1, v2, v0}, LA6g;-><init>(ILjava/lang/Object;)V
+    const/4 v0, 0x3
 
-    .line 149
-    .line 150
-    .line 151
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    if-eq p0, v0, :cond_0
 
-    .line 152
-    .line 153
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    const-string p0, "null"
 
-    .line 154
-    .line 155
-    .line 156
-    goto :goto_3
+    return-object p0
 
-    .line 157
-    :cond_5
-    invoke-interface {v2, v4}, LMI3;->g(LS4f;)Lio/reactivex/rxjava3/core/Observable;
+    :cond_0
+    const-string p0, "PHONE"
 
-    .line 158
-    .line 159
-    .line 160
-    move-result-object v0
+    return-object p0
 
-    .line 161
-    :goto_3
-    return-object v0
+    :cond_1
+    const-string p0, "BUTTON"
 
-    .line 162
+    return-object p0
+
+    :cond_2
+    const-string p0, "INLINE"
+
+    return-object p0
+.end method
+
+.method public static synthetic l(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "NONE"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "INLINE"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "BUTTON"
+
+    return-object p0
+.end method
+
+.method public static synthetic m(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "VIDEO"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "IMAGE"
+
+    return-object p0
+.end method
+
+.method public static synthetic n(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_3
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x4
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "DISABLED"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "BLUE"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "RED"
+
+    return-object p0
+
+    :cond_3
+    const-string p0, "DEFAULT"
+
+    return-object p0
+.end method
+
+.method public static synthetic o(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "ON_TOP"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "MEDIA_OVERLAY"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "DEFAULT"
+
+    return-object p0
+.end method
+
+.method public static synthetic p(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "VIEW_ALL_MEMBERS_PAGE"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "SHARED_STORY_MEMBERS_PAGE"
+
+    return-object p0
+.end method
+
+.method public static synthetic q(I)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    packed-switch p0, :pswitch_data_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :pswitch_0
+    const-string p0, "SNAP_AD"
+
+    return-object p0
+
     :pswitch_1
-    check-cast p1, Lkrg;
+    const-string p0, "STORY"
 
-    .line 163
-    .line 164
-    iget-object p1, p1, Lkrg;->a:Ljava/util/Set;
+    return-object p0
 
-    .line 165
-    .line 166
-    iget-object v0, p0, Lnrg;->b:LS4f;
+    :pswitch_2
+    const-string p0, "DIRECT_SNAP"
 
-    .line 167
-    .line 168
-    invoke-interface {v0}, LBI3;->getName()Ljava/lang/String;
+    return-object p0
 
-    .line 169
-    .line 170
-    .line 171
-    move-result-object v1
+    :pswitch_3
+    const-string p0, "CONTEXT_CARD"
 
-    .line 172
-    invoke-interface {p1, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+    return-object p0
 
-    .line 173
-    .line 174
-    .line 175
-    move-result p1
+    :pswitch_4
+    const-string p0, "COMMERCE_PDP"
 
-    .line 176
-    iget-object v4, p0, Lnrg;->X:LS4f;
+    return-object p0
 
-    .line 177
-    .line 178
-    iget-object v2, p0, Lnrg;->t:LMI3;
+    :pswitch_5
+    const-string p0, "CAMERA"
 
-    .line 179
-    .line 180
-    if-eqz p1, :cond_8
+    return-object p0
 
-    .line 181
-    .line 182
-    iget-object v3, p0, Lnrg;->c:Lqrg;
-
-    .line 183
-    .line 184
-    iget-object p1, v3, Lqrg;->d:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 185
-    .line 186
-    invoke-virtual {p1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 187
-    .line 188
-    .line 189
-    move-result-object v1
-
-    .line 190
-    if-nez v1, :cond_7
-
-    .line 191
-    .line 192
-    new-instance v7, LYG3;
-
-    .line 193
-    .line 194
-    new-instance v1, Llrg;
-
-    .line 195
-    .line 196
-    iget-object v5, p0, Lnrg;->Y:LS4f;
-
-    .line 197
-    .line 198
-    const/4 v6, 0x1
-
-    .line 199
-    invoke-direct/range {v1 .. v6}, Llrg;-><init>(LMI3;Lqrg;LS4f;LS4f;I)V
-
-    .line 200
-    .line 201
-    .line 202
-    invoke-direct {v7, v1}, LYG3;-><init>(Lc85;)V
-
-    .line 203
-    .line 204
-    .line 205
-    invoke-virtual {p1, v0, v7}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 206
-    .line 207
-    .line 208
-    move-result-object p1
-
-    .line 209
-    if-nez p1, :cond_6
-
-    .line 210
-    .line 211
-    move-object v1, v7
-
-    .line 212
-    goto :goto_4
-
-    .line 213
-    :cond_6
-    move-object v1, p1
-
-    .line 214
-    :cond_7
-    :goto_4
-    check-cast v1, LYG3;
-
-    .line 215
-    .line 216
-    iget-object p1, v1, LYG3;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
-
-    .line 217
-    .line 218
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Single;->B()Lio/reactivex/rxjava3/core/Observable;
-
-    .line 219
-    .line 220
-    .line 221
-    move-result-object p1
-
-    .line 222
-    new-instance v1, LTkg;
-
-    .line 223
-    .line 224
-    const/4 v2, 0x2
-
-    .line 225
-    invoke-direct {v1, v2, v0}, LTkg;-><init>(ILjava/lang/Object;)V
-
-    .line 226
-    .line 227
-    .line 228
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 229
-    .line 230
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 231
-    .line 232
-    .line 233
-    goto :goto_5
-
-    .line 234
-    :cond_8
-    invoke-interface {v2, v4}, LMI3;->e(LS4f;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 235
-    .line 236
-    .line 237
-    move-result-object v0
-
-    .line 238
-    :goto_5
-    return-object v0
-
-    .line 239
     :pswitch_data_0
-    .packed-switch 0x0
+    .packed-switch 0x1
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch
+.end method
+
+.method public static synthetic r(I)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    packed-switch p0, :pswitch_data_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :pswitch_0
+    const-string p0, "CAPTURE_TAKEN"
+
+    return-object p0
+
+    :pswitch_1
+    const-string p0, "CAPTURE_PREVIEW"
+
+    return-object p0
+
+    :pswitch_2
+    const-string p0, "AR_WORLD_FACING"
+
+    return-object p0
+
+    :pswitch_3
+    const-string p0, "VISUALIZATION"
+
+    return-object p0
+
+    :pswitch_4
+    const-string p0, "AR"
+
+    return-object p0
+
+    :pswitch_5
+    const-string p0, "HINT"
+
+    return-object p0
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static synthetic s(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "DYNAMIC"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "STATIC"
+
+    return-object p0
+.end method
+
+.method public static synthetic t(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    if-eq p0, v0, :cond_3
+
+    const/4 v0, 0x2
+
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x4
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
+    :cond_0
+    const-string p0, "FULL"
+
+    return-object p0
+
+    :cond_1
+    const-string p0, "PARTIAL"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "NONE"
+
+    return-object p0
+
+    :cond_3
+    const-string p0, "UNKNOWN"
+
+    return-object p0
+.end method
+
+.method public static synthetic u(Ljava/lang/String;)I
+    .locals 2
+
+    .line 1
+    if-eqz p0, :cond_3
+
+    const-string v0, "OPEN_CUSTOM_FRIENDS"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 p0, 0x1
+
+    return p0
+
+    :cond_0
+    const-string v0, "OPEN_BLOCKLIST"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    const/4 p0, 0x2
+
+    return p0
+
+    :cond_1
+    const-string v0, "FOCUS_QUICK_SHARE"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    const/4 p0, 0x3
+
+    return p0
+
+    :cond_2
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "No enum constant com.snapchat.maps.api.SettingsNavigationAction."
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_3
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    const-string v0, "Name is null"
+
+    invoke-direct {p0, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p0
 .end method

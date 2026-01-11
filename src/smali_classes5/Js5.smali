@@ -1,72 +1,73 @@
 .class public final synthetic LJs5;
-.super Lj28;
+.super LPAe;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # static fields
-.field public static final f0:LJs5;
+.field public static final e0:LJs5;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 5
 
     .line 1
     new-instance v0, LJs5;
 
     .line 2
     .line 3
-    const-string v5, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;)V"
+    const-string v1, "isBitmojiLinked()Z"
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    const/4 v1, 0x1
+    const-class v3, LVKj;
 
     .line 7
-    const-class v3, Lmm5;
-
     .line 8
+    const-string v4, "isBitmojiLinked"
+
     .line 9
-    const-string v4, "<init>"
-
     .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v3, v4, v1, v2}, LPAe;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
 
+    .line 11
     .line 12
     .line 13
-    .line 14
-    sput-object v0, LJs5;->f0:LJs5;
+    sput-object v0, LJs5;->e0:LJs5;
 
+    .line 14
     .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    check-cast p1, LAC5;
+    check-cast p1, LVKj;
 
     .line 2
     .line 3
-    new-instance v0, Lmm5;
+    iget-object p1, p1, LVKj;->j:Lb89;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1}, Lmm5;-><init>(LAC5;)V
+    instance-of p1, p1, LY79;
 
     .line 6
     .line 7
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 8
-    return-object v0
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
 .end method

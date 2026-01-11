@@ -4,13 +4,13 @@
 
 # interfaces
 .implements Lcom/snap/sharing/lists/ListEditorContext;
-.implements LBna;
+.implements LPza;
 
 
 # static fields
-.field public static final O0:LcSa;
+.field public static final O0:LL4b;
 
-.field public static final P0:LcSa;
+.field public static final P0:LL4b;
 
 
 # instance fields
@@ -18,54 +18,54 @@
 
 .field public B0:Lcom/snap/composer/people/GroupStoring;
 
-.field public C0:LQna;
+.field public C0:LeAa;
 
-.field public D0:LTqc;
+.field public D0:LmGc;
 
-.field public E0:LYDc;
+.field public E0:LMSc;
 
-.field public F0:LAna;
+.field public F0:LOza;
 
-.field public G0:Lnwf;
+.field public G0:LZ69;
 
-.field public H0:LqZ8;
+.field public H0:LyPf;
 
-.field public final I0:LXfi;
+.field public final I0:LREi;
 
-.field public final J0:LcSa;
+.field public final J0:LL4b;
 
-.field public final K0:LrK5;
+.field public final K0:LJO5;
 
 .field public final L0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final M0:LXfi;
+.field public final M0:LREi;
 
 .field public N0:Ljava/lang/String;
 
-.field public x0:LZb;
+.field public x0:LLc;
 
-.field public y0:LQH;
+.field public y0:LLJ;
 
 .field public z0:Lcom/snap/composer/foundation/IApplication;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 12
+    .locals 13
 
     .line 1
-    new-instance v0, LcSa;
+    new-instance v0, LL4b;
 
     .line 2
     .line 3
-    sget-object v1, LFkg;->Z:LFkg;
+    sget-object v1, LDFg;->Z:LDFg;
 
     .line 4
     .line 5
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     .line 6
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     .line 7
     const-string v2, "ListEditorFragment:Dialog"
@@ -87,63 +87,69 @@
     const/4 v7, 0x0
 
     .line 14
-    const/16 v10, 0x3ff4
-
-    .line 15
-    .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->O0:LcSa;
-
-    .line 20
-    .line 21
-    move-object v2, v1
-
-    .line 22
-    new-instance v1, LcSa;
-
-    .line 23
-    .line 24
-    const/4 v10, 0x0
-
-    .line 25
-    const-string v3, "ListEditorFragment:Progress"
-
-    .line 26
-    .line 27
-    const/4 v4, 0x0
-
-    .line 28
-    const/4 v5, 0x1
-
-    .line 29
-    const/4 v6, 0x0
-
-    .line 30
     const/4 v8, 0x0
 
+    .line 15
+    const/16 v11, 0x7ff4
+
+    .line 16
+    .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    sput-object v0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->O0:LL4b;
+
+    .line 21
+    .line 22
+    move-object v2, v1
+
+    .line 23
+    new-instance v1, LL4b;
+
+    .line 24
+    .line 25
+    const/4 v10, 0x0
+
+    .line 26
+    const/4 v11, 0x0
+
+    .line 27
+    const-string v3, "ListEditorFragment:Progress"
+
+    .line 28
+    .line 29
+    const/4 v4, 0x0
+
+    .line 30
+    const/4 v5, 0x1
+
     .line 31
-    const/16 v11, 0x3ff4
+    const/4 v6, 0x0
 
     .line 32
+    const/4 v8, 0x0
+
     .line 33
-    invoke-direct/range {v1 .. v11}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v12, 0x7ff4
 
     .line 34
     .line 35
-    .line 36
-    sput-object v1, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->P0:LcSa;
+    invoke-direct/range {v1 .. v12}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
 
+    .line 36
     .line 37
     .line 38
+    sput-object v1, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->P0:LL4b;
+
+    .line 39
+    .line 40
     return-void
 .end method
 
 .method public constructor <init>()V
-    .locals 13
+    .locals 14
 
     .line 1
     invoke-direct {p0}, Lcom/snap/sharing/shortcuts/ui/ComposerFragment;-><init>()V
@@ -151,43 +157,43 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lxna;
+    new-instance v0, LLza;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, p0, v1}, Lxna;-><init>(Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;I)V
+    invoke-direct {v0, p0, v1}, LLza;-><init>(Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;I)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 11
     .line 12
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 13
     .line 14
     .line 15
-    iput-object v1, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->I0:LXfi;
+    iput-object v1, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->I0:LREi;
 
     .line 16
     .line 17
-    new-instance v2, LcSa;
+    new-instance v2, LL4b;
 
     .line 18
     .line 19
-    sget-object v3, LFkg;->Z:LFkg;
+    sget-object v3, LDFg;->Z:LDFg;
 
     .line 20
     .line 21
-    const/4 v10, 0x0
+    const/4 v11, 0x0
 
     .line 22
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
     .line 23
     const-string v4, "ListEditorFragment"
@@ -209,141 +215,127 @@
     const/4 v9, 0x0
 
     .line 30
-    const/16 v12, 0x3ffc
+    const/4 v10, 0x0
 
     .line 31
-    .line 32
-    invoke-direct/range {v2 .. v12}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v13, 0x7ffc
 
+    .line 32
     .line 33
+    invoke-direct/range {v2 .. v13}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 34
     .line 35
-    iput-object v2, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->J0:LcSa;
-
     .line 36
-    .line 37
-    invoke-static {}, Ltla;->b()Lkqc;
+    iput-object v2, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->J0:LL4b;
 
+    .line 37
     .line 38
+    invoke-static {}, LhT7;->a()LFFc;
+
     .line 39
     .line 40
-    move-result-object v0
-
     .line 41
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->V1()Ldqc;
+    move-result-object v0
 
     .line 42
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->V1()LyFc;
+
     .line 43
     .line 44
-    move-result-object v1
-
     .line 45
-    check-cast v1, Lcqc;
+    move-result-object v1
 
     .line 46
-    .line 47
-    invoke-virtual {v1}, Lcqc;->p()LZpc;
+    check-cast v1, LxFc;
 
+    .line 47
     .line 48
+    invoke-virtual {v1}, LxFc;->p()LuFc;
+
     .line 49
     .line 50
+    .line 51
     move-result-object v1
 
-    .line 51
-    invoke-virtual {v0, v1}, Ljqc;->c(Ldqc;)Ljqc;
-
     .line 52
+    invoke-virtual {v0, v1}, LEFc;->c(LyFc;)LEFc;
+
     .line 53
     .line 54
-    move-result-object v0
-
     .line 55
-    check-cast v0, Lkqc;
+    move-result-object v0
 
     .line 56
-    .line 57
-    invoke-virtual {v0}, Lkqc;->d()LrK5;
+    check-cast v0, LFFc;
 
+    .line 57
     .line 58
+    invoke-virtual {v0}, LFFc;->d()LJO5;
+
     .line 59
     .line 60
+    .line 61
     move-result-object v0
 
-    .line 61
-    iput-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->K0:LrK5;
-
     .line 62
+    iput-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->K0:LJO5;
+
     .line 63
+    .line 64
     new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 64
     .line 65
+    .line 66
     invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
 
-    .line 66
     .line 67
     .line 68
+    .line 69
     iput-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->L0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 69
     .line 70
-    new-instance v0, Lxna;
-
     .line 71
+    new-instance v0, LLza;
+
     .line 72
+    .line 73
     const/4 v1, 0x1
 
-    .line 73
-    invoke-direct {v0, p0, v1}, Lxna;-><init>(Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;I)V
-
     .line 74
+    invoke-direct {v0, p0, v1}, LLza;-><init>(Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;I)V
+
     .line 75
     .line 76
-    new-instance v1, LXfi;
-
     .line 77
-    .line 78
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    new-instance v1, LREi;
 
+    .line 78
     .line 79
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 80
     .line 81
-    iput-object v1, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->M0:LXfi;
-
     .line 82
+    iput-object v1, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->M0:LREi;
+
     .line 83
+    .line 84
     return-void
 .end method
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final D1()V
+.method public final B1()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snap/sharing/shortcuts/ui/ComposerFragment;->D1()V
+    invoke-super {p0}, Lcom/snap/sharing/shortcuts/ui/ComposerFragment;->B1()V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LAna;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LOza;
 
     .line 5
     .line 6
@@ -351,7 +343,7 @@
     move-result-object v0
 
     .line 8
-    invoke-virtual {v0}, LAna;->C1()V
+    invoke-virtual {v0}, LOza;->D1()V
 
     .line 9
     .line 10
@@ -359,7 +351,7 @@
     return-void
 .end method
 
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
@@ -375,11 +367,11 @@
     return-void
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LAna;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LOza;
 
     .line 2
     .line 3
@@ -387,7 +379,7 @@
     move-result-object p1
 
     .line 5
-    invoke-virtual {p1, p0}, LqM0;->O2(Ljava/lang/Object;)V
+    invoke-virtual {p1, p0}, LrP0;->Z2(Ljava/lang/Object;)V
 
     .line 6
     .line 7
@@ -395,22 +387,22 @@
     return-void
 .end method
 
-.method public final S0()LcSa;
+.method public final Q0()LL4b;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->J0:LcSa;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->J0:LL4b;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final T0()Lmqc;
+.method public final R0()LHFc;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->K0:LrK5;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->K0:LJO5;
 
     .line 2
     .line 3
@@ -579,7 +571,7 @@
 
     .line 70
     .line 71
-    new-instance v9, Lhoa;
+    new-instance v9, LuAa;
 
     .line 72
     .line 73
@@ -587,7 +579,7 @@
 
     .line 74
     .line 75
-    invoke-direct {v9, v8, v10}, Lhoa;-><init>(Ljava/lang/String;Lcom/snap/sharing/lists/ListRecipientType;)V
+    invoke-direct {v9, v8, v10}, LuAa;-><init>(Ljava/lang/String;Lcom/snap/sharing/lists/ListRecipientType;)V
 
     .line 76
     .line 77
@@ -670,7 +662,7 @@
 
     .line 112
     .line 113
-    new-instance v9, Lhoa;
+    new-instance v9, LuAa;
 
     .line 114
     .line 115
@@ -678,7 +670,7 @@
 
     .line 116
     .line 117
-    invoke-direct {v9, v8, v10}, Lhoa;-><init>(Ljava/lang/String;Lcom/snap/sharing/lists/ListRecipientType;)V
+    invoke-direct {v9, v8, v10}, LuAa;-><init>(Ljava/lang/String;Lcom/snap/sharing/lists/ListRecipientType;)V
 
     .line 118
     .line 119
@@ -781,14 +773,14 @@
 
     .line 164
     :goto_7
-    sget-object v2, Lcom/snap/sharing/lists/ListEditorView;->Companion:LCna;
+    sget-object v2, Lcom/snap/sharing/lists/ListEditorView;->Companion:LQza;
 
     .line 165
     .line 166
     move-object v4, v3
 
     .line 167
-    iget-object v3, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->H0:LqZ8;
+    iget-object v3, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->G0:LZ69;
 
     .line 168
     .line 169
@@ -799,11 +791,11 @@
     move-object v7, v4
 
     .line 172
-    new-instance v4, LDna;
+    new-instance v4, LRza;
 
     .line 173
     .line 174
-    invoke-static {v5, v6}, Lue3;->Z0(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
+    invoke-static {v5, v6}, Llh3;->Y3(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     .line 175
     .line 176
@@ -811,7 +803,7 @@
     move-result-object v1
 
     .line 178
-    invoke-direct {v4, v0, v7, v1}, LDna;-><init>(Lcom/snap/sharing/lists/ListEditType;Ljava/lang/String;Ljava/util/List;)V
+    invoke-direct {v4, v0, v7, v1}, LRza;-><init>(Lcom/snap/sharing/lists/ListEditType;Ljava/lang/String;Ljava/util/List;)V
 
     .line 179
     .line 180
@@ -826,7 +818,7 @@
     move-object v5, p0
 
     .line 185
-    invoke-static/range {v2 .. v7}, LCna;->a(LCna;LqZ8;LDna;Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;LTB3;I)Lcom/snap/sharing/lists/ListEditorView;
+    invoke-static/range {v2 .. v7}, LQza;->a(LQza;LZ69;LRza;Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;LvF3;I)Lcom/snap/sharing/lists/ListEditorView;
 
     .line 186
     .line 187
@@ -838,11 +830,11 @@
 
     .line 190
     :cond_b
-    const-string v0, "viewLoader"
+    const-string v0, "runtime"
 
     .line 191
     .line 192
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 193
     .line 194
@@ -867,22 +859,22 @@
     throw v0
 .end method
 
-.method public final V1()Ldqc;
+.method public final V1()LyFc;
     .locals 3
 
     .line 1
-    sget-object v0, LW5d;->P:Lm7b;
+    sget-object v0, Luld;->Q:LtOc;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->J0:LcSa;
+    iget-object v1, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->J0:LL4b;
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    invoke-static {v0, v1, v2}, Lm7b;->h(LW5d;LcSa;LcSa;)Lcqc;
+    invoke-static {v0, v1, v2}, LJea;->g(Luld;LL4b;LL4b;)LxFc;
 
     .line 7
     .line 8
@@ -893,11 +885,11 @@
     return-object v0
 .end method
 
-.method public final W1()LTqc;
+.method public final W1()LmGc;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->D0:LTqc;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->D0:LmGc;
 
     .line 2
     .line 3
@@ -913,7 +905,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -924,11 +916,11 @@
     throw v0
 .end method
 
-.method public final X1()LAna;
+.method public final X1()LOza;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->F0:LAna;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->F0:LOza;
 
     .line 2
     .line 3
@@ -944,7 +936,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -959,7 +951,7 @@
     .locals 7
 
     .line 1
-    new-instance v0, LO76;
+    new-instance v0, LYa6;
 
     .line 2
     .line 3
@@ -971,7 +963,7 @@
     move-result-object v1
 
     .line 7
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->W1()LTqc;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->W1()LmGc;
 
     .line 8
     .line 9
@@ -979,7 +971,7 @@
     move-result-object v2
 
     .line 11
-    sget-object v3, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->O0:LcSa;
+    sget-object v3, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->O0:LL4b;
 
     .line 12
     .line 13
@@ -993,26 +985,26 @@
 
     .line 16
     .line 17
-    invoke-direct/range {v0 .. v6}, LO76;-><init>(Landroid/content/Context;LTqc;LcSa;ZLcYg;I)V
+    invoke-direct/range {v0 .. v6}, LYa6;-><init>(Landroid/content/Context;LmGc;LL4b;ZLPjh;I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, p1}, LO76;->w(I)V
+    invoke-virtual {v0, p1}, LYa6;->w(I)V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v0, p2}, LO76;->j(I)V
+    invoke-virtual {v0, p2}, LYa6;->j(I)V
 
     .line 24
     .line 25
     .line 26
-    sget-object p1, Lxha;->X:Lxha;
+    sget-object p1, LMka;->y0:LMka;
 
     .line 27
     .line 28
-    const p2, 0x7f132444
+    const p2, 0x7f13261b
 
     .line 29
     .line 30
@@ -1024,12 +1016,12 @@
 
     .line 33
     .line 34
-    invoke-static {v0, p2, p1, v1, v2}, LO76;->d(LO76;ILkotlin/jvm/functions/Function1;ZI)V
+    invoke-static {v0, p2, p1, v1, v2}, LYa6;->c(LYa6;ILkotlin/jvm/functions/Function1;ZI)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {v0}, LO76;->b()LP76;
+    invoke-virtual {v0}, LYa6;->b()LZa6;
 
     .line 38
     .line 39
@@ -1037,11 +1029,11 @@
     move-result-object p1
 
     .line 41
-    new-instance p2, LfNd;
+    new-instance p2, Lu4e;
 
     .line 42
     .line 43
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->W1()LTqc;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->W1()LmGc;
 
     .line 44
     .line 45
@@ -1049,7 +1041,7 @@
     move-result-object v0
 
     .line 47
-    invoke-virtual {p1}, LP76;->z()Lcqc;
+    invoke-virtual {p1}, LZa6;->l()LxFc;
 
     .line 48
     .line 49
@@ -1057,12 +1049,12 @@
     move-result-object v1
 
     .line 51
-    invoke-direct {p2, v0, p1, v1}, LfNd;-><init>(LTqc;LWRa;Ldqc;)V
+    invoke-direct {p2, v0, p1, v1}, Lu4e;-><init>(LmGc;LG4b;LyFc;)V
 
     .line 52
     .line 53
     .line 54
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->W1()LTqc;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->W1()LmGc;
 
     .line 55
     .line 56
@@ -1070,7 +1062,7 @@
     move-result-object p1
 
     .line 58
-    invoke-virtual {p1, p2}, LTqc;->H(LOpc;)V
+    invoke-virtual {p1, p2}, LmGc;->G(LjFc;)V
 
     .line 59
     .line 60
@@ -1098,7 +1090,7 @@
     move-result-object p1
 
     .line 9
-    const v0, 0x7f060219
+    const v0, 0x7f060271
 
     .line 10
     .line 11
@@ -1130,32 +1122,32 @@
 
     .line 24
     :cond_0
-    sget v1, LCDc;->a:I
+    sget v1, LqSc;->a:I
 
     .line 25
     .line 26
-    new-instance v1, LzDc;
+    new-instance v1, LnSc;
 
     .line 27
     .line 28
-    invoke-direct {v1}, LzDc;-><init>()V
+    invoke-direct {v1}, LnSc;-><init>()V
 
     .line 29
     .line 30
     .line 31
-    iput-object p1, v1, LzDc;->e:Ljava/lang/String;
+    iput-object p1, v1, LnSc;->e:Ljava/lang/String;
 
     .line 32
     .line 33
-    iput-object v2, v1, LzDc;->f:Ljava/lang/Integer;
+    iput-object v2, v1, LnSc;->f:Ljava/lang/Integer;
 
     .line 34
     .line 35
-    iput-object v0, v1, LzDc;->m:Ljava/lang/Integer;
+    iput-object v0, v1, LnSc;->o:Ljava/lang/Integer;
 
     .line 36
     .line 37
-    iput-object v2, v1, LzDc;->g:Ljava/lang/Integer;
+    iput-object v2, v1, LnSc;->g:Ljava/lang/Integer;
 
     .line 38
     .line 39
@@ -1171,7 +1163,7 @@
     move-result-object v0
 
     .line 45
-    iput-object v0, v1, LzDc;->z:Ljava/lang/Long;
+    iput-object v0, v1, LnSc;->B:Ljava/lang/Long;
 
     .line 46
     .line 47
@@ -1179,37 +1171,37 @@
 
     .line 48
     .line 49
-    iput-object v0, v1, LzDc;->y:Ljava/lang/String;
+    iput-object v0, v1, LnSc;->A:Ljava/lang/String;
 
     .line 50
     .line 51
     const/4 v0, 0x1
 
     .line 52
-    iput-boolean v0, v1, LzDc;->B:Z
+    iput-boolean v0, v1, LnSc;->D:Z
 
     .line 53
     .line 54
     const/4 v0, 0x0
 
     .line 55
-    iput-boolean v0, v1, LzDc;->A:Z
+    iput-boolean v0, v1, LnSc;->C:Z
 
     .line 56
     .line 57
-    sget-object v0, Luz2;->e0:Luz2;
+    sget-object v0, LhC2;->e0:LhC2;
 
     .line 58
     .line 59
-    iput-object v0, v1, LzDc;->w:Luz2;
+    iput-object v0, v1, LnSc;->y:LhC2;
 
     .line 60
     .line 61
-    iput-object p1, v1, LzDc;->b:Ljava/lang/String;
+    iput-object p1, v1, LnSc;->b:Ljava/lang/String;
 
     .line 62
     .line 63
-    invoke-virtual {v1}, LzDc;->a()LBDc;
+    invoke-virtual {v1}, LnSc;->a()LpSc;
 
     .line 64
     .line 65
@@ -1217,7 +1209,7 @@
     move-result-object p1
 
     .line 67
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->E0:LYDc;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->E0:LMSc;
 
     .line 68
     .line 69
@@ -1225,7 +1217,7 @@
 
     .line 70
     .line 71
-    invoke-interface {v0, p1}, LYDc;->b(LBDc;)V
+    invoke-interface {v0, p1}, LMSc;->b(LpSc;)V
 
     .line 72
     .line 73
@@ -1238,7 +1230,7 @@
 
     .line 76
     .line 77
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 78
     .line 79
@@ -1266,7 +1258,7 @@
     move-result-object p1
 
     .line 9
-    const v0, 0x7f060208
+    const v0, 0x7f060260
 
     .line 10
     .line 11
@@ -1298,32 +1290,32 @@
 
     .line 24
     :cond_0
-    sget v1, LCDc;->a:I
+    sget v1, LqSc;->a:I
 
     .line 25
     .line 26
-    new-instance v1, LzDc;
+    new-instance v1, LnSc;
 
     .line 27
     .line 28
-    invoke-direct {v1}, LzDc;-><init>()V
+    invoke-direct {v1}, LnSc;-><init>()V
 
     .line 29
     .line 30
     .line 31
-    iput-object p1, v1, LzDc;->e:Ljava/lang/String;
+    iput-object p1, v1, LnSc;->e:Ljava/lang/String;
 
     .line 32
     .line 33
-    iput-object v2, v1, LzDc;->f:Ljava/lang/Integer;
+    iput-object v2, v1, LnSc;->f:Ljava/lang/Integer;
 
     .line 34
     .line 35
-    iput-object v0, v1, LzDc;->m:Ljava/lang/Integer;
+    iput-object v0, v1, LnSc;->o:Ljava/lang/Integer;
 
     .line 36
     .line 37
-    iput-object v2, v1, LzDc;->g:Ljava/lang/Integer;
+    iput-object v2, v1, LnSc;->g:Ljava/lang/Integer;
 
     .line 38
     .line 39
@@ -1339,7 +1331,7 @@
     move-result-object v0
 
     .line 45
-    iput-object v0, v1, LzDc;->z:Ljava/lang/Long;
+    iput-object v0, v1, LnSc;->B:Ljava/lang/Long;
 
     .line 46
     .line 47
@@ -1347,37 +1339,37 @@
 
     .line 48
     .line 49
-    iput-object v0, v1, LzDc;->y:Ljava/lang/String;
+    iput-object v0, v1, LnSc;->A:Ljava/lang/String;
 
     .line 50
     .line 51
     const/4 v0, 0x1
 
     .line 52
-    iput-boolean v0, v1, LzDc;->B:Z
+    iput-boolean v0, v1, LnSc;->D:Z
 
     .line 53
     .line 54
     const/4 v0, 0x0
 
     .line 55
-    iput-boolean v0, v1, LzDc;->A:Z
+    iput-boolean v0, v1, LnSc;->C:Z
 
     .line 56
     .line 57
-    sget-object v0, Luz2;->e0:Luz2;
+    sget-object v0, LhC2;->e0:LhC2;
 
     .line 58
     .line 59
-    iput-object v0, v1, LzDc;->w:Luz2;
+    iput-object v0, v1, LnSc;->y:LhC2;
 
     .line 60
     .line 61
-    iput-object p1, v1, LzDc;->b:Ljava/lang/String;
+    iput-object p1, v1, LnSc;->b:Ljava/lang/String;
 
     .line 62
     .line 63
-    invoke-virtual {v1}, LzDc;->a()LBDc;
+    invoke-virtual {v1}, LnSc;->a()LpSc;
 
     .line 64
     .line 65
@@ -1385,7 +1377,7 @@
     move-result-object p1
 
     .line 67
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->E0:LYDc;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->E0:LMSc;
 
     .line 68
     .line 69
@@ -1393,7 +1385,7 @@
 
     .line 70
     .line 71
-    invoke-interface {v0, p1}, LYDc;->b(LBDc;)V
+    invoke-interface {v0, p1}, LMSc;->b(LpSc;)V
 
     .line 72
     .line 73
@@ -1406,7 +1398,7 @@
 
     .line 76
     .line 77
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 78
     .line 79
@@ -1418,11 +1410,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->I0:LXfi;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->I0:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1441,7 +1433,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->y0:LQH;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->y0:LLJ;
 
     .line 2
     .line 3
@@ -1457,7 +1449,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1488,7 +1480,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1519,7 +1511,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1534,7 +1526,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->C0:LQna;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->C0:LeAa;
 
     .line 2
     .line 3
@@ -1550,7 +1542,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1565,11 +1557,11 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->M0:LXfi;
+    iget-object v0, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->M0:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1577,15 +1569,15 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lzre;
+    check-cast v0, LlJe;
 
     .line 8
     .line 9
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 12
     .line 13
@@ -1593,36 +1585,35 @@
     move-result-object v0
 
     .line 15
-    new-instance v1, Lea9;
+    new-instance v1, LyX9;
 
     .line 16
     .line 17
-    const/16 v2, 0x13
+    const/4 v2, 0x3
 
     .line 18
-    .line 19
-    invoke-direct {v1, v2, p0}, Lea9;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LyX9;-><init>(ILjava/lang/Object;)V
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 22
     .line 23
     .line 24
-    .line 25
     move-result-object v0
 
-    .line 26
+    .line 25
     iget-object v1, p0, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->L0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 26
     .line 27
-    .line 28
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 28
     .line 29
     .line 30
-    .line 31
     return-void
 .end method
 
@@ -1638,7 +1629,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LAna;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LOza;
 
     .line 6
     .line 7
@@ -1646,7 +1637,7 @@
     move-result-object v1
 
     .line 9
-    invoke-virtual {v1, v0}, LAna;->W2(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, LOza;->f3(Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -1699,7 +1690,7 @@
 
     .line 12
     .line 13
-    invoke-static {v1, v3}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v3}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 14
     .line 15
@@ -1741,11 +1732,11 @@
     move-result-object v3
 
     .line 34
-    check-cast v3, Lhoa;
+    check-cast v3, LuAa;
 
     .line 35
     .line 36
-    invoke-static {v3}, Lkgk;->o(Lhoa;)Lkkg;
+    invoke-static {v3}, LjBk;->i(LuAa;)LhFg;
 
     .line 37
     .line 38
@@ -1766,7 +1757,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LAna;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LOza;
 
     .line 47
     .line 48
@@ -1782,7 +1773,7 @@
     move-result-object p1
 
     .line 54
-    invoke-virtual {v1, v0, p1, v2}, LAna;->a3(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-virtual {v1, v0, p1, v2}, LOza;->g3(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 55
     .line 56
@@ -1791,7 +1782,7 @@
 
     .line 58
     :cond_1
-    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LAna;
+    invoke-virtual {p0}, Lcom/snap/sharing/shortcuts/ui/ListEditorFragment;->X1()LOza;
 
     .line 59
     .line 60
@@ -1807,7 +1798,7 @@
     move-result-object p1
 
     .line 66
-    invoke-virtual {v0, p1, v2}, LAna;->U2(Ljava/lang/String;Ljava/util/ArrayList;)V
+    invoke-virtual {v0, p1, v2}, LOza;->e3(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 67
     .line 68
@@ -1819,7 +1810,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lrna;->a(Lcom/snap/sharing/lists/ListEditorContext;Lcom/snap/composer/utils/ComposerMarshaller;)I
+    invoke-static {p0, p1}, LFza;->a(Lcom/snap/sharing/lists/ListEditorContext;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
     .line 2
     .line 3
@@ -1828,4 +1819,21 @@
 
     .line 5
     return p1
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
 .end method

@@ -5,7 +5,7 @@
 # interfaces
 .implements Lio/reactivex/rxjava3/core/FlowableSubscriber;
 .implements Lio/reactivex/rxjava3/core/MaybeObserver;
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -26,21 +26,21 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicReference<",
-        "Lc7i;",
+        "Ltvi;",
         ">;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TR;>;",
         "Lio/reactivex/rxjava3/core/MaybeObserver<",
         "TT;>;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
-.field public final b:LXAj;
+.field public final b:LEZj;
 
 .field public c:Lio/reactivex/rxjava3/disposables/Disposable;
 
@@ -48,7 +48,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;LXAj;)V
+.method public constructor <init>(Lmvi;LEZj;)V
     .locals 0
 
     .line 1
@@ -57,11 +57,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->b:LXAj;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->b:LEZj;
 
     .line 7
     .line 8
@@ -124,11 +124,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 4
     .line 5
@@ -140,11 +140,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 4
     .line 5
@@ -156,26 +156,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
-
-.method public final onSubscribe(Lc7i;)V
-    .locals 1
-
-    .line 4
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->t:Ljava/util/concurrent/atomic/AtomicLong;
-
-    invoke-static {p0, v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Lc7i;)V
-
     return-void
 .end method
 
@@ -185,7 +174,7 @@
     .line 1
     iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->c:Lio/reactivex/rxjava3/disposables/Disposable;
 
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     move-result v0
 
@@ -195,11 +184,22 @@
     iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->c:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 3
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:Lmvi;
 
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     :cond_0
+    return-void
+.end method
+
+.method public final onSubscribe(Ltvi;)V
+    .locals 1
+
+    .line 4
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->t:Ljava/util/concurrent/atomic/AtomicLong;
+
+    invoke-static {p0, v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Ltvi;)V
+
     return-void
 .end method
 
@@ -208,11 +208,11 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->b:LXAj;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->b:LEZj;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LXAj;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, LEZj;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -220,7 +220,7 @@
     move-result-object p1
 
     .line 7
-    check-cast p1, LZne;
+    check-cast p1, LSFe;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -242,7 +242,7 @@
 
     .line 16
     .line 17
-    invoke-interface {p1, p0}, LZne;->subscribe(LV6i;)V
+    invoke-interface {p1, p0}, LSFe;->subscribe(Lmvi;)V
 
     .line 18
     .line 19
@@ -260,11 +260,11 @@
     .line 23
     .line 24
     .line 25
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;->a:Lmvi;
 
     .line 26
     .line 27
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 28
     .line 29

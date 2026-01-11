@@ -1,6 +1,9 @@
 .class public final LG27;
-.super LJxk;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LH27;
 
 
 # static fields

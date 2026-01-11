@@ -99,11 +99,11 @@
 
     .line 19
     .line 20
-    iget-object p1, v0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Lc7i;
+    iget-object p1, v0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Ltvi;
 
     .line 21
     .line 22
-    invoke-interface {p1}, Lc7i;->cancel()V
+    invoke-interface {p1}, Ltvi;->cancel()V
 
     .line 23
     .line 24

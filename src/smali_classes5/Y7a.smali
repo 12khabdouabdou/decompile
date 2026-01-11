@@ -1,54 +1,125 @@
-.class public final LY7a;
-.super Ljava/lang/Object;
+.class public final enum LY7a;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final enum a:LY7a;
 
-.field public final b:Lio/reactivex/rxjava3/core/Observable;
+.field public static final enum b:LY7a;
 
-.field public final c:Lio/reactivex/rxjava3/core/Maybe;
+.field public static final synthetic c:[LY7a;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 5
 
-    const/4 v0, 0x0
+    .line 1
+    const/4 v0, 0x1
 
-    iput v0, p0, LY7a;->a:I
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    new-instance v2, LY7a;
 
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 5
-    iput-object p1, p0, LY7a;->b:Lio/reactivex/rxjava3/core/Observable;
+    const-string v3, "DEFAULT"
 
     .line 6
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
-
     .line 7
-    iput-object p1, p0, LY7a;->c:Lio/reactivex/rxjava3/core/Maybe;
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 8
+    .line 9
+    .line 10
+    sput-object v2, LY7a;->a:LY7a;
+
+    .line 11
+    .line 12
+    new-instance v3, LY7a;
+
+    .line 13
+    .line 14
+    const-string v4, "FADING"
+
+    .line 15
+    .line 16
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v3, LY7a;->b:LY7a;
+
+    .line 20
+    .line 21
+    const/4 v4, 0x2
+
+    .line 22
+    new-array v4, v4, [LY7a;
+
+    .line 23
+    .line 24
+    aput-object v2, v4, v1
+
+    .line 25
+    .line 26
+    aput-object v3, v4, v0
+
+    .line 27
+    .line 28
+    sput-object v4, LY7a;->c:[LY7a;
+
+    .line 29
+    .line 30
     return-void
 .end method
 
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/internal/operators/maybe/MaybeOnErrorComplete;)V
+.method public static valueOf(Ljava/lang/String;)LY7a;
     .locals 1
 
-    const/4 v0, 0x1
-
-    iput v0, p0, LY7a;->a:I
-
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-class v0, LY7a;
 
     .line 2
-    iput-object p1, p0, LY7a;->b:Lio/reactivex/rxjava3/core/Observable;
-
     .line 3
-    iput-object p2, p0, LY7a;->c:Lio/reactivex/rxjava3/core/Maybe;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    return-void
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LY7a;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LY7a;
+    .locals 1
+
+    .line 1
+    sget-object v0, LY7a;->c:[LY7a;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LY7a;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

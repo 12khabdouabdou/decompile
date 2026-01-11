@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LBY8;
+    proxyClass = Lk69;
     schema = "\'onShortcutToastRemoveButtonTapped\':f?|m|(),\'onShortcutToastDismissed\':f?|m|()"
     typeReferences = {}
 .end annotation
@@ -17,12 +17,12 @@
 
 # virtual methods
 .method public abstract onShortcutToastDismissed()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onShortcutToastRemoveButtonTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

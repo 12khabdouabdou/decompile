@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'PROFILE_HEADER\':0,\'PROFILE_STORIES\':1"
-    type = .enum LJv3;->a:LJv3;
+    schema = "\'PROFILE_HEADER\':0,\'PROFILE_STORIES\':1,\'PROFILE_REPOSTS\':2,\'PROFILE_MANAGEMENT_REPOSTS\':3"
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -22,6 +22,10 @@
 # static fields
 .field public static final enum PROFILE_HEADER:Lcom/snap/composer/storyplayer/FeedPageSection;
 
+.field public static final enum PROFILE_MANAGEMENT_REPOSTS:Lcom/snap/composer/storyplayer/FeedPageSection;
+
+.field public static final enum PROFILE_REPOSTS:Lcom/snap/composer/storyplayer/FeedPageSection;
+
 .field public static final enum PROFILE_STORIES:Lcom/snap/composer/storyplayer/FeedPageSection;
 
 .field public static final synthetic a:[Lcom/snap/composer/storyplayer/FeedPageSection;
@@ -29,68 +33,116 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 9
 
     .line 1
-    const/4 v0, 0x1
+    const/4 v0, 0x3
 
     .line 2
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     .line 3
-    new-instance v2, Lcom/snap/composer/storyplayer/FeedPageSection;
+    const/4 v2, 0x1
 
     .line 4
+    const/4 v3, 0x0
+
     .line 5
-    const-string v3, "PROFILE_HEADER"
+    new-instance v4, Lcom/snap/composer/storyplayer/FeedPageSection;
 
     .line 6
     .line 7
-    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v5, "PROFILE_HEADER"
 
     .line 8
     .line 9
-    .line 10
-    sput-object v2, Lcom/snap/composer/storyplayer/FeedPageSection;->PROFILE_HEADER:Lcom/snap/composer/storyplayer/FeedPageSection;
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 10
     .line 11
     .line 12
-    new-instance v3, Lcom/snap/composer/storyplayer/FeedPageSection;
+    sput-object v4, Lcom/snap/composer/storyplayer/FeedPageSection;->PROFILE_HEADER:Lcom/snap/composer/storyplayer/FeedPageSection;
 
     .line 13
     .line 14
-    const-string v4, "PROFILE_STORIES"
+    new-instance v5, Lcom/snap/composer/storyplayer/FeedPageSection;
 
     .line 15
     .line 16
-    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v6, "PROFILE_STORIES"
 
     .line 17
     .line 18
-    .line 19
-    sput-object v3, Lcom/snap/composer/storyplayer/FeedPageSection;->PROFILE_STORIES:Lcom/snap/composer/storyplayer/FeedPageSection;
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 19
     .line 20
     .line 21
-    const/4 v4, 0x2
+    sput-object v5, Lcom/snap/composer/storyplayer/FeedPageSection;->PROFILE_STORIES:Lcom/snap/composer/storyplayer/FeedPageSection;
 
     .line 22
-    new-array v4, v4, [Lcom/snap/composer/storyplayer/FeedPageSection;
-
     .line 23
+    new-instance v6, Lcom/snap/composer/storyplayer/FeedPageSection;
+
     .line 24
-    aput-object v2, v4, v1
-
     .line 25
+    const-string v7, "PROFILE_REPOSTS"
+
     .line 26
-    aput-object v3, v4, v0
-
     .line 27
-    .line 28
-    sput-object v4, Lcom/snap/composer/storyplayer/FeedPageSection;->a:[Lcom/snap/composer/storyplayer/FeedPageSection;
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 28
     .line 29
     .line 30
+    sput-object v6, Lcom/snap/composer/storyplayer/FeedPageSection;->PROFILE_REPOSTS:Lcom/snap/composer/storyplayer/FeedPageSection;
+
+    .line 31
+    .line 32
+    new-instance v7, Lcom/snap/composer/storyplayer/FeedPageSection;
+
+    .line 33
+    .line 34
+    const-string v8, "PROFILE_MANAGEMENT_REPOSTS"
+
+    .line 35
+    .line 36
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    sput-object v7, Lcom/snap/composer/storyplayer/FeedPageSection;->PROFILE_MANAGEMENT_REPOSTS:Lcom/snap/composer/storyplayer/FeedPageSection;
+
+    .line 40
+    .line 41
+    const/4 v8, 0x4
+
+    .line 42
+    new-array v8, v8, [Lcom/snap/composer/storyplayer/FeedPageSection;
+
+    .line 43
+    .line 44
+    aput-object v4, v8, v3
+
+    .line 45
+    .line 46
+    aput-object v5, v8, v2
+
+    .line 47
+    .line 48
+    aput-object v6, v8, v1
+
+    .line 49
+    .line 50
+    aput-object v7, v8, v0
+
+    .line 51
+    .line 52
+    sput-object v8, Lcom/snap/composer/storyplayer/FeedPageSection;->a:[Lcom/snap/composer/storyplayer/FeedPageSection;
+
+    .line 53
+    .line 54
     return-void
 .end method
 

@@ -62,7 +62,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByEntry(Ljava/util/Map$Entry;)LSma;
+    invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByEntry(Ljava/util/Map$Entry;)Lfza;
 
     .line 10
     .line 11
@@ -91,7 +91,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, LQma;
+    new-instance v0, Ldza;
 
     .line 2
     .line 3
@@ -134,7 +134,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByEntry(Ljava/util/Map$Entry;)LSma;
+    invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByEntry(Ljava/util/Map$Entry;)Lfza;
 
     .line 12
     .line 13
@@ -153,7 +153,7 @@
     const/4 v1, 0x1
 
     .line 19
-    invoke-virtual {v0, p1, v1}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(LSma;Z)V
+    invoke-virtual {v0, p1, v1}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(Lfza;Z)V
 
     .line 20
     .line 21

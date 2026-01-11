@@ -26,7 +26,7 @@
 
 .field public P:Z
 
-.field public Q:LXw;
+.field public Q:LHy;
 
 
 # direct methods
@@ -114,14 +114,14 @@
 
     .line 42
     .line 43
-    iget-object p1, p0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->B:LLk4;
+    iget-object p1, p0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->B:Lmp4;
 
     .line 44
     .line 45
     const/4 p2, 0x1
 
     .line 46
-    iput-boolean p2, p1, LLk4;->f:Z
+    iput-boolean p2, p1, Lmp4;->f:Z
 
     .line 47
     .line 48
@@ -130,16 +130,16 @@
 
 
 # virtual methods
-.method public final B0(LHGe;)V
+.method public final G0(LqYe;)V
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->B0(LHGe;)V
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->G0(LqYe;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/features/messagelist/FoldingLayoutManager;->D1()V
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/features/messagelist/FoldingLayoutManager;->I1()V
 
     .line 5
     .line 6
@@ -163,7 +163,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->x1(II)V
+    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->C1(II)V
 
     .line 17
     .line 18
@@ -172,49 +172,50 @@
 
     .line 20
     .line 21
-    new-instance v0, LWA7;
+    new-instance v0, Lsa7;
 
     .line 22
     .line 23
-    const/4 v1, 0x0
+    const/16 v1, 0x9
 
     .line 24
-    invoke-direct {v0, v1, p0}, LWA7;-><init>(ILjava/lang/Object;)V
-
     .line 25
+    invoke-direct {v0, v1, p0}, Lsa7;-><init>(ILjava/lang/Object;)V
+
     .line 26
     .line 27
+    .line 28
     invoke-virtual {p1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 28
     .line 29
     .line 30
-    :cond_0
-    iget-object p1, p0, Lcom/snap/messaging/chat/features/messagelist/FoldingLayoutManager;->Q:LXw;
-
     .line 31
+    :cond_0
+    iget-object p1, p0, Lcom/snap/messaging/chat/features/messagelist/FoldingLayoutManager;->Q:LHy;
+
     .line 32
+    .line 33
     if-eqz p1, :cond_1
 
-    .line 33
     .line 34
+    .line 35
     const/4 v0, 0x0
 
-    .line 35
-    iput-object v0, p0, Lcom/snap/messaging/chat/features/messagelist/FoldingLayoutManager;->Q:LXw;
-
     .line 36
-    .line 37
-    invoke-virtual {p1}, LXw;->invoke()Ljava/lang/Object;
+    iput-object v0, p0, Lcom/snap/messaging/chat/features/messagelist/FoldingLayoutManager;->Q:LHy;
 
+    .line 37
     .line 38
+    invoke-virtual {p1}, LHy;->d()Ljava/lang/Object;
+
     .line 39
     .line 40
+    .line 41
     :cond_1
     return-void
 .end method
 
-.method public final C1(I)V
+.method public final H1(I)V
     .locals 3
 
     .line 1
@@ -222,7 +223,7 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->l0:LrGe;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->l0:LZXe;
 
     .line 4
     .line 5
@@ -233,7 +234,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LrGe;->getItemCount()I
+    invoke-virtual {v0}, LZXe;->getItemCount()I
 
     .line 9
     .line 10
@@ -257,7 +258,7 @@
 
     .line 17
     .line 18
-    iget p1, p0, LwGe;->p:I
+    iget p1, p0, LfYe;->p:I
 
     .line 19
     .line 20
@@ -268,7 +269,7 @@
     sub-int/2addr p1, v0
 
     .line 23
-    invoke-virtual {p0, v2, p1}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->x1(II)V
+    invoke-virtual {p0, v2, p1}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->C1(II)V
 
     .line 24
     .line 25
@@ -281,7 +282,7 @@
 
     .line 28
     .line 29
-    iget v0, p0, LwGe;->p:I
+    iget v0, p0, LfYe;->p:I
 
     .line 30
     .line 31
@@ -307,7 +308,7 @@
     sub-int/2addr v0, v1
 
     .line 41
-    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->x1(II)V
+    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->C1(II)V
 
     .line 42
     .line 43
@@ -316,7 +317,7 @@
     return-void
 .end method
 
-.method public final D1()V
+.method public final I1()V
     .locals 7
 
     .line 1
@@ -355,7 +356,7 @@
 
     .line 15
     .line 16
-    iget v5, p0, LwGe;->p:I
+    iget v5, p0, LfYe;->p:I
 
     .line 17
     .line 18
@@ -436,7 +437,7 @@
     .line 52
     .line 53
     :cond_3
-    iget v0, p0, LwGe;->p:I
+    iget v0, p0, LfYe;->p:I
 
     .line 54
     .line 55
@@ -448,7 +449,7 @@
 
     .line 58
     .line 59
-    invoke-static {v1, v2, v0}, LMeb;->b(III)I
+    invoke-static {v1, v2, v0}, Losb;->b(III)I
 
     .line 60
     .line 61
@@ -468,7 +469,7 @@
 
     .line 68
     .line 69
-    invoke-virtual {p0}, LwGe;->M0()V
+    invoke-virtual {p0}, LfYe;->R0()V
 
     .line 70
     .line 71
@@ -478,7 +479,7 @@
     return-void
 .end method
 
-.method public final X()I
+.method public final c0()I
     .locals 1
 
     .line 1
@@ -489,11 +490,11 @@
     return v0
 .end method
 
-.method public final c1()Z
+.method public final h1()Z
     .locals 2
 
     .line 1
-    invoke-super {p0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->c1()Z
+    invoke-super {p0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->h1()Z
 
     .line 2
     .line 3
@@ -509,7 +510,7 @@
 
     .line 8
     .line 9
-    iget v1, p0, LwGe;->p:I
+    iget v1, p0, LfYe;->p:I
 
     .line 10
     .line 11
@@ -530,7 +531,7 @@
     return v0
 .end method
 
-.method public final d1(LHGe;[I)V
+.method public final i1(LqYe;[I)V
     .locals 1
 
     .line 1
@@ -555,11 +556,11 @@
     return-void
 .end method
 
-.method public final l0(Landroid/view/View;)V
+.method public final q0(Landroid/view/View;)V
     .locals 4
 
     .line 1
-    invoke-super {p0, p1}, LwGe;->l0(Landroid/view/View;)V
+    invoke-super {p0, p1}, LfYe;->q0(Landroid/view/View;)V
 
     .line 2
     .line 3
@@ -568,7 +569,7 @@
 
     .line 5
     .line 6
-    invoke-static {p1}, LwGe;->b0(Landroid/view/View;)I
+    invoke-static {p1}, LfYe;->g0(Landroid/view/View;)I
 
     .line 7
     .line 8
@@ -584,7 +585,7 @@
     move-result v2
 
     .line 14
-    invoke-static {p1}, LLZj;->C(Landroid/view/View;)I
+    invoke-static {p1}, LDz9;->F(Landroid/view/View;)I
 
     .line 15
     .line 16
@@ -595,7 +596,7 @@
     add-int/2addr v3, v2
 
     .line 19
-    invoke-static {p1}, LLZj;->v(Landroid/view/View;)I
+    invoke-static {p1}, LDz9;->v(Landroid/view/View;)I
 
     .line 20
     .line 21
@@ -614,16 +615,16 @@
     return-void
 .end method
 
-.method public final n1(IIZZ)Landroid/view/View;
+.method public final s1(IIZZ)Landroid/view/View;
     .locals 8
 
     .line 1
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->h1()V
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->m1()V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, LwGe;->a0()I
+    invoke-virtual {p0}, LfYe;->f0()I
 
     .line 5
     .line 6
@@ -631,7 +632,7 @@
     move-result v0
 
     .line 8
-    iget v1, p0, LwGe;->p:I
+    iget v1, p0, LfYe;->p:I
 
     .line 9
     .line 10
@@ -659,7 +660,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p0, p1}, LwGe;->H(I)Landroid/view/View;
+    invoke-virtual {p0, p1}, LfYe;->M(I)Landroid/view/View;
 
     .line 19
     .line 20
@@ -679,11 +680,11 @@
     move-result-object v5
 
     .line 28
-    check-cast v5, LxGe;
+    check-cast v5, LgYe;
 
     .line 29
     .line 30
-    invoke-static {v4}, LwGe;->R(Landroid/view/View;)I
+    invoke-static {v4}, LfYe;->W(Landroid/view/View;)I
 
     .line 31
     .line 32
@@ -698,7 +699,7 @@
     sub-int/2addr v6, v7
 
     .line 37
-    invoke-static {v4}, LwGe;->M(Landroid/view/View;)I
+    invoke-static {v4}, LfYe;->R(Landroid/view/View;)I
 
     .line 38
     .line 39
@@ -768,7 +769,7 @@
     return-object v3
 .end method
 
-.method public final o1(LHGe;ZZ)Landroid/view/View;
+.method public final t1(LqYe;ZZ)Landroid/view/View;
     .locals 16
 
     .line 1
@@ -776,12 +777,12 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->h1()V
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->m1()V
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {v0}, LwGe;->I()I
+    invoke-virtual {v0}, LfYe;->N()I
 
     .line 7
     .line 8
@@ -799,7 +800,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v0}, LwGe;->I()I
+    invoke-virtual {v0}, LfYe;->N()I
 
     .line 15
     .line 16
@@ -830,7 +831,7 @@
 
     .line 25
     :goto_0
-    invoke-virtual/range {p1 .. p1}, LHGe;->b()I
+    invoke-virtual/range {p1 .. p1}, LqYe;->b()I
 
     .line 26
     .line 27
@@ -838,11 +839,11 @@
     move-result v6
 
     .line 29
-    iget-object v7, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lv4d;
+    iget-object v7, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lqjd;
 
     .line 30
     .line 31
-    invoke-virtual {v7}, Lv4d;->j()I
+    invoke-virtual {v7}, Lqjd;->j()I
 
     .line 32
     .line 33
@@ -850,11 +851,11 @@
     move-result v7
 
     .line 35
-    iget-object v8, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lv4d;
+    iget-object v8, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lqjd;
 
     .line 36
     .line 37
-    invoke-virtual {v8}, Lv4d;->g()I
+    invoke-virtual {v8}, Lqjd;->g()I
 
     .line 38
     .line 39
@@ -862,11 +863,11 @@
     move-result v8
 
     .line 41
-    iget-object v9, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lv4d;
+    iget-object v9, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lqjd;
 
     .line 42
     .line 43
-    invoke-virtual {v9}, Lv4d;->l()I
+    invoke-virtual {v9}, Lqjd;->l()I
 
     .line 44
     .line 45
@@ -891,7 +892,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {v0, v1}, LwGe;->H(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, LfYe;->M(I)Landroid/view/View;
 
     .line 54
     .line 55
@@ -903,7 +904,7 @@
 
     .line 58
     .line 59
-    invoke-static {v12}, LwGe;->b0(Landroid/view/View;)I
+    invoke-static {v12}, LfYe;->g0(Landroid/view/View;)I
 
     .line 60
     .line 61
@@ -911,11 +912,11 @@
     move-result v13
 
     .line 63
-    iget-object v14, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lv4d;
+    iget-object v14, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lqjd;
 
     .line 64
     .line 65
-    invoke-virtual {v14, v12}, Lv4d;->e(Landroid/view/View;)I
+    invoke-virtual {v14, v12}, Lqjd;->e(Landroid/view/View;)I
 
     .line 66
     .line 67
@@ -923,11 +924,11 @@
     move-result v14
 
     .line 69
-    iget-object v15, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lv4d;
+    iget-object v15, v0, Landroidx/recyclerview/widget/CustomLinearLayoutManager;->s:Lqjd;
 
     .line 70
     .line 71
-    invoke-virtual {v15, v12}, Lv4d;->b(Landroid/view/View;)I
+    invoke-virtual {v15, v12}, Lqjd;->b(Landroid/view/View;)I
 
     .line 72
     .line 73
@@ -951,15 +952,15 @@
     move-result-object v13
 
     .line 83
-    check-cast v13, LxGe;
+    check-cast v13, LgYe;
 
     .line 84
     .line 85
-    iget-object v13, v13, LxGe;->a:LJGe;
+    iget-object v13, v13, LgYe;->a:LsYe;
 
     .line 86
     .line 87
-    invoke-virtual {v13}, LJGe;->j()Z
+    invoke-virtual {v13}, LsYe;->j()Z
 
     .line 88
     .line 89

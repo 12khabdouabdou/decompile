@@ -8,7 +8,7 @@
 .implements Lio/reactivex/rxjava3/core/MaybeObserver;
 .implements Lio/reactivex/rxjava3/core/SingleObserver;
 .implements Lio/reactivex/rxjava3/core/CompletableObserver;
-.implements Lc7i;
+.implements Ltvi;
 .implements Lio/reactivex/rxjava3/disposables/Disposable;
 
 
@@ -31,7 +31,7 @@
         "Ljava/lang/Object;",
         ">;",
         "Lio/reactivex/rxjava3/core/CompletableObserver;",
-        "Lc7i;",
+        "Ltvi;",
         "Lio/reactivex/rxjava3/disposables/Disposable;"
     }
 .end annotation
@@ -134,19 +134,19 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final cancel()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final d()Z
     .locals 1
 
     .line 1
     const/4 v0, 0x1
 
     return v0
-.end method
-
-.method public final cancel()V
-    .locals 0
-
-    return-void
 .end method
 
 .method public final dispose()V
@@ -186,20 +186,20 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
-    .locals 0
-
-    .line 2
-    invoke-interface {p1}, Lc7i;->cancel()V
-
-    return-void
-.end method
-
 .method public final onSubscribe(Lio/reactivex/rxjava3/disposables/Disposable;)V
     .locals 0
 
     .line 1
     invoke-interface {p1}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    return-void
+.end method
+
+.method public final onSubscribe(Ltvi;)V
+    .locals 0
+
+    .line 2
+    invoke-interface {p1}, Ltvi;->cancel()V
 
     return-void
 .end method

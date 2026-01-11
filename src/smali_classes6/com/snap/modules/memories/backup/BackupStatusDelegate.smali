@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LlH0;
+    proxyClass = LeK0;
     schema = "\'onBackupSummaryChanged\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupSummary;

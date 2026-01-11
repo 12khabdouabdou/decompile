@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LqY8;
-    schema = "\'getBoolAsyncFor\':f|m|(d, b, f(b@)),\'setBoolConfirmedFor\':f|m|(d, b, f(b@)),\'setBoolSpeculativeFor\':f|m|(d, b),\'observeBool\':f|m|(d): g<c>:\'[0]\'<b@>,\'getIntAsyncFor\':f|m|(d, d, f(d@)),\'setIntConfirmedFor\':f|m|(d, d, f(b@)),\'setIntSpeculativeFor\':f|m|(d, d),\'observeInt\':f|m|(d): g<c>:\'[0]\'<d@>,\'getStringAsyncFor\':f|m|(d, s, f(s)),\'setStringConfirmedFor\':f|m|(d, s, f(b@)),\'setStringSpeculativeFor\':f|m|(d, s),\'observeString\':f|m|(d): g<c>:\'[0]\'<s>"
+    proxyClass = LY59;
+    schema = "\'getBoolAsyncFor\':f|m|(d, b, f(b@)),\'setBoolConfirmedFor\':f|m|(d, b, f(b@)),\'setBoolSpeculativeFor\':f|m|(d, b),\'observeBool\':f|m|(d, b): g<c>:\'[0]\'<b@>,\'getIntAsyncFor\':f|m|(d, d, f(d@)),\'setIntConfirmedFor\':f|m|(d, d, f(b@)),\'setIntSpeculativeFor\':f|m|(d, d),\'observeInt\':f|m|(d, d): g<c>:\'[0]\'<d@>,\'getStringAsyncFor\':f|m|(d, s, f(s)),\'setStringConfirmedFor\':f|m|(d, s, f(b@)),\'setStringSpeculativeFor\':f|m|(d, s),\'observeString\':f|m|(d, s): g<c>:\'[0]\'<s>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
@@ -49,10 +49,10 @@
     .end annotation
 .end method
 
-.method public abstract observeBool(D)Lcom/snap/composer/bridge_observables/BridgeObservable;
+.method public abstract observeBool(DZ)Lcom/snap/composer/bridge_observables/BridgeObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(D)",
+            "(DZ)",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/lang/Boolean;",
             ">;"
@@ -60,10 +60,10 @@
     .end annotation
 .end method
 
-.method public abstract observeInt(D)Lcom/snap/composer/bridge_observables/BridgeObservable;
+.method public abstract observeInt(DD)Lcom/snap/composer/bridge_observables/BridgeObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(D)",
+            "(DD)",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/lang/Double;",
             ">;"
@@ -71,10 +71,12 @@
     .end annotation
 .end method
 
-.method public abstract observeString(D)Lcom/snap/composer/bridge_observables/BridgeObservable;
+.method public abstract observeString(DLjava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(D)",
+            "(D",
+            "Ljava/lang/String;",
+            ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/lang/String;",
             ">;"

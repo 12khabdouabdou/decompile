@@ -1,91 +1,39 @@
-.class public abstract synthetic LKEe;
-.super Ljava/lang/Object;
+.class public final LKEe;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'userId\':s,\'avatarId\':s?"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _avatarId:Ljava/lang/String;
+
+.field private _userId:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
-
     .line 3
     .line 4
-    .line 5
-    move-result-object v1
+    iput-object p1, p0, LKEe;->_userId:Ljava/lang/String;
 
+    .line 5
     .line 6
-    array-length v1, v1
+    iput-object p2, p0, LKEe;->_avatarId:Ljava/lang/String;
 
     .line 7
-    new-array v1, v1, [I
-
     .line 8
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    :try_start_0
-    aput v2, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 11
-    .line 12
-    :catch_0
-    const/4 v3, 0x0
-
-    .line 13
-    :try_start_1
-    aput v0, v1, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 14
-    .line 15
-    :catch_1
-    invoke-static {v0}, Llva;->M(I)[I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v1
-
-    .line 19
-    array-length v1, v1
-
-    .line 20
-    new-array v1, v1, [I
-
-    .line 21
-    .line 22
-    :try_start_2
-    aput v2, v1, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 23
-    .line 24
-    :catch_2
-    :try_start_3
-    aput v0, v1, v2
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 25
-    .line 26
-    :catch_3
-    sput-object v1, LKEe;->a:[I
-
-    .line 27
-    .line 28
     return-void
 .end method

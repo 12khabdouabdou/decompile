@@ -6,30 +6,30 @@
 # instance fields
 .field private final celebrity:Z
 
-.field private final gender:Lvb8;
+.field private final gender:LRh8;
 
 .field private final isEmotionsDisabled:Z
 
 .field private final targetId:Ljava/lang/String;
 
-.field private final targetInstanceWrapper:Ltni;
+.field private final targetInstanceWrapper:LlMi;
 
 
 # direct methods
-.method public constructor <init>(Ltni;Ljava/lang/String;Lvb8;ZZ)V
+.method public constructor <init>(LlMi;Ljava/lang/String;LRh8;ZZ)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iput-object p1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
     .line 3
     iput-object p2, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetId:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iput-object p3, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
     .line 5
     iput-boolean p4, p0, Lapp/aifactory/base/models/dto/NativeTarget;->celebrity:Z
@@ -40,7 +40,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ltni;Ljava/lang/String;Lvb8;ZZILHr5;)V
+.method public synthetic constructor <init>(LlMi;Ljava/lang/String;LRh8;ZZILex5;)V
     .locals 6
 
     and-int/lit8 p7, p6, 0x4
@@ -48,7 +48,7 @@
     if-eqz p7, :cond_0
 
     .line 7
-    sget-object p3, Lvb8;->a:Lvb8;
+    sget-object p3, LRh8;->a:LRh8;
 
     :cond_0
     move-object v3, p3
@@ -89,12 +89,12 @@
 
     .line 8
     :goto_2
-    invoke-direct/range {v0 .. v5}, Lapp/aifactory/base/models/dto/NativeTarget;-><init>(Ltni;Ljava/lang/String;Lvb8;ZZ)V
+    invoke-direct/range {v0 .. v5}, Lapp/aifactory/base/models/dto/NativeTarget;-><init>(LlMi;Ljava/lang/String;LRh8;ZZ)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Lapp/aifactory/base/models/dto/NativeTarget;Ltni;Ljava/lang/String;Lvb8;ZZILjava/lang/Object;)Lapp/aifactory/base/models/dto/NativeTarget;
+.method public static synthetic copy$default(Lapp/aifactory/base/models/dto/NativeTarget;LlMi;Ljava/lang/String;LRh8;ZZILjava/lang/Object;)Lapp/aifactory/base/models/dto/NativeTarget;
     .locals 0
 
     .line 1
@@ -106,7 +106,7 @@
 
     .line 4
     .line 5
-    iget-object p1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iget-object p1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
     .line 6
     .line 7
@@ -132,7 +132,7 @@
 
     .line 16
     .line 17
-    iget-object p3, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iget-object p3, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
     .line 18
     .line 19
@@ -181,7 +181,7 @@
     move-object p3, p1
 
     .line 37
-    invoke-virtual/range {p2 .. p7}, Lapp/aifactory/base/models/dto/NativeTarget;->copy(Ltni;Ljava/lang/String;Lvb8;ZZ)Lapp/aifactory/base/models/dto/NativeTarget;
+    invoke-virtual/range {p2 .. p7}, Lapp/aifactory/base/models/dto/NativeTarget;->copy(LlMi;Ljava/lang/String;LRh8;ZZ)Lapp/aifactory/base/models/dto/NativeTarget;
 
     .line 38
     .line 39
@@ -194,11 +194,11 @@
 
 
 # virtual methods
-.method public final component1()Ltni;
+.method public final component1()LlMi;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
     .line 2
     .line 3
@@ -213,11 +213,11 @@
     return-object v0
 .end method
 
-.method public final component3()Lvb8;
+.method public final component3()LRh8;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
     .line 2
     .line 3
@@ -240,7 +240,7 @@
     return v0
 .end method
 
-.method public final copy(Ltni;Ljava/lang/String;Lvb8;ZZ)Lapp/aifactory/base/models/dto/NativeTarget;
+.method public final copy(LlMi;Ljava/lang/String;LRh8;ZZ)Lapp/aifactory/base/models/dto/NativeTarget;
     .locals 6
 
     .line 1
@@ -263,7 +263,7 @@
     move v5, p5
 
     .line 8
-    invoke-direct/range {v0 .. v5}, Lapp/aifactory/base/models/dto/NativeTarget;-><init>(Ltni;Ljava/lang/String;Lvb8;ZZ)V
+    invoke-direct/range {v0 .. v5}, Lapp/aifactory/base/models/dto/NativeTarget;-><init>(LlMi;Ljava/lang/String;LRh8;ZZ)V
 
     .line 9
     .line 10
@@ -292,11 +292,11 @@
     :cond_1
     check-cast p1, Lapp/aifactory/base/models/dto/NativeTarget;
 
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
-    iget-object v3, p1, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iget-object v3, p1, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -309,7 +309,7 @@
 
     iget-object v3, p1, Lapp/aifactory/base/models/dto/NativeTarget;->targetId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -318,9 +318,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
-    iget-object v3, p1, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iget-object v3, p1, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
     if-eq v1, v3, :cond_4
 
@@ -359,11 +359,11 @@
     return v0
 .end method
 
-.method public final getGender()Lvb8;
+.method public final getGender()LRh8;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
     .line 2
     .line 3
@@ -381,11 +381,11 @@
     return-object v0
 .end method
 
-.method public final getTargetInstanceWrapper()Ltni;
+.method public final getTargetInstanceWrapper()LlMi;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
     .line 2
     .line 3
@@ -396,7 +396,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
     .line 2
     .line 3
@@ -420,7 +420,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 14
     .line 15
@@ -428,7 +428,7 @@
     move-result v0
 
     .line 17
-    iget-object v2, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iget-object v2, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
     .line 18
     .line 19
@@ -519,7 +519,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:Ltni;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->targetInstanceWrapper:LlMi;
 
     .line 9
     .line 10
@@ -555,7 +555,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:Lvb8;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/NativeTarget;->gender:LRh8;
 
     .line 29
     .line 30
@@ -599,7 +599,7 @@
 
     .line 51
     .line 52
-    invoke-static {v0, v1, v2}, LmG8;->q(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LBv7;->r(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 53
     .line 54

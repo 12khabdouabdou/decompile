@@ -1,72 +1,126 @@
-.class public final synthetic LWs5;
-.super Lj28;
+.class public final LWs5;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lkotlin/jvm/functions/Function0;
 
 
-# static fields
-.field public static final f0:LWs5;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public synthetic constructor <init>(Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LWs5;
+    iput p2, p0, LWs5;->a:I
 
-    .line 2
-    .line 3
-    const-string v5, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;)V"
+    iput-object p1, p0, LWs5;->b:Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;
 
-    .line 4
-    .line 5
-    const/4 v2, 0x0
+    const/4 p1, 0x0
 
-    .line 6
-    const/4 v1, 0x1
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 7
-    const-class v3, Lnz5;
-
-    .line 8
-    .line 9
-    const-string v4, "<init>"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, LWs5;->f0:LWs5;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final d()Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, LAC5;
+    iget v0, p0, LWs5;->a:I
 
     .line 2
     .line 3
-    new-instance v0, Lnz5;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, p1}, Lnz5;-><init>(LAC5;)V
-
     .line 6
+    iget-object v0, p0, LWs5;->b:Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;
+
     .line 7
     .line 8
+    const v1, 0x7f0b0cbd
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Lcom/snap/framework/ui/views/TriangleView;
+
+    .line 16
+    .line 17
     return-object v0
+
+    .line 18
+    :pswitch_0
+    new-instance v0, LzWd;
+
+    .line 19
+    .line 20
+    iget-object v1, p0, LWs5;->b:Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;
+
+    .line 21
+    .line 22
+    invoke-direct {v0, v1}, LzWd;-><init>(Landroid/view/ViewGroup;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-object v0
+
+    .line 26
+    :pswitch_1
+    iget-object v0, p0, LWs5;->b:Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;
+
+    .line 27
+    .line 28
+    iget-object v0, v0, Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;->t:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 29
+    .line 30
+    return-object v0
+
+    .line 31
+    :pswitch_2
+    iget-object v0, p0, LWs5;->b:Lcom/snap/lenses/bitmoji/DefaultBitmojiPopupView;
+
+    .line 32
+    .line 33
+    const v1, 0x7f0b06f1
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    return-object v0
+
+    .line 41
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

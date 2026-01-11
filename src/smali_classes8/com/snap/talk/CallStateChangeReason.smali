@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'CALLING_REJECTED\':0,\'CALLING_TIMED_OUT\':1,\'RINGING_ENDED\':2,\'JOIN_CALL_ALREADY_ENDED\':3,\'CONNECTION_FAILED\':4,\'CONNECTION_FAILED_UNREACHABLE\':5"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

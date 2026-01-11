@@ -3,42 +3,16 @@
 .source "SourceFile"
 
 
-# static fields
-.field public static final c:LPta;
-
-
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:LQta;
 
 .field public final b:Ljava/lang/String;
 
+.field public final c:Ljava/lang/String;
+
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, LPta;
-
-    .line 2
-    .line 3
-    const-string v1, ""
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1, v1}, LPta;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, LPta;->c:LPta;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(LQta;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -47,7 +21,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LPta;->a:Ljava/lang/String;
+    iput-object p1, p0, LPta;->a:LQta;
 
     .line 5
     .line 6
@@ -55,6 +29,10 @@
 
     .line 7
     .line 8
+    iput-object p3, p0, LPta;->c:Ljava/lang/String;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -94,66 +72,82 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, LPta;->a:Ljava/lang/String;
+    iget-object v1, p1, LPta;->a:LQta;
 
     .line 14
     .line 15
-    iget-object v3, p0, LPta;->a:Ljava/lang/String;
+    iget-object v3, p0, LPta;->a:LQta;
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eq v3, v1, :cond_2
 
     .line 18
     .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
     return v2
 
-    .line 24
+    .line 20
     :cond_2
     iget-object v1, p0, LPta;->b:Ljava/lang/String;
 
+    .line 21
+    .line 22
+    iget-object v3, p1, LPta;->b:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 25
     .line 26
-    iget-object p1, p1, LPta;->b:Ljava/lang/String;
-
     .line 27
+    move-result v1
+
     .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-nez v1, :cond_3
 
     .line 29
     .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
     return v2
 
-    .line 35
+    .line 31
     :cond_3
+    iget-object v1, p0, LPta;->c:Ljava/lang/String;
+
+    .line 32
+    .line 33
+    iget-object p1, p1, LPta;->c:Ljava/lang/String;
+
+    .line 34
+    .line 35
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result p1
+
+    .line 39
+    if-nez p1, :cond_4
+
+    .line 40
+    .line 41
+    return v2
+
+    .line 42
+    :cond_4
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LPta;->a:Ljava/lang/String;
+    iget-object v0, p0, LPta;->a:LQta;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
@@ -161,25 +155,41 @@
     move-result v0
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    const/16 v1, 0x1f
 
     .line 8
     .line 9
-    iget-object v1, p0, LPta;->b:Ljava/lang/String;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 10
     .line 11
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    iget-object v2, p0, LPta;->b:Ljava/lang/String;
 
     .line 12
     .line 13
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
+
     .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    iget-object v1, p0, LPta;->c:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 20
+    .line 21
+    .line 22
     move-result v1
 
-    .line 15
+    .line 23
     add-int/2addr v1, v0
 
-    .line 16
+    .line 24
     return v1
 .end method
 
@@ -191,7 +201,7 @@
 
     .line 2
     .line 3
-    const-string v1, "ViewModel(errorText="
+    const-string v1, "ProcessingRequestData(state="
 
     .line 4
     .line 5
@@ -200,16 +210,16 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LPta;->a:Ljava/lang/String;
+    iget-object v1, p0, LPta;->a:LQta;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", errorDescription="
+    const-string v1, ", prompt="
 
     .line 14
     .line 15
@@ -222,17 +232,35 @@
 
     .line 19
     .line 20
-    const-string v2, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
     .line 23
+    const-string v1, ", imageBoltUrl="
+
     .line 24
     .line 25
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LPta;->c:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    const-string v2, ")"
+
+    .line 31
+    .line 32
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
     return-object v0
 .end method

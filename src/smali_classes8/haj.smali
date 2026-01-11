@@ -1,44 +1,61 @@
 .class public final Lhaj;
-.super Lan0;
+.super Lmk6;
 .source "SourceFile"
 
 
-# static fields
-.field public static final Z:Lhaj;
+# instance fields
+.field public final h:Lw9j;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Louk;Lw9j;)V
+    .locals 8
 
     .line 1
-    new-instance v0, Lhaj;
+    sget-object v6, Lsk6;->X:Lsk6;
 
     .line 2
     .line 3
-    sget-object v1, LEy9;->O0:LEy9;
+    new-instance v7, Lpk6;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v0, 0x2
 
     .line 6
-    const/16 v3, 0x1c
+    invoke-direct {v7, v0}, Lpk6;-><init>(I)V
 
     .line 7
     .line 8
-    const-string v4, "Unlockables"
-
     .line 9
+    const/4 v4, 0x1
+
     .line 10
-    invoke-direct {v0, v4, v1, v2, v3}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
+    const/4 v5, 0x1
 
     .line 11
+    const/16 v1, 0xeb
+
     .line 12
     .line 13
-    sput-object v0, Lhaj;->Z:Lhaj;
+    const-string v2, "topic_page_community_snaps"
 
     .line 14
     .line 15
+    move-object v0, p0
+
+    .line 16
+    move-object v3, p1
+
+    .line 17
+    invoke-direct/range {v0 .. v7}, Lmk6;-><init>(ILjava/lang/String;Louk;ZZLsk6;Lpk6;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object p2, v0, Lhaj;->h:Lw9j;
+
+    .line 21
+    .line 22
     return-void
 .end method

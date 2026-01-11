@@ -1,14 +1,18 @@
 .class public final LWK7;
-.super LVK7;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ly5d;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'capturePhoto\':f()"
+    typeReferences = {}
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ly5d;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -17,9 +21,5 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LWK7;->a:Ly5d;
-
-    .line 5
-    .line 6
     return-void
 .end method

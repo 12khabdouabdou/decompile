@@ -1,5 +1,5 @@
 .class public final Lor2;
-.super Lpr2;
+.super Lqr2;
 .source "SourceFile"
 
 

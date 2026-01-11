@@ -2,13 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LKv3;
+
 
 # instance fields
-.field public final synthetic a:LDS4;
+.field public final a:LNQ4;
+
+.field public final b:Lz45;
 
 
 # direct methods
-.method public constructor <init>(LDS4;)V
+.method public constructor <init>(Lz45;LNQ4;)V
     .locals 0
 
     .line 1
@@ -17,9 +22,13 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LrU4;->a:LDS4;
+    iput-object p2, p0, LrU4;->a:LNQ4;
 
     .line 5
     .line 6
+    iput-object p1, p0, LrU4;->b:Lz45;
+
+    .line 7
+    .line 8
     return-void
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LCq6;
+.implements LQt6;
 
 
 # annotations

@@ -1,49 +1,49 @@
-.class public final LIW;
+.class public abstract LIW;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LXC9;
 
-
-# instance fields
-.field final synthetic a:LJW;
+# static fields
+.field public static final a:Ljava/util/HashSet;
 
 
 # direct methods
-.method public constructor <init>(LLH;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ljava/util/HashSet;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LIW;->a:LJW;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final e(Landroid/view/KeyEvent;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LIW;->a:LJW;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LJW;->b(Landroid/view/KeyEvent;)Z
+    sget-object v1, LFlk;->a:Lcmk;
 
     .line 4
     .line 5
-    .line 6
-    move-result p1
+    invoke-interface {v1}, Lcmk;->g()[Ljava/lang/String;
 
+    .line 6
     .line 7
-    return p1
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    .line 14
+    .line 15
+    .line 16
+    sput-object v0, LIW;->a:Ljava/util/HashSet;
+
+    .line 17
+    .line 18
+    return-void
 .end method

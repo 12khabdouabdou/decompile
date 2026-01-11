@@ -1,166 +1,484 @@
 .class public final LyXc;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lio/reactivex/rxjava3/disposables/Disposable;
+
+
+# static fields
+.field public static final l0:Ljava/util/LinkedHashMap;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public X:Ljava/lang/String;
 
-.field public final synthetic b:Landroid/graphics/Canvas;
+.field public Y:Ljava/lang/String;
+
+.field public Z:Ljava/lang/String;
+
+.field public final a:LS2i;
+
+.field public final b:LwMf;
+
+.field public final c:LWYe;
+
+.field public e0:Lcom/snapcv/scan/Scan;
+
+.field public f0:I
+
+.field public g0:Z
+
+.field public h0:Z
+
+.field public final i0:Ljava/lang/Object;
+
+.field public final j0:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final k0:Ljava/util/concurrent/atomic/AtomicInteger;
+
+.field public final t:LWYe;
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/graphics/Canvas;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p2, p0, LyXc;->a:I
+    new-instance v0, Ljava/util/LinkedHashMap;
 
-    iput-object p1, p0, LyXc;->b:Landroid/graphics/Canvas;
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    const/4 p1, 0x1
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LyXc;->l0:Ljava/util/LinkedHashMap;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 7
+    .line 8
+    return-void
+.end method
 
+.method public constructor <init>(LS2i;LwMf;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LyXc;->a:LS2i;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LyXc;->b:LwMf;
+
+    .line 7
+    .line 8
+    sget-object p1, LCxd;->Z:LCxd;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p2, "DefaultODINModel:ODINExecutor"
+
+    .line 14
+    .line 15
+    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 16
+    .line 17
+    .line 18
+    sget-object p2, LJp0;->a:LJp0;
+
+    .line 19
+    .line 20
+    new-instance p2, Lnp0;
+
+    .line 21
+    .line 22
+    const-string v0, "ODINExecutor"
+
+    .line 23
+    .line 24
+    invoke-direct {p2, p1, v0}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    new-instance p1, LnJe;
+
+    .line 28
+    .line 29
+    invoke-direct {p1, p2}, LnJe;-><init>(Lnp0;)V
+
+    .line 30
+    .line 31
+    .line 32
+    const/4 p2, 0x1
+
+    .line 33
+    invoke-virtual {p1, p2}, LnJe;->a(I)LWYe;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    iput-object v0, p0, LyXc;->c:LWYe;
+
+    .line 38
+    .line 39
+    invoke-virtual {p1}, LnJe;->m()LA36;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    invoke-static {p1, p2}, LYh7;->d0(Lio/reactivex/rxjava3/core/Scheduler;I)LWYe;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    iput-object p1, p0, LyXc;->t:LWYe;
+
+    .line 48
+    .line 49
+    new-instance p1, Ljava/lang/Object;
+
+    .line 50
+    .line 51
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
+
+    .line 52
+    .line 53
+    .line 54
+    iput-object p1, p0, LyXc;->i0:Ljava/lang/Object;
+
+    .line 55
+    .line 56
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 57
+    .line 58
+    const/4 p2, 0x0
+
+    .line 59
+    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 60
+    .line 61
+    .line 62
+    iput-object p1, p0, LyXc;->j0:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 63
+    .line 64
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 65
+    .line 66
+    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    .line 67
+    .line 68
+    .line 69
+    iput-object p1, p0, LyXc;->k0:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 70
+    .line 71
+    return-void
+.end method
+
+.method public static final a(LyXc;)V
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, LyXc;->b()Lcom/snapcv/scan/Scan;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lcom/snapcv/scan/Scan;->g()Lcom/snapcv/scan/StatMetric;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    iget-wide v0, v0, Lcom/snapcv/scan/StatMetric;->mean:D
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, LyXc;->b()Lcom/snapcv/scan/Scan;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    invoke-virtual {v2}, Lcom/snapcv/scan/Scan;->f()Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v2
+
+    .line 19
+    new-instance v3, LUxd;
+
+    .line 20
+    .line 21
+    sget-object v4, LQ7c;->a:LQ7c;
+
+    .line 22
+    .line 23
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    const-string v1, "overall_value"
+
+    .line 28
+    .line 29
+    invoke-static {v1, v0}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    const-string v1, "Raw metrics"
+
+    .line 34
+    .line 35
+    invoke-static {v1, v2}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v1
+
+    .line 39
+    invoke-direct {v3, v4, v0, v1}, LUxd;-><init>(LQ7c;Ljava/util/Map;Ljava/util/Map;)V
+
+    .line 40
+    .line 41
+    .line 42
+    iget-object p0, p0, LyXc;->b:LwMf;
+
+    .line 43
+    .line 44
+    check-cast p0, LIT5;
+
+    .line 45
+    .line 46
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 47
+    .line 48
+    .line 49
+    sget-object p0, LIT5;->a:Ljava/util/LinkedHashMap;
+
+    .line 50
+    .line 51
+    const-string v0, "odin_inference_latency_us"
+
+    .line 52
+    .line 53
+    invoke-interface {p0, v0, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    .line 56
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final b()Lcom/snapcv/scan/Scan;
+    .locals 1
 
     .line 1
-    iget v0, p0, LyXc;->a:I
+    iget-object v0, p0, LyXc;->e0:Lcom/snapcv/scan/Scan;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "scan"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyXc;->j0:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, LoG9;
+    move-result v0
 
     .line 7
+    return v0
+.end method
+
+.method public final dispose()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LyXc;->k0:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_1
+
     .line 8
-    iget-object p1, p1, LoG9;->c:LvWc;
-
     .line 9
-    .line 10
-    iget-object v0, p0, LyXc;->b:Landroid/graphics/Canvas;
+    iget-object v0, p0, LyXc;->i0:Ljava/lang/Object;
 
+    .line 10
     .line 11
+    monitor-enter v0
+
     .line 12
-    const/4 v1, 0x2
+    :try_start_0
+    sget-object v1, LyXc;->l0:Ljava/util/LinkedHashMap;
 
     .line 13
-    invoke-virtual {p1, v0, v1}, LQG9;->x(Landroid/graphics/Canvas;I)V
-
     .line 14
+    iget-object v2, p0, LyXc;->Z:Ljava/lang/String;
+
     .line 15
     .line 16
-    sget-object p1, Li7j;->a:Li7j;
+    if-eqz v2, :cond_0
 
     .line 17
     .line 18
-    return-object p1
+    invoke-interface {v1, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
-    :pswitch_0
-    check-cast p1, LoG9;
-
     .line 20
     .line 21
-    iget v0, p1, LoG9;->j:I
+    invoke-virtual {p0}, LyXc;->b()Lcom/snapcv/scan/Scan;
 
     .line 22
     .line 23
-    const/4 v1, 0x1
-
     .line 24
-    if-eq v0, v1, :cond_0
+    move-result-object v1
 
     .line 25
-    .line 26
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+    invoke-virtual {v1}, Lcom/snapcv/scan/Scan;->close()V
 
+    .line 26
     .line 27
     .line 28
-    goto :goto_0
+    iget-object v1, p0, LyXc;->j0:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 29
-    :cond_0
-    iget-object v0, p0, LyXc;->b:Landroid/graphics/Canvas;
-
     .line 30
+    const/4 v2, 0x1
+
     .line 31
-    iget-object p1, p1, LoG9;->c:LvWc;
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 32
     .line 33
-    invoke-virtual {p1, v0}, LQG9;->z(Landroid/graphics/Canvas;)Lio/reactivex/rxjava3/core/Completable;
-
     .line 34
+    monitor-exit v0
+
     .line 35
+    return-void
+
     .line 36
-    move-result-object p1
+    :catchall_0
+    move-exception v1
 
     .line 37
-    :goto_0
-    return-object p1
+    goto :goto_0
 
     .line 38
-    :pswitch_1
-    check-cast p1, LoG9;
+    :cond_0
+    :try_start_1
+    const-string v1, "modelPath"
 
     .line 39
     .line 40
-    iget v0, p1, LoG9;->j:I
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 41
     .line 42
-    const/4 v1, 0x1
-
     .line 43
-    if-eq v0, v1, :cond_1
+    const/4 v1, 0x0
 
     .line 44
+    throw v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 45
-    goto :goto_1
+    :goto_0
+    monitor-exit v0
 
     .line 46
-    :cond_1
-    iget-object v0, p0, LyXc;->b:Landroid/graphics/Canvas;
+    throw v1
 
     .line 47
-    .line 48
-    iget-object p1, p1, LoG9;->c:LvWc;
-
-    .line 49
-    .line 50
-    invoke-virtual {p1, v0, v1}, LQG9;->x(Landroid/graphics/Canvas;I)V
-
-    .line 51
-    .line 52
-    .line 53
-    :goto_1
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 54
-    .line 55
-    return-object p1
-
-    .line 56
-    nop
-
-    .line 57
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :cond_1
+    return-void
 .end method

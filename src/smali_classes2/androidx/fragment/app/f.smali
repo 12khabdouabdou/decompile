@@ -38,7 +38,7 @@
 
 .field public q:Z
 
-.field public r:LTG7;
+.field public r:LAM7;
 
 .field public s:Z
 

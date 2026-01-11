@@ -1,14 +1,14 @@
 .class public final LIM0;
-.super LLM0;
+.super LJM0;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/disposables/Disposable;
+.field public final a:Lio/reactivex/rxjava3/core/Single;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/disposables/Disposable;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Single;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LIM0;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    iput-object p1, p0, LIM0;->a:Lio/reactivex/rxjava3/core/Single;
 
     .line 5
     .line 6
@@ -26,19 +26,8 @@
 
 
 # virtual methods
-.method public final a()Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LIM0;->a:Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+    .locals 3
 
     .line 1
     const/4 v0, 0x1
@@ -56,43 +45,42 @@
 
     .line 6
     .line 7
-    if-nez v1, :cond_1
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    goto :goto_0
+    if-nez v1, :cond_1
 
+    .line 9
     .line 10
+    return v2
+
+    .line 11
     :cond_1
     check-cast p1, LIM0;
 
-    .line 11
     .line 12
-    iget-object p1, p1, LIM0;->a:Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 13
+    iget-object v1, p0, LIM0;->a:Lio/reactivex/rxjava3/core/Single;
+
     .line 14
-    iget-object v1, p0, LIM0;->a:Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 15
-    .line 16
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object p1, p1, LIM0;->a:Lio/reactivex/rxjava3/core/Single;
 
+    .line 16
     .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 18
     .line 19
+    .line 20
     move-result p1
 
-    .line 20
+    .line 21
     if-nez p1, :cond_2
 
-    .line 21
     .line 22
-    :goto_0
-    const/4 p1, 0x0
-
     .line 23
-    return p1
+    return v2
 
     .line 24
     :cond_2
@@ -103,25 +91,28 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, LIM0;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v0, p0, LIM0;->a:Lio/reactivex/rxjava3/core/Single;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    if-nez v0, :cond_0
 
     .line 4
     .line 5
+    const/4 v0, 0x0
+
     .line 6
-    move-result v0
+    return v0
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 8
     .line 9
-    add-int/lit16 v0, v0, 0x4d5
-
     .line 10
+    move-result v0
+
     .line 11
     return v0
 .end method
@@ -134,7 +125,7 @@
 
     .line 2
     .line 3
-    const-string v1, "PresentingResult(disposable="
+    const-string v1, "ExternalMediaFromRecovery(globalEdits="
 
     .line 4
     .line 5
@@ -143,7 +134,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LIM0;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v1, p0, LIM0;->a:Lio/reactivex/rxjava3/core/Single;
 
     .line 9
     .line 10
@@ -152,7 +143,7 @@
     .line 11
     .line 12
     .line 13
-    const-string v1, ", disable=false)"
+    const-string v1, ")"
 
     .line 14
     .line 15

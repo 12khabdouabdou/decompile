@@ -1,43 +1,42 @@
 .class public final LC7a;
-.super Ljava/lang/Object;
+.super LE7a;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lan0;
-
-.field public final b:Lnwf;
-
-.field public final c:Lkotlin/jvm/functions/Function1;
-
-.field public final d:LfZ0;
+# static fields
+.field public static final b:LC7a;
 
 
 # direct methods
-.method public constructor <init>(Lan0;Lnwf;Lkotlin/jvm/functions/Function1;LfZ0;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LC7a;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LC7a;->a:Lan0;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LC7a;->b:Lnwf;
+    sput-object v0, LC7a;->b:LC7a;
 
     .line 7
     .line 8
-    iput-object p3, p0, LC7a;->c:Lkotlin/jvm/functions/Function1;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LC7a;->d:LfZ0;
-
-    .line 11
-    .line 12
     return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic getType()Ljava/lang/Enum;
+    .locals 1
+
+    .line 1
+    sget-object v0, LD7a;->c:LD7a;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

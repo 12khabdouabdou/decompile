@@ -72,7 +72,7 @@
 
     .line 9
     .line 10
-    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableMergeWithCompletable$MergeWithSubscriber;->a:LV6i;
+    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableMergeWithCompletable$MergeWithSubscriber;->a:Lmvi;
 
     .line 11
     .line 12
@@ -92,7 +92,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(LV6i;)V
+    invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(Lmvi;)V
 
     .line 21
     .line 22
@@ -118,7 +118,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableMergeWithCompletable$MergeWithSubscriber;->a:LV6i;
+    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableMergeWithCompletable$MergeWithSubscriber;->a:Lmvi;
 
     .line 9
     .line 10
@@ -126,7 +126,7 @@
 
     .line 11
     .line 12
-    invoke-static {v1, p1, v0, v2}, Lio/reactivex/rxjava3/internal/util/HalfSerializer;->b(LV6i;Ljava/lang/Throwable;Ljava/util/concurrent/atomic/AtomicInteger;Lio/reactivex/rxjava3/internal/util/AtomicThrowable;)V
+    invoke-static {v1, p1, v0, v2}, Lio/reactivex/rxjava3/internal/util/HalfSerializer;->b(Lmvi;Ljava/lang/Throwable;Ljava/util/concurrent/atomic/AtomicInteger;Lio/reactivex/rxjava3/internal/util/AtomicThrowable;)V
 
     .line 13
     .line 14

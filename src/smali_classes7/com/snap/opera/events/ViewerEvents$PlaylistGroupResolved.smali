@@ -1,25 +1,25 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$PlaylistGroupResolved;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LOXc;
+.field public final b:LJcd;
 
 .field public final c:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(LOXc;Ljava/util/List;)V
+.method public constructor <init>(LJcd;Ljava/util/List;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$PlaylistGroupResolved;->b:LOXc;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$PlaylistGroupResolved;->b:LJcd;
 
     .line 5
     .line 6
@@ -55,7 +55,7 @@
 
     .line 9
     .line 10
-    invoke-static {v1, v3}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v3}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 11
     .line 12
@@ -97,11 +97,11 @@
     move-result-object v3
 
     .line 31
-    check-cast v3, LUXc;
+    check-cast v3, LPcd;
 
     .line 32
     .line 33
-    invoke-interface {v3}, LUXc;->getId()J
+    invoke-interface {v3}, LPcd;->getId()J
 
     .line 34
     .line 35
@@ -126,11 +126,11 @@
 
     .line 45
     :cond_0
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PlaylistGroupResolved;->b:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PlaylistGroupResolved;->b:LJcd;
 
     .line 46
     .line 47
-    invoke-interface {v1}, LOXc;->getId()Ljava/lang/String;
+    invoke-interface {v1}, LJcd;->getId()Ljava/lang/String;
 
     .line 48
     .line 49
@@ -158,7 +158,7 @@
 
     .line 60
     .line 61
-    invoke-static {v3, v1, v4, v0, v5}, LDM4;->u(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v1, v4, v0, v5}, Lve4;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 62
     .line 63

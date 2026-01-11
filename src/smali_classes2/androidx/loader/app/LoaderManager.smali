@@ -16,22 +16,22 @@
     return-void
 .end method
 
-.method public static a(Landroidx/lifecycle/LifecycleOwner;)LEta;
+.method public static a(Landroidx/lifecycle/LifecycleOwner;)LLFa;
     .locals 2
 
     .line 1
-    new-instance v0, LEta;
+    new-instance v0, LLFa;
 
     .line 2
     .line 3
     move-object v1, p0
 
     .line 4
-    check-cast v1, LOJj;
+    check-cast v1, Lr9k;
 
     .line 5
     .line 6
-    invoke-interface {v1}, LOJj;->getViewModelStore()Landroidx/lifecycle/ViewModelStore;
+    invoke-interface {v1}, Lr9k;->getViewModelStore()Landroidx/lifecycle/ViewModelStore;
 
     .line 7
     .line 8
@@ -39,7 +39,7 @@
     move-result-object v1
 
     .line 10
-    invoke-direct {v0, p0, v1}, LEta;-><init>(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/ViewModelStore;)V
+    invoke-direct {v0, p0, v1}, LLFa;-><init>(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/ViewModelStore;)V
 
     .line 11
     .line 12
@@ -49,5 +49,5 @@
 
 
 # virtual methods
-.method public abstract b(LXAj;)Lwe0;
+.method public abstract b(LvRj;)Lyg0;
 .end method

@@ -2,133 +2,169 @@
 .super Ljava/lang/Enum;
 .source "SourceFile"
 
+# interfaces
+.implements LUT6;
+
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Enum<",
         "LQJe;",
-        ">;"
+        ">;",
+        "LUT6;"
     }
 .end annotation
 
 
 # static fields
+.field public static final enum X:LQJe;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "REGENERATE"
+    .end annotation
+.end field
+
+.field public static final synthetic Y:[LQJe;
+
 .field public static final enum b:LQJe;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "pin"
+        value = "SEARCH"
     .end annotation
 .end field
 
 .field public static final enum c:LQJe;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "passphrase"
+        value = "PROMPT"
     .end annotation
 .end field
 
-.field public static final synthetic t:[LQJe;
+.field public static final enum t:LQJe;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "RANDOM"
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 9
 
     .line 1
     new-instance v0, LQJe;
 
     .line 2
     .line 3
-    const-string v1, "pin"
+    const-string v1, "SEARCH"
 
     .line 4
     .line 5
-    const-string v2, "PIN"
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2, v2}, LQJe;-><init>(Ljava/lang/String;II)V
+
     .line 7
-    const/4 v3, 0x0
-
     .line 8
-    invoke-direct {v0, v2, v3, v1}, LQJe;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
     .line 9
+    sput-object v0, LQJe;->b:LQJe;
+
     .line 10
     .line 11
-    sput-object v0, LQJe;->b:LQJe;
+    new-instance v1, LQJe;
 
     .line 12
     .line 13
-    new-instance v1, LQJe;
+    const-string v3, "PROMPT"
 
     .line 14
     .line 15
-    const-string v2, "passphrase"
+    const/4 v4, 0x1
 
     .line 16
-    .line 17
-    const-string v4, "PASSPHRASE"
+    invoke-direct {v1, v3, v4, v4}, LQJe;-><init>(Ljava/lang/String;II)V
 
+    .line 17
     .line 18
     .line 19
-    const/4 v5, 0x1
+    sput-object v1, LQJe;->c:LQJe;
 
     .line 20
-    invoke-direct {v1, v4, v5, v2}, LQJe;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
     .line 21
+    new-instance v3, LQJe;
+
     .line 22
     .line 23
-    sput-object v1, LQJe;->c:LQJe;
+    const-string v5, "RANDOM"
 
     .line 24
     .line 25
-    new-instance v2, LQJe;
-
-    .line 26
-    .line 27
-    const-string v4, "UNRECOGNIZED_VALUE"
-
-    .line 28
-    .line 29
     const/4 v6, 0x2
 
-    .line 30
-    invoke-direct {v2, v4, v6, v4}, LQJe;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    .line 26
+    invoke-direct {v3, v5, v6, v6}, LQJe;-><init>(Ljava/lang/String;II)V
 
+    .line 27
+    .line 28
+    .line 29
+    sput-object v3, LQJe;->t:LQJe;
+
+    .line 30
     .line 31
+    new-instance v5, LQJe;
+
     .line 32
     .line 33
-    const/4 v4, 0x3
+    const-string v7, "REGENERATE"
 
     .line 34
-    new-array v4, v4, [LQJe;
-
     .line 35
+    const/4 v8, 0x3
+
     .line 36
-    aput-object v0, v4, v3
+    invoke-direct {v5, v7, v8, v8}, LQJe;-><init>(Ljava/lang/String;II)V
 
     .line 37
     .line 38
-    aput-object v1, v4, v5
-
     .line 39
-    .line 40
-    aput-object v2, v4, v6
+    sput-object v5, LQJe;->X:LQJe;
 
+    .line 40
     .line 41
+    const/4 v7, 0x4
+
     .line 42
-    sput-object v4, LQJe;->t:[LQJe;
+    new-array v7, v7, [LQJe;
 
     .line 43
     .line 44
+    aput-object v0, v7, v2
+
+    .line 45
+    .line 46
+    aput-object v1, v7, v4
+
+    .line 47
+    .line 48
+    aput-object v3, v7, v6
+
+    .line 49
+    .line 50
+    aput-object v5, v7, v8
+
+    .line 51
+    .line 52
+    sput-object v7, LQJe;->Y:[LQJe;
+
+    .line 53
+    .line 54
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
 
     .line 1
@@ -137,7 +173,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p3, p0, LQJe;->a:Ljava/lang/String;
+    iput p3, p0, LQJe;->a:I
 
     .line 5
     .line 6
@@ -171,7 +207,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, LQJe;->t:[LQJe;
+    sget-object v0, LQJe;->Y:[LQJe;
 
     .line 2
     .line 3
@@ -192,13 +228,13 @@
 
 
 # virtual methods
-.method public final toString()Ljava/lang/String;
+.method public final a()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, LQJe;->a:Ljava/lang/String;
+    iget v0, p0, LQJe;->a:I
 
     .line 2
     .line 3
-    return-object v0
+    return v0
 .end method

@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LyCe;
+    proxyClass = LhUe;
     schema = "\'incomingFriendsWithActiveStatusObservable\':g<c>:\'[0]\'<a<r:\'[1]\'>>,\'suggestedFriendsWithActiveStatusObservable\':g<c>:\'[0]\'<a<r:\'[1]\'>>,\'recentlyActiveTextObservable\':g<c>:\'[0]\'<s>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LuCe;
+        LeUe;
     }
 .end annotation
 
@@ -25,7 +25,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LuCe;",
+            "LeUe;",
             ">;>;"
         }
     .end annotation
@@ -48,7 +48,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LuCe;",
+            "LeUe;",
             ">;>;"
         }
     .end annotation

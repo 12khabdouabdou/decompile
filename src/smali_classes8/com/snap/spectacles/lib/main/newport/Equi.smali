@@ -267,7 +267,7 @@
     .locals 1
 
     .line 1
-    new-instance p1, LJBc;
+    new-instance p1, LwQc;
 
     .line 2
     .line 3

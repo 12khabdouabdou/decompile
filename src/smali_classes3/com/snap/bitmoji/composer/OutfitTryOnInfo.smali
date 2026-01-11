@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bitmoji/composer/OutfitTryOnInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'friendAvatarId\':s?,\'costumeOverrideId\':t?,\'encodedOutfit\':s?,\'trackingId\':s?"
     typeReferences = {}

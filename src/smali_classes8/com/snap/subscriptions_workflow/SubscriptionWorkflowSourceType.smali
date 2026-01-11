@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'DiscoverActionSheet\':\'DISCOVER_ACTION_SHEET\',\'DiscoverPlaybackButton\':\'DISCOVER_PLAYBACK_BUTTON\',\'DiscoverPlaybackActionSheet\':\'DISCOVER_PLAYBACK_ACTION_SHEET\',\'PublicProfile\':\'PUBLIC_PROFILE\',\'PublicProfileActionSheet\':\'PUBLIC_PROFILE_ACTION_SHEET\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

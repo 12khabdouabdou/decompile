@@ -2,107 +2,135 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Liab;
 
-# instance fields
-.field public final a:LXfi;
 
-.field public final b:Landroid/os/Handler;
-
-.field public final c:LXfi;
+# static fields
+.field public static final a:Lhab;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lhab;
 
     .line 2
     .line 3
-    .line 4
-    new-instance v0, Lfab;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    const/4 v1, 0x1
+    sput-object v0, Lhab;->a:Lhab;
 
     .line 7
-    invoke-direct {v0, p0, v1}, Lfab;-><init>(Lhab;I)V
-
     .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ldqj;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    new-instance p1, LnT7;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, LnT7;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
+    .line 7
+    .line 8
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+
     .line 9
     .line 10
-    new-instance v1, LXfi;
+    .line 11
+    return-object v0
+.end method
+
+.method public final b(Ljava/util/ArrayList;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    new-instance p1, LnT7;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, LnT7;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
     .line 11
     .line 12
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
     .line 13
     .line 14
     .line 15
-    iput-object v1, p0, Lhab;->a:LXfi;
+    return-object v0
+.end method
 
-    .line 16
-    .line 17
-    new-instance v0, Landroid/os/Handler;
+.method public final c(Ljava/lang/String;Ljava/util/List;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 0
 
-    .line 18
-    .line 19
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    .line 1
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
 
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v1
+    .line 2
+    .line 3
+    return-object p1
+.end method
 
-    .line 23
-    check-cast v1, Landroid/os/HandlerThread;
+.method public final d(Ljava/util/List;)Lio/reactivex/rxjava3/core/Single;
+    .locals 1
 
-    .line 24
-    .line 25
-    invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
+    .line 1
+    new-instance p1, LnT7;
 
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v1
+    .line 2
+    .line 3
+    invoke-direct {p1}, LnT7;-><init>()V
 
-    .line 29
-    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
-    .line 30
-    .line 31
-    .line 32
-    iput-object v0, p0, Lhab;->b:Landroid/os/Handler;
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
 
-    .line 33
-    .line 34
-    new-instance v0, Lfab;
+    .line 10
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
-    .line 35
-    .line 36
-    const/4 v1, 0x0
+    .line 11
+    .line 12
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
-    .line 37
-    invoke-direct {v0, p0, v1}, Lfab;-><init>(Lhab;I)V
-
-    .line 38
-    .line 39
-    .line 40
-    new-instance v1, LXfi;
-
-    .line 41
-    .line 42
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 43
-    .line 44
-    .line 45
-    iput-object v1, p0, Lhab;->c:LXfi;
-
-    .line 46
-    .line 47
-    return-void
+    .line 13
+    .line 14
+    .line 15
+    return-object v0
 .end method

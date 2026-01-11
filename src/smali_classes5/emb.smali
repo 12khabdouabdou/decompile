@@ -2,33 +2,30 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LMT3;
-
 
 # instance fields
-.field public final X:Lkotlin/jvm/functions/Function2;
+.field public final a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public Y:Ljava/lang/IllegalStateException;
+.field public final b:Ljava/util/LinkedHashSet;
 
-.field public final Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public final c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final a:Landroid/net/Uri;
+.field public final d:Ljava/util/LinkedHashSet;
 
-.field public final b:LXmb;
+.field public e:Z
 
-.field public final c:Lzmb;
+.field public final f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final e0:LXfi;
+.field public g:Z
 
-.field public final f0:LXfi;
+.field public final h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final t:LWm0;
+.field public final i:Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
 
 
 # direct methods
-.method public constructor <init>(Landroid/net/Uri;LXmb;Lzmb;LWm0;Lkotlin/jvm/functions/Function2;)V
-    .locals 0
+.method public constructor <init>(LOF3;)V
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,539 +33,695 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lemb;->a:Landroid/net/Uri;
+    new-instance v0, LWlb;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lemb;->b:LXmb;
+    invoke-direct {v0}, LWlb;-><init>()V
 
     .line 7
     .line 8
-    iput-object p3, p0, Lemb;->c:Lzmb;
-
     .line 9
+    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 10
-    iput-object p4, p0, Lemb;->t:LWm0;
-
     .line 11
-    .line 12
-    iput-object p5, p0, Lemb;->X:Lkotlin/jvm/functions/Function2;
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
 
+    .line 12
     .line 13
     .line 14
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iput-object v1, p0, Lemb;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 15
     .line 16
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    new-instance v0, Ljava/util/LinkedHashSet;
 
     .line 17
     .line 18
-    .line 19
-    iput-object p1, p0, Lemb;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
 
+    .line 19
     .line 20
     .line 21
-    new-instance p1, Ldmb;
+    iput-object v0, p0, Lemb;->b:Ljava/util/LinkedHashSet;
 
     .line 22
     .line 23
-    const/4 p2, 0x0
+    new-instance v0, Ldob;
 
     .line 24
-    invoke-direct {p1, p0, p2}, Ldmb;-><init>(Lemb;I)V
-
     .line 25
+    invoke-direct {v0}, Ldob;-><init>()V
+
     .line 26
     .line 27
-    new-instance p2, LXfi;
-
     .line 28
-    .line 29
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 29
     .line 30
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
     .line 31
     .line 32
-    iput-object p2, p0, Lemb;->e0:LXfi;
-
     .line 33
+    iput-object v1, p0, Lemb;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 34
-    new-instance p1, Ldmb;
-
     .line 35
-    .line 36
-    const/4 p2, 0x1
+    new-instance v0, Ljava/util/LinkedHashSet;
 
+    .line 36
     .line 37
-    invoke-direct {p1, p0, p2}, Ldmb;-><init>(Lemb;I)V
+    invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
 
     .line 38
     .line 39
     .line 40
-    new-instance p2, LXfi;
+    iput-object v0, p0, Lemb;->d:Ljava/util/LinkedHashSet;
 
     .line 41
     .line 42
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    new-instance v0, Llob;
 
     .line 43
     .line 44
-    .line 45
-    iput-object p2, p0, Lemb;->f0:LXfi;
+    invoke-direct {v0}, Llob;-><init>()V
 
+    .line 45
     .line 46
     .line 47
+    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 48
+    .line 49
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
+    .line 50
+    .line 51
+    .line 52
+    iput-object v1, p0, Lemb;->f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 53
+    .line 54
+    new-instance v0, Lkob;
+
+    .line 55
+    .line 56
+    invoke-direct {v0}, Lkob;-><init>()V
+
+    .line 57
+    .line 58
+    .line 59
+    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 60
+    .line 61
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
+    .line 62
+    .line 63
+    .line 64
+    iput-object v1, p0, Lemb;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 65
+    .line 66
+    sget-object v0, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
+
+    .line 67
+    .line 68
+    sget-object v1, Ljrb;->Q2:Ljrb;
+
+    .line 69
+    .line 70
+    invoke-interface {p1, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object v1
+
+    .line 74
+    sget-object v2, Ljrb;->O2:Ljrb;
+
+    .line 75
+    .line 76
+    invoke-interface {p1, v2}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v2
+
+    .line 80
+    sget-object v3, Ljrb;->P2:Ljrb;
+
+    .line 81
+    .line 82
+    invoke-interface {p1, v3}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p1
+
+    .line 86
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 87
+    .line 88
+    .line 89
+    invoke-static {v1, v2, p1}, Lio/reactivex/rxjava3/kotlin/Singles;->b(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object p1
+
+    .line 93
+    new-instance v0, LYoa;
+
+    .line 94
+    .line 95
+    const/16 v1, 0x1d
+
+    .line 96
+    .line 97
+    invoke-direct {v0, v1, p0}, LYoa;-><init>(ILjava/lang/Object;)V
+
+    .line 98
+    .line 99
+    .line 100
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
+
+    .line 101
+    .line 102
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 103
+    .line 104
+    .line 105
+    iput-object v1, p0, Lemb;->i:Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
+
+    .line 106
+    .line 107
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lemb;->e1()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_1
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lemb;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 8
-    .line 9
-    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
-
-    .line 10
-    .line 11
-    if-nez v0, :cond_0
-
-    .line 12
-    .line 13
-    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    return-object p1
-
-    .line 18
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 19
-    .line 20
-    const-string v0, "can\'t open closed result"
-
-    .line 21
-    .line 22
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 23
-    .line 24
-    .line 25
-    throw p1
-
-    .line 26
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 27
-    .line 28
-    const-string v0, "can\'t open unsuccessful result"
-
-    .line 29
-    .line 30
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 31
-    .line 32
-    .line 33
-    throw p1
-.end method
-
-.method public final b0()LFd7;
-    .locals 1
-
-    .line 1
-    new-instance v0, LFd7;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, LFd7;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lemb;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 2
-    .line 3
-    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
-
-    .line 4
-    .line 5
-    return v0
-.end method
-
-.method public final dispose()V
+.method public final declared-synchronized a(Ljava/util/List;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lemb;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    monitor-enter p0
 
     .line 2
-    .line 3
-    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
+    :try_start_0
+    invoke-virtual {p0}, Lemb;->g()Lkob;
 
+    .line 3
     .line 4
     .line 5
-    if-nez v0, :cond_0
+    move-result-object v0
 
     .line 6
+    iget-object v0, v0, Lkob;->a:Ljava/util/Map;
+
     .line 7
-    new-instance v0, Ljava/lang/IllegalStateException;
-
     .line 8
+    new-instance v1, Ljava/util/LinkedHashMap;
+
     .line 9
-    const-string v1, "result closed in"
-
     .line 10
-    .line 11
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
 
+    .line 11
     .line 12
     .line 13
+    check-cast p1, Ljava/lang/Iterable;
+
     .line 14
-    iput-object v0, p0, Lemb;->Y:Ljava/lang/IllegalStateException;
-
     .line 15
-    .line 16
-    iget-object v0, p0, Lemb;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-static {v1, p1}, Lkrb;->L0(Ljava/util/AbstractMap;Ljava/lang/Iterable;)V
 
+    .line 16
     .line 17
     .line 18
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
+    new-instance p1, Lkob;
 
     .line 19
     .line 20
+    invoke-direct {p1, v1}, Lkob;-><init>(Ljava/util/Map;)V
+
     .line 21
-    :cond_0
-    return-void
-.end method
-
-.method public final e1()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lemb;->f0:LXfi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Ll87;
-
-    .line 8
-    .line 9
-    if-nez v0, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    return v0
-
-    .line 13
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 14
-    return v0
-.end method
-
-.method public final h()LsTb;
-    .locals 12
-
-    .line 1
-    new-instance v0, LsTb;
-
-    .line 2
-    .line 3
-    sget-object v1, Lcta;->b:Lcta;
-
-    .line 4
-    .line 5
-    const/4 v9, 0x0
-
-    .line 6
-    const/4 v10, 0x0
-
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    const-wide/16 v3, 0x0
-
-    .line 9
-    .line 10
-    const/4 v5, 0x0
-
-    .line 11
-    const/4 v6, 0x0
-
-    .line 12
-    const/4 v7, 0x0
-
-    .line 13
-    const/4 v8, 0x0
-
-    .line 14
-    const/16 v11, 0xffe
-
-    .line 15
-    .line 16
-    invoke-direct/range {v0 .. v11}, LsTb;-><init>(Lcta;ZJLXtc;LAJ1;Lb89;LPc0;LPv1;Ljava/util/List;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-object v0
-.end method
-
-.method public final i()Ljava/util/List;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ldmb;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x2
-
-    .line 4
-    invoke-direct {v0, p0, v1}, Ldmb;-><init>(Lemb;I)V
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {p0, v0}, Lemb;->a(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    check-cast v0, Ljava/util/List;
-
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final n2()LMT3;
-    .locals 7
-
-    .line 1
-    invoke-virtual {p0}, Lemb;->e1()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    new-instance v1, Lemb;
-
-    .line 8
-    .line 9
-    iget-object v0, p0, Lemb;->b:LXmb;
-
-    .line 10
-    .line 11
-    invoke-interface {v0}, LXmb;->O2()LSlb;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    iget-object v2, p0, Lemb;->c:Lzmb;
-
-    .line 16
-    .line 17
-    check-cast v2, LImb;
-
-    .line 18
-    .line 19
-    iget-object v3, p0, Lemb;->t:LWm0;
-
-    .line 20
-    .line 21
-    invoke-virtual {v2, v3, v0}, LImb;->e(LWm0;LSlb;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
     .line 22
     .line 23
-    .line 24
-    move-result-object v0
+    iget-object v0, p0, Lemb;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 24
     .line 25
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Single;->f()Ljava/lang/Object;
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 26
     .line 27
     .line 28
-    move-result-object v0
+    monitor-exit p0
 
     .line 29
-    check-cast v0, LXmb;
+    return-void
 
     .line 30
+    :catchall_0
+    move-exception p1
+
     .line 31
-    invoke-interface {v0}, LXmb;->d()LXmb;
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 32
-    .line 33
-    .line 34
-    move-result-object v3
-
-    .line 35
-    iget-object v6, p0, Lemb;->X:Lkotlin/jvm/functions/Function2;
-
-    .line 36
-    .line 37
-    iget-object v2, p0, Lemb;->a:Landroid/net/Uri;
-
-    .line 38
-    .line 39
-    iget-object v4, p0, Lemb;->c:Lzmb;
-
-    .line 40
-    .line 41
-    iget-object v5, p0, Lemb;->t:LWm0;
-
-    .line 42
-    .line 43
-    invoke-direct/range {v1 .. v6}, Lemb;-><init>(Landroid/net/Uri;LXmb;Lzmb;LWm0;Lkotlin/jvm/functions/Function2;)V
-
-    .line 44
-    .line 45
-    .line 46
-    return-object v1
-
-    .line 47
-    :cond_0
-    return-object p0
+    throw p1
 .end method
 
-.method public final p0(Lcom/snapchat/client/content_manager/ConsumptionUseCase;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final y()Ll87;
+.method public final declared-synchronized b(Ljava/util/List;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lemb;->f0:LXfi;
+    monitor-enter p0
 
     .line 2
-    .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    :try_start_0
+    invoke-virtual {p0}, Lemb;->e()Llob;
 
+    .line 3
     .line 4
     .line 5
-    .line 6
     move-result-object v0
 
+    .line 6
+    iget-object v0, v0, Llob;->a:Ljava/util/Map;
+
     .line 7
-    check-cast v0, Ll87;
-
     .line 8
+    new-instance v1, Ljava/util/LinkedHashMap;
+
     .line 9
-    if-eqz v0, :cond_0
-
     .line 10
+    invoke-direct {v1, v0}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
+
     .line 11
-    return-object v0
-
     .line 12
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
     .line 13
-    .line 14
-    const-string v1, "The result was successful"
+    check-cast p1, Ljava/lang/Iterable;
 
+    .line 14
+    .line 15
+    invoke-static {v1, p1}, Lkrb;->L0(Ljava/util/AbstractMap;Ljava/lang/Iterable;)V
+
+    .line 16
+    .line 17
+    .line 18
+    new-instance p1, Llob;
+
+    .line 19
+    .line 20
+    invoke-direct {p1, v1}, Llob;-><init>(Ljava/util/Map;)V
+
+    .line 21
+    .line 22
+    .line 23
+    iget-object v0, p0, Lemb;->f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 26
+    .line 27
+    .line 28
+    monitor-exit p0
+
+    .line 29
+    return-void
+
+    .line 30
+    :catchall_0
+    move-exception p1
+
+    .line 31
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 32
+    throw p1
+.end method
+
+.method public final declared-synchronized c(Ljava/util/ArrayList;)V
+    .locals 2
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, Lemb;->f()LWlb;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v0
+
+    .line 6
+    iget-object v0, v0, LWlb;->a:Ljava/util/LinkedHashMap;
+
+    .line 7
+    .line 8
+    new-instance v1, Ljava/util/LinkedHashMap;
+
+    .line 9
+    .line 10
+    invoke-direct {v1, v0}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {v1, p1}, Lkrb;->L0(Ljava/util/AbstractMap;Ljava/lang/Iterable;)V
+
+    .line 14
     .line 15
     .line 16
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    new-instance p1, LWlb;
 
     .line 17
     .line 18
+    invoke-direct {p1, v1}, LWlb;-><init>(Ljava/util/LinkedHashMap;)V
+
     .line 19
+    .line 20
+    .line 21
+    iget-object v0, p0, Lemb;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 24
+    .line 25
+    .line 26
+    monitor-exit p0
+
+    .line 27
+    return-void
+
+    .line 28
+    :catchall_0
+    move-exception p1
+
+    .line 29
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 30
+    throw p1
+.end method
+
+.method public final declared-synchronized d()Ldob;
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lemb;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 3
+    .line 4
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    check-cast v0, Ldob;
+
+    .line 9
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    new-instance v0, Ldob;
+
+    .line 13
+    .line 14
+    invoke-direct {v0}, Ldob;-><init>()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 15
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :catchall_0
+    move-exception v0
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_0
+    :goto_0
+    monitor-exit p0
+
+    .line 21
+    return-object v0
+
+    .line 22
+    :goto_1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 23
     throw v0
 .end method
 
-.method public final y0()Ljava/io/InputStream;
-    .locals 2
+.method public final declared-synchronized e()Llob;
+    .locals 1
 
     .line 1
-    new-instance v0, Ldmb;
+    monitor-enter p0
 
     .line 2
-    .line 3
-    const/4 v1, 0x3
+    :try_start_0
+    iget-object v0, p0, Lemb;->f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 3
     .line 4
-    invoke-direct {v0, p0, v1}, Ldmb;-><init>(Lemb;I)V
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
 
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p0, v0}, Lemb;->a(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
     move-result-object v0
 
-    .line 11
-    check-cast v0, Ljava/io/InputStream;
+    .line 8
+    check-cast v0, Llob;
 
+    .line 9
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
     .line 12
+    new-instance v0, Llob;
+
     .line 13
+    .line 14
+    invoke-direct {v0}, Llob;-><init>()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 15
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :catchall_0
+    move-exception v0
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_0
+    :goto_0
+    monitor-exit p0
+
+    .line 21
     return-object v0
+
+    .line 22
+    :goto_1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 23
+    throw v0
+.end method
+
+.method public final declared-synchronized f()LWlb;
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lemb;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 3
+    .line 4
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    check-cast v0, LWlb;
+
+    .line 9
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    new-instance v0, LWlb;
+
+    .line 13
+    .line 14
+    invoke-direct {v0}, LWlb;-><init>()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 15
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :catchall_0
+    move-exception v0
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_0
+    :goto_0
+    monitor-exit p0
+
+    .line 21
+    return-object v0
+
+    .line 22
+    :goto_1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 23
+    throw v0
+.end method
+
+.method public final declared-synchronized g()Lkob;
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lemb;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 3
+    .line 4
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    check-cast v0, Lkob;
+
+    .line 9
+    .line 10
+    if-nez v0, :cond_0
+
+    .line 11
+    .line 12
+    new-instance v0, Lkob;
+
+    .line 13
+    .line 14
+    invoke-direct {v0}, Lkob;-><init>()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 15
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :catchall_0
+    move-exception v0
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_0
+    :goto_0
+    monitor-exit p0
+
+    .line 21
+    return-object v0
+
+    .line 22
+    :goto_1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 23
+    throw v0
 .end method

@@ -1,1494 +1,1232 @@
 .class public final Ldw9;
-.super LGre;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lcom/android/installreferrer/api/InstallReferrerStateListener;
+.implements Lio/reactivex/rxjava3/functions/Function;
+.implements LfJ9;
+.implements Lio/reactivex/rxjava3/core/SingleOnSubscribe;
+.implements Lio/reactivex/rxjava3/core/MaybeOnSubscribe;
 
 
 # instance fields
-.field public final synthetic X:LVOi;
+.field public final synthetic a:I
 
-.field public final synthetic c:I
+.field public b:Ljava/lang/Object;
 
-.field public final t:Ljava/lang/Object;
+.field public c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(LMF8;Ljava/lang/String;)V
+.method public synthetic constructor <init>()V
     .locals 1
-
-    const/4 v0, 0x6
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, LET9;->n0:LET9;
-
-    .line 11
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 12
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 13
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(LOp3;Ljava/lang/Long;)V
-    .locals 1
-
-    const/16 v0, 0x1d
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, LuOb;->l0:LuOb;
-
-    .line 23
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 24
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 25
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(LUS0;LRva;)V
-    .locals 1
-
-    const/16 v0, 0x9
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, Lxha;->m0:Lxha;
-
-    .line 17
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 18
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 19
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(LVOi;Ljava/lang/Object;LrE9;I)V
-    .locals 0
 
     .line 1
-    iput p4, p0, Ldw9;->c:I
+    const/16 v0, 0x19
 
-    iput-object p1, p0, Ldw9;->X:LVOi;
+    iput v0, p0, Ldw9;->a:I
 
-    const/4 p1, 0x3
-
-    invoke-direct {p0, p1, p3}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(Lfc7;Ljava/lang/Integer;)V
-    .locals 1
+.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    .locals 0
 
-    const/16 v0, 0x10
+    .line 2
+    iput p2, p0, Ldw9;->a:I
 
-    iput v0, p0, Ldw9;->c:I
+    iput-object p1, p0, Ldw9;->b:Ljava/lang/Object;
 
-    sget-object v0, Lirb;->w0:Lirb;
+    iput-object p3, p0, Ldw9;->c:Ljava/lang/Object;
 
-    .line 26
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 27
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 28
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(LiW9;Ljava/lang/String;)V
-    .locals 1
-
-    const/4 v0, 0x5
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, LET9;->i0:LET9;
-
-    .line 5
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 6
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 7
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Luc0;LfFf;)V
+.method public constructor <init>(LzUh;Ljava/lang/Object;)V
     .locals 1
 
     const/4 v0, 0x1
 
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, Lhw9;->r0:Lhw9;
-
-    .line 2
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
+    iput v0, p0, Ldw9;->a:I
 
     .line 3
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
+    const-string v0, "status"
 
-    return-void
-.end method
+    invoke-static {p1, v0}, LSpk;->G(Ljava/lang/Object;Ljava/lang/String;)V
 
-.method public constructor <init>(Luc0;Ljava/util/LinkedHashSet;)V
-    .locals 1
+    iput-object p1, p0, Ldw9;->b:Ljava/lang/Object;
 
-    const/16 v0, 0x15
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, LIDb;->A0:LIDb;
-
-    .line 29
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 30
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 31
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Luc0;Ljava/util/List;LYHb;)V
-    .locals 1
-
-    const/16 v0, 0x14
-
-    iput v0, p0, Ldw9;->c:I
-
-    .line 35
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 36
-    invoke-direct {p0, p1, p3}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 37
-    check-cast p2, Ljava/util/List;
-
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Luc0;Ljava/util/Set;)V
-    .locals 1
-
-    const/16 v0, 0x16
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, LIDb;->B0:LIDb;
-
-    .line 32
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 33
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 34
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(LvZ7;Ljava/lang/String;)V
-    .locals 1
-
-    const/16 v0, 0xe
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, LI9b;->A0:LI9b;
-
-    .line 8
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 9
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 10
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(LvZ7;Ljava/lang/String;B)V
-    .locals 0
-
-    const/16 p3, 0x12
-
-    iput p3, p0, Ldw9;->c:I
-
-    sget-object p3, LIDb;->e0:LIDb;
-
-    .line 14
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 15
-    invoke-direct {p0, p1, p3}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 16
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(LvZ7;Ljava/util/List;)V
-    .locals 1
-
-    const/16 v0, 0x19
-
-    iput v0, p0, Ldw9;->c:I
-
-    sget-object v0, LiIb;->k0:LiIb;
-
-    .line 20
-    iput-object p1, p0, Ldw9;->X:LVOi;
-
-    const/4 p1, 0x3
-
-    .line 21
-    invoke-direct {p0, p1, v0}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 22
-    check-cast p2, Ljava/util/List;
-
-    iput-object p2, p0, Ldw9;->t:Ljava/lang/Object;
+    .line 5
+    iput-object p2, p0, Ldw9;->c:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final o(Lkotlin/jvm/functions/Function1;)Lase;
-    .locals 8
+.method public a()Z
+    .locals 1
 
     .line 1
-    iget v0, p0, Ldw9;->c:I
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 12
+
+    .line 1
+    const/16 v0, 0x1d
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v1, 0x5
 
     .line 4
+    const/16 v2, 0x19
+
     .line 5
     .line 6
-    iget-object v0, p0, Ldw9;->X:LVOi;
+    const/4 v3, 0x4
 
     .line 7
+    const/4 v4, 0x0
+
     .line 8
-    check-cast v0, LOp3;
+    const/16 v5, 0xa
 
     .line 9
     .line 10
-    const v1, 0x17867c80
+    const/4 v6, 0x2
 
     .line 11
+    const/4 v7, 0x0
+
     .line 12
+    const/4 v8, 0x3
+
     .line 13
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v9, 0x1
 
     .line 14
+    iget v10, p0, Ldw9;->a:I
+
     .line 15
     .line 16
-    move-result-object v3
+    packed-switch v10, :pswitch_data_0
 
     .line 17
-    new-instance v7, LcJb;
-
     .line 18
     .line 19
-    const/16 v1, 0x14
+    :pswitch_0
+    check-cast p1, Lu60;
 
     .line 20
     .line 21
-    invoke-direct {v7, v1, p0}, LcJb;-><init>(ILjava/lang/Object;)V
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 22
     .line 23
+    check-cast v0, Ljava/util/ArrayList;
+
     .line 24
-    iget-object v2, v0, LVOi;->a:LfQg;
-
     .line 25
+    new-array v1, v7, [Ljava/lang/String;
+
     .line 26
-    const-string v4, "SELECT COUNT(MobStoryMetadata.storyRowId)\nFROM MobStoryMetadata\nWHERE (LENGTH(MobStoryMetadata.memberUserIds) + 1) / 37 >= ?"
-
     .line 27
+    invoke-interface {v0, v1}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
     .line 28
-    const/4 v6, 0x1
-
     .line 29
-    move-object v5, p1
-
     .line 30
-    invoke-virtual/range {v2 .. v7}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    move-result-object v0
 
     .line 31
+    check-cast v0, [Ljava/lang/String;
+
     .line 32
     .line 33
-    move-result-object p1
+    new-instance v1, LFM3;
 
     .line 34
-    return-object p1
-
     .line 35
-    :pswitch_0
-    move-object v3, p1
+    invoke-direct {v1}, LFM3;-><init>()V
 
     .line 36
-    iget-object p1, p0, Ldw9;->X:LVOi;
-
     .line 37
     .line 38
-    check-cast p1, LMF8;
+    iget-object v7, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 39
     .line 40
-    iget-object v0, p1, LVOi;->a:LfQg;
+    check-cast v7, LOUa;
 
     .line 41
     .line 42
-    const p1, -0x39e74800    # -9774.0f
+    iget-object v8, v7, LOUa;->E0:LuXc;
 
     .line 43
     .line 44
-    .line 45
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const-string v10, "oAuthParams"
 
+    .line 45
     .line 46
+    if-eqz v8, :cond_2
+
     .line 47
     .line 48
-    move-result-object v1
+    iget-object v11, v8, LuXc;->b:Ljava/lang/String;
 
     .line 49
-    new-instance v5, LcJb;
-
     .line 50
-    .line 51
-    const/4 p1, 0x7
+    iput-object v11, v1, LFM3;->b:Ljava/lang/String;
 
+    .line 51
     .line 52
-    invoke-direct {v5, p1, p0}, LcJb;-><init>(ILjava/lang/Object;)V
+    iget v11, v1, LFM3;->a:I
 
     .line 53
     .line 54
+    or-int/2addr v9, v11
+
     .line 55
-    const-string v2, "SELECT *\nFROM MessageMediaRef\nWHERE messageId = ?"
+    iput v9, v1, LFM3;->a:I
 
     .line 56
     .line 57
-    const/4 v4, 0x1
+    iput-object v0, v1, LFM3;->c:[Ljava/lang/String;
 
     .line 58
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 59
+    if-eqz v8, :cond_1
+
     .line 60
     .line 61
-    move-result-object p1
+    iget-object v0, v8, LuXc;->k:Ljava/lang/String;
 
     .line 62
-    return-object p1
-
     .line 63
-    :pswitch_1
-    move-object v3, p1
+    invoke-static {v0}, LQIc;->e0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 64
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 65
     .line 66
-    check-cast p1, Ljava/util/Set;
+    move-result-object v0
 
     .line 67
-    .line 68
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    if-eqz v0, :cond_0
 
+    .line 68
     .line 69
+    iput-object v0, v1, LFM3;->t:Ljava/lang/String;
+
     .line 70
     .line 71
-    move-result v0
+    iget v0, v1, LFM3;->a:I
 
     .line 72
-    iget-object v1, p0, Ldw9;->X:LVOi;
-
     .line 73
+    or-int/2addr v0, v6
+
     .line 74
-    check-cast v1, LpC2;
+    iput v0, v1, LFM3;->a:I
 
     .line 75
     .line 76
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    :cond_0
+    iget-object v0, v7, LOUa;->r0:LjW9;
 
     .line 77
     .line 78
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 79
-    move-result-object v0
-
     .line 80
-    const-string v2, "\n          |SELECT userId, username, displayName, bitmojiAvatarId, bitmojiSelfieId, addedTimestamp,\n          |       reverseAddedTimestamp, isPopular, isOfficial, snapProId, friendLinkType\n          |FROM Friend\n          |WHERE userId IN "
-
     .line 81
+    const-string v0, "version_14"
+
     .line 82
-    const-string v4, "\n          "
-
     .line 83
-    .line 84
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    iput-object v0, v1, LFM3;->X:Ljava/lang/String;
 
+    .line 84
     .line 85
+    iget v0, v1, LFM3;->a:I
+
     .line 86
     .line 87
-    move-result-object v2
+    or-int/2addr v0, v3
 
     .line 88
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    iput v0, v1, LFM3;->a:I
 
     .line 89
     .line 90
+    invoke-virtual {v7}, LOUa;->i3()Lio/reactivex/rxjava3/core/Single;
+
     .line 91
-    move-result v4
-
     .line 92
-    new-instance v5, LcJb;
-
     .line 93
+    move-result-object v0
+
     .line 94
-    const/4 p1, 0x4
+    new-instance v3, LQM9;
 
     .line 95
-    invoke-direct {v5, p1, p0}, LcJb;-><init>(ILjava/lang/Object;)V
-
     .line 96
+    invoke-direct {v3, v7, v2, v1}, LQM9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 97
     .line 98
-    iget-object v0, v1, LVOi;->a:LfQg;
-
     .line 99
-    .line 100
-    const/4 v1, 0x0
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
+    .line 100
     .line 101
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    invoke-direct {v1, v0, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 102
     .line 103
     .line 104
-    move-result-object p1
+    new-instance v0, LkHa;
 
     .line 105
-    return-object p1
-
     .line 106
-    :pswitch_2
-    move-object v3, p1
+    invoke-direct {v0, v5, p1}, LkHa;-><init>(ILjava/lang/Object;)V
 
     .line 107
-    iget-object p1, p0, Ldw9;->X:LVOi;
-
     .line 108
     .line 109
-    check-cast p1, LvZ7;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 110
     .line 111
-    const v0, -0x564857a0
+    invoke-direct {p1, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 112
     .line 113
     .line 114
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    return-object p1
 
     .line 115
+    :cond_1
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 116
     .line 117
-    move-result-object v1
-
     .line 118
-    new-instance v5, LcJb;
+    throw v4
 
     .line 119
+    :cond_2
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 120
-    const/4 v0, 0x2
-
     .line 121
-    invoke-direct {v5, v0, p0}, LcJb;-><init>(ILjava/lang/Object;)V
-
     .line 122
+    throw v4
+
     .line 123
+    :pswitch_1
+    move-object v6, p1
+
     .line 124
-    iget-object v0, p1, LVOi;->a:LfQg;
+    check-cast v6, LDpd;
 
     .line 125
     .line 126
-    const-string v2, "SELECT\n    snap._id,\n    snap.media_id,\n    snap.media_type,\n    snap.create_time,\n    snap.width,\n    snap.height,\n    snap.has_deleted,\n    snap.memories_entry_id AS entry_id,\n    snap.copy_from_snap_id,\n    snap.snap_source_type,\n    media.should_transcode_video,\n    upload_session.session_id,\n    upload_session.media_package_index,\n    entry.servlet_entry_type,\n    snap.snapdoc AS snapLevelSnapDoc,\n    upload_status.upload_state AS upload_state\nFROM memories_snap AS snap\nLEFT OUTER JOIN memories_media AS media\n    ON snap.media_id = media._id\nLEFT OUTER JOIN memories_upload_sessions AS upload_session\n    ON snap._id = upload_session.snap_id\nLEFT OUTER JOIN memories_entry AS entry\n    ON snap.memories_entry_id == entry._id\nLEFT OUTER JOIN memories_snap_upload_status AS upload_status\n    ON snap._id = upload_status.snap_id\nWHERE snap.memories_entry_id = ? AND snap.has_deleted == 0\nORDER BY snap.create_time ASC"
+    iget-object p1, v6, LDpd;->a:Ljava/lang/Object;
 
     .line 127
     .line 128
-    const/4 v4, 0x1
+    check-cast p1, Ljava/lang/Number;
 
     .line 129
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 130
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+
     .line 131
     .line 132
-    move-result-object p1
-
     .line 133
-    return-object p1
+    move-result-wide v4
 
     .line 134
-    :pswitch_3
-    move-object v3, p1
+    new-instance v2, LIb;
 
     .line 135
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 136
-    .line 137
-    check-cast p1, Ljava/util/List;
+    iget-object p1, p0, Ldw9;->c:Ljava/lang/Object;
 
+    .line 137
     .line 138
+    move-object v3, p1
+
     .line 139
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    check-cast v3, LDTa;
 
     .line 140
     .line 141
-    .line 142
-    move-result v0
+    const/16 v7, 0xb
 
+    .line 142
     .line 143
-    iget-object v1, p0, Ldw9;->X:LVOi;
+    invoke-direct/range {v2 .. v7}, LIb;-><init>(Ljava/lang/Object;JLjava/lang/Object;I)V
 
     .line 144
     .line 145
-    check-cast v1, LvZ7;
-
     .line 146
-    .line 147
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    iget-object p1, p0, Ldw9;->b:Ljava/lang/Object;
 
+    .line 147
     .line 148
+    check-cast p1, Lio/reactivex/rxjava3/core/Single;
+
     .line 149
     .line 150
-    move-result-object v0
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnTerminate;
 
     .line 151
-    const-string v2, "\n          |SELECT (\n          |    SELECT COUNT(1)\n          |    FROM memories_entry\n          |    WHERE is_local = 0 AND is_private = ? AND servlet_entry_type IN "
-
     .line 152
-    .line 153
-    const-string v4, "\n          |) + (SELECT COUNT(1)\n          |    FROM memories_entry AS entries\n          |    INNER JOIN memories_snap AS snaps\n          |    ON entries._id = snaps.memories_entry_id\n          |    WHERE\n          |        entries.is_local = 0 AND\n          |        entries.is_private = ? AND\n          |        snaps.has_deleted = 0 AND\n          |        (entries.external_id IS NOT NULL OR entries.source = ?) AND\n          |        entries.last_auto_save_time > 0\n          |) AS count\n          "
+    invoke-direct {v0, p1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnTerminate;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Action;)V
 
+    .line 153
     .line 154
     .line 155
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    return-object v0
 
     .line 156
+    :pswitch_2
+    check-cast p1, LEQa;
+
     .line 157
     .line 158
-    move-result-object v2
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 159
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 160
+    check-cast v0, LJ0f;
+
     .line 161
     .line 162
-    move-result p1
+    iput-boolean v9, v0, LJ0f;->a:Z
 
     .line 163
-    add-int/lit8 v4, p1, 0x3
-
     .line 164
+    iget-object v0, p0, Ldw9;->c:Ljava/lang/Object;
+
     .line 165
-    new-instance v5, LVHb;
-
     .line 166
+    check-cast v0, Lga0;
+
     .line 167
-    const/16 p1, 0x1b
-
     .line 168
-    .line 169
-    invoke-direct {v5, p0, v1, p1}, LVHb;-><init>(Ljava/lang/Object;LVOi;I)V
+    iget-object v1, v0, Lga0;->Z:Ljava/lang/Object;
 
+    .line 169
     .line 170
+    check-cast v1, LFQa;
+
     .line 171
     .line 172
-    iget-object v0, v1, LVOi;->a:LfQg;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 173
     .line 174
-    const/4 v1, 0x0
-
     .line 175
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    iget-object v0, v0, Lga0;->X:Ljava/lang/Object;
 
     .line 176
     .line 177
-    .line 178
-    move-result-object p1
+    check-cast v0, LfRa;
 
+    .line 178
     .line 179
-    return-object p1
+    iget-object v1, v0, LfRa;->c:LwCa;
 
     .line 180
-    :pswitch_4
-    move-object v3, p1
-
     .line 181
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
+    iget-object p1, p1, LEQa;->a:Landroid/location/Location;
 
     .line 182
     .line 183
-    check-cast p1, Ljava/util/Collection;
+    invoke-virtual {v1, p1, v8}, LwCa;->a(Landroid/location/Location;I)Lio/reactivex/rxjava3/core/Single;
 
     .line 184
     .line 185
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 186
-    .line 187
-    .line 188
-    move-result v0
+    move-result-object p1
 
+    .line 187
+    new-instance v1, Lpaa;
+
+    .line 188
     .line 189
-    iget-object v1, p0, Ldw9;->X:LVOi;
+    const/16 v2, 0x14
 
     .line 190
     .line 191
-    check-cast v1, Luc0;
+    invoke-direct {v1, v2, v0}, Lpaa;-><init>(ILjava/lang/Object;)V
 
     .line 192
     .line 193
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
-
     .line 194
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+
     .line 195
     .line 196
-    move-result-object v0
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 197
-    const-string v2, "\n          |SELECT\n          |    snap_id,\n          |    upload_state\n          |FROM memories_snap_upload_status\n          |WHERE snap_id IN "
-
     .line 198
     .line 199
-    const-string v4, "\n          "
+    return-object v0
 
     .line 200
-    .line 201
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    :pswitch_3
+    check-cast p1, LdBb;
 
+    .line 201
     .line 202
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
     .line 203
     .line 204
-    move-result-object v2
+    check-cast v0, LROa;
 
     .line 205
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 206
+    iget-object v1, v0, LROa;->a:LB15;
+
     .line 207
     .line 208
-    move-result v4
+    invoke-virtual {v1}, LB15;->get()Ljava/lang/Object;
 
     .line 209
-    new-instance v5, LVHb;
-
     .line 210
     .line 211
-    const/16 p1, 0x18
+    move-result-object v1
 
     .line 212
-    .line 213
-    invoke-direct {v5, p0, p1}, LVHb;-><init>(LGre;I)V
+    check-cast v1, LHFb;
 
+    .line 213
     .line 214
+    iget-object v2, v0, LROa;->c:Lnp0;
+
     .line 215
     .line 216
-    iget-object v0, v1, LVOi;->a:LfQg;
+    iget-object v3, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 217
     .line 218
-    const/4 v1, 0x0
+    check-cast v3, LXDf;
 
     .line 219
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 220
+    invoke-interface {v1, v2, v3}, LHFb;->a(Lnp0;LXDf;)Lio/reactivex/rxjava3/core/Completable;
+
     .line 221
     .line 222
-    move-result-object p1
-
     .line 223
-    return-object p1
-
-    .line 224
-    :pswitch_5
-    move-object v3, p1
-
-    .line 225
-    iget-object p1, p0, Ldw9;->X:LVOi;
-
-    .line 226
-    .line 227
-    check-cast p1, Luc0;
-
-    .line 228
-    .line 229
-    const v0, 0x43bf1694
-
-    .line 230
-    .line 231
-    .line 232
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 233
-    .line 234
-    .line 235
     move-result-object v1
 
+    .line 224
+    new-instance v2, LEA9;
+
+    .line 225
+    .line 226
+    const/16 v3, 0x16
+
+    .line 227
+    .line 228
+    invoke-direct {v2, v0, v3, p1}, LEA9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 229
+    .line 230
+    .line 231
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;
+
+    .line 232
+    .line 233
+    invoke-direct {p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/functions/Action;)V
+
+    .line 234
+    .line 235
     .line 236
-    new-instance v5, LVHb;
+    return-object p1
 
     .line 237
+    :pswitch_4
+    check-cast p1, Lmid;
+
     .line 238
-    const/16 v0, 0x17
-
     .line 239
-    .line 240
-    invoke-direct {v5, p0, v0}, LVHb;-><init>(LGre;I)V
+    iget-object p1, p0, Ldw9;->b:Ljava/lang/Object;
 
+    .line 240
     .line 241
+    check-cast p1, LhMa;
+
     .line 242
     .line 243
-    iget-object v0, p1, LVOi;->a:LfQg;
+    iget-object p1, p1, LhMa;->d:Laug;
 
     .line 244
     .line 245
-    const-string v2, "SELECT\n    upload_state,\n    snap_create_time,\n    upload_progress,\n    snap_hd_upload_state,\n    error_message\nFROM memories_snap_upload_status\nWHERE snap_id = ?"
+    new-instance v0, Lwqf;
 
     .line 246
     .line 247
-    const/4 v4, 0x1
+    iget-object v1, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 248
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 249
+    check-cast v1, Ljava/lang/String;
+
     .line 250
     .line 251
-    move-result-object p1
+    const/16 v2, 0x18
 
     .line 252
-    return-object p1
-
     .line 253
-    :pswitch_6
-    move-object v3, p1
+    invoke-direct {v0, p1, v2, v1}, Lwqf;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 254
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 255
     .line 256
-    check-cast p1, Ljava/util/Set;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
 
     .line 257
     .line 258
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 259
     .line 260
     .line 261
-    move-result v0
+    iget-object p1, p1, Laug;->Y:Ljava/lang/Object;
 
     .line 262
-    iget-object v1, p0, Ldw9;->X:LVOi;
-
     .line 263
+    check-cast p1, LnJe;
+
     .line 264
-    check-cast v1, Luc0;
-
     .line 265
-    .line 266
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    invoke-virtual {p1}, LnJe;->d()LA36;
 
+    .line 266
     .line 267
     .line 268
+    move-result-object p1
+
     .line 269
-    move-result-object v0
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
     .line 270
-    const-string v2, "\n          |SELECT media_id\n          |FROM memories_snap\n          |WHERE media_id IN "
-
     .line 271
-    .line 272
-    const-string v4, "\n          "
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 272
     .line 273
     .line 274
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    return-object v0
 
     .line 275
+    :pswitch_5
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 276
     .line 277
-    move-result-object v2
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 278
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 279
     .line 280
+    move-result p1
+
     .line 281
-    move-result v4
+    if-eqz p1, :cond_3
 
     .line 282
-    new-instance v5, LTHb;
-
     .line 283
+    iget-object p1, p0, Ldw9;->b:Ljava/lang/Object;
+
     .line 284
-    const/16 p1, 0xf
-
     .line 285
-    .line 286
-    invoke-direct {v5, p0, p1}, LTHb;-><init>(LGre;I)V
+    check-cast p1, Ls57;
 
+    .line 286
     .line 287
+    iget-object v0, p1, Ls57;->Z:Ljava/lang/Object;
+
     .line 288
     .line 289
-    iget-object v0, v1, LVOi;->a:LfQg;
+    iget-object v0, p1, Ls57;->b:Ljava/lang/Object;
 
     .line 290
     .line 291
-    const/4 v1, 0x0
+    check-cast v0, LdLa;
 
     .line 292
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 293
+    iget-object v1, p1, Ls57;->t:Ljava/lang/Object;
+
     .line 294
     .line 295
-    move-result-object p1
+    check-cast v1, Landroid/app/Activity;
 
     .line 296
-    return-object p1
-
     .line 297
-    :pswitch_7
-    move-object v3, p1
+    invoke-interface {v0, v1}, LdLa;->e(Landroid/app/Activity;)Lio/reactivex/rxjava3/core/Single;
 
     .line 298
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 299
     .line 300
-    check-cast p1, Ljava/util/LinkedHashSet;
-
-    .line 301
-    .line 302
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
-    .line 303
-    .line 304
-    .line 305
-    move-result v0
-
-    .line 306
-    iget-object v1, p0, Ldw9;->X:LVOi;
-
-    .line 307
-    .line 308
-    check-cast v1, Luc0;
-
-    .line 309
-    .line 310
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
-
-    .line 311
-    .line 312
-    .line 313
     move-result-object v0
 
+    .line 301
+    new-instance v1, LoO9;
+
+    .line 302
+    .line 303
+    iget-object v2, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 304
+    .line 305
+    check-cast v2, Lyeb;
+
+    .line 306
+    .line 307
+    const/16 v3, 0xe
+
+    .line 308
+    .line 309
+    invoke-direct {v1, p1, v3, v2}, LoO9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 310
+    .line 311
+    .line 312
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
+
+    .line 313
     .line 314
-    const-string v2, "\n          |SELECT media_id\n          |FROM memories_snap\n          |WHERE _id IN "
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 315
     .line 316
-    const-string v4, "\n          "
-
     .line 317
-    .line 318
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    sget-object v0, LIU7;->m0:LIU7;
 
+    .line 318
     .line 319
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
     .line 320
     .line 321
-    move-result-object v2
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 322
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 323
     .line 324
+    goto :goto_0
+
     .line 325
-    move-result v4
+    :cond_3
+    sget-object p1, LRKa;->a:LRKa;
 
     .line 326
-    new-instance v5, LTHb;
-
     .line 327
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
     .line 328
-    const/16 p1, 0xc
-
     .line 329
-    .line 330
-    invoke-direct {v5, p0, p1}, LTHb;-><init>(LGre;I)V
+    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
+    .line 330
     .line 331
     .line 332
+    :goto_0
+    return-object v1
+
     .line 333
-    iget-object v0, v1, LVOi;->a:LfQg;
+    :pswitch_6
+    check-cast p1, Lmid;
 
     .line 334
     .line 335
-    const/4 v1, 0x0
+    invoke-virtual {p1}, Lmid;->i()Ljava/lang/Object;
 
     .line 336
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 337
     .line 338
-    .line 339
     move-result-object p1
 
-    .line 340
-    return-object p1
+    .line 339
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
+    .line 340
     .line 341
-    :pswitch_8
-    move-object v3, p1
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 342
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 343
     .line 344
-    check-cast p1, Ljava/util/List;
+    move-result p1
 
     .line 345
-    .line 346
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    if-eqz p1, :cond_5
 
+    .line 346
     .line 347
+    iget-object p1, p0, Ldw9;->b:Ljava/lang/Object;
+
     .line 348
     .line 349
-    move-result v0
+    check-cast p1, Ls57;
 
     .line 350
-    iget-object v1, p0, Ldw9;->X:LVOi;
-
     .line 351
+    iget-object p1, p1, Ls57;->Z:Ljava/lang/Object;
+
     .line 352
-    check-cast v1, Luc0;
-
     .line 353
-    .line 354
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, Laug;
 
+    .line 354
     .line 355
+    iget-object v0, p0, Ldw9;->c:Ljava/lang/Object;
+
     .line 356
     .line 357
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    check-cast v0, Ljava/util/ArrayList;
 
     .line 358
     .line 359
-    .line 360
-    move-result-object v0
+    new-instance v1, Ljava/util/ArrayList;
 
+    .line 360
     .line 361
-    const-string v2, "\n          |SELECT\n          |    snap._id,\n          |    snap.media_type,\n          |    (snap.duration * 1000) AS duration,\n          |    snap.width,\n          |    snap.height,\n          |    snap.media_key,\n          |    snap.media_iv,\n          |    snap.snap_capture_time,\n          |    memories_media.download_url\n          |FROM memories_snap AS snap\n          |INNER JOIN memories_media\n          |    ON snap.media_id = memories_media._id\n          |WHERE snap._id IN "
+    invoke-static {v0, v5}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 362
     .line 363
-    const-string v4, "\n          "
-
     .line 364
+    move-result v3
+
     .line 365
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v1, v3}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 366
     .line 367
     .line 368
-    move-result-object v2
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 369
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 370
     .line 371
+    move-result-object v0
+
     .line 372
-    move-result v4
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 373
-    new-instance v5, LTHb;
-
     .line 374
     .line 375
-    const/16 p1, 0x8
+    move-result v3
 
     .line 376
-    .line 377
-    invoke-direct {v5, p0, p1}, LTHb;-><init>(LGre;I)V
+    if-eqz v3, :cond_4
 
+    .line 377
     .line 378
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 379
     .line 380
-    iget-object v0, v1, LVOi;->a:LfQg;
-
     .line 381
+    move-result-object v3
+
     .line 382
-    const/4 v1, 0x0
+    check-cast v3, LRS7;
 
     .line 383
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 384
+    iget-object v3, v3, LRS7;->a:Ljava/lang/String;
+
     .line 385
     .line 386
-    move-result-object p1
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 387
-    return-object p1
-
     .line 388
-    :pswitch_9
-    move-object v3, p1
-
     .line 389
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    goto :goto_1
 
     .line 390
+    :cond_4
+    new-instance v0, Lwqf;
+
     .line 391
-    check-cast p1, Lfc7;
-
     .line 392
-    .line 393
-    iget-object v0, p1, LVOi;->a:LfQg;
+    invoke-direct {v0, p1, v2, v1}, Lwqf;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 393
     .line 394
     .line 395
-    const-string v1, "\n    |SELECT\n    |    memories_remote_operation._id,\n    |    memories_remote_operation.serialized_operation\n    |FROM memories_remote_operation\n    |JOIN memories_entry\n    |    ON memories_remote_operation.target_entry = memories_entry._id\n    |WHERE memories_remote_operation.operation "
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
 
     .line 396
     .line 397
-    const-string v2, "="
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 398
     .line 399
-    const-string v4, " ?\n    |AND memories_entry.servlet_entry_type = ?\n    |AND memories_remote_operation.schedule_state "
-
     .line 400
+    iget-object p1, p1, Laug;->Y:Ljava/lang/Object;
+
     .line 401
-    const-string v5, " ?\n    |ORDER BY memories_remote_operation.created_timestamp DESC\n    "
-
     .line 402
-    .line 403
-    invoke-static {v1, v2, v4, v2, v5}, LOOi;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    check-cast p1, LnJe;
 
+    .line 403
     .line 404
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
     .line 405
     .line 406
-    move-result-object v2
-
     .line 407
-    new-instance v5, Lrmb;
+    move-result-object p1
 
     .line 408
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
     .line 409
-    const/16 v1, 0x12
-
     .line 410
-    .line 411
-    invoke-direct {v5, p0, v1, p1}, Lrmb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 411
     .line 412
     .line 413
+    goto :goto_2
+
     .line 414
-    const/4 v1, 0x0
+    :cond_5
+    sget-object p1, Lqxg;->f0:Lqxg;
 
     .line 415
-    const/4 v4, 0x3
-
     .line 416
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
     .line 417
     .line 418
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
     .line 419
-    move-result-object p1
-
     .line 420
-    return-object p1
-
     .line 421
-    :pswitch_a
-    move-object v3, p1
+    :goto_2
+    return-object v0
 
     .line 422
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    :pswitch_7
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 423
     .line 424
-    check-cast p1, LvZ7;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 425
     .line 426
-    iget-object v0, p1, LVOi;->a:LfQg;
-
     .line 427
-    .line 428
-    const p1, -0x5bca71c2
+    new-instance p1, Lgy8;
 
+    .line 428
     .line 429
+    invoke-direct {p1}, Lgy8;-><init>()V
+
     .line 430
     .line 431
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 432
+    iget-object v0, p0, Ldw9;->c:Ljava/lang/Object;
+
     .line 433
     .line 434
-    move-result-object v1
+    check-cast v0, Ljava/lang/String;
 
     .line 435
-    new-instance v5, LIzb;
-
     .line 436
-    .line 437
-    const/16 p1, 0x12
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 437
     .line 438
     .line 439
-    invoke-direct {v5, p1, p0}, LIzb;-><init>(ILjava/lang/Object;)V
+    move-result-object v0
 
     .line 440
+    check-cast v0, Ljava/util/Collection;
+
     .line 441
     .line 442
-    const-string v2, "SELECT value\nFROM memories_profile\nWHERE _id = ?"
+    new-array v2, v7, [Ljava/lang/String;
 
     .line 443
     .line 444
-    const/4 v4, 0x1
+    invoke-interface {v0, v2}, Ljava/util/Collection;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 445
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 446
     .line 447
+    move-result-object v0
+
     .line 448
-    move-result-object p1
+    check-cast v0, [Ljava/lang/String;
 
     .line 449
-    return-object p1
-
     .line 450
-    :pswitch_b
-    move-object v3, p1
+    iput-object v0, p1, Lgy8;->b:[Ljava/lang/String;
 
     .line 451
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 452
+    iput v1, p1, Lgy8;->c:I
+
     .line 453
-    check-cast p1, Ljava/util/Collection;
-
     .line 454
+    iget v0, p1, Lgy8;->a:I
+
     .line 455
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 456
-    .line 457
-    .line 458
-    move-result v0
+    or-int/2addr v0, v9
 
+    .line 457
+    iput v0, p1, Lgy8;->a:I
+
+    .line 458
     .line 459
-    iget-object v1, p0, Ldw9;->X:LVOi;
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 460
     .line 461
-    check-cast v1, Lfc7;
+    check-cast v0, LzJa;
 
     .line 462
     .line 463
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v1, v0, LzJa;->a:Lz9b;
 
     .line 464
     .line 465
-    .line 466
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    iget-object v2, v1, Lz9b;->h:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
+    .line 466
     .line 467
+    new-instance v3, Lbna;
+
     .line 468
     .line 469
-    move-result-object v0
+    const/16 v4, 0x1b
 
     .line 470
-    const-string v2, "\n          |SELECT _id AS entry_id, snap_ids\n          |FROM memories_entry\n          |WHERE _id IN "
-
     .line 471
-    .line 472
-    const-string v4, "\n          "
+    invoke-direct {v3, v1, v4, p1}, Lbna;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 472
     .line 473
     .line 474
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 475
     .line 476
     .line 477
-    move-result-object v2
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 478
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 479
+    invoke-direct {p1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 480
     .line 481
-    move-result v4
-
     .line 482
-    new-instance v5, LIzb;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
     .line 483
     .line 484
-    const/4 p1, 0x0
+    iget-object v0, v0, LzJa;->c:LA36;
 
     .line 485
-    invoke-direct {v5, p1, p0}, LIzb;-><init>(ILjava/lang/Object;)V
-
     .line 486
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 487
     .line 488
-    iget-object v0, v1, LVOi;->a:LfQg;
-
     .line 489
-    .line 490
-    const/4 v1, 0x0
+    sget-object p1, LMT7;->m0:LMT7;
 
+    .line 490
     .line 491
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 492
     .line 493
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 494
-    move-result-object p1
-
     .line 495
-    return-object p1
-
     .line 496
-    :pswitch_c
-    move-object v3, p1
+    return-object v0
 
     .line 497
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    :pswitch_8
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 498
     .line 499
-    check-cast p1, Lfc7;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 500
     .line 501
-    iget-object v0, p1, LVOi;->a:LfQg;
-
     .line 502
+    move-result p1
+
     .line 503
-    const-string v1, "\n    |SELECT\n    |    COUNT(DISTINCT entry._id) AS count\n    |FROM\n    |    memories_entry entry\n    |WHERE entry.is_private = 0\n    |   AND entry.folder_type "
+    xor-int/2addr p1, v9
 
     .line 504
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
     .line 505
-    const-string v2, "="
-
     .line 506
+    check-cast v0, LqC6;
+
     .line 507
-    const-string v4, " ?\n    "
-
     .line 508
-    .line 509
-    invoke-static {v1, v2, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    iget-object v1, p0, Ldw9;->c:Ljava/lang/Object;
 
+    .line 509
     .line 510
+    check-cast v1, LRBa;
+
     .line 511
     .line 512
-    move-result-object v2
+    invoke-virtual {v0, p1, v1}, LqC6;->j(ZLRBa;)Lio/reactivex/rxjava3/core/Single;
 
     .line 513
-    new-instance v5, Lrmb;
-
     .line 514
     .line 515
-    const/16 v1, 0xc
-
-    .line 516
-    .line 517
-    invoke-direct {v5, p0, v1, p1}, Lrmb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 518
-    .line 519
-    .line 520
-    const/4 v1, 0x0
-
-    .line 521
-    const/4 v4, 0x1
-
-    .line 522
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
-    .line 523
-    .line 524
-    .line 525
     move-result-object p1
 
+    .line 516
+    iget-object v1, v0, LqC6;->g0:Ljava/lang/Object;
+
+    .line 517
+    .line 518
+    check-cast v1, LnJe;
+
+    .line 519
+    .line 520
+    invoke-virtual {v1}, LnJe;->d()LA36;
+
+    .line 521
+    .line 522
+    .line 523
+    move-result-object v1
+
+    .line 524
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
+
+    .line 525
     .line 526
-    return-object p1
+    invoke-direct {v2, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 527
-    :pswitch_d
-    move-object v3, p1
-
     .line 528
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 529
+    new-instance p1, Lypa;
+
     .line 530
-    check-cast p1, Ljava/util/LinkedHashSet;
-
     .line 531
-    .line 532
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    invoke-direct {p1, v8, v0}, Lypa;-><init>(ILjava/lang/Object;)V
 
+    .line 532
     .line 533
     .line 534
-    .line 535
-    move-result v0
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
+    .line 535
     .line 536
-    iget-object v1, p0, Ldw9;->X:LVOi;
+    invoke-direct {v0, v2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 537
     .line 538
-    check-cast v1, LvZ7;
-
     .line 539
+    return-object v0
+
     .line 540
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    :pswitch_9
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 541
     .line 542
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
     .line 543
-    move-result-object v0
-
     .line 544
-    const-string v2, "\n          |SELECT\n          |    memories_snap._id,\n          |    memories_snap.memories_entry_id\n          |FROM memories_snap\n          |INNER JOIN memories_entry ON memories_snap.memories_entry_id = memories_entry._id\n          |WHERE memories_entry.servlet_entry_type = ? AND memories_snap._id IN "
-
     .line 545
+    move-result p1
+
     .line 546
-    const-string v4, "\n          "
+    iget-object v1, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 547
     .line 548
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    check-cast v1, LXjd;
 
     .line 549
     .line 550
-    .line 551
-    move-result-object v2
+    new-instance v2, LS0i;
 
+    .line 551
     .line 552
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    invoke-direct {v2, v0, v1}, LS0i;-><init>(ILjava/lang/Object;)V
 
     .line 553
     .line 554
     .line 555
-    move-result p1
+    iget-object v0, v1, LXjd;->e0:Ljava/lang/Object;
 
     .line 556
-    add-int/lit8 v4, p1, 0x1
-
     .line 557
+    check-cast v0, Lio/reactivex/rxjava3/subjects/CompletableSubject;
+
     .line 558
-    new-instance v5, LMub;
-
     .line 559
-    .line 560
-    const/16 p1, 0xa
+    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
+    .line 560
     .line 561
     .line 562
-    invoke-direct {v5, v1, p0, p1}, LMub;-><init>(LVOi;LGre;I)V
+    move-result-object v0
 
     .line 563
+    new-instance v2, LQxa;
+
     .line 564
     .line 565
-    iget-object v0, v1, LVOi;->a:LfQg;
+    invoke-direct {v2, v1, p1, v7}, LQxa;-><init>(LXjd;ZI)V
 
     .line 566
     .line 567
-    const/4 v1, 0x0
-
     .line 568
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 569
     .line 570
@@ -1496,3515 +1234,2274 @@
     move-result-object p1
 
     .line 572
-    return-object p1
+    new-instance v0, LRxa;
 
     .line 573
-    :pswitch_e
-    move-object v3, p1
-
     .line 574
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    iget-object v1, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 575
     .line 576
-    check-cast p1, LvZ7;
+    check-cast v1, LTxa;
 
     .line 577
     .line 578
-    iget-object v0, p1, LVOi;->a:LfQg;
+    invoke-direct {v0, v1, v7}, LRxa;-><init>(LTxa;I)V
 
     .line 579
     .line 580
-    const p1, 0x55530ad4
-
     .line 581
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+
     .line 582
     .line 583
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 584
-    .line 585
-    .line 586
-    move-result-object v1
-
-    .line 587
-    new-instance v5, LfQa;
-
-    .line 588
-    .line 589
-    const/16 p1, 0x18
-
-    .line 590
-    .line 591
-    invoke-direct {v5, p1, p0}, LfQa;-><init>(ILjava/lang/Object;)V
-
-    .line 592
-    .line 593
-    .line 594
-    const-string v2, "SELECT mime_type\nFROM media_package_shared_files\nWHERE uri = ?"
-
-    .line 595
-    .line 596
-    const/4 v4, 0x1
-
-    .line 597
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
-    .line 598
-    .line 599
-    .line 600
     move-result-object p1
 
-    .line 601
+    .line 585
     return-object p1
 
-    .line 602
-    :pswitch_f
-    move-object v3, p1
+    .line 586
+    :pswitch_a
+    check-cast p1, Ljna;
 
+    .line 587
+    .line 588
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
+    .line 589
+    .line 590
+    check-cast v0, LPva;
+
+    .line 591
+    .line 592
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 593
+    .line 594
+    .line 595
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 596
+    .line 597
+    .line 598
+    move-result p1
+
+    .line 599
+    iget-object v2, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 600
+    .line 601
+    check-cast v2, Ll52;
+
+    .line 602
     .line 603
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    if-eqz p1, :cond_a
 
     .line 604
     .line 605
-    check-cast p1, Luc0;
+    if-eq p1, v9, :cond_9
 
     .line 606
     .line 607
-    iget-object v0, p1, LVOi;->a:LfQg;
+    if-eq p1, v6, :cond_8
 
     .line 608
     .line 609
-    const p1, 0x185f358d
+    if-eq p1, v8, :cond_7
 
     .line 610
     .line 611
-    .line 612
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eq p1, v3, :cond_a
 
+    .line 612
     .line 613
+    if-ne p1, v1, :cond_6
+
     .line 614
     .line 615
-    move-result-object v1
+    goto :goto_3
 
     .line 616
-    new-instance v5, LfQa;
+    :cond_6
+    new-instance p1, LwOc;
 
     .line 617
     .line 618
-    const/16 p1, 0x17
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
 
     .line 619
     .line 620
-    invoke-direct {v5, p1, p0}, LfQa;-><init>(ILjava/lang/Object;)V
-
     .line 621
+    throw p1
+
     .line 622
+    :cond_7
+    new-instance p1, Lypa;
+
     .line 623
-    const-string v2, "SELECT *\nFROM media_package\nWHERE session_id = ?"
-
     .line 624
+    invoke-direct {p1, v6, v0}, Lypa;-><init>(ILjava/lang/Object;)V
+
     .line 625
-    const/4 v4, 0x1
-
     .line 626
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 627
+    iget-object v1, v0, LPva;->X:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 628
     .line 629
-    move-result-object p1
+    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 630
-    return-object p1
-
     .line 631
-    :pswitch_10
-    move-object v3, p1
-
     .line 632
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    move-result-object p1
 
     .line 633
-    .line 634
-    check-cast p1, LvZ7;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 634
     .line 635
     .line 636
-    const v0, 0x7bbf1271
+    sget-object v1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
 
     .line 637
     .line 638
-    .line 639
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
+    .line 639
     .line 640
     .line 641
+    move-result-object p1
+
     .line 642
-    move-result-object v1
+    new-instance v1, LOva;
 
     .line 643
-    new-instance v5, LfQa;
-
     .line 644
-    .line 645
-    const/16 v0, 0x14
+    invoke-direct {v1, v2, v9}, LOva;-><init>(Ll52;I)V
 
+    .line 645
     .line 646
     .line 647
-    invoke-direct {v5, v0, p0}, LfQa;-><init>(ILjava/lang/Object;)V
+    iget-object v0, v0, LPva;->t:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 648
     .line 649
-    .line 650
-    iget-object v0, p1, LVOi;->a:LfQg;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 650
     .line 651
     .line 652
-    const-string v2, "SELECT *\nFROM media_package_file_lookup\nWHERE lookup_uri = ?"
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
     .line 653
     .line 654
-    const/4 v4, 0x1
+    invoke-direct {v3, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
 
     .line 655
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 656
     .line 657
-    .line 658
-    move-result-object p1
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableTakeUntil;
 
+    .line 658
     .line 659
-    return-object p1
+    invoke-direct {v0, p1, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableTakeUntil;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)V
 
     .line 660
-    :pswitch_11
-    move-object v3, p1
-
     .line 661
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 662
+    goto :goto_4
+
     .line 663
-    check-cast p1, Ljava/util/Collection;
+    :cond_8
+    invoke-virtual {v0, v2}, LPva;->c(Ll52;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTakeUntil;
 
     .line 664
     .line 665
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 666
+    move-result-object v0
+
     .line 667
+    goto :goto_4
+
     .line 668
-    move-result v0
+    :cond_9
+    invoke-virtual {v0, v2}, LPva;->c(Ll52;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTakeUntil;
 
     .line 669
-    iget-object v1, p0, Ldw9;->X:LVOi;
-
     .line 670
     .line 671
-    check-cast v1, LnB;
+    move-result-object v0
 
     .line 672
+    goto :goto_4
+
     .line 673
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    :cond_a
+    :goto_3
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 674
     .line 675
-    .line 676
-    move-result-object v0
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
+    .line 676
     .line 677
-    const-string v2, "\n          |SELECT\n          |    FriendWithUsername.userId,\n          |    FriendWithUsername.username,\n          |    FriendWithUsername.displayName,\n          |    FriendWithUsername.bitmojiAvatarId,\n          |    FriendWithUsername.bitmojiBackgroundId\n          |FROM FriendWithUsername\n          |WHERE FriendWithUsername.userId IN "
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
     .line 678
     .line 679
-    const-string v4, "\n          |ORDER BY FriendWithUsername.userId\n          "
-
     .line 680
-    .line 681
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    :goto_4
+    new-instance p1, LAM9;
 
+    .line 681
     .line 682
+    const/16 v1, 0xd
+
     .line 683
     .line 684
-    move-result-object v2
+    invoke-direct {p1, v1, v2}, LAM9;-><init>(ILjava/lang/Object;)V
 
     .line 685
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
-
     .line 686
     .line 687
-    .line 688
-    move-result v4
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
+    .line 688
     .line 689
-    new-instance v5, LfQa;
+    invoke-direct {v1, v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 690
     .line 691
-    const/16 p1, 0xe
-
     .line 692
+    return-object v1
+
     .line 693
-    invoke-direct {v5, p1, p0}, LfQa;-><init>(ILjava/lang/Object;)V
+    :pswitch_b
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 694
     .line 695
-    .line 696
-    iget-object v0, v1, LVOi;->a:LfQg;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 696
     .line 697
     .line 698
-    const/4 v1, 0x0
+    iget-object p1, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 699
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 700
+    check-cast p1, Leua;
+
     .line 701
     .line 702
-    move-result-object p1
+    iget-object p1, p1, Leua;->c:LPif;
 
     .line 703
-    return-object p1
-
     .line 704
-    :pswitch_12
-    move-object v3, p1
+    iget-object v0, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 705
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 706
+    check-cast v0, Lio/reactivex/rxjava3/core/Observable;
+
     .line 707
-    check-cast p1, Ljava/util/ArrayList;
-
     .line 708
-    .line 709
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {p1, v0}, LPif;->w(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 709
     .line 710
     .line 711
+    move-result-object p1
+
     .line 712
-    move-result v0
+    return-object p1
 
     .line 713
-    iget-object v1, p0, Ldw9;->X:LVOi;
+    :pswitch_c
+    check-cast p1, LL4b;
 
     .line 714
     .line 715
-    check-cast v1, Lq5b;
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 716
     .line 717
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v0, LmGc;
 
     .line 718
     .line 719
-    .line 720
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    invoke-virtual {v0}, LmGc;->k()Ljava/util/ArrayDeque;
 
+    .line 720
     .line 721
     .line 722
-    .line 723
     move-result-object v0
 
-    .line 724
-    const-string v2, "\n          |SELECT\n          |       userId,\n          |       displayName,\n          |       username,\n          |       bitmojiAvatarId,\n          |       bitmojiSelfieId,\n          |       Friend.birthday,\n          |       Friend.storyMuted,\n          |       Friend.streakLength,\n          |       Friend.friendmojiCategories\n          |FROM FriendWithUsername AS Friend\n          |WHERE userId IN "
+    .line 723
+    invoke-virtual {v0}, Ljava/util/ArrayDeque;->iterator()Ljava/util/Iterator;
 
+    .line 724
     .line 725
     .line 726
-    const-string v4, "\n          "
+    move-result-object v0
 
     .line 727
-    .line 728
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    :cond_b
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 728
     .line 729
     .line 730
+    move-result v1
+
     .line 731
-    move-result-object v2
+    if-eqz v1, :cond_c
 
     .line 732
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
     .line 733
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 734
     .line 735
-    move-result v4
-
     .line 736
-    new-instance v5, LfQa;
+    move-result-object v1
 
     .line 737
+    move-object v2, v1
+
     .line 738
-    const/16 p1, 0x8
+    check-cast v2, Lwmd;
 
     .line 739
     .line 740
-    invoke-direct {v5, p1, p0}, LfQa;-><init>(ILjava/lang/Object;)V
+    iget-object v2, v2, Lwmd;->c:LG4b;
 
     .line 741
     .line 742
-    .line 743
-    iget-object v0, v1, LVOi;->a:LfQg;
+    invoke-interface {v2}, LG4b;->Q0()LL4b;
 
+    .line 743
     .line 744
     .line 745
-    const/4 v1, 0x0
+    move-result-object v2
 
     .line 746
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    iget-object v2, v2, LL4b;->a:LAp0;
 
     .line 747
     .line 748
-    .line 749
-    move-result-object p1
+    iget-object v2, v2, LAp0;->a:Lrp0;
 
+    .line 749
     .line 750
-    return-object p1
+    iget-object v3, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 751
-    :pswitch_13
-    move-object v3, p1
-
     .line 752
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    check-cast v3, LVZ1;
 
     .line 753
     .line 754
-    check-cast p1, LUS0;
+    invoke-static {v2, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 755
     .line 756
-    const v0, 0x4d870b38    # 2.83207424E8f
-
     .line 757
-    .line 758
-    .line 759
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result v2
 
+    .line 758
+    if-eqz v2, :cond_b
+
+    .line 759
     .line 760
+    goto :goto_5
+
     .line 761
+    :cond_c
+    move-object v1, v4
+
     .line 762
-    move-result-object v1
+    :goto_5
+    check-cast v1, Lwmd;
 
     .line 763
-    new-instance v5, LEca;
-
     .line 764
+    if-eqz v1, :cond_d
+
     .line 765
-    const/16 v0, 0x9
-
     .line 766
-    .line 767
-    invoke-direct {v5, p1, v0, p0}, LEca;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    iget-object v0, v1, Lwmd;->c:LG4b;
 
+    .line 767
     .line 768
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
+
     .line 769
     .line 770
-    iget-object v0, p1, LVOi;->a:LfQg;
-
     .line 771
+    move-result-object v4
+
     .line 772
-    const-string v2, "SELECT COUNT(*)\nFROM LocalConversationInteraction\nWHERE LocalConversationInteraction.interactionType = ?"
+    :cond_d
+    if-nez v4, :cond_e
 
     .line 773
     .line 774
-    const/4 v4, 0x1
+    goto :goto_6
 
     .line 775
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    :cond_e
+    move-object p1, v4
 
     .line 776
-    .line 777
-    .line 778
-    move-result-object p1
-
-    .line 779
+    :goto_6
     return-object p1
 
-    .line 780
-    :pswitch_14
-    move-object v3, p1
+    .line 777
+    :pswitch_d
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
 
+    .line 778
+    .line 779
+    check-cast v0, Lha;
+
+    .line 780
     .line 781
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    invoke-virtual {v0, p1}, Lha;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 782
     .line 783
-    check-cast p1, LvZ7;
-
     .line 784
+    move-result-object p1
+
     .line 785
-    const v0, -0x46bbf9a2
+    check-cast p1, Lbda;
 
     .line 786
     .line 787
-    .line 788
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v0, p0, Ldw9;->c:Ljava/lang/Object;
 
+    .line 788
     .line 789
+    check-cast v0, LOWk;
+
     .line 790
     .line 791
-    move-result-object v1
+    invoke-interface {p1, v0}, Lbda;->b(LOWk;)Lio/reactivex/rxjava3/core/Flowable;
 
     .line 792
-    new-instance v5, LuF9;
-
     .line 793
     .line 794
-    const/16 v0, 0x15
+    move-result-object p1
 
     .line 795
+    return-object p1
+
     .line 796
-    invoke-direct {v5, v0, p0}, LuF9;-><init>(ILjava/lang/Object;)V
+    :pswitch_e
+    check-cast p1, Ljava/util/Map;
 
     .line 797
     .line 798
+    new-instance v0, LoJc;
+
     .line 799
-    iget-object v0, p1, LVOi;->a:LfQg;
-
     .line 800
+    iget-object v1, p0, Ldw9;->c:Ljava/lang/Object;
+
     .line 801
-    const-string v2, "SELECT *\nFROM LensUsageSettingsStorage\nWHERE lensId = ?"
-
     .line 802
-    .line 803
-    const/4 v4, 0x1
+    check-cast v1, LCPf;
 
+    .line 803
     .line 804
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    iget-object v2, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 805
     .line 806
-    .line 807
-    move-result-object p1
+    check-cast v2, Ljava/lang/String;
 
+    .line 807
     .line 808
-    return-object p1
+    invoke-direct {v0, v2, v9, v8, v1}, LoJc;-><init>(Ljava/lang/String;IILCPf;)V
 
     .line 809
-    :pswitch_15
-    move-object v3, p1
-
     .line 810
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
-
     .line 811
-    .line 812
-    check-cast p1, Ljava/util/ArrayList;
+    invoke-virtual {v0, p1}, LoJc;->k(Ljava/util/Map;)V
 
+    .line 812
     .line 813
     .line 814
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v0}, LoJc;->j()LqJc;
 
     .line 815
     .line 816
     .line 817
-    move-result v0
+    move-result-object p1
 
     .line 818
-    iget-object v1, p0, Ldw9;->X:LVOi;
+    return-object p1
 
     .line 819
+    :pswitch_f
+    check-cast p1, Ljava/lang/Number;
+
     .line 820
-    check-cast v1, LvZ7;
-
     .line 821
-    .line 822
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
 
+    .line 822
     .line 823
     .line 824
+    move-result-wide v2
+
     .line 825
-    move-result-object v0
+    iget-object p1, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 826
-    const-string v2, "SELECT _id, lensId, impressionCount FROM LensStatisticsStorage WHERE lensId IN "
-
     .line 827
-    .line 828
-    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    check-cast p1, LqOj;
 
+    .line 828
     .line 829
+    const-wide/16 v4, -0x1
+
     .line 830
     .line 831
-    move-result-object v2
+    cmp-long v1, v2, v4
 
     .line 832
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
     .line 833
+    if-nez v1, :cond_f
+
     .line 834
     .line 835
-    move-result v4
+    iget-object p1, p1, LqOj;->c:Ljava/util/ArrayList;
 
     .line 836
-    new-instance v5, LuF9;
-
     .line 837
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
     .line 838
-    const/16 p1, 0x14
-
     .line 839
-    .line 840
-    invoke-direct {v5, p1, p0}, LuF9;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
+    .line 840
     .line 841
     .line 842
+    goto :goto_7
+
     .line 843
-    iget-object v0, v1, LVOi;->a:LfQg;
+    :cond_f
+    iget-object v1, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 844
     .line 845
-    const/4 v1, 0x0
+    check-cast v1, LN2a;
 
     .line 846
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 847
+    iget-object v1, v1, LN2a;->c:LMI6;
+
     .line 848
     .line 849
-    move-result-object p1
+    sget-object v4, Llj7;->Z:Llj7;
 
     .line 850
-    return-object p1
-
     .line 851
-    :pswitch_16
-    move-object v3, p1
+    sget-object v6, LO83;->a:LO83;
 
     .line 852
-    iget-object p1, p0, Ldw9;->X:LVOi;
-
     .line 853
+    const/4 v5, 0x0
+
     .line 854
-    check-cast p1, LMF8;
+    const/16 v7, 0xc
 
     .line 855
     .line 856
-    const v0, -0x6fb91caf
+    invoke-static/range {v1 .. v7}, LHUk;->f(LMI6;JLlj7;LeUg;LO83;I)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
     .line 857
     .line 858
     .line 859
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 860
-    .line 861
-    .line 862
     move-result-object v1
 
-    .line 863
-    new-instance v5, LuF9;
+    .line 860
+    const-wide/16 v2, 0x1
 
+    .line 861
+    .line 862
+    invoke-virtual {v1, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->Q0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
+
+    .line 863
     .line 864
     .line 865
-    const/16 v0, 0xf
+    move-result-object v1
 
     .line 866
-    .line 867
-    invoke-direct {v5, v0, p0}, LuF9;-><init>(ILjava/lang/Object;)V
+    new-instance v2, LwL8;
 
+    .line 867
     .line 868
+    invoke-direct {v2, v0, p1}, LwL8;-><init>(ILjava/lang/Object;)V
+
     .line 869
     .line 870
-    iget-object v0, p1, LVOi;->a:LfQg;
-
     .line 871
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
     .line 872
-    const-string v2, "SELECT data\nFROM LensPersistentStorage\nWHERE lensId = ?"
-
     .line 873
+    invoke-direct {v0, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 874
-    const/4 v4, 0x1
-
     .line 875
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 876
-    .line 877
-    .line 878
-    move-result-object p1
+    :goto_7
+    return-object v0
 
+    .line 877
+    :pswitch_10
+    check-cast p1, Ljava/util/List;
+
+    .line 878
     .line 879
-    return-object p1
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 880
-    :pswitch_17
-    move-object v3, p1
-
     .line 881
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    check-cast v0, LdX9;
 
     .line 882
     .line 883
-    check-cast p1, LiW9;
+    iget-object v0, v0, LdX9;->b:LQS9;
 
     .line 884
     .line 885
-    const v0, 0x962da1b
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 886
     .line 887
     .line 888
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v0
 
     .line 889
+    check-cast v0, LYmd;
+
     .line 890
     .line 891
-    move-result-object v1
+    check-cast p1, Ljava/lang/Iterable;
 
     .line 892
-    new-instance v5, LuF9;
-
     .line 893
+    new-instance v1, Ljava/util/ArrayList;
+
     .line 894
-    const/16 v0, 0xd
-
     .line 895
-    .line 896
-    invoke-direct {v5, v0, p0}, LuF9;-><init>(ILjava/lang/Object;)V
+    invoke-static {p1, v5}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
+    .line 896
     .line 897
     .line 898
+    move-result v2
+
     .line 899
-    iget-object v0, p1, LVOi;->a:LfQg;
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 900
     .line 901
-    const-string v2, "SELECT favorite FROM LensFavoriteStatusStorage WHERE lensId = ?"
-
     .line 902
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
     .line 903
-    const/4 v4, 0x1
-
     .line 904
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 905
-    .line 906
-    .line 907
     move-result-object p1
 
-    .line 908
-    return-object p1
+    .line 906
+    :goto_8
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 907
+    .line 908
     .line 909
-    :pswitch_18
-    move-object v3, p1
+    move-result v2
 
     .line 910
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    if-eqz v2, :cond_10
 
     .line 911
     .line 912
-    check-cast p1, Luc0;
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 913
     .line 914
-    iget-object v0, p1, LVOi;->a:LfQg;
-
     .line 915
+    move-result-object v2
+
     .line 916
-    const v1, 0x27efb15a
+    check-cast v2, Lcom/snap/composer/lenses/LensItem;
 
     .line 917
     .line 918
-    .line 919
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    new-instance v3, Lsma;
 
+    .line 919
     .line 920
+    invoke-virtual {v2}, Lcom/snap/composer/lenses/LensItem;->d()Ljava/lang/String;
+
     .line 921
     .line 922
-    move-result-object v1
-
     .line 923
-    new-instance v5, Lsm9;
+    move-result-object v4
 
     .line 924
-    .line 925
-    const/16 v2, 0xc
+    invoke-virtual {v2}, Lcom/snap/composer/lenses/LensItem;->b()Ljava/lang/String;
 
+    .line 925
     .line 926
     .line 927
-    invoke-direct {v5, p1, v2, p0}, Lsm9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    move-result-object v2
 
     .line 928
+    invoke-direct {v3, v4, v2}, Lsma;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 929
     .line 930
-    const-string v2, "SELECT\n    id,\n    attribution,\n    name,\n    subtitle,\n    isEmpty,\n    isHorizontal,\n    spanCount,\n    isMinimized,\n    externalActivationActionId,\n    itemsSpacingMultiplier,\n    useItemsCardBackground,\n    useItemsDivider,\n    iconUri\nFROM LensExplorerFeed\nWHERE contentSubset = ?\nORDER BY position ASC"
-
     .line 931
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 932
-    const/4 v4, 0x1
-
     .line 933
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 934
-    .line 935
-    .line 936
-    move-result-object p1
+    goto :goto_8
 
+    .line 935
+    :cond_10
+    iget-object p1, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 936
     .line 937
-    return-object p1
+    check-cast p1, Lcom/snap/composer/lenses/LensItem;
 
     .line 938
-    :pswitch_19
-    move-object v3, p1
-
     .line 939
-    iget-object p1, p0, Ldw9;->t:Ljava/lang/Object;
+    invoke-virtual {p1}, Lcom/snap/composer/lenses/LensItem;->d()Ljava/lang/String;
 
     .line 940
     .line 941
-    check-cast p1, Ljava/util/AbstractCollection;
-
     .line 942
+    move-result-object p1
+
     .line 943
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    new-instance v2, Lrma;
 
     .line 944
     .line 945
+    invoke-direct {v2, v1, p1}, Lrma;-><init>(Ljava/util/ArrayList;Ljava/lang/String;)V
+
     .line 946
-    move-result v0
-
     .line 947
-    iget-object v1, p0, Ldw9;->X:LVOi;
-
     .line 948
+    new-instance p1, Ltma;
+
     .line 949
-    check-cast v1, LvZ7;
-
     .line 950
-    .line 951
-    invoke-static {v0}, LVOi;->a(I)Ljava/lang/String;
+    invoke-direct {p1, v2}, Ltma;-><init>(Lrma;)V
 
+    .line 951
     .line 952
     .line 953
+    invoke-interface {v0, p1}, LYmd;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Completable;
+
     .line 954
-    move-result-object v0
-
     .line 955
-    const-string v2, "\n          |SELECT creatorId, lensIconUri, thumbnailUri\n          |FROM LensExplorerCreatorLensPreview\n          |WHERE creatorId IN "
-
     .line 956
+    move-result-object p1
+
     .line 957
-    const-string v4, "\n          "
+    return-object p1
 
     .line 958
-    .line 959
-    invoke-static {v2, v0, v4}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    :pswitch_11
+    check-cast p1, Ljava/lang/Boolean;
 
+    .line 959
     .line 960
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
     .line 961
     .line 962
-    move-result-object v2
-
     .line 963
-    invoke-interface {p1}, Ljava/util/Collection;->size()I
+    move-result p1
 
     .line 964
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
     .line 965
     .line 966
-    move-result v4
+    check-cast v0, LxU9;
 
     .line 967
-    new-instance v5, LuF9;
-
     .line 968
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 969
-    const/4 p1, 0x7
-
     .line 970
-    invoke-direct {v5, p1, p0}, LuF9;-><init>(ILjava/lang/Object;)V
-
     .line 971
+    new-instance v1, LOu8;
+
     .line 972
     .line 973
-    iget-object v0, v1, LVOi;->a:LfQg;
+    iget-object v2, p0, Ldw9;->c:Ljava/lang/Object;
 
     .line 974
     .line 975
-    const/4 v1, 0x0
+    check-cast v2, LY79;
 
     .line 976
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
-
     .line 977
+    const/16 v3, 0x9
+
     .line 978
     .line 979
-    move-result-object p1
+    invoke-direct {v1, v0, p1, v2, v3}, LOu8;-><init>(Ljava/lang/Object;ZLjava/lang/Object;I)V
 
     .line 980
-    return-object p1
-
     .line 981
-    :pswitch_1a
-    move-object v3, p1
-
     .line 982
-    iget-object p1, p0, Ldw9;->X:LVOi;
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;
 
     .line 983
     .line 984
-    check-cast p1, Luc0;
+    invoke-direct {v3, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;-><init>(Lio/reactivex/rxjava3/core/SingleOnSubscribe;)V
 
     .line 985
     .line 986
-    const v0, 0x7a2a989f
-
     .line 987
+    if-eqz p1, :cond_11
+
     .line 988
     .line 989
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    new-instance p1, LQM9;
 
     .line 990
     .line 991
+    invoke-direct {p1, v0, v8, v2}, LQM9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 992
-    move-result-object v1
-
     .line 993
-    new-instance v5, Lda9;
-
     .line 994
+    iget-object v0, v0, LxU9;->c:Lio/reactivex/rxjava3/core/Observable;
+
     .line 995
-    const/16 v0, 0x1d
-
     .line 996
-    .line 997
-    invoke-direct {v5, v0, p0}, Lda9;-><init>(ILjava/lang/Object;)V
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 997
     .line 998
     .line 999
+    move-result-object p1
+
     .line 1000
-    iget-object v0, p1, LVOi;->a:LfQg;
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 1001
     .line 1002
-    const-string v2, "SELECT ids FROM(\n    SELECT ids FROM LastSeenLensesStorage WHERE tag = ?\n    UNION\n    SELECT \"\"\n) ORDER BY ids DESC LIMIT 1"
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1003
     .line 1004
-    const/4 v4, 0x1
-
     .line 1005
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
 
     .line 1006
     .line 1007
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Ljava/lang/Object;)V
+
     .line 1008
-    move-result-object p1
-
     .line 1009
-    return-object p1
-
     .line 1010
-    :pswitch_1b
-    move-object v3, p1
+    new-array p1, v6, [Lio/reactivex/rxjava3/core/SingleSource;
 
     .line 1011
-    iget-object p1, p0, Ldw9;->X:LVOi;
-
     .line 1012
+    aput-object v3, p1, v7
+
     .line 1013
-    check-cast p1, Luc0;
-
     .line 1014
-    .line 1015
-    const v0, 0x39c8c2e4
+    aput-object v1, p1, v9
 
+    .line 1015
     .line 1016
+    invoke-static {p1}, Lio/reactivex/rxjava3/core/Single;->d([Lio/reactivex/rxjava3/core/SingleSource;)Lio/reactivex/rxjava3/core/Single;
+
     .line 1017
     .line 1018
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 1019
+    move-result-object v3
+
     .line 1020
+    :cond_11
+    return-object v3
+
     .line 1021
-    move-result-object v1
+    :pswitch_12
+    check-cast p1, LDpd;
 
     .line 1022
-    new-instance v5, Lsm9;
-
     .line 1023
-    .line 1024
-    const/4 v0, 0x5
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
 
+    .line 1024
     .line 1025
-    invoke-direct {v5, p1, v0, p0}, Lsm9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    move-object v2, v0
 
     .line 1026
+    check-cast v2, Lvoj;
+
     .line 1027
     .line 1028
-    iget-object v0, p1, LVOi;->a:LfQg;
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
     .line 1029
     .line 1030
-    const-string v2, "SELECT\n    timestamp\nFROM LastFullSync\nWHERE\n    sectionSource = ?"
+    move-object v4, p1
 
     .line 1031
-    .line 1032
-    const/4 v4, 0x1
+    check-cast v4, LUM8;
 
+    .line 1032
     .line 1033
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    new-instance v1, Lxi6;
 
     .line 1034
     .line 1035
+    iget-object p1, p0, Ldw9;->b:Ljava/lang/Object;
+
     .line 1036
-    move-result-object p1
-
     .line 1037
-    return-object p1
-
-    .line 1038
-    :pswitch_1c
     move-object v3, p1
 
+    .line 1038
+    check-cast v3, LYs8;
+
     .line 1039
-    iget-object p1, p0, Ldw9;->X:LVOi;
-
     .line 1040
-    .line 1041
-    check-cast p1, LvZ7;
+    iget-object p1, p0, Ldw9;->c:Ljava/lang/Object;
 
+    .line 1041
     .line 1042
+    move-object v5, p1
+
     .line 1043
-    iget-object v0, p1, LVOi;->a:LfQg;
+    check-cast v5, LwS9;
 
     .line 1044
     .line 1045
-    const-string p1, "\n    |SELECT _id, feedType, origin, rank, data, externalId, sectionType, sectionName, sectionRank, version, expireTime, requestId\n    |FROM Item\n    |WHERE _id"
+    const/16 v6, 0x11
 
     .line 1046
     .line 1047
-    const-string v1, "="
+    invoke-direct/range {v1 .. v6}, Lxi6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 1048
     .line 1049
-    const-string v2, "?\n    "
-
     .line 1050
-    .line 1051
-    invoke-static {p1, v1, v2}, LEU0;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;
 
+    .line 1051
     .line 1052
+    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;-><init>(Lio/reactivex/rxjava3/core/SingleOnSubscribe;)V
+
     .line 1053
     .line 1054
-    move-result-object v2
-
     .line 1055
-    new-instance v5, Lda9;
+    return-object p1
 
     .line 1056
+    :pswitch_13
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 1057
-    const/16 p1, 0x12
-
     .line 1058
-    .line 1059
-    invoke-direct {v5, p1, p0}, Lda9;-><init>(ILjava/lang/Object;)V
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 1059
     .line 1060
     .line 1061
+    move-result p1
+
     .line 1062
-    const/4 v1, 0x0
+    new-instance v0, LWi8;
 
     .line 1063
-    const/4 v4, 0x1
-
     .line 1064
-    invoke-virtual/range {v0 .. v5}, LfQg;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)Lase;
+    iget-object v1, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 1065
     .line 1066
-    .line 1067
-    move-result-object p1
+    check-cast v1, LPc9;
 
+    .line 1067
     .line 1068
-    return-object p1
+    iget-object v2, v1, LPc9;->b:Ljava/lang/Object;
 
     .line 1069
+    .line 1070
+    check-cast v2, Landroid/content/Context;
+
+    .line 1071
+    .line 1072
+    if-eqz p1, :cond_12
+
+    .line 1073
+    .line 1074
+    const p1, 0x7f1317c6
+
+    .line 1075
+    .line 1076
+    .line 1077
+    invoke-virtual {v2, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 1078
+    .line 1079
+    .line 1080
+    move-result-object p1
+
+    .line 1081
+    goto :goto_9
+
+    .line 1082
+    :cond_12
+    const p1, 0x7f1317af
+
+    .line 1083
+    .line 1084
+    .line 1085
+    invoke-virtual {v2, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 1086
+    .line 1087
+    .line 1088
+    move-result-object p1
+
+    .line 1089
+    :goto_9
+    new-instance v2, LMO8;
+
+    .line 1090
+    .line 1091
+    iget-object v3, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 1092
+    .line 1093
+    check-cast v3, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 1094
+    .line 1095
+    const/16 v4, 0x1a
+
+    .line 1096
+    .line 1097
+    invoke-direct {v2, v1, v4, v3}, LMO8;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 1098
+    .line 1099
+    .line 1100
+    invoke-direct {v0, p1, v2}, LWi8;-><init>(Ljava/lang/String;Lkotlin/jvm/functions/Function0;)V
+
+    .line 1101
+    .line 1102
+    .line 1103
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 1104
+    .line 1105
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
+    .line 1106
+    .line 1107
+    .line 1108
+    return-object p1
+
+    .line 1109
+    :pswitch_14
+    check-cast p1, LDpd;
+
+    .line 1110
+    .line 1111
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
+
+    .line 1112
+    .line 1113
+    check-cast v0, Los7;
+
+    .line 1114
+    .line 1115
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
+
+    .line 1116
+    .line 1117
+    check-cast p1, LR1f;
+
+    .line 1118
+    .line 1119
+    iget-object v1, p0, Ldw9;->b:Ljava/lang/Object;
+
+    .line 1120
+    .line 1121
+    check-cast v1, LO0f;
+
+    .line 1122
+    .line 1123
+    iput-object v0, v1, LO0f;->a:Ljava/lang/Object;
+
+    .line 1124
+    .line 1125
+    new-instance v0, LP1f;
+
+    .line 1126
+    .line 1127
+    invoke-direct {v0}, LP1f;-><init>()V
+
+    .line 1128
+    .line 1129
+    .line 1130
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 1131
+    .line 1132
+    .line 1133
+    iput v9, v0, LP1f;->a:I
+
+    .line 1134
+    .line 1135
+    iput-object p1, v0, LP1f;->b:LR1f;
+
+    .line 1136
+    .line 1137
+    iget-object p1, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 1138
+    .line 1139
+    check-cast p1, Lk3f;
+
+    .line 1140
+    .line 1141
+    iget-object v1, p1, Lk3f;->g:Ljava/lang/String;
+
+    .line 1142
+    .line 1143
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 1144
+    .line 1145
+    .line 1146
+    iput-object v1, v0, LP1f;->t:Ljava/lang/String;
+
+    .line 1147
+    .line 1148
+    iget v1, v0, LP1f;->c:I
+
+    .line 1149
+    .line 1150
+    iget-object p1, p1, Lk3f;->f:[B
+
+    .line 1151
+    .line 1152
+    iput-object p1, v0, LP1f;->X:[B
+
+    .line 1153
+    .line 1154
+    or-int/lit8 p1, v1, 0x3
+
+    .line 1155
+    .line 1156
+    iput p1, v0, LP1f;->c:I
+
+    .line 1157
+    .line 1158
+    return-object v0
+
+    .line 1159
+    :pswitch_15
+    check-cast p1, Ljava/lang/String;
+
+    .line 1160
+    .line 1161
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
+    .line 1162
+    .line 1163
+    check-cast v0, LKC9;
+
+    .line 1164
+    .line 1165
+    iget-object v1, v0, LKC9;->a:LEK1;
+
+    .line 1166
+    .line 1167
+    invoke-virtual {v1}, LEK1;->c()Lzh5;
+
+    .line 1168
+    .line 1169
+    .line 1170
+    move-result-object v1
+
+    .line 1171
+    new-instance v2, LXQ8;
+
+    .line 1172
+    .line 1173
+    iget-object v3, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 1174
+    .line 1175
+    check-cast v3, LnJ1;
+
+    .line 1176
+    .line 1177
+    const/4 v4, 0x7
+
+    .line 1178
+    invoke-direct {v2, v0, v3, p1, v4}, LXQ8;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 1179
+    .line 1180
+    .line 1181
+    const-string p1, "ItemDataSourceImpl:addCustomSticker"
+
+    .line 1182
+    .line 1183
+    invoke-interface {v1, p1, v2}, Lzh5;->t(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableResumeNext;
+
+    .line 1184
+    .line 1185
+    .line 1186
+    move-result-object p1
+
+    .line 1187
+    return-object p1
+
+    .line 1188
+    :pswitch_16
+    check-cast p1, Ljava/lang/String;
+
+    .line 1189
+    .line 1190
+    new-instance v0, LSA9;
+
+    .line 1191
+    .line 1192
+    iget-object v1, p0, Ldw9;->b:Ljava/lang/Object;
+
+    .line 1193
+    .line 1194
+    check-cast v1, LTA9;
+
+    .line 1195
+    .line 1196
+    iget-object v2, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 1197
+    .line 1198
+    check-cast v2, Ljava/util/List;
+
+    .line 1199
+    .line 1200
+    invoke-direct {v0, v1, v2, p1}, LSA9;-><init>(LTA9;Ljava/util/List;Ljava/lang/String;)V
+
+    .line 1201
+    .line 1202
+    .line 1203
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;
+
+    .line 1204
+    .line 1205
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;-><init>(Lio/reactivex/rxjava3/core/SingleOnSubscribe;)V
+
+    .line 1206
+    .line 1207
+    .line 1208
+    return-object p1
+
+    .line 1209
     :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1c
-        :pswitch_1b
-        :pswitch_1a
-        :pswitch_19
-        :pswitch_18
-        :pswitch_17
+    .packed-switch 0x2
         :pswitch_16
         :pswitch_15
         :pswitch_14
+        :pswitch_0
         :pswitch_13
         :pswitch_12
         :pswitch_11
         :pswitch_10
         :pswitch_f
         :pswitch_e
+        :pswitch_0
         :pswitch_d
+        :pswitch_0
         :pswitch_c
         :pswitch_b
         :pswitch_a
         :pswitch_9
         :pswitch_8
+        :pswitch_0
         :pswitch_7
         :pswitch_6
         :pswitch_5
         :pswitch_4
+        :pswitch_0
         :pswitch_3
         :pswitch_2
         :pswitch_1
-        :pswitch_0
     .end packed-switch
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public b([B[BI[B)Z
+    .locals 9
+
+    .line 1
+    const p1, 0xffd9
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 p2, 0x0
+
+    .line 5
+    if-ne p3, p1, :cond_0
+
+    .line 6
+    .line 7
+    goto/16 :goto_2
+
+    .line 8
+    .line 9
+    :cond_0
+    iget-object p1, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    check-cast p1, Ljava/util/ArrayList;
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    check-cast v0, LZI9;
+
+    .line 16
+    .line 17
+    const v1, 0xffe1
+
+    .line 18
+    .line 19
+    .line 20
+    if-ne p3, v1, :cond_c
+
+    .line 21
+    .line 22
+    iget-object p3, v0, LZI9;->d:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    if-eqz p3, :cond_1
+
+    .line 25
+    .line 26
+    goto/16 :goto_3
+
+    .line 27
+    .line 28
+    :cond_1
+    array-length p3, p4
+
+    .line 29
+    const/16 v1, 0x1d
+
+    .line 30
+    .line 31
+    if-ge p3, v1, :cond_2
+
+    .line 32
+    .line 33
+    goto/16 :goto_3
+
+    .line 34
+    .line 35
+    :cond_2
+    const/4 p3, 0x0
+
+    .line 36
+    :goto_0
+    sget-object v2, LWI9;->a:[B
+
+    .line 37
+    .line 38
+    if-ge p3, v1, :cond_4
+
+    .line 39
+    .line 40
+    aget-byte v3, p4, p3
+
+    .line 41
+    .line 42
+    aget-byte v2, v2, p3
+
+    .line 43
+    .line 44
+    if-ge v3, v2, :cond_3
+
+    .line 45
+    .line 46
+    goto/16 :goto_3
+
+    .line 47
+    .line 48
+    :cond_3
+    add-int/lit8 p3, p3, 0x1
+
+    .line 49
+    .line 50
+    goto :goto_0
+
+    .line 51
+    :cond_4
+    array-length p3, p4
+
+    .line 52
+    const-string v3, "Invalid JPEG XMP Segment."
+
+    .line 53
+    .line 54
+    if-lt p3, v1, :cond_b
+
+    .line 55
+    .line 56
+    const/4 p3, 0x0
+
+    .line 57
+    :goto_1
+    if-ge p3, v1, :cond_6
+
+    .line 58
+    .line 59
+    aget-byte v4, p4, p3
+
+    .line 60
+    .line 61
+    aget-byte v5, v2, p3
+
+    .line 62
+    .line 63
+    if-lt v4, v5, :cond_5
+
+    .line 64
+    .line 65
+    add-int/lit8 p3, p3, 0x1
+
+    .line 66
+    .line 67
+    goto :goto_1
+
+    .line 68
+    :cond_5
+    new-instance p1, Lyc9;
+
+    .line 69
+    .line 70
+    invoke-direct {p1, v3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 71
+    .line 72
+    .line 73
+    throw p1
+
+    .line 74
+    :cond_6
+    :try_start_0
+    new-instance v1, Ljava/lang/String;
+
+    .line 75
+    .line 76
+    array-length v2, p4
+
+    .line 77
+    sub-int/2addr v2, p3
+
+    .line 78
+    sget-object v4, LxF2;->a:Ljava/nio/charset/Charset;
+
+    .line 79
+    .line 80
+    invoke-direct {v1, p4, p3, v2, v4}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 81
+    .line 82
+    .line 83
+    new-instance p3, LWqd;
+
+    .line 84
+    .line 85
+    invoke-direct {p3}, LWqd;-><init>()V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-static {v1, p3}, Lkrk;->b(Ljava/lang/String;LWqd;)Ljrk;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object p3
+
+    .line 92
+    const/4 v2, 0x0
+
+    .line 93
+    invoke-virtual {p3, v2}, Ljrk;->c(Ljava/lang/String;)Lhrk;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object v4
+
+    .line 97
+    :catch_0
+    :cond_7
+    iget-object v5, v4, Lhrk;->b:Ljava/util/Iterator;
+
+    .line 98
+    .line 99
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 100
+    .line 101
+    .line 102
+    move-result v5
+
+    .line 103
+    if-eqz v5, :cond_9
+
+    .line 104
+    .line 105
+    invoke-virtual {v4}, Lhrk;->next()Ljava/lang/Object;
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_1
+
+    .line 106
+    .line 107
+    .line 108
+    :try_start_1
+    const-string v5, "http://ns.adobe.com/xmp/note/"
+
+    .line 109
+    .line 110
+    invoke-virtual {p3, v5}, Ljrk;->c(Ljava/lang/String;)Lhrk;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object v5
+    :try_end_1
+    .catch Ldrk; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 114
+    :try_start_2
+    iget-object v5, v5, Lhrk;->b:Ljava/util/Iterator;
+    :try_end_2
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_2 .. :try_end_2} :catch_1
+
+    .line 115
+    .line 116
+    :cond_8
+    :try_start_3
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v6
+
+    .line 120
+    if-eqz v6, :cond_7
+
+    .line 121
+    .line 122
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object v6
+
+    .line 126
+    check-cast v6, Lerk;
+
+    .line 127
+    .line 128
+    const-string v7, "xmpNote:HasExtendedXMP"
+
+    .line 129
+    .line 130
+    iget-object v8, v6, Lerk;->a:Ljava/lang/String;
+
+    .line 131
+    .line 132
+    invoke-virtual {v7, v8}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 133
+    .line 134
+    .line 135
+    move-result v7
+
+    .line 136
+    if-eqz v7, :cond_8
+
+    .line 137
+    .line 138
+    iget-object v2, v6, Lerk;->b:Ljava/lang/String;
+    :try_end_3
+    .catch Ldrk; {:try_start_3 .. :try_end_3} :catch_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_3 .. :try_end_3} :catch_1
+
+    .line 139
+    .line 140
+    :cond_9
+    :try_start_4
+    iput-object v2, v0, LZI9;->d:Ljava/lang/String;
+    :try_end_4
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_4 .. :try_end_4} :catch_1
+
+    .line 141
+    .line 142
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 143
+    .line 144
+    .line 145
+    iget-object p3, v0, LZI9;->d:Ljava/lang/String;
+
+    .line 146
+    .line 147
+    if-eqz p3, :cond_a
+
+    .line 148
+    .line 149
+    goto :goto_3
+
+    .line 150
+    :cond_a
+    :goto_2
+    return p2
+
+    .line 151
+    :catch_1
+    new-instance p1, Lyc9;
+
+    .line 152
+    .line 153
+    invoke-direct {p1, v3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 154
+    .line 155
+    .line 156
+    throw p1
+
+    .line 157
+    :cond_b
+    new-instance p1, Lyc9;
+
+    .line 158
+    .line 159
+    invoke-direct {p1, v3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 160
+    .line 161
+    .line 162
+    throw p1
+
+    .line 163
+    :cond_c
+    :goto_3
+    iget-object p3, v0, LZI9;->d:Ljava/lang/String;
+
+    .line 164
+    .line 165
+    const/4 v1, 0x1
+
+    .line 166
+    if-eqz p3, :cond_d
+
+    .line 167
+    .line 168
+    const/4 p3, 0x1
+
+    .line 169
+    goto :goto_4
+
+    .line 170
+    :cond_d
+    const/4 p3, 0x0
+
+    .line 171
+    :goto_4
+    if-eqz p3, :cond_16
+
+    .line 172
+    .line 173
+    array-length p3, p4
+
+    .line 174
+    sget-object v2, LZI9;->f:[B
+
+    .line 175
+    .line 176
+    array-length v3, v2
+
+    .line 177
+    if-ge p3, v3, :cond_e
+
+    .line 178
+    .line 179
+    goto/16 :goto_8
+
+    .line 180
+    .line 181
+    :cond_e
+    const/4 p3, 0x0
+
+    .line 182
+    :goto_5
+    array-length v3, v2
+
+    .line 183
+    if-ge p3, v3, :cond_10
+
+    .line 184
+    .line 185
+    aget-byte v3, p4, p3
+
+    .line 186
+    .line 187
+    aget-byte v4, v2, p3
+
+    .line 188
+    .line 189
+    if-ge v3, v4, :cond_f
+
+    .line 190
+    .line 191
+    goto/16 :goto_8
+
+    .line 192
+    .line 193
+    :cond_f
+    add-int/lit8 p3, p3, 0x1
+
+    .line 194
+    .line 195
+    goto :goto_5
+
+    .line 196
+    :cond_10
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    .line 197
+    .line 198
+    .line 199
+    move-result p3
+
+    .line 200
+    if-le p3, v1, :cond_11
+
+    .line 201
+    .line 202
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    .line 203
+    .line 204
+    .line 205
+    move-result p3
+
+    .line 206
+    sub-int/2addr p3, v1
+
+    .line 207
+    invoke-virtual {p1, p3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    .line 208
+    .line 209
+    .line 210
+    :cond_11
+    sget-object p3, LZI9;->f:[B
+
+    .line 211
+    .line 212
+    array-length p3, p3
+
+    .line 213
+    add-int/lit8 v2, p3, 0x28
+
+    .line 214
+    .line 215
+    array-length v3, p4
+
+    .line 216
+    if-lt v3, v2, :cond_14
+
+    .line 217
+    .line 218
+    :try_start_5
+    new-instance v3, LOJ0;
+
+    .line 219
+    .line 220
+    invoke-direct {v3}, LOJ0;-><init>()V
+
+    .line 221
+    .line 222
+    .line 223
+    array-length v4, p4
+
+    .line 224
+    invoke-static {v4, p4}, LN90;->F0(I[B)Ljava/util/List;
+
+    .line 225
+    .line 226
+    .line 227
+    move-result-object v4
+
+    .line 228
+    iput-object v4, v3, LOJ0;->b:Ljava/util/List;
+
+    .line 229
+    .line 230
+    invoke-interface {v4}, Ljava/util/List;->size()I
+
+    .line 231
+    .line 232
+    .line 233
+    move-result v4
+
+    .line 234
+    if-gt p3, v4, :cond_12
+
+    .line 235
+    .line 236
+    const/4 v4, 0x1
+
+    .line 237
+    goto :goto_6
+
+    .line 238
+    :cond_12
+    const/4 v4, 0x0
+
+    .line 239
+    :goto_6
+    invoke-static {v4}, LSpk;->B(Z)V
+
+    .line 240
+    .line 241
+    .line 242
+    iget-object v4, v3, LOJ0;->b:Ljava/util/List;
+
+    .line 243
+    .line 244
+    check-cast v4, Ljava/lang/Iterable;
+
+    .line 245
+    .line 246
+    invoke-static {v4, p3}, Llh3;->y3(Ljava/lang/Iterable;I)Ljava/util/List;
+
+    .line 247
+    .line 248
+    .line 249
+    move-result-object p3
+
+    .line 250
+    iput-object p3, v3, LOJ0;->b:Ljava/util/List;
+
+    .line 251
+    .line 252
+    invoke-virtual {v3}, LOJ0;->d()Ljava/lang/String;
+
+    .line 253
+    .line 254
+    .line 255
+    move-result-object p3
+
+    .line 256
+    iget-object v4, v0, LZI9;->d:Ljava/lang/String;
+
+    .line 257
+    .line 258
+    invoke-static {v4, p3, p2}, Lsti;->l0(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 259
+    .line 260
+    .line 261
+    move-result p3
+
+    .line 262
+    if-eqz p3, :cond_14
+
+    .line 263
+    .line 264
+    invoke-virtual {v3}, LOJ0;->c()I
+
+    .line 265
+    .line 266
+    .line 267
+    move-result p3
+
+    .line 268
+    invoke-virtual {v3}, LOJ0;->c()I
+
+    .line 269
+    .line 270
+    .line 271
+    move-result v3
+
+    .line 272
+    iget-object v4, v0, LZI9;->e:[B
+
+    .line 273
+    .line 274
+    if-nez v4, :cond_13
+
+    .line 275
+    .line 276
+    new-array p3, p3, [B
+
+    .line 277
+    .line 278
+    iput-object p3, v0, LZI9;->e:[B
+
+    .line 279
+    .line 280
+    :cond_13
+    iget-object p3, v0, LZI9;->e:[B
+
+    .line 281
+    .line 282
+    array-length v4, p4
+
+    .line 283
+    sub-int/2addr v4, v2
+
+    .line 284
+    invoke-static {p4, v2, p3, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
+
+    .line 285
+    .line 286
+    .line 287
+    goto :goto_7
+
+    .line 288
+    :catch_2
+    nop
+
+    .line 289
+    :cond_14
+    :goto_7
+    iget-object p3, v0, LZI9;->e:[B
+
+    .line 290
+    .line 291
+    if-eqz p3, :cond_15
+
+    .line 292
+    .line 293
+    new-instance p4, Ljava/lang/String;
+
+    .line 294
+    .line 295
+    array-length v0, p3
+
+    .line 296
+    sget-object v2, LxF2;->a:Ljava/nio/charset/Charset;
+
+    .line 297
+    .line 298
+    invoke-direct {p4, p3, p2, v0, v2}, Ljava/lang/String;-><init>([BIILjava/nio/charset/Charset;)V
+
+    .line 299
+    .line 300
+    .line 301
+    invoke-virtual {p1, p4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 302
+    .line 303
+    .line 304
+    goto :goto_8
+
+    .line 305
+    :cond_15
+    new-instance p1, Lyc9;
+
+    .line 306
+    .line 307
+    const-string p2, "Invalid JPEG Extended XMP Segment."
+
+    .line 308
+    .line 309
+    invoke-direct {p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 310
+    .line 311
+    .line 312
+    throw p1
+
+    .line 313
+    :cond_16
+    :goto_8
+    return v1
+.end method
+
+.method public c([B[B)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public d(I)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, Lew9;
+
+    .line 4
+    .line 5
+    iget-object v1, v0, Lew9;->f:LnJe;
+
+    .line 6
+    .line 7
+    invoke-virtual {v1}, LnJe;->d()LA36;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    new-instance v2, LMe;
+
+    .line 12
+    .line 13
+    iget-object v3, p0, Ldw9;->c:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    check-cast v3, Lio/reactivex/rxjava3/core/SingleEmitter;
+
+    .line 16
+    .line 17
+    const/16 v4, 0x9
+
+    .line 18
+    .line 19
+    invoke-direct {v2, v0, v3, p1, v4}, LMe;-><init>(Ljava/lang/Object;Ljava/lang/Object;II)V
+
+    .line 20
+    .line 21
+    .line 22
+    iget-object p1, v0, Lew9;->h:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 23
+    .line 24
+    invoke-static {v1, v2, p1}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 25
+    .line 26
+    .line 27
+    return-void
+.end method
+
+.method public g()V
     .locals 1
 
     .line 1
-    iget v0, p0, Ldw9;->c:I
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    check-cast v0, Lew9;
 
     .line 4
     .line 5
+    iget-object v0, v0, Lew9;->g:LJp0;
+
     .line 6
-    const-string v0, "MobStoryMetadata.sq:countEligibleCommunitiesMembers"
-
     .line 7
-    .line 8
-    return-object v0
-
-    .line 9
-    :pswitch_0
-    const-string v0, "MessageMediaRef.sq:getMediaRefsByMessageId"
-
-    .line 10
-    .line 11
-    return-object v0
-
-    .line 12
-    :pswitch_1
-    const-string v0, "MentionFriend.sq:selectLocalFriendsByUserIds"
-
-    .line 13
-    .line 14
-    return-object v0
-
-    .line 15
-    :pswitch_2
-    const-string v0, "MemoriesTranscoding.sq:getTranscodableSnaps"
-
-    .line 16
-    .line 17
-    return-object v0
-
-    .line 18
-    :pswitch_3
-    const-string v0, "MemoriesStory.sq:getTotalStoriesCountIncludingConsolidatedStories"
-
-    .line 19
-    .line 20
-    return-object v0
-
-    .line 21
-    :pswitch_4
-    const-string v0, "MemoriesSnapUploadStatus.sq:getSnapIdsInState"
-
-    .line 22
-    .line 23
-    return-object v0
-
-    .line 24
-    :pswitch_5
-    const-string v0, "MemoriesSnapUploadStatus.sq:getItemFromMemoriesSnapUploadStatus"
-
-    .line 25
-    .line 26
-    return-object v0
-
-    .line 27
-    :pswitch_6
-    const-string v0, "MemoriesSnap.sq:getMediaStillInUse"
-
-    .line 28
-    .line 29
-    return-object v0
-
-    .line 30
-    :pswitch_7
-    const-string v0, "MemoriesSnap.sq:getMediaIdsFromSnapIds"
-
-    .line 31
-    .line 32
-    return-object v0
-
-    .line 33
-    :pswitch_8
-    const-string v0, "MemoriesSnap.sq:getMashupUsedSnapData"
-
-    .line 34
-    .line 35
-    return-object v0
-
-    .line 36
-    :pswitch_9
-    const-string v0, "MemoriesRemoteOperation.sq:getUnprocessedStoryV2Ops"
-
-    .line 37
-    .line 38
-    return-object v0
-
-    .line 39
-    :pswitch_a
-    const-string v0, "MemoriesProfile.sq:getItemFromMemoriesProfile"
-
-    .line 40
-    .line 41
-    return-object v0
-
-    .line 42
-    :pswitch_b
-    const-string v0, "MemoriesEntry.sq:getSnapIdsForEntries"
-
-    .line 43
-    .line 44
-    return-object v0
-
-    .line 45
-    :pswitch_c
-    const-string v0, "MemoriesEntry.sq:getFolderItemCount"
-
-    .line 46
-    .line 47
-    return-object v0
-
-    .line 48
-    :pswitch_d
-    const-string v0, "MemoriesDeletion.sq:getSnapEntryIdOfType"
-
-    .line 49
-    .line 50
-    return-object v0
-
-    .line 51
-    :pswitch_e
-    const-string v0, "MediaPackageSharedFiles.sq:getMimeTypeByUri"
-
-    .line 52
-    .line 53
-    return-object v0
-
-    .line 54
-    :pswitch_f
-    const-string v0, "MediaPackage.sq:getMediaPackage"
-
-    .line 55
-    .line 56
-    return-object v0
-
-    .line 57
-    :pswitch_10
-    const-string v0, "MediaPackageFileLookup.sq:lookupUri"
-
-    .line 58
-    .line 59
-    return-object v0
-
-    .line 60
-    :pswitch_11
-    const-string v0, "MapWidgetPinnedFriend.sq:selectPinnedFriendsModels"
-
-    .line 61
-    .line 62
-    return-object v0
-
-    .line 63
-    :pswitch_12
-    const-string v0, "Map.sq:getFriendsInfoByUserId"
-
-    .line 64
-    .line 65
-    return-object v0
-
-    .line 66
-    :pswitch_13
-    const-string v0, "LocalConversationInteractionQueries.sq:countInteractionType"
-
-    .line 67
-    .line 68
-    return-object v0
-
-    .line 69
-    :pswitch_14
-    const-string v0, "LensUsageSettingsStorage.sq:selectEntryByLensId"
-
-    .line 70
-    .line 71
-    return-object v0
-
-    .line 72
-    :pswitch_15
-    const-string v0, "LensStatisticsStorage.sq:selectByIdsImpressions"
-
-    .line 73
-    .line 74
-    return-object v0
-
-    .line 75
-    :pswitch_16
-    const-string v0, "LensPersistentStorage.sq:selectByLensId"
-
-    .line 76
-    .line 77
-    return-object v0
-
-    .line 78
-    :pswitch_17
-    const-string v0, "LensFavoriteStatusStorage.sq:selectByLensId"
-
-    .line 79
-    .line 80
-    return-object v0
-
-    .line 81
-    :pswitch_18
-    const-string v0, "LensExplorerFeedStorage.sq:selectAllFromSubsetOrderedByPosition"
-
-    .line 82
-    .line 83
-    return-object v0
-
-    .line 84
-    :pswitch_19
-    const-string v0, "LensExplorerCreatorLensPreviewStorage.sq:selectPreviewsForCreators"
-
-    .line 85
-    .line 86
-    return-object v0
-
-    .line 87
-    :pswitch_1a
-    const-string v0, "LastSeenLensesStorage.sq:selectLastSeenLensesIds"
-
-    .line 88
-    .line 89
-    return-object v0
-
-    .line 90
-    :pswitch_1b
-    const-string v0, "LastFullSync.sq:getLastFullSyncBySectionSource"
-
-    .line 91
-    .line 92
-    return-object v0
-
-    .line 93
-    :pswitch_1c
-    const-string v0, "Item.sq:selectItemById"
-
-    .line 94
-    .line 95
-    return-object v0
-
-    .line 96
-    nop
-
-    .line 97
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1c
-        :pswitch_1b
-        :pswitch_1a
-        :pswitch_19
-        :pswitch_18
-        :pswitch_17
-        :pswitch_16
-        :pswitch_15
-        :pswitch_14
-        :pswitch_13
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method
 
-.method public final y(LBz7;)V
+.method public subscribe(Lio/reactivex/rxjava3/core/MaybeEmitter;)V
     .locals 6
 
-    .line 1
-    iget v0, p0, Ldw9;->c:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 7
-    .line 8
-    check-cast v0, LOp3;
-
-    .line 9
-    .line 10
-    const-string v1, "MobStoryMetadata"
-
     .line 11
+    iget-object v0, p0, Ldw9;->b:Ljava/lang/Object;
+
+    check-cast v0, Lmid;
+
+    invoke-virtual {v0}, Lmid;->d()Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
     .line 12
-    filled-new-array {v1}, [Ljava/lang/String;
+    sget-object v0, LN1;->a:LN1;
+
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/MaybeEmitter;->onSuccess(Ljava/lang/Object;)V
+
+    return-void
 
     .line 13
+    :cond_0
+    new-instance v1, LY21;
+
+    invoke-virtual {v0}, Lmid;->c()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, LQ0f;
+
+    invoke-direct {v1, v2}, LY21;-><init>(LQ0f;)V
+
     .line 14
-    .line 15
+    invoke-static {v1}, LQ0f;->l(Lio/reactivex/rxjava3/disposables/Disposable;)LQ0f;
+
     move-result-object v1
+
+    .line 15
+    iget-object v2, p0, Ldw9;->c:Ljava/lang/Object;
+
+    check-cast v2, LJGa;
+
+    iget-object v3, v2, LJGa;->e0:LbAb;
 
     .line 16
-    iget-object v0, v0, LVOi;->a:LfQg;
+    iget-object v4, v2, LJGa;->m0:Lnp0;
 
     .line 17
+    check-cast v3, LmAb;
+
+    invoke-virtual {v3, v4, v1}, LmAb;->h(Lnp0;LQ0f;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    move-result-object v3
+
     .line 18
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
+    new-instance v4, LZk8;
+
+    const/16 v5, 0x19
+
+    invoke-direct {v4, p1, v0, v2, v5}, LZk8;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 19
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    invoke-direct {p1, v3, v4}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 20
+    new-instance v0, Lbx0;
+
+    const/16 v3, 0xa
+
+    invoke-direct {v0, v3, v1}, Lbx0;-><init>(ILQ0f;)V
+
     .line 21
-    return-void
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleDoFinally;
+
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoFinally;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Action;)V
 
     .line 22
-    :pswitch_0
-    iget-object v0, p0, Ldw9;->X:LVOi;
+    sget-object p1, LWFa;->X:LWFa;
+
+    sget-object v0, LWFa;->Y:LWFa;
 
     .line 23
+    iget-object v2, v2, LJGa;->h0:LjU5;
+
     .line 24
-    check-cast v0, LMF8;
+    invoke-static {v1, p1, v0, v2}, LBpc;->g(Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;LjU5;)V
 
-    .line 25
-    .line 26
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 27
-    .line 28
-    const-string v1, "MessageMediaRef"
-
-    .line 29
-    .line 30
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v1
-
-    .line 34
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 35
-    .line 36
-    .line 37
     return-void
-
-    .line 38
-    :pswitch_1
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 39
-    .line 40
-    check-cast v0, LpC2;
-
-    .line 41
-    .line 42
-    const-string v1, "Friend"
-
-    .line 43
-    .line 44
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v1
-
-    .line 48
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 49
-    .line 50
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 51
-    .line 52
-    .line 53
-    return-void
-
-    .line 54
-    :pswitch_2
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 55
-    .line 56
-    check-cast v0, LvZ7;
-
-    .line 57
-    .line 58
-    const-string v1, "memories_media"
-
-    .line 59
-    .line 60
-    const-string v2, "memories_upload_sessions"
-
-    .line 61
-    .line 62
-    const-string v3, "memories_snap"
-
-    .line 63
-    .line 64
-    const-string v4, "memories_entry"
-
-    .line 65
-    .line 66
-    const-string v5, "memories_snap_upload_status"
-
-    .line 67
-    .line 68
-    filled-new-array {v3, v1, v2, v4, v5}, [Ljava/lang/String;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v1
-
-    .line 72
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 73
-    .line 74
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 75
-    .line 76
-    .line 77
-    return-void
-
-    .line 78
-    :pswitch_3
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 79
-    .line 80
-    check-cast v0, LvZ7;
-
-    .line 81
-    .line 82
-    const-string v1, "memories_entry"
-
-    .line 83
-    .line 84
-    const-string v2, "memories_snap"
-
-    .line 85
-    .line 86
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object v1
-
-    .line 90
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 91
-    .line 92
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 93
-    .line 94
-    .line 95
-    return-void
-
-    .line 96
-    :pswitch_4
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 97
-    .line 98
-    check-cast v0, Luc0;
-
-    .line 99
-    .line 100
-    const-string v1, "memories_snap_upload_status"
-
-    .line 101
-    .line 102
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v1
-
-    .line 106
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 107
-    .line 108
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 109
-    .line 110
-    .line 111
-    return-void
-
-    .line 112
-    :pswitch_5
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 113
-    .line 114
-    check-cast v0, Luc0;
-
-    .line 115
-    .line 116
-    const-string v1, "memories_snap_upload_status"
-
-    .line 117
-    .line 118
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 119
-    .line 120
-    .line 121
-    move-result-object v1
-
-    .line 122
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 123
-    .line 124
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 125
-    .line 126
-    .line 127
-    return-void
-
-    .line 128
-    :pswitch_6
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 129
-    .line 130
-    check-cast v0, Luc0;
-
-    .line 131
-    .line 132
-    const-string v1, "memories_snap"
-
-    .line 133
-    .line 134
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 135
-    .line 136
-    .line 137
-    move-result-object v1
-
-    .line 138
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 139
-    .line 140
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 141
-    .line 142
-    .line 143
-    return-void
-
-    .line 144
-    :pswitch_7
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 145
-    .line 146
-    check-cast v0, Luc0;
-
-    .line 147
-    .line 148
-    const-string v1, "memories_snap"
-
-    .line 149
-    .line 150
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 151
-    .line 152
-    .line 153
-    move-result-object v1
-
-    .line 154
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 155
-    .line 156
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 157
-    .line 158
-    .line 159
-    return-void
-
-    .line 160
-    :pswitch_8
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 161
-    .line 162
-    check-cast v0, Luc0;
-
-    .line 163
-    .line 164
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 165
-    .line 166
-    const-string v1, "memories_snap"
-
-    .line 167
-    .line 168
-    const-string v2, "memories_media"
-
-    .line 169
-    .line 170
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 171
-    .line 172
-    .line 173
-    move-result-object v1
-
-    .line 174
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 175
-    .line 176
-    .line 177
-    return-void
-
-    .line 178
-    :pswitch_9
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 179
-    .line 180
-    check-cast v0, Lfc7;
-
-    .line 181
-    .line 182
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 183
-    .line 184
-    const-string v1, "memories_remote_operation"
-
-    .line 185
-    .line 186
-    const-string v2, "memories_entry"
-
-    .line 187
-    .line 188
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 189
-    .line 190
-    .line 191
-    move-result-object v1
-
-    .line 192
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 193
-    .line 194
-    .line 195
-    return-void
-
-    .line 196
-    :pswitch_a
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 197
-    .line 198
-    check-cast v0, LvZ7;
-
-    .line 199
-    .line 200
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 201
-    .line 202
-    const-string v1, "memories_profile"
-
-    .line 203
-    .line 204
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 205
-    .line 206
-    .line 207
-    move-result-object v1
-
-    .line 208
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 209
-    .line 210
-    .line 211
-    return-void
-
-    .line 212
-    :pswitch_b
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 213
-    .line 214
-    check-cast v0, Lfc7;
-
-    .line 215
-    .line 216
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 217
-    .line 218
-    const-string v1, "memories_entry"
-
-    .line 219
-    .line 220
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 221
-    .line 222
-    .line 223
-    move-result-object v1
-
-    .line 224
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 225
-    .line 226
-    .line 227
-    return-void
-
-    .line 228
-    :pswitch_c
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 229
-    .line 230
-    check-cast v0, Lfc7;
-
-    .line 231
-    .line 232
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 233
-    .line 234
-    const-string v1, "memories_entry"
-
-    .line 235
-    .line 236
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 237
-    .line 238
-    .line 239
-    move-result-object v1
-
-    .line 240
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 241
-    .line 242
-    .line 243
-    return-void
-
-    .line 244
-    :pswitch_d
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 245
-    .line 246
-    check-cast v0, LvZ7;
-
-    .line 247
-    .line 248
-    const-string v1, "memories_snap"
-
-    .line 249
-    .line 250
-    const-string v2, "memories_entry"
-
-    .line 251
-    .line 252
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 253
-    .line 254
-    .line 255
-    move-result-object v1
-
-    .line 256
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 257
-    .line 258
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 259
-    .line 260
-    .line 261
-    return-void
-
-    .line 262
-    :pswitch_e
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 263
-    .line 264
-    check-cast v0, LvZ7;
-
-    .line 265
-    .line 266
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 267
-    .line 268
-    const-string v1, "media_package_shared_files"
-
-    .line 269
-    .line 270
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 271
-    .line 272
-    .line 273
-    move-result-object v1
-
-    .line 274
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 275
-    .line 276
-    .line 277
-    return-void
-
-    .line 278
-    :pswitch_f
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 279
-    .line 280
-    check-cast v0, Luc0;
-
-    .line 281
-    .line 282
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 283
-    .line 284
-    const-string v1, "media_package"
-
-    .line 285
-    .line 286
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 287
-    .line 288
-    .line 289
-    move-result-object v1
-
-    .line 290
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 291
-    .line 292
-    .line 293
-    return-void
-
-    .line 294
-    :pswitch_10
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 295
-    .line 296
-    check-cast v0, LvZ7;
-
-    .line 297
-    .line 298
-    const-string v1, "media_package_file_lookup"
-
-    .line 299
-    .line 300
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 301
-    .line 302
-    .line 303
-    move-result-object v1
-
-    .line 304
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 305
-    .line 306
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 307
-    .line 308
-    .line 309
-    return-void
-
-    .line 310
-    :pswitch_11
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 311
-    .line 312
-    check-cast v0, LnB;
-
-    .line 313
-    .line 314
-    const-string v1, "Friend"
-
-    .line 315
-    .line 316
-    const-string v2, "CombinedUsername"
-
-    .line 317
-    .line 318
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 319
-    .line 320
-    .line 321
-    move-result-object v1
-
-    .line 322
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 323
-    .line 324
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 325
-    .line 326
-    .line 327
-    return-void
-
-    .line 328
-    :pswitch_12
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 329
-    .line 330
-    check-cast v0, Lq5b;
-
-    .line 331
-    .line 332
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 333
-    .line 334
-    const-string v1, "Friend"
-
-    .line 335
-    .line 336
-    const-string v2, "CombinedUsername"
-
-    .line 337
-    .line 338
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 339
-    .line 340
-    .line 341
-    move-result-object v1
-
-    .line 342
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 343
-    .line 344
-    .line 345
-    return-void
-
-    .line 346
-    :pswitch_13
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 347
-    .line 348
-    check-cast v0, LUS0;
-
-    .line 349
-    .line 350
-    const-string v1, "LocalConversationInteraction"
-
-    .line 351
-    .line 352
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 353
-    .line 354
-    .line 355
-    move-result-object v1
-
-    .line 356
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 357
-    .line 358
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 359
-    .line 360
-    .line 361
-    return-void
-
-    .line 362
-    :pswitch_14
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 363
-    .line 364
-    check-cast v0, LvZ7;
-
-    .line 365
-    .line 366
-    const-string v1, "LensUsageSettingsStorage"
-
-    .line 367
-    .line 368
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 369
-    .line 370
-    .line 371
-    move-result-object v1
-
-    .line 372
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 373
-    .line 374
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 375
-    .line 376
-    .line 377
-    return-void
-
-    .line 378
-    :pswitch_15
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 379
-    .line 380
-    check-cast v0, LvZ7;
-
-    .line 381
-    .line 382
-    const-string v1, "LensStatisticsStorage"
-
-    .line 383
-    .line 384
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 385
-    .line 386
-    .line 387
-    move-result-object v1
-
-    .line 388
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 389
-    .line 390
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 391
-    .line 392
-    .line 393
-    return-void
-
-    .line 394
-    :pswitch_16
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 395
-    .line 396
-    check-cast v0, LMF8;
-
-    .line 397
-    .line 398
-    const-string v1, "LensPersistentStorage"
-
-    .line 399
-    .line 400
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 401
-    .line 402
-    .line 403
-    move-result-object v1
-
-    .line 404
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 405
-    .line 406
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 407
-    .line 408
-    .line 409
-    return-void
-
-    .line 410
-    :pswitch_17
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 411
-    .line 412
-    check-cast v0, LiW9;
-
-    .line 413
-    .line 414
-    const-string v1, "LensFavoriteStatusStorage"
-
-    .line 415
-    .line 416
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 417
-    .line 418
-    .line 419
-    move-result-object v1
-
-    .line 420
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 421
-    .line 422
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 423
-    .line 424
-    .line 425
-    return-void
-
-    .line 426
-    :pswitch_18
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 427
-    .line 428
-    check-cast v0, Luc0;
-
-    .line 429
-    .line 430
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 431
-    .line 432
-    const-string v1, "LensExplorerFeed"
-
-    .line 433
-    .line 434
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 435
-    .line 436
-    .line 437
-    move-result-object v1
-
-    .line 438
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 439
-    .line 440
-    .line 441
-    return-void
-
-    .line 442
-    :pswitch_19
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 443
-    .line 444
-    check-cast v0, LvZ7;
-
-    .line 445
-    .line 446
-    const-string v1, "LensExplorerCreatorLensPreview"
-
-    .line 447
-    .line 448
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 449
-    .line 450
-    .line 451
-    move-result-object v1
-
-    .line 452
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 453
-    .line 454
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 455
-    .line 456
-    .line 457
-    return-void
-
-    .line 458
-    :pswitch_1a
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 459
-    .line 460
-    check-cast v0, Luc0;
-
-    .line 461
-    .line 462
-    const-string v1, "LastSeenLensesStorage"
-
-    .line 463
-    .line 464
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 465
-    .line 466
-    .line 467
-    move-result-object v1
-
-    .line 468
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 469
-    .line 470
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 471
-    .line 472
-    .line 473
-    return-void
-
-    .line 474
-    :pswitch_1b
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 475
-    .line 476
-    check-cast v0, Luc0;
-
-    .line 477
-    .line 478
-    const-string v1, "LastFullSync"
-
-    .line 479
-    .line 480
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 481
-    .line 482
-    .line 483
-    move-result-object v1
-
-    .line 484
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 485
-    .line 486
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 487
-    .line 488
-    .line 489
-    return-void
-
-    .line 490
-    :pswitch_1c
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 491
-    .line 492
-    check-cast v0, LvZ7;
-
-    .line 493
-    .line 494
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 495
-    .line 496
-    const-string v1, "Item"
-
-    .line 497
-    .line 498
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 499
-    .line 500
-    .line 501
-    move-result-object v1
-
-    .line 502
-    invoke-virtual {v0, p1, v1}, LfQg;->a(LBz7;[Ljava/lang/String;)V
-
-    .line 503
-    .line 504
-    .line 505
-    return-void
-
-    .line 506
-    nop
-
-    .line 507
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1c
-        :pswitch_1b
-        :pswitch_1a
-        :pswitch_19
-        :pswitch_18
-        :pswitch_17
-        :pswitch_16
-        :pswitch_15
-        :pswitch_14
-        :pswitch_13
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
-.method public final z(LBz7;)V
-    .locals 6
+.method public subscribe(Lio/reactivex/rxjava3/core/SingleEmitter;)V
+    .locals 4
 
     .line 1
-    iget v0, p0, Ldw9;->c:I
+    iget-object v0, p0, Ldw9;->c:Ljava/lang/Object;
+
+    check-cast v0, LQq1;
 
     .line 2
+    iget-object v1, p0, Ldw9;->b:Ljava/lang/Object;
+
+    check-cast v1, LLia;
+
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, v0, LQq1;->a:LRq1;
 
     .line 4
+    :try_start_0
+    iget-object v2, v0, LRq1;->a:[B
+
+    const/4 v3, 0x0
+
     .line 5
+    iget-object v0, v0, LRq1;->a:[B
+
     .line 6
-    iget-object v0, p0, Ldw9;->X:LVOi;
+    array-length v0, v0
 
     .line 7
+    invoke-static {v2, v3, v0}, Landroid/graphics/BitmapFactory;->decodeByteArray([BII)Landroid/graphics/Bitmap;
+
+    move-result-object v0
+
     .line 8
-    check-cast v0, LOp3;
+    iget-object v1, v1, LLia;->a:LR0f;
+
+    const-string v2, "LensesBloopsStaticEmotionProcessor"
+
+    invoke-virtual {v1, v2, v0}, LpM0;->n1(Ljava/lang/String;Landroid/graphics/Bitmap;)LQ0f;
+
+    move-result-object v0
 
     .line 9
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
     .line 10
-    iget-object v0, v0, LVOi;->a:LfQg;
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->f(Ljava/lang/Throwable;)Z
 
-    .line 11
-    .line 12
-    const-string v1, "MobStoryMetadata"
-
-    .line 13
-    .line 14
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v1
-
-    .line 18
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
     return-void
-
-    .line 22
-    :pswitch_0
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 23
-    .line 24
-    check-cast v0, LMF8;
-
-    .line 25
-    .line 26
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 27
-    .line 28
-    const-string v1, "MessageMediaRef"
-
-    .line 29
-    .line 30
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v1
-
-    .line 34
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 35
-    .line 36
-    .line 37
-    return-void
-
-    .line 38
-    :pswitch_1
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 39
-    .line 40
-    check-cast v0, LpC2;
-
-    .line 41
-    .line 42
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 43
-    .line 44
-    const-string v1, "Friend"
-
-    .line 45
-    .line 46
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object v1
-
-    .line 50
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 51
-    .line 52
-    .line 53
-    return-void
-
-    .line 54
-    :pswitch_2
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 55
-    .line 56
-    check-cast v0, LvZ7;
-
-    .line 57
-    .line 58
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 59
-    .line 60
-    const-string v1, "memories_entry"
-
-    .line 61
-    .line 62
-    const-string v2, "memories_snap_upload_status"
-
-    .line 63
-    .line 64
-    const-string v3, "memories_snap"
-
-    .line 65
-    .line 66
-    const-string v4, "memories_media"
-
-    .line 67
-    .line 68
-    const-string v5, "memories_upload_sessions"
-
-    .line 69
-    .line 70
-    filled-new-array {v3, v4, v5, v1, v2}, [Ljava/lang/String;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v1
-
-    .line 74
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 75
-    .line 76
-    .line 77
-    return-void
-
-    .line 78
-    :pswitch_3
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 79
-    .line 80
-    check-cast v0, LvZ7;
-
-    .line 81
-    .line 82
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 83
-    .line 84
-    const-string v1, "memories_entry"
-
-    .line 85
-    .line 86
-    const-string v2, "memories_snap"
-
-    .line 87
-    .line 88
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object v1
-
-    .line 92
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 93
-    .line 94
-    .line 95
-    return-void
-
-    .line 96
-    :pswitch_4
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 97
-    .line 98
-    check-cast v0, Luc0;
-
-    .line 99
-    .line 100
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 101
-    .line 102
-    const-string v1, "memories_snap_upload_status"
-
-    .line 103
-    .line 104
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v1
-
-    .line 108
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 109
-    .line 110
-    .line 111
-    return-void
-
-    .line 112
-    :pswitch_5
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 113
-    .line 114
-    check-cast v0, Luc0;
-
-    .line 115
-    .line 116
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 117
-    .line 118
-    const-string v1, "memories_snap_upload_status"
-
-    .line 119
-    .line 120
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 121
-    .line 122
-    .line 123
-    move-result-object v1
-
-    .line 124
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 125
-    .line 126
-    .line 127
-    return-void
-
-    .line 128
-    :pswitch_6
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 129
-    .line 130
-    check-cast v0, Luc0;
-
-    .line 131
-    .line 132
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 133
-    .line 134
-    const-string v1, "memories_snap"
-
-    .line 135
-    .line 136
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 137
-    .line 138
-    .line 139
-    move-result-object v1
-
-    .line 140
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 141
-    .line 142
-    .line 143
-    return-void
-
-    .line 144
-    :pswitch_7
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 145
-    .line 146
-    check-cast v0, Luc0;
-
-    .line 147
-    .line 148
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 149
-    .line 150
-    const-string v1, "memories_snap"
-
-    .line 151
-    .line 152
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 153
-    .line 154
-    .line 155
-    move-result-object v1
-
-    .line 156
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 157
-    .line 158
-    .line 159
-    return-void
-
-    .line 160
-    :pswitch_8
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 161
-    .line 162
-    check-cast v0, Luc0;
-
-    .line 163
-    .line 164
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 165
-    .line 166
-    const-string v1, "memories_snap"
-
-    .line 167
-    .line 168
-    const-string v2, "memories_media"
-
-    .line 169
-    .line 170
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 171
-    .line 172
-    .line 173
-    move-result-object v1
-
-    .line 174
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 175
-    .line 176
-    .line 177
-    return-void
-
-    .line 178
-    :pswitch_9
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 179
-    .line 180
-    check-cast v0, Lfc7;
-
-    .line 181
-    .line 182
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 183
-    .line 184
-    const-string v1, "memories_remote_operation"
-
-    .line 185
-    .line 186
-    const-string v2, "memories_entry"
-
-    .line 187
-    .line 188
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 189
-    .line 190
-    .line 191
-    move-result-object v1
-
-    .line 192
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 193
-    .line 194
-    .line 195
-    return-void
-
-    .line 196
-    :pswitch_a
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 197
-    .line 198
-    check-cast v0, LvZ7;
-
-    .line 199
-    .line 200
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 201
-    .line 202
-    const-string v1, "memories_profile"
-
-    .line 203
-    .line 204
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 205
-    .line 206
-    .line 207
-    move-result-object v1
-
-    .line 208
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 209
-    .line 210
-    .line 211
-    return-void
-
-    .line 212
-    :pswitch_b
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 213
-    .line 214
-    check-cast v0, Lfc7;
-
-    .line 215
-    .line 216
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 217
-    .line 218
-    const-string v1, "memories_entry"
-
-    .line 219
-    .line 220
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 221
-    .line 222
-    .line 223
-    move-result-object v1
-
-    .line 224
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 225
-    .line 226
-    .line 227
-    return-void
-
-    .line 228
-    :pswitch_c
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 229
-    .line 230
-    check-cast v0, Lfc7;
-
-    .line 231
-    .line 232
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 233
-    .line 234
-    const-string v1, "memories_entry"
-
-    .line 235
-    .line 236
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 237
-    .line 238
-    .line 239
-    move-result-object v1
-
-    .line 240
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 241
-    .line 242
-    .line 243
-    return-void
-
-    .line 244
-    :pswitch_d
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 245
-    .line 246
-    check-cast v0, LvZ7;
-
-    .line 247
-    .line 248
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 249
-    .line 250
-    const-string v1, "memories_snap"
-
-    .line 251
-    .line 252
-    const-string v2, "memories_entry"
-
-    .line 253
-    .line 254
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 255
-    .line 256
-    .line 257
-    move-result-object v1
-
-    .line 258
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 259
-    .line 260
-    .line 261
-    return-void
-
-    .line 262
-    :pswitch_e
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 263
-    .line 264
-    check-cast v0, LvZ7;
-
-    .line 265
-    .line 266
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 267
-    .line 268
-    const-string v1, "media_package_shared_files"
-
-    .line 269
-    .line 270
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 271
-    .line 272
-    .line 273
-    move-result-object v1
-
-    .line 274
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 275
-    .line 276
-    .line 277
-    return-void
-
-    .line 278
-    :pswitch_f
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 279
-    .line 280
-    check-cast v0, Luc0;
-
-    .line 281
-    .line 282
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 283
-    .line 284
-    const-string v1, "media_package"
-
-    .line 285
-    .line 286
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 287
-    .line 288
-    .line 289
-    move-result-object v1
-
-    .line 290
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 291
-    .line 292
-    .line 293
-    return-void
-
-    .line 294
-    :pswitch_10
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 295
-    .line 296
-    check-cast v0, LvZ7;
-
-    .line 297
-    .line 298
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 299
-    .line 300
-    const-string v1, "media_package_file_lookup"
-
-    .line 301
-    .line 302
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 303
-    .line 304
-    .line 305
-    move-result-object v1
-
-    .line 306
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 307
-    .line 308
-    .line 309
-    return-void
-
-    .line 310
-    :pswitch_11
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 311
-    .line 312
-    check-cast v0, LnB;
-
-    .line 313
-    .line 314
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 315
-    .line 316
-    const-string v1, "Friend"
-
-    .line 317
-    .line 318
-    const-string v2, "CombinedUsername"
-
-    .line 319
-    .line 320
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 321
-    .line 322
-    .line 323
-    move-result-object v1
-
-    .line 324
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 325
-    .line 326
-    .line 327
-    return-void
-
-    .line 328
-    :pswitch_12
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 329
-    .line 330
-    check-cast v0, Lq5b;
-
-    .line 331
-    .line 332
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 333
-    .line 334
-    const-string v1, "Friend"
-
-    .line 335
-    .line 336
-    const-string v2, "CombinedUsername"
-
-    .line 337
-    .line 338
-    filled-new-array {v1, v2}, [Ljava/lang/String;
-
-    .line 339
-    .line 340
-    .line 341
-    move-result-object v1
-
-    .line 342
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 343
-    .line 344
-    .line 345
-    return-void
-
-    .line 346
-    :pswitch_13
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 347
-    .line 348
-    check-cast v0, LUS0;
-
-    .line 349
-    .line 350
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 351
-    .line 352
-    const-string v1, "LocalConversationInteraction"
-
-    .line 353
-    .line 354
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 355
-    .line 356
-    .line 357
-    move-result-object v1
-
-    .line 358
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 359
-    .line 360
-    .line 361
-    return-void
-
-    .line 362
-    :pswitch_14
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 363
-    .line 364
-    check-cast v0, LvZ7;
-
-    .line 365
-    .line 366
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 367
-    .line 368
-    const-string v1, "LensUsageSettingsStorage"
-
-    .line 369
-    .line 370
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 371
-    .line 372
-    .line 373
-    move-result-object v1
-
-    .line 374
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 375
-    .line 376
-    .line 377
-    return-void
-
-    .line 378
-    :pswitch_15
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 379
-    .line 380
-    check-cast v0, LvZ7;
-
-    .line 381
-    .line 382
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 383
-    .line 384
-    const-string v1, "LensStatisticsStorage"
-
-    .line 385
-    .line 386
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 387
-    .line 388
-    .line 389
-    move-result-object v1
-
-    .line 390
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 391
-    .line 392
-    .line 393
-    return-void
-
-    .line 394
-    :pswitch_16
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 395
-    .line 396
-    check-cast v0, LMF8;
-
-    .line 397
-    .line 398
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 399
-    .line 400
-    const-string v1, "LensPersistentStorage"
-
-    .line 401
-    .line 402
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 403
-    .line 404
-    .line 405
-    move-result-object v1
-
-    .line 406
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 407
-    .line 408
-    .line 409
-    return-void
-
-    .line 410
-    :pswitch_17
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 411
-    .line 412
-    check-cast v0, LiW9;
-
-    .line 413
-    .line 414
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 415
-    .line 416
-    const-string v1, "LensFavoriteStatusStorage"
-
-    .line 417
-    .line 418
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 419
-    .line 420
-    .line 421
-    move-result-object v1
-
-    .line 422
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 423
-    .line 424
-    .line 425
-    return-void
-
-    .line 426
-    :pswitch_18
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 427
-    .line 428
-    check-cast v0, Luc0;
-
-    .line 429
-    .line 430
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 431
-    .line 432
-    const-string v1, "LensExplorerFeed"
-
-    .line 433
-    .line 434
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 435
-    .line 436
-    .line 437
-    move-result-object v1
-
-    .line 438
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 439
-    .line 440
-    .line 441
-    return-void
-
-    .line 442
-    :pswitch_19
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 443
-    .line 444
-    check-cast v0, LvZ7;
-
-    .line 445
-    .line 446
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 447
-    .line 448
-    const-string v1, "LensExplorerCreatorLensPreview"
-
-    .line 449
-    .line 450
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 451
-    .line 452
-    .line 453
-    move-result-object v1
-
-    .line 454
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 455
-    .line 456
-    .line 457
-    return-void
-
-    .line 458
-    :pswitch_1a
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 459
-    .line 460
-    check-cast v0, Luc0;
-
-    .line 461
-    .line 462
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 463
-    .line 464
-    const-string v1, "LastSeenLensesStorage"
-
-    .line 465
-    .line 466
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 467
-    .line 468
-    .line 469
-    move-result-object v1
-
-    .line 470
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 471
-    .line 472
-    .line 473
-    return-void
-
-    .line 474
-    :pswitch_1b
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 475
-    .line 476
-    check-cast v0, Luc0;
-
-    .line 477
-    .line 478
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 479
-    .line 480
-    const-string v1, "LastFullSync"
-
-    .line 481
-    .line 482
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 483
-    .line 484
-    .line 485
-    move-result-object v1
-
-    .line 486
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 487
-    .line 488
-    .line 489
-    return-void
-
-    .line 490
-    :pswitch_1c
-    iget-object v0, p0, Ldw9;->X:LVOi;
-
-    .line 491
-    .line 492
-    check-cast v0, LvZ7;
-
-    .line 493
-    .line 494
-    iget-object v0, v0, LVOi;->a:LfQg;
-
-    .line 495
-    .line 496
-    const-string v1, "Item"
-
-    .line 497
-    .line 498
-    filled-new-array {v1}, [Ljava/lang/String;
-
-    .line 499
-    .line 500
-    .line 501
-    move-result-object v1
-
-    .line 502
-    invoke-virtual {v0, p1, v1}, LfQg;->h(LBz7;[Ljava/lang/String;)V
-
-    .line 503
-    .line 504
-    .line 505
-    return-void
-
-    .line 506
-    nop
-
-    .line 507
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1c
-        :pswitch_1b
-        :pswitch_1a
-        :pswitch_19
-        :pswitch_18
-        :pswitch_17
-        :pswitch_16
-        :pswitch_15
-        :pswitch_14
-        :pswitch_13
-        :pswitch_12
-        :pswitch_11
-        :pswitch_10
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

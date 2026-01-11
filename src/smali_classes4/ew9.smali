@@ -1,273 +1,234 @@
 .class public final Lew9;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
+
+# static fields
+.field public static final i:J
+
+.field public static final j:Lnp0;
+
+.field public static final k:Lbw9;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LQS9;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final b:Lcom/android/installreferrer/api/InstallReferrerClient;
 
-.field public final synthetic c:Ljava/lang/Long;
+.field public final c:LR93;
 
-.field public final synthetic t:Ljava/lang/String;
+.field public final d:LQS9;
+
+.field public final e:LJm5;
+
+.field public final f:LnJe;
+
+.field public final g:LJp0;
+
+.field public final h:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput p4, p0, Lew9;->a:I
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
-    iput-object p1, p0, Lew9;->c:Ljava/lang/Long;
+    .line 2
+    .line 3
+    const-wide/16 v1, 0x1
 
-    iput-object p2, p0, Lew9;->b:Ljava/lang/String;
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toSeconds(J)J
 
-    iput-object p3, p0, Lew9;->t:Ljava/lang/String;
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
 
-    const/4 p1, 0x1
+    .line 9
+    sput-wide v0, Lew9;->i:J
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 10
+    .line 11
+    sget-object v0, LtXa;->Z:LtXa;
 
+    .line 12
+    .line 13
+    const-string v1, "InstallReferrerProvider"
+
+    .line 14
+    .line 15
+    invoke-static {v0, v0, v1}, LzHa;->l(LtXa;LtXa;Ljava/lang/String;)Lnp0;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    sput-object v0, Lew9;->j:Lnp0;
+
+    .line 20
+    .line 21
+    new-instance v0, Lbw9;
+
+    .line 22
+    .line 23
+    const/4 v1, 0x2
+
+    .line 24
+    const/16 v2, 0x1fe
+
+    .line 25
+    .line 26
+    invoke-direct {v0, v1, v2}, Lbw9;-><init>(II)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v0, Lew9;->k:Lbw9;
+
+    .line 30
+    .line 31
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;I)V
+.method public constructor <init>(LQS9;Lcom/android/installreferrer/api/InstallReferrerClient;LR93;LQS9;LJm5;)V
     .locals 0
 
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 2
-    iput p4, p0, Lew9;->a:I
+    .line 3
+    .line 4
+    iput-object p1, p0, Lew9;->a:LQS9;
 
-    iput-object p1, p0, Lew9;->b:Ljava/lang/String;
+    .line 5
+    .line 6
+    iput-object p2, p0, Lew9;->b:Lcom/android/installreferrer/api/InstallReferrerClient;
 
-    iput-object p2, p0, Lew9;->c:Ljava/lang/Long;
+    .line 7
+    .line 8
+    iput-object p3, p0, Lew9;->c:LR93;
 
-    iput-object p3, p0, Lew9;->t:Ljava/lang/String;
+    .line 9
+    .line 10
+    iput-object p4, p0, Lew9;->d:LQS9;
 
-    const/4 p1, 0x1
+    .line 11
+    .line 12
+    iput-object p5, p0, Lew9;->e:LJm5;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 13
+    .line 14
+    sget-object p1, Lew9;->j:Lnp0;
 
+    .line 15
+    .line 16
+    new-instance p2, LnJe;
+
+    .line 17
+    .line 18
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 19
+    .line 20
+    .line 21
+    iput-object p2, p0, Lew9;->f:LnJe;
+
+    .line 22
+    .line 23
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 24
+    .line 25
+    iput-object p1, p0, Lew9;->g:LJp0;
+
+    .line 26
+    .line 27
+    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 28
+    .line 29
+    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+
+    .line 30
+    .line 31
+    .line 32
+    iput-object p1, p0, Lew9;->h:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 33
+    .line 34
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final a()V
+    .locals 4
 
     .line 1
-    iget v0, p0, Lew9;->a:I
+    iget-object v0, p0, Lew9;->h:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, LxR;
+    :try_start_0
+    iget-object v0, p0, Lew9;->b:Lcom/android/installreferrer/api/InstallReferrerClient;
 
     .line 7
     .line 8
-    const/4 v0, 0x0
+    check-cast v0, Lcw9;
 
     .line 9
-    iget-object v1, p0, Lew9;->c:Ljava/lang/Long;
-
     .line 10
+    const/4 v1, 0x3
+
     .line 11
-    invoke-interface {p1, v0, v1}, LxR;->b(ILjava/lang/Long;)V
+    iput v1, v0, Lcw9;->a:I
 
     .line 12
     .line 13
-    .line 14
-    const/4 v0, 0x1
+    iget-object v1, v0, Lcw9;->d:LWp0;
 
+    .line 14
     .line 15
-    iget-object v1, p0, Lew9;->b:Ljava/lang/String;
+    const/4 v2, 0x0
 
     .line 16
-    .line 17
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    if-eqz v1, :cond_0
 
+    .line 17
     .line 18
+    iget-object v3, v0, Lcw9;->b:Landroid/content/Context;
+
     .line 19
     .line 20
-    const/4 v0, 0x2
+    invoke-virtual {v3, v1}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
     .line 21
-    iget-object v1, p0, Lew9;->t:Ljava/lang/String;
-
     .line 22
     .line 23
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    iput-object v2, v0, Lcw9;->d:LWp0;
 
     .line 24
     .line 25
+    :cond_0
+    iput-object v2, v0, Lcw9;->c:Lg39;
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 26
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 27
-    .line 28
-    return-object p1
-
-    .line 29
-    :pswitch_0
-    check-cast p1, LxR;
-
-    .line 30
-    .line 31
-    const/4 v0, 0x0
-
-    .line 32
-    iget-object v1, p0, Lew9;->c:Ljava/lang/Long;
-
-    .line 33
-    .line 34
-    invoke-interface {p1, v0, v1}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 35
-    .line 36
-    .line 37
-    const/4 v0, 0x1
-
-    .line 38
-    iget-object v1, p0, Lew9;->b:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 41
-    .line 42
-    .line 43
-    const/4 v0, 0x2
-
-    .line 44
-    iget-object v1, p0, Lew9;->t:Ljava/lang/String;
-
-    .line 45
-    .line 46
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 47
-    .line 48
-    .line 49
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 50
-    .line 51
-    return-object p1
-
-    .line 52
-    :pswitch_1
-    check-cast p1, LxR;
-
-    .line 53
-    .line 54
-    const/4 v0, 0x0
-
-    .line 55
-    iget-object v1, p0, Lew9;->b:Ljava/lang/String;
-
-    .line 56
-    .line 57
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 58
-    .line 59
-    .line 60
-    const/4 v0, 0x1
-
-    .line 61
-    iget-object v1, p0, Lew9;->c:Ljava/lang/Long;
-
-    .line 62
-    .line 63
-    invoke-interface {p1, v0, v1}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 64
-    .line 65
-    .line 66
-    const/4 v0, 0x2
-
-    .line 67
-    iget-object v1, p0, Lew9;->t:Ljava/lang/String;
-
-    .line 68
-    .line 69
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 70
-    .line 71
-    .line 72
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 73
-    .line 74
-    return-object p1
-
-    .line 75
-    :pswitch_2
-    check-cast p1, LxR;
-
-    .line 76
-    .line 77
-    const/4 v0, 0x0
-
-    .line 78
-    iget-object v1, p0, Lew9;->b:Ljava/lang/String;
-
-    .line 79
-    .line 80
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 81
-    .line 82
-    .line 83
-    const/4 v0, 0x1
-
-    .line 84
-    iget-object v1, p0, Lew9;->c:Ljava/lang/Long;
-
-    .line 85
-    .line 86
-    invoke-interface {p1, v0, v1}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 87
-    .line 88
-    .line 89
-    const/4 v0, 0x2
-
-    .line 90
-    iget-object v1, p0, Lew9;->t:Ljava/lang/String;
-
-    .line 91
-    .line 92
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 93
-    .line 94
-    .line 95
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 96
-    .line 97
-    return-object p1
-
-    .line 98
-    nop
-
-    .line 99
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :catch_0
+    return-void
 .end method

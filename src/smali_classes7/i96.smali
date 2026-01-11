@@ -1,102 +1,302 @@
 .class public final Li96;
-.super Landroid/widget/FrameLayout$LayoutParams;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public a:Z
+.field public final synthetic a:I
 
-.field public b:Lj96;
+.field public final synthetic b:Lj96;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
+.method public synthetic constructor <init>(Lj96;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lj96;
-
-    const/16 v1, 0x1f
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v2, v2, v2, v1}, Lj96;-><init>(IIII)V
-
-    const/4 v1, -0x1
-
-    .line 2
-    invoke-direct {p0, v1, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
-
-    .line 3
-    iput-object v0, p0, Li96;->b:Lj96;
-
-    return-void
-.end method
-
-.method public constructor <init>(I)V
-    .locals 2
-
-    const/4 p1, -0x2
-
-    .line 4
-    invoke-direct {p0, p1, p1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
-
-    .line 5
-    new-instance p1, Lj96;
-
-    const/16 v0, 0x1f
-
-    const/4 v1, 0x0
-
-    invoke-direct {p1, v1, v1, v1, v0}, Lj96;-><init>(IIII)V
+    iput p2, p0, Li96;->a:I
 
     iput-object p1, p0, Li96;->b:Lj96;
 
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
-.method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
-    .locals 3
 
+# virtual methods
+.method public final run()V
+    .locals 5
+
+    .line 1
+    iget v0, p0, Li96;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
     .line 6
-    invoke-direct {p0, p1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    iget-object v0, p0, Li96;->b:Lj96;
 
     .line 7
-    new-instance v0, Lj96;
-
-    const/16 v1, 0x1f
-
-    const/4 v2, 0x0
-
-    invoke-direct {v0, v2, v2, v2, v1}, Lj96;-><init>(IIII)V
-
-    iput-object v0, p0, Li96;->b:Lj96;
-
     .line 8
-    instance-of v0, p1, Landroid/widget/FrameLayout$LayoutParams;
-
-    if-eqz v0, :cond_0
+    iget-object v1, v0, Lj96;->c:LREi;
 
     .line 9
-    check-cast p1, Landroid/widget/FrameLayout$LayoutParams;
-
-    iget v0, p1, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
-
-    iput v0, p0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
-
     .line 10
-    iget v0, p1, Landroid/widget/FrameLayout$LayoutParams;->leftMargin:I
-
-    iget v1, p1, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
-
-    iget v2, p1, Landroid/widget/FrameLayout$LayoutParams;->rightMargin:I
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 11
-    iget p1, p1, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
-
     .line 12
-    invoke-virtual {p0, v0, v1, v2, p1}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+    .line 13
+    move-result-object v2
 
+    .line 14
+    check-cast v2, Landroid/content/SharedPreferences;
+
+    .line 15
+    .line 16
+    const-string v3, "settings_enabled"
+
+    .line 17
+    .line 18
+    const-string v4, "DISABLED"
+
+    .line 19
+    .line 20
+    invoke-interface {v2, v3, v4}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    const-string v4, "ENABLED"
+
+    .line 25
+    .line 26
+    invoke-static {v2, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    if-nez v2, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v1
+
+    .line 36
+    check-cast v1, Landroid/content/SharedPreferences;
+
+    .line 37
+    .line 38
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v1
+
+    .line 42
+    invoke-interface {v1, v3, v4}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v1
+
+    .line 46
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 47
+    .line 48
+    .line 49
+    iget-object v0, v0, Lj96;->b:LCBe;
+
+    .line 50
+    .line 51
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v0
+
+    .line 55
+    check-cast v0, LcH8;
+
+    .line 56
+    .line 57
+    sget-object v1, Lg96;->Z:Lg96;
+
+    .line 58
+    .line 59
+    const/4 v2, 0x0
+
+    .line 60
+    invoke-static {v1, v2}, LtUc;->c(LsUc;Z)LV7c;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v1
+
+    .line 64
+    invoke-static {v0, v1}, LaH8;->e(LcH8;LV7c;)V
+
+    .line 65
+    .line 66
+    .line 67
     :cond_0
     return-void
+
+    .line 68
+    :pswitch_0
+    iget-object v0, p0, Li96;->b:Lj96;
+
+    .line 69
+    .line 70
+    iget-object v1, v0, Lj96;->c:LREi;
+
+    .line 71
+    .line 72
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v2
+
+    .line 76
+    check-cast v2, Landroid/content/SharedPreferences;
+
+    .line 77
+    .line 78
+    const-string v3, "settings_enabled"
+
+    .line 79
+    .line 80
+    const-string v4, "ENABLED"
+
+    .line 81
+    .line 82
+    invoke-interface {v2, v3, v4}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v2
+
+    .line 86
+    const-string v4, "DISABLED"
+
+    .line 87
+    .line 88
+    invoke-static {v2, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v2
+
+    .line 92
+    if-nez v2, :cond_1
+
+    .line 93
+    .line 94
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v1
+
+    .line 98
+    check-cast v1, Landroid/content/SharedPreferences;
+
+    .line 99
+    .line 100
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object v1
+
+    .line 104
+    invoke-interface {v1, v3, v4}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v1
+
+    .line 108
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 109
+    .line 110
+    .line 111
+    iget-object v0, v0, Lj96;->b:LCBe;
+
+    .line 112
+    .line 113
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object v0
+
+    .line 117
+    check-cast v0, LcH8;
+
+    .line 118
+    .line 119
+    sget-object v1, Lg96;->e0:Lg96;
+
+    .line 120
+    .line 121
+    const/4 v2, 0x0
+
+    .line 122
+    invoke-static {v1, v2}, LtUc;->c(LsUc;Z)LV7c;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object v1
+
+    .line 126
+    invoke-static {v0, v1}, LaH8;->e(LcH8;LV7c;)V
+
+    .line 127
+    .line 128
+    .line 129
+    :cond_1
+    return-void
+
+    .line 130
+    nop
+
+    .line 131
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

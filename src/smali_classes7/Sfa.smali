@@ -1,9 +1,6 @@
 .class public final LSfa;
-.super Ljava/lang/Object;
+.super LTfa;
 .source "SourceFile"
-
-# interfaces
-.implements LTfa;
 
 
 # static fields
@@ -29,28 +26,4 @@
     .line 7
     .line 8
     return-void
-.end method
-
-
-# virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final f()Lio/reactivex/rxjava3/functions/Consumer;
-    .locals 1
-
-    .line 1
-    sget-object v0, LsH0;->x0:LsH0;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

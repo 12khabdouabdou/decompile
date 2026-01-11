@@ -26,11 +26,20 @@
 
 
 # virtual methods
+.method public abstract autoPitchForZoom(F)F
+.end method
+
 .method public abstract flyTo(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraOptions;Lcom/snapchat/client/snap_maps_sdk/AnimationOptions;)V
+.end method
+
+.method public abstract getCameraViewport()Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraViewport;
 .end method
 
 .method public abstract jumpTo(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraOptions;)V
 .end method
 
 .method public abstract setEdgeInsets(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$EdgeInsets;)V
+.end method
+
+.method public abstract setManualPitch(FF)V
 .end method

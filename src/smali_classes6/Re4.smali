@@ -1,54 +1,41 @@
 .class public final LRe4;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'deckHierarchy\':r:\'[0]\',\'onExitedFlow\':f(),\'encodedBusinessProfileAndUserData\':t,\'source\':r:\'[1]\',\'deeplinkAction\':r?:\'[2]\',\'networkingClient\':r:\'[3]\',\'webLauncher\':r:\'[4]\',\'copyToClipboard\':f(s): b@,\'emailLauncher\':r:\'[5]\',\'pageLauncher\':r:\'[6]\',\'notificationPresenter\':r:\'[7]\',\'cameraRollLibrary\':r:\'[8]\',\'memoriesTranscoder\':r:\'[9]\',\'tempFileProvider\':r:\'[10]\'"
+    schema = "\'usersObservable\':g?<c>:\'[0]\'<a<r:\'[1]\'>>,\'enableInviteActions\':g?<c>:\'[0]\'<b@>,\'isConversationCommunity\':g?<c>:\'[0]\'<b@>,\'onTapInviteLink\':f(),\'onTapAddMember\':f(),\'onTapOpenGroupProfile\':f?()"
     typeReferences = {
-        Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;,
-        Lcom/snap/modules/business_creator_hub/CreatorHubSource;,
-        Lcom/snap/modules/business_creator_hub/CreatorHubDeeplinkAction;,
-        Lcom/snap/composer/networking/ClientProtocol;,
-        Lcom/snap/composer/WebLauncher;,
-        Lcom/snap/modules/business/IEmailLauncher;,
-        Lcom/snap/composer/page_launcher/IPageLauncher;,
-        Lcom/snap/composer/foundation/INotificationPresenter;,
-        Lcom/snap/impala/common/media/IMediaLibrary;,
-        Lcom/snap/modules/media_processor/IMemoriesTranscoder;,
-        Lcom/snap/modules/media_processor/ITempFileProvider;
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lcom/snap/composer/people/User;
     }
 .end annotation
 
 
 # instance fields
-.field private _cameraRollLibrary:Lcom/snap/impala/common/media/IMediaLibrary;
-
-.field private _copyToClipboard:Lkotlin/jvm/functions/Function1;
+.field private _enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkotlin/jvm/functions/Function1;"
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
         }
     .end annotation
 .end field
 
-.field private _deckHierarchy:Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
+.field private _isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field private _deeplinkAction:Lcom/snap/modules/business_creator_hub/CreatorHubDeeplinkAction;
-
-.field private _emailLauncher:Lcom/snap/modules/business/IEmailLauncher;
-
-.field private _encodedBusinessProfileAndUserData:[B
-
-.field private _memoriesTranscoder:Lcom/snap/modules/media_processor/IMemoriesTranscoder;
-
-.field private _networkingClient:Lcom/snap/composer/networking/ClientProtocol;
-
-.field private _notificationPresenter:Lcom/snap/composer/foundation/INotificationPresenter;
-
-.field private _onExitedFlow:Lkotlin/jvm/functions/Function0;
+.field private _onTapAddMember:Lkotlin/jvm/functions/Function0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lkotlin/jvm/functions/Function0;"
@@ -56,35 +43,53 @@
     .end annotation
 .end field
 
-.field private _pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+.field private _onTapInviteLink:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
 
-.field private _source:Lcom/snap/modules/business_creator_hub/CreatorHubSource;
+.field private _onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
 
-.field private _tempFileProvider:Lcom/snap/modules/media_processor/ITempFileProvider;
-
-.field private _webLauncher:Lcom/snap/composer/WebLauncher;
+.field private _usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Lcom/snap/composer/people/User;",
+            ">;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;Lkotlin/jvm/functions/Function0;[BLcom/snap/modules/business_creator_hub/CreatorHubSource;Lcom/snap/modules/business_creator_hub/CreatorHubDeeplinkAction;Lcom/snap/composer/networking/ClientProtocol;Lcom/snap/composer/WebLauncher;Lkotlin/jvm/functions/Function1;Lcom/snap/modules/business/IEmailLauncher;Lcom/snap/composer/page_launcher/IPageLauncher;Lcom/snap/composer/foundation/INotificationPresenter;Lcom/snap/impala/common/media/IMediaLibrary;Lcom/snap/modules/media_processor/IMemoriesTranscoder;Lcom/snap/modules/media_processor/ITempFileProvider;)V
+.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Lcom/snap/composer/people/User;",
+            ">;>;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;",
             "Lkotlin/jvm/functions/Function0;",
-            "[B",
-            "Lcom/snap/modules/business_creator_hub/CreatorHubSource;",
-            "Lcom/snap/modules/business_creator_hub/CreatorHubDeeplinkAction;",
-            "Lcom/snap/composer/networking/ClientProtocol;",
-            "Lcom/snap/composer/WebLauncher;",
-            "Lkotlin/jvm/functions/Function1;",
-            "Lcom/snap/modules/business/IEmailLauncher;",
-            "Lcom/snap/composer/page_launcher/IPageLauncher;",
-            "Lcom/snap/composer/foundation/INotificationPresenter;",
-            "Lcom/snap/impala/common/media/IMediaLibrary;",
-            "Lcom/snap/modules/media_processor/IMemoriesTranscoder;",
-            "Lcom/snap/modules/media_processor/ITempFileProvider;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
             ")V"
         }
     .end annotation
@@ -93,63 +98,97 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LRe4;->_usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 3
+    iput-object p2, p0, LRe4;->_enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 4
-    iput-object p1, p0, LRe4;->_deckHierarchy:Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
+    iput-object p3, p0, LRe4;->_isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 5
+    iput-object p4, p0, LRe4;->_onTapInviteLink:Lkotlin/jvm/functions/Function0;
+
     .line 6
-    iput-object p2, p0, LRe4;->_onExitedFlow:Lkotlin/jvm/functions/Function0;
+    iput-object p5, p0, LRe4;->_onTapAddMember:Lkotlin/jvm/functions/Function0;
 
     .line 7
+    iput-object p6, p0, LRe4;->_onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+    .locals 1
+
     .line 8
-    iput-object p3, p0, LRe4;->_encodedBusinessProfileAndUserData:[B
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
 
     .line 9
+    iput-object v0, p0, LRe4;->_usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 10
-    iput-object p4, p0, LRe4;->_source:Lcom/snap/modules/business_creator_hub/CreatorHubSource;
+    iput-object v0, p0, LRe4;->_enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 11
+    iput-object v0, p0, LRe4;->_isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 12
-    iput-object p5, p0, LRe4;->_deeplinkAction:Lcom/snap/modules/business_creator_hub/CreatorHubDeeplinkAction;
+    iput-object p1, p0, LRe4;->_onTapInviteLink:Lkotlin/jvm/functions/Function0;
 
     .line 13
+    iput-object p2, p0, LRe4;->_onTapAddMember:Lkotlin/jvm/functions/Function0;
+
     .line 14
-    iput-object p6, p0, LRe4;->_networkingClient:Lcom/snap/composer/networking/ClientProtocol;
+    iput-object v0, p0, LRe4;->_onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
 
-    .line 15
-    .line 16
-    iput-object p7, p0, LRe4;->_webLauncher:Lcom/snap/composer/WebLauncher;
+    return-void
+.end method
 
-    .line 17
-    .line 18
-    iput-object p8, p0, LRe4;->_copyToClipboard:Lkotlin/jvm/functions/Function1;
 
-    .line 19
-    .line 20
-    iput-object p9, p0, LRe4;->_emailLauncher:Lcom/snap/modules/business/IEmailLauncher;
+# virtual methods
+.method public final a(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
 
-    .line 21
-    .line 22
-    iput-object p10, p0, LRe4;->_pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+    .line 1
+    iput-object p1, p0, LRe4;->_isConversationCommunity:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-    .line 23
-    .line 24
-    iput-object p11, p0, LRe4;->_notificationPresenter:Lcom/snap/composer/foundation/INotificationPresenter;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 25
-    .line 26
-    iput-object p12, p0, LRe4;->_cameraRollLibrary:Lcom/snap/impala/common/media/IMediaLibrary;
+.method public final b(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
 
-    .line 27
-    .line 28
-    iput-object p13, p0, LRe4;->_memoriesTranscoder:Lcom/snap/modules/media_processor/IMemoriesTranscoder;
+    .line 1
+    iput-object p1, p0, LRe4;->_enableInviteActions:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-    .line 29
-    .line 30
-    iput-object p14, p0, LRe4;->_tempFileProvider:Lcom/snap/modules/media_processor/ITempFileProvider;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 31
-    .line 32
+.method public final c(Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LRe4;->_onTapOpenGroupProfile:Lkotlin/jvm/functions/Function0;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final d(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LRe4;->_usersObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 2
+    .line 3
     return-void
 .end method

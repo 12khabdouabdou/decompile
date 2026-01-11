@@ -1,50 +1,25 @@
 .class public final LPdg;
-.super Ljava/lang/Object;
+.super LKVk;
 .source "SourceFile"
 
-# interfaces
-.implements LQdg;
 
-
-# static fields
-.field public static final a:LPdg;
+# instance fields
+.field public final a:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LPdg;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, LPdg;->a:Ljava/lang/String;
+
     .line 5
     .line 6
-    sput-object v0, LPdg;->a:LPdg;
-
-    .line 7
-    .line 8
     return-void
-.end method
-
-
-# virtual methods
-.method public final w2()LNdg;
-    .locals 1
-
-    .line 1
-    new-instance v0, LOdg;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
 .end method

@@ -6,12 +6,12 @@
 //attribute vec3 normal 1
 //attribute vec4 tangent 2
 //attribute vec2 texture1 4
-//sampler sampler confidenceTextureSmpSC 0:8
-//sampler sampler cropTextureSmpSC 0:9
-//texture texture2D confidenceTexture 0:0:0:8
-//texture texture2D cropTexture 0:1:0:9
-//texture texture2DArray confidenceTextureArrSC 0:16:0:8
-//texture texture2DArray cropTextureArrSC 0:17:0:9
+//sampler sampler confidenceTextureSmpSC 0:9
+//sampler sampler cropTextureSmpSC 0:10
+//texture texture2D confidenceTexture 0:0:0:9
+//texture texture2D cropTexture 0:1:0:10
+//texture texture2DArray confidenceTextureArrSC 0:18:0:9
+//texture texture2DArray cropTextureArrSC 0:19:0:10
 //spec_const bool SC_USE_CLAMP_TO_BORDER_confidenceTexture 0 0
 //spec_const bool SC_USE_CLAMP_TO_BORDER_cropTexture 1 0
 //spec_const bool SC_USE_UV_MIN_MAX_confidenceTexture 2 0
@@ -207,11 +207,11 @@ out float varClipDistance;
 flat out int varStereoViewID;
 in vec4 position;
 in vec2 texture0;
-out vec3 varPos;
-out vec4 varPackedTex;
+out vec4 varPosAndMotion;
+out vec4 varTex01;
 out vec4 varScreenPos;
 out vec2 varScreenTexturePos;
-out vec3 varNormal;
+out vec4 varNormalAndMotion;
 out vec4 varTangent;
 out vec2 varShadowTex;
 in vec3 normal;
@@ -290,73 +290,74 @@ l9_0=l9_1;
 #endif
 #if ((sc_RenderingSpace==3)||(sc_RenderingSpace==4))
 {
-varPos=l9_0.xyz;
+varPosAndMotion=vec4(l9_0.x,l9_0.y,l9_0.z,varPosAndMotion.w);
 }
 #else
 {
 #if (sc_RenderingSpace==2)
 {
-varPos=position.xyz;
+varPosAndMotion=vec4(position.x,position.y,position.z,varPosAndMotion.w);
 }
 #else
 {
 #if (sc_RenderingSpace==1)
 {
-varPos=(sc_ModelMatrix*position).xyz;
+vec4 l9_4=sc_ModelMatrix*position;
+varPosAndMotion=vec4(l9_4.x,l9_4.y,l9_4.z,varPosAndMotion.w);
 }
 #endif
 }
 #endif
 }
 #endif
-varPackedTex=vec4(texture0.x,texture0.y,varPackedTex.z,varPackedTex.w);
+varTex01=vec4(texture0.x,texture0.y,varTex01.z,varTex01.w);
 varScreenPos=l9_0;
-vec2 l9_4=((l9_0.xy/vec2(l9_0.w))*0.5)+vec2(0.5);
-vec2 l9_5;
+vec2 l9_5=((l9_0.xy/vec2(l9_0.w))*0.5)+vec2(0.5);
+vec2 l9_6;
 #if (sc_StereoRenderingMode==1)
 {
-vec3 l9_6=vec3(l9_4,0.0);
-l9_6.y=((2.0*l9_4.y)+float(sc_GetStereoViewIndex()))-1.0;
-l9_5=l9_6.xy;
+vec3 l9_7=vec3(l9_5,0.0);
+l9_7.y=((2.0*l9_5.y)+float(sc_GetStereoViewIndex()))-1.0;
+l9_6=l9_7.xy;
 }
 #else
 {
-l9_5=l9_4;
+l9_6=l9_5;
 }
 #endif
-varScreenTexturePos=l9_5;
-vec4 l9_7;
+varScreenTexturePos=l9_6;
+vec4 l9_8;
 #if (sc_DepthBufferMode==1)
 {
-vec4 l9_8;
+vec4 l9_9;
 if (sc_ProjectionMatrixArray[sc_GetStereoViewIndex()][2].w!=0.0)
 {
-vec4 l9_9=l9_0;
-l9_9.z=((log2(max(sc_Camera.clipPlanes.x,1.0+l9_0.w))*(2.0/log2(sc_Camera.clipPlanes.y+1.0)))-1.0)*l9_0.w;
-l9_8=l9_9;
+vec4 l9_10=l9_0;
+l9_10.z=((log2(max(sc_Camera.clipPlanes.x,1.0+l9_0.w))*(2.0/log2(sc_Camera.clipPlanes.y+1.0)))-1.0)*l9_0.w;
+l9_9=l9_10;
 }
 else
 {
+l9_9=l9_0;
+}
+l9_8=l9_9;
+}
+#else
+{
 l9_8=l9_0;
 }
-l9_7=l9_8;
-}
-#else
-{
-l9_7=l9_0;
-}
 #endif
-vec4 l9_10=l9_7*1.0;
-vec4 l9_11;
+vec4 l9_11=l9_8*1.0;
+vec4 l9_12;
 #if (sc_ShaderCacheConstant!=0)
 {
-vec4 l9_12=l9_10;
-l9_12.x=l9_10.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
-l9_11=l9_12;
+vec4 l9_13=l9_11;
+l9_13.x=l9_11.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_12=l9_13;
 }
 #else
 {
-l9_11=l9_10;
+l9_12=l9_11;
 }
 #endif
 #if (sc_StereoRenderingMode>0)
@@ -366,19 +367,19 @@ varStereoViewID=sc_StereoViewID;
 #endif
 #if (sc_StereoRenderingMode==1)
 {
-float l9_13=dot(l9_11,sc_StereoClipPlanes[sc_StereoViewID]);
+float l9_14=dot(l9_12,sc_StereoClipPlanes[sc_StereoViewID]);
 #if (sc_StereoRendering_IsClipDistanceEnabled==1)
 {
-sc_SetClipDistancePlatform(l9_13);
+sc_SetClipDistancePlatform(l9_14);
 }
 #else
 {
-varClipDistance=l9_13;
+varClipDistance=l9_14;
 }
 #endif
 }
 #endif
-gl_Position=l9_11;
+gl_Position=l9_12;
 }
 #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER
 #ifndef sc_StereoRenderingMode
@@ -392,9 +393,6 @@ gl_Position=l9_11;
 #elif cropTextureHasSwappedViews==1
 #undef cropTextureHasSwappedViews
 #define cropTextureHasSwappedViews 1
-#endif
-#ifndef cropTextureLayout
-#define cropTextureLayout 0
 #endif
 #ifndef confidenceTextureHasSwappedViews
 #define confidenceTextureHasSwappedViews 0
@@ -428,6 +426,9 @@ gl_Position=l9_11;
 #elif SC_USE_CLAMP_TO_BORDER_confidenceTexture==1
 #undef SC_USE_CLAMP_TO_BORDER_confidenceTexture
 #define SC_USE_CLAMP_TO_BORDER_confidenceTexture 1
+#endif
+#ifndef cropTextureLayout
+#define cropTextureLayout 0
 #endif
 #ifndef SC_USE_UV_TRANSFORM_cropTexture
 #define SC_USE_UV_TRANSFORM_cropTexture 0
@@ -467,14 +468,14 @@ uniform mediump sampler2D confidenceTexture;
 uniform mediump sampler2DArray cropTextureArrSC;
 uniform mediump sampler2D cropTexture;
 flat in int varStereoViewID;
-in vec2 varShadowTex;
 in float varClipDistance;
-in vec4 varPackedTex;
-in vec3 varPos;
-in vec3 varNormal;
+in vec4 varTex01;
+in vec4 varPosAndMotion;
+in vec4 varNormalAndMotion;
 in vec4 varTangent;
 in vec4 varScreenPos;
 in vec2 varScreenTexturePos;
+in vec2 varShadowTex;
 int sc_GetStereoViewIndex()
 {
 int l9_0;
@@ -708,7 +709,7 @@ discard;
 }
 }
 #endif
-vec3 l9_0=screenToCropTransform*vec3(varPackedTex.xy,1.0);
+vec3 l9_0=screenToCropTransform*vec3(varTex01.xy,1.0);
 float l9_1=l9_0.x;
 float l9_2=l9_0.y;
 vec2 l9_3=vec2(l9_1,l9_2);

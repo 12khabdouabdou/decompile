@@ -26,7 +26,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, v0}, Lapp/aifactory/sdk/api/model/ResourceId;-><init>(LHr5;)V
+    invoke-direct {p0, v0}, Lapp/aifactory/sdk/api/model/ResourceId;-><init>(Lex5;)V
 
     .line 3
     .line 4
@@ -100,7 +100,7 @@
 
     iget-object p1, p1, Lapp/aifactory/sdk/api/model/ResourceId$UrlResourceId;->urlResourceId:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -196,7 +196,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, LNde;->g(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LmBe;->h(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
 
     .line 13
     .line 14

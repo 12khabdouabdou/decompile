@@ -1,3 +1,3 @@
-.class public abstract LyH2;
+.class public final LyH2;
 .super Ljava/lang/Object;
 .source "SourceFile"

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LDY0;
+.implements Lm21;
 
 
 # static fields
@@ -43,17 +43,17 @@
 
 .field public T0:I
 
-.field public U0:LzY0;
+.field public U0:Li21;
 
-.field public final V0:LVX0;
+.field public final V0:LC11;
 
-.field public final W0:LXX0;
+.field public final W0:LE11;
 
-.field public final X0:LWX0;
+.field public final X0:LD11;
 
-.field public final Y0:LVX0;
+.field public final Y0:LC11;
 
-.field public final Z0:LVX0;
+.field public final Z0:LC11;
 
 
 # direct methods
@@ -73,77 +73,77 @@
 
     .line 6
     .line 7
-    new-instance v0, LVX0;
+    new-instance v0, LC11;
 
     .line 8
     .line 9
     const/4 v1, 0x0
 
     .line 10
-    invoke-direct {v0, p0, v1}, LVX0;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;I)V
+    invoke-direct {v0, p0, v1}, LC11;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;I)V
 
     .line 11
     .line 12
     .line 13
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->V0:LVX0;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->V0:LC11;
 
     .line 14
     .line 15
-    new-instance v0, LXX0;
+    new-instance v0, LE11;
 
     .line 16
     .line 17
-    invoke-direct {v0, p0}, LXX0;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;)V
+    invoke-direct {v0, p0}, LE11;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;)V
 
     .line 18
     .line 19
     .line 20
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->W0:LXX0;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->W0:LE11;
 
     .line 21
     .line 22
-    new-instance v0, LWX0;
+    new-instance v0, LD11;
 
     .line 23
     .line 24
-    invoke-direct {v0, p0}, LWX0;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;)V
+    invoke-direct {v0, p0}, LD11;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;)V
 
     .line 25
     .line 26
     .line 27
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->X0:LWX0;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->X0:LD11;
 
     .line 28
     .line 29
-    new-instance v0, LVX0;
+    new-instance v0, LC11;
 
     .line 30
     .line 31
     const/4 v1, 0x1
 
     .line 32
-    invoke-direct {v0, p0, v1}, LVX0;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;I)V
+    invoke-direct {v0, p0, v1}, LC11;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;I)V
 
     .line 33
     .line 34
     .line 35
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Y0:LVX0;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Y0:LC11;
 
     .line 36
     .line 37
-    new-instance v0, LVX0;
+    new-instance v0, LC11;
 
     .line 38
     .line 39
     const/4 v1, 0x2
 
     .line 40
-    invoke-direct {v0, p0, v1}, LVX0;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;I)V
+    invoke-direct {v0, p0, v1}, LC11;-><init>(Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;I)V
 
     .line 41
     .line 42
     .line 43
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Z0:LVX0;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Z0:LC11;
 
     .line 44
     .line 45
@@ -152,11 +152,11 @@
 
 
 # virtual methods
-.method public final B1(Landroid/os/Bundle;)V
-    .locals 2
+.method public final A1()V
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 2
     .line 3
@@ -164,108 +164,7 @@
     move-result-object v0
 
     .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    const-string v1, "reg_maximum_age_key"
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
-
-    .line 13
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 19
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 20
-    .line 21
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v1
-
-    .line 25
-    if-lez v1, :cond_1
-
-    .line 26
-    .line 27
-    const/4 v1, 0x1
-
-    .line 28
-    iput-boolean v1, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->S0:Z
-
-    .line 29
-    .line 30
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
-
-    .line 31
-    .line 32
-    .line 33
-    move-result v0
-
-    .line 34
-    iput v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->T0:I
-
-    .line 35
-    .line 36
-    :cond_1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->B1(Landroid/os/Bundle;)V
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p1
-
-    .line 43
-    invoke-virtual {p1, p0}, LzY0;->r3(LDY0;)V
-
-    .line 44
-    .line 45
-    .line 46
-    return-void
-.end method
-
-.method public final C1()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, LzY0;->C1()V
+    invoke-virtual {v0}, Li21;->D1()V
 
     .line 6
     .line 7
@@ -273,11 +172,11 @@
     return-void
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->F1()V
+    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->D1()V
 
     .line 2
     .line 3
@@ -287,7 +186,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 8
     .line 9
@@ -295,7 +194,7 @@
     move-result-object v0
 
     .line 11
-    invoke-virtual {v0}, LzY0;->onPause()V
+    invoke-virtual {v0}, Li21;->onPause()V
 
     .line 12
     .line 13
@@ -303,11 +202,11 @@
     return-void
 .end method
 
-.method public final G1()V
+.method public final E1()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->G1()V
+    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->E1()V
 
     .line 2
     .line 3
@@ -317,7 +216,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 8
     .line 9
@@ -325,7 +224,7 @@
     move-result-object v0
 
     .line 11
-    invoke-virtual {v0}, LzY0;->onResume()V
+    invoke-virtual {v0}, Li21;->onResume()V
 
     .line 12
     .line 13
@@ -333,11 +232,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e027f
+    const p3, 0x7f0e0295
 
     .line 2
     .line 3
@@ -356,16 +255,16 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 13
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    const p2, 0x7f0b0225
+    const p2, 0x7f0b026f
 
     .line 5
     .line 6
@@ -386,7 +285,7 @@
 
     .line 14
     .line 15
-    const p2, 0x7f0b0691
+    const p2, 0x7f0b0728
 
     .line 16
     .line 17
@@ -407,7 +306,7 @@
 
     .line 25
     .line 26
-    const p2, 0x7f0b0223
+    const p2, 0x7f0b026d
 
     .line 27
     .line 28
@@ -428,7 +327,7 @@
 
     .line 36
     .line 37
-    const p2, 0x7f0b0224
+    const p2, 0x7f0b026e
 
     .line 38
     .line 39
@@ -449,7 +348,7 @@
 
     .line 47
     .line 48
-    const p2, 0x7f0b0228
+    const p2, 0x7f0b0272
 
     .line 49
     .line 50
@@ -470,7 +369,7 @@
 
     .line 58
     .line 59
-    const p2, 0x7f0b071f
+    const p2, 0x7f0b07b9
 
     .line 60
     .line 61
@@ -491,7 +390,7 @@
 
     .line 69
     .line 70
-    const p2, 0x7f0b0721
+    const p2, 0x7f0b07bb
 
     .line 71
     .line 72
@@ -512,7 +411,7 @@
 
     .line 80
     .line 81
-    const p2, 0x7f0b0720
+    const p2, 0x7f0b07ba
 
     .line 82
     .line 83
@@ -533,7 +432,7 @@
 
     .line 91
     .line 92
-    const p2, 0x7f0b0722
+    const p2, 0x7f0b07bc
 
     .line 93
     .line 94
@@ -554,7 +453,7 @@
 
     .line 102
     .line 103
-    const p2, 0x7f0b15a6
+    const p2, 0x7f0b16e6
 
     .line 104
     .line 105
@@ -575,7 +474,7 @@
 
     .line 113
     .line 114
-    const p2, 0x7f0b15a2
+    const p2, 0x7f0b16e1
 
     .line 115
     .line 116
@@ -596,7 +495,7 @@
 
     .line 124
     .line 125
-    const p2, 0x7f0b15a1
+    const p2, 0x7f0b16e0
 
     .line 126
     .line 127
@@ -624,7 +523,7 @@
 
     .line 138
     .line 139
-    const v0, 0x7f0b159d
+    const v0, 0x7f0b16dc
 
     .line 140
     .line 141
@@ -644,7 +543,7 @@
 
     .line 148
     .line 149
-    const v0, 0x7f0b159e
+    const v0, 0x7f0b16dd
 
     .line 150
     .line 151
@@ -664,7 +563,7 @@
 
     .line 158
     .line 159
-    const v0, 0x7f0b159f
+    const v0, 0x7f0b16de
 
     .line 160
     .line 161
@@ -684,7 +583,7 @@
 
     .line 168
     .line 169
-    const v0, 0x7f0b15a0
+    const v0, 0x7f0b16df
 
     .line 170
     .line 171
@@ -704,7 +603,7 @@
 
     .line 178
     .line 179
-    invoke-static {p2}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p2}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
 
     .line 180
     .line 181
@@ -716,7 +615,7 @@
 
     .line 184
     .line 185
-    const p2, 0x7f0b0633
+    const p2, 0x7f0b06c7
 
     .line 186
     .line 187
@@ -741,7 +640,7 @@
     .line 196
     .line 197
     .line 198
-    const p2, 0x7f0b15a7
+    const p2, 0x7f0b16e7
 
     .line 199
     .line 200
@@ -758,16 +657,16 @@
 
     .line 206
     .line 207
-    new-instance p2, LY95;
+    new-instance p2, Log5;
 
     .line 208
     .line 209
-    invoke-direct {p2}, LtK0;-><init>()V
+    invoke-direct {p2}, LpN0;-><init>()V
 
     .line 210
     .line 211
     .line 212
-    iget-wide v4, p2, LtK0;->a:J
+    iget-wide v4, p2, LpN0;->a:J
 
     .line 213
     .line 214
@@ -787,7 +686,7 @@
 
     .line 221
     .line 222
-    invoke-virtual {p2, v6}, LY95;->p(I)LY95;
+    invoke-virtual {p2, v6}, Log5;->t(I)Log5;
 
     .line 223
     .line 224
@@ -803,7 +702,7 @@
 
     .line 229
     .line 230
-    iget-wide v8, p2, LtK0;->a:J
+    iget-wide v8, p2, LpN0;->a:J
 
     .line 231
     .line 232
@@ -816,7 +715,7 @@
 
     .line 236
     :cond_0
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 237
     .line 238
@@ -891,7 +790,7 @@
 
     .line 272
     :cond_2
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 273
     .line 274
@@ -900,7 +799,7 @@
 
     .line 276
     :cond_3
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 277
     .line 278
@@ -910,7 +809,7 @@
     .line 280
     :cond_4
     :goto_1
-    const p2, 0x7f0b0e75
+    const p2, 0x7f0b0f91
 
     .line 281
     .line 282
@@ -927,7 +826,7 @@
 
     .line 288
     .line 289
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LpLa;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LWXa;
 
     .line 290
     .line 291
@@ -935,7 +834,7 @@
     move-result-object v4
 
     .line 293
-    invoke-interface {v4}, LpLa;->p()LmLa;
+    invoke-interface {v4}, LWXa;->q()LTXa;
 
     .line 294
     .line 295
@@ -943,7 +842,7 @@
     move-result-object v4
 
     .line 297
-    iget-object v4, v4, LmLa;->k0:Ljava/lang/String;
+    iget-object v4, v4, LTXa;->k0:Ljava/lang/String;
 
     .line 298
     .line 299
@@ -959,7 +858,7 @@
 
     .line 304
     .line 305
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LpLa;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LWXa;
 
     .line 306
     .line 307
@@ -967,7 +866,7 @@
     move-result-object v4
 
     .line 309
-    invoke-interface {v4}, LpLa;->p()LmLa;
+    invoke-interface {v4}, LWXa;->q()LTXa;
 
     .line 310
     .line 311
@@ -975,7 +874,7 @@
     move-result-object v4
 
     .line 313
-    iget-object v4, v4, LmLa;->l0:Ljava/lang/String;
+    iget-object v4, v4, LTXa;->l0:Ljava/lang/String;
 
     .line 314
     .line 315
@@ -991,7 +890,7 @@
 
     .line 320
     .line 321
-    const v4, 0x7f0b0e76
+    const v4, 0x7f0b0f92
 
     .line 322
     .line 323
@@ -1012,7 +911,7 @@
 
     .line 331
     .line 332
-    const v4, 0x7f131792
+    const v4, 0x7f131883
 
     .line 333
     .line 334
@@ -1031,7 +930,7 @@
     .line 341
     .line 342
     :cond_5
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Y1()Lm89;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Y1()LEI5;
 
     .line 343
     .line 344
@@ -1039,11 +938,11 @@
     move-result-object p1
 
     .line 346
-    sget-object v4, LZ8d;->X0:LZ8d;
+    sget-object v4, Lsod;->X0:Lsod;
 
     .line 347
     .line 348
-    invoke-virtual {p1, v4}, Lm89;->a(LZ8d;)Lhad;
+    invoke-virtual {p1, v4}, LEI5;->a(Lsod;)LDpd;
 
     .line 349
     .line 350
@@ -1051,7 +950,7 @@
     move-result-object p1
 
     .line 352
-    iget-object v4, p1, Lhad;->a:Ljava/lang/Object;
+    iget-object v4, p1, LDpd;->a:Ljava/lang/Object;
 
     .line 353
     .line 354
@@ -1067,7 +966,7 @@
     move-result v4
 
     .line 360
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
     .line 361
     .line 362
@@ -1115,7 +1014,7 @@
 
     .line 383
     .line 384
-    const p1, 0x7f132334
+    const p1, 0x7f132501
 
     .line 385
     .line 386
@@ -1134,7 +1033,7 @@
     .line 393
     .line 394
     :cond_6
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 395
     .line 396
@@ -1142,7 +1041,7 @@
     move-result-object p1
 
     .line 398
-    invoke-virtual {p1}, LzY0;->q3()Z
+    invoke-virtual {p1}, Li21;->n3()Z
 
     .line 399
     .line 400
@@ -1166,7 +1065,7 @@
 
     .line 409
     .line 410
-    const v4, 0x7f13026f
+    const v4, 0x7f1302b9
 
     .line 411
     .line 412
@@ -1234,7 +1133,7 @@
 
     .line 445
     .line 446
-    invoke-virtual {p1, v2}, LOuh;->b(I)V
+    invoke-virtual {p1, v2}, LOSh;->b(I)V
 
     .line 447
     .line 448
@@ -1243,7 +1142,7 @@
 
     .line 450
     :cond_7
-    invoke-static {p2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 451
     .line 452
@@ -1252,7 +1151,7 @@
 
     .line 454
     :cond_8
-    invoke-static {p2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 455
     .line 456
@@ -1261,7 +1160,7 @@
 
     .line 458
     :cond_9
-    invoke-static {p2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 459
     .line 460
@@ -1270,7 +1169,7 @@
 
     .line 462
     :cond_a
-    invoke-static {p2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 463
     .line 464
@@ -1280,7 +1179,7 @@
     .line 466
     :cond_b
     :goto_2
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 467
     .line 468
@@ -1288,7 +1187,7 @@
     move-result-object p1
 
     .line 470
-    invoke-virtual {p1}, LzY0;->S2()LpKe;
+    invoke-virtual {p1}, Li21;->d3()La2f;
 
     .line 471
     .line 472
@@ -1336,7 +1235,7 @@
 
     .line 493
     :cond_c
-    iget-object p2, p1, LpKe;->b:LwY0;
+    iget-object p2, p1, La2f;->b:Lf21;
 
     .line 494
     .line 495
@@ -1344,7 +1243,7 @@
 
     .line 496
     .line 497
-    iget p2, p2, LwY0;->a:I
+    iget p2, p2, Lf21;->a:I
 
     .line 498
     .line 499
@@ -1353,12 +1252,12 @@
     .line 500
     .line 501
     :goto_3
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 502
     .line 503
     .line 504
-    invoke-static {}, LzY0;->U2()LnUi;
+    invoke-static {}, Li21;->e3()LDjj;
 
     .line 505
     .line 506
@@ -1379,7 +1278,7 @@
     .line 513
     .line 514
     .line 515
-    iget-object v6, p2, LnUi;->a:Ljava/lang/Object;
+    iget-object v6, p2, LDjj;->a:Ljava/lang/Object;
 
     .line 516
     .line 517
@@ -1403,7 +1302,7 @@
     move-result-object v6
 
     .line 527
-    iget-object v8, p2, LnUi;->b:Ljava/lang/Object;
+    iget-object v8, p2, LDjj;->b:Ljava/lang/Object;
 
     .line 528
     .line 529
@@ -1427,7 +1326,7 @@
     move-result-object v8
 
     .line 539
-    iget-object p2, p2, LnUi;->c:Ljava/lang/Object;
+    iget-object p2, p2, LDjj;->c:Ljava/lang/Object;
 
     .line 540
     .line 541
@@ -1561,7 +1460,7 @@
     .line 607
     .line 608
     .line 609
-    invoke-static {}, LWva;->p()LWva;
+    invoke-static {}, LrIa;->p()LrIa;
 
     .line 610
     .line 611
@@ -1569,7 +1468,7 @@
     move-result-object p2
 
     .line 613
-    iget-object p1, p1, LpKe;->b:LwY0;
+    iget-object p1, p1, La2f;->b:Lf21;
 
     .line 614
     .line 615
@@ -1577,7 +1476,7 @@
 
     .line 616
     .line 617
-    iget v8, p1, LwY0;->a:I
+    iget v8, p1, Lf21;->a:I
 
     .line 618
     .line 619
@@ -1585,11 +1484,11 @@
 
     .line 620
     .line 621
-    iget-object p1, p1, LwY0;->b:Lo17;
+    iget-object p1, p1, Lf21;->b:Le57;
 
     .line 622
     .line 623
-    check-cast p1, LF75;
+    check-cast p1, LQd5;
 
     .line 624
     .line 625
@@ -1605,7 +1504,7 @@
 
     .line 628
     .line 629
-    invoke-virtual {p1}, LF75;->a()J
+    invoke-virtual {p1}, LQd5;->a()J
 
     .line 630
     .line 631
@@ -1625,7 +1524,7 @@
     .line 636
     .line 637
     :goto_5
-    invoke-virtual {p2, p1}, LWva;->o(I)LWva;
+    invoke-virtual {p2, p1}, LrIa;->o(I)LrIa;
 
     .line 638
     .line 639
@@ -1633,7 +1532,7 @@
     move-result-object p1
 
     .line 641
-    invoke-virtual {p1}, LWva;->m()I
+    invoke-virtual {p1}, LrIa;->m()I
 
     .line 642
     .line 643
@@ -1761,7 +1660,7 @@
 
     .line 706
     .line 707
-    invoke-virtual {p1}, LWva;->l()I
+    invoke-virtual {p1}, LrIa;->l()I
 
     .line 708
     .line 709
@@ -1799,7 +1698,7 @@
 
     .line 726
     .line 727
-    invoke-virtual {p2, v3}, LWva;->o(I)LWva;
+    invoke-virtual {p2, v3}, LrIa;->o(I)LrIa;
 
     .line 728
     .line 729
@@ -1807,7 +1706,7 @@
     move-result-object p2
 
     .line 731
-    invoke-virtual {p2}, LWva;->n()I
+    invoke-virtual {p2}, LrIa;->n()I
 
     .line 732
     .line 733
@@ -1832,11 +1731,11 @@
 
     .line 741
     .line 742
-    new-instance v8, LZn9;
+    new-instance v8, Lcx9;
 
     .line 743
     .line 744
-    invoke-virtual {p1}, LWva;->n()I
+    invoke-virtual {p1}, LrIa;->n()I
 
     .line 745
     .line 746
@@ -1844,12 +1743,12 @@
     move-result v10
 
     .line 748
-    invoke-direct {v8, p2, v10, v2}, LXn9;-><init>(III)V
+    invoke-direct {v8, p2, v10, v2}, Lax9;-><init>(III)V
 
     .line 749
     .line 750
     .line 751
-    invoke-static {v8}, Lue3;->u1(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v8}, Llh3;->t4(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 752
     .line 753
@@ -1869,7 +1768,7 @@
 
     .line 760
     .line 761
-    invoke-static {v8, v11}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v8, v11}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 762
     .line 763
@@ -1952,7 +1851,7 @@
     move-result-object v8
 
     .line 802
-    invoke-static {v9, v8}, Lv70;->M0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v9, v8}, LN90;->B0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 803
     .line 804
@@ -1960,11 +1859,11 @@
     move-result-object v8
 
     .line 806
-    new-instance v9, LZn9;
+    new-instance v9, Lcx9;
 
     .line 807
     .line 808
-    invoke-virtual {p1}, LWva;->n()I
+    invoke-virtual {p1}, LrIa;->n()I
 
     .line 809
     .line 810
@@ -1975,7 +1874,7 @@
     add-int/2addr v10, v2
 
     .line 813
-    invoke-static {}, LWva;->p()LWva;
+    invoke-static {}, LrIa;->p()LrIa;
 
     .line 814
     .line 815
@@ -1983,7 +1882,7 @@
     move-result-object v12
 
     .line 817
-    invoke-virtual {v12}, LWva;->n()I
+    invoke-virtual {v12}, LrIa;->n()I
 
     .line 818
     .line 819
@@ -1991,12 +1890,12 @@
     move-result v12
 
     .line 821
-    invoke-direct {v9, v10, v12, v2}, LXn9;-><init>(III)V
+    invoke-direct {v9, v10, v12, v2}, Lax9;-><init>(III)V
 
     .line 822
     .line 823
     .line 824
-    invoke-static {v9}, Lue3;->u1(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v9}, Llh3;->t4(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 825
     .line 826
@@ -2012,7 +1911,7 @@
 
     .line 831
     .line 832
-    invoke-static {v9, v11}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v9, v11}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 833
     .line 834
@@ -2095,7 +1994,7 @@
     move-result-object v9
 
     .line 873
-    invoke-static {v8, v9}, Lv70;->N0([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v8, v9}, LN90;->C0([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 874
     .line 875
@@ -2160,7 +2059,7 @@
 
     .line 905
     .line 906
-    invoke-virtual {p1}, LWva;->n()I
+    invoke-virtual {p1}, LrIa;->n()I
 
     .line 907
     .line 908
@@ -2209,7 +2108,7 @@
 
     .line 930
     :cond_12
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 931
     .line 932
@@ -2218,7 +2117,7 @@
 
     .line 934
     :cond_13
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 935
     .line 936
@@ -2227,7 +2126,7 @@
 
     .line 938
     :cond_14
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 939
     .line 940
@@ -2236,7 +2135,7 @@
 
     .line 942
     :cond_15
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 943
     .line 944
@@ -2245,7 +2144,7 @@
 
     .line 946
     :cond_16
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 947
     .line 948
@@ -2254,7 +2153,7 @@
 
     .line 950
     :cond_17
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 951
     .line 952
@@ -2263,7 +2162,7 @@
 
     .line 954
     :cond_18
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 955
     .line 956
@@ -2272,7 +2171,7 @@
 
     .line 958
     :cond_19
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 959
     .line 960
@@ -2281,7 +2180,7 @@
 
     .line 962
     :cond_1a
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 963
     .line 964
@@ -2290,7 +2189,7 @@
 
     .line 966
     :cond_1b
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 967
     .line 968
@@ -2299,7 +2198,7 @@
 
     .line 970
     :cond_1c
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 971
     .line 972
@@ -2308,7 +2207,7 @@
 
     .line 974
     :cond_1d
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 975
     .line 976
@@ -2317,7 +2216,7 @@
 
     .line 978
     :cond_1e
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 979
     .line 980
@@ -2326,7 +2225,7 @@
 
     .line 982
     :cond_1f
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 983
     .line 984
@@ -2335,7 +2234,7 @@
 
     .line 986
     :cond_20
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 987
     .line 988
@@ -2344,7 +2243,7 @@
 
     .line 990
     :cond_21
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 991
     .line 992
@@ -2353,7 +2252,7 @@
 
     .line 994
     :cond_22
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 995
     .line 996
@@ -2392,7 +2291,7 @@
 
     .line 1013
     :cond_24
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1014
     .line 1015
@@ -2401,7 +2300,7 @@
 
     .line 1017
     :cond_25
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1018
     .line 1019
@@ -2410,7 +2309,7 @@
 
     .line 1021
     :cond_26
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1022
     .line 1023
@@ -2418,11 +2317,11 @@
     throw v0
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->X0:LZ8d;
+    sget-object v0, Lsod;->X0:Lsod;
 
     .line 2
     .line 3
@@ -2444,18 +2343,18 @@
 
     .line 5
     .line 6
-    new-instance v2, LZX0;
+    new-instance v2, LH11;
 
     .line 7
     .line 8
-    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->V0:LVX0;
+    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->V0:LC11;
 
     .line 9
     .line 10
     const/4 v4, 0x0
 
     .line 11
-    invoke-direct {v2, v4, v3}, LZX0;-><init>(ILkotlin/jvm/functions/Function1;)V
+    invoke-direct {v2, v4, v3}, LH11;-><init>(ILkotlin/jvm/functions/Function1;)V
 
     .line 12
     .line 13
@@ -2465,14 +2364,14 @@
     .line 15
     .line 16
     .line 17
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->W0:LXX0;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->W0:LE11;
 
     .line 18
     .line 19
     const/4 v2, 0x1
 
     .line 20
-    invoke-virtual {v0, v2}, LXX0;->a(Z)V
+    invoke-virtual {v0, v2}, LE11;->a(Z)V
 
     .line 21
     .line 22
@@ -2485,7 +2384,7 @@
 
     .line 26
     .line 27
-    iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->X0:LWX0;
+    iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->X0:LD11;
 
     .line 28
     .line 29
@@ -2528,18 +2427,18 @@
 
     .line 49
     .line 50
-    new-instance v2, LZX0;
+    new-instance v2, LH11;
 
     .line 51
     .line 52
-    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Y0:LVX0;
+    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Y0:LC11;
 
     .line 53
     .line 54
     const/4 v4, 0x0
 
     .line 55
-    invoke-direct {v2, v4, v3}, LZX0;-><init>(ILkotlin/jvm/functions/Function1;)V
+    invoke-direct {v2, v4, v3}, LH11;-><init>(ILkotlin/jvm/functions/Function1;)V
 
     .line 56
     .line 57
@@ -2590,18 +2489,18 @@
 
     .line 80
     .line 81
-    new-instance v3, LZX0;
+    new-instance v3, LH11;
 
     .line 82
     .line 83
-    iget-object v4, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Z0:LVX0;
+    iget-object v4, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->Z0:LC11;
 
     .line 84
     .line 85
     const/4 v5, 0x0
 
     .line 86
-    invoke-direct {v3, v5, v4}, LZX0;-><init>(ILkotlin/jvm/functions/Function1;)V
+    invoke-direct {v3, v5, v4}, LH11;-><init>(ILkotlin/jvm/functions/Function1;)V
 
     .line 87
     .line 88
@@ -2623,15 +2522,15 @@
 
     .line 96
     .line 97
-    new-instance v1, Lb4;
+    new-instance v1, Lx4;
 
     .line 98
     .line 99
-    const/16 v2, 0x17
+    const/16 v2, 0x16
 
     .line 100
     .line 101
-    invoke-direct {v1, v2, p0}, Lb4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lx4;-><init>(ILjava/lang/Object;)V
 
     .line 102
     .line 103
@@ -2649,7 +2548,7 @@
 
     .line 109
     .line 110
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 111
     .line 112
@@ -2662,7 +2561,7 @@
 
     .line 115
     .line 116
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 117
     .line 118
@@ -2675,7 +2574,7 @@
 
     .line 121
     .line 122
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 123
     .line 124
@@ -2688,7 +2587,7 @@
 
     .line 127
     .line 128
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 129
     .line 130
@@ -2701,7 +2600,7 @@
 
     .line 133
     .line 134
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 135
     .line 136
@@ -2714,7 +2613,7 @@
 
     .line 139
     .line 140
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 141
     .line 142
@@ -2727,7 +2626,7 @@
 
     .line 145
     .line 146
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 147
     .line 148
@@ -2755,14 +2654,14 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->W0:LXX0;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->W0:LE11;
 
     .line 10
     .line 11
     const/4 v2, 0x0
 
     .line 12
-    invoke-virtual {v0, v2}, LXX0;->a(Z)V
+    invoke-virtual {v0, v2}, LE11;->a(Z)V
 
     .line 13
     .line 14
@@ -2877,7 +2776,7 @@
 
     .line 69
     .line 70
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 71
     .line 72
@@ -2890,7 +2789,7 @@
 
     .line 75
     .line 76
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 77
     .line 78
@@ -2903,7 +2802,7 @@
 
     .line 81
     .line 82
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 83
     .line 84
@@ -2916,7 +2815,7 @@
 
     .line 87
     .line 88
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 89
     .line 90
@@ -2929,7 +2828,7 @@
 
     .line 93
     .line 94
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 95
     .line 96
@@ -2942,7 +2841,7 @@
 
     .line 99
     .line 100
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 101
     .line 102
@@ -2989,7 +2888,7 @@
 
     .line 16
     .line 17
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 18
     .line 19
@@ -3014,7 +2913,7 @@
 
     .line 27
     .line 28
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -3039,7 +2938,7 @@
 
     .line 38
     .line 39
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -3051,7 +2950,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 2
     .line 3
@@ -3059,7 +2958,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LzY0;->i3()Z
+    invoke-virtual {v0}, Li21;->j3()Z
 
     .line 6
     .line 7
@@ -3093,7 +2992,7 @@
     .locals 13
 
     .line 1
-    const v0, 0x7f131221
+    const v0, 0x7f1312d6
 
     .line 2
     .line 3
@@ -3106,7 +3005,7 @@
     move-result-object v1
 
     .line 8
-    const v0, 0x7f131220
+    const v0, 0x7f1312d5
 
     .line 9
     .line 10
@@ -3119,7 +3018,7 @@
     move-result-object v2
 
     .line 15
-    const v0, 0x7f131224
+    const v0, 0x7f1312d9
 
     .line 16
     .line 17
@@ -3132,7 +3031,7 @@
     move-result-object v3
 
     .line 22
-    const v0, 0x7f13121d
+    const v0, 0x7f1312d2
 
     .line 23
     .line 24
@@ -3145,7 +3044,7 @@
     move-result-object v4
 
     .line 29
-    const v0, 0x7f131225
+    const v0, 0x7f1312da
 
     .line 30
     .line 31
@@ -3158,7 +3057,7 @@
     move-result-object v5
 
     .line 36
-    const v0, 0x7f131223
+    const v0, 0x7f1312d8
 
     .line 37
     .line 38
@@ -3171,7 +3070,7 @@
     move-result-object v6
 
     .line 43
-    const v0, 0x7f131222
+    const v0, 0x7f1312d7
 
     .line 44
     .line 45
@@ -3184,7 +3083,7 @@
     move-result-object v7
 
     .line 50
-    const v0, 0x7f13121e
+    const v0, 0x7f1312d3
 
     .line 51
     .line 52
@@ -3197,7 +3096,7 @@
     move-result-object v8
 
     .line 57
-    const v0, 0x7f131228
+    const v0, 0x7f1312dd
 
     .line 58
     .line 59
@@ -3210,7 +3109,7 @@
     move-result-object v9
 
     .line 64
-    const v0, 0x7f131227
+    const v0, 0x7f1312dc
 
     .line 65
     .line 66
@@ -3223,7 +3122,7 @@
     move-result-object v10
 
     .line 71
-    const v0, 0x7f131226
+    const v0, 0x7f1312db
 
     .line 72
     .line 73
@@ -3236,7 +3135,7 @@
     move-result-object v11
 
     .line 78
-    const v0, 0x7f13121f
+    const v0, 0x7f1312d4
 
     .line 79
     .line 80
@@ -3257,7 +3156,7 @@
     move-result-object v0
 
     .line 89
-    invoke-static {v0}, Lve3;->a0([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lmh3;->L2([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     .line 90
     .line 91
@@ -3268,11 +3167,11 @@
     return-object v0
 .end method
 
-.method public final e2()LzY0;
+.method public final e2()Li21;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->U0:LzY0;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->U0:Li21;
 
     .line 2
     .line 3
@@ -3288,7 +3187,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3299,7 +3198,7 @@
     throw v0
 .end method
 
-.method public final f2(LCY0;)V
+.method public final f2(Ll21;)V
     .locals 10
 
     .line 1
@@ -3308,7 +3207,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p1}, LCY0;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Ll21;->a()Ljava/lang/String;
 
     .line 5
     .line 6
@@ -3316,7 +3215,7 @@
     move-result-object v0
 
     .line 8
-    new-instance v1, LHu0;
+    new-instance v1, Lix0;
 
     .line 9
     .line 10
@@ -3343,12 +3242,12 @@
     move-result-object v2
 
     .line 21
-    invoke-direct {v1, v2}, LHu0;-><init>(Ljava/lang/CharSequence;)V
+    invoke-direct {v1, v2}, Lix0;-><init>(Ljava/lang/CharSequence;)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v2, LjU0;
+    new-instance v2, LwX0;
 
     .line 25
     .line 26
@@ -3360,21 +3259,21 @@
 
     .line 29
     .line 30
-    const/16 v4, 0xd
+    const/16 v4, 0xb
 
     .line 31
     .line 32
-    invoke-direct {v2, v4, v5}, LjU0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v4, v5}, LwX0;-><init>(ILjava/lang/Object;)V
 
     .line 33
     .line 34
     .line 35
-    invoke-static {v0, v1, v2}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    invoke-static {v0, v1, v2}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 36
     .line 37
     .line 38
-    invoke-virtual {p1}, LCY0;->b()I
+    invoke-virtual {p1}, Ll21;->b()I
 
     .line 39
     .line 40
@@ -3390,7 +3289,7 @@
     move-result-object v0
 
     .line 46
-    new-instance v1, LYX0;
+    new-instance v1, LF11;
 
     .line 47
     .line 48
@@ -3406,12 +3305,12 @@
 
     .line 53
     .line 54
-    invoke-direct {v1, v2}, LYX0;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v1, v2}, LF11;-><init>(Ljava/lang/Object;)V
 
     .line 55
     .line 56
     .line 57
-    new-instance v5, LjU0;
+    new-instance v5, LwX0;
 
     .line 58
     .line 59
@@ -3419,21 +3318,21 @@
 
     .line 60
     .line 61
-    const/16 v4, 0xe
+    const/16 v4, 0xc
 
     .line 62
     .line 63
-    invoke-direct {v5, v4, v2}, LjU0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v5, v4, v2}, LwX0;-><init>(ILjava/lang/Object;)V
 
     .line 64
     .line 65
     .line 66
-    invoke-static {v0, v1, v5}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    invoke-static {v0, v1, v5}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 67
     .line 68
     .line 69
-    invoke-virtual {p1}, LCY0;->d()Ljava/lang/String;
+    invoke-virtual {p1}, Ll21;->d()Ljava/lang/String;
 
     .line 70
     .line 71
@@ -3441,7 +3340,7 @@
     move-result-object v0
 
     .line 73
-    new-instance v1, LHu0;
+    new-instance v1, LG11;
 
     .line 74
     .line 75
@@ -3457,864 +3356,859 @@
 
     .line 80
     .line 81
-    const/16 v5, 0x1b
+    const/4 v5, 0x0
 
     .line 82
-    .line 83
-    invoke-direct {v1, v5, v2}, LHu0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v5, v2}, LG11;-><init>(ILjava/lang/Object;)V
 
+    .line 83
     .line 84
     .line 85
-    .line 86
-    new-instance v5, LjU0;
+    new-instance v5, LwX0;
 
+    .line 86
     .line 87
-    .line 88
     if-eqz v2, :cond_17
 
+    .line 88
     .line 89
+    const/16 v6, 0xd
+
     .line 90
-    const/16 v6, 0xf
-
     .line 91
-    .line 92
-    invoke-direct {v5, v6, v2}, LjU0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v5, v6, v2}, LwX0;-><init>(ILjava/lang/Object;)V
 
+    .line 92
     .line 93
     .line 94
-    .line 95
-    invoke-static {v0, v1, v5}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    invoke-static {v0, v1, v5}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
+    .line 95
     .line 96
     .line 97
-    .line 98
-    invoke-virtual {p1}, LCY0;->c()Ljava/lang/String;
+    invoke-virtual {p1}, Ll21;->c()Ljava/lang/String;
 
+    .line 98
     .line 99
     .line 100
-    .line 101
     move-result-object v0
 
-    .line 102
-    new-instance v1, LHu0;
+    .line 101
+    new-instance v1, LG11;
 
+    .line 102
     .line 103
-    .line 104
     iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->I0:Landroid/widget/TextView;
 
+    .line 104
     .line 105
-    .line 106
     const-string v5, "description"
 
+    .line 106
     .line 107
-    .line 108
     if-eqz v2, :cond_16
 
+    .line 108
     .line 109
+    const/4 v6, 0x1
+
     .line 110
-    const/16 v6, 0x1c
+    invoke-direct {v1, v6, v2}, LG11;-><init>(ILjava/lang/Object;)V
 
     .line 111
     .line 112
-    invoke-direct {v1, v6, v2}, LHu0;-><init>(ILjava/lang/Object;)V
-
     .line 113
+    new-instance v6, LwX0;
+
     .line 114
     .line 115
-    new-instance v6, LjU0;
+    if-eqz v2, :cond_15
 
     .line 116
     .line 117
-    if-eqz v2, :cond_15
+    const/16 v7, 0xe
 
     .line 118
     .line 119
-    const/16 v7, 0x10
+    invoke-direct {v6, v7, v2}, LwX0;-><init>(ILjava/lang/Object;)V
 
     .line 120
     .line 121
-    invoke-direct {v6, v7, v2}, LjU0;-><init>(ILjava/lang/Object;)V
-
     .line 122
+    invoke-static {v0, v1, v6}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+
     .line 123
     .line 124
-    invoke-static {v0, v1, v6}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-
     .line 125
+    invoke-virtual {p1}, Ll21;->f()Ljava/lang/CharSequence;
+
     .line 126
     .line 127
-    invoke-virtual {p1}, LCY0;->f()Ljava/lang/CharSequence;
-
     .line 128
-    .line 129
-    .line 130
     move-result-object v0
 
+    .line 129
+    new-instance v1, LG11;
+
+    .line 130
     .line 131
-    new-instance v1, LHu0;
+    iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->N0:Lcom/snap/ui/view/SnapLinkFriendlyTextView;
 
     .line 132
     .line 133
-    iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->N0:Lcom/snap/ui/view/SnapLinkFriendlyTextView;
+    const-string v6, "tosDescription"
 
     .line 134
     .line 135
-    const-string v6, "tosDescription"
+    if-eqz v2, :cond_14
 
     .line 136
     .line 137
-    if-eqz v2, :cond_14
+    const/4 v7, 0x2
 
     .line 138
-    .line 139
-    const/16 v7, 0x1d
+    invoke-direct {v1, v7, v2}, LG11;-><init>(ILjava/lang/Object;)V
 
+    .line 139
     .line 140
     .line 141
-    invoke-direct {v1, v7, v2}, LHu0;-><init>(ILjava/lang/Object;)V
+    new-instance v7, LwX0;
 
     .line 142
     .line 143
-    .line 144
-    new-instance v7, LjU0;
-
-    .line 145
-    .line 146
     if-eqz v2, :cond_13
+
+    .line 144
+    .line 145
+    const/4 v8, 0x3
+
+    .line 146
+    invoke-direct {v7, v8, v2}, LwX0;-><init>(ILjava/lang/Object;)V
 
     .line 147
     .line 148
-    const/4 v8, 0x5
-
     .line 149
-    invoke-direct {v7, v8, v2}, LjU0;-><init>(ILjava/lang/Object;)V
+    invoke-static {v0, v1, v7}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 150
     .line 151
     .line 152
-    invoke-static {v0, v1, v7}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {p1}, Ll21;->d()Ljava/lang/String;
 
     .line 153
     .line 154
     .line 155
-    invoke-virtual {p1}, LCY0;->d()Ljava/lang/String;
+    move-result-object v0
 
     .line 156
-    .line 157
-    .line 158
-    move-result-object v0
-
-    .line 159
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    .line 160
-    .line 161
-    .line 162
+    .line 157
+    .line 158
+    .line 159
     move-result v0
 
-    .line 163
+    .line 160
     const/4 v1, 0x0
 
-    .line 164
+    .line 161
     const/16 v2, 0x8
 
-    .line 165
-    .line 166
+    .line 162
+    .line 163
     if-lez v0, :cond_4
 
-    .line 167
-    .line 168
+    .line 164
+    .line 165
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 169
-    .line 170
-    .line 171
+    .line 166
+    .line 167
+    .line 168
     move-result-object v0
 
-    .line 172
-    new-instance v7, LHu0;
+    .line 169
+    new-instance v7, Lix0;
 
-    .line 173
-    .line 174
+    .line 170
+    .line 171
     iget-object v8, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->I0:Landroid/widget/TextView;
 
-    .line 175
-    .line 176
+    .line 172
+    .line 173
     if-eqz v8, :cond_3
 
-    .line 177
-    .line 178
-    const/16 v9, 0x13
+    .line 174
+    .line 175
+    const/16 v9, 0x16
 
+    .line 176
+    .line 177
+    invoke-direct {v7, v9, v8}, Lix0;-><init>(ILjava/lang/Object;)V
+
+    .line 178
     .line 179
     .line 180
-    invoke-direct {v7, v9, v8}, LHu0;-><init>(ILjava/lang/Object;)V
+    new-instance v9, LwX0;
 
     .line 181
     .line 182
-    .line 183
-    new-instance v9, LjU0;
-
-    .line 184
-    .line 185
     if-eqz v8, :cond_2
+
+    .line 183
+    .line 184
+    const/4 v5, 0x4
+
+    .line 185
+    invoke-direct {v9, v5, v8}, LwX0;-><init>(ILjava/lang/Object;)V
 
     .line 186
     .line 187
-    const/4 v5, 0x6
-
     .line 188
-    invoke-direct {v9, v5, v8}, LjU0;-><init>(ILjava/lang/Object;)V
+    invoke-static {v0, v7, v9}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 189
     .line 190
     .line 191
-    invoke-static {v0, v7, v9}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 192
     .line 193
     .line 194
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 195
-    .line 196
-    .line 197
     move-result-object v0
 
-    .line 198
-    new-instance v5, LHu0;
+    .line 195
+    new-instance v5, Lix0;
 
-    .line 199
-    .line 200
+    .line 196
+    .line 197
     iget-object v7, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->H0:Landroid/widget/TextView;
 
-    .line 201
-    .line 202
+    .line 198
+    .line 199
     if-eqz v7, :cond_1
 
-    .line 203
-    .line 204
-    const/16 v8, 0x14
+    .line 200
+    .line 201
+    const/16 v8, 0x17
 
+    .line 202
+    .line 203
+    invoke-direct {v5, v8, v7}, Lix0;-><init>(ILjava/lang/Object;)V
+
+    .line 204
     .line 205
     .line 206
-    invoke-direct {v5, v8, v7}, LHu0;-><init>(ILjava/lang/Object;)V
+    new-instance v8, LwX0;
 
     .line 207
     .line 208
-    .line 209
-    new-instance v8, LjU0;
-
-    .line 210
-    .line 211
     if-eqz v7, :cond_0
+
+    .line 209
+    .line 210
+    const/4 v4, 0x5
+
+    .line 211
+    invoke-direct {v8, v4, v7}, LwX0;-><init>(ILjava/lang/Object;)V
 
     .line 212
     .line 213
-    const/4 v4, 0x7
-
     .line 214
-    invoke-direct {v8, v4, v7}, LjU0;-><init>(ILjava/lang/Object;)V
+    invoke-static {v0, v5, v8}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 215
     .line 216
     .line 217
-    invoke-static {v0, v5, v8}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-
-    .line 218
-    .line 219
-    .line 220
     goto :goto_0
 
-    .line 221
+    .line 218
     :cond_0
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 219
+    .line 220
+    .line 221
+    throw v3
 
     .line 222
+    :cond_1
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 223
     .line 224
-    throw v3
-
     .line 225
-    :cond_1
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    throw v3
 
     .line 226
+    :cond_2
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 227
     .line 228
-    throw v3
-
     .line 229
-    :cond_2
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    throw v3
 
     .line 230
+    :cond_3
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 231
     .line 232
-    throw v3
-
     .line 233
-    :cond_3
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    throw v3
 
     .line 234
-    .line 235
-    .line 236
-    throw v3
-
-    .line 237
     :cond_4
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 238
-    .line 239
-    .line 240
+    .line 235
+    .line 236
+    .line 237
     move-result-object v0
 
-    .line 241
-    new-instance v7, LHu0;
+    .line 238
+    new-instance v7, Lix0;
 
-    .line 242
-    .line 243
+    .line 239
+    .line 240
     iget-object v8, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->I0:Landroid/widget/TextView;
 
-    .line 244
-    .line 245
+    .line 241
+    .line 242
     if-eqz v8, :cond_12
 
-    .line 246
-    .line 247
-    const/16 v9, 0x15
+    .line 243
+    .line 244
+    const/16 v9, 0x18
 
+    .line 245
+    .line 246
+    invoke-direct {v7, v9, v8}, Lix0;-><init>(ILjava/lang/Object;)V
+
+    .line 247
     .line 248
     .line 249
-    invoke-direct {v7, v9, v8}, LHu0;-><init>(ILjava/lang/Object;)V
+    new-instance v9, LwX0;
 
     .line 250
     .line 251
-    .line 252
-    new-instance v9, LjU0;
-
-    .line 253
-    .line 254
     if-eqz v8, :cond_11
+
+    .line 252
+    .line 253
+    const/4 v5, 0x6
+
+    .line 254
+    invoke-direct {v9, v5, v8}, LwX0;-><init>(ILjava/lang/Object;)V
 
     .line 255
     .line 256
-    const/16 v5, 0x8
-
     .line 257
-    .line 258
-    invoke-direct {v9, v5, v8}, LjU0;-><init>(ILjava/lang/Object;)V
+    invoke-static {v0, v7, v9}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
+    .line 258
     .line 259
     .line 260
-    .line 261
-    invoke-static {v0, v7, v9}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 261
     .line 262
     .line 263
+    move-result-object v0
+
     .line 264
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    new-instance v5, Lix0;
 
     .line 265
     .line 266
-    .line 267
-    move-result-object v0
+    iget-object v7, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->H0:Landroid/widget/TextView;
 
+    .line 267
     .line 268
-    new-instance v5, LHu0;
+    if-eqz v7, :cond_10
 
     .line 269
     .line 270
-    iget-object v7, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->H0:Landroid/widget/TextView;
+    const/16 v8, 0x19
 
     .line 271
     .line 272
-    if-eqz v7, :cond_10
+    invoke-direct {v5, v8, v7}, Lix0;-><init>(ILjava/lang/Object;)V
 
     .line 273
     .line 274
-    const/16 v8, 0x16
-
     .line 275
+    new-instance v8, LwX0;
+
     .line 276
-    invoke-direct {v5, v8, v7}, LHu0;-><init>(ILjava/lang/Object;)V
-
     .line 277
-    .line 278
-    .line 279
-    new-instance v8, LjU0;
-
-    .line 280
-    .line 281
     if-eqz v7, :cond_f
 
+    .line 278
+    .line 279
+    const/4 v4, 0x7
+
+    .line 280
+    invoke-direct {v8, v4, v7}, LwX0;-><init>(ILjava/lang/Object;)V
+
+    .line 281
     .line 282
     .line 283
-    const/16 v4, 0x9
+    invoke-static {v0, v5, v8}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 284
     .line 285
-    invoke-direct {v8, v4, v7}, LjU0;-><init>(ILjava/lang/Object;)V
-
     .line 286
-    .line 287
-    .line 288
-    invoke-static {v0, v5, v8}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-
-    .line 289
-    .line 290
-    .line 291
     :goto_0
     iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->N0:Lcom/snap/ui/view/SnapLinkFriendlyTextView;
 
-    .line 292
-    .line 293
+    .line 287
+    .line 288
     if-eqz v0, :cond_e
 
-    .line 294
-    .line 295
+    .line 289
+    .line 290
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
 
-    .line 296
-    .line 297
-    .line 298
+    .line 291
+    .line 292
+    .line 293
     move-result-object v0
 
-    .line 299
+    .line 294
     invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
-    .line 300
-    .line 301
-    .line 302
+    .line 295
+    .line 296
+    .line 297
     move-result v0
 
-    .line 303
+    .line 298
     if-lez v0, :cond_5
 
-    .line 304
-    .line 305
+    .line 299
+    .line 300
     const/4 v0, 0x0
 
-    .line 306
+    .line 301
     goto :goto_1
 
-    .line 307
+    .line 302
     :cond_5
     const/16 v0, 0x8
 
-    .line 308
-    .line 309
+    .line 303
+    .line 304
     :goto_1
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 310
-    .line 311
-    .line 312
+    .line 305
+    .line 306
+    .line 307
     move-result-object v0
 
-    .line 313
-    new-instance v4, LHu0;
+    .line 308
+    new-instance v4, Lix0;
 
-    .line 314
-    .line 315
+    .line 309
+    .line 310
     iget-object v5, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->N0:Lcom/snap/ui/view/SnapLinkFriendlyTextView;
 
-    .line 316
-    .line 317
+    .line 311
+    .line 312
     if-eqz v5, :cond_d
 
+    .line 313
+    .line 314
+    const/16 v7, 0x1a
+
+    .line 315
+    .line 316
+    invoke-direct {v4, v7, v5}, Lix0;-><init>(ILjava/lang/Object;)V
+
+    .line 317
     .line 318
     .line 319
-    const/16 v7, 0x17
+    new-instance v7, LwX0;
 
     .line 320
     .line 321
-    invoke-direct {v4, v7, v5}, LHu0;-><init>(ILjava/lang/Object;)V
+    if-eqz v5, :cond_c
 
     .line 322
     .line 323
+    const/16 v6, 0x8
+
     .line 324
-    new-instance v7, LjU0;
-
     .line 325
-    .line 326
-    if-eqz v5, :cond_c
+    invoke-direct {v7, v6, v5}, LwX0;-><init>(ILjava/lang/Object;)V
 
+    .line 326
     .line 327
     .line 328
-    const/16 v6, 0xa
+    invoke-static {v0, v4, v7}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 329
     .line 330
-    invoke-direct {v7, v6, v5}, LjU0;-><init>(ILjava/lang/Object;)V
-
     .line 331
+    invoke-virtual {p1}, Ll21;->e()LAWa;
+
     .line 332
     .line 333
-    invoke-static {v0, v4, v7}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-
     .line 334
-    .line 335
-    .line 336
-    invoke-virtual {p1}, LCY0;->e()LYJa;
-
-    .line 337
-    .line 338
-    .line 339
     move-result-object v0
 
-    .line 340
-    sget-object v4, LYJa;->b:LYJa;
+    .line 335
+    sget-object v4, LAWa;->b:LAWa;
 
-    .line 341
-    .line 342
+    .line 336
+    .line 337
     if-ne v0, v4, :cond_6
 
-    .line 343
-    .line 344
+    .line 338
+    .line 339
     const/4 v0, 0x0
 
-    .line 345
+    .line 340
     goto :goto_2
 
-    .line 346
+    .line 341
     :cond_6
     const/16 v0, 0x8
 
-    .line 347
-    .line 348
+    .line 342
+    .line 343
     :goto_2
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 349
-    .line 350
-    .line 351
+    .line 344
+    .line 345
+    .line 346
     move-result-object v0
 
-    .line 352
-    new-instance v4, LHu0;
+    .line 347
+    new-instance v4, Lix0;
 
-    .line 353
-    .line 354
+    .line 348
+    .line 349
     iget-object v5, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->O0:Landroid/widget/LinearLayout;
 
-    .line 355
-    .line 356
+    .line 350
+    .line 351
     const-string v6, "complianceCheckboxFrame"
 
-    .line 357
-    .line 358
+    .line 352
+    .line 353
     if-eqz v5, :cond_b
 
+    .line 354
+    .line 355
+    const/16 v7, 0x1c
+
+    .line 356
+    .line 357
+    invoke-direct {v4, v7, v5}, Lix0;-><init>(ILjava/lang/Object;)V
+
+    .line 358
     .line 359
     .line 360
-    const/16 v7, 0x19
+    new-instance v7, LwX0;
 
     .line 361
     .line 362
-    invoke-direct {v4, v7, v5}, LHu0;-><init>(ILjava/lang/Object;)V
+    if-eqz v5, :cond_a
 
     .line 363
     .line 364
+    const/16 v6, 0x9
+
     .line 365
-    new-instance v7, LjU0;
-
     .line 366
-    .line 367
-    if-eqz v5, :cond_a
+    invoke-direct {v7, v6, v5}, LwX0;-><init>(ILjava/lang/Object;)V
 
+    .line 367
     .line 368
     .line 369
-    const/16 v6, 0xb
+    invoke-static {v0, v4, v7}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 370
     .line 371
-    invoke-direct {v7, v6, v5}, LjU0;-><init>(ILjava/lang/Object;)V
-
     .line 372
+    invoke-virtual {p1}, Ll21;->e()LAWa;
+
     .line 373
     .line 374
-    invoke-static {v0, v4, v7}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-
     .line 375
-    .line 376
-    .line 377
-    invoke-virtual {p1}, LCY0;->e()LYJa;
-
-    .line 378
-    .line 379
-    .line 380
     move-result-object p1
 
-    .line 381
-    sget-object v0, LYJa;->c:LYJa;
+    .line 376
+    sget-object v0, LAWa;->c:LAWa;
 
-    .line 382
-    .line 383
+    .line 377
+    .line 378
     if-ne p1, v0, :cond_7
 
-    .line 384
-    .line 385
+    .line 379
+    .line 380
     goto :goto_3
 
-    .line 386
+    .line 381
     :cond_7
     const/16 v1, 0x8
 
-    .line 387
-    .line 388
+    .line 382
+    .line 383
     :goto_3
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 389
-    .line 390
-    .line 391
+    .line 384
+    .line 385
+    .line 386
     move-result-object p1
 
-    .line 392
-    new-instance v0, LHu0;
+    .line 387
+    new-instance v0, Lix0;
 
-    .line 393
-    .line 394
+    .line 388
+    .line 389
     iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->R0:Landroid/view/View;
 
-    .line 395
-    .line 396
+    .line 390
+    .line 391
     const-string v2, "tosInfoDialogButton"
 
-    .line 397
-    .line 398
+    .line 392
+    .line 393
     if-eqz v1, :cond_9
 
+    .line 394
+    .line 395
+    const/16 v4, 0x1d
+
+    .line 396
+    .line 397
+    invoke-direct {v0, v4, v1}, Lix0;-><init>(ILjava/lang/Object;)V
+
+    .line 398
     .line 399
     .line 400
-    const/16 v4, 0x1a
+    new-instance v4, LwX0;
 
     .line 401
     .line 402
-    invoke-direct {v0, v4, v1}, LHu0;-><init>(ILjava/lang/Object;)V
+    if-eqz v1, :cond_8
 
     .line 403
     .line 404
+    const/16 v2, 0xa
+
     .line 405
-    new-instance v4, LjU0;
-
     .line 406
-    .line 407
-    if-eqz v1, :cond_8
+    invoke-direct {v4, v2, v1}, LwX0;-><init>(ILjava/lang/Object;)V
 
+    .line 407
     .line 408
     .line 409
-    const/16 v2, 0xc
+    invoke-static {p1, v0, v4}, LCPk;->k(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
 
     .line 410
     .line 411
-    invoke-direct {v4, v2, v1}, LjU0;-><init>(ILjava/lang/Object;)V
-
     .line 412
-    .line 413
-    .line 414
-    invoke-static {p1, v0, v4}, LKpk;->s(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-
-    .line 415
-    .line 416
-    .line 417
     invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->a2()V
 
-    .line 418
-    .line 419
-    .line 420
+    .line 413
+    .line 414
+    .line 415
     return-void
 
-    .line 421
+    .line 416
     :cond_8
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 417
+    .line 418
+    .line 419
+    throw v3
+
+    .line 420
+    :cond_9
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 421
     .line 422
     .line 423
-    .line 424
     throw v3
+
+    .line 424
+    :cond_a
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 425
-    :cond_9
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 426
     .line 427
-    .line 428
     throw v3
+
+    .line 428
+    :cond_b
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 429
-    :cond_a
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 430
     .line 431
-    .line 432
     throw v3
+
+    .line 432
+    :cond_c
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 433
-    :cond_b
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 434
     .line 435
-    .line 436
     throw v3
+
+    .line 436
+    :cond_d
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 437
-    :cond_c
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 438
     .line 439
-    .line 440
     throw v3
+
+    .line 440
+    :cond_e
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 441
-    :cond_d
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 442
     .line 443
-    .line 444
     throw v3
+
+    .line 444
+    :cond_f
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 445
-    :cond_e
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 446
     .line 447
-    .line 448
     throw v3
+
+    .line 448
+    :cond_10
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 449
-    :cond_f
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 450
     .line 451
-    .line 452
     throw v3
+
+    .line 452
+    :cond_11
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 453
-    :cond_10
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 454
     .line 455
-    .line 456
     throw v3
+
+    .line 456
+    :cond_12
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 457
-    :cond_11
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 458
     .line 459
-    .line 460
     throw v3
+
+    .line 460
+    :cond_13
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 461
-    :cond_12
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 462
     .line 463
-    .line 464
     throw v3
+
+    .line 464
+    :cond_14
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 465
-    :cond_13
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 466
     .line 467
-    .line 468
     throw v3
+
+    .line 468
+    :cond_15
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 469
-    :cond_14
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 470
     .line 471
-    .line 472
     throw v3
+
+    .line 472
+    :cond_16
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 473
-    :cond_15
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 474
     .line 475
-    .line 476
     throw v3
+
+    .line 476
+    :cond_17
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 477
-    :cond_16
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 478
     .line 479
-    .line 480
     throw v3
+
+    .line 480
+    :cond_18
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 481
-    :cond_17
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 482
     .line 483
-    .line 484
     throw v3
+
+    .line 484
+    :cond_19
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 485
-    :cond_18
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 486
     .line 487
-    .line 488
     throw v3
+
+    .line 488
+    :cond_1a
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 489
-    :cond_19
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 490
     .line 491
-    .line 492
     throw v3
+
+    .line 492
+    :cond_1b
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 493
-    :cond_1a
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 494
     .line 495
-    .line 496
     throw v3
+
+    .line 496
+    :cond_1c
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 497
-    :cond_1b
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 498
     .line 499
-    .line 500
-    throw v3
-
-    .line 501
-    :cond_1c
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 502
-    .line 503
-    .line 504
     throw v3
 .end method
 
@@ -4322,7 +4216,7 @@
     .locals 9
 
     .line 1
-    const v0, 0x7f131221
+    const v0, 0x7f1312d6
 
     .line 2
     .line 3
@@ -4335,7 +4229,7 @@
     move-result-object v1
 
     .line 8
-    const v0, 0x7f131224
+    const v0, 0x7f1312d9
 
     .line 9
     .line 10
@@ -4348,7 +4242,7 @@
     move-result-object v2
 
     .line 15
-    const v0, 0x7f131225
+    const v0, 0x7f1312da
 
     .line 16
     .line 17
@@ -4361,7 +4255,7 @@
     move-result-object v3
 
     .line 22
-    const v0, 0x7f131222
+    const v0, 0x7f1312d7
 
     .line 23
     .line 24
@@ -4374,7 +4268,7 @@
     move-result-object v4
 
     .line 29
-    const v0, 0x7f13121e
+    const v0, 0x7f1312d3
 
     .line 30
     .line 31
@@ -4387,7 +4281,7 @@
     move-result-object v5
 
     .line 36
-    const v0, 0x7f131227
+    const v0, 0x7f1312dc
 
     .line 37
     .line 38
@@ -4400,7 +4294,7 @@
     move-result-object v6
 
     .line 43
-    const v0, 0x7f13121f
+    const v0, 0x7f1312d4
 
     .line 44
     .line 45
@@ -4425,7 +4319,7 @@
     move-result-object v0
 
     .line 56
-    invoke-static {v0}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v0}, LN90;->P0([Ljava/lang/Object;)Ljava/util/Set;
 
     .line 57
     .line 58
@@ -4457,7 +4351,7 @@
 
     .line 71
     :cond_0
-    const v0, 0x7f131220
+    const v0, 0x7f1312d5
 
     .line 72
     .line 73
@@ -4574,7 +4468,7 @@
     .line 124
     .line 125
     :goto_1
-    invoke-static {}, LWva;->p()LWva;
+    invoke-static {}, LrIa;->p()LrIa;
 
     .line 126
     .line 127
@@ -4582,7 +4476,7 @@
     move-result-object p2
 
     .line 129
-    invoke-virtual {p2}, LWva;->l()I
+    invoke-virtual {p2}, LrIa;->l()I
 
     .line 130
     .line 131
@@ -4590,19 +4484,19 @@
     move-result p2
 
     .line 133
-    new-instance v0, LZn9;
+    new-instance v0, Lcx9;
 
     .line 134
     .line 135
     const/4 v2, 0x1
 
     .line 136
-    invoke-direct {v0, v2, p2, v2}, LXn9;-><init>(III)V
+    invoke-direct {v0, v2, p2, v2}, Lax9;-><init>(III)V
 
     .line 137
     .line 138
     .line 139
-    invoke-static {v0}, Lue3;->u1(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v0}, Llh3;->t4(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 140
     .line 141
@@ -4622,7 +4516,7 @@
 
     .line 148
     .line 149
-    invoke-static {v0, v4}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v4}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 150
     .line 151
@@ -4708,7 +4602,7 @@
     move-result-object v3
 
     .line 191
-    invoke-static {v1, v3}, Lv70;->M0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v1, v3}, LN90;->B0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 192
     .line 193
@@ -4716,19 +4610,19 @@
     move-result-object v1
 
     .line 195
-    new-instance v3, LZn9;
+    new-instance v3, Lcx9;
 
     .line 196
     .line 197
     add-int/2addr p2, v2
 
     .line 198
-    invoke-direct {v3, p2, p1, v2}, LXn9;-><init>(III)V
+    invoke-direct {v3, p2, p1, v2}, Lax9;-><init>(III)V
 
     .line 199
     .line 200
     .line 201
-    invoke-static {v3}, Lue3;->u1(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v3}, Llh3;->t4(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 202
     .line 203
@@ -4744,7 +4638,7 @@
 
     .line 208
     .line 209
-    invoke-static {p1, v4}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v4}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 210
     .line 211
@@ -4827,7 +4721,7 @@
     move-result-object p1
 
     .line 250
-    invoke-static {v1, p1}, Lv70;->N0([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v1, p1}, LN90;->C0([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 251
     .line 252
@@ -4938,7 +4832,7 @@
 
     .line 304
     :cond_8
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 305
     .line 306
@@ -4947,7 +4841,7 @@
 
     .line 308
     :cond_9
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 309
     .line 310
@@ -4956,7 +4850,7 @@
 
     .line 312
     :cond_a
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 313
     .line 314
@@ -4965,7 +4859,7 @@
 
     .line 316
     :cond_b
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 317
     .line 318
@@ -4973,11 +4867,11 @@
     throw v0
 .end method
 
-.method public final t1()V
+.method public final r1()V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -4985,11 +4879,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
@@ -5002,7 +4896,7 @@
     move-result-object p1
 
     .line 8
-    invoke-static {p1}, LKpk;->g(Landroid/content/Context;)V
+    invoke-static {p1}, LCPk;->f(Landroid/content/Context;)V
 
     .line 9
     .line 10
@@ -5010,11 +4904,11 @@
     return-void
 .end method
 
-.method public final z1()V
+.method public final x1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()LzY0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
 
     .line 2
     .line 3
@@ -5022,10 +4916,111 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LzY0;->onStop()V
+    invoke-virtual {v0}, Li21;->onStop()V
 
     .line 6
     .line 7
     .line 8
+    return-void
+.end method
+
+.method public final z1(Landroid/os/Bundle;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const-string v1, "reg_maximum_age_key"
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getInt(Ljava/lang/String;)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 19
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v1
+
+    .line 25
+    if-lez v1, :cond_1
+
+    .line 26
+    .line 27
+    const/4 v1, 0x1
+
+    .line 28
+    iput-boolean v1, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->S0:Z
+
+    .line 29
+    .line 30
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v0
+
+    .line 34
+    iput v0, p0, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->T0:I
+
+    .line 35
+    .line 36
+    :cond_1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->z1(Landroid/os/Bundle;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/birthday/BirthdayFragment;->e2()Li21;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    invoke-virtual {p1, p0}, Li21;->o3(Lm21;)V
+
+    .line 44
+    .line 45
+    .line 46
     return-void
 .end method

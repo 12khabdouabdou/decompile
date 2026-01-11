@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final nativeBridge:LShf;
+.field private final nativeBridge:LwAf;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;,
-            LvBg;
+            Lm11;
         }
     .end annotation
 
@@ -74,11 +74,11 @@
 
     .line 26
     .line 27
-    new-instance v0, LShf;
+    new-instance v0, LwAf;
 
     .line 28
     .line 29
-    new-instance v1, LVg2;
+    new-instance v1, LYh2;
 
     .line 30
     .line 31
@@ -86,17 +86,17 @@
 
     .line 32
     .line 33
-    invoke-direct {v1, v2, p0}, LVg2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LYh2;-><init>(ILjava/lang/Object;)V
 
     .line 34
     .line 35
     .line 36
-    invoke-direct {v0, p1, p2, v1}, LShf;-><init>(JLjava/lang/Runnable;)V
+    invoke-direct {v0, p1, p2, v1}, LwAf;-><init>(JLjava/lang/Runnable;)V
 
     .line 37
     .line 38
     .line 39
-    iput-object v0, p0, Lcom/snapcv/bitmoji/avatar/Classifier;->nativeBridge:LShf;
+    iput-object v0, p0, Lcom/snapcv/bitmoji/avatar/Classifier;->nativeBridge:LwAf;
 
     .line 40
     .line 41
@@ -104,7 +104,7 @@
 
     .line 42
     :cond_0
-    new-instance p1, LvBg;
+    new-instance p1, Lm11;
 
     .line 43
     .line 44
@@ -136,12 +136,12 @@
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LvBg;
+            Lm11;
         }
     .end annotation
 
     .line 1
-    invoke-static {}, LBmc;->b()Z
+    invoke-static {}, LOBc;->a()Z
 
     .line 2
     .line 3
@@ -157,7 +157,7 @@
 
     .line 8
     :cond_0
-    new-instance v0, LvBg;
+    new-instance v0, Lm11;
 
     .line 9
     .line 10
@@ -257,7 +257,7 @@
 
 
 # virtual methods
-.method public classify([BIILoy1;Lub8;)Lcom/snapcv/bitmoji/avatar/Classification;
+.method public classify([BIILCB1;LQh8;)Lcom/snapcv/bitmoji/avatar/Classification;
     .locals 9
 
     .line 1
@@ -292,7 +292,7 @@
 
     .line 15
     :cond_0
-    sget-object v0, Lub8;->a:Lub8;
+    sget-object v0, LQh8;->a:LQh8;
 
     .line 16
     .line 17
@@ -317,19 +317,19 @@
 
     .line 24
     :goto_0
-    iget v4, p4, Loy1;->a:I
+    iget v4, p4, LCB1;->a:I
 
     .line 25
     .line 26
-    iget v5, p4, Loy1;->b:I
+    iget v5, p4, LCB1;->b:I
 
     .line 27
     .line 28
-    iget v6, p4, Loy1;->c:I
+    iget v6, p4, LCB1;->c:I
 
     .line 29
     .line 30
-    iget v7, p4, Loy1;->d:I
+    iget v7, p4, LCB1;->d:I
 
     .line 31
     .line 32
@@ -387,11 +387,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snapcv/bitmoji/avatar/Classifier;->nativeBridge:LShf;
+    iget-object v0, p0, Lcom/snapcv/bitmoji/avatar/Classifier;->nativeBridge:LwAf;
 
     .line 2
     .line 3
-    iget-wide v0, v0, LShf;->b:J
+    iget-wide v0, v0, LwAf;->b:J
 
     .line 4
     .line 5

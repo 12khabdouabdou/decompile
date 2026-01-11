@@ -1,226 +1,255 @@
-.class public final La54;
-.super Ljava/lang/Object;
+.class public final enum La54;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LBN7;
+# static fields
+.field public static final enum X:La54;
 
-.field public final b:J
+.field public static final enum Y:La54;
+
+.field public static final enum Z:La54;
+
+.field public static final enum a:La54;
+
+.field public static final enum b:La54;
+
+.field public static final enum c:La54;
+
+.field public static final synthetic e0:[La54;
+
+.field public static final enum t:La54;
 
 
 # direct methods
-.method public constructor <init>(LBN7;J)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 15
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x6
 
     .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, La54;->a:LBN7;
-
-    .line 5
-    .line 6
-    iput-wide p2, p0, La54;->b:J
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
+    const/4 v1, 0x5
 
     .line 3
+    const/4 v2, 0x4
+
     .line 4
-    return v0
+    const/4 v3, 0x3
 
     .line 5
-    :cond_0
-    instance-of v1, p1, La54;
+    const/4 v4, 0x2
 
     .line 6
+    const/4 v5, 0x1
+
     .line 7
-    const/4 v2, 0x0
+    const/4 v6, 0x0
 
     .line 8
-    if-nez v1, :cond_1
+    new-instance v7, La54;
 
     .line 9
     .line 10
-    return v2
+    const-string v8, "MISSING_EVENTS"
 
     .line 11
-    :cond_1
-    check-cast p1, La54;
-
     .line 12
-    .line 13
-    iget-object v1, p1, La54;->a:LBN7;
+    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 13
     .line 14
     .line 15
-    iget-object v3, p0, La54;->a:LBN7;
+    sput-object v7, La54;->a:La54;
 
     .line 16
     .line 17
-    if-eq v3, v1, :cond_2
+    new-instance v8, La54;
 
     .line 18
     .line 19
-    return v2
+    const-string v9, "MISSING_UNLOCKABLES"
 
     .line 20
-    :cond_2
-    iget-wide v3, p0, La54;->b:J
-
     .line 21
-    .line 22
-    iget-wide v5, p1, La54;->b:J
+    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 22
     .line 23
     .line 24
-    cmp-long p1, v3, v5
+    sput-object v8, La54;->b:La54;
 
     .line 25
     .line 26
-    if-eqz p1, :cond_3
+    new-instance v9, La54;
 
     .line 27
     .line 28
-    return v2
-
-    .line 29
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, La54;->a:LBN7;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 12
-    .line 13
-    const/16 v1, 0x20
-
-    .line 14
-    .line 15
-    iget-wide v2, p0, La54;->b:J
-
-    .line 16
-    .line 17
-    ushr-long v4, v2, v1
-
-    .line 18
-    .line 19
-    xor-long/2addr v2, v4
-
-    .line 20
-    long-to-int v1, v2
-
-    .line 21
-    add-int/2addr v0, v1
-
-    .line 22
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "CountFriendLinkTypeByUserIds(friendLinkType="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, La54;->a:LBN7;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", COUNT="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-wide v1, p0, La54;->b:J
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v10, "MISSING_ADID"
 
     .line 29
     .line 30
+    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 31
+    .line 32
+    .line 33
+    sput-object v9, La54;->c:La54;
+
+    .line 34
+    .line 35
+    new-instance v10, La54;
+
+    .line 36
+    .line 37
+    const-string v11, "MISSING_SPONSORED_LENS"
+
+    .line 38
+    .line 39
+    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 40
+    .line 41
+    .line 42
+    sput-object v10, La54;->t:La54;
+
+    .line 43
+    .line 44
+    new-instance v11, La54;
+
+    .line 45
+    .line 46
+    const-string v12, "MISSING_LENS_INFO"
+
+    .line 47
+    .line 48
+    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 49
+    .line 50
+    .line 51
+    sput-object v11, La54;->X:La54;
+
+    .line 52
+    .line 53
+    new-instance v12, La54;
+
+    .line 54
+    .line 55
+    const-string v13, "BAD_VIEWTIME"
+
+    .line 56
+    .line 57
+    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 58
+    .line 59
+    .line 60
+    sput-object v12, La54;->Y:La54;
+
+    .line 61
+    .line 62
+    new-instance v13, La54;
+
+    .line 63
+    .line 64
+    const-string v14, "BAD_ADID"
+
+    .line 65
+    .line 66
+    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 67
+    .line 68
+    .line 69
+    sput-object v13, La54;->Z:La54;
+
+    .line 70
+    .line 71
+    const/4 v14, 0x7
+
+    .line 72
+    new-array v14, v14, [La54;
+
+    .line 73
+    .line 74
+    aput-object v7, v14, v6
+
+    .line 75
+    .line 76
+    aput-object v8, v14, v5
+
+    .line 77
+    .line 78
+    aput-object v9, v14, v4
+
+    .line 79
+    .line 80
+    aput-object v10, v14, v3
+
+    .line 81
+    .line 82
+    aput-object v11, v14, v2
+
+    .line 83
+    .line 84
+    aput-object v12, v14, v1
+
+    .line 85
+    .line 86
+    aput-object v13, v14, v0
+
+    .line 87
+    .line 88
+    sput-object v14, La54;->e0:[La54;
+
+    .line 89
+    .line 90
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)La54;
+    .locals 1
+
+    .line 1
+    const-class v0, La54;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, La54;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[La54;
+    .locals 1
+
+    .line 1
+    sget-object v0, La54;->e0:[La54;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 32
+    .line 7
+    check-cast v0, [La54;
+
+    .line 8
+    .line 9
     return-object v0
 .end method

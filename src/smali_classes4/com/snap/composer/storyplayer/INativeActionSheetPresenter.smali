@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFW8;
+    proxyClass = Lg49;
     schema = "\'presentActionSheet\':f|m|(r:\'[0]\', d)"
     typeReferences = {
         Lcom/snap/composer/storyplayer/INativeItem;

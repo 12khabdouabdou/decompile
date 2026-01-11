@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'UNSET\':0,\'OPEN_SETTINGS\':1,\'OPEN_LAST_PROMOTABLE_SNAP\':2,\'ACTIVITY_FEED_NOTIFICATION\':3"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

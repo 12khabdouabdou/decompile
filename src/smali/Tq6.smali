@@ -1,67 +1,62 @@
 .class public final LTq6;
-.super Ljava/lang/Object;
+.super LFNj;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/disposables/Disposable;
 
-
-# instance fields
-.field public final a:Landroid/app/Notification;
-
-.field public final b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+# static fields
+.field public static final r:LTq6;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Notification;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LTq6;
 
     .line 2
     .line 3
+    sget-object v2, LPh6;->Z:LPh6;
+
     .line 4
-    iput-object p1, p0, LTq6;->a:Landroid/app/Notification;
-
     .line 5
-    .line 6
-    iput-object p2, p0, LTq6;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    const-wide/16 v9, 0x0
 
+    .line 6
     .line 7
+    const/16 v12, 0x1ff4
+
     .line 8
-    return-void
-.end method
+    .line 9
+    const-string v1, "discover_story_snap_url_content"
 
+    .line 10
+    .line 11
+    const/4 v3, 0x0
 
-# virtual methods
-.method public final c()Z
-    .locals 1
+    .line 12
+    const/4 v4, 0x1
 
-    .line 1
-    iget-object v0, p0, LTq6;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .line 13
+    const-wide/16 v5, 0x0
 
-    .line 2
-    .line 3
-    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
+    .line 14
+    .line 15
+    const-wide/16 v7, 0x0
 
-    .line 4
-    .line 5
-    return v0
-.end method
+    .line 16
+    .line 17
+    const/4 v11, 0x0
 
-.method public final dispose()V
-    .locals 1
+    .line 18
+    invoke-direct/range {v0 .. v12}, LFNj;-><init>(Ljava/lang/String;Lrp0;Ljava/lang/String;ZJJJLwub;I)V
 
-    .line 1
-    iget-object v0, p0, LTq6;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .line 19
+    .line 20
+    .line 21
+    sput-object v0, LTq6;->r:LTq6;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
-
-    .line 4
-    .line 5
-    .line 6
+    .line 22
+    .line 23
     return-void
 .end method

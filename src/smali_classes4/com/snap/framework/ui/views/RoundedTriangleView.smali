@@ -41,7 +41,7 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/snap/framework/ui/views/TriangleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    sget-object p3, Live;->b:[I
+    sget-object p3, LQMe;->b:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -89,11 +89,11 @@
     if-lt p1, p2, :cond_0
 
     .line 10
-    new-instance p1, LhY2;
+    new-instance p1, LJ03;
 
     const/4 p2, 0x5
 
-    invoke-direct {p1, p2, p0}, LhY2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LJ03;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
 

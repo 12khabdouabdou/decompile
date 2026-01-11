@@ -28,7 +28,7 @@
 
     .line 6
     :cond_0
-    sget-object v0, LDq9;->g:Landroid/content/Context;
+    sget-object v0, LDz9;->c:Landroid/content/Context;
 
     .line 7
     .line 8
@@ -61,7 +61,7 @@
     const/4 v2, 0x0
 
     .line 23
-    invoke-static {v0, v2, v1}, LDq9;->Q(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-static {v0, v2, v1}, LDz9;->Q(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 24
     .line 25
@@ -137,19 +137,19 @@
     .line 59
     .line 60
     .line 61
-    new-instance v2, LTHd;
+    new-instance v2, LmR9;
 
     .line 62
     .line 63
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
     .line 64
-    invoke-direct {v2, v3}, LTHd;-><init>(I)V
+    invoke-direct {v2, v3}, LmR9;-><init>(I)V
 
     .line 65
     .line 66
     .line 67
-    invoke-static {v0, v2, v1}, LDq9;->Q(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-static {v0, v2, v1}, LDz9;->Q(Landroid/content/Context;Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 68
     .line 69
@@ -182,7 +182,7 @@
 
     .line 83
     .line 84
-    new-instance v1, LUHd;
+    new-instance v1, LjZd;
 
     .line 85
     .line 86
@@ -191,7 +191,7 @@
     .line 87
     .line 88
     .line 89
-    invoke-static {v0, v1}, LdJ7;->s(Landroid/os/PowerManager;LUHd;)V
+    invoke-static {v0, v1}, Lby6;->o(Landroid/os/PowerManager;LjZd;)V
 
     .line 90
     .line 91
@@ -240,7 +240,7 @@
     .line 15
     .line 16
     :cond_1
-    sget-object v0, LDq9;->g:Landroid/content/Context;
+    sget-object v0, LDz9;->c:Landroid/content/Context;
 
     .line 17
     .line 18
@@ -260,7 +260,7 @@
 
     .line 25
     .line 26
-    invoke-static {v0}, LPve;->c(Landroid/os/PowerManager;)I
+    invoke-static {v0}, LuW;->a(Landroid/os/PowerManager;)I
 
     .line 27
     .line 28
@@ -291,7 +291,7 @@
     .line 7
     .line 8
     :cond_0
-    sget-object v0, LDq9;->g:Landroid/content/Context;
+    sget-object v0, LDz9;->c:Landroid/content/Context;
 
     .line 9
     .line 10

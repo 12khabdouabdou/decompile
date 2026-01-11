@@ -1,99 +1,93 @@
-.class public final Llai;
-.super Ljava/lang/Object;
+.class public final enum Llai;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lx0e;
+# static fields
+.field public static final synthetic a:[Llai;
 
 
 # direct methods
-.method public constructor <init>(ILx0e;)V
-    .locals 0
-
-    const/4 p1, 0x0
-
-    iput p1, p0, Llai;->a:I
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p2, p0, Llai;->b:Lx0e;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lx0e;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Llai;->a:I
+    const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, Llai;
 
-    iput-object p1, p0, Llai;->b:Lx0e;
+    .line 3
+    .line 4
+    const-string v2, "PUBLIC_STORIES_IN_CAROUSEL"
 
+    .line 5
+    .line 6
+    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    new-array v2, v2, [Llai;
+
+    .line 11
+    .line 12
+    aput-object v1, v2, v0
+
+    .line 13
+    .line 14
+    sput-object v2, Llai;->a:[Llai;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public static valueOf(Ljava/lang/String;)Llai;
     .locals 1
 
     .line 1
-    iget v0, p0, Llai;->a:I
+    const-class v0, Llai;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    move-result-object p0
 
     .line 7
+    check-cast p0, Llai;
+
     .line 8
-    iget-object p1, p0, Llai;->b:Lx0e;
-
     .line 9
-    .line 10
-    iget-object p1, p1, Lx0e;->c:Ljava/lang/Object;
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    return-void
+.method public static values()[Llai;
+    .locals 1
 
-    .line 13
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
+    .line 1
+    sget-object v0, Llai;->a:[Llai;
 
-    .line 14
-    .line 15
-    iget-object p1, p0, Llai;->b:Lx0e;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 16
-    .line 17
-    iget-object p1, p1, Lx0e;->c:Ljava/lang/Object;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 18
-    .line 19
-    return-void
+    .line 7
+    check-cast v0, [Llai;
 
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 8
+    .line 9
+    return-object v0
 .end method

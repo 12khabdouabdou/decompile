@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRAc;
+    proxyClass = LFPc;
     schema = "\'onCtaClicked\':f|m|(s),\'onOneTapOnboardingCtaClicked\':f?|m|(s),\'getGroupDisplayName\':f|m|(s): g<c>:\'[0]\'<s>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
@@ -35,7 +35,7 @@
 .end method
 
 .method public abstract onOneTapOnboardingCtaClicked(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/chat_sponsored_snap/AppInstallAttachmentViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'commonAttachmentViewModel\':r?:\'[0]\',\'numberOfRatings\':s?,\'appIconUrl\':s?,\'appRating\':d@?"
     typeReferences = {

@@ -1,13 +1,10 @@
-.class public final LRtk;
+.class public abstract LRtk;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
-
 
 # static fields
-.field public static final a:LRtk;
+.field public static final a:Landroid/content/Intent;
 
 
 # direct methods
@@ -15,80 +12,34 @@
     .locals 2
 
     .line 1
-    new-instance v0, LRtk;
+    new-instance v0, Landroid/content/Intent;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const-string v1, "com.google.android.play.core.expressintegrityservice.BIND_EXPRESS_INTEGRITY_SERVICE"
 
     .line 4
     .line 5
-    .line 6
-    sput-object v0, LRtk;->a:LRtk;
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    new-instance v0, LFhk;
+    const-string v1, "com.android.vending"
 
     .line 9
     .line 10
-    const/4 v1, 0x1
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
     .line 12
     .line 13
+    move-result-object v0
+
     .line 14
-    const-class v1, LUhk;
+    sput-object v0, LRtk;->a:Landroid/content/Intent;
 
     .line 15
     .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 21
-    .line 22
-    .line 23
     return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
 .end method

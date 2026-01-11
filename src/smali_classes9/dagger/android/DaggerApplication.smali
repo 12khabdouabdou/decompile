@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKI8;
+.implements LfQ8;
 
 
 # virtual methods
-.method public abstract a()LtQ;
+.method public abstract a()LyS;
 .end method
 
-.method public final androidInjector()LtQ;
+.method public final androidInjector()LyS;
     .locals 1
 
     .line 1
@@ -33,7 +33,7 @@
 
     .line 2
     :try_start_0
-    invoke-virtual {p0}, Ldagger/android/DaggerApplication;->a()LtQ;
+    invoke-virtual {p0}, Ldagger/android/DaggerApplication;->a()LyS;
 
     .line 3
     .line 4
@@ -41,7 +41,7 @@
     move-result-object v0
 
     .line 6
-    invoke-interface {v0, p0}, LtQ;->a(Ljava/lang/Object;)V
+    invoke-interface {v0, p0}, LyS;->a(Ljava/lang/Object;)V
 
     .line 7
     .line 8

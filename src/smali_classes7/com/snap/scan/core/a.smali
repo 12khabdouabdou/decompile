@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final synthetic X:Lksf;
+.field public final synthetic X:LsLf;
 
 .field public final synthetic a:Lcom/snap/scan/core/c;
 
-.field public final synthetic b:LdYb;
+.field public final synthetic b:Lucc;
 
 .field public final synthetic c:J
 
@@ -19,7 +19,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/scan/core/c;LdYb;JLjava/lang/String;Lksf;)V
+.method public constructor <init>(Lcom/snap/scan/core/c;Lucc;JLjava/lang/String;LsLf;)V
     .locals 0
 
     .line 1
@@ -32,7 +32,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/scan/core/a;->b:LdYb;
+    iput-object p2, p0, Lcom/snap/scan/core/a;->b:Lucc;
 
     .line 7
     .line 8
@@ -44,7 +44,7 @@
 
     .line 11
     .line 12
-    iput-object p6, p0, Lcom/snap/scan/core/a;->X:Lksf;
+    iput-object p6, p0, Lcom/snap/scan/core/a;->X:LsLf;
 
     .line 13
     .line 14
@@ -65,15 +65,15 @@
 
     .line 4
     .line 5
-    check-cast v2, Lpg5;
+    check-cast v2, LLm5;
 
     .line 6
     .line 7
-    iget-object v0, v1, Lcom/snap/scan/core/a;->b:LdYb;
+    iget-object v0, v1, Lcom/snap/scan/core/a;->b:Lucc;
 
     .line 8
     .line 9
-    check-cast v0, LUK5;
+    check-cast v0, LlP5;
 
     .line 10
     .line 11
@@ -87,11 +87,11 @@
     .line 15
     .line 16
     :try_start_0
-    iget-object v0, v0, LUK5;->Z:LTIc;
+    iget-object v0, v0, LlP5;->Z:LyXc;
 
     .line 17
     .line 18
-    invoke-virtual {v0}, LTIc;->d()Lcom/snapcv/scan/Scan;
+    invoke-virtual {v0}, LyXc;->b()Lcom/snapcv/scan/Scan;
 
     .line 19
     .line 20
@@ -119,7 +119,7 @@
     .line 29
     .line 30
     :goto_0
-    iget-object v0, v2, Lpg5;->a:Ljava/lang/String;
+    iget-object v0, v2, LLm5;->a:Ljava/lang/String;
 
     .line 31
     .line 32
@@ -131,7 +131,7 @@
     move-result v4
 
     .line 36
-    iget-object v5, v3, Lcom/snap/scan/core/c;->a:LB73;
+    iget-object v5, v3, Lcom/snap/scan/core/c;->a:LR93;
 
     .line 37
     .line 38
@@ -147,11 +147,11 @@
 
     .line 43
     .line 44
-    check-cast v5, LOze;
+    check-cast v5, LFRe;
 
     .line 45
     .line 46
-    invoke-static {v5, v6, v7}, LEU0;->d(LOze;J)J
+    invoke-static {v5, v6, v7}, LJF0;->c(LFRe;J)J
 
     .line 47
     .line 48
@@ -195,7 +195,7 @@
 
     .line 66
     .line 67
-    invoke-static {v0, v8, v9, v4}, LZ4i;->h1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v0, v8, v9, v4}, Lsti;->o0(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 68
     .line 69
@@ -203,7 +203,7 @@
     move-result-object v0
 
     .line 71
-    iget v4, v2, Lpg5;->b:I
+    iget v4, v2, LLm5;->b:I
 
     .line 72
     .line 73
@@ -218,7 +218,7 @@
 
     .line 77
     .line 78
-    sget-object v4, LV83;->X:LV83;
+    sget-object v4, Lsb3;->X:Lsb3;
 
     .line 79
     .line 80
@@ -230,7 +230,7 @@
 
     .line 82
     :cond_1
-    sget-object v4, LV83;->Z:LV83;
+    sget-object v4, Lsb3;->Z:Lsb3;
 
     .line 83
     .line 84
@@ -238,7 +238,7 @@
 
     .line 85
     :cond_2
-    sget-object v4, LV83;->a:LV83;
+    sget-object v4, Lsb3;->a:Lsb3;
 
     .line 86
     .line 87
@@ -249,7 +249,7 @@
     const/4 v4, 0x2
 
     .line 89
-    invoke-static {v4, v0}, LR4i;->j1(ILjava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v4, v0}, Lkti;->q0(ILjava/lang/String;)Ljava/util/ArrayList;
 
     .line 90
     .line 91
@@ -265,7 +265,7 @@
 
     .line 96
     .line 97
-    invoke-static {v4, v9}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v4, v9}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 98
     .line 99
@@ -315,7 +315,7 @@
 
     .line 121
     .line 122
-    invoke-static {v10}, LDq9;->q(I)V
+    invoke-static {v10}, LTVd;->m(I)V
 
     .line 123
     .line 124
@@ -348,7 +348,7 @@
 
     .line 138
     :cond_3
-    invoke-static {v8}, Lue3;->o1(Ljava/util/Collection;)[B
+    invoke-static {v8}, Llh3;->n4(Ljava/util/Collection;)[B
 
     .line 139
     .line 140
@@ -364,7 +364,7 @@
     move-result v4
 
     .line 146
-    iget v12, v2, Lpg5;->c:I
+    iget v12, v2, LLm5;->c:I
 
     .line 147
     .line 148
@@ -373,7 +373,7 @@
     .line 149
     .line 150
     .line 151
-    new-instance v0, LFzc;
+    new-instance v0, LwOc;
 
     .line 152
     .line 153
@@ -406,7 +406,7 @@
 
     .line 164
     .line 165
-    invoke-static {v4, v2, v0}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v2, v0}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 166
     .line 167
@@ -422,11 +422,11 @@
 
     .line 171
     .line 172
-    check-cast v5, LOze;
+    check-cast v5, LFRe;
 
     .line 173
     .line 174
-    invoke-static {v5, v6, v7}, LEU0;->d(LOze;J)J
+    invoke-static {v5, v6, v7}, LJF0;->c(LFRe;J)J
 
     .line 175
     .line 176
@@ -438,16 +438,16 @@
 
     .line 179
     .line 180
-    invoke-direct/range {v8 .. v15}, Lcom/snap/scan/core/SnapScanResult$Success;-><init>(Ljava/lang/String;Ljava/lang/String;LV83;I[BJ)V
+    invoke-direct/range {v8 .. v15}, Lcom/snap/scan/core/SnapScanResult$Success;-><init>(Ljava/lang/String;Ljava/lang/String;Lsb3;I[BJ)V
 
     .line 181
     .line 182
     .line 183
-    iget-object v11, v1, Lcom/snap/scan/core/a;->X:Lksf;
+    iget-object v11, v1, Lcom/snap/scan/core/a;->X:LsLf;
 
     .line 184
     .line 185
-    sget-object v0, Lksf;->X:Lksf;
+    sget-object v0, LsLf;->X:LsLf;
 
     .line 186
     .line 187
@@ -455,7 +455,7 @@
 
     .line 188
     .line 189
-    sget-object v0, Lksf;->t:Lksf;
+    sget-object v0, LsLf;->t:LsLf;
 
     .line 190
     .line 191
@@ -472,7 +472,7 @@
     .line 195
     :cond_5
     :goto_6
-    new-instance v9, LtN;
+    new-instance v9, LsP;
 
     .line 196
     .line 197
@@ -497,11 +497,11 @@
     move-result-object v16
 
     .line 208
-    iget-object v0, v3, Lcom/snap/scan/core/c;->e:LUS5;
+    iget-object v0, v3, Lcom/snap/scan/core/c;->e:LRW5;
 
     .line 209
     .line 210
-    invoke-virtual {v0, v8}, LUS5;->a(Lcom/snap/scan/core/SnapScanResult;)Z
+    invoke-virtual {v0, v8}, LRW5;->a(Lcom/snap/scan/core/SnapScanResult;)Z
 
     .line 211
     .line 212
@@ -517,16 +517,16 @@
 
     .line 217
     .line 218
-    invoke-direct/range {v9 .. v17}, LtN;-><init>(Ljava/lang/String;Lksf;JJLjava/lang/String;Z)V
+    invoke-direct/range {v9 .. v17}, LsP;-><init>(Ljava/lang/String;LsLf;JJLjava/lang/String;Z)V
 
     .line 219
     .line 220
     .line 221
-    iget-object v0, v3, Lcom/snap/scan/core/c;->d:Lpi5;
+    iget-object v0, v3, Lcom/snap/scan/core/c;->d:LMo5;
 
     .line 222
     .line 223
-    invoke-virtual {v0, v9}, Lpi5;->a(Liqk;)V
+    invoke-virtual {v0, v9}, LMo5;->a(LPQk;)V
 
     .line 224
     .line 225

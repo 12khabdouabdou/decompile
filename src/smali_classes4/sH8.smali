@@ -4,238 +4,96 @@
 
 
 # instance fields
-.field public final a:I
+.field public final a:LOF3;
 
-.field public final b:I
+.field public final b:Lqpf;
 
-.field public final c:I
+.field public final c:LREi;
 
 
 # direct methods
-.method public constructor <init>(III)V
+.method public constructor <init>(LOF3;Lqpf;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, LsH8;->a:I
-
     .line 3
-    iput p2, p0, LsH8;->b:I
-
     .line 4
-    iput p3, p0, LsH8;->c:I
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(IIII)V
-    .locals 0
-
-    and-int/lit8 p3, p3, 0x2
-
-    const/4 p4, 0x0
-
-    if-eqz p3, :cond_0
-
-    const/4 p2, 0x0
+    iput-object p1, p0, LsH8;->a:LOF3;
 
     .line 5
-    :cond_0
-    invoke-direct {p0, p1, p2, p4}, LsH8;-><init>(III)V
+    .line 6
+    iput-object p2, p0, LsH8;->b:Lqpf;
 
+    .line 7
+    .line 8
+    new-instance p1, LcB8;
+
+    .line 9
+    .line 10
+    const/4 p2, 0x5
+
+    .line 11
+    invoke-direct {p1, p2, p0}, LcB8;-><init>(ILjava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance p2, LREi;
+
+    .line 15
+    .line 16
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 17
+    .line 18
+    .line 19
+    iput-object p2, p0, LsH8;->c:LREi;
+
+    .line 20
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LsH8;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LsH8;
-
-    .line 12
-    .line 13
-    iget v1, p1, LsH8;->a:I
-
-    .line 14
-    .line 15
-    iget v3, p0, LsH8;->a:I
-
-    .line 16
-    .line 17
-    if-eq v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    iget v1, p0, LsH8;->b:I
-
-    .line 21
-    .line 22
-    iget v3, p1, LsH8;->b:I
-
-    .line 23
-    .line 24
-    if-eq v1, v3, :cond_3
-
-    .line 25
-    .line 26
-    return v2
-
-    .line 27
-    :cond_3
-    iget v1, p0, LsH8;->c:I
-
-    .line 28
-    .line 29
-    iget p1, p1, LsH8;->c:I
-
-    .line 30
-    .line 31
-    if-eq v1, p1, :cond_4
-
-    .line 32
-    .line 33
-    return v2
-
-    .line 34
-    :cond_4
-    return v0
-.end method
-
-.method public final hashCode()I
+.method public final a()Lcom/snap/graphene/impl/api/GrapheneHttpInterface;
     .locals 2
 
     .line 1
-    iget v0, p0, LsH8;->a:I
+    iget-object v0, p0, LsH8;->c:LREi;
 
     .line 2
     .line 3
-    mul-int/lit8 v0, v0, 0x1f
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
-    iget v1, p0, LsH8;->b:I
-
     .line 6
+    move-result-object v0
+
     .line 7
-    add-int/2addr v0, v1
+    check-cast v0, Llpf;
 
     .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 9
+    const-class v1, Lcom/snap/graphene/impl/api/GrapheneHttpInterface;
+
     .line 10
-    iget v1, p0, LsH8;->c:I
-
     .line 11
-    .line 12
-    add-int/2addr v0, v1
+    invoke-virtual {v0, v1}, Llpf;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
-    .line 13
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "HlsByteRange(byteRange="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, LsH8;->a:I
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 11
     .line 12
     .line 13
-    const-string v1, ", offset="
-
     .line 14
+    move-result-object v0
+
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast v0, Lcom/snap/graphene/impl/api/GrapheneHttpInterface;
 
     .line 16
     .line 17
-    .line 18
-    iget v1, p0, LsH8;->b:I
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", duration="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget v1, p0, LsH8;->c:I
-
-    .line 29
-    .line 30
-    const-string v2, ")"
-
-    .line 31
-    .line 32
-    invoke-static {v0, v1, v2}, LEU0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
     return-object v0
 .end method

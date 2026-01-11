@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LcY8;
+    proxyClass = LG59;
     schema = "\'presentProfile\':f|m|(t)"
     typeReferences = {}
 .end annotation

@@ -74,7 +74,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 6
 
     .line 1
@@ -207,7 +207,7 @@
 
     .line 56
     .line 57
-    invoke-direct {v3, p1, p0, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefCountSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
+    invoke-direct {v3, p1, p0, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefCountSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
 
     .line 58
     .line 59
@@ -225,7 +225,7 @@
 
     .line 66
     .line 67
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->I(Lio/reactivex/rxjava3/functions/Consumer;)V
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->H(Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 68
     .line 69
@@ -244,7 +244,7 @@
     throw p1
 .end method
 
-.method public final I(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
+.method public final H(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
     .locals 6
 
     .line 1
@@ -316,7 +316,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->L()V
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->K()V
 
     .line 34
     .line 35
@@ -348,7 +348,7 @@
     throw p1
 .end method
 
-.method public final J(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
+.method public final I(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
     .locals 5
 
     .line 1
@@ -430,7 +430,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->L()V
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->K()V
 
     .line 37
     .line 38

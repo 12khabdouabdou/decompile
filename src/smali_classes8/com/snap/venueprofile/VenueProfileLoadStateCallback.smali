@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lyxj;
+    proxyClass = LMWj;
     schema = "\'onVenueLoadStateChanged\':f|m|(r<e>:\'[0]\'),\'onVenueLoaded\':f|m|(s, d, d, r:\'[1]\', s, s?, r:\'[2]\', a?<r:\'[3]\'>),\'onVenueCTADataLoaded\':f?|m|(r:\'[4]\'),\'onTrayPositionUpdate\':g?<c>:\'[5]\'<r<e>:\'[6]\'>,\'onVenueProfileExit\':f?|m|()"
     typeReferences = {
         Lcom/snap/venueprofile/VenueLoadState;,
@@ -36,7 +36,7 @@
 .end method
 
 .method public abstract onVenueCTADataLoaded(Lcom/snap/venueprofile/VenueCTAData;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -61,7 +61,7 @@
 .end method
 
 .method public abstract onVenueProfileExit()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

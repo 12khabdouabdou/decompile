@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/business_ad_creation/Profile;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'id\':s,\'username\':s?,\'title\':s?,\'logoUrl\':s?,\'isHost\':b@?,\'profileCategory\':d@?,\'hostUserId\':s?,\'tier\':d@?,\'subscriberCount\':d@?"
     typeReferences = {}

@@ -18,13 +18,11 @@
 
 .field final mNetworkMetrics:Lcom/snapchat/client/content_manager/NetworkMetrics;
 
-.field final mSelectedVariantInfo:Lcom/snapchat/client/content_resolution/VariantInfo;
-
-.field final mVariantSelected:Ljava/lang/Integer;
+.field final mPrefetchTrigger:Lcom/snapchat/client/mdp_common/Trigger;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snapchat/client/content_manager/NetworkMetrics;Lcom/snapchat/client/content_manager/CacheMetrics;Lcom/snapchat/client/content_resolution/ContentResolveExtractedParams;Lcom/snapchat/client/content_manager/LoadSource;Lcom/snapchat/client/shims/Error;Ljava/lang/Integer;Lcom/snapchat/client/content_resolution/VariantInfo;Ljava/lang/String;Z)V
+.method public constructor <init>(Lcom/snapchat/client/content_manager/NetworkMetrics;Lcom/snapchat/client/content_manager/CacheMetrics;Lcom/snapchat/client/content_resolution/ContentResolveExtractedParams;Lcom/snapchat/client/content_manager/LoadSource;Lcom/snapchat/client/shims/Error;Ljava/lang/String;ZLcom/snapchat/client/mdp_common/Trigger;)V
     .locals 0
 
     .line 1
@@ -53,22 +51,18 @@
 
     .line 13
     .line 14
-    iput-object p6, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mVariantSelected:Ljava/lang/Integer;
+    iput-object p6, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltContentId:Ljava/lang/String;
 
     .line 15
     .line 16
-    iput-object p7, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mSelectedVariantInfo:Lcom/snapchat/client/content_resolution/VariantInfo;
+    iput-boolean p7, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltOriginFallback:Z
 
     .line 17
     .line 18
-    iput-object p8, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltContentId:Ljava/lang/String;
+    iput-object p8, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mPrefetchTrigger:Lcom/snapchat/client/mdp_common/Trigger;
 
     .line 19
     .line 20
-    iput-boolean p9, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltOriginFallback:Z
-
-    .line 21
-    .line 22
     return-void
 .end method
 
@@ -151,22 +145,11 @@
     return-object v0
 .end method
 
-.method public getSelectedVariantInfo()Lcom/snapchat/client/content_resolution/VariantInfo;
+.method public getPrefetchTrigger()Lcom/snapchat/client/mdp_common/Trigger;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mSelectedVariantInfo:Lcom/snapchat/client/content_resolution/VariantInfo;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public getVariantSelected()Ljava/lang/Integer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mVariantSelected:Ljava/lang/Integer;
+    iget-object v0, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mPrefetchTrigger:Lcom/snapchat/client/mdp_common/Trigger;
 
     .line 2
     .line 3
@@ -174,7 +157,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 12
+    .locals 11
 
     .line 1
     iget-object v0, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mNetworkMetrics:Lcom/snapchat/client/content_manager/NetworkMetrics;
@@ -237,115 +220,107 @@
     move-result-object v4
 
     .line 31
-    iget-object v5, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mVariantSelected:Ljava/lang/Integer;
+    iget-object v5, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltContentId:Ljava/lang/String;
 
     .line 32
     .line 33
-    iget-object v6, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mSelectedVariantInfo:Lcom/snapchat/client/content_resolution/VariantInfo;
+    iget-boolean v6, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltOriginFallback:Z
 
     .line 34
     .line 35
-    invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    iget-object v7, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mPrefetchTrigger:Lcom/snapchat/client/mdp_common/Trigger;
 
     .line 36
     .line 37
+    invoke-static {v7}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
     .line 38
-    move-result-object v6
-
     .line 39
-    iget-object v7, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltContentId:Ljava/lang/String;
-
     .line 40
+    move-result-object v7
+
     .line 41
-    iget-boolean v8, p0, Lcom/snapchat/client/content_manager/ContentRetrievalMetrics;->mBoltOriginFallback:Z
+    const-string v8, "ContentRetrievalMetrics{mNetworkMetrics="
 
     .line 42
     .line 43
-    const-string v9, "ContentRetrievalMetrics{mNetworkMetrics="
+    const-string v9, ",mCacheMetrics="
 
     .line 44
     .line 45
-    const-string v10, ",mCacheMetrics="
+    const-string v10, ",mContentResolveExtractedParams="
 
     .line 46
     .line 47
-    const-string v11, ",mContentResolveExtractedParams="
+    invoke-static {v8, v0, v9, v1, v10}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 48
     .line 49
-    invoke-static {v9, v0, v10, v1, v11}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 50
-    .line 51
-    .line 52
     move-result-object v0
 
-    .line 53
+    .line 51
     const-string v1, ",mLoadSource="
+
+    .line 52
+    .line 53
+    const-string v8, ",mError="
 
     .line 54
     .line 55
-    const-string v9, ",mError="
+    invoke-static {v0, v2, v1, v3, v8}, Lcb9;->h(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 56
     .line 57
-    invoke-static {v0, v2, v1, v3, v9}, LmG8;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 58
+    const-string v1, ",mBoltContentId="
+
     .line 59
     .line 60
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, ",mBoltOriginFallback="
 
     .line 61
     .line 62
-    .line 63
-    const-string v1, ",mVariantSelected="
+    invoke-static {v0, v4, v1, v5, v2}, Lcb9;->h(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 63
     .line 64
     .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 66
     .line 67
     .line 68
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v1, ",mPrefetchTrigger="
 
     .line 69
     .line 70
-    .line 71
-    const-string v1, ",mSelectedVariantInfo="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 71
     .line 72
     .line 73
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 74
     .line 75
     .line 76
-    const-string v1, ",mBoltContentId="
+    const-string v1, "}"
 
     .line 77
     .line 78
-    const-string v2, ",mBoltOriginFallback="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 79
     .line 80
-    invoke-static {v0, v6, v1, v7, v2}, LmG8;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 81
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 82
     .line 83
-    const-string v1, "}"
-
     .line 84
-    .line 85
-    invoke-static {v1, v0, v8}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
-
-    .line 86
-    .line 87
-    .line 88
     move-result-object v0
 
-    .line 89
+    .line 85
     return-object v0
 .end method

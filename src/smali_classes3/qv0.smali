@@ -1,12 +1,12 @@
 .class public final Lqv0;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'isActionBarCoveringSnap\':b@?"
+    schema = "\'registerDisplayBottomSnapObserver\':f(f(b@)),\'displayingBottomSnap\':f(b@),\'disableSwipeToDisplayBottomSnap\':b@?,\'onTapTopSnapRight\':f?(),\'onTapTopSnapLeft\':f?(),\'isActionBarCoveringSnap\':b@?"
     typeReferences = {}
 .end annotation
 

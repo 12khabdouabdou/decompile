@@ -3,89 +3,243 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKI0;
+.implements Lcom/snap/modules/memories/backup/BackupCofStore;
 
 
-# static fields
-.field public static final a:LJI0;
+# instance fields
+.field public final a:Lkotlin/jvm/functions/Function2;
+
+.field public final b:Lkotlin/jvm/functions/Function2;
+
+.field public final c:Lkotlin/jvm/functions/Function2;
+
+.field public final t:Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function2;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, LJI0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, LJI0;->a:Lkotlin/jvm/functions/Function2;
+
     .line 5
     .line 6
-    sput-object v0, LJI0;->a:LJI0;
+    iput-object p2, p0, LJI0;->b:Lkotlin/jvm/functions/Function2;
 
     .line 7
     .line 8
+    iput-object p3, p0, LJI0;->c:Lkotlin/jvm/functions/Function2;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LJI0;->t:Lkotlin/jvm/functions/Function2;
+
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final C1(LLH7;)Lio/reactivex/rxjava3/core/Single;
+.method public getBooleanConfig(Ljava/lang/String;Z)Lcom/snap/composer/promise/Promise;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Z)",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    sget-object p1, LsL6;->a:LsL6;
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 2
     .line 3
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
     .line 4
+    move-result-object p2
+
     .line 5
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+    iget-object v0, p0, LJI0;->b:Lkotlin/jvm/functions/Function2;
 
     .line 6
     .line 7
+    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 8
-    return-object v0
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
+    .line 12
+    .line 13
+    return-object p1
 .end method
 
-.method public final b1(Landroid/graphics/Bitmap;)Lio/reactivex/rxjava3/core/Single;
+.method public getByteArrayConfig(Ljava/lang/String;[B)Lcom/snap/composer/promise/Promise;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "[B)",
+            "Lcom/snap/composer/promise/Promise<",
+            "[B>;"
+        }
+    .end annotation
 
     .line 1
-    sget-object p1, LsL6;->a:LsL6;
+    iget-object v0, p0, LJI0;->a:Lkotlin/jvm/functions/Function2;
 
     .line 2
     .line 3
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
     .line 6
+    move-result-object p1
+
     .line 7
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
     .line 8
-    return-object v0
+    .line 9
+    return-object p1
 .end method
 
-.method public final close()V
+.method public getFloatConfig(Ljava/lang/String;D)Lcom/snap/composer/promise/Promise;
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "D)",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    return-void
-.end method
-
-.method public final isOperational()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
+    invoke-static {p2, p3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 2
-    return v0
+    .line 3
+    .line 4
+    move-result-object p2
+
+    .line 5
+    iget-object p3, p0, LJI0;->c:Lkotlin/jvm/functions/Function2;
+
+    .line 6
+    .line 7
+    invoke-interface {p3, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
+    .line 12
+    .line 13
+    return-object p1
+.end method
+
+.method public getIntConfig(Ljava/lang/String;D)Lcom/snap/composer/promise/Promise;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "D)",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {p2, p3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p2
+
+    .line 5
+    iget-object p3, p0, LJI0;->t:Lkotlin/jvm/functions/Function2;
+
+    .line 6
+    .line 7
+    invoke-interface {p3, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
+    .line 12
+    .line 13
+    return-object p1
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/modules/memories/backup/BackupCofStore;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
 .end method

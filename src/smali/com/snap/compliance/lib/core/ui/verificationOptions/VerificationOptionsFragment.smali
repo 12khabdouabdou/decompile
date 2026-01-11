@@ -3,13 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements LYyj;
+.implements LkYj;
 
 
 # static fields
-.field public static final E0:LRyj;
+.field public static final E0:LdYj;
 
-.field public static final synthetic F0:[LtC9;
+.field public static final synthetic F0:[LNL9;
 
 
 # instance fields
@@ -21,13 +21,13 @@
 
 .field public D0:Lcom/snap/ui/view/SnapFontTextView;
 
-.field public final w0:LbJ3;
+.field public final w0:LEM3;
 
-.field public x0:LWva;
+.field public x0:LrIa;
 
-.field public y0:LzE;
+.field public y0:LrG;
 
-.field public z0:LXyj;
+.field public z0:LjYj;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     .locals 4
 
     .line 1
-    new-instance v0, Ltdc;
+    new-instance v0, Lmsc;
 
     .line 2
     .line 3
@@ -51,12 +51,12 @@
 
     .line 8
     .line 9
-    invoke-direct {v0, v1, v2, v3}, Ltdc;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3}, Lmsc;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    sget-object v1, LsJe;->a:LuJe;
+    sget-object v1, Lc1f;->a:Le1f;
 
     .line 13
     .line 14
@@ -68,7 +68,7 @@
     const/4 v1, 0x1
 
     .line 18
-    new-array v1, v1, [LtC9;
+    new-array v1, v1, [LNL9;
 
     .line 19
     .line 20
@@ -79,20 +79,20 @@
 
     .line 22
     .line 23
-    sput-object v1, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->F0:[LtC9;
+    sput-object v1, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->F0:[LNL9;
 
     .line 24
     .line 25
-    new-instance v0, LRyj;
+    new-instance v0, LdYj;
 
     .line 26
     .line 27
-    invoke-direct {v0}, LRyj;-><init>()V
+    invoke-direct {v0}, LdYj;-><init>()V
 
     .line 28
     .line 29
     .line 30
-    sput-object v0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->E0:LRyj;
+    sput-object v0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->E0:LdYj;
 
     .line 31
     .line 32
@@ -108,19 +108,19 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LbJ3;
+    new-instance v0, LEM3;
 
     .line 5
     .line 6
     const/4 v1, 0x4
 
     .line 7
-    invoke-direct {v0, v1}, LbJ3;-><init>(I)V
+    invoke-direct {v0, v1}, LEM3;-><init>(I)V
 
     .line 8
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->w0:LbJ3;
+    iput-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->w0:LEM3;
 
     .line 11
     .line 12
@@ -129,36 +129,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LXyj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, LXyj;->h3(LYyj;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e07d8
+    const p3, 0x7f0e0802
 
     .line 2
     .line 3
@@ -177,7 +152,7 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 9
 
     .line 1
@@ -222,7 +197,7 @@
 
     .line 18
     :goto_0
-    sget-object v3, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->F0:[LtC9;
+    sget-object v3, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->F0:[LNL9;
 
     .line 19
     .line 20
@@ -238,11 +213,11 @@
     move-result-object v1
 
     .line 26
-    iget-object v4, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->w0:LbJ3;
+    iget-object v4, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->w0:LEM3;
 
     .line 27
     .line 28
-    iput-object v1, v4, LbJ3;->b:Ljava/lang/Object;
+    iput-object v1, v4, LEM3;->b:Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -270,15 +245,15 @@
     move-result-wide v5
 
     .line 42
-    new-instance v1, LWva;
+    new-instance v1, LrIa;
 
     .line 43
     .line 44
-    sget-object v7, LJa5;->b:Lx0j;
+    sget-object v7, LWg5;->b:LUpj;
 
     .line 45
     .line 46
-    invoke-direct {v1, v5, v6, v7}, LWva;-><init>(JLx0j;)V
+    invoke-direct {v1, v5, v6, v7}, LrIa;-><init>(JLUpj;)V
 
     .line 47
     .line 48
@@ -287,7 +262,7 @@
 
     .line 50
     :cond_1
-    invoke-static {}, LWva;->p()LWva;
+    invoke-static {}, LrIa;->p()LrIa;
 
     .line 51
     .line 52
@@ -296,11 +271,11 @@
 
     .line 54
     :goto_1
-    iput-object v1, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->x0:LWva;
+    iput-object v1, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->x0:LrIa;
 
     .line 55
     .line 56
-    new-instance v1, LEsj;
+    new-instance v1, LS7j;
 
     .line 57
     .line 58
@@ -312,16 +287,16 @@
     move-result-object v5
 
     .line 62
-    invoke-direct {v1, v5}, LEsj;-><init>(Landroidx/fragment/app/FragmentActivity;)V
+    invoke-direct {v1, v5}, LS7j;-><init>(Landroidx/fragment/app/FragmentActivity;)V
 
     .line 63
     .line 64
     .line 65
-    const-class v5, LEE;
+    const-class v5, LwG;
 
     .line 66
     .line 67
-    invoke-virtual {v1, v5}, LEsj;->d(Ljava/lang/Class;)LyJj;
+    invoke-virtual {v1, v5}, LS7j;->a(Ljava/lang/Class;)Lb9k;
 
     .line 68
     .line 69
@@ -329,11 +304,11 @@
     move-result-object v1
 
     .line 71
-    check-cast v1, LEE;
+    check-cast v1, LwG;
 
     .line 72
     .line 73
-    invoke-virtual {v1}, LEE;->c()Lkdc;
+    invoke-virtual {v1}, LwG;->c()Lfsc;
 
     .line 74
     .line 75
@@ -349,7 +324,7 @@
     move-result-object v1
 
     .line 81
-    check-cast v1, LzE;
+    check-cast v1, LrG;
 
     .line 82
     .line 83
@@ -360,15 +335,15 @@
 
     .line 85
     .line 86
-    new-instance v1, LzE;
+    new-instance v1, LrG;
 
     .line 87
     .line 88
-    new-instance v6, LB5$a$a;
+    new-instance v6, Lo6$a$a;
 
     .line 89
     .line 90
-    invoke-direct {v6}, LB5$a$a;-><init>()V
+    invoke-direct {v6}, Lo6$a$a;-><init>()V
 
     .line 91
     .line 92
@@ -376,17 +351,17 @@
     const/4 v7, 0x6
 
     .line 94
-    invoke-direct {v1, v6, v5, v7}, LzE;-><init>(LB5$a$a;Ljava/lang/String;I)V
+    invoke-direct {v1, v6, v5, v7}, LrG;-><init>(Lo6$a$a;Ljava/lang/String;I)V
 
     .line 95
     .line 96
     .line 97
     :cond_2
-    iput-object v1, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->y0:LzE;
+    iput-object v1, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->y0:LrG;
 
     .line 98
     .line 99
-    const v1, 0x7f0b01c6
+    const v1, 0x7f0b0210
 
     .line 100
     .line 101
@@ -407,7 +382,7 @@
 
     .line 109
     .line 110
-    const v1, 0x7f0b1a24
+    const v1, 0x7f0b1b8c
 
     .line 111
     .line 112
@@ -428,7 +403,7 @@
 
     .line 120
     .line 121
-    const v1, 0x7f0b1848
+    const v1, 0x7f0b199c
 
     .line 122
     .line 123
@@ -449,7 +424,7 @@
 
     .line 131
     .line 132
-    const v1, 0x7f0b0a92
+    const v1, 0x7f0b0b9b
 
     .line 133
     .line 134
@@ -470,7 +445,7 @@
 
     .line 142
     .line 143
-    const v1, 0x7f0b1759
+    const v1, 0x7f0b189b
 
     .line 144
     .line 145
@@ -518,7 +493,7 @@
 
     .line 166
     .line 167
-    const v6, 0x7f133517
+    const v6, 0x7f1337e0
 
     .line 168
     .line 169
@@ -536,7 +511,7 @@
     .line 175
     .line 176
     .line 177
-    const v0, 0x7f0b08d8
+    const v0, 0x7f0b09ca
 
     .line 178
     .line 179
@@ -553,7 +528,7 @@
 
     .line 185
     .line 186
-    const v0, 0x7f133a11
+    const v0, 0x7f133d09
 
     .line 187
     .line 188
@@ -570,7 +545,7 @@
 
     .line 194
     .line 195
-    invoke-static {v0, v1}, LGnk;->f(Ljava/lang/String;I)Landroid/text/Spanned;
+    invoke-static {v0, v1}, LsNk;->c(Ljava/lang/String;I)Landroid/text/Spanned;
 
     .line 196
     .line 197
@@ -596,7 +571,7 @@
     .line 207
     .line 208
     .line 209
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->U1()LzE;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->U1()LrG;
 
     .line 210
     .line 211
@@ -604,7 +579,7 @@
     move-result-object p1
 
     .line 213
-    invoke-virtual {p1}, LzE;->a()LB5$a$a;
+    invoke-virtual {p1}, LrG;->a()Lo6$a$a;
 
     .line 214
     .line 215
@@ -616,7 +591,7 @@
 
     .line 218
     .line 219
-    invoke-virtual {v4, v0, p0}, LbJ3;->b(LtC9;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v0, p0}, LEM3;->b(LNL9;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 220
     .line 221
@@ -636,7 +611,7 @@
     move-result v0
 
     .line 229
-    invoke-static {p1, v0}, LVE;->a(LB5$a$a;I)Ljava/util/ArrayList;
+    invoke-static {p1, v0}, LNG;->a(Lo6$a$a;I)Ljava/util/ArrayList;
 
     .line 230
     .line 231
@@ -673,7 +648,7 @@
     move-result-object v1
 
     .line 247
-    check-cast v1, LSE;
+    check-cast v1, LKG;
 
     .line 248
     .line 249
@@ -713,7 +688,7 @@
 
     .line 266
     .line 267
-    const v4, 0x7f0e07d7
+    const v4, 0x7f0e0801
 
     .line 268
     .line 269
@@ -726,7 +701,7 @@
     move-result-object v4
 
     .line 274
-    const v6, 0x7f0b1a22
+    const v6, 0x7f0b1b8a
 
     .line 275
     .line 276
@@ -743,7 +718,7 @@
 
     .line 282
     .line 283
-    instance-of v7, v1, LQE;
+    instance-of v7, v1, LIG;
 
     .line 284
     .line 285
@@ -751,7 +726,7 @@
 
     .line 286
     .line 287
-    const v8, 0x7f0807a5
+    const v8, 0x7f08081c
 
     .line 288
     .line 289
@@ -760,7 +735,7 @@
 
     .line 291
     :cond_3
-    instance-of v8, v1, LPE;
+    instance-of v8, v1, LHG;
 
     .line 292
     .line 293
@@ -768,7 +743,7 @@
 
     .line 294
     .line 295
-    const v8, 0x7f08087c
+    const v8, 0x7f0808fc
 
     .line 296
     .line 297
@@ -777,7 +752,7 @@
 
     .line 299
     :cond_4
-    const v8, 0x7f0807f0
+    const v8, 0x7f080868
 
     .line 300
     .line 301
@@ -788,7 +763,7 @@
     .line 303
     .line 304
     .line 305
-    const v6, 0x7f0b1a23
+    const v6, 0x7f0b1b8b
 
     .line 306
     .line 307
@@ -809,7 +784,7 @@
 
     .line 315
     .line 316
-    const v7, 0x7f133a10
+    const v7, 0x7f133d08
 
     .line 317
     .line 318
@@ -826,7 +801,7 @@
 
     .line 324
     :cond_5
-    instance-of v7, v1, LPE;
+    instance-of v7, v1, LHG;
 
     .line 325
     .line 326
@@ -834,7 +809,7 @@
 
     .line 327
     .line 328
-    const v7, 0x7f133a0f
+    const v7, 0x7f133d07
 
     .line 329
     .line 330
@@ -851,7 +826,7 @@
 
     .line 336
     :cond_6
-    const v7, 0x7f133a12
+    const v7, 0x7f133d0a
 
     .line 337
     .line 338
@@ -870,15 +845,15 @@
     .line 344
     .line 345
     .line 346
-    new-instance v6, LJTh;
+    new-instance v6, LShi;
 
     .line 347
     .line 348
-    const/16 v7, 0xc
+    const/16 v7, 0xf
 
     .line 349
     .line 350
-    invoke-direct {v6, p0, v7, v1}, LJTh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v6, p0, v7, v1}, LShi;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 351
     .line 352
@@ -897,7 +872,7 @@
 
     .line 360
     :cond_7
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 361
     .line 362
@@ -906,7 +881,7 @@
 
     .line 364
     :cond_8
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 365
     .line 366
@@ -939,7 +914,7 @@
     move-result-object p1
 
     .line 380
-    instance-of p1, p1, LRE;
+    instance-of p1, p1, LJG;
 
     .line 381
     .line 382
@@ -955,7 +930,7 @@
 
     .line 387
     .line 388
-    const p2, 0x7f133a15
+    const p2, 0x7f133d0d
 
     .line 389
     .line 390
@@ -977,7 +952,7 @@
 
     .line 399
     :cond_a
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 400
     .line 401
@@ -994,7 +969,7 @@
 
     .line 406
     .line 407
-    const p2, 0x7f133a14
+    const p2, 0x7f133d0c
 
     .line 408
     .line 409
@@ -1021,15 +996,15 @@
 
     .line 420
     .line 421
-    new-instance p2, Lmai;
+    new-instance p2, Lhdi;
 
     .line 422
     .line 423
-    const/16 v0, 0xb
+    const/16 v0, 0x13
 
     .line 424
     .line 425
-    invoke-direct {p2, v0, p0}, Lmai;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v0, p0}, Lhdi;-><init>(ILjava/lang/Object;)V
 
     .line 426
     .line 427
@@ -1047,7 +1022,7 @@
 
     .line 433
     .line 434
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 435
     .line 436
@@ -1056,7 +1031,7 @@
 
     .line 438
     :cond_d
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 439
     .line 440
@@ -1064,11 +1039,11 @@
     throw v5
 .end method
 
-.method public final U1()LzE;
+.method public final U1()LrG;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->y0:LzE;
+    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->y0:LrG;
 
     .line 2
     .line 3
@@ -1084,7 +1059,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1095,11 +1070,11 @@
     throw v0
 .end method
 
-.method public final V1()LXyj;
+.method public final V1()LjYj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->z0:LXyj;
+    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->z0:LjYj;
 
     .line 2
     .line 3
@@ -1115,7 +1090,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1130,7 +1105,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LXyj;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LjYj;
 
     .line 2
     .line 3
@@ -1138,11 +1113,11 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, LUE;->c:LUE;
+    sget-object v1, LMG;->c:LMG;
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1}, LXyj;->a3(LUE;)V
+    invoke-virtual {v0, v1}, LjYj;->g3(LMG;)V
 
     .line 8
     .line 9
@@ -1158,11 +1133,11 @@
     return v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -1170,40 +1145,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final u1()V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LXyj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    sget-object v0, LUE;->b:LUE;
-
-    .line 9
-    .line 10
-    invoke-virtual {p1, v0}, LXyj;->a3(LUE;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final w1()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LXyj;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LjYj;
 
     .line 2
     .line 3
@@ -1211,10 +1157,64 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LXyj;->C1()V
+    invoke-virtual {v0}, LjYj;->D1()V
 
     .line 6
     .line 7
     .line 8
+    return-void
+.end method
+
+.method public final v(LiGc;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LjYj;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    sget-object v0, LMG;->b:LMG;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1, v0}, LjYj;->g3(LMG;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationOptions/VerificationOptionsFragment;->V1()LjYj;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, LjYj;->i3(LkYj;)V
+
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

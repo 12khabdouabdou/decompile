@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lzvj;
+    proxyClass = LMUj;
     schema = "\'makeAsyncVenueEditRequest\':f|m|(t, a<s>)"
     typeReferences = {}
 .end annotation

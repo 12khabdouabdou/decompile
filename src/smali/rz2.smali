@@ -1,71 +1,74 @@
-.class public final Lrz2;
+.class public abstract Lrz2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:Lrz2;
+.field public static final a:Ly0e;
 
-.field public static final b:I
+.field public static final b:Ly0e;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 8
+    .locals 4
 
     .line 1
-    new-instance v0, Lrz2;
+    new-instance v0, Ly0e;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, LRrk;
 
     .line 4
     .line 5
-    .line 6
-    sput-object v0, Lrz2;->a:Lrz2;
+    invoke-direct {v1}, LRrk;-><init>()V
 
+    .line 6
     .line 7
     .line 8
-    const/16 v0, 0x40
+    const-string v2, "zero_rating_buckets"
 
     .line 9
     .line 10
-    int-to-long v1, v0
+    const/16 v3, 0xd
 
     .line 11
-    const/4 v0, 0x1
-
     .line 12
-    int-to-long v3, v0
+    invoke-direct {v0, v2, v3, v1}, Ly0e;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 13
-    const v0, 0x7ffffffe
-
     .line 14
     .line 15
-    .line 16
-    int-to-long v6, v0
+    sput-object v0, Lrz2;->a:Ly0e;
 
+    .line 16
     .line 17
-    const-string v5, "kotlinx.coroutines.channels.defaultBuffer"
+    new-instance v0, Ly0e;
 
     .line 18
     .line 19
-    invoke-static/range {v1 .. v7}, LQtc;->I(JJLjava/lang/String;J)J
+    new-instance v1, Lnz2;
 
     .line 20
     .line 21
+    invoke-direct {v1}, Lnz2;-><init>()V
+
     .line 22
-    move-result-wide v0
-
     .line 23
-    long-to-int v1, v0
-
     .line 24
-    sput v1, Lrz2;->b:I
+    const-string v2, "cdn-routing-rules"
 
     .line 25
     .line 26
+    invoke-direct {v0, v2, v3, v1}, Ly0e;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v0, Lrz2;->b:Ly0e;
+
+    .line 30
+    .line 31
     return-void
 .end method

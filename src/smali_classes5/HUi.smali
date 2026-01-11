@@ -1,283 +1,112 @@
 .class public final LHUi;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
-
-# static fields
-.field public static final c:LHUi;
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:J
+.field public final synthetic a:I
 
-.field public final b:LHC6;
+.field public final synthetic b:LIUi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    .line 1
-    new-instance v0, LHUi;
-
-    .line 2
-    .line 3
-    sget v1, LHC6;->t:I
-
-    .line 4
-    .line 5
-    const-wide/16 v1, 0x0
-
-    .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    invoke-direct {v0, v1, v2, v3}, LHUi;-><init>(JLHC6;)V
-
-    .line 9
-    .line 10
-    .line 11
-    sput-object v0, LHUi;->c:LHUi;
-
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public constructor <init>(JLHC6;)V
+.method public synthetic constructor <init>(LIUi;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LHUi;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-wide p1, p0, LHUi;->a:J
+    iput-object p1, p0, LHUi;->b:LIUi;
 
-    .line 5
-    .line 6
-    iput-object p3, p0, LHUi;->b:LHC6;
+    const/4 p1, 0x1
 
-    .line 7
-    .line 8
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LHUi;->a:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LHUi;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    check-cast p1, Landroid/view/View;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    iget-object p1, p0, LHUi;->b:LIUi;
 
     .line 9
     .line 10
-    return v2
+    iget-object p1, p1, LIUi;->g0:LNIh;
 
     .line 11
+    .line 12
+    if-eqz p1, :cond_0
+
+    .line 13
+    .line 14
+    invoke-virtual {p1}, LNIh;->d()Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 18
+    .line 19
+    return-object p1
+
+    .line 20
+    :pswitch_0
+    check-cast p1, Landroid/view/View;
+
+    .line 21
+    .line 22
+    iget-object p1, p0, LHUi;->b:LIUi;
+
+    .line 23
+    .line 24
+    iget-object p1, p1, LIUi;->f0:LNIh;
+
+    .line 25
+    .line 26
+    if-eqz p1, :cond_1
+
+    .line 27
+    .line 28
+    invoke-virtual {p1}, LNIh;->d()Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
     :cond_1
-    check-cast p1, LHUi;
-
-    .line 12
-    .line 13
-    iget-wide v3, p1, LHUi;->a:J
-
-    .line 14
-    .line 15
-    iget-wide v5, p0, LHUi;->a:J
-
-    .line 16
-    .line 17
-    invoke-static {v5, v6, v3, v4}, LHC6;->d(JJ)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, LHUi;->b:LHC6;
-
-    .line 25
-    .line 26
-    iget-object p1, p1, LHUi;->b:LHC6;
-
-    .line 27
-    .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 32
-    if-nez p1, :cond_3
-
     .line 33
+    return-object p1
+
     .line 34
-    return v2
+    nop
 
     .line 35
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    .line 1
-    sget v0, LHC6;->t:I
-
-    .line 2
-    .line 3
-    iget-wide v0, p0, LHUi;->a:J
-
-    .line 4
-    .line 5
-    invoke-static {v0, v1}, Lsv7;->e(J)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 10
-    .line 11
-    iget-object v1, p0, LHUi;->b:LHC6;
-
-    .line 12
-    .line 13
-    if-nez v1, :cond_0
-
-    .line 14
-    .line 15
-    const/4 v1, 0x0
-
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :cond_0
-    iget-wide v1, v1, LHC6;->a:J
-
-    .line 18
-    .line 19
-    invoke-static {v1, v2}, Lsv7;->e(J)I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    :goto_0
-    add-int/2addr v0, v1
-
-    .line 24
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    iget-wide v0, p0, LHUi;->a:J
-
-    .line 2
-    .line 3
-    invoke-static {v0, v1}, LHC6;->m(J)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 8
-    .line 9
-    const-string v2, "Ttl(min="
-
-    .line 10
-    .line 11
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 15
-    .line 16
-    .line 17
-    const-string v0, ", max="
-
-    .line 18
-    .line 19
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 20
-    .line 21
-    .line 22
-    iget-object v0, p0, LHUi;->b:LHC6;
-
-    .line 23
-    .line 24
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 25
-    .line 26
-    .line 27
-    const-string v0, ")"
-
-    .line 28
-    .line 29
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

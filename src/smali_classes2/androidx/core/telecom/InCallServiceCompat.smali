@@ -11,7 +11,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, LZH8;->p()Ljava/lang/Class;
+    invoke-static {}, Lsq5;->l()Ljava/lang/Class;
 
     .line 2
     .line 3
@@ -19,7 +19,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, LsJe;->a(Ljava/lang/Class;)Lc23;
+    invoke-static {v0}, Lc1f;->a(Ljava/lang/Class;)Lm43;
 
     .line 6
     .line 7
@@ -27,7 +27,7 @@
     move-result-object v0
 
     .line 9
-    invoke-virtual {v0}, Lc23;->c()Ljava/lang/String;
+    invoke-virtual {v0}, Lm43;->c()Ljava/lang/String;
 
     .line 10
     .line 11

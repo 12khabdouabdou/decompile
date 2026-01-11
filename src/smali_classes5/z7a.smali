@@ -1,20 +1,14 @@
 .class public final Lz7a;
-.super Ljava/lang/Object;
+.super LE7a;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lan0;
-
-.field public final b:Lnwf;
-
-.field public final c:Lio/reactivex/rxjava3/core/Observable;
-
-.field public final d:Lkotlin/jvm/functions/Function1;
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>(Lan0;Lnwf;Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;)V
+.method public constructor <init>(I)V
     .locals 0
 
     .line 1
@@ -23,21 +17,143 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lz7a;->a:Lan0;
+    iput p1, p0, Lz7a;->b:I
 
     .line 5
     .line 6
-    iput-object p2, p0, Lz7a;->b:Lnwf;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lz7a;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    iput-object p3, p0, Lz7a;->c:Lio/reactivex/rxjava3/core/Observable;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    iput-object p4, p0, Lz7a;->d:Lkotlin/jvm/functions/Function1;
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lz7a;
+
+    .line 12
+    .line 13
+    iget v1, p0, Lz7a;->b:I
+
+    .line 14
+    .line 15
+    iget p1, p1, Lz7a;->b:I
+
+    .line 16
+    .line 17
+    if-eq v1, p1, :cond_2
+
+    .line 18
+    .line 19
+    return v2
+
+    .line 20
+    :cond_2
+    return v0
+.end method
+
+.method public final getType()Ljava/lang/Enum;
+    .locals 1
+
+    .line 1
+    sget-object v0, LD7a;->a:LD7a;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lz7a;->b:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Fixed(value="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Lz7a;->b:I
+
+    .line 9
+    .line 10
+    const-string v2, ")"
 
     .line 11
     .line 12
+    invoke-static {v0, v1, v2}, LJF0;->w(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, LQMk;->g(LBU8;Landroid/os/Parcel;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget p2, p0, Lz7a;->b:I
+
+    .line 5
+    .line 6
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method

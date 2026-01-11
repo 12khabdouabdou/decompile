@@ -1,169 +1,222 @@
 .class public final LNwk;
-.super Lcom/google/android/gms/common/internal/a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public final l()I
-    .locals 1
+# instance fields
+.field public final a:LOW;
+
+.field public final b:Lhh7;
+
+
+# direct methods
+.method public synthetic constructor <init>(LOW;Lhh7;)V
+    .locals 0
 
     .line 1
-    const v0, 0xc65d40
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    return v0
+    iput-object p1, p0, LNwk;->a:LOW;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LNwk;->b:Lhh7;
+
+    .line 7
+    .line 8
+    return-void
 .end method
 
-.method public final n(Landroid/os/IBinder;)Landroid/os/IInterface;
+.method public static bridge synthetic a(LNwk;)Lhh7;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, LNwk;->b:Lhh7;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static bridge synthetic b(LNwk;)LOW;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, LNwk;->a:LOW;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
-    if-nez p1, :cond_0
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    const/4 p1, 0x0
+    if-eqz p1, :cond_0
 
+    .line 3
     .line 4
-    return-object p1
+    instance-of v1, p1, LNwk;
 
     .line 5
-    :cond_0
-    const-string v0, "com.google.android.gms.fido.fido2.internal.regular.IFido2AppService"
-
     .line 6
-    .line 7
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    if-eqz v1, :cond_0
 
+    .line 7
     .line 8
+    check-cast p1, LNwk;
+
     .line 9
     .line 10
-    move-result-object v1
+    iget-object v1, p0, LNwk;->a:LOW;
 
     .line 11
-    instance-of v2, v1, LLyk;
-
     .line 12
+    iget-object v2, p1, LNwk;->a:LOW;
+
     .line 13
-    if-eqz v2, :cond_1
-
     .line 14
-    .line 15
-    check-cast v1, LLyk;
+    invoke-static {v1, v2}, LNpk;->s(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 15
     .line 16
     .line 17
-    return-object v1
+    move-result v1
 
     .line 18
-    :cond_1
-    new-instance v1, LLyk;
+    if-eqz v1, :cond_0
 
     .line 19
     .line 20
-    invoke-direct {v1, p1, v0}, LLyk;-><init>(Landroid/os/IBinder;Ljava/lang/String;)V
+    iget-object v1, p0, LNwk;->b:Lhh7;
+
+    .line 21
+    .line 22
+    iget-object p1, p1, LNwk;->b:Lhh7;
+
+    .line 23
+    .line 24
+    invoke-static {v1, p1}, LNpk;->s(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 25
+    .line 26
+    .line 27
+    move-result p1
+
+    .line 28
+    if-eqz p1, :cond_0
+
+    .line 29
+    .line 30
+    const/4 p1, 0x1
+
+    .line 31
+    return p1
+
+    .line 32
+    :cond_0
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, LNwk;->a:LOW;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LNwk;->b:Lhh7;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x2
+
+    .line 6
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    const/4 v3, 0x0
+
+    .line 9
+    aput-object v0, v2, v3
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    aput-object v1, v2, v0
+
+    .line 13
+    .line 14
+    invoke-static {v2}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, LC5c;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, LC5c;-><init>(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "key"
+
+    .line 7
+    .line 8
+    iget-object v2, p0, LNwk;->a:LOW;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v2, v1}, LC5c;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v1, p0, LNwk;->b:Lhh7;
+
+    .line 14
+    .line 15
+    const-string v2, "feature"
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1, v2}, LC5c;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v0}, LC5c;->toString()Ljava/lang/String;
 
     .line 21
     .line 22
     .line 23
-    return-object v1
-.end method
+    move-result-object v0
 
-.method public final o()[Lsc7;
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    new-array v0, v0, [Lsc7;
-
-    .line 3
-    .line 4
-    sget-object v1, Lejk;->b:Lsc7;
-
-    .line 5
-    .line 6
-    const/4 v2, 0x0
-
-    .line 7
-    aput-object v1, v0, v2
-
-    .line 8
-    .line 9
-    sget-object v1, Lejk;->a:Lsc7;
-
-    .line 10
-    .line 11
-    const/4 v2, 0x1
-
-    .line 12
-    aput-object v1, v0, v2
-
-    .line 13
-    .line 14
+    .line 24
     return-object v0
-.end method
-
-.method public final p()Landroid/os/Bundle;
-    .locals 3
-
-    .line 1
-    new-instance v0, Landroid/os/Bundle;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    const-string v1, "FIDO2_ACTION_START_SERVICE"
-
-    .line 7
-    .line 8
-    const-string v2, "com.google.android.gms.fido.fido2.regular.START"
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1, v2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-object v0
-.end method
-
-.method public final r()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "com.google.android.gms.fido.fido2.internal.regular.IFido2AppService"
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final s()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "com.google.android.gms.fido.fido2.regular.START"
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final v()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
 .end method

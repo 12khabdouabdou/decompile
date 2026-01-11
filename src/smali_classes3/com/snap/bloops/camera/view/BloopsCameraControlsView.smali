@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:LXfi;
+.field public final a:LREi;
 
 .field public final b:I
 
@@ -28,7 +28,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -61,26 +61,26 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 5
-    new-instance p1, LvT0;
+    new-instance p1, LTW0;
 
-    const/16 p2, 0x15
+    const/16 p2, 0x13
 
-    invoke-direct {p1, p2, p0}, LvT0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LTW0;-><init>(ILjava/lang/Object;)V
 
     .line 6
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 7
-    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;->a:LXfi;
+    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;->a:LREi;
 
     .line 8
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const p2, 0x7f0701ac
+    const p2, 0x7f0701ba
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -93,7 +93,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0701ad
+    const p2, 0x7f0701bb
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -104,7 +104,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -182,11 +182,11 @@
 
     .line 22
     :goto_0
-    iget-object v1, p0, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;->a:LXfi;
+    iget-object v1, p0, Lcom/snap/bloops/camera/view/BloopsCameraControlsView;->a:LREi;
 
     .line 23
     .line 24
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 25
     .line 26

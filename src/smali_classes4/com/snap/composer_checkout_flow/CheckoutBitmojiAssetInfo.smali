@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'comicId\':s,\'avatarIds\':a<s>,\'backgroundColor\':s,\'bitmojiImageWidth\':s,\'bitmojiImageHeight\':s,\'bitmojiImageMarginLeft\':s,\'bitmojiImageMarginTop\':s"
     typeReferences = {}

@@ -25,20 +25,20 @@
 
 
 # instance fields
-.field public final Y:LGCh;
+.field public final Y:LL0i;
 
 
 # direct methods
-.method public constructor <init>(LV6i;LGCh;)V
+.method public constructor <init>(Lmvi;LL0i;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;-><init>(LV6i;)V
+    invoke-direct {p0, p1}, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;-><init>(Lmvi;)V
 
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;->Y:LGCh;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;->Y:LL0i;
 
     .line 5
     .line 6
@@ -63,11 +63,11 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:Lmvi;
 
     .line 7
     .line 8
-    invoke-interface {v0, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 9
     .line 10
@@ -81,11 +81,11 @@
     .line 14
     .line 15
     :try_start_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;->Y:LGCh;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;->Y:LL0i;
 
     .line 16
     .line 17
-    invoke-virtual {v0, p1}, LGCh;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, LL0i;->accept(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -129,11 +129,11 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;->Y:LGCh;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;->Y:LL0i;
 
     .line 10
     .line 11
-    invoke-virtual {v1, v0}, LGCh;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, LL0i;->accept(Ljava/lang/Object;)V
 
     .line 12
     .line 13

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LTF0;
+    proxyClass = LJI0;
     schema = "\'getByteArrayConfig\':f|m|(s, t): p<t>,\'getBooleanConfig\':f|m|(s, b): p<b@>,\'getFloatConfig\':f|m|(s, d): p<d@>,\'getIntConfig\':f|m|(s, d): p<d@>"
     typeReferences = {}
 .end annotation

@@ -1,277 +1,288 @@
 .class public final LhKi;
-.super LKd0;
+.super Lcom/snapchat/talkcorev3/TalkCoreDelegate;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/disposables/Disposable;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final X:Lpik;
 
-.field public final b:LEa5;
+.field public final a:Lj64;
 
-.field public final c:LVY3;
+.field public final b:Landroid/os/Handler;
 
-.field public final d:LxX3;
+.field public final c:Lio/reactivex/rxjava3/core/Scheduler;
 
-.field public final e:Ltih;
+.field public final t:LnJe;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LEa5;LVY3;LxX3;Ltih;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/disposables/DisposableContainer;Lj64;Landroid/os/Handler;Lio/reactivex/rxjava3/core/Scheduler;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/snapchat/talkcorev3/TalkCoreDelegate;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LhKi;->a:Landroid/content/Context;
+    iput-object p2, p0, LhKi;->a:Lj64;
 
     .line 5
     .line 6
-    iput-object p2, p0, LhKi;->b:LEa5;
+    iput-object p3, p0, LhKi;->b:Landroid/os/Handler;
 
     .line 7
     .line 8
-    iput-object p3, p0, LhKi;->c:LVY3;
+    iput-object p4, p0, LhKi;->c:Lio/reactivex/rxjava3/core/Scheduler;
 
     .line 9
     .line 10
-    iput-object p4, p0, LhKi;->d:LxX3;
+    sget-object p2, LzKi;->Z:LzKi;
 
     .line 11
     .line 12
-    iput-object p5, p0, LhKi;->e:Ltih;
+    const-string p3, "TalkCoreDelegateImpl"
 
     .line 13
     .line 14
+    invoke-static {p2, p2, p3}, Lir1;->g(LzKi;LzKi;Ljava/lang/String;)Lnp0;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p2
+
+    .line 18
+    new-instance p3, LnJe;
+
+    .line 19
+    .line 20
+    invoke-direct {p3, p2}, LnJe;-><init>(Lnp0;)V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object p3, p0, LhKi;->t:LnJe;
+
+    .line 24
+    .line 25
+    new-instance p2, Lpik;
+
+    .line 26
+    .line 27
+    invoke-direct {p2}, Lpik;-><init>()V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-interface {p1, p2}, Lio/reactivex/rxjava3/disposables/DisposableContainer;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 31
+    .line 32
+    .line 33
+    iput-object p2, p0, LhKi;->X:Lpik;
+
+    .line 34
+    .line 35
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LpYc;LUXc;LLWc;LOXc;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 7
+.method public final d()Z
+    .locals 1
 
     .line 1
-    const/4 v0, 0x2
+    iget-object v0, p0, LhKi;->X:Lpik;
 
     .line 2
-    move-object v3, p2
-
     .line 3
-    check-cast v3, LLLg;
+    iget-object v0, v0, Lpik;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     .line 5
-    move-object v5, p4
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     .line 6
-    check-cast v5, LqLi;
-
     .line 7
     .line 8
-    new-instance p2, LUpi;
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public final dispose()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LhKi;->X:Lpik;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lpik;->dispose()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final isInteractionAllowed(Ljava/lang/String;Lcom/snapchat/talkcorev3/InteractionAllowedCallback;)V
+    .locals 10
+
+    .line 1
+    new-instance v0, LeIh;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x18
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1, p1}, LeIh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
 
     .line 9
     .line 10
-    invoke-direct {p2, v3, p0, p3, v0}, LUpi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 11
     .line 12
     .line 13
-    new-instance p4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
+    iget-object v0, p0, LhKi;->t:LnJe;
 
     .line 14
     .line 15
-    invoke-direct {p4, p2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    invoke-virtual {v0}, LnJe;->k()LA36;
 
     .line 16
     .line 17
     .line 18
-    iget-object p2, v5, LqLi;->a:LaKi;
+    move-result-object v0
 
     .line 19
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
     .line 20
-    instance-of v1, p2, LVJi;
-
     .line 21
-    .line 22
-    if-eqz v1, :cond_0
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 22
     .line 23
     .line 24
-    check-cast p2, LVJi;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
 
     .line 25
     .line 26
-    goto :goto_0
+    iget-object v0, p0, LhKi;->c:Lio/reactivex/rxjava3/core/Scheduler;
 
     .line 27
-    :cond_0
-    const/4 p2, 0x0
-
     .line 28
-    :goto_0
-    if-eqz p2, :cond_3
+    invoke-direct {p1, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 29
     .line 30
-    iget-object v1, v3, LLLg;->n:Libd;
-
     .line 31
+    new-instance v2, Lyhi;
+
     .line 32
-    iget-object v2, p2, LVJi;->i:Lcom/snap/music/core/composer/PickerTrack;
-
     .line 33
+    const-class v5, Lcom/snapchat/talkcorev3/InteractionAllowedCallback;
+
     .line 34
-    if-eqz v2, :cond_1
-
     .line 35
-    .line 36
-    sget-object v4, LZZc;->g:Lgbd;
+    const-string v6, "onSuccess"
 
+    .line 36
     .line 37
+    const/4 v3, 0x1
+
     .line 38
-    invoke-virtual {v1, v4, v2}, Libd;->M(Lgbd;Ljava/lang/Object;)V
+    const-string v7, "onSuccess(Z)V"
 
     .line 39
     .line 40
+    const/4 v8, 0x0
+
     .line 41
-    :cond_1
-    iget-object v2, p2, LVJi;->j:Ljava/lang/String;
+    const/16 v9, 0xa
 
     .line 42
     .line 43
-    if-eqz v2, :cond_2
+    move-object v4, p2
 
     .line 44
-    .line 45
-    sget-object v4, LZZc;->h:Lgbd;
+    invoke-direct/range {v2 .. v9}, Lyhi;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
+    .line 45
     .line 46
     .line 47
-    invoke-virtual {v1, v4, v2}, Libd;->M(Lgbd;Ljava/lang/Object;)V
+    new-instance p2, LMxi;
 
     .line 48
     .line 49
+    const/16 v0, 0xa
+
     .line 50
-    :cond_2
-    iget-object p2, p2, LVJi;->k:Ljava/lang/String;
-
     .line 51
-    .line 52
-    if-eqz p2, :cond_3
+    invoke-direct {p2, v0, v4}, LMxi;-><init>(ILjava/lang/Object;)V
 
+    .line 52
     .line 53
     .line 54
-    sget-object v2, LZZc;->i:Lgbd;
+    invoke-static {p1, p2, v2}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->f(Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 55
     .line 56
-    invoke-virtual {v1, v2, p2}, Libd;->M(Lgbd;Ljava/lang/Object;)V
-
     .line 57
+    move-result-object p1
+
     .line 58
+    iget-object p2, p0, LhKi;->X:Lpik;
+
     .line 59
-    :cond_3
-    new-instance v1, LNLc;
-
     .line 60
-    .line 61
-    const/16 v6, 0x11
+    invoke-virtual {p2, p1}, Lpik;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 61
     .line 62
     .line 63
-    move-object v4, p0
+    return-void
+.end method
 
-    .line 64
-    move-object v2, p1
+.method public final postDelayedInMainThread(Lcom/snapchat/talkcorev3/AsyncTask;J)V
+    .locals 2
 
-    .line 65
-    invoke-direct/range {v1 .. v6}, LNLc;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    .line 1
+    new-instance v0, Lalh;
 
-    .line 66
-    .line 67
-    .line 68
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+    .line 2
+    .line 3
+    const/16 v1, 0x1a
 
-    .line 69
-    .line 70
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+    .line 4
+    .line 5
+    invoke-direct {v0, v1, p1}, Lalh;-><init>(ILjava/lang/Object;)V
 
-    .line 71
-    .line 72
-    .line 73
-    new-instance v1, LVzb;
+    .line 6
+    .line 7
+    .line 8
+    iget-object p1, p0, LhKi;->b:Landroid/os/Handler;
 
-    .line 74
-    .line 75
-    const/16 v6, 0x14
+    .line 9
+    .line 10
+    invoke-virtual {p1, v0, p2, p3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 76
-    .line 77
-    move-object v2, p3
-
-    .line 78
-    move-object v4, v3
-
-    .line 79
-    move-object v3, v5
-
-    .line 80
-    move-object v5, p0
-
-    .line 81
-    invoke-direct/range {v1 .. v6}, LVzb;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    .line 82
-    .line 83
-    .line 84
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
-
-    .line 85
-    .line 86
-    invoke-direct {p2, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Consumer;)V
-
-    .line 87
-    .line 88
-    .line 89
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
-
-    .line 90
-    .line 91
-    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
-
-    .line 92
-    .line 93
-    .line 94
-    new-array p2, v0, [Lio/reactivex/rxjava3/core/CompletableSource;
-
-    .line 95
-    .line 96
-    const/4 p3, 0x0
-
-    .line 97
-    aput-object p4, p2, p3
-
-    .line 98
-    .line 99
-    const/4 p3, 0x1
-
-    .line 100
-    aput-object p1, p2, p3
-
-    .line 101
-    .line 102
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableMergeArrayDelayError;
-
-    .line 103
-    .line 104
-    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableMergeArrayDelayError;-><init>([Lio/reactivex/rxjava3/core/CompletableSource;)V
-
-    .line 105
-    .line 106
-    .line 107
-    return-object p1
+    .line 11
+    .line 12
+    .line 13
+    return-void
 .end method

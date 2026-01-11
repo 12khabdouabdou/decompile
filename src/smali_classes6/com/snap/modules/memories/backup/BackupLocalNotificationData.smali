@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/memories/backup/BackupLocalNotificationData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'title\':s,\'subtitle\':s,\'pageName\':s,\'type\':s,\'secondsFromNow\':d"
     typeReferences = {}

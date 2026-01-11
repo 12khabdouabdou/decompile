@@ -1,191 +1,71 @@
-.class public abstract LE0a;
-.super Ljava/lang/Object;
+.class public final LE0a;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:I
 
 
 # direct methods
-.method public static final a(LC0a;)I
-    .locals 1
+.method public constructor <init>(I)V
+    .locals 0
 
     .line 1
-    sget-object v0, LlL9;->e:LlL9;
+    iput p1, p0, LE0a;->a:I
 
     .line 2
     .line 3
-    iget-object p0, p0, LC0a;->d:LmL9;
+    const/4 p1, 0x1
 
     .line 4
-    .line 5
-    invoke-virtual {p0, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    const/4 p0, 0x3
-
-    .line 12
-    return p0
-
-    .line 13
-    :cond_0
-    sget-object v0, LlL9;->f:LlL9;
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    if-eqz v0, :cond_1
-
-    .line 20
-    .line 21
-    const/4 v0, 0x1
-
-    .line 22
-    goto :goto_0
-
-    .line 23
-    :cond_1
-    sget-object v0, LlL9;->c:LlL9;
-
-    .line 24
-    .line 25
-    invoke-virtual {p0, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v0
-
-    .line 29
-    :goto_0
-    if-eqz v0, :cond_2
-
-    .line 30
-    .line 31
-    const/4 p0, 0x4
-
-    .line 32
-    return p0
-
-    .line 33
-    :cond_2
-    sget-object v0, LlL9;->b:LlL9;
-
-    .line 34
-    .line 35
-    invoke-virtual {p0, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v0
-
-    .line 39
-    if-eqz v0, :cond_3
-
-    .line 40
-    .line 41
-    const/4 p0, 0x2
-
-    .line 42
-    return p0
-
-    .line 43
-    :cond_3
-    sget-object v0, LlL9;->d:LlL9;
-
-    .line 44
-    .line 45
-    invoke-virtual {p0, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 46
-    .line 47
-    .line 48
-    move-result p0
-
-    .line 49
-    if-eqz p0, :cond_4
-
-    .line 50
-    .line 51
-    const/4 p0, 0x5
-
-    .line 52
-    return p0
-
-    .line 53
-    :cond_4
-    new-instance p0, LFzc;
-
-    .line 54
-    .line 55
-    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 56
-    .line 57
-    .line 58
-    throw p0
+    return-void
 .end method
 
-.method public static final b(LC0a;)I
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget p0, p0, LC0a;->a:I
+    check-cast p1, Ljava/lang/Number;
 
     .line 2
     .line 3
-    invoke-static {p0}, Llva;->L(I)I
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     .line 4
     .line 5
     .line 6
-    move-result p0
+    move-result p1
 
     .line 7
-    const/4 v0, 0x1
+    iget v0, p0, LE0a;->a:I
 
     .line 8
-    if-eqz p0, :cond_1
-
     .line 9
-    .line 10
-    if-ne p0, v0, :cond_0
+    mul-int/lit8 v0, v0, 0x2
 
+    .line 10
     .line 11
+    sub-int/2addr p1, v0
+
     .line 12
-    const/4 p0, 0x2
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 13
-    return p0
-
     .line 14
-    :cond_0
-    new-instance p0, LFzc;
-
     .line 15
+    move-result-object p1
+
     .line 16
-    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 17
-    .line 18
-    .line 19
-    throw p0
-
-    .line 20
-    :cond_1
-    return v0
+    return-object p1
 .end method

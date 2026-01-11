@@ -26,22 +26,22 @@
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;LqZ8;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;)V
+.method public constructor <init>(Ljava/lang/String;LZ69;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;)V
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "LqZ8;",
+            "LZ69;",
             "TViewModelType;TComponentContextType;",
-            "LTB3;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
     .end annotation
 
     .line 3
-    invoke-interface {p2}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p2}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -64,12 +64,12 @@
     move-object v7, p6
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;LqZ8;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;LZ69;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;ILex5;)V
     .locals 1
 
     and-int/lit8 p8, p7, 0x10
@@ -109,7 +109,7 @@
 
     .line 2
     :goto_1
-    invoke-direct/range {p1 .. p7}, Lcom/snap/composer/views/ComposerGeneratedRootView;-><init>(Ljava/lang/String;LqZ8;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;)V
+    invoke-direct/range {p1 .. p7}, Lcom/snap/composer/views/ComposerGeneratedRootView;-><init>(Ljava/lang/String;LZ69;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;)V
 
     return-void
 .end method

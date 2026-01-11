@@ -1,10 +1,10 @@
 .class public final Lcom/snap/chat_reactions/EmojiChatReactionMetadata;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'emoji\':s,\'descriptionText\':s?,\'supportsSkinTones\':b@?"
     typeReferences = {}

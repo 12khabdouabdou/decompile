@@ -1,157 +1,99 @@
 .class public final LyW8;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/snap/music/core/composer/IMusicPillActionHandler;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'isSelf\':b,\'userId\':s,\'displayName\':s,\'selfieId\':s?,\'avatarId\':s?"
+    typeReferences = {}
+.end annotation
 
 
 # instance fields
-.field public final a:Lkotlin/jvm/functions/Function1;
+.field private _avatarId:Ljava/lang/String;
 
-.field public final b:Lkotlin/jvm/functions/Function0;
+.field private _displayName:Ljava/lang/String;
 
-.field public final c:Lkotlin/jvm/functions/Function0;
+.field private _isSelf:Z
 
-.field public final t:Lkotlin/jvm/functions/Function0;
+.field private _selfieId:Ljava/lang/String;
+
+.field private _userId:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+.method public constructor <init>(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function0;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-boolean p1, p0, LyW8;->_isSelf:Z
+
     .line 3
+    iput-object p2, p0, LyW8;->_userId:Ljava/lang/String;
+
     .line 4
-    iput-object p1, p0, LyW8;->a:Lkotlin/jvm/functions/Function1;
+    iput-object p3, p0, LyW8;->_displayName:Ljava/lang/String;
+
+    const/4 p1, 0x0
 
     .line 5
+    iput-object p1, p0, LyW8;->_selfieId:Ljava/lang/String;
+
     .line 6
-    iput-object p2, p0, LyW8;->b:Lkotlin/jvm/functions/Function0;
+    iput-object p1, p0, LyW8;->_avatarId:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 8
-    iput-object p3, p0, LyW8;->c:Lkotlin/jvm/functions/Function0;
+    iput-boolean p1, p0, LyW8;->_isSelf:Z
 
     .line 9
+    iput-object p2, p0, LyW8;->_userId:Ljava/lang/String;
+
     .line 10
-    iput-object p4, p0, LyW8;->t:Lkotlin/jvm/functions/Function0;
+    iput-object p3, p0, LyW8;->_displayName:Ljava/lang/String;
 
     .line 11
+    iput-object p4, p0, LyW8;->_selfieId:Ljava/lang/String;
+
     .line 12
+    iput-object p5, p0, LyW8;->_avatarId:Ljava/lang/String;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public pickRecommendation(Lcom/snap/music/core/composer/PickerSelectedTrack;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LyW8;->a:Lkotlin/jvm/functions/Function1;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    :cond_0
-    return-void
-.end method
-
-.method public pickToAddSound()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LyW8;->b:Lkotlin/jvm/functions/Function0;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    :cond_0
-    return-void
-.end method
-
-.method public presentScrubber()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LyW8;->c:Lkotlin/jvm/functions/Function0;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    :cond_0
-    return-void
-.end method
-
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+.method public final a(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, LxW8;->a(Lcom/snap/music/core/composer/IMusicPillActionHandler;Lcom/snap/composer/utils/ComposerMarshaller;)I
+    iput-object p1, p0, LyW8;->_avatarId:Ljava/lang/String;
 
     .line 2
     .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
+    return-void
 .end method
 
-.method public removeSound()V
-    .locals 1
+.method public final b(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LyW8;->t:Lkotlin/jvm/functions/Function0;
+    iput-object p1, p0, LyW8;->_selfieId:Ljava/lang/String;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    :cond_0
     return-void
 .end method

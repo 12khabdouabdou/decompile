@@ -1,100 +1,269 @@
-.class public final Lh59;
-.super LrE9;
+.class public abstract Lh59;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:La6d;
 
 
 # direct methods
-.method public synthetic constructor <init>(La6d;I)V
-    .locals 0
+.method public static allowCollapsingTray(Lcom/snap/music/core/composer/IPickerActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
 
     .line 1
-    iput p2, p0, Lh59;->a:I
-
-    iput-object p1, p0, Lh59;->b:La6d;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lh59;->a:I
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string v0, "Unimplemented method"
 
     .line 4
     .line 5
-    .line 6
-    new-instance v0, LK6d;
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lh59;->b:La6d;
+    throw p0
+.end method
 
-    .line 9
-    .line 10
-    iget-object v1, v1, La6d;->c:LgJe;
+.method public static collapseTray(Lcom/snap/music/core/composer/IPickerActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
 
-    .line 11
-    .line 12
-    const/4 v2, 0x0
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
 
-    .line 13
-    invoke-direct {v0, v2, v1}, LK6d;-><init>(ILgJe;)V
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
 
-    .line 14
-    .line 15
-    .line 16
-    return-object v0
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
 
-    .line 17
-    :pswitch_0
-    new-instance v0, LRlb;
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
 
-    .line 18
-    .line 19
-    iget-object v1, p0, Lh59;->b:La6d;
+.method public static expandTray(Lcom/snap/music/core/composer/IPickerActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
 
-    .line 20
-    .line 21
-    iget-object v1, v1, La6d;->c:LgJe;
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
 
-    .line 22
-    .line 23
-    const/4 v2, 0x0
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
 
-    .line 24
-    invoke-direct {v0, v1, v2}, LRlb;-><init>(LgJe;F)V
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
 
-    .line 25
-    .line 26
-    .line 27
-    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
 
-    .line 28
-    nop
+.method public static isTrayExpanded(Lcom/snap/music/core/composer/IPickerActionHandler;)Z
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
 
-    .line 29
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static onDeselectTrack(Lcom/snap/music/core/composer/IPickerActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static onDismiss(Lcom/snap/music/core/composer/IPickerActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static onDismissAndPresentScrubber(Lcom/snap/music/core/composer/IPickerActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static onLaunchMusicSync(Lcom/snap/music/core/composer/IPickerActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static onSelectTrack(Lcom/snap/music/core/composer/IPickerActionHandler;Lcom/snap/music/core/composer/PickerTrack;)V
+    .locals 0
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string p1, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static onTrackDownloaded(Lcom/snap/music/core/composer/IPickerActionHandler;Lcom/snap/music/core/composer/PickerSelectedTrack;)V
+    .locals 0
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string p1, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static onTrackPreviewed(Lcom/snap/music/core/composer/IPickerActionHandler;Lcom/snap/music/core/composer/PickerTrack;)V
+    .locals 0
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string p1, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static pausePlayback(Lcom/snap/music/core/composer/IPickerActionHandler;Z)V
+    .locals 0
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string p1, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

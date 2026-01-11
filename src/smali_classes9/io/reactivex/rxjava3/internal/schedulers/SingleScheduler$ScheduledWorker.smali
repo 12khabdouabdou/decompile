@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -134,7 +134,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 18
     .line 19

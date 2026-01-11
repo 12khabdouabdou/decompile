@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LGX8;
+    proxyClass = Lj59;
     schema = "\'onTrackIdSelected\':f|m|(r:\'[0]\'),\'onDismiss\':f|m|()"
     typeReferences = {
         Lcom/snap/composer/foundation/Long;

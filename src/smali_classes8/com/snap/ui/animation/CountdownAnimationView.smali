@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lmzf;
+.implements LwSf;
 
 
 # instance fields
-.field public final e0:Lg54;
+.field public final e0:LP94;
 
 
 # direct methods
@@ -20,46 +20,45 @@
     .line 2
     .line 3
     .line 4
-    new-instance p2, Lg54;
+    new-instance p2, LP94;
 
     .line 5
     .line 6
-    new-instance v0, LcC3;
+    new-instance v0, LG44;
 
     .line 7
     .line 8
-    const/16 v1, 0x1b
+    const/4 v1, 0x7
 
     .line 9
-    .line 10
-    invoke-direct {v0, v1, p0}, LcC3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LG44;-><init>(ILjava/lang/Object;)V
 
+    .line 10
     .line 11
     .line 12
-    .line 13
-    invoke-direct {p2, p1, v0}, Lg54;-><init>(Landroid/content/Context;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1, v0}, LP94;-><init>(Landroid/content/Context;Lkotlin/jvm/functions/Function0;)V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    iput-object p2, p0, Lcom/snap/ui/animation/CountdownAnimationView;->e0:Lg54;
+    iput-object p2, p0, Lcom/snap/ui/animation/CountdownAnimationView;->e0:LP94;
 
+    .line 16
     .line 17
-    .line 18
     sget-object p1, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
+    .line 18
     .line 19
-    .line 20
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
+    .line 20
     .line 21
     .line 22
-    .line 23
     invoke-virtual {p0, p2}, Lcom/snap/ui/view/OptimizedImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
+    .line 23
     .line 24
     .line 25
-    .line 26
     return-void
 .end method
 
@@ -77,15 +76,15 @@
 
 
 # virtual methods
-.method public final q(LXZ8;)V
+.method public final q(LG79;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/ui/animation/CountdownAnimationView;->e0:Lg54;
+    iget-object v0, p0, Lcom/snap/ui/animation/CountdownAnimationView;->e0:LP94;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lg54;->a(LXZ8;)V
+    invoke-virtual {v0, p1}, LP94;->a(LG79;)V
 
     .line 4
     .line 5

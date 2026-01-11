@@ -2,549 +2,211 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lc86;
-
 
 # instance fields
-.field public final a:Lg38;
+.field public final a:LHP5;
 
-.field public final b:I
+.field public final b:LQS9;
 
-.field public final c:I
+.field public final c:LYY4;
 
-.field public final d:I
+.field public final d:LYY4;
 
-.field public final e:[I
+.field public final e:LnJe;
 
-.field public final f:[I
+.field public final f:LQS9;
+
+.field public final g:LREi;
+
+.field public final h:LREi;
+
+.field public final i:LREi;
 
 
 # direct methods
-.method public constructor <init>(III[I[I)V
-    .locals 6
+.method public constructor <init>(LHP5;LQS9;LYY4;LYY4;LQS9;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lg38;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lg38;-><init>()V
-
     .line 4
+    iput-object p1, p0, LV5d;->a:LHP5;
+
     .line 5
     .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, LV5d;->b:LQS9;
 
     .line 7
     .line 8
-    .line 9
-    const/4 v1, 0x0
+    iput-object p3, p0, LV5d;->c:LYY4;
 
+    .line 9
     .line 10
-    const/4 v2, 0x1
+    iput-object p4, p0, LV5d;->d:LYY4;
 
     .line 11
-    if-lez p1, :cond_0
-
     .line 12
-    .line 13
-    const/4 v3, 0x1
+    sget-object p1, LtXa;->Z:LtXa;
 
+    .line 13
     .line 14
-    goto :goto_0
+    const-string p2, "OneTapLoginSession"
 
     .line 15
-    :cond_0
-    const/4 v3, 0x0
-
     .line 16
-    :goto_0
-    const-string v4, "Invalid width of surface"
+    invoke-static {p1, p1, p2}, LzHa;->l(LtXa;LtXa;Ljava/lang/String;)Lnp0;
 
     .line 17
     .line 18
-    invoke-static {v4, v3}, Lew8;->z(Ljava/lang/String;Z)V
-
     .line 19
+    move-result-object p1
+
     .line 20
+    new-instance p2, LnJe;
+
     .line 21
-    if-lez p2, :cond_1
-
     .line 22
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
     .line 23
-    const/4 v3, 0x1
-
     .line 24
-    goto :goto_1
-
     .line 25
-    :cond_1
-    const/4 v3, 0x0
+    iput-object p2, p0, LV5d;->e:LnJe;
 
     .line 26
-    :goto_1
-    const-string v4, "Invalid height of surface"
-
     .line 27
-    .line 28
-    invoke-static {v4, v3}, Lew8;->z(Ljava/lang/String;Z)V
+    iput-object p5, p0, LV5d;->f:LQS9;
 
+    .line 28
     .line 29
+    new-instance p1, LT5d;
+
     .line 30
     .line 31
-    if-eqz p3, :cond_3
+    const/4 p2, 0x0
 
     .line 32
-    .line 33
-    invoke-virtual {v0}, Lg38;->T()V
+    invoke-direct {p1, p0, p2}, LT5d;-><init>(LV5d;I)V
 
+    .line 33
     .line 34
     .line 35
+    new-instance p2, LREi;
+
     .line 36
-    iget-object v3, v0, Lg38;->f:LRu7;
-
     .line 37
-    .line 38
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 38
     .line 39
     .line 40
-    .line 41
-    invoke-static {p3}, Landroid/opengl/GLES20;->glIsFramebuffer(I)Z
+    iput-object p2, p0, LV5d;->g:LREi;
 
+    .line 41
     .line 42
+    new-instance p1, LT5d;
+
     .line 43
     .line 44
-    move-result v3
+    const/4 p2, 0x1
 
     .line 45
-    const-string v4, "glIsFramebuffer"
+    invoke-direct {p1, p0, p2}, LT5d;-><init>(LV5d;I)V
 
     .line 46
     .line 47
-    invoke-virtual {v0, v4}, Lg38;->a(Ljava/lang/String;)V
-
     .line 48
+    new-instance p2, LREi;
+
     .line 49
     .line 50
-    invoke-virtual {v0, v4}, Lg38;->e(Ljava/lang/String;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 51
     .line 52
     .line 53
-    if-eqz v3, :cond_2
+    iput-object p2, p0, LV5d;->h:LREi;
 
     .line 54
     .line 55
-    goto :goto_2
+    new-instance p1, LT5d;
 
     .line 56
-    :cond_2
-    const/4 v3, 0x0
-
     .line 57
-    goto :goto_3
+    const/4 p2, 0x2
 
     .line 58
-    :cond_3
-    :goto_2
-    const/4 v3, 0x1
+    invoke-direct {p1, p0, p2}, LT5d;-><init>(LV5d;I)V
 
     .line 59
-    :goto_3
-    const-string v4, "Invalid framebuffer Id"
-
     .line 60
     .line 61
-    invoke-static {v4, v3}, Lew8;->z(Ljava/lang/String;Z)V
+    new-instance p2, LREi;
 
     .line 62
     .line 63
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 64
-    array-length v3, p4
-
     .line 65
-    const/4 v4, 0x4
-
     .line 66
-    if-ne v3, v4, :cond_4
+    iput-object p2, p0, LV5d;->i:LREi;
 
     .line 67
     .line 68
-    const/4 v3, 0x1
-
-    .line 69
-    goto :goto_4
-
-    .line 70
-    :cond_4
-    const/4 v3, 0x0
-
-    .line 71
-    :goto_4
-    const-string v5, "Invalid viewport parameters"
-
-    .line 72
-    .line 73
-    invoke-static {v5, v3}, Lew8;->z(Ljava/lang/String;Z)V
-
-    .line 74
-    .line 75
-    .line 76
-    if-eqz p5, :cond_5
-
-    .line 77
-    .line 78
-    array-length v3, p5
-
-    .line 79
-    if-ne v3, v4, :cond_6
-
-    .line 80
-    .line 81
-    :cond_5
-    const/4 v1, 0x1
-
-    .line 82
-    :cond_6
-    const-string v2, "Invalid scissor parameters"
-
-    .line 83
-    .line 84
-    invoke-static {v2, v1}, Lew8;->z(Ljava/lang/String;Z)V
-
-    .line 85
-    .line 86
-    .line 87
-    iput-object v0, p0, LV5d;->a:Lg38;
-
-    .line 88
-    .line 89
-    iput p1, p0, LV5d;->b:I
-
-    .line 90
-    .line 91
-    iput p2, p0, LV5d;->c:I
-
-    .line 92
-    .line 93
-    iput p3, p0, LV5d;->d:I
-
-    .line 94
-    .line 95
-    invoke-virtual {p4}, [I->clone()Ljava/lang/Object;
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-object p1
-
-    .line 99
-    check-cast p1, [I
-
-    .line 100
-    .line 101
-    iput-object p1, p0, LV5d;->e:[I
-
-    .line 102
-    .line 103
-    if-eqz p5, :cond_7
-
-    .line 104
-    .line 105
-    invoke-virtual {p5}, [I->clone()Ljava/lang/Object;
-
-    .line 106
-    .line 107
-    .line 108
-    move-result-object p1
-
-    .line 109
-    check-cast p1, [I
-
-    .line 110
-    .line 111
-    goto :goto_5
-
-    .line 112
-    :cond_7
-    const/4 p1, 0x0
-
-    .line 113
-    :goto_5
-    iput-object p1, p0, LV5d;->f:[I
-
-    .line 114
-    .line 115
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 2
-
-    .line 1
-    new-instance v0, LJK0;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x7
-
-    .line 4
-    invoke-direct {v0, v1, p0}, LJK0;-><init>(ILjava/lang/Object;)V
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-static {v0}, LnEd;->S(LiR2;)V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public final b()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lvy7;
-
-    .line 2
-    .line 3
-    const/16 v1, 0x1d
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1, p0}, Lvy7;-><init>(ILjava/lang/Object;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-static {v0}, LnEd;->S(LiR2;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
+.method public final a()Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
     .locals 3
 
     .line 1
-    if-ne p0, p1, :cond_0
+    iget-object v0, p0, LV5d;->i:LREi;
 
     .line 2
     .line 3
-    const/4 p1, 0x1
-
-    .line 4
-    return p1
-
-    .line 5
-    :cond_0
-    instance-of v0, p1, LV5d;
-
-    .line 6
-    .line 7
-    const/4 v1, 0x0
-
-    .line 8
-    if-nez v0, :cond_1
-
-    .line 9
-    .line 10
-    return v1
-
-    .line 11
-    :cond_1
-    check-cast p1, LV5d;
-
-    .line 12
-    .line 13
-    iget v0, p1, LV5d;->b:I
-
-    .line 14
-    .line 15
-    iget v2, p0, LV5d;->b:I
-
-    .line 16
-    .line 17
-    if-eq v2, v0, :cond_2
-
-    .line 18
-    .line 19
-    return v1
-
-    .line 20
-    :cond_2
-    iget v0, p0, LV5d;->c:I
-
-    .line 21
-    .line 22
-    iget v2, p1, LV5d;->c:I
-
-    .line 23
-    .line 24
-    if-eq v0, v2, :cond_3
-
-    .line 25
-    .line 26
-    return v1
-
-    .line 27
-    :cond_3
-    iget v0, p0, LV5d;->d:I
-
-    .line 28
-    .line 29
-    iget v2, p1, LV5d;->d:I
-
-    .line 30
-    .line 31
-    if-eq v0, v2, :cond_4
-
-    .line 32
-    .line 33
-    return v1
-
-    .line 34
-    :cond_4
-    iget-object v0, p0, LV5d;->e:[I
-
-    .line 35
-    .line 36
-    iget-object v2, p1, LV5d;->e:[I
-
-    .line 37
-    .line 38
-    invoke-static {v0, v2}, Ljava/util/Arrays;->equals([I[I)Z
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v0
-
-    .line 42
-    if-nez v0, :cond_5
-
-    .line 43
-    .line 44
-    return v1
-
-    .line 45
-    :cond_5
-    iget-object v0, p0, LV5d;->f:[I
-
-    .line 46
-    .line 47
-    iget-object p1, p1, LV5d;->f:[I
-
-    .line 48
-    .line 49
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([I[I)Z
-
-    .line 50
-    .line 51
-    .line 52
-    move-result p1
-
-    .line 53
-    return p1
-.end method
-
-.method public final getHeight()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LV5d;->c:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final getWidth()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LV5d;->b:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, LV5d;->b:I
-
-    .line 2
-    .line 3
-    mul-int/lit8 v0, v0, 0x1f
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
-    iget v1, p0, LV5d;->c:I
-
     .line 6
+    move-result-object v0
+
     .line 7
-    add-int/2addr v0, v1
+    check-cast v0, Lio/reactivex/rxjava3/core/Single;
 
     .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 9
-    .line 10
-    iget v1, p0, LV5d;->d:I
+    new-instance v1, LU5d;
 
+    .line 10
     .line 11
+    const/4 v2, 0x1
+
     .line 12
-    add-int/2addr v0, v1
+    invoke-direct {v1, p0, v2}, LU5d;-><init>(LV5d;I)V
 
     .line 13
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 14
     .line 15
-    iget-object v1, p0, LV5d;->e:[I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
     .line 17
-    invoke-static {v1}, Ljava/util/Arrays;->hashCode([I)I
-
     .line 18
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
     .line 19
     .line 20
-    move-result v1
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 21
-    add-int/2addr v1, v0
-
     .line 22
-    mul-int/lit8 v1, v1, 0x1f
-
     .line 23
-    .line 24
-    iget-object v0, p0, LV5d;->f:[I
-
-    .line 25
-    .line 26
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([I)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v0
-
-    .line 30
-    add-int/2addr v0, v1
-
-    .line 31
-    return v0
+    return-object v2
 .end method

@@ -1,196 +1,339 @@
 .class public final Lfde;
-.super LcIj;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public X:Lcom/snap/component/cells/SnapViewMoreCellView;
+.field public final synthetic a:I
 
-.field public Y:Landroid/graphics/drawable/Drawable;
+.field public final synthetic b:Lgde;
 
-.field public Z:F
+.field public final synthetic c:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>(Lgde;Ljava/util/List;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LcIj;-><init>()V
+    iput p3, p0, Lfde;->a:I
 
-    .line 2
-    .line 3
-    .line 4
+    iput-object p1, p0, Lfde;->b:Lgde;
+
+    iput-object p2, p0, Lfde;->c:Ljava/util/List;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final t(LKu;LKu;)V
-    .locals 2
+.method public final call()Ljava/lang/Object;
+    .locals 15
 
     .line 1
-    check-cast p1, Lgde;
+    iget v0, p0, Lfde;->a:I
 
     .line 2
     .line 3
-    check-cast p2, Lgde;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    iget-object p2, p0, Lfde;->X:Lcom/snap/component/cells/SnapViewMoreCellView;
-
     .line 6
-    .line 7
-    const/4 v0, 0x0
+    iget-object v0, p0, Lfde;->c:Ljava/util/List;
 
+    .line 7
     .line 8
-    if-eqz p2, :cond_1
+    iget-object v1, p0, Lfde;->b:Lgde;
 
     .line 9
     .line 10
-    iget-object v1, p1, Lgde;->Y:Landroid/view/View$OnClickListener;
+    iget-object v2, v1, Ldde;->j0:LYZf;
 
     .line 11
     .line 12
-    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    iget-object v3, v2, LYZf;->n0:Ljava/lang/String;
 
     .line 13
     .line 14
-    .line 15
-    iget p1, p1, Lgde;->X:I
+    if-nez v3, :cond_0
 
+    .line 15
     .line 16
+    goto :goto_1
+
     .line 17
-    invoke-virtual {p2, p1}, Lcom/snap/component/cells/SnapViewMoreCellView;->N(I)V
+    :cond_0
+    invoke-virtual {v2}, LYZf;->r0()Lmkc;
 
     .line 18
     .line 19
     .line 20
-    iget-object p1, p0, Lfde;->Y:Landroid/graphics/drawable/Drawable;
+    move-result-object v2
 
     .line 21
+    if-eqz v2, :cond_1
+
     .line 22
-    if-eqz p1, :cond_0
-
     .line 23
-    .line 24
-    invoke-virtual {p2, p1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v2}, Lmkc;->e()Ljava/lang/String;
 
+    .line 24
     .line 25
     .line 26
+    move-result-object v2
+
     .line 27
-    iget p1, p0, Lfde;->Z:F
+    goto :goto_0
 
     .line 28
+    :cond_1
+    const/4 v2, 0x0
+
     .line 29
-    invoke-virtual {p2, p1}, Landroid/view/View;->setElevation(F)V
+    :goto_0
+    invoke-static {v2, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
     .line 32
-    return-void
+    move-result v2
 
     .line 33
-    :cond_0
-    const-string p1, "backgroundDrawable"
+    if-nez v2, :cond_2
 
     .line 34
     .line 35
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 36
     .line 37
     .line 38
-    throw v0
+    invoke-static {v3, v0, v1}, LV0j;->v(Ljava/lang/String;Ljava/util/List;Ldde;)Ljava/util/ArrayList;
 
     .line 39
-    :cond_1
-    const-string p1, "cellView"
-
     .line 40
     .line 41
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    move-result-object v2
 
     .line 42
+    invoke-static {v0}, LPSk;->i(Ljava/util/List;)V
+
     .line 43
     .line 44
-    throw v0
-.end method
+    .line 45
+    move-object v0, v2
 
-.method public final u(Landroid/view/View;)V
-    .locals 2
+    .line 46
+    :cond_2
+    :goto_1
+    invoke-virtual {v1, v0}, Ldde;->K(Ljava/util/List;)V
 
-    .line 1
-    check-cast p1, Lcom/snap/component/cells/SnapViewMoreCellView;
+    .line 47
+    .line 48
+    .line 49
+    sget-object v0, Lewj;->a:Lewj;
 
-    .line 2
-    .line 3
-    iput-object p1, p0, Lfde;->X:Lcom/snap/component/cells/SnapViewMoreCellView;
+    .line 50
+    .line 51
+    return-object v0
 
-    .line 4
-    .line 5
-    sget v0, LGbe;->D0:I
+    .line 52
+    :pswitch_0
+    iget-object v0, p0, Lfde;->c:Ljava/util/List;
 
-    .line 6
-    .line 7
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    .line 53
+    .line 54
+    check-cast v0, Ljava/lang/Iterable;
 
-    .line 8
-    .line 9
-    .line 10
+    .line 55
+    .line 56
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 57
+    .line 58
+    const/16 v2, 0xa
+
+    .line 59
+    .line 60
+    invoke-static {v0, v2}, Lnh3;->d3(Ljava/lang/Iterable;I)I
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v2
+
+    .line 64
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 68
+    .line 69
+    .line 70
     move-result-object v0
 
-    .line 11
-    sget-object v1, LFbe;->t:LFbe;
+    .line 71
+    :goto_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 12
-    .line 13
-    invoke-static {v0, v1}, Lsvk;->b(Landroid/content/Context;LFbe;)Landroid/graphics/drawable/Drawable;
+    .line 72
+    .line 73
+    .line 74
+    move-result v2
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
+    .line 75
+    iget-object v3, p0, Lfde;->b:Lgde;
 
-    .line 17
-    if-nez v0, :cond_0
+    .line 76
+    .line 77
+    if-eqz v2, :cond_4
 
-    .line 18
-    .line 19
-    sget-object v0, LjL6;->a:LjL6;
+    .line 78
+    .line 79
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 20
-    .line 21
-    :cond_0
-    iput-object v0, p0, Lfde;->Y:Landroid/graphics/drawable/Drawable;
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v2
 
-    .line 22
-    .line 23
-    invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    .line 83
+    move-object v5, v2
 
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p1
+    .line 84
+    check-cast v5, Ljde;
 
-    .line 27
-    const v0, 0x7f071073
+    .line 85
+    .line 86
+    new-instance v4, Ljde;
 
-    .line 28
-    .line 29
-    .line 30
-    invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
+    .line 87
+    .line 88
+    iget-object v2, v3, Ldde;->j0:LYZf;
 
-    .line 31
-    .line 32
-    .line 33
-    move-result p1
+    .line 89
+    .line 90
+    invoke-virtual {v2}, LYZf;->N()I
 
-    .line 34
-    iput p1, p0, Lfde;->Z:F
+    .line 91
+    .line 92
+    .line 93
+    move-result v2
 
-    .line 35
-    .line 36
-    return-void
+    .line 94
+    const/4 v3, 0x1
+
+    .line 95
+    if-ne v2, v3, :cond_3
+
+    .line 96
+    .line 97
+    const/4 v3, 0x4
+
+    .line 98
+    const/4 v9, 0x4
+
+    .line 99
+    goto :goto_3
+
+    .line 100
+    :cond_3
+    const/4 v9, 0x1
+
+    .line 101
+    :goto_3
+    const/4 v12, 0x0
+
+    .line 102
+    const v14, 0x1ffde
+
+    .line 103
+    .line 104
+    .line 105
+    const/4 v6, 0x0
+
+    .line 106
+    const/4 v7, 0x0
+
+    .line 107
+    const/4 v8, 0x0
+
+    .line 108
+    const/4 v10, 0x0
+
+    .line 109
+    const/4 v11, 0x0
+
+    .line 110
+    const/4 v13, 0x0
+
+    .line 111
+    invoke-direct/range {v4 .. v14}, Ljde;-><init>(Ljde;Ljava/util/concurrent/ConcurrentSkipListMap;LOWi;Ljava/util/List;ILkYi;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;I)V
+
+    .line 112
+    .line 113
+    .line 114
+    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 115
+    .line 116
+    .line 117
+    goto :goto_2
+
+    .line 118
+    :cond_4
+    invoke-virtual {v3, v1}, Ldde;->N(Ljava/util/List;)V
+
+    .line 119
+    .line 120
+    .line 121
+    sget-object v0, Lc5e;->a:Lc5e;
+
+    .line 122
+    .line 123
+    iget-object v1, v3, Lgde;->S0:Ly3i;
+
+    .line 124
+    .line 125
+    invoke-virtual {v1, v0}, Ly3i;->b(Ljava/lang/Object;)V
+
+    .line 126
+    .line 127
+    .line 128
+    const/4 v0, 0x0
+
+    .line 129
+    iput-object v0, v3, Ldde;->K0:Ljava/lang/String;
+
+    .line 130
+    .line 131
+    iget-object v0, v3, Ldde;->j0:LYZf;
+
+    .line 132
+    .line 133
+    invoke-virtual {v0}, LYZf;->b()V
+
+    .line 134
+    .line 135
+    .line 136
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 137
+    .line 138
+    return-object v0
+
+    .line 139
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

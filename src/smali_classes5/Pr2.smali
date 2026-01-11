@@ -1,14 +1,16 @@
 .class public final LPr2;
-.super LSr2;
+.super LRr2;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LdGe;
+.field public final a:LaX9;
+
+.field public final b:LY79;
 
 
 # direct methods
-.method public constructor <init>(LdGe;)V
+.method public constructor <init>(LaX9;)V
     .locals 0
 
     .line 1
@@ -17,15 +19,34 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LPr2;->a:LdGe;
+    iput-object p1, p0, LPr2;->a:LaX9;
 
     .line 5
     .line 6
+    iget-object p1, p1, LaX9;->a:LY79;
+
+    .line 7
+    .line 8
+    iput-object p1, p0, LPr2;->b:LY79;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
+.method public final a()LY79;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LPr2;->b:LY79;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
@@ -60,15 +81,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, LPr2;->a:LdGe;
+    iget-object v1, p0, LPr2;->a:LaX9;
 
     .line 14
     .line 15
-    iget-object p1, p1, LPr2;->a:LdGe;
+    iget-object p1, p1, LPr2;->a:LaX9;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -91,11 +112,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, LPr2;->a:LdGe;
+    iget-object v0, p0, LPr2;->a:LaX9;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LdGe;->hashCode()I
+    invoke-virtual {v0}, LaX9;->hashCode()I
 
     .line 4
     .line 5
@@ -114,7 +135,7 @@
 
     .line 2
     .line 3
-    const-string v1, "PositionInWindowChanged(position="
+    const-string v1, "Lens(lensMetadata="
 
     .line 4
     .line 5
@@ -123,7 +144,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LPr2;->a:LdGe;
+    iget-object v1, p0, LPr2;->a:LaX9;
 
     .line 9
     .line 10

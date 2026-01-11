@@ -7,11 +7,11 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView<",
-        "Lm4j;",
-        "Ll4j;",
+        "Litj;",
+        "Lhtj;",
         "Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;",
-        "LzAj;",
-        "LuAj;",
+        "LSZj;",
+        "LMZj;",
         ">;"
     }
 .end annotation
@@ -20,15 +20,15 @@
 # instance fields
 .field public j:Z
 
-.field public final k:Lm4j;
+.field public final k:Litj;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LqZ8;)V
+.method public constructor <init>(Landroid/content/Context;LZ69;)V
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;-><init>(Landroid/content/Context;LqZ8;)V
+    invoke-direct {p0, p1, p2}, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;-><init>(Landroid/content/Context;LZ69;)V
 
     .line 2
     .line 3
@@ -40,29 +40,29 @@
 
     .line 6
     .line 7
-    new-instance p2, Lm4j;
+    new-instance p2, Litj;
 
     .line 8
     .line 9
-    new-instance v0, LlWd;
+    new-instance v0, LKde;
 
     .line 10
     .line 11
-    sget-object v1, LsL6;->a:LsL6;
+    sget-object v1, LgP6;->a:LgP6;
 
     .line 12
     .line 13
-    invoke-direct {v0, v1}, LlWd;-><init>(Ljava/util/List;)V
+    invoke-direct {v0, v1}, LKde;-><init>(Ljava/util/List;)V
 
     .line 14
     .line 15
     .line 16
-    invoke-direct {p2, v0, p1}, Lm4j;-><init>(LlWd;Z)V
+    invoke-direct {p2, v0, p1}, Litj;-><init>(LKde;Z)V
 
     .line 17
     .line 18
     .line 19
-    iput-object p2, p0, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->k:Lm4j;
+    iput-object p2, p0, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->k:Litj;
 
     .line 20
     .line 21
@@ -91,15 +91,15 @@
     return-object v0
 .end method
 
-.method public static p(Lm4j;)LzAj;
+.method public static p(Litj;)LSZj;
     .locals 3
 
     .line 1
-    iget-object p0, p0, Lm4j;->a:LlWd;
+    iget-object p0, p0, Litj;->a:LKde;
 
     .line 2
     .line 3
-    iget-object p0, p0, LlWd;->a:Ljava/util/List;
+    iget-object p0, p0, LKde;->a:Ljava/util/List;
 
     .line 4
     .line 5
@@ -146,11 +146,11 @@
     move-result-object v1
 
     .line 26
-    check-cast v1, LWVd;
+    check-cast v1, Lude;
 
     .line 27
     .line 28
-    iget-object v1, v1, LWVd;->a:Ljava/lang/String;
+    iget-object v1, v1, Lude;->a:Ljava/lang/String;
 
     .line 29
     .line 30
@@ -591,11 +591,11 @@
     .line 229
     .line 230
     :cond_c
-    new-instance p0, LzAj;
+    new-instance p0, LSZj;
 
     .line 231
     .line 232
-    invoke-direct {p0, v0}, LzAj;-><init>(Ljava/util/ArrayList;)V
+    invoke-direct {p0, v0}, LSZj;-><init>(Ljava/util/ArrayList;)V
 
     .line 233
     .line 234
@@ -628,7 +628,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->k:Lm4j;
+    iget-object v0, p0, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->k:Litj;
 
     .line 2
     .line 3
@@ -639,11 +639,11 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lm4j;
+    check-cast p1, Litj;
 
     .line 2
     .line 3
-    check-cast p2, Lm4j;
+    check-cast p2, Litj;
 
     .line 4
     .line 5
@@ -652,20 +652,20 @@
     .line 6
     .line 7
     .line 8
-    new-instance p2, LvXi;
+    new-instance p2, LBSi;
 
     .line 9
     .line 10
-    const/16 v0, 0xd
+    const/16 v0, 0x17
 
     .line 11
     .line 12
-    invoke-direct {p2, p1, v0, p0}, LvXi;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p2, p1, v0, p0}, LBSi;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 13
     .line 14
     .line 15
-    invoke-static {p2}, LlSa;->d(Lkotlin/jvm/functions/Function0;)V
+    invoke-static {p2}, LV4b;->c(Lkotlin/jvm/functions/Function0;)V
 
     .line 16
     .line 17
@@ -677,24 +677,24 @@
     .locals 3
 
     .line 1
-    new-instance v0, LuAj;
+    new-instance v0, LMZj;
 
     .line 2
     .line 3
-    new-instance v1, Ltvi;
+    new-instance v1, Lgbg;
 
     .line 4
     .line 5
-    const/16 v2, 0x15
+    const/16 v2, 0x13
 
     .line 6
     .line 7
-    invoke-direct {v1, v2, p0}, Ltvi;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lgbg;-><init>(ILjava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-direct {v0, v1}, LuAj;-><init>(Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {v0, v1}, LMZj;-><init>(Lkotlin/jvm/functions/Function2;)V
 
     .line 11
     .line 12
@@ -702,30 +702,30 @@
     return-object v0
 .end method
 
-.method public final m(LqZ8;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
+.method public final m(LZ69;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
     .locals 6
 
     .line 1
-    check-cast p2, LzAj;
+    check-cast p2, LSZj;
 
     .line 2
     .line 3
     move-object v3, p3
 
     .line 4
-    check-cast v3, LuAj;
+    check-cast v3, LMZj;
 
     .line 5
     .line 6
-    sget-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LyAj;
+    sget-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LRZj;
 
     .line 7
     .line 8
-    iget-object p2, p0, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->k:Lm4j;
+    iget-object p2, p0, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->k:Litj;
 
     .line 9
     .line 10
-    invoke-static {p2}, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->p(Lm4j;)LzAj;
+    invoke-static {p2}, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->p(Litj;)LSZj;
 
     .line 11
     .line 12
@@ -743,7 +743,7 @@
     move-object v1, p1
 
     .line 18
-    invoke-static/range {v0 .. v5}, LyAj;->b(LyAj;LqZ8;LzAj;LuAj;LTB3;I)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
+    invoke-static/range {v0 .. v5}, LRZj;->b(LRZj;LZ69;LSZj;LMZj;LvF3;I)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
 
     .line 19
     .line 20
@@ -775,7 +775,7 @@
     move-result-object v0
 
     .line 34
-    invoke-static {p3, v0}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {p3, v0}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 35
     .line 36
@@ -810,11 +810,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lm4j;
+    check-cast p1, Litj;
 
     .line 2
     .line 3
-    invoke-static {p1}, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->p(Lm4j;)LzAj;
+    invoke-static {p1}, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;->p(Litj;)LSZj;
 
     .line 4
     .line 5

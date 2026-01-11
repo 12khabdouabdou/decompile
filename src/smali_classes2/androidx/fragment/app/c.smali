@@ -71,11 +71,11 @@
 
 
 # virtual methods
-.method public f1()Landroid/app/Dialog;
-    .locals 3
+.method public d1(Landroid/os/Bundle;)Landroid/app/Dialog;
+    .locals 2
 
     .line 1
-    new-instance v0, Landroid/app/Dialog;
+    new-instance p1, Landroid/app/Dialog;
 
     .line 2
     .line 3
@@ -84,19 +84,58 @@
     .line 4
     .line 5
     .line 6
-    move-result-object v1
+    move-result-object v0
 
     .line 7
-    iget v2, p0, Landroidx/fragment/app/c;->b:I
+    iget v1, p0, Landroidx/fragment/app/c;->b:I
 
     .line 8
     .line 9
-    invoke-direct {v0, v1, v2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p1, v0, v1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
     .line 10
     .line 11
     .line 12
-    return-object v0
+    return-object p1
+.end method
+
+.method public e1(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-boolean v0, p0, Landroidx/fragment/app/c;->e0:Z
+
+    .line 3
+    .line 4
+    const/4 v1, 0x1
+
+    .line 5
+    iput-boolean v1, p0, Landroidx/fragment/app/c;->f0:Z
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Landroidx/fragment/app/FragmentManager;->a()Landroidx/fragment/app/a;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-virtual {p1, v0, p0, p2, v1}, Landroidx/fragment/app/a;->e(ILandroidx/fragment/app/g;Ljava/lang/String;I)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {p1, v0}, Landroidx/fragment/app/a;->d(Z)I
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
 .end method
 
 .method public final onActivityCreated(Landroid/os/Bundle;)V
@@ -429,7 +468,7 @@
     return-void
 .end method
 
-.method public final onDestroyView()V
+.method public onDestroyView()V
     .locals 2
 
     .line 1
@@ -613,19 +652,19 @@
     move-result-object v0
 
     .line 50
-    new-instance v1, LSE0;
+    new-instance v1, LNH0;
 
     .line 51
     .line 52
     const/4 v2, 0x3
 
     .line 53
-    invoke-direct {v1, v2, p0}, LSE0;-><init>(ILandroidx/fragment/app/g;)V
+    invoke-direct {v1, v2, p0}, LNH0;-><init>(ILandroidx/fragment/app/g;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {v0, v1}, Landroidx/fragment/app/a;->b(LSE0;)V
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/a;->b(LNH0;)V
 
     .line 57
     .line 58
@@ -664,7 +703,7 @@
 
     .line 10
     :cond_0
-    invoke-virtual {p0}, Landroidx/fragment/app/c;->f1()Landroid/app/Dialog;
+    invoke-virtual {p0, p1}, Landroidx/fragment/app/c;->d1(Landroid/os/Bundle;)Landroid/app/Dialog;
 
     .line 11
     .line 12

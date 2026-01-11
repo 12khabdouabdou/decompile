@@ -1,91 +1,29 @@
 .class public final Lo5e;
-.super Lcom/snap/composer/utils/b;
+.super LI5e;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'friendFirstName\':s,\'friendSnapScore\':d,\'shouldExplainSnapscore\':b@?,\'friendUserIdForLastViewedSnapScore\':s?"
-    typeReferences = {}
-.end annotation
-
-
-# instance fields
-.field private _friendFirstName:Ljava/lang/String;
-
-.field private _friendSnapScore:D
-
-.field private _friendUserIdForLastViewedSnapScore:Ljava/lang/String;
-
-.field private _shouldExplainSnapscore:Ljava/lang/Boolean;
+# static fields
+.field public static final a:Lo5e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;D)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lo5e;
 
     .line 2
-    iput-object p1, p0, Lo5e;->_friendFirstName:Ljava/lang/String;
-
     .line 3
-    iput-wide p2, p0, Lo5e;->_friendSnapScore:D
-
-    const/4 p1, 0x0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lo5e;->_shouldExplainSnapscore:Ljava/lang/Boolean;
-
     .line 5
-    iput-object p1, p0, Lo5e;->_friendUserIdForLastViewedSnapScore:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;DLjava/lang/Boolean;Ljava/lang/String;)V
-    .locals 0
-
     .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sput-object v0, Lo5e;->a:Lo5e;
 
     .line 7
-    iput-object p1, p0, Lo5e;->_friendFirstName:Ljava/lang/String;
-
     .line 8
-    iput-wide p2, p0, Lo5e;->_friendSnapScore:D
-
-    .line 9
-    iput-object p4, p0, Lo5e;->_shouldExplainSnapscore:Ljava/lang/Boolean;
-
-    .line 10
-    iput-object p5, p0, Lo5e;->_friendUserIdForLastViewedSnapScore:Ljava/lang/String;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lo5e;->_friendUserIdForLastViewedSnapScore:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final b(Ljava/lang/Boolean;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lo5e;->_shouldExplainSnapscore:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
     return-void
 .end method

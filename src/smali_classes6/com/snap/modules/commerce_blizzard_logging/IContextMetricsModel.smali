@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/commerce_blizzard_logging/IContextMetricsModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'session_id\':s?,\'snap_id\':s?,\'snap_type\':s?,\'media_type\':s?"
     typeReferences = {}

@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRj4;
+    proxyClass = Lpo4;
     schema = "\'getColor\':f|m|(): p<r:\'[0]\'>,\'setColor\':f|m|(d@?): p<v>"
     typeReferences = {
-        LQj4;
+        Loo4;
     }
 .end annotation
 
@@ -23,7 +23,7 @@
         value = {
             "()",
             "Lcom/snap/composer/promise/Promise<",
-            "LQj4;",
+            "Loo4;",
             ">;"
         }
     .end annotation
@@ -39,7 +39,7 @@
             "Ljava/lang/Double;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

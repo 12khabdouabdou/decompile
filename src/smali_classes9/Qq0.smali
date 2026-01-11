@@ -1,8 +1,25 @@
-.class public interface abstract LQq0;
+.class public abstract synthetic LQq0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a(Z)V
+# direct methods
+.method public static a(Lorg/webrtc/audio/AudioDeviceModule;Z)Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
+.end method
+
+.method public static b(Lorg/webrtc/audio/AudioDeviceModule;F)Z
+    .locals 0
+
+    .line 1
+    const/4 p0, 0x0
+
+    .line 2
+    return p0
 .end method

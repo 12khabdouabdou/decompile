@@ -4,547 +4,335 @@
 
 
 # instance fields
-.field public final a:J
+.field public final a:Lcf9;
 
-.field public final b:Ljava/lang/String;
+.field public final b:LO92;
 
-.field public final c:Z
+.field public final c:LxU4;
 
-.field public final d:Ljava/lang/String;
+.field public final d:LR93;
 
-.field public final e:Ljava/util/ArrayList;
+.field public final e:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final f:Ljava/util/EnumMap;
+.field public final f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final g:Ljava/util/EnumMap;
+.field public final g:LnJe;
+
+.field public final h:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+.field public final i:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public final j:LREi;
 
 
 # direct methods
-.method public constructor <init>(JLjava/lang/String;ZLjava/lang/String;Ljava/util/EnumMap;)V
-    .locals 3
+.method public constructor <init>(Lcf9;LO92;LxU4;LR93;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
     .line 4
+    iput-object p1, p0, LXk7;->a:Lcf9;
+
     .line 5
     .line 6
-    new-instance v1, Ljava/util/EnumMap;
+    iput-object p2, p0, LXk7;->b:LO92;
 
     .line 7
     .line 8
-    const-class v2, LABe;
+    iput-object p3, p0, LXk7;->c:LxU4;
 
     .line 9
     .line 10
-    invoke-direct {v1, v2}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
+    iput-object p4, p0, LXk7;->d:LR93;
 
     .line 11
     .line 12
-    .line 13
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object p1, LgP6;->a:LgP6;
 
+    .line 13
     .line 14
+    new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 15
     .line 16
-    iput-wide p1, p0, LXk7;->a:J
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
 
     .line 17
     .line 18
-    iput-object p3, p0, LXk7;->b:Ljava/lang/String;
-
     .line 19
+    iput-object p2, p0, LXk7;->e:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 20
-    iput-boolean p4, p0, LXk7;->c:Z
-
     .line 21
+    sget-object p1, Lmk7;->b:Lmk7;
+
     .line 22
-    iput-object p5, p0, LXk7;->d:Ljava/lang/String;
-
     .line 23
+    new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 24
-    iput-object v0, p0, LXk7;->e:Ljava/util/ArrayList;
-
     .line 25
-    .line 26
-    iput-object p6, p0, LXk7;->f:Ljava/util/EnumMap;
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
 
+    .line 26
     .line 27
     .line 28
-    iput-object v1, p0, LXk7;->g:Ljava/util/EnumMap;
+    iput-object p2, p0, LXk7;->f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 29
     .line 30
+    sget-object p1, LTJb;->Z:LTJb;
+
+    .line 31
+    .line 32
+    const-string p2, "FeaturedStoryProviderManagerImpl"
+
+    .line 33
+    .line 34
+    invoke-static {p1, p1, p2}, LBv7;->d(LTJb;LTJb;Ljava/lang/String;)Lnp0;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    new-instance p2, LnJe;
+
+    .line 39
+    .line 40
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 41
+    .line 42
+    .line 43
+    iput-object p2, p0, LXk7;->g:LnJe;
+
+    .line 44
+    .line 45
+    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 46
+    .line 47
+    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+
+    .line 48
+    .line 49
+    .line 50
+    iput-object p1, p0, LXk7;->h:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 51
+    .line 52
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 53
+    .line 54
+    const/4 p2, 0x0
+
+    .line 55
+    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 56
+    .line 57
+    .line 58
+    iput-object p1, p0, LXk7;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 59
+    .line 60
+    new-instance p1, LTj7;
+
+    .line 61
+    .line 62
+    const/4 p2, 0x1
+
+    .line 63
+    invoke-direct {p1, p2, p0}, LTj7;-><init>(ILjava/lang/Object;)V
+
+    .line 64
+    .line 65
+    .line 66
+    new-instance p2, LREi;
+
+    .line 67
+    .line 68
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 69
+    .line 70
+    .line 71
+    iput-object p2, p0, LXk7;->j:LREi;
+
+    .line 72
+    .line 73
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 5
+.method public final a()V
+    .locals 3
 
     .line 1
-    if-ne p0, p1, :cond_0
+    iget-object v0, p0, LXk7;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 2
     .line 3
-    goto :goto_1
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
     :cond_0
-    instance-of v0, p1, LXk7;
+    new-instance v0, Laj6;
 
-    .line 5
-    .line 6
-    if-nez v0, :cond_1
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    check-cast p1, LXk7;
-
-    .line 10
     .line 11
-    iget-wide v0, p1, LXk7;->a:J
-
     .line 12
+    const/16 v1, 0x15
+
     .line 13
-    iget-wide v2, p0, LXk7;->a:J
-
     .line 14
-    .line 15
-    cmp-long v4, v2, v0
+    invoke-direct {v0, v1, p0}, Laj6;-><init>(ILjava/lang/Object;)V
 
+    .line 15
     .line 16
     .line 17
-    if-eqz v4, :cond_2
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;
 
     .line 18
     .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_2
-    iget-object v0, p0, LXk7;->b:Ljava/lang/String;
-
-    .line 21
-    .line 22
-    iget-object v1, p1, LXk7;->b:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 25
-    .line 26
-    .line 27
-    move-result v0
-
-    .line 28
-    if-nez v0, :cond_3
-
-    .line 29
-    .line 30
-    goto :goto_0
-
-    .line 31
-    :cond_3
-    iget-boolean v0, p0, LXk7;->c:Z
-
-    .line 32
-    .line 33
-    iget-boolean v1, p1, LXk7;->c:Z
-
-    .line 34
-    .line 35
-    if-eq v0, v1, :cond_4
-
-    .line 36
-    .line 37
-    goto :goto_0
-
-    .line 38
-    :cond_4
-    iget-object v0, p0, LXk7;->d:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    iget-object v1, p1, LXk7;->d:Ljava/lang/String;
-
-    .line 41
-    .line 42
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 43
-    .line 44
-    .line 45
-    move-result v0
-
-    .line 46
-    if-nez v0, :cond_5
-
-    .line 47
-    .line 48
-    goto :goto_0
-
-    .line 49
-    :cond_5
-    iget-object v0, p0, LXk7;->e:Ljava/util/ArrayList;
-
-    .line 50
-    .line 51
-    iget-object v1, p1, LXk7;->e:Ljava/util/ArrayList;
-
-    .line 52
-    .line 53
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 54
-    .line 55
-    .line 56
-    move-result v0
-
-    .line 57
-    if-nez v0, :cond_6
-
-    .line 58
-    .line 59
-    goto :goto_0
-
-    .line 60
-    :cond_6
-    iget-object v0, p0, LXk7;->f:Ljava/util/EnumMap;
-
-    .line 61
-    .line 62
-    iget-object v1, p1, LXk7;->f:Ljava/util/EnumMap;
-
-    .line 63
-    .line 64
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 65
-    .line 66
-    .line 67
-    move-result v0
-
-    .line 68
-    if-nez v0, :cond_7
-
-    .line 69
-    .line 70
-    goto :goto_0
-
-    .line 71
-    :cond_7
-    iget-object v0, p0, LXk7;->g:Ljava/util/EnumMap;
-
-    .line 72
-    .line 73
-    iget-object p1, p1, LXk7;->g:Ljava/util/EnumMap;
-
-    .line 74
-    .line 75
-    invoke-static {v0, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 76
-    .line 77
-    .line 78
-    move-result p1
-
-    .line 79
-    if-nez p1, :cond_8
-
-    .line 80
-    .line 81
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 82
-    return p1
-
-    .line 83
-    :cond_8
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 84
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    .line 1
-    iget-wide v0, p0, LXk7;->a:J
-
-    .line 2
-    .line 3
-    invoke-static {v0, v1}, Lsv7;->e(J)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const/16 v1, 0x1f
-
-    .line 8
-    .line 9
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 10
-    .line 11
-    iget-object v2, p0, LXk7;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    iget-boolean v2, p0, LXk7;->c:Z
-
-    .line 18
-    .line 19
-    invoke-static {v2}, Lsv7;->h(Z)I
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 20
     .line 21
     .line 22
-    move-result v2
+    iget-object v0, p0, LXk7;->g:LnJe;
 
     .line 23
-    add-int/2addr v2, v0
-
     .line 24
-    mul-int/lit8 v2, v2, 0x1f
+    invoke-virtual {v0}, LnJe;->k()LA36;
 
     .line 25
     .line 26
-    iget-object v0, p0, LXk7;->d:Ljava/lang/String;
-
     .line 27
-    .line 28
-    invoke-static {v2, v1, v0}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v0
-
-    .line 32
-    iget-object v2, p0, LXk7;->e:Ljava/util/ArrayList;
-
-    .line 33
-    .line 34
-    invoke-static {v2, v0, v1}, LsMj;->g(Ljava/util/ArrayList;II)I
-
-    .line 35
-    .line 36
-    .line 37
-    move-result v0
-
-    .line 38
-    iget-object v2, p0, LXk7;->f:Ljava/util/EnumMap;
-
-    .line 39
-    .line 40
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v2
-
-    .line 44
-    add-int/2addr v2, v0
-
-    .line 45
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 46
-    .line 47
-    iget-object v0, p0, LXk7;->g:Ljava/util/EnumMap;
-
-    .line 48
-    .line 49
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 50
-    .line 51
-    .line 52
-    move-result v0
-
-    .line 53
-    add-int/2addr v0, v2
-
-    .line 54
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "FetchInfoTracker(receiveMessageStartTs="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-wide v1, p0, LXk7;->a:J
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", conversationId="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LXk7;->b:Ljava/lang/String;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", isGroupConversation="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-boolean v1, p0, LXk7;->c:Z
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", receiveMessageAttemptId="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LXk7;->d:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", trackedMessages="
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    iget-object v1, p0, LXk7;->e:Ljava/util/ArrayList;
-
-    .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ", stepTimer="
-
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    iget-object v1, p0, LXk7;->f:Ljava/util/EnumMap;
-
-    .line 59
-    .line 60
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 61
-    .line 62
-    .line 63
-    const-string v1, ", stepLatencies="
-
-    .line 64
-    .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 66
-    .line 67
-    .line 68
-    iget-object v1, p0, LXk7;->g:Ljava/util/EnumMap;
-
-    .line 69
-    .line 70
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 71
-    .line 72
-    .line 73
-    const-string v1, ")"
-
-    .line 74
-    .line 75
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 76
-    .line 77
-    .line 78
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 79
-    .line 80
-    .line 81
     move-result-object v0
 
-    .line 82
-    return-object v0
+    .line 28
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+
+    .line 29
+    .line 30
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 31
+    .line 32
+    .line 33
+    new-instance v0, LCz6;
+
+    .line 34
+    .line 35
+    const/16 v1, 0x18
+
+    .line 36
+    .line 37
+    invoke-direct {v0, v1, p0}, LCz6;-><init>(ILjava/lang/Object;)V
+
+    .line 38
+    .line 39
+    .line 40
+    const/4 v1, 0x0
+
+    .line 41
+    invoke-virtual {v2, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->g0(Lio/reactivex/rxjava3/functions/Function;Z)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    new-instance v1, LVk7;
+
+    .line 46
+    .line 47
+    const/4 v2, 0x0
+
+    .line 48
+    invoke-direct {v1, p0, v2}, LVk7;-><init>(LXk7;I)V
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v0
+
+    .line 55
+    new-instance v1, LVk7;
+
+    .line 56
+    .line 57
+    const/4 v2, 0x1
+
+    .line 58
+    invoke-direct {v1, p0, v2}, LVk7;-><init>(LXk7;I)V
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v0
+
+    .line 65
+    iget-object v1, p0, LXk7;->h:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 66
+    .line 67
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 68
+    .line 69
+    .line 70
+    new-instance v0, LVk7;
+
+    .line 71
+    .line 72
+    const/4 v2, 0x2
+
+    .line 73
+    invoke-direct {v0, p0, v2}, LVk7;-><init>(LXk7;I)V
+
+    .line 74
+    .line 75
+    .line 76
+    iget-object v2, p0, LXk7;->e:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 77
+    .line 78
+    invoke-static {v2, v0, v1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 79
+    .line 80
+    .line 81
+    return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/snap/widgets/core/durablejob/WidgetAnalyticsDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
@@ -7,12 +7,12 @@
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "WidgetAnalyticsDurableJob"
     isSingleton = true
-    metadataType = LBXj;
+    metadataType = Lunk;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -22,19 +22,19 @@
     .locals 17
 
     .line 2
-    sget-object v3, LEB6;->a:LEB6;
+    sget-object v3, LcF6;->a:LcF6;
 
     .line 3
-    new-instance v13, Lnk9;
+    new-instance v13, LSs9;
 
     const-wide/16 v0, 0x18
 
     sget-object v2, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
-    invoke-direct {v13, v0, v1, v2}, Lnk9;-><init>(JLjava/util/concurrent/TimeUnit;)V
+    invoke-direct {v13, v0, v1, v2}, LSs9;-><init>(JLjava/util/concurrent/TimeUnit;)V
 
     .line 4
-    new-instance v0, LtB6;
+    new-instance v0, LRE6;
 
     const/16 v15, 0xefb
 
@@ -64,24 +64,24 @@
 
     const/4 v14, 0x1
 
-    invoke-direct/range {v0 .. v16}, LtB6;-><init>(ILjava/util/List;LEB6;Ljava/lang/String;Lnk9;Lp7f;LnCi;ZZLjava/lang/Boolean;Ljava/lang/String;LWD7;Lnk9;ZILHr5;)V
+    invoke-direct/range {v0 .. v16}, LRE6;-><init>(ILjava/util/List;LcF6;Ljava/lang/String;LSs9;Lupf;LF1j;ZZLjava/lang/Boolean;Ljava/lang/String;LyJ7;LSs9;ZILex5;)V
 
     .line 5
-    sget-object v1, LBXj;->a:LBXj;
+    sget-object v1, Lunk;->a:Lunk;
 
     move-object/from16 v2, p0
 
     .line 6
-    invoke-direct {v2, v0, v1}, Lcom/snap/widgets/core/durablejob/WidgetAnalyticsDurableJob;-><init>(LtB6;LBXj;)V
+    invoke-direct {v2, v0, v1}, Lcom/snap/widgets/core/durablejob/WidgetAnalyticsDurableJob;-><init>(LRE6;Lunk;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;LBXj;)V
+.method public constructor <init>(LRE6;Lunk;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

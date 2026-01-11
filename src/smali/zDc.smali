@@ -2,130 +2,45 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lrhf;
+
 
 # instance fields
-.field public A:Z
+.field public final a:LUgf;
 
-.field public B:Z
+.field public final b:LpCc;
 
-.field public C:Z
+.field public final c:LiWc;
 
-.field public D:Ljava/lang/String;
+.field public final d:Lamf;
 
-.field public E:Z
+.field public final e:LOh1;
 
-.field public F:Z
+.field public final f:LjWc;
 
-.field public G:Z
+.field public final g:LjWc;
 
-.field public H:Ljava/util/List;
+.field public final h:LjWc;
 
-.field public I:Ljava/lang/String;
+.field public final i:Ljava/util/UUID;
 
-.field public J:Ljava/lang/String;
+.field public final j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public K:LdHc;
+.field public final k:LxDc;
 
-.field public L:Ljava/lang/String;
+.field public final l:LSw7;
 
-.field public M:Z
+.field public m:LPlf;
 
-.field public N:Ljava/lang/String;
+.field public final n:LREi;
 
-.field public O:Ljava/lang/String;
-
-.field public P:Ljava/util/Map;
-
-.field public Q:LWGc;
-
-.field public R:Ljava/util/LinkedHashMap;
-
-.field public S:Landroid/net/Uri;
-
-.field public T:Ljava/lang/Long;
-
-.field public U:Z
-
-.field public V:LaU0;
-
-.field public W:Lnd9;
-
-.field public X:Z
-
-.field public Y:Ljava/lang/Long;
-
-.field public Z:Z
-
-.field public a:Ljava/lang/String;
-
-.field public a0:LuFc;
-
-.field public b:Ljava/lang/String;
-
-.field public b0:S
-
-.field public c:LU14;
-
-.field public c0:Li53;
-
-.field public d:Ljava/lang/String;
-
-.field public d0:[B
-
-.field public e:Ljava/lang/String;
-
-.field public e0:Ljava/util/Map;
-
-.field public f:Ljava/lang/Integer;
-
-.field public f0:LOaf;
-
-.field public g:Ljava/lang/Integer;
-
-.field public g0:Ljava/lang/Integer;
-
-.field public h:Ljava/lang/String;
-
-.field public i:Landroid/net/Uri;
-
-.field public j:Lczg;
-
-.field public k:LC01;
-
-.field public l:Ljava/lang/String;
-
-.field public m:Ljava/lang/Integer;
-
-.field public n:Ljava/lang/Integer;
-
-.field public o:Landroid/net/Uri;
-
-.field public p:Ljava/lang/Long;
-
-.field public q:Ljava/util/List;
-
-.field public r:Landroid/net/Uri;
-
-.field public s:Landroid/content/Intent;
-
-.field public t:Lcom/snap/notification/api/ConversationMessage;
-
-.field public u:LIOb;
-
-.field public final v:Lt85;
-
-.field public w:Luz2;
-
-.field public x:LCl4;
-
-.field public y:Ljava/lang/String;
-
-.field public z:Ljava/lang/Long;
+.field public final o:LRw7;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
+.method public constructor <init>(LUgf;LpCc;LR93;Lmej;LSw7;Lu09;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -133,878 +48,777 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LsL6;->a:LsL6;
+    iput-object p1, p0, LzDc;->a:LUgf;
 
     .line 5
     .line 6
-    iput-object v0, p0, LzDc;->q:Ljava/util/List;
+    iput-object p2, p0, LzDc;->b:LpCc;
 
     .line 7
     .line 8
-    new-instance v1, Lt85;
+    new-instance p1, LKT1;
 
     .line 9
     .line 10
-    const/4 v2, 0x5
+    const/4 p2, 0x2
 
     .line 11
-    invoke-direct {v1, v2}, Lt85;-><init>(I)V
+    invoke-direct {p1, p2}, LKT1;-><init>(I)V
 
     .line 12
     .line 13
     .line 14
-    iput-object v1, p0, LzDc;->v:Lt85;
+    new-instance p2, LiWc;
 
     .line 15
     .line 16
-    const-wide/16 v1, 0xbb8
+    invoke-direct {p2, p1}, LiWc;-><init>(LKT1;)V
 
     .line 17
     .line 18
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
     .line 19
+    iput-object p2, p0, LzDc;->c:LiWc;
+
     .line 20
     .line 21
-    move-result-object v1
+    new-instance p3, Lamf;
 
     .line 22
-    iput-object v1, p0, LzDc;->z:Ljava/lang/Long;
-
     .line 23
+    invoke-direct {p3}, Lamf;-><init>()V
+
     .line 24
-    const/4 v1, 0x1
-
     .line 25
-    iput-boolean v1, p0, LzDc;->B:Z
-
     .line 26
+    iput-object p3, p0, LzDc;->d:Lamf;
+
     .line 27
-    const-string v1, "msg"
-
     .line 28
+    new-instance p3, LOh1;
+
     .line 29
-    iput-object v1, p0, LzDc;->D:Ljava/lang/String;
-
     .line 30
-    .line 31
-    iput-object v0, p0, LzDc;->H:Ljava/util/List;
+    invoke-direct {p3}, LOh1;-><init>()V
 
+    .line 31
     .line 32
     .line 33
-    sget-object v0, LdHc;->K:LcHc;
+    iput-object p3, p0, LzDc;->e:LOh1;
 
     .line 34
     .line 35
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance p3, LjWc;
 
     .line 36
     .line 37
+    const/4 p6, 0x1
+
     .line 38
-    sget-object v0, LcHc;->b:LQaj;
+    invoke-direct {p3, p1, p6}, LjWc;-><init>(LKT1;Z)V
 
     .line 39
     .line 40
-    iput-object v0, p0, LzDc;->K:LdHc;
-
     .line 41
+    iput-object p3, p0, LzDc;->f:LjWc;
+
     .line 42
-    new-instance v0, Ljava/util/LinkedHashMap;
-
     .line 43
-    .line 44
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
+    invoke-virtual {p2}, LiWc;->a()LjWc;
 
+    .line 44
     .line 45
     .line 46
+    move-result-object p1
+
     .line 47
-    iput-object v0, p0, LzDc;->P:Ljava/util/Map;
+    iput-object p1, p0, LzDc;->g:LjWc;
 
     .line 48
     .line 49
+    invoke-virtual {p2}, LiWc;->a()LjWc;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p1
+
+    .line 53
+    iput-object p1, p0, LzDc;->h:LjWc;
+
+    .line 54
+    .line 55
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p1
+
+    .line 59
+    iput-object p1, p0, LzDc;->i:Ljava/util/UUID;
+
+    .line 60
+    .line 61
+    new-instance p1, Ljava/util/HashSet;
+
+    .line 62
+    .line 63
+    invoke-direct {p1}, Ljava/util/HashSet;-><init>()V
+
+    .line 64
+    .line 65
+    .line 66
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 67
+    .line 68
+    const/4 p2, 0x0
+
+    .line 69
+    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 70
+    .line 71
+    .line 72
+    iput-object p1, p0, LzDc;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 73
+    .line 74
+    new-instance p1, LxDc;
+
+    .line 75
+    .line 76
+    invoke-direct {p1, p0}, LxDc;-><init>(LzDc;)V
+
+    .line 77
+    .line 78
+    .line 79
+    iput-object p1, p0, LzDc;->k:LxDc;
+
+    .line 80
+    .line 81
+    new-instance p1, LSw7;
+
+    .line 82
+    .line 83
+    const/4 p2, 0x1
+
+    .line 84
+    invoke-direct {p1, p2, p0}, LSw7;-><init>(ILjava/lang/Object;)V
+
+    .line 85
+    .line 86
+    .line 87
+    iput-object p1, p0, LzDc;->l:LSw7;
+
+    .line 88
+    .line 89
+    sget-object p1, Lhmf;->a:LPlf;
+
+    .line 90
+    .line 91
+    iput-object p1, p0, LzDc;->m:LPlf;
+
+    .line 92
+    .line 93
+    new-instance p1, LvAc;
+
+    .line 94
+    .line 95
+    const/4 p2, 0x3
+
+    .line 96
+    invoke-direct {p1, p2, p0}, LvAc;-><init>(ILjava/lang/Object;)V
+
+    .line 97
+    .line 98
+    .line 99
+    new-instance p2, LREi;
+
+    .line 100
+    .line 101
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 102
+    .line 103
+    .line 104
+    iput-object p2, p0, LzDc;->n:LREi;
+
+    .line 105
+    .line 106
+    new-instance p1, LRw7;
+
+    .line 107
+    .line 108
+    const/4 p2, 0x1
+
+    .line 109
+    invoke-direct {p1, p0, p2}, LRw7;-><init>(Lrhf;I)V
+
+    .line 110
+    .line 111
+    .line 112
+    invoke-virtual {p1, p4}, LRw7;->a(LeP1;)V
+
+    .line 113
+    .line 114
+    .line 115
+    invoke-virtual {p1, p5}, LRw7;->b(LfP1;)V
+
+    .line 116
+    .line 117
+    .line 118
+    iput-object p1, p0, LzDc;->o:LRw7;
+
+    .line 119
+    .line 120
     return-void
 .end method
 
-.method public static d(LzDc;Landroid/net/Uri;JLjava/util/List;I)V
-    .locals 1
+.method public static final a(LzDc;LiCc;Lyhf;LC76;Lcom/snapchat/client/network_types/DebugInfo;)V
+    .locals 7
 
     .line 1
-    and-int/lit8 v0, p5, 0x2
+    monitor-enter p0
 
     .line 2
-    .line 3
-    if-eqz v0, :cond_0
+    :try_start_0
+    iget-object v0, p0, LzDc;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
+    .line 3
     .line 4
+    const/4 v1, 0x0
+
     .line 5
-    const-wide/16 p2, 0x0
+    const/4 v2, 0x1
 
     .line 6
-    .line 7
-    :cond_0
-    and-int/lit8 p5, p5, 0x4
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
+    .line 7
     .line 8
     .line 9
-    if-eqz p5, :cond_1
+    move-result v0
 
     .line 10
+    if-eqz v0, :cond_0
+
     .line 11
-    sget-object p4, LsL6;->a:LsL6;
-
     .line 12
+    iget-object v0, p0, LzDc;->h:LjWc;
+
     .line 13
-    :cond_1
-    iput-object p1, p0, LzDc;->o:Landroid/net/Uri;
-
     .line 14
-    .line 15
-    invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    new-instance v1, LyDc;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
+    .line 15
     .line 16
+    move-object v2, p0
+
     .line 17
+    move-object v3, p1
+
     .line 18
-    move-result-object p1
+    move-object v4, p2
 
     .line 19
-    iput-object p1, p0, LzDc;->p:Ljava/lang/Long;
+    move-object v5, p3
 
     .line 20
+    move-object v6, p4
+
     .line 21
-    iput-object p4, p0, LzDc;->q:Ljava/util/List;
+    :try_start_1
+    invoke-direct/range {v1 .. v6}, LyDc;-><init>(LzDc;LiCc;Lyhf;LC76;Lcom/snapchat/client/network_types/DebugInfo;)V
 
     .line 22
     .line 23
+    .line 24
+    invoke-virtual {v0, v1}, LjWc;->a(LYAa;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 25
+    .line 26
+    .line 27
+    goto :goto_1
+
+    .line 28
+    :catchall_0
+    move-exception v0
+
+    .line 29
+    :goto_0
+    move-object p0, v0
+
+    .line 30
+    goto :goto_2
+
+    .line 31
+    :catchall_1
+    move-exception v0
+
+    .line 32
+    move-object v2, p0
+
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_0
+    move-object v2, p0
+
+    .line 35
+    :goto_1
+    monitor-exit v2
+
+    .line 36
     return-void
+
+    .line 37
+    :goto_2
+    :try_start_2
+    monitor-exit v2
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 38
+    throw p0
 .end method
 
 
 # virtual methods
-.method public final a()LBDc;
-    .locals 53
+.method public final b()V
+    .locals 6
 
     .line 1
-    move-object/from16 v0, p0
+    new-instance v0, LWJc;
 
     .line 2
     .line 3
-    new-instance v1, LBDc;
+    invoke-direct {v0}, LWJc;-><init>()V
 
     .line 4
     .line 5
-    iget-object v2, v0, LzDc;->I:Ljava/lang/String;
-
     .line 6
+    iget-object v1, p0, LzDc;->d:Lamf;
+
     .line 7
-    if-nez v2, :cond_0
-
     .line 8
-    .line 9
-    invoke-static {}, LCDc;->d()Ljava/lang/String;
+    iput-object v0, v1, Lamf;->d:LWJc;
 
+    .line 9
     .line 10
+    iget-object v0, p0, LzDc;->a:LUgf;
+
     .line 11
     .line 12
-    move-result-object v2
+    check-cast v0, LhLg;
 
     .line 13
-    :cond_0
-    iget-object v3, v0, LzDc;->J:Ljava/lang/String;
-
     .line 14
+    iget-boolean v2, v0, LhLg;->g:Z
+
     .line 15
-    if-nez v3, :cond_1
-
     .line 16
-    .line 17
-    invoke-static {}, LCDc;->d()Ljava/lang/String;
+    iput-boolean v2, v1, Lamf;->a:Z
 
+    .line 17
     .line 18
+    iget-object v0, v0, LhLg;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 19
     .line 20
-    move-result-object v3
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
 
     .line 21
-    :cond_1
-    iget-object v4, v0, LzDc;->K:LdHc;
-
     .line 22
     .line 23
-    iget-object v5, v0, LzDc;->L:Ljava/lang/String;
+    iget-object v0, p0, LzDc;->b:LpCc;
 
     .line 24
     .line 25
-    new-instance v6, LlEc;
+    iget-object v1, v0, LpCc;->a:LqCc;
 
     .line 26
     .line 27
-    invoke-direct {v6, v4, v2, v3, v5}, LlEc;-><init>(LdHc;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    iget-object v1, v1, LqCc;->h:LUO5;
 
     .line 28
     .line 29
+    new-instance v2, LWJc;
+
     .line 30
-    new-instance v3, LTlc;
-
     .line 31
-    .line 32
-    iget-object v2, v0, LzDc;->N:Ljava/lang/String;
+    invoke-direct {v2}, LWJc;-><init>()V
 
+    .line 32
     .line 33
     .line 34
-    iget-object v5, v0, LzDc;->O:Ljava/lang/String;
+    iget-object v0, v0, LpCc;->b:LmLg;
 
     .line 35
     .line 36
-    const/4 v7, 0x4
+    invoke-virtual {v0}, LmLg;->a()LqJc;
 
     .line 37
-    invoke-direct {v3, v2, v7, v5}, LTlc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 38
     .line 39
+    move-result-object v3
+
     .line 40
-    iget-object v9, v0, LzDc;->a:Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 41
     .line 42
-    iget-object v10, v0, LzDc;->b:Ljava/lang/String;
-
     .line 43
-    .line 44
-    iget-object v12, v0, LzDc;->m:Ljava/lang/Integer;
+    new-instance v4, Lvy3;
 
+    .line 44
     .line 45
+    const/4 v5, 0x6
+
     .line 46
-    iget-object v13, v0, LzDc;->n:Ljava/lang/Integer;
+    invoke-direct {v4, v3, v5, v1}, Lvy3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 47
     .line 48
-    iget-object v2, v0, LzDc;->w:Luz2;
-
     .line 49
-    .line 50
-    if-nez v2, :cond_2
+    invoke-static {v3, v4}, LUO5;->a(LqJc;Lkotlin/jvm/functions/Function0;)V
 
+    .line 50
     .line 51
     .line 52
-    sget-object v2, Luz2;->X:Luz2;
+    iget-object v0, v0, LmLg;->f:Lamf;
 
     .line 53
     .line 54
-    :cond_2
-    move-object v14, v2
+    iput-object v2, v0, Lamf;->d:LWJc;
 
     .line 55
-    iget-object v2, v0, LzDc;->x:LCl4;
+    .line 56
+    return-void
+.end method
+
+.method public final c(LPlf;Z)V
+    .locals 3
+
+    .line 1
+    if-eqz p2, :cond_1
+
+    .line 2
+    .line 3
+    iput-object p1, p0, LzDc;->m:LPlf;
+
+    .line 4
+    .line 5
+    iget-object p1, p0, LzDc;->a:LUgf;
+
+    .line 6
+    .line 7
+    check-cast p1, LhLg;
+
+    .line 8
+    .line 9
+    iget-object p1, p1, LhLg;->d:Ljava/util/Map;
+
+    .line 10
+    .line 11
+    const-string p2, "X-Snapchat-UUID"
+
+    .line 12
+    .line 13
+    invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    check-cast p1, Ljava/lang/String;
+
+    .line 18
+    .line 19
+    if-eqz p1, :cond_0
+
+    .line 20
+    .line 21
+    iget-object p2, p0, LzDc;->a:LUgf;
+
+    .line 22
+    .line 23
+    invoke-interface {p2}, LUgf;->a()LgLg;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p2
+
+    .line 27
+    const-string v0, "X-Snapchat-UUID"
+
+    .line 28
+    .line 29
+    invoke-virtual {p2, p1, v0}, LgLg;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 30
+    .line 31
+    .line 32
+    :cond_0
+    iget-object p1, p0, LzDc;->a:LUgf;
+
+    .line 33
+    .line 34
+    check-cast p1, LhLg;
+
+    .line 35
+    .line 36
+    iget-object p1, p1, LhLg;->d:Ljava/util/Map;
+
+    .line 37
+    .line 38
+    new-instance p2, Ljava/util/LinkedHashMap;
+
+    .line 39
+    .line 40
+    invoke-direct {p2, p1}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
+
+    .line 41
+    .line 42
+    .line 43
+    const-string p1, "X-Snapchat-UUID"
+
+    .line 44
+    .line 45
+    sget-object v0, Lu09;->c:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 46
+    .line 47
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    invoke-virtual {v0}, Ljava/util/UUID;->toString()Ljava/lang/String;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v0
+
+    .line 55
+    invoke-interface {p2, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 56
     .line 57
-    invoke-interface {v4}, LdHc;->f()Z
-
     .line 58
+    iget-object p1, p0, LzDc;->a:LUgf;
+
     .line 59
     .line 60
-    move-result v15
+    invoke-interface {p1}, LUgf;->a()LgLg;
 
     .line 61
-    iget-object v4, v0, LzDc;->D:Ljava/lang/String;
-
     .line 62
     .line 63
-    iget-boolean v5, v0, LzDc;->E:Z
+    move-result-object p1
 
     .line 64
-    .line 65
-    iget-boolean v7, v0, LzDc;->F:Z
+    invoke-virtual {p1, p2}, LgLg;->c(Ljava/util/Map;)LgLg;
 
+    .line 65
     .line 66
     .line 67
-    iget-object v8, v0, LzDc;->o:Landroid/net/Uri;
+    return-void
 
     .line 68
+    :cond_1
+    iget-object p2, p0, LzDc;->a:LUgf;
+
     .line 69
-    iget-object v11, v0, LzDc;->p:Ljava/lang/Long;
-
     .line 70
+    check-cast p2, LhLg;
+
     .line 71
-    const-wide/16 v16, 0x0
-
     .line 72
+    iget-object p2, p2, LhLg;->f:Ljava/util/Map;
+
     .line 73
-    if-eqz v11, :cond_3
-
     .line 74
-    .line 75
-    invoke-virtual {v11}, Ljava/lang/Long;->longValue()J
+    if-eqz p2, :cond_2
 
+    .line 75
     .line 76
+    const-string v0, "X-Snapchat-UUID"
+
     .line 77
     .line 78
-    move-result-wide v18
+    invoke-interface {p2, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     .line 79
-    move-wide/from16 v21, v18
-
     .line 80
     .line 81
-    goto :goto_0
+    move-result v0
 
     .line 82
-    :cond_3
-    move-wide/from16 v21, v16
+    if-eqz v0, :cond_2
 
     .line 83
     .line 84
-    :goto_0
-    iget-object v11, v0, LzDc;->q:Ljava/util/List;
+    new-instance v0, Ljava/util/LinkedHashMap;
 
     .line 85
     .line 86
-    move-object/from16 v37, v1
+    invoke-direct {v0, p2}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
 
     .line 87
     .line 88
-    iget-object v1, v0, LzDc;->c:LU14;
-
     .line 89
+    const-string p2, "X-Snapchat-UUID"
+
     .line 90
-    if-eqz v1, :cond_4
-
     .line 91
-    .line 92
-    invoke-virtual {v1}, LU14;->a()LV14;
+    invoke-interface {v0, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 92
     .line 93
     .line 94
-    .line 95
-    move-result-object v1
+    iget-object p2, p0, LzDc;->a:LUgf;
 
+    .line 95
     .line 96
-    :goto_1
-    move-object/from16 v23, v1
+    invoke-interface {p2}, LUgf;->a()LgLg;
 
     .line 97
     .line 98
-    goto :goto_2
-
     .line 99
-    :cond_4
-    const/4 v1, 0x0
+    move-result-object p2
 
     .line 100
-    goto :goto_1
+    invoke-virtual {p2, v0}, LgLg;->e(Ljava/util/Map;)LgLg;
 
     .line 101
-    :goto_2
-    iget-object v1, v0, LzDc;->a:Ljava/lang/String;
-
     .line 102
     .line 103
-    if-nez v1, :cond_5
+    :cond_2
+    monitor-enter p0
 
     .line 104
+    :try_start_0
+    iput-object p1, p0, LzDc;->m:LPlf;
+
     .line 105
-    iget-object v1, v0, LzDc;->b:Ljava/lang/String;
-
     .line 106
+    iget-object p2, p0, LzDc;->e:LOh1;
+
     .line 107
-    if-nez v1, :cond_5
-
     .line 108
-    .line 109
-    const/4 v1, 0x1
+    iget v0, p1, LPlf;->b:I
 
+    .line 109
     .line 110
-    const/16 v24, 0x1
+    iget-object v1, p1, LPlf;->g:Ljava/lang/Throwable;
 
     .line 111
     .line 112
-    goto :goto_3
+    iget-object v2, p1, LPlf;->f:Ljava/lang/String;
 
     .line 113
-    :cond_5
-    const/4 v1, 0x0
-
     .line 114
-    const/16 v24, 0x0
+    iput v0, p2, LOh1;->a:I
 
     .line 115
     .line 116
-    :goto_3
-    iget-object v1, v0, LzDc;->H:Ljava/util/List;
+    iput-object v2, p2, LOh1;->b:Ljava/lang/String;
 
     .line 117
     .line 118
-    move-object/from16 v25, v1
+    if-eqz v1, :cond_3
 
     .line 119
     .line 120
-    iget-object v1, v0, LzDc;->s:Landroid/content/Intent;
+    iput-object v1, p2, LOh1;->f:Ljava/lang/Object;
 
     .line 121
     .line 122
-    move-object/from16 v26, v1
+    :cond_3
+    iget-object p2, p0, LzDc;->a:LUgf;
 
     .line 123
     .line 124
-    iget-object v1, v0, LzDc;->S:Landroid/net/Uri;
+    iget-object v0, p0, LzDc;->d:Lamf;
 
     .line 125
     .line 126
-    move-object/from16 v27, v1
+    invoke-virtual {v0}, Lamf;->a()Lbmf;
 
     .line 127
     .line 128
-    iget-object v1, v0, LzDc;->T:Ljava/lang/Long;
-
     .line 129
+    move-result-object v0
+
     .line 130
-    if-eqz v1, :cond_6
+    iget-object v1, p0, LzDc;->g:LjWc;
 
     .line 131
     .line 132
-    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
+    invoke-static {p2, p1, v0, v1}, LrZ3;->A(LUgf;LPlf;Lbmf;LeBa;)LjLg;
 
     .line 133
     .line 134
     .line 135
-    move-result-wide v16
+    move-result-object p1
 
     .line 136
-    :cond_6
-    move-wide/from16 v28, v16
+    iget-object p2, p0, LzDc;->h:LjWc;
 
     .line 137
     .line 138
-    iget-boolean v1, v0, LzDc;->U:Z
+    invoke-virtual {p2, p1}, LjWc;->b(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 139
     .line 140
-    move/from16 v30, v1
-
     .line 141
+    monitor-exit p0
+
     .line 142
-    iget-object v1, v0, LzDc;->V:LaU0;
+    iget-object p2, p0, LzDc;->b:LpCc;
 
     .line 143
     .line 144
-    move-object/from16 v32, v1
+    invoke-virtual {p2, p1}, LpCc;->a(LjLg;)V
 
     .line 145
     .line 146
-    iget-object v1, v0, LzDc;->W:Lnd9;
-
     .line 147
+    return-void
+
     .line 148
-    move-object/from16 v33, v1
+    :catchall_0
+    move-exception p1
 
     .line 149
+    monitor-exit p0
+
     .line 150
-    iget-boolean v1, v0, LzDc;->X:Z
-
-    .line 151
-    .line 152
-    move/from16 v34, v1
-
-    .line 153
-    .line 154
-    iget-object v1, v0, LzDc;->Y:Ljava/lang/Long;
-
-    .line 155
-    .line 156
-    move-object/from16 v35, v1
-
-    .line 157
-    .line 158
-    iget-object v1, v0, LzDc;->g0:Ljava/lang/Integer;
-
-    .line 159
-    .line 160
-    move-object/from16 v19, v8
-
-    .line 161
-    .line 162
-    new-instance v8, LLgi;
-
-    .line 163
-    .line 164
-    move-object/from16 v20, v11
-
-    .line 165
-    .line 166
-    move-object v11, v10
-
-    .line 167
-    move-object/from16 v36, v1
-
-    .line 168
-    .line 169
-    move-object/from16 v31, v2
-
-    .line 170
-    .line 171
-    move-object/from16 v16, v4
-
-    .line 172
-    .line 173
-    move/from16 v17, v5
-
-    .line 174
-    .line 175
-    move/from16 v18, v7
-
-    .line 176
-    .line 177
-    invoke-direct/range {v8 .. v36}, LLgi;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Luz2;ILjava/lang/String;ZZLandroid/net/Uri;Ljava/util/List;JLV14;ZLjava/util/List;Landroid/content/Intent;Landroid/net/Uri;JZLCl4;LaU0;Lnd9;ZLjava/lang/Long;Ljava/lang/Integer;)V
-
-    .line 178
-    .line 179
-    .line 180
-    move-object v4, v8
-
-    .line 181
-    new-instance v5, Li99;
-
-    .line 182
-    .line 183
-    iget-object v1, v0, LzDc;->d:Ljava/lang/String;
-
-    .line 184
-    .line 185
-    iget-object v2, v0, LzDc;->e:Ljava/lang/String;
-
-    .line 186
-    .line 187
-    iget-object v7, v0, LzDc;->f:Ljava/lang/Integer;
-
-    .line 188
-    .line 189
-    iget-object v8, v0, LzDc;->l:Ljava/lang/String;
-
-    .line 190
-    .line 191
-    iget-object v9, v0, LzDc;->m:Ljava/lang/Integer;
-
-    .line 192
-    .line 193
-    iget-object v10, v0, LzDc;->g:Ljava/lang/Integer;
-
-    .line 194
-    .line 195
-    iget-object v11, v0, LzDc;->j:Lczg;
-
-    .line 196
-    .line 197
-    iget-object v12, v0, LzDc;->k:LC01;
-
-    .line 198
-    .line 199
-    iget-object v13, v0, LzDc;->y:Ljava/lang/String;
-
-    .line 200
-    .line 201
-    iget-object v14, v0, LzDc;->z:Ljava/lang/Long;
-
-    .line 202
-    .line 203
-    iget-object v15, v0, LzDc;->h:Ljava/lang/String;
-
-    .line 204
-    .line 205
-    move-object/from16 v39, v1
-
-    .line 206
-    .line 207
-    iget-object v1, v0, LzDc;->i:Landroid/net/Uri;
-
-    .line 208
-    .line 209
-    move-object/from16 v50, v1
-
-    .line 210
-    .line 211
-    iget-boolean v1, v0, LzDc;->M:Z
-
-    .line 212
-    .line 213
-    move/from16 v51, v1
-
-    .line 214
-    .line 215
-    move-object/from16 v40, v2
-
-    .line 216
-    .line 217
-    move-object/from16 v38, v5
-
-    .line 218
-    .line 219
-    move-object/from16 v41, v7
-
-    .line 220
-    .line 221
-    move-object/from16 v42, v8
-
-    .line 222
-    .line 223
-    move-object/from16 v43, v9
-
-    .line 224
-    .line 225
-    move-object/from16 v44, v10
-
-    .line 226
-    .line 227
-    move-object/from16 v45, v11
-
-    .line 228
-    .line 229
-    move-object/from16 v46, v12
-
-    .line 230
-    .line 231
-    move-object/from16 v47, v13
-
-    .line 232
-    .line 233
-    move-object/from16 v48, v14
-
-    .line 234
-    .line 235
-    move-object/from16 v49, v15
-
-    .line 236
-    .line 237
-    move/from16 v52, v34
-
-    .line 238
-    .line 239
-    invoke-direct/range {v38 .. v52}, Li99;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Lczg;LC01;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;Landroid/net/Uri;ZZ)V
-
-    .line 240
-    .line 241
-    .line 242
-    move-object v2, v6
-
-    .line 243
-    iget-object v6, v0, LzDc;->P:Ljava/util/Map;
-
-    .line 244
-    .line 245
-    iget-object v7, v0, LzDc;->Q:LWGc;
-
-    .line 246
-    .line 247
-    new-instance v8, Lrd5;
-
-    .line 248
-    .line 249
-    iget-boolean v1, v0, LzDc;->B:Z
-
-    .line 250
-    .line 251
-    iget-boolean v9, v0, LzDc;->A:Z
-
-    .line 252
-    .line 253
-    iget-boolean v10, v0, LzDc;->C:Z
-
-    .line 254
-    .line 255
-    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
-
-    .line 256
-    .line 257
-    .line 258
-    iput-boolean v1, v8, Lrd5;->a:Z
-
-    .line 259
-    .line 260
-    iput-boolean v9, v8, Lrd5;->b:Z
-
-    .line 261
-    .line 262
-    iput-boolean v10, v8, Lrd5;->c:Z
-
-    .line 263
-    .line 264
-    iget-object v9, v0, LzDc;->r:Landroid/net/Uri;
-
-    .line 265
-    .line 266
-    iget-object v10, v0, LzDc;->t:Lcom/snap/notification/api/ConversationMessage;
-
-    .line 267
-    .line 268
-    iget-object v11, v0, LzDc;->u:LIOb;
-
-    .line 269
-    .line 270
-    iget-object v13, v0, LzDc;->c0:Li53;
-
-    .line 271
-    .line 272
-    iget-boolean v14, v0, LzDc;->Z:Z
-
-    .line 273
-    .line 274
-    iget-object v15, v0, LzDc;->a0:LuFc;
-
-    .line 275
-    .line 276
-    iget-short v1, v0, LzDc;->b0:S
-
-    .line 277
-    .line 278
-    iget-object v12, v0, LzDc;->d0:[B
-
-    .line 279
-    .line 280
-    move/from16 v16, v1
-
-    .line 281
-    .line 282
-    iget-object v1, v0, LzDc;->R:Ljava/util/LinkedHashMap;
-
-    .line 283
-    .line 284
-    move-object/from16 v18, v1
-
-    .line 285
-    .line 286
-    iget-object v1, v0, LzDc;->e0:Ljava/util/Map;
-
-    .line 287
-    .line 288
-    move-object/from16 v19, v1
-
-    .line 289
-    .line 290
-    iget-object v1, v0, LzDc;->f0:LOaf;
-
-    .line 291
-    .line 292
-    move-object/from16 v20, v1
-
-    .line 293
-    .line 294
-    iget-boolean v1, v0, LzDc;->G:Z
-
-    .line 295
-    .line 296
-    move-object/from16 v17, v12
-
-    .line 297
-    .line 298
-    iget-object v12, v0, LzDc;->v:Lt85;
-
-    .line 299
-    .line 300
-    move/from16 v21, v1
-
-    .line 301
-    .line 302
-    move-object/from16 v1, v37
-
-    .line 303
-    .line 304
-    invoke-direct/range {v1 .. v21}, LBDc;-><init>(LlEc;LTlc;LLgi;Li99;Ljava/util/Map;LWGc;Lrd5;Landroid/net/Uri;Lcom/snap/notification/api/ConversationMessage;LIOb;Lt85;Li53;ZLuFc;S[BLjava/util/LinkedHashMap;Ljava/util/Map;LOaf;Z)V
-
-    .line 305
-    .line 306
-    .line 307
-    return-object v1
+    throw p1
 .end method
 
-.method public final b(I)V
-    .locals 2
+.method public final d()LUgf;
+    .locals 1
 
     .line 1
-    new-instance v0, LC01;
+    iget-object v0, p0, LzDc;->a:LUgf;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    invoke-direct {v0, p1, v1}, LC01;-><init>(II)V
-
-    .line 5
-    .line 6
-    .line 7
-    iput-object v0, p0, LzDc;->k:LC01;
-
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public final c(Landroid/net/Uri;)V
-    .locals 6
-
-    .line 1
-    const/4 v2, 0x0
-
-    .line 2
-    if-eqz p1, :cond_0
-
-    .line 3
-    .line 4
-    new-instance v0, LC01;
-
-    .line 5
-    .line 6
-    const/4 v4, 0x1
-
-    .line 7
-    const/4 v5, 0x3
-
-    .line 8
-    move-object v3, v2
-
-    .line 9
-    move-object v1, p1
-
-    .line 10
-    invoke-direct/range {v0 .. v5}, LC01;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;II)V
-
-    .line 11
-    .line 12
-    .line 13
-    move-object v2, v0
-
-    .line 14
-    :cond_0
-    iput-object v2, p0, LzDc;->k:LC01;
-
-    .line 15
-    .line 16
-    return-void
-.end method
-
-.method public final e(Landroid/net/Uri;JZ)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LzDc;->S:Landroid/net/Uri;
-
-    .line 2
-    .line 3
-    invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    iput-object p1, p0, LzDc;->T:Ljava/lang/Long;
-
-    .line 8
-    .line 9
-    iput-boolean p4, p0, LzDc;->U:Z
-
-    .line 10
-    .line 11
-    return-void
+    return-object v0
 .end method

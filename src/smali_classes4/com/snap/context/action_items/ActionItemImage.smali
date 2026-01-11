@@ -1,10 +1,10 @@
 .class public final Lcom/snap/context/action_items/ActionItemImage;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'asset\':r?:\'[0]\',\'src\':s?"
     typeReferences = {

@@ -1,96 +1,53 @@
-.class public final LeP8;
+.class public final synthetic LeP8;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Lbu6;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:LfP8;
 
-.field public final synthetic b:LhP8;
+.field public final synthetic b:LJ1j;
 
 
 # direct methods
-.method public synthetic constructor <init>(LhP8;I)V
+.method public synthetic constructor <init>(LfP8;LJ1j;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LeP8;->a:I
-
-    iput-object p1, p0, LeP8;->b:LhP8;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LeP8;->a:LfP8;
+
+    iput-object p2, p0, LeP8;->b:LJ1j;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 1
+.method public final dispose()V
+    .locals 2
 
     .line 1
-    iget v0, p0, LeP8;->a:I
+    iget-object v0, p0, LeP8;->a:LfP8;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, v0, LfP8;->b:Landroid/os/Handler;
 
     .line 4
     .line 5
+    iget-object v1, p0, LeP8;->b:LJ1j;
+
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
-
     .line 7
-    .line 8
-    iget-object p1, p0, LeP8;->b:LhP8;
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
+    .line 8
     .line 9
     .line 10
-    iget-object p1, p1, LhP8;->g:Lrn0;
-
-    .line 11
-    .line 12
     return-void
-
-    .line 13
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 14
-    .line 15
-    iget-object p1, p0, LeP8;->b:LhP8;
-
-    .line 16
-    .line 17
-    iget-object p1, p1, LhP8;->g:Lrn0;
-
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 21
-    .line 22
-    iget-object p1, p0, LeP8;->b:LhP8;
-
-    .line 23
-    .line 24
-    iget-object p1, p1, LhP8;->g:Lrn0;
-
-    .line 25
-    .line 26
-    return-void
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

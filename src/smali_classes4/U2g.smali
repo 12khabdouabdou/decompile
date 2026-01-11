@@ -1,84 +1,110 @@
-.class public abstract synthetic LU2g;
+.class public final LU2g;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:LjLh;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;LjLh;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Ljmd$a;->values()[Ljmd$a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, LU2g;->a:Ljava/lang/String;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p2, p0, LU2g;->b:Ljava/lang/String;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Ljmd$a;->b:Ljmd$a;
+    iput-object p3, p0, LU2g;->c:LjLh;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LU2g;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, LU2g;
+
     .line 12
     .line 13
-    move-result v1
+    iget-object v1, p1, LU2g;->a:Ljava/lang/String;
 
     .line 14
-    const/4 v2, 0x1
-
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object v3, p0, LU2g;->a:Ljava/lang/String;
 
     .line 16
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Ljmd$a;->t:Ljmd$a;
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 20
-    .line 21
-    .line 22
     move-result v1
 
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
     .line 23
-    const/4 v2, 0x2
+    return v2
 
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    :cond_2
+    iget-object v1, p0, LU2g;->b:Ljava/lang/String;
 
     .line 25
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Ljmd$a;->c:Ljmd$a;
+    iget-object v3, p1, LU2g;->b:Ljava/lang/String;
 
     .line 27
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -86,42 +112,180 @@
     move-result v1
 
     .line 32
-    const/4 v2, 0x3
+    if-nez v1, :cond_3
 
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
     .line 34
+    return v2
+
     .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, Ljmd$a;->X:Ljmd$a;
+    :cond_3
+    iget-object v1, p0, LU2g;->c:LjLh;
 
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iget-object p1, p1, LU2g;->c:LjLh;
 
     .line 38
     .line 39
-    .line 40
-    move-result v1
+    if-eq v1, p1, :cond_4
 
+    .line 40
     .line 41
-    const/4 v2, 0x4
+    return v2
 
     .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    :cond_4
+    return v0
+.end method
 
-    .line 43
-    .line 44
-    :catch_3
-    sput-object v0, LU2g;->a:[I
+.method public final hashCode()I
+    .locals 2
 
-    .line 45
-    .line 46
-    return-void
+    .line 1
+    iget-object v0, p0, LU2g;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LU2g;->b:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    if-nez v1, :cond_0
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 20
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 21
+    .line 22
+    iget-object v1, p0, LU2g;->c:LjLh;
+
+    .line 23
+    .line 24
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v1
+
+    .line 28
+    add-int/2addr v1, v0
+
+    .line 29
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SelectReactions(replyId="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LU2g;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", parentReplyId="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LU2g;->b:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", reactionType="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LU2g;->c:LjLh;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ")"
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    return-object v0
 .end method

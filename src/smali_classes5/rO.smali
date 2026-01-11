@@ -1,78 +1,193 @@
-.class public final LrO;
-.super Ljava/lang/Object;
+.class public final enum LrO;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements LJM9;
 
+# static fields
+.field public static final enum X:LrO;
 
-# instance fields
-.field public final a:LPB5;
+.field public static final synthetic Y:[LrO;
 
-.field public final b:LEi5;
+.field public static final enum a:LrO;
 
-.field public volatile c:Ljava/util/Set;
+.field public static final enum b:LrO;
 
-.field public final t:LOy;
+.field public static final enum c:LrO;
+
+.field public static final enum t:LrO;
 
 
 # direct methods
-.method public constructor <init>(LPB5;LEi5;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 11
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x4
 
     .line 2
+    const/4 v1, 0x3
+
     .line 3
+    const/4 v2, 0x2
+
     .line 4
-    iput-object p1, p0, LrO;->a:LPB5;
+    const/4 v3, 0x1
 
     .line 5
+    const/4 v4, 0x0
+
     .line 6
-    iput-object p2, p0, LrO;->b:LEi5;
+    new-instance v5, LrO;
 
     .line 7
     .line 8
-    sget-object p1, LIL6;->a:LIL6;
+    const-string v6, "ACTIVE"
 
     .line 9
     .line 10
-    iput-object p1, p0, LrO;->c:Ljava/util/Set;
+    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 11
     .line 12
-    new-instance p1, LOy;
-
     .line 13
+    sput-object v5, LrO;->a:LrO;
+
     .line 14
-    const/16 p2, 0x10
-
     .line 15
-    .line 16
-    invoke-direct {p1, p2, p0}, LOy;-><init>(ILjava/lang/Object;)V
+    new-instance v6, LrO;
 
+    .line 16
     .line 17
+    const-string v7, "PASSIVE"
+
     .line 18
     .line 19
-    iput-object p1, p0, LrO;->t:LOy;
+    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 20
     .line 21
+    .line 22
+    sput-object v6, LrO;->b:LrO;
+
+    .line 23
+    .line 24
+    new-instance v7, LrO;
+
+    .line 25
+    .line 26
+    const-string v8, "BACKGROUND"
+
+    .line 27
+    .line 28
+    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    sput-object v7, LrO;->c:LrO;
+
+    .line 32
+    .line 33
+    new-instance v8, LrO;
+
+    .line 34
+    .line 35
+    const-string v9, "SIGNUP"
+
+    .line 36
+    .line 37
+    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 38
+    .line 39
+    .line 40
+    sput-object v8, LrO;->t:LrO;
+
+    .line 41
+    .line 42
+    new-instance v9, LrO;
+
+    .line 43
+    .line 44
+    const-string v10, "UNKNOWN"
+
+    .line 45
+    .line 46
+    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 47
+    .line 48
+    .line 49
+    sput-object v9, LrO;->X:LrO;
+
+    .line 50
+    .line 51
+    const/4 v10, 0x5
+
+    .line 52
+    new-array v10, v10, [LrO;
+
+    .line 53
+    .line 54
+    aput-object v5, v10, v4
+
+    .line 55
+    .line 56
+    aput-object v6, v10, v3
+
+    .line 57
+    .line 58
+    aput-object v7, v10, v2
+
+    .line 59
+    .line 60
+    aput-object v8, v10, v1
+
+    .line 61
+    .line 62
+    aput-object v9, v10, v0
+
+    .line 63
+    .line 64
+    sput-object v10, LrO;->Y:[LrO;
+
+    .line 65
+    .line 66
     return-void
 .end method
 
-
-# virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
+.method public static valueOf(Ljava/lang/String;)LrO;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LrO;->a:LPB5;
+    const-class v0, LrO;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LPB5;->a()Lio/reactivex/rxjava3/core/Observable;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LrO;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LrO;
+    .locals 1
+
+    .line 1
+    sget-object v0, LrO;->Y:[LrO;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -80,16 +195,9 @@
     move-result-object v0
 
     .line 7
-    return-object v0
-.end method
+    check-cast v0, [LrO;
 
-.method public final f()Lio/reactivex/rxjava3/functions/Consumer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LrO;->t:LOy;
-
-    .line 2
-    .line 3
+    .line 8
+    .line 9
     return-object v0
 .end method

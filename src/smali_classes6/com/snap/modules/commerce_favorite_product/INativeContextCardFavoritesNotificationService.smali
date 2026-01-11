@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LJW8;
+    proxyClass = Lk49;
     schema = "\'showFavoriteProductNotificationByProtoAction\':f|m|(s, s?),\'showUnfavoriteProductNotificationByProtoAction\':f|m|(s, s?)"
     typeReferences = {}
 .end annotation

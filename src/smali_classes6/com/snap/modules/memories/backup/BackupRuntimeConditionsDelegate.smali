@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LbH0;
+    proxyClass = LUJ0;
     schema = "\'getDeviceNetworkState\':f|m|(): r<e>:\'[0]\',\'getDeviceBatteryPercentage\':f|m|(): d,\'isDeviceCharging\':f|m|(): b,\'isAppInForeground\':f|m|(): b,\'isBackupOnCellularEnabled\':f|m|(): b,\'isDataSaverEnabled\':f|m|(): b,\'getDailyCellularUploadUsageBytes\':f|m|(): d,\'getDailyCellularUploadQuotaBytes\':f|m|(): d,\'getDayThresholdForForceCellularUpload\':f|m|(): d"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupDeviceNetworkState;

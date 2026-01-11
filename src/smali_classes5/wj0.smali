@@ -3,21 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lok0;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/core/Observable;
-
-.field public final b:Lt0a;
-
-.field public final c:LIN;
-
-.field public final t:Ljava/util/concurrent/locks/ReentrantLock;
+.field public final synthetic a:Lvi0;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;Lt0a;LIN;)V
+.method public constructor <init>(Lvi0;)V
     .locals 0
 
     .line 1
@@ -26,183 +20,223 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lwj0;->a:Lio/reactivex/rxjava3/core/Observable;
+    iput-object p1, p0, Lwj0;->a:Lvi0;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lwj0;->b:Lt0a;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lwj0;->c:LIN;
-
-    .line 9
-    .line 10
-    new-instance p1, Ljava/util/concurrent/locks/ReentrantLock;
-
-    .line 11
-    .line 12
-    invoke-direct {p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
-
-    .line 13
-    .line 14
-    .line 15
-    iput-object p1, p0, Lwj0;->t:Ljava/util/concurrent/locks/ReentrantLock;
-
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1()Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 6
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    new-instance v1, Ljava/util/HashMap;
-
-    .line 3
-    .line 4
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    .line 5
-    .line 6
-    .line 7
-    new-instance v2, Lvj0;
-
-    .line 8
-    .line 9
-    invoke-direct {v2, p0}, Lvj0;-><init>(Lwj0;)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object v3, p0, Lwj0;->a:Lio/reactivex/rxjava3/core/Observable;
-
-    .line 13
-    .line 14
-    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v2
-
-    .line 18
-    new-instance v4, Lrj0;
-
-    .line 19
-    .line 20
-    invoke-direct {v4, p0, v1}, Lrj0;-><init>(Lwj0;Ljava/util/HashMap;)V
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v2
-
-    .line 27
-    sget-object v4, LQc0;->j0:LQc0;
-
-    .line 28
-    .line 29
-    invoke-virtual {v3, v4, v0}, Lio/reactivex/rxjava3/core/Observable;->d0(Lio/reactivex/rxjava3/functions/Function;Z)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v3
-
-    .line 33
-    new-instance v4, Lsj0;
-
-    .line 34
-    .line 35
-    invoke-direct {v4, p0, v1}, Lsj0;-><init>(Lwj0;Ljava/util/HashMap;)V
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 39
-    .line 40
-    .line 41
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoFinally;
-
-    .line 42
-    .line 43
-    invoke-direct {v5, v3, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoFinally;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Action;)V
-
-    .line 44
-    .line 45
-    .line 46
-    new-instance v3, Ltj0;
-
-    .line 47
-    .line 48
-    invoke-direct {v3, p0, v1}, Ltj0;-><init>(Lwj0;Ljava/util/HashMap;)V
-
-    .line 49
-    .line 50
-    .line 51
-    invoke-virtual {v5, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v1
-
-    .line 55
-    new-instance v3, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 56
-    .line 57
-    const/4 v4, 0x2
-
-    .line 58
-    new-array v4, v4, [Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 59
-    .line 60
-    aput-object v2, v4, v0
-
-    .line 61
-    .line 62
-    const/4 v0, 0x1
-
-    .line 63
-    aput-object v1, v4, v0
-
-    .line 64
-    .line 65
-    invoke-direct {v3, v4}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>([Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 66
-    .line 67
-    .line 68
-    return-object v3
-.end method
-
-.method public final observe()Lio/reactivex/rxjava3/core/Observable;
+.method public final accept(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    invoke-static {p0}, LXsk;->d(Lok0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+    check-cast p1, LVm4;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    instance-of v0, p1, LUm4;
 
+    .line 4
     .line 5
-    return-object v0
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v0, LEP$Z0$m;
+
+    .line 8
+    .line 9
+    check-cast p1, LUm4;
+
+    .line 10
+    .line 11
+    iget-object p1, p1, LUm4;->a:Ljava/lang/Long;
+
+    .line 12
+    .line 13
+    invoke-direct {v0, p1}, LEP$Z0$m;-><init>(Ljava/lang/Long;)V
+
+    .line 14
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_0
+    instance-of v0, p1, LRm4;
+
+    .line 18
+    .line 19
+    if-eqz v0, :cond_1
+
+    .line 20
+    .line 21
+    new-instance v0, LEP$Z0$j;
+
+    .line 22
+    .line 23
+    check-cast p1, LRm4;
+
+    .line 24
+    .line 25
+    iget-object p1, p1, LRm4;->a:Ljava/lang/Long;
+
+    .line 26
+    .line 27
+    invoke-direct {v0, p1}, LEP$Z0$j;-><init>(Ljava/lang/Long;)V
+
+    .line 28
+    .line 29
+    .line 30
+    goto :goto_0
+
+    .line 31
+    :cond_1
+    instance-of v0, p1, LPm4;
+
+    .line 32
+    .line 33
+    if-eqz v0, :cond_2
+
+    .line 34
+    .line 35
+    new-instance v0, LEP$Z0$h;
+
+    .line 36
+    .line 37
+    check-cast p1, LPm4;
+
+    .line 38
+    .line 39
+    iget-object p1, p1, LPm4;->a:Ljava/lang/Long;
+
+    .line 40
+    .line 41
+    invoke-direct {v0, p1}, LEP$Z0$h;-><init>(Ljava/lang/Long;)V
+
+    .line 42
+    .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :cond_2
+    instance-of v0, p1, LSm4;
+
+    .line 46
+    .line 47
+    if-eqz v0, :cond_3
+
+    .line 48
+    .line 49
+    new-instance v0, LEP$Z0$k;
+
+    .line 50
+    .line 51
+    check-cast p1, LSm4;
+
+    .line 52
+    .line 53
+    iget-object p1, p1, LSm4;->a:Ljava/lang/Long;
+
+    .line 54
+    .line 55
+    invoke-direct {v0, p1}, LEP$Z0$k;-><init>(Ljava/lang/Long;)V
+
+    .line 56
+    .line 57
+    .line 58
+    goto :goto_0
+
+    .line 59
+    :cond_3
+    instance-of v0, p1, LTm4;
+
+    .line 60
+    .line 61
+    if-eqz v0, :cond_4
+
+    .line 62
+    .line 63
+    new-instance v0, LEP$Z0$l;
+
+    .line 64
+    .line 65
+    check-cast p1, LTm4;
+
+    .line 66
+    .line 67
+    iget-object p1, p1, LTm4;->a:Ljava/lang/Long;
+
+    .line 68
+    .line 69
+    invoke-direct {v0, p1}, LEP$Z0$l;-><init>(Ljava/lang/Long;)V
+
+    .line 70
+    .line 71
+    .line 72
+    goto :goto_0
+
+    .line 73
+    :cond_4
+    instance-of v0, p1, LQm4;
+
+    .line 74
+    .line 75
+    if-eqz v0, :cond_5
+
+    .line 76
+    .line 77
+    new-instance v0, LEP$Z0$i;
+
+    .line 78
+    .line 79
+    check-cast p1, LQm4;
+
+    .line 80
+    .line 81
+    iget-object p1, p1, LQm4;->a:Ljava/lang/Long;
+
+    .line 82
+    .line 83
+    invoke-direct {v0, p1}, LEP$Z0$i;-><init>(Ljava/lang/Long;)V
+
+    .line 84
+    .line 85
+    .line 86
+    :goto_0
+    iget-object p1, p0, Lwj0;->a:Lvi0;
+
+    .line 87
+    .line 88
+    iget-object p1, p1, Lvi0;->c:Ljava/lang/Object;
+
+    .line 89
+    .line 90
+    check-cast p1, LHP;
+
+    .line 91
+    .line 92
+    invoke-interface {p1, v0}, LHP;->a(LEP;)V
+
+    .line 93
+    .line 94
+    .line 95
+    return-void
+
+    .line 96
+    :cond_5
+    new-instance p1, LwOc;
+
+    .line 97
+    .line 98
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 99
+    .line 100
+    .line 101
+    throw p1
 .end method

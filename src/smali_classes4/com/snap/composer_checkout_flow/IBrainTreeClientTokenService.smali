@@ -1,15 +1,15 @@
 .class public final Lcom/snap/composer_checkout_flow/IBrainTreeClientTokenService;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'braintreeTokenizeCard\':f(s, r:\'[0]\', r:\'[1]\'): g<c>:\'[2]\'<s>"
     typeReferences = {
-        LEl9;,
-        Lnl9;,
+        Lsu9;,
+        LZt9;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
 .end annotation

@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -34,6 +34,8 @@
 .field private bitField0_:I
 
 .field private horizontalAccuracyMeters_:F
+
+.field private isBackgroundLocationSharingEnabled_:Z
 
 .field private isLiveLocation_:Z
 
@@ -59,7 +61,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -84,7 +86,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -147,7 +149,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -160,7 +162,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
 
     move-result-object p0
 
@@ -171,7 +173,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -292,17 +294,21 @@
 
     .line 47
     .line 48
-    iput-object v3, p0, Lo17;->unknownFieldData:LLo7;
+    iput-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isBackgroundLocationSharingEnabled_:Z
 
     .line 49
     .line 50
-    const/4 v0, -0x1
+    iput-object v3, p0, Le57;->unknownFieldData:LPt7;
 
     .line 51
+    .line 52
+    const/4 v0, -0x1
+
+    .line 53
     iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
-    .line 52
-    .line 53
+    .line 54
+    .line 55
     return-object p0
 .end method
 
@@ -348,6 +354,32 @@
     .line 5
     .line 6
     and-int/lit8 v0, v0, -0x5
+
+    .line 7
+    .line 8
+    iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    .line 9
+    .line 10
+    return-object p0
+.end method
+
+.method public clearIsBackgroundLocationSharingEnabled()Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isBackgroundLocationSharingEnabled_:Z
+
+    .line 3
+    .line 4
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    .line 5
+    .line 6
+    and-int/lit16 v0, v0, -0x201
 
     .line 7
     .line 8
@@ -545,10 +577,10 @@
 .end method
 
 .method public computeSerializedSize()I
-    .locals 6
+    .locals 7
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -574,7 +606,7 @@
 
     .line 12
     .line 13
-    invoke-static {v2, v1}, Lsa3;->q(ILjava/lang/String;)I
+    invoke-static {v2, v1}, Lbd3;->q(ILjava/lang/String;)I
 
     .line 14
     .line 15
@@ -604,7 +636,7 @@
 
     .line 25
     .line 26
-    invoke-static {v2, v3, v4}, Lsa3;->k(IJ)I
+    invoke-static {v2, v3, v4}, Lbd3;->k(IJ)I
 
     .line 27
     .line 28
@@ -660,7 +692,7 @@
     const/4 v4, 0x3
 
     .line 50
-    invoke-static {v4, v3}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v4, v3}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 51
     .line 52
@@ -694,7 +726,7 @@
 
     .line 63
     .line 64
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 65
     .line 66
@@ -720,7 +752,7 @@
     const/4 v1, 0x5
 
     .line 75
-    invoke-static {v1}, Lsa3;->h(I)I
+    invoke-static {v1}, Lbd3;->h(I)I
 
     .line 76
     .line 77
@@ -750,7 +782,7 @@
     const/4 v1, 0x7
 
     .line 88
-    invoke-static {v1}, Lsa3;->a(I)I
+    invoke-static {v1}, Lbd3;->a(I)I
 
     .line 89
     .line 90
@@ -766,280 +798,307 @@
 
     .line 94
     .line 95
-    and-int/lit8 v1, v1, 0x10
+    const/16 v4, 0x10
 
     .line 96
     .line 97
-    if-eqz v1, :cond_7
+    and-int/2addr v1, v4
 
     .line 98
+    if-eqz v1, :cond_7
+
     .line 99
-    iget-wide v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->liveSessionExpirationMs_:J
-
     .line 100
-    .line 101
-    invoke-static {v3, v4, v5}, Lsa3;->k(IJ)I
+    iget-wide v5, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->liveSessionExpirationMs_:J
 
+    .line 101
     .line 102
+    invoke-static {v3, v5, v6}, Lbd3;->k(IJ)I
+
     .line 103
     .line 104
+    .line 105
     move-result v1
 
-    .line 105
+    .line 106
     add-int/2addr v0, v1
 
-    .line 106
+    .line 107
     :cond_7
     iget v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 107
     .line 108
+    .line 109
     and-int/lit8 v1, v1, 0x20
 
-    .line 109
     .line 110
+    .line 111
     if-eqz v1, :cond_8
 
-    .line 111
     .line 112
+    .line 113
     const/16 v1, 0xa
 
-    .line 113
     .line 114
-    invoke-static {v1}, Lsa3;->a(I)I
-
     .line 115
+    invoke-static {v1}, Lbd3;->a(I)I
+
     .line 116
     .line 117
+    .line 118
     move-result v1
 
-    .line 118
+    .line 119
     add-int/2addr v0, v1
 
-    .line 119
+    .line 120
     :cond_8
     iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->locationAnnotations:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
-    .line 120
     .line 121
+    .line 122
     if-eqz v1, :cond_a
 
-    .line 122
     .line 123
+    .line 124
     array-length v1, v1
 
-    .line 124
+    .line 125
     if-lez v1, :cond_a
 
-    .line 125
     .line 126
+    .line 127
     const/4 v1, 0x0
 
-    .line 127
+    .line 128
     :goto_1
     iget-object v3, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->locationAnnotations:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
-    .line 128
     .line 129
-    array-length v4, v3
-
     .line 130
-    if-ge v1, v4, :cond_a
+    array-length v5, v3
 
     .line 131
+    if-ge v1, v5, :cond_a
+
     .line 132
+    .line 133
     aget-object v3, v3, v1
 
-    .line 133
     .line 134
+    .line 135
     if-eqz v3, :cond_9
 
-    .line 135
     .line 136
-    const/16 v4, 0xb
-
     .line 137
-    .line 138
-    invoke-static {v4, v3}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    const/16 v5, 0xb
 
+    .line 138
     .line 139
+    invoke-static {v5, v3}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
     .line 140
     .line 141
+    .line 142
     move-result v3
 
-    .line 142
+    .line 143
     add-int/2addr v3, v0
 
-    .line 143
+    .line 144
     move v0, v3
 
-    .line 144
+    .line 145
     :cond_9
     add-int/lit8 v1, v1, 0x1
 
-    .line 145
     .line 146
+    .line 147
     goto :goto_1
 
-    .line 147
+    .line 148
     :cond_a
     iget v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 148
     .line 149
+    .line 150
     and-int/lit8 v1, v1, 0x40
 
-    .line 150
     .line 151
+    .line 152
     if-eqz v1, :cond_b
 
-    .line 152
     .line 153
+    .line 154
     const/16 v1, 0xc
 
-    .line 154
     .line 155
-    iget-wide v3, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->lastActiveTimeSecs_:J
-
     .line 156
-    .line 157
-    invoke-static {v1, v3, v4}, Lsa3;->k(IJ)I
+    iget-wide v5, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->lastActiveTimeSecs_:J
 
+    .line 157
     .line 158
+    invoke-static {v1, v5, v6}, Lbd3;->k(IJ)I
+
     .line 159
     .line 160
+    .line 161
     move-result v1
 
-    .line 161
+    .line 162
     add-int/2addr v0, v1
 
-    .line 162
+    .line 163
     :cond_b
     iget v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 163
     .line 164
+    .line 165
     and-int/lit16 v1, v1, 0x80
 
-    .line 165
     .line 166
+    .line 167
     if-eqz v1, :cond_c
 
-    .line 167
     .line 168
+    .line 169
     const/16 v1, 0xd
 
-    .line 169
     .line 170
-    invoke-static {v1}, Lsa3;->h(I)I
-
     .line 171
+    invoke-static {v1}, Lbd3;->h(I)I
+
     .line 172
     .line 173
+    .line 174
     move-result v1
 
-    .line 174
+    .line 175
     add-int/2addr v0, v1
 
-    .line 175
+    .line 176
     :cond_c
     iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->accessories:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
-    .line 176
     .line 177
+    .line 178
     if-eqz v1, :cond_e
 
-    .line 178
     .line 179
+    .line 180
     array-length v1, v1
 
-    .line 180
+    .line 181
     if-lez v1, :cond_e
 
-    .line 181
     .line 182
+    .line 183
     :goto_2
     iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->accessories:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
-    .line 183
     .line 184
+    .line 185
     array-length v3, v1
 
-    .line 185
+    .line 186
     if-ge v2, v3, :cond_e
 
-    .line 186
     .line 187
+    .line 188
     aget-object v1, v1, v2
 
-    .line 188
     .line 189
+    .line 190
     if-eqz v1, :cond_d
 
-    .line 190
     .line 191
+    .line 192
     const/16 v3, 0xe
 
-    .line 192
     .line 193
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
     .line 194
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
     .line 195
     .line 196
+    .line 197
     move-result v1
 
-    .line 197
+    .line 198
     add-int/2addr v1, v0
 
-    .line 198
+    .line 199
     move v0, v1
 
-    .line 199
+    .line 200
     :cond_d
     add-int/lit8 v2, v2, 0x1
 
-    .line 200
     .line 201
+    .line 202
     goto :goto_2
 
-    .line 202
+    .line 203
     :cond_e
     iget v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 203
     .line 204
+    .line 205
     and-int/lit16 v1, v1, 0x100
 
-    .line 205
     .line 206
+    .line 207
     if-eqz v1, :cond_f
 
-    .line 207
     .line 208
+    .line 209
     const/16 v1, 0xf
 
-    .line 209
     .line 210
+    .line 211
     iget v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->priority_:I
 
-    .line 211
     .line 212
-    invoke-static {v1, v2}, Lsa3;->s(II)I
-
     .line 213
+    invoke-static {v1, v2}, Lbd3;->s(II)I
+
     .line 214
     .line 215
+    .line 216
     move-result v1
 
-    .line 216
-    add-int/2addr v1, v0
-
     .line 217
-    return v1
+    add-int/2addr v0, v1
 
     .line 218
     :cond_f
+    iget v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    .line 219
+    .line 220
+    and-int/lit16 v1, v1, 0x200
+
+    .line 221
+    .line 222
+    if-eqz v1, :cond_10
+
+    .line 223
+    .line 224
+    invoke-static {v4}, Lbd3;->a(I)I
+
+    .line 225
+    .line 226
+    .line 227
+    move-result v1
+
+    .line 228
+    add-int/2addr v1, v0
+
+    .line 229
+    return v1
+
+    .line 230
+    :cond_10
     return v0
 .end method
 
@@ -1059,6 +1118,17 @@
 
     .line 1
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->horizontalAccuracyMeters_:F
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getIsBackgroundLocationSharingEnabled()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isBackgroundLocationSharingEnabled_:Z
 
     .line 2
     .line 3
@@ -1180,6 +1250,35 @@
     .line 2
     .line 3
     and-int/lit8 v0, v0, 0x4
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    return v0
+.end method
+
+.method public hasIsBackgroundLocationSharingEnabled()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit16 v0, v0, 0x200
 
     .line 4
     .line 5
@@ -1402,7 +1501,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1411,14 +1510,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1429,7 +1528,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -1438,7 +1537,7 @@
     sparse-switch v0, :sswitch_data_0
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -1448,14 +1547,31 @@
 
     .line 4
     :sswitch_0
-    invoke-virtual {p1}, Lqa3;->q()I
+    invoke-virtual {p1}, LZc3;->g()Z
 
     move-result v0
 
+    iput-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isBackgroundLocationSharingEnabled_:Z
+
     .line 5
-    iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->priority_:I
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    or-int/lit16 v0, v0, 0x200
+
+    iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    goto :goto_0
 
     .line 6
+    :sswitch_1
+    invoke-virtual {p1}, LZc3;->r()I
+
+    move-result v0
+
+    .line 7
+    iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->priority_:I
+
+    .line 8
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x100
@@ -1464,15 +1580,15 @@
 
     goto :goto_0
 
-    :sswitch_1
+    :sswitch_2
     const/16 v0, 0x72
 
-    .line 7
-    invoke-static {p1, v0}, Ldw8;->E(Lqa3;I)I
+    .line 9
+    invoke-static {p1, v0}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
-    .line 8
+    .line 10
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->accessories:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
     if-nez v2, :cond_1
@@ -1487,12 +1603,12 @@
     :goto_1
     add-int/2addr v0, v3
 
-    .line 9
+    .line 11
     new-array v4, v0, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
     if-eqz v3, :cond_2
 
-    .line 10
+    .line 12
     invoke-static {v2, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_2
@@ -1501,24 +1617,24 @@
 
     if-ge v3, v1, :cond_3
 
-    .line 11
+    .line 13
     new-instance v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
     invoke-direct {v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;-><init>()V
 
     aput-object v1, v4, v3
 
-    .line 12
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 14
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 13
-    invoke-virtual {p1}, Lqa3;->u()I
+    .line 15
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 14
+    .line 16
     :cond_3
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
@@ -1526,23 +1642,23 @@
 
     aput-object v0, v4, v3
 
-    .line 15
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 17
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 16
+    .line 18
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->accessories:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
     goto :goto_0
 
-    .line 17
-    :sswitch_2
-    invoke-virtual {p1}, Lqa3;->i()F
+    .line 19
+    :sswitch_3
+    invoke-virtual {p1}, LZc3;->j()F
 
     move-result v0
 
     iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->batteryLevel_:F
 
-    .line 18
+    .line 20
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x80
@@ -1551,16 +1667,16 @@
 
     goto :goto_0
 
-    .line 19
-    :sswitch_3
-    invoke-virtual {p1}, Lqa3;->r()J
+    .line 21
+    :sswitch_4
+    invoke-virtual {p1}, LZc3;->s()J
 
     move-result-wide v0
 
-    .line 20
+    .line 22
     iput-wide v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->lastActiveTimeSecs_:J
 
-    .line 21
+    .line 23
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x40
@@ -1569,15 +1685,15 @@
 
     goto :goto_0
 
-    :sswitch_4
+    :sswitch_5
     const/16 v0, 0x5a
 
-    .line 22
-    invoke-static {p1, v0}, Ldw8;->E(Lqa3;I)I
+    .line 24
+    invoke-static {p1, v0}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
-    .line 23
+    .line 25
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->locationAnnotations:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
     if-nez v2, :cond_4
@@ -1592,12 +1708,12 @@
     :goto_3
     add-int/2addr v0, v3
 
-    .line 24
+    .line 26
     new-array v4, v0, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
     if-eqz v3, :cond_5
 
-    .line 25
+    .line 27
     invoke-static {v2, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_5
@@ -1606,24 +1722,24 @@
 
     if-ge v3, v1, :cond_6
 
-    .line 26
+    .line 28
     new-instance v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
     invoke-direct {v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;-><init>()V
 
     aput-object v1, v4, v3
 
-    .line 27
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 29
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 28
-    invoke-virtual {p1}, Lqa3;->u()I
+    .line 30
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_4
 
-    .line 29
+    .line 31
     :cond_6
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
@@ -1631,23 +1747,23 @@
 
     aput-object v0, v4, v3
 
-    .line 30
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 32
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 31
+    .line 33
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->locationAnnotations:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
     goto/16 :goto_0
 
-    .line 32
-    :sswitch_5
-    invoke-virtual {p1}, Lqa3;->f()Z
+    .line 34
+    :sswitch_6
+    invoke-virtual {p1}, LZc3;->g()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isLiveSessionIndefinite_:Z
 
-    .line 33
+    .line 35
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x20
@@ -1656,16 +1772,16 @@
 
     goto/16 :goto_0
 
-    .line 34
-    :sswitch_6
-    invoke-virtual {p1}, Lqa3;->r()J
+    .line 36
+    :sswitch_7
+    invoke-virtual {p1}, LZc3;->s()J
 
     move-result-wide v0
 
-    .line 35
+    .line 37
     iput-wide v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->liveSessionExpirationMs_:J
 
-    .line 36
+    .line 38
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x10
@@ -1674,15 +1790,15 @@
 
     goto/16 :goto_0
 
-    .line 37
-    :sswitch_7
-    invoke-virtual {p1}, Lqa3;->f()Z
+    .line 39
+    :sswitch_8
+    invoke-virtual {p1}, LZc3;->g()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isLiveLocation_:Z
 
-    .line 38
+    .line 40
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x8
@@ -1691,15 +1807,15 @@
 
     goto/16 :goto_0
 
-    .line 39
-    :sswitch_8
-    invoke-virtual {p1}, Lqa3;->i()F
+    .line 41
+    :sswitch_9
+    invoke-virtual {p1}, LZc3;->j()F
 
     move-result v0
 
     iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->horizontalAccuracyMeters_:F
 
-    .line 40
+    .line 42
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x4
@@ -1708,36 +1824,36 @@
 
     goto/16 :goto_0
 
-    .line 41
-    :sswitch_9
+    .line 43
+    :sswitch_a
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->sticker:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
     if-nez v0, :cond_7
 
-    .line 42
+    .line 44
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->sticker:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
-    .line 43
+    .line 45
     :cond_7
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->sticker:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    :sswitch_a
+    :sswitch_b
     const/16 v0, 0x1a
 
-    .line 44
-    invoke-static {p1, v0}, Ldw8;->E(Lqa3;I)I
+    .line 46
+    invoke-static {p1, v0}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
-    .line 45
+    .line 47
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->actionType:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ActionType;
 
     if-nez v2, :cond_8
@@ -1752,12 +1868,12 @@
     :goto_5
     add-int/2addr v0, v3
 
-    .line 46
+    .line 48
     new-array v4, v0, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ActionType;
 
     if-eqz v3, :cond_9
 
-    .line 47
+    .line 49
     invoke-static {v2, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_9
@@ -1766,24 +1882,24 @@
 
     if-ge v3, v1, :cond_a
 
-    .line 48
+    .line 50
     new-instance v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ActionType;
 
     invoke-direct {v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ActionType;-><init>()V
 
     aput-object v1, v4, v3
 
-    .line 49
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 51
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 50
-    invoke-virtual {p1}, Lqa3;->u()I
+    .line 52
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_6
 
-    .line 51
+    .line 53
     :cond_a
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ActionType;
 
@@ -1791,24 +1907,24 @@
 
     aput-object v0, v4, v3
 
-    .line 52
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 54
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 53
+    .line 55
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->actionType:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ActionType;
 
     goto/16 :goto_0
 
-    .line 54
-    :sswitch_b
-    invoke-virtual {p1}, Lqa3;->r()J
+    .line 56
+    :sswitch_c
+    invoke-virtual {p1}, LZc3;->s()J
 
     move-result-wide v0
 
-    .line 55
+    .line 57
     iput-wide v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->timestamp_:J
 
-    .line 56
+    .line 58
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x2
@@ -1817,15 +1933,15 @@
 
     goto/16 :goto_0
 
-    .line 57
-    :sswitch_c
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
+    .line 59
+    :sswitch_d
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->userId_:Ljava/lang/String;
 
-    .line 58
+    .line 60
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
@@ -1835,25 +1951,28 @@
     goto/16 :goto_0
 
     :goto_7
-    :sswitch_d
+    :sswitch_e
     return-object p0
+
+    nop
 
     :sswitch_data_0
     .sparse-switch
-        0x0 -> :sswitch_d
-        0xa -> :sswitch_c
-        0x10 -> :sswitch_b
-        0x1a -> :sswitch_a
-        0x22 -> :sswitch_9
-        0x2d -> :sswitch_8
-        0x38 -> :sswitch_7
-        0x40 -> :sswitch_6
-        0x50 -> :sswitch_5
-        0x5a -> :sswitch_4
-        0x60 -> :sswitch_3
-        0x6d -> :sswitch_2
-        0x72 -> :sswitch_1
-        0x78 -> :sswitch_0
+        0x0 -> :sswitch_e
+        0xa -> :sswitch_d
+        0x10 -> :sswitch_c
+        0x1a -> :sswitch_b
+        0x22 -> :sswitch_a
+        0x2d -> :sswitch_9
+        0x38 -> :sswitch_8
+        0x40 -> :sswitch_7
+        0x50 -> :sswitch_6
+        0x5a -> :sswitch_5
+        0x60 -> :sswitch_4
+        0x6d -> :sswitch_3
+        0x72 -> :sswitch_2
+        0x78 -> :sswitch_1
+        0x80 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -1893,6 +2012,29 @@
     .line 4
     .line 5
     or-int/lit8 p1, p1, 0x4
+
+    .line 6
+    .line 7
+    iput p1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public setIsBackgroundLocationSharingEnabled(Z)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isBackgroundLocationSharingEnabled_:Z
+
+    .line 2
+    .line 3
+    iget p1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
+    .line 4
+    .line 5
+    or-int/lit16 p1, p1, 0x200
 
     .line 6
     .line 7
@@ -2069,8 +2211,8 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
-    .locals 5
+.method public writeTo(Lbd3;)V
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -2096,7 +2238,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->R(ILjava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->R(ILjava/lang/String;)V
 
     .line 10
     .line 11
@@ -2120,7 +2262,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p1, v1, v2, v3}, Lsa3;->J(IJ)V
+    invoke-virtual {p1, v1, v2, v3}, Lbd3;->J(IJ)V
 
     .line 21
     .line 22
@@ -2170,7 +2312,7 @@
     const/4 v3, 0x3
 
     .line 42
-    invoke-virtual {p1, v3, v2}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v3, v2}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 43
     .line 44
@@ -2195,7 +2337,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 54
     .line 55
@@ -2219,7 +2361,7 @@
 
     .line 63
     .line 64
-    invoke-virtual {p1, v0, v2}, Lsa3;->G(IF)V
+    invoke-virtual {p1, v0, v2}, Lbd3;->G(IF)V
 
     .line 65
     .line 66
@@ -2247,7 +2389,7 @@
 
     .line 76
     .line 77
-    invoke-virtual {p1, v0, v3}, Lsa3;->z(IZ)V
+    invoke-virtual {p1, v0, v3}, Lbd3;->z(IZ)V
 
     .line 78
     .line 79
@@ -2257,241 +2399,266 @@
 
     .line 81
     .line 82
-    and-int/lit8 v0, v0, 0x10
+    const/16 v3, 0x10
 
     .line 83
     .line 84
-    if-eqz v0, :cond_7
+    and-int/2addr v0, v3
 
     .line 85
+    if-eqz v0, :cond_7
+
     .line 86
-    iget-wide v3, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->liveSessionExpirationMs_:J
-
     .line 87
-    .line 88
-    invoke-virtual {p1, v2, v3, v4}, Lsa3;->J(IJ)V
+    iget-wide v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->liveSessionExpirationMs_:J
 
+    .line 88
     .line 89
+    invoke-virtual {p1, v2, v4, v5}, Lbd3;->J(IJ)V
+
     .line 90
     .line 91
+    .line 92
     :cond_7
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 92
     .line 93
+    .line 94
     and-int/lit8 v0, v0, 0x20
 
-    .line 94
     .line 95
+    .line 96
     if-eqz v0, :cond_8
 
-    .line 96
     .line 97
+    .line 98
     const/16 v0, 0xa
 
-    .line 98
     .line 99
+    .line 100
     iget-boolean v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isLiveSessionIndefinite_:Z
 
-    .line 100
     .line 101
-    invoke-virtual {p1, v0, v2}, Lsa3;->z(IZ)V
-
     .line 102
+    invoke-virtual {p1, v0, v2}, Lbd3;->z(IZ)V
+
     .line 103
     .line 104
+    .line 105
     :cond_8
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->locationAnnotations:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
-    .line 105
     .line 106
+    .line 107
     if-eqz v0, :cond_a
 
-    .line 107
     .line 108
+    .line 109
     array-length v0, v0
 
-    .line 109
+    .line 110
     if-lez v0, :cond_a
 
-    .line 110
     .line 111
+    .line 112
     const/4 v0, 0x0
 
-    .line 112
+    .line 113
     :goto_1
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->locationAnnotations:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
-    .line 113
     .line 114
-    array-length v3, v2
-
     .line 115
-    if-ge v0, v3, :cond_a
+    array-length v4, v2
 
     .line 116
+    if-ge v0, v4, :cond_a
+
     .line 117
+    .line 118
     aget-object v2, v2, v0
 
-    .line 118
     .line 119
+    .line 120
     if-eqz v2, :cond_9
 
-    .line 120
     .line 121
-    const/16 v3, 0xb
-
     .line 122
-    .line 123
-    invoke-virtual {p1, v3, v2}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    const/16 v4, 0xb
 
+    .line 123
     .line 124
+    invoke-virtual {p1, v4, v2}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+
     .line 125
     .line 126
+    .line 127
     :cond_9
     add-int/lit8 v0, v0, 0x1
 
-    .line 127
     .line 128
+    .line 129
     goto :goto_1
 
-    .line 129
+    .line 130
     :cond_a
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 130
     .line 131
+    .line 132
     and-int/lit8 v0, v0, 0x40
 
-    .line 132
     .line 133
+    .line 134
     if-eqz v0, :cond_b
 
-    .line 134
     .line 135
+    .line 136
     const/16 v0, 0xc
 
-    .line 136
     .line 137
-    iget-wide v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->lastActiveTimeSecs_:J
-
     .line 138
-    .line 139
-    invoke-virtual {p1, v0, v2, v3}, Lsa3;->J(IJ)V
+    iget-wide v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->lastActiveTimeSecs_:J
 
+    .line 139
     .line 140
+    invoke-virtual {p1, v0, v4, v5}, Lbd3;->J(IJ)V
+
     .line 141
     .line 142
+    .line 143
     :cond_b
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 143
     .line 144
+    .line 145
     and-int/lit16 v0, v0, 0x80
 
-    .line 145
     .line 146
+    .line 147
     if-eqz v0, :cond_c
 
-    .line 147
     .line 148
+    .line 149
     const/16 v0, 0xd
 
-    .line 149
     .line 150
+    .line 151
     iget v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->batteryLevel_:F
 
-    .line 151
     .line 152
-    invoke-virtual {p1, v0, v2}, Lsa3;->G(IF)V
-
     .line 153
+    invoke-virtual {p1, v0, v2}, Lbd3;->G(IF)V
+
     .line 154
     .line 155
+    .line 156
     :cond_c
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->accessories:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
-    .line 156
     .line 157
+    .line 158
     if-eqz v0, :cond_e
 
-    .line 158
     .line 159
+    .line 160
     array-length v0, v0
 
-    .line 160
+    .line 161
     if-lez v0, :cond_e
 
-    .line 161
     .line 162
+    .line 163
     :goto_2
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->accessories:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MemberAccessory;
 
-    .line 163
     .line 164
+    .line 165
     array-length v2, v0
 
-    .line 165
+    .line 166
     if-ge v1, v2, :cond_e
 
-    .line 166
     .line 167
+    .line 168
     aget-object v0, v0, v1
 
-    .line 168
     .line 169
+    .line 170
     if-eqz v0, :cond_d
 
-    .line 170
     .line 171
+    .line 172
     const/16 v2, 0xe
 
-    .line 172
     .line 173
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
-
     .line 174
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+
     .line 175
     .line 176
+    .line 177
     :cond_d
     add-int/lit8 v1, v1, 0x1
 
-    .line 177
     .line 178
+    .line 179
     goto :goto_2
 
-    .line 179
+    .line 180
     :cond_e
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
 
-    .line 180
     .line 181
+    .line 182
     and-int/lit16 v0, v0, 0x100
 
-    .line 182
     .line 183
+    .line 184
     if-eqz v0, :cond_f
 
-    .line 184
     .line 185
+    .line 186
     const/16 v0, 0xf
 
-    .line 186
     .line 187
+    .line 188
     iget v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->priority_:I
 
-    .line 188
     .line 189
-    invoke-virtual {p1, v0, v1}, Lsa3;->T(II)V
-
     .line 190
+    invoke-virtual {p1, v0, v1}, Lbd3;->T(II)V
+
     .line 191
     .line 192
-    :cond_f
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
     .line 193
+    :cond_f
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->bitField0_:I
+
     .line 194
     .line 195
+    and-int/lit16 v0, v0, 0x200
+
+    .line 196
+    .line 197
+    if-eqz v0, :cond_10
+
+    .line 198
+    .line 199
+    iget-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClusterMember;->isBackgroundLocationSharingEnabled_:Z
+
+    .line 200
+    .line 201
+    invoke-virtual {p1, v3, v0}, Lbd3;->z(IZ)V
+
+    .line 202
+    .line 203
+    .line 204
+    :cond_10
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 205
+    .line 206
+    .line 207
     return-void
 .end method

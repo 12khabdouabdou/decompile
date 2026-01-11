@@ -25,7 +25,7 @@
     const/4 v1, 0x0
 
     .line 3
-    invoke-direct {p0, v0, v1}, Lapp/aifactory/sdk/api/model/BloopFrames;-><init>(ILHr5;)V
+    invoke-direct {p0, v0, v1}, Lapp/aifactory/sdk/api/model/BloopFrames;-><init>(ILex5;)V
 
     .line 4
     .line 5

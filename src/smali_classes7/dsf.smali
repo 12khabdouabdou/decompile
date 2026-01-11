@@ -2,39 +2,20 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/animation/Animator$AnimatorListener;
+
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final synthetic a:I
 
-.field public final b:Ld25;
+.field public final synthetic b:Lalh;
 
-.field public final c:Ld25;
-
-.field public final d:Lbke;
-
-.field public final e:Ld25;
-
-.field public final f:LaP5;
-
-.field public final g:LUS5;
-
-.field public final h:Lbm0;
-
-.field public final i:LJ7d;
-
-.field public final j:LpC3;
-
-.field public final k:LB73;
-
-.field public final l:LOa1;
-
-.field public final m:LWm0;
-
-.field public final n:LXfi;
+.field public final synthetic c:Lcom/snap/opera/view/basics/RotateLayout;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ld25;Ld25;Lbke;Ld25;LaP5;LUS5;Ld25;Lbm0;LJ7d;LpC3;LB73;LOa1;Lnwf;)V
+.method public constructor <init>(Lcom/snap/opera/view/basics/RotateLayout;ILalh;)V
     .locals 0
 
     .line 1
@@ -43,99 +24,155 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ldsf;->a:Landroid/content/Context;
+    iput-object p1, p0, Ldsf;->c:Lcom/snap/opera/view/basics/RotateLayout;
 
     .line 5
     .line 6
-    iput-object p2, p0, Ldsf;->b:Ld25;
+    iput p2, p0, Ldsf;->a:I
 
     .line 7
     .line 8
-    iput-object p3, p0, Ldsf;->c:Ld25;
+    iput-object p3, p0, Ldsf;->b:Lalh;
 
     .line 9
     .line 10
-    iput-object p4, p0, Ldsf;->d:Lbke;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, Ldsf;->c:Lcom/snap/opera/view/basics/RotateLayout;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    iput-boolean v0, p1, Lcom/snap/opera/view/basics/RotateLayout;->e0:Z
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 3
+
+    .line 1
+    iget-object p1, p0, Ldsf;->c:Lcom/snap/opera/view/basics/RotateLayout;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x0
+
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/view/View;->setRotation(F)V
+
+    .line 5
+    .line 6
+    .line 7
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v0}, Landroid/view/View;->setScaleX(F)V
+
+    .line 10
     .line 11
     .line 12
-    iput-object p5, p0, Ldsf;->e:Ld25;
+    invoke-virtual {p1, v0}, Landroid/view/View;->setScaleY(F)V
 
     .line 13
     .line 14
-    iput-object p6, p0, Ldsf;->f:LaP5;
-
     .line 15
+    iget v0, p1, Lcom/snap/opera/view/basics/RotateLayout;->c:I
+
     .line 16
-    iput-object p7, p0, Ldsf;->g:LUS5;
-
     .line 17
+    iget v1, p0, Ldsf;->a:I
+
     .line 18
-    iput-object p9, p0, Ldsf;->h:Lbm0;
-
     .line 19
-    .line 20
-    iput-object p10, p0, Ldsf;->i:LJ7d;
+    if-ne v0, v1, :cond_0
 
+    .line 20
     .line 21
+    goto :goto_0
+
     .line 22
-    iput-object p11, p0, Ldsf;->j:LpC3;
+    :cond_0
+    const/4 v0, 0x1
 
     .line 23
+    iput-boolean v0, p1, Lcom/snap/opera/view/basics/RotateLayout;->f0:Z
+
     .line 24
-    iput-object p12, p0, Ldsf;->k:LB73;
-
     .line 25
+    iput v1, p1, Lcom/snap/opera/view/basics/RotateLayout;->c:I
+
     .line 26
-    iput-object p13, p0, Ldsf;->l:LOa1;
-
     .line 27
-    .line 28
-    sget-object p1, LiQd;->Z:LiQd;
+    invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
+    .line 28
     .line 29
     .line 30
-    const-string p2, "ScanController"
+    :goto_0
+    iget v0, p1, Lcom/snap/opera/view/basics/RotateLayout;->t:I
 
     .line 31
     .line 32
-    invoke-static {p1, p1, p2}, Llva;->l(LiQd;LiQd;Ljava/lang/String;)LWm0;
+    iget-object v2, p0, Ldsf;->b:Lalh;
 
     .line 33
     .line 34
-    .line 35
-    move-result-object p1
+    if-eq v1, v0, :cond_1
 
+    .line 35
     .line 36
-    iput-object p1, p0, Ldsf;->m:LWm0;
+    invoke-virtual {p1, v2}, Lcom/snap/opera/view/basics/RotateLayout;->a(Lalh;)V
 
     .line 37
     .line 38
-    new-instance p1, Lrof;
-
     .line 39
+    return-void
+
     .line 40
-    const/16 p2, 0x12
+    :cond_1
+    const/4 v0, 0x0
 
     .line 41
-    .line 42
-    invoke-direct {p1, p14, p2, p0}, Lrof;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    iput-boolean v0, p1, Lcom/snap/opera/view/basics/RotateLayout;->e0:Z
 
+    .line 42
     .line 43
+    if-eqz v2, :cond_2
+
     .line 44
     .line 45
-    new-instance p2, LXfi;
+    invoke-virtual {v2}, Lalh;->run()V
 
     .line 46
     .line 47
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
     .line 48
-    .line 49
-    .line 50
-    iput-object p2, p0, Ldsf;->n:LXfi;
+    :cond_2
+    return-void
+.end method
 
-    .line 51
-    .line 52
+.method public final onAnimationRepeat(Landroid/animation/Animator;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 0
+
+    .line 1
     return-void
 .end method

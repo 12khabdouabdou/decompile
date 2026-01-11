@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -85,7 +85,7 @@
 
     .line 16
     .line 17
-    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/subscriptions/DeferredScalarSubscription;-><init>(LV6i;)V
+    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/subscriptions/DeferredScalarSubscription;-><init>(Lmvi;)V
 
     .line 18
     .line 19
@@ -138,12 +138,12 @@
 
     .line 39
     .line 40
-    invoke-interface {p1, v1}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v1}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 41
     .line 42
     .line 43
-    invoke-interface {p1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 44
     .line 45

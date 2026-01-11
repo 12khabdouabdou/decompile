@@ -7,35 +7,35 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView<",
-        "LZRd;",
-        "LYRd;",
+        "Lp9e;",
+        "Lo9e;",
         "Lcom/snap/music/core/composer/MusicPill;",
-        "Leac;",
-        "Laac;",
+        "LNoc;",
+        "LJoc;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final j:LZRd;
+.field public final j:Lp9e;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LqZ8;)V
+.method public constructor <init>(Landroid/content/Context;LZ69;)V
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;-><init>(Landroid/content/Context;LqZ8;)V
+    invoke-direct {p0, p1, p2}, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;-><init>(Landroid/content/Context;LZ69;)V
 
     .line 2
     .line 3
     .line 4
-    new-instance p1, LZRd;
+    new-instance p1, Lp9e;
 
     .line 5
     .line 6
-    new-instance p2, LVRd;
+    new-instance p2, Ll9e;
 
     .line 7
     .line 8
@@ -45,36 +45,36 @@
     const/4 v1, 0x0
 
     .line 10
-    invoke-direct {p2, v1, v1, v0, v0}, LVRd;-><init>(Lcom/snap/music/core/composer/PickerTrack;Ljava/lang/String;ZZ)V
+    invoke-direct {p2, v1, v1, v0, v0}, Ll9e;-><init>(Lcom/snap/music/core/composer/PickerTrack;Ljava/lang/String;ZZ)V
 
     .line 11
     .line 12
     .line 13
-    invoke-direct {p1, p2}, LZRd;-><init>(LVRd;)V
+    invoke-direct {p1, p2}, Lp9e;-><init>(Ll9e;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object p1, p0, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->j:LZRd;
+    iput-object p1, p0, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->j:Lp9e;
 
     .line 17
     .line 18
     return-void
 .end method
 
-.method public static o(LZRd;)Leac;
+.method public static o(Lp9e;)LNoc;
     .locals 2
 
     .line 1
-    new-instance v0, Leac;
+    new-instance v0, LNoc;
 
     .line 2
     .line 3
-    iget-object p0, p0, LZRd;->a:LVRd;
+    iget-object p0, p0, Lp9e;->a:Ll9e;
 
     .line 4
     .line 5
-    iget-object v1, p0, LVRd;->a:Lcom/snap/music/core/composer/PickerTrack;
+    iget-object v1, p0, Ll9e;->a:Lcom/snap/music/core/composer/PickerTrack;
 
     .line 6
     .line 7
@@ -82,7 +82,7 @@
 
     .line 8
     .line 9
-    iget-boolean p0, p0, LVRd;->c:Z
+    iget-boolean p0, p0, Ll9e;->c:Z
 
     .line 10
     .line 11
@@ -108,7 +108,7 @@
     .line 18
     .line 19
     :goto_1
-    invoke-direct {v0, p0, v1}, Leac;-><init>(Lcom/snap/music/core/composer/MusicPillStyles;Lcom/snap/music/core/composer/PickerTrack;)V
+    invoke-direct {v0, p0, v1}, LNoc;-><init>(Lcom/snap/music/core/composer/MusicPillStyles;Lcom/snap/music/core/composer/PickerTrack;)V
 
     .line 20
     .line 21
@@ -117,25 +117,20 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0, p0}, Leac;->e(Lcom/snap/music/core/composer/MusicPillAnimationType;)V
+    invoke-virtual {v0, p0}, LNoc;->d(Lcom/snap/music/core/composer/MusicPillAnimationType;)V
 
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0}, Leac;->c()V
+    const-string p0, "GALLERY_BROWSE_SNAP"
 
     .line 28
     .line 29
-    .line 30
-    const-string p0, "GALLERY_BROWSE_SNAP"
+    invoke-virtual {v0, p0}, LNoc;->h(Ljava/lang/String;)V
 
+    .line 30
     .line 31
     .line 32
-    invoke-virtual {v0, p0}, Leac;->i(Ljava/lang/String;)V
-
-    .line 33
-    .line 34
-    .line 35
     return-object v0
 .end method
 
@@ -145,7 +140,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->j:LZRd;
+    iget-object v0, p0, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->j:Lp9e;
 
     .line 2
     .line 3
@@ -156,11 +151,11 @@
     .locals 5
 
     .line 1
-    new-instance v0, LqXc;
+    new-instance v0, Llcd;
 
     .line 2
     .line 3
-    iget-object v1, p0, LPG9;->a:Landroid/content/Context;
+    iget-object v1, p0, LoS9;->a:Landroid/content/Context;
 
     .line 4
     .line 5
@@ -191,7 +186,7 @@
 
     .line 17
     .line 18
-    invoke-static {v4, v1, v3}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v4, v1, v3}, LTVd;->v(FLandroid/content/Context;Z)I
 
     .line 19
     .line 20
@@ -204,7 +199,7 @@
     .line 23
     .line 24
     .line 25
-    iget-object v1, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:LA4f;
+    iget-object v1, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:Lvmf;
 
     .line 26
     .line 27
@@ -228,56 +223,56 @@
     .locals 5
 
     .line 1
-    new-instance v0, LaSd;
+    new-instance v0, Lq9e;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, LaSd;-><init>(Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;)V
+    invoke-direct {v0, p0}, Lq9e;-><init>(Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;)V
 
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lhb6;
+    new-instance v1, Lse6;
 
     .line 7
     .line 8
     const/4 v2, 0x1
 
     .line 9
-    invoke-direct {v1, v2}, Lhb6;-><init>(I)V
+    invoke-direct {v1, v2}, Lse6;-><init>(I)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v2, Lib6;
+    new-instance v2, Lte6;
 
     .line 13
     .line 14
     const/4 v3, 0x1
 
     .line 15
-    invoke-direct {v2, v3}, Lib6;-><init>(I)V
+    invoke-direct {v2, v3}, Lte6;-><init>(I)V
 
     .line 16
     .line 17
     .line 18
-    new-instance v3, Ljb6;
+    new-instance v3, Lue6;
 
     .line 19
     .line 20
     const/4 v4, 0x1
 
     .line 21
-    invoke-direct {v3, v4}, Ljb6;-><init>(I)V
+    invoke-direct {v3, v4}, Lue6;-><init>(I)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v4, Laac;
+    new-instance v4, LJoc;
 
     .line 25
     .line 26
-    invoke-direct {v4, v1, v2, v3, v0}, Laac;-><init>(Lcom/snap/music/core/composer/IAudioDataLoader;Lcom/snap/composer/music/INotificationPresenter;Lcom/snap/composer/blizzard/Logging;Lcom/snap/music/core/composer/IMusicPillActionHandler;)V
+    invoke-direct {v4, v1, v2, v3, v0}, LJoc;-><init>(Lcom/snap/music/core/composer/IAudioDataLoader;Lcom/snap/composer/music/INotificationPresenter;Lcom/snap/composer/blizzard/Logging;Lcom/snap/music/core/composer/IMusicPillActionHandler;)V
 
     .line 27
     .line 28
@@ -285,30 +280,30 @@
     return-object v4
 .end method
 
-.method public final m(LqZ8;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
+.method public final m(LZ69;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
     .locals 6
 
     .line 1
-    check-cast p2, Leac;
+    check-cast p2, LNoc;
 
     .line 2
     .line 3
     move-object v3, p3
 
     .line 4
-    check-cast v3, Laac;
+    check-cast v3, LJoc;
 
     .line 5
     .line 6
-    sget-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LY9c;
+    sget-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LHoc;
 
     .line 7
     .line 8
-    iget-object p2, p0, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->j:LZRd;
+    iget-object p2, p0, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->j:Lp9e;
 
     .line 9
     .line 10
-    invoke-static {p2}, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->o(LZRd;)Leac;
+    invoke-static {p2}, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->o(Lp9e;)LNoc;
 
     .line 11
     .line 12
@@ -326,7 +321,7 @@
     move-object v1, p1
 
     .line 18
-    invoke-static/range {v0 .. v5}, LY9c;->b(LY9c;LqZ8;Leac;Laac;LTB3;I)Lcom/snap/music/core/composer/MusicPill;
+    invoke-static/range {v0 .. v5}, LHoc;->b(LHoc;LZ69;LNoc;LJoc;LvF3;I)Lcom/snap/music/core/composer/MusicPill;
 
     .line 19
     .line 20
@@ -358,7 +353,7 @@
 
     .line 33
     .line 34
-    invoke-static {v0, p3}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {v0, p3}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 35
     .line 36
@@ -381,7 +376,7 @@
     move-result-object p3
 
     .line 45
-    invoke-static {v0, p3}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {v0, p3}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 46
     .line 47
@@ -408,7 +403,7 @@
     move-result-object v0
 
     .line 58
-    invoke-static {p3, v0}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {p3, v0}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 59
     .line 60
@@ -435,11 +430,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, LZRd;
+    check-cast p1, Lp9e;
 
     .line 2
     .line 3
-    invoke-static {p1}, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->o(LZRd;)Leac;
+    invoke-static {p1}, Lcom/snap/preview/opera/layer/recommendation/PreviewMusicRecommendationLayerView;->o(Lp9e;)LNoc;
 
     .line 4
     .line 5

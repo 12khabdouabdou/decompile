@@ -1,49 +1,62 @@
-.class public abstract synthetic LeK5;
+.class public final LeK5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LB67;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:LaK5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LaK5;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
-
     .line 3
     .line 4
-    .line 5
-    move-result-object v1
+    iput-object p1, p0, LeK5;->a:LaK5;
 
+    .line 5
     .line 6
-    array-length v1, v1
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lf77;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LeK5;->a:LaK5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LaK5;->a(Lf77;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
     .line 7
-    new-array v1, v1, [I
+    check-cast p1, Lio/reactivex/rxjava3/core/ObservableTransformer;
 
     .line 8
     .line 9
-    const/4 v2, 0x0
+    new-instance v0, LUA5;
 
     .line 10
-    :try_start_0
-    aput v0, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 11
-    .line 12
-    :catch_0
-    sput-object v1, LeK5;->a:[I
+    invoke-direct {v0, p1}, LUA5;-><init>(Lio/reactivex/rxjava3/core/ObservableTransformer;)V
 
+    .line 12
     .line 13
     .line 14
-    return-void
+    return-object v0
 .end method

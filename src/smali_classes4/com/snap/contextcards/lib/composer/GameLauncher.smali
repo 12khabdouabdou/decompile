@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LQ68;
+    proxyClass = Lld8;
     schema = "\'launchGame\':f|m|(r:\'[0]\', r?:\'[1]\')"
     typeReferences = {
         Lcom/snap/contextcards/lib/composer/GameLaunchInfo;,

@@ -1,165 +1,123 @@
 .class public final LZUd;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'title\':s,\'firstOptionLabel\':s?,\'secondOptionLabel\':s?,\'emojiSections\':a?<r:\'[0]\'>"
+    typeReferences = {
+        LaO6;
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field private _emojiSections:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "LaO6;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final synthetic b:LCDh;
+.field private _firstOptionLabel:Ljava/lang/String;
+
+.field private _secondOptionLabel:Ljava/lang/String;
+
+.field private _title:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(LCDh;I)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LZUd;->a:I
-
-    iput-object p1, p0, LZUd;->b:LCDh;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, LZUd;->_title:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput-object p1, p0, LZUd;->_firstOptionLabel:Ljava/lang/String;
+
+    .line 4
+    iput-object p1, p0, LZUd;->_secondOptionLabel:Ljava/lang/String;
+
+    .line 5
+    iput-object p1, p0, LZUd;->_emojiSections:Ljava/util/List;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "LaO6;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    iput-object p1, p0, LZUd;->_title:Ljava/lang/String;
+
+    .line 8
+    iput-object p2, p0, LZUd;->_firstOptionLabel:Ljava/lang/String;
+
+    .line 9
+    iput-object p3, p0, LZUd;->_secondOptionLabel:Ljava/lang/String;
+
+    .line 10
+    iput-object p4, p0, LZUd;->_emojiSections:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final a(Ljava/util/ArrayList;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, LZUd;->a:I
+    iput-object p1, p0, LZUd;->_emojiSections:Ljava/util/List;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, LZUd;->b:LCDh;
-
-    .line 7
-    .line 8
-    instance-of v1, v0, LRxh;
-
-    .line 9
-    .line 10
-    if-eqz v1, :cond_0
-
-    .line 11
-    .line 12
-    check-cast v0, LRxh;
-
-    .line 13
-    .line 14
-    goto :goto_0
-
-    .line 15
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 16
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 17
-    .line 18
-    invoke-virtual {v0}, LRxh;->B()V
-
-    .line 19
-    .line 20
-    .line 21
-    :cond_1
     return-void
+.end method
 
-    .line 22
-    :pswitch_0
-    iget-object v0, p0, LZUd;->b:LCDh;
+.method public final b(Ljava/lang/String;)V
+    .locals 0
 
-    .line 23
-    .line 24
-    instance-of v1, v0, LRxh;
+    .line 1
+    iput-object p1, p0, LZUd;->_firstOptionLabel:Ljava/lang/String;
 
-    .line 25
-    .line 26
-    if-eqz v1, :cond_2
-
-    .line 27
-    .line 28
-    check-cast v0, LRxh;
-
-    .line 29
-    .line 30
-    goto :goto_1
-
-    .line 31
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 32
-    :goto_1
-    if-eqz v0, :cond_3
-
-    .line 33
-    .line 34
-    invoke-virtual {v0}, LRxh;->B()V
-
-    .line 35
-    .line 36
-    .line 37
-    :cond_3
+    .line 2
+    .line 3
     return-void
+.end method
 
-    .line 38
-    :pswitch_1
-    iget-object v0, p0, LZUd;->b:LCDh;
+.method public final c(Ljava/lang/String;)V
+    .locals 0
 
-    .line 39
-    .line 40
-    instance-of v1, v0, LRxh;
+    .line 1
+    iput-object p1, p0, LZUd;->_secondOptionLabel:Ljava/lang/String;
 
-    .line 41
-    .line 42
-    if-eqz v1, :cond_4
-
-    .line 43
-    .line 44
-    check-cast v0, LRxh;
-
-    .line 45
-    .line 46
-    goto :goto_2
-
-    .line 47
-    :cond_4
-    const/4 v0, 0x0
-
-    .line 48
-    :goto_2
-    if-eqz v0, :cond_5
-
-    .line 49
-    .line 50
-    invoke-virtual {v0}, LRxh;->B()V
-
-    .line 51
-    .line 52
-    .line 53
-    :cond_5
+    .line 2
+    .line 3
     return-void
-
-    .line 54
-    nop
-
-    .line 55
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

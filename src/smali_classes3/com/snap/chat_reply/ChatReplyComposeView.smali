@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LUM2;",
+        "LsP2;",
         "Ljava/lang/Object;",
         ">;"
     }
@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final Companion:LRM2;
+.field public static final Companion:LpP2;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LRM2;
+    new-instance v0, LpP2;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/chat_reply/ChatReplyComposeView;->Companion:LRM2;
+    sput-object v0, Lcom/snap/chat_reply/ChatReplyComposeView;->Companion:LpP2;
 
     .line 7
     .line 8
@@ -62,32 +62,15 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/chat_reply/ChatReplyComposeView;
-    .locals 1
-
-    sget-object v0, Lcom/snap/chat_reply/ChatReplyComposeView;->Companion:LRM2;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {p0, v0, v0, p1, v0}, LRM2;->a(LqZ8;LUM2;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/ChatReplyComposeView;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;LUM2;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/ChatReplyComposeView;
+.method public static final create(LZ69;LsP2;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/ChatReplyComposeView;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LUM2;",
+            "LZ69;",
+            "LsP2;",
             "Ljava/lang/Object;",
-            "LTB3;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/chat_reply/ChatReplyComposeView;"
@@ -95,11 +78,28 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/chat_reply/ChatReplyComposeView;->Companion:LRM2;
+    sget-object v0, Lcom/snap/chat_reply/ChatReplyComposeView;->Companion:LpP2;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2, p3, p4}, LRM2;->a(LqZ8;LUM2;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/ChatReplyComposeView;
+    invoke-static {p0, p1, p2, p3, p4}, LpP2;->a(LZ69;LsP2;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/ChatReplyComposeView;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/chat_reply/ChatReplyComposeView;
+    .locals 1
+
+    sget-object v0, Lcom/snap/chat_reply/ChatReplyComposeView;->Companion:LpP2;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, LpP2;->a(LZ69;LsP2;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/ChatReplyComposeView;
 
     move-result-object p0
 

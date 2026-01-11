@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LDpe;
+    proxyClass = LrHe;
     schema = "\'getPublisherWatchStateStore\':f|m|(r:\'[0]\', f|s|(r?:\'[1]\', r?:\'[2]\'))"
     typeReferences = {
         Lcom/snap/composer/stories/GetPublisherWatchStateStoreRequest;,
-        LCpe;,
+        LqHe;,
         Lcom/snap/composer/foundation/Error;
     }
 .end annotation

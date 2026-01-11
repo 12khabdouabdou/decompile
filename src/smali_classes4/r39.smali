@@ -3,26 +3,50 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/snap/impala/common/media/IImageFactory;
+.implements Lcom/snap/composer/lenses/ILensActionHandler;
 
 
 # instance fields
-.field public final X:LBre;
+.field public final X:Lkotlin/jvm/functions/Function4;
 
-.field public final Y:LXfi;
+.field public final Y:Lkotlin/jvm/functions/Function3;
 
-.field public final a:LiZ0;
+.field public final Z:Lkotlin/jvm/functions/Function3;
 
-.field public final b:LVY0;
+.field public final a:Lkotlin/jvm/functions/Function0;
 
-.field public final c:Lnwf;
+.field public final b:Lkotlin/jvm/functions/Function1;
 
-.field public final t:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public final c:Lkotlin/jvm/functions/Function1;
+
+.field public final e0:Lkotlin/jvm/functions/Function2;
+
+.field public final f0:Lkotlin/jvm/functions/Function1;
+
+.field public final g0:Lkotlin/jvm/functions/Function2;
+
+.field public final t:Lkotlin/jvm/functions/Function2;
 
 
 # direct methods
-.method public constructor <init>(LiZ0;LVY0;Lnwf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function4;",
+            "Lkotlin/jvm/functions/Function3;",
+            "Lkotlin/jvm/functions/Function3;",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function2;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -30,158 +54,225 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lr39;->a:LiZ0;
+    iput-object p1, p0, Lr39;->a:Lkotlin/jvm/functions/Function0;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lr39;->b:LVY0;
+    iput-object p2, p0, Lr39;->b:Lkotlin/jvm/functions/Function1;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lr39;->c:Lnwf;
+    iput-object p3, p0, Lr39;->c:Lkotlin/jvm/functions/Function1;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lr39;->t:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iput-object p4, p0, Lr39;->t:Lkotlin/jvm/functions/Function2;
 
     .line 11
     .line 12
-    sget-object p1, LB79;->Z:LB79;
+    iput-object p5, p0, Lr39;->X:Lkotlin/jvm/functions/Function4;
 
     .line 13
     .line 14
-    check-cast p3, LIP5;
+    iput-object p6, p0, Lr39;->Y:Lkotlin/jvm/functions/Function3;
 
     .line 15
     .line 16
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-object p7, p0, Lr39;->Z:Lkotlin/jvm/functions/Function3;
 
     .line 17
     .line 18
+    iput-object p8, p0, Lr39;->e0:Lkotlin/jvm/functions/Function2;
+
     .line 19
-    const-string p2, "ImageFactory"
-
     .line 20
-    .line 21
-    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
+    iput-object p9, p0, Lr39;->f0:Lkotlin/jvm/functions/Function1;
 
+    .line 21
     .line 22
+    iput-object p10, p0, Lr39;->g0:Lkotlin/jvm/functions/Function2;
+
     .line 23
     .line 24
-    move-result-object p1
-
-    .line 25
-    iput-object p1, p0, Lr39;->X:LBre;
-
-    .line 26
-    .line 27
-    new-instance p1, LqA8;
-
-    .line 28
-    .line 29
-    const/16 p2, 0x13
-
-    .line 30
-    .line 31
-    invoke-direct {p1, p2, p0}, LqA8;-><init>(ILjava/lang/Object;)V
-
-    .line 32
-    .line 33
-    .line 34
-    new-instance p2, LXfi;
-
-    .line 35
-    .line 36
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 37
-    .line 38
-    .line 39
-    iput-object p2, p0, Lr39;->Y:LXfi;
-
-    .line 40
-    .line 41
     return-void
 .end method
 
 
 # virtual methods
-.method public final getImageFromData([BLkotlin/jvm/functions/Function2;)V
-    .locals 6
+.method public applyLens(Lcom/snap/composer/lenses/LensItem;Lcom/snap/composer/lenses/AnalyticsContext;Lcom/snap/composer/lenses/LensActivationSourceContext;)V
+    .locals 1
 
     .line 1
-    if-nez p2, :cond_0
+    iget-object v0, p0, Lr39;->Y:Lkotlin/jvm/functions/Function3;
 
     .line 2
     .line 3
-    return-void
+    if-eqz v0, :cond_0
 
     .line 4
-    :cond_0
-    new-instance v0, LfY5;
-
     .line 5
-    .line 6
-    const/16 v5, 0x11
+    invoke-interface {v0, p1, p2, p3}, Lkotlin/jvm/functions/Function3;->H(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 6
     .line 7
     .line 8
-    const/4 v4, 0x0
+    :cond_0
+    return-void
+.end method
 
-    .line 9
-    move-object v2, p0
+.method public openLensExplorer()V
+    .locals 1
 
-    .line 10
-    move-object v1, p1
+    .line 1
+    iget-object v0, p0, Lr39;->a:Lkotlin/jvm/functions/Function0;
 
-    .line 11
-    move-object v3, p2
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
-    .line 12
-    invoke-direct/range {v0 .. v5}, LfY5;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZI)V
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
-    .line 13
-    .line 14
-    .line 15
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromRunnable;
+.method public openLensExplorerFeed(Ljava/lang/String;)V
+    .locals 1
 
-    .line 16
-    .line 17
-    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromRunnable;-><init>(Ljava/lang/Runnable;)V
+    .line 1
+    iget-object v0, p0, Lr39;->b:Lkotlin/jvm/functions/Function1;
 
-    .line 18
-    .line 19
-    .line 20
-    iget-object p2, v2, Lr39;->X:LBre;
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 21
-    .line 22
-    invoke-virtual {p2}, LBre;->d()LF06;
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
-    .line 23
-    .line 24
-    .line 25
-    move-result-object p2
+.method public openLensInfoCard(Lcom/snap/composer/lenses/LensItem;Lcom/snap/composer/lenses/AnalyticsContext;)V
+    .locals 1
 
-    .line 26
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+    .line 1
+    iget-object v0, p0, Lr39;->g0:Lkotlin/jvm/functions/Function2;
 
-    .line 27
-    .line 28
-    invoke-direct {v0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 29
-    .line 30
-    .line 31
-    iget-object p1, v2, Lr39;->t:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .line 4
+    .line 5
+    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 32
-    .line 33
-    invoke-static {v0, p1}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
 
-    .line 34
-    .line 35
-    .line 36
+.method public presentLens(Lcom/snap/composer/lenses/LensItem;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lr39;->c:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public presentLensWithContext(Lcom/snap/composer/lenses/LensItem;Lcom/snap/composer/lenses/AnalyticsContext;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lr39;->t:Lkotlin/jvm/functions/Function2;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public presentLensesWithContext(Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/lenses/LensItem;Lcom/snap/composer/lenses/AnalyticsContext;Lkotlin/jvm/functions/Function0;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Lcom/snap/composer/lenses/LensItem;",
+            ">;>;",
+            "Lcom/snap/composer/lenses/LensItem;",
+            "Lcom/snap/composer/lenses/AnalyticsContext;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lr39;->X:Lkotlin/jvm/functions/Function4;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1, p2, p3, p4}, Lkotlin/jvm/functions/Function4;->o(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public presentPostToStoryLensWithContext(Lcom/snap/composer/lenses/LensItem;Lcom/snap/composer/lenses/AnalyticsContext;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lr39;->e0:Lkotlin/jvm/functions/Function2;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public presentReplyLensWithContext(Lcom/snap/composer/lenses/LensItem;Lcom/snap/composer/people/ReplyCameraUser;Lcom/snap/composer/lenses/AnalyticsContext;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lr39;->Z:Lkotlin/jvm/functions/Function3;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {v0, p1, p2, p3}, Lkotlin/jvm/functions/Function3;->H(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
     return-void
 .end method
 
@@ -189,7 +280,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, LzB3;->n:LyB3;
+    sget-object v0, LcF3;->m:LbF3;
 
     .line 2
     .line 3
@@ -198,15 +289,15 @@
     .line 4
     .line 5
     .line 6
-    sget-object v0, LyB3;->b:LzB3;
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    const-class v1, Lcom/snap/impala/common/media/IImageFactory;
+    const-class v1, Lcom/snap/composer/lenses/ILensActionHandler;
 
     .line 9
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
@@ -215,4 +306,20 @@
 
     .line 14
     return p1
+.end method
+
+.method public sendLens(Lcom/snap/composer/lenses/LensItem;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lr39;->f0:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

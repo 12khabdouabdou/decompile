@@ -1,274 +1,187 @@
-.class public final LsVa;
+.class public abstract synthetic LsVa;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:J
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:J
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(JJLjava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-wide p1, p0, LsVa;->a:J
-
-    .line 5
-    .line 6
-    iput-object p5, p0, LsVa;->b:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    iput-wide p3, p0, LsVa;->c:J
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LsVa;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LsVa;
-
-    .line 12
-    .line 13
-    iget-wide v3, p1, LsVa;->a:J
-
-    .line 14
-    .line 15
-    iget-wide v5, p0, LsVa;->a:J
-
-    .line 16
-    .line 17
-    cmp-long v1, v5, v3
-
-    .line 18
-    .line 19
-    if-eqz v1, :cond_2
-
-    .line 20
-    .line 21
-    return v2
-
-    .line 22
-    :cond_2
-    iget-object v1, p0, LsVa;->b:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    iget-object v3, p1, LsVa;->b:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v1
-
-    .line 30
-    if-nez v1, :cond_3
-
-    .line 31
-    .line 32
-    return v2
-
-    .line 33
-    :cond_3
-    iget-wide v3, p0, LsVa;->c:J
-
-    .line 34
-    .line 35
-    iget-wide v5, p1, LsVa;->c:J
-
-    .line 36
-    .line 37
-    cmp-long p1, v3, v5
-
-    .line 38
-    .line 39
-    if-eqz p1, :cond_4
-
-    .line 40
-    .line 41
-    return v2
-
-    .line 42
-    :cond_4
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 5
-
-    .line 1
-    iget-wide v0, p0, LsVa;->a:J
-
-    .line 2
-    .line 3
-    const/16 v2, 0x20
-
-    .line 4
-    .line 5
-    ushr-long v3, v0, v2
-
-    .line 6
-    .line 7
-    xor-long/2addr v0, v3
-
-    .line 8
-    long-to-int v1, v0
-
-    .line 9
-    const/16 v0, 0x1f
-
-    .line 10
-    .line 11
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 12
-    .line 13
-    iget-object v3, p0, LsVa;->b:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-static {v1, v0, v3}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    iget-wide v3, p0, LsVa;->c:J
-
-    .line 20
-    .line 21
-    ushr-long v1, v3, v2
-
-    .line 22
-    .line 23
-    xor-long/2addr v1, v3
-
-    .line 24
-    long-to-int v2, v1
-
-    .line 25
-    add-int/2addr v0, v2
-
-    .line 26
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method static constructor <clinit>()V
     .locals 4
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-static {}, LA5d;->values()[LA5d;
 
     .line 2
     .line 3
-    const-string v1, "MapBestFriend(_id="
-
     .line 4
+    move-result-object v0
+
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    array-length v0, v0
 
     .line 6
+    new-array v0, v0, [I
+
     .line 7
     .line 8
-    iget-wide v1, p0, LsVa;->a:J
+    const/4 v1, 0x1
 
     .line 9
-    .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    :try_start_0
+    aput v1, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 10
     .line 11
+    :catch_0
+    const/4 v2, 0x0
+
     .line 12
+    const/4 v3, 0x2
+
     .line 13
-    const-string v1, ", userId="
+    :try_start_1
+    aput v3, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :catch_1
+    const/4 v2, 0x3
 
     .line 16
+    :try_start_2
+    aput v2, v0, v3
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 17
     .line 18
-    iget-object v1, p0, LsVa;->b:Ljava/lang/String;
+    :catch_2
+    invoke-static {}, LzWa;->values()[LzWa;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 21
+    move-result-object v0
+
     .line 22
+    array-length v0, v0
+
     .line 23
-    const-string v1, ", ranking="
+    new-array v0, v0, [I
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_start_3
+    aput v1, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 26
     .line 27
+    :catch_3
+    :try_start_4
+    aput v3, v0, v3
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
     .line 28
-    iget-wide v1, p0, LsVa;->c:J
-
     .line 29
-    .line 30
-    const-string v3, ")"
+    :catch_4
+    :try_start_5
+    aput v2, v0, v2
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
+    .line 30
     .line 31
+    :catch_5
+    const/4 v2, 0x4
+
     .line 32
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    :try_start_6
+    aput v2, v0, v2
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
     .line 33
     .line 34
+    :catch_6
+    const/4 v2, 0x5
+
     .line 35
-    move-result-object v0
+    :try_start_7
+    aput v2, v0, v2
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
     .line 36
-    return-object v0
+    .line 37
+    :catch_7
+    invoke-static {}, LHJ7;->values()[LHJ7;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    array-length v0, v0
+
+    .line 42
+    new-array v0, v0, [I
+
+    .line 43
+    .line 44
+    :try_start_8
+    sget-object v2, LHJ7;->b:LHJ7;
+
+    .line 45
+    .line 46
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v2
+
+    .line 50
+    aput v1, v0, v2
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    .line 51
+    .line 52
+    :catch_8
+    :try_start_9
+    sget-object v1, LHJ7;->c:LHJ7;
+
+    .line 53
+    .line 54
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v1
+
+    .line 58
+    aput v3, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    .line 59
+    .line 60
+    :catch_9
+    sput-object v0, LsVa;->a:[I
+
+    .line 61
+    .line 62
+    return-void
 .end method

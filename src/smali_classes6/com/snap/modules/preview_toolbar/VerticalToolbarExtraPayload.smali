@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/preview_toolbar/VerticalToolbarExtraPayload;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'dualCamera\':r?<e>:\'[0]\',\'speedMode\':r?<e>:\'[1]\',\'togglelens\':r?<e>:\'[2]\',\'imageTimerValue\':d@?,\'videoTimerState\':r?<e>:\'[3]\',\'muteState\':b@?,\'plusSnapModes\':r?<e>:\'[4]\',\'filterStackingState\':r?<e>:\'[5]\'"
     typeReferences = {

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public F0:LrA2;
+.field public F0:LdD2;
 
-.field public G0:LPpa;
+.field public G0:LPG9;
 
 
 # direct methods
@@ -24,11 +24,11 @@
 
 
 # virtual methods
-.method public final U1()LJL0;
+.method public final U1()LKO0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/email/ChannelVerifyEmailFragment;->G0:LPpa;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/email/ChannelVerifyEmailFragment;->G0:LPG9;
 
     .line 2
     .line 3
@@ -44,7 +44,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -55,22 +55,22 @@
     throw v0
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->Q1:LZ8d;
+    sget-object v0, Lsod;->R1:Lsod;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final Z1()Lszj;
+.method public final Z1()LHYj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/email/ChannelVerifyEmailFragment;->F0:LrA2;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/email/ChannelVerifyEmailFragment;->F0:LdD2;
 
     .line 2
     .line 3
@@ -86,7 +86,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10

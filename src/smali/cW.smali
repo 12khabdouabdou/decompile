@@ -1,3 +1,6 @@
 .class public final LcW;
-.super LrY;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LdW;

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcB3;
+.implements LCE3;
 
 
 # annotations
@@ -104,7 +104,7 @@
     return-object p1
 .end method
 
-.method public processTouchEvent(Landroid/view/MotionEvent;)LaB3;
+.method public processTouchEvent(Landroid/view/MotionEvent;)LAE3;
     .locals 0
 
     .line 1
@@ -120,7 +120,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LaB3;->a:LaB3;
+    sget-object p1, LAE3;->a:LAE3;
 
     .line 8
     .line 9
@@ -128,7 +128,7 @@
 
     .line 10
     :cond_0
-    sget-object p1, LaB3;->b:LaB3;
+    sget-object p1, LAE3;->b:LAE3;
 
     .line 11
     .line 12

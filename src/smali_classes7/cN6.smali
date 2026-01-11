@@ -1,166 +1,118 @@
 .class public final LcN6;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements LXl9;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'emoji\':s,\'name\':s?,\'skinTones\':r?:\'[0]\'"
+    typeReferences = {
+        Lcom/snap/plus/EmojiSkinTones;
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/io/InputStream;
+.field private _emoji:Ljava/lang/String;
 
-.field public final b:LjN6;
+.field private _name:Ljava/lang/String;
 
-.field public final c:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field private _skinTones:Lcom/snap/plus/EmojiSkinTones;
 
 
 # direct methods
-.method public constructor <init>(Ljava/io/InputStream;LjN6;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LcN6;->_emoji:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
     .line 3
+    iput-object p1, p0, LcN6;->_name:Ljava/lang/String;
+
     .line 4
-    iput-object p1, p0, LcN6;->a:Ljava/io/InputStream;
+    iput-object p1, p0, LcN6;->_skinTones:Lcom/snap/plus/EmojiSkinTones;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lcom/snap/plus/EmojiSkinTones;)V
+    .locals 0
 
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
-    iput-object p2, p0, LcN6;->b:LjN6;
+    iput-object p1, p0, LcN6;->_emoji:Ljava/lang/String;
 
     .line 7
+    iput-object p2, p0, LcN6;->_name:Ljava/lang/String;
+
     .line 8
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object p3, p0, LcN6;->_skinTones:Lcom/snap/plus/EmojiSkinTones;
 
-    .line 9
-    .line 10
-    const/4 p2, 0x0
-
-    .line 11
-    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object p1, p0, LcN6;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final A1()Ljava/io/InputStream;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LcN6;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    const/4 v2, 0x1
-
-    .line 5
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    iget-object v1, p0, LcN6;->a:Ljava/io/InputStream;
-
-    .line 10
-    .line 11
-    if-nez v0, :cond_1
-
-    .line 12
-    .line 13
-    invoke-virtual {v1}, Ljava/io/InputStream;->markSupported()Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    if-eqz v0, :cond_0
-
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/io/InputStream;->reset()V
-
-    .line 20
-    .line 21
-    .line 22
-    goto :goto_0
-
-    .line 23
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    .line 24
-    .line 25
-    const-string v1, "Stream can\'t be opened twice"
-
-    .line 26
-    .line 27
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 28
-    .line 29
-    .line 30
-    throw v0
-
-    .line 31
-    :cond_1
-    :goto_0
-    iget-object v0, p0, LcN6;->b:LjN6;
-
-    .line 32
-    .line 33
-    invoke-interface {v0, v1}, LjN6;->F2(Ljava/io/InputStream;)Ljava/io/InputStream;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
-    new-instance v1, LbN6;
-
-    .line 38
-    .line 39
-    const/4 v2, 0x0
-
-    .line 40
-    invoke-direct {v1, v0, v2}, LbN6;-><init>(Ljava/io/InputStream;I)V
-
-    .line 41
-    .line 42
-    .line 43
-    return-object v1
-.end method
-
-.method public final close()V
+.method public final a()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LcN6;->a:Ljava/io/InputStream;
+    iget-object v0, p0, LcN6;->_emoji:Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/io/InputStream;->close()V
+    return-object v0
+.end method
 
-    .line 4
-    .line 5
-    .line 6
+.method public final b()Lcom/snap/plus/EmojiSkinTones;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LcN6;->_skinTones:Lcom/snap/plus/EmojiSkinTones;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LcN6;->_name:Ljava/lang/String;
+
+    .line 2
+    .line 3
     return-void
+.end method
+
+.method public final d(Lcom/snap/plus/EmojiSkinTones;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LcN6;->_skinTones:Lcom/snap/plus/EmojiSkinTones;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LcN6;->_name:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

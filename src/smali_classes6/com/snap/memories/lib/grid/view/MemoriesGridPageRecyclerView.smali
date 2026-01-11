@@ -18,11 +18,11 @@
 
 
 # virtual methods
-.method public final B(IIII[II)Z
+.method public final A(IIII[II)Z
     .locals 0
 
     .line 1
-    invoke-super/range {p0 .. p6}, Landroidx/recyclerview/widget/RecyclerView;->B(IIII[II)Z
+    invoke-super/range {p0 .. p6}, Landroidx/recyclerview/widget/RecyclerView;->A(IIII[II)Z
 
     .line 2
     .line 3

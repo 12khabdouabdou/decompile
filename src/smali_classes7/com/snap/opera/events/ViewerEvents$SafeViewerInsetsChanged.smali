@@ -1,23 +1,23 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LNm9;
+.field public final b:LGv9;
 
 
 # direct methods
-.method public constructor <init>(LNm9;)V
+.method public constructor <init>(LGv9;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LNm9;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LGv9;
 
     .line 5
     .line 6
@@ -47,11 +47,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LNm9;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LGv9;
 
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LNm9;
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LGv9;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -66,9 +66,9 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LNm9;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LGv9;
 
-    invoke-virtual {v0}, LNm9;->hashCode()I
+    invoke-virtual {v0}, LGv9;->hashCode()I
 
     move-result v0
 
@@ -84,7 +84,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LNm9;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;->b:LGv9;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

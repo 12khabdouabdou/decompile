@@ -14,7 +14,7 @@
 
 .field public final f0:Landroid/graphics/Paint;
 
-.field public final g0:LOze;
+.field public final g0:LFRe;
 
 .field public final h0:J
 
@@ -100,11 +100,11 @@
     iput-object v3, p0, Lcom/snap/ui/view/PausableLoadingSpinnerView;->f0:Landroid/graphics/Paint;
 
     .line 9
-    invoke-static {}, LE73;->a()LOze;
+    invoke-static {}, LV93;->a()LFRe;
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/snap/ui/view/PausableLoadingSpinnerView;->g0:LOze;
+    iput-object v4, p0, Lcom/snap/ui/view/PausableLoadingSpinnerView;->g0:LFRe;
 
     const/4 v5, 0x0
 
@@ -140,12 +140,12 @@
     iput-wide v6, p0, Lcom/snap/ui/view/PausableLoadingSpinnerView;->h0:J
 
     .line 19
-    invoke-static {}, LQtc;->x()V
+    invoke-static {}, LYh7;->M()V
 
     iput-boolean v1, p0, Lcom/snap/ui/view/PausableLoadingSpinnerView;->i0:Z
 
     .line 20
-    sget-object v1, LDve;->a:[I
+    sget-object v1, LmNe;->a:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -347,7 +347,7 @@
     .line 14
     .line 15
     :cond_0
-    iget-object v0, p0, Lcom/snap/ui/view/PausableLoadingSpinnerView;->g0:LOze;
+    iget-object v0, p0, Lcom/snap/ui/view/PausableLoadingSpinnerView;->g0:LFRe;
 
     .line 16
     .line 17

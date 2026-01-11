@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "Ld34;",
-        "LM24;",
+        "LN74;",
+        "Lv74;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:Lb34;
+.field public static final Companion:LL74;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lb34;
+    new-instance v0, LL74;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;->Companion:Lb34;
+    sput-object v0, Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;->Companion:LL74;
 
     .line 7
     .line 8
@@ -62,32 +62,15 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
-    .locals 1
-
-    sget-object v0, Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;->Companion:Lb34;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {p0, v0, v0, p1, v0}, Lb34;->a(LqZ8;Ld34;LM24;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Ld34;LM24;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
+.method public static final create(LZ69;LN74;Lv74;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "Ld34;",
-            "LM24;",
-            "LTB3;",
+            "LZ69;",
+            "LN74;",
+            "Lv74;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;"
@@ -95,11 +78,28 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;->Companion:Lb34;
+    sget-object v0, Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;->Companion:LL74;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2, p3, p4}, Lb34;->a(LqZ8;Ld34;LM24;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
+    invoke-static {p0, p1, p2, p3, p4}, LL74;->a(LZ69;LN74;Lv74;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
+    .locals 1
+
+    sget-object v0, Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;->Companion:LL74;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, LL74;->a(LZ69;LN74;Lv74;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/safety/convo_safety_prompt/composer/ConvoSafetyPromptView;
 
     move-result-object p0
 

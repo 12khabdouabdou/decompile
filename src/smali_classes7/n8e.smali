@@ -2,31 +2,26 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/disposables/Disposable;
-
 
 # instance fields
-.field public final X:Lake;
+.field public final a:LZB2;
 
-.field public final Y:LBre;
+.field public final b:LREi;
 
-.field public final Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public final c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final a:Lcom/snap/mushroom/app/MushroomApplication;
+.field public final d:LREi;
 
-.field public final b:LAHh;
+.field public final e:LREi;
 
-.field public final c:LpC3;
+.field public final f:LREi;
 
-.field public final e0:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final t:Lake;
+.field public final g:LMj;
 
 
 # direct methods
-.method public constructor <init>(Lake;Lcom/snap/mushroom/app/MushroomApplication;LAHh;LpC3;Lake;)V
-    .locals 0
+.method public constructor <init>(LZB2;LT75;)V
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -34,297 +29,256 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Ln8e;->a:Lcom/snap/mushroom/app/MushroomApplication;
+    iput-object p1, p0, Ln8e;->a:LZB2;
 
     .line 5
     .line 6
-    iput-object p3, p0, Ln8e;->b:LAHh;
+    new-instance p1, Ll8e;
 
     .line 7
     .line 8
-    iput-object p4, p0, Ln8e;->c:LpC3;
+    const/4 v0, 0x0
 
     .line 9
-    .line 10
-    iput-object p5, p0, Ln8e;->t:Lake;
+    invoke-direct {p1, p0, v0}, Ll8e;-><init>(Ln8e;I)V
 
+    .line 10
     .line 11
     .line 12
-    iput-object p1, p0, Ln8e;->X:Lake;
+    new-instance v0, LREi;
 
     .line 13
     .line 14
-    sget-object p1, LX4e;->Z:LX4e;
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 15
     .line 16
-    const-string p2, "PrivacyEventHandler"
-
     .line 17
-    .line 18
-    invoke-static {p1, p1, p2}, Lq27;->g(LX4e;LX4e;Ljava/lang/String;)LWm0;
+    iput-object v0, p0, Ln8e;->b:LREi;
 
+    .line 18
     .line 19
+    sget-object p1, Lz7e;->Z:Lz7e;
+
     .line 20
     .line 21
-    move-result-object p1
+    const-string v0, "PreviewKeyboardController"
 
     .line 22
-    new-instance p2, LBre;
-
     .line 23
-    .line 24
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
+    invoke-static {p1, p1, v0}, LzHa;->m(Lz7e;Lz7e;Ljava/lang/String;)Lnp0;
 
+    .line 24
     .line 25
     .line 26
+    move-result-object p1
+
     .line 27
-    iput-object p2, p0, Ln8e;->Y:LBre;
+    new-instance v0, LnJe;
 
     .line 28
     .line 29
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-direct {v0, p1}, LnJe;-><init>(Lnp0;)V
 
     .line 30
     .line 31
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
     .line 32
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
     .line 33
     .line 34
-    iput-object p1, p0, Ln8e;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 35
     .line 36
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
 
     .line 37
     .line 38
-    const/4 p2, 0x0
-
     .line 39
-    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+    iput-object v1, p0, Ln8e;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 40
     .line 41
-    .line 42
-    iput-object p1, p0, Ln8e;->e0:Ljava/util/concurrent/atomic/AtomicBoolean;
+    new-instance p1, Ll8e;
 
+    .line 42
     .line 43
+    const/4 v2, 0x1
+
     .line 44
+    invoke-direct {p1, p0, v2}, Ll8e;-><init>(Ln8e;I)V
+
+    .line 45
+    .line 46
+    .line 47
+    new-instance v2, LREi;
+
+    .line 48
+    .line 49
+    invoke-direct {v2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 50
+    .line 51
+    .line 52
+    iput-object v2, p0, Ln8e;->d:LREi;
+
+    .line 53
+    .line 54
+    new-instance p1, Lm8e;
+
+    .line 55
+    .line 56
+    const/4 v2, 0x0
+
+    .line 57
+    invoke-direct {p1, p2, p0, v2}, Lm8e;-><init>(LT75;Ln8e;I)V
+
+    .line 58
+    .line 59
+    .line 60
+    new-instance v2, LREi;
+
+    .line 61
+    .line 62
+    invoke-direct {v2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 63
+    .line 64
+    .line 65
+    iput-object v2, p0, Ln8e;->e:LREi;
+
+    .line 66
+    .line 67
+    new-instance p1, Lm8e;
+
+    .line 68
+    .line 69
+    const/4 v2, 0x1
+
+    .line 70
+    invoke-direct {p1, p2, p0, v2}, Lm8e;-><init>(LT75;Ln8e;I)V
+
+    .line 71
+    .line 72
+    .line 73
+    new-instance p2, LREi;
+
+    .line 74
+    .line 75
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 76
+    .line 77
+    .line 78
+    iput-object p2, p0, Ln8e;->f:LREi;
+
+    .line 79
+    .line 80
+    new-instance p1, LMj;
+
+    .line 81
+    .line 82
+    invoke-virtual {v0}, LnJe;->j()Ltp0;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p2
+
+    .line 86
+    invoke-direct {p1, p2, v1}, LMj;-><init>(Ltp0;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)V
+
+    .line 87
+    .line 88
+    .line 89
+    iput-object p1, p0, Ln8e;->g:LMj;
+
+    .line 90
+    .line 91
     return-void
 .end method
 
-.method public static final a(Ln8e;LxGi;Ljava/util/List;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
-    .locals 5
+.method public static final a(Ln8e;)F
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    iget-object p0, p0, Ln8e;->d:LREi;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-virtual {p0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    check-cast p2, Ljava/lang/Iterable;
+    move-result-object p0
 
     .line 7
+    check-cast p0, Ljava/lang/Number;
+
     .line 8
-    new-instance v1, Ljava/util/ArrayList;
-
     .line 9
-    .line 10
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    invoke-virtual {p0}, Ljava/lang/Number;->floatValue()F
 
+    .line 10
     .line 11
     .line 12
+    move-result p0
+
     .line 13
-    invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p2
-
-    .line 17
-    :cond_0
-    :goto_0
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v2
-
-    .line 21
-    if-eqz v2, :cond_1
-
-    .line 22
-    .line 23
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v2
-
-    .line 27
-    move-object v3, v2
-
-    .line 28
-    check-cast v3, LJ8g;
-
-    .line 29
-    .line 30
-    invoke-virtual {v3}, LJ8g;->a()Ljava/lang/String;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v3
-
-    .line 34
-    iget-object v4, p1, LxGi;->a:Ljava/lang/String;
-
-    .line 35
-    .line 36
-    invoke-static {v3, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 37
-    .line 38
-    .line 39
-    move-result v3
-
-    .line 40
-    if-nez v3, :cond_0
-
-    .line 41
-    .line 42
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 43
-    .line 44
-    .line 45
-    goto :goto_0
-
-    .line 46
-    :cond_1
-    invoke-static {v0, v1}, LBe3;->l0(Ljava/util/Collection;Ljava/lang/Iterable;)V
-
-    .line 47
-    .line 48
-    .line 49
-    new-instance p2, LJ8g;
-
-    .line 50
-    .line 51
-    iget-object v1, p1, LxGi;->a:Ljava/lang/String;
-
-    .line 52
-    .line 53
-    iget-object p1, p1, LxGi;->b:Ljava/lang/String;
-
-    .line 54
-    .line 55
-    invoke-direct {p2, v1, p1}, LJ8g;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 56
-    .line 57
-    .line 58
-    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 59
-    .line 60
-    .line 61
-    iget-object p0, p0, Ln8e;->X:Lake;
-
-    .line 62
-    .line 63
-    invoke-interface {p0}, Lbke;->get()Ljava/lang/Object;
-
-    .line 64
-    .line 65
-    .line 66
-    move-result-object p0
-
-    .line 67
-    check-cast p0, LIKh;
-
-    .line 68
-    .line 69
-    sget-object p1, LlYd;->t:LlYd;
-
-    .line 70
-    .line 71
-    invoke-virtual {p0, p1, v0}, LIKh;->a(LlYd;Ljava/util/List;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object p0
-
-    .line 75
-    return-object p0
+    return p0
 .end method
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ln8e;->e0:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final dispose()V
+.method public final b(Landroid/widget/EditText;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Ln8e;->e0:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Ln8e;->a:LZB2;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const-string v1, "input_method"
 
     .line 4
-    const/4 v2, 0x1
-
     .line 5
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    iget-object v0, v0, LZB2;->a:Landroid/content/Context;
 
     .line 6
     .line 7
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
     .line 8
-    move-result v0
-
     .line 9
-    if-eqz v0, :cond_0
-
     .line 10
+    move-result-object v0
+
     .line 11
-    iget-object v0, p0, Ln8e;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
     .line 12
     .line 13
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
+    invoke-virtual {p1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
     .line 14
     .line 15
     .line 16
-    :cond_0
+    move-result-object p1
+
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    iget-object v2, p0, Ln8e;->g:LMj;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, p1, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;ILandroid/os/ResultReceiver;)Z
+
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method

@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field private final deepLinkAttachment:Lq8f;
+.field private final deepLinkAttachment:LHqf;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "deep_link_attachment"
     .end annotation
@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lq8f;)V
+.method public constructor <init>(LHqf;)V
     .locals 0
 
     .line 1
@@ -26,14 +26,14 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iput-object p1, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
     .line 5
     .line 6
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/DeepLinkContent;Lq8f;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/DeepLinkContent;
+.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/DeepLinkContent;LHqf;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/DeepLinkContent;
     .locals 0
 
     .line 1
@@ -45,12 +45,12 @@
 
     .line 4
     .line 5
-    iget-object p1, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iget-object p1, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
     .line 6
     .line 7
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/snap/discover/playback/content/model/DeepLinkContent;->copy(Lq8f;)Lcom/snap/discover/playback/content/model/DeepLinkContent;
+    invoke-virtual {p0, p1}, Lcom/snap/discover/playback/content/model/DeepLinkContent;->copy(LHqf;)Lcom/snap/discover/playback/content/model/DeepLinkContent;
 
     .line 8
     .line 9
@@ -63,18 +63,18 @@
 
 
 # virtual methods
-.method public final component1()Lq8f;
+.method public final component1()LHqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final copy(Lq8f;)Lcom/snap/discover/playback/content/model/DeepLinkContent;
+.method public final copy(LHqf;)Lcom/snap/discover/playback/content/model/DeepLinkContent;
     .locals 1
 
     .line 1
@@ -82,7 +82,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Lcom/snap/discover/playback/content/model/DeepLinkContent;-><init>(Lq8f;)V
+    invoke-direct {v0, p1}, Lcom/snap/discover/playback/content/model/DeepLinkContent;-><init>(LHqf;)V
 
     .line 4
     .line 5
@@ -111,11 +111,11 @@
     :cond_1
     check-cast p1, Lcom/snap/discover/playback/content/model/DeepLinkContent;
 
-    iget-object v1, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iget-object v1, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
-    iget-object p1, p1, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iget-object p1, p1, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -127,11 +127,11 @@
     return v0
 .end method
 
-.method public final getDeepLinkAttachment()Lq8f;
+.method public final getDeepLinkAttachment()LHqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
     .line 2
     .line 3
@@ -141,9 +141,9 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
-    invoke-virtual {v0}, Lq8f;->hashCode()I
+    invoke-virtual {v0}, LHqf;->hashCode()I
 
     move-result v0
 
@@ -153,7 +153,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:Lq8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/DeepLinkContent;->deepLinkAttachment:LHqf;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

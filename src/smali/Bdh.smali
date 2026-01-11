@@ -1,421 +1,177 @@
-.class public final LBdh;
-.super Ljava/lang/Object;
+.class public final enum LBdh;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements LUc1;
-.implements LcS6;
 
+# static fields
+.field public static final synthetic X:[LBdh;
 
-# instance fields
-.field public final a:LbS6;
+.field public static final enum a:LBdh;
 
-.field public final b:LIR6;
+.field public static final enum b:LBdh;
 
-.field public final c:Ly46;
+.field public static final enum c:LBdh;
 
-.field public d:Ljava/lang/String;
-
-.field public final e:D
+.field public static final enum t:LBdh;
 
 
 # direct methods
-.method public constructor <init>(LbS6;LIR6;Ly46;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
+    const/4 v2, 0x1
+
     .line 4
-    iput-object p1, p0, LBdh;->a:LbS6;
+    const/4 v3, 0x0
 
     .line 5
+    new-instance v4, LBdh;
+
     .line 6
-    iput-object p2, p0, LBdh;->b:LIR6;
-
     .line 7
-    .line 8
-    iput-object p3, p0, LBdh;->c:Ly46;
+    const-string v5, "CACHE_HIT_READ_FROM_MEMORY"
 
+    .line 8
     .line 9
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 10
-    const/4 p1, 0x0
-
     .line 11
-    iput-object p1, p0, LBdh;->d:Ljava/lang/String;
-
     .line 12
+    sput-object v4, LBdh;->a:LBdh;
+
     .line 13
-    iget-wide p1, p2, LIR6;->X:D
-
     .line 14
+    new-instance v5, LBdh;
+
     .line 15
-    iput-wide p1, p0, LBdh;->e:D
-
     .line 16
+    const-string v6, "CACHE_HIT_LOAD_FROM_DISK"
+
     .line 17
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()D
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    .line 2
-    .line 3
-    const-string v1, "#perEventSamplingRate not expected to be called for Spectrum"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw v0
-.end method
-
-.method public final b()D
-    .locals 2
-
-    .line 1
-    iget-wide v0, p0, LBdh;->e:D
-
-    .line 2
-    .line 3
-    return-wide v0
-.end method
-
-.method public final c()D
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    .line 2
-    .line 3
-    const-string v1, "#perUserSamplingRateV2 not expected to be called for Spectrum"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LBdh;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LBdh;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, LBdh;->a:LbS6;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, LBdh;->a:LbS6;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 19
     .line 20
-    move-result v1
-
     .line 21
-    if-nez v1, :cond_2
+    sput-object v5, LBdh;->b:LBdh;
 
     .line 22
     .line 23
-    return v2
+    new-instance v6, LBdh;
 
     .line 24
-    :cond_2
-    iget-object v1, p0, LBdh;->b:LIR6;
-
     .line 25
+    const-string v7, "CACHE_MISS_FETCH_FROM_NETWORK"
+
     .line 26
-    iget-object v3, p1, LBdh;->b:LIR6;
-
     .line 27
-    .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 28
     .line 29
     .line 30
-    .line 31
-    move-result v1
+    sput-object v6, LBdh;->c:LBdh;
 
+    .line 31
     .line 32
-    if-nez v1, :cond_3
+    new-instance v7, LBdh;
 
     .line 33
     .line 34
-    return v2
+    const-string v8, "UNKNOWN"
 
     .line 35
-    :cond_3
-    iget-object v1, p0, LBdh;->c:Ly46;
-
     .line 36
-    .line 37
-    iget-object v3, p1, LBdh;->c:Ly46;
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 37
     .line 38
     .line 39
-    if-eq v1, v3, :cond_4
+    sput-object v7, LBdh;->t:LBdh;
 
     .line 40
     .line 41
-    return v2
+    const/4 v8, 0x4
 
     .line 42
-    :cond_4
-    iget-object v1, p0, LBdh;->d:Ljava/lang/String;
+    new-array v8, v8, [LBdh;
 
     .line 43
     .line 44
-    iget-object p1, p1, LBdh;->d:Ljava/lang/String;
+    aput-object v4, v8, v3
 
     .line 45
     .line 46
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    aput-object v5, v8, v2
 
     .line 47
     .line 48
-    .line 49
-    move-result p1
+    aput-object v6, v8, v1
 
+    .line 49
     .line 50
-    if-nez p1, :cond_5
+    aput-object v7, v8, v0
 
     .line 51
     .line 52
-    return v2
+    sput-object v8, LBdh;->X:[LBdh;
 
     .line 53
-    :cond_5
-    return v0
+    .line 54
+    return-void
 .end method
 
-.method public final getName()Ljava/lang/String;
-    .locals 2
+.method public static valueOf(Ljava/lang/String;)LBdh;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    const-class v0, LBdh;
 
     .line 2
     .line 3
-    const-string v1, "#name not expected to be called for Spectrum"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LBdh;->a:LbS6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result-object p0
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    check-cast p0, LBdh;
 
     .line 8
     .line 9
-    iget-object v1, p0, LBdh;->b:LIR6;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 17
-    .line 18
-    iget-object v0, p0, LBdh;->c:Ly46;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 21
-    .line 22
-    .line 23
-    move-result v0
-
-    .line 24
-    add-int/2addr v0, v1
-
-    .line 25
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 26
-    .line 27
-    iget-object v1, p0, LBdh;->d:Ljava/lang/String;
-
-    .line 28
-    .line 29
-    if-nez v1, :cond_0
-
-    .line 30
-    .line 31
-    const/4 v1, 0x0
-
-    .line 32
-    goto :goto_0
-
-    .line 33
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v1
-
-    .line 37
-    :goto_0
-    add-int/2addr v0, v1
-
-    .line 38
-    return v0
+    return-object p0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 4
+.method public static values()[LBdh;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LBdh;->b:LIR6;
+    sget-object v0, LBdh;->X:[LBdh;
 
     .line 2
     .line 3
-    iget v0, v0, LIR6;->a:I
+    invoke-virtual {v0}, [LBdh;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
-    iget-object v1, p0, LBdh;->d:Ljava/lang/String;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    const-string v2, "<SpectrumEvent: eventCase:"
+    check-cast v0, [LBdh;
 
     .line 8
     .line 9
-    const-string v3, ", region:"
-
-    .line 10
-    .line 11
-    invoke-static {v0, v2, v3}, LmG8;->r(ILjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    iget-object v2, p0, LBdh;->c:Ly46;
-
-    .line 16
-    .line 17
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 18
-    .line 19
-    .line 20
-    const-string v2, ", logQueueName:"
-
-    .line 21
-    .line 22
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    const-string v1, ">"
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
     return-object v0
 .end method

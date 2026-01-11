@@ -3,6 +3,10 @@
 .source "SourceFile"
 
 
+# static fields
+.field public static final synthetic G1:I
+
+
 # instance fields
 .field public final A1:I
 
@@ -14,9 +18,9 @@
 
 .field public E1:I
 
-.field public final F1:LZug;
+.field public final F1:LiQg;
 
-.field public z1:LtP8;
+.field public z1:LqX8;
 
 
 # direct methods
@@ -53,7 +57,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070d13
+    const p2, 0x7f070d3e
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -66,7 +70,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070d12
+    const p2, 0x7f070d3d
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -88,13 +92,13 @@
     iput p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;->E1:I
 
     .line 9
-    new-instance p1, LZug;
+    new-instance p1, LiQg;
 
     .line 10
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 11
-    new-instance v0, LW4;
+    new-instance v0, LB5;
 
     .line 12
     const-class v3, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;
@@ -111,31 +115,31 @@
 
     move-object v2, p0
 
-    invoke-direct/range {v0 .. v7}, LW4;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-direct/range {v0 .. v7}, LB5;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
     .line 13
-    invoke-direct {p1, v0}, LZug;-><init>(LW4;)V
+    invoke-direct {p1, v0}, LiQg;-><init>(LB5;)V
 
-    iput-object p1, v2, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;->F1:LZug;
+    iput-object p1, v2, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;->F1:LiQg;
 
     .line 14
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 15
-    new-instance p1, LRGe;
+    new-instance p1, LAYe;
 
     .line 16
-    new-instance p2, LpMf;
+    new-instance p2, LG5g;
 
     const/4 p3, 0x2
 
-    invoke-direct {p2, p3, p0}, LpMf;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, p3, p0}, LG5g;-><init>(ILjava/lang/Object;)V
 
     .line 17
-    invoke-direct {p1, p2}, LRGe;-><init>(Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {p1, p2}, LAYe;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     .line 18
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     const/4 p1, 0x3
 
@@ -145,7 +149,7 @@
     const/4 p1, 0x0
 
     .line 20
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->F0(LfB5;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->F0(LdF5;)V
 
     return-void
 .end method
@@ -161,16 +165,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LT4;
+    new-instance v0, Ly5;
 
     .line 5
     .line 6
-    invoke-direct {v0}, LT4;-><init>()V
+    invoke-direct {v0}, Ly5;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->C0(LZXe;)V
 
     .line 10
     .line 11
@@ -214,7 +218,7 @@
 
     .line 16
     :cond_0
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;->z1:LtP8;
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;->z1:LqX8;
 
     .line 17
     .line 18
@@ -222,7 +226,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p0, p2}, Landroidx/recyclerview/widget/RecyclerView;->t0(LuGe;)V
+    invoke-virtual {p0, p2}, Landroidx/recyclerview/widget/RecyclerView;->t0(LdYe;)V
 
     .line 21
     .line 22
@@ -260,7 +264,7 @@
     .line 37
     .line 38
     .line 39
-    new-instance p1, LtP8;
+    new-instance p1, LqX8;
 
     .line 40
     .line 41
@@ -268,16 +272,16 @@
 
     .line 42
     .line 43
-    invoke-direct {p1, p4, p2}, LtP8;-><init>(ILandroid/graphics/Rect;)V
+    invoke-direct {p1, p4, p2}, LqX8;-><init>(ILandroid/graphics/Rect;)V
 
     .line 44
     .line 45
     .line 46
-    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;->z1:LtP8;
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/AccountCarouselListView;->z1:LqX8;
 
     .line 47
     .line 48
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
 
     .line 49
     .line 50

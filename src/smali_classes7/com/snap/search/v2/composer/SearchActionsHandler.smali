@@ -1,13 +1,14 @@
 .class public final Lcom/snap/search/v2/composer/SearchActionsHandler;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'dismiss\':f(),\'openGroupChat\':f(s),\'openGroupProfile\':f(s),\'playGroupStory\':f(s, r:\'[0]\'),\'openPublisherProfile\':f(m<s,u>),\'openShowProfile\':f(m<s,u>),\'openStore\':f(s)"
+    schema = "\'dismiss\':f(),\'openGroupChat\':f(s, r<e>:\'[0]\'),\'openGroupProfile\':f(s),\'playGroupStory\':f(s, r:\'[1]\'),\'openPublisherProfile\':f(m<s,u>),\'openShowProfile\':f(m<s,u>),\'openStore\':f(s)"
     typeReferences = {
+        Lcom/snap/composer/people/GroupType;,
         Lcom/snap/composer/utils/Ref;
     }
 .end annotation
@@ -22,10 +23,10 @@
     .end annotation
 .end field
 
-.field private _openGroupChat:Lkotlin/jvm/functions/Function1;
+.field private _openGroupChat:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lkotlin/jvm/functions/Function1;"
+            "Lkotlin/jvm/functions/Function2;"
         }
     .end annotation
 .end field
@@ -72,13 +73,13 @@
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function2;",
             "Lkotlin/jvm/functions/Function1;",
             "Lkotlin/jvm/functions/Function2;",
             "Lkotlin/jvm/functions/Function1;",
@@ -98,7 +99,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/search/v2/composer/SearchActionsHandler;->_openGroupChat:Lkotlin/jvm/functions/Function1;
+    iput-object p2, p0, Lcom/snap/search/v2/composer/SearchActionsHandler;->_openGroupChat:Lkotlin/jvm/functions/Function2;
 
     .line 7
     .line 8

@@ -53,10 +53,10 @@
     .end annotation
 .end field
 
-.field final header:LSma;
+.field final header:Lfza;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "LSma;"
+            "Lfza;"
         }
     .end annotation
 .end field
@@ -71,10 +71,10 @@
 
 .field modCount:I
 
-.field root:LSma;
+.field root:Lfza;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "LSma;"
+            "Lfza;"
         }
     .end annotation
 .end field
@@ -87,14 +87,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, LFG3;
+    new-instance v0, LJn2;
 
     .line 2
     .line 3
-    const/4 v1, 0x4
+    const/4 v1, 0x7
 
     .line 4
-    invoke-direct {v0, v1}, LFG3;-><init>(I)V
+    invoke-direct {v0, v1}, LJn2;-><init>(I)V
 
     .line 5
     .line 6
@@ -139,11 +139,11 @@
     iput v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->modCount:I
 
     .line 5
-    new-instance v0, LSma;
+    new-instance v0, Lfza;
 
-    invoke-direct {v0}, LSma;-><init>()V
+    invoke-direct {v0}, Lfza;-><init>()V
 
-    iput-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->header:LSma;
+    iput-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->header:Lfza;
 
     if-eqz p1, :cond_0
 
@@ -226,12 +226,12 @@
     throw p1
 .end method
 
-.method private rebalance(LSma;Z)V
+.method private rebalance(Lfza;Z)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LSma;",
+            "Lfza;",
             "Z)V"
         }
     .end annotation
@@ -242,11 +242,11 @@
 
     .line 2
     .line 3
-    iget-object v0, p1, LSma;->b:LSma;
+    iget-object v0, p1, Lfza;->b:Lfza;
 
     .line 4
     .line 5
-    iget-object v1, p1, LSma;->c:LSma;
+    iget-object v1, p1, Lfza;->c:Lfza;
 
     .line 6
     .line 7
@@ -257,7 +257,7 @@
 
     .line 9
     .line 10
-    iget v3, v0, LSma;->e0:I
+    iget v3, v0, Lfza;->e0:I
 
     .line 11
     .line 12
@@ -273,7 +273,7 @@
 
     .line 15
     .line 16
-    iget v4, v1, LSma;->e0:I
+    iget v4, v1, Lfza;->e0:I
 
     .line 17
     .line 18
@@ -296,11 +296,11 @@
 
     .line 24
     .line 25
-    iget-object v0, v1, LSma;->b:LSma;
+    iget-object v0, v1, Lfza;->b:Lfza;
 
     .line 26
     .line 27
-    iget-object v3, v1, LSma;->c:LSma;
+    iget-object v3, v1, Lfza;->c:Lfza;
 
     .line 28
     .line 29
@@ -308,7 +308,7 @@
 
     .line 30
     .line 31
-    iget v3, v3, LSma;->e0:I
+    iget v3, v3, Lfza;->e0:I
 
     .line 32
     .line 33
@@ -324,7 +324,7 @@
 
     .line 36
     .line 37
-    iget v2, v0, LSma;->e0:I
+    iget v2, v0, Lfza;->e0:I
 
     .line 38
     .line 39
@@ -351,12 +351,12 @@
 
     .line 48
     :cond_4
-    invoke-direct {p0, v1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateRight(LSma;)V
+    invoke-direct {p0, v1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateRight(Lfza;)V
 
     .line 49
     .line 50
     .line 51
-    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateLeft(LSma;)V
+    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateLeft(Lfza;)V
 
     .line 52
     .line 53
@@ -366,7 +366,7 @@
     .line 55
     :cond_5
     :goto_4
-    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateLeft(LSma;)V
+    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateLeft(Lfza;)V
 
     .line 56
     .line 57
@@ -390,11 +390,11 @@
 
     .line 64
     .line 65
-    iget-object v1, v0, LSma;->b:LSma;
+    iget-object v1, v0, Lfza;->b:Lfza;
 
     .line 66
     .line 67
-    iget-object v3, v0, LSma;->c:LSma;
+    iget-object v3, v0, Lfza;->c:Lfza;
 
     .line 68
     .line 69
@@ -402,7 +402,7 @@
 
     .line 70
     .line 71
-    iget v3, v3, LSma;->e0:I
+    iget v3, v3, Lfza;->e0:I
 
     .line 72
     .line 73
@@ -418,7 +418,7 @@
 
     .line 76
     .line 77
-    iget v2, v1, LSma;->e0:I
+    iget v2, v1, Lfza;->e0:I
 
     .line 78
     .line 79
@@ -442,12 +442,12 @@
 
     .line 87
     :cond_9
-    invoke-direct {p0, v0}, Lcom/google/gson/internal/LinkedTreeMap;->rotateLeft(LSma;)V
+    invoke-direct {p0, v0}, Lcom/google/gson/internal/LinkedTreeMap;->rotateLeft(Lfza;)V
 
     .line 88
     .line 89
     .line 90
-    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateRight(LSma;)V
+    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateRight(Lfza;)V
 
     .line 91
     .line 92
@@ -457,7 +457,7 @@
     .line 94
     :cond_a
     :goto_7
-    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateRight(LSma;)V
+    invoke-direct {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->rotateRight(Lfza;)V
 
     .line 95
     .line 96
@@ -479,7 +479,7 @@
 
     .line 103
     .line 104
-    iput v3, p1, LSma;->e0:I
+    iput v3, p1, Lfza;->e0:I
 
     .line 105
     .line 106
@@ -502,7 +502,7 @@
     add-int/2addr v0, v6
 
     .line 114
-    iput v0, p1, LSma;->e0:I
+    iput v0, p1, Lfza;->e0:I
 
     .line 115
     .line 116
@@ -514,7 +514,7 @@
 
     .line 119
     :cond_d
-    iget-object p1, p1, LSma;->a:LSma;
+    iget-object p1, p1, Lfza;->a:Lfza;
 
     .line 120
     .line 121
@@ -526,26 +526,26 @@
     return-void
 .end method
 
-.method private replaceInParent(LSma;LSma;)V
+.method private replaceInParent(Lfza;Lfza;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LSma;",
-            "LSma;",
+            "Lfza;",
+            "Lfza;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p1, LSma;->a:LSma;
+    iget-object v0, p1, Lfza;->a:Lfza;
 
     .line 2
     .line 3
     const/4 v1, 0x0
 
     .line 4
-    iput-object v1, p1, LSma;->a:LSma;
+    iput-object v1, p1, Lfza;->a:Lfza;
 
     .line 5
     .line 6
@@ -553,7 +553,7 @@
 
     .line 7
     .line 8
-    iput-object v0, p2, LSma;->a:LSma;
+    iput-object v0, p2, Lfza;->a:Lfza;
 
     .line 9
     .line 10
@@ -562,7 +562,7 @@
 
     .line 11
     .line 12
-    iget-object v1, v0, LSma;->b:LSma;
+    iget-object v1, v0, Lfza;->b:Lfza;
 
     .line 13
     .line 14
@@ -570,7 +570,7 @@
 
     .line 15
     .line 16
-    iput-object p2, v0, LSma;->b:LSma;
+    iput-object p2, v0, Lfza;->b:Lfza;
 
     .line 17
     .line 18
@@ -578,7 +578,7 @@
 
     .line 19
     :cond_1
-    iput-object p2, v0, LSma;->c:LSma;
+    iput-object p2, v0, Lfza;->c:Lfza;
 
     .line 20
     .line 21
@@ -586,41 +586,41 @@
 
     .line 22
     :cond_2
-    iput-object p2, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:LSma;
+    iput-object p2, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:Lfza;
 
     .line 23
     .line 24
     return-void
 .end method
 
-.method private rotateLeft(LSma;)V
+.method private rotateLeft(Lfza;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LSma;",
+            "Lfza;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p1, LSma;->b:LSma;
+    iget-object v0, p1, Lfza;->b:Lfza;
 
     .line 2
     .line 3
-    iget-object v1, p1, LSma;->c:LSma;
+    iget-object v1, p1, Lfza;->c:Lfza;
 
     .line 4
     .line 5
-    iget-object v2, v1, LSma;->b:LSma;
+    iget-object v2, v1, Lfza;->b:Lfza;
 
     .line 6
     .line 7
-    iget-object v3, v1, LSma;->c:LSma;
+    iget-object v3, v1, Lfza;->c:Lfza;
 
     .line 8
     .line 9
-    iput-object v2, p1, LSma;->c:LSma;
+    iput-object v2, p1, Lfza;->c:Lfza;
 
     .line 10
     .line 11
@@ -628,21 +628,21 @@
 
     .line 12
     .line 13
-    iput-object p1, v2, LSma;->a:LSma;
+    iput-object p1, v2, Lfza;->a:Lfza;
 
     .line 14
     .line 15
     :cond_0
-    invoke-direct {p0, p1, v1}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(LSma;LSma;)V
+    invoke-direct {p0, p1, v1}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(Lfza;Lfza;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object p1, v1, LSma;->b:LSma;
+    iput-object p1, v1, Lfza;->b:Lfza;
 
     .line 19
     .line 20
-    iput-object v1, p1, LSma;->a:LSma;
+    iput-object v1, p1, Lfza;->a:Lfza;
 
     .line 21
     .line 22
@@ -653,7 +653,7 @@
 
     .line 24
     .line 25
-    iget v0, v0, LSma;->e0:I
+    iget v0, v0, Lfza;->e0:I
 
     .line 26
     .line 27
@@ -669,7 +669,7 @@
 
     .line 30
     .line 31
-    iget v2, v2, LSma;->e0:I
+    iget v2, v2, Lfza;->e0:I
 
     .line 32
     .line 33
@@ -693,7 +693,7 @@
 
     .line 40
     .line 41
-    iput v0, p1, LSma;->e0:I
+    iput v0, p1, Lfza;->e0:I
 
     .line 42
     .line 43
@@ -701,7 +701,7 @@
 
     .line 44
     .line 45
-    iget v4, v3, LSma;->e0:I
+    iget v4, v3, Lfza;->e0:I
 
     .line 46
     .line 47
@@ -718,41 +718,41 @@
 
     .line 52
     .line 53
-    iput p1, v1, LSma;->e0:I
+    iput p1, v1, Lfza;->e0:I
 
     .line 54
     .line 55
     return-void
 .end method
 
-.method private rotateRight(LSma;)V
+.method private rotateRight(Lfza;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LSma;",
+            "Lfza;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p1, LSma;->b:LSma;
+    iget-object v0, p1, Lfza;->b:Lfza;
 
     .line 2
     .line 3
-    iget-object v1, p1, LSma;->c:LSma;
+    iget-object v1, p1, Lfza;->c:Lfza;
 
     .line 4
     .line 5
-    iget-object v2, v0, LSma;->b:LSma;
+    iget-object v2, v0, Lfza;->b:Lfza;
 
     .line 6
     .line 7
-    iget-object v3, v0, LSma;->c:LSma;
+    iget-object v3, v0, Lfza;->c:Lfza;
 
     .line 8
     .line 9
-    iput-object v3, p1, LSma;->b:LSma;
+    iput-object v3, p1, Lfza;->b:Lfza;
 
     .line 10
     .line 11
@@ -760,21 +760,21 @@
 
     .line 12
     .line 13
-    iput-object p1, v3, LSma;->a:LSma;
+    iput-object p1, v3, Lfza;->a:Lfza;
 
     .line 14
     .line 15
     :cond_0
-    invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(LSma;LSma;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(Lfza;Lfza;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object p1, v0, LSma;->c:LSma;
+    iput-object p1, v0, Lfza;->c:Lfza;
 
     .line 19
     .line 20
-    iput-object v0, p1, LSma;->a:LSma;
+    iput-object v0, p1, Lfza;->a:Lfza;
 
     .line 21
     .line 22
@@ -785,7 +785,7 @@
 
     .line 24
     .line 25
-    iget v1, v1, LSma;->e0:I
+    iget v1, v1, Lfza;->e0:I
 
     .line 26
     .line 27
@@ -801,7 +801,7 @@
 
     .line 30
     .line 31
-    iget v3, v3, LSma;->e0:I
+    iget v3, v3, Lfza;->e0:I
 
     .line 32
     .line 33
@@ -825,7 +825,7 @@
 
     .line 40
     .line 41
-    iput v1, p1, LSma;->e0:I
+    iput v1, p1, Lfza;->e0:I
 
     .line 42
     .line 43
@@ -833,7 +833,7 @@
 
     .line 44
     .line 45
-    iget v4, v2, LSma;->e0:I
+    iget v4, v2, Lfza;->e0:I
 
     .line 46
     .line 47
@@ -850,7 +850,7 @@
 
     .line 52
     .line 53
-    iput p1, v0, LSma;->e0:I
+    iput p1, v0, Lfza;->e0:I
 
     .line 54
     .line 55
@@ -887,7 +887,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:LSma;
+    iput-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:Lfza;
 
     .line 3
     .line 4
@@ -910,15 +910,15 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->header:LSma;
+    iget-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->header:Lfza;
 
     .line 14
     .line 15
-    iput-object v0, v0, LSma;->X:LSma;
+    iput-object v0, v0, Lfza;->X:Lfza;
 
     .line 16
     .line 17
-    iput-object v0, v0, LSma;->t:LSma;
+    iput-object v0, v0, Lfza;->t:Lfza;
 
     .line 18
     .line 19
@@ -929,7 +929,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)LSma;
+    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)Lfza;
 
     .line 2
     .line 3
@@ -994,12 +994,12 @@
     return-object v0
 .end method
 
-.method public find(Ljava/lang/Object;Z)LSma;
+.method public find(Ljava/lang/Object;Z)Lfza;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TK;Z)",
-            "LSma;"
+            "Lfza;"
         }
     .end annotation
 
@@ -1008,7 +1008,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:LSma;
+    iget-object v1, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:Lfza;
 
     .line 4
     .line 5
@@ -1042,7 +1042,7 @@
 
     .line 17
     :goto_0
-    iget-object v4, v1, LSma;->Y:Ljava/lang/Object;
+    iget-object v4, v1, Lfza;->Y:Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -1083,7 +1083,7 @@
 
     .line 34
     .line 35
-    iget-object v5, v1, LSma;->b:LSma;
+    iget-object v5, v1, Lfza;->b:Lfza;
 
     .line 36
     .line 37
@@ -1091,7 +1091,7 @@
 
     .line 38
     :cond_3
-    iget-object v5, v1, LSma;->c:LSma;
+    iget-object v5, v1, Lfza;->c:Lfza;
 
     .line 39
     .line 40
@@ -1123,7 +1123,7 @@
 
     .line 49
     :cond_6
-    iget-object p2, p0, Lcom/google/gson/internal/LinkedTreeMap;->header:LSma;
+    iget-object p2, p0, Lcom/google/gson/internal/LinkedTreeMap;->header:Lfza;
 
     .line 50
     .line 51
@@ -1196,20 +1196,20 @@
     .line 83
     :cond_8
     :goto_4
-    new-instance v0, LSma;
+    new-instance v0, Lfza;
 
     .line 84
     .line 85
-    iget-object v3, p2, LSma;->X:LSma;
+    iget-object v3, p2, Lfza;->X:Lfza;
 
     .line 86
     .line 87
-    invoke-direct {v0, v1, p1, p2, v3}, LSma;-><init>(LSma;Ljava/lang/Object;LSma;LSma;)V
+    invoke-direct {v0, v1, p1, p2, v3}, Lfza;-><init>(Lfza;Ljava/lang/Object;Lfza;Lfza;)V
 
     .line 88
     .line 89
     .line 90
-    iput-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:LSma;
+    iput-object v0, p0, Lcom/google/gson/internal/LinkedTreeMap;->root:Lfza;
 
     .line 91
     .line 92
@@ -1217,15 +1217,15 @@
 
     .line 93
     :cond_9
-    new-instance v0, LSma;
+    new-instance v0, Lfza;
 
     .line 94
     .line 95
-    iget-object v3, p2, LSma;->X:LSma;
+    iget-object v3, p2, Lfza;->X:Lfza;
 
     .line 96
     .line 97
-    invoke-direct {v0, v1, p1, p2, v3}, LSma;-><init>(LSma;Ljava/lang/Object;LSma;LSma;)V
+    invoke-direct {v0, v1, p1, p2, v3}, Lfza;-><init>(Lfza;Ljava/lang/Object;Lfza;Lfza;)V
 
     .line 98
     .line 99
@@ -1234,7 +1234,7 @@
 
     .line 101
     .line 102
-    iput-object v0, v1, LSma;->b:LSma;
+    iput-object v0, v1, Lfza;->b:Lfza;
 
     .line 103
     .line 104
@@ -1242,12 +1242,12 @@
 
     .line 105
     :cond_a
-    iput-object v0, v1, LSma;->c:LSma;
+    iput-object v0, v1, Lfza;->c:Lfza;
 
     .line 106
     .line 107
     :goto_5
-    invoke-direct {p0, v1, v2}, Lcom/google/gson/internal/LinkedTreeMap;->rebalance(LSma;Z)V
+    invoke-direct {p0, v1, v2}, Lcom/google/gson/internal/LinkedTreeMap;->rebalance(Lfza;Z)V
 
     .line 108
     .line 109
@@ -1278,14 +1278,14 @@
     return-object v0
 .end method
 
-.method public findByEntry(Ljava/util/Map$Entry;)LSma;
+.method public findByEntry(Ljava/util/Map$Entry;)Lfza;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/Map$Entry<",
             "**>;)",
-            "LSma;"
+            "Lfza;"
         }
     .end annotation
 
@@ -1298,7 +1298,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {p0, v0}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)LSma;
+    invoke-virtual {p0, v0}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)Lfza;
 
     .line 6
     .line 7
@@ -1310,7 +1310,7 @@
 
     .line 10
     .line 11
-    iget-object v1, v0, LSma;->Z:Ljava/lang/Object;
+    iget-object v1, v0, Lfza;->Z:Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -1344,14 +1344,14 @@
     return-object p1
 .end method
 
-.method public findByObject(Ljava/lang/Object;)LSma;
+.method public findByObject(Ljava/lang/Object;)Lfza;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             ")",
-            "LSma;"
+            "Lfza;"
         }
     .end annotation
 
@@ -1367,7 +1367,7 @@
 
     .line 5
     :try_start_0
-    invoke-virtual {p0, p1, v1}, Lcom/google/gson/internal/LinkedTreeMap;->find(Ljava/lang/Object;Z)LSma;
+    invoke-virtual {p0, p1, v1}, Lcom/google/gson/internal/LinkedTreeMap;->find(Ljava/lang/Object;Z)Lfza;
 
     .line 6
     .line 7
@@ -1396,7 +1396,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)LSma;
+    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)Lfza;
 
     .line 2
     .line 3
@@ -1408,7 +1408,7 @@
 
     .line 6
     .line 7
-    iget-object p1, p1, LSma;->Z:Ljava/lang/Object;
+    iget-object p1, p1, Lfza;->Z:Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -1477,7 +1477,7 @@
     const/4 v0, 0x1
 
     .line 4
-    invoke-virtual {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->find(Ljava/lang/Object;Z)LSma;
+    invoke-virtual {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->find(Ljava/lang/Object;Z)Lfza;
 
     .line 5
     .line 6
@@ -1485,11 +1485,11 @@
     move-result-object p1
 
     .line 8
-    iget-object v0, p1, LSma;->Z:Ljava/lang/Object;
+    iget-object v0, p1, Lfza;->Z:Ljava/lang/Object;
 
     .line 9
     .line 10
-    iput-object p2, p1, LSma;->Z:Ljava/lang/Object;
+    iput-object p2, p1, Lfza;->Z:Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -1524,7 +1524,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternalByKey(Ljava/lang/Object;)LSma;
+    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternalByKey(Ljava/lang/Object;)Lfza;
 
     .line 2
     .line 3
@@ -1536,7 +1536,7 @@
 
     .line 6
     .line 7
-    iget-object p1, p1, LSma;->Z:Ljava/lang/Object;
+    iget-object p1, p1, Lfza;->Z:Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -1550,12 +1550,12 @@
     return-object p1
 .end method
 
-.method public removeInternal(LSma;Z)V
+.method public removeInternal(Lfza;Z)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LSma;",
+            "Lfza;",
             "Z)V"
         }
     .end annotation
@@ -1565,36 +1565,36 @@
 
     .line 2
     .line 3
-    iget-object p2, p1, LSma;->X:LSma;
+    iget-object p2, p1, Lfza;->X:Lfza;
 
     .line 4
     .line 5
-    iget-object v0, p1, LSma;->t:LSma;
+    iget-object v0, p1, Lfza;->t:Lfza;
 
     .line 6
     .line 7
-    iput-object v0, p2, LSma;->t:LSma;
+    iput-object v0, p2, Lfza;->t:Lfza;
 
     .line 8
     .line 9
-    iget-object v0, p1, LSma;->t:LSma;
+    iget-object v0, p1, Lfza;->t:Lfza;
 
     .line 10
     .line 11
-    iput-object p2, v0, LSma;->X:LSma;
+    iput-object p2, v0, Lfza;->X:Lfza;
 
     .line 12
     .line 13
     :cond_0
-    iget-object p2, p1, LSma;->b:LSma;
+    iget-object p2, p1, Lfza;->b:Lfza;
 
     .line 14
     .line 15
-    iget-object v0, p1, LSma;->c:LSma;
+    iget-object v0, p1, Lfza;->c:Lfza;
 
     .line 16
     .line 17
-    iget-object v1, p1, LSma;->a:LSma;
+    iget-object v1, p1, Lfza;->a:Lfza;
 
     .line 18
     .line 19
@@ -1612,11 +1612,11 @@
 
     .line 24
     .line 25
-    iget v1, p2, LSma;->e0:I
+    iget v1, p2, Lfza;->e0:I
 
     .line 26
     .line 27
-    iget v4, v0, LSma;->e0:I
+    iget v4, v0, Lfza;->e0:I
 
     .line 28
     .line 29
@@ -1624,7 +1624,7 @@
 
     .line 30
     .line 31
-    iget-object v0, p2, LSma;->c:LSma;
+    iget-object v0, p2, Lfza;->c:Lfza;
 
     .line 32
     .line 33
@@ -1642,7 +1642,7 @@
 
     .line 37
     .line 38
-    iget-object v0, p2, LSma;->c:LSma;
+    iget-object v0, p2, Lfza;->c:Lfza;
 
     .line 39
     .line 40
@@ -1650,7 +1650,7 @@
 
     .line 41
     :cond_1
-    iget-object p2, v0, LSma;->b:LSma;
+    iget-object p2, v0, Lfza;->b:Lfza;
 
     .line 42
     .line 43
@@ -1668,7 +1668,7 @@
 
     .line 47
     .line 48
-    iget-object p2, v0, LSma;->b:LSma;
+    iget-object p2, v0, Lfza;->b:Lfza;
 
     .line 49
     .line 50
@@ -1680,12 +1680,12 @@
 
     .line 52
     :cond_3
-    invoke-virtual {p0, v0, v2}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(LSma;Z)V
+    invoke-virtual {p0, v0, v2}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(Lfza;Z)V
 
     .line 53
     .line 54
     .line 55
-    iget-object p2, p1, LSma;->b:LSma;
+    iget-object p2, p1, Lfza;->b:Lfza;
 
     .line 56
     .line 57
@@ -1693,19 +1693,19 @@
 
     .line 58
     .line 59
-    iget v1, p2, LSma;->e0:I
+    iget v1, p2, Lfza;->e0:I
 
     .line 60
     .line 61
-    iput-object p2, v0, LSma;->b:LSma;
+    iput-object p2, v0, Lfza;->b:Lfza;
 
     .line 62
     .line 63
-    iput-object v0, p2, LSma;->a:LSma;
+    iput-object v0, p2, Lfza;->a:Lfza;
 
     .line 64
     .line 65
-    iput-object v3, p1, LSma;->b:LSma;
+    iput-object v3, p1, Lfza;->b:Lfza;
 
     .line 66
     .line 67
@@ -1717,7 +1717,7 @@
 
     .line 69
     :goto_2
-    iget-object p2, p1, LSma;->c:LSma;
+    iget-object p2, p1, Lfza;->c:Lfza;
 
     .line 70
     .line 71
@@ -1725,19 +1725,19 @@
 
     .line 72
     .line 73
-    iget v2, p2, LSma;->e0:I
+    iget v2, p2, Lfza;->e0:I
 
     .line 74
     .line 75
-    iput-object p2, v0, LSma;->c:LSma;
+    iput-object p2, v0, Lfza;->c:Lfza;
 
     .line 76
     .line 77
-    iput-object v0, p2, LSma;->a:LSma;
+    iput-object v0, p2, Lfza;->a:Lfza;
 
     .line 78
     .line 79
-    iput-object v3, p1, LSma;->c:LSma;
+    iput-object v3, p1, Lfza;->c:Lfza;
 
     .line 80
     .line 81
@@ -1754,11 +1754,11 @@
 
     .line 86
     .line 87
-    iput p2, v0, LSma;->e0:I
+    iput p2, v0, Lfza;->e0:I
 
     .line 88
     .line 89
-    invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(LSma;LSma;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(Lfza;Lfza;)V
 
     .line 90
     .line 91
@@ -1771,12 +1771,12 @@
 
     .line 94
     .line 95
-    invoke-direct {p0, p1, p2}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(LSma;LSma;)V
+    invoke-direct {p0, p1, p2}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(Lfza;Lfza;)V
 
     .line 96
     .line 97
     .line 98
-    iput-object v3, p1, LSma;->b:LSma;
+    iput-object v3, p1, Lfza;->b:Lfza;
 
     .line 99
     .line 100
@@ -1788,12 +1788,12 @@
 
     .line 102
     .line 103
-    invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(LSma;LSma;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(Lfza;Lfza;)V
 
     .line 104
     .line 105
     .line 106
-    iput-object v3, p1, LSma;->c:LSma;
+    iput-object v3, p1, Lfza;->c:Lfza;
 
     .line 107
     .line 108
@@ -1801,13 +1801,13 @@
 
     .line 109
     :cond_8
-    invoke-direct {p0, p1, v3}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(LSma;LSma;)V
+    invoke-direct {p0, p1, v3}, Lcom/google/gson/internal/LinkedTreeMap;->replaceInParent(Lfza;Lfza;)V
 
     .line 110
     .line 111
     .line 112
     :goto_3
-    invoke-direct {p0, v1, v2}, Lcom/google/gson/internal/LinkedTreeMap;->rebalance(LSma;Z)V
+    invoke-direct {p0, v1, v2}, Lcom/google/gson/internal/LinkedTreeMap;->rebalance(Lfza;Z)V
 
     .line 113
     .line 114
@@ -1839,19 +1839,19 @@
     return-void
 .end method
 
-.method public removeInternalByKey(Ljava/lang/Object;)LSma;
+.method public removeInternalByKey(Ljava/lang/Object;)Lfza;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             ")",
-            "LSma;"
+            "Lfza;"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)LSma;
+    invoke-virtual {p0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->findByObject(Ljava/lang/Object;)Lfza;
 
     .line 2
     .line 3
@@ -1866,7 +1866,7 @@
     const/4 v0, 0x1
 
     .line 8
-    invoke-virtual {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(LSma;Z)V
+    invoke-virtual {p0, p1, v0}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(Lfza;Z)V
 
     .line 9
     .line 10

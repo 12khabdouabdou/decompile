@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final i0:LZh2;
+.field public final g0:LOq2;
 
 
 # direct methods
-.method public constructor <init>(ZLandroid/content/Context;ILiq1;LRg2;LZh2;)V
+.method public constructor <init>(ZLandroid/content/Context;ILYp1;LFD1;LOq2;)V
     .locals 6
 
     .line 1
@@ -30,12 +30,12 @@
     move-object v4, p5
 
     .line 7
-    invoke-direct/range {v0 .. v5}, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;-><init>(ZLandroid/content/Context;ILRg2;Liq1;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;-><init>(ZLandroid/content/Context;ILFD1;LYp1;)V
 
     .line 8
     .line 9
     .line 10
-    iput-object p6, v0, Lcom/snap/lenses/carousel/DotsCollapsibleLoopingCarouselLayoutManager;->i0:LZh2;
+    iput-object p6, v0, Lcom/snap/lenses/carousel/DotsCollapsibleLoopingCarouselLayoutManager;->g0:LOq2;
 
     .line 11
     .line 12
@@ -44,18 +44,18 @@
 
 
 # virtual methods
-.method public final e2()Lkotlin/jvm/functions/Function0;
+.method public final h2()Lkotlin/jvm/functions/Function0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/carousel/DotsCollapsibleLoopingCarouselLayoutManager;->i0:LZh2;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/DotsCollapsibleLoopingCarouselLayoutManager;->g0:LOq2;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final k2(Z)V
+.method public final j2(Z)V
     .locals 10
 
     .line 1
@@ -67,7 +67,7 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->R:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->O:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 6
     .line 7
@@ -90,7 +90,7 @@
     .line 15
     .line 16
     :goto_0
-    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->R:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->O:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 17
     .line 18
@@ -111,7 +111,7 @@
 
     .line 25
     :cond_2
-    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->R:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->O:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 26
     .line 27
@@ -129,7 +129,7 @@
     .line 32
     .line 33
     :goto_1
-    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->R:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lcom/snap/ui/view/recycler/looping/LoopingLayoutManager;->O:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 34
     .line 35
@@ -147,7 +147,7 @@
     .line 40
     .line 41
     :goto_2
-    invoke-virtual {p0}, LwGe;->I()I
+    invoke-virtual {p0}, LfYe;->N()I
 
     .line 42
     .line 43
@@ -159,7 +159,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {p0}, LwGe;->I()I
+    invoke-virtual {p0}, LfYe;->N()I
 
     .line 48
     .line 49
@@ -178,7 +178,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p0, v4}, LwGe;->H(I)Landroid/view/View;
+    invoke-virtual {p0, v4}, LfYe;->M(I)Landroid/view/View;
 
     .line 56
     .line 57
@@ -194,7 +194,7 @@
 
     .line 62
     :cond_5
-    const v6, 0x7f0b0aa9
+    const v6, 0x7f0b0bb5
 
     .line 63
     .line 64
@@ -211,7 +211,7 @@
 
     .line 70
     .line 71
-    const v7, 0x7f0b0aab
+    const v7, 0x7f0b0bb7
 
     .line 72
     .line 73

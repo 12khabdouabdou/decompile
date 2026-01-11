@@ -1,77 +1,52 @@
-.class public final LQKi;
+.class public abstract LQKi;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LXog;
+# static fields
+.field public static final a:Ljava/lang/Throwable;
 
-.field public final b:LTqc;
-
-.field public final c:LPm9;
+.field public static final b:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public constructor <init>(LXog;LTqc;LPm9;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ljava/lang/Throwable;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LQKi;->a:LXog;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LQKi;->b:LTqc;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LQKi;->c:LPm9;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Landroid/content/Context;Landroid/view/View;)LIbc;
-    .locals 6
-
-    .line 1
-    new-instance v0, LIbc;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LQKi;->a:LXog;
+    const-string v1, "Telecom failed to place outgoing call"
 
     .line 4
     .line 5
-    iget-object v5, v1, LXog;->c:LWog;
+    invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    iget-object v3, p0, LQKi;->b:LTqc;
-
     .line 8
-    .line 9
-    iget-object v4, p0, LQKi;->c:LPm9;
+    sput-object v0, LQKi;->a:Ljava/lang/Throwable;
 
+    .line 9
     .line 10
+    new-instance v0, Ljava/lang/Throwable;
+
     .line 11
-    move-object v2, p1
-
     .line 12
-    move-object v1, p2
+    const-string v1, "Telecom failed to add incoming call"
 
     .line 13
-    invoke-direct/range {v0 .. v5}, LIbc;-><init>(Landroid/view/View;Landroid/content/Context;LTqc;LPm9;LWog;)V
-
     .line 14
+    invoke-direct {v0, v1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
+
     .line 15
     .line 16
-    return-object v0
+    .line 17
+    sput-object v0, LQKi;->b:Ljava/lang/Throwable;
+
+    .line 18
+    .line 19
+    return-void
 .end method

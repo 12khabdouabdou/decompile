@@ -1,49 +1,94 @@
-.class public abstract synthetic LpD5;
-.super Ljava/lang/Object;
+.class public final LpD5;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lcom/snap/lenses/camera/hint/DefaultHintView;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(Lcom/snap/lenses/camera/hint/DefaultHintView;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    iput p2, p0, LpD5;->a:I
+
+    iput-object p1, p0, LpD5;->b:Lcom/snap/lenses/camera/hint/DefaultHintView;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LpD5;->b:Lcom/snap/lenses/camera/hint/DefaultHintView;
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
-
     .line 3
+    iget v1, p0, LpD5;->a:I
+
     .line 4
     .line 5
-    move-result-object v1
+    packed-switch v1, :pswitch_data_0
 
     .line 6
-    array-length v1, v1
-
     .line 7
-    new-array v1, v1, [I
-
     .line 8
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
     .line 9
-    const/4 v2, 0x0
-
     .line 10
-    :try_start_0
-    aput v0, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 11
-    .line 12
-    :catch_0
-    sput-object v1, LpD5;->a:[I
+    invoke-static {}, LYh7;->M()V
 
+    .line 12
     .line 13
     .line 14
-    return-void
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 15
+    .line 16
+    return-object v0
+
+    .line 17
+    :pswitch_0
+    sget v1, Lcom/snap/lenses/camera/hint/DefaultHintView;->h0:I
+
+    .line 18
+    .line 19
+    const/4 v1, 0x0
+
+    .line 20
+    invoke-virtual {v0, v1}, Lcom/snap/lenses/camera/hint/DefaultHintView;->v(Z)V
+
+    .line 21
+    .line 22
+    .line 23
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 24
+    .line 25
+    return-object v0
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

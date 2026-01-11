@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "Lvec;",
-        "Lxec;",
+        "Lmtc;",
+        "Lotc;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:Lwec;
+.field public static final Companion:Lntc;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lwec;
+    new-instance v0, Lntc;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->Companion:Lwec;
+    sput-object v0, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->Companion:Lntc;
 
     .line 7
     .line 8
@@ -62,68 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;
-    .locals 9
-
-    sget-object v0, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->Companion:Lwec;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 1
-    new-instance v2, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;
-
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-direct {v2, v0}, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;-><init>(Landroid/content/Context;)V
-
-    .line 2
-    invoke-static {}, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->access$getComponentPath$cp()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v8, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    move-object v1, p0
-
-    move-object v6, p1
-
-    .line 3
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
-
-    return-object v2
-.end method
-
-.method public static final create(LqZ8;Lvec;Lxec;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;
+.method public static final create(LZ69;Lmtc;Lotc;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "Lvec;",
-            "Lxec;",
-            "LTB3;",
+            "LZ69;",
+            "Lmtc;",
+            "Lotc;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->Companion:Lwec;
+    sget-object v0, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->Companion:Lntc;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     new-instance v2, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -147,7 +108,46 @@
     move-object v7, p4
 
     .line 6
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
+
+    return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;
+    .locals 9
+
+    sget-object v0, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->Companion:Lntc;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 1
+    new-instance v2, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;
+
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;-><init>(Landroid/content/Context;)V
+
+    .line 2
+    invoke-static {}, Lcom/snap/aura/birthinfo/MyBirthInforamtionPageView;->access$getComponentPath$cp()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v8, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v1, p0
+
+    move-object v6, p1
+
+    .line 3
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method

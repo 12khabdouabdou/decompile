@@ -1,14 +1,14 @@
 .class public final Lsba;
-.super Ljava/lang/Object;
+.super Luba;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LXaa;
+.field public final a:LYra;
 
 
 # direct methods
-.method public constructor <init>(LXaa;)V
+.method public constructor <init>(LYra;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lsba;->a:LXaa;
+    iput-object p1, p0, Lsba;->a:LYra;
 
     .line 5
     .line 6
@@ -26,6 +26,17 @@
 
 
 # virtual methods
+.method public final a()LYra;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lsba;->a:LYra;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
@@ -60,15 +71,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Lsba;->a:LXaa;
+    iget-object v1, p0, Lsba;->a:LYra;
 
     .line 14
     .line 15
-    iget-object p1, p1, Lsba;->a:LXaa;
+    iget-object p1, p1, Lsba;->a:LYra;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -91,11 +102,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lsba;->a:LXaa;
+    iget-object v0, p0, Lsba;->a:LYra;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXaa;->hashCode()I
+    invoke-virtual {v0}, LYra;->hashCode()I
 
     .line 4
     .line 5
@@ -114,7 +125,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Result(event="
+    const-string v1, "External(page="
 
     .line 4
     .line 5
@@ -123,7 +134,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lsba;->a:LXaa;
+    iget-object v1, p0, Lsba;->a:LYra;
 
     .line 9
     .line 10

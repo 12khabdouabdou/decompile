@@ -1,6 +1,6 @@
-.class public abstract LnMi;
-.super LqMi;
+.class public final LnMi;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LXii;
+.implements LYjb;

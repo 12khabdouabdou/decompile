@@ -1,114 +1,17 @@
 .class public final LCI2;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'mediasObservable\':g<c>:\'[0]\'<a<r:\'[1]\'>>,\'messageSendingObservable\':g?<c>:\'[0]\'<b@>,\'messageVisibilityObservable\':g?<c>:\'[0]\'<b@>,\'onTap\':f(d@, r?:\'[2]\'),\'preserveMessage\':f?(),\'unpreserveMessage\':f?(),\'snapPlayerViewFactory\':r:\'[3]\',\'videoProvider\':r?:\'[4]\',\'displayStateLogger\':r?:\'[5]\',\'previewScale\':d@?"
-    typeReferences = {
-        Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lcom/snap/modules/chat_media/ChatMediaData;,
-        Lcom/snap/composer/nodes/IComposerViewNode;,
-        Lcom/snap/composer/ViewFactory;,
-        Lcom/snap/modules/chat_media/ChatMediaVideoProvider;,
-        Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;
-    }
-.end annotation
-
-
 # instance fields
-.field private _displayStateLogger:Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;
+.field public final a:LwO2;
 
-.field private _mediasObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/util/List<",
-            "Lcom/snap/modules/chat_media/ChatMediaData;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field private _messageSendingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _messageVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _onTap:Lkotlin/jvm/functions/Function2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function2;"
-        }
-    .end annotation
-.end field
-
-.field private _preserveMessage:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _previewScale:Ljava/lang/Double;
-
-.field private _snapPlayerViewFactory:Lcom/snap/composer/ViewFactory;
-
-.field private _unpreserveMessage:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _videoProvider:Lcom/snap/modules/chat_media/ChatMediaVideoProvider;
+.field public final b:Lu9d;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lcom/snap/composer/ViewFactory;Lcom/snap/modules/chat_media/ChatMediaVideoProvider;Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;Ljava/lang/Double;)V
+.method public constructor <init>(LwO2;Lu9d;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/util/List<",
-            "Lcom/snap/modules/chat_media/ChatMediaData;",
-            ">;>;",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;",
-            "Lkotlin/jvm/functions/Function2;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lcom/snap/composer/ViewFactory;",
-            "Lcom/snap/modules/chat_media/ChatMediaVideoProvider;",
-            "Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;",
-            "Ljava/lang/Double;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -116,80 +19,204 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LCI2;->_mediasObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    iput-object p1, p0, LCI2;->a:LwO2;
 
     .line 5
     .line 6
-    iput-object p2, p0, LCI2;->_messageSendingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    iput-object p2, p0, LCI2;->b:Lu9d;
 
     .line 7
     .line 8
-    iput-object p3, p0, LCI2;->_messageVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LCI2;->_onTap:Lkotlin/jvm/functions/Function2;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, LCI2;->_preserveMessage:Lkotlin/jvm/functions/Function0;
-
-    .line 13
-    .line 14
-    iput-object p6, p0, LCI2;->_unpreserveMessage:Lkotlin/jvm/functions/Function0;
-
-    .line 15
-    .line 16
-    iput-object p7, p0, LCI2;->_snapPlayerViewFactory:Lcom/snap/composer/ViewFactory;
-
-    .line 17
-    .line 18
-    iput-object p8, p0, LCI2;->_videoProvider:Lcom/snap/modules/chat_media/ChatMediaVideoProvider;
-
-    .line 19
-    .line 20
-    iput-object p9, p0, LCI2;->_displayStateLogger:Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;
-
-    .line 21
-    .line 22
-    iput-object p10, p0, LCI2;->_previewScale:Ljava/lang/Double;
-
-    .line 23
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LKJ2;)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LCI2;->_preserveMessage:Lkotlin/jvm/functions/Function0;
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    return-void
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, LCI2;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, LCI2;
+
+    .line 10
+    .line 11
+    iget-object v0, p1, LCI2;->a:LwO2;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LCI2;->a:LwO2;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_2
+    iget-object v0, p0, LCI2;->b:Lu9d;
+
+    .line 23
+    .line 24
+    iget-object p1, p1, LCI2;->b:Lu9d;
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result p1
+
+    .line 30
+    if-nez p1, :cond_3
+
+    .line 31
+    .line 32
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 33
+    return p1
+
+    .line 34
+    :cond_3
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 35
+    return p1
 .end method
 
-.method public final b(Ljava/lang/Double;)V
-    .locals 0
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LCI2;->_previewScale:Ljava/lang/Double;
+    iget-object v0, p0, LCI2;->a:LwO2;
 
     .line 2
     .line 3
-    return-void
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LCI2;->b:Lu9d;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
 .end method
 
-.method public final c(LKJ2;)V
-    .locals 0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LCI2;->_unpreserveMessage:Lkotlin/jvm/functions/Function0;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    return-void
+    const-string v1, "SnapsLaunchingInfo(operaPlaylistGroup="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LCI2;->a:LwO2;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", scViewerConfigBuilder="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LCI2;->b:Lu9d;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

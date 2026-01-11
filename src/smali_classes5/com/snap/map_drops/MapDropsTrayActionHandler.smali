@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LUXa;
-    schema = "\'onClose\':f?|m|(),\'sendPinToChat\':f|m|(s, d, d, s?, s?),\'deletePin\':f?|m|(),\'getDirections\':f?|m|(d, d, r<e>:\'[0]\', s?, s?, s?),\'onNearbyPlacesTap\':f?|m|(r:\'[1]\', s?),\'onFavoritePlace\':f?|m|(r:\'[1]\', b, s?),\'launchEmojiPicker\':f?|m|(),\'onTextFieldFocusChange\':f?|m|(b)"
+    proxyClass = LYab;
+    schema = "\'onClose\':f?|m|(),\'sendPinToChat\':f|m|(s, d, d, s?, s?),\'getDirections\':f?|m|(d, d, r<e>:\'[0]\', s?, s?, s?),\'onNearbyPlacesTap\':f?|m|(r:\'[1]\', s?),\'onFavoritePlace\':f?|m|(r:\'[1]\', b, s?),\'launchEmojiPicker\':f?|m|(),\'onTextFieldFocusChange\':f?|m|(b),\'onMoreButtonTap\':f?|m|()"
     typeReferences = {
         Lcom/snap/composer/map/TravelMode;,
         Lcom/snap/placediscovery/PlaceDiscoveryModel;
@@ -19,38 +19,38 @@
 
 
 # virtual methods
-.method public abstract deletePin()V
-    .annotation runtime LUy3;
-    .end annotation
-.end method
-
 .method public abstract getDirections(DDLcom/snap/composer/map/TravelMode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract launchEmojiPicker()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onClose()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onFavoritePlace(Lcom/snap/placediscovery/PlaceDiscoveryModel;ZLjava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract onMoreButtonTap()V
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onNearbyPlacesTap(Lcom/snap/placediscovery/PlaceDiscoveryModel;Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onTextFieldFocusChange(Z)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

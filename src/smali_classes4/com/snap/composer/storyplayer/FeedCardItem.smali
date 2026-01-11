@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/FeedCardItem;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'feedCardInfo\':r:\'[0]\',\'encodedSnapDocs\':a<t>,\'encodedMixerStory\':t?,\'encodedFeedCard\':t?"
     typeReferences = {
@@ -65,4 +65,50 @@
     .line 11
     .line 12
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()[B
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/FeedCardItem;->_encodedFeedCard:[B
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()[B
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/FeedCardItem;->_encodedMixerStory:[B
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/FeedCardItem;->_encodedSnapDocs:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final d()Lcom/snap/composer/storyplayer/FeedCardInfo;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/FeedCardItem;->_feedCardInfo:Lcom/snap/composer/storyplayer/FeedCardInfo;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

@@ -1,76 +1,127 @@
-.class public final synthetic LKo0;
-.super Lj28;
+.class public final LKo0;
+.super Lxde;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function2;
 
+# instance fields
+.field public final m:LQm0;
 
-# static fields
-.field public static final f0:LKo0;
+.field public n:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(Landroid/content/Context;Landroid/widget/FrameLayout;Landroid/view/View;Landroid/widget/ImageView;LtB1;LvP0;LBde;ILQm0;)V
+    .locals 11
 
     .line 1
-    new-instance v0, LKo0;
+    const/4 v10, 0x0
 
     .line 2
+    const/4 v9, 0x1
+
     .line 3
-    const-string v5, "<init>(Ljava/lang/Object;Ljava/lang/Object;)V"
+    move-object v0, p0
 
     .line 4
+    move-object v1, p1
+
     .line 5
-    const/4 v2, 0x0
+    move-object v2, p2
 
     .line 6
-    const/4 v1, 0x2
+    move-object v3, p3
 
     .line 7
-    const-class v3, Lhad;
+    move-object v4, p4
 
     .line 8
+    move-object/from16 v5, p5
+
     .line 9
-    const-string v4, "<init>"
-
     .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    move-object/from16 v6, p6
 
+    .line 11
     .line 12
+    move-object/from16 v7, p7
+
     .line 13
     .line 14
-    sput-object v0, LKo0;->f0:LKo0;
+    move/from16 v8, p8
 
     .line 15
     .line 16
+    invoke-direct/range {v0 .. v10}, Lxde;-><init>(Landroid/content/Context;Landroid/widget/FrameLayout;Landroid/view/View;Landroid/widget/ImageView;LtB1;Lyde;LBde;IZZ)V
+
+    .line 17
+    .line 18
+    .line 19
+    move-object/from16 p1, p9
+
+    .line 20
+    .line 21
+    iput-object p1, p0, LKo0;->m:LQm0;
+
+    .line 22
+    .line 23
     return-void
 .end method
 
 
 # virtual methods
-.method public final N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final b()Z
     .locals 1
 
     .line 1
-    check-cast p1, LMHi;
+    iget-boolean v0, p0, LKo0;->n:Z
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/Boolean;
+    return v0
+.end method
+
+.method public final e(Z)V
+    .locals 0
+
+    .line 1
+    iput-boolean p1, p0, LKo0;->n:Z
+
+    .line 2
+    .line 3
+    if-nez p1, :cond_1
 
     .line 4
     .line 5
-    new-instance v0, Lhad;
+    iget-object p1, p0, LKo0;->m:LQm0;
 
     .line 6
     .line 7
-    invoke-direct {v0, p1, p2}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    iget-object p1, p1, LQm0;->a:Ljava/lang/String;
 
     .line 8
     .line 9
+    if-eqz p1, :cond_0
+
     .line 10
-    return-object v0
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-virtual {p0}, Lxde;->f()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+
+    .line 16
+    :cond_1
+    :goto_0
+    invoke-virtual {p0}, Lxde;->g()V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
 .end method

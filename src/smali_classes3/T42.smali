@@ -1,14 +1,19 @@
 .class public final LT42;
-.super LU42;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lk11;
 
 
 # instance fields
-.field public final a:Lsc2;
+.field public final synthetic a:Lx42;
+
+.field public final synthetic b:LC7j;
 
 
 # direct methods
-.method public constructor <init>(Lsc2;)V
+.method public constructor <init>(Lx42;LC7j;)V
     .locals 0
 
     .line 1
@@ -17,167 +22,66 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LT42;->a:Lsc2;
+    iput-object p1, p0, LT42;->a:Lx42;
 
     .line 5
     .line 6
+    iput-object p2, p0, LT42;->b:LC7j;
+
+    .line 7
+    .line 8
     return-void
+.end method
+
+.method public static g()Z
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x16
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    return v0
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final c()Lx42;
     .locals 1
 
     .line 1
-    if-ne p0, p1, :cond_0
-
-    .line 2
-    .line 3
-    goto :goto_1
-
-    .line 4
-    :cond_0
-    instance-of v0, p1, LT42;
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_1
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    check-cast p1, LT42;
-
-    .line 10
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 12
-    .line 13
-    .line 14
-    iget-object v0, p0, LT42;->a:Lsc2;
-
-    .line 15
-    .line 16
-    iget-object p1, p1, LT42;->a:Lsc2;
-
-    .line 17
-    .line 18
-    if-eq v0, p1, :cond_2
-
-    .line 19
-    .line 20
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 21
-    return p1
-
-    .line 22
-    :cond_2
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 23
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LT42;->a:Lsc2;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    :goto_0
-    const v1, 0x7ce13716
-
-    .line 12
-    .line 13
-    .line 14
-    add-int/2addr v1, v0
-
-    .line 15
-    return v1
-.end method
-
-.method public final i()Lsc2;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LT42;->a:Lsc2;
+    iget-object v0, p0, LT42;->a:Lx42;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public final d()LC7j;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, LT42;->b:LC7j;
 
     .line 2
     .line 3
-    const-string v1, "WithScan(source=LockScreenModeDeepLinkHandler, cameraType="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LT42;->a:Lsc2;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
     return-object v0
 .end method

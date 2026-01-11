@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LPRa;
+.implements Lz4b;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method public final a(Ljava/util/List;)LORa;
+.method public final a(Ljava/util/List;)Ly4b;
     .locals 5
 
     .line 1
@@ -71,7 +71,7 @@
     move-object v2, v1
 
     .line 23
-    check-cast v2, LPRa;
+    check-cast v2, Lz4b;
 
     .line 24
     .line 25
@@ -146,11 +146,11 @@
     move-object v2, v1
 
     .line 56
-    check-cast v2, LPRa;
+    check-cast v2, Lz4b;
 
     .line 57
     .line 58
-    invoke-interface {v2}, LPRa;->b()I
+    invoke-interface {v2}, Lz4b;->b()I
 
     .line 59
     .line 60
@@ -170,11 +170,11 @@
     move-object v4, v3
 
     .line 67
-    check-cast v4, LPRa;
+    check-cast v4, Lz4b;
 
     .line 68
     .line 69
-    invoke-interface {v4}, LPRa;->b()I
+    invoke-interface {v4}, Lz4b;->b()I
 
     .line 70
     .line 71
@@ -209,7 +209,7 @@
 
     .line 84
     :goto_2
-    check-cast p1, LPRa;
+    check-cast p1, Lz4b;
 
     .line 85
     .line 86
@@ -217,12 +217,12 @@
 
     .line 87
     .line 88
-    sget-object p1, LvWb;->a:LvWb;
+    sget-object p1, LMac;->a:LMac;
 
     .line 89
     .line 90
     :cond_6
-    invoke-interface {p1, v0}, LPRa;->a(Ljava/util/List;)LORa;
+    invoke-interface {p1, v0}, Lz4b;->a(Ljava/util/List;)Ly4b;
 
     .line 91
     .line 92
@@ -230,11 +230,11 @@
     move-result-object p1
 
     .line 94
-    new-instance v0, LBqi;
+    new-instance v0, LuPi;
 
     .line 95
     .line 96
-    invoke-direct {v0, p1}, LBqi;-><init>(LORa;)V
+    invoke-direct {v0, p1}, LuPi;-><init>(Ly4b;)V
 
     .line 97
     .line 98

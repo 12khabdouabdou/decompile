@@ -1,33 +1,39 @@
 .class public final Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:Lr1f;
+.field public final b:Lujf;
+
+.field public final c:Lujf;
 
 
 # direct methods
-.method public constructor <init>(Lr1f;)V
+.method public constructor <init>(Lujf;Lujf;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lr1f;
+    iput-object p1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lujf;
 
     .line 5
     .line 6
+    iput-object p2, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->c:Lujf;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 4
 
     const/4 v0, 0x1
 
@@ -47,32 +53,55 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;
 
-    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lr1f;
+    iget-object v1, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lujf;
 
-    iget-object p1, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lr1f;
+    iget-object v3, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lujf;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result v1
 
-    if-nez p1, :cond_2
+    if-nez v1, :cond_2
 
     return v2
 
     :cond_2
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->c:Lujf;
+
+    iget-object p1, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->c:Lujf;
+
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_3
+
+    return v2
+
+    :cond_3
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 2
 
-    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lr1f;
+    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lujf;
 
-    invoke-virtual {v0}, Lr1f;->hashCode()I
+    invoke-virtual {v0}, Lujf;->hashCode()I
 
     move-result v0
 
-    return v0
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->c:Lujf;
+
+    invoke-virtual {v1}, Lujf;->hashCode()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    return v1
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -84,7 +113,15 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lr1f;
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->b:Lujf;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", visibleOperaSize="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;->c:Lujf;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -7,15 +7,16 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lcc7;
-    schema = "\'observable\':g<c>:\'[0]\'<r:\'[1]\'>,\'getFavorites\':f|m|(f(a<r:\'[2]\'>, r?:\'[3]\')),\'setFavorited\':f|m|(r:\'[4]\', b, f(r?:\'[3]\')),\'isFavorited\':f|m|(r:\'[4]\', f(b@, r?:\'[3]\'))"
+    proxyClass = LSg7;
+    schema = "\'observable\':g<c>:\'[0]\'<r:\'[1]\'>,\'getFavorites\':f|m|(f(a<r:\'[2]\'>, r?:\'[3]\')),\'getPagedFavorites\':f?|m|(f(r?:\'[4]\', r?:\'[3]\'), t?),\'setFavorited\':f|m|(r:\'[5]\', b, f(r?:\'[3]\')),\'isFavorited\':f|m|(r:\'[5]\', f(b@, r?:\'[3]\'))"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lvb7;,
+        Llg7;,
         Lcom/snap/music/core/composer/PickerTrack;,
         Lcom/snap/composer/foundation/Error;,
+        LQg7;,
         Lcom/snap/composer/foundation/Long;
     }
 .end annotation
@@ -37,9 +38,22 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lvb7;",
+            "Llg7;",
             ">;"
         }
+    .end annotation
+.end method
+
+.method public abstract getPagedFavorites(Lkotlin/jvm/functions/Function2;[B)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function2;",
+            "[B)V"
+        }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

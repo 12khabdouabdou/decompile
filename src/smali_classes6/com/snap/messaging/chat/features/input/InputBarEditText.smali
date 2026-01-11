@@ -30,7 +30,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/input/InputBarEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/input/InputBarEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/input/InputBarEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/input/InputBarEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -85,31 +85,31 @@
     .line 9
     invoke-virtual {p0, p2}, Landroid/widget/TextView;->setHorizontallyScrolling(Z)V
 
-    const/4 p3, 0x5
+    const/4 p2, 0x5
 
     .line 10
-    invoke-virtual {p0, p3}, Landroid/widget/TextView;->setMaxLines(I)V
+    invoke-virtual {p0, p2}, Landroid/widget/TextView;->setMaxLines(I)V
 
     .line 11
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const p3, 0x7f07038a
+    const p2, 0x7f070391
 
-    invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p1
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setMaxHeight(I)V
 
     .line 12
-    sget-object p1, LWNb;->k:LUNb;
+    sget-object p1, Lp2c;->k:Ln2c;
 
     if-eqz p1, :cond_0
 
     .line 13
-    iget-object p1, p1, LUNb;->q:LqUa;
+    iget-object p1, p1, Ln2c;->n:La7b;
 
     goto :goto_0
 
@@ -117,32 +117,24 @@
     const/4 p1, 0x0
 
     :goto_0
-    if-eqz p1, :cond_1
+    const/4 p2, 0x1
+
+    invoke-static {p1, p2}, LjVk;->f(La7b;Z)I
+
+    move-result p1
+
+    if-lez p1, :cond_1
 
     .line 14
-    invoke-interface {p1}, LqUa;->expose()V
-
-    :cond_1
-    if-eqz p1, :cond_2
-
-    .line 15
-    invoke-static {p1}, LUkk;->g(LqUa;)I
-
-    move-result p2
-
-    :cond_2
-    if-lez p2, :cond_3
-
-    .line 16
     invoke-virtual {p0}, Landroid/widget/TextView;->getFilters()[Landroid/text/InputFilter;
 
-    move-result-object p1
+    move-result-object p2
 
     new-instance p3, Landroid/text/InputFilter$LengthFilter;
 
-    invoke-direct {p3, p2}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
+    invoke-direct {p3, p1}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
 
-    invoke-static {p3, p1}, Lv70;->M0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {p3, p2}, LN90;->B0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
 
@@ -152,8 +144,8 @@
 
     return-void
 
-    .line 17
-    :cond_3
+    .line 15
+    :cond_1
     invoke-virtual {p0}, Landroid/widget/TextView;->getFilters()[Landroid/text/InputFilter;
 
     move-result-object p1
@@ -164,7 +156,7 @@
 
     invoke-direct {p2, p3}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
 
-    invoke-static {p2, p1}, Lv70;->M0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {p2, p1}, LN90;->B0(Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
 
@@ -175,7 +167,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -198,7 +190,7 @@
     return-void
 .end method
 
-.method public static n(Landroid/content/ClipDescription;)LLtb;
+.method public static n(Landroid/content/ClipDescription;)LmHb;
     .locals 2
 
     .line 1
@@ -218,7 +210,7 @@
 
     .line 8
     .line 9
-    sget-object p0, LLtb;->f0:LLtb;
+    sget-object p0, LmHb;->f0:LmHb;
 
     .line 10
     .line 11
@@ -238,7 +230,7 @@
     move-result v0
 
     .line 18
-    sget-object v1, LLtb;->b:LLtb;
+    sget-object v1, LmHb;->b:LmHb;
 
     .line 19
     .line 20
@@ -259,22 +251,42 @@
     .line 26
     .line 27
     .line 28
-    move-result p0
+    move-result v0
 
     .line 29
-    if-eqz p0, :cond_2
+    if-eqz v0, :cond_2
 
     .line 30
     .line 31
-    :goto_0
-    return-object v1
+    goto :goto_0
 
     .line 32
     :cond_2
-    sget-object p0, LLtb;->A0:LLtb;
+    const-string v0, "image/webp"
 
     .line 33
     .line 34
+    invoke-virtual {p0, v0}, Landroid/content/ClipDescription;->hasMimeType(Ljava/lang/String;)Z
+
+    .line 35
+    .line 36
+    .line 37
+    move-result p0
+
+    .line 38
+    if-eqz p0, :cond_3
+
+    .line 39
+    .line 40
+    :goto_0
+    return-object v1
+
+    .line 41
+    :cond_3
+    sget-object p0, LmHb;->A0:LmHb;
+
+    .line 42
+    .line 43
     return-object p0
 .end method
 
@@ -292,35 +304,36 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, Lp0g;->a:[Ljava/lang/String;
+    sget-object v1, LRZd;->a:[Ljava/lang/String;
 
     .line 6
     .line 7
-    invoke-static {p1, v1}, LWwb;->l(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
+    invoke-static {p1, v1}, LZUa;->z(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v1, Ln39;
+    new-instance v1, LoN8;
 
     .line 11
     .line 12
-    const/4 v2, 0x7
+    const/16 v2, 0xe
 
     .line 13
-    invoke-direct {v1, v2, p0}, Ln39;-><init>(ILjava/lang/Object;)V
-
     .line 14
+    invoke-direct {v1, v2, p0}, LoN8;-><init>(ILjava/lang/Object;)V
+
     .line 15
     .line 16
-    invoke-static {v0, p1, v1}, LErk;->c(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lzl9;)Landroid/view/inputmethod/InputConnection;
-
     .line 17
+    invoke-static {v0, p1, v1}, LJRk;->a(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lnu9;)Landroid/view/inputmethod/InputConnection;
+
     .line 18
     .line 19
+    .line 20
     move-result-object p1
 
-    .line 20
+    .line 21
     return-object p1
 .end method
 
@@ -405,7 +418,7 @@
     move-result-object v1
 
     .line 37
-    invoke-static {v1}, Lcom/snap/messaging/chat/features/input/InputBarEditText;->n(Landroid/content/ClipDescription;)LLtb;
+    invoke-static {v1}, Lcom/snap/messaging/chat/features/input/InputBarEditText;->n(Landroid/content/ClipDescription;)LmHb;
 
     .line 38
     .line 39
@@ -413,7 +426,7 @@
     move-result-object v1
 
     .line 41
-    sget-object v2, LLtb;->A0:LLtb;
+    sget-object v2, LmHb;->A0:LmHb;
 
     .line 42
     .line 43
@@ -433,7 +446,7 @@
 
     .line 50
     .line 51
-    new-instance p1, Lc37;
+    new-instance p1, Ld77;
 
     .line 52
     .line 53
@@ -467,16 +480,16 @@
     move-result-wide v4
 
     .line 67
-    new-instance v2, LDR5;
+    new-instance v2, LBr;
 
     .line 68
     .line 69
-    invoke-direct {v2, v0}, LDR5;-><init>(Landroid/content/ClipData$Item;)V
+    invoke-direct {v2, v0}, LBr;-><init>(Landroid/content/ClipData$Item;)V
 
     .line 70
     .line 71
     .line 72
-    invoke-direct {p1, v2, v1, v4, v5}, Lc37;-><init>(Lb37;LLtb;J)V
+    invoke-direct {p1, v2, v1, v4, v5}, Ld77;-><init>(Lc77;LmHb;J)V
 
     .line 73
     .line 74
@@ -529,7 +542,7 @@
 
     .line 7
     .line 8
-    invoke-static {p2}, Lh56;->b(Ljava/lang/String;)Z
+    invoke-static {p2}, Ll86;->a(Ljava/lang/String;)Z
 
     .line 9
     .line 10
@@ -576,7 +589,7 @@
     const/4 v0, 0x0
 
     .line 13
-    const-class v1, Lpl9;
+    const-class v1, Lcu9;
 
     .line 14
     .line 15
@@ -588,7 +601,7 @@
     move-result-object p2
 
     .line 19
-    check-cast p2, [Lpl9;
+    check-cast p2, [Lcu9;
 
     .line 20
     .line 21
@@ -620,11 +633,11 @@
 
     .line 33
     :cond_0
-    new-instance p2, Lpl9;
+    new-instance p2, Lcu9;
 
     .line 34
     .line 35
-    invoke-direct {p2, p0}, Lpl9;-><init>(Lcom/snap/messaging/chat/features/input/InputBarEditText;)V
+    invoke-direct {p2, p0}, Lcu9;-><init>(Lcom/snap/messaging/chat/features/input/InputBarEditText;)V
 
     .line 36
     .line 37

@@ -4,13 +4,11 @@
 
 
 # instance fields
-.field public final a:Lo09;
-
-.field public final b:LKjj;
+.field public final a:LY79;
 
 
 # direct methods
-.method public constructor <init>(Lo09;LKjj;)V
+.method public constructor <init>(LY79;)V
     .locals 0
 
     .line 1
@@ -19,21 +17,17 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LmW1;->a:Lo09;
+    iput-object p1, p0, LmW1;->a:LY79;
 
     .line 5
     .line 6
-    iput-object p2, p0, LmW1;->b:LKjj;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 2
 
     .line 1
     const/4 v0, 0x1
@@ -63,70 +57,46 @@
 
     .line 11
     .line 12
-    iget-object v1, p1, LmW1;->a:Lo09;
+    iget-object p1, p1, LmW1;->a:LY79;
 
     .line 13
     .line 14
-    iget-object v2, p0, LmW1;->a:Lo09;
+    iget-object v1, p0, LmW1;->a:LY79;
 
     .line 15
     .line 16
-    invoke-static {v2, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 17
     .line 18
     .line 19
-    move-result v1
+    move-result p1
 
     .line 20
-    if-nez v1, :cond_2
+    if-nez p1, :cond_2
 
     .line 21
     .line 22
-    goto :goto_0
-
-    .line 23
-    :cond_2
-    iget-object v1, p0, LmW1;->b:LKjj;
-
-    .line 24
-    .line 25
-    iget-object p1, p1, LmW1;->b:LKjj;
-
-    .line 26
-    .line 27
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result p1
-
-    .line 31
-    if-nez p1, :cond_3
-
-    .line 32
-    .line 33
     :goto_0
     const/4 p1, 0x0
 
-    .line 34
+    .line 23
     return p1
 
-    .line 35
-    :cond_3
+    .line 24
+    :cond_2
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LmW1;->a:Lo09;
+    iget-object v0, p0, LmW1;->a:LY79;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
@@ -142,30 +112,11 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, LmW1;->b:LKjj;
+    add-int/lit16 v0, v0, 0x4cf
 
     .line 12
     .line 13
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    add-int/2addr v1, v0
-
-    .line 18
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 19
-    .line 20
-    add-int/lit16 v1, v1, 0x3e8
-
-    .line 21
-    .line 22
-    return v1
+    return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -176,7 +127,7 @@
 
     .line 2
     .line 3
-    const-string v1, "LimitReached(lensId="
+    const-string v1, "Default(lensId="
 
     .line 4
     .line 5
@@ -185,7 +136,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LmW1;->a:Lo09;
+    iget-object v1, p0, LmW1;->a:LY79;
 
     .line 9
     .line 10
@@ -194,7 +145,7 @@
     .line 11
     .line 12
     .line 13
-    const-string v1, ", lensIcon="
+    const-string v1, ", withAnimation=true)"
 
     .line 14
     .line 15
@@ -203,31 +154,13 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LmW1;->b:LKjj;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 21
-    .line 22
-    .line 23
-    const-string v1, ", limit=1000)"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
     move-result-object v0
 
-    .line 32
+    .line 22
     return-object v0
 .end method

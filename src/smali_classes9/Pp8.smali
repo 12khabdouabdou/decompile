@@ -1,12 +1,10 @@
 .class public final LPp8;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:LU96;
-
-.field public b:Lkf9;
+.field public a:Ljava/util/Map;
 
 
 # direct methods
@@ -14,7 +12,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -22,35 +20,31 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, LPp8;->a:LU96;
+    iput-object v0, p0, LPp8;->a:Ljava/util/Map;
 
     .line 6
     .line 7
-    iput-object v0, p0, LPp8;->b:Lkf9;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 8
     .line 9
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 10
-    .line 11
     const/4 v0, -0x1
 
-    .line 12
+    .line 10
     iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
-    .line 13
-    .line 14
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
 .method public final computeSerializedSize()I
-    .locals 3
+    .locals 4
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -58,7 +52,7 @@
     move-result v0
 
     .line 5
-    iget-object v1, p0, LPp8;->a:LU96;
+    iget-object v1, p0, LPp8;->a:Ljava/util/Map;
 
     .line 6
     .line 7
@@ -66,58 +60,37 @@
 
     .line 8
     .line 9
-    const/4 v2, 0x3
+    const/4 v2, 0x1
 
     .line 10
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    const/16 v3, 0x9
 
     .line 11
     .line 12
+    invoke-static {v1, v2, v3, v3}, LWy9;->a(Ljava/util/Map;III)I
+
     .line 13
-    move-result v1
-
     .line 14
-    add-int/2addr v0, v1
-
     .line 15
-    :cond_0
-    iget-object v1, p0, LPp8;->b:Lkf9;
+    move-result v1
 
     .line 16
-    .line 17
-    if-eqz v1, :cond_1
-
-    .line 18
-    .line 19
-    const/16 v2, 0x14
-
-    .line 20
-    .line 21
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v1
-
-    .line 25
     add-int/2addr v1, v0
 
-    .line 26
+    .line 17
     return v1
 
-    .line 27
-    :cond_1
+    .line 18
+    :cond_0
     return v0
 .end method
 
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 8
 
     .line 1
-    :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     .line 2
     .line 3
@@ -125,121 +98,96 @@
     move-result v0
 
     .line 5
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_2
 
     .line 6
     .line 7
-    const/16 v1, 0x1a
+    const/16 v1, 0xa
 
     .line 8
     .line 9
-    if-eq v0, v1, :cond_3
+    if-eq v0, v1, :cond_1
 
     .line 10
     .line 11
-    const/16 v1, 0xa2
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     .line 12
     .line 13
-    if-eq v0, v1, :cond_1
-
     .line 14
+    move-result v0
+
     .line 15
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    if-nez v0, :cond_0
 
     .line 16
     .line 17
+    goto :goto_2
+
     .line 18
-    move-result v0
+    :cond_0
+    move-object v1, p1
 
     .line 19
-    if-nez v0, :cond_0
-
-    .line 20
-    .line 21
     goto :goto_1
 
-    .line 22
+    .line 20
     :cond_1
-    iget-object v0, p0, LPp8;->b:Lkf9;
+    iget-object v2, p0, LPp8;->a:Ljava/util/Map;
+
+    .line 21
+    .line 22
+    const/16 v6, 0xa
 
     .line 23
     .line 24
-    if-nez v0, :cond_2
+    const/16 v7, 0x12
 
     .line 25
     .line 26
-    new-instance v0, Lkf9;
+    const/16 v3, 0x9
 
     .line 27
     .line 28
-    invoke-direct {v0}, Lkf9;-><init>()V
+    const/16 v4, 0x9
 
     .line 29
     .line 30
+    const/4 v5, 0x0
+
     .line 31
-    iput-object v0, p0, LPp8;->b:Lkf9;
+    move-object v1, p1
 
     .line 32
-    .line 33
-    :cond_2
-    iget-object v0, p0, LPp8;->b:Lkf9;
+    invoke-static/range {v1 .. v7}, LWy9;->b(LZc3;Ljava/util/Map;IILe57;II)Ljava/util/Map;
 
+    .line 33
     .line 34
     .line 35
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    move-result-object p1
 
     .line 36
+    iput-object p1, p0, LPp8;->a:Ljava/util/Map;
+
     .line 37
     .line 38
-    goto :goto_0
+    :goto_1
+    move-object p1, v1
 
     .line 39
-    :cond_3
-    iget-object v0, p0, LPp8;->a:LU96;
-
-    .line 40
-    .line 41
-    if-nez v0, :cond_4
-
-    .line 42
-    .line 43
-    new-instance v0, LU96;
-
-    .line 44
-    .line 45
-    invoke-direct {v0}, LU96;-><init>()V
-
-    .line 46
-    .line 47
-    .line 48
-    iput-object v0, p0, LPp8;->a:LU96;
-
-    .line 49
-    .line 50
-    :cond_4
-    iget-object v0, p0, LPp8;->a:LU96;
-
-    .line 51
-    .line 52
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    .line 53
-    .line 54
-    .line 55
     goto :goto_0
 
-    .line 56
-    :cond_5
-    :goto_1
+    .line 40
+    :cond_2
+    :goto_2
     return-object p0
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 2
+.method public final writeTo(Lbd3;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LPp8;->a:LU96;
+    iget-object v0, p0, LPp8;->a:Ljava/util/Map;
 
     .line 2
     .line 3
@@ -247,37 +195,23 @@
 
     .line 4
     .line 5
-    const/4 v1, 0x3
+    const/4 v1, 0x1
 
     .line 6
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    const/16 v2, 0x9
 
     .line 7
     .line 8
-    .line 9
-    :cond_0
-    iget-object v0, p0, LPp8;->b:Lkf9;
+    invoke-static {p1, v0, v1, v2, v2}, LWy9;->d(Lbd3;Ljava/util/Map;III)V
 
+    .line 9
     .line 10
     .line 11
-    if-eqz v0, :cond_1
+    :cond_0
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 12
     .line 13
-    const/16 v1, 0x14
-
     .line 14
-    .line 15
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
-
-    .line 16
-    .line 17
-    .line 18
-    :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 19
-    .line 20
-    .line 21
     return-void
 .end method

@@ -3,17 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lhdb;
+.implements Lhmg;
 
 
 # static fields
 .field public static final enum X:Llmh;
 
-.field public static final enum Y:Llmh;
-
-.field public static final synthetic Z:[Llmh;
-
-.field public static final enum a:Llmh;
+.field public static final synthetic Y:[Llmh;
 
 .field public static final enum b:Llmh;
 
@@ -22,166 +18,154 @@
 .field public static final enum t:Llmh;
 
 
+# instance fields
+.field public final a:Ljava/lang/String;
+
+
 # direct methods
 .method static constructor <clinit>()V
-    .locals 13
+    .locals 10
 
     .line 1
-    const/4 v0, 0x5
+    new-instance v0, Llmh;
 
     .line 2
-    const/4 v1, 0x4
-
     .line 3
-    const/4 v2, 0x3
+    const-string v1, "login"
 
     .line 4
-    const/4 v3, 0x2
-
     .line 5
-    const/4 v4, 0x1
+    const-string v2, "SOURCE_LOGIN"
 
     .line 6
-    const/4 v5, 0x0
-
     .line 7
-    new-instance v6, Llmh;
+    const/4 v3, 0x0
 
     .line 8
-    .line 9
-    const-string v7, "OUR_STORY_SUBMISSION_VIEW_MILESTONE"
+    invoke-direct {v0, v2, v3, v1}, Llmh;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 9
     .line 10
     .line 11
-    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v0, Llmh;->b:Llmh;
 
     .line 12
     .line 13
+    new-instance v1, Llmh;
+
     .line 14
-    sput-object v6, Llmh;->a:Llmh;
-
     .line 15
+    const-string v2, "cold_start"
+
     .line 16
-    new-instance v7, Llmh;
-
     .line 17
-    .line 18
-    const-string v8, "OUR_STORY_SUBMISSION_REPLY_MILESTONE"
+    const-string v4, "SOURCE_COLD_START"
 
+    .line 18
     .line 19
+    const/4 v5, 0x1
+
     .line 20
-    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v4, v5, v2}, Llmh;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    sput-object v7, Llmh;->b:Llmh;
+    sput-object v1, Llmh;->c:Llmh;
 
     .line 24
     .line 25
-    new-instance v8, Llmh;
+    new-instance v2, Llmh;
 
     .line 26
     .line 27
-    const-string v9, "SPOTLIGHT_FEED_SUBSCRIPTION_STORY"
+    const-string v4, "warm_start"
 
     .line 28
     .line 29
-    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v6, "SOURCE_WARM_START"
 
     .line 30
     .line 31
+    const/4 v7, 0x2
+
     .line 32
-    sput-object v8, Llmh;->c:Llmh;
+    invoke-direct {v2, v6, v7, v4}, Llmh;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
     .line 33
     .line 34
-    new-instance v9, Llmh;
-
     .line 35
+    sput-object v2, Llmh;->t:Llmh;
+
     .line 36
-    const-string v10, "SPOTLIGHT_COMMENTS_THREAD_REPLY"
-
     .line 37
-    .line 38
-    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v4, Llmh;
 
+    .line 38
     .line 39
+    const-string v6, "unknown"
+
     .line 40
     .line 41
-    sput-object v9, Llmh;->t:Llmh;
+    const-string v8, "SOURCE_UNKNOWN"
 
     .line 42
     .line 43
-    new-instance v10, Llmh;
+    const/4 v9, 0x3
 
     .line 44
-    .line 45
-    const-string v11, "SPOTLIGHT_COMMENTS_MENTION"
+    invoke-direct {v4, v8, v9, v6}, Llmh;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 45
     .line 46
     .line 47
-    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v4, Llmh;->X:Llmh;
 
     .line 48
     .line 49
+    const/4 v6, 0x4
+
     .line 50
-    sput-object v10, Llmh;->X:Llmh;
+    new-array v6, v6, [Llmh;
 
     .line 51
     .line 52
-    new-instance v11, Llmh;
+    aput-object v0, v6, v3
 
     .line 53
     .line 54
-    const-string v12, "SPOTLIGHT_COMMENT_CONTENT_CREATOR"
+    aput-object v1, v6, v5
 
     .line 55
     .line 56
-    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    aput-object v2, v6, v7
 
     .line 57
     .line 58
+    aput-object v4, v6, v9
+
     .line 59
-    sput-object v11, Llmh;->Y:Llmh;
-
     .line 60
+    sput-object v6, Llmh;->Y:[Llmh;
+
     .line 61
-    const/4 v12, 0x6
-
     .line 62
-    new-array v12, v12, [Llmh;
+    return-void
+.end method
 
-    .line 63
-    .line 64
-    aput-object v6, v12, v5
+.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
+    .locals 0
 
-    .line 65
-    .line 66
-    aput-object v7, v12, v4
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 67
-    .line 68
-    aput-object v8, v12, v3
+    .line 2
+    .line 3
+    .line 4
+    iput-object p3, p0, Llmh;->a:Ljava/lang/String;
 
-    .line 69
-    .line 70
-    aput-object v9, v12, v2
-
-    .line 71
-    .line 72
-    aput-object v10, v12, v1
-
-    .line 73
-    .line 74
-    aput-object v11, v12, v0
-
-    .line 75
-    .line 76
-    sput-object v12, Llmh;->Z:[Llmh;
-
-    .line 77
-    .line 78
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -212,11 +196,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Llmh;->Z:[Llmh;
+    sget-object v0, Llmh;->Y:[Llmh;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Llmh;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -233,183 +217,13 @@
 
 
 # virtual methods
-.method public final a()LfEc;
+.method public final toString()Ljava/lang/String;
     .locals 1
 
     .line 1
-    sget-object v0, LfEc;->Z:LfEc;
+    iget-object v0, p0, Llmh;->a:Ljava/lang/String;
 
     .line 2
     .line 3
     return-object v0
-.end method
-
-.method public final b()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->F(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->D(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->I(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final f()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->k0(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final g()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final bridge synthetic getName()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final h()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->G(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final i()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->K(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final k()LfEc;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->w(LdHc;)LfEc;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final m()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Llmh;->getName()Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final n()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->H(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
 .end method

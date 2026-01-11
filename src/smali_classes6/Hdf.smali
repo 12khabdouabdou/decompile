@@ -1,60 +1,35 @@
-.class public final LHdf;
-.super LtGe;
+.class public abstract LHdf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/subjects/PublishSubject;
+# static fields
+.field public static final a:Lnp0;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, LYI2;->Z:LYI2;
 
     .line 2
     .line 3
-    .line 4
-    new-instance v0, Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, LHdf;->a:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 10
-    .line 11
-    return-void
-.end method
-
-
-# virtual methods
-.method public final d(II)V
-    .locals 1
-
-    .line 1
-    new-instance v0, LHu;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p1, p2}, LHu;-><init>(II)V
+    const-string v1, "ReplyDelegate"
 
     .line 4
     .line 5
-    .line 6
-    iget-object p1, p0, LHdf;->a:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-static {v0, v0, v1}, Lve4;->c(LYI2;LYI2;Ljava/lang/String;)Lnp0;
 
+    .line 6
     .line 7
     .line 8
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+    move-result-object v0
 
     .line 9
+    sput-object v0, LHdf;->a:Lnp0;
+
     .line 10
     .line 11
     return-void

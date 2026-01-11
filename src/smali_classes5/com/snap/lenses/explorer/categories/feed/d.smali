@@ -9,11 +9,11 @@
 # instance fields
 .field public final synthetic a:Lcom/snap/lenses/explorer/categories/feed/c$b;
 
-.field public final synthetic b:LKjj;
+.field public final synthetic b:LIIj;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/lenses/explorer/categories/feed/c$b;LKjj;)V
+.method public constructor <init>(Lcom/snap/lenses/explorer/categories/feed/c$b;LIIj;)V
     .locals 0
 
     .line 1
@@ -26,7 +26,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/lenses/explorer/categories/feed/d;->b:LKjj;
+    iput-object p2, p0, Lcom/snap/lenses/explorer/categories/feed/d;->b:LIIj;
 
     .line 7
     .line 8
@@ -39,7 +39,7 @@
     .locals 2
 
     .line 1
-    check-cast p1, LNY0;
+    check-cast p1, Ly21;
 
     .line 2
     .line 3
@@ -47,11 +47,11 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/lenses/explorer/categories/feed/d;->b:LKjj;
+    iget-object v1, p0, Lcom/snap/lenses/explorer/categories/feed/d;->b:LIIj;
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1, p1}, Lcom/snap/lenses/explorer/categories/feed/c$b;->O(LKjj;LNY0;)V
+    invoke-virtual {v0, v1, p1}, Lcom/snap/lenses/explorer/categories/feed/c$b;->P(LIIj;Ly21;)V
 
     .line 8
     .line 9

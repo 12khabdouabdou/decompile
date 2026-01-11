@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lmr3;
+    proxyClass = Lnu3;
     schema = "\'getMyCommunityPills\':f|m|(): g<c>:\'[0]\'<a<r:\'[1]\'>>,\'getFriendCommunityPills\':f|m|(s): g<c>:\'[0]\'<a<r:\'[1]\'>>,\'getVerifiedCollegeCommunityPill\':f|m|(s): g<c>:\'[0]\'<r:\'[1]\'>,\'syncCommunityPillsOnProfileOpen\':f|m|(s)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LXq3;
+        LYt3;
     }
 .end annotation
 
@@ -27,7 +27,7 @@
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LXq3;",
+            "LYt3;",
             ">;>;"
         }
     .end annotation
@@ -39,7 +39,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LXq3;",
+            "LYt3;",
             ">;>;"
         }
     .end annotation
@@ -52,7 +52,7 @@
             "Ljava/lang/String;",
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LXq3;",
+            "LYt3;",
             ">;"
         }
     .end annotation

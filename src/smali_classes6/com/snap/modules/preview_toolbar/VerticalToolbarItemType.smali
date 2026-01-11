@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'CAPTION\':0,\'DRAW\':1,\'STICKER_PICKER\':2,\'SCISSORS\':3,\'MUSIC\':4,\'SOUND\':5,\'LENSES\':6,\'AUTO_CAPTION\':7,\'VOICE_OVER\':8,\'POST_CAPTURE_AI_MODE\':9,\'TOGGLE_LENS\':10,\'MAGIC_ERASER\':11,\'ATTACHMENT\':12,\'CROP\':13,\'IMAGE_TIMER\':14,\'VIDEO_TIMER\':15,\'REMIX\':16,\'ADD_LENS\':17,\'APP_THEME\':18,\'BATCH_CAPTURE\':19,\'GRID_LEVEL\':20,\'NIGHT_MODE\':21,\'DUAL_CAM\':22,\'TIMELINE\':23,\'TIMER\':24,\'THREE_D\':25,\'PORTRAIT\':26,\'TONE\':27,\'SPEED_MODE\':28,\'FLIP_CAMERA\':29,\'FLASH\':30,\'IMPORT_MEDIA\':31,\'GREEN_SCREEN\':32,\'STABILIZATION\':33,\'ULTRA_WIDE\':34,\'DIRECTOR_MODE\':35,\'DIRECTOR_MODE_DRAFTS_PICKER\':36,\'SELFIE_SETTINGS\':37,\'PLUS_SNAP_MODES\':38,\'PLAYBACK_SETTINGS\':39,\'FILTER_STACKING\':40"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

@@ -31,7 +31,7 @@
     move-result-object p1
 
     .line 8
-    const p2, 0x7f070ab9
+    const p2, 0x7f070ae0
 
     .line 9
     .line 10

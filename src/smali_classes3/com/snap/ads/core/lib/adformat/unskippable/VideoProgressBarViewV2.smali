@@ -1,5 +1,5 @@
 .class public Lcom/snap/ads/core/lib/adformat/unskippable/VideoProgressBarViewV2;
-.super LTEj;
+.super Ln4k;
 .source "SourceFile"
 
 
@@ -57,7 +57,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0714ea
+    const p2, 0x7f071505
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -72,7 +72,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0714e9
+    const p2, 0x7f071504
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -185,7 +185,7 @@
     const/4 v3, 0x0
 
     .line 17
-    invoke-static {v2, v1, v3}, Lhrk;->l(Landroid/view/View;ILJX2;)V
+    invoke-static {v2, v1, v3}, LwRk;->f(Landroid/view/View;ILm03;)V
 
     .line 18
     .line 19
@@ -194,7 +194,7 @@
 
     .line 21
     .line 22
-    invoke-static {v2, v1, v3}, Lhrk;->l(Landroid/view/View;ILJX2;)V
+    invoke-static {v2, v1, v3}, LwRk;->f(Landroid/view/View;ILm03;)V
 
     .line 23
     .line 24
@@ -258,12 +258,12 @@
     move-result-object v0
 
     .line 20
-    const v1, 0x7f06020b
+    const v1, 0x7f060263
 
     .line 21
     .line 22
     .line 23
-    invoke-static {v0, v1}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v0, v1}, LV14;->c(Landroid/content/Context;I)I
 
     .line 24
     .line 25
@@ -294,11 +294,11 @@
     .line 38
     .line 39
     :cond_1
-    new-instance p1, LGX5;
+    new-instance p1, LD06;
 
     .line 40
     .line 41
-    invoke-direct {p1, p0}, LGX5;-><init>(Lcom/snap/ads/core/lib/adformat/unskippable/VideoProgressBarViewV2;)V
+    invoke-direct {p1, p0}, LD06;-><init>(Lcom/snap/ads/core/lib/adformat/unskippable/VideoProgressBarViewV2;)V
 
     .line 42
     .line 43
@@ -327,19 +327,19 @@
 
     .line 53
     .line 54
-    new-instance v0, LJX2;
+    new-instance v0, Lm03;
 
     .line 55
     .line 56
     const/4 v2, 0x7
 
     .line 57
-    invoke-direct {v0, v2, p0}, LJX2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, p0}, Lm03;-><init>(ILjava/lang/Object;)V
 
     .line 58
     .line 59
     .line 60
-    invoke-static {p1, v1, v0}, Lhrk;->l(Landroid/view/View;ILJX2;)V
+    invoke-static {p1, v1, v0}, LwRk;->f(Landroid/view/View;ILm03;)V
 
     .line 61
     .line 62
@@ -351,7 +351,7 @@
     const/4 v0, 0x0
 
     .line 66
-    invoke-static {p1, v1, v0}, Lhrk;->l(Landroid/view/View;ILJX2;)V
+    invoke-static {p1, v1, v0}, LwRk;->f(Landroid/view/View;ILm03;)V
 
     .line 67
     .line 68
@@ -421,7 +421,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b1a3a
+    const v0, 0x7f0b1ba3
 
     .line 5
     .line 6
@@ -451,7 +451,7 @@
     .line 18
     .line 19
     .line 20
-    const v0, 0x7f0b1a3d
+    const v0, 0x7f0b1ba6
 
     .line 21
     .line 22
@@ -477,7 +477,7 @@
     .line 32
     .line 33
     .line 34
-    const v0, 0x7f0b1a3c
+    const v0, 0x7f0b1ba5
 
     .line 35
     .line 36
@@ -510,12 +510,12 @@
     move-result-object v1
 
     .line 51
-    const v2, 0x7f060314
+    const v2, 0x7f06039c
 
     .line 52
     .line 53
     .line 54
-    invoke-static {v1, v2}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v1, v2}, LV14;->c(Landroid/content/Context;I)I
 
     .line 55
     .line 56
@@ -544,12 +544,12 @@
     move-result-object v1
 
     .line 69
-    const v2, 0x7f060327
+    const v2, 0x7f0603af
 
     .line 70
     .line 71
     .line 72
-    invoke-static {v1, v2}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v1, v2}, LV14;->c(Landroid/content/Context;I)I
 
     .line 73
     .line 74

@@ -35,7 +35,7 @@
     .end annotation
 .end field
 
-.field private final interactionZone:Lu8f;
+.field private final interactionZone:LLqf;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "interaction_zone"
     .end annotation
@@ -93,7 +93,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lu8f;)V
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;LLqf;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -112,7 +112,7 @@
             "Ljava/lang/Boolean;",
             "Ljava/lang/String;",
             "Ljava/lang/Boolean;",
-            "Lu8f;",
+            "LLqf;",
             ")V"
         }
     .end annotation
@@ -151,12 +151,12 @@
     iput-object p10, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->blockWebviewPreloading:Ljava/lang/Boolean;
 
     .line 12
-    iput-object p11, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iput-object p11, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lu8f;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;LLqf;ILex5;)V
     .locals 13
 
     move/from16 v0, p12
@@ -201,12 +201,12 @@
 
     .line 13
     :goto_1
-    invoke-direct/range {v1 .. v12}, Lcom/snap/discover/playback/content/model/WebViewContent;-><init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lu8f;)V
+    invoke-direct/range {v1 .. v12}, Lcom/snap/discover/playback/content/model/WebViewContent;-><init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;LLqf;)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/WebViewContent;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lu8f;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/WebViewContent;
+.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/WebViewContent;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;LLqf;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/WebViewContent;
     .locals 0
 
     .line 1
@@ -348,7 +348,7 @@
 
     .line 64
     .line 65
-    iget-object p11, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iget-object p11, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
     .line 66
     .line 67
@@ -389,7 +389,7 @@
     move-object p3, p1
 
     .line 79
-    invoke-virtual/range {p2 .. p13}, Lcom/snap/discover/playback/content/model/WebViewContent;->copy(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lu8f;)Lcom/snap/discover/playback/content/model/WebViewContent;
+    invoke-virtual/range {p2 .. p13}, Lcom/snap/discover/playback/content/model/WebViewContent;->copy(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;LLqf;)Lcom/snap/discover/playback/content/model/WebViewContent;
 
     .line 80
     .line 81
@@ -426,11 +426,11 @@
     return-object v0
 .end method
 
-.method public final component11()Lu8f;
+.method public final component11()LLqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
     .line 2
     .line 3
@@ -509,7 +509,7 @@
     return-object v0
 .end method
 
-.method public final copy(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lu8f;)Lcom/snap/discover/playback/content/model/WebViewContent;
+.method public final copy(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;LLqf;)Lcom/snap/discover/playback/content/model/WebViewContent;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -528,7 +528,7 @@
             "Ljava/lang/Boolean;",
             "Ljava/lang/String;",
             "Ljava/lang/Boolean;",
-            "Lu8f;",
+            "LLqf;",
             ")",
             "Lcom/snap/discover/playback/content/model/WebViewContent;"
         }
@@ -580,7 +580,7 @@
 
     .line 21
     .line 22
-    invoke-direct/range {v0 .. v11}, Lcom/snap/discover/playback/content/model/WebViewContent;-><init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lu8f;)V
+    invoke-direct/range {v0 .. v11}, Lcom/snap/discover/playback/content/model/WebViewContent;-><init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;LLqf;)V
 
     .line 23
     .line 24
@@ -613,7 +613,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->allowedWebviewMacros:Ljava/util/List;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -626,7 +626,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->sharingMethod:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -639,7 +639,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->subscriptionMethod:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -652,7 +652,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->sharingAudience:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -665,7 +665,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->jsBridgeCapabilities:Ljava/util/List;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -678,7 +678,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->allowWebStorage:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -691,7 +691,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->url:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -704,7 +704,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->shouldInjectBitmojiAvatarId:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -717,7 +717,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->webviewBackgroundColor:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -730,7 +730,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->blockWebviewPreloading:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -739,11 +739,11 @@
     return v2
 
     :cond_b
-    iget-object v1, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iget-object v1, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
-    iget-object p1, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iget-object p1, p1, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -796,11 +796,11 @@
     return-object v0
 .end method
 
-.method public final getInteractionZone()Lu8f;
+.method public final getInteractionZone()LLqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
     .line 2
     .line 3
@@ -1075,14 +1075,14 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iget-object v2, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
     if-nez v2, :cond_a
 
     goto :goto_a
 
     :cond_a
-    invoke-virtual {v2}, Lu8f;->hashCode()I
+    invoke-virtual {v2}, LLqf;->hashCode()I
 
     move-result v1
 
@@ -1136,7 +1136,7 @@
 
     .line 20
     .line 21
-    iget-object v10, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:Lu8f;
+    iget-object v10, p0, Lcom/snap/discover/playback/content/model/WebViewContent;->interactionZone:LLqf;
 
     .line 22
     .line 23
@@ -1189,7 +1189,7 @@
 
     .line 49
     .line 50
-    invoke-static {v11, v2, v0, v3, v1}, LmG8;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v11, v2, v0, v3, v1}, Lcb9;->h(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 51
     .line 52

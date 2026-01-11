@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field public A0:LU3d;
+.field public A0:LQid;
 
-.field public B0:LBre;
+.field public B0:LnJe;
 
-.field public w0:LPm9;
+.field public w0:LIv9;
 
-.field public x0:LQ15;
+.field public x0:LI75;
 
-.field public y0:Lnwf;
+.field public y0:LyPf;
 
 .field public final z0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
@@ -45,140 +45,11 @@
 
 
 # virtual methods
-.method public final B1(Landroid/os/Bundle;)V
-    .locals 7
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->B1(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v5
-
-    .line 8
-    if-nez v5, :cond_0
-
-    .line 9
-    .line 10
-    return-void
-
-    .line 11
-    :cond_0
-    iget-object p1, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->x0:LQ15;
-
-    .line 12
-    .line 13
-    if-eqz p1, :cond_2
-
-    .line 14
-    .line 15
-    invoke-virtual {p1}, LQ15;->get()Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    move-object v0, p1
-
-    .line 20
-    check-cast v0, LU3d;
-
-    .line 21
-    .line 22
-    iput-object v0, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LU3d;
-
-    .line 23
-    .line 24
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v1
-
-    .line 28
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object p1
-
-    .line 32
-    if-nez p1, :cond_1
-
-    .line 33
-    .line 34
-    new-instance p1, Landroid/os/Bundle;
-
-    .line 35
-    .line 36
-    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
-
-    .line 37
-    .line 38
-    .line 39
-    :cond_1
-    move-object v2, p1
-
-    .line 40
-    invoke-virtual {p0}, Lcom/snap/payments/lib/paymentcore/PaymentsBaseFragment;->U1()Z
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v3
-
-    .line 44
-    new-instance v4, LXog;
-
-    .line 45
-    .line 46
-    invoke-direct {v4}, LXog;-><init>()V
-
-    .line 47
-    .line 48
-    .line 49
-    move-object v6, p0
-
-    .line 50
-    invoke-virtual/range {v0 .. v6}, LU3d;->g(Landroid/content/Context;Landroid/os/Bundle;ZLXog;Landroidx/fragment/app/FragmentActivity;Landroidx/fragment/app/g;)V
-
-    .line 51
-    .line 52
-    .line 53
-    return-void
-
-    .line 54
-    :cond_2
-    const-string p1, "pageProvider"
-
-    .line 55
-    .line 56
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 57
-    .line 58
-    .line 59
-    const/4 p1, 0x0
-
-    .line 60
-    throw p1
-.end method
-
-.method public final C1()V
+.method public final A1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LU3d;
+    iget-object v0, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LQid;
 
     .line 2
     .line 3
@@ -186,7 +57,7 @@
 
     .line 4
     .line 5
-    iget-object v0, v0, LU3d;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, v0, LQid;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 6
     .line 7
@@ -212,7 +83,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -223,7 +94,7 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 18
 
     .line 1
@@ -252,7 +123,7 @@
 
     .line 11
     :cond_0
-    iget-object v6, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->y0:Lnwf;
+    iget-object v6, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->y0:LyPf;
 
     .line 12
     .line 13
@@ -260,7 +131,7 @@
 
     .line 14
     .line 15
-    sget-object v6, Lyfd;->Z:Lyfd;
+    sget-object v6, Lxvd;->Z:Lxvd;
 
     .line 16
     .line 17
@@ -268,7 +139,7 @@
 
     .line 18
     .line 19
-    invoke-static {v6, v6, v7}, Lla3;->e(Lyfd;Lyfd;Ljava/lang/String;)LWm0;
+    invoke-static {v6, v6, v7}, LCb3;->g(Lxvd;Lxvd;Ljava/lang/String;)Lnp0;
 
     .line 20
     .line 21
@@ -276,20 +147,20 @@
     move-result-object v6
 
     .line 23
-    new-instance v7, LBre;
+    new-instance v7, LnJe;
 
     .line 24
     .line 25
-    invoke-direct {v7, v6}, LBre;-><init>(LWm0;)V
+    invoke-direct {v7, v6}, LnJe;-><init>(Lnp0;)V
 
     .line 26
     .line 27
     .line 28
-    iput-object v7, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->B0:LBre;
+    iput-object v7, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->B0:LnJe;
 
     .line 29
     .line 30
-    iget-object v6, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LU3d;
+    iget-object v6, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LQid;
 
     .line 31
     .line 32
@@ -297,7 +168,7 @@
 
     .line 33
     .line 34
-    const v7, 0x7f0e051d
+    const v7, 0x7f0e053f
 
     .line 35
     .line 36
@@ -314,15 +185,15 @@
     move-result-object v1
 
     .line 43
-    iput-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iput-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 44
     .line 45
-    iget-object v7, v6, LHfd;->b:Landroid/os/Bundle;
+    iget-object v7, v6, LHvd;->b:Landroid/os/Bundle;
 
     .line 46
     .line 47
-    invoke-static {v1, v7}, LDN0;->c(Landroid/view/View;Landroid/os/Bundle;)LDN0;
+    invoke-static {v1, v7}, LHQ0;->c(Landroid/view/View;Landroid/os/Bundle;)LHQ0;
 
     .line 48
     .line 49
@@ -330,17 +201,17 @@
     move-result-object v1
 
     .line 51
-    const v7, 0x7f132001
+    const v7, 0x7f13218c
 
     .line 52
     .line 53
     .line 54
-    invoke-virtual {v1, v7}, LDN0;->d(I)V
+    invoke-virtual {v1, v7}, LHQ0;->d(I)V
 
     .line 55
     .line 56
     .line 57
-    iget-boolean v7, v6, LHfd;->X:Z
+    iget-boolean v7, v6, LHvd;->X:Z
 
     .line 58
     .line 59
@@ -348,11 +219,11 @@
 
     .line 60
     .line 61
-    iget-object v7, v6, LHfd;->a:Landroid/content/Context;
+    iget-object v7, v6, LHvd;->a:Landroid/content/Context;
 
     .line 62
     .line 63
-    const v8, 0x7f0804b7
+    const v8, 0x7f080522
 
     .line 64
     .line 65
@@ -365,7 +236,7 @@
     move-result-object v7
 
     .line 70
-    iget-object v8, v1, LDN0;->a:Landroid/content/Context;
+    iget-object v8, v1, LHQ0;->a:Landroid/content/Context;
 
     .line 71
     .line 72
@@ -377,7 +248,7 @@
     move-result-object v8
 
     .line 76
-    const v9, 0x7f070a2a
+    const v9, 0x7f070a51
 
     .line 77
     .line 78
@@ -390,11 +261,11 @@
     move-result v8
 
     .line 83
-    iget-object v9, v1, LDN0;->b:Lcom/snap/ui/view/ScHeaderView;
+    iget-object v9, v1, LHQ0;->b:Lcom/snap/ui/view/ScHeaderView;
 
     .line 84
     .line 85
-    const v10, 0x7f0b1313
+    const v10, 0x7f0b144a
 
     .line 86
     .line 87
@@ -426,19 +297,19 @@
     .line 101
     .line 102
     .line 103
-    new-instance v7, LJD0;
+    new-instance v7, LDG0;
 
     .line 104
     .line 105
-    const/4 v8, 0x4
+    const/4 v8, 0x5
 
     .line 106
-    invoke-direct {v7, v8, v6}, LJD0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v7, v8, v6}, LDG0;-><init>(ILjava/lang/Object;)V
 
     .line 107
     .line 108
     .line 109
-    iget-object v1, v1, LDN0;->b:Lcom/snap/ui/view/ScHeaderView;
+    iget-object v1, v1, LHQ0;->b:Lcom/snap/ui/view/ScHeaderView;
 
     .line 110
     .line 111
@@ -452,11 +323,11 @@
     .line 115
     .line 116
     :cond_1
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 117
     .line 118
-    const v7, 0x7f0b0de3
+    const v7, 0x7f0b0efe
 
     .line 119
     .line 120
@@ -473,15 +344,15 @@
 
     .line 126
     .line 127
-    iput-object v1, v6, LU3d;->x0:Lcom/snap/imageloading/view/SnapImageView;
+    iput-object v1, v6, LQid;->x0:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 128
     .line 129
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 130
     .line 131
-    const v7, 0x7f0b0de5
+    const v7, 0x7f0b0f00
 
     .line 132
     .line 133
@@ -498,15 +369,15 @@
 
     .line 139
     .line 140
-    iput-object v1, v6, LU3d;->y0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->y0:Landroid/widget/TextView;
 
     .line 141
     .line 142
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 143
     .line 144
-    const v7, 0x7f0b0de0
+    const v7, 0x7f0b0efb
 
     .line 145
     .line 146
@@ -523,16 +394,16 @@
 
     .line 152
     .line 153
-    iget-object v7, v6, LHfd;->a:Landroid/content/Context;
+    iget-object v7, v6, LHvd;->a:Landroid/content/Context;
 
     .line 154
     .line 155
-    const v8, 0x7f060220
+    const v8, 0x7f060278
 
     .line 156
     .line 157
     .line 158
-    invoke-static {v7, v8}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v7, v8}, LV14;->c(Landroid/content/Context;I)I
 
     .line 159
     .line 160
@@ -545,11 +416,11 @@
     .line 163
     .line 164
     .line 165
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 166
     .line 167
-    const v7, 0x7f0b0de4
+    const v7, 0x7f0b0eff
 
     .line 168
     .line 169
@@ -566,15 +437,15 @@
 
     .line 175
     .line 176
-    iput-object v1, v6, LU3d;->z0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->z0:Landroid/widget/TextView;
 
     .line 177
     .line 178
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 179
     .line 180
-    const v7, 0x7f0b0fd2
+    const v7, 0x7f0b10f4
 
     .line 181
     .line 182
@@ -600,50 +471,50 @@
     .line 192
     .line 193
     .line 194
-    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 195
     .line 196
     .line 197
-    new-instance v7, LIX0;
+    new-instance v7, Lo11;
 
     .line 198
     .line 199
-    new-instance v8, LYIj;
+    new-instance v8, Lw8k;
 
     .line 200
     .line 201
-    iget-object v9, v6, LU3d;->e0:Lmfd;
+    iget-object v9, v6, LQid;->e0:Lmvd;
 
     .line 202
     .line 203
-    const-class v10, LNfd;
+    const-class v10, LOvd;
 
     .line 204
     .line 205
-    invoke-direct {v8, v9, v10}, LYIj;-><init>(LEX0;Ljava/lang/Class;)V
+    invoke-direct {v8, v9, v10}, Lw8k;-><init>(Lk11;Ljava/lang/Class;)V
 
     .line 206
     .line 207
     .line 208
-    iget-object v9, v6, LU3d;->Y:LXog;
+    iget-object v9, v6, LQid;->Y:LgKg;
 
     .line 209
     .line 210
-    iget-object v9, v9, LXog;->c:LWog;
+    iget-object v9, v9, LgKg;->c:LfKg;
 
     .line 211
     .line 212
-    invoke-direct {v7, v8, v9}, LIX0;-><init>(LYIj;LWR6;)V
+    invoke-direct {v7, v8, v9}, Lo11;-><init>(Lw8k;LSV6;)V
 
     .line 213
     .line 214
     .line 215
-    iput-object v7, v6, LU3d;->j0:LIX0;
+    iput-object v7, v6, LQid;->j0:Lo11;
 
     .line 216
     .line 217
-    new-instance v7, LT02;
+    new-instance v7, Lu42;
 
     .line 218
     .line 219
@@ -651,12 +522,12 @@
 
     .line 220
     .line 221
-    invoke-direct {v7, v8}, LT02;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v8}, Lu42;-><init>(Ljava/lang/String;)V
 
     .line 222
     .line 223
     .line 224
-    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->F0(LfB5;)V
+    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->F0(LdF5;)V
 
     .line 225
     .line 226
@@ -665,38 +536,38 @@
 
     .line 228
     .line 229
-    new-instance v7, Lpr6;
+    new-instance v7, LBu6;
 
     .line 230
     .line 231
-    iget-object v8, v6, LHfd;->a:Landroid/content/Context;
+    iget-object v8, v6, LHvd;->a:Landroid/content/Context;
 
     .line 232
     .line 233
-    invoke-direct {v7, v8, v4}, Lpr6;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v7, v8, v4}, LBu6;-><init>(Landroid/content/Context;I)V
 
     .line 234
     .line 235
     .line 236
-    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
+    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
 
     .line 237
     .line 238
     .line 239
-    iget-object v7, v6, LU3d;->j0:LIX0;
+    iget-object v7, v6, LQid;->j0:Lo11;
 
     .line 240
     .line 241
-    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-virtual {v1, v7}, Landroidx/recyclerview/widget/RecyclerView;->C0(LZXe;)V
 
     .line 242
     .line 243
     .line 244
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 245
     .line 246
-    const v7, 0x7f0b103d
+    const v7, 0x7f0b1166
 
     .line 247
     .line 248
@@ -713,15 +584,15 @@
 
     .line 254
     .line 255
-    iput-object v1, v6, LU3d;->k0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->k0:Landroid/widget/TextView;
 
     .line 256
     .line 257
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 258
     .line 259
-    const v7, 0x7f0b103e
+    const v7, 0x7f0b1167
 
     .line 260
     .line 261
@@ -738,15 +609,15 @@
 
     .line 267
     .line 268
-    iput-object v1, v6, LU3d;->l0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->l0:Landroid/widget/TextView;
 
     .line 269
     .line 270
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 271
     .line 272
-    const v7, 0x7f0b1040
+    const v7, 0x7f0b1169
 
     .line 273
     .line 274
@@ -763,15 +634,15 @@
 
     .line 280
     .line 281
-    iput-object v1, v6, LU3d;->m0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->m0:Landroid/widget/TextView;
 
     .line 282
     .line 283
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 284
     .line 285
-    const v7, 0x7f0b1041
+    const v7, 0x7f0b116a
 
     .line 286
     .line 287
@@ -788,15 +659,15 @@
 
     .line 293
     .line 294
-    iput-object v1, v6, LU3d;->n0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->n0:Landroid/widget/TextView;
 
     .line 295
     .line 296
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 297
     .line 298
-    const v7, 0x7f0b103f
+    const v7, 0x7f0b1168
 
     .line 299
     .line 300
@@ -813,15 +684,15 @@
 
     .line 306
     .line 307
-    iput-object v1, v6, LU3d;->p0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->p0:Landroid/widget/TextView;
 
     .line 308
     .line 309
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 310
     .line 311
-    const v7, 0x7f0b0500
+    const v7, 0x7f0b058e
 
     .line 312
     .line 313
@@ -838,15 +709,15 @@
 
     .line 319
     .line 320
-    iput-object v1, v6, LU3d;->o0:Landroid/widget/ImageView;
+    iput-object v1, v6, LQid;->o0:Landroid/widget/ImageView;
 
     .line 321
     .line 322
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 323
     .line 324
-    const v7, 0x7f0b0507
+    const v7, 0x7f0b0595
 
     .line 325
     .line 326
@@ -863,15 +734,15 @@
 
     .line 332
     .line 333
-    iput-object v1, v6, LU3d;->q0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->q0:Landroid/widget/TextView;
 
     .line 334
     .line 335
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 336
     .line 337
-    const v7, 0x7f0b04fe
+    const v7, 0x7f0b058c
 
     .line 338
     .line 339
@@ -884,15 +755,15 @@
     move-result-object v1
 
     .line 344
-    iput-object v1, v6, LU3d;->r0:Landroid/view/View;
+    iput-object v1, v6, LQid;->r0:Landroid/view/View;
 
     .line 345
     .line 346
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 347
     .line 348
-    const v7, 0x7f0b04ff
+    const v7, 0x7f0b058d
 
     .line 349
     .line 350
@@ -909,15 +780,15 @@
 
     .line 356
     .line 357
-    iput-object v1, v6, LU3d;->s0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->s0:Landroid/widget/TextView;
 
     .line 358
     .line 359
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 360
     .line 361
-    const v7, 0x7f0b0508
+    const v7, 0x7f0b0596
 
     .line 362
     .line 363
@@ -934,15 +805,15 @@
 
     .line 369
     .line 370
-    iput-object v1, v6, LU3d;->t0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->t0:Landroid/widget/TextView;
 
     .line 371
     .line 372
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 373
     .line 374
-    const v7, 0x7f0b0506
+    const v7, 0x7f0b0594
 
     .line 375
     .line 376
@@ -959,15 +830,15 @@
 
     .line 382
     .line 383
-    iput-object v1, v6, LU3d;->u0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->u0:Landroid/widget/TextView;
 
     .line 384
     .line 385
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 386
     .line 387
-    const v7, 0x7f0b0509
+    const v7, 0x7f0b0597
 
     .line 388
     .line 389
@@ -984,15 +855,15 @@
 
     .line 395
     .line 396
-    iput-object v1, v6, LU3d;->v0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->v0:Landroid/widget/TextView;
 
     .line 397
     .line 398
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 399
     .line 400
-    const v7, 0x7f0b0fc2
+    const v7, 0x7f0b10e4
 
     .line 401
     .line 402
@@ -1009,23 +880,23 @@
 
     .line 408
     .line 409
-    iput-object v1, v6, LU3d;->w0:Landroid/widget/TextView;
+    iput-object v1, v6, LQid;->w0:Landroid/widget/TextView;
 
     .line 410
     .line 411
-    iget-object v1, v6, LU3d;->B0:Lc4d;
+    iget-object v1, v6, LQid;->B0:LXid;
 
     .line 412
     .line 413
-    iget-object v7, v1, Lc4d;->X:LSFh;
+    iget-object v7, v1, LXid;->X:Lj4i;
 
     .line 414
     .line 415
-    iget-object v8, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v8, v6, LQid;->A0:Landroid/view/View;
 
     .line 416
     .line 417
-    const v9, 0x7f0b0fc9
+    const v9, 0x7f0b10eb
 
     .line 418
     .line 419
@@ -1038,11 +909,11 @@
     move-result-object v8
 
     .line 424
-    iget-object v9, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v9, v6, LQid;->A0:Landroid/view/View;
 
     .line 425
     .line 426
-    const v10, 0x7f0b0fc7
+    const v10, 0x7f0b10e9
 
     .line 427
     .line 428
@@ -1059,11 +930,11 @@
 
     .line 434
     .line 435
-    iget-object v10, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v10, v6, LQid;->A0:Landroid/view/View;
 
     .line 436
     .line 437
-    const v11, 0x7f0b0fc8
+    const v11, 0x7f0b10ea
 
     .line 438
     .line 439
@@ -1080,11 +951,11 @@
 
     .line 445
     .line 446
-    iget-object v11, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v11, v6, LQid;->A0:Landroid/view/View;
 
     .line 447
     .line 448
-    const v12, 0x7f0b0fc4
+    const v12, 0x7f0b10e6
 
     .line 449
     .line 450
@@ -1101,11 +972,11 @@
 
     .line 456
     .line 457
-    iget-object v12, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v12, v6, LQid;->A0:Landroid/view/View;
 
     .line 458
     .line 459
-    const v13, 0x7f0b0fd0
+    const v13, 0x7f0b10f2
 
     .line 460
     .line 461
@@ -1118,11 +989,11 @@
     move-result-object v12
 
     .line 466
-    iget-object v13, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v13, v6, LQid;->A0:Landroid/view/View;
 
     .line 467
     .line 468
-    const v14, 0x7f0b0fc5
+    const v14, 0x7f0b10e7
 
     .line 469
     .line 470
@@ -1139,11 +1010,11 @@
 
     .line 476
     .line 477
-    iget-object v14, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v14, v6, LQid;->A0:Landroid/view/View;
 
     .line 478
     .line 479
-    const v15, 0x7f0b0fc3
+    const v15, 0x7f0b10e5
 
     .line 480
     .line 481
@@ -1160,7 +1031,7 @@
 
     .line 487
     .line 488
-    iget-object v15, v1, Lc4d;->l0:LbN3;
+    iget-object v15, v1, LXid;->l0:LJQ3;
 
     .line 489
     .line 490
@@ -1176,7 +1047,7 @@
 
     .line 495
     .line 496
-    iget-object v2, v15, LbN3;->a:Ljava/lang/String;
+    iget-object v2, v15, LJQ3;->a:Ljava/lang/String;
 
     .line 497
     .line 498
@@ -1192,7 +1063,7 @@
 
     .line 503
     .line 504
-    iget-object v2, v15, LbN3;->b:Ljava/lang/String;
+    iget-object v2, v15, LJQ3;->b:Ljava/lang/String;
 
     .line 505
     .line 506
@@ -1212,7 +1083,7 @@
 
     .line 513
     :cond_2
-    iget-object v2, v15, LbN3;->b:Ljava/lang/String;
+    iget-object v2, v15, LJQ3;->b:Ljava/lang/String;
 
     .line 514
     .line 515
@@ -1221,11 +1092,11 @@
     .line 516
     .line 517
     .line 518
-    iget-object v2, v15, LbN3;->a:Ljava/lang/String;
+    iget-object v2, v15, LJQ3;->a:Ljava/lang/String;
 
     .line 519
     .line 520
-    invoke-static {v2}, LbN3;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, LJQ3;->a(Ljava/lang/String;)Ljava/lang/String;
 
     .line 521
     .line 522
@@ -1259,11 +1130,11 @@
     .line 536
     .line 537
     :goto_1
-    iget-object v2, v6, LU3d;->l0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->l0:Landroid/widget/TextView;
 
     .line 538
     .line 539
-    iget-object v8, v1, Lc4d;->k0:Ljava/lang/String;
+    iget-object v8, v1, LXid;->k0:Ljava/lang/String;
 
     .line 540
     .line 541
@@ -1272,11 +1143,11 @@
     .line 542
     .line 543
     .line 544
-    iget-object v2, v6, LU3d;->k0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->k0:Landroid/widget/TextView;
 
     .line 545
     .line 546
-    iget-object v8, v1, Lc4d;->c:Ljava/lang/String;
+    iget-object v8, v1, LXid;->c:Ljava/lang/String;
 
     .line 547
     .line 548
@@ -1285,15 +1156,15 @@
     .line 549
     .line 550
     .line 551
-    iget-object v2, v6, LU3d;->m0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->m0:Landroid/widget/TextView;
 
     .line 552
     .line 553
-    iget-object v9, v1, Lc4d;->Z:LSgg;
+    iget-object v9, v1, LXid;->Z:LKBg;
 
     .line 554
     .line 555
-    invoke-virtual {v9}, LSgg;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, LKBg;->toString()Ljava/lang/String;
 
     .line 556
     .line 557
@@ -1306,11 +1177,11 @@
     .line 560
     .line 561
     .line 562
-    iget-object v2, v6, LU3d;->n0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->n0:Landroid/widget/TextView;
 
     .line 563
     .line 564
-    iget-object v9, v1, Lc4d;->b:Ljava/lang/String;
+    iget-object v9, v1, LXid;->b:Ljava/lang/String;
 
     .line 565
     .line 566
@@ -1319,7 +1190,7 @@
     .line 567
     .line 568
     .line 569
-    iget-object v2, v7, LSFh;->c:Ljava/lang/String;
+    iget-object v2, v7, Lj4i;->c:Ljava/lang/String;
 
     .line 570
     .line 571
@@ -1335,7 +1206,7 @@
 
     .line 576
     .line 577
-    iget-object v9, v6, LU3d;->w0:Landroid/widget/TextView;
+    iget-object v9, v6, LQid;->w0:Landroid/widget/TextView;
 
     .line 578
     .line 579
@@ -1348,7 +1219,7 @@
 
     .line 583
     :cond_4
-    iget-object v9, v6, LU3d;->w0:Landroid/widget/TextView;
+    iget-object v9, v6, LQid;->w0:Landroid/widget/TextView;
 
     .line 584
     .line 585
@@ -1357,11 +1228,11 @@
     .line 586
     .line 587
     .line 588
-    iget-object v9, v6, LU3d;->w0:Landroid/widget/TextView;
+    iget-object v9, v6, LQid;->w0:Landroid/widget/TextView;
 
     .line 589
     .line 590
-    iget-object v10, v7, LSFh;->c:Ljava/lang/String;
+    iget-object v10, v7, Lj4i;->c:Ljava/lang/String;
 
     .line 591
     .line 592
@@ -1370,15 +1241,15 @@
     .line 593
     .line 594
     .line 595
-    iget-object v9, v6, LU3d;->w0:Landroid/widget/TextView;
+    iget-object v9, v6, LQid;->w0:Landroid/widget/TextView;
 
     .line 596
     .line 597
-    new-instance v10, LZr2;
+    new-instance v10, LLu2;
 
     .line 598
     .line 599
-    invoke-direct {v10, v6, v4, v1}, LZr2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v10, v6, v4, v1}, LLu2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 600
     .line 601
@@ -1389,7 +1260,7 @@
     .line 604
     .line 605
     :goto_2
-    iget-object v9, v7, LSFh;->Z:Ljava/lang/String;
+    iget-object v9, v7, Lj4i;->Z:Ljava/lang/String;
 
     .line 606
     .line 607
@@ -1437,14 +1308,14 @@
     .line 627
     .line 628
     .line 629
-    new-instance v10, LZr2;
+    new-instance v10, LLu2;
 
     .line 630
     .line 631
     const/4 v15, 0x2
 
     .line 632
-    invoke-direct {v10, v6, v15, v9}, LZr2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v10, v6, v15, v9}, LLu2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 633
     .line 634
@@ -1496,7 +1367,7 @@
     .line 656
     .line 657
     :cond_6
-    iget-object v2, v7, LSFh;->e0:Ljava/lang/String;
+    iget-object v2, v7, Lj4i;->e0:Ljava/lang/String;
 
     .line 658
     .line 659
@@ -1519,14 +1390,14 @@
 
     .line 667
     :cond_7
-    new-instance v5, LZr2;
+    new-instance v5, LLu2;
 
     .line 668
     .line 669
     const/4 v15, 0x2
 
     .line 670
-    invoke-direct {v5, v6, v15, v2}, LZr2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v5, v6, v15, v2}, LLu2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 671
     .line 672
@@ -1537,7 +1408,7 @@
     .line 675
     .line 676
     :goto_4
-    iget-object v2, v7, LSFh;->Y:Ljava/lang/String;
+    iget-object v2, v7, Lj4i;->Y:Ljava/lang/String;
 
     .line 677
     .line 678
@@ -1557,11 +1428,11 @@
 
     .line 685
     :cond_8
-    new-instance v5, LZr2;
+    new-instance v5, LLu2;
 
     .line 686
     .line 687
-    invoke-direct {v5, v6, v15, v2}, LZr2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v5, v6, v15, v2}, LLu2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 688
     .line 689
@@ -1572,15 +1443,15 @@
     .line 692
     .line 693
     :goto_5
-    iget-object v2, v6, LU3d;->q0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->q0:Landroid/widget/TextView;
 
     .line 694
     .line 695
-    iget-object v5, v1, Lc4d;->f0:LPi4;
+    iget-object v5, v1, LXid;->f0:Lnn4;
 
     .line 696
     .line 697
-    invoke-virtual {v5}, LPi4;->a()Ljava/lang/String;
+    invoke-virtual {v5}, Lnn4;->a()Ljava/lang/String;
 
     .line 698
     .line 699
@@ -1593,7 +1464,7 @@
     .line 702
     .line 703
     .line 704
-    iget-object v2, v1, Lc4d;->m0:LPi4;
+    iget-object v2, v1, LXid;->m0:Lnn4;
 
     .line 705
     .line 706
@@ -1601,7 +1472,7 @@
 
     .line 707
     .line 708
-    iget-object v5, v6, LU3d;->r0:Landroid/view/View;
+    iget-object v5, v6, LQid;->r0:Landroid/view/View;
 
     .line 709
     .line 710
@@ -1610,11 +1481,11 @@
     .line 711
     .line 712
     .line 713
-    iget-object v5, v6, LU3d;->s0:Landroid/widget/TextView;
+    iget-object v5, v6, LQid;->s0:Landroid/widget/TextView;
 
     .line 714
     .line 715
-    invoke-virtual {v2}, LPi4;->a()Ljava/lang/String;
+    invoke-virtual {v2}, Lnn4;->a()Ljava/lang/String;
 
     .line 716
     .line 717
@@ -1654,15 +1525,15 @@
     .line 735
     .line 736
     :cond_9
-    iget-object v2, v6, LU3d;->t0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->t0:Landroid/widget/TextView;
 
     .line 737
     .line 738
-    iget-object v5, v1, Lc4d;->g0:LPi4;
+    iget-object v5, v1, LXid;->g0:Lnn4;
 
     .line 739
     .line 740
-    invoke-virtual {v5}, LPi4;->a()Ljava/lang/String;
+    invoke-virtual {v5}, Lnn4;->a()Ljava/lang/String;
 
     .line 741
     .line 742
@@ -1675,15 +1546,15 @@
     .line 745
     .line 746
     .line 747
-    iget-object v2, v6, LU3d;->u0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->u0:Landroid/widget/TextView;
 
     .line 748
     .line 749
-    iget-object v5, v1, Lc4d;->h0:LPi4;
+    iget-object v5, v1, LXid;->h0:Lnn4;
 
     .line 750
     .line 751
-    invoke-virtual {v5}, LPi4;->a()Ljava/lang/String;
+    invoke-virtual {v5}, Lnn4;->a()Ljava/lang/String;
 
     .line 752
     .line 753
@@ -1696,15 +1567,15 @@
     .line 756
     .line 757
     .line 758
-    iget-object v2, v6, LU3d;->v0:Landroid/widget/TextView;
+    iget-object v2, v6, LQid;->v0:Landroid/widget/TextView;
 
     .line 759
     .line 760
-    iget-object v5, v1, Lc4d;->i0:LPi4;
+    iget-object v5, v1, LXid;->i0:Lnn4;
 
     .line 761
     .line 762
-    invoke-virtual {v5}, LPi4;->a()Ljava/lang/String;
+    invoke-virtual {v5}, Lnn4;->a()Ljava/lang/String;
 
     .line 763
     .line 764
@@ -1717,7 +1588,7 @@
     .line 767
     .line 768
     .line 769
-    iget-object v2, v1, Lc4d;->Y:LFfd;
+    iget-object v2, v1, LXid;->Y:LFvd;
 
     .line 770
     .line 771
@@ -1725,15 +1596,15 @@
 
     .line 772
     .line 773
-    iget-object v5, v6, LU3d;->p0:Landroid/widget/TextView;
+    iget-object v5, v6, LQid;->p0:Landroid/widget/TextView;
 
     .line 774
     .line 775
-    iget-object v2, v2, LFfd;->a:Lnfd;
+    iget-object v2, v2, LFvd;->a:Lnvd;
 
     .line 776
     .line 777
-    invoke-virtual {v2}, Lnfd;->d()Ljava/lang/String;
+    invoke-virtual {v2}, Lnvd;->i()Ljava/lang/String;
 
     .line 778
     .line 779
@@ -1746,7 +1617,7 @@
     .line 782
     .line 783
     .line 784
-    iget v5, v2, Lnfd;->a:I
+    iget v5, v2, Lnvd;->a:I
 
     .line 785
     .line 786
@@ -1754,15 +1625,15 @@
 
     .line 787
     .line 788
-    iget-object v5, v6, LU3d;->o0:Landroid/widget/ImageView;
+    iget-object v5, v6, LQid;->o0:Landroid/widget/ImageView;
 
     .line 789
     .line 790
-    iget-object v7, v6, LHfd;->a:Landroid/content/Context;
+    iget-object v7, v6, LHvd;->a:Landroid/content/Context;
 
     .line 791
     .line 792
-    invoke-static {v7, v2}, Liok;->d(Landroid/content/Context;Lnfd;)Landroid/graphics/drawable/Drawable;
+    invoke-static {v7, v2}, LtMk;->e(Landroid/content/Context;Lnvd;)Landroid/graphics/drawable/Drawable;
 
     .line 793
     .line 794
@@ -1776,7 +1647,7 @@
     .line 798
     .line 799
     :cond_a
-    iget-object v2, v1, Lc4d;->e0:Ljava/util/ArrayList;
+    iget-object v2, v1, LXid;->e0:Ljava/util/ArrayList;
 
     .line 800
     .line 801
@@ -1812,11 +1683,11 @@
     move-result-object v9
 
     .line 816
-    check-cast v9, LoX0;
+    check-cast v9, LT01;
 
     .line 817
     .line 818
-    iget-object v9, v9, LoX0;->t:Ljava/lang/Integer;
+    iget-object v9, v9, LT01;->t:Ljava/lang/Integer;
 
     .line 819
     .line 820
@@ -1835,7 +1706,7 @@
 
     .line 826
     :cond_b
-    iget-object v5, v6, LHfd;->a:Landroid/content/Context;
+    iget-object v5, v6, LHvd;->a:Landroid/content/Context;
 
     .line 827
     .line 828
@@ -1876,7 +1747,7 @@
     move-result-object v5
 
     .line 847
-    iget-object v7, v6, LU3d;->z0:Landroid/widget/TextView;
+    iget-object v7, v6, LQid;->z0:Landroid/widget/TextView;
 
     .line 848
     .line 849
@@ -1885,7 +1756,7 @@
     .line 850
     .line 851
     .line 852
-    iget-object v5, v6, LU3d;->z0:Landroid/widget/TextView;
+    iget-object v5, v6, LQid;->z0:Landroid/widget/TextView;
 
     .line 853
     .line 854
@@ -1925,7 +1796,7 @@
     .line 872
     .line 873
     .line 874
-    iget-object v1, v1, Lc4d;->X:LSFh;
+    iget-object v1, v1, LXid;->X:Lj4i;
 
     .line 875
     .line 876
@@ -1933,11 +1804,11 @@
 
     .line 877
     .line 878
-    iget-object v5, v6, LU3d;->y0:Landroid/widget/TextView;
+    iget-object v5, v6, LQid;->y0:Landroid/widget/TextView;
 
     .line 879
     .line 880
-    iget-object v7, v1, LSFh;->b:Ljava/lang/String;
+    iget-object v7, v1, Lj4i;->b:Ljava/lang/String;
 
     .line 881
     .line 882
@@ -1947,36 +1818,36 @@
     .line 884
     .line 885
     :cond_c
-    iget-object v5, v6, LHfd;->a:Landroid/content/Context;
+    iget-object v5, v6, LHvd;->a:Landroid/content/Context;
 
     .line 886
     .line 887
-    iget-object v7, v6, LU3d;->x0:Lcom/snap/imageloading/view/SnapImageView;
+    iget-object v7, v6, LQid;->x0:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 888
     .line 889
-    iget-object v1, v1, LSFh;->X:Ljava/lang/String;
+    iget-object v1, v1, Lj4i;->X:Ljava/lang/String;
 
     .line 890
     .line 891
-    iget-object v8, v6, LU3d;->h0:LXy7;
+    iget-object v8, v6, LQid;->h0:LQD7;
 
     .line 892
     .line 893
-    invoke-virtual {v8, v5, v7, v1}, LXy7;->c(Landroid/content/Context;Lcom/snap/imageloading/view/SnapImageView;Ljava/lang/String;)V
+    invoke-virtual {v8, v5, v7, v1}, LQD7;->c(Landroid/content/Context;Lcom/snap/imageloading/view/SnapImageView;Ljava/lang/String;)V
 
     .line 894
     .line 895
     .line 896
-    iget-object v1, v6, LU3d;->j0:LIX0;
+    iget-object v1, v6, LQid;->j0:Lo11;
 
     .line 897
     .line 898
-    iget-object v5, v6, LHfd;->a:Landroid/content/Context;
+    iget-object v5, v6, LHvd;->a:Landroid/content/Context;
 
     .line 899
     .line 900
-    iget-object v7, v6, LU3d;->g0:Lb2c;
+    iget-object v7, v6, LQid;->g0:Ls1j;
 
     .line 901
     .line 902
@@ -1993,7 +1864,7 @@
 
     .line 908
     .line 909
-    invoke-static {v2, v8}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v2, v8}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 910
     .line 911
@@ -2035,19 +1906,19 @@
     move-result-object v8
 
     .line 930
-    check-cast v8, LoX0;
+    check-cast v8, LT01;
 
     .line 931
     .line 932
-    iget-object v10, v8, LoX0;->X:Ljava/lang/String;
+    iget-object v10, v8, LT01;->X:Ljava/lang/String;
 
     .line 933
     .line 934
-    iget-object v9, v8, LoX0;->b:LPi4;
+    iget-object v9, v8, LT01;->b:Lnn4;
 
     .line 935
     .line 936
-    invoke-virtual {v9}, LPi4;->a()Ljava/lang/String;
+    invoke-virtual {v9}, Lnn4;->a()Ljava/lang/String;
 
     .line 937
     .line 938
@@ -2055,7 +1926,7 @@
     move-result-object v11
 
     .line 940
-    iget-object v9, v8, LoX0;->c:LPi4;
+    iget-object v9, v8, LT01;->c:Lnn4;
 
     .line 941
     .line 942
@@ -2071,7 +1942,7 @@
 
     .line 947
     :cond_d
-    invoke-virtual {v9}, LPi4;->a()Ljava/lang/String;
+    invoke-virtual {v9}, Lnn4;->a()Ljava/lang/String;
 
     .line 948
     .line 949
@@ -2084,7 +1955,7 @@
     .line 952
     .line 953
     :goto_8
-    iget-object v9, v8, LoX0;->t:Ljava/lang/Integer;
+    iget-object v9, v8, LT01;->t:Ljava/lang/Integer;
 
     .line 954
     .line 955
@@ -2104,7 +1975,7 @@
 
     .line 962
     .line 963
-    const v9, 0x7f1324f5
+    const v9, 0x7f132705
 
     .line 964
     .line 965
@@ -2125,7 +1996,7 @@
     move-result-object v9
 
     .line 974
-    const v13, 0x7f070508
+    const v13, 0x7f07052f
 
     .line 975
     .line 976
@@ -2138,19 +2009,19 @@
     move-result v15
 
     .line 981
-    new-instance v9, Lh1e;
+    new-instance v9, LKie;
 
     .line 982
     .line 983
-    iget-object v14, v8, LoX0;->a:Ljava/lang/String;
+    iget-object v14, v8, LT01;->a:Ljava/lang/String;
 
     .line 984
     .line 985
-    iget-object v13, v8, LoX0;->Z:Ljava/lang/String;
+    iget-object v13, v8, LT01;->Z:Ljava/lang/String;
 
     .line 986
     .line 987
-    iget-object v8, v8, LoX0;->Y:Ljava/lang/String;
+    iget-object v8, v8, LT01;->Y:Ljava/lang/String;
 
     .line 988
     .line 989
@@ -2161,7 +2032,7 @@
     move-object v13, v8
 
     .line 992
-    invoke-direct/range {v9 .. v17}, Lh1e;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v9 .. v17}, LKie;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;Ljava/lang/String;)V
 
     .line 993
     .line 994
@@ -2175,7 +2046,7 @@
 
     .line 999
     :cond_e
-    invoke-static {v7}, Ldbk;->b(Ljava/util/List;)Lqoa;
+    invoke-static {v7}, Lnzk;->c(Ljava/util/List;)LEAa;
 
     .line 1000
     .line 1001
@@ -2183,12 +2054,12 @@
     move-result-object v2
 
     .line 1003
-    invoke-virtual {v1, v2}, LIX0;->u(LOFf;)V
+    invoke-virtual {v1, v2}, Lo11;->u(LmZf;)V
 
     .line 1004
     .line 1005
     .line 1006
-    iget-boolean v1, v6, LHfd;->X:Z
+    iget-boolean v1, v6, LHvd;->X:Z
 
     .line 1007
     .line 1008
@@ -2196,15 +2067,15 @@
 
     .line 1009
     .line 1010
-    iget-object v1, v6, LU3d;->C0:LsK9;
+    iget-object v1, v6, LQid;->C0:Ljvd;
 
     .line 1011
     .line 1012
-    iget-object v1, v1, LsK9;->a:Landroid/content/Context;
+    iget-object v1, v1, Ljvd;->a:Landroid/content/Context;
 
     .line 1013
     .line 1014
-    const v2, 0x7f01003b
+    const v2, 0x7f01003e
 
     .line 1015
     .line 1016
@@ -2236,7 +2107,7 @@
 
     .line 1026
     .line 1027
-    iget-object v2, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v2, v6, LQid;->A0:Landroid/view/View;
 
     .line 1028
     .line 1029
@@ -2246,11 +2117,11 @@
     .line 1031
     .line 1032
     :cond_f
-    iget-object v1, v6, LU3d;->A0:Landroid/view/View;
+    iget-object v1, v6, LQid;->A0:Landroid/view/View;
 
     .line 1033
     .line 1034
-    const v2, 0x7f0b07c3
+    const v2, 0x7f0b086d
 
     .line 1035
     .line 1036
@@ -2267,7 +2138,7 @@
 
     .line 1042
     .line 1043
-    const v3, 0x7f0e0214
+    const v3, 0x7f0e0225
 
     .line 1044
     .line 1045
@@ -2282,7 +2153,7 @@
     .line 1050
     .line 1051
     .line 1052
-    iget-object v2, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->w0:LPm9;
+    iget-object v2, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->w0:LIv9;
 
     .line 1053
     .line 1054
@@ -2290,7 +2161,7 @@
 
     .line 1055
     .line 1056
-    invoke-interface {v2}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {v2}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 1057
     .line 1058
@@ -2298,7 +2169,7 @@
     move-result-object v2
 
     .line 1060
-    iget-object v3, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->B0:LBre;
+    iget-object v3, v0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->B0:LnJe;
 
     .line 1061
     .line 1062
@@ -2306,7 +2177,7 @@
 
     .line 1063
     .line 1064
-    invoke-virtual {v3}, LBre;->i()Lgn0;
+    invoke-virtual {v3}, LnJe;->i()Lxp0;
 
     .line 1065
     .line 1066
@@ -2323,7 +2194,7 @@
     .line 1071
     .line 1072
     .line 1073
-    new-instance v2, LSi;
+    new-instance v2, LUj;
 
     .line 1074
     .line 1075
@@ -2331,7 +2202,7 @@
 
     .line 1076
     .line 1077
-    invoke-direct {v2, v1, v3}, LSi;-><init>(Landroid/view/View;I)V
+    invoke-direct {v2, v1, v3}, LUj;-><init>(Landroid/view/View;I)V
 
     .line 1078
     .line 1079
@@ -2348,7 +2219,7 @@
 
     .line 1085
     .line 1086
-    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 1087
     .line 1088
@@ -2361,7 +2232,7 @@
 
     .line 1091
     .line 1092
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1093
     .line 1094
@@ -2374,7 +2245,7 @@
 
     .line 1097
     .line 1098
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1099
     .line 1100
@@ -2391,7 +2262,7 @@
 
     .line 1105
     .line 1106
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1107
     .line 1108
@@ -2408,7 +2279,7 @@
 
     .line 1113
     .line 1114
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1115
     .line 1116
@@ -2416,16 +2287,16 @@
     throw p3
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LU3d;
+    iget-object p1, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LQid;
 
     .line 5
     .line 6
@@ -2433,15 +2304,15 @@
 
     .line 7
     .line 8
-    iget-object p1, p1, LU3d;->f0:Lnl3;
+    iget-object p1, p1, LQid;->f0:Ljo3;
 
     .line 9
     .line 10
-    check-cast p1, Lpl3;
+    check-cast p1, Llo3;
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Lpl3;->m()V
+    invoke-virtual {p1}, Llo3;->l()V
 
     .line 13
     .line 14
@@ -2454,7 +2325,7 @@
 
     .line 17
     .line 18
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -2465,11 +2336,11 @@
     throw p1
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -2477,16 +2348,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LU3d;
+    iget-object p1, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LQid;
 
     .line 5
     .line 6
@@ -2494,19 +2365,19 @@
 
     .line 7
     .line 8
-    sget-object v0, LXl3;->Z:LXl3;
+    sget-object v0, LTo3;->Z:LTo3;
 
     .line 9
     .line 10
-    iget-object p1, p1, LU3d;->f0:Lnl3;
+    iget-object p1, p1, LQid;->f0:Ljo3;
 
     .line 11
     .line 12
-    check-cast p1, Lpl3;
+    check-cast p1, Llo3;
 
     .line 13
     .line 14
-    invoke-virtual {p1, v0}, Lpl3;->o(LXl3;)V
+    invoke-virtual {p1, v0}, Llo3;->n(LTo3;)V
 
     .line 15
     .line 16
@@ -2519,7 +2390,7 @@
 
     .line 19
     .line 20
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 21
     .line 22
@@ -2527,5 +2398,134 @@
     const/4 p1, 0x0
 
     .line 24
+    throw p1
+.end method
+
+.method public final z1(Landroid/os/Bundle;)V
+    .locals 7
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->z1(Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v5
+
+    .line 8
+    if-nez v5, :cond_0
+
+    .line 9
+    .line 10
+    return-void
+
+    .line 11
+    :cond_0
+    iget-object p1, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->x0:LI75;
+
+    .line 12
+    .line 13
+    if-eqz p1, :cond_2
+
+    .line 14
+    .line 15
+    invoke-virtual {p1}, LI75;->get()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    move-object v0, p1
+
+    .line 20
+    check-cast v0, LQid;
+
+    .line 21
+    .line 22
+    iput-object v0, p0, Lcom/snap/payments/lib/fragments/OrderDetailsFragment;->A0:LQid;
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    if-nez p1, :cond_1
+
+    .line 33
+    .line 34
+    new-instance p1, Landroid/os/Bundle;
+
+    .line 35
+    .line 36
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
+
+    .line 37
+    .line 38
+    .line 39
+    :cond_1
+    move-object v2, p1
+
+    .line 40
+    invoke-virtual {p0}, Lcom/snap/payments/lib/paymentcore/PaymentsBaseFragment;->U1()Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v3
+
+    .line 44
+    new-instance v4, LgKg;
+
+    .line 45
+    .line 46
+    invoke-direct {v4}, LgKg;-><init>()V
+
+    .line 47
+    .line 48
+    .line 49
+    move-object v6, p0
+
+    .line 50
+    invoke-virtual/range {v0 .. v6}, LQid;->g(Landroid/content/Context;Landroid/os/Bundle;ZLgKg;Landroidx/fragment/app/FragmentActivity;Landroidx/fragment/app/g;)V
+
+    .line 51
+    .line 52
+    .line 53
+    return-void
+
+    .line 54
+    :cond_2
+    const-string p1, "pageProvider"
+
+    .line 55
+    .line 56
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 57
+    .line 58
+    .line 59
+    const/4 p1, 0x0
+
+    .line 60
     throw p1
 .end method

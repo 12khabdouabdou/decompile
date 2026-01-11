@@ -4,130 +4,137 @@
 
 
 # instance fields
-.field public final a:LkRf;
+.field public final a:F
 
-.field public final b:LVTf;
+.field public final b:Lu54;
 
 
 # direct methods
-.method public constructor <init>(LkRf;LVTf;)V
+.method public synthetic constructor <init>()V
+    .locals 2
+
+    .line 4
+    sget-object v0, LnU3;->c:LnU3;
+
+    const/high16 v1, 0x3f800000    # 1.0f
+
+    .line 5
+    invoke-direct {p0, v1, v0}, LCIh;-><init>(FLu54;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(FLu54;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput p1, p0, LCIh;->a:F
+
     .line 3
-    .line 4
-    iput-object p1, p0, LCIh;->a:LkRf;
+    iput-object p2, p0, LCIh;->b:Lu54;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LCIh;->b:LVTf;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+    .locals 4
 
     .line 1
-    if-ne p0, p1, :cond_0
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    goto :goto_1
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
-    :cond_0
-    instance-of v0, p1, LCIh;
+    return v0
 
     .line 5
-    .line 6
-    if-nez v0, :cond_1
+    :cond_0
+    instance-of v1, p1, LCIh;
 
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    goto :goto_0
+    if-nez v1, :cond_1
 
     .line 9
+    .line 10
+    return v2
+
+    .line 11
     :cond_1
     check-cast p1, LCIh;
 
-    .line 10
-    .line 11
-    iget-object v0, p1, LCIh;->a:LkRf;
-
     .line 12
     .line 13
-    iget-object v1, p0, LCIh;->a:LkRf;
+    iget v1, p1, LCIh;->a:F
 
     .line 14
     .line 15
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget v3, p0, LCIh;->a:F
 
     .line 16
     .line 17
+    invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
+
     .line 18
-    move-result v0
-
     .line 19
-    if-nez v0, :cond_2
-
     .line 20
+    move-result v1
+
     .line 21
-    goto :goto_0
+    if-eqz v1, :cond_2
 
     .line 22
-    :cond_2
-    iget-object v0, p0, LCIh;->b:LVTf;
-
     .line 23
+    return v2
+
     .line 24
-    iget-object p1, p1, LCIh;->b:LVTf;
+    :cond_2
+    iget-object v1, p0, LCIh;->b:Lu54;
 
     .line 25
     .line 26
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    iget-object p1, p1, LCIh;->b:Lu54;
 
     .line 27
     .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 29
+    .line 30
+    .line 31
     move-result p1
 
-    .line 30
+    .line 32
     if-nez p1, :cond_3
 
-    .line 31
-    .line 32
-    :goto_0
-    const/4 p1, 0x0
-
     .line 33
-    return p1
-
     .line 34
-    :cond_3
-    :goto_1
-    const/4 p1, 0x1
+    return v2
 
     .line 35
-    return p1
+    :cond_3
+    return v0
 .end method
 
 .method public final hashCode()I
     .locals 2
 
     .line 1
-    iget-object v0, p0, LCIh;->a:LkRf;
+    iget v0, p0, LCIh;->a:F
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lan0;->hashCode()I
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
 
     .line 4
     .line 5
@@ -135,11 +142,11 @@
     move-result v0
 
     .line 7
-    mul-int/lit16 v0, v0, 0x3c1
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
     .line 9
-    iget-object v1, p0, LCIh;->b:LVTf;
+    iget-object v1, p0, LCIh;->b:Lu54;
 
     .line 10
     .line 11
@@ -165,7 +172,7 @@
 
     .line 2
     .line 3
-    const-string v1, "MyStoryPrivacyDialogLaunchEvent(attributedFeature="
+    const-string v1, "VisibleFraction(operaVisibility="
 
     .line 4
     .line 5
@@ -174,16 +181,16 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LCIh;->a:LkRf;
+    iget v1, p0, LCIh;->a:F
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", acceptCallback=null, cancelCallback="
+    const-string v1, ", hiddenOperaSize="
 
     .line 14
     .line 15
@@ -192,7 +199,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LCIh;->b:LVTf;
+    iget-object v1, p0, LCIh;->b:Lu54;
 
     .line 19
     .line 20

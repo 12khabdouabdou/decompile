@@ -1,26 +1,25 @@
-.class public interface abstract LE8e;
-.super Ljava/lang/Object;
+.class public final LE8e;
+.super LI8e;
 .source "SourceFile"
 
-# interfaces
-.implements LiKc;
+
+# instance fields
+.field public final a:I
 
 
-# virtual methods
-.method public abstract E2(LF8e;Ls6j;)V
-.end method
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
 
-.method public abstract V()V
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract e0()I
-.end method
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, LE8e;->a:I
 
-.method public abstract g3()Z
-.end method
-
-.method public abstract l1(Landroid/view/View;LKu;)V
-.end method
-
-.method public abstract v1(Z)V
+    .line 5
+    .line 6
+    return-void
 .end method

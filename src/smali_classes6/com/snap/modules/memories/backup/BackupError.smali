@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/memories/backup/BackupError;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'code\':r<e>:\'[0]\',\'message\':s"
     typeReferences = {
@@ -53,7 +53,7 @@
     return-object v0
 .end method
 
-.method public final getMessage()Ljava/lang/String;
+.method public final b()Ljava/lang/String;
     .locals 1
 
     .line 1

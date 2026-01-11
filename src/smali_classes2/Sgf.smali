@@ -1,77 +1,135 @@
 .class public abstract LSgf;
-.super LCgf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public final h(LHgf;)V
-    .locals 3
+# instance fields
+.field public final a:LJL7;
+
+.field public final b:LBe9;
+
+.field public final c:J
+
+.field public final d:Ljava/util/List;
+
+.field public final e:LuOe;
+
+
+# direct methods
+.method public constructor <init>(LJL7;LBe9;LMZf;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    .locals 6
 
     .line 1
-    instance-of v0, p1, LRgf;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
-
     .line 4
-    .line 5
-    iget-object v0, p0, LCgf;->i:Ljava/util/ArrayList;
+    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
 
+    .line 5
     .line 6
     .line 7
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-result p5
 
     .line 8
+    xor-int/lit8 p5, p5, 0x1
+
     .line 9
     .line 10
-    return-void
+    invoke-static {p5}, LPSk;->b(Z)V
 
     .line 11
-    :cond_0
-    new-instance v0, Lorg/xml/sax/SAXException;
-
     .line 12
     .line 13
-    new-instance v1, Ljava/lang/StringBuilder;
+    iput-object p1, p0, LSgf;->a:LJL7;
 
     .line 14
     .line 15
-    const-string v2, "Text content elements cannot contain "
+    invoke-static {p2}, LBe9;->z(Ljava/util/Collection;)LBe9;
 
     .line 16
     .line 17
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 18
-    .line 19
-    .line 20
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
+    .line 19
+    iput-object p1, p0, LSgf;->b:LBe9;
+
+    .line 20
     .line 21
+    if-nez p4, :cond_0
+
     .line 22
     .line 23
-    const-string p1, " elements."
+    sget-object p1, Ljava/util/Collections;->EMPTY_LIST:Ljava/util/List;
 
     .line 24
     .line 25
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_0
 
     .line 26
+    :cond_0
+    invoke-static {p4}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
     .line 27
     .line 28
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 29
-    .line 30
-    .line 31
     move-result-object p1
 
+    .line 30
+    :goto_0
+    iput-object p1, p0, LSgf;->d:Ljava/util/List;
+
+    .line 31
     .line 32
-    invoke-direct {v0, p1}, Lorg/xml/sax/SAXException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p3, p0}, LMZf;->a(LSgf;)LuOe;
 
     .line 33
     .line 34
     .line 35
-    throw v0
+    move-result-object p1
+
+    .line 36
+    iput-object p1, p0, LSgf;->e:LuOe;
+
+    .line 37
+    .line 38
+    const-wide/32 v2, 0xf4240
+
+    .line 39
+    .line 40
+    .line 41
+    iget-wide v4, p3, LMZf;->b:J
+
+    .line 42
+    .line 43
+    iget-wide v0, p3, LMZf;->c:J
+
+    .line 44
+    .line 45
+    invoke-static/range {v0 .. v5}, LaQj;->K(JJJ)J
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-wide p1
+
+    .line 49
+    iput-wide p1, p0, LSgf;->c:J
+
+    .line 50
+    .line 51
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract k()Ljava/lang/String;
+.end method
+
+.method public abstract l()LId5;
+.end method
+
+.method public abstract m()LuOe;
 .end method

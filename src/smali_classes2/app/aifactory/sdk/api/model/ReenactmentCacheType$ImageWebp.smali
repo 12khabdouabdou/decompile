@@ -25,7 +25,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {p0, v2, v0, v1}, Lapp/aifactory/sdk/api/model/ReenactmentCacheType$ImageWebp;-><init>(IILHr5;)V
+    invoke-direct {p0, v2, v0, v1}, Lapp/aifactory/sdk/api/model/ReenactmentCacheType$ImageWebp;-><init>(IILex5;)V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(IILHr5;)V
+.method public synthetic constructor <init>(IILex5;)V
     .locals 0
 
     and-int/lit8 p2, p2, 0x1

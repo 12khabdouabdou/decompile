@@ -4,31 +4,74 @@
 
 
 # virtual methods
-.method public abstract addUnlock(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LVA;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract addUnlock(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LEC;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "bundle-version"
         .end annotation
     .end param
-    .param p4    # LVA;
-        .annotation runtime Ljv1;
+    .param p4    # LEC;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
+    .annotation runtime LIR8;
+        value = {
+            "Accept: application/x-protobuf",
+            "Content-Type: application/x-protobuf",
+            "api-version: v2"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "LEC;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LRxj;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Llmd;
         value = "/unlocks/add_unlock"
     .end annotation
+.end method
 
-    .annotation runtime LaK8;
+.method public abstract fetchMetadata(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LMia;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "__xsc_local__snap_token"
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "X-Snap-Route-Tag"
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "bundle-version"
+        .end annotation
+    .end param
+    .param p4    # LMia;
+        .annotation runtime Lzy1;
+        .end annotation
+    .end param
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
@@ -42,87 +85,40 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LVA;",
+            "LMia;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LX8j;",
+            "LNia;",
             ">;"
         }
     .end annotation
-.end method
 
-.method public abstract fetchMetadata(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LFSb;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "__xsc_local__snap_token"
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "X-Snap-Route-Tag"
-        .end annotation
-    .end param
-    .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "bundle-version"
-        .end annotation
-    .end param
-    .param p4    # LFSb;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
-        value = "/unlocks/unlockable_metadata"
-    .end annotation
-
-    .annotation runtime LaK8;
-        value = {
-            "Accept: application/x-protobuf",
-            "Content-Type: application/x-protobuf",
-            "api-version: v2"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "LFSb;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "LHSb;",
-            ">;"
-        }
-    .end annotation
-.end method
-
-.method public abstract fetchMetadata(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LZ5a;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "__xsc_local__snap_token"
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "X-Snap-Route-Tag"
-        .end annotation
-    .end param
-    .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "bundle-version"
-        .end annotation
-    .end param
-    .param p4    # LZ5a;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
+    .annotation runtime Llmd;
         value = "/lens/retrieving/lenses_by_ids"
     .end annotation
+.end method
 
-    .annotation runtime LaK8;
+.method public abstract fetchMetadata(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lj7c;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "__xsc_local__snap_token"
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "X-Snap-Route-Tag"
+        .end annotation
+    .end param
+    .param p3    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "bundle-version"
+        .end annotation
+    .end param
+    .param p4    # Lj7c;
+        .annotation runtime Lzy1;
+        .end annotation
+    .end param
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
@@ -136,91 +132,95 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LZ5a;",
+            "Lj7c;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "La6a;",
+            "Ll7c;",
             ">;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+        value = "/unlocks/unlockable_metadata"
+    .end annotation
 .end method
 
-.method public abstract fetchUnlocks(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lus8;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract fetchUnlocks(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldz8;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "bundle-version"
         .end annotation
     .end param
-    .param p4    # Lus8;
-        .annotation runtime Ljv1;
+    .param p4    # Ldz8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
+    .annotation runtime LIR8;
+        value = {
+            "Accept: application/x-protobuf",
+            "Content-Type: application/x-protobuf",
+            "api-version: v2"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ldz8;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "Lez8;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Llmd;
         value = "/unlocks/get_unlocks"
     .end annotation
-
-    .annotation runtime LaK8;
-        value = {
-            "Accept: application/x-protobuf",
-            "Content-Type: application/x-protobuf",
-            "api-version: v2"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Lus8;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "Lvs8;",
-            ">;"
-        }
-    .end annotation
 .end method
 
-.method public abstract removeUnlock(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LzSe;)Lio/reactivex/rxjava3/core/Completable;
+.method public abstract removeUnlock(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lqaf;)Lio/reactivex/rxjava3/core/Completable;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "bundle-version"
         .end annotation
     .end param
-    .param p4    # LzSe;
-        .annotation runtime Ljv1;
+    .param p4    # Lqaf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/unlocks/remove_unlock"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
             "api-version: v2"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "/unlocks/remove_unlock"
     .end annotation
 .end method

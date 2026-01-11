@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map/layers/api/MapAnnotationStyle;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'identifier\':s,\'shape\':r<e>:\'[0]\',\'width\':d,\'height\':d"
     typeReferences = {

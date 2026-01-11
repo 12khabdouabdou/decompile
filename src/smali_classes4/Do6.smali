@@ -3,89 +3,72 @@
 .source "SourceFile"
 
 # interfaces
-.implements LtWc;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final a:Z
+.field public final synthetic a:I
+
+.field public final synthetic b:LBGg;
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public synthetic constructor <init>(LBGg;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LDo6;->a:I
+
+    iput-object p1, p0, LDo6;->b:LBGg;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-boolean p1, p0, LDo6;->a:Z
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final E(Lql5;)V
-    .locals 8
+.method public final run()V
+    .locals 1
 
     .line 1
-    new-instance v1, Lyc6;
+    iget v0, p0, LDo6;->a:I
 
     .line 2
     .line 3
-    const/16 v0, 0x1a
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v1, v0, p0}, Lyc6;-><init>(ILjava/lang/Object;)V
-
     .line 6
+    iget-object v0, p0, LDo6;->b:LBGg;
+
     .line 7
     .line 8
-    sget-object v3, LNj6;->z0:LNj6;
+    iget-object v0, v0, LBGg;->c:Ljava/lang/Object;
 
     .line 9
     .line 10
-    const/4 v5, 0x0
+    return-void
 
     .line 11
-    const/4 v6, 0x0
+    :pswitch_0
+    iget-object v0, p0, LDo6;->b:LBGg;
 
     .line 12
-    const-string v0, "DISCOVER_VIDEO_PROGRESS"
-
     .line 13
-    .line 14
-    const/4 v2, 0x0
+    iget-object v0, v0, LBGg;->c:Ljava/lang/Object;
 
+    .line 14
     .line 15
-    const/4 v4, 0x0
+    return-void
 
     .line 16
-    const/16 v7, 0x164
+    nop
 
     .line 17
-    .line 18
-    invoke-static/range {v0 .. v7}, LLRi;->n(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/util/List;Lkotlin/jvm/functions/Function1;Ljava/util/Map;ZII)LzG9;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    sget-object v1, LyL5;->j:LzG9;
-
-    .line 23
-    .line 24
-    invoke-virtual {p1, v0, v1}, Lql5;->g(LzG9;LzG9;)V
-
-    .line 25
-    .line 26
-    .line 27
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

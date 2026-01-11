@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public appBackgroundCreationObserverProvider:Lbke;
+.field public appBackgroundCreationObserverProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public applicationCore:LqJ0;
+.field public applicationCore:LjM0;
 
 .field private final applicationProcessUuid:Ljava/lang/String;
 
-.field public coldLaunchDetectorHelper:Ldd3;
+.field public coldLaunchDetectorHelper:LUf3;
 
-.field public launchTracker:LiG9;
+.field public launchTracker:LGR9;
 
-.field public releaseManager:LeNe;
+.field public releaseManager:La5f;
 
 
 # direct methods
@@ -33,7 +33,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, LJ0j;->a()Ljava/util/UUID;
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
 
     .line 5
     .line 6
@@ -72,32 +72,32 @@
     .line 5
     .line 6
     .line 7
-    new-instance p1, LeNe;
+    new-instance p1, La5f;
 
     .line 8
     .line 9
-    invoke-direct {p1, p0}, LeNe;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, p0}, La5f;-><init>(Landroid/content/Context;)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v0, LoJ0;
+    new-instance v0, LhM0;
 
     .line 13
     .line 14
     const/4 v1, 0x0
 
     .line 15
-    invoke-direct {v0, v1, p1}, LoJ0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, LhM0;-><init>(ILjava/lang/Object;)V
 
     .line 16
     .line 17
     .line 18
-    sput-object v0, LeNe;->c:LrH9;
+    sput-object v0, La5f;->c:LQS9;
 
     .line 19
     .line 20
-    invoke-virtual {p0, p1}, Lcom/snap/core/application/BaseApplication;->setReleaseManager(LeNe;)V
+    invoke-virtual {p0, p1}, Lcom/snap/core/application/BaseApplication;->setReleaseManager(La5f;)V
 
     .line 21
     .line 22
@@ -110,11 +110,11 @@
     return-void
 .end method
 
-.method public final getApplicationCore()LqJ0;
+.method public final getApplicationCore()LjM0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/application/BaseApplication;->applicationCore:LqJ0;
+    iget-object v0, p0, Lcom/snap/core/application/BaseApplication;->applicationCore:LjM0;
 
     .line 2
     .line 3
@@ -130,7 +130,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -152,11 +152,11 @@
     return-object v0
 .end method
 
-.method public final getReleaseManager()LeNe;
+.method public final getReleaseManager()La5f;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/application/BaseApplication;->releaseManager:LeNe;
+    iget-object v0, p0, Lcom/snap/core/application/BaseApplication;->releaseManager:La5f;
 
     .line 2
     .line 3
@@ -172,7 +172,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -187,7 +187,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lo00;->a:Lo00;
+    sget-object v0, LV20;->a:LV20;
 
     .line 2
     .line 3
@@ -199,11 +199,11 @@
     move-result-object v1
 
     .line 7
-    sget-object v2, Lcb0;->a:LXfi;
+    sget-object v2, Lxd0;->a:LREi;
 
     .line 8
     .line 9
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -211,11 +211,11 @@
     move-result-object v2
 
     .line 13
-    check-cast v2, Lcb0;
+    check-cast v2, Lxd0;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v2}, Lo00;->c(Landroid/content/Context;Lcb0;)V
+    invoke-virtual {v0, v1, v2}, LV20;->c(Landroid/content/Context;Lxd0;)V
 
     .line 16
     .line 17
@@ -227,15 +227,15 @@
     .locals 1
 
     .line 1
-    sget-object v0, LnPg;->o:LnPg;
+    sget-object v0, Ltbh;->o:Ltbh;
 
     .line 2
     .line 3
-    sget-object v0, LnPg;->o:LnPg;
+    sget-object v0, Ltbh;->o:Ltbh;
 
     .line 4
     .line 5
-    invoke-static {v0}, LbPg;->a(LnPg;)Z
+    invoke-static {v0}, Lgbh;->a(Ltbh;)Z
 
     .line 6
     .line 7
@@ -273,7 +273,7 @@
     const/4 v2, 0x6
 
     .line 12
-    invoke-static {p1, v1, v0, v2}, LR4i;->M1(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    invoke-static {p1, v1, v0, v2}, Lkti;->T0(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     .line 13
     .line 14
@@ -316,7 +316,7 @@
 
     .line 30
     .line 31
-    invoke-static {}, LrJ0;->a()Ljava/util/Set;
+    invoke-static {}, LkM0;->a()Ljava/util/Set;
 
     .line 32
     .line 33
@@ -353,7 +353,7 @@
     move-result-wide v0
 
     .line 5
-    sput-wide v0, LGzg;->j0:J
+    sput-wide v0, LlLf;->s0:J
 
     .line 6
     .line 7
@@ -365,7 +365,7 @@
     move-result-wide v0
 
     .line 11
-    sput-wide v0, LGzg;->k0:J
+    sput-wide v0, LlLf;->t0:J
 
     .line 12
     .line 13
@@ -382,7 +382,7 @@
     move-result-object v0
 
     .line 20
-    invoke-static {v0}, LzP2;->S(Landroid/content/Context;)Landroid/app/ActivityManager$RunningAppProcessInfo;
+    invoke-static {v0}, LMsi;->m(Landroid/content/Context;)Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 21
     .line 22
@@ -426,24 +426,24 @@
     .line 38
     .line 39
     :cond_1
-    sget-object v0, LCw8;->b:LCw8;
+    sget-object v0, LkD8;->b:LkD8;
 
     .line 40
     .line 41
-    sget-object v2, Livd;->s0:Livd;
+    sget-object v2, LWLd;->s0:LWLd;
 
     .line 42
     .line 43
-    invoke-virtual {v0, v2}, LCw8;->b(Livd;)V
+    invoke-virtual {v0, v2}, LkD8;->b(LWLd;)V
 
     .line 44
     .line 45
     .line 46
-    sget-object v2, Lzth;->Y:Lzth;
+    sget-object v2, LpRh;->Y:LpRh;
 
     .line 47
     .line 48
-    invoke-static {v2}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v2}, LGYf;->a(Lkmg;)LGYf;
 
     .line 49
     .line 50
@@ -461,11 +461,11 @@
     .line 56
     .line 57
     .line 58
-    sget-object v3, LeNe;->c:LrH9;
+    sget-object v3, La5f;->c:LQS9;
 
     .line 59
     .line 60
-    invoke-static {}, LHHd;->q()LeNe;
+    invoke-static {}, LtOc;->n()La5f;
 
     .line 61
     .line 62
@@ -492,7 +492,7 @@
     .line 73
     .line 74
     :cond_2
-    iget-object v3, p0, Lcom/snap/core/application/BaseApplication;->coldLaunchDetectorHelper:Ldd3;
+    iget-object v3, p0, Lcom/snap/core/application/BaseApplication;->coldLaunchDetectorHelper:LUf3;
 
     .line 75
     .line 76
@@ -500,16 +500,16 @@
 
     .line 77
     .line 78
-    check-cast v3, Led3;
+    check-cast v3, LVf3;
 
     .line 79
     .line 80
-    invoke-virtual {v3}, Led3;->a()I
+    invoke-virtual {v3}, LVf3;->a()I
 
     .line 81
     .line 82
     .line 83
-    iget-object v3, p0, Lcom/snap/core/application/BaseApplication;->appBackgroundCreationObserverProvider:Lbke;
+    iget-object v3, p0, Lcom/snap/core/application/BaseApplication;->appBackgroundCreationObserverProvider:LDBe;
 
     .line 84
     .line 85
@@ -517,7 +517,7 @@
 
     .line 86
     .line 87
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
     .line 88
     .line 89
@@ -525,7 +525,7 @@
     move-result-object v3
 
     .line 91
-    check-cast v3, LaW;
+    check-cast v3, LgY;
 
     .line 92
     .line 93
@@ -545,7 +545,7 @@
 
     .line 98
     .line 99
-    invoke-interface {v3, v4}, LaW;->b(Ljava/lang/String;)V
+    invoke-interface {v3, v4}, LgY;->b(Ljava/lang/String;)V
 
     .line 100
     .line 101
@@ -556,7 +556,7 @@
     .line 103
     .line 104
     .line 105
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getApplicationCore()LqJ0;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getApplicationCore()LjM0;
 
     .line 106
     .line 107
@@ -564,15 +564,15 @@
     move-result-object v4
 
     .line 109
-    iget-object v5, v4, LqJ0;->m:LeNe;
+    iget-object v5, v4, LjM0;->m:La5f;
 
     .line 110
     .line 111
-    iget-object v6, v4, LqJ0;->n:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v6, v4, LjM0;->n:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 112
     .line 113
-    sget-object v7, LXRg;->a:LWRg;
+    sget-object v7, LOdh;->a:LNdh;
 
     .line 114
     .line 115
@@ -580,7 +580,7 @@
 
     .line 116
     .line 117
-    invoke-virtual {v7, v8}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v7, v8}, LNdh;->e(Ljava/lang/String;)I
 
     .line 118
     .line 119
@@ -589,15 +589,15 @@
 
     .line 121
     :try_start_0
-    sget-object v9, Lgye;->b:Lgje;
+    sget-object v9, LDz9;->b:Lqof;
 
     .line 122
     .line 123
-    iget-object v10, v4, LqJ0;->b:LrH9;
+    iget-object v10, v4, LjM0;->b:LQS9;
 
     .line 124
     .line 125
-    invoke-interface {v10}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v10}, LQS9;->get()Ljava/lang/Object;
 
     .line 126
     .line 127
@@ -605,41 +605,41 @@
     move-result-object v10
 
     .line 129
-    check-cast v10, LWef;
+    check-cast v10, Lzxf;
 
     .line 130
     .line 131
-    iput-object v10, v9, Lgje;->b:Ljava/lang/Object;
+    iput-object v10, v9, Lqof;->b:Ljava/lang/Object;
 
     .line 132
     .line 133
-    sget-object v9, LGzg;->c:LGzg;
+    sget-object v9, LlLf;->i0:LlLf;
 
     .line 134
     .line 135
-    iget-object v10, v4, LqJ0;->a:Lcom/snap/mushroom/app/MushroomApplication;
+    iget-object v10, v4, LjM0;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
     .line 136
     .line 137
-    invoke-virtual {v9, v10}, LGzg;->l(Lcom/snap/mushroom/app/MushroomApplication;)V
+    invoke-virtual {v9, v10}, LlLf;->j(Lcom/snap/core/application/SnapResourcesContextWrapper;)V
 
     .line 138
     .line 139
     .line 140
-    invoke-virtual {v4}, LqJ0;->b()V
+    invoke-virtual {v4}, LjM0;->b()V
 
     .line 141
     .line 142
     .line 143
-    sget-object v9, LbPg;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v9, Lgbh;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 144
     .line 145
-    sget-object v9, LnPg;->o:LnPg;
+    sget-object v9, Ltbh;->o:Ltbh;
 
     .line 146
     .line 147
-    invoke-static {v9}, LbPg;->a(LnPg;)Z
+    invoke-static {v9}, Lgbh;->a(Ltbh;)Z
 
     .line 148
     .line 149
@@ -661,7 +661,7 @@
 
     .line 158
     .line 159
-    invoke-virtual {v7, v9}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v7, v9}, LNdh;->e(Ljava/lang/String;)I
 
     .line 160
     .line 161
@@ -672,15 +672,15 @@
 
     .line 163
     :try_start_1
-    iget-object v10, v4, LqJ0;->k:Lu00;
+    iget-object v10, v4, LjM0;->k:Lb30;
 
     .line 164
     .line 165
-    sget-object v11, LRud;->R2:LRud;
+    sget-object v11, LALd;->K2:LALd;
 
     .line 166
     .line 167
-    invoke-interface {v10, v11}, Lu00;->a(LBI3;)Z
+    invoke-interface {v10, v11}, Lb30;->a(LcM3;)Z
 
     .line 168
     .line 169
@@ -692,11 +692,11 @@
 
     .line 172
     .line 173
-    iget-object v10, v4, LqJ0;->c:LDp7;
+    iget-object v10, v4, LjM0;->c:LIu7;
 
     .line 174
     .line 175
-    iget-boolean v11, v10, LDp7;->k:Z
+    iget-boolean v11, v10, LIu7;->k:Z
 
     .line 176
     .line 177
@@ -708,369 +708,370 @@
 
     .line 180
     :cond_5
-    new-instance v11, LC1;
+    new-instance v11, LV1;
 
     .line 181
     .line 182
-    const/4 v12, 0x6
+    const/16 v12, 0x9
 
     .line 183
-    invoke-direct {v11, v10, v12, v1}, LC1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 184
+    invoke-direct {v11, v10, v12, v1}, LV1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 185
     .line 186
-    iget-object v1, v10, LDp7;->b:Ljava/util/concurrent/ScheduledExecutorService;
-
     .line 187
+    iget-object v1, v10, LIu7;->b:Ljava/util/concurrent/ScheduledExecutorService;
+
     .line 188
+    .line 189
     invoke-interface {v1, v11}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 189
     .line 190
     .line 191
+    .line 192
     goto :goto_2
 
-    .line 192
+    .line 193
     :catchall_0
     move-exception v0
 
-    .line 193
+    .line 194
     goto/16 :goto_4
 
-    .line 194
     .line 195
+    .line 196
     :cond_6
     :goto_2
     :try_start_2
-    invoke-virtual {v7, v9}, LWRg;->h(I)V
+    invoke-virtual {v7, v9}, LNdh;->h(I)V
 
-    .line 196
     .line 197
     .line 198
+    .line 199
     const-string v1, "open initializeCrashManager"
 
-    .line 199
     .line 200
-    invoke-virtual {v7, v1}, LWRg;->e(Ljava/lang/String;)I
-
     .line 201
+    invoke-virtual {v7, v1}, LNdh;->e(Ljava/lang/String;)I
+
     .line 202
     .line 203
+    .line 204
     move-result v1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 204
-    :try_start_3
-    iget-object v9, v4, LqJ0;->f:LS74;
-
     .line 205
-    .line 206
-    check-cast v9, LY74;
+    :try_start_3
+    iget-object v9, v4, LjM0;->f:LCc4;
 
+    .line 206
     .line 207
+    check-cast v9, LKc4;
+
     .line 208
-    invoke-virtual {v9}, LY74;->a()V
+    .line 209
+    invoke-virtual {v9}, LKc4;->a()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 209
     .line 210
     .line 211
-    :try_start_4
-    invoke-virtual {v7, v1}, LWRg;->h(I)V
-
     .line 212
+    :try_start_4
+    invoke-virtual {v7, v1}, LNdh;->h(I)V
+
     .line 213
     .line 214
+    .line 215
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 215
     .line 216
     .line 217
-    iget-object v1, v4, LqJ0;->d:LbZ;
-
     .line 218
-    .line 219
-    invoke-virtual {v1}, LbZ;->a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    iget-object v1, v4, LjM0;->d:LE10;
 
+    .line 219
     .line 220
+    invoke-virtual {v1}, LE10;->a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
     .line 221
     .line 222
+    .line 223
     move-result-object v1
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 223
-    iget-object v5, v4, LqJ0;->o:LBre;
-
     .line 224
-    .line 225
-    :try_start_5
-    invoke-virtual {v5}, LBre;->d()LF06;
+    iget-object v5, v4, LjM0;->o:LnJe;
 
+    .line 225
     .line 226
+    :try_start_5
+    invoke-virtual {v5}, LnJe;->d()LA36;
+
     .line 227
     .line 228
-    move-result-object v9
-
     .line 229
-    invoke-virtual {v1, v9}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    move-result-object v9
 
     .line 230
+    invoke-virtual {v1, v9}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
     .line 231
     .line 232
-    move-result-object v1
-
     .line 233
-    sget-object v9, LsH0;->c:LsH0;
+    move-result-object v1
 
     .line 234
+    sget-object v9, LlK0;->c:LlK0;
+
     .line 235
-    sget-object v10, LsH0;->t:LsH0;
-
     .line 236
-    .line 237
-    invoke-static {v1, v9, v10, v6}, LLZj;->v0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    sget-object v10, LlK0;->t:LlK0;
 
+    .line 237
     .line 238
+    invoke-static {v1, v9, v10, v6}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+
     .line 239
     .line 240
-    iget-object v1, v4, LqJ0;->h:Lj30;
-
     .line 241
-    .line 242
-    iget-object v9, v1, Lj30;->e0:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, v4, LjM0;->h:LM50;
 
+    .line 242
     .line 243
+    iget-object v9, v1, LM50;->e0:Ljava/util/concurrent/atomic/AtomicBoolean;
+
     .line 244
+    .line 245
     const/4 v10, 0x0
 
-    .line 245
+    .line 246
     const/4 v11, 0x1
 
-    .line 246
+    .line 247
     invoke-virtual {v9, v10, v11}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
-    .line 247
     .line 248
     .line 249
+    .line 250
     move-result v9
 
-    .line 250
+    .line 251
     if-eqz v9, :cond_7
 
-    .line 251
     .line 252
-    iget-object v9, v1, Lj30;->Y:LXfi;
-
     .line 253
-    .line 254
-    invoke-virtual {v9}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object v9, v1, LM50;->Y:LREi;
 
+    .line 254
     .line 255
+    invoke-virtual {v9}, LREi;->getValue()Ljava/lang/Object;
+
     .line 256
     .line 257
-    move-result-object v9
-
     .line 258
-    check-cast v9, Landroidx/lifecycle/LifecycleOwner;
+    move-result-object v9
 
     .line 259
+    check-cast v9, Landroidx/lifecycle/LifecycleOwner;
+
     .line 260
+    .line 261
     invoke-interface {v9}, Landroidx/lifecycle/LifecycleOwner;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
-    .line 261
     .line 262
     .line 263
+    .line 264
     move-result-object v9
 
-    .line 264
-    iget-object v10, v1, Lj30;->Z:Lk30;
-
     .line 265
-    .line 266
-    invoke-virtual {v9, v10}, Landroidx/lifecycle/Lifecycle;->a(Lila;)V
+    iget-object v10, v1, LM50;->Z:LN50;
 
+    .line 266
     .line 267
+    invoke-virtual {v9, v10}, Landroidx/lifecycle/Lifecycle;->a(Lyxa;)V
+
     .line 268
     .line 269
-    :cond_7
-    invoke-virtual {v6, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 270
+    :cond_7
+    invoke-virtual {v6, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 271
     .line 272
-    invoke-virtual {v5}, LBre;->g()LF06;
-
     .line 273
+    invoke-virtual {v5}, LnJe;->g()LA36;
+
     .line 274
     .line 275
-    move-result-object v1
-
     .line 276
-    new-instance v9, LpJ0;
+    move-result-object v1
 
     .line 277
+    new-instance v9, LiM0;
+
     .line 278
+    .line 279
     const/4 v10, 0x2
 
-    .line 279
-    invoke-direct {v9, v4, v10}, LpJ0;-><init>(LqJ0;I)V
-
     .line 280
+    invoke-direct {v9, v4, v10}, LiM0;-><init>(LjM0;I)V
+
     .line 281
     .line 282
-    invoke-static {v1, v9, v6}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 283
+    invoke-static {v1, v9, v6}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 284
     .line 285
-    invoke-virtual {v5}, LBre;->g()LF06;
-
     .line 286
+    invoke-virtual {v5}, LnJe;->g()LA36;
+
     .line 287
     .line 288
+    .line 289
     move-result-object v1
 
-    .line 289
-    new-instance v5, LpJ0;
-
     .line 290
+    new-instance v5, LiM0;
+
     .line 291
+    .line 292
     const/4 v6, 0x3
 
-    .line 292
-    invoke-direct {v5, v4, v6}, LpJ0;-><init>(LqJ0;I)V
-
     .line 293
+    invoke-direct {v5, v4, v6}, LiM0;-><init>(LjM0;I)V
+
     .line 294
     .line 295
+    .line 296
     invoke-virtual {v1, v5}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 296
     .line 297
     .line 298
-    invoke-virtual {v4}, LqJ0;->a()V
+    .line 299
+    invoke-virtual {v4}, LjM0;->a()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 299
     .line 300
     .line 301
-    invoke-virtual {v7, v8}, LWRg;->h(I)V
-
     .line 302
+    invoke-virtual {v7, v8}, LNdh;->h(I)V
+
     .line 303
     .line 304
-    iget-object v1, p0, Lcom/snap/core/application/BaseApplication;->launchTracker:LiG9;
-
     .line 305
+    iget-object v1, p0, Lcom/snap/core/application/BaseApplication;->launchTracker:LGR9;
+
     .line 306
+    .line 307
     if-eqz v1, :cond_8
 
-    .line 307
     .line 308
-    invoke-virtual {v2}, LiFf;->b()LiFf;
-
     .line 309
+    invoke-virtual {v2}, LGYf;->b()LGYf;
+
     .line 310
     .line 311
-    invoke-virtual {v1, v2}, LU1g;->k(LiFf;)V
-
     .line 312
+    invoke-virtual {v1, v2}, Lmmg;->k(LGYf;)V
+
     .line 313
     .line 314
-    :cond_8
-    sget-object v1, Livd;->t0:Livd;
-
     .line 315
-    .line 316
-    invoke-virtual {v0, v1}, LCw8;->b(Livd;)V
+    :cond_8
+    sget-object v1, LWLd;->t0:LWLd;
 
+    .line 316
     .line 317
+    invoke-virtual {v0, v1}, LkD8;->b(LWLd;)V
+
     .line 318
     .line 319
+    .line 320
     if-eqz v3, :cond_9
 
-    .line 320
     .line 321
-    invoke-interface {v3}, LaW;->a()V
-
     .line 322
+    invoke-interface {v3}, LgY;->a()V
+
     .line 323
     .line 324
+    .line 325
     :cond_9
     :goto_3
     return-void
 
-    .line 325
+    .line 326
     :catchall_1
     move-exception v0
 
-    .line 326
+    .line 327
     goto :goto_5
 
-    .line 327
+    .line 328
     :catchall_2
     move-exception v0
 
-    .line 328
-    :try_start_6
-    sget-object v2, LXRg;->b:Lzhi;
-
     .line 329
+    :try_start_6
+    sget-object v2, LOdh;->b:LtGi;
+
     .line 330
+    .line 331
     if-eqz v2, :cond_a
 
-    .line 331
     .line 332
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
-
     .line 333
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
+
     .line 334
     .line 335
+    .line 336
     :cond_a
     throw v0
 
-    .line 336
-    :goto_4
-    sget-object v1, LXRg;->b:Lzhi;
-
     .line 337
+    :goto_4
+    sget-object v1, LOdh;->b:LtGi;
+
     .line 338
+    .line 339
     if-eqz v1, :cond_b
 
-    .line 339
     .line 340
-    invoke-virtual {v1, v9}, Lzhi;->o(I)V
-
     .line 341
+    invoke-virtual {v1, v9}, LtGi;->o(I)V
+
     .line 342
     .line 343
+    .line 344
     :cond_b
     throw v0
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 344
-    :goto_5
-    sget-object v1, LXRg;->b:Lzhi;
-
     .line 345
+    :goto_5
+    sget-object v1, LOdh;->b:LtGi;
+
     .line 346
+    .line 347
     if-eqz v1, :cond_c
 
-    .line 347
     .line 348
-    invoke-virtual {v1, v8}, Lzhi;->o(I)V
-
     .line 349
+    invoke-virtual {v1, v8}, LtGi;->o(I)V
+
     .line 350
     .line 351
+    .line 352
     :cond_c
     throw v0
 .end method
@@ -1090,7 +1091,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getApplicationCore()LqJ0;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getApplicationCore()LjM0;
 
     .line 5
     .line 6
@@ -1098,7 +1099,7 @@
     move-result-object v0
 
     .line 8
-    iget-object v1, v0, LqJ0;->n:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, LjM0;->n:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 9
     .line 10
@@ -1107,15 +1108,15 @@
     .line 11
     .line 12
     .line 13
-    iget-object v0, v0, LqJ0;->f:LS74;
+    iget-object v0, v0, LjM0;->f:LCc4;
 
     .line 14
     .line 15
-    check-cast v0, LY74;
+    check-cast v0, LKc4;
 
     .line 16
     .line 17
-    iget-object v0, v0, LY74;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, v0, LKc4;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 18
     .line 19
@@ -1130,22 +1131,22 @@
 .method public abstract performInjection()V
 .end method
 
-.method public final setApplicationCore(LqJ0;)V
+.method public final setApplicationCore(LjM0;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/core/application/BaseApplication;->applicationCore:LqJ0;
+    iput-object p1, p0, Lcom/snap/core/application/BaseApplication;->applicationCore:LjM0;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setReleaseManager(LeNe;)V
+.method public final setReleaseManager(La5f;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/core/application/BaseApplication;->releaseManager:LeNe;
+    iput-object p1, p0, Lcom/snap/core/application/BaseApplication;->releaseManager:La5f;
 
     .line 2
     .line 3

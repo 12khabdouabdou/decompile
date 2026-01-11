@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LUU8;
+    proxyClass = Lv29;
     schema = "\'getCommerceSession\':f|m|(): r:\'[0]\',\'updateCommerceSession\':f|m|(r:\'[1]\'): r:\'[0]\'"
     typeReferences = {
         Lcom/snap/modules/commerce_blizzard_logging/ICommerceSession;,

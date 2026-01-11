@@ -2,15 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/looksery/sdk/facedetector/FaceDetector;
+
 
 # instance fields
-.field public final a:Ljava/util/Set;
+.field public final a:Lma7;
 
-.field public final b:J
+.field public final b:LHP;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;J)V
+.method public constructor <init>(Lma7;LHP;)V
     .locals 0
 
     .line 1
@@ -19,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LKdc;->a:Ljava/util/Set;
+    iput-object p1, p0, LKdc;->a:Lma7;
 
     .line 5
     .line 6
-    iput-wide p2, p0, LKdc;->b:J
+    iput-object p2, p0, LKdc;->b:LHP;
 
     .line 7
     .line 8
@@ -32,96 +35,217 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final close()V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    iget-object v0, p0, LKdc;->a:Lma7;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    invoke-interface {v0}, Ljava/io/Closeable;->close()V
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LKdc;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    return-void
+.end method
 
+.method public final detectFacesOnImage(IILjava/nio/ByteBuffer;)[F
+    .locals 5
+
+    .line 1
+    new-instance v0, LuN7;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p3, p1, p2}, LuN7;-><init>(Ljava/nio/ByteBuffer;II)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p1, p0, LKdc;->a:Lma7;
+
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    invoke-interface {p1, v0}, Lma7;->e0(LQgd;)Ljava/util/List;
 
     .line 9
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, LKdc;
+    move-result-object p1
 
     .line 12
+    check-cast p1, Ljava/lang/Iterable;
+
     .line 13
-    iget-object v1, p1, LKdc;->a:Ljava/util/Set;
-
     .line 14
+    new-instance p2, Ljava/util/ArrayList;
+
     .line 15
-    iget-object v3, p0, LKdc;->a:Ljava/util/Set;
-
     .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
 
+    .line 17
     .line 18
     .line 19
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
     .line 20
-    move-result v1
-
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
+    move-result-object p1
+
     .line 23
-    return v2
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 24
-    :cond_2
-    iget-wide v3, p0, LKdc;->b:J
-
     .line 25
     .line 26
-    iget-wide v5, p1, LKdc;->b:J
+    move-result p3
 
     .line 27
+    if-eqz p3, :cond_0
+
     .line 28
-    cmp-long p1, v3, v5
-
     .line 29
-    .line 30
-    if-eqz p1, :cond_3
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 30
     .line 31
     .line 32
-    return v2
+    move-result-object p3
 
     .line 33
-    :cond_3
-    return v0
+    check-cast p3, Ly97;
+
+    .line 34
+    .line 35
+    iget v0, p3, Ly97;->a:F
+
+    .line 36
+    .line 37
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    iget v1, p3, Ly97;->b:F
+
+    .line 42
+    .line 43
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v1
+
+    .line 47
+    iget v2, p3, Ly97;->c:F
+
+    .line 48
+    .line 49
+    invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v2
+
+    .line 53
+    iget p3, p3, Ly97;->d:F
+
+    .line 54
+    .line 55
+    invoke-static {p3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p3
+
+    .line 59
+    const/4 v3, 0x4
+
+    .line 60
+    new-array v3, v3, [Ljava/lang/Float;
+
+    .line 61
+    .line 62
+    const/4 v4, 0x0
+
+    .line 63
+    aput-object v0, v3, v4
+
+    .line 64
+    .line 65
+    const/4 v0, 0x1
+
+    .line 66
+    aput-object v1, v3, v0
+
+    .line 67
+    .line 68
+    const/4 v0, 0x2
+
+    .line 69
+    aput-object v2, v3, v0
+
+    .line 70
+    .line 71
+    const/4 v0, 0x3
+
+    .line 72
+    aput-object p3, v3, v0
+
+    .line 73
+    .line 74
+    invoke-static {v3}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object p3
+
+    .line 78
+    check-cast p3, Ljava/lang/Iterable;
+
+    .line 79
+    .line 80
+    invoke-static {p2, p3}, Lsh3;->j3(Ljava/util/Collection;Ljava/lang/Iterable;)V
+
+    .line 81
+    .line 82
+    .line 83
+    goto :goto_0
+
+    .line 84
+    :cond_0
+    invoke-static {p2}, Llh3;->q4(Ljava/util/Collection;)[F
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object p1
+
+    .line 88
+    return-object p1
 .end method
 
-.method public final hashCode()I
-    .locals 6
+.method public final isOperational()Z
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LKdc;->a:Ljava/util/Set;
+    iget-object v0, p0, LKdc;->a:Lma7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {v0}, Lma7;->q0()Z
 
     .line 4
     .line 5
@@ -129,94 +253,23 @@
     move-result v0
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    new-instance v1, LEP$j;
 
     .line 8
     .line 9
-    const/16 v1, 0x20
+    invoke-direct {v1, v0}, LEP$j;-><init>(Z)V
 
     .line 10
     .line 11
-    iget-wide v2, p0, LKdc;->b:J
-
     .line 12
+    iget-object v2, p0, LKdc;->b:LHP;
+
     .line 13
-    ushr-long v4, v2, v1
-
     .line 14
+    invoke-interface {v2, v1}, LHP;->a(LEP;)V
+
     .line 15
-    xor-long/2addr v2, v4
-
     .line 16
-    long-to-int v1, v2
-
     .line 17
-    add-int/2addr v0, v1
-
-    .line 18
     return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "MutedFriends(mutedFriends="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LKdc;->a:Ljava/util/Set;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", version="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-wide v1, p0, LKdc;->b:J
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
-
-    .line 32
-    return-object v0
 .end method

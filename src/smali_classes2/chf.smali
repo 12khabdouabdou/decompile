@@ -1,373 +1,194 @@
-.class public final Lchf;
-.super LPX9;
+.class public abstract synthetic Lchf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic b:I
+# static fields
+.field public static final synthetic a:[I
 
-.field public c:F
-
-.field public final d:F
-
-.field public final synthetic e:Lfhf;
-
-.field public final f:Ljava/lang/Object;
+.field public static final synthetic b:[I
 
 
 # direct methods
-.method public constructor <init>(Lfhf;FF)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lchf;->b:I
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lmfe;->values()[Lmfe;
 
     .line 2
-    iput-object p1, p0, Lchf;->e:Lfhf;
-
     .line 3
-    new-instance p1, Landroid/graphics/RectF;
-
-    invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
-
-    iput-object p1, p0, Lchf;->f:Ljava/lang/Object;
-
     .line 4
-    iput p2, p0, Lchf;->c:F
+    move-result-object v0
 
     .line 5
-    iput p3, p0, Lchf;->d:F
-
-    return-void
-.end method
-
-.method public constructor <init>(Lfhf;FFLandroid/graphics/Path;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lchf;->b:I
+    array-length v0, v0
 
     .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-array v0, v0, [I
 
     .line 7
-    iput-object p1, p0, Lchf;->e:Lfhf;
-
     .line 8
-    iput p2, p0, Lchf;->c:F
+    sput-object v0, Lchf;->b:[I
 
     .line 9
-    iput p3, p0, Lchf;->d:F
-
     .line 10
-    iput-object p4, p0, Lchf;->f:Ljava/lang/Object;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c(LSgf;)Z
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lchf;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    instance-of v0, p1, LTgf;
-
-    .line 7
-    .line 8
     const/4 v1, 0x1
 
-    .line 9
-    if-eqz v0, :cond_2
-
-    .line 10
     .line 11
-    move-object v0, p1
+    const/4 v2, 0x3
 
     .line 12
-    check-cast v0, LTgf;
+    :try_start_0
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 13
     .line 14
-    iget-object p1, p1, LHgf;->a:LDEd;
+    :catch_0
+    const/4 v0, 0x2
 
     .line 15
+    :try_start_1
+    sget-object v3, Lchf;->b:[I
+
     .line 16
-    iget-object v0, v0, LTgf;->n:Ljava/lang/String;
-
     .line 17
-    .line 18
-    invoke-virtual {p1, v0}, LDEd;->g(Ljava/lang/String;)LHgf;
+    aput v0, v3, v0
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 18
     .line 19
+    :catch_1
+    :try_start_2
+    sget-object v3, Lchf;->b:[I
+
     .line 20
     .line 21
-    move-result-object p1
+    aput v2, v3, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 22
-    const/4 v0, 0x0
-
     .line 23
-    if-nez p1, :cond_0
+    :catch_2
+    const/4 v3, 0x4
 
     .line 24
-    .line 25
-    :goto_0
-    const/4 v1, 0x0
+    :try_start_3
+    sget-object v4, Lchf;->b:[I
 
+    .line 25
     .line 26
-    goto :goto_1
+    const/4 v5, 0x0
 
     .line 27
-    :cond_0
-    check-cast p1, Lrgf;
+    aput v3, v4, v5
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 28
     .line 29
-    new-instance v2, Loy7;
+    :catch_3
+    invoke-static {}, Landroid/widget/ImageView$ScaleType;->values()[Landroid/widget/ImageView$ScaleType;
 
     .line 30
     .line 31
-    iget-object v3, p1, Lrgf;->o:Lok1;
-
     .line 32
+    move-result-object v4
+
     .line 33
-    invoke-direct {v2, v3}, Loy7;-><init>(Lok1;)V
+    array-length v4, v4
 
     .line 34
+    new-array v4, v4, [I
+
     .line 35
     .line 36
-    iget-object v2, v2, Loy7;->c:Ljava/lang/Object;
+    sput-object v4, Lchf;->a:[I
 
     .line 37
     .line 38
-    check-cast v2, Landroid/graphics/Path;
+    :try_start_4
+    sget-object v5, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
     .line 39
     .line 40
-    iget-object p1, p1, Lhgf;->n:Landroid/graphics/Matrix;
+    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
 
     .line 41
     .line 42
-    if-eqz p1, :cond_1
-
     .line 43
+    move-result v5
+
     .line 44
-    invoke-virtual {v2, p1}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
+    aput v1, v4, v5
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
     .line 45
     .line 46
+    :catch_4
+    :try_start_5
+    sget-object v1, Lchf;->a:[I
+
     .line 47
-    :cond_1
-    new-instance p1, Landroid/graphics/RectF;
-
     .line 48
-    .line 49
-    invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
+    sget-object v4, Landroid/widget/ImageView$ScaleType;->CENTER_INSIDE:Landroid/widget/ImageView$ScaleType;
 
+    .line 49
     .line 50
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
     .line 51
     .line 52
-    invoke-virtual {v2, p1, v1}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
-
     .line 53
+    move-result v4
+
     .line 54
+    aput v0, v1, v4
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
     .line 55
-    iget-object v1, p0, Lchf;->f:Ljava/lang/Object;
-
     .line 56
+    :catch_5
+    :try_start_6
+    sget-object v0, Lchf;->a:[I
+
     .line 57
-    check-cast v1, Landroid/graphics/RectF;
-
     .line 58
-    .line 59
-    invoke-virtual {v1, p1}, Landroid/graphics/RectF;->union(Landroid/graphics/RectF;)V
+    sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
+    .line 59
     .line 60
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 61
     .line 62
-    goto :goto_0
-
     .line 63
-    :cond_2
-    :goto_1
-    return v1
-
-    .line 64
-    :pswitch_0
-    instance-of p1, p1, LTgf;
-
-    .line 65
-    .line 66
-    xor-int/lit8 p1, p1, 0x1
-
-    .line 67
-    .line 68
-    return p1
-
-    .line 69
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final g(Ljava/lang/String;)V
-    .locals 9
-
-    .line 1
-    iget v0, p0, Lchf;->b:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lchf;->e:Lfhf;
-
-    .line 7
-    .line 8
-    invoke-virtual {v0}, Lfhf;->f0()Z
-
-    .line 9
-    .line 10
-    .line 11
     move-result v1
 
-    .line 12
-    if-eqz v1, :cond_0
-
-    .line 13
-    .line 14
-    new-instance v1, Landroid/graphics/Rect;
-
-    .line 15
-    .line 16
-    invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
-
-    .line 17
-    .line 18
-    .line 19
-    iget-object v2, v0, Lfhf;->Y:Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    check-cast v2, Ldhf;
-
-    .line 22
-    .line 23
-    iget-object v2, v2, Ldhf;->t:Landroid/graphics/Paint;
-
-    .line 24
-    .line 25
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v3
-
-    .line 29
-    const/4 v4, 0x0
-
-    .line 30
-    invoke-virtual {v2, p1, v4, v3, v1}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
-
-    .line 31
-    .line 32
-    .line 33
-    new-instance v2, Landroid/graphics/RectF;
-
-    .line 34
-    .line 35
-    invoke-direct {v2, v1}, Landroid/graphics/RectF;-><init>(Landroid/graphics/Rect;)V
-
-    .line 36
-    .line 37
-    .line 38
-    iget v1, p0, Lchf;->c:F
-
-    .line 39
-    .line 40
-    iget v3, p0, Lchf;->d:F
-
-    .line 41
-    .line 42
-    invoke-virtual {v2, v1, v3}, Landroid/graphics/RectF;->offset(FF)V
-
-    .line 43
-    .line 44
-    .line 45
-    iget-object v1, p0, Lchf;->f:Ljava/lang/Object;
-
-    .line 46
-    .line 47
-    check-cast v1, Landroid/graphics/RectF;
-
-    .line 48
-    .line 49
-    invoke-virtual {v1, v2}, Landroid/graphics/RectF;->union(Landroid/graphics/RectF;)V
-
-    .line 50
-    .line 51
-    .line 52
-    :cond_0
-    iget v1, p0, Lchf;->c:F
-
-    .line 53
-    .line 54
-    iget-object v0, v0, Lfhf;->Y:Ljava/lang/Object;
-
-    .line 55
-    .line 56
-    check-cast v0, Ldhf;
-
-    .line 57
-    .line 58
-    iget-object v0, v0, Ldhf;->t:Landroid/graphics/Paint;
-
-    .line 59
-    .line 60
-    invoke-virtual {v0, p1}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
-
-    .line 61
-    .line 62
-    .line 63
-    move-result p1
-
     .line 64
-    add-float/2addr p1, v1
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
     .line 65
-    iput p1, p0, Lchf;->c:F
-
     .line 66
-    .line 67
-    return-void
+    :catch_6
+    :try_start_7
+    sget-object v0, Lchf;->a:[I
 
+    .line 67
     .line 68
-    :pswitch_0
-    iget-object v0, p0, Lchf;->e:Lfhf;
+    sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_START:Landroid/widget/ImageView$ScaleType;
 
     .line 69
     .line 70
-    invoke-virtual {v0}, Lfhf;->f0()Z
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 71
     .line 72
@@ -375,115 +196,121 @@
     move-result v1
 
     .line 74
-    if-eqz v1, :cond_1
+    aput v3, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
     .line 75
     .line 76
-    new-instance v8, Landroid/graphics/Path;
+    :catch_7
+    :try_start_8
+    sget-object v0, Lchf;->a:[I
 
     .line 77
     .line 78
-    invoke-direct {v8}, Landroid/graphics/Path;-><init>()V
+    sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_END:Landroid/widget/ImageView$ScaleType;
 
     .line 79
     .line 80
-    .line 81
-    iget-object v1, v0, Lfhf;->Y:Ljava/lang/Object;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 81
     .line 82
     .line 83
-    check-cast v1, Ldhf;
+    move-result v1
 
     .line 84
+    const/4 v2, 0x5
+
     .line 85
-    iget-object v2, v1, Ldhf;->t:Landroid/graphics/Paint;
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
     .line 86
     .line 87
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
+    :catch_8
+    :try_start_9
+    sget-object v0, Lchf;->a:[I
 
     .line 88
     .line 89
-    .line 90
-    move-result v5
+    sget-object v1, Landroid/widget/ImageView$ScaleType;->FIT_XY:Landroid/widget/ImageView$ScaleType;
 
+    .line 90
     .line 91
-    iget v6, p0, Lchf;->c:F
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 92
     .line 93
-    iget v7, p0, Lchf;->d:F
-
     .line 94
+    move-result v1
+
     .line 95
-    const/4 v4, 0x0
+    const/4 v2, 0x6
 
     .line 96
-    move-object v3, p1
+    aput v2, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
 
     .line 97
-    invoke-virtual/range {v2 .. v8}, Landroid/graphics/Paint;->getTextPath(Ljava/lang/String;IIFFLandroid/graphics/Path;)V
-
     .line 98
+    :catch_9
+    :try_start_a
+    sget-object v0, Lchf;->a:[I
+
     .line 99
     .line 100
-    iget-object p1, p0, Lchf;->f:Ljava/lang/Object;
+    sget-object v1, Landroid/widget/ImageView$ScaleType;->CENTER:Landroid/widget/ImageView$ScaleType;
 
     .line 101
     .line 102
-    check-cast p1, Landroid/graphics/Path;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 103
     .line 104
-    invoke-virtual {p1, v8}, Landroid/graphics/Path;->addPath(Landroid/graphics/Path;)V
-
     .line 105
+    move-result v1
+
     .line 106
+    const/4 v2, 0x7
+
     .line 107
-    goto :goto_0
+    aput v2, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
 
     .line 108
-    :cond_1
-    move-object v3, p1
-
     .line 109
-    :goto_0
-    iget p1, p0, Lchf;->c:F
+    :catch_a
+    :try_start_b
+    sget-object v0, Lchf;->a:[I
 
     .line 110
     .line 111
-    iget-object v0, v0, Lfhf;->Y:Ljava/lang/Object;
+    sget-object v1, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
     .line 112
     .line 113
-    check-cast v0, Ldhf;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 114
     .line 115
-    iget-object v0, v0, Ldhf;->t:Landroid/graphics/Paint;
-
     .line 116
+    move-result v1
+
     .line 117
-    invoke-virtual {v0, v3}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
+    const/16 v2, 0x8
 
     .line 118
     .line 119
+    aput v2, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
     .line 120
-    move-result v0
-
     .line 121
-    add-float/2addr v0, p1
-
-    .line 122
-    iput v0, p0, Lchf;->c:F
-
-    .line 123
-    .line 124
+    :catch_b
     return-void
-
-    .line 125
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

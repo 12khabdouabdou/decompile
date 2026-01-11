@@ -2,29 +2,28 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/io/FilenameFilter;
 
+# instance fields
+.field public final a:LHO4;
 
-# static fields
-.field public static final a:LXlc;
+.field public final b:LHO4;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(LHO4;LHO4;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LXlc;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, LXlc;->a:LHO4;
+
     .line 5
     .line 6
-    sput-object v0, LXlc;->a:LXlc;
+    iput-object p2, p0, LXlc;->b:LHO4;
 
     .line 7
     .line 8
@@ -33,24 +32,26 @@
 
 
 # virtual methods
-.method public final accept(Ljava/io/File;Ljava/lang/String;)Z
-    .locals 1
+.method public final a(LMs7;)LnDa;
+    .locals 3
 
     .line 1
-    const/4 p1, 0x0
+    new-instance v0, LnDa;
 
     .line 2
-    const-string v0, "_default"
-
     .line 3
-    .line 4
-    invoke-static {p2, v0, p1}, LZ4i;->d1(Ljava/lang/String;Ljava/lang/String;Z)Z
+    iget-object v1, p0, LXlc;->a:LHO4;
 
+    .line 4
     .line 5
+    iget-object v2, p0, LXlc;->b:LHO4;
+
     .line 6
     .line 7
-    move-result p1
+    invoke-direct {v0, p1, v1, v2}, LnDa;-><init>(LMs7;LHO4;LHO4;)V
 
     .line 8
-    return p1
+    .line 9
+    .line 10
+    return-object v0
 .end method

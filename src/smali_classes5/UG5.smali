@@ -1,105 +1,124 @@
 .class public final LUG5;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LLl9;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/subjects/Subject;
+.field public final synthetic a:I
 
-.field public final b:LSF5;
-
-.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+.field public final synthetic b:LFG5;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
+.method public synthetic constructor <init>(LFG5;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LUG5;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object p1, p0, LUG5;->b:LFG5;
 
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
+    const/4 p1, 0x1
 
-    .line 8
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/Subject;->b1()Lio/reactivex/rxjava3/subjects/Subject;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    iput-object v0, p0, LUG5;->a:Lio/reactivex/rxjava3/subjects/Subject;
-
-    .line 13
-    .line 14
-    new-instance v1, LSF5;
-
-    .line 15
-    .line 16
-    const/4 v2, 0x4
-
-    .line 17
-    invoke-direct {v1, v2, p0}, LSF5;-><init>(ILjava/lang/Object;)V
-
-    .line 18
-    .line 19
-    .line 20
-    iput-object v1, p0, LUG5;->b:LSF5;
-
-    .line 21
-    .line 22
-    sget-object v1, LWF2;->y0:LWF2;
-
-    .line 23
-    .line 24
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 25
-    .line 26
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 27
-    .line 28
-    .line 29
-    iput-object v2, p0, LUG5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 30
-    .line 31
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LUG5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    iget v0, p0, LUG5;->a:I
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public final f()Lio/reactivex/rxjava3/functions/Consumer;
-    .locals 1
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Lgba;
 
-    .line 1
-    iget-object v0, p0, LUG5;->b:LSF5;
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Lgba;->b()LY79;
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    iget-object v0, p0, LUG5;->b:LFG5;
+
+    .line 13
+    .line 14
+    iget-object v0, v0, LFG5;->b:Ld2a;
+
+    .line 15
+    .line 16
+    iget-object v0, v0, Ld2a;->a:LY79;
+
+    .line 17
+    .line 18
+    invoke-static {p1, v0}, LiPk;->e(LY79;LY79;)LY79;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    return-object p1
+
+    .line 23
+    :pswitch_0
+    check-cast p1, LyY9;
+
+    .line 24
+    .line 25
+    invoke-virtual {p1}, LyY9;->b()LY79;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    iget-object v0, p0, LUG5;->b:LFG5;
+
+    .line 30
+    .line 31
+    iget-object v0, v0, LFG5;->b:Ld2a;
+
+    .line 32
+    .line 33
+    iget-object v0, v0, Ld2a;->a:LY79;
+
+    .line 34
+    .line 35
+    invoke-static {p1, v0}, LiPk;->e(LY79;LY79;)LY79;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p1
+
+    .line 39
+    return-object p1
+
+    .line 40
+    nop
+
+    .line 41
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

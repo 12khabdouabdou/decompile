@@ -1,35 +1,29 @@
-.class public final LPuk;
+.class public LPuk;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static f:I = 0x0
+
+.field public static g:I = 0x1
+
+
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public a:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public b:Ljava/lang/String;
 
-.field public final c:Ljava/lang/String;
+.field public c:Ljava/lang/Boolean;
 
-.field public final d:Ljava/lang/String;
+.field public d:Ljava/lang/String;
 
-.field public final e:Lpck;
-
-.field public final f:Ljava/lang/String;
-
-.field public final g:Ljava/lang/Boolean;
-
-.field public final h:Ljava/lang/Boolean;
-
-.field public final i:Ljava/lang/Boolean;
-
-.field public final j:Ljava/lang/Integer;
-
-.field public final k:Ljava/lang/Integer;
+.field public e:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(LV7c;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,137 +31,192 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p1, LV7c;->b:Ljava/lang/Object;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final a(Ljava/lang/String;)V
+    .locals 3
+
+    .line 1
+    sget v0, LPuk;->g:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v1, v0, 0xf
+
+    .line 4
     .line 5
-    .line 6
-    check-cast v0, Ljava/lang/String;
+    xor-int/lit8 v0, v0, 0xf
 
+    .line 6
     .line 7
+    or-int/2addr v0, v1
+
     .line 8
-    iput-object v0, p0, LPuk;->a:Ljava/lang/String;
+    and-int v2, v1, v0
 
     .line 9
     .line 10
-    iget-object v0, p1, LV7c;->c:Ljava/lang/Object;
+    or-int/2addr v0, v1
 
     .line 11
+    add-int/2addr v2, v0
+
     .line 12
-    check-cast v0, Ljava/lang/String;
+    rem-int/lit16 v0, v2, 0x80
 
     .line 13
     .line 14
-    iput-object v0, p0, LPuk;->b:Ljava/lang/String;
+    sput v0, LPuk;->f:I
 
     .line 15
     .line 16
-    iget-object v0, p1, LV7c;->t:Ljava/lang/Object;
+    rem-int/lit8 v2, v2, 0x2
 
     .line 17
     .line 18
-    check-cast v0, Ljava/lang/String;
+    iput-object p1, p0, LPuk;->b:Ljava/lang/String;
 
     .line 19
     .line 20
-    iput-object v0, p0, LPuk;->c:Ljava/lang/String;
+    if-nez v2, :cond_0
 
     .line 21
     .line 22
-    iget-object v0, p1, LV7c;->X:Ljava/lang/Object;
+    return-void
+
+    .line 23
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 24
+    throw p1
+.end method
+
+.method public final b(Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    sget v0, LPuk;->g:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v1, v0, 0x77
+
+    .line 4
+    .line 5
+    xor-int/lit8 v0, v0, 0x77
+
+    .line 6
+    .line 7
+    or-int/2addr v0, v1
+
+    .line 8
+    neg-int v0, v0
+
+    .line 9
+    neg-int v0, v0
+
+    .line 10
+    not-int v0, v0
+
+    .line 11
+    sub-int/2addr v1, v0
+
+    .line 12
+    add-int/lit8 v1, v1, -0x1
+
+    .line 13
+    .line 14
+    rem-int/lit16 v0, v1, 0x80
+
+    .line 15
+    .line 16
+    sput v0, LPuk;->f:I
+
+    .line 17
+    .line 18
+    rem-int/lit8 v1, v1, 0x2
+
+    .line 19
+    .line 20
+    iput-object p1, p0, LPuk;->a:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    if-nez v1, :cond_1
 
     .line 23
     .line 24
-    check-cast v0, Ljava/lang/String;
+    and-int/lit8 p1, v0, -0x46
 
     .line 25
     .line 26
-    iput-object v0, p0, LPuk;->d:Ljava/lang/String;
+    not-int v1, v0
 
     .line 27
-    .line 28
-    iget-object v0, p1, LV7c;->Y:Ljava/lang/Object;
+    and-int/lit8 v1, v1, 0x45
 
+    .line 28
     .line 29
+    or-int/2addr p1, v1
+
     .line 30
-    check-cast v0, Lpck;
+    and-int/lit8 v0, v0, 0x45
 
     .line 31
     .line 32
-    iput-object v0, p0, LPuk;->e:Lpck;
+    shl-int/lit8 v0, v0, 0x1
 
     .line 33
     .line 34
-    iget-object v0, p1, LV7c;->Z:Ljava/lang/Object;
+    xor-int v1, p1, v0
 
     .line 35
     .line 36
-    check-cast v0, Ljava/lang/String;
+    and-int/2addr p1, v0
 
     .line 37
-    .line 38
-    iput-object v0, p0, LPuk;->f:Ljava/lang/String;
+    shl-int/lit8 p1, p1, 0x1
 
+    .line 38
     .line 39
+    add-int/2addr v1, p1
+
     .line 40
-    iget-object v0, p1, LV7c;->e0:Ljava/lang/Object;
+    rem-int/lit16 p1, v1, 0x80
 
     .line 41
     .line 42
-    check-cast v0, Ljava/lang/Boolean;
+    sput p1, LPuk;->g:I
 
     .line 43
     .line 44
-    iput-object v0, p0, LPuk;->g:Ljava/lang/Boolean;
+    rem-int/lit8 v1, v1, 0x2
 
     .line 45
     .line 46
-    iget-object v0, p1, LV7c;->f0:Ljava/lang/Object;
+    if-nez v1, :cond_0
 
     .line 47
     .line 48
-    check-cast v0, Ljava/lang/Boolean;
+    const/16 p1, 0x44
 
     .line 49
     .line 50
-    iput-object v0, p0, LPuk;->h:Ljava/lang/Boolean;
+    div-int/lit8 p1, p1, 0x0
 
     .line 51
     .line 52
-    iget-object v0, p1, LV7c;->g0:Ljava/lang/Object;
+    :cond_0
+    return-void
 
     .line 53
+    :cond_1
+    const/4 p1, 0x0
+
     .line 54
-    check-cast v0, Ljava/lang/Boolean;
-
-    .line 55
-    .line 56
-    iput-object v0, p0, LPuk;->i:Ljava/lang/Boolean;
-
-    .line 57
-    .line 58
-    iget-object v0, p1, LV7c;->h0:Ljava/lang/Object;
-
-    .line 59
-    .line 60
-    check-cast v0, Ljava/lang/Integer;
-
-    .line 61
-    .line 62
-    iput-object v0, p0, LPuk;->j:Ljava/lang/Integer;
-
-    .line 63
-    .line 64
-    iget-object p1, p1, LV7c;->i0:Ljava/lang/Object;
-
-    .line 65
-    .line 66
-    check-cast p1, Ljava/lang/Integer;
-
-    .line 67
-    .line 68
-    iput-object p1, p0, LPuk;->k:Ljava/lang/Integer;
-
-    .line 69
-    .line 70
-    return-void
+    throw p1
 .end method

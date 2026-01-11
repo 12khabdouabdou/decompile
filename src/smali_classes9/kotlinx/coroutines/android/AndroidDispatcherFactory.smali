@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LPRa;
+.implements Lz4b;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
 
 # virtual methods
-.method public final a(Ljava/util/List;)LORa;
+.method public final a(Ljava/util/List;)Ly4b;
     .locals 2
 
     .line 1
@@ -37,11 +37,11 @@
 
     .line 6
     .line 7
-    new-instance v0, LPH8;
+    new-instance v0, LfP8;
 
     .line 8
     .line 9
-    invoke-static {p1}, LQH8;->a(Landroid/os/Looper;)Landroid/os/Handler;
+    invoke-static {p1}, LgP8;->a(Landroid/os/Looper;)Landroid/os/Handler;
 
     .line 10
     .line 11
@@ -52,7 +52,7 @@
     const/4 v1, 0x0
 
     .line 14
-    invoke-direct {v0, p1, v1}, LPH8;-><init>(Landroid/os/Handler;Z)V
+    invoke-direct {v0, p1, v1}, LfP8;-><init>(Landroid/os/Handler;Z)V
 
     .line 15
     .line 16

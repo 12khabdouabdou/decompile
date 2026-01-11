@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final b:LhE7;
+.field public final b:LF01;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;LhE7;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;LF01;)V
     .locals 0
 
     .line 1
@@ -31,7 +31,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableLift;->b:LhE7;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableLift;->b:LF01;
 
     .line 5
     .line 6
@@ -40,24 +40,24 @@
 
 
 # virtual methods
-.method public final K0(Lio/reactivex/rxjava3/core/Observer;)V
+.method public final N0(Lio/reactivex/rxjava3/core/Observer;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableLift;->b:LhE7;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableLift;->b:LF01;
 
     .line 2
     .line 3
     :try_start_0
-    new-instance v1, LiE7;
+    new-instance v1, LJJ7;
 
     .line 4
     .line 5
-    iget-object v2, v0, LhE7;->a:LrE9;
+    iget-object v2, v0, LF01;->b:LJP9;
 
     .line 6
     .line 7
-    invoke-direct {v1, p1, v2}, LiE7;-><init>(Lio/reactivex/rxjava3/core/Observer;Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {v1, p1, v2}, LJJ7;-><init>(Lio/reactivex/rxjava3/core/Observer;Lkotlin/jvm/functions/Function1;)V
 
     .line 8
     .line 9

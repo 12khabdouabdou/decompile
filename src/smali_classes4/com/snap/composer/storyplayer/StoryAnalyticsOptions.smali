@@ -1,14 +1,14 @@
 .class public final Lcom/snap/composer/storyplayer/StoryAnalyticsOptions;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'storyType\':s?,\'storyTypeSpecific\':s?,\'sourceType\':s?,\'contentViewSource\':s?,\'mapStoryType\':s?,\'mapSourceType\':s?,\'storyId\':s?,\'placeSessionId\':d@?,\'mapSessionId\':d@?,\'playbackSnapIdIndexes\':a?<r:\'[0]\'>,\'pinId\':s?,\'pageType\':r?<e>:\'[1]\',\'feedPageSection\':r?<e>:\'[2]\',\'entryType\':r?<e>:\'[3]\',\'viewLocation\':r?<e>:\'[4]\',\'processingStartTimestamp\':d@?,\'searchSessionId\':s?,\'searchQueryId\':d@?"
     typeReferences = {
-        Lzyd;,
+        LKPd;,
         Lcom/snap/composer/storyplayer/StoryPlayerPageType;,
         Lcom/snap/composer/storyplayer/FeedPageSection;,
         Lcom/snap/composer/storyplayer/StoryPlayerEntryType;,
@@ -40,7 +40,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lzyd;",
+            "LKPd;",
             ">;"
         }
     .end annotation
@@ -144,7 +144,7 @@
             "Ljava/lang/Double;",
             "Ljava/lang/Double;",
             "Ljava/util/List<",
-            "Lzyd;",
+            "LKPd;",
             ">;",
             "Ljava/lang/String;",
             "Lcom/snap/composer/storyplayer/StoryPlayerPageType;",

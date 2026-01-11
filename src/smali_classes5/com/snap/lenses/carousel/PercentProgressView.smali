@@ -69,7 +69,7 @@
     invoke-virtual {p0, v1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 8
-    sget-object v2, Lqve;->c:[I
+    sget-object v2, LZMe;->c:[I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -128,11 +128,11 @@
     invoke-virtual {v0, p1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 16
-    new-instance p1, LeW;
+    new-instance p1, LkY;
 
     const/16 p3, 0x15
 
-    invoke-direct {p1, p3, p0}, LeW;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p3, p0}, LkY;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {v0, p1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 

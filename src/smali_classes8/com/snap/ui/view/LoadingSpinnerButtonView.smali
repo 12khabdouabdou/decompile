@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private currentState:LHua;
+.field private currentState:LRGa;
 
 .field private final mCheckedBackgroundStrokeColor:I
 
@@ -16,10 +16,10 @@
 
 .field private final mCheckedIconSize:I
 
-.field private final mCheckedIconStub:LLKj;
+.field private final mCheckedIconStub:Ltak;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "LLKj;"
+            "Ltak;"
         }
     .end annotation
 .end field
@@ -32,10 +32,10 @@
 
 .field private final mMinWidth:I
 
-.field private final mSpinnerStub:LLKj;
+.field private final mSpinnerStub:Ltak;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "LLKj;"
+            "Ltak;"
         }
     .end annotation
 .end field
@@ -74,7 +74,7 @@
 
     const/4 v1, 0x2
 
-    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
 
     return-void
 .end method
@@ -86,12 +86,12 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    sget-object v0, LHua;->a:LHua;
+    sget-object v0, LRGa;->a:LRGa;
 
-    iput-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->currentState:LHua;
+    iput-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->currentState:LRGa;
 
     .line 4
-    sget-object v0, LCve;->c:[I
+    sget-object v0, LlNe;->c:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -121,7 +121,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f06022d
+    const v1, 0x7f060285
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -141,7 +141,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f060208
+    const v1, 0x7f060260
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -161,9 +161,9 @@
 
     move-result-object v0
 
-    const v1, 0x7f0404b8
+    const v1, 0x7f040545
 
-    invoke-static {v0, v1}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v0, v1}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     move-result v0
 
@@ -181,7 +181,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v1}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {p1, v1}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     move-result p1
 
@@ -196,7 +196,7 @@
 
     const/4 p1, 0x2
 
-    const v0, 0x7f08088c
+    const v0, 0x7f08090c
 
     .line 15
     invoke-virtual {p2, p1, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -207,7 +207,7 @@
 
     const/16 p1, 0xd
 
-    const v0, 0x7f0805b9
+    const v0, 0x7f080628
 
     .line 16
     invoke-virtual {p2, p1, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -221,7 +221,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f06022e
+    const v0, 0x7f060286
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -241,7 +241,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f06020a
+    const v0, 0x7f060262
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -258,7 +258,7 @@
 
     const/16 p1, 0xf
 
-    const v0, 0x7f07079a
+    const v0, 0x7f0707c7
 
     .line 21
     invoke-virtual {p2, p1, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -287,7 +287,7 @@
 
     const/16 p1, 0xa
 
-    const v0, 0x7f0712ff
+    const v0, 0x7f07132f
 
     .line 24
     invoke-virtual {p2, p1, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -298,7 +298,7 @@
 
     const/16 v0, 0xe
 
-    const v1, 0x7f070508
+    const v1, 0x7f07052f
 
     .line 25
     invoke-virtual {p2, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -318,7 +318,7 @@
 
     const/4 v1, 0x7
 
-    const v3, 0x7f070954
+    const v3, 0x7f07097a
 
     .line 27
     invoke-virtual {p2, v1, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -355,7 +355,7 @@
 
     check-cast p2, Landroid/view/LayoutInflater;
 
-    const v4, 0x7f0e03cd
+    const v4, 0x7f0e03f0
 
     .line 32
     invoke-virtual {p2, v4, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -364,7 +364,7 @@
 
     iput-object p2, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mView:Landroid/view/View;
 
-    const v4, 0x7f0b0c42
+    const v4, 0x7f0b0d66
 
     .line 33
     invoke-virtual {p2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -375,7 +375,7 @@
 
     iput-object v4, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mUncheckedIcon:Landroid/widget/ImageView;
 
-    const v5, 0x7f0b0c41
+    const v5, 0x7f0b0d65
 
     .line 34
     invoke-virtual {p2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -387,9 +387,9 @@
     iput-object v5, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mText:Landroid/widget/TextView;
 
     .line 35
-    new-instance v6, LLKj;
+    new-instance v6, Ltak;
 
-    const v7, 0x7f0b0c3e
+    const v7, 0x7f0b0d62
 
     invoke-virtual {p0, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -397,14 +397,14 @@
 
     check-cast v7, Landroid/view/ViewStub;
 
-    invoke-direct {v6, v7}, LLKj;-><init>(Landroid/view/ViewStub;)V
+    invoke-direct {v6, v7}, Ltak;-><init>(Landroid/view/ViewStub;)V
 
-    iput-object v6, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:LLKj;
+    iput-object v6, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:Ltak;
 
     .line 36
-    new-instance v7, LLKj;
+    new-instance v7, Ltak;
 
-    const v8, 0x7f0b0c40
+    const v8, 0x7f0b0d64
 
     invoke-virtual {p0, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -412,9 +412,9 @@
 
     check-cast v8, Landroid/view/ViewStub;
 
-    invoke-direct {v7, v8}, LLKj;-><init>(Landroid/view/ViewStub;)V
+    invoke-direct {v7, v8}, Ltak;-><init>(Landroid/view/ViewStub;)V
 
-    iput-object v7, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iput-object v7, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 37
     iget v7, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mUncheckedTextColor:I
@@ -432,14 +432,14 @@
     invoke-virtual {p0, v4, v7, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->b(Landroid/widget/ImageView;II)V
 
     .line 40
-    new-instance v0, LBe9;
+    new-instance v0, LIu9;
 
-    const/16 v4, 0x1a
+    const/16 v4, 0x14
 
-    invoke-direct {v0, v4, p0}, LBe9;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v4, p0}, LIu9;-><init>(ILjava/lang/Object;)V
 
     .line 41
-    iput-object v0, v6, LLKj;->d:LJKj;
+    iput-object v0, v6, Ltak;->d:Lqak;
 
     .line 42
     invoke-virtual {p2}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
@@ -450,7 +450,7 @@
 
     if-nez v3, :cond_0
 
-    const v0, 0x7f080453
+    const v0, 0x7f0804c3
 
     .line 43
     invoke-virtual {p2, v0}, Landroid/view/View;->setBackgroundResource(I)V
@@ -510,7 +510,7 @@
     throw p1
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -588,11 +588,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->currentState:LHua;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->currentState:LRGa;
 
     .line 2
     .line 3
-    invoke-virtual {p0, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {p0, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     .line 4
     .line 5
@@ -669,7 +669,7 @@
     return-void
 .end method
 
-.method public final setButtonState(LHua;)V
+.method public final setButtonState(LRGa;)V
     .locals 8
 
     .line 1
@@ -727,20 +727,20 @@
     .line 24
     .line 25
     .line 26
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 27
     .line 28
-    invoke-virtual {v0, v5}, LLKj;->h(I)V
+    invoke-virtual {v0, v5}, Ltak;->f(I)V
 
     .line 29
     .line 30
     .line 31
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:Ltak;
 
     .line 32
     .line 33
-    invoke-virtual {v0, v4}, LLKj;->h(I)V
+    invoke-virtual {v0, v4}, Ltak;->f(I)V
 
     .line 34
     .line 35
@@ -767,11 +767,11 @@
     .line 46
     .line 47
     .line 48
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 49
     .line 50
-    iget-object v0, v0, LLKj;->b:Landroid/view/View;
+    iget-object v0, v0, Ltak;->b:Landroid/view/View;
 
     .line 51
     .line 52
@@ -793,11 +793,11 @@
     .line 60
     .line 61
     :cond_1
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 62
     .line 63
-    iget-object v0, v0, LLKj;->b:Landroid/view/View;
+    iget-object v0, v0, Ltak;->b:Landroid/view/View;
 
     .line 64
     .line 65
@@ -876,20 +876,20 @@
     .line 102
     .line 103
     .line 104
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 105
     .line 106
-    invoke-virtual {v0, v4}, LLKj;->h(I)V
+    invoke-virtual {v0, v4}, Ltak;->f(I)V
 
     .line 107
     .line 108
     .line 109
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:Ltak;
 
     .line 110
     .line 111
-    invoke-virtual {v0, v5}, LLKj;->h(I)V
+    invoke-virtual {v0, v5}, Ltak;->f(I)V
 
     .line 112
     .line 113
@@ -940,20 +940,20 @@
     .line 137
     .line 138
     .line 139
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 140
     .line 141
-    invoke-virtual {v0, v5}, LLKj;->h(I)V
+    invoke-virtual {v0, v5}, Ltak;->f(I)V
 
     .line 142
     .line 143
     .line 144
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:Ltak;
 
     .line 145
     .line 146
-    invoke-virtual {v0, v4}, LLKj;->h(I)V
+    invoke-virtual {v0, v4}, Ltak;->f(I)V
 
     .line 147
     .line 148
@@ -980,11 +980,11 @@
     .line 159
     .line 160
     .line 161
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 162
     .line 163
-    iget-object v0, v0, LLKj;->b:Landroid/view/View;
+    iget-object v0, v0, Ltak;->b:Landroid/view/View;
 
     .line 164
     .line 165
@@ -1006,11 +1006,11 @@
     .line 173
     .line 174
     :cond_5
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 175
     .line 176
-    iget-object v0, v0, LLKj;->b:Landroid/view/View;
+    iget-object v0, v0, Ltak;->b:Landroid/view/View;
 
     .line 177
     .line 178
@@ -1106,20 +1106,20 @@
     .line 224
     .line 225
     .line 226
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mSpinnerStub:Ltak;
 
     .line 227
     .line 228
-    invoke-virtual {v0, v4}, LLKj;->h(I)V
+    invoke-virtual {v0, v4}, Ltak;->f(I)V
 
     .line 229
     .line 230
     .line 231
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:LLKj;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->mCheckedIconStub:Ltak;
 
     .line 232
     .line 233
-    invoke-virtual {v0, v4}, LLKj;->h(I)V
+    invoke-virtual {v0, v4}, Ltak;->f(I)V
 
     .line 234
     .line 235
@@ -1170,7 +1170,7 @@
     .line 260
     .line 261
     :goto_0
-    iput-object p1, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->currentState:LHua;
+    iput-object p1, p0, Lcom/snap/ui/view/LoadingSpinnerButtonView;->currentState:LRGa;
 
     .line 262
     .line 263
@@ -1238,7 +1238,7 @@
     move-result p1
 
     .line 294
-    const v4, 0x7f070958
+    const v4, 0x7f07097e
 
     .line 295
     .line 296

@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'FEATURE_VECTOR_DEFAULT\':0,\'FUZZY_FEATURE_VECTOR\':1,\'FUZZY_FALLBACK_FEATURE_VECTOR\':2,\'FUZZY_SMITH_WATERMAN\':3"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

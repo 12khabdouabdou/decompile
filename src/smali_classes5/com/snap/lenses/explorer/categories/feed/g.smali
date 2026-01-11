@@ -1,5 +1,5 @@
 .class public final Lcom/snap/lenses/explorer/categories/feed/g;
-.super LrE9;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
@@ -22,7 +22,7 @@
     const/4 v1, 0x2
 
     .line 4
-    invoke-direct {v0, v1}, LrE9;-><init>(I)V
+    invoke-direct {v0, v1}, LJP9;-><init>(I)V
 
     .line 5
     .line 6
@@ -36,7 +36,7 @@
 
 
 # virtual methods
-.method public final N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
     .line 1
@@ -64,31 +64,25 @@
     int-to-float p1, p1
 
     .line 13
-    const/high16 p2, 0x3f400000    # 0.75f
+    const p2, 0x3e8c30c3
 
     .line 14
     .line 15
+    .line 16
     mul-float p1, p1, p2
 
-    .line 16
     .line 17
-    const/high16 p2, 0x3f000000    # 0.5f
-
     .line 18
-    .line 19
-    add-float/2addr p1, p2
-
-    .line 20
     float-to-int p1, p1
 
-    .line 21
+    .line 19
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 20
+    .line 21
     .line 22
-    .line 23
-    .line 24
     move-result-object p1
 
-    .line 25
+    .line 23
     return-object p1
 .end method

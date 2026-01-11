@@ -1,10 +1,10 @@
 .class public final Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'config\':r?:\'[0]\',\'getFormattedDistanceToLocation\':f?(d@, d@): s?,\'getNetworkingClient\':f?(): r?:\'[1]\',\'getVenueFavoritesActionHandler\':f?(): r?:\'[2]\',\'getBlizzardLogger\':f?(): r?:\'[3]\',\'getVenueFavoriteStore\':f?(): r?:\'[4]\',\'getStoryPreviewObservable\':f?(s): g<c>:\'[5]\'<r:\'[6]\'>,\'getPivotDataObservable\':f?(s): g<c>:\'[5]\'<r:\'[7]\'>,\'composerVenueFavoritesStoreObservable\':g?<c>:\'[5]\'<r:\'[4]\'>,\'nativeVenueStoryPlayer\':r:\'[8]\'"
     typeReferences = {
@@ -14,8 +14,8 @@
         Lcom/snap/composer/blizzard/Logging;,
         Lcom/snap/venues/api/ComposerVenueFavoriteStore;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LUqd;,
-        LBrd;,
+        LmHd;,
+        LWHd;,
         Lcom/snap/venues/api/NativeVenueStoryPlayer;
     }
 .end annotation
@@ -94,6 +94,47 @@
 
 
 # direct methods
+.method public constructor <init>(LHQ5;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_config:Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Config;
+
+    .line 3
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getFormattedDistanceToLocation:Lkotlin/jvm/functions/Function2;
+
+    .line 4
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getNetworkingClient:Lkotlin/jvm/functions/Function0;
+
+    .line 5
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getVenueFavoritesActionHandler:Lkotlin/jvm/functions/Function0;
+
+    .line 6
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getBlizzardLogger:Lkotlin/jvm/functions/Function0;
+
+    .line 7
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getVenueFavoriteStore:Lkotlin/jvm/functions/Function0;
+
+    .line 8
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getStoryPreviewObservable:Lkotlin/jvm/functions/Function1;
+
+    .line 9
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getPivotDataObservable:Lkotlin/jvm/functions/Function1;
+
+    .line 10
+    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_composerVenueFavoritesStoreObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 11
+    iput-object p1, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_nativeVenueStoryPlayer:Lcom/snap/venues/api/NativeVenueStoryPlayer;
+
+    return-void
+.end method
+
 .method public constructor <init>(Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Config;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/venues/api/NativeVenueStoryPlayer;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -151,47 +192,6 @@
     return-void
 .end method
 
-.method public constructor <init>(LxM5;)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_config:Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Config;
-
-    .line 3
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getFormattedDistanceToLocation:Lkotlin/jvm/functions/Function2;
-
-    .line 4
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getNetworkingClient:Lkotlin/jvm/functions/Function0;
-
-    .line 5
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getVenueFavoritesActionHandler:Lkotlin/jvm/functions/Function0;
-
-    .line 6
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getBlizzardLogger:Lkotlin/jvm/functions/Function0;
-
-    .line 7
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getVenueFavoriteStore:Lkotlin/jvm/functions/Function0;
-
-    .line 8
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getStoryPreviewObservable:Lkotlin/jvm/functions/Function1;
-
-    .line 9
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_getPivotDataObservable:Lkotlin/jvm/functions/Function1;
-
-    .line 10
-    iput-object v0, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_composerVenueFavoritesStoreObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
-    .line 11
-    iput-object p1, p0, Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Context;->_nativeVenueStoryPlayer:Lcom/snap/venues/api/NativeVenueStoryPlayer;
-
-    return-void
-.end method
-
 
 # virtual methods
 .method public final a(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
@@ -216,7 +216,7 @@
     return-void
 .end method
 
-.method public final c(LLV3;)V
+.method public final c(Li04;)V
     .locals 0
 
     .line 1
@@ -238,7 +238,7 @@
     return-void
 .end method
 
-.method public final e(LLV3;)V
+.method public final e(Li04;)V
     .locals 0
 
     .line 1
@@ -249,7 +249,7 @@
     return-void
 .end method
 
-.method public final f(LNV3;)V
+.method public final f(Lk04;)V
     .locals 0
 
     .line 1
@@ -260,7 +260,7 @@
     return-void
 .end method
 
-.method public final g(LNV3;)V
+.method public final g(Lk04;)V
     .locals 0
 
     .line 1
@@ -271,7 +271,7 @@
     return-void
 .end method
 
-.method public final h(LLV3;)V
+.method public final h(Li04;)V
     .locals 0
 
     .line 1

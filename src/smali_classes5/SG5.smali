@@ -1,79 +1,72 @@
-.class public final LSG5;
-.super Ljava/lang/Object;
+.class public final synthetic LSG5;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lkotlin/jvm/functions/Function1;
 
 
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/core/Single;
-
-.field public final b:La4h;
-
-.field public final c:Z
+# static fields
+.field public static final f0:LSG5;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Single;La4h;Z)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LSG5;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LSG5;->a:Lio/reactivex/rxjava3/core/Single;
+    const-string v5, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;)V"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    iput-object p2, p0, LSG5;->b:La4h;
+    const/4 v1, 0x1
 
     .line 7
-    .line 8
-    iput-boolean p3, p0, LSG5;->c:Z
+    const-class v3, LjB5;
 
+    .line 8
     .line 9
+    const-string v4, "<init>"
+
     .line 10
+    .line 11
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    sput-object v0, LSG5;->f0:LSG5;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    new-instance v0, LCG5;
+    check-cast p1, LFG5;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    new-instance v0, LjB5;
 
     .line 4
-    invoke-direct {v0, v1, p0}, LCG5;-><init>(ILjava/lang/Object;)V
-
     .line 5
+    invoke-direct {v0, p1}, LjB5;-><init>(LFG5;)V
+
     .line 6
     .line 7
-    iget-object v1, p0, LSG5;->a:Lio/reactivex/rxjava3/core/Single;
-
     .line 8
-    .line 9
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 10
-    .line 11
-    .line 12
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;
-
-    .line 13
-    .line 14
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-object v2
+    return-object v0
 .end method

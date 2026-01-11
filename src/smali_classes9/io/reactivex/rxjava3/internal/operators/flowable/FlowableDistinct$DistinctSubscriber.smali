@@ -33,11 +33,11 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/functions/Function;Ljava/util/Collection;)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;Ljava/util/Collection;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;-><init>(LV6i;)V
+    invoke-direct {p0, p1}, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;-><init>(Lmvi;)V
 
     .line 2
     .line 3
@@ -104,11 +104,11 @@
     .line 11
     .line 12
     .line 13
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:Lmvi;
 
     .line 14
     .line 15
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 16
     .line 17
@@ -154,11 +154,11 @@
     .line 15
     .line 16
     .line 17
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:Lmvi;
 
     .line 18
     .line 19
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 20
     .line 21
@@ -186,7 +186,7 @@
 
     .line 7
     .line 8
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:LV6i;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->a:Lmvi;
 
     .line 9
     .line 10
@@ -225,7 +225,7 @@
 
     .line 25
     .line 26
-    invoke-interface {v1, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 27
     .line 28
@@ -234,7 +234,7 @@
 
     .line 30
     :cond_1
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->b:Lc7i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->b:Ltvi;
 
     .line 31
     .line 32
@@ -242,7 +242,7 @@
 
     .line 33
     .line 34
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 35
     .line 36
@@ -266,7 +266,7 @@
     const/4 p1, 0x0
 
     .line 44
-    invoke-interface {v1, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 45
     .line 46
@@ -339,7 +339,7 @@
 
     .line 28
     .line 29
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->b:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableSubscriber;->b:Ltvi;
 
     .line 30
     .line 31
@@ -347,7 +347,7 @@
 
     .line 32
     .line 33
-    invoke-interface {v0, v1, v2}, Lc7i;->l(J)V
+    invoke-interface {v0, v1, v2}, Ltvi;->l(J)V
 
     .line 34
     .line 35

@@ -2,15 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LMB7;
+
 
 # instance fields
-.field public final a:LJB7;
+.field public final a:LMB7;
 
-.field public final b:LKB7;
+.field public final b:LNB7;
 
 
 # direct methods
-.method public constructor <init>(LJB7;LKB7;)V
+.method public constructor <init>(LMB7;LNB7;)V
     .locals 0
 
     .line 1
@@ -19,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LLB7;->a:LJB7;
+    iput-object p1, p0, LLB7;->a:LMB7;
 
     .line 5
     .line 6
-    iput-object p2, p0, LLB7;->b:LKB7;
+    iput-object p2, p0, LLB7;->b:LNB7;
 
     .line 7
     .line 8
@@ -32,189 +35,120 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a(LeIf;LYqf;LAC7;I)Lio/reactivex/rxjava3/core/Single;
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LLB7;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LLB7;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, LLB7;->a:LJB7;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, LLB7;->a:LJB7;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, LLB7;->b:LKB7;
-
-    .line 25
-    .line 26
-    iget-object p1, p1, LLB7;->b:LKB7;
-
-    .line 27
-    .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LLB7;->a:LJB7;
+    sget-object p3, LAC7;->a:LAC7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LJB7;->hashCode()I
+    iget-object v0, p0, LLB7;->a:LMB7;
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LLB7;->b:LKB7;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "FontLoadOperation(fontDescriptor="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-interface {v0, p1, p2, p3, p4}, LMB7;->a(LeIf;LYqf;LAC7;I)Lio/reactivex/rxjava3/core/Single;
 
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LLB7;->a:LJB7;
+    move-result-object p3
 
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    new-instance p4, LGa6;
 
+    .line 10
     .line 11
+    const/16 v0, 0x16
+
     .line 12
     .line 13
-    const-string v1, ", loader="
+    invoke-direct {p4, p1, p2, p0, v0}, LGa6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 16
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
     .line 17
     .line 18
-    iget-object v1, p0, LLB7;->b:LKB7;
+    invoke-direct {p1, p3, p4}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
+    return-object p1
+.end method
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public final c()V
+    .locals 1
 
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 1
+    iget-object v0, p0, LLB7;->b:LNB7;
 
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LNB7;->c()V
 
-    .line 32
-    return-object v0
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final e(LYB7;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LLB7;->b:LNB7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LNB7;->e(LYB7;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final i(LAC7;)V
+    .locals 1
+
+    .line 1
+    sget-object p1, LAC7;->a:LAC7;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LLB7;->a:LMB7;
+
+    .line 4
+    .line 5
+    invoke-interface {v0, p1}, LMB7;->i(LAC7;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p0}, LLB7;->c()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final k(LYqf;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LLB7;->b:LNB7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LNB7;->k(LYqf;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

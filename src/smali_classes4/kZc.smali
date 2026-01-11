@@ -3,169 +3,213 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic a:LiZc;
+.field public final synthetic a:I
 
-.field public final synthetic b:LVX;
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Lkotlin/jvm/functions/Function0;
 
 
 # direct methods
-.method public constructor <init>(LiZc;LVX;)V
+.method public synthetic constructor <init>(Ljava/lang/String;ILkotlin/jvm/functions/Function0;)V
     .locals 0
 
     .line 1
+    iput p2, p0, LkZc;->a:I
+
+    iput-object p1, p0, LkZc;->b:Ljava/lang/String;
+
+    iput-object p3, p0, LkZc;->c:Lkotlin/jvm/functions/Function0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LkZc;->a:LiZc;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LkZc;->b:LVX;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 10
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LkZc;->a:LiZc;
+    iget v0, p0, LkZc;->a:I
 
     .line 2
     .line 3
-    iget-object v1, v0, LiZc;->d:LdXc;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    sget-object v2, Lwl;->E:Lgbd;
-
     .line 6
+    check-cast p1, Ljava/util/List;
+
     .line 7
-    new-instance v3, LIWc;
-
     .line 8
+    check-cast p1, Ljava/lang/Iterable;
+
     .line 9
-    iget-object v9, p0, LkZc;->b:LVX;
-
     .line 10
-    .line 11
-    iget-object v4, v9, LVX;->t:LVX$a;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
+    .line 11
     .line 12
     .line 13
-    iget-object v4, v4, LVX$a;->t:Ljava/lang/String;
+    move-result-object p1
 
     .line 14
+    :cond_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
     .line 15
-    const/4 v6, 0x0
-
     .line 16
-    const/4 v7, 0x0
-
     .line 17
-    const/4 v5, 0x0
+    move-result v0
 
     .line 18
-    const/16 v8, 0x3e
+    if-eqz v0, :cond_1
 
     .line 19
     .line 20
-    invoke-direct/range {v3 .. v8}, LIWc;-><init>(Ljava/lang/String;LjN6;ZLE3i;I)V
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v1, v2, v3}, LdXc;->Q(Lgbd;Ljava/lang/Object;)LdXc;
+    move-result-object v0
 
     .line 24
+    check-cast v0, Ltle;
+
     .line 25
     .line 26
-    sget-object v1, LdXc;->a3:Lfbd;
+    iget-object v0, v0, Ltle;->b:LP19;
 
     .line 27
     .line 28
-    sget-object v2, LQua;->t:LQua;
+    invoke-interface {v0}, LP19;->d()LO19;
 
     .line 29
     .line 30
-    iget-object v0, v0, LiZc;->d:LdXc;
-
     .line 31
+    move-result-object v0
+
     .line 32
-    invoke-virtual {v0, v1, v2}, LdXc;->Q(Lgbd;Ljava/lang/Object;)LdXc;
+    invoke-interface {v0}, LO19;->getId()Ljava/lang/String;
 
     .line 33
     .line 34
     .line 35
-    sget-object v1, Lwl;->D:Lfbd;
+    move-result-object v0
 
     .line 36
+    iget-object v1, p0, LkZc;->b:Ljava/lang/String;
+
     .line 37
-    iget-object v2, v9, LVX;->b:Ljava/lang/String;
-
     .line 38
-    .line 39
-    invoke-virtual {v0, v1, v2}, LdXc;->Q(Lgbd;Ljava/lang/Object;)LdXc;
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 39
     .line 40
     .line 41
+    move-result v0
+
     .line 42
-    sget-object v1, Lwl;->F:Lgbd;
+    if-eqz v0, :cond_0
 
     .line 43
     .line 44
-    iget-object v2, v9, LVX;->t:LVX$a;
+    iget-object p1, p0, LkZc;->c:Lkotlin/jvm/functions/Function0;
 
     .line 45
     .line 46
-    iget-object v2, v2, LVX$a;->b:Ljava/lang/String;
+    invoke-interface {p1}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 47
     .line 48
-    invoke-virtual {v0, v1, v2}, LdXc;->Q(Lgbd;Ljava/lang/Object;)LdXc;
-
     .line 49
+    :cond_1
+    return-void
+
     .line 50
+    :pswitch_0
+    iget-object p1, p0, LkZc;->b:Ljava/lang/String;
+
     .line 51
-    sget-object v1, Lwl;->G:Lgbd;
-
     .line 52
+    const-string v0, "#subscribeAndCallback#success"
+
     .line 53
-    iget-object v2, v9, LVX;->t:LVX$a;
-
     .line 54
-    .line 55
-    iget-object v2, v2, LVX$a;->c:Ljava/util/Map;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 55
     .line 56
     .line 57
-    invoke-virtual {v0, v1, v2}, LdXc;->Q(Lgbd;Ljava/lang/Object;)LdXc;
+    move-result-object p1
 
     .line 58
+    iget-object v0, p0, LkZc;->c:Lkotlin/jvm/functions/Function0;
+
     .line 59
     .line 60
-    sget-object v1, LdXc;->o0:Lfbd;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 61
     .line 62
-    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    invoke-virtual {v1, p1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 63
     .line 64
-    invoke-virtual {v0, v1, v2}, LdXc;->Q(Lgbd;Ljava/lang/Object;)LdXc;
-
     .line 65
+    move-result p1
+
     .line 66
+    :try_start_0
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 67
+    .line 68
+    .line 69
+    invoke-virtual {v1, p1}, LNdh;->h(I)V
+
+    .line 70
+    .line 71
+    .line 72
     return-void
+
+    .line 73
+    :catchall_0
+    move-exception v0
+
+    .line 74
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 75
+    .line 76
+    if-eqz v1, :cond_2
+
+    .line 77
+    .line 78
+    invoke-virtual {v1, p1}, LtGi;->o(I)V
+
+    .line 79
+    .line 80
+    .line 81
+    :cond_2
+    throw v0
+
+    .line 82
+    nop
+
+    .line 83
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

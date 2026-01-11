@@ -1,156 +1,125 @@
-.class public final LzP;
-.super LrE9;
+.class public final enum LzP;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function4;
 
+# static fields
+.field public static final enum a:LzP;
 
-# instance fields
-.field public final synthetic a:Lc3h;
+.field public static final enum b:LzP;
 
-.field public final synthetic b:LpP;
-
-.field public final synthetic c:LXO6;
+.field public static final synthetic c:[LzP;
 
 
 # direct methods
-.method public constructor <init>(Lc3h;LpP;LXO6;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput-object p1, p0, LzP;->a:Lc3h;
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    iput-object p2, p0, LzP;->b:LpP;
+    new-instance v2, LzP;
 
     .line 4
     .line 5
-    iput-object p3, p0, LzP;->c:LXO6;
+    const-string v3, "UCO"
 
     .line 6
     .line 7
-    const/4 p1, 0x4
-
-    .line 8
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-
-# virtual methods
-.method public final n(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
-
-    .line 1
-    check-cast p1, Ljava/lang/Number;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v1
-
-    .line 7
-    check-cast p2, Ljava/lang/Number;
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 8
     .line 9
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
-
     .line 10
+    sput-object v2, LzP;->a:LzP;
+
     .line 11
     .line 12
-    move-result v2
+    new-instance v3, LzP;
 
     .line 13
-    check-cast p3, Ljava/lang/Number;
-
     .line 14
-    .line 15
-    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+    const-string v4, "POST_CAPTURE_EXPLORER"
 
+    .line 15
     .line 16
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 17
     .line 18
-    move-result v3
-
     .line 19
-    check-cast p4, Ljava/lang/Number;
+    sput-object v3, LzP;->b:LzP;
 
     .line 20
     .line 21
-    invoke-virtual {p4}, Ljava/lang/Number;->intValue()I
+    const/4 v4, 0x2
 
     .line 22
+    new-array v4, v4, [LzP;
+
     .line 23
     .line 24
-    move-result v4
+    aput-object v2, v4, v1
 
     .line 25
-    iget-object p1, p0, LzP;->b:LpP;
-
     .line 26
+    aput-object v3, v4, v0
+
     .line 27
-    iget-object v5, p1, LpP;->g:Lry1;
-
     .line 28
+    sput-object v4, LzP;->c:[LzP;
+
     .line 29
-    iget-object v0, p0, LzP;->a:Lc3h;
-
     .line 30
-    .line 31
-    invoke-static/range {v0 .. v5}, Lc3h;->a(Lc3h;IIIILry1;)Landroid/graphics/Rect;
+    return-void
+.end method
 
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v6
+.method public static valueOf(Ljava/lang/String;)LzP;
+    .locals 1
 
-    .line 35
-    iget-object p1, p0, LzP;->a:Lc3h;
+    .line 1
+    const-class v0, LzP;
 
-    .line 36
-    .line 37
-    iget-object p1, p1, Lc3h;->b:Ljava/lang/Object;
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 38
-    .line 39
-    move-object v0, p1
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 40
-    check-cast v0, Lf1;
+    .line 7
+    check-cast p0, LzP;
 
-    .line 41
-    .line 42
-    iget-object p1, p0, LzP;->c:LXO6;
+    .line 8
+    .line 9
+    return-object p0
+.end method
 
-    .line 43
-    .line 44
-    iget-object p1, p1, LXO6;->a:LMD9;
+.method public static values()[LzP;
+    .locals 1
 
-    .line 45
-    .line 46
-    iget-object v5, p1, LMD9;->a:Ljava/lang/String;
+    .line 1
+    sget-object v0, LzP;->c:[LzP;
 
-    .line 47
-    .line 48
-    invoke-virtual/range {v0 .. v6}, Lf1;->f(IIIILjava/lang/String;Landroid/graphics/Rect;)V
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 49
-    .line 50
-    .line 51
-    sget-object p1, Li7j;->a:Li7j;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 52
-    .line 53
-    return-object p1
+    .line 7
+    check-cast v0, [LzP;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

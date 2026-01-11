@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Luhc;
+    proxyClass = Lxwc;
     schema = "\'presentBackgroundPicker\':f|m|()"
     typeReferences = {}
 .end annotation

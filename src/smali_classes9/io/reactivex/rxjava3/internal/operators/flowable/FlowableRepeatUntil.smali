@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 4
 
     .line 1
@@ -60,7 +60,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 8
     .line 9
@@ -77,7 +77,7 @@
 
     .line 15
     .line 16
-    invoke-direct {v1, p1, v2, v0, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRepeatUntil$RepeatSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/functions/BooleanSupplier;Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;LZne;)V
+    invoke-direct {v1, p1, v2, v0, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRepeatUntil$RepeatSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/BooleanSupplier;Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;LSFe;)V
 
     .line 17
     .line 18

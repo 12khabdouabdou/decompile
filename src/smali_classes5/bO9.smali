@@ -1,236 +1,101 @@
 .class public final LbO9;
-.super LcO9;
+.super LL4b;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LUuk;
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "LbO9;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Z
+.field public static final n0:LbO9;
 
 
 # direct methods
-.method public constructor <init>(LUuk;Z)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 12
 
     .line 1
-    sget-object v0, LdGe;->e:LdGe;
+    new-instance v0, LbO9;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v1, LcO9;->Z:LcO9;
 
     .line 4
     .line 5
+    const/4 v8, 0x0
+
     .line 6
-    iput-object p1, p0, LbO9;->a:LUuk;
+    const/16 v11, 0x7ffc
 
     .line 7
     .line 8
-    iput-boolean p2, p0, LbO9;->b:Z
+    const-string v2, "KeyboardSettings"
 
     .line 9
     .line 10
+    const/4 v3, 0x0
+
+    .line 11
+    const/4 v4, 0x0
+
+    .line 12
+    const/4 v5, 0x0
+
+    .line 13
+    const/4 v6, 0x0
+
+    .line 14
+    const/4 v7, 0x0
+
+    .line 15
+    const/4 v9, 0x0
+
+    .line 16
+    const/4 v10, 0x0
+
+    .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    sput-object v0, LbO9;->n0:LbO9;
+
+    .line 21
+    .line 22
+    new-instance v0, LWl8;
+
+    .line 23
+    .line 24
+    const/16 v1, 0x10
+
+    .line 25
+    .line 26
+    invoke-direct {v0, v1}, LWl8;-><init>(I)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v0, LbO9;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 30
+    .line 31
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LbO9;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LbO9;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, LbO9;->a:LUuk;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, LbO9;->a:LUuk;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-boolean v1, p0, LbO9;->b:Z
-
-    .line 25
-    .line 26
-    iget-boolean p1, p1, LbO9;->b:Z
-
-    .line 27
-    .line 28
-    if-eq v1, p1, :cond_3
-
-    .line 29
-    .line 30
-    return v2
-
-    .line 31
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LbO9;->a:LUuk;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-boolean v1, p0, LbO9;->b:Z
-
-    .line 10
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    const/16 v1, 0x4cf
-
-    .line 14
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_0
-    const/16 v1, 0x4d5
-
-    .line 17
-    .line 18
-    :goto_0
-    add-int/2addr v0, v1
-
-    .line 19
-    return v0
-.end method
-
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
     .line 1
-    check-cast p1, LdGe;
-
-    .line 2
-    .line 3
-    return-object p0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "NotAnimated(icon="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LbO9;->a:LUuk;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", badged="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-boolean v1, p0, LbO9;->b:Z
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
-
-    .line 32
-    return-object v0
+    return-void
 .end method

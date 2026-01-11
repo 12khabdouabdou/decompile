@@ -1,212 +1,247 @@
 .class public final LK9e;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public a:Ljava/lang/String;
 
-.field public final synthetic b:Lake;
-
-.field public final synthetic c:LL9e;
+.field public b:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lake;LL9e;I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    iput p3, p0, LK9e;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LK9e;->b:Lake;
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
 
-    iput-object p2, p0, LK9e;->c:LL9e;
+    .line 5
+    iput-object v0, p0, LK9e;->a:Ljava/lang/String;
 
-    const/4 p1, 0x0
+    .line 6
+    .line 7
+    iput-object v0, p0, LK9e;->b:Ljava/lang/Throwable;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 12
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget v0, p0, LK9e;->a:I
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LK9e;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LK9e;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LK9e;->a:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-object v3, p1, LK9e;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, LK9e;->b:Ljava/lang/Throwable;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, LK9e;->b:Ljava/lang/Throwable;
+
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LK9e;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v1, 0x0
 
     .line 4
+    if-nez v0, :cond_0
+
     .line 5
     .line 6
-    iget-object v0, p0, LK9e;->b:Lake;
+    const/4 v0, 0x0
 
     .line 7
+    goto :goto_0
+
     .line 8
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 9
     .line 10
     .line 11
-    move-result-object v0
+    move-result v0
 
     .line 12
-    check-cast v0, LN9e;
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 13
     .line 14
-    iget-object v1, p0, LK9e;->c:LL9e;
+    iget-object v2, p0, LK9e;->b:Ljava/lang/Throwable;
 
     .line 15
     .line 16
-    iget-object v3, v1, LL9e;->X:Lb5j;
+    if-nez v2, :cond_1
 
     .line 17
     .line 18
-    new-instance v2, LM9e;
+    goto :goto_1
 
     .line 19
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
     .line 20
-    iget-object v4, v0, LN9e;->a:Lake;
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    :goto_1
+    add-int/2addr v0, v1
+
+    .line 24
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, LK9e;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LK9e;->b:Ljava/lang/Throwable;
+
+    .line 4
+    .line 5
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 6
+    .line 7
+    const-string v3, "PreviewPlayerAnalytics(playbackSessionId="
+
+    .line 8
+    .line 9
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    const-string v0, ", playerFailure="
+
+    .line 16
+    .line 17
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
-    iget-object v5, v0, LN9e;->b:Lake;
-
     .line 23
+    const-string v0, ")"
+
     .line 24
-    iget-object v6, v0, LN9e;->c:Lake;
-
     .line 25
-    .line 26
-    iget-object v7, v0, LN9e;->d:Lake;
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 26
     .line 27
     .line 28
-    iget-object v9, v0, LN9e;->e:Lcom/snap/mushroom/app/MushroomApplication;
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
     .line 30
-    iget-object v10, v0, LN9e;->f:Lake;
-
     .line 31
-    .line 32
-    iget-object v8, v1, LL9e;->Y:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 33
-    .line 34
-    invoke-direct/range {v2 .. v10}, LM9e;-><init>(Lb5j;Lake;Lake;Lake;Lake;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/mushroom/app/MushroomApplication;Lake;)V
-
-    .line 35
-    .line 36
-    .line 37
-    return-object v2
-
-    .line 38
-    :pswitch_0
-    iget-object v0, p0, LK9e;->b:Lake;
-
-    .line 39
-    .line 40
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
-
-    .line 41
-    .line 42
-    .line 43
     move-result-object v0
 
-    .line 44
-    check-cast v0, Lq9e;
-
-    .line 45
-    .line 46
-    iget-object v1, p0, LK9e;->c:LL9e;
-
-    .line 47
-    .line 48
-    iget-object v3, v1, LL9e;->X:Lb5j;
-
-    .line 49
-    .line 50
-    invoke-virtual {v1}, LS9;->a()LTqc;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v2
-
-    .line 54
-    sget-object v9, LJ9e;->e:LJ9e;
-
-    .line 55
-    .line 56
-    sget-object v10, Lv9e;->e:Lv9e;
-
-    .line 57
-    .line 58
-    iget-object v4, v1, LL9e;->Z:LrE9;
-
-    .line 59
-    .line 60
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 61
-    .line 62
-    .line 63
-    move-object v5, v2
-
-    .line 64
-    new-instance v2, Lp9e;
-
-    .line 65
-    .line 66
-    new-instance v8, Lo9e;
-
-    .line 67
-    .line 68
-    iget-object v6, v0, Lq9e;->c:Lcom/snap/mushroom/app/MushroomApplication;
-
-    .line 69
-    .line 70
-    invoke-direct {v8, v5, v6}, Lo9e;-><init>(LTqc;Lcom/snap/mushroom/app/MushroomApplication;)V
-
-    .line 71
-    .line 72
-    .line 73
-    iget-object v11, v0, Lq9e;->d:Lake;
-
-    .line 74
-    .line 75
-    iget-object v5, v0, Lq9e;->a:Lake;
-
-    .line 76
-    .line 77
-    iget-object v6, v0, Lq9e;->b:Lake;
-
-    .line 78
-    .line 79
-    iget-object v7, v1, LL9e;->Y:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 80
-    .line 81
-    invoke-direct/range {v2 .. v11}, Lp9e;-><init>(Lb5j;Lkotlin/jvm/functions/Function1;Lake;Lake;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lo9e;LnSc;LnSc;Lake;)V
-
-    .line 82
-    .line 83
-    .line 84
-    return-object v2
-
-    .line 85
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 32
+    return-object v0
 .end method

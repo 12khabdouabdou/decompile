@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:LPwg;
+.field public final a:Lt55;
 
 
 # direct methods
-.method public constructor <init>(LPwg;)V
+.method public constructor <init>(Lt55;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LLB4;->a:LPwg;
+    iput-object p1, p0, LLB4;->a:Lt55;
 
     .line 5
     .line 6

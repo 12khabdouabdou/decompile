@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LhU8;
+    proxyClass = LI19;
     schema = "\'braintreeTokenizeCard\':f|m|(s, r:\'[0]\'): g<c>:\'[1]\'<s>"
     typeReferences = {
         Lcom/snap/modules/business/ICreditCard;,

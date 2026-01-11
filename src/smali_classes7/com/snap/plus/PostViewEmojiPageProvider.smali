@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LjHd;
+    proxyClass = LBYd;
     schema = "\'setEmoji\':f|m|(s?),\'setEmojiForFriend\':f?|m|(s?, s): p<v>,\'selectedEmojiObservable\':f|m|(): g<c>:\'[0]\'<s?>,\'availableEmojiCollectionsObservable\':f|m|(): g<c>:\'[0]\'<a<r:\'[1]\'>>,\'unsetEmojiResourceUrl\':f|m|(): s"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LCJ6;
+        LlN6;
     }
 .end annotation
 
@@ -25,7 +25,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LCJ6;",
+            "LlN6;",
             ">;>;"
         }
     .end annotation
@@ -49,9 +49,6 @@
 .end method
 
 .method public abstract setEmojiForFriend(Ljava/lang/String;Ljava/lang/String;)Lcom/snap/composer/promise/Promise;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -59,9 +56,12 @@
             "Ljava/lang/String;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

@@ -1,66 +1,29 @@
 .class public final LXDe;
-.super Lo17;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
+
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'onExit\':f(),\'blizzardLogger\':r?:\'[0]\',\'webLauncher\':r?:\'[1]\',\'urlActionHandler\':r?:\'[2]\'"
+    typeReferences = {
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/composer/WebLauncher;,
+        Lcom/snap/impala/commonprofile/IUrlActionHandler;
+    }
+.end annotation
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 6
-    .line 7
-    const/4 v0, -0x1
-
-    .line 8
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 9
-    .line 10
     return-void
-.end method
-
-
-# virtual methods
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 1
-
-    .line 1
-    :cond_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_1
-
-    .line 6
-    .line 7
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    if-nez v0, :cond_0
-
-    .line 12
-    .line 13
-    :cond_1
-    return-object p0
 .end method

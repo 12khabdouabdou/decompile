@@ -48,11 +48,11 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableUnsubscribeOn$UnsubscribeSubscriber;->c:Lc7i;
+    iget-object v0, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableUnsubscribeOn$UnsubscribeSubscriber;->c:Ltvi;
 
     .line 4
     .line 5
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 6
     .line 7

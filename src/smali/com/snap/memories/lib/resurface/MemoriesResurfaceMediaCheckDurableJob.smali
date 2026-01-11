@@ -1,17 +1,17 @@
 .class public final Lcom/snap/memories/lib/resurface/MemoriesResurfaceMediaCheckDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "MemoriesResurfaceMediaCheckDurableJob"
-    metadataType = Li7j;
+    metadataType = Lewj;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     .locals 17
 
     .line 2
-    new-instance v0, LtB6;
+    new-instance v0, LRE6;
 
     const/16 v15, 0x3fff
 
@@ -55,24 +55,24 @@
 
     const/4 v14, 0x0
 
-    invoke-direct/range {v0 .. v16}, LtB6;-><init>(ILjava/util/List;LEB6;Ljava/lang/String;Lnk9;Lp7f;LnCi;ZZLjava/lang/Boolean;Ljava/lang/String;LWD7;Lnk9;ZILHr5;)V
+    invoke-direct/range {v0 .. v16}, LRE6;-><init>(ILjava/util/List;LcF6;Ljava/lang/String;LSs9;Lupf;LF1j;ZZLjava/lang/Boolean;Ljava/lang/String;LyJ7;LSs9;ZILex5;)V
 
-    sget-object v1, Li7j;->a:Li7j;
+    sget-object v1, Lewj;->a:Lewj;
 
     move-object/from16 v2, p0
 
-    invoke-direct {v2, v0, v1}, Lcom/snap/memories/lib/resurface/MemoriesResurfaceMediaCheckDurableJob;-><init>(LtB6;Li7j;)V
+    invoke-direct {v2, v0, v1}, Lcom/snap/memories/lib/resurface/MemoriesResurfaceMediaCheckDurableJob;-><init>(LRE6;Lewj;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;Li7j;)V
+.method public constructor <init>(LRE6;Lewj;)V
     .locals 0
 
     .line 1
-    sget-object p2, Li7j;->a:Li7j;
+    sget-object p2, Lewj;->a:Lewj;
 
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

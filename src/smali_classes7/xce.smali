@@ -3,83 +3,112 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/snap/profile/communities/ProfileStorySectionNativeBridge;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final a:Lkotlin/jvm/functions/Function1;
+.field public final synthetic a:I
+
+.field public final synthetic b:LHce;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
+.method public synthetic constructor <init>(LHce;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
+    iput p2, p0, Lxce;->a:I
+
+    iput-object p1, p0, Lxce;->b:LHce;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lxce;->a:Lkotlin/jvm/functions/Function1;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public launchPostToGroupStoryFlow(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lxce;->a:Lkotlin/jvm/functions/Function1;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+.method public final run()V
     .locals 2
 
     .line 1
-    sget-object v0, LzB3;->n:LyB3;
+    iget v0, p0, Lxce;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, LyB3;->b:LzB3;
+    iget-object v0, p0, Lxce;->b:LHce;
 
     .line 7
     .line 8
-    const-class v1, Lcom/snap/profile/communities/ProfileStorySectionNativeBridge;
+    const/4 v1, 0x0
 
     .line 9
+    iput-object v1, v0, LHce;->y:LyFd;
+
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
-
     .line 11
-    .line 12
-    .line 13
-    move-result p1
+    return-void
 
+    .line 12
+    :pswitch_0
+    iget-object v0, p0, Lxce;->b:LHce;
+
+    .line 13
     .line 14
-    return p1
+    iget-object v0, v0, LHce;->I:LoPd;
+
+    .line 15
+    .line 16
+    const/4 v1, 0x0
+
+    .line 17
+    iput-object v1, v0, LoPd;->Y:Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    iput-object v1, v0, LoPd;->X:Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    return-void
+
+    .line 22
+    :pswitch_1
+    iget-object v0, p0, Lxce;->b:LHce;
+
+    .line 23
+    .line 24
+    iget-object v0, v0, LHce;->M:LJp0;
+
+    .line 25
+    .line 26
+    return-void
+
+    .line 27
+    :pswitch_2
+    iget-object v0, p0, Lxce;->b:LHce;
+
+    .line 28
+    .line 29
+    iget-object v0, v0, LHce;->M:LJp0;
+
+    .line 30
+    .line 31
+    return-void
+
+    .line 32
+    nop
+
+    .line 33
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

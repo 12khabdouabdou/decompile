@@ -1,48 +1,14 @@
-.class public final LSI8;
-.super Ldu3;
+.class public interface abstract LSI8;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LUv3;
-    propertyReplacements = ""
-    schema = "\'hasSoftTrim\':f(r:\'[0]\'): b@"
-    typeReferences = {
-        Lcom/snap/modules/mdp/NativeSnapDoc;
-    }
-.end annotation
+# virtual methods
+.method public abstract a()Lio/reactivex/rxjava3/core/Single;
+.end method
 
+.method public abstract b()I
+.end method
 
-# instance fields
-.field private _invoker:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1;"
-        }
-    .end annotation
-.end field
-
-
-# direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LSI8;->_invoker:Lkotlin/jvm/functions/Function1;
-
-    .line 5
-    .line 6
-    return-void
+.method public abstract c()Lio/reactivex/rxjava3/core/Single;
 .end method

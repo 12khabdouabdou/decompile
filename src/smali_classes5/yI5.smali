@@ -1,33 +1,280 @@
-.class public abstract LyI5;
+.class public final LyI5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lxoa;
 
-# static fields
-.field public static final a:Lo09;
+
+# instance fields
+.field public final synthetic a:Lxoa;
+
+.field public final b:LJP;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lxoa;)V
+    .locals 3
 
     .line 1
-    new-instance v0, Lo09;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "stub"
+    .line 4
+    iput-object p1, p0, LyI5;->a:Lxoa;
+
+    .line 5
+    .line 6
+    invoke-interface {p1}, Lxoa;->f()LHP;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    sget-object v0, LcY;->c:LcY;
+
+    .line 11
+    .line 12
+    new-instance v1, LJP;
+
+    .line 13
+    .line 14
+    const/4 v2, 0x1
+
+    .line 15
+    invoke-direct {v1, p1, v0, v2}, LJP;-><init>(LHP;Ljava/lang/Object;I)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object v1, p0, LyI5;->b:LJP;
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final I5()LWNc;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->I5()LWNc;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lo09;-><init>(Ljava/lang/String;)V
-
     .line 6
-    .line 7
-    .line 8
-    sput-object v0, LyI5;->a:Lo09;
+    move-result-object v0
 
-    .line 9
-    .line 10
-    return-void
+    .line 7
+    return-object v0
+.end method
+
+.method public final L3()LfR6;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->L3()LfR6;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final U0()LpW3;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->U0()LpW3;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final W5()Loif;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->W5()Loif;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final Z7()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->Z7()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final a()LyPf;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->a()LyPf;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final b()Lrp0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->b()Lrp0;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final e()LrM3;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->e()LrM3;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final f()LHP;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->b:LJP;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final g8()Lkotlin/jvm/functions/Function1;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->g8()Lkotlin/jvm/functions/Function1;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final p()Lb30;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->p()Lb30;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final x()Landroid/content/ContentResolver;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LyI5;->a:Lxoa;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lxoa;->x()Landroid/content/ContentResolver;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
 .end method

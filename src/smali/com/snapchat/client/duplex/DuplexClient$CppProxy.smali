@@ -103,6 +103,9 @@
 .method private native native_appStateChanged(JLcom/snapchat/client/shims/AppState;)V
 .end method
 
+.method private native native_callParticipationChanged(JZ)V
+.end method
+
 .method private native native_dispose(J)V
 .end method
 
@@ -164,6 +167,22 @@
     .line 2
     .line 3
     invoke-direct {p0, v0, v1, p1}, Lcom/snapchat/client/duplex/DuplexClient$CppProxy;->native_appStateChanged(JLcom/snapchat/client/shims/AppState;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public callParticipationChanged(Z)V
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/duplex/DuplexClient$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1, p1}, Lcom/snapchat/client/duplex/DuplexClient$CppProxy;->native_callParticipationChanged(JZ)V
 
     .line 4
     .line 5

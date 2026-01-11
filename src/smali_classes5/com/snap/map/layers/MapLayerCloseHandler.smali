@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lx0b;
+    proxyClass = Lzdb;
     schema = "\'onLayerCloseTapped\':f|m|()"
     typeReferences = {}
 .end annotation

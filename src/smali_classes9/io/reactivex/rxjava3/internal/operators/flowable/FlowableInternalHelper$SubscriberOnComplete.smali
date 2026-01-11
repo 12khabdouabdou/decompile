@@ -28,11 +28,11 @@
 
 
 # instance fields
-.field public final a:LjVe;
+.field public final a:Lddf;
 
 
 # direct methods
-.method public constructor <init>(LjVe;)V
+.method public constructor <init>(Lddf;)V
     .locals 0
 
     .line 1
@@ -41,7 +41,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnComplete;->a:LjVe;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnComplete;->a:Lddf;
 
     .line 5
     .line 6
@@ -54,11 +54,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnComplete;->a:LjVe;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnComplete;->a:Lddf;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LjVe;->onComplete()V
+    invoke-virtual {v0}, Lddf;->onComplete()V
 
     .line 4
     .line 5

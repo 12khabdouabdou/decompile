@@ -51,7 +51,7 @@
     return v0
 .end method
 
-.method public abstract parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public abstract parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

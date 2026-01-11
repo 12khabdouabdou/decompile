@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LBCj;
+.implements LU1k;
 
 
 # instance fields
@@ -19,7 +19,7 @@
 
 .field public g0:Landroid/view/View;
 
-.field public final h0:LXfi;
+.field public final h0:LREi;
 
 .field public t:Landroid/view/View;
 
@@ -39,19 +39,19 @@
     iput-object p1, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 3
-    new-instance p1, LSL5;
+    new-instance p1, Lg06;
 
-    const/16 v0, 0x1c
+    const/4 v0, 0x4
 
-    invoke-direct {p1, v0, p0}, LSL5;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, Lg06;-><init>(ILjava/lang/Object;)V
 
     .line 4
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 5
-    iput-object v0, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->h0:LXfi;
+    iput-object v0, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->h0:LREi;
 
     return-void
 .end method
@@ -70,19 +70,19 @@
     iput-object p1, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 8
-    new-instance p1, LSL5;
+    new-instance p1, Lg06;
 
-    const/16 p2, 0x1c
+    const/4 p2, 0x4
 
-    invoke-direct {p1, p2, p0}, LSL5;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lg06;-><init>(ILjava/lang/Object;)V
 
     .line 9
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 10
-    iput-object p2, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->h0:LXfi;
+    iput-object p2, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->h0:LREi;
 
     return-void
 .end method
@@ -101,19 +101,19 @@
     iput-object p1, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 13
-    new-instance p1, LSL5;
+    new-instance p1, Lg06;
 
-    const/16 p2, 0x1c
+    const/4 p2, 0x4
 
-    invoke-direct {p1, p2, p0}, LSL5;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lg06;-><init>(ILjava/lang/Object;)V
 
     .line 14
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 15
-    iput-object p2, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->h0:LXfi;
+    iput-object p2, p0, Lcom/snap/lenses/videoeditor/DefaultVideoEditorView;->h0:LREi;
 
     return-void
 .end method
@@ -124,11 +124,11 @@
     .locals 7
 
     .line 1
-    check-cast p1, LACj;
+    check-cast p1, LT1k;
 
     .line 2
     .line 3
-    instance-of v0, p1, LzCj;
+    instance-of v0, p1, LS1k;
 
     .line 4
     .line 5
@@ -140,7 +140,7 @@
 
     .line 8
     .line 9
-    check-cast p1, LzCj;
+    check-cast p1, LS1k;
 
     .line 10
     .line 11
@@ -155,7 +155,7 @@
 
     .line 15
     .line 16
-    iget-boolean v3, p1, LzCj;->c:Z
+    iget-boolean v3, p1, LS1k;->c:Z
 
     .line 17
     .line 18
@@ -176,19 +176,19 @@
 
     .line 26
     .line 27
-    new-instance v4, LiCi;
+    new-instance v4, LA1j;
 
     .line 28
     .line 29
     const/4 v5, 0x0
 
     .line 30
-    invoke-direct {v4, v0, v5}, LiCi;-><init>(Lcom/snap/lenses/videoeditor/TimelineView;I)V
+    invoke-direct {v4, v0, v5}, LA1j;-><init>(Lcom/snap/lenses/videoeditor/TimelineView;I)V
 
     .line 31
     .line 32
     .line 33
-    iget-object v0, p1, LzCj;->t:Lio/reactivex/rxjava3/core/Observable;
+    iget-object v0, p1, LS1k;->t:Lio/reactivex/rxjava3/core/Observable;
 
     .line 34
     .line 35
@@ -200,7 +200,7 @@
     move-result-object v0
 
     .line 39
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 40
     .line 41
@@ -221,7 +221,7 @@
 
     .line 49
     .line 50
-    iget v5, p1, LzCj;->a:F
+    iget v5, p1, LS1k;->a:F
 
     .line 51
     .line 52
@@ -238,7 +238,7 @@
 
     .line 58
     .line 59
-    iget v6, p1, LzCj;->b:F
+    iget v6, p1, LS1k;->b:F
 
     .line 60
     .line 61
@@ -286,19 +286,19 @@
 
     .line 84
     .line 85
-    new-instance v3, LiCi;
+    new-instance v3, LA1j;
 
     .line 86
     .line 87
     const/4 v4, 0x1
 
     .line 88
-    invoke-direct {v3, v0, v4}, LiCi;-><init>(Lcom/snap/lenses/videoeditor/TimelineView;I)V
+    invoke-direct {v3, v0, v4}, LA1j;-><init>(Lcom/snap/lenses/videoeditor/TimelineView;I)V
 
     .line 89
     .line 90
     .line 91
-    iget-object v0, p1, LzCj;->X:Lio/reactivex/rxjava3/core/Observable;
+    iget-object v0, p1, LS1k;->X:Lio/reactivex/rxjava3/core/Observable;
 
     .line 92
     .line 93
@@ -310,7 +310,7 @@
     move-result-object v0
 
     .line 97
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 98
     .line 99
@@ -351,11 +351,11 @@
 
     .line 117
     .line 118
-    iget-object p1, p1, LzCj;->Y:LdGe;
+    iget-object p1, p1, LS1k;->Y:LLXe;
 
     .line 119
     .line 120
-    iget p1, p1, LdGe;->d:I
+    iget p1, p1, LLXe;->d:I
 
     .line 121
     .line 122
@@ -384,7 +384,7 @@
 
     .line 134
     :cond_0
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 135
     .line 136
@@ -393,7 +393,7 @@
 
     .line 138
     :cond_1
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 139
     .line 140
@@ -402,7 +402,7 @@
 
     .line 142
     :cond_2
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 143
     .line 144
@@ -415,7 +415,7 @@
 
     .line 147
     .line 148
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 149
     .line 150
@@ -428,7 +428,7 @@
 
     .line 153
     .line 154
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 155
     .line 156
@@ -441,7 +441,7 @@
 
     .line 159
     .line 160
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 161
     .line 162
@@ -450,7 +450,7 @@
 
     .line 164
     :cond_6
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 165
     .line 166
@@ -459,7 +459,7 @@
 
     .line 168
     :cond_7
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 169
     .line 170
@@ -472,7 +472,7 @@
 
     .line 173
     .line 174
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 175
     .line 176
@@ -481,7 +481,7 @@
 
     .line 178
     :cond_9
-    sget-object v0, LyCj;->a:LyCj;
+    sget-object v0, LR1k;->a:LR1k;
 
     .line 179
     .line 180
@@ -545,7 +545,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b0695
+    const v0, 0x7f0b072d
 
     .line 5
     .line 6
@@ -562,7 +562,7 @@
 
     .line 12
     .line 13
-    const v0, 0x7f0b1904
+    const v0, 0x7f0b1a66
 
     .line 14
     .line 15
@@ -583,7 +583,7 @@
 
     .line 23
     .line 24
-    const v0, 0x7f0b03fc
+    const v0, 0x7f0b0484
 
     .line 25
     .line 26
@@ -600,7 +600,7 @@
 
     .line 32
     .line 33
-    const v0, 0x7f0b0642
+    const v0, 0x7f0b06d8
 
     .line 34
     .line 35
@@ -617,7 +617,7 @@
 
     .line 41
     .line 42
-    const v0, 0x7f0b0e3b
+    const v0, 0x7f0b0f57
 
     .line 43
     .line 44
@@ -634,7 +634,7 @@
 
     .line 50
     .line 51
-    const v0, 0x7f0b12b2
+    const v0, 0x7f0b13e3
 
     .line 52
     .line 53

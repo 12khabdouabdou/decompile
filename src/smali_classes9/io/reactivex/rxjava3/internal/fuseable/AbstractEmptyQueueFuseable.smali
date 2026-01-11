@@ -37,15 +37,6 @@
 
 
 # virtual methods
-.method public c()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
 .method public cancel()V
     .locals 0
 
@@ -56,6 +47,15 @@
     .locals 0
 
     return-void
+.end method
+
+.method public d()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
 .method public dispose()V
@@ -107,7 +107,7 @@
     return-object v0
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1

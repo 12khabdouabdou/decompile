@@ -38,11 +38,11 @@
 
 
 # virtual methods
-.method public abstract a(Lila;)V
+.method public abstract a(Lyxa;)V
 .end method
 
 .method public abstract b()Landroidx/lifecycle/Lifecycle$State;
 .end method
 
-.method public abstract c(Lila;)V
+.method public abstract c(Lyxa;)V
 .end method

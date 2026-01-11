@@ -1,10 +1,10 @@
 .class public final Lcom/snap/previewtools/autocaption/view/TranscriptionEditTextView;
-.super LMW;
+.super LSY;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:LMG6;
+.field public a:LBE6;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 2
-    invoke-direct {p0, p1, p2}, LMW;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, LSY;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x5
 
@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -44,7 +44,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, LMW;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+    invoke-super {p0, p1}, LSY;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
 
     .line 2
     .line 3
@@ -68,11 +68,11 @@
 
     .line 12
     .line 13
-    sget-object v1, LyRi;->b:LyRi;
+    sget-object v1, LV0j;->c:LV0j;
 
     .line 14
     .line 15
-    invoke-static {v0, p1, v1}, LErk;->c(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lzl9;)Landroid/view/inputmethod/InputConnection;
+    invoke-static {v0, p1, v1}, LJRk;->a(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lnu9;)Landroid/view/inputmethod/InputConnection;
 
     .line 16
     .line 17
@@ -111,7 +111,7 @@
     .line 11
     .line 12
     .line 13
-    iget-object v0, p0, Lcom/snap/previewtools/autocaption/view/TranscriptionEditTextView;->a:LMG6;
+    iget-object v0, p0, Lcom/snap/previewtools/autocaption/view/TranscriptionEditTextView;->a:LBE6;
 
     .line 14
     .line 15
@@ -119,7 +119,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0}, LMG6;->invoke()Ljava/lang/Object;
+    invoke-virtual {v0}, LBE6;->d()Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -176,7 +176,7 @@
     .line 18
     .line 19
     .line 20
-    iget-object v0, p0, Lcom/snap/previewtools/autocaption/view/TranscriptionEditTextView;->a:LMG6;
+    iget-object v0, p0, Lcom/snap/previewtools/autocaption/view/TranscriptionEditTextView;->a:LBE6;
 
     .line 21
     .line 22
@@ -184,7 +184,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0}, LMG6;->invoke()Ljava/lang/Object;
+    invoke-virtual {v0}, LBE6;->d()Ljava/lang/Object;
 
     .line 25
     .line 26

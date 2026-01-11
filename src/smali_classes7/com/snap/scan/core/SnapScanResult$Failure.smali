@@ -34,7 +34,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, p1, p2, v0}, Lcom/snap/scan/core/SnapScanResult;-><init>(JLHr5;)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/snap/scan/core/SnapScanResult;-><init>(JLex5;)V
 
     .line 3
     .line 4

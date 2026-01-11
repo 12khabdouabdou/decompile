@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LeY8;
-    schema = "\'getState\':f|m|(s, f(r?:\'[0]\', s?)),\'updateSubscribed\':f|m|(s, b, f(s?), r?:\'[1]\', r?:\'[2]\', d@?, d@?),\'updateOptInNotifications\':f|m|(s, b, f(s?)),\'observe\':f|m|(f()): f(),\'observeWithHostAccountId\':f?|m|(f(), s, s?): f(),\'getOptInState\':f?|m|(s): b"
+    proxyClass = LI59;
+    schema = "\'getState\':f|m|(s, f(r?:\'[0]\', s?)),\'updateSubscribed\':f|m|(s, b, f(s?), r?:\'[1]\', r?:\'[2]\', d@?, d@?),\'updateOptInNotifications\':f|m|(s, b, f(s?)),\'observe\':f|m|(f()): f(),\'observeWithHostAccountId\':f?|m|(f(), s, s?): f(),\'getOptInState\':f?|m|(s): b,\'getSubscriptionState\':f?|m|(s, f(b@?, s?))"
     typeReferences = {
-        Lqme;,
+        LfEe;,
         Lcom/snap/composer/people/InteractionPlacementInfo;,
         Lcom/snap/impala/publicprofile/SubscriptionActionAttributions;
     }
@@ -21,7 +21,7 @@
 
 # virtual methods
 .method public abstract getOptInState(Ljava/lang/String;)Z
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -33,6 +33,20 @@
             "Lkotlin/jvm/functions/Function2;",
             ")V"
         }
+    .end annotation
+.end method
+
+.method public abstract getSubscriptionState(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lkotlin/jvm/functions/Function2;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -48,9 +62,6 @@
 .end method
 
 .method public abstract observeWithHostAccountId(Lkotlin/jvm/functions/Function0;Ljava/lang/String;Ljava/lang/String;)Lkotlin/jvm/functions/Function0;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -60,6 +71,9 @@
             ")",
             "Lkotlin/jvm/functions/Function0;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

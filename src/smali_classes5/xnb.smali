@@ -1,78 +1,91 @@
 .class public final Lxnb;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LfY4;
+# static fields
+.field public static final Z:Lxnb;
 
-.field public final b:Lzmb;
+.field public static final e0:LL4b;
 
 
 # direct methods
-.method public constructor <init>(LfY4;Lzmb;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 12
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, Lxnb;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lxnb;->a:LfY4;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lxnb;->b:Lzmb;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(LWm0;LSlb;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lxnb;->b:Lzmb;
-
-    .line 2
-    .line 3
-    check-cast v0, LImb;
+    sget-object v0, LNH9;->P0:LNH9;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1, p2}, LImb;->e(LWm0;LSlb;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    const/4 v2, 0x0
 
     .line 6
+    const/16 v3, 0x1c
+
     .line 7
     .line 8
-    move-result-object p1
+    const-string v4, "MapTakeover"
 
     .line 9
-    new-instance p2, Lbbb;
-
     .line 10
-    .line 11
-    const/16 v0, 0x8
+    invoke-direct {v1, v4, v0, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
 
+    .line 11
     .line 12
     .line 13
-    invoke-direct {p2, v0, p0}, Lbbb;-><init>(ILjava/lang/Object;)V
+    sput-object v1, Lxnb;->Z:Lxnb;
 
     .line 14
     .line 15
-    .line 16
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    new-instance v0, LL4b;
 
+    .line 16
     .line 17
+    const/4 v9, 0x0
+
     .line 18
-    invoke-direct {v0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    const/4 v10, 0x0
 
     .line 19
+    const-string v2, "MapTakeover"
+
     .line 20
     .line 21
-    return-object v0
+    const/4 v3, 0x0
+
+    .line 22
+    const/4 v4, 0x1
+
+    .line 23
+    const/4 v5, 0x0
+
+    .line 24
+    const/4 v6, 0x0
+
+    .line 25
+    const/4 v7, 0x0
+
+    .line 26
+    const/4 v8, 0x0
+
+    .line 27
+    const/16 v11, 0x7ff4
+
+    .line 28
+    .line 29
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 30
+    .line 31
+    .line 32
+    sput-object v0, Lxnb;->e0:LL4b;
+
+    .line 33
+    .line 34
+    return-void
 .end method

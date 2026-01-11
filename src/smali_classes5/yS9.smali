@@ -1,151 +1,154 @@
-.class public final enum LyS9;
-.super Ljava/lang/Enum;
+.class public final LyS9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-# static fields
-.field public static final enum a:LyS9;
 
-.field public static final enum b:LyS9;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final enum c:LyS9;
-
-.field public static final synthetic t:[LyS9;
+.field public final synthetic b:LzS9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public synthetic constructor <init>(LzS9;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    iput p2, p0, LyS9;->a:I
+
+    iput-object p1, p0, LyS9;->b:LzS9;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, LyS9;->a:I
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
-    new-instance v3, LyS9;
-
     .line 5
     .line 6
-    const-string v4, "DEFAULT"
+    check-cast p1, Lmid;
 
     .line 7
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {p1}, Lmid;->i()Ljava/lang/Object;
 
     .line 9
     .line 10
     .line 11
-    sput-object v3, LyS9;->a:LyS9;
+    move-result-object p1
 
     .line 12
+    check-cast p1, Lyd8;
+
     .line 13
-    new-instance v4, LyS9;
-
     .line 14
+    if-eqz p1, :cond_0
+
     .line 15
-    const-string v5, "NONE"
-
     .line 16
-    .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iget-object p1, p1, Lyd8;->b:Ljava/util/ArrayList;
 
+    .line 17
     .line 18
+    goto :goto_0
+
     .line 19
+    :cond_0
+    const/4 p1, 0x0
+
     .line 20
-    sput-object v4, LyS9;->b:LyS9;
+    :goto_0
+    iget-object v0, p0, LyS9;->b:LzS9;
 
     .line 21
     .line 22
-    new-instance v5, LyS9;
+    iput-object p1, v0, LzS9;->f:Ljava/util/List;
 
     .line 23
     .line 24
-    const-string v6, "WITH_ONBOARDING"
+    return-void
 
     .line 25
-    .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :pswitch_0
+    check-cast p1, Lmid;
 
+    .line 26
     .line 27
+    iget-object v0, p0, LyS9;->b:LzS9;
+
     .line 28
     .line 29
-    sput-object v5, LyS9;->c:LyS9;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 30
     .line 31
-    const/4 v6, 0x3
-
     .line 32
-    new-array v6, v6, [LyS9;
+    invoke-virtual {p1}, Lmid;->i()Ljava/lang/Object;
 
     .line 33
     .line 34
-    aput-object v3, v6, v2
-
     .line 35
+    move-result-object p1
+
     .line 36
-    aput-object v4, v6, v1
+    check-cast p1, Lyd8;
 
     .line 37
     .line 38
-    aput-object v5, v6, v0
+    if-eqz p1, :cond_1
 
     .line 39
     .line 40
-    sput-object v6, LyS9;->t:[LyS9;
+    iget p1, p1, Lyd8;->a:I
 
     .line 41
     .line 42
+    goto :goto_1
+
+    .line 43
+    :cond_1
+    const/16 p1, 0x3c
+
+    .line 44
+    .line 45
+    :goto_1
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    iget-object v0, v0, LzS9;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 50
+    .line 51
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 52
+    .line 53
+    .line 54
     return-void
-.end method
 
-.method public static valueOf(Ljava/lang/String;)LyS9;
-    .locals 1
-
-    .line 1
-    const-class v0, LyS9;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LyS9;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LyS9;
-    .locals 1
-
-    .line 1
-    sget-object v0, LyS9;->t:[LyS9;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LyS9;
-
-    .line 8
-    .line 9
-    return-object v0
+    .line 55
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

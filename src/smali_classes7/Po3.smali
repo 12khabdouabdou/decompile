@@ -1,301 +1,391 @@
-.class public final LPo3;
-.super LJJc;
+.class public final enum LPo3;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic f:I
+# static fields
+.field public static final enum X:LPo3;
 
-.field public final synthetic g:Ljava/lang/Object;
+.field public static final enum Y:LPo3;
+
+.field public static final enum Z:LPo3;
+
+.field public static final enum a:LPo3;
+
+.field public static final enum b:LPo3;
+
+.field public static final enum c:LPo3;
+
+.field public static final enum e0:LPo3;
+
+.field public static final enum f0:LPo3;
+
+.field public static final enum g0:LPo3;
+
+.field public static final enum h0:LPo3;
+
+.field public static final synthetic i0:[LPo3;
+
+.field public static final enum t:LPo3;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 23
 
     .line 1
-    iput p1, p0, LPo3;->f:I
-
-    iput-object p2, p0, LPo3;->g:Ljava/lang/Object;
-
-    invoke-direct {p0}, LRm0;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final b(Landroid/view/View;Ltt3;)V
-    .locals 0
-
-    .line 1
-    iget p2, p0, LPo3;->f:I
+    const/16 v0, 0xa
 
     .line 2
     .line 3
-    packed-switch p2, :pswitch_data_0
+    const/16 v1, 0x9
 
     .line 4
     .line 5
-    .line 6
-    check-cast p1, Lcom/snap/talk/core/ScreenShareVideoWrapperView;
+    const/16 v2, 0x8
 
+    .line 6
     .line 7
+    const/4 v3, 0x7
+
     .line 8
-    return-void
+    const/4 v4, 0x6
 
     .line 9
-    :pswitch_0
-    check-cast p1, Lcom/snap/security/cos/CommunicationInputView;
+    const/4 v5, 0x5
 
     .line 10
-    .line 11
-    return-void
-
-    .line 12
-    nop
-
-    .line 13
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final c(Landroid/view/View;Ljava/lang/Object;Ltt3;)V
-    .locals 5
-
-    .line 1
-    iget p3, p0, LPo3;->f:I
-
-    .line 2
-    .line 3
-    packed-switch p3, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, Lcom/snap/talk/core/ScreenShareVideoWrapperView;
-
-    .line 7
-    .line 8
-    iget-object p3, p0, LPo3;->g:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    check-cast p3, Lmyf;
+    const/4 v6, 0x4
 
     .line 11
+    const/4 v7, 0x3
+
     .line 12
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v8, 0x2
 
     .line 13
+    const/4 v9, 0x1
+
     .line 14
+    const/4 v10, 0x0
+
     .line 15
-    instance-of p3, p2, Ljava/lang/Double;
+    new-instance v11, LPo3;
 
     .line 16
     .line 17
-    if-nez p3, :cond_0
+    const-string v12, "DPA"
 
     .line 18
     .line 19
-    goto :goto_1
+    invoke-direct {v11, v12, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 20
-    :cond_0
-    move-object p3, p2
-
     .line 21
-    check-cast p3, Ljava/lang/Number;
-
     .line 22
-    .line 23
-    invoke-virtual {p3}, Ljava/lang/Number;->doubleValue()D
+    sput-object v11, LPo3;->a:LPo3;
 
+    .line 23
     .line 24
+    new-instance v12, LPo3;
+
     .line 25
     .line 26
-    move-result-wide v0
+    const-string v13, "SCAN"
 
     .line 27
-    sget-object p3, Lcom/snap/talk/FillMode;->FILL:Lcom/snap/talk/FillMode;
-
     .line 28
-    .line 29
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v12, v13, v9}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 29
     .line 30
     .line 31
-    .line 32
-    invoke-static {p3}, LQtk;->h(Ljava/lang/Enum;)I
+    sput-object v12, LPo3;->b:LPo3;
 
+    .line 32
     .line 33
+    new-instance v13, LPo3;
+
     .line 34
     .line 35
-    move-result v2
+    const-string v14, "SCREENSHOP"
 
     .line 36
-    int-to-double v2, v2
-
     .line 37
-    cmpg-double v4, v0, v2
+    invoke-direct {v13, v14, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 38
     .line 39
-    if-nez v4, :cond_1
-
     .line 40
-    .line 41
-    goto :goto_0
+    sput-object v13, LPo3;->c:LPo3;
 
+    .line 41
     .line 42
-    :cond_1
-    sget-object p3, Lcom/snap/talk/FillMode;->FIT:Lcom/snap/talk/FillMode;
+    new-instance v14, LPo3;
 
     .line 43
     .line 44
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v15, "LENS"
 
     .line 45
     .line 46
-    .line 47
-    invoke-static {p3}, LQtk;->h(Ljava/lang/Enum;)I
+    invoke-direct {v14, v15, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 47
     .line 48
     .line 49
-    .line 50
-    move-result v2
+    sput-object v14, LPo3;->t:LPo3;
 
+    .line 50
     .line 51
-    int-to-double v2, v2
+    new-instance v15, LPo3;
 
     .line 52
-    cmpg-double v4, v0, v2
-
     .line 53
+    const/16 v16, 0x3
+
     .line 54
-    if-nez v4, :cond_2
-
     .line 55
-    .line 56
-    goto :goto_0
+    const-string v7, "ATTACHMENT_TOOL"
 
+    .line 56
     .line 57
-    :cond_2
-    invoke-static {p2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-direct {v15, v7, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 58
     .line 59
     .line 60
-    const/4 p3, 0x0
+    sput-object v15, LPo3;->X:LPo3;
 
     .line 61
-    :goto_0
-    if-eqz p3, :cond_3
-
     .line 62
-    .line 63
-    invoke-virtual {p1, p3}, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->handleFillMode(Lcom/snap/talk/FillMode;)V
+    new-instance v7, LPo3;
 
+    .line 63
     .line 64
+    const/16 v17, 0x4
+
     .line 65
     .line 66
-    :cond_3
-    :goto_1
-    return-void
+    const-string v6, "STORE"
 
     .line 67
-    :pswitch_0
-    check-cast p1, Lcom/snap/security/cos/CommunicationInputView;
-
     .line 68
-    .line 69
-    check-cast p2, [B
+    invoke-direct {v7, v6, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 69
     .line 70
     .line 71
-    new-instance p1, LGo3;
+    sput-object v7, LPo3;->Y:LPo3;
 
     .line 72
     .line 73
-    invoke-direct {p1}, LGo3;-><init>()V
+    new-instance v6, LPo3;
 
     .line 74
     .line 75
-    .line 76
-    invoke-static {p1, p2}, Lcom/google/protobuf/nano/MessageNano;->mergeFrom(Lcom/google/protobuf/nano/MessageNano;[B)Lcom/google/protobuf/nano/MessageNano;
+    const/16 v18, 0x5
 
+    .line 76
     .line 77
+    const-string v5, "FAVORITES"
+
     .line 78
     .line 79
-    move-result-object p1
+    invoke-direct {v6, v5, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 80
-    check-cast p1, LGo3;
-
     .line 81
     .line 82
-    iget-object p2, p0, LPo3;->g:Ljava/lang/Object;
+    sput-object v6, LPo3;->Z:LPo3;
 
     .line 83
     .line 84
-    check-cast p2, Lxj3;
+    new-instance v5, LPo3;
 
     .line 85
     .line 86
-    iget-object p2, p2, Lxj3;->Z:Ljava/lang/Object;
+    const/16 v19, 0x6
 
     .line 87
     .line 88
-    check-cast p2, Lbke;
+    const-string v4, "SHOPPING_STICKERS"
 
     .line 89
     .line 90
-    invoke-interface {p2}, Lbke;->get()Ljava/lang/Object;
+    invoke-direct {v5, v4, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 91
     .line 92
     .line 93
-    move-result-object p2
+    sput-object v5, LPo3;->e0:LPo3;
 
     .line 94
-    check-cast p2, LpLa;
-
     .line 95
+    new-instance v4, LPo3;
+
     .line 96
-    new-instance p3, Ljava/util/HashMap;
-
     .line 97
+    const/16 v20, 0x7
+
     .line 98
-    iget-object p1, p1, LGo3;->X:Ljava/util/Map;
-
     .line 99
+    const-string v3, "SHOWCASE_AD"
+
     .line 100
-    if-nez p1, :cond_4
-
     .line 101
-    .line 102
-    sget-object p1, LuL6;->a:LuL6;
+    invoke-direct {v4, v3, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 102
     .line 103
     .line 104
-    :cond_4
-    invoke-direct {p3, p1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+    sput-object v4, LPo3;->f0:LPo3;
 
     .line 105
     .line 106
-    .line 107
-    invoke-interface {p2, p3}, LpLa;->G(Ljava/util/HashMap;)V
+    new-instance v3, LPo3;
 
+    .line 107
     .line 108
+    const/16 v21, 0x8
+
     .line 109
     .line 110
-    return-void
+    const-string v2, "TOPIC_EXPERIENCE"
 
     .line 111
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 112
+    invoke-direct {v3, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 113
+    .line 114
+    .line 115
+    sput-object v3, LPo3;->g0:LPo3;
+
+    .line 116
+    .line 117
+    new-instance v2, LPo3;
+
+    .line 118
+    .line 119
+    const/16 v22, 0x9
+
+    .line 120
+    .line 121
+    const-string v1, "UNSET"
+
+    .line 122
+    .line 123
+    invoke-direct {v2, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 124
+    .line 125
+    .line 126
+    sput-object v2, LPo3;->h0:LPo3;
+
+    .line 127
+    .line 128
+    const/16 v1, 0xb
+
+    .line 129
+    .line 130
+    new-array v1, v1, [LPo3;
+
+    .line 131
+    .line 132
+    aput-object v11, v1, v10
+
+    .line 133
+    .line 134
+    aput-object v12, v1, v9
+
+    .line 135
+    .line 136
+    aput-object v13, v1, v8
+
+    .line 137
+    .line 138
+    aput-object v14, v1, v16
+
+    .line 139
+    .line 140
+    aput-object v15, v1, v17
+
+    .line 141
+    .line 142
+    aput-object v7, v1, v18
+
+    .line 143
+    .line 144
+    aput-object v6, v1, v19
+
+    .line 145
+    .line 146
+    aput-object v5, v1, v20
+
+    .line 147
+    .line 148
+    aput-object v4, v1, v21
+
+    .line 149
+    .line 150
+    aput-object v3, v1, v22
+
+    .line 151
+    .line 152
+    aput-object v2, v1, v0
+
+    .line 153
+    .line 154
+    sput-object v1, LPo3;->i0:[LPo3;
+
+    .line 155
+    .line 156
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LPo3;
+    .locals 1
+
+    .line 1
+    const-class v0, LPo3;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LPo3;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LPo3;
+    .locals 1
+
+    .line 1
+    sget-object v0, LPo3;->i0:[LPo3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LPo3;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

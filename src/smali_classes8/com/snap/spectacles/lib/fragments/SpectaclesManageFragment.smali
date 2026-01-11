@@ -3,19 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Le8h;
+.implements LPth;
 
 
 # static fields
-.field public static final A1:LcSa;
+.field public static final A1:LL4b;
 
-.field public static final B1:Lcqc;
+.field public static final B1:LxFc;
 
-.field public static final C1:LZpc;
+.field public static final C1:LuFc;
 
 
 # instance fields
-.field public A0:LTqc;
+.field public A0:LmGc;
 
 .field public B0:Landroid/view/View;
 
@@ -115,32 +115,32 @@
 
 .field public final x1:I
 
-.field public y0:LNGg;
+.field public y0:LCih;
 
 .field public final y1:Z
 
-.field public z0:Ld8h;
+.field public z0:LOth;
 
-.field public final z1:LKx2;
+.field public final z1:LL5;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 12
 
     .line 1
-    new-instance v0, LcSa;
+    new-instance v0, LL4b;
 
     .line 2
     .line 3
-    sget-object v1, Ly5h;->Z:Ly5h;
+    sget-object v1, Lqrh;->Z:Lqrh;
 
     .line 4
     .line 5
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     .line 6
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     .line 7
     const-string v2, "SpectaclesManageFragment"
@@ -162,50 +162,53 @@
     const/4 v7, 0x0
 
     .line 14
-    const/16 v10, 0x3ffc
+    const/4 v8, 0x0
 
     .line 15
-    .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v11, 0x7ffc
 
+    .line 16
     .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 18
     .line 19
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->A1:LcSa;
-
     .line 20
-    .line 21
-    sget-object v1, LW5d;->N:Lm7b;
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->A1:LL4b;
 
+    .line 21
     .line 22
+    sget-object v1, Luld;->O:LtOc;
+
     .line 23
+    .line 24
     const/4 v2, 0x1
 
-    .line 24
-    invoke-static {v1, v0, v2}, Lm7b;->i(LW5d;LcSa;Z)Lcqc;
-
     .line 25
+    invoke-static {v1, v0, v2}, LJea;->h(Luld;LL4b;Z)LxFc;
+
     .line 26
     .line 27
-    move-result-object v0
-
     .line 28
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->B1:Lcqc;
+    move-result-object v0
 
     .line 29
-    .line 30
-    invoke-virtual {v0}, Lcqc;->p()LZpc;
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->B1:LxFc;
 
+    .line 30
     .line 31
+    invoke-virtual {v0}, LxFc;->p()LuFc;
+
     .line 32
     .line 33
+    .line 34
     move-result-object v0
 
-    .line 34
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->C1:LZpc;
-
     .line 35
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->C1:LuFc;
+
     .line 36
+    .line 37
     return-void
 .end method
 
@@ -218,7 +221,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0e03f5
+    const v0, 0x7f0e0419
 
     .line 5
     .line 6
@@ -227,7 +230,7 @@
 
     .line 8
     .line 9
-    const v0, 0x7f131c1d
+    const v0, 0x7f131d70
 
     .line 10
     .line 11
@@ -236,7 +239,7 @@
 
     .line 13
     .line 14
-    const v0, 0x7f131c1c
+    const v0, 0x7f131d6f
 
     .line 15
     .line 16
@@ -245,7 +248,7 @@
 
     .line 18
     .line 19
-    const v0, 0x7f131c3e
+    const v0, 0x7f131d91
 
     .line 20
     .line 21
@@ -254,7 +257,7 @@
 
     .line 23
     .line 24
-    const v0, 0x7f131c3d
+    const v0, 0x7f131d90
 
     .line 25
     .line 26
@@ -263,7 +266,7 @@
 
     .line 28
     .line 29
-    const v0, 0x7f131c26
+    const v0, 0x7f131d79
 
     .line 30
     .line 31
@@ -272,7 +275,7 @@
 
     .line 33
     .line 34
-    const v0, 0x7f131c28
+    const v0, 0x7f131d7b
 
     .line 35
     .line 36
@@ -281,7 +284,7 @@
 
     .line 38
     .line 39
-    const v0, 0x7f131c27
+    const v0, 0x7f131d7a
 
     .line 40
     .line 41
@@ -290,7 +293,7 @@
 
     .line 43
     .line 44
-    const v0, 0x7f131c44
+    const v0, 0x7f131d97
 
     .line 45
     .line 46
@@ -299,7 +302,7 @@
 
     .line 48
     .line 49
-    const v0, 0x7f131c46
+    const v0, 0x7f131d99
 
     .line 50
     .line 51
@@ -308,7 +311,7 @@
 
     .line 53
     .line 54
-    const v0, 0x7f131c45
+    const v0, 0x7f131d98
 
     .line 55
     .line 56
@@ -317,7 +320,7 @@
 
     .line 58
     .line 59
-    const v0, 0x7f133407
+    const v0, 0x7f1336cf
 
     .line 60
     .line 61
@@ -326,7 +329,7 @@
 
     .line 63
     .line 64
-    const v0, 0x7f130c37
+    const v0, 0x7f130cbd
 
     .line 65
     .line 66
@@ -335,7 +338,7 @@
 
     .line 68
     .line 69
-    const v0, 0x7f131c42
+    const v0, 0x7f131d95
 
     .line 70
     .line 71
@@ -344,7 +347,7 @@
 
     .line 73
     .line 74
-    const v0, 0x7f131c4a
+    const v0, 0x7f131d9d
 
     .line 75
     .line 76
@@ -353,7 +356,7 @@
 
     .line 78
     .line 79
-    const v0, 0x7f131c48
+    const v0, 0x7f131d9b
 
     .line 80
     .line 81
@@ -362,7 +365,7 @@
 
     .line 83
     .line 84
-    const v0, 0x7f133495
+    const v0, 0x7f13375d
 
     .line 85
     .line 86
@@ -371,7 +374,7 @@
 
     .line 88
     .line 89
-    const v0, 0x7f1333cd
+    const v0, 0x7f133693
 
     .line 90
     .line 91
@@ -380,7 +383,7 @@
 
     .line 93
     .line 94
-    const v0, 0x7f133493
+    const v0, 0x7f13375b
 
     .line 95
     .line 96
@@ -389,7 +392,7 @@
 
     .line 98
     .line 99
-    const v0, 0x7f133429
+    const v0, 0x7f1336f1
 
     .line 100
     .line 101
@@ -398,7 +401,7 @@
 
     .line 103
     .line 104
-    const v0, 0x7f133492
+    const v0, 0x7f13375a
 
     .line 105
     .line 106
@@ -407,7 +410,7 @@
 
     .line 108
     .line 109
-    const v0, 0x7f133428
+    const v0, 0x7f1336f0
 
     .line 110
     .line 111
@@ -416,7 +419,7 @@
 
     .line 113
     .line 114
-    const v0, 0x7f133444
+    const v0, 0x7f13370c
 
     .line 115
     .line 116
@@ -425,7 +428,7 @@
 
     .line 118
     .line 119
-    const v0, 0x7f13342a
+    const v0, 0x7f1336f2
 
     .line 120
     .line 121
@@ -434,7 +437,7 @@
 
     .line 123
     .line 124
-    const v0, 0x7f131c47
+    const v0, 0x7f131d9a
 
     .line 125
     .line 126
@@ -443,7 +446,7 @@
 
     .line 128
     .line 129
-    const v0, 0x7f131c49
+    const v0, 0x7f131d9c
 
     .line 130
     .line 131
@@ -452,7 +455,7 @@
 
     .line 133
     .line 134
-    const v0, 0x7f13348d
+    const v0, 0x7f133755
 
     .line 135
     .line 136
@@ -468,20 +471,20 @@
 
     .line 141
     .line 142
-    new-instance v0, LKx2;
+    new-instance v0, LL5;
 
     .line 143
     .line 144
-    const/16 v1, 0x14
+    const/16 v1, 0x15
 
     .line 145
     .line 146
-    invoke-direct {v0, v1, p0}, LKx2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LL5;-><init>(ILjava/lang/Object;)V
 
     .line 147
     .line 148
     .line 149
-    iput-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z1:LKx2;
+    iput-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z1:LL5;
 
     .line 150
     .line 151
@@ -567,7 +570,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 20
     .line 21
@@ -575,7 +578,7 @@
     move-result-object p0
 
     .line 23
-    invoke-virtual {p0}, Ld8h;->a3()Lh4h;
+    invoke-virtual {p0}, LOth;->g3()LZph;
 
     .line 24
     .line 25
@@ -583,20 +586,20 @@
     move-result-object v0
 
     .line 27
-    new-instance v1, Lmof;
+    new-instance v1, LXhg;
 
     .line 28
     .line 29
-    const/16 v2, 0x12
+    const/16 v2, 0x10
 
     .line 30
     .line 31
-    invoke-direct {v1, p1, p0, v2}, Lmof;-><init>(ZLjava/lang/Object;I)V
+    invoke-direct {v1, p1, p0, v2}, LXhg;-><init>(ZLjava/lang/Object;I)V
 
     .line 32
     .line 33
     .line 34
-    invoke-virtual {v0}, Lh4h;->k()Lqu1;
+    invoke-virtual {v0}, LZph;->k()LHx1;
 
     .line 35
     .line 36
@@ -608,11 +611,11 @@
 
     .line 39
     .line 40
-    iget-object v0, p0, Lqu1;->a:LZyk;
+    iget-object v0, p0, LHx1;->a:LOZ;
 
     .line 41
     .line 42
-    invoke-virtual {v0, p1}, LZyk;->U(Z)LZ7;
+    invoke-virtual {v0, p1}, LOZ;->W(Z)LH8;
 
     .line 43
     .line 44
@@ -620,7 +623,7 @@
     move-result-object p1
 
     .line 46
-    invoke-virtual {p0, p1, v1}, Lqu1;->b(LZ7;LW1h;)V
+    invoke-virtual {p0, p1, v1}, LHx1;->b(LH8;LPnh;)V
 
     .line 47
     .line 48
@@ -634,7 +637,7 @@
 
     .line 51
     .line 52
-    invoke-static {p0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 53
     .line 54
@@ -647,7 +650,7 @@
 
     .line 57
     .line 58
-    invoke-static {p0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 59
     .line 60
@@ -657,72 +660,6 @@
 
 
 # virtual methods
-.method public A1(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
-
-    .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    if-nez v0, :cond_0
-
-    .line 19
-    .line 20
-    const-string v0, ""
-
-    .line 21
-    .line 22
-    :cond_0
-    iput-object v0, p1, Ld8h;->i0:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    invoke-virtual {p1, p0}, Ld8h;->q3(Le8h;)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-.end method
-
 .method public A2()I
     .locals 1
 
@@ -743,6 +680,26 @@
     .line 2
     .line 3
     return v0
+.end method
+
+.method public C1()V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, LOth;->D1()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
 .end method
 
 .method public C2()I
@@ -767,8 +724,1321 @@
     return v0
 .end method
 
-.method public E0(LFvk;)V
-    .locals 28
+.method public E2()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->y1:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public F2(LZph;)V
+    .locals 4
+
+    .line 1
+    new-instance v0, LHM7;
+
+    .line 2
+    .line 3
+    sget-object v1, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->G0:LL4b;
+
+    .line 4
+    .line 5
+    iget-object p1, p1, LZph;->d:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    new-instance v2, Landroid/os/Bundle;
+
+    .line 8
+    .line 9
+    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    const-string v3, "ARG_KEY_DEVICE_SERIAL_NUMBER"
+
+    .line 13
+    .line 14
+    invoke-virtual {v2, v3, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    new-instance p1, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;
+
+    .line 18
+    .line 19
+    invoke-direct {p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1, v2}, Landroidx/fragment/app/g;->setArguments(Landroid/os/Bundle;)V
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance v2, LFFc;
+
+    .line 26
+    .line 27
+    invoke-direct {v2}, LFFc;-><init>()V
+
+    .line 28
+    .line 29
+    .line 30
+    sget-object v3, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->I0:LuFc;
+
+    .line 31
+    .line 32
+    invoke-virtual {v2, v3}, LEFc;->c(LyFc;)LEFc;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v2
+
+    .line 36
+    check-cast v2, LFFc;
+
+    .line 37
+    .line 38
+    invoke-virtual {v2}, LFFc;->d()LJO5;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v2
+
+    .line 42
+    invoke-direct {v0, v1, p1, v2}, LHM7;-><init>(LL4b;Lcom/snapchat/deck/fragment/MainPageFragment;LHFc;)V
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    sget-object v1, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->H0:LxFc;
+
+    .line 50
+    .line 51
+    const/4 v2, 0x0
+
+    .line 52
+    invoke-virtual {p1, v0, v1, v2}, LmGc;->w(LG4b;LyFc;LkFc;)V
+
+    .line 53
+    .line 54
+    .line 55
+    return-void
+.end method
+
+.method public G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->j2()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p3
+
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    const p2, 0x7f0b0bda
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p2
+
+    .line 17
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->B0:Landroid/view/View;
+
+    .line 18
+    .line 19
+    const p2, 0x7f0b0bdc
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p2
+
+    .line 26
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 27
+    .line 28
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->C0:Landroid/widget/TextView;
+
+    .line 29
+    .line 30
+    const p2, 0x7f0b0bec
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p2
+
+    .line 37
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->D0:Landroid/view/View;
+
+    .line 38
+    .line 39
+    const p2, 0x7f0b0bdb
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p2
+
+    .line 46
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->E0:Landroid/view/View;
+
+    .line 47
+    .line 48
+    const p2, 0x7f0b0bed
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object p2
+
+    .line 55
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 56
+    .line 57
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->F0:Landroid/widget/TextView;
+
+    .line 58
+    .line 59
+    const p2, 0x7f0b0bdd
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object p2
+
+    .line 66
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->G0:Landroid/view/View;
+
+    .line 67
+    .line 68
+    const p2, 0x7f0b0bdf
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p2
+
+    .line 75
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 76
+    .line 77
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->R0:Landroid/widget/TextView;
+
+    .line 78
+    .line 79
+    const p2, 0x7f0b0bde
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p2
+
+    .line 86
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->H0:Landroid/view/View;
+
+    .line 87
+    .line 88
+    const p2, 0x7f0b0be8
+
+    .line 89
+    .line 90
+    .line 91
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object p2
+
+    .line 95
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->I0:Landroid/view/View;
+
+    .line 96
+    .line 97
+    const p2, 0x7f0b0be9
+
+    .line 98
+    .line 99
+    .line 100
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object p2
+
+    .line 104
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 105
+    .line 106
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->T0:Landroid/widget/TextView;
+
+    .line 107
+    .line 108
+    const p2, 0x7f0b0bea
+
+    .line 109
+    .line 110
+    .line 111
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object p2
+
+    .line 115
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->J0:Landroid/view/View;
+
+    .line 116
+    .line 117
+    const p2, 0x7f0b17df
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 121
+    .line 122
+    .line 123
+    move-result-object p2
+
+    .line 124
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 125
+    .line 126
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->W0:Landroid/widget/TextView;
+
+    .line 127
+    .line 128
+    const p2, 0x7f0b0be2
+
+    .line 129
+    .line 130
+    .line 131
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 132
+    .line 133
+    .line 134
+    move-result-object p2
+
+    .line 135
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->P0:Landroid/view/View;
+
+    .line 136
+    .line 137
+    const p2, 0x7f0b0be1
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-object p2
+
+    .line 144
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 145
+    .line 146
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->S0:Landroid/widget/TextView;
+
+    .line 147
+    .line 148
+    const p2, 0x7f0b0beb
+
+    .line 149
+    .line 150
+    .line 151
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 152
+    .line 153
+    .line 154
+    move-result-object p2
+
+    .line 155
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->Q0:Landroid/view/View;
+
+    .line 156
+    .line 157
+    const p2, 0x7f0b17e1
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object p2
+
+    .line 164
+    check-cast p2, Lcom/snap/ui/view/ScHeaderView;
+
+    .line 165
+    .line 166
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->V0:Lcom/snap/ui/view/ScHeaderView;
+
+    .line 167
+    .line 168
+    const p2, 0x7f0b1800
+
+    .line 169
+    .line 170
+    .line 171
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 172
+    .line 173
+    .line 174
+    move-result-object p2
+
+    .line 175
+    check-cast p2, Lcom/snap/component/cells/SnapSettingsCellView;
+
+    .line 176
+    .line 177
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->K0:Lcom/snap/component/cells/SnapSettingsCellView;
+
+    .line 178
+    .line 179
+    const p2, 0x7f0b17e2
+
+    .line 180
+    .line 181
+    .line 182
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 183
+    .line 184
+    .line 185
+    move-result-object p2
+
+    .line 186
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->L0:Landroid/view/View;
+
+    .line 187
+    .line 188
+    const p2, 0x7f0b17c9
+
+    .line 189
+    .line 190
+    .line 191
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 192
+    .line 193
+    .line 194
+    move-result-object p2
+
+    .line 195
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->M0:Landroid/view/View;
+
+    .line 196
+    .line 197
+    const p2, 0x7f0b17cc
+
+    .line 198
+    .line 199
+    .line 200
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 201
+    .line 202
+    .line 203
+    move-result-object p2
+
+    .line 204
+    check-cast p2, Landroid/widget/CheckBox;
+
+    .line 205
+    .line 206
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->N0:Landroid/widget/CheckBox;
+
+    .line 207
+    .line 208
+    const p2, 0x7f0b17de
+
+    .line 209
+    .line 210
+    .line 211
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 212
+    .line 213
+    .line 214
+    move-result-object p2
+
+    .line 215
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 216
+    .line 217
+    const p2, 0x7f0b17cd
+
+    .line 218
+    .line 219
+    .line 220
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 221
+    .line 222
+    .line 223
+    move-result-object p2
+
+    .line 224
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->O0:Landroid/view/View;
+
+    .line 225
+    .line 226
+    const p2, 0x7f0b17dc
+
+    .line 227
+    .line 228
+    .line 229
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 230
+    .line 231
+    .line 232
+    move-result-object p2
+
+    .line 233
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 234
+    .line 235
+    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->U0:Landroid/widget/TextView;
+
+    .line 236
+    .line 237
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->K0:Lcom/snap/component/cells/SnapSettingsCellView;
+
+    .line 238
+    .line 239
+    const/4 p3, 0x0
+
+    .line 240
+    if-eqz p2, :cond_5
+
+    .line 241
+    .line 242
+    new-instance v1, LSfh;
+
+    .line 243
+    .line 244
+    const/16 v2, 0xd
+
+    .line 245
+    .line 246
+    invoke-direct {v1, v2, p0}, LSfh;-><init>(ILjava/lang/Object;)V
+
+    .line 247
+    .line 248
+    .line 249
+    iput-object v1, p2, Lm3h;->x0:Ljava/lang/Object;
+
+    .line 250
+    .line 251
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->L0:Landroid/view/View;
+
+    .line 252
+    .line 253
+    if-eqz p2, :cond_4
+
+    .line 254
+    .line 255
+    new-instance v1, LDth;
+
+    .line 256
+    .line 257
+    const/4 v2, 0x0
+
+    .line 258
+    invoke-direct {v1, p0, v2}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 259
+    .line 260
+    .line 261
+    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 262
+    .line 263
+    .line 264
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->B0:Landroid/view/View;
+
+    .line 265
+    .line 266
+    if-eqz p2, :cond_3
+
+    .line 267
+    .line 268
+    new-instance v1, LDth;
+
+    .line 269
+    .line 270
+    const/4 v2, 0x1
+
+    .line 271
+    invoke-direct {v1, p0, v2}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 272
+    .line 273
+    .line 274
+    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 275
+    .line 276
+    .line 277
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->G0:Landroid/view/View;
+
+    .line 278
+    .line 279
+    if-eqz p2, :cond_2
+
+    .line 280
+    .line 281
+    new-instance v1, LDth;
+
+    .line 282
+    .line 283
+    const/4 v2, 0x2
+
+    .line 284
+    invoke-direct {v1, p0, v2}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 285
+    .line 286
+    .line 287
+    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 288
+    .line 289
+    .line 290
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->I0:Landroid/view/View;
+
+    .line 291
+    .line 292
+    if-eqz p2, :cond_1
+
+    .line 293
+    .line 294
+    new-instance v1, LDth;
+
+    .line 295
+    .line 296
+    const/4 v2, 0x3
+
+    .line 297
+    invoke-direct {v1, p0, v2}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 298
+    .line 299
+    .line 300
+    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 301
+    .line 302
+    .line 303
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->g2()Landroid/view/View;
+
+    .line 304
+    .line 305
+    .line 306
+    move-result-object p2
+
+    .line 307
+    new-instance v1, LDth;
+
+    .line 308
+    .line 309
+    const/4 v2, 0x6
+
+    .line 310
+    invoke-direct {v1, p0, v2}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 311
+    .line 312
+    .line 313
+    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 314
+    .line 315
+    .line 316
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->p2()Lcom/snap/ui/view/ScHeaderView;
+
+    .line 317
+    .line 318
+    .line 319
+    move-result-object p2
+
+    .line 320
+    new-instance v1, LDth;
+
+    .line 321
+    .line 322
+    const/4 v2, 0x4
+
+    .line 323
+    invoke-direct {v1, p0, v2}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 324
+    .line 325
+    .line 326
+    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 327
+    .line 328
+    .line 329
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->p2()Lcom/snap/ui/view/ScHeaderView;
+
+    .line 330
+    .line 331
+    .line 332
+    move-result-object p2
+
+    .line 333
+    const v1, 0x7f0b144d
+
+    .line 334
+    .line 335
+    .line 336
+    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 337
+    .line 338
+    .line 339
+    move-result-object p2
+
+    .line 340
+    check-cast p2, Landroid/widget/TextView;
+
+    .line 341
+    .line 342
+    const v1, 0x7f080933
+
+    .line 343
+    .line 344
+    .line 345
+    invoke-virtual {p2, v0, v0, v1, v0}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
+
+    .line 346
+    .line 347
+    .line 348
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
+
+    .line 349
+    .line 350
+    .line 351
+    move-result-object v0
+
+    .line 352
+    const v1, 0x7f070541
+
+    .line 353
+    .line 354
+    .line 355
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    .line 356
+    .line 357
+    .line 358
+    move-result v0
+
+    .line 359
+    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
+
+    .line 360
+    .line 361
+    .line 362
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->N0:Landroid/widget/CheckBox;
+
+    .line 363
+    .line 364
+    if-eqz p2, :cond_0
+
+    .line 365
+    .line 366
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z1:LL5;
+
+    .line 367
+    .line 368
+    invoke-virtual {p2, p3}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+
+    .line 369
+    .line 370
+    .line 371
+    return-object p1
+
+    .line 372
+    :cond_0
+    const-string p1, "enableLocationCheckbox"
+
+    .line 373
+    .line 374
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 375
+    .line 376
+    .line 377
+    throw p3
+
+    .line 378
+    :cond_1
+    const-string p1, "restartSpecsContainer"
+
+    .line 379
+    .line 380
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 381
+    .line 382
+    .line 383
+    throw p3
+
+    .line 384
+    :cond_2
+    const-string p1, "clearContentContainer"
+
+    .line 385
+    .line 386
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 387
+    .line 388
+    .line 389
+    throw p3
+
+    .line 390
+    :cond_3
+    const-string p1, "checkForUpdatesContainer"
+
+    .line 391
+    .line 392
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 393
+    .line 394
+    .line 395
+    throw p3
+
+    .line 396
+    :cond_4
+    const-string p1, "notificationSettingsView"
+
+    .line 397
+    .line 398
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 399
+    .line 400
+    .line 401
+    throw p3
+
+    .line 402
+    :cond_5
+    const-string p1, "saveToSelectionView"
+
+    .line 403
+    .line 404
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 405
+    .line 406
+    .line 407
+    throw p3
+.end method
+
+.method public G2()V
+    .locals 12
+
+    .line 1
+    new-instance v0, LL4b;
+
+    .line 2
+    .line 3
+    sget-object v1, Lqrh;->Z:Lqrh;
+
+    .line 4
+    .line 5
+    const/4 v9, 0x0
+
+    .line 6
+    const/4 v10, 0x0
+
+    .line 7
+    const-string v2, "spectacles_unpair"
+
+    .line 8
+    .line 9
+    const/4 v3, 0x0
+
+    .line 10
+    const/4 v4, 0x1
+
+    .line 11
+    const/4 v5, 0x0
+
+    .line 12
+    const/4 v6, 0x0
+
+    .line 13
+    const/4 v7, 0x0
+
+    .line 14
+    const/4 v8, 0x0
+
+    .line 15
+    const/16 v11, 0x7ff4
+
+    .line 16
+    .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    new-instance v1, LYa6;
+
+    .line 21
+    .line 22
+    move-object v3, v0
+
+    .line 23
+    move-object v0, v1
+
+    .line 24
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v2
+
+    .line 32
+    const/4 v4, 0x0
+
+    .line 33
+    const/4 v5, 0x0
+
+    .line 34
+    const/16 v6, 0xf8
+
+    .line 35
+    .line 36
+    invoke-direct/range {v0 .. v6}, LYa6;-><init>(Landroid/content/Context;LmGc;LL4b;ZLPjh;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z2()I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v1
+
+    .line 43
+    invoke-virtual {v0, v1}, LYa6;->w(I)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->v2()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v1
+
+    .line 50
+    invoke-virtual {v0, v1}, LYa6;->j(I)V
+
+    .line 51
+    .line 52
+    .line 53
+    new-instance v1, LEth;
+
+    .line 54
+    .line 55
+    const/4 v2, 0x2
+
+    .line 56
+    invoke-direct {v1, p0, v2}, LEth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    const v2, 0x7f133b91
+
+    .line 60
+    .line 61
+    .line 62
+    const/4 v3, 0x1
+
+    .line 63
+    const/16 v4, 0x8
+
+    .line 64
+    .line 65
+    invoke-static {v0, v2, v1, v3, v4}, LYa6;->c(LYa6;ILkotlin/jvm/functions/Function1;ZI)V
+
+    .line 66
+    .line 67
+    .line 68
+    const/4 v1, 0x0
+
+    .line 69
+    const/4 v2, 0x0
+
+    .line 70
+    const/16 v3, 0x1f
+
+    .line 71
+    .line 72
+    invoke-static {v0, v2, v1, v2, v3}, LYa6;->h(LYa6;Lkotlin/jvm/functions/Function1;ZLjava/lang/Integer;I)V
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {v0}, LYa6;->b()LZa6;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v0
+
+    .line 79
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v1
+
+    .line 83
+    iget-object v3, v0, LZa6;->m0:LxFc;
+
+    .line 84
+    .line 85
+    invoke-virtual {v1, v0, v3, v2}, LmGc;->w(LG4b;LyFc;LkFc;)V
+
+    .line 86
+    .line 87
+    .line 88
+    return-void
+.end method
+
+.method public final H2(ZZ)V
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const-string v1, "forgetSpecsTextView"
+
+    .line 3
+    .line 4
+    if-eqz p1, :cond_2
+
+    .line 5
+    .line 6
+    if-nez p2, :cond_0
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    iget-object p1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->S0:Landroid/widget/TextView;
+
+    .line 10
+    .line 11
+    if-eqz p1, :cond_1
+
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->x2()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p2
+
+    .line 17
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->g2()Landroid/view/View;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    new-instance p2, LDth;
+
+    .line 25
+    .line 26
+    const/4 v0, 0x5
+
+    .line 27
+    invoke-direct {p2, p0, v0}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-void
+
+    .line 34
+    :cond_1
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 35
+    .line 36
+    .line 37
+    throw v0
+
+    .line 38
+    :cond_2
+    :goto_0
+    iget-object p1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->S0:Landroid/widget/TextView;
+
+    .line 39
+    .line 40
+    if-eqz p1, :cond_3
+
+    .line 41
+    .line 42
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->f2()I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result p2
+
+    .line 46
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->g2()Landroid/view/View;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p1
+
+    .line 53
+    new-instance p2, LDth;
+
+    .line 54
+    .line 55
+    const/4 v0, 0x6
+
+    .line 56
+    invoke-direct {p2, p0, v0}, LDth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 60
+    .line 61
+    .line 62
+    return-void
+
+    .line 63
+    :cond_3
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 64
+    .line 65
+    .line 66
+    throw v0
+.end method
+
+.method public I2(Z)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->I0:Landroid/view/View;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_1
+
+    .line 5
+    .line 6
+    invoke-static {v0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->J2(Landroid/view/View;Z)V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->G0:Landroid/view/View;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    invoke-static {v0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->J2(Landroid/view/View;Z)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :cond_0
+    const-string p1, "clearContentContainer"
+
+    .line 18
+    .line 19
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    throw v1
+
+    .line 23
+    :cond_1
+    const-string p1, "restartSpecsContainer"
+
+    .line 24
+    .line 25
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    throw v1
+.end method
+
+.method public J0(Lcom/google/protobuf/nano/MessageNano;)Z
+    .locals 0
+
+    .line 1
+    instance-of p1, p1, LGO6;
+
+    .line 2
+    .line 3
+    return p1
+.end method
+
+.method public K0(LqUk;)V
+    .locals 29
 
     .line 1
     move-object/from16 v0, p0
@@ -779,7 +2049,7 @@
 
     .line 4
     .line 5
-    instance-of v2, v1, LZ5h;
+    instance-of v2, v1, LRrh;
 
     .line 6
     .line 7
@@ -801,11 +2071,11 @@
 
     .line 14
     .line 15
-    check-cast v1, LZ5h;
+    check-cast v1, LRrh;
 
     .line 16
     .line 17
-    iget v2, v1, LZ5h;->e:I
+    iget v2, v1, LRrh;->e:I
 
     .line 18
     .line 19
@@ -813,7 +2083,7 @@
 
     .line 20
     .line 21
-    invoke-static {v2, v8}, LJV0;->b(II)Z
+    invoke-static {v2, v8}, LYY0;->b(II)Z
 
     .line 22
     .line 23
@@ -826,7 +2096,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-static {v2, v8}, LJV0;->b(II)Z
+    invoke-static {v2, v8}, LYY0;->b(II)Z
 
     .line 29
     .line 30
@@ -834,7 +2104,7 @@
     move-result v9
 
     .line 32
-    iget-boolean v10, v1, LZ5h;->g:Z
+    iget-boolean v10, v1, LRrh;->g:Z
 
     .line 33
     .line 34
@@ -843,11 +2113,11 @@
     .line 35
     .line 36
     .line 37
-    iget-boolean v9, v1, LZ5h;->d:Z
+    iget-boolean v9, v1, LRrh;->d:Z
 
     .line 38
     .line 39
-    const v11, 0x7f0601be
+    const v11, 0x7f0601f0
 
     .line 40
     .line 41
@@ -888,7 +2158,7 @@
     move-result-object v2
 
     .line 60
-    invoke-static {v2, v11}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v2, v11}, LV14;->c(Landroid/content/Context;I)I
 
     .line 61
     .line 62
@@ -909,7 +2179,7 @@
 
     .line 70
     .line 71
-    const v2, 0x7f130b4a
+    const v2, 0x7f130bcd
 
     .line 72
     .line 73
@@ -975,7 +2245,7 @@
 
     .line 106
     :cond_0
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 107
     .line 108
@@ -984,7 +2254,7 @@
 
     .line 110
     :cond_1
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 111
     .line 112
@@ -993,7 +2263,7 @@
 
     .line 114
     :cond_2
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 115
     .line 116
@@ -1002,7 +2272,7 @@
 
     .line 118
     :cond_3
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 119
     .line 120
@@ -1011,7 +2281,7 @@
 
     .line 122
     :cond_4
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 123
     .line 124
@@ -1020,7 +2290,7 @@
 
     .line 126
     :cond_5
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 127
     .line 128
@@ -1029,7 +2299,7 @@
 
     .line 130
     :cond_6
-    iget-object v9, v1, LZ5h;->a:Lqv7;
+    iget-object v9, v1, LRrh;->a:LkA7;
 
     .line 131
     .line 132
@@ -1051,7 +2321,7 @@
     .line 139
     .line 140
     .line 141
-    iget v4, v1, LZ5h;->f:F
+    iget v4, v1, LRrh;->f:F
 
     .line 142
     .line 143
@@ -1071,7 +2341,7 @@
     move-result v7
 
     .line 151
-    const v8, 0x7f130b49
+    const v8, 0x7f130bcc
 
     .line 152
     .line 153
@@ -1102,7 +2372,7 @@
     move-result-object v4
 
     .line 167
-    invoke-static {v4, v11}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v4, v11}, LV14;->c(Landroid/content/Context;I)I
 
     .line 168
     .line 169
@@ -1212,7 +2482,7 @@
 
     .line 224
     :cond_8
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 225
     .line 226
@@ -1221,7 +2491,7 @@
 
     .line 228
     :cond_9
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 229
     .line 230
@@ -1230,7 +2500,7 @@
 
     .line 232
     :cond_a
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 233
     .line 234
@@ -1239,7 +2509,7 @@
 
     .line 236
     :cond_b
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 237
     .line 238
@@ -1248,7 +2518,7 @@
 
     .line 240
     :cond_c
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 241
     .line 242
@@ -1257,7 +2527,7 @@
 
     .line 244
     :cond_d
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 245
     .line 246
@@ -1266,7 +2536,7 @@
 
     .line 248
     :cond_e
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 249
     .line 250
@@ -1291,7 +2561,7 @@
     move-result-object v2
 
     .line 260
-    invoke-static {v2, v11}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v2, v11}, LV14;->c(Landroid/content/Context;I)I
 
     .line 261
     .line 262
@@ -1312,7 +2582,7 @@
 
     .line 270
     .line 271
-    const v2, 0x7f1338e2
+    const v2, 0x7f133bc3
 
     .line 272
     .line 273
@@ -1395,7 +2665,7 @@
 
     .line 315
     :cond_f
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 316
     .line 317
@@ -1404,7 +2674,7 @@
 
     .line 319
     :cond_10
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 320
     .line 321
@@ -1413,7 +2683,7 @@
 
     .line 323
     :cond_11
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 324
     .line 325
@@ -1422,7 +2692,7 @@
 
     .line 327
     :cond_12
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 328
     .line 329
@@ -1431,7 +2701,7 @@
 
     .line 331
     :cond_13
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 332
     .line 333
@@ -1440,7 +2710,7 @@
 
     .line 335
     :cond_14
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 336
     .line 337
@@ -1449,7 +2719,7 @@
 
     .line 339
     :cond_15
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 340
     .line 341
@@ -1474,7 +2744,7 @@
     move-result-object v2
 
     .line 351
-    invoke-static {v2, v11}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v2, v11}, LV14;->c(Landroid/content/Context;I)I
 
     .line 352
     .line 353
@@ -1495,7 +2765,7 @@
 
     .line 361
     .line 362
-    const v2, 0x7f132a27
+    const v2, 0x7f132c88
 
     .line 363
     .line 364
@@ -1651,7 +2921,7 @@
 
     .line 443
     :cond_16
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 444
     .line 445
@@ -1660,7 +2930,7 @@
 
     .line 447
     :cond_17
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 448
     .line 449
@@ -1669,7 +2939,7 @@
 
     .line 451
     :cond_18
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 452
     .line 453
@@ -1678,7 +2948,7 @@
 
     .line 455
     :cond_19
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 456
     .line 457
@@ -1687,7 +2957,7 @@
 
     .line 459
     :cond_1a
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 460
     .line 461
@@ -1696,7 +2966,7 @@
 
     .line 463
     :cond_1b
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 464
     .line 465
@@ -1705,7 +2975,7 @@
 
     .line 467
     :cond_1c
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 468
     .line 469
@@ -1714,7 +2984,7 @@
 
     .line 471
     :cond_1d
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 472
     .line 473
@@ -1739,7 +3009,7 @@
     move-result-object v2
 
     .line 483
-    invoke-static {v2, v11}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v2, v11}, LV14;->c(Landroid/content/Context;I)I
 
     .line 484
     .line 485
@@ -1760,7 +3030,7 @@
 
     .line 493
     .line 494
-    const v2, 0x7f1338f0
+    const v2, 0x7f133bd2
 
     .line 495
     .line 496
@@ -1916,7 +3186,7 @@
 
     .line 575
     :cond_1e
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 576
     .line 577
@@ -1925,7 +3195,7 @@
 
     .line 579
     :cond_1f
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 580
     .line 581
@@ -1934,7 +3204,7 @@
 
     .line 583
     :cond_20
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 584
     .line 585
@@ -1943,7 +3213,7 @@
 
     .line 587
     :cond_21
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 588
     .line 589
@@ -1952,7 +3222,7 @@
 
     .line 591
     :cond_22
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 592
     .line 593
@@ -1961,7 +3231,7 @@
 
     .line 595
     :cond_23
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 596
     .line 597
@@ -1970,7 +3240,7 @@
 
     .line 599
     :cond_24
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 600
     .line 601
@@ -1979,7 +3249,7 @@
 
     .line 603
     :cond_25
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 604
     .line 605
@@ -2004,7 +3274,7 @@
     move-result-object v2
 
     .line 615
-    invoke-static {v2, v11}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v2, v11}, LV14;->c(Landroid/content/Context;I)I
 
     .line 616
     .line 617
@@ -2025,7 +3295,7 @@
 
     .line 625
     .line 626
-    const v2, 0x7f1312c3
+    const v2, 0x7f13137b
 
     .line 627
     .line 628
@@ -2113,7 +3383,7 @@
 
     .line 673
     :cond_26
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 674
     .line 675
@@ -2122,7 +3392,7 @@
 
     .line 677
     :cond_27
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 678
     .line 679
@@ -2131,7 +3401,7 @@
 
     .line 681
     :cond_28
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 682
     .line 683
@@ -2140,7 +3410,7 @@
 
     .line 685
     :cond_29
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 686
     .line 687
@@ -2149,7 +3419,7 @@
 
     .line 689
     :cond_2a
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 690
     .line 691
@@ -2158,7 +3428,7 @@
 
     .line 693
     :cond_2b
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 694
     .line 695
@@ -2167,7 +3437,7 @@
 
     .line 697
     :cond_2c
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 698
     .line 699
@@ -2192,7 +3462,7 @@
     move-result-object v4
 
     .line 709
-    invoke-static {v4, v11}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v4, v11}, LV14;->c(Landroid/content/Context;I)I
 
     .line 710
     .line 711
@@ -2302,7 +3572,7 @@
 
     .line 766
     :cond_2d
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 767
     .line 768
@@ -2311,7 +3581,7 @@
 
     .line 770
     :cond_2e
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 771
     .line 772
@@ -2320,7 +3590,7 @@
 
     .line 774
     :cond_2f
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 775
     .line 776
@@ -2329,7 +3599,7 @@
 
     .line 778
     :cond_30
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 779
     .line 780
@@ -2338,7 +3608,7 @@
 
     .line 782
     :cond_31
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 783
     .line 784
@@ -2347,7 +3617,7 @@
 
     .line 786
     :cond_32
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 787
     .line 788
@@ -2356,7 +3626,7 @@
 
     .line 790
     :cond_33
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 791
     .line 792
@@ -2382,7 +3652,7 @@
     .line 801
     .line 802
     .line 803
-    iget-boolean v1, v1, LZ5h;->b:Z
+    iget-boolean v1, v1, LRrh;->b:Z
 
     .line 804
     .line 805
@@ -2398,7 +3668,7 @@
 
     .line 810
     .line 811
-    const v4, 0x7f1338e8
+    const v4, 0x7f133bca
 
     .line 812
     .line 813
@@ -2412,7 +3682,7 @@
 
     .line 818
     :cond_34
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 819
     .line 820
@@ -2429,7 +3699,7 @@
 
     .line 825
     .line 826
-    const v4, 0x7f1338e1
+    const v4, 0x7f133bc2
 
     .line 827
     .line 828
@@ -2524,7 +3794,7 @@
 
     .line 875
     :cond_36
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 876
     .line 877
@@ -2534,7 +3804,7 @@
     .line 879
     :cond_37
     :goto_1
-    sget-object v1, Lqv7;->b:Lqv7;
+    sget-object v1, LkA7;->b:LkA7;
 
     .line 880
     .line 881
@@ -2542,7 +3812,7 @@
 
     .line 882
     .line 883
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 884
     .line 885
@@ -2550,11 +3820,11 @@
     move-result-object v1
 
     .line 887
-    sget-object v2, LU7h;->r0:LU7h;
+    sget-object v2, Lirh;->x0:Lirh;
 
     .line 888
     .line 889
-    invoke-virtual {v1, v1, v2}, Ld8h;->i3(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v1, v1, v2}, LOth;->j3(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
 
     .line 890
     .line 891
@@ -2563,7 +3833,7 @@
 
     .line 893
     :cond_38
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 894
     .line 895
@@ -2572,7 +3842,7 @@
 
     .line 897
     :cond_39
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 898
     .line 899
@@ -2581,7 +3851,7 @@
 
     .line 901
     :cond_3a
-    invoke-static {v14}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 902
     .line 903
@@ -2590,7 +3860,7 @@
 
     .line 905
     :cond_3b
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 906
     .line 907
@@ -2599,7 +3869,7 @@
 
     .line 909
     :cond_3c
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 910
     .line 911
@@ -2608,7 +3878,7 @@
 
     .line 913
     :cond_3d
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 914
     .line 915
@@ -2621,7 +3891,7 @@
 
     .line 918
     .line 919
-    instance-of v2, v1, LOah;
+    instance-of v2, v1, LBwh;
 
     .line 920
     .line 921
@@ -2655,7 +3925,7 @@
 
     .line 936
     :cond_3f
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 937
     .line 938
@@ -2664,7 +3934,7 @@
 
     .line 940
     :cond_40
-    instance-of v2, v1, LB4h;
+    instance-of v2, v1, Ltqh;
 
     .line 941
     .line 942
@@ -2672,7 +3942,7 @@
 
     .line 943
     .line 944
-    check-cast v1, LB4h;
+    check-cast v1, Ltqh;
 
     .line 945
     .line 946
@@ -2693,7 +3963,7 @@
     .line 953
     .line 954
     .line 955
-    iget-boolean v2, v1, LB4h;->a:Z
+    iget-boolean v2, v1, Ltqh;->a:Z
 
     .line 956
     .line 957
@@ -2717,7 +3987,7 @@
     move-result-object v3
 
     .line 967
-    const v4, 0x7f133481
+    const v4, 0x7f133749
 
     .line 968
     .line 969
@@ -2739,7 +4009,7 @@
 
     .line 978
     :cond_41
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 979
     .line 980
@@ -2764,7 +4034,7 @@
     move-result-object v3
 
     .line 990
-    const v4, 0x7f133480
+    const v4, 0x7f133748
 
     .line 991
     .line 992
@@ -2783,7 +4053,7 @@
     .line 999
     .line 1000
     :goto_2
-    iget-boolean v2, v1, LB4h;->b:Z
+    iget-boolean v2, v1, Ltqh;->b:Z
 
     .line 1001
     .line 1002
@@ -2825,7 +4095,7 @@
 
     .line 1021
     .line 1022
-    iget-boolean v3, v1, LB4h;->c:Z
+    iget-boolean v3, v1, Ltqh;->c:Z
 
     .line 1023
     .line 1024
@@ -2842,7 +4112,7 @@
 
     .line 1029
     .line 1030
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1031
     .line 1032
@@ -2855,7 +4125,7 @@
 
     .line 1035
     .line 1036
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1037
     .line 1038
@@ -2868,7 +4138,7 @@
 
     .line 1041
     .line 1042
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1043
     .line 1044
@@ -2886,7 +4156,7 @@
     move-result-object v2
 
     .line 1050
-    iget-object v1, v1, LB4h;->d:LPt3;
+    iget-object v1, v1, Ltqh;->d:LSw3;
 
     .line 1051
     .line 1052
@@ -2894,7 +4164,7 @@
 
     .line 1053
     .line 1054
-    iget-object v7, v1, LPt3;->c:Ljava/lang/String;
+    iget-object v7, v1, LSw3;->c:Ljava/lang/String;
 
     .line 1055
     .line 1056
@@ -2920,7 +4190,7 @@
 
     .line 1065
     :cond_48
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1066
     .line 1067
@@ -2929,7 +4199,7 @@
 
     .line 1069
     :cond_49
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1070
     .line 1071
@@ -2938,7 +4208,7 @@
 
     .line 1073
     :cond_4a
-    instance-of v2, v1, LR7h;
+    instance-of v2, v1, LCth;
 
     .line 1074
     .line 1075
@@ -2959,11 +4229,11 @@
 
     .line 1083
     .line 1084
-    check-cast v1, LR7h;
+    check-cast v1, LCth;
 
     .line 1085
     .line 1086
-    iget-object v2, v1, LR7h;->a:LPt3;
+    iget-object v2, v1, LCth;->a:LSw3;
 
     .line 1087
     .line 1088
@@ -2971,7 +4241,7 @@
 
     .line 1089
     .line 1090
-    iget-object v9, v2, LPt3;->c:Ljava/lang/String;
+    iget-object v9, v2, LSw3;->c:Ljava/lang/String;
 
     .line 1091
     .line 1092
@@ -2995,7 +4265,7 @@
     move-result-object v9
 
     .line 1102
-    iget-object v2, v2, LPt3;->c:Ljava/lang/String;
+    iget-object v2, v2, LSw3;->c:Ljava/lang/String;
 
     .line 1103
     .line 1104
@@ -3009,11 +4279,11 @@
     .line 1108
     .line 1109
     :cond_4b
-    iget-boolean v2, v1, LR7h;->f:Z
+    iget-boolean v2, v1, LCth;->f:Z
 
     .line 1110
     .line 1111
-    iget-boolean v9, v1, LR7h;->b:Z
+    iget-boolean v9, v1, LCth;->b:Z
 
     .line 1112
     .line 1113
@@ -3021,7 +4291,7 @@
 
     .line 1114
     .line 1115
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 1116
     .line 1117
@@ -3029,7 +4299,7 @@
     move-result-object v2
 
     .line 1119
-    iget-boolean v2, v2, Ld8h;->p0:Z
+    iget-boolean v2, v2, LOth;->p0:Z
 
     .line 1120
     .line 1121
@@ -3037,7 +4307,7 @@
 
     .line 1122
     .line 1123
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 1124
     .line 1125
@@ -3045,7 +4315,7 @@
     move-result-object v2
 
     .line 1127
-    iget-boolean v2, v2, Ld8h;->q0:Z
+    iget-boolean v2, v2, LOth;->q0:Z
 
     .line 1128
     .line 1129
@@ -3058,7 +4328,7 @@
     .line 1132
     .line 1133
     :cond_4c
-    iget-boolean v2, v1, LR7h;->e:Z
+    iget-boolean v2, v1, LCth;->e:Z
 
     .line 1134
     .line 1135
@@ -3081,7 +4351,7 @@
     .line 1144
     .line 1145
     :cond_4d
-    iget-boolean v10, v1, LR7h;->g:Z
+    iget-boolean v10, v1, LCth;->g:Z
 
     .line 1146
     .line 1147
@@ -3136,7 +4406,7 @@
 
     .line 1172
     .line 1173
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1174
     .line 1175
@@ -3145,7 +4415,7 @@
 
     .line 1177
     :cond_4f
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1178
     .line 1179
@@ -3154,7 +4424,7 @@
 
     .line 1181
     :cond_50
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 1182
     .line 1183
@@ -3162,7 +4432,7 @@
     move-result-object v10
 
     .line 1185
-    iget-boolean v10, v10, Ld8h;->o0:Z
+    iget-boolean v10, v10, LOth;->o0:Z
 
     .line 1186
     .line 1187
@@ -3204,7 +4474,7 @@
 
     .line 1206
     :cond_51
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1207
     .line 1208
@@ -3213,7 +4483,7 @@
 
     .line 1210
     :cond_52
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1211
     .line 1212
@@ -3265,7 +4535,7 @@
     .line 1235
     .line 1236
     .line 1237
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 1238
     .line 1239
@@ -3273,7 +4543,7 @@
     move-result-object v2
 
     .line 1241
-    invoke-virtual {v2}, Ld8h;->a3()Lh4h;
+    invoke-virtual {v2}, LOth;->g3()LZph;
 
     .line 1242
     .line 1243
@@ -3281,7 +4551,7 @@
     move-result-object v2
 
     .line 1245
-    instance-of v4, v2, LAU2;
+    instance-of v4, v2, LfX2;
 
     .line 1246
     .line 1247
@@ -3289,7 +4559,7 @@
 
     .line 1248
     .line 1249
-    check-cast v2, LAU2;
+    check-cast v2, LfX2;
 
     .line 1250
     .line 1251
@@ -3306,7 +4576,7 @@
 
     .line 1255
     .line 1256
-    invoke-virtual {v2}, LAU2;->N0()V
+    invoke-virtual {v2}, LfX2;->N0()V
 
     .line 1257
     .line 1258
@@ -3315,7 +4585,7 @@
 
     .line 1260
     :cond_55
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1261
     .line 1262
@@ -3324,7 +4594,7 @@
 
     .line 1264
     :cond_56
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1265
     .line 1266
@@ -3362,7 +4632,7 @@
 
     .line 1281
     :cond_59
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1282
     .line 1283
@@ -3389,7 +4659,7 @@
     .line 1293
     .line 1294
     :goto_8
-    iget-object v2, v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->y0:LNGg;
+    iget-object v2, v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->y0:LCih;
 
     .line 1295
     .line 1296
@@ -3397,12 +4667,12 @@
 
     .line 1297
     .line 1298
-    const v3, 0x7f131c24
+    const v3, 0x7f131d77
 
     .line 1299
     .line 1300
     .line 1301
-    invoke-virtual {v2, v1, v3}, LNGg;->c(LR7h;I)Ljava/lang/String;
+    invoke-virtual {v2, v1, v3}, LCih;->d(LCth;I)Ljava/lang/String;
 
     .line 1302
     .line 1303
@@ -3435,7 +4705,7 @@
 
     .line 1316
     .line 1317
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1318
     .line 1319
@@ -3448,7 +4718,7 @@
 
     .line 1322
     .line 1323
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1324
     .line 1325
@@ -3457,7 +4727,7 @@
 
     .line 1327
     :cond_5d
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1328
     .line 1329
@@ -3466,7 +4736,7 @@
 
     .line 1331
     :cond_5e
-    instance-of v2, v1, LC2h;
+    instance-of v2, v1, Lroh;
 
     .line 1332
     .line 1333
@@ -3474,11 +4744,11 @@
 
     .line 1334
     .line 1335
-    check-cast v1, LC2h;
+    check-cast v1, Lroh;
 
     .line 1336
     .line 1337
-    iget-boolean v1, v1, LC2h;->a:Z
+    iget-boolean v1, v1, Lroh;->a:Z
 
     .line 1338
     .line 1339
@@ -3537,7 +4807,7 @@
 
     .line 1366
     .line 1367
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1368
     .line 1369
@@ -3546,7 +4816,7 @@
 
     .line 1371
     :cond_60
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1372
     .line 1373
@@ -3555,7 +4825,7 @@
 
     .line 1375
     :cond_61
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1376
     .line 1377
@@ -3597,19 +4867,19 @@
     .line 1394
     .line 1395
     .line 1396
-    new-instance v17, LcSa;
+    new-instance v17, LL4b;
 
     .line 1397
     .line 1398
-    sget-object v18, Ly5h;->Z:Ly5h;
+    sget-object v18, Lqrh;->Z:Lqrh;
 
     .line 1399
     .line 1400
-    const/16 v24, 0x0
+    const/16 v25, 0x0
 
     .line 1401
     .line 1402
-    const/16 v27, 0x3ff4
+    const/16 v28, 0x7ff4
 
     .line 1403
     .line 1404
@@ -3633,7 +4903,7 @@
 
     .line 1413
     .line 1414
-    const/16 v25, 0x0
+    const/16 v24, 0x0
 
     .line 1415
     .line 1416
@@ -3641,163 +4911,167 @@
 
     .line 1417
     .line 1418
-    invoke-direct/range {v17 .. v27}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v27, 0x0
 
     .line 1419
     .line 1420
-    .line 1421
-    new-instance v8, LO76;
+    invoke-direct/range {v17 .. v28}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
 
+    .line 1421
     .line 1422
     .line 1423
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+    new-instance v8, LYa6;
 
     .line 1424
     .line 1425
+    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
     .line 1426
+    .line 1427
+    .line 1428
     move-result-object v9
 
-    .line 1427
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
-
-    .line 1428
     .line 1429
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
     .line 1430
+    .line 1431
+    .line 1432
     move-result-object v10
 
-    .line 1431
+    .line 1433
     const/4 v13, 0x0
 
-    .line 1432
+    .line 1434
     const/16 v14, 0xf8
 
-    .line 1433
-    .line 1434
+    .line 1435
+    .line 1436
     const/4 v12, 0x0
 
-    .line 1435
-    move-object/from16 v11, v17
-
-    .line 1436
     .line 1437
-    invoke-direct/range {v8 .. v14}, LO76;-><init>(Landroid/content/Context;LTqc;LcSa;ZLcYg;I)V
+    move-object/from16 v11, v17
 
     .line 1438
     .line 1439
-    .line 1440
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->b2()I
+    invoke-direct/range {v8 .. v14}, LYa6;-><init>(Landroid/content/Context;LmGc;LL4b;ZLPjh;I)V
 
+    .line 1440
     .line 1441
     .line 1442
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->b2()I
+
     .line 1443
+    .line 1444
+    .line 1445
     move-result v1
 
-    .line 1444
-    invoke-virtual {v8, v1}, LO76;->w(I)V
-
-    .line 1445
     .line 1446
-    .line 1447
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->a2()I
+    invoke-virtual {v8, v1}, LYa6;->w(I)V
 
+    .line 1447
     .line 1448
     .line 1449
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->a2()I
+
     .line 1450
+    .line 1451
+    .line 1452
     move-result v1
 
-    .line 1451
-    invoke-virtual {v8, v1}, LO76;->j(I)V
-
-    .line 1452
     .line 1453
-    .line 1454
-    sget-object v1, LbTg;->z0:LbTg;
+    invoke-virtual {v8, v1}, LYa6;->j(I)V
 
+    .line 1454
     .line 1455
     .line 1456
-    const v2, 0x7f132444
+    sget-object v1, Lirh;->X:Lirh;
 
     .line 1457
     .line 1458
-    .line 1459
-    const/16 v3, 0x8
+    const v2, 0x7f13261b
 
+    .line 1459
     .line 1460
     .line 1461
-    const/4 v4, 0x1
+    const/16 v3, 0x8
 
     .line 1462
-    invoke-static {v8, v2, v1, v4, v3}, LO76;->d(LO76;ILkotlin/jvm/functions/Function1;ZI)V
-
     .line 1463
-    .line 1464
-    .line 1465
-    invoke-virtual {v8}, LO76;->b()LP76;
+    const/4 v4, 0x1
 
+    .line 1464
+    invoke-static {v8, v2, v1, v4, v3}, LYa6;->c(LYa6;ILkotlin/jvm/functions/Function1;ZI)V
+
+    .line 1465
     .line 1466
     .line 1467
+    invoke-virtual {v8}, LYa6;->b()LZa6;
+
     .line 1468
+    .line 1469
+    .line 1470
     move-result-object v1
 
-    .line 1469
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
-
-    .line 1470
     .line 1471
+    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
     .line 1472
+    .line 1473
+    .line 1474
     move-result-object v2
 
-    .line 1473
-    iget-object v3, v1, LP76;->m0:Lcqc;
-
-    .line 1474
     .line 1475
-    move-object/from16 v4, v16
+    iget-object v3, v1, LZa6;->m0:LxFc;
 
     .line 1476
     .line 1477
-    invoke-virtual {v2, v1, v3, v4}, LTqc;->w(LWRa;Ldqc;LPpc;)V
+    move-object/from16 v4, v16
 
     .line 1478
     .line 1479
+    invoke-virtual {v2, v1, v3, v4}, LmGc;->w(LG4b;LyFc;LkFc;)V
+
     .line 1480
+    .line 1481
+    .line 1482
     return-void
 
-    .line 1481
+    .line 1483
     :cond_63
     move-object/from16 v4, v16
 
-    .line 1482
-    .line 1483
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
-
     .line 1484
     .line 1485
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 1486
+    .line 1487
+    .line 1488
     throw v4
 
-    .line 1487
+    .line 1489
     :cond_64
     move-object/from16 v4, v16
 
-    .line 1488
-    .line 1489
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
-
     .line 1490
     .line 1491
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 1492
+    .line 1493
+    .line 1494
     throw v4
 
-    .line 1493
+    .line 1495
     :cond_65
     :goto_9
     return-void
 
-    .line 1494
+    .line 1496
     nop
 
-    .line 1495
+    .line 1497
     :pswitch_data_0
     .packed-switch 0x1
         :pswitch_6
@@ -3827,1341 +5101,22 @@
     .end packed-switch
 .end method
 
-.method public E1()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, Ld8h;->C1()V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public E2()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->y1:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public F2(Lh4h;)V
-    .locals 4
-
-    .line 1
-    new-instance v0, LaH7;
-
-    .line 2
-    .line 3
-    sget-object v1, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->G0:LcSa;
-
-    .line 4
-    .line 5
-    iget-object p1, p1, Lh4h;->d:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    new-instance v2, Landroid/os/Bundle;
-
-    .line 8
-    .line 9
-    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    const-string v3, "ARG_KEY_DEVICE_SERIAL_NUMBER"
-
-    .line 13
-    .line 14
-    invoke-virtual {v2, v3, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    new-instance p1, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;
-
-    .line 18
-    .line 19
-    invoke-direct {p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;-><init>()V
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {p1, v2}, Landroidx/fragment/app/g;->setArguments(Landroid/os/Bundle;)V
-
-    .line 23
-    .line 24
-    .line 25
-    new-instance v2, Lkqc;
-
-    .line 26
-    .line 27
-    invoke-direct {v2}, Lkqc;-><init>()V
-
-    .line 28
-    .line 29
-    .line 30
-    sget-object v3, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->I0:LZpc;
-
-    .line 31
-    .line 32
-    invoke-virtual {v2, v3}, Ljqc;->c(Ldqc;)Ljqc;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v2
-
-    .line 36
-    check-cast v2, Lkqc;
-
-    .line 37
-    .line 38
-    invoke-virtual {v2}, Lkqc;->d()LrK5;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v2
-
-    .line 42
-    invoke-direct {v0, v1, p1, v2}, LaH7;-><init>(LcSa;Lcom/snapchat/deck/fragment/MainPageFragment;Lmqc;)V
-
-    .line 43
-    .line 44
-    .line 45
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object p1
-
-    .line 49
-    sget-object v1, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->H0:Lcqc;
-
-    .line 50
-    .line 51
-    const/4 v2, 0x0
-
-    .line 52
-    invoke-virtual {p1, v0, v1, v2}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 53
-    .line 54
-    .line 55
-    return-void
-.end method
-
-.method public G2()V
-    .locals 11
-
-    .line 1
-    new-instance v0, LcSa;
-
-    .line 2
-    .line 3
-    sget-object v1, Ly5h;->Z:Ly5h;
-
-    .line 4
-    .line 5
-    const/4 v8, 0x0
-
-    .line 6
-    const/4 v9, 0x0
-
-    .line 7
-    const-string v2, "spectacles_unpair"
-
-    .line 8
-    .line 9
-    const/4 v3, 0x0
-
-    .line 10
-    const/4 v4, 0x1
-
-    .line 11
-    const/4 v5, 0x0
-
-    .line 12
-    const/4 v6, 0x0
-
-    .line 13
-    const/4 v7, 0x0
-
-    .line 14
-    const/16 v10, 0x3ff4
-
-    .line 15
-    .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
-
-    .line 17
-    .line 18
-    .line 19
-    new-instance v1, LO76;
-
-    .line 20
-    .line 21
-    move-object v3, v0
-
-    .line 22
-    move-object v0, v1
-
-    .line 23
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v2
-
-    .line 31
-    const/4 v4, 0x0
-
-    .line 32
-    const/4 v5, 0x0
-
-    .line 33
-    const/16 v6, 0xf8
-
-    .line 34
-    .line 35
-    invoke-direct/range {v0 .. v6}, LO76;-><init>(Landroid/content/Context;LTqc;LcSa;ZLcYg;I)V
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z2()I
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v1
-
-    .line 42
-    invoke-virtual {v0, v1}, LO76;->w(I)V
-
-    .line 43
-    .line 44
-    .line 45
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->v2()I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v1
-
-    .line 49
-    invoke-virtual {v0, v1}, LO76;->j(I)V
-
-    .line 50
-    .line 51
-    .line 52
-    new-instance v1, LT7h;
-
-    .line 53
-    .line 54
-    const/4 v2, 0x2
-
-    .line 55
-    invoke-direct {v1, p0, v2}, LT7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 56
-    .line 57
-    .line 58
-    const v2, 0x7f1338b0
-
-    .line 59
-    .line 60
-    .line 61
-    const/4 v3, 0x1
-
-    .line 62
-    const/16 v4, 0x8
-
-    .line 63
-    .line 64
-    invoke-static {v0, v2, v1, v3, v4}, LO76;->d(LO76;ILkotlin/jvm/functions/Function1;ZI)V
-
-    .line 65
-    .line 66
-    .line 67
-    const/4 v1, 0x0
-
-    .line 68
-    const/4 v2, 0x0
-
-    .line 69
-    const/16 v3, 0x1f
-
-    .line 70
-    .line 71
-    invoke-static {v0, v2, v1, v2, v3}, LO76;->h(LO76;Lkotlin/jvm/functions/Function1;ZLjava/lang/Integer;I)V
-
-    .line 72
-    .line 73
-    .line 74
-    invoke-virtual {v0}, LO76;->b()LP76;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object v0
-
-    .line 78
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
-
-    .line 79
-    .line 80
-    .line 81
-    move-result-object v1
-
-    .line 82
-    iget-object v3, v0, LP76;->m0:Lcqc;
-
-    .line 83
-    .line 84
-    invoke-virtual {v1, v0, v3, v2}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 85
-    .line 86
-    .line 87
-    return-void
-.end method
-
-.method public final H2(ZZ)V
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const-string v1, "forgetSpecsTextView"
-
-    .line 3
-    .line 4
-    if-eqz p1, :cond_2
-
-    .line 5
-    .line 6
-    if-nez p2, :cond_0
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    iget-object p1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->S0:Landroid/widget/TextView;
-
-    .line 10
-    .line 11
-    if-eqz p1, :cond_1
-
-    .line 12
-    .line 13
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->x2()I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p2
-
-    .line 17
-    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->g2()Landroid/view/View;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    new-instance p2, LS7h;
-
-    .line 25
-    .line 26
-    const/4 v0, 0x5
-
-    .line 27
-    invoke-direct {p2, p0, v0}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 28
-    .line 29
-    .line 30
-    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-void
-
-    .line 34
-    :cond_1
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 35
-    .line 36
-    .line 37
-    throw v0
-
-    .line 38
-    :cond_2
-    :goto_0
-    iget-object p1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->S0:Landroid/widget/TextView;
-
-    .line 39
-    .line 40
-    if-eqz p1, :cond_3
-
-    .line 41
-    .line 42
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->f2()I
-
-    .line 43
-    .line 44
-    .line 45
-    move-result p2
-
-    .line 46
-    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
-
-    .line 47
-    .line 48
-    .line 49
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->g2()Landroid/view/View;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object p1
-
-    .line 53
-    new-instance p2, LS7h;
-
-    .line 54
-    .line 55
-    const/4 v0, 0x6
-
-    .line 56
-    invoke-direct {p2, p0, v0}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 57
-    .line 58
-    .line 59
-    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 60
-    .line 61
-    .line 62
-    return-void
-
-    .line 63
-    :cond_3
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 64
-    .line 65
-    .line 66
-    throw v0
-.end method
-
-.method public I2(Z)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->I0:Landroid/view/View;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    if-eqz v0, :cond_1
-
-    .line 5
-    .line 6
-    invoke-static {v0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->J2(Landroid/view/View;Z)V
-
-    .line 7
-    .line 8
-    .line 9
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->G0:Landroid/view/View;
-
-    .line 10
-    .line 11
-    if-eqz v0, :cond_0
-
-    .line 12
-    .line 13
-    invoke-static {v0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->J2(Landroid/view/View;Z)V
-
-    .line 14
-    .line 15
-    .line 16
-    return-void
-
-    .line 17
-    :cond_0
-    const-string p1, "clearContentContainer"
-
-    .line 18
-    .line 19
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 20
-    .line 21
-    .line 22
-    throw v1
-
-    .line 23
-    :cond_1
-    const-string p1, "restartSpecsContainer"
-
-    .line 24
-    .line 25
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    throw v1
-.end method
-
-.method public J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 3
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->j2()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p3
-
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    const p2, 0x7f0b0aca
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p2
-
-    .line 17
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->B0:Landroid/view/View;
-
-    .line 18
-    .line 19
-    const p2, 0x7f0b0acc
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object p2
-
-    .line 26
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 27
-    .line 28
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->C0:Landroid/widget/TextView;
-
-    .line 29
-    .line 30
-    const p2, 0x7f0b0adc
-
-    .line 31
-    .line 32
-    .line 33
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object p2
-
-    .line 37
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->D0:Landroid/view/View;
-
-    .line 38
-    .line 39
-    const p2, 0x7f0b0acb
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object p2
-
-    .line 46
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->E0:Landroid/view/View;
-
-    .line 47
-    .line 48
-    const p2, 0x7f0b0add
-
-    .line 49
-    .line 50
-    .line 51
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object p2
-
-    .line 55
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 56
-    .line 57
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->F0:Landroid/widget/TextView;
-
-    .line 58
-    .line 59
-    const p2, 0x7f0b0acd
-
-    .line 60
-    .line 61
-    .line 62
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object p2
-
-    .line 66
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->G0:Landroid/view/View;
-
-    .line 67
-    .line 68
-    const p2, 0x7f0b0acf
-
-    .line 69
-    .line 70
-    .line 71
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object p2
-
-    .line 75
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 76
-    .line 77
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->R0:Landroid/widget/TextView;
-
-    .line 78
-    .line 79
-    const p2, 0x7f0b0ace
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object p2
-
-    .line 86
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->H0:Landroid/view/View;
-
-    .line 87
-    .line 88
-    const p2, 0x7f0b0ad8
-
-    .line 89
-    .line 90
-    .line 91
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 92
-    .line 93
-    .line 94
-    move-result-object p2
-
-    .line 95
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->I0:Landroid/view/View;
-
-    .line 96
-    .line 97
-    const p2, 0x7f0b0ad9
-
-    .line 98
-    .line 99
-    .line 100
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 101
-    .line 102
-    .line 103
-    move-result-object p2
-
-    .line 104
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 105
-    .line 106
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->T0:Landroid/widget/TextView;
-
-    .line 107
-    .line 108
-    const p2, 0x7f0b0ada
-
-    .line 109
-    .line 110
-    .line 111
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 112
-    .line 113
-    .line 114
-    move-result-object p2
-
-    .line 115
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->J0:Landroid/view/View;
-
-    .line 116
-    .line 117
-    const p2, 0x7f0b169e
-
-    .line 118
-    .line 119
-    .line 120
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 121
-    .line 122
-    .line 123
-    move-result-object p2
-
-    .line 124
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 125
-    .line 126
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->W0:Landroid/widget/TextView;
-
-    .line 127
-    .line 128
-    const p2, 0x7f0b0ad2
-
-    .line 129
-    .line 130
-    .line 131
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 132
-    .line 133
-    .line 134
-    move-result-object p2
-
-    .line 135
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->P0:Landroid/view/View;
-
-    .line 136
-    .line 137
-    const p2, 0x7f0b0ad1
-
-    .line 138
-    .line 139
-    .line 140
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 141
-    .line 142
-    .line 143
-    move-result-object p2
-
-    .line 144
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 145
-    .line 146
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->S0:Landroid/widget/TextView;
-
-    .line 147
-    .line 148
-    const p2, 0x7f0b0adb
-
-    .line 149
-    .line 150
-    .line 151
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 152
-    .line 153
-    .line 154
-    move-result-object p2
-
-    .line 155
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->Q0:Landroid/view/View;
-
-    .line 156
-    .line 157
-    const p2, 0x7f0b16a0
-
-    .line 158
-    .line 159
-    .line 160
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-object p2
-
-    .line 164
-    check-cast p2, Lcom/snap/ui/view/ScHeaderView;
-
-    .line 165
-    .line 166
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->V0:Lcom/snap/ui/view/ScHeaderView;
-
-    .line 167
-    .line 168
-    const p2, 0x7f0b16bf
-
-    .line 169
-    .line 170
-    .line 171
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 172
-    .line 173
-    .line 174
-    move-result-object p2
-
-    .line 175
-    check-cast p2, Lcom/snap/component/cells/SnapSettingsCellView;
-
-    .line 176
-    .line 177
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->K0:Lcom/snap/component/cells/SnapSettingsCellView;
-
-    .line 178
-    .line 179
-    const p2, 0x7f0b16a1
-
-    .line 180
-    .line 181
-    .line 182
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 183
-    .line 184
-    .line 185
-    move-result-object p2
-
-    .line 186
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->L0:Landroid/view/View;
-
-    .line 187
-    .line 188
-    const p2, 0x7f0b1688
-
-    .line 189
-    .line 190
-    .line 191
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 192
-    .line 193
-    .line 194
-    move-result-object p2
-
-    .line 195
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->M0:Landroid/view/View;
-
-    .line 196
-    .line 197
-    const p2, 0x7f0b168b
-
-    .line 198
-    .line 199
-    .line 200
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 201
-    .line 202
-    .line 203
-    move-result-object p2
-
-    .line 204
-    check-cast p2, Landroid/widget/CheckBox;
-
-    .line 205
-    .line 206
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->N0:Landroid/widget/CheckBox;
-
-    .line 207
-    .line 208
-    const p2, 0x7f0b169d
-
-    .line 209
-    .line 210
-    .line 211
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 212
-    .line 213
-    .line 214
-    move-result-object p2
-
-    .line 215
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 216
-    .line 217
-    const p2, 0x7f0b168c
-
-    .line 218
-    .line 219
-    .line 220
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 221
-    .line 222
-    .line 223
-    move-result-object p2
-
-    .line 224
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->O0:Landroid/view/View;
-
-    .line 225
-    .line 226
-    const p2, 0x7f0b169b
-
-    .line 227
-    .line 228
-    .line 229
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 230
-    .line 231
-    .line 232
-    move-result-object p2
-
-    .line 233
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 234
-    .line 235
-    iput-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->U0:Landroid/widget/TextView;
-
-    .line 236
-    .line 237
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->K0:Lcom/snap/component/cells/SnapSettingsCellView;
-
-    .line 238
-    .line 239
-    const/4 p3, 0x0
-
-    .line 240
-    if-eqz p2, :cond_5
-
-    .line 241
-    .line 242
-    new-instance v1, LuPg;
-
-    .line 243
-    .line 244
-    const/16 v2, 0x13
-
-    .line 245
-    .line 246
-    invoke-direct {v1, v2, p0}, LuPg;-><init>(ILjava/lang/Object;)V
-
-    .line 247
-    .line 248
-    .line 249
-    iput-object v1, p2, LEHg;->x0:Ljava/lang/Object;
-
-    .line 250
-    .line 251
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->L0:Landroid/view/View;
-
-    .line 252
-    .line 253
-    if-eqz p2, :cond_4
-
-    .line 254
-    .line 255
-    new-instance v1, LS7h;
-
-    .line 256
-    .line 257
-    const/4 v2, 0x0
-
-    .line 258
-    invoke-direct {v1, p0, v2}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 259
-    .line 260
-    .line 261
-    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 262
-    .line 263
-    .line 264
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->B0:Landroid/view/View;
-
-    .line 265
-    .line 266
-    if-eqz p2, :cond_3
-
-    .line 267
-    .line 268
-    new-instance v1, LS7h;
-
-    .line 269
-    .line 270
-    const/4 v2, 0x1
-
-    .line 271
-    invoke-direct {v1, p0, v2}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 272
-    .line 273
-    .line 274
-    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 275
-    .line 276
-    .line 277
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->G0:Landroid/view/View;
-
-    .line 278
-    .line 279
-    if-eqz p2, :cond_2
-
-    .line 280
-    .line 281
-    new-instance v1, LS7h;
-
-    .line 282
-    .line 283
-    const/4 v2, 0x2
-
-    .line 284
-    invoke-direct {v1, p0, v2}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 285
-    .line 286
-    .line 287
-    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 288
-    .line 289
-    .line 290
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->I0:Landroid/view/View;
-
-    .line 291
-    .line 292
-    if-eqz p2, :cond_1
-
-    .line 293
-    .line 294
-    new-instance v1, LS7h;
-
-    .line 295
-    .line 296
-    const/4 v2, 0x3
-
-    .line 297
-    invoke-direct {v1, p0, v2}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 298
-    .line 299
-    .line 300
-    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 301
-    .line 302
-    .line 303
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->g2()Landroid/view/View;
-
-    .line 304
-    .line 305
-    .line 306
-    move-result-object p2
-
-    .line 307
-    new-instance v1, LS7h;
-
-    .line 308
-    .line 309
-    const/4 v2, 0x6
-
-    .line 310
-    invoke-direct {v1, p0, v2}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 311
-    .line 312
-    .line 313
-    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 314
-    .line 315
-    .line 316
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->p2()Lcom/snap/ui/view/ScHeaderView;
-
-    .line 317
-    .line 318
-    .line 319
-    move-result-object p2
-
-    .line 320
-    new-instance v1, LS7h;
-
-    .line 321
-    .line 322
-    const/4 v2, 0x4
-
-    .line 323
-    invoke-direct {v1, p0, v2}, LS7h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;I)V
-
-    .line 324
-    .line 325
-    .line 326
-    invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 327
-    .line 328
-    .line 329
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->p2()Lcom/snap/ui/view/ScHeaderView;
-
-    .line 330
-    .line 331
-    .line 332
-    move-result-object p2
-
-    .line 333
-    const v1, 0x7f0b1316
-
-    .line 334
-    .line 335
-    .line 336
-    invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 337
-    .line 338
-    .line 339
-    move-result-object p2
-
-    .line 340
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 341
-    .line 342
-    const v1, 0x7f0808b2
-
-    .line 343
-    .line 344
-    .line 345
-    invoke-virtual {p2, v0, v0, v1, v0}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
-
-    .line 346
-    .line 347
-    .line 348
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
-
-    .line 349
-    .line 350
-    .line 351
-    move-result-object v0
-
-    .line 352
-    const v1, 0x7f07051a
-
-    .line 353
-    .line 354
-    .line 355
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
-
-    .line 356
-    .line 357
-    .line 358
-    move-result v0
-
-    .line 359
-    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
-
-    .line 360
-    .line 361
-    .line 362
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->N0:Landroid/widget/CheckBox;
-
-    .line 363
-    .line 364
-    if-eqz p2, :cond_0
-
-    .line 365
-    .line 366
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z1:LKx2;
-
-    .line 367
-    .line 368
-    invoke-virtual {p2, p3}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
-
-    .line 369
-    .line 370
-    .line 371
-    return-object p1
-
-    .line 372
-    :cond_0
-    const-string p1, "enableLocationCheckbox"
-
-    .line 373
-    .line 374
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 375
-    .line 376
-    .line 377
-    throw p3
-
-    .line 378
-    :cond_1
-    const-string p1, "restartSpecsContainer"
-
-    .line 379
-    .line 380
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 381
-    .line 382
-    .line 383
-    throw p3
-
-    .line 384
-    :cond_2
-    const-string p1, "clearContentContainer"
-
-    .line 385
-    .line 386
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 387
-    .line 388
-    .line 389
-    throw p3
-
-    .line 390
-    :cond_3
-    const-string p1, "checkForUpdatesContainer"
-
-    .line 391
-    .line 392
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 393
-    .line 394
-    .line 395
-    throw p3
-
-    .line 396
-    :cond_4
-    const-string p1, "notificationSettingsView"
-
-    .line 397
-    .line 398
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 399
-    .line 400
-    .line 401
-    throw p3
-
-    .line 402
-    :cond_5
-    const-string p1, "saveToSelectionView"
-
-    .line 403
-    .line 404
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 405
-    .line 406
-    .line 407
-    throw p3
-.end method
-
 .method public final K2()V
-    .locals 11
+    .locals 12
 
     .line 1
-    new-instance v0, LcSa;
+    new-instance v0, LL4b;
 
     .line 2
     .line 3
-    sget-object v1, Ly5h;->Z:Ly5h;
+    sget-object v1, Lqrh;->Z:Lqrh;
 
     .line 4
     .line 5
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     .line 6
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     .line 7
     const-string v2, "spectacles_snaps_importing"
@@ -5183,135 +5138,138 @@
     const/4 v7, 0x0
 
     .line 14
-    const/16 v10, 0x3ff4
+    const/4 v8, 0x0
 
     .line 15
-    .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v11, 0x7ff4
 
+    .line 16
     .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 18
     .line 19
-    new-instance v1, LO76;
-
     .line 20
+    new-instance v1, LYa6;
+
     .line 21
+    .line 22
     move-object v3, v0
 
-    .line 22
+    .line 23
     move-object v0, v1
 
-    .line 23
+    .line 24
     invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
 
-    .line 24
     .line 25
     .line 26
-    move-result-object v1
-
     .line 27
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
+    move-result-object v1
 
     .line 28
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
     .line 29
     .line 30
+    .line 31
     move-result-object v2
 
-    .line 31
-    const/4 v4, 0x0
-
     .line 32
-    const/4 v5, 0x0
+    const/4 v4, 0x0
 
     .line 33
-    const/16 v6, 0xf8
+    const/4 v5, 0x0
 
     .line 34
-    .line 35
-    invoke-direct/range {v0 .. v6}, LO76;-><init>(Landroid/content/Context;LTqc;LcSa;ZLcYg;I)V
+    const/16 v6, 0xf8
 
+    .line 35
     .line 36
+    invoke-direct/range {v0 .. v6}, LYa6;-><init>(Landroid/content/Context;LmGc;LL4b;ZLPjh;I)V
+
     .line 37
     .line 38
+    .line 39
     invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->i2()I
 
-    .line 39
     .line 40
     .line 41
+    .line 42
     move-result v1
 
-    .line 42
-    invoke-virtual {v0, v1}, LO76;->j(I)V
-
     .line 43
+    invoke-virtual {v0, v1}, LYa6;->j(I)V
+
     .line 44
     .line 45
-    sget-object v1, LU7h;->X:LU7h;
-
     .line 46
-    .line 47
-    const v2, 0x7f132444
+    sget-object v1, Lirh;->h0:Lirh;
 
+    .line 47
     .line 48
+    const v2, 0x7f13261b
+
     .line 49
     .line 50
+    .line 51
     const/4 v3, 0x1
 
-    .line 51
+    .line 52
     const/16 v4, 0x8
 
-    .line 52
     .line 53
-    invoke-static {v0, v2, v1, v3, v4}, LO76;->d(LO76;ILkotlin/jvm/functions/Function1;ZI)V
-
     .line 54
+    invoke-static {v0, v2, v1, v3, v4}, LYa6;->c(LYa6;ILkotlin/jvm/functions/Function1;ZI)V
+
     .line 55
     .line 56
-    invoke-virtual {v0}, LO76;->b()LP76;
-
     .line 57
+    invoke-virtual {v0}, LYa6;->b()LZa6;
+
     .line 58
     .line 59
+    .line 60
     move-result-object v0
 
-    .line 60
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
-
     .line 61
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
     .line 62
     .line 63
+    .line 64
     move-result-object v1
 
-    .line 64
-    new-instance v2, LfNd;
-
     .line 65
-    .line 66
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LTqc;
+    new-instance v2, Lu4e;
 
+    .line 66
     .line 67
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->m2()LmGc;
+
     .line 68
     .line 69
+    .line 70
     move-result-object v3
 
-    .line 70
+    .line 71
     const/4 v4, 0x0
 
-    .line 71
-    iget-object v5, v0, LP76;->m0:Lcqc;
-
     .line 72
-    .line 73
-    invoke-direct {v2, v3, v0, v5, v4}, LfNd;-><init>(LTqc;LWRa;Ldqc;LPpc;)V
+    iget-object v5, v0, LZa6;->m0:LxFc;
 
+    .line 73
     .line 74
+    invoke-direct {v2, v3, v0, v5, v4}, Lu4e;-><init>(LmGc;LG4b;LyFc;LkFc;)V
+
     .line 75
     .line 76
-    invoke-virtual {v1, v2}, LTqc;->H(LOpc;)V
-
     .line 77
+    invoke-virtual {v1, v2}, LmGc;->G(LjFc;)V
+
     .line 78
     .line 79
+    .line 80
     return-void
 .end method
 
@@ -5376,7 +5334,7 @@
 
     .line 29
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -5385,7 +5343,7 @@
 
     .line 33
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 34
     .line 35
@@ -5398,23 +5356,12 @@
 
     .line 38
     .line 39
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 40
     .line 41
     .line 42
     throw v1
-.end method
-
-.method public M0(Lcom/google/protobuf/nano/MessageNano;)Z
-    .locals 0
-
-    .line 1
-    instance-of p1, p1, LUK6;
-
-    .line 2
-    .line 3
-    return p1
 .end method
 
 .method public X1()V
@@ -5528,7 +5475,7 @@
 
     .line 40
     .line 41
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -5541,7 +5488,7 @@
 
     .line 46
     .line 47
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 48
     .line 49
@@ -5554,7 +5501,7 @@
 
     .line 52
     .line 53
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -5567,7 +5514,7 @@
 
     .line 58
     .line 59
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 60
     .line 61
@@ -5580,7 +5527,7 @@
 
     .line 64
     .line 65
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -5684,7 +5631,7 @@
 
     .line 47
     .line 48
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -5697,7 +5644,7 @@
 
     .line 53
     .line 54
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 55
     .line 56
@@ -5710,7 +5657,7 @@
 
     .line 59
     .line 60
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 61
     .line 62
@@ -5723,7 +5670,7 @@
 
     .line 65
     .line 66
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 67
     .line 68
@@ -5736,7 +5683,7 @@
 
     .line 71
     .line 72
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 73
     .line 74
@@ -5830,7 +5777,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -5841,16 +5788,27 @@
     throw v0
 .end method
 
-.method public final h(LQqc;)V
+.method public h2()I
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->d1:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final i(LiGc;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 5
     .line 6
@@ -5858,7 +5816,7 @@
     move-result-object p1
 
     .line 8
-    iget-object v0, p1, Ld8h;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, p1, LOth;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 9
     .line 10
@@ -5867,7 +5825,7 @@
     .line 11
     .line 12
     .line 13
-    iget-object p1, p1, Ld8h;->r0:LeN5;
+    iget-object p1, p1, LOth;->r0:LtH5;
 
     .line 14
     .line 15
@@ -5882,11 +5840,11 @@
 
     .line 19
     :try_start_0
-    iput v0, p1, LeN5;->b:I
+    iput v0, p1, LtH5;->b:I
 
     .line 20
     .line 21
-    iget-object v0, p1, LeN5;->t:Ljava/lang/Object;
+    iget-object v0, p1, LtH5;->t:Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -5919,17 +5877,6 @@
     .line 33
     :cond_0
     return-void
-.end method
-
-.method public h2()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->d1:I
-
-    .line 2
-    .line 3
-    return v0
 .end method
 
 .method public i2()I
@@ -5965,11 +5912,11 @@
     return v0
 .end method
 
-.method public final l2()Ld8h;
+.method public final l2()LOth;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z0:Ld8h;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->z0:LOth;
 
     .line 2
     .line 3
@@ -5985,7 +5932,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -6000,7 +5947,7 @@
     .locals 2
 
     .line 1
-    instance-of v0, p1, LUK6;
+    instance-of v0, p1, LGO6;
 
     .line 2
     .line 3
@@ -6011,7 +5958,7 @@
 
     .line 5
     .line 6
-    instance-of v0, p1, LnIc;
+    instance-of v0, p1, LRWc;
 
     .line 7
     .line 8
@@ -6019,11 +5966,11 @@
 
     .line 9
     .line 10
-    check-cast p1, LnIc;
+    check-cast p1, LRWc;
 
     .line 11
     .line 12
-    iget p1, p1, LnIc;->X:I
+    iget p1, p1, LRWc;->X:I
 
     .line 13
     .line 14
@@ -6046,11 +5993,11 @@
     return v1
 .end method
 
-.method public final m2()LTqc;
+.method public final m2()LmGc;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->A0:LTqc;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->A0:LmGc;
 
     .line 2
     .line 3
@@ -6066,7 +6013,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -6119,7 +6066,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -6152,29 +6099,7 @@
     return v0
 .end method
 
-.method public s2()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->r1:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public t2()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->q1:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final u1()V
+.method public final s1()V
     .locals 2
 
     .line 1
@@ -6202,12 +6127,34 @@
 
     .line 11
     .line 12
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
     throw v1
+.end method
+
+.method public s2()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->r1:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public t2()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->q1:I
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public u2()I
@@ -6221,27 +6168,16 @@
     return v0
 .end method
 
-.method public v2()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->h1:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public w(LQqc;)V
+.method public v(LiGc;)V
     .locals 4
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()Ld8h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
 
     .line 5
     .line 6
@@ -6249,14 +6185,14 @@
     move-result-object p1
 
     .line 8
-    new-instance v0, LY7h;
+    new-instance v0, LJth;
 
     .line 9
     .line 10
     const/4 v1, 0x4
 
     .line 11
-    invoke-direct {v0, p1, v1}, LY7h;-><init>(Ld8h;I)V
+    invoke-direct {v0, p1, v1}, LJth;-><init>(LOth;I)V
 
     .line 12
     .line 13
@@ -6270,15 +6206,15 @@
     .line 17
     .line 18
     .line 19
-    new-instance v0, LaNg;
+    new-instance v0, Lp0h;
 
     .line 20
     .line 21
-    const/16 v2, 0xb
+    const/16 v2, 0x11
 
     .line 22
     .line 23
-    invoke-direct {v0, v2, p1}, LaNg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, p1}, Lp0h;-><init>(ILjava/lang/Object;)V
 
     .line 24
     .line 25
@@ -6292,11 +6228,11 @@
     .line 29
     .line 30
     .line 31
-    iget-object v0, p1, Ld8h;->u0:LBre;
+    iget-object v0, p1, LOth;->u0:LnJe;
 
     .line 32
     .line 33
-    invoke-virtual {v0}, LBre;->g()LF06;
+    invoke-virtual {v0}, LnJe;->g()LA36;
 
     .line 34
     .line 35
@@ -6313,7 +6249,7 @@
     .line 40
     .line 41
     .line 42
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 43
     .line 44
@@ -6330,15 +6266,15 @@
     .line 49
     .line 50
     .line 51
-    new-instance v0, LbFg;
+    new-instance v0, LZJg;
 
     .line 52
     .line 53
-    const/16 v2, 0x12
+    const/16 v2, 0x13
 
     .line 54
     .line 55
-    invoke-direct {v0, v2, p1}, LbFg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, p1}, LZJg;-><init>(ILjava/lang/Object;)V
 
     .line 56
     .line 57
@@ -6352,7 +6288,7 @@
     .line 61
     .line 62
     .line 63
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 64
     .line 65
@@ -6360,11 +6296,11 @@
     move-result-object v0
 
     .line 67
-    check-cast v0, Lf55;
+    check-cast v0, Lib5;
 
     .line 68
     .line 69
-    iget-object v0, v0, Lf55;->t:LlHe;
+    iget-object v0, v0, Lib5;->t:LWYe;
 
     .line 70
     .line 71
@@ -6377,14 +6313,14 @@
     .line 74
     .line 75
     .line 76
-    new-instance v0, La8h;
+    new-instance v0, LLth;
 
     .line 77
     .line 78
     const/4 v2, 0x0
 
     .line 79
-    invoke-direct {v0, p1, v2}, La8h;-><init>(Ld8h;I)V
+    invoke-direct {v0, p1, v2}, LLth;-><init>(LOth;I)V
 
     .line 80
     .line 81
@@ -6398,15 +6334,15 @@
     .line 85
     .line 86
     .line 87
-    new-instance v0, LTkg;
+    new-instance v0, Lq0h;
 
     .line 88
     .line 89
-    const/16 v1, 0x1c
+    const/16 v1, 0xf
 
     .line 90
     .line 91
-    invoke-direct {v0, v1, p1}, LTkg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lq0h;-><init>(ILjava/lang/Object;)V
 
     .line 92
     .line 93
@@ -6420,16 +6356,16 @@
     .line 97
     .line 98
     .line 99
-    iget-object v0, p1, Ld8h;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, p1, LOth;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 100
     .line 101
-    invoke-static {v1, v0}, LLZj;->s0(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    invoke-static {v1, v0}, LOIc;->M(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
     .line 102
     .line 103
     .line 104
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 105
     .line 106
@@ -6437,7 +6373,7 @@
     move-result-object v1
 
     .line 108
-    invoke-virtual {v1}, Lv3h;->S1()Lj5h;
+    invoke-virtual {v1}, Lkph;->f2()Lbrh;
 
     .line 109
     .line 110
@@ -6445,7 +6381,7 @@
     move-result-object v1
 
     .line 112
-    invoke-virtual {v1}, Lj5h;->e()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-virtual {v1}, Lbrh;->e()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 113
     .line 114
@@ -6453,7 +6389,7 @@
     move-result-object v1
 
     .line 116
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 117
     .line 118
@@ -6461,11 +6397,11 @@
     move-result-object v2
 
     .line 120
-    check-cast v2, Lf55;
+    check-cast v2, Lib5;
 
     .line 121
     .line 122
-    iget-object v2, v2, Lf55;->t:LlHe;
+    iget-object v2, v2, Lib5;->t:LWYe;
 
     .line 123
     .line 124
@@ -6483,11 +6419,11 @@
     .line 130
     .line 131
     .line 132
-    sget-object v1, LADe;->p0:LADe;
+    sget-object v1, LzMd;->s0:LzMd;
 
     .line 133
     .line 134
-    invoke-virtual {v3, v1}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    invoke-virtual {v3, v1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 135
     .line 136
@@ -6495,11 +6431,11 @@
     move-result-object v1
 
     .line 138
-    sget-object v2, LEDe;->p0:LEDe;
+    sget-object v2, LCMd;->q0:LCMd;
 
     .line 139
     .line 140
-    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 141
     .line 142
@@ -6507,11 +6443,11 @@
     move-result-object v1
 
     .line 144
-    sget-object v2, LhNg;->z0:LhNg;
+    sget-object v2, Lsdh;->r0:Lsdh;
 
     .line 145
     .line 146
-    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
     .line 147
     .line 148
@@ -6519,19 +6455,19 @@
     move-result-object v1
 
     .line 150
-    new-instance v2, Lb8h;
+    new-instance v2, LMth;
 
     .line 151
     .line 152
     const/4 v3, 0x6
 
     .line 153
-    invoke-direct {v2, p1, v3}, Lb8h;-><init>(Ld8h;I)V
+    invoke-direct {v2, p1, v3}, LMth;-><init>(LOth;I)V
 
     .line 154
     .line 155
     .line 156
-    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
     .line 157
     .line 158
@@ -6539,7 +6475,7 @@
     move-result-object v1
 
     .line 160
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 161
     .line 162
@@ -6547,15 +6483,15 @@
     move-result-object v2
 
     .line 164
-    check-cast v2, Lf55;
+    check-cast v2, Lib5;
 
     .line 165
     .line 166
-    iget-object v2, v2, Lf55;->t:LlHe;
+    iget-object v2, v2, Lib5;->t:LWYe;
 
     .line 167
     .line 168
-    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 169
     .line 170
@@ -6563,24 +6499,24 @@
     move-result-object v1
 
     .line 172
-    new-instance v2, Lb8h;
+    new-instance v2, LMth;
 
     .line 173
     .line 174
     const/4 v3, 0x7
 
     .line 175
-    invoke-direct {v2, p1, v3}, Lb8h;-><init>(Ld8h;I)V
+    invoke-direct {v2, p1, v3}, LMth;-><init>(LOth;I)V
 
     .line 176
     .line 177
     .line 178
-    invoke-static {v1, v2, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v1, v2, v0}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 179
     .line 180
     .line 181
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 182
     .line 183
@@ -6588,7 +6524,7 @@
     move-result-object v1
 
     .line 185
-    invoke-virtual {v1}, Lv3h;->S1()Lj5h;
+    invoke-virtual {v1}, Lkph;->f2()Lbrh;
 
     .line 186
     .line 187
@@ -6596,7 +6532,7 @@
     move-result-object v1
 
     .line 189
-    invoke-virtual {v1}, Lj5h;->d()Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-virtual {v1}, Lbrh;->d()Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 190
     .line 191
@@ -6604,7 +6540,7 @@
     move-result-object v1
 
     .line 193
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 194
     .line 195
@@ -6612,11 +6548,11 @@
     move-result-object v2
 
     .line 197
-    check-cast v2, Lf55;
+    check-cast v2, Lib5;
 
     .line 198
     .line 199
-    iget-object v2, v2, Lf55;->t:LlHe;
+    iget-object v2, v2, Lib5;->t:LWYe;
 
     .line 200
     .line 201
@@ -6634,14 +6570,14 @@
     .line 207
     .line 208
     .line 209
-    new-instance v1, La8h;
+    new-instance v1, LLth;
 
     .line 210
     .line 211
     const/4 v2, 0x3
 
     .line 212
-    invoke-direct {v1, p1, v2}, La8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v2}, LLth;-><init>(LOth;I)V
 
     .line 213
     .line 214
@@ -6655,24 +6591,24 @@
     .line 218
     .line 219
     .line 220
-    new-instance v1, Lb8h;
+    new-instance v1, LMth;
 
     .line 221
     .line 222
     const/4 v3, 0x2
 
     .line 223
-    invoke-direct {v1, p1, v3}, Lb8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v3}, LMth;-><init>(LOth;I)V
 
     .line 224
     .line 225
     .line 226
-    invoke-static {v2, v1, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v2, v1, v0}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 227
     .line 228
     .line 229
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 230
     .line 231
@@ -6680,7 +6616,7 @@
     move-result-object v1
 
     .line 233
-    invoke-virtual {v1}, Lv3h;->S1()Lj5h;
+    invoke-virtual {v1}, Lkph;->f2()Lbrh;
 
     .line 234
     .line 235
@@ -6688,7 +6624,7 @@
     move-result-object v1
 
     .line 237
-    invoke-virtual {v1}, Lj5h;->e()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-virtual {v1}, Lbrh;->e()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 238
     .line 239
@@ -6696,7 +6632,7 @@
     move-result-object v1
 
     .line 241
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 242
     .line 243
@@ -6704,11 +6640,11 @@
     move-result-object v2
 
     .line 245
-    check-cast v2, Lf55;
+    check-cast v2, Lib5;
 
     .line 246
     .line 247
-    iget-object v2, v2, Lf55;->t:LlHe;
+    iget-object v2, v2, Lib5;->t:LWYe;
 
     .line 248
     .line 249
@@ -6726,14 +6662,14 @@
     .line 255
     .line 256
     .line 257
-    new-instance v1, La8h;
+    new-instance v1, LLth;
 
     .line 258
     .line 259
     const/4 v2, 0x4
 
     .line 260
-    invoke-direct {v1, p1, v2}, La8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v2}, LLth;-><init>(LOth;I)V
 
     .line 261
     .line 262
@@ -6747,24 +6683,24 @@
     .line 266
     .line 267
     .line 268
-    new-instance v1, Lb8h;
+    new-instance v1, LMth;
 
     .line 269
     .line 270
     const/4 v3, 0x3
 
     .line 271
-    invoke-direct {v1, p1, v3}, Lb8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v3}, LMth;-><init>(LOth;I)V
 
     .line 272
     .line 273
     .line 274
-    invoke-static {v2, v1, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v2, v1, v0}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 275
     .line 276
     .line 277
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 278
     .line 279
@@ -6772,7 +6708,7 @@
     move-result-object v1
 
     .line 281
-    invoke-virtual {v1}, Lv3h;->S1()Lj5h;
+    invoke-virtual {v1}, Lkph;->f2()Lbrh;
 
     .line 282
     .line 283
@@ -6780,7 +6716,7 @@
     move-result-object v1
 
     .line 285
-    invoke-virtual {v1}, Lj5h;->f()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-virtual {v1}, Lbrh;->f()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 286
     .line 287
@@ -6788,7 +6724,7 @@
     move-result-object v1
 
     .line 289
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 290
     .line 291
@@ -6796,11 +6732,11 @@
     move-result-object v2
 
     .line 293
-    check-cast v2, Lf55;
+    check-cast v2, Lib5;
 
     .line 294
     .line 295
-    iget-object v2, v2, Lf55;->t:LlHe;
+    iget-object v2, v2, Lib5;->t:LWYe;
 
     .line 296
     .line 297
@@ -6818,14 +6754,14 @@
     .line 303
     .line 304
     .line 305
-    new-instance v1, La8h;
+    new-instance v1, LLth;
 
     .line 306
     .line 307
     const/4 v2, 0x1
 
     .line 308
-    invoke-direct {v1, p1, v2}, La8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v2}, LLth;-><init>(LOth;I)V
 
     .line 309
     .line 310
@@ -6839,24 +6775,24 @@
     .line 314
     .line 315
     .line 316
-    new-instance v1, Lb8h;
+    new-instance v1, LMth;
 
     .line 317
     .line 318
     const/4 v3, 0x0
 
     .line 319
-    invoke-direct {v1, p1, v3}, Lb8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v3}, LMth;-><init>(LOth;I)V
 
     .line 320
     .line 321
     .line 322
-    invoke-static {v2, v1, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v2, v1, v0}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 323
     .line 324
     .line 325
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 326
     .line 327
@@ -6864,7 +6800,7 @@
     move-result-object v1
 
     .line 329
-    invoke-virtual {v1}, Lv3h;->S1()Lj5h;
+    invoke-virtual {v1}, Lkph;->f2()Lbrh;
 
     .line 330
     .line 331
@@ -6872,7 +6808,7 @@
     move-result-object v1
 
     .line 333
-    invoke-virtual {v1}, Lj5h;->d()Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-virtual {v1}, Lbrh;->d()Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 334
     .line 335
@@ -6880,7 +6816,7 @@
     move-result-object v1
 
     .line 337
-    invoke-virtual {p1}, Ld8h;->h3()Lv3h;
+    invoke-virtual {p1}, LOth;->i3()Lkph;
 
     .line 338
     .line 339
@@ -6888,11 +6824,11 @@
     move-result-object v2
 
     .line 341
-    check-cast v2, Lf55;
+    check-cast v2, Lib5;
 
     .line 342
     .line 343
-    iget-object v2, v2, Lf55;->t:LlHe;
+    iget-object v2, v2, Lib5;->t:LWYe;
 
     .line 344
     .line 345
@@ -6910,14 +6846,14 @@
     .line 351
     .line 352
     .line 353
-    new-instance v1, La8h;
+    new-instance v1, LLth;
 
     .line 354
     .line 355
     const/4 v2, 0x2
 
     .line 356
-    invoke-direct {v1, p1, v2}, La8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v2}, LLth;-><init>(LOth;I)V
 
     .line 357
     .line 358
@@ -6931,24 +6867,35 @@
     .line 362
     .line 363
     .line 364
-    new-instance v1, Lb8h;
+    new-instance v1, LMth;
 
     .line 365
     .line 366
     const/4 v3, 0x1
 
     .line 367
-    invoke-direct {v1, p1, v3}, Lb8h;-><init>(Ld8h;I)V
+    invoke-direct {v1, p1, v3}, LMth;-><init>(LOth;I)V
 
     .line 368
     .line 369
     .line 370
-    invoke-static {v2, v1, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v2, v1, v0}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 371
     .line 372
     .line 373
     return-void
+.end method
+
+.method public v2()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->h1:I
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public w2()I
@@ -6973,6 +6920,72 @@
     return v0
 .end method
 
+.method public y1(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    const-string v0, ""
+
+    .line 21
+    .line 22
+    :cond_0
+    iput-object v0, p1, LOth;->i0:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->l2()LOth;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    invoke-virtual {p1, p0}, LOth;->n3(LPth;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+.end method
+
 .method public final y2()Landroid/view/View;
     .locals 1
 
@@ -6993,7 +7006,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10

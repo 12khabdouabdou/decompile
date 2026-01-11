@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lcq6;
+    proxyClass = Lpt6;
     schema = "\'getAutofillDisplayNameBridgeObservable\':f?|m|(): g<c>:\'[0]\'<a<s>>,\'onTapPrivacyPolicy\':f?|m|(),\'onTapTos\':f?|m|(),\'onSaveDisplayNameToSession\':f?|m|(s, s)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
@@ -19,9 +19,6 @@
 
 # virtual methods
 .method public abstract getAutofillDisplayNameBridgeObservable()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -31,20 +28,23 @@
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract onSaveDisplayNameToSession(Ljava/lang/String;Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onTapPrivacyPolicy()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onTapTos()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

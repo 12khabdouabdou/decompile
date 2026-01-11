@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/in_app_warning/InAppWarningTweaks;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'mockInAppWarningCount\':d@?,\'routeTag\':s?,\'localeOverride\':s?"
     typeReferences = {}

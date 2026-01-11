@@ -30,7 +30,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(ZFIILHr5;)V
+.method public synthetic constructor <init>(ZFIILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -290,7 +290,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v2, v1}, Ln9f;->b(IFI)I
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
 
     .line 13
     .line 14
@@ -369,7 +369,7 @@
 
     .line 31
     .line 32
-    invoke-static {v0, v1, v2}, Llva;->B(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LJF0;->v(Ljava/lang/StringBuilder;IC)Ljava/lang/String;
 
     .line 33
     .line 34

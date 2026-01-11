@@ -169,7 +169,7 @@
     const/4 v3, 0x2
 
     .line 45
-    invoke-static {p4, v1, v3, p3}, LG0;->b(IIII)I
+    invoke-static {p4, v1, v3, p3}, LzHa;->j(IIII)I
 
     .line 46
     .line 47

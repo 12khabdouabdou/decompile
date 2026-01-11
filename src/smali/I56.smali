@@ -1,228 +1,244 @@
-.class public final LI56;
-.super Ljava/lang/Object;
+.class public final enum LI56;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/disposables/Disposable;
+
+# static fields
+.field public static final enum X:LI56;
+
+.field public static final synthetic Y:[LI56;
+
+.field public static final b:Ljava/util/LinkedHashMap;
+
+.field public static final enum c:LI56;
+
+.field public static final enum t:LI56;
 
 
 # instance fields
-.field public final X:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final a:LBre;
-
-.field public final b:LXfi;
-
-.field public final c:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-.field public final t:LH56;
+.field public final a:I
 
 
 # direct methods
-.method public constructor <init>(Lnwf;)V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LI56;
 
     .line 2
     .line 3
-    .line 4
-    sget-object p1, LHB6;->Z:LHB6;
+    const-string v1, "CONFIRMED"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v0, v1, v2, v2}, LI56;-><init>(Ljava/lang/String;II)V
 
     .line 7
     .line 8
     .line 9
-    new-instance v0, LWm0;
+    sput-object v0, LI56;->c:LI56;
 
     .line 10
     .line 11
-    const-string v1, "DeviceIdleObserver"
+    new-instance v1, LI56;
 
     .line 12
     .line 13
-    invoke-direct {v0, p1, v1}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    const-string v3, "PENDING_PUT_REQUEST"
 
     .line 14
     .line 15
+    const/4 v4, 0x1
+
     .line 16
-    new-instance p1, LBre;
+    invoke-direct {v1, v3, v4, v4}, LI56;-><init>(Ljava/lang/String;II)V
 
     .line 17
     .line 18
-    invoke-direct {p1, v0}, LBre;-><init>(LWm0;)V
-
     .line 19
+    sput-object v1, LI56;->t:LI56;
+
     .line 20
     .line 21
-    iput-object p1, p0, LI56;->a:LBre;
+    new-instance v3, LI56;
 
     .line 22
     .line 23
-    new-instance p1, Ll14;
+    const-string v5, "PENDING_PUT_RESPONSE"
 
     .line 24
     .line 25
-    const/16 v0, 0x15
+    const/4 v6, 0x2
 
     .line 26
-    .line 27
-    invoke-direct {p1, v0, p0}, Ll14;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v5, v6, v6}, LI56;-><init>(Ljava/lang/String;II)V
 
+    .line 27
     .line 28
     .line 29
-    .line 30
-    new-instance v0, LXfi;
+    sput-object v3, LI56;->X:LI56;
 
+    .line 30
     .line 31
+    const/4 v5, 0x3
+
     .line 32
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    new-array v5, v5, [LI56;
 
     .line 33
     .line 34
+    aput-object v0, v5, v2
+
     .line 35
-    iput-object v0, p0, LI56;->b:LXfi;
-
     .line 36
+    aput-object v1, v5, v4
+
     .line 37
-    new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 38
-    .line 39
-    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+    aput-object v3, v5, v6
 
+    .line 39
     .line 40
+    sput-object v5, LI56;->Y:[LI56;
+
     .line 41
     .line 42
-    iput-object p1, p0, LI56;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-static {}, LI56;->values()[LI56;
 
     .line 43
     .line 44
-    new-instance p1, LH56;
-
     .line 45
+    move-result-object v0
+
     .line 46
-    invoke-direct {p1, p0}, LH56;-><init>(LI56;)V
+    array-length v1, v0
 
     .line 47
+    invoke-static {v1}, Llrb;->z0(I)I
+
     .line 48
     .line 49
-    iput-object p1, p0, LI56;->t:LH56;
-
     .line 50
+    move-result v1
+
     .line 51
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+    const/16 v3, 0x10
 
     .line 52
     .line 53
-    const/4 v0, 0x0
+    if-ge v1, v3, :cond_0
 
     .line 54
-    invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
     .line 55
+    const/16 v1, 0x10
+
     .line 56
     .line 57
-    iput-object p1, p0, LI56;->X:Ljava/util/concurrent/atomic/AtomicBoolean;
+    :cond_0
+    new-instance v3, Ljava/util/LinkedHashMap;
 
     .line 58
     .line 59
+    invoke-direct {v3, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
+
+    .line 60
+    .line 61
+    .line 62
+    array-length v1, v0
+
+    .line 63
+    :goto_0
+    if-ge v2, v1, :cond_1
+
+    .line 64
+    .line 65
+    aget-object v5, v0, v2
+
+    .line 66
+    .line 67
+    iget v6, v5, LI56;->a:I
+
+    .line 68
+    .line 69
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v6
+
+    .line 73
+    invoke-interface {v3, v6, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 74
+    .line 75
+    .line 76
+    add-int/2addr v2, v4
+
+    .line 77
+    goto :goto_0
+
+    .line 78
+    :cond_1
+    sput-object v3, LI56;->b:Ljava/util/LinkedHashMap;
+
+    .line 79
+    .line 80
     return-void
 .end method
 
-
-# virtual methods
-.method public final a()Z
-    .locals 2
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LI56;->b:LXfi;
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 4
+    iput p3, p0, LI56;->a:I
+
     .line 5
     .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Landroidx/lifecycle/LifecycleOwner;
-
-    .line 8
-    .line 9
-    invoke-interface {v0}, Landroidx/lifecycle/LifecycleOwner;->getLifecycle()Landroidx/lifecycle/Lifecycle;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    invoke-virtual {v0}, Landroidx/lifecycle/Lifecycle;->b()Landroidx/lifecycle/Lifecycle$State;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    sget-object v1, Landroidx/lifecycle/Lifecycle$State;->t:Landroidx/lifecycle/Lifecycle$State;
-
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Landroidx/lifecycle/Lifecycle$State;->a(Landroidx/lifecycle/Lifecycle$State;)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    xor-int/lit8 v0, v0, 0x1
-
-    .line 24
-    .line 25
-    return v0
+    return-void
 .end method
 
-.method public final c()Z
+.method public static valueOf(Ljava/lang/String;)LI56;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LI56;->X:Ljava/util/concurrent/atomic/AtomicBoolean;
+    const-class v0, LI56;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result-object p0
 
     .line 7
-    xor-int/lit8 v0, v0, 0x1
+    check-cast p0, LI56;
 
     .line 8
     .line 9
-    return v0
+    return-object p0
 .end method
 
-.method public final dispose()V
-    .locals 3
+.method public static values()[LI56;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LI56;->a:LBre;
+    sget-object v0, LI56;->Y:[LI56;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -230,31 +246,9 @@
     move-result-object v0
 
     .line 7
-    new-instance v1, LVW3;
+    check-cast v0, [LI56;
 
     .line 8
     .line 9
-    const/16 v2, 0x1d
-
-    .line 10
-    .line 11
-    invoke-direct {v1, v2, p0}, LVW3;-><init>(ILjava/lang/Object;)V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
+    return-object v0
 .end method

@@ -1,358 +1,420 @@
 .class public final LLgj;
-.super Ljava/lang/Object;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LSlb;
+.field public a:I
 
-.field public final b:Ljgj;
+.field public b:Le57;
 
-.field public final c:J
+.field public c:I
 
-.field public final d:Ljava/lang/String;
+.field public t:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(LSlb;Ljgj;JLjava/lang/String;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LLgj;->a:LSlb;
+    const/4 v0, 0x0
 
     .line 5
+    iput v0, p0, LLgj;->c:I
+
     .line 6
-    iput-object p2, p0, LLgj;->b:Ljgj;
-
     .line 7
+    const-string v1, ""
+
     .line 8
-    iput-wide p3, p0, LLgj;->c:J
-
     .line 9
-    .line 10
-    iput-object p5, p0, LLgj;->d:Ljava/lang/String;
+    iput-object v1, p0, LLgj;->t:Ljava/lang/String;
 
+    .line 10
     .line 11
+    iput v0, p0, LLgj;->a:I
+
     .line 12
+    .line 13
+    const/4 v0, 0x0
+
+    .line 14
+    iput-object v0, p0, LLgj;->b:Le57;
+
+    .line 15
+    .line 16
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
+
+    .line 17
+    .line 18
+    const/4 v0, -0x1
+
+    .line 19
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+
+    .line 20
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LLgj;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LLgj;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, LLgj;->a:LSlb;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, LLgj;->a:LSlb;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, LLgj;->b:Ljgj;
-
-    .line 25
-    .line 26
-    iget-object v3, p1, LLgj;->b:Ljgj;
-
-    .line 27
-    .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    if-nez v1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    iget-wide v3, p0, LLgj;->c:J
-
-    .line 36
-    .line 37
-    iget-wide v5, p1, LLgj;->c:J
-
-    .line 38
-    .line 39
-    cmp-long v1, v3, v5
-
-    .line 40
-    .line 41
-    if-eqz v1, :cond_4
-
-    .line 42
-    .line 43
-    return v2
-
-    .line 44
-    :cond_4
-    iget-object v1, p0, LLgj;->d:Ljava/lang/String;
-
-    .line 45
-    .line 46
-    iget-object p1, p1, LLgj;->d:Ljava/lang/String;
-
-    .line 47
-    .line 48
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 49
-    .line 50
-    .line 51
-    move-result p1
-
-    .line 52
-    if-nez p1, :cond_5
-
-    .line 53
-    .line 54
-    return v2
-
-    .line 55
-    :cond_5
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, LLgj;->a:LSlb;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LSlb;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LLgj;->b:Ljgj;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljgj;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 17
-    .line 18
-    const/16 v0, 0x20
-
-    .line 19
-    .line 20
-    iget-wide v2, p0, LLgj;->c:J
-
-    .line 21
-    .line 22
-    ushr-long v4, v2, v0
-
-    .line 23
-    .line 24
-    xor-long/2addr v2, v4
-
-    .line 25
-    long-to-int v0, v2
-
-    .line 26
-    add-int/2addr v1, v0
-
-    .line 27
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 28
-    .line 29
-    iget-object v0, p0, LLgj;->d:Ljava/lang/String;
-
-    .line 30
-    .line 31
-    if-nez v0, :cond_0
-
-    .line 32
-    .line 33
-    const/4 v0, 0x0
-
-    .line 34
-    goto :goto_0
-
-    .line 35
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v0
-
-    .line 39
-    :goto_0
-    add-int/2addr v1, v0
-
-    .line 40
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method public final computeSerializedSize()I
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
-    const-string v1, "UploadResult(mediaPackage="
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget v1, p0, LLgj;->c:I
 
     .line 6
     .line 7
+    const/4 v2, 0x1
+
     .line 8
-    iget-object v1, p0, LLgj;->a:LSlb;
+    and-int/2addr v1, v2
 
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    if-eqz v1, :cond_0
 
+    .line 10
     .line 11
+    iget-object v1, p0, LLgj;->t:Ljava/lang/String;
+
     .line 12
     .line 13
-    const-string v1, ", uploadLocation="
+    invoke-static {v2, v1}, Lbd3;->q(ILjava/lang/String;)I
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 16
+    move-result v1
+
     .line 17
+    add-int/2addr v0, v1
+
     .line 18
-    iget-object v1, p0, LLgj;->b:Ljgj;
+    :cond_0
+    iget v1, p0, LLgj;->a:I
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const/4 v2, 0x2
 
     .line 21
+    if-ne v1, v2, :cond_1
+
     .line 22
     .line 23
-    const-string v1, ", uploadMediaSize="
+    iget-object v1, p0, LLgj;->b:Le57;
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 26
     .line 27
     .line 28
-    iget-wide v1, p0, LLgj;->c:J
+    move-result v1
 
     .line 29
+    add-int/2addr v0, v1
+
     .line 30
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    :cond_1
+    iget v1, p0, LLgj;->a:I
 
     .line 31
     .line 32
+    const/4 v2, 0x3
+
     .line 33
-    const-string v1, ", mediaOrchestrationAttemptId="
+    if-ne v1, v2, :cond_2
 
     .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, LLgj;->b:Le57;
 
     .line 36
     .line 37
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
     .line 38
-    iget-object v1, p0, LLgj;->d:Ljava/lang/String;
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    add-int/2addr v1, v0
+
+    .line 42
+    return v1
+
+    .line 43
+    :cond_2
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_6
+
+    .line 6
+    .line 7
+    const/16 v1, 0xa
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_5
+
+    .line 10
+    .line 11
+    const/16 v1, 0x12
+
+    .line 12
+    .line 13
+    if-eq v0, v1, :cond_3
+
+    .line 14
+    .line 15
+    const/16 v1, 0x1a
+
+    .line 16
+    .line 17
+    if-eq v0, v1, :cond_1
+
+    .line 18
+    .line 19
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v0
+
+    .line 23
+    if-nez v0, :cond_0
+
+    .line 24
+    .line 25
+    goto :goto_1
+
+    .line 26
+    :cond_1
+    iget v0, p0, LLgj;->a:I
+
+    .line 27
+    .line 28
+    const/4 v1, 0x3
+
+    .line 29
+    if-eq v0, v1, :cond_2
+
+    .line 30
+    .line 31
+    new-instance v0, LHgj;
+
+    .line 32
+    .line 33
+    invoke-direct {v0}, LHgj;-><init>()V
+
+    .line 34
+    .line 35
+    .line 36
+    iput-object v0, p0, LLgj;->b:Le57;
+
+    .line 37
+    .line 38
+    :cond_2
+    iget-object v0, p0, LLgj;->b:Le57;
 
     .line 39
     .line 40
-    const-string v2, ")"
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 41
     .line 42
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
     .line 43
+    iput v1, p0, LLgj;->a:I
+
     .line 44
     .line 45
-    move-result-object v0
+    goto :goto_0
 
     .line 46
-    return-object v0
+    :cond_3
+    iget v0, p0, LLgj;->a:I
+
+    .line 47
+    .line 48
+    const/4 v1, 0x2
+
+    .line 49
+    if-eq v0, v1, :cond_4
+
+    .line 50
+    .line 51
+    new-instance v0, LIgj;
+
+    .line 52
+    .line 53
+    invoke-direct {v0}, LIgj;-><init>()V
+
+    .line 54
+    .line 55
+    .line 56
+    iput-object v0, p0, LLgj;->b:Le57;
+
+    .line 57
+    .line 58
+    :cond_4
+    iget-object v0, p0, LLgj;->b:Le57;
+
+    .line 59
+    .line 60
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    .line 61
+    .line 62
+    .line 63
+    iput v1, p0, LLgj;->a:I
+
+    .line 64
+    .line 65
+    goto :goto_0
+
+    .line 66
+    :cond_5
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v0
+
+    .line 70
+    iput-object v0, p0, LLgj;->t:Ljava/lang/String;
+
+    .line 71
+    .line 72
+    iget v0, p0, LLgj;->c:I
+
+    .line 73
+    .line 74
+    or-int/lit8 v0, v0, 0x1
+
+    .line 75
+    .line 76
+    iput v0, p0, LLgj;->c:I
+
+    .line 77
+    .line 78
+    goto :goto_0
+
+    .line 79
+    :cond_6
+    :goto_1
+    return-object p0
+.end method
+
+.method public final writeTo(Lbd3;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LLgj;->c:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    and-int/2addr v0, v1
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v0, p0, LLgj;->t:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v1, v0}, Lbd3;->R(ILjava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    iget v0, p0, LLgj;->a:I
+
+    .line 13
+    .line 14
+    const/4 v1, 0x2
+
+    .line 15
+    if-ne v0, v1, :cond_1
+
+    .line 16
+    .line 17
+    iget-object v0, p0, LLgj;->b:Le57;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+
+    .line 20
+    .line 21
+    .line 22
+    :cond_1
+    iget v0, p0, LLgj;->a:I
+
+    .line 23
+    .line 24
+    const/4 v1, 0x3
+
+    .line 25
+    if-ne v0, v1, :cond_2
+
+    .line 26
+    .line 27
+    iget-object v0, p0, LLgj;->b:Le57;
+
+    .line 28
+    .line 29
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+
+    .line 30
+    .line 31
+    .line 32
+    :cond_2
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
 .end method

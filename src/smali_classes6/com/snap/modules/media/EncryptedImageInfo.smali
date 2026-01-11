@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/media/EncryptedImageInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'contentObject\':t,\'encryptionInfo\':r?:\'[0]\',\'nativeContentTypeKey\':r?<e>:\'[1]\'"
     typeReferences = {

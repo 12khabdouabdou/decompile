@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LPL2;
+    proxyClass = LkO2;
     schema = "\'presentChatPageForUser\':f|m|(s): p<v>"
     typeReferences = {}
 .end annotation
@@ -23,7 +23,7 @@
             "Ljava/lang/String;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

@@ -35,7 +35,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f071091
+    const v0, 0x7f0710ba
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -116,7 +116,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2

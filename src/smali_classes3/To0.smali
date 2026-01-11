@@ -1,120 +1,74 @@
 .class public final LTo0;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'selectedEffectId\':s,\'musicMixData\':r?:\'[0]\',\'snapVolume\':d@?,\'voiceoverVolume\':d@?,\'shouldShowVoiceoverButton\':b@?,\'isSnapEditorEnabled\':b@?"
-    typeReferences = {
-        Lcom/snap/audioeffects/MusicMixData;
-    }
-.end annotation
+# interfaces
+.implements LUo0;
 
 
-# instance fields
-.field private _isSnapEditorEnabled:Ljava/lang/Boolean;
-
-.field private _musicMixData:Lcom/snap/audioeffects/MusicMixData;
-
-.field private _selectedEffectId:Ljava/lang/String;
-
-.field private _shouldShowVoiceoverButton:Ljava/lang/Boolean;
-
-.field private _snapVolume:Ljava/lang/Double;
-
-.field private _voiceoverVolume:Ljava/lang/Double;
+# static fields
+.field public static final a:LTo0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LTo0;
 
     .line 2
-    iput-object p1, p0, LTo0;->_selectedEffectId:Ljava/lang/String;
-
-    const/4 p1, 0x0
-
     .line 3
-    iput-object p1, p0, LTo0;->_musicMixData:Lcom/snap/audioeffects/MusicMixData;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p1, p0, LTo0;->_snapVolume:Ljava/lang/Double;
-
     .line 5
-    iput-object p1, p0, LTo0;->_voiceoverVolume:Ljava/lang/Double;
-
     .line 6
-    iput-object p1, p0, LTo0;->_shouldShowVoiceoverButton:Ljava/lang/Boolean;
+    sput-object v0, LTo0;->a:LTo0;
 
     .line 7
-    iput-object p1, p0, LTo0;->_isSnapEditorEnabled:Ljava/lang/Boolean;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Lcom/snap/audioeffects/MusicMixData;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
-    .locals 0
-
     .line 8
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 9
-    iput-object p1, p0, LTo0;->_selectedEffectId:Ljava/lang/String;
-
-    .line 10
-    iput-object p2, p0, LTo0;->_musicMixData:Lcom/snap/audioeffects/MusicMixData;
-
-    .line 11
-    iput-object p3, p0, LTo0;->_snapVolume:Ljava/lang/Double;
-
-    .line 12
-    iput-object p4, p0, LTo0;->_voiceoverVolume:Ljava/lang/Double;
-
-    .line 13
-    iput-object p5, p0, LTo0;->_shouldShowVoiceoverButton:Ljava/lang/Boolean;
-
-    .line 14
-    iput-object p6, p0, LTo0;->_isSnapEditorEnabled:Ljava/lang/Boolean;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/snap/audioeffects/MusicMixData;)V
-    .locals 0
+.method public final s6()Lzn0;
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LTo0;->_musicMixData:Lcom/snap/audioeffects/MusicMixData;
+    new-instance v0, Lm0j;
 
     .line 2
     .line 3
-    return-void
+    const/16 v1, 0x9
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lm0j;-><init>(I)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object v0
 .end method
 
-.method public final b(Ljava/lang/Boolean;)V
-    .locals 0
+.method public final w4()Lto0;
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LTo0;->_shouldShowVoiceoverButton:Ljava/lang/Boolean;
+    new-instance v0, Ln0j;
 
     .line 2
     .line 3
-    return-void
-.end method
+    const/16 v1, 0x9
 
-.method public final c(Ljava/lang/Double;)V
-    .locals 0
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ln0j;-><init>(I)V
 
-    .line 1
-    iput-object p1, p0, LTo0;->_snapVolume:Ljava/lang/Double;
-
-    .line 2
-    .line 3
-    return-void
+    .line 6
+    .line 7
+    .line 8
+    return-object v0
 .end method

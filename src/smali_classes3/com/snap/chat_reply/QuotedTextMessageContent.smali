@@ -1,10 +1,10 @@
 .class public final Lcom/snap/chat_reply/QuotedTextMessageContent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'text\':s,\'scale\':d@?,\'useScrollView\':b@?"
     typeReferences = {}

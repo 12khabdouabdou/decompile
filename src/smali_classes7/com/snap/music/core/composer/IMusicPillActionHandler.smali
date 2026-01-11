@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LyW8;
-    schema = "\'pickRecommendation\':f?|m|(r:\'[0]\'),\'pickToAddSound\':f?|m|(),\'presentScrubber\':f?|m|(),\'removeSound\':f?|m|()"
+    proxyClass = LZ39;
+    schema = "\'pickRecommendation\':f?|m|(r:\'[0]\'),\'pickToAddSound\':f?|m|(),\'didTapAppliedTrack\':f?|m|(),\'removeSound\':f?|m|()"
     typeReferences = {
         Lcom/snap/music/core/composer/PickerSelectedTrack;
     }
@@ -18,18 +18,18 @@
 
 
 # virtual methods
+.method public abstract didTapAppliedTrack()V
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
 .method public abstract pickRecommendation(Lcom/snap/music/core/composer/PickerSelectedTrack;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract pickToAddSound()V
-    .annotation runtime LUy3;
-    .end annotation
-.end method
-
-.method public abstract presentScrubber()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -37,6 +37,6 @@
 .end method
 
 .method public abstract removeSound()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

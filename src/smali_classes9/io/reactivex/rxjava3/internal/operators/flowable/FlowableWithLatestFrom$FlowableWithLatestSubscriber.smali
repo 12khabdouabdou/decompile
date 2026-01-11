@@ -99,7 +99,7 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 2
 
     .line 1
@@ -111,7 +111,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Ltvi;)Z
 
     .line 6
     .line 7
@@ -130,7 +130,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 17
     .line 18

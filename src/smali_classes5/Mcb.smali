@@ -1,80 +1,93 @@
-.class public final LMcb;
+.class public interface abstract LMcb;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LUab;
+.implements Lcom/snap/composer/utils/ComposerMarshallable;
 
 
-# instance fields
-.field public final synthetic a:LTcb;
-
-
-# direct methods
-.method public constructor <init>(LTcb;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LMcb;->a:LTcb;
-
-    .line 5
-    .line 6
-    return-void
-.end method
+# annotations
+.annotation runtime LpA3;
+    propertyReplacements = ""
+    proxyClass = LNcb;
+    schema = "\'applyFilter\':f|m|(d),\'launchPlaceProfile\':f|m|(s, s),\'openURLInBrowser\':f|m|(s),\'close\':f|m|(),\'onTapPerfectFor\':f|m|(),\'venueFavoriteStore\':r?:\'[0]\',\'onFavoriteChanges\':f|m|(s, s, b),\'scrollOffsetSubject\':g?<c>:\'[1]\'<d@>,\'scrollViewBottomPadding\':g?<c>:\'[2]\'<d@>,\'useStaging\':b@?,\'mapSessionId\':d@?,\'networkingClient\':r:\'[3]\',\'nativeStoryPlayer\':r:\'[4]\',\'authHeader\':m?<s,u>"
+    typeReferences = {
+        Lcom/snap/venues/api/ComposerVenueFavoriteStore;,
+        Lcom/snap/composer/bridge_observables/BridgeSubject;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lcom/snap/composer/networking/ClientProtocol;,
+        Lcom/snap/venues/api/NativeVenueStoryPlayer;
+    }
+.end annotation
 
 
 # virtual methods
-.method public final d()V
-    .locals 9
+.method public abstract applyFilter(D)V
+.end method
 
-    .line 1
-    new-instance v0, LkCa;
+.method public abstract close()V
+.end method
 
-    .line 2
-    .line 3
-    iget-object v8, p0, LMcb;->a:LTcb;
+.method public abstract getAuthHeader()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 4
-    .line 5
-    iget-object v2, v8, LTcb;->a:LZab;
+.method public abstract getMapSessionId()Ljava/lang/Double;
+.end method
 
-    .line 6
-    .line 7
-    const-class v3, LZab;
+.method public abstract getNativeStoryPlayer()Lcom/snap/venues/api/NativeVenueStoryPlayer;
+.end method
 
-    .line 8
-    .line 9
-    const-string v4, "onMapFrameFullyRendered"
+.method public abstract getNetworkingClient()Lcom/snap/composer/networking/ClientProtocol;
+.end method
 
-    .line 10
-    .line 11
-    const/4 v1, 0x1
+.method public abstract getScrollOffsetSubject()Lcom/snap/composer/bridge_observables/BridgeSubject;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeSubject<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 12
-    const-string v5, "onMapFrameFullyRendered(Lcom/snap/maps/framework/basemap/api/MapController;)V"
+.method public abstract getScrollViewBottomPadding()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 13
-    .line 14
-    const/4 v6, 0x0
+.method public abstract getUseStaging()Ljava/lang/Boolean;
+.end method
 
-    .line 15
-    const/4 v7, 0x4
+.method public abstract getVenueFavoriteStore()Lcom/snap/venues/api/ComposerVenueFavoriteStore;
+.end method
 
-    .line 16
-    invoke-direct/range {v0 .. v7}, LkCa;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+.method public abstract launchPlaceProfile(Ljava/lang/String;Ljava/lang/String;)V
+.end method
 
-    .line 17
-    .line 18
-    .line 19
-    invoke-static {v8, v0}, LTcb;->b(LTcb;Lkotlin/jvm/functions/Function1;)V
+.method public abstract onFavoriteChanges(Ljava/lang/String;Ljava/lang/String;Z)V
+.end method
 
-    .line 20
-    .line 21
-    .line 22
-    return-void
+.method public abstract onTapPerfectFor()V
+.end method
+
+.method public abstract openURLInBrowser(Ljava/lang/String;)V
+.end method
+
+.method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
 .end method

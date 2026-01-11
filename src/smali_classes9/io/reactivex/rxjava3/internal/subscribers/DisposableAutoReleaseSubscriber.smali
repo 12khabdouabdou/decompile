@@ -15,7 +15,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicReference<",
-        "Lc7i;",
+        "Ltvi;",
         ">;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TT;>;",
@@ -75,7 +75,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 2
 
     .line 1
@@ -153,7 +153,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lio/reactivex/rxjava3/internal/functions/Functions;->f:Lio/reactivex/rxjava3/functions/Consumer;
+    sget-object v0, Lio/reactivex/rxjava3/internal/functions/Functions;->e:Lio/reactivex/rxjava3/functions/Consumer;
 
     .line 2
     .line 3
@@ -444,11 +444,11 @@
     move-result-object v0
 
     .line 23
-    check-cast v0, Lc7i;
+    check-cast v0, Ltvi;
 
     .line 24
     .line 25
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 26
     .line 27
@@ -462,11 +462,11 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 2
 
     .line 1
-    invoke-static {p0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Lc7i;)Z
+    invoke-static {p0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Ltvi;)Z
 
     .line 2
     .line 3
@@ -485,7 +485,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 13
     .line 14

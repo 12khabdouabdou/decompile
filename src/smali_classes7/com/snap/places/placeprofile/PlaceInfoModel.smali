@@ -1,21 +1,21 @@
 .class public final Lcom/snap/places/placeprofile/PlaceInfoModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'placeId\':s,\'name\':s,\'pricyness\':s,\'category\':s,\'kindName\':s?,\'aggregateReviews\':a?<r:\'[0]\'>,\'address\':s,\'rawAddress\':r?:\'[1]\',\'phoneNumber\':s,\'displayPhoneNumber\':s,\'fullUrl\':s,\'displayUrl\':s,\'profileImageUrl\':s,\'profileImageUrlIsIcon\':b,\'categoryIconUrl\':s,\'openingHours\':r?:\'[2]\',\'lat\':d,\'lng\':d,\'menuInfo\':r?:\'[3]\',\'reservationPartnerInfo\':a<r:\'[4]\'>,\'deliveryPartnerInfo\':a<r:\'[4]\'>,\'boundingBox\':r:\'[5]\',\'placeType\':r<e>:\'[6]\',\'placePhotos\':a?<r:\'[7]\'>,\'showPlaceStories\':b,\'isFavorited\':b,\'storeUrl\':s,\'businessId\':s?,\'placeFavoritesData\':r?:\'[8]\',\'particlesEffectUrl\':s?"
     typeReferences = {
-        Ltqd;,
+        LHGd;,
         Lcom/snap/places/placeprofile/PlaceAddress;,
         Lcom/snap/places/placeprofile/PlaceOpeningHours;,
         Lcom/snap/places/placeprofile/PlaceMenuInfo;,
-        LJxj;,
+        LXWj;,
         Lcom/snap/composer/location/GeoRect;,
         Lcom/snap/venueprofile/VenueProfilePlaceType;,
-        LOxj;,
+        LcXj;,
         Lcom/snap/venues/venueprofile/PlaceFavoritesData;
     }
 .end annotation
@@ -28,7 +28,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Ltqd;",
+            "LHGd;",
             ">;"
         }
     .end annotation
@@ -46,7 +46,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LJxj;",
+            "LXWj;",
             ">;"
         }
     .end annotation
@@ -84,7 +84,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LOxj;",
+            "LcXj;",
             ">;"
         }
     .end annotation
@@ -104,7 +104,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LJxj;",
+            "LXWj;",
             ">;"
         }
     .end annotation
@@ -244,7 +244,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Ltqd;",
+            "LHGd;",
             ">;",
             "Ljava/lang/String;",
             "Lcom/snap/places/placeprofile/PlaceAddress;",
@@ -259,15 +259,15 @@
             "DD",
             "Lcom/snap/places/placeprofile/PlaceMenuInfo;",
             "Ljava/util/List<",
-            "LJxj;",
+            "LXWj;",
             ">;",
             "Ljava/util/List<",
-            "LJxj;",
+            "LXWj;",
             ">;",
             "Lcom/snap/composer/location/GeoRect;",
             "Lcom/snap/venueprofile/VenueProfilePlaceType;",
             "Ljava/util/List<",
-            "LOxj;",
+            "LcXj;",
             ">;ZZ",
             "Ljava/lang/String;",
             "Ljava/lang/String;",

@@ -37,13 +37,13 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/core/SingleObserver;
 
-.field public final b:LXXf;
+.field public final b:LZeg;
 
 .field public c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleObserver;LXXf;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleObserver;LZeg;)V
     .locals 0
 
     .line 1
@@ -56,7 +56,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->b:LXXf;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->b:LZeg;
 
     .line 7
     .line 8
@@ -113,11 +113,11 @@
     .line 7
     .line 8
     :try_start_0
-    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->b:LXXf;
+    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;->b:LZeg;
 
     .line 9
     .line 10
-    invoke-virtual {v2, v1, p1}, LXXf;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v2, v1, p1}, LZeg;->apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12

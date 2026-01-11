@@ -1,10 +1,10 @@
 .class public final Lcom/snap/venueprofile/VenueETAData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'localizedETAString\':s?,\'mode\':r<e>:\'[0]\'"
     typeReferences = {

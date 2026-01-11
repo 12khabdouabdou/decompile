@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LAd9;
+    proxyClass = LSl9;
     schema = "\'getIncomingFriends\':f|m|(f|s|(a?<r:\'[0]\'>, m?<s,u>)),\'hideIncomingFriend\':f|m|(r:\'[1]\'),\'viewedIncomingFriends\':f?|m|(a<r:\'[2]\'>),\'onIncomingFriendsUpdated\':f|m|(f()): f(),\'incomingFriendsObservable\':g?<c>:\'[3]\'<a<r:\'[0]\'>>"
     typeReferences = {
-        Ltd9;,
+        LKl9;,
         Lcom/snap/composer/people/HideIncomingFriendRequest;,
-        LgLj;,
+        LKak;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
 .end annotation
@@ -37,7 +37,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Ltd9;",
+            "LKl9;",
             ">;>;"
         }
     .end annotation
@@ -61,15 +61,15 @@
 .end method
 
 .method public abstract viewedIncomingFriends(Ljava/util/List;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "LgLj;",
+            "LKak;",
             ">;)V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method

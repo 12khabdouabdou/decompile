@@ -1,181 +1,216 @@
 .class public final Lg3i;
-.super Ljava/io/IOException;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:I
+.field public a:I
+
+.field public b:LY2i;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 2
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    packed-switch p1, :pswitch_data_0
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const-string v0, "null"
+    const/4 v0, 0x0
 
     .line 5
-    .line 6
-    goto :goto_0
+    iput v0, p0, Lg3i;->a:I
 
+    .line 6
     .line 7
-    :pswitch_0
-    const-string v0, "HTTP_1_1_REQUIRED"
+    const/4 v0, 0x0
 
     .line 8
-    .line 9
-    goto :goto_0
+    iput-object v0, p0, Lg3i;->b:LY2i;
 
+    .line 9
     .line 10
-    :pswitch_1
-    const-string v0, "INADEQUATE_SECURITY"
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 11
     .line 12
-    goto :goto_0
+    const/4 v0, -0x1
 
     .line 13
-    :pswitch_2
-    const-string v0, "ENHANCE_YOUR_CALM"
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
     .line 14
     .line 15
-    goto :goto_0
+    return-void
+.end method
+
+
+# virtual methods
+.method public final computeSerializedSize()I
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Le57;->computeSerializedSize()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget v1, p0, Lg3i;->a:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    if-ne v1, v2, :cond_0
+
+    .line 9
+    .line 10
+    iget-object v1, p0, Lg3i;->b:LY2i;
+
+    .line 11
+    .line 12
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
 
     .line 16
-    :pswitch_3
-    const-string v0, "CONNECT_ERROR"
+    add-int/2addr v1, v0
 
     .line 17
+    return v1
+
     .line 18
-    goto :goto_0
+    :cond_0
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_3
+
+    .line 6
+    .line 7
+    const/16 v1, 0xa
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
+    goto :goto_1
+
+    .line 18
+    :cond_1
+    iget v0, p0, Lg3i;->a:I
 
     .line 19
-    :pswitch_4
-    const-string v0, "COMPRESSION_ERROR"
-
     .line 20
+    const/4 v1, 0x1
+
     .line 21
-    goto :goto_0
+    if-eq v0, v1, :cond_2
 
     .line 22
-    :pswitch_5
-    const-string v0, "CANCEL"
-
     .line 23
-    .line 24
-    goto :goto_0
+    new-instance v0, LY2i;
 
+    .line 24
     .line 25
-    :pswitch_6
-    const-string v0, "REFUSED_STREAM"
+    invoke-direct {v0}, LY2i;-><init>()V
 
     .line 26
     .line 27
-    goto :goto_0
-
     .line 28
-    :pswitch_7
-    const-string v0, "FRAME_SIZE_ERROR"
+    iput-object v0, p0, Lg3i;->b:LY2i;
 
     .line 29
     .line 30
-    goto :goto_0
+    :cond_2
+    iget-object v0, p0, Lg3i;->b:LY2i;
 
     .line 31
-    :pswitch_8
-    const-string v0, "STREAM_CLOSED"
-
     .line 32
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
     .line 33
-    goto :goto_0
-
     .line 34
-    :pswitch_9
-    const-string v0, "SETTINGS_TIMEOUT"
-
     .line 35
-    .line 36
-    goto :goto_0
+    iput v1, p0, Lg3i;->a:I
 
+    .line 36
     .line 37
-    :pswitch_a
-    const-string v0, "FLOW_CONTROL_ERROR"
+    goto :goto_0
 
     .line 38
-    .line 39
-    goto :goto_0
+    :cond_3
+    :goto_1
+    return-object p0
+.end method
 
-    .line 40
-    :pswitch_b
-    const-string v0, "INTERNAL_ERROR"
+.method public final writeTo(Lbd3;)V
+    .locals 2
 
-    .line 41
-    .line 42
-    goto :goto_0
+    .line 1
+    iget v0, p0, Lg3i;->a:I
 
-    .line 43
-    :pswitch_c
-    const-string v0, "PROTOCOL_ERROR"
+    .line 2
+    .line 3
+    const/4 v1, 0x1
 
-    .line 44
-    .line 45
-    goto :goto_0
+    .line 4
+    if-ne v0, v1, :cond_0
 
-    .line 46
-    :pswitch_d
-    const-string v0, "NO_ERROR"
+    .line 5
+    .line 6
+    iget-object v0, p0, Lg3i;->b:LY2i;
 
-    .line 47
-    .line 48
-    :goto_0
-    const-string v1, "stream was reset: "
+    .line 7
+    .line 8
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
-    .line 49
-    .line 50
-    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    .line 9
+    .line 10
+    .line 11
+    :cond_0
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v0
-
-    .line 54
-    invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    iput p1, p0, Lg3i;->a:I
-
-    .line 58
-    .line 59
+    .line 12
+    .line 13
+    .line 14
     return-void
-
-    .line 60
-    nop
-
-    .line 61
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

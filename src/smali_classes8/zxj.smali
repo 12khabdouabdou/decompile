@@ -1,30 +1,20 @@
 .class public final Lzxj;
-.super LAxj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:J
 
-.field public final b:Ljava/lang/String;
+.field public final b:J
 
-.field public final c:D
+.field public final c:Z
 
-.field public final d:D
-
-.field public final e:Lcom/snap/composer/location/GeoRect;
-
-.field public final f:Ljava/lang/String;
-
-.field public final g:Ljava/lang/String;
-
-.field public final h:Lcom/snap/venueprofile/VenueProfileAnalyticsData;
-
-.field public final i:Ljava/util/List;
+.field public final d:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;DDLcom/snap/composer/location/GeoRect;Ljava/lang/String;Ljava/lang/String;Lcom/snap/venueprofile/VenueProfileAnalyticsData;Ljava/util/List;)V
+.method public constructor <init>(JJZZ)V
     .locals 0
 
     .line 1
@@ -33,42 +23,22 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lzxj;->a:Ljava/lang/String;
+    iput-wide p1, p0, Lzxj;->a:J
 
     .line 5
     .line 6
-    iput-object p2, p0, Lzxj;->b:Ljava/lang/String;
+    iput-wide p3, p0, Lzxj;->b:J
 
     .line 7
     .line 8
-    iput-wide p3, p0, Lzxj;->c:D
+    iput-boolean p5, p0, Lzxj;->c:Z
 
     .line 9
     .line 10
-    iput-wide p5, p0, Lzxj;->d:D
+    iput-boolean p6, p0, Lzxj;->d:Z
 
     .line 11
     .line 12
-    iput-object p7, p0, Lzxj;->e:Lcom/snap/composer/location/GeoRect;
-
-    .line 13
-    .line 14
-    iput-object p8, p0, Lzxj;->f:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    iput-object p9, p0, Lzxj;->g:Ljava/lang/String;
-
-    .line 17
-    .line 18
-    iput-object p10, p0, Lzxj;->h:Lcom/snap/venueprofile/VenueProfileAnalyticsData;
-
-    .line 19
-    .line 20
-    iput-object p11, p0, Lzxj;->i:Ljava/util/List;
-
-    .line 21
-    .line 22
     return-void
 .end method
 
@@ -108,222 +78,78 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, Lzxj;->a:Ljava/lang/String;
+    iget-wide v3, p1, Lzxj;->a:J
 
     .line 14
     .line 15
-    iget-object v3, p0, Lzxj;->a:Ljava/lang/String;
+    iget-wide v5, p0, Lzxj;->a:J
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    cmp-long v1, v5, v3
 
     .line 18
     .line 19
+    if-eqz v1, :cond_2
+
     .line 20
-    move-result v1
-
     .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
     return v2
 
-    .line 24
+    .line 22
     :cond_2
-    iget-object v1, p0, Lzxj;->b:Ljava/lang/String;
+    iget-wide v3, p0, Lzxj;->b:J
+
+    .line 23
+    .line 24
+    iget-wide v5, p1, Lzxj;->b:J
 
     .line 25
     .line 26
-    iget-object v3, p1, Lzxj;->b:Ljava/lang/String;
+    cmp-long v1, v3, v5
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eqz v1, :cond_3
 
     .line 29
     .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    if-nez v1, :cond_3
-
-    .line 33
-    .line 34
     return v2
 
-    .line 35
+    .line 31
     :cond_3
-    iget-wide v3, p0, Lzxj;->c:D
+    iget-boolean v1, p0, Lzxj;->c:Z
+
+    .line 32
+    .line 33
+    iget-boolean v3, p1, Lzxj;->c:Z
+
+    .line 34
+    .line 35
+    if-eq v1, v3, :cond_4
 
     .line 36
     .line 37
-    iget-wide v5, p1, Lzxj;->c:D
+    return v2
 
     .line 38
-    .line 39
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Double;->compare(DD)I
+    :cond_4
+    iget-boolean v1, p0, Lzxj;->d:Z
 
+    .line 39
     .line 40
+    iget-boolean p1, p1, Lzxj;->d:Z
+
     .line 41
     .line 42
-    move-result v1
+    if-eq v1, p1, :cond_5
 
     .line 43
-    if-eqz v1, :cond_4
-
     .line 44
+    return v2
+
     .line 45
-    return v2
-
-    .line 46
-    :cond_4
-    iget-wide v3, p0, Lzxj;->d:D
-
-    .line 47
-    .line 48
-    iget-wide v5, p1, Lzxj;->d:D
-
-    .line 49
-    .line 50
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Double;->compare(DD)I
-
-    .line 51
-    .line 52
-    .line 53
-    move-result v1
-
-    .line 54
-    if-eqz v1, :cond_5
-
-    .line 55
-    .line 56
-    return v2
-
-    .line 57
     :cond_5
-    iget-object v1, p0, Lzxj;->e:Lcom/snap/composer/location/GeoRect;
-
-    .line 58
-    .line 59
-    iget-object v3, p1, Lzxj;->e:Lcom/snap/composer/location/GeoRect;
-
-    .line 60
-    .line 61
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 62
-    .line 63
-    .line 64
-    move-result v1
-
-    .line 65
-    if-nez v1, :cond_6
-
-    .line 66
-    .line 67
-    return v2
-
-    .line 68
-    :cond_6
-    iget-object v1, p0, Lzxj;->f:Ljava/lang/String;
-
-    .line 69
-    .line 70
-    iget-object v3, p1, Lzxj;->f:Ljava/lang/String;
-
-    .line 71
-    .line 72
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 73
-    .line 74
-    .line 75
-    move-result v1
-
-    .line 76
-    if-nez v1, :cond_7
-
-    .line 77
-    .line 78
-    return v2
-
-    .line 79
-    :cond_7
-    iget-object v1, p0, Lzxj;->g:Ljava/lang/String;
-
-    .line 80
-    .line 81
-    iget-object v3, p1, Lzxj;->g:Ljava/lang/String;
-
-    .line 82
-    .line 83
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v1
-
-    .line 87
-    if-nez v1, :cond_8
-
-    .line 88
-    .line 89
-    return v2
-
-    .line 90
-    :cond_8
-    iget-object v1, p0, Lzxj;->h:Lcom/snap/venueprofile/VenueProfileAnalyticsData;
-
-    .line 91
-    .line 92
-    iget-object v3, p1, Lzxj;->h:Lcom/snap/venueprofile/VenueProfileAnalyticsData;
-
-    .line 93
-    .line 94
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 95
-    .line 96
-    .line 97
-    move-result v1
-
-    .line 98
-    if-nez v1, :cond_9
-
-    .line 99
-    .line 100
-    return v2
-
-    .line 101
-    :cond_9
-    iget-object v1, p0, Lzxj;->i:Ljava/util/List;
-
-    .line 102
-    .line 103
-    iget-object p1, p1, Lzxj;->i:Ljava/util/List;
-
-    .line 104
-    .line 105
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 106
-    .line 107
-    .line 108
-    move-result p1
-
-    .line 109
-    if-nez p1, :cond_a
-
-    .line 110
-    .line 111
-    return v2
-
-    .line 112
-    :cond_a
     return v0
 .end method
 
@@ -331,178 +157,102 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lzxj;->a:Ljava/lang/String;
+    iget-wide v0, p0, Lzxj;->a:J
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    const/16 v2, 0x20
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
+    ushr-long v3, v0, v2
 
+    .line 6
     .line 7
-    const/16 v1, 0x1f
+    xor-long/2addr v0, v3
 
     .line 8
+    long-to-int v1, v0
+
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 10
     .line 11
-    iget-object v2, p0, Lzxj;->b:Ljava/lang/String;
+    iget-wide v3, p0, Lzxj;->b:J
 
     .line 12
     .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    ushr-long v5, v3, v2
 
     .line 14
     .line 15
+    xor-long/2addr v3, v5
+
     .line 16
-    move-result v0
+    long-to-int v0, v3
 
     .line 17
-    iget-wide v2, p0, Lzxj;->c:D
+    add-int/2addr v1, v0
 
     .line 18
-    .line 19
-    invoke-static {v2, v3}, Ljava/lang/Double;->doubleToLongBits(D)J
+    mul-int/lit8 v1, v1, 0x1f
 
+    .line 19
     .line 20
+    const/16 v0, 0x4d5
+
     .line 21
     .line 22
-    move-result-wide v2
+    const/16 v2, 0x4cf
 
     .line 23
-    const/16 v4, 0x20
-
     .line 24
+    iget-boolean v3, p0, Lzxj;->c:Z
+
     .line 25
-    ushr-long v5, v2, v4
-
     .line 26
-    .line 27
-    xor-long/2addr v2, v5
+    if-eqz v3, :cond_0
 
+    .line 27
     .line 28
-    long-to-int v3, v2
+    const/16 v3, 0x4cf
 
     .line 29
-    add-int/2addr v0, v3
-
     .line 30
-    mul-int/lit8 v0, v0, 0x1f
+    goto :goto_0
 
     .line 31
-    .line 32
-    iget-wide v2, p0, Lzxj;->d:D
+    :cond_0
+    const/16 v3, 0x4d5
 
+    .line 32
     .line 33
+    :goto_0
+    add-int/2addr v1, v3
+
     .line 34
-    invoke-static {v2, v3}, Ljava/lang/Double;->doubleToLongBits(D)J
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 35
     .line 36
-    .line 37
-    move-result-wide v2
+    iget-boolean v3, p0, Lzxj;->d:Z
 
+    .line 37
     .line 38
-    ushr-long v4, v2, v4
+    if-eqz v3, :cond_1
 
     .line 39
     .line 40
-    xor-long/2addr v2, v4
+    const/16 v0, 0x4cf
 
     .line 41
-    long-to-int v3, v2
-
     .line 42
-    add-int/2addr v0, v3
+    :cond_1
+    add-int/2addr v1, v0
 
     .line 43
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 44
-    .line 45
-    iget-object v2, p0, Lzxj;->e:Lcom/snap/composer/location/GeoRect;
-
-    .line 46
-    .line 47
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v2
-
-    .line 51
-    add-int/2addr v2, v0
-
-    .line 52
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 53
-    .line 54
-    iget-object v0, p0, Lzxj;->f:Ljava/lang/String;
-
-    .line 55
-    .line 56
-    invoke-static {v2, v1, v0}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v0
-
-    .line 60
-    iget-object v2, p0, Lzxj;->g:Ljava/lang/String;
-
-    .line 61
-    .line 62
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 63
-    .line 64
-    .line 65
-    move-result v0
-
-    .line 66
-    iget-object v2, p0, Lzxj;->h:Lcom/snap/venueprofile/VenueProfileAnalyticsData;
-
-    .line 67
-    .line 68
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 69
-    .line 70
-    .line 71
-    move-result v2
-
-    .line 72
-    add-int/2addr v2, v0
-
-    .line 73
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 74
-    .line 75
-    iget-object v0, p0, Lzxj;->i:Ljava/util/List;
-
-    .line 76
-    .line 77
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 78
-    .line 79
-    .line 80
-    move-result v0
-
-    .line 81
-    add-int/2addr v0, v2
-
-    .line 82
-    return v0
+    return v1
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -513,7 +263,7 @@
 
     .line 2
     .line 3
-    const-string v1, "VenueProfileLoadSuccess(id="
+    const-string v1, "UnlockMetadataConfiguration(cleanAfterMs="
 
     .line 4
     .line 5
@@ -522,16 +272,16 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lzxj;->a:Ljava/lang/String;
+    iget-wide v1, p0, Lzxj;->a:J
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", name="
+    const-string v1, ", reloadAfterMs="
 
     .line 14
     .line 15
@@ -540,16 +290,16 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, Lzxj;->b:Ljava/lang/String;
+    iget-wide v1, p0, Lzxj;->b:J
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, ", lat="
+    const-string v1, ", useOptimizedMetadataReloadStrategy="
 
     .line 24
     .line 25
@@ -558,16 +308,16 @@
     .line 26
     .line 27
     .line 28
-    iget-wide v1, p0, Lzxj;->c:D
+    iget-boolean v1, p0, Lzxj;->c:Z
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
     .line 33
-    const-string v1, ", lng="
+    const-string v1, ", cachePushToDeviceLenses="
 
     .line 34
     .line 35
@@ -576,111 +326,21 @@
     .line 36
     .line 37
     .line 38
-    iget-wide v1, p0, Lzxj;->d:D
+    iget-boolean v1, p0, Lzxj;->d:Z
 
     .line 39
     .line 40
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    const-string v2, ")"
 
     .line 41
     .line 42
-    .line 43
-    const-string v1, ", boundingBox="
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
+    .line 43
     .line 44
     .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    iget-object v1, p0, Lzxj;->e:Lcom/snap/composer/location/GeoRect;
-
-    .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ", categoryIconUrl="
-
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    iget-object v1, p0, Lzxj;->f:Ljava/lang/String;
-
-    .line 59
-    .line 60
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 61
-    .line 62
-    .line 63
-    const-string v1, ", kind="
-
-    .line 64
-    .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 66
-    .line 67
-    .line 68
-    iget-object v1, p0, Lzxj;->g:Ljava/lang/String;
-
-    .line 69
-    .line 70
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 71
-    .line 72
-    .line 73
-    const-string v1, ", analyticsData="
-
-    .line 74
-    .line 75
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 76
-    .line 77
-    .line 78
-    iget-object v1, p0, Lzxj;->h:Lcom/snap/venueprofile/VenueProfileAnalyticsData;
-
-    .line 79
-    .line 80
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 81
-    .line 82
-    .line 83
-    const-string v1, ", placePivots="
-
-    .line 84
-    .line 85
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 86
-    .line 87
-    .line 88
-    iget-object v1, p0, Lzxj;->i:Ljava/util/List;
-
-    .line 89
-    .line 90
-    const-string v2, ")"
-
-    .line 91
-    .line 92
-    invoke-static {v0, v1, v2}, LEff;->g(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 93
-    .line 94
-    .line 95
     move-result-object v0
 
-    .line 96
+    .line 46
     return-object v0
 .end method

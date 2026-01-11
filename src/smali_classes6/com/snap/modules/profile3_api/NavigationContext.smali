@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/profile3_api/NavigationContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'isSwipingToDismiss\':g<c>:\'[0]\'<b@>,\'requestsSwipeToDismissEnabled\':f(b@),\'requestsExitOnAppBackgroundEnabled\':f(b@)"
     typeReferences = {

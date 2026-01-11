@@ -1,10 +1,10 @@
 .class public final Lcom/snap/aura/birthinfo/MyBirthday;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'year\':d,\'monthOfYear\':d,\'dayOfMonth\':d"
     typeReferences = {}

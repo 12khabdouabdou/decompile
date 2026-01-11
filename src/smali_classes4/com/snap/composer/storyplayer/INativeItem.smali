@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LOW8;
+    proxyClass = Lp49;
     schema = ""
     typeReferences = {}
 .end annotation

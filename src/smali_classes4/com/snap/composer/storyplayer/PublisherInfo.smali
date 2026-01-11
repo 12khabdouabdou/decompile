@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/PublisherInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'businessProfileId\':s,\'publisherId\':s,\'hostUserId\':s,\'publisherName\':s,\'publisherFormalName\':s,\'publisherDescription\':s,\'primaryColor\':s,\'logoUrl\':s,\'deeplinkUrl\':s,\'unskippableAdsEnabled\':b@?,\'isBreakingNewsEnabled\':b@?,\'originalPublisherName\':s?,\'originalPublisherId\':d@?,\'originalPublisherIconUrl\':s?,\'isCommentsDisabled\':b@?"
     typeReferences = {}
@@ -144,7 +144,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_logoUrl:Ljava/lang/String;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_hostUserId:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -155,7 +155,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_primaryColor:Ljava/lang/String;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_logoUrl:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -166,7 +166,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherDescription:Ljava/lang/String;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_primaryColor:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -177,7 +177,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherFormalName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherDescription:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -188,7 +188,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherId:Ljava/lang/String;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherFormalName:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -199,18 +199,18 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherId:Ljava/lang/String;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final i()Ljava/lang/Boolean;
+.method public final i()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_unskippableAdsEnabled:Ljava/lang/Boolean;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_publisherName:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -221,7 +221,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_isBreakingNewsEnabled:Ljava/lang/Boolean;
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_unskippableAdsEnabled:Ljava/lang/Boolean;
 
     .line 2
     .line 3
@@ -229,6 +229,17 @@
 .end method
 
 .method public final k()Ljava/lang/Boolean;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/PublisherInfo;->_isBreakingNewsEnabled:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final l()Ljava/lang/Boolean;
     .locals 1
 
     .line 1

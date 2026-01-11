@@ -1,9 +1,6 @@
 .class public final Lqha;
-.super Ljava/lang/Object;
+.super Lrha;
 .source "SourceFile"
-
-# interfaces
-.implements LQga;
 
 
 # static fields
@@ -29,21 +26,4 @@
     .line 7
     .line 8
     return-void
-.end method
-
-
-# virtual methods
-.method public final bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    check-cast p1, LPga;
-
-    .line 2
-    .line 3
-    sget-object p1, LRga;->a:LRga;
-
-    .line 4
-    .line 5
-    return-object p1
 .end method

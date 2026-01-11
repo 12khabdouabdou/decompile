@@ -3,15 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements LHha;
+.implements LKv3;
 
 
 # instance fields
-.field public final a:LzG5;
+.field public final a:LK35;
+
+.field public final b:Ll05;
+
+.field public final c:LP85;
 
 
 # direct methods
-.method public constructor <init>(LzG5;)V
+.method public constructor <init>(LK35;LP85;Ll05;)V
     .locals 0
 
     .line 1
@@ -20,30 +24,17 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LG65;->a:LzG5;
+    iput-object p1, p0, LG65;->a:LK35;
 
     .line 5
     .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final J1()LXh0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LG65;->a:LzG5;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lurk;->e(LzG5;)LXh0;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    iput-object p3, p0, LG65;->b:Ll05;
 
     .line 7
-    return-object v0
+    .line 8
+    iput-object p2, p0, LG65;->c:LP85;
+
+    .line 9
+    .line 10
+    return-void
 .end method

@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LKAh;",
-        "LIAh;",
+        "LTYh;",
+        "LRYh;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LHAh;
+.field public static final Companion:LQYh;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LHAh;
+    new-instance v0, LQYh;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;->Companion:LHAh;
+    sput-object v0, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;->Companion:LQYh;
 
     .line 7
     .line 8
@@ -62,29 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LKAh;LIAh;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;
+.method public static final create(LZ69;LTYh;LRYh;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LKAh;",
-            "LIAh;",
-            "LTB3;",
+            "LZ69;",
+            "LTYh;",
+            "LRYh;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;->Companion:LHAh;
+    sget-object v0, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;->Companion:LQYh;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     new-instance v2, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -108,22 +108,22 @@
     move-object v7, p4
 
     .line 6
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;
     .locals 9
 
-    sget-object v0, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;->Companion:LHAh;
+    sget-object v0, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;->Companion:LQYh;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
     new-instance v2, Lcom/snap/modules/creative_tools/stickers/StickerPickerInteractiveStickersSection;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -147,7 +147,7 @@
     move-object v6, p1
 
     .line 3
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method

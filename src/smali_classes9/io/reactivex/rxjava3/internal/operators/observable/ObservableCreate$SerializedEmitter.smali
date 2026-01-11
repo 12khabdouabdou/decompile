@@ -103,7 +103,27 @@
     return-void
 .end method
 
-.method public final b()V
+.method public final b(Lio/reactivex/rxjava3/functions/Cancellable;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->a:Lio/reactivex/rxjava3/core/ObservableEmitter;
+
+    .line 2
+    .line 3
+    check-cast v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->b(Lio/reactivex/rxjava3/functions/Cancellable;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final c()V
     .locals 9
 
     .line 1
@@ -134,7 +154,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->c()Z
+    invoke-virtual {v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->d()Z
 
     .line 13
     .line 14
@@ -286,7 +306,7 @@
     goto :goto_0
 .end method
 
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -294,7 +314,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/core/ObservableEmitter;->c()Z
+    invoke-interface {v0}, Lio/reactivex/rxjava3/core/ObservableEmitter;->d()Z
 
     .line 4
     .line 5
@@ -303,26 +323,6 @@
 
     .line 7
     return v0
-.end method
-
-.method public final d(Lio/reactivex/rxjava3/functions/Cancellable;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->a:Lio/reactivex/rxjava3/core/ObservableEmitter;
-
-    .line 2
-    .line 3
-    check-cast v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->d(Lio/reactivex/rxjava3/functions/Cancellable;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
 .end method
 
 .method public final f(Ljava/lang/Throwable;)Z
@@ -345,7 +345,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->c()Z
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->d()Z
 
     .line 10
     .line 11
@@ -418,7 +418,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->b()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->c()V
 
     .line 45
     .line 46
@@ -462,7 +462,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->c()Z
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->d()Z
 
     .line 10
     .line 11
@@ -497,7 +497,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->b()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->c()V
 
     .line 26
     .line 27
@@ -552,7 +552,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->c()Z
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$CreateEmitter;->d()Z
 
     .line 10
     .line 11
@@ -686,7 +686,7 @@
 
     .line 70
     :cond_3
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->b()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate$SerializedEmitter;->c()V
 
     .line 71
     .line 72

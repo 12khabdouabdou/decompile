@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljf2;
+.implements LUh2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lio/requery/android/database/sqlite/SQLiteConnectionPool;->waitForConnection(Ljava/lang/String;ILkf2;)Lio/requery/android/database/sqlite/SQLiteConnection;
+    value = Lio/requery/android/database/sqlite/SQLiteConnectionPool;->waitForConnection(Ljava/lang/String;ILVh2;)Lio/requery/android/database/sqlite/SQLiteConnection;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -97,7 +97,7 @@
 
     .line 17
     .line 18
-    invoke-static {v2, v1}, Lio/requery/android/database/sqlite/SQLiteConnectionPool;->b(Lio/requery/android/database/sqlite/SQLiteConnectionPool;Lio/requery/android/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;)V
+    invoke-static {v2, v1}, Lio/requery/android/database/sqlite/SQLiteConnectionPool;->c(Lio/requery/android/database/sqlite/SQLiteConnectionPool;Lio/requery/android/database/sqlite/SQLiteConnectionPool$ConnectionWaiter;)V
 
     .line 19
     .line 20

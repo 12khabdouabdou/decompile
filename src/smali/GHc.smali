@@ -1,50 +1,47 @@
-.class public final LGHc;
+.class public abstract LGHc;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:LdQ1;
-
-
 # direct methods
-.method public constructor <init>(LdQ1;)V
+.method public static final a(Landroid/net/ConnectivityManager;Landroid/net/Network;)Landroid/net/NetworkCapabilities;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0, p1}, Landroid/net/ConnectivityManager;->getNetworkCapabilities(Landroid/net/Network;)Landroid/net/NetworkCapabilities;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LGHc;->a:LdQ1;
+    move-result-object p0
 
     .line 5
-    .line 6
-    return-void
+    return-object p0
 .end method
 
-
-# virtual methods
-.method public final a()LHHc;
-    .locals 3
+.method public static final b(Landroid/net/NetworkCapabilities;I)Z
+    .locals 0
 
     .line 1
-    new-instance v0, LHHc;
+    invoke-virtual {p0, p1}, Landroid/net/NetworkCapabilities;->hasCapability(I)Z
 
     .line 2
     .line 3
-    iget-object v1, p0, LGHc;->a:LdQ1;
-
     .line 4
+    move-result p0
+
     .line 5
-    const/4 v2, 0x0
+    return p0
+.end method
 
-    .line 6
-    invoke-direct {v0, v1, v2}, LHHc;-><init>(LdQ1;Z)V
+.method public static final c(Landroid/net/ConnectivityManager;Landroid/net/ConnectivityManager$NetworkCallback;)V
+    .locals 0
 
-    .line 7
-    .line 8
-    .line 9
-    return-object v0
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/net/ConnectivityManager;->unregisterNetworkCallback(Landroid/net/ConnectivityManager$NetworkCallback;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
 .end method

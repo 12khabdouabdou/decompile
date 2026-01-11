@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/creative_tools/captions/CaptionCarouselUpdateStateObservables;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'updateToDisplayCarouselTypeObservable\':g<c>:\'[0]\'<r<e>:\'[1]\'>"
     typeReferences = {

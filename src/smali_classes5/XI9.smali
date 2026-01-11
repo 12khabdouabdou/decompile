@@ -1,310 +1,100 @@
-.class public LXI9;
-.super Ljava/lang/Object;
+.class public final LXI9;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field private final a:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "request_id"
-    .end annotation
-.end field
+.field public final synthetic a:I
 
-.field private final b:LSkj;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "use_case"
-    .end annotation
-.end field
-
-.field private final c:LWm0;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "caller"
-    .end annotation
-.end field
-
-.field private final d:Ljava/util/List;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "requested_resource"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "LL2f;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final e:J
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "creation_time"
-    .end annotation
-.end field
+.field public final synthetic b:LYI9;
 
 
 # direct methods
-.method public constructor <init>(LSkj;LWm0;LL2f;)V
+.method public synthetic constructor <init>(LYI9;I)V
     .locals 0
 
     .line 1
-    invoke-static {p3}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iput p2, p0, LXI9;->a:I
 
-    move-result-object p3
+    iput-object p1, p0, LXI9;->b:LYI9;
 
-    invoke-direct {p0, p1, p2, p3}, LXI9;-><init>(LSkj;LWm0;Ljava/util/List;)V
+    const/4 p1, 0x0
 
-    return-void
-.end method
-
-.method public constructor <init>(LSkj;LWm0;Ljava/util/List;)V
-    .locals 2
-
-    .line 2
-    invoke-static {}, LE73;->a()LOze;
-
-    move-result-object v0
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    invoke-static {}, LJ0j;->a()Ljava/util/UUID;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/util/UUID;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, p0, LXI9;->a:Ljava/lang/String;
-
-    .line 5
-    iput-object p1, p0, LXI9;->b:LSkj;
-
-    .line 6
-    iput-object p2, p0, LXI9;->c:LWm0;
-
-    .line 7
-    iput-object p3, p0, LXI9;->d:Ljava/util/List;
-
-    .line 8
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 9
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    move-result-wide p1
-
-    .line 10
-    iput-wide p1, p0, LXI9;->e:J
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LWm0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LXI9;->c:LWm0;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final b()J
+.method public final d()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    iget-wide v0, p0, LXI9;->e:J
+    iget v0, p0, LXI9;->a:I
 
     .line 2
     .line 3
-    return-wide v0
-.end method
-
-.method public final c()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LXI9;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final d()Ljava/util/List;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LXI9;->d:Ljava/util/List;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
+    iget-object v0, p0, LXI9;->b:LYI9;
+
+    .line 7
+    .line 8
+    iget-object v1, v0, LYI9;->c:LG21;
+
+    .line 9
+    .line 10
+    check-cast v1, Lwr5;
+
+    .line 11
+    .line 12
+    iget-object v0, v0, LYI9;->a:Lmia;
+
+    .line 13
+    .line 14
+    invoke-virtual {v1, v0}, Lwr5;->a(Lrp0;)LR0f;
+
+    .line 15
+    .line 16
+    .line 17
     move-result-object v0
 
-    .line 7
-    return-object v0
-.end method
-
-.method public final e()LSkj;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LXI9;->b:LSkj;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    if-ne p1, p0, :cond_0
-
-    .line 2
-    .line 3
-    const/4 p1, 0x1
-
-    .line 4
-    return p1
-
-    .line 5
-    :cond_0
-    instance-of v0, p1, LXI9;
-
-    .line 6
-    .line 7
-    if-eqz v0, :cond_1
-
-    .line 8
-    .line 9
-    check-cast p1, LXI9;
-
-    .line 10
-    .line 11
-    iget-object p1, p1, LXI9;->a:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    iget-object v0, p0, LXI9;->a:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
     .line 18
-    move-result p1
+    return-object v0
 
     .line 19
-    return p1
-
-    .line 20
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 21
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LXI9;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, LXI9;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LXI9;->b:LSkj;
-
-    .line 4
-    .line 5
-    iget-object v2, p0, LXI9;->c:LWm0;
-
-    .line 6
-    .line 7
-    iget-object v3, p0, LXI9;->d:Ljava/util/List;
-
-    .line 8
-    .line 9
-    const/4 v4, 0x4
-
-    .line 10
-    new-array v4, v4, [Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    const/4 v5, 0x0
-
-    .line 13
-    aput-object v0, v4, v5
-
-    .line 14
-    .line 15
-    const/4 v0, 0x1
-
-    .line 16
-    aput-object v1, v4, v0
-
-    .line 17
-    .line 18
-    const/4 v0, 0x2
-
-    .line 19
-    aput-object v2, v4, v0
+    :pswitch_0
+    iget-object v0, p0, LXI9;->b:LYI9;
 
     .line 20
     .line 21
-    const/4 v0, 0x3
+    iget-object v0, v0, LYI9;->b:LT21;
 
     .line 22
-    aput-object v3, v4, v0
-
     .line 23
-    .line 24
-    const-string v0, "Request id: %s, use case: %s, caller: %s, resource: %s"
+    invoke-interface {v0}, LT21;->a()LR21;
 
+    .line 24
     .line 25
     .line 26
-    invoke-static {v0, v4}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 27
-    .line 28
-    .line 29
     move-result-object v0
 
-    .line 30
+    .line 27
     return-object v0
+
+    .line 28
+    nop
+
+    .line 29
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

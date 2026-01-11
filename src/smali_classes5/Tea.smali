@@ -1,32 +1,3 @@
-.class public final LTea;
-.super Ljava/lang/Object;
+.class public abstract LTea;
+.super LUea;
 .source "SourceFile"
-
-# interfaces
-.implements LVea;
-
-
-# static fields
-.field public static final a:LTea;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, LTea;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LTea;->a:LTea;
-
-    .line 7
-    .line 8
-    return-void
-.end method

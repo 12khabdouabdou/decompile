@@ -1,104 +1,264 @@
 .class public final LVK6;
-.super Ljava/lang/Object;
+.super LoYc;
 .source "SourceFile"
-
-# interfaces
-.implements LQd9;
 
 
 # instance fields
-.field public final a:Z
+.field public final synthetic f:I
+
+.field public final synthetic g:LMy3;
+
+.field public final synthetic h:LMy3;
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public synthetic constructor <init>(LMy3;LMy3;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p3, p0, LVK6;->f:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-boolean p1, p0, LVK6;->a:Z
+    iput-object p1, p0, LVK6;->g:LMy3;
 
-    .line 5
-    .line 6
+    iput-object p2, p0, LVK6;->h:LMy3;
+
+    invoke-direct {p0}, Lip0;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Z
+.method public final b(Landroid/view/View;Luw3;)V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, LVK6;->a:Z
+    iget p2, p0, LVK6;->f:I
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final f()LHzc;
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return-object v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Empty{"
+    packed-switch p2, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    check-cast p1, Lcom/snap/composer/views/ComposerEditTextMultiline;
+
     .line 7
     .line 8
-    iget-boolean v1, p0, LVK6;->a:Z
+    iget-object p2, p0, LVK6;->h:LMy3;
 
     .line 9
     .line 10
-    if-eqz v1, :cond_0
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 11
     .line 12
-    const-string v1, "Active"
-
     .line 13
-    .line 14
-    goto :goto_0
+    const-string p2, "center"
 
+    .line 14
     .line 15
-    :cond_0
-    const-string v1, "New"
+    invoke-static {p1, p2}, LMy3;->a(Lcom/snap/composer/views/ComposerEditTextMultiline;Ljava/lang/String;)V
 
     .line 16
     .line 17
-    :goto_0
-    const/16 v2, 0x7d
-
     .line 18
+    return-void
+
     .line 19
-    invoke-static {v0, v1, v2}, LNde;->g(Ljava/lang/StringBuilder;Ljava/lang/String;C)Ljava/lang/String;
+    :pswitch_0
+    check-cast p1, Lcom/snap/composer/views/ComposerEditTextMultiline;
 
     .line 20
     .line 21
-    .line 22
-    move-result-object v0
+    iget-object p2, p0, LVK6;->h:LMy3;
 
+    .line 22
     .line 23
-    return-object v0
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string p2, "linereturn"
+
+    .line 27
+    .line 28
+    invoke-static {p2, p2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v0
+
+    .line 32
+    if-eqz v0, :cond_0
+
+    .line 33
+    .line 34
+    const/4 p2, 0x1
+
+    .line 35
+    invoke-virtual {p1, p2}, Lcom/snap/composer/views/ComposerEditTextMultiline;->allowLineReturns(Z)V
+
+    .line 36
+    .line 37
+    .line 38
+    const-string p2, "done"
+
+    .line 39
+    .line 40
+    invoke-static {p1, p2}, LUK6;->d(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    goto :goto_0
+
+    .line 44
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 45
+    invoke-virtual {p1, v0}, Lcom/snap/composer/views/ComposerEditTextMultiline;->allowLineReturns(Z)V
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-static {p1, p2}, LUK6;->d(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
+
+    .line 49
+    .line 50
+    .line 51
+    :goto_0
+    return-void
+
+    .line 52
+    nop
+
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final c(Landroid/view/View;Ljava/lang/Object;Luw3;)V
+    .locals 0
+
+    .line 1
+    iget p3, p0, LVK6;->f:I
+
+    .line 2
+    .line 3
+    packed-switch p3, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p2, Ljava/lang/String;
+
+    .line 7
+    .line 8
+    check-cast p1, Lcom/snap/composer/views/ComposerEditTextMultiline;
+
+    .line 9
+    .line 10
+    iget-object p3, p0, LVK6;->g:LMy3;
+
+    .line 11
+    .line 12
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-static {p1, p2}, LMy3;->a(Lcom/snap/composer/views/ComposerEditTextMultiline;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
+
+    .line 19
+    :pswitch_0
+    check-cast p2, Ljava/lang/String;
+
+    .line 20
+    .line 21
+    check-cast p1, Lcom/snap/composer/views/ComposerEditTextMultiline;
+
+    .line 22
+    .line 23
+    iget-object p3, p0, LVK6;->g:LMy3;
+
+    .line 24
+    .line 25
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 26
+    .line 27
+    .line 28
+    const-string p3, "linereturn"
+
+    .line 29
+    .line 30
+    invoke-static {p2, p3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 31
+    .line 32
+    .line 33
+    move-result p3
+
+    .line 34
+    if-eqz p3, :cond_0
+
+    .line 35
+    .line 36
+    const/4 p2, 0x1
+
+    .line 37
+    invoke-virtual {p1, p2}, Lcom/snap/composer/views/ComposerEditTextMultiline;->allowLineReturns(Z)V
+
+    .line 38
+    .line 39
+    .line 40
+    const-string p2, "done"
+
+    .line 41
+    .line 42
+    invoke-static {p1, p2}, LUK6;->d(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
+
+    .line 43
+    .line 44
+    .line 45
+    goto :goto_0
+
+    .line 46
+    :cond_0
+    const/4 p3, 0x0
+
+    .line 47
+    invoke-virtual {p1, p3}, Lcom/snap/composer/views/ComposerEditTextMultiline;->allowLineReturns(Z)V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-static {p1, p2}, LUK6;->d(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
+
+    .line 51
+    .line 52
+    .line 53
+    :goto_0
+    return-void
+
+    .line 54
+    nop
+
+    .line 55
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

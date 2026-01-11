@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lt0i;
+    proxyClass = LOoi;
     schema = "\'getStorySummaryInfos\':f|m|(f|s|(m?<s,u>, m?<s,u>)),\'onStorySummaryInfosUpdated\':f|m|(f()): f()"
     typeReferences = {}
 .end annotation

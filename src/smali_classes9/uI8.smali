@@ -1,145 +1,426 @@
-.class public final LuI8;
-.super LrE9;
+.class public LuI8;
+.super Lbkh;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
+
+# annotations
+.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
+    value = LwI8;
+.end annotation
+
+.annotation runtime LnJ9;
+    value = Ldkh;
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public a:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "green_screen_mode_entry"
+    .end annotation
+.end field
 
-.field public final synthetic b:Ljava/util/List;
+.field public b:Ljava/lang/Boolean;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "gesture_received"
+    .end annotation
+.end field
+
+.field public c:Ljava/lang/Integer;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "face_cutout_position_x"
+    .end annotation
+.end field
+
+.field public d:Ljava/lang/Integer;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "face_cutout_position_y"
+    .end annotation
+.end field
+
+.field public e:Ljava/lang/Float;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "face_cutout_zoom_factor"
+    .end annotation
+.end field
+
+.field public f:Ljava/lang/Integer;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "face_cutout_rotation"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/util/List;I)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput p2, p0, LuI8;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LuI8;->b:Ljava/util/List;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget v0, p0, LuI8;->a:I
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
+    if-ne p1, p0, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
+    :cond_0
+    const/4 v1, 0x0
+
     .line 6
-    iget-object v0, p0, LuI8;->b:Ljava/util/List;
+    if-eqz p1, :cond_2
 
     .line 7
     .line 8
-    check-cast v0, Ljava/lang/Iterable;
+    instance-of v2, p1, LuI8;
 
     .line 9
     .line 10
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    if-nez v2, :cond_1
 
     .line 11
     .line 12
+    goto :goto_0
+
     .line 13
-    move-result-object v0
+    :cond_1
+    check-cast p1, LuI8;
 
     .line 14
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 15
+    iget-object v2, p0, LuI8;->a:Ljava/lang/String;
+
     .line 16
     .line 17
-    move-result v1
+    iget-object v3, p1, LuI8;->a:Ljava/lang/String;
 
     .line 18
-    if-eqz v1, :cond_2
-
     .line 19
-    .line 20
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 20
     .line 21
     .line 22
+    move-result v2
+
     .line 23
-    move-result-object v1
+    if-eqz v2, :cond_2
 
     .line 24
-    check-cast v1, Ltt9;
+    .line 25
+    iget-object v2, p0, LuI8;->b:Ljava/lang/Boolean;
 
+    .line 26
+    .line 27
+    iget-object v3, p1, LuI8;->b:Ljava/lang/Boolean;
+
+    .line 28
+    .line 29
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v2
+
+    .line 33
+    if-eqz v2, :cond_2
+
+    .line 34
+    .line 35
+    iget-object v2, p0, LuI8;->c:Ljava/lang/Integer;
+
+    .line 36
+    .line 37
+    iget-object v3, p1, LuI8;->c:Ljava/lang/Integer;
+
+    .line 38
+    .line 39
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v2
+
+    .line 43
+    if-eqz v2, :cond_2
+
+    .line 44
+    .line 45
+    iget-object v2, p0, LuI8;->d:Ljava/lang/Integer;
+
+    .line 46
+    .line 47
+    iget-object v3, p1, LuI8;->d:Ljava/lang/Integer;
+
+    .line 48
+    .line 49
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v2
+
+    .line 53
+    if-eqz v2, :cond_2
+
+    .line 54
+    .line 55
+    iget-object v2, p0, LuI8;->e:Ljava/lang/Float;
+
+    .line 56
+    .line 57
+    iget-object v3, p1, LuI8;->e:Ljava/lang/Float;
+
+    .line 58
+    .line 59
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v2
+
+    .line 63
+    if-eqz v2, :cond_2
+
+    .line 64
+    .line 65
+    iget-object v2, p0, LuI8;->f:Ljava/lang/Integer;
+
+    .line 66
+    .line 67
+    iget-object p1, p1, LuI8;->f:Ljava/lang/Integer;
+
+    .line 68
+    .line 69
+    invoke-static {v2, p1}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 70
+    .line 71
+    .line 72
+    move-result p1
+
+    .line 73
+    if-eqz p1, :cond_2
+
+    .line 74
+    .line 75
+    return v0
+
+    .line 76
+    :cond_2
+    :goto_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LuI8;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-nez v0, :cond_0
+
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    :goto_0
+    const/16 v2, 0x20f
+
+    .line 13
+    .line 14
+    add-int/2addr v2, v0
+
+    .line 15
+    mul-int/lit8 v2, v2, 0x1f
+
+    .line 16
+    .line 17
+    iget-object v0, p0, LuI8;->b:Ljava/lang/Boolean;
+
+    .line 18
+    .line 19
+    if-nez v0, :cond_1
+
+    .line 20
+    .line 21
+    const/4 v0, 0x0
+
+    .line 22
+    goto :goto_1
+
+    .line 23
+    :cond_1
+    invoke-virtual {v0}, Ljava/lang/Boolean;->hashCode()I
+
+    .line 24
     .line 25
     .line 26
-    instance-of v2, v1, LLu6;
+    move-result v0
 
     .line 27
+    :goto_1
+    add-int/2addr v2, v0
+
     .line 28
-    if-eqz v2, :cond_1
+    mul-int/lit8 v2, v2, 0x1f
 
     .line 29
     .line 30
-    goto :goto_1
+    iget-object v0, p0, LuI8;->c:Ljava/lang/Integer;
 
     .line 31
-    :cond_1
-    const/4 v1, 0x0
-
     .line 32
-    :goto_1
-    if-eqz v1, :cond_0
+    if-nez v0, :cond_2
 
     .line 33
     .line 34
-    invoke-virtual {v1}, Ltt9;->requestLayout()V
+    const/4 v0, 0x0
 
     .line 35
+    goto :goto_2
+
     .line 36
-    .line 37
-    goto :goto_0
-
-    .line 38
     :cond_2
-    sget-object v0, Li7j;->a:Li7j;
+    invoke-virtual {v0}, Ljava/lang/Integer;->hashCode()I
 
+    .line 37
+    .line 38
     .line 39
+    move-result v0
+
     .line 40
-    return-object v0
+    :goto_2
+    add-int/2addr v2, v0
 
     .line 41
-    :pswitch_0
-    sget-object v0, Li7j;->a:Li7j;
+    mul-int/lit8 v2, v2, 0x1f
 
     .line 42
     .line 43
-    return-object v0
+    iget-object v0, p0, LuI8;->d:Ljava/lang/Integer;
 
     .line 44
-    :pswitch_1
-    iget-object v0, p0, LuI8;->b:Ljava/util/List;
-
     .line 45
-    .line 46
-    return-object v0
+    if-nez v0, :cond_3
 
+    .line 46
     .line 47
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    const/4 v0, 0x0
+
+    .line 48
+    goto :goto_3
+
+    .line 49
+    :cond_3
+    invoke-virtual {v0}, Ljava/lang/Integer;->hashCode()I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v0
+
+    .line 53
+    :goto_3
+    add-int/2addr v2, v0
+
+    .line 54
+    mul-int/lit8 v2, v2, 0x1f
+
+    .line 55
+    .line 56
+    iget-object v0, p0, LuI8;->e:Ljava/lang/Float;
+
+    .line 57
+    .line 58
+    if-nez v0, :cond_4
+
+    .line 59
+    .line 60
+    const/4 v0, 0x0
+
+    .line 61
+    goto :goto_4
+
+    .line 62
+    :cond_4
+    invoke-virtual {v0}, Ljava/lang/Float;->hashCode()I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v0
+
+    .line 66
+    :goto_4
+    add-int/2addr v2, v0
+
+    .line 67
+    mul-int/lit8 v2, v2, 0x1f
+
+    .line 68
+    .line 69
+    iget-object v0, p0, LuI8;->f:Ljava/lang/Integer;
+
+    .line 70
+    .line 71
+    if-nez v0, :cond_5
+
+    .line 72
+    .line 73
+    goto :goto_5
+
+    .line 74
+    :cond_5
+    invoke-virtual {v0}, Ljava/lang/Integer;->hashCode()I
+
+    .line 75
+    .line 76
+    .line 77
+    move-result v1
+
+    .line 78
+    :goto_5
+    add-int/2addr v2, v1
+
+    .line 79
+    return v2
 .end method

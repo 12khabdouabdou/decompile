@@ -6,7 +6,7 @@
 # instance fields
 .field public a:Landroidx/lifecycle/Lifecycle$State;
 
-.field public b:Lbla;
+.field public b:Ltxa;
 
 
 # virtual methods
@@ -46,11 +46,11 @@
 
     .line 15
     .line 16
-    iget-object v1, p0, Landroidx/lifecycle/d;->b:Lbla;
+    iget-object v1, p0, Landroidx/lifecycle/d;->b:Ltxa;
 
     .line 17
     .line 18
-    invoke-interface {v1, p1, p2}, Lbla;->x(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/c;)V
+    invoke-interface {v1, p1, p2}, Ltxa;->J(Landroidx/lifecycle/LifecycleOwner;Landroidx/lifecycle/c;)V
 
     .line 19
     .line 20

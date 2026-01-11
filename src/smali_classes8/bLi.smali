@@ -1,86 +1,271 @@
 .class public final LbLi;
-.super LcIj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public X:Lcom/snap/component/SnapLabelView;
+.field public final a:Landroid/graphics/SurfaceTexture;
+
+.field public final b:I
+
+.field public final c:LKbf;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/graphics/SurfaceTexture;ILKbf;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LcIj;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
+    iput-object p1, p0, LbLi;->a:Landroid/graphics/SurfaceTexture;
+
+    .line 5
+    .line 6
+    iput p2, p0, LbLi;->b:I
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LbLi;->c:LKbf;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final t(LKu;LKu;)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    check-cast p1, LcLi;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    check-cast p2, LcLi;
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    iget-object p2, p0, LbLi;->X:Lcom/snap/component/SnapLabelView;
+    :cond_0
+    instance-of v1, p1, LbLi;
 
     .line 6
     .line 7
-    if-eqz p2, :cond_0
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    iget-object p1, p1, LcLi;->X:Ljava/lang/String;
+    if-nez v1, :cond_1
 
+    .line 9
     .line 10
+    return v2
+
     .line 11
-    invoke-virtual {p2, p1}, Lcom/snap/component/SnapLabelView;->C(Ljava/lang/CharSequence;)V
+    :cond_1
+    check-cast p1, LbLi;
 
     .line 12
     .line 13
-    .line 14
-    return-void
+    iget-object v1, p1, LbLi;->a:Landroid/graphics/SurfaceTexture;
 
+    .line 14
     .line 15
-    :cond_0
-    const-string p1, "sectionHeader"
+    iget-object v3, p0, LbLi;->a:Landroid/graphics/SurfaceTexture;
 
     .line 16
     .line 17
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
     .line 20
-    const/4 p1, 0x0
+    move-result v1
 
     .line 21
-    throw p1
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget v1, p0, LbLi;->b:I
+
+    .line 25
+    .line 26
+    iget v3, p1, LbLi;->b:I
+
+    .line 27
+    .line 28
+    if-eq v1, v3, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
+    iget-object v1, p0, LbLi;->c:LKbf;
+
+    .line 32
+    .line 33
+    iget-object p1, p1, LbLi;->c:LKbf;
+
+    .line 34
+    .line 35
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result p1
+
+    .line 39
+    if-nez p1, :cond_4
+
+    .line 40
+    .line 41
+    return v2
+
+    .line 42
+    :cond_4
+    return v0
 .end method
 
-.method public final u(Landroid/view/View;)V
-    .locals 0
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    check-cast p1, Lcom/snap/component/SnapLabelView;
+    iget-object v0, p0, LbLi;->a:Landroid/graphics/SurfaceTexture;
 
     .line 2
     .line 3
-    iput-object p1, p0, LbLi;->X:Lcom/snap/component/SnapLabelView;
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
-    return-void
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget v1, p0, LbLi;->b:I
+
+    .line 10
+    .line 11
+    add-int/2addr v0, v1
+
+    .line 12
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 13
+    .line 14
+    iget-object v1, p0, LbLi;->c:LKbf;
+
+    .line 15
+    .line 16
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    add-int/2addr v1, v0
+
+    .line 21
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "ActiveRender(surfaceTexture="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LbLi;->a:Landroid/graphics/SurfaceTexture;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", rendererId="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, LbLi;->b:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", receiver="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LbLi;->c:LKbf;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ")"
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    return-object v0
 .end method

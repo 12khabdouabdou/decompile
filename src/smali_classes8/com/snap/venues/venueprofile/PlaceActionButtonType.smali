@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'CTA_UNKNOWN\':0,\'CTA_DIRECTIONS\':1,\'CTA_ORDER\':2,\'CTA_CALL\':3,\'CTA_RESERVATIONS\':4,\'CTA_MENU\':5,\'CTA_SHOP\':6,\'CTA_WEBSITE\':7,\'CTA_FAVORITE\':8,\'CTA_ADDRESS\':9,\'CTA_REPORT_ISSUE\':10,\'CTA_SEND\':11"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

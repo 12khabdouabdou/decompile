@@ -1,193 +1,125 @@
 .class public final LeW8;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/snap/profile/communities/IMembersActionHandler;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'blizzardLogger\':r:\'[0]\',\'homeSettingsMetrics\':r:\'[1]\',\'isSCPlusUser\':f?(): b@,\'dismissPage\':f(),\'onTapSave\':f(r:\'[2]\'),\'onHomeModelUpdated\':f(r:\'[3]\', r<e>:\'[4]\')"
+    typeReferences = {
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/places/home/HomeSettingsMetrics;,
+        Lcom/snap/composer/location/GeoPoint;,
+        Lcom/snap/places/home/Home3DModel;,
+        Lcom/snap/places/home/HomeModelUpdateType;
+    }
+.end annotation
 
 
 # instance fields
-.field public final X:Lkotlin/jvm/functions/Function2;
+.field private _blizzardLogger:Lcom/snap/composer/blizzard/Logging;
 
-.field public final a:Lkotlin/jvm/functions/Function1;
+.field private _dismissPage:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Lkotlin/jvm/functions/Function2;
+.field private _homeSettingsMetrics:Lcom/snap/places/home/HomeSettingsMetrics;
 
-.field public final c:Lkotlin/jvm/functions/Function2;
+.field private _isSCPlusUser:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
 
-.field public final t:Lkotlin/jvm/functions/Function2;
+.field private _onHomeModelUpdated:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2;"
+        }
+    .end annotation
+.end field
+
+.field private _onTapSave:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;)V
+.method public constructor <init>(LDf0;Lcom/snap/places/home/HomeSettingsMetrics;Loh;Lv58;LsR5;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1;",
-            "Lkotlin/jvm/functions/Function2;",
-            "Lkotlin/jvm/functions/Function2;",
-            "Lkotlin/jvm/functions/Function2;",
-            "Lkotlin/jvm/functions/Function2;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LeW8;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
+
     .line 3
+    iput-object p2, p0, LeW8;->_homeSettingsMetrics:Lcom/snap/places/home/HomeSettingsMetrics;
+
+    const/4 p1, 0x0
+
     .line 4
-    iput-object p1, p0, LeW8;->a:Lkotlin/jvm/functions/Function1;
+    iput-object p1, p0, LeW8;->_isSCPlusUser:Lkotlin/jvm/functions/Function0;
 
     .line 5
+    iput-object p3, p0, LeW8;->_dismissPage:Lkotlin/jvm/functions/Function0;
+
     .line 6
-    iput-object p2, p0, LeW8;->b:Lkotlin/jvm/functions/Function2;
+    iput-object p4, p0, LeW8;->_onTapSave:Lkotlin/jvm/functions/Function1;
 
     .line 7
-    .line 8
-    iput-object p3, p0, LeW8;->c:Lkotlin/jvm/functions/Function2;
+    iput-object p5, p0, LeW8;->_onHomeModelUpdated:Lkotlin/jvm/functions/Function2;
 
-    .line 9
-    .line 10
-    iput-object p4, p0, LeW8;->t:Lkotlin/jvm/functions/Function2;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, LeW8;->X:Lkotlin/jvm/functions/Function2;
-
-    .line 13
-    .line 14
     return-void
 .end method
 
-
-# virtual methods
-.method public addFriend(Lcom/snap/composer/people/AddFriendRequest;Lkotlin/jvm/functions/Function1;)V
-    .locals 1
+.method public constructor <init>(Lcom/snap/composer/blizzard/Logging;Lcom/snap/places/home/HomeSettingsMetrics;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/snap/composer/people/AddFriendRequest;",
+            "Lcom/snap/composer/blizzard/Logging;",
+            "Lcom/snap/places/home/HomeSettingsMetrics;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
             "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function2;",
             ")V"
         }
     .end annotation
 
-    .line 1
-    iget-object v0, p0, LeW8;->t:Lkotlin/jvm/functions/Function2;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public launchFriendActionMenu(Lcom/snap/composer/people/User;Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LeW8;->c:Lkotlin/jvm/functions/Function2;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public launchFriendProfile(Lcom/snap/composer/people/User;Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LeW8;->b:Lkotlin/jvm/functions/Function2;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public launchInviteFriendsFlow(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LeW8;->a:Lkotlin/jvm/functions/Function1;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
-
-    .line 1
-    sget-object v0, LzB3;->n:LyB3;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    sget-object v0, LyB3;->b:LzB3;
-
-    .line 7
     .line 8
-    const-class v1, Lcom/snap/profile/communities/IMembersActionHandler;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 9
+    iput-object p1, p0, LeW8;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
+
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+    iput-object p2, p0, LeW8;->_homeSettingsMetrics:Lcom/snap/places/home/HomeSettingsMetrics;
 
     .line 11
+    iput-object p3, p0, LeW8;->_isSCPlusUser:Lkotlin/jvm/functions/Function0;
+
     .line 12
+    iput-object p4, p0, LeW8;->_dismissPage:Lkotlin/jvm/functions/Function0;
+
     .line 13
-    move-result p1
+    iput-object p5, p0, LeW8;->_onTapSave:Lkotlin/jvm/functions/Function1;
 
     .line 14
-    return p1
-.end method
+    iput-object p6, p0, LeW8;->_onHomeModelUpdated:Lkotlin/jvm/functions/Function2;
 
-.method public unblockUser(Lcom/snap/composer/people/User;Lkotlin/jvm/functions/Function1;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/composer/people/User;",
-            "Lkotlin/jvm/functions/Function1;",
-            ")V"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, LeW8;->X:Lkotlin/jvm/functions/Function2;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
     return-void
 .end method

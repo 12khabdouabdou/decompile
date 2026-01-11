@@ -1,17 +1,37 @@
 .class public final LyAb;
-.super Ljava/lang/Object;
+.super Lkd7;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lbke;
+# annotations
+.annotation runtime Lcom/snap/content/UriHandlerPathSpec;
+    value = "media_package/*/package/*"
+.end annotation
 
-.field public final b:LXfi;
+
+# instance fields
+.field private final a:LDBe;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LDBe;"
+        }
+    .end annotation
+.end field
+
+.field private final b:LqBb;
 
 
 # direct methods
-.method public constructor <init>(Lbke;)V
-    .locals 1
+.method public constructor <init>(LbAb;LDBe;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LbAb;",
+            "LDBe;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -19,113 +39,158 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LyAb;->a:Lbke;
+    iput-object p2, p0, LyAb;->a:LDBe;
 
     .line 5
     .line 6
-    new-instance p1, LYNa;
+    new-instance p2, LqBb;
 
     .line 7
     .line 8
-    const/4 v0, 0x7
+    new-instance v0, LxAb;
 
     .line 9
-    invoke-direct {p1, v0, p0}, LYNa;-><init>(ILjava/lang/Object;)V
-
     .line 10
-    .line 11
-    .line 12
-    new-instance v0, LXfi;
+    const/4 v1, 0x0
 
+    .line 11
+    invoke-direct {v0, v1, p0}, LxAb;-><init>(ILjava/lang/Object;)V
+
+    .line 12
     .line 13
     .line 14
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1, v0}, LqBb;-><init>(LbAb;Lkotlin/jvm/functions/Function2;)V
 
     .line 15
     .line 16
     .line 17
-    iput-object v0, p0, LyAb;->b:LXfi;
+    iput-object p2, p0, LyAb;->b:LqBb;
 
     .line 18
     .line 19
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Z)Lio/reactivex/rxjava3/core/Observable;
-    .locals 4
+.method public static final synthetic d(LyAb;LCAb;)LiAi;
+    .locals 0
 
     .line 1
-    new-instance v0, LLja;
+    invoke-direct {p0, p1}, LyAb;->e(LCAb;)LiAi;
 
     .line 2
     .line 3
-    const/16 v1, 0x13
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method private final e(LCAb;)LiAi;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LCAb;",
+            ")",
+            "LiAi;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/io/ByteArrayInputStream;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LyAb;->a:LDBe;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p0}, LLja;-><init>(ILjava/lang/Object;)V
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
+    move-result-object v1
 
     .line 9
-    .line 10
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+    check-cast v1, Lmjg;
 
+    .line 10
     .line 11
+    invoke-interface {p1}, LCAb;->D2()Luzb;
+
     .line 12
     .line 13
-    if-eqz p1, :cond_0
-
     .line 14
+    move-result-object p1
+
     .line 15
-    iget-object p1, p0, LyAb;->a:Lbke;
+    invoke-virtual {v1, p1}, Lmjg;->f(Ljava/lang/Object;)[B
 
     .line 16
     .line 17
-    invoke-interface {p1}, Lbke;->get()Ljava/lang/Object;
-
     .line 18
-    .line 19
-    .line 20
     move-result-object p1
 
+    .line 19
+    invoke-direct {v0, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
+
+    .line 20
     .line 21
-    check-cast p1, LDyb;
-
     .line 22
+    new-instance p1, LoAi;
+
     .line 23
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
     .line 24
-    .line 25
-    new-instance v2, LxAb;
+    invoke-direct {p1, v0}, LoAi;-><init>(Ljava/lang/Object;)V
 
+    .line 25
     .line 26
     .line 27
-    const/4 v3, 0x0
+    return-object p1
+.end method
 
-    .line 28
-    invoke-direct {v2, v1, v3}, LxAb;-><init>(Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;I)V
 
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {p1, v0, v2}, LDyb;->o(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+# virtual methods
+.method public c(Landroid/net/Uri;LCPf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/net/Uri;",
+            "LCPf;",
+            "Z",
+            "Ljava/util/Set<",
+            "+",
+            "LpM1;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LgY3;",
+            ">;"
+        }
+    .end annotation
 
-    .line 32
-    .line 33
-    .line 34
+    .line 1
+    iget-object p4, p0, LyAb;->b:LqBb;
+
+    .line 2
+    .line 3
+    invoke-virtual {p4, p1, p2}, LqBb;->a(Landroid/net/Uri;LCPf;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object p1
 
-    .line 35
-    return-object p1
+    .line 7
+    invoke-static {p1, p3}, LCz9;->H(Lio/reactivex/rxjava3/core/Single;Z)Lio/reactivex/rxjava3/core/Single;
 
-    .line 36
-    :cond_0
-    return-object v1
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    return-object p1
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/snap/talk/core/VideoWrapperView;
-.super LMB3;
+.super LoF3;
 .source "SourceFile"
 
 
@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field private freezeFrame:LhK7;
+.field private freezeFrame:LNP7;
 
 .field private final videoTransform:Landroid/graphics/Matrix;
 
@@ -19,7 +19,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, LMB3;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoF3;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -37,7 +37,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p0}, LMB3;->getTextureView()Lq3c;
+    invoke-virtual {p0}, LoF3;->getTextureView()Leic;
 
     .line 12
     .line 13
@@ -58,15 +58,15 @@
 
 
 # virtual methods
-.method public final bind(LVY0;)V
+.method public final bind(LG21;)V
     .locals 3
 
     .line 1
-    new-instance v0, LhK7;
+    new-instance v0, LNP7;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LMB3;->getTextureView()Lq3c;
+    invoke-virtual {p0}, LoF3;->getTextureView()Leic;
 
     .line 4
     .line 5
@@ -74,15 +74,15 @@
     move-result-object v1
 
     .line 7
-    sget-object v2, LFli;->Z:LFli;
+    sget-object v2, LzKi;->Z:LzKi;
 
     .line 8
     .line 9
-    check-cast p1, Lol5;
+    check-cast p1, Lwr5;
 
     .line 10
     .line 11
-    invoke-virtual {p1, v2}, Lol5;->a(Lan0;)LhJe;
+    invoke-virtual {p1, v2}, Lwr5;->a(Lrp0;)LR0f;
 
     .line 12
     .line 13
@@ -90,12 +90,12 @@
     move-result-object p1
 
     .line 15
-    invoke-direct {v0, p0, v1, p1}, LhK7;-><init>(Landroid/widget/FrameLayout;Lq3c;LhJe;)V
+    invoke-direct {v0, p0, v1, p1}, LNP7;-><init>(Landroid/widget/FrameLayout;Leic;LR0f;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Lcom/snap/talk/core/VideoWrapperView;->freezeFrame:LhK7;
+    iput-object v0, p0, Lcom/snap/talk/core/VideoWrapperView;->freezeFrame:LNP7;
 
     .line 19
     .line 20
@@ -106,7 +106,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/talk/core/VideoWrapperView;->freezeFrame:LhK7;
+    iget-object v0, p0, Lcom/snap/talk/core/VideoWrapperView;->freezeFrame:LNP7;
 
     .line 2
     .line 3
@@ -114,7 +114,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, LhK7;->a(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, LNP7;->a(Landroid/graphics/Canvas;)V
 
     .line 6
     .line 7
@@ -132,7 +132,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -147,7 +147,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/talk/core/VideoWrapperView;->freezeFrame:LhK7;
+    iget-object v0, p0, Lcom/snap/talk/core/VideoWrapperView;->freezeFrame:LNP7;
 
     .line 2
     .line 3
@@ -162,11 +162,11 @@
 
     .line 7
     .line 8
-    iget-object v3, v0, LhK7;->j:Lotk;
+    iget-object v3, v0, LNP7;->j:LYSk;
 
     .line 9
     .line 10
-    instance-of v3, v3, Lwu6;
+    instance-of v3, v3, LEx6;
 
     .line 11
     .line 12
@@ -195,7 +195,7 @@
     const/4 p1, 0x2
 
     .line 22
-    invoke-virtual {v0, p1}, LhK7;->b(I)V
+    invoke-virtual {v0, p1}, LNP7;->b(I)V
 
     .line 23
     .line 24
@@ -204,7 +204,7 @@
 
     .line 26
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -221,7 +221,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {v0}, LhK7;->c()V
+    invoke-virtual {v0}, LNP7;->c()V
 
     .line 35
     .line 36
@@ -230,7 +230,7 @@
 
     .line 38
     :cond_3
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -244,7 +244,7 @@
 
     .line 43
     :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -256,15 +256,15 @@
     .locals 1
 
     .line 1
-    new-instance p1, LVmj;
+    new-instance p1, LaNi;
 
     .line 2
     .line 3
-    const/16 v0, 0xd
+    const/16 v0, 0x1a
 
     .line 4
     .line 5
-    invoke-direct {p1, v0, p0}, LVmj;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, LaNi;-><init>(ILjava/lang/Object;)V
 
     .line 6
     .line 7
@@ -322,7 +322,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p0}, LMB3;->getAspectRatioStateHolder()Lmb0;
+    invoke-virtual {p0}, LoF3;->getAspectRatioStateHolder()LMd0;
 
     .line 21
     .line 22
@@ -330,7 +330,7 @@
     move-result-object v1
 
     .line 24
-    iget v1, v1, Lmb0;->b:F
+    iget v1, v1, LMd0;->b:F
 
     .line 25
     .line 26
@@ -373,7 +373,7 @@
     .line 41
     .line 42
     .line 43
-    invoke-virtual {p0}, LMB3;->getTextureView()Lq3c;
+    invoke-virtual {p0}, LoF3;->getTextureView()Leic;
 
     .line 44
     .line 45

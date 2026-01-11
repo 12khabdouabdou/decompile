@@ -1,24 +1,24 @@
 .class public final Lcom/snap/opera/layer/VideoSpinnerLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
 
 # instance fields
-.field public final g:LVGj;
+.field public final g:Lq6k;
 
 .field public final h:Landroid/widget/FrameLayout;
 
 .field public i:Landroid/widget/FrameLayout;
 
-.field public j:LW28;
+.field public j:LTm6;
 
 .field public k:Z
 
@@ -30,16 +30,16 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, LVGj;->b:LVGj;
+    sget-object v0, Lq6k;->b:Lq6k;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->g:LVGj;
+    iput-object v0, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->g:Lq6k;
 
     .line 7
     .line 8
@@ -72,7 +72,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->g:LVGj;
+    iget-object v0, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->g:Lq6k;
 
     .line 2
     .line 3
@@ -105,7 +105,7 @@
 
     .line 5
     .line 6
-    sget-object v2, LXRg;->a:LWRg;
+    sget-object v2, LOdh;->a:LNdh;
 
     .line 7
     .line 8
@@ -113,7 +113,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v2, v3, v0}, LWRg;->c(Ljava/lang/String;I)V
+    invoke-virtual {v2, v3, v0}, LNdh;->c(Ljava/lang/String;I)V
 
     .line 11
     .line 12
@@ -130,15 +130,15 @@
     .locals 4
 
     .line 1
-    check-cast p1, LVGj;
+    check-cast p1, Lq6k;
 
     .line 2
     .line 3
-    check-cast p2, LVGj;
+    check-cast p2, Lq6k;
 
     .line 4
     .line 5
-    iget-boolean p1, p1, LVGj;->a:Z
+    iget-boolean p1, p1, Lq6k;->a:Z
 
     .line 6
     .line 7
@@ -146,7 +146,7 @@
 
     .line 8
     .line 9
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 10
     .line 11
@@ -170,7 +170,7 @@
     .line 19
     .line 20
     .line 21
-    iget-object p1, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->j:LW28;
+    iget-object p1, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->j:LTm6;
 
     .line 22
     .line 23
@@ -181,7 +181,7 @@
     const/4 v3, 0x1
 
     .line 26
-    invoke-virtual {p1, v3}, LW28;->c(I)V
+    invoke-virtual {p1, v3}, LTm6;->A(I)V
 
     .line 27
     .line 28
@@ -202,7 +202,7 @@
     .line 35
     .line 36
     .line 37
-    invoke-virtual {v0, p2}, LWRg;->a(Ljava/lang/String;)I
+    invoke-virtual {v0, p2}, LNdh;->a(Ljava/lang/String;)I
 
     .line 38
     .line 39
@@ -218,7 +218,7 @@
 
     .line 44
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 45
     .line 46
@@ -227,7 +227,7 @@
 
     .line 48
     :cond_1
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -253,7 +253,7 @@
     .line 58
     .line 59
     .line 60
-    iget-object p1, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->j:LW28;
+    iget-object p1, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->j:LTm6;
 
     .line 61
     .line 62
@@ -264,7 +264,7 @@
     const/4 v3, 0x3
 
     .line 65
-    invoke-virtual {p1, v3}, LW28;->c(I)V
+    invoke-virtual {p1, v3}, LTm6;->A(I)V
 
     .line 66
     .line 67
@@ -296,7 +296,7 @@
 
     .line 80
     .line 81
-    invoke-virtual {v0, p2, p1}, LWRg;->c(Ljava/lang/String;I)V
+    invoke-virtual {v0, p2, p1}, LNdh;->c(Ljava/lang/String;I)V
 
     .line 82
     .line 83
@@ -311,7 +311,7 @@
 
     .line 87
     :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 88
     .line 89
@@ -320,7 +320,7 @@
 
     .line 91
     :cond_6
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 92
     .line 93
@@ -355,11 +355,11 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, LPG9;->a:Landroid/content/Context;
+    iget-object v1, p0, LoS9;->a:Landroid/content/Context;
 
     .line 12
     .line 13
-    const v2, 0x7f0e03bc
+    const v2, 0x7f0e03de
 
     .line 14
     .line 15
@@ -372,7 +372,7 @@
     move-result-object v0
 
     .line 20
-    const v1, 0x7f0b0c37
+    const v1, 0x7f0b0d5b
 
     .line 21
     .line 22
@@ -393,20 +393,20 @@
 
     .line 30
     .line 31
-    new-instance v1, LW28;
+    new-instance v1, LTm6;
 
     .line 32
     .line 33
-    invoke-direct {v1, v0}, LW28;-><init>(Landroid/view/ViewGroup;)V
+    invoke-direct {v1, v0}, LTm6;-><init>(Landroid/view/ViewGroup;)V
 
     .line 34
     .line 35
     .line 36
-    iput-object v1, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->j:LW28;
+    iput-object v1, p0, Lcom/snap/opera/layer/VideoSpinnerLayerView;->j:LTm6;
 
     .line 37
     .line 38
-    iget-object v0, v1, LW28;->t:Ljava/lang/Object;
+    iget-object v0, v1, LTm6;->t:Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -419,7 +419,7 @@
     .line 43
     .line 44
     .line 45
-    iget-object v0, v1, LW28;->X:Ljava/lang/Object;
+    iget-object v0, v1, LTm6;->X:Ljava/lang/Object;
 
     .line 46
     .line 47

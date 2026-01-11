@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'FLOATING_BUTTON\':0,\'MENU_ITEM\':1,\'TOAST\':2,\'CAROUSEL\':3,\'VIEW_ALL\':4"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

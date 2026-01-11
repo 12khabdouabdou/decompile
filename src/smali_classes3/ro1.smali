@@ -1,20 +1,16 @@
 .class public final Lro1;
-.super Ljava/lang/Object;
+.super Lto1;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LTqc;
+.field public final a:Ljava/util/ArrayList;
 
-.field public final b:Landroid/content/Context;
-
-.field public final c:Lwi1;
-
-.field public final d:Lwi1;
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(LTqc;Landroid/content/Context;Lnwf;Lwi1;Lwi1;)V
+.method public constructor <init>(Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -23,21 +19,13 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lro1;->a:LTqc;
+    iput-object p1, p0, Lro1;->a:Ljava/util/ArrayList;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lro1;->b:Landroid/content/Context;
+    iput-object p2, p0, Lro1;->b:Ljava/lang/String;
 
     .line 7
     .line 8
-    iput-object p4, p0, Lro1;->c:Lwi1;
-
-    .line 9
-    .line 10
-    iput-object p5, p0, Lro1;->d:Lwi1;
-
-    .line 11
-    .line 12
     return-void
 .end method

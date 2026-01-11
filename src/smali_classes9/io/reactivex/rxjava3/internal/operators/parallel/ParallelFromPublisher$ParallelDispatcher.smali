@@ -37,11 +37,11 @@
 # instance fields
 .field public final X:I
 
-.field public Y:Lc7i;
+.field public Y:Ltvi;
 
 .field public Z:Lio/reactivex/rxjava3/operators/SimpleQueue;
 
-.field public final a:[LV6i;
+.field public final a:[Lmvi;
 
 .field public final b:Ljava/util/concurrent/atomic/AtomicLongArray;
 
@@ -65,7 +65,7 @@
 
 
 # direct methods
-.method public constructor <init>([LV6i;I)V
+.method public constructor <init>([Lmvi;I)V
     .locals 3
 
     .line 1
@@ -87,7 +87,7 @@
 
     .line 10
     .line 11
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[Lmvi;
 
     .line 12
     .line 13
@@ -202,7 +202,7 @@
 
     .line 22
     .line 23
-    iget-object v8, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[LV6i;
+    iget-object v8, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[Lmvi;
 
     .line 24
     .line 25
@@ -272,7 +272,7 @@
 
     .line 53
     .line 54
-    invoke-interface {v2}, LV6i;->onComplete()V
+    invoke-interface {v2}, Lmvi;->onComplete()V
 
     .line 55
     .line 56
@@ -352,7 +352,7 @@
 
     .line 90
     .line 91
-    invoke-interface {v2}, LV6i;->onComplete()V
+    invoke-interface {v2}, Lmvi;->onComplete()V
 
     .line 92
     .line 93
@@ -369,7 +369,7 @@
 
     .line 98
     .line 99
-    invoke-interface {v15, v14}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v15, v14}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 100
     .line 101
@@ -397,11 +397,11 @@
     .line 110
     .line 111
     .line 112
-    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Lc7i;
+    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Ltvi;
 
     .line 113
     .line 114
-    invoke-interface {v2}, Lc7i;->cancel()V
+    invoke-interface {v2}, Ltvi;->cancel()V
 
     .line 115
     .line 116
@@ -418,7 +418,7 @@
 
     .line 121
     .line 122
-    invoke-interface {v3, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v3, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 123
     .line 124
@@ -498,7 +498,7 @@
 
     .line 156
     .line 157
-    iget-object v8, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[LV6i;
+    iget-object v8, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[Lmvi;
 
     .line 158
     .line 159
@@ -588,7 +588,7 @@
 
     .line 198
     .line 199
-    invoke-interface {v2, v3}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v2, v3}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 200
     .line 201
@@ -629,7 +629,7 @@
 
     .line 217
     .line 218
-    invoke-interface {v2}, LV6i;->onComplete()V
+    invoke-interface {v2}, Lmvi;->onComplete()V
 
     .line 219
     .line 220
@@ -713,7 +713,7 @@
 
     .line 255
     .line 256
-    invoke-interface {v3, v2}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v3, v2}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 257
     .line 258
@@ -738,14 +738,14 @@
 
     .line 268
     .line 269
-    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Lc7i;
+    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Ltvi;
 
     .line 270
     .line 271
     int-to-long v3, v13
 
     .line 272
-    invoke-interface {v2, v3, v4}, Lc7i;->l(J)V
+    invoke-interface {v2, v3, v4}, Ltvi;->l(J)V
 
     .line 273
     .line 274
@@ -769,11 +769,11 @@
     .line 280
     .line 281
     .line 282
-    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Lc7i;
+    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Ltvi;
 
     .line 283
     .line 284
-    invoke-interface {v2}, Lc7i;->cancel()V
+    invoke-interface {v2}, Ltvi;->cancel()V
 
     .line 285
     .line 286
@@ -790,7 +790,7 @@
 
     .line 291
     .line 292
-    invoke-interface {v3, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v3, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 293
     .line 294
@@ -892,7 +892,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->a:[Lmvi;
 
     .line 2
     .line 3
@@ -933,7 +933,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-interface {v3, v5}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v3, v5}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 22
     .line 23
@@ -1018,11 +1018,11 @@
 
     .line 12
     .line 13
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Lc7i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Ltvi;
 
     .line 14
     .line 15
-    invoke-interface {p1}, Lc7i;->cancel()V
+    invoke-interface {p1}, Ltvi;->cancel()V
 
     .line 16
     .line 17
@@ -1053,15 +1053,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -1073,7 +1073,7 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Ltvi;
 
     .line 10
     .line 11
@@ -1095,7 +1095,7 @@
     const/4 v1, 0x7
 
     .line 19
-    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->s(I)I
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->r(I)I
 
     .line 20
     .line 21
@@ -1163,7 +1163,7 @@
     int-to-long v0, v0
 
     .line 52
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 53
     .line 54
@@ -1201,7 +1201,7 @@
     int-to-long v0, v0
 
     .line 71
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 72
     .line 73

@@ -1,165 +1,138 @@
 .class public final LqX2;
-.super Ljava/lang/Object;
+.super LtX2;
 .source "SourceFile"
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;
+.field public final a:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
+.method public constructor <init>(I)V
     .locals 0
 
     .line 1
-    iput p2, p0, LqX2;->a:I
-
-    iput-object p1, p0, LqX2;->b:Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, LqX2;->a:I
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 8
+.method public final a()I
+    .locals 1
 
     .line 1
-    iget p1, p0, LqX2;->a:I
+    iget v0, p0, LqX2;->a:I
 
     .line 2
     .line 3
-    packed-switch p1, :pswitch_data_0
+    return v0
+.end method
 
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
     .line 4
-    .line 5
-    .line 6
-    iget-object p1, p0, LqX2;->b:Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;
+    return v0
 
+    .line 5
+    :cond_0
+    instance-of v1, p1, LqX2;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    iget-object v0, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LqX2;
+
+    .line 12
+    .line 13
+    iget v1, p0, LqX2;->a:I
+
+    .line 14
+    .line 15
+    iget p1, p1, LqX2;->a:I
+
+    .line 16
+    .line 17
+    if-eq v1, p1, :cond_2
+
+    .line 18
+    .line 19
+    return v2
+
+    .line 20
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LqX2;->a:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "UnableToTrackRunningPath(errorCode="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, LqX2;->a:I
+
+    .line 9
+    .line 10
+    const-string v2, ")"
 
     .line 11
     .line 12
-    invoke-virtual {v0}, LtL5;->r()V
+    invoke-static {v0, v1, v2}, LJF0;->w(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
     .line 15
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 16
-    const/4 v1, 0x0
-
-    .line 17
-    invoke-virtual {p1, v0, v1}, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->r0(ILjava/lang/String;)V
-
-    .line 18
-    .line 19
-    .line 20
-    return-void
-
-    .line 21
-    :pswitch_0
-    new-instance p1, LUch;
-
-    .line 22
-    .line 23
-    iget-object v0, p0, LqX2;->b:Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;
-
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v1
-
-    .line 29
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->j2()LTqc;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v2
-
-    .line 33
-    invoke-virtual {v0}, Lcom/snap/spectacles/api/SpectaclesFragment;->U1()LPm9;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v3
-
-    .line 37
-    new-instance v4, LTch;
-
-    .line 38
-    .line 39
-    const/4 v5, 0x1
-
-    .line 40
-    const v6, 0x7f130bc4
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v7, "https://www.pixy.com/?utm_campaign=app&utm_source=snapchat&utm_medium=settings"
-
-    .line 44
-    .line 45
-    invoke-direct {v4, v6, v7, v5}, LTch;-><init>(ILjava/lang/String;Z)V
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-direct {p1, v1, v2, v3, v4}, LUch;-><init>(Landroid/content/Context;LTqc;LPm9;LTch;)V
-
-    .line 49
-    .line 50
-    .line 51
-    invoke-virtual {v0}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->j2()LTqc;
-
-    .line 52
-    .line 53
-    .line 54
     move-result-object v0
 
-    .line 55
-    const/4 v1, 0x0
-
-    .line 56
-    iget-object v2, p1, Lm7g;->h0:Lcqc;
-
-    .line 57
-    .line 58
-    invoke-virtual {v0, p1, v2, v1}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 59
-    .line 60
-    .line 61
-    return-void
-
-    .line 62
-    nop
-
-    .line 63
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 16
+    return-object v0
 .end method

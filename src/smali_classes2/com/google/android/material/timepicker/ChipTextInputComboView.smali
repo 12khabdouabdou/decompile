@@ -46,7 +46,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0e0446
+    const p2, 0x7f0e0465
 
     const/4 p3, 0x0
 
@@ -59,7 +59,7 @@
 
     iput-object p2, p0, Lcom/google/android/material/timepicker/ChipTextInputComboView;->a:Lcom/google/android/material/chip/Chip;
 
-    const v0, 0x7f0e0447
+    const v0, 0x7f0e0466
 
     .line 6
     invoke-virtual {p1, v0, p0, p3}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
@@ -108,12 +108,12 @@
     move-result-object v1
 
     .line 14
-    invoke-static {v1}, LdU;->e(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
+    invoke-static {v1}, LOpk;->a(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
 
     move-result-object v1
 
     .line 15
-    invoke-static {v0, v1}, LRL1;->w(Landroid/widget/EditText;Landroid/os/LocaleList;)V
+    invoke-static {v0, v1}, LGQ1;->x(Landroid/widget/EditText;Landroid/os/LocaleList;)V
 
     .line 16
     :cond_0
@@ -122,7 +122,7 @@
     .line 17
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    const p1, 0x7f0b0d3e
+    const p1, 0x7f0b0e59
 
     .line 18
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -203,7 +203,7 @@
     move-result-object p1
 
     .line 22
-    invoke-static {p1}, LdU;->e(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
+    invoke-static {p1}, LOpk;->a(Landroid/content/res/Configuration;)Landroid/os/LocaleList;
 
     .line 23
     .line 24
@@ -215,7 +215,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0, p1}, LRL1;->w(Landroid/widget/EditText;Landroid/os/LocaleList;)V
+    invoke-static {v0, p1}, LGQ1;->x(Landroid/widget/EditText;Landroid/os/LocaleList;)V
 
     .line 29
     .line 30

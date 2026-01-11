@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Llza;
+    proxyClass = LDLa;
     schema = "\'didShareLocation\':f|m|(),\'didNotShareLocation\':f|m|(s),\'didSelectBlocklistCell\':f|m|(a<s>),\'didOpenMapSettings\':f|m|()"
     typeReferences = {}
 .end annotation

@@ -1,51 +1,47 @@
 .class public final Lqlj;
-.super Ljava/lang/Object;
+.super Lhlj;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LpC3;
-
-.field public final b:LBJd;
-
-.field public final c:LB73;
-
-.field public final d:LBre;
-
-.field public final e:LXfi;
-
-
-# direct methods
-.method public constructor <init>(LB73;LpC3;LBJd;)V
-    .locals 0
+# virtual methods
+.method public a(LUK9;)Ljava/lang/Character;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p1}, LUK9;->D()I
 
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lqlj;->a:LpC3;
+    move-result v0
 
     .line 5
+    const/16 v1, 0x9
+
     .line 6
-    iput-object p3, p0, Lqlj;->b:LBJd;
-
     .line 7
+    if-ne v0, v1, :cond_0
+
     .line 8
-    iput-object p1, p0, Lqlj;->c:LB73;
-
     .line 9
-    .line 10
-    sget-object p1, Lo19;->Z:Lo19;
+    invoke-virtual {p1}, LUK9;->x()V
 
+    .line 10
     .line 11
     .line 12
-    const-string p2, "UserActivityInfoStoreImpl"
+    const/4 p1, 0x0
 
     .line 13
+    return-object p1
+
     .line 14
-    invoke-static {p1, p1, p2}, LEU0;->j(Lo19;Lo19;Ljava/lang/String;)LWm0;
+    :cond_0
+    invoke-virtual {p1}, LUK9;->z()Ljava/lang/String;
 
     .line 15
     .line 16
@@ -53,148 +49,142 @@
     move-result-object p1
 
     .line 18
-    new-instance p2, LBre;
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     .line 19
     .line 20
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
-
     .line 21
+    move-result v0
+
     .line 22
+    const/4 v1, 0x1
+
     .line 23
-    iput-object p2, p0, Lqlj;->d:LBre;
+    if-ne v0, v1, :cond_1
 
     .line 24
     .line 25
-    new-instance p1, Lsih;
+    const/4 v0, 0x0
 
     .line 26
-    .line 27
-    const/16 p2, 0xe
+    invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
 
+    .line 27
     .line 28
     .line 29
-    invoke-direct {p1, p2, p0}, Lsih;-><init>(ILjava/lang/Object;)V
+    move-result p1
 
     .line 30
+    invoke-static {p1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
     .line 31
     .line 32
-    new-instance p2, LXfi;
-
     .line 33
+    move-result-object p1
+
     .line 34
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    return-object p1
 
     .line 35
+    :cond_1
+    new-instance v0, LcL9;
+
     .line 36
     .line 37
-    iput-object p2, p0, Lqlj;->e:LXfi;
+    const-string v1, "Expecting character, got: "
 
     .line 38
     .line 39
+    invoke-virtual {v1, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    throw v0
+.end method
+
+.method public b(LrL9;Ljava/lang/Character;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    if-nez p2, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p2, 0x0
+
+    .line 4
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p2
+
+    .line 9
+    :goto_0
+    invoke-virtual {p1, p2}, LrL9;->p(Ljava/lang/String;)LrL9;
+
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(IJ)Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-    .locals 1
+.method public bridge synthetic read(LUK9;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-virtual {p0, p1}, Lqlj;->a(LUK9;)Ljava/lang/Character;
 
     .line 2
     .line 3
     .line 4
-    move-result p1
+    move-result-object p1
 
     .line 5
-    if-eqz p1, :cond_1
+    return-object p1
+.end method
 
+.method public bridge synthetic write(LrL9;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p2, Ljava/lang/Character;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Lqlj;->b(LrL9;Ljava/lang/Character;)V
+
+    .line 4
+    .line 5
     .line 6
-    .line 7
-    const/4 v0, 0x1
-
-    .line 8
-    if-ne p1, v0, :cond_0
-
-    .line 9
-    .line 10
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    new-instance p1, LFzc;
-
-    .line 12
-    .line 13
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 14
-    .line 15
-    .line 16
-    throw p1
-
-    .line 17
-    :cond_1
-    :goto_0
-    iget-object p1, p0, Lqlj;->b:LBJd;
-
-    .line 18
-    .line 19
-    invoke-virtual {p1}, LBJd;->a()LvJd;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p1
-
-    .line 23
-    sget-object v0, Li19;->x3:Li19;
-
-    .line 24
-    .line 25
-    invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p2
-
-    .line 29
-    invoke-virtual {p1, v0, p2}, LvJd;->l(LBI3;Ljava/lang/Long;)V
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {p1}, LvJd;->c()Lio/reactivex/rxjava3/core/Completable;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p1
-
-    .line 36
-    iget-object p2, p0, Lqlj;->d:LBre;
-
-    .line 37
-    .line 38
-    invoke-virtual {p2}, LBre;->d()LF06;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object p2
-
-    .line 42
-    new-instance p3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 43
-    .line 44
-    invoke-direct {p3, p1, p2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 45
-    .line 46
-    .line 47
-    return-object p3
+    return-void
 .end method

@@ -3,144 +3,98 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lop1;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Ljava/lang/Throwable;
+.field public final synthetic a:I
+
+.field public final synthetic b:LBp1;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Throwable;)V
+.method public synthetic constructor <init>(LBp1;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Lmp1;->a:I
+
+    iput-object p1, p0, Lmp1;->b:LBp1;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lmp1;->a:Ljava/lang/Throwable;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final call()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, Lmp1;->a:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, Lmp1;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    sget-object v0, Lgp1;->b:Lgp1;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    sget-object v1, Lgp1;->a:Lgp1;
 
     .line 9
     .line 10
-    return v2
+    iget-object v2, p0, Lmp1;->b:LBp1;
 
     .line 11
-    :cond_1
-    check-cast p1, Lmp1;
-
     .line 12
-    .line 13
-    iget-object v1, p0, Lmp1;->a:Ljava/lang/Throwable;
+    invoke-static {v2, v0, v1}, LBp1;->e(LBp1;Lkp1;Lkp1;)V
 
+    .line 13
     .line 14
     .line 15
-    iget-object p1, p1, Lmp1;->a:Ljava/lang/Throwable;
+    sget-object v0, LBf8;->a:LBf8;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    return-object v0
 
     .line 18
+    :pswitch_0
+    iget-object v0, p0, Lmp1;->b:LBp1;
+
     .line 19
     .line 20
-    move-result p1
+    iget-object v0, v0, LBp1;->n:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 21
-    if-nez p1, :cond_2
-
     .line 22
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
     .line 23
-    return v2
-
     .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lmp1;->a:Ljava/lang/Throwable;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "PregenerationError(error="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lmp1;->a:Ljava/lang/Throwable;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, LSd9;->f(Ljava/lang/StringBuilder;Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
+    .line 25
     move-result-object v0
 
-    .line 16
+    .line 26
+    invoke-static {v0}, Lmid;->b(Ljava/lang/Object;)Lmid;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
     return-object v0
+
+    .line 31
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

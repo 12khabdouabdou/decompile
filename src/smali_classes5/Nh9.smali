@@ -1,446 +1,495 @@
 .class public final LNh9;
-.super LOh9;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
 
 
 # instance fields
-.field public final a:Lo09;
+.field public final synthetic a:I
 
-.field public final b:Ljava/lang/String;
-
-.field public final c:LKjj;
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:LLh9;
+.field public final synthetic b:Lcom/snap/identity/ui/settings/passwordchange/InAppPasswordChangeFragment;
 
 
 # direct methods
-.method public constructor <init>(Lo09;LLh9;LKjj;Ljava/lang/String;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lcom/snap/identity/ui/settings/passwordchange/InAppPasswordChangeFragment;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LNh9;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LNh9;->a:Lo09;
+    iput-object p1, p0, LNh9;->b:Lcom/snap/identity/ui/settings/passwordchange/InAppPasswordChangeFragment;
 
-    .line 5
-    .line 6
-    iput-object p4, p0, LNh9;->b:Ljava/lang/String;
+    const/4 p1, 0x2
 
-    .line 7
-    .line 8
-    iput-object p3, p0, LNh9;->c:LKjj;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 9
-    .line 10
-    iput-object p5, p0, LNh9;->d:Ljava/lang/String;
-
-    .line 11
-    .line 12
-    iput-object p2, p0, LNh9;->e:LLh9;
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 12
 
     .line 1
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 2
-    if-ne p0, p1, :cond_0
+    sget-object v1, Lewj;->a:Lewj;
 
     .line 3
     .line 4
-    return v0
+    iget-object v2, p0, LNh9;->b:Lcom/snap/identity/ui/settings/passwordchange/InAppPasswordChangeFragment;
 
     .line 5
-    :cond_0
-    instance-of v1, p1, LNh9;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    iget v3, p0, LNh9;->a:I
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    packed-switch v3, :pswitch_data_0
 
     .line 9
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, LNh9;
+    check-cast p1, Landroid/view/View;
 
     .line 12
     .line 13
-    iget-object v1, p1, LNh9;->a:Lo09;
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 14
     .line 15
-    iget-object v3, p0, LNh9;->a:Lo09;
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
+    move-result p1
+
     .line 19
+    invoke-virtual {v2}, Lcom/snap/identity/ui/settings/passwordchange/InAppPasswordChangeFragment;->Y1()LRh9;
+
     .line 20
-    move-result v1
-
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
+    move-result-object p2
+
     .line 23
-    return v2
+    if-eqz p1, :cond_0
 
     .line 24
-    :cond_2
-    iget-object v1, p0, LNh9;->b:Ljava/lang/String;
-
     .line 25
-    .line 26
-    iget-object v3, p1, LNh9;->b:Ljava/lang/String;
+    sget-object p1, LA5d;->b:LA5d;
 
+    .line 26
     .line 27
+    :goto_0
+    move-object v10, p1
+
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    goto :goto_1
 
     .line 29
+    :cond_0
+    sget-object p1, LA5d;->a:LA5d;
+
     .line 30
     .line 31
-    move-result v1
+    goto :goto_0
 
     .line 32
-    if-nez v1, :cond_3
+    :goto_1
+    invoke-virtual {p2}, LRh9;->b()LUh9;
 
     .line 33
     .line 34
-    return v2
-
     .line 35
-    :cond_3
-    iget-object v1, p0, LNh9;->c:LKjj;
+    move-result-object v2
 
     .line 36
+    const/4 v8, 0x0
+
     .line 37
-    iget-object v3, p1, LNh9;->c:LKjj;
+    const/4 v9, 0x0
 
     .line 38
+    const/4 v3, 0x0
+
     .line 39
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const/4 v4, 0x0
 
     .line 40
+    const/4 v5, 0x0
+
     .line 41
+    const/4 v6, 0x0
+
     .line 42
-    move-result v1
+    const/4 v7, 0x0
 
     .line 43
-    if-nez v1, :cond_4
+    const/16 v11, 0x7f
 
     .line 44
     .line 45
-    return v2
+    invoke-static/range {v2 .. v11}, LUh9;->a(LUh9;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZILA5d;I)LUh9;
 
     .line 46
-    :cond_4
-    iget-object v1, p0, LNh9;->d:Ljava/lang/String;
-
     .line 47
     .line 48
-    iget-object v3, p1, LNh9;->d:Ljava/lang/String;
+    move-result-object p1
 
     .line 49
-    .line 50
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p2, p1}, LRh9;->c(LUh9;)V
 
+    .line 50
     .line 51
     .line 52
+    return-object v1
+
     .line 53
-    move-result v1
+    :pswitch_0
+    check-cast p1, Landroid/view/View;
 
     .line 54
-    if-nez v1, :cond_5
-
     .line 55
-    .line 56
-    return v2
+    check-cast p2, Ljava/lang/Boolean;
 
+    .line 56
     .line 57
-    :cond_5
-    iget-object v1, p0, LNh9;->e:LLh9;
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 58
     .line 59
-    iget-object p1, p1, LNh9;->e:LLh9;
-
     .line 60
+    move-result p1
+
     .line 61
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v2}, Lcom/snap/identity/ui/settings/passwordchange/InAppPasswordChangeFragment;->Y1()LRh9;
 
     .line 62
     .line 63
     .line 64
-    move-result p1
+    move-result-object p2
 
     .line 65
-    if-nez p1, :cond_6
+    if-nez p1, :cond_1
 
     .line 66
     .line 67
-    return v2
+    invoke-virtual {p2}, LRh9;->b()LUh9;
 
     .line 68
-    :cond_6
-    return v0
-.end method
+    .line 69
+    .line 70
+    move-result-object p1
 
-.method public final hashCode()I
-    .locals 4
+    .line 71
+    iget-object p1, p1, LUh9;->a:Ljava/lang/String;
 
-    .line 1
-    iget-object v0, p0, LNh9;->a:Lo09;
+    .line 72
+    .line 73
+    invoke-static {p1}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
-    .line 2
-    .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    .line 74
+    .line 75
+    .line 76
+    move-result p1
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    .line 77
+    if-nez p1, :cond_1
 
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
+    .line 78
+    .line 79
+    invoke-virtual {p2}, LRh9;->b()LUh9;
 
-    .line 9
-    const/16 v1, 0x1f
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v2
 
-    .line 10
-    .line 11
-    mul-int/lit8 v0, v0, 0x1f
+    .line 83
+    const/4 v8, 0x0
 
-    .line 12
-    .line 13
-    const/4 v2, 0x0
+    .line 84
+    const/4 v10, 0x0
 
-    .line 14
-    iget-object v3, p0, LNh9;->b:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    if-nez v3, :cond_0
-
-    .line 17
-    .line 18
+    .line 85
     const/4 v3, 0x0
 
-    .line 19
-    goto :goto_0
+    .line 86
+    const/4 v4, 0x0
 
-    .line 20
-    :cond_0
-    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+    .line 87
+    const/4 v5, 0x0
 
-    .line 21
-    .line 22
-    .line 23
-    move-result v3
+    .line 88
+    const/4 v6, 0x0
 
-    .line 24
-    :goto_0
-    add-int/2addr v0, v3
+    .line 89
+    const/4 v7, 0x1
 
-    .line 25
-    mul-int/lit8 v0, v0, 0x1f
+    .line 90
+    const/4 v9, 0x5
 
-    .line 26
-    .line 27
-    iget-object v3, p0, LNh9;->c:LKjj;
+    .line 91
+    const/16 v11, 0x8f
 
-    .line 28
-    .line 29
-    invoke-static {v3, v0, v1}, Lur1;->h(LKjj;II)I
+    .line 92
+    .line 93
+    invoke-static/range {v2 .. v11}, LUh9;->a(LUh9;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZILA5d;I)LUh9;
 
-    .line 30
-    .line 31
-    .line 32
-    move-result v0
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p1
 
-    .line 33
-    iget-object v3, p0, LNh9;->d:Ljava/lang/String;
+    .line 97
+    invoke-virtual {p2, p1}, LRh9;->c(LUh9;)V
 
-    .line 34
-    .line 35
-    if-nez v3, :cond_1
+    .line 98
+    .line 99
+    .line 100
+    iget-object p1, p2, LRh9;->a:LQS9;
 
-    .line 36
-    .line 37
-    goto :goto_1
+    .line 101
+    .line 102
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
-    .line 38
+    .line 103
+    .line 104
+    .line 105
+    move-result-object p1
+
+    .line 106
+    check-cast p1, Lk89;
+
+    .line 107
+    .line 108
+    invoke-virtual {p2}, LRh9;->b()LUh9;
+
+    .line 109
+    .line 110
+    .line 111
+    move-result-object v2
+
+    .line 112
+    iget-object v2, v2, LUh9;->a:Ljava/lang/String;
+
+    .line 113
+    .line 114
+    check-cast p1, LC89;
+
+    .line 115
+    .line 116
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 117
+    .line 118
+    .line 119
+    sget-object v3, Lrdh;->c:Lrdh;
+
+    .line 120
+    .line 121
+    new-instance v3, LIu8;
+
+    .line 122
+    .line 123
+    invoke-direct {v3}, LIu8;-><init>()V
+
+    .line 124
+    .line 125
+    .line 126
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 127
+    .line 128
+    invoke-direct {v4, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
+    .line 129
+    .line 130
+    .line 131
+    new-instance v3, LZZ;
+
+    .line 132
+    .line 133
+    const/4 v5, 0x2
+
+    .line 134
+    invoke-direct {v3, v2, v5}, LZZ;-><init>(Ljava/lang/String;I)V
+
+    .line 135
+    .line 136
+    .line 137
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 138
+    .line 139
+    invoke-direct {v2, v4, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 140
+    .line 141
+    .line 142
+    iget-object v3, p1, LC89;->a:LnJe;
+
+    .line 143
+    .line 144
+    invoke-virtual {v3}, LnJe;->d()LA36;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object v3
+
+    .line 148
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
+
+    .line 149
+    .line 150
+    invoke-direct {v4, v2, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 151
+    .line 152
+    .line 153
+    new-instance v2, Lo89;
+
+    .line 154
+    .line 155
+    invoke-direct {v2, p1, v0}, Lo89;-><init>(LC89;I)V
+
+    .line 156
+    .line 157
+    .line 158
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 159
+    .line 160
+    invoke-direct {p1, v4, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 161
+    .line 162
+    .line 163
+    iget-object v2, p2, LRh9;->l:LnJe;
+
+    .line 164
+    .line 165
+    invoke-virtual {v2}, LnJe;->i()Lxp0;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object v2
+
+    .line 169
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 170
+    .line 171
+    invoke-direct {v3, p1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 172
+    .line 173
+    .line 174
+    new-instance p1, LPh9;
+
+    .line 175
+    .line 176
+    invoke-direct {p1, p2, v0}, LPh9;-><init>(LRh9;I)V
+
+    .line 177
+    .line 178
+    .line 179
+    new-instance v0, LPh9;
+
+    .line 180
+    .line 181
+    const/4 v2, 0x1
+
+    .line 182
+    invoke-direct {v0, p2, v2}, LPh9;-><init>(LRh9;I)V
+
+    .line 183
+    .line 184
+    .line 185
+    invoke-virtual {v3, p1, v0}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 186
+    .line 187
+    .line 188
+    move-result-object p1
+
+    .line 189
+    iget-object p2, p2, LRh9;->n:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 190
+    .line 191
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 192
+    .line 193
+    .line 194
+    goto :goto_2
+
+    .line 195
     :cond_1
-    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {p2}, LRh9;->b()LUh9;
 
-    .line 39
-    .line 40
-    .line 41
-    move-result v2
+    .line 196
+    .line 197
+    .line 198
+    move-result-object v2
 
-    .line 42
-    :goto_1
-    add-int/2addr v0, v2
+    .line 199
+    const/4 v10, 0x0
 
-    .line 43
-    mul-int/lit8 v0, v0, 0x1f
+    .line 200
+    const/4 v9, 0x0
 
-    .line 44
-    .line 45
-    iget-object v1, p0, LNh9;->e:LLh9;
+    .line 201
+    const/4 v3, 0x0
 
-    .line 46
-    .line 47
-    invoke-virtual {v1}, LLh9;->hashCode()I
+    .line 202
+    const/4 v4, 0x0
 
-    .line 48
-    .line 49
-    .line 50
-    move-result v1
+    .line 203
+    const/4 v5, 0x0
 
-    .line 51
-    add-int/2addr v1, v0
+    .line 204
+    const/4 v6, 0x0
 
-    .line 52
-    return v1
-.end method
+    .line 205
+    const/4 v7, 0x0
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    .line 206
+    const/4 v8, 0x0
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 207
+    const/16 v11, 0xef
 
-    .line 2
-    .line 3
-    const-string v1, "Show(lensId="
+    .line 208
+    .line 209
+    invoke-static/range {v2 .. v11}, LUh9;->a(LUh9;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZZILA5d;I)LUh9;
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 210
+    .line 211
+    .line 212
+    move-result-object p1
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LNh9;->a:Lo09;
+    .line 213
+    invoke-virtual {p2, p1}, LRh9;->c(LUh9;)V
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 214
+    .line 215
+    .line 216
+    :goto_2
+    return-object v1
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", lensName="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LNh9;->b:Ljava/lang/String;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", lensIcon="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LNh9;->c:LKjj;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", lensCreator="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LNh9;->d:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", trackingInfo="
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    iget-object v1, p0, LNh9;->e:LLh9;
-
-    .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ")"
-
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object v0
-
-    .line 62
-    return-object v0
+    .line 217
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -2,158 +2,142 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LE7d;
-
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LI66;
+.field public final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(LI66;I)V
+.method public constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lja;->a:I
-
-    iput-object p1, p0, Lja;->b:LI66;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lja;->a:Ljava/lang/Object;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Completable;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
-    iget v0, p0, Lja;->a:I
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
-    .line 5
-    .line 6
-    check-cast p1, Lia;
+    return v0
 
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lja;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    new-instance v0, LI9;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    iget-object v1, p0, Lja;->b:LI66;
+    return v2
 
     .line 11
-    .line 12
-    const/4 v2, 0x2
+    :cond_1
+    check-cast p1, Lja;
 
+    .line 12
     .line 13
-    invoke-direct {v0, v1, v2, p1}, LI9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    iget-object v1, p0, Lja;->a:Ljava/lang/Object;
 
     .line 14
     .line 15
+    iget-object p1, p1, Lja;->a:Ljava/lang/Object;
+
     .line 16
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
     .line 17
-    .line 18
-    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 18
     .line 19
     .line 20
+    move-result p1
+
     .line 21
-    return-object p1
+    if-nez p1, :cond_2
 
     .line 22
-    :pswitch_0
-    check-cast p1, Lha;
-
     .line 23
+    return v2
+
     .line 24
-    new-instance v0, LI9;
-
-    .line 25
-    .line 26
-    iget-object v1, p0, Lja;->b:LI66;
-
-    .line 27
-    .line 28
-    const/4 v2, 0x1
-
-    .line 29
-    invoke-direct {v0, v1, v2, p1}, LI9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 30
-    .line 31
-    .line 32
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 33
-    .line 34
-    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 35
-    .line 36
-    .line 37
-    return-object p1
-
-    .line 38
-    nop
-
-    .line 39
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    :cond_2
+    return v0
 .end method
 
-.method public final bridge synthetic d(Ljava/lang/Object;)Lsga;
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    iget v0, p0, Lja;->a:I
+    iget-object v0, p0, Lja;->a:Ljava/lang/Object;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Lia;
+    move-result v0
 
     .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "ActionMenuActionModel(eventData="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
-    const/4 p1, 0x0
+    iget-object v1, p0, Lja;->a:Ljava/lang/Object;
 
     .line 9
-    return-object p1
-
     .line 10
-    :pswitch_0
-    check-cast p1, Lha;
+    const-string v2, ")"
 
     .line 11
     .line 12
-    const/4 p1, 0x0
+    invoke-static {v0, v1, v2}, Lf8d;->d(Ljava/lang/StringBuilder;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
-    return-object p1
-
     .line 14
-    nop
-
     .line 15
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    move-result-object v0
+
+    .line 16
+    return-object v0
 .end method

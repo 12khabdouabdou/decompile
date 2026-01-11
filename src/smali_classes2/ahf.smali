@@ -1,204 +1,62 @@
-.class public final Lahf;
-.super Lbhf;
+.class public abstract Lahf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final e:Landroid/graphics/Path;
-
-.field public final synthetic f:Lfhf;
-
-
 # direct methods
-.method public constructor <init>(Lfhf;Landroid/graphics/Path;F)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Lahf;->f:Lfhf;
+    return-void
+.end method
+
+.method public static final d(LnHb;[B)LZgf;
+    .locals 8
+
+    .line 1
+    array-length v0, p1
 
     .line 2
+    array-length v1, p1
+
     .line 3
-    const/4 v0, 0x0
+    int-to-long v2, v1
 
     .line 4
-    invoke-direct {p0, p1, p3, v0}, Lbhf;-><init>(Lfhf;FF)V
+    const/4 v1, 0x0
 
     .line 5
+    int-to-long v4, v1
+
     .line 6
+    int-to-long v6, v0
+
     .line 7
-    iput-object p2, p0, Lahf;->e:Landroid/graphics/Path;
+    invoke-static/range {v2 .. v7}, LcQj;->c(JJJ)V
 
     .line 8
     .line 9
-    return-void
+    .line 10
+    new-instance v1, LZgf;
+
+    .line 11
+    .line 12
+    invoke-direct {v1, p0, v0, p1}, LZgf;-><init>(LnHb;I[B)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-object v1
 .end method
 
 
 # virtual methods
-.method public final g(Ljava/lang/String;)V
-    .locals 16
+.method public abstract b()J
+.end method
 
-    .line 1
-    move-object/from16 v0, p0
+.method public abstract c()LnHb;
+.end method
 
-    .line 2
-    .line 3
-    iget-object v1, v0, Lahf;->f:Lfhf;
-
-    .line 4
-    .line 5
-    invoke-virtual {v1}, Lfhf;->f0()Z
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v2
-
-    .line 9
-    if-eqz v2, :cond_1
-
-    .line 10
-    .line 11
-    iget-object v2, v1, Lfhf;->Y:Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    check-cast v2, Ldhf;
-
-    .line 14
-    .line 15
-    iget-boolean v3, v2, Ldhf;->b:Z
-
-    .line 16
-    .line 17
-    if-eqz v3, :cond_0
-
-    .line 18
-    .line 19
-    iget-object v3, v1, Lfhf;->c:Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    move-object v4, v3
-
-    .line 22
-    check-cast v4, Landroid/graphics/Canvas;
-
-    .line 23
-    .line 24
-    iget v7, v0, Lbhf;->b:F
-
-    .line 25
-    .line 26
-    iget v8, v0, Lbhf;->c:F
-
-    .line 27
-    .line 28
-    iget-object v9, v2, Ldhf;->t:Landroid/graphics/Paint;
-
-    .line 29
-    .line 30
-    iget-object v6, v0, Lahf;->e:Landroid/graphics/Path;
-
-    .line 31
-    .line 32
-    move-object/from16 v5, p1
-
-    .line 33
-    .line 34
-    invoke-virtual/range {v4 .. v9}, Landroid/graphics/Canvas;->drawTextOnPath(Ljava/lang/String;Landroid/graphics/Path;FFLandroid/graphics/Paint;)V
-
-    .line 35
-    .line 36
-    .line 37
-    :cond_0
-    iget-object v2, v1, Lfhf;->Y:Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    check-cast v2, Ldhf;
-
-    .line 40
-    .line 41
-    iget-boolean v3, v2, Ldhf;->c:Z
-
-    .line 42
-    .line 43
-    if-eqz v3, :cond_1
-
-    .line 44
-    .line 45
-    iget-object v3, v1, Lfhf;->c:Ljava/lang/Object;
-
-    .line 46
-    .line 47
-    move-object v10, v3
-
-    .line 48
-    check-cast v10, Landroid/graphics/Canvas;
-
-    .line 49
-    .line 50
-    iget v13, v0, Lbhf;->b:F
-
-    .line 51
-    .line 52
-    iget v14, v0, Lbhf;->c:F
-
-    .line 53
-    .line 54
-    iget-object v15, v2, Ldhf;->X:Landroid/graphics/Paint;
-
-    .line 55
-    .line 56
-    iget-object v12, v0, Lahf;->e:Landroid/graphics/Path;
-
-    .line 57
-    .line 58
-    move-object/from16 v11, p1
-
-    .line 59
-    .line 60
-    invoke-virtual/range {v10 .. v15}, Landroid/graphics/Canvas;->drawTextOnPath(Ljava/lang/String;Landroid/graphics/Path;FFLandroid/graphics/Paint;)V
-
-    .line 61
-    .line 62
-    .line 63
-    :cond_1
-    iget v2, v0, Lbhf;->b:F
-
-    .line 64
-    .line 65
-    iget-object v1, v1, Lfhf;->Y:Ljava/lang/Object;
-
-    .line 66
-    .line 67
-    check-cast v1, Ldhf;
-
-    .line 68
-    .line 69
-    iget-object v1, v1, Ldhf;->t:Landroid/graphics/Paint;
-
-    .line 70
-    .line 71
-    move-object/from16 v5, p1
-
-    .line 72
-    .line 73
-    invoke-virtual {v1, v5}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
-
-    .line 74
-    .line 75
-    .line 76
-    move-result v1
-
-    .line 77
-    add-float/2addr v1, v2
-
-    .line 78
-    iput v1, v0, Lbhf;->b:F
-
-    .line 79
-    .line 80
-    return-void
+.method public abstract e(LrD1;)V
 .end method

@@ -2,64 +2,113 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Predicate;
+
 
 # instance fields
-.field public final a:Lake;
+.field public final synthetic a:I
 
-.field public final b:Lake;
-
-.field public final c:Lake;
-
-.field public final d:LXfi;
+.field public final synthetic b:LT33;
 
 
 # direct methods
-.method public constructor <init>(Lake;Lake;Lake;)V
+.method public synthetic constructor <init>(LT33;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LR33;->a:I
+
+    iput-object p1, p0, LR33;->b:LT33;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final test(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    iget v0, p0, LR33;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LR33;->a:Lake;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LR33;->b:Lake;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    iput-object p3, p0, LR33;->c:Lake;
+    iget-object v0, p0, LR33;->b:LT33;
 
     .line 9
     .line 10
-    new-instance p1, LkO2;
+    invoke-virtual {v0}, LT33;->i()Liv7;
 
     .line 11
     .line 12
-    const/16 p2, 0x1b
-
     .line 13
+    move-result-object v1
+
     .line 14
-    invoke-direct {p1, p2, p0}, LkO2;-><init>(ILjava/lang/Object;)V
+    const-string v2, "fileWriteCompletable"
 
     .line 15
     .line 16
-    .line 17
-    new-instance p2, LXfi;
+    invoke-static {v0, v1, p1, v2}, LT33;->c(LT33;Liv7;Ljava/lang/Throwable;Ljava/lang/String;)V
 
+    .line 17
     .line 18
     .line 19
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    const/4 p1, 0x1
 
     .line 20
-    .line 21
-    .line 22
-    iput-object p2, p0, LR33;->d:LXfi;
+    return p1
 
+    .line 21
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 22
     .line 23
+    iget-object v0, p0, LR33;->b:LT33;
+
     .line 24
-    return-void
+    .line 25
+    invoke-virtual {v0}, LT33;->i()Liv7;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    const-string v2, "filePostSyncCompletable"
+
+    .line 30
+    .line 31
+    invoke-static {v0, v1, p1, v2}, LT33;->c(LT33;Liv7;Ljava/lang/Throwable;Ljava/lang/String;)V
+
+    .line 32
+    .line 33
+    .line 34
+    const/4 p1, 0x1
+
+    .line 35
+    return p1
+
+    .line 36
+    nop
+
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

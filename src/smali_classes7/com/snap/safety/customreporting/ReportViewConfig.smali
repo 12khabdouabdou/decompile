@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/customreporting/ReportViewConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'headerText\':s?,\'rightButtonType\':r?:\'[0]\',\'skipPostSubmitAction\':b@?,\'reportedUserId\':s?,\'contentId\':s?,\'onWillSubmit\':f?(b@, s),\'commentBoxPlaceholder\':s?,\'minCharLimit\':d@?,\'submitButtonFooter\':s?,\'allowSingleReasonFlow\':b@?"
     typeReferences = {

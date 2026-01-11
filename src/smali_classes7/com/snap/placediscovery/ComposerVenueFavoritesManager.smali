@@ -1,17 +1,17 @@
 .class public final Lcom/snap/placediscovery/ComposerVenueFavoritesManager;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'getFavoritePlacesUpdatedSubject\':f(): g<c>:\'[0]\'<b@>,\'getFavoriteActionNotificationSubject\':f(): g<c>:\'[0]\'<r:\'[1]\'>,\'onFavoriteAction\':f(r:\'[2]\'),\'isPlaceFavorited\':f(s): g<c>:\'[0]\'<r:\'[3]\'>,\'arePlacesFavorited\':f(a<s>): g<c>:\'[0]\'<a<r:\'[3]\'>>,\'handleFavoriteNotificationUpdateSubscription\':f(f(r:\'[1]\')): f()"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
         Lcom/snap/placediscovery/FavoriteActionNotificationModel;,
         Lcom/snap/placediscovery/PlaceDiscoveryModel;,
-        Lwb7;
+        Lng7;
     }
 .end annotation
 

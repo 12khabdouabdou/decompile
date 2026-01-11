@@ -36,7 +36,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/header/HeaderLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/header/HeaderLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/header/HeaderLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/features/header/HeaderLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -96,7 +96,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -138,7 +138,7 @@
 
     .line 7
     .line 8
-    const v0, 0x7f0b01b8
+    const v0, 0x7f0b0202
 
     .line 9
     .line 10
@@ -159,7 +159,7 @@
 
     .line 18
     .line 19
-    const v0, 0x7f0b0696
+    const v0, 0x7f0b072e
 
     .line 20
     .line 21
@@ -180,7 +180,7 @@
 
     .line 29
     .line 30
-    const v0, 0x7f0b07d3
+    const v0, 0x7f0b087e
 
     .line 31
     .line 32
@@ -201,7 +201,7 @@
 
     .line 40
     .line 41
-    const v0, 0x7f0b03bd
+    const v0, 0x7f0b0449
 
     .line 42
     .line 43
@@ -222,7 +222,7 @@
 
     .line 51
     .line 52
-    const v0, 0x7f0b01c6
+    const v0, 0x7f0b0210
 
     .line 53
     .line 54
@@ -243,7 +243,7 @@
 
     .line 62
     .line 63
-    const v0, 0x7f0b06a8
+    const v0, 0x7f0b073d
 
     .line 64
     .line 65
@@ -260,7 +260,7 @@
 
     .line 71
     .line 72
-    const v0, 0x7f0b06a4
+    const v0, 0x7f0b073a
 
     .line 73
     .line 74
@@ -277,7 +277,7 @@
 
     .line 80
     .line 81
-    const v0, 0x7f0b06a3
+    const v0, 0x7f0b0739
 
     .line 82
     .line 83
@@ -294,7 +294,7 @@
 
     .line 89
     .line 90
-    const v0, 0x7f0b069e
+    const v0, 0x7f0b0734
 
     .line 91
     .line 92
@@ -311,7 +311,7 @@
 
     .line 98
     .line 99
-    const v0, 0x7f0b09c3
+    const v0, 0x7f0b0abb
 
     .line 100
     .line 101
@@ -360,7 +360,7 @@
     move-result-object v3
 
     .line 124
-    const v4, 0x7f080b67
+    const v4, 0x7f080beb
 
     .line 125
     .line 126
@@ -386,7 +386,7 @@
     move-result-object v0
 
     .line 138
-    const v3, 0x7f07051b
+    const v3, 0x7f070542
 
     .line 139
     .line 140
@@ -427,7 +427,7 @@
     move-result-object v5
 
     .line 159
-    const v6, 0x7f070307
+    const v6, 0x7f07030e
 
     .line 160
     .line 161
@@ -499,7 +499,7 @@
     const/4 v6, 0x0
 
     .line 195
-    invoke-static {v3, v6, v5, v6, v0}, Lvzk;->j(Landroid/view/View;IIII)V
+    invoke-static {v3, v6, v5, v6, v0}, Lc64;->l(Landroid/view/View;IIII)V
 
     .line 196
     .line 197
@@ -606,7 +606,7 @@
 
     .line 251
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 252
     .line 253
@@ -619,7 +619,7 @@
 
     .line 256
     .line 257
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 258
     .line 259
@@ -628,7 +628,7 @@
 
     .line 261
     :cond_2
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 262
     .line 263
@@ -637,7 +637,7 @@
 
     .line 265
     :cond_3
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 266
     .line 267
@@ -650,7 +650,7 @@
 
     .line 270
     .line 271
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 272
     .line 273
@@ -663,7 +663,7 @@
 
     .line 276
     .line 277
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 278
     .line 279
@@ -672,7 +672,7 @@
 
     .line 281
     :cond_6
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 282
     .line 283
@@ -681,7 +681,7 @@
 
     .line 285
     :cond_7
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 286
     .line 287
@@ -690,7 +690,7 @@
 
     .line 289
     :cond_8
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 290
     .line 291
@@ -699,7 +699,7 @@
 
     .line 293
     :cond_9
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 294
     .line 295
@@ -708,7 +708,7 @@
 
     .line 297
     :cond_a
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 298
     .line 299

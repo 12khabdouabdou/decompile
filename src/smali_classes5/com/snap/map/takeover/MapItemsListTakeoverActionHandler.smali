@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Li0b;
+    proxyClass = Ljdb;
     schema = "\'handleItemTap\':f|m|(r:\'[0]\'),\'handleCloseTray\':f|m|()"
     typeReferences = {
         Lcom/snap/map/takeover/MapItemData;

@@ -1,104 +1,133 @@
-.class public abstract synthetic LDo1;
+.class public final LDo1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ll88;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public X:J
+
+.field public Y:J
+
+.field public Z:J
+
+.field public final a:LYbd;
+
+.field public final b:LCBe;
+
+.field public final c:LvZ3;
+
+.field public e0:J
+
+.field public f0:Z
+
+.field public g0:J
+
+.field public t:Ljr1;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LYbd;LCBe;LvZ3;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lmv1;->values()[Lmv1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, LDo1;->a:LYbd;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p2, p0, LDo1;->b:LCBe;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lmv1;->b:Lmv1;
+    iput-object p3, p0, LDo1;->c:LvZ3;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    const-wide/16 p1, -0x1
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    iput-wide p1, p0, LDo1;->X:J
 
+    .line 13
     .line 14
-    const/4 v2, 0x1
+    sget-object p1, LNn1;->Z:LNn1;
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lmv1;->c:Lmv1;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 17
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    const-string p1, "BloopsFullScreenAnalytics"
 
     .line 20
     .line 21
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
     .line 22
-    move-result v1
-
     .line 23
-    const/4 v2, 0x2
-
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 25
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lmv1;->t:Lmv1;
+    return-void
+.end method
 
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
+# virtual methods
+.method public final i(Lapp/aifactory/sdk/api/model/FullscreenViewStates;)V
+    .locals 2
 
-    .line 32
-    const/4 v2, 0x3
+    .line 1
+    instance-of v0, p1, Lapp/aifactory/sdk/api/model/FullscreenViewStates$Preview;
 
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 34
-    .line 35
-    :catch_2
-    sput-object v0, LDo1;->a:[I
+    .line 4
+    .line 5
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
-    .line 36
-    .line 37
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v0
+
+    .line 9
+    iput-wide v0, p0, LDo1;->e0:J
+
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    instance-of p1, p1, Lapp/aifactory/sdk/api/model/FullscreenViewStates$Error;
+
+    .line 13
+    .line 14
+    if-eqz p1, :cond_1
+
+    .line 15
+    .line 16
+    const/4 p1, 0x1
+
+    .line 17
+    iput-boolean p1, p0, LDo1;->f0:Z
+
+    .line 18
+    .line 19
+    :cond_1
     return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public c:LUY0;
+.field public c:LF21;
 
 .field public e0:I
 
@@ -18,7 +18,7 @@
 
 .field public final j0:I
 
-.field public k0:LgJe;
+.field public k0:LQ0f;
 
 .field public l0:Landroid/graphics/Canvas;
 
@@ -93,9 +93,9 @@
 
     move-result-object p1
 
-    const v0, 0x7f040143
+    const v0, 0x7f04014d
 
-    invoke-static {p1, v0}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {p1, v0}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     move-result p1
 
@@ -110,7 +110,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f070bc1
+    const v0, 0x7f070be8
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -200,9 +200,9 @@
 
     move-result-object p1
 
-    const p2, 0x7f040143
+    const p2, 0x7f04014d
 
-    invoke-static {p1, p2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {p1, p2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     move-result p1
 
@@ -217,7 +217,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070bc1
+    const p2, 0x7f070be8
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -307,9 +307,9 @@
 
     move-result-object p1
 
-    const p2, 0x7f040143
+    const p2, 0x7f04014d
 
-    invoke-static {p1, p2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {p1, p2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     move-result p1
 
@@ -324,7 +324,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f070bc1
+    const p2, 0x7f070be8
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -447,7 +447,7 @@
 
     .line 39
     .line 40
-    iget-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LgJe;
+    iget-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LQ0f;
 
     .line 41
     .line 42
@@ -458,7 +458,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {v1}, LgJe;->c()Z
+    invoke-virtual {v1}, LQ0f;->d()Z
 
     .line 46
     .line 47
@@ -537,7 +537,7 @@
 
     .line 81
     :cond_2
-    iget-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->c:LUY0;
+    iget-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->c:LF21;
 
     .line 82
     .line 83
@@ -545,7 +545,7 @@
 
     .line 84
     .line 85
-    iget-object v7, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LgJe;
+    iget-object v7, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LQ0f;
 
     .line 86
     .line 87
@@ -553,7 +553,7 @@
 
     .line 88
     .line 89
-    invoke-virtual {v7}, LgJe;->c()Z
+    invoke-virtual {v7}, LQ0f;->d()Z
 
     .line 90
     .line 91
@@ -577,7 +577,7 @@
 
     .line 99
     .line 100
-    invoke-interface {v1, v8, v6, v7}, LUY0;->L2(IILjava/lang/String;)LgJe;
+    invoke-interface {v1, v8, v6, v7}, LF21;->A2(IILjava/lang/String;)LQ0f;
 
     .line 101
     .line 102
@@ -585,7 +585,7 @@
     move-result-object v1
 
     .line 104
-    iput-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LgJe;
+    iput-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LQ0f;
 
     .line 105
     .line 106
@@ -602,11 +602,11 @@
 
     .line 111
     .line 112
-    iget-object v7, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LgJe;
+    iget-object v7, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LQ0f;
 
     .line 113
     .line 114
-    invoke-virtual {v7}, LgJe;->j()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v7}, LQ0f;->j()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 115
     .line 116
@@ -614,11 +614,11 @@
     move-result-object v7
 
     .line 118
-    check-cast v7, LHq6;
+    check-cast v7, LVt6;
 
     .line 119
     .line 120
-    invoke-interface {v7}, LHq6;->A2()Landroid/graphics/Bitmap;
+    invoke-interface {v7}, LVt6;->r2()Landroid/graphics/Bitmap;
 
     .line 121
     .line 122
@@ -750,7 +750,7 @@
     .line 184
     :cond_8
     :goto_2
-    iget-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LgJe;
+    iget-object v1, p0, Lcom/snap/thumbnailui/view/ThumbnailTrimmingOverlayView;->k0:LQ0f;
 
     .line 185
     .line 186
@@ -801,7 +801,7 @@
 
     .line 208
     .line 209
-    invoke-virtual {v1}, LgJe;->j()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v1}, LQ0f;->j()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 210
     .line 211
@@ -809,11 +809,11 @@
     move-result-object v0
 
     .line 213
-    check-cast v0, LHq6;
+    check-cast v0, LVt6;
 
     .line 214
     .line 215
-    invoke-interface {v0}, LHq6;->A2()Landroid/graphics/Bitmap;
+    invoke-interface {v0}, LVt6;->r2()Landroid/graphics/Bitmap;
 
     .line 216
     .line 217

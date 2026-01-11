@@ -1,434 +1,201 @@
-.class public Lt4j;
-.super LP4j;
+.class public final Lt4j;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'userId\':s,\'username\':s,\'avatarId\':s?,\'transactionId\':s,\'broadcastId\':s,\'requestTime\':d,\'expirationTime\':d,\'city\':s,\'country\':s,\'deviceData\':r:\'[0]\',\'transactionType\':d,\'isExpiredOnClient\':b,\'transactionDescription\':r:\'[1]\',\'bootstrapReencryptionData\':r?:\'[2]\'"
+    typeReferences = {
+        Lcom/snap/tiv/TivDeviceData;,
+        Lcom/snap/tiv/TivTransactionDescription;,
+        Lcom/snap/tiv/TivBootstrapReencryptionData;
+    }
+.end annotation
+
+
 # instance fields
-.field public n:Ljava/lang/String;
+.field private _avatarId:Ljava/lang/String;
 
-.field public o:LK4j;
+.field private _bootstrapReencryptionData:Lcom/snap/tiv/TivBootstrapReencryptionData;
 
-.field public p:Ljava/lang/String;
+.field private _broadcastId:Ljava/lang/String;
 
-.field public q:Ljava/lang/String;
+.field private _city:Ljava/lang/String;
 
-.field public r:Ljava/lang/Boolean;
+.field private _country:Ljava/lang/String;
 
-.field public s:Ljava/lang/Long;
+.field private _deviceData:Lcom/snap/tiv/TivDeviceData;
+
+.field private _expirationTime:D
+
+.field private _isExpiredOnClient:Z
+
+.field private _requestTime:D
+
+.field private _transactionDescription:Lcom/snap/tiv/TivTransactionDescription;
+
+.field private _transactionId:Ljava/lang/String;
+
+.field private _transactionType:D
+
+.field private _userId:Ljava/lang/String;
+
+.field private _username:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DDLjava/lang/String;Ljava/lang/String;Lcom/snap/tiv/TivDeviceData;DZLcom/snap/tiv/TivTransactionDescription;)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, Lt4j;->_userId:Ljava/lang/String;
+
     .line 3
-    const-string v1, "UNIFIED_PROFILE_ACTION"
+    iput-object p2, p0, Lt4j;->_username:Ljava/lang/String;
+
+    const/4 p1, 0x0
 
     .line 4
+    iput-object p1, p0, Lt4j;->_avatarId:Ljava/lang/String;
+
     .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
+    iput-object p3, p0, Lt4j;->_transactionId:Ljava/lang/String;
 
     .line 6
+    iput-object p4, p0, Lt4j;->_broadcastId:Ljava/lang/String;
+
     .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+    iput-wide p5, p0, Lt4j;->_requestTime:D
 
     .line 8
+    iput-wide p7, p0, Lt4j;->_expirationTime:D
+
     .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+    iput-object p9, p0, Lt4j;->_city:Ljava/lang/String;
 
     .line 10
+    iput-object p10, p0, Lt4j;->_country:Ljava/lang/String;
+
     .line 11
-    move-object v0, p0
+    iput-object p11, p0, Lt4j;->_deviceData:Lcom/snap/tiv/TivDeviceData;
 
     .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
+    iput-wide p12, p0, Lt4j;->_transactionType:D
 
     .line 13
+    iput-boolean p14, p0, Lt4j;->_isExpiredOnClient:Z
+
     .line 14
+    iput-object p15, p0, Lt4j;->_transactionDescription:Lcom/snap/tiv/TivTransactionDescription;
+
     .line 15
+    iput-object p1, p0, Lt4j;->_bootstrapReencryptionData:Lcom/snap/tiv/TivBootstrapReencryptionData;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DDLjava/lang/String;Ljava/lang/String;Lcom/snap/tiv/TivDeviceData;DZLcom/snap/tiv/TivTransactionDescription;Lcom/snap/tiv/TivBootstrapReencryptionData;)V
+    .locals 0
+
+    .line 16
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    iput-object p1, p0, Lt4j;->_userId:Ljava/lang/String;
+
+    .line 18
+    iput-object p2, p0, Lt4j;->_username:Ljava/lang/String;
+
+    .line 19
+    iput-object p3, p0, Lt4j;->_avatarId:Ljava/lang/String;
+
+    .line 20
+    iput-object p4, p0, Lt4j;->_transactionId:Ljava/lang/String;
+
+    .line 21
+    iput-object p5, p0, Lt4j;->_broadcastId:Ljava/lang/String;
+
+    .line 22
+    iput-wide p6, p0, Lt4j;->_requestTime:D
+
+    .line 23
+    iput-wide p8, p0, Lt4j;->_expirationTime:D
+
+    .line 24
+    iput-object p10, p0, Lt4j;->_city:Ljava/lang/String;
+
+    .line 25
+    iput-object p11, p0, Lt4j;->_country:Ljava/lang/String;
+
+    .line 26
+    iput-object p12, p0, Lt4j;->_deviceData:Lcom/snap/tiv/TivDeviceData;
+
+    .line 27
+    iput-wide p13, p0, Lt4j;->_transactionType:D
+
+    .line 28
+    iput-boolean p15, p0, Lt4j;->_isExpiredOnClient:Z
+
+    move-object/from16 p1, p16
+
+    .line 29
+    iput-object p1, p0, Lt4j;->_transactionDescription:Lcom/snap/tiv/TivTransactionDescription;
+
+    move-object/from16 p1, p17
+
+    .line 30
+    iput-object p1, p0, Lt4j;->_bootstrapReencryptionData:Lcom/snap/tiv/TivBootstrapReencryptionData;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public c(LAK3;Ljava/util/Set;)V
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    new-array v1, v0, [B
-
-    .line 3
-    .line 4
-    iget-object v2, p0, Lt4j;->p:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 7
-    .line 8
-    .line 9
-    const/4 v0, 0x3
-
-    .line 10
-    iget-object v2, p0, Lt4j;->n:Ljava/lang/String;
-
-    .line 11
-    .line 12
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 13
-    .line 14
-    .line 15
-    const/4 v0, 0x4
-
-    .line 16
-    iget-object v2, p0, LP4j;->l:LFZ7;
-
-    .line 17
-    .line 18
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 19
-    .line 20
-    .line 21
-    const/4 v0, 0x5
-
-    .line 22
-    iget-object v2, p0, Lt4j;->r:Ljava/lang/Boolean;
-
-    .line 23
-    .line 24
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 25
-    .line 26
-    .line 27
-    const/4 v0, 0x7
-
-    .line 28
-    iget-object v2, p0, LP4j;->j:Ljava/lang/String;
-
-    .line 29
-    .line 30
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 31
-    .line 32
-    .line 33
-    const/16 v0, 0x8
-
-    .line 34
-    .line 35
-    iget-object v2, p0, LP4j;->k:LVce;
-
-    .line 36
-    .line 37
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 38
-    .line 39
-    .line 40
-    const/16 v0, 0x9
-
-    .line 41
-    .line 42
-    iget-object v2, p0, Lt4j;->q:Ljava/lang/String;
-
-    .line 43
-    .line 44
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const/16 v0, 0xa
-
-    .line 48
-    .line 49
-    iget-object v2, p0, Lt4j;->o:LK4j;
-
-    .line 50
-    .line 51
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 52
-    .line 53
-    .line 54
-    const/16 v0, 0xb
-
-    .line 55
-    .line 56
-    iget-object v2, p0, LP4j;->m:Ljava/lang/Boolean;
-
-    .line 57
-    .line 58
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 59
-    .line 60
-    .line 61
-    const/16 v0, 0xc
-
-    .line 62
-    .line 63
-    iget-object v2, p0, Lt4j;->s:Ljava/lang/Long;
-
-    .line 64
-    .line 65
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 66
-    .line 67
-    .line 68
-    invoke-virtual {p1, v1}, LAK3;->m([B)V
-
-    .line 69
-    .line 70
-    .line 71
-    return-void
-.end method
-
-.method public d()I
+.method public final a()Ljava/lang/String;
     .locals 1
 
     .line 1
-    const/16 v0, 0x97e
+    iget-object v0, p0, Lt4j;->_broadcastId:Ljava/lang/String;
 
     .line 2
     .line 3
-    return v0
+    return-object v0
 .end method
 
-.method public e(Ljava/util/Map;)I
-    .locals 3
+.method public final b()Ljava/lang/String;
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1}, LP4j;->e(Ljava/util/Map;)I
+    iget-object v0, p0, Lt4j;->_transactionId:Ljava/lang/String;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    return-object v0
+.end method
 
-    .line 5
-    const-string v1, "action_menu_session_id"
+.method public final c(Ljava/lang/String;)V
+    .locals 0
 
-    .line 6
-    .line 7
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    iput-object p1, p0, Lt4j;->_avatarId:Ljava/lang/String;
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v1
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 11
-    check-cast v1, Ljava/lang/String;
+.method public final d(Lcom/snap/tiv/TivBootstrapReencryptionData;)V
+    .locals 0
 
-    .line 12
-    .line 13
-    iput-object v1, p0, Lt4j;->p:Ljava/lang/String;
+    .line 1
+    iput-object p1, p0, Lt4j;->_bootstrapReencryptionData:Lcom/snap/tiv/TivBootstrapReencryptionData;
 
-    .line 14
-    .line 15
-    if-eqz v1, :cond_0
-
-    .line 16
-    .line 17
-    add-int/lit8 v0, v0, 0x1
-
-    .line 18
-    .line 19
-    :cond_0
-    const-string v1, "action_name"
-
-    .line 20
-    .line 21
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v1
-
-    .line 25
-    check-cast v1, Ljava/lang/String;
-
-    .line 26
-    .line 27
-    iput-object v1, p0, Lt4j;->n:Ljava/lang/String;
-
-    .line 28
-    .line 29
-    if-eqz v1, :cond_1
-
-    .line 30
-    .line 31
-    add-int/lit8 v0, v0, 0x1
-
-    .line 32
-    .line 33
-    :cond_1
-    const-string v1, "has_bitmoji_installed"
-
-    .line 34
-    .line 35
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v1
-
-    .line 39
-    check-cast v1, Ljava/lang/Boolean;
-
-    .line 40
-    .line 41
-    iput-object v1, p0, Lt4j;->r:Ljava/lang/Boolean;
-
-    .line 42
-    .line 43
-    if-eqz v1, :cond_2
-
-    .line 44
-    .line 45
-    add-int/lit8 v0, v0, 0x1
-
-    .line 46
-    .line 47
-    :cond_2
-    const-string v1, "item_pos"
-
-    .line 48
-    .line 49
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v1
-
-    .line 53
-    check-cast v1, Ljava/lang/Long;
-
-    .line 54
-    .line 55
-    iput-object v1, p0, Lt4j;->s:Ljava/lang/Long;
-
-    .line 56
-    .line 57
-    if-eqz v1, :cond_3
-
-    .line 58
-    .line 59
-    add-int/lit8 v0, v0, 0x1
-
-    .line 60
-    .line 61
-    :cond_3
-    const-string v1, "profile_action_name"
-
-    .line 62
-    .line 63
-    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    .line 64
-    .line 65
-    .line 66
-    move-result v2
-
-    .line 67
-    if-eqz v2, :cond_5
-
-    .line 68
-    .line 69
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v1
-
-    .line 73
-    instance-of v2, v1, Ljava/lang/String;
-
-    .line 74
-    .line 75
-    if-eqz v2, :cond_4
-
-    .line 76
-    .line 77
-    check-cast v1, Ljava/lang/String;
-
-    .line 78
-    .line 79
-    invoke-static {v1}, LK4j;->valueOf(Ljava/lang/String;)LK4j;
-
-    .line 80
-    .line 81
-    .line 82
-    move-result-object v1
-
-    .line 83
-    iput-object v1, p0, Lt4j;->o:LK4j;
-
-    .line 84
-    .line 85
-    goto :goto_0
-
-    .line 86
-    :cond_4
-    check-cast v1, LK4j;
-
-    .line 87
-    .line 88
-    iput-object v1, p0, Lt4j;->o:LK4j;
-
-    .line 89
-    .line 90
-    :goto_0
-    add-int/lit8 v0, v0, 0x1
-
-    .line 91
-    .line 92
-    :cond_5
-    const-string v1, "source_page_type"
-
-    .line 93
-    .line 94
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object p1
-
-    .line 98
-    check-cast p1, Ljava/lang/String;
-
-    .line 99
-    .line 100
-    iput-object p1, p0, Lt4j;->q:Ljava/lang/String;
-
-    .line 101
-    .line 102
-    if-eqz p1, :cond_6
-
-    .line 103
-    .line 104
-    add-int/lit8 v0, v0, 0x1
-
-    .line 105
-    .line 106
-    :cond_6
-    return v0
+    .line 2
+    .line 3
+    return-void
 .end method

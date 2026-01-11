@@ -1,14 +1,13 @@
-.class public abstract LWdg;
-.super Ljava/lang/Object;
+.class public final synthetic LWdg;
+.super LG88;
 .source "SourceFile"
+
+# interfaces
+.implements Lv88;
 
 
 # static fields
-.field public static final a:Ljava/util/Set;
-
-.field public static final b:Ljava/util/Set;
-
-.field public static final c:Ljava/util/Set;
+.field public static final f0:LWdg;
 
 
 # direct methods
@@ -16,164 +15,215 @@
     .locals 6
 
     .line 1
-    const/4 v0, 0x4
+    new-instance v0, LWdg;
 
     .line 2
-    new-array v0, v0, [LEdg;
-
     .line 3
-    .line 4
-    sget-object v1, LEdg;->t:LEdg;
+    const-string v5, "<init>(JLjava/lang/String;Ljava/lang/String;Lcom/snap/core/model/Username;Lcom/snap/core/db/column/Friendmojis;Ljava/lang/String;Ljava/lang/Integer;Lcom/snap/core/db/column/FriendLinkType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Lcom/snap/core/db/column/CalendarDate;Ljava/lang/Long;ZLjava/lang/Long;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)V"
 
+    .line 4
     .line 5
-    .line 6
     const/4 v2, 0x0
 
+    .line 6
+    const/16 v1, 0x12
+
     .line 7
-    aput-object v1, v0, v2
-
     .line 8
+    const-class v3, LSP7;
+
     .line 9
-    sget-object v1, LEdg;->a:LEdg;
-
     .line 10
-    .line 11
-    const/4 v3, 0x1
+    const-string v4, "<init>"
 
+    .line 11
     .line 12
-    aput-object v1, v0, v3
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13
     .line 14
-    sget-object v1, LEdg;->b:LEdg;
-
     .line 15
-    .line 16
-    const/4 v4, 0x2
+    sput-object v0, LWdg;->f0:LWdg;
 
+    .line 16
     .line 17
-    aput-object v1, v0, v4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final G(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 21
+
+    .line 1
+    move-object/from16 v0, p1
+
+    .line 2
+    .line 3
+    check-cast v0, Ljava/lang/Number;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-wide v2
+
+    .line 9
+    move-object/from16 v13, p2
+
+    .line 10
+    .line 11
+    check-cast v13, Ljava/lang/String;
+
+    .line 12
+    .line 13
+    move-object/from16 v14, p3
+
+    .line 14
+    .line 15
+    check-cast v14, Ljava/lang/String;
+
+    .line 16
+    .line 17
+    move-object/from16 v7, p4
 
     .line 18
     .line 19
-    sget-object v1, LEdg;->X:LEdg;
+    check-cast v7, LsPj;
 
     .line 20
     .line 21
-    const/4 v5, 0x3
+    move-object/from16 v6, p5
 
     .line 22
-    aput-object v1, v0, v5
-
     .line 23
-    .line 24
-    invoke-static {v0}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
+    check-cast v6, LR08;
 
+    .line 24
     .line 25
+    move-object/from16 v15, p6
+
     .line 26
     .line 27
-    move-result-object v0
+    check-cast v15, Ljava/lang/String;
 
     .line 28
-    sput-object v0, LWdg;->a:Ljava/util/Set;
-
     .line 29
+    move-object/from16 v8, p7
+
     .line 30
-    const-class v0, LObg;
-
     .line 31
-    .line 32
-    invoke-static {v0}, LsJe;->a(Ljava/lang/Class;)Lc23;
+    check-cast v8, Ljava/lang/Integer;
 
+    .line 32
     .line 33
+    move-object/from16 v5, p8
+
     .line 34
     .line 35
-    move-result-object v0
+    check-cast v5, LfT7;
 
     .line 36
-    const-class v1, LAbg;
-
     .line 37
-    .line 38
-    invoke-static {v1}, LsJe;->a(Ljava/lang/Class;)Lc23;
+    move-object/from16 v16, p9
 
+    .line 38
     .line 39
+    check-cast v16, Ljava/lang/String;
+
     .line 40
     .line 41
-    move-result-object v1
+    move-object/from16 v17, p10
 
     .line 42
-    new-array v5, v4, [LjC9;
-
     .line 43
+    check-cast v17, Ljava/lang/String;
+
     .line 44
-    aput-object v0, v5, v2
-
     .line 45
+    move-object/from16 v10, p11
+
     .line 46
-    aput-object v1, v5, v3
-
     .line 47
-    .line 48
-    invoke-static {v5}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
+    check-cast v10, Ljava/lang/Long;
 
+    .line 48
     .line 49
+    move-object/from16 v4, p12
+
     .line 50
     .line 51
-    move-result-object v0
+    check-cast v4, LAO1;
 
     .line 52
-    sput-object v0, LWdg;->b:Ljava/util/Set;
-
     .line 53
+    move-object/from16 v11, p13
+
     .line 54
-    const-class v0, LGbg;
-
     .line 55
-    .line 56
-    invoke-static {v0}, LsJe;->a(Ljava/lang/Class;)Lc23;
+    check-cast v11, Ljava/lang/Long;
 
+    .line 56
     .line 57
+    move-object/from16 v0, p14
+
     .line 58
     .line 59
-    move-result-object v0
+    check-cast v0, Ljava/lang/Boolean;
 
     .line 60
-    const-class v1, LNbg;
-
     .line 61
-    .line 62
-    invoke-static {v1}, LsJe;->a(Ljava/lang/Class;)Lc23;
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 62
     .line 63
     .line 64
+    move-result v20
+
     .line 65
-    move-result-object v1
+    move-object/from16 v12, p15
 
     .line 66
-    new-array v4, v4, [LjC9;
-
     .line 67
+    check-cast v12, Ljava/lang/Long;
+
     .line 68
-    aput-object v0, v4, v2
-
     .line 69
+    move-object/from16 v18, p16
+
     .line 70
-    aput-object v1, v4, v3
-
     .line 71
-    .line 72
-    invoke-static {v4}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
+    check-cast v18, Ljava/lang/String;
 
+    .line 72
     .line 73
+    move-object/from16 v9, p17
+
     .line 74
     .line 75
-    move-result-object v0
+    check-cast v9, Ljava/lang/Integer;
 
     .line 76
-    sput-object v0, LWdg;->c:Ljava/util/Set;
-
     .line 77
+    move-object/from16 v19, p18
+
     .line 78
-    return-void
+    .line 79
+    check-cast v19, Ljava/lang/String;
+
+    .line 80
+    .line 81
+    new-instance v1, LSP7;
+
+    .line 82
+    .line 83
+    invoke-direct/range {v1 .. v20}, LSP7;-><init>(JLAO1;LfT7;LR08;LsPj;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    .line 84
+    .line 85
+    .line 86
+    return-object v1
 .end method

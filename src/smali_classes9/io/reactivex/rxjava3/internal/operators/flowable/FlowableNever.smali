@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 1
 
     .line 1
@@ -60,7 +60,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 4
     .line 5

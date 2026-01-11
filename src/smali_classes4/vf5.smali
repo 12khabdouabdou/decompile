@@ -1,255 +1,379 @@
-.class public final enum Lvf5;
-.super Ljava/lang/Enum;
+.class public final Lvf5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
-# static fields
-.field public static final enum X:Lvf5;
 
-.field public static final enum Y:Lvf5;
+# instance fields
+.field public final synthetic X:Ljava/lang/Object;
 
-.field public static final enum Z:Lvf5;
+.field public final synthetic Y:Ljava/lang/Object;
 
-.field public static final enum a:Lvf5;
+.field public final synthetic Z:Ljava/lang/Object;
 
-.field public static final enum b:Lvf5;
+.field public final synthetic a:I
 
-.field public static final enum c:Lvf5;
+.field public final synthetic b:J
 
-.field public static final synthetic e0:[Lvf5;
+.field public final synthetic c:J
 
-.field public static final enum t:Lvf5;
+.field public final synthetic e0:Ljava/io/Serializable;
+
+.field public final synthetic f0:Ljava/lang/Object;
+
+.field public final synthetic t:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 15
+.method public constructor <init>(JJLxf5;LnN0;LBDi;ZLof5;Lzf5;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lvf5;->a:I
 
     .line 1
-    const/4 v0, 0x6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    const/4 v1, 0x5
+    iput-wide p1, p0, Lvf5;->b:J
 
-    .line 3
-    const/4 v2, 0x4
+    iput-wide p3, p0, Lvf5;->c:J
 
-    .line 4
-    const/4 v3, 0x3
+    iput-object p5, p0, Lvf5;->X:Ljava/lang/Object;
 
-    .line 5
-    const/4 v4, 0x2
+    iput-object p6, p0, Lvf5;->Y:Ljava/lang/Object;
 
-    .line 6
-    const/4 v5, 0x1
+    iput-object p7, p0, Lvf5;->Z:Ljava/lang/Object;
 
-    .line 7
-    const/4 v6, 0x0
+    iput-boolean p8, p0, Lvf5;->t:Z
 
-    .line 8
-    new-instance v7, Lvf5;
+    iput-object p9, p0, Lvf5;->e0:Ljava/io/Serializable;
 
-    .line 9
-    .line 10
-    const-string v8, "SNAPCHAT"
+    iput-object p10, p0, Lvf5;->f0:Ljava/lang/Object;
 
-    .line 11
-    .line 12
-    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v7, Lvf5;->a:Lvf5;
-
-    .line 16
-    .line 17
-    new-instance v8, Lvf5;
-
-    .line 18
-    .line 19
-    const-string v9, "MAP"
-
-    .line 20
-    .line 21
-    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 22
-    .line 23
-    .line 24
-    sput-object v8, Lvf5;->b:Lvf5;
-
-    .line 25
-    .line 26
-    new-instance v9, Lvf5;
-
-    .line 27
-    .line 28
-    const-string v10, "STORY"
-
-    .line 29
-    .line 30
-    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 31
-    .line 32
-    .line 33
-    sput-object v9, Lvf5;->c:Lvf5;
-
-    .line 34
-    .line 35
-    new-instance v10, Lvf5;
-
-    .line 36
-    .line 37
-    const-string v11, "LENS"
-
-    .line 38
-    .line 39
-    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 40
-    .line 41
-    .line 42
-    sput-object v10, Lvf5;->t:Lvf5;
-
-    .line 43
-    .line 44
-    new-instance v11, Lvf5;
-
-    .line 45
-    .line 46
-    const-string v12, "CONTENT"
-
-    .line 47
-    .line 48
-    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 49
-    .line 50
-    .line 51
-    sput-object v11, Lvf5;->X:Lvf5;
-
-    .line 52
-    .line 53
-    new-instance v12, Lvf5;
-
-    .line 54
-    .line 55
-    const-string v13, "SHARE"
-
-    .line 56
-    .line 57
-    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 58
-    .line 59
-    .line 60
-    sput-object v12, Lvf5;->Y:Lvf5;
-
-    .line 61
-    .line 62
-    new-instance v13, Lvf5;
-
-    .line 63
-    .line 64
-    const-string v14, "UNKNOWN"
-
-    .line 65
-    .line 66
-    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v13, Lvf5;->Z:Lvf5;
-
-    .line 70
-    .line 71
-    const/4 v14, 0x7
-
-    .line 72
-    new-array v14, v14, [Lvf5;
-
-    .line 73
-    .line 74
-    aput-object v7, v14, v6
-
-    .line 75
-    .line 76
-    aput-object v8, v14, v5
-
-    .line 77
-    .line 78
-    aput-object v9, v14, v4
-
-    .line 79
-    .line 80
-    aput-object v10, v14, v3
-
-    .line 81
-    .line 82
-    aput-object v11, v14, v2
-
-    .line 83
-    .line 84
-    aput-object v12, v14, v1
-
-    .line 85
-    .line 86
-    aput-object v13, v14, v0
-
-    .line 87
-    .line 88
-    sput-object v14, Lvf5;->e0:[Lvf5;
-
-    .line 89
-    .line 90
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lvf5;
+.method public constructor <init>(LmSb;Ljava/util/List;LKOd;JJLjava/util/ArrayList;LvZ3;Z)V
     .locals 1
 
-    .line 1
-    const-class v0, Lvf5;
+    const/4 v0, 0x1
+
+    iput v0, p0, Lvf5;->a:I
+
+    sget-object v0, LVRb;->Y:LMRb;
 
     .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
+    iput-object p1, p0, Lvf5;->X:Ljava/lang/Object;
 
-    .line 7
-    check-cast p0, Lvf5;
+    iput-object p2, p0, Lvf5;->Y:Ljava/lang/Object;
 
-    .line 8
-    .line 9
-    return-object p0
+    iput-object p3, p0, Lvf5;->Z:Ljava/lang/Object;
+
+    iput-wide p4, p0, Lvf5;->b:J
+
+    iput-wide p6, p0, Lvf5;->c:J
+
+    iput-object p8, p0, Lvf5;->e0:Ljava/io/Serializable;
+
+    iput-object p9, p0, Lvf5;->f0:Ljava/lang/Object;
+
+    iput-boolean p10, p0, Lvf5;->t:Z
+
+    return-void
 .end method
 
-.method public static values()[Lvf5;
-    .locals 1
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 21
 
     .line 1
-    sget-object v0, Lvf5;->e0:[Lvf5;
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    iget-object v1, v0, Lvf5;->Z:Ljava/lang/Object;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    iget-object v2, v0, Lvf5;->Y:Ljava/lang/Object;
 
+    .line 6
     .line 7
-    check-cast v0, [Lvf5;
+    iget-object v3, v0, Lvf5;->f0:Ljava/lang/Object;
 
     .line 8
     .line 9
-    return-object v0
+    iget-object v4, v0, Lvf5;->e0:Ljava/io/Serializable;
+
+    .line 10
+    .line 11
+    iget-object v5, v0, Lvf5;->X:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    iget v6, v0, Lvf5;->a:I
+
+    .line 14
+    .line 15
+    packed-switch v6, :pswitch_data_0
+
+    .line 16
+    .line 17
+    .line 18
+    move-object/from16 v10, p1
+
+    .line 19
+    .line 20
+    check-cast v10, LdRf;
+
+    .line 21
+    .line 22
+    new-instance v7, LlSb;
+
+    .line 23
+    .line 24
+    move-object v8, v5
+
+    .line 25
+    check-cast v8, LmSb;
+
+    .line 26
+    .line 27
+    sget-object v5, LVRb;->Y:LMRb;
+
+    .line 28
+    .line 29
+    move-object/from16 v16, v4
+
+    .line 30
+    .line 31
+    check-cast v16, Ljava/util/ArrayList;
+
+    .line 32
+    .line 33
+    move-object/from16 v17, v3
+
+    .line 34
+    .line 35
+    check-cast v17, LvZ3;
+
+    .line 36
+    .line 37
+    iget-boolean v3, v0, Lvf5;->t:Z
+
+    .line 38
+    .line 39
+    move-object v9, v2
+
+    .line 40
+    check-cast v9, Ljava/util/List;
+
+    .line 41
+    .line 42
+    move-object v11, v1
+
+    .line 43
+    check-cast v11, LKOd;
+
+    .line 44
+    .line 45
+    iget-wide v12, v0, Lvf5;->b:J
+
+    .line 46
+    .line 47
+    iget-wide v14, v0, Lvf5;->c:J
+
+    .line 48
+    .line 49
+    move/from16 v18, v3
+
+    .line 50
+    .line 51
+    invoke-direct/range {v7 .. v18}, LlSb;-><init>(LmSb;Ljava/util/List;LdRf;LKOd;JJLjava/util/ArrayList;LvZ3;Z)V
+
+    .line 52
+    .line 53
+    .line 54
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 55
+    .line 56
+    invoke-direct {v1, v7}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 57
+    .line 58
+    .line 59
+    return-object v1
+
+    .line 60
+    :pswitch_0
+    move-object/from16 v6, p1
+
+    .line 61
+    .line 62
+    check-cast v6, Ljava/lang/Number;
+
+    .line 63
+    .line 64
+    invoke-virtual {v6}, Ljava/lang/Number;->longValue()J
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-wide v6
+
+    .line 68
+    iget-wide v8, v0, Lvf5;->c:J
+
+    .line 69
+    .line 70
+    iget-wide v10, v0, Lvf5;->b:J
+
+    .line 71
+    .line 72
+    sub-long v8, v10, v8
+
+    .line 73
+    .line 74
+    move-object v15, v2
+
+    .line 75
+    check-cast v15, LnN0;
+
+    .line 76
+    .line 77
+    move-object v14, v1
+
+    .line 78
+    check-cast v14, LBDi;
+
+    .line 79
+    .line 80
+    cmp-long v1, v8, v6
+
+    .line 81
+    .line 82
+    if-gez v1, :cond_0
+
+    .line 83
+    .line 84
+    sget-object v12, LRLd;->H1:LRLd;
+
+    .line 85
+    .line 86
+    sget-object v13, LRLd;->I1:LRLd;
+
+    .line 87
+    .line 88
+    sget-object v18, Layd;->t:Layd;
+
+    .line 89
+    .line 90
+    iget-boolean v1, v0, Lvf5;->t:Z
+
+    .line 91
+    .line 92
+    check-cast v5, Lxf5;
+
+    .line 93
+    .line 94
+    iget-object v14, v14, LBDi;->a:LNDi;
+
+    .line 95
+    .line 96
+    move-wide/from16 v19, v10
+
+    .line 97
+    .line 98
+    move-object v11, v15
+
+    .line 99
+    move-wide/from16 v15, v19
+
+    .line 100
+    .line 101
+    move/from16 v17, v1
+
+    .line 102
+    .line 103
+    move-object v10, v5
+
+    .line 104
+    invoke-virtual/range {v10 .. v18}, Lxf5;->b(LnN0;LRLd;LRLd;LNDi;JZLayd;)V
+
+    .line 105
+    .line 106
+    .line 107
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 108
+    .line 109
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 110
+    .line 111
+    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
+    .line 112
+    .line 113
+    .line 114
+    goto :goto_0
+
+    .line 115
+    :cond_0
+    move-object v12, v5
+
+    .line 116
+    check-cast v12, Lxf5;
+
+    .line 117
+    .line 118
+    move-object v13, v4
+
+    .line 119
+    check-cast v13, Lof5;
+
+    .line 120
+    .line 121
+    move-object/from16 v16, v3
+
+    .line 122
+    .line 123
+    check-cast v16, Lzf5;
+
+    .line 124
+    .line 125
+    iget-boolean v1, v0, Lvf5;->t:Z
+
+    .line 126
+    .line 127
+    move/from16 v17, v1
+
+    .line 128
+    .line 129
+    invoke-virtual/range {v12 .. v17}, Lxf5;->c(Lof5;LBDi;LnN0;Lzf5;Z)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 130
+    .line 131
+    .line 132
+    move-result-object v2
+
+    .line 133
+    :goto_0
+    return-object v2
+
+    .line 134
+    nop
+
+    .line 135
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

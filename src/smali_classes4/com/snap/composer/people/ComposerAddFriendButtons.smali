@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcB3;
+.implements LCE3;
 
 
 # annotations
@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final Companion:Lht3;
+.field public static final Companion:Liw3;
 
 .field private static final TAG:Ljava/lang/String; = "ComposerAddFriendButtons"
 
@@ -20,13 +20,13 @@
 # instance fields
 .field private final addButton:Lcom/snap/ui/view/LoadingSpinnerButtonView;
 
-.field private final addSourceType:LHA;
+.field private final addSourceType:LqC;
 
-.field private final callsite:LWm0;
+.field private final callsite:Lnp0;
 
 .field private final chatButton:Lcom/snap/component/button/SnapButtonView;
 
-.field private final friendRelationshipChanger:LiR7;
+.field private final friendRelationshipChanger:LnX7;
 
 .field private isSubscriptionStateUpdating:Z
 
@@ -46,25 +46,25 @@
     .end annotation
 .end field
 
-.field private final pageLauncher:LJ7d;
+.field private final pageLauncher:LYmd;
 
 .field private final postAddButtonsContainer:Landroid/view/View;
 
 .field private final root:Landroid/view/View;
 
-.field private final scheduler:Lzre;
+.field private final scheduler:LlJe;
 
 .field private final snapButton:Lcom/snap/component/button/SnapButtonView;
 
-.field private final subscriptionDataSource:Lj7i;
+.field private final subscriptionDataSource:Lzvi;
 
-.field private final timber:Lrn0;
+.field private final timber:LJp0;
 
-.field private userInfo:Lqv;
+.field private userInfo:LYw;
 
 .field private final viewDisposables:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field private final viewSource:LbV3;
+.field private final viewSource:LvZ3;
 
 
 # direct methods
@@ -72,7 +72,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lht3;
+    new-instance v0, Liw3;
 
     .line 2
     .line 3
@@ -81,33 +81,33 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->Companion:Lht3;
+    sput-object v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->Companion:Liw3;
 
     .line 7
     .line 8
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Lnwf;LiR7;Lj7i;LJ7d;LHA;Lan0;LbV3;Z)V
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;LyPf;LnX7;Lzvi;LYmd;LqC;Lrp0;LvZ3;Z)V
     .locals 0
 
     .line 3
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    iput-object p4, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->friendRelationshipChanger:LiR7;
+    iput-object p4, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->friendRelationshipChanger:LnX7;
 
     .line 5
-    iput-object p5, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->subscriptionDataSource:Lj7i;
+    iput-object p5, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->subscriptionDataSource:Lzvi;
 
     .line 6
-    iput-object p6, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->pageLauncher:LJ7d;
+    iput-object p6, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->pageLauncher:LYmd;
 
     .line 7
-    iput-object p7, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->addSourceType:LHA;
+    iput-object p7, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->addSourceType:LqC;
 
     .line 8
-    iput-object p9, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->viewSource:LbV3;
+    iput-object p9, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->viewSource:LvZ3;
 
     .line 9
     new-instance p2, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
@@ -117,28 +117,28 @@
     iput-object p2, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->viewDisposables:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 10
-    new-instance p2, LWm0;
+    new-instance p2, Lnp0;
 
     const-string p3, "ComposerAddFriendButtons"
 
-    invoke-direct {p2, p8, p3}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {p2, p8, p3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 11
-    iput-object p2, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->callsite:LWm0;
+    iput-object p2, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->callsite:Lnp0;
 
     .line 12
-    new-instance p3, LBre;
+    new-instance p3, LnJe;
 
-    invoke-direct {p3, p2}, LBre;-><init>(LWm0;)V
+    invoke-direct {p3, p2}, LnJe;-><init>(Lnp0;)V
 
     .line 13
-    iput-object p3, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:Lzre;
+    iput-object p3, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:LlJe;
 
     .line 14
-    sget-object p2, Lrn0;->a:Lrn0;
+    sget-object p2, LJp0;->a:LJp0;
 
     .line 15
-    iput-object p2, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->timber:Lrn0;
+    iput-object p2, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->timber:LJp0;
 
     .line 16
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -153,7 +153,7 @@
 
     check-cast p2, Landroid/view/LayoutInflater;
 
-    const p3, 0x7f0e003c
+    const p3, 0x7f0e003d
 
     .line 17
     invoke-virtual {p2, p3, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -162,7 +162,7 @@
 
     iput-object p2, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->root:Landroid/view/View;
 
-    const p3, 0x7f0b00f0
+    const p3, 0x7f0b012a
 
     .line 18
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -173,7 +173,7 @@
 
     iput-object p3, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->addButton:Lcom/snap/ui/view/LoadingSpinnerButtonView;
 
-    const p4, 0x7f0b0482
+    const p4, 0x7f0b050b
 
     .line 19
     invoke-virtual {p2, p4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -184,7 +184,7 @@
 
     iput-object p4, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->chatButton:Lcom/snap/component/button/SnapButtonView;
 
-    const p5, 0x7f0b15f2
+    const p5, 0x7f0b172e
 
     .line 20
     invoke-virtual {p2, p5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -195,7 +195,7 @@
 
     iput-object p5, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->snapButton:Lcom/snap/component/button/SnapButtonView;
 
-    const p6, 0x7f0b111b
+    const p6, 0x7f0b124a
 
     .line 21
     invoke-virtual {p2, p6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -205,11 +205,11 @@
     iput-object p2, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->postAddButtonsContainer:Landroid/view/View;
 
     .line 22
-    new-instance p2, Lgt3;
+    new-instance p2, Lhw3;
 
     const/4 p6, 0x0
 
-    invoke-direct {p2, p0, p6}, Lgt3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
+    invoke-direct {p2, p0, p6}, Lhw3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
 
     invoke-virtual {p3, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -220,7 +220,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f06023a
+    const p2, 0x7f060296
 
     .line 24
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getColor(I)I
@@ -229,7 +229,7 @@
 
     invoke-virtual {p3, p2}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setUncheckedBgColor(I)V
 
-    const p2, 0x7f060314
+    const p2, 0x7f06039c
 
     .line 25
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getColor(I)I
@@ -239,47 +239,47 @@
     invoke-virtual {p3, p1}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setUncheckedTextColor(I)V
 
     .line 26
-    sget-object p1, LAzg;->j0:LAzg;
+    sget-object p1, LMUg;->j0:LMUg;
 
-    invoke-virtual {p4, p1}, Lcom/snap/component/button/SnapButtonView;->f(LAzg;)V
+    invoke-virtual {p4, p1}, Lcom/snap/component/button/SnapButtonView;->f(LMUg;)V
 
     .line 27
-    invoke-virtual {p5, p1}, Lcom/snap/component/button/SnapButtonView;->f(LAzg;)V
+    invoke-virtual {p5, p1}, Lcom/snap/component/button/SnapButtonView;->f(LMUg;)V
 
     .line 28
     :cond_0
-    new-instance p1, Lgt3;
+    new-instance p1, Lhw3;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, Lgt3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
+    invoke-direct {p1, p0, p2}, Lhw3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
 
     invoke-virtual {p5, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 29
-    new-instance p1, Lgt3;
+    new-instance p1, Lhw3;
 
     const/4 p2, 0x2
 
-    invoke-direct {p1, p0, p2}, Lgt3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
+    invoke-direct {p1, p0, p2}, Lhw3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
 
     invoke-virtual {p4, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 30
-    iget-object p1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object p1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     if-nez p1, :cond_1
 
     .line 31
-    sget-object p1, LHua;->b:LHua;
+    sget-object p1, LRGa;->b:LRGa;
 
-    invoke-virtual {p3, p1}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {p3, p1}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     :cond_1
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;Lnwf;LiR7;Lj7i;LJ7d;LHA;Lan0;LbV3;ZILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;LyPf;LnX7;Lzvi;LYmd;LqC;Lrp0;LvZ3;ZILex5;)V
     .locals 13
 
     move/from16 v0, p11
@@ -289,7 +289,7 @@
     if-eqz v1, :cond_0
 
     .line 1
-    sget-object v1, LHA;->s0:LHA;
+    sget-object v1, LqC;->s0:LqC;
 
     move-object v9, v1
 
@@ -347,7 +347,7 @@
 
     .line 2
     :goto_3
-    invoke-direct/range {v2 .. v12}, Lcom/snap/composer/people/ComposerAddFriendButtons;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;Lnwf;LiR7;Lj7i;LJ7d;LHA;Lan0;LbV3;Z)V
+    invoke-direct/range {v2 .. v12}, Lcom/snap/composer/people/ComposerAddFriendButtons;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;LyPf;LnX7;Lzvi;LYmd;LqC;Lrp0;LvZ3;Z)V
 
     return-void
 .end method
@@ -363,11 +363,11 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getTimber$p(Lcom/snap/composer/people/ComposerAddFriendButtons;)Lrn0;
+.method public static final synthetic access$getTimber$p(Lcom/snap/composer/people/ComposerAddFriendButtons;)LJp0;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->timber:Lrn0;
+    iget-object p0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->timber:LJp0;
 
     .line 2
     .line 3
@@ -466,7 +466,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3
@@ -477,7 +477,7 @@
     const/4 v1, 0x1
 
     .line 6
-    iget-boolean v2, v0, Lqv;->e:Z
+    iget-boolean v2, v0, LYw;->e:Z
 
     .line 7
     .line 8
@@ -485,19 +485,19 @@
 
     .line 9
     .line 10
-    iget-object v0, v0, Lqv;->b:Ljava/lang/String;
+    iget-object v0, v0, LYw;->b:Ljava/lang/String;
 
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->subscriptionDataSource:Lj7i;
+    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->subscriptionDataSource:Lzvi;
 
     .line 13
     .line 14
-    check-cast v1, Ly7i;
+    check-cast v1, LQvi;
 
     .line 15
     .line 16
-    invoke-virtual {v1, v0}, Ly7i;->e(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v1, v0}, LQvi;->e(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 17
     .line 18
@@ -505,15 +505,15 @@
     move-result-object v0
 
     .line 20
-    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:Lzre;
+    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:LlJe;
 
     .line 21
     .line 22
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 23
     .line 24
-    invoke-virtual {v1}, LBre;->d()LF06;
+    invoke-virtual {v1}, LnJe;->d()LA36;
 
     .line 25
     .line 26
@@ -530,15 +530,15 @@
     .line 31
     .line 32
     .line 33
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:Lzre;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:LlJe;
 
     .line 34
     .line 35
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 36
     .line 37
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 38
     .line 39
@@ -546,7 +546,7 @@
     move-result-object v0
 
     .line 41
-    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 42
     .line 43
@@ -558,7 +558,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 48
     .line 49
@@ -566,14 +566,14 @@
     move-result-object v0
 
     .line 51
-    new-instance v1, Lfw;
+    new-instance v1, LOx;
 
     .line 52
     .line 53
     const/4 v2, 0x1
 
     .line 54
-    invoke-direct {v1, p0, v2}, Lfw;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
+    invoke-direct {v1, p0, v2}, LOx;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
 
     .line 55
     .line 56
@@ -582,7 +582,7 @@
 
     .line 58
     .line 59
-    invoke-static {v0, v1, v2}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v0, v1, v2}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 60
     .line 61
@@ -599,7 +599,7 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object v1, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 4
     .line 5
@@ -612,15 +612,15 @@
     .line 8
     .line 9
     :cond_0
-    sget-object v2, LHua;->t:LHua;
+    sget-object v2, LRGa;->t:LRGa;
 
     .line 10
     .line 11
-    iget-boolean v3, v1, Lqv;->e:Z
+    iget-boolean v3, v1, LYw;->e:Z
 
     .line 12
     .line 13
-    iget-object v5, v1, Lqv;->b:Ljava/lang/String;
+    iget-object v5, v1, LYw;->b:Ljava/lang/String;
 
     .line 14
     .line 15
@@ -632,7 +632,7 @@
 
     .line 18
     .line 19
-    iget-boolean v4, v1, Lqv;->d:Z
+    iget-boolean v4, v1, LYw;->d:Z
 
     .line 20
     .line 21
@@ -640,17 +640,17 @@
 
     .line 22
     .line 23
-    sget-object v2, LHua;->b:LHua;
+    sget-object v2, LRGa;->b:LRGa;
 
     .line 24
     .line 25
     :cond_1
-    invoke-virtual {v3, v2}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {v3, v2}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     .line 26
     .line 27
     .line 28
-    iget-boolean v2, v1, Lqv;->d:Z
+    iget-boolean v2, v1, LYw;->d:Z
 
     .line 29
     .line 30
@@ -666,7 +666,7 @@
 
     .line 35
     .line 36
-    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 37
     .line 38
@@ -683,22 +683,22 @@
 
     .line 43
     .line 44
-    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 45
     .line 46
     .line 47
     :cond_3
     :goto_0
-    sget-object v11, LlL7;->E0:LlL7;
+    sget-object v11, LZQ7;->E0:LZQ7;
 
     .line 48
     .line 49
-    iget-object v8, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->addSourceType:LHA;
+    iget-object v8, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->addSourceType:LqC;
 
     .line 50
     .line 51
-    iget-boolean v2, v1, Lqv;->d:Z
+    iget-boolean v2, v1, LYw;->d:Z
 
     .line 52
     .line 53
@@ -709,7 +709,7 @@
 
     .line 55
     .line 56
-    sget-object v2, Lit3;->a:[I
+    sget-object v2, Ljw3;->a:[I
 
     .line 57
     .line 58
@@ -743,7 +743,7 @@
 
     .line 71
     :cond_4
-    sget-object v2, Lvn2;->c:Lvn2;
+    sget-object v2, Liq2;->c:Liq2;
 
     .line 72
     .line 73
@@ -787,11 +787,11 @@
     .line 92
     .line 93
     :goto_1
-    iget-object v4, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->viewSource:LbV3;
+    iget-object v4, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->viewSource:LvZ3;
 
     .line 94
     .line 95
-    invoke-static {v4}, Lesk;->g(LbV3;)Ljava/lang/String;
+    invoke-static {v4}, LsSk;->e(LvZ3;)Ljava/lang/String;
 
     .line 96
     .line 97
@@ -802,7 +802,7 @@
     const/4 v7, 0x4
 
     .line 100
-    invoke-static {v8, v11, v2, v4, v7}, Lesk;->f(LHA;LlL7;Ljava/lang/String;Ljava/lang/String;I)Lcom/snap/composer/people/InteractionPlacementInfo;
+    invoke-static {v8, v11, v2, v4, v7}, LsSk;->d(LqC;LZQ7;Ljava/lang/String;Ljava/lang/String;I)Lcom/snap/composer/people/InteractionPlacementInfo;
 
     .line 101
     .line 102
@@ -810,11 +810,11 @@
     move-result-object v9
 
     .line 104
-    sget-object v10, LJK7;->e0:LJK7;
+    sget-object v10, LsQ7;->e0:LsQ7;
 
     .line 105
     .line 106
-    new-instance v4, LWpj;
+    new-instance v4, LXOj;
 
     .line 107
     .line 108
@@ -831,7 +831,7 @@
 
     .line 112
     .line 113
-    invoke-direct/range {v4 .. v14}, LWpj;-><init>(Ljava/lang/String;ZLw2d;LHA;Lcom/snap/composer/people/InteractionPlacementInfo;LJK7;LlL7;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v4 .. v14}, LXOj;-><init>(Ljava/lang/String;ZLvhd;LqC;Lcom/snap/composer/people/InteractionPlacementInfo;LsQ7;LZQ7;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 114
     .line 115
@@ -840,15 +840,15 @@
 
     .line 117
     .line 118
-    iget-object v2, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->subscriptionDataSource:Lj7i;
+    iget-object v2, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->subscriptionDataSource:Lzvi;
 
     .line 119
     .line 120
-    check-cast v2, Ly7i;
+    check-cast v2, LQvi;
 
     .line 121
     .line 122
-    invoke-virtual {v2, v4}, Ly7i;->f(LA6i;)Lio/reactivex/rxjava3/core/Completable;
+    invoke-virtual {v2, v4}, LQvi;->f(LTui;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 123
     .line 124
@@ -856,15 +856,15 @@
     move-result-object v2
 
     .line 126
-    iget-object v3, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:Lzre;
+    iget-object v3, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:LlJe;
 
     .line 127
     .line 128
-    check-cast v3, LBre;
+    check-cast v3, LnJe;
 
     .line 129
     .line 130
-    invoke-virtual {v3}, LBre;->g()LF06;
+    invoke-virtual {v3}, LnJe;->g()LA36;
 
     .line 131
     .line 132
@@ -881,15 +881,15 @@
     .line 137
     .line 138
     .line 139
-    iget-object v2, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:Lzre;
+    iget-object v2, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:LlJe;
 
     .line 140
     .line 141
-    check-cast v2, LBre;
+    check-cast v2, LnJe;
 
     .line 142
     .line 143
-    invoke-virtual {v2}, LBre;->i()Lgn0;
+    invoke-virtual {v2}, LnJe;->i()Lxp0;
 
     .line 144
     .line 145
@@ -906,15 +906,15 @@
     .line 150
     .line 151
     .line 152
-    new-instance v2, Lqj3;
+    new-instance v2, LGq3;
 
     .line 153
     .line 154
-    const/16 v4, 0xa
+    const/16 v4, 0x9
 
     .line 155
     .line 156
-    invoke-direct {v2, v4, v0}, Lqj3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v4, v0}, LGq3;-><init>(ILjava/lang/Object;)V
 
     .line 157
     .line 158
@@ -928,23 +928,23 @@
     .line 162
     .line 163
     .line 164
-    new-instance v2, Ljt3;
+    new-instance v2, Lkw3;
 
     .line 165
     .line 166
-    invoke-direct {v2, v0, v1}, Ljt3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;Lqv;)V
+    invoke-direct {v2, v0, v1}, Lkw3;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;LYw;)V
 
     .line 167
     .line 168
     .line 169
-    new-instance v1, Lfw;
+    new-instance v1, LOx;
 
     .line 170
     .line 171
     const/4 v3, 0x2
 
     .line 172
-    invoke-direct {v1, v0, v3}, Lfw;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
+    invoke-direct {v1, v0, v3}, LOx;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
 
     .line 173
     .line 174
@@ -962,7 +962,7 @@
 
     .line 181
     :cond_6
-    iget-boolean v3, v1, Lqv;->d:Z
+    iget-boolean v3, v1, LYw;->d:Z
 
     .line 182
     .line 183
@@ -979,7 +979,7 @@
 
     .line 187
     .line 188
-    invoke-virtual {v3, v2}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {v3, v2}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     .line 189
     .line 190
@@ -992,25 +992,25 @@
 
     .line 194
     .line 195
-    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {v2}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 196
     .line 197
     .line 198
     :cond_8
-    iget-object v4, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->friendRelationshipChanger:LiR7;
+    iget-object v4, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->friendRelationshipChanger:LnX7;
 
     .line 199
     .line 200
-    iget-object v6, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->addSourceType:LHA;
+    iget-object v6, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->addSourceType:LqC;
 
     .line 201
     .line 202
-    sget-object v7, LJK7;->e0:LJK7;
+    sget-object v7, LsQ7;->e0:LsQ7;
 
     .line 203
     .line 204
-    sget-object v8, LlL7;->F0:LlL7;
+    sget-object v8, LZQ7;->F0:LZQ7;
 
     .line 205
     .line 206
@@ -1043,7 +1043,7 @@
 
     .line 216
     .line 217
-    invoke-static/range {v4 .. v17}, Lp0g;->a(LiR7;Ljava/lang/String;LHA;LJK7;LlL7;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/snap/composer/people/InteractionPlacementInfo;Ljava/lang/String;Ljava/lang/Integer;I)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    invoke-static/range {v4 .. v17}, LiBg;->a(LnX7;Ljava/lang/String;LqC;LsQ7;LZQ7;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/snap/composer/people/InteractionPlacementInfo;Ljava/lang/String;Ljava/lang/Integer;I)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
     .line 218
     .line 219
@@ -1051,15 +1051,15 @@
     move-result-object v2
 
     .line 221
-    iget-object v3, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:Lzre;
+    iget-object v3, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:LlJe;
 
     .line 222
     .line 223
-    check-cast v3, LBre;
+    check-cast v3, LnJe;
 
     .line 224
     .line 225
-    invoke-virtual {v3}, LBre;->g()LF06;
+    invoke-virtual {v3}, LnJe;->g()LA36;
 
     .line 226
     .line 227
@@ -1076,15 +1076,15 @@
     .line 232
     .line 233
     .line 234
-    iget-object v2, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:Lzre;
+    iget-object v2, v0, Lcom/snap/composer/people/ComposerAddFriendButtons;->scheduler:LlJe;
 
     .line 235
     .line 236
-    check-cast v2, LBre;
+    check-cast v2, LnJe;
 
     .line 237
     .line 238
-    invoke-virtual {v2}, LBre;->i()Lgn0;
+    invoke-virtual {v2}, LnJe;->i()Lxp0;
 
     .line 239
     .line 240
@@ -1101,23 +1101,23 @@
     .line 245
     .line 246
     .line 247
-    new-instance v2, Ljt3;
+    new-instance v2, Lkw3;
 
     .line 248
     .line 249
-    invoke-direct {v2, v1, v0}, Ljt3;-><init>(Lqv;Lcom/snap/composer/people/ComposerAddFriendButtons;)V
+    invoke-direct {v2, v1, v0}, Lkw3;-><init>(LYw;Lcom/snap/composer/people/ComposerAddFriendButtons;)V
 
     .line 250
     .line 251
     .line 252
-    new-instance v1, Lfw;
+    new-instance v1, LOx;
 
     .line 253
     .line 254
     const/4 v4, 0x3
 
     .line 255
-    invoke-direct {v1, v0, v4}, Lfw;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
+    invoke-direct {v1, v0, v4}, LOx;-><init>(Lcom/snap/composer/people/ComposerAddFriendButtons;I)V
 
     .line 256
     .line 257
@@ -1138,7 +1138,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3
@@ -1146,28 +1146,28 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->pageLauncher:LJ7d;
+    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->pageLauncher:LYmd;
 
     .line 6
     .line 7
-    new-instance v2, LDL2;
+    new-instance v2, LZN2;
 
     .line 8
     .line 9
-    sget-object v3, Lq0h;->j1:Lq0h;
+    sget-object v3, Lkmh;->j1:Lkmh;
 
     .line 10
     .line 11
-    iget-object v0, v0, Lqv;->b:Ljava/lang/String;
+    iget-object v0, v0, LYw;->b:Ljava/lang/String;
 
     .line 12
     .line 13
-    invoke-direct {v2, v3, v0}, LDL2;-><init>(Lq0h;Ljava/lang/String;)V
+    invoke-direct {v2, v0, v3}, LZN2;-><init>(Ljava/lang/String;Lkmh;)V
 
     .line 14
     .line 15
     .line 16
-    invoke-interface {v1, v2}, LJ7d;->b(Ljava/lang/Object;)V
+    invoke-interface {v1, v2}, LYmd;->b(Ljava/lang/Object;)V
 
     .line 17
     .line 18
@@ -1180,7 +1180,7 @@
     .locals 15
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3
@@ -1188,23 +1188,23 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->pageLauncher:LJ7d;
+    iget-object v1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->pageLauncher:LYmd;
 
     .line 6
     .line 7
-    new-instance v2, Lfoj;
+    new-instance v2, LeNj;
 
     .line 8
     .line 9
-    sget-object v5, LmPf;->p0:LmPf;
+    sget-object v5, LJ8g;->p0:LJ8g;
 
     .line 10
     .line 11
-    iget-object v3, v0, Lqv;->b:Ljava/lang/String;
+    iget-object v3, v0, LYw;->b:Ljava/lang/String;
 
     .line 12
     .line 13
-    iget-object v4, v0, Lqv;->a:Ljava/lang/String;
+    iget-object v4, v0, LYw;->a:Ljava/lang/String;
 
     .line 14
     .line 15
@@ -1215,12 +1215,12 @@
 
     .line 17
     .line 18
-    invoke-direct/range {v2 .. v7}, Lfoj;-><init>(Ljava/lang/String;Ljava/lang/String;LmPf;LcSa;I)V
+    invoke-direct/range {v2 .. v7}, LeNj;-><init>(Ljava/lang/String;Ljava/lang/String;LJ8g;LL4b;I)V
 
     .line 19
     .line 20
     .line 21
-    new-instance v0, LOte;
+    new-instance v0, LwLe;
 
     .line 22
     .line 23
@@ -1261,12 +1261,12 @@
     move-object v2, v0
 
     .line 36
-    invoke-direct/range {v2 .. v14}, LOte;-><init>(LMte;Ljava/lang/String;Laxk;LPZ1;Ljava/util/List;LPc4;ZLkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/util/List;II)V
+    invoke-direct/range {v2 .. v14}, LwLe;-><init>(LuLe;Ljava/lang/String;LuXk;Lw32;Ljava/util/List;Lmh4;ZLkotlin/jvm/functions/Function1;Ljava/lang/String;Ljava/util/List;II)V
 
     .line 37
     .line 38
     .line 39
-    invoke-interface {v1, v2}, LJ7d;->b(Ljava/lang/Object;)V
+    invoke-interface {v1, v2}, LYmd;->b(Ljava/lang/Object;)V
 
     .line 40
     .line 41
@@ -1279,7 +1279,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3
@@ -1291,7 +1291,7 @@
 
     .line 6
     :cond_0
-    iput-boolean p1, v0, Lqv;->d:Z
+    iput-boolean p1, v0, LYw;->d:Z
 
     .line 7
     .line 8
@@ -1304,7 +1304,7 @@
 
     .line 11
     .line 12
-    iget-boolean v0, v0, Lqv;->d:Z
+    iget-boolean v0, v0, LYw;->d:Z
 
     .line 13
     .line 14
@@ -1315,7 +1315,7 @@
 
     .line 16
     .line 17
-    sget-object v0, LHua;->c:LHua;
+    sget-object v0, LRGa;->c:LRGa;
 
     .line 18
     .line 19
@@ -1323,12 +1323,12 @@
 
     .line 20
     :cond_1
-    sget-object v0, LHua;->a:LHua;
+    sget-object v0, LRGa;->a:LRGa;
 
     .line 21
     .line 22
     :goto_1
-    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     .line 23
     .line 24
@@ -1341,7 +1341,7 @@
     move-result-object p1
 
     .line 29
-    instance-of v0, p1, LTy3;
+    instance-of v0, p1, LgC3;
 
     .line 30
     .line 31
@@ -1352,7 +1352,7 @@
 
     .line 33
     .line 34
-    check-cast p1, LTy3;
+    check-cast p1, LgC3;
 
     .line 35
     .line 36
@@ -1368,7 +1368,7 @@
 
     .line 39
     .line 40
-    iget-object v0, p1, LTy3;->k0:LRB3;
+    iget-object v0, p1, LgC3;->k0:LtF3;
 
     .line 41
     .line 42
@@ -1376,7 +1376,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {p1}, LTy3;->a()Z
+    invoke-virtual {p1}, LgC3;->c()Z
 
     .line 45
     .line 46
@@ -1388,7 +1388,7 @@
 
     .line 49
     .line 50
-    iget-object v0, p1, LTy3;->a:Lcom/snap/composer/context/ComposerContext;
+    iget-object v0, p1, LgC3;->a:Lcom/snap/composer/context/ComposerContext;
 
     .line 51
     .line 52
@@ -1396,11 +1396,11 @@
 
     .line 53
     .line 54
-    iget v1, p1, LTy3;->b:I
+    iget v1, p1, LgC3;->b:I
 
     .line 55
     .line 56
-    invoke-virtual {v0, v1}, Lcom/snap/composer/context/ComposerContext;->getTypedViewNodeForId(I)LRB3;
+    invoke-virtual {v0, v1}, Lcom/snap/composer/context/ComposerContext;->getTypedViewNodeForId(I)LtF3;
 
     .line 57
     .line 58
@@ -1409,12 +1409,12 @@
 
     .line 60
     :cond_3
-    iput-object v1, p1, LTy3;->k0:LRB3;
+    iput-object v1, p1, LgC3;->k0:LtF3;
 
     .line 61
     .line 62
     :cond_4
-    iget-object v1, p1, LTy3;->k0:LRB3;
+    iget-object v1, p1, LgC3;->k0:LtF3;
 
     .line 63
     .line 64
@@ -1423,7 +1423,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {v1}, LRB3;->v()V
+    invoke-virtual {v1}, LtF3;->t()V
 
     .line 67
     .line 68
@@ -1436,7 +1436,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3
@@ -1451,7 +1451,7 @@
 
     .line 7
     .line 8
-    iget-boolean v3, v0, Lqv;->e:Z
+    iget-boolean v3, v0, LYw;->e:Z
 
     .line 9
     .line 10
@@ -1459,7 +1459,7 @@
 
     .line 11
     .line 12
-    iget-boolean v0, v0, Lqv;->d:Z
+    iget-boolean v0, v0, LYw;->d:Z
 
     .line 13
     .line 14
@@ -1560,11 +1560,11 @@
     return-object v0
 .end method
 
-.method public final getUserInfo$components_composer_people_core_core()Lqv;
+.method public final getUserInfo$components_composer_people_core_core()LYw;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3
@@ -1634,7 +1634,7 @@
     return-void
 .end method
 
-.method public processTouchEvent(Landroid/view/MotionEvent;)LaB3;
+.method public processTouchEvent(Landroid/view/MotionEvent;)LAE3;
     .locals 0
 
     .line 1
@@ -1650,7 +1650,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LaB3;->a:LaB3;
+    sget-object p1, LAE3;->a:LAE3;
 
     .line 8
     .line 9
@@ -1658,7 +1658,7 @@
 
     .line 10
     :cond_0
-    sget-object p1, LaB3;->b:LaB3;
+    sget-object p1, LAE3;->b:LAE3;
 
     .line 11
     .line 12
@@ -1701,11 +1701,11 @@
     return-void
 .end method
 
-.method public final setUserInfo(Lqv;)V
+.method public final setUserInfo(LYw;)V
     .locals 2
 
     .line 1
-    iput-object p1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iput-object p1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3
@@ -1717,11 +1717,11 @@
 
     .line 6
     .line 7
-    sget-object v0, LHua;->b:LHua;
+    sget-object v0, LRGa;->b:LRGa;
 
     .line 8
     .line 9
-    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     .line 10
     .line 11
@@ -1730,7 +1730,7 @@
 
     .line 13
     :cond_0
-    iget-boolean p1, p1, Lqv;->d:Z
+    iget-boolean p1, p1, LYw;->d:Z
 
     .line 14
     .line 15
@@ -1742,11 +1742,11 @@
 
     .line 18
     .line 19
-    sget-object v0, LHua;->c:LHua;
+    sget-object v0, LRGa;->c:LRGa;
 
     .line 20
     .line 21
-    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     .line 22
     .line 23
@@ -1772,11 +1772,11 @@
 
     .line 33
     .line 34
-    sget-object v0, LHua;->a:LHua;
+    sget-object v0, LRGa;->a:LRGa;
 
     .line 35
     .line 36
-    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LHua;)V
+    invoke-virtual {p1, v0}, Lcom/snap/ui/view/LoadingSpinnerButtonView;->setButtonState(LRGa;)V
 
     .line 37
     .line 38
@@ -1800,7 +1800,7 @@
     move-result-object p1
 
     .line 49
-    instance-of v0, p1, LTy3;
+    instance-of v0, p1, LgC3;
 
     .line 50
     .line 51
@@ -1811,7 +1811,7 @@
 
     .line 53
     .line 54
-    check-cast p1, LTy3;
+    check-cast p1, LgC3;
 
     .line 55
     .line 56
@@ -1827,7 +1827,7 @@
 
     .line 59
     .line 60
-    iget-object v0, p1, LTy3;->k0:LRB3;
+    iget-object v0, p1, LgC3;->k0:LtF3;
 
     .line 61
     .line 62
@@ -1835,7 +1835,7 @@
 
     .line 63
     .line 64
-    invoke-virtual {p1}, LTy3;->a()Z
+    invoke-virtual {p1}, LgC3;->c()Z
 
     .line 65
     .line 66
@@ -1847,7 +1847,7 @@
 
     .line 69
     .line 70
-    iget-object v0, p1, LTy3;->a:Lcom/snap/composer/context/ComposerContext;
+    iget-object v0, p1, LgC3;->a:Lcom/snap/composer/context/ComposerContext;
 
     .line 71
     .line 72
@@ -1855,11 +1855,11 @@
 
     .line 73
     .line 74
-    iget v1, p1, LTy3;->b:I
+    iget v1, p1, LgC3;->b:I
 
     .line 75
     .line 76
-    invoke-virtual {v0, v1}, Lcom/snap/composer/context/ComposerContext;->getTypedViewNodeForId(I)LRB3;
+    invoke-virtual {v0, v1}, Lcom/snap/composer/context/ComposerContext;->getTypedViewNodeForId(I)LtF3;
 
     .line 77
     .line 78
@@ -1868,12 +1868,12 @@
 
     .line 80
     :cond_3
-    iput-object v1, p1, LTy3;->k0:LRB3;
+    iput-object v1, p1, LgC3;->k0:LtF3;
 
     .line 81
     .line 82
     :cond_4
-    iget-object v1, p1, LTy3;->k0:LRB3;
+    iget-object v1, p1, LgC3;->k0:LtF3;
 
     .line 83
     .line 84
@@ -1882,7 +1882,7 @@
 
     .line 85
     .line 86
-    invoke-virtual {v1}, LRB3;->v()V
+    invoke-virtual {v1}, LtF3;->t()V
 
     .line 87
     .line 88
@@ -1891,11 +1891,11 @@
     return-void
 .end method
 
-.method public final setUserInfo$components_composer_people_core_core(Lqv;)V
+.method public final setUserInfo$components_composer_people_core_core(LYw;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:Lqv;
+    iput-object p1, p0, Lcom/snap/composer/people/ComposerAddFriendButtons;->userInfo:LYw;
 
     .line 2
     .line 3

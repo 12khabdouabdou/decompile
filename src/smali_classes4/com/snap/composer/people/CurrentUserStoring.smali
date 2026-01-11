@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lmj4;
+    proxyClass = LIn4;
     schema = "\'getCurrentUser\':f|m|(f(r?:\'[0]\'))"
     typeReferences = {
-        Lij4;
+        LGn4;
     }
 .end annotation
 

@@ -3,16 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGs3;
+.implements LKv3;
 
 
 # instance fields
-.field public final a:Lake;
+.field public final a:LfS4;
+
+.field public final b:LqS4;
+
+.field public final c:LgT4;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(LgT4;LqS4;LfS4;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -20,55 +24,17 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ld05;
+    iput-object p3, p0, Lp55;->a:LfS4;
 
     .line 5
     .line 6
-    const/16 v1, 0xa
+    iput-object p2, p0, Lp55;->b:LqS4;
 
     .line 7
     .line 8
-    invoke-direct {v0, v1}, Ld05;-><init>(I)V
+    iput-object p1, p0, Lp55;->c:LgT4;
 
     .line 9
     .line 10
-    .line 11
-    invoke-static {v0}, LVr6;->b(Lake;)Lake;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    iput-object v0, p0, Lp55;->a:Lake;
-
-    .line 16
-    .line 17
     return-void
-.end method
-
-
-# virtual methods
-.method public final u()LFlh;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lp55;->a:Lake;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, LFlh;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

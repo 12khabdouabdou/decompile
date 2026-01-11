@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map_me_tray/MapMeTrayActionInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'action\':s,\'itemType\':s?,\'itemGridIndex\':a?<d@>,\'itemId\':s?"
     typeReferences = {}

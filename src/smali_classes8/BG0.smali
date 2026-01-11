@@ -1,274 +1,197 @@
-.class public LBG0;
-.super LiH0;
+.class public final LBG0;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "SourceFile"
 
 
 # instance fields
-.field public u:Ljava/lang/Long;
+.field public final synthetic a:I
+
+.field public final synthetic b:LtJ8;
+
+.field public final synthetic c:LNEd;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(LNEd;LtJ8;)V
+    .locals 1
 
-    .line 1
-    sget-object v2, LCre;->t:LCre;
+    const/4 v0, 0x0
+
+    iput v0, p0, LBG0;->a:I
+
+    iput-object p1, p0, LBG0;->c:LNEd;
+
+    iput-object p2, p0, LBG0;->b:LtJ8;
 
     .line 2
-    .line 3
-    const-string v1, "BACKUP_OPERATION_SCHEDULING_START"
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
-    .line 4
-    .line 5
-    const-wide v3, 0x3fb999999999999aL    # 0.1
+    return-void
+.end method
 
-    .line 6
-    .line 7
-    .line 8
-    .line 9
-    .line 10
-    const-wide v5, 0x3fb999999999999aL    # 0.1
+.method public constructor <init>(LtJ8;LNEd;)V
+    .locals 1
 
-    .line 11
-    .line 12
-    .line 13
-    .line 14
-    .line 15
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+    const/4 v0, 0x1
 
-    .line 16
-    .line 17
-    move-object v0, p0
+    iput v0, p0, LBG0;->a:I
 
-    .line 18
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
+    iput-object p1, p0, LBG0;->b:LtJ8;
 
-    .line 19
-    .line 20
-    .line 21
+    iput-object p2, p0, LBG0;->c:LNEd;
+
+    .line 1
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    new-array v1, v0, [B
-
-    .line 3
-    .line 4
-    iget-object v2, p0, LiH0;->k:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 7
-    .line 8
-    .line 9
-    const/4 v0, 0x4
-
-    .line 10
-    iget-object v2, p0, LiH0;->m:Ljava/lang/String;
-
-    .line 11
-    .line 12
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 13
-    .line 14
-    .line 15
-    const/4 v0, 0x5
-
-    .line 16
-    iget-object v2, p0, LBG0;->u:Ljava/lang/Long;
-
-    .line 17
-    .line 18
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 19
-    .line 20
-    .line 21
-    const/4 v0, 0x6
-
-    .line 22
-    iget-object v2, p0, LiH0;->s:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 25
-    .line 26
-    .line 27
-    const/4 v0, 0x7
-
-    .line 28
-    iget-object v2, p0, LiH0;->r:Ljava/lang/Long;
-
-    .line 29
-    .line 30
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 31
-    .line 32
-    .line 33
-    const/16 v0, 0x8
-
-    .line 34
-    .line 35
-    iget-object v2, p0, LiH0;->o:Ljava/lang/Boolean;
-
-    .line 36
-    .line 37
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 38
-    .line 39
-    .line 40
-    const/16 v0, 0x9
-
-    .line 41
-    .line 42
-    iget-object v2, p0, LiH0;->q:Ljava/lang/Long;
-
-    .line 43
-    .line 44
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const/16 v0, 0xa
-
-    .line 48
-    .line 49
-    iget-object v2, p0, LiH0;->n:Ljava/lang/String;
-
-    .line 50
-    .line 51
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 52
-    .line 53
-    .line 54
-    const/16 v0, 0xb
-
-    .line 55
-    .line 56
-    iget-object v2, p0, LiH0;->p:Ljava/lang/Long;
-
-    .line 57
-    .line 58
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 59
-    .line 60
-    .line 61
-    const/16 v0, 0xc
-
-    .line 62
-    .line 63
-    iget-object v2, p0, LiH0;->t:Ljava/lang/Boolean;
-
-    .line 64
-    .line 65
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 66
-    .line 67
-    .line 68
-    const/16 v0, 0xd
-
-    .line 69
-    .line 70
-    iget-object v2, p0, LiH0;->l:Ljava/lang/String;
-
-    .line 71
-    .line 72
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 73
-    .line 74
-    .line 75
-    const/16 v0, 0xe
-
-    .line 76
-    .line 77
-    iget-object v2, p0, LRF0;->j:Ljava/lang/Long;
-
-    .line 78
-    .line 79
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {p1, v1}, LAK3;->m([B)V
-
-    .line 83
-    .line 84
-    .line 85
-    return-void
-.end method
-
-.method public final d()I
+.method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
     .line 1
-    const/16 v0, 0x11d7
+    iget v0, p0, LBG0;->a:I
 
     .line 2
     .line 3
-    return v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public final e(Ljava/util/Map;)I
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, LiH0;->e(Ljava/util/Map;)I
-
-    .line 2
-    .line 3
     .line 4
-    move-result v0
-
     .line 5
-    const-string v1, "pending_operations_count"
-
     .line 6
-    .line 7
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
 
+    .line 7
     .line 8
     .line 9
+    return-void
+
     .line 10
-    move-result-object p1
+    :pswitch_0
+    iget-object p1, p0, LBG0;->c:LNEd;
 
     .line 11
-    check-cast p1, Ljava/lang/Long;
-
     .line 12
+    iget-object v0, p0, LBG0;->b:LtJ8;
+
     .line 13
-    iput-object p1, p0, LBG0;->u:Ljava/lang/Long;
-
     .line 14
-    .line 15
-    if-eqz p1, :cond_0
+    invoke-virtual {v0, p1}, LtJ8;->t(LNEd;)V
 
+    .line 15
     .line 16
     .line 17
-    add-int/lit8 v0, v0, 0x1
+    iget-object p1, v0, LtJ8;->a:LIG0;
 
     .line 18
     .line 19
+    invoke-interface {p1}, LZ3e;->invalidate()V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LBG0;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationStart(Landroid/animation/Animator;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :pswitch_0
+    iget-object p1, p0, LBG0;->c:LNEd;
+
+    .line 11
+    .line 12
+    iget-boolean p1, p1, LNEd;->b:Z
+
+    .line 13
+    .line 14
+    iget-object v0, p0, LBG0;->b:LtJ8;
+
+    .line 15
+    .line 16
+    if-eqz p1, :cond_0
+
+    .line 17
+    .line 18
+    iget-object p1, v0, LtJ8;->g:LkCf;
+
+    .line 19
+    .line 20
+    iget-object p1, p1, LkCf;->a:Landroid/graphics/Paint;
+
+    .line 21
+    .line 22
+    const/4 v0, 0x0
+
+    .line 23
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
+
+    .line 24
+    .line 25
+    .line 26
+    goto :goto_0
+
+    .line 27
     :cond_0
-    return v0
+    iget-object p1, v0, LtJ8;->g:LkCf;
+
+    .line 28
+    .line 29
+    sget-object v0, LkCf;->c:[Landroid/graphics/ColorFilter;
+
+    .line 30
+    .line 31
+    const/4 v1, 0x0
+
+    .line 32
+    aget-object v0, v0, v1
+
+    .line 33
+    .line 34
+    iget-object p1, p1, LkCf;->a:Landroid/graphics/Paint;
+
+    .line 35
+    .line 36
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
+
+    .line 37
+    .line 38
+    .line 39
+    :goto_0
+    return-void
+
+    .line 40
+    nop
+
+    .line 41
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

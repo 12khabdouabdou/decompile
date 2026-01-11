@@ -1,253 +1,227 @@
-.class public Lxah;
-.super Ltah;
+.class public final Lxah;
+.super LvWh;
 .source "SourceFile"
 
 
 # instance fields
-.field public p:Ljava/lang/Long;
+.field public final A:Ljava/lang/String;
 
-.field public q:Ljava/lang/Long;
+.field public final B:LzZh;
+
+.field public final C:LYXh;
+
+.field public final w:Ljava/lang/String;
+
+.field public final x:Ljava/lang/String;
+
+.field public final y:LREi;
+
+.field public final z:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    invoke-direct {p0}, LvWh;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "SPECTACLES_PROXY_USAGE_REPORT"
-
     .line 4
+    iput-object p2, p0, Lxah;->w:Ljava/lang/String;
+
     .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
     .line 6
-    .line 7
-    const-wide v5, 0x3fb999999999999aL    # 0.1
+    iput-object p3, p0, Lxah;->x:Ljava/lang/String;
 
+    .line 7
     .line 8
+    new-instance p2, LBUg;
+
     .line 9
     .line 10
+    const/16 p3, 0x16
+
     .line 11
     .line 12
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+    invoke-direct {p2, p3, p0}, LBUg;-><init>(ILjava/lang/Object;)V
 
     .line 13
     .line 14
-    move-object v0, p0
-
     .line 15
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
+    new-instance p3, LREi;
 
     .line 16
     .line 17
+    invoke-direct {p3, p2}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 18
+    .line 19
+    .line 20
+    iput-object p3, p0, Lxah;->y:LREi;
+
+    .line 21
+    .line 22
+    iput-object p1, p0, Lxah;->z:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    const-string p1, "snap-reply-sticker"
+
+    .line 25
+    .line 26
+    iput-object p1, p0, Lxah;->A:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    sget-object p1, LzZh;->m0:LzZh;
+
+    .line 29
+    .line 30
+    iput-object p1, p0, Lxah;->B:LzZh;
+
+    .line 31
+    .line 32
+    sget-object p1, LYXh;->j0:LYXh;
+
+    .line 33
+    .line 34
+    iput-object p1, p0, Lxah;->C:LYXh;
+
+    .line 35
+    .line 36
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    new-array v0, v0, [B
-
-    .line 3
-    .line 4
-    const/4 v1, 0x3
-
-    .line 5
-    iget-object v2, p0, Llch;->j:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 8
-    .line 9
-    .line 10
-    const/4 v1, 0x4
-
-    .line 11
-    iget-object v2, p0, Llch;->k:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 v1, 0x5
-
-    .line 17
-    iget-object v2, p0, Llch;->m:Lq6h;
-
-    .line 18
-    .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 20
-    .line 21
-    .line 22
-    const/4 v1, 0x6
-
-    .line 23
-    iget-object v2, p0, Llch;->l:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 26
-    .line 27
-    .line 28
-    const/4 v1, 0x7
-
-    .line 29
-    iget-object v2, p0, Ltah;->o:Ljava/lang/String;
-
-    .line 30
-    .line 31
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 32
-    .line 33
-    .line 34
-    const/16 v1, 0x8
-
-    .line 35
-    .line 36
-    iget-object v2, p0, Lxah;->q:Ljava/lang/Long;
-
-    .line 37
-    .line 38
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 39
-    .line 40
-    .line 41
-    const/16 v1, 0x9
-
-    .line 42
-    .line 43
-    iget-object v2, p0, Lxah;->p:Ljava/lang/Long;
-
-    .line 44
-    .line 45
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 46
-    .line 47
-    .line 48
-    const/16 v1, 0xa
-
-    .line 49
-    .line 50
-    iget-object v2, p0, Llch;->n:Ljava/lang/String;
-
-    .line 51
-    .line 52
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
-    .line 56
-    .line 57
-    .line 58
-    return-void
-.end method
-
-.method public final d()I
+.method public final F()LzZh;
     .locals 1
 
     .line 1
-    const/16 v0, 0xa7a
+    iget-object v0, p0, Lxah;->B:LzZh;
 
     .line 2
     .line 3
+    return-object v0
+.end method
+
+.method public final H()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
     return v0
 .end method
 
-.method public final e(Ljava/util/Map;)I
-    .locals 2
+.method public final a(Lcrj;)Lsw;
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Ltah;->e(Ljava/util/Map;)I
+    new-instance v0, LAah;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1, p0}, LAah;-><init>(Lcrj;Lxah;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final f(LtWh;Luzb;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lxah;->s()Landroid/net/Uri;
 
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result-object p2
 
     .line 5
-    const-string v1, "bytes_received"
+    invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     .line 6
     .line 7
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 8
+    move-result-object p2
+
+    .line 9
+    iput-object p2, p1, LtWh;->i:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final q()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lxah;->z:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final s()Landroid/net/Uri;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lxah;->y:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroid/net/Uri;
 
     .line 8
     .line 9
-    .line 10
-    move-result-object v1
+    return-object v0
+.end method
 
-    .line 11
-    check-cast v1, Ljava/lang/Long;
+.method public final x()Ljava/lang/String;
+    .locals 1
 
-    .line 12
-    .line 13
-    iput-object v1, p0, Lxah;->q:Ljava/lang/Long;
+    .line 1
+    iget-object v0, p0, Lxah;->A:Ljava/lang/String;
 
-    .line 14
-    .line 15
-    if-eqz v1, :cond_0
+    .line 2
+    .line 3
+    return-object v0
+.end method
 
-    .line 16
-    .line 17
-    add-int/lit8 v0, v0, 0x1
+.method public final y()LYXh;
+    .locals 1
 
-    .line 18
-    .line 19
-    :cond_0
-    const-string v1, "bytes_sent"
+    .line 1
+    iget-object v0, p0, Lxah;->C:LYXh;
 
-    .line 20
-    .line 21
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object p1
-
-    .line 25
-    check-cast p1, Ljava/lang/Long;
-
-    .line 26
-    .line 27
-    iput-object p1, p0, Lxah;->p:Ljava/lang/Long;
-
-    .line 28
-    .line 29
-    if-eqz p1, :cond_1
-
-    .line 30
-    .line 31
-    add-int/lit8 v0, v0, 0x1
-
-    .line 32
-    .line 33
-    :cond_1
-    return v0
+    .line 2
+    .line 3
+    return-object v0
 .end method

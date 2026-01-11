@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LEg5;
+    proxyClass = LZm5;
     schema = "\'open\':f|m|(s): p<b@>"
     typeReferences = {}
 .end annotation

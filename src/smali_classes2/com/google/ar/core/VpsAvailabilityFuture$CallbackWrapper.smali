@@ -50,7 +50,7 @@
     move-result-object p1
 
     .line 7
-    invoke-static {v0, p1}, LWqj;->m(Ljava/util/function/Consumer;Lcom/google/ar/core/VpsAvailability;)V
+    invoke-static {v0, p1}, LG9f;->z(Ljava/util/function/Consumer;Lcom/google/ar/core/VpsAvailability;)V
 
     .line 8
     .line 9

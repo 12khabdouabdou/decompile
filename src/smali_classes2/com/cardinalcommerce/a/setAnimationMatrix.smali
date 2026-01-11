@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public final a(Ls6k;)V
+.method public final a(Ltwk;)V
     .locals 2
 
     .line 1

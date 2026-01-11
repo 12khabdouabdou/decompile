@@ -4,38 +4,5 @@
 
 
 # virtual methods
-.method public abstract a()J
-.end method
-
-.method public abstract b()Lio/reactivex/rxjava3/core/Observable;
-.end method
-
-.method public abstract d()J
-.end method
-
-.method public abstract e()J
-.end method
-
-.method public abstract f()J
-.end method
-
-.method public abstract g()J
-.end method
-
-.method public abstract h()Lbtc;
-.end method
-
-.method public abstract i()J
-.end method
-
-.method public abstract j()J
-.end method
-
-.method public abstract k()Lbtc;
-.end method
-
-.method public abstract l()J
-.end method
-
-.method public abstract m()J
+.method public abstract a(Z)V
 .end method

@@ -1,139 +1,153 @@
-.class public abstract synthetic LIA;
-.super Ljava/lang/Object;
+.class public final LIA;
+.super LOA;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:LNKe;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(LNKe;)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0x9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0}, Llva;->M(I)[I
+    .line 4
+    iput-object p1, p0, LIA;->a:LNKe;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LIA;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LIA;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LIA;->a:LNKe;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, LIA;->a:LNKe;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LIA;->a:LNKe;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LNKe;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result-object v1
+    move-result v0
 
     .line 7
-    array-length v1, v1
+    return v0
+.end method
 
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SelectFriend(upstreamEvent="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
-    new-array v1, v1, [I
+    iget-object v1, p0, LIA;->a:LNKe;
 
     .line 9
     .line 10
-    const/4 v2, 0x0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
-    const/4 v3, 0x1
-
     .line 12
-    :try_start_0
-    aput v3, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 13
-    .line 14
-    :catch_0
-    const/4 v2, 0x2
+    const-string v1, ")"
 
+    .line 14
     .line 15
-    const/4 v4, 0x5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
-    :try_start_1
-    aput v2, v1, v4
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 17
     .line 18
-    :catch_1
-    const/4 v5, 0x3
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
-    :try_start_2
-    aput v5, v1, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
     .line 20
     .line 21
-    :catch_2
-    const/4 v3, 0x4
+    move-result-object v0
 
     .line 22
-    :try_start_3
-    aput v3, v1, v3
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 23
-    .line 24
-    :catch_3
-    const/4 v3, 0x6
-
-    .line 25
-    :try_start_4
-    aput v4, v1, v3
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 26
-    .line 27
-    :catch_4
-    :try_start_5
-    aput v3, v1, v2
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 28
-    .line 29
-    :catch_5
-    const/4 v2, 0x7
-
-    .line 30
-    :try_start_6
-    aput v2, v1, v5
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 31
-    .line 32
-    :catch_6
-    const/16 v3, 0x8
-
-    .line 33
-    .line 34
-    :try_start_7
-    aput v3, v1, v2
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 35
-    .line 36
-    :catch_7
-    :try_start_8
-    aput v0, v1, v3
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 37
-    .line 38
-    :catch_8
-    sput-object v1, LIA;->a:[I
-
-    .line 39
-    .line 40
-    return-void
+    return-object v0
 .end method

@@ -3,27 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGs3;
+.implements LKv3;
 
 
 # instance fields
-.field public final X:Lake;
+.field public final a:Lh75;
 
-.field public final Y:Lake;
+.field public final b:Lk45;
 
-.field public final Z:Lake;
-
-.field public final a:LLL4;
-
-.field public final b:LX45;
-
-.field public final c:Lsfa;
-
-.field public final t:Lake;
+.field public final c:Lz45;
 
 
 # direct methods
-.method public constructor <init>(LLL4;LX45;Lsfa;)V
+.method public constructor <init>(Lk45;Lz45;Lh75;)V
     .locals 0
 
     .line 1
@@ -32,117 +24,68 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LgV4;->a:LLL4;
+    iput-object p3, p0, LgV4;->a:Lh75;
 
     .line 5
     .line 6
-    iput-object p2, p0, LgV4;->b:LX45;
+    iput-object p1, p0, LgV4;->b:Lk45;
 
     .line 7
     .line 8
-    iput-object p3, p0, LgV4;->c:Lsfa;
+    iput-object p2, p0, LgV4;->c:Lz45;
 
     .line 9
     .line 10
-    new-instance p1, LDS4;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final o()LhRa;
+    .locals 4
+
+    .line 1
+    new-instance v0, LhRa;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LgV4;->a:Lh75;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Lh75;->U1()LMSc;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    iget-object v2, p0, LgV4;->b:Lk45;
+
+    .line 10
     .line 11
-    .line 12
-    const/4 p2, 0x1
+    iget-object v2, v2, Lk45;->b:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
+    .line 12
     .line 13
-    const/16 p3, 0x1d
+    iget-object v3, p0, LgV4;->c:Lz45;
 
     .line 14
     .line 15
-    invoke-direct {p1, p0, p2, p3}, LDS4;-><init>(Ljava/lang/Object;II)V
+    invoke-virtual {v3}, Lz45;->v0()LyPf;
 
     .line 16
     .line 17
     .line 18
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
+    check-cast v1, LNSc;
 
     .line 19
     .line 20
+    invoke-direct {v0, v1, v2}, LhRa;-><init>(LNSc;Lcom/snap/core/application/SnapResourcesContextWrapper;)V
+
     .line 21
-    move-result-object p1
-
     .line 22
-    iput-object p1, p0, LgV4;->t:Lake;
-
     .line 23
-    .line 24
-    new-instance p1, LDS4;
-
-    .line 25
-    .line 26
-    const/4 p2, 0x0
-
-    .line 27
-    invoke-direct {p1, p0, p2, p3}, LDS4;-><init>(Ljava/lang/Object;II)V
-
-    .line 28
-    .line 29
-    .line 30
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object p1
-
-    .line 34
-    iput-object p1, p0, LgV4;->X:Lake;
-
-    .line 35
-    .line 36
-    new-instance p1, LDS4;
-
-    .line 37
-    .line 38
-    const/4 p2, 0x2
-
-    .line 39
-    invoke-direct {p1, p0, p2, p3}, LDS4;-><init>(Ljava/lang/Object;II)V
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object p1
-
-    .line 46
-    iput-object p1, p0, LgV4;->Y:Lake;
-
-    .line 47
-    .line 48
-    new-instance p1, LDS4;
-
-    .line 49
-    .line 50
-    const/4 p2, 0x3
-
-    .line 51
-    invoke-direct {p1, p0, p2, p3}, LDS4;-><init>(Ljava/lang/Object;II)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object p1
-
-    .line 58
-    iput-object p1, p0, LgV4;->Z:Lake;
-
-    .line 59
-    .line 60
-    return-void
+    return-object v0
 .end method

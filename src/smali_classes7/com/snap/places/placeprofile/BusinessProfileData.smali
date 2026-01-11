@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/placeprofile/BusinessProfileData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'businessId\':s,\'accountId\':s,\'name\':s,\'username\':s,\'profileImageUrl\':s,\'isOfficial\':b@?"
     typeReferences = {}

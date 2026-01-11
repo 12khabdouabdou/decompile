@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LmQ2;
+    proxyClass = LOS2;
     schema = "\'fetchChatWallpaperForUser\':f|m|(s): p<s>,\'fetchChatWallpaperForGroup\':f|m|(s): p<s>,\'observeChatWallpaperForUser\':f?|m|(s): g<c>:\'[0]\'<s>,\'observeChatWallpaperForGroup\':f?|m|(s): g<c>:\'[0]\'<s>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
@@ -45,9 +45,6 @@
 .end method
 
 .method public abstract observeChatWallpaperForGroup(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -57,13 +54,13 @@
             "Ljava/lang/String;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract observeChatWallpaperForUser(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -73,6 +70,9 @@
             "Ljava/lang/String;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

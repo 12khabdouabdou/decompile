@@ -1,15 +1,15 @@
 .class public final Lcom/snap/places/placeprofile/PlaceOpeningHours;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'dayHours\':a?<r:\'[0]\'>,\'specialHours\':a?<r:\'[1]\'>,\'timeZone\':s?,\'disclaimerText\':s?"
     typeReferences = {
-        Lcrd;,
-        LT0h;
+        LtHd;,
+        LNmh;
     }
 .end annotation
 
@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcrd;",
+            "LtHd;",
             ">;"
         }
     .end annotation
@@ -31,7 +31,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LT0h;",
+            "LNmh;",
             ">;"
         }
     .end annotation
@@ -70,10 +70,10 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcrd;",
+            "LtHd;",
             ">;",
             "Ljava/util/List<",
-            "LT0h;",
+            "LNmh;",
             ">;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",

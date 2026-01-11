@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lelc;
+    proxyClass = LsAc;
     schema = "\'didSaveOutfitChange\':f?|m|(),\'minervaTextToImage\':f|m|(r:\'[0]\'): g<c>:\'[1]\'<a<s>>"
     typeReferences = {
         Lcom/snap/bitmoji/composer/AvatarBuilderMinervaTextToImageParams;,
@@ -20,7 +20,7 @@
 
 # virtual methods
 .method public abstract didSaveOutfitChange()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

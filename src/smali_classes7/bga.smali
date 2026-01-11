@@ -1,3 +1,3 @@
 .class public abstract Lbga;
-.super Lega;
+.super Ldga;
 .source "SourceFile"

@@ -1,353 +1,329 @@
 .class public final Ltw8;
-.super LrE9;
+.super Le57;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic X:Ljava/util/List;
+.field public a:I
 
-.field public final synthetic Y:I
+.field public b:I
 
-.field public final synthetic Z:LcJe;
-
-.field public final synthetic a:I
-
-.field public final synthetic b:Lyw8;
-
-.field public final synthetic c:Ljava/lang/String;
-
-.field public final synthetic e0:LdJe;
-
-.field public final synthetic f0:LdJe;
-
-.field public final synthetic t:Lr1f;
+.field public c:J
 
 
 # direct methods
-.method public constructor <init>(Lyw8;Ljava/lang/String;Lr1f;Ljava/util/List;ILcJe;LdJe;LdJe;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Ltw8;->a:I
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, Ltw8;->b:Lyw8;
-
-    iput-object p2, p0, Ltw8;->c:Ljava/lang/String;
-
-    iput-object p3, p0, Ltw8;->t:Lr1f;
-
-    iput-object p4, p0, Ltw8;->X:Ljava/util/List;
-
-    iput p5, p0, Ltw8;->Y:I
-
-    iput-object p6, p0, Ltw8;->Z:LcJe;
-
-    iput-object p7, p0, Ltw8;->e0:LdJe;
-
-    iput-object p8, p0, Ltw8;->f0:LdJe;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lyw8;Ljava/lang/String;Lr1f;Ljava/util/List;LcJe;LdJe;LdJe;I)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Ltw8;->a:I
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
-    iput-object p1, p0, Ltw8;->b:Lyw8;
+    .line 3
+    .line 4
+    const/4 v0, 0x0
 
-    iput-object p2, p0, Ltw8;->c:Ljava/lang/String;
+    .line 5
+    iput v0, p0, Ltw8;->a:I
 
-    iput-object p3, p0, Ltw8;->t:Lr1f;
+    .line 6
+    .line 7
+    iput v0, p0, Ltw8;->b:I
 
-    iput-object p4, p0, Ltw8;->X:Ljava/util/List;
+    .line 8
+    .line 9
+    const-wide/16 v0, 0x0
 
-    iput-object p5, p0, Ltw8;->Z:LcJe;
+    .line 10
+    .line 11
+    iput-wide v0, p0, Ltw8;->c:J
 
-    iput-object p6, p0, Ltw8;->e0:LdJe;
+    .line 12
+    .line 13
+    const/4 v0, 0x0
 
-    iput-object p7, p0, Ltw8;->f0:LdJe;
+    .line 14
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
-    iput p8, p0, Ltw8;->Y:I
+    .line 15
+    .line 16
+    const/4 v0, -0x1
 
-    const/4 p1, 0x1
+    .line 17
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 18
+    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+.method public final computeSerializedSize()I
+    .locals 5
+
+    .line 1
+    invoke-super {p0}, Le57;->computeSerializedSize()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget v1, p0, Ltw8;->a:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    and-int/2addr v1, v2
+
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    iget v1, p0, Ltw8;->b:I
+
+    .line 12
+    .line 13
+    invoke-static {v2, v1}, Lbd3;->i(II)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
+
+    .line 17
+    add-int/2addr v0, v1
+
+    .line 18
+    :cond_0
+    iget v1, p0, Ltw8;->a:I
+
+    .line 19
+    .line 20
+    const/4 v2, 0x2
+
+    .line 21
+    and-int/2addr v1, v2
+
+    .line 22
+    if-eqz v1, :cond_1
+
+    .line 23
+    .line 24
+    iget-wide v3, p0, Ltw8;->c:J
+
+    .line 25
+    .line 26
+    invoke-static {v2, v3, v4}, Lbd3;->t(IJ)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v1
+
+    .line 30
+    add-int/2addr v1, v0
+
+    .line 31
+    return v1
+
+    .line 32
+    :cond_1
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_3
+
+    .line 6
+    .line 7
+    const/16 v1, 0x8
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_2
+
+    .line 10
+    .line 11
+    const/16 v1, 0x10
+
+    .line 12
+    .line 13
+    if-eq v0, v1, :cond_1
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_0
+
+    .line 20
+    .line 21
+    goto :goto_1
+
+    .line 22
+    :cond_1
+    invoke-virtual {p1}, LZc3;->s()J
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-wide v0
+
+    .line 26
+    iput-wide v0, p0, Ltw8;->c:J
+
+    .line 27
+    .line 28
+    iget v0, p0, Ltw8;->a:I
+
+    .line 29
+    .line 30
+    or-int/lit8 v0, v0, 0x2
+
+    .line 31
+    .line 32
+    iput v0, p0, Ltw8;->a:I
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_2
+    invoke-virtual {p1}, LZc3;->r()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    packed-switch v0, :pswitch_data_0
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :pswitch_0
+    iput v0, p0, Ltw8;->b:I
+
+    .line 44
+    .line 45
+    iget v0, p0, Ltw8;->a:I
+
+    .line 46
+    .line 47
+    or-int/lit8 v0, v0, 0x1
+
+    .line 48
+    .line 49
+    iput v0, p0, Ltw8;->a:I
+
+    .line 50
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_3
+    :goto_1
+    return-object p0
+
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final writeTo(Lbd3;)V
+    .locals 4
 
     .line 1
     iget v0, p0, Ltw8;->a:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v1, 0x1
 
     .line 4
+    and-int/2addr v0, v1
+
     .line 5
+    if-eqz v0, :cond_0
+
     .line 6
-    check-cast p1, Ljava/lang/Number;
-
     .line 7
-    .line 8
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    iget v0, p0, Ltw8;->b:I
 
+    .line 8
     .line 9
+    invoke-virtual {p1, v1, v0}, Lbd3;->I(II)V
+
     .line 10
     .line 11
-    move-result p1
-
     .line 12
-    sget-object v1, LqI7;->c:LqI7;
+    :cond_0
+    iget v0, p0, Ltw8;->a:I
 
     .line 13
     .line 14
-    iget-object v0, p0, Ltw8;->b:Lyw8;
+    const/4 v1, 0x2
 
     .line 15
+    and-int/2addr v0, v1
+
     .line 16
-    iget-object v2, v0, Lyw8;->d:LNrj;
+    if-eqz v0, :cond_1
 
     .line 17
     .line 18
-    iget-object v3, p0, Ltw8;->X:Ljava/util/List;
+    iget-wide v2, p0, Ltw8;->c:J
 
     .line 19
     .line 20
-    invoke-interface {v3}, Ljava/util/List;->size()I
+    invoke-virtual {p1, v1, v2, v3}, Lbd3;->U(IJ)V
 
     .line 21
     .line 22
     .line 23
-    move-result v4
+    :cond_1
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 24
-    iget v5, p0, Ltw8;->Y:I
-
     .line 25
     .line 26
-    sub-int/2addr v4, v5
-
-    .line 27
-    iget-object v6, p0, Ltw8;->Z:LcJe;
-
-    .line 28
-    .line 29
-    iget v6, v6, LcJe;->a:I
-
-    .line 30
-    .line 31
-    iget-object v7, p0, Ltw8;->e0:LdJe;
-
-    .line 32
-    .line 33
-    iget-wide v7, v7, LdJe;->a:J
-
-    .line 34
-    .line 35
-    iget-object v9, p0, Ltw8;->f0:LdJe;
-
-    .line 36
-    .line 37
-    iget-wide v9, v9, LdJe;->a:J
-
-    .line 38
-    .line 39
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v3
-
-    .line 43
-    sub-int/2addr v3, v5
-
-    .line 44
-    if-ne p1, v3, :cond_0
-
-    .line 45
-    .line 46
-    const/4 p1, 0x1
-
-    .line 47
-    const/4 v11, 0x1
-
-    .line 48
-    goto :goto_0
-
-    .line 49
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 50
-    const/4 v11, 0x0
-
-    .line 51
-    :goto_0
-    iget-object v3, p0, Ltw8;->c:Ljava/lang/String;
-
-    .line 52
-    .line 53
-    move v5, v4
-
-    .line 54
-    iget-object v4, p0, Ltw8;->t:Lr1f;
-
-    .line 55
-    .line 56
-    invoke-static/range {v0 .. v11}, Lyw8;->c(Lyw8;LqI7;LNrj;Ljava/lang/String;Lr1f;IIJJZ)V
-
-    .line 57
-    .line 58
-    .line 59
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 60
-    .line 61
-    return-object p1
-
-    .line 62
-    :pswitch_0
-    check-cast p1, Ljava/lang/Number;
-
-    .line 63
-    .line 64
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
-
-    .line 65
-    .line 66
-    .line 67
-    move-result p1
-
-    .line 68
-    sget-object v1, LqI7;->b:LqI7;
-
-    .line 69
-    .line 70
-    iget-object v0, p0, Ltw8;->b:Lyw8;
-
-    .line 71
-    .line 72
-    iget-object v2, v0, Lyw8;->c:LNrj;
-
-    .line 73
-    .line 74
-    iget-object v3, p0, Ltw8;->X:Ljava/util/List;
-
-    .line 75
-    .line 76
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    .line 77
-    .line 78
-    .line 79
-    move-result v5
-
-    .line 80
-    iget-object v4, p0, Ltw8;->Z:LcJe;
-
-    .line 81
-    .line 82
-    iget v6, v4, LcJe;->a:I
-
-    .line 83
-    .line 84
-    iget-object v4, p0, Ltw8;->e0:LdJe;
-
-    .line 85
-    .line 86
-    iget-wide v7, v4, LdJe;->a:J
-
-    .line 87
-    .line 88
-    iget-object v4, p0, Ltw8;->f0:LdJe;
-
-    .line 89
-    .line 90
-    iget-wide v9, v4, LdJe;->a:J
-
-    .line 91
-    .line 92
-    invoke-interface {v3}, Ljava/util/List;->size()I
-
-    .line 93
-    .line 94
-    .line 95
-    move-result v3
-
-    .line 96
-    iget v4, p0, Ltw8;->Y:I
-
-    .line 97
-    .line 98
-    sub-int/2addr v3, v4
-
-    .line 99
-    if-ne p1, v3, :cond_1
-
-    .line 100
-    .line 101
-    const/4 p1, 0x1
-
-    .line 102
-    const/4 v11, 0x1
-
-    .line 103
-    goto :goto_1
-
-    .line 104
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 105
-    const/4 v11, 0x0
-
-    .line 106
-    :goto_1
-    iget-object v3, p0, Ltw8;->c:Ljava/lang/String;
-
-    .line 107
-    .line 108
-    iget-object v4, p0, Ltw8;->t:Lr1f;
-
-    .line 109
-    .line 110
-    invoke-static/range {v0 .. v11}, Lyw8;->c(Lyw8;LqI7;LNrj;Ljava/lang/String;Lr1f;IIJJZ)V
-
-    .line 111
-    .line 112
-    .line 113
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 114
-    .line 115
-    return-object p1
-
-    .line 116
-    nop
-
-    .line 117
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

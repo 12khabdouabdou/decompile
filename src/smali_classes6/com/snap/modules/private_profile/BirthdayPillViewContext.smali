@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/private_profile/BirthdayPillViewContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'iconType\':r?<e>:\'[0]\',\'birthday\':g<c>:\'[1]\'<r:\'[2]\'>,\'onBirthdayPillTap\':f?(r:\'[3]\'),\'onBirthdayPillImpression\':f?(),\'birthdayPageContext\':r?:\'[4]\'"
     typeReferences = {

@@ -370,7 +370,7 @@
     move-result-object v5
 
     .line 159
-    invoke-static {v5, v0}, LWqj;->a(Landroid/media/AudioRecord;Landroid/media/AudioTimestamp;)I
+    invoke-static {v5, v0}, LX4;->b(Landroid/media/AudioRecord;Landroid/media/AudioTimestamp;)I
 
     .line 160
     .line 161

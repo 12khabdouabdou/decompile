@@ -201,7 +201,7 @@
 
     iget-object v3, p1, Lcom/snap/featuredex/ModuleMetadata;->moduleName:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -214,7 +214,7 @@
 
     iget-object v3, p1, Lcom/snap/featuredex/ModuleMetadata;->dependencies:Ljava/util/List;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -227,7 +227,7 @@
 
     iget-object p1, p1, Lcom/snap/featuredex/ModuleMetadata;->hashes:Ljava/util/Map;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -317,7 +317,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1, v2}, LYHe;->e(IILjava/util/List;)I
+    invoke-static {v0, v1, v2}, LmBe;->c(IILjava/util/List;)I
 
     .line 14
     .line 15

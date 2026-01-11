@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LoX8;
+    proxyClass = LS49;
     schema = "\'setSnap\':f|m|(r:\'[0]\'),\'pause\':f|m|(),\'resume\':f|m|()"
     typeReferences = {
         Lcom/snap/impala/snappro/snapinsights/Snap;

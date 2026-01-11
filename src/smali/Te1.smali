@@ -1,77 +1,67 @@
 .class public final LTe1;
-.super Lio/reactivex/rxjava3/core/Single;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# instance fields
-.field public final a:LXfi;
+# interfaces
+.implements Lb26;
 
 
 # direct methods
-.method public constructor <init>(LXe1;Lqa1;)V
-    .locals 2
+.method public constructor <init>(Lfh1;LDBe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LFi1;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lio/reactivex/rxjava3/core/Single;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LLQ;
+    sget-object p2, LEe1;->Z:LEe1;
 
     .line 5
     .line 6
-    const/16 v1, 0x9
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
-    invoke-direct {v0, p1, v1, p2}, LLQ;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 9
+    const-string p2, "BlizzardFlipperEventReporter"
+
     .line 10
     .line 11
-    new-instance p1, LXfi;
+    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 12
     .line 13
-    invoke-direct {p1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
     .line 14
+    sget-object p2, LJp0;->a:LJp0;
+
     .line 15
     .line 16
-    iput-object p1, p0, LTe1;->a:LXfi;
+    iget-object p2, p1, Lfh1;->e:Lio/reactivex/rxjava3/core/Scheduler;
 
     .line 17
     .line 18
+    const/4 p3, 0x1
+
+    .line 19
+    invoke-virtual {p1, p2, p3}, Lfh1;->b(Lio/reactivex/rxjava3/core/Scheduler;I)LWYe;
+
+    .line 20
+    .line 21
+    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final u(Lio/reactivex/rxjava3/core/SingleObserver;)V
+.method public final c()Lio/reactivex/rxjava3/core/Completable;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LTe1;->a:LXfi;
+    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Lio/reactivex/rxjava3/core/Single;
-
-    .line 8
-    .line 9
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/core/SingleObserver;)V
-
-    .line 10
-    .line 11
-    .line 12
-    return-void
+    return-object v0
 .end method

@@ -16,9 +16,9 @@
 
 .field public final g0:Landroid/graphics/RectF;
 
-.field public final h0:LXfi;
+.field public final h0:LREi;
 
-.field public final i0:LXfi;
+.field public final i0:LREi;
 
 .field public final t:F
 
@@ -60,7 +60,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0701b9
+    const v0, 0x7f0701c7
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -73,7 +73,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0701ba
+    const v0, 0x7f0701c8
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -86,7 +86,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f0701bb
+    const v0, 0x7f0701c9
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -102,34 +102,34 @@
     iput-object p1, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->g0:Landroid/graphics/RectF;
 
     .line 9
-    new-instance p1, LTg1;
+    new-instance p1, Lsk1;
 
     const/4 v0, 0x1
 
-    invoke-direct {p1, p0, v0}, LTg1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
+    invoke-direct {p1, p0, v0}, Lsk1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
 
     .line 10
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 11
-    iput-object v0, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LXfi;
+    iput-object v0, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LREi;
 
     .line 12
-    new-instance p1, LTg1;
+    new-instance p1, Lsk1;
 
     const/4 v0, 0x0
 
-    invoke-direct {p1, p0, v0}, LTg1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
+    invoke-direct {p1, p0, v0}, Lsk1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
 
     .line 13
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 14
-    iput-object v0, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LXfi;
+    iput-object v0, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LREi;
 
     return-void
 .end method
@@ -170,7 +170,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0701b9
+    const p2, 0x7f0701c7
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -183,7 +183,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0701ba
+    const p2, 0x7f0701c8
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -196,7 +196,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0701bb
+    const p2, 0x7f0701c9
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -212,34 +212,34 @@
     iput-object p1, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->g0:Landroid/graphics/RectF;
 
     .line 23
-    new-instance p1, LTg1;
+    new-instance p1, Lsk1;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LTg1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
+    invoke-direct {p1, p0, p2}, Lsk1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
 
     .line 24
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 25
-    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LXfi;
+    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LREi;
 
     .line 26
-    new-instance p1, LTg1;
+    new-instance p1, Lsk1;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LTg1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
+    invoke-direct {p1, p0, p2}, Lsk1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
 
     .line 27
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 28
-    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LXfi;
+    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LREi;
 
     return-void
 .end method
@@ -280,7 +280,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0701b9
+    const p2, 0x7f0701c7
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -293,7 +293,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0701ba
+    const p2, 0x7f0701c8
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -306,7 +306,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0701bb
+    const p2, 0x7f0701c9
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -322,34 +322,34 @@
     iput-object p1, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->g0:Landroid/graphics/RectF;
 
     .line 37
-    new-instance p1, LTg1;
+    new-instance p1, Lsk1;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LTg1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
+    invoke-direct {p1, p0, p2}, Lsk1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
 
     .line 38
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 39
-    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LXfi;
+    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LREi;
 
     .line 40
-    new-instance p1, LTg1;
+    new-instance p1, Lsk1;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LTg1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
+    invoke-direct {p1, p0, p2}, Lsk1;-><init>(Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;I)V
 
     .line 41
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 42
-    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LXfi;
+    iput-object p2, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LREi;
 
     return-void
 .end method
@@ -360,11 +360,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LXfi;
+    iget-object v0, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->h0:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -485,12 +485,12 @@
     move-result-object v1
 
     .line 52
-    const v2, 0x7f060208
+    const v2, 0x7f060260
 
     .line 53
     .line 54
     .line 55
-    invoke-static {v0, v2, v1}, LM3f;->b(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
+    invoke-static {v0, v2, v1}, LIlf;->b(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
 
     .line 56
     .line 57
@@ -562,11 +562,11 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LXfi;
+    iget-object v1, p0, Lcom/snap/bloops/camera/view/BloopsCameraFaceMaskView;->i0:LREi;
 
     .line 7
     .line 8
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 9
     .line 10

@@ -1,132 +1,176 @@
-.class public LSac;
-.super Lhqj;
+.class public final LSac;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public j:Ljava/lang/String;
+.field public final synthetic a:I
+
+.field public final synthetic b:LbVb;
+
+.field public final synthetic c:J
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public synthetic constructor <init>(LbVb;JI)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    iput p4, p0, LSac;->a:I
 
-    .line 2
-    .line 3
-    const-string v1, "MUSIC_SCAN_RESULT"
+    iput-object p1, p0, LSac;->b:LbVb;
 
-    .line 4
-    .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
+    iput-wide p2, p0, LSac;->c:J
 
-    .line 6
-    .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
-    .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
-    .line 10
-    .line 11
-    move-object v0, p0
-
-    .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 13
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final accept(Ljava/lang/Object;)V
+    .locals 6
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LSac;->a:I
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    const/4 v1, 0x2
-
     .line 5
-    iget-object v2, p0, LSac;->j:Ljava/lang/String;
-
     .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0xe22
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final e(Ljava/util/Map;)I
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lhqj;->e(Ljava/util/Map;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const-string v1, "isrc"
-
-    .line 6
-    .line 7
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
     check-cast p1, Ljava/lang/String;
 
+    .line 7
+    .line 8
+    iget-object p1, p0, LSac;->b:LbVb;
+
+    .line 9
+    .line 10
+    sget-object v0, LaBg;->y0:LaBg;
+
+    .line 11
     .line 12
+    iget-object v1, p1, LbVb;->t:Ljava/lang/Object;
+
     .line 13
-    iput-object p1, p0, LSac;->j:Ljava/lang/String;
-
     .line 14
+    check-cast v1, LR93;
+
     .line 15
-    if-eqz p1, :cond_0
-
     .line 16
-    .line 17
-    add-int/lit8 v0, v0, 0x1
+    check-cast v1, LFRe;
 
+    .line 17
     .line 18
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 19
-    :cond_0
-    return v0
+    .line 20
+    .line 21
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v1
+
+    .line 25
+    iget-wide v3, p0, LSac;->c:J
+
+    .line 26
+    .line 27
+    sub-long/2addr v1, v3
+
+    .line 28
+    iget-object p1, p1, LbVb;->X:Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    check-cast p1, LcH8;
+
+    .line 31
+    .line 32
+    invoke-interface {p1, v0, v1, v2}, LcH8;->e(LH7c;J)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
+
+    .line 36
+    :pswitch_0
+    check-cast p1, LbDj;
+
+    .line 37
+    .line 38
+    iget-object p1, p0, LSac;->b:LbVb;
+
+    .line 39
+    .line 40
+    iget-object v0, p1, LbVb;->X:Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    check-cast v0, LcH8;
+
+    .line 43
+    .line 44
+    sget-object v1, LaBg;->x0:LaBg;
+
+    .line 45
+    .line 46
+    iget-object p1, p1, LbVb;->t:Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    check-cast p1, LR93;
+
+    .line 49
+    .line 50
+    check-cast p1, LFRe;
+
+    .line 51
+    .line 52
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-wide v2
+
+    .line 59
+    iget-wide v4, p0, LSac;->c:J
+
+    .line 60
+    .line 61
+    sub-long/2addr v2, v4
+
+    .line 62
+    invoke-interface {v0, v1, v2, v3}, LcH8;->e(LH7c;J)V
+
+    .line 63
+    .line 64
+    .line 65
+    return-void
+
+    .line 66
+    nop
+
+    .line 67
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

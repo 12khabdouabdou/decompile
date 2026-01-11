@@ -3,17 +3,35 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/snap/modules/camera/shortcut/IShortcutToastActionHandling;
+.implements LZl;
 
 
 # instance fields
-.field public final synthetic a:Ltb6;
+.field public final a:Ljava/lang/String;
 
-.field public final synthetic b:LLKj;
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Ljava/util/ArrayList;
+
+.field public final e:Lgpi;
+
+.field public final f:Z
+
+.field public final g:Ljava/util/ArrayList;
+
+.field public final h:Z
+
+.field public final i:Z
+
+.field public final j:Ljava/util/ArrayList;
+
+.field public final k:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Ltb6;LLKj;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Lgpi;ZLjava/util/ArrayList;ZZLjava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
 
     .line 1
@@ -22,102 +40,126 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lrb6;->a:Ltb6;
+    iput-object p1, p0, Lrb6;->a:Ljava/lang/String;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lrb6;->b:LLKj;
+    iput-object p2, p0, Lrb6;->b:Ljava/lang/String;
 
     .line 7
     .line 8
+    iput-object p3, p0, Lrb6;->c:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lrb6;->d:Ljava/util/ArrayList;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lrb6;->e:Lgpi;
+
+    .line 13
+    .line 14
+    iput-boolean p6, p0, Lrb6;->f:Z
+
+    .line 15
+    .line 16
+    iput-object p7, p0, Lrb6;->g:Ljava/util/ArrayList;
+
+    .line 17
+    .line 18
+    iput-boolean p8, p0, Lrb6;->h:Z
+
+    .line 19
+    .line 20
+    iput-boolean p9, p0, Lrb6;->i:Z
+
+    .line 21
+    .line 22
+    iput-object p10, p0, Lrb6;->j:Ljava/util/ArrayList;
+
+    .line 23
+    .line 24
+    iput-object p11, p0, Lrb6;->k:Ljava/util/ArrayList;
+
+    .line 25
+    .line 26
     return-void
 .end method
 
 
 # virtual methods
-.method public final onShortcutToastDismissed()V
-    .locals 5
+.method public final a()LVl;
+    .locals 17
 
     .line 1
-    iget-object v0, p0, Lrb6;->a:Ltb6;
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    iget-object v1, v0, Ltb6;->w:LBre;
+    new-instance v1, LWg6;
 
     .line 4
     .line 5
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    iget-object v8, v0, Lrb6;->d:Ljava/util/ArrayList;
 
     .line 6
     .line 7
-    .line 8
-    move-result-object v1
+    iget-object v10, v0, Lrb6;->g:Ljava/util/ArrayList;
 
+    .line 8
     .line 9
-    new-instance v2, LUa6;
+    iget-object v13, v0, Lrb6;->j:Ljava/util/ArrayList;
 
     .line 10
     .line 11
-    iget-object v3, p0, Lrb6;->b:LLKj;
+    iget-object v14, v0, Lrb6;->k:Ljava/util/ArrayList;
 
     .line 12
     .line 13
-    const/4 v4, 0x1
+    const/4 v15, 0x0
 
     .line 14
-    invoke-direct {v2, v4, v3}, LUa6;-><init>(ILjava/lang/Object;)V
+    iget-boolean v2, v0, Lrb6;->f:Z
 
     .line 15
     .line 16
+    iget-object v3, v0, Lrb6;->a:Ljava/lang/String;
+
     .line 17
-    iget-object v0, v0, Ltb6;->A:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 18
-    .line 19
-    invoke-static {v1, v2, v0}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v4, v0, Lrb6;->b:Ljava/lang/String;
 
+    .line 19
     .line 20
+    const-wide/16 v5, 0x0
+
     .line 21
     .line 22
-    return-void
-.end method
+    iget-object v7, v0, Lrb6;->c:Ljava/lang/String;
 
-.method public final onShortcutToastRemoveButtonTapped()V
-    .locals 0
+    .line 23
+    .line 24
+    iget-object v9, v0, Lrb6;->e:Lgpi;
 
-    .line 1
-    return-void
-.end method
+    .line 25
+    .line 26
+    iget-boolean v11, v0, Lrb6;->h:Z
 
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
+    .line 27
+    .line 28
+    iget-boolean v12, v0, Lrb6;->i:Z
 
-    .line 1
-    sget-object v0, LzB3;->n:LyB3;
+    .line 29
+    .line 30
+    const/16 v16, 0x0
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 31
+    .line 32
+    invoke-direct/range {v1 .. v16}, LWg6;-><init>(ZLjava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/util/List;Lgpi;Ljava/util/List;ZZLjava/util/List;Ljava/util/List;ILqe9;)V
 
-    .line 4
-    .line 5
-    .line 6
-    sget-object v0, LyB3;->b:LzB3;
-
-    .line 7
-    .line 8
-    const-class v1, Lcom/snap/modules/camera/shortcut/IShortcutToastActionHandling;
-
-    .line 9
-    .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result p1
-
-    .line 14
-    return p1
+    .line 33
+    .line 34
+    .line 35
+    return-object v1
 .end method

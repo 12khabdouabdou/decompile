@@ -145,7 +145,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/OptInNotificationContent;->overlay:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -158,7 +158,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/OptInNotificationContent;->overlay_item_replace:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -171,7 +171,7 @@
 
     iget-object p1, p1, Lcom/snap/discover/playback/content/model/OptInNotificationContent;->remoteWebUrlOverride:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -300,7 +300,7 @@
 
     .line 12
     .line 13
-    invoke-static {v3, v0, v4, v1, v5}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v0, v4, v1, v5}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 14
     .line 15
@@ -312,7 +312,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0, v2, v1}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2, v1}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 20
     .line 21

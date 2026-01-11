@@ -207,43 +207,6 @@
     goto :goto_0
 .end method
 
-.method public final c()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/schedulers/InstantPeriodicTask;->c:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    sget-object v1, Lio/reactivex/rxjava3/internal/schedulers/InstantPeriodicTask;->Y:Ljava/util/concurrent/FutureTask;
-
-    .line 8
-    .line 9
-    if-ne v0, v1, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    return v0
-
-    .line 13
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 14
-    return v0
-.end method
-
 .method public final call()Ljava/lang/Object;
     .locals 5
 
@@ -397,6 +360,43 @@
     .line 67
     .line 68
     throw v1
+.end method
+
+.method public final d()Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/schedulers/InstantPeriodicTask;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sget-object v1, Lio/reactivex/rxjava3/internal/schedulers/InstantPeriodicTask;->Y:Ljava/util/concurrent/FutureTask;
+
+    .line 8
+    .line 9
+    if-ne v0, v1, :cond_0
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    return v0
+
+    .line 13
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 14
+    return v0
 .end method
 
 .method public final dispose()V

@@ -1,115 +1,304 @@
-.class public abstract Ly9i;
+.class public final Ly9i;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# instance fields
+.field public final a:Lmk6;
+
+.field public final b:Lsk6;
+
+.field public final c:I
+
+.field public final d:I
+
+
 # direct methods
-.method public static onCacheHideFriend(Lcom/snap/composer/people/SuggestedFriendStoring;Lcom/snap/composer/people/HideSuggestedFriendRequest;)V
+.method public constructor <init>(Lmk6;Lsk6;II)V
     .locals 0
-    .annotation runtime LUy3;
-    .end annotation
 
     .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string p1, "Unimplemented method"
-
     .line 4
-    .line 5
-    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+    iput-object p1, p0, Ly9i;->a:Lmk6;
 
+    .line 5
     .line 6
+    iput-object p2, p0, Ly9i;->b:Lsk6;
+
     .line 7
     .line 8
-    throw p0
+    iput p3, p0, Ly9i;->c:I
+
+    .line 9
+    .line 10
+    iput p4, p0, Ly9i;->d:I
+
+    .line 11
+    .line 12
+    return-void
 .end method
 
-.method public static onClickShortcut(Lcom/snap/composer/people/SuggestedFriendStoring;Ljava/lang/String;)V
-    .locals 0
-    .annotation runtime LUy3;
-    .end annotation
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    const-string p1, "Unimplemented method"
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+    :cond_0
+    instance-of v1, p1, Ly9i;
 
     .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    throw p0
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Ly9i;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, Ly9i;->a:Lmk6;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, Ly9i;->a:Lmk6;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Ly9i;->b:Lsk6;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, Ly9i;->b:Lsk6;
+
+    .line 27
+    .line 28
+    if-eq v1, v3, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
+    iget v1, p0, Ly9i;->c:I
+
+    .line 32
+    .line 33
+    iget v3, p1, Ly9i;->c:I
+
+    .line 34
+    .line 35
+    if-eq v1, v3, :cond_4
+
+    .line 36
+    .line 37
+    return v2
+
+    .line 38
+    :cond_4
+    iget v1, p0, Ly9i;->d:I
+
+    .line 39
+    .line 40
+    iget p1, p1, Ly9i;->d:I
+
+    .line 41
+    .line 42
+    if-eq v1, p1, :cond_5
+
+    .line 43
+    .line 44
+    return v2
+
+    .line 45
+    :cond_5
+    return v0
 .end method
 
-.method public static onHideFriendFeedback(Lcom/snap/composer/people/SuggestedFriendStoring;Ljava/lang/String;D)V
-    .locals 0
-    .annotation runtime LUy3;
-    .end annotation
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+    iget-object v0, p0, Ly9i;->a:Lmk6;
 
     .line 2
     .line 3
-    const-string p1, "Unimplemented method"
+    invoke-virtual {v0}, Lmk6;->hashCode()I
 
     .line 4
     .line 5
-    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
-
     .line 6
+    move-result v0
+
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
-    throw p0
+    .line 9
+    iget-object v1, p0, Ly9i;->b:Lsk6;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 17
+    .line 18
+    iget v0, p0, Ly9i;->c:I
+
+    .line 19
+    .line 20
+    add-int/2addr v1, v0
+
+    .line 21
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 22
+    .line 23
+    iget v0, p0, Ly9i;->d:I
+
+    .line 24
+    .line 25
+    add-int/2addr v1, v0
+
+    .line 26
+    return v1
 .end method
 
-.method public static onUserPullToRefresh(Lcom/snap/composer/people/SuggestedFriendStoring;)V
-    .locals 1
-    .annotation runtime LUy3;
-    .end annotation
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
     .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v0, "Unimplemented method"
+    const-string v1, "StoriesBySectionQuery(section="
 
     .line 4
     .line 5
-    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    throw p0
-.end method
+    iget-object v1, p0, Ly9i;->a:Lmk6;
 
-.method public static undoHideSuggestedFriend(Lcom/snap/composer/people/SuggestedFriendStoring;Ljava/lang/String;)V
-    .locals 0
-    .annotation runtime LUy3;
-    .end annotation
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", sectionSource="
 
-    .line 2
-    .line 3
-    const-string p1, "Unimplemented method"
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
-    .line 5
-    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Ly9i;->b:Lsk6;
 
-    .line 6
-    .line 7
-    .line 8
-    throw p0
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", limit="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget v1, p0, Ly9i;->c:I
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", offset="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget v1, p0, Ly9i;->d:I
+
+    .line 39
+    .line 40
+    const-string v2, ")"
+
+    .line 41
+    .line 42
+    invoke-static {v0, v1, v2}, LJF0;->w(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    return-object v0
 .end method

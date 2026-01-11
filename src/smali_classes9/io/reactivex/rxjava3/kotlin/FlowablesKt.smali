@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final a(Lio/reactivex/rxjava3/core/Flowable;LZne;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;
+.method public static final a(Lio/reactivex/rxjava3/core/Flowable;LSFe;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;
     .locals 2
 
     .line 1
@@ -16,7 +16,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, p0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/BiFunction;LZne;)V
+    invoke-direct {v0, p0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/BiFunction;LSFe;)V
 
     .line 6
     .line 7

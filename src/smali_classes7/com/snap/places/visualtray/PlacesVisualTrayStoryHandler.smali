@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Luud;
+    proxyClass = LeLd;
     schema = "\'createNativeThumbnailViewFactory\':f?|m|(): r:\'[0]\',\'launchPlaybackForThumbnail\':f?|m|(s, d, s, r:\'[1]\'): g<c>:\'[2]\'<b@>"
     typeReferences = {
         Lcom/snap/composer/ViewFactory;,
@@ -21,14 +21,11 @@
 
 # virtual methods
 .method public abstract createNativeThumbnailViewFactory()Lcom/snap/composer/ViewFactory;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract launchPlaybackForThumbnail(Ljava/lang/String;DLjava/lang/String;Lcom/snap/composer/utils/Ref;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,6 +38,9 @@
             "Ljava/lang/Boolean;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

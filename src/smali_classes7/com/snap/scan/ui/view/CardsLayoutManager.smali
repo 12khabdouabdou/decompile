@@ -32,31 +32,31 @@
 
 
 # virtual methods
-.method public final a1(Landroidx/recyclerview/widget/RecyclerView;LHGe;I)V
-    .locals 1
+.method public final f1(Landroidx/recyclerview/widget/RecyclerView;I)V
+    .locals 2
 
     .line 1
-    new-instance p1, LXx;
+    new-instance p1, LKz;
 
     .line 2
     .line 3
-    iget-object p2, p0, Lcom/snap/scan/ui/view/CardsLayoutManager;->F:Landroid/content/Context;
+    iget-object v0, p0, Lcom/snap/scan/ui/view/CardsLayoutManager;->F:Landroid/content/Context;
 
     .line 4
     .line 5
-    const/4 v0, 0x1
+    const/4 v1, 0x1
 
     .line 6
-    invoke-direct {p1, p2, v0}, LXx;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p1, v0, v1}, LKz;-><init>(Landroid/content/Context;I)V
 
     .line 7
     .line 8
     .line 9
-    iput p3, p1, Lgma;->a:I
+    iput p2, p1, Lvya;->a:I
 
     .line 10
     .line 11
-    invoke-virtual {p0, p1}, LwGe;->b1(Lgma;)V
+    invoke-virtual {p0, p1}, LfYe;->g1(Lvya;)V
 
     .line 12
     .line 13

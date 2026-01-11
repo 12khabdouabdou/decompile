@@ -1,10 +1,10 @@
 .class public final Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'isOnboardingComplete\':b,\'isCameosEnabled\':b,\'isExperimentEnabled\':b,\'businessProfileIds\':a<s>,\'onboardingImageSrc\':s?,\'onboardingContentId\':s?,\'onboardingSourceType\':s?"
     typeReferences = {}

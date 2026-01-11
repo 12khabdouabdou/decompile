@@ -3,27 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKA1;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final X:LBr2;
+.field public final synthetic a:LHP;
 
-.field public final Y:Z
+.field public final synthetic b:Ljava/lang/String;
 
-.field public final Z:LHc9;
+.field public final synthetic c:LQ93;
 
-.field public final a:LWS4;
-
-.field public final b:LvG5;
-
-.field public final c:Lt0a;
-
-.field public final t:LJM9;
+.field public final synthetic d:J
 
 
 # direct methods
-.method public constructor <init>(LWS4;LvG5;Lt0a;LJM9;LBr2;ZLHc9;)V
+.method public constructor <init>(LHP;Ljava/lang/String;LQ93;J)V
     .locals 0
 
     .line 1
@@ -32,74 +26,75 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LVh0;->a:LWS4;
+    iput-object p1, p0, LVh0;->a:LHP;
 
     .line 5
     .line 6
-    iput-object p2, p0, LVh0;->b:LvG5;
+    iput-object p2, p0, LVh0;->b:Ljava/lang/String;
 
     .line 7
     .line 8
-    iput-object p3, p0, LVh0;->c:Lt0a;
+    iput-object p3, p0, LVh0;->c:LQ93;
 
     .line 9
     .line 10
-    iput-object p4, p0, LVh0;->t:LJM9;
+    iput-wide p4, p0, LVh0;->d:J
 
     .line 11
     .line 12
-    iput-object p5, p0, LVh0;->X:LBr2;
-
-    .line 13
-    .line 14
-    iput-boolean p6, p0, LVh0;->Y:Z
-
-    .line 15
-    .line 16
-    iput-object p7, p0, LVh0;->Z:LHc9;
-
-    .line 17
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Ljava/lang/Object;
-    .locals 3
+.method public final run()V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, LVh0;->a:LWS4;
+    new-instance v0, LEP$Z0$a;
 
     .line 2
     .line 3
-    iget-object v0, v0, LWS4;->a:Lake;
+    iget-object v1, p0, LVh0;->c:LQ93;
 
     .line 4
     .line 5
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 6
     .line 7
+    invoke-interface {v1, v2}, LQ93;->a(Ljava/util/concurrent/TimeUnit;)J
+
     .line 8
-    move-result-object v0
-
     .line 9
-    check-cast v0, LPv5;
-
     .line 10
+    move-result-wide v1
+
     .line 11
-    new-instance v1, Lig0;
+    iget-wide v3, p0, LVh0;->d:J
 
     .line 12
     .line 13
-    const/4 v2, 0x3
+    sub-long/2addr v1, v3
 
     .line 14
-    invoke-direct {v1, v0, v2, p0}, Lig0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    iget-object v3, p0, LVh0;->b:Ljava/lang/String;
 
     .line 15
     .line 16
+    invoke-direct {v0, v3, v1, v2}, LEP$Z0$a;-><init>(Ljava/lang/String;J)V
+
     .line 17
-    return-object v1
+    .line 18
+    .line 19
+    iget-object v1, p0, LVh0;->a:LHP;
+
+    .line 20
+    .line 21
+    invoke-interface {v1, v0}, LHP;->a(LEP;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
 .end method

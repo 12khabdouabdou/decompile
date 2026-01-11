@@ -1,40 +1,41 @@
 .class public final LKpe;
-.super LrE9;
+.super LtJe;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic X:LNb0;
 
-.field public final synthetic b:LMpe;
+.field public final synthetic c:I
+
+.field public final t:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(LMpe;I)V
+.method public synthetic constructor <init>(LNb0;Ljava/lang/String;LJP9;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, LKpe;->a:I
+    iput p4, p0, LKpe;->c:I
 
-    iput-object p1, p0, LKpe;->b:LMpe;
+    iput-object p1, p0, LKpe;->X:LNb0;
 
-    const/4 p1, 0x1
+    const/4 p1, 0x3
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0, p1, p3}, LpO0;-><init>(ILjava/lang/Object;)V
+
+    iput-object p2, p0, LKpe;->t:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+.method public final B(LuE7;)V
+    .locals 6
 
     .line 1
-    iget v0, p0, LKpe;->a:I
+    iget v0, p0, LKpe;->c:I
 
     .line 2
     .line 3
@@ -43,345 +44,393 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, LJi7;
+    iget-object v0, p0, LKpe;->X:LNb0;
 
     .line 7
     .line 8
-    instance-of v0, p1, LIi7;
+    const-string v1, "Story"
 
     .line 9
     .line 10
-    iget-object v1, p0, LKpe;->b:LMpe;
+    const-string v2, "StorySnap"
 
     .line 11
     .line 12
-    const/4 v2, 0x1
+    const-string v3, "Snap"
 
     .line 13
-    if-eqz v0, :cond_6
-
     .line 14
+    const-string v4, "MobStoryMetadata"
+
     .line 15
-    check-cast p1, LIi7;
+    .line 16
+    filled-new-array {v1, v2, v3, v4}, [Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    iget-object v0, v0, Lvej;->a:Lkch;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, p1, v1}, Lkch;->a(LuE7;[Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    :pswitch_0
+    iget-object v0, p0, LKpe;->X:LNb0;
+
+    .line 27
+    .line 28
+    iget-object v0, v0, Lvej;->a:Lkch;
+
+    .line 29
+    .line 30
+    const-string v1, "CombinedUsername"
+
+    .line 31
+    .line 32
+    const-string v2, "Story"
+
+    .line 33
+    .line 34
+    const-string v3, "Friend"
+
+    .line 35
+    .line 36
+    const-string v4, "StorySnap"
+
+    .line 37
+    .line 38
+    const-string v5, "Snap"
+
+    .line 39
+    .line 40
+    filled-new-array {v3, v1, v2, v4, v5}, [Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v1
+
+    .line 44
+    invoke-virtual {v0, p1, v1}, Lkch;->a(LuE7;[Ljava/lang/String;)V
+
+    .line 45
+    .line 46
+    .line 47
+    return-void
+
+    .line 48
+    nop
+
+    .line 49
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final C(LuE7;)V
+    .locals 6
+
+    .line 1
+    iget v0, p0, LKpe;->c:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LKpe;->X:LNb0;
+
+    .line 7
+    .line 8
+    iget-object v0, v0, Lvej;->a:Lkch;
+
+    .line 9
+    .line 10
+    const-string v1, "Snap"
+
+    .line 11
+    .line 12
+    const-string v2, "MobStoryMetadata"
+
+    .line 13
+    .line 14
+    const-string v3, "Story"
+
+    .line 15
+    .line 16
+    const-string v4, "StorySnap"
+
+    .line 17
+    .line 18
+    filled-new-array {v3, v4, v1, v2}, [Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    invoke-virtual {v0, p1, v1}, Lkch;->h(LuE7;[Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    :pswitch_0
+    iget-object v0, p0, LKpe;->X:LNb0;
+
+    .line 27
+    .line 28
+    iget-object v0, v0, Lvej;->a:Lkch;
+
+    .line 29
+    .line 30
+    const-string v1, "StorySnap"
+
+    .line 31
+    .line 32
+    const-string v2, "Snap"
+
+    .line 33
+    .line 34
+    const-string v3, "Friend"
+
+    .line 35
+    .line 36
+    const-string v4, "CombinedUsername"
+
+    .line 37
+    .line 38
+    const-string v5, "Story"
+
+    .line 39
+    .line 40
+    filled-new-array {v3, v4, v5, v1, v2}, [Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v1
+
+    .line 44
+    invoke-virtual {v0, p1, v1}, Lkch;->h(LuE7;[Ljava/lang/String;)V
+
+    .line 45
+    .line 46
+    .line 47
+    return-void
+
+    .line 48
+    nop
+
+    .line 49
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final p(Lkotlin/jvm/functions/Function1;)LJJe;
+    .locals 10
+
+    .line 1
+    iget v0, p0, LKpe;->c:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LKpe;->X:LNb0;
+
+    .line 7
+    .line 8
+    iget-object v1, p0, LKpe;->t:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    if-nez v1, :cond_0
+
+    .line 11
+    .line 12
+    const-string v1, "IS"
+
+    .line 13
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    const-string v1, "="
 
     .line 16
     .line 17
-    iget p1, p1, LIi7;->a:I
+    :goto_0
+    const-string v2, "\n    |SELECT\n    |    Story.storyId,\n    |    Story.displayName,\n    |    MobStoryMetadata.privateStoryMetadata\n    |FROM StoryViewActiveSnaps AS Story\n    |LEFT JOIN MobStoryMetadata ON Story._id = MobStoryMetadata.storyRowId\n    |WHERE Story.kind = 1\n    |    AND Story.groupStoryType = 1 -- GroupStoryType.PRIVATE\n    |    AND Story.friendStoryPosterUserId "
 
     .line 18
     .line 19
-    if-lez p1, :cond_7
+    const-string v3, " ?\n    "
 
     .line 20
     .line 21
-    sget-object p1, LXRg;->a:LWRg;
+    invoke-static {v2, v1, v3}, LJF0;->u(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 22
     .line 23
-    const-string v0, "pdc:collapse_carousel"
-
     .line 24
+    move-result-object v6
+
     .line 25
-    invoke-virtual {p1, v0}, LWRg;->e(Ljava/lang/String;)I
+    new-instance v9, Lcde;
 
     .line 26
     .line 27
-    .line 28
-    move-result v0
+    const/16 v1, 0xe
 
+    .line 28
     .line 29
-    invoke-virtual {v1}, LJ04;->E()LEX0;
+    invoke-direct {v9, v1, p0}, Lcde;-><init>(ILjava/lang/Object;)V
 
     .line 30
     .line 31
     .line 32
-    move-result-object v3
+    iget-object v4, v0, Lvej;->a:Lkch;
 
     .line 33
-    check-cast v3, LJJh;
-
     .line 34
+    const/4 v5, 0x0
+
     .line 35
-    iget-object v3, v3, LJJh;->b:LOY7;
+    const/4 v8, 0x1
 
     .line 36
+    move-object v7, p1
+
     .line 37
-    iget v3, v3, LOY7;->f:I
+    invoke-virtual/range {v4 .. v9}, Lkch;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)LJJe;
 
     .line 38
     .line 39
-    if-eq v3, v2, :cond_5
-
     .line 40
+    move-result-object p1
+
     .line 41
-    iget-object v2, v1, LMpe;->k0:Landroid/animation/AnimatorSet;
+    return-object p1
 
     .line 42
+    :pswitch_0
+    move-object v3, p1
+
     .line 43
-    if-eqz v2, :cond_0
+    iget-object p1, p0, LKpe;->X:LNb0;
 
     .line 44
     .line 45
-    goto :goto_1
+    iget-object v0, p1, Lvej;->a:Lkch;
 
     .line 46
-    :cond_0
-    iget-object p1, v1, LMpe;->e0:Landroidx/recyclerview/widget/RecyclerView;
-
     .line 47
+    const p1, -0x4f2339b5
+
     .line 48
-    const/4 v2, 0x0
-
     .line 49
-    const-string v3, "friendStoriesCarousel"
-
     .line 50
-    .line 51
-    if-eqz p1, :cond_4
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 51
     .line 52
     .line 53
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    move-result-object v1
 
     .line 54
+    new-instance v5, Lcde;
+
     .line 55
-    check-cast p1, Landroidx/recyclerview/widget/LinearLayoutManager;
-
     .line 56
-    .line 57
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->n1()I
+    const/16 p1, 0xd
 
+    .line 57
     .line 58
+    invoke-direct {v5, p1, p0}, Lcde;-><init>(ILjava/lang/Object;)V
+
     .line 59
     .line 60
-    move-result p1
-
     .line 61
-    const/4 v4, -0x1
+    const-string v2, "SELECT\n    Friend._id AS friendRowId,\n    Friend.userId AS friendUserId,\n    Friend.displayName AS friendDisplayName,\n    Friend.serverDisplayName,\n    Friend.username AS friendUsername,\n    Friend.friendmojiString,\n    Friend.bitmojiAvatarId,\n    Friend.bitmojiSelfieId,\n    Friend.bitmojiSceneId,\n    Friend.bitmojiBackgroundId,\n    Friend.bitmojiBackgroundUrl,\n    Friend.bitmojiBackgroundUrlType,\n    Friend.bitmojiAvatarMetadata,\n    Friend.birthday,\n    Friend.addedTimestamp,\n    Friend.reverseAddedTimestamp,\n    Friend.friendLinkType,\n    Friend.score,\n    Friend.snapProId,\n    Friend.friendmojiCategories,\n    Story._id AS storyRowId,\n    Story.latestTimeStamp AS storyLatestTimestamp,\n    Story.latestExpirationTimestamp AS storyLatestExpirationTimestamp,\n    COALESCE((Friend.storyMuted = 1), 0) AS storyMuted,\n    Story.viewed AS storyViewed,\n    Story.isFriendOfFriend,\n    Friend.isBitmojiFriendmojiSharingSupported,\n    Friend.streakLength,\n    Friend.streakExpiration,\n    Friend.reverseBestFriendRanking,\n    Friend.plusBadgeVisibility,\n    Friend.isPlusSubscriber,\n    Friend.saturnUserId\nFROM FriendWithUsername AS Friend\nLEFT JOIN StoryViewActiveSnaps AS Story ON (Story.kind = 0 AND Story.friendStoryPosterUserId = Friend.userId)\nWHERE Friend.userId = ?\nORDER BY Story.latestTimeStamp DESC\nLIMIT 1"
 
     .line 62
-    if-eq p1, v4, :cond_3
-
     .line 63
+    const/4 v4, 0x1
+
     .line 64
-    iget-object v4, v1, LMpe;->e0:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual/range {v0 .. v5}, Lkch;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)LJJe;
 
     .line 65
     .line 66
-    if-eqz v4, :cond_2
-
     .line 67
+    move-result-object p1
+
     .line 68
-    iget-object v3, v4, Landroidx/recyclerview/widget/RecyclerView;->l0:LrGe;
+    return-object p1
 
     .line 69
-    .line 70
-    check-cast v3, LwKc;
-
-    .line 71
-    .line 72
-    invoke-virtual {v3, p1}, LwKc;->a(I)LKu;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object p1
-
-    .line 76
-    invoke-static {p1}, LMpe;->P(LKu;)Ljava/lang/String;
-
-    .line 77
-    .line 78
-    .line 79
-    move-result-object p1
-
-    .line 80
-    if-eqz p1, :cond_3
-
-    .line 81
-    .line 82
-    iget-object v3, v1, LMpe;->Z:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 83
-    .line 84
-    if-eqz v3, :cond_1
-
-    .line 85
-    .line 86
-    invoke-static {v3, p1}, LMpe;->T(Landroidx/recyclerview/widget/RecyclerView;Ljava/lang/String;)V
-
-    .line 87
-    .line 88
-    .line 89
-    goto :goto_0
-
-    .line 90
-    :cond_1
-    const-string p1, "mixedCarousel"
-
-    .line 91
-    .line 92
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 93
-    .line 94
-    .line 95
-    throw v2
-
-    .line 96
-    :cond_2
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 97
-    .line 98
-    .line 99
-    throw v2
-
-    .line 100
-    :cond_3
-    :goto_0
-    invoke-virtual {v1}, LcIj;->s()Landroid/view/View;
-
-    .line 101
-    .line 102
-    .line 103
-    move-result-object p1
-
-    .line 104
-    new-instance v2, LzR;
-
-    .line 105
-    .line 106
-    const/16 v3, 0x16
-
-    .line 107
-    .line 108
-    invoke-direct {v2, v1, v0, v3}, LzR;-><init>(Ljava/lang/Object;II)V
-
-    .line 109
-    .line 110
-    .line 111
-    invoke-virtual {p1, v2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
-
-    .line 112
-    .line 113
-    .line 114
-    goto :goto_2
-
-    .line 115
-    :cond_4
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 116
-    .line 117
-    .line 118
-    throw v2
-
-    .line 119
-    :cond_5
-    :goto_1
-    invoke-virtual {p1, v0}, LWRg;->h(I)V
-
-    .line 120
-    .line 121
-    .line 122
-    goto :goto_2
-
-    .line 123
-    :cond_6
-    instance-of p1, p1, LHi7;
-
-    .line 124
-    .line 125
-    if-eqz p1, :cond_7
-
-    .line 126
-    .line 127
-    invoke-virtual {v1, v2}, LMpe;->M(Z)V
-
-    .line 128
-    .line 129
-    .line 130
-    :cond_7
-    :goto_2
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 131
-    .line 132
-    return-object p1
-
-    .line 133
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 134
-    .line 135
-    iget-object p1, p0, LKpe;->b:LMpe;
-
-    .line 136
-    .line 137
-    iget-object p1, p1, LMpe;->h0:Lrn0;
-
-    .line 138
-    .line 139
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 140
-    .line 141
-    return-object p1
-
-    .line 142
-    :pswitch_1
-    check-cast p1, Ljava/lang/Integer;
-
-    .line 143
-    .line 144
-    iget-object p1, p0, LKpe;->b:LMpe;
-
-    .line 145
-    .line 146
-    const/4 v0, 0x0
-
-    .line 147
-    invoke-virtual {p1, v0}, LMpe;->M(Z)V
-
-    .line 148
-    .line 149
-    .line 150
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 151
-    .line 152
-    return-object p1
-
-    .line 153
-    :pswitch_2
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 154
-    .line 155
-    iget-object p1, p0, LKpe;->b:LMpe;
-
-    .line 156
-    .line 157
-    iget-object p1, p1, LMpe;->h0:Lrn0;
-
-    .line 158
-    .line 159
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 160
-    .line 161
-    return-object p1
-
-    .line 162
-    nop
-
-    .line 163
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LKpe;->c:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "Profile.sq:getPrivateStoriesByUserId"
+
+    .line 7
+    .line 8
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    const-string v0, "Profile.sq:getFriendById"
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
         :pswitch_0
     .end packed-switch
 .end method

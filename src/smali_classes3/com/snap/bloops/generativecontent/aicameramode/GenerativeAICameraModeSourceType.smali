@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'CAMERA\':\'GENERATIVE_AI_CAMERA_MODE_SOURCE_TYPE_CAMERA\',\'CHAT\':\'GENERATIVE_AI_CAMERA_MODE_SOURCE_TYPE_CHAT\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

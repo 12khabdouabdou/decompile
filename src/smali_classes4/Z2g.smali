@@ -1,150 +1,51 @@
-.class public abstract synthetic LZ2g;
-.super Ljava/lang/Object;
+.class public final LZ2g;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'addressLine1\':s?,\'addressLine2\':s?"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _addressLine1:Ljava/lang/String;
+
+.field private _addressLine2:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-static {}, Lgmd$b;->values()[Lgmd$b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
 
     .line 2
+    iput-object v0, p0, LZ2g;->_addressLine1:Ljava/lang/String;
+
     .line 3
+    iput-object v0, p0, LZ2g;->_addressLine2:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
     .line 4
-    move-result-object v0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
-    array-length v0, v0
+    iput-object p1, p0, LZ2g;->_addressLine1:Ljava/lang/String;
 
     .line 6
-    new-array v0, v0, [I
+    iput-object p2, p0, LZ2g;->_addressLine2:Ljava/lang/String;
 
-    .line 7
-    .line 8
-    :try_start_0
-    sget-object v1, Lgmd$b;->b:Lgmd$b;
-
-    .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v1
-
-    .line 14
-    const/4 v2, 0x1
-
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lgmd$b;->Y:Lgmd$b;
-
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lgmd$b;->X:Lgmd$b;
-
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    const/4 v2, 0x3
-
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, Lgmd$b;->c:Lgmd$b;
-
-    .line 36
-    .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v1
-
-    .line 41
-    const/4 v2, 0x4
-
-    .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 43
-    .line 44
-    :catch_3
-    :try_start_4
-    sget-object v1, Lgmd$b;->t:Lgmd$b;
-
-    .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v1
-
-    .line 50
-    const/4 v2, 0x5
-
-    .line 51
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 52
-    .line 53
-    :catch_4
-    sput-object v0, LZ2g;->a:[I
-
-    .line 54
-    .line 55
     return-void
 .end method

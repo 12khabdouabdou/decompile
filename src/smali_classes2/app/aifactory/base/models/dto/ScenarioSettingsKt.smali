@@ -61,7 +61,7 @@
     const/4 v10, 0x0
 
     .line 16
-    invoke-direct/range {v0 .. v12}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILHr5;)V
+    invoke-direct/range {v0 .. v12}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILex5;)V
 
     .line 17
     .line 18
@@ -164,7 +164,7 @@
     .line 28
     .line 29
     :cond_0
-    invoke-static {v0}, LXYi;->b(Ljava/io/File;)J
+    invoke-static {v0}, Lclc;->c(Ljava/io/File;)J
 
     .line 30
     .line 31

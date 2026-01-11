@@ -1,151 +1,168 @@
-.class public final enum LCoi;
-.super Ljava/lang/Enum;
+.class public final LCoi;
+.super Lxs9;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum a:LCoi;
+# instance fields
+.field public final Y:Lio/reactivex/rxjava3/core/Single;
 
-.field public static final enum b:LCoi;
+.field public final Z:I
 
-.field public static final enum c:LCoi;
-
-.field public static final synthetic t:[LCoi;
+.field public final e0:LREi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(LjX6;Lio/reactivex/rxjava3/core/Single;Lbb5;)V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x2
+    sget-object p1, Lc2i;->Z:Lc2i;
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
+    const-string v0, "StoryStickerService"
 
     .line 4
-    new-instance v3, LCoi;
-
     .line 5
-    .line 6
-    const-string v4, "TELECOM"
+    invoke-static {p1, p1, v0}, LoVh;->b(Lc2i;Lc2i;Ljava/lang/String;)Lnp0;
 
+    .line 6
     .line 7
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-result-object p1
 
     .line 9
+    new-instance v0, LnJe;
+
     .line 10
     .line 11
-    sput-object v3, LCoi;->a:LCoi;
+    invoke-direct {v0, p1}, LnJe;-><init>(Lnp0;)V
 
     .line 12
     .line 13
-    new-instance v4, LCoi;
-
     .line 14
-    .line 15
-    const-string v5, "JETPACK"
+    invoke-direct {p0, v0}, Lxs9;-><init>(LnJe;)V
 
+    .line 15
     .line 16
     .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p2, p0, LCoi;->Y:Lio/reactivex/rxjava3/core/Single;
 
     .line 18
     .line 19
+    const/16 p1, 0xc
+
     .line 20
-    sput-object v4, LCoi;->b:LCoi;
-
     .line 21
+    iput p1, p0, LCoi;->Z:I
+
     .line 22
-    new-instance v5, LCoi;
-
     .line 23
-    .line 24
-    const-string v6, "NONE"
+    new-instance p1, Lc0i;
 
+    .line 24
     .line 25
+    const/4 p2, 0x1
+
     .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p1, p3, p2}, Lc0i;-><init>(Lbb5;I)V
 
     .line 27
     .line 28
     .line 29
-    sput-object v5, LCoi;->c:LCoi;
+    new-instance p2, LREi;
 
     .line 30
     .line 31
-    const/4 v6, 0x3
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 32
-    new-array v6, v6, [LCoi;
-
     .line 33
     .line 34
-    aput-object v3, v6, v2
+    iput-object p2, p0, LCoi;->e0:LREi;
 
     .line 35
     .line 36
-    aput-object v4, v6, v1
-
-    .line 37
-    .line 38
-    aput-object v5, v6, v0
-
-    .line 39
-    .line 40
-    sput-object v6, LCoi;->t:[LCoi;
-
-    .line 41
-    .line 42
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LCoi;
-    .locals 1
+
+# virtual methods
+.method public final a(Lj1i;)Lio/reactivex/rxjava3/core/Flowable;
+    .locals 2
 
     .line 1
-    const-class v0, LCoi;
+    sget-object p1, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    iget-object p1, p0, LCoi;->e0:LREi;
 
     .line 4
     .line 5
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
     .line 6
-    move-result-object p0
-
     .line 7
-    check-cast p0, LCoi;
-
     .line 8
+    move-result-object p1
+
     .line 9
-    return-object p0
+    check-cast p1, Lio/reactivex/rxjava3/core/Observable;
+
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->f0()Lio/reactivex/rxjava3/core/Single;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    new-instance v0, LRhg;
+
+    .line 16
+    .line 17
+    const/16 v1, 0x16
+
+    .line 18
+    .line 19
+    invoke-direct {v0, v1, p0}, LRhg;-><init>(ILjava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    iget-object v1, p0, LCoi;->Y:Lio/reactivex/rxjava3/core/Single;
+
+    .line 23
+    .line 24
+    invoke-static {v1, p1, v0}, Lio/reactivex/rxjava3/core/Single;->I(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Single;->y()Lio/reactivex/rxjava3/core/Flowable;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    return-object p1
 .end method
 
-.method public static values()[LCoi;
+.method public final s()I
     .locals 1
 
     .line 1
-    sget-object v0, LCoi;->t:[LCoi;
+    iget v0, p0, LCoi;->Z:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LCoi;
-
-    .line 8
-    .line 9
-    return-object v0
+    return v0
 .end method

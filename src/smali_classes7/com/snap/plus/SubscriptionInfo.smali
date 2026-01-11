@@ -1,12 +1,12 @@
 .class public final Lcom/snap/plus/SubscriptionInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'isSubscribed\':b,\'startTimeMs\':d,\'expireTimeMs\':d,\'status\':d,\'provider\':d,\'isSubscribedAdFree\':b,\'familyPlanRole\':r<e>:\'[0]\',\'isSubscribedLensPass\':b"
+    schema = "\'isSubscribed\':b,\'startTimeMs\':d,\'expireTimeMs\':d,\'status\':d,\'provider\':d,\'isSubscribedAdFree\':b,\'familyPlanRole\':r<e>:\'[0]\',\'isSubscribedLensPass\':b,\'isSubscribedStorage\':b"
     typeReferences = {
         Lcom/snap/plus/FamilyPlanRole;
     }
@@ -24,6 +24,8 @@
 
 .field private _isSubscribedLensPass:Z
 
+.field private _isSubscribedStorage:Z
+
 .field private _provider:D
 
 .field private _startTimeMs:D
@@ -32,7 +34,7 @@
 
 
 # direct methods
-.method public constructor <init>(ZDDDDZLcom/snap/plus/FamilyPlanRole;Z)V
+.method public constructor <init>(ZDDDDZLcom/snap/plus/FamilyPlanRole;ZZ)V
     .locals 0
 
     .line 1
@@ -73,6 +75,10 @@
 
     .line 19
     .line 20
+    iput-boolean p13, p0, Lcom/snap/plus/SubscriptionInfo;->_isSubscribedStorage:Z
+
+    .line 21
+    .line 22
     return-void
 .end method
 

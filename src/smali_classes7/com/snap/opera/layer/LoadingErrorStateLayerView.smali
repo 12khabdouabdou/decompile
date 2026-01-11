@@ -1,12 +1,12 @@
 .class public final Lcom/snap/opera/layer/LoadingErrorStateLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
 
 .field public final j:Landroid/widget/TextView;
 
-.field public final k:LWta;
+.field public final k:LgGa;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     .locals 3
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -42,7 +42,7 @@
     .line 7
     .line 8
     .line 9
-    const v1, 0x7f0e03c6
+    const v1, 0x7f0e03e8
 
     .line 10
     .line 11
@@ -56,7 +56,7 @@
 
     .line 16
     .line 17
-    const p1, 0x7f0b0c28
+    const p1, 0x7f0b0d4c
 
     .line 18
     .line 19
@@ -77,7 +77,7 @@
 
     .line 27
     .line 28
-    const v1, 0x7f0b0c2b
+    const v1, 0x7f0b0d4f
 
     .line 29
     .line 30
@@ -98,7 +98,7 @@
 
     .line 38
     .line 39
-    const v1, 0x7f0b0c2a
+    const v1, 0x7f0b0d4e
 
     .line 40
     .line 41
@@ -119,41 +119,40 @@
 
     .line 49
     .line 50
-    new-instance v1, LaW7;
+    new-instance v1, LeGa;
 
     .line 51
     .line 52
-    const/16 v2, 0x15
+    const/4 v2, 0x0
 
     .line 53
-    .line 54
-    invoke-direct {v1, v2, p0}, LaW7;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LeGa;-><init>(ILjava/lang/Object;)V
 
+    .line 54
     .line 55
     .line 56
-    .line 57
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 57
     .line 58
     .line 59
-    .line 60
     const/high16 p1, -0x1000000
 
+    .line 60
     .line 61
-    .line 62
     invoke-virtual {v0, p1}, Landroid/view/View;->setBackgroundColor(I)V
 
+    .line 62
     .line 63
     .line 64
+    sget-object p1, LgGa;->e:LgGa;
+
     .line 65
-    sget-object p1, LWta;->e:LWta;
-
     .line 66
-    .line 67
-    iput-object p1, p0, Lcom/snap/opera/layer/LoadingErrorStateLayerView;->k:LWta;
+    iput-object p1, p0, Lcom/snap/opera/layer/LoadingErrorStateLayerView;->k:LgGa;
 
+    .line 67
     .line 68
-    .line 69
     return-void
 .end method
 
@@ -163,7 +162,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/layer/LoadingErrorStateLayerView;->k:LWta;
+    iget-object v0, p0, Lcom/snap/opera/layer/LoadingErrorStateLayerView;->k:LgGa;
 
     .line 2
     .line 3
@@ -208,7 +207,7 @@
     move-result p1
 
     .line 12
-    invoke-static {v0, v1, p1}, LZtk;->a(Landroid/view/View;FF)V
+    invoke-static {v0, v1, p1}, LHUk;->a(Landroid/view/View;FF)V
 
     .line 13
     .line 14
@@ -236,7 +235,7 @@
     move-result p1
 
     .line 25
-    invoke-static {v0, v1, p1}, LZtk;->a(Landroid/view/View;FF)V
+    invoke-static {v0, v1, p1}, LHUk;->a(Landroid/view/View;FF)V
 
     .line 26
     .line 27
@@ -248,15 +247,15 @@
     .locals 2
 
     .line 1
-    check-cast p1, LWta;
+    check-cast p1, LgGa;
 
     .line 2
     .line 3
-    check-cast p2, LWta;
+    check-cast p2, LgGa;
 
     .line 4
     .line 5
-    iget-boolean p2, p1, LWta;->a:Z
+    iget-boolean p2, p1, LgGa;->a:Z
 
     .line 6
     .line 7
@@ -268,7 +267,7 @@
 
     .line 10
     .line 11
-    iget-object p2, p1, LWta;->b:Ljava/lang/String;
+    iget-object p2, p1, LgGa;->b:Ljava/lang/String;
 
     .line 12
     .line 13
@@ -315,7 +314,7 @@
 
     .line 33
     .line 34
-    iget-object v0, p1, LWta;->c:Ljava/lang/String;
+    iget-object v0, p1, LgGa;->c:Ljava/lang/String;
 
     .line 35
     .line 36
@@ -328,7 +327,7 @@
 
     .line 40
     .line 41
-    iget-object p1, p1, LWta;->d:Ljava/lang/String;
+    iget-object p1, p1, LgGa;->d:Ljava/lang/String;
 
     .line 42
     .line 43

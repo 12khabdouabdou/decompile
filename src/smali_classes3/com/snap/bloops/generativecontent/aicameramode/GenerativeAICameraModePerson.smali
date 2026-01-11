@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bloops/generativecontent/aicameramode/GenerativeAICameraModePerson;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'userId\':s,\'userName\':s,\'displayName\':s,\'bitmojiAvatarId\':s?,\'bitmojiSelfieId\':s?,\'isMe\':b,\'state\':r?<e>:\'[0]\'"
     typeReferences = {

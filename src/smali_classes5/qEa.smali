@@ -2,44 +2,27 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/os/Parcelable;
-
-
-# static fields
-.field public static final CREATOR:LpEa;
-
 
 # instance fields
-.field public final a:Z
+.field public final a:Landroid/content/Context;
 
-.field public final b:I
+.field public final b:Lq25;
 
-.field public final c:I
+.field public final c:Lq25;
+
+.field public final d:LOF3;
+
+.field public final e:LR0e;
+
+.field public final f:Lq25;
+
+.field public final g:LnJe;
+
+.field public final h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, LpEa;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LqEa;->CREATOR:LpEa;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>(IIZ)V
+.method public constructor <init>(Landroid/content/Context;Lq25;Lq25;LOF3;LR0e;Lq25;)V
     .locals 0
 
     .line 1
@@ -48,270 +31,75 @@
     .line 2
     .line 3
     .line 4
-    iput-boolean p3, p0, LqEa;->a:Z
+    iput-object p1, p0, LqEa;->a:Landroid/content/Context;
 
     .line 5
     .line 6
-    iput p1, p0, LqEa;->b:I
+    iput-object p2, p0, LqEa;->b:Lq25;
 
     .line 7
     .line 8
-    iput p2, p0, LqEa;->c:I
+    iput-object p3, p0, LqEa;->c:Lq25;
 
     .line 9
     .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final describeContents()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LqEa;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LqEa;
-
-    .line 12
-    .line 13
-    iget-boolean v1, p1, LqEa;->a:Z
-
-    .line 14
-    .line 15
-    iget-boolean v3, p0, LqEa;->a:Z
-
-    .line 16
-    .line 17
-    if-eq v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    iget v1, p0, LqEa;->b:I
-
-    .line 21
-    .line 22
-    iget v3, p1, LqEa;->b:I
-
-    .line 23
-    .line 24
-    if-eq v1, v3, :cond_3
-
-    .line 25
-    .line 26
-    return v2
-
-    .line 27
-    :cond_3
-    iget v1, p0, LqEa;->c:I
-
-    .line 28
-    .line 29
-    iget p1, p1, LqEa;->c:I
-
-    .line 30
-    .line 31
-    if-eq v1, p1, :cond_4
-
-    .line 32
-    .line 33
-    return v2
-
-    .line 34
-    :cond_4
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, LqEa;->a:Z
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    const/16 v0, 0x4cf
-
-    .line 6
-    .line 7
-    goto :goto_0
-
-    .line 8
-    :cond_0
-    const/16 v0, 0x4d5
-
-    .line 9
-    .line 10
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
+    iput-object p4, p0, LqEa;->d:LOF3;
 
     .line 11
     .line 12
-    iget v1, p0, LqEa;->b:I
+    iput-object p5, p0, LqEa;->e:LR0e;
 
     .line 13
     .line 14
-    add-int/2addr v0, v1
+    iput-object p6, p0, LqEa;->f:Lq25;
 
     .line 15
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 16
-    .line 17
-    iget v1, p0, LqEa;->c:I
+    sget-object p1, Lqbb;->Z:Lqbb;
 
-    .line 18
-    .line 19
-    add-int/2addr v0, v1
-
-    .line 20
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "LodaGeofenceCofConfig(geofenceEnabled="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-boolean v1, p0, LqEa;->a:Z
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", baseRadiusMeters="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
     .line 17
     .line 18
-    iget v1, p0, LqEa;->b:I
+    const-string p2, "LivePausedNotificationManager"
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-static {p1, p1, p2}, Lnfe;->e(Lqbb;Lqbb;Ljava/lang/String;)Lnp0;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, ", minIntervalSecs="
+    move-result-object p1
 
     .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance p2, LnJe;
 
+    .line 25
     .line 26
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
     .line 27
     .line 28
-    iget v1, p0, LqEa;->c:I
-
     .line 29
+    iput-object p2, p0, LqEa;->g:LnJe;
+
     .line 30
-    const-string v2, ")"
-
     .line 31
-    .line 32
-    invoke-static {v0, v1, v2}, LEU0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
+    .line 32
     .line 33
+    new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 34
     .line 35
-    move-result-object v0
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
 
     .line 36
-    return-object v0
-.end method
+    .line 37
+    .line 38
+    iput-object p2, p0, LqEa;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 0
-
-    .line 1
-    iget-boolean p2, p0, LqEa;->a:Z
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 4
-    .line 5
-    .line 6
-    iget p2, p0, LqEa;->b:I
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 9
-    .line 10
-    .line 11
-    iget p2, p0, LqEa;->c:I
-
-    .line 12
-    .line 13
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 14
-    .line 15
-    .line 16
+    .line 39
+    .line 40
     return-void
 .end method

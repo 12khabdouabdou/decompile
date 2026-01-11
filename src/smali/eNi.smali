@@ -1,256 +1,174 @@
-.class public final enum LeNi;
-.super Ljava/lang/Enum;
+.class public final LeNi;
+.super Lcom/snapchat/client/messaging/TaskQueueListenerDelegate;
 .source "SourceFile"
 
-# interfaces
-.implements LcTb;
 
+# instance fields
+.field public final a:Ly45;
 
-# static fields
-.field public static final synthetic X:[LeNi;
+.field public final b:LDBe;
 
-.field public static final enum a:LeNi;
+.field public final c:LZL4;
 
-.field public static final enum b:LeNi;
+.field public final d:Ly45;
 
-.field public static final enum c:LeNi;
+.field public final e:Ly45;
 
-.field public static final enum t:LeNi;
+.field public final f:Ly45;
+
+.field public final g:LOF3;
+
+.field public final h:LREi;
+
+.field public final i:Lnp0;
+
+.field public final j:LREi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
+.method public constructor <init>(Ly45;Ly45;LDBe;LZL4;Ly45;Ly45;Ly45;LOF3;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x3
+    invoke-direct {p0}, Lcom/snapchat/client/messaging/TaskQueueListenerDelegate;-><init>()V
 
     .line 2
-    const/4 v1, 0x2
-
     .line 3
-    const/4 v2, 0x1
-
     .line 4
-    const/4 v3, 0x0
+    iput-object p1, p0, LeNi;->a:Ly45;
 
     .line 5
-    new-instance v4, LeNi;
-
     .line 6
+    iput-object p3, p0, LeNi;->b:LDBe;
+
     .line 7
-    const-string v5, "TRIGGER"
-
     .line 8
-    .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p4, p0, LeNi;->c:LZL4;
 
+    .line 9
     .line 10
+    iput-object p5, p0, LeNi;->d:Ly45;
+
     .line 11
     .line 12
-    sput-object v4, LeNi;->a:LeNi;
+    iput-object p6, p0, LeNi;->e:Ly45;
 
     .line 13
     .line 14
-    new-instance v5, LeNi;
+    iput-object p7, p0, LeNi;->f:Ly45;
 
     .line 15
     .line 16
-    const-string v6, "INIT"
+    iput-object p8, p0, LeNi;->g:LOF3;
 
     .line 17
     .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance p1, LKAc;
 
     .line 19
     .line 20
+    const-class p4, LDBe;
+
     .line 21
-    sput-object v5, LeNi;->b:LeNi;
-
     .line 22
-    .line 23
-    new-instance v6, LeNi;
+    const-string p5, "get"
 
+    .line 23
     .line 24
+    move-object p3, p2
+
     .line 25
-    const-string v7, "PERSISTED"
+    const/4 p2, 0x0
 
     .line 26
+    const-string p6, "get()Ljava/lang/Object;"
+
     .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 28
+    const/4 p7, 0x0
+
     .line 29
+    const/16 p8, 0x11
+
     .line 30
-    sput-object v6, LeNi;->c:LeNi;
-
     .line 31
-    .line 32
-    new-instance v7, LeNi;
+    invoke-direct/range {p1 .. p8}, LKAc;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
+    .line 32
     .line 33
     .line 34
-    const-string v8, "IS_FULL"
+    new-instance p2, LREi;
 
     .line 35
     .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 37
     .line 38
     .line 39
-    sput-object v7, LeNi;->t:LeNi;
+    iput-object p2, p0, LeNi;->h:LREi;
 
     .line 40
     .line 41
-    const/4 v8, 0x4
+    sget-object p1, LO3c;->Z:LO3c;
 
     .line 42
-    new-array v8, v8, [LeNi;
-
     .line 43
+    const-string p2, "TaskQueueListenerDelegate"
+
     .line 44
-    aput-object v4, v8, v3
-
     .line 45
-    .line 46
-    aput-object v5, v8, v2
+    invoke-static {p1, p1, p2}, Lnfe;->f(LO3c;LO3c;Ljava/lang/String;)Lnp0;
 
+    .line 46
     .line 47
     .line 48
-    aput-object v6, v8, v1
+    move-result-object p1
 
     .line 49
+    iput-object p1, p0, LeNi;->i:Lnp0;
+
     .line 50
-    aput-object v7, v8, v0
-
     .line 51
+    new-instance p1, LkRh;
+
     .line 52
-    sput-object v8, LeNi;->X:[LeNi;
-
     .line 53
+    const/4 p2, 0x5
+
     .line 54
+    invoke-direct {p1, p2, p0}, LkRh;-><init>(ILjava/lang/Object;)V
+
+    .line 55
+    .line 56
+    .line 57
+    new-instance p2, LREi;
+
+    .line 58
+    .line 59
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 60
+    .line 61
+    .line 62
+    iput-object p2, p0, LeNi;->j:LREi;
+
+    .line 63
+    .line 64
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LeNi;
-    .locals 1
-
-    .line 1
-    const-class v0, LeNi;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LeNi;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LeNi;
-    .locals 1
-
-    .line 1
-    sget-object v0, LeNi;->X:[LeNi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LeNi;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Ljava/lang/String;)LqTb;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final b(Ljava/lang/String;Ljava/lang/Enum;)LqTb;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->W(LcTb;Ljava/lang/String;Ljava/lang/Enum;)LqTb;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final c()LqTb;
+.method public final onNetworkConstraintFailed(Lcom/snapchat/client/messaging/Task;)V
     .locals 1
 
     .line 1
-    new-instance v0, LqTb;
+    iget-object v0, p0, LeNi;->c:LZL4;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, LqTb;-><init>(LcTb;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public final d(Ljava/lang/String;Z)LqTb;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->Y(LcTb;Ljava/lang/String;Z)LqTb;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final f()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lhcd;->K1:Lhcd;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+    invoke-virtual {v0}, LZL4;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -258,16 +176,902 @@
     move-result-object v0
 
     .line 7
-    return-object v0
+    check-cast v0, LSc0;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {p1}, LSc0;->a(Lcom/snapchat/client/messaging/Task;)Lm8g;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    invoke-virtual {p1}, Lm8g;->b()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    if-eqz v0, :cond_0
+
+    .line 21
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 24
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 25
+    .line 26
+    iget-object v0, p0, LeNi;->d:Ly45;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    check-cast v0, Lq8g;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, p1}, Lq8g;->d(Lm8g;)V
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_1
+    return-void
 .end method
 
-.method public final g()Lhcd;
-    .locals 1
+.method public final onTaskComplete(Lcom/snapchat/client/messaging/Task;Lcom/snapchat/client/messaging/TaskResult;)V
+    .locals 4
 
     .line 1
-    sget-object v0, Lhcd;->K1:Lhcd;
+    iget-object v0, p0, LeNi;->b:LDBe;
 
     .line 2
     .line 3
-    return-object v0
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LCIa;
+
+    .line 8
+    .line 9
+    invoke-static {p1, v0}, Lzwj;->j(Lcom/snapchat/client/messaging/Task;LCIa;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    new-instance v1, LdNi;
+
+    .line 14
+    .line 15
+    const/4 v2, 0x1
+
+    .line 16
+    invoke-direct {v1, p0, p1, v2}, LdNi;-><init>(LeNi;Lcom/snapchat/client/messaging/Task;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    iget-object v1, p0, LeNi;->e:Ly45;
+
+    .line 24
+    .line 25
+    invoke-virtual {v1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    check-cast v1, Liu6;
+
+    .line 30
+    .line 31
+    iget-object v2, p0, LeNi;->i:Lnp0;
+
+    .line 32
+    .line 33
+    invoke-virtual {v1, v2, v0}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+
+    .line 34
+    .line 35
+    .line 36
+    iget-object v0, p0, LeNi;->c:LZL4;
+
+    .line 37
+    .line 38
+    invoke-virtual {v0}, LZL4;->get()Ljava/lang/Object;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    check-cast v0, LSc0;
+
+    .line 43
+    .line 44
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-static {p1, p2}, LSc0;->b(Lcom/snapchat/client/messaging/Task;Lcom/snapchat/client/messaging/TaskResult;)Lt8g;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    invoke-virtual {p1}, Lcom/snapchat/client/messaging/Task;->getType()Lcom/snapchat/client/messaging/TaskType;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v1
+
+    .line 55
+    sget-object v2, Lcom/snapchat/client/messaging/TaskType;->MESSAGE:Lcom/snapchat/client/messaging/TaskType;
+
+    .line 56
+    .line 57
+    if-ne v1, v2, :cond_1
+
+    .line 58
+    .line 59
+    sget-object v1, LcNi;->a:[I
+
+    .line 60
+    .line 61
+    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v2
+
+    .line 65
+    aget v1, v1, v2
+
+    .line 66
+    .line 67
+    const/4 v2, 0x1
+
+    .line 68
+    iget-object v3, p0, LeNi;->f:Ly45;
+
+    .line 69
+    .line 70
+    if-eq v1, v2, :cond_0
+
+    .line 71
+    .line 72
+    const/4 v2, 0x2
+
+    .line 73
+    if-eq v1, v2, :cond_1
+
+    .line 74
+    .line 75
+    invoke-virtual {v3}, Ly45;->get()Ljava/lang/Object;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v1
+
+    .line 79
+    check-cast v1, LKbh;
+
+    .line 80
+    .line 81
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 82
+    .line 83
+    .line 84
+    goto :goto_0
+
+    .line 85
+    :cond_0
+    invoke-virtual {v3}, Ly45;->get()Ljava/lang/Object;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object v1
+
+    .line 89
+    check-cast v1, LKbh;
+
+    .line 90
+    .line 91
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 92
+    .line 93
+    .line 94
+    :cond_1
+    :goto_0
+    sget-object v1, LcNi;->a:[I
+
+    .line 95
+    .line 96
+    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 97
+    .line 98
+    .line 99
+    move-result p2
+
+    .line 100
+    aget p2, v1, p2
+
+    .line 101
+    .line 102
+    iget-object v1, p0, LeNi;->d:Ly45;
+
+    .line 103
+    .line 104
+    packed-switch p2, :pswitch_data_0
+
+    .line 105
+    .line 106
+    .line 107
+    new-instance p1, LwOc;
+
+    .line 108
+    .line 109
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 110
+    .line 111
+    .line 112
+    throw p1
+
+    .line 113
+    :pswitch_0
+    invoke-virtual {v0}, Lt8g;->a()Lm8g;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object p1
+
+    .line 117
+    invoke-virtual {p1}, Lm8g;->b()Z
+
+    .line 118
+    .line 119
+    .line 120
+    move-result p1
+
+    .line 121
+    if-eqz p1, :cond_2
+
+    .line 122
+    .line 123
+    invoke-virtual {v1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object p1
+
+    .line 127
+    check-cast p1, Lq8g;
+
+    .line 128
+    .line 129
+    invoke-virtual {v0}, Lt8g;->a()Lm8g;
+
+    .line 130
+    .line 131
+    .line 132
+    move-result-object p2
+
+    .line 133
+    invoke-virtual {p1, p2}, Lq8g;->c(Lm8g;)V
+
+    .line 134
+    .line 135
+    .line 136
+    return-void
+
+    .line 137
+    :pswitch_1
+    invoke-virtual {p0, p1}, LeNi;->onTaskQueued(Lcom/snapchat/client/messaging/Task;)V
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-virtual {v0}, Lt8g;->a()Lm8g;
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-object p1
+
+    .line 144
+    invoke-virtual {p1}, Lm8g;->b()Z
+
+    .line 145
+    .line 146
+    .line 147
+    move-result p1
+
+    .line 148
+    if-eqz p1, :cond_2
+
+    .line 149
+    .line 150
+    invoke-virtual {v1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object p1
+
+    .line 154
+    check-cast p1, Lq8g;
+
+    .line 155
+    .line 156
+    invoke-virtual {v0}, Lt8g;->a()Lm8g;
+
+    .line 157
+    .line 158
+    .line 159
+    move-result-object p2
+
+    .line 160
+    invoke-virtual {p1, p2}, Lq8g;->d(Lm8g;)V
+
+    .line 161
+    .line 162
+    .line 163
+    return-void
+
+    .line 164
+    :pswitch_2
+    invoke-virtual {v0}, Lt8g;->a()Lm8g;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object p1
+
+    .line 168
+    invoke-virtual {p1}, Lm8g;->b()Z
+
+    .line 169
+    .line 170
+    .line 171
+    move-result p1
+
+    .line 172
+    if-eqz p1, :cond_2
+
+    .line 173
+    .line 174
+    invoke-virtual {v1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 175
+    .line 176
+    .line 177
+    move-result-object p1
+
+    .line 178
+    check-cast p1, Lq8g;
+
+    .line 179
+    .line 180
+    invoke-virtual {p1, v0}, Lq8g;->f(Lt8g;)V
+
+    .line 181
+    .line 182
+    .line 183
+    :cond_2
+    :pswitch_3
+    return-void
+
+    .line 184
+    nop
+
+    .line 185
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_2
+        :pswitch_1
+        :pswitch_2
+        :pswitch_2
+        :pswitch_0
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method public final onTaskQueued(Lcom/snapchat/client/messaging/Task;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, LeNi;->a:Ly45;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LmF6;
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LeNi;->j:LREi;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    check-cast v1, Ljava/lang/Boolean;
+
+    .line 16
+    .line 17
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    invoke-static {v1}, LBSk;->f(Z)Lcom/snap/messaging/job/ArroyoBackgroundWakeupDurableJob;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    invoke-interface {v0, v1}, LmF6;->n(LOE6;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    iget-object v1, p0, LeNi;->e:Ly45;
+
+    .line 34
+    .line 35
+    invoke-virtual {v1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v2
+
+    .line 39
+    check-cast v2, Liu6;
+
+    .line 40
+    .line 41
+    iget-object v3, p0, LeNi;->i:Lnp0;
+
+    .line 42
+    .line 43
+    invoke-virtual {v2, v3, v0}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+
+    .line 44
+    .line 45
+    .line 46
+    iget-object v0, p0, LeNi;->b:LDBe;
+
+    .line 47
+    .line 48
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
+    check-cast v0, LCIa;
+
+    .line 53
+    .line 54
+    invoke-static {p1, v0}, Lzwj;->j(Lcom/snapchat/client/messaging/Task;LCIa;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v0
+
+    .line 58
+    new-instance v2, LdNi;
+
+    .line 59
+    .line 60
+    const/4 v4, 0x2
+
+    .line 61
+    invoke-direct {v2, p0, p1, v4}, LdNi;-><init>(LeNi;Lcom/snapchat/client/messaging/Task;I)V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v0
+
+    .line 68
+    invoke-virtual {v1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v1
+
+    .line 72
+    check-cast v1, Liu6;
+
+    .line 73
+    .line 74
+    invoke-virtual {v1, v3, v0}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+
+    .line 75
+    .line 76
+    .line 77
+    invoke-virtual {p1}, Lcom/snapchat/client/messaging/Task;->getType()Lcom/snapchat/client/messaging/TaskType;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    sget-object v0, Lcom/snapchat/client/messaging/TaskType;->MESSAGE:Lcom/snapchat/client/messaging/TaskType;
+
+    .line 82
+    .line 83
+    if-ne p1, v0, :cond_0
+
+    .line 84
+    .line 85
+    iget-object p1, p0, LeNi;->f:Ly45;
+
+    .line 86
+    .line 87
+    invoke-virtual {p1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object p1
+
+    .line 91
+    check-cast p1, LKbh;
+
+    .line 92
+    .line 93
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 94
+    .line 95
+    .line 96
+    :cond_0
+    return-void
+.end method
+
+.method public final onTaskStarted(Lcom/snapchat/client/messaging/Task;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, LeNi;->b:LDBe;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    check-cast v1, LCIa;
+
+    .line 8
+    .line 9
+    invoke-static {p1, v1}, Lzwj;->j(Lcom/snapchat/client/messaging/Task;LCIa;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    new-instance v2, LdNi;
+
+    .line 14
+    .line 15
+    const/4 v3, 0x2
+
+    .line 16
+    invoke-direct {v2, p0, p1, v3}, LdNi;-><init>(LeNi;Lcom/snapchat/client/messaging/Task;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    iget-object v2, p0, LeNi;->e:Ly45;
+
+    .line 24
+    .line 25
+    invoke-virtual {v2}, Ly45;->get()Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v3
+
+    .line 29
+    check-cast v3, Liu6;
+
+    .line 30
+    .line 31
+    iget-object v4, p0, LeNi;->i:Lnp0;
+
+    .line 32
+    .line 33
+    invoke-virtual {v3, v4, v1}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    check-cast v0, LCIa;
+
+    .line 41
+    .line 42
+    invoke-static {p1, v0}, Lzwj;->j(Lcom/snapchat/client/messaging/Task;LCIa;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    new-instance v1, LdNi;
+
+    .line 47
+    .line 48
+    const/4 v3, 0x0
+
+    .line 49
+    invoke-direct {v1, p0, p1, v3}, LdNi;-><init>(LeNi;Lcom/snapchat/client/messaging/Task;I)V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v0
+
+    .line 56
+    invoke-virtual {v2}, Ly45;->get()Ljava/lang/Object;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v1
+
+    .line 60
+    check-cast v1, Liu6;
+
+    .line 61
+    .line 62
+    invoke-virtual {v1, v4, v0}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+
+    .line 63
+    .line 64
+    .line 65
+    iget-object v0, p0, LeNi;->c:LZL4;
+
+    .line 66
+    .line 67
+    invoke-virtual {v0}, LZL4;->get()Ljava/lang/Object;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v0
+
+    .line 71
+    check-cast v0, LSc0;
+
+    .line 72
+    .line 73
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 74
+    .line 75
+    .line 76
+    invoke-static {p1}, LSc0;->a(Lcom/snapchat/client/messaging/Task;)Lm8g;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v0
+
+    .line 80
+    invoke-virtual {v0}, Lm8g;->b()Z
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v1
+
+    .line 84
+    if-eqz v1, :cond_0
+
+    .line 85
+    .line 86
+    invoke-virtual {v0}, Lm8g;->a()Lcom/snapchat/client/messaging/ContentType;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v1
+
+    .line 90
+    sget-object v2, Lcom/snapchat/client/messaging/ContentType;->STICKER:Lcom/snapchat/client/messaging/ContentType;
+
+    .line 91
+    .line 92
+    if-eq v1, v2, :cond_0
+
+    .line 93
+    .line 94
+    iget-object v1, p0, LeNi;->d:Ly45;
+
+    .line 95
+    .line 96
+    invoke-virtual {v1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object v1
+
+    .line 100
+    check-cast v1, Lq8g;
+
+    .line 101
+    .line 102
+    invoke-virtual {v1, v0}, Lq8g;->e(Lm8g;)V
+
+    .line 103
+    .line 104
+    .line 105
+    :cond_0
+    invoke-virtual {p1}, Lcom/snapchat/client/messaging/Task;->getType()Lcom/snapchat/client/messaging/TaskType;
+
+    .line 106
+    .line 107
+    .line 108
+    move-result-object p1
+
+    .line 109
+    sget-object v0, Lcom/snapchat/client/messaging/TaskType;->MESSAGE:Lcom/snapchat/client/messaging/TaskType;
+
+    .line 110
+    .line 111
+    if-ne p1, v0, :cond_1
+
+    .line 112
+    .line 113
+    iget-object p1, p0, LeNi;->f:Ly45;
+
+    .line 114
+    .line 115
+    invoke-virtual {p1}, Ly45;->get()Ljava/lang/Object;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object p1
+
+    .line 119
+    check-cast p1, LKbh;
+
+    .line 120
+    .line 121
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 122
+    .line 123
+    .line 124
+    :cond_1
+    return-void
 .end method

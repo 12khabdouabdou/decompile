@@ -13,40 +13,39 @@
     .line 2
     .line 3
     .line 4
-    new-instance p1, LZh2;
+    new-instance p1, LOq2;
 
     .line 5
     .line 6
-    const/16 v0, 0xa
+    const/4 v0, 0x3
 
     .line 7
-    .line 8
-    invoke-direct {p1, v0, p0}, LZh2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, LOq2;-><init>(ILjava/lang/Object;)V
 
+    .line 8
     .line 9
     .line 10
+    new-instance v0, LREi;
+
     .line 11
-    new-instance v0, LXfi;
-
     .line 12
-    .line 13
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
     iget-object p1, p0, Lcom/snap/core/application/SnapContextWrapper;->e:Ljava/util/LinkedHashMap;
 
+    .line 16
     .line 17
-    .line 18
     const-string v1, "layout_inflater"
 
+    .line 18
     .line 19
-    .line 20
     invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 20
     .line 21
     .line 22
-    .line 23
     return-void
 .end method

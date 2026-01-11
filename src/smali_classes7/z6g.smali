@@ -1,175 +1,32 @@
 .class public final Lz6g;
-.super LrE9;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lcom/snap/settings/core/ui/SettingsFragmentV3;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'navigator\':r:\'[0]\',\'subscriptionShopGrpcService\':r:\'[1]\',\'subscriptionStore\':r:\'[2]\',\'alertPresenter\':r:\'[3]\',\'notificationPresenter\':r:\'[4]\',\'loggingContext\':r?:\'[5]\',\'useMockBuddyPassService\':b@?,\'completionHandler\':f?(b@)"
+    typeReferences = {
+        Lcom/snap/composer/navigation/INavigator;,
+        Lcom/snap/composer/networking/GrpcServiceProtocol;,
+        Lcom/snap/plus/LocalSubscriptionStore;,
+        Lcom/snap/composer/foundation/IAlertPresenter;,
+        Lcom/snap/composer/foundation/INotificationPresenter;,
+        Lcom/snap/modules/plus_api/LoggingContext;
+    }
+.end annotation
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/snap/settings/core/ui/SettingsFragmentV3;I)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput p2, p0, Lz6g;->a:I
-
-    iput-object p1, p0, Lz6g;->b:Lcom/snap/settings/core/ui/SettingsFragmentV3;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    iget v0, p0, Lz6g;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lz6g;->b:Lcom/snap/settings/core/ui/SettingsFragmentV3;
-
-    .line 7
-    .line 8
-    iget-object v0, v0, Lcom/snap/settings/core/ui/SettingsFragmentV3;->z0:Lnwf;
-
-    .line 9
-    .line 10
-    if-eqz v0, :cond_0
-
-    .line 11
-    .line 12
-    sget-object v0, Lg6g;->Z:Lg6g;
-
-    .line 13
-    .line 14
-    const-string v1, "SettingsFragmentV3"
-
-    .line 15
-    .line 16
-    invoke-static {v0, v0, v1}, Ln9f;->h(Lg6g;Lg6g;Ljava/lang/String;)LWm0;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    new-instance v1, LBre;
-
-    .line 21
-    .line 22
-    invoke-direct {v1, v0}, LBre;-><init>(LWm0;)V
-
-    .line 23
-    .line 24
-    .line 25
-    return-object v1
-
-    .line 26
-    :cond_0
-    const-string v0, "schedulersProvider"
-
-    .line 27
-    .line 28
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    const/4 v0, 0x0
-
-    .line 32
-    throw v0
-
-    .line 33
-    :pswitch_0
-    iget-object v0, p0, Lz6g;->b:Lcom/snap/settings/core/ui/SettingsFragmentV3;
-
-    .line 34
-    .line 35
-    iget-object v1, v0, Lcom/snap/settings/core/ui/SettingsFragmentV3;->C0:LXfi;
-
-    .line 36
-    .line 37
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v1
-
-    .line 41
-    check-cast v1, Lzre;
-
-    .line 42
-    .line 43
-    check-cast v1, LBre;
-
-    .line 44
-    .line 45
-    invoke-virtual {v1}, LBre;->i()Lgn0;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v1
-
-    .line 49
-    new-instance v2, LwVe;
-
-    .line 50
-    .line 51
-    const/16 v3, 0x1a
-
-    .line 52
-    .line 53
-    invoke-direct {v2, v3, v0}, LwVe;-><init>(ILjava/lang/Object;)V
-
-    .line 54
-    .line 55
-    .line 56
-    invoke-virtual {v0}, Lcom/snap/settings/core/ui/SettingsFragmentV3;->U1()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 57
-    .line 58
-    .line 59
-    move-result-object v0
-
-    .line 60
-    invoke-static {v1, v2, v0}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 61
-    .line 62
-    .line 63
-    sget-object v0, Li7j;->a:Li7j;
-
-    .line 64
-    .line 65
-    return-object v0
-
-    .line 66
-    nop
-
-    .line 67
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

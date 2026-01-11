@@ -1,66 +1,174 @@
 .class public final LZwi;
-.super Lo17;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'conversationId\':s,\'timestamp\':d@?,\'callId\':s,\'onStartCall\':f?(b@),\'onDWebUpsellLearnMore\':f?(),\'displayReportPage\':f?(),\'displayFeedbackTray\':f()"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _callId:Ljava/lang/String;
+
+.field private _conversationId:Ljava/lang/String;
+
+.field private _displayFeedbackTray:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _displayReportPage:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onDWebUpsellLearnMore:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onStartCall:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
+
+.field private _timestamp:Ljava/lang/Double;
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/Double;",
+            "Ljava/lang/String;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LZwi;->_conversationId:Ljava/lang/String;
+
     .line 3
+    iput-object p2, p0, LZwi;->_timestamp:Ljava/lang/Double;
+
     .line 4
-    const/4 v0, 0x0
+    iput-object p3, p0, LZwi;->_callId:Ljava/lang/String;
 
     .line 5
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object p4, p0, LZwi;->_onStartCall:Lkotlin/jvm/functions/Function1;
 
     .line 6
+    iput-object p5, p0, LZwi;->_onDWebUpsellLearnMore:Lkotlin/jvm/functions/Function0;
+
     .line 7
-    const/4 v0, -0x1
+    iput-object p6, p0, LZwi;->_displayReportPage:Lkotlin/jvm/functions/Function0;
 
     .line 8
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+    iput-object p7, p0, LZwi;->_displayFeedbackTray:Lkotlin/jvm/functions/Function0;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lpbi;)V
+    .locals 0
 
     .line 9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 10
+    iput-object p1, p0, LZwi;->_conversationId:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    .line 11
+    iput-object p1, p0, LZwi;->_timestamp:Ljava/lang/Double;
+
+    .line 12
+    iput-object p2, p0, LZwi;->_callId:Ljava/lang/String;
+
+    .line 13
+    iput-object p1, p0, LZwi;->_onStartCall:Lkotlin/jvm/functions/Function1;
+
+    .line 14
+    iput-object p1, p0, LZwi;->_onDWebUpsellLearnMore:Lkotlin/jvm/functions/Function0;
+
+    .line 15
+    iput-object p1, p0, LZwi;->_displayReportPage:Lkotlin/jvm/functions/Function0;
+
+    .line 16
+    iput-object p3, p0, LZwi;->_displayFeedbackTray:Lkotlin/jvm/functions/Function0;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 1
+.method public final a(Ls9i;)V
+    .locals 0
 
     .line 1
-    :cond_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    iput-object p1, p0, LZwi;->_displayReportPage:Lkotlin/jvm/functions/Function0;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    return-void
+.end method
 
-    .line 5
-    if-eqz v0, :cond_1
+.method public final b(Lkotlin/jvm/functions/Function0;)V
+    .locals 0
 
-    .line 6
-    .line 7
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    .line 1
+    iput-object p1, p0, LZwi;->_onDWebUpsellLearnMore:Lkotlin/jvm/functions/Function0;
 
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 11
-    if-nez v0, :cond_0
+.method public final c(Lkotlin/jvm/functions/Function1;)V
+    .locals 0
 
-    .line 12
-    .line 13
-    :cond_1
-    return-object p0
+    .line 1
+    iput-object p1, p0, LZwi;->_onStartCall:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LZwi;->_timestamp:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-void
 .end method

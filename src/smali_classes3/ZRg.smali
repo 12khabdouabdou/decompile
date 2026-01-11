@@ -2,36 +2,27 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# instance fields
-.field public a:Z
-
-.field public b:F
-
-.field public final synthetic c:Lcom/snap/component/tray/SnapTray;
+# interfaces
+.implements LhKb;
 
 
-# direct methods
-.method public constructor <init>(Lcom/snap/component/tray/SnapTray;)V
-    .locals 0
+# virtual methods
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 2
     .line 3
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
     .line 4
-    iput-object p1, p0, LZRg;->c:Lcom/snap/component/tray/SnapTray;
-
     .line 5
-    .line 6
-    const/high16 p1, -0x40800000    # -1.0f
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
+    .line 6
     .line 7
     .line 8
-    iput p1, p0, LZRg;->b:F
-
-    .line 9
-    .line 10
-    return-void
+    return-object v1
 .end method

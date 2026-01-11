@@ -1,212 +1,166 @@
-.class public LKLe;
-.super LpMe;
+.class public final LKLe;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LiK1;
 
 
 # instance fields
-.field public s:LLLe;
-
-.field public t:LZ8d;
+.field public final a:LnJ1;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(LRO2$a;)V
+    .locals 4
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "REGISTRATION_USER_EXIT_PROMPT"
-
     .line 4
+    new-instance v0, LnJ1;
+
     .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
     .line 6
-    .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+    invoke-direct {v0}, LnJ1;-><init>()V
 
+    .line 7
     .line 8
     .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+    new-instance v1, LnJ1$b;
 
     .line 10
     .line 11
-    move-object v0, p0
+    invoke-direct {v1}, LnJ1$b;-><init>()V
 
     .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
     .line 13
     .line 14
+    iget v2, p1, LRO2$a;->a:I
+
     .line 15
+    .line 16
+    const/4 v3, 0x3
+
+    .line 17
+    if-ne v2, v3, :cond_0
+
+    .line 18
+    .line 19
+    iget-object p1, p1, LRO2$a;->b:Le57;
+
+    .line 20
+    .line 21
+    check-cast p1, Lsch;
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 25
+    :goto_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 26
+    .line 27
+    .line 28
+    const/4 v2, 0x1
+
+    .line 29
+    iput v2, v1, LnJ1$b;->a:I
+
+    .line 30
+    .line 31
+    iput-object p1, v1, LnJ1$b;->b:Le57;
+
+    .line 32
+    .line 33
+    iput-object v1, v0, LnJ1;->t:LnJ1$b;
+
+    .line 34
+    .line 35
+    iput-object v0, p0, LKLe;->a:LnJ1;
+
+    .line 36
+    .line 37
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    new-array v1, v0, [B
-
-    .line 3
-    .line 4
-    iget-object v2, p0, LpMe;->l:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 7
-    .line 8
-    .line 9
-    const/4 v0, 0x3
-
-    .line 10
-    iget-object v2, p0, LKLe;->s:LLLe;
-
-    .line 11
-    .line 12
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 13
-    .line 14
-    .line 15
-    const/4 v0, 0x4
-
-    .line 16
-    iget-object v2, p0, LpMe;->k:Ljava/lang/Boolean;
-
-    .line 17
-    .line 18
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 19
-    .line 20
-    .line 21
-    const/4 v0, 0x5
-
-    .line 22
-    iget-object v2, p0, LKLe;->t:LZ8d;
-
-    .line 23
-    .line 24
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 25
-    .line 26
-    .line 27
-    const/4 v0, 0x6
-
-    .line 28
-    iget-object v2, p0, LpMe;->n:Ljava/lang/String;
-
-    .line 29
-    .line 30
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 31
-    .line 32
-    .line 33
-    const/4 v0, 0x7
-
-    .line 34
-    iget-object v2, p0, LpMe;->j:Ljava/lang/String;
-
-    .line 35
-    .line 36
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 37
-    .line 38
-    .line 39
-    const/16 v0, 0x8
-
-    .line 40
-    .line 41
-    iget-object v2, p0, LpMe;->m:Ljava/lang/String;
-
-    .line 42
-    .line 43
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 44
-    .line 45
-    .line 46
-    const/16 v0, 0x9
-
-    .line 47
-    .line 48
-    iget-object v2, p0, LpMe;->o:Ljava/lang/Boolean;
-
-    .line 49
-    .line 50
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 51
-    .line 52
-    .line 53
-    const/16 v0, 0xa
-
-    .line 54
-    .line 55
-    iget-object v2, p0, LpMe;->p:LsLe;
-
-    .line 56
-    .line 57
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 58
-    .line 59
-    .line 60
-    const/16 v0, 0xb
-
-    .line 61
-    .line 62
-    iget-object v2, p0, LpMe;->r:LJ20;
-
-    .line 63
-    .line 64
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 65
-    .line 66
-    .line 67
-    const/16 v0, 0xc
-
-    .line 68
-    .line 69
-    iget-object v2, p0, LpMe;->q:LJ20;
-
-    .line 70
-    .line 71
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 72
-    .line 73
-    .line 74
-    invoke-virtual {p1, v1}, LAK3;->m([B)V
-
-    .line 75
-    .line 76
-    .line 77
-    return-void
-.end method
-
-.method public final d()I
+.method public final b()Ljava/lang/Long;
     .locals 1
 
     .line 1
-    const/16 v0, 0x1138
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final e()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final f()Ljava/lang/Long;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final getData()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LKLe;->a:LnJ1;
 
     .line 2
     .line 3
-    return v0
+    return-object v0
+.end method
+
+.method public final getId()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final getRequestId()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final getVersion()Ljava/lang/Long;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
 .end method

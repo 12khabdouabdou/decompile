@@ -35,7 +35,7 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/core/Observer;
 
-.field public final b:LkS5;
+.field public final b:LoO7;
 
 .field public c:Z
 
@@ -43,7 +43,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Observer;LkS5;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Observer;LoO7;)V
     .locals 0
 
     .line 1
@@ -56,7 +56,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize$DematerializeObserver;->b:LkS5;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize$DematerializeObserver;->b:LoO7;
 
     .line 7
     .line 8
@@ -65,7 +65,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -73,7 +73,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->c()Z
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
 
     .line 4
     .line 5
@@ -234,7 +234,7 @@
     .line 27
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize$DematerializeObserver;->b:LkS5;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize$DematerializeObserver;->b:LoO7;
 
     .line 28
     .line 29
@@ -367,7 +367,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 4
     .line 5

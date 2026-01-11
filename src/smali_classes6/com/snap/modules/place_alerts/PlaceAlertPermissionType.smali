@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'PARENT_NOTIFICATION_SETTING_OFF\':0,\'LOCATION_SETTING_NOT_ALWAYS\':1,\'LOCATION_SETTING_NOT_SHARING_LOCATION\':2"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

@@ -1,78 +1,124 @@
 .class public final Lo0j;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:Llo4;
+.field public final synthetic a:I
+
+.field public final synthetic b:Lio/reactivex/rxjava3/core/MaybeEmitter;
 
 
 # direct methods
-.method public constructor <init>(LXog;)V
-    .locals 1
+.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/MaybeEmitter;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lo0j;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Llo4;
+    iput-object p1, p0, Lo0j;->b:Lio/reactivex/rxjava3/core/MaybeEmitter;
 
-    .line 5
-    .line 6
-    invoke-direct {v0, p1}, Llo4;-><init>(LXog;)V
+    const/4 p1, 0x1
 
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, Lo0j;->a:Llo4;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Llo4;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lo0j;->a:Llo4;
+    iget v0, p0, Lo0j;->a:I
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public loadProductImages(LPNc;)V
-    .locals 3
-    .annotation runtime Lv6i;
-        threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
-    .end annotation
-
-    .line 1
-    iget-object v0, p1, LPNc;->a:Ljava/util/List;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lo0j;->a:Llo4;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    iget-object v2, p1, LPNc;->b:LO41;
-
     .line 6
+    check-cast p1, Landroid/view/View;
+
     .line 7
-    iget p1, p1, LPNc;->c:I
-
     .line 8
-    .line 9
-    invoke-virtual {v1, p1, v2, v0}, Llo4;->d(ILO41;Ljava/util/List;)V
+    iget-object p1, p0, Lo0j;->b:Lio/reactivex/rxjava3/core/MaybeEmitter;
 
+    .line 9
     .line 10
+    invoke-interface {p1}, Lio/reactivex/rxjava3/core/MaybeEmitter;->onComplete()V
+
     .line 11
     .line 12
-    return-void
+    .line 13
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 14
+    .line 15
+    return-object p1
+
+    .line 16
+    :pswitch_0
+    check-cast p1, Landroid/view/View;
+
+    .line 17
+    .line 18
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 19
+    .line 20
+    iget-object v0, p0, Lo0j;->b:Lio/reactivex/rxjava3/core/MaybeEmitter;
+
+    .line 21
+    .line 22
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/MaybeEmitter;->onSuccess(Ljava/lang/Object;)V
+
+    .line 23
+    .line 24
+    .line 25
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 26
+    .line 27
+    return-object p1
+
+    .line 28
+    :pswitch_1
+    check-cast p1, Landroid/view/View;
+
+    .line 29
+    .line 30
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 31
+    .line 32
+    iget-object v0, p0, Lo0j;->b:Lio/reactivex/rxjava3/core/MaybeEmitter;
+
+    .line 33
+    .line 34
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/MaybeEmitter;->onSuccess(Ljava/lang/Object;)V
+
+    .line 35
+    .line 36
+    .line 37
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 38
+    .line 39
+    return-object p1
+
+    .line 40
+    nop
+
+    .line 41
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

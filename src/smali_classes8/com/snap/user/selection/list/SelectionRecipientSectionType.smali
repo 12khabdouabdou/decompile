@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'BEST_FRIENDS\':0,\'RECENTS\':1,\'GROUPS\':2,\'ALL_FRIENDS\':3,\'SEARCH\':4,\'TOP_GROUPS\':5"
-    type = .enum LJv3;->a:LJv3;
+    schema = "\'BEST_FRIENDS\':0,\'RECENTS\':1,\'GROUPS\':2,\'ALL_FRIENDS\':3,\'SEARCH\':4,\'TOP_GROUPS\':5,\'CONTACTS\':6"
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -24,6 +24,8 @@
 
 .field public static final enum BEST_FRIENDS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+.field public static final enum CONTACTS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
 .field public static final enum GROUPS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
 .field public static final enum RECENTS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
@@ -37,164 +39,188 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 13
+    .locals 15
 
     .line 1
-    const/4 v0, 0x5
+    const/4 v0, 0x6
 
     .line 2
-    const/4 v1, 0x4
+    const/4 v1, 0x5
 
     .line 3
-    const/4 v2, 0x3
+    const/4 v2, 0x4
 
     .line 4
-    const/4 v3, 0x2
+    const/4 v3, 0x3
 
     .line 5
-    const/4 v4, 0x1
+    const/4 v4, 0x2
 
     .line 6
-    const/4 v5, 0x0
+    const/4 v5, 0x1
 
     .line 7
-    new-instance v6, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+    const/4 v6, 0x0
 
     .line 8
-    .line 9
-    const-string v7, "BEST_FRIENDS"
-
-    .line 10
-    .line 11
-    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v6, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->BEST_FRIENDS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
-
-    .line 15
-    .line 16
     new-instance v7, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+    .line 9
+    .line 10
+    const-string v8, "BEST_FRIENDS"
+
+    .line 11
+    .line 12
+    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 13
+    .line 14
+    .line 15
+    sput-object v7, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->BEST_FRIENDS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
+    .line 16
     .line 17
-    .line 18
-    const-string v8, "RECENTS"
-
-    .line 19
-    .line 20
-    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 21
-    .line 22
-    .line 23
-    sput-object v7, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->RECENTS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
-
-    .line 24
-    .line 25
     new-instance v8, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+    .line 18
+    .line 19
+    const-string v9, "RECENTS"
+
+    .line 20
+    .line 21
+    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 22
+    .line 23
+    .line 24
+    sput-object v8, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->RECENTS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
+    .line 25
     .line 26
-    .line 27
-    const-string v9, "GROUPS"
-
-    .line 28
-    .line 29
-    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 30
-    .line 31
-    .line 32
-    sput-object v8, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->GROUPS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
-
-    .line 33
-    .line 34
     new-instance v9, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+    .line 27
+    .line 28
+    const-string v10, "GROUPS"
+
+    .line 29
+    .line 30
+    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 31
+    .line 32
+    .line 33
+    sput-object v9, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->GROUPS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
+    .line 34
     .line 35
-    .line 36
-    const-string v10, "ALL_FRIENDS"
-
-    .line 37
-    .line 38
-    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 39
-    .line 40
-    .line 41
-    sput-object v9, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->ALL_FRIENDS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
-
-    .line 42
-    .line 43
     new-instance v10, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+    .line 36
+    .line 37
+    const-string v11, "ALL_FRIENDS"
+
+    .line 38
+    .line 39
+    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 40
+    .line 41
+    .line 42
+    sput-object v10, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->ALL_FRIENDS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
+    .line 43
     .line 44
-    .line 45
-    const-string v11, "SEARCH"
-
-    .line 46
-    .line 47
-    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 48
-    .line 49
-    .line 50
-    sput-object v10, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->SEARCH:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
-
-    .line 51
-    .line 52
     new-instance v11, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+    .line 45
+    .line 46
+    const-string v12, "SEARCH"
+
+    .line 47
+    .line 48
+    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 49
+    .line 50
+    .line 51
+    sput-object v11, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->SEARCH:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
+    .line 52
     .line 53
+    new-instance v12, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
     .line 54
-    const-string v12, "TOP_GROUPS"
-
     .line 55
-    .line 56
-    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v13, "TOP_GROUPS"
 
+    .line 56
     .line 57
+    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 58
     .line 59
-    sput-object v11, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->TOP_GROUPS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
-
     .line 60
-    .line 61
-    const/4 v12, 0x6
+    sput-object v12, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->TOP_GROUPS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+    .line 61
     .line 62
-    new-array v12, v12, [Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+    new-instance v13, Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
     .line 63
     .line 64
-    aput-object v6, v12, v5
+    const-string v14, "CONTACTS"
 
     .line 65
     .line 66
-    aput-object v7, v12, v4
+    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 67
     .line 68
-    aput-object v8, v12, v3
-
     .line 69
-    .line 70
-    aput-object v9, v12, v2
+    sput-object v13, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->CONTACTS:Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
+    .line 70
     .line 71
+    const/4 v14, 0x7
+
     .line 72
-    aput-object v10, v12, v1
+    new-array v14, v14, [Lcom/snap/user/selection/list/SelectionRecipientSectionType;
 
     .line 73
     .line 74
-    aput-object v11, v12, v0
+    aput-object v7, v14, v6
 
     .line 75
     .line 76
-    sput-object v12, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->a:[Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+    aput-object v8, v14, v5
 
     .line 77
     .line 78
+    aput-object v9, v14, v4
+
+    .line 79
+    .line 80
+    aput-object v10, v14, v3
+
+    .line 81
+    .line 82
+    aput-object v11, v14, v2
+
+    .line 83
+    .line 84
+    aput-object v12, v14, v1
+
+    .line 85
+    .line 86
+    aput-object v13, v14, v0
+
+    .line 87
+    .line 88
+    sput-object v14, Lcom/snap/user/selection/list/SelectionRecipientSectionType;->a:[Lcom/snap/user/selection/list/SelectionRecipientSectionType;
+
+    .line 89
+    .line 90
     return-void
 .end method
 

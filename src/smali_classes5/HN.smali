@@ -1,9 +1,6 @@
 .class public final LHN;
-.super Ljava/lang/Object;
+.super LJN;
 .source "SourceFile"
-
-# interfaces
-.implements LIN;
 
 
 # static fields
@@ -28,14 +25,5 @@
 
     .line 7
     .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(LFN;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

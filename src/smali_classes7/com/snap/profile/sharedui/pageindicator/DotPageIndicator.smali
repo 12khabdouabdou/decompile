@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public a:Ly7d;
+.field public a:LNmd;
 
 .field public final b:Landroid/graphics/Paint;
 
@@ -24,13 +24,13 @@
 
 .field public final i0:J
 
-.field public j0:LeN5;
+.field public j0:LtH5;
 
-.field public k0:Lph3;
+.field public k0:Lnk3;
 
 .field public l0:I
 
-.field public final m0:LXfi;
+.field public final m0:LREi;
 
 .field public t:[I
 
@@ -72,7 +72,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -93,7 +93,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -111,7 +111,7 @@
     const/4 p3, 0x1
 
     .line 5
-    invoke-static {p3}, Llva;->o(Z)Landroid/graphics/Paint;
+    invoke-static {p3}, LJF0;->l(Z)Landroid/graphics/Paint;
 
     move-result-object v2
 
@@ -119,7 +119,7 @@
     iput-object v2, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->b:Landroid/graphics/Paint;
 
     .line 7
-    invoke-static {p3}, Llva;->o(Z)Landroid/graphics/Paint;
+    invoke-static {p3}, LJF0;->l(Z)Landroid/graphics/Paint;
 
     move-result-object v3
 
@@ -131,7 +131,7 @@
 
     move-result-object v4
 
-    sget-object v5, Lzve;->a:[I
+    sget-object v5, LiNe;->a:[I
 
     invoke-virtual {v4, p2, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -173,9 +173,9 @@
     move-result-object v6
 
     .line 13
-    new-instance v8, Lhad;
+    new-instance v8, LDpd;
 
-    invoke-direct {v8, v4, v6}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v8, v4, v6}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 14
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -209,19 +209,19 @@
     move-result-object v5
 
     .line 17
-    new-instance v6, Lhad;
+    new-instance v6, LDpd;
 
-    invoke-direct {v6, v4, v5}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v6, v4, v5}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 18
-    new-array v4, v1, [Lhad;
+    new-array v4, v1, [LDpd;
 
     aput-object v8, v4, v0
 
     aput-object v6, v4, p3
 
     .line 19
-    invoke-static {v4}, LEdb;->j0([Lhad;)Ljava/util/Map;
+    invoke-static {v4}, Lkrb;->F0([LDpd;)Ljava/util/Map;
 
     move-result-object p3
 
@@ -234,7 +234,7 @@
 
     check-cast p3, Ljava/lang/Iterable;
 
-    invoke-static {p3}, Lue3;->T0(Ljava/lang/Iterable;)Ljava/lang/Comparable;
+    invoke-static {p3}, Llh3;->R3(Ljava/lang/Iterable;)Ljava/lang/Comparable;
 
     move-result-object p3
 
@@ -285,7 +285,7 @@
 
     move-result-object p3
 
-    const v4, 0x7f060213
+    const v4, 0x7f06026b
 
     invoke-virtual {p3, v4}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -303,7 +303,7 @@
 
     move-result-object p3
 
-    const v1, 0x7f06020e
+    const v1, 0x7f060266
 
     invoke-virtual {p3, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -333,24 +333,24 @@
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 29
-    new-instance p2, LjT3;
+    new-instance p2, LE93;
 
-    const/16 p3, 0x10
+    const/16 p3, 0xf
 
-    invoke-direct {p2, p1, p3}, LjT3;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p2, p1, p3}, LE93;-><init>(Landroid/content/Context;I)V
 
     .line 30
-    new-instance p1, LXfi;
+    new-instance p1, LREi;
 
-    invoke-direct {p1, p2}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p1, p2}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 31
-    iput-object p1, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->m0:LXfi;
+    iput-object p1, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->m0:LREi;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -379,7 +379,7 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->j0:LeN5;
+    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->j0:LtH5;
 
     .line 2
     .line 3
@@ -387,7 +387,7 @@
 
     .line 4
     .line 5
-    iget v1, v0, LeN5;->b:I
+    iget v1, v0, LtH5;->b:I
 
     .line 6
     .line 7
@@ -406,7 +406,7 @@
     move-result v1
 
     .line 14
-    iget-object v3, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->j0:LeN5;
+    iget-object v3, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->j0:LtH5;
 
     .line 15
     .line 16
@@ -414,7 +414,7 @@
 
     .line 17
     .line 18
-    iget-object v4, v3, LeN5;->t:Ljava/lang/Object;
+    iget-object v4, v3, LtH5;->t:Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -437,7 +437,7 @@
 
     .line 26
     .line 27
-    iget v3, v3, LeN5;->b:I
+    iget v3, v3, LtH5;->b:I
 
     .line 28
     .line 29
@@ -542,7 +542,7 @@
 
     .line 76
     .line 77
-    iget-object v8, v0, LeN5;->t:Ljava/lang/Object;
+    iget-object v8, v0, LtH5;->t:Ljava/lang/Object;
 
     .line 78
     .line 79
@@ -562,7 +562,7 @@
     move-result-object v8
 
     .line 87
-    iget-object v9, v0, LeN5;->c:Ljava/lang/Object;
+    iget-object v9, v0, LtH5;->c:Ljava/lang/Object;
 
     .line 88
     .line 89
@@ -632,14 +632,14 @@
     .line 119
     .line 120
     .line 121
-    new-instance v8, LOr6;
+    new-instance v8, LYu6;
 
     .line 122
     .line 123
     const/4 v9, 0x0
 
     .line 124
-    invoke-direct {v8, p0, v1, v9}, LOr6;-><init>(Landroid/view/View;II)V
+    invoke-direct {v8, p0, v1, v9}, LYu6;-><init>(Landroid/view/View;II)V
 
     .line 125
     .line 126
@@ -665,7 +665,7 @@
 
     .line 137
     .line 138
-    invoke-virtual {v4}, Landroid/animation/ValueAnimator;->start()V
+    invoke-virtual {v4}, Landroid/animation/Animator;->start()V
 
     .line 139
     .line 140
@@ -678,7 +678,7 @@
 
     .line 144
     :cond_3
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 145
     .line 146
@@ -691,7 +691,7 @@
 
     .line 149
     .line 150
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 151
     .line 152
@@ -700,7 +700,7 @@
 
     .line 154
     :cond_5
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 155
     .line 156
@@ -709,7 +709,7 @@
 
     .line 158
     :cond_6
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 159
     .line 160
@@ -721,11 +721,11 @@
     return-void
 .end method
 
-.method public final b(Landroidx/recyclerview/widget/RecyclerView;LrGe;)V
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;LZXe;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->a:Ly7d;
+    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->a:LNmd;
 
     .line 2
     .line 3
@@ -733,26 +733,26 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->w0(LBGe;)V
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->w0(LkYe;)V
 
     .line 6
     .line 7
     .line 8
     :cond_0
-    new-instance v0, Ly7d;
+    new-instance v0, LNmd;
 
     .line 9
     .line 10
-    invoke-direct {v0, p0}, Ly7d;-><init>(Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;)V
+    invoke-direct {v0, p0}, LNmd;-><init>(Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;)V
 
     .line 11
     .line 12
     .line 13
-    iput-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->a:Ly7d;
+    iput-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->a:LNmd;
 
     .line 14
     .line 15
-    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->k0:Lph3;
+    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->k0:Lnk3;
 
     .line 16
     .line 17
@@ -760,29 +760,29 @@
 
     .line 18
     .line 19
-    invoke-virtual {p2, v0}, LrGe;->t(LtGe;)V
+    invoke-virtual {p2, v0}, LZXe;->t(LbYe;)V
 
     .line 20
     .line 21
     .line 22
     :cond_1
-    new-instance v0, Lph3;
+    new-instance v0, Lnk3;
 
     .line 23
     .line 24
     const/4 v1, 0x2
 
     .line 25
-    invoke-direct {v0, p0, v1, p2}, Lph3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p2}, Lnk3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 26
     .line 27
     .line 28
-    iput-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->k0:Lph3;
+    iput-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->k0:Lnk3;
 
     .line 29
     .line 30
-    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->a:Ly7d;
+    iget-object v0, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->a:LNmd;
 
     .line 31
     .line 32
@@ -794,12 +794,12 @@
 
     .line 35
     .line 36
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     .line 37
     .line 38
     .line 39
-    iget-object p1, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->k0:Lph3;
+    iget-object p1, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->k0:Lnk3;
 
     .line 40
     .line 41
@@ -807,7 +807,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {p2, p1}, LrGe;->r(LtGe;)V
+    invoke-virtual {p2, p1}, LZXe;->r(LbYe;)V
 
     .line 44
     .line 45
@@ -954,7 +954,7 @@
     div-float/2addr v8, v7
 
     .line 48
-    iget-object v7, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->j0:LeN5;
+    iget-object v7, p0, Lcom/snap/profile/sharedui/pageindicator/DotPageIndicator;->j0:LtH5;
 
     .line 49
     .line 50
@@ -962,7 +962,7 @@
 
     .line 51
     .line 52
-    iget v7, v7, LeN5;->b:I
+    iget v7, v7, LtH5;->b:I
 
     .line 53
     .line 54
@@ -1007,7 +1007,7 @@
 
     .line 71
     .line 72
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 73
     .line 74

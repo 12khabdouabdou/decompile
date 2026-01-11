@@ -1,283 +1,154 @@
-.class public LoP8;
-.super LKu;
+.class public final LoP8;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/os/MessageQueue$IdleHandler;
 
 
 # instance fields
-.field public final X:Ljava/util/List;
+.field public final synthetic a:LqP8;
 
-.field public final Y:LYIj;
+.field public final synthetic b:Landroid/os/Handler;
 
-.field public final Z:LWR6;
-
-.field public final e0:I
-
-.field public final f0:I
-
-.field public final g0:I
+.field public final synthetic c:LrP8;
 
 
 # direct methods
-.method public constructor <init>(LLu;LYIj;LWR6;Ljava/util/List;JIII)V
+.method public constructor <init>(LqP8;Landroid/os/Handler;LrP8;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p5, p6}, LKu;-><init>(LLu;J)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p4, p0, LoP8;->X:Ljava/util/List;
+    iput-object p1, p0, LoP8;->a:LqP8;
 
     .line 5
     .line 6
-    iput-object p2, p0, LoP8;->Y:LYIj;
+    iput-object p2, p0, LoP8;->b:Landroid/os/Handler;
 
     .line 7
     .line 8
-    iput p7, p0, LoP8;->e0:I
+    iput-object p3, p0, LoP8;->c:LrP8;
 
     .line 9
     .line 10
-    iput-object p3, p0, LoP8;->Z:LWR6;
-
-    .line 11
-    .line 12
-    iput p8, p0, LoP8;->f0:I
-
-    .line 13
-    .line 14
-    iput p9, p0, LoP8;->g0:I
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final queueIdle()Z
     .locals 4
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LoP8;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LoP8;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, LKu;->b:LLu;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, LKu;->b:LLu;
-
-    .line 16
-    .line 17
-    if-ne v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    iget-object v1, p0, LoP8;->X:Ljava/util/List;
-
-    .line 20
-    .line 21
-    iget-object p1, p1, LoP8;->X:Ljava/util/List;
-
-    .line 22
-    .line 23
-    invoke-interface {v1, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result p1
-
-    .line 27
-    if-eqz p1, :cond_2
-
-    .line 28
-    .line 29
-    return v0
-
-    .line 30
-    :cond_2
-    return v2
-.end method
-
-.method public final hashCode()I
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, LoP8;->X:Ljava/util/List;
+    iget-object v0, p0, LoP8;->a:LqP8;
 
     .line 2
     .line 3
-    iget-object v1, p0, LKu;->b:LLu;
+    const-string v1, "idling"
 
     .line 4
     .line 5
-    const/4 v2, 0x2
+    invoke-virtual {v0, v1}, LqP8;->b(Ljava/lang/String;)V
 
     .line 6
-    new-array v2, v2, [Ljava/lang/Object;
-
     .line 7
     .line 8
-    const/4 v3, 0x0
+    iget-object v0, p0, LoP8;->b:Landroid/os/Handler;
 
     .line 9
-    aput-object v0, v2, v3
-
     .line 10
+    const/4 v1, 0x0
+
     .line 11
-    const/4 v0, 0x1
+    invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 
     .line 12
-    aput-object v1, v2, v0
-
     .line 13
     .line 14
-    invoke-static {v2}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    .line 15
-    .line 16
-    .line 17
     move-result v0
 
-    .line 18
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 5
-
-    .line 1
-    iget-wide v0, p0, LKu;->a:J
-
-    .line 2
-    .line 3
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    iget-object v1, p0, LKu;->b:LLu;
-
-    .line 8
-    .line 9
-    iget-object v2, p0, LoP8;->X:Ljava/util/List;
-
-    .line 10
-    .line 11
-    const/4 v3, 0x3
-
-    .line 12
-    new-array v3, v3, [Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    const/4 v4, 0x0
-
     .line 15
-    aput-object v0, v3, v4
+    if-nez v0, :cond_0
 
     .line 16
     .line 17
-    const/4 v0, 0x1
+    sget v0, LrP8;->g0:I
 
     .line 18
-    aput-object v1, v3, v0
-
     .line 19
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
     .line 20
-    const/4 v0, 0x2
-
     .line 21
-    aput-object v2, v3, v0
-
     .line 22
+    move-result-wide v0
+
     .line 23
-    const-string v0, "ListViewModel{id=%s viewType=%s models=%s}"
+    iget-object v2, p0, LoP8;->c:LrP8;
 
     .line 24
     .line 25
-    invoke-static {v0, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    iget-wide v2, v2, LrP8;->Y:J
 
     .line 26
     .line 27
+    invoke-static {v2, v3}, LeG6;->e(J)J
+
     .line 28
-    move-result-object v0
-
     .line 29
-    return-object v0
-.end method
+    .line 30
+    move-result-wide v2
 
-.method public final v(LKu;)Z
-    .locals 2
+    .line 31
+    add-long/2addr v2, v0
 
-    .line 1
-    const/4 v0, 0x0
+    .line 32
+    iget-object v0, p0, LoP8;->a:LqP8;
 
-    .line 2
-    instance-of v1, p1, LoP8;
+    .line 33
+    .line 34
+    iput-wide v2, v0, LqP8;->g0:J
 
-    .line 3
-    .line 4
-    if-nez v1, :cond_0
+    .line 35
+    .line 36
+    iget-object v0, p0, LoP8;->a:LqP8;
 
-    .line 5
-    .line 6
-    return v0
+    .line 37
+    .line 38
+    const-string v1, "scheduleSelfDispose"
 
-    .line 7
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, LqP8;->b(Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    iget-object v0, p0, LoP8;->b:Landroid/os/Handler;
+
+    .line 44
+    .line 45
+    iget-object v1, p0, LoP8;->a:LqP8;
+
+    .line 46
+    .line 47
+    iget-object v1, v1, LqP8;->e0:LBE8;
+
+    .line 48
+    .line 49
+    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postAtTime(Ljava/lang/Runnable;J)Z
+
+    .line 50
+    .line 51
+    .line 52
     :cond_0
-    check-cast p1, LoP8;
+    const/4 v0, 0x1
 
-    .line 8
-    .line 9
-    iget-object v0, p0, LoP8;->X:Ljava/util/List;
-
-    .line 10
-    .line 11
-    iget-object p1, p1, LoP8;->X:Ljava/util/List;
-
-    .line 12
-    .line 13
-    invoke-interface {v0, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p1
-
-    .line 17
-    return p1
+    .line 53
+    return v0
 .end method

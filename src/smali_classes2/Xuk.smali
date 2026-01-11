@@ -2,112 +2,226 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
 
-
-# static fields
-.field public static final a:LXuk;
+# instance fields
+.field public final a:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 5
 
     .line 1
-    new-instance v0, LXuk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    invoke-static {}, Landroid/os/Process;->myUid()I
+
     .line 5
     .line 6
-    sput-object v0, LXuk;->a:LXuk;
-
     .line 7
+    move-result v0
+
     .line 8
-    new-instance v0, LFhk;
+    invoke-static {}, Landroid/os/Process;->myPid()I
 
     .line 9
     .line 10
-    const/4 v1, 0x1
-
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
+    move-result v1
 
     .line 12
+    const-string v2, "UID: ["
+
     .line 13
     .line 14
-    const-class v1, LUhk;
+    const-string v3, "]  PID: ["
 
     .line 15
     .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    const-string v4, "] "
 
     .line 17
     .line 18
+    invoke-static {v2, v3, v4, v0, v1}, Lnfe;->p(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/String;
+
     .line 19
-    move-result-object v0
-
     .line 20
-    const/4 v2, 0x2
-
     .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
+    move-result-object v0
 
     .line 22
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
     .line 23
     .line 24
-    move-result-object v0
-
     .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    move-result-object p1
 
     .line 26
+    iput-object p1, p0, LXuk;->a:Ljava/lang/String;
+
     .line 27
     .line 28
-    move-result-object v0
+    return-void
+.end method
 
+.method public static varargs c(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    array-length v0, p2
+
+    .line 2
+    if-lez v0, :cond_0
+
+    .line 3
+    .line 4
+    :try_start_0
+    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    .line 5
+    .line 6
+    invoke-static {v0, p1, p2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/util/IllegalFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :catch_0
+    const-string v0, "Unable to format "
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v0, ", "
+
+    .line 17
+    .line 18
+    invoke-static {v0, p2}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p2
+
+    .line 22
+    const-string v0, " ["
+
+    .line 23
+    .line 24
+    const-string v1, "]"
+
+    .line 25
+    .line 26
+    invoke-static {p1, v0, p2, v1}, LToi;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 27
+    .line 28
     .line 29
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
+    move-result-object p1
 
     .line 30
+    :cond_0
+    :goto_0
+    const-string p2, " : "
+
     .line 31
     .line 32
-    return-void
+    invoke-static {p0, p2, p1}, LzHa;->y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final varargs a(Landroid/os/RemoteException;Ljava/lang/String;[Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    if-nez p1, :cond_0
+    const/4 p1, 0x6
 
     .line 2
+    const-string v0, "PlayCore"
+
     .line 3
-    check-cast p2, LQJc;
-
     .line 4
+    invoke-static {v0, p1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
     .line 5
-    const/4 p1, 0x0
-
     .line 6
-    throw p1
-
     .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
+    move-result p1
 
     .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    if-eqz p1, :cond_0
 
+    .line 9
     .line 10
+    iget-object p1, p0, LXuk;->a:Ljava/lang/String;
+
     .line 11
     .line 12
-    throw p1
+    invoke-static {p1, p2, p3}, LXuk;->c(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
+    return-void
+.end method
+
+.method public final varargs b(Ljava/lang/String;[Ljava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    const-string v1, "PlayCore"
+
+    .line 3
+    .line 4
+    invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    iget-object v0, p0, LXuk;->a:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    invoke-static {v0, p1, p2}, LXuk;->c(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
+    return-void
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/ReportedMessageQnaResponse;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'promptId\':s,\'responseId\':s,\'promptContent\':r:\'[0]\',\'responseContent\':r:\'[0]\'"
     typeReferences = {

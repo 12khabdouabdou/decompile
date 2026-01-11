@@ -1,5 +1,5 @@
 .class public Lcom/snap/opera/external/layer/LayerView$Stub;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
@@ -9,7 +9,7 @@
         "<ViewModelType:",
         "Ljava/lang/Object;",
         ">",
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 

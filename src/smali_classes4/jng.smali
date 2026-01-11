@@ -1,360 +1,98 @@
 .class public final Ljng;
-.super LRdi;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lyoe;
-
-
-# static fields
-.field public static final I0:Ljava/util/concurrent/atomic/AtomicInteger;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final A0:Lqj1;
-
-.field public final B0:LrH9;
-
-.field public final C0:LTqc;
-
-.field public final D0:LD3j;
-
-.field public final E0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final F0:LjSj;
-
-.field public final G0:LWeg;
-
-.field public final H0:LWeg;
-
-.field public final z0:Landroid/content/Context;
+.field public final synthetic a:Lmng;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lmng;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
-    sput-object v0, Ljng;->I0:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Lqj1;LrH9;LGc9;LTqc;)V
-    .locals 3
-
-    .line 1
-    new-instance v0, LD3j;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    const/16 v2, 0xd
+    iput-object p1, p0, Ljng;->a:Lmng;
 
     .line 5
     .line 6
-    invoke-direct {v0, v1, v2}, LD3j;-><init>(ZI)V
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-direct {p0, p1}, LRdi;-><init>(Landroid/content/Context;)V
-
-    .line 10
-    .line 11
-    .line 12
-    iput-object p1, p0, Ljng;->z0:Landroid/content/Context;
-
-    .line 13
-    .line 14
-    iput-object p2, p0, Ljng;->A0:Lqj1;
-
-    .line 15
-    .line 16
-    iput-object p3, p0, Ljng;->B0:LrH9;
-
-    .line 17
-    .line 18
-    iput-object p5, p0, Ljng;->C0:LTqc;
-
-    .line 19
-    .line 20
-    iput-object v0, p0, Ljng;->D0:LD3j;
-
-    .line 21
-    .line 22
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 23
-    .line 24
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
-    .line 25
-    .line 26
-    .line 27
-    iput-object p1, p0, Ljng;->E0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 28
-    .line 29
-    new-instance p2, LjSj;
-
-    .line 30
-    .line 31
-    invoke-direct {p2, p4, p1}, LjSj;-><init>(LGc9;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
-
-    .line 32
-    .line 33
-    .line 34
-    iput-object p2, p0, Ljng;->F0:LjSj;
-
-    .line 35
-    .line 36
-    new-instance p1, LWeg;
-
-    .line 37
-    .line 38
-    new-instance p2, Lhng;
-
-    .line 39
-    .line 40
-    const/4 p3, 0x1
-
-    .line 41
-    invoke-direct {p2, p0, p3}, Lhng;-><init>(Ljng;I)V
-
-    .line 42
-    .line 43
-    .line 44
-    sget-object p3, LM9g;->s0:LM9g;
-
-    .line 45
-    .line 46
-    invoke-direct {p1, p2, p3}, LWeg;-><init>(Lobi;Lkotlin/jvm/functions/Function1;)V
-
-    .line 47
-    .line 48
-    .line 49
-    iput-object p1, p0, Ljng;->G0:LWeg;
-
-    .line 50
-    .line 51
-    new-instance p1, LWeg;
-
-    .line 52
-    .line 53
-    new-instance p2, Lhng;
-
-    .line 54
-    .line 55
-    const/4 p3, 0x0
-
-    .line 56
-    invoke-direct {p2, p0, p3}, Lhng;-><init>(Ljng;I)V
-
-    .line 57
-    .line 58
-    .line 59
-    sget-object p3, LM9g;->r0:LM9g;
-
-    .line 60
-    .line 61
-    invoke-direct {p1, p2, p3}, LWeg;-><init>(Lobi;Lkotlin/jvm/functions/Function1;)V
-
-    .line 62
-    .line 63
-    .line 64
-    iput-object p1, p0, Ljng;->H0:LWeg;
-
-    .line 65
-    .line 66
     return-void
 .end method
 
 
 # virtual methods
-.method public final X()V
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 5
 
     .line 1
-    invoke-super {p0}, LRdi;->X()V
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 2
     .line 3
-    .line 4
-    iget-object v0, p0, Ljng;->E0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 5
-    .line 6
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public final getWatchedStateCache()Lcom/snap/impala/commonprofile/IWatchedStateCache;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ljng;->F0:LjSj;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final onButtonTapped()V
-    .locals 4
-
-    .line 1
-    iget-boolean v0, p0, LRdi;->r0:Z
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
+    iget-object p1, p0, Ljng;->a:Lmng;
 
     .line 4
-    if-eqz v0, :cond_0
-
     .line 5
-    .line 6
-    goto :goto_0
+    iget-object v0, p1, Lmng;->e0:LQS9;
 
+    .line 6
     .line 7
-    :cond_0
-    iput-boolean v1, p0, LRdi;->r0:Z
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 8
     .line 9
-    iget-object v0, p0, LRdi;->s0:LXfi;
-
     .line 10
+    move-result-object v0
+
     .line 11
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    check-cast v0, LWXa;
 
     .line 12
     .line 13
+    invoke-interface {v0}, LWXa;->y()V
+
     .line 14
-    move-result-object v0
-
     .line 15
-    check-cast v0, Landroid/widget/FrameLayout;
-
     .line 16
+    sget-object v0, LwUf;->Z:LwUf;
+
     .line 17
-    iget-object v2, p0, Ljng;->H0:LWeg;
-
     .line 18
+    iget-object v1, p1, Lmng;->j1:LRJg;
+
     .line 19
-    iget-object v3, v2, LWeg;->t:Ljava/lang/Object;
-
     .line 20
-    .line 21
-    check-cast v3, Landroid/view/View;
+    iget-object v2, p1, Lmng;->i0:LjWa;
 
+    .line 21
     .line 22
+    const/4 v3, 0x6
+
     .line 23
-    if-nez v3, :cond_1
+    const/4 v4, 0x0
 
     .line 24
-    .line 25
-    iget-object v3, v2, LWeg;->b:Ljava/lang/Object;
+    invoke-static {v2, v0, v4, v1, v3}, LjWa;->K0(LjWa;LwUf;Ljava/lang/String;LRJg;I)V
 
+    .line 25
     .line 26
     .line 27
-    check-cast v3, Lobi;
+    sget-object v0, LFCd$b;->b:LFCd$b;
 
     .line 28
     .line 29
-    invoke-interface {v3}, Lobi;->get()Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lmng;->r3(LFCd$b;)V
 
     .line 30
     .line 31
     .line 32
-    move-result-object v3
-
-    .line 33
-    check-cast v3, Landroid/view/View;
-
-    .line 34
-    .line 35
-    iput-object v3, v2, LWeg;->t:Ljava/lang/Object;
-
-    .line 36
-    .line 37
-    :cond_1
-    iget-object v2, v2, LWeg;->t:Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    check-cast v2, Landroid/view/View;
-
-    .line 40
-    .line 41
-    invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
-    .line 42
-    .line 43
-    .line 44
-    :goto_0
-    invoke-virtual {p0}, LRdi;->o1()LGB3;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v0
-
-    .line 48
-    invoke-virtual {v0, v1}, LrAj;->a(I)V
-
-    .line 49
-    .line 50
-    .line 51
     return-void
-.end method
-
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
-
-    .line 1
-    sget-object v0, LzB3;->n:LyB3;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    sget-object v0, LyB3;->b:LzB3;
-
-    .line 7
-    .line 8
-    const-class v1, Lyoe;
-
-    .line 9
-    .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result p1
-
-    .line 14
-    return p1
 .end method

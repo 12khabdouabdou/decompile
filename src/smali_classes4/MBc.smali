@@ -1,291 +1,382 @@
 .class public final LMBc;
-.super LOBc;
+.super Ljava/io/InputStream;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public X:Z
 
-.field public final b:Ljava/lang/Long;
+.field public final a:Lcom/snapchat/client/content_manager/ReadStream;
 
-.field public final c:J
+.field public final b:J
+
+.field public c:J
+
+.field public t:Ljava/nio/ByteBuffer;
 
 
 # direct methods
-.method public constructor <init>(JLjava/lang/Long;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(Lcom/snapchat/client/content_manager/ReadStream;)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p4, p0, LMBc;->a:Ljava/lang/String;
+    iput-object p1, p0, LMBc;->a:Lcom/snapchat/client/content_manager/ReadStream;
 
     .line 5
     .line 6
-    iput-object p3, p0, LMBc;->b:Ljava/lang/Long;
+    invoke-virtual {p1}, Lcom/snapchat/client/content_manager/ReadStream;->getTotalSize()J
 
     .line 7
     .line 8
-    iput-wide p1, p0, LMBc;->c:J
-
     .line 9
+    move-result-wide v0
+
     .line 10
+    iput-wide v0, p0, LMBc;->b:J
+
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final a()Ljava/nio/ByteBuffer;
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
+    iget-boolean v0, p0, LMBc;->X:Z
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    if-nez v0, :cond_2
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LMBc;
+    iget-object v0, p0, LMBc;->t:Ljava/nio/ByteBuffer;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    if-eqz v0, :cond_0
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
+    invoke-virtual {v0}, Ljava/nio/Buffer;->hasRemaining()Z
+
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, LMBc;
-
     .line 12
+    move-result v0
+
     .line 13
-    iget-object v1, p1, LMBc;->a:Ljava/lang/String;
+    const/4 v1, 0x1
 
     .line 14
-    .line 15
-    iget-object v3, p0, LMBc;->a:Ljava/lang/String;
+    if-ne v0, v1, :cond_0
 
+    .line 15
     .line 16
+    goto :goto_0
+
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_0
+    iget-wide v0, p0, LMBc;->c:J
 
     .line 18
     .line 19
-    .line 20
-    move-result v1
+    iget-wide v2, p0, LMBc;->b:J
 
+    .line 20
     .line 21
-    if-nez v1, :cond_2
+    cmp-long v4, v0, v2
 
     .line 22
     .line 23
-    return v2
+    if-ltz v4, :cond_1
 
     .line 24
-    :cond_2
-    iget-object v1, p0, LMBc;->b:Ljava/lang/Long;
-
     .line 25
+    const/4 v0, 0x0
+
     .line 26
-    iget-object v3, p1, LMBc;->b:Ljava/lang/Long;
+    iput-object v0, p0, LMBc;->t:Ljava/nio/ByteBuffer;
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    goto :goto_0
 
     .line 29
+    :cond_1
+    iget-object v0, p0, LMBc;->a:Lcom/snapchat/client/content_manager/ReadStream;
+
     .line 30
     .line 31
-    move-result v1
+    invoke-virtual {v0, v2, v3}, Lcom/snapchat/client/content_manager/ReadStream;->getBytes(J)Lcom/snapchat/client/shims/DataProvider;
 
     .line 32
-    if-nez v1, :cond_3
-
     .line 33
     .line 34
-    return v2
+    move-result-object v0
 
     .line 35
-    :cond_3
-    iget-wide v3, p0, LMBc;->c:J
+    invoke-virtual {v0}, Lcom/snapchat/client/shims/DataProvider;->data()Ljava/nio/ByteBuffer;
 
     .line 36
     .line 37
-    iget-wide v5, p1, LMBc;->c:J
-
     .line 38
+    move-result-object v0
+
     .line 39
-    cmp-long p1, v3, v5
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
 
     .line 40
     .line 41
-    if-eqz p1, :cond_4
-
     .line 42
+    move-result-object v0
+
     .line 43
-    return v2
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
     .line 44
-    :cond_4
-    return v0
+    .line 45
+    .line 46
+    iput-object v0, p0, LMBc;->t:Ljava/nio/ByteBuffer;
+
+    .line 47
+    .line 48
+    iput-wide v2, p0, LMBc;->c:J
+
+    .line 49
+    .line 50
+    :cond_2
+    :goto_0
+    iget-object v0, p0, LMBc;->t:Ljava/nio/ByteBuffer;
+
+    .line 51
+    .line 52
+    return-object v0
 .end method
 
-.method public final hashCode()I
+.method public final declared-synchronized available()I
     .locals 6
 
     .line 1
-    iget-object v0, p0, LMBc;->a:Ljava/lang/String;
+    monitor-enter p0
 
     .line 2
+    :try_start_0
+    iget-boolean v0, p0, LMBc;->X:Z
+
     .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
     .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LMBc;->b:Ljava/lang/Long;
-
-    .line 10
-    .line 11
-    if-nez v1, :cond_0
-
-    .line 12
-    .line 13
     const/4 v1, 0x0
 
-    .line 14
-    goto :goto_0
-
-    .line 15
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    :goto_0
-    add-int/2addr v0, v1
-
-    .line 20
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 21
-    .line 22
-    const/16 v1, 0x20
-
-    .line 23
-    .line 24
-    iget-wide v2, p0, LMBc;->c:J
-
-    .line 25
-    .line 26
-    ushr-long v4, v2, v1
-
-    .line 27
-    .line 28
-    xor-long/2addr v2, v4
-
-    .line 29
-    long-to-int v1, v2
-
-    .line 30
-    add-int/2addr v0, v1
-
-    .line 31
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "PublisherStoryNotInterestedItem(publisherName="
-
-    .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    if-eqz v0, :cond_0
 
     .line 6
     .line 7
+    goto :goto_1
+
     .line 8
-    iget-object v1, p0, LMBc;->a:Ljava/lang/String;
+    :cond_0
+    iget-wide v2, p0, LMBc;->b:J
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-wide v4, p0, LMBc;->c:J
+
+    .line 11
+    .line 12
+    sub-long/2addr v2, v4
+
+    .line 13
+    long-to-int v0, v2
+
+    .line 14
+    iget-object v2, p0, LMBc;->t:Ljava/nio/ByteBuffer;
+
+    .line 15
+    .line 16
+    if-eqz v2, :cond_1
+
+    .line 17
+    .line 18
+    invoke-virtual {v2}, Ljava/nio/Buffer;->remaining()I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :catchall_0
+    move-exception v0
+
+    .line 24
+    goto :goto_2
+
+    .line 25
+    :cond_1
+    :goto_0
+    add-int/2addr v1, v0
+
+    .line 26
+    :goto_1
+    monitor-exit p0
+
+    .line 27
+    return v1
+
+    .line 28
+    :goto_2
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 29
+    throw v0
+.end method
+
+.method public final close()V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, LMBc;->X:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x1
+
+    .line 6
+    iput-boolean v0, p0, LMBc;->X:Z
+
+    .line 7
+    .line 8
+    iget-object v0, p0, LMBc;->a:Lcom/snapchat/client/content_manager/ReadStream;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, Lcom/snapchat/client/content_manager/ReadStream;->free()V
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", publisherId="
+    :cond_0
+    return-void
+.end method
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public final declared-synchronized read()I
+    .locals 1
 
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LMBc;->b:Ljava/lang/Long;
+    monitor-enter p0
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 1
+    :try_start_0
+    invoke-virtual {p0}, LMBc;->a()Ljava/nio/ByteBuffer;
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", editionId="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-wide v1, p0, LMBc;->c:J
-
-    .line 29
-    .line 30
-    const-string v3, ")"
-
-    .line 31
-    .line 32
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
     move-result-object v0
 
-    .line 36
-    return-object v0
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
+
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    and-int/lit16 v0, v0, 0xff
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v0, -0x1
+
+    .line 3
+    :goto_0
+    monitor-exit p0
+
+    return v0
+
+    :goto_1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+.end method
+
+.method public final declared-synchronized read([BII)I
+    .locals 2
+
+    monitor-enter p0
+
+    .line 4
+    :try_start_0
+    invoke-virtual {p0}, LMBc;->a()Ljava/nio/ByteBuffer;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    if-nez v0, :cond_0
+
+    monitor-exit p0
+
+    const/4 p1, -0x1
+
+    return p1
+
+    .line 5
+    :cond_0
+    :try_start_1
+    invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
+
+    move-result v1
+
+    invoke-static {v1, p3}, Ljava/lang/Math;->min(II)I
+
+    move-result p3
+
+    .line 6
+    invoke-virtual {v0, p1, p2, p3}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 7
+    monitor-exit p0
+
+    return p3
+
+    :catchall_0
+    move-exception p1
+
+    :try_start_2
+    monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p1
 .end method

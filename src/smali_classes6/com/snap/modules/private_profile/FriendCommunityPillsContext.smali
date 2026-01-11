@@ -1,15 +1,15 @@
 .class public final Lcom/snap/modules/private_profile/FriendCommunityPillsContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'pills\':g<c>:\'[0]\'<a<r:\'[1]\'>>,\'onTap\':f?(s),\'onLongPress\':f?(s)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LXq3;
+        LYt3;
     }
 .end annotation
 
@@ -36,7 +36,7 @@
         value = {
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LXq3;",
+            "LYt3;",
             ">;>;"
         }
     .end annotation
@@ -51,7 +51,7 @@
             "(",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LXq3;",
+            "LYt3;",
             ">;>;",
             "Lkotlin/jvm/functions/Function1;",
             "Lkotlin/jvm/functions/Function1;",

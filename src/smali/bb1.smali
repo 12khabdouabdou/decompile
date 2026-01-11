@@ -1,335 +1,313 @@
-.class public abstract synthetic Lbb1;
+.class public final Lbb1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LqZ3;
+
 
 # static fields
-.field public static final synthetic a:[I
-
-.field public static final synthetic b:[I
-
-.field public static final synthetic c:[I
+.field public static final a:Lbb1;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 1
 
     .line 1
-    invoke-static {}, LQK3;->values()[LQK3;
+    new-instance v0, Lbb1;
 
     .line 2
     .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    sput-object v0, Lbb1;->a:Lbb1;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 12
+
+    .line 1
+    check-cast p1, Lglf;
+
+    .line 2
+    .line 3
+    instance-of v0, p1, LPkf;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    check-cast p1, LPkf;
 
     .line 9
-    :try_start_0
-    sget-object v2, LQK3;->b:LQK3;
-
     .line 10
+    goto :goto_0
+
     .line 11
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    :cond_0
+    move-object p1, v1
 
     .line 12
+    :goto_0
+    if-eqz p1, :cond_4
+
     .line 13
     .line 14
-    move-result v2
+    instance-of v0, p1, LOkf;
 
     .line 15
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
-    .line 17
-    :catch_0
-    const/4 v2, 0x2
+    if-eqz v0, :cond_2
 
+    .line 17
     .line 18
-    :try_start_1
-    sget-object v3, LQK3;->c:LQK3;
+    move-object v0, p1
 
     .line 19
-    .line 20
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    check-cast v0, LOkf;
 
+    .line 20
     .line 21
+    invoke-virtual {v0}, LOkf;->f()Z
+
     .line 22
     .line 23
-    move-result v3
-
     .line 24
-    aput v2, v0, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    move-result v1
 
     .line 25
-    .line 26
-    :catch_1
-    const/4 v3, 0x3
+    if-eqz v1, :cond_1
 
+    .line 26
     .line 27
-    :try_start_2
-    sget-object v4, LQK3;->X:LQK3;
+    invoke-virtual {v0}, LOkf;->d()LY79;
 
     .line 28
     .line 29
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
     .line 30
-    .line 31
-    .line 32
-    move-result v4
+    move-result-object v1
 
+    .line 31
+    iget-object v2, v1, LY79;->a:Ljava/lang/String;
+
+    .line 32
     .line 33
-    aput v3, v0, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    invoke-virtual {p1}, LPkf;->c()LY79;
 
     .line 34
     .line 35
-    :catch_2
-    const/4 v4, 0x4
-
     .line 36
-    :try_start_3
-    sget-object v5, LQK3;->t:LQK3;
+    move-result-object p1
 
     .line 37
-    .line 38
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    iget-object v3, p1, LY79;->a:Ljava/lang/String;
 
+    .line 38
     .line 39
+    sget-object v4, Lfh7;->j0:Lfh7;
+
     .line 40
     .line 41
-    move-result v5
+    invoke-virtual {v0}, LOkf;->e()I
 
     .line 42
-    aput v4, v0, v5
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
     .line 43
     .line 44
-    :catch_3
-    sput-object v0, Lbb1;->a:[I
+    move-result v5
 
     .line 45
+    const/4 v6, 0x0
+
     .line 46
-    invoke-static {}, LK8d;->values()[LK8d;
+    const/16 v7, 0x28
 
     .line 47
     .line 48
+    invoke-static/range {v2 .. v7}, LSpk;->o(Ljava/lang/String;Ljava/lang/String;Lfh7;ILcom/snap/composer/bitmoji/Bitmoji3DRenderStyle;I)Landroid/net/Uri;
+
     .line 49
-    move-result-object v0
-
     .line 50
-    array-length v0, v0
-
     .line 51
-    new-array v0, v0, [I
+    move-result-object p1
 
     .line 52
+    return-object p1
+
     .line 53
-    :try_start_4
-    sget-object v5, LK8d;->b:LK8d;
+    :cond_1
+    invoke-virtual {v0}, LOkf;->d()LY79;
 
     .line 54
     .line 55
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
-
     .line 56
-    .line 57
-    .line 58
-    move-result v5
+    move-result-object v1
 
+    .line 57
+    iget-object v2, v1, LY79;->a:Ljava/lang/String;
+
+    .line 58
     .line 59
-    aput v1, v0, v5
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    invoke-virtual {p1}, LPkf;->c()LY79;
 
     .line 60
     .line 61
-    :catch_4
-    :try_start_5
-    sget-object v5, LK8d;->c:LK8d;
-
     .line 62
+    move-result-object p1
+
     .line 63
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    iget-object v3, p1, LY79;->a:Ljava/lang/String;
 
     .line 64
     .line 65
-    .line 66
-    move-result v5
+    sget-object v4, Lfh7;->j0:Lfh7;
 
+    .line 66
     .line 67
-    aput v2, v0, v5
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    invoke-virtual {v0}, LOkf;->e()I
 
     .line 68
     .line 69
-    :catch_5
-    :try_start_6
-    sget-object v5, LK8d;->t:LK8d;
-
     .line 70
+    move-result v6
+
     .line 71
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    const/4 v5, 0x0
 
     .line 72
+    const/16 v7, 0x8
+
     .line 73
     .line 74
-    move-result v5
+    invoke-static/range {v2 .. v7}, LSpk;->f(Ljava/lang/String;Ljava/lang/String;Lfh7;ZII)Landroid/net/Uri;
 
     .line 75
-    aput v3, v0, v5
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
     .line 76
     .line 77
-    :catch_6
-    :try_start_7
-    sget-object v3, LK8d;->X:LK8d;
+    move-result-object p1
 
     .line 78
+    return-object p1
+
     .line 79
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    :cond_2
+    instance-of v0, p1, LNkf;
 
     .line 80
     .line 81
-    .line 82
-    move-result v3
+    if-eqz v0, :cond_3
 
+    .line 82
     .line 83
-    aput v4, v0, v3
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    move-object v0, p1
 
     .line 84
+    check-cast v0, LNkf;
+
     .line 85
-    :catch_7
-    :try_start_8
-    sget-object v3, LK8d;->Y:LK8d;
-
     .line 86
-    .line 87
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0}, LNkf;->d()LY79;
 
+    .line 87
     .line 88
     .line 89
+    move-result-object v1
+
     .line 90
-    move-result v3
+    iget-object v2, v1, LY79;->a:Ljava/lang/String;
 
     .line 91
-    const/4 v4, 0x5
-
     .line 92
-    aput v4, v0, v3
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    invoke-virtual {v0}, LNkf;->e()LY79;
 
     .line 93
     .line 94
-    :catch_8
-    :try_start_9
-    sget-object v3, LK8d;->Z:LK8d;
-
     .line 95
+    move-result-object v1
+
     .line 96
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    iget-object v5, v1, LY79;->a:Ljava/lang/String;
 
     .line 97
     .line 98
+    invoke-virtual {p1}, LPkf;->c()LY79;
+
     .line 99
-    move-result v3
-
     .line 100
-    const/4 v4, 0x6
-
     .line 101
-    aput v4, v0, v3
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+    move-result-object p1
 
     .line 102
+    iget-object v3, p1, LY79;->a:Ljava/lang/String;
+
     .line 103
-    :catch_9
-    sput-object v0, Lbb1;->b:[I
-
     .line 104
-    .line 105
-    invoke-static {}, Lob1;->values()[Lob1;
+    sget-object v4, Lfh7;->j0:Lfh7;
 
+    .line 105
     .line 106
+    invoke-virtual {v0}, LNkf;->f()I
+
     .line 107
     .line 108
-    move-result-object v0
-
     .line 109
-    array-length v0, v0
+    move-result v8
 
     .line 110
-    new-array v0, v0, [I
+    const/4 v7, 0x0
 
     .line 111
-    .line 112
-    :try_start_a
-    sget-object v3, Lob1;->c:Lob1;
+    const/16 v11, 0x1b0
 
+    .line 112
     .line 113
+    const/4 v6, 0x0
+
     .line 114
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    const/4 v9, 0x0
 
     .line 115
+    const/4 v10, 0x0
+
     .line 116
+    invoke-static/range {v2 .. v11}, LSpk;->g(Ljava/lang/String;Ljava/lang/String;Lfh7;Ljava/lang/String;LAjj;LP31;ILcom/snap/composer/bitmoji/Bitmoji3DRenderStyle;ZI)Landroid/net/Uri;
+
     .line 117
-    move-result v3
-
     .line 118
-    aput v1, v0, v3
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
     .line 119
+    move-result-object p1
+
     .line 120
-    :catch_a
-    :try_start_b
-    sget-object v1, Lob1;->t:Lob1;
+    return-object p1
 
     .line 121
-    .line 122
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_3
+    new-instance p1, LwOc;
 
+    .line 122
     .line 123
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
     .line 124
     .line 125
-    move-result v1
-
     .line 126
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+    throw p1
 
     .line 127
-    .line 128
-    :catch_b
-    sput-object v0, Lbb1;->c:[I
-
-    .line 129
-    .line 130
-    return-void
+    :cond_4
+    return-object v1
 .end method

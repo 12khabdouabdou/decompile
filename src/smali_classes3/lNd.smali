@@ -1,167 +1,144 @@
-.class public final enum LlNd;
-.super Ljava/lang/Enum;
+.class public final LlNd;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic X:[LlNd;
-
-.field public static final enum c:LlNd;
-
-.field public static final enum t:LlNd;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'webViewFactory\':r:\'[0]\',\'navigator\':r:\'[1]\',\'syncCofStore\':r?:\'[2]\',\'onPlayableCtaTapped\':f(),\'onAttachmentCtaTapped\':f(),\'onDismissTapped\':f?(),\'onRetryLoadTapped\':f(),\'loadingProgressObservable\':g<c>:\'[3]\'<d@>,\'loadingErrorObservable\':g<c>:\'[3]\'<b@>"
+    typeReferences = {
+        Lcom/snap/composer/ViewFactory;,
+        Lcom/snap/composer/navigation/INavigator;,
+        Lcom/snap/composer/cof/ICOFSynchronousStore;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:LGl9;
+.field private _loadingErrorObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:LW5d;
+.field private _loadingProgressObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private _navigator:Lcom/snap/composer/navigation/INavigator;
+
+.field private _onAttachmentCtaTapped:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onDismissTapped:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onPlayableCtaTapped:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onRetryLoadTapped:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _syncCofStore:Lcom/snap/composer/cof/ICOFSynchronousStore;
+
+.field private _webViewFactory:Lcom/snap/composer/ViewFactory;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(Lcom/snap/composer/ViewFactory;Lcom/snap/composer/navigation/INavigator;Lcom/snap/composer/cof/ICOFSynchronousStore;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/ViewFactory;",
+            "Lcom/snap/composer/navigation/INavigator;",
+            "Lcom/snap/composer/cof/ICOFSynchronousStore;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Double;",
+            ">;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, LlNd;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, LGl9;->b:LGl9;
-
     .line 4
+    iput-object p1, p0, LlNd;->_webViewFactory:Lcom/snap/composer/ViewFactory;
+
     .line 5
-    sget-object v2, LW5d;->N:Lm7b;
-
     .line 6
+    iput-object p2, p0, LlNd;->_navigator:Lcom/snap/composer/navigation/INavigator;
+
     .line 7
-    const-string v3, "RIGHT_TO_LEFT"
-
     .line 8
-    .line 9
-    const/4 v4, 0x0
+    iput-object p3, p0, LlNd;->_syncCofStore:Lcom/snap/composer/cof/ICOFSynchronousStore;
 
+    .line 9
     .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, LlNd;-><init>(Ljava/lang/String;ILGl9;LW5d;)V
+    iput-object p4, p0, LlNd;->_onPlayableCtaTapped:Lkotlin/jvm/functions/Function0;
 
     .line 11
     .line 12
+    iput-object p5, p0, LlNd;->_onAttachmentCtaTapped:Lkotlin/jvm/functions/Function0;
+
     .line 13
-    sput-object v0, LlNd;->c:LlNd;
-
     .line 14
+    iput-object p6, p0, LlNd;->_onDismissTapped:Lkotlin/jvm/functions/Function0;
+
     .line 15
-    new-instance v1, LlNd;
-
     .line 16
+    iput-object p7, p0, LlNd;->_onRetryLoadTapped:Lkotlin/jvm/functions/Function0;
+
     .line 17
-    sget-object v2, LGl9;->t:LGl9;
-
     .line 18
+    iput-object p8, p0, LlNd;->_loadingProgressObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 19
-    sget-object v3, LW5d;->P:Lm7b;
-
     .line 20
+    iput-object p9, p0, LlNd;->_loadingErrorObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 21
-    const-string v5, "BOTTOM_TO_TOP"
-
     .line 22
-    .line 23
-    const/4 v6, 0x1
-
-    .line 24
-    invoke-direct {v1, v5, v6, v2, v3}, LlNd;-><init>(Ljava/lang/String;ILGl9;LW5d;)V
-
-    .line 25
-    .line 26
-    .line 27
-    sput-object v1, LlNd;->t:LlNd;
-
-    .line 28
-    .line 29
-    const/4 v2, 0x2
-
-    .line 30
-    new-array v2, v2, [LlNd;
-
-    .line 31
-    .line 32
-    aput-object v0, v2, v4
-
-    .line 33
-    .line 34
-    aput-object v1, v2, v6
-
-    .line 35
-    .line 36
-    sput-object v2, LlNd;->X:[LlNd;
-
-    .line 37
-    .line 38
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;ILGl9;LW5d;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p3, p0, LlNd;->a:LGl9;
-
-    .line 5
-    .line 6
-    iput-object p4, p0, LlNd;->b:LW5d;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LlNd;
-    .locals 1
-
-    .line 1
-    const-class v0, LlNd;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LlNd;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LlNd;
-    .locals 1
-
-    .line 1
-    sget-object v0, LlNd;->X:[LlNd;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LlNd;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

@@ -1,169 +1,229 @@
-.class public final LEl7;
-.super LBRh;
+.class public final enum LEl7;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final Z:LbLd;
+# static fields
+.field public static final enum X:LEl7;
+
+.field public static final enum Y:LEl7;
+
+.field public static final synthetic Z:[LEl7;
+
+.field public static final enum a:LEl7;
+
+.field public static final enum b:LEl7;
+
+.field public static final enum c:LEl7;
+
+.field public static final enum t:LEl7;
 
 
 # direct methods
-.method public constructor <init>(LbLd;Lbke;)V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    sget-object v0, LXV7;->Z:LXV7;
+    const/4 v0, 0x5
 
     .line 2
+    const/4 v1, 0x4
+
     .line 3
-    const-string v1, "FfStoryPrefetcher"
+    const/4 v2, 0x3
 
     .line 4
+    const/4 v3, 0x2
+
     .line 5
-    invoke-static {v0, v0, v1}, LmG8;->c(LXV7;LXV7;Ljava/lang/String;)LWm0;
+    const/4 v4, 0x1
 
     .line 6
-    .line 7
-    .line 8
-    move-result-object v0
+    const/4 v5, 0x0
 
+    .line 7
+    new-instance v6, LEl7;
+
+    .line 8
     .line 9
-    new-instance v1, LBre;
+    const-string v7, "BLOCKED"
 
     .line 10
     .line 11
-    invoke-direct {v1, v0}, LBre;-><init>(LWm0;)V
+    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 12
     .line 13
     .line 14
-    invoke-direct {p0, p2, p1, v1}, LBRh;-><init>(Lbke;LbLd;LBre;)V
+    sput-object v6, LEl7;->a:LEl7;
 
     .line 15
     .line 16
-    .line 17
-    iput-object p1, p0, LEl7;->Z:LbLd;
-
-    .line 18
-    .line 19
-    return-void
-.end method
-
-
-# virtual methods
-.method public final t(Ljava/util/List;)V
-    .locals 10
-
-    .line 1
-    check-cast p1, Ljava/lang/Iterable;
-
-    .line 2
-    .line 3
-    new-instance v0, LDe3;
-
-    .line 4
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, p1}, LDe3;-><init>(ILjava/lang/Object;)V
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance v2, LZI6;
-
-    .line 10
-    .line 11
-    const-class v5, LEl7;
-
-    .line 12
-    .line 13
-    const-string v6, "toPrefetchStoryModel"
-
-    .line 14
-    .line 15
-    const/4 v3, 0x1
-
-    .line 16
-    const-string v7, "toPrefetchStoryModel(Lcom/snap/ui/analytics/impression/FeedImpressionEvent;)Lcom/snap/mixerstories/api/Story;"
+    new-instance v7, LEl7;
 
     .line 17
     .line 18
-    const/4 v8, 0x0
+    const-string v8, "NAVIGATE_TO_CHAT"
 
     .line 19
-    const/4 v9, 0x3
-
     .line 20
-    move-object v4, p0
+    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 21
-    invoke-direct/range {v2 .. v9}, LZI6;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
     .line 22
     .line 23
-    .line 24
-    invoke-static {v0, v2}, LvYf;->W0(LrYf;Lkotlin/jvm/functions/Function1;)LBt7;
+    sput-object v7, LEl7;->b:LEl7;
 
+    .line 24
     .line 25
+    new-instance v8, LEl7;
+
     .line 26
     .line 27
-    move-result-object p1
+    const-string v9, "PLAY_SNAP"
 
     .line 28
-    invoke-static {p1}, LvYf;->b1(LrYf;)Ljava/util/List;
-
     .line 29
+    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 30
     .line 31
-    move-result-object p1
-
     .line 32
-    move-object v0, p1
+    sput-object v8, LEl7;->c:LEl7;
 
     .line 33
-    check-cast v0, Ljava/util/Collection;
-
     .line 34
-    .line 35
-    invoke-interface {v0}, Ljava/util/Collection;->isEmpty()Z
+    new-instance v9, LEl7;
 
+    .line 35
     .line 36
+    const-string v10, "REPLY"
+
     .line 37
     .line 38
-    move-result v0
+    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 39
-    if-nez v0, :cond_0
-
     .line 40
     .line 41
-    goto :goto_0
+    sput-object v9, LEl7;->t:LEl7;
 
     .line 42
-    :cond_0
-    const/4 p1, 0x0
-
     .line 43
-    :goto_0
-    if-eqz p1, :cond_1
+    new-instance v10, LEl7;
 
     .line 44
     .line 45
-    sget-object v0, LHEf;->c:LHEf;
+    const-string v11, "PSA"
 
     .line 46
     .line 47
-    iget-object v1, v4, LEl7;->Z:LbLd;
+    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 48
     .line 49
-    invoke-virtual {v1, v0, p1}, LbLd;->c(LHEf;Ljava/util/List;)V
-
     .line 50
+    sput-object v10, LEl7;->X:LEl7;
+
     .line 51
     .line 52
-    :cond_1
+    new-instance v11, LEl7;
+
+    .line 53
+    .line 54
+    const-string v12, "SMART_CTA"
+
+    .line 55
+    .line 56
+    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    sput-object v11, LEl7;->Y:LEl7;
+
+    .line 60
+    .line 61
+    const/4 v12, 0x6
+
+    .line 62
+    new-array v12, v12, [LEl7;
+
+    .line 63
+    .line 64
+    aput-object v6, v12, v5
+
+    .line 65
+    .line 66
+    aput-object v7, v12, v4
+
+    .line 67
+    .line 68
+    aput-object v8, v12, v3
+
+    .line 69
+    .line 70
+    aput-object v9, v12, v2
+
+    .line 71
+    .line 72
+    aput-object v10, v12, v1
+
+    .line 73
+    .line 74
+    aput-object v11, v12, v0
+
+    .line 75
+    .line 76
+    sput-object v12, LEl7;->Z:[LEl7;
+
+    .line 77
+    .line 78
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LEl7;
+    .locals 1
+
+    .line 1
+    const-class v0, LEl7;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LEl7;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LEl7;
+    .locals 1
+
+    .line 1
+    sget-object v0, LEl7;->Z:[LEl7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LEl7;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

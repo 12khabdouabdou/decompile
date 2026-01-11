@@ -1,397 +1,210 @@
-.class public final LPdb;
-.super Lo17;
+.class public final enum LPdb;
+.super Ljava/lang/Enum;
 .source "SourceFile"
+
+# interfaces
+.implements LUT6;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "LPdb;",
+        ">;",
+        "LUT6;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final synthetic X:[LPdb;
+
+.field public static final enum b:LPdb;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "EXPAND"
+    .end annotation
+.end field
+
+.field public static final enum c:LPdb;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "COLLAPSE"
+    .end annotation
+.end field
+
+.field public static final enum t:LPdb;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "TAP_LAYER"
+    .end annotation
+.end field
 
 
 # instance fields
-.field public a:I
-
-.field public b:I
-
-.field public c:F
-
-.field public t:F
+.field public final a:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    new-instance v0, LPdb;
+
+    .line 2
+    .line 3
+    const-string v1, "EXPAND"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2, v2}, LPdb;-><init>(Ljava/lang/String;II)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, LPdb;->b:LPdb;
+
+    .line 10
+    .line 11
+    new-instance v1, LPdb;
+
+    .line 12
+    .line 13
+    const-string v3, "COLLAPSE"
+
+    .line 14
+    .line 15
+    const/4 v4, 0x1
+
+    .line 16
+    invoke-direct {v1, v3, v4, v4}, LPdb;-><init>(Ljava/lang/String;II)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v1, LPdb;->c:LPdb;
+
+    .line 20
+    .line 21
+    new-instance v3, LPdb;
+
+    .line 22
+    .line 23
+    const-string v5, "TAP_LAYER"
+
+    .line 24
+    .line 25
+    const/4 v6, 0x2
+
+    .line 26
+    invoke-direct {v3, v5, v6, v6}, LPdb;-><init>(Ljava/lang/String;II)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v3, LPdb;->t:LPdb;
+
+    .line 30
+    .line 31
+    const/4 v5, 0x3
+
+    .line 32
+    new-array v5, v5, [LPdb;
+
+    .line 33
+    .line 34
+    aput-object v0, v5, v2
+
+    .line 35
+    .line 36
+    aput-object v1, v5, v4
+
+    .line 37
+    .line 38
+    aput-object v3, v5, v6
+
+    .line 39
+    .line 40
+    sput-object v5, LPdb;->X:[LPdb;
+
+    .line 41
+    .line 42
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    iput p3, p0, LPdb;->a:I
 
     .line 5
-    iput v0, p0, LPdb;->a:I
-
     .line 6
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LPdb;
+    .locals 1
+
+    .line 1
+    const-class v0, LPdb;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
     .line 7
-    iput v0, p0, LPdb;->b:I
+    check-cast p0, LPdb;
 
     .line 8
     .line 9
-    const/4 v0, 0x0
+    return-object p0
+.end method
 
-    .line 10
-    iput v0, p0, LPdb;->c:F
+.method public static values()[LPdb;
+    .locals 1
 
-    .line 11
-    .line 12
-    iput v0, p0, LPdb;->t:F
+    .line 1
+    sget-object v0, LPdb;->X:[LPdb;
 
-    .line 13
-    .line 14
-    const/4 v0, 0x0
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [LPdb;->clone()Ljava/lang/Object;
 
-    .line 15
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 16
-    .line 17
-    const/4 v0, -0x1
+    .line 7
+    check-cast v0, [LPdb;
 
-    .line 18
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 19
-    .line 20
-    return-void
+    .line 8
+    .line 9
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public final a()I
+    .locals 1
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    iget v0, p0, LPdb;->a:I
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    iget v1, p0, LPdb;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    iget v1, p0, LPdb;->b:I
-
-    .line 12
-    .line 13
-    invoke-static {v2, v1}, Lsa3;->i(II)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    :cond_0
-    iget v1, p0, LPdb;->a:I
-
-    .line 19
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    and-int/2addr v1, v2
-
-    .line 22
-    if-eqz v1, :cond_1
-
-    .line 23
-    .line 24
-    invoke-static {v2}, Lsa3;->h(I)I
-
-    .line 25
-    .line 26
-    .line 27
-    move-result v1
-
-    .line 28
-    add-int/2addr v0, v1
-
-    .line 29
-    :cond_1
-    iget v1, p0, LPdb;->a:I
-
-    .line 30
-    .line 31
-    and-int/lit8 v1, v1, 0x4
-
-    .line 32
-    .line 33
-    if-eqz v1, :cond_2
-
-    .line 34
-    .line 35
-    const/4 v1, 0x3
-
-    .line 36
-    invoke-static {v1}, Lsa3;->h(I)I
-
-    .line 37
-    .line 38
-    .line 39
-    move-result v1
-
-    .line 40
-    add-int/2addr v1, v0
-
-    .line 41
-    return v1
-
-    .line 42
-    :cond_2
     return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_4
-
-    .line 6
-    .line 7
-    const/16 v1, 0x8
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_3
-
-    .line 10
-    .line 11
-    const/16 v1, 0x15
-
-    .line 12
-    .line 13
-    if-eq v0, v1, :cond_2
-
-    .line 14
-    .line 15
-    const/16 v1, 0x1d
-
-    .line 16
-    .line 17
-    if-eq v0, v1, :cond_1
-
-    .line 18
-    .line 19
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    if-nez v0, :cond_0
-
-    .line 24
-    .line 25
-    goto :goto_1
-
-    .line 26
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->i()F
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v0
-
-    .line 30
-    iput v0, p0, LPdb;->t:F
-
-    .line 31
-    .line 32
-    iget v0, p0, LPdb;->a:I
-
-    .line 33
-    .line 34
-    or-int/lit8 v0, v0, 0x4
-
-    .line 35
-    .line 36
-    iput v0, p0, LPdb;->a:I
-
-    .line 37
-    .line 38
-    goto :goto_0
-
-    .line 39
-    :cond_2
-    invoke-virtual {p1}, Lqa3;->i()F
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v0
-
-    .line 43
-    iput v0, p0, LPdb;->c:F
-
-    .line 44
-    .line 45
-    iget v0, p0, LPdb;->a:I
-
-    .line 46
-    .line 47
-    or-int/lit8 v0, v0, 0x2
-
-    .line 48
-    .line 49
-    iput v0, p0, LPdb;->a:I
-
-    .line 50
-    .line 51
-    goto :goto_0
-
-    .line 52
-    :cond_3
-    invoke-virtual {p1}, Lqa3;->q()I
-
-    .line 53
-    .line 54
-    .line 55
-    move-result v0
-
-    .line 56
-    iput v0, p0, LPdb;->b:I
-
-    .line 57
-    .line 58
-    iget v0, p0, LPdb;->a:I
-
-    .line 59
-    .line 60
-    or-int/lit8 v0, v0, 0x1
-
-    .line 61
-    .line 62
-    iput v0, p0, LPdb;->a:I
-
-    .line 63
-    .line 64
-    goto :goto_0
-
-    .line 65
-    :cond_4
-    :goto_1
-    return-object p0
-.end method
-
-.method public final writeTo(Lsa3;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, LPdb;->a:I
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    and-int/2addr v0, v1
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v0, p0, LPdb;->b:I
-
-    .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->I(II)V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    iget v0, p0, LPdb;->a:I
-
-    .line 13
-    .line 14
-    const/4 v1, 0x2
-
-    .line 15
-    and-int/2addr v0, v1
-
-    .line 16
-    if-eqz v0, :cond_1
-
-    .line 17
-    .line 18
-    iget v0, p0, LPdb;->c:F
-
-    .line 19
-    .line 20
-    invoke-virtual {p1, v1, v0}, Lsa3;->G(IF)V
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_1
-    iget v0, p0, LPdb;->a:I
-
-    .line 24
-    .line 25
-    and-int/lit8 v0, v0, 0x4
-
-    .line 26
-    .line 27
-    if-eqz v0, :cond_2
-
-    .line 28
-    .line 29
-    const/4 v0, 0x3
-
-    .line 30
-    iget v1, p0, LPdb;->t:F
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, v0, v1}, Lsa3;->G(IF)V
-
-    .line 33
-    .line 34
-    .line 35
-    :cond_2
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 36
-    .line 37
-    .line 38
-    return-void
 .end method

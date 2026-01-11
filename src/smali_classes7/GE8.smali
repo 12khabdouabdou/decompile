@@ -1,40 +1,42 @@
 .class public final LGE8;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements LGD8;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'error\':r:\'[0]\',\'data\':r:\'[1]\'"
+    typeReferences = {
+        Lcom/snap/profile/communities/GoogleContactPermissionError;,
+        Lcom/snap/profile/communities/GoogleContactPermissionData;
+    }
+.end annotation
 
 
-# virtual methods
-.method public final a(LF8e;)LFD8;
-    .locals 2
+# instance fields
+.field private _data:Lcom/snap/profile/communities/GoogleContactPermissionData;
+
+.field private _error:Lcom/snap/profile/communities/GoogleContactPermissionError;
+
+
+# direct methods
+.method public constructor <init>(Lcom/snap/profile/communities/GoogleContactPermissionError;Lcom/snap/profile/communities/GoogleContactPermissionData;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LoP7;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget-object p1, p1, LF8e;->c:Ljava/lang/Object;
-
     .line 4
+    iput-object p1, p0, LGE8;->_error:Lcom/snap/profile/communities/GoogleContactPermissionError;
+
     .line 5
-    check-cast p1, Lb5j;
-
     .line 6
+    iput-object p2, p0, LGE8;->_data:Lcom/snap/profile/communities/GoogleContactPermissionData;
+
     .line 7
-    check-cast p1, LqE8;
-
     .line 8
-    .line 9
-    const/16 v1, 0x1a
-
-    .line 10
-    .line 11
-    invoke-direct {v0, v1, p1}, LoP7;-><init>(ILjava/lang/Object;)V
-
-    .line 12
-    .line 13
-    .line 14
-    return-object v0
+    return-void
 .end method

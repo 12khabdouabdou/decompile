@@ -70,7 +70,7 @@
     .end annotation
 .end method
 
-.method public abstract initialize2(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;)V
+.method public abstract initialize2(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;Lcom/snapchat/client/snap_maps_sdk/CofProvider;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,6 +86,7 @@
             "Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;",
             "Lcom/snapchat/client/snap_maps_sdk/FontProvider;",
             "Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;",
+            "Lcom/snapchat/client/snap_maps_sdk/CofProvider;",
             ")V"
         }
     .end annotation

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lnid;
+    proxyClass = Lvyd;
     schema = "\'onEvent\':f|m|(r<e>:\'[0]\')"
     typeReferences = {
         Lcom/snap/composer/performance/PerformanceLoggerLifecycle;

@@ -1,12 +1,12 @@
 .class public final Lcom/snap/venueprofile/VenueProfileV2Config;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'sectionsToShow\':a<r<e>:\'[0]\'>,\'hitStaging\':b@?,\'requestHeaders\':m?<s,u>,\'alwaysUseCategoryImages\':b@?,\'ignoreCacheForRequests\':b@?,\'useNativeVenueService\':b@?,\'useNativePlaceDiscoveryService\':b@?,\'useNewButtonsDesign\':b@?,\'enableTappableAnnotations\':b@?,\'showStoryCarousel\':b,\'showPlaceCampusSection\':b@?,\'showStoriesInPlaceCampus\':b@?,\'storyCarouselRankingType\':r?<e>:\'[1]\',\'removeCtaButtonsABTreatment\':s?,\'showFavoritesCount\':b@?,\'showPublicFriendFavorites\':b@?,\'enableQuickTaggingOnPlaceProfile\':b@?"
+    schema = "\'sectionsToShow\':a<r<e>:\'[0]\'>,\'hitStaging\':b@?,\'requestHeaders\':m?<s,u>,\'alwaysUseCategoryImages\':b@?,\'ignoreCacheForRequests\':b@?,\'useNativeVenueService\':b@?,\'useNativePlaceDiscoveryService\':b@?,\'useNewButtonsDesign\':b@?,\'enableTappableAnnotations\':b@?,\'showStoryCarousel\':b,\'showPlaceCampusSection\':b@?,\'showStoriesInPlaceCampus\':b@?,\'storyCarouselRankingType\':r?<e>:\'[1]\',\'removeCtaButtonsABTreatment\':s?,\'showFavoritesCount\':b@?,\'showPublicFriendFavorites\':b@?,\'enableQuickTaggingOnPlaceProfile\':b@?,\'enableGooglePlaceProfileData\':b@?"
     typeReferences = {
         Lcom/snap/venueprofile/VenueProfileSection;,
         Lcom/snap/venues/api/PlaceStoryPlaylistRankingType;
@@ -16,6 +16,8 @@
 
 # instance fields
 .field private _alwaysUseCategoryImages:Ljava/lang/Boolean;
+
+.field private _enableGooglePlaceProfileData:Ljava/lang/Boolean;
 
 .field private _enableQuickTaggingOnPlaceProfile:Ljava/lang/Boolean;
 
@@ -129,10 +131,13 @@
     .line 18
     iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_enableQuickTaggingOnPlaceProfile:Ljava/lang/Boolean;
 
+    .line 19
+    iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_enableGooglePlaceProfileData:Ljava/lang/Boolean;
+
     return-void
 .end method
 
-.method public constructor <init>(Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;ZLjava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/venues/api/PlaceStoryPlaylistRankingType;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
+.method public constructor <init>(Ljava/util/List;Ljava/lang/Boolean;Ljava/util/Map;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;ZLjava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/venues/api/PlaceStoryPlaylistRankingType;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -161,74 +166,91 @@
             "Ljava/lang/Boolean;",
             "Ljava/lang/Boolean;",
             "Ljava/lang/Boolean;",
+            "Ljava/lang/Boolean;",
             ")V"
         }
     .end annotation
 
-    .line 19
+    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 20
+    .line 21
     iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_sectionsToShow:Ljava/util/List;
 
-    .line 21
+    .line 22
     iput-object p2, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_hitStaging:Ljava/lang/Boolean;
 
-    .line 22
+    .line 23
     iput-object p3, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_requestHeaders:Ljava/util/Map;
 
-    .line 23
+    .line 24
     iput-object p4, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_alwaysUseCategoryImages:Ljava/lang/Boolean;
 
-    .line 24
+    .line 25
     iput-object p5, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_ignoreCacheForRequests:Ljava/lang/Boolean;
 
-    .line 25
+    .line 26
     iput-object p6, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_useNativeVenueService:Ljava/lang/Boolean;
 
-    .line 26
+    .line 27
     iput-object p7, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_useNativePlaceDiscoveryService:Ljava/lang/Boolean;
 
-    .line 27
+    .line 28
     iput-object p8, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_useNewButtonsDesign:Ljava/lang/Boolean;
 
-    .line 28
+    .line 29
     iput-object p9, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_enableTappableAnnotations:Ljava/lang/Boolean;
 
-    .line 29
+    .line 30
     iput-boolean p10, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_showStoryCarousel:Z
 
-    .line 30
+    .line 31
     iput-object p11, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_showPlaceCampusSection:Ljava/lang/Boolean;
 
-    .line 31
+    .line 32
     iput-object p12, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_showStoriesInPlaceCampus:Ljava/lang/Boolean;
 
-    .line 32
+    .line 33
     iput-object p13, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_storyCarouselRankingType:Lcom/snap/venues/api/PlaceStoryPlaylistRankingType;
 
-    .line 33
+    .line 34
     iput-object p14, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_removeCtaButtonsABTreatment:Ljava/lang/String;
 
-    .line 34
+    .line 35
     iput-object p15, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_showFavoritesCount:Ljava/lang/Boolean;
 
     move-object/from16 p1, p16
 
-    .line 35
+    .line 36
     iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_showPublicFriendFavorites:Ljava/lang/Boolean;
 
     move-object/from16 p1, p17
 
-    .line 36
+    .line 37
     iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_enableQuickTaggingOnPlaceProfile:Ljava/lang/Boolean;
+
+    move-object/from16 p1, p18
+
+    .line 38
+    iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_enableGooglePlaceProfileData:Ljava/lang/Boolean;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
+.method public final a(Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_enableGooglePlaceProfileData:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final b()V
     .locals 1
 
     .line 1
@@ -243,7 +265,7 @@
     return-void
 .end method
 
-.method public final b()V
+.method public final c()V
     .locals 1
 
     .line 1
@@ -258,7 +280,7 @@
     return-void
 .end method
 
-.method public final c(Ljava/lang/Boolean;)V
+.method public final d(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -269,7 +291,7 @@
     return-void
 .end method
 
-.method public final d(Ljava/lang/Boolean;)V
+.method public final e(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -280,7 +302,7 @@
     return-void
 .end method
 
-.method public final e(Ljava/util/Map;)V
+.method public final f(Ljava/util/Map;)V
     .locals 0
 
     .line 1
@@ -291,7 +313,7 @@
     return-void
 .end method
 
-.method public final f()V
+.method public final g()V
     .locals 1
 
     .line 1
@@ -306,7 +328,7 @@
     return-void
 .end method
 
-.method public final g()V
+.method public final h()V
     .locals 1
 
     .line 1
@@ -321,18 +343,22 @@
     return-void
 .end method
 
-.method public final h(Ljava/lang/Boolean;)V
-    .locals 0
+.method public final i()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_showPublicFriendFavorites:Ljava/lang/Boolean;
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 2
     .line 3
+    iput-object v0, p0, Lcom/snap/venueprofile/VenueProfileV2Config;->_showPublicFriendFavorites:Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
     return-void
 .end method
 
-.method public final i()V
+.method public final j()V
     .locals 1
 
     .line 1
@@ -347,7 +373,7 @@
     return-void
 .end method
 
-.method public final j(Lcom/snap/venues/api/PlaceStoryPlaylistRankingType;)V
+.method public final k(Lcom/snap/venues/api/PlaceStoryPlaylistRankingType;)V
     .locals 0
 
     .line 1
@@ -358,7 +384,7 @@
     return-void
 .end method
 
-.method public final k()V
+.method public final l()V
     .locals 1
 
     .line 1
@@ -373,7 +399,7 @@
     return-void
 .end method
 
-.method public final l()V
+.method public final m()V
     .locals 1
 
     .line 1
@@ -388,7 +414,7 @@
     return-void
 .end method
 
-.method public final m()V
+.method public final n()V
     .locals 1
 
     .line 1

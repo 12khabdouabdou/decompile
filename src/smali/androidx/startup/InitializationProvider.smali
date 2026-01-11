@@ -106,7 +106,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, LWZj;->f(Landroid/content/Context;)LWZj;
+    invoke-static {v0}, Luoh;->m(Landroid/content/Context;)Luoh;
 
     .line 14
     .line 15
@@ -114,7 +114,7 @@
     move-result-object v0
 
     .line 17
-    iget-object v1, v0, LWZj;->t:Ljava/lang/Object;
+    iget-object v1, v0, Luoh;->t:Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -185,7 +185,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {v0, v1}, LWZj;->d(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Luoh;->i(Landroid/os/Bundle;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -213,11 +213,11 @@
 
     .line 63
     :try_start_1
-    new-instance v1, LGX0;
+    new-instance v1, Lm11;
 
     .line 64
     .line 65
-    invoke-direct {v1, v0}, LGX0;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct {v1, v0}, Lm11;-><init>(Ljava/lang/Throwable;)V
 
     .line 66
     .line 67
@@ -245,18 +245,18 @@
 
     .line 75
     :cond_1
-    new-instance v0, LGX0;
+    new-instance v0, Lm11;
 
     .line 76
     .line 77
-    const/16 v1, 0x19
+    const/16 v1, 0x1c
 
     .line 78
     .line 79
     const/4 v2, 0x0
 
     .line 80
-    invoke-direct {v0, v1, v2}, LGX0;-><init>(IZ)V
+    invoke-direct {v0, v1, v2}, Lm11;-><init>(IZ)V
 
     .line 81
     .line 82

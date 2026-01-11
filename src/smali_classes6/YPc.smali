@@ -1,55 +1,85 @@
 .class public final LYPc;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'handler\':r:\'[0]\',\'navigator\':r:\'[1]\',\'inAppBrowserPresenter\':r:\'[2]\',\'shouldShowLearnMore\':b"
-    typeReferences = {
-        Lcom/snap/modules/simple_snapchat/OnboardingTrayHandler;,
-        Lcom/snap/composer/navigation/INavigator;,
-        Lcom/snap/modules/simple_snapchat/InAppBrowserPresenter;
-    }
-.end annotation
+# interfaces
+.implements LHFb;
 
 
-# instance fields
-.field private _handler:Lcom/snap/modules/simple_snapchat/OnboardingTrayHandler;
-
-.field private _inAppBrowserPresenter:Lcom/snap/modules/simple_snapchat/InAppBrowserPresenter;
-
-.field private _navigator:Lcom/snap/composer/navigation/INavigator;
-
-.field private _shouldShowLearnMore:Z
+# static fields
+.field public static final a:LYPc;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/modules/simple_snapchat/OnboardingTrayHandler;Lcom/snap/composer/navigation/INavigator;Lcom/snap/modules/simple_snapchat/InAppBrowserPresenter;Z)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LYPc;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LYPc;->_handler:Lcom/snap/modules/simple_snapchat/OnboardingTrayHandler;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LYPc;->_navigator:Lcom/snap/composer/navigation/INavigator;
+    sput-object v0, LYPc;->a:LYPc;
 
     .line 7
     .line 8
-    iput-object p3, p0, LYPc;->_inAppBrowserPresenter:Lcom/snap/modules/simple_snapchat/InAppBrowserPresenter;
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Lnp0;LXDf;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 0
+
+    .line 1
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+
+    .line 2
+    .line 3
+    return-object p1
+.end method
+
+.method public final b(Lnp0;LXDf;)Lio/reactivex/rxjava3/core/Maybe;
+    .locals 0
+
+    .line 1
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
+
+    .line 2
+    .line 3
+    return-object p1
+.end method
+
+.method public final c(Lnp0;LSYg;LHDf;)Lio/reactivex/rxjava3/core/Single;
+    .locals 0
+
+    .line 1
+    new-instance p1, LHYg;
+
+    .line 2
+    .line 3
+    const-string p2, "unused"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, p2}, LHYg;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
     .line 9
     .line 10
-    iput-boolean p4, p0, LYPc;->_shouldShowLearnMore:Z
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
     .line 11
     .line 12
-    return-void
+    .line 13
+    return-object p2
 .end method

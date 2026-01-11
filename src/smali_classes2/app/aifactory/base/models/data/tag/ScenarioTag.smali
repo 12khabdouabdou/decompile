@@ -30,7 +30,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v7}, Lapp/aifactory/base/models/data/tag/ScenarioTag;-><init>(JJIILHr5;)V
+    invoke-direct/range {v0 .. v7}, Lapp/aifactory/base/models/data/tag/ScenarioTag;-><init>(JJIILex5;)V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(JJIILHr5;)V
+.method public synthetic constructor <init>(JJIILex5;)V
     .locals 2
 
     and-int/lit8 p7, p6, 0x1

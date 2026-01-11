@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lvme;
+    proxyClass = LlEe;
     schema = "\'profile2Enabled\':b@?,\'onTapFriendProfile\':f?|m|(),\'defaultTrayOffsetTop\':d@?,\'otherTrayOffsetY\':g?<c>:\'[0]\'<d@>,\'thisTrayOffsetY\':g?<c>:\'[1]\'<d@>,\'opacity\':d,\'dismissProfile\':f?|m|(),\'isMutualFriendsWithCurrentUser\':b"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
@@ -20,7 +20,7 @@
 
 # virtual methods
 .method public abstract dismissProfile()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -59,7 +59,7 @@
 .end method
 
 .method public abstract onTapFriendProfile()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

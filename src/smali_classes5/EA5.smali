@@ -1,23 +1,30 @@
 .class public final LEA5;
-.super Ljava/lang/Object;
+.super LGA5;
 .source "SourceFile"
-
-# interfaces
-.implements Lok0;
 
 
 # instance fields
-.field public final a:LMi9;
+.field public final a:I
 
-.field public final b:Lio/reactivex/rxjava3/core/Observable;
+.field public final b:F
 
-.field public final c:Lio/reactivex/rxjava3/core/ObservableTransformer;
+.field public final c:F
 
-.field public final t:Lzre;
+.field public final d:I
+
+.field public final e:I
+
+.field public final f:F
+
+.field public final g:F
+
+.field public final h:F
+
+.field public final i:F
 
 
 # direct methods
-.method public constructor <init>(LMi9;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/ObservableTransformer;Lzre;)V
+.method public constructor <init>(IFFIIFFFF)V
     .locals 0
 
     .line 1
@@ -26,316 +33,568 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LEA5;->a:LMi9;
+    iput p1, p0, LEA5;->a:I
 
     .line 5
     .line 6
-    iput-object p2, p0, LEA5;->b:Lio/reactivex/rxjava3/core/Observable;
+    iput p2, p0, LEA5;->b:F
 
     .line 7
     .line 8
-    iput-object p3, p0, LEA5;->c:Lio/reactivex/rxjava3/core/ObservableTransformer;
+    iput p3, p0, LEA5;->c:F
 
     .line 9
     .line 10
-    iput-object p4, p0, LEA5;->t:Lzre;
+    iput p4, p0, LEA5;->d:I
 
     .line 11
     .line 12
+    iput p5, p0, LEA5;->e:I
+
+    .line 13
+    .line 14
+    iput p6, p0, LEA5;->f:F
+
+    .line 15
+    .line 16
+    iput p7, p0, LEA5;->g:F
+
+    .line 17
+    .line 18
+    iput p8, p0, LEA5;->h:F
+
+    .line 19
+    .line 20
+    iput p9, p0, LEA5;->i:F
+
+    .line 21
+    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1()Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 7
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
-    iget-object v1, p0, LEA5;->a:LMi9;
+    return v0
 
+    .line 5
+    :cond_0
+    instance-of v1, p1, LEA5;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    invoke-interface {v1}, LM5d;->a()Lio/reactivex/rxjava3/core/Observable;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
+    return v2
+
     .line 11
-    move-result-object v2
+    :cond_1
+    check-cast p1, LEA5;
 
     .line 12
-    const-class v3, LLi9;
-
     .line 13
-    .line 14
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->v0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    iget v1, p1, LEA5;->a:I
 
+    .line 14
     .line 15
+    iget v3, p0, LEA5;->a:I
+
     .line 16
     .line 17
-    move-result-object v2
+    if-eq v3, v1, :cond_2
 
     .line 18
-    new-instance v3, LFMi;
-
     .line 19
+    return v2
+
     .line 20
-    const/16 v4, 0x11
+    :cond_2
+    iget v1, p0, LEA5;->b:F
 
     .line 21
     .line 22
-    invoke-direct {v3, v4, p0}, LFMi;-><init>(ILjava/lang/Object;)V
+    iget v3, p1, LEA5;->b:F
 
     .line 23
     .line 24
-    .line 25
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapMaybe;
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
+    .line 25
     .line 26
     .line 27
-    invoke-direct {v5, v2, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapMaybe;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+    move-result v1
 
     .line 28
+    if-eqz v1, :cond_3
+
     .line 29
     .line 30
-    iget-object v2, p0, LEA5;->c:Lio/reactivex/rxjava3/core/ObservableTransformer;
+    return v2
 
     .line 31
-    .line 32
-    invoke-virtual {v5, v2}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+    :cond_3
+    iget v1, p0, LEA5;->c:F
 
+    .line 32
     .line 33
+    iget v3, p1, LEA5;->c:F
+
     .line 34
     .line 35
-    move-result-object v2
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
     .line 36
-    sget-object v3, Lej9;->a:Lej9;
-
     .line 37
     .line 38
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->J0(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
+    move-result v1
 
     .line 39
+    if-eqz v1, :cond_4
+
     .line 40
     .line 41
-    move-result-object v2
+    return v2
 
     .line 42
-    sget-object v3, LQFa;->a:LQFa;
+    :cond_4
+    iget v1, p0, LEA5;->d:I
 
     .line 43
     .line 44
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
+    iget v3, p1, LEA5;->d:I
 
     .line 45
     .line 46
-    .line 47
-    move-result-object v2
+    if-eq v1, v3, :cond_5
 
+    .line 47
     .line 48
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+    return v2
 
     .line 49
+    :cond_5
+    iget v1, p0, LEA5;->e:I
+
     .line 50
     .line 51
-    move-result-object v2
+    iget v3, p1, LEA5;->e:I
 
     .line 52
-    const-class v3, Lsj9;
-
     .line 53
+    if-eq v1, v3, :cond_6
+
     .line 54
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->v0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
     .line 55
-    .line 56
-    .line 57
-    move-result-object v3
+    return v2
 
+    .line 56
+    :cond_6
+    iget v1, p0, LEA5;->f:F
+
+    .line 57
     .line 58
-    const-wide/16 v5, 0x1
+    iget v3, p1, LEA5;->f:F
 
     .line 59
     .line 60
-    invoke-virtual {v3, v5, v6}, Lio/reactivex/rxjava3/core/Observable;->N0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
     .line 61
     .line 62
     .line 63
-    move-result-object v3
+    move-result v1
 
     .line 64
-    iget-object v5, p0, LEA5;->b:Lio/reactivex/rxjava3/core/Observable;
+    if-eqz v1, :cond_7
 
     .line 65
     .line 66
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    return v2
 
     .line 67
+    :cond_7
+    iget v1, p0, LEA5;->g:F
+
     .line 68
     .line 69
-    new-instance v6, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDelaySubscriptionOther;
+    iget v3, p1, LEA5;->g:F
 
     .line 70
     .line 71
-    invoke-direct {v6, v5, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDelaySubscriptionOther;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)V
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
     .line 72
     .line 73
     .line 74
-    invoke-virtual {v6}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
+    move-result v1
 
     .line 75
+    if-eqz v1, :cond_8
+
     .line 76
     .line 77
-    move-result-object v3
+    return v2
 
     .line 78
-    invoke-virtual {v3}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+    :cond_8
+    iget v1, p0, LEA5;->h:F
 
     .line 79
     .line 80
-    .line 81
-    move-result-object v3
+    iget v3, p1, LEA5;->h:F
 
+    .line 81
     .line 82
-    sget-object v5, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
+    invoke-static {v1, v3}, Ljava/lang/Float;->compare(FF)I
 
     .line 83
     .line 84
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 85
+    move-result v1
+
     .line 86
+    if-eqz v1, :cond_9
+
     .line 87
-    invoke-static {v2, v3}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
-
     .line 88
-    .line 89
-    .line 90
-    move-result-object v2
+    return v2
 
+    .line 89
+    :cond_9
+    iget v1, p0, LEA5;->i:F
+
+    .line 90
     .line 91
-    iget-object v5, p0, LEA5;->t:Lzre;
+    iget p1, p1, LEA5;->i:F
 
     .line 92
     .line 93
-    check-cast v5, LBre;
+    invoke-static {v1, p1}, Ljava/lang/Float;->compare(FF)I
 
     .line 94
     .line 95
-    invoke-virtual {v5}, LBre;->i()Lgn0;
-
     .line 96
-    .line 97
-    .line 98
-    move-result-object v6
+    move-result p1
 
+    .line 97
+    if-eqz p1, :cond_a
+
+    .line 98
     .line 99
-    invoke-virtual {v2, v6}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    return v2
 
     .line 100
-    .line 101
-    .line 102
-    move-result-object v2
-
-    .line 103
-    sget-object v6, LPt5;->m0:LPt5;
-
-    .line 104
-    .line 105
-    invoke-static {v2, v6, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 106
-    .line 107
-    .line 108
-    invoke-virtual {v5}, LBre;->i()Lgn0;
-
-    .line 109
-    .line 110
-    .line 111
-    move-result-object v2
-
-    .line 112
-    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
-    .line 113
-    .line 114
-    .line 115
-    move-result-object v2
-
-    .line 116
-    sget-object v3, LoM2;->s0:LoM2;
-
-    .line 117
-    .line 118
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 119
-    .line 120
-    .line 121
-    move-result-object v2
-
-    .line 122
-    new-instance v3, LhMi;
-
-    .line 123
-    .line 124
-    invoke-direct {v3, v4, p0}, LhMi;-><init>(ILjava/lang/Object;)V
-
-    .line 125
-    .line 126
-    .line 127
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 128
-    .line 129
-    .line 130
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 131
-    .line 132
-    invoke-direct {v4, v2, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 133
-    .line 134
-    .line 135
-    invoke-interface {v1}, LLl9;->f()Lio/reactivex/rxjava3/functions/Consumer;
-
-    .line 136
-    .line 137
-    .line 138
-    move-result-object v1
-
-    .line 139
-    invoke-static {v4, v1, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 140
-    .line 141
-    .line 142
-    return-object v0
+    :cond_a
+    return v0
 .end method
 
-.method public final observe()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
+.method public final hashCode()I
+    .locals 3
 
     .line 1
-    invoke-static {p0}, LXsk;->d(Lok0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+    iget v0, p0, LEA5;->a:I
 
     .line 2
     .line 3
+    const/16 v1, 0x1f
+
     .line 4
+    .line 5
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 6
+    .line 7
+    iget v2, p0, LEA5;->b:F
+
+    .line 8
+    .line 9
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    iget v2, p0, LEA5;->c:F
+
+    .line 14
+    .line 15
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    iget v2, p0, LEA5;->d:I
+
+    .line 20
+    .line 21
+    add-int/2addr v0, v2
+
+    .line 22
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 23
+    .line 24
+    iget v2, p0, LEA5;->e:I
+
+    .line 25
+    .line 26
+    add-int/2addr v0, v2
+
+    .line 27
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 28
+    .line 29
+    iget v2, p0, LEA5;->f:F
+
+    .line 30
+    .line 31
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v0
+
+    .line 35
+    iget v2, p0, LEA5;->g:F
+
+    .line 36
+    .line 37
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v0
+
+    .line 41
+    iget v2, p0, LEA5;->h:F
+
+    .line 42
+    .line 43
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v0
+
+    .line 47
+    iget v1, p0, LEA5;->i:F
+
+    .line 48
+    .line 49
+    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v1
+
+    .line 53
+    add-int/2addr v1, v0
+
+    .line 54
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Available(rows="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, LEA5;->a:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", itemHeight="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, LEA5;->b:F
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", itemWidth="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget v1, p0, LEA5;->c:F
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", width="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget v1, p0, LEA5;->d:I
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", height="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget v1, p0, LEA5;->e:I
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string v1, ", canvasBiasX="
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    iget v1, p0, LEA5;->f:F
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    const-string v1, ", canvasBiasY="
+
+    .line 64
+    .line 65
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 66
+    .line 67
+    .line 68
+    iget v1, p0, LEA5;->g:F
+
+    .line 69
+    .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 71
+    .line 72
+    .line 73
+    const-string v1, ", canvasPivotX="
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    iget v1, p0, LEA5;->h:F
+
+    .line 79
+    .line 80
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 81
+    .line 82
+    .line 83
+    const-string v1, ", canvasPivotY="
+
+    .line 84
+    .line 85
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 86
+    .line 87
+    .line 88
+    iget v1, p0, LEA5;->i:F
+
+    .line 89
+    .line 90
+    const-string v2, ")"
+
+    .line 91
+    .line 92
+    invoke-static {v0, v1, v2}, LvO;->e(Ljava/lang/StringBuilder;FLjava/lang/String;)Ljava/lang/String;
+
+    .line 93
+    .line 94
+    .line 95
     move-result-object v0
 
-    .line 5
+    .line 96
     return-object v0
 .end method

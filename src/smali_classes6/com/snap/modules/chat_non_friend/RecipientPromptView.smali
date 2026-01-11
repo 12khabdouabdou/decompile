@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LzDe;",
-        "LwDe;",
+        "LbVe;",
+        "LYUe;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LyDe;
+.field public static final Companion:LaVe;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LyDe;
+    new-instance v0, LaVe;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/chat_non_friend/RecipientPromptView;->Companion:LyDe;
+    sput-object v0, Lcom/snap/modules/chat_non_friend/RecipientPromptView;->Companion:LaVe;
 
     .line 7
     .line 8
@@ -62,32 +62,15 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
-    .locals 1
-
-    sget-object v0, Lcom/snap/modules/chat_non_friend/RecipientPromptView;->Companion:LyDe;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {p0, v0, v0, p1, v0}, LyDe;->a(LqZ8;LzDe;LwDe;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;LzDe;LwDe;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
+.method public static final create(LZ69;LbVe;LYUe;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LzDe;",
-            "LwDe;",
-            "LTB3;",
+            "LZ69;",
+            "LbVe;",
+            "LYUe;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/modules/chat_non_friend/RecipientPromptView;"
@@ -95,11 +78,28 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/modules/chat_non_friend/RecipientPromptView;->Companion:LyDe;
+    sget-object v0, Lcom/snap/modules/chat_non_friend/RecipientPromptView;->Companion:LaVe;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2, p3, p4}, LyDe;->a(LqZ8;LzDe;LwDe;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
+    invoke-static {p0, p1, p2, p3, p4}, LaVe;->a(LZ69;LbVe;LYUe;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
+    .locals 1
+
+    sget-object v0, Lcom/snap/modules/chat_non_friend/RecipientPromptView;->Companion:LaVe;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, LaVe;->a(LZ69;LbVe;LYUe;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_non_friend/RecipientPromptView;
 
     move-result-object p0
 

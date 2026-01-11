@@ -1,16 +1,199 @@
 .class public final Lcx9;
-.super Ljava/util/ArrayList;
+.super Lax9;
 .source "SourceFile"
 
-# interfaces
-.implements Lex9;
-.implements Lhx9;
-.implements Ljava/util/List;
+
+# static fields
+.field public static final t:Lcx9;
 
 
 # direct methods
-.method public static h(Lcx9;Lix9;)Ljava/lang/String;
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcx9;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    invoke-direct {v0, v1, v2, v1}, Lax9;-><init>(III)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lcx9;->t:Lcx9;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    instance-of v0, p1, Lcx9;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_2
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lcx9;->isEmpty()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    move-object v0, p1
+
+    .line 12
+    check-cast v0, Lcx9;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Lcx9;->isEmpty()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    if-nez v0, :cond_1
+
+    .line 19
+    .line 20
+    :cond_0
+    check-cast p1, Lcx9;
+
+    .line 21
+    .line 22
+    iget v0, p1, Lax9;->a:I
+
+    .line 23
+    .line 24
+    iget v1, p0, Lax9;->a:I
+
+    .line 25
+    .line 26
+    if-ne v1, v0, :cond_2
+
+    .line 27
+    .line 28
+    iget p1, p1, Lax9;->b:I
+
+    .line 29
+    .line 30
+    iget v0, p0, Lax9;->b:I
+
+    .line 31
+    .line 32
+    if-ne v0, p1, :cond_2
+
+    .line 33
+    .line 34
+    :cond_1
+    const/4 p1, 0x1
+
+    .line 35
+    return p1
+
+    .line 36
+    :cond_2
+    const/4 p1, 0x0
+
+    .line 37
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lcx9;->isEmpty()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, -0x1
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_0
+    iget v0, p0, Lax9;->a:I
+
+    .line 10
+    .line 11
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 12
+    .line 13
+    iget v1, p0, Lax9;->b:I
+
+    .line 14
+    .line 15
+    add-int/2addr v0, v1
+
+    .line 16
+    return v0
+.end method
+
+.method public final isEmpty()Z
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lax9;->a:I
+
+    .line 2
+    .line 3
+    iget v1, p0, Lax9;->b:I
+
+    .line 4
+    .line 5
+    if-le v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -22,121 +205,40 @@
     .line 4
     .line 5
     .line 6
-    :try_start_0
-    invoke-static {p0, v0, p1}, Lcx9;->s(Ljava/util/List;Ljava/lang/StringBuilder;Lix9;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    iget v1, p0, Lax9;->a:I
 
     .line 7
     .line 8
-    .line 9
-    :catch_0
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 9
     .line 10
     .line 11
+    const-string v1, ".."
+
     .line 12
-    move-result-object p0
-
     .line 13
-    return-object p0
-.end method
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-.method public static s(Ljava/util/List;Ljava/lang/StringBuilder;Lix9;)V
-    .locals 1
+    .line 14
+    .line 15
+    .line 16
+    iget v1, p0, Lax9;->b:I
 
-    .line 1
-    sget-object v0, Lu5k;->g:Lu5k$b;
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0, p0, p1, p2}, Lu5k$b;->a(Ljava/lang/Object;Ljava/lang/StringBuilder;Lix9;)V
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c(Lix9;)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lcx9;->h(Lcx9;Lix9;)Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final d()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    sget-object v0, Llx9;->a:Lix9;
-
-    .line 2
-    .line 3
-    invoke-static {p0, v0}, Lcx9;->h(Lcx9;Lix9;)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
+    .line 22
+    .line 23
+    .line 24
     move-result-object v0
 
-    .line 7
-    return-object v0
-.end method
-
-.method public final o(Ljava/lang/StringBuilder;)V
-    .locals 1
-
-    .line 1
-    sget-object v0, Llx9;->a:Lix9;
-
-    .line 2
-    .line 3
-    invoke-static {p0, p1, v0}, Lcx9;->s(Ljava/util/List;Ljava/lang/StringBuilder;Lix9;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final r(Ljava/lang/StringBuilder;Lix9;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, Lcx9;->s(Ljava/util/List;Ljava/lang/StringBuilder;Lix9;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    sget-object v0, Llx9;->a:Lix9;
-
-    .line 2
-    .line 3
-    invoke-static {p0, v0}, Lcx9;->h(Lcx9;Lix9;)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
+    .line 25
     return-object v0
 .end method

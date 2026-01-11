@@ -42,12 +42,12 @@
     .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p2, 0x7f0e0635
+    const p2, 0x7f0e0656
 
     .line 4
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const p1, 0x7f0b1166
+    const p1, 0x7f0b128b
 
     .line 5
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -56,7 +56,7 @@
 
     check-cast p1, Landroid/widget/ImageView;
 
-    const p1, 0x7f0b1470
+    const p1, 0x7f0b15a5
 
     .line 6
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -67,7 +67,7 @@
 
     iput-object p1, p0, Lcom/snap/preview/shared/ui/SendToBottomPanelView;->a:Landroid/widget/HorizontalScrollView;
 
-    const p1, 0x7f0b1474
+    const p1, 0x7f0b15a9
 
     .line 7
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -78,7 +78,7 @@
 
     iput-object p1, p0, Lcom/snap/preview/shared/ui/SendToBottomPanelView;->b:Landroid/widget/LinearLayout;
 
-    const p1, 0x7f0b1473
+    const p1, 0x7f0b15a8
 
     .line 8
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -89,7 +89,7 @@
 
     iput-object p1, p0, Lcom/snap/preview/shared/ui/SendToBottomPanelView;->c:Landroid/widget/TextView;
 
-    const p1, 0x7f0b146e
+    const p1, 0x7f0b15a3
 
     .line 9
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -100,7 +100,7 @@
 
     iput-object p1, p0, Lcom/snap/preview/shared/ui/SendToBottomPanelView;->t:Landroid/widget/TextView;
 
-    const p1, 0x7f0b146f
+    const p1, 0x7f0b15a4
 
     .line 10
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

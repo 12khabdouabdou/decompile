@@ -9,7 +9,7 @@
 
 
 # static fields
-.field public static final Companion:Lfy3;
+.field public static final Companion:LtB3;
 
 .field private static final pool:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -53,16 +53,16 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lfy3;
+    new-instance v0, LtB3;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lfy3;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sput-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 7
     .line 8
@@ -86,17 +86,22 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
-    invoke-static {v0}, Lfy3;->b(Lfy3;)J
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeCreate()J
 
     move-result-wide v0
 
+    .line 4
     invoke-direct {p0, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;-><init>(J)V
 
     const/4 v0, 0x1
 
-    .line 2
+    .line 5
     iput-boolean v0, p0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->owned:Z
 
     return-void
@@ -105,12 +110,12 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 3
+    .line 6
     invoke-direct {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;-><init>(J)V
 
     const/4 p1, 0x0
 
-    .line 4
+    .line 7
     iput-boolean p1, p0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->owned:Z
 
     return-void
@@ -1042,14 +1047,35 @@
 .method public static final arrayToList([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    .line 1
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lfy3;->j0([Ljava/lang/Object;)Ljava/util/List;
+    .line 4
+    .line 5
+    .line 6
+    array-length v0, p0
 
+    .line 7
+    invoke-static {p0, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
     move-result-object p0
 
+    .line 11
+    invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
     return-object p0
 .end method
 
@@ -1280,14 +1306,28 @@
 .method public static final listToArray(Ljava/lang/Object;)[Ljava/lang/Object;
     .locals 1
 
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    .line 1
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lfy3;->k0(Ljava/lang/Object;)[Ljava/lang/Object;
+    .line 4
+    .line 5
+    .line 6
+    check-cast p0, Ljava/util/Collection;
 
+    .line 7
+    .line 8
+    invoke-interface {p0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
     move-result-object p0
 
+    .line 12
     return-object p0
 .end method
 
@@ -1483,25 +1523,75 @@
 .method public static final pushMarshallable(Lcom/snap/composer/utils/ComposerMarshallable;J)I
     .locals 1
 
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    .line 1
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2}, Lfy3;->l0(Lcom/snap/composer/utils/ComposerMarshallable;J)I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p1, p2}, LtB3;->b(J)Lcom/snap/composer/utils/ComposerMarshallerCPP;
 
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    :try_start_0
+    invoke-interface {p0, p1}, Lcom/snap/composer/utils/ComposerMarshallable;->pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+
+    .line 11
+    .line 12
+    .line 13
     move-result p0
 
+    .line 14
+    invoke-static {p1}, LtB3;->a(Lcom/snap/composer/utils/ComposerMarshallerCPP;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 15
+    .line 16
+    .line 17
     return p0
+
+    .line 18
+    :catchall_0
+    move-exception p0
+
+    .line 19
+    sget-object p1, Lcom/snap/composer/exceptions/GlobalExceptionHandler;->Companion:Lcom/snap/composer/exceptions/GlobalExceptionHandler$Companion;
+
+    .line 20
+    .line 21
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-static {p0}, Lcom/snap/composer/exceptions/GlobalExceptionHandler$Companion;->b(Ljava/lang/Throwable;)V
+
+    .line 25
+    .line 26
+    .line 27
+    const/4 p0, 0x0
+
+    .line 28
+    throw p0
 .end method
 
 .method public static final release(Lcom/snap/composer/utils/ComposerMarshallerCPP;)V
     .locals 1
 
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, Lfy3;->m0(Lcom/snap/composer/utils/ComposerMarshallerCPP;)V
+    invoke-static {p0}, LtB3;->a(Lcom/snap/composer/utils/ComposerMarshallerCPP;)V
 
     return-void
 .end method
@@ -1509,11 +1599,11 @@
 .method public static final wrap(J)Lcom/snap/composer/utils/ComposerMarshallerCPP;
     .locals 1
 
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1}, Lfy3;->n0(J)Lcom/snap/composer/utils/ComposerMarshallerCPP;
+    invoke-static {p0, p1}, LtB3;->b(J)Lcom/snap/composer/utils/ComposerMarshallerCPP;
 
     move-result-object p0
 
@@ -1526,7 +1616,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1538,11 +1628,16 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2}, Lfy3;->a(Lfy3;J)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
+    invoke-static {v1, v2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeCheckError(J)V
+
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -1570,15 +1665,20 @@
 
     .line 10
     .line 11
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 12
     .line 13
-    invoke-static {v0, p1, p2}, Lfy3;->c(Lfy3;J)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
     .line 15
     .line 16
+    invoke-static {p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeDestroy(J)V
+
+    .line 17
+    .line 18
+    .line 19
     :cond_0
     return-void
 .end method
@@ -1613,7 +1713,7 @@
 
     .line 11
     :cond_1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 12
     .line 13
@@ -1637,14 +1737,19 @@
     move-result-wide v3
 
     .line 23
-    invoke-static {v0, v1, v2, v3, v4}, Lfy3;->d(Lfy3;JJ)Z
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 24
     .line 25
     .line 26
-    move-result p1
+    invoke-static {v1, v2, v3, v4}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeEquals(JJ)Z
 
     .line 27
+    .line 28
+    .line 29
+    move-result p1
+
+    .line 30
     return p1
 .end method
 
@@ -1652,7 +1757,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1664,14 +1769,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->h(Lfy3;JI)Z
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetBoolean(JI)Z
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -1679,7 +1789,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1691,43 +1801,48 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->i(Lfy3;JI)[B
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetByteArray(JI)[B
 
     .line 11
-    if-eqz v0, :cond_0
-
     .line 12
     .line 13
-    return-object v0
+    move-result-object v0
 
     .line 14
-    :cond_0
-    new-instance v0, Lcom/snap/composer/exceptions/MarshallerException;
+    if-eqz v0, :cond_0
 
     .line 15
     .line 16
-    const-string v1, "No ByteArray at index "
+    return-object v0
 
     .line 17
-    .line 18
-    invoke-static {p1, v1}, Ln9f;->m(ILjava/lang/String;)Ljava/lang/String;
+    :cond_0
+    new-instance v0, Lcom/snap/composer/exceptions/MarshallerException;
 
+    .line 18
     .line 19
+    const-string v1, "No ByteArray at index "
+
     .line 20
     .line 21
-    move-result-object p1
+    invoke-static {p1, v1}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 22
-    invoke-direct {v0, p1}, Lcom/snap/composer/exceptions/MarshallerException;-><init>(Ljava/lang/String;)V
-
     .line 23
     .line 24
+    move-result-object p1
+
     .line 25
+    invoke-direct {v0, p1}, Lcom/snap/composer/exceptions/MarshallerException;-><init>(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
     throw v0
 .end method
 
@@ -1735,7 +1850,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1747,14 +1862,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->j(Lfy3;JI)D
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-wide v0
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetDouble(JI)D
 
     .line 11
+    .line 12
+    .line 13
+    move-result-wide v0
+
+    .line 14
     return-wide v0
 .end method
 
@@ -1789,7 +1909,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1801,63 +1921,68 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->k(Lfy3;JI)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetFunction(JI)Ljava/lang/Object;
 
     .line 11
-    instance-of v1, v0, Lcom/snap/composer/callable/ComposerFunction;
-
     .line 12
     .line 13
-    if-eqz v1, :cond_0
+    move-result-object v0
 
     .line 14
+    instance-of v1, v0, Lcom/snap/composer/callable/ComposerFunction;
+
     .line 15
+    .line 16
+    if-eqz v1, :cond_0
+
+    .line 17
+    .line 18
     check-cast v0, Lcom/snap/composer/callable/ComposerFunction;
 
-    .line 16
-    .line 17
+    .line 19
+    .line 20
     goto :goto_0
 
-    .line 18
+    .line 21
     :cond_0
     const/4 v0, 0x0
 
-    .line 19
+    .line 22
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 20
-    .line 21
+    .line 23
+    .line 24
     return-object v0
 
-    .line 22
+    .line 25
     :cond_1
     new-instance v0, Lcom/snap/composer/exceptions/MarshallerException;
 
-    .line 23
-    .line 24
+    .line 26
+    .line 27
     const-string v1, "No Function at index "
 
-    .line 25
-    .line 26
-    invoke-static {p1, v1}, Ln9f;->m(ILjava/lang/String;)Ljava/lang/String;
-
-    .line 27
     .line 28
     .line 29
-    move-result-object p1
+    invoke-static {p1, v1}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 30
-    invoke-direct {v0, p1}, Lcom/snap/composer/exceptions/MarshallerException;-><init>(Ljava/lang/String;)V
-
     .line 31
     .line 32
+    move-result-object p1
+
     .line 33
+    invoke-direct {v0, p1}, Lcom/snap/composer/exceptions/MarshallerException;-><init>(Ljava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
     throw v0
 .end method
 
@@ -1883,7 +2008,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1895,22 +2020,27 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1, p2}, Lfy3;->e(Lfy3;JII)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetArrayItem(JII)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
 .method public getListItemAndPopPrevious(IIZ)I
-    .locals 6
+    .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1922,16 +2052,12 @@
     move-result-wide v1
 
     .line 7
-    move v3, p1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
-    move v4, p2
-
     .line 9
-    move v5, p3
-
     .line 10
-    invoke-static/range {v0 .. v5}, Lfy3;->f(Lfy3;JIIZ)I
+    invoke-static {v1, v2, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetArrayItemAndPopPrevious(JIIZ)I
 
     .line 11
     .line 12
@@ -1946,7 +2072,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1958,14 +2084,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->g(Lfy3;JI)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetArrayLength(JI)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -1973,7 +2104,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -1985,22 +2116,27 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->m(Lfy3;JI)J
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-wide v0
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetLong(JI)J
 
     .line 11
+    .line 12
+    .line 13
+    move-result-wide v0
+
+    .line 14
     return-wide v0
 .end method
 
-.method public getMapPropertyBoolean(Ljq9;I)Z
-    .locals 6
+.method public getMapPropertyBoolean(Llz9;I)Z
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2024,25 +2160,27 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->o(Lfy3;JJI)Z
-
     .line 15
     .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyBoolean(JJI)Z
+
     .line 17
+    .line 18
+    .line 19
     move-result p1
 
-    .line 18
+    .line 20
     return p1
 .end method
 
-.method public getMapPropertyByteArray(Ljq9;I)[B
-    .locals 6
+.method public getMapPropertyByteArray(Llz9;I)[B
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2066,25 +2204,27 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->p(Lfy3;JJI)[B
-
     .line 15
     .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyByteArray(JJI)[B
+
     .line 17
+    .line 18
+    .line 19
     move-result-object p1
 
-    .line 18
+    .line 20
     return-object p1
 .end method
 
-.method public getMapPropertyDouble(Ljq9;I)D
-    .locals 6
+.method public getMapPropertyDouble(Llz9;I)D
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2108,25 +2248,27 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->q(Lfy3;JJI)D
-
     .line 15
     .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyDouble(JJI)D
+
     .line 17
+    .line 18
+    .line 19
     move-result-wide p1
 
-    .line 18
+    .line 20
     return-wide p1
 .end method
 
-.method public getMapPropertyFunction(Ljq9;I)Lcom/snap/composer/callable/ComposerFunction;
-    .locals 6
+.method public getMapPropertyFunction(Llz9;I)Lcom/snap/composer/callable/ComposerFunction;
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2150,216 +2292,226 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->r(Lfy3;JJI)Ljava/lang/Object;
-
     .line 15
     .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyFunction(JJI)Ljava/lang/Object;
+
     .line 17
+    .line 18
+    .line 19
     move-result-object p1
 
-    .line 18
+    .line 20
     check-cast p1, Lcom/snap/composer/callable/ComposerFunction;
-
-    .line 19
-    .line 20
-    return-object p1
-.end method
-
-.method public getMapPropertyLong(Ljq9;I)J
-    .locals 6
-
-    .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-wide v1
-
-    .line 7
-    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-wide v3
-
-    .line 13
-    move v5, p2
-
-    .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->s(Lfy3;JJI)J
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-wide p1
-
-    .line 18
-    return-wide p1
-.end method
-
-.method public getMapPropertyOpaque(Ljq9;I)Ljava/lang/Object;
-    .locals 6
-
-    .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-wide v1
-
-    .line 7
-    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-wide v3
-
-    .line 13
-    move v5, p2
-
-    .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->t(Lfy3;JJI)Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    return-object p1
-.end method
-
-.method public getMapPropertyOptionalByteArray(Ljq9;I)[B
-    .locals 6
-
-    .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-wide v1
-
-    .line 7
-    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-wide v3
-
-    .line 13
-    move v5, p2
-
-    .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->u(Lfy3;JJI)[B
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    return-object p1
-.end method
-
-.method public getMapPropertyOptionalFunction(Ljq9;I)Lcom/snap/composer/callable/ComposerFunction;
-    .locals 6
-
-    .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-wide v1
-
-    .line 7
-    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-wide v3
-
-    .line 13
-    move v5, p2
-
-    .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->v(Lfy3;JJI)Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    instance-of p2, p1, Lcom/snap/composer/callable/ComposerFunction;
-
-    .line 19
-    .line 20
-    if-eqz p2, :cond_0
 
     .line 21
     .line 22
-    check-cast p1, Lcom/snap/composer/callable/ComposerFunction;
+    return-object p1
+.end method
+
+.method public getMapPropertyLong(Llz9;I)J
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v3
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyLong(JJI)J
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-wide p1
+
+    .line 20
+    return-wide p1
+.end method
+
+.method public getMapPropertyOpaque(Llz9;I)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v3
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyOpaque(JJI)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    return-object p1
+.end method
+
+.method public getMapPropertyOptionalByteArray(Llz9;I)[B
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v3
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyOptionalByteArray(JJI)[B
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    return-object p1
+.end method
+
+.method public getMapPropertyOptionalFunction(Llz9;I)Lcom/snap/composer/callable/ComposerFunction;
+    .locals 5
+
+    .line 1
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/utils/InternedStringCPP;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v3
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyOptionalFunction(JJI)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    instance-of p2, p1, Lcom/snap/composer/callable/ComposerFunction;
+
+    .line 21
+    .line 22
+    if-eqz p2, :cond_0
 
     .line 23
     .line 24
-    return-object p1
+    check-cast p1, Lcom/snap/composer/callable/ComposerFunction;
 
     .line 25
+    .line 26
+    return-object p1
+
+    .line 27
     :cond_0
     const/4 p1, 0x0
 
-    .line 26
+    .line 28
     return-object p1
 .end method
 
-.method public getMapPropertyOptionalString(Ljq9;I)Ljava/lang/String;
-    .locals 6
+.method public getMapPropertyOptionalString(Llz9;I)Ljava/lang/String;
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2383,25 +2535,27 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->w(Lfy3;JJI)Ljava/lang/String;
-
     .line 15
     .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyOptionalString(JJI)Ljava/lang/String;
+
     .line 17
+    .line 18
+    .line 19
     move-result-object p1
 
-    .line 18
+    .line 20
     return-object p1
 .end method
 
-.method public getMapPropertyString(Ljq9;I)Ljava/lang/String;
-    .locals 6
+.method public getMapPropertyString(Llz9;I)Ljava/lang/String;
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2425,17 +2579,19 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    invoke-static/range {v0 .. v5}, Lfy3;->x(Lfy3;JJI)Ljava/lang/String;
-
     .line 15
     .line 16
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapPropertyString(JJI)Ljava/lang/String;
+
     .line 17
+    .line 18
+    .line 19
     move-result-object p1
 
-    .line 18
+    .line 20
     return-object p1
 .end method
 
@@ -2443,7 +2599,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2455,63 +2611,68 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->y(Lfy3;JI)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetNativeWrapper(JI)Ljava/lang/Object;
 
     .line 11
-    instance-of v1, v0, Lcom/snapchat/client/valdi/utils/CppObjectWrapper;
-
     .line 12
     .line 13
-    if-eqz v1, :cond_0
+    move-result-object v0
 
     .line 14
+    instance-of v1, v0, Lcom/snapchat/client/valdi/utils/CppObjectWrapper;
+
     .line 15
+    .line 16
+    if-eqz v1, :cond_0
+
+    .line 17
+    .line 18
     check-cast v0, Lcom/snapchat/client/valdi/utils/CppObjectWrapper;
 
-    .line 16
-    .line 17
+    .line 19
+    .line 20
     goto :goto_0
 
-    .line 18
+    .line 21
     :cond_0
     const/4 v0, 0x0
 
-    .line 19
+    .line 22
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 20
-    .line 21
+    .line 23
+    .line 24
     return-object v0
 
-    .line 22
+    .line 25
     :cond_1
     new-instance v0, Lcom/snap/composer/exceptions/MarshallerException;
 
-    .line 23
-    .line 24
+    .line 26
+    .line 27
     const-string v1, "No NativeWrapper at index "
 
-    .line 25
-    .line 26
-    invoke-static {p1, v1}, Ln9f;->m(ILjava/lang/String;)Ljava/lang/String;
-
-    .line 27
     .line 28
     .line 29
-    move-result-object p1
+    invoke-static {p1, v1}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 30
-    invoke-direct {v0, p1}, Lcom/snap/composer/exceptions/MarshallerException;-><init>(Ljava/lang/String;)V
-
     .line 31
     .line 32
+    move-result-object p1
+
     .line 33
+    invoke-direct {v0, p1}, Lcom/snap/composer/exceptions/MarshallerException;-><init>(Ljava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
     throw v0
 .end method
 
@@ -2519,7 +2680,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2531,14 +2692,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->z(Lfy3;JI)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetOpaqueObject(JI)Ljava/lang/Object;
 
     .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
     return-object p1
 .end method
 
@@ -2546,7 +2712,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2558,14 +2724,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2}, Lfy3;->f0(Lfy3;J)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    invoke-static {v1, v2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeSize(J)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
     return v0
 .end method
 
@@ -2573,7 +2744,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2585,14 +2756,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->A(Lfy3;JI)Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetString(JI)Ljava/lang/String;
 
     .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
     return-object p1
 .end method
 
@@ -2600,7 +2776,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2612,166 +2788,152 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->l(Lfy3;JI)J
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-wide v0
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetInternedString(JI)J
 
     .line 11
-    const-wide/16 v2, 0x0
-
     .line 12
     .line 13
-    cmp-long p1, v0, v2
+    move-result-wide v0
 
     .line 14
+    const-wide/16 v2, 0x0
+
     .line 15
+    .line 16
+    cmp-long p1, v0, v2
+
+    .line 17
+    .line 18
     if-nez p1, :cond_0
 
-    .line 16
-    .line 17
-    const-string p1, ""
-
-    .line 18
     .line 19
-    return-object p1
-
     .line 20
-    :cond_0
-    iget-object p1, p0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->internedStringToStringCache:Ljava/util/HashMap;
+    const-string p1, ""
 
     .line 21
     .line 22
-    if-nez p1, :cond_1
+    return-object p1
 
     .line 23
+    :cond_0
+    iget-object p1, p0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->internedStringToStringCache:Ljava/util/HashMap;
+
     .line 24
+    .line 25
+    if-nez p1, :cond_1
+
+    .line 26
+    .line 27
     new-instance p1, Ljava/util/HashMap;
 
-    .line 25
-    .line 26
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
-
-    .line 27
     .line 28
     .line 29
-    iput-object p1, p0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->internedStringToStringCache:Ljava/util/HashMap;
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
     .line 30
     .line 31
-    const/4 v2, 0x0
-
     .line 32
-    goto :goto_0
+    iput-object p1, p0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->internedStringToStringCache:Ljava/util/HashMap;
 
     .line 33
+    .line 34
+    const/4 v2, 0x0
+
+    .line 35
+    goto :goto_0
+
+    .line 36
     :cond_1
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v2
-
     .line 37
-    invoke-virtual {p1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 38
     .line 39
-    .line 40
     move-result-object v2
 
-    .line 41
-    check-cast v2, Lcom/snap/composer/utils/InternedStringCPP;
+    .line 40
+    invoke-virtual {p1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 41
     .line 42
     .line 43
+    move-result-object v2
+
+    .line 44
+    check-cast v2, Lcom/snap/composer/utils/InternedStringCPP;
+
+    .line 45
+    .line 46
     :goto_0
     if-nez v2, :cond_3
 
-    .line 44
-    .line 45
+    .line 47
+    .line 48
     new-instance v2, Lcom/snap/composer/utils/InternedStringCPP;
 
-    .line 46
-    .line 47
-    invoke-direct {v2, v0, v1}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;-><init>(J)V
-
-    .line 48
     .line 49
     .line 50
-    const/4 v3, 0x0
+    invoke-direct {v2, v0, v1}, Lcom/snap/composer/utils/InternedStringCPP;-><init>(J)V
 
     .line 51
-    iput-object v3, v2, Lcom/snap/composer/utils/InternedStringCPP;->a:Ljava/lang/String;
-
     .line 52
     .line 53
-    const/4 v3, 0x0
-
-    .line 54
-    iput-boolean v3, v2, Lcom/snap/composer/utils/InternedStringCPP;->b:Z
-
-    .line 55
-    .line 56
-    invoke-static {v0, v1}, LT2j;->t(J)V
-
-    .line 57
-    .line 58
-    .line 59
     iget-object v3, v2, Lcom/snap/composer/utils/InternedStringCPP;->a:Ljava/lang/String;
 
-    .line 60
-    .line 61
+    .line 54
+    .line 55
     if-nez v3, :cond_2
+
+    .line 56
+    .line 57
+    invoke-virtual {v2}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-wide v3
+
+    .line 61
+    invoke-static {v3, v4}, Lcom/snap/composer/utils/InternedStringCPP;->x(J)Ljava/lang/String;
 
     .line 62
     .line 63
-    invoke-virtual {v2}, Lcom/snap/composer/utils/InternedStringCPP;->getNativeHandle()J
-
     .line 64
-    .line 65
-    .line 66
-    move-result-wide v3
+    move-result-object v3
 
+    .line 65
+    iput-object v3, v2, Lcom/snap/composer/utils/InternedStringCPP;->a:Ljava/lang/String;
+
+    .line 66
     .line 67
-    invoke-static {v3, v4}, LT2j;->u(J)Ljava/lang/String;
+    :cond_2
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 68
     .line 69
     .line 70
-    move-result-object v3
+    move-result-object v0
 
     .line 71
-    iput-object v3, v2, Lcom/snap/composer/utils/InternedStringCPP;->a:Ljava/lang/String;
+    invoke-interface {p1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 72
     .line 73
-    :cond_2
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
     .line 74
-    .line 75
-    .line 76
-    move-result-object v0
-
-    .line 77
-    invoke-interface {p1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 78
-    .line 79
-    .line 80
     :cond_3
     invoke-virtual {v2}, Lcom/snap/composer/utils/InternedStringCPP;->toString()Ljava/lang/String;
 
-    .line 81
-    .line 82
-    .line 83
+    .line 75
+    .line 76
+    .line 77
     move-result-object p1
 
-    .line 84
+    .line 78
     return-object p1
 .end method
 
@@ -2779,7 +2941,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2791,14 +2953,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->B(Lfy3;JI)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetType(JI)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -2806,7 +2973,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2818,37 +2985,42 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->D(Lfy3;JI)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-object p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetUntyped(JI)Ljava/lang/Object;
 
     .line 11
+    .line 12
+    .line 13
+    move-result-object p1
+
+    .line 14
     return-object p1
 .end method
 
 .method public moveMapPropertyIntoTop(Ljava/lang/String;I)Z
     .locals 0
 
-    .line 2
+    .line 4
     invoke-direct {p0, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->getInternedString(Ljava/lang/String;)Lcom/snap/composer/utils/InternedStringCPP;
 
     move-result-object p1
 
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->moveMapPropertyIntoTop(Llz9;I)Z
 
     move-result p1
 
     return p1
 .end method
 
-.method public moveMapPropertyIntoTop(Ljq9;I)Z
-    .locals 6
+.method public moveMapPropertyIntoTop(Llz9;I)Z
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
@@ -2860,9 +3032,11 @@
 
     move-result-wide v3
 
-    move v5, p2
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static/range {v0 .. v5}, Lfy3;->n(Lfy3;JJI)Z
+    .line 3
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetMapProperty(JJI)Z
 
     move-result p1
 
@@ -2870,10 +3044,10 @@
 .end method
 
 .method public moveTopItemIntoMap(Ljava/lang/String;I)V
-    .locals 6
+    .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
@@ -2887,18 +3061,20 @@
 
     move-result-wide v3
 
-    move v5, p2
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static/range {v0 .. v5}, Lfy3;->V(Lfy3;JJI)V
+    .line 3
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInterned(JJI)V
 
     return-void
 .end method
 
-.method public moveTopItemIntoMap(Ljq9;I)V
-    .locals 6
+.method public moveTopItemIntoMap(Llz9;I)V
+    .locals 5
 
-    .line 2
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    .line 4
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
@@ -2910,9 +3086,11 @@
 
     move-result-wide v3
 
-    move v5, p2
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static/range {v0 .. v5}, Lfy3;->V(Lfy3;JJI)V
+    .line 6
+    invoke-static {v1, v2, v3, v4, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInterned(JJI)V
 
     return-void
 .end method
@@ -2921,7 +3099,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2933,11 +3111,16 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1, p2}, Lfy3;->C(Lfy3;JII)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
+    invoke-static {v1, v2, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeGetTypedObjectProperty(JII)I
+
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -2945,13 +3128,17 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
     move-result-wide v1
 
-    invoke-static {v0, v1, v2}, Lfy3;->F(Lfy3;J)V
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    invoke-static {v1, v2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePop(J)V
 
     return-void
 .end method
@@ -2959,14 +3146,18 @@
 .method public pop(I)V
     .locals 3
 
-    .line 2
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    .line 4
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
     move-result-wide v1
 
-    invoke-static {v0, v1, v2, p1}, Lfy3;->G(Lfy3;JI)V
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePopCount(JI)V
 
     return-void
 .end method
@@ -2975,7 +3166,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -2987,14 +3178,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->I(Lfy3;JZ)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushBoolean(JZ)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3002,7 +3198,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3014,14 +3210,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->J(Lfy3;J[B)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushByteArray(J[B)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3029,7 +3230,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3049,14 +3250,19 @@
     move-result-wide v3
 
     .line 11
-    invoke-static {v0, v1, v2, v3, v4}, Lfy3;->K(Lfy3;JJ)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
     .line 14
-    move-result p1
+    invoke-static {v1, v2, v3, v4}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushCppObject(JJ)I
 
     .line 15
+    .line 16
+    .line 17
+    move-result p1
+
+    .line 18
     return p1
 .end method
 
@@ -3064,7 +3270,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3076,14 +3282,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1, p2}, Lfy3;->L(Lfy3;JD)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushDouble(JD)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3099,7 +3310,7 @@
 
     .line 4
     .line 5
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 6
     .line 7
@@ -3123,46 +3334,56 @@
     move-result-wide v3
 
     .line 17
-    invoke-static {v0, v1, v2, v3, v4}, Lfy3;->K(Lfy3;JJ)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    invoke-static {v1, v2, v3, v4}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushCppObject(JJ)I
 
     .line 21
-    return p1
-
     .line 22
-    :cond_0
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
-
     .line 23
-    .line 24
-    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-wide v1
-
-    .line 28
-    invoke-static {v0, v1, v2, p1}, Lfy3;->M(Lfy3;JLcom/snap/composer/callable/ComposerFunction;)I
-
-    .line 29
-    .line 30
-    .line 31
     move-result p1
 
+    .line 24
+    return p1
+
+    .line 25
+    :cond_0
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
+
+    .line 26
+    .line 27
+    invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-wide v1
+
+    .line 31
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 32
+    .line 33
+    .line 34
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushFunction(JLjava/lang/Object;)I
+
+    .line 35
+    .line 36
+    .line 37
+    move-result p1
+
+    .line 38
     return p1
 .end method
 
-.method public pushInternedString(Ljq9;)I
+.method public pushInternedString(Llz9;)I
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3186,14 +3407,19 @@
     move-result-wide v3
 
     .line 13
-    invoke-static {v0, v1, v2, v3, v4}, Lfy3;->N(Lfy3;JJ)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
     .line 15
     .line 16
-    move-result p1
+    invoke-static {v1, v2, v3, v4}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushInternedString(JJ)I
 
     .line 17
+    .line 18
+    .line 19
+    move-result p1
+
+    .line 20
     return p1
 .end method
 
@@ -3201,7 +3427,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3213,14 +3439,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->H(Lfy3;JI)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushArray(JI)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3228,7 +3459,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3240,14 +3471,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1, p2}, Lfy3;->O(Lfy3;JJ)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushLong(JJ)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3255,7 +3491,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3267,14 +3503,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->P(Lfy3;JI)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushMap(JI)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3282,7 +3523,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3294,14 +3535,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->Q(Lfy3;JI)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushMapIterator(JI)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3309,7 +3555,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3321,14 +3567,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->E(Lfy3;JI)Z
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeMapIteratorPushNext(JI)Z
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3336,7 +3587,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3348,14 +3599,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2}, Lfy3;->R(Lfy3;J)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    invoke-static {v1, v2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushNull(J)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
     return v0
 .end method
 
@@ -3363,7 +3619,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3375,14 +3631,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->S(Lfy3;JLjava/lang/Object;)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushOpaqueObject(JLjava/lang/Object;)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3390,7 +3651,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3402,14 +3663,19 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->T(Lfy3;JLjava/lang/String;)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushString(JLjava/lang/String;)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method
 
@@ -3417,7 +3683,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3429,22 +3695,27 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2}, Lfy3;->U(Lfy3;J)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    invoke-static {v1, v2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePushUndefined(J)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
     return v0
 .end method
 
-.method public putMapPropertyBoolean(Ljq9;IZ)V
+.method public putMapPropertyBoolean(Llz9;IZ)V
     .locals 7
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3468,25 +3739,30 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
+    .line 15
+    .line 16
+    move v5, p2
+
+    .line 17
     move v6, p3
 
-    .line 15
-    invoke-static/range {v0 .. v6}, Lfy3;->W(Lfy3;JJIZ)V
-
-    .line 16
-    .line 17
     .line 18
+    invoke-static/range {v1 .. v6}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInternedBoolean(JJIZ)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
-.method public putMapPropertyByteArray(Ljq9;I[B)V
+.method public putMapPropertyByteArray(Llz9;I[B)V
     .locals 7
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3510,25 +3786,30 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
+    .line 15
+    .line 16
+    move v5, p2
+
+    .line 17
     move-object v6, p3
 
-    .line 15
-    invoke-static/range {v0 .. v6}, Lfy3;->X(Lfy3;JJI[B)V
-
-    .line 16
-    .line 17
     .line 18
+    invoke-static/range {v1 .. v6}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInternedByteArray(JJI[B)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
-.method public putMapPropertyDouble(Ljq9;ID)V
+.method public putMapPropertyDouble(Llz9;ID)V
     .locals 8
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3552,25 +3833,30 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
+    .line 15
+    .line 16
+    move v5, p2
+
+    .line 17
     move-wide v6, p3
 
-    .line 15
-    invoke-static/range {v0 .. v7}, Lfy3;->Y(Lfy3;JJID)V
-
-    .line 16
-    .line 17
     .line 18
+    invoke-static/range {v1 .. v7}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInternedDouble(JJID)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
-.method public putMapPropertyFunction(Ljq9;ILcom/snap/composer/callable/ComposerFunction;)V
+.method public putMapPropertyFunction(Llz9;ILcom/snap/composer/callable/ComposerFunction;)V
     .locals 7
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3594,25 +3880,30 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
+    .line 15
+    .line 16
+    move v5, p2
+
+    .line 17
     move-object v6, p3
 
-    .line 15
-    invoke-static/range {v0 .. v6}, Lfy3;->Z(Lfy3;JJILcom/snap/composer/callable/ComposerFunction;)V
-
-    .line 16
-    .line 17
     .line 18
+    invoke-static/range {v1 .. v6}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInternedFunction(JJILjava/lang/Object;)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
-.method public putMapPropertyLong(Ljq9;IJ)V
+.method public putMapPropertyLong(Llz9;IJ)V
     .locals 8
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3636,25 +3927,30 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
+    .line 15
+    .line 16
+    move v5, p2
+
+    .line 17
     move-wide v6, p3
 
-    .line 15
-    invoke-static/range {v0 .. v7}, Lfy3;->a0(Lfy3;JJIJ)V
-
-    .line 16
-    .line 17
     .line 18
+    invoke-static/range {v1 .. v7}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInternedLong(JJIJ)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
-.method public putMapPropertyOpaque(Ljq9;ILjava/lang/Object;)V
+.method public putMapPropertyOpaque(Llz9;ILjava/lang/Object;)V
     .locals 7
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3678,25 +3974,30 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
+    .line 15
+    .line 16
+    move v5, p2
+
+    .line 17
     move-object v6, p3
 
-    .line 15
-    invoke-static/range {v0 .. v6}, Lfy3;->b0(Lfy3;JJILjava/lang/Object;)V
-
-    .line 16
-    .line 17
     .line 18
+    invoke-static/range {v1 .. v6}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInternedOpaque(JJILjava/lang/Object;)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
-.method public putMapPropertyString(Ljq9;ILjava/lang/String;)V
+.method public putMapPropertyString(Llz9;ILjava/lang/String;)V
     .locals 7
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3720,17 +4021,22 @@
     move-result-wide v3
 
     .line 13
-    move v5, p2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
+    .line 15
+    .line 16
+    move v5, p2
+
+    .line 17
     move-object v6, p3
 
-    .line 15
-    invoke-static/range {v0 .. v6}, Lfy3;->c0(Lfy3;JJILjava/lang/String;)V
-
-    .line 16
-    .line 17
     .line 18
+    invoke-static/range {v1 .. v6}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativePutMapPropertyInternedString(JJILjava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
@@ -3738,7 +4044,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3750,11 +4056,16 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->e0(Lfy3;JLjava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeSetError(JLjava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -3762,7 +4073,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3774,11 +4085,16 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1, p2}, Lfy3;->d0(Lfy3;JII)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
+    invoke-static {v1, v2, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeSetArrayItem(JII)V
+
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
@@ -3786,13 +4102,19 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
     move-result-wide v1
 
-    invoke-static {v0, v1, v2}, Lfy3;->g0(Lfy3;J)Ljava/lang/String;
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x1
+
+    .line 3
+    invoke-static {v1, v2, v0}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeToString(JZ)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3802,14 +4124,18 @@
 .method public toString(IZ)Ljava/lang/String;
     .locals 3
 
-    .line 2
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    .line 4
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
     move-result-wide v1
 
-    invoke-static {v0, v1, v2, p1, p2}, Lfy3;->h0(Lfy3;JIZ)Ljava/lang/String;
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    invoke-static {v1, v2, p1, p2}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeToStringAtIndex(JIZ)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3820,7 +4146,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:Lfy3;
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
     .line 2
     .line 3
@@ -3832,13 +4158,18 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, Lfy3;->i0(Lfy3;JI)I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result p1
+    invoke-static {v1, v2, p1}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->access$nativeUnwrapProxy(JI)I
 
     .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
     return p1
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/ChatWallpaperReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'setterUserId\':s,\'conversationId\':s,\'media\':r:\'[0]\',\'createdAtMs\':l,\'isGenerative\':b@?"
     typeReferences = {

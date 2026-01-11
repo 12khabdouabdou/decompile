@@ -1,14 +1,14 @@
 .class public final Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;
-.super LoX9;
+.super LO9a;
 .source "SourceFile"
 
 
 # instance fields
-.field private final lensId:Lo09;
+.field private final lensId:LY79;
 
 
 # direct methods
-.method public constructor <init>(Lo09;)V
+.method public constructor <init>(LY79;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:Lo09;
+    iput-object p1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:LY79;
 
     .line 5
     .line 6
@@ -47,11 +47,11 @@
     :cond_1
     check-cast p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;
 
-    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:Lo09;
+    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:LY79;
 
-    iget-object p1, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:Lo09;
+    iget-object p1, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:LY79;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -63,11 +63,11 @@
     return v0
 .end method
 
-.method public final getLensId()Lo09;
+.method public final getLensId()LY79;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:Lo09;
+    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:LY79;
 
     .line 2
     .line 3
@@ -78,11 +78,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:Lo09;
+    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:LY79;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
@@ -100,7 +100,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:Lo09;
+    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$NotShoppingLens;->lensId:LY79;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LD6e;
+    proxyClass = LXne;
     schema = "\'getGroupDescription\':f|m|(s): g<c>:\'[0]\'<s>,\'getGroupStory\':f|m|(s): g<c>:\'[0]\'<r:\'[1]\'>,\'getGroupImage\':f|m|(s): g<c>:\'[0]\'<r:\'[2]\'>,\'playGroupStory\':f|m|(s, r:\'[3]\')"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lq0i;,
+        LLoi;,
         Lcom/snap/modules/media/EncryptedImageInfo;,
         Lcom/snap/composer/utils/Ref;
     }
@@ -54,7 +54,7 @@
             "Ljava/lang/String;",
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lq0i;",
+            "LLoi;",
             ">;"
         }
     .end annotation

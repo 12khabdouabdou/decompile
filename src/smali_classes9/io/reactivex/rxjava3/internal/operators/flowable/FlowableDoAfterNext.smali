@@ -23,11 +23,11 @@
 
 
 # instance fields
-.field public final c:LGCh;
+.field public final c:LL0i;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoOnEach;LGCh;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoOnEach;LL0i;)V
     .locals 0
 
     .line 1
@@ -36,7 +36,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext;->c:LGCh;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext;->c:LL0i;
 
     .line 5
     .line 6
@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 3
 
     .line 1
@@ -53,7 +53,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext;->c:LGCh;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext;->c:LL0i;
 
     .line 4
     .line 5
@@ -73,7 +73,7 @@
 
     .line 12
     .line 13
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;-><init>(Lio/reactivex/rxjava3/operators/ConditionalSubscriber;LGCh;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;-><init>(Lio/reactivex/rxjava3/operators/ConditionalSubscriber;LL0i;)V
 
     .line 14
     .line 15
@@ -91,7 +91,7 @@
 
     .line 21
     .line 22
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;-><init>(LV6i;LGCh;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterSubscriber;-><init>(Lmvi;LL0i;)V
 
     .line 23
     .line 24

@@ -70,7 +70,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/subjects/AsyncSubject;->c1(Lio/reactivex/rxjava3/subjects/AsyncSubject$AsyncDisposable;)V
+    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/subjects/AsyncSubject;->f1(Lio/reactivex/rxjava3/subjects/AsyncSubject$AsyncDisposable;)V
 
     .line 11
     .line 12

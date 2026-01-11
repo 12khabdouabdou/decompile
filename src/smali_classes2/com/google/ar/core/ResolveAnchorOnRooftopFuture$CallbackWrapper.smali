@@ -109,7 +109,7 @@
     move-result-object p2
 
     .line 21
-    invoke-static {v1, p1, p2}, LkCc;->w(Ljava/util/function/BiConsumer;Lcom/google/ar/core/Anchor;Lcom/google/ar/core/Anchor$RooftopAnchorState;)V
+    invoke-static {v1, p1, p2}, LG9f;->x(Ljava/util/function/BiConsumer;Lcom/google/ar/core/Anchor;Lcom/google/ar/core/Anchor$RooftopAnchorState;)V
 
     .line 22
     .line 23
@@ -126,7 +126,7 @@
 
     .line 28
     .line 29
-    invoke-static {p3, v0}, LkCc;->t(Ljava/util/function/BiConsumer;Lcom/google/ar/core/Anchor$RooftopAnchorState;)V
+    invoke-static {p3, v0}, LG9f;->u(Ljava/util/function/BiConsumer;Lcom/google/ar/core/Anchor$RooftopAnchorState;)V
 
     .line 30
     .line 31

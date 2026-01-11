@@ -3,206 +3,208 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
-.implements LhG9;
+.implements LY2d;
+.implements LFR9;
 
 
 # static fields
-.field public static final synthetic p2:I
+.field public static final synthetic q2:I
 
 
 # instance fields
 .field public final A0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public A1:Ld25;
+.field public A1:LT75;
 
 .field public final B0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public B1:LMxc;
+.field public B1:LmGc;
 
 .field public final C0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public C1:Ld25;
+.field public C1:LT75;
 
 .field public final D0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public D1:LiW4;
+.field public D1:LEMc;
 
 .field public final E0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public E1:Lio/reactivex/rxjava3/core/Observable;
+.field public E1:LT75;
 
 .field public final F0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public F1:Lqj1;
+.field public F1:LX15;
 
 .field public final G0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public G1:LbN5;
+.field public G1:Lio/reactivex/rxjava3/core/Observable;
 
 .field public final H0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public H1:LNF5;
+.field public H1:LUm1;
 
 .field public final I0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public I1:LpC3;
+.field public I1:LnK5;
 
 .field public final J0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public J1:LEPd;
+.field public J1:LOF3;
 
 .field public final K0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public K1:LnQd;
+.field public K1:LU6e;
 
 .field public final L0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public L1:LMRd;
+.field public L1:LE7e;
 
 .field public final M0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public M1:Lftd;
+.field public M1:Lc9e;
 
 .field public final N0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public N1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public N1:LwTd;
 
 .field public final O0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public O1:LbUd;
+.field public O1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
 .field public final P0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public P1:LhFh;
+.field public P1:Lsbe;
 
 .field public final Q0:Lio/reactivex/rxjava3/processors/PublishProcessor;
 
-.field public Q1:Ld25;
+.field public Q1:Ly3i;
 
 .field public final R0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public R1:Ld25;
+.field public R1:LT75;
 
 .field public final S0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public S1:Lnwf;
+.field public S1:LT75;
 
 .field public final T0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public T1:LFDg;
+.field public T1:LyPf;
 
 .field public final U0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public U1:Ld25;
+.field public U1:LUYg;
 
 .field public final V0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public V1:LIIj;
+.field public V1:LT75;
 
 .field public final W0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final W1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+.field public W1:Lg8k;
 
 .field public final X0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final X1:LWm0;
+.field public final X1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public final Y0:LXfi;
+.field public final Y0:LREi;
 
-.field public final Y1:LXfi;
+.field public final Y1:Lnp0;
 
 .field public final Z0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public final Z1:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final Z1:LREi;
 
 .field public final a1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public a2:Lw4c;
+.field public final a2:Ljava/util/concurrent/atomic/AtomicReference;
 
 .field public final b1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public b2:LT0c;
+.field public b2:Lmjc;
 
 .field public final c1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final c2:Lrn0;
+.field public c2:LGfc;
 
 .field public final d1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public final d2:LXfi;
+.field public final d2:LJp0;
 
 .field public final e1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public final e2:LXfi;
+.field public final e2:LREi;
 
 .field public final f1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public f2:LPUd;
+.field public final f2:LREi;
 
 .field public final g1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public g2:Landroid/view/ViewGroup;
+.field public g2:Lhce;
 
-.field public h1:Lkotlin/jvm/functions/Function1;
+.field public final h1:Lvzc;
 
-.field public h2:LE34;
+.field public h2:Landroid/view/ViewGroup;
 
 .field public i1:Z
 
-.field public i2:Lcom/snap/preview/app/bindings/PreviewActionBarController;
+.field public i2:Lo84;
 
-.field public j1:LDK4;
+.field public j1:LLN4;
 
-.field public j2:LyQd;
+.field public j2:Lcom/snap/preview/app/bindings/PreviewActionBarController;
 
-.field public k1:Ld25;
+.field public k1:LT75;
 
-.field public k2:LXog;
+.field public k2:LM7e;
 
-.field public l1:Lu00;
+.field public l1:Lb30;
 
-.field public final l2:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public l2:LgKg;
 
-.field public m1:LOE0;
+.field public m1:LJH0;
 
 .field public final m2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public n1:LsPd;
+.field public n1:LH6e;
 
-.field public final n2:J
+.field public final n2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public o1:LDlg;
+.field public o1:Lhje;
 
-.field public final o2:LXfi;
+.field public final o2:J
 
-.field public p1:LgBg;
+.field public p1:LsWg;
 
-.field public q1:Ld25;
+.field public final p2:LREi;
 
-.field public r1:Lbt9;
+.field public q1:LT75;
 
-.field public s1:Lio/reactivex/rxjava3/subjects/Subject;
+.field public r1:LeC9;
+
+.field public s1:Lio/reactivex/rxjava3/functions/Consumer;
 
 .field public t1:Lio/reactivex/rxjava3/subjects/Subject;
 
-.field public u1:LPya;
+.field public u1:Lio/reactivex/rxjava3/subjects/Subject;
 
-.field public v1:Lzmb;
+.field public v1:Lio/reactivex/rxjava3/subjects/Subject;
 
-.field public w1:LLqb;
+.field public w1:LdLa;
 
 .field public final x0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public x1:Lrb8;
+.field public x1:LbAb;
 
 .field public final y0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public y1:Ld25;
+.field public y1:LpEb;
 
 .field public final z0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public z1:LTqc;
+.field public z1:Lmp9;
 
 
 # direct methods
@@ -215,7 +217,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 5
     .line 6
@@ -253,7 +255,7 @@
 
     .line 23
     .line 24
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 25
     .line 26
@@ -265,7 +267,7 @@
 
     .line 29
     .line 30
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 31
     .line 32
@@ -290,7 +292,7 @@
 
     .line 42
     .line 43
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 44
     .line 45
@@ -445,7 +447,7 @@
 
     .line 125
     .line 126
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 127
     .line 128
@@ -457,7 +459,7 @@
 
     .line 131
     .line 132
-    invoke-static {}, Lio/reactivex/rxjava3/processors/PublishProcessor;->J()Lio/reactivex/rxjava3/processors/PublishProcessor;
+    invoke-static {}, Lio/reactivex/rxjava3/processors/PublishProcessor;->I()Lio/reactivex/rxjava3/processors/PublishProcessor;
 
     .line 133
     .line 134
@@ -482,7 +484,7 @@
 
     .line 144
     .line 145
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 146
     .line 147
@@ -533,7 +535,7 @@
 
     .line 171
     .line 172
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 173
     .line 174
@@ -545,7 +547,7 @@
 
     .line 177
     .line 178
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 179
     .line 180
@@ -557,28 +559,28 @@
 
     .line 183
     .line 184
-    new-instance v1, LsQd;
+    new-instance v1, LJ7e;
 
     .line 185
     .line 186
     const/4 v2, 0x4
 
     .line 187
-    invoke-direct {v1, p0, v2}, LsQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v1, p0, v2}, LJ7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 188
     .line 189
     .line 190
-    new-instance v2, LXfi;
+    new-instance v2, LREi;
 
     .line 191
     .line 192
-    invoke-direct {v2, v1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v2, v1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 193
     .line 194
     .line 195
-    iput-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y0:LXfi;
+    iput-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y0:LREi;
 
     .line 196
     .line 197
@@ -621,7 +623,7 @@
 
     .line 217
     .line 218
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 219
     .line 220
@@ -672,7 +674,7 @@
 
     .line 244
     .line 245
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 246
     .line 247
@@ -684,11 +686,11 @@
 
     .line 250
     .line 251
-    sget-object v1, Lroc;->y0:Lroc;
+    sget-object v1, Lvzc;->u0:Lvzc;
 
     .line 252
     .line 253
-    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h1:Lkotlin/jvm/functions/Function1;
+    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h1:Lvzc;
 
     .line 254
     .line 255
@@ -710,11 +712,11 @@
     .line 263
     .line 264
     .line 265
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->W1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 266
     .line 267
-    sget-object v0, LiQd;->Z:LiQd;
+    sget-object v0, Lz7e;->Z:Lz7e;
 
     .line 268
     .line 269
@@ -722,7 +724,7 @@
 
     .line 270
     .line 271
-    invoke-static {v0, v0, v1}, Llva;->l(LiQd;LiQd;Ljava/lang/String;)LWm0;
+    invoke-static {v0, v0, v1}, LzHa;->m(Lz7e;Lz7e;Ljava/lang/String;)Lnp0;
 
     .line 272
     .line 273
@@ -730,32 +732,32 @@
     move-result-object v0
 
     .line 275
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1:LWm0;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y1:Lnp0;
 
     .line 276
     .line 277
-    new-instance v0, LsQd;
+    new-instance v0, LJ7e;
 
     .line 278
     .line 279
     const/4 v1, 0x5
 
     .line 280
-    invoke-direct {v0, p0, v1}, LsQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v0, p0, v1}, LJ7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 281
     .line 282
     .line 283
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 284
     .line 285
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 286
     .line 287
     .line 288
-    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y1:LXfi;
+    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1:LREi;
 
     .line 289
     .line 290
@@ -768,65 +770,65 @@
     .line 293
     .line 294
     .line 295
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->a2:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 296
     .line 297
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 298
     .line 299
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2:Lrn0;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2:LJp0;
 
     .line 300
     .line 301
-    new-instance v0, LsQd;
+    new-instance v0, LJ7e;
 
     .line 302
     .line 303
     const/4 v1, 0x1
 
     .line 304
-    invoke-direct {v0, p0, v1}, LsQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v0, p0, v1}, LJ7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 305
     .line 306
     .line 307
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 308
     .line 309
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 310
     .line 311
     .line 312
-    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2:LXfi;
+    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->e2:LREi;
 
     .line 313
     .line 314
-    new-instance v0, LsQd;
+    new-instance v0, LJ7e;
 
     .line 315
     .line 316
     const/4 v1, 0x2
 
     .line 317
-    invoke-direct {v0, p0, v1}, LsQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v0, p0, v1}, LJ7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 318
     .line 319
     .line 320
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 321
     .line 322
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 323
     .line 324
     .line 325
-    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->e2:LXfi;
+    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LREi;
 
     .line 326
     .line 327
@@ -842,7 +844,7 @@
     .line 331
     .line 332
     .line 333
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->l2:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 334
     .line 335
@@ -855,11 +857,11 @@
     .line 338
     .line 339
     .line 340
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m2:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 341
     .line 342
-    invoke-static {}, LE73;->a()LOze;
+    invoke-static {}, LV93;->a()LFRe;
 
     .line 343
     .line 344
@@ -880,32 +882,32 @@
     move-result-wide v0
 
     .line 353
-    iput-wide v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n2:J
+    iput-wide v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->o2:J
 
     .line 354
     .line 355
-    new-instance v0, LsQd;
+    new-instance v0, LJ7e;
 
     .line 356
     .line 357
     const/4 v1, 0x3
 
     .line 358
-    invoke-direct {v0, p0, v1}, LsQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v0, p0, v1}, LJ7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 359
     .line 360
     .line 361
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 362
     .line 363
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 364
     .line 365
     .line 366
-    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->o2:LXfi;
+    iput-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->p2:LREi;
 
     .line 367
     .line 368
@@ -914,86 +916,16 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
+.method public final B1()V
     .locals 2
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v1, "onAttach"
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    :try_start_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    invoke-virtual {p0, p1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->j2(Landroid/app/Activity;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
-
-    .line 20
-    .line 21
-    .line 22
-    return-void
-
-    .line 23
-    :catchall_0
-    move-exception p1
-
-    .line 24
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 25
-    .line 26
-    if-eqz v0, :cond_0
-
-    .line 27
-    .line 28
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
-
-    .line 29
-    .line 30
-    .line 31
-    :cond_0
-    throw p1
-.end method
-
-.method public final D1()V
-    .locals 2
-
-    .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->D1()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->B1()V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()LMRd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()Lc9e;
 
     .line 5
     .line 6
@@ -1001,16 +933,16 @@
     move-result-object v0
 
     .line 8
-    invoke-virtual {v0}, LMRd;->h()V
+    invoke-virtual {v0}, Lc9e;->h()V
 
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->o2:LXfi;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->p2:LREi;
 
     .line 12
     .line 13
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -1034,7 +966,7 @@
 
     .line 24
     .line 25
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->y1:Ld25;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->A1:LT75;
 
     .line 26
     .line 27
@@ -1042,7 +974,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0}, Ld25;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LT75;->get()Ljava/lang/Object;
 
     .line 30
     .line 31
@@ -1050,7 +982,7 @@
     move-result-object v0
 
     .line 33
-    check-cast v0, LXjf;
+    check-cast v0, LSCf;
 
     .line 34
     .line 35
@@ -1062,7 +994,7 @@
     move-result-object v1
 
     .line 39
-    invoke-virtual {v0, v1}, LXjf;->d(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, LSCf;->d(Landroid/content/Context;)V
 
     .line 40
     .line 41
@@ -1075,7 +1007,7 @@
 
     .line 44
     .line 45
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -1088,7 +1020,7 @@
     .line 50
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->a2:Lw4c;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2:Lmjc;
 
     .line 51
     .line 52
@@ -1096,13 +1028,13 @@
 
     .line 53
     .line 54
-    invoke-virtual {v0}, Lw4c;->g()V
+    invoke-virtual {v0}, Lmjc;->d()V
 
     .line 55
     .line 56
     .line 57
     :cond_2
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2:LT0c;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2:LGfc;
 
     .line 58
     .line 59
@@ -1110,7 +1042,7 @@
 
     .line 60
     .line 61
-    invoke-virtual {v0}, LT0c;->e()V
+    invoke-virtual {v0}, LGfc;->g()V
 
     .line 62
     .line 63
@@ -1119,7 +1051,7 @@
     return-void
 .end method
 
-.method public final H1()V
+.method public final F1()V
     .locals 2
 
     .line 1
@@ -1139,31 +1071,11 @@
     return-void
 .end method
 
-.method public final I1()V
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->C0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 4
-    .line 5
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()LMRd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()Lc9e;
 
     .line 2
     .line 3
@@ -1171,12 +1083,12 @@
     move-result-object p3
 
     .line 5
-    invoke-virtual {p3}, LMRd;->l()V
+    invoke-virtual {p3}, Lc9e;->l()V
 
     .line 6
     .line 7
     .line 8
-    sget-object p3, LXRg;->a:LWRg;
+    sget-object p3, LOdh;->a:LNdh;
 
     .line 9
     .line 10
@@ -1184,7 +1096,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p3, v0}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {p3, v0}, LNdh;->e(Ljava/lang/String;)I
 
     .line 13
     .line 14
@@ -1206,20 +1118,20 @@
     .line 21
     .line 22
     .line 23
-    new-instance v1, LC4c;
+    new-instance v1, Lrjc;
 
     .line 24
     .line 25
-    const/16 v2, 0x14
+    const/16 v2, 0x13
 
     .line 26
     .line 27
-    invoke-direct {v1, p0, p1, p2, v2}, LC4c;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, p1, p2, v2}, Lrjc;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 28
     .line 29
     .line 30
-    iget-object p1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Landroid/view/ViewGroup;
+    iget-object p1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h2:Landroid/view/ViewGroup;
 
     .line 31
     .line 32
@@ -1227,7 +1139,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {v1}, LC4c;->invoke()Ljava/lang/Object;
+    invoke-virtual {v1}, Lrjc;->d()Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -1239,12 +1151,12 @@
 
     .line 39
     .line 40
-    iput-object p1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Landroid/view/ViewGroup;
+    iput-object p1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h2:Landroid/view/ViewGroup;
 
     .line 41
     .line 42
     :cond_0
-    new-instance p1, LE34;
+    new-instance p1, Lo84;
 
     .line 43
     .line 44
@@ -1270,12 +1182,12 @@
 
     .line 53
     .line 54
-    invoke-direct {p1, v1}, LE34;-><init>([Landroid/view/View;)V
+    invoke-direct {p1, v1}, Lo84;-><init>([Landroid/view/View;)V
 
     .line 55
     .line 56
     .line 57
-    iput-object p1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h2:LE34;
+    iput-object p1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->i2:Lo84;
 
     .line 58
     .line 59
@@ -1283,7 +1195,7 @@
 
     .line 60
     .line 61
-    invoke-virtual {p3, p1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {p3, p1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 62
     .line 63
@@ -1306,7 +1218,7 @@
     .line 69
     .line 70
     :try_start_2
-    invoke-virtual {p3, p1}, LWRg;->h(I)V
+    invoke-virtual {p3, p1}, LNdh;->h(I)V
 
     .line 71
     .line 72
@@ -1321,7 +1233,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 77
-    invoke-virtual {p3, v0}, LWRg;->h(I)V
+    invoke-virtual {p3, v0}, LNdh;->h(I)V
 
     .line 78
     .line 79
@@ -1341,7 +1253,7 @@
 
     .line 84
     :try_start_3
-    sget-object p3, LXRg;->b:Lzhi;
+    sget-object p3, LOdh;->b:LtGi;
 
     .line 85
     .line 86
@@ -1349,7 +1261,7 @@
 
     .line 87
     .line 88
-    invoke-virtual {p3, p1}, Lzhi;->o(I)V
+    invoke-virtual {p3, p1}, LtGi;->o(I)V
 
     .line 89
     .line 90
@@ -1361,7 +1273,7 @@
 
     .line 92
     :goto_0
-    sget-object p2, LXRg;->b:Lzhi;
+    sget-object p2, LOdh;->b:LtGi;
 
     .line 93
     .line 94
@@ -1369,7 +1281,7 @@
 
     .line 95
     .line 96
-    invoke-virtual {p2, v0}, Lzhi;->o(I)V
+    invoke-virtual {p2, v0}, LtGi;->o(I)V
 
     .line 97
     .line 98
@@ -1378,7 +1290,27 @@
     throw p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final G1()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->C0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 5
 
     .line 1
@@ -1386,7 +1318,7 @@
 
     .line 2
     .line 3
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 4
     .line 5
@@ -1394,7 +1326,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 8
     .line 9
@@ -1408,7 +1340,7 @@
     .line 12
     .line 13
     .line 14
-    const v2, 0x7f0b1923
+    const v2, 0x7f0b1a87
 
     .line 15
     .line 16
@@ -1425,11 +1357,11 @@
 
     .line 22
     .line 23
-    new-instance v3, Lw4c;
+    new-instance v3, Lmjc;
 
     .line 24
     .line 25
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 26
     .line 27
@@ -1437,21 +1369,21 @@
     move-result-object v4
 
     .line 29
-    invoke-direct {v3, v2, v4}, Lw4c;-><init>(Landroid/widget/FrameLayout;LhFh;)V
+    invoke-direct {v3, v2, v4}, Lmjc;-><init>(Landroid/widget/FrameLayout;Ly3i;)V
 
     .line 30
     .line 31
     .line 32
-    iput-object v3, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->a2:Lw4c;
+    iput-object v3, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2:Lmjc;
 
     .line 33
     .line 34
-    invoke-virtual {v3}, Lw4c;->c()V
+    invoke-virtual {v3}, Lmjc;->b()V
 
     .line 35
     .line 36
     .line 37
-    const v3, 0x7f0b058d
+    const v3, 0x7f0b061a
 
     .line 38
     .line 39
@@ -1473,7 +1405,7 @@
     .line 47
     .line 48
     .line 49
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 50
     .line 51
@@ -1481,7 +1413,7 @@
     move-result-object v2
 
     .line 53
-    invoke-virtual {v2}, LhFh;->d()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-virtual {v2}, Ly3i;->d()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 54
     .line 55
@@ -1489,11 +1421,11 @@
     move-result-object v2
 
     .line 57
-    const-class v3, LHqc;
+    const-class v3, LaGc;
 
     .line 58
     .line 59
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->v0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->y0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
     .line 60
     .line 61
@@ -1501,7 +1433,7 @@
     move-result-object v2
 
     .line 63
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 64
     .line 65
@@ -1509,11 +1441,11 @@
     move-result-object v3
 
     .line 67
-    check-cast v3, LBre;
+    check-cast v3, LnJe;
 
     .line 68
     .line 69
-    invoke-virtual {v3}, LBre;->i()Lgn0;
+    invoke-virtual {v3}, LnJe;->i()Lxp0;
 
     .line 70
     .line 71
@@ -1521,7 +1453,7 @@
     move-result-object v3
 
     .line 73
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 74
     .line 75
@@ -1529,141 +1461,142 @@
     move-result-object v2
 
     .line 77
-    new-instance v3, LSGd;
+    new-instance v3, LAMd;
 
     .line 78
     .line 79
-    const/4 v4, 0x5
+    const/16 v4, 0xa
 
     .line 80
-    invoke-direct {v3, v4, p0}, LSGd;-><init>(ILjava/lang/Object;)V
-
     .line 81
+    invoke-direct {v3, v4, p0}, LAMd;-><init>(ILjava/lang/Object;)V
+
     .line 82
     .line 83
+    .line 84
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapCompletable;
 
-    .line 84
     .line 85
+    .line 86
     invoke-direct {v4, v2, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapCompletable;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 86
     .line 87
     .line 88
-    invoke-static {v4, p2}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 89
+    invoke-static {v4, p2}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 90
     .line 91
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
-
     .line 92
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
+
     .line 93
+    .line 94
     if-eqz v2, :cond_1
 
-    .line 94
     .line 95
-    invoke-static {v2}, LCtk;->h(LPUd;)Z
-
     .line 96
+    invoke-static {v2}, LISk;->g(Lhce;)Z
+
     .line 97
     .line 98
+    .line 99
     move-result v2
 
-    .line 99
+    .line 100
     if-nez v2, :cond_0
 
-    .line 100
     .line 101
-    invoke-static {p1}, LZn7;->g(Landroid/view/View;)LtJj;
-
     .line 102
+    invoke-static {p1}, Lkc0;->k(Landroid/view/View;)LW8k;
+
     .line 103
     .line 104
+    .line 105
     move-result-object p1
 
-    .line 105
-    new-instance v2, LuQd;
-
     .line 106
+    new-instance v2, LK7e;
+
     .line 107
+    .line 108
     const/4 v3, 0x4
 
-    .line 108
-    invoke-direct {v2, p0, v3}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
-
     .line 109
+    invoke-direct {v2, p0, v3}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+
     .line 110
     .line 111
-    invoke-static {p1, v2, p2}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 112
+    invoke-static {p1, v2, p2}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 112
     .line 113
     .line 114
+    .line 115
     goto :goto_0
 
-    .line 115
+    .line 116
     :catchall_0
     move-exception p1
 
-    .line 116
+    .line 117
     goto :goto_1
 
-    .line 117
+    .line 118
     :cond_0
     :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
-    .line 118
     .line 119
     .line 120
+    .line 121
     return-void
 
-    .line 121
+    .line 122
     :cond_1
     :try_start_1
     const-string p1, "previewStartUpConfig"
 
-    .line 122
     .line 123
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 124
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 125
     .line 126
+    .line 127
     const/4 p1, 0x0
 
-    .line 127
+    .line 128
     throw p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 128
-    :goto_1
-    sget-object p2, LXRg;->b:Lzhi;
-
     .line 129
+    :goto_1
+    sget-object p2, LOdh;->b:LtGi;
+
     .line 130
+    .line 131
     if-eqz p2, :cond_2
 
-    .line 131
     .line 132
-    invoke-virtual {p2, v1}, Lzhi;->o(I)V
-
     .line 133
+    invoke-virtual {p2, v1}, LtGi;->o(I)V
+
     .line 134
     .line 135
+    .line 136
     :cond_2
     throw p1
 .end method
 
-.method public final U1()Lkotlin/jvm/functions/Function1;
+.method public final U1()Lvzc;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h1:Lkotlin/jvm/functions/Function1;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h1:Lvzc;
 
     .line 2
     .line 3
@@ -1674,7 +1607,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m2:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 2
     .line 3
@@ -1694,7 +1627,7 @@
 
     .line 10
     :cond_0
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m2:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 11
     .line 12
@@ -1702,7 +1635,7 @@
 
     .line 13
     :try_start_0
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m2:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 14
     .line 15
@@ -1731,7 +1664,7 @@
     .line 24
     :cond_1
     :try_start_1
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 25
     .line 26
@@ -1739,11 +1672,11 @@
     move-result-object v1
 
     .line 28
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 29
     .line 30
-    invoke-virtual {v1}, LBre;->g()LF06;
+    invoke-virtual {v1}, LnJe;->g()LA36;
 
     .line 31
     .line 32
@@ -1751,42 +1684,43 @@
     move-result-object v1
 
     .line 34
-    new-instance v2, LIEd;
+    new-instance v2, Lo2d;
 
     .line 35
     .line 36
-    const/4 v3, 0x2
+    const/16 v3, 0x16
 
     .line 37
-    invoke-direct {v2, p0, v3, p1}, LIEd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 38
+    invoke-direct {v2, p0, v3, p1}, Lo2d;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 39
     .line 40
+    .line 41
     iget-object p1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->y0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 41
     .line 42
-    invoke-static {v1, v2, p1}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 43
+    invoke-static {v1, v2, p1}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 43
     .line 44
     .line 45
+    .line 46
     monitor-exit v0
 
-    .line 46
+    .line 47
     return-void
 
-    .line 47
+    .line 48
     :catchall_0
     move-exception p1
 
-    .line 48
+    .line 49
     monitor-exit v0
 
-    .line 49
+    .line 50
     throw p1
 .end method
 
@@ -1794,7 +1728,7 @@
     .locals 4
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 2
     .line 3
@@ -1802,7 +1736,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LhFh;->c()Ljava/lang/Object;
+    invoke-virtual {v0}, Ly3i;->c()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -1810,11 +1744,11 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, LTUd;
+    check-cast v0, Llce;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, LTUd;->b()Z
+    invoke-virtual {v0}, Llce;->b()Z
 
     .line 12
     .line 13
@@ -1826,7 +1760,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 18
     .line 19
@@ -1834,19 +1768,19 @@
     move-result-object p1
 
     .line 21
-    new-instance v0, LrOd;
+    new-instance v0, LH5e;
 
     .line 22
     .line 23
     const/4 v1, 0x1
 
     .line 24
-    invoke-direct {v0, v1}, LrOd;-><init>(Z)V
+    invoke-direct {v0, v1}, LH5e;-><init>(Z)V
 
     .line 25
     .line 26
     .line 27
-    invoke-virtual {p1, v0}, LhFh;->b(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Ly3i;->b(Ljava/lang/Object;)V
 
     .line 28
     .line 29
@@ -1855,7 +1789,7 @@
 
     .line 31
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()LMRd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()Lc9e;
 
     .line 32
     .line 33
@@ -1872,12 +1806,12 @@
     const/4 v3, 0x0
 
     .line 38
-    invoke-static {v0, v1, v3, v2}, LMRd;->j(LMRd;ILkotlin/jvm/functions/Function1;I)V
+    invoke-static {v0, v1, v3, v2}, Lc9e;->j(Lc9e;ILkotlin/jvm/functions/Function1;I)V
 
     .line 39
     .line 40
     .line 41
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->j2:LyQd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->k2:LM7e;
 
     .line 42
     .line 43
@@ -1885,7 +1819,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {v0}, LyQd;->D()Lio/reactivex/rxjava3/core/Single;
+    invoke-virtual {v0}, LM7e;->F()Lio/reactivex/rxjava3/core/Single;
 
     .line 46
     .line 47
@@ -1893,15 +1827,15 @@
     move-result-object v0
 
     .line 49
-    new-instance v1, LOpd;
+    new-instance v1, LlUc;
 
     .line 50
     .line 51
-    const/16 v2, 0x10
+    const/16 v2, 0x1a
 
     .line 52
     .line 53
-    invoke-direct {v1, v2, p0}, LOpd;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LlUc;-><init>(ILjava/lang/Object;)V
 
     .line 54
     .line 55
@@ -1920,7 +1854,7 @@
     .line 62
     .line 63
     .line 64
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 65
     .line 66
@@ -1928,11 +1862,11 @@
     move-result-object v0
 
     .line 68
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 69
     .line 70
-    invoke-virtual {v0}, LBre;->d()LF06;
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 71
     .line 72
@@ -1949,7 +1883,7 @@
     .line 77
     .line 78
     .line 79
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 80
     .line 81
@@ -1957,11 +1891,11 @@
     move-result-object v0
 
     .line 83
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 84
     .line 85
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 86
     .line 87
@@ -1978,20 +1912,20 @@
     .line 92
     .line 93
     .line 94
-    new-instance v0, LHwd;
+    new-instance v0, LaYd;
 
     .line 95
     .line 96
-    const/16 v1, 0x11
+    const/16 v1, 0xb
 
     .line 97
     .line 98
-    invoke-direct {v0, p1, v1, p0}, LHwd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p1, v1, p0}, LaYd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 99
     .line 100
     .line 101
-    sget-object p1, LYvd;->o0:LYvd;
+    sget-object p1, LB1e;->e0:LB1e;
 
     .line 102
     .line 103
@@ -2012,7 +1946,7 @@
 
     .line 110
     .line 111
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 112
     .line 113
@@ -2020,15 +1954,15 @@
     throw v3
 .end method
 
-.method public final X1()LD25;
+.method public final X1()Lx85;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->e2:LXfi;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -2036,18 +1970,18 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LD25;
+    check-cast v0, Lx85;
 
     .line 8
     .line 9
     return-object v0
 .end method
 
-.method public final Y1()LXog;
+.method public final Y1()LgKg;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->k2:LXog;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->l2:LgKg;
 
     .line 2
     .line 3
@@ -2059,7 +1993,7 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
 
     .line 7
     .line 8
@@ -2070,7 +2004,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LCtk;->g(LPUd;)Z
+    invoke-static {v0}, LISk;->f(Lhce;)Z
 
     .line 12
     .line 13
@@ -2082,7 +2016,7 @@
 
     .line 16
     .line 17
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->R1:Ld25;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->S1:LT75;
 
     .line 18
     .line 19
@@ -2090,7 +2024,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v0}, Ld25;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LT75;->get()Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -2098,7 +2032,7 @@
     move-result-object v0
 
     .line 25
-    check-cast v0, LXog;
+    check-cast v0, LgKg;
 
     .line 26
     .line 27
@@ -2110,7 +2044,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -2119,17 +2053,17 @@
 
     .line 34
     :cond_2
-    new-instance v0, LXog;
+    new-instance v0, LgKg;
 
     .line 35
     .line 36
-    invoke-direct {v0}, LXog;-><init>()V
+    invoke-direct {v0}, LgKg;-><init>()V
 
     .line 37
     .line 38
     .line 39
     :goto_0
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->k2:LXog;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->l2:LgKg;
 
     .line 40
     .line 41
@@ -2141,7 +2075,7 @@
 
     .line 43
     .line 44
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 45
     .line 46
@@ -2149,11 +2083,11 @@
     throw v1
 .end method
 
-.method public final Z1()LTqc;
+.method public final Z1()LmGc;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->z1:LTqc;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->B1:LmGc;
 
     .line 2
     .line 3
@@ -2169,7 +2103,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2238,7 +2172,7 @@
 
     .line 26
     :cond_0
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->K1:LnQd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->L1:LE7e;
 
     .line 27
     .line 28
@@ -2246,7 +2180,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v0}, LnQd;->b()Landroidx/constraintlayout/widget/ConstraintLayout;
+    invoke-virtual {v0}, LE7e;->b()Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 31
     .line 32
@@ -2262,7 +2196,7 @@
 
     .line 36
     .line 37
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -2270,11 +2204,11 @@
     throw v1
 .end method
 
-.method public final b2()LEPd;
+.method public final b2()LU6e;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->J1:LEPd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->K1:LU6e;
 
     .line 2
     .line 3
@@ -2290,7 +2224,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2301,11 +2235,11 @@
     throw v0
 .end method
 
-.method public final c2()LMRd;
+.method public final c2()Lc9e;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->L1:LMRd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->M1:Lc9e;
 
     .line 2
     .line 3
@@ -2321,7 +2255,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2336,7 +2270,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()LMRd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()Lc9e;
 
     .line 2
     .line 3
@@ -2344,19 +2278,19 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, LWMd;->f0:LWMd;
+    sget-object v1, Le1e;->j0:Le1e;
 
     .line 6
     .line 7
     const/4 v2, 0x2
 
     .line 8
-    invoke-static {v0, v2, v1, v2}, LMRd;->j(LMRd;ILkotlin/jvm/functions/Function1;I)V
+    invoke-static {v0, v2, v1, v2}, Lc9e;->j(Lc9e;ILkotlin/jvm/functions/Function1;I)V
 
     .line 9
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m1:LOE0;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m1:LJH0;
 
     .line 12
     .line 13
@@ -2364,7 +2298,7 @@
 
     .line 14
     .line 15
-    invoke-interface {v0}, LOE0;->onBackPressed()Z
+    invoke-interface {v0}, LJH0;->onBackPressed()Z
 
     .line 16
     .line 17
@@ -2379,7 +2313,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()LMRd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()Lc9e;
 
     .line 23
     .line 24
@@ -2387,7 +2321,7 @@
     move-result-object v0
 
     .line 26
-    invoke-virtual {v0}, LMRd;->p()V
+    invoke-virtual {v0}, Lc9e;->o()V
 
     .line 27
     .line 28
@@ -2410,7 +2344,7 @@
 
     .line 36
     .line 37
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -2421,11 +2355,11 @@
     throw v0
 .end method
 
-.method public final d2()LhFh;
+.method public final d2()Ly3i;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->P1:LhFh;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Q1:Ly3i;
 
     .line 2
     .line 3
@@ -2441,7 +2375,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2456,7 +2390,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h2:Landroid/view/ViewGroup;
 
     .line 2
     .line 3
@@ -2472,7 +2406,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2483,15 +2417,15 @@
     throw v0
 .end method
 
-.method public final f2()Lzre;
+.method public final f2()LlJe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y1:LXfi;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -2499,7 +2433,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lzre;
+    check-cast v0, LlJe;
 
     .line 8
     .line 9
@@ -2510,7 +2444,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->I1:LpC3;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->J1:LOF3;
 
     .line 2
     .line 3
@@ -2518,11 +2452,11 @@
 
     .line 4
     .line 5
-    sget-object v1, LxPd;->S1:LxPd;
+    sget-object v1, LN6e;->S1:LN6e;
 
     .line 6
     .line 7
-    invoke-interface {v0, v1}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v0, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 8
     .line 9
@@ -2530,7 +2464,7 @@
     move-result-object v0
 
     .line 11
-    sget-object v1, LvFd;->B0:LvFd;
+    sget-object v1, Ll7e;->Y:Ll7e;
 
     .line 12
     .line 13
@@ -2543,7 +2477,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 19
     .line 20
@@ -2551,11 +2485,11 @@
     move-result-object v0
 
     .line 22
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 23
     .line 24
-    invoke-virtual {v0}, LBre;->d()LF06;
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 25
     .line 26
@@ -2572,15 +2506,15 @@
     .line 31
     .line 32
     .line 33
-    new-instance v0, LWgc;
+    new-instance v0, Lcwc;
 
     .line 34
     .line 35
-    const/16 v2, 0x13
+    const/16 v2, 0x11
 
     .line 36
     .line 37
-    invoke-direct {v0, p0, p1, p2, v2}, LWgc;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v0, p0, p1, p2, v2}, Lcwc;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 38
     .line 39
@@ -2589,7 +2523,7 @@
 
     .line 41
     .line 42
-    invoke-static {v1, v0, p1}, LLZj;->t0(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    invoke-static {v1, v0, p1}, LOIc;->N(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
     .line 43
     .line 44
@@ -2602,7 +2536,7 @@
 
     .line 47
     .line 48
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -2613,11 +2547,452 @@
     throw p1
 .end method
 
-.method public final h(LQqc;)V
+.method public final h2(Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->H1:LUm1;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_5
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->e2()Landroid/view/ViewGroup;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v2
+
+    .line 10
+    invoke-virtual {v0, v2}, LUm1;->C(Landroid/view/ViewGroup;)V
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()Lx85;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    invoke-virtual {v0, v2}, LUm1;->e(Lx85;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->i2:Lo84;
+
+    .line 21
+    .line 22
+    if-eqz v2, :cond_4
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v2}, LUm1;->H(Lo84;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
+
+    .line 28
+    .line 29
+    const-string v3, "previewStartUpConfig"
+
+    .line 30
+    .line 31
+    if-eqz v2, :cond_3
+
+    .line 32
+    .line 33
+    invoke-virtual {v0, v2}, LUm1;->A(Lhce;)V
+
+    .line 34
+    .line 35
+    .line 36
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 37
+    .line 38
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 39
+    .line 40
+    .line 41
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 42
+    .line 43
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {v0, v4}, LUm1;->F(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 47
+    .line 48
+    .line 49
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->O0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 50
+    .line 51
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 52
+    .line 53
+    .line 54
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 55
+    .line 56
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {v0, v4}, LUm1;->j(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 60
+    .line 61
+    .line 62
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->V0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 63
+    .line 64
+    invoke-virtual {v0, v2}, LUm1;->i(Lio/reactivex/rxjava3/core/Observer;)V
+
+    .line 65
+    .line 66
+    .line 67
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->U0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 68
+    .line 69
+    invoke-virtual {v0, v2}, LUm1;->h(Lio/reactivex/rxjava3/core/Observer;)V
+
+    .line 70
+    .line 71
+    .line 72
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y0:LREi;
+
+    .line 73
+    .line 74
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v2
+
+    .line 78
+    check-cast v2, LU7e;
+
+    .line 79
+    .line 80
+    invoke-virtual {v0, v2}, LUm1;->y(LU7e;)V
+
+    .line 81
+    .line 82
+    .line 83
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->K0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 84
+    .line 85
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 86
+    .line 87
+    .line 88
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 89
+    .line 90
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-virtual {v0, v4}, LUm1;->x(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 94
+    .line 95
+    .line 96
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->W0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 97
+    .line 98
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 99
+    .line 100
+    .line 101
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 102
+    .line 103
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 104
+    .line 105
+    .line 106
+    invoke-virtual {v0, v4}, LUm1;->q(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 107
+    .line 108
+    .line 109
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->N0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 110
+    .line 111
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 112
+    .line 113
+    .line 114
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 115
+    .line 116
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 117
+    .line 118
+    .line 119
+    invoke-virtual {v0, v4}, LUm1;->D(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 120
+    .line 121
+    .line 122
+    invoke-virtual {v0, v2}, LUm1;->E(Lio/reactivex/rxjava3/core/Observer;)V
+
+    .line 123
+    .line 124
+    .line 125
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->P0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 126
+    .line 127
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 128
+    .line 129
+    .line 130
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 131
+    .line 132
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-virtual {v0, v4}, LUm1;->G(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 136
+    .line 137
+    .line 138
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->I0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 139
+    .line 140
+    invoke-virtual {v0, v2}, LUm1;->f(Lio/reactivex/rxjava3/core/Observable;)V
+
+    .line 141
+    .line 142
+    .line 143
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->G0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 144
+    .line 145
+    invoke-virtual {v0, v2}, LUm1;->g(Lio/reactivex/rxjava3/core/Observer;)V
+
+    .line 146
+    .line 147
+    .line 148
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->O1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 149
+    .line 150
+    if-eqz v2, :cond_2
+
+    .line 151
+    .line 152
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 153
+    .line 154
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+
+    .line 155
+    .line 156
+    .line 157
+    invoke-virtual {v0, v4}, LUm1;->z(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 158
+    .line 159
+    .line 160
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n1:LH6e;
+
+    .line 161
+    .line 162
+    if-eqz v2, :cond_1
+
+    .line 163
+    .line 164
+    invoke-virtual {v2}, LH6e;->a()LxVb;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v2
+
+    .line 168
+    invoke-virtual {v0, v2}, LUm1;->w(LxVb;)V
+
+    .line 169
+    .line 170
+    .line 171
+    invoke-virtual {v0}, LUm1;->d()LEj;
+
+    .line 172
+    .line 173
+    .line 174
+    move-result-object v0
+
+    .line 175
+    invoke-virtual {v0}, LEj;->q()LKrf;
+
+    .line 176
+    .line 177
+    .line 178
+    move-result-object v0
+
+    .line 179
+    new-instance v2, Lb3e;
+
+    .line 180
+    .line 181
+    iget-object v4, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
+
+    .line 182
+    .line 183
+    if-eqz v4, :cond_0
+
+    .line 184
+    .line 185
+    invoke-virtual {v4}, Lhce;->b()LD7e;
+
+    .line 186
+    .line 187
+    .line 188
+    move-result-object v1
+
+    .line 189
+    invoke-direct {v2, v1}, Lb3e;-><init>(LD7e;)V
+
+    .line 190
+    .line 191
+    .line 192
+    invoke-virtual {v0, v2}, LKrf;->b(Lb3e;)Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 193
+    .line 194
+    .line 195
+    move-result-object v0
+
+    .line 196
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 197
+    .line 198
+    .line 199
+    return-void
+
+    .line 200
+    :cond_0
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 201
+    .line 202
+    .line 203
+    throw v1
+
+    .line 204
+    :cond_1
+    const-string p1, "configPreloader"
+
+    .line 205
+    .line 206
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 207
+    .line 208
+    .line 209
+    throw v1
+
+    .line 210
+    :cond_2
+    const-string p1, "previewSaveStateEventSubject"
+
+    .line 211
+    .line 212
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 213
+    .line 214
+    .line 215
+    throw v1
+
+    .line 216
+    :cond_3
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 217
+    .line 218
+    .line 219
+    throw v1
+
+    .line 220
+    :cond_4
+    const-string p1, "viewFinder"
+
+    .line 221
+    .line 222
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 223
+    .line 224
+    .line 225
+    throw v1
+
+    .line 226
+    :cond_5
+    const-string p1, "preloadComponentBuilder"
+
+    .line 227
+    .line 228
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 229
+    .line 230
+    .line 231
+    throw v1
+.end method
+
+.method public final i(LiGc;)V
     .locals 3
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -2625,7 +3000,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -2634,12 +3009,12 @@
 
     .line 9
     :try_start_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 10
     .line 11
     .line 12
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->W1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 13
     .line 14
@@ -2681,7 +3056,7 @@
     move-result-object v2
 
     .line 34
-    invoke-static {v2}, LI0j;->y(Landroid/content/res/Resources$Theme;)Z
+    invoke-static {v2}, LNC8;->z(Landroid/content/res/Resources$Theme;)Z
 
     .line 35
     .line 36
@@ -2693,7 +3068,7 @@
 
     .line 39
     .line 40
-    const v2, 0x7f0b0c8e
+    const v2, 0x7f0b0db4
 
     .line 41
     .line 42
@@ -2729,7 +3104,7 @@
     .line 55
     :cond_0
     :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 56
     .line 57
@@ -2738,7 +3113,7 @@
 
     .line 59
     :goto_1
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 60
     .line 61
@@ -2746,7 +3121,7 @@
 
     .line 62
     .line 63
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
 
     .line 64
     .line 65
@@ -2755,445 +3130,13 @@
     throw p1
 .end method
 
-.method public final h2(Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
-    .locals 5
+.method public final i0()Z
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->F1:Lqj1;
+    const/4 v0, 0x0
 
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    if-eqz v0, :cond_5
-
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->e2()Landroid/view/ViewGroup;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v2
-
-    .line 10
-    invoke-virtual {v0, v2}, Lqj1;->N(Landroid/view/ViewGroup;)V
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()LD25;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v2
-
-    .line 17
-    invoke-virtual {v0, v2}, Lqj1;->h(LD25;)V
-
-    .line 18
-    .line 19
-    .line 20
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h2:LE34;
-
-    .line 21
-    .line 22
-    if-eqz v2, :cond_4
-
-    .line 23
-    .line 24
-    invoke-virtual {v0, v2}, Lqj1;->W(LE34;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
-
-    .line 28
-    .line 29
-    const-string v3, "previewStartUpConfig"
-
-    .line 30
-    .line 31
-    if-eqz v2, :cond_3
-
-    .line 32
-    .line 33
-    invoke-virtual {v0, v2}, Lqj1;->J(LPUd;)V
-
-    .line 34
-    .line 35
-    .line 36
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 37
-    .line 38
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 39
-    .line 40
-    .line 41
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 42
-    .line 43
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-virtual {v0, v4}, Lqj1;->Q(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
-    .line 47
-    .line 48
-    .line 49
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->O0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 50
-    .line 51
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 52
-    .line 53
-    .line 54
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 55
-    .line 56
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 57
-    .line 58
-    .line 59
-    invoke-virtual {v0, v4}, Lqj1;->p(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
-    .line 60
-    .line 61
-    .line 62
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->V0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 63
-    .line 64
-    invoke-virtual {v0, v2}, Lqj1;->n(Lio/reactivex/rxjava3/core/Observer;)V
-
-    .line 65
-    .line 66
-    .line 67
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->U0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 68
-    .line 69
-    invoke-virtual {v0, v2}, Lqj1;->m(Lio/reactivex/rxjava3/core/Observer;)V
-
-    .line 70
-    .line 71
-    .line 72
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y0:LXfi;
-
-    .line 73
-    .line 74
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object v2
-
-    .line 78
-    check-cast v2, LJQd;
-
-    .line 79
-    .line 80
-    invoke-virtual {v0, v2}, Lqj1;->H(LJQd;)V
-
-    .line 81
-    .line 82
-    .line 83
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->K0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 84
-    .line 85
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 86
-    .line 87
-    .line 88
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 89
-    .line 90
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 91
-    .line 92
-    .line 93
-    invoke-virtual {v0, v4}, Lqj1;->G(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
-    .line 94
-    .line 95
-    .line 96
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->W0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 97
-    .line 98
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 99
-    .line 100
-    .line 101
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 102
-    .line 103
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 104
-    .line 105
-    .line 106
-    invoke-virtual {v0, v4}, Lqj1;->v(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
-    .line 107
-    .line 108
-    .line 109
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->N0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 110
-    .line 111
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 112
-    .line 113
-    .line 114
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 115
-    .line 116
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 117
-    .line 118
-    .line 119
-    invoke-virtual {v0, v4}, Lqj1;->O(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
-    .line 120
-    .line 121
-    .line 122
-    invoke-virtual {v0, v2}, Lqj1;->P(Lio/reactivex/rxjava3/core/Observer;)V
-
-    .line 123
-    .line 124
-    .line 125
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->P0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 126
-    .line 127
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 128
-    .line 129
-    .line 130
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 131
-    .line 132
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 133
-    .line 134
-    .line 135
-    invoke-virtual {v0, v4}, Lqj1;->V(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
-    .line 136
-    .line 137
-    .line 138
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->I0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 139
-    .line 140
-    invoke-virtual {v0, v2}, Lqj1;->j(Lio/reactivex/rxjava3/core/Observable;)V
-
-    .line 141
-    .line 142
-    .line 143
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->G0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 144
-    .line 145
-    invoke-virtual {v0, v2}, Lqj1;->k(Lio/reactivex/rxjava3/core/Observer;)V
-
-    .line 146
-    .line 147
-    .line 148
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->N1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 149
-    .line 150
-    if-eqz v2, :cond_2
-
-    .line 151
-    .line 152
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 153
-    .line 154
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 155
-    .line 156
-    .line 157
-    invoke-virtual {v0, v4}, Lqj1;->I(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
-    .line 158
-    .line 159
-    .line 160
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n1:LsPd;
-
-    .line 161
-    .line 162
-    if-eqz v2, :cond_1
-
-    .line 163
-    .line 164
-    invoke-virtual {v2}, LsPd;->a()LbU7;
-
-    .line 165
-    .line 166
-    .line 167
-    move-result-object v2
-
-    .line 168
-    invoke-virtual {v0, v2}, Lqj1;->F(LbU7;)V
-
-    .line 169
-    .line 170
-    .line 171
-    invoke-virtual {v0}, Lqj1;->e()LBi;
-
-    .line 172
-    .line 173
-    .line 174
-    move-result-object v0
-
-    .line 175
-    invoke-virtual {v0}, LBi;->t()Lt9f;
-
-    .line 176
-    .line 177
-    .line 178
-    move-result-object v0
-
-    .line 179
-    new-instance v2, LGLd;
-
-    .line 180
-    .line 181
-    iget-object v4, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
-
-    .line 182
-    .line 183
-    if-eqz v4, :cond_0
-
-    .line 184
-    .line 185
-    invoke-virtual {v4}, LPUd;->b()LmQd;
-
-    .line 186
-    .line 187
-    .line 188
-    move-result-object v1
-
-    .line 189
-    invoke-direct {v2, v1}, LGLd;-><init>(LmQd;)V
-
-    .line 190
-    .line 191
-    .line 192
-    invoke-virtual {v0, v2}, Lt9f;->b(LGLd;)Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 193
-    .line 194
-    .line 195
-    move-result-object v0
-
-    .line 196
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 197
-    .line 198
-    .line 199
-    return-void
-
-    .line 200
-    :cond_0
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 201
-    .line 202
-    .line 203
-    throw v1
-
-    .line 204
-    :cond_1
-    const-string p1, "configPreloader"
-
-    .line 205
-    .line 206
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 207
-    .line 208
-    .line 209
-    throw v1
-
-    .line 210
-    :cond_2
-    const-string p1, "previewSaveStateEventSubject"
-
-    .line 211
-    .line 212
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 213
-    .line 214
-    .line 215
-    throw v1
-
-    .line 216
-    :cond_3
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 217
-    .line 218
-    .line 219
-    throw v1
-
-    .line 220
-    :cond_4
-    const-string p1, "viewFinder"
-
-    .line 221
-    .line 222
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 223
-    .line 224
-    .line 225
-    throw v1
-
-    .line 226
-    :cond_5
-    const-string p1, "preloadComponentBuilder"
-
-    .line 227
-    .line 228
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 229
-    .line 230
-    .line 231
-    throw v1
+    return v0
 .end method
 
 .method public final i2()V
@@ -3225,11 +3168,11 @@
     .line 12
     .line 13
     .line 14
-    new-instance v2, LpQd;
+    new-instance v2, LG7e;
 
     .line 15
     .line 16
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 17
     .line 18
@@ -3237,19 +3180,19 @@
     move-result-object v3
 
     .line 20
-    new-instance v4, LBG;
+    new-instance v4, LyI;
 
     .line 21
     .line 22
     const/4 v5, 0x3
 
     .line 23
-    invoke-direct {v4, v1, v5}, LBG;-><init>(Ljava/lang/ref/WeakReference;I)V
+    invoke-direct {v4, v1, v5}, LyI;-><init>(Ljava/lang/ref/WeakReference;I)V
 
     .line 24
     .line 25
     .line 26
-    invoke-direct {v2, v3, v0, v4}, LpQd;-><init>(Lzre;Landroid/view/ViewTreeObserver;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v2, v3, v0, v4}, LG7e;-><init>(LlJe;Landroid/view/ViewTreeObserver;Lkotlin/jvm/functions/Function0;)V
 
     .line 27
     .line 28
@@ -3259,7 +3202,7 @@
     .line 30
     .line 31
     .line 32
-    sget-object v0, LtQd;->b:LtQd;
+    sget-object v0, Ll7e;->Z:Ll7e;
 
     .line 33
     .line 34
@@ -3281,14 +3224,14 @@
     .line 42
     .line 43
     .line 44
-    new-instance v0, LuQd;
+    new-instance v0, LK7e;
 
     .line 45
     .line 46
     const/4 v1, 0x0
 
     .line 47
-    invoke-direct {v0, p0, v1}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v0, p0, v1}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 48
     .line 49
@@ -3297,7 +3240,7 @@
 
     .line 51
     .line 52
-    invoke-static {v2, v0, v1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v2, v0, v1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 53
     .line 54
@@ -3309,7 +3252,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->l2:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 2
     .line 3
@@ -3317,7 +3260,7 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->l2:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->m2:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 5
     .line 6
@@ -3350,11 +3293,11 @@
 
     .line 16
     .line 17
-    sget-object v2, LXRg;->a:LWRg;
+    sget-object v2, LOdh;->a:LNdh;
 
     .line 18
     .line 19
-    invoke-virtual {v2, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v2, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 20
     .line 21
@@ -3365,7 +3308,7 @@
 
     .line 23
     :try_start_2
-    instance-of v3, p1, LKI8;
+    instance-of v3, p1, LfQ8;
 
     .line 24
     .line 25
@@ -3373,7 +3316,7 @@
 
     .line 26
     .line 27
-    check-cast p1, LKI8;
+    check-cast p1, LfQ8;
 
     .line 28
     .line 29
@@ -3389,7 +3332,7 @@
     move-result-object p1
 
     .line 34
-    instance-of v3, p1, LKI8;
+    instance-of v3, p1, LfQ8;
 
     .line 35
     .line 36
@@ -3397,7 +3340,7 @@
 
     .line 37
     .line 38
-    check-cast p1, LKI8;
+    check-cast p1, LfQ8;
 
     .line 39
     .line 40
@@ -3414,7 +3357,7 @@
     .line 43
     .line 44
     :goto_1
-    invoke-interface {p1}, LKI8;->androidInjector()LtQ;
+    invoke-interface {p1}, LfQ8;->androidInjector()LyS;
 
     .line 45
     .line 46
@@ -3422,7 +3365,7 @@
     move-result-object p1
 
     .line 48
-    invoke-interface {p1, p0}, LtQ;->a(Ljava/lang/Object;)V
+    invoke-interface {p1, p0}, LyS;->a(Ljava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -3430,7 +3373,7 @@
     .line 50
     .line 51
     :try_start_3
-    invoke-virtual {v2, v1}, LWRg;->h(I)V
+    invoke-virtual {v2, v1}, LNdh;->h(I)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -3479,7 +3422,7 @@
     .line 68
     :goto_2
     :try_start_5
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 69
     .line 70
@@ -3487,7 +3430,7 @@
 
     .line 71
     .line 72
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 73
     .line 74
@@ -3505,7 +3448,7 @@
     throw p1
 .end method
 
-.method public final k(LQqc;LF8d;)V
+.method public final k(LiGc;LYnd;)V
     .locals 1
 
     .line 1
@@ -3535,7 +3478,7 @@
 
     .line 12
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h(LQqc;)V
+    invoke-virtual {p0, p1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->i(LiGc;)V
 
     .line 13
     .line 14
@@ -3544,21 +3487,12 @@
 
     .line 16
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->w(LQqc;)V
+    invoke-virtual {p0, p1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->v(LiGc;)V
 
     .line 17
     .line 18
     .line 19
     return-void
-.end method
-
-.method public final k0()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    return v0
 .end method
 
 .method public final k2(Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
@@ -3573,7 +3507,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Lztk;->u(Landroid/os/Bundle;)LPUd;
+    invoke-static {v0}, LGSk;->m(Landroid/os/Bundle;)Lhce;
 
     .line 6
     .line 7
@@ -3581,27 +3515,27 @@
     move-result-object v0
 
     .line 9
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->x1:Lrb8;
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->z1:Lmp9;
 
     .line 10
     .line 11
     const/4 v2, 0x0
 
     .line 12
-    if-eqz v1, :cond_b
+    if-eqz v1, :cond_a
 
     .line 13
     .line 14
-    invoke-virtual {v1, v0}, Lrb8;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, Lmp9;->accept(Ljava/lang/Object;)V
 
     .line 15
     .line 16
     .line 17
-    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
+    iput-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
 
     .line 18
     .line 19
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 20
     .line 21
@@ -3609,7 +3543,7 @@
     move-result-object v0
 
     .line 23
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
 
     .line 24
     .line 25
@@ -3617,16 +3551,16 @@
 
     .line 26
     .line 27
-    if-eqz v1, :cond_a
+    if-eqz v1, :cond_9
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, LEPd;->E(LPUd;)V
+    invoke-virtual {v0, v1}, LU6e;->F(Lhce;)V
 
     .line 30
     .line 31
     .line 32
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 33
     .line 34
@@ -3634,7 +3568,7 @@
     move-result-object v0
 
     .line 36
-    invoke-virtual {v0}, LhFh;->g()V
+    invoke-virtual {v0}, Ly3i;->g()V
 
     .line 37
     .line 38
@@ -3673,7 +3607,7 @@
     .line 55
     .line 56
     .line 57
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 58
     .line 59
@@ -3681,11 +3615,11 @@
     move-result-object v0
 
     .line 61
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 62
     .line 63
-    invoke-virtual {v0}, LBre;->d()LF06;
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 64
     .line 65
@@ -3702,33 +3636,33 @@
     .line 70
     .line 71
     .line 72
-    new-instance v0, LHwd;
+    new-instance v0, LaYd;
 
     .line 73
     .line 74
-    const/16 v1, 0x12
+    const/16 v1, 0xc
 
     .line 75
     .line 76
-    invoke-direct {v0, p0, v1, p1}, LHwd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, LaYd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 77
     .line 78
     .line 79
-    invoke-static {v4, v0, p1}, LLZj;->t0(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    invoke-static {v4, v0, p1}, LOIc;->N(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
     .line 80
     .line 81
     .line 82
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
 
     .line 83
     .line 84
-    if-eqz v0, :cond_9
+    if-eqz v0, :cond_8
 
     .line 85
     .line 86
-    invoke-static {v0}, LCtk;->h(LPUd;)Z
+    invoke-static {v0}, LISk;->g(Lhce;)Z
 
     .line 87
     .line 88
@@ -3740,7 +3674,7 @@
 
     .line 91
     .line 92
-    sget-object v0, LiQd;->e0:LcSa;
+    sget-object v0, Lz7e;->e0:LL4b;
 
     .line 93
     .line 94
@@ -3748,7 +3682,7 @@
 
     .line 95
     .line 96
-    iput-object v1, v0, LcSa;->j0:Ljava/lang/Boolean;
+    iput-object v1, v0, LL4b;->j0:Ljava/lang/Boolean;
 
     .line 97
     .line 98
@@ -3756,15 +3690,15 @@
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
 
     .line 100
     .line 101
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_7
 
     .line 102
     .line 103
-    invoke-static {v0}, LCtk;->g(LPUd;)Z
+    invoke-static {v0}, LISk;->f(Lhce;)Z
 
     .line 104
     .line 105
@@ -3776,7 +3710,7 @@
 
     .line 108
     .line 109
-    sget-object v0, LiQd;->e0:LcSa;
+    sget-object v0, Lz7e;->e0:LL4b;
 
     .line 110
     .line 111
@@ -3784,20 +3718,20 @@
 
     .line 112
     .line 113
-    iput-object v1, v0, LcSa;->j0:Ljava/lang/Boolean;
+    iput-object v1, v0, LL4b;->j0:Ljava/lang/Boolean;
 
     .line 114
     .line 115
     :cond_1
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
 
     .line 116
     .line 117
-    if-eqz v0, :cond_7
+    if-eqz v0, :cond_6
 
     .line 118
     .line 119
-    invoke-static {v0}, LCtk;->k(LPUd;)Z
+    invoke-static {v0}, LISk;->j(Lhce;)Z
 
     .line 120
     .line 121
@@ -3805,7 +3739,7 @@
     move-result v1
 
     .line 123
-    invoke-static {v0, v1}, LClk;->k(LPUd;Z)Z
+    invoke-static {v0, v1}, LpMk;->n(Lhce;Z)Z
 
     .line 124
     .line 125
@@ -3817,7 +3751,7 @@
 
     .line 128
     .line 129
-    sget-object v0, LiQd;->e0:LcSa;
+    sget-object v0, Lz7e;->e0:LL4b;
 
     .line 130
     .line 131
@@ -3825,11 +3759,11 @@
 
     .line 132
     .line 133
-    iput-object v1, v0, LcSa;->j0:Ljava/lang/Boolean;
+    iput-object v1, v0, LL4b;->j0:Ljava/lang/Boolean;
 
     .line 134
     .line 135
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 136
     .line 137
@@ -3837,11 +3771,11 @@
     move-result-object v0
 
     .line 139
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 140
     .line 141
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 142
     .line 143
@@ -3853,7 +3787,7 @@
 
     .line 146
     .line 147
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 148
     .line 149
@@ -3861,26 +3795,26 @@
     move-result-object v0
 
     .line 151
-    new-instance v1, LuQd;
+    new-instance v1, LK7e;
 
     .line 152
     .line 153
     const/4 v3, 0x7
 
     .line 154
-    invoke-direct {v1, p0, v3}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v1, p0, v3}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 155
     .line 156
     .line 157
-    invoke-static {v0, v1, p1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v0, v1, p1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 158
     .line 159
     .line 160
     :cond_2
     :goto_0
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
 
     .line 161
     .line 162
@@ -3888,11 +3822,11 @@
     move-result-object v0
 
     .line 164
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 165
     .line 166
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 167
     .line 168
@@ -3904,7 +3838,7 @@
 
     .line 171
     .line 172
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 173
     .line 174
@@ -3912,7 +3846,7 @@
     move-result-object v0
 
     .line 176
-    new-instance v1, LuQd;
+    new-instance v1, LK7e;
 
     .line 177
     .line 178
@@ -3920,25 +3854,25 @@
 
     .line 179
     .line 180
-    invoke-direct {v1, p0, v3}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v1, p0, v3}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 181
     .line 182
     .line 183
-    invoke-static {v0, v1, p1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v0, v1, p1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 184
     .line 185
     .line 186
-    new-instance v0, Lfrb;
+    new-instance v0, LZAb;
 
     .line 187
     .line 188
-    const/16 v1, 0x15
+    const/16 v1, 0x13
 
     .line 189
     .line 190
-    invoke-direct {v0, v1}, Lfrb;-><init>(I)V
+    invoke-direct {v0, v1}, LZAb;-><init>(I)V
 
     .line 191
     .line 192
@@ -3951,7 +3885,7 @@
 
     .line 196
     .line 197
-    invoke-static {v1, v3, v0}, Lio/reactivex/rxjava3/core/Observable;->w(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-static {v1, v3, v0}, Lio/reactivex/rxjava3/core/Observable;->x(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 198
     .line 199
@@ -3959,7 +3893,7 @@
     move-result-object v0
 
     .line 201
-    new-instance v1, LuQd;
+    new-instance v1, LK7e;
 
     .line 202
     .line 203
@@ -3967,17 +3901,17 @@
 
     .line 204
     .line 205
-    invoke-direct {v1, p0, v3}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-direct {v1, p0, v3}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 206
     .line 207
     .line 208
-    invoke-static {v0, v1, p1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v0, v1, p1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 209
     .line 210
     .line 211
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1()LTqc;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1()LmGc;
 
     .line 212
     .line 213
@@ -3985,11 +3919,11 @@
     move-result-object v0
 
     .line 215
-    sget-object v1, LiQd;->e0:LcSa;
+    sget-object v1, Lz7e;->e0:LL4b;
 
     .line 216
     .line 217
-    new-instance v3, Lcd;
+    new-instance v3, LSd;
 
     .line 218
     .line 219
@@ -3997,222 +3931,222 @@
 
     .line 220
     .line 221
-    invoke-direct {v3, v4, p0}, Lcd;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, p0}, LSd;-><init>(ILjava/lang/Object;)V
 
     .line 222
     .line 223
     .line 224
-    new-instance v4, LwQd;
+    new-instance v4, LiWd;
 
     .line 225
     .line 226
-    const/4 v5, 0x1
+    const/16 v5, 0x9
 
     .line 227
-    invoke-direct {v4, p0, v5, v3}, LwQd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 228
+    invoke-direct {v4, p0, v5, v3}, LiWd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 229
     .line 230
+    .line 231
     invoke-static {v4}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 231
     .line 232
     .line 233
+    .line 234
     move-result-object v4
 
-    .line 234
+    .line 235
     iget-object v5, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->y0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 235
     .line 236
-    invoke-virtual {v5, v4}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 237
+    invoke-virtual {v5, v4}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 238
     .line 239
-    new-instance v4, Lrh8;
-
     .line 240
+    new-instance v4, LUn8;
+
     .line 241
+    .line 242
     const-string v5, "PreviewFragmentImpl"
 
-    .line 242
     .line 243
-    invoke-direct {v4, v1, v2, v3, v5}, Lrh8;-><init>(LcSa;LcSa;LEId;Ljava/lang/String;)V
-
     .line 244
+    invoke-direct {v4, v1, v2, v3, v5}, LUn8;-><init>(LL4b;LL4b;LTZd;Ljava/lang/String;)V
+
     .line 245
     .line 246
-    invoke-virtual {v0, v4}, LTqc;->b(Lrh8;)V
-
     .line 247
+    invoke-virtual {v0, v4}, LmGc;->b(LUn8;)V
+
     .line 248
     .line 249
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->G1:LbN5;
-
     .line 250
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->O1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 251
-    if-eqz v0, :cond_6
-
     .line 252
-    .line 253
-    invoke-virtual {v0, v1}, LbN5;->a(LcSa;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 254
-    .line 255
-    .line 256
-    move-result-object v0
-
-    .line 257
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 258
-    .line 259
-    .line 260
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->N1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 261
-    .line 262
     if-eqz v0, :cond_5
 
-    .line 263
-    .line 264
-    sget-object v1, LtQd;->c:LtQd;
+    .line 253
+    .line 254
+    sget-object v1, Ll7e;->e0:Ll7e;
 
-    .line 265
-    .line 266
+    .line 255
+    .line 256
     new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
-    .line 267
-    .line 268
+    .line 257
+    .line 258
     invoke-direct {v3, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
 
-    .line 269
-    .line 270
-    .line 271
-    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Observable;->c0()Lio/reactivex/rxjava3/core/Single;
+    .line 259
+    .line 260
+    .line 261
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Observable;->f0()Lio/reactivex/rxjava3/core/Single;
 
-    .line 272
-    .line 273
-    .line 274
+    .line 262
+    .line 263
+    .line 264
     move-result-object v0
 
+    .line 265
+    new-instance v1, LK7e;
+
+    .line 266
+    .line 267
+    const/16 v3, 0xa
+
+    .line 268
+    .line 269
+    invoke-direct {v1, p0, v3}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+
+    .line 270
+    .line 271
+    .line 272
+    invoke-static {v0, v1, p1}, LOIc;->Q(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+
+    .line 273
+    .line 274
     .line 275
-    new-instance v1, LuQd;
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->P1:Lsbe;
 
     .line 276
     .line 277
-    const/16 v3, 0xa
+    if-eqz v0, :cond_4
 
     .line 278
     .line 279
-    invoke-direct {v1, p0, v3}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-virtual {v0}, Lsbe;->a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 280
     .line 281
     .line 282
-    invoke-static {v0, v1, p1}, LLZj;->w0(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    move-result-object v0
 
     .line 283
+    const-class v1, Lube;
+
     .line 284
     .line 285
-    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->O1:LbUd;
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->y0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
     .line 286
     .line 287
-    if-eqz v0, :cond_4
-
     .line 288
+    move-result-object v0
+
     .line 289
-    invoke-virtual {v0}, LbUd;->a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    new-instance v1, LK7e;
 
     .line 290
     .line 291
+    const/4 v3, 0x6
+
     .line 292
-    move-result-object v0
+    invoke-direct {v1, p0, v3}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
 
     .line 293
-    const-class v1, LdUd;
-
     .line 294
     .line 295
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->v0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-static {v0, v1, p1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 296
     .line 297
     .line 298
-    move-result-object v0
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()Lx85;
 
     .line 299
-    new-instance v1, LuQd;
-
     .line 300
     .line 301
-    const/4 v3, 0x6
+    move-result-object v0
 
     .line 302
-    invoke-direct {v1, p0, v3}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+    invoke-virtual {v0}, Lx85;->w()LU5e;
 
     .line 303
     .line 304
     .line 305
-    invoke-static {v0, v1, p1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 306
-    .line 307
-    .line 308
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()LD25;
-
-    .line 309
-    .line 310
-    .line 311
     move-result-object v0
 
+    .line 306
+    invoke-interface {v0}, LU5e;->a()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 307
+    .line 308
+    .line 309
+    move-result-object v0
+
+    .line 310
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->t1:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 311
     .line 312
-    invoke-virtual {v0}, LD25;->y()LEOd;
+    if-eqz v1, :cond_3
 
     .line 313
     .line 314
-    .line 315
-    move-result-object v0
+    new-instance v3, Lmp9;
 
+    .line 315
     .line 316
-    invoke-interface {v0}, LEOd;->a()Lio/reactivex/rxjava3/core/Observable;
+    const/16 v4, 0x1d
 
     .line 317
     .line 318
+    invoke-direct {v3, v4, v1}, Lmp9;-><init>(ILio/reactivex/rxjava3/subjects/Subject;)V
+
     .line 319
-    move-result-object v0
-
     .line 320
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->s1:Lio/reactivex/rxjava3/subjects/Subject;
-
     .line 321
-    .line 322
-    if-eqz v1, :cond_3
+    invoke-static {v0, v3, p1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 322
     .line 323
     .line 324
-    new-instance v3, Lrb8;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 325
     .line 326
-    const/16 v4, 0x1a
-
     .line 327
+    move-result-object v0
+
     .line 328
-    invoke-direct {v3, v4, v1}, Lrb8;-><init>(ILio/reactivex/rxjava3/subjects/Subject;)V
+    invoke-static {v0}, LNSk;->h(Ly3i;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 329
     .line 330
     .line 331
-    invoke-static {v0, v3, p1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    move-result-object v0
 
     .line 332
+    sget-object v1, LfHd;->X:LfHd;
+
     .line 333
     .line 334
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 335
     .line 336
@@ -4220,99 +4154,101 @@
     move-result-object v0
 
     .line 338
-    invoke-static {v0}, LGtk;->f(LhFh;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    new-instance v1, LwTd;
 
     .line 339
     .line 340
-    .line 341
-    move-result-object v0
+    const/16 v3, 0x9
 
+    .line 341
     .line 342
-    sget-object v1, LNja;->v0:LNja;
+    invoke-direct {v1, v3, p0}, LwTd;-><init>(ILjava/lang/Object;)V
 
     .line 343
     .line 344
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
     .line 345
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
     .line 346
     .line 347
-    move-result-object v0
+    invoke-direct {v3, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 348
-    new-instance v1, Lkfd;
-
     .line 349
     .line 350
-    const/16 v3, 0x18
+    new-instance v0, LbMd;
 
     .line 351
     .line 352
-    invoke-direct {v1, v3, p0}, Lkfd;-><init>(ILjava/lang/Object;)V
+    const/16 v1, 0x18
 
     .line 353
     .line 354
-    .line 355
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-direct {v0, v1, p0}, LbMd;-><init>(ILjava/lang/Object;)V
 
+    .line 355
     .line 356
     .line 357
-    invoke-direct {v3, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    const/4 v1, 0x6
 
     .line 358
+    invoke-static {v3, v0, v2, v2, v1}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 359
     .line 360
-    new-instance v0, LxCd;
-
     .line 361
+    move-result-object v0
+
     .line 362
-    const/16 v1, 0xd
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 363
     .line 364
-    invoke-direct {v0, v1, p0}, LxCd;-><init>(ILjava/lang/Object;)V
-
     .line 365
-    .line 366
-    .line 367
-    const/4 v1, 0x6
+    return-void
 
+    .line 366
+    :cond_3
+    const-string p1, "lensesContainerMarginBottomObserver"
+
+    .line 367
     .line 368
-    invoke-static {v3, v0, v2, v2, v1}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 369
     .line 370
     .line 371
-    move-result-object v0
-
-    .line 372
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 373
-    .line 374
-    .line 375
-    return-void
-
-    .line 376
-    :cond_3
-    const-string p1, "lensesContainerMarginBottomObserver"
-
-    .line 377
-    .line 378
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 379
-    .line 380
-    .line 381
     throw v2
 
-    .line 382
+    .line 372
     :cond_4
     const-string p1, "previewSendFlowEventDispatcher"
 
+    .line 373
+    .line 374
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 375
+    .line 376
+    .line 377
+    throw v2
+
+    .line 378
+    :cond_5
+    const-string p1, "previewSaveStateEventSubject"
+
+    .line 379
+    .line 380
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 381
+    .line 382
     .line 383
+    throw v2
+
     .line 384
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_6
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 385
     .line 386
@@ -4320,25 +4256,26 @@
     throw v2
 
     .line 388
-    :cond_5
-    const-string p1, "previewSaveStateEventSubject"
+    :cond_7
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 389
     .line 390
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 391
-    .line 392
-    .line 393
     throw v2
 
-    .line 394
-    :cond_6
-    const-string p1, "previewArExplorerNavigationController"
+    .line 392
+    :cond_8
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 393
+    .line 394
     .line 395
+    throw v2
+
     .line 396
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_9
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 397
     .line 398
@@ -4346,60 +4283,24 @@
     throw v2
 
     .line 400
-    :cond_7
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    :cond_a
+    const-string p1, "mediaTypeConsumer"
 
     .line 401
     .line 402
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 403
-    throw v2
-
     .line 404
-    :cond_8
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
-
     .line 405
-    .line 406
-    .line 407
-    throw v2
-
-    .line 408
-    :cond_9
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 409
-    .line 410
-    .line 411
-    throw v2
-
-    .line 412
-    :cond_a
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 413
-    .line 414
-    .line 415
-    throw v2
-
-    .line 416
-    :cond_b
-    const-string p1, "mediaTypeConsumer"
-
-    .line 417
-    .line 418
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 419
-    .line 420
-    .line 421
     throw v2
 .end method
 
-.method public final l2(LyQd;)V
+.method public final l2(LM7e;)V
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 2
     .line 3
@@ -4407,7 +4308,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {p1}, LyQd;->u()LuKb;
+    invoke-virtual {p1}, LM7e;->w()Lopc;
 
     .line 6
     .line 7
@@ -4415,12 +4316,12 @@
     move-result-object v1
 
     .line 9
-    invoke-virtual {v0, v1}, LEPd;->D(LuKb;)V
+    invoke-virtual {v0, v1}, LU6e;->E(Lopc;)V
 
     .line 10
     .line 11
     .line 12
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 13
     .line 14
@@ -4428,7 +4329,7 @@
     move-result-object v0
 
     .line 16
-    invoke-virtual {p1}, LyQd;->g()LPc4;
+    invoke-virtual {p1}, LM7e;->g()Lmh4;
 
     .line 17
     .line 18
@@ -4436,12 +4337,12 @@
     move-result-object v1
 
     .line 20
-    invoke-virtual {v0, v1}, LEPd;->n(LPc4;)V
+    invoke-virtual {v0, v1}, LU6e;->n(Lmh4;)V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 24
     .line 25
@@ -4449,7 +4350,7 @@
     move-result-object v0
 
     .line 27
-    invoke-virtual {p1}, LyQd;->x()LgZ3;
+    invoke-virtual {p1}, LM7e;->z()LJ34;
 
     .line 28
     .line 29
@@ -4457,12 +4358,12 @@
     move-result-object v1
 
     .line 31
-    invoke-virtual {v0, v1}, LEPd;->G(LgZ3;)V
+    invoke-virtual {v0, v1}, LU6e;->H(LJ34;)V
 
     .line 32
     .line 33
     .line 34
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 35
     .line 36
@@ -4470,7 +4371,7 @@
     move-result-object v0
 
     .line 38
-    invoke-virtual {p1}, LyQd;->p()Ljava/lang/Integer;
+    invoke-virtual {p1}, LM7e;->r()Ljava/lang/Integer;
 
     .line 39
     .line 40
@@ -4478,12 +4379,12 @@
     move-result-object v1
 
     .line 42
-    invoke-virtual {v0, v1}, LEPd;->y(Ljava/lang/Integer;)V
+    invoke-virtual {v0, v1}, LU6e;->z(Ljava/lang/Integer;)V
 
     .line 43
     .line 44
     .line 45
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 46
     .line 47
@@ -4491,7 +4392,7 @@
     move-result-object v0
 
     .line 49
-    invoke-virtual {p1}, LyQd;->k()Ljava/util/List;
+    invoke-virtual {p1}, LM7e;->l()Ljava/util/List;
 
     .line 50
     .line 51
@@ -4499,12 +4400,12 @@
     move-result-object v1
 
     .line 53
-    invoke-virtual {v0, v1}, LEPd;->r(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, LU6e;->r(Ljava/util/List;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 57
     .line 58
@@ -4512,7 +4413,7 @@
     move-result-object v0
 
     .line 60
-    invoke-virtual {p1}, LyQd;->i()LmG1;
+    invoke-virtual {p1}, LM7e;->i()LHJ1;
 
     .line 61
     .line 62
@@ -4520,12 +4421,12 @@
     move-result-object v1
 
     .line 64
-    invoke-virtual {v0, v1}, LEPd;->o(LmG1;)V
+    invoke-virtual {v0, v1}, LU6e;->o(LHJ1;)V
 
     .line 65
     .line 66
     .line 67
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 68
     .line 69
@@ -4533,7 +4434,7 @@
     move-result-object v0
 
     .line 71
-    invoke-virtual {p1}, LyQd;->J()Z
+    invoke-virtual {p1}, LM7e;->L()Z
 
     .line 72
     .line 73
@@ -4541,12 +4442,12 @@
     move-result v1
 
     .line 75
-    invoke-virtual {v0, v1}, LEPd;->M(Z)V
+    invoke-virtual {v0, v1}, LU6e;->N(Z)V
 
     .line 76
     .line 77
     .line 78
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 79
     .line 80
@@ -4554,7 +4455,7 @@
     move-result-object v0
 
     .line 82
-    invoke-virtual {p1}, LyQd;->a()Ljava/lang/String;
+    invoke-virtual {p1}, LM7e;->a()Ljava/lang/String;
 
     .line 83
     .line 84
@@ -4562,12 +4463,12 @@
     move-result-object v1
 
     .line 86
-    invoke-virtual {v0, v1}, LEPd;->k(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LU6e;->k(Ljava/lang/String;)V
 
     .line 87
     .line 88
     .line 89
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 90
     .line 91
@@ -4575,7 +4476,7 @@
     move-result-object v0
 
     .line 93
-    invoke-virtual {p1}, LyQd;->E()Ljava/util/List;
+    invoke-virtual {p1}, LM7e;->G()Ljava/util/List;
 
     .line 94
     .line 95
@@ -4583,12 +4484,12 @@
     move-result-object v1
 
     .line 97
-    invoke-virtual {v0, v1}, LEPd;->N(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, LU6e;->O(Ljava/util/List;)V
 
     .line 98
     .line 99
     .line 100
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 101
     .line 102
@@ -4596,7 +4497,7 @@
     move-result-object v0
 
     .line 104
-    invoke-virtual {p1}, LyQd;->f()I
+    invoke-virtual {p1}, LM7e;->f()I
 
     .line 105
     .line 106
@@ -4604,12 +4505,12 @@
     move-result v1
 
     .line 108
-    invoke-virtual {v0, v1}, LEPd;->m(I)V
+    invoke-virtual {v0, v1}, LU6e;->m(I)V
 
     .line 109
     .line 110
     .line 111
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 112
     .line 113
@@ -4617,7 +4518,7 @@
     move-result-object v0
 
     .line 115
-    invoke-virtual {p1}, LyQd;->q()Ljava/lang/Long;
+    invoke-virtual {p1}, LM7e;->s()Ljava/lang/Long;
 
     .line 116
     .line 117
@@ -4625,12 +4526,12 @@
     move-result-object v1
 
     .line 119
-    invoke-virtual {v0, v1}, LEPd;->z(Ljava/lang/Long;)V
+    invoke-virtual {v0, v1}, LU6e;->A(Ljava/lang/Long;)V
 
     .line 120
     .line 121
     .line 122
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 123
     .line 124
@@ -4638,7 +4539,7 @@
     move-result-object v0
 
     .line 126
-    invoke-virtual {p1}, LyQd;->v()Ljava/lang/String;
+    invoke-virtual {p1}, LM7e;->x()Ljava/lang/String;
 
     .line 127
     .line 128
@@ -4646,12 +4547,12 @@
     move-result-object v1
 
     .line 130
-    invoke-virtual {v0, v1}, LEPd;->F(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LU6e;->G(Ljava/lang/String;)V
 
     .line 131
     .line 132
     .line 133
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 134
     .line 135
@@ -4659,20 +4560,20 @@
     move-result-object v0
 
     .line 137
-    invoke-virtual {p1}, LyQd;->l()Ljava/lang/String;
+    invoke-virtual {p1}, LM7e;->m()Z
 
     .line 138
     .line 139
     .line 140
-    move-result-object v1
+    move-result v1
 
     .line 141
-    invoke-virtual {v0, v1}, LEPd;->t(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LU6e;->s(Z)V
 
     .line 142
     .line 143
     .line 144
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 145
     .line 146
@@ -4680,7 +4581,7 @@
     move-result-object v0
 
     .line 148
-    invoke-virtual {p1}, LyQd;->n()Ljava/lang/String;
+    invoke-virtual {p1}, LM7e;->n()Ljava/lang/String;
 
     .line 149
     .line 150
@@ -4688,12 +4589,12 @@
     move-result-object v1
 
     .line 152
-    invoke-virtual {v0, v1}, LEPd;->w(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LU6e;->u(Ljava/lang/String;)V
 
     .line 153
     .line 154
     .line 155
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 156
     .line 157
@@ -4701,7 +4602,7 @@
     move-result-object v0
 
     .line 159
-    invoke-virtual {p1}, LyQd;->t()Ldbc;
+    invoke-virtual {p1}, LM7e;->p()Ljava/lang/String;
 
     .line 160
     .line 161
@@ -4709,12 +4610,12 @@
     move-result-object v1
 
     .line 163
-    invoke-virtual {v0, v1}, LEPd;->C(Ldbc;)V
+    invoke-virtual {v0, v1}, LU6e;->x(Ljava/lang/String;)V
 
     .line 164
     .line 165
     .line 166
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 167
     .line 168
@@ -4722,7 +4623,7 @@
     move-result-object v0
 
     .line 170
-    invoke-virtual {p1}, LyQd;->m()Ljava/lang/String;
+    invoke-virtual {p1}, LM7e;->v()LNpc;
 
     .line 171
     .line 172
@@ -4730,12 +4631,12 @@
     move-result-object v1
 
     .line 174
-    invoke-virtual {v0, v1}, LEPd;->v(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LU6e;->D(LNpc;)V
 
     .line 175
     .line 176
     .line 177
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 178
     .line 179
@@ -4743,7 +4644,7 @@
     move-result-object v0
 
     .line 181
-    invoke-virtual {p1}, LyQd;->z()Ljava/lang/String;
+    invoke-virtual {p1}, LM7e;->o()Ljava/lang/String;
 
     .line 182
     .line 183
@@ -4751,12 +4652,12 @@
     move-result-object v1
 
     .line 185
-    invoke-virtual {v0, v1}, LEPd;->H(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LU6e;->w(Ljava/lang/String;)V
 
     .line 186
     .line 187
     .line 188
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 189
     .line 190
@@ -4764,7 +4665,7 @@
     move-result-object v0
 
     .line 192
-    invoke-virtual {p1}, LyQd;->A()LmPf;
+    invoke-virtual {p1}, LM7e;->B()Ljava/lang/String;
 
     .line 193
     .line 194
@@ -4772,12 +4673,12 @@
     move-result-object v1
 
     .line 196
-    invoke-virtual {v0, v1}, LEPd;->R(LmPf;)V
+    invoke-virtual {v0, v1}, LU6e;->I(Ljava/lang/String;)V
 
     .line 197
     .line 198
     .line 199
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 200
     .line 201
@@ -4785,7 +4686,7 @@
     move-result-object v0
 
     .line 203
-    invoke-virtual {p1}, LyQd;->r()Ljava/lang/String;
+    invoke-virtual {p1}, LM7e;->C()LJ8g;
 
     .line 204
     .line 205
@@ -4793,12 +4694,12 @@
     move-result-object v1
 
     .line 207
-    invoke-virtual {v0, v1}, LEPd;->A(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LU6e;->S(LJ8g;)V
 
     .line 208
     .line 209
     .line 210
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 211
     .line 212
@@ -4806,20 +4707,20 @@
     move-result-object v0
 
     .line 214
-    invoke-virtual {p1}, LyQd;->H()Z
+    invoke-virtual {p1}, LM7e;->t()Ljava/lang/String;
 
     .line 215
     .line 216
     .line 217
-    move-result v1
+    move-result-object v1
 
     .line 218
-    invoke-virtual {v0, v1}, LEPd;->B(Z)V
+    invoke-virtual {v0, v1}, LU6e;->B(Ljava/lang/String;)V
 
     .line 219
     .line 220
     .line 221
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 222
     .line 223
@@ -4827,7 +4728,7 @@
     move-result-object v0
 
     .line 225
-    invoke-virtual {p1}, LyQd;->G()Z
+    invoke-virtual {p1}, LM7e;->J()Z
 
     .line 226
     .line 227
@@ -4835,12 +4736,12 @@
     move-result v1
 
     .line 229
-    invoke-virtual {v0, v1}, LEPd;->p(Z)V
+    invoke-virtual {v0, v1}, LU6e;->C(Z)V
 
     .line 230
     .line 231
     .line 232
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 233
     .line 234
@@ -4848,7 +4749,7 @@
     move-result-object v0
 
     .line 236
-    invoke-virtual {p1}, LyQd;->I()Z
+    invoke-virtual {p1}, LM7e;->I()Z
 
     .line 237
     .line 238
@@ -4856,12 +4757,12 @@
     move-result v1
 
     .line 240
-    invoke-virtual {v0, v1}, LEPd;->L(Z)V
+    invoke-virtual {v0, v1}, LU6e;->p(Z)V
 
     .line 241
     .line 242
     .line 243
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 244
     .line 245
@@ -4869,7 +4770,7 @@
     move-result-object v0
 
     .line 247
-    invoke-virtual {p1}, LyQd;->j()Z
+    invoke-virtual {p1}, LM7e;->K()Z
 
     .line 248
     .line 249
@@ -4877,12 +4778,12 @@
     move-result v1
 
     .line 251
-    invoke-virtual {v0, v1}, LEPd;->q(Z)V
+    invoke-virtual {v0, v1}, LU6e;->M(Z)V
 
     .line 252
     .line 253
     .line 254
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 255
     .line 256
@@ -4890,20 +4791,20 @@
     move-result-object v0
 
     .line 258
-    invoke-virtual {p1}, LyQd;->A()LmPf;
+    invoke-virtual {p1}, LM7e;->k()Z
 
     .line 259
     .line 260
     .line 261
-    move-result-object v1
+    move-result v1
 
     .line 262
-    invoke-virtual {v0, v1}, LEPd;->R(LmPf;)V
+    invoke-virtual {v0, v1}, LU6e;->q(Z)V
 
     .line 263
     .line 264
     .line 265
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
     .line 266
     .line 267
@@ -4911,19 +4812,40 @@
     move-result-object v0
 
     .line 269
-    invoke-virtual {p1}, LyQd;->B()LUQf;
+    invoke-virtual {p1}, LM7e;->C()LJ8g;
 
     .line 270
     .line 271
     .line 272
-    move-result-object p1
+    move-result-object v1
 
     .line 273
-    invoke-virtual {v0, p1}, LEPd;->u(LUQf;)V
+    invoke-virtual {v0, v1}, LU6e;->S(LJ8g;)V
 
     .line 274
     .line 275
     .line 276
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
+
+    .line 277
+    .line 278
+    .line 279
+    move-result-object v0
+
+    .line 280
+    invoke-virtual {p1}, LM7e;->D()Lyag;
+
+    .line 281
+    .line 282
+    .line 283
+    move-result-object p1
+
+    .line 284
+    invoke-virtual {v0, p1}, LU6e;->v(Lyag;)V
+
+    .line 285
+    .line 286
+    .line 287
     return-void
 .end method
 
@@ -4936,11 +4858,11 @@
     return-wide v0
 .end method
 
-.method public final v1()V
+.method public final t1()V
     .locals 3
 
     .line 1
-    sget-object v0, Li7j;->a:Li7j;
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 2
     .line 3
@@ -4962,7 +4884,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 14
     .line 15
@@ -4970,19 +4892,19 @@
     move-result-object v0
 
     .line 17
-    new-instance v1, LrOd;
+    new-instance v1, LH5e;
 
     .line 18
     .line 19
     const/4 v2, 0x0
 
     .line 20
-    invoke-direct {v1, v2}, LrOd;-><init>(Z)V
+    invoke-direct {v1, v2}, LH5e;-><init>(Z)V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v0, v1}, LhFh;->b(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Ly3i;->b(Ljava/lang/Object;)V
 
     .line 24
     .line 25
@@ -5005,7 +4927,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
 
     .line 37
     .line 38
@@ -5013,12 +4935,12 @@
     move-result-object v0
 
     .line 40
-    invoke-virtual {v0}, LhFh;->a()V
+    invoke-virtual {v0}, Ly3i;->a()V
 
     .line 41
     .line 42
     .line 43
-    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()LD25;
+    invoke-virtual {p0}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()Lx85;
 
     .line 44
     .line 45
@@ -5026,7 +4948,7 @@
     move-result-object v0
 
     .line 47
-    invoke-virtual {v0}, LD25;->B()LyUe;
+    invoke-virtual {v0}, Lx85;->z()Lvcf;
 
     .line 48
     .line 49
@@ -5042,11 +4964,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 4
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -5054,7 +4976,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -5063,12 +4985,12 @@
 
     .line 9
     :try_start_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 10
     .line 11
     .line 12
-    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->W1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 13
     .line 14
@@ -5110,7 +5032,7 @@
     move-result-object v2
 
     .line 34
-    invoke-static {v2}, LI0j;->y(Landroid/content/res/Resources$Theme;)Z
+    invoke-static {v2}, LNC8;->z(Landroid/content/res/Resources$Theme;)Z
 
     .line 35
     .line 36
@@ -5122,7 +5044,7 @@
 
     .line 39
     .line 40
-    const v2, 0x7f0b0c8e
+    const v2, 0x7f0b0db4
 
     .line 41
     .line 42
@@ -5143,12 +5065,12 @@
     move-result-object p1
 
     .line 51
-    const v3, 0x7f0404bc
+    const v3, 0x7f040549
 
     .line 52
     .line 53
     .line 54
-    invoke-static {p1, v3}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {p1, v3}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 55
     .line 56
@@ -5175,7 +5097,7 @@
     .line 64
     :cond_0
     :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 65
     .line 66
@@ -5184,7 +5106,7 @@
 
     .line 68
     :goto_1
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 69
     .line 70
@@ -5192,7 +5114,7 @@
 
     .line 71
     .line 72
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
 
     .line 73
     .line 74
@@ -5201,7 +5123,108 @@
     throw p1
 .end method
 
-.method public final w0(LPpc;)V
+.method public final v1()V
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/MainPageFragment;->v1()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 5
+    .line 6
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->T0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v0, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->s1:Lio/reactivex/rxjava3/functions/Consumer;
+
+    .line 19
+    .line 20
+    if-eqz v0, :cond_0
+
+    .line 21
+    .line 22
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 23
+    .line 24
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/functions/Consumer;->accept(Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-void
+
+    .line 28
+    :cond_0
+    const-string v0, "lensesBackgroundSignal"
+
+    .line 29
+    .line 30
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 31
+    .line 32
+    .line 33
+    const/4 v0, 0x0
+
+    .line 34
+    throw v0
+.end method
+
+.method public final w()V
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, La5e;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, La5e;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->x0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final w0(LkFc;)V
     .locals 21
 
     .line 1
@@ -5213,7 +5236,7 @@
 
     .line 4
     .line 5
-    iget-object v2, v1, LOwf;->a:Ljava/lang/String;
+    iget-object v2, v1, LXPf;->a:Ljava/lang/String;
 
     .line 6
     .line 7
@@ -5265,12 +5288,12 @@
 
     .line 30
     .line 31
-    invoke-super/range {p0 .. p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LPpc;)V
+    invoke-super/range {p0 .. p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LkFc;)V
 
     .line 32
     .line 33
     .line 34
-    sget-object v15, LXRg;->a:LWRg;
+    sget-object v15, LOdh;->a:LNdh;
 
     .line 35
     .line 36
@@ -5282,7 +5305,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v15, v3}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v15, v3}, LNdh;->e(Ljava/lang/String;)I
 
     .line 41
     .line 42
@@ -5295,7 +5318,7 @@
     .line 45
     .line 46
     :try_start_0
-    instance-of v4, v0, LyQd;
+    instance-of v4, v0, LM7e;
 
     .line 47
     .line 48
@@ -5310,22 +5333,22 @@
     move-object v4, v0
 
     .line 53
-    check-cast v4, LyQd;
+    check-cast v4, LM7e;
 
     .line 54
     .line 55
-    iput-object v4, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->j2:LyQd;
+    iput-object v4, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->k2:LM7e;
 
     .line 56
     .line 57
     move-object v4, v0
 
     .line 58
-    check-cast v4, LyQd;
+    check-cast v4, LM7e;
 
     .line 59
     .line 60
-    invoke-virtual {v1, v4}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->l2(LyQd;)V
+    invoke-virtual {v1, v4}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->l2(LM7e;)V
 
     .line 61
     .line 62
@@ -5333,11 +5356,11 @@
     move-object v4, v0
 
     .line 64
-    check-cast v4, LyQd;
+    check-cast v4, LM7e;
 
     .line 65
     .line 66
-    invoke-virtual {v4}, LyQd;->D()Lio/reactivex/rxjava3/core/Single;
+    invoke-virtual {v4}, LM7e;->F()Lio/reactivex/rxjava3/core/Single;
 
     .line 67
     .line 68
@@ -5345,7 +5368,7 @@
     move-result-object v4
 
     .line 70
-    new-instance v0, Ln0d;
+    new-instance v0, LKId;
 
     .line 71
     .line 72
@@ -5353,11 +5376,11 @@
 
     .line 73
     .line 74
-    const/16 v5, 0x1a
+    const/16 v5, 0xc
 
     .line 75
     .line 76
-    invoke-direct {v0, v5, v1}, Ln0d;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v5, v1}, LKId;-><init>(ILjava/lang/Object;)V
 
     .line 77
     .line 78
@@ -5376,15 +5399,15 @@
     .line 85
     .line 86
     .line 87
-    new-instance v0, LAXc;
+    new-instance v0, LaBd;
 
     .line 88
     .line 89
-    const/16 v4, 0x1d
+    const/16 v4, 0x13
 
     .line 90
     .line 91
-    invoke-direct {v0, v4, v1}, LAXc;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v4, v1}, LaBd;-><init>(ILjava/lang/Object;)V
 
     .line 92
     .line 93
@@ -5398,1691 +5421,1683 @@
     .line 97
     .line 98
     .line 99
-    new-instance v0, LvQd;
+    new-instance v0, Lq6d;
 
     .line 100
     .line 101
-    const/4 v5, 0x0
+    const/16 v5, 0x18
 
     .line 102
-    invoke-direct {v0, v5, v1}, LvQd;-><init>(ILjava/lang/Object;)V
-
     .line 103
+    invoke-direct {v0, v5, v1}, Lq6d;-><init>(ILjava/lang/Object;)V
+
     .line 104
     .line 105
+    .line 106
     new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
-    .line 106
     .line 107
+    .line 108
     invoke-direct {v5, v4, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 108
     .line 109
     .line 110
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
-
     .line 111
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
+
     .line 112
     .line 113
-    move-result-object v0
-
     .line 114
-    check-cast v0, LBre;
+    move-result-object v0
 
     .line 115
-    .line 116
-    invoke-virtual {v0}, LBre;->g()LF06;
+    check-cast v0, LnJe;
 
+    .line 116
     .line 117
+    invoke-virtual {v0}, LnJe;->g()LA36;
+
     .line 118
     .line 119
-    move-result-object v0
-
     .line 120
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    move-result-object v0
 
     .line 121
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
     .line 122
+    .line 123
     invoke-direct {v4, v5, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 123
     .line 124
     .line 125
-    new-instance v0, Lftd;
-
     .line 126
+    new-instance v0, LCRd;
+
     .line 127
-    const/16 v5, 0xc
-
     .line 128
-    .line 129
-    invoke-direct {v0, v5, v1}, Lftd;-><init>(ILjava/lang/Object;)V
+    const/16 v5, 0x9
 
+    .line 129
     .line 130
+    invoke-direct {v0, v5, v1}, LCRd;-><init>(ILjava/lang/Object;)V
+
     .line 131
     .line 132
+    .line 133
     new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
-    .line 133
     .line 134
+    .line 135
     invoke-direct {v5, v4, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 135
     .line 136
     .line 137
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()Lzre;
-
     .line 138
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2()LlJe;
+
     .line 139
     .line 140
-    move-result-object v0
-
     .line 141
-    check-cast v0, LBre;
+    move-result-object v0
 
     .line 142
-    .line 143
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    check-cast v0, LnJe;
 
+    .line 143
     .line 144
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
+
     .line 145
     .line 146
-    move-result-object v0
-
     .line 147
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
+    move-result-object v0
 
     .line 148
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
+
     .line 149
+    .line 150
     invoke-direct {v4, v5, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 150
     .line 151
     .line 152
-    sget-object v0, LEhd;->j:LEhd;
-
     .line 153
-    .line 154
-    new-instance v5, LuQd;
+    sget-object v0, LnYd;->d:LnYd;
 
+    .line 154
     .line 155
+    new-instance v5, LK7e;
+
     .line 156
+    .line 157
     move-object/from16 v20, v6
 
-    .line 157
     .line 158
+    .line 159
     const/4 v6, 0x2
 
-    .line 159
-    invoke-direct {v5, v1, v6}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
-
     .line 160
+    invoke-direct {v5, v1, v6}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+
     .line 161
     .line 162
+    .line 163
     invoke-virtual {v4, v0, v5}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 163
     .line 164
     .line 165
-    move-result-object v0
-
     .line 166
-    sget-object v4, LLwf;->e0:LLwf;
+    move-result-object v0
 
     .line 167
-    .line 168
-    invoke-virtual {v1, v0, v4, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    sget-object v4, LUPf;->e0:LUPf;
 
+    .line 168
     .line 169
+    invoke-virtual {v1, v0, v4, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
     .line 170
     .line 171
+    .line 172
     move-object/from16 v0, p1
 
-    .line 172
     .line 173
-    check-cast v0, LyQd;
-
     .line 174
-    .line 175
-    invoke-virtual {v0}, LyQd;->w()Lio/reactivex/rxjava3/core/Observable;
+    check-cast v0, LM7e;
 
+    .line 175
     .line 176
+    invoke-virtual {v0}, LM7e;->y()Lio/reactivex/rxjava3/core/Observable;
+
     .line 177
     .line 178
-    move-result-object v0
-
     .line 179
-    new-instance v5, LuQd;
+    move-result-object v0
 
     .line 180
+    new-instance v5, LK7e;
+
     .line 181
+    .line 182
     const/4 v6, 0x3
 
-    .line 182
-    invoke-direct {v5, v1, v6}, LuQd;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
-
     .line 183
+    invoke-direct {v5, v1, v6}, LK7e;-><init>(Lcom/snap/preview/app/bindings/PreviewFragmentImpl;I)V
+
     .line 184
     .line 185
+    .line 186
     invoke-virtual {v0, v5}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 186
     .line 187
     .line 188
-    move-result-object v0
-
     .line 189
-    invoke-virtual {v1, v0, v4, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    move-result-object v0
 
     .line 190
+    invoke-virtual {v1, v0, v4, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
     .line 191
     .line 192
+    .line 193
     move-object/from16 v0, p1
 
-    .line 193
     .line 194
-    check-cast v0, LyQd;
-
     .line 195
-    .line 196
-    invoke-virtual {v0}, LyQd;->B()LUQf;
+    check-cast v0, LM7e;
 
+    .line 196
     .line 197
+    invoke-virtual {v0}, LM7e;->D()Lyag;
+
     .line 198
     .line 199
-    move-result-object v0
-
     .line 200
-    invoke-virtual {v0}, LUQf;->f()LuVf;
+    move-result-object v0
 
     .line 201
+    invoke-virtual {v0}, Lyag;->f()Lifg;
+
     .line 202
     .line 203
-    move-result-object v0
-
     .line 204
-    if-eqz v0, :cond_1
+    move-result-object v0
 
     .line 205
-    .line 206
-    invoke-virtual {v0}, LuVf;->a()Ljava/util/Set;
+    if-eqz v0, :cond_1
 
+    .line 206
     .line 207
+    invoke-virtual {v0}, Lifg;->a()Ljava/util/Set;
+
     .line 208
     .line 209
+    .line 210
     move-result-object v0
 
-    .line 210
-    iget-object v2, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->U1:Ld25;
-
     .line 211
+    iget-object v2, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->V1:LT75;
+
     .line 212
+    .line 213
     if-eqz v2, :cond_0
 
-    .line 213
     .line 214
-    invoke-virtual {v2}, Ld25;->get()Ljava/lang/Object;
-
     .line 215
+    invoke-virtual {v2}, LT75;->get()Ljava/lang/Object;
+
     .line 216
     .line 217
-    move-result-object v2
-
     .line 218
-    check-cast v2, LsWf;
+    move-result-object v2
 
     .line 219
-    .line 220
-    invoke-virtual {v2, v0}, LsWf;->f(Ljava/util/Set;)V
+    check-cast v2, Ljgg;
 
+    .line 220
     .line 221
+    invoke-virtual {v2, v0}, Ljgg;->f(Ljava/util/Set;)V
+
     .line 222
     .line 223
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
-
     .line 224
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
+
     .line 225
     .line 226
+    .line 227
     move-result-object v2
 
-    .line 227
-    invoke-virtual {v2, v0}, LEPd;->I(Ljava/util/Set;)V
-
     .line 228
+    invoke-virtual {v2, v0}, LU6e;->J(Ljava/util/Set;)V
+
     .line 229
     .line 230
+    .line 231
     goto :goto_0
 
-    .line 231
+    .line 232
     :cond_0
     const-string v0, "spotlightTopicManagerProvider"
 
-    .line 232
     .line 233
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 234
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 235
     .line 236
+    .line 237
     throw v18
 
-    .line 237
+    .line 238
     :catchall_0
     move-exception v0
 
-    .line 238
-    goto/16 :goto_5
-
     .line 239
+    goto/16 :goto_6
+
     .line 240
+    .line 241
     :cond_1
     :goto_0
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
 
-    .line 241
     .line 242
     .line 243
-    move-result-object v0
-
     .line 244
-    move-object/from16 v2, p1
+    move-result-object v0
 
     .line 245
+    move-object/from16 v2, p1
+
     .line 246
-    check-cast v2, LyQd;
-
     .line 247
-    .line 248
-    invoke-virtual {v2}, LyQd;->B()LUQf;
+    check-cast v2, LM7e;
 
+    .line 248
     .line 249
+    invoke-virtual {v2}, LM7e;->D()Lyag;
+
     .line 250
     .line 251
-    move-result-object v2
-
     .line 252
-    invoke-virtual {v2}, LUQf;->e()Ljava/util/List;
+    move-result-object v2
 
     .line 253
+    invoke-virtual {v2}, Lyag;->e()Ljava/util/List;
+
     .line 254
     .line 255
-    move-result-object v2
-
     .line 256
-    invoke-virtual {v0, v2}, LEPd;->J(Ljava/util/List;)V
+    move-result-object v2
 
     .line 257
+    invoke-virtual {v0, v2}, LU6e;->K(Ljava/util/List;)V
+
     .line 258
     .line 259
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
-
     .line 260
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
+
     .line 261
     .line 262
-    move-result-object v0
-
     .line 263
-    move-object/from16 v2, p1
+    move-result-object v0
 
     .line 264
+    move-object/from16 v2, p1
+
     .line 265
-    check-cast v2, LyQd;
-
     .line 266
-    .line 267
-    invoke-virtual {v2}, LyQd;->o()Ljava/lang/String;
+    check-cast v2, LM7e;
 
+    .line 267
     .line 268
+    invoke-virtual {v2}, LM7e;->q()Ljava/lang/String;
+
     .line 269
     .line 270
-    move-result-object v2
-
     .line 271
-    invoke-virtual {v0, v2}, LEPd;->x(Ljava/lang/String;)V
+    move-result-object v2
 
     .line 272
+    invoke-virtual {v0, v2}, LU6e;->y(Ljava/lang/String;)V
+
     .line 273
     .line 274
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LEPd;
-
     .line 275
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b2()LU6e;
+
     .line 276
     .line 277
-    move-result-object v0
-
     .line 278
-    move-object/from16 v2, p1
+    move-result-object v0
 
     .line 279
+    move-object/from16 v2, p1
+
     .line 280
-    check-cast v2, LyQd;
-
     .line 281
-    .line 282
-    invoke-virtual {v2}, LyQd;->C()LhBg;
+    check-cast v2, LM7e;
 
+    .line 282
     .line 283
+    invoke-virtual {v2}, LM7e;->E()LtWg;
+
     .line 284
     .line 285
-    move-result-object v2
-
     .line 286
-    invoke-virtual {v0, v2}, LEPd;->K(LhBg;)V
+    move-result-object v2
 
     .line 287
+    invoke-virtual {v0, v2}, LU6e;->L(LtWg;)V
+
     .line 288
     .line 289
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->p1:LgBg;
-
     .line 290
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->p1:LsWg;
+
     .line 291
+    .line 292
     if-eqz v0, :cond_3
 
-    .line 292
     .line 293
+    .line 294
     move-object/from16 v2, p1
 
-    .line 294
     .line 295
-    check-cast v2, LyQd;
-
     .line 296
-    .line 297
-    invoke-virtual {v2}, LyQd;->A()LmPf;
+    check-cast v2, LM7e;
 
+    .line 297
     .line 298
+    invoke-virtual {v2}, LM7e;->C()LJ8g;
+
     .line 299
     .line 300
-    move-result-object v2
-
     .line 301
-    iget-object v2, v2, LmPf;->a:Lq0h;
+    move-result-object v2
 
     .line 302
+    iget-object v2, v2, LJ8g;->a:Lkmh;
+
     .line 303
+    .line 304
     move-object/from16 v4, p1
 
-    .line 304
     .line 305
-    check-cast v4, LyQd;
-
     .line 306
-    .line 307
-    invoke-virtual {v4}, LyQd;->A()LmPf;
+    check-cast v4, LM7e;
 
+    .line 307
     .line 308
+    invoke-virtual {v4}, LM7e;->C()LJ8g;
+
     .line 309
     .line 310
+    .line 311
     move-result-object v4
 
-    .line 311
-    iget-object v4, v4, LmPf;->b:LSPg;
-
     .line 312
-    .line 313
-    iget-object v0, v0, LgBg;->d:LfBg;
+    iget-object v4, v4, LJ8g;->b:LXbh;
 
+    .line 313
     .line 314
+    iget-object v0, v0, LsWg;->d:LrWg;
+
     .line 315
+    .line 316
     if-eqz v0, :cond_2
 
-    .line 316
     .line 317
-    invoke-virtual {v0, v2}, LfBg;->m(Lq0h;)V
-
     .line 318
+    invoke-virtual {v0, v2}, LrWg;->n(Lkmh;)V
+
     .line 319
     .line 320
-    invoke-virtual {v0, v4}, LfBg;->l(LSPg;)V
-
     .line 321
+    invoke-virtual {v0, v4}, LrWg;->m(LXbh;)V
+
     .line 322
     .line 323
-    :cond_2
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()LD25;
-
     .line 324
+    :cond_2
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()Lx85;
+
     .line 325
     .line 326
-    move-result-object v0
-
     .line 327
-    invoke-virtual {v0}, LD25;->g()LwK;
+    move-result-object v0
 
     .line 328
+    invoke-virtual {v0}, Lx85;->f()LtM;
+
     .line 329
     .line 330
+    .line 331
     move-result-object v0
 
-    .line 331
+    .line 332
     move-object/from16 v2, p1
 
-    .line 332
     .line 333
-    check-cast v2, LyQd;
-
     .line 334
-    .line 335
-    invoke-virtual {v2}, LyQd;->y()Ljava/lang/String;
+    check-cast v2, LM7e;
 
+    .line 335
     .line 336
+    invoke-virtual {v2}, LM7e;->A()Ljava/lang/String;
+
     .line 337
     .line 338
+    .line 339
     move-result-object v2
 
-    .line 339
-    invoke-virtual {v0, v2}, LwK;->o(Ljava/lang/String;)V
-
     .line 340
+    invoke-virtual {v0, v2}, LtM;->o(Ljava/lang/String;)V
+
     .line 341
     .line 342
+    .line 343
     goto :goto_1
 
-    .line 343
+    .line 344
     :cond_3
     const-string v0, "creationLossTracker"
 
-    .line 344
     .line 345
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 346
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 347
     .line 348
+    .line 349
     throw v18
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 349
+    .line 350
     :cond_4
     move-object/from16 v19, v5
 
-    .line 350
     .line 351
+    .line 352
     move-object/from16 v20, v6
 
-    .line 352
     .line 353
-    :goto_1
-    invoke-virtual {v15, v3}, LWRg;->h(I)V
-
     .line 354
+    :goto_1
+    invoke-virtual {v15, v3}, LNdh;->h(I)V
+
     .line 355
     .line 356
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1:Ljava/util/concurrent/atomic/AtomicReference;
-
     .line 357
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->a2:Ljava/util/concurrent/atomic/AtomicReference;
+
     .line 358
+    .line 359
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
-    .line 359
     .line 360
     .line 361
+    .line 362
     move-result-object v2
 
-    .line 362
-    check-cast v2, LfWd;
-
     .line 363
+    check-cast v2, LEde;
+
     .line 364
+    .line 365
     if-eqz v2, :cond_5
 
-    .line 365
     .line 366
-    invoke-virtual {v2}, LfWd;->a()V
-
     .line 367
+    invoke-virtual {v2}, LEde;->a()V
+
     .line 368
     .line 369
+    .line 370
     :cond_5
     const-string v2, "activationComponent"
 
-    .line 370
     .line 371
-    invoke-virtual {v15, v2}, LWRg;->e(Ljava/lang/String;)I
-
     .line 372
+    invoke-virtual {v15, v2}, LNdh;->e(Ljava/lang/String;)I
+
     .line 373
     .line 374
+    .line 375
     move-result v2
 
-    .line 375
-    :try_start_1
-    iget-object v3, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->j1:LDK4;
-
     .line 376
-    .line 377
-    if-eqz v3, :cond_11
+    :try_start_1
+    iget-object v3, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->j1:LLN4;
 
+    .line 377
     .line 378
+    if-eqz v3, :cond_14
+
     .line 379
+    .line 380
     invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->e2()Landroid/view/ViewGroup;
 
-    .line 380
     .line 381
     .line 382
-    move-result-object v4
-
     .line 383
-    invoke-virtual {v3, v4}, LDK4;->O(Landroid/view/ViewGroup;)V
+    move-result-object v4
 
     .line 384
+    invoke-virtual {v3, v4}, LLN4;->S(Landroid/view/ViewGroup;)V
+
     .line 385
     .line 386
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()LD25;
-
     .line 387
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1()Lx85;
+
     .line 388
     .line 389
+    .line 390
     move-result-object v4
 
-    .line 390
-    invoke-virtual {v3, v4}, LDK4;->i(LD25;)V
-
     .line 391
+    invoke-virtual {v3, v4}, LLN4;->m(Lx85;)V
+
     .line 392
     .line 393
-    iget-object v4, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h2:LE34;
+    .line 394
+    iget-object v4, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->i2:Lo84;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 394
     .line 395
+    .line 396
     const-string v5, "viewFinder"
 
-    .line 396
     .line 397
-    if-eqz v4, :cond_10
-
     .line 398
-    .line 399
-    :try_start_2
-    invoke-virtual {v3, v4}, LDK4;->e0(LE34;)V
+    if-eqz v4, :cond_13
 
+    .line 399
     .line 400
+    :try_start_2
+    invoke-virtual {v3, v4}, LLN4;->k0(Lo84;)V
+
     .line 401
     .line 402
+    .line 403
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
-    .line 403
     .line 404
     .line 405
-    move-result-object v0
-
     .line 406
-    check-cast v0, LfWd;
+    move-result-object v0
 
     .line 407
+    check-cast v0, LEde;
+
     .line 408
+    .line 409
     if-nez v0, :cond_7
 
-    .line 409
     .line 410
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Q1:Ld25;
-
     .line 411
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->R1:LT75;
+
     .line 412
+    .line 413
     if-eqz v0, :cond_6
 
-    .line 413
     .line 414
-    invoke-virtual {v0}, Ld25;->get()Ljava/lang/Object;
-
     .line 415
+    invoke-virtual {v0}, LT75;->get()Ljava/lang/Object;
+
     .line 416
     .line 417
+    .line 418
     move-result-object v0
 
-    .line 418
-    check-cast v0, LfWd;
-
     .line 419
+    check-cast v0, LEde;
+
     .line 420
+    .line 421
     goto :goto_2
 
-    .line 421
+    .line 422
     :catchall_1
     move-exception v0
 
-    .line 422
-    goto/16 :goto_4
-
     .line 423
+    goto/16 :goto_5
+
     .line 424
+    .line 425
     :cond_6
     const-string v0, "previewToolInflatorProvider"
 
-    .line 425
     .line 426
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 427
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 428
     .line 429
+    .line 430
     throw v18
 
-    .line 430
+    .line 431
     :cond_7
     :goto_2
-    invoke-virtual {v3, v0}, LDK4;->D(LfWd;)V
+    invoke-virtual {v3, v0}, LLN4;->H(LEde;)V
 
-    .line 431
     .line 432
     .line 433
+    .line 434
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->B0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 434
     .line 435
+    .line 436
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 436
     .line 437
     .line 438
+    .line 439
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 439
     .line 440
+    .line 441
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 441
     .line 442
     .line 443
-    invoke-virtual {v3, v4}, LDK4;->w(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 444
+    invoke-virtual {v3, v4}, LLN4;->A(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 445
     .line 446
+    .line 447
     move-object/from16 p1, v5
 
-    .line 447
     .line 448
-    iget-wide v4, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n2:J
-
     .line 449
-    .line 450
-    invoke-virtual {v3, v4, v5}, LDK4;->G(J)V
+    iget-wide v4, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->o2:J
 
+    .line 450
     .line 451
+    invoke-virtual {v3, v4, v5}, LLN4;->K(J)V
+
     .line 452
     .line 453
+    .line 454
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->A0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 454
     .line 455
+    .line 456
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 456
     .line 457
     .line 458
+    .line 459
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 459
     .line 460
+    .line 461
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 461
     .line 462
     .line 463
-    invoke-virtual {v3, v4}, LDK4;->d0(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 464
+    invoke-virtual {v3, v4}, LLN4;->i0(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 465
     .line 466
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()LhFh;
-
     .line 467
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2()Ly3i;
+
     .line 468
     .line 469
-    move-result-object v0
-
     .line 470
-    invoke-virtual {v0}, LhFh;->e()Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    move-result-object v0
 
     .line 471
+    invoke-virtual {v0}, Ly3i;->e()Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
     .line 472
     .line 473
-    move-result-object v0
-
     .line 474
-    sget-object v4, Lsja;->x0:Lsja;
+    move-result-object v0
 
     .line 475
+    sget-object v4, LRFd;->X:LRFd;
+
     .line 476
+    .line 477
     new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
-    .line 477
     .line 478
+    .line 479
     invoke-direct {v5, v0, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 479
     .line 480
     .line 481
-    invoke-virtual {v3, v5}, LDK4;->S(Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;)V
-
     .line 482
+    invoke-virtual {v3, v5}, LLN4;->W(Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;)V
+
     .line 483
     .line 484
-    invoke-virtual {v3, v14}, LDK4;->N(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 485
+    invoke-virtual {v3, v14}, LLN4;->R(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 486
     .line 487
+    .line 488
     invoke-virtual {v14}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 488
     .line 489
     .line 490
+    .line 491
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 491
     .line 492
+    .line 493
     invoke-direct {v0, v14}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 493
     .line 494
     .line 495
-    invoke-virtual {v3, v0}, LDK4;->M(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 496
+    invoke-virtual {v3, v0}, LLN4;->Q(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 497
     .line 498
+    .line 499
     invoke-virtual {v13}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 499
     .line 500
     .line 501
+    .line 502
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 502
     .line 503
+    .line 504
     invoke-direct {v0, v13}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 504
     .line 505
     .line 506
-    invoke-virtual {v3, v0}, LDK4;->X(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 507
+    invoke-virtual {v3, v0}, LLN4;->c0(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 508
     .line 509
-    invoke-virtual {v3, v13}, LDK4;->Y(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 510
+    invoke-virtual {v3, v13}, LLN4;->d0(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 511
     .line 512
-    invoke-virtual {v3, v12}, LDK4;->a0(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 513
+    invoke-virtual {v3, v12}, LLN4;->f0(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 514
     .line 515
-    invoke-virtual {v3, v12}, LDK4;->Z(Lio/reactivex/rxjava3/core/Observable;)V
-
     .line 516
+    invoke-virtual {v3, v12}, LLN4;->e0(Lio/reactivex/rxjava3/core/Observable;)V
+
     .line 517
     .line 518
+    .line 519
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->T0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 519
     .line 520
+    .line 521
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 521
     .line 522
     .line 523
+    .line 524
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 524
     .line 525
+    .line 526
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 526
     .line 527
     .line 528
-    invoke-virtual {v3, v4}, LDK4;->d(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 529
+    invoke-virtual {v3, v4}, LLN4;->d(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 530
     .line 531
+    .line 532
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 532
     .line 533
+    .line 534
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 534
     .line 535
     .line 536
+    .line 537
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 537
     .line 538
+    .line 539
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 539
     .line 540
     .line 541
-    invoke-virtual {v3, v4}, LDK4;->E(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 542
+    invoke-virtual {v3, v4}, LLN4;->I(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 543
     .line 544
+    .line 545
     invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 545
     .line 546
     .line 547
+    .line 548
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 548
     .line 549
+    .line 550
     invoke-direct {v0, v11}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 550
     .line 551
     .line 552
-    invoke-virtual {v3, v0}, LDK4;->b(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 553
+    invoke-virtual {v3, v0}, LLN4;->b(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 554
     .line 555
-    invoke-virtual {v3, v11}, LDK4;->c(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 556
+    invoke-virtual {v3, v11}, LLN4;->c(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 557
     .line 558
+    .line 559
     invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 559
     .line 560
     .line 561
+    .line 562
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 562
     .line 563
+    .line 564
     invoke-direct {v0, v10}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 564
     .line 565
     .line 566
-    invoke-virtual {v3, v0}, LDK4;->z(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 567
+    invoke-virtual {v3, v0}, LLN4;->D(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 568
     .line 569
-    invoke-virtual {v3, v10}, LDK4;->A(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 570
+    invoke-virtual {v3, v10}, LLN4;->E(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 571
     .line 572
+    .line 573
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->O0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 573
     .line 574
-    invoke-virtual {v3, v0}, LDK4;->m(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 575
+    invoke-virtual {v3, v0}, LLN4;->q(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 576
     .line 577
+    .line 578
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->V0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 578
     .line 579
+    .line 580
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 580
     .line 581
     .line 582
+    .line 583
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 583
     .line 584
+    .line 585
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 585
     .line 586
     .line 587
-    invoke-virtual {v3, v4}, LDK4;->l(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 588
+    invoke-virtual {v3, v4}, LLN4;->p(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 589
     .line 590
+    .line 591
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->U0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 591
     .line 592
+    .line 593
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 593
     .line 594
     .line 595
+    .line 596
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 596
     .line 597
+    .line 598
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 598
     .line 599
     .line 600
-    invoke-virtual {v3, v4}, LDK4;->k(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 601
+    invoke-virtual {v3, v4}, LLN4;->o(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 602
     .line 603
+    .line 604
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->G0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 604
     .line 605
-    invoke-virtual {v3, v0}, LDK4;->j(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 606
+    invoke-virtual {v3, v0}, LLN4;->n(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 607
     .line 608
+    .line 609
     invoke-virtual {v9}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 609
     .line 610
     .line 611
+    .line 612
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 612
     .line 613
+    .line 614
     invoke-direct {v0, v9}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 614
     .line 615
     .line 616
-    invoke-virtual {v3, v0}, LDK4;->T(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 617
+    invoke-virtual {v3, v0}, LLN4;->Y(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 618
     .line 619
-    invoke-virtual {v3, v9}, LDK4;->U(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 620
+    invoke-virtual {v3, v9}, LLN4;->Z(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 621
     .line 622
+    .line 623
     invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 623
     .line 624
     .line 625
+    .line 626
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 626
     .line 627
+    .line 628
     invoke-direct {v0, v8}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 628
     .line 629
     .line 630
-    invoke-virtual {v3, v0}, LDK4;->p(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 631
+    invoke-virtual {v3, v0}, LLN4;->t(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 632
     .line 633
-    invoke-virtual {v3, v8}, LDK4;->q(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 634
+    invoke-virtual {v3, v8}, LLN4;->u(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 635
     .line 636
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->N1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 637
-    .line 638
-    if-eqz v0, :cond_f
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->O1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 638
     .line 639
+    if-eqz v0, :cond_12
+
     .line 640
+    .line 641
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 641
     .line 642
+    .line 643
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 643
     .line 644
     .line 645
-    invoke-virtual {v3, v4}, LDK4;->I(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 646
+    invoke-virtual {v3, v4}, LLN4;->M(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 647
     .line 648
+    .line 649
     invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 649
     .line 650
     .line 651
+    .line 652
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 652
     .line 653
+    .line 654
     invoke-direct {v0, v7}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 654
     .line 655
     .line 656
-    invoke-virtual {v3, v0}, LDK4;->n(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 657
+    invoke-virtual {v3, v0}, LLN4;->r(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 658
     .line 659
-    invoke-virtual {v3, v7}, LDK4;->o(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 660
+    invoke-virtual {v3, v7}, LLN4;->s(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 661
     .line 662
+    .line 663
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 663
     .line 664
+    .line 665
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 665
     .line 666
     .line 667
+    .line 668
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 668
     .line 669
+    .line 670
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 670
     .line 671
     .line 672
-    invoke-virtual {v3, v4}, LDK4;->R(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 673
+    invoke-virtual {v3, v4}, LLN4;->V(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 674
     .line 675
+    .line 676
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->P0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 676
     .line 677
-    invoke-virtual {v3, v0}, LDK4;->b0(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 678
+    invoke-virtual {v3, v0}, LLN4;->g0(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 679
     .line 680
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f2:LPUd;
-
     .line 681
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g2:Lhce;
+
     .line 682
-    if-eqz v0, :cond_e
-
     .line 683
-    .line 684
-    invoke-virtual {v3, v0}, LDK4;->J(LPUd;)V
+    if-eqz v0, :cond_11
 
+    .line 684
     .line 685
+    invoke-virtual {v3, v0}, LLN4;->N(Lhce;)V
+
     .line 686
     .line 687
+    .line 688
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->H0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 688
     .line 689
+    .line 690
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 690
     .line 691
     .line 692
+    .line 693
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 693
     .line 694
+    .line 695
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 695
     .line 696
     .line 697
-    invoke-virtual {v3, v4}, LDK4;->s(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 698
+    invoke-virtual {v3, v4}, LLN4;->w(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 699
     .line 700
+    .line 701
     invoke-virtual/range {v20 .. v20}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 701
     .line 702
     .line 703
+    .line 704
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnBackpressureDrop;
 
-    .line 704
     .line 705
+    .line 706
     move-object/from16 v4, v20
 
-    .line 706
     .line 707
+    .line 708
     invoke-direct {v0, v4}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnBackpressureDrop;-><init>(Lio/reactivex/rxjava3/core/Flowable;)V
 
-    .line 708
     .line 709
     .line 710
-    invoke-virtual {v3, v0}, LDK4;->P(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnBackpressureDrop;)V
-
     .line 711
+    invoke-virtual {v3, v0}, LLN4;->T(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnBackpressureDrop;)V
+
     .line 712
     .line 713
-    invoke-virtual {v3, v4}, LDK4;->Q(LV6i;)V
-
     .line 714
+    invoke-virtual {v3, v4}, LLN4;->U(Lmvi;)V
+
     .line 715
     .line 716
+    .line 717
     invoke-virtual/range {v19 .. v19}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 717
     .line 718
     .line 719
+    .line 720
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 720
     .line 721
+    .line 722
     move-object/from16 v4, v19
 
-    .line 722
     .line 723
+    .line 724
     invoke-direct {v0, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 724
     .line 725
     .line 726
-    invoke-virtual {v3, v0}, LDK4;->u(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 727
+    invoke-virtual {v3, v0}, LLN4;->y(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 728
     .line 729
-    invoke-virtual {v3, v4}, LDK4;->v(Lio/reactivex/rxjava3/core/Observer;)V
-
     .line 730
+    invoke-virtual {v3, v4}, LLN4;->z(Lio/reactivex/rxjava3/core/Observer;)V
+
     .line 731
     .line 732
+    .line 733
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 733
     .line 734
-    invoke-virtual {v3, v0}, LDK4;->t(Lio/reactivex/rxjava3/subjects/Subject;)V
-
     .line 735
+    invoke-virtual {v3, v0}, LLN4;->x(Lio/reactivex/rxjava3/subjects/Subject;)V
+
     .line 736
     .line 737
+    .line 738
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->a1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 738
     .line 739
-    invoke-virtual {v3, v0}, LDK4;->V(Lio/reactivex/rxjava3/subjects/Subject;)V
-
     .line 740
+    invoke-virtual {v3, v0}, LLN4;->a0(Lio/reactivex/rxjava3/subjects/Subject;)V
+
     .line 741
     .line 742
+    .line 743
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->b1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 743
     .line 744
-    invoke-virtual {v3, v0}, LDK4;->h(Lio/reactivex/rxjava3/subjects/Subject;)V
-
     .line 745
+    invoke-virtual {v3, v0}, LLN4;->l(Lio/reactivex/rxjava3/subjects/Subject;)V
+
     .line 746
     .line 747
+    .line 748
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 748
     .line 749
-    invoke-virtual {v3, v0}, LDK4;->c0(Lio/reactivex/rxjava3/subjects/Subject;)V
-
     .line 750
+    invoke-virtual {v3, v0}, LLN4;->h0(Lio/reactivex/rxjava3/subjects/Subject;)V
+
     .line 751
     .line 752
+    .line 753
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->D0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 753
     .line 754
+    .line 755
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 755
     .line 756
     .line 757
+    .line 758
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 758
     .line 759
+    .line 760
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 760
     .line 761
     .line 762
-    invoke-virtual {v3, v4}, LDK4;->r(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 763
+    invoke-virtual {v3, v4}, LLN4;->v(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 764
     .line 765
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y0:LXfi;
-
     .line 766
-    .line 767
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Y0:LREi;
 
+    .line 767
     .line 768
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
     .line 769
     .line 770
-    move-result-object v0
-
     .line 771
-    check-cast v0, LJQd;
+    move-result-object v0
 
     .line 772
-    .line 773
-    invoke-virtual {v3, v0}, LDK4;->C(LJQd;)V
+    check-cast v0, LU7e;
 
+    .line 773
     .line 774
+    invoke-virtual {v3, v0}, LLN4;->G(LU7e;)V
+
     .line 775
     .line 776
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n1:LsPd;
-
     .line 777
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->n1:LH6e;
+
     .line 778
-    if-eqz v0, :cond_d
-
     .line 779
-    .line 780
-    invoke-virtual {v0}, LsPd;->a()LbU7;
+    if-eqz v0, :cond_10
 
+    .line 780
     .line 781
+    invoke-virtual {v0}, LH6e;->a()LxVb;
+
     .line 782
     .line 783
-    move-result-object v0
-
     .line 784
-    invoke-virtual {v3, v0}, LDK4;->x(LbU7;)V
+    move-result-object v0
 
     .line 785
+    invoke-virtual {v3, v0}, LLN4;->B(LxVb;)V
+
     .line 786
     .line 787
+    .line 788
     invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->a2()Landroidx/constraintlayout/widget/ConstraintLayout;
 
-    .line 788
     .line 789
     .line 790
-    move-result-object v0
-
     .line 791
-    invoke-virtual {v3, v0}, LDK4;->F(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    move-result-object v0
 
     .line 792
+    invoke-virtual {v3, v0}, LLN4;->J(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+
     .line 793
     .line 794
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->K1:LnQd;
-
     .line 795
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->L1:LE7e;
+
     .line 796
-    if-eqz v0, :cond_c
-
     .line 797
-    .line 798
-    invoke-virtual {v3, v0}, LDK4;->e(LnQd;)V
+    if-eqz v0, :cond_f
 
+    .line 798
     .line 799
+    invoke-virtual {v3, v0}, LLN4;->e(LE7e;)V
+
     .line 800
     .line 801
+    .line 802
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->f1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 802
     .line 803
-    invoke-virtual {v3, v0}, LDK4;->y(Lio/reactivex/rxjava3/subjects/PublishSubject;)V
-
     .line 804
+    invoke-virtual {v3, v0}, LLN4;->C(Lio/reactivex/rxjava3/subjects/PublishSubject;)V
+
     .line 805
     .line 806
+    .line 807
     move-object/from16 v0, v17
 
-    .line 807
     .line 808
-    invoke-virtual {v3, v0}, LDK4;->L(Lio/reactivex/rxjava3/subjects/Subject;)V
-
     .line 809
+    invoke-virtual {v3, v0}, LLN4;->P(Lio/reactivex/rxjava3/subjects/Subject;)V
+
     .line 810
     .line 811
+    .line 812
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 812
     .line 813
     .line 814
+    .line 815
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 815
     .line 816
+    .line 817
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 817
     .line 818
     .line 819
-    invoke-virtual {v3, v4}, LDK4;->K(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 820
+    invoke-virtual {v3, v4}, LLN4;->O(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 821
     .line 822
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->W1:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 823
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->X1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 824
+    .line 825
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 825
     .line 826
     .line 827
+    .line 828
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-    .line 828
     .line 829
+    .line 830
     invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
-    .line 830
     .line 831
     .line 832
-    invoke-virtual {v3, v4}, LDK4;->H(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 833
+    invoke-virtual {v3, v4}, LLN4;->L(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 834
     .line 835
+    .line 836
     iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->S0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 836
     .line 837
-    invoke-virtual {v3, v0}, LDK4;->W(Lio/reactivex/rxjava3/subjects/BehaviorSubject;)V
-
     .line 838
+    invoke-virtual {v3, v0}, LLN4;->b0(Lio/reactivex/rxjava3/subjects/BehaviorSubject;)V
+
     .line 839
     .line 840
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->d2:LXfi;
-
     .line 841
-    .line 842
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->e2:LREi;
 
+    .line 842
     .line 843
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
     .line 844
     .line 845
-    move-result-object v0
-
     .line 846
-    check-cast v0, Lio/reactivex/rxjava3/core/Observable;
+    move-result-object v0
 
     .line 847
-    .line 848
-    invoke-virtual {v3, v0}, LDK4;->g(Lio/reactivex/rxjava3/core/Observable;)V
+    check-cast v0, Lio/reactivex/rxjava3/core/Observable;
 
+    .line 848
     .line 849
+    invoke-virtual {v3, v0}, LLN4;->g(Lio/reactivex/rxjava3/core/Observable;)V
+
     .line 850
     .line 851
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->j2:LyQd;
-
     .line 852
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->k2:LM7e;
+
     .line 853
-    if-eqz v0, :cond_b
-
     .line 854
-    .line 855
-    invoke-virtual {v3, v0}, LDK4;->B(LyQd;)V
+    if-eqz v0, :cond_e
 
+    .line 855
     .line 856
+    invoke-virtual {v3, v0}, LLN4;->F(LM7e;)V
+
     .line 857
     .line 858
-    invoke-virtual {v3}, LDK4;->f()LB25;
-
     .line 859
+    invoke-virtual {v3}, LLN4;->f()Lv85;
+
     .line 860
     .line 861
-    move-result-object v0
-
     .line 862
-    invoke-virtual {v0}, LB25;->e()LLM1;
+    move-result-object v0
 
     .line 863
+    invoke-virtual {v0}, Lv85;->f()LmQ1;
+
     .line 864
     .line 865
-    move-result-object v0
-
     .line 866
-    invoke-virtual {v0}, LLM1;->start()Lio/reactivex/rxjava3/disposables/Disposable;
+    move-result-object v0
 
     .line 867
+    invoke-virtual {v0}, LmQ1;->start()Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 868
     .line 869
+    .line 870
     move-result-object v0
 
-    .line 870
+    .line 871
     move-object/from16 v3, v16
 
-    .line 871
     .line 872
-    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    .line 873
+    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 873
     .line 874
     .line 875
-    invoke-virtual {v15, v2}, LWRg;->h(I)V
-
     .line 876
+    invoke-virtual {v15, v2}, LNdh;->h(I)V
+
     .line 877
     .line 878
-    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->h2:LE34;
-
     .line 879
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->i2:Lo84;
+
     .line 880
-    if-eqz v0, :cond_a
-
     .line 881
-    .line 882
-    const v2, 0x7f0b0bc9
+    if-eqz v0, :cond_d
 
+    .line 882
     .line 883
+    const v2, 0x7f0b0ce0
+
     .line 884
     .line 885
-    invoke-virtual {v0, v2}, LE34;->f(I)Landroid/view/View;
-
     .line 886
+    invoke-virtual {v0, v2}, Lo84;->f(I)Landroid/view/View;
+
     .line 887
     .line 888
+    .line 889
     move-result-object v0
 
-    .line 889
+    .line 890
     check-cast v0, Landroid/view/ViewStub;
 
-    .line 890
     .line 891
+    .line 892
     if-eqz v0, :cond_9
 
-    .line 892
     .line 893
-    iget-object v2, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->t1:Lio/reactivex/rxjava3/subjects/Subject;
-
     .line 894
+    iget-object v2, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->v1:Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 895
+    .line 896
     if-eqz v2, :cond_8
 
-    .line 896
     .line 897
-    new-instance v4, LcNd;
-
     .line 898
-    .line 899
-    invoke-direct {v4, v0}, LcNd;-><init>(Ljava/lang/Object;)V
+    new-instance v4, Lr4e;
 
+    .line 899
     .line 900
+    invoke-direct {v4, v0}, Lr4e;-><init>(Ljava/lang/Object;)V
+
     .line 901
     .line 902
+    .line 903
     invoke-interface {v2, v4}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
-    .line 903
     .line 904
     .line 905
+    .line 906
     goto :goto_3
 
-    .line 906
+    .line 907
     :cond_8
     const-string v0, "lensesViewStubSubject"
 
-    .line 907
     .line 908
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 909
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 910
     .line 911
+    .line 912
     throw v18
 
-    .line 912
+    .line 913
     :cond_9
     :goto_3
-    new-instance v0, LJ8;
+    iget-object v0, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->i2:Lo84;
 
-    .line 913
     .line 914
-    const/16 v2, 0xd
-
     .line 915
-    .line 916
-    invoke-direct {v0, v2, v1}, LJ8;-><init>(ILjava/lang/Object;)V
+    if-eqz v0, :cond_c
 
+    .line 916
     .line 917
+    const v2, 0x7f0b0d22
+
     .line 918
     .line 919
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1()LTqc;
-
     .line 920
+    invoke-virtual {v0, v2}, Lo84;->f(I)Landroid/view/View;
+
     .line 921
     .line 922
-    move-result-object v2
-
     .line 923
-    invoke-virtual {v2, v0}, LTqc;->d(Lxrc;)V
+    move-result-object v0
 
     .line 924
+    check-cast v0, Landroid/view/ViewStub;
+
     .line 925
     .line 926
-    new-instance v2, LwQd;
+    if-eqz v0, :cond_b
 
     .line 927
     .line 928
-    const/4 v4, 0x0
+    iget-object v2, v1, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->u1:Lio/reactivex/rxjava3/subjects/Subject;
 
     .line 929
-    invoke-direct {v2, v1, v4, v0}, LwQd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 930
+    if-eqz v2, :cond_a
+
     .line 931
     .line 932
-    invoke-static {v2}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
+    new-instance v4, Lr4e;
 
     .line 933
     .line 934
+    invoke-direct {v4, v0}, Lr4e;-><init>(Ljava/lang/Object;)V
+
     .line 935
-    move-result-object v0
-
     .line 936
-    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 937
+    invoke-interface {v2, v4}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
     .line 938
     .line 939
-    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()LMRd;
-
     .line 940
-    .line 941
-    .line 942
-    move-result-object v0
+    goto :goto_4
 
+    .line 941
+    :cond_a
+    const-string v0, "lensesTouchViewStubSubject"
+
+    .line 942
     .line 943
-    invoke-virtual {v0}, LMRd;->g()V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 944
     .line 945
     .line 946
-    return-void
+    throw v18
 
     .line 947
-    :cond_a
-    invoke-static/range {p1 .. p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_b
+    :goto_4
+    new-instance v0, Lr9;
 
     .line 948
     .line 949
-    .line 950
-    throw v18
+    const/16 v2, 0xb
 
+    .line 950
     .line 951
-    :cond_b
-    :try_start_3
-    const-string v0, "payload"
+    invoke-direct {v0, v2, v1}, Lr9;-><init>(ILjava/lang/Object;)V
 
     .line 952
     .line 953
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 954
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->Z1()LmGc;
+
     .line 955
     .line 956
-    throw v18
-
     .line 957
-    :cond_c
-    const-string v0, "previewFooterManager"
+    move-result-object v2
 
     .line 958
-    .line 959
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v2, v0}, LmGc;->d(LQGc;)V
 
+    .line 959
     .line 960
     .line 961
-    .line 962
-    throw v18
+    new-instance v2, LiWd;
 
+    .line 962
     .line 963
-    :cond_d
-    const-string v0, "configPreloader"
+    const/16 v4, 0x8
 
     .line 964
     .line 965
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-direct {v2, v1, v4, v0}, LiWd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 966
     .line 967
     .line 968
-    throw v18
+    invoke-static {v2}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 969
-    :cond_e
-    const-string v0, "previewStartUpConfig"
-
     .line 970
     .line 971
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    move-result-object v0
 
     .line 972
+    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 973
     .line 974
-    throw v18
-
     .line 975
-    :cond_f
-    const-string v0, "previewSaveStateEventSubject"
+    invoke-virtual {v1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->c2()Lc9e;
 
     .line 976
     .line 977
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 978
+    move-result-object v0
+
     .line 979
+    invoke-virtual {v0}, Lc9e;->g()V
+
     .line 980
-    throw v18
-
     .line 981
-    :cond_10
-    move-object/from16 p1, v5
-
     .line 982
+    return-void
+
     .line 983
-    invoke-static/range {p1 .. p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_c
+    invoke-static/range {p1 .. p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 984
     .line 985
@@ -7090,149 +7105,269 @@
     throw v18
 
     .line 987
-    :cond_11
-    const-string v0, "activationComponentBuilder"
+    :cond_d
+    invoke-static/range {p1 .. p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 988
     .line 989
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 990
-    .line 991
-    .line 992
     throw v18
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
+    .line 991
+    :cond_e
+    :try_start_3
+    const-string v0, "payload"
+
+    .line 992
     .line 993
-    :goto_4
-    sget-object v3, LXRg;->b:Lzhi;
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 994
     .line 995
-    if-eqz v3, :cond_12
-
     .line 996
+    throw v18
+
     .line 997
-    invoke-virtual {v3, v2}, Lzhi;->o(I)V
+    :cond_f
+    const-string v0, "previewFooterManager"
 
     .line 998
     .line 999
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 1000
-    :cond_12
-    throw v0
-
     .line 1001
-    :goto_5
-    sget-object v2, LXRg;->b:Lzhi;
-
     .line 1002
+    throw v18
+
     .line 1003
-    if-eqz v2, :cond_13
+    :cond_10
+    const-string v0, "configPreloader"
 
     .line 1004
     .line 1005
-    invoke-virtual {v2, v3}, Lzhi;->o(I)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 1006
     .line 1007
     .line 1008
+    throw v18
+
+    .line 1009
+    :cond_11
+    const-string v0, "previewStartUpConfig"
+
+    .line 1010
+    .line 1011
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 1012
+    .line 1013
+    .line 1014
+    throw v18
+
+    .line 1015
+    :cond_12
+    const-string v0, "previewSaveStateEventSubject"
+
+    .line 1016
+    .line 1017
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 1018
+    .line 1019
+    .line 1020
+    throw v18
+
+    .line 1021
     :cond_13
+    move-object/from16 p1, v5
+
+    .line 1022
+    .line 1023
+    invoke-static/range {p1 .. p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 1024
+    .line 1025
+    .line 1026
+    throw v18
+
+    .line 1027
+    :cond_14
+    const-string v0, "activationComponentBuilder"
+
+    .line 1028
+    .line 1029
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 1030
+    .line 1031
+    .line 1032
+    throw v18
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 1033
+    :goto_5
+    sget-object v3, LOdh;->b:LtGi;
+
+    .line 1034
+    .line 1035
+    if-eqz v3, :cond_15
+
+    .line 1036
+    .line 1037
+    invoke-virtual {v3, v2}, LtGi;->o(I)V
+
+    .line 1038
+    .line 1039
+    .line 1040
+    :cond_15
+    throw v0
+
+    .line 1041
+    :goto_6
+    sget-object v2, LOdh;->b:LtGi;
+
+    .line 1042
+    .line 1043
+    if-eqz v2, :cond_16
+
+    .line 1044
+    .line 1045
+    invoke-virtual {v2, v3}, LtGi;->o(I)V
+
+    .line 1046
+    .line 1047
+    .line 1048
+    :cond_16
     throw v0
 .end method
 
-.method public final x()V
-    .locals 2
-
-    .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->x()V
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, LKNd;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, LKNd;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->x0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 12
-    .line 13
-    .line 14
-    return-void
-.end method
-
-.method public final x1()V
-    .locals 2
-
-    .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/MainPageFragment;->x1()V
-
-    .line 2
-    .line 3
-    .line 4
-    sget-object v0, Li7j;->a:Li7j;
-
-    .line 5
-    .line 6
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->T0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 7
-    .line 8
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 9
-    .line 10
-    .line 11
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 14
-    .line 15
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-.end method
-
-.method public final y1()V
-    .locals 2
+.method public final w1()V
+    .locals 3
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p0, v0}, Lcom/snapchat/deck/fragment/MainPageFragment;->T1(LQqc;)V
+    invoke-virtual {p0, v0}, Lcom/snapchat/deck/fragment/MainPageFragment;->T1(LiGc;)V
 
     .line 3
     .line 4
     .line 5
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 6
     .line 7
-    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v2, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->g1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 8
     .line 9
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+    invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
     .line 10
     .line 11
     .line 12
+    iget-object v1, p0, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->s1:Lio/reactivex/rxjava3/functions/Consumer;
+
+    .line 13
+    .line 14
+    if-eqz v1, :cond_0
+
+    .line 15
+    .line 16
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 17
+    .line 18
+    invoke-interface {v1, v0}, Lio/reactivex/rxjava3/functions/Consumer;->accept(Ljava/lang/Object;)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
+
+    .line 22
+    :cond_0
+    const-string v1, "lensesBackgroundSignal"
+
+    .line 23
+    .line 24
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    throw v0
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 2
+    .line 3
+    const-string v1, "onAttach"
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v1
+
+    .line 9
+    :try_start_0
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    invoke-virtual {p0, p1}, Lcom/snap/preview/app/bindings/PreviewFragmentImpl;->j2(Landroid/app/Activity;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+
+    .line 23
+    :catchall_0
+    move-exception p1
+
+    .line 24
+    sget-object v0, LOdh;->b:LtGi;
+
+    .line 25
+    .line 26
+    if-eqz v0, :cond_0
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
+
+    .line 29
+    .line 30
+    .line 31
+    :cond_0
+    throw p1
 .end method

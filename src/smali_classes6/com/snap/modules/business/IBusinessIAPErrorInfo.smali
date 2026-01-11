@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LjU8;
+    proxyClass = LK19;
     schema = "\'buildFlavor\':s?,\'errorDetails\':s?,\'errorDomain\':s?,\'errorMessage\':s?,\'iapErrorCode\':s?,\'memberId\':s?,\'type\':s?"
     typeReferences = {}
 .end annotation

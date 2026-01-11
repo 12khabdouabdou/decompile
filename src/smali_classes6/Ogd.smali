@@ -1,5 +1,5 @@
 .class public final LOgd;
-.super LrE9;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
@@ -678,7 +678,7 @@
     .line 1
     iput p2, p0, LOgd;->a:I
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
@@ -686,310 +686,309 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 5
 
     .line 1
-    iget v0, p0, LOgd;->a:I
+    const/4 v0, 0x1
 
     .line 2
+    const-string v1, "OrtJob"
+
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    const/4 v2, 0x0
+
     .line 5
+    sget-object v3, Lewj;->a:Lewj;
+
     .line 6
-    check-cast p1, Landroid/view/View;
-
     .line 7
+    iget v4, p0, LOgd;->a:I
+
     .line 8
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 9
+    packed-switch v4, :pswitch_data_0
+
     .line 10
-    return-object p1
-
     .line 11
-    :pswitch_0
-    check-cast p1, Li7d;
-
     .line 12
+    check-cast p1, LYbd;
+
     .line 13
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 14
-    .line 15
-    return-object p1
+    sget-object v1, LIm;->y2:LFqd;
 
+    .line 15
     .line 16
-    :pswitch_1
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    invoke-virtual {v1, p1}, LGqd;->a(LpO0;)Ljava/lang/Object;
 
     .line 17
     .line 18
-    const-string v0, "PollVotingTable"
-
     .line 19
+    move-result-object v1
+
     .line 20
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v1, Ljava/lang/Boolean;
 
     .line 21
     .line 22
-    .line 23
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 23
     .line 24
     .line 25
-    return-object p1
+    move-result v1
 
     .line 26
-    :pswitch_2
-    check-cast p1, LUP;
+    if-eqz v1, :cond_0
 
     .line 27
     .line 28
-    const/4 v0, 0x0
+    invoke-static {p1}, LfPk;->k(LYbd;)Z
 
     .line 29
-    invoke-virtual {p1, v0}, LUP;->b(I)[B
-
     .line 30
     .line 31
+    move-result p1
+
     .line 32
-    move-result-object p1
+    if-eqz p1, :cond_0
 
     .line 33
-    return-object p1
-
     .line 34
-    :pswitch_3
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    goto :goto_0
 
     .line 35
+    :cond_0
+    const/4 v0, 0x0
+
     .line 36
-    const-string v0, "PollVotingTable"
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 37
     .line 38
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 39
+    move-result-object p1
+
     .line 40
+    return-object p1
+
     .line 41
-    sget-object p1, Li7j;->a:Li7j;
+    :pswitch_0
+    check-cast p1, Landroid/content/Context;
 
     .line 42
     .line 43
-    return-object p1
+    new-instance v0, Ltwd;
 
     .line 44
-    :pswitch_4
-    check-cast p1, Lkotlin/jvm/functions/Function1;
-
     .line 45
-    .line 46
-    const-string v0, "PollVotingTable"
+    invoke-direct {v0, p1}, Ltwd;-><init>(Landroid/content/Context;)V
 
+    .line 46
     .line 47
     .line 48
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    return-object v0
 
     .line 49
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 50
     .line 51
-    sget-object p1, Li7j;->a:Li7j;
+    return-object v3
 
     .line 52
-    .line 53
-    return-object p1
+    :pswitch_2
+    check-cast p1, LYbd;
 
+    .line 53
     .line 54
-    :pswitch_5
-    check-cast p1, Landroid/view/View;
+    sget-object v0, Lgud;->b:LGqd;
 
     .line 55
     .line 56
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-virtual {v0, p1}, LGqd;->a(LpO0;)Ljava/lang/Object;
 
     .line 57
     .line 58
-    return-object p1
-
     .line 59
-    :pswitch_6
-    check-cast p1, Landroid/view/View;
+    move-result-object p1
 
     .line 60
-    .line 61
-    sget-object p1, Li7j;->a:Li7j;
+    check-cast p1, LXtd;
 
+    .line 61
     .line 62
-    .line 63
     return-object p1
+
+    .line 63
+    :pswitch_3
+    check-cast p1, Ljava/lang/String;
 
     .line 64
-    :pswitch_7
-    check-cast p1, Landroid/view/View;
-
     .line 65
+    const-string v1, "::"
+
     .line 66
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 67
+    filled-new-array {v1}, [Ljava/lang/String;
+
     .line 68
-    return-object p1
-
     .line 69
-    :pswitch_8
-    check-cast p1, Lcom/snapchat/client/grpc/UnifiedGrpcService;
-
     .line 70
+    move-result-object v1
+
     .line 71
-    new-instance v0, LzZi;
+    const/4 v3, 0x6
 
     .line 72
-    .line 73
-    invoke-direct {v0, p1}, LzZi;-><init>(Lcom/snapchat/client/grpc/UnifiedGrpcService;)V
+    invoke-static {p1, v1, v2, v3}, Lkti;->T0(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
+    .line 73
     .line 74
     .line 75
+    move-result-object p1
+
     .line 76
-    return-object v0
+    invoke-static {v0, p1}, Llh3;->H3(ILjava/util/List;)Ljava/lang/Object;
 
     .line 77
-    :pswitch_9
-    check-cast p1, Ljava/lang/Number;
-
     .line 78
     .line 79
-    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
+    move-result-object p1
 
     .line 80
+    check-cast p1, Ljava/lang/String;
+
     .line 81
     .line 82
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 83
-    .line 84
     return-object p1
 
+    .line 83
+    :pswitch_4
+    check-cast p1, Ljava/lang/String;
+
+    .line 84
     .line 85
-    :pswitch_a
-    check-cast p1, Ljava/lang/Number;
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 86
     .line 87
-    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
-
-    .line 88
-    .line 89
-    .line 90
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 91
-    .line 92
     return-object p1
 
-    .line 93
-    :pswitch_b
+    .line 88
+    :pswitch_5
     check-cast p1, Ljava/lang/Throwable;
 
+    .line 89
+    .line 90
+    const/4 v0, 0x2
+
+    .line 91
+    invoke-static {v0, p1}, LMIc;->f(ILjava/lang/Throwable;)LMof;
+
+    .line 92
+    .line 93
     .line 94
+    move-result-object p1
+
     .line 95
-    sget-object p1, Li7j;->a:Li7j;
+    new-array v0, v2, [Ljava/lang/Object;
 
     .line 96
     .line 97
-    return-object p1
+    invoke-virtual {p1, v0}, LMof;->g([Ljava/lang/Object;)V
 
     .line 98
-    :pswitch_c
-    check-cast p1, Lkotlin/jvm/functions/Function1;
-
     .line 99
     .line 100
-    const-string v0, "PlaybackSnapView"
+    return-object v3
 
     .line 101
-    .line 102
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_6
+    check-cast p1, LYFd;
 
+    .line 102
     .line 103
+    iget-boolean v0, p1, LYFd;->t:Z
+
     .line 104
     .line 105
-    sget-object p1, Li7j;->a:Li7j;
+    if-eqz v0, :cond_1
 
     .line 106
     .line 107
-    return-object p1
+    goto :goto_1
 
     .line 108
-    :pswitch_d
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    :cond_1
+    iget-object p1, p1, LYFd;->c:Ljava/lang/ref/WeakReference;
 
     .line 109
     .line 110
-    const-string v0, "PlaybackSnapView"
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     .line 111
     .line 112
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 113
+    move-result-object p1
+
     .line 114
+    check-cast p1, Landroid/app/Activity;
+
     .line 115
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 116
-    .line 117
-    return-object p1
+    if-eqz p1, :cond_2
 
+    .line 117
     .line 118
-    :pswitch_e
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    invoke-virtual {p1, v2}, Landroid/app/Activity;->moveTaskToBack(Z)Z
 
     .line 119
     .line 120
-    const-string v0, "PlaybackSnapView"
-
     .line 121
+    :cond_2
+    :goto_1
+    return-object v3
+
     .line 122
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_7
+    check-cast p1, Ljava/lang/String;
 
     .line 123
     .line 124
+    new-instance v0, LdZd;
+
     .line 125
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 126
-    .line 127
-    return-object p1
+    sget-object v1, LXU8;->a:LXU8;
 
+    .line 127
     .line 128
-    :pswitch_f
-    check-cast p1, Ljava/io/File;
+    invoke-direct {v0, p1, v1}, LdZd;-><init>(Ljava/lang/String;LXU8;)V
 
     .line 129
     .line 130
-    invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
-
     .line 131
-    .line 132
-    .line 133
-    move-result-object p1
+    return-object v0
 
+    .line 132
+    :pswitch_8
+    check-cast p1, Ljava/lang/String;
+
+    .line 133
     .line 134
-    if-nez p1, :cond_0
+    invoke-static {p1}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
     .line 135
     .line 136
-    const/4 p1, 0x0
-
     .line 137
-    goto :goto_0
+    move-result p1
 
     .line 138
-    :cond_0
-    invoke-static {p1}, Lv70;->Z0([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 139
     .line 140
@@ -997,286 +996,435 @@
     move-result-object p1
 
     .line 142
-    :goto_0
-    if-nez p1, :cond_1
-
-    .line 143
-    .line 144
-    sget-object p1, LsL6;->a:LsL6;
-
-    .line 145
-    .line 146
-    :cond_1
     return-object p1
 
-    .line 147
-    :pswitch_10
-    check-cast p1, Lcom/snapchat/client/grpc/UnifiedGrpcService;
+    .line 143
+    :pswitch_9
+    check-cast p1, LuWh;
 
+    .line 144
+    .line 145
+    invoke-virtual {p1}, LuWh;->B0()Lys9;
+
+    .line 146
+    .line 147
     .line 148
+    move-result-object p1
+
     .line 149
-    new-instance v0, LyZi;
+    if-eqz p1, :cond_3
 
     .line 150
     .line 151
-    invoke-direct {v0, p1}, LyZi;-><init>(Lcom/snapchat/client/grpc/UnifiedGrpcService;)V
+    iget-object p1, p1, Lys9;->e:LzVj;
 
     .line 152
     .line 153
-    .line 154
-    return-object v0
+    if-eqz p1, :cond_3
 
+    .line 154
     .line 155
-    :pswitch_11
-    check-cast p1, Ljava/lang/Throwable;
+    iget-object p1, p1, LzVj;->a:LdUj;
 
     .line 156
     .line 157
-    sget-object p1, Li7j;->a:Li7j;
+    if-eqz p1, :cond_3
 
     .line 158
     .line 159
-    return-object p1
+    iget-object p1, p1, LdUj;->b:Ljava/lang/String;
 
     .line 160
-    :pswitch_12
-    check-cast p1, Loe9;
-
     .line 161
+    goto :goto_2
+
     .line 162
-    iget v0, p1, Loe9;->a:I
+    :cond_3
+    const/4 p1, 0x0
 
     .line 163
+    :goto_2
+    return-object p1
+
     .line 164
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :pswitch_a
+    check-cast p1, LuWh;
 
     .line 165
     .line 166
+    invoke-virtual {p1}, LuWh;->C0()Ljava/lang/String;
+
     .line 167
-    move-result-object v0
-
     .line 168
-    new-instance v1, Lhad;
-
     .line 169
+    move-result-object p1
+
     .line 170
-    iget-object p1, p1, Loe9;->b:Ljava/lang/Object;
+    const-string v0, "VENUE"
 
     .line 171
     .line 172
-    invoke-direct {v1, p1, v0}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 173
     .line 174
     .line 175
-    return-object v1
+    move-result p1
 
     .line 176
-    :pswitch_13
-    check-cast p1, Landroid/view/View;
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 177
     .line 178
-    instance-of p1, p1, Landroid/view/ViewStub;
-
     .line 179
-    .line 180
-    xor-int/lit8 p1, p1, 0x1
-
-    .line 181
-    .line 182
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 183
-    .line 184
-    .line 185
     move-result-object p1
 
-    .line 186
+    .line 180
     return-object p1
+
+    .line 181
+    :pswitch_b
+    check-cast p1, LdZd;
+
+    .line 182
+    .line 183
+    iget-object p1, p1, LdZd;->a:Ljava/lang/String;
+
+    .line 184
+    .line 185
+    return-object p1
+
+    .line 186
+    :pswitch_c
+    check-cast p1, LdZd;
 
     .line 187
-    :pswitch_14
-    check-cast p1, Landroid/view/View;
-
     .line 188
-    .line 189
-    sget-object p1, Li7j;->a:Li7j;
+    iget-object p1, p1, LdZd;->a:Ljava/lang/String;
 
+    .line 189
     .line 190
-    .line 191
     return-object p1
 
+    .line 191
+    :pswitch_d
+    check-cast p1, LdZd;
+
     .line 192
-    :pswitch_15
-    check-cast p1, Lkotlin/jvm/functions/Function1;
-
     .line 193
-    .line 194
-    const-string v0, "PendingStoryGroup"
+    iget-object p1, p1, LdZd;->b:LXU8;
 
+    .line 194
     .line 195
+    return-object p1
+
     .line 196
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_e
+    check-cast p1, Lkotlin/jvm/functions/Function1;
 
     .line 197
     .line 198
-    .line 199
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 199
     .line 200
     .line 201
-    return-object p1
+    return-object v3
 
     .line 202
-    :pswitch_16
-    check-cast p1, LUP;
+    :pswitch_f
+    check-cast p1, LUR;
 
     .line 203
     .line 204
-    const/4 v0, 0x0
+    invoke-virtual {p1, v2}, LUR;->e(I)Ljava/lang/String;
 
     .line 205
-    invoke-virtual {p1, v0}, LUP;->a(I)Ljava/lang/Boolean;
-
     .line 206
     .line 207
-    .line 208
     move-result-object p1
 
-    .line 209
+    .line 208
     return-object p1
 
-    .line 210
-    :pswitch_17
+    .line 209
+    :pswitch_10
     check-cast p1, Lkotlin/jvm/functions/Function1;
 
+    .line 210
     .line 211
-    .line 212
-    const-string v0, "PendingStoryGroup"
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 212
     .line 213
     .line 214
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    return-object v3
 
     .line 215
+    :pswitch_11
+    check-cast p1, Lkotlin/jvm/functions/Function1;
+
     .line 216
     .line 217
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 218
     .line 219
-    return-object p1
-
     .line 220
-    :pswitch_18
-    check-cast p1, Lkotlin/jvm/functions/Function1;
+    return-object v3
 
     .line 221
+    :pswitch_12
+    check-cast p1, Lkotlin/jvm/functions/Function1;
+
     .line 222
-    const-string v0, "PendingStoryGroup"
-
     .line 223
-    .line 224
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 224
     .line 225
     .line 226
+    return-object v3
+
     .line 227
-    sget-object p1, Li7j;->a:Li7j;
+    :pswitch_13
+    check-cast p1, Lkotlin/jvm/functions/Function1;
 
     .line 228
     .line 229
-    return-object p1
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 230
-    :pswitch_19
-    check-cast p1, Lkotlin/jvm/functions/Function1;
-
     .line 231
     .line 232
-    const-string v0, "PendingStoryGroup"
+    return-object v3
 
     .line 233
-    .line 234
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_14
+    check-cast p1, Lkotlin/jvm/functions/Function1;
 
+    .line 234
     .line 235
+    invoke-interface {p1, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 236
     .line 237
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 238
+    return-object v3
+
     .line 239
-    return-object p1
+    :pswitch_15
+    check-cast p1, Ljava/lang/Number;
 
     .line 240
-    :pswitch_1a
-    check-cast p1, Lkotlin/jvm/functions/Function1;
-
     .line 241
-    .line 242
-    const-string v0, "pending_snaps"
+    invoke-virtual {p1}, Ljava/lang/Number;->byteValue()B
 
+    .line 242
     .line 243
     .line 244
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    move-result p1
 
     .line 245
+    invoke-static {p1}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
+
     .line 246
     .line 247
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 248
+    move-result-object p1
+
     .line 249
-    return-object p1
+    new-array v1, v0, [Ljava/lang/Object;
 
     .line 250
-    :pswitch_1b
-    check-cast p1, Lkotlin/jvm/functions/Function1;
-
     .line 251
+    aput-object p1, v1, v2
+
     .line 252
-    const-string v0, "pending_snaps"
-
     .line 253
-    .line 254
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
+    .line 254
     .line 255
     .line 256
+    move-result-object p1
+
     .line 257
-    sget-object p1, Li7j;->a:Li7j;
+    const-string v0, "%02x"
 
     .line 258
     .line 259
-    return-object p1
+    invoke-static {v0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     .line 260
-    :pswitch_1c
-    check-cast p1, Lkotlin/jvm/functions/Function1;
-
     .line 261
     .line 262
-    const-string v0, "pending_snaps"
+    move-result-object p1
 
     .line 263
+    return-object p1
+
     .line 264
-    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_16
+    check-cast p1, Lkch;
 
     .line 265
     .line 266
-    .line 267
-    sget-object p1, Li7j;->a:Li7j;
+    const-class v0, LBjd;
 
+    .line 267
     .line 268
+    invoke-static {v0}, Lc1f;->a(Ljava/lang/Class;)Lm43;
+
     .line 269
+    .line 270
+    .line 271
+    new-instance v0, LBjd;
+
+    .line 272
+    .line 273
+    invoke-direct {v0, p1}, LBjd;-><init>(Lkch;)V
+
+    .line 274
+    .line 275
+    .line 276
+    return-object v0
+
+    .line 277
+    :pswitch_17
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 278
+    .line 279
+    return-object v3
+
+    .line 280
+    :pswitch_18
+    check-cast p1, LYbd;
+
+    .line 281
+    .line 282
+    new-instance v0, LPhd;
+
+    .line 283
+    .line 284
+    sget-object v1, LOhd;->a:LGqd;
+
+    .line 285
+    .line 286
+    invoke-virtual {v1, p1}, LGqd;->a(LpO0;)Ljava/lang/Object;
+
+    .line 287
+    .line 288
+    .line 289
+    move-result-object v1
+
+    .line 290
+    check-cast v1, Ljava/lang/String;
+
+    .line 291
+    .line 292
+    sget-object v2, LOhd;->b:LGqd;
+
+    .line 293
+    .line 294
+    invoke-virtual {v2, p1}, LGqd;->a(LpO0;)Ljava/lang/Object;
+
+    .line 295
+    .line 296
+    .line 297
+    move-result-object v2
+
+    .line 298
+    check-cast v2, Landroid/text/SpannableString;
+
+    .line 299
+    .line 300
+    sget-object v3, LOhd;->c:LGqd;
+
+    .line 301
+    .line 302
+    invoke-virtual {v3, p1}, LGqd;->a(LpO0;)Ljava/lang/Object;
+
+    .line 303
+    .line 304
+    .line 305
+    move-result-object p1
+
+    .line 306
+    check-cast p1, Landroid/net/Uri;
+
+    .line 307
+    .line 308
+    invoke-direct {v0, v1, v2, p1}, LPhd;-><init>(Ljava/lang/String;Landroid/text/SpannableString;Landroid/net/Uri;)V
+
+    .line 309
+    .line 310
+    .line 311
+    return-object v0
+
+    .line 312
+    :pswitch_19
+    check-cast p1, LYbd;
+
+    .line 313
+    .line 314
+    sget-object v0, LOhd;->a:LGqd;
+
+    .line 315
+    .line 316
+    invoke-virtual {p1, v0}, LIqd;->C(LGqd;)Z
+
+    .line 317
+    .line 318
+    .line 319
+    move-result p1
+
+    .line 320
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 321
+    .line 322
+    .line 323
+    move-result-object p1
+
+    .line 324
     return-object p1
 
-    .line 270
-    nop
+    .line 325
+    :pswitch_1a
+    check-cast p1, Landroid/view/View;
 
-    .line 271
+    .line 326
+    .line 327
+    return-object v3
+
+    .line 328
+    :pswitch_1b
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 329
+    .line 330
+    return-object v3
+
+    .line 331
+    :pswitch_1c
+    check-cast p1, Lkotlin/jvm/functions/Function1;
+
+    .line 332
+    .line 333
+    const-string v0, "operations"
+
+    .line 334
+    .line 335
+    invoke-interface {p1, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 336
+    .line 337
+    .line 338
+    return-object v3
+
+    .line 339
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1c

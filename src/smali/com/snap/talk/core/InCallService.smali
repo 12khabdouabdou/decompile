@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final synthetic h0:I
+.field public static final synthetic i0:I
 
 
 # instance fields
@@ -14,9 +14,9 @@
 
 .field public Z:Landroid/net/Uri;
 
-.field public b:LlT6;
+.field public b:LkX6;
 
-.field public c:LaA8;
+.field public c:LcH8;
 
 .field public e0:Landroid/net/Uri;
 
@@ -24,7 +24,9 @@
 
 .field public g0:Ljava/lang/Long;
 
-.field public t:Ltlj;
+.field public final h0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+.field public t:LuKj;
 
 
 # direct methods
@@ -50,12 +52,24 @@
 
     .line 10
     .line 11
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    iput-object v0, p0, Lcom/snap/talk/core/InCallService;->h0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 16
+    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Landroid/content/Intent;Z)V
+.method public final a(Landroid/content/Intent;Z)V
     .locals 10
 
     .line 1
@@ -200,7 +214,7 @@
     .line 68
     .line 69
     :cond_4
-    new-instance v0, LhCc;
+    new-instance v0, LVQc;
 
     .line 70
     .line 71
@@ -260,7 +274,7 @@
 
     .line 97
     :goto_0
-    invoke-direct {v0, v1, v2}, LhCc;-><init>(Landroid/net/Uri;Landroid/content/Intent;)V
+    invoke-direct {v0, v1, v2}, LVQc;-><init>(Landroid/net/Uri;Landroid/content/Intent;)V
 
     .line 98
     .line 99
@@ -273,7 +287,7 @@
 
     .line 103
     .line 104
-    invoke-static {p0, p1, v0, v1, v2}, Lu9k;->g(Lcom/snap/talk/core/InCallService;Landroid/net/Uri;LhCc;Ljava/lang/String;Ljava/lang/Long;)Landroid/app/Notification;
+    invoke-static {p0, p1, v0, v1, v2}, LH79;->f(Lcom/snap/talk/core/InCallService;Landroid/net/Uri;LVQc;Ljava/lang/String;Ljava/lang/Long;)Landroid/app/Notification;
 
     .line 105
     .line 106
@@ -288,7 +302,7 @@
 
     .line 110
     .line 111
-    iget-object p1, p0, Lcom/snap/talk/core/InCallService;->t:Ltlj;
+    iget-object p1, p0, Lcom/snap/talk/core/InCallService;->t:LuKj;
 
     .line 112
     .line 113
@@ -319,7 +333,7 @@
     const/4 v1, 0x6
 
     .line 126
-    invoke-static {p1, p2, v0, v1}, LR4i;->M1(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    invoke-static {p1, p2, v0, v1}, Lkti;->T0(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     .line 127
     .line 128
@@ -327,7 +341,7 @@
     move-result-object p2
 
     .line 130
-    invoke-static {p2}, Lue3;->I0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p2}, Llh3;->G3(Ljava/util/List;)Ljava/lang/Object;
 
     .line 131
     .line 132
@@ -359,7 +373,7 @@
     .line 142
     .line 143
     :goto_1
-    iget-object p2, p0, Lcom/snap/talk/core/InCallService;->c:LaA8;
+    iget-object p2, p0, Lcom/snap/talk/core/InCallService;->c:LcH8;
 
     .line 144
     .line 145
@@ -367,7 +381,7 @@
 
     .line 146
     .line 147
-    sget-object v0, LBz;->q0:LBz;
+    sget-object v0, LeB;->q0:LeB;
 
     .line 148
     .line 149
@@ -375,7 +389,7 @@
 
     .line 150
     .line 151
-    invoke-static {v0, v1, p1}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
+    invoke-static {v0, v1, p1}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 152
     .line 153
@@ -387,7 +401,7 @@
 
     .line 156
     .line 157
-    invoke-interface {p2, p1, v0, v1}, LaA8;->d(LqTb;J)V
+    invoke-interface {p2, p1, v0, v1}, LcH8;->d(LV7c;J)V
 
     .line 158
     .line 159
@@ -405,7 +419,7 @@
 
     .line 165
     .line 166
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 167
     .line 168
@@ -418,7 +432,7 @@
 
     .line 171
     .line 172
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 173
     .line 174
@@ -443,7 +457,7 @@
     .line 182
     .line 183
     .line 184
-    if-eqz p2, :cond_10
+    if-eqz p2, :cond_11
 
     .line 185
     .line 186
@@ -451,155 +465,151 @@
 
     .line 187
     .line 188
-    if-ge p2, v4, :cond_b
+    iget-object v6, p0, Lcom/snap/talk/core/InCallService;->h0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 189
     .line 190
-    invoke-virtual {p0, v5, p1}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
+    if-ge p2, v4, :cond_b
 
     .line 191
     .line 192
+    invoke-virtual {p0, v5, p1}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
+
     .line 193
+    .line 194
+    .line 195
     goto :goto_4
 
-    .line 194
+    .line 196
     :cond_b
     iget-boolean p2, p0, Lcom/snap/talk/core/InCallService;->X:Z
 
-    .line 195
-    .line 196
-    if-eqz p2, :cond_c
-
     .line 197
     .line 198
-    const/16 p2, 0xa4
+    if-eqz p2, :cond_c
 
     .line 199
     .line 200
-    goto :goto_2
+    const/16 p2, 0xa4
 
     .line 201
+    .line 202
+    goto :goto_2
+
+    .line 203
     :cond_c
     const/16 p2, 0x84
 
-    .line 202
-    .line 203
+    .line 204
+    .line 205
     :goto_2
     :try_start_0
-    invoke-static {p0, p1, p2}, LdJ7;->u(Lcom/snap/talk/core/InCallService;Landroid/app/Notification;I)V
+    invoke-static {p0, p1, p2}, Lby6;->r(Lcom/snap/talk/core/InCallService;Landroid/app/Notification;I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 204
-    .line 205
     .line 206
+    .line 207
+    .line 208
     goto :goto_4
 
-    .line 207
+    .line 209
     :catch_0
     move-exception p2
 
-    .line 208
-    iget-object v6, p0, Lcom/snap/talk/core/InCallService;->b:LlT6;
-
-    .line 209
     .line 210
-    if-eqz v6, :cond_f
+    iget-object v7, p0, Lcom/snap/talk/core/InCallService;->b:LkX6;
 
     .line 211
     .line 212
-    sget-object v7, Lcom/snap/talkcore/CallingErrorCode;->InCallServiceStartForeground:Lcom/snap/talkcore/CallingErrorCode;
+    if-eqz v7, :cond_10
 
     .line 213
     .line 214
-    invoke-virtual {v6, v7, p2}, LlT6;->a(Lcom/snap/talkcore/CallingErrorCode;Ljava/lang/Throwable;)V
+    sget-object v8, Lcom/snap/talkcore/CallingErrorCode;->InCallServiceStartForeground:Lcom/snap/talkcore/CallingErrorCode;
 
     .line 215
     .line 216
-    .line 217
-    invoke-static {p2}, LSQ3;->r(Ljava/lang/Exception;)Z
+    invoke-virtual {v7, v8, p2}, LkX6;->a(Lcom/snap/talkcore/CallingErrorCode;Ljava/lang/Throwable;)V
 
+    .line 217
     .line 218
     .line 219
+    invoke-static {p2}, LOU3;->r(Ljava/lang/Exception;)Z
+
     .line 220
-    move-result v6
-
     .line 221
-    if-eqz v6, :cond_d
-
     .line 222
+    move-result v7
+
     .line 223
-    goto :goto_3
+    if-eqz v7, :cond_d
 
     .line 224
-    :cond_d
-    instance-of v6, p2, Ljava/lang/SecurityException;
-
     .line 225
+    goto :goto_3
+
     .line 226
-    if-eqz v6, :cond_e
+    :cond_d
+    instance-of v7, p2, Ljava/lang/SecurityException;
 
     .line 227
     .line 228
-    goto :goto_3
+    if-eqz v7, :cond_e
 
     .line 229
-    :cond_e
-    instance-of v6, p2, Landroid/os/RemoteException;
-
     .line 230
+    goto :goto_3
+
     .line 231
-    :goto_3
-    invoke-static {v2, p2}, LD7j;->f(ILjava/lang/Throwable;)Lhxe;
+    :cond_e
+    instance-of v7, p2, Landroid/os/RemoteException;
 
     .line 232
     .line 233
+    :goto_3
+    invoke-static {v2, p2}, LMIc;->f(ILjava/lang/Throwable;)LMof;
+
     .line 234
-    move-result-object p2
-
     .line 235
-    invoke-virtual {p2}, Lhxe;->d()V
-
     .line 236
-    .line 237
-    .line 238
-    new-array v6, v0, [Ljava/lang/Object;
+    move-result-object v7
 
+    .line 237
+    invoke-virtual {v7}, LMof;->d()V
+
+    .line 238
     .line 239
     .line 240
-    invoke-virtual {p2, v6}, Lhxe;->g([Ljava/lang/Object;)V
+    new-array v8, v0, [Ljava/lang/Object;
 
     .line 241
     .line 242
-    .line 243
-    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
+    invoke-virtual {v7, v8}, LMof;->g([Ljava/lang/Object;)V
 
+    .line 243
     .line 244
     .line 245
+    invoke-virtual {v6, p2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onError(Ljava/lang/Throwable;)V
+
     .line 246
-    goto :goto_4
-
     .line 247
-    :cond_f
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 248
+    invoke-virtual {p0}, Landroid/app/Service;->stopSelf()V
+
     .line 249
     .line 250
-    throw v3
-
     .line 251
-    :cond_10
     :goto_4
-    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+    iget-boolean p2, p0, Lcom/snap/talk/core/InCallService;->X:Z
 
     .line 252
     .line 253
-    .line 254
-    move-result-object p2
+    if-eqz p2, :cond_f
 
+    .line 254
     .line 255
-    invoke-static {p2}, LPgi;->b(Landroid/content/Context;)Landroid/app/NotificationManager;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 256
     .line 257
@@ -607,162 +617,246 @@
     move-result-object p2
 
     .line 259
-    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {p2}, LMof;->i()V
 
     .line 260
     .line 261
-    const/16 v7, 0x17
-
     .line 262
+    new-array v7, v0, [Ljava/lang/Object;
+
     .line 263
-    if-lt v6, v7, :cond_12
-
     .line 264
-    .line 265
-    sget-object v6, LbU;->a:LbU;
+    invoke-virtual {p2, v7}, LMof;->g([Ljava/lang/Object;)V
 
+    .line 265
     .line 266
     .line 267
-    invoke-virtual {v6, p2}, LbU;->c(Landroid/app/NotificationManager;)[Landroid/service/notification/StatusBarNotification;
+    goto :goto_5
 
     .line 268
+    :cond_f
+    invoke-static {}, LMIc;->b()LMof;
+
     .line 269
     .line 270
-    move-result-object v6
-
     .line 271
-    array-length v7, v6
+    move-result-object p2
 
     .line 272
-    const/4 v8, 0x0
+    new-array v7, v0, [Ljava/lang/Object;
 
     .line 273
-    :goto_5
-    if-ge v8, v7, :cond_14
-
     .line 274
-    .line 275
-    aget-object v9, v6, v8
+    invoke-virtual {p2, v7}, LMof;->g([Ljava/lang/Object;)V
 
+    .line 275
     .line 276
     .line 277
-    invoke-virtual {v9}, Landroid/service/notification/StatusBarNotification;->getId()I
+    :goto_5
+    new-instance p2, LKj9;
 
     .line 278
     .line 279
-    .line 280
-    move-result v9
+    iget-boolean v7, p0, Lcom/snap/talk/core/InCallService;->X:Z
 
+    .line 280
     .line 281
-    if-ne v9, v5, :cond_11
+    invoke-direct {p2, v7}, LKj9;-><init>(Z)V
 
     .line 282
     .line 283
-    goto :goto_6
-
     .line 284
-    :cond_11
-    add-int/lit8 v8, v8, 0x1
+    invoke-virtual {v6, p2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
     .line 285
     .line 286
-    goto :goto_5
-
     .line 287
-    :cond_12
-    :goto_6
-    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
+    goto :goto_6
 
     .line 288
-    .line 289
-    if-lt v6, v4, :cond_13
+    :cond_10
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 289
     .line 290
     .line 291
-    iget-object v4, p1, Landroid/app/Notification;->fullScreenIntent:Landroid/app/PendingIntent;
+    throw v3
 
     .line 292
-    .line 293
-    if-eqz v4, :cond_14
+    :cond_11
+    :goto_6
+    invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
+    .line 293
     .line 294
     .line 295
+    move-result-object p2
+
+    .line 296
+    invoke-static {p2}, LJFi;->b(Landroid/content/Context;)Landroid/app/NotificationManager;
+
+    .line 297
+    .line 298
+    .line 299
+    move-result-object p2
+
+    .line 300
+    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 301
+    .line 302
+    const/16 v7, 0x17
+
+    .line 303
+    .line 304
+    if-lt v6, v7, :cond_13
+
+    .line 305
+    .line 306
+    sget-object v6, LiW;->a:LiW;
+
+    .line 307
+    .line 308
+    invoke-virtual {v6, p2}, LiW;->c(Landroid/app/NotificationManager;)[Landroid/service/notification/StatusBarNotification;
+
+    .line 309
+    .line 310
+    .line 311
+    move-result-object v6
+
+    .line 312
+    array-length v7, v6
+
+    .line 313
+    const/4 v8, 0x0
+
+    .line 314
+    :goto_7
+    if-ge v8, v7, :cond_15
+
+    .line 315
+    .line 316
+    aget-object v9, v6, v8
+
+    .line 317
+    .line 318
+    invoke-virtual {v9}, Landroid/service/notification/StatusBarNotification;->getId()I
+
+    .line 319
+    .line 320
+    .line 321
+    move-result v9
+
+    .line 322
+    if-ne v9, v5, :cond_12
+
+    .line 323
+    .line 324
+    goto :goto_8
+
+    .line 325
+    :cond_12
+    add-int/lit8 v8, v8, 0x1
+
+    .line 326
+    .line 327
+    goto :goto_7
+
+    .line 328
     :cond_13
+    :goto_8
+    sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 329
+    .line 330
+    if-lt v6, v4, :cond_14
+
+    .line 331
+    .line 332
+    iget-object v4, p1, Landroid/app/Notification;->fullScreenIntent:Landroid/app/PendingIntent;
+
+    .line 333
+    .line 334
+    if-eqz v4, :cond_15
+
+    .line 335
+    .line 336
+    :cond_14
     :try_start_1
     invoke-virtual {p2, v5, p1}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 296
-    .line 297
-    .line 298
-    goto :goto_7
+    .line 337
+    .line 338
+    .line 339
+    goto :goto_9
 
-    .line 299
+    .line 340
     :catch_1
     move-exception p1
 
-    .line 300
-    iget-object p2, p0, Lcom/snap/talk/core/InCallService;->b:LlT6;
+    .line 341
+    iget-object p2, p0, Lcom/snap/talk/core/InCallService;->b:LkX6;
 
-    .line 301
-    .line 302
-    if-eqz p2, :cond_15
+    .line 342
+    .line 343
+    if-eqz p2, :cond_16
 
-    .line 303
-    .line 304
+    .line 344
+    .line 345
     sget-object v1, Lcom/snap/talkcore/CallingErrorCode;->InCallServicePostNotification:Lcom/snap/talkcore/CallingErrorCode;
 
-    .line 305
-    .line 306
-    invoke-virtual {p2, v1, p1}, LlT6;->a(Lcom/snap/talkcore/CallingErrorCode;Ljava/lang/Throwable;)V
+    .line 346
+    .line 347
+    invoke-virtual {p2, v1, p1}, LkX6;->a(Lcom/snap/talkcore/CallingErrorCode;Ljava/lang/Throwable;)V
 
-    .line 307
-    .line 308
-    .line 309
-    invoke-static {v2, p1}, LD7j;->f(ILjava/lang/Throwable;)Lhxe;
+    .line 348
+    .line 349
+    .line 350
+    invoke-static {v2, p1}, LMIc;->f(ILjava/lang/Throwable;)LMof;
 
-    .line 310
-    .line 311
-    .line 312
+    .line 351
+    .line 352
+    .line 353
     move-result-object p2
 
-    .line 313
-    invoke-virtual {p2}, Lhxe;->d()V
+    .line 354
+    invoke-virtual {p2}, LMof;->d()V
 
-    .line 314
-    .line 315
-    .line 316
+    .line 355
+    .line 356
+    .line 357
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    .line 317
-    .line 318
-    .line 319
+    .line 358
+    .line 359
+    .line 360
     new-array p1, v0, [Ljava/lang/Object;
 
-    .line 320
-    .line 321
-    invoke-virtual {p2, p1}, Lhxe;->g([Ljava/lang/Object;)V
+    .line 361
+    .line 362
+    invoke-virtual {p2, p1}, LMof;->g([Ljava/lang/Object;)V
 
-    .line 322
-    .line 323
-    .line 324
-    :cond_14
-    :goto_7
+    .line 363
+    .line 364
+    .line 365
+    :cond_15
+    :goto_9
     return-void
 
-    .line 325
-    :cond_15
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    .line 366
+    :cond_16
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 326
-    .line 327
-    .line 328
+    .line 367
+    .line 368
+    .line 369
     throw v3
 .end method
 
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
-    .locals 1
+    .locals 2
 
     .line 1
     invoke-super {p0, p1}, Landroidx/lifecycle/LifecycleService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
@@ -770,7 +864,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 5
     .line 6
@@ -785,12 +879,12 @@
 
     .line 10
     .line 11
-    invoke-virtual {p1, v0}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, LMof;->g([Ljava/lang/Object;)V
 
     .line 12
     .line 13
     .line 14
-    new-instance p1, LIb9;
+    new-instance p1, LJj9;
 
     .line 15
     .line 16
@@ -798,11 +892,31 @@
 
     .line 17
     .line 18
-    invoke-direct {p1, v0}, LIb9;-><init>(Lio/reactivex/rxjava3/core/Observable;)V
+    invoke-static {v0, v0}, LzHa;->p(Lio/reactivex/rxjava3/subjects/PublishSubject;Lio/reactivex/rxjava3/subjects/PublishSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 19
     .line 20
     .line 21
+    move-result-object v0
+
+    .line 22
+    iget-object v1, p0, Lcom/snap/talk/core/InCallService;->h0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 23
+    .line 24
+    invoke-static {v1, v1}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    invoke-direct {p1, v0, v1}, LJj9;-><init>(Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
+    .line 29
+    .line 30
+    .line 31
     return-object p1
 .end method
 
@@ -815,7 +929,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 5
     .line 6
@@ -830,12 +944,12 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0, v1}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, LMof;->g([Ljava/lang/Object;)V
 
     .line 12
     .line 13
     .line 14
-    invoke-static {p0}, LCq9;->x0(Landroid/app/Service;)V
+    invoke-static {p0}, LbS2;->v(Landroid/app/Service;)V
 
     .line 15
     .line 16
@@ -852,7 +966,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 5
     .line 6
@@ -867,7 +981,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0, v1}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, LMof;->g([Ljava/lang/Object;)V
 
     .line 12
     .line 13
@@ -880,7 +994,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {v0}, LPgi;->b(Landroid/content/Context;)Landroid/app/NotificationManager;
+    invoke-static {v0}, LJFi;->b(Landroid/content/Context;)Landroid/app/NotificationManager;
 
     .line 19
     .line 20
@@ -910,7 +1024,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 5
     .line 6
@@ -925,7 +1039,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p2, v0}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p2, v0}, LMof;->g([Ljava/lang/Object;)V
 
     .line 12
     .line 13
@@ -953,7 +1067,7 @@
 
     .line 24
     .line 25
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 26
     .line 27
@@ -961,7 +1075,7 @@
     move-result-object p2
 
     .line 29
-    invoke-virtual {p2}, Lhxe;->h()V
+    invoke-virtual {p2}, LMof;->i()V
 
     .line 30
     .line 31
@@ -970,7 +1084,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {p2, p3}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p2, p3}, LMof;->g([Ljava/lang/Object;)V
 
     .line 35
     .line 36
@@ -979,7 +1093,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {p0, p1, v0}, Lcom/snap/talk/core/InCallService;->c(Landroid/content/Intent;Z)V
+    invoke-virtual {p0, p1, v0}, Lcom/snap/talk/core/InCallService;->a(Landroid/content/Intent;Z)V
 
     .line 40
     .line 41
@@ -1005,7 +1119,7 @@
 
     .line 51
     .line 52
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 53
     .line 54
@@ -1013,7 +1127,7 @@
     move-result-object p2
 
     .line 56
-    invoke-virtual {p2}, Lhxe;->h()V
+    invoke-virtual {p2}, LMof;->i()V
 
     .line 57
     .line 58
@@ -1022,7 +1136,7 @@
 
     .line 60
     .line 61
-    invoke-virtual {p2, v0}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p2, v0}, LMof;->g([Ljava/lang/Object;)V
 
     .line 62
     .line 63
@@ -1031,7 +1145,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {p0, p1, p3}, Lcom/snap/talk/core/InCallService;->c(Landroid/content/Intent;Z)V
+    invoke-virtual {p0, p1, p3}, Lcom/snap/talk/core/InCallService;->a(Landroid/content/Intent;Z)V
 
     .line 67
     .line 68
@@ -1060,7 +1174,7 @@
 
     .line 79
     .line 80
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 81
     .line 82
@@ -1068,7 +1182,7 @@
     move-result-object p1
 
     .line 84
-    invoke-virtual {p1}, Lhxe;->h()V
+    invoke-virtual {p1}, LMof;->i()V
 
     .line 85
     .line 86
@@ -1077,12 +1191,12 @@
 
     .line 88
     .line 89
-    invoke-virtual {p1, p2}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p1, p2}, LMof;->g([Ljava/lang/Object;)V
 
     .line 90
     .line 91
     .line 92
-    sget-object p1, LFb9;->a:LFb9;
+    sget-object p1, LGj9;->a:LGj9;
 
     .line 93
     .line 94
@@ -1111,7 +1225,7 @@
 
     .line 105
     .line 106
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 107
     .line 108
@@ -1123,12 +1237,12 @@
 
     .line 111
     .line 112
-    invoke-virtual {p1, p2}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p1, p2}, LMof;->g([Ljava/lang/Object;)V
 
     .line 113
     .line 114
     .line 115
-    sget-object p1, LFb9;->b:LFb9;
+    sget-object p1, LGj9;->b:LGj9;
 
     .line 116
     .line 117
@@ -1157,7 +1271,7 @@
 
     .line 128
     .line 129
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 130
     .line 131
@@ -1169,12 +1283,12 @@
 
     .line 134
     .line 135
-    invoke-virtual {p1, p2}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p1, p2}, LMof;->g([Ljava/lang/Object;)V
 
     .line 136
     .line 137
     .line 138
-    sget-object p1, LFb9;->c:LFb9;
+    sget-object p1, LGj9;->c:LGj9;
 
     .line 139
     .line 140
@@ -1203,7 +1317,7 @@
 
     .line 151
     .line 152
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 153
     .line 154
@@ -1215,12 +1329,12 @@
 
     .line 157
     .line 158
-    invoke-virtual {p1, p2}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p1, p2}, LMof;->g([Ljava/lang/Object;)V
 
     .line 159
     .line 160
     .line 161
-    sget-object p1, LFb9;->t:LFb9;
+    sget-object p1, LGj9;->t:LGj9;
 
     .line 162
     .line 163
@@ -1233,7 +1347,7 @@
 
     .line 167
     :cond_5
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 168
     .line 169
@@ -1245,12 +1359,12 @@
 
     .line 172
     .line 173
-    invoke-virtual {p2, p3}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {p2, p3}, LMof;->g([Ljava/lang/Object;)V
 
     .line 174
     .line 175
     .line 176
-    invoke-virtual {p0, p1, v0}, Lcom/snap/talk/core/InCallService;->c(Landroid/content/Intent;Z)V
+    invoke-virtual {p0, p1, v0}, Lcom/snap/talk/core/InCallService;->a(Landroid/content/Intent;Z)V
 
     .line 177
     .line 178
@@ -1267,7 +1381,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, LD7j;->c()Lhxe;
+    invoke-static {}, LMIc;->b()LMof;
 
     .line 2
     .line 3
@@ -1282,7 +1396,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Lhxe;->g([Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, LMof;->g([Ljava/lang/Object;)V
 
     .line 9
     .line 10

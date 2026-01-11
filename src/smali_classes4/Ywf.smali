@@ -3,106 +3,106 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lcom/snap/composer/location/S2CellBridge;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LX3i;
-
-.field public final synthetic c:Lcom/snapchat/client/content_manager/ConsumptionUseCase;
-
-.field public final synthetic t:Lcom/snapchat/client/content_manager/Range;
+.field public final a:Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
-.method public synthetic constructor <init>(LX3i;Lcom/snapchat/client/content_manager/ConsumptionUseCase;Lcom/snapchat/client/content_manager/Range;I)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function3;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function3;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iput p4, p0, LYwf;->a:I
-
-    iput-object p1, p0, LYwf;->b:LX3i;
-
-    iput-object p2, p0, LYwf;->c:Lcom/snapchat/client/content_manager/ConsumptionUseCase;
-
-    iput-object p3, p0, LYwf;->t:Lcom/snapchat/client/content_manager/Range;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LYwf;->a:Lkotlin/jvm/functions/Function3;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public getS2CellIdForLatLng(DDLjava/lang/Double;)Lcom/snap/composer/location/S2CellId;
+    .locals 0
 
     .line 1
-    iget v0, p0, LYwf;->a:I
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-static {p3, p4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p2
+
+    .line 9
+    iget-object p3, p0, LYwf;->a:Lkotlin/jvm/functions/Function3;
+
+    .line 10
+    .line 11
+    invoke-interface {p3, p1, p2, p5}, Lkotlin/jvm/functions/Function3;->H(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    check-cast p1, Lcom/snap/composer/location/S2CellId;
+
+    .line 16
+    .line 17
+    return-object p1
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LYwf;->b:LX3i;
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    iget-object v0, v0, LX3i;->a:Lcom/snapchat/client/content_manager/ContentResult;
+    const-class v1, Lcom/snap/composer/location/S2CellBridge;
 
     .line 9
     .line 10
-    iget-object v1, p0, LYwf;->c:Lcom/snapchat/client/content_manager/ConsumptionUseCase;
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
-    iget-object v2, p0, LYwf;->t:Lcom/snapchat/client/content_manager/Range;
-
     .line 13
+    move-result p1
+
     .line 14
-    invoke-virtual {v0, v1, v2}, Lcom/snapchat/client/content_manager/ContentResult;->logConsumed(Lcom/snapchat/client/content_manager/ConsumptionUseCase;Lcom/snapchat/client/content_manager/Range;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-
-    .line 18
-    :pswitch_0
-    iget-object v0, p0, LYwf;->b:LX3i;
-
-    .line 19
-    .line 20
-    iget-object v0, v0, LX3i;->a:Lcom/snapchat/client/content_manager/ContentResult;
-
-    .line 21
-    .line 22
-    iget-object v1, p0, LYwf;->c:Lcom/snapchat/client/content_manager/ConsumptionUseCase;
-
-    .line 23
-    .line 24
-    iget-object v2, p0, LYwf;->t:Lcom/snapchat/client/content_manager/Range;
-
-    .line 25
-    .line 26
-    invoke-virtual {v0, v1, v2}, Lcom/snapchat/client/content_manager/ContentResult;->logConsumed(Lcom/snapchat/client/content_manager/ConsumptionUseCase;Lcom/snapchat/client/content_manager/Range;)V
-
-    .line 27
-    .line 28
-    .line 29
-    return-void
-
-    .line 30
-    nop
-
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return p1
 .end method

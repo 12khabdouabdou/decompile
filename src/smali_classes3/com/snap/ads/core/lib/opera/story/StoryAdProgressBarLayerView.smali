@@ -1,12 +1,12 @@
 .class public final Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
@@ -20,7 +20,7 @@
 
 .field public final j:Landroidx/recyclerview/widget/GridLayoutManager;
 
-.field public final k:LqKh;
+.field public final k:LF8i;
 
 .field public final l:Ljava/lang/String;
 
@@ -32,12 +32,12 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0e0336
+    const v0, 0x7f0e0353
 
     .line 5
     .line 6
@@ -57,7 +57,7 @@
 
     .line 13
     .line 14
-    const v1, 0x7f0b17c5
+    const v1, 0x7f0b1919
 
     .line 15
     .line 16
@@ -78,7 +78,7 @@
 
     .line 24
     .line 25
-    const v1, 0x7f0b17c4
+    const v1, 0x7f0b1918
 
     .line 26
     .line 27
@@ -115,20 +115,20 @@
 
     .line 43
     .line 44
-    new-instance v0, LqKh;
+    new-instance v0, LF8i;
 
     .line 45
     .line 46
-    invoke-direct {v0, p1}, LqKh;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, LF8i;-><init>(Landroid/content/Context;)V
 
     .line 47
     .line 48
     .line 49
-    iput-object v0, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->k:LqKh;
+    iput-object v0, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->k:LF8i;
 
     .line 50
     .line 51
-    const v0, 0x7f132eda
+    const v0, 0x7f13316a
 
     .line 52
     .line 53
@@ -151,17 +151,17 @@
 
 # virtual methods
 .method public final b()Ljava/lang/Object;
-    .locals 9
+    .locals 10
 
     .line 1
-    new-instance v0, LmKh;
+    new-instance v0, LB8i;
 
     .line 2
     .line 3
-    const/4 v6, 0x0
+    const/4 v7, 0x0
 
     .line 4
-    const/4 v7, 0x0
+    const/4 v8, 0x0
 
     .line 5
     const/4 v1, 0x0
@@ -179,14 +179,17 @@
     const/4 v5, 0x0
 
     .line 10
-    const/4 v8, 0x0
+    const/4 v6, 0x0
 
     .line 11
-    invoke-direct/range {v0 .. v8}, LmKh;-><init>(ZIIIZIZI)V
+    const/4 v9, 0x0
 
     .line 12
+    invoke-direct/range {v0 .. v9}, LB8i;-><init>(ZIIIZZIZI)V
+
     .line 13
     .line 14
+    .line 15
     return-object v0
 .end method
 
@@ -213,29 +216,29 @@
 
     .line 4
     .line 5
-    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 6
     .line 7
     .line 8
-    iget-object v0, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->k:LqKh;
+    iget-object v0, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->k:LF8i;
 
     .line 9
     .line 10
-    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->C0(LZXe;)V
 
     .line 11
     .line 12
     .line 13
-    new-instance v0, LNjh;
+    new-instance v0, LGuh;
 
     .line 14
     .line 15
-    const/16 v1, 0x10
+    const/16 v1, 0x1a
 
     .line 16
     .line 17
-    invoke-direct {v0, v1, p0}, LNjh;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LGuh;-><init>(ILjava/lang/Object;)V
 
     .line 18
     .line 19
@@ -273,7 +276,7 @@
 .end method
 
 .method public final j(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 9
+    .locals 10
 
     .line 1
     const/4 v0, 0x0
@@ -286,15 +289,15 @@
 
     .line 4
     .line 5
-    check-cast p1, LmKh;
+    check-cast p1, LB8i;
 
     .line 6
     .line 7
-    check-cast p2, LmKh;
+    check-cast p2, LB8i;
 
     .line 8
     .line 9
-    iget p2, p1, LmKh;->b:I
+    iget p2, p1, LB8i;->b:I
 
     .line 10
     .line 11
@@ -306,11 +309,11 @@
 
     .line 14
     .line 15
-    iget v5, p1, LmKh;->c:I
+    iget v5, p1, LB8i;->c:I
 
     .line 16
     .line 17
-    iget v6, p1, LmKh;->d:I
+    iget v6, p1, LB8i;->d:I
 
     .line 18
     .line 19
@@ -328,314 +331,321 @@
     .line 25
     .line 26
     .line 27
-    goto :goto_5
+    goto :goto_2
 
     .line 28
     :cond_0
-    iget-boolean v7, p1, LmKh;->a:Z
+    iget-boolean v7, p1, LB8i;->a:Z
 
     .line 29
     .line 30
-    iget-boolean v8, p1, LmKh;->e:Z
+    iget-boolean v8, p1, LB8i;->e:Z
 
     .line 31
     .line 32
-    if-eqz v7, :cond_2
+    iget-boolean v9, p1, LB8i;->f:Z
 
     .line 33
     .line 34
-    if-eqz v8, :cond_1
+    if-eqz v7, :cond_1
 
     .line 35
     .line 36
-    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p0, v8, v9}, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->l(ZZ)V
 
     .line 37
     .line 38
     .line 39
-    goto :goto_0
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 40
-    :cond_1
-    invoke-virtual {v4, v0}, Landroid/view/View;->setVisibility(I)V
-
     .line 41
     .line 42
+    goto :goto_2
+
     .line 43
-    :goto_0
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    :cond_1
+    if-eqz v6, :cond_5
 
     .line 44
     .line 45
-    .line 46
-    goto :goto_5
+    if-lt v6, p2, :cond_2
 
+    .line 46
     .line 47
-    :cond_2
-    if-eqz v6, :cond_7
+    goto :goto_1
 
     .line 48
+    :cond_2
+    sget-object v7, Lz8i;->a:Lz8i;
+
     .line 49
-    if-lt v6, p2, :cond_3
-
     .line 50
-    .line 51
-    goto :goto_3
+    if-ne v6, v1, :cond_3
 
+    .line 51
     .line 52
-    :cond_3
-    sget-object v7, LkKh;->a:LkKh;
+    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 53
     .line 54
-    if-ne v6, v1, :cond_4
-
     .line 55
-    .line 56
-    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
-
-    .line 57
-    .line 58
-    .line 59
     invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
 
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {p0, v7}, LoS9;->k(Ljava/lang/Object;)V
+
+    .line 59
     .line 60
     .line 61
+    goto :goto_2
+
     .line 62
-    invoke-virtual {p0, v7}, LPG9;->k(Ljava/lang/Object;)V
+    :cond_3
+    invoke-virtual {p0, v8, v9}, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->l(ZZ)V
 
     .line 63
     .line 64
     .line 65
-    goto :goto_5
+    add-int/lit8 v4, v6, -0x1
 
     .line 66
-    :cond_4
-    if-eqz v8, :cond_5
-
     .line 67
-    .line 68
-    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
+    if-ne v5, v4, :cond_4
 
+    .line 68
     .line 69
+    invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
+
     .line 70
     .line 71
-    goto :goto_1
-
     .line 72
-    :cond_5
-    invoke-virtual {v4, v0}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {p0, v7}, LoS9;->k(Ljava/lang/Object;)V
 
     .line 73
     .line 74
     .line 75
-    :goto_1
-    add-int/lit8 v4, v6, -0x1
+    goto :goto_0
 
     .line 76
-    .line 77
-    if-ne v5, v4, :cond_6
-
-    .line 78
-    .line 79
-    invoke-virtual {v2, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {p0, v7}, LPG9;->k(Ljava/lang/Object;)V
-
-    .line 83
-    .line 84
-    .line 85
-    goto :goto_2
-
-    .line 86
-    :cond_6
+    :cond_4
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
-    .line 87
-    .line 88
-    .line 89
-    :goto_2
+    .line 77
+    .line 78
+    .line 79
+    :goto_0
     move v3, v6
 
+    .line 80
+    goto :goto_3
+
+    .line 81
+    :cond_5
+    :goto_1
+    invoke-virtual {p0, v8, v9}, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->l(ZZ)V
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 85
+    .line 86
+    .line 87
+    :goto_2
+    move v3, p2
+
+    .line 88
+    :goto_3
+    iget v4, p1, LB8i;->i:I
+
+    .line 89
     .line 90
-    goto :goto_6
+    int-to-float v4, v4
 
     .line 91
-    :cond_7
-    :goto_3
-    if-eqz v8, :cond_8
+    iget-object v7, p0, LoS9;->a:Landroid/content/Context;
 
     .line 92
     .line 93
-    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
+    invoke-static {v4, v7}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 94
     .line 95
     .line 96
-    goto :goto_4
+    move-result v4
 
     .line 97
-    :cond_8
-    invoke-virtual {v4, v0}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 98
     .line 99
     .line 100
-    :goto_4
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    move-result-object v7
 
     .line 101
+    check-cast v7, Landroid/widget/FrameLayout$LayoutParams;
+
     .line 102
     .line 103
-    :goto_5
-    move v3, p2
+    iget-boolean p1, p1, LB8i;->h:Z
 
     .line 104
-    :goto_6
-    iget v4, p1, LmKh;->h:I
-
     .line 105
-    .line 106
-    int-to-float v4, v4
+    if-eqz p1, :cond_6
 
+    .line 106
     .line 107
-    iget-object v7, p0, LPG9;->a:Landroid/content/Context;
+    invoke-static {v4}, LbS2;->K(F)I
 
     .line 108
     .line 109
-    invoke-static {v4, v7}, Lsc5;->W(FLandroid/content/Context;)F
-
     .line 110
+    move-result p1
+
     .line 111
+    goto :goto_4
+
     .line 112
-    move-result v4
+    :cond_6
+    iget p1, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->m:I
 
     .line 113
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
     .line 114
+    :goto_4
+    iput p1, v7, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
+
     .line 115
     .line 116
-    move-result-object v7
+    invoke-virtual {v2, v7}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 117
-    check-cast v7, Landroid/widget/FrameLayout$LayoutParams;
-
     .line 118
     .line 119
-    iget-boolean p1, p1, LmKh;->g:Z
+    iget-object p1, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->j:Landroidx/recyclerview/widget/GridLayoutManager;
 
     .line 120
     .line 121
-    if-eqz p1, :cond_9
+    invoke-virtual {p1, v3}, Landroidx/recyclerview/widget/GridLayoutManager;->X1(I)V
 
     .line 122
     .line 123
-    invoke-static {v4}, LI0j;->K(F)I
-
     .line 124
+    iget-object p1, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->k:LF8i;
+
     .line 125
     .line 126
-    move-result p1
+    iput v3, p1, LF8i;->Z:I
 
     .line 127
-    goto :goto_7
-
     .line 128
-    :cond_9
-    iget p1, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->m:I
+    iput v5, p1, LF8i;->e0:I
 
     .line 129
     .line 130
-    :goto_7
-    iput p1, v7, Landroid/widget/FrameLayout$LayoutParams;->topMargin:I
+    const/4 v4, 0x0
 
     .line 131
-    .line 132
-    invoke-virtual {v2, v7}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    iget-object p1, p1, LZXe;->a:LaYe;
 
+    .line 132
     .line 133
+    invoke-virtual {p1, v0, v3, v4}, LaYe;->d(IILjava/lang/Object;)V
+
     .line 134
     .line 135
-    iget-object p1, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->j:Landroidx/recyclerview/widget/GridLayoutManager;
-
     .line 136
+    sub-int/2addr p2, v6
+
     .line 137
-    invoke-virtual {p1, v3}, Landroidx/recyclerview/widget/GridLayoutManager;->S1(I)V
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 138
     .line 139
     .line 140
-    iget-object p1, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->k:LqKh;
+    move-result-object p1
 
     .line 141
+    new-array p2, v1, [Ljava/lang/Object;
+
     .line 142
-    iput v3, p1, LqKh;->Z:I
-
     .line 143
+    aput-object p1, p2, v0
+
     .line 144
-    iput v5, p1, LqKh;->e0:I
-
     .line 145
+    invoke-static {p2, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
     .line 146
-    const/4 v4, 0x0
-
     .line 147
-    iget-object p1, p1, LrGe;->a:LsGe;
-
     .line 148
+    move-result-object p1
+
     .line 149
-    invoke-virtual {p1, v0, v3, v4}, LsGe;->d(IILjava/lang/Object;)V
+    iget-object p2, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->l:Ljava/lang/String;
 
     .line 150
     .line 151
-    .line 152
-    sub-int/2addr p2, v6
-
-    .line 153
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 154
-    .line 155
-    .line 156
-    move-result-object p1
-
-    .line 157
-    new-array p2, v1, [Ljava/lang/Object;
-
-    .line 158
-    .line 159
-    aput-object p1, p2, v0
-
-    .line 160
-    .line 161
-    invoke-static {p2, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    .line 162
-    .line 163
-    .line 164
-    move-result-object p1
-
-    .line 165
-    iget-object p2, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->l:Ljava/lang/String;
-
-    .line 166
-    .line 167
     invoke-static {p2, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    .line 168
-    .line 169
-    .line 170
+    .line 152
+    .line 153
+    .line 154
     move-result-object p1
 
-    .line 171
-    invoke-virtual {v2, p1}, Lcom/snap/component/button/SnapButtonView;->k(Ljava/lang/CharSequence;)V
+    .line 155
+    invoke-virtual {v2, p1}, Lcom/snap/component/button/SnapButtonView;->j(Ljava/lang/CharSequence;)V
 
-    .line 172
-    .line 173
-    .line 174
+    .line 156
+    .line 157
+    .line 158
+    return-void
+.end method
+
+.method public final l(ZZ)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/ads/core/lib/opera/story/StoryAdProgressBarLayerView;->h:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 2
+    .line 3
+    if-nez p1, :cond_1
+
+    .line 4
+    .line 5
+    if-eqz p2, :cond_0
+
+    .line 6
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 9
+    invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+
+    .line 13
+    :cond_1
+    :goto_0
+    const/16 p1, 0x8
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 16
+    .line 17
+    .line 18
     return-void
 .end method

@@ -1,16 +1,20 @@
 .class public final LAH2;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:LsNd;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'messageSendingObservable\':g<c>:\'[0]\'<b@>,\'onLoadFailed\':f(),\'onLoadSuccess\':f()"
+    typeReferences = {
+        Lcom/snap/composer/bridge_observables/BridgeObservable;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;LsNd;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -19,13 +23,5 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LAH2;->a:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LAH2;->b:LsNd;
-
-    .line 7
-    .line 8
     return-void
 .end method

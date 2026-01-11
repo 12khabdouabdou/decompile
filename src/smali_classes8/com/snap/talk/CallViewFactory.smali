@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talk/CallViewFactory;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'screenShareVideoViewFactory\':r?:\'[0]\'"
     typeReferences = {
@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public final a(LjI9;)V
+.method public final a(LFT9;)V
     .locals 0
 
     .line 1

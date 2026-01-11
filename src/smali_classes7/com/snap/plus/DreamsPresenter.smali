@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LZw6;
+    proxyClass = LuA6;
     schema = "\'presentDreamsCrossSellPage\':f|m|()"
     typeReferences = {}
 .end annotation

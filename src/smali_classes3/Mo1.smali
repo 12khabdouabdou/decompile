@@ -3,104 +3,196 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:LOo1;
 
-.field public final synthetic b:LOo1;
+.field public final synthetic b:Lap1;
+
+.field public final synthetic c:LSy9;
 
 
 # direct methods
-.method public synthetic constructor <init>(LOo1;I)V
+.method public constructor <init>(LOo1;Lap1;LSy9;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LMo1;->a:I
-
-    iput-object p1, p0, LMo1;->b:LOo1;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LMo1;->a:LOo1;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LMo1;->b:Lap1;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LMo1;->c:LSy9;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    iget v0, p0, LMo1;->a:I
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    iget-object p1, p0, LMo1;->a:LOo1;
 
     .line 7
     .line 8
-    iget-object p1, p0, LMo1;->b:LOo1;
+    iget-object p1, p1, LOo1;->m0:Lnv4;
 
     .line 9
     .line 10
-    iget-object p1, p1, LOo1;->e:Lrn0;
+    invoke-virtual {p1}, Lnv4;->get()Ljava/lang/Object;
 
     .line 11
     .line 12
-    return-void
-
     .line 13
-    :pswitch_0
-    check-cast p1, Ljava/lang/Boolean;
+    move-result-object p1
 
     .line 14
-    .line 15
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast p1, LKm1;
 
+    .line 15
     .line 16
+    iget-object v0, p0, LMo1;->b:Lap1;
+
     .line 17
     .line 18
-    iget-object p1, p0, LMo1;->b:LOo1;
+    iget-object v2, v0, Lap1;->i:Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;
 
     .line 19
     .line 20
-    iget-object p1, p1, LOo1;->e:Lrn0;
+    const/4 v1, 0x1
 
     .line 21
+    const/4 v3, 0x0
+
     .line 22
-    return-void
+    iget-object v4, v0, Lap1;->c:[I
 
     .line 23
-    :pswitch_1
-    check-cast p1, Ljava/lang/Boolean;
-
     .line 24
+    if-eqz v4, :cond_0
+
     .line 25
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
     .line 26
-    .line 27
-    .line 28
-    iget-object p1, p0, LMo1;->b:LOo1;
+    array-length v5, v4
 
+    .line 27
+    if-ne v5, v1, :cond_0
+
+    .line 28
     .line 29
+    move-object v6, v4
+
     .line 30
-    iget-object p1, p1, LOo1;->e:Lrn0;
+    const/4 v3, 0x1
 
     .line 31
+    :goto_0
+    const/4 v5, 0x0
+
     .line 32
-    return-void
+    goto :goto_1
 
     .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :cond_0
+    move-object v6, v4
+
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :goto_1
+    new-instance v4, Ltmh;
+
+    .line 36
+    .line 37
+    if-eqz v6, :cond_1
+
+    .line 38
+    .line 39
+    array-length v6, v6
+
+    .line 40
+    if-ne v6, v1, :cond_1
+
+    .line 41
+    .line 42
+    goto :goto_2
+
+    .line 43
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 44
+    :goto_2
+    iget-object v5, p0, LMo1;->c:LSy9;
+
+    .line 45
+    .line 46
+    invoke-direct {v4, v5, v1}, Ltmh;-><init>(LSy9;Z)V
+
+    .line 47
+    .line 48
+    .line 49
+    sget-object v5, LgP6;->a:LgP6;
+
+    .line 50
+    .line 51
+    move-object v1, p1
+
+    .line 52
+    check-cast v1, LPm1;
+
+    .line 53
+    .line 54
+    const/4 v6, 0x0
+
+    .line 55
+    iget-object v7, v0, Lap1;->f:Ljava/util/List;
+
+    .line 56
+    .line 57
+    invoke-virtual/range {v1 .. v7}, LPm1;->c(Lapp/aifactory/sdk/api/model/ResourceId;ZLtmh;Ljava/util/List;ZLjava/util/List;)Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p1
+
+    .line 61
+    sget-object v0, Lpx9;->r0:Lpx9;
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->i0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    return-object p1
 .end method

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lvnj;
+    proxyClass = LvMj;
     schema = "\'getUserLocation\':f|m|(f(r?:\'[0]\', s?, s?))"
     typeReferences = {
         Lcom/snap/composer/location/GeoPoint;

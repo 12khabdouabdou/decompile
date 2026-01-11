@@ -1,106 +1,145 @@
 .class public final LSTa;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements LTTa;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LTTa;
+.field public final a:[B
 
 
 # direct methods
-.method public synthetic constructor <init>(LTTa;I)V
+.method public constructor <init>([B)V
     .locals 0
 
     .line 1
-    iput p2, p0, LSTa;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LSTa;->b:LTTa;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LSTa;->a:[B
 
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    iget v0, p0, LSTa;->a:I
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LSTa;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LSTa;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LSTa;->a:[B
+
+    .line 14
+    .line 15
+    iget-object p1, p1, LSTa;->a:[B
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LSTa;->a:[B
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, LSlb;
+    move-result v0
 
     .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LSTa;->a:[B
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const-string v1, "Success(token="
+
     .line 8
-    iget-object v0, p0, LSTa;->b:LTTa;
-
     .line 9
+    const-string v2, ")"
+
     .line 10
-    iget-object v0, v0, LTTa;->m0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 11
-    .line 12
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+    invoke-static {v1, v0, v2}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 12
     .line 13
     .line 14
+    move-result-object v0
+
     .line 15
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 16
-    .line 17
-    return-object p1
-
-    .line 18
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 19
-    .line 20
-    iget-object v0, p0, LSTa;->b:LTTa;
-
-    .line 21
-    .line 22
-    iget-object v1, v0, LTTa;->o0:Lrn0;
-
-    .line 23
-    .line 24
-    const/16 v1, 0x31
-
-    .line 25
-    .line 26
-    invoke-virtual {v0, v1, p1}, LDJ0;->Q2(ILjava/lang/Throwable;)V
-
-    .line 27
-    .line 28
-    .line 29
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 30
-    .line 31
-    return-object p1
-
-    .line 32
-    nop
-
-    .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

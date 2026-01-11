@@ -1,246 +1,166 @@
-.class public Lfo5;
+.class public final Lfo5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LI02;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final a:Loo5;
+.field public final synthetic a:I
 
-.field public b:Ljava/lang/Integer;
+.field public final synthetic b:LTg;
 
-.field public c:Ljava/lang/Integer;
+.field public final synthetic c:Z
+
+.field public final synthetic d:Lko5;
+
+.field public final synthetic e:Lxq;
 
 
 # direct methods
-.method public constructor <init>(Loo5;)V
-    .locals 1
+.method public synthetic constructor <init>(LTg;ZLko5;Lxq;I)V
+    .locals 0
 
     .line 1
+    iput p5, p0, Lfo5;->a:I
+
+    iput-object p1, p0, Lfo5;->b:LTg;
+
+    iput-boolean p2, p0, Lfo5;->c:Z
+
+    iput-object p3, p0, Lfo5;->d:Lko5;
+
+    iput-object p4, p0, Lfo5;->e:Lxq;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lfo5;->a:Loo5;
-
-    .line 5
-    .line 6
-    iget-object v0, p1, Ll12;->d:Li12;
-
-    .line 7
-    .line 8
-    check-cast v0, Lno5;
-
-    .line 9
-    .line 10
-    iget-object v0, v0, Lno5;->e:Ljava/lang/Integer;
-
-    .line 11
-    .line 12
-    iput-object v0, p0, Lfo5;->b:Ljava/lang/Integer;
-
-    .line 13
-    .line 14
-    iget-object p1, p1, Ll12;->d:Li12;
-
-    .line 15
-    .line 16
-    check-cast p1, Lno5;
-
-    .line 17
-    .line 18
-    iget-object p1, p1, Lno5;->e:Ljava/lang/Integer;
-
-    .line 19
-    .line 20
-    iput-object p1, p0, Lfo5;->c:Ljava/lang/Integer;
-
-    .line 21
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Z)V
-    .locals 7
+.method public final run()V
+    .locals 4
 
     .line 1
-    if-eqz p1, :cond_0
+    iget v0, p0, Lfo5;->a:I
 
     .line 2
     .line 3
-    iget-object v0, p0, Lfo5;->b:Ljava/lang/Integer;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    :goto_0
-    move-object v4, v0
-
     .line 6
-    goto :goto_1
+    iget-object v0, p0, Lfo5;->b:LTg;
 
     .line 7
-    :cond_0
-    iget-object v0, p0, Lfo5;->c:Ljava/lang/Integer;
-
     .line 8
-    .line 9
-    goto :goto_0
+    iget-boolean v1, v0, LTg;->g:Z
 
+    .line 9
     .line 10
-    :goto_1
-    iget-object v0, p0, Lfo5;->a:Loo5;
+    if-nez v1, :cond_0
 
     .line 11
     .line 12
-    iget-object v1, v0, Ll12;->d:Li12;
+    iget-boolean v0, v0, LTg;->f:Z
 
     .line 13
     .line 14
-    check-cast v1, Lno5;
+    if-nez v0, :cond_0
 
     .line 15
     .line 16
-    const/4 v3, 0x0
+    iget-boolean v0, p0, Lfo5;->c:Z
 
     .line 17
-    const/16 v6, 0x6d
-
     .line 18
-    .line 19
-    const/4 v5, 0x0
+    if-nez v0, :cond_0
 
+    .line 19
     .line 20
-    move v2, p1
+    const/4 v0, 0x1
 
     .line 21
-    invoke-static/range {v1 .. v6}, Lno5;->e(Lno5;ZLS02;Ljava/lang/Integer;ZI)Lno5;
+    const/4 v1, 0x0
 
     .line 22
+    iget-object v2, p0, Lfo5;->d:Lko5;
+
     .line 23
     .line 24
-    move-result-object p1
+    iget-object v3, p0, Lfo5;->e:Lxq;
 
     .line 25
-    invoke-virtual {v0, p1}, Ll12;->c(Li12;)V
-
     .line 26
+    invoke-virtual {v2, v3, v0, v1}, Lko5;->c(Lxq;ZLjava/util/Set;)V
+
     .line 27
     .line 28
+    .line 29
+    :cond_0
     return-void
-.end method
 
-.method public b(Z)V
-    .locals 0
+    .line 30
+    :pswitch_0
+    iget-object v0, p0, Lfo5;->b:LTg;
 
-    .line 1
+    .line 31
+    .line 32
+    iget-boolean v1, v0, LTg;->g:Z
+
+    .line 33
+    .line 34
+    if-nez v1, :cond_1
+
+    .line 35
+    .line 36
+    iget-boolean v0, v0, LTg;->f:Z
+
+    .line 37
+    .line 38
+    if-nez v0, :cond_1
+
+    .line 39
+    .line 40
+    iget-boolean v0, p0, Lfo5;->c:Z
+
+    .line 41
+    .line 42
+    if-nez v0, :cond_1
+
+    .line 43
+    .line 44
+    const/4 v0, 0x0
+
+    .line 45
+    const/4 v1, 0x0
+
+    .line 46
+    iget-object v2, p0, Lfo5;->d:Lko5;
+
+    .line 47
+    .line 48
+    iget-object v3, p0, Lfo5;->e:Lxq;
+
+    .line 49
+    .line 50
+    invoke-virtual {v2, v3, v0, v1}, Lko5;->c(Lxq;ZLjava/util/Set;)V
+
+    .line 51
+    .line 52
+    .line 53
+    :cond_1
     return-void
-.end method
 
-.method public final c(Z)V
-    .locals 0
+    .line 54
+    nop
 
-    .line 1
-    iget-object p1, p0, Lfo5;->a:Loo5;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final d()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final e()V
-    .locals 8
-
-    .line 1
-    iget-object v0, p0, Lfo5;->a:Loo5;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Ll12;->d:Li12;
-
-    .line 4
-    .line 5
-    move-object v2, v1
-
-    .line 6
-    check-cast v2, Lno5;
-
-    .line 7
-    .line 8
-    const/4 v4, 0x0
-
-    .line 9
-    const/16 v7, 0x7f
-
-    .line 10
-    .line 11
-    const/4 v3, 0x0
-
-    .line 12
-    const/4 v5, 0x0
-
-    .line 13
-    const/4 v6, 0x0
-
-    .line 14
-    invoke-static/range {v2 .. v7}, Lno5;->e(Lno5;ZLS02;Ljava/lang/Integer;ZI)Lno5;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v1
-
-    .line 18
-    invoke-virtual {v0, v1}, Ll12;->c(Li12;)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-.end method
-
-.method public final f()Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lfo5;->a:Loo5;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ll12;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final g()LEId;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lmj;->Y:Lmj;
-
-    .line 2
-    .line 3
-    return-object v0
+    .line 55
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

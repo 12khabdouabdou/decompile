@@ -62,7 +62,7 @@
 
     .line 22
     .line 23
-    invoke-static {p4}, Liuk;->g([[B)[B
+    invoke-static {p4}, LZUk;->m([[B)[B
 
     .line 24
     .line 25
@@ -155,7 +155,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, Liuk;->g([[B)[B
+    invoke-static {v0}, LZUk;->m([[B)[B
 
     .line 11
     .line 12

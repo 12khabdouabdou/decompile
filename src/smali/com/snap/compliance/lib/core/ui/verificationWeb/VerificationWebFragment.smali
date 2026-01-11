@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lfzj;
+.implements LrYj;
 
 
 # instance fields
@@ -13,9 +13,9 @@
 
 .field public x0:Landroid/webkit/WebView;
 
-.field public y0:LzE;
+.field public y0:LrG;
 
-.field public z0:Lezj;
+.field public z0:LqYj;
 
 
 # direct methods
@@ -33,36 +33,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()Lezj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, Lezj;->W2(Lfzj;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e07d9
+    const p3, 0x7f0e0803
 
     .line 2
     .line 3
@@ -81,7 +56,7 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
 
     .line 1
@@ -133,7 +108,7 @@
 
     .line 21
     .line 22
-    new-instance p2, LEsj;
+    new-instance p2, LS7j;
 
     .line 23
     .line 24
@@ -145,16 +120,16 @@
     move-result-object v1
 
     .line 28
-    invoke-direct {p2, v1}, LEsj;-><init>(Landroidx/fragment/app/FragmentActivity;)V
+    invoke-direct {p2, v1}, LS7j;-><init>(Landroidx/fragment/app/FragmentActivity;)V
 
     .line 29
     .line 30
     .line 31
-    const-class v1, LEE;
+    const-class v1, LwG;
 
     .line 32
     .line 33
-    invoke-virtual {p2, v1}, LEsj;->d(Ljava/lang/Class;)LyJj;
+    invoke-virtual {p2, v1}, LS7j;->a(Ljava/lang/Class;)Lb9k;
 
     .line 34
     .line 35
@@ -162,11 +137,11 @@
     move-result-object p2
 
     .line 37
-    check-cast p2, LEE;
+    check-cast p2, LwG;
 
     .line 38
     .line 39
-    invoke-virtual {p2}, LEE;->c()Lkdc;
+    invoke-virtual {p2}, LwG;->c()Lfsc;
 
     .line 40
     .line 41
@@ -182,7 +157,7 @@
     move-result-object p2
 
     .line 47
-    check-cast p2, LzE;
+    check-cast p2, LrG;
 
     .line 48
     .line 49
@@ -190,15 +165,15 @@
 
     .line 50
     .line 51
-    new-instance p2, LzE;
+    new-instance p2, LrG;
 
     .line 52
     .line 53
-    new-instance v1, LB5$a$a;
+    new-instance v1, Lo6$a$a;
 
     .line 54
     .line 55
-    invoke-direct {v1}, LB5$a$a;-><init>()V
+    invoke-direct {v1}, Lo6$a$a;-><init>()V
 
     .line 56
     .line 57
@@ -206,17 +181,17 @@
     const/4 v2, 0x6
 
     .line 59
-    invoke-direct {p2, v1, v0, v2}, LzE;-><init>(LB5$a$a;Ljava/lang/String;I)V
+    invoke-direct {p2, v1, v0, v2}, LrG;-><init>(Lo6$a$a;Ljava/lang/String;I)V
 
     .line 60
     .line 61
     .line 62
     :cond_2
-    iput-object p2, p0, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->y0:LzE;
+    iput-object p2, p0, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->y0:LrG;
 
     .line 63
     .line 64
-    const p2, 0x7f0b0132
+    const p2, 0x7f0b016e
 
     .line 65
     .line 66
@@ -237,7 +212,7 @@
 
     .line 74
     .line 75
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()Lezj;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()LqYj;
 
     .line 76
     .line 77
@@ -253,12 +228,12 @@
 
     .line 82
     .line 83
-    invoke-virtual {p2, v1}, Lezj;->S2(Ljava/lang/String;)V
+    invoke-virtual {p2, v1}, LqYj;->d3(Ljava/lang/String;)V
 
     .line 84
     .line 85
     .line 86
-    const p2, 0x7f0b01c6
+    const p2, 0x7f0b0210
 
     .line 87
     .line 88
@@ -279,7 +254,7 @@
 
     .line 96
     .line 97
-    const p2, 0x7f0b1759
+    const p2, 0x7f0b189b
 
     .line 98
     .line 99
@@ -336,7 +311,7 @@
 
     .line 123
     .line 124
-    const p2, 0x7f133517
+    const p2, 0x7f1337e0
 
     .line 125
     .line 126
@@ -362,15 +337,15 @@
 
     .line 137
     .line 138
-    new-instance p2, Lmai;
+    new-instance p2, Lhdi;
 
     .line 139
     .line 140
-    const/16 v0, 0xc
+    const/16 v0, 0x14
 
     .line 141
     .line 142
-    invoke-direct {p2, v0, p0}, Lmai;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v0, p0}, Lhdi;-><init>(ILjava/lang/Object;)V
 
     .line 143
     .line 144
@@ -388,7 +363,7 @@
 
     .line 150
     .line 151
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 152
     .line 153
@@ -401,7 +376,7 @@
 
     .line 156
     .line 157
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 158
     .line 159
@@ -409,11 +384,11 @@
     throw v0
 .end method
 
-.method public final U1()Lezj;
+.method public final U1()LqYj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->z0:Lezj;
+    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->z0:LqYj;
 
     .line 2
     .line 3
@@ -429,7 +404,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -444,7 +419,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()Lezj;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()LqYj;
 
     .line 2
     .line 3
@@ -452,11 +427,11 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, LUE;->c:LUE;
+    sget-object v1, LMG;->c:LMG;
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1}, Lezj;->Q2(LUE;)V
+    invoke-virtual {v0, v1}, LqYj;->c3(LMG;)V
 
     .line 8
     .line 9
@@ -472,11 +447,11 @@
     return v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -484,40 +459,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final u1()V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()Lezj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    sget-object v0, LUE;->b:LUE;
-
-    .line 9
-    .line 10
-    invoke-virtual {p1, v0}, Lezj;->Q2(LUE;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public final w1()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()Lezj;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()LqYj;
 
     .line 2
     .line 3
@@ -525,10 +471,64 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, Lezj;->C1()V
+    invoke-virtual {v0}, LqYj;->D1()V
 
     .line 6
     .line 7
     .line 8
+    return-void
+.end method
+
+.method public final v(LiGc;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()LqYj;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    sget-object v0, LMG;->b:LMG;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1, v0}, LqYj;->c3(LMG;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/verificationWeb/VerificationWebFragment;->U1()LqYj;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, LqYj;->f3(LrYj;)V
+
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

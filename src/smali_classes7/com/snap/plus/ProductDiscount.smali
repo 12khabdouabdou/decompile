@@ -1,15 +1,15 @@
 .class public final Lcom/snap/plus/ProductDiscount;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'paymentMode\':r<e>:\'[0]\',\'period\':r:\'[1]\',\'numberOfPeriods\':d,\'price\':r:\'[2]\'"
     typeReferences = {
         Lcom/snap/plus/ProductDiscountPaymentMode;,
-        Lcom/snap/plus/SubscriptionPeriod;,
+        Lcom/snap/modules/plus_api/SubscriptionPeriod;,
         Lcom/snap/plus_iap/ProductPrice;
     }
 .end annotation
@@ -20,13 +20,13 @@
 
 .field private _paymentMode:Lcom/snap/plus/ProductDiscountPaymentMode;
 
-.field private _period:Lcom/snap/plus/SubscriptionPeriod;
+.field private _period:Lcom/snap/modules/plus_api/SubscriptionPeriod;
 
 .field private _price:Lcom/snap/plus_iap/ProductPrice;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/plus/ProductDiscountPaymentMode;Lcom/snap/plus/SubscriptionPeriod;DLcom/snap/plus_iap/ProductPrice;)V
+.method public constructor <init>(Lcom/snap/plus/ProductDiscountPaymentMode;Lcom/snap/modules/plus_api/SubscriptionPeriod;DLcom/snap/plus_iap/ProductPrice;)V
     .locals 0
 
     .line 1
@@ -39,7 +39,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/plus/ProductDiscount;->_period:Lcom/snap/plus/SubscriptionPeriod;
+    iput-object p2, p0, Lcom/snap/plus/ProductDiscount;->_period:Lcom/snap/modules/plus_api/SubscriptionPeriod;
 
     .line 7
     .line 8

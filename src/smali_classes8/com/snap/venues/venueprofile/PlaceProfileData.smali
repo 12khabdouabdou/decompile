@@ -1,10 +1,10 @@
 .class public final Lcom/snap/venues/venueprofile/PlaceProfileData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'infoModel\':r?:\'[0]\',\'actionButtons\':a?<r<e>:\'[1]\'>,\'popularHours\':r?:\'[2]\',\'reviews\':r?:\'[3]\'"
     typeReferences = {

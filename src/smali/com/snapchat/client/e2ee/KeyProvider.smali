@@ -47,13 +47,13 @@
     .end annotation
 .end method
 
-.method public abstract getKeysForUsersAsync(Ljava/util/ArrayList;Lcom/snapchat/client/e2ee/GetKeysForUsersCallback;)V
+.method public abstract getKeysForUsersAsync(Ljava/util/ArrayList;ZLcom/snapchat/client/e2ee/GetKeysForUsersCallback;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/ArrayList<",
             "Lcom/snapchat/client/e2ee/UUID;",
-            ">;",
+            ">;Z",
             "Lcom/snapchat/client/e2ee/GetKeysForUsersCallback;",
             ")V"
         }

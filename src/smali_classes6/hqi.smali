@@ -1,36 +1,30 @@
-.class public abstract Lhqi;
-.super Ljava/lang/Object;
+.class public final Lhqi;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LWm0;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'onStreakPillTap\':f?(r:\'[0]\'),\'onStreakRestorePillTap\':f?(s?),\'profileStreakDataObservable\':g?<c>:\'[1]\'<r:\'[2]\'>,\'cofStore\':r?:\'[3]\'"
+    typeReferences = {
+        Lcom/snap/profile/flatland/ProfileStreakData;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lbue;,
+        Lcom/snap/composer/cof/ICOFStore;
+    }
+.end annotation
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    sget-object v0, Ljwb;->Z:Ljwb;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "TemplatesActionEventHandler"
-
     .line 4
-    .line 5
-    invoke-static {v0, v0, v1}, LmG8;->d(Ljwb;Ljwb;Ljava/lang/String;)LWm0;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    sput-object v0, Lhqi;->a:LWm0;
-
-    .line 10
-    .line 11
     return-void
 .end method

@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field public final c:LiS5;
+.field public final c:LvN7;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, LiS5;->q0:LiS5;
+    sget-object v0, LvN7;->X:LvN7;
 
     .line 2
     .line 3
@@ -41,7 +41,7 @@
     .line 4
     .line 5
     .line 6
-    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDematerialize;->c:LiS5;
+    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDematerialize;->c:LvN7;
 
     .line 7
     .line 8
@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -58,11 +58,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDematerialize;->c:LiS5;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDematerialize;->c:LvN7;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDematerialize$DematerializeSubscriber;-><init>(LV6i;LiS5;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDematerialize$DematerializeSubscriber;-><init>(Lmvi;LvN7;)V
 
     .line 6
     .line 7

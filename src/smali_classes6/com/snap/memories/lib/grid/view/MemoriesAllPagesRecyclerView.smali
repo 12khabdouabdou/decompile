@@ -12,7 +12,7 @@
 
 .field public D1:I
 
-.field public final z1:LXfi;
+.field public final z1:LREi;
 
 
 # direct methods
@@ -25,29 +25,29 @@
     .line 2
     .line 3
     .line 4
-    new-instance p1, Lufb;
+    new-instance p1, LItb;
 
     .line 5
     .line 6
-    const/16 p2, 0x10
+    const/16 p2, 0xd
 
     .line 7
     .line 8
-    invoke-direct {p1, p2, p0}, Lufb;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LItb;-><init>(ILjava/lang/Object;)V
 
     .line 9
     .line 10
     .line 11
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
     .line 12
     .line 13
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object p2, p0, Lcom/snap/memories/lib/grid/view/MemoriesAllPagesRecyclerView;->z1:LXfi;
+    iput-object p2, p0, Lcom/snap/memories/lib/grid/view/MemoriesAllPagesRecyclerView;->z1:LREi;
 
     .line 17
     .line 18
@@ -231,11 +231,11 @@
     move-result v2
 
     .line 48
-    iget-object v4, p0, Lcom/snap/memories/lib/grid/view/MemoriesAllPagesRecyclerView;->z1:LXfi;
+    iget-object v4, p0, Lcom/snap/memories/lib/grid/view/MemoriesAllPagesRecyclerView;->z1:LREi;
 
     .line 49
     .line 50
-    invoke-virtual {v4}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v4}, LREi;->getValue()Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -282,7 +282,7 @@
 
     .line 72
     :cond_2
-    invoke-virtual {v4}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v4}, LREi;->getValue()Ljava/lang/Object;
 
     .line 73
     .line 74

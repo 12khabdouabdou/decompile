@@ -1,29 +1,27 @@
 .class public final LZFc;
-.super Ljava/lang/Object;
+.super LaGc;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LKFc;
-
-.field public final b:Z
+# static fields
+.field public static final a:LZFc;
 
 
 # direct methods
-.method public constructor <init>(LKFc;Z)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LZFc;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LZFc;->a:LKFc;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-boolean p2, p0, LZFc;->b:Z
+    sput-object v0, LZFc;->a:LZFc;
 
     .line 7
     .line 8

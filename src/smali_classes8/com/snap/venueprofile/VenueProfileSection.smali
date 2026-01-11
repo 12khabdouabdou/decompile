@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'OVERVIEW\':0,\'SEE_ON_SNAP_MAP\':1,\'REVIEWS\':2,\'POPULAR_TIMES\':4,\'EXPLORE_EVENTS\':5,\'OPEN_HOURS\':6,\'STORIES\':3"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

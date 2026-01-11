@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKI8;
+.implements LfQ8;
 
 
 # virtual methods
-.method public final androidInjector()LtQ;
+.method public final androidInjector()LyS;
     .locals 1
 
     .line 1
@@ -21,7 +21,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, LCq9;->v0(Landroid/app/Activity;)V
+    invoke-static {p0}, LbS2;->u(Landroid/app/Activity;)V
 
     .line 2
     .line 3

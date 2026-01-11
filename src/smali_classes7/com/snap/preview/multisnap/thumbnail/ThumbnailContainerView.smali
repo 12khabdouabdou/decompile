@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final A0:LXfi;
+.field public final A0:LREi;
 
-.field public final B0:LXfi;
+.field public final B0:LREi;
 
 .field public final p0:Landroid/widget/OverScroller;
 
@@ -103,7 +103,7 @@
     const/high16 v1, 0x41800000    # 16.0f
 
     .line 10
-    invoke-static {v1, p1, v0}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v1, p1, v0}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -116,34 +116,34 @@
     invoke-virtual {p0, p1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 13
-    new-instance p1, LOxi;
+    new-instance p1, LQWi;
 
     const/4 v0, 0x1
 
-    invoke-direct {p1, p0, v0}, LOxi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
+    invoke-direct {p1, p0, v0}, LQWi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
 
     .line 14
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 15
-    iput-object v0, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LXfi;
+    iput-object v0, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LREi;
 
     .line 16
-    new-instance p1, LOxi;
+    new-instance p1, LQWi;
 
     const/4 v0, 0x0
 
-    invoke-direct {p1, p0, v0}, LOxi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
+    invoke-direct {p1, p0, v0}, LQWi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
 
     .line 17
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 18
-    iput-object v0, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LXfi;
+    iput-object v0, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LREi;
 
     return-void
 .end method
@@ -219,7 +219,7 @@
     const/high16 v0, 0x41800000    # 16.0f
 
     .line 28
-    invoke-static {v0, p1, p2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v0, p1, p2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -232,34 +232,34 @@
     invoke-virtual {p0, p1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 31
-    new-instance p1, LOxi;
+    new-instance p1, LQWi;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LOxi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
+    invoke-direct {p1, p0, p2}, LQWi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
 
     .line 32
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 33
-    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LXfi;
+    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LREi;
 
     .line 34
-    new-instance p1, LOxi;
+    new-instance p1, LQWi;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LOxi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
+    invoke-direct {p1, p0, p2}, LQWi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
 
     .line 35
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 36
-    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LXfi;
+    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LREi;
 
     return-void
 .end method
@@ -335,7 +335,7 @@
     const/high16 p3, 0x41800000    # 16.0f
 
     .line 46
-    invoke-static {p3, p1, p2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {p3, p1, p2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -348,34 +348,34 @@
     invoke-virtual {p0, p1}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 49
-    new-instance p1, LOxi;
+    new-instance p1, LQWi;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LOxi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
+    invoke-direct {p1, p0, p2}, LQWi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
 
     .line 50
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 51
-    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LXfi;
+    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LREi;
 
     .line 52
-    new-instance p1, LOxi;
+    new-instance p1, LQWi;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LOxi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
+    invoke-direct {p1, p0, p2}, LQWi;-><init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
 
     .line 53
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 54
-    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LXfi;
+    iput-object p2, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LREi;
 
     return-void
 .end method
@@ -441,7 +441,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->g()Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->f()Landroidx/recyclerview/widget/RecyclerView;
 
     .line 30
     .line 31
@@ -497,7 +497,7 @@
     return-void
 .end method
 
-.method public final g()Landroidx/recyclerview/widget/RecyclerView;
+.method public final f()Landroidx/recyclerview/widget/RecyclerView;
     .locals 4
 
     .line 1
@@ -559,11 +559,11 @@
     return-object v0
 .end method
 
-.method public final h()Z
+.method public final g()Z
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->g()Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->f()Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     .line 3
@@ -649,11 +649,11 @@
     return v0
 .end method
 
-.method public final i(II)Z
+.method public final h(II)Z
     .locals 6
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->g()Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->f()Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     .line 3
@@ -884,7 +884,7 @@
     float-to-int v3, v3
 
     .line 63
-    invoke-virtual {p0, v0, v3}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->i(II)Z
+    invoke-virtual {p0, v0, v3}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->h(II)Z
 
     .line 64
     .line 65
@@ -896,7 +896,7 @@
 
     .line 68
     .line 69
-    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->h()Z
+    invoke-virtual {p0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->g()Z
 
     .line 70
     .line 71
@@ -1034,7 +1034,7 @@
 
     .line 34
     .line 35
-    iget-object v5, v0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LXfi;
+    iget-object v5, v0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LREi;
 
     .line 36
     .line 37
@@ -1090,7 +1090,7 @@
     move-result v2
 
     .line 60
-    invoke-virtual {v5}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, LREi;->getValue()Ljava/lang/Object;
 
     .line 61
     .line 62
@@ -1125,7 +1125,7 @@
     move-result v1
 
     .line 77
-    invoke-virtual {v5}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, LREi;->getValue()Ljava/lang/Object;
 
     .line 78
     .line 79
@@ -1152,11 +1152,11 @@
 
     .line 89
     :cond_3
-    iget-object v2, v0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LXfi;
+    iget-object v2, v0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->B0:LREi;
 
     .line 90
     .line 91
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 92
     .line 93
@@ -1180,7 +1180,7 @@
 
     .line 102
     .line 103
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 104
     .line 105
@@ -1337,7 +1337,7 @@
     float-to-int v1, v1
 
     .line 176
-    invoke-virtual {v0, v2, v1}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->i(II)Z
+    invoke-virtual {v0, v2, v1}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->h(II)Z
 
     .line 177
     .line 178
@@ -1349,7 +1349,7 @@
 
     .line 181
     .line 182
-    invoke-virtual {v0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->h()Z
+    invoke-virtual {v0}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->g()Z
 
     .line 183
     .line 184
@@ -1377,7 +1377,7 @@
     move-result v1
 
     .line 196
-    invoke-virtual {v5}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, LREi;->getValue()Ljava/lang/Object;
 
     .line 197
     .line 198
@@ -1471,7 +1471,7 @@
     move-result v1
 
     .line 238
-    invoke-virtual {v5}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, LREi;->getValue()Ljava/lang/Object;
 
     .line 239
     .line 240
@@ -1558,7 +1558,7 @@
     float-to-int v3, v3
 
     .line 278
-    invoke-virtual {v0, v2, v3}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->i(II)Z
+    invoke-virtual {v0, v2, v3}, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->h(II)Z
 
     .line 279
     .line 280
@@ -1653,11 +1653,11 @@
     move-result v3
 
     .line 20
-    iget-object v0, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LXfi;
+    iget-object v0, p0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->A0:LREi;
 
     .line 21
     .line 22
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 23
     .line 24

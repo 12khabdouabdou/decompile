@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LZz;
+    proxyClass = LKB;
     schema = "\'selectSponsor\':f|m|(r:\'[0]\', r?:\'[1]\'),\'clearSelection\':f|m|(),\'closePage\':f|m|()"
     typeReferences = {
         Lcom/snap/modules/business_sponsored/SponsorInfo;,

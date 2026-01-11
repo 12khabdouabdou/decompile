@@ -1,124 +1,75 @@
-.class public final LbRi;
-.super LrE9;
+.class public final synthetic LbRi;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lkotlin/jvm/functions/Function1;
 
 
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LkJe;
+# static fields
+.field public static final f0:LbRi;
 
 
 # direct methods
-.method public synthetic constructor <init>(LkJe;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    iput p2, p0, LbRi;->a:I
+    new-instance v0, LbRi;
 
-    iput-object p1, p0, LbRi;->b:LkJe;
+    .line 2
+    .line 3
+    const-string v5, "<init>(Landroid/content/Context;)V"
 
-    const/4 p1, 0x0
+    .line 4
+    .line 5
+    const/4 v2, 0x0
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 6
+    const/4 v1, 0x1
 
+    .line 7
+    const-class v3, LdRi;
+
+    .line 8
+    .line 9
+    const-string v4, "<init>"
+
+    .line 10
+    .line 11
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    sput-object v0, LbRi;->f0:LbRi;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    iget v0, p0, LbRi;->a:I
+    check-cast p1, Landroid/content/Context;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    new-instance v0, LdRi;
 
     .line 4
     .line 5
+    const/4 v1, 0x0
+
     .line 6
-    iget-object v0, p0, LbRi;->b:LkJe;
+    invoke-direct {v0, p1, v1}, LdRi;-><init>(Landroid/content/Context;I)V
 
     .line 7
     .line 8
-    iget-object v0, v0, LkJe;->b:Ljava/lang/Object;
-
     .line 9
-    .line 10
-    check-cast v0, LpC3;
-
-    .line 11
-    .line 12
-    sget-object v1, LSgb;->e0:LSgb;
-
-    .line 13
-    .line 14
-    invoke-interface {v0, v1}, LpC3;->h(LBI3;)I
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
     return-object v0
-
-    .line 23
-    :pswitch_0
-    iget-object v0, p0, LbRi;->b:LkJe;
-
-    .line 24
-    .line 25
-    iget-object v0, v0, LkJe;->b:Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    check-cast v0, LpC3;
-
-    .line 28
-    .line 29
-    sget-object v1, LSgb;->f0:LSgb;
-
-    .line 30
-    .line 31
-    invoke-interface {v0, v1}, LpC3;->h(LBI3;)I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v0
-
-    .line 35
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v0
-
-    .line 39
-    return-object v0
-
-    .line 40
-    nop
-
-    .line 41
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

@@ -1,12 +1,12 @@
 .class public final Lcom/snap/opera/layer/SubtitleLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
@@ -16,11 +16,11 @@
 
 .field public final h:Lcom/snap/ui/view/SnapFontTextView;
 
-.field public final i:LLL3;
+.field public final i:LlP3;
 
 .field public final j:F
 
-.field public final k:Lm8i;
+.field public final k:LEwi;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -41,7 +41,7 @@
     move-result-object p1
 
     .line 8
-    const v0, 0x7f0e0506
+    const v0, 0x7f0e0528
 
     .line 9
     .line 10
@@ -61,7 +61,7 @@
 
     .line 17
     .line 18
-    const v0, 0x7f0b184b
+    const v0, 0x7f0b19a0
 
     .line 19
     .line 20
@@ -90,11 +90,11 @@
     move-result-object v0
 
     .line 33
-    check-cast v0, LLL3;
+    check-cast v0, LlP3;
 
     .line 34
     .line 35
-    iput-object v0, p0, Lcom/snap/opera/layer/SubtitleLayerView;->i:LLL3;
+    iput-object v0, p0, Lcom/snap/opera/layer/SubtitleLayerView;->i:LlP3;
 
     .line 36
     .line 37
@@ -110,15 +110,15 @@
 
     .line 42
     .line 43
-    sget-object p1, Lm8i;->g:Lm8i;
+    sget-object p1, LEwi;->g:LEwi;
 
     .line 44
     .line 45
-    sget-object p1, Lm8i;->g:Lm8i;
+    sget-object p1, LEwi;->g:LEwi;
 
     .line 46
     .line 47
-    iput-object p1, p0, Lcom/snap/opera/layer/SubtitleLayerView;->k:Lm8i;
+    iput-object p1, p0, Lcom/snap/opera/layer/SubtitleLayerView;->k:LEwi;
 
     .line 48
     .line 49
@@ -131,7 +131,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/layer/SubtitleLayerView;->k:Lm8i;
+    iget-object v0, p0, Lcom/snap/opera/layer/SubtitleLayerView;->k:LEwi;
 
     .line 2
     .line 3
@@ -153,15 +153,15 @@
     .locals 5
 
     .line 1
-    check-cast p1, Lm8i;
+    check-cast p1, LEwi;
 
     .line 2
     .line 3
-    check-cast p2, Lm8i;
+    check-cast p2, LEwi;
 
     .line 4
     .line 5
-    iget-boolean p2, p1, Lm8i;->a:Z
+    iget-boolean p2, p1, LEwi;->a:Z
 
     .line 6
     .line 7
@@ -173,7 +173,7 @@
 
     .line 10
     .line 11
-    iget-object p2, p1, Lm8i;->b:Ljava/lang/String;
+    iget-object p2, p1, LEwi;->b:Ljava/lang/String;
 
     .line 12
     .line 13
@@ -201,7 +201,7 @@
 
     .line 24
     .line 25
-    iget v3, p1, Lm8i;->d:F
+    iget v3, p1, LEwi;->d:F
 
     .line 26
     .line 27
@@ -219,15 +219,15 @@
     .line 33
     .line 34
     .line 35
-    iget-object p2, p0, Lcom/snap/opera/layer/SubtitleLayerView;->i:LLL3;
+    iget-object p2, p0, Lcom/snap/opera/layer/SubtitleLayerView;->i:LlP3;
 
     .line 36
     .line 37
-    iget v0, p1, Lm8i;->c:F
+    iget v0, p1, LEwi;->c:F
 
     .line 38
     .line 39
-    iput v0, p2, LLL3;->A:F
+    iput v0, p2, LlP3;->A:F
 
     .line 40
     .line 41
@@ -243,14 +243,14 @@
     move-result v0
 
     .line 47
-    iget-object v1, p0, LPG9;->a:Landroid/content/Context;
+    iget-object v1, p0, LoS9;->a:Landroid/content/Context;
 
     .line 48
     .line 49
     const/4 v2, 0x1
 
     .line 50
-    iget-object v3, p1, Lm8i;->e:Lhad;
+    iget-object v3, p1, LEwi;->e:LDpd;
 
     .line 51
     .line 52
@@ -258,7 +258,7 @@
 
     .line 53
     .line 54
-    iget-object v0, v3, Lhad;->b:Ljava/lang/Object;
+    iget-object v0, v3, LDpd;->b:Ljava/lang/Object;
 
     .line 55
     .line 56
@@ -277,7 +277,7 @@
     int-to-float v0, v0
 
     .line 63
-    invoke-static {v0, v1, v2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v0, v1, v2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     .line 64
     .line 65
@@ -285,7 +285,7 @@
     move-result v0
 
     .line 67
-    iget-object v3, v3, Lhad;->a:Ljava/lang/Object;
+    iget-object v3, v3, LDpd;->a:Ljava/lang/Object;
 
     .line 68
     .line 69
@@ -304,7 +304,7 @@
     int-to-float v3, v3
 
     .line 76
-    invoke-static {v3, v1, v2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v3, v1, v2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     .line 77
     .line 78
@@ -316,7 +316,7 @@
 
     .line 81
     :cond_0
-    iget-object v0, v3, Lhad;->a:Ljava/lang/Object;
+    iget-object v0, v3, LDpd;->a:Ljava/lang/Object;
 
     .line 82
     .line 83
@@ -335,7 +335,7 @@
     int-to-float v0, v0
 
     .line 90
-    invoke-static {v0, v1, v2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v0, v1, v2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     .line 91
     .line 92
@@ -343,7 +343,7 @@
     move-result v0
 
     .line 94
-    iget-object v3, v3, Lhad;->b:Ljava/lang/Object;
+    iget-object v3, v3, LDpd;->b:Ljava/lang/Object;
 
     .line 95
     .line 96
@@ -362,7 +362,7 @@
     int-to-float v3, v3
 
     .line 103
-    invoke-static {v3, v1, v2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v3, v1, v2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     .line 104
     .line 105
@@ -371,18 +371,18 @@
 
     .line 107
     :goto_0
-    iget-object p1, p1, Lm8i;->f:LNm9;
+    iget-object p1, p1, LEwi;->f:LGv9;
 
     .line 108
     .line 109
-    iget v4, p1, LNm9;->b:I
+    iget v4, p1, LGv9;->b:I
 
     .line 110
     .line 111
     int-to-float v4, v4
 
     .line 112
-    invoke-static {v4, v1, v2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v4, v1, v2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     .line 113
     .line 114
@@ -390,14 +390,14 @@
     move-result v1
 
     .line 116
-    iget v2, p1, LNm9;->b:I
+    iget v2, p1, LGv9;->b:I
 
     .line 117
     .line 118
     add-int/2addr v2, v1
 
     .line 119
-    iget p1, p1, LNm9;->a:I
+    iget p1, p1, LGv9;->a:I
 
     .line 120
     .line 121

@@ -1,0 +1,95 @@
+.class public final LHQ4;
+.super LoB5;
+.source "SourceFile"
+
+
+# instance fields
+.field public X:Lio/reactivex/rxjava3/core/Observable;
+
+.field public Y:Lrp0;
+
+.field public Z:Lio/reactivex/rxjava3/core/Observable;
+
+.field public b:LHP;
+
+.field public c:Lio/reactivex/rxjava3/core/ObservableTransformer;
+
+.field public e0:Ljava/lang/Boolean;
+
+.field public f0:Lio/reactivex/rxjava3/core/Observable;
+
+.field public g0:Lbda;
+
+.field public h0:Lxqa;
+
+.field public i0:LsG8;
+
+.field public j0:LeYk;
+
+.field public t:Lkotlin/jvm/functions/Function1;
+
+
+# virtual methods
+.method public final b()Ljava/lang/Object;
+    .locals 13
+
+    .line 1
+    iget-object v2, p0, LHQ4;->b:LHP;
+
+    .line 2
+    .line 3
+    iget-object v3, p0, LHQ4;->c:Lio/reactivex/rxjava3/core/ObservableTransformer;
+
+    .line 4
+    .line 5
+    iget-object v4, p0, LHQ4;->t:Lkotlin/jvm/functions/Function1;
+
+    .line 6
+    .line 7
+    iget-object v5, p0, LHQ4;->X:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 8
+    .line 9
+    iget-object v6, p0, LHQ4;->Y:Lrp0;
+
+    .line 10
+    .line 11
+    iget-object v7, p0, LHQ4;->Z:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 12
+    .line 13
+    iget-object v8, p0, LHQ4;->e0:Ljava/lang/Boolean;
+
+    .line 14
+    .line 15
+    iget-object v9, p0, LHQ4;->f0:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 16
+    .line 17
+    iget-object v10, p0, LHQ4;->g0:Lbda;
+
+    .line 18
+    .line 19
+    iget-object v11, p0, LHQ4;->h0:Lxqa;
+
+    .line 20
+    .line 21
+    iget-object v1, p0, LHQ4;->i0:LsG8;
+
+    .line 22
+    .line 23
+    iget-object v12, p0, LHQ4;->j0:LeYk;
+
+    .line 24
+    .line 25
+    new-instance v0, LIQ4;
+
+    .line 26
+    .line 27
+    invoke-direct/range {v0 .. v12}, LIQ4;-><init>(LsG8;LHP;Lio/reactivex/rxjava3/core/ObservableTransformer;Lkotlin/jvm/functions/Function1;Lio/reactivex/rxjava3/core/Observable;Lrp0;Lio/reactivex/rxjava3/core/Observable;Ljava/lang/Boolean;Lio/reactivex/rxjava3/core/Observable;Lbda;Lxqa;LeYk;)V
+
+    .line 28
+    .line 29
+    .line 30
+    return-object v0
+.end method

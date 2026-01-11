@@ -1,65 +1,53 @@
-.class public interface abstract LXmb;
+.class public final LXmb;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/io/Closeable;
+
+# instance fields
+.field public final a:Lcom/snap/core/application/SnapResourcesContextWrapper;
+
+.field public final b:LREi;
 
 
-# virtual methods
-.method public abstract C2()J
-.end method
+# direct methods
+.method public constructor <init>(Lcom/snap/core/application/SnapResourcesContextWrapper;)V
+    .locals 1
 
-.method public abstract H1(Lge8;)Ljava/io/FileInputStream;
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract N0()Ljava/io/FileInputStream;
-.end method
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LXmb;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
-.method public abstract O2()LSlb;
-.end method
+    .line 5
+    .line 6
+    new-instance p1, LV9b;
 
-.method public abstract S2()Lio/reactivex/rxjava3/core/Single;
-.end method
+    .line 7
+    .line 8
+    const/16 v0, 0x14
 
-.method public abstract W1()J
-.end method
+    .line 9
+    .line 10
+    invoke-direct {p1, v0, p0}, LV9b;-><init>(ILjava/lang/Object;)V
 
-.method public abstract W2()Landroid/net/Uri;
-.end method
+    .line 11
+    .line 12
+    .line 13
+    new-instance v0, LREi;
 
-.method public abstract d()LXmb;
-.end method
+    .line 14
+    .line 15
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
-.method public abstract h0(Lge8;)Landroid/net/Uri;
-.end method
+    .line 16
+    .line 17
+    .line 18
+    iput-object v0, p0, LXmb;->b:LREi;
 
-.method public abstract j2()Ljava/io/FileInputStream;
-.end method
-
-.method public abstract m()Z
-.end method
-
-.method public abstract o3()LgJe;
-.end method
-
-.method public abstract p1()Ljava/io/FileInputStream;
-.end method
-
-.method public abstract r()LKH6;
-.end method
-
-.method public abstract s()J
-.end method
-
-.method public abstract t()Ljava/util/NavigableMap;
-.end method
-
-.method public abstract t0()Ljava/io/InputStream;
-.end method
-
-.method public abstract v0()Landroid/net/Uri;
-.end method
-
-.method public abstract x0()Landroid/net/Uri;
+    .line 19
+    .line 20
+    return-void
 .end method

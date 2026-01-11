@@ -3,15 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:LhA5;
+.field public final a:LVC;
+
+.field public final b:Lmia;
+
+.field public final c:Ljava/util/LinkedHashMap;
 
 
 # direct methods
-.method public constructor <init>(LhA5;)V
+.method public constructor <init>(LVC;Lmia;)V
     .locals 0
 
     .line 1
@@ -20,65 +24,115 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LgA5;->a:LhA5;
+    iput-object p1, p0, LgA5;->a:LVC;
 
     .line 5
     .line 6
+    iput-object p2, p0, LgA5;->b:Lmia;
+
+    .line 7
+    .line 8
+    new-instance p1, Ljava/util/LinkedHashMap;
+
+    .line 9
+    .line 10
+    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object p1, p0, LgA5;->c:Ljava/util/LinkedHashMap;
+
+    .line 14
+    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    check-cast p1, LVf9;
+    check-cast p1, Landroid/view/ViewStub;
 
     .line 2
     .line 3
-    instance-of v0, p1, LUf9;
+    new-instance v0, Lx9k;
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
+    const/4 v5, 0x0
 
     .line 6
+    const/4 v6, 0x1
+
     .line 7
-    iget-object v0, p0, LgA5;->a:LhA5;
+    const v1, 0x7f0e039e
 
     .line 8
     .line 9
-    new-instance v1, LFN$n$b;
-
     .line 10
-    .line 11
-    check-cast p1, LUf9;
+    const-class v2, Lcom/snap/ui/avatar/AvatarView;
 
+    .line 11
     .line 12
+    const/4 v3, 0x1
+
     .line 13
-    invoke-virtual {p1}, LUf9;->a()Lo09;
+    iget-object v4, p0, LgA5;->a:LVC;
 
     .line 14
     .line 15
+    const/4 v7, 0x1
+
     .line 16
-    move-result-object p1
+    const/4 v8, 0x0
 
     .line 17
-    invoke-direct {v1, p1}, LFN$n$b;-><init>(Lo09;)V
+    invoke-direct/range {v0 .. v8}, Lx9k;-><init>(ILjava/lang/Class;ZLkotlin/jvm/functions/Function1;Lxp0;ZZZ)V
 
     .line 18
     .line 19
     .line 20
-    iget-object p1, v0, LhA5;->X:LIN;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
     .line 21
     .line 22
-    invoke-interface {p1, v1}, LIN;->a(LFN;)V
+    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
     .line 23
     .line 24
     .line 25
-    :cond_0
-    return-void
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->A(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    new-instance v0, LsX3;
+
+    .line 30
+    .line 31
+    const/16 v1, 0x18
+
+    .line 32
+    .line 33
+    invoke-direct {v0, v1, p0}, LsX3;-><init>(ILjava/lang/Object;)V
+
+    .line 34
+    .line 35
+    .line 36
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 37
+    .line 38
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 39
+    .line 40
+    .line 41
+    return-object v1
 .end method

@@ -1,296 +1,662 @@
 .class public final Llk2;
-.super Lo17;
+.super Lhlj;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:I
-
-.field public b:Z
-
-.field public c:Z
-
-
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(LCN8;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    iput v0, p0, Llk2;->a:I
-
-    .line 6
-    .line 7
-    iput-boolean v0, p0, Llk2;->b:Z
-
-    .line 8
-    .line 9
-    iput-boolean v0, p0, Llk2;->c:Z
-
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 13
-    .line 14
-    const/4 v0, -0x1
-
-    .line 15
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public a(LUK9;)Lkk2;
+    .locals 6
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    const/4 v0, 0x1
 
     .line 2
+    invoke-virtual {p1}, LUK9;->D()I
+
     .line 3
     .line 4
-    move-result v0
-
     .line 5
-    iget v1, p0, Llk2;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    invoke-static {v2}, Lsa3;->a(I)I
-
-    .line 12
-    .line 13
-    .line 14
     move-result v1
 
+    .line 6
+    const/16 v2, 0x9
+
+    .line 7
+    .line 8
+    if-ne v1, v2, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 11
+    .line 12
+    .line 13
+    const/4 p1, 0x0
+
+    .line 14
+    return-object p1
+
     .line 15
-    add-int/2addr v0, v1
+    :cond_0
+    new-instance v1, Lkk2;
 
     .line 16
-    :cond_0
-    iget v1, p0, Llk2;->a:I
-
     .line 17
+    invoke-direct {v1}, Lkk2;-><init>()V
+
     .line 18
-    const/4 v2, 0x2
-
     .line 19
-    and-int/2addr v1, v2
-
     .line 20
-    if-eqz v1, :cond_1
+    iput-boolean v0, p1, LUK9;->b:Z
 
     .line 21
     .line 22
-    invoke-static {v2}, Lsa3;->a(I)I
+    invoke-virtual {p1}, LUK9;->c()V
 
     .line 23
     .line 24
     .line 25
-    move-result v1
-
-    .line 26
-    add-int/2addr v1, v0
-
-    .line 27
-    return v1
-
-    .line 28
-    :cond_1
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_3
-
-    .line 6
-    .line 7
-    const/16 v1, 0x8
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_2
-
-    .line 10
-    .line 11
-    const/16 v1, 0x10
-
-    .line 12
-    .line 13
-    if-eq v0, v1, :cond_1
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    if-nez v0, :cond_0
-
-    .line 20
-    .line 21
-    goto :goto_1
-
-    .line 22
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->f()Z
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v0
+    invoke-virtual {p1}, LUK9;->i()Z
 
     .line 26
-    iput-boolean v0, p0, Llk2;->c:Z
-
     .line 27
     .line 28
-    iget v0, p0, Llk2;->a:I
+    move-result v3
 
     .line 29
+    if-eqz v3, :cond_9
+
     .line 30
-    or-int/lit8 v0, v0, 0x2
-
     .line 31
-    .line 32
-    iput v0, p0, Llk2;->a:I
+    invoke-virtual {p1}, LUK9;->v()Ljava/lang/String;
 
+    .line 32
     .line 33
     .line 34
-    goto :goto_0
+    move-result-object v3
 
     .line 35
-    :cond_2
-    invoke-virtual {p1}, Lqa3;->f()Z
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 36
     .line 37
     .line 38
-    move-result v0
+    const/4 v4, -0x1
 
     .line 39
-    iput-boolean v0, p0, Llk2;->b:Z
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
 
     .line 40
     .line 41
-    iget v0, p0, Llk2;->a:I
-
     .line 42
+    move-result v5
+
     .line 43
-    or-int/lit8 v0, v0, 0x1
+    sparse-switch v5, :sswitch_data_0
 
     .line 44
     .line 45
-    iput v0, p0, Llk2;->a:I
-
     .line 46
+    goto :goto_1
+
     .line 47
-    goto :goto_0
+    :sswitch_0
+    const-string v5, "color"
 
     .line 48
+    .line 49
+    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v3
+
+    .line 53
+    if-nez v3, :cond_1
+
+    .line 54
+    .line 55
+    goto :goto_1
+
+    .line 56
+    :cond_1
+    const/4 v4, 0x3
+
+    .line 57
+    goto :goto_1
+
+    .line 58
+    :sswitch_1
+    const-string v5, "offset_y"
+
+    .line 59
+    .line 60
+    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v3
+
+    .line 64
+    if-nez v3, :cond_2
+
+    .line 65
+    .line 66
+    goto :goto_1
+
+    .line 67
+    :cond_2
+    const/4 v4, 0x2
+
+    .line 68
+    goto :goto_1
+
+    .line 69
+    :sswitch_2
+    const-string v5, "offset_x"
+
+    .line 70
+    .line 71
+    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 72
+    .line 73
+    .line 74
+    move-result v3
+
+    .line 75
+    if-nez v3, :cond_3
+
+    .line 76
+    .line 77
+    goto :goto_1
+
+    .line 78
     :cond_3
+    const/4 v4, 0x1
+
+    .line 79
+    goto :goto_1
+
+    .line 80
+    :sswitch_3
+    const-string v5, "radius"
+
+    .line 81
+    .line 82
+    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v3
+
+    .line 86
+    if-nez v3, :cond_4
+
+    .line 87
+    .line 88
+    goto :goto_1
+
+    .line 89
+    :cond_4
+    const/4 v4, 0x0
+
+    .line 90
     :goto_1
-    return-object p0
+    packed-switch v4, :pswitch_data_0
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-virtual {p1}, LUK9;->I()V
+
+    .line 94
+    .line 95
+    .line 96
+    goto :goto_0
+
+    .line 97
+    :pswitch_0
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 98
+    .line 99
+    .line 100
+    move-result v3
+
+    .line 101
+    if-ne v3, v2, :cond_5
+
+    .line 102
+    .line 103
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 104
+    .line 105
+    .line 106
+    goto :goto_0
+
+    .line 107
+    :cond_5
+    invoke-virtual {p1}, LUK9;->p()I
+
+    .line 108
+    .line 109
+    .line 110
+    move-result v3
+
+    .line 111
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v3
+
+    .line 115
+    iput-object v3, v1, Lkk2;->a:Ljava/lang/Integer;
+
+    .line 116
+    .line 117
+    goto :goto_0
+
+    .line 118
+    :pswitch_1
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 119
+    .line 120
+    .line 121
+    move-result v3
+
+    .line 122
+    if-ne v3, v2, :cond_6
+
+    .line 123
+    .line 124
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 125
+    .line 126
+    .line 127
+    goto :goto_0
+
+    .line 128
+    :cond_6
+    invoke-virtual {p1}, LUK9;->o()D
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-wide v3
+
+    .line 132
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object v3
+
+    .line 136
+    iput-object v3, v1, Lkk2;->c:Ljava/lang/Double;
+
+    .line 137
+    .line 138
+    goto :goto_0
+
+    .line 139
+    :pswitch_2
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 140
+    .line 141
+    .line 142
+    move-result v3
+
+    .line 143
+    if-ne v3, v2, :cond_7
+
+    .line 144
+    .line 145
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 146
+    .line 147
+    .line 148
+    goto :goto_0
+
+    .line 149
+    :cond_7
+    invoke-virtual {p1}, LUK9;->o()D
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-wide v3
+
+    .line 153
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object v3
+
+    .line 157
+    iput-object v3, v1, Lkk2;->b:Ljava/lang/Double;
+
+    .line 158
+    .line 159
+    goto/16 :goto_0
+
+    .line 160
+    .line 161
+    :pswitch_3
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 162
+    .line 163
+    .line 164
+    move-result v3
+
+    .line 165
+    if-ne v3, v2, :cond_8
+
+    .line 166
+    .line 167
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 168
+    .line 169
+    .line 170
+    goto/16 :goto_0
+
+    .line 171
+    .line 172
+    :cond_8
+    invoke-virtual {p1}, LUK9;->o()D
+
+    .line 173
+    .line 174
+    .line 175
+    move-result-wide v3
+
+    .line 176
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v3
+
+    .line 180
+    iput-object v3, v1, Lkk2;->d:Ljava/lang/Double;
+
+    .line 181
+    .line 182
+    goto/16 :goto_0
+
+    .line 183
+    .line 184
+    :cond_9
+    invoke-virtual {p1}, LUK9;->g()V
+
+    .line 185
+    .line 186
+    .line 187
+    return-object v1
+
+    .line 188
+    nop
+
+    .line 189
+    :sswitch_data_0
+    .sparse-switch
+        -0x37f1936e -> :sswitch_3
+        -0x2d0f6834 -> :sswitch_2
+        -0x2d0f6833 -> :sswitch_1
+        0x5a72f63 -> :sswitch_0
+    .end sparse-switch
+
+    .line 190
+    .line 191
+    .line 192
+    .line 193
+    .line 194
+    .line 195
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 2
+.method public b(LrL9;Lkk2;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    iget v0, p0, Llk2;->a:I
+    if-nez p2, :cond_0
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    invoke-virtual {p1}, LrL9;->j()LrL9;
 
     .line 4
-    and-int/2addr v0, v1
-
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    return-void
+
     .line 7
-    iget-boolean v0, p0, Llk2;->b:Z
+    :cond_0
+    const/4 v0, 0x1
 
     .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->z(IZ)V
+    iput-boolean v0, p1, LrL9;->Y:Z
 
+    .line 9
     .line 10
+    invoke-virtual {p1}, LrL9;->d()V
+
     .line 11
     .line 12
-    :cond_0
-    iget v0, p0, Llk2;->a:I
-
     .line 13
+    iget-object v0, p2, Lkk2;->a:Ljava/lang/Integer;
+
     .line 14
-    const/4 v1, 0x2
-
     .line 15
-    and-int/2addr v0, v1
-
-    .line 16
     if-eqz v0, :cond_1
 
+    .line 16
     .line 17
+    const-string v0, "color"
+
     .line 18
-    iget-boolean v0, p0, Llk2;->c:Z
-
     .line 19
-    .line 20
-    invoke-virtual {p1, v1, v0}, Lsa3;->z(IZ)V
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
+    .line 20
     .line 21
     .line 22
-    .line 23
-    :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    iget-object v0, p2, Lkk2;->a:Ljava/lang/Integer;
 
+    .line 23
     .line 24
+    invoke-virtual {p1, v0}, LrL9;->w(Ljava/lang/Number;)V
+
     .line 25
     .line 26
+    .line 27
+    :cond_1
+    iget-object v0, p2, Lkk2;->b:Ljava/lang/Double;
+
+    .line 28
+    .line 29
+    if-eqz v0, :cond_2
+
+    .line 30
+    .line 31
+    const-string v0, "offset_x"
+
+    .line 32
+    .line 33
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
+
+    .line 34
+    .line 35
+    .line 36
+    iget-object v0, p2, Lkk2;->b:Ljava/lang/Double;
+
+    .line 37
+    .line 38
+    invoke-virtual {p1, v0}, LrL9;->w(Ljava/lang/Number;)V
+
+    .line 39
+    .line 40
+    .line 41
+    :cond_2
+    iget-object v0, p2, Lkk2;->c:Ljava/lang/Double;
+
+    .line 42
+    .line 43
+    if-eqz v0, :cond_3
+
+    .line 44
+    .line 45
+    const-string v0, "offset_y"
+
+    .line 46
+    .line 47
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
+
+    .line 48
+    .line 49
+    .line 50
+    iget-object v0, p2, Lkk2;->c:Ljava/lang/Double;
+
+    .line 51
+    .line 52
+    invoke-virtual {p1, v0}, LrL9;->w(Ljava/lang/Number;)V
+
+    .line 53
+    .line 54
+    .line 55
+    :cond_3
+    iget-object v0, p2, Lkk2;->d:Ljava/lang/Double;
+
+    .line 56
+    .line 57
+    if-eqz v0, :cond_4
+
+    .line 58
+    .line 59
+    const-string v0, "radius"
+
+    .line 60
+    .line 61
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
+
+    .line 62
+    .line 63
+    .line 64
+    iget-object p2, p2, Lkk2;->d:Ljava/lang/Double;
+
+    .line 65
+    .line 66
+    invoke-virtual {p1, p2}, LrL9;->w(Ljava/lang/Number;)V
+
+    .line 67
+    .line 68
+    .line 69
+    :cond_4
+    invoke-virtual {p1}, LrL9;->g()V
+
+    .line 70
+    .line 71
+    .line 72
+    return-void
+.end method
+
+.method public bridge synthetic read(LUK9;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0, p1}, Llk2;->a(LUK9;)Lkk2;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic write(LrL9;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p2, Lkk2;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, Llk2;->b(LrL9;Lkk2;)V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

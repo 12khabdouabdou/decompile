@@ -1,14 +1,19 @@
 .class public final LKrf;
-.super LmHe;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LKQh;
 
 
 # instance fields
-.field public final b:J
+.field public final a:Lcf9;
+
+.field public final b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 
 # direct methods
-.method public constructor <init>(J)V
+.method public constructor <init>(Lcf9;)V
     .locals 0
 
     .line 1
@@ -17,129 +22,204 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, LKrf;->b:J
+    iput-object p1, p0, LKrf;->a:Lcf9;
 
     .line 5
     .line 6
+    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 7
+    .line 8
+    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, LKrf;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final b(Lb3e;)Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    iget-object v0, p0, LKrf;->a:Lcf9;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LKrf;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    const/4 v2, 0x0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
     .line 10
-    return v2
+    move-result v1
 
     .line 11
-    :cond_1
-    check-cast p1, LKrf;
+    if-eqz v1, :cond_0
 
     .line 12
     .line 13
-    iget-wide v3, p0, LKrf;->b:J
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 14
     .line 15
-    iget-wide v5, p1, LKrf;->b:J
-
     .line 16
+    move-result-object v1
+
     .line 17
-    cmp-long p1, v3, v5
+    check-cast v1, LPi7;
 
     .line 18
     .line 19
-    if-eqz p1, :cond_2
+    invoke-interface {v1, p1}, LPi7;->C(Lb3e;)V
 
     .line 20
     .line 21
-    return v2
-
     .line 22
-    :cond_2
-    return v0
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    invoke-virtual {p0}, LKrf;->start()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    check-cast p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 28
+    .line 29
+    return-object p1
 .end method
 
-.method public final hashCode()I
+.method public final start()Lio/reactivex/rxjava3/disposables/Disposable;
     .locals 5
 
     .line 1
-    const/16 v0, 0x20
+    iget-object v0, p0, LKrf;->a:Lcf9;
 
     .line 2
     .line 3
-    iget-wide v1, p0, LKrf;->b:J
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     .line 4
     .line 5
-    ushr-long v3, v1, v0
-
     .line 6
-    .line 7
-    xor-long/2addr v1, v3
-
-    .line 8
-    long-to-int v0, v1
-
-    .line 9
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Scan(scanStartMs="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-wide v1, p0, LKrf;->b:J
-
-    .line 9
-    .line 10
-    const-string v3, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
     move-result-object v0
 
+    .line 7
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    iget-object v2, p0, LKrf;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 12
+    .line 13
+    if-eqz v1, :cond_1
+
+    .line 14
+    .line 15
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 16
-    return-object v0
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    check-cast v1, LPi7;
+
+    .line 20
+    .line 21
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 22
+    .line 23
+    .line 24
+    sget-object v3, LOdh;->a:LNdh;
+
+    .line 25
+    .line 26
+    const-string v4, "<*>"
+
+    .line 27
+    .line 28
+    invoke-virtual {v3, v4}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v4
+
+    .line 32
+    :try_start_0
+    invoke-interface {v1}, LKQh;->start()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v1
+
+    .line 36
+    invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v3, v4}, LNdh;->h(I)V
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :catchall_0
+    move-exception v0
+
+    .line 44
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 45
+    .line 46
+    if-eqz v1, :cond_0
+
+    .line 47
+    .line 48
+    invoke-virtual {v1, v4}, LtGi;->o(I)V
+
+    .line 49
+    .line 50
+    .line 51
+    :cond_0
+    throw v0
+
+    .line 52
+    :cond_1
+    return-object v2
 .end method

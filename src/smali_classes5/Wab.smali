@@ -1,476 +1,72 @@
 .class public final LWab;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'latitude\':d,\'longitude\':d,\'previewBackgroundUrl\':s?"
+    typeReferences = {}
+.end annotation
+
+
 # instance fields
-.field public final a:Z
+.field private _latitude:D
 
-.field public final b:Z
+.field private _longitude:D
 
-.field public final c:Ld52;
-
-.field public final d:Z
-
-.field public final e:Z
+.field private _previewBackgroundUrl:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ld52;ZZI)V
-    .locals 4
+.method public constructor <init>(DD)V
+    .locals 0
 
     .line 1
-    and-int/lit8 v0, p4, 0x1
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    const/4 v2, 0x0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    const/4 v0, 0x0
-
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 10
-    :goto_0
-    and-int/lit8 v3, p4, 0x2
-
-    .line 11
-    .line 12
-    if-eqz v3, :cond_1
-
-    .line 13
-    .line 14
-    const/4 v1, 0x0
-
-    .line 15
-    :cond_1
-    and-int/lit8 p4, p4, 0x4
-
-    .line 16
-    .line 17
-    if-eqz p4, :cond_2
-
-    .line 18
-    .line 19
-    const/4 p1, 0x0
-
-    .line 20
-    :cond_2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
-    .line 22
-    .line 23
-    iput-boolean v0, p0, LWab;->a:Z
+    .line 2
+    iput-wide p1, p0, LWab;->_latitude:D
 
-    .line 24
-    .line 25
-    iput-boolean v1, p0, LWab;->b:Z
+    .line 3
+    iput-wide p3, p0, LWab;->_longitude:D
 
-    .line 26
-    .line 27
-    iput-object p1, p0, LWab;->c:Ld52;
+    const/4 p1, 0x0
 
-    .line 28
-    .line 29
-    iput-boolean p2, p0, LWab;->d:Z
+    .line 4
+    iput-object p1, p0, LWab;->_previewBackgroundUrl:Ljava/lang/String;
 
-    .line 30
-    .line 31
-    iput-boolean p3, p0, LWab;->e:Z
+    return-void
+.end method
 
-    .line 32
-    .line 33
+.method public constructor <init>(DDLjava/lang/String;)V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    iput-wide p1, p0, LWab;->_latitude:D
+
+    .line 7
+    iput-wide p3, p0, LWab;->_longitude:D
+
+    .line 8
+    iput-object p5, p0, LWab;->_previewBackgroundUrl:Ljava/lang/String;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LWab;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LWab;
-
-    .line 12
-    .line 13
-    iget-boolean v1, p1, LWab;->a:Z
-
-    .line 14
-    .line 15
-    iget-boolean v3, p0, LWab;->a:Z
-
-    .line 16
-    .line 17
-    if-eq v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    iget-boolean v1, p0, LWab;->b:Z
-
-    .line 21
-    .line 22
-    iget-boolean v3, p1, LWab;->b:Z
-
-    .line 23
-    .line 24
-    if-eq v1, v3, :cond_3
-
-    .line 25
-    .line 26
-    return v2
-
-    .line 27
-    :cond_3
-    iget-object v1, p0, LWab;->c:Ld52;
-
-    .line 28
-    .line 29
-    iget-object v3, p1, LWab;->c:Ld52;
-
-    .line 30
-    .line 31
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v1
-
-    .line 35
-    if-nez v1, :cond_4
-
-    .line 36
-    .line 37
-    return v2
-
-    .line 38
-    :cond_4
-    iget-boolean v1, p0, LWab;->d:Z
-
-    .line 39
-    .line 40
-    iget-boolean v3, p1, LWab;->d:Z
-
-    .line 41
-    .line 42
-    if-eq v1, v3, :cond_5
-
-    .line 43
-    .line 44
-    return v2
-
-    .line 45
-    :cond_5
-    iget-boolean v1, p0, LWab;->e:Z
-
-    .line 46
-    .line 47
-    iget-boolean p1, p1, LWab;->e:Z
-
-    .line 48
-    .line 49
-    if-eq v1, p1, :cond_6
-
-    .line 50
-    .line 51
-    return v2
-
-    .line 52
-    :cond_6
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 4
-
-    .line 1
-    const/16 v0, 0x4d5
+    iput-object p1, p0, LWab;->_previewBackgroundUrl:Ljava/lang/String;
 
     .line 2
     .line 3
-    const/16 v1, 0x4cf
-
-    .line 4
-    .line 5
-    iget-boolean v2, p0, LWab;->a:Z
-
-    .line 6
-    .line 7
-    if-eqz v2, :cond_0
-
-    .line 8
-    .line 9
-    const/16 v2, 0x4cf
-
-    .line 10
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_0
-    const/16 v2, 0x4d5
-
-    .line 13
-    .line 14
-    :goto_0
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 15
-    .line 16
-    iget-boolean v3, p0, LWab;->b:Z
-
-    .line 17
-    .line 18
-    if-eqz v3, :cond_1
-
-    .line 19
-    .line 20
-    const/16 v3, 0x4cf
-
-    .line 21
-    .line 22
-    goto :goto_1
-
-    .line 23
-    :cond_1
-    const/16 v3, 0x4d5
-
-    .line 24
-    .line 25
-    :goto_1
-    add-int/2addr v2, v3
-
-    .line 26
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 27
-    .line 28
-    iget-object v3, p0, LWab;->c:Ld52;
-
-    .line 29
-    .line 30
-    if-nez v3, :cond_2
-
-    .line 31
-    .line 32
-    const/4 v3, 0x0
-
-    .line 33
-    goto :goto_2
-
-    .line 34
-    :cond_2
-    invoke-virtual {v3}, Ld52;->hashCode()I
-
-    .line 35
-    .line 36
-    .line 37
-    move-result v3
-
-    .line 38
-    :goto_2
-    add-int/2addr v2, v3
-
-    .line 39
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 40
-    .line 41
-    iget-boolean v3, p0, LWab;->d:Z
-
-    .line 42
-    .line 43
-    if-eqz v3, :cond_3
-
-    .line 44
-    .line 45
-    const/16 v3, 0x4cf
-
-    .line 46
-    .line 47
-    goto :goto_3
-
-    .line 48
-    :cond_3
-    const/16 v3, 0x4d5
-
-    .line 49
-    .line 50
-    :goto_3
-    add-int/2addr v2, v3
-
-    .line 51
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 52
-    .line 53
-    iget-boolean v3, p0, LWab;->e:Z
-
-    .line 54
-    .line 55
-    if-eqz v3, :cond_4
-
-    .line 56
-    .line 57
-    const/16 v0, 0x4cf
-
-    .line 58
-    .line 59
-    :cond_4
-    add-int/2addr v2, v0
-
-    .line 60
-    return v2
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "MapViewHolderOptions(hideMapBeforeLoaded="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-boolean v1, p0, LWab;->a:Z
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", textureCleanMode="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-boolean v1, p0, LWab;->b:Z
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", initialCamera="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LWab;->c:Ld52;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", createFileSource="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-boolean v1, p0, LWab;->d:Z
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", useGLES3="
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    iget-boolean v1, p0, LWab;->e:Z
-
-    .line 49
-    .line 50
-    const-string v2, ")"
-
-    .line 51
-    .line 52
-    invoke-static {v2, v0, v1}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    return-object v0
+    return-void
 .end method

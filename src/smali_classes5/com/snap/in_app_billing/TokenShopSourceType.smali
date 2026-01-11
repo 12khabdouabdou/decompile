@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'ActionMenu\':\'ACTION_MENU\',\'InGiftShop\':\'IN_GIFT_SHOP\',\'NoTokenGiftShop\':\'NO_TOKEN_GIFT_SHOP\',\'NoTokenInGame\':\'NO_TOKEN_IN_GAME\',\'NoTokenInLens\':\'NO_TOKEN_IN_LENS\',\'NoTokenNativeGame\':\'NO_TOKEN_NATIVE_GAME\',\'Profile\':\'PROFILE\',\'Bitmoji\':\'BITMOJI\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

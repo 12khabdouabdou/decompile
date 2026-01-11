@@ -1,14 +1,14 @@
 .class public final Lcom/snap/composer/people/FriendmojiFriendRenderRequest;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'friendmojis\':a?<r:\'[0]\'>,\'streakLength\':d,\'userId\':s,\'birthday\':r?:\'[1]\',\'pinnedTimestamp\':d@?"
     typeReferences = {
-        LsU7;,
+        Lx08;,
         Lcom/snap/composer/people/CalendarDate;
     }
 .end annotation
@@ -21,7 +21,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LsU7;",
+            "Lx08;",
             ">;"
         }
     .end annotation
@@ -41,7 +41,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LsU7;",
+            "Lx08;",
             ">;D",
             "Ljava/lang/String;",
             "Lcom/snap/composer/people/CalendarDate;",

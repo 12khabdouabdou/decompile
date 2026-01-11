@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field public final b:LkS5;
+.field public final b:LoO7;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, LkS5;->q0:LkS5;
+    sget-object v0, LoO7;->X:LoO7;
 
     .line 2
     .line 3
@@ -41,7 +41,7 @@
     .line 4
     .line 5
     .line 6
-    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize;->b:LkS5;
+    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize;->b:LoO7;
 
     .line 7
     .line 8
@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final K0(Lio/reactivex/rxjava3/core/Observer;)V
+.method public final N0(Lio/reactivex/rxjava3/core/Observer;)V
     .locals 2
 
     .line 1
@@ -58,11 +58,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize;->b:LkS5;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize;->b:LoO7;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize$DematerializeObserver;-><init>(Lio/reactivex/rxjava3/core/Observer;LkS5;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDematerialize$DematerializeObserver;-><init>(Lio/reactivex/rxjava3/core/Observer;LoO7;)V
 
     .line 6
     .line 7

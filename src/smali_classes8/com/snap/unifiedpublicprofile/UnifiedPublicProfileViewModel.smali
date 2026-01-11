@@ -1,17 +1,17 @@
 .class public final Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'businessProfileId\':s,\'entryInfo\':r:\'[0]\',\'previewMode\':b,\'showHighlightCta\':b@?,\'optInNotificationsSet\':b@?,\'onCreateHighlight\':f?(),\'useLegacyBusinessEndpointInstead\':b@?,\'isVerticalNavStyle\':b@?,\'showSpotlightPlayCount\':b@?,\'subscriptionActionAttributions\':r?:\'[1]\',\'vOperaEnabled\':b@?,\'bitmojiAvatarId\':s?,\'showId\':s?,\'cameosPublisherConfig\':r?:\'[2]\',\'isPublisherProfile\':b@?,\'isCameosInSpotlight\':b@?,\'enableSavedSpotlightFeedTypeForMixer\':b@?,\'userId\':s?,\'markFriendSuggestionsAsViewed\':f?(r:\'[3]\'),\'logFriendSuggestionImpression\':f?(),\'removeTopInset\':b@?,\'storySummaryInfoObservable\':f?(s?): g<c>:\'[4]\'<r:\'[5]\'>,\'switcherData\':r?:\'[6]\'"
+    schema = "\'businessProfileId\':s,\'entryInfo\':r:\'[0]\',\'previewMode\':b,\'showHighlightCta\':b@?,\'optInNotificationsSet\':b@?,\'onCreateHighlight\':f?(),\'useLegacyBusinessEndpointInstead\':b@?,\'isVerticalNavStyle\':b@?,\'showSpotlightPlayCount\':b@?,\'subscriptionActionAttributions\':r?:\'[1]\',\'vOperaEnabled\':b@?,\'bitmojiAvatarId\':s?,\'showId\':s?,\'cameosPublisherConfig\':r?:\'[2]\',\'isPublisherProfile\':b@?,\'isCameosInSpotlight\':b@?,\'userId\':s?,\'markFriendSuggestionsAsViewed\':f?(r:\'[3]\'),\'logFriendSuggestionImpression\':f?(),\'removeTopInset\':b@?,\'storySummaryInfoObservable\':f?(s?): g<c>:\'[4]\'<r:\'[5]\'>,\'switcherData\':r?:\'[6]\',\'storefrontCountryCode\':s?,\'launchSourceAdId\':s?"
     typeReferences = {
         Lcom/snap/impala/publicprofile/EntryInfo;,
         Lcom/snap/impala/publicprofile/SubscriptionActionAttributions;,
         Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;,
-        LnLj;,
+        LRak;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
         Lcom/snap/composer/stories/StorySummaryInfo;,
         Lcom/snap/impala/publicprofile/PublicProfileSwitcherData;
@@ -26,8 +26,6 @@
 
 .field private _cameosPublisherConfig:Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;
 
-.field private _enableSavedSpotlightFeedTypeForMixer:Ljava/lang/Boolean;
-
 .field private _entryInfo:Lcom/snap/impala/publicprofile/EntryInfo;
 
 .field private _isCameosInSpotlight:Ljava/lang/Boolean;
@@ -35,6 +33,8 @@
 .field private _isPublisherProfile:Ljava/lang/Boolean;
 
 .field private _isVerticalNavStyle:Ljava/lang/Boolean;
+
+.field private _launchSourceAdId:Ljava/lang/String;
 
 .field private _logFriendSuggestionImpression:Lkotlin/jvm/functions/Function0;
     .annotation system Ldalvik/annotation/Signature;
@@ -71,6 +71,8 @@
 .field private _showId:Ljava/lang/String;
 
 .field private _showSpotlightPlayCount:Ljava/lang/Boolean;
+
+.field private _storefrontCountryCode:Ljava/lang/String;
 
 .field private _storySummaryInfoObservable:Lkotlin/jvm/functions/Function1;
     .annotation system Ldalvik/annotation/Signature;
@@ -149,30 +151,33 @@
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_isCameosInSpotlight:Ljava/lang/Boolean;
 
     .line 18
-    iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_enableSavedSpotlightFeedTypeForMixer:Ljava/lang/Boolean;
-
-    .line 19
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_userId:Ljava/lang/String;
 
-    .line 20
+    .line 19
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_markFriendSuggestionsAsViewed:Lkotlin/jvm/functions/Function1;
 
-    .line 21
+    .line 20
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_logFriendSuggestionImpression:Lkotlin/jvm/functions/Function0;
 
-    .line 22
+    .line 21
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_removeTopInset:Ljava/lang/Boolean;
 
-    .line 23
+    .line 22
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_storySummaryInfoObservable:Lkotlin/jvm/functions/Function1;
 
-    .line 24
+    .line 23
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_switcherData:Lcom/snap/impala/publicprofile/PublicProfileSwitcherData;
+
+    .line 24
+    iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_storefrontCountryCode:Ljava/lang/String;
+
+    .line 25
+    iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_launchSourceAdId:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Lcom/snap/impala/publicprofile/EntryInfo;ZLjava/lang/Boolean;Ljava/lang/Boolean;Lkotlin/jvm/functions/Function0;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/impala/publicprofile/SubscriptionActionAttributions;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Ljava/lang/Boolean;Lkotlin/jvm/functions/Function1;Lcom/snap/impala/publicprofile/PublicProfileSwitcherData;)V
+.method public constructor <init>(Ljava/lang/String;Lcom/snap/impala/publicprofile/EntryInfo;ZLjava/lang/Boolean;Ljava/lang/Boolean;Lkotlin/jvm/functions/Function0;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/impala/publicprofile/SubscriptionActionAttributions;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Ljava/lang/Boolean;Lkotlin/jvm/functions/Function1;Lcom/snap/impala/publicprofile/PublicProfileSwitcherData;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -193,104 +198,110 @@
             "Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;",
             "Ljava/lang/Boolean;",
             "Ljava/lang/Boolean;",
-            "Ljava/lang/Boolean;",
             "Ljava/lang/String;",
             "Lkotlin/jvm/functions/Function1;",
             "Lkotlin/jvm/functions/Function0;",
             "Ljava/lang/Boolean;",
             "Lkotlin/jvm/functions/Function1;",
             "Lcom/snap/impala/publicprofile/PublicProfileSwitcherData;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
             ")V"
         }
     .end annotation
 
-    .line 25
+    .line 26
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 26
+    .line 27
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_businessProfileId:Ljava/lang/String;
 
-    .line 27
+    .line 28
     iput-object p2, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_entryInfo:Lcom/snap/impala/publicprofile/EntryInfo;
 
-    .line 28
+    .line 29
     iput-boolean p3, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_previewMode:Z
 
-    .line 29
+    .line 30
     iput-object p4, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_showHighlightCta:Ljava/lang/Boolean;
 
-    .line 30
+    .line 31
     iput-object p5, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_optInNotificationsSet:Ljava/lang/Boolean;
 
-    .line 31
+    .line 32
     iput-object p6, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_onCreateHighlight:Lkotlin/jvm/functions/Function0;
 
-    .line 32
+    .line 33
     iput-object p7, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_useLegacyBusinessEndpointInstead:Ljava/lang/Boolean;
 
-    .line 33
+    .line 34
     iput-object p8, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_isVerticalNavStyle:Ljava/lang/Boolean;
 
-    .line 34
+    .line 35
     iput-object p9, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_showSpotlightPlayCount:Ljava/lang/Boolean;
 
-    .line 35
+    .line 36
     iput-object p10, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_subscriptionActionAttributions:Lcom/snap/impala/publicprofile/SubscriptionActionAttributions;
 
-    .line 36
+    .line 37
     iput-object p11, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_vOperaEnabled:Ljava/lang/Boolean;
 
-    .line 37
+    .line 38
     iput-object p12, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_bitmojiAvatarId:Ljava/lang/String;
 
-    .line 38
+    .line 39
     iput-object p13, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_showId:Ljava/lang/String;
 
-    .line 39
+    .line 40
     iput-object p14, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_cameosPublisherConfig:Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;
 
-    .line 40
+    .line 41
     iput-object p15, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_isPublisherProfile:Ljava/lang/Boolean;
 
     move-object/from16 p1, p16
 
-    .line 41
+    .line 42
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_isCameosInSpotlight:Ljava/lang/Boolean;
 
     move-object/from16 p1, p17
 
-    .line 42
-    iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_enableSavedSpotlightFeedTypeForMixer:Ljava/lang/Boolean;
-
-    move-object/from16 p1, p18
-
     .line 43
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_userId:Ljava/lang/String;
 
-    move-object/from16 p1, p19
+    move-object/from16 p1, p18
 
     .line 44
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_markFriendSuggestionsAsViewed:Lkotlin/jvm/functions/Function1;
 
-    move-object/from16 p1, p20
+    move-object/from16 p1, p19
 
     .line 45
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_logFriendSuggestionImpression:Lkotlin/jvm/functions/Function0;
 
-    move-object/from16 p1, p21
+    move-object/from16 p1, p20
 
     .line 46
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_removeTopInset:Ljava/lang/Boolean;
 
-    move-object/from16 p1, p22
+    move-object/from16 p1, p21
 
     .line 47
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_storySummaryInfoObservable:Lkotlin/jvm/functions/Function1;
 
-    move-object/from16 p1, p23
+    move-object/from16 p1, p22
 
     .line 48
     iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_switcherData:Lcom/snap/impala/publicprofile/PublicProfileSwitcherData;
+
+    move-object/from16 p1, p23
+
+    .line 49
+    iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_storefrontCountryCode:Ljava/lang/String;
+
+    move-object/from16 p1, p24
+
+    .line 50
+    iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_launchSourceAdId:Ljava/lang/String;
 
     return-void
 .end method
@@ -330,7 +341,18 @@
     return-void
 .end method
 
-.method public final d(LCme;)V
+.method public final d(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;->_launchSourceAdId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final e(LsEe;)V
     .locals 0
 
     .line 1
@@ -341,7 +363,7 @@
     return-void
 .end method
 
-.method public final e(Ls3e;)V
+.method public final f(Lcde;)V
     .locals 0
 
     .line 1
@@ -352,7 +374,7 @@
     return-void
 .end method
 
-.method public final f(Lkotlin/jvm/functions/Function0;)V
+.method public final g(Lkotlin/jvm/functions/Function0;)V
     .locals 0
 
     .line 1
@@ -363,7 +385,7 @@
     return-void
 .end method
 
-.method public final g()V
+.method public final h()V
     .locals 1
 
     .line 1
@@ -378,7 +400,7 @@
     return-void
 .end method
 
-.method public final h(Ljava/lang/Boolean;)V
+.method public final i(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -389,7 +411,7 @@
     return-void
 .end method
 
-.method public final i(Ljava/lang/Boolean;)V
+.method public final j(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -400,7 +422,7 @@
     return-void
 .end method
 
-.method public final j(Ljava/lang/String;)V
+.method public final k(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -411,7 +433,7 @@
     return-void
 .end method
 
-.method public final k(Lcom/snap/impala/publicprofile/SubscriptionActionAttributions;)V
+.method public final l(Lcom/snap/impala/publicprofile/SubscriptionActionAttributions;)V
     .locals 0
 
     .line 1
@@ -422,7 +444,7 @@
     return-void
 .end method
 
-.method public final l(Ljava/lang/String;)V
+.method public final m(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -433,7 +455,7 @@
     return-void
 .end method
 
-.method public final m(Ljava/lang/Boolean;)V
+.method public final n(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1

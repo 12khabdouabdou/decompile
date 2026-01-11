@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/commerce_size_recommendations/FitFinderBaseBlizzardEvent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'productId\':s?,\'commerceProductArea\':r?:\'[0]\',\'commerceOriginType\':r?:\'[1]\',\'commerceSessionId\':s?,\'sourceId\':s?,\'sourceSessionId\':s?,\'storeId\':s?,\'commerceProductType\':r?:\'[2]\'"
     typeReferences = {

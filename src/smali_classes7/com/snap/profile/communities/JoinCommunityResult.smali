@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'RateLimited\':0,\'Error\':1,\'SuccessWithVerification\':2,\'SuccessAlreadyVerified\':3,\'ErrorDuplicateEmail\':4,\'UnsupportedCommunity\':5,\'CommunityFull\':6,\'SuccessfullyJoinedWaitlist\':7,\'JoinWaitlistFailed\':8,\'EmailDomainNotAllowed\':9"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

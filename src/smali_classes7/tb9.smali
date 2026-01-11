@@ -2,125 +2,191 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LgW6;
+
 
 # instance fields
-.field public final a:Lake;
+.field public final synthetic a:I
 
-.field public final b:Lake;
-
-.field public final c:Lake;
-
-.field public final d:Lake;
-
-.field public final e:Lake;
-
-.field public final f:Lake;
-
-.field public final g:Lake;
-
-.field public final h:LBre;
-
-.field public final i:Lake;
-
-.field public final j:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final synthetic b:Lub9;
 
 
 # direct methods
-.method public constructor <init>(Lake;Lake;Lake;Lake;Lake;Lake;Lake;Lake;)V
+.method public synthetic constructor <init>(Lub9;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Ltb9;->a:I
+
+    iput-object p1, p0, Ltb9;->b:Lub9;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(LxV6;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Ltb9;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Ltb9;->a:Lake;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Ltb9;->b:Lake;
+    check-cast p1, Lcom/snap/opera/events/internal/InternalViewerEvents$OperaSizeUpdated;
 
     .line 7
     .line 8
-    iput-object p3, p0, Ltb9;->c:Lake;
+    iget-object p1, p0, Ltb9;->b:Lub9;
 
     .line 9
     .line 10
-    iput-object p4, p0, Ltb9;->d:Lake;
+    invoke-virtual {p1}, Lub9;->x1()V
 
     .line 11
     .line 12
-    iput-object p5, p0, Ltb9;->e:Lake;
-
     .line 13
+    return-void
+
     .line 14
-    iput-object p6, p0, Ltb9;->f:Lake;
+    :pswitch_0
+    check-cast p1, Lcom/snap/opera/events/ViewerEvents$ContextMenuModeWillExit;
 
     .line 15
     .line 16
-    iput-object p8, p0, Ltb9;->g:Lake;
+    iget-object p1, p0, Ltb9;->b:Lub9;
 
     .line 17
     .line 18
-    sget-object p1, Lvb9;->Z:Lvb9;
+    iget-boolean v0, p1, Lub9;->I0:Z
 
     .line 19
     .line 20
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v0, :cond_1
 
     .line 21
     .line 22
+    iget-object v0, p1, Lub9;->F0:Lcom/snap/opera/view/FitWidthImageView;
+
     .line 23
-    new-instance p2, LWm0;
-
     .line 24
-    .line 25
-    const-string p3, "InAppWarningManagerImpl"
+    if-eqz v0, :cond_0
 
+    .line 25
     .line 26
+    const/4 v1, 0x1
+
     .line 27
-    invoke-direct {p2, p1, p3}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/snap/opera/view/FitWidthImageView;->a(Z)V
 
     .line 28
     .line 29
     .line 30
-    sget-object p1, Lrn0;->a:Lrn0;
+    invoke-virtual {p1}, Lub9;->v1()V
 
     .line 31
     .line 32
-    new-instance p1, LBre;
-
     .line 33
+    goto :goto_0
+
     .line 34
-    invoke-direct {p1, p2}, LBre;-><init>(LWm0;)V
+    :cond_0
+    const-string p1, "imageView"
 
     .line 35
     .line 36
-    .line 37
-    iput-object p1, p0, Ltb9;->h:LBre;
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 37
     .line 38
     .line 39
-    iput-object p7, p0, Ltb9;->i:Lake;
+    const/4 p1, 0x0
 
     .line 40
+    throw p1
+
     .line 41
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+    :cond_1
+    :goto_0
+    return-void
 
     .line 42
-    .line 43
-    const/4 p2, 0x0
+    :pswitch_1
+    check-cast p1, Lcom/snap/opera/events/ViewerEvents$ContextMenuModeWillEnter;
 
+    .line 43
     .line 44
-    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+    iget-object p1, p0, Ltb9;->b:Lub9;
 
     .line 45
     .line 46
-    .line 47
-    iput-object p1, p0, Ltb9;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-boolean v0, p1, Lub9;->I0:Z
 
+    .line 47
     .line 48
+    if-eqz v0, :cond_3
+
     .line 49
+    .line 50
+    iget-object v0, p1, Lub9;->F0:Lcom/snap/opera/view/FitWidthImageView;
+
+    .line 51
+    .line 52
+    if-eqz v0, :cond_2
+
+    .line 53
+    .line 54
+    const/4 v1, 0x0
+
+    .line 55
+    invoke-virtual {v0, v1}, Lcom/snap/opera/view/FitWidthImageView;->a(Z)V
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {p1}, Lub9;->w1()V
+
+    .line 59
+    .line 60
+    .line 61
+    goto :goto_1
+
+    .line 62
+    :cond_2
+    const-string p1, "imageView"
+
+    .line 63
+    .line 64
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 65
+    .line 66
+    .line 67
+    const/4 p1, 0x0
+
+    .line 68
+    throw p1
+
+    .line 69
+    :cond_3
+    :goto_1
     return-void
+
+    .line 70
+    nop
+
+    .line 71
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

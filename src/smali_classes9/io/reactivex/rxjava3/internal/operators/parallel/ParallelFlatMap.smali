@@ -20,7 +20,7 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn;
 
-.field public final b:LUuh;
+.field public final b:LUSh;
 
 .field public final c:I
 
@@ -28,7 +28,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn;LUuh;II)V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn;LUSh;II)V
     .locals 0
 
     .line 1
@@ -41,7 +41,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFlatMap;->b:LUuh;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFlatMap;->b:LUSh;
 
     .line 7
     .line 8
@@ -81,18 +81,18 @@
     return v0
 .end method
 
-.method public subscribe([LV6i;)V
+.method public subscribe([Lmvi;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
-            "LV6i;",
+            "Lmvi;",
             ")V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lio/reactivex/rxjava3/parallel/ParallelFlowable;->e([LV6i;)Z
+    invoke-virtual {p0, p1}, Lio/reactivex/rxjava3/parallel/ParallelFlowable;->e([Lmvi;)Z
 
     .line 2
     .line 3
@@ -111,7 +111,7 @@
     array-length v0, p1
 
     .line 9
-    new-array v1, v0, [LV6i;
+    new-array v1, v0, [Lmvi;
 
     .line 10
     .line 11
@@ -134,7 +134,7 @@
 
     .line 18
     .line 19
-    iget-object v6, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFlatMap;->b:LUuh;
+    iget-object v6, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFlatMap;->b:LUSh;
 
     .line 20
     .line 21
@@ -142,7 +142,7 @@
 
     .line 22
     .line 23
-    invoke-static {v4, v6, v2, v7, v5}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMap;->subscribe(LV6i;Lio/reactivex/rxjava3/functions/Function;ZII)Lio/reactivex/rxjava3/core/FlowableSubscriber;
+    invoke-static {v4, v6, v2, v7, v5}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMap;->subscribe(Lmvi;Lio/reactivex/rxjava3/functions/Function;ZII)Lio/reactivex/rxjava3/core/FlowableSubscriber;
 
     .line 24
     .line 25
@@ -166,7 +166,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn;->subscribe([LV6i;)V
+    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn;->subscribe([Lmvi;)V
 
     .line 35
     .line 36

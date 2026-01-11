@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/preview_toolbar/VerticalToolbarItem;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'type\':r<e>:\'[0]\',\'isEnabled\':b,\'isHighlighted\':b,\'showLabel\':b,\'isLoading\':b,\'artworkUrl\':s?,\'artworkAsset\':r?:\'[1]\',\'optionalPayload\':r?:\'[2]\'"
     typeReferences = {

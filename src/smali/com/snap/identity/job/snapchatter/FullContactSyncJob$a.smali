@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field private final a:LnO3;
+.field private final a:LbS3;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "a"
     .end annotation
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method public constructor <init>(LnO3;I)V
+.method public constructor <init>(LbS3;I)V
     .locals 0
 
     .line 1
@@ -38,7 +38,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LnO3;
+    iput-object p1, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LbS3;
 
     .line 5
     .line 6
@@ -62,11 +62,11 @@
     return v0
 .end method
 
-.method public final b()LnO3;
+.method public final b()LbS3;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LnO3;
+    iget-object v0, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LbS3;
 
     .line 2
     .line 3
@@ -94,9 +94,9 @@
     :cond_1
     check-cast p1, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;
 
-    iget-object v1, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LnO3;
+    iget-object v1, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LbS3;
 
-    iget-object v3, p1, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LnO3;
+    iget-object v3, p1, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LbS3;
 
     if-eq v1, v3, :cond_2
 
@@ -118,7 +118,7 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LnO3;
+    iget-object v0, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LbS3;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -136,7 +136,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 4
 
-    iget-object v0, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LnO3;
+    iget-object v0, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->a:LbS3;
 
     iget v1, p0, Lcom/snap/identity/job/snapchatter/FullContactSyncJob$a;->b:I
 

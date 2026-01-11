@@ -1,3 +1,3 @@
 .class public abstract Lqda;
-.super Ljava/lang/Object;
+.super Lsda;
 .source "SourceFile"

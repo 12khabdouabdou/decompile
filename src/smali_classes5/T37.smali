@@ -1,11 +1,29 @@
-.class public interface abstract LT37;
+.class public final LT37;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a()LW0d;
-.end method
+# static fields
+.field public static final a:LT37;
 
-.method public abstract b()LW0d;
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LT37;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LT37;->a:LT37;
+
+    .line 7
+    .line 8
+    return-void
 .end method

@@ -41,13 +41,13 @@
 
 
 # instance fields
-.field public final a:LrIg;
+.field public final a:Lb4h;
 
 .field public final b:Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleObserver;LrIg;LXXf;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleObserver;Lb4h;LZeg;)V
     .locals 1
 
     .line 1
@@ -60,7 +60,7 @@
 
     .line 5
     .line 6
-    invoke-direct {v0, p1, p3}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;-><init>(Lio/reactivex/rxjava3/core/SingleObserver;LXXf;)V
+    invoke-direct {v0, p1, p3}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver$InnerObserver;-><init>(Lio/reactivex/rxjava3/core/SingleObserver;LZeg;)V
 
     .line 7
     .line 8
@@ -69,7 +69,7 @@
 
     .line 10
     .line 11
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver;->a:LrIg;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver;->a:Lb4h;
 
     .line 12
     .line 13
@@ -78,7 +78,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -98,7 +98,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 10
     .line 11
@@ -187,11 +187,11 @@
     .line 2
     .line 3
     :try_start_0
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver;->a:LrIg;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver;->a:Lb4h;
 
     .line 4
     .line 5
-    invoke-virtual {v1, p1}, LrIg;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, p1}, Lb4h;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
     .line 7

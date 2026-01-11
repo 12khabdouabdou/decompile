@@ -1,84 +1,127 @@
 .class public final LWo1;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:LZeh;
+.field public final synthetic a:I
 
-.field public final b:Lwi1;
-
-.field public final c:Lwi1;
-
-.field public final d:LWm0;
-
-.field public final e:LBre;
-
-.field public final f:Lrn0;
+.field public final synthetic b:LXo1;
 
 
 # direct methods
-.method public constructor <init>(LZeh;Lwi1;Lwi1;)V
+.method public synthetic constructor <init>(LXo1;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LWo1;->a:I
+
+    iput-object p1, p0, LWo1;->b:LXo1;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LWo1;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LWo1;->a:LZeh;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LWo1;->b:Lwi1;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    iput-object p3, p0, LWo1;->c:Lwi1;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 9
     .line 10
-    sget-object p1, Lkk1;->Z:Lkk1;
-
     .line 11
+    move-result-object p1
+
     .line 12
-    const-string p2, "BloopsOnboardingStorageTargetService"
+    if-nez p1, :cond_0
 
     .line 13
     .line 14
-    invoke-static {p1, p1, p2}, LKx6;->d(Lkk1;Lkk1;Ljava/lang/String;)LWm0;
+    const-string p1, "Something went wrong"
 
     .line 15
     .line 16
-    .line 17
-    move-result-object p1
+    :cond_0
+    const-string v0, ". Please shake"
 
+    .line 17
     .line 18
-    iput-object p1, p0, LWo1;->d:LWm0;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
     .line 19
     .line 20
-    new-instance p2, LBre;
-
     .line 21
+    move-result-object p1
+
     .line 22
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
+    iget-object v0, p0, LWo1;->b:LXo1;
 
     .line 23
     .line 24
-    .line 25
-    iput-object p2, p0, LWo1;->e:LBre;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 25
     .line 26
     .line 27
-    sget-object p1, Lrn0;->a:Lrn0;
+    invoke-static {p1}, LJ5j;->c(Ljava/lang/String;)V
 
     .line 28
     .line 29
-    iput-object p1, p0, LWo1;->f:Lrn0;
-
     .line 30
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 31
-    return-void
+    .line 32
+    return-object p1
+
+    .line 33
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 34
+    .line 35
+    iget-object p1, p0, LWo1;->b:LXo1;
+
+    .line 36
+    .line 37
+    iget-object p1, p1, LXo1;->y0:LJp0;
+
+    .line 38
+    .line 39
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 40
+    .line 41
+    return-object p1
+
+    .line 42
+    nop
+
+    .line 43
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicReference<",
-        "Lc7i;",
+        "Ltvi;",
         ">;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TU;>;"
@@ -180,7 +180,7 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 2
 
     .line 1
@@ -191,7 +191,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0, p1, v0, v1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->d(Ljava/util/concurrent/atomic/AtomicReference;Lc7i;J)V
+    invoke-static {p0, p1, v0, v1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->d(Ljava/util/concurrent/atomic/AtomicReference;Ltvi;J)V
 
     .line 7
     .line 8

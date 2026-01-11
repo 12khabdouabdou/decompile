@@ -1,72 +1,116 @@
-.class public final synthetic LFC5;
-.super Lj28;
+.class public final LFC5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Landroid/media/MediaScannerConnection$OnScanCompletedListener;
 
 
-# static fields
-.field public static final f0:LFC5;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LFC5;
+    iput p1, p0, LFC5;->a:I
 
-    .line 2
-    .line 3
-    const-string v5, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;)V"
+    iput-object p2, p0, LFC5;->b:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    const/4 v2, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    const/4 v1, 0x1
-
-    .line 7
-    const-class v3, Lek5;
-
-    .line 8
-    .line 9
-    const-string v4, "<init>"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, LFC5;->f0:LFC5;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onScanCompleted(Ljava/lang/String;Landroid/net/Uri;)V
     .locals 1
 
     .line 1
-    check-cast p1, LAC5;
+    iget p1, p0, LFC5;->a:I
 
     .line 2
     .line 3
-    new-instance v0, Lek5;
+    packed-switch p1, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, p1}, Lek5;-><init>(LAC5;)V
-
     .line 6
+    iget-object p1, p0, LFC5;->b:Ljava/lang/Object;
+
     .line 7
     .line 8
-    return-object v0
+    check-cast p1, LZvb;
+
+    .line 9
+    .line 10
+    if-nez p2, :cond_0
+
+    .line 11
+    .line 12
+    iget-object p1, p1, LZvb;->w:LJp0;
+
+    .line 13
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    iget-object p1, p1, LZvb;->w:LJp0;
+
+    .line 16
+    .line 17
+    :goto_0
+    return-void
+
+    .line 18
+    :pswitch_0
+    iget-object p1, p0, LFC5;->b:Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    check-cast p1, Lio/reactivex/rxjava3/core/ObservableEmitter;
+
+    .line 21
+    .line 22
+    invoke-interface {p1}, Lio/reactivex/rxjava3/core/ObservableEmitter;->d()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v0
+
+    .line 26
+    if-nez v0, :cond_2
+
+    .line 27
+    .line 28
+    if-eqz p2, :cond_1
+
+    .line 29
+    .line 30
+    invoke-interface {p1, p2}, Lio/reactivex/rxjava3/core/Emitter;->onNext(Ljava/lang/Object;)V
+
+    .line 31
+    .line 32
+    .line 33
+    :cond_1
+    invoke-interface {p1}, Lio/reactivex/rxjava3/core/Emitter;->onComplete()V
+
+    .line 34
+    .line 35
+    .line 36
+    :cond_2
+    return-void
+
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

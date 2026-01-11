@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LCrc;
+    proxyClass = LVGc;
     schema = "\'createDeckContainerFactory\':f|m|(r:\'[0]\'): r:\'[1]\',\'createNavigator\':f|m|(r:\'[2]\'): r:\'[0]\'"
     typeReferences = {
         Lcom/snap/composer/navigation/INavigator;,

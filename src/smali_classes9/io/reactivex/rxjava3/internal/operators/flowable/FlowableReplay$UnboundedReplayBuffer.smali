@@ -35,7 +35,35 @@
 
 
 # virtual methods
-.method public final c(Ljava/lang/Throwable;)V
+.method public final b()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/reactivex/rxjava3/internal/util/NotificationLite;->a:Lio/reactivex/rxjava3/internal/util/NotificationLite;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    iget v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$UnboundedReplayBuffer;->a:I
+
+    .line 7
+    .line 8
+    add-int/lit8 v0, v0, 0x1
+
+    .line 9
+    .line 10
+    iput v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$UnboundedReplayBuffer;->a:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Throwable;)V
     .locals 0
 
     .line 1
@@ -64,34 +92,6 @@
 
     .line 13
     .line 14
-    return-void
-.end method
-
-.method public final d()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Lio/reactivex/rxjava3/internal/util/NotificationLite;->a:Lio/reactivex/rxjava3/internal/util/NotificationLite;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    iget v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$UnboundedReplayBuffer;->a:I
-
-    .line 7
-    .line 8
-    add-int/lit8 v0, v0, 0x1
-
-    .line 9
-    .line 10
-    iput v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$UnboundedReplayBuffer;->a:I
-
-    .line 11
-    .line 12
     return-void
 .end method
 
@@ -166,12 +166,12 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 17
-    iget-object v0, p1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->b:LV6i;
+    iget-object v0, p1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->b:Lmvi;
 
     .line 18
     .line 19
     :goto_0
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->c()Z
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->d()Z
 
     .line 20
     .line 21
@@ -262,7 +262,7 @@
 
     .line 59
     :try_start_1
-    invoke-static {v0, v12}, Lio/reactivex/rxjava3/internal/util/NotificationLite;->a(LV6i;Ljava/lang/Object;)Z
+    invoke-static {v0, v12}, Lio/reactivex/rxjava3/internal/util/NotificationLite;->a(Lmvi;Ljava/lang/Object;)Z
 
     .line 60
     .line 61
@@ -280,7 +280,7 @@
 
     .line 66
     :cond_3
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->c()Z
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->d()Z
 
     .line 67
     .line 68
@@ -351,7 +351,7 @@
 
     .line 98
     .line 99
-    invoke-interface {v0, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 100
     .line 101

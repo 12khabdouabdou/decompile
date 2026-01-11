@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LGU7;
+    proxyClass = LL08;
     schema = "\'forUsers\':f|m|(a<r:\'[0]\'>, f|s|(a?<s>, r?:\'[1]\')),\'forGroups\':f|m|(a<r:\'[2]\'>, f|s|(a?<s>, r?:\'[1]\'))"
     typeReferences = {
-        LOU7;,
+        LQ08;,
         Lcom/snap/composer/foundation/Error;,
-        LyU7;
+        LD08;
     }
 .end annotation
 
@@ -25,7 +25,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LyU7;",
+            "LD08;",
             ">;",
             "Lkotlin/jvm/functions/Function2;",
             ")V"
@@ -38,7 +38,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LOU7;",
+            "LQ08;",
             ">;",
             "Lkotlin/jvm/functions/Function2;",
             ")V"

@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:LKQ2;
+.field public final a:LmT2;
 
-.field public final b:LRai;
+.field public final b:Lszi;
 
-.field public final c:LQOh;
+.field public final c:Lalh;
 
 
 # direct methods
@@ -24,58 +24,59 @@
     .line 3
     .line 4
     .line 5
-    new-instance p2, LQOh;
+    new-instance p2, Lalh;
 
     .line 6
     .line 7
-    const/4 v0, 0x7
+    const/16 v0, 0x15
 
     .line 8
-    invoke-direct {p2, v0, p0}, LQOh;-><init>(ILjava/lang/Object;)V
-
     .line 9
+    invoke-direct {p2, v0, p0}, Lalh;-><init>(ILjava/lang/Object;)V
+
     .line 10
     .line 11
-    iput-object p2, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->c:LQOh;
-
     .line 12
+    iput-object p2, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->c:Lalh;
+
     .line 13
-    new-instance p2, LKQ2;
-
     .line 14
-    .line 15
-    invoke-direct {p2, p1}, LKQ2;-><init>(Landroid/content/Context;)V
+    new-instance p2, LmT2;
 
+    .line 15
     .line 16
+    invoke-direct {p2, p1}, LmT2;-><init>(Landroid/content/Context;)V
+
     .line 17
     .line 18
-    iput-object p2, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->a:LKQ2;
-
     .line 19
+    iput-object p2, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->a:LmT2;
+
     .line 20
+    .line 21
     invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 21
     .line 22
     .line 23
-    new-instance p2, LRai;
-
     .line 24
-    .line 25
-    invoke-direct {p2, p1}, LRai;-><init>(Landroid/content/Context;)V
+    new-instance p2, Lszi;
 
+    .line 25
     .line 26
+    invoke-direct {p2, p1}, Lszi;-><init>(Landroid/content/Context;)V
+
     .line 27
     .line 28
-    iput-object p2, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->b:LRai;
-
     .line 29
+    iput-object p2, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->b:Lszi;
+
     .line 30
+    .line 31
     invoke-virtual {p0, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 31
     .line 32
     .line 33
+    .line 34
     return-void
 .end method
 
@@ -91,7 +92,7 @@
     sub-int/2addr p5, p3
 
     .line 3
-    iget-object p1, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->b:LRai;
+    iget-object p1, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->b:Lszi;
 
     .line 4
     .line 5
@@ -144,7 +145,7 @@
     sub-int/2addr p5, p2
 
     .line 26
-    iget-object p3, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->a:LKQ2;
+    iget-object p3, p0, Lcom/snap/discover/playback/ui/views/SubscribedAnimationView;->a:LmT2;
 
     .line 27
     .line 28

@@ -12,7 +12,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, v0}, Lio/reactivex/rxjava3/core/Observable;->f0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+    invoke-virtual {p0, v0}, Lio/reactivex/rxjava3/core/Observable;->i0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 4
     .line 5
@@ -27,7 +27,7 @@
     return-object p0
 .end method
 
-.method public static final b(LdUe;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
+.method public static final b(LsCe;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
     .locals 1
 
     .line 1
@@ -35,7 +35,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/kotlin/CompletableKt$sam$java_util_concurrent_Callable$0;-><init>(LdUe;)V
+    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/kotlin/CompletableKt$sam$java_util_concurrent_Callable$0;-><init>(LsCe;)V
 
     .line 4
     .line 5

@@ -21,6 +21,9 @@
 .method public abstract getAppInfo()Lcom/snapchat/client/talkcore_ts/AppInfo;
 .end method
 
+.method public abstract getCapturedAudioProvider()Lcom/addlive/djinni/AudioFrameProvider;
+.end method
+
 .method public abstract getCodecConfig()Lcom/snapchat/client/talkcore_ts/CodecConfig;
 .end method
 

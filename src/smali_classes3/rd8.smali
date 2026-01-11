@@ -1,32 +1,38 @@
-.class public final Lrd8;
+.class public interface abstract Lrd8;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lsd8;
+.implements Lcom/snap/composer/utils/ComposerMarshallable;
 
 
-# static fields
-.field public static final a:Lrd8;
+# annotations
+.annotation runtime LpA3;
+    propertyReplacements = ""
+    proxyClass = Lsd8;
+    schema = "\'launchGame\':f?|m|(r:\'[0]\'),\'launchGameAndRunCompletion\':f|m|(r:\'[0]\', f())"
+    typeReferences = {
+        Lcom/snap/cognac/CognacGameLaunchInfo;
+    }
+.end annotation
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+# virtual methods
+.method public abstract launchGame(Lcom/snap/cognac/CognacGameLaunchInfo;)V
+    .annotation runtime LhC3;
+    .end annotation
+.end method
 
-    .line 1
-    new-instance v0, Lrd8;
+.method public abstract launchGameAndRunCompletion(Lcom/snap/cognac/CognacGameLaunchInfo;Lkotlin/jvm/functions/Function0;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/cognac/CognacGameLaunchInfo;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
+.end method
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lrd8;->a:Lrd8;
-
-    .line 7
-    .line 8
-    return-void
+.method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
 .end method

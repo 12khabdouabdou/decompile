@@ -12,11 +12,11 @@
 
 .field public final l0:Ljava/lang/String;
 
-.field public final m0:LcZ;
+.field public final m0:LF10;
 
 .field public final n0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final o0:Lwoi;
+.field public final o0:LkNi;
 
 .field public p0:Z
 
@@ -28,53 +28,53 @@
     .locals 5
 
     .line 1
-    sget-object v0, LPwf;->a:LPwf;
+    sget-object v0, LYPf;->a:LYPf;
 
     .line 2
     .line 3
-    sget-object v1, LPwf;->Y:LPwf;
+    sget-object v1, LYPf;->Y:LYPf;
 
     .line 4
     .line 5
-    new-instance v2, Lhad;
+    new-instance v2, LDpd;
 
     .line 6
     .line 7
-    invoke-direct {v2, v0, v1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v2, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 8
     .line 9
     .line 10
-    sget-object v0, LPwf;->b:LPwf;
+    sget-object v0, LYPf;->b:LYPf;
 
     .line 11
     .line 12
-    sget-object v1, LPwf;->X:LPwf;
+    sget-object v1, LYPf;->X:LYPf;
 
     .line 13
     .line 14
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 15
     .line 16
-    invoke-direct {v3, v0, v1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 17
     .line 18
     .line 19
-    sget-object v0, LPwf;->c:LPwf;
+    sget-object v0, LYPf;->c:LYPf;
 
     .line 20
     .line 21
-    sget-object v1, LPwf;->t:LPwf;
+    sget-object v1, LYPf;->t:LYPf;
 
     .line 22
     .line 23
-    new-instance v4, Lhad;
+    new-instance v4, LDpd;
 
     .line 24
     .line 25
-    invoke-direct {v4, v0, v1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 26
     .line 27
@@ -82,7 +82,7 @@
     const/4 v0, 0x3
 
     .line 29
-    new-array v0, v0, [Lhad;
+    new-array v0, v0, [LDpd;
 
     .line 30
     .line 31
@@ -107,7 +107,7 @@
 
     .line 39
     .line 40
-    invoke-static {v0}, LEdb;->j0([Lhad;)Ljava/util/Map;
+    invoke-static {v0}, Lkrb;->F0([LDpd;)Ljava/util/Map;
 
     .line 41
     .line 42
@@ -183,11 +183,11 @@
     move-result-object v0
 
     .line 30
-    sget-object v1, LEy9;->g0:LEy9;
+    sget-object v1, LNH9;->g0:LNH9;
 
     .line 31
     .line 32
-    new-instance v2, LcZ;
+    new-instance v2, LF10;
 
     .line 33
     .line 34
@@ -198,16 +198,16 @@
 
     .line 36
     .line 37
-    invoke-direct {v2, v0, v1, v3, v4}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
+    invoke-direct {v2, v0, v1, v3, v4}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
 
     .line 38
     .line 39
     .line 40
-    iput-object v2, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LcZ;
+    iput-object v2, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LF10;
 
     .line 41
     .line 42
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 43
     .line 44
@@ -219,7 +219,7 @@
 
     .line 47
     .line 48
-    new-instance v1, Lwoi;
+    new-instance v1, LkNi;
 
     .line 49
     .line 50
@@ -227,19 +227,19 @@
 
     .line 51
     .line 52
-    invoke-direct {v1, v0, v2}, Lwoi;-><init>(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Ljava/util/Map;)V
+    invoke-direct {v1, v0, v2}, LkNi;-><init>(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Ljava/util/Map;)V
 
     .line 53
     .line 54
     .line 55
-    iput-object v1, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->o0:Lwoi;
+    iput-object v1, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->o0:LkNi;
 
     .line 56
     .line 57
     return-void
 .end method
 
-.method public static final M(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)Z
+.method public static final J(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)Z
     .locals 2
 
     .line 1
@@ -285,7 +285,7 @@
     return v0
 .end method
 
-.method public static final N(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)Z
+.method public static final K(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)Z
     .locals 2
 
     .line 1
@@ -331,7 +331,7 @@
     return v0
 .end method
 
-.method public static final synthetic O(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Landroid/os/Bundle;)V
+.method public static final synthetic L(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
@@ -343,7 +343,7 @@
     return-void
 .end method
 
-.method public static final synthetic P(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+.method public static final synthetic M(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
     .locals 0
 
     .line 1
@@ -355,7 +355,7 @@
     return-void
 .end method
 
-.method public static final synthetic R(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+.method public static final synthetic N(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
     .locals 0
 
     .line 1
@@ -367,7 +367,7 @@
     return-void
 .end method
 
-.method public static final synthetic S(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+.method public static final synthetic P(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
     .locals 0
 
     .line 1
@@ -379,7 +379,7 @@
     return-void
 .end method
 
-.method public static final synthetic W(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+.method public static final synthetic Q(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
     .locals 0
 
     .line 1
@@ -391,7 +391,7 @@
     return-void
 .end method
 
-.method public static final synthetic X(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+.method public static final synthetic U(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
     .locals 0
 
     .line 1
@@ -403,15 +403,15 @@
     return-void
 .end method
 
-.method public static Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+.method public static V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
     .locals 1
 
     .line 1
-    sget-object v0, LPwf;->Y:LPwf;
+    sget-object v0, LYPf;->Y:LYPf;
 
     .line 2
     .line 3
-    iget-object p2, p2, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->o0:Lwoi;
+    iget-object p2, p2, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->o0:LkNi;
 
     .line 4
     .line 5
@@ -419,7 +419,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p2, p1, v0, p0}, Lwoi;->a(Lio/reactivex/rxjava3/disposables/Disposable;Ljava/lang/Enum;Ljava/lang/String;)V
+    invoke-virtual {p2, p1, v0, p0}, LkNi;->a(Lio/reactivex/rxjava3/disposables/Disposable;Ljava/lang/Enum;Ljava/lang/String;)V
 
     .line 8
     .line 9
@@ -429,7 +429,28 @@
 
 
 # virtual methods
-.method public Z(Landroid/os/Bundle;)V
+.method public W(Landroid/os/Bundle;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public X()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public Y()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public Z()V
     .locals 0
 
     .line 1
@@ -443,14 +464,7 @@
     return-void
 .end method
 
-.method public b0()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public c0()V
+.method public d0()V
     .locals 0
 
     .line 1
@@ -461,7 +475,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -469,12 +483,12 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->i(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LNdh;->i(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0, p1}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->q0(Landroid/view/MotionEvent;)V
+    invoke-virtual {p0, p1}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->n0(Landroid/view/MotionEvent;)V
 
     .line 9
     .line 10
@@ -504,6 +518,13 @@
     return p1
 .end method
 
+.method public e0()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
 .method public f0()V
     .locals 0
 
@@ -518,7 +539,7 @@
     return-void
 .end method
 
-.method public h0()V
+.method public i0()V
     .locals 0
 
     .line 1
@@ -609,14 +630,7 @@
     return-void
 .end method
 
-.method public n0()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public o0()V
+.method public n0(Landroid/view/MotionEvent;)V
     .locals 0
 
     .line 1
@@ -624,14 +638,14 @@
 .end method
 
 .method public final onCreate(Landroid/os/Bundle;)V
-    .locals 6
+    .locals 7
 
     .line 1
-    new-instance v1, LHe;
+    new-instance v1, Lyf;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LcZ;
+    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LF10;
 
     .line 4
     .line 5
@@ -643,112 +657,116 @@
 
     .line 8
     .line 9
-    invoke-direct {v1, v0, v3, v2}, LHe;-><init>(Lan0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v3, v2}, Lyf;-><init>(Lrp0;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v5, Lze;
+    new-instance v5, Lqf;
 
     .line 13
     .line 14
-    const/16 v0, 0x12
+    const/16 v0, 0x15
 
     .line 15
     .line 16
-    invoke-direct {v5, p0, v0, p1}, Lze;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v5, p0, v0, p1}, Lqf;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 17
     .line 18
     .line 19
-    invoke-static {}, LpPg;->h()Z
+    sget-object v6, LPd;->a:Ljava/util/EnumSet;
 
     .line 20
     .line 21
+    invoke-static {}, Lvbh;->h()Z
+
     .line 22
+    .line 23
+    .line 24
     move-result p1
 
-    .line 23
-    if-eqz p1, :cond_0
-
-    .line 24
     .line 25
-    sget-object p1, LpPg;->a:LpPg;
+    if-eqz p1, :cond_0
 
     .line 26
     .line 27
-    invoke-static {}, LpPg;->g()LlPg;
+    sget-object p1, Lvbh;->a:Lvbh;
 
     .line 28
     .line 29
+    invoke-static {}, Lvbh;->g()Lrbh;
+
     .line 30
+    .line 31
+    .line 32
     move-result-object p1
 
-    .line 31
-    iget-object p1, p1, LlPg;->k0:Lobi;
-
-    .line 32
     .line 33
-    invoke-interface {p1}, Lobi;->get()Ljava/lang/Object;
+    iget-object p1, p1, Lrbh;->k0:LiAi;
 
     .line 34
     .line 35
+    invoke-interface {p1}, LiAi;->get()Ljava/lang/Object;
+
     .line 36
+    .line 37
+    .line 38
     move-result-object p1
 
-    .line 37
-    check-cast p1, LgP1;
-
-    .line 38
     .line 39
+    check-cast p1, LNS1;
+
+    .line 40
+    .line 41
     :goto_0
     move-object v4, p1
 
-    .line 40
+    .line 42
     goto :goto_1
 
-    .line 41
-    :cond_0
-    sget-object p1, LfP1;->a:LfP1;
-
-    .line 42
     .line 43
-    goto :goto_0
+    :cond_0
+    sget-object p1, LMS1;->a:LMS1;
 
     .line 44
-    :goto_1
-    new-instance v0, Lun0;
-
     .line 45
+    goto :goto_0
+
     .line 46
-    const/4 v2, 0x0
+    :goto_1
+    new-instance v0, LNp0;
 
     .line 47
-    const/4 v3, 0x2
-
     .line 48
-    invoke-direct/range {v0 .. v5}, Lun0;-><init>(LWm0;LZYf;ILgP1;Ljava/lang/Runnable;)V
+    const/4 v2, 0x0
 
     .line 49
-    .line 50
-    .line 51
-    invoke-virtual {v0}, Lun0;->run()V
+    const/4 v3, 0x2
 
+    .line 50
+    invoke-direct/range {v0 .. v6}, LNp0;-><init>(Lnp0;Lajg;ILNS1;Ljava/lang/Runnable;Ljava/util/EnumSet;)V
+
+    .line 51
     .line 52
     .line 53
+    invoke-virtual {v0}, LNp0;->run()V
+
     .line 54
+    .line 55
+    .line 56
     return-void
 .end method
 
 .method public final onDestroy()V
-    .locals 6
+    .locals 7
 
     .line 1
-    new-instance v1, LHe;
+    new-instance v1, Lyf;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LcZ;
+    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LF10;
 
     .line 4
     .line 5
@@ -760,99 +778,103 @@
 
     .line 8
     .line 9
-    invoke-direct {v1, v0, v3, v2}, LHe;-><init>(Lan0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v3, v2}, Lyf;-><init>(Lrp0;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v5, LQwf;
+    new-instance v5, LZPf;
 
     .line 13
     .line 14
     const/4 v0, 0x0
 
     .line 15
-    invoke-direct {v5, p0, v0}, LQwf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
+    invoke-direct {v5, p0, v0}, LZPf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
 
     .line 16
     .line 17
     .line 18
-    invoke-static {}, LpPg;->h()Z
+    sget-object v6, LPd;->a:Ljava/util/EnumSet;
 
     .line 19
     .line 20
+    invoke-static {}, Lvbh;->h()Z
+
     .line 21
+    .line 22
+    .line 23
     move-result v0
 
-    .line 22
-    if-eqz v0, :cond_0
-
-    .line 23
     .line 24
-    sget-object v0, LpPg;->a:LpPg;
+    if-eqz v0, :cond_0
 
     .line 25
     .line 26
-    invoke-static {}, LpPg;->g()LlPg;
+    sget-object v0, Lvbh;->a:Lvbh;
 
     .line 27
     .line 28
+    invoke-static {}, Lvbh;->g()Lrbh;
+
     .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 30
-    iget-object v0, v0, LlPg;->k0:Lobi;
-
-    .line 31
     .line 32
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
+    iget-object v0, v0, Lrbh;->k0:LiAi;
 
     .line 33
     .line 34
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
     move-result-object v0
 
-    .line 36
-    check-cast v0, LgP1;
-
-    .line 37
     .line 38
+    check-cast v0, LNS1;
+
+    .line 39
+    .line 40
     :goto_0
     move-object v4, v0
 
-    .line 39
+    .line 41
     goto :goto_1
 
-    .line 40
-    :cond_0
-    sget-object v0, LfP1;->a:LfP1;
-
-    .line 41
     .line 42
-    goto :goto_0
+    :cond_0
+    sget-object v0, LMS1;->a:LMS1;
 
     .line 43
-    :goto_1
-    new-instance v0, Lun0;
-
     .line 44
+    goto :goto_0
+
     .line 45
-    const/4 v2, 0x0
+    :goto_1
+    new-instance v0, LNp0;
 
     .line 46
-    const/4 v3, 0x2
-
     .line 47
-    invoke-direct/range {v0 .. v5}, Lun0;-><init>(LWm0;LZYf;ILgP1;Ljava/lang/Runnable;)V
+    const/4 v2, 0x0
 
     .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v0}, Lun0;->run()V
+    const/4 v3, 0x2
 
+    .line 49
+    invoke-direct/range {v0 .. v6}, LNp0;-><init>(Lnp0;Lajg;ILNS1;Ljava/lang/Runnable;Ljava/util/EnumSet;)V
+
+    .line 50
     .line 51
     .line 52
+    invoke-virtual {v0}, LNp0;->run()V
+
     .line 53
+    .line 54
+    .line 55
     return-void
 .end method
 
@@ -869,7 +891,7 @@
 
     .line 5
     .line 6
-    sget-object p2, LXRg;->a:LWRg;
+    sget-object p2, LOdh;->a:LNdh;
 
     .line 7
     .line 8
@@ -913,7 +935,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {p2, p1}, LWRg;->i(Ljava/lang/String;)V
+    invoke-virtual {p2, p1}, LNdh;->i(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -922,14 +944,14 @@
 .end method
 
 .method public final onPause()V
-    .locals 6
+    .locals 7
 
     .line 1
-    new-instance v1, LHe;
+    new-instance v1, Lyf;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LcZ;
+    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LF10;
 
     .line 4
     .line 5
@@ -941,99 +963,103 @@
 
     .line 8
     .line 9
-    invoke-direct {v1, v0, v3, v2}, LHe;-><init>(Lan0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v3, v2}, Lyf;-><init>(Lrp0;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v5, LQwf;
+    new-instance v5, LZPf;
 
     .line 13
     .line 14
     const/4 v0, 0x1
 
     .line 15
-    invoke-direct {v5, p0, v0}, LQwf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
+    invoke-direct {v5, p0, v0}, LZPf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
 
     .line 16
     .line 17
     .line 18
-    invoke-static {}, LpPg;->h()Z
+    sget-object v6, LPd;->a:Ljava/util/EnumSet;
 
     .line 19
     .line 20
+    invoke-static {}, Lvbh;->h()Z
+
     .line 21
+    .line 22
+    .line 23
     move-result v0
 
-    .line 22
-    if-eqz v0, :cond_0
-
-    .line 23
     .line 24
-    sget-object v0, LpPg;->a:LpPg;
+    if-eqz v0, :cond_0
 
     .line 25
     .line 26
-    invoke-static {}, LpPg;->g()LlPg;
+    sget-object v0, Lvbh;->a:Lvbh;
 
     .line 27
     .line 28
+    invoke-static {}, Lvbh;->g()Lrbh;
+
     .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 30
-    iget-object v0, v0, LlPg;->k0:Lobi;
-
-    .line 31
     .line 32
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
+    iget-object v0, v0, Lrbh;->k0:LiAi;
 
     .line 33
     .line 34
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
     move-result-object v0
 
-    .line 36
-    check-cast v0, LgP1;
-
-    .line 37
     .line 38
+    check-cast v0, LNS1;
+
+    .line 39
+    .line 40
     :goto_0
     move-object v4, v0
 
-    .line 39
+    .line 41
     goto :goto_1
 
-    .line 40
-    :cond_0
-    sget-object v0, LfP1;->a:LfP1;
-
-    .line 41
     .line 42
-    goto :goto_0
+    :cond_0
+    sget-object v0, LMS1;->a:LMS1;
 
     .line 43
-    :goto_1
-    new-instance v0, Lun0;
-
     .line 44
+    goto :goto_0
+
     .line 45
-    const/4 v2, 0x0
+    :goto_1
+    new-instance v0, LNp0;
 
     .line 46
-    const/4 v3, 0x2
-
     .line 47
-    invoke-direct/range {v0 .. v5}, Lun0;-><init>(LWm0;LZYf;ILgP1;Ljava/lang/Runnable;)V
+    const/4 v2, 0x0
 
     .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v0}, Lun0;->run()V
+    const/4 v3, 0x2
 
+    .line 49
+    invoke-direct/range {v0 .. v6}, LNp0;-><init>(Lnp0;Lajg;ILNS1;Ljava/lang/Runnable;Ljava/util/EnumSet;)V
+
+    .line 50
     .line 51
     .line 52
+    invoke-virtual {v0}, LNp0;->run()V
+
     .line 53
+    .line 54
+    .line 55
     return-void
 .end method
 
@@ -1050,7 +1076,7 @@
 
     .line 5
     .line 6
-    sget-object p2, LXRg;->a:LWRg;
+    sget-object p2, LOdh;->a:LNdh;
 
     .line 7
     .line 8
@@ -1094,7 +1120,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {p2, p1}, LWRg;->i(Ljava/lang/String;)V
+    invoke-virtual {p2, p1}, LNdh;->i(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -1103,14 +1129,14 @@
 .end method
 
 .method public final onResume()V
-    .locals 6
+    .locals 7
 
     .line 1
-    new-instance v1, LHe;
+    new-instance v1, Lyf;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LcZ;
+    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LF10;
 
     .line 4
     .line 5
@@ -1122,111 +1148,115 @@
 
     .line 8
     .line 9
-    invoke-direct {v1, v0, v3, v2}, LHe;-><init>(Lan0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v3, v2}, Lyf;-><init>(Lrp0;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v5, LRwf;
+    new-instance v5, LaQf;
 
     .line 13
     .line 14
     const/4 v0, 0x0
 
     .line 15
-    invoke-direct {v5, p0, v0}, LRwf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
+    invoke-direct {v5, p0, v0}, LaQf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
 
     .line 16
     .line 17
     .line 18
-    invoke-static {}, LpPg;->h()Z
+    sget-object v6, LPd;->a:Ljava/util/EnumSet;
 
     .line 19
     .line 20
+    invoke-static {}, Lvbh;->h()Z
+
     .line 21
+    .line 22
+    .line 23
     move-result v0
 
-    .line 22
-    if-eqz v0, :cond_0
-
-    .line 23
     .line 24
-    sget-object v0, LpPg;->a:LpPg;
+    if-eqz v0, :cond_0
 
     .line 25
     .line 26
-    invoke-static {}, LpPg;->g()LlPg;
+    sget-object v0, Lvbh;->a:Lvbh;
 
     .line 27
     .line 28
+    invoke-static {}, Lvbh;->g()Lrbh;
+
     .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 30
-    iget-object v0, v0, LlPg;->k0:Lobi;
-
-    .line 31
     .line 32
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
+    iget-object v0, v0, Lrbh;->k0:LiAi;
 
     .line 33
     .line 34
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
     move-result-object v0
 
-    .line 36
-    check-cast v0, LgP1;
-
-    .line 37
     .line 38
+    check-cast v0, LNS1;
+
+    .line 39
+    .line 40
     :goto_0
     move-object v4, v0
 
-    .line 39
+    .line 41
     goto :goto_1
 
-    .line 40
-    :cond_0
-    sget-object v0, LfP1;->a:LfP1;
-
-    .line 41
     .line 42
-    goto :goto_0
+    :cond_0
+    sget-object v0, LMS1;->a:LMS1;
 
     .line 43
-    :goto_1
-    new-instance v0, Lun0;
-
     .line 44
+    goto :goto_0
+
     .line 45
-    const/4 v2, 0x0
+    :goto_1
+    new-instance v0, LNp0;
 
     .line 46
-    const/4 v3, 0x2
-
     .line 47
-    invoke-direct/range {v0 .. v5}, Lun0;-><init>(LWm0;LZYf;ILgP1;Ljava/lang/Runnable;)V
+    const/4 v2, 0x0
 
     .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v0}, Lun0;->run()V
+    const/4 v3, 0x2
 
+    .line 49
+    invoke-direct/range {v0 .. v6}, LNp0;-><init>(Lnp0;Lajg;ILNS1;Ljava/lang/Runnable;Ljava/util/EnumSet;)V
+
+    .line 50
     .line 51
     .line 52
+    invoke-virtual {v0}, LNp0;->run()V
+
     .line 53
+    .line 54
+    .line 55
     return-void
 .end method
 
 .method public final onStart()V
-    .locals 6
+    .locals 7
 
     .line 1
-    new-instance v1, LHe;
+    new-instance v1, Lyf;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LcZ;
+    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LF10;
 
     .line 4
     .line 5
@@ -1238,111 +1268,115 @@
 
     .line 8
     .line 9
-    invoke-direct {v1, v0, v3, v2}, LHe;-><init>(Lan0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v3, v2}, Lyf;-><init>(Lrp0;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v5, LRwf;
+    new-instance v5, LaQf;
 
     .line 13
     .line 14
     const/4 v0, 0x1
 
     .line 15
-    invoke-direct {v5, p0, v0}, LRwf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
+    invoke-direct {v5, p0, v0}, LaQf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
 
     .line 16
     .line 17
     .line 18
-    invoke-static {}, LpPg;->h()Z
+    sget-object v6, LPd;->a:Ljava/util/EnumSet;
 
     .line 19
     .line 20
+    invoke-static {}, Lvbh;->h()Z
+
     .line 21
+    .line 22
+    .line 23
     move-result v0
 
-    .line 22
-    if-eqz v0, :cond_0
-
-    .line 23
     .line 24
-    sget-object v0, LpPg;->a:LpPg;
+    if-eqz v0, :cond_0
 
     .line 25
     .line 26
-    invoke-static {}, LpPg;->g()LlPg;
+    sget-object v0, Lvbh;->a:Lvbh;
 
     .line 27
     .line 28
+    invoke-static {}, Lvbh;->g()Lrbh;
+
     .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 30
-    iget-object v0, v0, LlPg;->k0:Lobi;
-
-    .line 31
     .line 32
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
+    iget-object v0, v0, Lrbh;->k0:LiAi;
 
     .line 33
     .line 34
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
     move-result-object v0
 
-    .line 36
-    check-cast v0, LgP1;
-
-    .line 37
     .line 38
+    check-cast v0, LNS1;
+
+    .line 39
+    .line 40
     :goto_0
     move-object v4, v0
 
-    .line 39
+    .line 41
     goto :goto_1
 
-    .line 40
-    :cond_0
-    sget-object v0, LfP1;->a:LfP1;
-
-    .line 41
     .line 42
-    goto :goto_0
+    :cond_0
+    sget-object v0, LMS1;->a:LMS1;
 
     .line 43
-    :goto_1
-    new-instance v0, Lun0;
-
     .line 44
+    goto :goto_0
+
     .line 45
-    const/4 v2, 0x0
+    :goto_1
+    new-instance v0, LNp0;
 
     .line 46
-    const/4 v3, 0x2
-
     .line 47
-    invoke-direct/range {v0 .. v5}, Lun0;-><init>(LWm0;LZYf;ILgP1;Ljava/lang/Runnable;)V
+    const/4 v2, 0x0
 
     .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v0}, Lun0;->run()V
+    const/4 v3, 0x2
 
+    .line 49
+    invoke-direct/range {v0 .. v6}, LNp0;-><init>(Lnp0;Lajg;ILNS1;Ljava/lang/Runnable;Ljava/util/EnumSet;)V
+
+    .line 50
     .line 51
     .line 52
+    invoke-virtual {v0}, LNp0;->run()V
+
     .line 53
+    .line 54
+    .line 55
     return-void
 .end method
 
 .method public final onStop()V
-    .locals 6
+    .locals 7
 
     .line 1
-    new-instance v1, LHe;
+    new-instance v1, Lyf;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LcZ;
+    iget-object v0, p0, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->m0:LF10;
 
     .line 4
     .line 5
@@ -1354,104 +1388,108 @@
 
     .line 8
     .line 9
-    invoke-direct {v1, v0, v3, v2}, LHe;-><init>(Lan0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v3, v2}, Lyf;-><init>(Lrp0;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v5, LQwf;
+    new-instance v5, LZPf;
 
     .line 13
     .line 14
     const/4 v0, 0x2
 
     .line 15
-    invoke-direct {v5, p0, v0}, LQwf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
+    invoke-direct {v5, p0, v0}, LZPf;-><init>(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I)V
 
     .line 16
     .line 17
     .line 18
-    invoke-static {}, LpPg;->h()Z
+    sget-object v6, LPd;->a:Ljava/util/EnumSet;
 
     .line 19
     .line 20
+    invoke-static {}, Lvbh;->h()Z
+
     .line 21
+    .line 22
+    .line 23
     move-result v0
 
-    .line 22
-    if-eqz v0, :cond_0
-
-    .line 23
     .line 24
-    sget-object v0, LpPg;->a:LpPg;
+    if-eqz v0, :cond_0
 
     .line 25
     .line 26
-    invoke-static {}, LpPg;->g()LlPg;
+    sget-object v0, Lvbh;->a:Lvbh;
 
     .line 27
     .line 28
+    invoke-static {}, Lvbh;->g()Lrbh;
+
     .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 30
-    iget-object v0, v0, LlPg;->k0:Lobi;
-
-    .line 31
     .line 32
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
+    iget-object v0, v0, Lrbh;->k0:LiAi;
 
     .line 33
     .line 34
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
     move-result-object v0
 
-    .line 36
-    check-cast v0, LgP1;
-
-    .line 37
     .line 38
+    check-cast v0, LNS1;
+
+    .line 39
+    .line 40
     :goto_0
     move-object v4, v0
 
-    .line 39
+    .line 41
     goto :goto_1
 
-    .line 40
-    :cond_0
-    sget-object v0, LfP1;->a:LfP1;
-
-    .line 41
     .line 42
-    goto :goto_0
+    :cond_0
+    sget-object v0, LMS1;->a:LMS1;
 
     .line 43
-    :goto_1
-    new-instance v0, Lun0;
-
     .line 44
+    goto :goto_0
+
     .line 45
-    const/4 v2, 0x0
+    :goto_1
+    new-instance v0, LNp0;
 
     .line 46
-    const/4 v3, 0x2
-
     .line 47
-    invoke-direct/range {v0 .. v5}, Lun0;-><init>(LWm0;LZYf;ILgP1;Ljava/lang/Runnable;)V
+    const/4 v2, 0x0
 
     .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v0}, Lun0;->run()V
+    const/4 v3, 0x2
 
+    .line 49
+    invoke-direct/range {v0 .. v6}, LNp0;-><init>(Lnp0;Lajg;ILNS1;Ljava/lang/Runnable;Ljava/util/EnumSet;)V
+
+    .line 50
     .line 51
     .line 52
-    .line 53
-    invoke-static {p0}, LyI3;->a(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+    invoke-virtual {v0}, LNp0;->run()V
 
+    .line 53
     .line 54
     .line 55
+    invoke-static {p0}, LZL3;->a(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+
     .line 56
+    .line 57
+    .line 58
     return-void
 .end method
 
@@ -1459,7 +1497,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -1467,7 +1505,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->i(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LNdh;->i(Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -1484,7 +1522,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -1492,7 +1530,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->i(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LNdh;->i(Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -1502,19 +1540,5 @@
     .line 9
     .line 10
     .line 11
-    return-void
-.end method
-
-.method public p0()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public q0(Landroid/view/MotionEvent;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

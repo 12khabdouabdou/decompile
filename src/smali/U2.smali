@@ -1,105 +1,64 @@
-.class public abstract LU2;
-.super Lm3;
+.class public final LU2;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPna;
+
+# static fields
+.field public static final c:LU2;
 
 
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 0
+# instance fields
+.field public volatile a:Ljava/lang/Thread;
+
+.field public volatile b:LU2;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-static {p0, p1}, Laxk;->f(Lr3;Ljava/lang/Object;)Z
+    new-instance v0, LU2;
 
     .line 2
     .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 4
-    move-result p1
-
     .line 5
-    return p1
-.end method
-
-.method public final get(Ljava/lang/Object;)Ljava/util/Collection;
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lm3;->get(Ljava/lang/Object;)Ljava/util/Collection;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    check-cast p1, Ljava/util/List;
-
     .line 6
-    .line 7
-    return-object p1
-.end method
-
-.method public final p(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
-    .locals 2
-
-    .line 1
-    check-cast p2, Ljava/util/List;
-
-    .line 2
-    .line 3
-    instance-of v0, p2, Ljava/util/RandomAccess;
-
-    .line 4
-    .line 5
-    const/4 v1, 0x0
-
-    .line 6
-    if-eqz v0, :cond_0
+    sput-object v0, LU2;->c:LU2;
 
     .line 7
     .line 8
-    new-instance v0, Lf3;
+    return-void
+.end method
 
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, LW2;->Y:LCz9;
+
+    .line 5
+    .line 6
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    .line 7
+    .line 8
     .line 9
+    move-result-object v1
+
     .line 10
-    invoke-direct {v0, p0, p1, p2, v1}, Lk3;-><init>(Lm3;Ljava/lang/Object;Ljava/util/List;Lk3;)V
+    invoke-virtual {v0, p0, v1}, LCz9;->R(LU2;Ljava/lang/Thread;)V
 
     .line 11
     .line 12
     .line 13
-    return-object v0
-
-    .line 14
-    :cond_0
-    new-instance v0, Lk3;
-
-    .line 15
-    .line 16
-    invoke-direct {v0, p0, p1, p2, v1}, Lk3;-><init>(Lm3;Ljava/lang/Object;Ljava/util/List;Lk3;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-object v0
-.end method
-
-.method public final q(Ljava/lang/Object;)Ljava/util/List;
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lm3;->get(Ljava/lang/Object;)Ljava/util/Collection;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    check-cast p1, Ljava/util/List;
-
-    .line 6
-    .line 7
-    return-object p1
+    return-void
 .end method

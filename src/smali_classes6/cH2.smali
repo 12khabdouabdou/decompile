@@ -1,49 +1,102 @@
-.class public abstract synthetic LcH2;
+.class public final LcH2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
-# static fields
-.field public static final synthetic a:[I
 
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 3
+# virtual methods
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    invoke-static {}, LRG2;->values()[LRG2;
+    new-instance v0, LdH2;
 
     .line 2
     .line 3
+    invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    move-result-wide v1
 
     .line 7
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
     .line 8
-    const/4 v1, 0x1
-
     .line 9
-    const/4 v2, 0x2
-
     .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    move-result-object v3
 
     .line 11
-    .line 12
-    :catch_0
-    sput-object v0, LcH2;->a:[I
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
+    .line 12
     .line 13
     .line 14
-    return-void
+    move-result v4
+
+    .line 15
+    if-eqz v4, :cond_0
+
+    .line 16
+    .line 17
+    const/4 v4, 0x1
+
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    const/4 v4, 0x0
+
+    .line 20
+    :goto_0
+    invoke-static {}, Lkmh;->values()[Lkmh;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v5
+
+    .line 24
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v6
+
+    .line 28
+    aget-object v5, v5, v6
+
+    .line 29
+    .line 30
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v6
+
+    .line 34
+    invoke-direct/range {v0 .. v6}, LdH2;-><init>(JLjava/lang/String;ZLkmh;I)V
+
+    .line 35
+    .line 36
+    .line 37
+    return-object v0
+.end method
+
+.method public final newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [LdH2;
+
+    .line 2
+    .line 3
+    return-object p1
 .end method

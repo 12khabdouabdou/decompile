@@ -3,129 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements LE8e;
+.implements LOxf;
+.implements Lcyf;
 
 
 # instance fields
-.field public final X:LXfi;
-
-.field public final Y:LXfi;
-
-.field public final Z:LXfi;
-
 .field public final synthetic a:I
 
-.field public final b:Lake;
-
-.field public final c:Lake;
-
-.field public final e0:Landroid/content/Context;
-
-.field public final f0:Ljava/lang/Object;
-
-.field public final g0:Ljava/lang/Object;
-
-.field public final h0:Ljava/lang/Object;
-
-.field public i0:LE1j;
-
-.field public t:Lnpg;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lake;Lake;Lake;Lake;Lake;Lnwf;Lcom/snap/mushroom/app/MushroomApplication;)V
+.method public constructor <init>(LCBe;)V
     .locals 1
 
     const/4 v0, 0x1
-
-    iput v0, p0, Lbz;->a:I
-
-    .line 25
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 26
-    iput-object p1, p0, Lbz;->b:Lake;
-
-    .line 27
-    iput-object p7, p0, Lbz;->e0:Landroid/content/Context;
-
-    .line 28
-    iput-object p2, p0, Lbz;->c:Lake;
-
-    .line 29
-    iput-object p3, p0, Lbz;->f0:Ljava/lang/Object;
-
-    .line 30
-    iput-object p4, p0, Lbz;->g0:Ljava/lang/Object;
-
-    .line 31
-    iput-object p5, p0, Lbz;->h0:Ljava/lang/Object;
-
-    .line 32
-    sget-object p1, LTB2;->A0:LTB2;
-
-    .line 33
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 34
-    iput-object p2, p0, Lbz;->X:LXfi;
-
-    .line 35
-    new-instance p1, LVo3;
-
-    const/4 p2, 0x2
-
-    invoke-direct {p1, p2, p0}, LVo3;-><init>(ILjava/lang/Object;)V
-
-    .line 36
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 37
-    iput-object p2, p0, Lbz;->Y:LXfi;
-
-    .line 38
-    sget-object p1, LTB2;->z0:LTB2;
-
-    .line 39
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 40
-    iput-object p2, p0, Lbz;->Z:LXfi;
-
-    .line 41
-    sget-object p1, LXo3;->Z:LXo3;
-
-    .line 42
-    const-string p2, "CommunitiesMyProfileSection"
-
-    .line 43
-    invoke-static {p1, p1, p2}, Lkr0;->a(LXo3;LXo3;Ljava/lang/String;)LWm0;
-
-    move-result-object p1
-
-    .line 44
-    check-cast p6, LIP5;
-
-    invoke-virtual {p6, p1}, LIP5;->a(LWm0;)LBre;
-
-    .line 45
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lake;Lake;Landroid/content/Context;)V
-    .locals 1
-
-    const/4 v0, 0x0
 
     iput v0, p0, Lbz;->a:I
 
@@ -133,824 +25,94 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p3, p0, Lbz;->e0:Landroid/content/Context;
+    iput-object p1, p0, Lbz;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/snap/core/application/SnapResourcesContextWrapper;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lbz;->a:I
 
     .line 3
-    iput-object p1, p0, Lbz;->b:Lake;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p2, p0, Lbz;->c:Lake;
+    iput-object p1, p0, Lbz;->b:Ljava/lang/Object;
 
     .line 5
-    sget-object p1, Let;->n0:Let;
+    sget-object p1, Lc08;->Z:Lc08;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
-    new-instance p2, LXfi;
+    const-string p1, "AddFriendSDNFeatureMetadataHandler"
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 7
-    iput-object p2, p0, Lbz;->X:LXfi;
+    sget-object p1, LJp0;->a:LJp0;
 
-    .line 8
-    sget-object p1, LX4e;->Z:LX4e;
-
-    .line 9
-    const-string p2, "AddFriendsSection"
-
-    .line 10
-    invoke-static {p1, p1, p2}, Lq27;->g(LX4e;LX4e;Ljava/lang/String;)LWm0;
-
-    move-result-object p1
-
-    .line 11
-    new-instance p2, LBre;
-
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
-
-    .line 12
-    iput-object p2, p0, Lbz;->h0:Ljava/lang/Object;
-
-    .line 13
-    sget-object p1, Let;->o0:Let;
-
-    .line 14
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 15
-    iput-object p2, p0, Lbz;->Y:LXfi;
-
-    .line 16
-    new-instance p1, Laz;
-
-    const/4 p2, 0x0
-
-    invoke-direct {p1, p0, p2}, Laz;-><init>(Lbz;I)V
-
-    .line 17
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 18
-    iput-object p2, p0, Lbz;->Z:LXfi;
-
-    .line 19
-    new-instance p1, Laz;
-
-    const/4 p2, 0x1
-
-    invoke-direct {p1, p0, p2}, Laz;-><init>(Lbz;I)V
-
-    .line 20
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 21
-    iput-object p2, p0, Lbz;->f0:Ljava/lang/Object;
-
-    .line 22
-    new-instance p1, Laz;
-
-    const/4 p2, 0x2
-
-    invoke-direct {p1, p0, p2}, Laz;-><init>(Lbz;I)V
-
-    .line 23
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 24
-    iput-object p2, p0, Lbz;->g0:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method private final e()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final f()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final l()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final m()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final s(Z)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final t(Z)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final u(Landroid/view/View;LKu;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final v(Landroid/view/View;LKu;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method
 
 
 # virtual methods
-.method public final E2(LF8e;Ls6j;)V
-    .locals 1
-
-    .line 1
-    iget p2, p0, Lbz;->a:I
-
-    .line 2
-    .line 3
-    packed-switch p2, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object p2, p1, LF8e;->X:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    check-cast p2, Lnpg;
-
-    .line 9
-    .line 10
-    iput-object p2, p0, Lbz;->t:Lnpg;
-
-    .line 11
-    .line 12
-    sget-object p2, LE6j;->N0:LE6j;
-
-    .line 13
-    .line 14
-    iget-object p1, p1, LF8e;->Z:Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    check-cast p1, LG1j;
-
-    .line 17
-    .line 18
-    invoke-virtual {p1, p2, p0}, LG1j;->a(LE6j;LiKc;)LE1j;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p1
-
-    .line 22
-    iput-object p1, p0, Lbz;->i0:LE1j;
-
-    .line 23
-    .line 24
-    return-void
-
-    .line 25
-    :pswitch_0
-    iget-object p2, p1, LF8e;->X:Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    check-cast p2, Lnpg;
-
-    .line 28
-    .line 29
-    iput-object p2, p0, Lbz;->t:Lnpg;
-
-    .line 30
-    .line 31
-    new-instance p2, LTT7;
-
-    .line 32
-    .line 33
-    sget-object v0, LE6j;->m0:LE6j;
-
-    .line 34
-    .line 35
-    iget-object p1, p1, LF8e;->Z:Ljava/lang/Object;
-
-    .line 36
-    .line 37
-    check-cast p1, LG1j;
-
-    .line 38
-    .line 39
-    invoke-virtual {p1, v0, p0}, LG1j;->a(LE6j;LiKc;)LE1j;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p1
-
-    .line 43
-    invoke-direct {p2, p1}, LTT7;-><init>(LE1j;)V
-
-    .line 44
-    .line 45
-    .line 46
-    iput-object p2, p0, Lbz;->i0:LE1j;
-
-    .line 47
-    .line 48
-    return-void
-
-    .line 49
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final P(Landroid/view/View;LKu;)V
+.method public final a(LCi7;Lt64;Z)Lio/reactivex/rxjava3/core/Completable;
     .locals 0
 
     .line 1
     iget p1, p0, Lbz;->a:I
 
-    .line 2
-    .line 3
     packed-switch p1, :pswitch_data_0
 
-    .line 4
-    .line 5
-    .line 6
-    instance-of p1, p2, LGbe;
-
-    .line 7
-    .line 8
-    if-eqz p1, :cond_1
-
-    .line 9
-    .line 10
-    iget-object p1, p0, Lbz;->i0:LE1j;
-
-    .line 11
-    .line 12
-    if-eqz p1, :cond_0
-
-    .line 13
-    .line 14
-    invoke-interface {p1}, LE1j;->b()V
-
-    .line 15
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_0
-    const-string p1, "perfLogger"
-
-    .line 19
-    .line 20
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 21
-    .line 22
-    .line 23
     const/4 p1, 0x0
 
-    .line 24
-    throw p1
+    return-object p1
 
-    .line 25
-    :cond_1
-    :goto_0
-    return-void
-
-    .line 26
     :pswitch_0
-    iget-object p1, p0, Lbz;->i0:LE1j;
-
-    .line 27
-    .line 28
-    check-cast p1, LTT7;
-
-    .line 29
-    .line 30
-    if-eqz p1, :cond_2
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, p2}, LTT7;->n(LKu;)V
-
-    .line 33
-    .line 34
-    .line 35
-    return-void
-
-    .line 36
-    :cond_2
-    const-string p1, "performanceLogger"
-
-    .line 37
-    .line 38
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 39
-    .line 40
-    .line 41
     const/4 p1, 0x0
 
-    .line 42
-    throw p1
+    return-object p1
 
-    .line 43
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
     .end packed-switch
 .end method
 
-.method public final V()V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lbz;->a:I
-
-    return-void
-.end method
-
-.method public final a(Landroid/view/View;LKu;)V
+.method public final b(LZl9;LCi7;Lt64;)Lio/reactivex/rxjava3/core/Single;
     .locals 0
 
     .line 1
     iget p1, p0, Lbz;->a:I
 
-    return-void
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lbz;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    :pswitch_0
-    const/4 v0, 0x0
-
-    return v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final d()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lbz;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    const-string v0, "CommunitiesMyProfileSection"
-
-    .line 7
-    .line 8
-    return-object v0
-
-    .line 9
-    :pswitch_0
-    invoke-static {p0}, Lu9k;->o(LiKc;)Ljava/lang/String;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    return-object v0
-
-    .line 14
-    nop
-
-    .line 15
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final dispose()V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lbz;->a:I
-
-    return-void
-.end method
-
-.method public final e0()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lbz;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    const v0, 0x7fffffff
-
-    return v0
-
-    :pswitch_0
-    const/16 v0, 0x320
-
-    return v0
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final g3()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lbz;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :pswitch_0
-    const/4 v0, 0x1
-
-    return v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public j(ILjava/lang/String;)LGbe;
-    .locals 21
-
-    .line 1
-    move-object/from16 v0, p0
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Lbz;->t:Lnpg;
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    if-eqz v1, :cond_1
-
-    .line 7
-    .line 8
-    iget-object v3, v0, Lbz;->e0:Landroid/content/Context;
-
-    .line 9
-    .line 10
-    const v4, 0x7f060215
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-static {v3, v4}, LsX3;->c(Landroid/content/Context;I)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v5
-
-    .line 17
-    new-instance v8, LJ4j;
-
-    .line 18
-    .line 19
-    new-instance v4, Lg6j;
-
-    .line 20
-    .line 21
-    new-instance v6, LL5j;
-
-    .line 22
-    .line 23
-    const-string v7, "SHOW_ADD_FRIENDS_PAGE"
-
-    .line 24
-    .line 25
-    const/4 v9, 0x7
-
-    .line 26
-    invoke-direct {v6, v7, v9}, LeN;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-direct {v4, v6, v2}, Lg6j;-><init>(LeN;Ljava/lang/Object;)V
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-direct {v8, v4}, LJ4j;-><init>(LQ4j;)V
-
-    .line 33
-    .line 34
-    .line 35
-    iget-object v4, v0, Lbz;->X:LXfi;
-
-    .line 36
-    .line 37
-    invoke-virtual {v4}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v4
-
-    .line 41
-    check-cast v4, Ljava/lang/Number;
-
-    .line 42
-    .line 43
-    invoke-virtual {v4}, Ljava/lang/Number;->longValue()J
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-wide v11
-
-    .line 47
-    sget-object v9, LFbe;->a:LFbe;
-
-    .line 48
-    .line 49
-    new-instance v13, Lyg;
-
-    .line 50
-    .line 51
-    iget-object v4, v0, Lbz;->i0:LE1j;
-
-    .line 52
-    .line 53
-    move-object v15, v4
-
-    .line 54
-    check-cast v15, LTT7;
-
-    .line 55
-    .line 56
-    if-eqz v15, :cond_0
-
-    .line 57
-    .line 58
-    const-class v16, LTT7;
-
-    .line 59
-    .line 60
-    const-string v17, "onAddFriendsButtonDrawn"
-
-    .line 61
-    .line 62
-    const/4 v14, 0x1
-
-    .line 63
-    const-string v18, "onAddFriendsButtonDrawn(J)V"
-
-    .line 64
-    .line 65
-    const/16 v19, 0x0
-
-    .line 66
-    .line 67
-    const/16 v20, 0xb
-
-    .line 68
-    .line 69
-    invoke-direct/range {v13 .. v20}, Lyg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
-    .line 70
-    .line 71
-    .line 72
-    move-object v2, v3
-
-    .line 73
-    const v3, 0x7f130246
-
-    .line 74
-    .line 75
-    .line 76
-    const v4, 0x7f080b4b
-
-    .line 77
-    .line 78
-    .line 79
-    move-object v10, v13
-
-    .line 80
-    const v13, 0x397785f0
-
-    .line 81
-    .line 82
-    .line 83
-    move/from16 v7, p1
-
-    .line 84
-    .line 85
-    move-object/from16 v6, p2
-
-    .line 86
-    .line 87
-    invoke-static/range {v1 .. v13}, LQpk;->c(Lnpg;Landroid/content/Context;IIILjava/lang/String;ILJ4j;LFbe;Lkotlin/jvm/functions/Function1;JI)LGbe;
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v1
-
-    .line 91
-    return-object v1
-
-    .line 92
-    :cond_0
-    const-string v1, "performanceLogger"
-
-    .line 93
-    .line 94
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 95
-    .line 96
-    .line 97
-    throw v2
-
-    .line 98
-    :cond_1
-    const-string v1, "simpleCardViewModelFactory"
-
-    .line 99
-    .line 100
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 101
-    .line 102
-    .line 103
-    throw v2
-.end method
-
-.method public final l1(Landroid/view/View;LKu;)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, Lbz;->a:I
-
-    .line 2
-    .line 3
     packed-switch p1, :pswitch_data_0
 
-    .line 4
-    .line 5
-    .line 6
-    instance-of p1, p2, LGbe;
-
-    .line 7
-    .line 8
-    if-eqz p1, :cond_1
-
-    .line 9
-    .line 10
-    iget-object p1, p0, Lbz;->i0:LE1j;
-
-    .line 11
-    .line 12
-    if-eqz p1, :cond_0
-
-    .line 13
-    .line 14
-    invoke-interface {p1}, LE1j;->j()V
-
-    .line 15
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_0
-    const-string p1, "perfLogger"
-
-    .line 19
-    .line 20
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 21
-    .line 22
-    .line 23
     const/4 p1, 0x0
 
-    .line 24
-    throw p1
+    return-object p1
 
-    .line 25
-    :cond_1
-    :goto_0
-    return-void
-
-    .line 26
     :pswitch_0
-    iget-object p1, p0, Lbz;->i0:LE1j;
-
-    .line 27
-    .line 28
-    check-cast p1, LTT7;
-
-    .line 29
-    .line 30
-    if-eqz p1, :cond_2
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, p2}, LTT7;->o(LKu;)V
-
-    .line 33
-    .line 34
-    .line 35
-    return-void
-
-    .line 36
-    :cond_2
-    const-string p1, "performanceLogger"
-
-    .line 37
-    .line 38
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 39
-    .line 40
-    .line 41
     const/4 p1, 0x0
 
-    .line 42
-    throw p1
+    return-object p1
 
-    .line 43
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
     .end packed-switch
 .end method
 
-.method public final r()Lio/reactivex/rxjava3/core/Observable;
-    .locals 5
+.method public final c(LnSc;LZl9;)Lio/reactivex/rxjava3/core/Maybe;
+    .locals 6
 
     .line 1
     iget v0, p0, Lbz;->a:I
@@ -962,284 +124,348 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lbz;->b:Lake;
+    iget-object p2, p0, Lbz;->b:Ljava/lang/Object;
 
     .line 7
     .line 8
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    check-cast p2, LCBe;
 
     .line 9
     .line 10
+    invoke-interface {p2}, LDBe;->get()Ljava/lang/Object;
+
     .line 11
-    move-result-object v0
-
     .line 12
-    check-cast v0, LpC3;
-
     .line 13
+    move-result-object p2
+
     .line 14
-    sget-object v1, Lr4e;->s0:Lr4e;
+    check-cast p2, LS89;
 
     .line 15
     .line 16
-    invoke-interface {v0, v1}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    const-string p2, "snapchat://friending/addfriends"
 
     .line 20
-    new-instance v1, Lq63;
-
     .line 21
-    .line 22
-    const/16 v2, 0x9
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
+    .line 22
     .line 23
     .line 24
-    invoke-direct {v1, v2, p0}, Lq63;-><init>(ILjava/lang/Object;)V
+    move-result-object p2
 
     .line 25
+    invoke-virtual {p2}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
+
     .line 26
     .line 27
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
-
     .line 28
+    move-result-object p2
+
     .line 29
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    const/4 v0, 0x2
 
     .line 30
+    invoke-static {v0}, LBJ8;->k(I)Ljava/lang/String;
+
     .line 31
     .line 32
-    new-instance v0, LNg3;
-
     .line 33
+    move-result-object v0
+
     .line 34
-    const/16 v1, 0xd
+    const-string v1, "notif_type"
 
     .line 35
     .line 36
-    invoke-direct {v0, v1, p0}, LNg3;-><init>(ILjava/lang/Object;)V
+    invoke-virtual {p2, v1, v0}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 37
     .line 38
     .line 39
-    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Observable;->Y(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
+    move-result-object p2
 
     .line 40
+    invoke-virtual {p2}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+
     .line 41
     .line 42
-    move-result-object v0
-
     .line 43
-    return-object v0
+    move-result-object p2
 
     .line 44
-    :pswitch_0
-    iget-object v0, p0, Lbz;->i0:LE1j;
+    iput-object p2, p1, LnSc;->t:Landroid/net/Uri;
 
     .line 45
     .line 46
-    check-cast v0, LTT7;
+    invoke-virtual {p1}, LnSc;->a()LpSc;
 
     .line 47
     .line 48
-    if-eqz v0, :cond_0
-
     .line 49
+    move-result-object p1
+
     .line 50
-    invoke-virtual {v0}, LTT7;->e()V
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeJust;
 
     .line 51
     .line 52
-    .line 53
-    iget-object v0, p0, Lbz;->Z:LXfi;
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeJust;-><init>(Ljava/lang/Object;)V
 
+    .line 53
     .line 54
     .line 55
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    return-object p2
 
     .line 56
+    :pswitch_0
+    iget-object p2, p2, LZl9;->n:LYk8;
+
     .line 57
     .line 58
-    move-result-object v0
+    const/4 v0, 0x0
 
     .line 59
-    check-cast v0, Lio/reactivex/rxjava3/core/Observable;
+    if-eqz p2, :cond_0
 
     .line 60
     .line 61
-    iget-object v1, p0, Lbz;->g0:Ljava/lang/Object;
+    iget-object p2, p2, LYk8;->a:Lx73;
 
     .line 62
     .line 63
-    check-cast v1, LXfi;
+    iget-object p2, p2, Lx73;->c:LCi7;
 
     .line 64
     .line 65
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    if-eqz p2, :cond_0
 
     .line 66
     .line 67
-    .line 68
-    move-result-object v1
+    iget v1, p2, LCi7;->a:I
 
+    .line 68
     .line 69
-    check-cast v1, Lio/reactivex/rxjava3/core/Observable;
+    const/16 v2, 0xb
 
     .line 70
     .line 71
-    iget-object v2, p0, Lbz;->f0:Ljava/lang/Object;
+    if-ne v1, v2, :cond_0
 
     .line 72
     .line 73
-    check-cast v2, LXfi;
+    iget-object p2, p2, LCi7;->b:Le57;
 
     .line 74
     .line 75
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    check-cast p2, LQQ7;
 
     .line 76
     .line 77
+    goto :goto_0
+
     .line 78
-    move-result-object v2
+    :cond_0
+    move-object p2, v0
 
     .line 79
-    check-cast v2, Lio/reactivex/rxjava3/core/Observable;
+    :goto_0
+    if-nez p2, :cond_1
 
     .line 80
     .line 81
-    new-instance v3, Lvx9;
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
 
     .line 82
     .line 83
-    const/16 v4, 0xe
+    goto :goto_3
 
     .line 84
-    .line 85
-    invoke-direct {v3, v4, p0}, Lvx9;-><init>(ILjava/lang/Object;)V
+    :cond_1
+    iget-object v1, p2, LQQ7;->b:Ljava/lang/String;
 
+    .line 85
     .line 86
+    if-nez v1, :cond_2
+
     .line 87
     .line 88
-    invoke-static {v0, v1, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->v(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function3;)Lio/reactivex/rxjava3/core/Observable;
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
 
     .line 89
     .line 90
+    goto :goto_3
+
     .line 91
-    move-result-object v0
+    :cond_2
+    iget-object v2, p2, LQQ7;->t:Ljava/lang/String;
 
     .line 92
-    iget-object v1, p0, Lbz;->Y:LXfi;
-
     .line 93
-    .line 94
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    if-nez v2, :cond_3
 
+    .line 94
     .line 95
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
+
     .line 96
     .line 97
-    move-result-object v1
+    goto :goto_3
 
     .line 98
-    check-cast v1, Lxbe;
+    :cond_3
+    iget p2, p2, LQQ7;->X:I
 
     .line 99
     .line 100
-    const/4 v2, -0x1
+    const/4 v3, 0x1
 
     .line 101
-    const-string v3, ""
+    const/4 v4, 0x2
 
     .line 102
-    .line 103
-    invoke-virtual {p0, v2, v3}, Lbz;->j(ILjava/lang/String;)LGbe;
+    if-eq p2, v3, :cond_5
 
+    .line 103
     .line 104
+    if-eq p2, v4, :cond_4
+
     .line 105
     .line 106
-    move-result-object v2
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
 
     .line 107
-    const/4 v3, 0x2
-
     .line 108
-    new-array v3, v3, [LKu;
+    goto :goto_3
 
     .line 109
-    .line 110
-    const/4 v4, 0x0
+    :cond_4
+    const-string v5, "FRIENDING_ADD_FRIEND"
 
+    .line 110
     .line 111
-    aput-object v1, v3, v4
+    goto :goto_1
 
     .line 112
-    .line 113
-    const/4 v1, 0x1
+    :cond_5
+    const-string v5, "FRIENDING_ADDED_YOU_BACK"
 
+    .line 113
     .line 114
-    aput-object v2, v3, v1
+    :goto_1
+    if-eq p2, v3, :cond_7
 
     .line 115
     .line 116
-    invoke-static {v3}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
+    if-eq p2, v4, :cond_6
 
     .line 117
     .line 118
-    .line 119
-    move-result-object v1
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
 
+    .line 119
     .line 120
-    invoke-static {v1}, Ldbk;->b(Ljava/util/List;)Lqoa;
+    goto :goto_3
 
     .line 121
+    :cond_6
+    const p2, 0x7f132549
+
     .line 122
     .line 123
-    move-result-object v1
-
     .line 124
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->J0(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
+    goto :goto_2
 
     .line 125
+    :cond_7
+    const p2, 0x7f131610
+
     .line 126
     .line 127
-    move-result-object v0
-
     .line 128
-    return-object v0
+    :goto_2
+    iput-object v5, p1, LnSc;->A:Ljava/lang/String;
 
     .line 129
-    :cond_0
-    const-string v0, "performanceLogger"
-
     .line 130
-    .line 131
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    iget-object v3, p0, Lbz;->b:Ljava/lang/Object;
 
+    .line 131
     .line 132
+    check-cast v3, Lcom/snap/core/application/SnapResourcesContextWrapper;
+
     .line 133
     .line 134
-    const/4 v0, 0x0
+    invoke-virtual {v3, p2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     .line 135
-    throw v0
-
     .line 136
-    nop
-
     .line 137
+    move-result-object p2
+
+    .line 138
+    iput-object p2, p1, LnSc;->i:Ljava/lang/String;
+
+    .line 139
+    .line 140
+    iput-object v0, p1, LnSc;->j:Landroid/net/Uri;
+
+    .line 141
+    .line 142
+    new-instance p2, Loy;
+
+    .line 143
+    .line 144
+    invoke-direct {p2, v1, v2, v5}, Loy;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 145
+    .line 146
+    .line 147
+    iget-object v0, p1, LnSc;->x:LFe5;
+
+    .line 148
+    .line 149
+    const-class v1, Loy;
+
+    .line 150
+    .line 151
+    invoke-virtual {v0, v1, p2}, LFe5;->a(Ljava/lang/Class;Ljava/lang/Object;)V
+
+    .line 152
+    .line 153
+    .line 154
+    invoke-virtual {p1}, LnSc;->a()LpSc;
+
+    .line 155
+    .line 156
+    .line 157
+    move-result-object p1
+
+    .line 158
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeJust;
+
+    .line 159
+    .line 160
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeJust;-><init>(Ljava/lang/Object;)V
+
+    .line 161
+    .line 162
+    .line 163
+    move-object p1, p2
+
+    .line 164
+    :goto_3
+    return-object p1
+
+    .line 165
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0
     .end packed-switch
-.end method
-
-.method public final v1(Z)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, Lbz;->a:I
-
-    return-void
 .end method

@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcB3;
-.implements LZz3;
+.implements LCE3;
+.implements LsD3;
 
 
 # annotations
@@ -15,13 +15,17 @@
 # instance fields
 .field private _transparentUI:Z
 
+.field private final bitmapLoader:LR21;
+
+.field private final compositeConfigurationProvider:LOF3;
+
 .field private final displayDensity:F
 
-.field private final distanceTracker:Lgr6;
+.field private final distanceTracker:Lsu6;
 
 .field private volatile enableTouchWhenScrollIdle:Z
 
-.field private final fullTrayDecorator:Lz18;
+.field private fullTrayDecorator:LC78;
 
 .field private final isOverScrolling:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -33,7 +37,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lio/reactivex/rxjava3/subjects/PublishSubject<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation
@@ -43,7 +47,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lio/reactivex/rxjava3/subjects/PublishSubject<",
-            "Lhad;",
+            "LDpd;",
             ">;"
         }
     .end annotation
@@ -61,966 +65,712 @@
     .end annotation
 .end field
 
-.field private final schedulers:Lzre;
+.field private final schedulers:LlJe;
 
 .field private volatile scrollEnabled:Z
 
-.field private final timber:Lrn0;
+.field private final timber:LJp0;
 
-.field private final transparentTrayDecorator:LiTi;
+.field private transparentTrayDecorator:Lxij;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lan0;LC5j;Lio/reactivex/rxjava3/subjects/BehaviorSubject;ZLf5j;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lnwf;)V
-    .locals 20
+.method public constructor <init>(Landroid/content/Context;Lrp0;Lwuj;Lio/reactivex/rxjava3/subjects/BehaviorSubject;ZLauj;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LyPf;LT21;LOF3;)V
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            "Lan0;",
-            "LC5j;",
+            "Lrp0;",
+            "Lwuj;",
             "Lio/reactivex/rxjava3/subjects/BehaviorSubject<",
             "Ljava/lang/Integer;",
             ">;Z",
-            "Lf5j;",
+            "Lauj;",
             "Lio/reactivex/rxjava3/disposables/CompositeDisposable;",
-            "Lnwf;",
+            "LyPf;",
+            "LT21;",
+            "LOF3;",
             ")V"
         }
     .end annotation
 
     .line 1
-    move-object/from16 v1, p0
+    invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
-    move-object/from16 v0, p1
-
     .line 4
+    iput-object p4, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerViewVerticalScrollOffset:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 5
-    move-object/from16 v2, p3
-
     .line 6
+    iput-object p10, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->compositeConfigurationProvider:LOF3;
+
     .line 7
-    move-object/from16 v3, p4
-
     .line 8
+    check-cast p8, LTT5;
+
     .line 9
-    move-object/from16 v4, p6
-
     .line 10
-    .line 11
-    move-object/from16 v5, p7
+    invoke-virtual {p8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 11
     .line 12
     .line 13
-    invoke-direct/range {p0 .. p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
+    const-string p8, "UnifiedProfileFlatlandProfileView"
 
     .line 14
     .line 15
-    .line 16
-    iput-object v3, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerViewVerticalScrollOffset:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {p2, p8}, LTT5;->b(Lrp0;Ljava/lang/String;)LnJe;
 
+    .line 16
     .line 17
     .line 18
-    move-object/from16 v6, p8
+    move-result-object p2
 
     .line 19
+    iput-object p2, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->schedulers:LlJe;
+
     .line 20
-    check-cast v6, LIP5;
-
     .line 21
-    .line 22
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p8}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 22
     .line 23
     .line 24
+    sget-object p8, LJp0;->a:LJp0;
+
     .line 25
-    const-string v6, "UnifiedProfileFlatlandProfileView"
-
     .line 26
+    iput-object p8, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->timber:LJp0;
+
     .line 27
-    move-object/from16 v7, p2
-
     .line 28
-    .line 29
-    invoke-static {v7, v6}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
+    invoke-interface {p9}, LT21;->a()LR21;
 
+    .line 29
     .line 30
     .line 31
+    move-result-object p9
+
     .line 32
-    move-result-object v7
+    iput-object p9, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->bitmapLoader:LR21;
 
     .line 33
-    iput-object v7, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->schedulers:Lzre;
-
     .line 34
-    .line 35
-    invoke-static {v6}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    new-instance p9, Lio/reactivex/rxjava3/subjects/PublishSubject;
 
+    .line 35
     .line 36
+    invoke-direct {p9}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+
     .line 37
     .line 38
-    sget-object v6, Lrn0;->a:Lrn0;
-
     .line 39
+    iput-object p9, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->onBeginDragSubject:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 40
-    iput-object v6, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->timber:Lrn0;
-
     .line 41
+    new-instance p9, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 42
-    new-instance v8, Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 43
-    .line 44
-    invoke-direct {v8}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+    invoke-direct {p9}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
 
+    .line 44
     .line 45
     .line 46
+    iput-object p9, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->onEndDragSubject:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 47
-    iput-object v8, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->onBeginDragSubject:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 48
-    .line 49
-    new-instance v8, Lio/reactivex/rxjava3/subjects/PublishSubject;
+    new-instance p9, Ljava/util/concurrent/atomic/AtomicBoolean;
 
+    .line 49
     .line 50
+    const/4 v0, 0x0
+
     .line 51
-    invoke-direct {v8}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+    invoke-direct {p9, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
     .line 52
     .line 53
     .line 54
-    iput-object v8, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->onEndDragSubject:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iput-object p9, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->isOverScrolling:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 55
     .line 56
-    new-instance v8, Ljava/util/concurrent/atomic/AtomicBoolean;
+    const/4 v1, 0x1
 
     .line 57
-    .line 58
-    const/4 v9, 0x0
+    iput-boolean v1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->scrollEnabled:Z
 
+    .line 58
     .line 59
-    invoke-direct {v8, v9}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+    new-instance v2, LC78;
 
     .line 60
     .line 61
+    const/4 v3, 0x0
+
     .line 62
-    iput-object v8, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->isOverScrolling:Ljava/util/concurrent/atomic/AtomicBoolean;
+    invoke-direct {v2, p1, v3, v0}, LC78;-><init>(Landroid/content/Context;LQ0f;Z)V
 
     .line 63
     .line 64
-    const/4 v10, 0x1
-
     .line 65
-    iput-boolean v10, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->scrollEnabled:Z
+    iput-object v2, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->fullTrayDecorator:LC78;
 
     .line 66
     .line 67
-    new-instance v10, Lz18;
+    new-instance v2, Lxij;
 
     .line 68
     .line 69
-    invoke-direct {v10, v0}, Lz18;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p1, v3, v0}, Lxij;-><init>(Landroid/content/Context;LQ0f;Z)V
 
     .line 70
     .line 71
     .line 72
-    iput-object v10, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->fullTrayDecorator:Lz18;
+    iput-object v2, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->transparentTrayDecorator:Lxij;
 
     .line 73
     .line 74
-    new-instance v11, LiTi;
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setClipChildren(Z)V
 
     .line 75
     .line 76
-    invoke-direct {v11, v0}, LiTi;-><init>(Landroid/content/Context;)V
-
     .line 77
+    new-instance v2, Landroidx/recyclerview/widget/RecyclerView;
+
     .line 78
     .line 79
-    iput-object v11, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->transparentTrayDecorator:LiTi;
+    invoke-direct {v2, p1}, Landroidx/recyclerview/widget/RecyclerView;-><init>(Landroid/content/Context;)V
 
     .line 80
     .line 81
-    invoke-virtual {v1, v9}, Landroid/view/ViewGroup;->setClipChildren(Z)V
-
     .line 82
+    invoke-virtual {p0, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
     .line 83
     .line 84
-    new-instance v11, Landroidx/recyclerview/widget/RecyclerView;
-
     .line 85
-    .line 86
-    invoke-direct {v11, v0}, Landroidx/recyclerview/widget/RecyclerView;-><init>(Landroid/content/Context;)V
+    invoke-virtual {v2, v0}, Landroidx/recyclerview/widget/RecyclerView;->setClipToPadding(Z)V
 
+    .line 86
     .line 87
     .line 88
-    .line 89
-    invoke-virtual {v1, v11}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+    invoke-virtual {v2, v0}, Landroid/view/View;->setOverScrollMode(I)V
 
+    .line 89
     .line 90
     .line 91
+    new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
+
     .line 92
-    invoke-virtual {v11, v9}, Landroidx/recyclerview/widget/RecyclerView;->setClipToPadding(Z)V
-
     .line 93
-    .line 94
-    .line 95
-    invoke-virtual {v11, v9}, Landroid/view/View;->setOverScrollMode(I)V
+    const/4 v4, -0x1
 
+    .line 94
+    invoke-direct {v0, v4, v4}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+
+    .line 95
     .line 96
     .line 97
-    .line 98
-    new-instance v9, Landroid/widget/FrameLayout$LayoutParams;
+    invoke-virtual {v2, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 98
     .line 99
     .line 100
-    const/4 v12, -0x1
+    const v0, 0x7f0b12ec
 
     .line 101
-    invoke-direct {v9, v12, v12}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
-
     .line 102
     .line 103
-    .line 104
-    invoke-virtual {v11, v9}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v2, v0}, Landroid/view/View;->setId(I)V
 
+    .line 104
     .line 105
     .line 106
-    .line 107
-    const v9, 0x7f0b11c6
+    iput-object v2, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 107
     .line 108
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
     .line 109
     .line 110
-    invoke-virtual {v11, v9}, Landroid/view/View;->setId(I)V
-
     .line 111
+    move-result-object v0
+
     .line 112
+    new-instance v4, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView$2;
+
     .line 113
-    iput-object v11, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
-
     .line 114
-    .line 115
-    invoke-virtual {v11}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-direct {v4, p0, v0, v2}, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView$2;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;Landroid/content/Context;Landroidx/recyclerview/widget/RecyclerView;)V
 
+    .line 115
     .line 116
     .line 117
+    invoke-virtual {v2, v4}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
+
     .line 118
-    move-result-object v9
-
     .line 119
-    new-instance v12, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView$2;
-
     .line 120
-    .line 121
-    invoke-direct {v12, v1, v9, v11}, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView$2;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;Landroid/content/Context;Landroidx/recyclerview/widget/RecyclerView;)V
+    new-instance v0, LfB1;
 
+    .line 121
     .line 122
+    invoke-direct {v0, p8, p4, p9}, LfB1;-><init>(LJp0;Lio/reactivex/rxjava3/subjects/BehaviorSubject;Ljava/util/concurrent/atomic/AtomicBoolean;)V
+
     .line 123
     .line 124
-    invoke-virtual {v11, v12}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
-
     .line 125
+    iput-object v0, v2, Landroidx/recyclerview/widget/RecyclerView;->F0:LHZi;
+
     .line 126
     .line 127
-    new-instance v9, LSx1;
+    iput-object v3, v2, Landroidx/recyclerview/widget/RecyclerView;->J0:Landroid/widget/EdgeEffect;
 
     .line 128
     .line 129
-    invoke-direct {v9, v6, v3, v8}, LSx1;-><init>(Lrn0;Lio/reactivex/rxjava3/subjects/BehaviorSubject;Ljava/util/concurrent/atomic/AtomicBoolean;)V
+    iput-object v3, v2, Landroidx/recyclerview/widget/RecyclerView;->H0:Landroid/widget/EdgeEffect;
 
     .line 130
     .line 131
+    iput-object v3, v2, Landroidx/recyclerview/widget/RecyclerView;->I0:Landroid/widget/EdgeEffect;
+
     .line 132
-    iput-object v9, v11, Landroidx/recyclerview/widget/RecyclerView;->F0:LRSb;
-
     .line 133
-    .line 134
-    const/4 v3, 0x0
+    iput-object v3, v2, Landroidx/recyclerview/widget/RecyclerView;->G0:Landroid/widget/EdgeEffect;
 
+    .line 134
     .line 135
-    iput-object v3, v11, Landroidx/recyclerview/widget/RecyclerView;->J0:Landroid/widget/EdgeEffect;
+    new-instance p4, LEHe;
 
     .line 136
     .line 137
-    iput-object v3, v11, Landroidx/recyclerview/widget/RecyclerView;->H0:Landroid/widget/EdgeEffect;
+    const/4 p8, 0x3
 
     .line 138
-    .line 139
-    iput-object v3, v11, Landroidx/recyclerview/widget/RecyclerView;->I0:Landroid/widget/EdgeEffect;
+    invoke-direct {p4, p8, p0}, LEHe;-><init>(ILjava/lang/Object;)V
 
+    .line 139
     .line 140
     .line 141
-    iput-object v3, v11, Landroidx/recyclerview/widget/RecyclerView;->G0:Landroid/widget/EdgeEffect;
+    invoke-virtual {v2, p4}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     .line 142
     .line 143
-    new-instance v6, LQpe;
-
     .line 144
-    .line 145
-    const/4 v8, 0x3
+    new-instance p4, LJ28;
 
+    .line 145
     .line 146
-    invoke-direct {v6, v8, v1}, LQpe;-><init>(ILjava/lang/Object;)V
+    const/4 p8, 0x1
 
     .line 147
+    invoke-direct {p4, p8, p0}, LJ28;-><init>(ILjava/lang/Object;)V
+
     .line 148
     .line 149
-    invoke-virtual {v11, v6}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
-
     .line 150
+    iput-object p4, v2, Landroidx/recyclerview/widget/RecyclerView;->T0:LiYe;
+
     .line 151
     .line 152
-    new-instance v6, Lur7;
+    iget-object p4, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->fullTrayDecorator:LC78;
 
     .line 153
     .line 154
-    invoke-direct {v6, v8, v1}, Lur7;-><init>(ILjava/lang/Object;)V
+    invoke-virtual {v2, p4}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
 
     .line 155
     .line 156
     .line 157
-    iput-object v6, v11, Landroidx/recyclerview/widget/RecyclerView;->T0:LzGe;
+    iget-object p4, p6, Lauj;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 158
     .line 159
-    invoke-virtual {v11, v10}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
+    invoke-static {p4, p4}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 160
     .line 161
     .line 162
-    iget-object v6, v4, Lf5j;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    move-result-object p4
 
     .line 163
-    .line 164
-    invoke-static {v6, v6}, LEU0;->r(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-virtual {p2}, LnJe;->i()Lxp0;
 
+    .line 164
     .line 165
     .line 166
+    move-result-object p8
+
     .line 167
-    move-result-object v6
+    invoke-virtual {p4, p8}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 168
-    invoke-virtual {v7}, LBre;->i()Lgn0;
-
     .line 169
     .line 170
+    move-result-object p4
+
     .line 171
-    move-result-object v8
+    new-instance p8, LJ7;
 
     .line 172
-    invoke-virtual {v6, v8}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 173
+    const/16 p9, 0x1c
+
     .line 174
     .line 175
-    move-result-object v6
+    invoke-direct {p8, p5, p0, p9}, LJ7;-><init>(ZLjava/lang/Object;I)V
 
     .line 176
-    new-instance v8, Lb7;
-
     .line 177
     .line 178
-    const/16 v9, 0x1c
+    new-instance p5, Lmuj;
 
     .line 179
     .line 180
-    move/from16 v10, p5
+    const/4 p9, 0x1
 
     .line 181
-    .line 182
-    invoke-direct {v8, v10, v1, v9}, Lb7;-><init>(ZLjava/lang/Object;I)V
+    invoke-direct {p5, p0, p9}, Lmuj;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;I)V
 
+    .line 182
     .line 183
     .line 184
-    .line 185
-    new-instance v9, Ls5j;
+    invoke-static {p4, p8, p5, p7}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
+    .line 185
     .line 186
     .line 187
-    const/4 v10, 0x0
+    iget-object p4, p6, Lauj;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 188
-    invoke-direct {v9, v1, v10}, Ls5j;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;I)V
-
     .line 189
+    invoke-static {p4, p4}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
     .line 190
     .line 191
-    invoke-static {v6, v8, v9, v5}, LLZj;->v0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
-
     .line 192
-    .line 193
-    .line 194
-    iget-object v4, v4, Lf5j;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    move-result-object p4
 
+    .line 193
+    invoke-virtual {p2}, LnJe;->i()Lxp0;
+
+    .line 194
     .line 195
     .line 196
-    invoke-static {v4, v4}, LEU0;->r(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    move-result-object p5
 
     .line 197
+    invoke-virtual {p4, p5}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
     .line 198
     .line 199
-    move-result-object v4
-
     .line 200
-    invoke-virtual {v7}, LBre;->i()Lgn0;
+    move-result-object p4
 
     .line 201
+    new-instance p5, Lmuj;
+
     .line 202
     .line 203
-    move-result-object v6
+    const/4 p6, 0x2
 
     .line 204
-    invoke-virtual {v4, v6}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-direct {p5, p0, p6}, Lmuj;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;I)V
 
     .line 205
     .line 206
     .line 207
-    move-result-object v4
+    new-instance p6, Lmuj;
 
     .line 208
-    new-instance v6, Ls5j;
-
     .line 209
+    const/4 p8, 0x3
+
     .line 210
-    const/4 v7, 0x1
+    invoke-direct {p6, p0, p8}, Lmuj;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;I)V
 
     .line 211
-    invoke-direct {v6, v1, v7}, Ls5j;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;I)V
-
     .line 212
     .line 213
-    .line 214
-    new-instance v7, Ls5j;
+    invoke-static {p4, p5, p6, p7}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
+    .line 214
     .line 215
     .line 216
-    const/4 v8, 0x2
+    invoke-virtual {p3, v2}, Lwuj;->a(Landroidx/recyclerview/widget/RecyclerView;)V
 
     .line 217
-    invoke-direct {v7, v1, v8}, Ls5j;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;I)V
-
     .line 218
     .line 219
-    .line 220
-    invoke-static {v4, v6, v7, v5}, LLZj;->v0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    new-instance p3, LaNi;
 
+    .line 220
     .line 221
+    const/16 p4, 0xa
+
     .line 222
     .line 223
-    sget-object v4, LXRg;->a:LWRg;
+    invoke-direct {p3, p4, p0}, LaNi;-><init>(ILjava/lang/Object;)V
 
     .line 224
     .line 225
-    const-string v5, "rv setup"
-
     .line 226
-    .line 227
-    invoke-virtual {v4, v5}, LWRg;->e(Ljava/lang/String;)I
+    const-wide/16 p4, 0x64
 
+    .line 227
     .line 228
+    invoke-virtual {v2, p3, p4, p5}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
+
     .line 229
     .line 230
-    move-result v5
-
     .line 231
-    :try_start_0
-    iget-object v6, v2, LC5j;->v:LwKc;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     .line 232
     .line 233
-    const-string v7, "recyclerViewAdapter"
-
     .line 234
+    move-result-object p3
+
     .line 235
-    if-eqz v6, :cond_5
+    new-instance p4, Landroid/util/TypedValue;
 
     .line 236
     .line 237
-    :try_start_1
-    invoke-virtual {v11, v6}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-direct {p4}, Landroid/util/TypedValue;-><init>()V
 
     .line 238
     .line 239
     .line 240
-    iget-boolean v6, v2, LC5j;->y:Z
+    const p5, 0x7f040677
 
     .line 241
     .line 242
-    if-nez v6, :cond_1
-
     .line 243
-    .line 244
-    iget-object v6, v2, LC5j;->v:LwKc;
+    invoke-virtual {p3, p5, p4, v1}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
+    .line 244
     .line 245
     .line 246
-    if-eqz v6, :cond_0
+    move-result p3
 
     .line 247
+    if-eqz p3, :cond_0
+
     .line 248
-    iget-object v8, v2, LC5j;->o:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 249
-    .line 250
-    invoke-static {v6, v8}, LwKc;->D(LwKc;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 251
-    .line 252
-    .line 253
     goto :goto_0
 
-    .line 254
-    :catchall_0
-    move-exception v0
+    .line 250
+    :cond_0
+    move-object p4, v3
 
+    .line 251
+    :goto_0
+    if-eqz p4, :cond_1
+
+    .line 252
+    .line 253
+    iget p3, p4, Landroid/util/TypedValue;->type:I
+
+    .line 254
     .line 255
-    goto/16 :goto_1
+    const/4 p5, 0x3
 
     .line 256
-    .line 257
-    :cond_0
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    if-ne p3, p5, :cond_1
 
+    .line 257
     .line 258
+    iget-object p3, p4, Landroid/util/TypedValue;->string:Ljava/lang/CharSequence;
+
     .line 259
     .line 260
-    throw v3
+    invoke-virtual {p3}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 261
-    :cond_1
-    :goto_0
-    iget-object v6, v2, LC5j;->w:Ll8e;
-
     .line 262
     .line 263
-    if-eqz v6, :cond_4
+    move-result-object v3
 
     .line 264
+    :cond_1
+    if-eqz v3, :cond_2
+
     .line 265
-    new-instance v8, Lq1;
-
     .line 266
+    sget-object p3, LgSd;->Q0:LgSd;
+
     .line 267
-    const/16 v9, 0x19
-
     .line 268
-    .line 269
-    invoke-direct {v8, v9, v6}, Lq1;-><init>(ILjava/lang/Object;)V
+    invoke-interface {p10, p3}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
+    .line 269
     .line 270
     .line 271
+    move-result-object p3
+
     .line 272
-    invoke-virtual {v11, v8}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    sget-object p4, LJKi;->w0:LJKi;
 
     .line 273
     .line 274
+    new-instance p5, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;
+
     .line 275
-    iget-object v6, v2, LC5j;->j:Lc8e;
-
     .line 276
-    .line 277
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {p5, p3, p4}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Predicate;)V
 
+    .line 277
     .line 278
     .line 279
+    new-instance p3, LVVi;
+
     .line 280
-    new-instance v8, Lq1;
-
     .line 281
+    const/16 p4, 0x14
+
     .line 282
-    const/16 v9, 0x18
-
     .line 283
-    .line 284
-    invoke-direct {v8, v9, v6}, Lq1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p3, p0, p4, v3}, LVVi;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 284
     .line 285
     .line 286
-    .line 287
-    invoke-virtual {v11, v8}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    new-instance p4, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;
 
+    .line 287
     .line 288
+    invoke-direct {p4, p5, p3}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 289
     .line 290
-    new-instance v6, LuFa;
-
     .line 291
-    .line 292
-    iget-object v8, v2, LC5j;->p:Lake;
+    invoke-virtual {p2}, LnJe;->i()Lxp0;
 
+    .line 292
     .line 293
     .line 294
-    new-instance v9, LCn0;
+    move-result-object p2
 
     .line 295
+    new-instance p3, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;
+
     .line 296
-    iget-object v10, v2, LC5j;->x:Ls6j;
-
     .line 297
-    .line 298
-    if-eqz v10, :cond_3
+    invoke-direct {p3, p4, p2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 298
     .line 299
     .line 300
-    iget-object v10, v10, Ls6j;->a:Ljava/lang/Enum;
+    new-instance p2, LRTi;
 
     .line 301
     .line 302
-    invoke-interface {v10}, LkZ8;->a()LcSa;
+    const/16 p4, 0x14
 
     .line 303
     .line 304
+    invoke-direct {p2, p0, p4, p1}, LRTi;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 305
-    move-result-object v10
-
     .line 306
-    invoke-virtual {v10}, LcSa;->b()Ljava/lang/String;
-
     .line 307
+    new-instance p4, Lmuj;
+
     .line 308
     .line 309
-    move-result-object v10
+    invoke-direct {p4, p0, v3}, Lmuj;-><init>(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;Ljava/lang/String;)V
 
     .line 310
-    sget-object v12, LX4e;->Z:LX4e;
-
     .line 311
     .line 312
-    invoke-direct {v9, v12, v10}, LCn0;-><init>(Lan0;Ljava/lang/String;)V
+    sget-object p5, LWki;->C:LWki;
 
     .line 313
     .line 314
-    .line 315
-    invoke-direct {v6, v8, v9}, LuFa;-><init>(Lbke;LCn0;)V
+    invoke-virtual {p3, p2, p4, p5, p7}, Lio/reactivex/rxjava3/core/Maybe;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 315
     .line 316
     .line 317
-    .line 318
-    invoke-virtual {v11, v6}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    :cond_2
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 318
     .line 319
     .line 320
+    move-result-object p2
+
     .line 321
-    new-instance v6, LG6j;
+    invoke-virtual {p2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     .line 322
     .line 323
-    invoke-direct {v6, v11}, LG6j;-><init>(Landroidx/recyclerview/widget/RecyclerView;)V
-
     .line 324
+    move-result-object p2
+
     .line 325
+    iget p2, p2, Landroid/util/DisplayMetrics;->density:F
+
     .line 326
-    iget-object v8, v2, LC5j;->j:Lc8e;
-
     .line 327
-    .line 328
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput p2, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->displayDensity:F
 
+    .line 328
     .line 329
+    new-instance p2, Lsu6;
+
     .line 330
     .line 331
-    new-instance v9, Lb8e;
+    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
 
     .line 332
     .line 333
-    invoke-direct {v9, v8}, Lb8e;-><init>(Lc8e;)V
-
     .line 334
+    iput-object p2, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lsu6;
+
     .line 335
     .line 336
-    iget-object v8, v6, LG6j;->b:Ljava/util/ArrayList;
+    invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
 
     .line 337
     .line 338
-    invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 339
-    .line 340
-    .line 341
-    iget-object v8, v2, LC5j;->o:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    move-result-object p1
 
+    .line 340
+    invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
+
+    .line 341
     .line 342
     .line 343
-    invoke-virtual {v8, v6}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    move-result p1
 
     .line 344
+    iput p1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->minimumThresholdForMovement:I
+
     .line 345
     .line 346
-    iget-object v6, v2, LC5j;->q:Lake;
-
-    .line 347
-    .line 348
-    invoke-interface {v6}, Lbke;->get()Ljava/lang/Object;
-
-    .line 349
-    .line 350
-    .line 351
-    move-result-object v6
-
-    .line 352
-    check-cast v6, LD6j;
-
-    .line 353
-    .line 354
-    iget-object v15, v11, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
-
-    .line 355
-    .line 356
-    iget-object v8, v2, LC5j;->v:LwKc;
-
-    .line 357
-    .line 358
-    if-eqz v8, :cond_2
-
-    .line 359
-    .line 360
-    iget-object v3, v2, LC5j;->n:Lb5j;
-
-    .line 361
-    .line 362
-    iget-object v7, v2, LC5j;->l:Lv6j;
-
-    .line 363
-    .line 364
-    new-instance v12, LC6j;
-
-    .line 365
-    .line 366
-    iget-object v9, v6, LD6j;->c:Lake;
-
-    .line 367
-    .line 368
-    iget-object v13, v6, LD6j;->a:Lake;
-
-    .line 369
-    .line 370
-    iget-object v14, v6, LD6j;->b:Lnwf;
-
-    .line 371
-    .line 372
-    move-object/from16 v18, v3
-
-    .line 373
-    .line 374
-    move-object/from16 v19, v7
-
-    .line 375
-    .line 376
-    move-object/from16 v16, v8
-
-    .line 377
-    .line 378
-    move-object/from16 v17, v9
-
-    .line 379
-    .line 380
-    invoke-direct/range {v12 .. v19}, LC6j;-><init>(Lake;Lnwf;LwGe;LwKc;Lake;Lb5j;Lv6j;)V
-
-    .line 381
-    .line 382
-    .line 383
-    invoke-virtual {v12}, LC6j;->a()V
-
-    .line 384
-    .line 385
-    .line 386
-    iget-object v3, v2, LC5j;->o:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 387
-    .line 388
-    invoke-virtual {v3, v12}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 389
-    .line 390
-    .line 391
-    iget-object v2, v2, LC5j;->o:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 392
-    .line 393
-    new-instance v3, LLP3;
-
-    .line 394
-    .line 395
-    const/4 v6, 0x4
-
-    .line 396
-    invoke-direct {v3, v11, v6}, LLP3;-><init>(Landroidx/recyclerview/widget/RecyclerView;I)V
-
-    .line 397
-    .line 398
-    .line 399
-    invoke-static {v3}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 400
-    .line 401
-    .line 402
-    move-result-object v3
-
-    .line 403
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 404
-    .line 405
-    .line 406
-    invoke-virtual {v4, v5}, LWRg;->h(I)V
-
-    .line 407
-    .line 408
-    .line 409
-    new-instance v2, LQOh;
-
-    .line 410
-    .line 411
-    const/16 v3, 0x1b
-
-    .line 412
-    .line 413
-    invoke-direct {v2, v3, v1}, LQOh;-><init>(ILjava/lang/Object;)V
-
-    .line 414
-    .line 415
-    .line 416
-    const-wide/16 v3, 0x64
-
-    .line 417
-    .line 418
-    invoke-virtual {v11, v2, v3, v4}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
-
-    .line 419
-    .line 420
-    .line 421
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 422
-    .line 423
-    .line 424
-    move-result-object v2
-
-    .line 425
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    .line 426
-    .line 427
-    .line 428
-    move-result-object v2
-
-    .line 429
-    iget v2, v2, Landroid/util/DisplayMetrics;->density:F
-
-    .line 430
-    .line 431
-    iput v2, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->displayDensity:F
-
-    .line 432
-    .line 433
-    new-instance v2, Lgr6;
-
-    .line 434
-    .line 435
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
-
-    .line 436
-    .line 437
-    .line 438
-    iput-object v2, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lgr6;
-
-    .line 439
-    .line 440
-    invoke-static {v0}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
-
-    .line 441
-    .line 442
-    .line 443
-    move-result-object v0
-
-    .line 444
-    invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
-
-    .line 445
-    .line 446
-    .line 447
-    move-result v0
-
-    .line 448
-    iput v0, v1, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->minimumThresholdForMovement:I
-
-    .line 449
-    .line 450
     return-void
+.end method
 
-    .line 451
-    :cond_2
-    :try_start_2
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+.method public static final synthetic access$getBitmapLoader$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;)LR21;
+    .locals 0
 
-    .line 452
-    .line 453
-    .line 454
-    throw v3
+    .line 1
+    iget-object p0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->bitmapLoader:LR21;
 
-    .line 455
-    :cond_3
-    const-string v0, "pageSessionModel"
-
-    .line 456
-    .line 457
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 458
-    .line 459
-    .line 460
-    throw v3
-
-    .line 461
-    :cond_4
-    const-string v0, "profilePreloadManager"
-
-    .line 462
-    .line 463
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 464
-    .line 465
-    .line 466
-    throw v3
-
-    .line 467
-    :cond_5
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 468
-    .line 469
-    .line 470
-    throw v3
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 471
-    :goto_1
-    sget-object v2, LXRg;->b:Lzhi;
-
-    .line 472
-    .line 473
-    if-eqz v2, :cond_6
-
-    .line 474
-    .line 475
-    invoke-virtual {v2, v5}, Lzhi;->o(I)V
-
-    .line 476
-    .line 477
-    .line 478
-    :cond_6
-    throw v0
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 .method public static final synthetic access$getEnableTouchWhenScrollIdle$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;)Z
@@ -1089,11 +839,11 @@
     return p0
 .end method
 
-.method public static final synthetic access$getTimber$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;)Lrn0;
+.method public static final synthetic access$getTimber$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;)LJp0;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->timber:Lrn0;
+    iget-object p0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->timber:LJp0;
 
     .line 2
     .line 3
@@ -1111,6 +861,18 @@
     return-object p0
 .end method
 
+.method public static final synthetic access$resetTrayDecorator(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->resetTrayDecorator()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
 .method public static final synthetic access$setEnableTouchWhenScrollIdle$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;Z)V
     .locals 0
 
@@ -1122,11 +884,33 @@
     return-void
 .end method
 
+.method public static final synthetic access$setFullTrayDecorator$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;LC78;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->fullTrayDecorator:LC78;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
 .method public static final synthetic access$setScrollEnabled$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;Z)V
     .locals 0
 
     .line 1
     iput-boolean p1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->scrollEnabled:Z
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public static final synthetic access$setTransparentTrayDecorator$p(Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;Lxij;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->transparentTrayDecorator:Lxij;
 
     .line 2
     .line 3
@@ -1194,6 +978,88 @@
     return p1
 .end method
 
+.method private final resetTrayDecorator()V
+    .locals 2
+
+    .line 1
+    :goto_0
+    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->n0:Ljava/util/ArrayList;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-lez v0, :cond_0
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->u0(I)V
+
+    .line 15
+    .line 16
+    .line 17
+    goto :goto_0
+
+    .line 18
+    :cond_0
+    iget-boolean v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->_transparentUI:Z
+
+    .line 19
+    .line 20
+    if-eqz v0, :cond_1
+
+    .line 21
+    .line 22
+    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 23
+    .line 24
+    iget-object v1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->transparentTrayDecorator:Lxij;
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :cond_1
+    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 31
+    .line 32
+    iget-object v1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->fullTrayDecorator:LC78;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
+
+    .line 35
+    .line 36
+    .line 37
+    return-void
+.end method
+
 
 # virtual methods
 .method public final getDisplayDensity()F
@@ -1224,7 +1090,7 @@
         value = {
             "()",
             "Lio/reactivex/rxjava3/core/Observable<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation
@@ -1234,7 +1100,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, v0}, Llva;->p(Lio/reactivex/rxjava3/subjects/PublishSubject;Lio/reactivex/rxjava3/subjects/PublishSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-static {v0, v0}, LzHa;->p(Lio/reactivex/rxjava3/subjects/PublishSubject;Lio/reactivex/rxjava3/subjects/PublishSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 4
     .line 5
@@ -1251,7 +1117,7 @@
         value = {
             "()",
             "Lio/reactivex/rxjava3/core/Observable<",
-            "Lhad;",
+            "LDpd;",
             ">;"
         }
     .end annotation
@@ -1261,7 +1127,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, v0}, Llva;->p(Lio/reactivex/rxjava3/subjects/PublishSubject;Lio/reactivex/rxjava3/subjects/PublishSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-static {v0, v0}, LzHa;->p(Lio/reactivex/rxjava3/subjects/PublishSubject;Lio/reactivex/rxjava3/subjects/PublishSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 4
     .line 5
@@ -1392,7 +1258,7 @@
     return-void
 .end method
 
-.method public processTouchEvent(Landroid/view/MotionEvent;)LaB3;
+.method public processTouchEvent(Landroid/view/MotionEvent;)LAE3;
     .locals 9
 
     .line 1
@@ -1417,7 +1283,7 @@
 
     .line 9
     .line 10
-    iget-object v3, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lgr6;
+    iget-object v3, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lsu6;
 
     .line 11
     .line 12
@@ -1440,15 +1306,15 @@
     const/4 v6, 0x0
 
     .line 21
-    iput v6, v3, Lgr6;->c:F
+    iput v6, v3, Lsu6;->c:F
 
     .line 22
     .line 23
-    iput v4, v3, Lgr6;->a:F
+    iput v4, v3, Lsu6;->a:F
 
     .line 24
     .line 25
-    iput v5, v3, Lgr6;->b:F
+    iput v5, v3, Lsu6;->b:F
 
     .line 26
     .line 27
@@ -1468,7 +1334,7 @@
 
     .line 33
     .line 34
-    iget-object v3, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lgr6;
+    iget-object v3, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lsu6;
 
     .line 35
     .line 36
@@ -1488,7 +1354,7 @@
     move-result v5
 
     .line 44
-    iget v6, v3, Lgr6;->a:F
+    iget v6, v3, Lsu6;->a:F
 
     .line 45
     .line 46
@@ -1496,7 +1362,7 @@
 
     .line 47
     .line 48
-    iget v7, v3, Lgr6;->b:F
+    iget v7, v3, Lsu6;->b:F
 
     .line 49
     .line 50
@@ -1504,7 +1370,7 @@
 
     .line 51
     .line 52
-    iget v8, v3, Lgr6;->c:F
+    iget v8, v3, Lsu6;->c:F
 
     .line 53
     .line 54
@@ -1536,15 +1402,15 @@
     add-float/2addr v8, v6
 
     .line 66
-    iput v8, v3, Lgr6;->c:F
+    iput v8, v3, Lsu6;->c:F
 
     .line 67
     .line 68
-    iput v4, v3, Lgr6;->a:F
+    iput v4, v3, Lsu6;->a:F
 
     .line 69
     .line 70
-    iput v5, v3, Lgr6;->b:F
+    iput v5, v3, Lsu6;->b:F
 
     .line 71
     .line 72
@@ -1570,7 +1436,7 @@
     move-result v5
 
     .line 82
-    invoke-virtual {v3, v4, v5}, Landroidx/recyclerview/widget/RecyclerView;->K(FF)Landroid/view/View;
+    invoke-virtual {v3, v4, v5}, Landroidx/recyclerview/widget/RecyclerView;->J(FF)Landroid/view/View;
 
     .line 83
     .line 84
@@ -1578,11 +1444,11 @@
     move-result-object v3
 
     .line 86
-    instance-of v4, v3, Ly5j;
+    instance-of v4, v3, Lsuj;
 
     .line 87
     .line 88
-    sget-object v5, LaB3;->b:LaB3;
+    sget-object v5, LAE3;->b:LAE3;
 
     .line 89
     .line 90
@@ -1619,11 +1485,11 @@
 
     .line 106
     .line 107
-    iget-object v3, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lgr6;
+    iget-object v3, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->distanceTracker:Lsu6;
 
     .line 108
     .line 109
-    iget v3, v3, Lgr6;->c:F
+    iget v3, v3, Lsu6;->c:F
 
     .line 110
     .line 111
@@ -1694,7 +1560,7 @@
     move-result-object v3
 
     .line 142
-    new-instance v4, Lhad;
+    new-instance v4, LDpd;
 
     .line 143
     .line 144
@@ -1702,7 +1568,7 @@
 
     .line 145
     .line 146
-    invoke-direct {v4, v5, v3}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v5, v3}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 147
     .line 148
@@ -1715,7 +1581,7 @@
     move-result-object p1
 
     .line 153
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 154
     .line 155
@@ -1723,12 +1589,12 @@
 
     .line 156
     .line 157
-    invoke-direct {v3, v5, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v5, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 158
     .line 159
     .line 160
-    new-array p1, v1, [Lhad;
+    new-array p1, v1, [LDpd;
 
     .line 161
     .line 162
@@ -1740,7 +1606,7 @@
 
     .line 165
     .line 166
-    invoke-static {p1}, LEdb;->j0([Lhad;)Ljava/util/Map;
+    invoke-static {p1}, Lkrb;->F0([LDpd;)Ljava/util/Map;
 
     .line 167
     .line 168
@@ -1770,7 +1636,7 @@
     .line 180
     .line 181
     :cond_2
-    sget-object p1, LaB3;->a:LaB3;
+    sget-object p1, LAE3;->a:LAE3;
 
     .line 182
     .line 183
@@ -1809,7 +1675,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, LLZj;->h0(Landroid/view/View;I)V
+    invoke-static {v0, p1}, LDz9;->f0(Landroid/view/View;I)V
 
     .line 4
     .line 5
@@ -1852,83 +1718,17 @@
 .end method
 
 .method public final setTransparentUI(Z)V
-    .locals 2
+    .locals 0
 
     .line 1
     iput-boolean p1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->_transparentUI:Z
 
     .line 2
     .line 3
-    :goto_0
-    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-direct {p0}, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->resetTrayDecorator()V
 
     .line 4
     .line 5
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->n0:Ljava/util/ArrayList;
-
     .line 6
-    .line 7
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    if-lez v0, :cond_0
-
-    .line 12
-    .line 13
-    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 14
-    .line 15
-    const/4 v1, 0x0
-
-    .line 16
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->u0(I)V
-
-    .line 17
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    if-eqz p1, :cond_1
-
-    .line 21
-    .line 22
-    iget-object p1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 23
-    .line 24
-    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->transparentTrayDecorator:LiTi;
-
-    .line 25
-    .line 26
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
-
-    .line 27
-    .line 28
-    .line 29
-    return-void
-
-    .line 30
-    :cond_1
-    iget-object p1, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->recyclerView:Landroidx/recyclerview/widget/RecyclerView;
-
-    .line 31
-    .line 32
-    iget-object v0, p0, Lcom/snap/profile/ui/flatland/UnifiedProfileFlatlandProfileView;->fullTrayDecorator:Lz18;
-
-    .line 33
-    .line 34
-    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
-
-    .line 35
-    .line 36
-    .line 37
     return-void
 .end method

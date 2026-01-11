@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LkM3;
-    schema = "\'localizedPrice\':s,\'price\':r:\'[0]\',\'queueStateObservable\':g?<c>:\'[1]\'<r<e>:\'[2]\'>,\'purchase\':f|m|(f(r<e>:\'[3]\'))"
+    proxyClass = LKP3;
+    schema = "\'localizedPrice\':s,\'price\':r:\'[0]\',\'queueStateObservable\':g?<c>:\'[1]\'<r<e>:\'[2]\'>,\'purchase\':f|m|(s?): p<r:\'[3]\'>"
     typeReferences = {
         Lcom/snap/plus_iap/ProductPrice;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
         Lcom/snap/plus_iap/ProductQueueState;,
-        Lcom/snap/plus_iap/ConsumableProductPurchaseResult;
+        LaIe;
     }
 .end annotation
 
@@ -38,12 +38,15 @@
     .end annotation
 .end method
 
-.method public abstract purchase(Lkotlin/jvm/functions/Function1;)V
+.method public abstract purchase(Ljava/lang/String;)Lcom/snap/composer/promise/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlin/jvm/functions/Function1;",
-            ")V"
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/snap/composer/promise/Promise<",
+            "LaIe;",
+            ">;"
         }
     .end annotation
 .end method

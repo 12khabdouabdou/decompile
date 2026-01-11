@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -22,19 +22,19 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicBoolean;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(LV6i;Ljava/lang/Object;)V
+.method public constructor <init>(Lmvi;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -47,7 +47,7 @@
 
     .line 5
     .line 6
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$SimpleScalarSubscription;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$SimpleScalarSubscription;->a:Lmvi;
 
     .line 7
     .line 8
@@ -100,16 +100,16 @@
 
     .line 16
     .line 17
-    iget-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$SimpleScalarSubscription;->a:LV6i;
+    iget-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$SimpleScalarSubscription;->a:Lmvi;
 
     .line 18
     .line 19
-    invoke-interface {p2, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {p2, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 20
     .line 21
     .line 22
-    invoke-interface {p2}, LV6i;->onComplete()V
+    invoke-interface {p2}, Lmvi;->onComplete()V
 
     .line 23
     .line 24

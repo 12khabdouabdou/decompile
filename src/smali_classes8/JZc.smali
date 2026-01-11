@@ -1,41 +1,35 @@
 .class public final LJZc;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LNsb;
-
-.field public final synthetic c:LdXc;
+.field public final synthetic b:LqC6;
 
 
 # direct methods
-.method public synthetic constructor <init>(LNsb;LdXc;I)V
+.method public synthetic constructor <init>(LqC6;I)V
     .locals 0
 
     .line 1
-    iput p3, p0, LJZc;->a:I
+    iput p2, p0, LJZc;->a:I
 
-    iput-object p1, p0, LJZc;->b:LNsb;
+    iput-object p1, p0, LJZc;->b:LqC6;
 
-    iput-object p2, p0, LJZc;->c:LdXc;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
     iget v0, p0, LJZc;->a:I
@@ -47,244 +41,189 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LJZc;->b:LNsb;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    iget-object v1, v0, LNsb;->c:Ljava/lang/Object;
+    iget-object p1, p0, LJZc;->b:LqC6;
 
     .line 9
     .line 10
-    check-cast v1, LaS6;
+    invoke-virtual {p1}, LqC6;->f()LcH8;
 
     .line 11
     .line 12
-    new-instance v2, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;
-
     .line 13
+    move-result-object v0
+
     .line 14
-    sget-object v3, Ly1j;->a:LWSc;
+    const/4 v1, 0x5
 
     .line 15
-    .line 16
-    iget-object v4, p0, LJZc;->c:LdXc;
+    invoke-static {v1, v0}, LePk;->h(ILcH8;)V
 
+    .line 16
     .line 17
     .line 18
-    invoke-direct {v2, v4, v3}, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;-><init>(LdXc;LWSc;)V
+    iget-object p1, p1, LqC6;->f0:Ljava/lang/Object;
 
     .line 19
     .line 20
-    .line 21
-    invoke-virtual {v1, v2}, LaS6;->e(LLR6;)V
+    check-cast p1, Lnp0;
 
+    .line 21
     .line 22
+    const-string v0, "UPLOAD_MEDIA"
+
     .line 23
     .line 24
-    iget-object v0, v0, LNsb;->Y:Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lnp0;->a(Ljava/lang/String;)Lnp0;
 
     .line 25
     .line 26
-    check-cast v0, LCwg;
-
     .line 27
+    return-void
+
     .line 28
-    if-eqz v0, :cond_0
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 29
     .line 30
-    const/4 v1, 0x0
+    iget-object p1, p0, LJZc;->b:LqC6;
 
     .line 31
-    invoke-virtual {v0, v1}, LCwg;->z(Z)V
-
     .line 32
+    invoke-virtual {p1}, LqC6;->f()LcH8;
+
     .line 33
     .line 34
-    sget-object v0, Li7j;->a:Li7j;
-
     .line 35
+    move-result-object v0
+
     .line 36
-    return-object v0
+    const/4 v1, 0x4
 
     .line 37
-    :cond_0
-    const-string v0, "actionSheet"
+    invoke-static {v1, v0}, LePk;->h(ILcH8;)V
 
     .line 38
     .line 39
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 40
+    iget-object p1, p1, LqC6;->f0:Ljava/lang/Object;
+
     .line 41
     .line 42
-    const/4 v0, 0x0
+    check-cast p1, Lnp0;
 
     .line 43
-    throw v0
-
     .line 44
-    :pswitch_0
-    iget-object v0, p0, LJZc;->b:LNsb;
+    const-string v0, "EXPORT_MEDIA"
 
     .line 45
     .line 46
-    iget-object v1, v0, LNsb;->c:Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lnp0;->a(Ljava/lang/String;)Lnp0;
 
     .line 47
     .line 48
-    check-cast v1, LaS6;
-
     .line 49
+    return-void
+
     .line 50
-    new-instance v2, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 51
     .line 52
-    sget-object v3, Ly1j;->j:LWSc;
+    iget-object p1, p0, LJZc;->b:LqC6;
 
     .line 53
     .line 54
-    iget-object v4, p0, LJZc;->c:LdXc;
+    invoke-virtual {p1}, LqC6;->f()LcH8;
 
     .line 55
     .line 56
-    invoke-direct {v2, v4, v3}, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;-><init>(LdXc;LWSc;)V
-
     .line 57
+    move-result-object v0
+
     .line 58
+    const/4 v1, 0x3
+
     .line 59
-    invoke-virtual {v1, v2}, LaS6;->e(LLR6;)V
+    invoke-static {v1, v0}, LePk;->h(ILcH8;)V
 
     .line 60
     .line 61
     .line 62
-    iget-object v0, v0, LNsb;->Y:Ljava/lang/Object;
+    iget-object p1, p1, LqC6;->f0:Ljava/lang/Object;
 
     .line 63
     .line 64
-    check-cast v0, LCwg;
+    check-cast p1, Lnp0;
 
     .line 65
     .line 66
-    if-eqz v0, :cond_1
+    const-string v0, "DOWNLOAD_MEDIA"
 
     .line 67
     .line 68
-    const/4 v1, 0x1
+    invoke-virtual {p1, v0}, Lnp0;->a(Ljava/lang/String;)Lnp0;
 
     .line 69
-    invoke-virtual {v0, v1}, LCwg;->z(Z)V
-
     .line 70
     .line 71
+    return-void
+
     .line 72
-    sget-object v0, Li7j;->a:Li7j;
+    :pswitch_2
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 73
     .line 74
-    return-object v0
+    iget-object p1, p0, LJZc;->b:LqC6;
 
     .line 75
-    :cond_1
-    const-string v0, "actionSheet"
-
     .line 76
-    .line 77
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {p1}, LqC6;->f()LcH8;
 
+    .line 77
     .line 78
     .line 79
+    move-result-object v0
+
     .line 80
-    const/4 v0, 0x0
+    const/16 v1, 0x8
 
     .line 81
-    throw v0
-
     .line 82
-    :pswitch_1
-    iget-object v0, p0, LJZc;->b:LNsb;
+    invoke-static {v1, v0}, LePk;->h(ILcH8;)V
 
     .line 83
     .line 84
-    iget-object v1, v0, LNsb;->c:Ljava/lang/Object;
-
     .line 85
+    iget-object p1, p1, LqC6;->f0:Ljava/lang/Object;
+
     .line 86
-    check-cast v1, LaS6;
-
     .line 87
+    check-cast p1, Lnp0;
+
     .line 88
-    new-instance v2, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;
-
     .line 89
+    const-string v0, "GENERATE_THUMBNAIL_CUSTOM"
+
     .line 90
-    sget-object v3, Ly1j;->i:LWSc;
-
     .line 91
-    .line 92
-    iget-object v4, p0, LJZc;->c:LdXc;
+    invoke-virtual {p1, v0}, Lnp0;->a(Ljava/lang/String;)Lnp0;
 
+    .line 92
     .line 93
     .line 94
-    invoke-direct {v2, v4, v3}, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;-><init>(LdXc;LWSc;)V
+    return-void
 
     .line 95
-    .line 96
-    .line 97
-    invoke-virtual {v1, v2}, LaS6;->e(LLR6;)V
-
-    .line 98
-    .line 99
-    .line 100
-    iget-object v0, v0, LNsb;->Y:Ljava/lang/Object;
-
-    .line 101
-    .line 102
-    check-cast v0, LCwg;
-
-    .line 103
-    .line 104
-    if-eqz v0, :cond_2
-
-    .line 105
-    .line 106
-    const/4 v1, 0x0
-
-    .line 107
-    invoke-virtual {v0, v1}, LCwg;->z(Z)V
-
-    .line 108
-    .line 109
-    .line 110
-    sget-object v0, Li7j;->a:Li7j;
-
-    .line 111
-    .line 112
-    return-object v0
-
-    .line 113
-    :cond_2
-    const-string v0, "actionSheet"
-
-    .line 114
-    .line 115
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 116
-    .line 117
-    .line 118
-    const/4 v0, 0x0
-
-    .line 119
-    throw v0
-
-    .line 120
-    nop
-
-    .line 121
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

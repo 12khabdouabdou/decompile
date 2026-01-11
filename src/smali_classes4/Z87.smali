@@ -1,148 +1,96 @@
 .class public final LZ87;
-.super LrE9;
+.super Lsw;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:La97;
+.field public final X:Lcom/snap/composer/context/ComposerContext;
 
 
 # direct methods
-.method public synthetic constructor <init>(La97;I)V
-    .locals 0
+.method public constructor <init>(Lcom/snap/composer/context/ComposerContext;)V
+    .locals 3
 
     .line 1
-    iput p2, p0, LZ87;->a:I
+    sget-object v0, Lsw;->t:Ljava/util/concurrent/atomic/AtomicLong;
 
-    iput-object p1, p0, LZ87;->b:La97;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
 
-    const/4 p1, 0x0
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v0
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 7
+    sget-object v2, La97;->a:La97;
 
+    .line 8
+    .line 9
+    invoke-direct {p0, v2, v0, v1}, Lsw;-><init>(Ltw;J)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object p1, p0, LZ87;->X:Lcom/snap/composer/context/ComposerContext;
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 4
+.method public final u(Lsw;)Z
+    .locals 3
 
     .line 1
-    iget v0, p0, LZ87;->a:I
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, LZ87;->b:La97;
+    return v0
 
+    .line 5
+    :cond_0
+    instance-of v1, p1, LZ87;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    iget-object v0, v0, La97;->h:Lnwf;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    sget-object v1, LP87;->Z:LP87;
+    return v2
 
     .line 11
-    .line 12
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_1
+    check-cast p1, LZ87;
 
+    .line 12
     .line 13
+    iget-object p1, p1, LZ87;->X:Lcom/snap/composer/context/ComposerContext;
+
     .line 14
     .line 15
-    new-instance v2, LWm0;
+    iget-object v1, p0, LZ87;->X:Lcom/snap/composer/context/ComposerContext;
 
     .line 16
     .line 17
-    const-string v3, "FamilyCenterInvitePromptPageLauncher"
+    if-ne v1, p1, :cond_2
 
     .line 18
     .line 19
-    invoke-direct {v2, v1, v3}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    return v0
 
     .line 20
-    .line 21
-    .line 22
-    check-cast v0, LIP5;
-
-    .line 23
-    .line 24
-    invoke-static {v0, v2}, LEU0;->p(LIP5;LWm0;)LBre;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v0
-
-    .line 28
-    return-object v0
-
-    .line 29
-    :pswitch_0
-    iget-object v0, p0, LZ87;->b:La97;
-
-    .line 30
-    .line 31
-    iget-object v1, v0, La97;->p:LiSg;
-
-    .line 32
-    .line 33
-    sget-object v2, LP87;->h0:LcSa;
-
-    .line 34
-    .line 35
-    iget-object v0, v0, La97;->a:Landroid/content/Context;
-
-    .line 36
-    .line 37
-    const/4 v3, 0x4
-
-    .line 38
-    invoke-static {v1, v0, v2, v3}, LiSg;->b(LiSg;Landroid/content/Context;LcSa;I)Lcqc;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v0
-
-    .line 42
-    return-object v0
-
-    .line 43
-    :pswitch_1
-    iget-object v0, p0, LZ87;->b:La97;
-
-    .line 44
-    .line 45
-    iget-object v0, v0, La97;->m:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 46
-    .line 47
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 48
-    .line 49
-    .line 50
-    sget-object v0, Li7j;->a:Li7j;
-
-    .line 51
-    .line 52
-    return-object v0
-
-    .line 53
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :cond_2
+    return v2
 .end method

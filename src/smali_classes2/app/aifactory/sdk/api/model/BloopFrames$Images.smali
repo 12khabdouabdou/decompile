@@ -46,7 +46,7 @@
     const/4 v0, 0x0
 
     .line 3
-    invoke-direct {p0, p2, v0}, Lapp/aifactory/sdk/api/model/BloopFrames;-><init>(ILHr5;)V
+    invoke-direct {p0, p2, v0}, Lapp/aifactory/sdk/api/model/BloopFrames;-><init>(ILex5;)V
 
     .line 4
     iput-object p1, p0, Lapp/aifactory/sdk/api/model/BloopFrames$Images;->images:Ljava/util/List;
@@ -57,7 +57,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/util/List;ILapp/aifactory/sdk/api/model/ReenactmentCacheType;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/util/List;ILapp/aifactory/sdk/api/model/ReenactmentCacheType;ILex5;)V
     .locals 0
 
     and-int/lit8 p4, p4, 0x4

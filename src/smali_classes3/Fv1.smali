@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public final a:Lbke;
+.field public final a:LYK4;
 
-.field public final b:Lbke;
+.field public final b:LYK4;
 
-.field public final c:LfM5;
+.field public final c:LyPf;
 
-.field public final d:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+.field public final d:LR93;
 
 
 # direct methods
-.method public constructor <init>(Lbke;Lbke;LfM5;)V
+.method public constructor <init>(LYK4;LYK4;LyPf;LR93;)V
     .locals 0
 
     .line 1
@@ -23,52 +23,21 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LFv1;->a:Lbke;
+    iput-object p1, p0, LFv1;->a:LYK4;
 
     .line 5
     .line 6
-    iput-object p2, p0, LFv1;->b:Lbke;
+    iput-object p2, p0, LFv1;->b:LYK4;
 
     .line 7
     .line 8
-    iput-object p3, p0, LFv1;->c:LfM5;
+    iput-object p3, p0, LFv1;->c:LyPf;
 
     .line 9
     .line 10
-    new-instance p1, Lqk0;
+    iput-object p4, p0, LFv1;->d:LR93;
 
     .line 11
     .line 12
-    const/16 p2, 0x1a
-
-    .line 13
-    .line 14
-    invoke-direct {p1, p2, p0}, Lqk0;-><init>(ILjava/lang/Object;)V
-
-    .line 15
-    .line 16
-    .line 17
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
-    .line 18
-    .line 19
-    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 20
-    .line 21
-    .line 22
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
-
-    .line 23
-    .line 24
-    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iput-object p1, p0, LFv1;->d:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
-
-    .line 28
-    .line 29
     return-void
 .end method

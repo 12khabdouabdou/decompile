@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LuW8;
+    proxyClass = LV39;
     schema = "\'addTranscodedMemory\':f?|m|(s, r:\'[0]\'),\'transcode\':f|m|(a<r:\'[1]\'>, f(a<r:\'[0]\'>, s?))"
     typeReferences = {
         Lcom/snap/modules/media_processor/TranscodedMemory;,
@@ -20,7 +20,7 @@
 
 # virtual methods
 .method public abstract addTranscodedMemory(Ljava/lang/String;Lcom/snap/modules/media_processor/TranscodedMemory;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

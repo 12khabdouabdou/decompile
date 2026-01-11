@@ -1,6 +1,9 @@
 .class public final LGwk;
-.super LI3;
+.super Le4;
 .source "SourceFile"
+
+# interfaces
+.implements Llnf;
 
 
 # static fields
@@ -16,27 +19,11 @@
 
 
 # instance fields
-.field public final X:F
-
-.field public final Y:F
-
-.field public final Z:F
-
 .field public final a:I
 
-.field public final b:Landroid/graphics/Rect;
+.field public final b:I
 
-.field public final c:F
-
-.field public final e0:F
-
-.field public final f0:F
-
-.field public final g0:Ljava/util/ArrayList;
-
-.field public final h0:Ljava/util/ArrayList;
-
-.field public final t:F
+.field public final c:Landroid/content/Intent;
 
 
 # direct methods
@@ -44,27 +31,26 @@
     .locals 2
 
     .line 1
-    new-instance v0, LHqk;
+    new-instance v0, LKwk;
 
     .line 2
     .line 3
-    const/16 v1, 0xe
+    const/4 v1, 0x0
 
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, LHqk;-><init>(I)V
+    invoke-direct {v0, v1}, LKwk;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     sput-object v0, LGwk;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 8
     .line 9
-    .line 10
     return-void
 .end method
 
-.method public constructor <init>(ILandroid/graphics/Rect;FFFFFFFLjava/util/ArrayList;Ljava/util/ArrayList;)V
+.method public constructor <init>(IILandroid/content/Intent;)V
     .locals 0
 
     .line 1
@@ -77,60 +63,55 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, LGwk;->b:Landroid/graphics/Rect;
+    iput p2, p0, LGwk;->b:I
 
     .line 7
     .line 8
-    iput p3, p0, LGwk;->c:F
+    iput-object p3, p0, LGwk;->c:Landroid/content/Intent;
 
     .line 9
     .line 10
-    iput p4, p0, LGwk;->t:F
-
-    .line 11
-    .line 12
-    iput p5, p0, LGwk;->X:F
-
-    .line 13
-    .line 14
-    iput p6, p0, LGwk;->Y:F
-
-    .line 15
-    .line 16
-    iput p7, p0, LGwk;->Z:F
-
-    .line 17
-    .line 18
-    iput p8, p0, LGwk;->e0:F
-
-    .line 19
-    .line 20
-    iput p9, p0, LGwk;->f0:F
-
-    .line 21
-    .line 22
-    iput-object p10, p0, LGwk;->g0:Ljava/util/ArrayList;
-
-    .line 23
-    .line 24
-    iput-object p11, p0, LGwk;->h0:Ljava/util/ArrayList;
-
-    .line 25
-    .line 26
     return-void
 .end method
 
 
 # virtual methods
+.method public final f()Lcom/google/android/gms/common/api/Status;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LGwk;->b:I
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->Y:Lcom/google/android/gms/common/api/Status;
+
+    .line 6
+    .line 7
+    return-object v0
+
+    .line 8
+    :cond_0
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->g0:Lcom/google/android/gms/common/api/Status;
+
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
 .method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 4
+    .locals 3
 
     .line 1
     const/16 v0, 0x4f45
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
+    invoke-static {v0, p1}, LMsi;->X(ILandroid/os/Parcel;)I
 
     .line 4
     .line 5
@@ -144,7 +125,7 @@
     const/4 v2, 0x4
 
     .line 9
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 10
     .line 11
@@ -161,163 +142,36 @@
     const/4 v1, 0x2
 
     .line 18
-    iget-object v3, p0, LGwk;->b:Landroid/graphics/Rect;
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 19
     .line 20
-    invoke-static {p1, v1, v3, p2}, Lew8;->F0(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
-
     .line 21
+    iget v1, p0, LGwk;->b:I
+
     .line 22
     .line 23
-    const/4 p2, 0x3
+    invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 24
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
-
     .line 25
     .line 26
-    .line 27
-    iget p2, p0, LGwk;->c:F
+    iget-object v1, p0, LGwk;->c:Landroid/content/Intent;
 
+    .line 27
     .line 28
+    const/4 v2, 0x3
+
     .line 29
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
+    invoke-static {p1, v2, v1, p2}, LMsi;->R(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 30
     .line 31
     .line 32
-    invoke-static {p1, v2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {v0, p1}, LMsi;->Y(ILandroid/os/Parcel;)V
 
     .line 33
     .line 34
     .line 35
-    iget p2, p0, LGwk;->t:F
-
-    .line 36
-    .line 37
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
-
-    .line 38
-    .line 39
-    .line 40
-    const/4 p2, 0x5
-
-    .line 41
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
-
-    .line 42
-    .line 43
-    .line 44
-    iget p2, p0, LGwk;->X:F
-
-    .line 45
-    .line 46
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
-
-    .line 47
-    .line 48
-    .line 49
-    const/4 p2, 0x6
-
-    .line 50
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
-
-    .line 51
-    .line 52
-    .line 53
-    iget p2, p0, LGwk;->Y:F
-
-    .line 54
-    .line 55
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
-
-    .line 56
-    .line 57
-    .line 58
-    const/4 p2, 0x7
-
-    .line 59
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
-
-    .line 60
-    .line 61
-    .line 62
-    iget p2, p0, LGwk;->Z:F
-
-    .line 63
-    .line 64
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
-
-    .line 65
-    .line 66
-    .line 67
-    const/16 p2, 0x8
-
-    .line 68
-    .line 69
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
-
-    .line 70
-    .line 71
-    .line 72
-    iget p2, p0, LGwk;->e0:F
-
-    .line 73
-    .line 74
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
-
-    .line 75
-    .line 76
-    .line 77
-    const/16 p2, 0x9
-
-    .line 78
-    .line 79
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
-
-    .line 80
-    .line 81
-    .line 82
-    iget p2, p0, LGwk;->f0:F
-
-    .line 83
-    .line 84
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
-
-    .line 85
-    .line 86
-    .line 87
-    const/16 p2, 0xa
-
-    .line 88
-    .line 89
-    iget-object v1, p0, LGwk;->g0:Ljava/util/ArrayList;
-
-    .line 90
-    .line 91
-    invoke-static {p1, p2, v1}, Lew8;->Q0(Landroid/os/Parcel;ILjava/util/List;)V
-
-    .line 92
-    .line 93
-    .line 94
-    const/16 p2, 0xb
-
-    .line 95
-    .line 96
-    iget-object v1, p0, LGwk;->h0:Ljava/util/ArrayList;
-
-    .line 97
-    .line 98
-    invoke-static {p1, p2, v1}, Lew8;->Q0(Landroid/os/Parcel;ILjava/util/List;)V
-
-    .line 99
-    .line 100
-    .line 101
-    invoke-static {v0, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
-
-    .line 102
-    .line 103
-    .line 104
     return-void
 .end method

@@ -1,152 +1,249 @@
-.class public final LCOg;
-.super Ljava/lang/Object;
+.class public final enum LCOg;
+.super Ljava/lang/Enum;
 .source "SourceFile"
-
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # static fields
-.field public static final a:LCOg;
+.field public static final enum X:LCOg;
+
+.field public static final enum Y:LCOg;
+
+.field public static final synthetic Z:[LCOg;
+
+.field public static final enum a:LCOg;
+
+.field public static final enum b:LCOg;
+
+.field public static final enum c:LCOg;
+
+.field public static final enum t:LCOg;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 15
 
     .line 1
-    new-instance v0, LCOg;
+    const/4 v0, 0x6
 
     .line 2
+    const/4 v1, 0x5
+
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x4
 
     .line 4
+    const/4 v3, 0x3
+
     .line 5
-    .line 6
-    sput-object v0, LCOg;->a:LCOg;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
-
-    .line 1
-    check-cast p1, Lik8;
-
-    .line 2
-    .line 3
-    iget-object v0, p1, Lik8;->f:[B
-
-    .line 4
-    .line 5
-    if-eqz v0, :cond_1
+    const/4 v4, 0x2
 
     .line 6
+    const/4 v5, 0x1
+
     .line 7
-    invoke-static {v0}, Lx37;->h([B)Ljava/util/ArrayList;
+    const/4 v6, 0x0
 
     .line 8
+    new-instance v7, LCOg;
+
     .line 9
     .line 10
-    move-result-object v0
+    const-string v8, "OP_ALREADY_RUNNING"
 
     .line 11
-    if-eqz v0, :cond_0
-
     .line 12
-    .line 13
-    sget-object v1, LWfb$a;->b:LWfb$a;
+    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 13
     .line 14
     .line 15
-    iget-object v1, v1, LWfb$a;->a:Ljava/lang/String;
+    sput-object v7, LCOg;->a:LCOg;
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+    new-instance v8, LCOg;
 
     .line 18
     .line 19
-    .line 20
-    move-result v0
+    const-string v9, "UPLOAD_NOT_NEEDED"
 
+    .line 20
     .line 21
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    new-instance v9, LCOg;
 
     .line 25
-    goto :goto_0
-
     .line 26
-    :cond_0
-    const/4 v0, 0x0
+    const-string v10, "COPIED"
 
     .line 27
-    :goto_0
-    if-eqz v0, :cond_1
-
     .line 28
-    .line 29
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 29
     .line 30
     .line 31
-    .line 32
-    move-result v0
+    sput-object v9, LCOg;->b:LCOg;
 
+    .line 32
     .line 33
-    move v7, v0
+    new-instance v10, LCOg;
 
     .line 34
-    goto :goto_1
-
     .line 35
-    :cond_1
-    const/4 v0, 0x0
+    const-string v11, "DELETED"
 
     .line 36
-    const/4 v7, 0x0
-
     .line 37
-    :goto_1
-    new-instance v1, LQyb;
+    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 38
     .line 39
-    iget-object v3, p1, Lik8;->b:Ljava/lang/String;
-
     .line 40
+    sput-object v10, LCOg;->c:LCOg;
+
     .line 41
-    iget-object v4, p1, Lik8;->c:Ljava/lang/String;
-
     .line 42
+    new-instance v11, LCOg;
+
     .line 43
-    iget-object v2, p1, Lik8;->a:Ljava/lang/String;
-
     .line 44
+    const-string v12, "SPECS_TRANSFER_TO_CLIENT"
+
     .line 45
-    iget-object v5, p1, Lik8;->d:Ljava/lang/String;
-
     .line 46
-    .line 47
-    iget-object v6, p1, Lik8;->e:Ljava/lang/String;
+    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 47
     .line 48
     .line 49
-    invoke-direct/range {v1 .. v7}, LQyb;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    sput-object v11, LCOg;->t:LCOg;
 
     .line 50
     .line 51
+    new-instance v12, LCOg;
+
     .line 52
-    return-object v1
+    .line 53
+    const-string v13, "ALREADY_UPLOADED"
+
+    .line 54
+    .line 55
+    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 56
+    .line 57
+    .line 58
+    sput-object v12, LCOg;->X:LCOg;
+
+    .line 59
+    .line 60
+    new-instance v13, LCOg;
+
+    .line 61
+    .line 62
+    const-string v14, "ENTRY_UPLOADED"
+
+    .line 63
+    .line 64
+    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 65
+    .line 66
+    .line 67
+    sput-object v13, LCOg;->Y:LCOg;
+
+    .line 68
+    .line 69
+    const/4 v14, 0x7
+
+    .line 70
+    new-array v14, v14, [LCOg;
+
+    .line 71
+    .line 72
+    aput-object v7, v14, v6
+
+    .line 73
+    .line 74
+    aput-object v8, v14, v5
+
+    .line 75
+    .line 76
+    aput-object v9, v14, v4
+
+    .line 77
+    .line 78
+    aput-object v10, v14, v3
+
+    .line 79
+    .line 80
+    aput-object v11, v14, v2
+
+    .line 81
+    .line 82
+    aput-object v12, v14, v1
+
+    .line 83
+    .line 84
+    aput-object v13, v14, v0
+
+    .line 85
+    .line 86
+    sput-object v14, LCOg;->Z:[LCOg;
+
+    .line 87
+    .line 88
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LCOg;
+    .locals 1
+
+    .line 1
+    const-class v0, LCOg;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LCOg;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LCOg;
+    .locals 1
+
+    .line 1
+    sget-object v0, LCOg;->Z:[LCOg;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LCOg;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

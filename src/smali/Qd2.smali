@@ -1,29 +1,43 @@
-.class public interface abstract LQd2;
-.super Ljava/lang/Object;
+.class public final LQd2;
+.super LRd2;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract O0(LjF9;LWm0;)V
-.end method
+# instance fields
+.field public final a:Lujf;
 
-.method public abstract R(LPd2;)V
-.end method
+.field public final b:Lujf;
 
-.method public abstract S(LPd2;)V
-.end method
+.field public final c:Lujf;
 
-.method public abstract a(LWm0;)V
-.end method
+.field public final d:Ljava/lang/Float;
 
-.method public abstract b1(LWm0;Lsc2;LU22;Ljava/lang/Boolean;)V
-.end method
 
-.method public abstract e(LWm0;Lsc2;LU22;)V
-.end method
+# direct methods
+.method public constructor <init>(Lujf;Lujf;Lujf;Ljava/lang/Float;)V
+    .locals 0
 
-.method public abstract release()V
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract s0(Lp27;LU22;LWm0;Lsc2;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LQd2;->a:Lujf;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LQd2;->b:Lujf;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LQd2;->c:Lujf;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LQd2;->d:Ljava/lang/Float;
+
+    .line 11
+    .line 12
+    return-void
 .end method

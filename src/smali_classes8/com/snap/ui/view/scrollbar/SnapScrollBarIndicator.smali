@@ -12,7 +12,7 @@
 
 .field public volatile e0:F
 
-.field public f0:LjXa;
+.field public f0:LRsb;
 
 .field public volatile t:F
 
@@ -59,12 +59,12 @@
 
     check-cast p1, Landroid/view/LayoutInflater;
 
-    const p2, 0x7f0e0625
+    const p2, 0x7f0e0646
 
     .line 5
     invoke-virtual {p1, p2, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const p1, 0x7f0b13fb
+    const p1, 0x7f0b1533
 
     .line 6
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -75,7 +75,7 @@
 
     iput-object p1, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;->a:Landroid/widget/TextView;
 
-    const p1, 0x7f0b13fc
+    const p1, 0x7f0b1534
 
     .line 7
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -190,7 +190,7 @@
     return v1
 .end method
 
-.method public final b(Lceg;)V
+.method public final b(LFHf;)V
     .locals 4
 
     .line 1
@@ -233,7 +233,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {p1}, Lceg;->run()V
+    invoke-virtual {p1}, LFHf;->run()V
 
     .line 20
     .line 21
@@ -286,14 +286,14 @@
     .line 42
     .line 43
     :cond_4
-    new-instance v2, LwPg;
+    new-instance v2, LCbh;
 
     .line 44
     .line 45
     const/4 v3, 0x0
 
     .line 46
-    invoke-direct {v2, v0, v1, p0, v3}, LwPg;-><init>(FFLcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;I)V
+    invoke-direct {v2, v0, v1, p0, v3}, LCbh;-><init>(FFLcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;I)V
 
     .line 47
     .line 48
@@ -315,14 +315,14 @@
     .line 56
     .line 57
     .line 58
-    new-instance v0, LvPg;
+    new-instance v0, LBbh;
 
     .line 59
     .line 60
     const/4 v1, 0x0
 
     .line 61
-    invoke-direct {v0, p1, v1, p0}, LvPg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p1, v1, p0}, LBbh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 62
     .line 63
@@ -449,26 +449,26 @@
 
     .line 48
     :cond_2
-    new-instance v1, LwPg;
+    new-instance v1, LCbh;
 
     .line 49
     .line 50
     const/4 v2, 0x1
 
     .line 51
-    invoke-direct {v1, p1, v0, p0, v2}, LwPg;-><init>(FFLcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;I)V
+    invoke-direct {v1, p1, v0, p0, v2}, LCbh;-><init>(FFLcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;I)V
 
     .line 52
     .line 53
     .line 54
-    new-instance p1, LhW2;
+    new-instance p1, LMY2;
 
     .line 55
     .line 56
     const/4 v0, 0x2
 
     .line 57
-    invoke-direct {p1, v0, p0}, LhW2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, LMY2;-><init>(ILjava/lang/Object;)V
 
     .line 58
     .line 59

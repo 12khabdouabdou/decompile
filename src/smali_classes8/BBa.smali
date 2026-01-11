@@ -1,94 +1,37 @@
 .class public final LBBa;
-.super LrE9;
+.super Ljava/lang/Exception;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lcom/snap/talk/lockscreen/LockScreenActivity;
+.field public final a:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/snap/talk/lockscreen/LockScreenActivity;I)V
-    .locals 0
+.method public constructor <init>(I)V
+    .locals 1
 
     .line 1
-    iput p2, p0, LBBa;->a:I
-
-    iput-object p1, p0, LBBa;->b:Lcom/snap/talk/lockscreen/LockScreenActivity;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LBBa;->a:I
+    const-string v0, "Call failed with error type: "
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-static {p1, v0}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LBBa;->b:Lcom/snap/talk/lockscreen/LockScreenActivity;
+    move-result-object v0
 
     .line 7
-    .line 8
-    const v1, 0x7f0b0f93
+    invoke-direct {p0, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
+    .line 8
     .line 9
     .line 10
+    iput p1, p0, LBBa;->a:I
+
     .line 11
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
-
     .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    return-object v0
-
-    .line 16
-    :pswitch_0
-    iget-object v0, p0, LBBa;->b:Lcom/snap/talk/lockscreen/LockScreenActivity;
-
-    .line 17
-    .line 18
-    const v1, 0x7f0b077e
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    return-object v0
-
-    .line 26
-    nop
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

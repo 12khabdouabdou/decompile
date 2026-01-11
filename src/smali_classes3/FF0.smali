@@ -1,29 +1,33 @@
-.class public final LFF0;
+.class public abstract LFF0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LCF0;
+
+# static fields
+.field public static final a:Ljava/lang/reflect/Type;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LEF0;
 
     .line 2
     .line 3
+    invoke-direct {v0}, LEF0;-><init>()V
+
     .line 4
-    return-void
-.end method
+    .line 5
+    .line 6
+    iget-object v0, v0, Lhmj;->b:Ljava/lang/reflect/Type;
 
+    .line 7
+    .line 8
+    sput-object v0, LFF0;->a:Ljava/lang/reflect/Type;
 
-# virtual methods
-.method public final a()V
-    .locals 0
-
-    .line 1
+    .line 9
+    .line 10
     return-void
 .end method

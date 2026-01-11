@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LYp2;
+    proxyClass = LRs2;
     schema = "\'createPaginator\':f|m|(): g:\'[0]\'<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/memories/composer/api/DataPaginator;,
-        LZp2;
+        LSs2;
     }
 .end annotation
 
@@ -24,7 +24,7 @@
         value = {
             "()",
             "Lcom/snap/memories/composer/api/DataPaginator<",
-            "LZp2;",
+            "LSs2;",
             ">;"
         }
     .end annotation

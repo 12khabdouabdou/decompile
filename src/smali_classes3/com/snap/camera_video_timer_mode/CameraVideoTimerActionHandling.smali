@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LKd2;
+    proxyClass = Lug2;
     schema = "\'onCreate\':f|m|(d),\'onDurationWillChange\':f|m|(),\'onDurationChanged\':f|m|(d),\'onConfirm\':f|m|(d),\'onCancel\':f|m|()"
     typeReferences = {}
 .end annotation

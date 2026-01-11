@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LxM2;
+    proxyClass = LSO2;
     schema = "\'fetchSelectableBitmojiReactions\':f|m|(): p<a<r:\'[0]\'>>,\'fetchBitmojiReactionMetadata\':f|m|(a<d@>): p<a<r:\'[0]\'>>,\'fetchSelectableEmojiReactions\':f|m|(): p<a<r:\'[1]\'>>"
     typeReferences = {
         Lcom/snap/chat_reactions/BitmojiChatReactionMetadata;,

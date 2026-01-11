@@ -20,7 +20,7 @@
     invoke-direct {p0, p1, p2}, Lcom/snap/ui/view/SnapFontTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    invoke-virtual {p0, p1, p2}, Lcom/snap/ui/view/ShadowTextView;->z(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/ui/view/ShadowTextView;->y(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
 .end method
@@ -32,14 +32,14 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/snap/ui/view/SnapFontTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 5
-    invoke-virtual {p0, p1, p2}, Lcom/snap/ui/view/ShadowTextView;->z(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/ui/view/ShadowTextView;->y(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final z(Landroid/content/Context;Landroid/util/AttributeSet;)V
+.method public final y(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 5
 
     .line 1
@@ -59,7 +59,7 @@
 
     .line 8
     :cond_0
-    sget-object v0, LCve;->m:[I
+    sget-object v0, LlNe;->m:[I
 
     .line 9
     .line 10

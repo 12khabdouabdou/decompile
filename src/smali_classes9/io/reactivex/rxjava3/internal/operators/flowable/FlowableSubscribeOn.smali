@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 4
 
     .line 1
@@ -78,17 +78,17 @@
 
     .line 12
     .line 13
-    invoke-direct {v1, p1, v0, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSubscribeOn$SubscribeOnSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/core/Scheduler$Worker;LZne;Z)V
+    invoke-direct {v1, p1, v0, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSubscribeOn$SubscribeOnSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/core/Scheduler$Worker;LSFe;Z)V
 
     .line 14
     .line 15
     .line 16
-    invoke-interface {p1, v1}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v1}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 17
     .line 18
     .line 19
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->d(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->b(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 20
     .line 21

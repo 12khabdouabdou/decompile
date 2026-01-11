@@ -1,5 +1,5 @@
 .class public final LQb9;
-.super LRb9;
+.super LTb9;
 .source "SourceFile"
 
 
@@ -26,4 +26,17 @@
     .line 7
     .line 8
     return-void
+.end method
+
+
+# virtual methods
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "LastItemDisplayed"
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

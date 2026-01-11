@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talkcore/SessionParameters;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'conversationId\':s,\'isGroup\':b,\'remoteUserIds\':a<s>,\'sourceType\':d@?,\'sourceTypeString\':s?,\'carrierName\':s?,\'outgoingCallIntent\':r?:\'[0]\',\'incomingCallIntent\':r?:\'[1]\',\'joinCallIntent\':r?:\'[2]\',\'withCallKit\':b@?"
     typeReferences = {

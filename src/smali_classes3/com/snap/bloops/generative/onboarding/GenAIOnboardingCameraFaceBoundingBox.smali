@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LW88;
+    proxyClass = Lof8;
     schema = "\'minWidthRatio\':d,\'minXRatio\':d@?,\'maxXRatio\':d@?,\'minYRatio\':d@?,\'maxYRatio\':d@?"
     typeReferences = {}
 .end annotation

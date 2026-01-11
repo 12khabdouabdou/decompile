@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/chat_media/ChatMediaDimensions;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'width\':d,\'height\':d,\'borderRadius\':d@?"
     typeReferences = {}

@@ -7,28 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LbUg;
-    schema = "\'openSnapchatPlus\':f|m|(),\'isEligible\':f|m|(): g<c>:\'[0]\'<b@>"
-    typeReferences = {
-        Lcom/snap/composer/bridge_observables/BridgeObservable;
-    }
+    proxyClass = LUfh;
+    schema = "\'openSnapchatPlus\':f|m|()"
+    typeReferences = {}
 .end annotation
 
 
 # virtual methods
-.method public abstract isEligible()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end method
-
 .method public abstract openSnapchatPlus()V
 .end method
 

@@ -112,7 +112,13 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final clear()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -120,7 +126,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->c()Z
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
 
     .line 4
     .line 5
@@ -129,12 +135,6 @@
 
     .line 7
     return v0
-.end method
-
-.method public final clear()V
-    .locals 0
-
-    return-void
 .end method
 
 .method public final dispose()V
@@ -367,7 +367,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 24
     .line 25
@@ -422,7 +422,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 4
     .line 5
@@ -459,7 +459,7 @@
     return-object v0
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1

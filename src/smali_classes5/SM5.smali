@@ -1,387 +1,480 @@
 .class public final LSM5;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic X:Ljava/lang/Object;
+.field public final a:LZb9;
 
-.field public final synthetic Y:Lkotlin/jvm/functions/Function1;
+.field public b:Z
 
-.field public final synthetic a:I
-
-.field public final synthetic b:Lio/reactivex/rxjava3/core/SingleEmitter;
-
-.field public final synthetic c:Lkotlin/jvm/functions/Function0;
-
-.field public final synthetic t:LVM5;
+.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;Lkotlin/jvm/functions/Function0;LVM5;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;I)V
-    .locals 0
+.method public constructor <init>(LZb9;)V
+    .locals 2
 
     .line 1
-    iput p6, p0, LSM5;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LSM5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LSM5;->a:LZb9;
 
-    iput-object p2, p0, LSM5;->c:Lkotlin/jvm/functions/Function0;
+    .line 5
+    .line 6
+    check-cast p1, Lcom/snap/lenses/mediapicker/DefaultImagePickerView;
 
-    iput-object p3, p0, LSM5;->t:LVM5;
+    .line 7
+    .line 8
+    iget-object p1, p1, Lcom/snap/lenses/mediapicker/DefaultImagePickerView;->t:LREi;
 
-    iput-object p4, p0, LSM5;->X:Ljava/lang/Object;
+    .line 9
+    .line 10
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
 
-    iput-object p5, p0, LSM5;->Y:Lkotlin/jvm/functions/Function1;
+    .line 11
+    .line 12
+    .line 13
+    move-result-object p1
 
-    const/4 p1, 0x1
+    .line 14
+    check-cast p1, Lio/reactivex/rxjava3/core/Observable;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 15
+    .line 16
+    new-instance v0, LME5;
 
+    .line 17
+    .line 18
+    const/4 v1, 0x7
+
+    .line 19
+    invoke-direct {v0, v1, p0}, LME5;-><init>(ILjava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 23
+    .line 24
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object v1, p0, LSM5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 28
+    .line 29
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final accept(Ljava/lang/Object;)V
+    .locals 17
 
     .line 1
-    iget v0, p0, LSM5;->a:I
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    move-object/from16 v1, p1
 
     .line 4
     .line 5
+    check-cast v1, LDCb;
+
     .line 6
-    check-cast p1, Lcom/looksery/sdk/LSCoreManagerWrapper;
-
     .line 7
-    .line 8
-    iget-object p1, p0, LSM5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    instance-of v2, v1, LBCb;
 
+    .line 8
     .line 9
+    const/4 v3, 0x0
+
     .line 10
-    iget-object v0, p0, LSM5;->c:Lkotlin/jvm/functions/Function0;
+    const/4 v4, 0x1
 
     .line 11
-    .line 12
-    sget-object v1, Li7j;->a:Li7j;
+    if-eqz v2, :cond_0
 
+    .line 12
     .line 13
+    move-object v5, v1
+
     .line 14
-    iget-object v2, p0, LSM5;->t:LVM5;
+    check-cast v5, LBCb;
 
     .line 15
     .line 16
-    iget-object v3, p0, LSM5;->X:Ljava/lang/Object;
+    iget-boolean v5, v5, LBCb;->f:Z
 
     .line 17
     .line 18
-    iget-object v4, p0, LSM5;->Y:Lkotlin/jvm/functions/Function1;
+    goto :goto_1
 
     .line 19
+    :cond_0
+    instance-of v5, v1, LACb;
+
     .line 20
-    sget-object v5, LXRg;->a:LWRg;
-
     .line 21
-    .line 22
-    const-string v6, "<*>"
+    if-eqz v5, :cond_1
 
+    .line 22
     .line 23
+    const/4 v5, 0x1
+
     .line 24
-    invoke-virtual {v5, v6}, LWRg;->e(Ljava/lang/String;)I
+    goto :goto_0
 
     .line 25
+    :cond_1
+    instance-of v5, v1, LzCb;
+
     .line 26
     .line 27
-    move-result v6
+    :goto_0
+    if-eqz v5, :cond_b
 
     .line 28
-    :try_start_0
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
     .line 29
-    .line 30
-    .line 31
-    move-result v7
+    const/4 v5, 0x0
 
+    .line 30
+    :goto_1
+    iput-boolean v5, v0, LSM5;->b:Z
+
+    .line 31
     .line 32
-    if-nez v7, :cond_1
+    if-eqz v2, :cond_8
 
     .line 33
     .line 34
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+    check-cast v1, LBCb;
 
     .line 35
     .line 36
-    .line 37
-    :try_start_1
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
+    iget-object v2, v1, LBCb;->a:Ljava/util/ArrayList;
 
+    .line 37
     .line 38
+    new-instance v5, Ljava/util/ArrayList;
+
     .line 39
     .line 40
-    move-result v0
+    const/16 v6, 0xa
 
     .line 41
-    if-nez v0, :cond_0
-
     .line 42
-    .line 43
-    invoke-virtual {v2, v3}, LVM5;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2, v6}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
+    .line 43
     .line 44
     .line 45
+    move-result v6
+
     .line 46
-    move-result-object v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-direct {v5, v6}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 47
-    goto :goto_0
-
     .line 48
-    :catchall_0
-    move-exception p1
-
     .line 49
-    goto :goto_1
+    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 50
-    :cond_0
-    move-object v0, v1
-
     .line 51
-    :goto_0
-    :try_start_2
-    invoke-interface {v4, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 52
-    .line 53
-    .line 54
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    move-result-object v2
 
+    .line 53
+    :goto_2
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 54
     .line 55
     .line 56
+    move-result v6
+
     .line 57
-    goto :goto_2
+    if-eqz v6, :cond_7
 
     .line 58
-    :catchall_1
-    move-exception p1
-
     .line 59
-    goto :goto_3
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 60
-    :goto_1
-    invoke-interface {v4, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 61
     .line 62
+    move-result-object v6
+
     .line 63
-    throw p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    check-cast v6, LyCb;
 
     .line 64
-    :cond_1
-    :goto_2
-    invoke-virtual {v5, v6}, LWRg;->h(I)V
-
     .line 65
+    iget-boolean v10, v6, LyCb;->e:Z
+
     .line 66
     .line 67
-    return-object v1
+    if-eqz v10, :cond_2
 
     .line 68
-    :goto_3
-    sget-object v0, LXRg;->b:Lzhi;
-
     .line 69
+    iget-boolean v7, v6, LyCb;->f:Z
+
     .line 70
-    if-eqz v0, :cond_2
-
     .line 71
-    .line 72
-    invoke-virtual {v0, v6}, Lzhi;->o(I)V
+    if-eqz v7, :cond_2
 
+    .line 72
     .line 73
+    iget-boolean v7, v1, LBCb;->g:Z
+
     .line 74
     .line 75
-    :cond_2
-    throw p1
+    if-eqz v7, :cond_2
 
     .line 76
-    :pswitch_0
-    check-cast p1, Lcom/looksery/sdk/LSCoreManagerWrapper;
-
     .line 77
-    .line 78
-    iget-object p1, p0, LSM5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    const/16 v16, 0x1
 
+    .line 78
     .line 79
+    goto :goto_3
+
     .line 80
-    iget-object v0, p0, LSM5;->c:Lkotlin/jvm/functions/Function0;
+    :cond_2
+    const/16 v16, 0x0
 
     .line 81
     .line 82
-    sget-object v1, Li7j;->a:Li7j;
+    :goto_3
+    if-nez v10, :cond_4
 
     .line 83
     .line 84
-    iget-object v2, p0, LSM5;->t:LVM5;
+    iget-boolean v7, v1, LBCb;->c:Z
 
     .line 85
     .line 86
-    iget-object v3, p0, LSM5;->X:Ljava/lang/Object;
+    if-eqz v7, :cond_3
 
     .line 87
     .line 88
-    iget-object v4, p0, LSM5;->Y:Lkotlin/jvm/functions/Function1;
+    goto :goto_4
 
     .line 89
+    :cond_3
+    const/4 v13, 0x0
+
     .line 90
-    sget-object v5, LXRg;->a:LWRg;
+    goto :goto_5
 
     .line 91
+    :cond_4
+    :goto_4
+    const/4 v13, 0x1
+
     .line 92
-    const-string v6, "<*>"
+    :goto_5
+    if-eqz v10, :cond_5
 
     .line 93
     .line 94
-    invoke-virtual {v5, v6}, LWRg;->e(Ljava/lang/String;)I
+    iget-boolean v7, v1, LBCb;->d:Z
 
     .line 95
     .line 96
-    .line 97
-    move-result v6
+    if-eqz v7, :cond_5
 
+    .line 97
     .line 98
-    :try_start_3
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
+    const/4 v14, 0x1
 
     .line 99
-    .line 100
-    .line 101
-    move-result v7
-
-    .line 102
-    if-nez v7, :cond_4
-
-    .line 103
-    .line 104
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    .line 105
-    .line 106
-    .line 107
-    :try_start_4
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 108
-    .line 109
-    .line 110
-    move-result v0
-
-    .line 111
-    if-nez v0, :cond_3
-
-    .line 112
-    .line 113
-    invoke-virtual {v2, v3}, LVM5;->e(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 114
-    .line 115
-    .line 116
-    move-result-object v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
-
-    .line 117
-    goto :goto_4
-
-    .line 118
-    :cond_3
-    move-object v0, v1
-
-    .line 119
-    :goto_4
-    :try_start_5
-    invoke-interface {v4, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 120
-    .line 121
-    .line 122
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
-
-    .line 123
-    .line 124
-    .line 125
-    goto :goto_5
-
-    .line 126
-    :catchall_2
-    move-exception p1
-
-    .line 127
     goto :goto_6
 
-    .line 128
-    :catchall_3
-    move-exception p1
+    .line 100
+    :cond_5
+    const/4 v14, 0x0
 
+    .line 101
+    :goto_6
+    if-eqz v10, :cond_6
+
+    .line 102
+    .line 103
+    iget-boolean v7, v1, LBCb;->e:Z
+
+    .line 104
+    .line 105
+    if-eqz v7, :cond_6
+
+    .line 106
+    .line 107
+    const/4 v15, 0x1
+
+    .line 108
+    goto :goto_7
+
+    .line 109
+    :cond_6
+    const/4 v15, 0x0
+
+    .line 110
+    :goto_7
+    new-instance v7, LNb9;
+
+    .line 111
+    .line 112
+    iget-object v8, v6, LyCb;->a:LY79;
+
+    .line 113
+    .line 114
+    iget-object v9, v6, LyCb;->b:LIIj;
+
+    .line 115
+    .line 116
+    iget-object v11, v6, LyCb;->c:LSPk;
+
+    .line 117
+    .line 118
+    iget-object v12, v6, LyCb;->d:Ljava/lang/String;
+
+    .line 119
+    .line 120
+    invoke-direct/range {v7 .. v16}, LNb9;-><init>(LY79;LIIj;ZLSPk;Ljava/lang/String;ZZZZ)V
+
+    .line 121
+    .line 122
+    .line 123
+    invoke-virtual {v5, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 124
+    .line 125
+    .line 126
+    goto :goto_2
+
+    .line 127
+    :cond_7
+    new-instance v2, LWb9;
+
+    .line 128
     .line 129
-    invoke-interface {v4, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object v3, LTM5;->a:LY79;
 
     .line 130
     .line 131
-    .line 132
-    throw p1
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
+    iget-boolean v4, v1, LBCb;->b:Z
 
+    .line 132
     .line 133
-    :cond_4
-    :goto_5
-    invoke-virtual {v5, v6}, LWRg;->h(I)V
+    iget-boolean v1, v1, LBCb;->h:Z
 
     .line 134
     .line 135
+    invoke-direct {v2, v3, v5, v4, v1}, LWb9;-><init>(LY79;Ljava/util/ArrayList;ZZ)V
+
     .line 136
-    return-object v1
-
     .line 137
-    :goto_6
-    sget-object v0, LXRg;->b:Lzhi;
-
     .line 138
+    goto :goto_8
+
     .line 139
-    if-eqz v0, :cond_5
+    :cond_8
+    instance-of v2, v1, LACb;
 
     .line 140
     .line 141
-    invoke-virtual {v0, v6}, Lzhi;->o(I)V
+    if-eqz v2, :cond_9
 
     .line 142
     .line 143
-    .line 144
-    :cond_5
-    throw p1
+    new-instance v2, LVb9;
 
+    .line 144
     .line 145
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    sget-object v1, LTM5;->a:LY79;
+
+    .line 146
+    .line 147
+    invoke-direct {v2, v1}, LVb9;-><init>(LY79;)V
+
+    .line 148
+    .line 149
+    .line 150
+    goto :goto_8
+
+    .line 151
+    :cond_9
+    sget-object v2, LzCb;->a:LzCb;
+
+    .line 152
+    .line 153
+    invoke-virtual {v1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 154
+    .line 155
+    .line 156
+    move-result v1
+
+    .line 157
+    if-eqz v1, :cond_a
+
+    .line 158
+    .line 159
+    sget-object v2, LUb9;->a:LUb9;
+
+    .line 160
+    .line 161
+    :goto_8
+    iget-object v1, v0, LSM5;->a:LZb9;
+
+    .line 162
+    .line 163
+    check-cast v1, Lcom/snap/lenses/mediapicker/DefaultImagePickerView;
+
+    .line 164
+    .line 165
+    invoke-virtual {v1, v2}, Lcom/snap/lenses/mediapicker/DefaultImagePickerView;->accept(Ljava/lang/Object;)V
+
+    .line 166
+    .line 167
+    .line 168
+    return-void
+
+    .line 169
+    :cond_a
+    new-instance v1, LwOc;
+
+    .line 170
+    .line 171
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 172
+    .line 173
+    .line 174
+    throw v1
+
+    .line 175
+    :cond_b
+    new-instance v1, LwOc;
+
+    .line 176
+    .line 177
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 178
+    .line 179
+    .line 180
+    throw v1
 .end method

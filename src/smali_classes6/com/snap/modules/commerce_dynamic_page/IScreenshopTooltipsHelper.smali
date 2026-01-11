@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LvY8;
+    proxyClass = Le69;
     schema = "\'dotTooltipDisplayed\':f|m|(),\'shouldDisplayDotTooltip\':f|m|(): b,\'swipingTooltipDisplayed\':f|m|(),\'shouldDisplaySwipingTooltip\':f|m|(): b"
     typeReferences = {}
 .end annotation

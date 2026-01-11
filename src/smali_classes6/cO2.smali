@@ -2,25 +2,16 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lpkg;
-
 
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Landroid/net/Uri;
-
-.field public final c:Ljava/lang/String;
-
-.field public final d:Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-.field public final e:Z
+.field public final b:Lkmh;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;LPP0;LdO2;)V
-    .locals 4
+.method public constructor <init>(Ljava/lang/String;Lkmh;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -32,295 +23,190 @@
 
     .line 5
     .line 6
-    iget-object v0, p2, LPP0;->e:Ljava/lang/String;
+    iput-object p2, p0, LcO2;->b:Lkmh;
 
     .line 7
     .line 8
-    new-instance v1, Landroid/net/Uri$Builder;
-
-    .line 9
-    .line 10
-    invoke-direct {v1}, Landroid/net/Uri$Builder;-><init>()V
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v2, "snapchat"
-
-    .line 14
-    .line 15
-    invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v1
-
-    .line 19
-    const-string v2, "notification"
-
-    .line 20
-    .line 21
-    invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->authority(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v1
-
-    .line 25
-    const-string v2, "chat_on_friendsfeed/"
-
-    .line 26
-    .line 27
-    invoke-virtual {v1, v2}, Landroid/net/Uri$Builder;->path(Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v1
-
-    .line 31
-    const-string v2, "conversation-id"
-
-    .line 32
-    .line 33
-    invoke-virtual {v1, v2, v0}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
-    const/4 v1, 0x1
-
-    .line 38
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v2
-
-    .line 42
-    const-string v3, "is-group"
-
-    .line 43
-    .line 44
-    invoke-virtual {v0, v3, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v0
-
-    .line 48
-    const-string v2, "is-shortcut"
-
-    .line 49
-    .line 50
-    const-string v3, "true"
-
-    .line 51
-    .line 52
-    invoke-virtual {v0, v2, v3}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
-
-    .line 57
-    .line 58
-    .line 59
-    move-result-object v0
-
-    .line 60
-    iput-object v0, p0, LcO2;->b:Landroid/net/Uri;
-
-    .line 61
-    .line 62
-    const-string v0, "true|"
-
-    .line 63
-    .line 64
-    const-string v2, "|"
-
-    .line 65
-    .line 66
-    invoke-static {v0, p1, v2}, Ln9f;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-object p1
-
-    .line 70
-    iget-object p2, p2, LPP0;->e:Ljava/lang/String;
-
-    .line 71
-    .line 72
-    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 73
-    .line 74
-    .line 75
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object p1
-
-    .line 79
-    iput-object p1, p0, LcO2;->c:Ljava/lang/String;
-
-    .line 80
-    .line 81
-    sget-object p1, Lqc7;->Z:Lqc7;
-
-    .line 82
-    .line 83
-    iget-object p3, p3, LdO2;->d:LyC0;
-
-    .line 84
-    .line 85
-    invoke-virtual {p3, p2, p1}, LyC0;->b(Ljava/lang/String;Lqc7;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object p1
-
-    .line 89
-    iput-object p1, p0, LcO2;->d:Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 90
-    .line 91
-    iput-boolean v1, p0, LcO2;->e:Z
-
-    .line 92
-    .line 93
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 2
-    return v0
-.end method
+    if-ne p0, p1, :cond_0
 
-.method public final b()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final c()Ljava/lang/Integer;
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return-object v0
-.end method
-
-.method public final d()Lio/reactivex/rxjava3/core/Single;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LcO2;->d:Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 2
     .line 3
-    return-object v0
-.end method
+    .line 4
+    return v0
 
-.method public final e()Ljava/lang/String;
-    .locals 1
+    .line 5
+    :cond_0
+    instance-of v1, p1, LcO2;
 
-    .line 1
-    iget-object v0, p0, LcO2;->c:Ljava/lang/String;
+    .line 6
+    .line 7
+    const/4 v2, 0x0
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    .line 8
+    if-nez v1, :cond_1
 
-.method public final f()LP69;
-    .locals 1
+    .line 9
+    .line 10
+    return v2
 
-    .line 1
-    const/4 v0, 0x0
+    .line 11
+    :cond_1
+    check-cast p1, LcO2;
 
-    .line 2
-    return-object v0
-.end method
+    .line 12
+    .line 13
+    iget-object v1, p1, LcO2;->a:Ljava/lang/String;
 
-.method public final g()Z
-    .locals 1
+    .line 14
+    .line 15
+    iget-object v3, p0, LcO2;->a:Ljava/lang/String;
 
-    .line 1
-    const/4 v0, 0x0
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 2
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, LcO2;->b:Lkmh;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, LcO2;->b:Lkmh;
+
+    .line 27
+    .line 28
+    if-eq v1, p1, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
     return v0
 .end method
 
-.method public final getDisplayName()Ljava/lang/String;
-    .locals 1
+.method public final hashCode()I
+    .locals 2
 
     .line 1
     iget-object v0, p0, LcO2;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    return-object v0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LcO2;->b:Lkmh;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
 .end method
 
-.method public final h()Z
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final i()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LcO2;->b:Landroid/net/Uri;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
+    const-string v1, "ChatPageLaunchGetContextByUserIdEvent(userId="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LcO2;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", navigateToChatSource="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LcO2;->b:Lkmh;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
     return-object v0
-.end method
-
-.method public final j()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, LcO2;->e:Z
-
-    .line 2
-    .line 3
-    return v0
 .end method

@@ -1,0 +1,63 @@
+.class public final LhV6;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LG23;
+
+
+# static fields
+.field public static final a:LhV6;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LhV6;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LhV6;->a:LhV6;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(LQi7;Lc93$a;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    iget p1, p1, LQi7;->h0:I
+
+    .line 2
+    .line 3
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public final b()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    return v0
+.end method

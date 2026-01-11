@@ -1,20 +1,14 @@
 .class public final LU37;
-.super Ljava/lang/Object;
+.super LW37;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lr1f;
-
-.field public final b:Landroid/graphics/SurfaceTexture;
-
-.field public final c:I
-
-.field public final d:Ljava/lang/String;
+.field public final a:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Lr1f;Landroid/graphics/SurfaceTexture;ILjava/lang/String;)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
     .line 1
@@ -23,29 +17,17 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LU37;->a:Lr1f;
+    iput-object p1, p0, LU37;->a:Ljava/util/List;
 
     .line 5
     .line 6
-    iput-object p2, p0, LU37;->b:Landroid/graphics/SurfaceTexture;
-
-    .line 7
-    .line 8
-    iput p3, p0, LU37;->c:I
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LU37;->d:Ljava/lang/String;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 3
 
     .line 1
     const/4 v0, 0x1
@@ -78,23 +60,23 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, LU37;->a:Lr1f;
+    iget-object v1, p0, LU37;->a:Ljava/util/List;
 
     .line 14
     .line 15
-    iget-object v3, p0, LU37;->a:Lr1f;
+    iget-object p1, p1, LU37;->a:Ljava/util/List;
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
     .line 20
-    move-result v1
+    move-result p1
 
     .line 21
-    if-nez v1, :cond_2
+    if-nez p1, :cond_2
 
     .line 22
     .line 23
@@ -102,82 +84,18 @@
 
     .line 24
     :cond_2
-    iget-object v1, p0, LU37;->b:Landroid/graphics/SurfaceTexture;
-
-    .line 25
-    .line 26
-    iget-object v3, p1, LU37;->b:Landroid/graphics/SurfaceTexture;
-
-    .line 27
-    .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    if-nez v1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    iget v1, p0, LU37;->c:I
-
-    .line 36
-    .line 37
-    iget v3, p1, LU37;->c:I
-
-    .line 38
-    .line 39
-    if-eq v1, v3, :cond_4
-
-    .line 40
-    .line 41
-    return v2
-
-    .line 42
-    :cond_4
-    iget-object v1, p0, LU37;->d:Ljava/lang/String;
-
-    .line 43
-    .line 44
-    iget-object p1, p1, LU37;->d:Ljava/lang/String;
-
-    .line 45
-    .line 46
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 47
-    .line 48
-    .line 49
-    move-result p1
-
-    .line 50
-    if-nez p1, :cond_5
-
-    .line 51
-    .line 52
-    return v2
-
-    .line 53
-    :cond_5
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LU37;->a:Lr1f;
+    iget-object v0, p0, LU37;->a:Ljava/util/List;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lr1f;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
@@ -185,55 +103,6 @@
     move-result v0
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LU37;->b:Landroid/graphics/SurfaceTexture;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 17
-    .line 18
-    iget v0, p0, LU37;->c:I
-
-    .line 19
-    .line 20
-    add-int/2addr v1, v0
-
-    .line 21
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 22
-    .line 23
-    iget-object v0, p0, LU37;->d:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v0
-
-    .line 29
-    add-int/2addr v0, v1
-
-    .line 30
     return v0
 .end method
 
@@ -245,7 +114,7 @@
 
     .line 2
     .line 3
-    const-string v1, "ExternalTextureInfo(resolution="
+    const-string v1, "Activated(contentPreviews="
 
     .line 4
     .line 5
@@ -254,75 +123,21 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LU37;->a:Lr1f;
+    iget-object v1, p0, LU37;->a:Ljava/util/List;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ")"
 
     .line 11
     .line 12
-    .line 13
-    const-string v1, ", surfaceTexture="
+    invoke-static {v0, v1, v2}, LMzf;->g(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LU37;->b:Landroid/graphics/SurfaceTexture;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", textureId="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget v1, p0, LU37;->c:I
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", resourceId="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LU37;->d:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    const-string v2, ")"
-
-    .line 41
-    .line 42
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
     move-result-object v0
 
-    .line 46
+    .line 16
     return-object v0
 .end method

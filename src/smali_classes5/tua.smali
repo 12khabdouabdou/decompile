@@ -1,3 +1,3 @@
 .class public abstract Ltua;
-.super Ljava/lang/Object;
+.super Lxua;
 .source "SourceFile"

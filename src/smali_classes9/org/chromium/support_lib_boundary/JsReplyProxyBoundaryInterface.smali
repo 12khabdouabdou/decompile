@@ -9,3 +9,6 @@
 # virtual methods
 .method public abstract postMessage(Ljava/lang/String;)V
 .end method
+
+.method public abstract postMessageWithPayload(Ljava/lang/reflect/InvocationHandler;)V
+.end method

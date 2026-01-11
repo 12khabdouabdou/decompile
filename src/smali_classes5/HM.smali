@@ -1,5 +1,5 @@
 .class public final LHM;
-.super LMM;
+.super LJM;
 .source "SourceFile"
 
 

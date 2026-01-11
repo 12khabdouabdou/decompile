@@ -1,29 +1,93 @@
-.class public final LDPf;
-.super LEPf;
+.class public abstract synthetic LDPf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:LDPf;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 6
 
     .line 1
-    new-instance v0, LDPf;
+    const/4 v0, 0x5
 
     .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, LzHa;->M(I)[I
 
+    .line 3
     .line 4
     .line 5
+    move-result-object v1
+
     .line 6
-    sput-object v0, LDPf;->a:LDPf;
+    array-length v1, v1
 
     .line 7
+    new-array v1, v1, [I
+
     .line 8
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    const/4 v3, 0x4
+
+    .line 11
+    :try_start_0
+    aput v2, v1, v3
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 12
+    .line 13
+    :catch_0
+    const/4 v4, 0x2
+
+    .line 14
+    const/4 v5, 0x3
+
+    .line 15
+    :try_start_1
+    aput v4, v1, v5
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 16
+    .line 17
+    :catch_1
+    :try_start_2
+    aput v5, v1, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 18
+    .line 19
+    :catch_2
+    const/4 v4, 0x0
+
+    .line 20
+    :try_start_3
+    aput v3, v1, v4
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 21
+    .line 22
+    :catch_3
+    :try_start_4
+    aput v0, v1, v2
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 23
+    .line 24
+    :catch_4
+    sput-object v1, LDPf;->a:[I
+
+    .line 25
+    .line 26
     return-void
 .end method

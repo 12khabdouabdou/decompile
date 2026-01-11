@@ -1,38 +1,62 @@
-.class public abstract LJb1;
-.super Ljava/lang/Object;
+.class public final LJb1;
+.super LHNj;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:I
+.field public static final r:LJb1;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 13
 
     .line 1
-    sget-object v0, Lrb1;->Z:Lrb1;
+    new-instance v0, LJb1;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object v2, Lv71;->Z:Lv71;
 
     .line 4
     .line 5
+    sget-wide v7, LL51;->a:J
+
     .line 6
-    const-string v0, "BlizzardFramedEventFileAppender"
-
     .line 7
-    .line 8
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    sget-wide v9, LL51;->b:J
 
+    .line 8
     .line 9
+    const-wide/16 v5, 0x0
+
     .line 10
     .line 11
-    sget-object v0, Lrn0;->a:Lrn0;
+    const/16 v12, 0x75c
 
     .line 12
     .line 13
+    const-string v1, "bitmoji-ua-reaction"
+
+    .line 14
+    .line 15
+    const/4 v3, 0x0
+
+    .line 16
+    const/4 v4, 0x0
+
+    .line 17
+    const/4 v11, 0x0
+
+    .line 18
+    invoke-direct/range {v0 .. v12}, LHNj;-><init>(Ljava/lang/String;Lrp0;Ljava/lang/String;ZJJJLwub;I)V
+
+    .line 19
+    .line 20
+    .line 21
+    sput-object v0, LJb1;->r:LJb1;
+
+    .line 22
+    .line 23
     return-void
 .end method

@@ -1,343 +1,167 @@
 .class public final Lose;
-.super LrE9;
+.super La9d;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LT75;
 
-.field public final synthetic b:Lpse;
+.field public final b:LT75;
+
+.field public final c:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lpse;I)V
+.method public constructor <init>(LvQi;Lv6j;LT75;LT75;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lose;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lose;->b:Lpse;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p3, p0, Lose;->a:LT75;
 
-    const/4 p1, 0x1
+    .line 5
+    .line 6
+    iput-object p4, p0, Lose;->b:LT75;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 7
+    .line 8
+    iput p5, p0, Lose;->c:I
 
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final b(Lkdd;LJcd;Ljava/util/List;)LZ8d;
+    .locals 12
 
     .line 1
-    iget v0, p0, Lose;->a:I
+    check-cast p2, LAse;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, p0, Lose;->a:LT75;
 
     .line 4
     .line 5
-    .line 6
-    check-cast p1, Ljava/lang/String;
+    invoke-virtual {v0}, LT75;->get()Ljava/lang/Object;
 
+    .line 6
     .line 7
     .line 8
-    iget-object v0, p0, Lose;->b:Lpse;
+    move-result-object v0
 
     .line 9
+    check-cast v0, LCbd;
+
     .line 10
-    iget-object v1, v0, Lpse;->n:Landroid/widget/EditText;
-
     .line 11
-    .line 12
-    const/4 v2, 0x0
+    const-string v1, "ProfileSavedMediaOperaDirectionResolverFactory"
 
+    .line 12
     .line 13
-    const-string v3, "questionEditText"
+    invoke-static {v0, v1}, LTFb;->a(LCbd;Ljava/lang/String;)LIp5;
 
     .line 14
     .line 15
-    if-eqz v1, :cond_2
-
     .line 16
+    move-result-object v0
+
     .line 17
-    invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    iget-object v1, p0, Lose;->b:LT75;
 
     .line 18
     .line 19
-    .line 20
-    iget-object p1, v0, Lpse;->n:Landroid/widget/EditText;
+    invoke-virtual {v1}, LT75;->get()Ljava/lang/Object;
 
+    .line 20
     .line 21
     .line 22
-    if-eqz p1, :cond_1
+    move-result-object v1
 
     .line 23
-    .line 24
-    invoke-virtual {p1}, Landroid/view/View;->clearFocus()V
+    check-cast v1, Lzse;
 
+    .line 24
     .line 25
+    new-instance v2, Lyse;
+
     .line 26
     .line 27
-    iget-object p1, v0, Lpse;->n:Landroid/widget/EditText;
+    iget-object v9, v1, Lzse;->g:LT75;
 
     .line 28
     .line 29
-    if-eqz p1, :cond_0
+    iget-object v10, v1, Lzse;->h:LT75;
 
     .line 30
     .line 31
-    invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
+    iget-object v3, v1, Lzse;->a:LT75;
 
     .line 32
     .line 33
+    iget-object v4, v1, Lzse;->b:LT75;
+
     .line 34
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 35
-    .line 36
-    return-object p1
+    iget-object v7, v1, Lzse;->e:La24;
 
+    .line 36
     .line 37
-    :cond_0
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    iget-object v8, v1, Lzse;->f:Lw34;
 
     .line 38
     .line 39
-    .line 40
-    throw v2
+    iget-object v5, v1, Lzse;->c:LEeh;
 
+    .line 40
     .line 41
-    :cond_1
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    iget-object v6, v1, Lzse;->d:LyPf;
 
     .line 42
     .line 43
-    .line 44
-    throw v2
+    iget v11, p0, Lose;->c:I
 
+    .line 44
     .line 45
-    :cond_2
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-direct/range {v2 .. v11}, Lyse;-><init>(LT75;LT75;LEeh;LyPf;La24;Lw34;LT75;LT75;I)V
 
     .line 46
     .line 47
     .line 48
-    throw v2
+    invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 49
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
     .line 50
     .line 51
-    iget-object p1, p0, Lose;->b:Lpse;
+    move-result-object v1
 
     .line 52
+    new-instance v2, Lhje;
+
     .line 53
-    iget-object p1, p1, Lpse;->m:Lrn0;
-
     .line 54
-    .line 55
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-direct {v2, p1, p2, v0, v1}, Lhje;-><init>(Lkdd;LJcd;LGf0;Ljava/util/List;)V
 
+    .line 55
     .line 56
     .line 57
-    return-object p1
+    const/4 v0, 0x0
 
     .line 58
-    :pswitch_1
-    check-cast p1, Ljava/lang/Number;
+    invoke-static {p2, p3, v2, v0, p1}, Lv6j;->c(LJcd;Ljava/util/List;LHbd;ILkdd;)LAv6;
 
     .line 59
     .line 60
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
-
     .line 61
+    move-result-object p1
+
     .line 62
-    .line 63
-    move-result p1
-
-    .line 64
-    iget-object v0, p0, Lose;->b:Lpse;
-
-    .line 65
-    .line 66
-    iget-object v0, v0, Lpse;->p:Landroid/widget/TextView;
-
-    .line 67
-    .line 68
-    if-eqz v0, :cond_3
-
-    .line 69
-    .line 70
-    int-to-float p1, p1
-
-    .line 71
-    neg-float p1, p1
-
-    .line 72
-    invoke-virtual {v0, p1}, Landroid/view/View;->setTranslationY(F)V
-
-    .line 73
-    .line 74
-    .line 75
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 76
-    .line 77
     return-object p1
-
-    .line 78
-    :cond_3
-    const-string p1, "disclaimerTextView"
-
-    .line 79
-    .line 80
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 81
-    .line 82
-    .line 83
-    const/4 p1, 0x0
-
-    .line 84
-    throw p1
-
-    .line 85
-    :pswitch_2
-    check-cast p1, Landroid/graphics/Typeface;
-
-    .line 86
-    .line 87
-    iget-object v0, p0, Lose;->b:Lpse;
-
-    .line 88
-    .line 89
-    iget-object v1, v0, Lpse;->n:Landroid/widget/EditText;
-
-    .line 90
-    .line 91
-    const/4 v2, 0x0
-
-    .line 92
-    if-eqz v1, :cond_6
-
-    .line 93
-    .line 94
-    invoke-virtual {v1, p1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
-
-    .line 95
-    .line 96
-    .line 97
-    iget-object v1, v0, Lpse;->p:Landroid/widget/TextView;
-
-    .line 98
-    .line 99
-    if-eqz v1, :cond_5
-
-    .line 100
-    .line 101
-    invoke-virtual {v1, p1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
-
-    .line 102
-    .line 103
-    .line 104
-    iget-object v0, v0, Lpse;->o:Landroid/widget/TextView;
-
-    .line 105
-    .line 106
-    if-eqz v0, :cond_4
-
-    .line 107
-    .line 108
-    const/4 v1, 0x1
-
-    .line 109
-    invoke-virtual {v0, p1, v1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
-
-    .line 110
-    .line 111
-    .line 112
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 113
-    .line 114
-    return-object p1
-
-    .line 115
-    :cond_4
-    const-string p1, "newQuestionTextView"
-
-    .line 116
-    .line 117
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 118
-    .line 119
-    .line 120
-    throw v2
-
-    .line 121
-    :cond_5
-    const-string p1, "disclaimerTextView"
-
-    .line 122
-    .line 123
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 124
-    .line 125
-    .line 126
-    throw v2
-
-    .line 127
-    :cond_6
-    const-string p1, "questionEditText"
-
-    .line 128
-    .line 129
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 130
-    .line 131
-    .line 132
-    throw v2
-
-    .line 133
-    :pswitch_3
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 134
-    .line 135
-    iget-object p1, p0, Lose;->b:Lpse;
-
-    .line 136
-    .line 137
-    iget-object p1, p1, Lpse;->m:Lrn0;
-
-    .line 138
-    .line 139
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 140
-    .line 141
-    return-object p1
-
-    .line 142
-    nop
-
-    .line 143
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

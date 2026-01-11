@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LEpi;
+    proxyClass = LuOi;
     schema = "\'onTap\':f|m|()"
     typeReferences = {}
 .end annotation

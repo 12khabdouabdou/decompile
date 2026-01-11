@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(LHr5;)V
+.method public synthetic constructor <init>(Lex5;)V
     .locals 0
 
     .line 1

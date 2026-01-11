@@ -1,5 +1,5 @@
 .class public Lcom/snap/payments/lib/paymentcore/PaymentsTitleBar;
-.super LDN0;
+.super LHQ0;
 .source "SourceFile"
 
 
@@ -8,12 +8,12 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LDN0;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, LHQ0;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
     .line 3
     .line 4
-    const p2, 0x7f0e051b
+    const p2, 0x7f0e053d
 
     .line 5
     .line 6
@@ -37,7 +37,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b103b
+    const v0, 0x7f0b1164
 
     .line 5
     .line 6
@@ -54,11 +54,11 @@
 
     .line 12
     .line 13
-    iput-object v0, p0, LDN0;->b:Lcom/snap/ui/view/ScHeaderView;
+    iput-object v0, p0, LHQ0;->b:Lcom/snap/ui/view/ScHeaderView;
 
     .line 14
     .line 15
-    const v1, 0x7f0b103a
+    const v1, 0x7f0b1163
 
     .line 16
     .line 17
@@ -75,11 +75,11 @@
 
     .line 23
     .line 24
-    iput-object v0, p0, LDN0;->c:Landroid/widget/TextView;
+    iput-object v0, p0, LHQ0;->c:Landroid/widget/TextView;
 
     .line 25
     .line 26
-    const v0, 0x7f0b104b
+    const v0, 0x7f0b1174
 
     .line 27
     .line 28
@@ -96,7 +96,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {p0}, LDN0;->b()V
+    invoke-virtual {p0}, LHQ0;->b()V
 
     .line 36
     .line 37

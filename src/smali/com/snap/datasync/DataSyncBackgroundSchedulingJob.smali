@@ -1,5 +1,5 @@
 .class public final Lcom/snap/datasync/DataSyncBackgroundSchedulingJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
@@ -12,7 +12,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -22,19 +22,19 @@
     .locals 2
 
     .line 3
-    invoke-static {}, LR85;->a()LtB6;
+    invoke-static {}, Lef5;->a()LRE6;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
     .line 4
-    invoke-direct {p0, v0, v1}, Lcom/snap/datasync/DataSyncBackgroundSchedulingJob;-><init>(LtB6;Z)V
+    invoke-direct {p0, v0, v1}, Lcom/snap/datasync/DataSyncBackgroundSchedulingJob;-><init>(LRE6;Z)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;Z)V
+.method public constructor <init>(LRE6;Z)V
     .locals 0
 
     .line 1
@@ -43,7 +43,7 @@
     move-result-object p2
 
     .line 2
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

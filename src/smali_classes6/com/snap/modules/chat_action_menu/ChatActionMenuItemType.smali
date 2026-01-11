@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'Replay\':1,\'SaveInChat\':2,\'SaveToCameraRoll\':3,\'Copy\':4,\'EraseReply\':5,\'Delete\':6,\'DeleteStoryMedia\':7,\'CancelSend\':8,\'EraseQuote\':9,\'ChatReply\':10,\'EditChat\':11,\'Forward\':12,\'SnapReply\':13,\'Favorite\':14,\'SetAsChatWallpaper\':15,\'Remix\':16,\'CreateBitmoji\':17,\'ShareFeedback\':18,\'Report\':19,\'ReportAd\':20,\'SnapModes\':21"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

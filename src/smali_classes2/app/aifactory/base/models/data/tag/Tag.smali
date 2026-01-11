@@ -34,7 +34,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, Lapp/aifactory/base/models/data/tag/Tag;-><init>(Ljava/lang/String;Ljava/lang/Boolean;IIILHr5;)V
+    invoke-direct/range {v0 .. v6}, Lapp/aifactory/base/models/data/tag/Tag;-><init>(Ljava/lang/String;Ljava/lang/Boolean;IIILex5;)V
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/Boolean;IIILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/Boolean;IIILex5;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x1

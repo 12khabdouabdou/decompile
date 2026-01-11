@@ -1,298 +1,264 @@
-.class public final synthetic Lbj5;
-.super LGu;
+.class public final Lbj5;
+.super Lcj5;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic e0:I
+.field public final a:Ljava/util/List;
+
+.field public final b:LLXe;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+.method public constructor <init>(Ljava/util/List;LLXe;)V
     .locals 0
 
     .line 1
-    iput p7, p0, Lbj5;->e0:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-object p7, p4
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lbj5;->a:Ljava/util/List;
 
-    move-object p4, p3
+    .line 5
+    .line 6
+    iput-object p2, p0, Lbj5;->b:LLXe;
 
-    move p3, p6
-
-    move-object p6, p7
-
-    move-object p7, p5
-
-    move-object p5, p2
-
-    move p2, p1
-
-    move-object p1, p0
-
-    invoke-direct/range {p1 .. p7}, LGu;-><init>(IILjava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
-
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lbj5;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lbj5;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, Lbj5;->a:Ljava/util/List;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, Lbj5;->a:Ljava/util/List;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Lbj5;->b:LLXe;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, Lbj5;->b:LLXe;
+
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
     .locals 2
 
     .line 1
-    iget v0, p0, Lbj5;->e0:I
+    iget-object v0, p0, Lbj5;->a:Ljava/util/List;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/util/List;
+    move-result v0
 
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
+    .line 9
+    iget-object v1, p0, Lbj5;->b:LLXe;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, LLXe;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
+.end method
+
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    check-cast p1, LLXe;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lbj5;->b:LLXe;
+
+    .line 4
+    .line 5
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
 
     .line 9
+    if-nez v0, :cond_0
+
     .line 10
-    check-cast v0, LQ2i;
-
     .line 11
-    .line 12
-    const/4 v1, 0x0
+    new-instance v0, Lbj5;
 
+    .line 12
     .line 13
-    invoke-virtual {v0, p1, v1}, LQ2i;->b(Ljava/util/List;Z)LI1i;
+    iget-object v1, p0, Lbj5;->a:Ljava/util/List;
 
     .line 14
     .line 15
+    invoke-direct {v0, v1, p1}, Lbj5;-><init>(Ljava/util/List;LLXe;)V
+
     .line 16
-    move-result-object p1
-
     .line 17
-    return-object p1
-
     .line 18
-    :pswitch_0
-    check-cast p1, LFTi;
+    return-object v0
+
+    .line 19
+    :cond_0
+    return-object p0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "LensLogs(logs="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lbj5;->a:Ljava/util/List;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", parentViewInsets="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lbj5;->b:LLXe;
 
     .line 19
     .line 20
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
-    check-cast v0, LJqh;
-
     .line 23
-    .line 24
-    invoke-interface {v0, p1}, LJqh;->m(LFTi;)Li7j;
+    const-string v1, ")"
 
+    .line 24
     .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 26
     .line 27
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 29
-    return-object p1
-
     .line 30
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
-
     .line 31
+    move-result-object v0
+
     .line 32
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
-
-    .line 33
-    .line 34
-    check-cast v0, Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 35
-    .line 36
-    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->f(Ljava/lang/Throwable;)Z
-
-    .line 37
-    .line 38
-    .line 39
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 40
-    .line 41
-    return-object p1
-
-    .line 42
-    :pswitch_2
-    check-cast p1, LSlb;
-
-    .line 43
-    .line 44
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
-
-    .line 45
-    .line 46
-    check-cast v0, LERd;
-
-    .line 47
-    .line 48
-    const/4 v1, 0x1
-
-    .line 49
-    invoke-virtual {v0, p1, v1}, LERd;->e(LSlb;Z)Lio/reactivex/rxjava3/core/Single;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object p1
-
-    .line 53
-    return-object p1
-
-    .line 54
-    :pswitch_3
-    check-cast p1, Ljava/lang/Runnable;
-
-    .line 55
-    .line 56
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
-
-    .line 57
-    .line 58
-    check-cast v0, Lcom/snap/lenses/explorer/categories/feed/DefaultItemFeedView;
-
-    .line 59
-    .line 60
-    invoke-virtual {v0, p1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 61
-    .line 62
-    .line 63
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 64
-    .line 65
-    return-object p1
-
-    .line 66
-    :pswitch_4
-    check-cast p1, Ljava/lang/Runnable;
-
-    .line 67
-    .line 68
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
-
-    .line 69
-    .line 70
-    check-cast v0, LOo5;
-
-    .line 71
-    .line 72
-    invoke-virtual {v0, p1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 73
-    .line 74
-    .line 75
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 76
-    .line 77
-    return-object p1
-
-    .line 78
-    :pswitch_5
-    check-cast p1, Ljava/lang/Runnable;
-
-    .line 79
-    .line 80
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
-
-    .line 81
-    .line 82
-    check-cast v0, LOo5;
-
-    .line 83
-    .line 84
-    invoke-virtual {v0, p1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 85
-    .line 86
-    .line 87
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 88
-    .line 89
-    return-object p1
-
-    .line 90
-    :pswitch_6
-    check-cast p1, Ljava/lang/Runnable;
-
-    .line 91
-    .line 92
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
-
-    .line 93
-    .line 94
-    check-cast v0, Lcom/snap/lenses/arbar/DefaultArBarView;
-
-    .line 95
-    .line 96
-    invoke-virtual {v0, p1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 97
-    .line 98
-    .line 99
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 100
-    .line 101
-    return-object p1
-
-    .line 102
-    :pswitch_7
-    check-cast p1, Ljava/lang/Runnable;
-
-    .line 103
-    .line 104
-    iget-object v0, p0, LGu;->a:Ljava/lang/Object;
-
-    .line 105
-    .line 106
-    check-cast v0, Lcom/snap/lenses/arbar/DefaultArBarView;
-
-    .line 107
-    .line 108
-    invoke-virtual {v0, p1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
-
-    .line 109
-    .line 110
-    .line 111
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 112
-    .line 113
-    return-object p1
-
-    .line 114
-    nop
-
-    .line 115
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

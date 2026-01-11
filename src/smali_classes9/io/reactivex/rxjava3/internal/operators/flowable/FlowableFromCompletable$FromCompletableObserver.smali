@@ -20,13 +20,13 @@
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public b:Lio/reactivex/rxjava3/disposables/Disposable;
 
 
 # direct methods
-.method public constructor <init>(LV6i;)V
+.method public constructor <init>(Lmvi;)V
     .locals 0
 
     .line 1
@@ -35,7 +35,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:Lmvi;
 
     .line 5
     .line 6
@@ -80,11 +80,11 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:Lmvi;
 
     .line 6
     .line 7
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 8
     .line 9
@@ -104,11 +104,11 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:Lmvi;
 
     .line 6
     .line 7
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 8
     .line 9
@@ -124,7 +124,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 4
     .line 5
@@ -140,11 +140,11 @@
 
     .line 10
     .line 11
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;->a:Lmvi;
 
     .line 12
     .line 13
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 14
     .line 15

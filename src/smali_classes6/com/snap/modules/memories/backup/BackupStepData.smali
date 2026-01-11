@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/memories/backup/BackupStepData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'entryId\':s,\'detailedState\':t?,\'clientOperationId\':s?,\'operationCreatedAtEpochMs\':d,\'triggerLegacyImmediately\':b,\'operationType\':r<e>:\'[0]\',\'operationTotalAttempts\':d@?"
     typeReferences = {

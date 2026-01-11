@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LR1i;
+    proxyClass = Lnqi;
     schema = "\'getFriendsWithStreakReminders\':f|m|(): p<a<s>>,\'setStreakReminderForFriend\':f|m|(s, b): p<v>"
     typeReferences = {}
 .end annotation
@@ -38,7 +38,7 @@
             "Ljava/lang/String;",
             "Z)",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

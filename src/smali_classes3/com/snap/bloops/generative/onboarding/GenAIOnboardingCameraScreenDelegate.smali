@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Le98;
+    proxyClass = Lwf8;
     schema = "\'cameraScreenOnCloseTapped\':f?|m|(),\'cameraScreenDidComplete\':f?|m|(),\'cameraScreenDidSetupDetection\':f?|m|(r:\'[0]\'),\'cameraScreenDidCapture\':f?|m|(s, a?<s>)"
     typeReferences = {
         Lcom/snap/bloops/generative/onboarding/GenAIOnboardingCameraDetectionStage;
@@ -19,9 +19,6 @@
 
 # virtual methods
 .method public abstract cameraScreenDidCapture(Ljava/lang/String;Ljava/util/List;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -31,20 +28,23 @@
             ">;)V"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract cameraScreenDidComplete()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract cameraScreenDidSetupDetection(Lcom/snap/bloops/generative/onboarding/GenAIOnboardingCameraDetectionStage;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract cameraScreenOnCloseTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

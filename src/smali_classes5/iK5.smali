@@ -2,36 +2,31 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lbkc;
-
 
 # instance fields
-.field public final a:LMjc;
+.field public final synthetic a:LO7a;
 
-.field public final b:Lpkc;
+.field public final synthetic b:LRm9;
 
-.field public final c:LPjc;
+.field public final synthetic c:LRm9;
 
-.field public final d:LQjc;
+.field public final synthetic d:Lo7a;
 
-.field public final e:Lkotlin/jvm/functions/Function1;
+.field public final synthetic e:LH4a;
 
-.field public final f:Lvvf;
+.field public final synthetic f:LU7a;
 
-.field public final g:LBre;
+.field public final synthetic g:LX7a;
 
-.field public final h:LjK5;
+.field public final synthetic h:Landroid/app/Activity;
 
-.field public final i:Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+.field public final synthetic i:LbR4;
 
-.field public volatile j:Lcuc;
-
-.field public final k:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+.field public final synthetic j:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
 
 # direct methods
-.method public constructor <init>(LMjc;Lpkc;LPjc;LQjc;Lkotlin/jvm/functions/Function1;Lvvf;LBre;LjK5;Lio/reactivex/rxjava3/internal/operators/single/SingleMap;)V
+.method public constructor <init>(LO7a;LRm9;LRm9;Lo7a;LH4a;LU7a;LX7a;Landroid/app/Activity;LbR4;Lcom/snap/core/application/SnapResourcesContextWrapper;)V
     .locals 0
 
     .line 1
@@ -40,529 +35,631 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LiK5;->a:LMjc;
+    iput-object p1, p0, LiK5;->a:LO7a;
 
     .line 5
     .line 6
-    iput-object p2, p0, LiK5;->b:Lpkc;
+    iput-object p2, p0, LiK5;->b:LRm9;
 
     .line 7
     .line 8
-    iput-object p3, p0, LiK5;->c:LPjc;
+    iput-object p3, p0, LiK5;->c:LRm9;
 
     .line 9
     .line 10
-    iput-object p4, p0, LiK5;->d:LQjc;
+    iput-object p4, p0, LiK5;->d:Lo7a;
 
     .line 11
     .line 12
-    iput-object p5, p0, LiK5;->e:Lkotlin/jvm/functions/Function1;
+    iput-object p5, p0, LiK5;->e:LH4a;
 
     .line 13
     .line 14
-    iput-object p6, p0, LiK5;->f:Lvvf;
+    iput-object p6, p0, LiK5;->f:LU7a;
 
     .line 15
     .line 16
-    iput-object p7, p0, LiK5;->g:LBre;
+    iput-object p7, p0, LiK5;->g:LX7a;
 
     .line 17
     .line 18
-    iput-object p8, p0, LiK5;->h:LjK5;
+    iput-object p8, p0, LiK5;->h:Landroid/app/Activity;
 
     .line 19
     .line 20
-    iput-object p9, p0, LiK5;->i:Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    iput-object p9, p0, LiK5;->i:LbR4;
 
     .line 21
     .line 22
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    iput-object p10, p0, LiK5;->j:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
     .line 23
     .line 24
-    invoke-interface {p5, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    return-void
+.end method
+
+.method public static f(LO7a;)Z
+    .locals 2
+
+    .line 1
+    instance-of v0, p0, Lw7a;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_0
+
+    .line 5
+    .line 6
+    return v1
+
+    .line 7
+    :cond_0
+    instance-of v0, p0, LM7a;
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_4
+
+    .line 10
+    .line 11
+    check-cast p0, LM7a;
+
+    .line 12
+    .line 13
+    iget-object p0, p0, LM7a;->a:LL7a;
+
+    .line 14
+    .line 15
+    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p0
+
+    .line 19
+    if-eqz p0, :cond_3
+
+    .line 20
+    .line 21
+    const/4 v0, 0x1
+
+    .line 22
+    if-eq p0, v0, :cond_2
+
+    .line 23
+    .line 24
+    const/4 v1, 0x2
 
     .line 25
+    if-ne p0, v1, :cond_1
+
     .line 26
     .line 27
-    move-result-object p1
+    goto :goto_0
 
     .line 28
-    check-cast p1, Lcuc;
+    :cond_1
+    new-instance p0, LwOc;
 
     .line 29
     .line 30
-    iput-object p1, p0, LiK5;->j:Lcuc;
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
 
     .line 31
     .line 32
-    new-instance p1, LrB5;
-
     .line 33
+    throw p0
+
     .line 34
-    const/16 p2, 0x10
+    :cond_2
+    :goto_0
+    return v0
 
     .line 35
+    :cond_3
+    return v1
+
     .line 36
-    invoke-direct {p1, p2, p0}, LrB5;-><init>(ILjava/lang/Object;)V
+    :cond_4
+    new-instance p0, LwOc;
 
     .line 37
     .line 38
-    .line 39
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
 
+    .line 39
     .line 40
     .line 41
-    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 42
-    .line 43
-    .line 44
-    iput-object p2, p0, LiK5;->k:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
-
-    .line 45
-    .line 46
-    return-void
+    throw p0
 .end method
 
 
 # virtual methods
-.method public final a(LMjc;Z)Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;
-    .locals 8
+.method public final a(Lu6a;Lz5a;)LJ4a;
+    .locals 9
 
     .line 1
-    iget-object v0, p0, LiK5;->d:LQjc;
+    new-instance v0, LJ4a;
 
     .line 2
     .line 3
-    iget-object v1, p1, LMjc;->a:Ljava/util/Set;
+    new-instance v1, LY79;
 
     .line 4
     .line 5
-    invoke-interface {v0, v1}, LQjc;->a(Ljava/util/Set;)Lio/reactivex/rxjava3/core/Maybe;
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    move-result-object v2
 
     .line 9
-    sget-object v1, LtC5;->s0:LtC5;
+    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
 
     .line 10
     .line 11
-    iget-object v2, p0, LiK5;->g:LBre;
-
     .line 12
+    move-result-object v2
+
     .line 13
-    invoke-virtual {v2}, LBre;->d()LF06;
+    invoke-direct {v1, v2}, LY79;-><init>(Ljava/lang/String;)V
 
     .line 14
     .line 15
     .line 16
-    move-result-object v2
+    iget-object v7, p0, LiK5;->a:LO7a;
 
     .line 17
-    invoke-static {v0, v2, v1}, LzP2;->r0(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/core/Maybe;
-
     .line 18
+    iget-object v8, p0, LiK5;->g:LX7a;
+
     .line 19
     .line 20
-    move-result-object v0
+    iget-object v2, p0, LiK5;->d:Lo7a;
 
     .line 21
-    sget-object v1, LsL6;->a:LsL6;
-
     .line 22
+    iget-object v4, p0, LiK5;->e:LH4a;
+
     .line 23
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;
-
     .line 24
-    .line 25
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Ljava/lang/Object;)V
+    iget-object v5, p0, LiK5;->f:LU7a;
 
+    .line 25
     .line 26
+    move-object v3, p1
+
     .line 27
+    move-object v6, p2
+
     .line 28
-    const-string v0, "LOOK:DefaultNamespaceLensProvider#storageRead"
+    invoke-direct/range {v0 .. v8}, LJ4a;-><init>(LY79;Lo7a;Lu6a;LH4a;LU7a;Lz5a;LO7a;LX7a;)V
 
     .line 29
     .line 30
-    invoke-static {v2, v0}, LANi;->p(Lio/reactivex/rxjava3/core/Single;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-
     .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    sget-object v1, LQFa;->a:LQFa;
-
-    .line 35
-    .line 36
-    new-instance v1, LU03;
-
-    .line 37
-    .line 38
-    const/16 v2, 0xd
-
-    .line 39
-    .line 40
-    invoke-direct {v1, p0, p1, p2, v2}, LU03;-><init>(Ljava/lang/Object;Ljava/lang/Object;ZI)V
-
-    .line 41
-    .line 42
-    .line 43
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 44
-    .line 45
-    .line 46
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 47
-    .line 48
-    invoke-direct {p2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 49
-    .line 50
-    .line 51
-    const/4 v5, 0x0
-
-    .line 52
-    const/4 v6, 0x0
-
-    .line 53
-    iget-object v2, p1, LMjc;->a:Ljava/util/Set;
-
-    .line 54
-    .line 55
-    const/4 v3, 0x0
-
-    .line 56
-    const/4 v4, 0x0
-
-    .line 57
-    const/16 v7, 0x3f
-
-    .line 58
-    .line 59
-    invoke-static/range {v2 .. v7}, Lue3;->O0(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
-
-    .line 60
-    .line 61
-    .line 62
-    const-string p1, "LOOK:DefaultNamespaceLensProvider:fetchLensSchedule"
-
-    .line 63
-    .line 64
-    invoke-static {p2, p1}, LANi;->p(Lio/reactivex/rxjava3/core/Single;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object p1
-
-    .line 68
-    new-instance p2, LLE5;
-
-    .line 69
-    .line 70
-    const/16 v0, 0x8
-
-    .line 71
-    .line 72
-    invoke-direct {p2, v0, p0}, LLE5;-><init>(ILjava/lang/Object;)V
-
-    .line 73
-    .line 74
-    .line 75
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 76
-    .line 77
-    .line 78
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 79
-    .line 80
-    invoke-direct {v0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 81
-    .line 82
-    .line 83
-    new-instance p1, LcF5;
-
-    .line 84
-    .line 85
-    const/16 p2, 0x9
-
-    .line 86
-    .line 87
-    invoke-direct {p1, p2, p0}, LcF5;-><init>(ILjava/lang/Object;)V
-
-    .line 88
-    .line 89
-    .line 90
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;
-
-    .line 91
-    .line 92
-    invoke-direct {p2, v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 93
-    .line 94
-    .line 95
-    return-object p2
-.end method
-
-.method public final provide()Lio/reactivex/rxjava3/core/Flowable;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LiK5;->b:Lpkc;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LiK5;->a:LMjc;
-
-    .line 4
-    .line 5
-    invoke-interface {v0, v1}, Lpkc;->a(LMjc;)Lio/reactivex/rxjava3/core/Flowable;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    iget-object v1, p0, LiK5;->g:LBre;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, LBre;->d()LF06;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v2
-
-    .line 15
-    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Flowable;->D(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSubscribeOn;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    invoke-virtual {v1}, LBre;->d()LF06;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v1
-
-    .line 23
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Flowable;->u(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v0
-
-    .line 27
-    new-instance v1, Lzt5;
-
-    .line 28
-    .line 29
-    const/16 v2, 0x1a
-
-    .line 30
-    .line 31
-    invoke-direct {v1, v2, p0}, Lzt5;-><init>(ILjava/lang/Object;)V
-
-    .line 32
-    .line 33
-    .line 34
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnErrorNext;
-
-    .line 35
-    .line 36
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnErrorNext;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 37
-    .line 38
-    .line 39
-    sget-object v0, LQFa;->a:LQFa;
-
-    .line 40
-    .line 41
-    sget-object v0, LIL6;->a:LIL6;
-
-    .line 42
-    .line 43
-    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Flowable;->B(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Flowable;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    new-instance v1, LOI5;
-
-    .line 48
-    .line 49
-    const/4 v2, 0x3
-
-    .line 50
-    invoke-direct {v1, v2, p0}, LOI5;-><init>(ILjava/lang/Object;)V
-
-    .line 51
-    .line 52
-    .line 53
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Flowable;->E(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Flowable;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v0
-
-    .line 57
-    new-instance v1, LSF5;
-
-    .line 58
-    .line 59
-    const/16 v2, 0xd
-
-    .line 60
-    .line 61
-    invoke-direct {v1, v2, p0}, LSF5;-><init>(ILjava/lang/Object;)V
-
-    .line 62
-    .line 63
-    .line 64
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Flowable;->k(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoOnEach;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object v0
-
-    .line 68
-    sget-object v1, LPF5;->y0:LPF5;
-
-    .line 69
-    .line 70
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFilter;
-
-    .line 71
-    .line 72
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFilter;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/Predicate;)V
-
-    .line 73
-    .line 74
-    .line 75
-    new-instance v0, LWB5;
-
-    .line 76
-    .line 77
-    const/16 v1, 0x11
-
-    .line 78
-    .line 79
-    invoke-direct {v0, v1, p0}, LWB5;-><init>(ILjava/lang/Object;)V
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Flowable;->p(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapSingle;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object v0
-
-    .line 86
-    new-instance v1, LJG5;
-
-    .line 87
-    .line 88
-    const/4 v2, 0x6
-
-    .line 89
-    invoke-direct {v1, v2, p0}, LJG5;-><init>(ILjava/lang/Object;)V
-
-    .line 90
-    .line 91
-    .line 92
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnErrorNext;
-
-    .line 93
-    .line 94
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnErrorNext;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 95
-    .line 96
-    .line 97
-    const-string v0, "LOOK:DefaultNamespaceLensProvider#provide"
-
-    .line 98
-    .line 99
-    invoke-static {v2, v0}, LANi;->m(Lio/reactivex/rxjava3/core/Flowable;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Flowable;
-
-    .line 100
-    .line 101
-    .line 102
-    move-result-object v0
-
-    .line 103
     return-object v0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public final b(LL4b;LY7a;Z)LHM7;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, LiK5;->c()Lupa;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz p3, :cond_0
+
+    .line 6
+    .line 7
+    iget-object p3, p0, LiK5;->h:Landroid/app/Activity;
+
+    .line 8
+    .line 9
+    invoke-interface {v0, p3}, Lupa;->X0(Landroid/app/Activity;)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    new-instance p3, LFFc;
+
+    .line 13
+    .line 14
+    invoke-direct {p3}, LFFc;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {p0, p1, p2}, LiK5;->d(LL4b;LY7a;)LxFc;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p2
+
+    .line 21
+    invoke-virtual {p2}, LxFc;->p()LuFc;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p2
+
+    .line 25
+    invoke-virtual {p3, p2}, LEFc;->c(LyFc;)LEFc;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p2
+
+    .line 29
+    check-cast p2, LFFc;
+
+    .line 30
+    .line 31
+    invoke-virtual {p2}, LFFc;->d()LJO5;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p2
+
+    .line 35
+    invoke-interface {v0}, Lupa;->n0()Lcom/snapchat/deck/fragment/MainPageFragment;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p3
+
+    .line 39
+    new-instance v0, LHM7;
+
+    .line 40
+    .line 41
+    invoke-direct {v0, p1, p3, p2}, LHM7;-><init>(LL4b;Lcom/snapchat/deck/fragment/MainPageFragment;LHFc;)V
+
+    .line 42
+    .line 43
+    .line 44
+    return-object v0
+.end method
+
+.method public final c()Lupa;
     .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, LiK5;->a:LO7a;
 
     .line 2
     .line 3
-    const-string v1, "DefaultNamespaceLensProvider("
+    instance-of v1, v0, Lw7a;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    if-eqz v1, :cond_0
 
     .line 6
     .line 7
+    iget-object v0, p0, LiK5;->b:LRm9;
+
     .line 8
-    iget-object v1, p0, LiK5;->a:LMjc;
-
     .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 10
     .line 11
     .line 12
+    new-instance v0, Lcom/snap/lenses/app/explorer/LensesExplorerFullscreenFragment;
+
     .line 13
-    const-string v1, ")"
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Lcom/snap/lenses/app/explorer/LensesExplorerFullscreenFragment;-><init>()V
 
+    .line 15
     .line 16
     .line 17
+    return-object v0
+
     .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :cond_0
+    instance-of v0, v0, LM7a;
 
     .line 19
     .line 20
+    if-eqz v0, :cond_1
+
     .line 21
-    move-result-object v0
+    .line 22
+    iget-object v0, p0, LiK5;->c:LRm9;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 25
+    .line 26
+    .line 27
+    new-instance v0, Lcom/snap/lenses/app/explorer/LensesExplorerTrayFragment;
+
+    .line 28
+    .line 29
+    invoke-direct {v0}, Lcom/snap/lenses/app/explorer/LensesExplorerTrayFragment;-><init>()V
+
+    .line 30
+    .line 31
+    .line 32
+    return-object v0
+
+    .line 33
+    :cond_1
+    new-instance v0, LwOc;
+
+    .line 34
+    .line 35
+    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    throw v0
+.end method
+
+.method public final d(LL4b;LY7a;)LxFc;
+    .locals 12
+
+    .line 1
+    iget-object v0, p0, LiK5;->a:LO7a;
+
+    .line 2
+    .line 3
+    instance-of v1, v0, LM7a;
+
+    .line 4
+    .line 5
+    sget-object v4, Luld;->Q:LtOc;
+
+    .line 6
+    .line 7
+    if-eqz v1, :cond_3
+
+    .line 8
+    .line 9
+    invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p2
+
+    .line 13
+    if-eqz p2, :cond_1
+
+    .line 14
+    .line 15
+    const/4 v0, 0x1
+
+    .line 16
+    if-ne p2, v0, :cond_0
+
+    .line 17
+    .line 18
+    sget-object v4, Luld;->R:LtOc;
+
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    new-instance p1, LwOc;
 
     .line 22
-    return-object v0
+    .line 23
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 24
+    .line 25
+    .line 26
+    throw p1
+
+    .line 27
+    :cond_1
+    check-cast v0, LM7a;
+
+    .line 28
+    .line 29
+    iget-boolean p2, v0, LM7a;->t:Z
+
+    .line 30
+    .line 31
+    if-eqz p2, :cond_2
+
+    .line 32
+    .line 33
+    goto :goto_0
+
+    .line 34
+    :cond_2
+    const/4 v4, 0x0
+
+    .line 35
+    :goto_0
+    iget-object p2, p0, LiK5;->i:LbR4;
+
+    .line 36
+    .line 37
+    invoke-virtual {p2}, LbR4;->get()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p2
+
+    .line 41
+    check-cast p2, LZdh;
+
+    .line 42
+    .line 43
+    iget-object p2, p0, LiK5;->j:Lcom/snap/core/application/SnapResourcesContextWrapper;
+
+    .line 44
+    .line 45
+    invoke-static {p2, p1, v4}, LZdh;->a(Landroid/content/Context;LL4b;Luld;)LxFc;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    return-object p1
+
+    .line 50
+    :cond_3
+    instance-of p2, v0, Lw7a;
+
+    .line 51
+    .line 52
+    if-eqz p2, :cond_4
+
+    .line 53
+    .line 54
+    sget-object v3, Lvu9;->t:Lvu9;
+
+    .line 55
+    .line 56
+    new-instance v2, LxFc;
+
+    .line 57
+    .line 58
+    const/4 v8, 0x0
+
+    .line 59
+    const/16 v11, 0xc0
+
+    .line 60
+    .line 61
+    const/4 v5, 0x0
+
+    .line 62
+    const/4 v7, 0x1
+
+    .line 63
+    const/4 v9, 0x0
+
+    .line 64
+    const/4 v10, 0x0
+
+    .line 65
+    move-object v6, p1
+
+    .line 66
+    invoke-direct/range {v2 .. v11}, LxFc;-><init>(Lvu9;Luld;LL4b;LL4b;ZZZLnp0;I)V
+
+    .line 67
+    .line 68
+    .line 69
+    return-object v2
+
+    .line 70
+    :cond_4
+    new-instance p1, LwOc;
+
+    .line 71
+    .line 72
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 73
+    .line 74
+    .line 75
+    throw p1
+.end method
+
+.method public final e(LJ4a;)LY6a;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LiK5;->a:LO7a;
+
+    .line 2
+    .line 3
+    instance-of v1, v0, LM7a;
+
+    .line 4
+    .line 5
+    if-eqz v1, :cond_0
+
+    .line 6
+    .line 7
+    move-object v2, v0
+
+    .line 8
+    check-cast v2, LM7a;
+
+    .line 9
+    .line 10
+    iget-boolean v2, v2, LM7a;->t:Z
+
+    .line 11
+    .line 12
+    if-eqz v2, :cond_0
+
+    .line 13
+    .line 14
+    instance-of v1, v0, LM7a;
+
+    .line 15
+    .line 16
+    invoke-static {v0}, LiK5;->f(LO7a;)Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    new-instance v2, Lg7a;
+
+    .line 21
+    .line 22
+    invoke-direct {v2, p1, v0, v1}, Li7a;-><init>(LJ4a;ZZ)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-object v2
+
+    .line 26
+    :cond_0
+    invoke-static {v0}, LiK5;->f(LO7a;)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v0
+
+    .line 30
+    new-instance v2, Lf7a;
+
+    .line 31
+    .line 32
+    invoke-direct {v2, p1, v0, v1}, Li7a;-><init>(LJ4a;ZZ)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-object v2
 .end method

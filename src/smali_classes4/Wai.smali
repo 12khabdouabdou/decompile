@@ -1,286 +1,222 @@
 .class public final LWai;
-.super LrE9;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'displayInfo\':g<c>:\'[0]\'<r:\'[1]\'>,\'viewDelegate\':r?:\'[2]\',\'cofStore\':r?:\'[3]\',\'onTap\':f(),\'snapPlayerViewFactory\':r:\'[4]\',\'onProfileTap\':f?(),\'onActionButtonTapped\':f?(r<e>:\'[5]\'),\'template\':r?<e>:\'[6]\',\'onPlayerViewStateUpdate\':f?(r<e>:\'[7]\')"
+    typeReferences = {
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        LVai;,
+        Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;,
+        Lcom/snap/composer/cof/ICOFSynchronousStore;,
+        Lcom/snap/composer/ViewFactory;,
+        Lcom/snap/modules/chat_stories_common/StoryChatActionButtonType;,
+        Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;,
+        Lcom/snap/composer/chat_stories_common/StoryChatSharePlayerViewState;
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field private _cofStore:Lcom/snap/composer/cof/ICOFSynchronousStore;
 
-.field public final synthetic b:LXai;
+.field private _displayInfo:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "LVai;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final synthetic c:J
+.field private _onActionButtonTapped:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
+
+.field private _onPlayerViewStateUpdate:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
+
+.field private _onProfileTap:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onTap:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _snapPlayerViewFactory:Lcom/snap/composer/ViewFactory;
+
+.field private _template:Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;
+
+.field private _viewDelegate:Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;
 
 
 # direct methods
-.method public synthetic constructor <init>(LXai;JI)V
+.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;Lcom/snap/composer/cof/ICOFSynchronousStore;Lkotlin/jvm/functions/Function0;Lcom/snap/composer/ViewFactory;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;Lkotlin/jvm/functions/Function1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "LVai;",
+            ">;",
+            "Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;",
+            "Lcom/snap/composer/cof/ICOFSynchronousStore;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lcom/snap/composer/ViewFactory;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iput p4, p0, LWai;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LWai;->b:LXai;
+    .line 2
+    iput-object p1, p0, LWai;->_displayInfo:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-    iput-wide p2, p0, LWai;->c:J
+    .line 3
+    iput-object p2, p0, LWai;->_viewDelegate:Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;
 
-    const/4 p1, 0x1
+    .line 4
+    iput-object p3, p0, LWai;->_cofStore:Lcom/snap/composer/cof/ICOFSynchronousStore;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 5
+    iput-object p4, p0, LWai;->_onTap:Lkotlin/jvm/functions/Function0;
+
+    .line 6
+    iput-object p5, p0, LWai;->_snapPlayerViewFactory:Lcom/snap/composer/ViewFactory;
+
+    .line 7
+    iput-object p6, p0, LWai;->_onProfileTap:Lkotlin/jvm/functions/Function0;
+
+    .line 8
+    iput-object p7, p0, LWai;->_onActionButtonTapped:Lkotlin/jvm/functions/Function1;
+
+    .line 9
+    iput-object p8, p0, LWai;->_template:Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;
+
+    .line 10
+    iput-object p9, p0, LWai;->_onPlayerViewStateUpdate:Lkotlin/jvm/functions/Function1;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeObservable;Lkotlin/jvm/functions/Function0;Lcom/snap/composer/ViewFactory;)V
+    .locals 0
+
+    .line 11
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 12
+    iput-object p1, p0, LWai;->_displayInfo:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    const/4 p1, 0x0
+
+    .line 13
+    iput-object p1, p0, LWai;->_viewDelegate:Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;
+
+    .line 14
+    iput-object p1, p0, LWai;->_cofStore:Lcom/snap/composer/cof/ICOFSynchronousStore;
+
+    .line 15
+    iput-object p2, p0, LWai;->_onTap:Lkotlin/jvm/functions/Function0;
+
+    .line 16
+    iput-object p3, p0, LWai;->_snapPlayerViewFactory:Lcom/snap/composer/ViewFactory;
+
+    .line 17
+    iput-object p1, p0, LWai;->_onProfileTap:Lkotlin/jvm/functions/Function0;
+
+    .line 18
+    iput-object p1, p0, LWai;->_onActionButtonTapped:Lkotlin/jvm/functions/Function1;
+
+    .line 19
+    iput-object p1, p0, LWai;->_template:Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;
+
+    .line 20
+    iput-object p1, p0, LWai;->_onPlayerViewStateUpdate:Lkotlin/jvm/functions/Function1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final a(Lcom/snap/composer/cof/ICOFSynchronousStore;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, LWai;->a:I
+    iput-object p1, p0, LWai;->_cofStore:Lcom/snap/composer/cof/ICOFSynchronousStore;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    return-void
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, Ljava/lang/Number;
+.method public final b(Lntf;)V
+    .locals 0
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+    .line 1
+    iput-object p1, p0, LWai;->_onActionButtonTapped:Lkotlin/jvm/functions/Function1;
 
-    .line 9
-    .line 10
-    .line 11
-    iget-object p1, p0, LWai;->b:LXai;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 12
-    .line 13
-    iget-object p1, p1, LXai;->a:LjUg;
+.method public final c(LlMg;)V
+    .locals 0
 
-    .line 14
-    .line 15
-    new-instance v0, LA4i;
+    .line 1
+    iput-object p1, p0, LWai;->_onProfileTap:Lkotlin/jvm/functions/Function0;
 
-    .line 16
-    .line 17
-    iget-wide v1, p0, LWai;->c:J
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 18
-    .line 19
-    invoke-direct {v0, v1, v2}, LRWi;-><init>(J)V
+.method public final d(Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;)V
+    .locals 0
 
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {p1, v0}, LjUg;->a(LRWi;)Ljava/lang/Object;
+    .line 1
+    iput-object p1, p0, LWai;->_template:Lcom/snap/composer/chat_stories_common/StoryChatShareViewTemplate;
 
-    .line 23
-    .line 24
-    .line 25
-    move-result-object p1
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 26
-    check-cast p1, Ljava/lang/String;
+.method public final e(Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;)V
+    .locals 0
 
-    .line 27
-    .line 28
-    return-object p1
+    .line 1
+    iput-object p1, p0, LWai;->_viewDelegate:Lcom/snap/composer/chat_stories_common/StoryChatShareViewDelegate;
 
-    .line 29
-    :pswitch_0
-    check-cast p1, Ljava/lang/Number;
-
-    .line 30
-    .line 31
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
-
-    .line 32
-    .line 33
-    .line 34
-    iget-object p1, p0, LWai;->b:LXai;
-
-    .line 35
-    .line 36
-    iget-object p1, p1, LXai;->a:LjUg;
-
-    .line 37
-    .line 38
-    new-instance v0, LNMa;
-
-    .line 39
-    .line 40
-    iget-wide v1, p0, LWai;->c:J
-
-    .line 41
-    .line 42
-    invoke-direct {v0, v1, v2}, LRWi;-><init>(J)V
-
-    .line 43
-    .line 44
-    .line 45
-    invoke-virtual {p1, v0}, LjUg;->a(LRWi;)Ljava/lang/Object;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object p1
-
-    .line 49
-    check-cast p1, Ljava/lang/Long;
-
-    .line 50
-    .line 51
-    return-object p1
-
-    .line 52
-    :pswitch_1
-    check-cast p1, Ljava/lang/Number;
-
-    .line 53
-    .line 54
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
-
-    .line 55
-    .line 56
-    .line 57
-    iget-object p1, p0, LWai;->b:LXai;
-
-    .line 58
-    .line 59
-    iget-object p1, p1, LXai;->a:LjUg;
-
-    .line 60
-    .line 61
-    new-instance v0, LNMa;
-
-    .line 62
-    .line 63
-    iget-wide v1, p0, LWai;->c:J
-
-    .line 64
-    .line 65
-    invoke-direct {v0, v1, v2}, LRWi;-><init>(J)V
-
-    .line 66
-    .line 67
-    .line 68
-    invoke-virtual {p1, v0}, LjUg;->a(LRWi;)Ljava/lang/Object;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object p1
-
-    .line 72
-    check-cast p1, Ljava/lang/Long;
-
-    .line 73
-    .line 74
-    return-object p1
-
-    .line 75
-    :pswitch_2
-    check-cast p1, Ljava/lang/Number;
-
-    .line 76
-    .line 77
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
-
-    .line 78
-    .line 79
-    .line 80
-    iget-object p1, p0, LWai;->b:LXai;
-
-    .line 81
-    .line 82
-    iget-object p1, p1, LXai;->a:LjUg;
-
-    .line 83
-    .line 84
-    new-instance v0, LXr6;
-
-    .line 85
-    .line 86
-    iget-wide v1, p0, LWai;->c:J
-
-    .line 87
-    .line 88
-    invoke-direct {v0, v1, v2}, LRWi;-><init>(J)V
-
-    .line 89
-    .line 90
-    .line 91
-    invoke-virtual {p1, v0}, LjUg;->a(LRWi;)Ljava/lang/Object;
-
-    .line 92
-    .line 93
-    .line 94
-    move-result-object p1
-
-    .line 95
-    check-cast p1, Ljava/lang/Double;
-
-    .line 96
-    .line 97
-    return-object p1
-
-    .line 98
-    :pswitch_3
-    check-cast p1, Ljava/lang/Number;
-
-    .line 99
-    .line 100
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
-
-    .line 101
-    .line 102
-    .line 103
-    iget-object p1, p0, LWai;->b:LXai;
-
-    .line 104
-    .line 105
-    iget-object p1, p1, LXai;->a:LjUg;
-
-    .line 106
-    .line 107
-    new-instance v0, LHw1;
-
-    .line 108
-    .line 109
-    iget-wide v1, p0, LWai;->c:J
-
-    .line 110
-    .line 111
-    invoke-direct {v0, v1, v2}, LRWi;-><init>(J)V
-
-    .line 112
-    .line 113
-    .line 114
-    invoke-virtual {p1, v0}, LjUg;->a(LRWi;)Ljava/lang/Object;
-
-    .line 115
-    .line 116
-    .line 117
-    move-result-object p1
-
-    .line 118
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 119
-    .line 120
-    return-object p1
-
-    .line 121
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    .line 3
+    return-void
 .end method

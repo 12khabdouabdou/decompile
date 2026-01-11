@@ -6,27 +6,24 @@
 # virtual methods
 .method public abstract fetchAdRemoteVideoProperties(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LFre;
+        .annotation runtime LsJe;
             value = "videoId"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LFre;
+        .annotation runtime LsJe;
             value = "platform"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LFre;
+        .annotation runtime LsJe;
             value = "quality"
         .end annotation
     .end param
-    .annotation runtime Lb38;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -36,36 +33,36 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LU3f<",
-            "LpBj;",
+            "LRlf<",
+            "LF0k;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Lw98;
     .end annotation
 .end method
 
 .method public abstract fetchRemoteVideoProperties(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LFre;
+        .annotation runtime LsJe;
             value = "edition"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LFre;
+        .annotation runtime LsJe;
             value = "platform"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LFre;
+        .annotation runtime LsJe;
             value = "quality"
         .end annotation
     .end param
-    .annotation runtime Lb38;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -75,9 +72,12 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LU3f<",
-            "LpBj;",
+            "LRlf<",
+            "LF0k;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Lw98;
     .end annotation
 .end method

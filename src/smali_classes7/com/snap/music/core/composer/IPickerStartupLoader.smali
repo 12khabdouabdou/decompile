@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LIX8;
+    proxyClass = Ll59;
     schema = "\'getPickerLayout\':f|m|(f(r?:\'[0]\'))"
     typeReferences = {
-        LFV8;
+        Lh39;
     }
 .end annotation
 

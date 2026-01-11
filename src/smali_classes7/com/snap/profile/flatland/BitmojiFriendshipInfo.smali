@@ -1,10 +1,10 @@
 .class public final Lcom/snap/profile/flatland/BitmojiFriendshipInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'isFriendshipAnniversary\':b,\'streakCount\':d,\'friendmojiCategoryNames\':a<s>,\'addedTimestamp\':d@?"
     typeReferences = {}

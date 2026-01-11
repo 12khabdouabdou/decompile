@@ -1,151 +1,262 @@
-.class public final enum LBU3;
-.super Ljava/lang/Enum;
+.class public final LBU3;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LFm0;
+.implements Lcom/looksery/sdk/io/HierarchicalResourceResolver;
 
-# static fields
-.field public static final enum a:LBU3;
 
-.field public static final enum b:LBU3;
+# instance fields
+.field public X:Ljava/io/Closeable;
 
-.field public static final enum c:LBU3;
+.field public final a:Ldy5;
 
-.field public static final synthetic t:[LBU3;
+.field public final b:LAU3;
+
+.field public final c:Ljava/util/concurrent/locks/ReentrantLock;
+
+.field public t:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(Ldy5;)V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x2
+    new-instance v0, LAU3;
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
+    invoke-direct {v0, p1}, LAU3;-><init>(Ldy5;)V
 
     .line 4
-    new-instance v3, LBU3;
-
     .line 5
     .line 6
-    const-string v4, "ICON"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 7
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 9
+    iput-object p1, p0, LBU3;->a:Ldy5;
+
     .line 10
     .line 11
-    sput-object v3, LBU3;->a:LBU3;
+    iput-object v0, p0, LBU3;->b:LAU3;
 
     .line 12
     .line 13
-    new-instance v4, LBU3;
+    new-instance p1, Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 14
     .line 15
-    const-string v5, "CONTENT"
+    invoke-direct {p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
     .line 16
     .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 18
+    iput-object p1, p0, LBU3;->c:Ljava/util/concurrent/locks/ReentrantLock;
+
     .line 19
     .line 20
-    sput-object v4, LBU3;->b:LBU3;
-
-    .line 21
-    .line 22
-    new-instance v5, LBU3;
-
-    .line 23
-    .line 24
-    const-string v6, "ASSET"
-
-    .line 25
-    .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v5, LBU3;->c:LBU3;
-
-    .line 30
-    .line 31
-    const/4 v6, 0x3
-
-    .line 32
-    new-array v6, v6, [LBU3;
-
-    .line 33
-    .line 34
-    aput-object v3, v6, v2
-
-    .line 35
-    .line 36
-    aput-object v4, v6, v1
-
-    .line 37
-    .line 38
-    aput-object v5, v6, v0
-
-    .line 39
-    .line 40
-    sput-object v6, LBU3;->t:[LBU3;
-
-    .line 41
-    .line 42
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LBU3;
+
+# virtual methods
+.method public final childNamesForNode(Landroid/net/Uri;)[Ljava/lang/String;
     .locals 1
 
     .line 1
-    const-class v0, LBU3;
+    iget-object v0, p0, LBU3;->a:Ldy5;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-virtual {v0, p1}, Ldy5;->childNamesForNode(Landroid/net/Uri;)[Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    move-result-object p1
 
     .line 7
-    check-cast p0, LBU3;
-
-    .line 8
-    .line 9
-    return-object p0
+    return-object p1
 .end method
 
-.method public static values()[LBU3;
-    .locals 1
+.method public final f2()Lio/reactivex/rxjava3/disposables/Disposable;
+    .locals 3
 
     .line 1
-    sget-object v0, LBU3;->t:[LBU3;
+    iget-object v0, p0, LBU3;->c:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    :try_start_0
+    iget v1, p0, LBU3;->t:I
 
     .line 7
-    check-cast v0, [LBU3;
-
     .line 8
+    add-int/lit8 v1, v1, 0x1
+
     .line 9
+    .line 10
+    iput v1, p0, LBU3;->t:I
+
+    .line 11
+    .line 12
+    iget-object v1, p0, LBU3;->X:Ljava/io/Closeable;
+
+    .line 13
+    .line 14
+    if-nez v1, :cond_0
+
+    .line 15
+    .line 16
+    iget-object v1, p0, LBU3;->b:LAU3;
+
+    .line 17
+    .line 18
+    invoke-virtual {v1}, LAU3;->d()Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    check-cast v1, Ljava/io/Closeable;
+
+    .line 23
+    .line 24
+    iput-object v1, p0, LBU3;->X:Ljava/io/Closeable;
+
+    .line 25
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :catchall_0
+    move-exception v1
+
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_0
+    :goto_0
+    new-instance v1, LGq3;
+
+    .line 30
+    .line 31
+    const/16 v2, 0x19
+
+    .line 32
+    .line 33
+    invoke-direct {v1, v2, p0}, LGq3;-><init>(ILjava/lang/Object;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-static {v1}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 40
+    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+
+    .line 41
+    .line 42
+    .line 43
+    return-object v1
+
+    .line 44
+    :goto_1
+    invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+
+    .line 45
+    .line 46
+    .line 47
+    throw v1
+.end method
+
+.method public final nodeType(Landroid/net/Uri;)Lcom/looksery/sdk/io/HierarchicalResourceResolver$NodeType;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LBU3;->a:Ldy5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ldy5;->nodeType(Landroid/net/Uri;)Lcom/looksery/sdk/io/HierarchicalResourceResolver$NodeType;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public final observe()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, LlFg;->C(LCm0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
     return-object v0
+.end method
+
+.method public final openResource(Landroid/net/Uri;)Ljava/io/InputStream;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LBU3;->a:Ldy5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ldy5;->openResource(Landroid/net/Uri;)Ljava/io/InputStream;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public final openResourceFd(Landroid/net/Uri;)Landroid/content/res/AssetFileDescriptor;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LBU3;->a:Ldy5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ldy5;->openResourceFd(Landroid/net/Uri;)Landroid/content/res/AssetFileDescriptor;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
 .end method

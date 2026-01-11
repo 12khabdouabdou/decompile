@@ -60,7 +60,7 @@
 
     .line 7
     .line 8
-    sget-object v1, LHC2;->a:Ljava/nio/charset/Charset;
+    sget-object v1, LxF2;->a:Ljava/nio/charset/Charset;
 
     .line 9
     .line 10
@@ -108,7 +108,7 @@
     .locals 1
 
     .line 1
-    new-instance p1, LJBc;
+    new-instance p1, LwQc;
 
     .line 2
     .line 3

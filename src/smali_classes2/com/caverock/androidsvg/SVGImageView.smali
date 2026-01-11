@@ -172,7 +172,7 @@
     move-result-object v0
 
     .line 16
-    sget-object v1, LMve;->a:[I
+    sget-object v1, LvNe;->a:[I
 
     .line 17
     .line 18
@@ -271,14 +271,14 @@
     .line 59
     :cond_2
     :try_start_2
-    new-instance v0, Lghf;
+    new-instance v0, LJzf;
 
     .line 60
     .line 61
     const/4 v1, 0x0
 
     .line 62
-    invoke-direct {v0, p0, v1}, Lghf;-><init>(Lcom/caverock/androidsvg/SVGImageView;I)V
+    invoke-direct {v0, p0, v1}, LJzf;-><init>(Lcom/caverock/androidsvg/SVGImageView;I)V
 
     .line 63
     .line 64
@@ -353,14 +353,14 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 15
-    new-instance p2, Lghf;
+    new-instance p2, LJzf;
 
     .line 16
     .line 17
     const/4 v2, 0x2
 
     .line 18
-    invoke-direct {p2, p0, v2}, Lghf;-><init>(Lcom/caverock/androidsvg/SVGImageView;I)V
+    invoke-direct {p2, p0, v2}, LJzf;-><init>(Lcom/caverock/androidsvg/SVGImageView;I)V
 
     .line 19
     .line 20
@@ -398,7 +398,7 @@
     return v0
 .end method
 
-.method public final c(LDEd;)V
+.method public final c(LAzf;)V
     .locals 1
 
     .line 1
@@ -415,7 +415,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1}, LDEd;->e()Landroid/graphics/Picture;
+    invoke-virtual {p1}, LAzf;->i()Landroid/graphics/Picture;
 
     .line 9
     .line 10
@@ -563,14 +563,14 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lghf;
+    new-instance v0, LJzf;
 
     .line 2
     .line 3
     const/4 v1, 0x1
 
     .line 4
-    invoke-direct {v0, p0, v1}, Lghf;-><init>(Lcom/caverock/androidsvg/SVGImageView;I)V
+    invoke-direct {v0, p0, v1}, LJzf;-><init>(Lcom/caverock/androidsvg/SVGImageView;I)V
 
     .line 5
     .line 6

@@ -3,18 +3,18 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements LCu9;
 
 
 # instance fields
-.field public final synthetic a:Lph7;
+.field public final a:LYt5;
 
-.field public final synthetic b:LATe;
+.field public final b:Lio/reactivex/rxjava3/core/Observable;
 
 
 # direct methods
-.method public constructor <init>(Lph7;LATe;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 3
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,67 +22,58 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LLw5;->a:Lph7;
+    invoke-static {}, LzHa;->t()Lio/reactivex/rxjava3/subjects/Subject;
 
     .line 5
     .line 6
-    iput-object p2, p0, LLw5;->b:LATe;
-
     .line 7
+    move-result-object v0
+
     .line 8
+    new-instance v1, LYt5;
+
+    .line 9
+    .line 10
+    const/16 v2, 0xc
+
+    .line 11
+    .line 12
+    invoke-direct {v1, v2, v0}, LYt5;-><init>(ILio/reactivex/rxjava3/subjects/Subject;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iput-object v1, p0, LLw5;->a:LYt5;
+
+    .line 16
+    .line 17
+    iput-object v0, p0, LLw5;->b:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 18
+    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/Number;
+    iget-object v0, p0, LLw5;->b:Lio/reactivex/rxjava3/core/Observable;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    return-object v0
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    move-result p1
+.method public final j()Lio/reactivex/rxjava3/functions/Consumer;
+    .locals 1
 
-    .line 7
-    new-instance v0, LbM;
+    .line 1
+    iget-object v0, p0, LLw5;->a:LYt5;
 
-    .line 8
-    .line 9
-    iget-object v1, p0, LLw5;->a:Lph7;
-
-    .line 10
-    .line 11
-    check-cast v1, Lkh7;
-
-    .line 12
-    .line 13
-    iget-object v1, v1, Lkh7;->c:Lo09;
-
-    .line 14
-    .line 15
-    iget-object v2, p0, LLw5;->b:LATe;
-
-    .line 16
-    .line 17
-    invoke-static {v2}, LRw5;->a(LATe;)LSL;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v2
-
-    .line 21
-    invoke-direct {v0, v1, p1, v2}, LbM;-><init>(Lo09;ILSL;)V
-
-    .line 22
-    .line 23
-    .line 24
+    .line 2
+    .line 3
     return-object v0
 .end method

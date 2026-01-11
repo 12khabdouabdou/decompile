@@ -1,53 +1,33 @@
-.class public interface abstract LcS1;
+.class public final LcS1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract A()LZR1;
-.end method
+# static fields
+.field public static final a:LT50;
 
-.method public abstract C()LpR1;
-.end method
 
-.method public abstract D()LTR1;
-.end method
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
-.method public abstract e()LZQ1;
-.end method
+    .line 1
+    new-instance v0, LT50;
 
-.method public abstract f()LjR1;
-.end method
+    .line 2
+    .line 3
+    const/16 v1, 0x11
 
-.method public abstract g()LgR1;
-.end method
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, LT50;-><init>(I)V
 
-.method public abstract h()LuS1;
-.end method
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, LcS1;->a:LT50;
 
-.method public abstract i()LgS1;
-.end method
-
-.method public abstract n()LRQ1;
-.end method
-
-.method public abstract o()LPR1;
-.end method
-
-.method public abstract s()LlR1;
-.end method
-
-.method public abstract u()LeR1;
-.end method
-
-.method public abstract v()LqS1;
-.end method
-
-.method public abstract x()LVQ1;
-.end method
-
-.method public abstract y()LnR1;
-.end method
-
-.method public abstract z()LVR1;
+    .line 9
+    .line 10
+    return-void
 .end method

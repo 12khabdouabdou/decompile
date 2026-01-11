@@ -1,32 +1,61 @@
-.class public abstract Lu4k;
-.super Lo6k;
+.class public final Lu4k;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LqSa;
 
-# static fields
-.field public static final b:Lt4k;
+
+# instance fields
+.field public final a:LzHi;
+
+.field public b:Landroid/media/MediaExtractor;
+
+.field public c:Ljava/lang/Thread;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 2
 
     .line 1
-    new-instance v0, Lt4k;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    invoke-direct {v0, v1}, Lo6k;-><init>(Lj5k;)V
+    new-instance p1, LzHi;
 
     .line 5
     .line 6
-    .line 7
-    sput-object v0, Lu4k;->b:Lt4k;
+    const-string v0, "VideoReader"
 
+    .line 7
     .line 8
+    const/4 v1, 0x0
+
     .line 9
+    invoke-direct {p1, v0, v1}, LzHi;-><init>(Ljava/lang/String;I)V
+
+    .line 10
+    .line 11
+    .line 12
+    iput-object p1, p0, Lu4k;->a:LzHi;
+
+    .line 13
+    .line 14
     return-void
+.end method
+
+
+# virtual methods
+.method public final getTag()Lge0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lu4k;->a:LzHi;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

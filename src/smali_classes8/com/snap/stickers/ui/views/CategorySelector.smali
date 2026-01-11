@@ -19,13 +19,13 @@
 
 .field public e0:Ljava/util/ArrayList;
 
-.field public f0:Lnw2;
+.field public f0:LYy2;
 
 .field public g0:I
 
 .field public h0:Ljava/util/List;
 
-.field public i0:LxI8;
+.field public i0:LSP8;
 
 .field public t:Lio/reactivex/rxjava3/processors/PublishProcessor;
 
@@ -47,7 +47,7 @@
     const/high16 v1, 0x42c80000    # 100.0f
 
     .line 3
-    invoke-static {v1, p1, v0}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v1, p1, v0}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -74,13 +74,13 @@
 
     move-result-object p1
 
-    const v0, 0x7f0e0718
+    const v0, 0x7f0e073f
 
     invoke-static {p1, v0, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
 
-    const v0, 0x7f0b045d
+    const v0, 0x7f0b04e6
 
     .line 9
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -110,7 +110,7 @@
     const/high16 v0, 0x42c80000    # 100.0f
 
     .line 12
-    invoke-static {v0, p1, p2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v0, p1, p2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -137,13 +137,13 @@
 
     move-result-object p1
 
-    const p2, 0x7f0e0718
+    const p2, 0x7f0e073f
 
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
 
-    const p2, 0x7f0b045d
+    const p2, 0x7f0b04e6
 
     .line 18
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -173,7 +173,7 @@
     const/high16 p3, 0x42c80000    # 100.0f
 
     .line 21
-    invoke-static {p3, p1, p2}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {p3, p1, p2}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -200,13 +200,13 @@
 
     move-result-object p1
 
-    const p2, 0x7f0e0718
+    const p2, 0x7f0e073f
 
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
 
-    const p2, 0x7f0b045d
+    const p2, 0x7f0b04e6
 
     .line 27
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -222,7 +222,7 @@
 
 
 # virtual methods
-.method public final a(LxLf;)V
+.method public final a(LR4g;)V
     .locals 17
 
     .line 1
@@ -415,7 +415,7 @@
 
     .line 80
     .line 81
-    invoke-static {v7, v8}, LI0j;->J(D)I
+    invoke-static {v7, v8}, LbS2;->J(D)I
 
     .line 82
     .line 83
@@ -427,7 +427,7 @@
 
     .line 86
     :cond_5
-    invoke-static {v9, v10}, LI0j;->J(D)I
+    invoke-static {v9, v10}, LbS2;->J(D)I
 
     .line 87
     .line 88
@@ -454,26 +454,11 @@
     return-void
 .end method
 
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/stickers/ui/views/CategorySelector;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 2
-    .line 3
-    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
-
-    .line 4
-    .line 5
-    return v0
-.end method
-
-.method public final d(LxLf;)V
+.method public final b(LR4g;)V
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/snap/stickers/ui/views/CategorySelector;->f0:Lnw2;
+    iget-object v0, p0, Lcom/snap/stickers/ui/views/CategorySelector;->f0:LYy2;
 
     .line 2
     .line 3
@@ -491,7 +476,7 @@
 
     .line 8
     .line 9
-    iget-boolean v3, v0, Lnw2;->g0:Z
+    iget-boolean v3, v0, LYy2;->g0:Z
 
     .line 10
     .line 11
@@ -506,15 +491,15 @@
     const/4 v3, 0x0
 
     .line 15
-    iput-boolean v3, v0, Lnw2;->g0:Z
+    iput-boolean v3, v0, LYy2;->g0:Z
 
     .line 16
     .line 17
-    iget-object v3, v0, Lnw2;->b:LtBh;
+    iget-object v3, v0, LYy2;->b:LBZh;
 
     .line 18
     .line 19
-    invoke-virtual {v3}, LtBh;->d()F
+    invoke-virtual {v3}, LBZh;->d()F
 
     .line 20
     .line 21
@@ -522,7 +507,7 @@
     move-result v3
 
     .line 23
-    invoke-virtual {v0, v1, v3, v2}, Lnw2;->a(FFZ)V
+    invoke-virtual {v0, v1, v3, v2}, LYy2;->a(FFZ)V
 
     .line 24
     .line 25
@@ -532,11 +517,11 @@
     move-object v0, p1
 
     .line 27
-    check-cast v0, Lnw2;
+    check-cast v0, LYy2;
 
     .line 28
     .line 29
-    iget-boolean v3, v0, Lnw2;->g0:Z
+    iget-boolean v3, v0, LYy2;->g0:Z
 
     .line 30
     .line 31
@@ -548,11 +533,11 @@
 
     .line 34
     :cond_2
-    iput-boolean v2, v0, Lnw2;->g0:Z
+    iput-boolean v2, v0, LYy2;->g0:Z
 
     .line 35
     .line 36
-    iget-object v3, v0, Lnw2;->f0:Landroid/view/View;
+    iget-object v3, v0, LYy2;->f0:Landroid/view/View;
 
     .line 37
     .line 38
@@ -598,13 +583,13 @@
     .line 58
     .line 59
     :cond_3
-    invoke-virtual {v0, v4, v1, v2}, Lnw2;->a(FFZ)V
+    invoke-virtual {v0, v4, v1, v2}, LYy2;->a(FFZ)V
 
     .line 60
     .line 61
     .line 62
     :goto_1
-    instance-of v0, p1, Lnw2;
+    instance-of v0, p1, LYy2;
 
     .line 63
     .line 64
@@ -612,7 +597,7 @@
 
     .line 65
     .line 66
-    check-cast p1, Lnw2;
+    check-cast p1, LYy2;
 
     .line 67
     .line 68
@@ -624,7 +609,7 @@
 
     .line 70
     :goto_2
-    iput-object p1, p0, Lcom/snap/stickers/ui/views/CategorySelector;->f0:Lnw2;
+    iput-object p1, p0, Lcom/snap/stickers/ui/views/CategorySelector;->f0:LYy2;
 
     .line 71
     .line 72
@@ -632,7 +617,7 @@
 
     .line 73
     .line 74
-    iget-object p1, p1, Lnw2;->a:Ljyh;
+    iget-object p1, p1, LYy2;->a:LkWh;
 
     .line 75
     .line 76
@@ -640,7 +625,7 @@
 
     .line 77
     .line 78
-    iget p1, p1, Ljyh;->f:I
+    iget p1, p1, LkWh;->f:I
 
     .line 79
     .line 80
@@ -652,7 +637,7 @@
 
     .line 83
     .line 84
-    iget-object p1, p0, Lcom/snap/stickers/ui/views/CategorySelector;->i0:LxI8;
+    iget-object p1, p0, Lcom/snap/stickers/ui/views/CategorySelector;->i0:LSP8;
 
     .line 85
     .line 86
@@ -664,7 +649,7 @@
 
     .line 89
     .line 90
-    iget-object p1, p1, LxI8;->i:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object p1, p1, LSP8;->i:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 91
     .line 92
@@ -674,7 +659,7 @@
     .line 94
     .line 95
     :cond_5
-    iget-object p1, p0, Lcom/snap/stickers/ui/views/CategorySelector;->i0:LxI8;
+    iget-object p1, p0, Lcom/snap/stickers/ui/views/CategorySelector;->i0:LSP8;
 
     .line 96
     .line 97
@@ -682,11 +667,11 @@
 
     .line 98
     .line 99
-    iget-object p1, p1, LxI8;->c:LBJd;
+    iget-object p1, p1, LSP8;->c:LR0e;
 
     .line 100
     .line 101
-    invoke-virtual {p1}, LBJd;->a()LvJd;
+    invoke-virtual {p1}, LR0e;->a()LL0e;
 
     .line 102
     .line 103
@@ -694,7 +679,7 @@
     move-result-object p1
 
     .line 105
-    sget-object v0, Lofd;->j0:Lofd;
+    sget-object v0, Lovd;->j0:Lovd;
 
     .line 106
     .line 107
@@ -702,18 +687,33 @@
 
     .line 108
     .line 109
-    invoke-virtual {p1, v0, v1}, LvJd;->f(LBI3;Ljava/lang/Boolean;)V
+    invoke-virtual {p1, v0, v1}, LL0e;->f(LcM3;Ljava/lang/Boolean;)V
 
     .line 110
     .line 111
     .line 112
-    invoke-virtual {p1}, LvJd;->a()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1}, LL0e;->a()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 113
     .line 114
     .line 115
     :cond_6
     return-void
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/stickers/ui/views/CategorySelector;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 2
+    .line 3
+    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
+
+    .line 4
+    .line 5
+    return v0
 .end method
 
 .method public final dispose()V
@@ -744,7 +744,7 @@
     move-object p1, p0
 
     .line 5
-    iget-object p2, p1, Lcom/snap/stickers/ui/views/CategorySelector;->f0:Lnw2;
+    iget-object p2, p1, Lcom/snap/stickers/ui/views/CategorySelector;->f0:LYy2;
 
     .line 6
     .line 7
@@ -752,7 +752,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p0, p2}, Lcom/snap/stickers/ui/views/CategorySelector;->a(LxLf;)V
+    invoke-virtual {p0, p2}, Lcom/snap/stickers/ui/views/CategorySelector;->a(LR4g;)V
 
     .line 10
     .line 11

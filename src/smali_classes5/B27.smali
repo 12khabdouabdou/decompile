@@ -1,39 +1,42 @@
 .class public final LB27;
-.super Ljava/lang/Object;
+.super LVWk;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lz37;
+.field public final a:LY79;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 1
-
-    .line 3
-    sget-object v0, LA37;->a:LA37;
-
-    .line 4
-    invoke-direct {p0, v0}, LB27;-><init>(Lz37;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lz37;)V
+.method public constructor <init>(LY79;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, LB27;->a:Lz37;
+    .line 3
+    .line 4
+    iput-object p1, p0, LB27;->a:LY79;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
+.method public final c()LY79;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LB27;->a:LY79;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
@@ -68,15 +71,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, LB27;->a:Lz37;
+    iget-object v1, p0, LB27;->a:LY79;
 
     .line 14
     .line 15
-    iget-object p1, p1, LB27;->a:Lz37;
+    iget-object p1, p1, LB27;->a:LY79;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -99,30 +102,34 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, LB27;->a:Lz37;
+    iget-object v0, p0, LB27;->a:LY79;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
     .line 6
+    .line 7
+    .line 8
     move-result v0
 
-    .line 7
+    .line 9
     return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "Activated(selection="
+    const-string v1, "Unresolved(id="
 
     .line 4
     .line 5
@@ -131,31 +138,21 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LB27;->a:Lz37;
+    iget-object v1, p0, LB27;->a:LY79;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ")"
 
     .line 11
     .line 12
-    .line 13
-    const-string v1, ")"
+    invoke-static {v0, v1, v2}, LAM;->b(Ljava/lang/StringBuilder;LY79;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
     move-result-object v0
 
-    .line 22
+    .line 16
     return-object v0
 .end method

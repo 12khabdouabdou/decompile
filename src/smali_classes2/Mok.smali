@@ -1,113 +1,28 @@
-.class public final LMok;
+.class public abstract LMok;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
-
 
 # static fields
-.field public static final a:LMok;
+.field public static final synthetic a:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 2
 
     .line 1
-    new-instance v0, LMok;
+    sget-object v0, LKti;->o0:LKti;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x3
 
     .line 4
+    invoke-static {v1, v0}, Lfqj;->y(ILkotlin/jvm/functions/Function0;)LRS9;
+
     .line 5
     .line 6
-    sput-object v0, LMok;->a:LMok;
-
     .line 7
-    .line 8
-    new-instance v0, Lgdk;
-
-    .line 9
-    .line 10
-    const/4 v1, 0x1
-
-    .line 11
-    invoke-direct {v0, v1}, Lgdk;-><init>(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    const-class v1, LAdk;
-
-    .line 15
-    .line 16
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    invoke-static {v0, v2}, LsMj;->p(Ljava/util/HashMap;I)Lgdk;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 30
-    .line 31
-    .line 32
     return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
 .end method

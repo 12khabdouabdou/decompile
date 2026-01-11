@@ -1,3 +1,40 @@
-.class public final LV8e;
-.super LeN;
+.class public abstract LV8e;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+
+# static fields
+.field public static final a:Lnp0;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Lz7e;->Z:Lz7e;
+
+    .line 2
+    .line 3
+    const-string v1, "PreviewQuotaChecker"
+
+    .line 4
+    .line 5
+    invoke-static {v0, v0, v1}, LzHa;->m(Lz7e;Lz7e;Ljava/lang/String;)Lnp0;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    sput-object v0, LV8e;->a:Lnp0;
+
+    .line 10
+    .line 11
+    sget-object v0, LJp0;->a:LJp0;
+
+    .line 12
+    .line 13
+    return-void
+.end method

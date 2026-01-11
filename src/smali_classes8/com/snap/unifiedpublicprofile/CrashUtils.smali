@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LB84;
+    proxyClass = Lgd4;
     schema = "\'reportNonFatal\':f|m|(s, s?),\'reportWithFatalCrash\':f|m|(s, s?),\'fatalCrashNoReport\':f|m|(s?)"
     typeReferences = {}
 .end annotation

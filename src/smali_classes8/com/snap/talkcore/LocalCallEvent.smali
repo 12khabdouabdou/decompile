@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talkcore/LocalCallEvent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'dismissCall\':r?:\'[0]\',\'updateMedia\':r?:\'[1]\'"
     typeReferences = {

@@ -4,29 +4,26 @@
 
 
 # virtual methods
-.method public abstract deleteExplorerStatus(Ljava/lang/String;Ljava/lang/String;Ls16;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract deleteExplorerStatus(Ljava/lang/String;Ljava/lang/String;Lq46;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # Ls16;
-        .annotation runtime Ljv1;
+    .param p3    # Lq46;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -37,40 +34,40 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Ls16;",
+            "Lq46;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getBatchExplorerViews(Ljava/lang/String;Ljava/lang/String;LHQ0;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getBatchExplorerViews(Ljava/lang/String;Ljava/lang/String;LOT0;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LHQ0;
-        .annotation runtime Ljv1;
+    .param p3    # LOT0;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -81,45 +78,45 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LHQ0;",
+            "LOT0;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LIQ0;",
+            "Ljnf<",
+            "LPT0;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getExplorerStatuses(Ljava/lang/String;Ljava/lang/String;LKk8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getExplorerStatuses(Ljava/lang/String;Ljava/lang/String;Llr8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LKk8;
-        .annotation runtime Ljv1;
+    .param p3    # Llr8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snapchat-Personal-Version"
         .end annotation
     .end param
     .param p5    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -130,46 +127,46 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LKk8;",
+            "Llr8;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LLk8;",
+            "Ljnf<",
+            "Lmr8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getMyExplorerStatuses(Ljava/lang/String;Ljava/lang/String;Lxn8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getMyExplorerStatuses(Ljava/lang/String;Ljava/lang/String;LZt8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # Lxn8;
-        .annotation runtime Ljv1;
+    .param p3    # LZt8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snapchat-Personal-Version"
         .end annotation
     .end param
     .param p5    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -180,14 +177,17 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Lxn8;",
+            "LZt8;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lyn8;",
+            "Ljnf<",
+            "Lau8;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

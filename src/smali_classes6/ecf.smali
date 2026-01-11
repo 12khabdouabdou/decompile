@@ -1,110 +1,145 @@
-.class public final Lecf;
-.super LrE9;
+.class public final enum Lecf;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
+# static fields
+.field public static final enum a:Lecf;
 
-# instance fields
-.field public final synthetic X:J
+.field public static final enum b:Lecf;
 
-.field public final synthetic Y:Z
-
-.field public final synthetic a:Ljava/lang/String;
-
-.field public final synthetic b:LiE2;
-
-.field public final synthetic c:Z
-
-.field public final synthetic t:Z
+.field public static final synthetic c:[Lecf;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;LiE2;ZZJZ)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    iput-object p1, p0, Lecf;->a:Ljava/lang/String;
+    const/4 v0, 0x2
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
-    iput-object p2, p0, Lecf;->b:LiE2;
+    const/4 v2, 0x0
 
     .line 4
+    new-instance v3, Lecf;
+
     .line 5
-    iput-boolean p3, p0, Lecf;->c:Z
-
     .line 6
+    const-string v4, "AUDIO"
+
     .line 7
-    iput-boolean p4, p0, Lecf;->t:Z
-
     .line 8
-    .line 9
-    iput-wide p5, p0, Lecf;->X:J
+    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 9
     .line 10
     .line 11
-    iput-boolean p7, p0, Lecf;->Y:Z
+    sput-object v3, Lecf;->a:Lecf;
 
     .line 12
     .line 13
-    const/4 p1, 0x1
+    new-instance v4, Lecf;
 
     .line 14
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
     .line 15
+    const-string v5, "VIDEO"
+
     .line 16
     .line 17
+    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    sput-object v4, Lecf;->b:Lecf;
+
+    .line 21
+    .line 22
+    new-instance v5, Lecf;
+
+    .line 23
+    .line 24
+    const-string v6, "TEXT"
+
+    .line 25
+    .line 26
+    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 27
+    .line 28
+    .line 29
+    const/4 v6, 0x3
+
+    .line 30
+    new-array v6, v6, [Lecf;
+
+    .line 31
+    .line 32
+    aput-object v3, v6, v2
+
+    .line 33
+    .line 34
+    aput-object v4, v6, v1
+
+    .line 35
+    .line 36
+    aput-object v5, v6, v0
+
+    .line 37
+    .line 38
+    sput-object v6, Lecf;->c:[Lecf;
+
+    .line 39
+    .line 40
     return-void
 .end method
 
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public static valueOf(Ljava/lang/String;)Lecf;
+    .locals 1
 
     .line 1
-    move-object v0, p1
+    const-class v0, Lecf;
 
     .line 2
-    check-cast v0, LaJg;
-
     .line 3
-    .line 4
-    iget-wide v5, p0, Lecf;->X:J
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
+    .line 4
     .line 5
     .line 6
-    iget-boolean v7, p0, Lecf;->Y:Z
+    move-result-object p0
 
     .line 7
+    check-cast p0, Lecf;
+
     .line 8
-    iget-object v1, p0, Lecf;->a:Ljava/lang/String;
-
     .line 9
-    .line 10
-    iget-object v2, p0, Lecf;->b:LiE2;
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    iget-boolean v3, p0, Lecf;->c:Z
+.method public static values()[Lecf;
+    .locals 1
 
-    .line 13
-    .line 14
-    iget-boolean v4, p0, Lecf;->t:Z
+    .line 1
+    sget-object v0, Lecf;->c:[Lecf;
 
-    .line 15
-    .line 16
-    invoke-interface/range {v0 .. v7}, LaJg;->k(Ljava/lang/String;LiE2;ZZJZ)V
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 17
-    .line 18
-    .line 19
-    sget-object p1, Li7j;->a:Li7j;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 20
-    .line 21
-    return-object p1
+    .line 7
+    check-cast v0, [Lecf;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

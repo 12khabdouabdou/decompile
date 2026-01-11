@@ -123,7 +123,7 @@
     .end annotation
 .end method
 
-.method private native native_initialize2(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;)V
+.method private native native_initialize2(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;Lcom/snapchat/client/snap_maps_sdk/CofProvider;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(J",
@@ -139,6 +139,7 @@
             "Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;",
             "Lcom/snapchat/client/snap_maps_sdk/FontProvider;",
             "Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;",
+            "Lcom/snapchat/client/snap_maps_sdk/CofProvider;",
             ")V"
         }
     .end annotation
@@ -276,8 +277,8 @@
     return-void
 .end method
 
-.method public initialize2(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;)V
-    .locals 12
+.method public initialize2(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;Lcom/snapchat/client/snap_maps_sdk/CofProvider;)V
+    .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -293,6 +294,7 @@
             "Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;",
             "Lcom/snapchat/client/snap_maps_sdk/FontProvider;",
             "Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;",
+            "Lcom/snapchat/client/snap_maps_sdk/CofProvider;",
             ")V"
         }
     .end annotation
@@ -311,38 +313,43 @@
     move-object v4, p2
 
     .line 6
-    move-object v5, p3
+    move-object/from16 v5, p3
 
     .line 7
+    .line 8
     move-object/from16 v6, p4
 
-    .line 8
     .line 9
+    .line 10
     move-object/from16 v7, p5
 
-    .line 10
     .line 11
+    .line 12
     move-object/from16 v8, p6
 
-    .line 12
     .line 13
+    .line 14
     move-object/from16 v9, p7
 
-    .line 14
     .line 15
+    .line 16
     move-object/from16 v10, p8
 
-    .line 16
     .line 17
+    .line 18
     move-object/from16 v11, p9
 
-    .line 18
     .line 19
-    invoke-direct/range {v0 .. v11}, Lcom/snapchat/client/snap_maps_sdk/MapSdk$CppProxy;->native_initialize2(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;)V
-
     .line 20
+    move-object/from16 v12, p10
+
     .line 21
     .line 22
+    invoke-direct/range {v0 .. v12}, Lcom/snapchat/client/snap_maps_sdk/MapSdk$CppProxy;->native_initialize2(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;Ljava/util/HashMap;Lcom/snapchat/client/snap_maps_sdk/PublicUserInfoProvider;Lcom/snapchat/client/snap_maps_sdk/DateTimeFormatter;Lcom/snapchat/client/snap_maps_sdk/ContentObjectResolver;Lcom/snapchat/client/bitmoji_fetcher/BitmojiFetcher;Lcom/snapchat/client/snap_maps_sdk/MemoriesFetcher;Lcom/snapchat/client/snap_maps_sdk/FontProvider;Lcom/snapchat/client/snap_maps_sdk/CrashLoggingProvider;Lcom/snapchat/client/snap_maps_sdk/CofProvider;)V
+
+    .line 23
+    .line 24
+    .line 25
     return-void
 .end method
 

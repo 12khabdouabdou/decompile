@@ -1,3 +1,3 @@
-.class public final Lr6e;
+.class public abstract Lr6e;
 .super Ljava/lang/Object;
 .source "SourceFile"

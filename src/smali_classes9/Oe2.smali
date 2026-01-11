@@ -1,31 +1,234 @@
-.class public final LOe2;
-.super LPe2;
+.class public final enum LOe2;
+.super Ljava/lang/Enum;
 .source "SourceFile"
+
+# interfaces
+.implements LUT6;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "LOe2;",
+        ">;",
+        "LUT6;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final enum X:LOe2;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "CAMERA_SWITCHER_TEXT_MODE"
+    .end annotation
+.end field
+
+.field public static final synthetic Y:[LOe2;
+
+.field public static final enum b:LOe2;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "CAMERA_SWITCHER_SNAP"
+    .end annotation
+.end field
+
+.field public static final enum c:LOe2;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "CAMERA_SWITCHER_DM_CREATE"
+    .end annotation
+.end field
+
+.field public static final enum t:LOe2;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "CAMERA_SWITCHER_TEMPLATES"
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
+.field public final a:I
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
+.method static constructor <clinit>()V
+    .locals 9
+
+    .line 1
+    new-instance v0, LOe2;
+
+    .line 2
+    .line 3
+    const-string v1, "CAMERA_SWITCHER_SNAP"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2, v2}, LOe2;-><init>(Ljava/lang/String;II)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, LOe2;->b:LOe2;
+
+    .line 10
+    .line 11
+    new-instance v1, LOe2;
+
+    .line 12
+    .line 13
+    const-string v3, "CAMERA_SWITCHER_DM_CREATE"
+
+    .line 14
+    .line 15
+    const/4 v4, 0x1
+
+    .line 16
+    invoke-direct {v1, v3, v4, v4}, LOe2;-><init>(Ljava/lang/String;II)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v1, LOe2;->c:LOe2;
+
+    .line 20
+    .line 21
+    new-instance v3, LOe2;
+
+    .line 22
+    .line 23
+    const-string v5, "CAMERA_SWITCHER_TEMPLATES"
+
+    .line 24
+    .line 25
+    const/4 v6, 0x2
+
+    .line 26
+    invoke-direct {v3, v5, v6, v6}, LOe2;-><init>(Ljava/lang/String;II)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v3, LOe2;->t:LOe2;
+
+    .line 30
+    .line 31
+    new-instance v5, LOe2;
+
+    .line 32
+    .line 33
+    const-string v7, "CAMERA_SWITCHER_TEXT_MODE"
+
+    .line 34
+    .line 35
+    const/4 v8, 0x3
+
+    .line 36
+    invoke-direct {v5, v7, v8, v8}, LOe2;-><init>(Ljava/lang/String;II)V
+
+    .line 37
+    .line 38
+    .line 39
+    sput-object v5, LOe2;->X:LOe2;
+
+    .line 40
+    .line 41
+    const/4 v7, 0x4
+
+    .line 42
+    new-array v7, v7, [LOe2;
+
+    .line 43
+    .line 44
+    aput-object v0, v7, v2
+
+    .line 45
+    .line 46
+    aput-object v1, v7, v4
+
+    .line 47
+    .line 48
+    aput-object v3, v7, v6
+
+    .line 49
+    .line 50
+    aput-object v5, v7, v8
+
+    .line 51
+    .line 52
+    sput-object v7, LOe2;->Y:[LOe2;
+
+    .line 53
+    .line 54
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
 
     .line 1
-    iput p1, p0, LOe2;->a:I
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput-object p2, p0, LOe2;->b:Ljava/lang/Object;
+    .line 2
+    .line 3
+    .line 4
+    iput p3, p0, LOe2;->a:I
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
+    .line 5
+    .line 6
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LOe2;
+    .locals 1
+
+    .line 1
+    const-class v0, LOe2;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LOe2;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LOe2;
+    .locals 1
+
+    .line 1
+    sget-object v0, LOe2;->Y:[LOe2;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [LOe2;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LOe2;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Throwable;)V
+.method public final a()I
     .locals 1
 
     .line 1
@@ -33,346 +236,5 @@
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, LOe2;->b:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    check-cast v0, Lkotlin/jvm/functions/Function1;
-
-    .line 9
-    .line 10
-    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-
-    .line 14
-    :pswitch_0
-    iget-object p1, p0, LOe2;->b:Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    check-cast p1, LOq6;
-
-    .line 17
-    .line 18
-    invoke-interface {p1}, LOq6;->dispose()V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-
-    .line 22
-    :pswitch_1
-    if-eqz p1, :cond_0
-
-    .line 23
-    .line 24
-    iget-object p1, p0, LOe2;->b:Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    check-cast p1, Ljava/util/concurrent/ScheduledFuture;
-
-    .line 27
-    .line 28
-    const/4 v0, 0x0
-
-    .line 29
-    invoke-interface {p1, v0}, Ljava/util/concurrent/Future;->cancel(Z)Z
-
-    .line 30
-    .line 31
-    .line 32
-    :cond_0
-    return-void
-
-    .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget v0, p0, LOe2;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 7
-    .line 8
-    invoke-virtual {p0, p1}, LOe2;->a(Ljava/lang/Throwable;)V
-
-    .line 9
-    .line 10
-    .line 11
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 12
-    .line 13
-    return-object p1
-
-    .line 14
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 15
-    .line 16
-    invoke-virtual {p0, p1}, LOe2;->a(Ljava/lang/Throwable;)V
-
-    .line 17
-    .line 18
-    .line 19
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 20
-    .line 21
-    return-object p1
-
-    .line 22
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 23
-    .line 24
-    invoke-virtual {p0, p1}, LOe2;->a(Ljava/lang/Throwable;)V
-
-    .line 25
-    .line 26
-    .line 27
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 28
-    .line 29
-    return-object p1
-
-    .line 30
-    nop
-
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LOe2;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 7
-    .line 8
-    const-string v1, "InvokeOnCancel["
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    iget-object v1, p0, LOe2;->b:Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    check-cast v1, Lkotlin/jvm/functions/Function1;
-
-    .line 16
-    .line 17
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v1
-
-    .line 21
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v1
-
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    const/16 v1, 0x40
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    invoke-static {p0}, Lsc5;->s0(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v1
-
-    .line 37
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 38
-    .line 39
-    .line 40
-    const/16 v1, 0x5d
-
-    .line 41
-    .line 42
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 43
-    .line 44
-    .line 45
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v0
-
-    .line 49
-    return-object v0
-
-    .line 50
-    :pswitch_0
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    const-string v1, "DisposeOnCancel["
-
-    .line 53
-    .line 54
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    iget-object v1, p0, LOe2;->b:Ljava/lang/Object;
-
-    .line 58
-    .line 59
-    check-cast v1, LOq6;
-
-    .line 60
-    .line 61
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 62
-    .line 63
-    .line 64
-    const/16 v1, 0x5d
-
-    .line 65
-    .line 66
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v0
-
-    .line 73
-    return-object v0
-
-    .line 74
-    :pswitch_1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 75
-    .line 76
-    const-string v1, "CancelFutureOnCancel["
-
-    .line 77
-    .line 78
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 79
-    .line 80
-    .line 81
-    iget-object v1, p0, LOe2;->b:Ljava/lang/Object;
-
-    .line 82
-    .line 83
-    check-cast v1, Ljava/util/concurrent/ScheduledFuture;
-
-    .line 84
-    .line 85
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 86
-    .line 87
-    .line 88
-    const/16 v1, 0x5d
-
-    .line 89
-    .line 90
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 91
-    .line 92
-    .line 93
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 94
-    .line 95
-    .line 96
-    move-result-object v0
-
-    .line 97
-    return-object v0
-
-    .line 98
-    nop
-
-    .line 99
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return v0
 .end method

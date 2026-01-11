@@ -70,7 +70,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 5
 
     .line 1
@@ -98,7 +98,7 @@
 
     .line 12
     .line 13
-    invoke-direct {v3, p1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferExactSubscriber;-><init>(LV6i;ILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
+    invoke-direct {v3, p1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferExactSubscriber;-><init>(Lmvi;ILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
 
     .line 14
     .line 15
@@ -120,7 +120,7 @@
 
     .line 23
     .line 24
-    invoke-direct {v4, p1, v2, v3, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;-><init>(LV6i;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
+    invoke-direct {v4, p1, v2, v3, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;-><init>(Lmvi;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
 
     .line 25
     .line 26
@@ -138,7 +138,7 @@
 
     .line 32
     .line 33
-    invoke-direct {v4, p1, v2, v3, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;-><init>(LV6i;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
+    invoke-direct {v4, p1, v2, v3, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;-><init>(Lmvi;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
 
     .line 34
     .line 35

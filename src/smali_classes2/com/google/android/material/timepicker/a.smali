@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/material/timepicker/a;
-.super Loqg;
+.super LxLg;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
     const/4 v0, 0x1
 
     .line 2
-    invoke-direct {p0, v0}, Loqg;-><init>(I)V
+    invoke-direct {p0, v0}, LxLg;-><init>(I)V
 
     .line 3
     .line 4

@@ -5,7 +5,7 @@
 # interfaces
 .implements Lio/reactivex/rxjava3/core/SingleObserver;
 .implements Lio/reactivex/rxjava3/core/FlowableSubscriber;
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -30,13 +30,13 @@
         "TS;>;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TT;>;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/functions/Function;
 
@@ -46,7 +46,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/functions/Function;)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;)V
     .locals 0
 
     .line 1
@@ -55,7 +55,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:Lmvi;
 
     .line 5
     .line 6
@@ -126,11 +126,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 4
     .line 5
@@ -142,11 +142,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 4
     .line 5
@@ -158,26 +158,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
-
-.method public final onSubscribe(Lc7i;)V
-    .locals 1
-
-    .line 3
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->c:Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-static {v0, p0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Lc7i;)V
-
     return-void
 .end method
 
@@ -188,9 +177,20 @@
     iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->t:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 2
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:Lmvi;
 
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
+
+    return-void
+.end method
+
+.method public final onSubscribe(Ltvi;)V
+    .locals 1
+
+    .line 3
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-static {v0, p0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Ltvi;)V
 
     return-void
 .end method
@@ -212,7 +212,7 @@
     move-result-object p1
 
     .line 7
-    check-cast p1, LZne;
+    check-cast p1, LSFe;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -238,7 +238,7 @@
 
     .line 18
     .line 19
-    invoke-interface {p1, p0}, LZne;->subscribe(LV6i;)V
+    invoke-interface {p1, p0}, LSFe;->subscribe(Lmvi;)V
 
     .line 20
     .line 21
@@ -256,11 +256,11 @@
     .line 25
     .line 26
     .line 27
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapPublisher$SingleFlatMapPublisherObserver;->a:Lmvi;
 
     .line 28
     .line 29
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 30
     .line 31

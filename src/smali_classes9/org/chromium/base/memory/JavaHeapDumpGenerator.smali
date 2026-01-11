@@ -36,7 +36,7 @@
 
     .line 10
     .line 11
-    invoke-static {v1, p0, v2}, Ln9f;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, p0, v2}, LToi;->p(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 12
     .line 13
@@ -76,7 +76,7 @@
 
     .line 30
     .line 31
-    invoke-static {v2, p0, v1}, LVck;->l(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, p0, v1}, LRAk;->g(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 32
     .line 33

@@ -1,143 +1,150 @@
-.class public final Ljbe;
+.class public abstract Ljbe;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Z
+# static fields
+.field public static final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(Z)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-boolean p1, p0, Ljbe;->a:Z
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Ljbe;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Ljbe;
-
-    .line 12
-    .line 13
-    iget-boolean v1, p0, Ljbe;->a:Z
-
-    .line 14
-    .line 15
-    iget-boolean p1, p1, Ljbe;->a:Z
-
-    .line 16
-    .line 17
-    if-eq v1, p1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Ljbe;->a:Z
+    sget-object v0, Lz7e;->Z:Lz7e;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    const/16 v0, 0x4cf
-
     .line 6
-    .line 7
-    return v0
+    const-string v0, "PreviewRenderPassUtils"
 
+    .line 7
     .line 8
-    :cond_0
-    const/16 v0, 0x4d5
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 9
     .line 10
-    return v0
+    .line 11
+    sget-object v0, LJp0;->a:LJp0;
+
+    .line 12
+    .line 13
+    return-void
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public static a(LlY5;LeRe;LG21;LJe8;ZLio/reactivex/rxjava3/disposables/CompositeDisposable;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v0, LjEe;
 
     .line 2
     .line 3
-    const-string v1, "ProfileSavedMediaUXConfig(reduceAnimation="
+    const/16 v1, 0xd
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1, p1}, LjEe;-><init>(ILjava/lang/Object;)V
 
     .line 6
     .line 7
     .line 8
-    iget-boolean v1, p0, Ljbe;->a:Z
+    iget-object p1, p1, LeRe;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 9
     .line 10
-    const-string v2, ")"
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->b0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
 
     .line 11
     .line 12
-    invoke-static {v2, v0, v1}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
-
     .line 13
-    .line 14
-    .line 15
-    move-result-object v0
+    move-result-object p1
 
+    .line 14
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->f0()Lio/reactivex/rxjava3/core/Single;
+
+    .line 15
     .line 16
-    return-object v0
+    .line 17
+    move-result-object p1
+
+    .line 18
+    sget-object v0, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
+
+    .line 19
+    .line 20
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
+
+    .line 21
+    .line 22
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance p1, Libe;
+
+    .line 26
+    .line 27
+    const/4 v0, 0x0
+
+    .line 28
+    invoke-direct {p1, p2, v0, p3}, Libe;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 29
+    .line 30
+    .line 31
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 32
+    .line 33
+    invoke-direct {p2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 34
+    .line 35
+    .line 36
+    sget-object p1, LkMd;->X:LkMd;
+
+    .line 37
+    .line 38
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/core/Single;->p(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p1
+
+    .line 42
+    new-instance p2, LJ7;
+
+    .line 43
+    .line 44
+    const/16 p3, 0x11
+
+    .line 45
+    .line 46
+    invoke-direct {p2, p0, p4, p3}, LJ7;-><init>(Ljava/lang/Object;ZI)V
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p0
+
+    .line 53
+    invoke-virtual {p5, p0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 54
+    .line 55
+    .line 56
+    return-void
 .end method

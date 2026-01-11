@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final synthetic a:Lr0g;
+.field public final synthetic a:LHkg;
 
 
 # direct methods
-.method public constructor <init>(Lr0g;)V
+.method public constructor <init>(LHkg;)V
     .locals 0
 
     .line 1
@@ -20,7 +20,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/lenses/app/explorer/data/collections/a;->a:Lr0g;
+    iput-object p1, p0, Lcom/snap/lenses/app/explorer/data/collections/a;->a:LHkg;
 
     .line 5
     .line 6
@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method public final B(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final x(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 7
 
     .line 1
@@ -53,11 +53,11 @@
 
     .line 10
     .line 11
-    check-cast p4, Ls38;
+    check-cast p4, LQ98;
 
     .line 12
     .line 13
-    iget-object v0, p0, Lcom/snap/lenses/app/explorer/data/collections/a;->a:Lr0g;
+    iget-object v0, p0, Lcom/snap/lenses/app/explorer/data/collections/a;->a:LHkg;
 
     .line 14
     .line 15
@@ -65,7 +65,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1}, Lr0g;->a(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, LHkg;->a(Ljava/lang/Class;)Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -77,11 +77,11 @@
 
     .line 22
     .line 23
-    iget-object p4, p4, Ls38;->a:Ljava/util/Map;
+    iget-object p4, p4, LQ98;->a:Ljava/util/Map;
 
     .line 24
     .line 25
-    invoke-static {p4}, LEdb;->u0(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {p4}, Lkrb;->Q0(Ljava/util/Map;)Ljava/util/Map;
 
     .line 26
     .line 27
@@ -110,7 +110,7 @@
 
     .line 39
     .line 40
-    invoke-static {p1, p2, p4, p3}, LDM4;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2, p4, p3}, LBv7;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 41
     .line 42
@@ -131,7 +131,7 @@
     const/4 v6, 0x0
 
     .line 49
-    invoke-direct/range {v1 .. v6}, Lcom/snap/lenses/app/explorer/data/collections/LoggingLensesExplorerCollectionsHttpInterface;-><init>(Ljava/lang/String;Lcom/snap/lenses/app/explorer/data/collections/LensesExplorerCollectionsHttpInterface;LA73;ILHr5;)V
+    invoke-direct/range {v1 .. v6}, Lcom/snap/lenses/app/explorer/data/collections/LoggingLensesExplorerCollectionsHttpInterface;-><init>(Ljava/lang/String;Lcom/snap/lenses/app/explorer/data/collections/LensesExplorerCollectionsHttpInterface;LQ93;ILex5;)V
 
     .line 50
     .line 51

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talkcore/CallingSessionState;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'conversationId\':s,\'callId\':s?,\'callMedia\':r?:\'[0]\',\'localParticipant\':r:\'[1]\',\'remoteParticipants\':a<r:\'[1]\'>,\'isConnecting\':b,\'callJoinedTimestampMs\':d@?,\'isHdVideoNegotiated\':b"
     typeReferences = {

@@ -1,399 +1,243 @@
 .class public final LIj7;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic X:J
 
-.field public final synthetic b:I
+.field public final synthetic Y:J
 
-.field public final synthetic c:LPj7;
+.field public final synthetic Z:Ljava/lang/String;
+
+.field public final synthetic a:Ljava/lang/String;
+
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Ljava/lang/String;
+
+.field public final synthetic e0:Ljava/lang/String;
+
+.field public final synthetic f0:Ljava/lang/String;
+
+.field public final synthetic t:[B
 
 
 # direct methods
-.method public constructor <init>(ILPj7;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, LIj7;->a:I
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[BJJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput p1, p0, LIj7;->b:I
-
-    iput-object p2, p0, LIj7;->c:LPj7;
-
-    return-void
-.end method
-
-.method public constructor <init>(LPj7;I)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, LIj7;->a:I
+    iput-object p1, p0, LIj7;->a:Ljava/lang/String;
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 3
+    iput-object p2, p0, LIj7;->b:Ljava/lang/String;
 
-    iput-object p1, p0, LIj7;->c:LPj7;
+    .line 4
+    .line 5
+    iput-object p3, p0, LIj7;->c:Ljava/lang/String;
 
-    iput p2, p0, LIj7;->b:I
+    .line 6
+    .line 7
+    iput-object p4, p0, LIj7;->t:[B
 
+    .line 8
+    .line 9
+    iput-wide p5, p0, LIj7;->X:J
+
+    .line 10
+    .line 11
+    iput-wide p7, p0, LIj7;->Y:J
+
+    .line 12
+    .line 13
+    iput-object p9, p0, LIj7;->Z:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iput-object p10, p0, LIj7;->e0:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iput-object p11, p0, LIj7;->f0:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    const/4 p1, 0x1
+
+    .line 20
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    .line 21
+    .line 22
+    .line 23
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget v0, p0, LIj7;->a:I
+    check-cast p1, LFT;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v0, 0x0
 
     .line 4
+    iget-object v1, p0, LIj7;->a:Ljava/lang/String;
+
     .line 5
     .line 6
-    check-cast p1, Ljava/util/List;
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
 
     .line 7
     .line 8
-    invoke-static {p1}, Lue3;->S0(Ljava/util/List;)Ljava/lang/Object;
-
     .line 9
-    .line 10
-    .line 11
-    move-result-object p1
+    const/4 v0, 0x1
 
+    .line 10
+    iget-object v1, p0, LIj7;->b:Ljava/lang/String;
+
+    .line 11
     .line 12
-    check-cast p1, Lth7;
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
 
     .line 13
     .line 14
-    if-eqz p1, :cond_0
-
     .line 15
+    const/4 v0, 0x2
+
     .line 16
-    iget-wide v0, p1, Lth7;->c:J
+    iget-object v1, p0, LIj7;->c:Ljava/lang/String;
 
     .line 17
     .line 18
-    goto :goto_0
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
 
     .line 19
-    :cond_0
-    const-wide v0, 0x7fffffffffffffffL
-
     .line 20
     .line 21
+    const/4 v0, 0x3
+
     .line 22
+    iget-object v1, p0, LIj7;->t:[B
+
     .line 23
     .line 24
-    :goto_0
-    if-eqz p1, :cond_1
+    invoke-interface {p1, v0, v1}, LFT;->j(I[B)V
 
     .line 25
     .line 26
-    iget-object p1, p1, Lth7;->b:Lcom/snapchat/client/messaging/UUID;
-
     .line 27
-    .line 28
-    goto :goto_1
+    iget-wide v0, p0, LIj7;->X:J
 
+    .line 28
     .line 29
-    :cond_1
-    const/4 p1, 0x0
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 30
-    :goto_1
-    const/4 v2, 0x4
-
     .line 31
-    iget v3, p0, LIj7;->b:I
-
     .line 32
+    move-result-object v0
+
     .line 33
-    const-string v4, ""
+    const/4 v1, 0x4
 
     .line 34
-    .line 35
-    iget-object v5, p0, LIj7;->c:LPj7;
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
 
+    .line 35
     .line 36
     .line 37
-    if-ne v3, v2, :cond_3
+    iget-wide v0, p0, LIj7;->Y:J
 
     .line 38
     .line 39
-    iget-object v2, v5, LPj7;->b:Lbke;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 40
     .line 41
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
-
     .line 42
+    move-result-object v0
+
     .line 43
+    const/4 v1, 0x5
+
     .line 44
-    move-result-object v2
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
 
     .line 45
-    check-cast v2, LNre;
-
     .line 46
     .line 47
-    iget-object v3, v2, LNre;->a:LfY4;
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 48
     .line 49
-    invoke-virtual {v3}, LfY4;->get()Ljava/lang/Object;
+    const/4 v1, 0x6
 
     .line 50
+    invoke-interface {p1, v1, v0}, LFT;->h(ILjava/lang/Boolean;)V
+
     .line 51
     .line 52
-    move-result-object v3
-
     .line 53
-    check-cast v3, LBJd;
+    const/4 v1, 0x7
 
     .line 54
-    .line 55
-    invoke-virtual {v3}, LBJd;->a()LvJd;
+    invoke-interface {p1, v1, v0}, LFT;->h(ILjava/lang/Boolean;)V
 
+    .line 55
     .line 56
     .line 57
-    .line 58
-    move-result-object v3
+    const/16 v0, 0x8
 
+    .line 58
     .line 59
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iget-object v1, p0, LIj7;->Z:Ljava/lang/String;
 
     .line 60
     .line 61
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
+
     .line 62
-    move-result-object v0
-
     .line 63
-    iget-object v1, v2, LNre;->e:Lba0;
-
     .line 64
-    .line 65
-    invoke-virtual {v3, v1, v0}, LvJd;->l(LBI3;Ljava/lang/Long;)V
+    const/16 v0, 0x9
 
+    .line 65
     .line 66
+    iget-object v1, p0, LIj7;->e0:Ljava/lang/String;
+
     .line 67
     .line 68
-    if-eqz p1, :cond_2
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
 
     .line 69
     .line 70
-    invoke-static {p1}, LI0j;->X(Lcom/snapchat/client/messaging/UUID;)Ljava/lang/String;
-
     .line 71
+    const/16 v0, 0xa
+
     .line 72
     .line 73
-    move-result-object v4
+    iget-object v1, p0, LIj7;->f0:Ljava/lang/String;
 
     .line 74
-    :cond_2
-    iget-object p1, v2, LNre;->f:Lba0;
-
     .line 75
-    .line 76
-    invoke-virtual {v3, p1, v4}, LvJd;->m(LBI3;Ljava/lang/String;)V
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
 
+    .line 76
     .line 77
     .line 78
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 79
-    invoke-virtual {v3}, LvJd;->c()Lio/reactivex/rxjava3/core/Completable;
-
     .line 80
-    .line 81
-    .line 82
-    move-result-object p1
-
-    .line 83
-    goto :goto_2
-
-    .line 84
-    :cond_3
-    iget-object v2, v5, LPj7;->b:Lbke;
-
-    .line 85
-    .line 86
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object v2
-
-    .line 90
-    check-cast v2, LNre;
-
-    .line 91
-    .line 92
-    iget-object v3, v2, LNre;->a:LfY4;
-
-    .line 93
-    .line 94
-    invoke-virtual {v3}, LfY4;->get()Ljava/lang/Object;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v3
-
-    .line 98
-    check-cast v3, LBJd;
-
-    .line 99
-    .line 100
-    invoke-virtual {v3}, LBJd;->a()LvJd;
-
-    .line 101
-    .line 102
-    .line 103
-    move-result-object v3
-
-    .line 104
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v0
-
-    .line 108
-    iget-object v1, v2, LNre;->c:Lba0;
-
-    .line 109
-    .line 110
-    invoke-virtual {v3, v1, v0}, LvJd;->l(LBI3;Ljava/lang/Long;)V
-
-    .line 111
-    .line 112
-    .line 113
-    if-eqz p1, :cond_4
-
-    .line 114
-    .line 115
-    invoke-static {p1}, LI0j;->X(Lcom/snapchat/client/messaging/UUID;)Ljava/lang/String;
-
-    .line 116
-    .line 117
-    .line 118
-    move-result-object v4
-
-    .line 119
-    :cond_4
-    iget-object p1, v2, LNre;->d:Lba0;
-
-    .line 120
-    .line 121
-    invoke-virtual {v3, p1, v4}, LvJd;->m(LBI3;Ljava/lang/String;)V
-
-    .line 122
-    .line 123
-    .line 124
-    invoke-virtual {v3}, LvJd;->c()Lio/reactivex/rxjava3/core/Completable;
-
-    .line 125
-    .line 126
-    .line 127
-    move-result-object p1
-
-    .line 128
-    :goto_2
     return-object p1
-
-    .line 129
-    :pswitch_0
-    check-cast p1, Ljj7;
-
-    .line 130
-    .line 131
-    iget-object v0, p0, LIj7;->c:LPj7;
-
-    .line 132
-    .line 133
-    const/4 v1, 0x0
-
-    .line 134
-    invoke-virtual {v0, p1, v1}, LPj7;->t(Ljj7;LJX7;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 135
-    .line 136
-    .line 137
-    move-result-object v1
-
-    .line 138
-    new-instance v2, LFj7;
-
-    .line 139
-    .line 140
-    const/4 v3, 0x4
-
-    .line 141
-    invoke-direct {v2, p1, v3}, LFj7;-><init>(Ljj7;I)V
-
-    .line 142
-    .line 143
-    .line 144
-    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Completable;->A(Lio/reactivex/rxjava3/functions/Supplier;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
-
-    .line 145
-    .line 146
-    .line 147
-    move-result-object v1
-
-    .line 148
-    iget v2, p0, LIj7;->b:I
-
-    .line 149
-    .line 150
-    invoke-virtual {v0, v1, v2}, LPj7;->F(Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;I)Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;
-
-    .line 151
-    .line 152
-    .line 153
-    move-result-object v0
-
-    .line 154
-    new-instance v1, LFj7;
-
-    .line 155
-    .line 156
-    const/4 v2, 0x5
-
-    .line 157
-    invoke-direct {v1, p1, v2}, LFj7;-><init>(Ljj7;I)V
-
-    .line 158
-    .line 159
-    .line 160
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Completable;->A(Lio/reactivex/rxjava3/functions/Supplier;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-object p1
-
-    .line 164
-    return-object p1
-
-    .line 165
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

@@ -2,20 +2,33 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/composer/impala/snappro/nux/ProfileManagementNuxActionHandling;
+
 
 # instance fields
-.field public final a:J
+.field public final a:Lkotlin/jvm/functions/Function0;
 
-.field public final b:J
+.field public final b:Lkotlin/jvm/functions/Function0;
 
-.field public final c:J
+.field public final c:Lkotlin/jvm/functions/Function0;
 
-.field public final d:Ljava/lang/String;
+.field public final t:Lkotlin/jvm/functions/Function0;
 
 
 # direct methods
-.method public constructor <init>(JJLjava/lang/String;J)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,19 +36,19 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, LSoe;->a:J
+    iput-object p1, p0, LSoe;->a:Lkotlin/jvm/functions/Function0;
 
     .line 5
     .line 6
-    iput-wide p3, p0, LSoe;->b:J
+    iput-object p2, p0, LSoe;->b:Lkotlin/jvm/functions/Function0;
 
     .line 7
     .line 8
-    iput-wide p6, p0, LSoe;->c:J
+    iput-object p3, p0, LSoe;->c:Lkotlin/jvm/functions/Function0;
 
     .line 9
     .line 10
-    iput-object p5, p0, LSoe;->d:Ljava/lang/String;
+    iput-object p4, p0, LSoe;->t:Lkotlin/jvm/functions/Function0;
 
     .line 11
     .line 12
@@ -44,299 +57,118 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    sget-object v0, LcF3;->m:LbF3;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LSoe;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    sget-object v0, LbF3;->b:LcF3;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    const-class v1, Lcom/snap/composer/impala/snappro/nux/ProfileManagementNuxActionHandling;
 
     .line 9
     .line 10
-    return v2
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
-    :cond_1
-    check-cast p1, LSoe;
-
     .line 12
     .line 13
-    iget-wide v3, p1, LSoe;->a:J
-
-    .line 14
-    .line 15
-    iget-wide v5, p0, LSoe;->a:J
-
-    .line 16
-    .line 17
-    cmp-long v1, v5, v3
-
-    .line 18
-    .line 19
-    if-eqz v1, :cond_2
-
-    .line 20
-    .line 21
-    return v2
-
-    .line 22
-    :cond_2
-    iget-wide v3, p0, LSoe;->b:J
-
-    .line 23
-    .line 24
-    iget-wide v5, p1, LSoe;->b:J
-
-    .line 25
-    .line 26
-    cmp-long v1, v3, v5
-
-    .line 27
-    .line 28
-    if-eqz v1, :cond_3
-
-    .line 29
-    .line 30
-    return v2
-
-    .line 31
-    :cond_3
-    iget-wide v3, p0, LSoe;->c:J
-
-    .line 32
-    .line 33
-    iget-wide v5, p1, LSoe;->c:J
-
-    .line 34
-    .line 35
-    cmp-long v1, v3, v5
-
-    .line 36
-    .line 37
-    if-eqz v1, :cond_4
-
-    .line 38
-    .line 39
-    return v2
-
-    .line 40
-    :cond_4
-    iget-object v1, p0, LSoe;->d:Ljava/lang/String;
-
-    .line 41
-    .line 42
-    iget-object p1, p1, LSoe;->d:Ljava/lang/String;
-
-    .line 43
-    .line 44
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 45
-    .line 46
-    .line 47
     move-result p1
 
-    .line 48
-    if-nez p1, :cond_5
-
-    .line 49
-    .line 50
-    return v2
-
-    .line 51
-    :cond_5
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 7
-
-    .line 1
-    iget-wide v0, p0, LSoe;->a:J
-
-    .line 2
-    .line 3
-    const/16 v2, 0x20
-
-    .line 4
-    .line 5
-    ushr-long v3, v0, v2
-
-    .line 6
-    .line 7
-    xor-long/2addr v0, v3
-
-    .line 8
-    long-to-int v1, v0
-
-    .line 9
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 10
-    .line 11
-    iget-wide v3, p0, LSoe;->b:J
-
-    .line 12
-    .line 13
-    ushr-long v5, v3, v2
-
     .line 14
-    .line 15
-    xor-long/2addr v3, v5
-
-    .line 16
-    long-to-int v0, v3
-
-    .line 17
-    add-int/2addr v1, v0
-
-    .line 18
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 19
-    .line 20
-    iget-wide v3, p0, LSoe;->c:J
-
-    .line 21
-    .line 22
-    ushr-long v5, v3, v2
-
-    .line 23
-    .line 24
-    xor-long/2addr v3, v5
-
-    .line 25
-    long-to-int v0, v3
-
-    .line 26
-    add-int/2addr v1, v0
-
-    .line 27
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 28
-    .line 29
-    iget-object v0, p0, LSoe;->d:Ljava/lang/String;
-
-    .line 30
-    .line 31
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result v0
-
-    .line 35
-    add-int/2addr v0, v1
-
-    .line 36
-    return v0
+    return p1
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public removeProfileNewLabel()V
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, LSoe;->a:Lkotlin/jvm/functions/Function0;
 
     .line 2
     .line 3
-    const-string v1, "PublisherSnapIdInfo(storyRowId="
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    iget-wide v1, p0, LSoe;->a:J
+    :cond_0
+    return-void
+.end method
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+.method public removeSavedStoriesNewLabel()V
+    .locals 1
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", pageId="
+    .line 1
+    iget-object v0, p0, LSoe;->b:Lkotlin/jvm/functions/Function0;
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 16
-    .line 17
-    .line 18
-    iget-wide v1, p0, LSoe;->b:J
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", snapRowId="
+.method public removeSpotlightPinnedTooltip()V
+    .locals 1
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1
+    iget-object v0, p0, LSoe;->t:Lkotlin/jvm/functions/Function0;
 
-    .line 26
-    .line 27
-    .line 28
-    iget-wide v1, p0, LSoe;->c:J
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", uniqueIdentifier="
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
 
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public removeStoriesPinnedTooltip()V
+    .locals 1
 
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LSoe;->d:Ljava/lang/String;
+    .line 1
+    iget-object v0, p0, LSoe;->c:Lkotlin/jvm/functions/Function0;
 
-    .line 39
-    .line 40
-    const-string v2, ")"
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 41
-    .line 42
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    .line 5
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v0
-
-    .line 46
-    return-object v0
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
 .end method

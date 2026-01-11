@@ -1,3 +1,3 @@
 .class public abstract LaFb;
-.super Ljava/lang/Object;
+.super LbFb;
 .source "SourceFile"

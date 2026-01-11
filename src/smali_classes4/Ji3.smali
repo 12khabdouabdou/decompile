@@ -1,21 +1,15 @@
 .class public final LJi3;
-.super Ljava/lang/Object;
+.super Lrj3;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LTqc;
-
-.field public final b:Ljava/util/Set;
-
-.field public final c:Lrn0;
-
-.field public final d:LXfi;
+.field public final a:Z
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/disposables/CompositeDisposable;LTqc;)V
-    .locals 2
+.method public constructor <init>(Z)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,115 +17,127 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, LJi3;->a:LTqc;
+    iput-boolean p1, p0, LJi3;->a:Z
 
     .line 5
     .line 6
-    new-instance p2, Ljava/util/LinkedHashSet;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LJi3;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    invoke-direct {p2}, Ljava/util/LinkedHashSet;-><init>()V
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
+    return v2
+
     .line 11
-    invoke-static {p2}, Ljava/util/Collections;->synchronizedSet(Ljava/util/Set;)Ljava/util/Set;
+    :cond_1
+    check-cast p1, LJi3;
 
     .line 12
     .line 13
-    .line 14
-    move-result-object p2
+    iget-boolean v1, p0, LJi3;->a:Z
 
+    .line 14
     .line 15
-    iput-object p2, p0, LJi3;->b:Ljava/util/Set;
+    iget-boolean p1, p1, LJi3;->a:Z
 
     .line 16
     .line 17
-    sget-object p2, Lzg3;->Z:Lzg3;
+    if-eq v1, p1, :cond_2
 
     .line 18
     .line 19
-    const-string v0, "CommentsTrayDismissPublisher"
+    return v2
 
     .line 20
-    .line 21
-    invoke-static {p2, p2, v0}, Lla3;->c(Lzg3;Lzg3;Ljava/lang/String;)LWm0;
+    :cond_2
+    return v0
+.end method
 
-    .line 22
-    .line 23
-    .line 24
-    move-result-object p2
+.method public final hashCode()I
+    .locals 1
 
-    .line 25
-    sget-object v0, Lrn0;->a:Lrn0;
+    .line 1
+    iget-boolean v0, p0, LJi3;->a:Z
 
-    .line 26
-    .line 27
-    iput-object v0, p0, LJi3;->c:Lrn0;
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 28
-    .line 29
-    new-instance v0, LBre;
+    .line 4
+    .line 5
+    const/16 v0, 0x4cf
 
-    .line 30
-    .line 31
-    invoke-direct {v0, p2}, LBre;-><init>(LWm0;)V
+    .line 6
+    .line 7
+    return v0
 
-    .line 32
-    .line 33
-    .line 34
-    new-instance p2, Lu63;
+    .line 8
+    :cond_0
+    const/16 v0, 0x4d5
 
-    .line 35
-    .line 36
-    const/16 v1, 0x10
+    .line 9
+    .line 10
+    return v0
+.end method
 
-    .line 37
-    .line 38
-    invoke-direct {p2, v1, p0}, Lu63;-><init>(ILjava/lang/Object;)V
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    .line 39
-    .line 40
-    .line 41
-    new-instance v1, LXfi;
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 42
-    .line 43
-    invoke-direct {v1, p2}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    .line 2
+    .line 3
+    const-string v1, "CommentInputFocusLost(hasText="
 
-    .line 44
-    .line 45
-    .line 46
-    iput-object v1, p0, LJi3;->d:LXfi;
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 47
-    .line 48
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    .line 6
+    .line 7
+    .line 8
+    iget-boolean v1, p0, LJi3;->a:Z
 
-    .line 49
-    .line 50
-    .line 51
-    move-result-object p2
+    .line 9
+    .line 10
+    const-string v2, ")"
 
-    .line 52
-    new-instance v0, LVg2;
+    .line 11
+    .line 12
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
-    .line 53
-    .line 54
-    const/16 v1, 0x11
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
 
-    .line 55
-    .line 56
-    invoke-direct {v0, v1, p0}, LVg2;-><init>(ILjava/lang/Object;)V
-
-    .line 57
-    .line 58
-    .line 59
-    invoke-static {p2, v0, p1}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 60
-    .line 61
-    .line 62
-    return-void
+    .line 16
+    return-object v0
 .end method

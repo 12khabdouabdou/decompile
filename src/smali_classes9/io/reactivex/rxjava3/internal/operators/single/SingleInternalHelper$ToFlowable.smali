@@ -23,7 +23,7 @@
         ">;",
         "Lio/reactivex/rxjava3/functions/Function<",
         "Lio/reactivex/rxjava3/core/SingleSource;",
-        "LZne;",
+        "LSFe;",
         ">;"
     }
 .end annotation

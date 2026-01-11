@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lr1c;
+.implements Legc;
 
 
 # annotations
-.annotation build LAr6;
+.annotation build LMu6;
 .end annotation
 
 
 # static fields
 .field private static final INSTANCE:Lcom/facebook/common/time/AwakeTimeSinceBootClock;
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 .end field
 
@@ -53,7 +53,7 @@
 
 .method public static get()Lcom/facebook/common/time/AwakeTimeSinceBootClock;
     .locals 1
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 
     .line 1
@@ -68,7 +68,7 @@
 # virtual methods
 .method public now()J
     .locals 2
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 
     .line 1

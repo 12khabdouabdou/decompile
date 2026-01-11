@@ -1,15 +1,110 @@
 .class public final Ld6j;
-.super LeN;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lh6j;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lh6j;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, Ld6j;->a:I
+
+    iput-object p1, p0, Ld6j;->b:Lh6j;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public final b()Ljava/lang/String;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    iget v0, p0, Ld6j;->a:I
 
     .line 2
-    return-object v0
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 7
+    .line 8
+    iget-object p1, p0, Ld6j;->b:Lh6j;
+
+    .line 9
+    .line 10
+    iget-object p1, p1, Lh6j;->j0:LJp0;
+
+    .line 11
+    .line 12
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 13
+    .line 14
+    return-object p1
+
+    .line 15
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 16
+    .line 17
+    iget-object p1, p0, Ld6j;->b:Lh6j;
+
+    .line 18
+    .line 19
+    iget-object p1, p1, Lh6j;->j0:LJp0;
+
+    .line 20
+    .line 21
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 22
+    .line 23
+    return-object p1
+
+    .line 24
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 25
+    .line 26
+    iget-object p1, p0, Ld6j;->b:Lh6j;
+
+    .line 27
+    .line 28
+    iget-object p1, p1, Lh6j;->j0:LJp0;
+
+    .line 29
+    .line 30
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 31
+    .line 32
+    return-object p1
+
+    .line 33
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

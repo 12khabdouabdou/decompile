@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/memories/backup/BackupJobConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'serializedBackupRequest\':t,\'uniqueSubIdentifier\':s?,\'appLifecycleConstraint\':r?<e>:\'[0]\',\'timeoutMs\':d@?,\'networkConstraint\':r?<e>:\'[1]\',\'existingJobPolicy\':r?<e>:\'[2]\',\'initialDelaySec\':d@?,\'retryConfig\':r?:\'[3]\',\'persistence\':r?<e>:\'[4]\',\'useIndividualWakeup\':b@?,\'isForegroundJob\':b@?,\'isCharging\':b@?"
     typeReferences = {

@@ -3,137 +3,173 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lr32;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic a:Lk02;
+.field public final synthetic a:I
 
-.field public final synthetic b:Lsc2;
-
-.field public final synthetic c:LEc2;
-
-.field public final synthetic d:LJof;
-
-.field public final synthetic e:LU22;
-
-.field public final synthetic f:LCof;
-
-.field public final synthetic g:Ls34;
-
-.field public final synthetic h:Z
+.field public final synthetic b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 
 # direct methods
-.method public constructor <init>(Lk02;Lsc2;LEc2;LJof;LU22;LCof;Ls34;Z)V
+.method public synthetic constructor <init>(ILio/reactivex/rxjava3/disposables/CompositeDisposable;)V
     .locals 0
 
     .line 1
+    iput p1, p0, Lb02;->a:I
+
+    iput-object p2, p0, Lb02;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lb02;->a:Lk02;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lb02;->b:Lsc2;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lb02;->c:LEc2;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lb02;->d:LJof;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, Lb02;->e:LU22;
-
-    .line 13
-    .line 14
-    iput-object p6, p0, Lb02;->f:LCof;
-
-    .line 15
-    .line 16
-    iput-object p7, p0, Lb02;->g:Ls34;
-
-    .line 17
-    .line 18
-    iput-boolean p8, p0, Lb02;->h:Z
-
-    .line 19
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final execute()V
-    .locals 11
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lb02;->a:Lk02;
+    iget v0, p0, Lb02;->a:I
 
     .line 2
     .line 3
-    iget-object v1, p0, Lb02;->b:Lsc2;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Lk02;->a(Lsc2;)LbV1;
-
     .line 6
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 7
     .line 8
-    move-result-object v0
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 9
-    iget-object v1, v0, LbV1;->e:LB22;
-
     .line 10
     .line 11
-    iget-object v6, p0, Lb02;->f:LCof;
+    iget-object p1, p0, Lb02;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 12
     .line 13
-    iget-object v7, p0, Lb02;->g:Ls34;
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
 
     .line 14
     .line 15
-    iget-object v8, p0, Lb02;->a:Lk02;
-
     .line 16
+    return-void
+
     .line 17
-    iget-object v2, p0, Lb02;->c:LEc2;
+    :pswitch_0
+    check-cast p1, LDBe;
 
     .line 18
     .line 19
-    iget-object v3, p0, Lb02;->b:Lsc2;
+    invoke-interface {p1}, LDBe;->get()Ljava/lang/Object;
 
     .line 20
     .line 21
-    iget-object v4, p0, Lb02;->d:LJof;
-
     .line 22
+    move-result-object p1
+
     .line 23
-    iget-object v5, p0, Lb02;->e:LU22;
+    check-cast p1, Lnh7;
 
     .line 24
     .line 25
-    iget-boolean v9, p0, Lb02;->h:Z
+    invoke-interface {p1}, Lnh7;->getType()Loh7;
 
     .line 26
     .line 27
-    const/4 v10, 0x0
-
     .line 28
-    invoke-virtual/range {v1 .. v10}, LB22;->f(LEc2;Lsc2;LJof;LU22;Lv22;LLV1;Lj52;ZZ)V
+    move-result-object v0
 
     .line 29
+    invoke-virtual {v0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
     .line 30
     .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    const-string v1, ":start"
+
+    .line 34
+    .line 35
+    invoke-static {v0, v1}, LzHa;->x(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v0
+
+    .line 39
+    iget-object v1, p0, Lb02;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 40
+    .line 41
+    sget-object v2, LOdh;->a:LNdh;
+
+    .line 42
+    .line 43
+    invoke-virtual {v2, v0}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v0
+
+    .line 47
+    :try_start_0
+    invoke-interface {p1}, LKQh;->start()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object p1
+
+    .line 51
+    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-virtual {v2, v0}, LNdh;->h(I)V
+
+    .line 55
+    .line 56
+    .line 57
     return-void
+
+    .line 58
+    :catchall_0
+    move-exception p1
+
+    .line 59
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 60
+    .line 61
+    if-eqz v1, :cond_0
+
+    .line 62
+    .line 63
+    invoke-virtual {v1, v0}, LtGi;->o(I)V
+
+    .line 64
+    .line 65
+    .line 66
+    :cond_0
+    throw p1
+
+    .line 67
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

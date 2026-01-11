@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LDY8;
+    proxyClass = Lm69;
     schema = "\'deleteSnap\':f|m|(r:\'[0]\'),\'saveSnap\':f|m|(r:\'[0]\'),\'saveSnaps\':f|m|(a<r:\'[0]\'>),\'sendSnap\':f|m|(r:\'[0]\'),\'copyLink\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/impala/snappro/snapinsights/Snap;

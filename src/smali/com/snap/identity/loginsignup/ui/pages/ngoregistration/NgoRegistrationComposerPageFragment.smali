@@ -3,25 +3,25 @@
 .source "SourceFile"
 
 # interfaces
-.implements LAwc;
+.implements LwLc;
 
 
 # instance fields
-.field public E0:Lmz3;
+.field public E0:LAC3;
 
 .field public F0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public G0:LFRc;
+.field public G0:Lr6d;
 
-.field public H0:Lzwc;
+.field public H0:LvLc;
 
-.field public I0:Lnwf;
+.field public I0:LZ69;
 
-.field public J0:LqZ8;
+.field public J0:LyPf;
 
 .field public K0:Landroid/view/View;
 
-.field public final L0:LWm0;
+.field public final L0:Lnp0;
 
 
 # direct methods
@@ -34,7 +34,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LMKa;->Z:LMKa;
+    sget-object v0, LtXa;->Z:LtXa;
 
     .line 5
     .line 6
@@ -42,7 +42,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0, v0, v1}, Llva;->k(LMKa;LMKa;Ljava/lang/String;)LWm0;
+    invoke-static {v0, v0, v1}, LzHa;->l(LtXa;LtXa;Ljava/lang/String;)Lnp0;
 
     .line 9
     .line 10
@@ -50,11 +50,11 @@
     move-result-object v0
 
     .line 12
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->L0:LWm0;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->L0:Lnp0;
 
     .line 13
     .line 14
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 15
     .line 16
@@ -63,48 +63,7 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->H0:Lzwc;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, p0}, Lzwc;->S2(LAwc;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :cond_0
-    const-string p1, "presenter"
-
-    .line 13
-    .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    throw p1
-.end method
-
-.method public final C1()V
+.method public final A1()V
     .locals 1
 
     .line 1
@@ -129,7 +88,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -140,11 +99,11 @@
     throw v0
 .end method
 
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->H0:Lzwc;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->H0:LvLc;
 
     .line 2
     .line 3
@@ -152,7 +111,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lzwc;->C1()V
+    invoke-virtual {v0}, LvLc;->D1()V
 
     .line 6
     .line 7
@@ -165,7 +124,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -176,11 +135,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    iget-object p3, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->I0:Lnwf;
+    iget-object p3, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->J0:LyPf;
 
     .line 2
     .line 3
@@ -188,20 +147,20 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->L0:LWm0;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->L0:Lnp0;
 
     .line 6
     .line 7
-    check-cast p3, LIP5;
+    check-cast p3, LTT5;
 
     .line 8
     .line 9
-    invoke-virtual {p3, v0}, LIP5;->a(LWm0;)LBre;
+    invoke-virtual {p3, v0}, LTT5;->a(Lnp0;)LnJe;
 
     .line 10
     .line 11
     .line 12
-    const p3, 0x7f0e027e
+    const p3, 0x7f0e0294
 
     .line 13
     .line 14
@@ -225,7 +184,7 @@
 
     .line 22
     .line 23
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 24
     .line 25
@@ -236,16 +195,16 @@
     throw p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 7
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->J0:LqZ8;
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->I0:LZ69;
 
     .line 5
     .line 6
@@ -256,7 +215,7 @@
 
     .line 8
     .line 9
-    invoke-static {p2}, LH3k;->n(LqZ8;)Lrxf;
+    invoke-static {p2}, Lsyd;->h(LZ69;)LyQf;
 
     .line 10
     .line 11
@@ -268,11 +227,11 @@
 
     .line 14
     .line 15
-    sget-object v1, Lcom/snap/modules/registration/FirstPage;->Companion:LKv7;
+    sget-object v1, Lcom/snap/modules/registration/FirstPage;->Companion:LDA7;
 
     .line 16
     .line 17
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LpLa;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LWXa;
 
     .line 18
     .line 19
@@ -280,7 +239,7 @@
     move-result-object p1
 
     .line 21
-    invoke-interface {p1}, LpLa;->p()LmLa;
+    invoke-interface {p1}, LWXa;->q()LTXa;
 
     .line 22
     .line 23
@@ -288,47 +247,47 @@
     move-result-object p1
 
     .line 25
-    new-instance v3, LvKe;
+    new-instance v3, Lg2f;
 
     .line 26
     .line 27
-    invoke-direct {v3}, LvKe;-><init>()V
+    invoke-direct {v3}, Lg2f;-><init>()V
 
     .line 28
     .line 29
     .line 30
-    iget-object p2, p1, LmLa;->s:Ljava/lang/String;
+    iget-object p2, p1, LTXa;->s:Ljava/lang/String;
 
     .line 31
     .line 32
-    invoke-virtual {v3, p2}, LvKe;->a(Ljava/lang/String;)V
+    invoke-virtual {v3, p2}, Lg2f;->a(Ljava/lang/String;)V
 
     .line 33
     .line 34
     .line 35
-    iget-object p1, p1, LmLa;->t:Ljava/lang/String;
+    iget-object p1, p1, LTXa;->t:Ljava/lang/String;
 
     .line 36
     .line 37
-    invoke-virtual {v3, p1}, LvKe;->b(Ljava/lang/String;)V
+    invoke-virtual {v3, p1}, Lg2f;->b(Ljava/lang/String;)V
 
     .line 38
     .line 39
     .line 40
-    new-instance p1, LXs6;
+    new-instance p1, Ljx5;
 
     .line 41
     .line 42
-    invoke-direct {p1, p0}, LXs6;-><init>(Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;)V
+    invoke-direct {p1, p0}, Ljx5;-><init>(Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;)V
 
     .line 43
     .line 44
     .line 45
-    new-instance v4, LtKe;
+    new-instance v4, Le2f;
 
     .line 46
     .line 47
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->E0:Lmz3;
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->E0:LAC3;
 
     .line 48
     .line 49
@@ -336,12 +295,12 @@
 
     .line 50
     .line 51
-    invoke-direct {v4, p2, p1}, LtKe;-><init>(Lmz3;LXs6;)V
+    invoke-direct {v4, p2, p1}, Le2f;-><init>(LAC3;Ljx5;)V
 
     .line 52
     .line 53
     .line 54
-    new-instance p1, LGfc;
+    new-instance p1, LFuc;
 
     .line 55
     .line 56
@@ -349,17 +308,17 @@
 
     .line 57
     .line 58
-    invoke-direct {p1, p0, p2}, LGfc;-><init>(Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;I)V
+    invoke-direct {p1, p0, p2}, LFuc;-><init>(Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;I)V
 
     .line 59
     .line 60
     .line 61
-    invoke-virtual {v4, p1}, LtKe;->a(LGfc;)V
+    invoke-virtual {v4, p1}, Le2f;->a(LFuc;)V
 
     .line 62
     .line 63
     .line 64
-    new-instance p1, LGfc;
+    new-instance p1, LFuc;
 
     .line 65
     .line 66
@@ -367,12 +326,12 @@
 
     .line 67
     .line 68
-    invoke-direct {p1, p0, p2}, LGfc;-><init>(Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;I)V
+    invoke-direct {p1, p0, p2}, LFuc;-><init>(Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;I)V
 
     .line 69
     .line 70
     .line 71
-    invoke-virtual {v4, p1}, LtKe;->b(LGfc;)V
+    invoke-virtual {v4, p1}, Le2f;->b(LFuc;)V
 
     .line 72
     .line 73
@@ -384,7 +343,7 @@
 
     .line 76
     .line 77
-    invoke-static/range {v1 .. v6}, LKv7;->a(LKv7;LqZ8;LvKe;LtKe;LTB3;I)Lcom/snap/modules/registration/FirstPage;
+    invoke-static/range {v1 .. v6}, LDA7;->a(LDA7;LZ69;Lg2f;Le2f;LvF3;I)Lcom/snap/modules/registration/FirstPage;
 
     .line 78
     .line 79
@@ -413,7 +372,7 @@
 
     .line 90
     .line 91
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 92
     .line 93
@@ -422,11 +381,11 @@
 
     .line 95
     :cond_1
-    const-string p1, "viewLoader"
+    const-string p1, "runtime"
 
     .line 96
     .line 97
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -434,25 +393,66 @@
     throw v0
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->j1:LZ8d;
+    sget-object v0, Lsod;->j1:Lsod;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
     return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/ngoregistration/NgoRegistrationComposerPageFragment;->H0:LvLc;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, p0}, LvLc;->d3(LwLc;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    const-string p1, "presenter"
+
+    .line 13
+    .line 14
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 p1, 0x0
+
+    .line 18
+    throw p1
 .end method

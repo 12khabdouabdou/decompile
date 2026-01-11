@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'UNKNOWN\':0,\'SNAPCHATTER\':1,\'GROUP\':2,\'STORY\':3"
-    type = .enum LJv3;->a:LJv3;
+    schema = "\'UNKNOWN\':0,\'SNAPCHATTER\':1,\'GROUP\':2,\'STORY\':3,\'CONTACT\':4"
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -20,6 +20,8 @@
 
 
 # static fields
+.field public static final enum CONTACT:Lcom/snap/user/selection/list/SelectionRecipientType;
+
 .field public static final enum GROUP:Lcom/snap/user/selection/list/SelectionRecipientType;
 
 .field public static final enum SNAPCHATTER:Lcom/snap/user/selection/list/SelectionRecipientType;
@@ -33,116 +35,140 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 11
 
     .line 1
-    const/4 v0, 0x3
+    const/4 v0, 0x4
 
     .line 2
-    const/4 v1, 0x2
+    const/4 v1, 0x3
 
     .line 3
-    const/4 v2, 0x1
+    const/4 v2, 0x2
 
     .line 4
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
     .line 5
-    new-instance v4, Lcom/snap/user/selection/list/SelectionRecipientType;
+    const/4 v4, 0x0
 
     .line 6
-    .line 7
-    const-string v5, "UNKNOWN"
-
-    .line 8
-    .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    sput-object v4, Lcom/snap/user/selection/list/SelectionRecipientType;->UNKNOWN:Lcom/snap/user/selection/list/SelectionRecipientType;
-
-    .line 13
-    .line 14
     new-instance v5, Lcom/snap/user/selection/list/SelectionRecipientType;
 
+    .line 7
+    .line 8
+    const-string v6, "UNKNOWN"
+
+    .line 9
+    .line 10
+    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v5, Lcom/snap/user/selection/list/SelectionRecipientType;->UNKNOWN:Lcom/snap/user/selection/list/SelectionRecipientType;
+
+    .line 14
     .line 15
-    .line 16
-    const-string v6, "SNAPCHATTER"
-
-    .line 17
-    .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 19
-    .line 20
-    .line 21
-    sput-object v5, Lcom/snap/user/selection/list/SelectionRecipientType;->SNAPCHATTER:Lcom/snap/user/selection/list/SelectionRecipientType;
-
-    .line 22
-    .line 23
     new-instance v6, Lcom/snap/user/selection/list/SelectionRecipientType;
 
+    .line 16
+    .line 17
+    const-string v7, "SNAPCHATTER"
+
+    .line 18
+    .line 19
+    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 20
+    .line 21
+    .line 22
+    sput-object v6, Lcom/snap/user/selection/list/SelectionRecipientType;->SNAPCHATTER:Lcom/snap/user/selection/list/SelectionRecipientType;
+
+    .line 23
     .line 24
-    .line 25
-    const-string v7, "GROUP"
-
-    .line 26
-    .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 28
-    .line 29
-    .line 30
-    sput-object v6, Lcom/snap/user/selection/list/SelectionRecipientType;->GROUP:Lcom/snap/user/selection/list/SelectionRecipientType;
-
-    .line 31
-    .line 32
     new-instance v7, Lcom/snap/user/selection/list/SelectionRecipientType;
 
+    .line 25
+    .line 26
+    const-string v8, "GROUP"
+
+    .line 27
+    .line 28
+    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    sput-object v7, Lcom/snap/user/selection/list/SelectionRecipientType;->GROUP:Lcom/snap/user/selection/list/SelectionRecipientType;
+
+    .line 32
     .line 33
+    new-instance v8, Lcom/snap/user/selection/list/SelectionRecipientType;
+
     .line 34
-    const-string v8, "STORY"
-
     .line 35
-    .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v9, "STORY"
 
+    .line 36
     .line 37
+    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 38
     .line 39
-    sput-object v7, Lcom/snap/user/selection/list/SelectionRecipientType;->STORY:Lcom/snap/user/selection/list/SelectionRecipientType;
-
     .line 40
-    .line 41
-    const/4 v8, 0x4
+    sput-object v8, Lcom/snap/user/selection/list/SelectionRecipientType;->STORY:Lcom/snap/user/selection/list/SelectionRecipientType;
 
+    .line 41
     .line 42
-    new-array v8, v8, [Lcom/snap/user/selection/list/SelectionRecipientType;
+    new-instance v9, Lcom/snap/user/selection/list/SelectionRecipientType;
 
     .line 43
     .line 44
-    aput-object v4, v8, v3
+    const-string v10, "CONTACT"
 
     .line 45
     .line 46
-    aput-object v5, v8, v2
+    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 47
     .line 48
-    aput-object v6, v8, v1
-
     .line 49
-    .line 50
-    aput-object v7, v8, v0
+    sput-object v9, Lcom/snap/user/selection/list/SelectionRecipientType;->CONTACT:Lcom/snap/user/selection/list/SelectionRecipientType;
 
+    .line 50
     .line 51
+    const/4 v10, 0x5
+
     .line 52
-    sput-object v8, Lcom/snap/user/selection/list/SelectionRecipientType;->a:[Lcom/snap/user/selection/list/SelectionRecipientType;
+    new-array v10, v10, [Lcom/snap/user/selection/list/SelectionRecipientType;
 
     .line 53
     .line 54
+    aput-object v5, v10, v4
+
+    .line 55
+    .line 56
+    aput-object v6, v10, v3
+
+    .line 57
+    .line 58
+    aput-object v7, v10, v2
+
+    .line 59
+    .line 60
+    aput-object v8, v10, v1
+
+    .line 61
+    .line 62
+    aput-object v9, v10, v0
+
+    .line 63
+    .line 64
+    sput-object v10, Lcom/snap/user/selection/list/SelectionRecipientType;->a:[Lcom/snap/user/selection/list/SelectionRecipientType;
+
+    .line 65
+    .line 66
     return-void
 .end method
 

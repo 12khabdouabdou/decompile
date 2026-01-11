@@ -1,0 +1,302 @@
+.class public final LYC9$c;
+.super LYC9;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LYC9;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "c"
+.end annotation
+
+
+# instance fields
+.field public Z:LCdg;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, LYC9;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic F(Lk11;Landroid/view/View;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, LjF5;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, LYC9$c;->M(LjF5;Landroid/view/View;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final bridge synthetic L(LNE9;LNE9;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Llui;
+
+    .line 2
+    .line 3
+    check-cast p2, Llui;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, LYC9$c;->O(Llui;Llui;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final M(LjF5;Landroid/view/View;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1, p2}, LYC9;->M(LjF5;Landroid/view/View;)V
+
+    .line 2
+    .line 3
+    .line 4
+    const p1, 0x7f0b0ac4
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    check-cast p1, Lcom/snap/component/sectionheader/SnapSectionHeader;
+
+    .line 12
+    .line 13
+    new-instance p2, LCdg;
+
+    .line 14
+    .line 15
+    const/16 v0, 0xf
+
+    .line 16
+    .line 17
+    invoke-direct {p2, v0, p1}, LCdg;-><init>(ILjava/lang/Object;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object p2, p0, LYC9$c;->Z:LCdg;
+
+    .line 21
+    .line 22
+    return-void
+.end method
+
+.method public final O(Llui;Llui;)V
+    .locals 11
+
+    .line 1
+    invoke-super/range {p0 .. p2}, LYC9;->L(LNE9;LNE9;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v7, p0, LYC9$c;->Z:LCdg;
+
+    .line 5
+    .line 6
+    const/4 v8, 0x0
+
+    .line 7
+    const-string v9, "controller"
+
+    .line 8
+    .line 9
+    if-eqz v7, :cond_3
+
+    .line 10
+    .line 11
+    iget-boolean v10, p1, Llui;->e0:Z
+
+    .line 12
+    .line 13
+    if-eqz v10, :cond_0
+
+    .line 14
+    .line 15
+    new-instance v0, LbD9;
+
+    .line 16
+    .line 17
+    const-class v3, LYC9$c;
+
+    .line 18
+    .line 19
+    const-string v5, "triggerHeaderClick"
+
+    .line 20
+    .line 21
+    const/4 v1, 0x0
+
+    .line 22
+    const-string v6, "triggerHeaderClick()V"
+
+    .line 23
+    .line 24
+    const/4 v2, 0x0
+
+    .line 25
+    move-object v4, p0
+
+    .line 26
+    invoke-direct/range {v0 .. v6}, LF88;-><init>(IILjava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    move-object v6, v0
+
+    .line 30
+    goto :goto_0
+
+    .line 31
+    :cond_0
+    move-object v6, v8
+
+    .line 32
+    :goto_0
+    iget-object v2, p1, Llui;->Z:Ljava/lang/String;
+
+    .line 33
+    .line 34
+    iget-object v1, p1, Llui;->Y:Ljava/lang/String;
+
+    .line 35
+    .line 36
+    const/16 v0, 0x14
+
+    .line 37
+    .line 38
+    const/4 v3, 0x0
+
+    .line 39
+    and-int/lit8 v0, v0, 0x8
+
+    .line 40
+    .line 41
+    if-eqz v0, :cond_1
+
+    .line 42
+    .line 43
+    const/4 v10, 0x0
+
+    .line 44
+    const/4 v4, 0x0
+
+    .line 45
+    goto :goto_1
+
+    .line 46
+    :cond_1
+    move v4, v10
+
+    .line 47
+    :goto_1
+    const/4 v5, 0x0
+
+    .line 48
+    move-object v0, v7
+
+    .line 49
+    invoke-virtual/range {v0 .. v6}, LCdg;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Lkotlin/jvm/functions/Function0;)V
+
+    .line 50
+    .line 51
+    .line 52
+    iget-object v0, p0, LYC9$c;->Z:LCdg;
+
+    .line 53
+    .line 54
+    if-eqz v0, :cond_2
+
+    .line 55
+    .line 56
+    iget-object v0, v0, LCdg;->b:Ljava/lang/Object;
+
+    .line 57
+    .line 58
+    check-cast v0, Lcom/snap/component/sectionheader/SnapSectionHeader;
+
+    .line 59
+    .line 60
+    const/4 v1, 0x0
+
+    .line 61
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 62
+    .line 63
+    .line 64
+    return-void
+
+    .line 65
+    :cond_2
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    throw v8
+
+    .line 69
+    :cond_3
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 70
+    .line 71
+    .line 72
+    throw v8
+.end method
+
+.method public final bridge synthetic t(Lsw;Lsw;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Llui;
+
+    .line 2
+    .line 3
+    check-cast p2, Llui;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, LYC9$c;->O(Llui;Llui;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method

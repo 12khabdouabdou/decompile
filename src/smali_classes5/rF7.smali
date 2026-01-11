@@ -1,0 +1,25 @@
+.class public final LrF7;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:LlOh;
+
+
+# direct methods
+.method public constructor <init>(LlOh;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LrF7;->a:LlOh;
+
+    .line 5
+    .line 6
+    return-void
+.end method

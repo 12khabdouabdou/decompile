@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LOV8;
-    schema = "\'application\':r:\'[0]\',\'actionHandler\':r?:\'[1]\',\'storyPlayer\':r?:\'[2]\',\'snapViewStateProvider\':r?:\'[3]\',\'lensActionHandler\':r?:\'[4]\',\'urlActionHandler\':r?:\'[5]\',\'cameraRollLibrary\':r?:\'[6]\',\'imageFactory\':r?:\'[7]\',\'boltUploader\':r?:\'[8]\',\'tempFileProvider\':r?:\'[9]\',\'mediaPickerPresenter\':r?:\'[10]\',\'memoriesTranscoder\':r?:\'[11]\',\'networkingClient\':r:\'[12]\',\'serviceConfig\':r:\'[13]\',\'friendStore\':r?:\'[14]\',\'blizzardLogger\':r?:\'[15]\',\'feedbackReporterPresenter\':r?:\'[16]\',\'actionSheetPresenter\':r?:\'[17]\',\'alertPresenter\':r?:\'[18]\',\'storySharingActionHandler\':r?:\'[19]\',\'cofStore\':r?:\'[20]\',\'supStore\':r?:\'[21]\',\'communityPillContext\':r?:\'[22]\',\'activityFeedPresenter\':r?:\'[23]\',\'grpcServiceFactory\':r?:\'[24]\',\'publicProfileManager\':g?<c>:\'[25]\'<r:\'[26]\'>,\'nativeStoryCardFetcher\':r?:\'[27]\',\'discoverFeedStoryPlayer\':r?:\'[2]\',\'nativeModelGenerator\':r?:\'[28]\',\'notificationSettingsActionHandler\':r?:\'[29]\',\'profileManagementNuxHandler\':r?:\'[30]\',\'adsTabHandlers\':r?:\'[31]\',\'navigator\':r?:\'[32]\',\'profileSwitcherContext\':r?:\'[33]\',\'profileContentFetcher\':r?:\'[34]\',\'pageLauncher\':r?:\'[35]\',\'localStoryStore\':r?:\'[36]\',\'navigatorToDeckContainerConverter\':r?:\'[37]\',\'presentationController\':r?:\'[38]\'"
+    proxyClass = Lp39;
+    schema = "\'application\':r:\'[0]\',\'actionHandler\':r?:\'[1]\',\'storyPlayer\':r?:\'[2]\',\'snapViewStateProvider\':r?:\'[3]\',\'lensActionHandler\':r?:\'[4]\',\'urlActionHandler\':r?:\'[5]\',\'cameraRollLibrary\':r?:\'[6]\',\'imageFactory\':r?:\'[7]\',\'boltUploader\':r?:\'[8]\',\'tempFileProvider\':r?:\'[9]\',\'mediaPickerPresenter\':r?:\'[10]\',\'memoriesTranscoder\':r?:\'[11]\',\'networkingClient\':r:\'[12]\',\'serviceConfig\':r:\'[13]\',\'friendStore\':r?:\'[14]\',\'blizzardLogger\':r?:\'[15]\',\'feedbackReporterPresenter\':r?:\'[16]\',\'actionSheetPresenter\':r?:\'[17]\',\'alertPresenter\':r?:\'[18]\',\'notificationPresenter\':r?:\'[19]\',\'storySharingActionHandler\':r?:\'[20]\',\'cofStore\':r?:\'[21]\',\'supStore\':r?:\'[22]\',\'communityPillContext\':r?:\'[23]\',\'activityFeedPresenter\':r?:\'[24]\',\'grpcServiceFactory\':r?:\'[25]\',\'publicProfileManager\':g?<c>:\'[26]\'<r:\'[27]\'>,\'nativeStoryCardFetcher\':r?:\'[28]\',\'discoverFeedStoryPlayer\':r?:\'[2]\',\'nativeModelGenerator\':r?:\'[29]\',\'notificationSettingsActionHandler\':r?:\'[30]\',\'profileManagementNuxHandler\':r?:\'[31]\',\'adsTabHandlers\':r?:\'[32]\',\'navigator\':r?:\'[33]\',\'profileSwitcherContext\':r?:\'[34]\',\'profileContentFetcher\':r?:\'[35]\',\'pageLauncher\':r?:\'[36]\',\'localStoryStore\':r?:\'[37]\',\'navigatorToDeckContainerConverter\':r?:\'[38]\',\'presentationController\':r?:\'[39]\'"
     typeReferences = {
         Lcom/snap/composer/foundation/IApplication;,
         Lcom/snap/impala/snappro/core/IImpalaMainActionHandler;,
@@ -31,6 +31,7 @@
         Lcom/snap/composer/impala/FeedbackReporterPresenter;,
         Lcom/snap/composer/foundation/IActionSheetPresenter;,
         Lcom/snap/composer/foundation/IAlertPresenter;,
+        Lcom/snap/composer/foundation/INotificationPresenter;,
         Lcom/snap/impala/commonprofile/IStoryShareActionHandler;,
         Lcom/snap/composer/cof/ICOFStore;,
         Lcom/snap/composer/sup/ISUPStore;,
@@ -38,7 +39,7 @@
         Lcom/snap/composer/foundation/IActivityFeedPresenter;,
         Lcom/snap/composer/networking/IGrpcServiceFactory;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Ldme;,
+        LSDe;,
         Lcom/snap/composer/storyplayer/INativeStoryCardFetcher;,
         Lcom/snap/composer/storyplayer/INativeStoryClientModelGenerator;,
         Lcom/snap/composer/impala/snappro/notification/NotificationSettingsActionHandling;,
@@ -131,6 +132,9 @@
 .method public abstract getNetworkingClient()Lcom/snap/composer/networking/ClientProtocol;
 .end method
 
+.method public abstract getNotificationPresenter()Lcom/snap/composer/foundation/INotificationPresenter;
+.end method
+
 .method public abstract getNotificationSettingsActionHandler()Lcom/snap/composer/impala/snappro/notification/NotificationSettingsActionHandling;
 .end method
 
@@ -154,7 +158,7 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ldme;",
+            "LSDe;",
             ">;"
         }
     .end annotation

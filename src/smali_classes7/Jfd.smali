@@ -1,147 +1,120 @@
-.class public final enum LJfd;
-.super Ljava/lang/Enum;
+.class public final LJfd;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# static fields
-.field public static final enum b:LJfd;
-
-.field public static final synthetic c:[LJfd;
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:I
+
+.field public final synthetic b:LEfd;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
-
-    .line 1
-    new-instance v0, LJfd;
-
-    .line 2
-    .line 3
-    const-string v1, "commerce-prod"
-
-    .line 4
-    .line 5
-    const-string v2, "PROD"
-
-    .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    invoke-direct {v0, v2, v3, v1}, LJfd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    sput-object v0, LJfd;->b:LJfd;
-
-    .line 12
-    .line 13
-    new-instance v1, LJfd;
-
-    .line 14
-    .line 15
-    const-string v2, "commerce-dev"
-
-    .line 16
-    .line 17
-    const-string v4, "DEV"
-
-    .line 18
-    .line 19
-    const/4 v5, 0x1
-
-    .line 20
-    invoke-direct {v1, v4, v5, v2}, LJfd;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    .line 21
-    .line 22
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    new-array v2, v2, [LJfd;
-
-    .line 25
-    .line 26
-    aput-object v0, v2, v3
-
-    .line 27
-    .line 28
-    aput-object v1, v2, v5
-
-    .line 29
-    .line 30
-    sput-object v2, LJfd;->c:[LJfd;
-
-    .line 31
-    .line 32
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
+.method public synthetic constructor <init>(LEfd;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput p2, p0, LJfd;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p3, p0, LJfd;->a:Ljava/lang/String;
+    iput-object p1, p0, LJfd;->b:LEfd;
 
-    .line 5
-    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LJfd;
+
+# virtual methods
+.method public final run()V
     .locals 1
 
     .line 1
-    const-class v0, LJfd;
+    iget v0, p0, LJfd;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    iget-object v0, p0, LJfd;->b:LEfd;
 
     .line 7
-    check-cast p0, LJfd;
-
     .line 8
+    iget-object v0, v0, LEfd;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 9
-    return-object p0
-.end method
+    .line 10
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
 
-.method public static values()[LJfd;
-    .locals 1
+    .line 11
+    .line 12
+    .line 13
+    return-void
 
-    .line 1
-    sget-object v0, LJfd;->c:[LJfd;
+    .line 14
+    :pswitch_0
+    iget-object v0, p0, LJfd;->b:LEfd;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 15
+    .line 16
+    iget-object v0, v0, LEfd;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
 
-    .line 7
-    check-cast v0, [LJfd;
+    .line 19
+    .line 20
+    .line 21
+    return-void
 
-    .line 8
-    .line 9
-    return-object v0
+    .line 22
+    :pswitch_1
+    iget-object v0, p0, LJfd;->b:LEfd;
+
+    .line 23
+    .line 24
+    iget-object v0, v0, LEfd;->b:Lio/reactivex/rxjava3/subjects/CompletableSubject;
+
+    .line 25
+    .line 26
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/CompletableSubject;->onComplete()V
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :pswitch_2
+    iget-object v0, p0, LJfd;->b:LEfd;
+
+    .line 31
+    .line 32
+    iget-object v0, v0, LEfd;->b:Lio/reactivex/rxjava3/subjects/CompletableSubject;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/CompletableSubject;->onComplete()V
+
+    .line 35
+    .line 36
+    .line 37
+    return-void
+
+    .line 38
+    nop
+
+    .line 39
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

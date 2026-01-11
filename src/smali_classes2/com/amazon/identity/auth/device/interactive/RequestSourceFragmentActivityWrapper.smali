@@ -298,7 +298,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentActivity;->t()Landroidx/fragment/app/FragmentManager;
+    invoke-virtual {v0}, Landroidx/fragment/app/FragmentActivity;->r()Landroidx/fragment/app/FragmentManager;
 
     .line 12
     .line 13

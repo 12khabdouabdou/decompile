@@ -1,17 +1,46 @@
-.class public interface abstract Llf5;
+.class public final Llf5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/String;JLjava/lang/Throwable;LeN;)Lio/reactivex/rxjava3/core/Completable;
-.end method
+# instance fields
+.field public final a:Llqk;
 
-.method public abstract b(Landroid/net/Uri;Lfg5;Lq0h;)Lio/reactivex/rxjava3/core/Completable;
-.end method
+.field public final b:LcH8;
 
-.method public abstract c(Ljava/lang/String;JLeN;)Lio/reactivex/rxjava3/core/Completable;
-.end method
+.field public final c:Ljava/util/LinkedHashSet;
 
-.method public abstract d(Landroid/net/Uri;Landroid/net/Uri;LeN;Lfg5;JLq0h;LAGc;JLjava/lang/Throwable;Luf5;ZLjava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+
+# direct methods
+.method public constructor <init>(Llqk;LcH8;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Llf5;->a:Llqk;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Llf5;->b:LcH8;
+
+    .line 7
+    .line 8
+    new-instance p1, Ljava/util/LinkedHashSet;
+
+    .line 9
+    .line 10
+    invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object p1, p0, Llf5;->c:Ljava/util/LinkedHashSet;
+
+    .line 14
+    .line 15
+    return-void
 .end method

@@ -96,7 +96,7 @@
 
     .line 6
     .line 7
-    sget-object v1, LCve;->b:[I
+    sget-object v1, LlNe;->b:[I
 
     .line 8
     .line 9

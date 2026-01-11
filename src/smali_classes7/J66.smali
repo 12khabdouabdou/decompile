@@ -1,274 +1,125 @@
-.class public final LJ66;
-.super Ljava/lang/Object;
+.class public final enum LJ66;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Supplier;
 
+# static fields
+.field public static final enum a:LJ66;
 
-# instance fields
-.field public final synthetic a:I
+.field public static final enum b:LJ66;
 
-.field public final synthetic b:LK66;
+.field public static final synthetic c:[LJ66;
 
 
 # direct methods
-.method public synthetic constructor <init>(LK66;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, LJ66;->a:I
-
-    iput-object p1, p0, LJ66;->b:LK66;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
+.method static constructor <clinit>()V
     .locals 5
 
     .line 1
-    iget v0, p0, LJ66;->a:I
+    const/4 v0, 0x1
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    new-instance v2, LJ66;
+
+    .line 4
+    .line 5
+    const-string v3, "SYNC"
+
+    .line 6
+    .line 7
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v2, LJ66;->a:LJ66;
+
+    .line 11
+    .line 12
+    new-instance v3, LJ66;
+
+    .line 13
+    .line 14
+    const-string v4, "DOWNLOAD"
+
+    .line 15
+    .line 16
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v3, LJ66;->b:LJ66;
+
+    .line 20
+    .line 21
+    const/4 v4, 0x2
+
+    .line 22
+    new-array v4, v4, [LJ66;
+
+    .line 23
+    .line 24
+    aput-object v2, v4, v1
+
+    .line 25
+    .line 26
+    aput-object v3, v4, v0
+
+    .line 27
+    .line 28
+    sput-object v4, LJ66;->c:[LJ66;
+
+    .line 29
+    .line 30
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LJ66;
+    .locals 1
+
+    .line 1
+    const-class v0, LJ66;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LJ66;->b:LK66;
+    move-result-object p0
 
     .line 7
+    check-cast p0, LJ66;
+
     .line 8
-    iget-object v1, v0, LK66;->a:Lzlc;
-
     .line 9
-    .line 10
-    sget-object v2, LZsa;->m0:LZsa;
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    invoke-virtual {v1, v2}, Lzlc;->b(LZsa;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
+.method public static values()[LJ66;
+    .locals 1
 
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v1
+    .line 1
+    sget-object v0, LJ66;->c:[LJ66;
 
-    .line 16
-    iget-object v2, v0, LK66;->b:LUo4;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 17
-    .line 18
-    invoke-virtual {v2}, LUo4;->get()Ljava/lang/Object;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v2
-
-    .line 22
-    check-cast v2, LcG8;
-
-    .line 23
-    .line 24
-    const/4 v3, 0x0
-
-    .line 25
-    invoke-virtual {v2, v3}, LcG8;->c(Z)Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v2
-
-    .line 29
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 30
-    .line 31
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
-
-    .line 32
-    .line 33
-    .line 34
-    new-instance v1, LJ66;
-
-    .line 35
-    .line 36
-    const/4 v2, 0x0
-
-    .line 37
-    invoke-direct {v1, v0, v2}, LJ66;-><init>(LK66;I)V
-
-    .line 38
-    .line 39
-    .line 40
-    invoke-virtual {v3, v1}, Lio/reactivex/rxjava3/core/Completable;->A(Lio/reactivex/rxjava3/functions/Supplier;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
-
-    .line 41
-    .line 42
-    .line 43
-    move-result-object v1
-
-    .line 44
-    iget-object v0, v0, LK66;->g:LBre;
-
-    .line 45
-    .line 46
-    invoke-virtual {v0}, LBre;->d()LF06;
-
-    .line 47
-    .line 48
-    .line 49
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 50
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    .line 7
+    check-cast v0, [LJ66;
 
-    .line 51
-    .line 52
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 53
-    .line 54
-    .line 55
-    return-object v2
-
-    .line 56
-    :pswitch_0
-    new-instance v0, LpRg;
-
-    .line 57
-    .line 58
-    iget-object v1, p0, LJ66;->b:LK66;
-
-    .line 59
-    .line 60
-    iget-object v2, v1, LK66;->c:LUo4;
-
-    .line 61
-    .line 62
-    invoke-virtual {v2}, LUo4;->get()Ljava/lang/Object;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object v2
-
-    .line 66
-    check-cast v2, Lhef;
-
-    .line 67
-    .line 68
-    iget-object v3, v1, LK66;->e:LUo4;
-
-    .line 69
-    .line 70
-    invoke-virtual {v3}, LUo4;->get()Ljava/lang/Object;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v3
-
-    .line 74
-    check-cast v3, LRef;
-
-    .line 75
-    .line 76
-    invoke-direct {v0, v2, v3}, LpRg;-><init>(Lhef;LRef;)V
-
-    .line 77
-    .line 78
-    .line 79
-    iget-object v2, v1, LK66;->f:LUo4;
-
-    .line 80
-    .line 81
-    invoke-virtual {v2}, LUo4;->get()Ljava/lang/Object;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v2
-
-    .line 85
-    check-cast v2, LP3j;
-
-    .line 86
-    .line 87
-    iget-object v3, v1, LK66;->i:LXfi;
-
-    .line 88
-    .line 89
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 90
-    .line 91
-    .line 92
-    move-result-object v3
-
-    .line 93
-    check-cast v3, Lcom/snapchat/client/grpc/GrpcParametersBuilder;
-
-    .line 94
-    .line 95
-    new-instance v4, LBp6;
-
-    .line 96
-    .line 97
-    iget-object v1, v1, LK66;->g:LBre;
-
-    .line 98
-    .line 99
-    invoke-virtual {v1}, LBre;->d()LF06;
-
-    .line 100
-    .line 101
-    .line 102
-    move-result-object v1
-
-    .line 103
-    invoke-direct {v4, v1}, LBp6;-><init>(Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 104
-    .line 105
-    .line 106
-    const-string v1, "snapchat.notif.DeviceStateReceiver"
-
-    .line 107
-    .line 108
-    invoke-virtual {v2, v1, v3, v0, v4}, LP3j;->a(Ljava/lang/String;Lcom/snapchat/client/grpc/GrpcParametersBuilder;LpRg;LBp6;)Lcom/snapchat/client/grpc/UnifiedGrpcService;
-
-    .line 109
-    .line 110
-    .line 111
-    move-result-object v0
-
-    .line 112
-    new-instance v1, LLYi;
-
-    .line 113
-    .line 114
-    invoke-direct {v1, v0}, LLYi;-><init>(Lcom/snapchat/client/grpc/UnifiedGrpcService;)V
-
-    .line 115
-    .line 116
-    .line 117
-    return-object v1
-
-    .line 118
-    nop
-
-    .line 119
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 8
+    .line 9
+    return-object v0
 .end method

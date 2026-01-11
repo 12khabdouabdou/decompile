@@ -1,5 +1,5 @@
 .class public final Lcom/snap/core/model/StorySnapRecipient;
-.super LPOb;
+.super Lj3c;
 .source "SourceFile"
 
 # interfaces
@@ -7,21 +7,21 @@
 
 
 # instance fields
-.field private final groupStoryType:LuF8;
+.field private final groupStoryType:LyM8;
 
-.field private final myStoryOverridePrivacy:LlYd;
+.field private final myStoryOverridePrivacy:LIfe;
 
 .field private final storyDisplayName:Ljava/lang/String;
 
 .field private final storyId:Ljava/lang/String;
 
-.field private final storyKind:LJSh;
+.field private final storyKind:LZgi;
 
-.field private final storyPostMetadata:LLVh;
+.field private final storyPostMetadata:Lgki;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;LJSh;Ljava/lang/String;LLVh;)V
+.method public constructor <init>(Ljava/lang/String;LZgi;Ljava/lang/String;Lgki;)V
     .locals 0
 
     .line 1
@@ -31,20 +31,20 @@
     iput-object p1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyId:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iput-object p2, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
     .line 4
     iput-object p3, p0, Lcom/snap/core/model/StorySnapRecipient;->storyDisplayName:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iput-object p4, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
     const/4 p1, 0x0
 
     if-eqz p4, :cond_0
 
     .line 6
-    iget-object p2, p4, LLVh;->a:LlYd;
+    iget-object p2, p4, Lgki;->a:LIfe;
 
     goto :goto_0
 
@@ -52,20 +52,20 @@
     move-object p2, p1
 
     :goto_0
-    iput-object p2, p0, Lcom/snap/core/model/StorySnapRecipient;->myStoryOverridePrivacy:LlYd;
+    iput-object p2, p0, Lcom/snap/core/model/StorySnapRecipient;->myStoryOverridePrivacy:LIfe;
 
     if-eqz p4, :cond_1
 
     .line 7
-    iget-object p1, p4, LLVh;->b:LuF8;
+    iget-object p1, p4, Lgki;->b:LyM8;
 
     :cond_1
-    iput-object p1, p0, Lcom/snap/core/model/StorySnapRecipient;->groupStoryType:LuF8;
+    iput-object p1, p0, Lcom/snap/core/model/StorySnapRecipient;->groupStoryType:LyM8;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;LJSh;Ljava/lang/String;LLVh;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;LZgi;Ljava/lang/String;Lgki;ILex5;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x4
@@ -85,12 +85,12 @@
 
     .line 8
     :cond_1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/snap/core/model/StorySnapRecipient;-><init>(Ljava/lang/String;LJSh;Ljava/lang/String;LLVh;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/snap/core/model/StorySnapRecipient;-><init>(Ljava/lang/String;LZgi;Ljava/lang/String;Lgki;)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/core/model/StorySnapRecipient;Ljava/lang/String;LJSh;Ljava/lang/String;LLVh;ILjava/lang/Object;)Lcom/snap/core/model/StorySnapRecipient;
+.method public static synthetic copy$default(Lcom/snap/core/model/StorySnapRecipient;Ljava/lang/String;LZgi;Ljava/lang/String;Lgki;ILjava/lang/Object;)Lcom/snap/core/model/StorySnapRecipient;
     .locals 0
 
     .line 1
@@ -115,7 +115,7 @@
 
     .line 10
     .line 11
-    iget-object p2, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iget-object p2, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
     .line 12
     .line 13
@@ -141,12 +141,12 @@
 
     .line 22
     .line 23
-    iget-object p4, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iget-object p4, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
     .line 24
     .line 25
     :cond_3
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/core/model/StorySnapRecipient;->copy(Ljava/lang/String;LJSh;Ljava/lang/String;LLVh;)Lcom/snap/core/model/StorySnapRecipient;
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/core/model/StorySnapRecipient;->copy(Ljava/lang/String;LZgi;Ljava/lang/String;Lgki;)Lcom/snap/core/model/StorySnapRecipient;
 
     .line 26
     .line 27
@@ -167,11 +167,11 @@
     return-object v0
 .end method
 
-.method public final component2()LJSh;
+.method public final component2()LZgi;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
     .line 2
     .line 3
@@ -186,18 +186,18 @@
     return-object v0
 .end method
 
-.method public final component4()LLVh;
+.method public final component4()Lgki;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final copy(Ljava/lang/String;LJSh;Ljava/lang/String;LLVh;)Lcom/snap/core/model/StorySnapRecipient;
+.method public final copy(Ljava/lang/String;LZgi;Ljava/lang/String;Lgki;)Lcom/snap/core/model/StorySnapRecipient;
     .locals 1
 
     .line 1
@@ -205,7 +205,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2, p3, p4}, Lcom/snap/core/model/StorySnapRecipient;-><init>(Ljava/lang/String;LJSh;Ljava/lang/String;LLVh;)V
+    invoke-direct {v0, p1, p2, p3, p4}, Lcom/snap/core/model/StorySnapRecipient;-><init>(Ljava/lang/String;LZgi;Ljava/lang/String;Lgki;)V
 
     .line 4
     .line 5
@@ -238,7 +238,7 @@
 
     iget-object v3, p1, Lcom/snap/core/model/StorySnapRecipient;->storyId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -247,9 +247,9 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
-    iget-object v3, p1, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iget-object v3, p1, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
     if-eq v1, v3, :cond_3
 
@@ -260,7 +260,7 @@
 
     iget-object v3, p1, Lcom/snap/core/model/StorySnapRecipient;->storyDisplayName:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -269,11 +269,11 @@
     return v2
 
     :cond_4
-    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
-    iget-object p1, p1, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iget-object p1, p1, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -285,11 +285,11 @@
     return v0
 .end method
 
-.method public final getGroupStoryType()LuF8;
+.method public final getGroupStoryType()LyM8;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->groupStoryType:LuF8;
+    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->groupStoryType:LyM8;
 
     .line 2
     .line 3
@@ -307,11 +307,11 @@
     return-object v0
 .end method
 
-.method public final getMyStoryOverridePrivacy()LlYd;
+.method public final getMyStoryOverridePrivacy()LIfe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->myStoryOverridePrivacy:LlYd;
+    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->myStoryOverridePrivacy:LIfe;
 
     .line 2
     .line 3
@@ -340,22 +340,22 @@
     return-object v0
 .end method
 
-.method public final getStoryKind()LJSh;
+.method public final getStoryKind()LZgi;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getStoryPostMetadata()LLVh;
+.method public final getStoryPostMetadata()Lgki;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
     .line 2
     .line 3
@@ -386,11 +386,11 @@
 
     .line 10
     .line 11
-    iget-object v2, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iget-object v2, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
     .line 12
     .line 13
-    invoke-static {v2, v0, v1}, LXl4;->a(LJSh;II)I
+    invoke-static {v2, v0, v1}, LDj4;->a(LZgi;II)I
 
     .line 14
     .line 15
@@ -432,7 +432,7 @@
 
     .line 30
     .line 31
-    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
     .line 32
     .line 33
@@ -444,7 +444,7 @@
 
     .line 36
     :cond_1
-    invoke-virtual {v1}, LLVh;->hashCode()I
+    invoke-virtual {v1}, Lgki;->hashCode()I
 
     .line 37
     .line 38
@@ -464,11 +464,11 @@
 
     iget-object v0, p0, Lcom/snap/core/model/StorySnapRecipient;->storyId:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LJSh;
+    iget-object v1, p0, Lcom/snap/core/model/StorySnapRecipient;->storyKind:LZgi;
 
     iget-object v2, p0, Lcom/snap/core/model/StorySnapRecipient;->storyDisplayName:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:LLVh;
+    iget-object v3, p0, Lcom/snap/core/model/StorySnapRecipient;->storyPostMetadata:Lgki;
 
     new-instance v4, Ljava/lang/StringBuilder;
 

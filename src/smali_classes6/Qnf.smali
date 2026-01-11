@@ -3,110 +3,96 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "LQnf;",
+        ">;"
+    }
+.end annotation
+
+
 # static fields
+.field public static final enum a:LQnf;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DAILY"
+    .end annotation
+.end field
+
+.field public static final enum b:LQnf;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "HOURLY"
+    .end annotation
+.end field
+
 .field public static final synthetic c:[LQnf;
-
-
-# instance fields
-.field public final a:LhGb;
-
-.field public final b:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 5
 
     .line 1
-    new-instance v0, LQnf;
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    sget-object v1, LhGb;->b:LhGb;
+    new-instance v2, LQnf;
 
     .line 4
     .line 5
-    const-string v2, "MEMORIES"
+    const-string v3, "DAILY"
 
     .line 6
     .line 7
-    const/4 v3, 0x0
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 8
-    const v4, 0x7f13205a
-
     .line 9
     .line 10
-    .line 11
-    invoke-direct {v0, v2, v3, v1, v4}, LQnf;-><init>(Ljava/lang/String;ILhGb;I)V
+    sput-object v2, LQnf;->a:LQnf;
 
+    .line 11
     .line 12
+    new-instance v3, LQnf;
+
     .line 13
     .line 14
-    new-instance v1, LQnf;
+    const-string v4, "HOURLY"
 
     .line 15
     .line 16
-    sget-object v2, LhGb;->t:LhGb;
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
-    const-string v4, "MEMORIES_AND_CAMERA_ROLL"
-
     .line 19
-    .line 20
-    const/4 v5, 0x1
+    sput-object v3, LQnf;->b:LQnf;
 
+    .line 20
     .line 21
-    const v6, 0x7f132061
+    const/4 v4, 0x2
 
     .line 22
+    new-array v4, v4, [LQnf;
+
     .line 23
     .line 24
-    invoke-direct {v1, v4, v5, v2, v6}, LQnf;-><init>(Ljava/lang/String;ILhGb;I)V
+    aput-object v2, v4, v1
 
     .line 25
     .line 26
-    .line 27
-    const/4 v2, 0x2
+    aput-object v3, v4, v0
 
+    .line 27
     .line 28
-    new-array v2, v2, [LQnf;
+    sput-object v4, LQnf;->c:[LQnf;
 
     .line 29
     .line 30
-    aput-object v0, v2, v3
-
-    .line 31
-    .line 32
-    aput-object v1, v2, v5
-
-    .line 33
-    .line 34
-    sput-object v2, LQnf;->c:[LQnf;
-
-    .line 35
-    .line 36
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;ILhGb;I)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p3, p0, LQnf;->a:LhGb;
-
-    .line 5
-    .line 6
-    iput p4, p0, LQnf;->b:I
-
-    .line 7
-    .line 8
     return-void
 .end method
 

@@ -1,229 +1,340 @@
-.class public final enum Lik1;
-.super Ljava/lang/Enum;
+.class public abstract synthetic Lik1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final enum X:Lik1;
-
-.field public static final enum Y:Lik1;
-
-.field public static final synthetic Z:[Lik1;
-
-.field public static final enum a:Lik1;
-
-.field public static final enum b:Lik1;
-
-.field public static final enum c:Lik1;
-
-.field public static final enum t:Lik1;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 13
+    .locals 3
 
     .line 1
-    const/4 v0, 0x5
+    invoke-static {}, Lav1;->values()[Lav1;
 
     .line 2
-    const/4 v1, 0x4
-
     .line 3
-    const/4 v2, 0x3
-
     .line 4
-    const/4 v3, 0x2
+    move-result-object v0
 
     .line 5
-    const/4 v4, 0x1
+    array-length v0, v0
 
     .line 6
-    const/4 v5, 0x0
+    new-array v0, v0, [I
 
     .line 7
-    new-instance v6, Lik1;
-
     .line 8
+    :try_start_0
+    sget-object v1, Lav1;->a:Lav1;
+
     .line 9
-    const-string v7, "INIT"
-
     .line 10
-    .line 11
-    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
     .line 12
     .line 13
+    move-result v1
+
     .line 14
-    sput-object v6, Lik1;->a:Lik1;
+    const/4 v2, 0x1
 
     .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 16
-    new-instance v7, Lik1;
-
     .line 17
+    :catch_0
+    :try_start_1
+    sget-object v1, Lav1;->j0:Lav1;
+
     .line 18
-    const-string v8, "LOADING"
-
     .line 19
-    .line 20
-    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 20
     .line 21
     .line 22
+    move-result v1
+
     .line 23
-    sput-object v7, Lik1;->b:Lik1;
+    const/4 v2, 0x2
 
     .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
     .line 25
-    new-instance v8, Lik1;
-
     .line 26
+    :catch_1
+    :try_start_2
+    sget-object v1, Lav1;->b:Lav1;
+
     .line 27
-    const-string v9, "LOADED"
-
     .line 28
-    .line 29
-    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 29
     .line 30
     .line 31
+    move-result v1
+
     .line 32
-    sput-object v8, Lik1;->c:Lik1;
+    const/4 v2, 0x3
 
     .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 34
-    new-instance v9, Lik1;
-
     .line 35
+    :catch_2
+    :try_start_3
+    sget-object v1, Lav1;->c:Lav1;
+
     .line 36
-    const-string v10, "SHOWING"
-
     .line 37
-    .line 38
-    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 38
     .line 39
     .line 40
+    move-result v1
+
     .line 41
-    sput-object v9, Lik1;->t:Lik1;
+    const/4 v2, 0x4
 
     .line 42
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
     .line 43
-    new-instance v10, Lik1;
-
     .line 44
+    :catch_3
+    :try_start_4
+    sget-object v1, Lav1;->t:Lav1;
+
     .line 45
-    const-string v11, "SHOWN"
-
     .line 46
-    .line 47
-    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 47
     .line 48
     .line 49
+    move-result v1
+
     .line 50
-    sput-object v10, Lik1;->X:Lik1;
+    const/4 v2, 0x5
 
     .line 51
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
     .line 52
-    new-instance v11, Lik1;
-
     .line 53
+    :catch_4
+    :try_start_5
+    sget-object v1, Lav1;->X:Lav1;
+
     .line 54
-    const-string v12, "HIDDEN"
-
     .line 55
-    .line 56
-    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 56
     .line 57
     .line 58
+    move-result v1
+
     .line 59
-    sput-object v11, Lik1;->Y:Lik1;
+    const/4 v2, 0x6
 
     .line 60
-    .line 61
-    const/4 v12, 0x6
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
 
+    .line 61
     .line 62
-    new-array v12, v12, [Lik1;
+    :catch_5
+    :try_start_6
+    sget-object v1, Lav1;->Y:Lav1;
 
     .line 63
     .line 64
-    aput-object v6, v12, v5
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 65
     .line 66
-    aput-object v7, v12, v4
-
     .line 67
+    move-result v1
+
     .line 68
-    aput-object v8, v12, v3
+    const/4 v2, 0x7
 
     .line 69
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
     .line 70
-    aput-object v9, v12, v2
-
     .line 71
+    :catch_6
+    :try_start_7
+    sget-object v1, Lav1;->Z:Lav1;
+
     .line 72
-    aput-object v10, v12, v1
-
     .line 73
-    .line 74
-    aput-object v11, v12, v0
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 74
     .line 75
     .line 76
-    sput-object v12, Lik1;->Z:[Lik1;
+    move-result v1
 
     .line 77
+    const/16 v2, 0x8
+
     .line 78
+    .line 79
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    .line 80
+    .line 81
+    :catch_7
+    :try_start_8
+    sget-object v1, Lav1;->e0:Lav1;
+
+    .line 82
+    .line 83
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 84
+    .line 85
+    .line 86
+    move-result v1
+
+    .line 87
+    const/16 v2, 0x9
+
+    .line 88
+    .line 89
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    .line 90
+    .line 91
+    :catch_8
+    :try_start_9
+    sget-object v1, Lav1;->f0:Lav1;
+
+    .line 92
+    .line 93
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 94
+    .line 95
+    .line 96
+    move-result v1
+
+    .line 97
+    const/16 v2, 0xa
+
+    .line 98
+    .line 99
+    aput v2, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    .line 100
+    .line 101
+    :catch_9
+    :try_start_a
+    sget-object v1, Lav1;->g0:Lav1;
+
+    .line 102
+    .line 103
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 104
+    .line 105
+    .line 106
+    move-result v1
+
+    .line 107
+    const/16 v2, 0xb
+
+    .line 108
+    .line 109
+    aput v2, v0, v1
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+
+    .line 110
+    .line 111
+    :catch_a
+    :try_start_b
+    sget-object v1, Lav1;->h0:Lav1;
+
+    .line 112
+    .line 113
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 114
+    .line 115
+    .line 116
+    move-result v1
+
+    .line 117
+    const/16 v2, 0xc
+
+    .line 118
+    .line 119
+    aput v2, v0, v1
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+
+    .line 120
+    .line 121
+    :catch_b
+    :try_start_c
+    sget-object v1, Lav1;->i0:Lav1;
+
+    .line 122
+    .line 123
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 124
+    .line 125
+    .line 126
+    move-result v1
+
+    .line 127
+    const/16 v2, 0xd
+
+    .line 128
+    .line 129
+    aput v2, v0, v1
+    :try_end_c
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+
+    .line 130
+    .line 131
+    :catch_c
+    sput-object v0, Lik1;->a:[I
+
+    .line 132
+    .line 133
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lik1;
-    .locals 1
-
-    .line 1
-    const-class v0, Lik1;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lik1;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lik1;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lik1;->Z:[Lik1;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lik1;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

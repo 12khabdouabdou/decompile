@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LlZ6;
+.implements Li37;
 
 
 # static fields
@@ -77,7 +77,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {p0}, LbX0;->s(Landroid/view/View;)V
+    invoke-static {p0}, LOZ;->C0(Landroid/view/View;)V
 
     .line 9
     .line 10
@@ -153,11 +153,11 @@
     .locals 12
 
     .line 1
-    check-cast p1, LjZ6;
+    check-cast p1, Lg37;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LjZ6;->a()LdGe;
+    invoke-virtual {p1}, Lg37;->a()LLXe;
 
     .line 4
     .line 5
@@ -165,7 +165,7 @@
     move-result-object v0
 
     .line 7
-    sget-object v1, LdGe;->e:LdGe;
+    sget-object v1, LLXe;->e:LLXe;
 
     .line 8
     .line 9
@@ -177,7 +177,7 @@
 
     .line 12
     :cond_0
-    iget v0, v0, LdGe;->d:I
+    iget v0, v0, LLXe;->d:I
 
     .line 13
     .line 14
@@ -188,7 +188,7 @@
     add-int/2addr v0, v1
 
     .line 17
-    invoke-static {p0}, LLZj;->v(Landroid/view/View;)I
+    invoke-static {p0}, LDz9;->v(Landroid/view/View;)I
 
     .line 18
     .line 19
@@ -200,7 +200,7 @@
 
     .line 22
     .line 23
-    invoke-static {p0, v0}, LLZj;->Y(Landroid/view/View;I)V
+    invoke-static {p0, v0}, LDz9;->X(Landroid/view/View;I)V
 
     .line 24
     .line 25
@@ -217,7 +217,7 @@
     .line 31
     .line 32
     :goto_0
-    instance-of v0, p1, LiZ6;
+    instance-of v0, p1, Lf37;
 
     .line 33
     .line 34
@@ -280,7 +280,7 @@
     .line 60
     .line 61
     .line 62
-    invoke-virtual {p0}, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->g()V
+    invoke-virtual {p0}, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->f()V
 
     .line 63
     .line 64
@@ -376,7 +376,7 @@
 
     .line 111
     :cond_3
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 112
     .line 113
@@ -385,7 +385,7 @@
 
     .line 115
     :cond_4
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 116
     .line 117
@@ -394,7 +394,7 @@
 
     .line 119
     :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 120
     .line 121
@@ -403,7 +403,7 @@
 
     .line 123
     :cond_6
-    instance-of v0, p1, LhZ6;
+    instance-of v0, p1, Le37;
 
     .line 124
     .line 125
@@ -411,7 +411,7 @@
 
     .line 126
     .line 127
-    check-cast p1, LhZ6;
+    check-cast p1, Le37;
 
     .line 128
     .line 129
@@ -432,7 +432,7 @@
 
     .line 136
     .line 137
-    iget-boolean p1, p1, LhZ6;->a:Z
+    iget-boolean p1, p1, Le37;->a:Z
 
     .line 138
     .line 139
@@ -522,14 +522,14 @@
     move-result-object p1
 
     .line 183
-    new-instance v0, Luv5;
+    new-instance v0, LrA5;
 
     .line 184
     .line 185
     const/4 v1, 0x0
 
     .line 186
-    invoke-direct {v0, p0, v1}, Luv5;-><init>(Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;I)V
+    invoke-direct {v0, p0, v1}, LrA5;-><init>(Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;I)V
 
     .line 187
     .line 188
@@ -551,7 +551,7 @@
 
     .line 197
     :cond_8
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 198
     .line 199
@@ -560,7 +560,7 @@
 
     .line 201
     :cond_9
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 202
     .line 203
@@ -569,7 +569,7 @@
 
     .line 205
     :cond_a
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 206
     .line 207
@@ -660,7 +660,7 @@
 
     .line 251
     .line 252
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 253
     .line 254
@@ -673,7 +673,7 @@
 
     .line 257
     .line 258
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 259
     .line 260
@@ -682,7 +682,7 @@
 
     .line 262
     :cond_e
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 263
     .line 264
@@ -691,7 +691,7 @@
 
     .line 266
     :cond_f
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 267
     .line 268
@@ -700,7 +700,7 @@
 
     .line 270
     :cond_10
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 271
     .line 272
@@ -799,7 +799,7 @@
     return-void
 .end method
 
-.method public final g()V
+.method public final f()V
     .locals 8
 
     .line 1
@@ -964,14 +964,14 @@
     move-result-object v0
 
     .line 82
-    new-instance v1, Luv5;
+    new-instance v1, LrA5;
 
     .line 83
     .line 84
     const/4 v2, 0x1
 
     .line 85
-    invoke-direct {v1, p0, v2}, Luv5;-><init>(Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;I)V
+    invoke-direct {v1, p0, v2}, LrA5;-><init>(Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;I)V
 
     .line 86
     .line 87
@@ -993,7 +993,7 @@
 
     .line 96
     :cond_0
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 97
     .line 98
@@ -1002,7 +1002,7 @@
 
     .line 100
     :cond_1
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 101
     .line 102
@@ -1011,7 +1011,7 @@
 
     .line 104
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 105
     .line 106
@@ -1020,7 +1020,7 @@
 
     .line 108
     :cond_3
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 109
     .line 110
@@ -1054,7 +1054,7 @@
     move-result-object v0
 
     .line 13
-    const v1, 0x7f070624
+    const v1, 0x7f070650
 
     .line 14
     .line 15
@@ -1079,7 +1079,7 @@
     move-result-object v0
 
     .line 26
-    const v1, 0x7f070623
+    const v1, 0x7f07064f
 
     .line 27
     .line 28
@@ -1096,7 +1096,7 @@
 
     .line 34
     .line 35
-    const v0, 0x7f0b082f
+    const v0, 0x7f0b08ef
 
     .line 36
     .line 37
@@ -1118,7 +1118,7 @@
 
     .line 46
     .line 47
-    const v0, 0x7f0b082e
+    const v0, 0x7f0b08ee
 
     .line 48
     .line 49
@@ -1140,7 +1140,7 @@
 
     .line 58
     .line 59
-    const v0, 0x7f0b082d
+    const v0, 0x7f0b08ed
 
     .line 60
     .line 61
@@ -1162,7 +1162,7 @@
 
     .line 70
     .line 71
-    const v0, 0x7f0b082b
+    const v0, 0x7f0b08eb
 
     .line 72
     .line 73
@@ -1179,7 +1179,7 @@
 
     .line 79
     .line 80
-    const v0, 0x7f0b082c
+    const v0, 0x7f0b08ec
 
     .line 81
     .line 82

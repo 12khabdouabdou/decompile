@@ -1,97 +1,138 @@
 .class public final LwCg;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements LvCg;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'name\':s,\'imageUrl\':s,\'storedId\':s,\'unitPrice\':d,\'currency\':s,\'id\':s,\'editQuantity\':f(d@),\'maxQuantity\':d,\'bitmojiItem\':r?:\'[0]\',\'numOfQuantity\':d"
+    typeReferences = {
+        Lcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:LGa0;
+.field private _bitmojiItem:Lcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;
 
-.field public final b:LWm0;
+.field private _currency:Ljava/lang/String;
+
+.field private _editQuantity:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
+
+.field private _id:Ljava/lang/String;
+
+.field private _imageUrl:Ljava/lang/String;
+
+.field private _maxQuantity:D
+
+.field private _name:Ljava/lang/String;
+
+.field private _numOfQuantity:D
+
+.field private _storedId:Ljava/lang/String;
+
+.field private _unitPrice:D
 
 
 # direct methods
-.method public constructor <init>(LGa0;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;Ljava/lang/String;Ld9f;DD)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LwCg;->_name:Ljava/lang/String;
+
     .line 3
+    iput-object p2, p0, LwCg;->_imageUrl:Ljava/lang/String;
+
     .line 4
-    iput-object p1, p0, LwCg;->a:LGa0;
+    iput-object p3, p0, LwCg;->_storedId:Ljava/lang/String;
 
     .line 5
+    iput-wide p4, p0, LwCg;->_unitPrice:D
+
     .line 6
-    sget-object p1, LZF2;->Z:LZF2;
+    iput-object p6, p0, LwCg;->_currency:Ljava/lang/String;
 
     .line 7
+    iput-object p7, p0, LwCg;->_id:Ljava/lang/String;
+
     .line 8
-    const-string v0, "SnapDocConverterMediaConverterWrapper"
+    iput-object p8, p0, LwCg;->_editQuantity:Lkotlin/jvm/functions/Function1;
 
     .line 9
+    iput-wide p9, p0, LwCg;->_maxQuantity:D
+
+    const/4 p1, 0x0
+
     .line 10
-    invoke-static {p1, p1, v0}, LEU0;->h(LZF2;LZF2;Ljava/lang/String;)LWm0;
+    iput-object p1, p0, LwCg;->_bitmojiItem:Lcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;
 
     .line 11
-    .line 12
-    .line 13
-    move-result-object p1
+    iput-wide p11, p0, LwCg;->_numOfQuantity:D
 
-    .line 14
-    iput-object p1, p0, LwCg;->b:LWm0;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Lkkb;)Lio/reactivex/rxjava3/core/Single;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LwCg;->b:LWm0;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LwCg;->a:LGa0;
-
-    .line 4
-    .line 5
-    invoke-virtual {v1, v0}, LGa0;->c(LWm0;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSubscribe;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    new-instance v1, LB4g;
-
-    .line 10
-    .line 11
-    const/16 v2, 0x14
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;DLcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;D)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "D",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Lkotlin/jvm/functions/Function1;",
+            "D",
+            "Lcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;",
+            "D)V"
+        }
+    .end annotation
 
     .line 12
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 13
-    invoke-direct {v1, v2, p1}, LB4g;-><init>(ILjava/lang/Object;)V
+    iput-object p1, p0, LwCg;->_name:Ljava/lang/String;
 
     .line 14
+    iput-object p2, p0, LwCg;->_imageUrl:Ljava/lang/String;
+
     .line 15
+    iput-object p3, p0, LwCg;->_storedId:Ljava/lang/String;
+
     .line 16
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    iput-wide p4, p0, LwCg;->_unitPrice:D
 
     .line 17
+    iput-object p6, p0, LwCg;->_currency:Ljava/lang/String;
+
     .line 18
-    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    iput-object p7, p0, LwCg;->_id:Ljava/lang/String;
 
     .line 19
+    iput-object p8, p0, LwCg;->_editQuantity:Lkotlin/jvm/functions/Function1;
+
     .line 20
+    iput-wide p9, p0, LwCg;->_maxQuantity:D
+
     .line 21
-    return-object p1
+    iput-object p11, p0, LwCg;->_bitmojiItem:Lcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;
+
+    .line 22
+    iput-wide p12, p0, LwCg;->_numOfQuantity:D
+
+    return-void
 .end method

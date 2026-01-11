@@ -35,6 +35,9 @@
 .method public abstract appStateChanged(Lcom/snapchat/client/shims/AppState;)V
 .end method
 
+.method public abstract callParticipationChanged(Z)V
+.end method
+
 .method public abstract dispose()V
 .end method
 

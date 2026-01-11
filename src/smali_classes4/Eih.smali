@@ -1,126 +1,109 @@
-.class public final LEih;
+.class public abstract LEih;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final a:LV7c;
+
+.field public static final b:LV7c;
+
+.field public static final c:LV7c;
+
+
 # direct methods
-.method public static a(LOnh;)LLmj;
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    const/4 v0, 0x0
+    sget-object v0, LFih;->e0:LFih;
 
     .line 2
-    if-eqz p0, :cond_2
-
     .line 3
-    .line 4
-    invoke-virtual {p0}, LOnh;->a()LKhh;
+    const-string v1, "missing"
 
+    .line 4
     .line 5
+    const-string v2, "status"
+
     .line 6
     .line 7
-    move-result-object v1
+    invoke-static {v0, v2, v1}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 8
-    if-eqz v1, :cond_2
-
     .line 9
     .line 10
-    iget v2, v1, LKhh;->a:I
+    move-result-object v1
 
     .line 11
-    .line 12
-    const/4 v3, 0x1
+    sput-object v1, LEih;->a:LV7c;
 
+    .line 12
     .line 13
-    if-ne v2, v3, :cond_0
+    const-string v1, "invalid"
 
     .line 14
     .line 15
-    iget-object v1, v1, LKhh;->b:Lo17;
+    invoke-static {v0, v2, v1}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 16
     .line 17
-    check-cast v1, LLmj;
-
     .line 18
+    move-result-object v1
+
     .line 19
-    goto :goto_0
+    sput-object v1, LEih;->b:LV7c;
 
     .line 20
-    :cond_0
-    move-object v1, v0
-
     .line 21
-    :goto_0
-    if-nez v1, :cond_1
+    const-string v1, "valid"
 
     .line 22
     .line 23
-    goto :goto_1
+    invoke-static {v0, v2, v1}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 24
-    :cond_1
-    return-object v1
-
     .line 25
-    :cond_2
-    :goto_1
-    if-eqz p0, :cond_4
-
     .line 26
+    move-result-object v0
+
     .line 27
-    invoke-virtual {p0}, LOnh;->a()LKhh;
+    sput-object v0, LEih;->c:LV7c;
 
     .line 28
     .line 29
-    .line 30
-    move-result-object p0
+    return-void
+.end method
 
-    .line 31
-    if-eqz p0, :cond_4
+.method public static a()LV7c;
+    .locals 1
 
-    .line 32
-    .line 33
-    iget v1, p0, LKhh;->a:I
+    .line 1
+    sget-object v0, LEih;->b:LV7c;
 
-    .line 34
-    .line 35
-    const/4 v2, 0x2
+    .line 2
+    .line 3
+    return-object v0
+.end method
 
-    .line 36
-    if-ne v1, v2, :cond_3
+.method public static b()LV7c;
+    .locals 1
 
-    .line 37
-    .line 38
-    iget-object p0, p0, LKhh;->b:Lo17;
+    .line 1
+    sget-object v0, LEih;->a:LV7c;
 
-    .line 39
-    .line 40
-    check-cast p0, LKhh$a;
+    .line 2
+    .line 3
+    return-object v0
+.end method
 
-    .line 41
-    .line 42
-    goto :goto_2
+.method public static c()LV7c;
+    .locals 1
 
-    .line 43
-    :cond_3
-    move-object p0, v0
+    .line 1
+    sget-object v0, LEih;->c:LV7c;
 
-    .line 44
-    :goto_2
-    if-eqz p0, :cond_4
-
-    .line 45
-    .line 46
-    iget-object p0, p0, LKhh$a;->b:LLmj;
-
-    .line 47
-    .line 48
-    return-object p0
-
-    .line 49
-    :cond_4
+    .line 2
+    .line 3
     return-object v0
 .end method

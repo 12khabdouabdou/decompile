@@ -1,5 +1,5 @@
 .class public Lorg/chromium/net/impl/NativeCronetProvider;
-.super Lvik;
+.super LnIk;
 .source "SourceFile"
 
 
@@ -10,7 +10,7 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lvik;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LnIk;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -40,7 +40,7 @@
 
     .line 8
     .line 9
-    iget-object p1, p1, Lvik;->b:Ljava/lang/Object;
+    iget-object p1, p1, LnIk;->b:Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -48,7 +48,7 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Lvik;->b:Ljava/lang/Object;
+    iget-object v0, p0, LnIk;->b:Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -90,7 +90,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lvik;->b:Ljava/lang/Object;
+    iget-object v0, p0, LnIk;->b:Ljava/lang/Object;
 
     .line 2
     .line 3

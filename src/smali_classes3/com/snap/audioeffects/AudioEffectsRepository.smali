@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFo0;
+    proxyClass = Ler0;
     schema = "\'audioEffectsItemStream\':g?<c>:\'[0]\'<a<r:\'[1]\'>>,\'toolbarIconFromEffectId\':f|m|(s): s"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LCo0;
+        Lbr0;
     }
 .end annotation
 
@@ -25,7 +25,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LCo0;",
+            "Lbr0;",
             ">;>;"
         }
     .end annotation

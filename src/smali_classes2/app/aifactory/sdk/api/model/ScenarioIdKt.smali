@@ -26,7 +26,7 @@
     const/4 v2, 0x6
 
     .line 9
-    invoke-static {p0, v0, v1, v2}, LR4i;->M1(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    invoke-static {p0, v0, v1, v2}, Lkti;->T0(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     .line 10
     .line 11
@@ -34,7 +34,7 @@
     move-result-object p0
 
     .line 13
-    invoke-static {v1, p0}, Lue3;->J0(ILjava/util/List;)Ljava/lang/Object;
+    invoke-static {v1, p0}, Llh3;->H3(ILjava/util/List;)Ljava/lang/Object;
 
     .line 14
     .line 15

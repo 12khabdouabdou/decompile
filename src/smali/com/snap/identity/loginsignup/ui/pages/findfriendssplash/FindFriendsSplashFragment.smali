@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGu7;
+.implements Lyz7;
 
 
 # instance fields
@@ -23,7 +23,7 @@
 
 .field public L0:Landroid/view/View;
 
-.field public M0:LCu7;
+.field public M0:Ltz7;
 
 
 # direct methods
@@ -41,36 +41,11 @@
 
 
 # virtual methods
-.method public final B1(Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->B1(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()LCu7;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, LCu7;->p3(LGu7;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final C1()V
+.method public final A1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()LCu7;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()Ltz7;
 
     .line 2
     .line 3
@@ -78,7 +53,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LCu7;->C1()V
+    invoke-virtual {v0}, Ltz7;->D1()V
 
     .line 6
     .line 7
@@ -86,11 +61,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e026c
+    const p3, 0x7f0e0281
 
     .line 2
     .line 3
@@ -109,16 +84,16 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    const p2, 0x7f0b1403
+    const p2, 0x7f0b153c
 
     .line 5
     .line 6
@@ -135,7 +110,7 @@
 
     .line 12
     .line 13
-    const p2, 0x7f0b0691
+    const p2, 0x7f0b0728
 
     .line 14
     .line 15
@@ -167,12 +142,12 @@
     const/4 v0, 0x1
 
     .line 29
-    invoke-virtual {p2, v0}, LOuh;->b(I)V
+    invoke-virtual {p2, v0}, LOSh;->b(I)V
 
     .line 30
     .line 31
     .line 32
-    const p2, 0x7f0b0b1a
+    const p2, 0x7f0b0c2c
 
     .line 33
     .line 34
@@ -214,7 +189,7 @@
     .line 52
     .line 53
     .line 54
-    const p2, 0x7f0b08b4
+    const p2, 0x7f0b099f
 
     .line 55
     .line 56
@@ -235,7 +210,7 @@
 
     .line 64
     .line 65
-    const p2, 0x7f0b00fb
+    const p2, 0x7f0b0135
 
     .line 66
     .line 67
@@ -256,7 +231,7 @@
 
     .line 75
     .line 76
-    const p2, 0x7f0b0c22
+    const p2, 0x7f0b0d46
 
     .line 77
     .line 78
@@ -273,7 +248,7 @@
 
     .line 84
     .line 85
-    const p2, 0x7f0b15ba
+    const p2, 0x7f0b16f6
 
     .line 86
     .line 87
@@ -290,7 +265,7 @@
 
     .line 93
     .line 94
-    const p2, 0x7f0b08b0
+    const p2, 0x7f0b099b
 
     .line 95
     .line 96
@@ -311,7 +286,7 @@
 
     .line 104
     .line 105
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()LCu7;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()Ltz7;
 
     .line 106
     .line 107
@@ -319,7 +294,7 @@
     move-result-object p1
 
     .line 109
-    invoke-virtual {p1}, LCu7;->i3()V
+    invoke-virtual {p1}, Ltz7;->j3()V
 
     .line 110
     .line 111
@@ -327,22 +302,22 @@
     return-void
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->g1:LZ8d;
+    sget-object v0, Lsod;->g1:Lsod;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final a2()LCu7;
+.method public final a2()Ltz7;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->M0:LCu7;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->M0:Ltz7;
 
     .line 2
     .line 3
@@ -358,7 +333,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -389,7 +364,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -420,7 +395,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -435,7 +410,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()LCu7;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()Ltz7;
 
     .line 2
     .line 3
@@ -443,7 +418,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LCu7;->h3()Z
+    invoke-virtual {v0}, Ltz7;->i3()Z
 
     .line 6
     .line 7
@@ -454,11 +429,11 @@
     return v0
 .end method
 
-.method public final t1()V
+.method public final r1()V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -466,16 +441,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()LCu7;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()Ltz7;
 
     .line 5
     .line 6
@@ -483,7 +458,32 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1}, LCu7;->l3()V
+    invoke-virtual {p1}, Ltz7;->k3()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final z1(Landroid/os/Bundle;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->z1(Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/findfriendssplash/FindFriendsSplashFragment;->a2()Ltz7;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, Ltz7;->m3(Lyz7;)V
 
     .line 9
     .line 10

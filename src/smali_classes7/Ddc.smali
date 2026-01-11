@@ -4,5 +4,5 @@
 
 
 # virtual methods
-.method public abstract a(Lpuc;)Lpuc;
+.method public abstract a()Lio/reactivex/rxjava3/core/Single;
 .end method

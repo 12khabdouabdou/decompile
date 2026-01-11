@@ -1,10 +1,10 @@
 .class public final Lcom/snap/venueprofile/VenueCTAData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'discoveryPlace\':r?:\'[0]\',\'placeType\':r<e>:\'[1]\',\'openSource\':s?,\'placeInfo\':r?:\'[2]\'"
     typeReferences = {

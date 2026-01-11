@@ -1,20 +1,20 @@
 .class public final Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
 
 # instance fields
-.field public final g:LyVd;
+.field public final g:LUce;
 
-.field public final h:LXfi;
+.field public final h:LREi;
 
 
 # direct methods
@@ -22,12 +22,12 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LyVd;
+    new-instance v0, LUce;
 
     .line 5
     .line 6
@@ -36,33 +36,33 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->g:LyVd;
+    iput-object v0, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->g:LUce;
 
     .line 10
     .line 11
-    new-instance v0, LEDd;
+    new-instance v0, LxFd;
 
     .line 12
     .line 13
-    const/16 v1, 0x10
+    const/16 v1, 0x17
 
     .line 14
     .line 15
-    invoke-direct {v0, p1, v1, p0}, LEDd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p1, v1, p0}, LxFd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 16
     .line 17
     .line 18
-    new-instance p1, LXfi;
+    new-instance p1, LREi;
 
     .line 19
     .line 20
-    invoke-direct {p1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 21
     .line 22
     .line 23
-    iput-object p1, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->h:LXfi;
+    iput-object p1, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->h:LREi;
 
     .line 24
     .line 25
@@ -75,7 +75,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->g:LyVd;
+    iget-object v0, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->g:LUce;
 
     .line 2
     .line 3
@@ -86,11 +86,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->h:LXfi;
+    iget-object v0, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->h:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -98,7 +98,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LzVd;
+    check-cast v0, LVce;
 
     .line 8
     .line 9
@@ -109,19 +109,19 @@
     .locals 0
 
     .line 1
-    check-cast p1, LyVd;
+    check-cast p1, LUce;
 
     .line 2
     .line 3
-    check-cast p2, LyVd;
+    check-cast p2, LUce;
 
     .line 4
     .line 5
-    iget-object p1, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->h:LXfi;
+    iget-object p1, p0, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->h:LREi;
 
     .line 6
     .line 7
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -129,11 +129,11 @@
     move-result-object p1
 
     .line 11
-    check-cast p1, LzVd;
+    check-cast p1, LVce;
 
     .line 12
     .line 13
-    invoke-virtual {p0}, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->l()LqXc;
+    invoke-virtual {p0}, Lcom/snap/preview/opera/layer/tapnavigation/PreviewTapNavigationLayerView;->l()Llcd;
 
     .line 14
     .line 15
@@ -149,7 +149,7 @@
     return-void
 .end method
 
-.method public final l()LqXc;
+.method public final l()Llcd;
     .locals 3
 
     .line 1
@@ -157,7 +157,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, LPG9;->a:Landroid/content/Context;
+    iget-object v1, p0, LoS9;->a:Landroid/content/Context;
 
     .line 4
     .line 5
@@ -195,7 +195,7 @@
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p0}, LPG9;->d()Ljava/lang/Object;
+    invoke-virtual {p0}, LoS9;->d()Ljava/lang/Object;
 
     .line 24
     .line 25
@@ -203,7 +203,7 @@
     move-result-object v0
 
     .line 27
-    check-cast v0, LyVd;
+    check-cast v0, LUce;
 
     .line 28
     .line 29
@@ -225,7 +225,7 @@
     float-to-int v0, v1
 
     .line 37
-    new-instance v1, LqXc;
+    new-instance v1, Llcd;
 
     .line 38
     .line 39

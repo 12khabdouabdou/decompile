@@ -1,14 +1,18 @@
 .class public abstract LsAg;
-.super Ljava/lang/Object;
+.super LSX3;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field private final a:LKJj;
+
+.field private final b:LOF3;
+
+.field private final c:LcM3;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(LKJj;LOF3;LBAg;)V
     .locals 0
 
     .line 1
@@ -17,22 +21,123 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LsAg;->a:Ljava/lang/String;
+    iput-object p1, p0, LsAg;->a:LKJj;
 
     .line 5
     .line 6
+    iput-object p2, p0, LsAg;->b:LOF3;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LsAg;->c:LcM3;
+
+    .line 9
+    .line 10
     return-void
+.end method
+
+.method public static final synthetic d(LsAg;)LKJj;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, LsAg;->a:LKJj;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public toString()Ljava/lang/String;
-    .locals 1
+.method public c(Landroid/net/Uri;LCPf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/net/Uri;",
+            "LCPf;",
+            "Z",
+            "Ljava/util/Set<",
+            "+",
+            "LpM1;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LgY3;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, LsAg;->a:Ljava/lang/String;
+    iget-object v0, p0, LsAg;->b:LOF3;
 
     .line 2
     .line 3
-    return-object v0
+    iget-object v1, p0, LsAg;->c:LcM3;
+
+    .line 4
+    .line 5
+    invoke-interface {v0, v1}, LOF3;->n(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    new-instance v1, LCdg;
+
+    .line 10
+    .line 11
+    const/16 v2, 0xc
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v2, p1}, LCdg;-><init>(ILjava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 17
+    .line 18
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 19
+    .line 20
+    .line 21
+    new-instance v2, LFuf;
+
+    .line 22
+    .line 23
+    const/4 v7, 0x7
+
+    .line 24
+    move-object v3, p0
+
+    .line 25
+    move-object v4, p2
+
+    .line 26
+    move v5, p3
+
+    .line 27
+    move-object v6, p4
+
+    .line 28
+    invoke-direct/range {v2 .. v7}, LFuf;-><init>(Ljava/lang/Object;Ljava/lang/Object;ZLjava/lang/Object;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 32
+    .line 33
+    invoke-direct {p2, p1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 34
+    .line 35
+    .line 36
+    return-object p2
 .end method

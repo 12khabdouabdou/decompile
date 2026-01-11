@@ -9,34 +9,19 @@
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LXD6;
+.field public final synthetic b:Lngb;
 
 
 # direct methods
-.method public synthetic constructor <init>(LXD6;I)V
+.method public synthetic constructor <init>(Lngb;I)V
     .locals 0
 
     .line 1
     iput p2, p0, LRD6;->a:I
 
-    iput-object p1, p0, LRD6;->b:LXD6;
+    iput-object p1, p0, LRD6;->b:Lngb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(LXD6;LCm9;)V
-    .locals 0
-
-    const/4 p2, 0x1
-
-    iput p2, p0, LRD6;->a:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, LRD6;->b:LXD6;
 
     return-void
 .end method
@@ -47,225 +32,237 @@
     .locals 4
 
     .line 1
-    iget v0, p0, LRD6;->a:I
+    iget-object v0, p0, LRD6;->b:Lngb;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget v1, p0, LRD6;->a:I
 
     .line 4
     .line 5
-    .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    packed-switch v1, :pswitch_data_0
 
+    .line 6
     .line 7
     .line 8
-    iget-object p1, p0, LRD6;->b:LXD6;
+    check-cast p1, LfHa;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    instance-of v1, p1, LcHa;
 
     .line 11
     .line 12
-    .line 13
-    return-void
+    if-eqz v1, :cond_1
 
+    .line 13
     .line 14
-    :pswitch_0
-    check-cast p1, LHj;
+    check-cast p1, LcHa;
 
     .line 15
     .line 16
-    iget-object p1, p0, LRD6;->b:LXD6;
+    iget-object v1, v0, Lngb;->e0:Ljava/lang/Object;
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v1, LVC6;
 
     .line 19
     .line 20
-    .line 21
-    return-void
+    iget-object p1, p1, LcHa;->a:Lp52;
 
+    .line 21
     .line 22
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
+    if-eqz v1, :cond_0
 
     .line 23
     .line 24
-    iget-object p1, p0, LRD6;->b:LXD6;
+    sget-object v2, LdD6;->a:LxL9;
 
     .line 25
     .line 26
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     .line 27
     .line 28
     .line 29
-    return-void
+    move-result-object v1
 
     .line 30
-    :pswitch_2
-    check-cast p1, LHj;
+    sget-object v2, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
 
     .line 31
     .line 32
-    iget-object p1, p0, LRD6;->b:LXD6;
+    invoke-virtual {v1, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     .line 33
     .line 34
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 35
-    .line 36
-    .line 37
-    return-void
+    move-result-object v1
 
+    .line 36
+    sget-object v2, LdD6;->a:LxL9;
+
+    .line 37
     .line 38
-    :pswitch_3
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-interface {p1, v2, v1}, Lp52;->a(LxL9;Ljava/lang/Object;)V
 
     .line 39
     .line 40
-    iget-object p1, p0, LRD6;->b:LXD6;
-
     .line 41
-    .line 42
-    iget-wide v0, p1, LXD6;->a0:J
+    :cond_0
+    iput-object p1, v0, Lngb;->Z:Ljava/lang/Object;
 
+    .line 42
     .line 43
+    goto :goto_0
+
     .line 44
-    const-wide/16 v2, 0x1
+    :cond_1
+    instance-of v0, p1, LbHa;
 
     .line 45
     .line 46
-    add-long/2addr v0, v2
+    if-eqz v0, :cond_2
 
     .line 47
-    iput-wide v0, p1, LXD6;->a0:J
-
     .line 48
+    goto :goto_0
+
     .line 49
-    return-void
+    :cond_2
+    sget-object v0, LdHa;->a:LdHa;
 
     .line 50
-    :pswitch_4
-    check-cast p1, LCm9;
-
     .line 51
-    .line 52
-    iget-object v0, p0, LRD6;->b:LXD6;
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 52
     .line 53
     .line 54
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :goto_0
+    return-void
 
     .line 55
+    :pswitch_0
+    check-cast p1, LA52;
+
     .line 56
     .line 57
-    new-instance v1, LDm6;
+    sget-object v1, Lq52;->Y:Lq52;
 
     .line 58
     .line 59
-    const/16 v2, 0x12
+    instance-of v2, p1, Lv52;
 
     .line 60
     .line 61
-    invoke-direct {v1, v0, v2, p1}, LDm6;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    const/4 v3, 0x0
 
     .line 62
+    if-eqz v2, :cond_3
+
     .line 63
     .line 64
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
+    check-cast p1, Lv52;
 
     .line 65
     .line 66
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
+    iget-object p1, p1, Lv52;->a:Ljava/util/LinkedHashMap;
 
     .line 67
     .line 68
-    .line 69
-    invoke-virtual {v0}, LXD6;->m()Lzre;
+    invoke-virtual {p1, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 69
     .line 70
     .line 71
+    move-result-object p1
+
     .line 72
-    move-result-object v1
+    check-cast p1, Lr52;
 
     .line 73
-    check-cast v1, LBre;
-
     .line 74
-    .line 75
-    invoke-virtual {v1}, LBre;->d()LF06;
+    if-eqz p1, :cond_3
 
+    .line 75
     .line 76
+    iget-object p1, p1, Lr52;->a:Lp52;
+
     .line 77
     .line 78
-    move-result-object v1
+    goto :goto_1
 
     .line 79
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+    :cond_3
+    move-object p1, v3
 
     .line 80
-    .line 81
-    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    :goto_1
+    if-eqz p1, :cond_5
 
+    .line 81
     .line 82
+    iget-object v1, v0, Lngb;->e0:Ljava/lang/Object;
+
     .line 83
     .line 84
-    new-instance v1, LRD6;
+    check-cast v1, LVC6;
 
     .line 85
     .line 86
-    invoke-direct {v1, v0, p1}, LRD6;-><init>(LXD6;LCm9;)V
+    if-eqz v1, :cond_4
 
     .line 87
     .line 88
-    .line 89
-    invoke-virtual {v3, v1}, Lio/reactivex/rxjava3/core/Completable;->m(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    sget-object v2, LdD6;->a:LxL9;
 
+    .line 89
     .line 90
+    invoke-virtual {v1}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
     .line 91
     .line 92
-    move-result-object p1
-
     .line 93
-    sget-object v1, LBr6;->g0:LBr6;
+    move-result-object v1
 
     .line 94
+    sget-object v2, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
     .line 95
-    new-instance v2, LLt6;
-
     .line 96
-    .line 97
-    const/16 v3, 0xa
+    invoke-virtual {v1, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
+    .line 97
     .line 98
     .line 99
-    invoke-direct {v2, v3, v0}, LLt6;-><init>(ILjava/lang/Object;)V
+    move-result-object v1
 
     .line 100
+    sget-object v2, LdD6;->a:LxL9;
+
     .line 101
     .line 102
-    invoke-virtual {v0, p1, v1, v2}, LXD6;->I(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    invoke-interface {p1, v2, v1}, Lp52;->a(LxL9;Ljava/lang/Object;)V
 
     .line 103
     .line 104
     .line 105
-    return-void
+    :cond_4
+    move-object v3, p1
 
     .line 106
-    nop
+    :cond_5
+    iput-object v3, v0, Lngb;->Z:Ljava/lang/Object;
 
     .line 107
+    .line 108
+    return-void
+
+    .line 109
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

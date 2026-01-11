@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/ReportedMedia;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'contentUrl\':s?,\'contentObject\':t?,\'key\':t?,\'iv\':t?"
     typeReferences = {}

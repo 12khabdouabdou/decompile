@@ -1,580 +1,1007 @@
 .class public final LKDj;
-.super Lo17;
+.super Lhlj;
 .source "SourceFile"
 
 
-# static fields
-.field public static volatile Y:[LKDj;
-
-
 # instance fields
-.field public X:J
-
-.field public a:I
-
-.field public b:I
-
-.field public c:I
-
-.field public t:I
+.field public final a:LiAi;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(LCN8;)V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    new-instance v0, Lllj;
 
     .line 5
-    iput v0, p0, LKDj;->a:I
-
     .line 6
+    new-instance v1, Lhmj;
+
     .line 7
-    iput v0, p0, LKDj;->b:I
-
     .line 8
+    const-class v2, Lopi;
+
     .line 9
-    iput v0, p0, LKDj;->c:I
-
     .line 10
-    .line 11
-    iput v0, p0, LKDj;->t:I
+    invoke-direct {v1, v2}, Lhmj;-><init>(Ljava/lang/reflect/Type;)V
 
+    .line 11
     .line 12
     .line 13
-    const-wide/16 v0, 0x0
+    invoke-direct {v0, p1, v1}, Lllj;-><init>(LCN8;Lhmj;)V
 
     .line 14
     .line 15
-    iput-wide v0, p0, LKDj;->X:J
-
     .line 16
+    invoke-static {v0}, LIjj;->W(LiAi;)LiAi;
+
     .line 17
-    const/4 v0, 0x0
-
     .line 18
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
     .line 19
+    move-result-object p1
+
     .line 20
-    const/4 v0, -0x1
+    iput-object p1, p0, LKDj;->a:LiAi;
 
     .line 21
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
     .line 22
-    .line 23
     return-void
-.end method
-
-.method public static a()[LKDj;
-    .locals 2
-
-    .line 1
-    sget-object v0, LKDj;->Y:[LKDj;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_1
-
-    .line 4
-    .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    monitor-enter v0
-
-    .line 8
-    :try_start_0
-    sget-object v1, LKDj;->Y:[LKDj;
-
-    .line 9
-    .line 10
-    if-nez v1, :cond_0
-
-    .line 11
-    .line 12
-    const/4 v1, 0x0
-
-    .line 13
-    new-array v1, v1, [LKDj;
-
-    .line 14
-    .line 15
-    sput-object v1, LKDj;->Y:[LKDj;
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :catchall_0
-    move-exception v1
-
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_0
-    :goto_0
-    monitor-exit v0
-
-    .line 21
-    goto :goto_2
-
-    .line 22
-    :goto_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 23
-    throw v1
-
-    .line 24
-    :cond_1
-    :goto_2
-    sget-object v0, LKDj;->Y:[LKDj;
-
-    .line 25
-    .line 26
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 5
+.method public a(LUK9;)LJDj;
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    const/4 v0, 0x1
 
     .line 2
+    invoke-virtual {p1}, LUK9;->D()I
+
     .line 3
     .line 4
-    move-result v0
-
     .line 5
-    iget v1, p0, LKDj;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    iget v1, p0, LKDj;->b:I
-
-    .line 12
-    .line 13
-    invoke-static {v2, v1}, Lsa3;->s(II)I
-
-    .line 14
-    .line 15
-    .line 16
     move-result v1
 
+    .line 6
+    const/16 v2, 0x9
+
+    .line 7
+    .line 8
+    if-ne v1, v2, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 11
+    .line 12
+    .line 13
+    const/4 p1, 0x0
+
+    .line 14
+    return-object p1
+
+    .line 15
+    :cond_0
+    new-instance v1, LJDj;
+
+    .line 16
     .line 17
-    add-int/2addr v0, v1
+    invoke-direct {v1}, LJDj;-><init>()V
 
     .line 18
-    :cond_0
-    iget v1, p0, LKDj;->a:I
-
     .line 19
     .line 20
-    const/4 v2, 0x2
+    iput-boolean v0, p1, LUK9;->b:Z
 
     .line 21
-    and-int/2addr v1, v2
-
     .line 22
-    if-eqz v1, :cond_1
+    invoke-virtual {p1}, LUK9;->c()V
 
     .line 23
     .line 24
-    iget v1, p0, LKDj;->c:I
-
     .line 25
-    .line 26
-    invoke-static {v2, v1}, Lsa3;->s(II)I
+    :cond_1
+    :goto_0
+    invoke-virtual {p1}, LUK9;->i()Z
 
+    .line 26
     .line 27
     .line 28
+    move-result v3
+
     .line 29
-    move-result v1
+    if-eqz v3, :cond_12
 
     .line 30
-    add-int/2addr v0, v1
-
     .line 31
-    :cond_1
-    iget v1, p0, LKDj;->a:I
+    invoke-virtual {p1}, LUK9;->v()Ljava/lang/String;
 
     .line 32
     .line 33
-    const/4 v2, 0x4
-
     .line 34
-    and-int/2addr v1, v2
+    move-result-object v3
 
     .line 35
-    if-eqz v1, :cond_2
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 36
     .line 37
-    const/4 v1, 0x3
-
     .line 38
-    iget v3, p0, LKDj;->t:I
+    const/16 v4, 0x8
 
     .line 39
     .line 40
-    invoke-static {v1, v3}, Lsa3;->s(II)I
+    const/4 v5, -0x1
 
     .line 41
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+
     .line 42
     .line 43
-    move-result v1
-
     .line 44
-    add-int/2addr v0, v1
+    move-result v6
 
     .line 45
-    :cond_2
-    iget v1, p0, LKDj;->a:I
+    sparse-switch v6, :sswitch_data_0
 
     .line 46
     .line 47
-    and-int/lit8 v1, v1, 0x8
-
     .line 48
-    .line 49
-    if-eqz v1, :cond_3
-
-    .line 50
-    .line 51
-    iget-wide v3, p0, LKDj;->X:J
-
-    .line 52
-    .line 53
-    invoke-static {v2, v3, v4}, Lsa3;->t(IJ)I
-
-    .line 54
-    .line 55
-    .line 56
-    move-result v1
-
-    .line 57
-    add-int/2addr v1, v0
-
-    .line 58
-    return v1
-
-    .line 59
-    :cond_3
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 4
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_5
-
-    .line 6
-    .line 7
-    const/16 v1, 0x8
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_4
-
-    .line 10
-    .line 11
-    const/16 v2, 0x10
-
-    .line 12
-    .line 13
-    if-eq v0, v2, :cond_3
-
-    .line 14
-    .line 15
-    const/16 v2, 0x18
-
-    .line 16
-    .line 17
-    if-eq v0, v2, :cond_2
-
-    .line 18
-    .line 19
-    const/16 v2, 0x20
-
-    .line 20
-    .line 21
-    if-eq v0, v2, :cond_1
-
-    .line 22
-    .line 23
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v0
-
-    .line 27
-    if-nez v0, :cond_0
-
-    .line 28
-    .line 29
     goto :goto_1
 
+    .line 49
+    :sswitch_0
+    const-string v6, "friend_stories"
+
+    .line 50
+    .line 51
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v3
+
+    .line 55
+    if-nez v3, :cond_2
+
+    .line 56
+    .line 57
+    goto :goto_1
+
+    .line 58
+    :cond_2
+    const/4 v5, 0x4
+
+    .line 59
+    goto :goto_1
+
+    .line 60
+    :sswitch_1
+    const-string v6, "req_token"
+
+    .line 61
+    .line 62
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v3
+
+    .line 66
+    if-nez v3, :cond_3
+
+    .line 67
+    .line 68
+    goto :goto_1
+
+    .line 69
+    :cond_3
+    const/4 v5, 0x3
+
+    .line 70
+    goto :goto_1
+
+    .line 71
+    :sswitch_2
+    const-string v6, "timestamp"
+
+    .line 72
+    .line 73
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v3
+
+    .line 77
+    if-nez v3, :cond_4
+
+    .line 78
+    .line 79
+    goto :goto_1
+
+    .line 80
+    :cond_4
+    const/4 v5, 0x2
+
+    .line 81
+    goto :goto_1
+
+    .line 82
+    :sswitch_3
+    const-string v6, "username"
+
+    .line 83
+    .line 84
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 85
+    .line 86
+    .line 87
+    move-result v3
+
+    .line 88
+    if-nez v3, :cond_5
+
+    .line 89
+    .line 90
+    goto :goto_1
+
+    .line 91
+    :cond_5
+    const/4 v5, 0x1
+
+    .line 92
+    goto :goto_1
+
+    .line 93
+    :sswitch_4
+    const-string v6, "snapchat_user_id"
+
+    .line 94
+    .line 95
+    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 96
+    .line 97
+    .line 98
+    move-result v3
+
+    .line 99
+    if-nez v3, :cond_6
+
+    .line 100
+    .line 101
+    goto :goto_1
+
+    .line 102
+    :cond_6
+    const/4 v5, 0x0
+
+    .line 103
+    :goto_1
+    packed-switch v5, :pswitch_data_0
+
+    .line 104
+    .line 105
+    .line 106
+    invoke-virtual {p1}, LUK9;->I()V
+
+    .line 107
+    .line 108
+    .line 109
+    goto :goto_0
+
+    .line 110
+    :pswitch_0
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 111
+    .line 112
+    .line 113
+    move-result v3
+
+    .line 114
+    if-ne v3, v2, :cond_7
+
+    .line 115
+    .line 116
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 117
+    .line 118
+    .line 119
+    goto :goto_0
+
+    .line 120
+    :cond_7
+    if-ne v3, v0, :cond_1
+
+    .line 121
+    .line 122
+    invoke-static {p1}, Lxha;->c(LUK9;)Ljava/util/ArrayList;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object v3
+
+    .line 126
+    iget-object v4, p0, LKDj;->a:LiAi;
+
+    .line 127
+    .line 128
+    invoke-interface {v4}, LiAi;->get()Ljava/lang/Object;
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-object v4
+
+    .line 132
+    check-cast v4, Lhlj;
+
+    .line 133
+    .line 134
+    :goto_2
+    invoke-virtual {p1}, LUK9;->i()Z
+
+    .line 135
+    .line 136
+    .line 137
+    move-result v5
+
+    .line 138
+    if-eqz v5, :cond_9
+
+    .line 139
+    .line 140
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 141
+    .line 142
+    .line 143
+    move-result v5
+
+    .line 144
+    if-ne v5, v2, :cond_8
+
+    .line 145
+    .line 146
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 147
+    .line 148
+    .line 149
+    goto :goto_2
+
+    .line 150
+    :cond_8
+    invoke-virtual {v4, p1}, Lhlj;->read(LUK9;)Ljava/lang/Object;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object v5
+
+    .line 154
+    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 155
+    .line 156
+    .line 157
+    goto :goto_2
+
+    .line 158
+    :cond_9
+    invoke-virtual {p1}, LUK9;->f()V
+
+    .line 159
+    .line 160
+    .line 161
+    iput-object v3, v1, LJDj;->e:Ljava/util/List;
+
+    .line 162
+    .line 163
+    goto/16 :goto_0
+
+    .line 164
+    .line 165
+    :pswitch_1
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 166
+    .line 167
+    .line 168
+    move-result v3
+
+    .line 169
+    if-ne v3, v2, :cond_a
+
+    .line 170
+    .line 171
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 172
+    .line 173
+    .line 174
+    goto/16 :goto_0
+
+    .line 175
+    .line 176
+    :cond_a
+    if-ne v3, v4, :cond_b
+
+    .line 177
+    .line 178
+    invoke-virtual {p1}, LUK9;->n()Z
+
+    .line 179
+    .line 180
+    .line 181
+    move-result v3
+
+    .line 182
+    invoke-static {v3}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
+
+    .line 183
+    .line 184
+    .line 185
+    move-result-object v3
+
+    .line 186
+    goto :goto_3
+
+    .line 187
+    :cond_b
+    invoke-virtual {p1}, LUK9;->z()Ljava/lang/String;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v3
+
+    .line 191
+    :goto_3
+    iput-object v3, v1, LMy0;->b:Ljava/lang/String;
+
+    .line 192
+    .line 193
+    goto/16 :goto_0
+
+    .line 194
+    .line 195
+    :pswitch_2
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 196
+    .line 197
+    .line 198
+    move-result v3
+
+    .line 199
+    if-ne v3, v2, :cond_c
+
+    .line 200
+    .line 201
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 202
+    .line 203
+    .line 204
+    goto/16 :goto_0
+
+    .line 205
+    .line 206
+    :cond_c
+    if-ne v3, v4, :cond_d
+
+    .line 207
+    .line 208
+    invoke-virtual {p1}, LUK9;->n()Z
+
+    .line 209
+    .line 210
+    .line 211
+    move-result v3
+
+    .line 212
+    invoke-static {v3}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
+
+    .line 213
+    .line 214
+    .line 215
+    move-result-object v3
+
+    .line 216
+    goto :goto_4
+
+    .line 217
+    :cond_d
+    invoke-virtual {p1}, LUK9;->z()Ljava/lang/String;
+
+    .line 218
+    .line 219
+    .line 220
+    move-result-object v3
+
+    .line 221
+    :goto_4
+    iput-object v3, v1, LMy0;->a:Ljava/lang/String;
+
+    .line 222
+    .line 223
+    goto/16 :goto_0
+
+    .line 224
+    .line 225
+    :pswitch_3
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 226
+    .line 227
+    .line 228
+    move-result v3
+
+    .line 229
+    if-ne v3, v2, :cond_e
+
+    .line 230
+    .line 231
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 232
+    .line 233
+    .line 234
+    goto/16 :goto_0
+
+    .line 235
+    .line 236
+    :cond_e
+    if-ne v3, v4, :cond_f
+
+    .line 237
+    .line 238
+    invoke-virtual {p1}, LUK9;->n()Z
+
+    .line 239
+    .line 240
+    .line 241
+    move-result v3
+
+    .line 242
+    invoke-static {v3}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
+
+    .line 243
+    .line 244
+    .line 245
+    move-result-object v3
+
+    .line 246
+    goto :goto_5
+
+    .line 247
+    :cond_f
+    invoke-virtual {p1}, LUK9;->z()Ljava/lang/String;
+
+    .line 248
+    .line 249
+    .line 250
+    move-result-object v3
+
+    .line 251
+    :goto_5
+    iput-object v3, v1, LMy0;->c:Ljava/lang/String;
+
+    .line 252
+    .line 253
+    goto/16 :goto_0
+
+    .line 254
+    .line 255
+    :pswitch_4
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 256
+    .line 257
+    .line 258
+    move-result v3
+
+    .line 259
+    if-ne v3, v2, :cond_10
+
+    .line 260
+    .line 261
+    invoke-virtual {p1}, LUK9;->x()V
+
+    .line 262
+    .line 263
+    .line 264
+    goto/16 :goto_0
+
+    .line 265
+    .line 266
+    :cond_10
+    if-ne v3, v4, :cond_11
+
+    .line 267
+    .line 268
+    invoke-virtual {p1}, LUK9;->n()Z
+
+    .line 269
+    .line 270
+    .line 271
+    move-result v3
+
+    .line 272
+    invoke-static {v3}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
+
+    .line 273
+    .line 274
+    .line 275
+    move-result-object v3
+
+    .line 276
+    goto :goto_6
+
+    .line 277
+    :cond_11
+    invoke-virtual {p1}, LUK9;->z()Ljava/lang/String;
+
+    .line 278
+    .line 279
+    .line 280
+    move-result-object v3
+
+    .line 281
+    :goto_6
+    iput-object v3, v1, LMy0;->d:Ljava/lang/String;
+
+    .line 282
+    .line 283
+    goto/16 :goto_0
+
+    .line 284
+    .line 285
+    :cond_12
+    invoke-virtual {p1}, LUK9;->g()V
+
+    .line 286
+    .line 287
+    .line 288
+    return-object v1
+
+    .line 289
+    :sswitch_data_0
+    .sparse-switch
+        -0x67991f0e -> :sswitch_4
+        -0xfd6772a -> :sswitch_3
+        0x3492916 -> :sswitch_2
+        0x4a36718 -> :sswitch_1
+        0x195893b2 -> :sswitch_0
+    .end sparse-switch
+
+    .line 290
+    .line 291
+    .line 292
+    .line 293
+    .line 294
+    .line 295
+    .line 296
+    .line 297
+    .line 298
+    .line 299
+    .line 300
+    .line 301
+    .line 302
+    .line 303
+    .line 304
+    .line 305
+    .line 306
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public b(LrL9;LJDj;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    if-nez p2, :cond_0
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, LrL9;->j()LrL9;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+
+    .line 7
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 8
+    iput-boolean v0, p1, LrL9;->Y:Z
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, LrL9;->d()V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v0, p2, LJDj;->e:Ljava/util/List;
+
+    .line 14
+    .line 15
+    if-eqz v0, :cond_2
+
+    .line 16
+    .line 17
+    const-string v0, "friend_stories"
+
+    .line 18
+    .line 19
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
+
+    .line 20
+    .line 21
+    .line 22
+    iget-object v0, p0, LKDj;->a:LiAi;
+
+    .line 23
+    .line 24
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    check-cast v0, Lhlj;
+
+    .line 29
     .line 30
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->r()J
+    invoke-virtual {p1}, LrL9;->c()V
 
     .line 31
     .line 32
     .line 33
-    move-result-wide v2
+    iget-object v1, p2, LJDj;->e:Ljava/util/List;
 
     .line 34
-    iput-wide v2, p0, LKDj;->X:J
-
     .line 35
-    .line 36
-    iget v0, p0, LKDj;->a:I
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
+    .line 36
     .line 37
     .line 38
-    or-int/2addr v0, v1
+    move-result-object v1
 
     .line 39
-    iput v0, p0, LKDj;->a:I
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 40
     .line 41
-    goto :goto_0
-
     .line 42
-    :cond_2
-    invoke-virtual {p1}, Lqa3;->q()I
+    move-result v2
 
     .line 43
+    if-eqz v2, :cond_1
+
     .line 44
     .line 45
-    move-result v0
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 46
-    iput v0, p0, LKDj;->t:I
-
     .line 47
     .line 48
-    iget v0, p0, LKDj;->a:I
+    move-result-object v2
 
     .line 49
+    check-cast v2, Lopi;
+
     .line 50
-    or-int/lit8 v0, v0, 0x4
-
     .line 51
-    .line 52
-    iput v0, p0, LKDj;->a:I
+    invoke-virtual {v0, p1, v2}, Lhlj;->write(LrL9;Ljava/lang/Object;)V
 
+    .line 52
     .line 53
     .line 54
     goto :goto_0
 
     .line 55
-    :cond_3
-    invoke-virtual {p1}, Lqa3;->q()I
+    :cond_1
+    invoke-virtual {p1}, LrL9;->f()V
 
     .line 56
     .line 57
     .line 58
-    move-result v0
+    :cond_2
+    iget-object v0, p2, LMy0;->a:Ljava/lang/String;
 
     .line 59
-    iput v0, p0, LKDj;->c:I
-
     .line 60
+    if-eqz v0, :cond_3
+
     .line 61
-    iget v0, p0, LKDj;->a:I
-
     .line 62
+    const-string v0, "timestamp"
+
     .line 63
-    or-int/lit8 v0, v0, 0x2
-
     .line 64
-    .line 65
-    iput v0, p0, LKDj;->a:I
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
+    .line 65
     .line 66
     .line 67
-    goto :goto_0
+    iget-object v0, p2, LMy0;->a:Ljava/lang/String;
 
     .line 68
-    :cond_4
-    invoke-virtual {p1}, Lqa3;->q()I
-
     .line 69
+    invoke-virtual {p1, v0}, LrL9;->p(Ljava/lang/String;)LrL9;
+
     .line 70
     .line 71
-    move-result v0
-
     .line 72
-    iput v0, p0, LKDj;->b:I
+    :cond_3
+    iget-object v0, p2, LMy0;->b:Ljava/lang/String;
 
     .line 73
     .line 74
-    iget v0, p0, LKDj;->a:I
+    if-eqz v0, :cond_4
 
     .line 75
     .line 76
-    or-int/lit8 v0, v0, 0x1
+    const-string v0, "req_token"
 
     .line 77
     .line 78
-    iput v0, p0, LKDj;->a:I
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
     .line 79
     .line 80
-    goto :goto_0
-
     .line 81
+    iget-object v0, p2, LMy0;->b:Ljava/lang/String;
+
+    .line 82
+    .line 83
+    invoke-virtual {p1, v0}, LrL9;->p(Ljava/lang/String;)LrL9;
+
+    .line 84
+    .line 85
+    .line 86
+    :cond_4
+    iget-object v0, p2, LMy0;->c:Ljava/lang/String;
+
+    .line 87
+    .line 88
+    if-eqz v0, :cond_5
+
+    .line 89
+    .line 90
+    const-string v0, "username"
+
+    .line 91
+    .line 92
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
+
+    .line 93
+    .line 94
+    .line 95
+    iget-object v0, p2, LMy0;->c:Ljava/lang/String;
+
+    .line 96
+    .line 97
+    invoke-virtual {p1, v0}, LrL9;->p(Ljava/lang/String;)LrL9;
+
+    .line 98
+    .line 99
+    .line 100
     :cond_5
-    :goto_1
-    return-object p0
+    iget-object v0, p2, LMy0;->d:Ljava/lang/String;
+
+    .line 101
+    .line 102
+    if-eqz v0, :cond_6
+
+    .line 103
+    .line 104
+    const-string v0, "snapchat_user_id"
+
+    .line 105
+    .line 106
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
+
+    .line 107
+    .line 108
+    .line 109
+    iget-object p2, p2, LMy0;->d:Ljava/lang/String;
+
+    .line 110
+    .line 111
+    invoke-virtual {p1, p2}, LrL9;->p(Ljava/lang/String;)LrL9;
+
+    .line 112
+    .line 113
+    .line 114
+    :cond_6
+    invoke-virtual {p1}, LrL9;->g()V
+
+    .line 115
+    .line 116
+    .line 117
+    return-void
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 4
+.method public bridge synthetic read(LUK9;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 
     .line 1
-    iget v0, p0, LKDj;->a:I
+    invoke-virtual {p0, p1}, LKDj;->a(LUK9;)LJDj;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
     .line 4
-    and-int/2addr v0, v1
+    move-result-object p1
 
     .line 5
-    if-eqz v0, :cond_0
+    return-object p1
+.end method
 
+.method public bridge synthetic write(LrL9;Ljava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    check-cast p2, LJDj;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p2}, LKDj;->b(LrL9;LJDj;)V
+
+    .line 4
+    .line 5
     .line 6
-    .line 7
-    iget v0, p0, LKDj;->b:I
-
-    .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->T(II)V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    iget v0, p0, LKDj;->a:I
-
-    .line 13
-    .line 14
-    const/4 v1, 0x2
-
-    .line 15
-    and-int/2addr v0, v1
-
-    .line 16
-    if-eqz v0, :cond_1
-
-    .line 17
-    .line 18
-    iget v0, p0, LKDj;->c:I
-
-    .line 19
-    .line 20
-    invoke-virtual {p1, v1, v0}, Lsa3;->T(II)V
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_1
-    iget v0, p0, LKDj;->a:I
-
-    .line 24
-    .line 25
-    const/4 v1, 0x4
-
-    .line 26
-    and-int/2addr v0, v1
-
-    .line 27
-    if-eqz v0, :cond_2
-
-    .line 28
-    .line 29
-    const/4 v0, 0x3
-
-    .line 30
-    iget v2, p0, LKDj;->t:I
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, v0, v2}, Lsa3;->T(II)V
-
-    .line 33
-    .line 34
-    .line 35
-    :cond_2
-    iget v0, p0, LKDj;->a:I
-
-    .line 36
-    .line 37
-    and-int/lit8 v0, v0, 0x8
-
-    .line 38
-    .line 39
-    if-eqz v0, :cond_3
-
-    .line 40
-    .line 41
-    iget-wide v2, p0, LKDj;->X:J
-
-    .line 42
-    .line 43
-    invoke-virtual {p1, v1, v2, v3}, Lsa3;->U(IJ)V
-
-    .line 44
-    .line 45
-    .line 46
-    :cond_3
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 47
-    .line 48
-    .line 49
     return-void
 .end method

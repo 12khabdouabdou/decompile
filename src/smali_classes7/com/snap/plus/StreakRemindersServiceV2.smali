@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LQ1i;
+    proxyClass = Lmqi;
     schema = "\'getConversationsWithStreakReminders\':f|m|(): p<a<r:\'[0]\'>>,\'setStreakReminderForConversation\':f|m|(s, b): p<v>"
     typeReferences = {
-        LP1i;
+        Llqi;
     }
 .end annotation
 
@@ -24,7 +24,7 @@
             "()",
             "Lcom/snap/composer/promise/Promise<",
             "Ljava/util/List<",
-            "LP1i;",
+            "Llqi;",
             ">;>;"
         }
     .end annotation
@@ -40,7 +40,7 @@
             "Ljava/lang/String;",
             "Z)",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

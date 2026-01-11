@@ -8,11 +8,11 @@
 
 
 # direct methods
-.method public constructor <init>(LzDa;LTqc;LPm9;LC05;)V
+.method public constructor <init>(LMPa;LmGc;LIv9;Ly45;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/snap/camera/subcomponents/lockscreen/LockscreenEnrollmentFragment;-><init>(LzDa;LTqc;LPm9;LC05;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/snap/camera/subcomponents/lockscreen/LockscreenEnrollmentFragment;-><init>(LMPa;LmGc;LIv9;Ly45;)V
 
     .line 2
     .line 3
@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method public final F(Landroid/net/Uri;)V
+.method public final E(Landroid/net/Uri;)V
     .locals 3
 
     .line 1
@@ -34,11 +34,11 @@
 
     .line 4
     .line 5
-    new-instance v1, LYS;
+    new-instance v1, LgV;
 
     .line 6
     .line 7
-    invoke-direct {v1}, LYS;-><init>()V
+    invoke-direct {v1}, LgV;-><init>()V
 
     .line 8
     .line 9
@@ -46,36 +46,36 @@
     const/4 v2, 0x1
 
     .line 11
-    iput-boolean v2, v1, LYS;->a:Z
+    iput-boolean v2, v1, LgV;->a:Z
 
     .line 12
     .line 13
-    new-instance v2, LZS;
+    new-instance v2, LhV;
 
     .line 14
     .line 15
-    invoke-direct {v2, v1}, LZS;-><init>(LYS;)V
+    invoke-direct {v2, v1}, LhV;-><init>(LgV;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v2, v0, Lcom/snap/imageloading/view/SnapAnimatedImageView;->i0:LZS;
+    iput-object v2, v0, Lcom/snap/imageloading/view/SnapAnimatedImageView;->i0:LhV;
 
     .line 19
     .line 20
-    sget-object v1, LVD1;->n0:LVD1;
+    sget-object v1, LlH1;->n0:LlH1;
 
     .line 21
     .line 22
-    iget-object v1, v1, LcSa;->a:Lin0;
+    iget-object v1, v1, LL4b;->a:LAp0;
 
     .line 23
     .line 24
-    iget-object v1, v1, Lin0;->t:Lbwh;
+    iget-object v1, v1, LAp0;->X:LcUh;
 
     .line 25
     .line 26
-    invoke-virtual {v0, p1, v1}, Lcom/snap/imageloading/view/SnapAnimatedImageView;->h(Landroid/net/Uri;LQ1j;)V
+    invoke-virtual {v0, p1, v1}, Lcom/snap/imageloading/view/SnapAnimatedImageView;->h(Landroid/net/Uri;Lcrj;)V
 
     .line 27
     .line 28
@@ -84,11 +84,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e050b
+    const p3, 0x7f0e052d
 
     .line 2
     .line 3
@@ -104,7 +104,7 @@
     move-result-object p1
 
     .line 9
-    const p2, 0x7f0b0439
+    const p2, 0x7f0b04c2
 
     .line 10
     .line 11
@@ -121,7 +121,7 @@
 
     .line 17
     .line 18
-    const p2, 0x7f0b043c
+    const p2, 0x7f0b04c5
 
     .line 19
     .line 20
@@ -138,7 +138,7 @@
 
     .line 26
     .line 27
-    const p2, 0x7f0b0faa
+    const p2, 0x7f0b10ca
 
     .line 28
     .line 29

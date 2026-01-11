@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'ONBOARDING_NEEDED\':0,\'IN_PROCESS\':1,\'SUCCESS_NO_PAYMENT_METHOD\':2,\'REJECTED_NO_PAYMENT_METHOD\':3,\'PAY_IN_PROGRESS\':4,\'REJECTED\':5,\'SUCCESS\':6,\'BANNED\':7,\'ON_HOLD\':8"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

@@ -1,210 +1,246 @@
 .class public final Lgqe;
-.super Ldqe;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:I
 
-.field public final b:Ljava/lang/String;
+.field public final synthetic b:Lhqe;
+
+.field public final synthetic c:Lcom/snap/component/cells/SnapInfoCellView;
+
+.field public final synthetic t:LEtj;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lhqe;Lcom/snap/component/cells/SnapInfoCellView;LEtj;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p4, p0, Lgqe;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lgqe;->a:Ljava/lang/String;
+    iput-object p1, p0, Lgqe;->b:Lhqe;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, Lgqe;->b:Ljava/lang/String;
+    iput-object p2, p0, Lgqe;->c:Lcom/snap/component/cells/SnapInfoCellView;
 
-    .line 7
-    .line 8
+    iput-object p3, p0, Lgqe;->t:LEtj;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lgqe;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lgqe;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, Lgqe;->a:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, Lgqe;->a:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, Lgqe;->b:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    iget-object p1, p1, Lgqe;->b:Ljava/lang/String;
-
-    .line 27
-    .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lgqe;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, Lgqe;->b:Ljava/lang/String;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method public final d()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, Lgqe;->a:I
 
     .line 2
     .line 3
-    const-string v1, "PurchaseFlowMetadataSuccess(internalUserId="
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    iget-object v0, p0, Lgqe;->c:Lcom/snap/component/cells/SnapInfoCellView;
+
     .line 7
     .line 8
-    iget-object v1, p0, Lgqe;->a:Ljava/lang/String;
+    iget-object v0, v0, Lcom/snap/component/cells/SnapInfoCellView;->B0:LTx6;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, p0, Lgqe;->t:LEtj;
 
     .line 11
     .line 12
+    iget-object v1, v1, LEtj;->a:LLtj;
+
     .line 13
-    const-string v1, ", externalUserId="
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Lgqe;->b:Lhqe;
 
+    .line 15
     .line 16
+    invoke-static {v2, v0, v1}, Lhqe;->H(Lhqe;LxC9;LLtj;)V
+
     .line 17
     .line 18
-    iget-object v1, p0, Lgqe;->b:Ljava/lang/String;
-
     .line 19
-    .line 20
-    const-string v2, ")"
+    invoke-virtual {v2}, LA7k;->r()LSV6;
 
+    .line 20
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
     move-result-object v0
 
+    .line 23
+    invoke-interface {v0, v1}, LSV6;->a(Ljava/lang/Object;)V
+
+    .line 24
+    .line 25
     .line 26
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 27
+    .line 28
     return-object v0
+
+    .line 29
+    :pswitch_0
+    iget-object v0, p0, Lgqe;->c:Lcom/snap/component/cells/SnapInfoCellView;
+
+    .line 30
+    .line 31
+    iget-object v0, v0, Lcom/snap/component/cells/SnapInfoCellView;->B0:LTx6;
+
+    .line 32
+    .line 33
+    iget-object v1, p0, Lgqe;->t:LEtj;
+
+    .line 34
+    .line 35
+    iget-object v1, v1, LEtj;->a:LLtj;
+
+    .line 36
+    .line 37
+    iget-object v2, p0, Lgqe;->b:Lhqe;
+
+    .line 38
+    .line 39
+    invoke-static {v2, v0, v1}, Lhqe;->H(Lhqe;LxC9;LLtj;)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v2}, LA7k;->r()LSV6;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    invoke-interface {v0, v1}, LSV6;->a(Ljava/lang/Object;)V
+
+    .line 47
+    .line 48
+    .line 49
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 50
+    .line 51
+    return-object v0
+
+    .line 52
+    :pswitch_1
+    iget-object v0, p0, Lgqe;->c:Lcom/snap/component/cells/SnapInfoCellView;
+
+    .line 53
+    .line 54
+    iget-object v0, v0, Lcom/snap/component/cells/SnapInfoCellView;->B0:LTx6;
+
+    .line 55
+    .line 56
+    iget-object v1, p0, Lgqe;->t:LEtj;
+
+    .line 57
+    .line 58
+    iget-object v1, v1, LEtj;->a:LLtj;
+
+    .line 59
+    .line 60
+    iget-object v2, p0, Lgqe;->b:Lhqe;
+
+    .line 61
+    .line 62
+    invoke-static {v2, v0, v1}, Lhqe;->H(Lhqe;LxC9;LLtj;)V
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {v2}, LA7k;->r()LSV6;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    invoke-interface {v0, v1}, LSV6;->a(Ljava/lang/Object;)V
+
+    .line 70
+    .line 71
+    .line 72
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 73
+    .line 74
+    return-object v0
+
+    .line 75
+    :pswitch_2
+    iget-object v0, p0, Lgqe;->c:Lcom/snap/component/cells/SnapInfoCellView;
+
+    .line 76
+    .line 77
+    iget-object v0, v0, Lcom/snap/component/cells/SnapInfoCellView;->B0:LTx6;
+
+    .line 78
+    .line 79
+    iget-object v1, p0, Lgqe;->t:LEtj;
+
+    .line 80
+    .line 81
+    iget-object v1, v1, LEtj;->a:LLtj;
+
+    .line 82
+    .line 83
+    iget-object v2, p0, Lgqe;->b:Lhqe;
+
+    .line 84
+    .line 85
+    invoke-static {v2, v0, v1}, Lhqe;->H(Lhqe;LxC9;LLtj;)V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-virtual {v2}, LA7k;->r()LSV6;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object v0
+
+    .line 92
+    invoke-interface {v0, v1}, LSV6;->a(Ljava/lang/Object;)V
+
+    .line 93
+    .line 94
+    .line 95
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 96
+    .line 97
+    return-object v0
+
+    .line 98
+    nop
+
+    .line 99
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lb1f;
+.implements Lejf;
 
 
 # instance fields
@@ -13,9 +13,9 @@
 
 .field public C0:Landroid/widget/ScrollView;
 
-.field public final D0:LIFe;
+.field public final D0:LSre;
 
-.field public x0:LZ0f;
+.field public x0:Lcjf;
 
 .field public y0:Lcom/snap/component/input/SnapPasswordInputView;
 
@@ -32,57 +32,33 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LIFe;
+    new-instance v0, LSre;
 
     .line 5
     .line 6
-    const/4 v1, 0x1
+    const/16 v1, 0xa
 
     .line 7
-    invoke-direct {v0, v1, p0}, LIFe;-><init>(ILjava/lang/Object;)V
-
     .line 8
+    invoke-direct {v0, v1, p0}, LSre;-><init>(ILjava/lang/Object;)V
+
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->D0:LIFe;
-
     .line 11
+    iput-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->D0:LSre;
+
     .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()LZ0f;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, LqM0;->O2(Ljava/lang/Object;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()LZ0f;
+    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()Lcjf;
 
     .line 2
     .line 3
@@ -90,7 +66,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LqM0;->C1()V
+    invoke-virtual {v0}, LrP0;->D1()V
 
     .line 6
     .line 7
@@ -98,7 +74,7 @@
     return-void
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 2
 
     .line 1
@@ -126,7 +102,7 @@
     move-result-object v0
 
     .line 13
-    invoke-virtual {v0, v1}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v1}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 14
     .line 15
@@ -139,7 +115,7 @@
     move-result-object v0
 
     .line 20
-    invoke-virtual {v0, v1}, LgRg;->r(Lkotlin/jvm/functions/Function2;)V
+    invoke-virtual {v0, v1}, Ljdh;->r(Lkotlin/jvm/functions/Function2;)V
 
     .line 21
     .line 22
@@ -152,7 +128,7 @@
     move-result-object v0
 
     .line 27
-    invoke-virtual {v0, v1}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v1}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 28
     .line 29
@@ -165,7 +141,7 @@
 
     .line 32
     .line 33
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 34
     .line 35
@@ -173,7 +149,7 @@
     throw v1
 .end method
 
-.method public final G1()V
+.method public final E1()V
     .locals 3
 
     .line 1
@@ -185,7 +161,7 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->D0:LIFe;
+    iget-object v1, p0, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->D0:LSre;
 
     .line 6
     .line 7
@@ -202,19 +178,19 @@
     move-result-object v0
 
     .line 14
-    new-instance v1, LW0f;
+    new-instance v1, LZif;
 
     .line 15
     .line 16
     const/4 v2, 0x0
 
     .line 17
-    invoke-direct {v1, p0, v2}, LW0f;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;I)V
+    invoke-direct {v1, p0, v2}, LZif;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v1}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 21
     .line 22
@@ -227,20 +203,20 @@
     move-result-object v0
 
     .line 27
-    new-instance v1, Lcpb;
+    new-instance v1, LxAb;
 
     .line 28
     .line 29
-    const/16 v2, 0x13
+    const/16 v2, 0x19
 
     .line 30
     .line 31
-    invoke-direct {v1, v2, p0}, Lcpb;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LxAb;-><init>(ILjava/lang/Object;)V
 
     .line 32
     .line 33
     .line 34
-    invoke-virtual {v0, v1}, LgRg;->r(Lkotlin/jvm/functions/Function2;)V
+    invoke-virtual {v0, v1}, Ljdh;->r(Lkotlin/jvm/functions/Function2;)V
 
     .line 35
     .line 36
@@ -253,20 +229,20 @@
     move-result-object v0
 
     .line 41
-    new-instance v1, LRAe;
+    new-instance v1, Lmde;
 
     .line 42
     .line 43
-    const/16 v2, 0xc
+    const/16 v2, 0x16
 
     .line 44
     .line 45
-    invoke-direct {v1, v2, p0}, LRAe;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lmde;-><init>(ILjava/lang/Object;)V
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {v0, v1}, Lcom/snap/component/input/SnapPasswordInputView;->z(LRAe;)V
+    invoke-virtual {v0, v1}, Lcom/snap/component/input/SnapPasswordInputView;->y(Lmde;)V
 
     .line 49
     .line 50
@@ -279,19 +255,19 @@
     move-result-object v0
 
     .line 55
-    new-instance v1, LW0f;
+    new-instance v1, LZif;
 
     .line 56
     .line 57
     const/4 v2, 0x1
 
     .line 58
-    invoke-direct {v1, p0, v2}, LW0f;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;I)V
+    invoke-direct {v1, p0, v2}, LZif;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;I)V
 
     .line 59
     .line 60
     .line 61
-    invoke-virtual {v0, v1}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v1}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 62
     .line 63
@@ -304,7 +280,7 @@
 
     .line 66
     .line 67
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 68
     .line 69
@@ -315,11 +291,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0299
+    const p3, 0x7f0e02b0
 
     .line 2
     .line 3
@@ -338,11 +314,11 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    const p2, 0x7f0b1295
+    const p2, 0x7f0b13c2
 
     .line 2
     .line 3
@@ -363,7 +339,7 @@
 
     .line 11
     .line 12
-    const p2, 0x7f0b1293
+    const p2, 0x7f0b13c0
 
     .line 13
     .line 14
@@ -384,7 +360,7 @@
 
     .line 22
     .line 23
-    const p2, 0x7f0b1294
+    const p2, 0x7f0b13c1
 
     .line 24
     .line 25
@@ -405,7 +381,7 @@
 
     .line 33
     .line 34
-    const p2, 0x7f0b1299
+    const p2, 0x7f0b13c6
 
     .line 35
     .line 36
@@ -426,7 +402,7 @@
 
     .line 44
     .line 45
-    const p2, 0x7f0b1296
+    const p2, 0x7f0b13c3
 
     .line 46
     .line 47
@@ -447,7 +423,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()LZ0f;
+    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()Lcjf;
 
     .line 57
     .line 58
@@ -455,7 +431,7 @@
     move-result-object p1
 
     .line 60
-    invoke-virtual {p1}, LZ0f;->W2()V
+    invoke-virtual {p1}, Lcjf;->f3()V
 
     .line 61
     .line 62
@@ -463,11 +439,11 @@
     return-void
 .end method
 
-.method public final U1()LZ8d;
+.method public final U1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->Z1:LZ8d;
+    sget-object v0, Lsod;->a2:Lsod;
 
     .line 2
     .line 3
@@ -494,7 +470,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -525,7 +501,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -536,11 +512,11 @@
     throw v0
 .end method
 
-.method public final X1()LZ0f;
+.method public final X1()Lcjf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->x0:LZ0f;
+    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->x0:Lcjf;
 
     .line 2
     .line 3
@@ -556,7 +532,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -571,7 +547,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()LZ0f;
+    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()Lcjf;
 
     .line 2
     .line 3
@@ -579,7 +555,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LZ0f;->U2()V
+    invoke-virtual {v0}, Lcjf;->e3()V
 
     .line 6
     .line 7
@@ -590,11 +566,11 @@
     return v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -602,16 +578,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()LZ0f;
+    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()Lcjf;
 
     .line 5
     .line 6
@@ -619,7 +595,32 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1}, LZ0f;->a3()V
+    invoke-virtual {p1}, Lcjf;->g3()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/identity/accountrecovery/ui/pages/resetpassword/ResetPasswordFragment;->X1()Lcjf;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, LrP0;->Z2(Ljava/lang/Object;)V
 
     .line 9
     .line 10

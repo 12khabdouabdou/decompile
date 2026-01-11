@@ -3,253 +3,272 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Lio/reactivex/rxjava3/functions/Supplier;
 
 
 # instance fields
-.field public final synthetic a:F
+.field public final synthetic a:I
 
-.field public final synthetic b:I
-
-.field public final synthetic c:Landroid/animation/ObjectAnimator;
-
-.field public final synthetic d:F
-
-.field public final synthetic e:LS96;
+.field public final synthetic b:LQ96;
 
 
 # direct methods
-.method public constructor <init>(FILandroid/animation/ObjectAnimator;FLS96;)V
+.method public synthetic constructor <init>(LQ96;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LP96;->a:I
+
+    iput-object p1, p0, LP96;->b:LQ96;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, LP96;->a:F
-
-    .line 5
-    .line 6
-    iput p2, p0, LP96;->b:I
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LP96;->c:Landroid/animation/ObjectAnimator;
-
-    .line 9
-    .line 10
-    iput p4, p0, LP96;->d:F
-
-    .line 11
-    .line 12
-    iput-object p5, p0, LP96;->e:LS96;
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 10
+.method public final get()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LP96;->a:I
 
     .line 2
-    int-to-float v0, v0
-
     .line 3
-    iget v1, p0, LP96;->a:F
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    sub-float/2addr v0, v1
-
     .line 6
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
+    iget-object v0, p0, LP96;->b:LQ96;
 
     .line 7
     .line 8
-    .line 9
-    move-result v2
+    iget-object v1, v0, LQ96;->a:LQAc;
 
+    .line 9
     .line 10
-    mul-float v2, v2, v0
+    sget-object v2, LiFa;->m0:LiFa;
 
     .line 11
     .line 12
-    add-float v5, v2, v1
+    invoke-virtual {v1, v2}, LQAc;->b(LiFa;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
 
     .line 13
     .line 14
-    iget v0, p0, LP96;->b:I
-
     .line 15
+    move-result-object v1
+
     .line 16
-    int-to-float v0, v0
+    iget-object v2, v0, LQ96;->b:LEt4;
 
     .line 17
-    iget-object v1, p0, LP96;->c:Landroid/animation/ObjectAnimator;
-
     .line 18
-    .line 19
-    invoke-virtual {v1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
+    invoke-virtual {v2}, LEt4;->get()Ljava/lang/Object;
 
+    .line 19
     .line 20
     .line 21
+    move-result-object v2
+
     .line 22
-    move-result v1
+    check-cast v2, LfN8;
 
     .line 23
-    mul-float v1, v1, v0
-
     .line 24
+    const/4 v3, 0x0
+
     .line 25
-    iget v0, p0, LP96;->d:F
+    invoke-virtual {v2, v3}, LfN8;->c(Z)Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
 
     .line 26
     .line 27
-    invoke-static {v0}, Ljava/lang/Math;->abs(F)F
-
     .line 28
-    .line 29
-    .line 30
-    move-result v2
+    move-result-object v2
 
+    .line 29
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+
+    .line 30
     .line 31
-    invoke-static {v1}, Ljava/lang/Math;->abs(F)F
+    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
 
     .line 32
     .line 33
     .line 34
-    move-result v3
+    new-instance v1, LP96;
 
     .line 35
-    cmpl-float v2, v2, v3
-
     .line 36
+    const/4 v2, 0x0
+
     .line 37
-    if-lez v2, :cond_0
+    invoke-direct {v1, v0, v2}, LP96;-><init>(LQ96;I)V
 
     .line 38
     .line 39
-    move v1, v0
-
     .line 40
-    :cond_0
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    invoke-virtual {v3, v1}, Lio/reactivex/rxjava3/core/Completable;->z(Lio/reactivex/rxjava3/functions/Supplier;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
 
     .line 41
     .line 42
     .line 43
-    move-result-object p1
+    move-result-object v1
 
     .line 44
-    check-cast p1, Ljava/lang/Float;
+    iget-object v0, v0, LQ96;->g:LnJe;
 
     .line 45
     .line 46
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 47
     .line 48
     .line 49
-    move-result p1
+    move-result-object v0
 
     .line 50
-    iget-object v0, p0, LP96;->e:LS96;
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
     .line 51
     .line 52
-    iget-object v2, v0, LS96;->m0:Ljava/util/ArrayList;
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 53
     .line 54
-    invoke-static {v2}, Lnc5;->g(Ljava/util/ArrayList;)Ljava/util/Iterator;
-
     .line 55
-    .line 56
-    .line 57
-    move-result-object v2
+    return-object v2
 
+    .line 56
+    :pswitch_0
+    new-instance v0, Ltdh;
+
+    .line 57
     .line 58
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    iget-object v1, p0, LP96;->b:LQ96;
 
     .line 59
     .line 60
-    .line 61
-    move-result v3
+    iget-object v2, v1, LQ96;->c:LEt4;
 
+    .line 61
     .line 62
-    if-eqz v3, :cond_1
+    invoke-virtual {v2}, LEt4;->get()Ljava/lang/Object;
 
     .line 63
     .line 64
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 65
-    .line 66
-    .line 67
-    move-result-object v3
+    move-result-object v2
 
+    .line 66
+    check-cast v2, LMwf;
+
+    .line 67
     .line 68
-    check-cast v3, Ljava/lang/Number;
+    iget-object v3, v1, LQ96;->e:LEt4;
 
     .line 69
     .line 70
-    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {v3}, LEt4;->get()Ljava/lang/Object;
 
     .line 71
     .line 72
     .line 73
-    move-result v3
+    move-result-object v3
 
     .line 74
-    iget-object v4, v0, LS96;->m0:Ljava/util/ArrayList;
+    check-cast v3, Luxf;
 
     .line 75
     .line 76
-    invoke-virtual {v4, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+    invoke-direct {v0, v2, v3}, Ltdh;-><init>(LMwf;Luxf;)V
 
     .line 77
     .line 78
     .line 79
-    move-result-object v3
+    iget-object v2, v1, LQ96;->f:LEt4;
 
     .line 80
-    check-cast v3, LKZc;
-
     .line 81
+    invoke-virtual {v2}, LEt4;->get()Ljava/lang/Object;
+
     .line 82
-    float-to-int v6, p1
-
     .line 83
-    iget-object v7, v0, LS96;->V0:Landroid/graphics/PointF;
-
     .line 84
+    move-result-object v2
+
     .line 85
-    neg-float v8, v1
+    check-cast v2, LNsj;
 
     .line 86
-    const/4 v9, 0x0
-
     .line 87
-    const/4 v4, 0x4
+    iget-object v3, v1, LQ96;->i:LREi;
 
     .line 88
-    invoke-interface/range {v3 .. v9}, LKZc;->c(IFILandroid/graphics/PointF;FLandroid/view/MotionEvent;)V
-
     .line 89
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
+
     .line 90
     .line 91
-    goto :goto_0
-
     .line 92
-    :cond_1
-    return-void
+    move-result-object v3
+
+    .line 93
+    check-cast v3, Lcom/snapchat/client/grpc/GrpcParametersBuilder;
+
+    .line 94
+    .line 95
+    new-instance v4, LOs6;
+
+    .line 96
+    .line 97
+    iget-object v1, v1, LQ96;->g:LnJe;
+
+    .line 98
+    .line 99
+    invoke-virtual {v1}, LnJe;->d()LA36;
+
+    .line 100
+    .line 101
+    .line 102
+    move-result-object v1
+
+    .line 103
+    invoke-direct {v4, v1}, LOs6;-><init>(Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 104
+    .line 105
+    .line 106
+    const-string v1, "snapchat.notif.DeviceStateReceiver"
+
+    .line 107
+    .line 108
+    invoke-virtual {v2, v1, v3, v0, v4}, LNsj;->a(Ljava/lang/String;Lcom/snapchat/client/grpc/GrpcParametersBuilder;Ltdh;LOs6;)Lcom/snapchat/client/grpc/UnifiedGrpcService;
+
+    .line 109
+    .line 110
+    .line 111
+    move-result-object v0
+
+    .line 112
+    new-instance v1, Lgoj;
+
+    .line 113
+    .line 114
+    invoke-direct {v1, v0}, Lgoj;-><init>(Lcom/snapchat/client/grpc/UnifiedGrpcService;)V
+
+    .line 115
+    .line 116
+    .line 117
+    return-object v1
+
+    .line 118
+    nop
+
+    .line 119
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

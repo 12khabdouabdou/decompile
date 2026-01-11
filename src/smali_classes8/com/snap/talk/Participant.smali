@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talk/Participant;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'userId\':s,\'displayName\':s,\'color\':s,\'callState\':r<e>:\'[0]\',\'publishedMedia\':r<e>:\'[1]\',\'isPausedVideo\':b,\'isSpeaking\':b,\'bitmojiAvatarId\':s?,\'videoSinkId\':s?,\'mediaIssueType\':r<e>:\'[2]\',\'connectedLensState\':r?:\'[3]\',\'platform\':r?<e>:\'[4]\',\'selectedLensId\':s?,\'videoFrameSize\':r?<e>:\'[5]\'"
     typeReferences = {

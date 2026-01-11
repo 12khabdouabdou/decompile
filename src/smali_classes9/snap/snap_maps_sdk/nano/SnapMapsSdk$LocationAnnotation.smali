@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -71,7 +71,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -134,7 +134,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -147,7 +147,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
     move-result-object p0
 
@@ -158,7 +158,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -190,7 +190,7 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 6
     .line 7
@@ -229,7 +229,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -256,7 +256,7 @@
 
     .line 13
     .line 14
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 15
     .line 16
@@ -287,7 +287,7 @@
 
     .line 27
     .line 28
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 29
     .line 30
@@ -316,7 +316,7 @@
     return v0
 .end method
 
-.method public getHome()LAL6;
+.method public getHome()LnP6;
     .locals 2
 
     .line 1
@@ -335,7 +335,7 @@
 
     .line 7
     .line 8
-    check-cast v0, LAL6;
+    check-cast v0, LnP6;
 
     .line 9
     .line 10
@@ -349,7 +349,7 @@
     return-object v0
 .end method
 
-.method public getWork()LAL6;
+.method public getWork()LnP6;
     .locals 2
 
     .line 1
@@ -368,7 +368,7 @@
 
     .line 7
     .line 8
-    check-cast v0, LAL6;
+    check-cast v0, LnP6;
 
     .line 9
     .line 10
@@ -435,7 +435,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -444,14 +444,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -462,7 +462,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -477,7 +477,7 @@
     if-eq v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -494,9 +494,9 @@
     if-eq v0, v1, :cond_2
 
     .line 5
-    new-instance v0, LAL6;
+    new-instance v0, LnP6;
 
-    invoke-direct {v0}, LAL6;-><init>()V
+    invoke-direct {v0}, LnP6;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->annotation_:Ljava/lang/Object;
 
@@ -506,7 +506,7 @@
 
     check-cast v0, Lcom/google/protobuf/nano/MessageNano;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 7
     iput v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->annotationCase_:I
@@ -522,9 +522,9 @@
     if-eq v0, v1, :cond_4
 
     .line 9
-    new-instance v0, LAL6;
+    new-instance v0, LnP6;
 
-    invoke-direct {v0}, LAL6;-><init>()V
+    invoke-direct {v0}, LnP6;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->annotation_:Ljava/lang/Object;
 
@@ -534,7 +534,7 @@
 
     check-cast v0, Lcom/google/protobuf/nano/MessageNano;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 11
     iput v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;->annotationCase_:I
@@ -546,7 +546,7 @@
     return-object p0
 .end method
 
-.method public setHome(LAL6;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
+.method public setHome(LnP6;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
     .locals 1
 
     .line 1
@@ -569,7 +569,7 @@
     return-object p0
 .end method
 
-.method public setWork(LAL6;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
+.method public setWork(LnP6;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationAnnotation;
     .locals 1
 
     .line 1
@@ -592,7 +592,7 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -620,7 +620,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 11
     .line 12
@@ -645,13 +645,13 @@
 
     .line 21
     .line 22
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 23
     .line 24
     .line 25
     :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 26
     .line 27

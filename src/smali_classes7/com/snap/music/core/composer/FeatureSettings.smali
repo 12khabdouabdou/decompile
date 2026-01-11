@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LWd7;
+    proxyClass = LXi7;
     schema = "\'seenMusicPickerFavoritesTooltip\':b@?,\'setHasSeenMusicPickerFavoritesTooltip\':f|m|(),\'seenMusicContextCardFavoritesTooltip\':b@?,\'setHasSeenContextCardFavoritesTooltip\':f|m|()"
     typeReferences = {}
 .end annotation

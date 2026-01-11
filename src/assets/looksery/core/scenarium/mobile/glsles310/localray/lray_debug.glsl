@@ -114,12 +114,18 @@ sc_FragData0=vec4(0.0,0.0,0.0,1.0);
 }
 else
 {
-sc_FragData0=vec4(vec3(l9_7)/vec3(65535.0),1.0);
-}
+vec3 l9_8=vec3(l9_7)/vec3(65535.0);
+vec3 l9_9;
 if (l9_6.w==0u)
 {
-ivec2 l9_8=(l9_0/ivec2(4))%ivec2(2);
-sc_FragData0*=vec4(float(abs(l9_8.x-l9_8.y)));
+ivec2 l9_10=(l9_0/ivec2(4))%ivec2(2);
+l9_9=l9_8*vec3(float(abs(l9_10.x-l9_10.y)));
+}
+else
+{
+l9_9=l9_8;
+}
+sc_FragData0=vec4(l9_9,1.0);
 }
 }
 #else
@@ -132,82 +138,82 @@ sc_FragData0=vec4((decodeNormal(texelFetch(baseTex,l9_0,0).xy)*0.5)+vec3(0.5),1.
 {
 #if (PROGRAM_INDEX==6)
 {
-uvec4 l9_9=texelFetch(baseUTex,l9_0,0);
-uint l9_10=l9_9.x;
-if (l9_10==4294967295u)
+uvec4 l9_11=texelFetch(baseUTex,l9_0,0);
+uint l9_12=l9_11.x;
+if (l9_12==4294967295u)
 {
-ivec2 l9_11=(l9_0/ivec2(4))%ivec2(2);
-float l9_12=float(abs(l9_11.x-l9_11.y));
-sc_FragData0=vec4(l9_12,l9_12,l9_12,1.0);
+ivec2 l9_13=(l9_0/ivec2(4))%ivec2(2);
+float l9_14=float(abs(l9_13.x-l9_13.y));
+sc_FragData0=vec4(l9_14,l9_14,l9_14,1.0);
 }
 else
 {
-float l9_13=float(l9_10)/distanceScale;
-sc_FragData0=vec4(1.0-fract(l9_13),1.0-fract(l9_13*0.1),1.0-fract(l9_13*0.0099999998),1.0);
+float l9_15=float(l9_12)/distanceScale;
+sc_FragData0=vec4(1.0-fract(l9_15),1.0-fract(l9_15*0.1),1.0-fract(l9_15*0.0099999998),1.0);
 }
 }
 #else
 {
 #if (PROGRAM_INDEX==7)
 {
-uvec4 l9_14=texelFetch(baseUTex,l9_0,0);
-vec2 l9_15=unpackHalf2x16(l9_14.z);
-mediump float l9_16=l9_15.x;
-vec2 l9_17=unpackHalf2x16(l9_14.w);
+uvec4 l9_16=texelFetch(baseUTex,l9_0,0);
+vec2 l9_17=unpackHalf2x16(l9_16.z);
 mediump float l9_18=l9_17.x;
-sc_FragData0=vec4((1.0-l9_16)-l9_18,l9_16,l9_18,1.0);
+vec2 l9_19=unpackHalf2x16(l9_16.w);
+mediump float l9_20=l9_19.x;
+sc_FragData0=vec4((1.0-l9_18)-l9_20,l9_18,l9_20,1.0);
 }
 #else
 {
 #if (PROGRAM_INDEX==8)
 {
-uvec4 l9_19=texelFetch(baseUTex,l9_0,0);
-uint l9_20=l9_19.x;
-if (l9_20==0u)
+uvec4 l9_21=texelFetch(baseUTex,l9_0,0);
+uint l9_22=l9_21.x;
+if (l9_22==0u)
 {
 sc_FragData0=vec4(1.0,0.0,1.0,1.0);
 }
 else
 {
-float l9_21=float(l9_20)/float(maxCasterId);
-sc_FragData0=vec4(l9_21,l9_21,1.0,1.0);
+float l9_23=float(l9_22)/float(maxCasterId);
+sc_FragData0=vec4(l9_23,l9_23,1.0,1.0);
 }
 }
 #else
 {
 #if (PROGRAM_INDEX==9)
 {
-uvec4 l9_22=texelFetch(baseUTex,l9_0,0);
-uint l9_23=l9_22.y;
-if (l9_23==0u)
+uvec4 l9_24=texelFetch(baseUTex,l9_0,0);
+uint l9_25=l9_24.y;
+if (l9_25==0u)
 {
 sc_FragData0=vec4(1.0);
 }
 else
 {
-sc_FragData0=vec4(vec3(1.0)*clamp(abs((fract(vec3(float(l9_23%24u)/24.0)+vec3(1.0,0.66666669,0.33333334))*6.0)-vec3(3.0))-vec3(1.0),vec3(0.0),vec3(1.0)),1.0);
+sc_FragData0=vec4(vec3(1.0)*clamp(abs((fract(vec3(float(l9_25%24u)/24.0)+vec3(1.0,0.66666669,0.33333334))*6.0)-vec3(3.0))-vec3(1.0),vec3(0.0),vec3(1.0)),1.0);
 }
 }
 #else
 {
 #if (PROGRAM_INDEX==10)
 {
-vec4 l9_24=texelFetch(baseTex,l9_0,0);
-float l9_25=l9_24.x;
-if (l9_25==0.0)
+vec4 l9_26=texelFetch(baseTex,l9_0,0);
+float l9_27=l9_26.x;
+if (l9_27==0.0)
 {
 sc_FragData0=vec4(0.0,0.0,0.0,1.0);
 }
 else
 {
-if (l9_25>=maxDepth)
+if (l9_27>=maxDepth)
 {
 sc_FragData0=vec4(0.0,0.0,1.0,1.0);
 }
 else
 {
-float l9_26=l9_25/maxDepth;
-sc_FragData0=vec4(l9_26,l9_26,l9_26,1.0);
+float l9_28=l9_27/maxDepth;
+sc_FragData0=vec4(l9_28,l9_28,l9_28,1.0);
 }
 }
 }
@@ -215,45 +221,45 @@ sc_FragData0=vec4(l9_26,l9_26,l9_26,1.0);
 {
 #if (PROGRAM_INDEX==11)
 {
-vec4 l9_27=texelFetch(baseTex,l9_0,0);
-ivec2 l9_28=(l9_0/ivec2(16))%ivec2(2);
-sc_FragData0=vec4(mix(vec3(mix(0.60000002,0.69999999,float(abs(l9_28.x-l9_28.y)))),l9_27.xyz,vec3(l9_27.w)),1.0);
+vec4 l9_29=texelFetch(baseTex,l9_0,0);
+ivec2 l9_30=(l9_0/ivec2(16))%ivec2(2);
+sc_FragData0=vec4(mix(vec3(mix(0.60000002,0.69999999,float(abs(l9_30.x-l9_30.y)))),l9_29.xyz,vec3(l9_29.w)),1.0);
 }
 #else
 {
 #if (PROGRAM_INDEX==12)
 {
-vec4 l9_29=texelFetch(baseTex,l9_0,0);
-ivec2 l9_30=(l9_0/ivec2(16))%ivec2(2);
-vec3 l9_31=l9_29.xyz;
-sc_FragData0=vec4(mix(vec3(mix(0.60000002,0.69999999,float(abs(l9_30.x-l9_30.y)))),mix((exp((l9_31-vec3(0.55991071))/vec3(0.17883277))+vec3(0.28466892))/vec3(12.0),(l9_31*l9_31)/vec3(3.0),lessThanEqual(l9_31,vec3(0.5))),vec3(l9_29.w)),1.0);
+vec4 l9_31=texelFetch(baseTex,l9_0,0);
+ivec2 l9_32=(l9_0/ivec2(16))%ivec2(2);
+vec3 l9_33=l9_31.xyz;
+sc_FragData0=vec4(mix(vec3(mix(0.60000002,0.69999999,float(abs(l9_32.x-l9_32.y)))),mix((exp((l9_33-vec3(0.55991071))/vec3(0.17883277))+vec3(0.28466892))/vec3(12.0),(l9_33*l9_33)/vec3(3.0),lessThanEqual(l9_33,vec3(0.5))),vec3(l9_31.w)),1.0);
 }
 #else
 {
 #if (PROGRAM_INDEX==13)
 {
-float l9_32=(texelFetch(baseTex,l9_0,0).x*255.0)/55.0;
-sc_FragData0=vec4(vec3((l9_32<0.050000001) ? 0.2 : 1.0)*clamp(abs((fract(vec3(clamp((l9_32/0.94999999)+0.050000001,0.0,1.0))+vec3(1.0,0.66666669,0.33333334))*6.0)-vec3(3.0))-vec3(1.0),vec3(0.0),vec3(1.0)),1.0);
+float l9_34=(texelFetch(baseTex,l9_0,0).x*255.0)/55.0;
+sc_FragData0=vec4(vec3((l9_34<0.050000001) ? 0.2 : 1.0)*clamp(abs((fract(vec3(clamp((l9_34/0.94999999)+0.050000001,0.0,1.0))+vec3(1.0,0.66666669,0.33333334))*6.0)-vec3(3.0))-vec3(1.0),vec3(0.0),vec3(1.0)),1.0);
 }
 #else
 {
 #if (PROGRAM_INDEX==14)
 {
-vec4 l9_33=texelFetch(baseTex,l9_0,0);
-float l9_34=l9_33.x;
-if (l9_34==(-1000.0))
+vec4 l9_35=texelFetch(baseTex,l9_0,0);
+float l9_36=l9_35.x;
+if (l9_36==(-1000.0))
 {
 sc_FragData0=vec4(1.0);
 }
 else
 {
-if (l9_34==1000.0)
+if (l9_36==1000.0)
 {
 sc_FragData0=vec4(1.0,1.0,0.0,1.0);
 }
 else
 {
-sc_FragData0=vec4(abs(l9_34),0.0,0.0,1.0);
+sc_FragData0=vec4(abs(l9_36),0.0,0.0,1.0);
 }
 }
 }

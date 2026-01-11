@@ -1,92 +1,80 @@
-.class public final LRkg;
-.super LrE9;
+.class public abstract LRkg;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/lang/String;
 
-.field public final synthetic b:LSdg;
+.field public final b:J
+
+.field public c:J
+
+.field public d:J
+
+.field public final e:Ljava/util/HashMap;
+
+.field public final f:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILSdg;)V
+.method public constructor <init>(Ljava/lang/String;J)V
     .locals 0
 
     .line 1
-    iput p1, p0, LRkg;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, LRkg;->b:LSdg;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LRkg;->a:Ljava/lang/String;
 
-    const/4 p1, 0x1
+    .line 5
+    .line 6
+    iput-wide p2, p0, LRkg;->b:J
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 7
+    .line 8
+    new-instance p1, Ljava/util/HashMap;
 
+    .line 9
+    .line 10
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object p1, p0, LRkg;->e:Ljava/util/HashMap;
+
+    .line 14
+    .line 15
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    invoke-virtual {p1}, Ljava/util/UUID;->toString()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    iput-object p1, p0, LRkg;->f:Ljava/lang/String;
+
+    .line 24
+    .line 25
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public abstract a(Ljpi;LYbd;JZZLjava/lang/String;ZLandroid/graphics/Point;)V
+.end method
 
-    .line 1
-    iget v0, p0, LRkg;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 7
-    .line 8
-    iget-object p1, p0, LRkg;->b:LSdg;
-
-    .line 9
-    .line 10
-    iget-object p1, p1, LSdg;->t:Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 13
-    .line 14
-    return-object p1
-
-    .line 15
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 16
-    .line 17
-    iget-object p1, p0, LRkg;->b:LSdg;
-
-    .line 18
-    .line 19
-    iget-object p1, p1, LSdg;->t:Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 22
-    .line 23
-    return-object p1
-
-    .line 24
-    nop
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+.method public abstract b(Ljpi;LYbd;JZ)V
 .end method

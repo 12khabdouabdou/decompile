@@ -1,132 +1,104 @@
-.class public final LEUh;
-.super LrE9;
+.class public abstract synthetic LEUh;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LFUh;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(LFUh;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput p2, p0, LEUh;->a:I
-
-    iput-object p1, p0, LEUh;->b:LFUh;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LEUh;->a:I
+    invoke-static {}, Lcom/snap/talk/NotificationType;->values()[Lcom/snap/talk/NotificationType;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    move-result-object v0
+
     .line 5
+    array-length v0, v0
+
     .line 6
-    iget-object v0, p0, LEUh;->b:LFUh;
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    iget-object v0, v0, LFUh;->a:Lcom/snap/ui/view/TouchInterceptorFrameLayout;
+    :try_start_0
+    sget-object v1, Lcom/snap/talk/NotificationType;->INFO:Lcom/snap/talk/NotificationType;
 
     .line 9
     .line 10
-    const v1, 0x7f0b1a56
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result v1
 
     .line 14
-    .line 15
-    .line 16
-    move-result-object v0
+    const/4 v2, 0x1
 
+    .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 16
     .line 17
-    return-object v0
+    :catch_0
+    :try_start_1
+    sget-object v1, Lcom/snap/talk/NotificationType;->ERROR:Lcom/snap/talk/NotificationType;
 
     .line 18
-    :pswitch_0
-    iget-object v0, p0, LEUh;->b:LFUh;
-
     .line 19
-    .line 20
-    iget-object v0, v0, LFUh;->a:Lcom/snap/ui/view/TouchInterceptorFrameLayout;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 20
     .line 21
     .line 22
-    const v1, 0x7f0b1a55
+    move-result v1
 
     .line 23
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    const/4 v2, 0x2
 
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
     .line 26
+    :catch_1
+    :try_start_2
+    sget-object v1, Lcom/snap/talk/NotificationType;->CONNECTED_LENS:Lcom/snap/talk/NotificationType;
+
     .line 27
     .line 28
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 29
-    return-object v0
-
     .line 30
-    :pswitch_1
-    iget-object v0, p0, LEUh;->b:LFUh;
-
     .line 31
+    move-result v1
+
     .line 32
-    iget-object v0, v0, LFUh;->a:Lcom/snap/ui/view/TouchInterceptorFrameLayout;
+    const/4 v2, 0x3
 
     .line 33
-    .line 34
-    const v1, 0x7f0b1a54
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
+    .line 34
     .line 35
+    :catch_2
+    sput-object v0, LEUh;->a:[I
+
     .line 36
     .line 37
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v0
-
-    .line 41
-    check-cast v0, Landroid/widget/TextView;
-
-    .line 42
-    .line 43
-    return-object v0
-
-    .line 44
-    nop
-
-    .line 45
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

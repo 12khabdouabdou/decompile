@@ -13,24 +13,24 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LFz1;
+    new-instance v0, LTC1;
 
     .line 5
     .line 6
-    new-instance v1, LzQi;
+    new-instance v1, Le2j;
 
     .line 7
     .line 8
-    const/16 v2, 0xb
+    const/16 v2, 0xa
 
     .line 9
     .line 10
-    invoke-direct {v1, v2}, LzQi;-><init>(I)V
+    invoke-direct {v1, v2}, Le2j;-><init>(I)V
 
     .line 11
     .line 12
     .line 13
-    new-instance v2, LXQi;
+    new-instance v2, LVPi;
 
     .line 14
     .line 15
@@ -38,7 +38,7 @@
 
     .line 16
     .line 17
-    invoke-direct {v2, v3}, LXQi;-><init>(I)V
+    invoke-direct {v2, v3}, LVPi;-><init>(I)V
 
     .line 18
     .line 19
@@ -46,12 +46,12 @@
     const/4 v3, 0x0
 
     .line 21
-    invoke-direct {v0, v1, v2, v3}, LFz1;-><init>(LzQi;LXQi;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3}, LTC1;-><init>(Le2j;LVPi;Ljava/lang/String;)V
 
     .line 22
     .line 23
     .line 24
-    iput-object v0, p0, Lcom/braintreepayments/browserswitch/BrowserSwitchActivity;->a:LFz1;
+    iput-object v0, p0, Lcom/braintreepayments/browserswitch/BrowserSwitchActivity;->a:LTC1;
 
     .line 25
     .line 26

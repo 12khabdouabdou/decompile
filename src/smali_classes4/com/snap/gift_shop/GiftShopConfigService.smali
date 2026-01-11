@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LPt8;
+    proxyClass = LzA8;
     schema = "\'hasSeenGiftShop\':f|m|(): b,\'setHasSeenGiftShop\':f|m|()"
     typeReferences = {}
 .end annotation

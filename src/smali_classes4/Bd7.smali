@@ -1,74 +1,107 @@
 .class public final LBd7;
-.super Ljava/lang/RuntimeException;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Lnd7;
+.field public final synthetic a:I
+
+.field public final synthetic b:LCd7;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lnd7;)V
-    .locals 3
+.method public synthetic constructor <init>(LCd7;I)V
+    .locals 0
 
     .line 1
-    invoke-static {p2}, Ltyk;->b(Lnd7;)Ljava/lang/String;
+    iput p2, p0, LBd7;->a:I
 
-    move-result-object v0
+    iput-object p1, p0, LBd7;->b:LCd7;
 
-    const-string v1, "Failed to load "
+    const/4 p1, 0x0
 
-    const-string v2, " module: "
-
-    .line 2
-    invoke-static {v1, p1, v2, v0}, LDM4;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 3
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    .line 4
-    iput-object p2, p0, LBd7;->a:Lnd7;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Lnd7;Ljava/lang/Throwable;)V
-    .locals 3
-
-    .line 11
-    invoke-static {p2}, Ltyk;->b(Lnd7;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "Failed to load "
-
-    const-string v2, " module: "
-
-    .line 12
-    invoke-static {v1, p1, v2, v0}, LDM4;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 13
-    invoke-direct {p0, p1, p3}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 14
-    iput-object p2, p0, LBd7;->a:Lnd7;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lnd7;
+.method public final d()Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LBd7;->a:Lnd7;
+    iget v0, p0, LBd7;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LBd7;->b:LCd7;
+
+    .line 7
+    .line 8
+    iget-object v0, v0, LCd7;->b:LCBe;
+
+    .line 9
+    .line 10
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    check-cast v0, LJd7;
+
+    .line 15
+    .line 16
     return-object v0
+
+    .line 17
+    :pswitch_0
+    iget-object v0, p0, LBd7;->b:LCd7;
+
+    .line 18
+    .line 19
+    iget-object v0, v0, LCd7;->c:LCBe;
+
+    .line 20
+    .line 21
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    check-cast v0, LQeh;
+
+    .line 26
+    .line 27
+    invoke-interface {v0}, LQeh;->getUserId()Ljava/lang/String;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    return-object v0
+
+    .line 32
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

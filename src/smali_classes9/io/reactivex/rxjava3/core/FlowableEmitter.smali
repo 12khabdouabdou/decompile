@@ -23,7 +23,7 @@
 .method public abstract a(Lio/reactivex/rxjava3/disposables/Disposable;)V
 .end method
 
-.method public abstract d(Lio/reactivex/rxjava3/functions/Cancellable;)V
+.method public abstract b(Lio/reactivex/rxjava3/functions/Cancellable;)V
 .end method
 
 .method public abstract isCancelled()Z

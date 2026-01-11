@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Luu8;
+    proxyClass = LaB8;
     schema = "\'observeEncodedGifts\':f|m|(): g<c>:\'[0]\'<t>,\'saveEncodedGifts\':f|m|(t): p<v>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
@@ -36,7 +36,7 @@
         value = {
             "([B)",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

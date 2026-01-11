@@ -4,21 +4,17 @@
 
 
 # virtual methods
-.method public abstract getStorySettings(LHl6;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LHl6;
-        .annotation runtime Ljv1;
+.method public abstract getStorySettings(LTo6;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LTo6;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Access-Token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/df-user-profile-http/userprofiles/get_discover_settings"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -28,32 +24,32 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LHl6;",
+            "LTo6;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LIl6;",
+            "Ljnf<",
+            "LUo6;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "/df-user-profile-http/userprofiles/get_discover_settings"
     .end annotation
 .end method
 
-.method public abstract getStorySettingsV2(LHl6;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LHl6;
-        .annotation runtime Ljv1;
+.method public abstract getStorySettingsV2(LTo6;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LTo6;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/df-user-profile-http/userprofiles/get_discover_settings"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -63,13 +59,17 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LHl6;",
+            "LTo6;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LIl6;",
+            "Ljnf<",
+            "LUo6;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "/df-user-profile-http/userprofiles/get_discover_settings"
     .end annotation
 .end method

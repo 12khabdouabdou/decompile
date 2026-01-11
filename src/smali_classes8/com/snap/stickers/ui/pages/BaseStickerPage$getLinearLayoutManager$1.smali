@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field public final synthetic F:LhN0;
+.field public final synthetic F:LlQ0;
 
 
 # direct methods
-.method public constructor <init>(LhN0;)V
+.method public constructor <init>(LlQ0;)V
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/snap/stickers/ui/pages/BaseStickerPage$getLinearLayoutManager$1;->F:LhN0;
+    iput-object p1, p0, Lcom/snap/stickers/ui/pages/BaseStickerPage$getLinearLayoutManager$1;->F:LlQ0;
 
     .line 2
     .line 3
@@ -32,20 +32,20 @@
 
 
 # virtual methods
-.method public final B0(LHGe;)V
+.method public final G0(LqYe;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->B0(LHGe;)V
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->G0(LqYe;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/stickers/ui/pages/BaseStickerPage$getLinearLayoutManager$1;->F:LhN0;
+    iget-object v0, p0, Lcom/snap/stickers/ui/pages/BaseStickerPage$getLinearLayoutManager$1;->F:LlQ0;
 
     .line 5
     .line 6
-    invoke-static {v0, p1}, LhN0;->d(LhN0;LHGe;)V
+    invoke-static {v0, p1}, LlQ0;->d(LlQ0;LqYe;)V
 
     .line 7
     .line 8

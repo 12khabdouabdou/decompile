@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'ARIES\':0,\'TAURUS\':1,\'GEMINI\':2,\'CANCER\':3,\'LEO\':4,\'VIRGO\':5,\'LIBRA\':6,\'SCORPIO\':7,\'SAGITTARIUS\':8,\'CAPRICORN\':9,\'AQUARIUS\':10,\'PISCES\':11"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

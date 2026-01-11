@@ -3,197 +3,287 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lio/reactivex/rxjava3/functions/Supplier;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Lrra;
+.field public final synthetic b:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Lrra;I)V
+.method public synthetic constructor <init>(ZI)V
     .locals 0
 
     .line 1
     iput p2, p0, Lqra;->a:I
 
-    iput-object p1, p0, Lqra;->b:Lrra;
+    iput-boolean p1, p0, Lqra;->b:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method public constructor <init>(ZLa5f;)V
+    .locals 0
 
-# virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 5
+    const/4 p2, 0x0
 
-    .line 1
-    const/4 p1, 0x0
+    iput p2, p0, Lqra;->a:I
 
     .line 2
-    const/4 v0, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p1, p0, Lqra;->b:Z
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 9
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    const/4 v1, 0x4
 
     .line 3
-    const/4 v1, 0x1
+    iget-boolean v2, p0, Lqra;->b:Z
 
     .line 4
-    iget-object v2, p0, Lqra;->b:Lrra;
-
     .line 5
-    .line 6
     iget v3, p0, Lqra;->a:I
 
+    .line 6
     .line 7
-    .line 8
     packed-switch v3, :pswitch_data_0
 
+    .line 8
     .line 9
     .line 10
+    if-eqz v2, :cond_0
+
     .line 11
-    iget-object p1, v2, Lrra;->G0:Lcom/snap/ui/view/SnapFontTextView;
-
     .line 12
+    sget-object v0, LBzd;->l0:LBzd;
+
     .line 13
-    if-eqz p1, :cond_0
-
     .line 14
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
     .line 15
-    const/16 v0, 0x8
-
     .line 16
-    .line 17
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
+    .line 17
     .line 18
     .line 19
+    goto :goto_0
+
     .line 20
-    const-wide/16 v3, 0x0
+    :cond_0
+    sget-object v0, LBzd;->m0:LBzd;
 
     .line 21
     .line 22
-    invoke-virtual {v2, v3, v4, v1}, Lrra;->z(JZ)V
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
     .line 23
     .line 24
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
     .line 25
-    return-void
-
     .line 26
-    :cond_0
-    const-string p1, "indefiniteBadge"
-
     .line 27
+    :goto_0
+    return-object v1
+
     .line 28
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :pswitch_0
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 29
     .line 30
     .line 31
-    throw v0
+    move-result-object v0
 
     .line 32
-    :pswitch_0
-    iget-object p1, v2, Lrra;->i0:LTqc;
+    return-object v0
 
     .line 33
-    .line 34
-    sget-object v2, Lrra;->J0:LcSa;
+    :pswitch_1
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
+    .line 34
     .line 35
     .line 36
-    invoke-virtual {p1, v2, v1, v1, v0}, LTqc;->D(LcSa;ZZLPpc;)V
+    move-result-object v0
 
     .line 37
-    .line 38
-    .line 39
-    return-void
+    return-object v0
 
+    .line 38
+    :pswitch_2
+    new-instance v3, Lhr3;
+
+    .line 39
     .line 40
-    :pswitch_1
-    iget-object p1, v2, Lrra;->i0:LTqc;
+    invoke-direct {v3, v1}, Lhr3;-><init>(I)V
 
     .line 41
     .line 42
-    sget-object v2, Lrra;->J0:LcSa;
-
     .line 43
-    .line 44
-    invoke-virtual {p1, v2, v1, v1, v0}, LTqc;->D(LcSa;ZZLPpc;)V
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
+    .line 44
     .line 45
+    invoke-direct {v4, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+
     .line 46
     .line 47
-    return-void
-
     .line 48
-    :pswitch_2
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
+    new-instance v3, Lb10;
 
     .line 49
     .line 50
-    const-wide/16 v3, 0x8
+    invoke-direct {v3}, Lb10;-><init>()V
 
     .line 51
     .line 52
-    invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
-
     .line 53
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
     .line 54
     .line 55
-    move-result-wide v0
+    invoke-direct {v5, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
     .line 56
-    sget-object v3, Lrra;->J0:LcSa;
-
     .line 57
     .line 58
-    invoke-virtual {v2, v0, v1, p1}, Lrra;->z(JZ)V
+    xor-int/2addr v2, v0
 
     .line 59
+    new-instance v3, Lb10;
+
     .line 60
     .line 61
-    return-void
+    invoke-direct {v3, v2}, Lb10;-><init>(Z)V
 
     .line 62
-    :pswitch_3
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
-
     .line 63
     .line 64
-    const-wide/16 v3, 0x1
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
     .line 65
     .line 66
-    invoke-virtual {v0, v3, v4}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+    invoke-direct {v2, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
     .line 67
     .line 68
     .line 69
-    move-result-wide v0
+    sget-object v3, Lhr3;->c:Lhr3;
 
     .line 70
-    sget-object v3, Lrra;->J0:LcSa;
-
     .line 71
-    .line 72
-    invoke-virtual {v2, v0, v1, p1}, Lrra;->z(JZ)V
+    new-instance v6, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
+    .line 72
     .line 73
+    invoke-direct {v6, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+
     .line 74
     .line 75
-    return-void
-
     .line 76
-    nop
+    new-instance v3, Lhr3;
 
     .line 77
+    .line 78
+    const/4 v7, 0x7
+
+    .line 79
+    invoke-direct {v3, v7}, Lhr3;-><init>(I)V
+
+    .line 80
+    .line 81
+    .line 82
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
+    .line 83
+    .line 84
+    invoke-direct {v7, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+
+    .line 85
+    .line 86
+    .line 87
+    const/4 v3, 0x5
+
+    .line 88
+    new-array v3, v3, [Lio/reactivex/rxjava3/core/Observable;
+
+    .line 89
+    .line 90
+    const/4 v8, 0x0
+
+    .line 91
+    aput-object v4, v3, v8
+
+    .line 92
+    .line 93
+    aput-object v5, v3, v0
+
+    .line 94
+    .line 95
+    const/4 v0, 0x2
+
+    .line 96
+    aput-object v2, v3, v0
+
+    .line 97
+    .line 98
+    const/4 v0, 0x3
+
+    .line 99
+    aput-object v6, v3, v0
+
+    .line 100
+    .line 101
+    aput-object v7, v3, v1
+
+    .line 102
+    .line 103
+    check-cast v3, [Lio/reactivex/rxjava3/core/ObservableSource;
+
+    .line 104
+    .line 105
+    sget-object v0, LPL7;->k0:LPL7;
+
+    .line 106
+    .line 107
+    sget v1, Lio/reactivex/rxjava3/core/Flowable;->a:I
+
+    .line 108
+    .line 109
+    invoke-static {v1, v0, v3}, Lio/reactivex/rxjava3/core/Observable;->z(ILio/reactivex/rxjava3/functions/Function;[Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v0
+
+    .line 113
+    return-object v0
+
+    .line 114
+    nop
+
+    .line 115
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_3
         :pswitch_2
         :pswitch_1
         :pswitch_0

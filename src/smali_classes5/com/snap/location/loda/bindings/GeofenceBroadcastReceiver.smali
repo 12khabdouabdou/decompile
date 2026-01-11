@@ -221,7 +221,7 @@
     .line 92
     .line 93
     .line 94
-    sget-object v9, LHek;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v9, LCEk;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 95
     .line 96
@@ -233,7 +233,7 @@
     move-result-object v9
 
     .line 100
-    check-cast v9, LHek;
+    check-cast v9, LCEk;
 
     .line 101
     .line 102
@@ -286,11 +286,11 @@
 
     .line 124
     :cond_5
-    new-instance v8, Lok1;
+    new-instance v8, LRn1;
 
     .line 125
     .line 126
-    invoke-direct {v8, v3, v5, v10, v1}, Lok1;-><init>(IILjava/util/ArrayList;Landroid/location/Location;)V
+    invoke-direct {v8, v3, v5, v10, v1}, LRn1;-><init>(IILjava/util/ArrayList;Landroid/location/Location;)V
 
     .line 127
     .line 128
@@ -300,7 +300,7 @@
 
     .line 130
     .line 131
-    iget v1, v8, Lok1;->b:I
+    iget v1, v8, LRn1;->b:I
 
     .line 132
     .line 133
@@ -312,7 +312,7 @@
 
     .line 136
     :cond_6
-    iget-object v1, v8, Lok1;->t:Ljava/lang/Object;
+    iget-object v1, v8, LRn1;->t:Ljava/lang/Object;
 
     .line 137
     .line 138
@@ -324,7 +324,7 @@
 
     .line 141
     .line 142
-    invoke-static {v1}, Lue3;->I0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v1}, Llh3;->G3(Ljava/util/List;)Ljava/lang/Object;
 
     .line 143
     .line 144
@@ -332,7 +332,7 @@
     move-result-object v1
 
     .line 146
-    check-cast v1, LHek;
+    check-cast v1, LCEk;
 
     .line 147
     .line 148
@@ -348,7 +348,7 @@
 
     .line 151
     .line 152
-    iget-object v9, v1, LHek;->a:Ljava/lang/String;
+    iget-object v9, v1, LCEk;->a:Ljava/lang/String;
 
     .line 153
     .line 154
@@ -372,7 +372,7 @@
 
     .line 161
     :cond_9
-    iget-object v1, v8, Lok1;->X:Ljava/lang/Object;
+    iget-object v1, v8, LRn1;->X:Ljava/lang/Object;
 
     .line 162
     .line 163
@@ -384,14 +384,14 @@
 
     .line 166
     .line 167
-    new-instance v1, LKf8;
+    new-instance v1, Lnm8;
 
     .line 168
     .line 169
     const/4 v2, -0x3
 
     .line 170
-    invoke-direct {v1, v2}, LKf8;-><init>(I)V
+    invoke-direct {v1, v2}, Lnm8;-><init>(I)V
 
     .line 171
     .line 172
@@ -400,7 +400,7 @@
 
     .line 174
     :cond_a
-    iget v3, v8, Lok1;->c:I
+    iget v3, v8, LRn1;->c:I
 
     .line 175
     .line 176
@@ -416,11 +416,11 @@
 
     .line 181
     .line 182
-    new-instance v1, LKf8;
+    new-instance v1, Lnm8;
 
     .line 183
     .line 184
-    invoke-direct {v1, v3}, LKf8;-><init>(I)V
+    invoke-direct {v1, v3}, Lnm8;-><init>(I)V
 
     .line 185
     .line 186
@@ -429,11 +429,11 @@
 
     .line 188
     :cond_b
-    new-instance v2, LHf8;
+    new-instance v2, Lkm8;
 
     .line 189
     .line 190
-    invoke-direct {v2, v1}, LHf8;-><init>(Landroid/location/Location;)V
+    invoke-direct {v2, v1}, Lkm8;-><init>(Landroid/location/Location;)V
 
     .line 191
     .line 192
@@ -446,11 +446,11 @@
 
     .line 195
     :cond_c
-    new-instance v2, LJf8;
+    new-instance v2, Lmm8;
 
     .line 196
     .line 197
-    invoke-direct {v2, v1}, LJf8;-><init>(Landroid/location/Location;)V
+    invoke-direct {v2, v1}, Lmm8;-><init>(Landroid/location/Location;)V
 
     .line 198
     .line 199
@@ -459,11 +459,11 @@
 
     .line 201
     :cond_d
-    new-instance v2, LIf8;
+    new-instance v2, Llm8;
 
     .line 202
     .line 203
-    invoke-direct {v2, v1}, LIf8;-><init>(Landroid/location/Location;)V
+    invoke-direct {v2, v1}, Llm8;-><init>(Landroid/location/Location;)V
 
     .line 204
     .line 205
@@ -473,14 +473,14 @@
     .line 207
     :cond_e
     :goto_7
-    new-instance v1, LKf8;
+    new-instance v1, Lnm8;
 
     .line 208
     .line 209
     const/4 v2, -0x2
 
     .line 210
-    invoke-direct {v1, v2}, LKf8;-><init>(I)V
+    invoke-direct {v1, v2}, Lnm8;-><init>(I)V
 
     .line 211
     .line 212
@@ -490,17 +490,17 @@
     .line 214
     :cond_f
     :goto_8
-    new-instance v1, LKf8;
+    new-instance v1, Lnm8;
 
     .line 215
     .line 216
-    invoke-direct {v1, v4}, LKf8;-><init>(I)V
+    invoke-direct {v1, v4}, Lnm8;-><init>(I)V
 
     .line 217
     .line 218
     .line 219
     :goto_9
-    instance-of v2, v1, LJf8;
+    instance-of v2, v1, Lmm8;
 
     .line 220
     .line 221
@@ -508,15 +508,15 @@
 
     .line 222
     .line 223
-    return-void
+    goto :goto_a
 
     .line 224
     :cond_10
-    sget-object v2, LXEa;->g:LXfi;
+    sget-object v2, LeRa;->g:LREi;
 
     .line 225
     .line 226
-    invoke-static {}, Llbk;->d()LXEa;
+    invoke-static {}, LGAk;->b()LeRa;
 
     .line 227
     .line 228
@@ -524,7 +524,7 @@
     move-result-object v2
 
     .line 230
-    iget-boolean v3, v2, LXEa;->c:Z
+    iget-boolean v3, v2, LeRa;->c:Z
 
     .line 231
     .line 232
@@ -551,22 +551,52 @@
     .line 243
     .line 244
     :cond_11
-    check-cast v1, LJf8;
+    iget-object v0, v2, LeRa;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 245
     .line 246
-    iget-object v0, v2, LXEa;->e:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
 
     .line 247
     .line 248
-    iget-object v1, v1, LJf8;->b:Landroid/location/Location;
-
     .line 249
+    move-result-object v0
+
     .line 250
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+    check-cast v0, LoQa;
 
     .line 251
     .line 252
+    iget-object v0, v0, LoQa;->t:LAQa;
+
     .line 253
+    .line 254
+    iget-boolean v0, v0, LAQa;->a:Z
+
+    .line 255
+    .line 256
+    if-eqz v0, :cond_12
+
+    .line 257
+    .line 258
+    check-cast v1, Lmm8;
+
+    .line 259
+    .line 260
+    iget-object v0, v2, LeRa;->e:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 261
+    .line 262
+    iget-object v1, v1, Lmm8;->b:Landroid/location/Location;
+
+    .line 263
+    .line 264
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 265
+    .line 266
+    .line 267
+    :cond_12
+    :goto_a
     return-void
 .end method

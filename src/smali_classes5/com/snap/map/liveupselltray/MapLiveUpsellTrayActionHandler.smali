@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Li1b;
+    proxyClass = Lleb;
     schema = "\'onShareLive\':f?|m|(r:\'[0]\'),\'onDismiss\':f?|m|()"
     typeReferences = {
         Lcom/snap/map/liveupselltray/UpsellParticipantInfo;
@@ -19,12 +19,12 @@
 
 # virtual methods
 .method public abstract onDismiss()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onShareLive(Lcom/snap/map/liveupselltray/UpsellParticipantInfo;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

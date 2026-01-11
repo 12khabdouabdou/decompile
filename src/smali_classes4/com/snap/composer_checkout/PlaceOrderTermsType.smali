@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'MERCHANT_TERMS_OF_SALE\':0,\'SNAP_COMMERCE_TERMS\':1,\'SPECTACLES_PRODUCT\':2,\'SNAP_STORE_PRODUCT_SALE_TERMS\':3,\'SPECTACLES_PRODUCT_SALE_TERMS\':4"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

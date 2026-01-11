@@ -1,25 +1,25 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
 .field public final c:I
 
 
 # direct methods
-.method public constructor <init>(ILdXc;)V
+.method public constructor <init>(ILYbd;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LdXc;
+    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LYbd;
 
     .line 5
     .line 6
@@ -32,11 +32,11 @@
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LYbd;
 
     .line 2
     .line 3
@@ -64,11 +64,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;
 
-    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LdXc;
+    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LYbd;
 
-    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LdXc;
+    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LYbd;
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -92,9 +92,9 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LYbd;
 
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     move-result v0
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$RequestedMediaFramesRendered;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

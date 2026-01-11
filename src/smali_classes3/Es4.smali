@@ -4,11 +4,13 @@
 
 
 # instance fields
-.field public final synthetic a:Lfs4;
+.field public final a:J
+
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>(Lfs4;)V
+.method public constructor <init>(JI)V
     .locals 0
 
     .line 1
@@ -17,9 +19,13 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LEs4;->a:Lfs4;
+    iput-wide p1, p0, LEs4;->a:J
 
     .line 5
     .line 6
+    iput p3, p0, LEs4;->b:I
+
+    .line 7
+    .line 8
     return-void
 .end method

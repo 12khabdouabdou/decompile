@@ -71,7 +71,7 @@
     iput-object v1, p0, Lcom/snap/framework/ui/views/TriangleView;->t:Landroid/graphics/Path;
 
     .line 8
-    sget-object v1, Live;->e:[I
+    sget-object v1, LQMe;->e:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 

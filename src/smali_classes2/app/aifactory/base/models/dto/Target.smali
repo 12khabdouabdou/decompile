@@ -11,11 +11,11 @@
 
 .field private final femaleProbability:F
 
-.field private final gender:Lvb8;
+.field private final gender:LRh8;
 
-.field private final imageFetcherObject:Lv39;
-    .annotation runtime LVz9;
-        value = Lw39;
+.field private final imageFetcherObject:Lab9;
+    .annotation runtime LnJ9;
+        value = Lbb9;
     .end annotation
 .end field
 
@@ -31,13 +31,13 @@
 
 .field private final isProcessed:Z
 
-.field private metricCollector:LPp9;
+.field private metricCollector:LSy9;
 
-.field private final source:Lb69;
+.field private final source:LAd9;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ILvb8;Lb69;FLv39;ZZ)V
+.method public constructor <init>(Ljava/lang/String;ILRh8;LAd9;FLab9;ZZ)V
     .locals 0
 
     .line 1
@@ -50,16 +50,16 @@
     iput p2, p0, Lapp/aifactory/base/models/dto/Target;->countOfPerson:I
 
     .line 4
-    iput-object p3, p0, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iput-object p3, p0, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 5
-    iput-object p4, p0, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iput-object p4, p0, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 6
     iput p5, p0, Lapp/aifactory/base/models/dto/Target;->femaleProbability:F
 
     .line 7
-    iput-object p6, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iput-object p6, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 8
     iput-boolean p7, p0, Lapp/aifactory/base/models/dto/Target;->isProcessed:Z
@@ -70,7 +70,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;ILvb8;Lb69;FLv39;ZZILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;ILRh8;LAd9;FLab9;ZZILex5;)V
     .locals 8
 
     move/from16 v0, p9
@@ -92,7 +92,7 @@
     if-eqz v2, :cond_1
 
     .line 10
-    sget-object v2, Lvb8;->a:Lvb8;
+    sget-object v2, LRh8;->a:LRh8;
 
     goto :goto_1
 
@@ -105,7 +105,7 @@
     if-eqz v3, :cond_2
 
     .line 11
-    sget-object v3, Lb69;->b:Lb69;
+    sget-object v3, LAd9;->b:LAd9;
 
     goto :goto_2
 
@@ -183,12 +183,12 @@
 
     .line 12
     :goto_7
-    invoke-direct/range {p2 .. p10}, Lapp/aifactory/base/models/dto/Target;-><init>(Ljava/lang/String;ILvb8;Lb69;FLv39;ZZ)V
+    invoke-direct/range {p2 .. p10}, Lapp/aifactory/base/models/dto/Target;-><init>(Ljava/lang/String;ILRh8;LAd9;FLab9;ZZ)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Lapp/aifactory/base/models/dto/Target;Ljava/lang/String;ILvb8;Lb69;FLv39;ZZILjava/lang/Object;)Lapp/aifactory/base/models/dto/Target;
+.method public static synthetic copy$default(Lapp/aifactory/base/models/dto/Target;Ljava/lang/String;ILRh8;LAd9;FLab9;ZZILjava/lang/Object;)Lapp/aifactory/base/models/dto/Target;
     .locals 0
 
     .line 1
@@ -226,7 +226,7 @@
 
     .line 16
     .line 17
-    iget-object p3, p0, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iget-object p3, p0, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 18
     .line 19
@@ -239,7 +239,7 @@
 
     .line 22
     .line 23
-    iget-object p4, p0, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iget-object p4, p0, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 24
     .line 25
@@ -265,7 +265,7 @@
 
     .line 34
     .line 35
-    iget-object p6, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iget-object p6, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 36
     .line 37
@@ -323,7 +323,7 @@
     move-object p2, p0
 
     .line 58
-    invoke-virtual/range {p2 .. p10}, Lapp/aifactory/base/models/dto/Target;->copy(Ljava/lang/String;ILvb8;Lb69;FLv39;ZZ)Lapp/aifactory/base/models/dto/Target;
+    invoke-virtual/range {p2 .. p10}, Lapp/aifactory/base/models/dto/Target;->copy(Ljava/lang/String;ILRh8;LAd9;FLab9;ZZ)Lapp/aifactory/base/models/dto/Target;
 
     .line 59
     .line 60
@@ -352,22 +352,22 @@
     return v0
 .end method
 
-.method public final component3()Lvb8;
+.method public final component3()LRh8;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component4()Lb69;
+.method public final component4()LAd9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 2
     .line 3
@@ -382,11 +382,11 @@
     return v0
 .end method
 
-.method public final component6()Lv39;
+.method public final component6()Lab9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 2
     .line 3
@@ -409,7 +409,7 @@
     return v0
 .end method
 
-.method public final copy(Ljava/lang/String;ILvb8;Lb69;FLv39;ZZ)Lapp/aifactory/base/models/dto/Target;
+.method public final copy(Ljava/lang/String;ILRh8;LAd9;FLab9;ZZ)Lapp/aifactory/base/models/dto/Target;
     .locals 9
 
     .line 1
@@ -443,7 +443,7 @@
 
     .line 12
     .line 13
-    invoke-direct/range {v0 .. v8}, Lapp/aifactory/base/models/dto/Target;-><init>(Ljava/lang/String;ILvb8;Lb69;FLv39;ZZ)V
+    invoke-direct/range {v0 .. v8}, Lapp/aifactory/base/models/dto/Target;-><init>(Ljava/lang/String;ILRh8;LAd9;FLab9;ZZ)V
 
     .line 14
     .line 15
@@ -493,7 +493,7 @@
 
     .line 16
     .line 17
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -525,11 +525,11 @@
 
     .line 31
     :cond_3
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 32
     .line 33
-    iget-object v3, p1, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iget-object v3, p1, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 34
     .line 35
@@ -541,11 +541,11 @@
 
     .line 38
     :cond_4
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 39
     .line 40
-    iget-object v3, p1, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iget-object v3, p1, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 41
     .line 42
@@ -597,15 +597,15 @@
 
     .line 64
     :cond_6
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 65
     .line 66
-    iget-object v3, p1, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iget-object v3, p1, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 67
     .line 68
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 69
     .line 70
@@ -678,22 +678,22 @@
     return v0
 .end method
 
-.method public final getGender()Lvb8;
+.method public final getGender()LRh8;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getImageFetcherObject()Lv39;
+.method public final getImageFetcherObject()Lab9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 2
     .line 3
@@ -711,22 +711,22 @@
     return-object v0
 .end method
 
-.method public final getMetricCollector()LPp9;
+.method public final getMetricCollector()LSy9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->metricCollector:LPp9;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->metricCollector:LSy9;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getSource()Lb69;
+.method public final getSource()LAd9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 2
     .line 3
@@ -768,7 +768,7 @@
 
     .line 15
     .line 16
-    iget-object v2, p0, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iget-object v2, p0, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 17
     .line 18
@@ -787,7 +787,7 @@
 
     .line 24
     .line 25
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 26
     .line 27
@@ -810,7 +810,7 @@
 
     .line 35
     .line 36
-    invoke-static {v0, v2, v1}, Ln9f;->b(IFI)I
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
 
     .line 37
     .line 38
@@ -818,7 +818,7 @@
     move-result v0
 
     .line 40
-    iget-object v2, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iget-object v2, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 41
     .line 42
@@ -937,11 +937,11 @@
     return-void
 .end method
 
-.method public final setMetricCollector(LPp9;)V
+.method public final setMetricCollector(LSy9;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lapp/aifactory/base/models/dto/Target;->metricCollector:LPp9;
+    iput-object p1, p0, Lapp/aifactory/base/models/dto/Target;->metricCollector:LSy9;
 
     .line 2
     .line 3
@@ -1001,7 +1001,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->gender:Lvb8;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->gender:LRh8;
 
     .line 29
     .line 30
@@ -1019,7 +1019,7 @@
     .line 36
     .line 37
     .line 38
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->source:Lb69;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->source:LAd9;
 
     .line 39
     .line 40
@@ -1055,7 +1055,7 @@
     .line 56
     .line 57
     .line 58
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lv39;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/Target;->imageFetcherObject:Lab9;
 
     .line 59
     .line 60
@@ -1099,7 +1099,7 @@
 
     .line 81
     .line 82
-    invoke-static {v0, v1, v2}, LmG8;->q(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LBv7;->r(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 83
     .line 84

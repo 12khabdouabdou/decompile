@@ -2,75 +2,58 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LYmd;
 
-.field public final synthetic b:LUk1;
+.field public final b:LCBe;
+
+.field public final c:LCBe;
 
 
 # direct methods
-.method public synthetic constructor <init>(LUk1;I)V
+.method public constructor <init>(LYmd;LCBe;LCBe;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LTk1;->a:I
-
-    iput-object p1, p0, LTk1;->b:LUk1;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, LTk1;->a:I
 
     .line 2
     .line 3
-    packed-switch p1, :pswitch_data_0
-
     .line 4
+    iput-object p1, p0, LTk1;->a:LYmd;
+
     .line 5
     .line 6
-    iget-object p1, p0, LTk1;->b:LUk1;
+    iput-object p2, p0, LTk1;->b:LCBe;
 
     .line 7
     .line 8
-    invoke-virtual {p1}, LUk1;->o1()V
+    iput-object p3, p0, LTk1;->c:LCBe;
 
     .line 9
     .line 10
-    .line 11
-    return-void
+    sget-object p1, LNn1;->Z:LNn1;
 
+    .line 11
     .line 12
-    :pswitch_0
-    iget-object p1, p0, LTk1;->b:LUk1;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 13
     .line 14
-    invoke-virtual {p1}, LUk1;->o1()V
-
     .line 15
+    const-string p1, "BloopsChatActionMenuHandlerImpl"
+
     .line 16
     .line 17
-    return-void
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 18
-    nop
-
     .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 20
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 21
+    .line 22
+    return-void
 .end method

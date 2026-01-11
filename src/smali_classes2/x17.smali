@@ -1,3 +1,6 @@
-.class public abstract Lx17;
-.super LxK0;
+.class public final Lx17;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LTM1;

@@ -1,23 +1,23 @@
 .class public final Lcom/snap/fidelius/impl/FideliusSaveSnapKeyDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "FideliusSaveSnapKeyDurableJob"
-    metadataType = Ljlf;
+    metadataType = LfEf;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(LtB6;Ljlf;)V
+.method public constructor <init>(LRE6;LfEf;)V
     .locals 0
 
     .line 1

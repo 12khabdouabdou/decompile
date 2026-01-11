@@ -1,5 +1,5 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -16,15 +16,15 @@
 
 .field public final g:J
 
-.field public final h:LNLi;
+.field public final h:Lobj;
 
 
 # direct methods
-.method public constructor <init>(FFFFJJLNLi;)V
+.method public constructor <init>(FFFFJJLobj;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -53,7 +53,7 @@
 
     .line 15
     .line 16
-    iput-object p9, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:LNLi;
+    iput-object p9, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:Lobj;
 
     .line 17
     .line 18
@@ -157,9 +157,9 @@
     return v2
 
     :cond_7
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:LNLi;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:Lobj;
 
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:LNLi;
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:Lobj;
 
     if-eq v1, p1, :cond_8
 
@@ -197,7 +197,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v2, v1}, Ln9f;->b(IFI)I
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
 
     .line 14
     .line 15
@@ -209,7 +209,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0, v2, v1}, Ln9f;->b(IFI)I
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
 
     .line 20
     .line 21
@@ -221,7 +221,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0, v2, v1}, Ln9f;->b(IFI)I
+    invoke-static {v0, v2, v1}, LToi;->d(IFI)I
 
     .line 26
     .line 27
@@ -275,7 +275,7 @@
 
     .line 48
     .line 49
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:LNLi;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:Lobj;
 
     .line 50
     .line 51
@@ -350,7 +350,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:LNLi;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$TouchActionDetails;->h:Lobj;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

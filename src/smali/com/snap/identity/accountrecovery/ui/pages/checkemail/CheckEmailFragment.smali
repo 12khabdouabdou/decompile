@@ -3,13 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements LTQ2;
+.implements LvT2;
 
 
 # instance fields
 .field public A0:Landroid/widget/TextView;
 
-.field public x0:LPQ2;
+.field public x0:LrT2;
 
 .field public y0:Landroid/widget/TextView;
 
@@ -31,11 +31,11 @@
 
 
 # virtual methods
-.method public final H1()V
+.method public final F1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;->x0:LPQ2;
+    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;->x0:LrT2;
 
     .line 2
     .line 3
@@ -43,7 +43,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, p0}, LqM0;->O2(Ljava/lang/Object;)V
+    invoke-virtual {v0, p0}, LrP0;->Z2(Ljava/lang/Object;)V
 
     .line 6
     .line 7
@@ -56,7 +56,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -67,52 +67,11 @@
     throw v0
 .end method
 
-.method public final I1()V
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->I1()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;->x0:LPQ2;
-
-    .line 5
-    .line 6
-    if-eqz v0, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LqM0;->C1()V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :cond_0
-    const-string v0, "presenter"
-
-    .line 13
-    .line 14
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 v0, 0x0
-
-    .line 18
-    throw v0
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    .line 1
-    const p3, 0x7f0e028f
+    const p3, 0x7f0e02a6
 
     .line 2
     .line 3
@@ -131,14 +90,55 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final G1()V
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->G1()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;->x0:LrT2;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, LrP0;->D1()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    const-string v0, "presenter"
+
+    .line 13
+    .line 14
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 v0, 0x0
+
+    .line 18
+    throw v0
+.end method
+
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 6
 
     .line 1
     const/4 p2, 0x1
 
     .line 2
-    const v0, 0x7f0b1232
+    const v0, 0x7f0b135e
 
     .line 3
     .line 4
@@ -155,24 +155,24 @@
 
     .line 10
     .line 11
-    new-instance v1, LNQ2;
+    new-instance v1, LpT2;
 
     .line 12
     .line 13
     const/4 v2, 0x0
 
     .line 14
-    invoke-direct {v1, p0, v2}, LNQ2;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;I)V
+    invoke-direct {v1, p0, v2}, LpT2;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;I)V
 
     .line 15
     .line 16
     .line 17
-    const v3, 0x7f0b1832
+    const v3, 0x7f0b1986
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, v3, v1}, Lcom/snap/component/header/SnapSubscreenHeaderView;->x(ILandroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v3, v1}, Lcom/snap/component/header/SnapSubscreenHeaderView;->w(ILandroid/view/View$OnClickListener;)V
 
     .line 21
     .line 22
@@ -205,7 +205,7 @@
 
     .line 36
     .line 37
-    const v1, 0x7f0b1237
+    const v1, 0x7f0b1363
 
     .line 38
     .line 39
@@ -230,7 +230,7 @@
     move-result-object v3
 
     .line 50
-    const v4, 0x7f132bae
+    const v4, 0x7f132e28
 
     .line 51
     .line 52
@@ -256,7 +256,7 @@
     .line 62
     .line 63
     .line 64
-    const v0, 0x7f0b1236
+    const v0, 0x7f0b1362
 
     .line 65
     .line 66
@@ -277,11 +277,11 @@
 
     .line 74
     .line 75
-    new-instance v1, LNQ2;
+    new-instance v1, LpT2;
 
     .line 76
     .line 77
-    invoke-direct {v1, p0, p2}, LNQ2;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;I)V
+    invoke-direct {v1, p0, p2}, LpT2;-><init>(Lcom/snap/identity/accountrecovery/ui/pages/checkemail/CheckEmailFragment;I)V
 
     .line 78
     .line 79
@@ -291,7 +291,7 @@
     .line 81
     .line 82
     .line 83
-    const p2, 0x7f0b1231
+    const p2, 0x7f0b135d
 
     .line 84
     .line 85
@@ -312,7 +312,7 @@
 
     .line 93
     .line 94
-    const p2, 0x7f0b1292
+    const p2, 0x7f0b13bf
 
     .line 95
     .line 96
@@ -370,22 +370,22 @@
     throw p1
 .end method
 
-.method public final U1()LZ8d;
+.method public final U1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->Y1:LZ8d;
+    sget-object v0, Lsod;->Z1:Lsod;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3

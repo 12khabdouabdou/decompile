@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lih7;
+    proxyClass = Lhm7;
     schema = "\'getSubscriptionsFeed\':f|m|(): g<c>:\'[0]\'<a<r:\'[1]\'>>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lxj7;
+        LEo7;
     }
 .end annotation
 
@@ -25,7 +25,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Lxj7;",
+            "LEo7;",
             ">;>;"
         }
     .end annotation

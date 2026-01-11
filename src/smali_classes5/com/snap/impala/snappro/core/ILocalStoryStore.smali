@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRV8;
+    proxyClass = Ls39;
     schema = "\'observeSpotlightPostingProgress\':f?|m|(f(), f(s, r:\'[0]\')),\'observeLivePublicStory\':f?|m|(s?, f(s?), f())"
     typeReferences = {
         Lcom/snapchat/client/valdi_core/Asset;
@@ -19,9 +19,6 @@
 
 # virtual methods
 .method public abstract observeLivePublicStory(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -31,12 +28,12 @@
             ")V"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract observeSpotlightPostingProgress(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -44,6 +41,9 @@
             "Lkotlin/jvm/functions/Function2;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

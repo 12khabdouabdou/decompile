@@ -2,154 +2,105 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Laz1;
 
-.field public final synthetic b:LImb;
+.field public final b:LI23;
 
-.field public final synthetic c:Z
+.field public final c:LA36;
 
 
 # direct methods
-.method public synthetic constructor <init>(LImb;ZI)V
-    .locals 0
+.method public constructor <init>(Laz1;LI23;)V
+    .locals 1
 
     .line 1
-    iput p3, p0, LHmb;->a:I
-
-    iput-object p1, p0, LHmb;->b:LImb;
-
-    iput-boolean p2, p0, LHmb;->c:Z
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method private final a()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LHmb;->b:LImb;
 
     .line 2
     .line 3
-    iget-object v1, v0, LImb;->o:Ljava/lang/Object;
-
     .line 4
-    .line 5
-    monitor-enter v1
+    iput-object p1, p0, LHmb;->a:Laz1;
 
+    .line 5
     .line 6
-    :try_start_0
-    invoke-static {v0}, LImb;->a(LImb;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iput-object p2, p0, LHmb;->b:LI23;
 
     .line 7
     .line 8
-    .line 9
-    monitor-exit v1
+    sget-object p1, LyIf;->Z:LyIf;
 
+    .line 9
     .line 10
-    iget-boolean v0, p0, LHmb;->c:Z
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 11
     .line 12
-    if-eqz v0, :cond_0
-
     .line 13
+    new-instance p2, Lnp0;
+
     .line 14
-    iget-object v0, p0, LHmb;->b:LImb;
-
     .line 15
+    const-string v0, "MapStylePrototypeConfigProvider"
+
     .line 16
-    iget-object v0, v0, LImb;->n:Lrn0;
-
     .line 17
+    invoke-direct {p2, p1, v0}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
     .line 18
-    return-void
-
     .line 19
-    :cond_0
-    iget-object v0, p0, LHmb;->b:LImb;
-
     .line 20
-    .line 21
-    iget-object v1, v0, LImb;->a:LDp7;
+    invoke-static {p2}, Lve4;->e(Lnp0;)LA36;
 
+    .line 21
     .line 22
     .line 23
-    iget-object v0, v0, LImb;->b:LDmb;
+    move-result-object p1
 
     .line 24
+    iput-object p1, p0, LHmb;->c:LA36;
+
     .line 25
-    invoke-static {v0}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
-
     .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    invoke-virtual {v1, v0}, LDp7;->E(Ljava/util/Set;)V
-
-    .line 30
-    .line 31
-    .line 32
     return-void
-
-    .line 33
-    :catchall_0
-    move-exception v0
-
-    .line 34
-    monitor-exit v1
-
-    .line 35
-    throw v0
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 6
+.method public final a(Landroid/content/Context;)Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    .locals 7
 
     .line 1
-    iget v0, p0, LHmb;->a:I
+    sget-object v0, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    sget-object v0, Ljrb;->f0:Ljrb;
 
     .line 4
     .line 5
+    sget-object v1, Lk33;->a:LQi7;
+
     .line 6
-    iget-object v0, p0, LHmb;->b:LImb;
-
     .line 7
+    iget-object v2, p0, LHmb;->b:LI23;
+
     .line 8
-    iget-object v1, v0, LImb;->o:Ljava/lang/Object;
-
     .line 9
-    .line 10
-    iget-boolean v2, p0, LHmb;->c:Z
+    invoke-interface {v2, v0, v1}, LI23;->l(LcM3;LQi7;)Lio/reactivex/rxjava3/core/Single;
 
+    .line 10
     .line 11
     .line 12
-    monitor-enter v1
+    move-result-object v0
 
     .line 13
-    :try_start_0
-    iget-object v3, v0, LImb;->p:Ljava/util/concurrent/ConcurrentHashMap;
+    sget-object v3, Ljrb;->g0:Ljrb;
 
     .line 14
     .line 15
-    invoke-virtual {v3}, Ljava/util/concurrent/ConcurrentHashMap;->values()Ljava/util/Collection;
+    invoke-interface {v2, v3, v1}, LI23;->H(LcM3;LQi7;)Lio/reactivex/rxjava3/core/Single;
 
     .line 16
     .line 17
@@ -157,100 +108,71 @@
     move-result-object v3
 
     .line 19
-    invoke-interface {v3}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+    sget-object v4, Ljrb;->z0:Ljrb;
 
     .line 20
     .line 21
+    invoke-interface {v2, v4, v1}, LI23;->H(LcM3;LQi7;)Lio/reactivex/rxjava3/core/Single;
+
     .line 22
-    move-result-object v3
-
     .line 23
-    :goto_0
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
     .line 24
-    .line 25
-    .line 26
-    move-result v4
+    move-result-object v4
 
+    .line 25
+    sget-object v5, Laab;->e0:Laab;
+
+    .line 26
     .line 27
-    if-eqz v4, :cond_1
+    new-instance v6, LhS0;
 
     .line 28
     .line 29
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-direct {v6}, LhS0;-><init>()V
 
     .line 30
     .line 31
     .line 32
-    move-result-object v4
+    invoke-interface {v2, v5, v6, v1}, LI23;->v(LcM3;Le57;LQi7;)Lio/reactivex/rxjava3/core/Single;
 
     .line 33
-    check-cast v4, Lvnb;
-
     .line 34
     .line 35
-    if-nez v2, :cond_0
+    move-result-object v1
 
     .line 36
-    .line 37
-    sget-object v5, LsL6;->a:LsL6;
+    new-instance v2, Lrfb;
 
+    .line 37
     .line 38
+    const/4 v5, 0x7
+
     .line 39
-    invoke-virtual {v0, v4, v5}, LImb;->B(Lvnb;Ljava/util/List;)V
+    invoke-direct {v2, p0, v5, p1}, Lrfb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 40
     .line 41
     .line 42
-    :cond_0
-    invoke-virtual {v4}, LzM0;->release()V
+    invoke-static {v0, v3, v4, v1, v2}, Lio/reactivex/rxjava3/core/Single;->G(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function4;)Lio/reactivex/rxjava3/core/Single;
 
     .line 43
     .line 44
     .line 45
-    goto :goto_0
+    move-result-object p1
 
     .line 46
-    :catchall_0
-    move-exception v0
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
     .line 47
-    goto :goto_1
-
     .line 48
-    :cond_1
-    invoke-static {v0}, LImb;->a(LImb;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    iget-object v1, p0, LHmb;->c:LA36;
 
     .line 49
     .line 50
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 51
-    monitor-exit v1
-
     .line 52
-    return-void
-
     .line 53
-    :goto_1
-    monitor-exit v1
-
-    .line 54
-    throw v0
-
-    .line 55
-    :pswitch_0
-    invoke-direct {p0}, LHmb;->a()V
-
-    .line 56
-    .line 57
-    .line 58
-    return-void
-
-    .line 59
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

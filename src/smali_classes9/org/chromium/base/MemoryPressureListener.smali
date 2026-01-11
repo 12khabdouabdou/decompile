@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static a:LFKc;
+.field public static a:LpZc;
 
 
 # direct methods
@@ -14,7 +14,7 @@
     .end annotation
 
     .line 1
-    new-instance v0, Lf18;
+    new-instance v0, Lh78;
 
     .line 2
     .line 3
@@ -22,12 +22,12 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lf18;-><init>(I)V
+    invoke-direct {v0, v1}, Lh78;-><init>(I)V
 
     .line 6
     .line 7
     .line 8
-    sget-object v1, Lorg/chromium/base/MemoryPressureListener;->a:LFKc;
+    sget-object v1, Lorg/chromium/base/MemoryPressureListener;->a:LpZc;
 
     .line 9
     .line 10
@@ -35,25 +35,25 @@
 
     .line 11
     .line 12
-    new-instance v1, LFKc;
+    new-instance v1, LpZc;
 
     .line 13
     .line 14
-    invoke-direct {v1}, LFKc;-><init>()V
+    invoke-direct {v1}, LpZc;-><init>()V
 
     .line 15
     .line 16
     .line 17
-    sput-object v1, Lorg/chromium/base/MemoryPressureListener;->a:LFKc;
+    sput-object v1, Lorg/chromium/base/MemoryPressureListener;->a:LpZc;
 
     .line 18
     .line 19
     :cond_0
-    sget-object v1, Lorg/chromium/base/MemoryPressureListener;->a:LFKc;
+    sget-object v1, Lorg/chromium/base/MemoryPressureListener;->a:LpZc;
 
     .line 20
     .line 21
-    invoke-virtual {v1, v0}, LFKc;->c(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, LpZc;->b(Ljava/lang/Object;)V
 
     .line 22
     .line 23

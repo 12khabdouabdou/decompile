@@ -1,1725 +1,1284 @@
-.class public final LBT;
+.class public LBT;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Supplier;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Z
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public b:Lnmg;
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final c:LREi;
+
+.field public final d:LREi;
+
+.field public final e:Landroid/content/Context;
+
+.field public final f:Lkotlin/jvm/functions/Function1;
+
+.field public final g:LpXg;
+
+.field public final h:LR93;
+
+.field public final i:LPh5;
+
+.field public final j:LkP5;
+
+.field public final k:LDn4;
+
+.field public final l:Lrp0;
+
+.field public final m:LDAi;
+
+.field public final n:Z
+
+.field public final o:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;LpXg;LjX6;LR93;LPh5;LkP5;LDn4;Lrp0;LDAi;Z)V
+    .locals 1
 
     .line 1
-    iput p2, p0, LBT;->a:I
-
-    iput-object p1, p0, LBT;->b:Ljava/lang/Object;
-
-    iput-object p3, p0, LBT;->c:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-boolean p11, p0, LBT;->a:Z
+
+    .line 3
+    new-instance p4, Lnmg;
+
+    sget-object p11, LvG3;->Y:LvG3;
+
+    const/4 v0, 0x1
+
+    invoke-direct {p4, v0, p11}, Lnmg;-><init>(ILkotlin/jvm/functions/Function0;)V
+
+    iput-object p4, p0, LBT;->b:Lnmg;
+
+    .line 4
+    new-instance p4, LAT;
+
+    const/4 p11, 0x1
+
+    invoke-direct {p4, p0, p11}, LAT;-><init>(LBT;I)V
+
+    .line 5
+    new-instance p11, LREi;
+
+    invoke-direct {p11, p4}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 6
+    iput-object p11, p0, LBT;->c:LREi;
+
+    .line 7
+    new-instance p4, LAT;
+
+    const/4 p11, 0x2
+
+    invoke-direct {p4, p0, p11}, LAT;-><init>(LBT;I)V
+
+    .line 8
+    new-instance p11, LREi;
+
+    invoke-direct {p11, p4}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 9
+    iput-object p11, p0, LBT;->d:LREi;
+
+    .line 10
+    iput-object p1, p0, LBT;->e:Landroid/content/Context;
+
+    .line 11
+    iput-object p2, p0, LBT;->f:Lkotlin/jvm/functions/Function1;
+
+    .line 12
+    iput-object p3, p0, LBT;->g:LpXg;
+
+    .line 13
+    iput-object p5, p0, LBT;->h:LR93;
+
+    .line 14
+    iput-object p6, p0, LBT;->i:LPh5;
+
+    .line 15
+    iput-object p7, p0, LBT;->j:LkP5;
+
+    .line 16
+    iput-object p8, p0, LBT;->k:LDn4;
+
+    .line 17
+    iput-object p9, p0, LBT;->l:Lrp0;
+
+    .line 18
+    iput-object p10, p0, LBT;->m:LDAi;
+
+    const/4 p1, 0x1
+
+    .line 19
+    iput-boolean p1, p0, LBT;->n:Z
+
+    .line 20
+    sget-object p1, Landroid/os/Build;->MODEL:Ljava/lang/String;
+
+    iput-object p1, p0, LBT;->o:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;LpXg;LjX6;LR93;LPh5;LkP5;LDn4;Lrp0;LDAi;ZI)V
+    .locals 13
+
+    move/from16 v0, p12
+
+    and-int/lit16 v0, v0, 0x400
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    const/4 v12, 0x1
+
+    :goto_0
+    move-object v1, p0
+
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object/from16 v4, p3
+
+    move-object/from16 v5, p4
+
+    move-object/from16 v6, p5
+
+    move-object/from16 v7, p6
+
+    move-object/from16 v8, p7
+
+    move-object/from16 v9, p8
+
+    move-object/from16 v10, p9
+
+    move-object/from16 v11, p10
+
+    goto :goto_1
+
+    :cond_0
+    move/from16 v12, p11
+
+    goto :goto_0
+
+    .line 21
+    :goto_1
+    invoke-direct/range {v1 .. v12}, LBT;-><init>(Landroid/content/Context;Lkotlin/jvm/functions/Function1;LpXg;LjX6;LR93;LPh5;LkP5;LDn4;Lrp0;LDAi;Z)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 19
+.method public declared-synchronized a()V
+    .locals 3
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, LBT;->d()Lkch;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v0
+
+    .line 6
+    monitor-enter v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 7
+    :try_start_1
+    invoke-virtual {p0}, LBT;->d()Lkch;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-interface {v1}, Ljava/io/Closeable;->close()V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object v1, p0, LBT;->e:Landroid/content/Context;
+
+    .line 15
+    .line 16
+    iget-object v2, p0, LBT;->g:LpXg;
+
+    .line 17
+    .line 18
+    invoke-interface {v2}, LpXg;->b()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    invoke-static {v1, v2}, Loch;->a(Landroid/content/Context;Ljava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 23
+    .line 24
+    .line 25
+    :try_start_2
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 26
+    monitor-exit p0
+
+    .line 27
+    return-void
+
+    .line 28
+    :catchall_0
+    move-exception v0
+
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :catchall_1
+    move-exception v1
+
+    .line 31
+    :try_start_3
+    monitor-exit v0
+
+    .line 32
+    throw v1
+
+    .line 33
+    :goto_0
+    monitor-exit p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 34
+    throw v0
+.end method
+
+.method public b()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LBT;->g:LpXg;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LpXg;->b()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sget-object v1, Loch;->a:Ljava/util/List;
+
+    .line 8
+    .line 9
+    const-string v1, ":memory:"
+
+    .line 10
+    .line 11
+    const/4 v2, 0x1
+
+    .line 12
+    invoke-static {v0, v1, v2}, Lsti;->l0(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    if-eqz v1, :cond_0
+
+    .line 17
+    .line 18
+    const/4 v0, 0x0
+
+    .line 19
+    :cond_0
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 17
 
     .line 1
     move-object/from16 v0, p0
 
     .line 2
     .line 3
-    const/4 v2, 0x4
+    iget-object v1, v0, LBT;->g:LpXg;
 
     .line 4
-    sget-object v3, Lu1;->a:Lu1;
-
     .line 5
+    invoke-interface {v1}, LpXg;->d()LrXg;
+
     .line 6
-    const/4 v4, 0x6
-
     .line 7
-    const/16 v5, 0xa
-
     .line 8
+    move-result-object v1
+
     .line 9
-    const/16 v6, 0x14
+    iget-object v2, v0, LBT;->l:Lrp0;
 
     .line 10
     .line 11
-    const/4 v7, 0x2
+    iget-object v2, v2, Lrp0;->a:Ljava/lang/String;
 
     .line 12
-    const/4 v8, 0x0
-
     .line 13
-    const/4 v9, 0x3
+    iget v3, v1, LrXg;->b:I
 
     .line 14
-    const/4 v10, 0x1
-
     .line 15
-    iget-object v11, v0, LBT;->c:Ljava/lang/Object;
+    iget v4, v1, LrXg;->c:I
 
     .line 16
     .line 17
-    iget-object v12, v0, LBT;->b:Ljava/lang/Object;
+    sget-object v5, Loch;->a:Ljava/util/List;
 
     .line 18
     .line 19
-    iget v13, v0, LBT;->a:I
+    iget-object v5, v0, LBT;->e:Landroid/content/Context;
 
     .line 20
     .line 21
-    packed-switch v13, :pswitch_data_0
+    const-string v6, "activity"
 
     .line 22
     .line 23
-    .line 24
-    check-cast v12, LY2j;
+    invoke-virtual {v5, v6}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
+    .line 24
     .line 25
     .line 26
-    iget-object v1, v12, LY2j;->t:LpC3;
+    move-result-object v7
 
     .line 27
+    check-cast v7, Landroid/app/ActivityManager;
+
     .line 28
-    sget-object v2, LjDc;->w2:LjDc;
-
     .line 29
-    .line 30
-    invoke-interface {v1, v2}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    const v8, 0x7fffffff
 
+    .line 30
     .line 31
     .line 32
+    invoke-virtual {v7, v8}, Landroid/app/ActivityManager;->getRunningServices(I)Ljava/util/List;
+
     .line 33
-    move-result-object v1
-
     .line 34
-    new-instance v2, LV4c;
-
     .line 35
+    move-result-object v7
+
     .line 36
-    check-cast v11, LqFc;
+    move-object v8, v7
 
     .line 37
+    check-cast v8, Ljava/lang/Iterable;
+
     .line 38
-    const/16 v3, 0x16
-
     .line 39
+    sget-object v12, Lf9h;->r0:Lf9h;
+
     .line 40
-    invoke-direct {v2, v12, v3, v11}, LV4c;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 41
-    .line 42
-    .line 43
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    const/4 v11, 0x0
 
+    .line 42
+    const/16 v13, 0x1f
+
+    .line 43
     .line 44
+    const/4 v9, 0x0
+
     .line 45
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    const/4 v10, 0x0
 
     .line 46
+    invoke-static/range {v8 .. v13}, Llh3;->M3(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
+
     .line 47
     .line 48
-    return-object v3
-
     .line 49
-    :pswitch_0
-    sget-object v7, LoFc;->b:LoFc;
+    move-result-object v8
 
     .line 50
-    .line 51
-    check-cast v12, Lhhi;
+    invoke-virtual {v5, v6}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
+    .line 51
     .line 52
     .line 53
-    iget-object v1, v12, Lhhi;->p:LC05;
+    move-result-object v5
 
     .line 54
-    .line 55
-    invoke-virtual {v1}, LC05;->get()Ljava/lang/Object;
+    check-cast v5, Landroid/app/ActivityManager;
 
+    .line 55
     .line 56
+    invoke-virtual {v5}, Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;
+
     .line 57
     .line 58
-    move-result-object v1
-
     .line 59
-    check-cast v1, LpFc;
+    move-result-object v5
 
     .line 60
+    if-nez v5, :cond_0
+
     .line 61
-    new-instance v4, LqFc;
-
     .line 62
-    .line 63
-    check-cast v11, LBDc;
+    sget-object v5, LgP6;->a:LgP6;
 
+    .line 63
     .line 64
+    :cond_0
+    move-object v9, v5
+
     .line 65
-    iget-object v2, v11, LBDc;->u:LdHc;
+    check-cast v9, Ljava/lang/Iterable;
 
     .line 66
     .line 67
-    invoke-interface {v2}, LdHc;->getName()Ljava/lang/String;
+    sget-object v13, Lf9h;->q0:Lf9h;
 
     .line 68
     .line 69
+    const/4 v12, 0x0
+
     .line 70
-    move-result-object v6
+    const/16 v14, 0x1f
 
     .line 71
-    iget-object v5, v11, LBDc;->t:Ljava/lang/String;
-
     .line 72
+    const/4 v10, 0x0
+
     .line 73
-    iget-object v8, v11, LBDc;->m:LuFc;
+    const/4 v11, 0x0
 
     .line 74
-    .line 75
-    iget-short v9, v11, LBDc;->n:S
+    invoke-static/range {v9 .. v14}, Llh3;->M3(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
 
+    .line 75
     .line 76
     .line 77
-    const/4 v10, 0x1
+    move-result-object v6
 
     .line 78
-    invoke-direct/range {v4 .. v10}, LqFc;-><init>(Ljava/lang/String;Ljava/lang/String;LoFc;LuFc;SI)V
+    invoke-static {}, Landroid/os/Process;->myPid()I
 
     .line 79
     .line 80
     .line 81
-    invoke-interface {v1, v4}, LpFc;->d(LqFc;)Lio/reactivex/rxjava3/core/Single;
+    move-result v9
 
     .line 82
+    invoke-interface {v5}, Ljava/util/List;->size()I
+
     .line 83
     .line 84
-    move-result-object v1
-
     .line 85
-    sget-object v2, LzCe;->x0:LzCe;
+    move-result v5
 
     .line 86
-    .line 87
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;
+    invoke-interface {v7}, Ljava/util/List;->size()I
 
+    .line 87
     .line 88
     .line 89
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    move-result v7
 
     .line 90
+    const-string v10, "Current process id "
+
     .line 91
     .line 92
-    return-object v3
+    const-string v11, " \nProcesses: "
 
     .line 93
-    :pswitch_1
-    check-cast v12, Liyg;
-
     .line 94
+    const-string v12, " ("
+
     .line 95
-    iget-object v1, v12, Liyg;->c:Le03;
-
     .line 96
-    .line 97
-    invoke-interface {v1}, Le03;->F()Lio/reactivex/rxjava3/core/Single;
+    invoke-static {v10, v11, v6, v9, v12}, LToi;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 97
     .line 98
     .line 99
+    move-result-object v6
+
     .line 100
-    move-result-object v1
+    const-string v9, ")\n  Current services: "
 
     .line 101
-    new-instance v2, Lk0c;
-
     .line 102
+    const-string v10, " (all "
+
     .line 103
-    check-cast v11, LzT;
-
     .line 104
-    .line 105
-    const/16 v3, 0xc
+    invoke-static {v6, v5, v9, v8, v10}, LBv7;->w(Ljava/lang/StringBuilder;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 105
     .line 106
     .line 107
-    invoke-direct {v2, v12, v3, v11}, Lk0c;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    const-string v5, ")"
 
     .line 108
     .line 109
-    .line 110
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v6, v7, v5}, LJF0;->w(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
+    .line 110
     .line 111
     .line 112
+    move-result-object v5
+
     .line 113
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    if-nez v5, :cond_1
 
     .line 114
     .line 115
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    const-string v5, "No process info"
 
     .line 116
     .line 117
-    .line 118
-    new-instance v1, LTlc;
+    :cond_1
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
+    .line 118
     .line 119
     .line 120
-    const/16 v2, 0xb
+    move-result-object v6
 
     .line 121
-    .line 122
-    invoke-direct {v1, v12, v2, v11}, LTlc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-virtual {v6}, Ljava/lang/Thread;->getId()J
 
+    .line 122
     .line 123
     .line 124
+    move-result-wide v6
+
     .line 125
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     .line 126
     .line 127
-    invoke-direct {v2, v3, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 128
-    .line 129
-    .line 130
-    new-instance v1, Lgje;
+    move-result-object v8
 
+    .line 129
+    invoke-virtual {v8}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+
+    .line 130
     .line 131
     .line 132
-    const/16 v3, 0x11
+    move-result-object v8
 
     .line 133
-    .line 134
-    invoke-direct {v1, v3, v12}, Lgje;-><init>(ILjava/lang/Object;)V
+    sget-object v9, LVh5;->m:LOh0;
 
+    .line 134
     .line 135
+    iget-object v9, v9, LOh0;->a:Ljava/util/concurrent/atomic/AtomicReference;
+
     .line 136
     .line 137
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    invoke-virtual {v9}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     .line 138
     .line 139
-    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 140
-    .line 141
-    .line 142
-    invoke-interface {v11}, LzT;->e()Z
+    move-result-object v9
 
+    .line 141
+    check-cast v9, Ljava/lang/Integer;
+
+    .line 142
     .line 143
+    sget-object v10, LVh5;->l:Ljava/util/List;
+
     .line 144
     .line 145
-    move-result v1
+    move-object v11, v10
 
     .line 146
-    if-eqz v1, :cond_0
+    check-cast v11, Ljava/lang/Iterable;
 
     .line 147
     .line 148
-    iget-object v1, v12, Liyg;->n:LrH9;
+    const/4 v14, 0x0
 
     .line 149
+    const/4 v15, 0x0
+
     .line 150
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
+    const/4 v12, 0x0
 
     .line 151
-    .line 152
-    .line 153
-    move-result-object v1
+    const/4 v13, 0x0
 
+    .line 152
+    const/16 v16, 0x3f
+
+    .line 153
     .line 154
-    check-cast v1, LR74;
+    invoke-static/range {v11 .. v16}, Llh3;->M3(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
 
     .line 155
     .line 156
-    invoke-interface {v11}, LzT;->f()Ljava/lang/String;
-
     .line 157
-    .line 158
-    .line 159
-    move-result-object v2
+    move-result-object v10
 
+    .line 158
+    const-string v11, "Database "
+
+    .line 159
     .line 160
-    invoke-virtual {v1, v2}, LR74;->a(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+    const-string v12, " was upgraded from "
 
     .line 161
     .line 162
-    .line 163
-    move-result-object v1
+    const-string v13, " to "
 
+    .line 163
     .line 164
-    iget-object v2, v12, Liyg;->f:LfY4;
+    invoke-static {v11, v2, v12, v3, v13}, Lve4;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 165
     .line 166
-    invoke-virtual {v2}, LfY4;->get()Ljava/lang/Object;
-
     .line 167
-    .line 168
-    .line 169
     move-result-object v2
 
+    .line 168
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 169
     .line 170
-    check-cast v2, Lhyg;
-
     .line 171
-    .line 172
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v3, ". \nSqlite version is "
 
+    .line 172
     .line 173
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 174
     .line 175
-    invoke-static {}, Lhyg;->a()Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
-
     .line 176
+    iget-object v1, v1, LrXg;->d:Ljava/lang/String;
+
     .line 177
     .line 178
-    move-result-object v2
+    const-string v3, ". \nThe process info: "
 
     .line 179
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
     .line 180
-    .line 181
-    invoke-direct {v4, v1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
+    const-string v4, " \nThread id: "
 
+    .line 181
     .line 182
+    invoke-static {v2, v1, v3, v5, v4}, Lcb9;->h(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
     .line 183
     .line 184
-    goto :goto_0
-
     .line 185
-    :cond_0
-    sget-object v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+    const-string v1, ": "
 
     .line 186
     .line 187
-    :goto_0
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+    invoke-static {v6, v7, v1, v8, v2}, LUY6;->g(JLjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 188
     .line 189
-    invoke-direct {v1, v3, v4}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
-
     .line 190
+    const-string v1, " \nThe number of dbManager instance is: "
+
     .line 191
     .line 192
-    return-object v1
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 193
-    :pswitch_2
-    check-cast v12, LUne;
-
     .line 194
     .line 195
-    invoke-virtual {v12}, LUne;->g()Z
+    invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 196
     .line 197
     .line 198
-    move-result v1
+    const-string v1, " \nThe initialized dbManagers are: "
 
     .line 199
-    check-cast v11, LBDc;
-
     .line 200
-    .line 201
-    if-eqz v1, :cond_2
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 201
     .line 202
     .line 203
-    invoke-virtual {v11}, LBDc;->c()Z
+    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 204
     .line 205
     .line 206
-    move-result v1
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 207
-    if-eqz v1, :cond_1
-
     .line 208
     .line 209
-    iget-boolean v1, v11, LBDc;->x:Z
+    move-result-object v1
 
     .line 210
-    .line 211
-    if-nez v1, :cond_1
-
-    .line 212
-    .line 213
-    iget-boolean v1, v11, LBDc;->y:Z
-
-    .line 214
-    .line 215
-    if-eqz v1, :cond_1
-
-    .line 216
-    .line 217
-    iget-object v1, v11, LBDc;->d:Li99;
-
-    .line 218
-    .line 219
-    iput-boolean v10, v1, Li99;->o:Z
-
-    .line 220
-    .line 221
-    iget-object v1, v11, LBDc;->c:LLgi;
-
-    .line 222
-    .line 223
-    iput-boolean v10, v1, LLgi;->y:Z
-
-    .line 224
-    .line 225
-    invoke-virtual {v12, v11}, LUne;->f(LBDc;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 226
-    .line 227
-    .line 228
-    move-result-object v1
-
-    .line 229
-    goto :goto_1
-
-    .line 230
-    :cond_1
-    new-instance v1, LwQd;
-
-    .line 231
-    .line 232
-    invoke-direct {v1, v12, v6, v11}, LwQd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 233
-    .line 234
-    .line 235
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
-
-    .line 236
-    .line 237
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
-
-    .line 238
-    .line 239
-    .line 240
-    move-object v1, v2
-
-    .line 241
-    goto :goto_1
-
-    .line 242
-    :cond_2
-    invoke-virtual {v12, v11}, LUne;->f(LBDc;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 243
-    .line 244
-    .line 245
-    move-result-object v1
-
-    .line 246
-    :goto_1
     return-object v1
+.end method
 
-    .line 247
-    :pswitch_3
-    check-cast v12, Ljava/util/List;
+.method public final d()Lkch;
+    .locals 1
 
-    .line 248
-    .line 249
-    check-cast v12, Ljava/lang/Iterable;
+    .line 1
+    iget-object v0, p0, LBT;->c:LREi;
 
-    .line 250
-    .line 251
-    new-instance v1, Ljava/util/ArrayList;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
-    .line 252
-    .line 253
-    invoke-static {v12, v5}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 254
-    .line 255
-    .line 256
+    .line 7
+    check-cast v0, Lkch;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public bridge e()Lkch;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, LBT;->f()Lkch;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public f()Lkch;
+    .locals 15
+
+    .line 1
+    iget-object v1, p0, LBT;->g:LpXg;
+
+    .line 2
+    .line 3
+    new-instance v10, LRoh;
+
+    .line 4
+    .line 5
+    iget-object v0, p0, LBT;->b:Lnmg;
+
+    .line 6
+    .line 7
+    new-instance v2, Lyn4;
+
+    .line 8
+    .line 9
+    iget-object v3, p0, LBT;->j:LkP5;
+
+    .line 10
+    .line 11
+    const/16 v4, 0x9
+
+    .line 12
+    .line 13
+    invoke-direct {v2, v4, v3}, Lyn4;-><init>(ILjava/lang/Object;)V
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object v3, p0, LBT;->l:Lrp0;
+
+    .line 17
+    .line 18
+    const-string v4, "initSqlDriver"
+
+    .line 19
+    .line 20
+    invoke-static {v3, v3, v4}, Lve4;->b(Lrp0;Lrp0;Ljava/lang/String;)Lnp0;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v3
+
+    .line 24
+    new-instance v4, LAT;
+
+    .line 25
+    .line 26
+    const/4 v5, 0x0
+
+    .line 27
+    invoke-direct {v4, p0, v5}, LAT;-><init>(LBT;I)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-direct {v10, v0, v2, v3, v4}, LRoh;-><init>(Lnmg;Lyn4;Lnp0;Lkotlin/jvm/functions/Function0;)V
+
+    .line 31
+    .line 32
+    .line 33
+    sget-object v0, Loch;->a:Ljava/util/List;
+
+    .line 34
+    .line 35
+    iget-object v14, p0, LBT;->e:Landroid/content/Context;
+
+    .line 36
+    .line 37
+    invoke-static {v14}, LMsi;->m(Landroid/content/Context;)Landroid/app/ActivityManager$RunningAppProcessInfo;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    if-eqz v0, :cond_0
+
+    .line 42
+    .line 43
+    iget-object v0, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->processName:Ljava/lang/String;
+
+    .line 44
+    .line 45
+    goto :goto_0
+
+    .line 46
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 47
+    :goto_0
+    invoke-static {v0}, Loch;->c(Ljava/lang/String;)Z
+
+    .line 48
+    .line 49
+    .line 50
     move-result v2
 
-    .line 257
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    .line 51
+    if-eqz v2, :cond_3
 
-    .line 258
-    .line 259
-    .line 260
-    invoke-interface {v12}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    .line 52
+    .line 53
+    invoke-virtual {p0}, LBT;->b()Ljava/lang/String;
 
-    .line 261
-    .line 262
-    .line 263
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    new-instance v2, LoXg;
+
+    .line 58
+    .line 59
+    new-instance v7, LL52;
+
+    .line 60
+    .line 61
+    const/16 v3, 0x1d
+
+    .line 62
+    .line 63
+    invoke-direct {v7, v3}, LL52;-><init>(I)V
+
+    .line 64
+    .line 65
+    .line 66
+    new-instance v8, LQC;
+
+    .line 67
+    .line 68
+    invoke-direct {v8, p0, v10}, LQC;-><init>(LBT;LRoh;)V
+
+    .line 69
+    .line 70
+    .line 71
+    iget-object v4, p0, LBT;->h:LR93;
+
+    .line 72
+    .line 73
+    iget-object v5, p0, LBT;->i:LPh5;
+
+    .line 74
+    .line 75
+    iget-object v3, p0, LBT;->g:LpXg;
+
+    .line 76
+    .line 77
+    move-object v6, v10
+
+    .line 78
+    invoke-direct/range {v2 .. v8}, LoXg;-><init>(LpXg;LR93;LELd;LRoh;LL52;LQC;)V
+
+    .line 79
+    .line 80
+    .line 81
+    new-instance v3, LCAi;
+
+    .line 82
+    .line 83
+    const/4 v7, 0x0
+
+    .line 84
+    const/4 v8, 0x0
+
+    .line 85
+    iget-object v4, p0, LBT;->e:Landroid/content/Context;
+
+    .line 86
+    .line 87
+    move-object v5, v0
+
+    .line 88
+    move-object v6, v2
+
+    .line 89
+    invoke-direct/range {v3 .. v8}, LCAi;-><init>(Landroid/content/Context;Ljava/lang/String;LBAi;ZZ)V
+
+    .line 90
+    .line 91
+    .line 92
+    iget-object v0, p0, LBT;->m:LDAi;
+
+    .line 93
+    .line 94
+    invoke-interface {v0, v3}, LDAi;->create(LCAi;)LEAi;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v3
+
+    .line 98
+    const/4 v0, 0x1
+
+    .line 99
+    invoke-interface {v3, v0}, LEAi;->setWriteAheadLoggingEnabled(Z)V
+
+    .line 100
+    .line 101
+    .line 102
+    :try_start_0
+    new-instance v2, Lkch;
+
+    .line 103
+    .line 104
+    iget-object v5, p0, LBT;->i:LPh5;
+
+    .line 105
+    .line 106
+    iget-object v6, p0, LBT;->h:LR93;
+
+    .line 107
+    .line 108
+    iget-object v7, p0, LBT;->k:LDn4;
+
+    .line 109
+    .line 110
+    iget-boolean v9, p0, LBT;->a:Z
+
+    .line 111
+    .line 112
+    invoke-interface {v1}, LpXg;->b()Ljava/lang/String;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object v11
+
+    .line 116
+    iget-boolean v12, p0, LBT;->n:Z
+
+    .line 117
+    .line 118
+    const/4 v4, 0x0
+
+    .line 119
+    const/4 v8, 0x0
+
+    .line 120
+    const/16 v13, 0x22
+
+    .line 121
+    .line 122
+    invoke-direct/range {v2 .. v13}, Lkch;-><init>(LEAi;LAAi;LELd;LR93;LDn4;IZLRoh;Ljava/lang/String;ZI)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 123
+    .line 124
+    .line 125
+    return-object v2
+
+    .line 126
+    :catch_0
+    move-exception v0
+
+    .line 127
+    move-object v2, v0
+
+    .line 128
+    :goto_1
+    if-eqz v2, :cond_2
+
+    .line 129
+    .line 130
+    instance-of v4, v2, Landroid/database/sqlite/SQLiteDatabaseCorruptException;
+
+    .line 131
+    .line 132
+    if-eqz v4, :cond_1
+
+    .line 133
+    .line 134
+    invoke-interface {v1}, LpXg;->b()Ljava/lang/String;
+
+    .line 135
+    .line 136
+    .line 137
+    move-result-object v0
+
+    .line 138
+    invoke-static {v14, v0}, Loch;->a(Landroid/content/Context;Ljava/lang/String;)V
+
+    .line 139
+    .line 140
+    .line 141
+    :try_start_1
+    new-instance v2, Lkch;
+
+    .line 142
+    .line 143
+    iget-object v5, p0, LBT;->i:LPh5;
+
+    .line 144
+    .line 145
+    iget-object v6, p0, LBT;->h:LR93;
+
+    .line 146
+    .line 147
+    iget-object v7, p0, LBT;->k:LDn4;
+
+    .line 148
+    .line 149
+    iget-boolean v9, p0, LBT;->a:Z
+
+    .line 150
+    .line 151
+    invoke-interface {v1}, LpXg;->b()Ljava/lang/String;
+
+    .line 152
+    .line 153
+    .line 154
+    move-result-object v11
+
+    .line 155
+    iget-boolean v12, p0, LBT;->n:Z
+
+    .line 156
+    .line 157
+    const/4 v4, 0x0
+
+    .line 158
+    const/4 v8, 0x0
+
+    .line 159
+    const/16 v13, 0x22
+
+    .line 160
+    .line 161
+    invoke-direct/range {v2 .. v13}, Lkch;-><init>(LEAi;LAAi;LELd;LR93;LDn4;IZLRoh;Ljava/lang/String;ZI)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 162
+    .line 163
+    .line 164
+    return-object v2
+
+    .line 165
+    :catch_1
+    move-exception v0
+
+    .line 166
+    invoke-virtual {p0, v0}, LBT;->g(Ljava/lang/Exception;)Lop0;
+
+    .line 167
+    .line 168
+    .line 169
+    move-result-object v0
+
+    .line 170
+    throw v0
+
+    .line 171
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 172
+    .line 173
+    .line 174
     move-result-object v2
 
-    .line 264
-    :goto_2
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    .line 175
+    goto :goto_1
 
-    .line 265
-    .line 266
-    .line 267
-    move-result v3
+    .line 176
+    :cond_2
+    invoke-virtual {p0, v0}, LBT;->g(Ljava/lang/Exception;)Lop0;
 
-    .line 268
-    if-eqz v3, :cond_5
+    .line 177
+    .line 178
+    .line 179
+    move-result-object v0
 
-    .line 269
-    .line 270
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 180
+    throw v0
 
-    .line 271
-    .line 272
-    .line 273
-    move-result-object v3
-
-    .line 274
-    check-cast v3, Ljava/lang/String;
-
-    .line 275
-    .line 276
-    move-object v4, v11
-
-    .line 277
-    check-cast v4, LFLd;
-
-    .line 278
-    .line 279
-    iget-object v4, v4, LFLd;->b:Lcuh;
-
-    .line 280
-    .line 281
-    if-eqz v4, :cond_4
-
-    .line 282
-    .line 283
-    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
-
-    .line 284
-    .line 285
-    .line 286
-    move-result v3
-
-    .line 287
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 288
-    .line 289
-    .line 290
-    move-result-object v3
-
-    .line 291
-    iget-object v4, v4, Lcuh;->b:Ljava/util/Map;
-
-    .line 292
-    .line 293
-    invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 294
-    .line 295
-    .line 296
-    move-result-object v3
-
-    .line 297
-    check-cast v3, Ljava/util/List;
-
-    .line 298
-    .line 299
-    if-nez v3, :cond_3
-
-    .line 300
-    .line 301
-    sget-object v3, LsL6;->a:LsL6;
-
-    .line 302
-    .line 303
+    .line 181
     :cond_3
-    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    new-instance v1, Ljava/lang/IllegalStateException;
 
-    .line 304
-    .line 305
-    .line 306
-    goto :goto_2
+    .line 182
+    .line 183
+    const-string v2, "Database accessed from invalid process "
 
-    .line 307
-    :cond_4
-    const-string v1, "state"
+    .line 184
+    .line 185
+    invoke-static {v2, v0}, LJF0;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 308
-    .line 309
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    .line 186
+    .line 187
+    .line 188
+    move-result-object v0
 
-    .line 310
-    .line 311
-    .line 312
-    const/4 v1, 0x0
+    .line 189
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 313
+    .line 190
+    .line 191
+    .line 192
     throw v1
+.end method
 
-    .line 314
-    :cond_5
-    return-object v1
+.method public final g(Ljava/lang/Exception;)Lop0;
+    .locals 6
 
-    .line 315
-    :pswitch_4
-    check-cast v12, LqFc;
+    .line 1
+    new-instance v0, Lop0;
 
-    .line 316
-    .line 317
-    iget-object v1, v12, LqFc;->d:LuFc;
+    .line 2
+    .line 3
+    iget-object v1, p0, LBT;->l:Lrp0;
 
-    .line 318
-    .line 319
-    iget-object v2, v12, LqFc;->a:Ljava/lang/String;
+    .line 4
+    .line 5
+    const-string v2, "initSqlDriver"
 
-    .line 320
-    .line 321
-    if-nez v1, :cond_6
+    .line 6
+    .line 7
+    invoke-static {v1, v1, v2}, Lve4;->b(Lrp0;Lrp0;Ljava/lang/String;)Lnp0;
 
-    .line 322
-    .line 323
-    goto :goto_3
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
 
-    .line 324
-    :cond_6
-    new-instance v3, Ljava/lang/StringBuilder;
+    .line 11
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
-    .line 325
-    .line 326
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 327
-    .line 328
-    .line 329
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 330
-    .line 331
-    .line 332
-    const-string v2, "_"
-
-    .line 333
-    .line 334
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 335
-    .line 336
-    .line 337
-    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 338
-    .line 339
-    .line 340
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 341
-    .line 342
-    .line 343
+    .line 12
+    .line 13
+    .line 14
     move-result-object v2
 
-    .line 344
-    :goto_3
-    check-cast v11, LqDc;
+    .line 15
+    invoke-virtual {v2}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
-    .line 345
-    .line 346
-    iget-object v1, v11, LqDc;->t:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 347
-    .line 348
-    invoke-virtual {v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 349
-    .line 350
-    .line 351
-    move-result-object v1
-
-    .line 352
-    check-cast v1, Ljava/lang/Integer;
-
-    .line 353
-    .line 354
-    if-eqz v1, :cond_7
-
-    .line 355
-    .line 356
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    .line 357
-    .line 358
-    .line 359
-    move-result v1
-
-    .line 360
-    iget-object v2, v11, LqDc;->a:Lpg4;
-
-    .line 361
-    .line 362
-    invoke-virtual {v2, v1}, Lpg4;->a(I)V
-
-    .line 363
-    .line 364
-    .line 365
-    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 366
-    .line 367
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
-    .line 368
-    .line 369
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
-    .line 370
-    .line 371
-    .line 372
-    goto :goto_4
-
-    .line 373
-    :cond_7
-    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 374
-    .line 375
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
-    .line 376
-    .line 377
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
-    .line 378
-    .line 379
-    .line 380
-    :goto_4
-    return-object v2
-
-    .line 381
-    :pswitch_5
-    check-cast v12, LTqc;
-
-    .line 382
-    .line 383
-    invoke-virtual {v12}, LTqc;->q()LcSa;
-
-    .line 384
-    .line 385
-    .line 386
-    move-result-object v1
-
-    .line 387
-    if-eqz v1, :cond_8
-
-    .line 388
-    .line 389
-    check-cast v11, LcSa;
-
-    .line 390
-    .line 391
-    invoke-virtual {v1, v11}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 392
-    .line 393
-    .line 394
-    move-result v1
-
-    .line 395
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 396
-    .line 397
-    .line 398
-    move-result-object v1
-
-    .line 399
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
-    .line 400
-    .line 401
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
-
-    .line 402
-    .line 403
-    .line 404
-    goto :goto_5
-
-    .line 405
-    :cond_8
-    sget-object v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
-
-    .line 406
-    .line 407
-    :goto_5
-    return-object v2
-
-    .line 408
-    :pswitch_6
-    check-cast v12, LMVb;
-
-    .line 409
-    .line 410
-    invoke-static {v12}, LnEd;->w(LMVb;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableSwitchIfEmpty;
-
-    .line 411
-    .line 412
-    .line 413
-    move-result-object v1
-
-    .line 414
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
-
-    .line 415
-    .line 416
-    .line 417
-    move-result-object v1
-
-    .line 418
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 419
-    .line 420
-    .line 421
-    move-result-object v1
-
-    .line 422
-    check-cast v11, LnR8;
-
-    .line 423
-    .line 424
-    iget-object v2, v11, LnR8;->b:Lnn9;
-
-    .line 425
-    .line 426
-    iget-object v2, v2, Lnn9;->a:Ljava/lang/Object;
-
-    .line 427
-    .line 428
-    check-cast v2, Lm52;
-
-    .line 429
-    .line 430
-    invoke-virtual {v2}, Lm52;->e()Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 431
-    .line 432
-    .line 433
+    .line 16
+    .line 17
+    .line 18
     move-result-object v2
 
-    .line 434
-    sget-object v6, LXS5;->u0:LXS5;
+    .line 19
+    invoke-virtual {p0}, LBT;->c()Ljava/lang/String;
 
-    .line 435
-    .line 436
-    new-instance v13, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 437
-    .line 438
-    invoke-direct {v13, v2, v6}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 439
-    .line 440
-    .line 441
-    invoke-virtual {v13}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
-
-    .line 442
-    .line 443
-    .line 444
-    move-result-object v2
-
-    .line 445
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 446
-    .line 447
-    .line 448
-    move-result-object v2
-
-    .line 449
-    new-instance v6, LG78;
-
-    .line 450
-    .line 451
-    const/16 v13, 0x1a
-
-    .line 452
-    .line 453
-    invoke-direct {v6, v11, v13, v2}, LG78;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 454
-    .line 455
-    .line 456
-    invoke-virtual {v1, v6}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 457
-    .line 458
-    .line 459
-    move-result-object v6
-
-    .line 460
-    new-instance v13, LbE8;
-
-    .line 461
-    .line 462
-    invoke-direct {v13, v12, v5, v11}, LbE8;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 463
-    .line 464
-    .line 465
-    invoke-virtual {v1, v13}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 466
-    .line 467
-    .line 468
-    move-result-object v1
-
-    .line 469
-    sget-object v5, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
-
-    .line 470
-    .line 471
-    iget-object v12, v11, LnR8;->i:LXfi;
-
-    .line 472
-    .line 473
-    invoke-virtual {v12}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 474
-    .line 475
-    .line 476
-    move-result-object v12
-
-    .line 477
-    check-cast v12, LkQ8;
-
-    .line 478
-    .line 479
-    invoke-virtual {v12}, LkQ8;->a()Lio/reactivex/rxjava3/core/Observable;
-
-    .line 480
-    .line 481
-    .line 482
-    move-result-object v12
-
-    .line 483
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 484
-    .line 485
-    .line 486
-    invoke-static {v12, v2}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 487
-    .line 488
-    .line 489
-    move-result-object v2
-
-    .line 490
-    new-instance v5, LgL8;
-
-    .line 491
-    .line 492
-    invoke-direct {v5, v4, v11}, LgL8;-><init>(ILjava/lang/Object;)V
-
-    .line 493
-    .line 494
-    .line 495
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 496
-    .line 497
-    invoke-direct {v4, v2, v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 498
-    .line 499
-    .line 500
-    new-array v2, v9, [Lio/reactivex/rxjava3/core/Observable;
-
-    .line 501
-    .line 502
-    aput-object v6, v2, v8
-
-    .line 503
-    .line 504
-    aput-object v1, v2, v10
-
-    .line 505
-    .line 506
-    aput-object v4, v2, v7
-
-    .line 507
-    .line 508
-    new-instance v1, Ljava/util/ArrayList;
-
-    .line 509
-    .line 510
-    invoke-direct {v1, v9}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 511
-    .line 512
-    .line 513
-    :goto_6
-    if-ge v8, v9, :cond_9
-
-    .line 514
-    .line 515
-    aget-object v4, v2, v8
-
-    .line 516
-    .line 517
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 518
-    .line 519
-    .line 520
-    sget-object v5, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
-
-    .line 521
-    .line 522
-    invoke-virtual {v4, v5}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
-    .line 523
-    .line 524
-    .line 525
-    move-result-object v4
-
-    .line 526
-    sget-object v5, LOS5;->u0:LOS5;
-
-    .line 527
-    .line 528
-    new-instance v6, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 529
-    .line 530
-    invoke-direct {v6, v4, v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 531
-    .line 532
-    .line 533
-    invoke-virtual {v6, v3}, Lio/reactivex/rxjava3/core/Observable;->J0(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 534
-    .line 535
-    .line 536
-    move-result-object v4
-
-    .line 537
-    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 538
-    .line 539
-    .line 540
-    add-int/2addr v8, v10
-
-    .line 541
-    goto :goto_6
-
-    .line 542
-    :cond_9
-    sget-object v2, LWS5;->u0:LWS5;
-
-    .line 543
-    .line 544
-    invoke-static {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->x(Ljava/lang/Iterable;Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCombineLatest;
-
-    .line 545
-    .line 546
-    .line 547
-    move-result-object v1
-
-    .line 548
-    return-object v1
-
-    .line 549
-    :pswitch_7
-    sget-object v3, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
-
-    .line 550
-    .line 551
-    check-cast v12, LvG4;
-
-    .line 552
-    .line 553
-    invoke-virtual {v12}, LvG4;->get()Ljava/lang/Object;
-
-    .line 554
-    .line 555
-    .line 556
+    .line 20
+    .line 21
+    .line 22
     move-result-object v3
 
-    .line 557
-    check-cast v3, Le03;
+    .line 23
+    const-string v4, "Threading info: "
 
-    .line 558
-    .line 559
-    sget-object v5, LKU1;->L0:LKU1;
+    .line 24
+    .line 25
+    const-string v5, " can not open database. the db info "
 
-    .line 560
-    .line 561
-    new-instance v12, LU8f;
+    .line 26
+    .line 27
+    invoke-static {v4, v2, v5, v3}, LBv7;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 562
-    .line 563
-    invoke-direct {v12}, LU8f;-><init>()V
-
-    .line 564
-    .line 565
-    .line 566
-    sget-object v13, LJ03;->a:LQd7;
-
-    .line 567
-    .line 568
-    invoke-interface {v3, v5, v12, v13}, Le03;->v(LBI3;Lo17;LQd7;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 569
-    .line 570
-    .line 571
+    .line 28
+    .line 29
+    .line 30
     move-result-object v3
 
-    .line 572
-    sget-object v5, LKU1;->M0:LKU1;
-
-    .line 573
-    .line 574
-    check-cast v11, LpC3;
-
-    .line 575
-    .line 576
-    invoke-interface {v11, v5}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 577
-    .line 578
-    .line 579
-    move-result-object v5
-
-    .line 580
-    sget-object v12, LKU1;->C4:LKU1;
-
-    .line 581
-    .line 582
-    invoke-interface {v11, v12}, LpC3;->r(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 583
-    .line 584
-    .line 585
-    move-result-object v12
-
-    .line 586
-    sget-object v13, LKU1;->p5:LKU1;
-
-    .line 587
-    .line 588
-    invoke-interface {v11, v13}, LpC3;->r(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 589
-    .line 590
-    .line 591
-    move-result-object v13
-
-    .line 592
-    sget-object v14, LKU1;->q5:LKU1;
-
-    .line 593
-    .line 594
-    invoke-interface {v11, v14}, LpC3;->r(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 595
-    .line 596
-    .line 597
-    move-result-object v14
-
-    .line 598
-    sget-object v15, LKU1;->r5:LKU1;
-
-    .line 599
-    .line 600
-    invoke-interface {v11, v15}, LpC3;->w(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 601
-    .line 602
-    .line 603
-    move-result-object v15
-
-    .line 604
-    const/16 v16, 0x6
-
-    .line 605
-    .line 606
-    sget-object v4, LKU1;->s5:LKU1;
-
-    .line 607
-    .line 608
-    invoke-interface {v11, v4}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 609
-    .line 610
-    .line 611
-    move-result-object v4
-
-    .line 612
-    const/16 v17, 0x0
-
-    .line 613
-    .line 614
-    sget-object v8, LKU1;->Z5:LKU1;
-
-    .line 615
-    .line 616
-    invoke-interface {v11, v8}, LpC3;->j(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 617
-    .line 618
-    .line 619
-    move-result-object v8
-
-    .line 620
-    sget-object v11, LIR5;->l0:LIR5;
-
-    .line 621
-    .line 622
-    const/16 v18, 0x5
-
-    .line 623
-    .line 624
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
-    .line 625
-    .line 626
-    invoke-direct {v1, v8, v11}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 627
-    .line 628
-    .line 629
-    new-instance v8, Lo2j;
-
-    .line 630
-    .line 631
-    invoke-direct {v8, v6}, Lo2j;-><init>(I)V
-
-    .line 632
-    .line 633
-    .line 634
-    invoke-static {v8}, Lio/reactivex/rxjava3/internal/functions/Functions;->s(Lio/reactivex/rxjava3/functions/Function8;)Lio/reactivex/rxjava3/functions/Function;
-
-    .line 635
-    .line 636
-    .line 637
-    move-result-object v6
-
-    .line 638
-    const/16 v8, 0x8
-
-    .line 639
-    .line 640
-    new-array v8, v8, [Lio/reactivex/rxjava3/core/SingleSource;
-
-    .line 641
-    .line 642
-    aput-object v3, v8, v17
-
-    .line 643
-    .line 644
-    aput-object v5, v8, v10
-
-    .line 645
-    .line 646
-    aput-object v12, v8, v7
-
-    .line 647
-    .line 648
-    aput-object v13, v8, v9
-
-    .line 649
-    .line 650
-    aput-object v14, v8, v2
-
-    .line 651
-    .line 652
-    aput-object v15, v8, v18
-
-    .line 653
-    .line 654
-    aput-object v4, v8, v16
-
-    .line 655
-    .line 656
-    const/4 v2, 0x7
-
-    .line 657
-    aput-object v1, v8, v2
-
-    .line 658
-    .line 659
-    invoke-static {v6, v8}, Lio/reactivex/rxjava3/core/Single;->K(Lio/reactivex/rxjava3/functions/Function;[Lio/reactivex/rxjava3/core/SingleSource;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 660
-    .line 661
-    .line 662
-    move-result-object v1
-
-    .line 663
-    return-object v1
-
-    .line 664
-    :pswitch_8
-    check-cast v12, Lbke;
-
-    .line 665
-    .line 666
-    invoke-interface {v12}, Lbke;->get()Ljava/lang/Object;
-
-    .line 667
-    .line 668
-    .line 669
-    move-result-object v1
-
-    .line 670
-    check-cast v1, LCT1;
-
-    .line 671
-    .line 672
-    invoke-interface {v1}, LCT1;->observe()Lio/reactivex/rxjava3/core/Observable;
-
-    .line 673
-    .line 674
-    .line 675
-    move-result-object v1
-
-    .line 676
-    sget-object v2, LRu7;->c:LRu7;
-
-    .line 677
-    .line 678
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 679
-    .line 680
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 681
-    .line 682
-    .line 683
-    check-cast v11, Ljw7;
-
-    .line 684
-    .line 685
-    iget-object v1, v11, Ljw7;->n:LBre;
-
-    .line 686
-    .line 687
-    invoke-virtual {v1}, LBre;->d()LF06;
-
-    .line 688
-    .line 689
-    .line 690
-    move-result-object v1
-
-    .line 691
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
-
-    .line 692
-    .line 693
-    invoke-direct {v2, v3, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 694
-    .line 695
-    .line 696
-    return-object v2
-
-    .line 697
-    :pswitch_9
-    check-cast v12, LIT5;
-
-    .line 698
-    .line 699
-    check-cast v11, Lj2j;
-
-    .line 700
-    .line 701
-    invoke-virtual {v12, v11}, LIT5;->i(Lj2j;)Lio/reactivex/rxjava3/subjects/Subject;
-
-    .line 702
-    .line 703
-    .line 704
-    move-result-object v1
-
-    .line 705
-    return-object v1
-
-    .line 706
-    :pswitch_a
-    const/16 v18, 0x5
-
-    .line 707
-    .line 708
-    check-cast v12, Ln03;
-
-    .line 709
-    .line 710
-    invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 711
-    .line 712
-    .line 713
-    check-cast v11, LBI3;
-
-    .line 714
-    .line 715
-    invoke-interface {v11}, LBI3;->j()LAI3;
-
-    .line 716
-    .line 717
-    .line 718
-    move-result-object v1
-
-    .line 719
-    iget-object v1, v1, LAI3;->b:LDI3;
-
-    .line 720
-    .line 721
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 722
-    .line 723
-    .line 724
-    move-result v1
-
-    .line 725
-    if-eqz v1, :cond_f
-
-    .line 726
-    .line 727
-    if-eq v1, v10, :cond_e
-
-    .line 728
-    .line 729
-    if-eq v1, v7, :cond_d
-
-    .line 730
-    .line 731
-    if-eq v1, v9, :cond_c
-
-    .line 732
-    .line 733
-    if-eq v1, v2, :cond_b
-
-    .line 734
-    .line 735
-    const/4 v2, 0x5
-
-    .line 736
-    if-eq v1, v2, :cond_a
-
-    .line 737
-    .line 738
-    goto :goto_7
-
-    .line 739
-    :cond_a
-    invoke-virtual {v12, v11}, Ln03;->f(LBI3;)Lm3d;
-
-    .line 740
-    .line 741
-    .line 742
-    move-result-object v3
-
-    .line 743
-    goto :goto_7
-
-    .line 744
-    :cond_b
-    invoke-virtual {v12, v11}, Ln03;->g(LBI3;)Lm3d;
-
-    .line 745
-    .line 746
-    .line 747
-    move-result-object v3
-
-    .line 748
-    goto :goto_7
-
-    .line 749
-    :cond_c
-    invoke-virtual {v12, v11}, Ln03;->b(LBI3;)Lm3d;
-
-    .line 750
-    .line 751
-    .line 752
-    move-result-object v3
-
-    .line 753
-    goto :goto_7
-
-    .line 754
-    :cond_d
-    invoke-virtual {v12, v11}, Ln03;->c(LBI3;)Lm3d;
-
-    .line 755
-    .line 756
-    .line 757
-    move-result-object v3
-
-    .line 758
-    goto :goto_7
-
-    .line 759
-    :cond_e
-    invoke-virtual {v12, v11}, Ln03;->d(LBI3;)Lm3d;
-
-    .line 760
-    .line 761
-    .line 762
-    move-result-object v3
-
-    .line 763
-    goto :goto_7
-
-    .line 764
-    :cond_f
-    invoke-virtual {v12, v11}, Ln03;->a(LBI3;)Lm3d;
-
-    .line 765
-    .line 766
-    .line 767
-    move-result-object v3
-
-    .line 768
-    :goto_7
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
-    .line 769
-    .line 770
-    invoke-direct {v1, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
-
-    .line 771
-    .line 772
-    .line 773
-    return-object v1
-
-    .line 774
-    :pswitch_b
-    check-cast v12, LVZj;
-
-    .line 775
-    .line 776
-    iget-object v1, v12, LVZj;->c:Ljava/lang/Object;
-
-    .line 777
-    .line 778
-    check-cast v1, Landroid/content/UriMatcher;
-
-    .line 779
-    .line 780
-    check-cast v11, Landroid/net/Uri;
-
-    .line 781
-    .line 782
-    invoke-virtual {v1, v11}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
-
-    .line 783
-    .line 784
-    .line 785
-    move-result v1
-
-    .line 786
-    const/4 v2, -0x1
-
-    .line 787
-    if-eq v1, v2, :cond_10
-
-    .line 788
-    .line 789
-    iget-object v2, v12, LVZj;->b:Ljava/lang/Object;
-
-    .line 790
-    .line 791
-    check-cast v2, Ljava/util/List;
-
-    .line 792
-    .line 793
-    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 794
-    .line 795
-    .line 796
-    move-result-object v1
-
-    .line 797
-    check-cast v1, Ljava/util/Map$Entry;
-
-    .line 798
-    .line 799
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    .line 800
-    .line 801
-    .line 802
-    move-result-object v1
-
-    .line 803
-    check-cast v1, Lio/reactivex/rxjava3/core/Single;
-
-    .line 804
-    .line 805
-    return-object v1
-
-    .line 806
-    :cond_10
-    new-instance v1, Ljava/io/FileNotFoundException;
-
-    .line 807
-    .line 808
-    const-string v2, "No uri handler found for "
-
-    .line 809
-    .line 810
-    invoke-static {v11, v2}, LDM4;->o(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 811
-    .line 812
-    .line 813
-    move-result-object v2
-
-    .line 814
-    invoke-direct {v1, v2}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
-
-    .line 815
-    .line 816
-    .line 817
-    throw v1
-
-    .line 818
-    nop
-
-    .line 819
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 31
+    const/16 v5, 0x8
+
+    .line 32
+    .line 33
+    const/4 v4, 0x0
+
+    .line 34
+    move-object v2, p1
+
+    .line 35
+    invoke-direct/range {v0 .. v5}, Lop0;-><init>(Lnp0;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/Long;I)V
+
+    .line 36
+    .line 37
+    .line 38
+    return-object v0
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
 .field public final c:Z
 
@@ -12,20 +12,20 @@
 
 .field public final e:Ljava/util/List;
 
-.field public final f:Lmyd;
+.field public final f:LxPd;
 
 
 # direct methods
-.method public constructor <init>(LdXc;ZZLjava/util/List;Lmyd;)V
+.method public constructor <init>(LYbd;ZZLjava/util/List;LxPd;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LdXc;
+    iput-object p1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LYbd;
 
     .line 5
     .line 6
@@ -41,7 +41,7 @@
 
     .line 11
     .line 12
-    iput-object p5, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:Lmyd;
+    iput-object p5, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:LxPd;
 
     .line 13
     .line 14
@@ -50,11 +50,11 @@
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LYbd;
 
     .line 2
     .line 3
@@ -82,11 +82,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;
 
-    iget-object v1, p1, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LdXc;
+    iget-object v1, p1, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LYbd;
 
-    iget-object v3, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LdXc;
+    iget-object v3, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LYbd;
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -117,7 +117,7 @@
 
     iget-object v3, p1, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->e:Ljava/util/List;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -126,9 +126,9 @@
     return v2
 
     :cond_5
-    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:Lmyd;
+    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:LxPd;
 
-    iget-object p1, p1, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:Lmyd;
+    iget-object p1, p1, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:LxPd;
 
     if-eq v1, p1, :cond_6
 
@@ -142,11 +142,11 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LYbd;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     .line 4
     .line 5
@@ -222,7 +222,7 @@
 
     .line 37
     .line 38
-    invoke-static {v0, v1, v2}, LYHe;->e(IILjava/util/List;)I
+    invoke-static {v0, v1, v2}, LmBe;->c(IILjava/util/List;)I
 
     .line 39
     .line 40
@@ -230,7 +230,7 @@
     move-result v0
 
     .line 42
-    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:Lmyd;
+    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:LxPd;
 
     .line 43
     .line 44
@@ -257,7 +257,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -289,7 +289,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:Lmyd;
+    iget-object v1, p0, Lcom/snap/opera/events/VideoEvents$BufferingEventsCollected;->f:LxPd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

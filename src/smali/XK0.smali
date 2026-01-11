@@ -2,345 +2,325 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/util/UUID;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final b:J
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final c:Z
+
+.field public final d:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
+.method public constructor <init>(Ljava/util/UUID;JZZ)V
     .locals 0
 
     .line 1
-    iput p2, p0, LXK0;->a:I
-
-    iput-object p1, p0, LXK0;->b:Ljava/lang/Object;
-
-    iput-object p3, p0, LXK0;->c:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LXK0;->a:Ljava/util/UUID;
+
+    .line 5
+    .line 6
+    iput-wide p2, p0, LXK0;->b:J
+
+    .line 7
+    .line 8
+    iput-boolean p4, p0, LXK0;->c:Z
+
+    .line 9
+    .line 10
+    iput-boolean p5, p0, LXK0;->d:Z
+
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 6
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 5
 
     .line 1
-    iget v0, p0, LXK0;->a:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, LXK0;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, LXK0;
+
+    .line 10
+    .line 11
+    iget-object v0, p1, LXK0;->a:Ljava/util/UUID;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LXK0;->a:Ljava/util/UUID;
+
+    .line 14
+    .line 15
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_2
+    iget-wide v0, p0, LXK0;->b:J
+
+    .line 23
+    .line 24
+    iget-wide v2, p1, LXK0;->b:J
+
+    .line 25
+    .line 26
+    cmp-long v4, v0, v2
+
+    .line 27
+    .line 28
+    if-eqz v4, :cond_3
+
+    .line 29
+    .line 30
+    goto :goto_0
+
+    .line 31
+    :cond_3
+    iget-boolean v0, p0, LXK0;->c:Z
+
+    .line 32
+    .line 33
+    iget-boolean v1, p1, LXK0;->c:Z
+
+    .line 34
+    .line 35
+    if-eq v0, v1, :cond_4
+
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_4
+    iget-boolean v0, p0, LXK0;->d:Z
+
+    .line 39
+    .line 40
+    iget-boolean p1, p1, LXK0;->d:Z
+
+    .line 41
+    .line 42
+    if-eq v0, p1, :cond_5
+
+    .line 43
+    .line 44
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 45
+    return p1
+
+    .line 46
+    :cond_5
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 47
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LXK0;->a:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/UUID;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    iget-object p1, p0, LXK0;->b:Ljava/lang/Object;
+    move-result v0
 
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
-    check-cast p1, Lbmh;
-
     .line 9
+    iget-wide v1, p0, LXK0;->b:J
+
     .line 10
-    iget-object p1, p1, Lbmh;->a:LyH0;
-
     .line 11
-    .line 12
-    iget-object v0, p0, LXK0;->c:Ljava/lang/Object;
+    invoke-static {v1, v2}, LTu7;->e(J)I
 
+    .line 12
     .line 13
     .line 14
-    check-cast v0, LPH0;
+    move-result v1
 
     .line 15
+    add-int/2addr v1, v0
+
     .line 16
-    const/4 v1, 0x2
+    mul-int/lit8 v1, v1, 0x1f
 
     .line 17
-    invoke-virtual {p1, v1, v0}, LyH0;->a(ILPH0;)V
-
     .line 18
+    iget-boolean v0, p0, LXK0;->c:Z
+
     .line 19
     .line 20
-    return-void
+    invoke-static {v0}, LTu7;->h(Z)I
 
     .line 21
-    :pswitch_0
-    iget-object v0, p0, LXK0;->b:Ljava/lang/Object;
-
     .line 22
     .line 23
-    check-cast v0, LDxc;
+    move-result v0
 
     .line 24
+    add-int/2addr v0, v1
+
     .line 25
-    iget-object v1, v0, LDxc;->a:LTqc;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 26
     .line 27
-    invoke-virtual {v1}, LTqc;->q()LcSa;
+    iget-boolean v1, p0, LXK0;->d:Z
 
     .line 28
     .line 29
+    invoke-static {v1}, LTu7;->h(Z)I
+
     .line 30
-    move-result-object v1
+    .line 31
+    .line 32
+    move-result v1
+
+    .line 33
+    add-int/2addr v1, v0
+
+    .line 34
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "BandwidthSample(uuid="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LXK0;->a:Ljava/util/UUID;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", contentLength="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-wide v1, p0, LXK0;->b:J
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", isStart="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-boolean v1, p0, LXK0;->c:Z
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 31
-    iget-object v2, p0, LXK0;->c:Ljava/lang/Object;
-
     .line 32
     .line 33
-    check-cast v2, LMpc;
+    const-string v1, ", isClosed="
 
     .line 34
     .line 35
-    iget-object v3, v2, LMpc;->a:LcSa;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
     .line 37
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 38
+    iget-boolean v1, p0, LXK0;->d:Z
+
     .line 39
     .line 40
-    move-result v1
+    const-string v2, ")"
 
     .line 41
-    if-eqz v1, :cond_0
-
     .line 42
-    .line 43
-    iget-object v0, v0, LDxc;->o0:Ljava/util/LinkedHashMap;
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
+    .line 43
     .line 44
     .line 45
-    iget-object v1, v2, LMpc;->a:LcSa;
+    move-result-object v0
 
     .line 46
-    .line 47
-    invoke-virtual {v0, v1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v0
-
-    .line 51
-    check-cast v0, Landroid/view/View$OnClickListener;
-
-    .line 52
-    .line 53
-    if-eqz v0, :cond_1
-
-    .line 54
-    .line 55
-    invoke-interface {v0, p1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
-
-    .line 56
-    .line 57
-    .line 58
-    goto :goto_0
-
-    .line 59
-    :cond_0
-    iget-object p1, v0, LDxc;->b:Lbxc;
-
-    .line 60
-    .line 61
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 62
-    .line 63
-    .line 64
-    new-instance p1, Lds3;
-
-    .line 65
-    .line 66
-    iget-object v1, v2, LMpc;->n:LrE9;
-
-    .line 67
-    .line 68
-    invoke-interface {v1}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v1
-
-    .line 72
-    check-cast v1, LOpc;
-
-    .line 73
-    .line 74
-    invoke-direct {p1, v1}, Lds3;-><init>(LOpc;)V
-
-    .line 75
-    .line 76
-    .line 77
-    iget-object v0, v0, LDxc;->a:LTqc;
-
-    .line 78
-    .line 79
-    invoke-virtual {v0, p1}, LTqc;->x(LOpc;)V
-
-    .line 80
-    .line 81
-    .line 82
-    :cond_1
-    :goto_0
-    return-void
-
-    .line 83
-    :pswitch_1
-    iget-object v0, p0, LXK0;->b:Ljava/lang/Object;
-
-    .line 84
-    .line 85
-    check-cast v0, Lm3d;
-
-    .line 86
-    .line 87
-    invoke-virtual {v0}, Lm3d;->i()Ljava/lang/Object;
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v0
-
-    .line 91
-    check-cast v0, Landroid/view/View$OnClickListener;
-
-    .line 92
-    .line 93
-    if-eqz v0, :cond_2
-
-    .line 94
-    .line 95
-    invoke-interface {v0, p1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
-
-    .line 96
-    .line 97
-    .line 98
-    :cond_2
-    iget-object v0, p0, LXK0;->c:Ljava/lang/Object;
-
-    .line 99
-    .line 100
-    check-cast v0, LXK0;
-
-    .line 101
-    .line 102
-    invoke-virtual {v0, p1}, LXK0;->onClick(Landroid/view/View;)V
-
-    .line 103
-    .line 104
-    .line 105
-    return-void
-
-    .line 106
-    :pswitch_2
-    iget-object p1, p0, LXK0;->b:Ljava/lang/Object;
-
-    .line 107
-    .line 108
-    check-cast p1, Ljxc;
-
-    .line 109
-    .line 110
-    iget-object p1, p1, Ljxc;->x:LJ7d;
-
-    .line 111
-    .line 112
-    new-instance v0, LMy;
-
-    .line 113
-    .line 114
-    iget-object v1, p0, LXK0;->c:Ljava/lang/Object;
-
-    .line 115
-    .line 116
-    check-cast v1, LeJ0;
-
-    .line 117
-    .line 118
-    iget-object v2, v1, LeJ0;->f:LlL7;
-
-    .line 119
-    .line 120
-    const/4 v3, 0x0
-
-    .line 121
-    const/4 v4, 0x0
-
-    .line 122
-    const/4 v1, 0x0
-
-    .line 123
-    const/16 v5, 0x7b
-
-    .line 124
-    .line 125
-    invoke-direct/range {v0 .. v5}, LMy;-><init>(ILlL7;LQf5;Ljava/lang/String;I)V
-
-    .line 126
-    .line 127
-    .line 128
-    invoke-interface {p1, v0}, LJ7d;->b(Ljava/lang/Object;)V
-
-    .line 129
-    .line 130
-    .line 131
-    return-void
-
-    .line 132
-    :pswitch_3
-    iget-object p1, p0, LXK0;->c:Ljava/lang/Object;
-
-    .line 133
-    .line 134
-    check-cast p1, LSK0;
-
-    .line 135
-    .line 136
-    check-cast p1, LRK0;
-
-    .line 137
-    .line 138
-    iget-object v0, p0, LXK0;->b:Ljava/lang/Object;
-
-    .line 139
-    .line 140
-    check-cast v0, LZK0;
-
-    .line 141
-    .line 142
-    invoke-virtual {v0, p1}, LZK0;->g(LRK0;)V
-
-    .line 143
-    .line 144
-    .line 145
-    return-void
-
-    .line 146
-    nop
-
-    .line 147
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

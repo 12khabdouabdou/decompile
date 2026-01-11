@@ -2,219 +2,270 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
+
 
 # instance fields
-.field public final a:LTg6;
+.field public final synthetic a:I
 
-.field public final b:Ljava/util/List;
+.field public final synthetic b:LLk6;
+
+.field public final synthetic c:Ln7i;
 
 
 # direct methods
-.method public constructor <init>(LTg6;Ljava/util/List;)V
+.method public synthetic constructor <init>(LLk6;Ln7i;I)V
     .locals 0
 
     .line 1
+    iput p3, p0, LGk6;->a:I
+
+    iput-object p1, p0, LGk6;->b:LLk6;
+
+    iput-object p2, p0, LGk6;->c:Ln7i;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+.method public constructor <init>(Ln7i;LLk6;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, LGk6;->a:I
+
     .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LGk6;->a:LTg6;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LGk6;->b:Ljava/util/List;
+    iput-object p1, p0, LGk6;->c:Ln7i;
 
-    .line 7
-    .line 8
+    iput-object p2, p0, LGk6;->b:LLk6;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LGk6;->a:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LGk6;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    check-cast p1, Ljava/util/List;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    iget-object v0, p0, LGk6;->b:LLk6;
 
     .line 9
     .line 10
-    return v2
+    iget-object v0, v0, LLk6;->o:LJp0;
 
     .line 11
-    :cond_1
-    check-cast p1, LGk6;
-
     .line 12
+    new-instance v1, LEMg;
+
     .line 13
-    iget-object v1, p1, LGk6;->a:LTg6;
-
     .line 14
+    sget-object v2, Lok6;->g:Lmk6;
+
     .line 15
-    iget-object v3, p0, LGk6;->a:LTg6;
-
     .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1}, Lnzk;->c(Ljava/util/List;)LEAa;
 
+    .line 17
     .line 18
     .line 19
+    move-result-object v3
+
     .line 20
-    move-result v1
+    iget-object v7, p0, LGk6;->c:Ln7i;
 
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
+    const/4 v8, 0x0
+
     .line 23
-    return v2
+    const/16 v10, 0x180
 
     .line 24
-    :cond_2
-    iget-object v1, p0, LGk6;->b:Ljava/util/List;
-
     .line 25
+    const/4 v4, 0x0
+
     .line 26
-    iget-object p1, p1, LGk6;->b:Ljava/util/List;
+    const/4 v5, 0x0
 
     .line 27
+    const/4 v6, 0x0
+
     .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const/4 v9, 0x0
 
     .line 29
+    invoke-direct/range {v1 .. v10}, LEMg;-><init>(Lmk6;LmZf;LN73;LAri;ILn7i;ZLjava/util/List;I)V
+
     .line 30
     .line 31
-    move-result p1
-
     .line 32
-    if-nez p1, :cond_3
+    return-object v1
 
     .line 33
+    :pswitch_0
+    check-cast p1, LhN1;
+
     .line 34
-    return v2
-
     .line 35
-    :cond_3
-    return v0
-.end method
+    iget-object v0, p1, LhN1;->a:LfN1;
 
-.method public final hashCode()I
-    .locals 2
+    .line 36
+    .line 37
+    iget-wide v1, p1, LhN1;->b:J
 
-    .line 1
-    iget-object v0, p0, LGk6;->a:LTg6;
+    .line 38
+    .line 39
+    iget-object p1, p0, LGk6;->b:LLk6;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LTg6;->hashCode()I
+    .line 40
+    .line 41
+    iget-object v3, p0, LGk6;->c:Ln7i;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 42
+    .line 43
+    invoke-static {p1, v3, v0, v1, v2}, LLk6;->b(LLk6;Ln7i;LfN1;J)V
 
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    .line 44
+    .line 45
+    .line 46
+    invoke-static {p1, v0, v3}, LLk6;->a(LLk6;LfN1;Ln7i;)Lio/reactivex/rxjava3/core/Observable;
 
-    .line 8
-    .line 9
-    iget-object v1, p0, LGk6;->b:Ljava/util/List;
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p1
 
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    .line 50
+    return-object p1
 
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
+    .line 51
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
 
-    .line 15
-    add-int/2addr v1, v0
+    .line 52
+    .line 53
+    iget-object p1, p0, LGk6;->c:Ln7i;
 
-    .line 16
-    return v1
-.end method
+    .line 54
+    .line 55
+    iget-boolean v0, p1, Ln7i;->i:Z
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    .line 56
+    .line 57
+    if-eqz v0, :cond_0
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 58
+    .line 59
+    new-instance v0, LO5i;
 
-    .line 2
-    .line 3
-    const-string v1, "SectionData(section="
+    .line 60
+    .line 61
+    new-instance v1, Ljava/util/LinkedHashMap;
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 62
+    .line 63
+    invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LGk6;->a:LTg6;
+    .line 64
+    .line 65
+    .line 66
+    invoke-direct {v0, v1, p1}, LO5i;-><init>(Ljava/util/LinkedHashMap;Ln7i;)V
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 67
+    .line 68
+    .line 69
+    new-instance p1, LAk6;
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", dataModels="
+    .line 70
+    .line 71
+    const/4 v1, 0x1
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 72
+    invoke-direct {p1, v1, v0}, LAk6;-><init>(ZLO5i;)V
 
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LGk6;->b:Ljava/util/List;
+    .line 73
+    .line 74
+    .line 75
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 76
+    .line 77
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
+    .line 78
+    .line 79
+    .line 80
+    goto :goto_0
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 81
+    :cond_0
+    iget-object v0, p0, LGk6;->b:LLk6;
 
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 82
+    .line 83
+    iget-object v1, v0, LLk6;->o:LJp0;
 
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
+    .line 84
+    .line 85
+    invoke-virtual {v0, p1}, LLk6;->h(Ln7i;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
 
-    .line 32
+    .line 86
+    .line 87
+    .line 88
+    move-result-object p1
+
+    .line 89
+    new-instance v1, Ls1j;
+
+    .line 90
+    .line 91
+    const/16 v2, 0x10
+
+    .line 92
+    .line 93
+    invoke-direct {v1, v2, v0}, Ls1j;-><init>(ILjava/lang/Object;)V
+
+    .line 94
+    .line 95
+    .line 96
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 97
+    .line 98
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 99
+    .line 100
+    .line 101
+    :goto_0
     return-object v0
+
+    .line 102
+    nop
+
+    .line 103
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

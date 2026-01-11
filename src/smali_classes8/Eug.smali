@@ -1,240 +1,262 @@
-.class public final enum LEug;
-.super Ljava/lang/Enum;
+.class public final LEug;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LEug;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum X:LEug;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "JUMP_CUT"
-    .end annotation
-.end field
-
-.field public static final synthetic Y:[LEug;
-
-.field public static final enum b:LEug;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "TIMELAPSE"
-    .end annotation
-.end field
-
-.field public static final enum c:LEug;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PING_PONG"
-    .end annotation
-.end field
-
-.field public static final enum t:LEug;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "BULLET_TIME"
-    .end annotation
-.end field
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic a:I
+
+.field public final synthetic b:LFug;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
-
-    .line 1
-    new-instance v0, LEug;
-
-    .line 2
-    .line 3
-    const-string v1, "TIMELAPSE"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, LEug;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, LEug;->b:LEug;
-
-    .line 10
-    .line 11
-    new-instance v1, LEug;
-
-    .line 12
-    .line 13
-    const-string v3, "PING_PONG"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, LEug;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, LEug;->c:LEug;
-
-    .line 20
-    .line 21
-    new-instance v3, LEug;
-
-    .line 22
-    .line 23
-    const-string v5, "BULLET_TIME"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, LEug;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, LEug;->t:LEug;
-
-    .line 30
-    .line 31
-    new-instance v5, LEug;
-
-    .line 32
-    .line 33
-    const-string v7, "JUMP_CUT"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8, v8}, LEug;-><init>(Ljava/lang/String;II)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, LEug;->X:LEug;
-
-    .line 40
-    .line 41
-    const/4 v7, 0x4
-
-    .line 42
-    new-array v7, v7, [LEug;
-
-    .line 43
-    .line 44
-    aput-object v0, v7, v2
-
-    .line 45
-    .line 46
-    aput-object v1, v7, v4
-
-    .line 47
-    .line 48
-    aput-object v3, v7, v6
-
-    .line 49
-    .line 50
-    aput-object v5, v7, v8
-
-    .line 51
-    .line 52
-    sput-object v7, LEug;->Y:[LEug;
-
-    .line 53
-    .line 54
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public synthetic constructor <init>(LFug;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput p2, p0, LEug;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LEug;->a:I
+    iput-object p1, p0, LEug;->b:LFug;
 
-    .line 5
-    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LEug;
-    .locals 1
-
-    .line 1
-    const-class v0, LEug;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LEug;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LEug;
-    .locals 1
-
-    .line 1
-    sget-object v0, LEug;->Y:[LEug;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LEug;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LEug;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 4
 
     .line 1
     iget v0, p0, LEug;->a:I
 
     .line 2
     .line 3
-    return v0
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, LVug;
+
+    .line 7
+    .line 8
+    iget-object v0, p0, LEug;->b:LFug;
+
+    .line 9
+    .line 10
+    iget-object v0, v0, LFug;->x0:Landroid/widget/RadioGroup;
+
+    .line 11
+    .line 12
+    if-eqz v0, :cond_4
+
+    .line 13
+    .line 14
+    sget-object v1, LDug;->a:[I
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p1
+
+    .line 20
+    aget p1, v1, p1
+
+    .line 21
+    .line 22
+    const/4 v1, 0x1
+
+    .line 23
+    if-eq p1, v1, :cond_3
+
+    .line 24
+    .line 25
+    const/4 v1, 0x2
+
+    .line 26
+    if-eq p1, v1, :cond_2
+
+    .line 27
+    .line 28
+    const/4 v1, 0x3
+
+    .line 29
+    if-eq p1, v1, :cond_1
+
+    .line 30
+    .line 31
+    const/4 v1, 0x4
+
+    .line 32
+    if-ne p1, v1, :cond_0
+
+    .line 33
+    .line 34
+    const p1, 0x7f0b140e
+
+    .line 35
+    .line 36
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 39
+    .line 40
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
+
+    .line 41
+    .line 42
+    .line 43
+    throw p1
+
+    .line 44
+    :cond_1
+    const p1, 0x7f0b140d
+
+    .line 45
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_2
+    const p1, 0x7f0b140f
+
+    .line 49
+    .line 50
+    .line 51
+    goto :goto_0
+
+    .line 52
+    :cond_3
+    const p1, 0x7f0b140c
+
+    .line 53
+    .line 54
+    .line 55
+    :goto_0
+    invoke-virtual {v0, p1}, Landroid/widget/RadioGroup;->check(I)V
+
+    .line 56
+    .line 57
+    .line 58
+    return-void
+
+    .line 59
+    :cond_4
+    const-string p1, "shakeSensitivityRadioGroup"
+
+    .line 60
+    .line 61
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 62
+    .line 63
+    .line 64
+    const/4 p1, 0x0
+
+    .line 65
+    throw p1
+
+    .line 66
+    :pswitch_0
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 67
+    .line 68
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 69
+    .line 70
+    .line 71
+    move-result p1
+
+    .line 72
+    iget-object v0, p0, LEug;->b:LFug;
+
+    .line 73
+    .line 74
+    iget-object v1, v0, LFug;->w0:Lcom/snap/component/button/SnapCheckBox;
+
+    .line 75
+    .line 76
+    const/4 v2, 0x0
+
+    .line 77
+    const-string v3, "shakeEnableCheckBox"
+
+    .line 78
+    .line 79
+    if-eqz v1, :cond_6
+
+    .line 80
+    .line 81
+    invoke-virtual {v1, p1}, Landroid/widget/CompoundButton;->setChecked(Z)V
+
+    .line 82
+    .line 83
+    .line 84
+    iget-object p1, v0, LFug;->w0:Lcom/snap/component/button/SnapCheckBox;
+
+    .line 85
+    .line 86
+    if-eqz p1, :cond_5
+
+    .line 87
+    .line 88
+    new-instance v1, LL5;
+
+    .line 89
+    .line 90
+    const/16 v2, 0x12
+
+    .line 91
+    .line 92
+    invoke-direct {v1, v2, v0}, LL5;-><init>(ILjava/lang/Object;)V
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-virtual {p1, v1}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+
+    .line 96
+    .line 97
+    .line 98
+    return-void
+
+    .line 99
+    :cond_5
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 100
+    .line 101
+    .line 102
+    throw v2
+
+    .line 103
+    :cond_6
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 104
+    .line 105
+    .line 106
+    throw v2
+
+    .line 107
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,17 +3,17 @@
 .source "SourceFile"
 
 # interfaces
-.implements LEp2;
+.implements Lts2;
 
 
 # instance fields
-.field public final J:Liq1;
+.field public final J:LYp1;
 
 .field public final K:Lcom/snap/lenses/carousel/SmoothScrollingCarouselLayoutManager;
 
 
 # direct methods
-.method public constructor <init>(Liq1;Landroid/content/Context;)V
+.method public constructor <init>(LYp1;Landroid/content/Context;)V
     .locals 0
 
     .line 1
@@ -22,7 +22,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/lenses/carousel/SmoothScrollingCarouselLayoutManager;->J:Liq1;
+    iput-object p1, p0, Lcom/snap/lenses/carousel/SmoothScrollingCarouselLayoutManager;->J:LYp1;
 
     .line 5
     .line 6
@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public final e(Z)V
+.method public final f(Z)V
     .locals 0
 
     .line 1
@@ -46,7 +46,7 @@
     return-void
 .end method
 
-.method public final k()Landroidx/recyclerview/widget/LinearLayoutManager;
+.method public final p()Landroidx/recyclerview/widget/LinearLayoutManager;
     .locals 1
 
     .line 1
@@ -57,11 +57,11 @@
     return-object v0
 .end method
 
-.method public final p()Z
+.method public final u()Z
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snap/lenses/common/SmoothScrollerLinearLayoutManager;->p()Z
+    invoke-super {p0}, Lcom/snap/lenses/common/SmoothScrollerLinearLayoutManager;->u()Z
 
     .line 2
     .line 3
@@ -73,11 +73,11 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/snap/lenses/carousel/SmoothScrollingCarouselLayoutManager;->J:Liq1;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/SmoothScrollingCarouselLayoutManager;->J:LYp1;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Liq1;->invoke()Ljava/lang/Object;
+    invoke-virtual {v0}, LYp1;->d()Ljava/lang/Object;
 
     .line 10
     .line 11

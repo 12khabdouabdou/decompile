@@ -3,145 +3,111 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+.implements Lo37;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LP27;
 
-.field public final synthetic b:Lpz0;
+.field public final b:Lo37;
+
+.field public final c:Z
+
+.field public final d:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lpz0;I)V
+.method public constructor <init>(LP27;Lo37;Z)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lp37;->a:I
-
-    iput-object p1, p0, Lp37;->b:Lpz0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method private final a()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lp37;->b:Lpz0;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lpz0;->b:Ljava/lang/Object;
-
     .line 4
+    iput-object p1, p0, Lp37;->a:LP27;
+
     .line 5
-    check-cast v0, LZz5;
-
     .line 6
-    .line 7
-    monitor-enter v0
+    iput-object p2, p0, Lp37;->b:Lo37;
 
+    .line 7
     .line 8
-    :try_start_0
-    iget-object v1, v0, LZz5;->a:Ljava/util/LinkedHashSet;
+    iput-boolean p3, p0, Lp37;->c:Z
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/util/AbstractCollection;->clear()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    new-instance p1, Lqd6;
 
     .line 11
     .line 12
-    .line 13
-    monitor-exit v0
+    const/16 p2, 0xf
 
+    .line 13
     .line 14
-    return-void
+    invoke-direct {p1, p2, p0}, Lqd6;-><init>(ILjava/lang/Object;)V
 
     .line 15
-    :catchall_0
-    move-exception v1
-
     .line 16
-    monitor-exit v0
-
     .line 17
-    throw v1
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
+
+    .line 18
+    .line 19
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 20
+    .line 21
+    .line 22
+    sget-object p1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+
+    .line 23
+    .line 24
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    sget-object p2, LYRa;->a:LYRa;
+
+    .line 29
+    .line 30
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p1
+
+    .line 34
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->g1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    iput-object p1, p0, Lp37;->d:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 39
+    .line 40
+    return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
 
     .line 1
-    iget v0, p0, Lp37;->a:I
+    iget-object v0, p0, Lp37;->d:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lp37;->b:Lpz0;
-
-    .line 7
-    .line 8
-    iget-object v0, v0, Lpz0;->b:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    check-cast v0, LZz5;
-
-    .line 11
-    .line 12
-    monitor-enter v0
-
-    .line 13
-    :try_start_0
-    iget-object v1, v0, LZz5;->a:Ljava/util/LinkedHashSet;
-
-    .line 14
-    .line 15
-    invoke-virtual {v1}, Ljava/util/AbstractCollection;->clear()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 16
-    .line 17
-    .line 18
-    monitor-exit v0
-
-    .line 19
-    return-void
-
-    .line 20
-    :catchall_0
-    move-exception v1
-
-    .line 21
-    monitor-exit v0
-
-    .line 22
-    throw v1
-
-    .line 23
-    :pswitch_0
-    invoke-direct {p0}, Lp37;->a()V
-
-    .line 24
-    .line 25
-    .line 26
-    return-void
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

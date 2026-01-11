@@ -3,19 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final synthetic a:Lni9;
-
-.field public final synthetic b:Lvg5;
-
-.field public final synthetic c:LLi0;
+.field public final synthetic a:Lio/reactivex/rxjava3/core/Observable;
 
 
 # direct methods
-.method public constructor <init>(Lni9;Lvg5;LLi0;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;)V
     .locals 0
 
     .line 1
@@ -24,111 +20,100 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LKi0;->a:Lni9;
+    iput-object p1, p0, LKi0;->a:Lio/reactivex/rxjava3/core/Observable;
 
     .line 5
     .line 6
-    iput-object p2, p0, LKi0;->b:Lvg5;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LKi0;->c:LLi0;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 8
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    new-instance v0, LFN$n$c;
+    check-cast p1, Lmu2;
 
     .line 2
     .line 3
-    iget-object v1, p0, LKi0;->a:Lni9;
+    new-instance p1, LcXi;
 
     .line 4
     .line 5
-    move-object v2, v1
+    const/16 v0, 0x9
 
     .line 6
-    iget-object v1, v2, Lni9;->a:Lo09;
-
     .line 7
+    const/4 v1, 0x0
+
     .line 8
-    iget-object v3, p0, LKi0;->b:Lvg5;
+    invoke-direct {p1, v0, v1}, LcXi;-><init>(IZ)V
 
     .line 9
     .line 10
-    move-object v4, v3
-
     .line 11
-    check-cast v4, Lug5;
+    iget-object v0, p0, LKi0;->a:Lio/reactivex/rxjava3/core/Observable;
 
     .line 12
     .line 13
-    iget-object v4, v4, Lug5;->a:LGjj;
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->U(Lio/reactivex/rxjava3/functions/BiPredicate;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 14
     .line 15
-    check-cast v3, Lug5;
-
     .line 16
+    move-result-object p1
+
     .line 17
-    iget-object v3, v3, Lug5;->b:Ljava/lang/String;
+    const-class v0, Lfu2;
 
     .line 18
     .line 19
-    iget-object v2, v2, Lni9;->b:LLh9;
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->y0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
     .line 20
     .line 21
-    iget-object v5, v2, LLh9;->c:[B
-
     .line 22
+    move-result-object p1
+
     .line 23
-    iget-object v6, v2, LLh9;->d:[B
+    sget-object v0, LT70;->A0:LT70;
 
     .line 24
     .line 25
-    sget-object v2, LpL;->a:LpL;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
     .line 26
     .line 27
-    move-object v7, v4
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
 
     .line 28
-    move-object v4, v3
-
     .line 29
-    move-object v3, v7
-
     .line 30
-    invoke-direct/range {v0 .. v6}, LFN$n$c;-><init>(Lo09;LqL;LGjj;Ljava/lang/String;[B[B)V
+    const-wide/16 v2, 0x1
 
     .line 31
     .line 32
-    .line 33
-    iget-object v1, p0, LKi0;->c:LLi0;
+    invoke-virtual {v1, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->Q0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
 
+    .line 33
     .line 34
     .line 35
-    iget-object v1, v1, LLi0;->Y:Ljava/lang/Object;
+    move-result-object p1
 
     .line 36
+    sget-object v0, LJi0;->a:LJi0;
+
     .line 37
-    check-cast v1, LIN;
-
     .line 38
-    .line 39
-    invoke-interface {v1, v0}, LIN;->a(LFN;)V
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
+    .line 39
     .line 40
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 41
     .line 42
-    return-void
+    .line 43
+    return-object v1
 .end method

@@ -3,220 +3,185 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Lcom/snap/modules/camera_mode_widgets/IDualCameraModeWidgetActionHandler;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LXD6;
-
-.field public final synthetic c:LWo;
+.field public final synthetic a:LIl;
 
 
 # direct methods
-.method public synthetic constructor <init>(LXD6;LWo;I)V
+.method public constructor <init>(LIl;)V
     .locals 0
 
     .line 1
-    iput p3, p0, LQD6;->a:I
-
-    iput-object p1, p0, LQD6;->b:LXD6;
-
-    iput-object p2, p0, LQD6;->c:LWo;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LQD6;->a:LIl;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 8
+.method public final onDualCameraModeSelectionDidChange(Lcom/snap/modules/camera_mode_widgets/DualCameraMode;)V
+    .locals 2
 
     .line 1
-    iget v0, p0, LQD6;->a:I
+    iget-object v0, p0, LQD6;->a:LIl;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget-object v0, v0, LIl;->a:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    check-cast v0, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 6
+    .line 7
+    sget-object v1, LBD6;->a:[I
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    aget p1, v1, p1
+
+    .line 14
+    .line 15
+    const/4 v1, 0x1
+
+    .line 16
+    if-eq p1, v1, :cond_4
+
+    .line 17
+    .line 18
+    const/4 v1, 0x2
+
+    .line 19
+    if-eq p1, v1, :cond_3
+
+    .line 20
+    .line 21
+    const/4 v1, 0x3
+
+    .line 22
+    if-eq p1, v1, :cond_2
+
+    .line 23
+    .line 24
+    const/4 v1, 0x4
+
+    .line 25
+    if-eq p1, v1, :cond_1
+
+    .line 26
+    .line 27
+    const/4 v1, 0x5
+
+    .line 28
+    if-ne p1, v1, :cond_0
+
+    .line 29
+    .line 30
+    sget-object p1, LVC6;->X:LVC6;
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_0
+    new-instance p1, LwOc;
+
+    .line 34
+    .line 35
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    throw p1
+
+    .line 39
+    :cond_1
+    sget-object p1, LVC6;->t:LVC6;
+
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :cond_2
+    sget-object p1, LVC6;->c:LVC6;
+
+    .line 43
+    .line 44
+    goto :goto_0
+
+    .line 45
+    :cond_3
+    sget-object p1, LVC6;->b:LVC6;
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_4
+    sget-object p1, LVC6;->a:LVC6;
+
+    .line 49
+    .line 50
+    :goto_0
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 51
+    .line 52
+    .line 53
+    return-void
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    iget-object p1, p0, LQD6;->b:LXD6;
+    const-class v1, Lcom/snap/modules/camera_mode_widgets/IDualCameraModeWidgetActionHandler;
 
     .line 9
     .line 10
-    iget-object v0, p1, LXD6;->R:LJC;
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
-    new-instance v1, Lim;
-
     .line 13
+    move-result p1
+
     .line 14
-    iget-object v2, p0, LQD6;->c:LWo;
-
-    .line 15
-    .line 16
-    iget-object v3, v2, LWo;->a:Ljava/lang/String;
-
-    .line 17
-    .line 18
-    iget-object v4, v2, LWo;->c:LXo;
-
-    .line 19
-    .line 20
-    iget-object v5, v4, LXo;->a:LSn;
-
-    .line 21
-    .line 22
-    iget-object v6, p1, LXD6;->C:LB73;
-
-    .line 23
-    .line 24
-    check-cast v6, LOze;
-
-    .line 25
-    .line 26
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-wide v6
-
-    .line 33
-    invoke-direct {v1, v3, v5, v6, v7}, Lim;-><init>(Ljava/lang/String;LSn;J)V
-
-    .line 34
-    .line 35
-    .line 36
-    invoke-virtual {v0, v1}, LJC;->b(LHC;)V
-
-    .line 37
-    .line 38
-    .line 39
-    iget-object v0, v4, LXo;->a:LSn;
-
-    .line 40
-    .line 41
-    iget-object p1, p1, LXD6;->L:LdGd;
-
-    .line 42
-    .line 43
-    iget-object v1, v2, LWo;->a:Ljava/lang/String;
-
-    .line 44
-    .line 45
-    invoke-virtual {p1, v0, v1}, LYl;->u(LSn;Ljava/lang/String;)V
-
-    .line 46
-    .line 47
-    .line 48
-    return-void
-
-    .line 49
-    :pswitch_0
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 50
-    .line 51
-    iget-object p1, p0, LQD6;->b:LXD6;
-
-    .line 52
-    .line 53
-    iget-object v0, p1, LXD6;->R:LJC;
-
-    .line 54
-    .line 55
-    new-instance v1, Lim;
-
-    .line 56
-    .line 57
-    iget-object v2, p0, LQD6;->c:LWo;
-
-    .line 58
-    .line 59
-    iget-object v3, v2, LWo;->a:Ljava/lang/String;
-
-    .line 60
-    .line 61
-    iget-object v4, v2, LWo;->c:LXo;
-
-    .line 62
-    .line 63
-    iget-object v5, v4, LXo;->a:LSn;
-
-    .line 64
-    .line 65
-    iget-object v6, p1, LXD6;->C:LB73;
-
-    .line 66
-    .line 67
-    check-cast v6, LOze;
-
-    .line 68
-    .line 69
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 70
-    .line 71
-    .line 72
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-wide v6
-
-    .line 76
-    invoke-direct {v1, v3, v5, v6, v7}, Lim;-><init>(Ljava/lang/String;LSn;J)V
-
-    .line 77
-    .line 78
-    .line 79
-    invoke-virtual {v0, v1}, LJC;->b(LHC;)V
-
-    .line 80
-    .line 81
-    .line 82
-    iget-object v0, v4, LXo;->a:LSn;
-
-    .line 83
-    .line 84
-    iget-object p1, p1, LXD6;->L:LdGd;
-
-    .line 85
-    .line 86
-    iget-object v1, v2, LWo;->a:Ljava/lang/String;
-
-    .line 87
-    .line 88
-    invoke-virtual {p1, v0, v1}, LYl;->u(LSn;Ljava/lang/String;)V
-
-    .line 89
-    .line 90
-    .line 91
-    return-void
-
-    .line 92
-    nop
-
-    .line 93
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return p1
 .end method

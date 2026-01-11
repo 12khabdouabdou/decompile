@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LvR7;
-    schema = "\'handleStartLiveLocationTap\':f?|m|(),\'handleStopLiveLocationTap\':f?|m|(),\'handleCameraTap\':f|m|(),\'handleMessageTap\':f|m|(),\'handleBitmojiTap\':f|m|(),\'handleCloseButton\':f|m|(),\'handleStoryTap\':f|m|(),\'handleCreateBitmojiTap\':f|m|(),\'handleMoreButtonTap\':f?|m|(r:\'[0]\'),\'handleMapSnapTap\':f?|m|()"
+    proxyClass = LDX7;
+    schema = "\'handleStartLiveLocationTap\':f?|m|(),\'handleStopLiveLocationTap\':f?|m|(),\'handleCameraTap\':f|m|(),\'handleMessageTap\':f|m|(),\'handleBitmojiTap\':f|m|(),\'handleCloseButton\':f|m|(),\'handleStoryTap\':f|m|(),\'handleCreateBitmojiTap\':f|m|(),\'handleMoreButtonTap\':f?|m|(r:\'[0]\'),\'handleMapSnapTap\':f|m|()"
     typeReferences = {
         Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;
     }
@@ -31,25 +31,23 @@
 .end method
 
 .method public abstract handleMapSnapTap()V
-    .annotation runtime LUy3;
-    .end annotation
 .end method
 
 .method public abstract handleMessageTap()V
 .end method
 
 .method public abstract handleMoreButtonTap(Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleStartLiveLocationTap()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleStopLiveLocationTap()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

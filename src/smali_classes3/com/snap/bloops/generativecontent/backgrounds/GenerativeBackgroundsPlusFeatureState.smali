@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'AVAILABLE_SUBSCRIBED\':0,\'AVAILABLE_NOT_SUBSCRIBED\':1,\'HAS_BEEN_SUBSCRIBED\':2,\'UNAVAILABLE\':3"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

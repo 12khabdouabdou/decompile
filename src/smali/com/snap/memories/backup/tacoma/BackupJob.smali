@@ -1,27 +1,27 @@
 .class public final Lcom/snap/memories/backup/tacoma/BackupJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "MEMORIES_BACKUP_JOB"
-    metadataType = LeG0;
+    metadataType = LUI0;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(LtB6;LeG0;)V
+.method public constructor <init>(LRE6;LUI0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     .line 2
     .line 3

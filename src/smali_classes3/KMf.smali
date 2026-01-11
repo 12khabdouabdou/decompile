@@ -1,10 +1,10 @@
 .class public final LKMf;
-.super LMMf;
+.super LQxb;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:LKMf;
+.field public static final c:LKMf;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, LKMf;->a:LKMf;
+    sput-object v0, LKMf;->c:LKMf;
 
     .line 7
     .line 8

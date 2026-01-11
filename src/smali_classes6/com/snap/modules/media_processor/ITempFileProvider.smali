@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LdZ8;
+    proxyClass = LN69;
     schema = "\'getTempFileForData\':f|m|(t, f?(r?:\'[0]\', s?))"
     typeReferences = {
-        LcZ8;
+        LM69;
     }
 .end annotation
 

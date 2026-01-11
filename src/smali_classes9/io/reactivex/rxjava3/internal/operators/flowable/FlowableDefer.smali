@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -55,13 +55,13 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LZne;
+    check-cast v0, LSFe;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 8
     .line 9
-    invoke-interface {v0, p1}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v0, p1}, LSFe;->subscribe(Lmvi;)V
 
     .line 10
     .line 11
@@ -82,12 +82,12 @@
 
     .line 18
     .line 19
-    invoke-interface {p1, v1}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v1}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 20
     .line 21
     .line 22
-    invoke-interface {p1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 23
     .line 24

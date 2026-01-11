@@ -2,22 +2,27 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/modules/saturn_settings/SaturnPrivacyStore;
+
 
 # instance fields
-.field public final a:LQN4;
+.field public final a:Lkotlin/jvm/functions/Function0;
 
-.field public final b:LQN4;
-
-.field public final c:LQN4;
-
-.field public final d:LXfi;
-
-.field public final e:LBre;
+.field public final b:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public constructor <init>(LDyb;LQN4;LQN4;LQN4;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -25,60 +30,111 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, LtCf;->a:LQN4;
+    iput-object p1, p0, LtCf;->a:Lkotlin/jvm/functions/Function0;
 
     .line 5
     .line 6
-    iput-object p3, p0, LtCf;->b:LQN4;
+    iput-object p2, p0, LtCf;->b:Lkotlin/jvm/functions/Function1;
 
     .line 7
     .line 8
-    iput-object p4, p0, LtCf;->c:LQN4;
+    return-void
+.end method
+
+
+# virtual methods
+.method public observeSaturnPrivacy()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "LhZc;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LtCf;->a:Lkotlin/jvm/functions/Function0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/modules/saturn_settings/SaturnPrivacyStore;
 
     .line 9
     .line 10
-    new-instance p2, Lks0;
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
-    const/16 p3, 0x9
-
     .line 13
+    move-result p1
+
     .line 14
-    invoke-direct {p2, p1, p3}, Lks0;-><init>(LDyb;I)V
+    return p1
+.end method
 
-    .line 15
-    .line 16
-    .line 17
-    new-instance p1, LXfi;
+.method public setSaturnPrivacy(Lcom/snap/modules/saturn_settings/SaturnPrivacyOption;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/modules/saturn_settings/SaturnPrivacyOption;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "LIng;",
+            ">;"
+        }
+    .end annotation
 
-    .line 18
-    .line 19
-    invoke-direct {p1, p2}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    .line 1
+    iget-object v0, p0, LtCf;->b:Lkotlin/jvm/functions/Function1;
 
-    .line 20
-    .line 21
-    .line 22
-    iput-object p1, p0, LtCf;->d:LXfi;
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 23
-    .line 24
-    sget-object p1, LuCf;->a:LWm0;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
-    .line 25
-    .line 26
-    new-instance p2, LBre;
+    .line 7
+    check-cast p1, Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-    .line 27
-    .line 28
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
-
-    .line 29
-    .line 30
-    .line 31
-    iput-object p2, p0, LtCf;->e:LBre;
-
-    .line 32
-    .line 33
-    return-void
+    .line 8
+    .line 9
+    return-object p1
 .end method

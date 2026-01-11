@@ -1,94 +1,37 @@
 .class public final LNMh;
-.super LrE9;
+.super Lnp0;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
-
-# instance fields
-.field public final synthetic a:D
-
-.field public final synthetic b:J
+# static fields
+.field public static final d:LNMh;
 
 
 # direct methods
-.method public constructor <init>(DJ)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput-wide p1, p0, LNMh;->a:D
+    new-instance v0, LNMh;
 
     .line 2
     .line 3
-    iput-wide p3, p0, LNMh;->b:J
+    sget-object v1, LQHh;->Z:LQHh;
 
     .line 4
     .line 5
-    const/4 p1, 0x1
-
-    .line 6
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    check-cast p1, LxR;
-
-    .line 2
-    .line 3
-    iget-wide v0, p0, LNMh;->a:D
-
-    .line 4
-    .line 5
-    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    const-string v2, "SpotlightSyncer"
 
     .line 6
     .line 7
+    invoke-direct {v0, v1, v2}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
     .line 8
-    move-result-object v0
-
     .line 9
-    const/4 v1, 0x0
-
     .line 10
-    invoke-interface {p1, v1, v0}, LxR;->i(ILjava/lang/Double;)V
+    sput-object v0, LNMh;->d:LNMh;
 
     .line 11
     .line 12
-    .line 13
-    iget-wide v0, p0, LNMh;->b:J
-
-    .line 14
-    .line 15
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    const/4 v1, 0x1
-
-    .line 20
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 21
-    .line 22
-    .line 23
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 24
-    .line 25
-    return-object p1
+    return-void
 .end method

@@ -1,18 +1,14 @@
-.class public final Lwvg;
+.class public abstract Lwvg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/ref/WeakReference;
-
-.field public b:I
-
-.field public c:Z
+.field public final a:Landroid/graphics/Matrix;
 
 
 # direct methods
-.method public constructor <init>(ILPN0;)V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
@@ -21,22 +17,23 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/lang/ref/WeakReference;
+    new-instance v0, Landroid/graphics/Matrix;
 
     .line 5
     .line 6
-    invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lwvg;->a:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lwvg;->a:Landroid/graphics/Matrix;
 
     .line 10
     .line 11
-    iput p1, p0, Lwvg;->b:I
-
-    .line 12
-    .line 13
     return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
 .end method

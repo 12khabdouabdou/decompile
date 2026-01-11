@@ -1,346 +1,681 @@
 .class public final LKgd;
-.super Ljava/lang/Object;
+.super LtJe;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final X:Ljava/util/Set;
 
-.field public final b:Ljava/lang/String;
+.field public final Y:Ljava/util/Set;
 
-.field public final c:Ljava/lang/String;
+.field public final Z:J
 
-.field public final d:Ljava/lang/Long;
+.field public final synthetic c:I
+
+.field public final e0:J
+
+.field public final synthetic f0:LPgd;
+
+.field public final t:Ljava/util/Collection;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(LPgd;Ljava/util/Collection;Ljava/util/Set;Ljava/util/Set;JJ)V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p2, p0, LKgd;->a:Ljava/lang/String;
+    iput v0, p0, LKgd;->c:I
 
-    .line 5
-    .line 6
-    iput-object p3, p0, LKgd;->b:Ljava/lang/String;
+    sget-object v0, Lucd;->r0:Lucd;
 
-    .line 7
     .line 8
-    iput-object p4, p0, LKgd;->c:Ljava/lang/String;
+    iput-object p1, p0, LKgd;->f0:LPgd;
+
+    const/4 p1, 0x3
 
     .line 9
+    invoke-direct {p0, p1, v0}, LpO0;-><init>(ILjava/lang/Object;)V
+
     .line 10
-    iput-object p1, p0, LKgd;->d:Ljava/lang/Long;
+    iput-object p2, p0, LKgd;->t:Ljava/util/Collection;
 
     .line 11
+    iput-object p3, p0, LKgd;->X:Ljava/util/Set;
+
     .line 12
+    iput-object p4, p0, LKgd;->Y:Ljava/util/Set;
+
+    .line 13
+    iput-wide p5, p0, LKgd;->Z:J
+
+    .line 14
+    iput-wide p7, p0, LKgd;->e0:J
+
+    return-void
+.end method
+
+.method public constructor <init>(LPgd;Ljava/util/Collection;Ljava/util/Set;Ljava/util/Set;JJLMgd;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, LKgd;->c:I
+
+    .line 1
+    iput-object p1, p0, LKgd;->f0:LPgd;
+
+    const/4 p1, 0x3
+
+    .line 2
+    invoke-direct {p0, p1, p9}, LpO0;-><init>(ILjava/lang/Object;)V
+
+    .line 3
+    iput-object p2, p0, LKgd;->t:Ljava/util/Collection;
+
+    .line 4
+    iput-object p3, p0, LKgd;->X:Ljava/util/Set;
+
+    .line 5
+    iput-object p4, p0, LKgd;->Y:Ljava/util/Set;
+
+    .line 6
+    iput-wide p5, p0, LKgd;->Z:J
+
+    .line 7
+    iput-wide p7, p0, LKgd;->e0:J
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final B(LuE7;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LKgd;->c:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LKgd;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    iget-object v0, p0, LKgd;->f0:LPgd;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    const-string v1, "operations"
 
     .line 9
     .line 10
-    return v2
+    filled-new-array {v1}, [Ljava/lang/String;
 
     .line 11
-    :cond_1
-    check-cast p1, LKgd;
-
     .line 12
     .line 13
-    iget-object v1, p1, LKgd;->a:Ljava/lang/String;
+    move-result-object v1
 
     .line 14
+    iget-object v0, v0, Lvej;->a:Lkch;
+
     .line 15
-    iget-object v3, p0, LKgd;->a:Ljava/lang/String;
-
     .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1, v1}, Lkch;->a(LuE7;[Ljava/lang/String;)V
 
+    .line 17
     .line 18
     .line 19
+    return-void
+
     .line 20
-    move-result v1
+    :pswitch_0
+    iget-object v0, p0, LKgd;->f0:LPgd;
 
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
-    .line 23
-    return v2
+    const-string v1, "operations"
 
+    .line 23
     .line 24
-    :cond_2
-    iget-object v1, p0, LKgd;->b:Ljava/lang/String;
+    filled-new-array {v1}, [Ljava/lang/String;
 
     .line 25
     .line 26
-    iget-object v3, p1, LKgd;->b:Ljava/lang/String;
-
     .line 27
+    move-result-object v1
+
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v0, v0, Lvej;->a:Lkch;
 
     .line 29
     .line 30
+    invoke-virtual {v0, p1, v1}, Lkch;->a(LuE7;[Ljava/lang/String;)V
+
     .line 31
-    move-result v1
-
     .line 32
-    if-nez v1, :cond_3
-
     .line 33
+    return-void
+
     .line 34
-    return v2
+    nop
 
     .line 35
-    :cond_3
-    iget-object v1, p0, LKgd;->c:Ljava/lang/String;
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 36
-    .line 37
-    iget-object v3, p1, LKgd;->c:Ljava/lang/String;
+.method public final C(LuE7;)V
+    .locals 2
 
-    .line 38
-    .line 39
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 1
+    iget v0, p0, LKgd;->c:I
 
-    .line 40
-    .line 41
-    .line 42
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LKgd;->f0:LPgd;
+
+    .line 7
+    .line 8
+    iget-object v0, v0, Lvej;->a:Lkch;
+
+    .line 9
+    .line 10
+    const-string v1, "operations"
+
+    .line 11
+    .line 12
+    filled-new-array {v1}, [Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    invoke-virtual {v0, p1, v1}, Lkch;->h(LuE7;[Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+
+    .line 20
+    :pswitch_0
+    iget-object v0, p0, LKgd;->f0:LPgd;
+
+    .line 21
+    .line 22
+    iget-object v0, v0, Lvej;->a:Lkch;
+
+    .line 23
+    .line 24
+    const-string v1, "operations"
+
+    .line 25
+    .line 26
+    filled-new-array {v1}, [Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    invoke-virtual {v0, p1, v1}, Lkch;->h(LuE7;[Ljava/lang/String;)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-void
+
+    .line 34
+    nop
+
+    .line 35
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final p(Lkotlin/jvm/functions/Function1;)LJJe;
+    .locals 12
+
+    .line 1
+    iget v0, p0, LKgd;->c:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LKgd;->t:Ljava/util/Collection;
+
+    .line 7
+    .line 8
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
+
+    .line 9
+    .line 10
+    .line 11
     move-result v1
 
+    .line 12
+    iget-object v2, p0, LKgd;->f0:LPgd;
+
+    .line 13
+    .line 14
+    invoke-static {v1}, Lvej;->a(I)Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    iget-object v3, p0, LKgd;->X:Ljava/util/Set;
+
+    .line 19
+    .line 20
+    invoke-interface {v3}, Ljava/util/Collection;->size()I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v4
+
+    .line 24
+    invoke-static {v4}, Lvej;->a(I)Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v4
+
+    .line 28
+    iget-object v5, p0, LKgd;->Y:Ljava/util/Set;
+
+    .line 29
+    .line 30
+    invoke-interface {v5}, Ljava/util/Collection;->size()I
+
+    .line 31
+    .line 32
+    .line 33
+    move-result v6
+
+    .line 34
+    invoke-static {v6}, Lvej;->a(I)Ljava/lang/String;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v6
+
+    .line 38
+    const-string v7, "\n          |SELECT\n          |    id,\n          |    entry_id,\n          |    created_at * 1000,\n          |    type,\n          |    step,\n          |    extra,\n          |    retry_count\n          |FROM operations\n          |WHERE\n          |    -- Operation must not have a dependency\n          |    dependency_id IS NULL\n          |AND\n          |    -- Status must be CREATED or PENDING.\n          |    status IN "
+
+    .line 39
+    .line 40
+    const-string v8, "\n          |AND\n          |    -- And is of type:\n          |    type IN "
+
+    .line 41
+    .line 42
+    const-string v9, "\n          |AND\n          |    -- And is currently in steps:\n          |    step IN "
+
     .line 43
-    if-nez v1, :cond_4
-
     .line 44
+    invoke-static {v7, v1, v8, v4, v9}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 45
-    return v2
-
     .line 46
-    :cond_4
-    iget-object v1, p0, LKgd;->d:Ljava/lang/Long;
-
     .line 47
+    move-result-object v1
+
     .line 48
-    iget-object p1, p1, LKgd;->d:Ljava/lang/Long;
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 49
     .line 50
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 51
+    const-string v4, "\n          |AND\n          |    created_at >= ?\n          |AND\n          |    created_at < ?\n          |AND\n          |   -- Rollabck when tacomaVersion > 0 (tacoma enabled)\n          |   --       Always pick up Non Shadow Rows (tacoma version is null or\n          |   --              (tacomaVersion < cofTacomaVersion))\n          |   --          when tacomaVersion <= 0 (tacoma disabled)\n          |   --       Always pick up every single rows for backup\n          |CASE\n          |    WHEN ? > 0 THEN\n          |        (tacoma_version IS NULL OR (tacoma_version < ?))\n          |    ELSE 1\n          |END\n          "
+
     .line 52
     .line 53
-    move-result p1
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 54
-    if-nez p1, :cond_5
-
     .line 55
     .line 56
-    return v2
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 57
-    :cond_5
-    return v0
-.end method
+    .line 58
+    .line 59
+    move-result-object v1
 
-.method public final hashCode()I
-    .locals 3
+    .line 60
+    invoke-static {v1}, Llti;->b0(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1
-    iget-object v0, p0, LKgd;->a:Ljava/lang/String;
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v8
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    .line 64
+    invoke-interface {v0}, Ljava/util/Collection;->size()I
 
-    .line 4
-    .line 5
-    .line 6
+    .line 65
+    .line 66
+    .line 67
     move-result v0
 
-    .line 7
-    const/16 v1, 0x1f
+    .line 68
+    add-int/lit8 v0, v0, 0x4
 
-    .line 8
-    .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    .line 69
+    .line 70
+    invoke-interface {v3}, Ljava/util/Collection;->size()I
 
-    .line 10
-    .line 11
-    iget-object v2, p0, LKgd;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    iget-object v2, p0, LKgd;->c:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    iget-object v1, p0, LKgd;->d:Ljava/lang/Long;
-
-    .line 24
-    .line 25
-    if-nez v1, :cond_0
-
-    .line 26
-    .line 27
-    const/4 v1, 0x0
-
-    .line 28
-    goto :goto_0
-
-    .line 29
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 30
-    .line 31
-    .line 32
+    .line 71
+    .line 72
+    .line 73
     move-result v1
 
-    .line 33
-    :goto_0
-    add-int/2addr v0, v1
+    .line 74
+    add-int/2addr v1, v0
 
-    .line 34
-    return v0
+    .line 75
+    invoke-interface {v5}, Ljava/util/Collection;->size()I
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v0
+
+    .line 79
+    add-int v10, v0, v1
+
+    .line 80
+    .line 81
+    new-instance v11, LQYc;
+
+    .line 82
+    .line 83
+    const/16 v0, 0x12
+
+    .line 84
+    .line 85
+    invoke-direct {v11, p0, v0, v2}, LQYc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 86
+    .line 87
+    .line 88
+    iget-object v6, v2, Lvej;->a:Lkch;
+
+    .line 89
+    .line 90
+    const/4 v7, 0x0
+
+    .line 91
+    move-object v9, p1
+
+    .line 92
+    invoke-virtual/range {v6 .. v11}, Lkch;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)LJJe;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object p1
+
+    .line 96
+    return-object p1
+
+    .line 97
+    :pswitch_0
+    move-object v3, p1
+
+    .line 98
+    iget-object p1, p0, LKgd;->t:Ljava/util/Collection;
+
+    .line 99
+    .line 100
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v0
+
+    .line 104
+    iget-object v1, p0, LKgd;->f0:LPgd;
+
+    .line 105
+    .line 106
+    invoke-static {v0}, Lvej;->a(I)Ljava/lang/String;
+
+    .line 107
+    .line 108
+    .line 109
+    move-result-object v0
+
+    .line 110
+    iget-object v2, p0, LKgd;->X:Ljava/util/Set;
+
+    .line 111
+    .line 112
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
+
+    .line 113
+    .line 114
+    .line 115
+    move-result v4
+
+    .line 116
+    invoke-static {v4}, Lvej;->a(I)Ljava/lang/String;
+
+    .line 117
+    .line 118
+    .line 119
+    move-result-object v4
+
+    .line 120
+    iget-object v5, p0, LKgd;->Y:Ljava/util/Set;
+
+    .line 121
+    .line 122
+    invoke-interface {v5}, Ljava/util/Collection;->size()I
+
+    .line 123
+    .line 124
+    .line 125
+    move-result v6
+
+    .line 126
+    invoke-static {v6}, Lvej;->a(I)Ljava/lang/String;
+
+    .line 127
+    .line 128
+    .line 129
+    move-result-object v6
+
+    .line 130
+    const-string v7, "\n          |SELECT\n          |    id\n          |FROM operations\n          |WHERE\n          |    -- Operation must not have a dependency\n          |    dependency_id IS NULL\n          |AND\n          |    -- Status must be QUEUED.\n          |    status IN "
+
+    .line 131
+    .line 132
+    const-string v8, "\n          |AND\n          |    -- And is of type:\n          |    type IN "
+
+    .line 133
+    .line 134
+    const-string v9, "\n          |AND\n          |    -- And is currently in steps:\n          |    step IN "
+
+    .line 135
+    .line 136
+    invoke-static {v7, v0, v8, v4, v9}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object v0
+
+    .line 140
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 141
+    .line 142
+    .line 143
+    const-string v4, "\n          |AND\n          |    created_at < ?\n          |AND\n          |   -- Rollabck when tacomaVersion > 0 (tacoma enabled)\n          |   --       Always pick up Non Shadow Rows (tacoma version is null or\n          |   --              (tacomaVersion < cofTacomaVersion))\n          |   --          when tacomaVersion <= 0 (tacoma disabled)\n          |   --       Always pick up every single rows for backup\n          |CASE\n          |    WHEN ? > 0 THEN\n          |        (tacoma_version IS NULL OR (tacoma_version < ?))\n          |    ELSE 1\n          |END\n          "
+
+    .line 144
+    .line 145
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 146
+    .line 147
+    .line 148
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 149
+    .line 150
+    .line 151
+    move-result-object v0
+
+    .line 152
+    invoke-static {v0}, Llti;->b0(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object v0
+
+    .line 156
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
+
+    .line 157
+    .line 158
+    .line 159
+    move-result p1
+
+    .line 160
+    add-int/lit8 p1, p1, 0x3
+
+    .line 161
+    .line 162
+    invoke-interface {v2}, Ljava/util/Collection;->size()I
+
+    .line 163
+    .line 164
+    .line 165
+    move-result v2
+
+    .line 166
+    add-int/2addr v2, p1
+
+    .line 167
+    invoke-interface {v5}, Ljava/util/Collection;->size()I
+
+    .line 168
+    .line 169
+    .line 170
+    move-result p1
+
+    .line 171
+    add-int v4, p1, v2
+
+    .line 172
+    .line 173
+    new-instance v5, LQYc;
+
+    .line 174
+    .line 175
+    const/16 p1, 0x10
+
+    .line 176
+    .line 177
+    invoke-direct {v5, p0, p1, v1}, LQYc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 178
+    .line 179
+    .line 180
+    iget-object p1, v1, Lvej;->a:Lkch;
+
+    .line 181
+    .line 182
+    const/4 v1, 0x0
+
+    .line 183
+    move-object v2, v0
+
+    .line 184
+    move-object v0, p1
+
+    .line 185
+    invoke-virtual/range {v0 .. v5}, Lkch;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)LJJe;
+
+    .line 186
+    .line 187
+    .line 188
+    move-result-object p1
+
+    .line 189
+    return-object p1
+
+    .line 190
+    nop
+
+    .line 191
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, LKgd;->c:I
 
     .line 2
     .line 3
-    const-string v1, "PendingSnap(externalId="
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    const-string v0, "Operations.sq:findOpsOfStatusAndTimeRange"
+
     .line 7
     .line 8
-    iget-object v1, p0, LKgd;->a:Ljava/lang/String;
+    return-object v0
 
     .line 9
+    :pswitch_0
+    const-string v0, "Operations.sq:findOpsIdsOfStatusAndTime"
+
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 11
-    .line 12
-    .line 13
-    const-string v1, ", snapId="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LKgd;->b:Ljava/lang/String;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", entryId="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LKgd;->c:Ljava/lang/String;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", createTime="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LKgd;->d:Ljava/lang/Long;
-
-    .line 39
-    .line 40
-    const-string v2, ")"
-
-    .line 41
-    .line 42
-    invoke-static {v0, v1, v2}, LsSb;->f(Ljava/lang/StringBuilder;Ljava/lang/Long;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v0
-
-    .line 46
     return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

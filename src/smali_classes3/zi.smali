@@ -1,154 +1,197 @@
-.class public final Lzi;
-.super Ljava/lang/Object;
+.class public final enum Lzi;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Supplier;
 
+# static fields
+.field public static final synthetic X:[Lzi;
 
-# instance fields
-.field public final synthetic a:I
+.field public static final enum a:Lzi;
 
-.field public final synthetic b:LBi;
+.field public static final enum b:Lzi;
 
-.field public final synthetic c:LSn;
+.field public static final enum c:Lzi;
+
+.field public static final enum t:Lzi;
 
 
 # direct methods
-.method public synthetic constructor <init>(LBi;LSn;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 11
 
     .line 1
-    iput p3, p0, Lzi;->a:I
-
-    iput-object p1, p0, Lzi;->b:LBi;
-
-    iput-object p2, p0, Lzi;->c:LSn;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lzi;->a:I
+    const/4 v0, 0x4
 
     .line 2
+    const/4 v1, 0x3
+
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v2, 0x2
 
     .line 4
+    const/4 v3, 0x1
+
     .line 5
+    const/4 v4, 0x0
+
     .line 6
-    iget-object v0, p0, Lzi;->c:LSn;
+    new-instance v5, Lzi;
 
     .line 7
     .line 8
-    const-string v1, "insertExisting"
+    const-string v6, "AD_CTA_TYPE_UNSET"
 
     .line 9
     .line 10
-    iget-object v2, p0, Lzi;->b:LBi;
+    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 11
     .line 12
-    invoke-virtual {v2, v0, v1}, LBi;->q(LSn;Ljava/lang/String;)V
-
     .line 13
+    sput-object v5, Lzi;->a:Lzi;
+
     .line 14
     .line 15
-    new-instance v0, Ljava/lang/IllegalStateException;
+    new-instance v6, Lzi;
 
     .line 16
     .line 17
-    const-string v1, "Ad group insertion failed - present in snapshot"
+    const-string v7, "AD_CTA_TYPE_NONE"
 
     .line 18
     .line 19
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 20
     .line 21
     .line 22
-    return-object v0
+    sput-object v6, Lzi;->b:Lzi;
 
     .line 23
-    :pswitch_0
-    iget-object v0, p0, Lzi;->c:LSn;
-
     .line 24
+    new-instance v7, Lzi;
+
     .line 25
-    const-string v1, "doubleInserted"
-
     .line 26
+    const-string v8, "AD_CTA_TYPE_INFO_CARD"
+
     .line 27
-    iget-object v2, p0, Lzi;->b:LBi;
-
     .line 28
-    .line 29
-    invoke-virtual {v2, v0, v1}, LBi;->q(LSn;Ljava/lang/String;)V
+    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 29
     .line 30
     .line 31
+    sput-object v7, Lzi;->c:Lzi;
+
     .line 32
-    new-instance v0, Ljava/lang/IllegalStateException;
-
     .line 33
+    new-instance v8, Lzi;
+
     .line 34
-    const-string v1, "Ad group insertion failed due to double-insertion"
-
     .line 35
-    .line 36
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    const-string v9, "AD_CTA_TYPE_COLLECTION"
 
+    .line 36
     .line 37
+    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 38
     .line 39
-    return-object v0
-
     .line 40
-    :pswitch_1
-    iget-object v0, p0, Lzi;->c:LSn;
+    sput-object v8, Lzi;->t:Lzi;
 
     .line 41
     .line 42
-    const-string v1, "failed"
+    new-instance v9, Lzi;
 
     .line 43
     .line 44
-    iget-object v2, p0, Lzi;->b:LBi;
+    const-string v10, "AD_CTA_TYPE_STICKER_CTA"
 
     .line 45
     .line 46
-    invoke-virtual {v2, v0, v1}, LBi;->q(LSn;Ljava/lang/String;)V
+    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 47
     .line 48
     .line 49
-    new-instance v0, Ljava/lang/IllegalStateException;
+    const/4 v10, 0x5
 
     .line 50
+    new-array v10, v10, [Lzi;
+
     .line 51
-    const-string v1, "Ad group insertion failed due to reference group not present"
-
     .line 52
-    .line 53
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    aput-object v5, v10, v4
 
+    .line 53
     .line 54
+    aput-object v6, v10, v3
+
     .line 55
     .line 56
-    return-object v0
+    aput-object v7, v10, v2
 
     .line 57
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 58
+    aput-object v8, v10, v1
+
+    .line 59
+    .line 60
+    aput-object v9, v10, v0
+
+    .line 61
+    .line 62
+    sput-object v10, Lzi;->X:[Lzi;
+
+    .line 63
+    .line 64
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lzi;
+    .locals 1
+
+    .line 1
+    const-class v0, Lzi;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lzi;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lzi;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lzi;->X:[Lzi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lzi;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

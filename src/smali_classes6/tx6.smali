@@ -1,363 +1,440 @@
 .class public final Ltx6;
-.super Lcii;
+.super LRhh;
 .source "SourceFile"
 
 
 # instance fields
-.field public final d:LwX4;
+.field public final synthetic h:I
 
-.field public final e:LwX4;
-
-.field public final f:Lrn0;
-
-.field public final g:LBre;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(LwX4;LwX4;)V
-    .locals 3
+.method public constructor <init>(LDB4;LDB4;LDB4;LQS9;LyPf;)V
+    .locals 7
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Ltx6;->h:I
+
+    move-object v1, p0
+
+    move-object v4, p1
+
+    move-object v3, p2
+
+    move-object v6, p3
+
+    move-object v2, p4
+
+    move-object v5, p5
 
     .line 1
-    new-instance v0, Lwzb;
+    invoke-direct/range {v1 .. v6}, LRhh;-><init>(LQS9;LDBe;LDBe;LyPf;LDBe;)V
 
     .line 2
+    const-string p1, "DraftsGridRepository"
+
+    iput-object p1, v1, Ltx6;->i:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(LQS9;Lbb5;Lbb5;LyPf;Lbb5;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Ltx6;->h:I
+
     .line 3
-    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    invoke-direct/range {p0 .. p5}, LRhh;-><init>(LQS9;LDBe;LDBe;LyPf;LDBe;)V
+
+    move-object p1, p0
 
     .line 4
-    .line 5
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    const-string p2, "FavoriteStoryGridRepository"
 
-    .line 6
-    .line 7
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+    iput-object p2, p1, Ltx6;->i:Ljava/lang/String;
 
-    .line 8
-    .line 9
-    .line 10
-    const/4 v1, 0x0
-
-    .line 11
-    invoke-direct {v0, v1, v1, v1, v2}, Lwzb;-><init>(ZZZLio/reactivex/rxjava3/core/Observable;)V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-direct {p0, v0}, Lcii;-><init>(LnJb;)V
-
-    .line 15
-    .line 16
-    .line 17
-    iput-object p1, p0, Ltx6;->d:LwX4;
-
-    .line 18
-    .line 19
-    iput-object p2, p0, Ltx6;->e:LwX4;
-
-    .line 20
-    .line 21
-    sget-object p1, Ljwb;->Z:Ljwb;
-
-    .line 22
-    .line 23
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 24
-    .line 25
-    .line 26
-    const-string p2, "DreamsTabSource"
-
-    .line 27
-    .line 28
-    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 29
-    .line 30
-    .line 31
-    sget-object v0, Lrn0;->a:Lrn0;
-
-    .line 32
-    .line 33
-    iput-object v0, p0, Ltx6;->f:Lrn0;
-
-    .line 34
-    .line 35
-    new-instance v0, LWm0;
-
-    .line 36
-    .line 37
-    invoke-direct {v0, p1, p2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
-
-    .line 38
-    .line 39
-    .line 40
-    new-instance p1, LBre;
-
-    .line 41
-    .line 42
-    invoke-direct {p1, v0}, LBre;-><init>(LWm0;)V
-
-    .line 43
-    .line 44
-    .line 45
-    iput-object p1, p0, Ltx6;->g:LBre;
-
-    .line 46
-    .line 47
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()V
-    .locals 5
+.method public final bridge synthetic a(ILnpd;Lfg5;)LtJe;
+    .locals 1
 
     .line 1
-    sget-object v0, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
+    iget v0, p0, Ltx6;->h:I
 
     .line 2
     .line 3
-    iget-object v0, p0, Ltx6;->d:LwX4;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
-
     .line 6
+    check-cast p2, LMhh;
+
     .line 7
     .line 8
-    move-result-object v1
+    invoke-virtual {p0, p1, p2, p3}, Ltx6;->p(ILMhh;Lfg5;)LtJe;
 
     .line 9
-    check-cast v1, LSv6;
-
     .line 10
     .line 11
-    invoke-virtual {v1}, LSv6;->a()Lio/reactivex/rxjava3/core/Single;
+    move-result-object p1
 
     .line 12
-    .line 13
-    .line 14
-    move-result-object v2
+    return-object p1
 
+    .line 13
+    :pswitch_0
+    check-cast p2, LMhh;
+
+    .line 14
     .line 15
-    new-instance v3, Lp76;
+    invoke-virtual {p0, p1, p2, p3}, Ltx6;->p(ILMhh;Lfg5;)LtJe;
 
     .line 16
     .line 17
-    const/16 v4, 0x11
+    .line 18
+    move-result-object p1
+
+    .line 19
+    return-object p1
+
+    .line 20
+    nop
+
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final bridge synthetic b(Lnpd;Lfg5;ZZ)LtJe;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Ltx6;->h:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, LMhh;
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, p1, p2, p3, p4}, Ltx6;->q(LMhh;Lfg5;ZZ)LtJe;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    return-object p1
+
+    .line 13
+    :pswitch_0
+    check-cast p1, LMhh;
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1, p2, p3, p4}, Ltx6;->q(LMhh;Lfg5;ZZ)LtJe;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    return-object p1
+
+    .line 20
+    nop
+
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final j()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Ltx6;->h:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Ltx6;->i:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    iget-object v0, p0, Ltx6;->i:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final p(ILMhh;Lfg5;)LtJe;
+    .locals 8
+
+    .line 1
+    iget p3, p0, Ltx6;->h:I
+
+    .line 2
+    .line 3
+    packed-switch p3, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, LEh5;->d()LPWb;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p3
+
+    .line 10
+    check-cast p3, LQWb;
+
+    .line 11
+    .line 12
+    iget-object v1, p3, LQWb;->n:LVg7;
+
+    .line 13
+    .line 14
+    int-to-long v5, p1
+
+    .line 15
+    sget-object p1, Lwg7;->f0:Lwg7;
+
+    .line 16
+    .line 17
+    new-instance v0, LiN1;
 
     .line 18
     .line 19
-    invoke-direct {v3, v4, v1}, Lp76;-><init>(ILjava/lang/Object;)V
+    new-instance v7, LUg7;
 
     .line 20
     .line 21
+    const/4 p1, 0x3
+
     .line 22
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-direct {v7, v1, p1}, LUg7;-><init>(LVg7;I)V
 
     .line 23
     .line 24
-    invoke-direct {v1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 25
+    iget-wide v2, p2, LMhh;->a:J
+
     .line 26
     .line 27
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Single;->B()Lio/reactivex/rxjava3/core/Observable;
+    iget-object v4, p2, LMhh;->b:Ljava/lang/String;
 
     .line 28
     .line 29
+    invoke-direct/range {v0 .. v7}, LiN1;-><init>(LVg7;JLjava/lang/String;JLUg7;)V
+
     .line 30
-    move-result-object v1
-
     .line 31
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
-
     .line 32
+    return-object v0
+
     .line 33
+    :pswitch_0
+    invoke-virtual {p0}, LEh5;->d()LPWb;
+
     .line 34
-    move-result-object v2
-
     .line 35
-    check-cast v2, LSv6;
-
     .line 36
+    move-result-object p1
+
     .line 37
-    invoke-virtual {v2}, LSv6;->b()Lio/reactivex/rxjava3/core/Single;
+    check-cast p1, LQWb;
 
     .line 38
     .line 39
-    .line 40
-    move-result-object v2
+    iget-object p1, p1, LQWb;->f:Lwx6;
 
+    .line 40
     .line 41
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Single;->B()Lio/reactivex/rxjava3/core/Observable;
+    const/4 p2, 0x1
 
     .line 42
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 43
     .line 44
-    move-result-object v2
-
     .line 45
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
+    move-result-object p2
 
     .line 46
+    sget-object p3, Lrx6;->f0:Lrx6;
+
     .line 47
     .line 48
-    move-result-object v0
+    invoke-virtual {p1, p2, p3}, Lwx6;->e(Ljava/lang/Integer;LE88;)LSC;
 
     .line 49
-    check-cast v0, LSv6;
-
     .line 50
     .line 51
-    iget-object v0, v0, LSv6;->c:LDS4;
+    move-result-object p1
 
     .line 52
+    return-object p1
+
     .line 53
-    invoke-virtual {v0}, LDS4;->get()Ljava/lang/Object;
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v0
+.method public final q(LMhh;Lfg5;ZZ)LtJe;
+    .locals 7
 
-    .line 57
-    check-cast v0, LpC3;
+    .line 1
+    iget p2, p0, Ltx6;->h:I
 
-    .line 58
-    .line 59
-    sget-object v3, Lwx6;->t0:Lwx6;
+    .line 2
+    .line 3
+    packed-switch p2, :pswitch_data_0
 
-    .line 60
-    .line 61
-    invoke-interface {v0, v3}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, LEh5;->d()LPWb;
 
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v0
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p2
 
-    .line 65
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Single;->B()Lio/reactivex/rxjava3/core/Observable;
+    .line 10
+    check-cast p2, LQWb;
 
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v0
+    .line 11
+    .line 12
+    iget-object v1, p2, LQWb;->n:LVg7;
 
-    .line 69
-    new-instance v3, LVm6;
+    .line 13
+    .line 14
+    sget-object p2, Lxg7;->f0:Lxg7;
 
-    .line 70
-    .line 71
-    const/4 v4, 0x4
+    .line 15
+    .line 16
+    new-instance v0, LP73;
 
-    .line 72
-    invoke-direct {v3, v4, p0}, LVm6;-><init>(ILjava/lang/Object;)V
+    .line 17
+    .line 18
+    new-instance v5, LUg7;
 
-    .line 73
-    .line 74
-    .line 75
-    invoke-static {v1, v2, v0, v3}, Lio/reactivex/rxjava3/core/Observable;->v(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function3;)Lio/reactivex/rxjava3/core/Observable;
+    .line 19
+    .line 20
+    const/4 p2, 0x4
 
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v0
+    .line 21
+    invoke-direct {v5, v1, p2}, LUg7;-><init>(LVg7;I)V
 
-    .line 79
-    sget-object v1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+    .line 22
+    .line 23
+    .line 24
+    iget-wide v2, p1, LMhh;->a:J
 
-    .line 80
-    .line 81
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    .line 25
+    .line 26
+    iget-object v4, p1, LMhh;->b:Ljava/lang/String;
 
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v0
+    .line 27
+    .line 28
+    const/4 v6, 0x5
 
-    .line 85
-    iget-object v1, p0, Ltx6;->g:LBre;
+    .line 29
+    invoke-direct/range {v0 .. v6}, LP73;-><init>(Lvej;JLjava/lang/Object;LJP9;I)V
 
-    .line 86
-    .line 87
-    invoke-virtual {v1}, LBre;->d()LF06;
+    .line 30
+    .line 31
+    .line 32
+    return-object v0
 
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v2
+    .line 33
+    :pswitch_0
+    invoke-virtual {p0}, LEh5;->d()LPWb;
 
-    .line 91
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p1
 
-    .line 92
-    .line 93
-    invoke-direct {v3, v0, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    .line 37
+    check-cast p1, LQWb;
 
-    .line 94
-    .line 95
-    .line 96
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    .line 38
+    .line 39
+    iget-object p1, p1, LQWb;->f:Lwx6;
 
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v0
+    .line 40
+    .line 41
+    const/4 p2, 0x1
 
-    .line 100
-    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    .line 42
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 101
-    .line 102
-    .line 103
-    move-result-object v0
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p2
 
-    .line 104
-    new-instance v1, Lsx6;
+    .line 46
+    sget-object p3, Lsx6;->f0:Lsx6;
 
-    .line 105
-    .line 106
-    const/4 v2, 0x0
+    .line 47
+    .line 48
+    invoke-virtual {p1, p2, p3}, Lwx6;->e(Ljava/lang/Integer;LE88;)LSC;
 
-    .line 107
-    invoke-direct {v1, p0, v2}, Lsx6;-><init>(Ltx6;I)V
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p1
 
-    .line 108
-    .line 109
-    .line 110
-    new-instance v2, Lsx6;
+    .line 52
+    return-object p1
 
-    .line 111
-    .line 112
-    const/4 v3, 0x1
-
-    .line 113
-    invoke-direct {v2, p0, v3}, Lsx6;-><init>(Ltx6;I)V
-
-    .line 114
-    .line 115
-    .line 116
-    const/4 v3, 0x2
-
-    .line 117
-    const/4 v4, 0x0
-
-    .line 118
-    invoke-static {v0, v1, v4, v2, v3}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 119
-    .line 120
-    .line 121
-    move-result-object v0
-
-    .line 122
-    invoke-virtual {p0, v0}, Lcii;->a(Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 123
-    .line 124
-    .line 125
-    return-void
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

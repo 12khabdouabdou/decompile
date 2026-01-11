@@ -1,10 +1,10 @@
 .class public final Lcom/snap/chat_reactions/BitmojiChatReactionMetadata;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'intentId\':d,\'templateId\':s?,\'animatedTemplateId\':s?,\'nonBitmojiUrl\':s?,\'animatedNonBitmojiUrl\':s?,\'snapchatPlusExclusive\':b@?"
     typeReferences = {}

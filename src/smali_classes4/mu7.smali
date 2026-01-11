@@ -2,17 +2,28 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LgY3;
+
 
 # instance fields
-.field public final a:J
+.field public final X:LREi;
 
-.field public final b:LBN7;
+.field public final Y:LREi;
 
-.field public final c:Ljava/lang/String;
+.field public final Z:Lio/reactivex/rxjava3/disposables/Disposable;
+
+.field public final a:Ljava/io/File;
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:Lux5;
+
+.field public final t:LVU3;
 
 
 # direct methods
-.method public constructor <init>(JLBN7;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/io/File;Ljava/lang/String;Lux5;LVU3;)V
     .locals 0
 
     .line 1
@@ -21,263 +32,416 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, Lmu7;->a:J
+    iput-object p1, p0, Lmu7;->a:Ljava/io/File;
 
     .line 5
     .line 6
-    iput-object p3, p0, Lmu7;->b:LBN7;
+    iput-object p2, p0, Lmu7;->b:Ljava/lang/String;
 
     .line 7
     .line 8
-    iput-object p4, p0, Lmu7;->c:Ljava/lang/String;
+    iput-object p3, p0, Lmu7;->c:Lux5;
 
     .line 9
     .line 10
+    iput-object p4, p0, Lmu7;->t:LVU3;
+
+    .line 11
+    .line 12
+    new-instance p1, Llu7;
+
+    .line 13
+    .line 14
+    const/4 p2, 0x0
+
+    .line 15
+    invoke-direct {p1, p0, p2}, Llu7;-><init>(Lmu7;I)V
+
+    .line 16
+    .line 17
+    .line 18
+    new-instance p2, LREi;
+
+    .line 19
+    .line 20
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object p2, p0, Lmu7;->X:LREi;
+
+    .line 24
+    .line 25
+    new-instance p1, Llu7;
+
+    .line 26
+    .line 27
+    const/4 p2, 0x1
+
+    .line 28
+    invoke-direct {p1, p0, p2}, Llu7;-><init>(Lmu7;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    new-instance p2, LREi;
+
+    .line 32
+    .line 33
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 34
+    .line 35
+    .line 36
+    iput-object p2, p0, Lmu7;->Y:LREi;
+
+    .line 37
+    .line 38
+    new-instance p1, LUp7;
+
+    .line 39
+    .line 40
+    const/4 p2, 0x3
+
+    .line 41
+    invoke-direct {p1, p2, p0}, LUp7;-><init>(ILjava/lang/Object;)V
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-static {p1}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p1
+
+    .line 48
+    iput-object p1, p0, Lmu7;->Z:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 49
+    .line 50
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final Z()LDi7;
+    .locals 1
+
+    .line 1
+    new-instance v0, LDi7;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, LDi7;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lmu7;->Z:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final d1()Z
+    .locals 1
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lmu7;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lmu7;
-
-    .line 12
-    .line 13
-    iget-wide v3, p1, Lmu7;->a:J
-
-    .line 14
-    .line 15
-    iget-wide v5, p0, Lmu7;->a:J
-
-    .line 16
-    .line 17
-    cmp-long v1, v5, v3
-
-    .line 18
-    .line 19
-    if-eqz v1, :cond_2
-
-    .line 20
-    .line 21
-    return v2
-
-    .line 22
-    :cond_2
-    iget-object v1, p0, Lmu7;->b:LBN7;
-
-    .line 23
-    .line 24
-    iget-object v3, p1, Lmu7;->b:LBN7;
-
-    .line 25
-    .line 26
-    if-eq v1, v3, :cond_3
-
-    .line 27
-    .line 28
-    return v2
-
-    .line 29
-    :cond_3
-    iget-object v1, p0, Lmu7;->c:Ljava/lang/String;
-
-    .line 30
-    .line 31
-    iget-object p1, p1, Lmu7;->c:Ljava/lang/String;
-
-    .line 32
-    .line 33
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p1
-
-    .line 37
-    if-nez p1, :cond_4
-
-    .line 38
-    .line 39
-    return v2
-
-    .line 40
-    :cond_4
     return v0
 .end method
 
-.method public final hashCode()I
+.method public final dispose()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lmu7;->Z:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final f2()LgY3;
     .locals 5
 
     .line 1
-    const/16 v0, 0x20
+    iget-object v0, p0, Lmu7;->Z:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 2
     .line 3
-    iget-wide v1, p0, Lmu7;->a:J
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
 
     .line 4
     .line 5
-    ushr-long v3, v1, v0
-
     .line 6
+    move-result v0
+
     .line 7
-    xor-long/2addr v1, v3
+    if-nez v0, :cond_0
 
     .line 8
-    long-to-int v0, v1
-
     .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    new-instance v0, Lmu7;
 
     .line 10
     .line 11
-    iget-object v1, p0, Lmu7;->b:LBN7;
+    iget-object v1, p0, Lmu7;->c:Lux5;
 
     .line 12
     .line 13
-    if-nez v1, :cond_0
+    invoke-virtual {v1}, Lux5;->a()Lux5;
 
     .line 14
     .line 15
-    const/4 v1, 0x0
-
     .line 16
-    goto :goto_0
+    move-result-object v1
 
     .line 17
+    iget-object v2, p0, Lmu7;->a:Ljava/io/File;
+
+    .line 18
+    .line 19
+    iget-object v3, p0, Lmu7;->b:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    iget-object v4, p0, Lmu7;->t:LVU3;
+
+    .line 22
+    .line 23
+    invoke-direct {v0, v2, v3, v1, v4}, Lmu7;-><init>(Ljava/io/File;Ljava/lang/String;Lux5;LVU3;)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-object v0
+
+    .line 27
     :cond_0
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    :goto_0
-    add-int/2addr v0, v1
-
-    .line 22
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 23
-    .line 24
-    iget-object v1, p0, Lmu7;->c:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    .line 27
     .line 28
     .line 29
-    move-result v1
+    const-string v1, "The result is already closed"
 
     .line 30
-    add-int/2addr v1, v0
-
     .line 31
-    return v1
-.end method
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "FindFriendLinkTypeAndRowWithUserIds(_id="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-wide v1, p0, Lmu7;->a:J
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", friendLinkType="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, Lmu7;->b:LBN7;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", userId="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, Lmu7;->c:Ljava/lang/String;
-
-    .line 29
-    .line 30
-    const-string v2, ")"
-
-    .line 31
     .line 32
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
     .line 33
     .line 34
-    .line 35
+    throw v0
+.end method
+
+.method public final h()LX7c;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lmu7;->Y:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 36
+    .line 7
+    check-cast v0, LX7c;
+
+    .line 8
+    .line 9
     return-object v0
+.end method
+
+.method public final i()Ljava/util/List;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lmu7;->Z:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lmu7;->X:LREi;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Ljava/util/List;
+
+    .line 16
+    .line 17
+    return-object v0
+
+    .line 18
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 19
+    .line 20
+    const-string v1, "The result is already closed"
+
+    .line 21
+    .line 22
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    throw v0
+.end method
+
+.method public final o0(Lcom/snapchat/client/content_manager/ConsumptionUseCase;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final x()LXc7;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 2
+    .line 3
+    const-string v1, "Result was successful"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
+.end method
+
+.method public final x0()Ljava/io/InputStream;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lmu7;->Z:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lmu7;->X:LREi;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Ljava/util/List;
+
+    .line 16
+    .line 17
+    const/4 v1, 0x0
+
+    .line 18
+    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    check-cast v0, Lhu7;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Lhu7;->l0()Ljava/io/InputStream;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v0
+
+    .line 28
+    return-object v0
+
+    .line 29
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    .line 30
+    .line 31
+    const-string v1, "The result is already closed"
+
+    .line 32
+    .line 33
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
+    throw v0
 .end method

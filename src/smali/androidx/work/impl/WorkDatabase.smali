@@ -1,5 +1,5 @@
 .class public abstract Landroidx/work/impl/WorkDatabase;
-.super Lm9f;
+.super LErf;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lm9f;-><init>()V
+    invoke-direct {p0}, LErf;-><init>()V
 
     .line 2
     .line 3
@@ -18,23 +18,23 @@
 
 
 # virtual methods
-.method public abstract p()Lp36;
+.method public abstract p()Lq66;
 .end method
 
-.method public abstract q()LiJd;
+.method public abstract q()Ly0e;
 .end method
 
-.method public abstract r()LBgi;
+.method public abstract r()LtFi;
 .end method
 
-.method public abstract s()LVZj;
+.method public abstract s()LZpk;
 .end method
 
-.method public abstract t()LWZj;
+.method public abstract t()Laqk;
 .end method
 
-.method public abstract u()Lf0k;
+.method public abstract u()Ljqk;
 .end method
 
-.method public abstract v()Lh0k;
+.method public abstract v()Llqk;
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/StoryCommentReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'reportedUserId\':s,\'snapId\':s,\'commentIdLowBits\':l,\'commentIdHighBits\':l,\'commentType\':r<e>:\'[0]\'"
     typeReferences = {

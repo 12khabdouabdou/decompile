@@ -1,5 +1,5 @@
 .class public final Lcom/snap/prompting/lib/takeover/TakeoverKickoffDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
@@ -12,7 +12,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -22,22 +22,22 @@
     .locals 2
 
     .line 2
-    invoke-static {}, Lfki;->a()LtB6;
+    invoke-static {}, LZIi;->a()LRE6;
 
     move-result-object v0
 
     const-string v1, ""
 
-    invoke-direct {p0, v0, v1}, Lcom/snap/prompting/lib/takeover/TakeoverKickoffDurableJob;-><init>(LtB6;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/snap/prompting/lib/takeover/TakeoverKickoffDurableJob;-><init>(LRE6;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;Ljava/lang/String;)V
+.method public constructor <init>(LRE6;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

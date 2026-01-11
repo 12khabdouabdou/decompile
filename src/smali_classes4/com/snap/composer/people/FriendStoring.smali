@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LUR7;
+    proxyClass = LbY7;
     schema = "\'getFriends\':f|m, w|(f|s|(a?<r:\'[0]\'>, m?<s,u>)),\'getBestFriends\':f|m, w|(f|s|(a?<r:\'[0]\'>, m?<s,u>)),\'getFriendCount\':f|m, w|(f|s|(d@?, r?:\'[1]\')),\'addFriend\':f|m, w|(r:\'[2]\', f?|s|(b@, r?:\'[3]\')),\'onFriendsUpdated\':f|m|(f()): f(),\'getFriendById\':f?|m, w|(s, f(r?:\'[0]\', m?<s,u>)),\'friendsObservable\':g?<c>:\'[4]\'<a<r:\'[0]\'>>,\'bestFriendsObservable\':g?<c>:\'[4]\'<a<r:\'[0]\'>>,\'friendCountObservable\':g?<c>:\'[4]\'<d@>"
     typeReferences = {
         Lcom/snap/composer/people/Friend;,
         Lcom/snap/composer/foundation/Error;,
         Lcom/snap/composer/people/AddFriendRequest;,
-        Lqw;,
+        LZx;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
 .end annotation
@@ -56,9 +56,6 @@
 .end method
 
 .method public abstract getFriendById(Ljava/lang/String;Lkotlin/jvm/functions/Function2;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -66,6 +63,9 @@
             "Lkotlin/jvm/functions/Function2;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

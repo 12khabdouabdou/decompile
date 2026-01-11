@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFX8;
-    schema = "\'onTrackSelected\':f|m|(r?:\'[0]\'),\'presentTopicPageForTrack\':f|m|(r:\'[1]\'),\'launchSpotlightTrendingSnap\':f|m|(r:\'[2]\'),\'onDismiss\':f?|m|(),\'expandTray\':f?|m|(),\'collapseTray\':f?|m|(),\'allowCollapsingTray\':f?|m|(),\'isTrayExpanded\':f?|m|(): b,\'onSelectTrack\':f?|m|(r:\'[1]\'),\'onDeselectTrack\':f?|m|(),\'onDismissAndPresentScrubber\':f?|m|(),\'pausePlayback\':f?|m|(b),\'onLaunchMusicSync\':f?|m|()"
+    proxyClass = Li59;
+    schema = "\'onTrackSelected\':f|m|(r?:\'[0]\'),\'presentTopicPageForTrack\':f|m|(r:\'[1]\'),\'launchSpotlightTrendingSnap\':f|m|(r:\'[2]\'),\'onDismiss\':f?|m|(),\'expandTray\':f?|m|(),\'collapseTray\':f?|m|(),\'allowCollapsingTray\':f?|m|(),\'isTrayExpanded\':f?|m|(): b,\'onSelectTrack\':f?|m|(r:\'[1]\'),\'onDeselectTrack\':f?|m|(),\'onTrackPreviewed\':f?|m|(r?:\'[1]\'),\'onTrackDownloaded\':f?|m|(r?:\'[0]\'),\'onDismissAndPresentScrubber\':f?|m|(),\'pausePlayback\':f?|m|(b),\'onLaunchMusicSync\':f?|m|()"
     typeReferences = {
         Lcom/snap/music/core/composer/PickerSelectedTrack;,
         Lcom/snap/music/core/composer/PickerTrack;,
@@ -21,22 +21,22 @@
 
 # virtual methods
 .method public abstract allowCollapsingTray()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract collapseTray()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract expandTray()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract isTrayExpanded()Z
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -44,27 +44,37 @@
 .end method
 
 .method public abstract onDeselectTrack()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onDismiss()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onDismissAndPresentScrubber()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onLaunchMusicSync()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onSelectTrack(Lcom/snap/music/core/composer/PickerTrack;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract onTrackDownloaded(Lcom/snap/music/core/composer/PickerSelectedTrack;)V
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract onTrackPreviewed(Lcom/snap/music/core/composer/PickerTrack;)V
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -72,7 +82,7 @@
 .end method
 
 .method public abstract pausePlayback(Z)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

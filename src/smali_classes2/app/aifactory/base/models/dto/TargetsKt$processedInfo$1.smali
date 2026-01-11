@@ -1,5 +1,5 @@
 .class final Lapp/aifactory/base/models/dto/TargetsKt$processedInfo$1;
-.super LrE9;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LrE9;",
+        "LJP9;",
         "Lkotlin/jvm/functions/Function1;"
     }
 .end annotation
@@ -46,7 +46,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, LrE9;-><init>(I)V
+    invoke-direct {p0, v0}, LJP9;-><init>(I)V
 
     return-void
 .end method

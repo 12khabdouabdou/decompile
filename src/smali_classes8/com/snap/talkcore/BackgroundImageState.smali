@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LpF0;
+    proxyClass = LhI0;
     schema = "\'backgroundImageId\':s,\'version\':d"
     typeReferences = {}
 .end annotation

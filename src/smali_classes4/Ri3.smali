@@ -1,243 +1,320 @@
 .class public final LRi3;
-.super Lvu1;
+.super LvSa;
 .source "SourceFile"
 
 
 # instance fields
-.field public final X:Ljava/util/LinkedHashMap;
+.field public final synthetic a:I
 
-.field public final c:LRK2;
-
-.field public final t:LGi3;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(LRK2;LGi3;)V
+.method public constructor <init>(LA93;)V
     .locals 1
 
+    const/4 v0, 0x1
+
+    iput v0, p0, LRi3;->a:I
+
     .line 1
-    const/16 v0, 0x8
+    const-string v0, "PurgeCachedCommentReactionsDurableJobProcessor"
+
+    invoke-direct {p0, v0}, LvSa;-><init>(Ljava/lang/String;)V
 
     .line 2
+    iput-object p1, p0, LRi3;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(LBk3;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, LRi3;->a:I
+
     .line 3
-    invoke-direct {p0, v0}, Lvu1;-><init>(I)V
+    const-string v0, "CommentReactDurableJobProcessor"
+
+    invoke-direct {p0, v0}, LvSa;-><init>(Ljava/lang/String;)V
 
     .line 4
-    .line 5
-    .line 6
-    iput-object p1, p0, LRi3;->c:LRK2;
+    iput-object p1, p0, LRi3;->b:Ljava/lang/Object;
 
-    .line 7
-    .line 8
-    iput-object p2, p0, LRi3;->t:LGi3;
-
-    .line 9
-    .line 10
-    new-instance p1, Ljava/util/LinkedHashMap;
-
-    .line 11
-    .line 12
-    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 13
-    .line 14
-    .line 15
-    iput-object p1, p0, LRi3;->X:Ljava/util/LinkedHashMap;
-
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final l()I
-    .locals 1
+.method public final i(LOE6;)Lio/reactivex/rxjava3/core/Single;
+    .locals 8
 
     .line 1
-    iget-object v0, p0, LRi3;->t:LGi3;
+    iget v0, p0, LRi3;->a:I
 
     .line 2
     .line 3
-    iget-object v0, v0, LGi3;->e:LVi3;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    iget-object v0, v0, LVi3;->a:[LUi3;
-
     .line 6
+    check-cast p1, Lcom/snap/content/comments/core/data/purge/PurgeCachedCommentReactionsDurableJob;
+
     .line 7
-    array-length v0, v0
-
     .line 8
-    return v0
-.end method
+    iget-object p1, p0, LRi3;->b:Ljava/lang/Object;
 
-.method public final x(Landroidx/viewpager/widget/ViewPager;I)Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    invoke-static {}, LUi3;->values()[LUi3;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    aget-object p2, v0, p2
-
-    .line 6
-    .line 7
-    iget-object v0, p0, LRi3;->X:Ljava/util/LinkedHashMap;
-
-    .line 8
     .line 9
-    invoke-virtual {v0, p2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 10
+    check-cast p1, LA93;
+
     .line 11
     .line 12
-    move-result-object v1
+    iget-object p1, p1, LA93;->b:Ljava/lang/Object;
 
     .line 13
-    if-nez v1, :cond_1
-
     .line 14
+    check-cast p1, LzK2;
+
     .line 15
-    iget-object v1, p0, LRi3;->c:LRK2;
-
     .line 16
+    iget-object v0, p1, LzK2;->t:Ljava/lang/Object;
+
     .line 17
-    iget-object v1, v1, LRK2;->b:Ljava/lang/Object;
-
     .line 18
+    check-cast v0, LREi;
+
     .line 19
-    check-cast v1, LDMe;
-
     .line 20
-    .line 21
-    invoke-virtual {v1, p2}, LDMe;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
+    .line 21
     .line 22
     .line 23
+    move-result-object v0
+
     .line 24
-    move-result-object v1
+    check-cast v0, Lzh5;
 
     .line 25
-    check-cast v1, Lxi3;
-
     .line 26
+    new-instance v1, LaF2;
+
     .line 27
-    if-eqz v1, :cond_0
-
     .line 28
+    const/16 v2, 0x1b
+
     .line 29
-    iget-object v2, p0, LRi3;->t:LGi3;
-
     .line 30
-    .line 31
-    invoke-interface {v1, p1, v2}, Lxi3;->a(Landroidx/viewpager/widget/ViewPager;LGi3;)Lwi3;
+    invoke-direct {v1, v2, p1}, LaF2;-><init>(ILjava/lang/Object;)V
 
+    .line 31
     .line 32
     .line 33
-    .line 34
-    move-result-object v1
+    const-string v2, "deleteExpiredReactions"
 
+    .line 34
     .line 35
-    invoke-interface {v0, p2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, v2, v1}, Lzh5;->t(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableResumeNext;
 
     .line 36
     .line 37
     .line 38
-    goto :goto_0
+    move-result-object v0
 
     .line 39
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    iget-object p1, p1, LzK2;->X:Ljava/lang/Object;
 
     .line 40
     .line 41
-    new-instance v0, Ljava/lang/StringBuilder;
+    check-cast p1, LnJe;
 
     .line 42
     .line 43
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {p1}, LnJe;->k()LA36;
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
     .line 47
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
     .line 48
     .line 49
-    const-string p2, " is not supported"
+    invoke-direct {v1, v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 50
     .line 51
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 52
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 53
     .line 54
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/core/Completable;->A(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
 
     .line 55
     .line 56
     .line 57
-    move-result-object p2
-
-    .line 58
-    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 59
-    .line 60
-    .line 61
-    throw p1
-
-    .line 62
-    :cond_1
-    :goto_0
-    check-cast v1, Lwi3;
-
-    .line 63
-    .line 64
-    invoke-interface {v1}, Lwi3;->b()Landroid/view/View;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object p2
-
-    .line 68
-    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
-    .line 69
-    .line 70
-    .line 71
-    invoke-interface {v1}, Lwi3;->b()Landroid/view/View;
-
-    .line 72
-    .line 73
-    .line 74
     move-result-object p1
 
-    .line 75
+    .line 58
     return-object p1
-.end method
 
-.method public final y(Landroid/view/View;Ljava/lang/Object;)Z
-    .locals 0
+    .line 59
+    :pswitch_0
+    check-cast p1, Lcom/snap/content/comments/core/actions/reaction/CommentReactDurableJob;
 
-    .line 1
-    invoke-virtual {p1, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    .line 60
+    .line 61
+    iget-object p1, p1, LOE6;->b:Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
+    .line 62
+    .line 63
+    check-cast p1, LSi3;
 
-    .line 5
-    return p1
+    .line 64
+    .line 65
+    invoke-virtual {p1}, LSi3;->d()Ljava/lang/String;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v3
+
+    .line 69
+    invoke-virtual {p1}, LSi3;->a()Ljava/util/UUID;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v2
+
+    .line 73
+    invoke-virtual {p1}, LSi3;->c()LTi3;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v4
+
+    .line 77
+    invoke-virtual {p1}, LSi3;->b()LiI3;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v5
+
+    .line 81
+    iget-object p1, p0, LRi3;->b:Ljava/lang/Object;
+
+    .line 82
+    .line 83
+    move-object v1, p1
+
+    .line 84
+    check-cast v1, LBk3;
+
+    .line 85
+    .line 86
+    invoke-virtual {v1}, LBk3;->g()Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object p1
+
+    .line 90
+    iget-object v0, v1, LBk3;->f:LnJe;
+
+    .line 91
+    .line 92
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v0
+
+    .line 96
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 97
+    .line 98
+    invoke-direct {v7, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 99
+    .line 100
+    .line 101
+    new-instance v0, LzK2;
+
+    .line 102
+    .line 103
+    const/4 v6, 0x6
+
+    .line 104
+    invoke-direct/range {v0 .. v6}, LzK2;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 105
+    .line 106
+    .line 107
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 108
+    .line 109
+    invoke-direct {p1, v7, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 110
+    .line 111
+    .line 112
+    new-instance v0, Lob;
+
+    .line 113
+    .line 114
+    const/16 v5, 0x1c
+
+    .line 115
+    .line 116
+    invoke-direct {v0, v3, v2, v4, v5}, Lob;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 117
+    .line 118
+    .line 119
+    const-string v2, "replyreact"
+
+    .line 120
+    .line 121
+    invoke-virtual {v1, p1, v2, v0}, LBk3;->h(Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
+
+    .line 122
+    .line 123
+    .line 124
+    move-result-object p1
+
+    .line 125
+    sget-object v0, LK6c;->z0:LK6c;
+
+    .line 126
+    .line 127
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 128
+    .line 129
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 130
+    .line 131
+    .line 132
+    return-object v1
+
+    .line 133
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,62 +1,37 @@
-.class public final Leeg;
-.super Lcom/snap/composer/utils/b;
+.class public interface abstract Leeg;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/composer/utils/ComposerMarshallable;
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    schema = "\'upsellType\':r<e>:\'[0]\',\'thumbnail\':r?:\'[1]\',\'linkText\':s?"
+    proxyClass = Lfeg;
+    schema = "\'getSubjectsWithFeatures\':f|m|(a<s>): p<a<r:\'[0]\'>>"
     typeReferences = {
-        Lcom/snap/sharing/share_sheet/UpsellType;,
-        Lcom/snap/impala/common/media/IImage;
+        Lcom/snap/modules/send_to_ranking/Subject;
     }
 .end annotation
 
 
-# instance fields
-.field private _linkText:Ljava/lang/String;
-
-.field private _thumbnail:Lcom/snap/impala/common/media/IImage;
-
-.field private _upsellType:Lcom/snap/sharing/share_sheet/UpsellType;
-
-
-# direct methods
-.method public constructor <init>(Lcom/snap/sharing/share_sheet/UpsellType;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Leeg;->_upsellType:Lcom/snap/sharing/share_sheet/UpsellType;
-
-    const/4 p1, 0x0
-
-    .line 3
-    iput-object p1, p0, Leeg;->_thumbnail:Lcom/snap/impala/common/media/IImage;
-
-    .line 4
-    iput-object p1, p0, Leeg;->_linkText:Ljava/lang/String;
-
-    return-void
+# virtual methods
+.method public abstract getSubjectsWithFeatures(Ljava/util/List;)Lcom/snap/composer/promise/Promise;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/util/List<",
+            "Lcom/snap/modules/send_to_ranking/Subject;",
+            ">;>;"
+        }
+    .end annotation
 .end method
 
-.method public constructor <init>(Lcom/snap/sharing/share_sheet/UpsellType;Lcom/snap/impala/common/media/IImage;Ljava/lang/String;)V
-    .locals 0
-
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 6
-    iput-object p1, p0, Leeg;->_upsellType:Lcom/snap/sharing/share_sheet/UpsellType;
-
-    .line 7
-    iput-object p2, p0, Leeg;->_thumbnail:Lcom/snap/impala/common/media/IImage;
-
-    .line 8
-    iput-object p3, p0, Leeg;->_linkText:Ljava/lang/String;
-
-    return-void
+.method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
 .end method

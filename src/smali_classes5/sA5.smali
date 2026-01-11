@@ -1,6 +1,29 @@
 .class public final LsA5;
-.super Ljava/lang/Object;
+.super LvA5;
 .source "SourceFile"
 
-# interfaces
-.implements Lmg9;
+
+# static fields
+.field public static final a:LsA5;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LsA5;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LsA5;->a:LsA5;
+
+    .line 7
+    .line 8
+    return-void
+.end method

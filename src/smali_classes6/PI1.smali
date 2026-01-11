@@ -1,36 +1,47 @@
-.class public abstract LPI1;
-.super Ljava/lang/Object;
+.class public final LPI1;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LWm0;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'type\':r<e>:\'[0]\',\'filterId\':s?,\'venueOffset\':d@?"
+    typeReferences = {
+        Lcom/snap/modules/filter_item/CTAType;
+    }
+.end annotation
+
+
+# instance fields
+.field private _filterId:Ljava/lang/String;
+
+.field private _type:Lcom/snap/modules/filter_item/CTAType;
+
+.field private _venueOffset:Ljava/lang/Double;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lcom/snap/modules/filter_item/CTAType;Ljava/lang/String;Ljava/lang/Double;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Ljwb;->Z:Ljwb;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "CUPSUploadDelegate"
-
     .line 4
-    .line 5
-    invoke-static {v0, v0, v1}, LmG8;->d(Ljwb;Ljwb;Ljava/lang/String;)LWm0;
+    iput-object p1, p0, LPI1;->_type:Lcom/snap/modules/filter_item/CTAType;
 
+    .line 5
     .line 6
+    iput-object p2, p0, LPI1;->_filterId:Ljava/lang/String;
+
     .line 7
     .line 8
-    move-result-object v0
+    iput-object p3, p0, LPI1;->_venueOffset:Ljava/lang/Double;
 
     .line 9
-    sput-object v0, LPI1;->a:LWm0;
-
     .line 10
-    .line 11
     return-void
 .end method

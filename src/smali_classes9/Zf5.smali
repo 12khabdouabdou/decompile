@@ -1,13 +1,9 @@
 .class public LZf5;
-.super Lew0;
+.super Lbkh;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LVz9;
-    value = LqYg;
-.end annotation
-
 .annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
     value = Lag5;
 .end annotation
@@ -18,23 +14,27 @@
     }
 .end annotation
 
+.annotation runtime LnJ9;
+    value = Ldkh;
+.end annotation
+
 
 # instance fields
-.field public e:Ljava/lang/String;
+.field public a:Ljava/lang/String;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "deep_link_action"
+        value = "type"
     .end annotation
 .end field
 
-.field public f:Ljava/lang/String;
+.field public b:Ljava/lang/Long;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "friend_username"
+        value = "time"
     .end annotation
 .end field
 
-.field public g:Ljava/lang/String;
+.field public c:Ljava/lang/String;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "link_id"
+        value = "timeZone"
     .end annotation
 .end field
 
@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lew0;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
@@ -92,81 +92,69 @@
 
     .line 14
     .line 15
-    invoke-super {p0, p1}, Lew0;->equals(Ljava/lang/Object;)Z
+    iget-object v2, p0, LZf5;->a:Ljava/lang/String;
 
     .line 16
     .line 17
-    .line 18
-    move-result v2
+    iget-object v3, p1, LZf5;->a:Ljava/lang/String;
 
+    .line 18
     .line 19
-    if-eqz v2, :cond_2
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 20
     .line 21
-    iget-object v2, p0, LZf5;->e:Ljava/lang/String;
-
     .line 22
+    move-result v2
+
     .line 23
-    iget-object v3, p1, LZf5;->e:Ljava/lang/String;
+    if-eqz v2, :cond_2
 
     .line 24
     .line 25
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v2, p0, LZf5;->b:Ljava/lang/Long;
 
     .line 26
     .line 27
-    .line 28
-    move-result v2
+    iget-object v3, p1, LZf5;->b:Ljava/lang/Long;
 
+    .line 28
     .line 29
-    if-eqz v2, :cond_2
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31
-    iget-object v2, p0, LZf5;->f:Ljava/lang/String;
-
     .line 32
+    move-result v2
+
     .line 33
-    iget-object v3, p1, LZf5;->f:Ljava/lang/String;
+    if-eqz v2, :cond_2
 
     .line 34
     .line 35
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v2, p0, LZf5;->c:Ljava/lang/String;
 
     .line 36
     .line 37
-    .line 38
-    move-result v2
+    iget-object p1, p1, LZf5;->c:Ljava/lang/String;
 
+    .line 38
     .line 39
-    if-eqz v2, :cond_2
+    invoke-static {v2, p1}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 40
     .line 41
-    iget-object v2, p0, LZf5;->g:Ljava/lang/String;
-
     .line 42
+    move-result p1
+
     .line 43
-    iget-object p1, p1, LZf5;->g:Ljava/lang/String;
+    if-eqz p1, :cond_2
 
     .line 44
     .line 45
-    invoke-static {v2, p1}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 46
-    .line 47
-    .line 48
-    move-result p1
-
-    .line 49
-    if-eqz p1, :cond_2
-
-    .line 50
-    .line 51
     return v0
 
-    .line 52
+    .line 46
     :cond_2
     :goto_0
     return v1
@@ -176,110 +164,98 @@
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lew0;->hashCode()I
+    iget-object v0, p0, LZf5;->a:Ljava/lang/String;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    move-result v0
+    if-nez v0, :cond_0
 
     .line 5
-    add-int/lit8 v0, v0, 0x11
-
     .line 6
+    const/4 v0, 0x0
+
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    goto :goto_0
 
     .line 8
-    .line 9
-    iget-object v1, p0, LZf5;->e:Ljava/lang/String;
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
+    .line 9
     .line 10
     .line 11
-    const/4 v2, 0x0
+    move-result v0
 
     .line 12
-    if-nez v1, :cond_0
+    :goto_0
+    const/16 v2, 0x20f
 
     .line 13
     .line 14
-    const/4 v1, 0x0
+    add-int/2addr v2, v0
 
     .line 15
-    goto :goto_0
+    mul-int/lit8 v2, v2, 0x1f
 
     .line 16
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
     .line 17
+    iget-object v0, p0, LZf5;->b:Ljava/lang/Long;
+
     .line 18
     .line 19
-    move-result v1
+    if-nez v0, :cond_1
 
     .line 20
-    :goto_0
-    add-int/2addr v0, v1
-
     .line 21
-    mul-int/lit8 v0, v0, 0x1f
+    const/4 v0, 0x0
 
     .line 22
+    goto :goto_1
+
     .line 23
-    iget-object v1, p0, LZf5;->f:Ljava/lang/String;
+    :cond_1
+    invoke-virtual {v0}, Ljava/lang/Long;->hashCode()I
 
     .line 24
     .line 25
-    if-nez v1, :cond_1
-
     .line 26
+    move-result v0
+
     .line 27
-    const/4 v1, 0x0
+    :goto_1
+    add-int/2addr v2, v0
 
     .line 28
-    goto :goto_1
+    mul-int/lit8 v2, v2, 0x1f
 
     .line 29
-    :cond_1
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
     .line 30
+    iget-object v0, p0, LZf5;->c:Ljava/lang/String;
+
     .line 31
     .line 32
-    move-result v1
+    if-nez v0, :cond_2
 
     .line 33
-    :goto_1
-    add-int/2addr v0, v1
-
     .line 34
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 35
-    .line 36
-    iget-object v1, p0, LZf5;->g:Ljava/lang/String;
-
-    .line 37
-    .line 38
-    if-nez v1, :cond_2
-
-    .line 39
-    .line 40
     goto :goto_2
 
-    .line 41
+    .line 35
     :cond_2
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
-    .line 42
-    .line 43
-    .line 44
-    move-result v2
+    .line 36
+    .line 37
+    .line 38
+    move-result v1
 
-    .line 45
+    .line 39
     :goto_2
-    add-int/2addr v0, v2
+    add-int/2addr v2, v1
 
-    .line 46
-    return v0
+    .line 40
+    return v2
 .end method

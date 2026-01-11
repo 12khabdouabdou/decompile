@@ -1,10 +1,10 @@
 .class public final Lxv5;
-.super Lyv5;
+.super LIXd;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Lxv5;
+.field public static final b:Lxv5;
 
 
 # direct methods
@@ -21,9 +21,32 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lxv5;->a:Lxv5;
+    sput-object v0, Lxv5;->b:Lxv5;
 
     .line 7
     .line 8
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Landroid/animation/Animator;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "CarouselViewState.Hidden"
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

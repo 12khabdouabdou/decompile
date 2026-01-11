@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LWY8;
+    proxyClass = LF69;
     schema = "\'playItems\':f|m|(f(f(r?:\'[0]\', s?)), r:\'[1]\', r:\'[2]\', f?(s?), f?(d@, s, f(r:\'[1]\')), g?<c>:\'[3]\'<r:\'[0]\'>, r?:\'[4]\'),\'playFeedCards\':f|m|(g<c>:\'[3]\'<a<r:\'[5]\'>>, d, r:\'[6]\', r:\'[2]\', f(s, f(r:\'[6]\'))),\'isPresenting\':f|m|(): b,\'dismiss\':f?|m|(b)"
     typeReferences = {
         Lcom/snap/composer/storyplayer/PlayerItems;,
@@ -25,7 +25,7 @@
 
 # virtual methods
 .method public abstract dismiss(Z)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

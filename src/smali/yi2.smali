@@ -1,20 +1,16 @@
 .class public final Lyi2;
-.super LyT3;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime Lcom/snap/content/UriHandlerPathSpec;
-    value = "caption_style_typeface/*"
-.end annotation
-
-
 # instance fields
-.field private final a:LqS3;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Landroid/graphics/ColorFilter;
 
 
 # direct methods
-.method public constructor <init>(LqS3;)V
+.method public constructor <init>(Ljava/lang/String;Landroid/graphics/ColorFilter;)V
     .locals 0
 
     .line 1
@@ -23,247 +19,214 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lyi2;->a:LqS3;
+    iput-object p1, p0, Lyi2;->a:Ljava/lang/String;
 
     .line 5
     .line 6
+    iput-object p2, p0, Lyi2;->b:Landroid/graphics/ColorFilter;
+
+    .line 7
+    .line 8
     return-void
-.end method
-
-.method private final d(Ljava/lang/String;Lrwf;Ljava/util/Set;)LvT3;
-    .locals 11
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lrwf;",
-            "Ljava/util/Set<",
-            "+",
-            "LUI1;",
-            ">;)",
-            "LvT3;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, LTr5;
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p1}, Lyi2;->e(Ljava/lang/String;)LRpg;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v2
-
-    .line 7
-    sget-object v6, Lri2;->q:Lri2;
-
-    .line 8
-    .line 9
-    const/4 v5, 0x0
-
-    .line 10
-    const/4 v9, 0x0
-
-    .line 11
-    const/4 v3, 0x0
-
-    .line 12
-    const/4 v4, 0x0
-
-    .line 13
-    const/16 v10, 0x31c
-
-    .line 14
-    .line 15
-    move-object v1, p1
-
-    .line 16
-    move-object v7, p2
-
-    .line 17
-    move-object v8, p3
-
-    .line 18
-    invoke-direct/range {v0 .. v10}, LTr5;-><init>(Ljava/lang/String;LdZe;LSv1;LuT3;Lxed;LCU3;Lrwf;Ljava/util/Set;LFd7;I)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-object v0
-.end method
-
-.method private final e(Ljava/lang/String;)LRpg;
-    .locals 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            ")",
-            "LRpg;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
-
-    .line 2
-    .line 3
-    new-instance v4, Ljava/util/HashMap;
-
-    .line 4
-    .line 5
-    invoke-direct {v4, v0}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
-
-    .line 6
-    .line 7
-    .line 8
-    new-instance v1, Ljava/util/HashMap;
-
-    .line 9
-    .line 10
-    if-eqz v0, :cond_0
-
-    .line 11
-    .line 12
-    invoke-direct {v1, v0}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
-
-    .line 13
-    .line 14
-    .line 15
-    :goto_0
-    move-object v6, v1
-
-    .line 16
-    goto :goto_1
-
-    .line 17
-    :cond_0
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
-
-    .line 18
-    .line 19
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :goto_1
-    const-string v0, "original_url"
-
-    .line 22
-    .line 23
-    invoke-interface {v6, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    new-instance v1, LRpg;
-
-    .line 27
-    .line 28
-    const/4 v8, 0x0
-
-    .line 29
-    const/4 v9, 0x0
-
-    .line 30
-    const/4 v3, 0x1
-
-    .line 31
-    const/4 v5, 0x0
-
-    .line 32
-    const/4 v7, 0x1
-
-    .line 33
-    move-object v2, p1
-
-    .line 34
-    invoke-direct/range {v1 .. v9}, LRpg;-><init>(Ljava/lang/String;ILjava/util/HashMap;Ljava/lang/Object;Ljava/util/HashMap;ZZLjava/lang/Integer;)V
-
-    .line 35
-    .line 36
-    .line 37
-    return-object v1
 .end method
 
 
 # virtual methods
-.method public c(Landroid/net/Uri;Lrwf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/net/Uri;",
-            "Lrwf;",
-            "Z",
-            "Ljava/util/Set<",
-            "+",
-            "LUI1;",
-            ">;)",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "LMT3;",
-            ">;"
-        }
-    .end annotation
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
     const/4 v0, 0x1
 
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lyi2;
+
     .line 6
-    invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 7
-    .line 8
-    .line 9
-    move-result-object p1
+    const/4 v2, 0x0
 
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
     .line 10
-    check-cast p1, Ljava/lang/String;
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, Lyi2;
+
     .line 12
-    iget-object v0, p0, Lyi2;->a:LqS3;
-
     .line 13
-    .line 14
-    invoke-direct {p0, p1, p2, p4}, Lyi2;->d(Ljava/lang/String;Lrwf;Ljava/util/Set;)LvT3;
+    iget-object v1, p1, Lyi2;->a:Ljava/lang/String;
 
+    .line 14
     .line 15
+    iget-object v3, p0, Lyi2;->a:Ljava/lang/String;
+
     .line 16
     .line 17
-    move-result-object p1
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
-    invoke-interface {v0, p1}, LqS3;->h(LvT3;)Lqpg;
-
     .line 19
     .line 20
+    move-result v1
+
     .line 21
-    move-result-object p1
+    if-nez v1, :cond_2
 
     .line 22
-    iget-object p1, p1, Lqpg;->a:Lio/reactivex/rxjava3/core/Single;
-
     .line 23
+    return v2
+
     .line 24
-    invoke-static {p1, p3}, LCq9;->b1(Lio/reactivex/rxjava3/core/Single;Z)Lio/reactivex/rxjava3/core/Single;
+    :cond_2
+    iget-object v1, p0, Lyi2;->b:Landroid/graphics/ColorFilter;
 
     .line 25
     .line 26
-    .line 27
-    move-result-object p1
+    iget-object p1, p1, Lyi2;->b:Landroid/graphics/ColorFilter;
 
+    .line 27
     .line 28
-    return-object p1
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lyi2;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lyi2;->b:Landroid/graphics/ColorFilter;
+
+    .line 10
+    .line 11
+    if-nez v1, :cond_0
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 20
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "ButtonViewState(labelValue="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lyi2;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", colorFilter="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lyi2;->b:Landroid/graphics/ColorFilter;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

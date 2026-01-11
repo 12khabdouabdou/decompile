@@ -1,288 +1,177 @@
-.class public final LhRc;
-.super LrE9;
+.class public final enum LhRc;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
+
+# static fields
+.field public static final enum X:LhRc;
+
+.field public static final synthetic Y:[LhRc;
+
+.field public static final enum c:LhRc;
+
+.field public static final enum t:LhRc;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Z
 
-.field public final synthetic b:LjRc;
+.field public final b:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(LjRc;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    iput p2, p0, LhRc;->a:I
-
-    iput-object p1, p0, LhRc;->b:LjRc;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
-
-    .line 1
-    iget v0, p0, LhRc;->a:I
+    new-instance v0, LhRc;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string v1, "NONE"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    const/4 v3, 0x1
+
+    .line 7
+    invoke-direct {v0, v2, v2, v1, v3}, LhRc;-><init>(IZLjava/lang/String;Z)V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v0, LhRc;->c:LhRc;
+
+    .line 11
+    .line 12
+    new-instance v1, LhRc;
+
+    .line 13
+    .line 14
+    const-string v4, "APP_OPEN"
+
+    .line 15
+    .line 16
+    invoke-direct {v1, v3, v3, v4, v3}, LhRc;-><init>(IZLjava/lang/String;Z)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v1, LhRc;->t:LhRc;
+
+    .line 20
+    .line 21
+    new-instance v4, LhRc;
+
+    .line 22
+    .line 23
+    const-string v5, "FEATURE"
+
+    .line 24
+    .line 25
+    const/4 v6, 0x2
+
+    .line 26
+    invoke-direct {v4, v6, v3, v5, v2}, LhRc;-><init>(IZLjava/lang/String;Z)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v4, LhRc;->X:LhRc;
+
+    .line 30
+    .line 31
+    const/4 v5, 0x3
+
+    .line 32
+    new-array v5, v5, [LhRc;
+
+    .line 33
+    .line 34
+    aput-object v0, v5, v2
+
+    .line 35
+    .line 36
+    aput-object v1, v5, v3
+
+    .line 37
+    .line 38
+    aput-object v4, v5, v6
+
+    .line 39
+    .line 40
+    sput-object v5, LhRc;->Y:[LhRc;
+
+    .line 41
+    .line 42
+    return-void
+.end method
+
+.method public constructor <init>(IZLjava/lang/String;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p3, p1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-boolean p2, p0, LhRc;->a:Z
+
+    .line 5
+    .line 6
+    iput-boolean p4, p0, LhRc;->b:Z
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LhRc;
+    .locals 1
+
+    .line 1
+    const-class v0, LhRc;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LhRc;->b:LjRc;
+    move-result-object p0
 
     .line 7
+    check-cast p0, LhRc;
+
     .line 8
-    iget-object v1, v0, LjRc;->b:LrH9;
-
     .line 9
-    .line 10
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v1
+.method public static values()[LhRc;
+    .locals 1
 
-    .line 14
-    check-cast v1, LpC3;
+    .line 1
+    sget-object v0, LhRc;->Y:[LhRc;
 
-    .line 15
-    .line 16
-    sget-object v2, LvQc;->k0:LvQc;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 17
-    .line 18
-    invoke-interface {v1, v2}, LpC3;->r(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v1
-
-    .line 22
-    new-instance v2, LiRc;
-
-    .line 23
-    .line 24
-    const/4 v3, 0x2
-
-    .line 25
-    invoke-direct {v2, v0, v3}, LiRc;-><init>(LjRc;I)V
-
-    .line 26
-    .line 27
-    .line 28
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
-    .line 29
-    .line 30
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 31
-    .line 32
-    .line 33
-    iget-object v0, v0, LjRc;->e:LBre;
-
-    .line 34
-    .line 35
-    invoke-virtual {v0}, LBre;->g()LF06;
-
-    .line 36
-    .line 37
-    .line 38
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 39
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    .line 7
+    check-cast v0, [LhRc;
 
-    .line 40
-    .line 41
-    invoke-direct {v1, v3, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 42
-    .line 43
-    .line 44
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
-
-    .line 45
-    .line 46
-    invoke-direct {v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
-
-    .line 47
-    .line 48
-    .line 49
+    .line 8
+    .line 9
     return-object v0
-
-    .line 50
-    :pswitch_0
-    iget-object v0, p0, LhRc;->b:LjRc;
-
-    .line 51
-    .line 52
-    iget-object v1, v0, LjRc;->b:LrH9;
-
-    .line 53
-    .line 54
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object v1
-
-    .line 58
-    check-cast v1, LpC3;
-
-    .line 59
-    .line 60
-    sget-object v2, LvQc;->n0:LvQc;
-
-    .line 61
-    .line 62
-    invoke-interface {v1, v2}, LpC3;->j(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object v1
-
-    .line 66
-    iget-object v2, v0, LjRc;->e:LBre;
-
-    .line 67
-    .line 68
-    invoke-virtual {v2}, LBre;->g()LF06;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v3
-
-    .line 72
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 73
-    .line 74
-    invoke-direct {v4, v1, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 75
-    .line 76
-    .line 77
-    new-instance v1, LCyc;
-
-    .line 78
-    .line 79
-    const/4 v3, 0x7
-
-    .line 80
-    invoke-direct {v1, v3, v0}, LCyc;-><init>(ILjava/lang/Object;)V
-
-    .line 81
-    .line 82
-    .line 83
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 84
-    .line 85
-    invoke-direct {v0, v4, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 86
-    .line 87
-    .line 88
-    sget-object v1, Lpja;->r0:Lpja;
-
-    .line 89
-    .line 90
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Single;->r(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;
-
-    .line 91
-    .line 92
-    .line 93
-    move-result-object v0
-
-    .line 94
-    invoke-virtual {v2}, LBre;->d()LF06;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v1
-
-    .line 98
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 99
-    .line 100
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 101
-    .line 102
-    .line 103
-    return-object v2
-
-    .line 104
-    :pswitch_1
-    iget-object v0, p0, LhRc;->b:LjRc;
-
-    .line 105
-    .line 106
-    iget-object v0, v0, LjRc;->f:LrH9;
-
-    .line 107
-    .line 108
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
-
-    .line 109
-    .line 110
-    .line 111
-    move-result-object v0
-
-    .line 112
-    check-cast v0, LlLa;
-
-    .line 113
-    .line 114
-    invoke-virtual {v0}, LlLa;->c()LkLa;
-
-    .line 115
-    .line 116
-    .line 117
-    move-result-object v0
-
-    .line 118
-    iget-boolean v0, v0, LkLa;->c:Z
-
-    .line 119
-    .line 120
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 121
-    .line 122
-    .line 123
-    move-result-object v0
-
-    .line 124
-    return-object v0
-
-    .line 125
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

@@ -1,67 +1,62 @@
 .class public final LGb1;
-.super Ljava/lang/Object;
+.super LHNj;
 .source "SourceFile"
 
-# interfaces
-.implements LfZ5;
+
+# static fields
+.field public static final r:LGb1;
 
 
 # direct methods
-.method public constructor <init>(LOd1;Lbke;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Llf1;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LGb1;
 
     .line 2
     .line 3
+    sget-object v2, Lv71;->Z:Lv71;
+
     .line 4
-    sget-object p2, Lrb1;->Z:Lrb1;
-
     .line 5
-    .line 6
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-wide v7, LL51;->a:J
 
+    .line 6
     .line 7
+    sget-wide v9, LL51;->b:J
+
     .line 8
     .line 9
-    const-string p2, "BlizzardFlipperEventReporter"
+    const-wide/16 v5, 0x0
 
     .line 10
     .line 11
-    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    const/16 v12, 0x75c
 
     .line 12
     .line 13
-    .line 14
-    sget-object p2, Lrn0;->a:Lrn0;
+    const-string v1, "bitmoji-ua-other-content"
 
+    .line 14
     .line 15
+    const/4 v3, 0x0
+
     .line 16
-    iget-object p2, p1, LOd1;->e:Lio/reactivex/rxjava3/core/Scheduler;
+    const/4 v4, 0x0
 
     .line 17
+    const/4 v11, 0x0
+
     .line 18
-    const/4 p3, 0x1
+    invoke-direct/range {v0 .. v12}, LHNj;-><init>(Ljava/lang/String;Lrp0;Ljava/lang/String;ZJJJLwub;I)V
 
     .line 19
-    invoke-virtual {p1, p2, p3}, LOd1;->b(Lio/reactivex/rxjava3/core/Scheduler;I)LlHe;
-
     .line 20
     .line 21
+    sput-object v0, LGb1;->r:LGb1;
+
     .line 22
+    .line 23
     return-void
-.end method
-
-
-# virtual methods
-.method public final b()Lio/reactivex/rxjava3/core/Completable;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

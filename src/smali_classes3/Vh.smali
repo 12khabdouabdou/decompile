@@ -1,125 +1,92 @@
 .class public final LVh;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:Ljava/util/ArrayList;
+.field public final synthetic a:I
+
+.field public final synthetic b:LZh;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public synthetic constructor <init>(LZh;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LVh;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Ljava/util/ArrayList;
+    iput-object p1, p0, LVh;->b:LZh;
 
-    .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    const/4 p1, 0x1
 
-    .line 7
-    .line 8
-    .line 9
-    iput-object v0, p0, LVh;->a:Ljava/util/ArrayList;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    monitor-enter p0
+    iget v0, p0, LVh;->a:I
 
     .line 2
-    :try_start_0
-    iget-object v0, p0, LVh;->a:Ljava/util/ArrayList;
-
     .line 3
-    .line 4
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    move-result-object v0
+    check-cast p1, Ljava/lang/Throwable;
 
+    .line 7
     .line 8
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    iget-object p1, p0, LVh;->b:LZh;
 
     .line 9
     .line 10
-    .line 11
-    move-result v1
+    iget-object p1, p1, LZh;->j:LJp0;
 
+    .line 11
     .line 12
-    if-eqz v1, :cond_1
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 13
     .line 14
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    return-object p1
 
     .line 15
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 16
     .line 17
-    move-result-object v1
+    iget-object p1, p0, LVh;->b:LZh;
 
     .line 18
-    check-cast v1, Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 19
-    .line 20
-    invoke-interface {v1}, Lio/reactivex/rxjava3/disposables/Disposable;->c()Z
+    iget-object p1, p1, LZh;->j:LJp0;
 
+    .line 20
     .line 21
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 22
     .line 23
-    move-result v1
+    return-object p1
 
     .line 24
-    if-eqz v1, :cond_0
+    nop
 
     .line 25
-    .line 26
-    invoke-interface {v0}, Ljava/util/Iterator;->remove()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 27
-    .line 28
-    .line 29
-    goto :goto_0
-
-    .line 30
-    :catchall_0
-    move-exception v0
-
-    .line 31
-    goto :goto_1
-
-    .line 32
-    :cond_1
-    monitor-exit p0
-
-    .line 33
-    return-void
-
-    .line 34
-    :goto_1
-    monitor-exit p0
-
-    .line 35
-    throw v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

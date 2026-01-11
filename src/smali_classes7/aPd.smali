@@ -1,14 +1,29 @@
-.class public interface abstract LaPd;
-.super Ljava/lang/Object;
+.class public final LaPd;
+.super LiPd;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a()Lxs7;
-.end method
+# static fields
+.field public static final b:LaPd;
 
-.method public abstract getContentDescription()Ljava/lang/String;
-.end method
 
-.method public abstract getId()J
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LaPd;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, LiPd;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LaPd;->b:LaPd;
+
+    .line 7
+    .line 8
+    return-void
 .end method

@@ -3,29 +3,29 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
-.implements LZOc;
-.implements LSbi;
+.implements LY2d;
+.implements LT3d;
+.implements LLAi;
 
 
 # static fields
-.field public static final E0:LgSg;
+.field public static final E0:LYdh;
 
 
 # instance fields
-.field public A0:LlSg;
+.field public A0:Lceh;
 
-.field public B0:LcSa;
+.field public B0:LL4b;
 
-.field public final C0:Lmj;
+.field public final C0:Lok;
 
 .field public final D0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 .field public final w0:Z
 
-.field public final x0:LaSg;
+.field public final x0:LSdh;
 
-.field public final y0:LhYj;
+.field public final y0:Laok;
 
 .field public z0:Lcom/snap/component/tray/SnapTray;
 
@@ -34,11 +34,11 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, LgSg;
+    new-instance v0, LYdh;
 
-    invoke-direct {v0}, LgSg;-><init>()V
+    invoke-direct {v0}, LYdh;-><init>()V
 
-    sput-object v0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->E0:LgSg;
+    sput-object v0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->E0:LYdh;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     .line 6
     .line 7
-    new-instance v1, LaSg;
+    new-instance v1, LSdh;
 
     .line 8
     .line 9
@@ -82,16 +82,16 @@
 
     .line 15
     .line 16
-    invoke-direct/range {v1 .. v7}, LaSg;-><init>(Lltk;LrSg;LcSg;LzW6;Lkotlin/jvm/functions/Function0;I)V
+    invoke-direct/range {v1 .. v7}, LSdh;-><init>(LpSk;Lieh;LUdh;LP07;Lkotlin/jvm/functions/Function0;I)V
 
     .line 17
     .line 18
     .line 19
-    iput-object v1, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->x0:LaSg;
+    iput-object v1, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->x0:LSdh;
 
     .line 20
     .line 21
-    new-instance v2, LhYj;
+    new-instance v2, Laok;
 
     .line 22
     .line 23
@@ -101,29 +101,29 @@
     const/4 v5, 0x0
 
     .line 25
-    invoke-direct/range {v2 .. v7}, LhYj;-><init>(Lew8;LCq9;IZI)V
+    invoke-direct/range {v2 .. v7}, Laok;-><init>(LlFg;LMsi;IZI)V
 
     .line 26
     .line 27
     .line 28
-    iput-object v2, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->y0:LhYj;
+    iput-object v2, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->y0:Laok;
 
     .line 29
     .line 30
-    new-instance v0, Lmj;
+    new-instance v0, Lok;
 
     .line 31
     .line 32
-    const/16 v1, 0x15
+    const/16 v1, 0x11
 
     .line 33
     .line 34
-    invoke-direct {v0, v1}, Lmj;-><init>(I)V
+    invoke-direct {v0, v1}, Lok;-><init>(I)V
 
     .line 35
     .line 36
     .line 37
-    iput-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->C0:Lmj;
+    iput-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->C0:Lok;
 
     .line 38
     .line 39
@@ -145,11 +145,11 @@
 
 
 # virtual methods
-.method public final D1()V
+.method public final B1()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->D1()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->B1()V
 
     .line 2
     .line 3
@@ -166,11 +166,11 @@
     return-void
 .end method
 
-.method public final I0(Z)LhYj;
+.method public final F0(Z)Laok;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->a2()LhYj;
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->a2()Laok;
 
     .line 2
     .line 3
@@ -181,7 +181,7 @@
     return-object p1
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
 
     .line 1
@@ -204,7 +204,7 @@
 
     .line 9
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     .line 10
     .line 11
@@ -228,7 +228,7 @@
     const/4 p1, 0x2
 
     .line 19
-    invoke-direct {v4, v0, v1, p1, v1}, Lcom/snap/component/tray/SnapTray;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+    invoke-direct {v4, v0, v1, p1, v1}, Lcom/snap/component/tray/SnapTray;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
 
     .line 20
     .line 21
@@ -237,7 +237,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->V1()LPm9;
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->V1()LIv9;
 
     .line 25
     .line 26
@@ -249,7 +249,7 @@
 
     .line 29
     .line 30
-    invoke-interface {p1}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {p1}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 31
     .line 32
@@ -257,100 +257,101 @@
     move-result-object p1
 
     .line 34
-    new-instance p2, LhSg;
+    new-instance p2, LQjg;
 
     .line 35
     .line 36
-    const/4 p3, 0x0
+    const/16 p3, 0x1d
 
     .line 37
-    invoke-direct {p2, p0, p3, v4}, LhSg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 38
+    invoke-direct {p2, p0, p3, v4}, LQjg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 39
     .line 40
+    .line 41
     iget-object p3, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->D0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 41
     .line 42
-    invoke-static {p1, p2, p3}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 43
+    invoke-static {p1, p2, p3}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 44
     .line 45
-    :cond_2
-    new-instance v2, LlSg;
-
     .line 46
-    .line 47
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->Y1()LWxf;
+    :cond_2
+    new-instance v2, Lceh;
 
+    .line 47
     .line 48
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->Y1()LeRf;
+
     .line 49
     .line 50
+    .line 51
     move-result-object v5
 
-    .line 51
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LaSg;
-
     .line 52
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LSdh;
+
     .line 53
     .line 54
+    .line 55
     move-result-object v6
 
-    .line 55
-    new-instance v7, Lp6g;
-
     .line 56
+    new-instance v7, LvJg;
+
     .line 57
-    const/16 p1, 0x1b
-
     .line 58
-    .line 59
-    invoke-direct {v7, p0, p1}, Lp6g;-><init>(Lcom/snap/component/tray/SnapTrayMainPageFragment;I)V
+    const/16 p1, 0x17
 
+    .line 59
     .line 60
+    invoke-direct {v7, p0, p1}, LvJg;-><init>(Lcom/snap/component/tray/SnapTrayMainPageFragment;I)V
+
     .line 61
     .line 62
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->X1()Lzre;
-
     .line 63
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->X1()LlJe;
+
     .line 64
     .line 65
+    .line 66
     move-result-object v8
 
-    .line 66
+    .line 67
     iget-object v9, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->D0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 67
     .line 68
+    .line 69
     const/4 v10, 0x0
 
-    .line 69
-    invoke-direct/range {v2 .. v10}, LlSg;-><init>(Landroid/view/View;Lcom/snap/component/tray/SnapTray;LWxf;LaSg;Lkotlin/jvm/functions/Function0;Lzre;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
-
     .line 70
+    invoke-direct/range {v2 .. v10}, Lceh;-><init>(Landroid/view/View;Lcom/snap/component/tray/SnapTray;LeRf;LSdh;Lkotlin/jvm/functions/Function0;LlJe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;)V
+
     .line 71
     .line 72
-    iput-object v2, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:LlSg;
-
     .line 73
+    iput-object v2, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:Lceh;
+
     .line 74
+    .line 75
     return-object v4
 .end method
 
-.method public U1()LaSg;
+.method public U1()LSdh;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->x0:LaSg;
+    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->x0:LSdh;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public V1()LPm9;
+.method public V1()LIv9;
     .locals 1
 
     .line 1
@@ -360,13 +361,29 @@
     return-object v0
 .end method
 
-.method public abstract W1()LTqc;
+.method public abstract W1()LmGc;
 .end method
 
-.method public abstract X1()Lzre;
+.method public abstract X1()LlJe;
 .end method
 
-.method public abstract Y1()LWxf;
+.method public final Y0()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->E0:LYdh;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LYdh;->Y0()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public abstract Y1()LeRf;
 .end method
 
 .method public final Z1()Lcom/snap/component/tray/SnapTray;
@@ -389,7 +406,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -400,27 +417,11 @@
     throw v0
 .end method
 
-.method public final a1()V
+.method public a2()Laok;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->E0:LgSg;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LgSg;->a1()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public a2()LhYj;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->y0:LhYj;
+    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->y0:Laok;
 
     .line 2
     .line 3
@@ -440,7 +441,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:LlSg;
+    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:Lceh;
 
     .line 2
     .line 3
@@ -448,7 +449,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LaSg;
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LSdh;
 
     .line 6
     .line 7
@@ -456,7 +457,7 @@
     move-result-object v1
 
     .line 9
-    invoke-virtual {v1}, LaSg;->a()LzW6;
+    invoke-virtual {v1}, LSdh;->a()LP07;
 
     .line 10
     .line 11
@@ -464,20 +465,20 @@
     move-result-object v1
 
     .line 13
-    new-instance v2, Lp6g;
+    new-instance v2, LvJg;
 
     .line 14
     .line 15
-    const/16 v3, 0x1c
+    const/16 v3, 0x18
 
     .line 16
     .line 17
-    invoke-direct {v2, p0, v3}, Lp6g;-><init>(Lcom/snap/component/tray/SnapTrayMainPageFragment;I)V
+    invoke-direct {v2, p0, v3}, LvJg;-><init>(Lcom/snap/component/tray/SnapTrayMainPageFragment;I)V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, v1, v2}, LlSg;->q(LzW6;Lkotlin/jvm/functions/Function0;)Z
+    invoke-virtual {v0, v1, v2}, Lceh;->r(LP07;Lkotlin/jvm/functions/Function0;)Z
 
     .line 21
     .line 22
@@ -524,7 +525,7 @@
 
     .line 38
     .line 39
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -535,16 +536,16 @@
     throw v0
 .end method
 
-.method public final e(LQqc;)V
+.method public final e(LiGc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->e(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->e(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->B0:LcSa;
+    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->B0:LL4b;
 
     .line 5
     .line 6
@@ -552,7 +553,7 @@
 
     .line 7
     .line 8
-    invoke-static {p1, p0}, Ltkk;->h(LQqc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
+    invoke-static {p1, p0}, LOJk;->g(LiGc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
 
     .line 9
     .line 10
@@ -564,15 +565,15 @@
 
     .line 13
     .line 14
-    iget-object p1, p1, LQqc;->e:Li7d;
+    iget-object p1, p1, LiGc;->e:Lwmd;
 
     .line 15
     .line 16
-    iget-object p1, p1, Li7d;->c:LWRa;
+    iget-object p1, p1, Lwmd;->c:LG4b;
 
     .line 17
     .line 18
-    invoke-interface {p1}, LWRa;->S0()LcSa;
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
 
     .line 19
     .line 20
@@ -580,7 +581,7 @@
     move-result-object p1
 
     .line 22
-    iput-object p1, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->B0:LcSa;
+    iput-object p1, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->B0:LL4b;
 
     .line 23
     .line 24
@@ -588,16 +589,16 @@
     return-void
 .end method
 
-.method public final g()V
+.method public final f()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->g()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->f()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:LlSg;
+    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:Lceh;
 
     .line 5
     .line 6
@@ -605,12 +606,12 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LlSg;->t()V
+    invoke-virtual {v0}, Lceh;->u()V
 
     .line 9
     .line 10
     .line 11
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LaSg;
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LSdh;
 
     .line 12
     .line 13
@@ -618,7 +619,7 @@
     move-result-object v0
 
     .line 15
-    invoke-virtual {v0}, LaSg;->a()LzW6;
+    invoke-virtual {v0}, LSdh;->a()LP07;
 
     .line 16
     .line 17
@@ -626,7 +627,7 @@
     move-result-object v0
 
     .line 19
-    invoke-virtual {v0}, LzW6;->a()Z
+    invoke-virtual {v0}, LP07;->a()Z
 
     .line 20
     .line 21
@@ -638,7 +639,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->W1()LTqc;
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->W1()LmGc;
 
     .line 26
     .line 27
@@ -646,11 +647,11 @@
     move-result-object v0
 
     .line 29
-    iget-object v1, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->C0:Lmj;
+    iget-object v1, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->C0:Lok;
 
     .line 30
     .line 31
-    invoke-virtual {v0, v1}, LTqc;->L(LEId;)V
+    invoke-virtual {v0, v1}, LmGc;->J(LTZd;)V
 
     .line 32
     .line 33
@@ -664,7 +665,7 @@
 
     .line 36
     .line 37
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -675,16 +676,16 @@
     throw v0
 .end method
 
-.method public final i()V
+.method public final j()V
     .locals 7
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->i()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->j()V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LaSg;
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->U1()LSdh;
 
     .line 5
     .line 6
@@ -692,7 +693,7 @@
     move-result-object v0
 
     .line 8
-    invoke-virtual {v0}, LaSg;->a()LzW6;
+    invoke-virtual {v0}, LSdh;->a()LP07;
 
     .line 9
     .line 10
@@ -700,7 +701,7 @@
     move-result-object v0
 
     .line 12
-    invoke-virtual {v0}, LzW6;->a()Z
+    invoke-virtual {v0}, LP07;->a()Z
 
     .line 13
     .line 14
@@ -712,7 +713,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->W1()LTqc;
+    invoke-virtual {p0}, Lcom/snap/component/tray/SnapTrayMainPageFragment;->W1()LmGc;
 
     .line 19
     .line 20
@@ -720,79 +721,89 @@
     move-result-object v0
 
     .line 22
-    new-instance v1, Lrh8;
+    new-instance v1, LUn8;
 
     .line 23
     .line 24
-    new-instance v3, LnOg;
+    new-instance v3, LU7h;
 
     .line 25
     .line 26
-    const/4 v2, 0x2
+    const/16 v2, 0x11
 
     .line 27
-    invoke-direct {v3, v2, p0}, LnOg;-><init>(ILjava/lang/Object;)V
-
     .line 28
+    invoke-direct {v3, v2, p0}, LU7h;-><init>(ILjava/lang/Object;)V
+
     .line 29
     .line 30
-    sget-object v4, LRNg;->r0:LRNg;
-
     .line 31
+    sget-object v4, Lf9h;->x0:Lf9h;
+
     .line 32
-    sget-object v5, LRNg;->s0:LRNg;
-
     .line 33
-    .line 34
-    iget-object v2, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->C0:Lmj;
+    sget-object v5, Lf9h;->y0:Lf9h;
 
+    .line 34
     .line 35
+    iget-object v2, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->C0:Lok;
+
     .line 36
+    .line 37
     const-string v6, "SnapTrayMainPageFragment:showAsync"
 
-    .line 37
     .line 38
-    invoke-direct/range {v1 .. v6}, Lrh8;-><init>(LEId;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
-
     .line 39
+    invoke-direct/range {v1 .. v6}, LUn8;-><init>(LTZd;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Ljava/lang/String;)V
+
     .line 40
     .line 41
-    invoke-virtual {v0, v1}, LTqc;->b(Lrh8;)V
-
     .line 42
+    invoke-virtual {v0, v1}, LmGc;->b(LUn8;)V
+
     .line 43
     .line 44
-    :cond_0
-    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:LlSg;
-
     .line 45
+    :cond_0
+    iget-object v0, p0, Lcom/snap/component/tray/SnapTrayMainPageFragment;->A0:Lceh;
+
     .line 46
+    .line 47
     if-eqz v0, :cond_1
 
-    .line 47
     .line 48
-    invoke-virtual {v0}, LlSg;->r()V
-
     .line 49
+    invoke-virtual {v0}, Lceh;->s()V
+
     .line 50
     .line 51
+    .line 52
     return-void
 
-    .line 52
+    .line 53
     :cond_1
     const-string v0, "presenter"
 
-    .line 53
     .line 54
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 55
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 56
     .line 57
+    .line 58
     const/4 v0, 0x0
 
-    .line 58
+    .line 59
     throw v0
+.end method
+
+.method public final p0()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    return-object v0
 .end method
 
 .method public final q()J
@@ -822,16 +833,7 @@
     return-wide v0
 .end method
 
-.method public final q0()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final z(Landroid/view/View;F)V
+.method public final y(Landroid/view/View;F)V
     .locals 0
 
     .line 1
@@ -843,7 +845,7 @@
     move-result-object p1
 
     .line 5
-    invoke-virtual {p1, p2}, Lcom/snap/component/tray/SnapTray;->h(F)V
+    invoke-virtual {p1, p2}, Lcom/snap/component/tray/SnapTray;->i(F)V
 
     .line 6
     .line 7

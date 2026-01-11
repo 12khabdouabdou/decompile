@@ -1,20 +1,20 @@
 .class public final Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
 .field public final b:[B
 
-.field public final c:Lyl1;
+.field public final c:Lcp1;
 
 
 # direct methods
-.method public constructor <init>([BLyl1;)V
+.method public constructor <init>([BLcp1;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -23,7 +23,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lyl1;
+    iput-object p2, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lcp1;
 
     .line 7
     .line 8
@@ -57,7 +57,7 @@
 
     iget-object v3, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->b:[B
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -66,11 +66,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lyl1;
+    iget-object v1, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lcp1;
 
-    iget-object p1, p1, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lyl1;
+    iget-object p1, p1, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lcp1;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -101,7 +101,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lyl1;
+    iget-object v1, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lcp1;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -133,7 +133,7 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lyl1;
+    iget-object v0, p0, Lcom/snap/bloops/ui/fullscreen/BloopsFullScreenEvents$BloopsFullscreenStateChangedEvent;->c:Lcp1;
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

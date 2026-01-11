@@ -3,20 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements LCba;
+.implements LGBc;
 
 
 # instance fields
-.field public final synthetic a:LCba;
-
-.field public final b:LKN;
-
-.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+.field public final synthetic a:LO88;
 
 
 # direct methods
-.method public constructor <init>(LCba;)V
-    .locals 3
+.method public constructor <init>(LO88;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,268 +20,71 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LQG5;->a:LCba;
+    iput-object p1, p0, LQG5;->a:LO88;
 
     .line 5
     .line 6
-    invoke-interface {p1}, LCba;->g()LIN;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    sget-object v0, LWV;->t:LWV;
-
-    .line 11
-    .line 12
-    new-instance v1, LKN;
-
-    .line 13
-    .line 14
-    const/4 v2, 0x1
-
-    .line 15
-    invoke-direct {v1, p1, v0, v2}, LKN;-><init>(LIN;Ljava/lang/Object;I)V
-
-    .line 16
-    .line 17
-    .line 18
-    iput-object v1, p0, LQG5;->b:LKN;
-
-    .line 19
-    .line 20
-    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 21
-    .line 22
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
-    .line 23
-    .line 24
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iput-object v0, p0, LQG5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
-    .line 28
-    .line 29
     return-void
 .end method
 
 
 # virtual methods
-.method public final B()Lu00;
-    .locals 1
+.method public final a(LYaa;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
+    iget-object v0, p1, LYaa;->b:Lu3a;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LCba;->B()Lu00;
+    iget-object v0, v0, Lu3a;->d:Ljava/lang/String;
 
     .line 4
     .line 5
+    if-eqz v0, :cond_0
+
     .line 6
-    move-result-object v0
-
     .line 7
-    return-object v0
-.end method
+    new-instance v1, LX1a$g$b;
 
-.method public final O0()LqS3;
-    .locals 1
+    .line 8
+    .line 9
+    new-instance v2, LY79;
 
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
+    .line 10
+    .line 11
+    invoke-direct {v2, v0}, LY79;-><init>(Ljava/lang/String;)V
 
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->O0()LqS3;
+    .line 12
+    .line 13
+    .line 14
+    invoke-direct {v1, v2, p1}, LX1a$g$b;-><init>(LY79;LYaa;)V
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 15
+    .line 16
+    .line 17
+    goto :goto_0
 
-    .line 7
-    return-object v0
-.end method
+    .line 18
+    :cond_0
+    new-instance v1, LX1a$g$a;
 
-.method public final a()Lan0;
-    .locals 1
+    .line 19
+    .line 20
+    invoke-direct {v1, p1}, LX1a$g$a;-><init>(LYaa;)V
 
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
+    .line 21
+    .line 22
+    .line 23
+    :goto_0
+    iget-object p1, p0, LQG5;->a:LO88;
 
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->a()Lan0;
+    .line 24
+    .line 25
+    invoke-interface {p1, v1}, LO88;->a1(LU88;)V
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final b()Lnwf;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->b()Lnwf;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final f()LPI3;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->f()LPI3;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final g()LIN;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->b:LKN;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final i5()Ldzc;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->i5()Ldzc;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final p7()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final r3()LuN6;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->r3()LuN6;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final u5()Lk0f;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->u5()Lk0f;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final v7()Lkotlin/jvm/functions/Function1;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->v7()Lkotlin/jvm/functions/Function1;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final w()Landroid/content/ContentResolver;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LQG5;->a:LCba;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LCba;->w()Landroid/content/ContentResolver;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
+    .line 26
+    .line 27
+    .line 28
+    return-void
 .end method

@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 3
 
     .line 1
@@ -66,7 +66,7 @@
 
     .line 6
     .line 7
-    invoke-direct {v0, p1, v2, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/functions/Function;I)V
+    invoke-direct {v0, p1, v2, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)V
 
     .line 8
     .line 9

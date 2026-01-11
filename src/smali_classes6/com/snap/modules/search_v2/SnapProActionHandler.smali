@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LkMg;
+    proxyClass = LT7h;
     schema = "\'openBusinessProfile\':f|m|(s)"
     typeReferences = {}
 .end annotation

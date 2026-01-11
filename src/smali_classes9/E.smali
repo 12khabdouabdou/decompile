@@ -1,90 +1,44 @@
 .class public final LE;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LG;
+# static fields
+.field public static final Z:LE;
 
 
 # direct methods
-.method public synthetic constructor <init>(LG;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput p2, p0, LE;->a:I
-
-    iput-object p1, p0, LE;->b:LG;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, LE;->a:I
+    new-instance v0, LE;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    sget-object v1, LNH9;->t1:LNH9;
 
     .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    const/16 v3, 0x1c
 
     .line 7
     .line 8
-    iget-object p1, p0, LE;->b:LG;
+    const-string v4, "ACBillboardDynamicFeature"
 
     .line 9
     .line 10
-    iget-object p1, p1, LG;->h:Lrn0;
+    invoke-direct {v0, v4, v1, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
 
     .line 11
     .line 12
-    return-void
-
     .line 13
-    :pswitch_0
-    check-cast p1, Ljava/util/List;
+    sput-object v0, LE;->Z:LE;
 
     .line 14
     .line 15
-    iget-object v0, p0, LE;->b:LG;
-
-    .line 16
-    .line 17
-    iget-object v1, v0, LG;->h:Lrn0;
-
-    .line 18
-    .line 19
-    iget-object v0, v0, LG;->c:Lx;
-
-    .line 20
-    .line 21
-    iput-object p1, v0, Lx;->a:Ljava/util/List;
-
-    .line 22
-    .line 23
     return-void
-
-    .line 24
-    nop
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

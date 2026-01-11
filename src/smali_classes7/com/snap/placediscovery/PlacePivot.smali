@@ -1,10 +1,10 @@
 .class public final Lcom/snap/placediscovery/PlacePivot;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'pivotName\':s,\'pivotIconUrl\':s?,\'pivotIcon\':r?:\'[0]\',\'pivotEmojiUnicode\':s?,\'placePivotType\':r?<e>:\'[1]\',\'placePivotActionType\':r?<e>:\'[2]\',\'pivotElements\':a?<s>,\'localizedDisplayName\':s,\'attributeId\':s?,\'localizedResultsHeader\':s?"
     typeReferences = {

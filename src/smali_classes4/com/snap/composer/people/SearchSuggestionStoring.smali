@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LMDf;
+    proxyClass = LgXf;
     schema = "\'getSearchSuggestions\':f|m|(s, f(a?<r:\'[0]\'>, m?<s,u>)),\'onSearchSuggestionsUpdated\':f|m|(f()): f()"
     typeReferences = {
         Lcom/snap/composer/people/SearchSuggestion;

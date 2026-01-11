@@ -1,23 +1,23 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$StopViewer;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LWIj;
+.field public final b:Lu8k;
 
 
 # direct methods
-.method public constructor <init>(LWIj;)V
+.method public constructor <init>(Lu8k;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:LWIj;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:Lu8k;
 
     .line 5
     .line 6
@@ -47,9 +47,9 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$StopViewer;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:LWIj;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:Lu8k;
 
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:LWIj;
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:Lu8k;
 
     if-eq v1, p1, :cond_2
 
@@ -62,7 +62,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:LWIj;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:Lu8k;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -80,7 +80,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:LWIj;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$StopViewer;->b:Lu8k;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

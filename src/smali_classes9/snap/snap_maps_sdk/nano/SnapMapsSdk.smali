@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SystemStats;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendClusterUsers;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ViewportInfo;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ClearCachedTilesRequest;,
@@ -28,6 +29,7 @@
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SensorInfo;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$WidgetInfo;,
+        Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StickerOverrides;,
@@ -59,11 +61,13 @@
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Geometry;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LineString;,
+        Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraViewport;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraOptions;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UnitBezier;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$EdgeInsets;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$TileID;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLngAltitude;,
+        Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLngBounds;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;,
         Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
     }

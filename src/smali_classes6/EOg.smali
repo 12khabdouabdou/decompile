@@ -1,575 +1,646 @@
-.class public final synthetic LEOg;
-.super Lj28;
+.class public final LEOg;
+.super LEP0;
 .source "SourceFile"
 
-# interfaces
-.implements Lh28;
 
+# instance fields
+.field public final h0:LgM6;
 
-# static fields
-.field public static final f0:LEOg;
+.field public final i0:LCHf;
+
+.field public final j0:LYSi;
+
+.field public k0:Lmhj;
+
+.field public final l0:Lmhj;
+
+.field public m0:LLtg;
+
+.field public n0:LLtg;
+
+.field public o0:LHTi;
+
+.field public p0:Landroid/graphics/Bitmap;
+
+.field public q0:LGSi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>()V
+    .locals 4
 
     .line 1
-    new-instance v0, LEOg;
+    new-instance v0, LgM6;
 
     .line 2
     .line 3
-    const-string v5, "<init>(Ljava/lang/String;JJDILjava/lang/Integer;[B[BLjava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;[BZLjava/lang/Double;Ljava/lang/Double;Ljava/lang/Integer;Ljava/lang/Integer;)V"
+    invoke-direct {v0}, LgM6;-><init>()V
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/16 v1, 0x1d
+    new-instance v1, LCHf;
 
     .line 7
     .line 8
-    const-class v3, LaHg;
+    const/4 v2, 0x5
 
     .line 9
-    .line 10
-    const-string v4, "<init>"
+    invoke-direct {v1, v2}, LCHf;-><init>(I)V
 
+    .line 10
     .line 11
     .line 12
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    new-instance v2, LYSi;
 
     .line 13
     .line 14
-    .line 15
-    sput-object v0, LEOg;->f0:LEOg;
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
+    .line 15
     .line 16
     .line 17
+    new-instance v3, Lmhj;
+
+    .line 18
+    .line 19
+    invoke-direct {v3}, Lmhj;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-direct {p0}, LEP0;-><init>()V
+
+    .line 23
+    .line 24
+    .line 25
+    iput-object v0, p0, LEOg;->h0:LgM6;
+
+    .line 26
+    .line 27
+    iput-object v1, p0, LEOg;->i0:LCHf;
+
+    .line 28
+    .line 29
+    iput-object v2, p0, LEOg;->j0:LYSi;
+
+    .line 30
+    .line 31
+    iput-object v3, p0, LEOg;->l0:Lmhj;
+
+    .line 32
+    .line 33
+    new-instance v1, LdD5;
+
+    .line 34
+    .line 35
+    const-string v2, "SkyFiltersRenderPass"
+
+    .line 36
+    .line 37
+    invoke-direct {v1, v2, v0}, LdD5;-><init>(Ljava/lang/String;LgM6;)V
+
+    .line 38
+    .line 39
+    .line 40
+    iput-object v1, p0, LEP0;->c:LCB8;
+
+    .line 41
+    .line 42
     return-void
 .end method
 
 
 # virtual methods
-.method public final K([Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 35
+.method public final H(LMe6;)V
+    .locals 0
 
     .line 1
-    move-object/from16 v0, p1
+    return-void
+.end method
+
+.method public final I(I)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final J(Lebf;)V
+    .locals 1
+
+    .line 1
+    iget-object p1, p0, LEOg;->o0:LHTi;
 
     .line 2
     .line 3
-    array-length v1, v0
+    if-eqz p1, :cond_0
 
     .line 4
-    const/16 v2, 0x1d
-
     .line 5
-    .line 6
-    if-ne v1, v2, :cond_0
+    invoke-virtual {p1}, LHTi;->b()V
 
+    .line 6
     .line 7
     .line 8
-    const/4 v1, 0x0
+    invoke-virtual {p0}, LEP0;->F()LGTi;
 
     .line 9
-    aget-object v1, v0, v1
-
     .line 10
     .line 11
-    move-object v3, v1
+    iget-object p1, p0, LEOg;->m0:LLtg;
 
     .line 12
-    check-cast v3, Ljava/lang/String;
-
     .line 13
-    .line 14
-    const/4 v1, 0x1
+    iget-object v0, p0, LEOg;->n0:LLtg;
 
+    .line 14
     .line 15
-    aget-object v1, v0, v1
+    invoke-static {p1, v0}, LGTi;->a(LLtg;LLtg;)LHTi;
 
     .line 16
     .line 17
-    check-cast v1, Ljava/lang/Number;
-
     .line 18
+    move-result-object p1
+
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Number;->longValue()J
+    iput-object p1, p0, LEOg;->o0:LHTi;
 
     .line 20
     .line 21
-    .line 22
-    move-result-wide v4
+    :cond_0
+    return-void
+.end method
 
+.method public final K(Lmhj;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, LEP0;->Z:LMe6;
+
+    .line 2
+    .line 3
+    if-eqz p1, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {p1}, LMe6;->a()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public final L(Lmhj;)V
+    .locals 0
+
+    .line 1
+    iget-object p1, p0, LEP0;->Z:LMe6;
+
+    .line 2
+    .line 3
+    if-eqz p1, :cond_0
+
+    .line 4
+    .line 5
+    invoke-interface {p1}, LMe6;->a()V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public final M(LMtg;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final N(LGTi;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final O()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LEOg;->i0:LCHf;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, LLtg;
+
+    .line 7
+    .line 8
+    invoke-direct {v0}, LLtg;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object v0, p0, LEOg;->m0:LLtg;
+
+    .line 12
+    .line 13
+    const v1, 0x8b31
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v2, "#version 100\nattribute vec4 aPosition;attribute vec2 aTexCoord;varying vec2 vTexCoord;uniform mat4 uModelViewProjectionMatrix;uniform mat4 uTexCoordMatrix;void main() {  gl_Position = uModelViewProjectionMatrix * aPosition;  vTexCoord = (uTexCoordMatrix * vec4(aTexCoord.x, aTexCoord.y, 0, 1)).xy;}"
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1, v2}, LLtg;->d(ILjava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    new-instance v0, LLtg;
+
+    .line 22
     .line 23
-    const/4 v1, 0x2
+    invoke-direct {v0}, LLtg;-><init>()V
 
     .line 24
-    aget-object v1, v0, v1
-
     .line 25
     .line 26
-    check-cast v1, Ljava/lang/Number;
+    iput-object v0, p0, LEOg;->n0:LLtg;
 
     .line 27
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Number;->longValue()J
+    const v1, 0x8b30
 
     .line 29
     .line 30
     .line 31
-    move-result-wide v6
+    const-string v2, "#version 100\nprecision mediump float;uniform sampler2D sVideoTexture;varying vec2 vTexCoord;void main() {  vec4 videoSample = texture2D(sVideoTexture, vTexCoord);  gl_FragColor = vec4(videoSample.rgb, 1.);}"
 
     .line 32
-    const/4 v1, 0x3
-
     .line 33
-    aget-object v1, v0, v1
+    invoke-virtual {v0, v1, v2}, LLtg;->d(ILjava/lang/String;)V
 
     .line 34
     .line 35
-    check-cast v1, Ljava/lang/Number;
+    .line 36
+    invoke-virtual {p0}, LEP0;->F()LGTi;
+
+    .line 37
+    .line 38
+    .line 39
+    iget-object v0, p0, LEOg;->m0:LLtg;
+
+    .line 40
+    .line 41
+    iget-object v1, p0, LEOg;->n0:LLtg;
+
+    .line 42
+    .line 43
+    invoke-static {v0, v1}, LGTi;->a(LLtg;LLtg;)LHTi;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
+    iput-object v0, p0, LEOg;->o0:LHTi;
+
+    .line 48
+    .line 49
+    return-void
+.end method
+
+.method public final h(IJLmhj;Ltld;)V
+    .locals 0
+
+    .line 1
+    iget-object p2, p0, LEOg;->p0:Landroid/graphics/Bitmap;
+
+    .line 2
+    .line 3
+    if-eqz p2, :cond_1
+
+    .line 4
+    .line 5
+    iget-object p3, p0, LEOg;->q0:LGSi;
+
+    .line 6
+    .line 7
+    if-nez p3, :cond_0
+
+    .line 8
+    .line 9
+    iget-object p3, p0, LEOg;->j0:LYSi;
+
+    .line 10
+    .line 11
+    invoke-virtual {p3, p2}, LYSi;->a(Landroid/graphics/Bitmap;)LGSi;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p2
+
+    .line 15
+    iput-object p2, p0, LEOg;->q0:LGSi;
+
+    .line 16
+    .line 17
+    :cond_0
+    iget-object p2, p0, LEP0;->t:Lmhj;
+
+    .line 18
+    .line 19
+    invoke-virtual {p2}, Lmhj;->b()Lmhj;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p2
+
+    .line 23
+    iget-object p3, p0, LEP0;->X:Lmhj;
+
+    .line 24
+    .line 25
+    iget-object p3, p3, Lmhj;->c:[F
+
+    .line 26
+    .line 27
+    invoke-virtual {p2, p3}, Lmhj;->a([F)V
+
+    .line 28
+    .line 29
+    .line 30
+    iput-object p2, p0, LEOg;->k0:Lmhj;
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_1
+    iget-object p2, p0, LEP0;->t:Lmhj;
+
+    .line 34
+    .line 35
+    invoke-virtual {p2}, Lmhj;->b()Lmhj;
 
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Number;->doubleValue()D
-
     .line 38
-    .line 39
-    .line 40
-    move-result-wide v8
+    move-result-object p2
 
+    .line 39
+    iget-object p3, p0, LEP0;->X:Lmhj;
+
+    .line 40
     .line 41
-    const/4 v1, 0x4
+    iget-object p3, p3, Lmhj;->c:[F
 
     .line 42
-    aget-object v1, v0, v1
-
     .line 43
-    .line 44
-    check-cast v1, Ljava/lang/Number;
+    invoke-virtual {p2, p3}, Lmhj;->a([F)V
 
+    .line 44
     .line 45
     .line 46
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+    iput-object p2, p0, LEOg;->k0:Lmhj;
 
     .line 47
     .line 48
-    .line 49
-    move-result v10
+    :goto_0
+    iget-boolean p2, p0, LEP0;->a:Z
 
+    .line 49
     .line 50
-    const/4 v1, 0x5
+    if-eqz p2, :cond_2
 
     .line 51
-    aget-object v1, v0, v1
-
     .line 52
-    .line 53
-    move-object v11, v1
+    iget-object p2, p0, LEOg;->h0:LgM6;
 
+    .line 53
     .line 54
-    check-cast v11, Ljava/lang/Integer;
+    const/4 p3, 0x0
 
     .line 55
-    .line 56
-    const/4 v1, 0x6
+    const/high16 p5, 0x3f800000    # 1.0f
 
+    .line 56
     .line 57
-    aget-object v1, v0, v1
+    invoke-virtual {p2, p3, p3, p3, p5}, LgM6;->t(FFFF)V
 
     .line 58
     .line 59
-    move-object v12, v1
-
     .line 60
-    check-cast v12, [B
+    const/16 p3, 0x4100
 
     .line 61
     .line 62
-    const/4 v1, 0x7
+    invoke-virtual {p2, p3}, LgM6;->s(I)V
 
     .line 63
-    aget-object v1, v0, v1
-
     .line 64
     .line 65
-    move-object v13, v1
+    :cond_2
+    iget-object p2, p0, LEOg;->o0:LHTi;
 
     .line 66
-    check-cast v13, [B
-
     .line 67
-    .line 68
-    const/16 v1, 0x8
+    invoke-virtual {p2}, LHTi;->a()V
 
+    .line 68
     .line 69
     .line 70
-    aget-object v1, v0, v1
+    iget-object p2, p0, LEOg;->o0:LHTi;
 
     .line 71
     .line 72
-    move-object v14, v1
+    iget-object p3, p0, LEOg;->k0:Lmhj;
 
     .line 73
-    check-cast v14, Ljava/lang/String;
-
     .line 74
+    iget-object p5, p0, LEOg;->p0:Landroid/graphics/Bitmap;
+
     .line 75
-    const/16 v1, 0x9
-
     .line 76
-    .line 77
-    aget-object v1, v0, v1
+    if-nez p5, :cond_3
 
+    .line 77
     .line 78
+    goto :goto_1
+
     .line 79
-    move-object v15, v1
+    :cond_3
+    iget-object p4, p0, LEOg;->l0:Lmhj;
 
     .line 80
-    check-cast v15, Ljava/lang/String;
-
     .line 81
-    .line 82
-    const/16 v1, 0xa
+    :goto_1
+    if-nez p5, :cond_4
 
+    .line 82
     .line 83
+    goto :goto_2
+
     .line 84
-    aget-object v1, v0, v1
+    :cond_4
+    iget-object p1, p0, LEOg;->q0:LGSi;
 
     .line 85
     .line 86
-    move-object/from16 v16, v1
+    iget p1, p1, LGSi;->b:I
 
     .line 87
     .line 88
-    check-cast v16, Ljava/lang/Boolean;
+    :goto_2
+    if-nez p5, :cond_5
 
     .line 89
     .line 90
-    const/16 v1, 0xb
+    invoke-virtual {p0}, LEP0;->o()Lebf;
 
     .line 91
     .line 92
-    aget-object v1, v0, v1
-
     .line 93
+    move-result-object p5
+
     .line 94
-    move-object/from16 v17, v1
+    iget-object p5, p5, Lebf;->c:LCTi;
 
     .line 95
     .line 96
-    check-cast v17, Ljava/lang/String;
+    goto :goto_3
 
     .line 97
+    :cond_5
+    sget-object p5, LCTi;->c:LCTi;
+
     .line 98
-    const/16 v1, 0xc
-
     .line 99
-    .line 100
-    aget-object v1, v0, v1
+    :goto_3
+    invoke-virtual {p2, p3, p4, p1, p5}, LHTi;->c(Lmhj;Lmhj;ILCTi;)V
 
+    .line 100
     .line 101
     .line 102
-    move-object/from16 v18, v1
+    iget-boolean p1, p0, LEP0;->b:Z
 
     .line 103
     .line 104
-    check-cast v18, Ljava/lang/Integer;
+    if-eqz p1, :cond_6
 
     .line 105
     .line 106
-    const/16 v1, 0xd
+    iget-object p1, p0, LEOg;->h0:LgM6;
 
     .line 107
     .line 108
-    aget-object v1, v0, v1
+    invoke-virtual {p1}, LgM6;->F()V
 
     .line 109
     .line 110
-    move-object/from16 v19, v1
-
     .line 111
-    .line 112
-    check-cast v19, Ljava/lang/Integer;
+    :cond_6
+    return-void
+.end method
 
-    .line 113
-    .line 114
-    const/16 v1, 0xe
+.method public final release()V
+    .locals 2
 
-    .line 115
-    .line 116
-    aget-object v1, v0, v1
+    .line 1
+    iget-object v0, p0, LEOg;->m0:LLtg;
 
-    .line 117
-    .line 118
-    check-cast v1, Ljava/lang/Boolean;
+    .line 2
+    .line 3
+    const/4 v1, 0x0
 
-    .line 119
-    .line 120
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 4
+    if-eqz v0, :cond_0
 
-    .line 121
-    .line 122
-    .line 123
-    move-result v20
+    .line 5
+    .line 6
+    invoke-virtual {v0}, LLtg;->c()V
 
-    .line 124
-    const/16 v1, 0xf
+    .line 7
+    .line 8
+    .line 9
+    iput-object v1, p0, LEOg;->m0:LLtg;
 
-    .line 125
-    .line 126
-    aget-object v1, v0, v1
-
-    .line 127
-    .line 128
-    move-object/from16 v21, v1
-
-    .line 129
-    .line 130
-    check-cast v21, Ljava/lang/String;
-
-    .line 131
-    .line 132
-    const/16 v1, 0x10
-
-    .line 133
-    .line 134
-    aget-object v1, v0, v1
-
-    .line 135
-    .line 136
-    move-object/from16 v22, v1
-
-    .line 137
-    .line 138
-    check-cast v22, Ljava/lang/Long;
-
-    .line 139
-    .line 140
-    const/16 v1, 0x11
-
-    .line 141
-    .line 142
-    aget-object v1, v0, v1
-
-    .line 143
-    .line 144
-    move-object/from16 v23, v1
-
-    .line 145
-    .line 146
-    check-cast v23, Ljava/lang/Boolean;
-
-    .line 147
-    .line 148
-    const/16 v1, 0x12
-
-    .line 149
-    .line 150
-    aget-object v1, v0, v1
-
-    .line 151
-    .line 152
-    move-object/from16 v24, v1
-
-    .line 153
-    .line 154
-    check-cast v24, Ljava/lang/String;
-
-    .line 155
-    .line 156
-    const/16 v1, 0x13
-
-    .line 157
-    .line 158
-    aget-object v1, v0, v1
-
-    .line 159
-    .line 160
-    move-object/from16 v25, v1
-
-    .line 161
-    .line 162
-    check-cast v25, Ljava/lang/String;
-
-    .line 163
-    .line 164
-    const/16 v1, 0x14
-
-    .line 165
-    .line 166
-    aget-object v1, v0, v1
-
-    .line 167
-    .line 168
-    move-object/from16 v26, v1
-
-    .line 169
-    .line 170
-    check-cast v26, Ljava/lang/String;
-
-    .line 171
-    .line 172
-    const/16 v1, 0x15
-
-    .line 173
-    .line 174
-    aget-object v1, v0, v1
-
-    .line 175
-    .line 176
-    move-object/from16 v27, v1
-
-    .line 177
-    .line 178
-    check-cast v27, Ljava/lang/Integer;
-
-    .line 179
-    .line 180
-    const/16 v1, 0x16
-
-    .line 181
-    .line 182
-    aget-object v1, v0, v1
-
-    .line 183
-    .line 184
-    move-object/from16 v28, v1
-
-    .line 185
-    .line 186
-    check-cast v28, Ljava/lang/Boolean;
-
-    .line 187
-    .line 188
-    const/16 v1, 0x17
-
-    .line 189
-    .line 190
-    aget-object v1, v0, v1
-
-    .line 191
-    .line 192
-    move-object/from16 v29, v1
-
-    .line 193
-    .line 194
-    check-cast v29, [B
-
-    .line 195
-    .line 196
-    const/16 v1, 0x18
-
-    .line 197
-    .line 198
-    aget-object v1, v0, v1
-
-    .line 199
-    .line 200
-    check-cast v1, Ljava/lang/Boolean;
-
-    .line 201
-    .line 202
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 203
-    .line 204
-    .line 205
-    move-result v30
-
-    .line 206
-    const/16 v1, 0x19
-
-    .line 207
-    .line 208
-    aget-object v1, v0, v1
-
-    .line 209
-    .line 210
-    move-object/from16 v31, v1
-
-    .line 211
-    .line 212
-    check-cast v31, Ljava/lang/Double;
-
-    .line 213
-    .line 214
-    const/16 v1, 0x1a
-
-    .line 215
-    .line 216
-    aget-object v1, v0, v1
-
-    .line 217
-    .line 218
-    move-object/from16 v32, v1
-
-    .line 219
-    .line 220
-    check-cast v32, Ljava/lang/Double;
-
-    .line 221
-    .line 222
-    const/16 v1, 0x1b
-
-    .line 223
-    .line 224
-    aget-object v1, v0, v1
-
-    .line 225
-    .line 226
-    move-object/from16 v33, v1
-
-    .line 227
-    .line 228
-    check-cast v33, Ljava/lang/Integer;
-
-    .line 229
-    .line 230
-    const/16 v1, 0x1c
-
-    .line 231
-    .line 232
-    aget-object v0, v0, v1
-
-    .line 233
-    .line 234
-    move-object/from16 v34, v0
-
-    .line 235
-    .line 236
-    check-cast v34, Ljava/lang/Integer;
-
-    .line 237
-    .line 238
-    new-instance v2, LaHg;
-
-    .line 239
-    .line 240
-    invoke-direct/range {v2 .. v34}, LaHg;-><init>(Ljava/lang/String;JJDILjava/lang/Integer;[B[BLjava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;ZLjava/lang/String;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;[BZLjava/lang/Double;Ljava/lang/Double;Ljava/lang/Integer;Ljava/lang/Integer;)V
-
-    .line 241
-    .line 242
-    .line 243
-    return-object v2
-
-    .line 244
+    .line 10
+    .line 11
     :cond_0
-    new-instance v0, Ljava/lang/IllegalArgumentException;
+    iget-object v0, p0, LEOg;->n0:LLtg;
 
-    .line 245
-    .line 246
-    const-string v1, "Expected 29 arguments"
+    .line 12
+    .line 13
+    if-eqz v0, :cond_1
 
-    .line 247
-    .line 248
-    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    .line 14
+    .line 15
+    invoke-virtual {v0}, LLtg;->c()V
 
-    .line 249
-    .line 250
-    .line 251
-    throw v0
+    .line 16
+    .line 17
+    .line 18
+    iput-object v1, p0, LEOg;->n0:LLtg;
+
+    .line 19
+    .line 20
+    :cond_1
+    iget-object v0, p0, LEOg;->o0:LHTi;
+
+    .line 21
+    .line 22
+    if-eqz v0, :cond_2
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, LHTi;->b()V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object v1, p0, LEOg;->o0:LHTi;
+
+    .line 28
+    .line 29
+    :cond_2
+    iget-object v0, p0, LEOg;->q0:LGSi;
+
+    .line 30
+    .line 31
+    if-eqz v0, :cond_3
+
+    .line 32
+    .line 33
+    invoke-virtual {v0}, LGSi;->b()V
+
+    .line 34
+    .line 35
+    .line 36
+    iput-object v1, p0, LEOg;->q0:LGSi;
+
+    .line 37
+    .line 38
+    :cond_3
+    iput-object v1, p0, LEOg;->p0:Landroid/graphics/Bitmap;
+
+    .line 39
+    .line 40
+    return-void
 .end method

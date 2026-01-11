@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public final A0:Lwz5;
+.field public final A0:LxD5;
 
-.field public final B0:Lrh8;
+.field public final B0:LUn8;
 
-.field public C0:LBre;
+.field public C0:LnJe;
 
 .field public D0:Landroid/view/View;
 
@@ -20,47 +20,47 @@
 
 .field public F0:Landroid/view/View;
 
-.field public G0:Lqrf;
+.field public G0:LwKf;
 
-.field public H0:LcP5;
+.field public H0:LnT5;
 
-.field public I0:LrH9;
+.field public I0:LQS9;
 
-.field public J0:Lik3;
+.field public J0:Lhn3;
 
-.field public K0:Ls2a;
+.field public K0:Lefa;
 
-.field public L0:Lqp5;
+.field public L0:LRu5;
 
-.field public M0:Lph;
+.field public M0:Lpi;
 
-.field public N0:LTqc;
+.field public N0:LmGc;
 
-.field public O0:LTe5;
+.field public O0:Lnl5;
 
-.field public P0:LZO5;
+.field public P0:LkT5;
 
-.field public Q0:LfP5;
+.field public Q0:LqT5;
 
-.field public R0:LBJd;
+.field public R0:LR0e;
 
-.field public S0:Lj7i;
+.field public S0:Lzvi;
 
-.field public T0:LJ7d;
+.field public T0:LYmd;
 
-.field public U0:Lpi5;
+.field public U0:LMo5;
 
-.field public V0:LBd4;
+.field public V0:LZh4;
 
-.field public W0:LiR7;
+.field public W0:LnX7;
 
-.field public X0:LSb3;
+.field public X0:LLe3;
 
-.field public Y0:LKw8;
+.field public Y0:LsD8;
 
-.field public Z0:LB73;
+.field public Z0:LR93;
 
-.field public a1:Lnwf;
+.field public a1:LyPf;
 
 .field public final w0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
@@ -68,7 +68,7 @@
 
 .field public final y0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public final z0:LXog;
+.field public final z0:LgKg;
 
 
 # direct methods
@@ -81,27 +81,27 @@
     .line 2
     .line 3
     .line 4
-    new-instance v3, Lwz5;
+    new-instance v3, LxD5;
 
     .line 5
     .line 6
     const/4 v0, 0x2
 
     .line 7
-    invoke-direct {v3, v0}, Lwz5;-><init>(I)V
+    invoke-direct {v3, v0}, LxD5;-><init>(I)V
 
     .line 8
     .line 9
     .line 10
-    iput-object v3, p0, Lcom/snap/scan/ScanCardFragmentImpl;->A0:Lwz5;
+    iput-object v3, p0, Lcom/snap/scan/ScanCardFragmentImpl;->A0:LxD5;
 
     .line 11
     .line 12
-    new-instance v0, Lrh8;
+    new-instance v0, LUn8;
 
     .line 13
     .line 14
-    sget-object v1, Lmsf;->e0:LcSa;
+    sget-object v1, LuLf;->e0:LL4b;
 
     .line 15
     .line 16
@@ -115,12 +115,12 @@
     const/4 v2, 0x0
 
     .line 20
-    invoke-direct/range {v0 .. v5}, Lrh8;-><init>(LcSa;LcSa;LEId;Ljava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, LUn8;-><init>(LL4b;LL4b;LTZd;Ljava/lang/String;I)V
 
     .line 21
     .line 22
     .line 23
-    iput-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->B0:Lrh8;
+    iput-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->B0:LUn8;
 
     .line 24
     .line 25
@@ -150,16 +150,16 @@
 
     .line 38
     .line 39
-    new-instance v0, LXog;
+    new-instance v0, LgKg;
 
     .line 40
     .line 41
-    invoke-direct {v0}, LXog;-><init>()V
+    invoke-direct {v0}, LgKg;-><init>()V
 
     .line 42
     .line 43
     .line 44
-    iput-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->z0:LXog;
+    iput-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->z0:LgKg;
 
     .line 45
     .line 46
@@ -193,83 +193,24 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
-
-    .line 5
-    .line 6
-    .line 7
-    iget-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->a1:Lnwf;
-
-    .line 8
-    .line 9
-    sget-object v0, Lmsf;->Z:Lmsf;
-
-    .line 10
-    .line 11
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 12
-    .line 13
-    .line 14
-    new-instance v1, LWm0;
-
-    .line 15
-    .line 16
-    const-string v2, "ScanCardFragmentImpl"
-
-    .line 17
-    .line 18
-    invoke-direct {v1, v0, v2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
-    check-cast p1, LIP5;
-
-    .line 22
-    .line 23
-    invoke-static {p1, v1}, LEU0;->p(LIP5;LWm0;)LBre;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p1
-
-    .line 27
-    iput-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LBre;
-
-    .line 28
-    .line 29
-    return-void
-.end method
-
-.method public final D1()V
+.method public final B1()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->D1()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->B1()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->N0:LTqc;
+    iget-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->N0:LmGc;
 
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->A0:Lwz5;
+    iget-object v1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->A0:LxD5;
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, LTqc;->L(LEId;)V
+    invoke-virtual {v0, v1}, LmGc;->J(LTZd;)V
 
     .line 9
     .line 10
@@ -277,7 +218,7 @@
     return-void
 .end method
 
-.method public final E1()V
+.method public final C1()V
     .locals 5
 
     .line 1
@@ -288,7 +229,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->C0(LZXe;)V
 
     .line 5
     .line 6
@@ -297,7 +238,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->c1()Z
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->f1()Z
 
     .line 10
     .line 11
@@ -345,11 +286,11 @@
 
     .line 32
     .line 33
-    iget-object v2, p0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LBre;
+    iget-object v2, p0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LnJe;
 
     .line 34
     .line 35
-    invoke-virtual {v2}, LBre;->d()LF06;
+    invoke-virtual {v2}, LnJe;->d()LA36;
 
     .line 36
     .line 37
@@ -357,19 +298,19 @@
     move-result-object v2
 
     .line 39
-    new-instance v3, Lcrf;
+    new-instance v3, LiKf;
 
     .line 40
     .line 41
     const/4 v4, 0x2
 
     .line 42
-    invoke-direct {v3, p0, v4}, Lcrf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
+    invoke-direct {v3, p0, v4}, LiKf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
 
     .line 43
     .line 44
     .line 45
-    invoke-static {v2, v3, v1}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v2, v3, v1}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 46
     .line 47
@@ -385,11 +326,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0620
+    const p3, 0x7f0e0641
 
     .line 2
     .line 3
@@ -405,7 +346,7 @@
     move-result-object p1
 
     .line 9
-    const p2, 0x7f0b0424
+    const p2, 0x7f0b04ad
 
     .line 10
     .line 11
@@ -422,7 +363,7 @@
 
     .line 17
     .line 18
-    const p2, 0x7f0b0146
+    const p2, 0x7f0b0185
 
     .line 19
     .line 20
@@ -443,7 +384,7 @@
 
     .line 28
     .line 29
-    const p2, 0x7f0b07eb
+    const p2, 0x7f0b08ab
 
     .line 30
     .line 31
@@ -460,15 +401,15 @@
 
     .line 37
     .line 38
-    iget-object p2, p0, Lcom/snap/scan/ScanCardFragmentImpl;->N0:LTqc;
+    iget-object p2, p0, Lcom/snap/scan/ScanCardFragmentImpl;->N0:LmGc;
 
     .line 39
     .line 40
-    iget-object p3, p0, Lcom/snap/scan/ScanCardFragmentImpl;->B0:Lrh8;
+    iget-object p3, p0, Lcom/snap/scan/ScanCardFragmentImpl;->B0:LUn8;
 
     .line 41
     .line 42
-    invoke-virtual {p2, p3}, LTqc;->b(Lrh8;)V
+    invoke-virtual {p2, p3}, LmGc;->b(LUn8;)V
 
     .line 43
     .line 44
@@ -491,7 +432,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, LQqf;->a:LQqf;
+    sget-object v0, LWJf;->a:LWJf;
 
     .line 2
     .line 3
@@ -515,20 +456,20 @@
     return v0
 .end method
 
-.method public final g()V
+.method public final f()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->g()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->f()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LRqf;
+    new-instance v0, LXJf;
 
     .line 5
     .line 6
-    invoke-direct {v0}, LRqf;-><init>()V
+    invoke-direct {v0}, LXJf;-><init>()V
 
     .line 7
     .line 8
@@ -545,20 +486,20 @@
     return-void
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LBre;
+    iget-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LnJe;
 
     .line 5
     .line 6
-    invoke-virtual {p1}, LBre;->d()LF06;
+    invoke-virtual {p1}, LnJe;->d()LA36;
 
     .line 7
     .line 8
@@ -566,14 +507,14 @@
     move-result-object p1
 
     .line 10
-    new-instance v0, Lcrf;
+    new-instance v0, LiKf;
 
     .line 11
     .line 12
     const/4 v1, 0x3
 
     .line 13
-    invoke-direct {v0, p0, v1}, Lcrf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
+    invoke-direct {v0, p0, v1}, LiKf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
 
     .line 14
     .line 15
@@ -581,7 +522,7 @@
     const/4 v1, 0x0
 
     .line 17
-    invoke-static {p1, v0, v1}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {p1, v0, v1}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 18
     .line 19
@@ -601,18 +542,18 @@
     return-void
 .end method
 
-.method public onScanCardDismissEvent(LNqf;)V
+.method public onScanCardDismissEvent(LTJf;)V
     .locals 1
-    .annotation runtime Lv6i;
+    .annotation runtime LOui;
         threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
     .end annotation
 
     .line 1
-    new-instance p1, LRqf;
+    new-instance p1, LXJf;
 
     .line 2
     .line 3
-    invoke-direct {p1}, LRqf;-><init>()V
+    invoke-direct {p1}, LXJf;-><init>()V
 
     .line 4
     .line 5
@@ -638,16 +579,16 @@
     return-wide v0
 .end method
 
-.method public final v(LPpc;)V
+.method public final u(LkFc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->v(LPpc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->u(LkFc;)V
 
     .line 2
     .line 3
     .line 4
-    instance-of v0, p1, Lqrf;
+    instance-of v0, p1, LwKf;
 
     .line 5
     .line 6
@@ -655,19 +596,19 @@
 
     .line 7
     .line 8
-    check-cast p1, Lqrf;
+    check-cast p1, LwKf;
 
     .line 9
     .line 10
-    iput-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->G0:Lqrf;
+    iput-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->G0:LwKf;
 
     .line 11
     .line 12
-    iget-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->H0:LcP5;
+    iget-object v0, p0, Lcom/snap/scan/ScanCardFragmentImpl;->H0:LnT5;
 
     .line 13
     .line 14
-    invoke-virtual {v0, p1}, LcP5;->d(Lqrf;)V
+    invoke-virtual {v0, p1}, LnT5;->b(LwKf;)V
 
     .line 15
     .line 16
@@ -676,7 +617,7 @@
     return-void
 .end method
 
-.method public final w0(LPpc;)V
+.method public final w0(LkFc;)V
     .locals 29
 
     .line 1
@@ -688,164 +629,164 @@
 
     .line 4
     .line 5
-    const/4 v4, 0x2
+    const/4 v3, 0x7
 
     .line 6
-    const/4 v5, 0x4
+    const/4 v4, 0x2
 
     .line 7
-    const/4 v6, 0x1
+    const/4 v5, 0x4
 
     .line 8
-    const/4 v7, 0x0
+    const/4 v6, 0x1
 
     .line 9
-    invoke-super/range {p0 .. p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LPpc;)V
+    const/4 v7, 0x0
 
     .line 10
+    invoke-super/range {p0 .. p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LkFc;)V
+
     .line 11
     .line 12
-    instance-of v8, v1, Lqrf;
-
     .line 13
+    instance-of v8, v1, LwKf;
+
     .line 14
+    .line 15
     if-eqz v8, :cond_0
 
-    .line 15
     .line 16
+    .line 17
     move-object v8, v1
 
-    .line 17
-    check-cast v8, Lqrf;
-
     .line 18
+    check-cast v8, LwKf;
+
     .line 19
-    iput-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->G0:Lqrf;
-
     .line 20
+    iput-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->G0:LwKf;
+
     .line 21
-    iget-object v9, v0, Lcom/snap/scan/ScanCardFragmentImpl;->H0:LcP5;
-
     .line 22
-    .line 23
-    invoke-virtual {v9, v8}, LcP5;->d(Lqrf;)V
+    iget-object v9, v0, Lcom/snap/scan/ScanCardFragmentImpl;->H0:LnT5;
 
+    .line 23
     .line 24
+    invoke-virtual {v9, v8}, LnT5;->b(LwKf;)V
+
     .line 25
     .line 26
+    .line 27
     :cond_0
     iget-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->E0:Lcom/snap/scan/ui/view/CardsView;
 
-    .line 27
     .line 28
-    new-instance v9, Lx70;
-
     .line 29
-    .line 30
-    invoke-direct {v9, v5, v0}, Lx70;-><init>(ILjava/lang/Object;)V
+    new-instance v9, LP90;
 
+    .line 30
     .line 31
+    invoke-direct {v9, v5, v0}, LP90;-><init>(ILjava/lang/Object;)V
+
     .line 32
     .line 33
-    invoke-virtual {v8, v9}, Lcom/snap/scan/ui/view/CardsView;->Q0(Lx70;)V
-
     .line 34
+    invoke-virtual {v8, v9}, Lcom/snap/scan/ui/view/CardsView;->Q0(LP90;)V
+
     .line 35
     .line 36
-    iget-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->z0:LXog;
-
     .line 37
-    .line 38
-    invoke-virtual {v8, v0}, LXog;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->z0:LgKg;
 
+    .line 38
     .line 39
+    invoke-virtual {v8, v0}, LgKg;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 40
     .line 41
+    .line 42
     move-result-object v9
 
-    .line 42
+    .line 43
     new-array v10, v4, [Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 43
     .line 44
+    .line 45
     aput-object v8, v10, v7
 
-    .line 45
     .line 46
+    .line 47
     aput-object v9, v10, v6
 
-    .line 47
     .line 48
+    .line 49
     iget-object v9, v0, Lcom/snap/scan/ScanCardFragmentImpl;->w0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 49
     .line 50
+    .line 51
     invoke-virtual {v9, v10}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->f([Lio/reactivex/rxjava3/disposables/Disposable;)V
 
-    .line 51
     .line 52
     .line 53
-    new-instance v11, Lyqf;
-
     .line 54
+    new-instance v11, LEJf;
+
     .line 55
-    iget-object v13, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LBre;
-
     .line 56
+    iget-object v13, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LnJe;
+
     .line 57
-    iget-object v14, v0, Lcom/snap/scan/ScanCardFragmentImpl;->K0:Ls2a;
-
     .line 58
-    .line 59
-    new-instance v15, LOHe;
+    iget-object v14, v0, Lcom/snap/scan/ScanCardFragmentImpl;->K0:Lefa;
 
+    .line 59
     .line 60
+    new-instance v15, LGYe;
+
     .line 61
+    .line 62
     iget-object v10, v0, Lcom/snap/scan/ScanCardFragmentImpl;->y0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 62
     .line 63
-    const/4 v12, 0x6
-
     .line 64
-    invoke-direct {v15, v12, v10}, LOHe;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v15, v3, v10}, LGYe;-><init>(ILjava/lang/Object;)V
 
     .line 65
     .line 66
     .line 67
-    iget-object v12, v0, Lcom/snap/scan/ScanCardFragmentImpl;->J0:Lik3;
+    iget-object v12, v0, Lcom/snap/scan/ScanCardFragmentImpl;->J0:Lhn3;
 
     .line 68
     .line 69
-    iget-object v5, v0, Lcom/snap/scan/ScanCardFragmentImpl;->L0:Lqp5;
+    iget-object v5, v0, Lcom/snap/scan/ScanCardFragmentImpl;->L0:LRu5;
 
     .line 70
     .line 71
-    iget-object v4, v0, Lcom/snap/scan/ScanCardFragmentImpl;->M0:Lph;
+    iget-object v4, v0, Lcom/snap/scan/ScanCardFragmentImpl;->M0:Lpi;
 
     .line 72
     .line 73
-    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->R0:LBJd;
+    iget-object v3, v0, Lcom/snap/scan/ScanCardFragmentImpl;->R0:LR0e;
 
     .line 74
     .line 75
-    iget-object v7, v0, Lcom/snap/scan/ScanCardFragmentImpl;->S0:Lj7i;
+    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->S0:Lzvi;
 
     .line 76
     .line 77
-    iget-object v6, v0, Lcom/snap/scan/ScanCardFragmentImpl;->T0:LJ7d;
+    iget-object v7, v0, Lcom/snap/scan/ScanCardFragmentImpl;->T0:LYmd;
 
     .line 78
     .line 79
-    iget-object v3, v0, Lcom/snap/scan/ScanCardFragmentImpl;->U0:Lpi5;
+    iget-object v6, v0, Lcom/snap/scan/ScanCardFragmentImpl;->U0:LMo5;
 
     .line 80
     .line 81
-    move-object/from16 v19, v2
+    move-object/from16 v20, v2
 
     .line 82
     .line 83
-    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->V0:LBd4;
+    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->V0:LZh4;
 
     .line 84
     .line 85
@@ -853,7 +794,7 @@
 
     .line 86
     .line 87
-    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->W0:LiR7;
+    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->W0:LnX7;
 
     .line 88
     .line 89
@@ -861,7 +802,7 @@
 
     .line 90
     .line 91
-    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->O0:LTe5;
+    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->O0:Lnl5;
 
     .line 92
     .line 93
@@ -869,7 +810,7 @@
 
     .line 94
     .line 95
-    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->Y0:LKw8;
+    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->Y0:LsD8;
 
     .line 96
     .line 97
@@ -877,11 +818,11 @@
 
     .line 98
     .line 99
-    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->X0:LSb3;
+    iget-object v2, v0, Lcom/snap/scan/ScanCardFragmentImpl;->X0:LLe3;
 
     .line 100
     .line 101
-    iget-object v8, v8, LXog;->c:LWog;
+    iget-object v8, v8, LgKg;->c:LfKg;
 
     .line 102
     .line 103
@@ -889,7 +830,7 @@
 
     .line 104
     .line 105
-    move-object/from16 v22, v3
+    move-object/from16 v19, v3
 
     .line 106
     .line 107
@@ -901,11 +842,11 @@
 
     .line 110
     .line 111
-    move-object/from16 v21, v6
+    move-object/from16 v22, v6
 
     .line 112
     .line 113
-    move-object/from16 v20, v7
+    move-object/from16 v21, v7
 
     .line 114
     .line 115
@@ -916,29 +857,29 @@
     move-object v12, v8
 
     .line 118
-    invoke-direct/range {v11 .. v27}, Lyqf;-><init>(LWog;LBre;Ls2a;LOHe;Lik3;Lqp5;Lph;LBJd;Lj7i;LJ7d;Lpi5;LBd4;LiR7;LTe5;LKw8;LSb3;)V
+    invoke-direct/range {v11 .. v27}, LEJf;-><init>(LfKg;LnJe;Lefa;LGYe;Lhn3;LRu5;Lpi;LR0e;Lzvi;LYmd;LMo5;LZh4;LnX7;Lnl5;LsD8;LLe3;)V
 
     .line 119
     .line 120
     .line 121
-    new-instance v3, LYIj;
+    new-instance v3, Lw8k;
 
     .line 122
     .line 123
-    const-class v2, LBrf;
+    const-class v2, LHKf;
 
     .line 124
     .line 125
-    invoke-direct {v3, v11, v2}, LYIj;-><init>(LEX0;Ljava/lang/Class;)V
+    invoke-direct {v3, v11, v2}, Lw8k;-><init>(Lk11;Ljava/lang/Class;)V
 
     .line 126
     .line 127
     .line 128
-    const-class v2, LSqf;
+    const-class v2, LYJf;
 
     .line 129
     .line 130
-    invoke-virtual {v10, v2}, Lio/reactivex/rxjava3/core/Observable;->v0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-virtual {v10, v2}, Lio/reactivex/rxjava3/core/Observable;->y0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
     .line 131
     .line 132
@@ -946,15 +887,15 @@
     move-result-object v2
 
     .line 134
-    new-instance v4, Lsfd;
+    new-instance v4, Lzvd;
 
     .line 135
     .line 136
-    const/16 v5, 0xd
+    const/16 v5, 0xc
 
     .line 137
     .line 138
-    invoke-direct {v4, v5, v0}, Lsfd;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v4, v5, v0}, Lzvd;-><init>(ILjava/lang/Object;)V
 
     .line 139
     .line 140
@@ -968,48 +909,48 @@
     .line 144
     .line 145
     .line 146
-    new-instance v2, LqIa;
+    new-instance v2, LHUa;
 
     .line 147
     .line 148
-    iget-object v4, v0, Lcom/snap/scan/ScanCardFragmentImpl;->T0:LJ7d;
+    iget-object v4, v0, Lcom/snap/scan/ScanCardFragmentImpl;->T0:LYmd;
 
     .line 149
     .line 150
     const/4 v6, 0x1
 
     .line 151
-    invoke-direct {v2, v4, v10, v6}, LqIa;-><init>(LJ7d;Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
+    invoke-direct {v2, v4, v10, v6}, LHUa;-><init>(LYmd;Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
 
     .line 152
     .line 153
     .line 154
-    new-instance v6, LqIa;
+    new-instance v6, LHUa;
 
     .line 155
     .line 156
     const/4 v7, 0x0
 
     .line 157
-    invoke-direct {v6, v4, v10, v7}, LqIa;-><init>(LJ7d;Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
+    invoke-direct {v6, v4, v10, v7}, LHUa;-><init>(LYmd;Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
 
     .line 158
     .line 159
     .line 160
-    new-instance v4, Lpz0;
+    new-instance v4, LeC0;
 
     .line 161
     .line 162
-    invoke-direct {v4, v7, v10}, Lpz0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v4, v7, v10}, LeC0;-><init>(ILjava/lang/Object;)V
 
     .line 163
     .line 164
     .line 165
-    iget-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->H0:LcP5;
+    iget-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->H0:LnT5;
 
     .line 166
     .line 167
-    invoke-virtual {v8}, LcP5;->a()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-virtual {v8}, LnT5;->a()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 168
     .line 169
@@ -1017,16 +958,16 @@
     move-result-object v8
 
     .line 171
-    new-instance v12, Lbrf;
+    new-instance v12, LhKf;
 
     .line 172
     .line 173
-    invoke-direct {v12, v0, v7}, Lbrf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
+    invoke-direct {v12, v0, v7}, LhKf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
 
     .line 174
     .line 175
     .line 176
-    invoke-virtual {v8, v12}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {v8, v12}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
     .line 177
     .line 178
@@ -1034,7 +975,7 @@
     move-result-object v7
 
     .line 180
-    invoke-virtual {v7, v2}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v7, v2}, Lio/reactivex/rxjava3/core/Observable;->A(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 181
     .line 182
@@ -1042,7 +983,7 @@
     move-result-object v2
 
     .line 184
-    invoke-virtual {v2, v6}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v2, v6}, Lio/reactivex/rxjava3/core/Observable;->A(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 185
     .line 186
@@ -1050,7 +991,7 @@
     move-result-object v2
 
     .line 188
-    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->A(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 189
     .line 190
@@ -1058,19 +999,19 @@
     move-result-object v2
 
     .line 192
-    new-instance v4, Lbrf;
+    new-instance v4, LhKf;
 
     .line 193
     .line 194
     const/4 v6, 0x1
 
     .line 195
-    invoke-direct {v4, v0, v6}, Lbrf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
+    invoke-direct {v4, v0, v6}, LhKf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
 
     .line 196
     .line 197
     .line 198
-    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
     .line 199
     .line 200
@@ -1078,11 +1019,11 @@
     move-result-object v2
 
     .line 202
-    iget-object v4, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LBre;
+    iget-object v4, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LnJe;
 
     .line 203
     .line 204
-    invoke-virtual {v4}, LBre;->d()LF06;
+    invoke-virtual {v4}, LnJe;->d()LA36;
 
     .line 205
     .line 206
@@ -1090,7 +1031,7 @@
     move-result-object v4
 
     .line 208
-    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 209
     .line 210
@@ -1098,23 +1039,23 @@
     move-result-object v2
 
     .line 212
-    new-instance v4, Lpz0;
+    new-instance v4, LeC0;
 
     .line 213
     .line 214
-    iget-object v6, v0, Lcom/snap/scan/ScanCardFragmentImpl;->I0:LrH9;
+    iget-object v6, v0, Lcom/snap/scan/ScanCardFragmentImpl;->I0:LQS9;
 
     .line 215
     .line 216
     const/4 v7, 0x3
 
     .line 217
-    invoke-direct {v4, v7, v6}, Lpz0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v4, v7, v6}, LeC0;-><init>(ILjava/lang/Object;)V
 
     .line 218
     .line 219
     .line 220
-    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->A(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 221
     .line 222
@@ -1122,7 +1063,7 @@
     move-result-object v2
 
     .line 224
-    invoke-static {v2, v5}, Lio/reactivex/rxjava3/core/Observable;->o0(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-static {v2, v5}, Lio/reactivex/rxjava3/core/Observable;->r0(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 225
     .line 226
@@ -1130,11 +1071,11 @@
     move-result-object v2
 
     .line 228
-    new-instance v4, LwKc;
+    new-instance v4, LfZc;
 
     .line 229
     .line 230
-    invoke-virtual {v11}, Lyqf;->b()LWR6;
+    invoke-virtual {v11}, LEJf;->c()LSV6;
 
     .line 231
     .line 232
@@ -1142,11 +1083,11 @@
     move-result-object v5
 
     .line 234
-    iget-object v6, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LBre;
+    iget-object v6, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LnJe;
 
     .line 235
     .line 236
-    invoke-virtual {v6}, LBre;->d()LF06;
+    invoke-virtual {v6}, LnJe;->d()LA36;
 
     .line 237
     .line 238
@@ -1154,11 +1095,11 @@
     move-result-object v6
 
     .line 240
-    iget-object v7, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LBre;
+    iget-object v7, v0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LnJe;
 
     .line 241
     .line 242
-    invoke-virtual {v7}, LBre;->i()Lgn0;
+    invoke-virtual {v7}, LnJe;->i()Lxp0;
 
     .line 243
     .line 244
@@ -1166,7 +1107,7 @@
     move-result-object v7
 
     .line 246
-    iget-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->P0:LZO5;
+    iget-object v8, v0, Lcom/snap/scan/ScanCardFragmentImpl;->P0:LkT5;
 
     .line 247
     .line 248
@@ -1178,11 +1119,11 @@
     move-result-object v11
 
     .line 252
-    iget-object v12, v0, Lcom/snap/scan/ScanCardFragmentImpl;->G0:Lqrf;
+    iget-object v12, v0, Lcom/snap/scan/ScanCardFragmentImpl;->G0:LwKf;
 
     .line 253
     .line 254
-    invoke-virtual {v8, v11, v12, v2}, LZO5;->a(Landroid/content/Context;Lqrf;Lio/reactivex/rxjava3/core/Observable;)LYO5;
+    invoke-virtual {v8, v11, v12, v2}, LkT5;->a(Landroid/content/Context;LwKf;Lio/reactivex/rxjava3/core/Observable;)LjT5;
 
     .line 255
     .line 256
@@ -1190,7 +1131,7 @@
     move-result-object v2
 
     .line 258
-    invoke-static {v2}, LY69;->C(Ljava/lang/Object;)LyMe;
+    invoke-static {v2}, LBe9;->C(Ljava/lang/Object;)Lr4f;
 
     .line 259
     .line 260
@@ -1218,7 +1159,7 @@
 
     .line 269
     .line 270
-    invoke-direct/range {v2 .. v7}, LwKc;-><init>(LYIj;LWR6;LF06;Lgn0;LyMe;)V
+    invoke-direct/range {v2 .. v7}, LfZc;-><init>(Lw8k;LSV6;LA36;Lxp0;Lr4f;)V
 
     .line 271
     .line 272
@@ -1227,177 +1168,235 @@
 
     .line 274
     .line 275
-    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-virtual {v3, v2}, Landroidx/recyclerview/widget/RecyclerView;->C0(LZXe;)V
 
     .line 276
     .line 277
     .line 278
-    new-instance v3, LAp0;
+    new-instance v3, Lbs0;
 
     .line 279
     .line 280
-    const/16 v4, 0x11
+    const/16 v4, 0x12
 
     .line 281
     .line 282
-    invoke-direct {v3, v4}, LAp0;-><init>(I)V
+    invoke-direct {v3, v4}, Lbs0;-><init>(I)V
 
     .line 283
     .line 284
     .line 285
-    invoke-virtual {v2, v9, v3}, LwKc;->C(Lio/reactivex/rxjava3/disposables/DisposableContainer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v2, v9, v3}, LfZc;->C(Lio/reactivex/rxjava3/disposables/DisposableContainer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 286
     .line 287
     .line 288
-    new-instance v2, LiFd;
+    new-instance v2, LeZe;
 
     .line 289
     .line 290
-    const/16 v3, 0xc
+    const/4 v3, 0x7
 
     .line 291
-    .line 292
-    invoke-direct {v2, v3}, LiFd;-><init>(I)V
+    invoke-direct {v2, v3}, LeZe;-><init>(I)V
 
+    .line 292
     .line 293
     .line 294
-    .line 295
     new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
+    .line 295
     .line 296
-    .line 297
     invoke-direct {v3, v10, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
 
+    .line 297
     .line 298
     .line 299
-    .line 300
-    new-instance v2, Lbrf;
+    new-instance v2, LhKf;
 
+    .line 300
     .line 301
-    .line 302
     const/4 v4, 0x2
 
-    .line 303
-    invoke-direct {v2, v0, v4}, Lbrf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
+    .line 302
+    invoke-direct {v2, v0, v4}, LhKf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
 
+    .line 303
     .line 304
     .line 305
-    .line 306
     invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 306
     .line 307
     .line 308
-    .line 309
     move-result-object v2
+
+    .line 309
+    invoke-virtual {v9, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 310
-    invoke-virtual {v9, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 311
     .line 312
-    .line 313
-    new-instance v2, Lbrf;
+    new-instance v2, LhKf;
 
+    .line 313
     .line 314
-    .line 315
     const/4 v7, 0x3
 
-    .line 316
-    invoke-direct {v2, v0, v7}, Lbrf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
+    .line 315
+    invoke-direct {v2, v0, v7}, LhKf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
 
+    .line 316
     .line 317
     .line 318
-    .line 319
     invoke-virtual {v10, v2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 319
     .line 320
     .line 321
-    .line 322
     move-result-object v2
+
+    .line 322
+    invoke-virtual {v9, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 323
-    invoke-virtual {v9, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 324
     .line 325
+    new-instance v2, LeZe;
+
     .line 326
-    new-instance v2, LiFd;
-
     .line 327
+    const/16 v3, 0x8
+
     .line 328
-    const/16 v5, 0xd
-
     .line 329
-    .line 330
-    invoke-direct {v2, v5}, LiFd;-><init>(I)V
+    invoke-direct {v2, v3}, LeZe;-><init>(I)V
 
+    .line 330
     .line 331
     .line 332
-    .line 333
     new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
+    .line 333
     .line 334
-    .line 335
     invoke-direct {v3, v10, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
 
+    .line 335
     .line 336
     .line 337
-    .line 338
-    new-instance v2, Lbrf;
+    new-instance v2, LhKf;
 
+    .line 338
     .line 339
-    .line 340
     const/4 v4, 0x4
 
-    .line 341
-    invoke-direct {v2, v0, v4}, Lbrf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
+    .line 340
+    invoke-direct {v2, v0, v4}, LhKf;-><init>(Lcom/snap/scan/ScanCardFragmentImpl;I)V
 
+    .line 341
     .line 342
     .line 343
-    .line 344
     invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 344
     .line 345
     .line 346
-    .line 347
     move-result-object v2
 
-    .line 348
-    invoke-virtual {v9, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    .line 347
+    invoke-virtual {v9, v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 348
     .line 349
     .line 350
-    .line 351
-    instance-of v1, v1, Lnrf;
+    instance-of v1, v1, LtKf;
 
+    .line 351
     .line 352
-    .line 353
     if-eqz v1, :cond_1
 
+    .line 353
     .line 354
-    .line 355
     iget-object v1, v0, Lcom/snap/scan/ScanCardFragmentImpl;->x0:Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
+    .line 355
     .line 356
-    .line 357
     const/4 v2, 0x0
 
-    .line 358
-    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/disposables/SerialDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    .line 357
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/disposables/SerialDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 358
     .line 359
     .line 360
+    iget-object v1, v0, Lcom/snap/scan/ScanCardFragmentImpl;->Q0:LqT5;
+
     .line 361
-    iget-object v1, v0, Lcom/snap/scan/ScanCardFragmentImpl;->Q0:LfP5;
-
     .line 362
-    .line 363
-    invoke-virtual {v1}, LfP5;->b()V
+    invoke-virtual {v1}, LqT5;->b()V
 
+    .line 363
     .line 364
     .line 365
-    .line 366
     :cond_1
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->a1:LyPf;
+
+    .line 8
+    .line 9
+    sget-object v0, LuLf;->Z:LuLf;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v1, Lnp0;
+
+    .line 15
+    .line 16
+    const-string v2, "ScanCardFragmentImpl"
+
+    .line 17
+    .line 18
+    invoke-direct {v1, v0, v2}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    check-cast p1, LTT5;
+
+    .line 22
+    .line 23
+    invoke-static {p1, v1}, LJF0;->k(LTT5;Lnp0;)LnJe;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    iput-object p1, p0, Lcom/snap/scan/ScanCardFragmentImpl;->C0:LnJe;
+
+    .line 28
+    .line 29
     return-void
 .end method

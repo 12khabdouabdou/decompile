@@ -1,177 +1,134 @@
-.class public final enum LFbe;
-.super Ljava/lang/Enum;
+.class public final LFbe;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
-# static fields
-.field public static final synthetic X:[LFbe;
 
-.field public static final enum a:LFbe;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final enum b:LFbe;
-
-.field public static final enum c:LFbe;
-
-.field public static final enum t:LFbe;
+.field public final synthetic b:Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
+.method public synthetic constructor <init>(Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x3
+    iput p2, p0, LFbe;->a:I
 
-    .line 2
-    const/4 v1, 0x2
+    iput-object p1, p0, LFbe;->b:Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;
 
-    .line 3
-    const/4 v2, 0x1
+    const/4 p1, 0x1
 
-    .line 4
-    const/4 v3, 0x0
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 5
-    new-instance v4, LFbe;
-
-    .line 6
-    .line 7
-    const-string v5, "SINGLE_CARD"
-
-    .line 8
-    .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    sput-object v4, LFbe;->a:LFbe;
-
-    .line 13
-    .line 14
-    new-instance v5, LFbe;
-
-    .line 15
-    .line 16
-    const-string v6, "MULTI_CARD_TOP"
-
-    .line 17
-    .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 19
-    .line 20
-    .line 21
-    sput-object v5, LFbe;->b:LFbe;
-
-    .line 22
-    .line 23
-    new-instance v6, LFbe;
-
-    .line 24
-    .line 25
-    const-string v7, "MULTI_CARD_MIDDLE"
-
-    .line 26
-    .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 28
-    .line 29
-    .line 30
-    sput-object v6, LFbe;->c:LFbe;
-
-    .line 31
-    .line 32
-    new-instance v7, LFbe;
-
-    .line 33
-    .line 34
-    const-string v8, "MULTI_CARD_BOTTOM"
-
-    .line 35
-    .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v7, LFbe;->t:LFbe;
-
-    .line 40
-    .line 41
-    const/4 v8, 0x4
-
-    .line 42
-    new-array v8, v8, [LFbe;
-
-    .line 43
-    .line 44
-    aput-object v4, v8, v3
-
-    .line 45
-    .line 46
-    aput-object v5, v8, v2
-
-    .line 47
-    .line 48
-    aput-object v6, v8, v1
-
-    .line 49
-    .line 50
-    aput-object v7, v8, v0
-
-    .line 51
-    .line 52
-    sput-object v8, LFbe;->X:[LFbe;
-
-    .line 53
-    .line 54
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LFbe;
-    .locals 1
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    const-class v0, LFbe;
+    iget v0, p0, LFbe;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    check-cast p1, Lewj;
 
     .line 7
-    check-cast p0, LFbe;
-
     .line 8
+    iget-object p1, p0, LFbe;->b:Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;
+
     .line 9
-    return-object p0
-.end method
+    .line 10
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
 
-.method public static values()[LFbe;
-    .locals 1
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
 
-    .line 1
-    sget-object v0, LFbe;->X:[LFbe;
+    .line 14
+    invoke-virtual {p1}, Landroid/view/View;->getScrollX()I
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 18
+    neg-int v3, v0
 
-    .line 7
-    check-cast v0, [LFbe;
+    .line 19
+    const/4 v4, 0x0
 
-    .line 8
-    .line 9
-    return-object v0
+    .line 20
+    const/16 v5, 0x190
+
+    .line 21
+    .line 22
+    iget-object v0, p1, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->p0:Landroid/widget/OverScroller;
+
+    .line 23
+    .line 24
+    const/4 v2, 0x0
+
+    .line 25
+    invoke-virtual/range {v0 .. v5}, Landroid/widget/OverScroller;->startScroll(IIIII)V
+
+    .line 26
+    .line 27
+    .line 28
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 29
+    .line 30
+    return-object p1
+
+    .line 31
+    :pswitch_0
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 32
+    .line 33
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p1
+
+    .line 37
+    iget-object v0, p0, LFbe;->b:Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;
+
+    .line 38
+    .line 39
+    iput-boolean p1, v0, Lcom/snap/preview/multisnap/thumbnail/ThumbnailContainerView;->z0:Z
+
+    .line 40
+    .line 41
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 42
+    .line 43
+    return-object p1
+
+    .line 44
+    nop
+
+    .line 45
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,120 +1,125 @@
-.class public final LAE3;
-.super LrE9;
+.class public final enum LAE3;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
+# static fields
+.field public static final enum a:LAE3;
 
-# instance fields
-.field public final synthetic X:D
+.field public static final enum b:LAE3;
 
-.field public final synthetic Y:LTg6;
-
-.field public final synthetic Z:LbV3;
-
-.field public final synthetic a:LUSh;
-
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic c:Ljava/lang/Long;
-
-.field public final synthetic t:D
+.field public static final synthetic c:[LAE3;
 
 
 # direct methods
-.method public constructor <init>(LUSh;Ljava/lang/String;Ljava/lang/Long;DDLTg6;LbV3;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput-object p1, p0, LAE3;->a:LUSh;
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    iput-object p2, p0, LAE3;->b:Ljava/lang/String;
+    new-instance v2, LAE3;
 
     .line 4
     .line 5
-    iput-object p3, p0, LAE3;->c:Ljava/lang/Long;
+    const-string v3, "ConsumeEventAndCancelOtherGestures"
 
     .line 6
     .line 7
-    iput-wide p4, p0, LAE3;->t:D
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 8
     .line 9
-    iput-wide p6, p0, LAE3;->X:D
-
     .line 10
+    sput-object v2, LAE3;->a:LAE3;
+
     .line 11
-    iput-object p8, p0, LAE3;->Y:LTg6;
-
     .line 12
+    new-instance v3, LAE3;
+
     .line 13
-    iput-object p9, p0, LAE3;->Z:LbV3;
-
     .line 14
-    .line 15
-    const/4 p1, 0x1
+    const-string v4, "IgnoreEvent"
 
+    .line 15
     .line 16
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 17
     .line 18
     .line 19
+    sput-object v3, LAE3;->b:LAE3;
+
+    .line 20
+    .line 21
+    const/4 v4, 0x2
+
+    .line 22
+    new-array v4, v4, [LAE3;
+
+    .line 23
+    .line 24
+    aput-object v2, v4, v1
+
+    .line 25
+    .line 26
+    aput-object v3, v4, v0
+
+    .line 27
+    .line 28
+    sput-object v4, LAE3;->c:[LAE3;
+
+    .line 29
+    .line 30
     return-void
 .end method
 
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 10
+.method public static valueOf(Ljava/lang/String;)LAE3;
+    .locals 1
 
     .line 1
-    move-object v0, p1
+    const-class v0, LAE3;
 
     .line 2
-    check-cast v0, LIGh;
-
     .line 3
-    .line 4
-    iget-object v1, p0, LAE3;->a:LUSh;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
+    .line 4
     .line 5
     .line 6
-    iget-object v8, p0, LAE3;->Y:LTg6;
+    move-result-object p0
 
     .line 7
+    check-cast p0, LAE3;
+
     .line 8
-    iget-object v9, p0, LAE3;->Z:LbV3;
-
     .line 9
-    .line 10
-    iget-object v2, p0, LAE3;->b:Ljava/lang/String;
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    iget-object v3, p0, LAE3;->c:Ljava/lang/Long;
+.method public static values()[LAE3;
+    .locals 1
 
-    .line 13
-    .line 14
-    iget-wide v4, p0, LAE3;->t:D
+    .line 1
+    sget-object v0, LAE3;->c:[LAE3;
 
-    .line 15
-    .line 16
-    iget-wide v6, p0, LAE3;->X:D
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 17
-    .line 18
-    invoke-interface/range {v0 .. v9}, LIGh;->I(LUSh;Ljava/lang/String;Ljava/lang/Long;DDLTg6;LbV3;)V
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 19
-    .line 20
-    .line 21
-    sget-object p1, Li7j;->a:Li7j;
+    .line 7
+    check-cast v0, [LAE3;
 
-    .line 22
-    .line 23
-    return-object p1
+    .line 8
+    .line 9
+    return-object v0
 .end method

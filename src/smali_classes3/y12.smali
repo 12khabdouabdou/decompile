@@ -1,3 +1,3 @@
-.class public final Ly12;
-.super Landroid/view/View;
+.class public abstract Ly12;
+.super Ljava/lang/Object;
 .source "SourceFile"

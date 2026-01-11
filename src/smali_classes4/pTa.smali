@@ -1,226 +1,572 @@
-.class public final enum LpTa;
-.super Ljava/lang/Enum;
+.class public final LpTa;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LCX0;
-
-
-# static fields
-.field public static final enum X:LpTa;
-
-.field public static final synthetic Y:[LpTa;
-
-.field public static final enum c:LpTa;
-
-.field public static final enum t:LpTa;
+.implements LqN8;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic a:I
 
-.field public final b:Ljava/lang/Class;
+.field public final synthetic b:Z
+
+.field public final synthetic c:LDTa;
+
+.field public final synthetic d:LjYa;
+
+.field public final synthetic e:LrUa;
+
+.field public final synthetic f:Ljava/lang/String;
+
+.field public final synthetic g:LVTa;
+
+.field public final synthetic h:J
+
+.field public final synthetic i:Lio/reactivex/rxjava3/core/SingleEmitter;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
-
-    .line 1
-    new-instance v0, LpTa;
-
-    .line 2
-    .line 3
-    const-class v1, Lp7i;
-
-    .line 4
-    .line 5
-    const-string v2, "SUBSCRIPTION_ITEM_SDL"
-
-    .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    const v4, 0x7f0e03fa
-
-    .line 9
-    .line 10
-    .line 11
-    invoke-direct {v0, v3, v4, v1, v2}, LpTa;-><init>(IILjava/lang/Class;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, LpTa;->c:LpTa;
-
-    .line 15
-    .line 16
-    new-instance v1, LpTa;
-
-    .line 17
-    .line 18
-    const/4 v2, 0x1
-
-    .line 19
-    const-class v5, LKL8;
-
-    .line 20
-    .line 21
-    const-string v6, "HIDDEN_ITEM"
-
-    .line 22
-    .line 23
-    invoke-direct {v1, v2, v4, v5, v6}, LpTa;-><init>(IILjava/lang/Class;Ljava/lang/String;)V
-
-    .line 24
-    .line 25
-    .line 26
-    sput-object v1, LpTa;->t:LpTa;
-
-    .line 27
-    .line 28
-    new-instance v4, LpTa;
-
-    .line 29
-    .line 30
-    const v5, 0x7f0e03c7
-
-    .line 31
-    .line 32
-    .line 33
-    const-class v6, LsTa;
-
-    .line 34
-    .line 35
-    const-string v7, "LOADING"
-
-    .line 36
-    .line 37
-    const/4 v8, 0x2
-
-    .line 38
-    invoke-direct {v4, v8, v5, v6, v7}, LpTa;-><init>(IILjava/lang/Class;Ljava/lang/String;)V
-
-    .line 39
-    .line 40
-    .line 41
-    sput-object v4, LpTa;->X:LpTa;
-
-    .line 42
-    .line 43
-    const/4 v5, 0x3
-
-    .line 44
-    new-array v5, v5, [LpTa;
-
-    .line 45
-    .line 46
-    aput-object v0, v5, v3
-
-    .line 47
-    .line 48
-    aput-object v1, v5, v2
-
-    .line 49
-    .line 50
-    aput-object v4, v5, v8
-
-    .line 51
-    .line 52
-    sput-object v5, LpTa;->Y:[LpTa;
-
-    .line 53
-    .line 54
-    return-void
-.end method
-
-.method public constructor <init>(IILjava/lang/Class;Ljava/lang/String;)V
+.method public constructor <init>(IZLDTa;LjYa;LrUa;Ljava/lang/String;LVTa;JLio/reactivex/rxjava3/core/SingleEmitter;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p4, p1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput p2, p0, LpTa;->a:I
+    iput p1, p0, LpTa;->a:I
 
     .line 5
     .line 6
-    iput-object p3, p0, LpTa;->b:Ljava/lang/Class;
+    iput-boolean p2, p0, LpTa;->b:Z
 
     .line 7
     .line 8
+    iput-object p3, p0, LpTa;->c:LDTa;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LpTa;->d:LjYa;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LpTa;->e:LrUa;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, LpTa;->f:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, LpTa;->g:LVTa;
+
+    .line 17
+    .line 18
+    iput-wide p8, p0, LpTa;->h:J
+
+    .line 19
+    .line 20
+    iput-object p10, p0, LpTa;->i:Lio/reactivex/rxjava3/core/SingleEmitter;
+
+    .line 21
+    .line 22
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LpTa;
-    .locals 1
-
-    .line 1
-    const-class v0, LpTa;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LpTa;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LpTa;
-    .locals 1
-
-    .line 1
-    sget-object v0, LpTa;->Y:[LpTa;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LpTa;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/lang/Class;
-    .locals 1
+.method public final a(Lcom/google/protobuf/nano/MessageNano;Lcom/snapchat/client/grpc/Status;)V
+    .locals 24
 
     .line 1
-    iget-object v0, p0, LpTa;->b:Ljava/lang/Class;
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    move-object/from16 v1, p2
 
-.method public final c()I
-    .locals 1
+    .line 4
+    .line 5
+    move-object/from16 v2, p1
 
-    .line 1
-    iget v0, p0, LpTa;->a:I
+    .line 6
+    .line 7
+    check-cast v2, LJYa;
 
-    .line 2
-    .line 3
-    return v0
+    .line 8
+    .line 9
+    sget-object v3, LOdh;->b:LtGi;
+
+    .line 10
+    .line 11
+    if-eqz v3, :cond_0
+
+    .line 12
+    .line 13
+    iget v4, v0, LpTa;->a:I
+
+    .line 14
+    .line 15
+    invoke-virtual {v3, v4}, LtGi;->k(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    :cond_0
+    const/4 v3, 0x0
+
+    .line 19
+    if-eqz v1, :cond_1
+
+    .line 20
+    .line 21
+    invoke-virtual {v1}, Lcom/snapchat/client/grpc/Status;->getStatusCode()Lcom/snapchat/client/grpc/StatusCode;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v4
+
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_1
+    move-object v4, v3
+
+    .line 27
+    :goto_0
+    if-eqz v2, :cond_2
+
+    .line 28
+    .line 29
+    iget v5, v2, LJYa;->t:I
+
+    .line 30
+    .line 31
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v5
+
+    .line 35
+    goto :goto_1
+
+    .line 36
+    :cond_2
+    move-object v5, v3
+
+    .line 37
+    :goto_1
+    iget-boolean v6, v0, LpTa;->b:Z
+
+    .line 38
+    .line 39
+    iget-object v7, v0, LpTa;->c:LDTa;
+
+    .line 40
+    .line 41
+    if-eqz v6, :cond_d
+
+    .line 42
+    .line 43
+    iget-object v6, v7, LDTa;->d:LYY4;
+
+    .line 44
+    .line 45
+    invoke-virtual {v6}, LYY4;->get()Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v6
+
+    .line 49
+    check-cast v6, LR93;
+
+    .line 50
+    .line 51
+    check-cast v6, LFRe;
+
+    .line 52
+    .line 53
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 54
+    .line 55
+    .line 56
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-wide v8
+
+    .line 60
+    iget-wide v10, v0, LpTa;->h:J
+
+    .line 61
+    .line 62
+    sub-long v22, v8, v10
+
+    .line 63
+    .line 64
+    const-wide/16 v8, -0x1
+
+    .line 65
+    .line 66
+    if-eqz v4, :cond_3
+
+    .line 67
+    .line 68
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v6
+
+    .line 72
+    int-to-long v10, v6
+
+    .line 73
+    move-wide/from16 v18, v10
+
+    .line 74
+    .line 75
+    goto :goto_2
+
+    .line 76
+    :cond_3
+    move-wide/from16 v18, v8
+
+    .line 77
+    .line 78
+    :goto_2
+    if-eqz v5, :cond_4
+
+    .line 79
+    .line 80
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v6
+
+    .line 84
+    int-to-long v8, v6
+
+    .line 85
+    :cond_4
+    move-wide/from16 v20, v8
+
+    .line 86
+    .line 87
+    sget-object v6, LiTa;->b:[I
+
+    .line 88
+    .line 89
+    iget-object v14, v0, LpTa;->d:LjYa;
+
+    .line 90
+    .line 91
+    invoke-virtual {v14}, Ljava/lang/Enum;->ordinal()I
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v8
+
+    .line 95
+    aget v6, v6, v8
+
+    .line 96
+    .line 97
+    iget-object v13, v0, LpTa;->g:LVTa;
+
+    .line 98
+    .line 99
+    iget-object v15, v0, LpTa;->f:Ljava/lang/String;
+
+    .line 100
+    .line 101
+    const/4 v8, 0x4
+
+    .line 102
+    const/4 v9, 0x0
+
+    .line 103
+    const/4 v10, 0x1
+
+    .line 104
+    if-eq v6, v10, :cond_a
+
+    .line 105
+    .line 106
+    const/4 v11, 0x2
+
+    .line 107
+    if-eq v6, v11, :cond_7
+
+    .line 108
+    .line 109
+    if-nez v5, :cond_5
+
+    .line 110
+    .line 111
+    goto :goto_3
+
+    .line 112
+    :cond_5
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    .line 113
+    .line 114
+    .line 115
+    move-result v6
+
+    .line 116
+    if-ne v6, v10, :cond_6
+
+    .line 117
+    .line 118
+    const/16 v16, 0x1
+
+    .line 119
+    .line 120
+    goto :goto_4
+
+    .line 121
+    :cond_6
+    :goto_3
+    const/16 v16, 0x0
+
+    .line 122
+    .line 123
+    :goto_4
+    invoke-virtual {v7}, LDTa;->n()LfTa;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object v12
+
+    .line 127
+    move-wide/from16 v17, v18
+
+    .line 128
+    .line 129
+    move-wide/from16 v19, v20
+
+    .line 130
+    .line 131
+    move-object/from16 v21, v13
+
+    .line 132
+    .line 133
+    iget-object v13, v0, LpTa;->e:LrUa;
+
+    .line 134
+    .line 135
+    invoke-virtual/range {v12 .. v21}, LfTa;->b(LrUa;LjYa;Ljava/lang/String;ZJJLVTa;)V
+
+    .line 136
+    .line 137
+    .line 138
+    goto :goto_7
+
+    .line 139
+    :cond_7
+    move-object/from16 v16, v15
+
+    .line 140
+    .line 141
+    move-wide/from16 v17, v18
+
+    .line 142
+    .line 143
+    move-wide/from16 v19, v20
+
+    .line 144
+    .line 145
+    if-nez v5, :cond_8
+
+    .line 146
+    .line 147
+    goto :goto_5
+
+    .line 148
+    :cond_8
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    .line 149
+    .line 150
+    .line 151
+    move-result v6
+
+    .line 152
+    if-ne v6, v8, :cond_9
+
+    .line 153
+    .line 154
+    const/4 v9, 0x1
+
+    .line 155
+    :cond_9
+    :goto_5
+    invoke-virtual {v7}, LDTa;->n()LfTa;
+
+    .line 156
+    .line 157
+    .line 158
+    move-result-object v12
+
+    .line 159
+    sget-object v14, LVhf;->a:LVhf;
+
+    .line 160
+    .line 161
+    sget-object v15, LNTa;->c:LNTa;
+
+    .line 162
+    .line 163
+    move-wide/from16 v20, v19
+
+    .line 164
+    .line 165
+    move-wide/from16 v18, v17
+
+    .line 166
+    .line 167
+    move/from16 v17, v9
+
+    .line 168
+    .line 169
+    invoke-virtual/range {v12 .. v23}, LfTa;->c(LVTa;LVhf;LNTa;Ljava/lang/String;ZJJJ)V
+
+    .line 170
+    .line 171
+    .line 172
+    goto :goto_7
+
+    .line 173
+    :cond_a
+    move-object/from16 v16, v15
+
+    .line 174
+    .line 175
+    move-wide/from16 v17, v18
+
+    .line 176
+    .line 177
+    move-wide/from16 v19, v20
+
+    .line 178
+    .line 179
+    if-nez v5, :cond_b
+
+    .line 180
+    .line 181
+    goto :goto_6
+
+    .line 182
+    :cond_b
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    .line 183
+    .line 184
+    .line 185
+    move-result v6
+
+    .line 186
+    if-ne v6, v8, :cond_c
+
+    .line 187
+    .line 188
+    const/4 v9, 0x1
+
+    .line 189
+    :cond_c
+    :goto_6
+    invoke-virtual {v7}, LDTa;->n()LfTa;
+
+    .line 190
+    .line 191
+    .line 192
+    move-result-object v12
+
+    .line 193
+    sget-object v14, LVhf;->a:LVhf;
+
+    .line 194
+    .line 195
+    sget-object v15, LNTa;->b:LNTa;
+
+    .line 196
+    .line 197
+    move-wide/from16 v20, v19
+
+    .line 198
+    .line 199
+    move-wide/from16 v18, v17
+
+    .line 200
+    .line 201
+    move/from16 v17, v9
+
+    .line 202
+    .line 203
+    invoke-virtual/range {v12 .. v23}, LfTa;->c(LVTa;LVhf;LNTa;Ljava/lang/String;ZJJJ)V
+
+    .line 204
+    .line 205
+    .line 206
+    :cond_d
+    :goto_7
+    if-eqz v5, :cond_e
+
+    .line 207
+    .line 208
+    invoke-virtual {v5}, Ljava/lang/Integer;->toString()Ljava/lang/String;
+
+    .line 209
+    .line 210
+    .line 211
+    move-result-object v3
+
+    .line 212
+    :cond_e
+    sget-object v5, LKG9;->t:LKG9;
+
+    .line 213
+    .line 214
+    invoke-static {v7, v5, v3, v4}, LDTa;->d(LDTa;LKG9;Ljava/lang/String;Lcom/snapchat/client/grpc/StatusCode;)V
+
+    .line 215
+    .line 216
+    .line 217
+    new-instance v3, LDpd;
+
+    .line 218
+    .line 219
+    invoke-direct {v3, v2, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 220
+    .line 221
+    .line 222
+    iget-object v1, v0, LpTa;->i:Lio/reactivex/rxjava3/core/SingleEmitter;
+
+    .line 223
+    .line 224
+    invoke-interface {v1, v3}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+
+    .line 225
+    .line 226
+    .line 227
+    return-void
 .end method

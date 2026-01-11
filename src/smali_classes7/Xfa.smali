@@ -1,9 +1,6 @@
 .class public final LXfa;
-.super Ljava/lang/Object;
+.super Lbga;
 .source "SourceFile"
-
-# interfaces
-.implements LYfa;
 
 
 # static fields
@@ -28,36 +25,5 @@
 
     .line 7
     .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Landroid/net/Uri;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Maybe;
-    .locals 0
-
-    .line 1
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
-
-    .line 2
-    .line 3
-    return-object p1
-.end method
-
-.method public final b(Ljava/util/ArrayList;)Ljava/util/Set;
-    .locals 0
-
-    .line 1
-    sget-object p1, LIL6;->a:LIL6;
-
-    .line 2
-    .line 3
-    return-object p1
-.end method
-
-.method public final c(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
     return-void
 .end method

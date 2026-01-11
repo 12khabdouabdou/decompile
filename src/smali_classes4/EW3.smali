@@ -1,409 +1,506 @@
 .class public final LEW3;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LiS6;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LHW3;
-
 
 # direct methods
-.method public synthetic constructor <init>(LHW3;I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
+
+    const/16 v0, 0x8
+
+    iput v0, p0, LEW3;->a:I
+
+    const/4 v0, 0x0
 
     .line 1
+    invoke-direct {p0, v0}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(II)V
+    .locals 0
+
+    .line 2
     iput p2, p0, LEW3;->a:I
 
-    iput-object p1, p0, LEW3;->b:LHW3;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    return-void
+.end method
+
+.method public synthetic constructor <init>(LOX3;I)V
+    .locals 0
+
+    .line 4
+    iput p2, p0, LEW3;->a:I
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(LOX3;Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 5
+    iput p3, p0, LEW3;->a:I
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(LPv3;Lu65;LJ65;)V
+    .locals 0
+
+    const/16 p1, 0x9
+
+    iput p1, p0, LEW3;->a:I
+
+    const/4 p1, 0x0
+
+    .line 3
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LLR6;)V
-    .locals 12
+.method public final d()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LEW3;->a:I
 
     .line 2
-    iget-object v1, p0, LEW3;->b:LHW3;
-
     .line 3
-    .line 4
-    iget v2, p0, LEW3;->a:I
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    packed-switch v2, :pswitch_data_0
+    new-instance v0, LsH;
 
     .line 7
     .line 8
-    .line 9
-    check-cast p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SpotlightOpenChat;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 9
     .line 10
     .line 11
-    iget-object v0, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SpotlightOpenChat;->b:LdXc;
+    return-object v0
 
     .line 12
+    :pswitch_0
+    new-instance v0, LQVi;
+
     .line 13
-    iget v0, v0, LdXc;->Y:I
-
     .line 14
-    .line 15
-    iget-object v2, v1, LvWc;->h0:LdXc;
+    invoke-direct {v0}, LQVi;-><init>()V
 
+    .line 15
     .line 16
     .line 17
-    iget v3, v2, LdXc;->Y:I
+    return-object v0
 
     .line 18
+    :pswitch_1
+    new-instance v0, LB97;
+
     .line 19
-    if-ne v0, v3, :cond_0
-
     .line 20
-    .line 21
-    iget-object v7, v1, LHW3;->T0:LQZ3;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 21
     .line 22
     .line 23
-    if-eqz v7, :cond_0
+    return-object v0
 
     .line 24
+    :pswitch_2
+    new-instance v0, LSU6;
+
     .line 25
-    new-instance v4, LoZ3;
-
     .line 26
-    .line 27
-    new-instance v11, Lyf6;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 27
     .line 28
     .line 29
-    invoke-virtual {v1}, LvWc;->F0()LaS6;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 30
     .line 31
     .line 32
-    move-result-object v0
+    return-object v0
 
     .line 33
-    invoke-direct {v11, v2, v0}, Lyf6;-><init>(LdXc;LaS6;)V
+    :pswitch_3
+    new-instance v0, LMc3;
 
     .line 34
     .line 35
-    .line 36
-    iget-object v6, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SpotlightOpenChat;->c:Ljava/lang/String;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 36
     .line 37
     .line 38
-    iget v9, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SpotlightOpenChat;->e:I
+    return-object v0
 
     .line 39
-    .line 40
-    iget-object v5, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SpotlightOpenChat;->d:Ljava/lang/String;
+    :pswitch_4
+    new-instance v0, LrP7;
 
+    .line 40
     .line 41
+    const/4 v1, 0x0
+
     .line 42
-    const/4 v8, 0x0
+    const/4 v2, 0x0
 
     .line 43
-    const/4 v10, 0x3
+    invoke-direct {v0, v1, v2}, LrP7;-><init>(IB)V
 
     .line 44
-    invoke-direct/range {v4 .. v11}, LoZ3;-><init>(Ljava/lang/String;Ljava/lang/String;LQZ3;ZIILyf6;)V
-
     .line 45
     .line 46
+    return-object v0
+
     .line 47
-    iget-object p1, v1, LHW3;->K0:LZY3;
+    :pswitch_5
+    new-instance v0, LUP;
 
     .line 48
     .line 49
-    iget-object p1, p1, LZY3;->y:LJ7d;
+    invoke-direct {v0}, LUP;-><init>()V
 
     .line 50
     .line 51
-    invoke-interface {p1, v4}, LJ7d;->b(Ljava/lang/Object;)V
-
     .line 52
-    .line 53
-    .line 54
-    :cond_0
-    return-void
+    return-object v0
 
+    .line 53
+    :pswitch_6
+    new-instance v0, LlO7;
+
+    .line 54
     .line 55
-    :pswitch_0
-    check-cast p1, Lcom/snap/opera/events/ViewerEvents$ShowNonContentLayerViews;
+    invoke-direct {v0}, LlO7;-><init>()V
 
     .line 56
     .line 57
-    iget-boolean p1, p1, Lcom/snap/opera/events/ViewerEvents$ShowNonContentLayerViews;->c:Z
-
     .line 58
+    return-object v0
+
     .line 59
-    xor-int/2addr v0, p1
+    :pswitch_7
+    new-instance v0, Lekk;
 
     .line 60
-    iput-boolean v0, v1, LHW3;->U0:Z
-
     .line 61
-    .line 62
-    invoke-virtual {v1}, LHW3;->A1()LkW3;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 62
     .line 63
     .line 64
+    return-object v0
+
     .line 65
-    move-result-object v0
+    :pswitch_8
+    new-instance v0, LJti;
 
     .line 66
-    sget-object v1, LkW3;->S:Ljava/util/Set;
-
     .line 67
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 68
-    const/4 v1, 0x0
-
     .line 69
-    invoke-virtual {v0, p1, v1}, LkW3;->i(ZZ)V
-
     .line 70
-    .line 71
-    .line 72
-    return-void
+    return-object v0
 
+    .line 71
+    :pswitch_9
+    new-instance v0, LpWi;
+
+    .line 72
     .line 73
-    :pswitch_1
-    check-cast p1, Lcom/snap/opera/events/ViewerEvents$Paged;
+    invoke-direct {v0}, LpWi;-><init>()V
 
     .line 74
     .line 75
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$Paged;->b:LdXc;
-
     .line 76
+    return-object v0
+
     .line 77
-    iget p1, p1, LdXc;->Y:I
+    :pswitch_a
+    new-instance v0, Lk67;
 
     .line 78
     .line 79
-    iget-object v0, v1, LvWc;->h0:LdXc;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 80
     .line 81
-    iget v0, v0, LdXc;->Y:I
-
     .line 82
+    return-object v0
+
     .line 83
-    if-ne p1, v0, :cond_2
+    :pswitch_b
+    new-instance v0, LgTh;
 
     .line 84
     .line 85
-    iget-object p1, v1, LHW3;->T0:LQZ3;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 86
     .line 87
-    if-eqz p1, :cond_2
-
     .line 88
+    return-object v0
+
     .line 89
-    iget-object v0, p1, LQZ3;->f:LOZ3;
+    :pswitch_c
+    new-instance v0, LZkg;
 
     .line 90
     .line 91
-    if-eqz v0, :cond_1
+    invoke-direct {v0}, LZkg;-><init>()V
 
     .line 92
     .line 93
-    iget-object v0, v0, LOZ3;->a:Ljava/lang/String;
-
     .line 94
+    return-object v0
+
     .line 95
-    goto :goto_0
+    :pswitch_d
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 96
-    :cond_1
-    const/4 v0, 0x0
-
     .line 97
-    :goto_0
-    if-eqz v0, :cond_2
+    return-object v0
 
     .line 98
+    :pswitch_e
+    sget-object v0, Lewj;->a:Lewj;
+
     .line 99
-    invoke-static {p1}, LKwk;->f(LQZ3;)LzPh;
-
     .line 100
-    .line 101
-    .line 102
-    move-result-object p1
+    return-object v0
 
+    .line 101
+    :pswitch_f
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 102
     .line 103
-    if-eqz p1, :cond_2
+    return-object v0
 
     .line 104
+    :pswitch_10
+    new-instance v0, Lcom/snap/network/transport/impl/client/FilterChainClientEvents$OnRequestFinishedInfo;
+
     .line 105
-    iget-object p1, p1, LzPh;->b:Ljava/util/LinkedHashSet;
-
     .line 106
-    .line 107
-    if-eqz p1, :cond_2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 107
     .line 108
     .line 109
-    invoke-interface {p1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    return-object v0
 
     .line 110
+    :pswitch_11
+    const v0, 0x3fb33333    # 1.4f
+
     .line 111
     .line 112
-    :cond_2
-    return-void
-
     .line 113
-    :pswitch_2
-    check-cast p1, Lcom/snap/opera/events/ViewerEvents$SafeViewerInsetsChanged;
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     .line 114
     .line 115
-    invoke-virtual {v1}, LHW3;->K1()V
-
     .line 116
+    move-result-object v0
+
     .line 117
+    return-object v0
+
     .line 118
-    return-void
+    :pswitch_12
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 119
-    :pswitch_3
-    check-cast p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$ToggleContextCtaVisibility;
-
     .line 120
+    return-object v0
+
     .line 121
-    iget-object v2, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$ToggleContextCtaVisibility;->c:LdXc;
+    :pswitch_13
+    new-instance v0, LpX4;
 
     .line 122
     .line 123
-    iget v2, v2, LdXc;->Y:I
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 124
     .line 125
-    iget-object v3, v1, LvWc;->h0:LdXc;
-
     .line 126
+    return-object v0
+
     .line 127
-    iget v3, v3, LdXc;->Y:I
+    :pswitch_14
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 128
     .line 129
-    if-ne v2, v3, :cond_3
+    return-object v0
 
     .line 130
+    :pswitch_15
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnNetworkResponseStart;
+
     .line 131
-    iget-boolean p1, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$ToggleContextCtaVisibility;->b:Z
-
     .line 132
-    .line 133
-    xor-int/lit8 v2, p1, 0x1
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 133
     .line 134
     .line 135
-    iput-boolean v2, v1, LHW3;->U0:Z
+    return-object v0
 
     .line 136
-    .line 137
-    invoke-virtual {v1}, LHW3;->A1()LkW3;
+    :pswitch_16
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnNetworkResponseEnd;
 
+    .line 137
     .line 138
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 139
     .line 140
-    move-result-object v1
-
     .line 141
-    invoke-virtual {v1, p1, v0}, LkW3;->i(ZZ)V
+    return-object v0
 
     .line 142
+    :pswitch_17
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnNetworkRequestStart;
+
     .line 143
     .line 144
-    :cond_3
-    return-void
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 145
-    :pswitch_4
-    check-cast p1, Lcom/snap/opera/events/ViewerEvents$InterceptContextMenuFlow;
-
     .line 146
     .line 147
-    sget-object v0, LfUc;->c:LfUc;
+    return-object v0
 
     .line 148
+    :pswitch_18
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnNetworkRequestMutate;
+
     .line 149
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$InterceptContextMenuFlow;->b:LfUc;
-
     .line 150
-    .line 151
-    if-eq p1, v0, :cond_4
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 151
     .line 152
     .line 153
-    sget-object v2, LfUc;->b:LfUc;
+    return-object v0
 
     .line 154
+    :pswitch_19
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnImportRequestStart;
+
     .line 155
-    if-ne p1, v2, :cond_7
-
     .line 156
-    .line 157
-    :cond_4
-    if-ne p1, v0, :cond_5
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 157
     .line 158
     .line 159
-    sget-object v2, LnP6;->r0:LnP6;
+    return-object v0
 
     .line 160
-    .line 161
-    goto :goto_1
+    :pswitch_1a
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnImportRequestEnd;
 
+    .line 161
     .line 162
-    :cond_5
-    sget-object v2, LnP6;->f0:LnP6;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 163
     .line 164
-    :goto_1
-    if-ne p1, v0, :cond_6
-
     .line 165
+    return-object v0
+
     .line 166
-    sget-object p1, LyY3;->f0:LyY3;
+    :pswitch_1b
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnCacheStart;
 
     .line 167
     .line 168
-    goto :goto_2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 169
-    :cond_6
-    sget-object p1, LyY3;->e0:LyY3;
-
     .line 170
     .line 171
-    :goto_2
-    invoke-virtual {v1, v2, p1}, LHW3;->I1(LnP6;LyY3;)Z
+    return-object v0
 
     .line 172
+    :pswitch_1c
+    new-instance v0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnCacheEnd;
+
     .line 173
     .line 174
-    :cond_7
-    return-void
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 175
+    .line 176
+    .line 177
+    return-object v0
+
+    .line 178
+    nop
+
+    .line 179
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
         :pswitch_4
         :pswitch_3
         :pswitch_2

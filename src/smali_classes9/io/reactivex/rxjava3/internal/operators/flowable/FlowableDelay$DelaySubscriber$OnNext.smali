@@ -54,7 +54,7 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDelay$DelaySubscriber;->a:LV6i;
+    iget-object v0, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDelay$DelaySubscriber;->a:Lmvi;
 
     .line 4
     .line 5
@@ -62,7 +62,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v0, v1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, v1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 8
     .line 9

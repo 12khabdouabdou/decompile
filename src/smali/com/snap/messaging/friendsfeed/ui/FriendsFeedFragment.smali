@@ -3,80 +3,78 @@
 .source "SourceFile"
 
 # interfaces
-.implements LZOc;
-.implements LcOc;
+.implements LT3d;
+.implements LY2d;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/ui/ptr/PullToRefreshFragment<",
-        "LMW7;",
+        "LM28;",
         ">;",
-        "LZOc;",
-        "LcOc;"
+        "LT3d;",
+        "LY2d;"
     }
 .end annotation
 
 
 # static fields
-.field public static final synthetic D1:I
+.field public static final synthetic F1:I
 
 
 # instance fields
-.field public final A1:LXV7;
+.field public A1:LL4b;
 
-.field public final B1:Z
+.field public final B1:LREi;
 
-.field public final C1:LXfi;
+.field public final C1:LY18;
 
-.field public c1:Lu00;
+.field public final D1:Z
 
-.field public d1:LB73;
+.field public final E1:LREi;
 
-.field public e1:LRS4;
+.field public f1:Lb30;
 
-.field public f1:Lfid;
+.field public g1:LR93;
 
-.field public g1:LHh7;
+.field public h1:LIX4;
 
-.field public h1:LbN7;
+.field public i1:Lnyd;
 
-.field public i1:LEV7;
+.field public j1:LIm7;
 
-.field public j1:LUV7;
+.field public k1:LDS7;
 
-.field public k1:LrT4;
+.field public l1:LE18;
 
-.field public l1:LXW7;
+.field public m1:LV18;
 
-.field public m1:LRS4;
+.field public n1:LbZ4;
 
-.field public n1:LvAd;
+.field public o1:LX28;
 
-.field public o1:LRS4;
+.field public p1:LIX4;
 
-.field public p1:Lbke;
+.field public q1:LG20;
 
-.field public q1:LIX7;
+.field public r1:LIX4;
 
-.field public r1:LWoj;
+.field public s1:LDBe;
 
-.field public final s1:LXfi;
+.field public t1:LH38;
 
-.field public t1:LeN5;
+.field public u1:LUNj;
 
-.field public u1:Landroid/view/View;
+.field public final v1:LREi;
 
-.field public final v1:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public w1:LtH5;
 
-.field public final w1:Landroid/graphics/Rect;
+.field public x1:Landroid/view/View;
 
-.field public x1:Z
+.field public final y1:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public y1:LcSa;
-
-.field public final z1:LXfi;
+.field public z1:Z
 
 
 # direct methods
@@ -92,28 +90,28 @@
     .line 3
     .line 4
     .line 5
-    new-instance v1, LbW7;
+    new-instance v1, Lb28;
 
     .line 6
     .line 7
     const/4 v2, 0x0
 
     .line 8
-    invoke-direct {v1, p0, v2}, LbW7;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
+    invoke-direct {v1, p0, v2}, Lb28;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
 
     .line 9
     .line 10
     .line 11
-    new-instance v2, LXfi;
+    new-instance v2, LREi;
 
     .line 12
     .line 13
-    invoke-direct {v2, v1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v2, v1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 14
     .line 15
     .line 16
-    iput-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s1:LXfi;
+    iput-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->v1:LREi;
 
     .line 17
     .line 18
@@ -126,7 +124,7 @@
     .line 21
     .line 22
     .line 23
-    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->v1:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->y1:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 24
     .line 25
@@ -142,91 +140,87 @@
     .line 29
     .line 30
     .line 31
-    iput-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->w1:Landroid/graphics/Rect;
+    new-instance v0, Lb28;
 
     .line 32
     .line 33
-    new-instance v0, LbW7;
-
-    .line 34
-    .line 35
     const/4 v1, 0x2
 
-    .line 36
-    invoke-direct {v0, p0, v1}, LbW7;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
+    .line 34
+    invoke-direct {v0, p0, v1}, Lb28;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
 
+    .line 35
+    .line 36
     .line 37
+    new-instance v1, LREi;
+
     .line 38
     .line 39
-    new-instance v1, LXfi;
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 40
     .line 41
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
     .line 42
+    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->B1:LREi;
+
     .line 43
     .line 44
-    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->z1:LXfi;
+    sget-object v0, LY18;->Z:LY18;
 
     .line 45
     .line 46
-    sget-object v0, LXV7;->Z:LXV7;
+    iput-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->C1:LY18;
 
     .line 47
     .line 48
-    iput-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->A1:LXV7;
-
-    .line 49
-    .line 50
     const/4 v0, 0x1
 
+    .line 49
+    iput-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->D1:Z
+
+    .line 50
     .line 51
-    iput-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->B1:Z
+    new-instance v0, Lb28;
 
     .line 52
     .line 53
-    new-instance v0, LbW7;
-
-    .line 54
-    .line 55
     const/4 v1, 0x1
 
-    .line 56
-    invoke-direct {v0, p0, v1}, LbW7;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
+    .line 54
+    invoke-direct {v0, p0, v1}, Lb28;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
 
+    .line 55
+    .line 56
     .line 57
+    new-instance v1, LREi;
+
     .line 58
     .line 59
-    new-instance v1, LXfi;
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 60
     .line 61
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
     .line 62
+    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->E1:LREi;
+
     .line 63
     .line 64
-    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->C1:LXfi;
-
-    .line 65
-    .line 66
     return-void
 .end method
 
-.method public static s2(LcSa;)Z
-    .locals 2
+.method public static r2(LL4b;)Z
+    .locals 3
 
     .line 1
-    iget-boolean v0, p0, LcSa;->i0:Z
+    iget-boolean v0, p0, LL4b;->i0:Z
 
     .line 2
     .line 3
-    sget-object v1, LX4e;->Z:LX4e;
+    sget-object v1, Lxme;->Z:Lxme;
 
     .line 4
     .line 5
-    invoke-static {v1, p0}, LY4e;->a(LX4e;LcSa;)Z
+    invoke-static {v1, p0}, Lyme;->a(Lxme;LL4b;)Z
 
     .line 6
     .line 7
@@ -234,212 +228,139 @@
     move-result v1
 
     .line 9
-    if-nez v0, :cond_0
+    sget-object v2, LFCe;->Z:LFCe;
 
     .line 10
     .line 11
-    if-nez v1, :cond_0
+    invoke-static {v2, p0}, LGCe;->a(LFCe;LL4b;)Z
 
     .line 12
     .line 13
-    sget-object v0, LtW1;->e0:LcSa;
-
     .line 14
+    move-result v2
+
     .line 15
-    invoke-virtual {p0, v0}, LcSa;->equals(Ljava/lang/Object;)Z
+    if-nez v0, :cond_0
 
     .line 16
     .line 17
-    .line 18
-    move-result v0
+    if-nez v1, :cond_0
 
+    .line 18
     .line 19
-    if-nez v0, :cond_0
+    sget-object v0, LVZ1;->e0:LL4b;
 
     .line 20
     .line 21
-    sget-object v0, LfE1;->n0:LfE1;
+    invoke-virtual {p0, v0}, LL4b;->equals(Ljava/lang/Object;)Z
 
     .line 22
     .line 23
-    invoke-virtual {p0, v0}, LcSa;->equals(Ljava/lang/Object;)Z
-
     .line 24
-    .line 25
-    .line 26
     move-result v0
 
-    .line 27
+    .line 25
     if-nez v0, :cond_0
+
+    .line 26
+    .line 27
+    sget-object v0, LvH1;->n0:LvH1;
 
     .line 28
     .line 29
-    sget-object v0, LXT7;->Z:LXT7;
+    invoke-virtual {p0, v0}, LL4b;->equals(Ljava/lang/Object;)Z
 
     .line 30
     .line 31
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 32
-    .line 33
-    .line 34
-    sget-object v0, LXT7;->f0:LcSa;
-
-    .line 35
-    .line 36
-    invoke-virtual {p0, v0}, LcSa;->equals(Ljava/lang/Object;)Z
-
-    .line 37
-    .line 38
-    .line 39
     move-result v0
 
-    .line 40
+    .line 33
     if-nez v0, :cond_0
+
+    .line 34
+    .line 35
+    sget-object v0, Lc08;->Z:Lc08;
+
+    .line 36
+    .line 37
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 38
+    .line 39
+    .line 40
+    sget-object v0, Lc08;->f0:LL4b;
 
     .line 41
     .line 42
-    sget-object v0, Lm0j;->n0:Lm0j;
+    invoke-virtual {p0, v0}, LL4b;->equals(Ljava/lang/Object;)Z
 
     .line 43
     .line 44
-    invoke-virtual {p0, v0}, LcSa;->equals(Ljava/lang/Object;)Z
-
     .line 45
-    .line 46
-    .line 47
     move-result v0
 
-    .line 48
+    .line 46
     if-nez v0, :cond_0
+
+    .line 47
+    .line 48
+    sget-object v0, LJpj;->n0:LJpj;
 
     .line 49
     .line 50
-    sget-object v0, LbJc;->o0:LbJc;
+    invoke-virtual {p0, v0}, LL4b;->equals(Ljava/lang/Object;)Z
 
     .line 51
     .line 52
-    invoke-virtual {p0, v0}, LcSa;->equals(Ljava/lang/Object;)Z
-
     .line 53
-    .line 54
-    .line 55
-    move-result p0
+    move-result v0
 
+    .line 54
+    if-nez v0, :cond_0
+
+    .line 55
     .line 56
-    if-nez p0, :cond_0
+    sget-object v0, LGXc;->o0:LGXc;
 
     .line 57
     .line 58
-    const/4 p0, 0x1
+    invoke-virtual {p0, v0}, LL4b;->equals(Ljava/lang/Object;)Z
 
     .line 59
+    .line 60
+    .line 61
+    move-result p0
+
+    .line 62
+    if-nez p0, :cond_0
+
+    .line 63
+    .line 64
+    if-nez v2, :cond_0
+
+    .line 65
+    .line 66
+    const/4 p0, 0x1
+
+    .line 67
     return p0
 
-    .line 60
+    .line 68
     :cond_0
     const/4 p0, 0x0
 
-    .line 61
+    .line 69
     return p0
 .end method
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v1, "FriendsFeedFragment:onAttach"
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    :try_start_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q1:LIX7;
-
-    .line 13
-    .line 14
-    if-eqz p1, :cond_0
-
-    .line 15
-    .line 16
-    invoke-virtual {p1}, LIX7;->a()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 17
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
-
-    .line 20
-    .line 21
-    .line 22
-    return-void
-
-    .line 23
-    :cond_0
-    :try_start_1
-    const-string p1, "swipeToChatPredicateController"
-
-    .line 24
-    .line 25
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    const/4 p1, 0x0
-
-    .line 29
-    throw p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 30
-    :catchall_0
-    move-exception p1
-
-    .line 31
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 32
-    .line 33
-    if-eqz v0, :cond_1
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
-
-    .line 36
-    .line 37
-    .line 38
-    :cond_1
-    throw p1
-.end method
-
-.method public final C1()V
+.method public final A1()V
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LHh7;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()LIm7;
 
     .line 2
     .line 3
@@ -453,7 +374,7 @@
     const/4 v2, 0x1
 
     .line 7
-    invoke-virtual {v0, v1, v2}, LHh7;->b(IZ)V
+    invoke-virtual {v0, v1, v2}, LIm7;->b(IZ)V
 
     .line 8
     .line 9
@@ -462,7 +383,7 @@
 
     .line 11
     .line 12
-    check-cast v0, LMW7;
+    check-cast v0, LM28;
 
     .line 13
     .line 14
@@ -470,7 +391,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {v0}, LMW7;->onDestroy()V
+    invoke-virtual {v0}, LM28;->onDestroy()V
 
     .line 17
     .line 18
@@ -479,16 +400,16 @@
     return-void
 .end method
 
-.method public final D1()V
+.method public final B1()V
     .locals 0
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->D1()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->B1()V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->r2()V
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q2()V
 
     .line 5
     .line 6
@@ -496,11 +417,11 @@
     return-void
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LHh7;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()LIm7;
 
     .line 2
     .line 3
@@ -511,12 +432,12 @@
     const/4 v1, 0x2
 
     .line 6
-    invoke-static {v0, v1}, LZyk;->k0(LHh7;I)V
+    invoke-static {v0, v1}, LWYk;->g(LIm7;I)V
 
     .line 7
     .line 8
     .line 9
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->r2()V
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q2()V
 
     .line 10
     .line 11
@@ -524,11 +445,11 @@
     return-void
 .end method
 
-.method public final I0(Z)LhYj;
-    .locals 8
+.method public final F0(Z)Laok;
+    .locals 4
 
     .line 1
-    invoke-static {}, LDq9;->I()LhYj;
+    invoke-static {}, LIjj;->L()Laok;
 
     .line 2
     .line 3
@@ -560,7 +481,7 @@
     move-result-object v1
 
     .line 17
-    invoke-static {v1}, LI0j;->x(Landroid/content/res/Resources$Theme;)Z
+    invoke-static {v1}, LNC8;->v(Landroid/content/res/Resources$Theme;)Z
 
     .line 18
     .line 19
@@ -568,19 +489,19 @@
     move-result v1
 
     .line 21
-    xor-int/lit8 v7, v1, 0x1
+    xor-int/lit8 v1, v1, 0x1
 
     .line 22
     .line 23
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 24
     .line 25
-    const/16 v2, 0x17
+    const/16 v3, 0x17
 
     .line 26
     .line 27
-    if-lt v1, v2, :cond_0
+    if-lt v2, v3, :cond_0
 
     .line 28
     .line 29
@@ -592,12 +513,12 @@
     move-result-object v0
 
     .line 33
-    const v1, 0x7f04054b
+    const v2, 0x7f0405f5
 
     .line 34
     .line 35
     .line 36
-    invoke-static {v0, v1}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v0, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 37
     .line 38
@@ -605,52 +526,36 @@
     move-result v0
 
     .line 40
-    new-instance v4, LnYj;
+    new-instance v2, Lgok;
 
     .line 41
     .line 42
-    invoke-direct {v4, v0}, LnYj;-><init>(I)V
+    invoke-direct {v2, v0}, Lgok;-><init>(I)V
 
     .line 43
     .line 44
     .line 45
-    new-instance v2, LhYj;
+    invoke-static {p1, v2, v1}, Laok;->a(Laok;Lgok;Z)Laok;
 
     .line 46
     .line 47
-    iget-boolean v6, p1, LhYj;->d:Z
-
     .line 48
+    move-result-object p1
+
     .line 49
-    iget-object v3, p1, LhYj;->a:Lew8;
-
-    .line 50
-    .line 51
-    iget v5, p1, LhYj;->c:I
-
-    .line 52
-    .line 53
-    invoke-direct/range {v2 .. v7}, LhYj;-><init>(Lew8;LCq9;IZZ)V
-
-    .line 54
-    .line 55
-    .line 56
-    return-object v2
-
-    .line 57
     :cond_0
     return-object p1
 .end method
 
-.method public final L1()Lv7d;
+.method public final J1()LKmd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s1:LXfi;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->v1:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -658,18 +563,18 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lv7d;
+    check-cast v0, LKmd;
 
     .line 8
     .line 9
     return-object v0
 .end method
 
-.method public final N1()Z
+.method public final L1()Z
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->B1:Z
+    iget-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->D1:Z
 
     .line 2
     .line 3
@@ -680,15 +585,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, LhV5;
+    new-instance v0, Lqd6;
 
     .line 2
     .line 3
-    const/16 v1, 0x1d
+    const/16 v1, 0x17
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p0}, LhV5;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lqd6;-><init>(ILjava/lang/Object;)V
 
     .line 6
     .line 7
@@ -705,7 +610,7 @@
     return-object v1
 .end method
 
-.method public final a0()LIJ7;
+.method public final Y()LnP7;
     .locals 1
 
     .line 1
@@ -716,7 +621,7 @@
 .end method
 
 .method public final a2(Landroid/view/View;)V
-    .locals 10
+    .locals 8
 
     .line 1
     invoke-super {p0, p1}, Lcom/snap/ui/ptr/PullToRefreshFragment;->a2(Landroid/view/View;)V
@@ -724,11 +629,11 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LeN5;
+    new-instance v0, LtH5;
 
     .line 5
     .line 6
-    const v1, 0x7f0b05e3
+    const v1, 0x7f0b066c
 
     .line 7
     .line 8
@@ -757,7 +662,7 @@
     move-result-object v2
 
     .line 21
-    invoke-virtual {p0}, Lcom/snap/ui/ptr/PullToRefreshFragment;->e2()LNke;
+    invoke-virtual {p0}, Lcom/snap/ui/ptr/PullToRefreshFragment;->e2()LpCe;
 
     .line 22
     .line 23
@@ -770,12 +675,12 @@
     .line 26
     .line 27
     .line 28
-    const v3, 0x7f0404b8
+    const v3, 0x7f040545
 
     .line 29
     .line 30
     .line 31
-    invoke-static {v2, v3}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v2, v3}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 32
     .line 33
@@ -783,16 +688,16 @@
     move-result v2
 
     .line 35
-    invoke-direct {v0, v1, v2}, LeN5;-><init>(Landroid/view/View;I)V
+    invoke-direct {v0, v1, v2}, LtH5;-><init>(Landroid/view/View;I)V
 
     .line 36
     .line 37
     .line 38
-    iput-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t1:LeN5;
+    iput-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->w1:LtH5;
 
     .line 39
     .line 40
-    invoke-virtual {p0}, Lcom/snap/ui/ptr/PullToRefreshFragment;->r()Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {p0}, Lcom/snap/ui/ptr/PullToRefreshFragment;->j0()Landroidx/recyclerview/widget/RecyclerView;
 
     .line 41
     .line 42
@@ -808,293 +713,138 @@
     move-result v1
 
     .line 48
-    invoke-virtual {v0, v1}, LeN5;->l(I)V
+    invoke-virtual {v0, v1}, LtH5;->n(I)V
 
     .line 49
     .line 50
     .line 51
-    iput-object p1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->u1:Landroid/view/View;
+    iput-object p1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->x1:Landroid/view/View;
 
     .line 52
     .line 53
-    invoke-virtual {p0}, Lcom/snap/ui/ptr/PullToRefreshFragment;->i2()Z
+    iget-object p1, p0, Lcom/snap/ui/ptr/PullToRefreshFragment;->R0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 54
     .line 55
+    invoke-static {p1, p1}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
     .line 56
-    move-result v0
-
     .line 57
-    sget-object v1, LLwf;->Z:LLwf;
-
     .line 58
+    move-result-object p1
+
     .line 59
-    iget-object v2, p0, LOwf;->a:Ljava/lang/String;
+    new-instance v0, Lc28;
 
     .line 60
     .line 61
-    if-nez v0, :cond_1
+    const/4 v1, 0x0
 
     .line 62
-    .line 63
-    const v0, 0x7f0b02bf
+    invoke-direct {v0, p0, v1}, Lc28;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
 
+    .line 63
     .line 64
     .line 65
-    .line 66
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
+    .line 66
     .line 67
     .line 68
+    move-result-object v3
+
     .line 69
-    move-result-object v0
+    sget-object v6, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 70
-    check-cast v0, Landroid/view/ViewStub;
-
     .line 71
-    .line 72
-    invoke-virtual {v0}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+    sget-object v7, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
 
+    .line 72
     .line 73
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounceTimed;
+
     .line 74
     .line 75
-    move-result-object v0
+    const-wide/16 v4, 0x64
 
     .line 76
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
     .line 77
+    invoke-direct/range {v2 .. v7}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounceTimed;-><init>(Lio/reactivex/rxjava3/core/Observable;JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 78
     .line 79
-    move-result-object p1
-
     .line 80
-    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    new-instance p1, Lc28;
 
     .line 81
     .line 82
+    const/4 v0, 0x1
+
     .line 83
-    move-result-object p1
+    invoke-direct {p1, p0, v0}, Lc28;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
 
     .line 84
-    const v3, 0x7f080c81
-
     .line 85
     .line 86
-    .line 87
-    invoke-virtual {p1, v3}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v2, p1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 87
     .line 88
     .line 89
-    .line 90
     move-result-object p1
 
-    .line 91
-    invoke-virtual {v0, p1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    .line 90
+    sget-object v0, LUPf;->Z:LUPf;
 
+    .line 91
     .line 92
+    iget-object v1, p0, LXPf;->a:Ljava/lang/String;
+
     .line 93
     .line 94
-    iget-object p1, p0, Lcom/snap/ui/ptr/PullToRefreshFragment;->I0:LPm9;
+    invoke-virtual {p0, p1, v0, v1}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 95
     .line 96
-    if-eqz p1, :cond_0
-
     .line 97
-    .line 98
-    invoke-interface {p1}, LPm9;->i()Lio/reactivex/rxjava3/core/Observable;
+    iget-object p1, p0, Lcom/snap/ui/ptr/PullToRefreshFragment;->Q0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 98
     .line 99
+    invoke-static {p1, p1}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
     .line 100
     .line 101
+    .line 102
     move-result-object p1
 
-    .line 102
-    new-instance v3, La66;
-
     .line 103
-    .line 104
-    const/16 v4, 0x11
+    new-instance v2, Lc28;
 
+    .line 104
     .line 105
+    const/4 v3, 0x2
+
     .line 106
-    invoke-direct {v3, v4, p0}, La66;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, p0, v3}, Lc28;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
 
     .line 107
     .line 108
     .line 109
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 110
     .line 111
-    invoke-direct {v4, p1, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
-
     .line 112
-    .line 113
-    .line 114
-    new-instance p1, LeS7;
+    move-result-object p1
 
+    .line 113
+    invoke-virtual {p0, p1, v0, v1}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 114
     .line 115
     .line 116
-    const/4 v3, 0x7
-
-    .line 117
-    invoke-direct {p1, p0, v3, v0}, LeS7;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 118
-    .line 119
-    .line 120
-    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 121
-    .line 122
-    .line 123
-    move-result-object p1
-
-    .line 124
-    invoke-virtual {p0, p1, v1, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 125
-    .line 126
-    .line 127
-    goto :goto_0
-
-    .line 128
-    :cond_0
-    const-string p1, "insetsDetector"
-
-    .line 129
-    .line 130
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 131
-    .line 132
-    .line 133
-    const/4 p1, 0x0
-
-    .line 134
-    throw p1
-
-    .line 135
-    :cond_1
-    :goto_0
-    iget-object p1, p0, Lcom/snap/ui/ptr/PullToRefreshFragment;->P0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 136
-    .line 137
-    invoke-static {p1, p1}, LEU0;->r(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 138
-    .line 139
-    .line 140
-    move-result-object p1
-
-    .line 141
-    new-instance v0, LdW7;
-
-    .line 142
-    .line 143
-    const/4 v3, 0x0
-
-    .line 144
-    invoke-direct {v0, p0, v3}, LdW7;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
-
-    .line 145
-    .line 146
-    .line 147
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-object v5
-
-    .line 151
-    sget-object v8, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 152
-    .line 153
-    sget-object v9, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 154
-    .line 155
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounceTimed;
-
-    .line 156
-    .line 157
-    const-wide/16 v6, 0x64
-
-    .line 158
-    .line 159
-    invoke-direct/range {v4 .. v9}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounceTimed;-><init>(Lio/reactivex/rxjava3/core/Observable;JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 160
-    .line 161
-    .line 162
-    new-instance p1, LdW7;
-
-    .line 163
-    .line 164
-    const/4 v0, 0x1
-
-    .line 165
-    invoke-direct {p1, p0, v0}, LdW7;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
-
-    .line 166
-    .line 167
-    .line 168
-    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 169
-    .line 170
-    .line 171
-    move-result-object p1
-
-    .line 172
-    invoke-virtual {p0, p1, v1, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 173
-    .line 174
-    .line 175
-    iget-object p1, p0, Lcom/snap/ui/ptr/PullToRefreshFragment;->O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 176
-    .line 177
-    invoke-static {p1, p1}, LEU0;->r(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
-    .line 178
-    .line 179
-    .line 180
-    move-result-object p1
-
-    .line 181
-    new-instance v0, LdW7;
-
-    .line 182
-    .line 183
-    const/4 v3, 0x2
-
-    .line 184
-    invoke-direct {v0, p0, v3}, LdW7;-><init>(Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;I)V
-
-    .line 185
-    .line 186
-    .line 187
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 188
-    .line 189
-    .line 190
-    move-result-object p1
-
-    .line 191
-    invoke-virtual {p0, p1, v1, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 192
-    .line 193
-    .line 194
     return-void
 .end method
 
@@ -1102,11 +852,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, LMW7;
+    check-cast p1, LM28;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t2(LMW7;)V
+    invoke-virtual {p0, p1}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s2(LM28;)V
 
     .line 4
     .line 5
@@ -1114,24 +864,24 @@
     return-void
 .end method
 
-.method public final e(LQqc;)V
+.method public final e(LiGc;)V
     .locals 12
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/ui/ptr/PullToRefreshFragment;->e(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/ui/ptr/PullToRefreshFragment;->e(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p1, LQqc;->e:Li7d;
+    iget-object v0, p1, LiGc;->e:Lwmd;
 
     .line 5
     .line 6
-    iget-object v1, v0, Li7d;->c:LWRa;
+    iget-object v1, v0, Lwmd;->c:LG4b;
 
     .line 7
     .line 8
-    invoke-interface {v1}, LWRa;->S0()LcSa;
+    invoke-interface {v1}, LG4b;->Q0()LL4b;
 
     .line 9
     .line 10
@@ -1139,11 +889,11 @@
     move-result-object v1
 
     .line 12
-    sget-object v2, LfE1;->n0:LfE1;
+    sget-object v2, LvH1;->n0:LvH1;
 
     .line 13
     .line 14
-    invoke-static {v1, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -1158,11 +908,11 @@
 
     .line 20
     .line 21
-    iget-object v5, p1, LQqc;->d:Li7d;
+    iget-object v5, p1, LiGc;->d:Lwmd;
 
     .line 22
     .line 23
-    iget v6, p1, LQqc;->i:F
+    iget v6, p1, LiGc;->i:F
 
     .line 24
     .line 25
@@ -1180,11 +930,11 @@
 
     .line 30
     :cond_0
-    iget-object v1, v5, Li7d;->c:LWRa;
+    iget-object v1, v5, Lwmd;->c:LG4b;
 
     .line 31
     .line 32
-    invoke-interface {v1}, LWRa;->S0()LcSa;
+    invoke-interface {v1}, LG4b;->Q0()LL4b;
 
     .line 33
     .line 34
@@ -1192,7 +942,7 @@
     move-result-object v1
 
     .line 36
-    invoke-static {v1, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 37
     .line 38
@@ -1228,7 +978,7 @@
 
     .line 51
     :cond_2
-    iget-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t1:LeN5;
+    iget-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->w1:LtH5;
 
     .line 52
     .line 53
@@ -1236,18 +986,18 @@
 
     .line 54
     .line 55
-    invoke-virtual {v2, v1}, LeN5;->m(F)V
+    invoke-virtual {v2, v1}, LtH5;->o(F)V
 
     .line 56
     .line 57
     .line 58
     :cond_3
     :goto_1
-    iget-object v1, v0, Li7d;->c:LWRa;
+    iget-object v1, v0, Lwmd;->c:LG4b;
 
     .line 59
     .line 60
-    invoke-interface {v1}, LWRa;->S0()LcSa;
+    invoke-interface {v1}, LG4b;->Q0()LL4b;
 
     .line 61
     .line 62
@@ -1255,11 +1005,11 @@
     move-result-object v2
 
     .line 64
-    sget-object v4, LX4e;->g0:LcSa;
+    sget-object v4, Lxme;->g0:LL4b;
 
     .line 65
     .line 66
-    invoke-static {v2, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 67
     .line 68
@@ -1278,11 +1028,11 @@
 
     .line 74
     :cond_4
-    sget-object v4, LX4e;->f0:LcSa;
+    sget-object v4, Lxme;->f0:LL4b;
 
     .line 75
     .line 76
-    invoke-static {v2, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 77
     .line 78
@@ -1302,11 +1052,11 @@
 
     .line 84
     :cond_5
-    sget-object v4, LX4e;->h0:LcSa;
+    sget-object v4, Lxme;->h0:LL4b;
 
     .line 85
     .line 86
-    invoke-static {v2, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 87
     .line 88
@@ -1323,7 +1073,7 @@
 
     .line 93
     .line 94
-    check-cast v2, LMW7;
+    check-cast v2, LM28;
 
     .line 95
     .line 96
@@ -1331,13 +1081,13 @@
 
     .line 97
     .line 98
-    invoke-virtual {v2}, LMW7;->X3()V
+    invoke-virtual {v2}, LM28;->T3()V
 
     .line 99
     .line 100
     .line 101
     :cond_6
-    invoke-interface {v1}, LWRa;->S0()LcSa;
+    invoke-interface {v1}, LG4b;->Q0()LL4b;
 
     .line 102
     .line 103
@@ -1345,11 +1095,11 @@
     move-result-object v1
 
     .line 105
-    sget-object v2, LWV7;->n0:LWV7;
+    sget-object v2, LX18;->n0:LX18;
 
     .line 106
     .line 107
-    invoke-static {v1, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 108
     .line 109
@@ -1368,19 +1118,19 @@
 
     .line 115
     .line 116
-    iget-object v0, v0, Li7d;->b:LqLa;
+    iget-object v0, v0, Lwmd;->b:Lfnc;
 
     .line 117
     .line 118
-    iget-object v0, v0, LqLa;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lfnc;->b:Ljava/lang/Object;
 
     .line 119
     .line 120
-    check-cast v0, LG8d;
+    check-cast v0, LZnd;
 
     .line 121
     .line 122
-    sget-object v1, LG8d;->X:LG8d;
+    sget-object v1, LZnd;->X:LZnd;
 
     .line 123
     .line 124
@@ -1414,7 +1164,7 @@
 
     .line 135
     .line 136
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->j1:LUV7;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->m1:LV18;
 
     .line 137
     .line 138
@@ -1422,7 +1172,7 @@
 
     .line 139
     .line 140
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p2()LUV7;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p2()LV18;
 
     .line 141
     .line 142
@@ -1430,7 +1180,7 @@
     move-result-object v0
 
     .line 144
-    invoke-virtual {v0}, LUV7;->a()V
+    invoke-virtual {v0}, LV18;->a()V
 
     .line 145
     .line 146
@@ -1439,7 +1189,7 @@
 
     .line 148
     :cond_8
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->v1:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->y1:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 149
     .line 150
@@ -1449,7 +1199,7 @@
     .line 152
     .line 153
     :goto_5
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q2()LvAd;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LG20;
 
     .line 154
     .line 155
@@ -1457,7 +1207,7 @@
     move-result-object v0
 
     .line 157
-    invoke-interface {v0}, LvAd;->n()Z
+    invoke-interface {v0}, LG20;->m()Z
 
     .line 158
     .line 159
@@ -1469,7 +1219,7 @@
 
     .line 162
     .line 163
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q2()LvAd;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LG20;
 
     .line 164
     .line 165
@@ -1477,7 +1227,7 @@
     move-result-object v0
 
     .line 167
-    invoke-interface {v0}, LvAd;->G()Z
+    invoke-interface {v0}, LG20;->D()Z
 
     .line 168
     .line 169
@@ -1493,11 +1243,11 @@
 
     .line 174
     :cond_9
-    iget-object v0, v5, Li7d;->c:LWRa;
+    iget-object v0, v5, Lwmd;->c:LG4b;
 
     .line 175
     .line 176
-    invoke-interface {v0}, LWRa;->S0()LcSa;
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
 
     .line 177
     .line 178
@@ -1505,7 +1255,7 @@
     move-result-object v0
 
     .line 180
-    iget-boolean v8, p1, LQqc;->h:Z
+    iget-boolean v8, p1, LiGc;->h:Z
 
     .line 181
     .line 182
@@ -1520,11 +1270,11 @@
 
     .line 186
     :cond_a
-    sget-object v8, LVD1;->n0:LVD1;
+    sget-object v8, LlH1;->n0:LlH1;
 
     .line 187
     .line 188
-    invoke-static {v0, v8}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v8}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 189
     .line 190
@@ -1547,7 +1297,7 @@
 
     .line 197
     :goto_6
-    iget-object v8, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->d1:LB73;
+    iget-object v8, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->g1:LR93;
 
     .line 198
     .line 199
@@ -1563,7 +1313,7 @@
     move-result-wide v8
 
     .line 205
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q2()LvAd;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LG20;
 
     .line 206
     .line 207
@@ -1571,7 +1321,7 @@
     move-result-object v10
 
     .line 209
-    invoke-interface {v10}, LvAd;->r()Z
+    invoke-interface {v10}, LG20;->p()Z
 
     .line 210
     .line 211
@@ -1583,7 +1333,7 @@
 
     .line 214
     .line 215
-    sget-object v10, LZg6;->l0:LZg6;
+    sget-object v10, Lsk6;->l0:Lsk6;
 
     .line 216
     .line 217
@@ -1591,7 +1341,7 @@
 
     .line 218
     :cond_c
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q2()LvAd;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LG20;
 
     .line 219
     .line 220
@@ -1599,7 +1349,7 @@
     move-result-object v10
 
     .line 222
-    invoke-interface {v10}, LvAd;->G()Z
+    invoke-interface {v10}, LG20;->D()Z
 
     .line 223
     .line 224
@@ -1611,7 +1361,7 @@
 
     .line 227
     .line 228
-    sget-object v10, LZg6;->o0:LZg6;
+    sget-object v10, Lsk6;->o0:Lsk6;
 
     .line 229
     .line 230
@@ -1619,12 +1369,12 @@
 
     .line 231
     :cond_d
-    sget-object v10, LZg6;->c:LZg6;
+    sget-object v10, Lsk6;->c:Lsk6;
 
     .line 232
     .line 233
     :goto_7
-    iget-object v11, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->f1:Lfid;
+    iget-object v11, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->i1:Lnyd;
 
     .line 234
     .line 235
@@ -1632,7 +1382,7 @@
 
     .line 236
     .line 237
-    invoke-virtual {v11, v10}, Lfid;->a(LZg6;)Lfg6;
+    invoke-virtual {v11, v10}, Lnyd;->a(Lsk6;)LCj6;
 
     .line 238
     .line 239
@@ -1640,7 +1390,7 @@
     move-result-object v10
 
     .line 241
-    invoke-virtual {v10, v0, v8, v9}, Lfg6;->j(IJ)V
+    invoke-virtual {v10, v0, v8, v9}, LCj6;->j(IJ)V
 
     .line 242
     .line 243
@@ -1653,7 +1403,7 @@
 
     .line 246
     .line 247
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 248
     .line 249
@@ -1666,7 +1416,7 @@
 
     .line 252
     .line 253
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 254
     .line 255
@@ -1680,11 +1430,11 @@
 
     .line 258
     .line 259
-    iget-object v0, v5, Li7d;->c:LWRa;
+    iget-object v0, v5, Lwmd;->c:LG4b;
 
     .line 260
     .line 261
-    invoke-interface {v0}, LWRa;->S0()LcSa;
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
 
     .line 262
     .line 263
@@ -1693,7 +1443,7 @@
 
     .line 265
     :cond_11
-    invoke-static {v1, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 266
     .line 267
@@ -1701,19 +1451,19 @@
     move-result v0
 
     .line 269
-    if-eqz v0, :cond_14
+    if-eqz v0, :cond_17
 
     .line 270
     .line 271
-    sget-object v0, Lyrc;->b:Lyrc;
+    sget-object v0, LRGc;->b:LRGc;
 
     .line 272
     .line 273
-    iget-object p1, p1, LQqc;->c:Lyrc;
+    iget-object p1, p1, LiGc;->c:LRGc;
 
     .line 274
     .line 275
-    if-ne p1, v0, :cond_14
+    if-ne p1, v0, :cond_17
 
     .line 276
     .line 277
@@ -1725,61 +1475,117 @@
 
     .line 280
     .line 281
-    const/4 v4, 0x1
+    const/4 p1, 0x1
 
     .line 282
-    :cond_12
-    if-eqz v4, :cond_14
+    goto :goto_9
 
     .line 283
+    :cond_12
+    const/4 p1, 0x0
+
     .line 284
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()Z
+    :goto_9
+    if-eqz p1, :cond_17
 
     .line 285
     .line 286
-    .line 287
-    move-result p1
+    iget-object p1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->f1:Lb30;
 
+    .line 287
     .line 288
-    if-eqz p1, :cond_14
+    if-eqz p1, :cond_13
 
     .line 289
     .line 290
-    iget-object p1, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
+    sget-object v0, LD18;->v0:LD18;
 
     .line 291
     .line 292
-    check-cast p1, LMW7;
+    invoke-interface {p1, v0}, Lb30;->a(LcM3;)Z
 
     .line 293
     .line 294
-    if-eqz p1, :cond_13
-
     .line 295
+    move-result v4
+
     .line 296
-    invoke-virtual {p1}, LMW7;->T3()V
+    :cond_13
+    if-eqz v4, :cond_15
 
     .line 297
     .line 298
-    .line 299
-    :cond_13
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LHh7;
+    iget-object p1, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
 
+    .line 299
     .line 300
+    check-cast p1, LM28;
+
     .line 301
     .line 302
-    move-result-object p1
+    if-eqz p1, :cond_14
 
     .line 303
-    const/4 v0, 0x6
-
     .line 304
-    invoke-virtual {p1, v0, v3}, LHh7;->b(IZ)V
+    invoke-virtual {p1}, LM28;->q3()V
 
     .line 305
     .line 306
     .line 307
     :cond_14
+    iget-object p1, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
+
+    .line 308
+    .line 309
+    check-cast p1, LM28;
+
+    .line 310
+    .line 311
+    if-eqz p1, :cond_15
+
+    .line 312
+    .line 313
+    invoke-virtual {p1}, LM28;->U3()V
+
+    .line 314
+    .line 315
+    .line 316
+    :cond_15
+    iget-object p1, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
+
+    .line 317
+    .line 318
+    check-cast p1, LM28;
+
+    .line 319
+    .line 320
+    if-eqz p1, :cond_16
+
+    .line 321
+    .line 322
+    invoke-virtual {p1}, LM28;->P3()V
+
+    .line 323
+    .line 324
+    .line 325
+    :cond_16
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()LIm7;
+
+    .line 326
+    .line 327
+    .line 328
+    move-result-object p1
+
+    .line 329
+    const/4 v0, 0x6
+
+    .line 330
+    invoke-virtual {p1, v0, v3}, LIm7;->b(IZ)V
+
+    .line 331
+    .line 332
+    .line 333
+    :cond_17
     return-void
 .end method
 
@@ -1787,11 +1593,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->C1:LXfi;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->E1:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1814,22 +1620,22 @@
     return v0
 .end method
 
-.method public final g2()LcSa;
+.method public final g2()LL4b;
     .locals 1
 
     .line 1
-    sget-object v0, LWV7;->n0:LWV7;
+    sget-object v0, LX18;->n0:LX18;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final h(LQqc;)V
-    .locals 7
+.method public final i(LiGc;)V
+    .locals 6
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
@@ -1837,7 +1643,7 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->x1:Z
+    iput-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->z1:Z
 
     .line 6
     .line 7
@@ -1845,320 +1651,321 @@
 
     .line 8
     .line 9
-    check-cast v1, LMW7;
+    check-cast v1, LM28;
 
     .line 10
     .line 11
-    const/4 v2, 0x1
+    iget-object p1, p1, LiGc;->e:Lwmd;
 
     .line 12
-    iget-object p1, p1, LQqc;->e:Li7d;
-
     .line 13
+    if-eqz v1, :cond_6
+
     .line 14
-    if-eqz v1, :cond_5
-
     .line 15
+    iget-object v2, p1, Lwmd;->c:LG4b;
+
     .line 16
-    iget-object v3, p1, Li7d;->c:LWRa;
-
     .line 17
-    .line 18
-    invoke-interface {v3}, LWRa;->S0()LcSa;
+    invoke-interface {v2}, LG4b;->Q0()LL4b;
 
+    .line 18
     .line 19
     .line 20
+    move-result-object v2
+
     .line 21
-    move-result-object v3
+    sget-object v3, Lc08;->Z:Lc08;
 
     .line 22
-    sget-object v4, LXT7;->Z:LXT7;
-
     .line 23
-    .line 24
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 24
     .line 25
     .line 26
+    sget-object v3, Lc08;->F0:LL4b;
+
     .line 27
-    sget-object v4, LXT7;->C0:LcSa;
-
     .line 28
-    .line 29
-    invoke-static {v3, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 29
     .line 30
     .line 31
+    move-result v3
+
     .line 32
-    move-result v4
+    if-nez v3, :cond_1
 
     .line 33
-    if-nez v4, :cond_1
-
     .line 34
+    sget-object v3, Lc08;->G0:LL4b;
+
     .line 35
-    sget-object v4, LXT7;->D0:LcSa;
-
     .line 36
-    .line 37
-    invoke-static {v3, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 37
     .line 38
     .line 39
+    move-result v3
+
     .line 40
-    move-result v4
+    if-eqz v3, :cond_0
 
     .line 41
-    if-eqz v4, :cond_0
-
     .line 42
-    .line 43
     goto :goto_0
 
-    .line 44
+    .line 43
     :cond_0
-    const/4 v4, 0x0
+    const/4 v3, 0x0
 
-    .line 45
+    .line 44
     goto :goto_1
 
-    .line 46
+    .line 45
     :cond_1
     :goto_0
-    const/4 v4, 0x1
+    const/4 v3, 0x1
+
+    .line 46
+    :goto_1
+    sget-object v4, LGXc;->o0:LGXc;
 
     .line 47
-    :goto_1
-    sget-object v5, LbJc;->o0:LbJc;
-
     .line 48
-    .line 49
-    invoke-virtual {v3, v5}, LcSa;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, LL4b;->equals(Ljava/lang/Object;)Z
 
+    .line 49
     .line 50
     .line 51
+    move-result v5
+
     .line 52
-    move-result v6
+    invoke-virtual {v1, v3, v5}, LM28;->Q3(ZZ)V
 
     .line 53
-    invoke-virtual {v1, v4, v6}, LMW7;->U3(ZZ)V
-
     .line 54
     .line 55
+    iget-boolean v3, v2, LL4b;->i0:Z
+
     .line 56
-    iget-boolean v4, v3, LcSa;->i0:Z
-
     .line 57
+    if-nez v3, :cond_2
+
     .line 58
-    if-nez v4, :cond_2
-
     .line 59
+    sget-object v3, Lxme;->Z:Lxme;
+
     .line 60
-    sget-object v4, LX4e;->Z:LX4e;
-
     .line 61
-    .line 62
-    invoke-static {v4, v3}, LY4e;->a(LX4e;LcSa;)Z
+    invoke-static {v3, v2}, Lyme;->a(Lxme;LL4b;)Z
 
+    .line 62
     .line 63
     .line 64
+    move-result v3
+
     .line 65
-    move-result v4
+    if-nez v3, :cond_2
 
     .line 66
-    if-nez v4, :cond_2
-
     .line 67
+    sget-object v3, LVZ1;->e0:LL4b;
+
     .line 68
-    sget-object v4, LtW1;->e0:LcSa;
-
     .line 69
-    .line 70
-    invoke-virtual {v3, v4}, LcSa;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, LL4b;->equals(Ljava/lang/Object;)Z
 
+    .line 70
     .line 71
     .line 72
+    move-result v3
+
     .line 73
-    move-result v4
+    if-nez v3, :cond_2
 
     .line 74
-    if-nez v4, :cond_2
-
     .line 75
-    .line 76
-    invoke-virtual {v1}, LMW7;->c4()V
+    invoke-virtual {v1}, LM28;->Y3()V
 
+    .line 76
     .line 77
     .line 78
-    .line 79
     :cond_2
-    invoke-static {v3}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s2(LcSa;)Z
+    invoke-static {v2}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->r2(LL4b;)Z
 
+    .line 79
     .line 80
     .line 81
+    move-result v3
+
     .line 82
-    move-result v4
+    if-eqz v3, :cond_5
 
     .line 83
-    if-eqz v4, :cond_4
-
     .line 84
-    .line 85
-    invoke-virtual {v1}, LMW7;->d4()V
+    iget-object v3, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->f1:Lb30;
 
+    .line 85
     .line 86
+    if-eqz v3, :cond_3
+
     .line 87
     .line 88
-    invoke-virtual {p0}, Lcom/snap/ui/ptr/PullToRefreshFragment;->m2()V
+    sget-object v0, LD18;->v0:LD18;
 
     .line 89
     .line 90
-    .line 91
-    invoke-virtual {v1}, LMW7;->t3()V
+    invoke-interface {v3, v0}, Lb30;->a(LcM3;)Z
 
+    .line 91
     .line 92
     .line 93
+    move-result v0
+
     .line 94
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()Z
+    :cond_3
+    if-nez v0, :cond_4
 
     .line 95
     .line 96
+    invoke-virtual {v1}, LM28;->q3()V
+
     .line 97
-    move-result v4
-
     .line 98
-    if-nez v4, :cond_3
-
     .line 99
-    .line 100
-    invoke-virtual {v1}, LMW7;->T3()V
+    invoke-virtual {v1}, LM28;->U3()V
 
+    .line 100
     .line 101
     .line 102
-    .line 103
-    :cond_3
-    invoke-virtual {v1}, LMW7;->Y3()V
+    :cond_4
+    invoke-virtual {v1}, LM28;->Z3()V
 
+    .line 103
     .line 104
     .line 105
-    .line 106
-    :cond_4
-    sget-object v4, LtW1;->e0:LcSa;
+    invoke-virtual {p0}, Lcom/snap/ui/ptr/PullToRefreshFragment;->m2()V
 
+    .line 106
     .line 107
     .line 108
-    invoke-virtual {v3, v4}, LcSa;->equals(Ljava/lang/Object;)Z
+    :cond_5
+    sget-object v0, LVZ1;->e0:LL4b;
 
     .line 109
     .line 110
+    invoke-virtual {v2, v0}, LL4b;->equals(Ljava/lang/Object;)Z
+
     .line 111
-    move-result v4
-
     .line 112
-    if-nez v4, :cond_5
-
     .line 113
+    move-result v0
+
     .line 114
-    invoke-virtual {v3, v5}, LcSa;->equals(Ljava/lang/Object;)Z
+    if-nez v0, :cond_6
 
     .line 115
     .line 116
+    invoke-virtual {v2, v4}, LL4b;->equals(Ljava/lang/Object;)Z
+
     .line 117
-    move-result v4
-
     .line 118
-    if-nez v4, :cond_5
-
     .line 119
+    move-result v0
+
     .line 120
-    sget-object v4, LfE1;->n0:LfE1;
+    if-nez v0, :cond_6
 
     .line 121
     .line 122
-    invoke-virtual {v3, v4}, LcSa;->equals(Ljava/lang/Object;)Z
+    sget-object v0, LvH1;->n0:LvH1;
 
     .line 123
     .line 124
+    invoke-virtual {v2, v0}, LL4b;->equals(Ljava/lang/Object;)Z
+
     .line 125
-    move-result v4
-
     .line 126
-    if-nez v4, :cond_5
-
     .line 127
+    move-result v0
+
     .line 128
-    invoke-virtual {v1, v3}, LMW7;->v3(LcSa;)V
+    if-nez v0, :cond_6
 
     .line 129
     .line 130
-    .line 131
-    :cond_5
-    iget-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t1:LeN5;
+    invoke-virtual {v1, v2}, LM28;->s3(LL4b;)V
 
+    .line 131
     .line 132
     .line 133
-    if-eqz v1, :cond_6
+    :cond_6
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->w1:LtH5;
 
     .line 134
     .line 135
-    invoke-virtual {v1}, LeN5;->k()V
+    if-eqz v0, :cond_7
 
     .line 136
     .line 137
-    .line 138
-    :cond_6
-    iget-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q1:LIX7;
+    invoke-virtual {v0}, LtH5;->l()V
 
+    .line 138
     .line 139
     .line 140
-    if-eqz v1, :cond_a
+    :cond_7
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t1:LH38;
 
     .line 141
     .line 142
-    invoke-virtual {v1}, LIX7;->b()V
+    if-eqz v0, :cond_9
 
     .line 143
     .line 144
-    .line 145
-    iget-object v1, p1, Li7d;->c:LWRa;
+    invoke-virtual {v0}, LH38;->b()V
 
+    .line 145
     .line 146
     .line 147
-    invoke-interface {v1}, LWRa;->S0()LcSa;
+    iget-object p1, p1, Lwmd;->c:LG4b;
 
     .line 148
     .line 149
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
+
     .line 150
-    move-result-object v1
-
     .line 151
-    sget-object v3, LVD1;->n0:LVD1;
-
     .line 152
+    move-result-object p1
+
     .line 153
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sget-object v0, LlH1;->n0:LlH1;
 
     .line 154
     .line 155
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 156
-    move-result v1
-
     .line 157
-    if-eqz v1, :cond_7
-
     .line 158
+    move-result p1
+
     .line 159
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->r2()V
+    if-eqz p1, :cond_8
 
     .line 160
     .line 161
-    .line 162
-    :cond_7
-    iget-object p1, p1, Li7d;->c:LWRa;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q2()V
 
+    .line 162
     .line 163
     .line 164
-    invoke-interface {p1}, LWRa;->S0()LcSa;
+    :cond_8
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()LIm7;
 
     .line 165
     .line 166
@@ -2166,78 +1973,30 @@
     move-result-object p1
 
     .line 168
-    if-eqz p1, :cond_8
+    const/4 v0, 0x4
 
     .line 169
-    .line 170
-    invoke-static {p1}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s2(LcSa;)Z
+    invoke-static {p1, v0}, LWYk;->g(LIm7;I)V
 
+    .line 170
     .line 171
     .line 172
-    .line 173
-    move-result p1
-
-    .line 174
-    goto :goto_2
-
-    .line 175
-    :cond_8
-    const/4 p1, 0x0
-
-    .line 176
-    :goto_2
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LHh7;
-
-    .line 177
-    .line 178
-    .line 179
-    move-result-object v1
-
-    .line 180
-    if-eqz p1, :cond_9
-
-    .line 181
-    .line 182
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()Z
-
-    .line 183
-    .line 184
-    .line 185
-    move-result p1
-
-    .line 186
-    if-nez p1, :cond_9
-
-    .line 187
-    .line 188
-    const/4 v0, 0x1
-
-    .line 189
-    :cond_9
-    const/4 p1, 0x4
-
-    .line 190
-    invoke-virtual {v1, p1, v0}, LHh7;->b(IZ)V
-
-    .line 191
-    .line 192
-    .line 193
     return-void
 
-    .line 194
-    :cond_a
+    .line 173
+    :cond_9
     const-string p1, "swipeToChatPredicateController"
 
-    .line 195
-    .line 196
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 174
+    .line 175
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 197
-    .line 198
-    .line 199
+    .line 176
+    .line 177
+    .line 178
     const/4 p1, 0x0
 
-    .line 200
+    .line 179
     throw p1
 .end method
 
@@ -2249,7 +2008,7 @@
 
     .line 2
     .line 3
-    check-cast v0, LMW7;
+    check-cast v0, LM28;
 
     .line 4
     .line 5
@@ -2257,7 +2016,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0}, LMW7;->a4()Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+    invoke-virtual {v0}, LM28;->W3()Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
 
     .line 8
     .line 9
@@ -2265,7 +2024,7 @@
     move-result-object v0
 
     .line 11
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
 
     .line 12
     .line 13
@@ -2273,11 +2032,11 @@
     move-result-object v1
 
     .line 15
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 16
     .line 17
-    invoke-virtual {v1}, LBre;->d()LF06;
+    invoke-virtual {v1}, LnJe;->d()LA36;
 
     .line 18
     .line 19
@@ -2294,11 +2053,11 @@
     .line 24
     .line 25
     .line 26
-    sget-object v0, LcW7;->c:LcW7;
+    sget-object v0, LM18;->X:LM18;
 
     .line 27
     .line 28
-    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 29
     .line 30
@@ -2306,7 +2065,7 @@
     move-result-object v0
 
     .line 32
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Completable;->q()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Completable;->p()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
 
     .line 33
     .line 34
@@ -2314,7 +2073,7 @@
     move-result-object v0
 
     .line 36
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
 
     .line 37
     .line 38
@@ -2322,11 +2081,11 @@
     move-result-object v1
 
     .line 40
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 41
     .line 42
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    invoke-virtual {v1}, LnJe;->i()Lxp0;
 
     .line 43
     .line 44
@@ -2343,15 +2102,15 @@
     .line 49
     .line 50
     .line 51
-    new-instance v0, Lhp7;
+    new-instance v0, LUp7;
 
     .line 52
     .line 53
-    const/16 v1, 0x15
+    const/16 v1, 0x18
 
     .line 54
     .line 55
-    invoke-direct {v0, v1, p0}, Lhp7;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LUp7;-><init>(ILjava/lang/Object;)V
 
     .line 56
     .line 57
@@ -2364,15 +2123,15 @@
     move-result-object v0
 
     .line 62
-    sget-object v1, LLwf;->Z:LLwf;
+    sget-object v1, LUPf;->Z:LUPf;
 
     .line 63
     .line 64
-    iget-object v2, p0, LOwf;->a:Ljava/lang/String;
+    iget-object v2, p0, LXPf;->a:Ljava/lang/String;
 
     .line 65
     .line 66
-    invoke-virtual {p0, v0, v1, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 67
     .line 68
@@ -2384,15 +2143,15 @@
     return v0
 .end method
 
-.method public final bridge synthetic k2(LqM0;)V
+.method public final bridge synthetic k2(LrP0;)V
     .locals 0
 
     .line 1
-    check-cast p1, LMW7;
+    check-cast p1, LM28;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t2(LMW7;)V
+    invoke-virtual {p0, p1}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s2(LM28;)V
 
     .line 4
     .line 5
@@ -2400,24 +2159,24 @@
     return-void
 .end method
 
-.method public final l(LQqc;)V
+.method public final m(LiGc;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/ui/ptr/PullToRefreshFragment;->l(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/ui/ptr/PullToRefreshFragment;->m(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p1, LQqc;->d:Li7d;
+    iget-object v0, p1, LiGc;->d:Lwmd;
 
     .line 5
     .line 6
-    iget-object v1, v0, Li7d;->c:LWRa;
+    iget-object v1, v0, Lwmd;->c:LG4b;
 
     .line 7
     .line 8
-    invoke-interface {v1}, LWRa;->S0()LcSa;
+    invoke-interface {v1}, LG4b;->Q0()LL4b;
 
     .line 9
     .line 10
@@ -2425,11 +2184,11 @@
     move-result-object v1
 
     .line 12
-    sget-object v2, LWV7;->n0:LWV7;
+    sget-object v2, LX18;->n0:LX18;
 
     .line 13
     .line 14
-    invoke-static {v1, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -2441,11 +2200,11 @@
 
     .line 19
     .line 20
-    iget p1, p1, LQqc;->g:I
+    iget p1, p1, LiGc;->g:I
 
     .line 21
     .line 22
-    invoke-static {p1}, LsSb;->a(I)Z
+    invoke-static {p1}, Lznc;->a(I)Z
 
     .line 23
     .line 24
@@ -2461,7 +2220,7 @@
 
     .line 29
     .line 30
-    check-cast p1, LMW7;
+    check-cast p1, LM28;
 
     .line 31
     .line 32
@@ -2469,17 +2228,17 @@
 
     .line 33
     .line 34
-    invoke-virtual {p1}, LMW7;->u3()V
+    invoke-virtual {p1}, LM28;->r3()V
 
     .line 35
     .line 36
     .line 37
     :cond_0
-    iget-object p1, v0, Li7d;->c:LWRa;
+    iget-object p1, v0, Lwmd;->c:LG4b;
 
     .line 38
     .line 39
-    invoke-interface {p1}, LWRa;->S0()LcSa;
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
 
     .line 40
     .line 41
@@ -2487,11 +2246,11 @@
     move-result-object p1
 
     .line 43
-    sget-object v0, LfE1;->n0:LfE1;
+    sget-object v0, LvH1;->n0:LvH1;
 
     .line 44
     .line 45
-    invoke-static {p1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 46
     .line 47
@@ -2503,7 +2262,7 @@
 
     .line 50
     .line 51
-    iget-object p1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t1:LeN5;
+    iget-object p1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->w1:LtH5;
 
     .line 52
     .line 53
@@ -2511,7 +2270,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p1}, LeN5;->k()V
+    invoke-virtual {p1}, LtH5;->l()V
 
     .line 56
     .line 57
@@ -2520,11 +2279,42 @@
     return-void
 .end method
 
-.method public final n2()LHh7;
+.method public final n2()LG20;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->g1:LHh7;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q1:LG20;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "appStartConfig"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final o2()LIm7;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->j1:LIm7;
 
     .line 2
     .line 3
@@ -2540,7 +2330,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2551,65 +2341,31 @@
     throw v0
 .end method
 
-.method public final o2()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->c1:Lu00;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_1
-
-    .line 4
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    sget-object v1, LDV7;->w0:LDV7;
-
-    .line 8
-    .line 9
-    invoke-interface {v0, v1}, Lu00;->a(LBI3;)Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
-
-    .line 13
-    return v0
-
-    .line 14
-    :cond_0
-    const-string v0, "appStartExperimentReader"
-
-    .line 15
-    .line 16
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/4 v0, 0x0
-
-    .line 20
-    throw v0
-
-    .line 21
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 22
-    return v0
-.end method
-
-.method public final p2()LUV7;
+.method public final p0()Lio/reactivex/rxjava3/core/Observable;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->j1:LUV7;
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public final p1()Lrp0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->C1:LY18;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final p2()LV18;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->m1:LV18;
 
     .line 2
     .line 3
@@ -2625,7 +2381,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2644,7 +2400,7 @@
 
     .line 2
     .line 3
-    check-cast v0, LMW7;
+    check-cast v0, LM28;
 
     .line 4
     .line 5
@@ -2652,7 +2408,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0}, LMW7;->r3()I
+    invoke-virtual {v0}, LM28;->o3()I
 
     .line 8
     .line 9
@@ -2726,62 +2482,11 @@
     return-wide v0
 .end method
 
-.method public final q0()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final q2()LvAd;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n1:LvAd;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "plusAppStartConfig"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final r1()Lan0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->A1:LXV7;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final r2()V
+.method public final q2()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->v1:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->y1:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 2
     .line 3
@@ -2797,7 +2502,7 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->l1:LXW7;
+    iget-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o1:LX28;
 
     .line 10
     .line 11
@@ -2805,12 +2510,12 @@
 
     .line 12
     .line 13
-    invoke-virtual {v1}, LXW7;->a()V
+    invoke-virtual {v1}, LX28;->a()V
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p2()LUV7;
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p2()LV18;
 
     .line 17
     .line 18
@@ -2818,7 +2523,7 @@
     move-result-object v1
 
     .line 20
-    invoke-virtual {v1}, LUV7;->b()V
+    invoke-virtual {v1}, LV18;->b()V
 
     .line 21
     .line 22
@@ -2831,7 +2536,7 @@
 
     .line 25
     .line 26
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -2855,16 +2560,23 @@
     return-void
 .end method
 
-.method public final t2(LMW7;)V
+.method public final s1()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final s2(LM28;)V
     .locals 3
 
     .line 1
-    invoke-virtual {p1, p0}, LMW7;->O2(Ljava/lang/Object;)V
+    invoke-virtual {p1, p0}, LM28;->Z2(Ljava/lang/Object;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->r1:LWoj;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->u1:LUNj;
 
     .line 5
     .line 6
@@ -2875,7 +2587,7 @@
 
     .line 8
     .line 9
-    iget-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->x1:Z
+    iget-boolean v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->z1:Z
 
     .line 10
     .line 11
@@ -2883,7 +2595,7 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->y1:LcSa;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->A1:LL4b;
 
     .line 14
     .line 15
@@ -2894,7 +2606,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s2(LcSa;)Z
+    invoke-static {v0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->r2(LL4b;)Z
 
     .line 19
     .line 20
@@ -2910,17 +2622,17 @@
 
     .line 24
     :goto_0
-    invoke-static {p1, v0}, LMW7;->W3(LMW7;Z)V
+    invoke-static {p1, v0}, LM28;->S3(LM28;Z)V
 
     .line 25
     .line 26
     .line 27
-    iput-boolean v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->x1:Z
+    iput-boolean v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->z1:Z
 
     .line 28
     .line 29
     :cond_1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->m1:LRS4;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p1:LIX4;
 
     .line 30
     .line 31
@@ -2928,7 +2640,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {v0}, LRS4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LIX4;->get()Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -2936,29 +2648,29 @@
     move-result-object v0
 
     .line 37
-    check-cast v0, LFwc;
+    check-cast v0, LBLc;
 
     .line 38
     .line 39
-    sget-object v1, LWV7;->n0:LWV7;
+    sget-object v1, LX18;->n0:LX18;
 
     .line 40
     .line 41
-    new-instance v2, LaW7;
+    new-instance v2, LUF7;
 
     .line 42
     .line 43
-    invoke-direct {v2, p1}, LaW7;-><init>(LMW7;)V
+    invoke-direct {v2, p1}, LUF7;-><init>(LM28;)V
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {v0, v1, v2}, LFwc;->j(LcSa;Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1, v2}, LBLc;->j(LL4b;Landroid/view/View$OnClickListener;)V
 
     .line 47
     .line 48
     .line 49
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->u1:Landroid/view/View;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->x1:Landroid/view/View;
 
     .line 50
     .line 51
@@ -2966,68 +2678,56 @@
 
     .line 52
     .line 53
-    invoke-virtual {p1, v0}, LMW7;->K3(Landroid/view/View;)V
+    invoke-virtual {p1, v0}, LM28;->H3(Landroid/view/View;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p1, v0}, LMW7;->M3(Landroid/view/View;)V
+    invoke-virtual {p1, v0}, LM28;->I3(Landroid/view/View;)V
 
     .line 57
     .line 58
     .line 59
-    invoke-virtual {p1, v0}, LMW7;->q3(Landroid/view/View;)V
+    invoke-virtual {p1, v0}, LM28;->n3(Landroid/view/View;)V
 
     .line 60
     .line 61
     .line 62
-    invoke-virtual {p1}, LMW7;->L3()V
-
-    .line 63
-    .line 64
-    .line 65
     :cond_2
     return-void
 
-    .line 66
+    .line 63
     :cond_3
     const-string p1, "ngsActionBarController"
 
+    .line 64
+    .line 65
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 66
     .line 67
     .line 68
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 69
-    .line 70
-    .line 71
     throw v1
 
-    .line 72
+    .line 69
     :cond_4
     const-string p1, "userSession"
 
+    .line 70
+    .line 71
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 72
     .line 73
     .line 74
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 75
-    .line 76
-    .line 77
     throw v1
 .end method
 
-.method public final u1()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 13
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->q1:LIX7;
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t1:LH38;
 
     .line 2
     .line 3
@@ -3042,7 +2742,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LIX7;->a()V
+    invoke-virtual {v0}, LH38;->a()V
 
     .line 9
     .line 10
@@ -3055,7 +2755,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -3065,20 +2765,20 @@
     .line 18
     :cond_1
     :goto_0
-    invoke-super {p0, p1}, Lcom/snap/ui/ptr/PullToRefreshFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/ui/ptr/PullToRefreshFragment;->v(LiGc;)V
 
     .line 19
     .line 20
     .line 21
-    iget-object v0, p1, LQqc;->d:Li7d;
+    iget-object v0, p1, LiGc;->d:Lwmd;
 
     .line 22
     .line 23
-    iget-object v0, v0, Li7d;->c:LWRa;
+    iget-object v0, v0, Lwmd;->c:LG4b;
 
     .line 24
     .line 25
-    invoke-interface {v0}, LWRa;->S0()LcSa;
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
 
     .line 26
     .line 27
@@ -3086,11 +2786,11 @@
     move-result-object v0
 
     .line 29
-    sget-object v2, LfE1;->n0:LfE1;
+    sget-object v2, LvH1;->n0:LvH1;
 
     .line 30
     .line 31
-    invoke-static {v0, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33
@@ -3105,7 +2805,7 @@
 
     .line 37
     .line 38
-    sget-object v0, Lcj7;->t:Lcj7;
+    sget-object v0, Lgo7;->t:Lgo7;
 
     .line 39
     .line 40
@@ -3113,11 +2813,11 @@
 
     .line 41
     :cond_2
-    sget-object v2, LVD1;->n0:LVD1;
+    sget-object v2, LlH1;->n0:LlH1;
 
     .line 42
     .line 43
-    invoke-static {v0, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 44
     .line 45
@@ -3136,11 +2836,11 @@
 
     .line 51
     :cond_3
-    sget-object v2, LtW1;->e0:LcSa;
+    sget-object v2, LVZ1;->e0:LL4b;
 
     .line 52
     .line 53
-    invoke-static {v0, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 54
     .line 55
@@ -3153,7 +2853,7 @@
 
     .line 58
     .line 59
-    sget-object v0, Lcj7;->b:Lcj7;
+    sget-object v0, Lgo7;->b:Lgo7;
 
     .line 60
     .line 61
@@ -3161,12 +2861,12 @@
 
     .line 62
     :cond_4
-    sget-object v0, Lcj7;->e0:Lcj7;
+    sget-object v0, Lgo7;->e0:Lgo7;
 
     .line 63
     .line 64
     :goto_2
-    iget-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->h1:LbN7;
+    iget-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->k1:LDS7;
 
     .line 65
     .line 66
@@ -3174,668 +2874,789 @@
 
     .line 67
     .line 68
-    iget-object v4, v2, LbN7;->a:LDj7;
+    iget-object v4, v2, LDS7;->f:LYY4;
 
     .line 69
     .line 70
-    monitor-enter v4
+    invoke-virtual {v4}, LYY4;->get()Ljava/lang/Object;
 
     .line 71
-    :try_start_0
-    iget-boolean v5, v4, LDj7;->k:Z
-
     .line 72
     .line 73
-    if-nez v5, :cond_5
+    move-result-object v4
 
     .line 74
+    check-cast v4, LcH8;
+
     .line 75
-    iput-boolean v3, v4, LDj7;->k:Z
-
     .line 76
+    sget-object v5, Lr28;->e1:Lr28;
+
     .line 77
-    sget-object v5, LTRb;->a:LTRb;
-
     .line 78
-    .line 79
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+    const-string v6, "source"
 
+    .line 79
     .line 80
+    invoke-virtual {v0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
     .line 81
     .line 82
-    move-result-wide v6
-
     .line 83
-    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    move-result-object v7
 
     .line 84
+    invoke-static {v5, v6, v7}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
+
     .line 85
     .line 86
-    move-result-object v6
-
     .line 87
-    invoke-virtual {v4, v5, v6}, LU1g;->i(LQ1g;Ljava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object v5
 
     .line 88
+    invoke-static {v4, v5}, LaH8;->e(LcH8;LV7c;)V
+
     .line 89
     .line 90
-    goto :goto_3
-
     .line 91
-    :catchall_0
-    move-exception p1
+    iget-object v4, v2, LDS7;->a:LKo7;
 
     .line 92
-    goto/16 :goto_9
-
     .line 93
+    monitor-enter v4
+
     .line 94
-    :cond_5
-    :goto_3
-    monitor-exit v4
+    :try_start_0
+    iget-boolean v5, v4, LKo7;->k:Z
 
     .line 95
-    iget-object v4, v2, LbN7;->b:Laj7;
-
     .line 96
+    if-nez v5, :cond_5
+
     .line 97
-    iget-object v5, v4, Laj7;->s:Ljava/util/concurrent/atomic/AtomicInteger;
-
     .line 98
-    .line 99
-    invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+    iput-boolean v3, v4, LKo7;->k:Z
 
+    .line 99
     .line 100
+    sget-object v5, Lq6c;->a:Lq6c;
+
     .line 101
     .line 102
-    iget-object v5, v4, Laj7;->b:LB73;
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
 
     .line 103
     .line 104
-    check-cast v5, LOze;
-
     .line 105
+    move-result-wide v6
+
     .line 106
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {v6, v7}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 107
     .line 108
     .line 109
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+    move-result-object v6
 
     .line 110
+    invoke-virtual {v4, v5, v6}, Lmmg;->i(Limg;Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 111
     .line 112
-    move-result-wide v5
-
     .line 113
-    iget-object v7, v4, Laj7;->q:Ljava/util/concurrent/atomic/AtomicLong;
+    goto :goto_3
 
     .line 114
+    :catchall_0
+    move-exception p1
+
     .line 115
-    invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
+    goto/16 :goto_9
 
     .line 116
     .line 117
+    :cond_5
+    :goto_3
+    monitor-exit v4
+
     .line 118
-    move-result-wide v8
+    iget-object v4, v2, LDS7;->b:Leo7;
 
     .line 119
-    const-wide/16 v10, 0x0
-
     .line 120
+    iget-object v5, v4, Leo7;->t:Ljava/util/concurrent/atomic/AtomicInteger;
+
     .line 121
-    cmp-long v12, v8, v10
-
     .line 122
-    .line 123
-    if-nez v12, :cond_6
+    invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
+    .line 123
     .line 124
     .line 125
-    invoke-virtual {v7, v5, v6}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
+    iget-object v5, v4, Leo7;->b:LR93;
 
     .line 126
     .line 127
+    check-cast v5, LFRe;
+
     .line 128
-    :cond_6
-    iget-object v4, v4, Laj7;->p:Ljava/util/concurrent/atomic/AtomicLong;
-
     .line 129
-    .line 130
-    invoke-virtual {v4, v5, v6}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 130
     .line 131
     .line 132
-    .line 133
-    iget-object v4, v2, LbN7;->c:LLGc;
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
+    .line 133
     .line 134
     .line 135
-    iget-object v5, v4, LLGc;->l:LHGc;
+    move-result-wide v5
 
     .line 136
+    iget-object v7, v4, Leo7;->r:Ljava/util/concurrent/atomic/AtomicLong;
+
     .line 137
-    if-eqz v5, :cond_7
-
     .line 138
-    .line 139
-    invoke-virtual {v5}, LHGc;->f()LdHc;
+    invoke-virtual {v7}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
+    .line 139
     .line 140
     .line 141
+    move-result-wide v8
+
     .line 142
-    move-result-object v5
+    const-wide/16 v10, 0x0
 
     .line 143
-    goto :goto_4
-
     .line 144
-    :cond_7
-    move-object v5, v1
+    cmp-long v12, v8, v10
 
     .line 145
-    :goto_4
-    sget-object v6, LdHc;->K:LcHc;
-
     .line 146
-    .line 147
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-nez v12, :cond_6
 
+    .line 147
     .line 148
+    invoke-virtual {v7, v5, v6}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
+
     .line 149
     .line 150
-    sget-object v6, LcHc;->j:LYQb;
-
     .line 151
-    .line 152
-    invoke-static {v5, v6}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_6
+    iget-object v4, v4, Leo7;->q:Ljava/util/concurrent/atomic/AtomicLong;
 
+    .line 152
     .line 153
+    invoke-virtual {v4, v5, v6}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
+
     .line 154
     .line 155
-    move-result v5
-
     .line 156
-    if-eqz v5, :cond_a
+    iget-object v4, v2, LDS7;->c:LvVc;
 
     .line 157
     .line 158
-    iget-object v5, v4, LLGc;->l:LHGc;
+    iget-object v5, v4, LvVc;->l:LsVc;
 
     .line 159
     .line 160
-    if-eqz v5, :cond_8
+    if-eqz v5, :cond_7
 
     .line 161
     .line 162
-    invoke-virtual {v5}, LHGc;->n()J
+    invoke-virtual {v5}, LsVc;->g()LFVc;
 
     .line 163
     .line 164
     .line 165
-    move-result-wide v5
+    move-result-object v5
 
     .line 166
-    goto :goto_5
+    goto :goto_4
 
     .line 167
-    :cond_8
-    move-wide v5, v10
+    :cond_7
+    move-object v5, v1
 
     .line 168
-    :goto_5
-    cmp-long v7, v5, v10
+    :goto_4
+    invoke-virtual {v4, v5}, LvVc;->a(LFVc;)Z
 
     .line 169
     .line 170
-    if-lez v7, :cond_9
-
     .line 171
+    move-result v5
+
     .line 172
-    goto :goto_6
+    if-eqz v5, :cond_a
 
     .line 173
-    :cond_9
-    iget-object v5, v4, LLGc;->a:LB73;
-
     .line 174
+    iget-object v5, v4, LvVc;->l:LsVc;
+
     .line 175
-    check-cast v5, LOze;
-
     .line 176
-    .line 177
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v5, :cond_8
 
+    .line 177
     .line 178
+    invoke-virtual {v5}, LsVc;->o()J
+
     .line 179
     .line 180
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
     .line 181
-    .line 182
-    .line 183
     move-result-wide v5
 
+    .line 182
+    goto :goto_5
+
+    .line 183
+    :cond_8
+    move-wide v5, v10
+
     .line 184
-    iget-object v7, v4, LLGc;->l:LHGc;
+    :goto_5
+    cmp-long v7, v5, v10
 
     .line 185
     .line 186
-    if-eqz v7, :cond_a
+    if-lez v7, :cond_9
 
     .line 187
     .line 188
-    invoke-virtual {v7, v5, v6}, LHGc;->v(J)V
+    goto :goto_6
 
     .line 189
+    :cond_9
+    iget-object v5, v4, LvVc;->a:LR93;
+
     .line 190
     .line 191
-    invoke-virtual {v7}, LHGc;->e()J
+    check-cast v5, LFRe;
 
     .line 192
     .line 193
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 194
-    move-result-wide v8
-
     .line 195
-    sub-long/2addr v5, v8
-
     .line 196
-    invoke-virtual {v7, v5, v6}, LHGc;->t(J)V
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     .line 197
     .line 198
     .line 199
-    invoke-virtual {v4, v7}, LLGc;->b(LHGc;)V
+    move-result-wide v5
 
     .line 200
+    iget-object v7, v4, LvVc;->l:LsVc;
+
     .line 201
     .line 202
-    :cond_a
-    :goto_6
-    iget-object v2, v2, LbN7;->b:Laj7;
+    if-eqz v7, :cond_a
 
     .line 203
     .line 204
-    iget-object v4, v2, Laj7;->j:Lcj7;
+    invoke-virtual {v7, v5, v6}, LsVc;->w(J)V
 
     .line 205
     .line 206
-    if-nez v4, :cond_b
-
     .line 207
-    .line 208
-    iput-object v0, v2, Laj7;->j:Lcj7;
+    invoke-virtual {v7}, LsVc;->f()J
 
+    .line 208
     .line 209
     .line 210
-    :cond_b
-    iget-object v4, v2, Laj7;->j:Lcj7;
+    move-result-wide v8
 
     .line 211
+    sub-long/2addr v5, v8
+
     .line 212
-    sget-object v5, Lcj7;->c:Lcj7;
+    invoke-virtual {v7, v5, v6}, LsVc;->u(J)V
 
     .line 213
     .line 214
-    if-ne v4, v5, :cond_c
-
     .line 215
-    .line 216
-    sget-object v4, Lcj7;->b:Lcj7;
+    invoke-virtual {v4, v7}, LvVc;->d(LsVc;)V
 
+    .line 216
     .line 217
     .line 218
-    if-ne v0, v4, :cond_c
+    :cond_a
+    :goto_6
+    iget-object v2, v2, LDS7;->b:Leo7;
 
     .line 219
     .line 220
-    iget-object v0, v2, Laj7;->j:Lcj7;
+    iget-object v4, v2, Leo7;->k:Lgo7;
 
     .line 221
     .line 222
-    :cond_c
-    iput-object v0, v2, Laj7;->k:Lcj7;
+    if-nez v4, :cond_b
 
     .line 223
     .line 224
-    iget-object v0, p1, LQqc;->d:Li7d;
+    iput-object v0, v2, Leo7;->k:Lgo7;
 
     .line 225
     .line 226
-    if-eqz v0, :cond_d
+    :cond_b
+    iget-object v4, v2, Leo7;->k:Lgo7;
 
     .line 227
     .line 228
-    iget-object v0, v0, Li7d;->c:LWRa;
+    sget-object v5, Lgo7;->c:Lgo7;
 
     .line 229
     .line 230
-    invoke-interface {v0}, LWRa;->S0()LcSa;
+    if-ne v4, v5, :cond_c
 
     .line 231
     .line 232
-    .line 233
-    move-result-object v0
+    sget-object v4, Lgo7;->b:Lgo7;
 
+    .line 233
     .line 234
-    if-eqz v0, :cond_d
+    if-ne v0, v4, :cond_c
 
     .line 235
     .line 236
-    invoke-static {v0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->s2(LcSa;)Z
+    iget-object v0, v2, Leo7;->k:Lgo7;
 
     .line 237
     .line 238
-    .line 239
-    move-result v0
+    :cond_c
+    iput-object v0, v2, Leo7;->l:Lgo7;
 
+    .line 239
     .line 240
-    goto :goto_7
+    iget-object v0, p1, LiGc;->d:Lwmd;
 
     .line 241
-    :cond_d
-    const/4 v0, 0x0
-
     .line 242
-    :goto_7
-    iget-object v2, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
+    if-eqz v0, :cond_d
 
     .line 243
     .line 244
-    check-cast v2, LMW7;
+    iget-object v0, v0, Lwmd;->c:LG4b;
 
     .line 245
     .line 246
-    if-eqz v2, :cond_e
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
 
     .line 247
     .line 248
-    iget-object v4, p1, LQqc;->d:Li7d;
-
     .line 249
+    move-result-object v0
+
     .line 250
-    iget-object v4, v4, Li7d;->c:LWRa;
+    if-eqz v0, :cond_d
 
     .line 251
     .line 252
-    invoke-interface {v4}, LWRa;->S0()LcSa;
+    invoke-static {v0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->r2(LL4b;)Z
 
     .line 253
     .line 254
     .line 255
-    invoke-virtual {v2, v0}, LMW7;->V3(Z)Lio/reactivex/rxjava3/disposables/Disposable;
+    move-result v0
 
     .line 256
+    goto :goto_7
+
     .line 257
+    :cond_d
+    const/4 v0, 0x0
+
     .line 258
-    goto :goto_8
+    :goto_7
+    iget-object v2, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
 
     .line 259
-    :cond_e
-    iput-boolean v3, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->x1:Z
-
     .line 260
+    check-cast v2, LM28;
+
     .line 261
-    :goto_8
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->m1:LRS4;
-
     .line 262
+    if-eqz v2, :cond_e
+
     .line 263
-    if-eqz v0, :cond_13
-
     .line 264
-    .line 265
-    invoke-virtual {v0}, LRS4;->get()Ljava/lang/Object;
+    iget-object v4, p1, LiGc;->d:Lwmd;
 
+    .line 265
     .line 266
+    iget-object v4, v4, Lwmd;->c:LG4b;
+
     .line 267
     .line 268
-    move-result-object v0
+    invoke-interface {v4}, LG4b;->Q0()LL4b;
 
     .line 269
-    check-cast v0, LFwc;
-
     .line 270
     .line 271
-    iget-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->m1:LRS4;
+    invoke-virtual {v2, v0}, LM28;->R3(Z)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 272
     .line 273
-    if-eqz v2, :cond_12
-
     .line 274
+    goto :goto_8
+
     .line 275
-    invoke-virtual {v2}, LRS4;->get()Ljava/lang/Object;
+    :cond_e
+    iput-boolean v3, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->z1:Z
 
     .line 276
     .line 277
-    .line 278
-    move-result-object v2
+    :goto_8
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p1:LIX4;
 
+    .line 278
     .line 279
-    check-cast v2, LFwc;
+    if-eqz v0, :cond_13
 
     .line 280
     .line 281
-    invoke-virtual {v2}, LFwc;->c()LRwc;
+    invoke-virtual {v0}, LIX4;->get()Ljava/lang/Object;
 
     .line 282
     .line 283
     .line 284
-    move-result-object v2
+    move-result-object v0
 
     .line 285
-    invoke-virtual {v2}, LRwc;->a()LQwc;
+    check-cast v0, LBLc;
 
     .line 286
     .line 287
-    .line 288
-    move-result-object v2
+    iget-object v2, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p1:LIX4;
 
+    .line 288
     .line 289
-    sget-object v4, LWV7;->n0:LWV7;
+    if-eqz v2, :cond_12
 
     .line 290
     .line 291
-    invoke-virtual {v0, v4, v2}, LFwc;->m(LcSa;LQwc;)V
+    invoke-virtual {v2}, LIX4;->get()Ljava/lang/Object;
 
     .line 292
     .line 293
     .line 294
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->m1:LRS4;
+    move-result-object v2
 
     .line 295
+    check-cast v2, LBLc;
+
     .line 296
-    if-eqz v0, :cond_11
-
     .line 297
-    .line 298
-    invoke-virtual {v0}, LRS4;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, LBLc;->c()LMLc;
 
+    .line 298
     .line 299
     .line 300
+    move-result-object v2
+
     .line 301
-    move-result-object v0
+    invoke-virtual {v2}, LMLc;->a()LLLc;
 
     .line 302
-    check-cast v0, LFwc;
-
     .line 303
     .line 304
-    new-instance v2, LaW7;
+    move-result-object v2
 
     .line 305
+    sget-object v4, LX18;->n0:LX18;
+
     .line 306
-    iget-object v5, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
-
     .line 307
-    .line 308
-    check-cast v5, LMW7;
+    invoke-virtual {v0, v4, v2}, LBLc;->m(LL4b;LLLc;)V
 
+    .line 308
     .line 309
     .line 310
-    invoke-direct {v2, v5}, LaW7;-><init>(LMW7;)V
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->p1:LIX4;
 
     .line 311
     .line 312
-    .line 313
-    invoke-virtual {v0, v4, v2}, LFwc;->j(LcSa;Landroid/view/View$OnClickListener;)V
+    if-eqz v0, :cond_11
 
+    .line 313
     .line 314
+    invoke-virtual {v0}, LIX4;->get()Ljava/lang/Object;
+
     .line 315
     .line 316
-    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->e1:LRS4;
-
     .line 317
+    move-result-object v0
+
     .line 318
-    if-eqz v0, :cond_10
+    check-cast v0, LBLc;
 
     .line 319
     .line 320
-    invoke-virtual {v0}, LRS4;->get()Ljava/lang/Object;
+    new-instance v2, LUF7;
 
     .line 321
     .line 322
-    .line 323
-    move-result-object v0
+    iget-object v5, p0, Lcom/snap/ui/deck/AsyncPresenterFragment;->A0:Ljava/lang/Object;
 
+    .line 323
     .line 324
-    check-cast v0, LPK3;
+    check-cast v5, LM28;
 
     .line 325
     .line 326
-    invoke-virtual {v0}, LPK3;->a()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-direct {v2, v5}, LUF7;-><init>(LM28;)V
 
     .line 327
     .line 328
     .line 329
-    move-result-object v0
+    invoke-virtual {v0, v4, v2}, LBLc;->j(LL4b;Landroid/view/View$OnClickListener;)V
 
     .line 330
-    const/4 v2, 0x4
-
     .line 331
-    invoke-static {p0, v0, p0, v2}, Lcom/snapchat/deck/fragment/ScopedMainPageFragment;->K1(Lcom/snapchat/deck/fragment/ScopedMainPageFragment;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snapchat/deck/fragment/ScopedMainPageFragment;I)V
-
     .line 332
+    iget-object v0, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->h1:LIX4;
+
     .line 333
     .line 334
-    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->n2()LHh7;
+    if-eqz v0, :cond_10
 
     .line 335
     .line 336
+    invoke-virtual {v0}, LIX4;->get()Ljava/lang/Object;
+
     .line 337
+    .line 338
+    .line 339
     move-result-object v0
 
-    .line 338
-    invoke-static {v0, v3}, LZyk;->k0(LHh7;I)V
-
-    .line 339
     .line 340
+    check-cast v0, LvO3;
+
     .line 341
-    iget-object p1, p1, LQqc;->d:Li7d;
-
     .line 342
-    .line 343
-    if-eqz p1, :cond_f
+    invoke-virtual {v0}, LvO3;->a()Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 343
     .line 344
     .line 345
-    iget-object p1, p1, Li7d;->c:LWRa;
+    move-result-object v0
 
     .line 346
+    const/4 v2, 0x4
+
     .line 347
-    invoke-interface {p1}, LWRa;->S0()LcSa;
+    invoke-static {p0, v0, p0, v2}, Lcom/snapchat/deck/fragment/ScopedMainPageFragment;->I1(Lcom/snapchat/deck/fragment/ScopedMainPageFragment;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snapchat/deck/fragment/ScopedMainPageFragment;I)V
 
     .line 348
     .line 349
     .line 350
-    move-result-object v1
+    invoke-virtual {p0}, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->o2()LIm7;
 
     .line 351
-    :cond_f
-    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->y1:LcSa;
-
     .line 352
     .line 353
-    return-void
+    move-result-object v0
 
     .line 354
-    :cond_10
-    const-string p1, "connectivityStatusIndicator"
+    invoke-static {v0, v3}, LWYk;->g(LIm7;I)V
 
     .line 355
     .line 356
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 357
+    iget-object p1, p1, LiGc;->d:Lwmd;
+
     .line 358
     .line 359
-    throw v1
+    if-eqz p1, :cond_f
 
     .line 360
-    :cond_11
-    const-string p1, "ngsActionBarController"
-
     .line 361
-    .line 362
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    iget-object p1, p1, Lwmd;->c:LG4b;
 
+    .line 362
     .line 363
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
+
     .line 364
     .line 365
-    throw v1
-
     .line 366
-    :cond_12
-    const-string p1, "ngsActionBarController"
+    move-result-object v1
 
     .line 367
+    :cond_f
+    iput-object v1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->A1:LL4b;
+
     .line 368
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 369
-    .line 370
-    .line 371
-    throw v1
+    return-void
 
+    .line 370
+    :cond_10
+    const-string p1, "connectivityStatusIndicator"
+
+    .line 371
     .line 372
-    :cond_13
-    const-string p1, "ngsActionBarController"
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 373
     .line 374
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 375
-    .line 376
-    .line 377
     throw v1
 
+    .line 376
+    :cond_11
+    const-string p1, "ngsActionBarController"
+
+    .line 377
     .line 378
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 379
+    .line 380
+    .line 381
+    throw v1
+
+    .line 382
+    :cond_12
+    const-string p1, "ngsActionBarController"
+
+    .line 383
+    .line 384
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 385
+    .line 386
+    .line 387
+    throw v1
+
+    .line 388
+    :cond_13
+    const-string p1, "ngsActionBarController"
+
+    .line 389
+    .line 390
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 391
+    .line 392
+    .line 393
+    throw v1
+
+    .line 394
     :goto_9
     :try_start_1
     monitor-exit v4
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 379
+    .line 395
     throw p1
 
-    .line 380
+    .line 396
     :cond_14
     const-string p1, "feedReadyAnalytics"
 
-    .line 381
-    .line 382
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 397
+    .line 398
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 383
-    .line 384
-    .line 385
+    .line 399
+    .line 400
+    .line 401
     throw v1
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 2
+    .line 3
+    const-string v1, "FriendsFeedFragment:onAttach"
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v1
+
+    .line 9
+    :try_start_0
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object p1, p0, Lcom/snap/messaging/friendsfeed/ui/FriendsFeedFragment;->t1:LH38;
+
+    .line 13
+    .line 14
+    if-eqz p1, :cond_0
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, LH38;->a()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+
+    .line 23
+    :cond_0
+    :try_start_1
+    const-string p1, "swipeToChatPredicateController"
+
+    .line 24
+    .line 25
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    const/4 p1, 0x0
+
+    .line 29
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 30
+    :catchall_0
+    move-exception p1
+
+    .line 31
+    sget-object v0, LOdh;->b:LtGi;
+
+    .line 32
+    .line 33
+    if-eqz v0, :cond_1
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
+
+    .line 36
+    .line 37
+    .line 38
+    :cond_1
+    throw p1
 .end method

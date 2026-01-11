@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LtA9;
+.implements LLJ9;
 
 
 # annotations
@@ -13,7 +13,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "LtA9;"
+        "LLJ9;"
     }
 .end annotation
 
@@ -71,19 +71,19 @@
 
 
 # virtual methods
-.method public deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;LsA9;)Lcom/snap/discover/playback/content/model/PageContent;
+.method public deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;LKJ9;)Lcom/snap/discover/playback/content/model/PageContent;
     .locals 20
 
     .line 1
-    invoke-static {}, LjZf;->a()LkZf;
+    invoke-static {}, Lljg;->a()Lmjg;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, LkZf;->a:LKG8;
+    iget-object v0, v0, Lmjg;->a:LMN8;
 
     .line 3
-    iget-object v0, v0, LKG8;->a:LAG8;
+    iget-object v0, v0, LMN8;->a:LCN8;
 
     if-eqz p1, :cond_c
 
@@ -175,7 +175,7 @@
     .line 11
     const-class v7, Lcom/snap/discover/playback/content/model/SnapContent;
 
-    invoke-virtual {v0, v1, v7}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v7}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -214,7 +214,7 @@
     move-object/from16 v0, v19
 
     .line 12
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -242,7 +242,7 @@
     .line 15
     const-class v5, Lcom/snap/discover/playback/content/model/NotificationOptInContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -279,7 +279,7 @@
     const/4 v15, 0x0
 
     .line 16
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -305,7 +305,7 @@
     .line 19
     const-class v5, Lcom/snap/discover/playback/content/model/DeepLinkContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -342,7 +342,7 @@
     const/16 v16, 0x0
 
     .line 20
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -367,7 +367,7 @@
     .line 23
     const-class v5, Lcom/snap/discover/playback/content/model/AppInstallContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -404,7 +404,7 @@
     const/16 v16, 0x0
 
     .line 24
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -429,7 +429,7 @@
     .line 27
     const-class v5, Lcom/snap/discover/playback/content/model/SubscriptionContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -466,7 +466,7 @@
     const/16 v16, 0x0
 
     .line 28
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -491,7 +491,7 @@
     .line 31
     const-class v5, Lcom/snap/discover/playback/content/model/VideoViewContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -528,7 +528,7 @@
     const/16 v16, 0x0
 
     .line 32
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -553,7 +553,7 @@
     .line 35
     const-class v5, Lcom/snap/discover/playback/content/model/OverlayContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -590,7 +590,7 @@
     const/16 v16, 0x0
 
     .line 36
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -615,7 +615,7 @@
     .line 39
     const-class v5, Lcom/snap/discover/playback/content/model/CameraAttachmentContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -652,7 +652,7 @@
     const/16 v16, 0x0
 
     .line 40
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto/16 :goto_4
 
@@ -677,7 +677,7 @@
     .line 43
     const-class v5, Lcom/snap/discover/playback/content/model/CommerceContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -714,7 +714,7 @@
     const/16 v16, 0x0
 
     .line 44
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto :goto_4
 
@@ -739,7 +739,7 @@
     .line 47
     const-class v5, Lcom/snap/discover/playback/content/model/AdToLensContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -776,7 +776,7 @@
     const/16 v16, 0x0
 
     .line 48
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto :goto_4
 
@@ -801,7 +801,7 @@
     .line 51
     const-class v5, Lcom/snap/discover/playback/content/model/WebViewContent;
 
-    invoke-virtual {v0, v1, v5}, LAG8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {v0, v1, v5}, LCN8;->d(Lcom/google/gson/JsonElement;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -838,7 +838,7 @@
     const/16 v16, 0x0
 
     .line 52
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     goto :goto_4
 
@@ -874,7 +874,7 @@
 
     const/16 v16, 0x0
 
-    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILHr5;)V
+    invoke-direct/range {v3 .. v18}, Lcom/snap/discover/playback/content/model/ItemContent;-><init>(Ljava/lang/String;Lcom/snap/discover/playback/content/model/WebViewContent;Lcom/snap/discover/playback/content/model/SnapContent;Lcom/snap/discover/playback/content/model/VideoViewContent;Lcom/snap/discover/playback/content/model/SubscriptionContent;Lcom/snap/discover/playback/content/model/OverlayContent;Lcom/snap/discover/playback/content/model/CommerceContent;Lcom/snap/discover/playback/content/model/LocalWebContent;Lcom/snap/discover/playback/content/model/AppInstallContent;Lcom/snap/discover/playback/content/model/DeepLinkContent;Lcom/snap/discover/playback/content/model/AdToLensContent;Lcom/snap/discover/playback/content/model/CameraAttachmentContent;Lcom/snap/discover/playback/content/model/NotificationOptInContent;ILex5;)V
 
     .line 54
     :goto_4
@@ -905,11 +905,11 @@
     .end sparse-switch
 .end method
 
-.method public bridge synthetic deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;LsA9;)Ljava/lang/Object;
+.method public bridge synthetic deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;LKJ9;)Ljava/lang/Object;
     .locals 0
 
     .line 55
-    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/discover/playback/content/parser/PageContentDeserializer;->deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;LsA9;)Lcom/snap/discover/playback/content/model/PageContent;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/discover/playback/content/parser/PageContentDeserializer;->deserialize(Lcom/google/gson/JsonElement;Ljava/lang/reflect/Type;LKJ9;)Lcom/snap/discover/playback/content/model/PageContent;
 
     move-result-object p1
 

@@ -1,33 +1,32 @@
-.class public abstract LTf;
+.class public final LTf;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LUf;
+
 
 # static fields
-.field public static final a:LXfi;
+.field public static final a:LTf;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, Lz5;->j0:Lz5;
+    new-instance v0, LTf;
 
     .line 2
     .line 3
-    new-instance v1, LXfi;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
     .line 6
+    sput-object v0, LTf;->a:LTf;
+
     .line 7
     .line 8
-    sput-object v1, LTf;->a:LXfi;
-
-    .line 9
-    .line 10
     return-void
 .end method

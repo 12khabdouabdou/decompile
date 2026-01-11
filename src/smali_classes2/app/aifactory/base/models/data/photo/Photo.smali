@@ -54,7 +54,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v12}, Lapp/aifactory/base/models/data/photo/Photo;-><init>(Ljava/lang/String;Ljava/lang/String;FIJZZZLjava/lang/String;ILHr5;)V
+    invoke-direct/range {v0 .. v12}, Lapp/aifactory/base/models/data/photo/Photo;-><init>(Ljava/lang/String;Ljava/lang/String;FIJZZZLjava/lang/String;ILex5;)V
 
     return-void
 .end method
@@ -95,7 +95,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;FIJZZZLjava/lang/String;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;FIJZZZLjava/lang/String;ILex5;)V
     .locals 1
 
     and-int/lit8 p12, p11, 0x1

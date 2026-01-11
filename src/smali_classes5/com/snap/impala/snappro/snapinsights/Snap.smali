@@ -1,10 +1,10 @@
 .class public final Lcom/snap/impala/snappro/snapinsights/Snap;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'snapId\':s,\'clientId\':s,\'thumbnailUrl\':s,\'thumbnailInfo\':r?:\'[0]\',\'metrics\':r?:\'[1]\',\'attachmentUrl\':s?,\'timestampMs\':d,\'caption\':s?,\'canSave\':b,\'canDelete\':b,\'isSavedStorySnap\':b@?,\'deleteConfiguration\':r?:\'[2]\',\'snapInsightsConfiguration\':r?:\'[3]\'"
     typeReferences = {

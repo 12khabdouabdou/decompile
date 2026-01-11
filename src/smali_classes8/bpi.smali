@@ -1,0 +1,409 @@
+.class public final Lbpi;
+.super LJP9;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lcpi;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcpi;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, Lbpi;->a:I
+
+    iput-object p1, p0, Lbpi;->b:Lcpi;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
+
+    .line 1
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lbpi;->b:Lcpi;
+
+    .line 4
+    .line 5
+    iget v2, p0, Lbpi;->a:I
+
+    .line 6
+    .line 7
+    packed-switch v2, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    check-cast p1, LDjj;
+
+    .line 11
+    .line 12
+    iget-object v2, p1, LDjj;->a:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    check-cast v2, Landroid/graphics/Rect;
+
+    .line 15
+    .line 16
+    iget-object v3, p1, LDjj;->b:Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    check-cast v3, LdRf;
+
+    .line 19
+    .line 20
+    iget-object p1, p1, LDjj;->c:Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    check-cast p1, LmZf;
+
+    .line 23
+    .line 24
+    instance-of v4, p1, Ljava/util/Collection;
+
+    .line 25
+    .line 26
+    const/4 v5, 0x0
+
+    .line 27
+    const/4 v6, 0x0
+
+    .line 28
+    if-eqz v4, :cond_0
+
+    .line 29
+    .line 30
+    move-object v4, p1
+
+    .line 31
+    check-cast v4, Ljava/util/Collection;
+
+    .line 32
+    .line 33
+    invoke-interface {v4}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v4
+
+    .line 37
+    if-eqz v4, :cond_0
+
+    .line 38
+    .line 39
+    const/4 v4, 0x0
+
+    .line 40
+    goto :goto_1
+
+    .line 41
+    :cond_0
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p1
+
+    .line 45
+    const/4 v4, 0x0
+
+    .line 46
+    :cond_1
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v7
+
+    .line 50
+    if-eqz v7, :cond_3
+
+    .line 51
+    .line 52
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v7
+
+    .line 56
+    check-cast v7, Lsw;
+
+    .line 57
+    .line 58
+    instance-of v7, v7, LPli;
+
+    .line 59
+    .line 60
+    if-eqz v7, :cond_1
+
+    .line 61
+    .line 62
+    add-int/lit8 v4, v4, 0x1
+
+    .line 63
+    .line 64
+    if-ltz v4, :cond_2
+
+    .line 65
+    .line 66
+    goto :goto_0
+
+    .line 67
+    :cond_2
+    invoke-static {}, Lmh3;->Z2()V
+
+    .line 68
+    .line 69
+    .line 70
+    throw v5
+
+    .line 71
+    :cond_3
+    :goto_1
+    iget p1, v3, LdRf;->i:I
+
+    .line 72
+    .line 73
+    iget v2, v2, Landroid/graphics/Rect;->top:I
+
+    .line 74
+    .line 75
+    sub-int/2addr p1, v2
+
+    .line 76
+    iget-object v2, v1, Lcpi;->Y:Landroid/content/Context;
+
+    .line 77
+    .line 78
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v3
+
+    .line 82
+    const v7, 0x7f0712c4
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-virtual {v3, v7}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 86
+    .line 87
+    .line 88
+    move-result v3
+
+    .line 89
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v7
+
+    .line 93
+    const v8, 0x7f0712c7
+
+    .line 94
+    .line 95
+    .line 96
+    invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 97
+    .line 98
+    .line 99
+    move-result v7
+
+    .line 100
+    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object v2
+
+    .line 104
+    const v8, 0x7f0712c6
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v2, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 108
+    .line 109
+    .line 110
+    move-result v2
+
+    .line 111
+    add-int/2addr v2, v7
+
+    .line 112
+    int-to-double v7, p1
+
+    .line 113
+    const-wide v9, 0x3feccccccccccccdL    # 0.9
+
+    .line 114
+    .line 115
+    .line 116
+    .line 117
+    .line 118
+    mul-double v7, v7, v9
+
+    .line 119
+    .line 120
+    mul-int v2, v2, v4
+
+    .line 121
+    .line 122
+    add-int/2addr v2, v3
+
+    .line 123
+    double-to-int p1, v7
+
+    .line 124
+    invoke-static {p1, v2}, Ljava/lang/Math;->min(II)I
+
+    .line 125
+    .line 126
+    .line 127
+    move-result p1
+
+    .line 128
+    iget-object v3, v1, Lcpi;->w0:Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 129
+    .line 130
+    if-eqz v3, :cond_4
+
+    .line 131
+    .line 132
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 133
+    .line 134
+    .line 135
+    new-instance v5, Lcom/snap/sharing/sendto/ui/view/StoryTrayBottomSheet$showPartialTray$1;
+
+    .line 136
+    .line 137
+    invoke-direct {v5, v2, v7, v8}, Lcom/snap/sharing/sendto/ui/view/StoryTrayBottomSheet$showPartialTray$1;-><init>(ID)V
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-virtual {v3, v5}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
+
+    .line 141
+    .line 142
+    .line 143
+    sget-object v2, Leeh;->a:Leeh;
+
+    .line 144
+    .line 145
+    sget-object v3, Lcom/snap/component/tray/SnapTray;->r0:LPdh;
+
+    .line 146
+    .line 147
+    iget-object v3, v1, Lcpi;->p0:Lcom/snap/component/tray/SnapTray;
+
+    .line 148
+    .line 149
+    invoke-virtual {v3, v2, v6}, Lcom/snap/component/tray/SnapTray;->n(Lheh;I)V
+
+    .line 150
+    .line 151
+    .line 152
+    invoke-virtual {v3, p1}, Lcom/snap/component/tray/SnapTray;->p(I)V
+
+    .line 153
+    .line 154
+    .line 155
+    invoke-virtual {v3, v6}, Landroid/view/View;->setVisibility(I)V
+
+    .line 156
+    .line 157
+    .line 158
+    iget-object p1, v1, Lcpi;->j0:LbYd;
+
+    .line 159
+    .line 160
+    iget-object p1, p1, LbYd;->t0:Lio/reactivex/rxjava3/subjects/SingleSubject;
+
+    .line 161
+    .line 162
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 163
+    .line 164
+    .line 165
+    move-result-object v1
+
+    .line 166
+    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/subjects/SingleSubject;->onSuccess(Ljava/lang/Object;)V
+
+    .line 167
+    .line 168
+    .line 169
+    return-object v0
+
+    .line 170
+    :cond_4
+    const-string p1, "storyRecipientRecyclerView"
+
+    .line 171
+    .line 172
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 173
+    .line 174
+    .line 175
+    throw v5
+
+    .line 176
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 177
+    .line 178
+    iget-object p1, v1, Lcpi;->q0:LJp0;
+
+    .line 179
+    .line 180
+    return-object v0
+
+    .line 181
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method

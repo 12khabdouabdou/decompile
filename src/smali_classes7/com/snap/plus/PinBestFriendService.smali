@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LGod;
+    proxyClass = LUEd;
     schema = "\'pinnedBestFriendObservable\':f|m|(): g<c>:\'[0]\'<s?>,\'setPinnedBestFriend\':f|m|(s?, f(r?:\'[1]\'))"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,

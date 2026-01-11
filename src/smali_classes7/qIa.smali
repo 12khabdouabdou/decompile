@@ -1,104 +1,213 @@
-.class public final LqIa;
-.super Ljava/lang/Object;
+.class public final enum LqIa;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/core/ObservableTransformer;
+
+# static fields
+.field public static final enum X:LqIa;
+
+.field public static final synthetic Y:[LqIa;
+
+.field public static final enum b:LqIa;
+
+.field public static final enum c:LqIa;
+
+.field public static final enum t:LqIa;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:LJ7d;
-
-.field public final c:Lio/reactivex/rxjava3/subjects/PublishSubject;
+.field public final a:LWPe;
 
 
 # direct methods
-.method public synthetic constructor <init>(LJ7d;Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 10
 
     .line 1
-    iput p3, p0, LqIa;->a:I
-
-    iput-object p1, p0, LqIa;->b:LJ7d;
-
-    iput-object p2, p0, LqIa;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final b(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/ObservableSource;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LqIa;->a:I
+    new-instance v0, LqIa;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    sget-object v1, LWPe;->c:LWPe;
+
+    .line 4
+    .line 5
+    const-string v2, "PRESENT"
+
+    .line 6
+    .line 7
+    const/4 v3, 0x0
+
+    .line 8
+    invoke-direct {v0, v2, v3, v1}, LqIa;-><init>(Ljava/lang/String;ILWPe;)V
+
+    .line 9
+    .line 10
+    .line 11
+    sput-object v0, LqIa;->b:LqIa;
+
+    .line 12
+    .line 13
+    new-instance v1, LqIa;
+
+    .line 14
+    .line 15
+    sget-object v2, LWPe;->b:LWPe;
+
+    .line 16
+    .line 17
+    const-string v4, "MISSING"
+
+    .line 18
+    .line 19
+    const/4 v5, 0x1
+
+    .line 20
+    invoke-direct {v1, v4, v5, v2}, LqIa;-><init>(Ljava/lang/String;ILWPe;)V
+
+    .line 21
+    .line 22
+    .line 23
+    sput-object v1, LqIa;->c:LqIa;
+
+    .line 24
+    .line 25
+    new-instance v2, LqIa;
+
+    .line 26
+    .line 27
+    sget-object v4, LWPe;->t:LWPe;
+
+    .line 28
+    .line 29
+    const-string v6, "STALE"
+
+    .line 30
+    .line 31
+    const/4 v7, 0x2
+
+    .line 32
+    invoke-direct {v2, v6, v7, v4}, LqIa;-><init>(Ljava/lang/String;ILWPe;)V
+
+    .line 33
+    .line 34
+    .line 35
+    sput-object v2, LqIa;->t:LqIa;
+
+    .line 36
+    .line 37
+    new-instance v4, LqIa;
+
+    .line 38
+    .line 39
+    sget-object v6, LWPe;->X:LWPe;
+
+    .line 40
+    .line 41
+    const-string v8, "EXPIRED"
+
+    .line 42
+    .line 43
+    const/4 v9, 0x3
+
+    .line 44
+    invoke-direct {v4, v8, v9, v6}, LqIa;-><init>(Ljava/lang/String;ILWPe;)V
+
+    .line 45
+    .line 46
+    .line 47
+    sput-object v4, LqIa;->X:LqIa;
+
+    .line 48
+    .line 49
+    const/4 v6, 0x4
+
+    .line 50
+    new-array v6, v6, [LqIa;
+
+    .line 51
+    .line 52
+    aput-object v0, v6, v3
+
+    .line 53
+    .line 54
+    aput-object v1, v6, v5
+
+    .line 55
+    .line 56
+    aput-object v2, v6, v7
+
+    .line 57
+    .line 58
+    aput-object v4, v6, v9
+
+    .line 59
+    .line 60
+    sput-object v6, LqIa;->Y:[LqIa;
+
+    .line 61
+    .line 62
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ILWPe;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p3, p0, LqIa;->a:LWPe;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LqIa;
+    .locals 1
+
+    .line 1
+    const-class v0, LqIa;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    new-instance v0, LvQd;
+    move-result-object p0
 
     .line 7
+    check-cast p0, LqIa;
+
     .line 8
-    const/16 v1, 0xc
-
     .line 9
-    .line 10
-    invoke-direct {v0, v1, p0}, LvQd;-><init>(ILjava/lang/Object;)V
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+.method public static values()[LqIa;
+    .locals 1
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
+    .line 1
+    sget-object v0, LqIa;->Y:[LqIa;
 
-    .line 17
-    return-object p1
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 18
-    :pswitch_0
-    new-instance v0, LHW9;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 19
-    .line 20
-    const/16 v1, 0x17
+    .line 7
+    check-cast v0, [LqIa;
 
-    .line 21
-    .line 22
-    invoke-direct {v0, v1, p0}, LHW9;-><init>(ILjava/lang/Object;)V
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p1
-
-    .line 29
-    return-object p1
-
-    .line 30
-    nop
-
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 8
+    .line 9
+    return-object v0
 .end method

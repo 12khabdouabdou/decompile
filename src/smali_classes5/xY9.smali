@@ -1,31 +1,36 @@
 .class public abstract LxY9;
-.super Ljava/lang/RuntimeException;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/Exception;
-
-.field public final b:LGR9;
+# static fields
+.field public static final a:J
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Exception;LGR9;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 2
     .line 3
+    const-wide/16 v1, 0x1
+
     .line 4
-    iput-object p1, p0, LxY9;->a:Ljava/lang/Exception;
-
     .line 5
-    .line 6
-    iput-object p2, p0, LxY9;->b:LGR9;
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
+    .line 6
     .line 7
     .line 8
+    move-result-wide v0
+
+    .line 9
+    sput-wide v0, LxY9;->a:J
+
+    .line 10
+    .line 11
     return-void
 .end method

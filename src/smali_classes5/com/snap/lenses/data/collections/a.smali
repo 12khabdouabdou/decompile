@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static a(LHja;Lkotlin/jvm/functions/Function1;Lbke;)Lt0a;
+.method public static a(Lewa;Lkotlin/jvm/functions/Function1;LDBe;)Lbda;
     .locals 0
 
     .line 1
@@ -14,7 +14,7 @@
     monitor-exit p0
 
     .line 3
-    invoke-interface {p2}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {p2}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -30,7 +30,7 @@
     move-result-object p0
 
     .line 11
-    check-cast p0, Lt0a;
+    check-cast p0, Lbda;
 
     .line 12
     .line 13

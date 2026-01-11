@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/create_post/LocationDependencies;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'latitude\':d,\'longitude\':d,\'suggestedLocationsObservable\':g<c>:\'[0]\'<a<r:\'[1]\'>>,\'grpcService\':r:\'[2]\',\'onTapReportVenue\':f(s)"
     typeReferences = {

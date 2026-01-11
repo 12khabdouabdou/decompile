@@ -1,3 +1,3 @@
 .class public final LjJg;
-.super LD3j;
+.super Ljava/lang/Exception;
 .source "SourceFile"

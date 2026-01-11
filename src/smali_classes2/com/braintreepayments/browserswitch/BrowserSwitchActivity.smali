@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:LFz1;
+.field public a:LTC1;
 
 
 # virtual methods
@@ -25,7 +25,7 @@
     move-result-object p1
 
     .line 8
-    iget-object v0, p0, Lcom/braintreepayments/browserswitch/BrowserSwitchActivity;->a:LFz1;
+    iget-object v0, p0, Lcom/braintreepayments/browserswitch/BrowserSwitchActivity;->a:LTC1;
 
     .line 9
     .line 10
@@ -50,7 +50,7 @@
     move-result-object p1
 
     .line 20
-    invoke-static {p0}, Lva7;->c(Landroid/content/Context;)LZzk;
+    invoke-static {p0}, Led3;->b(Landroid/content/Context;)LhKc;
 
     .line 21
     .line 22
@@ -66,7 +66,7 @@
 
     .line 27
     .line 28
-    iput-object p1, v0, LZzk;->c:Ljava/lang/Object;
+    iput-object p1, v0, LhKc;->c:Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -74,7 +74,7 @@
 
     .line 31
     .line 32
-    iput-object p1, v0, LZzk;->t:Ljava/lang/Object;
+    iput-object p1, v0, LhKc;->t:Ljava/lang/Object;
 
     .line 33
     .line 34
@@ -83,7 +83,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v0}, LZzk;->a()Ljava/lang/String;
+    invoke-virtual {v0}, LhKc;->j()Ljava/lang/String;
 
     .line 37
     .line 38

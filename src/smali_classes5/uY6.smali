@@ -1,3 +1,3 @@
-.class public final LuY6;
-.super LYwk;
+.class public abstract LuY6;
+.super Ljava/lang/Object;
 .source "SourceFile"

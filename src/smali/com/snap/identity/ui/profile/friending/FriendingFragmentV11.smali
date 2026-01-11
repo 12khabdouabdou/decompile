@@ -41,7 +41,7 @@
 
 
 # virtual methods
-.method public H1()V
+.method public F1()V
     .locals 1
 
     .line 1
@@ -75,7 +75,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lqtk;->h(Landroid/content/Context;)Z
+    invoke-static {v0}, LVTk;->g(Landroid/content/Context;)Z
 
     .line 10
     .line 11
@@ -95,7 +95,7 @@
     move-result-object v0
 
     .line 19
-    invoke-static {v0}, LKpk;->g(Landroid/content/Context;)V
+    invoke-static {v0}, LCPk;->f(Landroid/content/Context;)V
 
     .line 20
     .line 21
@@ -104,24 +104,24 @@
     return-void
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p1, LQqc;->e:Li7d;
+    iget-object p1, p1, LiGc;->e:Lwmd;
 
     .line 5
     .line 6
-    iget-object p1, p1, Li7d;->c:LWRa;
+    iget-object p1, p1, Lwmd;->c:LG4b;
 
     .line 7
     .line 8
-    invoke-interface {p1}, LWRa;->S0()LcSa;
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
 
     .line 9
     .line 10
@@ -129,11 +129,11 @@
     move-result-object p1
 
     .line 12
-    sget-object v0, LfE1;->n0:LfE1;
+    sget-object v0, LvH1;->n0:LvH1;
 
     .line 13
     .line 14
-    invoke-static {p1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
@@ -154,7 +154,7 @@
     return-void
 .end method
 
-.method public z1()V
+.method public x1()V
     .locals 1
 
     .line 1

@@ -1,14 +1,14 @@
 .class public final Lcom/snap/composer_checkout_flow/CheckoutV3CreationModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'storeId\':s,\'lineItems\':a<r:\'[0]\'>,\'orderServiceV3RouteTag\':r<e>:\'[1]\',\'currencyCode\':s,\'entryPage\':s?"
     typeReferences = {
-        LTR2;,
+        LwU2;,
         Lcom/snap/commerce_networking/OrderServiceV3RouteTagType;
     }
 .end annotation
@@ -23,7 +23,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LTR2;",
+            "LwU2;",
             ">;"
         }
     .end annotation
@@ -68,7 +68,7 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "LTR2;",
+            "LwU2;",
             ">;",
             "Lcom/snap/commerce_networking/OrderServiceV3RouteTagType;",
             "Ljava/lang/String;",

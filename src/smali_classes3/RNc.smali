@@ -1,18 +1,18 @@
 .class public final LRNc;
-.super LFt2;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:J
+.field public final a:Ljava/lang/String;
 
 .field public final b:Ljava/lang/String;
 
-.field public final c:Ljava/lang/String;
+.field public final c:J
 
 
 # direct methods
-.method public constructor <init>(JLjava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;J)V
     .locals 0
 
     .line 1
@@ -21,15 +21,15 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, LRNc;->a:J
+    iput-object p1, p0, LRNc;->a:Ljava/lang/String;
 
     .line 5
     .line 6
-    iput-object p3, p0, LRNc;->b:Ljava/lang/String;
+    iput-object p2, p0, LRNc;->b:Ljava/lang/String;
 
     .line 7
     .line 8
-    iput-object p4, p0, LRNc;->c:Ljava/lang/String;
+    iput-wide p3, p0, LRNc;->c:J
 
     .line 9
     .line 10
@@ -72,67 +72,67 @@
 
     .line 12
     .line 13
-    iget-wide v3, p1, LRNc;->a:J
+    iget-object v1, p1, LRNc;->a:Ljava/lang/String;
 
     .line 14
     .line 15
-    iget-wide v5, p0, LRNc;->a:J
+    iget-object v3, p0, LRNc;->a:Ljava/lang/String;
 
     .line 16
     .line 17
-    cmp-long v1, v5, v3
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
-    if-eqz v1, :cond_2
-
     .line 20
+    move-result v1
+
     .line 21
-    return v2
+    if-nez v1, :cond_2
 
     .line 22
+    .line 23
+    return v2
+
+    .line 24
     :cond_2
     iget-object v1, p0, LRNc;->b:Ljava/lang/String;
 
-    .line 23
-    .line 24
-    iget-object v3, p1, LRNc;->b:Ljava/lang/String;
-
     .line 25
     .line 26
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v3, p1, LRNc;->b:Ljava/lang/String;
 
     .line 27
     .line 28
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 29
+    .line 30
+    .line 31
     move-result v1
 
-    .line 30
+    .line 32
     if-nez v1, :cond_3
 
-    .line 31
-    .line 32
+    .line 33
+    .line 34
     return v2
 
-    .line 33
-    :cond_3
-    iget-object v1, p0, LRNc;->c:Ljava/lang/String;
-
-    .line 34
     .line 35
-    iget-object p1, p1, LRNc;->c:Ljava/lang/String;
+    :cond_3
+    iget-wide v3, p0, LRNc;->c:J
 
     .line 36
     .line 37
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-wide v5, p1, LRNc;->c:J
 
     .line 38
     .line 39
-    .line 40
-    move-result p1
+    cmp-long p1, v3, v5
 
+    .line 40
     .line 41
-    if-nez p1, :cond_4
+    if-eqz p1, :cond_4
 
     .line 42
     .line 43
@@ -144,74 +144,74 @@
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 6
 
     .line 1
-    const/16 v0, 0x20
+    iget-object v0, p0, LRNc;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    iget-wide v1, p0, LRNc;->a:J
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
-    ushr-long v3, v1, v0
-
     .line 6
+    move-result v0
+
     .line 7
-    xor-long/2addr v1, v3
+    const/16 v1, 0x1f
 
     .line 8
-    long-to-int v0, v1
-
     .line 9
-    const/16 v1, 0x1f
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 10
     .line 11
-    mul-int/lit8 v0, v0, 0x1f
+    iget-object v2, p0, LRNc;->b:Ljava/lang/String;
 
     .line 12
     .line 13
-    iget-object v2, p0, LRNc;->b:Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 14
     .line 15
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
     .line 16
-    .line 17
-    .line 18
     move-result v0
 
+    .line 17
+    const/16 v1, 0x20
+
+    .line 18
     .line 19
-    iget-object v1, p0, LRNc;->c:Ljava/lang/String;
+    iget-wide v2, p0, LRNc;->c:J
 
     .line 20
     .line 21
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    ushr-long v4, v2, v1
 
     .line 22
     .line 23
+    xor-long/2addr v2, v4
+
     .line 24
-    move-result v1
+    long-to-int v1, v2
 
     .line 25
-    add-int/2addr v1, v0
+    add-int/2addr v0, v1
 
     .line 26
-    return v1
+    return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 4
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "OnLoadSizeRecommendation(productId="
+    const-string v1, "NoFillImpressionInfo(adResponseIdentifier="
 
     .line 4
     .line 5
@@ -220,16 +220,16 @@
     .line 6
     .line 7
     .line 8
-    iget-wide v1, p0, LRNc;->a:J
+    iget-object v1, p0, LRNc;->a:Ljava/lang/String;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", size="
+    const-string v1, ", sessionId="
 
     .line 14
     .line 15
@@ -247,7 +247,7 @@
     .line 21
     .line 22
     .line 23
-    const-string v1, ", macroUrl="
+    const-string v1, ", startTimestamp="
 
     .line 24
     .line 25
@@ -256,15 +256,15 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, LRNc;->c:Ljava/lang/String;
+    iget-wide v1, p0, LRNc;->c:J
 
     .line 29
     .line 30
-    const-string v2, ")"
+    const-string v3, ")"
 
     .line 31
     .line 32
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v3}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 33
     .line 34

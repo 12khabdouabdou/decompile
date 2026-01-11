@@ -1,599 +1,801 @@
-.class public final enum LPCf;
-.super Ljava/lang/Enum;
+.class public final LPCf;
+.super Landroid/view/View;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LPCf;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum X:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "POST_TYPE_QUERY_SUGGESTION"
-    .end annotation
-.end field
-
-.field public static final enum Y:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "POST_TYPE_QUERY_SPELL_CORRECTED_SUGGESTION"
-    .end annotation
-.end field
-
-.field public static final enum Z:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "POST_TYPE_QUERY_SPELL_ESCAPE_HATCH_SUGGESTION"
-    .end annotation
-.end field
-
-.field public static final enum b:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "EMOJI_SUGGESTION"
-    .end annotation
-.end field
-
-.field public static final enum c:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PRE_TYPE"
-    .end annotation
-.end field
-
-.field public static final enum e0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "QUERY_SUGGESTION"
-    .end annotation
-.end field
-
-.field public static final enum f0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "RELATED_SEARCH"
-    .end annotation
-.end field
-
-.field public static final enum g0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SECTION_HEADER_REFRESH_BUTTON"
-    .end annotation
-.end field
-
-.field public static final enum h0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SECTION_HEADER_MANUAL_RELOAD_BUTTON"
-    .end annotation
-.end field
-
-.field public static final enum i0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SEARCH_BAR"
-    .end annotation
-.end field
-
-.field public static final enum j0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SEARCH_BAR_RETURN"
-    .end annotation
-.end field
-
-.field public static final enum k0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SNAP_TAB"
-    .end annotation
-.end field
-
-.field public static final enum l0:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "VIEW_MORE"
-    .end annotation
-.end field
-
-.field public static final synthetic m0:[LPCf;
-
-.field public static final enum t:LPCf;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PRE_TYPE_QUERY_SUGGESTION"
-    .end annotation
-.end field
 
 
 # instance fields
-.field public final a:I
+.field public final a:LFRe;
+
+.field public final b:Landroid/graphics/Paint;
+
+.field public final c:Landroid/graphics/Paint;
+
+.field public final e0:Landroid/view/animation/DecelerateInterpolator;
+
+.field public f0:J
+
+.field public g0:F
+
+.field public h0:F
+
+.field public i0:F
+
+.field public j0:F
+
+.field public k0:F
+
+.field public l0:F
+
+.field public m0:F
+
+.field public n0:F
+
+.field public o0:F
+
+.field public p0:Z
+
+.field public q0:F
+
+.field public final r0:Lv6j;
+
+.field public final t:Landroid/view/animation/AccelerateInterpolator;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 29
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 4
 
     .line 1
-    new-instance v0, LPCf;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    const-string v1, "EMOJI_SUGGESTION"
+    invoke-direct {p0, p1, v0}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
+    .line 3
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const-wide/16 v1, -0x1
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, LPCf;-><init>(Ljava/lang/String;II)V
-
     .line 7
+    iput-wide v1, p0, LPCf;->f0:J
+
     .line 8
     .line 9
-    sput-object v0, LPCf;->b:LPCf;
+    const/4 p1, 0x0
 
     .line 10
-    .line 11
-    new-instance v1, LPCf;
+    iput-boolean p1, p0, LPCf;->p0:Z
 
+    .line 11
     .line 12
+    const/4 p1, 0x0
+
     .line 13
-    const-string v3, "PRE_TYPE"
+    iput p1, p0, LPCf;->q0:F
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    invoke-static {}, LV93;->a()LFRe;
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, LPCf;-><init>(Ljava/lang/String;II)V
-
     .line 17
     .line 18
+    move-result-object p1
+
     .line 19
-    sput-object v1, LPCf;->c:LPCf;
+    iput-object p1, p0, LPCf;->a:LFRe;
 
     .line 20
     .line 21
-    new-instance v3, LPCf;
+    new-instance p1, Landroid/view/animation/AccelerateInterpolator;
 
     .line 22
     .line 23
-    const-string v5, "PRE_TYPE_QUERY_SUGGESTION"
+    invoke-direct {p1}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
     .line 24
     .line 25
-    const/4 v6, 0x2
-
     .line 26
-    invoke-direct {v3, v5, v6, v6}, LPCf;-><init>(Ljava/lang/String;II)V
+    iput-object p1, p0, LPCf;->t:Landroid/view/animation/AccelerateInterpolator;
 
     .line 27
     .line 28
+    new-instance p1, Landroid/view/animation/DecelerateInterpolator;
+
     .line 29
-    sput-object v3, LPCf;->t:LPCf;
-
     .line 30
-    .line 31
-    new-instance v5, LPCf;
+    invoke-direct {p1}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
+    .line 31
     .line 32
     .line 33
-    const-string v7, "POST_TYPE_QUERY_SUGGESTION"
+    iput-object p1, p0, LPCf;->e0:Landroid/view/animation/DecelerateInterpolator;
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    new-instance p1, Landroid/graphics/Paint;
 
     .line 36
-    invoke-direct {v5, v7, v8, v8}, LPCf;-><init>(Ljava/lang/String;II)V
-
     .line 37
-    .line 38
-    .line 39
-    sput-object v5, LPCf;->X:LPCf;
+    const/4 v1, 0x1
 
+    .line 38
+    invoke-direct {p1, v1}, Landroid/graphics/Paint;-><init>(I)V
+
+    .line 39
     .line 40
     .line 41
-    new-instance v7, LPCf;
+    iput-object p1, p0, LPCf;->b:Landroid/graphics/Paint;
 
     .line 42
     .line 43
-    const-string v9, "POST_TYPE_QUERY_SPELL_CORRECTED_SUGGESTION"
+    new-instance v2, Landroid/graphics/PorterDuffXfermode;
 
     .line 44
     .line 45
-    const/4 v10, 0x4
+    sget-object v3, Landroid/graphics/PorterDuff$Mode;->CLEAR:Landroid/graphics/PorterDuff$Mode;
 
     .line 46
-    invoke-direct {v7, v9, v10, v10}, LPCf;-><init>(Ljava/lang/String;II)V
-
     .line 47
+    invoke-direct {v2, v3}, Landroid/graphics/PorterDuffXfermode;-><init>(Landroid/graphics/PorterDuff$Mode;)V
+
     .line 48
     .line 49
-    sput-object v7, LPCf;->Y:LPCf;
-
     .line 50
-    .line 51
-    new-instance v9, LPCf;
+    invoke-virtual {p1, v2}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
+    .line 51
     .line 52
     .line 53
-    const-string v11, "POST_TYPE_QUERY_SPELL_ESCAPE_HATCH_SUGGESTION"
+    sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     .line 54
     .line 55
-    const/4 v12, 0x5
+    invoke-virtual {p1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 56
-    invoke-direct {v9, v11, v12, v12}, LPCf;-><init>(Ljava/lang/String;II)V
-
     .line 57
     .line 58
+    sget-object v2, Landroid/graphics/Paint$Cap;->ROUND:Landroid/graphics/Paint$Cap;
+
     .line 59
-    sput-object v9, LPCf;->Z:LPCf;
-
     .line 60
-    .line 61
-    new-instance v11, LPCf;
+    invoke-virtual {p1, v2}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
 
+    .line 61
     .line 62
     .line 63
-    const-string v13, "QUERY_SUGGESTION"
+    new-instance p1, Landroid/graphics/Paint;
 
     .line 64
     .line 65
-    const/4 v14, 0x6
+    invoke-direct {p1, v1}, Landroid/graphics/Paint;-><init>(I)V
 
     .line 66
-    invoke-direct {v11, v13, v14, v14}, LPCf;-><init>(Ljava/lang/String;II)V
-
     .line 67
     .line 68
-    .line 69
-    sput-object v11, LPCf;->e0:LPCf;
+    iput-object p1, p0, LPCf;->c:Landroid/graphics/Paint;
 
+    .line 69
     .line 70
+    const/4 v2, -0x1
+
     .line 71
-    new-instance v13, LPCf;
+    invoke-virtual {p1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 72
     .line 73
-    const-string v15, "RELATED_SEARCH"
-
     .line 74
+    sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+
     .line 75
-    const/16 v16, 0x0
-
     .line 76
+    invoke-virtual {p1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
     .line 77
-    const/4 v2, 0x7
-
     .line 78
-    invoke-direct {v13, v15, v2, v2}, LPCf;-><init>(Ljava/lang/String;II)V
-
     .line 79
+    invoke-virtual {p0, v1, v0}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
+
     .line 80
     .line 81
-    sput-object v13, LPCf;->f0:LPCf;
-
     .line 82
+    new-instance p1, Lv6j;
+
     .line 83
-    new-instance v15, LPCf;
-
     .line 84
+    const/16 v0, 0x1d
+
     .line 85
-    const/16 v17, 0x7
-
     .line 86
-    .line 87
-    const-string v2, "SECTION_HEADER_REFRESH_BUTTON"
+    invoke-direct {p1, v0}, Lv6j;-><init>(I)V
 
+    .line 87
     .line 88
     .line 89
-    const/16 v18, 0x1
+    iput-object p1, p0, LPCf;->r0:Lv6j;
 
     .line 90
     .line 91
-    const/16 v4, 0x8
-
-    .line 92
-    .line 93
-    invoke-direct {v15, v2, v4, v4}, LPCf;-><init>(Ljava/lang/String;II)V
-
-    .line 94
-    .line 95
-    .line 96
-    sput-object v15, LPCf;->g0:LPCf;
-
-    .line 97
-    .line 98
-    new-instance v2, LPCf;
-
-    .line 99
-    .line 100
-    const/16 v19, 0x8
-
-    .line 101
-    .line 102
-    const-string v4, "SECTION_HEADER_MANUAL_RELOAD_BUTTON"
-
-    .line 103
-    .line 104
-    const/16 v20, 0x2
-
-    .line 105
-    .line 106
-    const/16 v6, 0x9
-
-    .line 107
-    .line 108
-    invoke-direct {v2, v4, v6, v6}, LPCf;-><init>(Ljava/lang/String;II)V
-
-    .line 109
-    .line 110
-    .line 111
-    sput-object v2, LPCf;->h0:LPCf;
-
-    .line 112
-    .line 113
-    new-instance v4, LPCf;
-
-    .line 114
-    .line 115
-    const/16 v21, 0x9
-
-    .line 116
-    .line 117
-    const-string v6, "SEARCH_BAR"
-
-    .line 118
-    .line 119
-    const/16 v22, 0x3
-
-    .line 120
-    .line 121
-    const/16 v8, 0xa
-
-    .line 122
-    .line 123
-    invoke-direct {v4, v6, v8, v8}, LPCf;-><init>(Ljava/lang/String;II)V
-
-    .line 124
-    .line 125
-    .line 126
-    sput-object v4, LPCf;->i0:LPCf;
-
-    .line 127
-    .line 128
-    new-instance v6, LPCf;
-
-    .line 129
-    .line 130
-    const/16 v23, 0xa
-
-    .line 131
-    .line 132
-    const-string v8, "SEARCH_BAR_RETURN"
-
-    .line 133
-    .line 134
-    const/16 v24, 0x4
-
-    .line 135
-    .line 136
-    const/16 v10, 0xb
-
-    .line 137
-    .line 138
-    invoke-direct {v6, v8, v10, v10}, LPCf;-><init>(Ljava/lang/String;II)V
-
-    .line 139
-    .line 140
-    .line 141
-    sput-object v6, LPCf;->j0:LPCf;
-
-    .line 142
-    .line 143
-    new-instance v8, LPCf;
-
-    .line 144
-    .line 145
-    const/16 v25, 0xb
-
-    .line 146
-    .line 147
-    const-string v10, "SNAP_TAB"
-
-    .line 148
-    .line 149
-    const/16 v26, 0x5
-
-    .line 150
-    .line 151
-    const/16 v12, 0xc
-
-    .line 152
-    .line 153
-    invoke-direct {v8, v10, v12, v12}, LPCf;-><init>(Ljava/lang/String;II)V
-
-    .line 154
-    .line 155
-    .line 156
-    sput-object v8, LPCf;->k0:LPCf;
-
-    .line 157
-    .line 158
-    new-instance v10, LPCf;
-
-    .line 159
-    .line 160
-    const/16 v27, 0xc
-
-    .line 161
-    .line 162
-    const-string v12, "VIEW_MORE"
-
-    .line 163
-    .line 164
-    const/16 v28, 0x6
-
-    .line 165
-    .line 166
-    const/16 v14, 0xd
-
-    .line 167
-    .line 168
-    invoke-direct {v10, v12, v14, v14}, LPCf;-><init>(Ljava/lang/String;II)V
-
-    .line 169
-    .line 170
-    .line 171
-    sput-object v10, LPCf;->l0:LPCf;
-
-    .line 172
-    .line 173
-    const/16 v12, 0xe
-
-    .line 174
-    .line 175
-    new-array v12, v12, [LPCf;
-
-    .line 176
-    .line 177
-    aput-object v0, v12, v16
-
-    .line 178
-    .line 179
-    aput-object v1, v12, v18
-
-    .line 180
-    .line 181
-    aput-object v3, v12, v20
-
-    .line 182
-    .line 183
-    aput-object v5, v12, v22
-
-    .line 184
-    .line 185
-    aput-object v7, v12, v24
-
-    .line 186
-    .line 187
-    aput-object v9, v12, v26
-
-    .line 188
-    .line 189
-    aput-object v11, v12, v28
-
-    .line 190
-    .line 191
-    aput-object v13, v12, v17
-
-    .line 192
-    .line 193
-    aput-object v15, v12, v19
-
-    .line 194
-    .line 195
-    aput-object v2, v12, v21
-
-    .line 196
-    .line 197
-    aput-object v4, v12, v23
-
-    .line 198
-    .line 199
-    aput-object v6, v12, v25
-
-    .line 200
-    .line 201
-    aput-object v8, v12, v27
-
-    .line 202
-    .line 203
-    aput-object v10, v12, v14
-
-    .line 204
-    .line 205
-    sput-object v12, LPCf;->m0:[LPCf;
-
-    .line 206
-    .line 207
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LPCf;->a:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LPCf;
-    .locals 1
-
-    .line 1
-    const-class v0, LPCf;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LPCf;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LPCf;
-    .locals 1
-
-    .line 1
-    sget-object v0, LPCf;->m0:[LPCf;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LPCf;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LPCf;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final onDraw(Landroid/graphics/Canvas;)V
+    .locals 10
 
     .line 1
-    iget v0, p0, LPCf;->a:I
+    iget-wide v0, p0, LPCf;->f0:J
 
     .line 2
     .line 3
-    return v0
+    const-wide/16 v2, -0x1
+
+    .line 4
+    .line 5
+    cmp-long v4, v0, v2
+
+    .line 6
+    .line 7
+    if-nez v4, :cond_0
+
+    .line 8
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    iget-object v0, p0, LPCf;->a:LFRe;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-wide v0
+
+    .line 19
+    iget-wide v2, p0, LPCf;->f0:J
+
+    .line 20
+    .line 21
+    sub-long/2addr v0, v2
+
+    .line 22
+    const-wide/16 v2, 0xe9
+
+    .line 23
+    .line 24
+    invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->min(JJ)J
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-wide v0
+
+    .line 28
+    long-to-int v1, v0
+
+    .line 29
+    const/16 v0, 0xe9
+
+    .line 30
+    .line 31
+    if-ge v1, v0, :cond_1
+
+    .line 32
+    .line 33
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
+
+    .line 34
+    .line 35
+    .line 36
+    :cond_1
+    const/16 v0, 0x85
+
+    .line 37
+    .line 38
+    if-ge v1, v0, :cond_2
+
+    .line 39
+    .line 40
+    iget-object v2, p0, LPCf;->e0:Landroid/view/animation/DecelerateInterpolator;
+
+    .line 41
+    .line 42
+    iget v3, p0, LPCf;->m0:F
+
+    .line 43
+    .line 44
+    int-to-float v1, v1
+
+    .line 45
+    int-to-float v0, v0
+
+    .line 46
+    div-float/2addr v1, v0
+
+    .line 47
+    invoke-virtual {v2, v1}, Landroid/view/animation/DecelerateInterpolator;->getInterpolation(F)F
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v0
+
+    .line 51
+    const/4 v1, 0x0
+
+    .line 52
+    invoke-static {v3, v1, v0, v1}, Lm8f;->d(FFFF)F
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    iput v0, p0, LPCf;->o0:F
+
+    .line 57
+    .line 58
+    goto :goto_0
+
+    .line 59
+    :cond_2
+    iget-object v2, p0, LPCf;->t:Landroid/view/animation/AccelerateInterpolator;
+
+    .line 60
+    .line 61
+    iget v3, p0, LPCf;->m0:F
+
+    .line 62
+    .line 63
+    iget v4, p0, LPCf;->n0:F
+
+    .line 64
+    .line 65
+    sub-int/2addr v1, v0
+
+    .line 66
+    int-to-float v0, v1
+
+    .line 67
+    const/16 v1, 0x64
+
+    .line 68
+    .line 69
+    int-to-float v1, v1
+
+    .line 70
+    div-float/2addr v0, v1
+
+    .line 71
+    invoke-virtual {v2, v0}, Landroid/view/animation/AccelerateInterpolator;->getInterpolation(F)F
+
+    .line 72
+    .line 73
+    .line 74
+    move-result v0
+
+    .line 75
+    invoke-static {v4, v3, v0, v3}, Lm8f;->d(FFFF)F
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v0
+
+    .line 79
+    iput v0, p0, LPCf;->o0:F
+
+    .line 80
+    .line 81
+    :goto_0
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
+
+    .line 82
+    .line 83
+    .line 84
+    move-result v0
+
+    .line 85
+    div-int/lit8 v0, v0, 0x2
+
+    .line 86
+    .line 87
+    int-to-float v0, v0
+
+    .line 88
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v1
+
+    .line 92
+    div-int/lit8 v1, v1, 0x2
+
+    .line 93
+    .line 94
+    int-to-float v1, v1
+
+    .line 95
+    iget v2, p0, LPCf;->o0:F
+
+    .line 96
+    .line 97
+    iget-object v3, p0, LPCf;->c:Landroid/graphics/Paint;
+
+    .line 98
+    .line 99
+    invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+
+    .line 100
+    .line 101
+    .line 102
+    iget v5, p0, LPCf;->g0:F
+
+    .line 103
+    .line 104
+    iget v6, p0, LPCf;->h0:F
+
+    .line 105
+    .line 106
+    iget v7, p0, LPCf;->k0:F
+
+    .line 107
+    .line 108
+    iget v8, p0, LPCf;->l0:F
+
+    .line 109
+    .line 110
+    iget-object v9, p0, LPCf;->b:Landroid/graphics/Paint;
+
+    .line 111
+    .line 112
+    move-object v4, p1
+
+    .line 113
+    invoke-virtual/range {v4 .. v9}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
+
+    .line 114
+    .line 115
+    .line 116
+    iget v5, p0, LPCf;->i0:F
+
+    .line 117
+    .line 118
+    iget v6, p0, LPCf;->j0:F
+
+    .line 119
+    .line 120
+    iget v7, p0, LPCf;->g0:F
+
+    .line 121
+    .line 122
+    iget v8, p0, LPCf;->h0:F
+
+    .line 123
+    .line 124
+    invoke-virtual/range {v4 .. v9}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
+
+    .line 125
+    .line 126
+    .line 127
+    return-void
+.end method
+
+.method public final onSizeChanged(IIII)V
+    .locals 6
+
+    .line 1
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
+
+    .line 2
+    .line 3
+    .line 4
+    int-to-float p1, p1
+
+    .line 5
+    const/high16 p2, 0x41a00000    # 20.0f
+
+    .line 6
+    .line 7
+    div-float/2addr p1, p2
+
+    .line 8
+    iget-object p2, p0, LPCf;->b:Landroid/graphics/Paint;
+
+    .line 9
+    .line 10
+    iget-object p3, p0, LPCf;->r0:Lv6j;
+
+    .line 11
+    .line 12
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    const p3, 0x40266666    # 2.6f
+
+    .line 16
+    .line 17
+    .line 18
+    mul-float p3, p3, p1
+
+    .line 19
+    .line 20
+    invoke-virtual {p2, p3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 21
+    .line 22
+    .line 23
+    const p2, 0x3f333333    # 0.7f
+
+    .line 24
+    .line 25
+    .line 26
+    mul-float p2, p2, p1
+
+    .line 27
+    .line 28
+    iput p2, p0, LPCf;->q0:F
+
+    .line 29
+    .line 30
+    iget-boolean p3, p0, LPCf;->p0:Z
+
+    .line 31
+    .line 32
+    iget-object p4, p0, LPCf;->c:Landroid/graphics/Paint;
+
+    .line 33
+    .line 34
+    if-eqz p3, :cond_0
+
+    .line 35
+    .line 36
+    const/high16 p3, -0x1000000
+
+    .line 37
+    .line 38
+    const/4 v0, 0x0
+
+    .line 39
+    invoke-virtual {p4, p2, v0, v0, p3}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
+
+    .line 40
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_0
+    invoke-virtual {p4}, Landroid/graphics/Paint;->clearShadowLayer()V
+
+    .line 44
+    .line 45
+    .line 46
+    :goto_0
+    const/high16 p2, 0x41000000    # 8.0f
+
+    .line 47
+    .line 48
+    mul-float p2, p2, p1
+
+    .line 49
+    .line 50
+    iput p2, p0, LPCf;->g0:F
+
+    .line 51
+    .line 52
+    const/high16 p3, 0x41600000    # 14.0f
+
+    .line 53
+    .line 54
+    mul-float p3, p3, p1
+
+    .line 55
+    .line 56
+    iput p3, p0, LPCf;->h0:F
+
+    .line 57
+    .line 58
+    float-to-double p2, p2
+
+    .line 59
+    const/4 p4, 0x5
+
+    .line 60
+    int-to-float p4, p4
+
+    .line 61
+    mul-float p4, p4, p1
+
+    .line 62
+    .line 63
+    float-to-double v0, p4
+
+    .line 64
+    const-wide v2, 0x3fe921fb54442d18L    # 0.7853981633974483
+
+    .line 65
+    .line 66
+    .line 67
+    .line 68
+    .line 69
+    invoke-static {v2, v3}, Ljava/lang/Math;->cos(D)D
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-wide v4
+
+    .line 73
+    mul-double v4, v4, v0
+
+    .line 74
+    .line 75
+    sub-double/2addr p2, v4
+
+    .line 76
+    double-to-float p2, p2
+
+    .line 77
+    iput p2, p0, LPCf;->i0:F
+
+    .line 78
+    .line 79
+    iget p2, p0, LPCf;->h0:F
+
+    .line 80
+    .line 81
+    float-to-double p2, p2
+
+    .line 82
+    invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-wide v4
+
+    .line 86
+    mul-double v4, v4, v0
+
+    .line 87
+    .line 88
+    sub-double/2addr p2, v4
+
+    .line 89
+    double-to-float p2, p2
+
+    .line 90
+    iput p2, p0, LPCf;->j0:F
+
+    .line 91
+    .line 92
+    iget p2, p0, LPCf;->g0:F
+
+    .line 93
+    .line 94
+    float-to-double p2, p2
+
+    .line 95
+    const/16 p4, 0xa
+
+    .line 96
+    .line 97
+    int-to-float p4, p4
+
+    .line 98
+    mul-float p4, p4, p1
+
+    .line 99
+    .line 100
+    float-to-double v0, p4
+
+    .line 101
+    invoke-static {v2, v3}, Ljava/lang/Math;->cos(D)D
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-wide v4
+
+    .line 105
+    mul-double v4, v4, v0
+
+    .line 106
+    .line 107
+    add-double/2addr v4, p2
+
+    .line 108
+    double-to-float p2, v4
+
+    .line 109
+    iput p2, p0, LPCf;->k0:F
+
+    .line 110
+    .line 111
+    iget p2, p0, LPCf;->h0:F
+
+    .line 112
+    .line 113
+    float-to-double p2, p2
+
+    .line 114
+    invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
+
+    .line 115
+    .line 116
+    .line 117
+    move-result-wide v2
+
+    .line 118
+    mul-double v2, v2, v0
+
+    .line 119
+    .line 120
+    sub-double/2addr p2, v2
+
+    .line 121
+    double-to-float p2, p2
+
+    .line 122
+    iput p2, p0, LPCf;->l0:F
+
+    .line 123
+    .line 124
+    iget p2, p0, LPCf;->o0:F
+
+    .line 125
+    .line 126
+    mul-float p2, p2, p1
+
+    .line 127
+    .line 128
+    iput p2, p0, LPCf;->o0:F
+
+    .line 129
+    .line 130
+    const p2, 0x41233333    # 10.2f
+
+    .line 131
+    .line 132
+    .line 133
+    mul-float p2, p2, p1
+
+    .line 134
+    .line 135
+    iput p2, p0, LPCf;->m0:F
+
+    .line 136
+    .line 137
+    const p2, 0x41166666    # 9.4f
+
+    .line 138
+    .line 139
+    .line 140
+    mul-float p2, p2, p1
+
+    .line 141
+    .line 142
+    iput p2, p0, LPCf;->n0:F
+
+    .line 143
+    .line 144
+    return-void
 .end method

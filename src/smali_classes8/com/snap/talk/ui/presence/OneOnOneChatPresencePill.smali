@@ -1,12 +1,12 @@
 .class public final Lcom/snap/talk/ui/presence/OneOnOneChatPresencePill;
-.super LOD0;
+.super LIG0;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LOD0;"
+        "LIG0;"
     }
 .end annotation
 
@@ -16,12 +16,12 @@
     .locals 0
 
     .line 2
-    invoke-direct {p0, p1, p2}, LOD0;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, LIG0;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -39,7 +39,7 @@
 
 
 # virtual methods
-.method public final e()LHMd;
+.method public final e()La4e;
     .locals 2
 
     .line 1
@@ -51,11 +51,11 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, LxC8;
+    new-instance v1, LtJ8;
 
     .line 6
     .line 7
-    invoke-direct {v1, p0, v0}, LxC8;-><init>(Lcom/snap/talk/ui/presence/OneOnOneChatPresencePill;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v0}, LtJ8;-><init>(Lcom/snap/talk/ui/presence/OneOnOneChatPresencePill;Landroid/content/Context;)V
 
     .line 8
     .line 9

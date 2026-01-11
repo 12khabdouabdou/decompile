@@ -4,15 +4,11 @@
 
 
 # instance fields
-.field public final a:LqCc;
-
-.field public final b:Le03;
-
-.field public final c:LXfi;
+.field public final a:LQ26;
 
 
 # direct methods
-.method public constructor <init>(LqCc;Le03;)V
+.method public constructor <init>(LQ26;)V
     .locals 0
 
     .line 1
@@ -21,324 +17,34 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LrCc;->a:LqCc;
+    iput-object p1, p0, LrCc;->a:LQ26;
 
     .line 5
     .line 6
-    iput-object p2, p0, LrCc;->b:Le03;
-
-    .line 7
-    .line 8
-    new-instance p1, LYNa;
-
-    .line 9
-    .line 10
-    const/16 p2, 0x18
-
-    .line 11
-    .line 12
-    invoke-direct {p1, p2, p0}, LYNa;-><init>(ILjava/lang/Object;)V
-
-    .line 13
-    .line 14
-    .line 15
-    new-instance p2, LXfi;
-
-    .line 16
-    .line 17
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 18
-    .line 19
-    .line 20
-    iput-object p2, p0, LrCc;->c:LXfi;
-
-    .line 21
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 6
+.method public final a()LOF3;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LrCc;->a:LqCc;
+    iget-object v0, p0, LrCc;->a:LQ26;
 
     .line 2
     .line 3
-    iget-object v0, v0, LqCc;->b:Ljava/util/Set;
+    invoke-virtual {v0}, LQ26;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 6
-    .line 7
-    .line 8
     move-result-object v0
 
+    .line 7
+    check-cast v0, LOF3;
+
+    .line 8
     .line 9
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v1
-
-    .line 13
-    if-eqz v1, :cond_5
-
-    .line 14
-    .line 15
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v1
-
-    .line 19
-    check-cast v1, LsZb;
-
-    .line 20
-    .line 21
-    iget-object v2, p0, LrCc;->c:LXfi;
-
-    .line 22
-    .line 23
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v2
-
-    .line 27
-    check-cast v2, LHi5;
-
-    .line 28
-    .line 29
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 30
-    .line 31
-    .line 32
-    iget-object v3, v1, LsZb;->a:LAI3;
-
-    .line 33
-    .line 34
-    iget-object v3, v3, LAI3;->b:LDI3;
-
-    .line 35
-    .line 36
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
-
-    .line 37
-    .line 38
-    .line 39
-    move-result v3
-
-    .line 40
-    iget-object v4, v2, LHi5;->a:Le03;
-
-    .line 41
-    .line 42
-    iget-object v2, v2, LHi5;->b:LTeg;
-
-    .line 43
-    .line 44
-    if-eqz v3, :cond_4
-
-    .line 45
-    .line 46
-    const/4 v5, 0x1
-
-    .line 47
-    if-eq v3, v5, :cond_3
-
-    .line 48
-    .line 49
-    const/4 v5, 0x2
-
-    .line 50
-    if-eq v3, v5, :cond_2
-
-    .line 51
-    .line 52
-    const/4 v5, 0x3
-
-    .line 53
-    if-eq v3, v5, :cond_1
-
-    .line 54
-    .line 55
-    const/4 v5, 0x5
-
-    .line 56
-    if-ne v3, v5, :cond_0
-
-    .line 57
-    .line 58
-    sget-object v3, LJ03;->a:LQd7;
-
-    .line 59
-    .line 60
-    invoke-interface {v4, v1, v3}, Le03;->J(LBI3;LQd7;)Ljava/lang/String;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object v3
-
-    .line 64
-    invoke-virtual {v2, v1, v3}, LTeg;->c(LBI3;Ljava/lang/Object;)V
-
-    .line 65
-    .line 66
-    .line 67
-    goto :goto_0
-
-    .line 68
-    :cond_0
-    new-instance v0, LGX0;
-
-    .line 69
-    .line 70
-    iget-object v1, v1, LsZb;->a:LAI3;
-
-    .line 71
-    .line 72
-    iget-object v1, v1, LAI3;->b:LDI3;
-
-    .line 73
-    .line 74
-    invoke-direct {v0, v1}, LGX0;-><init>(LDI3;)V
-
-    .line 75
-    .line 76
-    .line 77
-    throw v0
-
-    .line 78
-    :cond_1
-    sget-object v3, LJ03;->a:LQd7;
-
-    .line 79
-    .line 80
-    invoke-interface {v4, v1, v3}, Le03;->b(LBI3;LQd7;)F
-
-    .line 81
-    .line 82
-    .line 83
-    move-result v3
-
-    .line 84
-    invoke-static {v3}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object v3
-
-    .line 88
-    invoke-virtual {v2, v1, v3}, LTeg;->c(LBI3;Ljava/lang/Object;)V
-
-    .line 89
-    .line 90
-    .line 91
-    goto :goto_0
-
-    .line 92
-    :cond_2
-    sget-object v3, LJ03;->a:LQd7;
-
-    .line 93
-    .line 94
-    invoke-interface {v4, v1, v3}, Le03;->g(LBI3;LQd7;)J
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-wide v3
-
-    .line 98
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 99
-    .line 100
-    .line 101
-    move-result-object v3
-
-    .line 102
-    invoke-virtual {v2, v1, v3}, LTeg;->c(LBI3;Ljava/lang/Object;)V
-
-    .line 103
-    .line 104
-    .line 105
-    goto :goto_0
-
-    .line 106
-    :cond_3
-    sget-object v3, LJ03;->a:LQd7;
-
-    .line 107
-    .line 108
-    invoke-interface {v4, v1, v3}, Le03;->p(LBI3;LQd7;)I
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v3
-
-    .line 112
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 113
-    .line 114
-    .line 115
-    move-result-object v3
-
-    .line 116
-    invoke-virtual {v2, v1, v3}, LTeg;->c(LBI3;Ljava/lang/Object;)V
-
-    .line 117
-    .line 118
-    .line 119
-    goto :goto_0
-
-    .line 120
-    :cond_4
-    sget-object v3, LJ03;->a:LQd7;
-
-    .line 121
-    .line 122
-    invoke-interface {v4, v1, v3}, Le03;->k(LBI3;LQd7;)Z
-
-    .line 123
-    .line 124
-    .line 125
-    move-result v3
-
-    .line 126
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 127
-    .line 128
-    .line 129
-    move-result-object v3
-
-    .line 130
-    invoke-virtual {v2, v1, v3}, LTeg;->c(LBI3;Ljava/lang/Object;)V
-
-    .line 131
-    .line 132
-    .line 133
-    goto :goto_0
-
-    .line 134
-    :cond_5
-    return-void
+    return-object v0
 .end method

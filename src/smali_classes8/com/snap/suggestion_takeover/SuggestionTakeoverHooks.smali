@@ -1,15 +1,15 @@
 .class public final Lcom/snap/suggestion_takeover/SuggestionTakeoverHooks;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'onPageSections\':f?(a<s>),\'onPageRendered\':f?(),\'onImpressionSuggestedFriendCell\':f?(r:\'[0]\'),\'onImpressionIncomingFriendCell\':f?(r:\'[1]\'),\'onBeforeAddFriend\':f?(r:\'[2]\'),\'onBeforeHideSuggestedFriend\':f?(r:\'[3]\'),\'onPresentUserSnap\':f?(r:\'[4]\'),\'onPresentUserChat\':f?(r:\'[4]\'),\'onSelectUser\':f?(r:\'[4]\', d@, f(b@)),\'onClickBottomCTAButton\':f?(),\'onDataEmitted\':f?(s)"
     typeReferences = {
-        LnLj;,
-        LgLj;,
+        LRak;,
+        LKak;,
         Lcom/snap/composer/people/AddFriendRequest;,
         Lcom/snap/composer/people/HideSuggestedFriendRequest;,
         Lcom/snap/composer/people/User;
@@ -224,7 +224,7 @@
     return-void
 .end method
 
-.method public final b(Lhkh;)V
+.method public final b(LNIh;)V
     .locals 0
 
     .line 1
@@ -235,7 +235,7 @@
     return-void
 .end method
 
-.method public final c(Lgai;)V
+.method public final c(LMyi;)V
     .locals 0
 
     .line 1
@@ -257,7 +257,7 @@
     return-void
 .end method
 
-.method public final e(Lhai;)V
+.method public final e(LNyi;)V
     .locals 0
 
     .line 1
@@ -301,7 +301,7 @@
     return-void
 .end method
 
-.method public final i(LiT0;)V
+.method public final i(LZz;)V
     .locals 0
 
     .line 1

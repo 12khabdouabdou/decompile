@@ -4,5 +4,14 @@
 
 
 # virtual methods
-.method public abstract a()Lio/reactivex/rxjava3/core/Observable;
+.method public abstract c(I)Z
+.end method
+
+.method public abstract h(I)Z
+.end method
+
+.method public abstract j(I)I
+.end method
+
+.method public abstract k(Landroidx/recyclerview/widget/RecyclerView;)V
 .end method

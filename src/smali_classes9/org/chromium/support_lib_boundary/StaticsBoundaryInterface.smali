@@ -25,6 +25,12 @@
 .method public abstract isMultiProcessEnabled()Z
 .end method
 
+.method public abstract setDefaultTrafficStatsTag(I)V
+.end method
+
+.method public abstract setDefaultTrafficStatsUid(I)V
+.end method
+
 .method public abstract setSafeBrowsingAllowlist(Ljava/util/Set;Landroid/webkit/ValueCallback;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {

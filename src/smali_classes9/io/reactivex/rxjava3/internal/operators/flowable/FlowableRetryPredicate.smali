@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 7
 
     .line 1
@@ -66,7 +66,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-interface {p1, v5}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v5}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 8
     .line 9
@@ -90,7 +90,7 @@
     move-object v1, p1
 
     .line 19
-    invoke-direct/range {v0 .. v6}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRetryPredicate$RetrySubscriber;-><init>(LV6i;JLio/reactivex/rxjava3/functions/Predicate;Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;LZne;)V
+    invoke-direct/range {v0 .. v6}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRetryPredicate$RetrySubscriber;-><init>(Lmvi;JLio/reactivex/rxjava3/functions/Predicate;Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;LSFe;)V
 
     .line 20
     .line 21

@@ -437,7 +437,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, LA39;->a:[I
+    sget-object v0, Lgb9;->a:[I
 
     .line 2
     .line 3

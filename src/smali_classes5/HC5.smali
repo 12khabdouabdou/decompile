@@ -1,72 +1,94 @@
-.class public final synthetic LHC5;
-.super Lj28;
+.class public final LHC5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lse8;
 
 
-# static fields
-.field public static final f0:LHC5;
+# instance fields
+.field public final a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
+
+.field public final b:LPS5;
+
+.field public final c:Lio/reactivex/rxjava3/core/Single;
+
+.field public final d:LQN1;
+
+.field public final e:LQO5;
+
+.field public final f:Ljava/lang/Object;
+
+.field public final g:LHP;
+
+.field public final h:LIqa;
+
+.field public final i:LQ93;
+
+.field public final j:LDOf;
+
+.field public final k:LI9a;
+
+.field public final l:LXbk;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;LPS5;Lio/reactivex/rxjava3/core/Single;LQN1;LQO5;Lkotlin/jvm/functions/Function0;LHP;LIqa;LQ93;LDOf;LI9a;LXbk;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LHC5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;)V"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, LHC5;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
 
+    .line 5
     .line 6
-    const/4 v1, 0x1
+    iput-object p2, p0, LHC5;->b:LPS5;
 
     .line 7
-    const-class v3, Lmp5;
-
     .line 8
+    iput-object p3, p0, LHC5;->c:Lio/reactivex/rxjava3/core/Single;
+
     .line 9
-    const-string v4, "<init>"
-
     .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    iput-object p4, p0, LHC5;->d:LQN1;
 
+    .line 11
     .line 12
+    iput-object p5, p0, LHC5;->e:LQO5;
+
     .line 13
     .line 14
-    sput-object v0, LHC5;->f0:LHC5;
+    iput-object p6, p0, LHC5;->f:Ljava/lang/Object;
 
     .line 15
     .line 16
+    iput-object p7, p0, LHC5;->g:LHP;
+
+    .line 17
+    .line 18
+    iput-object p8, p0, LHC5;->h:LIqa;
+
+    .line 19
+    .line 20
+    iput-object p9, p0, LHC5;->i:LQ93;
+
+    .line 21
+    .line 22
+    iput-object p10, p0, LHC5;->j:LDOf;
+
+    .line 23
+    .line 24
+    iput-object p11, p0, LHC5;->k:LI9a;
+
+    .line 25
+    .line 26
+    iput-object p12, p0, LHC5;->l:LXbk;
+
+    .line 27
+    .line 28
     return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    check-cast p1, LAC5;
-
-    .line 2
-    .line 3
-    new-instance v0, Lmp5;
-
-    .line 4
-    .line 5
-    invoke-direct {v0, p1}, Lmp5;-><init>(LAC5;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-object v0
 .end method

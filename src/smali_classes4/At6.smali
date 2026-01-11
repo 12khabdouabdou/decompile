@@ -1,127 +1,177 @@
-.class public final LAt6;
-.super Lcom/snap/composer/utils/b;
+.class public final enum LAt6;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'dependencies\':r:\'[0]\',\'config\':r?:\'[1]\',\'nativeFunctions\':r?:\'[2]\',\'grapheneInfo\':r?:\'[3]\',\'eventLoggingMetadata\':r?:\'[4]\'"
-    typeReferences = {
-        Lcom/snap/dpa/DpaComposerEntryPointDependencies;,
-        Lcom/snap/dpa_api/DpaComposerEntryPointConfig;,
-        Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;,
-        Lcom/snap/dpa_api/DpaComposerGrapheneInfo;,
-        Lcom/snap/ad_common_api/EventLoggingMetadata;
-    }
-.end annotation
+# static fields
+.field public static final synthetic X:[LAt6;
 
+.field public static final enum a:LAt6;
 
-# instance fields
-.field private _config:Lcom/snap/dpa_api/DpaComposerEntryPointConfig;
+.field public static final enum b:LAt6;
 
-.field private _dependencies:Lcom/snap/dpa/DpaComposerEntryPointDependencies;
+.field public static final enum c:LAt6;
 
-.field private _eventLoggingMetadata:Lcom/snap/ad_common_api/EventLoggingMetadata;
-
-.field private _grapheneInfo:Lcom/snap/dpa_api/DpaComposerGrapheneInfo;
-
-.field private _nativeFunctions:Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;
+.field public static final enum t:LAt6;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/dpa/DpaComposerEntryPointDependencies;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x3
 
     .line 2
-    iput-object p1, p0, LAt6;->_dependencies:Lcom/snap/dpa/DpaComposerEntryPointDependencies;
-
-    const/4 p1, 0x0
+    const/4 v1, 0x2
 
     .line 3
-    iput-object p1, p0, LAt6;->_config:Lcom/snap/dpa_api/DpaComposerEntryPointConfig;
+    const/4 v2, 0x1
 
     .line 4
-    iput-object p1, p0, LAt6;->_nativeFunctions:Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;
+    const/4 v3, 0x0
 
     .line 5
-    iput-object p1, p0, LAt6;->_grapheneInfo:Lcom/snap/dpa_api/DpaComposerGrapheneInfo;
+    new-instance v4, LAt6;
 
     .line 6
-    iput-object p1, p0, LAt6;->_eventLoggingMetadata:Lcom/snap/ad_common_api/EventLoggingMetadata;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/snap/dpa/DpaComposerEntryPointDependencies;Lcom/snap/dpa_api/DpaComposerEntryPointConfig;Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;Lcom/snap/dpa_api/DpaComposerGrapheneInfo;Lcom/snap/ad_common_api/EventLoggingMetadata;)V
-    .locals 0
-
     .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v5, "FIT_CENTER"
 
     .line 8
-    iput-object p1, p0, LAt6;->_dependencies:Lcom/snap/dpa/DpaComposerEntryPointDependencies;
-
     .line 9
-    iput-object p2, p0, LAt6;->_config:Lcom/snap/dpa_api/DpaComposerEntryPointConfig;
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 10
-    iput-object p3, p0, LAt6;->_nativeFunctions:Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;
-
     .line 11
-    iput-object p4, p0, LAt6;->_grapheneInfo:Lcom/snap/dpa_api/DpaComposerGrapheneInfo;
-
     .line 12
-    iput-object p5, p0, LAt6;->_eventLoggingMetadata:Lcom/snap/ad_common_api/EventLoggingMetadata;
+    sput-object v4, LAt6;->a:LAt6;
 
+    .line 13
+    .line 14
+    new-instance v5, LAt6;
+
+    .line 15
+    .line 16
+    const-string v6, "FILL_WIDTH"
+
+    .line 17
+    .line 18
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 19
+    .line 20
+    .line 21
+    sput-object v5, LAt6;->b:LAt6;
+
+    .line 22
+    .line 23
+    new-instance v6, LAt6;
+
+    .line 24
+    .line 25
+    const-string v7, "CENTER_CROP"
+
+    .line 26
+    .line 27
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 28
+    .line 29
+    .line 30
+    sput-object v6, LAt6;->c:LAt6;
+
+    .line 31
+    .line 32
+    new-instance v7, LAt6;
+
+    .line 33
+    .line 34
+    const-string v8, "FIT_XY"
+
+    .line 35
+    .line 36
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    sput-object v7, LAt6;->t:LAt6;
+
+    .line 40
+    .line 41
+    const/4 v8, 0x4
+
+    .line 42
+    new-array v8, v8, [LAt6;
+
+    .line 43
+    .line 44
+    aput-object v4, v8, v3
+
+    .line 45
+    .line 46
+    aput-object v5, v8, v2
+
+    .line 47
+    .line 48
+    aput-object v6, v8, v1
+
+    .line 49
+    .line 50
+    aput-object v7, v8, v0
+
+    .line 51
+    .line 52
+    sput-object v8, LAt6;->X:[LAt6;
+
+    .line 53
+    .line 54
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Lcom/snap/dpa_api/DpaComposerEntryPointConfig;)V
-    .locals 0
+.method public static valueOf(Ljava/lang/String;)LAt6;
+    .locals 1
 
     .line 1
-    iput-object p1, p0, LAt6;->_config:Lcom/snap/dpa_api/DpaComposerEntryPointConfig;
+    const-class v0, LAt6;
 
     .line 2
     .line 3
-    return-void
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LAt6;
+
+    .line 8
+    .line 9
+    return-object p0
 .end method
 
-.method public final b(Lcom/snap/ad_common_api/EventLoggingMetadata;)V
-    .locals 0
+.method public static values()[LAt6;
+    .locals 1
 
     .line 1
-    iput-object p1, p0, LAt6;->_eventLoggingMetadata:Lcom/snap/ad_common_api/EventLoggingMetadata;
+    sget-object v0, LAt6;->X:[LAt6;
 
     .line 2
     .line 3
-    return-void
-.end method
+    invoke-virtual {v0}, [LAt6;->clone()Ljava/lang/Object;
 
-.method public final c(Lcom/snap/dpa_api/DpaComposerGrapheneInfo;)V
-    .locals 0
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 1
-    iput-object p1, p0, LAt6;->_grapheneInfo:Lcom/snap/dpa_api/DpaComposerGrapheneInfo;
+    .line 7
+    check-cast v0, [LAt6;
 
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final d(Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LAt6;->_nativeFunctions:Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;
-
-    .line 2
-    .line 3
-    return-void
+    .line 8
+    .line 9
+    return-object v0
 .end method

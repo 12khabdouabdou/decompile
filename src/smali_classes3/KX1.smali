@@ -3,47 +3,26 @@
 .source "SourceFile"
 
 # interfaces
-.implements LQG7;
-
-
-# static fields
-.field public static final c:J
+.implements LAqb;
 
 
 # instance fields
-.field public final a:LXfi;
+.field public final a:Lkuk;
 
-.field public b:J
+.field public b:Z
+
+.field public c:I
+
+.field public final d:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+.field public final e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+.field public final f:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+.field public final g:Ljava/util/concurrent/CopyOnWriteArrayList;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
-
-    .line 1
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 2
-    .line 3
-    const-wide/16 v1, 0x21
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-wide v0
-
-    .line 9
-    sput-wide v0, LKX1;->c:J
-
-    .line 10
-    .line 11
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 2
 
@@ -53,137 +32,137 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LJX1;->b:LJX1;
+    new-instance v0, Lkuk;
 
     .line 5
     .line 6
-    new-instance v1, LXfi;
+    const/4 v1, 0x2
 
     .line 7
-    .line 8
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, v1}, Lkuk;-><init>(I)V
 
+    .line 8
     .line 9
     .line 10
-    .line 11
-    iput-object v1, p0, LKX1;->a:LXfi;
+    new-instance v1, Ljava/lang/ref/WeakReference;
 
+    .line 11
     .line 12
+    invoke-direct {v1, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
     .line 13
+    .line 14
+    .line 15
+    iput-object v1, v0, Lkuk;->b:Ljava/lang/ref/WeakReference;
+
+    .line 16
+    .line 17
+    iput-object v0, p0, LKX1;->a:Lkuk;
+
+    .line 18
+    .line 19
+    const/4 v0, 0x1
+
+    .line 20
+    iput-boolean v0, p0, LKX1;->b:Z
+
+    .line 21
+    .line 22
+    new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 23
+    .line 24
+    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object v0, p0, LKX1;->d:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 28
+    .line 29
+    new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 30
+    .line 31
+    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    .line 32
+    .line 33
+    .line 34
+    iput-object v0, p0, LKX1;->e:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 35
+    .line 36
+    new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 37
+    .line 38
+    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    .line 39
+    .line 40
+    .line 41
+    iput-object v0, p0, LKX1;->f:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 42
+    .line 43
+    new-instance v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 44
+    .line 45
+    invoke-direct {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    .line 46
+    .line 47
+    .line 48
+    iput-object v0, p0, LKX1;->g:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 49
+    .line 50
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 1
+.method public final a()V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
-.end method
-
-.method public final c()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final d()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final e()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
-.end method
-
-.method public final f(JJLjava/lang/String;J)V
-    .locals 0
-
-    .line 1
-    iget-wide p1, p0, LKX1;->b:J
+    iget-object v0, p0, LKX1;->a:Lkuk;
 
     .line 2
     .line 3
-    const-wide/16 p5, 0x0
+    const/4 v1, 0x3
 
     .line 4
-    .line 5
-    cmp-long p7, p1, p5
+    invoke-virtual {v0, v1}, Lkuk;->a(I)V
 
+    .line 5
     .line 6
     .line 7
-    if-eqz p7, :cond_0
-
-    .line 8
-    .line 9
-    sub-long p1, p3, p1
-
-    .line 10
-    .line 11
-    invoke-virtual {p0}, LKX1;->g()LXE;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p5
-
-    .line 15
-    sget-wide p6, LKX1;->c:J
-
-    .line 16
-    .line 17
-    div-long p6, p1, p6
-
-    .line 18
-    .line 19
-    long-to-int p7, p6
-
-    .line 20
-    invoke-virtual {p5, p7, p1, p2}, LXE;->a(IJ)V
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_0
-    iput-wide p3, p0, LKX1;->b:J
-
-    .line 24
-    .line 25
     return-void
 .end method
 
-.method public final g()LXE;
+.method public final b(I)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, LKX1;->a:LXfi;
+    iput p1, p0, LKX1;->c:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object p1, p0, LKX1;->a:Lkuk;
 
     .line 4
     .line 5
+    const/4 v0, 0x0
+
     .line 6
-    move-result-object v0
+    invoke-virtual {p1, v0}, Lkuk;->a(I)V
 
     .line 7
-    check-cast v0, LXE;
-
     .line 8
     .line 9
-    return-object v0
+    return-void
 .end method

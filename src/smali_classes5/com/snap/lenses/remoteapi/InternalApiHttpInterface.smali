@@ -4,38 +4,35 @@
 
 
 # virtual methods
-.method public abstract performProtoRequest(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LiZe;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract performProtoRequest(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lahf;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p2    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "Content-Type"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "Accept"
         .end annotation
     .end param
     .param p5    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .param p6    # LiZe;
-        .annotation runtime Ljv1;
+    .param p6    # Lahf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "X-SC-Module: lenses"
         }
@@ -52,12 +49,15 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LiZe;",
+            "Lahf;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LU3f<",
-            "LY3f;",
+            "LRlf<",
+            "LUlf;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

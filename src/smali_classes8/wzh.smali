@@ -1,23 +1,38 @@
-.class public interface abstract Lwzh;
+.class public abstract Lwzh;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a()LWzh;
-.end method
+# static fields
+.field public static final synthetic a:I
 
-.method public abstract b()LXog;
-.end method
 
-.method public abstract c()V
-.end method
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
 
-.method public abstract d()Landroidx/recyclerview/widget/RecyclerView;
-.end method
+    .line 1
+    sget-object v0, Lnzh;->Z:Lnzh;
 
-.method public abstract f()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-.end method
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.method public abstract g()V
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "SpectrumProtoSerializer"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 9
+    .line 10
+    .line 11
+    sget-object v0, LJp0;->a:LJp0;
+
+    .line 12
+    .line 13
+    return-void
 .end method

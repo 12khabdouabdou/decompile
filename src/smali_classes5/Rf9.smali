@@ -1,6 +1,9 @@
 .class public final LRf9;
-.super LVf9;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LQf9;
 
 
 # static fields
@@ -30,13 +33,82 @@
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final B1()LLk9;
+    .locals 2
 
     .line 1
-    check-cast p1, LdGe;
+    new-instance v0, LwQc;
 
     .line 2
     .line 3
-    return-object p0
+    const-string v1, "An operation is not implemented: Not yet implemented"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
+.end method
+
+.method public final E8()LHOj;
+    .locals 2
+
+    .line 1
+    new-instance v0, LwQc;
+
+    .line 2
+    .line 3
+    const-string v1, "An operation is not implemented: Not yet implemented"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
+.end method
+
+.method public final Q3()LMej;
+    .locals 2
+
+    .line 1
+    new-instance v0, LwQc;
+
+    .line 2
+    .line 3
+    const-string v1, "An operation is not implemented: Not yet implemented"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
+.end method
+
+.method public final r5()LpZf;
+    .locals 2
+
+    .line 1
+    new-instance v0, LwQc;
+
+    .line 2
+    .line 3
+    const-string v1, "An operation is not implemented: Not yet implemented"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/Error;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw v0
 .end method

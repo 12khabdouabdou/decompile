@@ -1,5 +1,5 @@
 .class public final Lcom/snap/core/net/appstate/monitor/ASFDurableJobScheduler;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
@@ -7,12 +7,12 @@
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "ASF_DURABLE_JOB_SCHEDULER"
     isSingleton = true
-    metadataType = LT0;
+    metadataType = Lm1;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -22,26 +22,26 @@
     .locals 2
 
     .line 2
-    invoke-static {}, LQ0;->a()LtB6;
+    invoke-static {}, Lj1;->a()LRE6;
 
     move-result-object v0
 
-    new-instance v1, LT0;
+    new-instance v1, Lm1;
 
     .line 3
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    invoke-direct {p0, v0, v1}, Lcom/snap/core/net/appstate/monitor/ASFDurableJobScheduler;-><init>(LtB6;LT0;)V
+    invoke-direct {p0, v0, v1}, Lcom/snap/core/net/appstate/monitor/ASFDurableJobScheduler;-><init>(LRE6;Lm1;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;LT0;)V
+.method public constructor <init>(LRE6;Lm1;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

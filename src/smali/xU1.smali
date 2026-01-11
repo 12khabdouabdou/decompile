@@ -1,30 +1,8 @@
-.class public final LxU1;
-.super LPWi;
+.class public interface abstract LxU1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "LPWi<",
-        "Ljava/util/Map<",
-        "Ljava/lang/String;",
-        "+",
-        "Ljava/lang/Integer;",
-        ">;>;"
-    }
-.end annotation
-
-
-# direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, LPWi;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
+# virtual methods
+.method public abstract h(Lhk1;)V
 .end method

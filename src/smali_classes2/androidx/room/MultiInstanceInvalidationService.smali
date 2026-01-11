@@ -8,9 +8,9 @@
 
 .field public final b:Ljava/util/HashMap;
 
-.field public final c:Ll3c;
+.field public final c:LZhc;
 
-.field public final t:Lm3c;
+.field public final t:Laic;
 
 
 # direct methods
@@ -43,29 +43,29 @@
 
     .line 13
     .line 14
-    new-instance v0, Ll3c;
+    new-instance v0, LZhc;
 
     .line 15
     .line 16
-    invoke-direct {v0, p0}, Ll3c;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
+    invoke-direct {v0, p0}, LZhc;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
     .line 17
     .line 18
     .line 19
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->c:Ll3c;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->c:LZhc;
 
     .line 20
     .line 21
-    new-instance v0, Lm3c;
+    new-instance v0, Laic;
 
     .line 22
     .line 23
-    invoke-direct {v0, p0}, Lm3c;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
+    invoke-direct {v0, p0}, Laic;-><init>(Landroidx/room/MultiInstanceInvalidationService;)V
 
     .line 24
     .line 25
     .line 26
-    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->t:Lm3c;
+    iput-object v0, p0, Landroidx/room/MultiInstanceInvalidationService;->t:Laic;
 
     .line 27
     .line 28
@@ -78,7 +78,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService;->t:Lm3c;
+    iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService;->t:Laic;
 
     .line 2
     .line 3

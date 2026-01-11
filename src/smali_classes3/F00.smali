@@ -1,84 +1,88 @@
 .class public final LF00;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/concurrent/Callable;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'navigatorProvider\':f(): r:\'[0]\',\'onOpenAppStoreClick\':f(r<e>:\'[1]\'),\'onDismiss\':f(),\'bottomCardVisibilityHandler\':f?(b@)"
+    typeReferences = {
+        Lcom/snap/composer/navigation/INavigator;,
+        Lcom/snap/modules/ad_format/AppInstallAction;
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field private _bottomCardVisibilityHandler:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
 
-.field public final synthetic b:LCEh;
+.field private _navigatorProvider:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onDismiss:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _onOpenAppStoreClick:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(LCEh;I)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iput p2, p0, LF00;->a:I
-
-    iput-object p1, p0, LF00;->b:LCEh;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget v0, p0, LF00;->a:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    iput-object p1, p0, LF00;->_navigatorProvider:Lkotlin/jvm/functions/Function0;
+
     .line 5
     .line 6
-    iget-object v0, p0, LF00;->b:LCEh;
+    iput-object p2, p0, LF00;->_onOpenAppStoreClick:Lkotlin/jvm/functions/Function1;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LCEh;->b()V
+    iput-object p3, p0, LF00;->_onDismiss:Lkotlin/jvm/functions/Function0;
 
     .line 9
     .line 10
+    iput-object p4, p0, LF00;->_bottomCardVisibilityHandler:Lkotlin/jvm/functions/Function1;
+
     .line 11
-    sget-object v0, Li7j;->a:Li7j;
-
     .line 12
-    .line 13
-    return-object v0
-
-    .line 14
-    :pswitch_0
-    iget-object v0, p0, LF00;->b:LCEh;
-
-    .line 15
-    .line 16
-    invoke-virtual {v0}, LCEh;->b()V
-
-    .line 17
-    .line 18
-    .line 19
-    sget-object v0, Li7j;->a:Li7j;
-
-    .line 20
-    .line 21
-    return-object v0
-
-    .line 22
-    nop
-
-    .line 23
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

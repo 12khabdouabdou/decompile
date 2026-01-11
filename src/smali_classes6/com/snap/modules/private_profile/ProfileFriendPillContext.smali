@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/private_profile/ProfileFriendPillContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'friendmojiData\':g<c>:\'[0]\'<r:\'[1]\'>,\'myReverseBestFriendRank\':g<c>:\'[0]\'<d@>,\'onTap\':f?(r:\'[2]\')"
     typeReferences = {

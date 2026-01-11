@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements LZcd;
 
 
 # static fields
@@ -29,29 +29,4 @@
     .line 7
     .line 8
     return-void
-.end method
-
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    check-cast p1, LFRb;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, LFRb;->a()LkMb;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    iget-object p1, p1, LkMb;->a:LkMb$a;
-
-    .line 8
-    .line 9
-    return-object p1
 .end method

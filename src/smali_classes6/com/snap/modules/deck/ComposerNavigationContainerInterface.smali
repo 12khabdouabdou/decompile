@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LHy3;
+    proxyClass = LUB3;
     schema = "\'deckContainerFactory\':r:\'[0]\',\'createNavigationItem\':f|m|(r:\'[1]\'): r:\'[2]\',\'push\':f|m|(r:\'[2]\', b): p<r:\'[3]\'>,\'pop\':f|m|(b): p<r:\'[3]\'>,\'popToRoot\':f|m|(b): p<r:\'[3]\'>"
     typeReferences = {
         Lcom/snap/modules/deck/ComposerDeckContainerFactoryInterface;,
         Lcom/snap/modules/deck/ComposerNavigationItemConfig;,
         Lcom/snap/modules/deck/ComposerNavigationItemInterface;,
-        LpNd;
+        LE4e;
     }
 .end annotation
 
@@ -32,7 +32,7 @@
         value = {
             "(Z)",
             "Lcom/snap/composer/promise/Promise<",
-            "LpNd;",
+            "LE4e;",
             ">;"
         }
     .end annotation
@@ -43,7 +43,7 @@
         value = {
             "(Z)",
             "Lcom/snap/composer/promise/Promise<",
-            "LpNd;",
+            "LE4e;",
             ">;"
         }
     .end annotation
@@ -56,7 +56,7 @@
             "Lcom/snap/modules/deck/ComposerNavigationItemInterface;",
             "Z)",
             "Lcom/snap/composer/promise/Promise<",
-            "LpNd;",
+            "LE4e;",
             ">;"
         }
     .end annotation

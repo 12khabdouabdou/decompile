@@ -28,7 +28,7 @@
 .method public native dav1dRenderFrame(JLandroid/view/Surface;Lcom/google/android/exoplayer2/decoder/VideoDecoderOutputBuffer;)I
 .end method
 
-.method public final l()Ljava/lang/String;
+.method public final k()Ljava/lang/String;
     .locals 1
 
     .line 1

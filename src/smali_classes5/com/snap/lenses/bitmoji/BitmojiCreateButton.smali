@@ -6,7 +6,7 @@
 # instance fields
 .field public a:Landroid/widget/TextView;
 
-.field public b:LlI9;
+.field public b:LHT9;
 
 .field public c:Z
 
@@ -84,7 +84,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object p1, p0, Lcom/snap/lenses/bitmoji/BitmojiCreateButton;->b:LlI9;
+    iget-object p1, p0, Lcom/snap/lenses/bitmoji/BitmojiCreateButton;->b:LHT9;
 
     .line 19
     .line 20
@@ -92,7 +92,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p1, v1}, LlI9;->e(I)V
+    invoke-virtual {p1, v1}, LHT9;->e(I)V
 
     .line 23
     .line 24
@@ -101,7 +101,7 @@
 
     .line 26
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -110,7 +110,7 @@
 
     .line 30
     :cond_1
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -132,7 +132,7 @@
     .line 39
     .line 40
     .line 41
-    iget-object p1, p0, Lcom/snap/lenses/bitmoji/BitmojiCreateButton;->b:LlI9;
+    iget-object p1, p0, Lcom/snap/lenses/bitmoji/BitmojiCreateButton;->b:LHT9;
 
     .line 42
     .line 43
@@ -140,7 +140,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {p1, v3}, LlI9;->e(I)V
+    invoke-virtual {p1, v3}, LHT9;->e(I)V
 
     .line 46
     .line 47
@@ -149,7 +149,7 @@
 
     .line 49
     :cond_3
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -158,7 +158,7 @@
 
     .line 53
     :cond_4
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -191,7 +191,7 @@
     move-result-object v0
 
     .line 12
-    const v1, 0x7f0e0348
+    const v1, 0x7f0e0366
 
     .line 13
     .line 14
@@ -201,7 +201,7 @@
     .line 16
     .line 17
     .line 18
-    const v0, 0x7f0b0b46
+    const v0, 0x7f0b0c5e
 
     .line 19
     .line 20
@@ -222,29 +222,29 @@
 
     .line 28
     .line 29
-    new-instance v0, LlI9;
+    new-instance v0, LHT9;
 
     .line 30
     .line 31
     const/4 v1, 0x0
 
     .line 32
-    const v2, 0x7f0b0b48
+    const v2, 0x7f0b0c60
 
     .line 33
     .line 34
     .line 35
-    const v3, 0x7f0b0b47
+    const v3, 0x7f0b0c5f
 
     .line 36
     .line 37
     .line 38
-    invoke-direct {v0, p0, v2, v3, v1}, LlI9;-><init>(Landroid/view/View;IILkI9;)V
+    invoke-direct {v0, p0, v2, v3, v1}, LHT9;-><init>(Landroid/view/View;IILGT9;)V
 
     .line 39
     .line 40
     .line 41
-    iput-object v0, p0, Lcom/snap/lenses/bitmoji/BitmojiCreateButton;->b:LlI9;
+    iput-object v0, p0, Lcom/snap/lenses/bitmoji/BitmojiCreateButton;->b:LHT9;
 
     .line 42
     .line 43

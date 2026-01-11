@@ -3,15 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements LoQg;
+.implements Ltch;
 
 
 # instance fields
-.field public final a:LXfi;
+.field public final a:LREi;
 
-.field public b:LsHg;
+.field public b:Lb3h;
 
-.field public c:LQ39;
+.field public c:Lvb9;
 
 
 # direct methods
@@ -44,22 +44,22 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    sget-object p1, LnIg;->f0:LnIg;
+    sget-object p1, LlQg;->y0:LlQg;
 
     .line 5
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 6
-    iput-object p2, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->a:LXfi;
+    iput-object p2, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->a:LREi;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/net/Uri;LQ1j;ILXzh;)V
+.method public final a(Landroid/net/Uri;Lcrj;ILgYh;)V
     .locals 7
 
     .line 1
@@ -68,7 +68,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LvQg;
+    new-instance v0, LAch;
 
     .line 5
     .line 6
@@ -80,14 +80,14 @@
     move-result-object v3
 
     .line 10
-    new-instance v6, LNAf;
+    new-instance v6, LdUf;
 
     .line 11
     .line 12
     const/4 v1, 0x3
 
     .line 13
-    invoke-direct {v6, p4, v1}, LNAf;-><init>(LXzh;I)V
+    invoke-direct {v6, p4, v1}, LdUf;-><init>(LgYh;I)V
 
     .line 14
     .line 15
@@ -104,12 +104,12 @@
     move v4, p3
 
     .line 20
-    invoke-direct/range {v0 .. v6}, LvQg;-><init>(Landroid/net/Uri;LQ1j;Landroid/content/Context;IILkotlin/jvm/functions/Function1;)V
+    invoke-direct/range {v0 .. v6}, LAch;-><init>(Landroid/net/Uri;Lcrj;Landroid/content/Context;IILkotlin/jvm/functions/Function1;)V
 
     .line 21
     .line 22
     .line 23
-    iget-object p1, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->b:LsHg;
+    iget-object p1, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->b:Lb3h;
 
     .line 24
     .line 25
@@ -117,7 +117,7 @@
 
     .line 26
     .line 27
-    iget-boolean p1, p1, LsHg;->d:Z
+    iget-boolean p1, p1, Lb3h;->d:Z
 
     .line 28
     .line 29
@@ -129,15 +129,15 @@
 
     .line 31
     :goto_0
-    new-instance p2, LA80;
+    new-instance p2, LUa0;
 
     .line 32
     .line 33
-    const/16 p3, 0x11
+    const/16 p3, 0x10
 
     .line 34
     .line 35
-    invoke-direct {p2, v0, p1, p3}, LA80;-><init>(Ljava/lang/Object;ZI)V
+    invoke-direct {p2, v0, p1, p3}, LUa0;-><init>(Ljava/lang/Object;ZI)V
 
     .line 36
     .line 37
@@ -151,7 +151,7 @@
     .line 41
     .line 42
     .line 43
-    new-instance p2, LSz5;
+    new-instance p2, LRD5;
 
     .line 44
     .line 45
@@ -161,7 +161,7 @@
     const/4 p4, 0x5
 
     .line 47
-    invoke-direct {p2, p3, p4}, LSz5;-><init>(ZI)V
+    invoke-direct {p2, p3, p4}, LRD5;-><init>(ZI)V
 
     .line 48
     .line 49
@@ -175,28 +175,28 @@
     .line 53
     .line 54
     .line 55
-    new-instance p1, LfHg;
+    new-instance p1, LOYg;
 
     .line 56
     .line 57
-    const/16 p2, 0x8
+    const/16 p2, 0xe
 
     .line 58
     .line 59
-    invoke-direct {p1, p2, p0}, LfHg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LOYg;-><init>(ILjava/lang/Object;)V
 
     .line 60
     .line 61
     .line 62
-    sget-object p2, LhNg;->f0:LhNg;
+    sget-object p2, LiHg;->B0:LiHg;
 
     .line 63
     .line 64
-    iget-object p4, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->a:LXfi;
+    iget-object p4, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->a:LREi;
 
     .line 65
     .line 66
-    invoke-virtual {p4}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p4}, LREi;->getValue()Ljava/lang/Object;
 
     .line 67
     .line 68
@@ -228,22 +228,22 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->b:LsHg;
+    iput-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->b:Lb3h;
 
     .line 6
     .line 7
-    iput-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:LQ39;
+    iput-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:Lvb9;
 
     .line 8
     .line 9
     return-void
 .end method
 
-.method public final l(Landroid/net/Uri;LQ1j;ILXzh;)V
+.method public final l(Landroid/net/Uri;Lcrj;ILgYh;)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->b:LsHg;
+    iget-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->b:Lb3h;
 
     .line 2
     .line 3
@@ -254,11 +254,11 @@
 
     .line 5
     .line 6
-    iget-object v2, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:LQ39;
+    iget-object v2, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:Lvb9;
 
     .line 7
     .line 8
-    iput-object v2, v0, LsHg;->c:LQ39;
+    iput-object v2, v0, Lb3h;->c:Lvb9;
 
     .line 9
     .line 10
@@ -277,7 +277,7 @@
     move-result v2
 
     .line 17
-    instance-of v3, v0, LjHg;
+    instance-of v3, v0, LS2h;
 
     .line 18
     .line 19
@@ -285,7 +285,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/stickers/ui/views/SnapStickerView;->a(Landroid/net/Uri;LQ1j;ILXzh;)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/stickers/ui/views/SnapStickerView;->a(Landroid/net/Uri;Lcrj;ILgYh;)V
 
     .line 22
     .line 23
@@ -294,13 +294,13 @@
 
     .line 25
     :cond_0
-    invoke-virtual {v0, p2, p1, v1}, LsHg;->j(LQ1j;Landroid/net/Uri;Landroid/net/Uri;)V
+    invoke-virtual {v0, p2, p1, v1}, Lb3h;->j(Lcrj;Landroid/net/Uri;Landroid/net/Uri;)V
 
     .line 26
     .line 27
     .line 28
     :goto_0
-    sget-object v1, Li7j;->a:Li7j;
+    sget-object v1, Lewj;->a:Lewj;
 
     .line 29
     .line 30
@@ -309,7 +309,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/stickers/ui/views/SnapStickerView;->a(Landroid/net/Uri;LQ1j;ILXzh;)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/stickers/ui/views/SnapStickerView;->a(Landroid/net/Uri;Lcrj;ILgYh;)V
 
     .line 33
     .line 34
@@ -327,11 +327,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->a:LXfi;
+    iget-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->a:LREi;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -351,18 +351,18 @@
     const/4 v0, 0x0
 
     .line 16
-    iput-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:LQ39;
+    iput-object v0, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:Lvb9;
 
     .line 17
     .line 18
     return-void
 .end method
 
-.method public final z(LQ39;)V
+.method public final y(Lvb9;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:LQ39;
+    iput-object p1, p0, Lcom/snap/stickers/ui/views/SnapStickerView;->c:Lvb9;
 
     .line 2
     .line 3

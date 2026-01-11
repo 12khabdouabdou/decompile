@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lio/reactivex/rxjava3/operators/ConditionalSubscriber;
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -30,7 +30,7 @@
         "TU;>;",
         "Lio/reactivex/rxjava3/operators/ConditionalSubscriber<",
         "TT;>;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
@@ -182,7 +182,7 @@
 
     .line 11
     .line 12
-    invoke-interface {v3, p1, v1}, Lio/reactivex/rxjava3/functions/BiFunction;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v3, p1, v1}, Lio/reactivex/rxjava3/functions/BiFunction;->apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -304,7 +304,7 @@
     move-result-object p1
 
     .line 13
-    check-cast p1, Lc7i;
+    check-cast p1, Ltvi;
 
     .line 14
     .line 15
@@ -312,7 +312,7 @@
 
     .line 16
     .line 17
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 18
     .line 19
@@ -321,7 +321,7 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 2
 
     .line 1
@@ -333,7 +333,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Lc7i;)V
+    invoke-static {v0, v1, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Ltvi;)V
 
     .line 6
     .line 7

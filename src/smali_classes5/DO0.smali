@@ -3,407 +3,365 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/BiFunction;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
-# static fields
-.field public static final a:LDO0;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LHO0;
+
+.field public final synthetic c:Landroid/app/Activity;
+
+.field public final synthetic t:LBzd;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(LHO0;Landroid/app/Activity;LBzd;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LDO0;
+    iput p4, p0, LDO0;->a:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LDO0;->b:LHO0;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LDO0;->a:LDO0;
+    iput-object p2, p0, LDO0;->c:Landroid/app/Activity;
 
-    .line 7
-    .line 8
+    iput-object p3, p0, LDO0;->t:LBzd;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    check-cast p1, Ljava/util/List;
+    iget v0, p0, LDO0;->a:I
 
     .line 2
     .line 3
-    check-cast p2, Ljava/util/List;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    new-instance v0, Ljava/util/HashMap;
-
     .line 6
-    .line 7
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    check-cast p1, Ljava/lang/Boolean;
 
+    .line 7
     .line 8
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
     .line 9
     .line 10
-    check-cast p1, Ljava/lang/Iterable;
-
     .line 11
+    move-result p1
+
     .line 12
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    iget-object v0, p0, LDO0;->b:LHO0;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object p1
+    iget-object v1, v0, LHO0;->j:LxU5;
 
+    .line 15
     .line 16
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 17
     .line 18
-    .line 19
-    move-result v1
+    const/16 v2, 0x1d
 
+    .line 19
     .line 20
-    const/4 v2, 0x1
+    const/4 v3, 0x1
 
     .line 21
-    if-eqz v1, :cond_2
+    if-lt v1, v2, :cond_0
 
     .line 22
     .line 23
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    const/4 v1, 0x1
 
     .line 24
+    goto :goto_0
+
     .line 25
+    :cond_0
+    const/4 v1, 0x0
+
     .line 26
-    move-result-object v1
+    :goto_0
+    sget-object v2, LBzd;->x0:LBzd;
 
     .line 27
-    check-cast v1, LtZa;
-
     .line 28
+    iget-object v4, p0, LDO0;->c:Landroid/app/Activity;
+
     .line 29
-    new-instance v3, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;
-
     .line 30
-    .line 31
-    invoke-direct {v3}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;-><init>()V
+    if-eqz v1, :cond_2
 
+    .line 31
     .line 32
+    iget-object v1, v0, LHO0;->l:LaM5;
+
     .line 33
     .line 34
-    iget-object v4, v1, LtZa;->d:Ljava/lang/String;
+    invoke-virtual {v1}, LaM5;->b()Z
 
     .line 35
     .line 36
-    invoke-virtual {v3, v4}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;->setStoryId(Ljava/lang/String;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;
-
     .line 37
+    move-result v1
+
     .line 38
+    if-eqz v1, :cond_1
+
     .line 39
-    iget-wide v4, v1, LtZa;->f:J
-
     .line 40
-    .line 41
-    invoke-virtual {v3, v4, v5}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;->setNumActiveStories(J)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;
+    invoke-static {v0, v4, v2, v3, p1}, LHO0;->i(LHO0;Landroid/app/Activity;LBzd;ZZ)Lio/reactivex/rxjava3/core/Single;
 
+    .line 41
     .line 42
     .line 43
+    move-result-object p1
+
     .line 44
-    iget-boolean v4, v1, LtZa;->b:Z
+    goto :goto_1
 
     .line 45
-    .line 46
-    xor-int/2addr v2, v4
+    :cond_1
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
+    .line 46
     .line 47
-    invoke-virtual {v3, v2}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;->setHasUnviewedStories(Z)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;
+    new-instance v1, Lr4e;
 
     .line 48
     .line 49
-    .line 50
-    iget-object v2, v1, LtZa;->c:Ljava/lang/Long;
+    invoke-direct {v1, p1}, Lr4e;-><init>(Ljava/lang/Object;)V
 
+    .line 50
     .line 51
     .line 52
-    if-eqz v2, :cond_0
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
     .line 53
     .line 54
-    invoke-virtual {v2}, Ljava/lang/Number;->longValue()J
+    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
     .line 55
     .line 56
     .line 57
-    move-result-wide v4
+    :goto_1
+    new-instance v1, Latk;
 
     .line 58
-    invoke-virtual {v3, v4, v5}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;->setMostRecentStoryTimestamp(J)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;
-
     .line 59
+    iget-object v2, p0, LDO0;->t:LBzd;
+
     .line 60
     .line 61
-    :cond_0
-    if-eqz v2, :cond_1
+    const/16 v3, 0x1d
 
     .line 62
     .line 63
-    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
+    invoke-direct {v1, v0, v4, v2, v3}, Latk;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 64
     .line 65
     .line 66
-    move-result-wide v4
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 67
-    :goto_1
-    move-wide v8, v4
-
     .line 68
-    goto :goto_2
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 69
-    :cond_1
-    const-wide/16 v4, 0x0
-
     .line 70
     .line 71
-    goto :goto_1
+    goto :goto_2
 
     .line 72
-    :goto_2
-    const/4 v11, 0x0
+    :cond_2
+    invoke-static {v0, v4, v2, v3, p1}, LHO0;->i(LHO0;Landroid/app/Activity;LBzd;ZZ)Lio/reactivex/rxjava3/core/Single;
 
     .line 73
-    const/4 v10, 0x1
-
     .line 74
-    iget-wide v6, v1, LtZa;->e:J
-
     .line 75
+    move-result-object v0
+
     .line 76
-    invoke-static/range {v6 .. v11}, LzCe;->d(JJILjava/lang/Integer;)Landroid/net/Uri;
+    :goto_2
+    return-object v0
 
     .line 77
+    :pswitch_0
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 78
     .line 79
-    move-result-object v2
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 80
-    new-instance v4, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ContentObject;
-
     .line 81
     .line 82
-    invoke-direct {v4}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ContentObject;-><init>()V
+    move-result p1
 
     .line 83
+    iget-object v0, p0, LDO0;->b:LHO0;
+
     .line 84
     .line 85
-    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    invoke-virtual {v0, p1}, LHO0;->k(Z)V
 
     .line 86
     .line 87
     .line 88
-    move-result-object v2
+    iget-object v1, v0, LHO0;->b:Lpzd;
 
     .line 89
-    invoke-virtual {v4, v2}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ContentObject;->setUri(Ljava/lang/String;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ContentObject;
-
     .line 90
+    if-eqz p1, :cond_4
+
     .line 91
     .line 92
-    move-result-object v2
+    iget-object p1, v1, Lpzd;->h:LiAi;
 
     .line 93
-    invoke-virtual {v3, v2}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;->setThumbnailContentObject(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$ContentObject;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;
-
     .line 94
+    invoke-interface {p1}, LiAi;->get()Ljava/lang/Object;
+
     .line 95
     .line 96
-    new-instance v2, LGO0;
-
     .line 97
-    .line 98
-    const/4 v4, 0x6
-
-    .line 99
-    invoke-direct {v2, v3, v4}, LGO0;-><init>(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;I)V
-
-    .line 100
-    .line 101
-    .line 102
-    iget-object v1, v1, LtZa;->a:Ljava/lang/String;
-
-    .line 103
-    .line 104
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 105
-    .line 106
-    .line 107
-    goto :goto_0
-
-    .line 108
-    :cond_2
-    invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 109
-    .line 110
-    .line 111
     move-result-object p1
 
-    .line 112
-    :cond_3
-    :goto_3
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    .line 98
+    check-cast p1, LtMj;
 
+    .line 99
+    .line 100
+    invoke-virtual {p1}, LtMj;->f()LsMj;
+
+    .line 101
+    .line 102
+    .line 103
+    const-string p1, "android.permission.ACCESS_FINE_LOCATION"
+
+    .line 104
+    .line 105
+    invoke-virtual {v1, p1}, Lpzd;->m(Ljava/lang/String;)Z
+
+    .line 106
+    .line 107
+    .line 108
+    move-result v1
+
+    .line 109
+    if-eqz v1, :cond_3
+
+    .line 110
+    .line 111
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 112
     .line 113
+    new-instance v0, Lr4e;
+
     .line 114
     .line 115
-    move-result p2
+    invoke-direct {v0, p1}, Lr4e;-><init>(Ljava/lang/Object;)V
 
     .line 116
-    if-eqz p2, :cond_8
-
     .line 117
     .line 118
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
     .line 119
     .line 120
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
     .line 121
-    move-result-object p2
-
     .line 122
-    check-cast p2, Lq24;
-
     .line 123
+    goto :goto_3
+
     .line 124
-    iget-object v1, p2, Lq24;->a:Ljava/lang/String;
+    :cond_3
+    iget-object v1, p0, LDO0;->t:LBzd;
 
     .line 125
     .line 126
-    iget-boolean v3, p2, Lq24;->j:Z
+    iget-object v2, p0, LDO0;->c:Landroid/app/Activity;
 
     .line 127
     .line 128
-    if-nez v3, :cond_3
+    invoke-virtual {v0, v2, v1, p1}, LHO0;->m(Landroid/app/Activity;LBzd;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
 
     .line 129
     .line 130
-    if-nez v1, :cond_4
-
     .line 131
+    move-result-object p1
+
     .line 132
     goto :goto_3
 
     .line 133
     :cond_4
-    iget-boolean v3, p2, Lq24;->g:Z
+    iget-object p1, v1, Lpzd;->h:LiAi;
 
     .line 134
     .line 135
-    if-eqz v3, :cond_5
+    invoke-interface {p1}, LiAi;->get()Ljava/lang/Object;
 
     .line 136
     .line 137
-    const/4 v3, 0x3
-
     .line 138
-    goto :goto_4
+    move-result-object p1
 
     .line 139
-    :cond_5
-    iget-boolean v3, p2, Lq24;->h:Z
+    check-cast p1, LtMj;
 
     .line 140
     .line 141
-    if-eqz v3, :cond_6
+    invoke-virtual {p1}, LtMj;->e()Z
 
     .line 142
     .line 143
-    const/4 v3, 0x2
-
     .line 144
-    goto :goto_4
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 145
-    :cond_6
-    iget-boolean v3, p2, Lq24;->f:Z
-
     .line 146
+    new-instance v0, Lr4e;
+
     .line 147
-    if-eqz v3, :cond_3
-
     .line 148
+    invoke-direct {v0, p1}, Lr4e;-><init>(Ljava/lang/Object;)V
+
     .line 149
-    const/4 v3, 0x1
-
     .line 150
-    :goto_4
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 151
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
     .line 152
     .line 153
-    move-result-object v4
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
     .line 154
-    if-nez v4, :cond_7
-
     .line 155
     .line 156
-    new-instance v4, LGO0;
+    :goto_3
+    return-object p1
 
     .line 157
-    .line 158
-    const/4 v5, 0x0
-
-    .line 159
-    const/4 v6, 0x7
-
-    .line 160
-    invoke-direct {v4, v5, v6}, LGO0;-><init>(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StorySummaryInfo;I)V
-
-    .line 161
-    .line 162
-    .line 163
-    invoke-virtual {v0, v1, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 164
-    .line 165
-    .line 166
-    :cond_7
-    check-cast v4, LGO0;
-
-    .line 167
-    .line 168
-    iput v3, v4, LGO0;->b:I
-
-    .line 169
-    .line 170
-    iget-object p2, p2, Lq24;->c:Ljava/lang/Long;
-
-    .line 171
-    .line 172
-    iput-object p2, v4, LGO0;->c:Ljava/lang/Long;
-
-    .line 173
-    .line 174
-    goto :goto_3
-
-    .line 175
-    :cond_8
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

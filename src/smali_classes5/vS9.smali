@@ -1,133 +1,112 @@
-.class public final enum LvS9;
-.super Ljava/lang/Enum;
+.class public final LvS9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
-# static fields
-.field public static final synthetic a:[LvS9;
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:La5f;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public synthetic constructor <init>(La5f;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    iput p2, p0, LvS9;->a:I
+
+    iput-object p1, p0, LvS9;->b:La5f;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LvS9;->a:I
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
-    new-instance v3, LvS9;
-
     .line 5
     .line 6
-    const-string v4, "ANY"
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 7
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 9
     .line 10
     .line 11
-    new-instance v4, LvS9;
+    new-instance p1, LUM8;
 
     .line 12
     .line 13
-    const-string v5, "SUCCESSFUL"
+    invoke-direct {p1}, LUM8;-><init>()V
 
     .line 14
     .line 15
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 16
+    iget-object v0, p0, LvS9;->b:La5f;
+
     .line 17
     .line 18
-    new-instance v5, LvS9;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 19
     .line 20
-    const-string v6, "UNSUCCESSFUL"
-
     .line 21
+    return-object p1
+
     .line 22
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :pswitch_0
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 23
     .line 24
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
     .line 25
-    const/4 v6, 0x3
-
     .line 26
-    new-array v6, v6, [LvS9;
-
     .line 27
+    new-instance p1, LUM8;
+
     .line 28
-    aput-object v3, v6, v2
-
     .line 29
-    .line 30
-    aput-object v4, v6, v1
+    invoke-direct {p1}, LUM8;-><init>()V
 
+    .line 30
     .line 31
     .line 32
-    aput-object v5, v6, v0
+    iget-object v0, p0, LvS9;->b:La5f;
 
     .line 33
     .line 34
-    sput-object v6, LvS9;->a:[LvS9;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 35
     .line 36
-    return-void
-.end method
+    .line 37
+    return-object p1
 
-.method public static valueOf(Ljava/lang/String;)LvS9;
-    .locals 1
+    .line 38
+    nop
 
-    .line 1
-    const-class v0, LvS9;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LvS9;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LvS9;
-    .locals 1
-
-    .line 1
-    sget-object v0, LvS9;->a:[LvS9;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LvS9;
-
-    .line 8
-    .line 9
-    return-object v0
+    .line 39
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

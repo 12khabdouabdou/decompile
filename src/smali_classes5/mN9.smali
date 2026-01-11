@@ -1,154 +1,202 @@
-.class public final LmN9;
-.super LsN9;
+.class public abstract LmN9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/Long;
+# static fields
+.field public static final a:Ljava/util/HashMap;
+
+.field public static final b:[Ljava/lang/String;
+
+.field public static final c:[I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 19
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ljava/util/HashMap;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LmN9;->a:Ljava/lang/Long;
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    return-void
-.end method
+    sput-object v0, LmN9;->a:Ljava/util/HashMap;
 
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LmN9;
-
-    .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    const-string v17, "key_right"
 
     .line 9
     .line 10
-    return v2
+    const-string v18, "key_unspecified"
 
     .line 11
-    :cond_1
-    check-cast p1, LmN9;
-
     .line 12
+    const-string v1, "key_tab"
+
     .line 13
-    iget-object v1, p0, LmN9;->a:Ljava/lang/Long;
-
     .line 14
+    const-string v2, "key_enter"
+
     .line 15
-    iget-object p1, p1, LmN9;->a:Ljava/lang/Long;
-
     .line 16
-    .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const-string v3, "key_space"
 
+    .line 17
     .line 18
+    const-string v4, "key_shift"
+
     .line 19
     .line 20
-    move-result p1
+    const-string v5, "key_capslock"
 
     .line 21
-    if-nez p1, :cond_2
-
     .line 22
+    const-string v6, "key_switch_alpha_symbol"
+
     .line 23
-    return v2
-
     .line 24
-    :cond_2
-    return v0
-.end method
+    const-string v7, "key_output_text"
 
-.method public final hashCode()I
-    .locals 1
+    .line 25
+    .line 26
+    const-string v8, "key_delete"
 
-    .line 1
-    iget-object v0, p0, LmN9;->a:Ljava/lang/Long;
+    .line 27
+    .line 28
+    const-string v9, "key_settings"
 
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
+    .line 29
+    .line 30
+    const-string v10, "key_shortcut"
 
-    .line 4
-    .line 5
-    const/4 v0, 0x0
+    .line 31
+    .line 32
+    const-string v11, "key_action_next"
 
-    .line 6
-    return v0
+    .line 33
+    .line 34
+    const-string v12, "key_action_previous"
 
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    .line 35
+    .line 36
+    const-string v13, "key_shift_enter"
 
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
+    .line 37
+    .line 38
+    const-string v14, "key_language_switch"
 
-    .line 11
-    return v0
-.end method
+    .line 39
+    .line 40
+    const-string v15, "key_emoji"
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+    .line 41
+    .line 42
+    const-string v16, "key_left"
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 43
+    .line 44
+    filled-new-array/range {v1 .. v18}, [Ljava/lang/String;
 
-    .line 2
-    .line 3
-    const-string v1, "LensAttachmentClosed(timestampMs="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LmN9;->a:Ljava/lang/Long;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, LsSb;->f(Ljava/lang/StringBuilder;Ljava/lang/Long;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
+    .line 45
+    .line 46
+    .line 47
     move-result-object v0
 
-    .line 16
-    return-object v0
+    .line 48
+    sput-object v0, LmN9;->b:[Ljava/lang/String;
+
+    .line 49
+    .line 50
+    const/16 v0, 0x10
+
+    .line 51
+    .line 52
+    new-array v0, v0, [I
+
+    .line 53
+    .line 54
+    fill-array-data v0, :array_0
+
+    .line 55
+    .line 56
+    .line 57
+    sput-object v0, LmN9;->c:[I
+
+    .line 58
+    .line 59
+    const/4 v0, 0x0
+
+    .line 60
+    :goto_0
+    sget-object v1, LmN9;->b:[Ljava/lang/String;
+
+    .line 61
+    .line 62
+    array-length v2, v1
+
+    .line 63
+    if-ge v0, v2, :cond_0
+
+    .line 64
+    .line 65
+    sget-object v2, LmN9;->a:Ljava/util/HashMap;
+
+    .line 66
+    .line 67
+    aget-object v1, v1, v0
+
+    .line 68
+    .line 69
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v3
+
+    .line 73
+    invoke-virtual {v2, v1, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 74
+    .line 75
+    .line 76
+    add-int/lit8 v0, v0, 0x1
+
+    .line 77
+    .line 78
+    goto :goto_0
+
+    .line 79
+    :cond_0
+    return-void
+
+    .line 80
+    nop
+
+    .line 81
+    :array_0
+    .array-data 4
+        0x9
+        0xa
+        0x20
+        -0x1
+        -0x2
+        -0x3
+        -0x4
+        -0x5
+        -0x6
+        -0x7
+        -0x8
+        -0x9
+        -0xb
+        -0xa
+        -0xd
+        -0xe
+    .end array-data
 .end method

@@ -33,8 +33,8 @@
 
 
 # virtual methods
-.method public final A(Landroid/content/Context;Z)LTL6;
-    .locals 2
+.method public final A(Landroid/content/Context;Z)Lwz6;
+    .locals 1
 
     .line 1
     if-eqz p2, :cond_0
@@ -56,47 +56,44 @@
     .line 9
     .line 10
     :goto_0
-    new-instance v0, LTL6;
+    new-instance v0, Lwz6;
 
     .line 11
     .line 12
-    const/16 v1, 0xa
+    invoke-direct {v0}, Lwz6;-><init>()V
 
     .line 13
     .line 14
-    invoke-direct {v0, v1}, LTL6;-><init>(I)V
-
     .line 15
+    invoke-static {p1, p2}, LVgc;->b(Landroid/content/Context;I)LVgc;
+
     .line 16
     .line 17
-    invoke-static {p1, p2}, Le2c;->b(Landroid/content/Context;I)Le2c;
-
     .line 18
-    .line 19
-    .line 20
     move-result-object p1
 
+    .line 19
+    iput-object p1, v0, Lwz6;->b:Ljava/lang/Object;
+
+    .line 20
     .line 21
-    iput-object p1, v0, LTL6;->b:Ljava/lang/Object;
+    new-instance p1, LHZi;
 
     .line 22
     .line 23
-    new-instance p1, LrRb;
+    const/16 p2, 0x1c
 
     .line 24
     .line 25
-    const/4 p2, 0x3
+    invoke-direct {p1, p2}, LHZi;-><init>(I)V
 
     .line 26
-    invoke-direct {p1, p2}, LrRb;-><init>(I)V
-
     .line 27
     .line 28
-    .line 29
-    iput-object p1, v0, LTL6;->c:Ljava/lang/Object;
+    iput-object p1, v0, Lwz6;->c:Ljava/lang/Object;
 
+    .line 29
     .line 30
-    .line 31
     return-object v0
 .end method
 
@@ -185,7 +182,7 @@
     move-result-object v6
 
     .line 39
-    instance-of v6, v6, LC34;
+    instance-of v6, v6, Lm84;
 
     .line 40
     .line 41
@@ -201,11 +198,11 @@
     move-result-object v6
 
     .line 47
-    check-cast v6, LC34;
+    check-cast v6, Lm84;
 
     .line 48
     .line 49
-    iget-object v6, v6, LC34;->a:Lz34;
+    iget-object v6, v6, Lm84;->a:Lj84;
 
     .line 50
     .line 51
@@ -288,7 +285,7 @@
     move-result v6
 
     .line 87
-    sget-object v7, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v7, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 88
     .line 89
@@ -326,7 +323,7 @@
     .line 104
     .line 105
     .line 106
-    sget-object v6, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v6, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 107
     .line 108

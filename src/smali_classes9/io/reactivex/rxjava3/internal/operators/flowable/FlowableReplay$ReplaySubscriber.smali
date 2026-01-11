@@ -23,7 +23,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicReference<",
-        "Lc7i;",
+        "Ltvi;",
         ">;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TT;>;",
@@ -174,7 +174,7 @@
 
     .line 11
     :cond_1
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->c()Z
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->d()Z
 
     .line 12
     .line 13
@@ -198,7 +198,7 @@
     move-result-object v2
 
     .line 22
-    check-cast v2, Lc7i;
+    check-cast v2, Ltvi;
 
     .line 23
     .line 24
@@ -292,7 +292,7 @@
 
     .line 65
     .line 66
-    invoke-interface {v2, v3, v4}, Lc7i;->l(J)V
+    invoke-interface {v2, v3, v4}, Ltvi;->l(J)V
 
     .line 67
     .line 68
@@ -317,44 +317,7 @@
     return-void
 .end method
 
-.method public final c()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->c:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    sget-object v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->f0:[Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;
-
-    .line 8
-    .line 9
-    if-ne v0, v1, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    return v0
-
-    .line 13
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 14
-    return v0
-.end method
-
-.method public final d(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;)V
+.method public final b(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;)V
     .locals 7
 
     .line 1
@@ -517,6 +480,43 @@
     goto :goto_0
 .end method
 
+.method public final d()Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sget-object v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->f0:[Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;
+
+    .line 8
+    .line 9
+    if-ne v0, v1, :cond_0
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    return v0
+
+    .line 13
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 14
+    return v0
+.end method
+
 .method public final dispose()V
     .locals 2
 
@@ -602,7 +602,7 @@
 
     .line 9
     .line 10
-    invoke-interface {v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplayBuffer;->d()V
+    invoke-interface {v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplayBuffer;->b()V
 
     .line 11
     .line 12
@@ -681,7 +681,7 @@
 
     .line 9
     .line 10
-    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplayBuffer;->c(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplayBuffer;->d(Ljava/lang/Throwable;)V
 
     .line 11
     .line 12
@@ -814,11 +814,11 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 4
 
     .line 1
-    invoke-static {p0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Lc7i;)Z
+    invoke-static {p0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Ltvi;)Z
 
     .line 2
     .line 3

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/search/v2/composer/StudyValues;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'customSearchServiceUrl\':s?,\'searchServiceRouteTag\':s?,\'enableDragToDismiss\':b,\'hideCancelButton\':b@?,\'disableInsetPadding\':b@?,\'hideHeader\':b@?,\'hideFloatingActionButton\':b@?,\'disableLensInfoCard\':b@?,\'disableSearchSpecificPretypeSections\':b@?,\'serverOverrides\':r?:\'[0]\',\'enableSearchDebugViewer\':b@?,\'cameosFeatureRestricted\':b@?,\'freeformTweak\':s?,\'initialQuery\':s?"
     typeReferences = {

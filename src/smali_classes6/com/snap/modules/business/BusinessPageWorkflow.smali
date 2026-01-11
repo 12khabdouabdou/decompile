@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'AdCode\':\'AdCode\',\'AdsTab\':\'AdsTab\',\'AdCreation\':\'AdCreation\',\'PromotionInsights\':\'PromotionInsights\',\'RemainingBalanceBillboard\':\'RemainingBalanceBillboard\',\'RemainingBalanceOfferBillboard\':\'RemainingBalanceOfferBillboard\',\'PromotionsTab\':\'PromotionsTab\',\'MultiProfile\':\'MultiProfile\',\'ActivityFeedNotification\':\'ActivityFeedNotification\',\'CreatorHub\':\'CreatorHub\',\'AddPaidPartnership\':\'AddPaidPartnership\',\'ProfleAdminView\':\'ProfleAdminView\',\'PromoteUpsellPlugin\':\'PromoteUpsellPlugin\',\'ProfessionalProfile\':\'ProfessionalProfile\',\'SnapPlusOnboarding\':\'SnapPlusOnboarding\',\'RepostsTab\':\'RepostsTab\',\'GetPromotionInsightsButtonStats\':\'GetPromotionInsightsButtonStats\',\'CreateImpalaSnapPlayerHelper\':\'CreateImpalaSnapPlayerHelper\',\'HandleBusinessDeeplink\':\'HandleBusinessDeeplink\',\'SnapPromoteDeepLink\':\'SnapPromoteDeepLink\',\'OnboardingIncentiveBillboard\':\'OnboardingIncentiveBillboard\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

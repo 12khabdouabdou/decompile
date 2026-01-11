@@ -4,18 +4,16 @@
 
 
 # instance fields
-.field public final a:LB73;
+.field public final a:Lth7;
 
-.field public final b:Ljava/lang/Object;
+.field public final b:J
 
-.field public final c:Ljava/lang/Object;
-
-.field public final d:Ljava/lang/Object;
+.field public final c:Luh7;
 
 
 # direct methods
-.method public constructor <init>(LB73;LDS4;)V
-    .locals 2
+.method public constructor <init>(Lth7;JLuh7;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,442 +21,373 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LBh7;->a:LB73;
+    iput-object p1, p0, LBh7;->a:Lth7;
 
     .line 5
     .line 6
-    new-instance p1, LAh7;
+    iput-wide p2, p0, LBh7;->b:J
 
     .line 7
     .line 8
-    const/4 v0, 0x1
+    iput-object p4, p0, LBh7;->c:Luh7;
 
     .line 9
-    invoke-direct {p1, p2, v0}, LAh7;-><init>(LDS4;I)V
-
     .line 10
-    .line 11
-    .line 12
-    const/4 v0, 0x3
-
-    .line 13
-    invoke-static {v0, p1}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    iput-object p1, p0, LBh7;->b:Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    new-instance p1, LfC6;
-
-    .line 20
-    .line 21
-    const/4 v1, 0x6
-
-    .line 22
-    invoke-direct {p1, v1, p0}, LfC6;-><init>(ILjava/lang/Object;)V
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-static {v0, p1}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p1
-
-    .line 29
-    iput-object p1, p0, LBh7;->c:Ljava/lang/Object;
-
-    .line 30
-    .line 31
-    new-instance p1, LAh7;
-
-    .line 32
-    .line 33
-    const/4 v1, 0x0
-
-    .line 34
-    invoke-direct {p1, p2, v1}, LAh7;-><init>(LDS4;I)V
-
-    .line 35
-    .line 36
-    .line 37
-    invoke-static {v0, p1}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object p1
-
-    .line 41
-    iput-object p1, p0, LBh7;->d:Ljava/lang/Object;
-
-    .line 42
-    .line 43
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/snapchat/client/messaging/FeedEntry;)LXo9;
+.method public final a()Z
     .locals 9
 
     .line 1
-    iget-object v0, p0, LBh7;->b:Ljava/lang/Object;
+    iget-object v0, p0, LBh7;->a:Lth7;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LsH9;->getValue()Ljava/lang/Object;
+    iget-wide v1, v0, Lth7;->e:J
 
     .line 4
     .line 5
+    iget-wide v3, p0, LBh7;->b:J
+
     .line 6
-    move-result-object v0
-
     .line 7
-    move-object v1, v0
-
-    .line 8
-    check-cast v1, Ljava/lang/String;
-
-    .line 9
-    .line 10
-    if-eqz v1, :cond_3
-
-    .line 11
-    .line 12
-    iget-object v0, p0, LBh7;->d:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    invoke-interface {v0}, LsH9;->getValue()Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    move-object v2, v0
-
-    .line 19
-    check-cast v2, Ljava/lang/Long;
-
-    .line 20
-    .line 21
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getDisplayInfo()Lcom/snapchat/client/messaging/FeedEntryDisplayInfo;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v3
-
-    .line 25
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getConversationType()Lcom/snapchat/client/messaging/ConversationType;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    sget-object v4, Lcom/snapchat/client/messaging/ConversationType;->USERCREATEDGROUP:Lcom/snapchat/client/messaging/ConversationType;
-
-    .line 30
-    .line 31
     const/4 v5, 0x0
 
-    .line 32
-    const/4 v6, 0x1
-
-    .line 33
-    if-ne v0, v4, :cond_0
-
-    .line 34
-    .line 35
-    const/4 v5, 0x1
-
-    .line 36
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 37
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getInteractionInfo()Lcom/snapchat/client/messaging/InteractionInfo;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v4
-
-    .line 41
-    invoke-virtual {v4}, Lcom/snapchat/client/messaging/InteractionInfo;->getMessages()Ljava/util/ArrayList;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v4
-
-    .line 45
-    if-eqz v4, :cond_1
-
-    .line 46
-    .line 47
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v4
-
-    .line 51
-    goto :goto_0
-
-    .line 52
-    :cond_1
-    const/4 v4, 0x0
-
-    .line 53
-    :goto_0
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getParticipants()Ljava/util/ArrayList;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v7
-
-    .line 57
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
-    .line 58
-    .line 59
-    .line 60
-    move-result v7
-
-    .line 61
-    if-ne v7, v6, :cond_2
-
-    .line 62
-    .line 63
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getConversationType()Lcom/snapchat/client/messaging/ConversationType;
-
-    .line 64
-    .line 65
-    .line 66
-    move-result-object p1
-
-    .line 67
-    sget-object v7, Lcom/snapchat/client/messaging/ConversationType;->ONEONONE:Lcom/snapchat/client/messaging/ConversationType;
-
-    .line 68
-    .line 69
-    if-ne p1, v7, :cond_2
-
-    .line 70
-    .line 71
-    const/4 v7, 0x1
-
-    .line 72
-    goto :goto_1
-
-    .line 73
-    :cond_2
-    const/4 v7, 0x0
-
-    .line 74
-    :goto_1
-    iget-object p1, p0, LBh7;->c:Ljava/lang/Object;
-
-    .line 75
-    .line 76
-    invoke-interface {p1}, LsH9;->getValue()Ljava/lang/Object;
-
-    .line 77
-    .line 78
-    .line 79
-    move-result-object p1
-
-    .line 80
-    move-object v8, p1
-
-    .line 81
-    check-cast v8, Lcom/snapchat/client/messaging/UUID;
-
-    .line 82
-    .line 83
-    move v6, v4
-
-    .line 84
-    iget-object v4, p0, LBh7;->a:LB73;
-
-    .line 85
-    .line 86
-    invoke-static/range {v1 .. v8}, LNsk;->d(Ljava/lang/String;Ljava/lang/Long;Lcom/snapchat/client/messaging/FeedEntryDisplayInfo;LB73;ZIZLcom/snapchat/client/messaging/UUID;)LXo9;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object p1
-
-    .line 90
-    return-object p1
-
-    .line 91
-    :cond_3
-    sget-object p1, LXo9;->n0:LXo9;
-
-    .line 92
-    .line 93
-    return-object p1
-.end method
-
-.method public final b(Lcom/snapchat/client/messaging/FeedEntry;)Z
-    .locals 6
-
-    .line 1
-    iget-object v0, p0, LBh7;->b:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LsH9;->getValue()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Ljava/lang/String;
-
     .line 8
-    .line 9
-    const/4 v1, 0x0
+    cmp-long v6, v1, v3
 
+    .line 9
     .line 10
-    if-eqz v0, :cond_2
+    if-gtz v6, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getDisplayInfo()Lcom/snapchat/client/messaging/FeedEntryDisplayInfo;
+    return v5
 
     .line 13
+    :cond_0
+    iget-wide v3, v0, Lth7;->d:J
+
     .line 14
     .line 15
-    move-result-object v2
+    const-wide/16 v6, 0x1
 
     .line 16
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getInteractionInfo()Lcom/snapchat/client/messaging/InteractionInfo;
-
     .line 17
-    .line 18
-    .line 19
-    move-result-object v3
+    add-long/2addr v3, v6
 
+    .line 18
+    iget-object v6, p0, LBh7;->c:Luh7;
+
+    .line 19
     .line 20
-    invoke-virtual {v3}, Lcom/snapchat/client/messaging/InteractionInfo;->getMessages()Ljava/util/ArrayList;
+    if-eqz v6, :cond_1
 
     .line 21
     .line 22
-    .line 23
-    move-result-object v3
+    iget-object v6, v6, Luh7;->a:Ljava/lang/Long;
 
+    .line 23
     .line 24
-    if-eqz v3, :cond_0
+    if-eqz v6, :cond_1
 
     .line 25
     .line 26
-    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+    invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
 
     .line 27
     .line 28
     .line 29
-    move-result v3
+    move-result-wide v6
 
     .line 30
     goto :goto_0
 
     .line 31
-    :cond_0
-    const/4 v3, 0x0
+    :cond_1
+    const-wide/16 v6, 0x0
 
     .line 32
-    :goto_0
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getParticipants()Ljava/util/ArrayList;
-
     .line 33
+    :goto_0
+    cmp-long v8, v3, v6
+
     .line 34
     .line 35
-    move-result-object v4
+    if-gtz v8, :cond_2
 
     .line 36
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
     .line 37
+    cmp-long v3, v6, v1
+
     .line 38
     .line 39
-    move-result v4
+    if-gez v3, :cond_2
 
     .line 40
-    const/4 v5, 0x1
+    .line 41
+    return v5
+
+    .line 42
+    :cond_2
+    iget-object v0, v0, Lth7;->c:Lxh7;
+
+    .line 43
+    .line 44
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 45
+    .line 46
+    .line 47
+    const/4 v0, 0x1
+
+    .line 48
+    return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LBh7;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LBh7;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, LBh7;->a:Lth7;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, LBh7;->a:Lth7;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-wide v3, p0, LBh7;->b:J
+
+    .line 25
+    .line 26
+    iget-wide v5, p1, LBh7;->b:J
+
+    .line 27
+    .line 28
+    cmp-long v1, v3, v5
+
+    .line 29
+    .line 30
+    if-eqz v1, :cond_3
+
+    .line 31
+    .line 32
+    return v2
+
+    .line 33
+    :cond_3
+    iget-object v1, p0, LBh7;->c:Luh7;
+
+    .line 34
+    .line 35
+    iget-object p1, p1, LBh7;->c:Luh7;
+
+    .line 36
+    .line 37
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result p1
 
     .line 41
-    if-ne v4, v5, :cond_1
+    if-nez p1, :cond_4
 
     .line 42
     .line 43
-    invoke-virtual {p1}, Lcom/snapchat/client/messaging/FeedEntry;->getConversationType()Lcom/snapchat/client/messaging/ConversationType;
+    return v2
 
     .line 44
-    .line 45
-    .line 46
-    move-result-object p1
+    :cond_4
+    return v0
+.end method
 
-    .line 47
-    sget-object v4, Lcom/snapchat/client/messaging/ConversationType;->ONEONONE:Lcom/snapchat/client/messaging/ConversationType;
+.method public final hashCode()I
+    .locals 3
 
-    .line 48
-    .line 49
-    if-ne p1, v4, :cond_1
+    .line 1
+    iget-object v0, p0, LBh7;->a:Lth7;
 
-    .line 50
-    .line 51
-    const/4 v1, 0x1
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lth7;->hashCode()I
 
-    .line 52
-    :cond_1
-    iget-object p1, p0, LBh7;->c:Ljava/lang/Object;
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
 
-    .line 53
-    .line 54
-    invoke-interface {p1}, LsH9;->getValue()Ljava/lang/Object;
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 55
-    .line 56
-    .line 57
-    move-result-object p1
+    .line 8
+    .line 9
+    iget-wide v1, p0, LBh7;->b:J
 
-    .line 58
-    check-cast p1, Lcom/snapchat/client/messaging/UUID;
+    .line 10
+    .line 11
+    invoke-static {v1, v2}, LTu7;->e(J)I
 
-    .line 59
-    .line 60
-    invoke-static {v0, v2, v3, v1, p1}, LWyk;->e(Ljava/lang/String;Lcom/snapchat/client/messaging/FeedEntryDisplayInfo;IZLcom/snapchat/client/messaging/UUID;)Z
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
 
-    .line 61
-    .line 62
-    .line 63
-    move-result p1
+    .line 15
+    add-int/2addr v1, v0
 
-    .line 64
-    return p1
+    .line 16
+    mul-int/lit8 v1, v1, 0x1f
 
-    .line 65
-    :cond_2
-    return v1
+    .line 17
+    .line 18
+    iget-object v0, p0, LBh7;->c:Luh7;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Luh7;->hashCode()I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    add-int/2addr v0, v1
+
+    .line 25
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "FeatureBadgeState(badge="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LBh7;->a:Lth7;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", currentTimestampMs="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-wide v1, p0, LBh7;->b:J
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", interactions="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LBh7;->c:Luh7;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ")"
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    return-object v0
 .end method

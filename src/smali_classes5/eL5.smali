@@ -3,169 +3,280 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lok0;
+.implements Loua;
+.implements Lmd7;
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/core/Observable;
+.field public final a:Lio/reactivex/rxjava3/subjects/Subject;
 
-.field public final b:LgL5;
+.field public final b:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-.field public final c:Lzre;
-
-.field public final t:Lkotlin/jvm/functions/Function0;
+.field public c:Z
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;LgL5;Lzre;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    sget-object v0, LIGd;->Z:LIGd;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    invoke-static {}, LzHa;->t()Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 5
     .line 6
-    iput-object p1, p0, LeL5;->a:Lio/reactivex/rxjava3/core/Observable;
-
     .line 7
+    move-result-object v0
+
     .line 8
-    iput-object p2, p0, LeL5;->b:LgL5;
+    iput-object v0, p0, LeL5;->a:Lio/reactivex/rxjava3/subjects/Subject;
 
     .line 9
     .line 10
-    iput-object p3, p0, LeL5;->c:Lzre;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 11
     .line 12
-    iput-object v0, p0, LeL5;->t:Lkotlin/jvm/functions/Function0;
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
     .line 13
     .line 14
+    .line 15
+    iput-object v1, p0, LeL5;->b:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 16
+    .line 17
+    const/4 v0, 0x1
+
+    .line 18
+    iput-boolean v0, p0, LeL5;->c:Z
+
+    .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1()Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 4
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
 
     .line 1
-    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, p0, LeL5;->b:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    return-object v0
+.end method
+
+.method public final b(FF)Z
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return p1
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final d(FF)Z
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return p1
+.end method
+
+.method public final e(Landroid/view/MotionEvent;)Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LeL5;->a:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
 
     .line 4
+    invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->setAction(I)V
+
     .line 5
     .line 6
-    iget-object v1, p0, LeL5;->b:LgL5;
-
     .line 7
+    new-instance v1, Lmua;
+
     .line 8
-    iget-object v1, v1, LgL5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
     .line 9
-    .line 10
-    sget-object v2, LSH2;->y0:LSH2;
+    invoke-direct {v1, p1}, Lmua;-><init>(Landroid/view/MotionEvent;)V
 
+    .line 10
     .line 11
     .line 12
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 13
     .line 14
     .line 15
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    new-instance v1, Llua;
 
     .line 16
     .line 17
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-direct {v1, p1}, Llua;-><init>(Landroid/view/MotionEvent;)V
 
     .line 18
     .line 19
     .line 20
-    sget-object v1, LQFa;->a:LQFa;
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 21
     .line 22
-    sget-object v1, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
-
     .line 23
+    const/4 p1, 0x0
+
     .line 24
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 25
-    .line 26
-    .line 27
-    iget-object v1, p0, LeL5;->a:Lio/reactivex/rxjava3/core/Observable;
-
-    .line 28
-    .line 29
-    invoke-static {v1, v3}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v1
-
-    .line 33
-    iget-object v2, p0, LeL5;->c:Lzre;
-
-    .line 34
-    .line 35
-    check-cast v2, LBre;
-
-    .line 36
-    .line 37
-    invoke-virtual {v2}, LBre;->i()Lgn0;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v2
-
-    .line 41
-    iget-object v3, p0, LeL5;->t:Lkotlin/jvm/functions/Function0;
-
-    .line 42
-    .line 43
-    invoke-static {v1, v2, v3}, LzP2;->a0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v1
-
-    .line 47
-    sget-object v2, LPt5;->B0:LPt5;
-
-    .line 48
-    .line 49
-    invoke-static {v1, v2, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 50
-    .line 51
-    .line 52
-    return-object v0
+    return p1
 .end method
 
-.method public final observe()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
+.method public final f(Landroid/view/MotionEvent;)Z
+    .locals 5
 
     .line 1
-    invoke-static {p0}, LXsk;->d(Lok0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    move-result v0
 
     .line 5
-    return-object v0
+    const/4 v1, 0x0
+
+    .line 6
+    const/4 v2, 0x1
+
+    .line 7
+    if-le v0, v2, :cond_0
+
+    .line 8
+    .line 9
+    return v1
+
+    .line 10
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    iget-object v3, p0, LeL5;->a:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 15
+    .line 16
+    const/4 v4, 0x2
+
+    .line 17
+    if-ne v0, v4, :cond_1
+
+    .line 18
+    .line 19
+    iget-boolean v0, p0, LeL5;->c:Z
+
+    .line 20
+    .line 21
+    if-eqz v0, :cond_1
+
+    .line 22
+    .line 23
+    invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->setAction(I)V
+
+    .line 28
+    .line 29
+    .line 30
+    new-instance v4, Lmua;
+
+    .line 31
+    .line 32
+    invoke-direct {v4, v0}, Lmua;-><init>(Landroid/view/MotionEvent;)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-interface {v3, v4}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 36
+    .line 37
+    .line 38
+    :cond_1
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v0
+
+    .line 42
+    if-ne v0, v2, :cond_2
+
+    .line 43
+    .line 44
+    const/4 v1, 0x1
+
+    .line 45
+    :cond_2
+    iput-boolean v1, p0, LeL5;->c:Z
+
+    .line 46
+    .line 47
+    new-instance v0, Lmua;
+
+    .line 48
+    .line 49
+    invoke-direct {v0, p1}, Lmua;-><init>(Landroid/view/MotionEvent;)V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-interface {v3, v0}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 53
+    .line 54
+    .line 55
+    return v2
+.end method
+
+.method public final g(FFF)Z
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return p1
 .end method

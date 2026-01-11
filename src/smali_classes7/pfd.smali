@@ -1,37 +1,36 @@
-.class public abstract Lpfd;
+.class public final Lpfd;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lbwh;
+# instance fields
+.field public final a:Ljava/util/ArrayList;
+
+.field public b:J
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    new-instance v0, Lbwh;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, Lyfd;->Z:Lyfd;
-
     .line 4
+    new-instance v0, Ljava/util/ArrayList;
+
     .line 5
-    const-string v2, "Payments"
-
     .line 6
-    .line 7
-    invoke-direct {v0, v1, v2}, Lbwh;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 7
     .line 8
     .line 9
-    .line 10
-    sput-object v0, Lpfd;->a:Lbwh;
+    iput-object v0, p0, Lpfd;->a:Ljava/util/ArrayList;
 
+    .line 10
     .line 11
-    .line 12
     return-void
 .end method

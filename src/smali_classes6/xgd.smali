@@ -1,104 +1,127 @@
-.class public final Lxgd;
-.super LcIj;
+.class public abstract synthetic Lxgd;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public X:Lcom/snap/component/SnapLabelView;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, LcIj;-><init>()V
+    invoke-static {}, Llgd;->values()[Llgd;
 
     .line 2
     .line 3
     .line 4
-    return-void
-.end method
+    move-result-object v0
 
-
-# virtual methods
-.method public final t(LKu;LKu;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lygd;
-
-    .line 2
-    .line 3
-    check-cast p2, Lygd;
-
-    .line 4
     .line 5
-    iget-object p2, p0, Lxgd;->X:Lcom/snap/component/SnapLabelView;
+    array-length v0, v0
 
     .line 6
+    new-array v0, v0, [I
+
     .line 7
-    if-eqz p2, :cond_0
-
     .line 8
+    :try_start_0
+    sget-object v1, Llgd;->Z:Llgd;
+
     .line 9
-    iget-object p1, p1, Lygd;->X:Landroid/text/SpannedString;
-
     .line 10
-    .line 11
-    invoke-virtual {p2, p1}, Lcom/snap/component/SnapLabelView;->C(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
     .line 12
     .line 13
+    move-result v1
+
     .line 14
-    return-void
+    const/4 v2, 0x1
 
     .line 15
-    :cond_0
-    const-string p1, "textView"
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
     .line 17
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :catch_0
+    :try_start_1
+    sget-object v1, Llgd;->h0:Llgd;
 
     .line 18
     .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 20
-    const/4 p1, 0x0
-
     .line 21
-    throw p1
-.end method
+    .line 22
+    move-result v1
 
-.method public final u(Landroid/view/View;)V
-    .locals 1
+    .line 23
+    const/4 v2, 0x2
 
-    .line 1
-    const v0, 0x7f0b1756
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 25
+    .line 26
+    :catch_1
+    :try_start_2
+    sget-object v1, Llgd;->g0:Llgd;
 
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 8
-    check-cast p1, Lcom/snap/component/SnapLabelView;
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
 
-    .line 9
-    .line 10
-    invoke-virtual {p1}, Lcom/snap/component/SnapLabelView;->A()V
+    .line 32
+    const/4 v2, 0x3
 
-    .line 11
-    .line 12
-    .line 13
-    iput-object p1, p0, Lxgd;->X:Lcom/snap/component/SnapLabelView;
+    .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 14
-    .line 15
+    .line 34
+    .line 35
+    :catch_2
+    :try_start_3
+    sget-object v1, Llgd;->e0:Llgd;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 43
+    .line 44
+    :catch_3
+    sput-object v0, Lxgd;->a:[I
+
+    .line 45
+    .line 46
     return-void
 .end method

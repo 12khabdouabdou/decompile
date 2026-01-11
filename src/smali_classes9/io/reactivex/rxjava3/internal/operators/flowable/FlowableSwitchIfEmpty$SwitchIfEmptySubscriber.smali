@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/core/Flowable;
 
@@ -39,7 +39,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Flowable;LV6i;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Flowable;Lmvi;)V
     .locals 0
 
     .line 1
@@ -48,7 +48,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:LV6i;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -107,7 +107,7 @@
 
     .line 9
     .line 10
-    invoke-interface {v0, p0}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v0, p0}, LSFe;->subscribe(Lmvi;)V
 
     .line 11
     .line 12
@@ -116,11 +116,11 @@
 
     .line 14
     :cond_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:Lmvi;
 
     .line 15
     .line 16
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 17
     .line 18
@@ -132,11 +132,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 4
     .line 5
@@ -164,11 +164,11 @@
     .line 7
     .line 8
     :cond_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;->a:Lmvi;
 
     .line 9
     .line 10
-    invoke-interface {v0, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 11
     .line 12
@@ -176,7 +176,7 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 1
 
     .line 1
@@ -184,7 +184,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;->c(Lc7i;)V
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;->c(Ltvi;)V
 
     .line 4
     .line 5

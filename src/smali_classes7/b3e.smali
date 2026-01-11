@@ -1,221 +1,145 @@
 .class public final Lb3e;
-.super LJ04;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public Z:Lcom/snap/component/cells/SnapActionCellView;
+.field public final a:LD7e;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(LD7e;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LJ04;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
+    iput-object p1, p0, Lb3e;->a:LD7e;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final F(LEX0;Landroid/view/View;)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    check-cast p1, LT7e;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    iget-object p1, p1, LT7e;->b:LBre;
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    check-cast p2, Lcom/snap/component/cards/SnapCardView;
+    :cond_0
+    instance-of v1, p1, Lb3e;
 
     .line 6
     .line 7
-    invoke-static {p2}, Lztk;->g(Landroid/view/ViewGroup;)Landroid/view/View;
+    const/4 v2, 0x0
 
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
     .line 10
-    move-result-object p1
+    return v2
 
     .line 11
-    check-cast p1, Lcom/snap/component/cells/SnapActionCellView;
+    :cond_1
+    check-cast p1, Lb3e;
 
     .line 12
     .line 13
-    iput-object p1, p0, Lb3e;->Z:Lcom/snap/component/cells/SnapActionCellView;
+    iget-object v1, p0, Lb3e;->a:LD7e;
 
     .line 14
     .line 15
-    return-void
-.end method
-
-.method public final t(LKu;LKu;)V
-    .locals 5
-
-    .line 1
-    check-cast p1, Lc3e;
-
-    .line 2
-    .line 3
-    check-cast p2, Lc3e;
-
-    .line 4
-    .line 5
-    sget-object p2, LXRg;->a:LWRg;
-
-    .line 6
-    .line 7
-    const-string v0, "ProfileActionCellViewBinding:bind:"
-
-    .line 8
-    .line 9
-    invoke-virtual {p2, v0}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
-
-    .line 13
-    :try_start_0
-    iget-object v1, p0, Lb3e;->Z:Lcom/snap/component/cells/SnapActionCellView;
-
-    .line 14
-    .line 15
-    if-eqz v1, :cond_0
+    iget-object p1, p1, Lb3e;->a:LD7e;
 
     .line 16
     .line 17
-    iget-object v2, p1, Lc3e;->X:Landroid/graphics/drawable/Drawable;
+    if-eq v1, p1, :cond_2
 
     .line 18
     .line 19
-    const/16 v3, 0xc
+    return v2
 
     .line 20
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lb3e;->a:LD7e;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "PreloaderConfig(previewFlavor="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lb3e;->a:LD7e;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ")"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
     .line 21
-    const/4 v4, 0x0
+    move-result-object v0
 
     .line 22
-    invoke-static {v1, v2, v4, v3}, LQzg;->M(LQzg;Landroid/graphics/drawable/Drawable;ZI)V
-
-    .line 23
-    .line 24
-    .line 25
-    iget-object v2, p1, Lc3e;->Z:Ljava/lang/String;
-
-    .line 26
-    .line 27
-    invoke-virtual {v1, v2}, LEHg;->c0(Ljava/lang/CharSequence;)V
-
-    .line 28
-    .line 29
-    .line 30
-    iget-object v2, p1, Lc3e;->e0:Ljava/lang/String;
-
-    .line 31
-    .line 32
-    invoke-virtual {v1, v2}, LEHg;->a0(Ljava/lang/CharSequence;)V
-
-    .line 33
-    .line 34
-    .line 35
-    iget v2, p1, Lc3e;->Y:I
-
-    .line 36
-    .line 37
-    invoke-virtual {v1, v2}, LEHg;->W(I)V
-
-    .line 38
-    .line 39
-    .line 40
-    iget-object v2, v1, Lcom/snap/component/cells/SnapActionCellView;->A0:LLu6;
-
-    .line 41
-    .line 42
-    const-string v3, "ProfileActionCell_action"
-
-    .line 43
-    .line 44
-    iput-object v3, v2, Ltt9;->i0:Ljava/lang/String;
-
-    .line 45
-    .line 46
-    new-instance v2, LEDd;
-
-    .line 47
-    .line 48
-    const/16 v3, 0x12
-
-    .line 49
-    .line 50
-    invoke-direct {v2, p0, v3, p1}, LEDd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 51
-    .line 52
-    .line 53
-    iput-object v2, v1, LEHg;->u0:LrE9;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 54
-    .line 55
-    invoke-virtual {p2, v0}, LWRg;->h(I)V
-
-    .line 56
-    .line 57
-    .line 58
-    return-void
-
-    .line 59
-    :catchall_0
-    move-exception p1
-
-    .line 60
-    goto :goto_0
-
-    .line 61
-    :cond_0
-    :try_start_1
-    const-string p1, "infoCellView"
-
-    .line 62
-    .line 63
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 64
-    .line 65
-    .line 66
-    const/4 p1, 0x0
-
-    .line 67
-    throw p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 68
-    :goto_0
-    sget-object p2, LXRg;->b:Lzhi;
-
-    .line 69
-    .line 70
-    if-eqz p2, :cond_1
-
-    .line 71
-    .line 72
-    invoke-virtual {p2, v0}, Lzhi;->o(I)V
-
-    .line 73
-    .line 74
-    .line 75
-    :cond_1
-    throw p1
+    return-object v0
 .end method

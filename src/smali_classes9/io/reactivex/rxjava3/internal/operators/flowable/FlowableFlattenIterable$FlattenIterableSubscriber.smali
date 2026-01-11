@@ -34,11 +34,11 @@
 # instance fields
 .field public final X:Ljava/util/concurrent/atomic/AtomicLong;
 
-.field public Y:Lc7i;
+.field public Y:Ltvi;
 
 .field public Z:Lio/reactivex/rxjava3/operators/SimpleQueue;
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/functions/Function;
 
@@ -60,7 +60,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/functions/Function;I)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)V
     .locals 0
 
     .line 1
@@ -69,7 +69,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -123,7 +123,7 @@
 
 
 # virtual methods
-.method public final a(ZZLV6i;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
+.method public final a(ZZLmvi;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
     .locals 3
 
     .line 1
@@ -199,7 +199,7 @@
     .line 34
     .line 35
     .line 36
-    invoke-interface {p3, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p3, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 37
     .line 38
@@ -212,7 +212,7 @@
 
     .line 41
     .line 42
-    invoke-interface {p3}, LV6i;->onComplete()V
+    invoke-interface {p3}, Lmvi;->onComplete()V
 
     .line 43
     .line 44
@@ -227,7 +227,7 @@
     return p1
 .end method
 
-.method public final b()V
+.method public final c()V
     .locals 17
 
     .line 1
@@ -252,7 +252,7 @@
     .line 10
     .line 11
     :cond_0
-    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:LV6i;
+    iget-object v2, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:Lmvi;
 
     .line 12
     .line 13
@@ -330,7 +330,7 @@
 
     .line 41
     :goto_2
-    invoke-virtual {v1, v9, v11, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLV6i;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
+    invoke-virtual {v1, v9, v11, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLmvi;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
 
     .line 42
     .line 43
@@ -413,14 +413,14 @@
 
     .line 79
     .line 80
-    iget-object v9, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v9, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 81
     .line 82
     int-to-long v10, v6
 
     .line 83
-    invoke-interface {v9, v10, v11}, Lc7i;->l(J)V
+    invoke-interface {v9, v10, v11}, Ltvi;->l(J)V
 
     .line 84
     .line 85
@@ -458,11 +458,11 @@
     .line 96
     .line 97
     .line 98
-    iget-object v3, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v3, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 99
     .line 100
-    invoke-interface {v3}, Lc7i;->cancel()V
+    invoke-interface {v3}, Ltvi;->cancel()V
 
     .line 101
     .line 102
@@ -488,7 +488,7 @@
     move-result-object v0
 
     .line 114
-    invoke-interface {v2, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v2, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 115
     .line 116
@@ -505,11 +505,11 @@
     .line 120
     .line 121
     .line 122
-    iget-object v4, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v4, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 123
     .line 124
-    invoke-interface {v4}, Lc7i;->cancel()V
+    invoke-interface {v4}, Ltvi;->cancel()V
 
     .line 125
     .line 126
@@ -544,7 +544,7 @@
     .line 141
     .line 142
     .line 143
-    invoke-interface {v2, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v2, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 144
     .line 145
@@ -590,7 +590,7 @@
 
     .line 163
     .line 164
-    invoke-virtual {v1, v15, v5, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLV6i;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
+    invoke-virtual {v1, v15, v5, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLmvi;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
 
     .line 165
     .line 166
@@ -618,7 +618,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_3
 
     .line 176
-    invoke-interface {v2, v15}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v2, v15}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 177
     .line 178
@@ -627,7 +627,7 @@
 
     .line 180
     .line 181
-    invoke-virtual {v1, v15, v5, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLV6i;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
+    invoke-virtual {v1, v15, v5, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLmvi;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
 
     .line 182
     .line 183
@@ -689,14 +689,14 @@
 
     .line 208
     .line 209
-    iget-object v15, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v15, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 210
     .line 211
     int-to-long v4, v6
 
     .line 212
-    invoke-interface {v15, v4, v5}, Lc7i;->l(J)V
+    invoke-interface {v15, v4, v5}, Ltvi;->l(J)V
 
     .line 213
     .line 214
@@ -734,11 +734,11 @@
 
     .line 227
     .line 228
-    iget-object v3, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v3, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 229
     .line 230
-    invoke-interface {v3}, Lc7i;->cancel()V
+    invoke-interface {v3}, Ltvi;->cancel()V
 
     .line 231
     .line 232
@@ -764,7 +764,7 @@
     move-result-object v0
 
     .line 244
-    invoke-interface {v2, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v2, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 245
     .line 246
@@ -785,11 +785,11 @@
 
     .line 253
     .line 254
-    iget-object v3, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v3, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 255
     .line 256
-    invoke-interface {v3}, Lc7i;->cancel()V
+    invoke-interface {v3}, Ltvi;->cancel()V
 
     .line 257
     .line 258
@@ -815,7 +815,7 @@
     move-result-object v0
 
     .line 270
-    invoke-interface {v2, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v2, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 271
     .line 272
@@ -864,7 +864,7 @@
 
     .line 291
     :goto_7
-    invoke-virtual {v1, v4, v5, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLV6i;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
+    invoke-virtual {v1, v4, v5, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a(ZZLmvi;Lio/reactivex/rxjava3/operators/SimpleQueue;)Z
 
     .line 292
     .line 293
@@ -970,11 +970,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 9
     .line 10
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 11
     .line 12
@@ -1093,7 +1093,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->b()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->c()V
 
     .line 13
     .line 14
@@ -1125,7 +1125,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->b()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->c()V
 
     .line 10
     .line 11
@@ -1168,7 +1168,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->b()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->c()V
 
     .line 17
     .line 18
@@ -1243,7 +1243,7 @@
 
     .line 27
     :cond_1
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->b()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->c()V
 
     .line 28
     .line 29
@@ -1251,15 +1251,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -1271,7 +1271,7 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->Y:Ltvi;
 
     .line 10
     .line 11
@@ -1293,7 +1293,7 @@
     const/4 v1, 0x3
 
     .line 19
-    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->s(I)I
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->r(I)I
 
     .line 20
     .line 21
@@ -1320,11 +1320,11 @@
 
     .line 31
     .line 32
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:Lmvi;
 
     .line 33
     .line 34
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 35
     .line 36
@@ -1348,11 +1348,11 @@
 
     .line 44
     .line 45
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:Lmvi;
 
     .line 46
     .line 47
-    invoke-interface {v0, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v0, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 48
     .line 49
@@ -1364,7 +1364,7 @@
     int-to-long v0, v0
 
     .line 53
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 54
     .line 55
@@ -1390,11 +1390,11 @@
 
     .line 65
     .line 66
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;->a:Lmvi;
 
     .line 67
     .line 68
-    invoke-interface {v0, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v0, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 69
     .line 70
@@ -1406,7 +1406,7 @@
     int-to-long v0, v0
 
     .line 74
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 75
     .line 76
@@ -1527,7 +1527,7 @@
     return-object v2
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 1
 
     .line 1

@@ -20,7 +20,7 @@
 
     const/4 v1, 0x2
 
-    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/progressbar/YellowHorizontalIndeterminateProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/progressbar/YellowHorizontalIndeterminateProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f0714b8
+    const p2, 0x7f0714d3
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -55,7 +55,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f06020f
+    const p2, 0x7f060267
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f06020b
+    const v2, 0x7f060263
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -77,7 +77,7 @@
 
     move-result-object v4
 
-    const v5, 0x7f060202
+    const v5, 0x7f06025a
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -177,7 +177,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -204,14 +204,14 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LvYg;
+    new-instance v0, Likh;
 
     .line 5
     .line 6
     const/4 v1, 0x7
 
     .line 7
-    invoke-direct {v0, v1, p0}, LvYg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Likh;-><init>(ILjava/lang/Object;)V
 
     .line 8
     .line 9

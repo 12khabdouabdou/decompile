@@ -8,14 +8,14 @@
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
         "Ljava/lang/Object;",
-        "LF0b;",
+        "LHdb;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LE0b;
+.field public static final Companion:LGdb;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LE0b;
+    new-instance v0, LGdb;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/map/layers/MapLayerLoader;->Companion:LE0b;
+    sput-object v0, Lcom/snap/map/layers/MapLayerLoader;->Companion:LGdb;
 
     .line 7
     .line 8
@@ -62,68 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/map/layers/MapLayerLoader;
-    .locals 9
-
-    sget-object v0, Lcom/snap/map/layers/MapLayerLoader;->Companion:LE0b;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 1
-    new-instance v2, Lcom/snap/map/layers/MapLayerLoader;
-
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-direct {v2, v0}, Lcom/snap/map/layers/MapLayerLoader;-><init>(Landroid/content/Context;)V
-
-    .line 2
-    invoke-static {}, Lcom/snap/map/layers/MapLayerLoader;->access$getComponentPath$cp()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v8, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    move-object v1, p0
-
-    move-object v6, p1
-
-    .line 3
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
-
-    return-object v2
-.end method
-
-.method public static final create(LqZ8;Ljava/lang/Object;LF0b;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/map/layers/MapLayerLoader;
+.method public static final create(LZ69;Ljava/lang/Object;LHdb;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/map/layers/MapLayerLoader;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
+            "LZ69;",
             "Ljava/lang/Object;",
-            "LF0b;",
-            "LTB3;",
+            "LHdb;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/map/layers/MapLayerLoader;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/map/layers/MapLayerLoader;->Companion:LE0b;
+    sget-object v0, Lcom/snap/map/layers/MapLayerLoader;->Companion:LGdb;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     new-instance v2, Lcom/snap/map/layers/MapLayerLoader;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -147,7 +108,46 @@
     move-object v7, p4
 
     .line 6
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
+
+    return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/map/layers/MapLayerLoader;
+    .locals 9
+
+    sget-object v0, Lcom/snap/map/layers/MapLayerLoader;->Companion:LGdb;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 1
+    new-instance v2, Lcom/snap/map/layers/MapLayerLoader;
+
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Lcom/snap/map/layers/MapLayerLoader;-><init>(Landroid/content/Context;)V
+
+    .line 2
+    invoke-static {}, Lcom/snap/map/layers/MapLayerLoader;->access$getComponentPath$cp()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v8, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    move-object v1, p0
+
+    move-object v6, p1
+
+    .line 3
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method

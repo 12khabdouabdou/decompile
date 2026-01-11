@@ -7,27 +7,27 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/people/CachableQuery<",
-        "LGt3;",
+        "LIw3;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Lzre;Lio/reactivex/rxjava3/core/Observable;)V
+.method public constructor <init>(LlJe;Lio/reactivex/rxjava3/core/Observable;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzre;",
+            "LlJe;",
             "Lio/reactivex/rxjava3/core/Observable<",
-            "LGt3;",
+            "LIw3;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/snap/composer/people/CachableQuery;-><init>(Lzre;Lio/reactivex/rxjava3/core/Observable;)V
+    invoke-direct {p0, p1, p2}, Lcom/snap/composer/people/CachableQuery;-><init>(LlJe;Lio/reactivex/rxjava3/core/Observable;)V
 
     .line 2
     .line 3

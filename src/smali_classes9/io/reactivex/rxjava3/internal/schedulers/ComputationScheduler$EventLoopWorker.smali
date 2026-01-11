@@ -79,12 +79,12 @@
 
     .line 26
     .line 27
-    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/internal/disposables/ListCompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/internal/disposables/ListCompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 28
     .line 29
     .line 30
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/internal/disposables/ListCompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/internal/disposables/ListCompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 31
     .line 32
@@ -94,18 +94,7 @@
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/schedulers/ComputationScheduler$EventLoopWorker;->X:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final d(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+.method public final b(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
     .locals 6
 
     .line 1
@@ -153,6 +142,17 @@
 
     .line 21
     return-object p1
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/schedulers/ComputationScheduler$EventLoopWorker;->X:Z
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public final dispose()V

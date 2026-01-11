@@ -55,7 +55,7 @@
     .line 2
     .line 3
     :try_start_0
-    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDelay$DelaySubscriber;->a:LV6i;
+    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDelay$DelaySubscriber;->a:Lmvi;
 
     .line 4
     .line 5
@@ -63,7 +63,7 @@
 
     .line 6
     .line 7
-    invoke-interface {v1, v2}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v2}, Lmvi;->onError(Ljava/lang/Throwable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

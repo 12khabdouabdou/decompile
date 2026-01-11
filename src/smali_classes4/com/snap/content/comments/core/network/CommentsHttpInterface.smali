@@ -4,29 +4,26 @@
 
 
 # virtual methods
-.method public abstract commentReact(Ljava/lang/String;LVVe;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract commentReact(Ljava/lang/String;LNdf;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LVVe;
-        .annotation runtime Ljv1;
+    .param p2    # LNdf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -37,41 +34,41 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LVVe;",
+            "LNdf;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract commentsLookup(Ljava/lang/String;LrVe;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract commentsLookup(Ljava/lang/String;Lldf;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LrVe;
-        .annotation runtime Ljv1;
+    .param p2    # Lldf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -82,41 +79,41 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LrVe;",
+            "Lldf;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LsVe;",
+            "Ljnf<",
+            "Lmdf;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract deleteComment(Ljava/lang/String;Lb26;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract deleteComment(Ljava/lang/String;La56;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # Lb26;
-        .annotation runtime Ljv1;
+    .param p2    # La56;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -127,41 +124,41 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "Lb26;",
+            "La56;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getComments(Ljava/lang/String;LJp8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getComments(Ljava/lang/String;Lqw8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LJp8;
-        .annotation runtime Ljv1;
+    .param p2    # Lqw8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -172,41 +169,41 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LJp8;",
+            "Lqw8;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LKp8;",
+            "Ljnf<",
+            "Lrw8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getUserComments(Ljava/lang/String;LOs8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getUserComments(Ljava/lang/String;Lvz8;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LOs8;
-        .annotation runtime Ljv1;
+    .param p2    # Lvz8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -217,41 +214,41 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LOs8;",
+            "Lvz8;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LPs8;",
+            "Ljnf<",
+            "Lwz8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract postComment(Ljava/lang/String;LbGd;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract postComment(Ljava/lang/String;LuXd;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LbGd;
-        .annotation runtime Ljv1;
+    .param p2    # LuXd;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -262,41 +259,41 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LbGd;",
+            "LuXd;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LcGd;",
+            "Ljnf<",
+            "LvXd;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract updateAllCommentsState(Ljava/lang/String;Lucj;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract updateAllCommentsState(Ljava/lang/String;LmBj;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # Lucj;
-        .annotation runtime Ljv1;
+    .param p2    # LmBj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -307,41 +304,41 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "Lucj;",
+            "LmBj;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract updateCommentState(Ljava/lang/String;LCej;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract updateCommentState(Ljava/lang/String;LvDj;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LCej;
-        .annotation runtime Ljv1;
+    .param p2    # LvDj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf"
@@ -352,14 +349,17 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LCej;",
+            "LvDj;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

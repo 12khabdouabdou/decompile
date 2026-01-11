@@ -41,11 +41,11 @@
 
 
 # virtual methods
-.method public final query(LHh9;)Lio/reactivex/rxjava3/core/Maybe;
+.method public final query(Ldq9;)Lio/reactivex/rxjava3/core/Maybe;
     .locals 4
 
     .line 1
-    sget-object v0, LoRg;->c:LoRg;
+    sget-object v0, Lrdh;->c:Lrdh;
 
     .line 2
     .line 3
@@ -53,7 +53,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, LPZj;->y(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, LQIc;->d0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7
@@ -65,7 +65,7 @@
 
     .line 10
     .line 11
-    invoke-static {v1}, LPZj;->y(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, LQIc;->d0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13
@@ -102,7 +102,7 @@
 
     .line 28
     .line 29
-    invoke-interface {v2, v3, v0, v1, p1}, Lcom/snap/lenses/infocard/data/InfoCardHttpInterface$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LHh9;)Lio/reactivex/rxjava3/core/Maybe;
+    invoke-interface {v2, v3, v0, v1, p1}, Lcom/snap/lenses/infocard/data/InfoCardHttpInterface$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ldq9;)Lio/reactivex/rxjava3/core/Maybe;
 
     .line 30
     .line 31

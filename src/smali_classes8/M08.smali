@@ -1,541 +1,270 @@
-.class public LM08;
-.super LGh7;
+.class public final LM08;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public A:LCQh;
+.field public final synthetic a:I
 
-.field public B:Ljava/lang/String;
-
-.field public C:Ljava/lang/String;
-
-.field public D:Ljava/lang/Double;
-
-.field public E:Ljava/lang/Double;
-
-.field public F:Ljava/lang/Double;
-
-.field public G:Ljava/lang/Double;
-
-.field public H:Ljava/lang/Boolean;
-
-.field public I:Ljava/lang/Boolean;
-
-.field public J:Ljava/lang/Boolean;
-
-.field public K:Ljava/lang/String;
-
-.field public L:Ljava/lang/Long;
-
-.field public M:Ljava/lang/Long;
-
-.field public N:Ljava/lang/Boolean;
-
-.field public O:Ljava/lang/String;
-
-.field public P:Ljava/lang/String;
-
-.field public t:Ljava/lang/String;
-
-.field public u:LGi7;
-
-.field public v:Llc;
-
-.field public w:Llc;
-
-.field public x:LRi7;
-
-.field public y:Ljava/lang/String;
-
-.field public z:LCQh;
+.field public final synthetic b:LN08;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public synthetic constructor <init>(LN08;I)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    iput p2, p0, LM08;->a:I
 
-    .line 2
-    .line 3
-    const-string v1, "FULL_SCREEN_CONTENT_VIEW_SESSION"
+    iput-object p1, p0, LM08;->b:LN08;
 
-    .line 4
-    .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
+    const/4 p1, 0x0
 
-    .line 6
-    .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 8
-    .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
-    .line 10
-    .line 11
-    move-object v0, p0
-
-    .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 13
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 4
+.method public final d()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    const/4 v0, 0x5
+    iget v0, p0, LM08;->a:I
 
     .line 2
-    new-array v1, v0, [B
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    const/4 v2, 0x3
-
     .line 5
-    iget-object v3, p0, LM08;->u:LGi7;
-
     .line 6
-    .line 7
-    invoke-static {p1, v2, v1, v3, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
+    iget-object v0, p0, LM08;->b:LN08;
 
+    .line 7
     .line 8
+    iget-object v0, v0, LN08;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
+
     .line 9
     .line 10
-    const/4 v2, 0x4
+    invoke-virtual {v0}, Lcom/snap/core/application/SnapResourcesContextWrapper;->getResources()Landroid/content/res/Resources;
 
     .line 11
-    iget-object v3, p0, LM08;->H:Ljava/lang/Boolean;
-
     .line 12
     .line 13
-    invoke-static {p1, v2, v1, v3, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
+    move-result-object v0
 
     .line 14
+    const v1, 0x7f070682
+
     .line 15
     .line 16
-    iget-object v2, p0, LM08;->w:Llc;
-
     .line 17
-    .line 18
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
 
+    .line 18
     .line 19
     .line 20
+    move-result v0
+
     .line 21
-    const/4 v0, 0x6
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     .line 22
-    iget-object v2, p0, LM08;->J:Ljava/lang/Boolean;
-
     .line 23
     .line 24
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
+    move-result-object v0
 
     .line 25
-    .line 26
-    .line 27
-    const/4 v0, 0x7
+    return-object v0
 
+    .line 26
+    :pswitch_0
+    iget-object v0, p0, LM08;->b:LN08;
+
+    .line 27
     .line 28
-    iget-object v2, p0, LM08;->I:Ljava/lang/Boolean;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 29
     .line 30
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
     .line 31
+    new-instance v1, Landroid/graphics/Paint;
+
     .line 32
     .line 33
-    const/16 v0, 0x8
+    const/4 v2, 0x1
 
     .line 34
-    .line 35
-    iget-object v2, p0, LGh7;->q:LGi7;
+    invoke-direct {v1, v2}, Landroid/graphics/Paint;-><init>(I)V
 
+    .line 35
     .line 36
     .line 37
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
+    sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     .line 38
     .line 39
-    .line 40
-    const/16 v0, 0x9
+    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
+    .line 40
     .line 41
     .line 42
-    iget-object v2, p0, LGh7;->p:Ljava/lang/String;
+    iget-object v0, v0, LN08;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
     .line 43
     .line 44
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    invoke-virtual {v0}, Lcom/snap/core/application/SnapResourcesContextWrapper;->getResources()Landroid/content/res/Resources;
 
     .line 45
     .line 46
     .line 47
-    const/16 v0, 0xa
+    move-result-object v0
 
     .line 48
-    .line 49
-    iget-object v2, p0, LM08;->F:Ljava/lang/Double;
+    const v2, 0x7f070683
 
+    .line 49
     .line 50
     .line 51
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->x0(LAK3;I[BLjava/lang/Double;Ljava/util/Set;)V
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimension(I)F
 
     .line 52
     .line 53
     .line 54
-    const/16 v0, 0xb
+    move-result v0
 
     .line 55
-    .line 56
-    iget-object v2, p0, LM08;->E:Ljava/lang/Double;
+    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setTextSize(F)V
 
+    .line 56
     .line 57
     .line 58
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->x0(LAK3;I[BLjava/lang/Double;Ljava/util/Set;)V
+    sget-object v0, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
     .line 59
     .line 60
-    .line 61
-    const/16 v0, 0xd
+    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
+    .line 61
     .line 62
     .line 63
-    iget-object v2, p0, LM08;->G:Ljava/lang/Double;
+    return-object v1
 
     .line 64
-    .line 65
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->x0(LAK3;I[BLjava/lang/Double;Ljava/util/Set;)V
+    :pswitch_1
+    iget-object v0, p0, LM08;->b:LN08;
 
+    .line 65
     .line 66
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 67
     .line 68
-    const/16 v0, 0xe
-
     .line 69
-    .line 70
-    iget-object v2, p0, LM08;->t:Ljava/lang/String;
+    new-instance v1, Landroid/graphics/Paint;
 
+    .line 70
     .line 71
+    const/4 v2, 0x1
+
     .line 72
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    invoke-direct {v1, v2}, Landroid/graphics/Paint;-><init>(I)V
 
     .line 73
     .line 74
     .line 75
-    const/16 v0, 0xf
+    sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     .line 76
     .line 77
-    iget-object v2, p0, LM08;->D:Ljava/lang/Double;
+    invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 78
     .line 79
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->x0(LAK3;I[BLjava/lang/Double;Ljava/util/Set;)V
-
     .line 80
+    iget-object v0, v0, LN08;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
+
     .line 81
     .line 82
-    const/16 v0, 0x10
+    invoke-virtual {v0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     .line 83
     .line 84
-    iget-object v2, p0, LGh7;->o:Ljava/lang/String;
-
     .line 85
+    move-result-object v0
+
     .line 86
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    const v2, 0x7f040545
 
     .line 87
     .line 88
     .line 89
-    const/16 v0, 0x11
+    invoke-static {v0, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 90
     .line 91
-    iget-object v2, p0, LGh7;->j:LZ8d;
-
     .line 92
+    move-result v0
+
     .line 93
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
+    invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 94
     .line 95
     .line 96
-    const/16 v0, 0x12
+    return-object v1
 
     .line 97
+    :pswitch_2
+    iget-object v0, p0, LM08;->b:LN08;
+
     .line 98
-    iget-object v2, p0, LGh7;->k:Ljava/lang/String;
-
     .line 99
-    .line 100
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    iget-object v0, v0, LN08;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
+    .line 100
     .line 101
+    invoke-virtual {v0}, Lcom/snap/core/application/SnapResourcesContextWrapper;->getResources()Landroid/content/res/Resources;
+
     .line 102
     .line 103
-    const/16 v0, 0x13
-
     .line 104
+    move-result-object v0
+
     .line 105
-    iget-object v2, p0, LGh7;->l:LRi7;
+    const v1, 0x7f070681
 
     .line 106
     .line 107
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
     .line 108
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
     .line 109
     .line 110
-    const/16 v0, 0x14
-
     .line 111
+    move-result v0
+
     .line 112
-    iget-object v2, p0, LM08;->y:Ljava/lang/String;
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     .line 113
     .line 114
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
     .line 115
+    move-result-object v0
+
     .line 116
+    return-object v0
+
     .line 117
-    const/16 v0, 0x15
-
-    .line 118
-    .line 119
-    iget-object v2, p0, LGh7;->n:Ljava/lang/String;
-
-    .line 120
-    .line 121
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 122
-    .line 123
-    .line 124
-    const/16 v0, 0x16
-
-    .line 125
-    .line 126
-    iget-object v2, p0, LGh7;->m:Ljava/lang/Long;
-
-    .line 127
-    .line 128
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 129
-    .line 130
-    .line 131
-    const/16 v0, 0x17
-
-    .line 132
-    .line 133
-    iget-object v2, p0, LM08;->K:Ljava/lang/String;
-
-    .line 134
-    .line 135
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 136
-    .line 137
-    .line 138
-    const/16 v0, 0x19
-
-    .line 139
-    .line 140
-    iget-object v2, p0, LM08;->z:LCQh;
-
-    .line 141
-    .line 142
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 143
-    .line 144
-    .line 145
-    const/16 v0, 0x1a
-
-    .line 146
-    .line 147
-    iget-object v2, p0, LM08;->v:Llc;
-
-    .line 148
-    .line 149
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 150
-    .line 151
-    .line 152
-    const/16 v0, 0x1b
-
-    .line 153
-    .line 154
-    iget-object v2, p0, LM08;->B:Ljava/lang/String;
-
-    .line 155
-    .line 156
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 157
-    .line 158
-    .line 159
-    const/16 v0, 0x1c
-
-    .line 160
-    .line 161
-    iget-object v2, p0, LM08;->A:LCQh;
-
-    .line 162
-    .line 163
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 164
-    .line 165
-    .line 166
-    const/16 v0, 0x1d
-
-    .line 167
-    .line 168
-    iget-object v2, p0, LM08;->C:Ljava/lang/String;
-
-    .line 169
-    .line 170
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 171
-    .line 172
-    .line 173
-    const/16 v0, 0x1e
-
-    .line 174
-    .line 175
-    iget-object v2, p0, LGh7;->s:Ljava/lang/Long;
-
-    .line 176
-    .line 177
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 178
-    .line 179
-    .line 180
-    const/16 v0, 0x1f
-
-    .line 181
-    .line 182
-    iget-object v2, p0, LGh7;->r:Ljava/lang/Double;
-
-    .line 183
-    .line 184
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->x0(LAK3;I[BLjava/lang/Double;Ljava/util/Set;)V
-
-    .line 185
-    .line 186
-    .line 187
-    const/16 v0, 0x20
-
-    .line 188
-    .line 189
-    iget-object v2, p0, LM08;->M:Ljava/lang/Long;
-
-    .line 190
-    .line 191
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 192
-    .line 193
-    .line 194
-    const/16 v0, 0x21
-
-    .line 195
-    .line 196
-    iget-object v2, p0, LM08;->L:Ljava/lang/Long;
-
-    .line 197
-    .line 198
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 199
-    .line 200
-    .line 201
-    const/16 v0, 0x22
-
-    .line 202
-    .line 203
-    iget-object v2, p0, LM08;->x:LRi7;
-
-    .line 204
-    .line 205
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 206
-    .line 207
-    .line 208
-    const/16 v0, 0x24
-
-    .line 209
-    .line 210
-    iget-object v2, p0, LM08;->O:Ljava/lang/String;
-
-    .line 211
-    .line 212
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 213
-    .line 214
-    .line 215
-    const/16 v0, 0x26
-
-    .line 216
-    .line 217
-    iget-object v2, p0, LM08;->P:Ljava/lang/String;
-
-    .line 218
-    .line 219
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 220
-    .line 221
-    .line 222
-    const/16 v0, 0x27
-
-    .line 223
-    .line 224
-    iget-object v2, p0, LM08;->N:Ljava/lang/Boolean;
-
-    .line 225
-    .line 226
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 227
-    .line 228
-    .line 229
-    invoke-virtual {p1, v1}, LAK3;->m([B)V
-
-    .line 230
-    .line 231
-    .line 232
-    return-void
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x1514
-
-    .line 2
-    .line 3
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -323,19 +323,23 @@ uniform vec4 mainColor;
 uniform mat3 mainFillTextureTransform;
 uniform vec4 mainFillTextureUvMinMax;
 uniform vec4 mainFillTextureBorderColor;
+uniform vec4 mainFillColorTint;
 uniform vec4 shadowColor;
 uniform mat3 shadowFillTextureTransform;
 uniform vec4 shadowFillTextureUvMinMax;
 uniform vec4 shadowFillTextureBorderColor;
+uniform vec4 shadowFillColorTint;
 uniform vec4 outlineColor;
 uniform mat3 outlineFillTextureTransform;
 uniform vec4 outlineFillTextureUvMinMax;
 uniform vec4 outlineFillTextureBorderColor;
+uniform vec4 outlineFillColorTint;
 uniform vec2 backgroundSize;
 uniform vec4 backgroundColor;
 uniform mat3 backgroundFillTextureTransform;
 uniform vec4 backgroundFillTextureUvMinMax;
 uniform vec4 backgroundFillTextureBorderColor;
+uniform vec4 backgroundFillColorTint;
 uniform mat3 colorTextureTransform;
 uniform vec4 colorTextureUvMinMax;
 uniform vec4 colorTextureBorderColor;
@@ -573,7 +577,7 @@ l9_9=1-sc_GetStereoViewIndex();
 l9_9=sc_GetStereoViewIndex();
 }
 #endif
-l9_8=sc_SampleTextureBiasOrLevel(mainFillTextureDims.xy,mainFillTextureLayout,l9_9,l9_0,(int(SC_USE_UV_TRANSFORM_mainFillTexture)!=0),mainFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_mainFillTexture,SC_SOFTWARE_WRAP_MODE_V_mainFillTexture),(int(SC_USE_UV_MIN_MAX_mainFillTexture)!=0),mainFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_mainFillTexture)!=0),mainFillTextureBorderColor,0.0,mainFillTexture);
+l9_8=sc_SampleTextureBiasOrLevel(mainFillTextureDims.xy,mainFillTextureLayout,l9_9,l9_0,(int(SC_USE_UV_TRANSFORM_mainFillTexture)!=0),mainFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_mainFillTexture,SC_SOFTWARE_WRAP_MODE_V_mainFillTexture),(int(SC_USE_UV_MIN_MAX_mainFillTexture)!=0),mainFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_mainFillTexture)!=0),mainFillTextureBorderColor,0.0,mainFillTexture)*mainFillColorTint;
 }
 #else
 {
@@ -650,7 +654,7 @@ l9_20=1-sc_GetStereoViewIndex();
 l9_20=sc_GetStereoViewIndex();
 }
 #endif
-l9_19=sc_SampleTextureBiasOrLevel(shadowFillTextureDims.xy,shadowFillTextureLayout,l9_20,l9_0,(int(SC_USE_UV_TRANSFORM_shadowFillTexture)!=0),shadowFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_shadowFillTexture,SC_SOFTWARE_WRAP_MODE_V_shadowFillTexture),(int(SC_USE_UV_MIN_MAX_shadowFillTexture)!=0),shadowFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_shadowFillTexture)!=0),shadowFillTextureBorderColor,0.0,shadowFillTexture);
+l9_19=sc_SampleTextureBiasOrLevel(shadowFillTextureDims.xy,shadowFillTextureLayout,l9_20,l9_0,(int(SC_USE_UV_TRANSFORM_shadowFillTexture)!=0),shadowFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_shadowFillTexture,SC_SOFTWARE_WRAP_MODE_V_shadowFillTexture),(int(SC_USE_UV_MIN_MAX_shadowFillTexture)!=0),shadowFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_shadowFillTexture)!=0),shadowFillTextureBorderColor,0.0,shadowFillTexture)*shadowFillColorTint;
 }
 #else
 {
@@ -725,7 +729,7 @@ l9_29=1-sc_GetStereoViewIndex();
 l9_29=sc_GetStereoViewIndex();
 }
 #endif
-l9_28=sc_SampleTextureBiasOrLevel(outlineFillTextureDims.xy,outlineFillTextureLayout,l9_29,l9_0,(int(SC_USE_UV_TRANSFORM_outlineFillTexture)!=0),outlineFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_outlineFillTexture,SC_SOFTWARE_WRAP_MODE_V_outlineFillTexture),(int(SC_USE_UV_MIN_MAX_outlineFillTexture)!=0),outlineFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_outlineFillTexture)!=0),outlineFillTextureBorderColor,0.0,outlineFillTexture);
+l9_28=sc_SampleTextureBiasOrLevel(outlineFillTextureDims.xy,outlineFillTextureLayout,l9_29,l9_0,(int(SC_USE_UV_TRANSFORM_outlineFillTexture)!=0),outlineFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_outlineFillTexture,SC_SOFTWARE_WRAP_MODE_V_outlineFillTexture),(int(SC_USE_UV_MIN_MAX_outlineFillTexture)!=0),outlineFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_outlineFillTexture)!=0),outlineFillTextureBorderColor,0.0,outlineFillTexture)*outlineFillColorTint;
 }
 #else
 {
@@ -784,7 +788,7 @@ l9_36=1-sc_GetStereoViewIndex();
 l9_36=sc_GetStereoViewIndex();
 }
 #endif
-vec4 l9_37=sc_SampleTextureBiasOrLevel(backgroundFillTextureDims.xy,backgroundFillTextureLayout,l9_36,l9_0,(int(SC_USE_UV_TRANSFORM_backgroundFillTexture)!=0),backgroundFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_backgroundFillTexture,SC_SOFTWARE_WRAP_MODE_V_backgroundFillTexture),(int(SC_USE_UV_MIN_MAX_backgroundFillTexture)!=0),backgroundFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_backgroundFillTexture)!=0),backgroundFillTextureBorderColor,0.0,backgroundFillTexture);
+vec4 l9_37=sc_SampleTextureBiasOrLevel(backgroundFillTextureDims.xy,backgroundFillTextureLayout,l9_36,l9_0,(int(SC_USE_UV_TRANSFORM_backgroundFillTexture)!=0),backgroundFillTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_backgroundFillTexture,SC_SOFTWARE_WRAP_MODE_V_backgroundFillTexture),(int(SC_USE_UV_MIN_MAX_backgroundFillTexture)!=0),backgroundFillTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_backgroundFillTexture)!=0),backgroundFillTextureBorderColor,0.0,backgroundFillTexture)*backgroundFillColorTint;
 float l9_38=l9_37.w*l9_34;
 sc_writeFragData0(vec4(l9_37.xyz*l9_38,l9_38));
 }

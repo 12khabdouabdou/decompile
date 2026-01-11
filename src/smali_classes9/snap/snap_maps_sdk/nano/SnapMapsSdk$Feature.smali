@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -21,7 +21,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -51,7 +51,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -76,7 +76,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -139,7 +139,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -152,7 +152,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
 
     move-result-object p0
 
@@ -163,7 +163,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -233,7 +233,7 @@
 
     .line 22
     .line 23
-    iput-object v1, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v1, p0, Le57;->unknownFieldData:LPt7;
 
     .line 24
     .line 25
@@ -359,7 +359,7 @@
     .locals 5
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -385,7 +385,7 @@
 
     .line 12
     .line 13
-    invoke-static {v2, v1}, Lsa3;->q(ILjava/lang/String;)I
+    invoke-static {v2, v1}, Lbd3;->q(ILjava/lang/String;)I
 
     .line 14
     .line 15
@@ -408,7 +408,7 @@
 
     .line 22
     .line 23
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 24
     .line 25
@@ -461,7 +461,7 @@
     const/4 v4, 0x3
 
     .line 46
-    invoke-static {v4, v3}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v4, v3}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 47
     .line 48
@@ -502,7 +502,7 @@
 
     .line 62
     .line 63
-    invoke-static {v2, v1}, Lsa3;->q(ILjava/lang/String;)I
+    invoke-static {v2, v1}, Lbd3;->q(ILjava/lang/String;)I
 
     .line 64
     .line 65
@@ -532,7 +532,7 @@
 
     .line 75
     .line 76
-    invoke-static {v1, v2}, Lsa3;->q(ILjava/lang/String;)I
+    invoke-static {v1, v2}, Lbd3;->q(ILjava/lang/String;)I
 
     .line 77
     .line 78
@@ -563,7 +563,7 @@
 
     .line 89
     .line 90
-    invoke-static {v1, v2}, Lsa3;->q(ILjava/lang/String;)I
+    invoke-static {v1, v2}, Lbd3;->q(ILjava/lang/String;)I
 
     .line 91
     .line 92
@@ -740,7 +740,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -749,14 +749,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -767,7 +767,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -798,7 +798,7 @@
     if-eq v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -808,7 +808,7 @@
 
     .line 4
     :cond_1
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
 
     move-result-object v0
 
@@ -825,7 +825,7 @@
 
     .line 6
     :cond_2
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
 
     move-result-object v0
 
@@ -842,7 +842,7 @@
 
     .line 8
     :cond_3
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
 
     move-result-object v0
 
@@ -859,7 +859,7 @@
 
     .line 10
     :cond_4
-    invoke-static {p1, v1}, Ldw8;->E(Lqa3;I)I
+    invoke-static {p1, v1}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
@@ -902,10 +902,10 @@
     aput-object v1, v4, v3
 
     .line 15
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 16
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
@@ -920,7 +920,7 @@
     aput-object v0, v4, v3
 
     .line 18
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 19
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;->properties:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature$Property;
@@ -944,13 +944,13 @@
     :cond_9
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature;->geometry:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Geometry;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
     .line 23
     :cond_a
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1082,7 +1082,7 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1109,7 +1109,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->R(ILjava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->R(ILjava/lang/String;)V
 
     .line 10
     .line 11
@@ -1126,7 +1126,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 18
     .line 19
@@ -1173,7 +1173,7 @@
     const/4 v3, 0x3
 
     .line 38
-    invoke-virtual {p1, v3, v2}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v3, v2}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 39
     .line 40
@@ -1205,7 +1205,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {p1, v1, v0}, Lsa3;->R(ILjava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->R(ILjava/lang/String;)V
 
     .line 53
     .line 54
@@ -1229,7 +1229,7 @@
 
     .line 62
     .line 63
-    invoke-virtual {p1, v0, v1}, Lsa3;->R(ILjava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Lbd3;->R(ILjava/lang/String;)V
 
     .line 64
     .line 65
@@ -1254,13 +1254,13 @@
 
     .line 74
     .line 75
-    invoke-virtual {p1, v0, v1}, Lsa3;->R(ILjava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Lbd3;->R(ILjava/lang/String;)V
 
     .line 76
     .line 77
     .line 78
     :cond_6
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 79
     .line 80

@@ -6,9 +6,9 @@
 # instance fields
 .field public a:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public b:LsPg;
+.field public b:Lybh;
 
-.field public c:LrPg;
+.field public c:Lxbh;
 
 .field public final e0:Landroid/view/View;
 
@@ -28,7 +28,7 @@
 
 .field public final m0:Z
 
-.field public final n0:Lceg;
+.field public final n0:LFHf;
 
 .field public o0:I
 
@@ -50,7 +50,7 @@
 
 .field public w0:Z
 
-.field public final x0:LXfi;
+.field public final x0:LREi;
 
 
 # direct methods
@@ -90,19 +90,19 @@
     iput-object p1, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->t:Landroid/graphics/RectF;
 
     .line 5
-    new-instance p1, LuPg;
+    new-instance p1, LBUg;
 
-    const/4 p2, 0x0
+    const/16 p2, 0x19
 
-    invoke-direct {p1, p2, p0}, LuPg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LBUg;-><init>(ILjava/lang/Object;)V
 
     .line 6
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 7
-    iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->x0:LXfi;
+    iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->x0:LREi;
 
     const/4 p1, 0x0
 
@@ -118,7 +118,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f07050c
+    const p3, 0x7f070533
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -135,7 +135,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f070f5d
+    const p3, 0x7f070f82
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -152,7 +152,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f070f5c
+    const p3, 0x7f070f81
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -227,7 +227,7 @@
 
     check-cast p1, Landroid/view/LayoutInflater;
 
-    const p2, 0x7f0e0624
+    const p2, 0x7f0e0645
 
     .line 16
     invoke-virtual {p1, p2, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -236,7 +236,7 @@
 
     iput-object p1, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->e0:Landroid/view/View;
 
-    const p2, 0x7f0b13fa
+    const p2, 0x7f0b1532
 
     .line 17
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -247,7 +247,7 @@
 
     iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->g0:Lcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;
 
-    const p2, 0x7f0b13fd
+    const p2, 0x7f0b1535
 
     .line 18
     invoke-virtual {p0, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -257,13 +257,13 @@
     iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->f0:Landroid/view/View;
 
     .line 19
-    new-instance p2, Lceg;
+    new-instance p2, LFHf;
 
-    const/16 p3, 0xc
+    const/16 p3, 0x1b
 
-    invoke-direct {p2, p3, p0}, Lceg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, p3, p0}, LFHf;-><init>(ILjava/lang/Object;)V
 
-    iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->n0:Lceg;
+    iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->n0:LFHf;
 
     const/4 p2, 0x0
 
@@ -278,7 +278,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView;LrPg;LsPg;I)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView;Lxbh;Lybh;I)V
     .locals 3
 
     .line 1
@@ -286,7 +286,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->x0:LXfi;
+    iget-object v1, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->x0:LREi;
 
     .line 4
     .line 5
@@ -294,7 +294,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -302,11 +302,11 @@
     move-result-object v2
 
     .line 11
-    check-cast v2, LBGe;
+    check-cast v2, LkYe;
 
     .line 12
     .line 13
-    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->w0(LBGe;)V
+    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->w0(LkYe;)V
 
     .line 14
     .line 15
@@ -316,11 +316,11 @@
 
     .line 17
     .line 18
-    iput-object p3, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->b:LsPg;
+    iput-object p3, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->b:Lybh;
 
     .line 19
     .line 20
-    iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->c:LrPg;
+    iput-object p2, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->c:Lxbh;
 
     .line 21
     .line 22
@@ -328,7 +328,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -336,11 +336,11 @@
     move-result-object p2
 
     .line 28
-    check-cast p2, LBGe;
+    check-cast p2, LkYe;
 
     .line 29
     .line 30
-    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     .line 31
     .line 32
@@ -422,7 +422,7 @@
 
     .line 31
     .line 32
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 33
     .line 34
@@ -520,7 +520,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -560,7 +560,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -650,7 +650,7 @@
 
     .line 37
     .line 38
-    iget-object v0, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->c:LrPg;
+    iget-object v0, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->c:Lxbh;
 
     .line 39
     .line 40
@@ -658,7 +658,7 @@
 
     .line 41
     .line 42
-    invoke-interface {v0}, LrPg;->g()I
+    invoke-interface {v0}, Lxbh;->e()I
 
     .line 43
     .line 44
@@ -759,14 +759,14 @@
     move-result-object v0
 
     .line 92
-    new-instance v1, LtPg;
+    new-instance v1, Lzbh;
 
     .line 93
     .line 94
     const/4 v2, 0x1
 
     .line 95
-    invoke-direct {v1, p0, v2}, LtPg;-><init>(Lcom/snap/ui/view/scrollbar/SnapScrollBar;I)V
+    invoke-direct {v1, p0, v2}, Lzbh;-><init>(Lcom/snap/ui/view/scrollbar/SnapScrollBar;I)V
 
     .line 96
     .line 97
@@ -822,7 +822,7 @@
 
     .line 13
     .line 14
-    invoke-static {v1, v0, v2, v0}, LYHe;->d(FFFF)F
+    invoke-static {v1, v0, v2, v0}, Lm8f;->d(FFFF)F
 
     .line 15
     .line 16
@@ -851,7 +851,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -1226,7 +1226,7 @@
 
     .line 145
     .line 146
-    iget-object v2, v0, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object v2, v0, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 147
     .line 148
@@ -1240,7 +1240,7 @@
     .line 151
     .line 152
     :try_start_0
-    iget-object v0, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->c:LrPg;
+    iget-object v0, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->c:Lxbh;
 
     .line 153
     .line 154
@@ -1248,7 +1248,7 @@
 
     .line 155
     .line 156
-    new-instance p1, Lhad;
+    new-instance p1, LDpd;
 
     .line 157
     .line 158
@@ -1268,7 +1268,7 @@
     move-result-object v1
 
     .line 166
-    invoke-direct {p1, v0, v1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p1, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 167
     .line 168
@@ -1277,7 +1277,7 @@
 
     .line 170
     :cond_6
-    invoke-interface {v0}, LrPg;->g()I
+    invoke-interface {v0}, Lxbh;->e()I
 
     .line 171
     .line 172
@@ -1302,7 +1302,7 @@
     float-to-int p1, v1
 
     .line 181
-    invoke-interface {v0, p1}, LrPg;->v(I)I
+    invoke-interface {v0, p1}, Lxbh;->n(I)I
 
     .line 182
     .line 183
@@ -1310,7 +1310,7 @@
     move-result v1
 
     .line 185
-    invoke-interface {v0, v1}, LrPg;->h(I)I
+    invoke-interface {v0, v1}, Lxbh;->g(I)I
 
     .line 186
     .line 187
@@ -1321,7 +1321,7 @@
     sub-int/2addr v0, p1
 
     .line 190
-    new-instance p1, Lhad;
+    new-instance p1, LDpd;
 
     .line 191
     .line 192
@@ -1341,13 +1341,13 @@
     move-result-object v0
 
     .line 200
-    invoke-direct {p1, v1, v0}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p1, v1, v0}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 201
     .line 202
     .line 203
     :goto_1
-    iget-object v0, p1, Lhad;->a:Ljava/lang/Object;
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
 
     .line 204
     .line 205
@@ -1363,7 +1363,7 @@
     move-result v0
 
     .line 211
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
     .line 212
     .line 213
@@ -1383,7 +1383,7 @@
 
     .line 220
     .line 221
-    invoke-virtual {v2, v0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->F1(II)V
+    invoke-virtual {v2, v0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->K1(II)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1397,7 +1397,7 @@
 
     .line 225
     :cond_8
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 226
     .line 227
@@ -1419,7 +1419,7 @@
 
     .line 235
     .line 236
-    iget-object p1, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->n0:Lceg;
+    iget-object p1, p0, Lcom/snap/ui/view/scrollbar/SnapScrollBar;->n0:LFHf;
 
     .line 237
     .line 238
@@ -1427,7 +1427,7 @@
 
     .line 239
     .line 240
-    invoke-virtual {v1, p1}, Lcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;->b(Lceg;)V
+    invoke-virtual {v1, p1}, Lcom/snap/ui/view/scrollbar/SnapScrollBarIndicator;->b(LFHf;)V
 
     .line 241
     .line 242
@@ -1452,7 +1452,7 @@
 
     .line 251
     .line 252
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 253
     .line 254
@@ -1461,7 +1461,7 @@
 
     .line 256
     :cond_b
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 257
     .line 258
@@ -1736,7 +1736,7 @@
 
     .line 376
     :cond_13
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 377
     .line 378

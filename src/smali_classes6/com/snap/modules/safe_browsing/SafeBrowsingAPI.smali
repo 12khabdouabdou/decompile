@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lrhf;
+    proxyClass = LVzf;
     schema = "\'checkUrl\':f|m|(s): p<r<e>:\'[0]\'>"
     typeReferences = {
         Lcom/snap/modules/safe_browsing/SafeBrowsingURLType;

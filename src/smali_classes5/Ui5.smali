@@ -1,33 +1,29 @@
-.class public abstract LUi5;
-.super Ljava/lang/Object;
+.class public final LUi5;
+.super LWi5;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+.field public static final a:LUi5;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, LX40;->a:LX40;
+    new-instance v0, LUi5;
 
     .line 2
     .line 3
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
-
     .line 6
+    sput-object v0, LUi5;->a:LUi5;
+
     .line 7
     .line 8
-    sput-object v1, LUi5;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
-    .line 9
-    .line 10
     return-void
 .end method

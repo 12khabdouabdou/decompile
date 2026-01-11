@@ -186,6 +186,9 @@
 .method private native native_getStyleMetadata(J)Lcom/snapchat/client/snap_maps_sdk/StyleMetadata;
 .end method
 
+.method private native native_getSystemStats(J)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SystemStats;
+.end method
+
 .method private native native_getTileCover(JB)Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -277,6 +280,23 @@
 .end method
 
 .method private native native_setParticleEffect(JLjava/lang/String;ZLcom/snapchat/client/snap_maps_sdk/ParticleEffectObserver;Lcom/snapchat/client/snap_maps_sdk/ParticleEffectImageLoader;)V
+.end method
+
+.method private native native_toScreenLocation(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+.end method
+
+.method private native native_toScreenLocations(JLjava/util/ArrayList;)Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(J",
+            "Ljava/util/ArrayList<",
+            "Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;",
+            ">;)",
+            "Ljava/util/ArrayList<",
+            "Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;",
+            ">;"
+        }
+    .end annotation
 .end method
 
 .method private native native_updateSafeAreaInsets(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$EdgeInsets;)V
@@ -724,6 +744,25 @@
     return-object v0
 .end method
 
+.method public getSystemStats()Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SystemStats;
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/snap_maps_sdk/MapSdkSession$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1}, Lcom/snapchat/client/snap_maps_sdk/MapSdkSession$CppProxy;->native_getSystemStats(J)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SystemStats;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
 .method public getTileCover(B)Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
@@ -1152,6 +1191,55 @@
     .line 10
     .line 11
     return-void
+.end method
+
+.method public toScreenLocation(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/snap_maps_sdk/MapSdkSession$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1, p1}, Lcom/snapchat/client/snap_maps_sdk/MapSdkSession$CppProxy;->native_toScreenLocation(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public toScreenLocations(Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;",
+            ">;)",
+            "Ljava/util/ArrayList<",
+            "Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/snap_maps_sdk/MapSdkSession$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1, p1}, Lcom/snapchat/client/snap_maps_sdk/MapSdkSession$CppProxy;->native_toScreenLocations(JLjava/util/ArrayList;)Ljava/util/ArrayList;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
 .end method
 
 .method public updateSafeAreaInsets(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$EdgeInsets;)V

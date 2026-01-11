@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/filter_item/GeoFilterData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'overlayImageUri\':s?,\'scaleSetting\':d@?,\'positionSetting\':d@?,\'isAnimated\':b@?"
     typeReferences = {}

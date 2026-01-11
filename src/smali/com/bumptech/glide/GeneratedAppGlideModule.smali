@@ -1,5 +1,5 @@
 .class abstract Lcom/bumptech/glide/GeneratedAppGlideModule;
-.super Lgye;
+.super LNC8;
 .source "SourceFile"
 
 
@@ -18,7 +18,7 @@
 
 
 # virtual methods
-.method public J0()Ljava/util/Set;
+.method public V()Ljava/util/Set;
     .locals 1
 
     .line 1
@@ -34,7 +34,7 @@
     return-object v0
 .end method
 
-.method public K0()LWZe;
+.method public W()Laif;
     .locals 1
 
     .line 1

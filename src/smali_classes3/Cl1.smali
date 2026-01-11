@@ -3,45 +3,86 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGl1;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
-# static fields
-.field public static final a:LCl1;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final b:LCl1;
+.field public final synthetic b:LDl1;
+
+.field public final synthetic c:LXk1;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(LDl1;LXk1;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LCl1;
+    iput p3, p0, LCl1;->a:I
+
+    iput-object p1, p0, LCl1;->b:LDl1;
+
+    iput-object p2, p0, LCl1;->c:LXk1;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LCl1;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, LCl1;->a:LCl1;
+    iget-object v0, p0, LCl1;->b:LDl1;
 
     .line 7
     .line 8
-    new-instance v0, LCl1;
+    iget-object v1, p0, LCl1;->c:LXk1;
 
     .line 9
     .line 10
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0, v1}, LDl1;->a(LDl1;LXk1;)V
 
     .line 11
     .line 12
     .line 13
-    sput-object v0, LCl1;->b:LCl1;
+    return-void
 
     .line 14
+    :pswitch_0
+    iget-object v0, p0, LCl1;->b:LDl1;
+
     .line 15
+    .line 16
+    iget-object v1, p0, LCl1;->c:LXk1;
+
+    .line 17
+    .line 18
+    invoke-static {v0, v1}, LDl1;->a(LDl1;LXk1;)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
+
+    .line 22
+    nop
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

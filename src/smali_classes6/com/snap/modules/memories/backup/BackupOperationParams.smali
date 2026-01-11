@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/memories/backup/BackupOperationParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'galleryEntryId\':s,\'operationType\':r<e>:\'[0]\',\'clientOperationId\':s?,\'dependencyEntryIds\':a?<s>,\'detailedState\':t?,\'mediaSize\':d@?,\'origin\':r?<e>:\'[1]\'"
     typeReferences = {

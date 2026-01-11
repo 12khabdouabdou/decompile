@@ -114,7 +114,7 @@
     return-void
 .end method
 
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -248,7 +248,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/observers/QueueDrainObserver;->d()Z
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/observers/QueueDrainObserver;->b()Z
 
     .line 24
     .line 25
@@ -540,7 +540,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 6
     .line 7

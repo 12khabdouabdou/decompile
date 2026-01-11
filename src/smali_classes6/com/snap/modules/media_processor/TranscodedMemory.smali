@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/media_processor/TranscodedMemory;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'image\':r?:\'[0]\',\'video\':r?:\'[1]\'"
     typeReferences = {

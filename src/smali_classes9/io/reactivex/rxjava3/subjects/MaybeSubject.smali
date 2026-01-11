@@ -113,7 +113,7 @@
 
 
 # virtual methods
-.method public final m(Lio/reactivex/rxjava3/core/MaybeObserver;)V
+.method public final n(Lio/reactivex/rxjava3/core/MaybeObserver;)V
     .locals 6
 
     .line 1
@@ -235,7 +235,7 @@
 
     .line 57
     .line 58
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;->c()Z
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;->d()Z
 
     .line 59
     .line 60
@@ -247,7 +247,7 @@
 
     .line 63
     .line 64
-    invoke-virtual {p0, v0}, Lio/reactivex/rxjava3/subjects/MaybeSubject;->t(Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;)V
+    invoke-virtual {p0, v0}, Lio/reactivex/rxjava3/subjects/MaybeSubject;->u(Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;)V
 
     .line 65
     .line 66
@@ -574,7 +574,7 @@
     return-void
 .end method
 
-.method public final t(Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;)V
+.method public final u(Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;)V
     .locals 7
 
     .line 1

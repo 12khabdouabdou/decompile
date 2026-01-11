@@ -1,138 +1,62 @@
-.class public abstract LJvj;
-.super Ljava/lang/Object;
+.class public final LJvj;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LtB6;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'application\':r:\'[0]\',\'serviceConfig\':r:\'[1]\',\'subscriptionManager\':r:\'[2]\',\'storySnapViewStateProvider\':r:\'[3]\',\'friendStore\':r:\'[4]\',\'incomingFriendStore\':r:\'[5]\',\'grpcServiceFactory\':r:\'[6]\',\'networkingClient\':r:\'[7]\',\'subscriptionStore\':r:\'[8]\',\'logger\':r:\'[9]\',\'alertPresenter\':r:\'[10]\',\'presentationController\':r:\'[11]\',\'episodesTileWatcher\':r?:\'[12]\',\'watchedStateCache\':r?:\'[13]\',\'player\':r?:\'[14]\',\'profilePresenter\':r?:\'[15]\',\'lensActionHandler\':r?:\'[16]\',\'publicProfileActionHandler\':r?:\'[17]\',\'urlActionHandler\':r?:\'[18]\',\'storySharingActionHandler\':r?:\'[19]\',\'commerceActionHandler\':r?:\'[20]\',\'chatActionHandler\':r?:\'[21]\',\'cofStore\':r?:\'[22]\',\'avatarBuilderPresenter\':r?:\'[23]\',\'bitmojiFlatlandConfigProvider\':r?:\'[24]\',\'cameosOnboardingPresenter\':r?:\'[25]\',\'mapPresenter\':r?:\'[26]\',\'userLocationProvider\':r?:\'[27]\',\'nativeVenueStoryPlayer\':r:\'[28]\',\'publicUserStoryFetcher\':r?:\'[29]\',\'suggestedFriendStore\':r?:\'[30]\',\'crashUtils\':r?:\'[31]\',\'fetchFriendSubtext\':f?(s): g<c>:\'[32]\'<s>,\'communityPillContext\':r?:\'[33]\',\'actionSheetPresenter\':r?:\'[34]\',\'plusActionHandler\':r?:\'[35]\'"
+    typeReferences = {
+        Lcom/snap/composer/foundation/IApplication;,
+        Lcom/snap/impala/publicprofile/ImpalaServiceConfig;,
+        Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;,
+        Lcom/snap/composer/storyplayer/IStorySnapViewStateProvider;,
+        Lcom/snap/composer/people/FriendStoring;,
+        Lcom/snap/composer/people/IncomingFriendStoring;,
+        Lcom/snap/composer/networking/IGrpcServiceFactory;,
+        Lcom/snap/composer/networking/ClientProtocol;,
+        Lcom/snap/composer/people/SubscriptionStore;,
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/composer/foundation/IAlertPresenter;,
+        Lcom/snap/impala/publicprofile/IPresentationController;,
+        Lcom/snap/impala/commonprofile/IPublisherEpisodesTileWatcher;,
+        Lcom/snap/impala/commonprofile/IWatchedStateCache;,
+        Lcom/snap/composer/storyplayer/IStoryPlayer;,
+        Lcom/snap/impala/commonprofile/IProfilePresenting;,
+        Lcom/snap/composer/lenses/ILensActionHandler;,
+        Lcom/snap/impala/publicprofile/IPublicProfileActionHandler;,
+        Lcom/snap/impala/commonprofile/IUrlActionHandler;,
+        Lcom/snap/impala/commonprofile/IStoryShareActionHandler;,
+        Lcom/snap/impala/commonprofile/ICommerceActionHandler;,
+        Lcom/snap/impala/commonprofile/IChatActionHandler;,
+        Lcom/snap/composer/cof/ICOFStore;,
+        Lcom/snap/bitmoji/composer/IBitmojiAvatarBuilderPresenter;,
+        Lcom/snap/composer/bitmoji/IBitmojiFlatlandConfigProvider;,
+        Lcom/snap/cameos/composer/ICameosOnboardingPresenter;,
+        Lcom/snap/composer/map/MapPresenter;,
+        Lcom/snap/composer/people/UserLocationProviding;,
+        Lcom/snap/venues/api/NativeVenueStoryPlayer;,
+        Lcom/snap/composer/storyplayer/INativeStoryCardFetcher;,
+        Lcom/snap/composer/people/SuggestedFriendStoring;,
+        Lcom/snap/unifiedpublicprofile/CrashUtils;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lcom/snap/modules/common_profile/CommunityPillContext;,
+        Lcom/snap/composer/foundation/IActionSheetPresenter;,
+        Lcom/snap/plus/commonprofile/IPlusActionHandler;
+    }
+.end annotation
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 17
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    new-instance v0, Lp7f;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, Lv7f;->b:Lv7f;
-
     .line 4
-    .line 5
-    const/4 v2, 0x3
-
-    .line 6
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v4
-
-    .line 10
-    const/4 v5, 0x4
-
-    .line 11
-    const-wide/16 v2, 0x1
-
-    .line 12
-    .line 13
-    invoke-direct/range {v0 .. v5}, Lp7f;-><init>(Lv7f;JLjava/lang/Integer;I)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 v1, 0x1
-
-    .line 17
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v1
-
-    .line 21
-    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v2
-
-    .line 25
-    sget-object v3, LEB6;->a:LEB6;
-
-    .line 26
-    .line 27
-    move-object v6, v0
-
-    .line 28
-    new-instance v0, LtB6;
-
-    .line 29
-    .line 30
-    const/4 v13, 0x0
-
-    .line 31
-    const/4 v14, 0x0
-
-    .line 32
-    const/4 v1, 0x0
-
-    .line 33
-    const/4 v4, 0x0
-
-    .line 34
-    const/4 v5, 0x0
-
-    .line 35
-    const/4 v7, 0x0
-
-    .line 36
-    const/4 v8, 0x0
-
-    .line 37
-    const/4 v9, 0x0
-
-    .line 38
-    const/4 v10, 0x0
-
-    .line 39
-    const/4 v11, 0x0
-
-    .line 40
-    const/4 v12, 0x0
-
-    .line 41
-    const/16 v15, 0x3fd9
-
-    .line 42
-    .line 43
-    const/16 v16, 0x0
-
-    .line 44
-    .line 45
-    invoke-direct/range {v0 .. v16}, LtB6;-><init>(ILjava/util/List;LEB6;Ljava/lang/String;Lnk9;Lp7f;LnCi;ZZLjava/lang/Boolean;Ljava/lang/String;LWD7;Lnk9;ZILHr5;)V
-
-    .line 46
-    .line 47
-    .line 48
-    sput-object v0, LJvj;->a:LtB6;
-
-    .line 49
-    .line 50
     return-void
-.end method
-
-.method public static final synthetic a()LtB6;
-    .locals 1
-
-    .line 1
-    sget-object v0, LJvj;->a:LtB6;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

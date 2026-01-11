@@ -22,7 +22,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, LBmc;->b()Z
+    invoke-static {}, LOBc;->a()Z
 
     .line 5
     .line 6
@@ -62,7 +62,7 @@
 
     .line 23
     :cond_0
-    new-instance p1, LvBg;
+    new-instance p1, Lm11;
 
     .line 24
     .line 25
@@ -79,7 +79,7 @@
 
     .line 31
     :cond_1
-    new-instance p1, LvBg;
+    new-instance p1, Lm11;
 
     .line 32
     .line 33
@@ -154,7 +154,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->b()V
+    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->c()V
 
     .line 2
     .line 3
@@ -171,7 +171,7 @@
     return-void
 .end method
 
-.method public final b()V
+.method public final c()V
     .locals 5
 
     .line 1
@@ -217,27 +217,6 @@
     .line 20
     .line 21
     throw v0
-.end method
-
-.method public final c(Z)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->b()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-wide v0, p0, Lcom/snapcv/scan/Scan;->a:J
-
-    .line 5
-    .line 6
-    invoke-direct {p0, v0, v1, p1}, Lcom/snapcv/scan/Scan;->nativeEnableMetrics(JZ)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
 .end method
 
 .method public final declared-synchronized close()V
@@ -311,11 +290,32 @@
     throw v0
 .end method
 
+.method public final d(Z)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->c()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-wide v0, p0, Lcom/snapcv/scan/Scan;->a:J
+
+    .line 5
+    .line 6
+    invoke-direct {p0, v0, v1, p1}, Lcom/snapcv/scan/Scan;->nativeEnableMetrics(JZ)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
 .method public final e()D
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->b()V
+    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->c()V
 
     .line 2
     .line 3
@@ -343,7 +343,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->b()V
+    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->c()V
 
     .line 2
     .line 3
@@ -367,7 +367,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->b()V
+    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->c()V
 
     .line 2
     .line 3
@@ -395,7 +395,7 @@
     .locals 6
 
     .line 1
-    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->b()V
+    invoke-virtual {p0}, Lcom/snapcv/scan/Scan;->c()V
 
     .line 2
     .line 3

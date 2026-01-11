@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lgl4;
+    proxyClass = LHp4;
     schema = "\'getAvailableSounds\':f|m|(f(a?<a<r:\'[0]\'>>, r?:\'[1]\')),\'getSelectedSoundId\':f|m|(f(s?, r?:\'[1]\')),\'setSelectedSoundId\':f|m|(s?, f(r?:\'[1]\'))"
     typeReferences = {
-        LZk4;,
+        LAp4;,
         Lcom/snap/composer/foundation/Error;
     }
 .end annotation

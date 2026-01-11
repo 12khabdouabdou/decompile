@@ -2,189 +2,221 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LRaa;
-
-
-# static fields
-.field public static final b:LLaa;
-
-.field public static final c:LLaa;
-
-.field public static final t:LLaa;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/lang/String;
+
+.field public final b:I
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, LLaa;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-direct {v0, v1}, LLaa;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    sput-object v0, LLaa;->b:LLaa;
-
-    .line 8
-    .line 9
-    new-instance v0, LLaa;
-
-    .line 10
-    .line 11
-    const/4 v1, 0x1
-
-    .line 12
-    invoke-direct {v0, v1}, LLaa;-><init>(I)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, LLaa;->c:LLaa;
-
-    .line 16
-    .line 17
-    new-instance v0, LLaa;
-
-    .line 18
-    .line 19
-    const/4 v1, 0x2
-
-    .line 20
-    invoke-direct {v0, v1}, LLaa;-><init>(I)V
-
-    .line 21
-    .line 22
-    .line 23
-    sput-object v0, LLaa;->t:LLaa;
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public synthetic constructor <init>(I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
     .line 1
-    iput p1, p0, LLaa;->a:I
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LLaa;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput p2, p0, LLaa;->b:I
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LgMj;
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    iget v0, p0, LLaa;->a:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    goto :goto_1
 
     .line 4
+    :cond_0
+    instance-of v0, p1, LLaa;
+
     .line 5
     .line 6
-    sget-object v0, LGzg;->F0:LfMj;
+    if-nez v0, :cond_1
 
     .line 7
     .line 8
-    return-object v0
+    goto :goto_0
 
     .line 9
-    :pswitch_0
-    sget-object v0, LGzg;->F0:LfMj;
+    :cond_1
+    check-cast p1, LLaa;
 
     .line 10
     .line 11
-    return-object v0
+    iget-object v0, p1, LLaa;->a:Ljava/lang/String;
 
     .line 12
-    :pswitch_1
-    sget-object v0, LdMj;->a:LdMj;
-
     .line 13
-    .line 14
-    return-object v0
+    iget-object v1, p0, LLaa;->a:Ljava/lang/String;
 
+    .line 14
     .line 15
-    :pswitch_2
-    sget-object v0, LGzg;->F0:LfMj;
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 16
     .line 17
-    return-object v0
-
     .line 18
-    nop
+    move-result v0
 
     .line 19
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_2
+    iget v0, p0, LLaa;->b:I
+
+    .line 23
+    .line 24
+    iget p1, p1, LLaa;->b:I
+
+    .line 25
+    .line 26
+    if-eq v0, p1, :cond_3
+
+    .line 27
+    .line 28
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 29
+    return p1
+
+    .line 30
+    :cond_3
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 31
+    return p1
 .end method
 
-.method public toString()Ljava/lang/String;
-    .locals 1
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    iget v0, p0, LLaa;->a:I
+    iget-object v0, p0, LLaa;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result v0
 
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
     .line 9
-    move-result-object v0
+    iget v1, p0, LLaa;->b:I
 
     .line 10
-    return-object v0
-
     .line 11
-    :pswitch_0
-    const-string v0, "LensContainer"
+    invoke-static {v1}, LzHa;->L(I)I
 
     .line 12
     .line 13
-    return-object v0
-
     .line 14
-    :pswitch_1
-    const-string v0, "CarouselLegacy"
+    move-result v1
 
     .line 15
-    .line 16
-    return-object v0
+    add-int/2addr v1, v0
 
+    .line 16
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Request(lensId="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LLaa;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", shoppingLensMode="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
     .line 17
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 18
+    iget v1, p0, LLaa;->b:I
+
+    .line 19
+    .line 20
+    invoke-static {v1}, Lnrg;->r(I)Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    const-string v1, ")"
+
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    return-object v0
 .end method

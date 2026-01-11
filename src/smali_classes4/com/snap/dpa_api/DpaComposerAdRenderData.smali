@@ -1,17 +1,17 @@
 .class public final Lcom/snap/dpa_api/DpaComposerAdRenderData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'items\':a?<r:\'[0]\'>,\'template\':r?:\'[1]\',\'background\':r?:\'[2]\',\'overlays\':a?<r:\'[3]\'>"
     typeReferences = {
-        LXt6;,
+        Lex6;,
         Lcom/snap/dpa_api/DpaTemplate;,
         Lcom/snap/dpa_api/DpaBackground;,
-        Lcu6;
+        Ljx6;
     }
 .end annotation
 
@@ -23,7 +23,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LXt6;",
+            "Lex6;",
             ">;"
         }
     .end annotation
@@ -33,7 +33,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcu6;",
+            "Ljx6;",
             ">;"
         }
     .end annotation
@@ -72,12 +72,12 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LXt6;",
+            "Lex6;",
             ">;",
             "Lcom/snap/dpa_api/DpaTemplate;",
             "Lcom/snap/dpa_api/DpaBackground;",
             "Ljava/util/List<",
-            "Lcu6;",
+            "Ljx6;",
             ">;)V"
         }
     .end annotation

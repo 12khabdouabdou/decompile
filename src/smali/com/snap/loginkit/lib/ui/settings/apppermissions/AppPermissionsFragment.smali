@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGZ;
+.implements Lj20;
 
 
 # instance fields
-.field public w0:LFZ;
+.field public w0:Li20;
 
 
 # direct methods
@@ -25,11 +25,11 @@
 
 
 # virtual methods
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/loginkit/lib/ui/settings/apppermissions/AppPermissionsFragment;->w0:LFZ;
+    iget-object v0, p0, Lcom/snap/loginkit/lib/ui/settings/apppermissions/AppPermissionsFragment;->w0:Li20;
 
     .line 2
     .line 3
@@ -37,7 +37,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LFZ;->C1()V
+    invoke-virtual {v0}, Li20;->D1()V
 
     .line 6
     .line 7
@@ -50,7 +50,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -61,11 +61,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e03e5
+    const p3, 0x7f0e0408
 
     .line 2
     .line 3
@@ -84,11 +84,11 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/snap/loginkit/lib/ui/settings/apppermissions/AppPermissionsFragment;->w0:LFZ;
+    iget-object p1, p0, Lcom/snap/loginkit/lib/ui/settings/apppermissions/AppPermissionsFragment;->w0:Li20;
 
     .line 2
     .line 3
@@ -96,7 +96,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1}, LFZ;->a3()V
+    invoke-virtual {p1}, Li20;->g3()V
 
     .line 6
     .line 7
@@ -109,7 +109,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -120,16 +120,16 @@
     throw p1
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/loginkit/lib/ui/settings/apppermissions/AppPermissionsFragment;->w0:LFZ;
+    iget-object p1, p0, Lcom/snap/loginkit/lib/ui/settings/apppermissions/AppPermissionsFragment;->w0:Li20;
 
     .line 5
     .line 6
@@ -137,7 +137,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1, p0}, LFZ;->h3(LGZ;)V
+    invoke-virtual {p1, p0}, Li20;->i3(Lj20;)V
 
     .line 9
     .line 10
@@ -150,7 +150,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16

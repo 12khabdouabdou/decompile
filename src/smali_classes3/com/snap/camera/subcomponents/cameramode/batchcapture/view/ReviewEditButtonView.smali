@@ -8,7 +8,7 @@
 
 .field public q0:Landroid/view/View;
 
-.field public r0:Lobi;
+.field public r0:LiAi;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b01d7
+    const v0, 0x7f0b0221
 
     .line 5
     .line 6
@@ -56,7 +56,7 @@
 
     .line 14
     .line 15
-    const v0, 0x7f0b01db
+    const v0, 0x7f0b0225
 
     .line 16
     .line 17
@@ -73,20 +73,20 @@
 
     .line 23
     .line 24
-    new-instance v0, LpK;
+    new-instance v0, Lzr0;
 
     .line 25
     .line 26
-    const/16 v1, 0x1d
+    const/16 v1, 0x1b
 
     .line 27
     .line 28
-    invoke-direct {v0, v1, p0}, LpK;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lzr0;-><init>(ILjava/lang/Object;)V
 
     .line 29
     .line 30
     .line 31
-    invoke-static {v0}, LCq9;->c1(Lobi;)Lobi;
+    invoke-static {v0}, LIjj;->W(LiAi;)LiAi;
 
     .line 32
     .line 33
@@ -94,7 +94,7 @@
     move-result-object v0
 
     .line 35
-    iput-object v0, p0, Lcom/snap/camera/subcomponents/cameramode/batchcapture/view/ReviewEditButtonView;->r0:Lobi;
+    iput-object v0, p0, Lcom/snap/camera/subcomponents/cameramode/batchcapture/view/ReviewEditButtonView;->r0:LiAi;
 
     .line 36
     .line 37

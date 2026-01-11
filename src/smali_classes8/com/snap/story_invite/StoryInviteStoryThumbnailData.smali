@@ -1,10 +1,10 @@
 .class public final Lcom/snap/story_invite/StoryInviteStoryThumbnailData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'key\':s,\'iv\':s,\'url\':s,\'originalMediaId\':s,\'largeThumbnailUrl\':s,\'clientId\':s"
     typeReferences = {}

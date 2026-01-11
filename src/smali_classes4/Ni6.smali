@@ -1,214 +1,235 @@
-.class public final enum LNi6;
-.super Ljava/lang/Enum;
+.class public final LNi6;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LHB8;
-
-
-# static fields
-.field public static final synthetic X:[LNi6;
-
-.field public static final enum c:LNi6;
-
-.field public static final enum t:LNi6;
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic a:I
 
-.field public final b:Ljava/lang/Class;
+.field public final synthetic b:Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    new-instance v1, LNi6;
-
-    .line 3
-    .line 4
-    const/4 v2, 0x0
-
-    .line 5
-    const v3, 0x7f0e03c7
-
-    .line 6
-    .line 7
-    .line 8
-    const-string v4, "SECTION_LOADING"
-
-    .line 9
-    .line 10
-    const-class v5, LXEf;
-
-    .line 11
-    .line 12
-    invoke-direct {v1, v2, v3, v5, v4}, LNi6;-><init>(IILjava/lang/Class;Ljava/lang/String;)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v1, LNi6;->c:LNi6;
-
-    .line 16
-    .line 17
-    new-instance v3, LNi6;
-
-    .line 18
-    .line 19
-    sget-object v4, Lef6;->p0:LVUi;
-
-    .line 20
-    .line 21
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 22
-    .line 23
-    .line 24
-    sget v4, Lef6;->r0:I
-
-    .line 25
-    .line 26
-    const-string v5, "HORIZONTAL_SECTION"
-
-    .line 27
-    .line 28
-    const-class v6, Lef6;
-
-    .line 29
-    .line 30
-    invoke-direct {v3, v0, v4, v6, v5}, LNi6;-><init>(IILjava/lang/Class;Ljava/lang/String;)V
-
-    .line 31
-    .line 32
-    .line 33
-    sput-object v3, LNi6;->t:LNi6;
-
-    .line 34
-    .line 35
-    const/4 v4, 0x2
-
-    .line 36
-    new-array v4, v4, [LNi6;
-
-    .line 37
-    .line 38
-    aput-object v1, v4, v2
-
-    .line 39
-    .line 40
-    aput-object v3, v4, v0
-
-    .line 41
-    .line 42
-    sput-object v4, LNi6;->X:[LNi6;
-
-    .line 43
-    .line 44
-    return-void
-.end method
-
-.method public constructor <init>(IILjava/lang/Class;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p4, p1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
     iput p2, p0, LNi6;->a:I
 
-    .line 5
-    .line 6
-    iput-object p3, p0, LNi6;->b:Ljava/lang/Class;
+    iput-object p1, p0, LNi6;->b:Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;
 
-    .line 7
-    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LNi6;
-    .locals 1
-
-    .line 1
-    const-class v0, LNi6;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LNi6;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LNi6;
-    .locals 1
-
-    .line 1
-    sget-object v0, LNi6;->X:[LNi6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LNi6;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/lang/Class;
-    .locals 1
+.method public final onClick(Landroid/view/View;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LNi6;->b:Ljava/lang/Class;
+    iget-object p1, p0, LNi6;->b:Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final c()I
-    .locals 1
-
-    .line 1
     iget v0, p0, LNi6;->a:I
 
-    .line 2
-    .line 3
-    return v0
-.end method
+    .line 4
+    .line 5
+    packed-switch v0, :pswitch_data_0
 
-.method public final d()I
-    .locals 1
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Landroidx/fragment/app/g;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
-    .line 1
-    const/4 v0, 0x0
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
 
-    .line 2
-    return v0
+    .line 12
+    if-eqz p1, :cond_0
+
+    .line 13
+    .line 14
+    invoke-virtual {p1}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    return-void
+
+    .line 18
+    :pswitch_0
+    sget v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->R0:I
+
+    .line 19
+    .line 20
+    invoke-virtual {p1}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    iget-boolean v1, v0, LSi6;->x0:Z
+
+    .line 25
+    .line 26
+    xor-int/lit8 v1, v1, 0x1
+
+    .line 27
+    .line 28
+    iput-boolean v1, v0, LSi6;->x0:Z
+
+    .line 29
+    .line 30
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v1
+
+    .line 34
+    iget-object v0, v0, LSi6;->y0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {p1}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v0
+
+    .line 43
+    iget-boolean v0, v0, LSi6;->x0:Z
+
+    .line 44
+    .line 45
+    const/4 v1, 0x0
+
+    .line 46
+    const-string v2, "editButton"
+
+    .line 47
+    .line 48
+    if-eqz v0, :cond_2
+
+    .line 49
+    .line 50
+    iget-object v0, p1, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
+
+    .line 51
+    .line 52
+    if-eqz v0, :cond_1
+
+    .line 53
+    .line 54
+    invoke-virtual {p1}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object p1
+
+    .line 58
+    const v1, 0x7f131fbf
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p1
+
+    .line 65
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 66
+    .line 67
+    .line 68
+    goto :goto_0
+
+    .line 69
+    :cond_1
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 70
+    .line 71
+    .line 72
+    throw v1
+
+    .line 73
+    :cond_2
+    iget-object v0, p1, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
+
+    .line 74
+    .line 75
+    if-eqz v0, :cond_3
+
+    .line 76
+    .line 77
+    invoke-virtual {p1}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    const v1, 0x7f131fc0
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-virtual {p1, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object p1
+
+    .line 88
+    invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 89
+    .line 90
+    .line 91
+    :goto_0
+    return-void
+
+    .line 92
+    :cond_3
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 93
+    .line 94
+    .line 95
+    throw v1
+
+    .line 96
+    nop
+
+    .line 97
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,164 +1,210 @@
-.class public final LtIc;
-.super Lo17;
+.class public LtIc;
+.super LsIc;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:Ljava/lang/String;
+.field public final a:I
+
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    const-string v0, ""
-
-    .line 5
-    .line 6
-    iput-object v0, p0, LtIc;->a:Ljava/lang/String;
-
-    .line 7
-    .line 8
     const/4 v0, 0x0
 
+    .line 2
+    invoke-direct {p0, p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput p2, p0, LtIc;->a:I
+
+    .line 6
+    .line 7
+    iput p3, p0, LtIc;->b:I
+
+    .line 8
     .line 9
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 10
-    .line 11
-    const/4 v0, -0x1
-
-    .line 12
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public final a()I
+    .locals 1
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    iget v0, p0, LtIc;->b:I
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const/4 v1, 0x1
-
-    .line 6
-    iget-object v2, p0, LtIc;->a:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    invoke-static {v1, v2}, Lsa3;->q(ILjava/lang/String;)I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v1
-
-    .line 12
-    add-int/2addr v1, v0
-
-    .line 13
-    return v1
+    return v0
 .end method
 
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public final b()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LtIc;->a:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public c()Z
     .locals 2
 
     .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    const/4 v0, 0x3
 
     .line 2
+    iget v1, p0, LtIc;->a:I
+
     .line 3
     .line 4
-    move-result v0
+    if-eq v1, v0, :cond_0
 
     .line 5
-    if-eqz v0, :cond_2
-
     .line 6
+    const/4 v0, 0x4
+
     .line 7
-    const/16 v1, 0xa
+    if-eq v1, v0, :cond_0
 
     .line 8
     .line 9
-    if-eq v0, v1, :cond_1
+    const/4 v0, 0x5
 
     .line 10
+    if-eq v1, v0, :cond_0
+
     .line 11
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
     .line 12
-    .line 13
-    .line 14
-    move-result v0
+    const/4 v0, 0x6
 
+    .line 13
+    if-eq v1, v0, :cond_0
+
+    .line 14
     .line 15
-    if-nez v0, :cond_0
+    const/16 v0, 0x8
 
     .line 16
     .line 17
-    goto :goto_1
+    if-eq v1, v0, :cond_0
 
     .line 18
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
-
     .line 19
+    const/4 v0, 0x0
+
     .line 20
+    return v0
+
     .line 21
-    move-result-object v0
-
-    .line 22
-    iput-object v0, p0, LtIc;->a:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_2
-    :goto_1
-    return-object p0
-.end method
-
-.method public final writeTo(Lsa3;)V
-    .locals 2
-
-    .line 1
+    :cond_0
     const/4 v0, 0x1
 
+    .line 22
+    return v0
+.end method
+
+.method public final getMessage()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
     .line 2
-    iget-object v1, p0, LtIc;->a:Ljava/lang/String;
-
     .line 3
-    .line 4
-    invoke-virtual {p1, v0, v1}, Lsa3;->R(ILjava/lang/String;)V
+    invoke-super {p0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
+    .line 4
     .line 5
     .line 6
+    move-result-object v1
+
     .line 7
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    return-void
+    const-string v1, ", ErrorCode="
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    .line 14
+    .line 15
+    iget v1, p0, LtIc;->a:I
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    iget v1, p0, LtIc;->b:I
+
+    .line 21
+    .line 22
+    if-eqz v1, :cond_0
+
+    .line 23
+    .line 24
+    const-string v2, ", InternalErrorCode="
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    :cond_0
+    const-string v1, ", Retryable="
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {p0}, LtIc;->c()Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    return-object v0
 .end method

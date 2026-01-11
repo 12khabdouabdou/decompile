@@ -1,187 +1,136 @@
-.class public final enum Lqdh;
-.super Ljava/lang/Enum;
+.class public final Lqdh;
+.super Landroid/widget/Toast;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lqdh;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
 
 
 # static fields
-.field public static final synthetic X:[Lqdh;
-
-.field public static final enum b:Lqdh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "UserInitiated"
-    .end annotation
-.end field
-
-.field public static final enum c:Lqdh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "AutoRetry"
-    .end annotation
-.end field
-
-.field public static final enum t:Lqdh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "UserRetry"
-    .end annotation
-.end field
+.field public static final synthetic b:I
 
 
 # instance fields
-.field public final a:I
+.field public final a:Landroid/widget/Toast;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
-
-    .line 1
-    new-instance v0, Lqdh;
-
-    .line 2
-    .line 3
-    const-string v1, "UserInitiated"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, Lqdh;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Lqdh;->b:Lqdh;
-
-    .line 10
-    .line 11
-    new-instance v1, Lqdh;
-
-    .line 12
-    .line 13
-    const-string v3, "AutoRetry"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, Lqdh;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lqdh;->c:Lqdh;
-
-    .line 20
-    .line 21
-    new-instance v3, Lqdh;
-
-    .line 22
-    .line 23
-    const-string v5, "UserRetry"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, Lqdh;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lqdh;->t:Lqdh;
-
-    .line 30
-    .line 31
-    const/4 v5, 0x3
-
-    .line 32
-    new-array v5, v5, [Lqdh;
-
-    .line 33
-    .line 34
-    aput-object v0, v5, v2
-
-    .line 35
-    .line 36
-    aput-object v1, v5, v4
-
-    .line 37
-    .line 38
-    aput-object v3, v5, v6
-
-    .line 39
-    .line 40
-    sput-object v5, Lqdh;->X:[Lqdh;
-
-    .line 41
-    .line 42
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(Landroid/content/Context;Landroid/widget/Toast;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p0, p1}, Landroid/widget/Toast;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    iput p3, p0, Lqdh;->a:I
+    iput-object p2, p0, Lqdh;->a:Landroid/widget/Toast;
 
     .line 5
     .line 6
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lqdh;
+
+# virtual methods
+.method public final cancel()V
     .locals 1
 
     .line 1
-    const-class v0, Lqdh;
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lqdh;
-
-    .line 8
-    .line 9
-    return-object p0
+    return-void
 .end method
 
-.method public static values()[Lqdh;
+.method public final getDuration()I
     .locals 1
 
     .line 1
-    sget-object v0, Lqdh;->X:[Lqdh;
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [Lqdh;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroid/widget/Toast;->getDuration()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final getGravity()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/Toast;->getGravity()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final getHorizontalMargin()F
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/Toast;->getHorizontalMargin()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final getVerticalMargin()F
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/Toast;->getVerticalMargin()F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final getView()Landroid/view/View;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/Toast;->getView()Landroid/view/View;
 
     .line 4
     .line 5
@@ -189,22 +138,145 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, [Lqdh;
-
-    .line 8
-    .line 9
     return-object v0
 .end method
 
-
-# virtual methods
-.method public final a()I
+.method public final getXOffset()I
     .locals 1
 
     .line 1
-    iget v0, p0, Lqdh;->a:I
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
 
     .line 2
     .line 3
+    invoke-virtual {v0}, Landroid/widget/Toast;->getXOffset()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
     return v0
+.end method
+
+.method public final getYOffset()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/Toast;->getYOffset()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final setDuration(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroid/widget/Toast;->setDuration(I)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final setGravity(III)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3}, Landroid/widget/Toast;->setGravity(III)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final setMargin(FF)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Landroid/widget/Toast;->setMargin(FF)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final setText(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    invoke-virtual {v0, p1}, Landroid/widget/Toast;->setText(I)V
+
+    return-void
+.end method
+
+.method public final setText(Ljava/lang/CharSequence;)V
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    invoke-virtual {v0, p1}, Landroid/widget/Toast;->setText(Ljava/lang/CharSequence;)V
+
+    return-void
+.end method
+
+.method public final setView(Landroid/view/View;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Landroid/widget/Toast;->setView(Landroid/view/View;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final show()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lqdh;->a:Landroid/widget/Toast;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

@@ -1,158 +1,219 @@
-.class public final LiI5;
+.class public abstract LiI5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LtI5;
-
-.field public final synthetic c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
 
 # direct methods
-.method public synthetic constructor <init>(LtI5;Lio/reactivex/rxjava3/disposables/CompositeDisposable;I)V
+.method public static final a(I)Ljava/lang/String;
     .locals 0
 
     .line 1
-    iput p3, p0, LiI5;->a:I
-
-    iput-object p1, p0, LiI5;->b:LtI5;
-
-    iput-object p2, p0, LiI5;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    iget v0, p0, LiI5;->a:I
+    invoke-static {p0}, LzHa;->L(I)I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
-    .line 5
-    .line 6
-    check-cast p1, LXmb;
+    move-result p0
 
+    .line 5
+    packed-switch p0, :pswitch_data_0
+
+    .line 6
     .line 7
     .line 8
-    invoke-interface {p1}, LXmb;->S2()Lio/reactivex/rxjava3/core/Single;
+    new-instance p0, LwOc;
 
     .line 9
     .line 10
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
+
     .line 11
-    move-result-object p1
-
     .line 12
-    new-instance v0, LhI5;
-
     .line 13
+    throw p0
+
     .line 14
-    iget-object v1, p0, LiI5;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    :pswitch_0
+    const-string p0, "LENS_ACTIVITY_CENTER"
 
     .line 15
     .line 16
-    iget-object v2, p0, LiI5;->b:LtI5;
+    return-object p0
 
     .line 17
-    .line 18
-    const/4 v3, 0x1
+    :pswitch_1
+    const-string p0, "LENS_TOPICS"
 
+    .line 18
     .line 19
-    invoke-direct {v0, v2, v1, v3}, LhI5;-><init>(LtI5;Lio/reactivex/rxjava3/disposables/CompositeDisposable;I)V
+    return-object p0
 
     .line 20
+    :pswitch_2
+    const-string p0, "FAVORITE_CAROUSEL"
+
     .line 21
     .line 22
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    return-object p0
 
     .line 23
+    :pswitch_3
+    const-string p0, "FAVORITES_PAGE"
+
     .line 24
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 25
-    .line 26
-    .line 27
-    return-object v1
+    return-object p0
 
+    .line 26
+    :pswitch_4
+    const-string p0, "CAMERA"
+
+    .line 27
     .line 28
-    :pswitch_0
-    check-cast p1, LSlb;
+    return-object p0
 
     .line 29
-    .line 30
-    iget-object v0, p0, LiI5;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    :pswitch_5
+    const-string p0, "CHAT"
 
+    .line 30
     .line 31
+    return-object p0
+
     .line 32
-    iget-object v1, p0, LiI5;->b:LtI5;
+    :pswitch_6
+    const-string p0, "SNAPPABLE"
 
     .line 33
     .line 34
-    invoke-virtual {v1}, LtI5;->f()Lzmb;
+    return-object p0
 
     .line 35
+    :pswitch_7
+    const-string p0, "SNAP_PRO_PUBLIC"
+
     .line 36
     .line 37
-    move-result-object v2
+    return-object p0
 
     .line 38
-    iget-object v3, v1, LtI5;->p:LWm0;
+    :pswitch_8
+    const-string p0, "LE_SEARCH"
 
     .line 39
     .line 40
-    check-cast v2, LImb;
+    return-object p0
 
     .line 41
+    :pswitch_9
+    const-string p0, "SEARCH"
+
     .line 42
-    invoke-virtual {v2, v3, p1}, LImb;->e(LWm0;LSlb;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
     .line 43
-    .line 44
-    .line 45
-    move-result-object p1
+    return-object p0
 
+    .line 44
+    :pswitch_a
+    const-string p0, "CONTEXT_CARD"
+
+    .line 45
     .line 46
-    new-instance v2, LvF5;
+    return-object p0
 
     .line 47
-    .line 48
-    const/16 v3, 0x8
+    :pswitch_b
+    const-string p0, "LENS_EXPLORER_FEED"
 
+    .line 48
     .line 49
+    return-object p0
+
     .line 50
-    invoke-direct {v2, v1, v3, v0}, LvF5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    :pswitch_c
+    const-string p0, "SMART_UNLOCK"
 
     .line 51
     .line 52
+    return-object p0
+
     .line 53
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    :pswitch_d
+    const-string p0, "UNKNOWN"
 
     .line 54
     .line 55
-    invoke-direct {v0, p1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    return-object p0
 
     .line 56
-    .line 57
-    .line 58
-    return-object v0
+    nop
 
-    .line 59
+    .line 57
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
+.end method
+
+.method public static final b(I)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, LzHa;->L(I)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    if-eqz p0, :cond_1
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    if-ne p0, v0, :cond_0
+
+    .line 9
+    .line 10
+    const-string p0, "scan"
+
+    .line 11
+    .line 12
+    return-object p0
+
+    .line 13
+    :cond_0
+    new-instance p0, LwOc;
+
+    .line 14
+    .line 15
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    throw p0
+
+    .line 19
+    :cond_1
+    const-string p0, "social"
+
+    .line 20
+    .line 21
+    return-object p0
 .end method

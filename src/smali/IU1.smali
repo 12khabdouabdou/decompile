@@ -1,139 +1,206 @@
-.class public final enum LIU1;
-.super Ljava/lang/Enum;
+.class public final LIU1;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
-# static fields
-.field public static final enum a:LIU1;
 
-.field public static final synthetic b:[LIU1;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LHrh;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public synthetic constructor <init>(LHrh;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    iput p2, p0, LIU1;->a:I
 
-    .line 2
-    const/4 v1, 0x1
+    iput-object p1, p0, LIU1;->b:LHrh;
 
-    .line 3
-    const/4 v2, 0x0
+    const/4 p1, 0x0
 
-    .line 4
-    new-instance v3, LIU1;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 5
-    .line 6
-    const-string v4, "UNSET"
-
-    .line 7
-    .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 9
-    .line 10
-    .line 11
-    sput-object v3, LIU1;->a:LIU1;
-
-    .line 12
-    .line 13
-    new-instance v4, LIU1;
-
-    .line 14
-    .line 15
-    const-string v5, "SCREENSHOT"
-
-    .line 16
-    .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 18
-    .line 19
-    .line 20
-    new-instance v5, LIU1;
-
-    .line 21
-    .line 22
-    const-string v6, "API"
-
-    .line 23
-    .line 24
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 25
-    .line 26
-    .line 27
-    const/4 v6, 0x3
-
-    .line 28
-    new-array v6, v6, [LIU1;
-
-    .line 29
-    .line 30
-    aput-object v3, v6, v2
-
-    .line 31
-    .line 32
-    aput-object v4, v6, v1
-
-    .line 33
-    .line 34
-    aput-object v5, v6, v0
-
-    .line 35
-    .line 36
-    sput-object v6, LIU1;->b:[LIU1;
-
-    .line 37
-    .line 38
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LIU1;
-    .locals 1
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 10
 
     .line 1
-    const-class v0, LIU1;
+    iget v0, p0, LIU1;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    iget-object v0, p0, LIU1;->b:LHrh;
 
     .line 7
-    check-cast p0, LIU1;
-
     .line 8
+    iget-object v1, v0, LHrh;->c:Ljava/lang/Object;
+
     .line 9
-    return-object p0
-.end method
+    .line 10
+    check-cast v1, LREi;
 
-.method public static values()[LIU1;
-    .locals 1
+    .line 11
+    .line 12
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
-    .line 1
-    sget-object v0, LIU1;->b:[LIU1;
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 16
+    check-cast v1, [Ljava/lang/String;
 
-    .line 4
-    .line 5
-    .line 6
+    .line 17
+    .line 18
+    new-instance v2, Ljava/util/ArrayList;
+
+    .line 19
+    .line 20
+    array-length v3, v1
+
+    .line 21
+    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 22
+    .line 23
+    .line 24
+    array-length v3, v1
+
+    .line 25
+    const/4 v4, 0x0
+
+    .line 26
+    :goto_0
+    if-ge v4, v3, :cond_0
+
+    .line 27
+    .line 28
+    aget-object v5, v1, v4
+
+    .line 29
+    .line 30
+    iget-object v6, v0, LHrh;->b:Ljava/lang/Object;
+
+    .line 31
+    .line 32
+    check-cast v6, LFV1;
+
+    .line 33
+    .line 34
+    iget-object v7, v0, LHrh;->a:Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    check-cast v7, Landroid/hardware/camera2/CameraManager;
+
+    .line 37
+    .line 38
+    invoke-static {v6, v7, v5}, LbS2;->p(LFV1;Landroid/hardware/camera2/CameraManager;Ljava/lang/String;)LNX1;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v8
+
+    .line 42
+    new-instance v9, LHU1;
+
+    .line 43
+    .line 44
+    invoke-direct {v9, v5, v8, v7, v6}, LHU1;-><init>(Ljava/lang/String;LNX1;Landroid/hardware/camera2/CameraManager;LFV1;)V
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v2, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 48
+    .line 49
+    .line 50
+    add-int/lit8 v4, v4, 0x1
+
+    .line 51
+    .line 52
+    goto :goto_0
+
+    .line 53
+    :cond_0
+    return-object v2
+
+    .line 54
+    :pswitch_0
+    iget-object v0, p0, LIU1;->b:LHrh;
+
+    .line 55
+    .line 56
+    iget-object v1, v0, LHrh;->b:Ljava/lang/Object;
+
+    .line 57
+    .line 58
+    check-cast v1, LFV1;
+
+    .line 59
+    .line 60
+    new-instance v2, LeO3;
+
+    .line 61
+    .line 62
+    iget-object v0, v0, LHrh;->a:Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    check-cast v0, Landroid/hardware/camera2/CameraManager;
+
+    .line 65
+    .line 66
+    const/16 v3, 0x1c
+
+    .line 67
+    .line 68
+    invoke-direct {v2, v3, v0}, LeO3;-><init>(ILjava/lang/Object;)V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-interface {v1}, LFV1;->y()LwV1;
+
+    .line 72
+    .line 73
+    .line 74
     move-result-object v0
 
-    .line 7
-    check-cast v0, [LIU1;
+    .line 75
+    invoke-interface {v0, v2}, LwV1;->k(LeO3;)[Ljava/lang/String;
 
-    .line 8
-    .line 9
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v0
+
+    .line 79
     return-object v0
+
+    .line 80
+    nop
+
+    .line 81
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

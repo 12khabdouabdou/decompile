@@ -1,23 +1,23 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$GroupSnapshotDynamicallyUpdated;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:Lona;
+.field public final b:LCza;
 
 
 # direct methods
-.method public constructor <init>(Lona;)V
+.method public constructor <init>(LCza;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotDynamicallyUpdated;->b:Lona;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotDynamicallyUpdated;->b:LCza;
 
     .line 5
     .line 6
@@ -38,11 +38,11 @@
 
     .line 4
     .line 5
-    iget-object v2, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotDynamicallyUpdated;->b:Lona;
+    iget-object v2, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotDynamicallyUpdated;->b:LCza;
 
     .line 6
     .line 7
-    invoke-static {v2, v1}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v2, v1}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 8
     .line 9
@@ -84,11 +84,11 @@
     move-result-object v2
 
     .line 28
-    check-cast v2, LOXc;
+    check-cast v2, LJcd;
 
     .line 29
     .line 30
-    invoke-interface {v2}, LOXc;->getId()Ljava/lang/String;
+    invoke-interface {v2}, LJcd;->getId()Ljava/lang/String;
 
     .line 31
     .line 32

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talk/SponsoredLensDetails;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'brandName\':s?,\'adId\':s,\'adServeItemId\':s,\'hasAttachment\':b"
     typeReferences = {}
@@ -74,7 +74,7 @@
     return-object v0
 .end method
 
-.method public final getBrandName()Ljava/lang/String;
+.method public final c()Ljava/lang/String;
     .locals 1
 
     .line 1

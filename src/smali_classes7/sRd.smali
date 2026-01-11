@@ -1,25 +1,36 @@
-.class public final LsRd;
-.super LxRd;
+.class public abstract LsRd;
+.super LIVk;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LFtb;
-
-
-# direct methods
-.method public constructor <init>(LFtb;)V
+# virtual methods
+.method public f(Lkdd;LJcd;Lsmj;)Lio/reactivex/rxjava3/core/Single;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0, p1, p2, p3}, LsRd;->l(Lkdd;LJcd;Lsmj;)Lio/reactivex/rxjava3/core/Single;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LsRd;->a:LFtb;
+    move-result-object p1
 
     .line 5
+    sget-object p2, LLvd;->c:LLvd;
+
     .line 6
-    return-void
+    .line 7
+    new-instance p3, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 8
+    .line 9
+    invoke-direct {p3, p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p3
+.end method
+
+.method public abstract l(Lkdd;LJcd;Lsmj;)Lio/reactivex/rxjava3/core/Single;
 .end method

@@ -1,14 +1,14 @@
 .class public final Lu12;
-.super Ljava/lang/Object;
+.super Ly12;
 .source "SourceFile"
 
 
 # instance fields
-.field public final synthetic a:Lio/reactivex/rxjava3/core/ObservableEmitter;
+.field public final a:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/ObservableEmitter;)V
+.method public constructor <init>(Ljava/util/ArrayList;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lu12;->a:Lio/reactivex/rxjava3/core/ObservableEmitter;
+    iput-object p1, p0, Lu12;->a:Ljava/util/ArrayList;
 
     .line 5
     .line 6
@@ -26,64 +26,120 @@
 
 
 # virtual methods
-.method public final onIconClickEvent(LWZ8;)V
-    .locals 2
-    .annotation runtime Lv6i;
-        threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
-    .end annotation
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    sget-object v0, Lc12;->m0:Lc12;
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    iget-object v1, p1, LWZ8;->a:Lc12;
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lu12;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, Lu12;
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Lu12;->a:Ljava/util/ArrayList;
+
+    .line 12
+    .line 13
+    iget-object p1, p1, Lu12;->a:Ljava/util/ArrayList;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p1
+
+    .line 19
+    if-nez p1, :cond_2
+
+    .line 20
+    .line 21
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 22
+    return p1
+
+    .line 23
+    :cond_2
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 24
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lu12;->a:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
-    if-ne v1, v0, :cond_0
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "ToRecipients(recipientDisplayNames="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    goto :goto_0
-
     .line 8
-    :cond_0
-    instance-of v0, p1, LMZ8;
+    iget-object v1, p0, Lu12;->a:Ljava/util/ArrayList;
 
     .line 9
     .line 10
-    iget-object v1, p0, Lu12;->a:Lio/reactivex/rxjava3/core/ObservableEmitter;
+    const-string v2, ")"
 
     .line 11
     .line 12
-    if-eqz v0, :cond_1
+    invoke-static {v0, v1, v2}, LHr0;->c(Ljava/lang/StringBuilder;Ljava/util/ArrayList;Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
-    invoke-interface {v1, p1}, Lio/reactivex/rxjava3/core/Emitter;->onNext(Ljava/lang/Object;)V
-
     .line 15
+    move-result-object v0
+
     .line 16
-    .line 17
-    return-void
-
-    .line 18
-    :cond_1
-    instance-of v0, p1, LjLb;
-
-    .line 19
-    .line 20
-    if-eqz v0, :cond_2
-
-    .line 21
-    .line 22
-    invoke-interface {v1, p1}, Lio/reactivex/rxjava3/core/Emitter;->onNext(Ljava/lang/Object;)V
-
-    .line 23
-    .line 24
-    .line 25
-    :cond_2
-    :goto_0
-    return-void
+    return-object v0
 .end method

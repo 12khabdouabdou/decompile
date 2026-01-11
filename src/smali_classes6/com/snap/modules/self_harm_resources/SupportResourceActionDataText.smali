@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/self_harm_resources/SupportResourceActionDataText;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'number\':s,\'body\':s?"
     typeReferences = {}

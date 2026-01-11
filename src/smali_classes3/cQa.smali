@@ -2,212 +2,259 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field public final a:Z
+.field public final synthetic a:I
 
-.field public final b:J
+.field public final synthetic b:LdQa;
 
 
 # direct methods
-.method public constructor <init>(JZ)V
+.method public synthetic constructor <init>(LdQa;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LcQa;->a:I
+
+    iput-object p1, p0, LcQa;->b:LdQa;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-boolean p3, p0, LcQa;->a:Z
-
-    .line 5
-    .line 6
-    iput-wide p1, p0, LcQa;->b:J
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LcQa;->a:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LcQa;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    check-cast p1, Ljava/lang/Boolean;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 9
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, LcQa;
+    iget-object p1, p0, LcQa;->b:LdQa;
 
     .line 12
     .line 13
-    iget-boolean v1, p1, LcQa;->a:Z
+    iget-object p1, p1, LdQa;->f:LcM4;
 
     .line 14
     .line 15
-    iget-boolean v3, p0, LcQa;->a:Z
+    return-void
 
     .line 16
+    :pswitch_0
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 17
-    if-eq v3, v1, :cond_2
-
     .line 18
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
     .line 19
-    return v2
-
     .line 20
-    :cond_2
-    iget-wide v3, p0, LcQa;->b:J
-
     .line 21
+    iget-object p1, p0, LcQa;->b:LdQa;
+
     .line 22
-    iget-wide v5, p1, LcQa;->b:J
-
     .line 23
-    .line 24
-    cmp-long p1, v3, v5
+    iget-object p1, p1, LdQa;->f:LcM4;
 
+    .line 24
     .line 25
+    return-void
+
     .line 26
-    if-eqz p1, :cond_3
+    :pswitch_1
+    check-cast p1, LWPa;
 
     .line 27
     .line 28
-    return v2
+    iget-object p1, p0, LcQa;->b:LdQa;
 
     .line 29
-    :cond_3
-    return v0
-.end method
+    .line 30
+    iget-object p1, p1, LdQa;->f:LcM4;
 
-.method public final hashCode()I
-    .locals 6
+    .line 31
+    .line 32
+    return-void
 
-    .line 1
-    iget-boolean v0, p0, LcQa;->a:Z
+    .line 33
+    :pswitch_2
+    check-cast p1, Ljava/lang/Boolean;
 
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
-    .line 5
-    const/16 v0, 0x4cf
+    .line 36
+    .line 37
+    .line 38
+    iget-object p1, p0, LcQa;->b:LdQa;
 
-    .line 6
-    .line 7
-    goto :goto_0
+    .line 39
+    .line 40
+    iget-object p1, p1, LdQa;->f:LcM4;
 
-    .line 8
+    .line 41
+    .line 42
+    return-void
+
+    .line 43
+    :pswitch_3
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 44
+    .line 45
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object p1, p0, LcQa;->b:LdQa;
+
+    .line 49
+    .line 50
+    iget-object p1, p1, LdQa;->f:LcM4;
+
+    .line 51
+    .line 52
+    iget-object p1, p1, LcM4;->a:LCBe;
+
+    .line 53
+    .line 54
+    invoke-interface {p1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object p1
+
+    .line 58
+    check-cast p1, La5f;
+
+    .line 59
+    .line 60
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 61
+    .line 62
+    .line 63
+    return-void
+
+    .line 64
+    :pswitch_4
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 65
+    .line 66
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 67
+    .line 68
+    .line 69
+    move-result p1
+
+    .line 70
+    if-nez p1, :cond_0
+
+    .line 71
+    .line 72
+    iget-object p1, p0, LcQa;->b:LdQa;
+
+    .line 73
+    .line 74
+    iget-object p1, p1, LdQa;->g:LOPa;
+
+    .line 75
+    .line 76
+    const-string v0, "on_cooldown"
+
+    .line 77
+    .line 78
+    const-string v1, "BACKGROUND"
+
+    .line 79
+    .line 80
+    invoke-virtual {p1, v0, v1}, LOPa;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 81
+    .line 82
+    .line 83
     :cond_0
-    const/16 v0, 0x4d5
+    return-void
 
-    .line 9
-    .line 10
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
+    .line 84
+    :pswitch_5
+    check-cast p1, Ljava/lang/Boolean;
 
-    .line 11
-    .line 12
-    const/16 v1, 0x20
+    .line 85
+    .line 86
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    .line 13
-    .line 14
-    iget-wide v2, p0, LcQa;->b:J
+    .line 87
+    .line 88
+    .line 89
+    move-result p1
 
-    .line 15
-    .line 16
-    ushr-long v4, v2, v1
+    .line 90
+    if-nez p1, :cond_1
 
-    .line 17
-    .line 18
-    xor-long/2addr v2, v4
+    .line 91
+    .line 92
+    iget-object p1, p0, LcQa;->b:LdQa;
 
-    .line 19
-    long-to-int v1, v2
+    .line 93
+    .line 94
+    iget-object p1, p1, LdQa;->g:LOPa;
 
-    .line 20
-    add-int/2addr v0, v1
+    .line 95
+    .line 96
+    const-string v0, "over_max_views"
 
-    .line 21
-    return v0
-.end method
+    .line 97
+    .line 98
+    const-string v1, "BACKGROUND"
 
-.method public final toString()Ljava/lang/String;
-    .locals 4
+    .line 99
+    .line 100
+    invoke-virtual {p1, v0, v1}, LOPa;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 101
+    .line 102
+    .line 103
+    :cond_1
+    return-void
 
-    .line 2
-    .line 3
-    const-string v1, "MagicCaptionMetaData(isAdult="
+    .line 104
+    nop
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-boolean v1, p0, LcQa;->a:Z
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", captureTimestamp="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-wide v1, p0, LcQa;->b:J
-
-    .line 19
-    .line 20
-    const-string v3, ")"
-
-    .line 21
-    .line 22
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    return-object v0
+    .line 105
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

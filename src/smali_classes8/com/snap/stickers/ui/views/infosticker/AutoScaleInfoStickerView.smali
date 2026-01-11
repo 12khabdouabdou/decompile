@@ -24,7 +24,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/stickers/ui/views/infosticker/AutoScaleInfoStickerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/stickers/ui/views/infosticker/AutoScaleInfoStickerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/stickers/ui/views/infosticker/AutoScaleInfoStickerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/stickers/ui/views/infosticker/AutoScaleInfoStickerView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     iput p1, p0, Lcom/snap/stickers/ui/views/infosticker/AutoScaleInfoStickerView;->a:F
 
     .line 6
-    sget-object p1, LODh;->Z:LODh;
+    sget-object p1, Lc2i;->Z:Lc2i;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -72,7 +72,7 @@
     invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 8
-    sget-object p1, Lrn0;->a:Lrn0;
+    sget-object p1, LJp0;->a:LJp0;
 
     const/4 p1, 0x0
 
@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -248,7 +248,7 @@
     move-result-object p2
 
     .line 16
-    invoke-static {p1, p2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, p2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 17
     .line 18

@@ -47,7 +47,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 6
 
     .line 1
@@ -93,12 +93,12 @@
 
     .line 20
     .line 21
-    invoke-direct {v3, p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;-><init>(LV6i;ILio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;)V
+    invoke-direct {v3, p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;-><init>(Lmvi;ILio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;)V
 
     .line 22
     .line 23
     .line 24
-    invoke-interface {p1, v3}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v3}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 25
     .line 26

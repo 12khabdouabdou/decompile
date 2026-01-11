@@ -1,58 +1,62 @@
-.class public abstract synthetic LMPc;
-.super Ljava/lang/Object;
+.class public final LMPc;
+.super LEM0;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final Z:LOa2;
+
+.field public final e0:LgPb;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LOa2;)V
+    .locals 2
 
     .line 1
-    invoke-static {}, Lcom/snap/profile/communities/Result;->values()[Lcom/snap/profile/communities/Result;
+    sget-object v0, LgPb;->l0:LgPb;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    move-result-object v0
+    invoke-direct {p0, p1, v0, v1, v1}, LEM0;-><init>(LOa2;Ltw;ZZ)V
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
-
     .line 7
+    iput-object p1, p0, LMPc;->Z:LOa2;
+
     .line 8
-    :try_start_0
-    sget-object v1, Lcom/snap/profile/communities/Result;->Cancelled:Lcom/snap/profile/communities/Result;
-
     .line 9
+    iput-object v0, p0, LMPc;->e0:LgPb;
+
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 11
-    .line 12
-    .line 13
-    move-result v1
-
-    .line 14
-    const/4 v2, 0x1
-
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    .line 17
-    :catch_0
-    sput-object v0, LMPc;->a:[I
-
-    .line 18
-    .line 19
     return-void
+.end method
+
+
+# virtual methods
+.method public final y()LOa2;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMPc;->Z:LOa2;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final z()Ltw;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMPc;->e0:LgPb;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

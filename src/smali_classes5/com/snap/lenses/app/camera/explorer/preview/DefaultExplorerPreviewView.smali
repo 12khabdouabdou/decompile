@@ -3,9 +3,9 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lb07;
-.implements Lhsc;
-.implements LMH3;
+.implements La47;
+.implements LhHc;
+.implements LoL3;
 
 
 # static fields
@@ -74,7 +74,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 6
 
-    const/16 v0, 0x8
+    const/16 v0, 0x9
 
     .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -89,19 +89,19 @@
     iput-object p3, p0, Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;->i0:Landroid/graphics/Paint;
 
     .line 5
-    sget-object p3, LsL6;->a:LsL6;
+    sget-object p3, LgP6;->a:LgP6;
 
     iput-object p3, p0, Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;->l0:Ljava/util/List;
 
     .line 6
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     move-result-object p3
 
     iput-object p3, p0, Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;->m0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 7
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     move-result-object p3
 
@@ -129,7 +129,7 @@
     iput-object p3, p0, Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;->q0:Landroid/graphics/Path;
 
     .line 11
-    sget-object p3, Lpve;->a:[I
+    sget-object p3, LYMe;->a:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -148,7 +148,7 @@
     const/high16 v2, 0x42340000    # 45.0f
 
     .line 13
-    invoke-static {p2, p3, v2}, LQtc;->i(FFF)F
+    invoke-static {p2, p3, v2}, LrZ3;->s(FFF)F
 
     move-result p2
 
@@ -221,8 +221,10 @@
 
     invoke-direct {v2, v3}, Landroid/graphics/Paint;-><init>(I)V
 
+    const/16 v4, 0x8
+
     .line 23
-    invoke-virtual {p1, v0, v5}, Landroid/content/res/TypedArray;->getColor(II)I
+    invoke-virtual {p1, v4, v5}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v4
 
@@ -266,7 +268,7 @@
     const/high16 v2, 0x3f800000    # 1.0f
 
     .line 29
-    invoke-static {v1, p3, v2}, LQtc;->i(FFF)F
+    invoke-static {v1, p3, v2}, LrZ3;->s(FFF)F
 
     move-result p3
 
@@ -294,10 +296,8 @@
 
     const p2, 0x4e200
 
-    const/16 v1, 0x9
-
     .line 34
-    invoke-virtual {p1, v1, p2}, Landroid/content/res/TypedArray;->getInt(II)I
+    invoke-virtual {p1, v0, p2}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p2
 
@@ -313,9 +313,9 @@
     invoke-virtual {p3, p2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 36
-    new-instance p2, LeW;
+    new-instance p2, LkY;
 
-    invoke-direct {p2, v0, p0}, LeW;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v0, p0}, LkY;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p3, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -347,7 +347,7 @@
     .locals 2
 
     .line 1
-    check-cast p1, La07;
+    check-cast p1, LZ37;
 
     .line 2
     .line 3
@@ -360,7 +360,7 @@
     .line 6
     .line 7
     .line 8
-    instance-of v0, p1, LZZ6;
+    instance-of v0, p1, LY37;
 
     .line 9
     .line 10
@@ -376,14 +376,14 @@
     move-result-object p1
 
     .line 16
-    new-instance v0, LLv5;
+    new-instance v0, LJA5;
 
     .line 17
     .line 18
     const/4 v1, 0x1
 
     .line 19
-    invoke-direct {v0, p0, v1}, LLv5;-><init>(Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;I)V
+    invoke-direct {v0, p0, v1}, LJA5;-><init>(Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;I)V
 
     .line 20
     .line 21
@@ -440,7 +440,7 @@
 
     .line 47
     :cond_0
-    instance-of v0, p1, LYZ6;
+    instance-of v0, p1, LX37;
 
     .line 48
     .line 49
@@ -448,7 +448,7 @@
 
     .line 50
     .line 51
-    check-cast p1, LYZ6;
+    check-cast p1, LX37;
 
     .line 52
     .line 53
@@ -553,7 +553,7 @@
     div-float/2addr v1, v3
 
     .line 36
-    invoke-static {v1}, LI0j;->K(F)I
+    invoke-static {v1}, LbS2;->K(F)I
 
     .line 37
     .line 38
@@ -567,7 +567,7 @@
     div-float/2addr v0, v3
 
     .line 42
-    invoke-static {v0}, LI0j;->K(F)I
+    invoke-static {v0}, LbS2;->K(F)I
 
     .line 43
     .line 44
@@ -582,7 +582,7 @@
     div-float/2addr v3, p8
 
     .line 49
-    invoke-static {p10}, Llva;->L(I)I
+    invoke-static {p10}, LzHa;->L(I)I
 
     .line 50
     .line 51
@@ -614,7 +614,7 @@
 
     .line 62
     .line 63
-    invoke-static {p8}, LI0j;->K(F)I
+    invoke-static {p8}, LbS2;->K(F)I
 
     .line 64
     .line 65
@@ -629,7 +629,7 @@
 
     .line 69
     :cond_2
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 70
     .line 71
@@ -646,7 +646,7 @@
 
     .line 76
     .line 77
-    invoke-static {v2}, LI0j;->K(F)I
+    invoke-static {v2}, LbS2;->K(F)I
 
     .line 78
     .line 79
@@ -788,14 +788,14 @@
     move-result-object p1
 
     .line 18
-    new-instance v0, LLv5;
+    new-instance v0, LJA5;
 
     .line 19
     .line 20
     const/4 v1, 0x0
 
     .line 21
-    invoke-direct {v0, p0, v1}, LLv5;-><init>(Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;I)V
+    invoke-direct {v0, p0, v1}, LJA5;-><init>(Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;I)V
 
     .line 22
     .line 23
@@ -873,7 +873,7 @@
     .locals 2
 
     .line 1
-    check-cast p1, LLH3;
+    check-cast p1, LnL3;
 
     .line 2
     .line 3
@@ -885,7 +885,7 @@
     move-result-object v0
 
     .line 7
-    const v1, 0x7f08041b
+    const v1, 0x7f080487
 
     .line 8
     .line 9
@@ -898,11 +898,11 @@
     move-result-object v1
 
     .line 14
-    iget-object p1, p1, LLH3;->a:Lm3d;
+    iget-object p1, p1, LnL3;->a:Lmid;
 
     .line 15
     .line 16
-    invoke-virtual {p1, v1}, Lm3d;->h(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Lmid;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -922,7 +922,7 @@
     move-result p1
 
     .line 26
-    invoke-static {v0, p1}, LsX3;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v0, p1}, LV14;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 27
     .line 28
@@ -958,7 +958,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->d1()Ljava/lang/Object;
+    invoke-virtual {v2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -966,7 +966,7 @@
     move-result-object v2
 
     .line 14
-    instance-of v3, v2, LHv5;
+    instance-of v3, v2, LEA5;
 
     .line 15
     .line 16
@@ -974,7 +974,7 @@
 
     .line 17
     .line 18
-    check-cast v2, LHv5;
+    check-cast v2, LEA5;
 
     .line 19
     .line 20
@@ -1003,11 +1003,11 @@
     .line 28
     .line 29
     .line 30
-    iget v2, v12, LHv5;->h:F
+    iget v2, v12, LEA5;->h:F
 
     .line 31
     .line 32
-    iget v3, v12, LHv5;->i:F
+    iget v3, v12, LEA5;->i:F
 
     .line 33
     .line 34
@@ -1020,11 +1020,11 @@
     .line 37
     .line 38
     .line 39
-    iget v2, v12, LHv5;->f:F
+    iget v2, v12, LEA5;->f:F
 
     .line 40
     .line 41
-    iget v3, v12, LHv5;->g:F
+    iget v3, v12, LEA5;->g:F
 
     .line 42
     .line 43
@@ -1037,14 +1037,14 @@
 
     .line 47
     .line 48
-    iget v14, v12, LHv5;->a:I
+    iget v14, v12, LEA5;->a:I
 
     .line 49
     .line 50
     int-to-float v2, v14
 
     .line 51
-    iget v8, v12, LHv5;->b:F
+    iget v8, v12, LEA5;->b:F
 
     .line 52
     .line 53
@@ -1213,7 +1213,7 @@
     move-object v10, v7
 
     .line 124
-    iget v7, v12, LHv5;->c:F
+    iget v7, v12, LEA5;->c:F
 
     .line 125
     .line 126
@@ -1521,11 +1521,11 @@
 
     .line 264
     .line 265
-    iget v3, v12, LHv5;->d:I
+    iget v3, v12, LEA5;->d:I
 
     .line 266
     .line 267
-    iget v4, v12, LHv5;->e:I
+    iget v4, v12, LEA5;->e:I
 
     .line 268
     .line 269
@@ -1856,11 +1856,11 @@
     float-to-int v2, v1
 
     .line 125
-    new-instance v1, LHv5;
+    new-instance v1, LEA5;
 
     .line 126
     .line 127
-    invoke-direct/range {v1 .. v10}, LHv5;-><init>(IFFIIFFFF)V
+    invoke-direct/range {v1 .. v10}, LEA5;-><init>(IFFIIFFFF)V
 
     .line 128
     .line 129
@@ -1875,7 +1875,7 @@
     .line 134
     :cond_2
     :goto_1
-    sget-object v1, LIv5;->a:LIv5;
+    sget-object v1, LFA5;->a:LFA5;
 
     .line 135
     .line 136

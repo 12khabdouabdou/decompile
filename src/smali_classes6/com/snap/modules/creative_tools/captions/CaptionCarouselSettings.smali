@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/creative_tools/captions/CaptionCarouselSettings;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'tagCarouselTeamSnapchatSearchable\':b@?,\'colorEyeDropperEnabled\':b@?,\'shouldPersistLastUsedStyle\':b@?,\'enableCarouselRecents\':b@?"
     typeReferences = {}

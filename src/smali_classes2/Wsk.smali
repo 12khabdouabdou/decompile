@@ -3,111 +3,108 @@
 .source "SourceFile"
 
 # interfaces
-.implements LPJc;
+.implements LLK0;
 
 
-# static fields
-.field public static final a:LWsk;
+# instance fields
+.field public final a:Landroid/net/Uri;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    new-instance v0, LWsk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    const-string v0, "content://com.android.badge/badge"
+
     .line 5
     .line 6
-    sput-object v0, LWsk;->a:LWsk;
+    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     .line 7
     .line 8
-    new-instance v0, LFhk;
-
     .line 9
+    move-result-object v0
+
     .line 10
-    const/4 v1, 0x1
+    iput-object v0, p0, LWsk;->a:Landroid/net/Uri;
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
     .line 12
-    .line 13
-    .line 14
-    const-class v1, LUhk;
-
-    .line 15
-    .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 30
-    .line 31
-    .line 32
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final a()Ljava/util/List;
+    .locals 1
 
     .line 1
-    if-nez p1, :cond_0
+    const-string v0, "com.zui.launcher"
 
     .line 2
     .line 3
-    check-cast p2, LQJc;
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 4
     .line 5
-    const/4 p1, 0x0
-
     .line 6
-    throw p1
+    move-result-object v0
 
     .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
+    return-object v0
+.end method
 
+.method public final b(Lcom/snap/core/application/SnapResourcesContextWrapper;Landroid/content/ComponentName;I)V
+    .locals 2
+
+    .line 1
+    new-instance p2, Landroid/os/Bundle;
+
+    .line 2
+    .line 3
+    invoke-direct {p2}, Landroid/os/Bundle;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "app_badge_count"
+
+    .line 7
     .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    invoke-virtual {p2, v0, p3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
+    .line 9
     .line 10
     .line 11
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
     .line 12
-    throw p1
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    const/4 p3, 0x0
+
+    .line 16
+    iget-object v0, p0, LWsk;->a:Landroid/net/Uri;
+
+    .line 17
+    .line 18
+    const-string v1, "setAppBadgeCount"
+
+    .line 19
+    .line 20
+    invoke-virtual {p1, v0, v1, p3, p2}, Landroid/content/ContentResolver;->call(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Landroid/os/Bundle;
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
 .end method

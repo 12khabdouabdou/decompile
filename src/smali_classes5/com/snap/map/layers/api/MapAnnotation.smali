@@ -1,14 +1,14 @@
 .class public final Lcom/snap/map/layers/api/MapAnnotation;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'identifier\':s,\'lat\':d,\'lng\':d,\'styleIdentifier\':s,\'imageUrl\':s?,\'clusterPriority\':d@?,\'ancillaries\':a?<r:\'[0]\'>,\'metadata\':m?<s,u>"
     typeReferences = {
-        LXUa;
+        LF7b;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LXUa;",
+            "LF7b;",
             ">;"
         }
     .end annotation
@@ -61,7 +61,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/Double;",
             "Ljava/util/List<",
-            "LXUa;",
+            "LF7b;",
             ">;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",

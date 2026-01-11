@@ -1,152 +1,98 @@
-.class public LW4j;
-.super LO4j;
+.class public final LW4j;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'onDismiss\':f?(),\'webLauncher\':r?:\'[0]\',\'pageLauncher\':r?:\'[1]\',\'deckHierarchy\':r?:\'[2]\'"
+    typeReferences = {
+        Lcom/snap/composer/WebLauncher;,
+        Lcom/snap/composer/page_launcher/IPageLauncher;,
+        Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
+    }
+.end annotation
+
+
 # instance fields
-.field public o:Lt3e;
+.field private _deckHierarchy:Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
+
+.field private _onDismiss:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+
+.field private _webLauncher:Lcom/snap/composer/WebLauncher;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 9
-
-    .line 1
-    sget-object v2, LCre;->c:LCre;
-
-    .line 2
-    .line 3
-    const-string v1, "UNIFIED_PROFILE_CHARM_HIDE"
-
-    .line 4
-    .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
-    .line 6
-    .line 7
-    const-wide v5, 0x3fb999999999999aL    # 0.1
-
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
-    .line 13
-    .line 14
-    move-object v0, p0
-
-    .line 15
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    new-array v0, v0, [B
-
-    .line 3
-    .line 4
-    const/4 v1, 0x2
-
-    .line 5
-    iget-object v2, p0, LW4j;->o:Lt3e;
-
-    .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 8
-    .line 9
-    .line 10
-    const/4 v1, 0x3
-
-    .line 11
-    iget-object v2, p0, LO4j;->n:Ljava/lang/Long;
-
-    .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 v1, 0x4
-
-    .line 17
-    iget-object v2, p0, LP4j;->l:LFZ7;
-
-    .line 18
-    .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 20
-    .line 21
-    .line 22
-    const/4 v1, 0x6
-
-    .line 23
-    iget-object v2, p0, LP4j;->j:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 26
-    .line 27
-    .line 28
-    const/4 v1, 0x7
-
-    .line 29
-    iget-object v2, p0, LP4j;->k:LVce;
-
-    .line 30
-    .line 31
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 32
-    .line 33
-    .line 34
-    const/16 v1, 0x8
-
-    .line 35
-    .line 36
-    iget-object v2, p0, LP4j;->m:Ljava/lang/Boolean;
-
-    .line 37
-    .line 38
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 39
-    .line 40
-    .line 41
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
-    .line 42
-    .line 43
-    .line 44
-    return-void
-.end method
-
-.method public final d()I
     .locals 1
 
     .line 1
-    const/16 v0, 0x988
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
 
     .line 2
+    iput-object v0, p0, LW4j;->_onDismiss:Lkotlin/jvm/functions/Function0;
+
     .line 3
-    return v0
+    iput-object v0, p0, LW4j;->_webLauncher:Lcom/snap/composer/WebLauncher;
+
+    .line 4
+    iput-object v0, p0, LW4j;->_pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+
+    .line 5
+    iput-object v0, p0, LW4j;->_deckHierarchy:Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(LNIh;Lcom/snap/composer/WebLauncher;Lcom/snap/composer/page_launcher/IPageLauncher;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 11
+    invoke-direct {p0, p1, p2, p3, v0}, LW4j;-><init>(Lkotlin/jvm/functions/Function0;Lcom/snap/composer/WebLauncher;Lcom/snap/composer/page_launcher/IPageLauncher;Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lcom/snap/composer/WebLauncher;Lcom/snap/composer/page_launcher/IPageLauncher;Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lcom/snap/composer/WebLauncher;",
+            "Lcom/snap/composer/page_launcher/IPageLauncher;",
+            "Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;",
+            ")V"
+        }
+    .end annotation
+
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    iput-object p1, p0, LW4j;->_onDismiss:Lkotlin/jvm/functions/Function0;
+
+    .line 8
+    iput-object p2, p0, LW4j;->_webLauncher:Lcom/snap/composer/WebLauncher;
+
+    .line 9
+    iput-object p3, p0, LW4j;->_pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+
+    .line 10
+    iput-object p4, p0, LW4j;->_deckHierarchy:Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
+
+    return-void
 .end method

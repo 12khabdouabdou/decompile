@@ -1,167 +1,95 @@
-.class final Lm0c;
+.class public final Lm0c;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/core/ObservableTransformer;
+
 
 # instance fields
-.field private final a:Ljava/lang/Long;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "asset_load"
-    .end annotation
-.end field
+.field public final a:I
 
-.field private final b:Ljava/lang/Long;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "asset_instantiate"
-    .end annotation
-.end field
+.field public final b:Lxp0;
 
-.field private final c:Ljava/lang/Long;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "animation_load"
-    .end annotation
-.end field
-
-.field private final d:Ljava/lang/Long;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "animation_instantiate"
-    .end annotation
-.end field
-
-.field private final e:Ljava/lang/Long;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "animation_copy"
-    .end annotation
-.end field
-
-.field private final f:Ljava/lang/Boolean;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "model_already_loaded"
-    .end annotation
-.end field
-
-.field private final g:Ljava/lang/Long;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "animation_component"
-    .end annotation
-.end field
-
-.field private final h:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "model_type"
-    .end annotation
-.end field
+.field public final c:LZ3k;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(Lxp0;)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, Lqbk;->b:LZ3k;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lm0c;->a:Ljava/lang/Long;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lm0c;->b:Ljava/lang/Long;
+    const v1, 0x7f0e03c8
 
     .line 7
     .line 8
-    iput-object p3, p0, Lm0c;->c:Ljava/lang/Long;
-
     .line 9
+    iput v1, p0, Lm0c;->a:I
+
     .line 10
-    iput-object p4, p0, Lm0c;->d:Ljava/lang/Long;
-
     .line 11
+    iput-object p1, p0, Lm0c;->b:Lxp0;
+
     .line 12
-    iput-object p5, p0, Lm0c;->e:Ljava/lang/Long;
-
     .line 13
+    iput-object v0, p0, Lm0c;->c:LZ3k;
+
     .line 14
-    iput-object p6, p0, Lm0c;->f:Ljava/lang/Boolean;
-
     .line 15
-    .line 16
-    iput-object p7, p0, Lm0c;->g:Ljava/lang/Long;
-
-    .line 17
-    .line 18
-    iput-object p8, p0, Lm0c;->h:Ljava/lang/String;
-
-    .line 19
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Long;
-    .locals 1
+.method public final b(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/ObservableSource;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lm0c;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lm0c;->b:Lxp0;
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    iget-object v1, p0, Lm0c;->c:LZ3k;
 
-.method public final b()Ljava/lang/Long;
-    .locals 1
+    .line 4
+    .line 5
+    invoke-static {p1, v0, v1}, LTVd;->Z(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
-    .line 1
-    iget-object v0, p0, Lm0c;->e:Ljava/lang/Long;
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    .line 9
+    new-instance v0, LRsb;
 
-.method public final c()Ljava/lang/Long;
-    .locals 1
+    .line 10
+    .line 11
+    const/16 v1, 0xd
 
-    .line 1
-    iget-object v0, p0, Lm0c;->c:Ljava/lang/Long;
+    .line 12
+    .line 13
+    invoke-direct {v0, v1, p0}, LRsb;-><init>(ILjava/lang/Object;)V
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
 
-.method public final d()Ljava/lang/Long;
-    .locals 1
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
 
-    .line 1
-    iget-object v0, p0, Lm0c;->b:Ljava/lang/Long;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final e()Ljava/lang/Long;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lm0c;->a:Ljava/lang/Long;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final f()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lm0c;->h:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
+    .line 20
+    return-object p1
 .end method

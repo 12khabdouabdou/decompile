@@ -34,7 +34,7 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f0e012b
+    const v1, 0x7f0e012d
 
     .line 2
     invoke-direct {p0, p1, p2, v0, v1}, Lcom/snap/payments/lib/views/CheckoutV2TitleBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
@@ -67,7 +67,7 @@
     .line 8
     invoke-static {p1, p4, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const p1, 0x7f0b0b1e
+    const p1, 0x7f0b0c30
 
     .line 9
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -77,15 +77,15 @@
     check-cast p1, Lcom/snap/imageloading/view/SnapImageView;
 
     .line 10
-    new-instance p2, LSR2;
+    new-instance p2, LvU2;
 
     const/4 p3, 0x0
 
-    invoke-direct {p2, p0, p3}, LSR2;-><init>(Lcom/snap/payments/lib/views/CheckoutV2TitleBar;I)V
+    invoke-direct {p2, p0, p3}, LvU2;-><init>(Lcom/snap/payments/lib/views/CheckoutV2TitleBar;I)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0b004d
+    const p1, 0x7f0b005e
 
     .line 11
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -95,15 +95,15 @@
     check-cast p1, Lcom/snap/component/button/SnapButtonView;
 
     .line 12
-    new-instance p2, LSR2;
+    new-instance p2, LvU2;
 
     const/4 p3, 0x1
 
-    invoke-direct {p2, p0, p3}, LSR2;-><init>(Lcom/snap/payments/lib/views/CheckoutV2TitleBar;I)V
+    invoke-direct {p2, p0, p3}, LvU2;-><init>(Lcom/snap/payments/lib/views/CheckoutV2TitleBar;I)V
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    const p1, 0x7f0b11dd
+    const p1, 0x7f0b1303
 
     .line 13
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -112,7 +112,7 @@
 
     check-cast p1, Landroid/widget/LinearLayout;
 
-    const p1, 0x7f0b11d9
+    const p1, 0x7f0b12ff
 
     .line 14
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -121,7 +121,7 @@
 
     iput-object p1, p0, Lcom/snap/payments/lib/views/CheckoutV2TitleBar;->a:Landroid/view/View;
 
-    const p1, 0x7f0b11da
+    const p1, 0x7f0b1300
 
     .line 15
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -130,7 +130,7 @@
 
     iput-object p1, p0, Lcom/snap/payments/lib/views/CheckoutV2TitleBar;->b:Landroid/view/View;
 
-    const p1, 0x7f0b11db
+    const p1, 0x7f0b1301
 
     .line 16
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -139,7 +139,7 @@
 
     iput-object p1, p0, Lcom/snap/payments/lib/views/CheckoutV2TitleBar;->c:Landroid/view/View;
 
-    const p1, 0x7f0b11dc
+    const p1, 0x7f0b1302
 
     .line 17
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;

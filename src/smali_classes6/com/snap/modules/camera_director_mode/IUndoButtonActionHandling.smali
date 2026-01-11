@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LjZ8;
+    proxyClass = LT69;
     schema = "\'onUndoButtonTapped\':f?|m|()"
     typeReferences = {}
 .end annotation
@@ -17,7 +17,7 @@
 
 # virtual methods
 .method public abstract onUndoButtonTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

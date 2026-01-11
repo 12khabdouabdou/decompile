@@ -1,20 +1,71 @@
-.class public final LJ9b;
+.class public abstract LJ9b;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LPe;
-
-
 # direct methods
-.method public synthetic constructor <init>(LPe;)V
-    .locals 0
+.method public static handleBackToTopButtonTap(Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
 
     .line 1
-    iput-object p1, p0, LJ9b;->a:LPe;
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
 
-    return-void
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static handlePlaceTrayTap(Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
+.end method
+
+.method public static handleTryAgainButtonTap(Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;)V
+    .locals 1
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

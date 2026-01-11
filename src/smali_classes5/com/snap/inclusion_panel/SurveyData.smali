@@ -1,14 +1,14 @@
 .class public final Lcom/snap/inclusion_panel/SurveyData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'isOptedIn\':b,\'version\':d,\'questions\':a<r:\'[0]\'>"
     typeReferences = {
-        Lise;
+        LRJe;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lise;",
+            "LRJe;",
             ">;"
         }
     .end annotation
@@ -36,7 +36,7 @@
         value = {
             "(ZD",
             "Ljava/util/List<",
-            "Lise;",
+            "LRJe;",
             ">;)V"
         }
     .end annotation

@@ -1,761 +1,534 @@
 .class public final LAG2;
-.super Ljava/lang/Object;
+.super Ln54;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lu00;
+.field public Z:LA7k;
 
-.field public final b:LWq6;
+.field public e0:LcD1;
 
-.field public final c:LwX4;
-
-.field public final d:LwX4;
-
-.field public final e:LLPb;
-
-.field public final f:LwX4;
-
-.field public final g:LWm0;
-
-.field public final h:LBre;
-
-.field public final i:Landroid/view/LayoutInflater;
-
-.field public final j:LXfi;
-
-.field public final k:LXfi;
-
-.field public final l:LXfi;
-
-.field public final m:Ljava/util/concurrent/atomic/AtomicReference;
-
-.field public final n:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final o:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public volatile p:Z
+.field public f0:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Lu00;LWq6;LwX4;Landroid/content/Context;LwX4;LLPb;LwX4;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ln54;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LAG2;->a:Lu00;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LAG2;->b:LWq6;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LAG2;->c:LwX4;
-
-    .line 9
-    .line 10
-    iput-object p5, p0, LAG2;->d:LwX4;
-
-    .line 11
-    .line 12
-    iput-object p6, p0, LAG2;->e:LLPb;
-
-    .line 13
-    .line 14
-    iput-object p7, p0, LAG2;->f:LwX4;
-
-    .line 15
-    .line 16
-    sget-object p1, LZF2;->Z:LZF2;
-
-    .line 17
-    .line 18
-    const-string p2, "ChatFragmentPreloader"
-
-    .line 19
-    .line 20
-    invoke-static {p1, p1, p2}, LEU0;->h(LZF2;LZF2;Ljava/lang/String;)LWm0;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    iput-object p1, p0, LAG2;->g:LWm0;
-
-    .line 25
-    .line 26
-    new-instance p2, LBre;
-
-    .line 27
-    .line 28
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
-
-    .line 29
-    .line 30
-    .line 31
-    iput-object p2, p0, LAG2;->h:LBre;
-
-    .line 32
-    .line 33
-    invoke-static {p4}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object p1
-
-    .line 37
-    iput-object p1, p0, LAG2;->i:Landroid/view/LayoutInflater;
-
-    .line 38
-    .line 39
-    new-instance p1, LyG2;
-
-    .line 40
-    .line 41
-    const/4 p2, 0x1
-
-    .line 42
-    invoke-direct {p1, p0, p2}, LyG2;-><init>(LAG2;I)V
-
-    .line 43
-    .line 44
-    .line 45
-    new-instance p2, LXfi;
-
-    .line 46
-    .line 47
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 48
-    .line 49
-    .line 50
-    iput-object p2, p0, LAG2;->j:LXfi;
-
-    .line 51
-    .line 52
-    new-instance p1, LyG2;
-
-    .line 53
-    .line 54
-    const/4 p2, 0x2
-
-    .line 55
-    invoke-direct {p1, p0, p2}, LyG2;-><init>(LAG2;I)V
-
-    .line 56
-    .line 57
-    .line 58
-    new-instance p2, LXfi;
-
-    .line 59
-    .line 60
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 61
-    .line 62
-    .line 63
-    iput-object p2, p0, LAG2;->k:LXfi;
-
-    .line 64
-    .line 65
-    new-instance p1, LyG2;
-
-    .line 66
-    .line 67
-    const/4 p2, 0x0
-
-    .line 68
-    invoke-direct {p1, p0, p2}, LyG2;-><init>(LAG2;I)V
-
-    .line 69
-    .line 70
-    .line 71
-    new-instance p2, LXfi;
-
-    .line 72
-    .line 73
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 74
-    .line 75
-    .line 76
-    iput-object p2, p0, LAG2;->l:LXfi;
-
-    .line 77
-    .line 78
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 79
-    .line 80
-    invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    .line 81
-    .line 82
-    .line 83
-    iput-object p1, p0, LAG2;->m:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 84
-    .line 85
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 86
-    .line 87
-    const/4 p2, 0x0
-
-    .line 88
-    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    .line 89
-    .line 90
-    .line 91
-    iput-object p1, p0, LAG2;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 92
-    .line 93
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 94
-    .line 95
-    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    .line 96
-    .line 97
-    .line 98
-    iput-object p1, p0, LAG2;->o:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 99
-    .line 100
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/view/ViewGroup;Lq0h;)Landroid/view/View;
-    .locals 8
-
-    .line 1
-    iget-object v0, p0, LAG2;->m:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object v0
-
-    .line 8
-    check-cast v0, Landroid/view/ViewGroup;
-
-    .line 9
-    .line 10
-    const/4 v1, 0x0
-
-    .line 11
-    const/4 v2, 0x1
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    const/4 v3, 0x1
-
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_0
-    const/4 v3, 0x0
-
-    .line 17
-    :goto_0
-    iget-object v4, p0, LAG2;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 18
-    .line 19
-    invoke-virtual {v4}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v4
-
-    .line 23
-    iget-object v5, p0, LAG2;->c:LwX4;
-
-    .line 24
-    .line 25
-    invoke-virtual {v5}, LwX4;->get()Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v5
-
-    .line 29
-    check-cast v5, LaA8;
-
-    .line 30
-    .line 31
-    sget-object v6, LcL2;->X:LcL2;
-
-    .line 32
-    .line 33
-    const-string v7, "cache_hit"
-
-    .line 34
-    .line 35
-    invoke-static {v6, v7, v3}, LDq9;->Y(LcTb;Ljava/lang/String;Z)LqTb;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v3
-
-    .line 39
-    invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v4
-
-    .line 43
-    const-string v6, "is_ongoing"
-
-    .line 44
-    .line 45
-    invoke-virtual {v3, v6, v4}, LqTb;->a(Ljava/lang/String;Ljava/lang/Boolean;)V
-
-    .line 46
-    .line 47
-    .line 48
-    if-eqz p2, :cond_1
-
-    .line 49
-    .line 50
-    invoke-virtual {p2}, Ljava/lang/Enum;->name()Ljava/lang/String;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v4
-
-    .line 54
-    if-nez v4, :cond_2
-
-    .line 55
-    .line 56
-    :cond_1
-    const-string v4, "none"
-
-    .line 57
-    .line 58
-    :cond_2
-    const-string v6, "entry_point"
-
-    .line 59
-    .line 60
-    invoke-virtual {v3, v6, v4}, LqTb;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 61
-    .line 62
-    .line 63
-    invoke-static {v5, v3}, LYz8;->e(LaA8;LqTb;)V
-
-    .line 64
-    .line 65
-    .line 66
-    iget-object v3, p0, LAG2;->f:LwX4;
-
-    .line 67
-    .line 68
-    invoke-virtual {v3}, LwX4;->get()Ljava/lang/Object;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v3
-
-    .line 72
-    check-cast v3, LZE2;
-
-    .line 73
-    .line 74
-    new-instance v4, LbF2;
-
-    .line 75
-    .line 76
-    if-eqz v0, :cond_3
-
-    .line 77
-    .line 78
-    const/4 v5, 0x1
-
-    .line 79
-    goto :goto_1
-
-    .line 80
-    :cond_3
-    const/4 v5, 0x0
-
-    .line 81
-    :goto_1
-    invoke-direct {v4, p2, v5}, LbF2;-><init>(Lq0h;Z)V
-
-    .line 82
-    .line 83
-    .line 84
-    invoke-virtual {v3, v4}, LZE2;->d(Lank;)V
-
-    .line 85
-    .line 86
-    .line 87
-    sput-boolean v2, LQtc;->e:Z
-
-    .line 88
-    .line 89
-    if-eqz v0, :cond_4
-
-    .line 90
-    .line 91
-    return-object v0
-
-    .line 92
-    :cond_4
-    iget-object p2, p0, LAG2;->l:LXfi;
-
-    .line 93
-    .line 94
-    invoke-virtual {p2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object p2
-
-    .line 98
-    check-cast p2, Ljava/lang/Number;
-
-    .line 99
-    .line 100
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
-
-    .line 101
-    .line 102
-    .line 103
-    move-result p2
-
-    .line 104
-    iget-object v0, p0, LAG2;->i:Landroid/view/LayoutInflater;
-
-    .line 105
-    .line 106
-    invoke-virtual {v0, p2, p1, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    .line 107
-    .line 108
-    .line 109
-    move-result-object p1
-
-    .line 110
-    return-object p1
-.end method
-
-.method public final b()V
+.method public final F(Lk11;Landroid/view/View;)V
     .locals 5
 
     .line 1
-    iget-object v0, p0, LAG2;->o:Ljava/util/concurrent/atomic/AtomicBoolean;
+    check-cast p1, LrG2;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    check-cast p2, LzG2;
 
     .line 4
-    const/4 v2, 0x1
-
     .line 5
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    iget-object v0, p2, LzG2;->b:Lr8k;
 
     .line 6
     .line 7
+    move-object v1, v0
+
     .line 8
-    move-result v0
+    check-cast v1, LhS2;
 
     .line 9
-    if-eqz v0, :cond_0
-
     .line 10
-    .line 11
-    iget-object v0, p0, LAG2;->e:LLPb;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
     .line 12
     .line 13
-    iget-object v0, v0, LLPb;->d:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+    move-result v1
 
     .line 14
-    .line 15
-    sget-object v3, LzG2;->b:LzG2;
+    packed-switch v1, :pswitch_data_0
 
+    .line 15
     .line 16
     .line 17
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance p1, LwOc;
 
     .line 18
     .line 19
-    .line 20
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
 
+    .line 20
     .line 21
     .line 22
-    invoke-direct {v4, v0, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    throw p1
 
     .line 23
+    :pswitch_0
+    sget-object v1, LxQ3;->e0:LxQ3;
+
     .line 24
     .line 25
-    iget-object v0, p0, LAG2;->h:LBre;
+    goto :goto_0
 
     .line 26
+    :pswitch_1
+    sget-object v1, LRvd;->c:LRvd;
+
     .line 27
-    invoke-virtual {v0}, LBre;->d()LF06;
-
     .line 28
-    .line 29
-    .line 30
-    move-result-object v0
+    goto :goto_0
 
+    .line 29
+    :pswitch_2
+    sget-object v1, LnQd;->o0:LnQd;
+
+    .line 30
     .line 31
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    goto :goto_0
 
     .line 32
+    :pswitch_3
+    sget-object v1, LVPi;->b:LVPi;
+
     .line 33
-    invoke-direct {v3, v4, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
     .line 34
-    .line 35
-    .line 36
-    new-instance v0, LcG2;
+    goto :goto_0
 
+    .line 35
+    :pswitch_4
+    sget-object v1, LSU7;->q0:LSU7;
+
+    .line 36
     .line 37
+    goto :goto_0
+
     .line 38
-    const/4 v4, 0x3
+    :pswitch_5
+    sget-object v1, LvN7;->v0:LvN7;
 
     .line 39
-    invoke-direct {v0, v4, p0}, LcG2;-><init>(ILjava/lang/Object;)V
-
     .line 40
+    goto :goto_0
+
     .line 41
+    :pswitch_6
+    sget-object v1, LCMd;->t0:LCMd;
+
     .line 42
-    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 43
-    .line 44
-    .line 45
-    move-result-object v0
+    goto :goto_0
 
+    .line 44
+    :pswitch_7
+    sget-object v1, LJU7;->t0:LJU7;
+
+    .line 45
     .line 46
-    iget-object v3, p0, LAG2;->b:LWq6;
+    :goto_0
+    iput-object v1, p0, LAG2;->e0:LcD1;
 
     .line 47
     .line 48
-    iget-object v4, p0, LAG2;->g:LWm0;
+    iget-object v2, p2, LzG2;->a:Landroid/view/View;
 
     .line 49
     .line 50
-    invoke-virtual {v3, v4, v0}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+    iput-object v2, p0, LAG2;->f0:Landroid/view/View;
 
     .line 51
     .line 52
+    const/4 v3, 0x0
+
     .line 53
-    :cond_0
-    iget-object v0, p0, LAG2;->m:Ljava/util/concurrent/atomic/AtomicReference;
+    const-string v4, "childView"
 
     .line 54
     .line 55
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    if-eqz v2, :cond_5
 
     .line 56
     .line 57
+    invoke-interface {v1, v0, v2}, LcD1;->g(Lr8k;Landroid/view/View;)LA7k;
+
     .line 58
+    .line 59
+    .line 60
     move-result-object v0
 
-    .line 59
-    if-nez v0, :cond_2
-
-    .line 60
     .line 61
-    iget-object v0, p0, LAG2;->n:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, LAG2;->Z:LA7k;
 
     .line 62
     .line 63
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    instance-of v1, v0, Ln54;
 
     .line 64
     .line 65
-    .line 66
-    move-result v0
+    if-eqz v1, :cond_1
 
+    .line 66
     .line 67
-    if-eqz v0, :cond_2
+    check-cast v0, Ln54;
 
     .line 68
     .line 69
-    iget-boolean v0, p0, LAG2;->p:Z
+    invoke-virtual {p0}, Ln54;->D()Lw8k;
 
     .line 70
     .line 71
-    if-eqz v0, :cond_1
-
     .line 72
+    move-result-object v1
+
     .line 73
-    iget-object v0, p0, LAG2;->k:LXfi;
+    iget-object v2, p0, LAG2;->f0:Landroid/view/View;
 
     .line 74
     .line 75
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    if-eqz v2, :cond_0
 
     .line 76
     .line 77
+    invoke-virtual {v0, p1, v1, v2}, Ln54;->C(Lk11;Lw8k;Landroid/view/View;)V
+
     .line 78
-    move-result-object v0
-
     .line 79
-    check-cast v0, Lbs3;
-
     .line 80
+    goto :goto_1
+
     .line 81
-    goto :goto_0
+    :cond_0
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 82
-    :cond_1
-    iget-object v0, p0, LAG2;->j:LXfi;
-
     .line 83
     .line 84
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    throw v3
 
     .line 85
+    :cond_1
+    iget-object p1, p0, LAG2;->f0:Landroid/view/View;
+
     .line 86
     .line 87
-    move-result-object v0
+    if-eqz p1, :cond_4
 
     .line 88
-    check-cast v0, Lbs3;
-
     .line 89
-    .line 90
-    :goto_0
-    iget-object v1, p0, LAG2;->l:LXfi;
+    invoke-virtual {v0, p1}, LA7k;->q(Landroid/view/View;)V
 
+    .line 90
     .line 91
     .line 92
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    :goto_1
+    iget-object p1, p0, LAG2;->e0:LcD1;
 
     .line 93
     .line 94
-    .line 95
-    move-result-object v1
+    if-eqz p1, :cond_3
 
+    .line 95
     .line 96
-    check-cast v1, Ljava/lang/Number;
+    iget-object v0, p0, LAG2;->f0:Landroid/view/View;
 
     .line 97
     .line 98
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+    if-eqz v0, :cond_2
 
     .line 99
     .line 100
+    invoke-interface {p1, v0, p2}, LcD1;->h(Landroid/view/View;LzG2;)V
+
     .line 101
-    move-result v1
-
     .line 102
-    invoke-virtual {v0, v1}, Lbs3;->Z(I)Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
     .line 103
+    return-void
+
     .line 104
+    :cond_2
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 105
-    move-result-object v0
-
     .line 106
-    new-instance v1, LOB1;
-
     .line 107
+    throw v3
+
     .line 108
-    const/16 v2, 0x1b
+    :cond_3
+    const-string p1, "bubbleDecorator"
 
     .line 109
     .line 110
-    invoke-direct {v1, v2, p0}, LOB1;-><init>(ILjava/lang/Object;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 111
     .line 112
     .line 113
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    throw v3
 
     .line 114
-    .line 115
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    :cond_4
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 115
     .line 116
     .line 117
+    throw v3
+
     .line 118
-    const-string v0, "ChatFragmentPreloader-startWarmup"
+    :cond_5
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 119
     .line 120
-    invoke-static {v2, v0}, LANi;->d(Lio/reactivex/rxjava3/core/Single;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-
     .line 121
+    throw v3
+
     .line 122
+    nop
+
     .line 123
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_7
+        :pswitch_7
+        :pswitch_6
+        :pswitch_6
+        :pswitch_5
+        :pswitch_6
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_7
+        :pswitch_4
+        :pswitch_4
+        :pswitch_7
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_7
+        :pswitch_6
+        :pswitch_6
+        :pswitch_6
+        :pswitch_6
+        :pswitch_6
+        :pswitch_7
+        :pswitch_4
+        :pswitch_6
+        :pswitch_3
+        :pswitch_2
+        :pswitch_4
+        :pswitch_4
+        :pswitch_4
+        :pswitch_1
+        :pswitch_6
+        :pswitch_0
+        :pswitch_7
+        :pswitch_6
+    .end packed-switch
+.end method
+
+.method public final t(Lsw;Lsw;)V
+    .locals 9
+
+    .line 1
+    iget-object v0, p0, LAG2;->Z:LA7k;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    if-eqz v0, :cond_2
+
+    .line 5
+    .line 6
+    invoke-virtual {p0}, LA7k;->r()LSV6;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v2
+
+    .line 10
+    invoke-virtual {v0, p1, p2, v2}, LA7k;->o(Lsw;Lsw;LSV6;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v3, p0, LAG2;->e0:LcD1;
+
+    .line 14
+    .line 15
+    if-eqz v3, :cond_1
+
+    .line 16
+    .line 17
+    iget-object v4, p0, LAG2;->f0:Landroid/view/View;
+
+    .line 18
+    .line 19
+    if-eqz v4, :cond_0
+
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Ln54;->E()Lk11;
+
+    .line 22
+    .line 23
+    .line 24
     move-result-object v0
 
-    .line 124
-    sget-object v1, LAz2;->r0:LAz2;
+    .line 25
+    move-object v7, v0
 
-    .line 125
-    .line 126
-    const/4 v2, 0x2
+    .line 26
+    check-cast v7, LrG2;
 
-    .line 127
-    const/4 v3, 0x0
+    .line 27
+    .line 28
+    const/4 v8, 0x0
 
-    .line 128
-    invoke-static {v0, v1, v3, v2}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->k(Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 29
+    move-object v5, p1
 
-    .line 129
-    .line 130
-    .line 131
-    move-result-object v0
+    .line 30
+    move-object v6, p2
 
-    .line 132
-    iget-object v1, p0, LAG2;->b:LWq6;
+    .line 31
+    invoke-interface/range {v3 .. v8}, LcD1;->d(Landroid/view/View;Lsw;Lsw;LrG2;Z)V
 
-    .line 133
-    .line 134
-    iget-object v2, p0, LAG2;->g:LWm0;
-
-    .line 135
-    .line 136
-    invoke-virtual {v1, v2, v0}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 137
-    .line 138
-    .line 139
-    :cond_2
+    .line 32
+    .line 33
+    .line 34
     return-void
+
+    .line 35
+    :cond_0
+    const-string p1, "childView"
+
+    .line 36
+    .line 37
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    throw v1
+
+    .line 41
+    :cond_1
+    const-string p1, "bubbleDecorator"
+
+    .line 42
+    .line 43
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    throw v1
+
+    .line 47
+    :cond_2
+    const-string p1, "wrappedBinding"
+
+    .line 48
+    .line 49
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 50
+    .line 51
+    .line 52
+    throw v1
+.end method
+
+.method public final v()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LAG2;->Z:LA7k;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, LA7k;->v()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+
+    .line 10
+    :cond_0
+    const-string v0, "wrappedBinding"
+
+    .line 11
+    .line 12
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 v0, 0x0
+
+    .line 16
+    throw v0
+.end method
+
+.method public final x()V
+    .locals 1
+
+    .line 1
+    invoke-super {p0}, LA7k;->x()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, LAG2;->Z:LA7k;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, LA7k;->x()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    const-string v0, "wrappedBinding"
+
+    .line 13
+    .line 14
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 v0, 0x0
+
+    .line 18
+    throw v0
 .end method

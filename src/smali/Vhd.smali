@@ -1,33 +1,23 @@
-.class public abstract LVhd;
+.class public final LVhd;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lwqd;
+
 
 # virtual methods
-.method public a()V
+.method public final a(LxHf;LKHf;)V
     .locals 0
 
     .line 1
-    return-void
-.end method
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-.method public b()V
-    .locals 0
+    .line 2
+    .line 3
+    iput-object p1, p2, LKHf;->i:Ljava/lang/Boolean;
 
-    .line 1
-    return-void
-.end method
-
-.method public c()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public d()V
-    .locals 0
-
-    .line 1
+    .line 4
+    .line 5
     return-void
 .end method

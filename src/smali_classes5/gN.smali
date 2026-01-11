@@ -1,5 +1,5 @@
 .class public final LgN;
-.super Lhqk;
+.super LiN;
 .source "SourceFile"
 
 

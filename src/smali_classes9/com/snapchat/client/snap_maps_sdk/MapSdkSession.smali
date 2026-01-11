@@ -118,6 +118,9 @@
 .method public abstract getStyleMetadata()Lcom/snapchat/client/snap_maps_sdk/StyleMetadata;
 .end method
 
+.method public abstract getSystemStats()Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SystemStats;
+.end method
+
 .method public abstract getTileCover(B)Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -209,6 +212,23 @@
 .end method
 
 .method public abstract setParticleEffect(Ljava/lang/String;ZLcom/snapchat/client/snap_maps_sdk/ParticleEffectObserver;Lcom/snapchat/client/snap_maps_sdk/ParticleEffectImageLoader;)V
+.end method
+
+.method public abstract toScreenLocation(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+.end method
+
+.method public abstract toScreenLocations(Ljava/util/ArrayList;)Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;",
+            ">;)",
+            "Ljava/util/ArrayList<",
+            "Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;",
+            ">;"
+        }
+    .end annotation
 .end method
 
 .method public abstract updateSafeAreaInsets(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$EdgeInsets;)V

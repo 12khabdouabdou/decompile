@@ -4,13 +4,13 @@
 
 
 # annotations
-.annotation build LAr6;
+.annotation build LMu6;
 .end annotation
 
 
 # instance fields
 .field private mNativeContext:J
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 .end field
 
@@ -18,7 +18,7 @@
 # direct methods
 .method public constructor <init>()V
     .locals 0
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 
     .line 1
@@ -29,7 +29,7 @@
 
 .method public constructor <init>(J)V
     .locals 0
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 
     .line 2
@@ -94,7 +94,7 @@
     move-result-object p0
 
     .line 24
-    invoke-static {}, Lcwh;->a()V
+    invoke-static {}, LdUh;->d()V
 
     .line 25
     .line 26
@@ -295,7 +295,7 @@
     return-object v0
 .end method
 
-.method public final h(I)LhS;
+.method public final h(I)LpU;
     .locals 9
 
     .line 1
@@ -308,7 +308,7 @@
 
     .line 5
     :try_start_0
-    new-instance v0, LhS;
+    new-instance v0, LpU;
 
     .line 6
     .line 7
@@ -393,7 +393,7 @@
 
     .line 42
     :goto_1
-    invoke-direct/range {v0 .. v6}, LhS;-><init>(IIIIII)V
+    invoke-direct/range {v0 .. v6}, LpU;-><init>(IIIIII)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

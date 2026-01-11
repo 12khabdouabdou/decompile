@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/business/IBusinessErrorParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'type\':s,\'message\':s?,\'errorMetadata\':s?,\'logToBlizzardOnly\':b@?"
     typeReferences = {}

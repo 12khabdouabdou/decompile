@@ -1,27 +1,27 @@
 .class public final Lcom/snap/identity/job/snapchatter/AddFriendDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "ADD_FRIEND_DURABLE_JOB"
-    metadataType = LBw;
+    metadataType = Lly;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(LtB6;LBw;)V
+.method public constructor <init>(LRE6;Lly;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     .line 2
     .line 3

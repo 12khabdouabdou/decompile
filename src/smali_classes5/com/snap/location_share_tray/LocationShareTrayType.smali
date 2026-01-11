@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'ONLY_THESE_FRIENDS\':0,\'ONLY_THESE_FRIENDS_EXITING_GHOST_MODE\':1,\'BLOCKLIST\':2,\'BLOCKLIST_EXITING_GHOST_MODE\':3,\'BLOCKLIST_EXITING_GHOST_MODE_NOT_IN_THE_LIST\':4,\'ALREADY_SHARING_EXITING_GHOST_MODE\':5,\'SHARING_WITH_ALL_FRIENDS_EXITING_GHOST_MODE\':6,\'ONBOARDING\':7,\'ONBOARDING_BACKGROUND_SHARING_ALLOWED\':8"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

@@ -1,219 +1,388 @@
-.class public final enum Ltn;
-.super Ljava/lang/Enum;
+.class public final Ltn;
+.super Lzn;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum a:Ltn;
+# instance fields
+.field public final c:Ljava/lang/String;
 
-.field public static final enum b:Ltn;
+.field public final d:Lkp;
 
-.field public static final enum c:Ltn;
+.field public final e:J
 
-.field public static final synthetic t:[Ltn;
+.field public final f:LOr;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(Ljava/lang/String;Lkp;JLOr;)V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x2
+    const/4 v0, 0x3
 
     .line 2
-    const/4 v1, 0x1
+    invoke-direct {p0, v0, p1}, Lzn;-><init>(ILjava/lang/String;)V
 
     .line 3
-    const/4 v2, 0x0
-
     .line 4
-    new-instance v3, Ltn;
-
     .line 5
+    iput-object p1, p0, Ltn;->c:Ljava/lang/String;
+
     .line 6
-    const-string v4, "DISCOVER_FEED"
-
     .line 7
-    .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p2, p0, Ltn;->d:Lkp;
 
+    .line 8
     .line 9
+    iput-wide p3, p0, Ltn;->e:J
+
     .line 10
     .line 11
-    sput-object v3, Ltn;->a:Ltn;
+    iput-object p5, p0, Ltn;->f:LOr;
 
     .line 12
     .line 13
-    new-instance v4, Ltn;
-
-    .line 14
-    .line 15
-    const-string v5, "FRIENDS_FEED"
-
-    .line 16
-    .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 18
-    .line 19
-    .line 20
-    sput-object v4, Ltn;->b:Ltn;
-
-    .line 21
-    .line 22
-    new-instance v5, Ltn;
-
-    .line 23
-    .line 24
-    const-string v6, "APP_OPEN"
-
-    .line 25
-    .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v5, Ltn;->c:Ltn;
-
-    .line 30
-    .line 31
-    const/4 v6, 0x3
-
-    .line 32
-    new-array v6, v6, [Ltn;
-
-    .line 33
-    .line 34
-    aput-object v3, v6, v2
-
-    .line 35
-    .line 36
-    aput-object v4, v6, v1
-
-    .line 37
-    .line 38
-    aput-object v5, v6, v0
-
-    .line 39
-    .line 40
-    sput-object v6, Ltn;->t:[Ltn;
-
-    .line 41
-    .line 42
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Ltn;
-    .locals 1
-
-    .line 1
-    const-class v0, Ltn;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Ltn;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Ltn;
-    .locals 1
-
-    .line 1
-    sget-object v0, Ltn;->t:[Ltn;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Ltn;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()Lq0h;
-    .locals 2
+.method public final a()Ljava/lang/String;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+    iget-object v0, p0, Ltn;->c:Ljava/lang/String;
 
     .line 2
     .line 3
+    return-object v0
+.end method
+
+.method public final b()Lkp;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ltn;->d:Lkp;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Ltn;->e:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
     .line 4
-    move-result v0
+    return v0
 
     .line 5
-    if-eqz v0, :cond_2
+    :cond_0
+    instance-of v1, p1, Ltn;
 
     .line 6
     .line 7
-    const/4 v1, 0x1
+    const/4 v2, 0x0
 
     .line 8
-    if-eq v0, v1, :cond_1
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    const/4 v1, 0x2
+    return v2
 
     .line 11
-    if-ne v0, v1, :cond_0
+    :cond_1
+    check-cast p1, Ltn;
 
     .line 12
     .line 13
-    sget-object v0, Lq0h;->c:Lq0h;
+    iget-object v1, p1, Ltn;->c:Ljava/lang/String;
 
     .line 14
     .line 15
-    return-object v0
+    iget-object v3, p0, Ltn;->c:Ljava/lang/String;
 
     .line 16
-    :cond_0
-    new-instance v0, LFzc;
-
     .line 17
-    .line 18
-    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 18
     .line 19
     .line 20
+    move-result v1
+
     .line 21
-    throw v0
+    if-nez v1, :cond_2
 
     .line 22
-    :cond_1
-    sget-object v0, Lq0h;->i1:Lq0h;
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Ltn;->d:Lkp;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, Ltn;->d:Lkp;
+
+    .line 27
+    .line 28
+    if-eq v1, v3, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
+    iget-wide v3, p0, Ltn;->e:J
+
+    .line 32
+    .line 33
+    iget-wide v5, p1, Ltn;->e:J
+
+    .line 34
+    .line 35
+    cmp-long v1, v3, v5
+
+    .line 36
+    .line 37
+    if-eqz v1, :cond_4
+
+    .line 38
+    .line 39
+    return v2
+
+    .line 40
+    :cond_4
+    iget-object v1, p0, Ltn;->f:LOr;
+
+    .line 41
+    .line 42
+    iget-object p1, p1, Ltn;->f:LOr;
+
+    .line 43
+    .line 44
+    if-eq v1, p1, :cond_5
+
+    .line 45
+    .line 46
+    return v2
+
+    .line 47
+    :cond_5
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Ltn;->c:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Ltn;->d:Lkp;
+
+    .line 10
+    .line 11
+    if-nez v1, :cond_0
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 20
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 21
+    .line 22
+    const/16 v1, 0x20
 
     .line 23
     .line 24
-    return-object v0
+    iget-wide v2, p0, Ltn;->e:J
 
     .line 25
-    :cond_2
-    sget-object v0, Lq0h;->t:Lq0h;
+    .line 26
+    ushr-long v4, v2, v1
+
+    .line 27
+    .line 28
+    xor-long/2addr v2, v4
+
+    .line 29
+    long-to-int v1, v2
+
+    .line 30
+    add-int/2addr v0, v1
+
+    .line 31
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 32
+    .line 33
+    iget-object v1, p0, Ltn;->f:LOr;
+
+    .line 34
+    .line 35
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v1
+
+    .line 39
+    add-int/2addr v1, v0
+
+    .line 40
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "AdRequestError(adClientId="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Ltn;->c:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", adProduct="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Ltn;->d:Lkp;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", timestamp="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
+    .line 28
+    iget-wide v1, p0, Ltn;->e:J
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", adSkipReason="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v1, p0, Ltn;->f:LOr;
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ")"
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
     return-object v0
 .end method

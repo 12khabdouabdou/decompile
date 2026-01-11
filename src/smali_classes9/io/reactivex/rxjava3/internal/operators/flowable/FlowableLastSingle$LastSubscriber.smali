@@ -33,7 +33,7 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/core/SingleObserver;
 
-.field public b:Lc7i;
+.field public b:Ltvi;
 
 .field public c:Ljava/lang/Object;
 
@@ -57,11 +57,11 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Ltvi;
 
     .line 2
     .line 3
@@ -90,11 +90,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Ltvi;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 4
     .line 5
@@ -103,7 +103,7 @@
 
     .line 7
     .line 8
-    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Lc7i;
+    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Ltvi;
 
     .line 9
     .line 10
@@ -118,7 +118,7 @@
 
     .line 2
     .line 3
-    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Lc7i;
+    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Ltvi;
 
     .line 4
     .line 5
@@ -175,7 +175,7 @@
 
     .line 2
     .line 3
-    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Lc7i;
+    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Ltvi;
 
     .line 4
     .line 5
@@ -209,15 +209,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -229,7 +229,7 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableLastSingle$LastSubscriber;->b:Ltvi;
 
     .line 10
     .line 11
@@ -249,7 +249,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 22
     .line 23

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LtQ;
+.implements LCBe;
 
 
 # instance fields
@@ -28,1120 +28,1234 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)V
-    .locals 18
+.method public final get()Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    move-object/from16 v0, p0
+    iget v0, p0, LlH4;->a:I
 
     .line 2
     .line 3
-    iget v1, v0, LlH4;->a:I
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    packed-switch v1, :pswitch_data_0
-
     .line 6
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 7
     .line 8
-    move-object/from16 v1, p1
+    check-cast v0, LbN4;
 
     .line 9
     .line 10
-    check-cast v1, Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;
+    iget-object v0, v0, LbN4;->c:LeN4;
 
     .line 11
     .line 12
-    iget-object v2, v0, LlH4;->b:Ljava/lang/Object;
+    iget-object v0, v0, LeN4;->t:LCBe;
 
     .line 13
     .line 14
-    check-cast v2, La55;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 15
     .line 16
-    iget-object v3, v2, La55;->b:LPwg;
-
     .line 17
+    move-result-object v0
+
     .line 18
-    invoke-interface {v3}, LTc5;->w0()LPm9;
+    check-cast v0, Lio/reactivex/rxjava3/core/Single;
 
     .line 19
     .line 20
+    return-object v0
+
     .line 21
-    move-result-object v3
+    :pswitch_0
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 22
-    iput-object v3, v1, Lcom/snap/spectacles/api/SpectaclesFragment;->w0:LPm9;
-
     .line 23
+    check-cast v0, LVM4;
+
     .line 24
-    iget-object v3, v2, La55;->b:LPwg;
-
     .line 25
-    .line 26
-    invoke-interface {v3}, LPwg;->m()LTqc;
+    iget-object v0, v0, LVM4;->a:Lz45;
 
+    .line 26
     .line 27
+    invoke-virtual {v0}, Lz45;->C0()LbXg;
+
     .line 28
     .line 29
-    move-result-object v4
-
     .line 30
-    iput-object v4, v1, Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;->y0:LTqc;
+    move-result-object v0
 
     .line 31
+    return-object v0
+
     .line 32
-    new-instance v5, LW8h;
+    :pswitch_1
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 33
     .line 34
-    iget-object v6, v2, La55;->p0:LB35;
+    check-cast v0, LUM4;
 
     .line 35
     .line 36
-    new-instance v7, Ly1h;
+    iget-object v0, v0, LUM4;->a:Lz45;
 
     .line 37
     .line 38
-    iget-object v4, v2, La55;->s0:LB35;
+    invoke-virtual {v0}, Lz45;->p()LI23;
 
     .line 39
     .line 40
-    invoke-virtual {v4}, LB35;->get()Ljava/lang/Object;
-
     .line 41
+    move-result-object v0
+
     .line 42
+    return-object v0
+
     .line 43
-    move-result-object v4
+    :pswitch_2
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 44
-    check-cast v4, LpC3;
-
     .line 45
+    check-cast v0, LMM4;
+
     .line 46
-    iget-object v8, v2, La55;->a:LFY4;
-
     .line 47
-    .line 48
-    invoke-virtual {v8}, LFY4;->M()LXai;
+    iget-object v0, v0, LMM4;->a:Lz45;
 
+    .line 48
     .line 49
+    invoke-virtual {v0}, Lz45;->v0()LyPf;
+
     .line 50
     .line 51
-    move-result-object v9
-
     .line 52
-    const/16 v10, 0x8
+    new-instance v0, LWN8;
 
     .line 53
     .line 54
-    invoke-direct {v7, v4, v10, v9}, Ly1h;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    sget-object v1, LYI2;->Z:LYI2;
 
     .line 55
     .line 56
-    .line 57
-    invoke-virtual {v8}, LFY4;->i()LOa1;
+    invoke-direct {v0, v1}, LWN8;-><init>(Lrp0;)V
 
+    .line 57
     .line 58
     .line 59
+    return-object v0
+
     .line 60
-    move-result-object v8
+    :pswitch_3
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 61
-    new-instance v9, Lz1h;
-
     .line 62
+    check-cast v0, LAQ3;
+
     .line 63
-    iget-object v4, v2, La55;->Z:LxY4;
-
     .line 64
-    .line 65
-    invoke-virtual {v4}, LxY4;->i()LkAg;
+    iget-object v0, v0, LAQ3;->b:Ljava/lang/Object;
 
+    .line 65
     .line 66
+    check-cast v0, Lz45;
+
     .line 67
     .line 68
-    move-result-object v4
+    iget-object v0, v0, Lz45;->sd:LCBe;
 
     .line 69
-    new-instance v10, LHic;
-
     .line 70
-    .line 71
-    invoke-direct {v10}, Ljava/lang/Object;-><init>()V
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
+    .line 71
     .line 72
     .line 73
+    move-result-object v0
+
     .line 74
-    iget-object v11, v2, La55;->q0:LB35;
+    check-cast v0, LNQf;
 
     .line 75
     .line 76
-    invoke-virtual {v11}, LB35;->get()Ljava/lang/Object;
+    return-object v0
 
     .line 77
+    :pswitch_4
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 78
     .line 79
-    move-result-object v11
+    check-cast v0, LmM4;
 
     .line 80
-    check-cast v11, Lnwf;
-
     .line 81
-    .line 82
-    invoke-interface {v3}, LTc5;->getContext()Landroid/content/Context;
+    iget-object v1, v0, LmM4;->a:Lz45;
 
+    .line 82
     .line 83
+    invoke-virtual {v1}, Lz45;->w()LOF3;
+
     .line 84
     .line 85
-    move-result-object v3
-
     .line 86
-    invoke-direct {v9, v4, v10, v3}, Lz1h;-><init>(LkAg;LHic;Landroid/content/Context;)V
+    move-result-object v1
 
     .line 87
+    iget-object v0, v0, LmM4;->a:Lz45;
+
     .line 88
     .line 89
-    iget-object v10, v2, La55;->q0:LB35;
+    invoke-virtual {v0}, Lz45;->U()LNsj;
 
     .line 90
     .line 91
-    invoke-direct/range {v5 .. v10}, LW8h;-><init>(LB35;Ly1h;LOa1;Lz1h;LB35;)V
-
     .line 92
-    .line 93
-    .line 94
-    iput-object v5, v1, Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;->z0:LW8h;
+    move-result-object v4
 
+    .line 93
+    invoke-virtual {v0}, Lz45;->s0()LMwf;
+
+    .line 94
     .line 95
     .line 96
-    return-void
+    move-result-object v5
 
     .line 97
-    :pswitch_0
-    move-object/from16 v1, p1
+    invoke-virtual {v0}, Lz45;->v0()LyPf;
 
     .line 98
     .line 99
-    check-cast v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;
-
     .line 100
-    .line 101
-    iget-object v2, v0, LlH4;->b:Ljava/lang/Object;
+    invoke-virtual {v0}, Lz45;->u0()Luxf;
 
+    .line 101
     .line 102
     .line 103
-    check-cast v2, LbK4;
+    move-result-object v6
 
     .line 104
-    .line 105
-    iget-object v3, v2, LbK4;->C:Ljava/lang/Object;
+    invoke-virtual {v0}, Lz45;->J0()LuKj;
 
+    .line 105
     .line 106
     .line 107
-    check-cast v3, Lake;
-
-    .line 108
-    .line 109
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
-
-    .line 110
-    .line 111
-    .line 112
     move-result-object v3
 
+    .line 108
+    new-instance v7, LOs6;
+
+    .line 109
+    .line 110
+    sget-object v0, LTJb;->Z:LTJb;
+
+    .line 111
+    .line 112
+    const-string v2, "SnapIndexClientService"
+
     .line 113
-    check-cast v3, LLs3;
-
     .line 114
-    .line 115
-    iget-object v4, v2, LbK4;->z:Ljava/lang/Object;
+    invoke-static {v0, v0, v2}, LBv7;->d(LTJb;LTJb;Ljava/lang/String;)Lnp0;
 
+    .line 115
     .line 116
     .line 117
-    check-cast v4, LYI4;
+    move-result-object v0
 
     .line 118
-    .line 119
-    new-instance v5, Lrff;
+    invoke-static {v0}, Lve4;->e(Lnp0;)LA36;
 
+    .line 119
     .line 120
     .line 121
-    const/4 v6, 0x2
+    move-result-object v0
 
     .line 122
-    invoke-direct {v5, v4, v6}, Lrff;-><init>(Lbke;I)V
+    invoke-direct {v7, v0}, LOs6;-><init>(Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 123
     .line 124
     .line 125
-    const-string v4, "ShakeBusComponent"
+    sget-object v0, LALb;->q5:LALb;
 
     .line 126
     .line 127
-    const-class v6, Lj45;
+    invoke-interface {v1, v0}, LOF3;->r(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 128
     .line 129
-    const/4 v7, 0x0
-
     .line 130
-    invoke-virtual {v3, v4, v6, v7, v5}, LLs3;->a(Ljava/lang/Object;Ljava/lang/Class;ZLkotlin/jvm/functions/Function0;)LGs3;
+    move-result-object v0
 
     .line 131
+    new-instance v2, Lcvk;
+
     .line 132
     .line 133
-    move-result-object v3
+    const/16 v8, 0x15
 
     .line 134
-    check-cast v3, Lj45;
-
     .line 135
-    .line 136
-    invoke-virtual {v3}, Lj45;->u()LXog;
+    invoke-direct/range {v2 .. v8}, Lcvk;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 136
     .line 137
     .line 138
-    .line 139
-    move-result-object v3
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
+    .line 139
     .line 140
-    iput-object v3, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->w0:LXog;
+    invoke-direct {v1, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 141
     .line 142
-    iget-object v3, v2, LbK4;->a:Ljava/lang/Object;
-
     .line 143
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
     .line 144
-    check-cast v3, LFY4;
-
     .line 145
-    .line 146
-    invoke-virtual {v3}, LFY4;->o()Le03;
+    invoke-direct {v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
 
+    .line 146
     .line 147
     .line 148
+    return-object v0
+
     .line 149
-    iget-object v4, v2, LbK4;->d:Ljava/lang/Object;
+    :pswitch_5
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 150
     .line 151
-    check-cast v4, LxY4;
+    check-cast v0, LTK4;
 
     .line 152
     .line 153
-    invoke-virtual {v4}, LxY4;->i()LkAg;
+    iget-object v0, v0, LTK4;->a:LMI8;
 
     .line 154
     .line 155
-    .line 156
-    move-result-object v4
+    iget-object v0, v0, LMI8;->b:Ljava/lang/Object;
 
+    .line 156
     .line 157
-    iput-object v4, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->x0:LkAg;
+    check-cast v0, LrM3;
 
     .line 158
     .line 159
-    iget-object v4, v2, LbK4;->l:Ljava/lang/Object;
+    invoke-interface {v0}, LrM3;->read()LoM3;
 
     .line 160
     .line 161
-    check-cast v4, LYI4;
-
     .line 162
+    move-result-object v0
+
     .line 163
-    invoke-virtual {v4}, LYI4;->get()Ljava/lang/Object;
+    sget-object v1, Luoa;->n0:Luoa;
 
     .line 164
     .line 165
+    invoke-interface {v0, v1}, LoM3;->h(LQmf;)I
+
     .line 166
-    move-result-object v4
-
     .line 167
-    check-cast v4, LaA8;
-
     .line 168
+    move-result v0
+
     .line 169
-    iput-object v4, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->y0:LaA8;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 170
     .line 171
-    iget-object v4, v2, LbK4;->A:Ljava/lang/Object;
-
     .line 172
+    move-result-object v0
+
     .line 173
-    check-cast v4, Lake;
+    return-object v0
 
     .line 174
-    .line 175
-    invoke-interface {v4}, Lbke;->get()Ljava/lang/Object;
+    :pswitch_6
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
+    .line 175
     .line 176
+    check-cast v0, LAK4;
+
     .line 177
     .line 178
-    move-result-object v4
+    iget-object v0, v0, LAK4;->d:Lt75;
 
     .line 179
-    check-cast v4, LTqc;
-
     .line 180
-    .line 181
-    iput-object v4, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->z0:LTqc;
+    invoke-virtual {v0}, Lt75;->C()Lhbd;
 
+    .line 181
     .line 182
     .line 183
-    sget-object v4, LGWe;->a:LGWe;
+    move-result-object v0
 
     .line 184
+    return-object v0
+
     .line 185
-    iput-object v4, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->A0:LGWe;
+    :pswitch_7
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 186
     .line 187
-    invoke-virtual {v3}, LFY4;->s0()Lnwf;
+    check-cast v0, LzK4;
 
     .line 188
     .line 189
-    .line 190
-    move-result-object v3
+    iget-object v0, v0, LzK4;->a:LGP4;
 
+    .line 190
     .line 191
-    iput-object v3, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->B0:Lnwf;
+    iget-object v0, v0, LGP4;->c:LCBe;
 
     .line 192
     .line 193
-    iget-object v3, v2, LbK4;->p:Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 194
     .line 195
-    check-cast v3, LYI4;
-
     .line 196
+    move-result-object v0
+
     .line 197
-    invoke-virtual {v3}, LYI4;->get()Ljava/lang/Object;
+    check-cast v0, Ldr4;
 
     .line 198
     .line 199
+    return-object v0
+
     .line 200
-    move-result-object v3
+    :pswitch_8
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 201
-    check-cast v3, Ly9g;
-
     .line 202
+    check-cast v0, LvK4;
+
     .line 203
-    iput-object v3, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->C0:Ly9g;
-
     .line 204
+    iget-object v0, v0, LvK4;->a:Lz45;
+
     .line 205
-    iget-object v2, v2, LbK4;->e:Ljava/lang/Object;
-
     .line 206
-    .line 207
-    check-cast v2, LaJ4;
+    invoke-virtual {v0}, Lz45;->p()LI23;
 
+    .line 207
     .line 208
     .line 209
-    invoke-virtual {v2}, LaJ4;->u()LIe0;
+    move-result-object v0
 
     .line 210
-    .line 211
-    .line 212
-    move-result-object v2
+    return-object v0
 
+    .line 211
+    :pswitch_9
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
+    .line 212
     .line 213
-    iput-object v2, v1, Lcom/snap/shake2report/valdi/Shake2ReportFragment;->D0:LqZ8;
+    check-cast v0, LoK4;
 
     .line 214
     .line 215
-    return-void
+    iget-object v0, v0, LoK4;->a:Le4c;
 
     .line 216
-    :pswitch_1
-    move-object/from16 v1, p1
-
     .line 217
-    .line 218
-    check-cast v1, Lcom/snap/catalina/core/CatalinaActivity;
+    invoke-interface {v0}, Le4c;->x6()Lg4c;
 
+    .line 218
     .line 219
     .line 220
-    new-instance v2, Ls91;
+    move-result-object v0
 
     .line 221
+    return-object v0
+
     .line 222
-    iget-object v3, v0, LlH4;->b:Ljava/lang/Object;
+    :pswitch_a
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 223
     .line 224
-    move-object v8, v3
+    check-cast v0, LjK4;
 
     .line 225
-    check-cast v8, LjH4;
-
     .line 226
+    iget-object v0, v0, LjK4;->c:Lz45;
+
     .line 227
-    iget-object v3, v8, LjH4;->a:LFY4;
-
     .line 228
-    .line 229
-    iget-object v4, v3, LFY4;->S1:Lake;
+    invoke-virtual {v0}, Lz45;->S()LOH8;
 
+    .line 229
     .line 230
     .line 231
-    invoke-interface {v4}, Lbke;->get()Ljava/lang/Object;
+    move-result-object v0
 
     .line 232
-    .line 233
-    .line 234
-    move-result-object v4
+    return-object v0
 
+    .line 233
+    :pswitch_b
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
+    .line 234
     .line 235
-    check-cast v4, LAc1;
+    check-cast v0, LgK4;
 
     .line 236
     .line 237
-    move-object v5, v3
+    iget-object v0, v0, LgK4;->a:LBKj;
 
     .line 238
-    move-object v3, v4
-
     .line 239
-    invoke-virtual {v8}, LjH4;->a()LrZ;
+    invoke-interface {v0}, LBKj;->b()LQeh;
 
     .line 240
     .line 241
     .line 242
-    move-result-object v4
+    move-result-object v0
 
     .line 243
-    invoke-virtual {v5}, LFY4;->l()Llf1;
+    return-object v0
 
     .line 244
+    :pswitch_c
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 245
     .line 246
-    move-result-object v5
+    check-cast v0, LVJ4;
 
     .line 247
-    sget-object v6, LZ5c;->a:LZ5c;
-
     .line 248
-    .line 249
-    invoke-virtual {v8}, LjH4;->b()LVZj;
+    iget-object v0, v0, LVJ4;->a:LF55;
 
+    .line 249
     .line 250
+    invoke-virtual {v0}, LF55;->K()Ldd0;
+
     .line 251
     .line 252
-    move-result-object v7
-
     .line 253
-    invoke-direct/range {v2 .. v7}, Ls91;-><init>(LAc1;LrZ;Llf1;La6c;LVZj;)V
+    move-result-object v0
 
     .line 254
+    return-object v0
+
     .line 255
+    :pswitch_d
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 256
-    iput-object v2, v1, Lcom/snap/core/analytics/Tier0InstrumentedActivity;->s0:Ls91;
-
     .line 257
+    check-cast v0, LQJ4;
+
     .line 258
-    iget-object v2, v8, LjH4;->N1:Lake;
-
     .line 259
-    .line 260
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    iget-object v0, v0, LQJ4;->a:LBKj;
 
+    .line 260
     .line 261
+    invoke-interface {v0}, LBKj;->b()LQeh;
+
     .line 262
     .line 263
-    move-result-object v2
-
     .line 264
-    check-cast v2, LtQ;
+    move-result-object v0
 
     .line 265
+    return-object v0
+
     .line 266
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->u0:LtQ;
+    :pswitch_e
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 267
     .line 268
-    iget-object v2, v8, LjH4;->l0:LsL4;
+    check-cast v0, LNJ4;
 
     .line 269
     .line 270
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->v0:LsL4;
+    iget-object v0, v0, LNJ4;->a:Lz45;
 
     .line 271
     .line 272
-    new-instance v3, Lss2;
+    invoke-virtual {v0}, Lz45;->h()LM50;
 
     .line 273
     .line 274
-    iget-object v4, v8, LjH4;->o0:LXF4;
-
     .line 275
+    move-result-object v0
+
     .line 276
-    invoke-virtual {v4}, LXF4;->get()Ljava/lang/Object;
+    return-object v0
 
     .line 277
+    :pswitch_f
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 278
     .line 279
-    move-result-object v4
+    check-cast v0, LEJ4;
 
     .line 280
-    check-cast v4, Lnwf;
-
     .line 281
+    iget-object v0, v0, LEJ4;->b:Lk35;
+
     .line 282
-    iget-object v4, v8, LjH4;->m0:Lnn9;
-
     .line 283
+    new-instance v1, LaMb;
+
     .line 284
-    iget-object v4, v4, Lnn9;->a:Ljava/lang/Object;
-
     .line 285
+    iget-object v0, v0, Lk35;->b:LUY4;
+
     .line 286
-    check-cast v4, Landroid/app/Activity;
-
     .line 287
-    .line 288
-    new-instance v5, LHc9;
+    invoke-direct {v1, v0}, LaMb;-><init>(LUY4;)V
 
+    .line 288
     .line 289
     .line 290
-    iget-object v6, v8, LjH4;->o0:LXF4;
+    return-object v1
 
     .line 291
-    .line 292
-    invoke-virtual {v6}, LXF4;->get()Ljava/lang/Object;
+    :pswitch_10
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
+    .line 292
     .line 293
+    check-cast v0, LCJ4;
+
     .line 294
     .line 295
-    move-result-object v6
+    iget-object v0, v0, LCJ4;->e:LbPi;
 
     .line 296
-    check-cast v6, Lnwf;
-
     .line 297
-    .line 298
-    iget-object v6, v8, LjH4;->P1:LXF4;
+    invoke-interface {v0}, LbPi;->G0()Lxjj;
 
+    .line 298
     .line 299
     .line 300
-    iget-object v7, v8, LjH4;->b:LqY4;
+    move-result-object v0
 
     .line 301
+    return-object v0
+
     .line 302
-    iget-object v9, v7, LqY4;->e:LeNe;
+    :pswitch_11
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 303
     .line 304
-    invoke-direct {v5, v6, v9}, LHc9;-><init>(LXF4;LeNe;)V
+    check-cast v0, LsJ4;
 
     .line 305
     .line 306
-    .line 307
-    invoke-virtual {v8}, LjH4;->j()La9j;
+    iget-object v0, v0, LsJ4;->a:Lic5;
 
+    .line 307
     .line 308
+    invoke-virtual {v0}, Lic5;->t3()Lzvi;
+
     .line 309
     .line 310
-    move-result-object v6
-
     .line 311
-    invoke-direct {v3, v4, v5, v6}, Lss2;-><init>(Landroid/app/Activity;LHc9;La9j;)V
+    move-result-object v0
 
     .line 312
+    return-object v0
+
     .line 313
+    :pswitch_12
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 314
-    iput-object v3, v1, Lcom/snap/catalina/core/CatalinaActivity;->w0:Lss2;
-
     .line 315
+    check-cast v0, LcJ4;
+
     .line 316
-    new-instance v3, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 317
-    .line 318
-    invoke-direct {v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    iget-object v0, v0, LcJ4;->b:Lz45;
 
+    .line 318
     .line 319
+    invoke-virtual {v0}, Lz45;->w()LOF3;
+
     .line 320
     .line 321
-    iput-object v3, v1, Lcom/snap/catalina/core/CatalinaActivity;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 322
+    move-result-object v0
+
     .line 323
-    iget-object v3, v8, LjH4;->a:LFY4;
+    return-object v0
 
     .line 324
-    .line 325
-    invoke-virtual {v3}, LFY4;->C()Lng5;
+    :pswitch_13
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
+    .line 325
     .line 326
+    check-cast v0, LKI4;
+
     .line 327
     .line 328
-    invoke-virtual {v3}, LFY4;->Q()LDA8;
+    iget-object v0, v0, LKI4;->a:Lzb5;
 
     .line 329
     .line 330
-    .line 331
-    move-result-object v4
+    iget-object v0, v0, Lzb5;->n0:LCBe;
 
+    .line 331
     .line 332
-    iput-object v4, v1, Lcom/snap/catalina/core/CatalinaActivity;->y0:LDA8;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 333
     .line 334
-    iget-object v4, v8, LjH4;->b1:Lake;
-
     .line 335
+    move-result-object v0
+
     .line 336
-    invoke-interface {v4}, Lbke;->get()Ljava/lang/Object;
+    check-cast v0, LFKh;
 
     .line 337
     .line 338
+    return-object v0
+
     .line 339
-    move-result-object v4
+    :pswitch_14
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 340
-    check-cast v4, LPP8;
-
     .line 341
+    check-cast v0, LyI4;
+
     .line 342
-    iput-object v4, v1, Lcom/snap/catalina/core/CatalinaActivity;->z0:LPP8;
-
     .line 343
+    iget-object v1, v0, LyI4;->a:LYRg;
+
     .line 344
-    iget-object v4, v8, LjH4;->u0:Lake;
-
     .line 345
-    .line 346
-    invoke-interface {v4}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v1}, Lkj5;->getContext()Landroid/content/Context;
 
+    .line 346
     .line 347
     .line 348
+    move-result-object v3
+
     .line 349
-    move-result-object v4
+    new-instance v5, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 350
-    check-cast v4, LPm9;
-
     .line 351
-    .line 352
-    iput-object v4, v1, Lcom/snap/catalina/core/CatalinaActivity;->A0:LPm9;
+    invoke-direct {v5}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
 
+    .line 352
     .line 353
     .line 354
-    iget-object v4, v8, LjH4;->Y1:Lake;
+    iget-object v1, v0, LyI4;->a:LYRg;
 
     .line 355
     .line 356
-    invoke-interface {v4}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v1}, LYRg;->g()LmGc;
 
     .line 357
     .line 358
     .line 359
-    move-result-object v4
+    move-result-object v6
 
     .line 360
-    check-cast v4, Lpf3;
+    new-instance v7, Lf3j;
 
     .line 361
     .line 362
-    iput-object v4, v1, Lcom/snap/catalina/core/CatalinaActivity;->B0:Lpf3;
+    const/4 v1, 0x0
 
     .line 363
+    const/16 v2, 0xc
+
     .line 364
-    iget-object v4, v8, LjH4;->Z1:Lake;
-
     .line 365
-    .line 366
-    invoke-interface {v4}, Lbke;->get()Ljava/lang/Object;
+    invoke-direct {v7, v1, v2}, Lf3j;-><init>(ZI)V
 
+    .line 366
     .line 367
     .line 368
-    .line 369
-    move-result-object v4
+    iget-object v0, v0, LyI4;->b:Lz45;
 
+    .line 369
     .line 370
-    check-cast v4, Landroid/view/KeyEvent$Callback;
+    invoke-virtual {v0}, Lz45;->v0()LyPf;
 
     .line 371
     .line 372
-    iput-object v4, v1, Lcom/snap/catalina/core/CatalinaActivity;->C0:Landroid/view/KeyEvent$Callback;
-
     .line 373
+    new-instance v2, LLJ;
+
     .line 374
-    iget-object v4, v8, LjH4;->f0:LSY4;
-
     .line 375
-    .line 376
-    invoke-virtual {v4}, LSY4;->e()LiG9;
+    sget-object v0, LQBh;->Z:LQBh;
 
+    .line 376
     .line 377
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 378
     .line 379
-    move-result-object v4
-
     .line 380
-    iput-object v4, v1, Lcom/snap/catalina/core/CatalinaActivity;->D0:LiG9;
+    sget-object v0, LQBh;->e0:LL4b;
 
     .line 381
     .line 382
-    iget-object v4, v8, LjH4;->Y:LkW4;
+    iget-object v0, v0, LL4b;->a:LAp0;
 
     .line 383
     .line 384
-    iget-object v4, v4, LkW4;->c:Lake;
+    iget-object v4, v0, LAp0;->a:Lrp0;
 
     .line 385
     .line 386
-    invoke-interface {v4}, Lbke;->get()Ljava/lang/Object;
+    invoke-direct/range {v2 .. v7}, LLJ;-><init>(Landroid/content/Context;Lrp0;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LmGc;Lf3j;)V
 
     .line 387
     .line 388
     .line 389
-    move-result-object v4
+    return-object v2
 
     .line 390
-    check-cast v4, LlDa;
+    :pswitch_15
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 391
     .line 392
-    iput-object v4, v1, Lcom/snap/catalina/core/CatalinaActivity;->E0:LlDa;
+    check-cast v0, LuI4;
 
     .line 393
     .line 394
-    new-instance v9, LwDa;
+    iget-object v0, v0, LuI4;->b:Lcb5;
 
     .line 395
     .line 396
-    iget-object v4, v8, LjH4;->m0:Lnn9;
+    new-instance v0, Lfsh;
 
     .line 397
     .line 398
-    iget-object v4, v4, Lnn9;->a:Ljava/lang/Object;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 399
     .line 400
-    move-object v10, v4
-
     .line 401
-    check-cast v10, Landroid/app/Activity;
+    return-object v0
 
     .line 402
+    :pswitch_16
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 403
-    iget-object v4, v8, LjH4;->I0:LXZ5;
-
     .line 404
-    .line 405
-    invoke-virtual {v4}, LXZ5;->get()Ljava/lang/Object;
+    check-cast v0, LnI4;
 
+    .line 405
     .line 406
+    iget-object v0, v0, LnI4;->c:LBKj;
+
     .line 407
     .line 408
-    move-result-object v4
+    invoke-interface {v0}, LBKj;->b()LQeh;
 
     .line 409
-    move-object v11, v4
-
     .line 410
-    check-cast v11, LTqc;
-
     .line 411
+    move-result-object v0
+
     .line 412
-    iget-object v2, v2, LsL4;->q2:Lake;
+    return-object v0
 
     .line 413
-    .line 414
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    :pswitch_17
+    new-instance v0, Lv9h;
 
+    .line 414
     .line 415
+    iget-object v1, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 416
     .line 417
-    move-result-object v2
+    check-cast v1, LVH4;
 
     .line 418
-    move-object v12, v2
-
     .line 419
-    check-cast v12, LSDa;
+    iget-object v2, v1, LVH4;->a:LO8h;
 
     .line 420
     .line 421
-    invoke-virtual {v8}, LjH4;->j()La9j;
+    invoke-interface {v2}, LO8h;->n0()LPF1;
 
     .line 422
     .line 423
     .line 424
-    move-result-object v13
+    move-result-object v2
 
     .line 425
-    iget-object v14, v7, LqY4;->e:LeNe;
+    iget-object v3, v1, LVH4;->b:LYRg;
 
     .line 426
     .line 427
-    iget-object v2, v8, LjH4;->o0:LXF4;
+    invoke-interface {v3}, LYRg;->getPageLauncher()LYmd;
 
     .line 428
     .line 429
-    invoke-virtual {v2}, LXF4;->get()Ljava/lang/Object;
-
     .line 430
-    .line 431
-    .line 432
-    move-result-object v2
+    move-result-object v4
 
+    .line 431
+    new-instance v5, LZo4;
+
+    .line 432
     .line 433
-    check-cast v2, Lnwf;
+    invoke-interface {v3}, LYRg;->B()LZ69;
 
     .line 434
     .line 435
-    invoke-direct/range {v9 .. v14}, LwDa;-><init>(Landroid/app/Activity;LTqc;LSDa;La9j;LeNe;)V
-
     .line 436
-    .line 437
-    .line 438
-    iput-object v9, v1, Lcom/snap/catalina/core/CatalinaActivity;->F0:LwDa;
+    move-result-object v3
 
+    .line 437
+    invoke-direct {v5, v3}, LZo4;-><init>(LZ69;)V
+
+    .line 438
     .line 439
     .line 440
-    iget-object v2, v8, LjH4;->a2:LXF4;
+    iget-object v1, v1, LVH4;->c:Lz45;
 
     .line 441
     .line 442
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->G0:LXF4;
+    invoke-virtual {v1}, Lz45;->w()LOF3;
 
     .line 443
     .line 444
-    iget-object v2, v8, LjH4;->I0:LXZ5;
-
     .line 445
+    move-result-object v3
+
     .line 446
-    invoke-virtual {v2}, LXZ5;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Lz45;->v0()LyPf;
 
     .line 447
     .line 448
     .line 449
-    move-result-object v2
+    invoke-direct {v0, v2, v4, v5, v3}, Lv9h;-><init>(LPF1;LYmd;LZo4;LOF3;)V
 
     .line 450
-    check-cast v2, LTqc;
-
     .line 451
     .line 452
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->H0:LTqc;
+    return-object v0
 
     .line 453
+    :pswitch_18
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 454
-    iget-object v2, v8, LjH4;->t1:Lake;
-
     .line 455
-    .line 456
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    check-cast v0, LNH4;
 
+    .line 456
     .line 457
+    iget-object v0, v0, LNH4;->a:LKa5;
+
     .line 458
     .line 459
-    move-result-object v2
+    invoke-virtual {v0}, LKa5;->o()Lx2h;
 
     .line 460
-    check-cast v2, LFwc;
-
     .line 461
     .line 462
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->I0:LFwc;
+    move-result-object v0
 
     .line 463
+    return-object v0
+
     .line 464
-    iget-object v2, v8, LjH4;->H0:LXF4;
+    :pswitch_19
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 465
     .line 466
-    invoke-static {v2}, LVr6;->a(Lake;)LrH9;
+    check-cast v0, LIH4;
 
     .line 467
     .line 468
-    .line 469
-    move-result-object v2
+    iget-object v0, v0, LIH4;->c:Lz45;
 
+    .line 469
     .line 470
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->J0:LrH9;
+    invoke-virtual {v0}, Lz45;->v0()LyPf;
 
     .line 471
     .line 472
-    invoke-virtual {v8}, LjH4;->g()LTBa;
-
     .line 473
+    move-result-object v0
+
     .line 474
+    return-object v0
+
     .line 475
-    move-result-object v2
+    :pswitch_1a
+    new-instance v0, LKFg;
 
     .line 476
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->K0:LVjd;
-
     .line 477
+    iget-object v1, p0, LlH4;->b:Ljava/lang/Object;
+
     .line 478
-    iget-object v2, v8, LjH4;->o0:LXF4;
-
     .line 479
-    .line 480
-    invoke-virtual {v2}, LXF4;->get()Ljava/lang/Object;
+    check-cast v1, LEH4;
 
+    .line 480
     .line 481
+    iget-object v2, v1, LEH4;->a:Lk45;
+
     .line 482
     .line 483
-    move-result-object v2
+    iget-object v2, v2, Lk45;->b:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
     .line 484
-    check-cast v2, Lnwf;
-
     .line 485
+    iget-object v1, v1, LEH4;->b:Lz45;
+
     .line 486
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->L0:Lnwf;
-
     .line 487
-    .line 488
-    new-instance v9, LKs2;
+    invoke-virtual {v1}, Lz45;->v0()LyPf;
 
+    .line 488
     .line 489
     .line 490
-    iget-object v2, v8, LjH4;->m0:Lnn9;
+    invoke-direct {v0, v2}, LKFg;-><init>(Landroid/content/Context;)V
 
     .line 491
     .line 492
-    iget-object v2, v2, Lnn9;->a:Ljava/lang/Object;
-
     .line 493
+    return-object v0
+
     .line 494
-    move-object v10, v2
+    :pswitch_1b
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
 
     .line 495
-    check-cast v10, Landroid/app/Activity;
-
     .line 496
-    .line 497
-    invoke-virtual {v8}, LjH4;->h()LbEe;
+    check-cast v0, LoH4;
 
+    .line 497
     .line 498
+    iget-object v0, v0, LoH4;->b:Lz45;
+
     .line 499
     .line 500
-    move-result-object v13
+    invoke-virtual {v0}, Lz45;->p()LI23;
 
     .line 501
-    iget-object v2, v8, LjH4;->o0:LXF4;
-
     .line 502
     .line 503
-    invoke-virtual {v2}, LXF4;->get()Ljava/lang/Object;
+    move-result-object v0
 
     .line 504
-    .line 505
-    .line 506
-    move-result-object v2
+    return-object v0
 
+    .line 505
+    :pswitch_1c
+    iget-object v0, p0, LlH4;->b:Ljava/lang/Object;
+
+    .line 506
     .line 507
-    move-object v14, v2
+    check-cast v0, LmH4;
 
     .line 508
-    check-cast v14, Lnwf;
-
     .line 509
-    .line 510
-    invoke-virtual {v3}, LFY4;->g()Lj30;
+    iget-object v0, v0, LmH4;->c:Lda5;
 
+    .line 510
     .line 511
+    new-instance v1, Lph;
+
     .line 512
     .line 513
-    move-result-object v15
+    iget-object v2, v0, Lda5;->a:Lt55;
 
     .line 514
-    iget-object v2, v8, LjH4;->d2:LXF4;
-
     .line 515
-    .line 516
-    invoke-static {v2}, LVr6;->a(Lake;)LrH9;
+    invoke-virtual {v2}, Lt55;->g()LmGc;
 
+    .line 516
     .line 517
     .line 518
+    move-result-object v2
+
     .line 519
-    move-result-object v16
+    iget-object v3, v0, Lda5;->Y:LCBe;
 
     .line 520
-    iget-object v2, v8, LjH4;->c2:LXF4;
-
     .line 521
-    .line 522
-    iget-object v12, v7, LqY4;->b:Lcom/snap/mushroom/app/MushroomApplication;
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
+    .line 522
     .line 523
     .line 524
-    iget-object v11, v7, LqY4;->e:LeNe;
+    move-result-object v3
 
     .line 525
+    check-cast v3, LQt4;
+
     .line 526
-    move-object/from16 v17, v2
-
     .line 527
-    .line 528
-    invoke-direct/range {v9 .. v17}, LKs2;-><init>(Landroid/app/Activity;LeNe;Lcom/snap/mushroom/app/MushroomApplication;LbEe;Lnwf;Lj30;LrH9;LXF4;)V
+    sget-object v4, Loj8;->Z:Loj8;
 
+    .line 528
     .line 529
+    invoke-virtual {v3, v4}, LQt4;->a(Lrp0;)LJd3;
+
     .line 530
     .line 531
-    iput-object v9, v1, Lcom/snap/catalina/core/CatalinaActivity;->M0:LKs2;
-
     .line 532
+    move-result-object v3
+
     .line 533
-    iget-object v2, v8, LjH4;->S0:Lake;
+    iget-object v5, v0, Lda5;->X:LCBe;
 
     .line 534
     .line 535
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v5}, LDBe;->get()Ljava/lang/Object;
 
     .line 536
     .line 537
     .line 538
-    move-result-object v2
+    move-result-object v5
 
     .line 539
-    check-cast v2, Lpci;
+    check-cast v5, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 540
     .line 541
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->N0:Lpci;
+    iget-object v6, v0, Lda5;->c:LbO4;
 
     .line 542
     .line 543
-    iget-object v2, v8, LjH4;->e2:LXF4;
+    invoke-virtual {v6}, LbO4;->o()Lcom/snap/composer/WebLauncher;
 
     .line 544
     .line 545
-    invoke-static {v2}, LVr6;->a(Lake;)LrH9;
-
     .line 546
-    .line 547
-    .line 548
-    invoke-virtual {v8}, LjH4;->j()La9j;
+    move-result-object v6
 
+    .line 547
+    iget-object v7, v0, Lda5;->X:LCBe;
+
+    .line 548
     .line 549
+    invoke-interface {v7}, LDBe;->get()Ljava/lang/Object;
+
     .line 550
     .line 551
-    move-result-object v2
-
     .line 552
-    iput-object v2, v1, Lcom/snap/catalina/core/CatalinaActivity;->O0:La9j;
+    move-result-object v7
 
     .line 553
-    .line 554
-    return-void
+    check-cast v7, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 554
     .line 555
+    iget-object v0, v0, Lda5;->t:LCQ2;
+
+    .line 556
+    .line 557
+    invoke-virtual {v0, v4, v7}, LCQ2;->d(Lrp0;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)Lcu4;
+
+    .line 558
+    .line 559
+    .line 560
+    move-result-object v0
+
+    .line 561
+    invoke-virtual {v0}, Lcu4;->o()Lcom/snap/composer/sup/ISUPStore;
+
+    .line 562
+    .line 563
+    .line 564
+    move-result-object v0
+
+    .line 565
+    check-cast v6, Lplk;
+
+    .line 566
+    .line 567
+    check-cast v0, LJzi;
+
+    .line 568
+    .line 569
+    move-object v4, v5
+
+    .line 570
+    move-object v5, v6
+
+    .line 571
+    move-object v6, v0
+
+    .line 572
+    invoke-direct/range {v1 .. v6}, Lph;-><init>(LmGc;LJd3;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lplk;LJzi;)V
+
+    .line 573
+    .line 574
+    .line 575
+    return-object v1
+
+    .line 576
+    nop
+
+    .line 577
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

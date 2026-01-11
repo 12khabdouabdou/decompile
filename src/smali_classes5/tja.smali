@@ -2,13 +2,16 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:LHP;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(LHP;)V
     .locals 0
 
     .line 1
@@ -17,7 +20,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ltja;->a:Ljava/lang/String;
+    iput-object p1, p0, Ltja;->a:LHP;
 
     .line 5
     .line 6
@@ -26,129 +29,59 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final accept(Ljava/lang/Object;)V
+    .locals 9
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, LK8a;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    new-instance v0, LEP$I0;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Ltja;
+    iget-object v1, p1, LK8a;->a:LY79;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    iget-object v1, v1, LY79;->a:Ljava/lang/String;
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
-    .line 10
-    return v2
+    iget-object v2, p1, LK8a;->c:LfUh;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, Ltja;
+    iget-wide v4, v2, LfUh;->c:D
 
     .line 12
     .line 13
-    iget-object v1, p0, Ltja;->a:Ljava/lang/String;
+    iget-boolean v8, p1, LK8a;->d:Z
 
     .line 14
     .line 15
-    iget-object p1, p1, Ltja;->a:Ljava/lang/String;
+    iget-wide v6, v2, LfUh;->d:D
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-wide v2, p1, LK8a;->b:D
 
     .line 18
     .line 19
+    invoke-direct/range {v0 .. v8}, LEP$I0;-><init>(Ljava/lang/String;DDDZ)V
+
     .line 20
-    move-result p1
-
     .line 21
-    if-nez p1, :cond_2
-
     .line 22
+    iget-object p1, p0, Ltja;->a:LHP;
+
     .line 23
-    return v2
-
     .line 24
-    :cond_2
-    return v0
-.end method
+    invoke-interface {p1, v0}, LHP;->a(LEP;)V
 
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Ltja;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    return v0
-
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Activate(loadingStatusMessage="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Ltja;->a:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    return-object v0
+    .line 25
+    .line 26
+    .line 27
+    return-void
 .end method

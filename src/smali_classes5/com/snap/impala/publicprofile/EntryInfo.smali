@@ -1,10 +1,10 @@
 .class public final Lcom/snap/impala/publicprofile/EntryInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'sourcePageType\':s?,\'sourcePageSessionId\':s?,\'pageEntryType\':s?,\'httpUserAgent\':s?,\'advertisingId\':s?,\'enableAdTracking\':b@?,\'encodedClientInfo\':t?,\'nonFriendAddPlacementTypeOverride\':d@?,\'nonFriendAddSourceOverride\':d@?"
     typeReferences = {}

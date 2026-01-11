@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final p0:LBH8;
+.field public final p0:LSO8;
 
-.field public final q0:Lrc6;
+.field public final q0:LC58;
 
-.field public final r0:LFH8;
+.field public final r0:LWO8;
 
-.field public final s0:LyTi;
+.field public final s0:LMij;
 
 .field public final t0:Lcom/snap/maps/components/halfsheet/HalfSheetView;
 
@@ -31,174 +31,173 @@
     .line 2
     .line 3
     .line 4
-    new-instance p2, LBH8;
+    new-instance p2, LSO8;
 
     .line 5
     .line 6
-    invoke-direct {p2, p0}, LBH8;-><init>(Lcom/snap/maps/components/halfsheet/HalfSheet;)V
+    invoke-direct {p2, p0}, LSO8;-><init>(Lcom/snap/maps/components/halfsheet/HalfSheet;)V
 
     .line 7
     .line 8
     .line 9
-    iput-object p2, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->p0:LBH8;
+    iput-object p2, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->p0:LSO8;
 
     .line 10
     .line 11
-    new-instance v0, Lrc6;
+    new-instance v0, LC58;
 
     .line 12
     .line 13
-    const/16 v1, 0x1a
+    const/4 v1, 0x7
 
     .line 14
-    .line 15
-    invoke-direct {v0, v1}, Lrc6;-><init>(I)V
+    invoke-direct {v0, v1}, LC58;-><init>(I)V
 
+    .line 15
     .line 16
     .line 17
+    iput-object v0, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->q0:LC58;
+
     .line 18
-    iput-object v0, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->q0:Lrc6;
-
     .line 19
+    new-instance v1, LWO8;
+
     .line 20
-    new-instance v1, LFH8;
-
     .line 21
-    .line 22
-    invoke-direct {v1, p0, v0, p2, p1}, LFH8;-><init>(Lcom/snap/maps/components/halfsheet/HalfSheet;Lrc6;LBH8;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v0, p2}, LWO8;-><init>(Lcom/snap/maps/components/halfsheet/HalfSheet;LC58;LSO8;)V
 
+    .line 22
     .line 23
     .line 24
-    .line 25
-    iput-object v1, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->r0:LFH8;
+    iput-object v1, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->r0:LWO8;
 
+    .line 25
     .line 26
-    .line 27
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
+    .line 27
     .line 28
     .line 29
-    .line 30
     move-result-object p1
+
+    .line 30
+    new-instance p2, LMij;
 
     .line 31
-    new-instance p2, LyTi;
-
     .line 32
-    .line 33
     invoke-direct {p2}, Ljava/lang/Object;-><init>()V
 
+    .line 33
     .line 34
     .line 35
-    .line 36
     const/4 v2, 0x0
 
+    .line 36
+    iput v2, p2, LMij;->a:I
+
     .line 37
-    iput v2, p2, LyTi;->a:I
-
     .line 38
+    iput v2, p2, LMij;->b:I
+
     .line 39
-    iput v2, p2, LyTi;->b:I
-
     .line 40
+    iput v2, p2, LMij;->c:I
+
     .line 41
-    iput v2, p2, LyTi;->c:I
-
     .line 42
+    iput v2, p2, LMij;->d:I
+
     .line 43
-    iput v2, p2, LyTi;->d:I
-
     .line 44
+    iput v2, p2, LMij;->e:I
+
     .line 45
-    iput v2, p2, LyTi;->e:I
-
     .line 46
+    iput-object p2, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->s0:LMij;
+
     .line 47
-    iput-object p2, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->s0:LyTi;
-
     .line 48
-    .line 49
-    const p2, 0x7f0e02d3
+    const p2, 0x7f0e02ea
 
+    .line 49
     .line 50
     .line 51
-    .line 52
     invoke-virtual {p1, p2, p0, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
+    .line 52
     .line 53
     .line 54
-    .line 55
     move-result-object p1
 
-    .line 56
+    .line 55
     check-cast p1, Lcom/snap/maps/components/halfsheet/HalfSheetView;
 
+    .line 56
     .line 57
-    .line 58
     iput-object p1, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->t0:Lcom/snap/maps/components/halfsheet/HalfSheetView;
 
+    .line 58
     .line 59
-    .line 60
-    const p2, 0x7f0b09ba
+    const p2, 0x7f0b0aae
 
+    .line 60
     .line 61
     .line 62
-    .line 63
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 63
     .line 64
     .line 65
-    .line 66
     move-result-object p2
 
-    .line 67
+    .line 66
     check-cast p2, Landroidx/constraintlayout/widget/ConstraintLayout;
 
+    .line 67
     .line 68
-    .line 69
     iput-object p2, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->u0:Landroidx/constraintlayout/widget/ConstraintLayout;
 
+    .line 69
     .line 70
-    .line 71
-    const/4 p2, 0x1
+    const/4 p2, 0x3
 
-    .line 72
+    .line 71
     iput p2, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->v0:I
 
+    .line 72
     .line 73
+    iput-object v1, p1, Lcom/snap/maps/components/halfsheet/HalfSheetView;->r0:LWO8;
+
     .line 74
-    iput-object v1, p1, Lcom/snap/maps/components/halfsheet/HalfSheetView;->r0:LFH8;
-
     .line 75
-    .line 76
-    iput-object v0, p1, Lcom/snap/maps/components/halfsheet/HalfSheetView;->p0:Lrc6;
+    iput-object v0, p1, Lcom/snap/maps/components/halfsheet/HalfSheetView;->p0:LC58;
 
+    .line 76
     .line 77
-    .line 78
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
+    .line 78
     .line 79
     .line 80
-    .line 81
     invoke-virtual {p0, v2}, Lcom/snap/maps/components/halfsheet/HalfSheet;->h(Z)V
 
+    .line 81
     .line 82
     .line 83
-    .line 84
-    iget-object p1, v1, LFH8;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object p1, v1, LWO8;->f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 84
     .line 85
-    .line 86
     iput-object p1, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->w0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 86
     .line 87
-    .line 88
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized g()V
+.method public final declared-synchronized f()V
     .locals 1
 
     .line 1
@@ -206,11 +205,11 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->q0:Lrc6;
+    iget-object v0, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->q0:LC58;
 
     .line 3
     .line 4
-    iget-object v0, v0, Lrc6;->b:Ljava/lang/Object;
+    iget-object v0, v0, LC58;->b:Ljava/lang/Object;
 
     .line 5
     .line 6
@@ -242,6 +241,169 @@
 
     .line 15
     throw v0
+.end method
+
+.method public final g()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->r0:LWO8;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LWO8;->a()Lco6;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-object v1, v0, Lco6;->X:Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    check-cast v1, Lqo6;
+
+    .line 10
+    .line 11
+    iget-object v2, v1, Lqo6;->X:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    iget-object v2, v1, Lqo6;->t:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    check-cast v2, LPd8;
+
+    .line 16
+    .line 17
+    iget v2, v2, LPd8;->b:I
+
+    .line 18
+    .line 19
+    invoke-static {v2}, LzHa;->L(I)I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v2
+
+    .line 23
+    iget-object v0, v0, Lco6;->t:Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    check-cast v0, LSO8;
+
+    .line 26
+    .line 27
+    if-eqz v2, :cond_4
+
+    .line 28
+    .line 29
+    const/4 v1, 0x1
+
+    .line 30
+    if-eq v2, v1, :cond_3
+
+    .line 31
+    .line 32
+    const/4 v1, 0x2
+
+    .line 33
+    if-eq v2, v1, :cond_2
+
+    .line 34
+    .line 35
+    const/4 v1, 0x3
+
+    .line 36
+    if-eq v2, v1, :cond_1
+
+    .line 37
+    .line 38
+    const/4 v1, 0x4
+
+    .line 39
+    if-ne v2, v1, :cond_0
+
+    .line 40
+    .line 41
+    iget v0, v0, LSO8;->d:I
+
+    .line 42
+    .line 43
+    return v0
+
+    .line 44
+    :cond_0
+    new-instance v0, LwOc;
+
+    .line 45
+    .line 46
+    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 47
+    .line 48
+    .line 49
+    throw v0
+
+    .line 50
+    :cond_1
+    iget v0, v0, LSO8;->g:I
+
+    .line 51
+    .line 52
+    return v0
+
+    .line 53
+    :cond_2
+    iget v0, v0, LSO8;->f:I
+
+    .line 54
+    .line 55
+    return v0
+
+    .line 56
+    :cond_3
+    iget v0, v0, LSO8;->h:I
+
+    .line 57
+    .line 58
+    return v0
+
+    .line 59
+    :cond_4
+    iget v0, v0, LSO8;->e:I
+
+    .line 60
+    .line 61
+    iget-object v1, v1, Lqo6;->b:Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    check-cast v1, LUd8;
+
+    .line 64
+    .line 65
+    invoke-virtual {v1}, LUd8;->b()LQij;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v1
+
+    .line 69
+    iget v1, v1, LQij;->g:I
+
+    .line 70
+    .line 71
+    sub-int/2addr v0, v1
+
+    .line 72
+    return v0
 .end method
 
 .method public final h(Z)V
@@ -289,26 +451,26 @@
     .line 17
     .line 18
     :goto_1
-    new-instance v0, LWL3;
+    new-instance v0, LwP3;
 
     .line 19
     .line 20
-    invoke-direct {v0}, LWL3;-><init>()V
+    invoke-direct {v0}, LwP3;-><init>()V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v0, p0}, LWL3;->e(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-virtual {v0, p0}, LwP3;->e(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     .line 24
     .line 25
     .line 26
-    const v1, 0x7f0b1982
+    const v1, 0x7f0b1ae6
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, LWL3;->n(I)LRL3;
+    invoke-virtual {v0, v1}, LwP3;->n(I)LrP3;
 
     .line 30
     .line 31
@@ -316,30 +478,30 @@
     move-result-object v2
 
     .line 33
-    iget-object v2, v2, LRL3;->d:LSL3;
+    iget-object v2, v2, LrP3;->d:LsP3;
 
     .line 34
     .line 35
     const/4 v3, 0x1
 
     .line 36
-    iput-boolean v3, v2, LSL3;->a:Z
+    iput-boolean v3, v2, LsP3;->a:Z
 
     .line 37
     .line 38
     const/4 v4, 0x0
 
     .line 39
-    iput v4, v2, LSL3;->B:I
+    iput v4, v2, LsP3;->B:I
 
     .line 40
     .line 41
-    const v2, 0x7f0b197d
+    const v2, 0x7f0b1ae1
 
     .line 42
     .line 43
     .line 44
-    invoke-virtual {v0, v2}, LWL3;->n(I)LRL3;
+    invoke-virtual {v0, v2}, LwP3;->n(I)LrP3;
 
     .line 45
     .line 46
@@ -347,19 +509,19 @@
     move-result-object v5
 
     .line 48
-    iget-object v5, v5, LRL3;->d:LSL3;
+    iget-object v5, v5, LrP3;->d:LsP3;
 
     .line 49
     .line 50
-    iput-boolean v3, v5, LSL3;->a:Z
+    iput-boolean v3, v5, LsP3;->a:Z
 
     .line 51
     .line 52
-    iput v4, v5, LSL3;->B:I
+    iput v4, v5, LsP3;->B:I
 
     .line 53
     .line 54
-    invoke-virtual {v0, p0}, LWL3;->a(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-virtual {v0, p0}, LwP3;->a(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     .line 55
     .line 56
@@ -384,11 +546,11 @@
     move-result-object v3
 
     .line 67
-    check-cast v3, LLL3;
+    check-cast v3, LlP3;
 
     .line 68
     .line 69
-    iput v4, v3, LLL3;->b:I
+    iput v4, v3, LlP3;->b:I
 
     .line 70
     .line 71
@@ -444,11 +606,11 @@
     move-result-object v2
 
     .line 97
-    check-cast v2, LLL3;
+    check-cast v2, LlP3;
 
     .line 98
     .line 99
-    iput p1, v2, LLL3;->c:F
+    iput p1, v2, LlP3;->c:F
 
     .line 100
     .line 101
@@ -481,7 +643,7 @@
 
     .line 115
     .line 116
-    invoke-virtual {v0, p0}, LWL3;->e(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-virtual {v0, p0}, LwP3;->e(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     .line 117
     .line 118
@@ -501,7 +663,7 @@
     const/4 v2, 0x3
 
     .line 126
-    const v3, 0x7f0b1982
+    const v3, 0x7f0b1ae6
 
     .line 127
     .line 128
@@ -512,7 +674,7 @@
     const/4 v5, 0x0
 
     .line 131
-    invoke-virtual/range {v0 .. v5}, LWL3;->g(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LwP3;->g(IIIII)V
 
     .line 132
     .line 133
@@ -528,7 +690,7 @@
     const/4 v2, 0x4
 
     .line 139
-    const v3, 0x7f0b197d
+    const v3, 0x7f0b1ae1
 
     .line 140
     .line 141
@@ -536,7 +698,7 @@
     const/4 v4, 0x4
 
     .line 143
-    invoke-virtual/range {v0 .. v5}, LWL3;->g(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LwP3;->g(IIIII)V
 
     .line 144
     .line 145
@@ -563,7 +725,7 @@
     const/4 v4, 0x2
 
     .line 156
-    invoke-virtual/range {v0 .. v5}, LWL3;->g(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LwP3;->g(IIIII)V
 
     .line 157
     .line 158
@@ -590,12 +752,12 @@
     const/4 v4, 0x1
 
     .line 169
-    invoke-virtual/range {v0 .. v5}, LWL3;->g(IIIII)V
+    invoke-virtual/range {v0 .. v5}, LwP3;->g(IIIII)V
 
     .line 170
     .line 171
     .line 172
-    invoke-virtual {v0, p0}, LWL3;->a(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-virtual {v0, p0}, LwP3;->a(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     .line 173
     .line 174
@@ -607,23 +769,23 @@
     .locals 2
 
     .line 1
-    new-instance v0, LAE8;
+    new-instance v0, LMO8;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, p1, v1, p0}, LAE8;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p1, v1, p0}, LMO8;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 5
     .line 6
     .line 7
-    iget-object p1, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->q0:Lrc6;
+    iget-object p1, p0, Lcom/snap/maps/components/halfsheet/HalfSheet;->q0:LC58;
 
     .line 8
     .line 9
-    iput-object v0, p1, Lrc6;->t:Ljava/lang/Object;
+    iput-object v0, p1, LC58;->t:Ljava/lang/Object;
 
     .line 10
     .line 11

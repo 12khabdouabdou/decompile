@@ -1,122 +1,154 @@
-.class public abstract LNPb;
-.super Ljava/lang/Object;
+.class public final LNPb;
+.super LjSk;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ljava/util/regex/Pattern;
-
-.field public static final b:Ljava/lang/String;
-
-.field public static final c:Ljava/lang/String;
-
-.field public static final d:Ljava/lang/String;
-
-.field public static final e:Ljava/lang/String;
-
-.field public static final f:Ljava/lang/String;
-
-.field public static final g:Ljava/lang/String;
-
-.field public static final h:Ljava/lang/String;
-
-.field public static final i:Ljava/lang/String;
-
-.field public static final j:J
+# instance fields
+.field public final a:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    const-string v0, "\\s+"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    .line 4
+    iput-object p1, p0, LNPb;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LNPb;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LNPb;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LNPb;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LNPb;->a:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, LNPb;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LNPb;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result v0
 
     .line 7
-    sput-object v0, LNPb;->a:Ljava/util/regex/Pattern;
+    return v0
+.end method
 
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Entry(value="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
+    iget-object v1, p0, LNPb;->a:Ljava/lang/String;
+
     .line 9
-    const-string v0, ", "
-
     .line 10
+    const-string v2, ")"
+
     .line 11
-    sput-object v0, LNPb;->b:Ljava/lang/String;
-
     .line 12
-    .line 13
-    const-string v0, "%s\u2026"
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
+    .line 13
     .line 14
     .line 15
-    sput-object v0, LNPb;->c:Ljava/lang/String;
+    move-result-object v0
 
     .line 16
-    .line 17
-    const-string v0, "\u2026%s"
-
-    .line 18
-    .line 19
-    sput-object v0, LNPb;->d:Ljava/lang/String;
-
-    .line 20
-    .line 21
-    const-string v0, "+%1$d"
-
-    .line 22
-    .line 23
-    sput-object v0, LNPb;->e:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    const-string v0, "%1$s +%2$d"
-
-    .line 26
-    .line 27
-    sput-object v0, LNPb;->f:Ljava/lang/String;
-
-    .line 28
-    .line 29
-    const-string v0, "%1$s, %2$s, +%3$d"
-
-    .line 30
-    .line 31
-    sput-object v0, LNPb;->g:Ljava/lang/String;
-
-    .line 32
-    .line 33
-    const-string v0, "%2$d+ %1$s"
-
-    .line 34
-    .line 35
-    sput-object v0, LNPb;->h:Ljava/lang/String;
-
-    .line 36
-    .line 37
-    const-string v0, "%3$d+, %2$s, %1$s"
-
-    .line 38
-    .line 39
-    sput-object v0, LNPb;->i:Ljava/lang/String;
-
-    .line 40
-    .line 41
-    const-wide/16 v0, 0x2
-
-    .line 42
-    .line 43
-    sput-wide v0, LNPb;->j:J
-
-    .line 44
-    .line 45
-    return-void
+    return-object v0
 .end method

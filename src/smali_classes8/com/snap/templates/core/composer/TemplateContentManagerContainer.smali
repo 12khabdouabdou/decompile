@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Llpi;
+    proxyClass = LaOi;
     schema = "\'fetchCameraRollItemContents\':f|m|(a<r:\'[0]\'>, f(a?<r:\'[1]\'>, m?<s,u>))"
     typeReferences = {
         Lcom/snap/impala/common/media/MediaLibraryItem;,
-        Lmgb;
+        LPtb;
     }
 .end annotation
 

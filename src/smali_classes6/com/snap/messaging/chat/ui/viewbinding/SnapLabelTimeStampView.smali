@@ -1,5 +1,5 @@
 .class public final Lcom/snap/messaging/chat/ui/viewbinding/SnapLabelTimeStampView;
-.super LTSi;
+.super Ljij;
 .source "SourceFile"
 
 
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 2
-    invoke-direct {p0, p1, p2}, LTSi;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Ljij;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
     const-string p1, "CONVERSATION_CONTACT_TIMESTAMP"
@@ -35,7 +35,7 @@
 
 
 # virtual methods
-.method public final G()Ljava/lang/String;
+.method public final F()Ljava/lang/String;
     .locals 1
 
     .line 1

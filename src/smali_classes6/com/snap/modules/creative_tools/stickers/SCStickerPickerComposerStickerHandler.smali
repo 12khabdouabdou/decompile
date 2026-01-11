@@ -1,15 +1,15 @@
 .class public final Lcom/snap/modules/creative_tools/stickers/SCStickerPickerComposerStickerHandler;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'canRenderSticker\':f(r:\'[0]\'): b@,\'renderSticker\':f(r:\'[0]\', r:\'[1]\', d@?, r?:\'[2]\')"
     typeReferences = {
         Lcom/snap/modules/creative_tools_item/NativeCTItemInstance;,
-        LACh;,
+        LF0i;,
         Lcom/snapchat/client/valdi_core/Asset;
     }
 .end annotation

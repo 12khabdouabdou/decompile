@@ -9,13 +9,13 @@
 # instance fields
 .field public final synthetic a:Lcom/snap/lenses/explorer/categories/feed/c$b;
 
-.field public final synthetic b:Lo09;
+.field public final synthetic b:LY79;
 
-.field public final synthetic c:Lzxi;
+.field public final synthetic c:LCWi;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/lenses/explorer/categories/feed/c$b;Lo09;Lzxi;)V
+.method public constructor <init>(Lcom/snap/lenses/explorer/categories/feed/c$b;LY79;LCWi;)V
     .locals 0
 
     .line 1
@@ -28,11 +28,11 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/lenses/explorer/categories/feed/f;->b:Lo09;
+    iput-object p2, p0, Lcom/snap/lenses/explorer/categories/feed/f;->b:LY79;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/lenses/explorer/categories/feed/f;->c:Lzxi;
+    iput-object p3, p0, Lcom/snap/lenses/explorer/categories/feed/f;->c:LCWi;
 
     .line 9
     .line 10
@@ -45,15 +45,15 @@
     .locals 3
 
     .line 1
-    check-cast p1, LNY0;
+    check-cast p1, Ly21;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/lenses/explorer/categories/feed/f;->b:Lo09;
+    iget-object v0, p0, Lcom/snap/lenses/explorer/categories/feed/f;->b:LY79;
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/lenses/explorer/categories/feed/f;->c:Lzxi;
+    iget-object v1, p0, Lcom/snap/lenses/explorer/categories/feed/f;->c:LCWi;
 
     .line 6
     .line 7
@@ -61,7 +61,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v2, v0, p1, v1}, Lcom/snap/lenses/explorer/categories/feed/c$b;->R(Lo09;LNY0;Lzxi;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v2, v0, p1, v1}, Lcom/snap/lenses/explorer/categories/feed/c$b;->T(LY79;Ly21;LCWi;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 10
     .line 11

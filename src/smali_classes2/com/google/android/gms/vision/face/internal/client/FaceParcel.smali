@@ -1,5 +1,5 @@
 .class public Lcom/google/android/gms/vision/face/internal/client/FaceParcel;
-.super LI3;
+.super Le4;
 .source "SourceFile"
 
 
@@ -52,23 +52,22 @@
     .locals 2
 
     .line 1
-    new-instance v0, Ly8k;
+    new-instance v0, LXzk;
 
     .line 2
     .line 3
-    const/16 v1, 0x18
+    const/4 v1, 0x2
 
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ly8k;-><init>(I)V
+    invoke-direct {v0, v1}, LXzk;-><init>(I)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     sput-object v0, Lcom/google/android/gms/vision/face/internal/client/FaceParcel;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 8
     .line 9
-    .line 10
     return-void
 .end method
 
@@ -142,7 +141,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
+    invoke-static {v0, p1}, LMsi;->X(ILandroid/os/Parcel;)I
 
     .line 4
     .line 5
@@ -156,7 +155,7 @@
     const/4 v2, 0x4
 
     .line 9
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 10
     .line 11
@@ -173,7 +172,7 @@
     const/4 v1, 0x2
 
     .line 18
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 19
     .line 20
@@ -190,7 +189,7 @@
     const/4 v1, 0x3
 
     .line 27
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 28
     .line 29
@@ -204,7 +203,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-static {p1, v2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 36
     .line 37
@@ -221,7 +220,7 @@
     const/4 v1, 0x5
 
     .line 44
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 45
     .line 46
@@ -238,7 +237,7 @@
     const/4 v1, 0x6
 
     .line 53
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 54
     .line 55
@@ -255,7 +254,7 @@
     const/4 v1, 0x7
 
     .line 62
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 63
     .line 64
@@ -273,7 +272,7 @@
 
     .line 71
     .line 72
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 73
     .line 74
@@ -295,7 +294,7 @@
 
     .line 83
     .line 84
-    invoke-static {p1, v3, v1, p2}, Lew8;->P0(Landroid/os/Parcel;I[Landroid/os/Parcelable;I)V
+    invoke-static {p1, v3, v1, p2}, LMsi;->V(Landroid/os/Parcel;I[Landroid/os/Parcelable;I)V
 
     .line 85
     .line 86
@@ -304,7 +303,7 @@
 
     .line 88
     .line 89
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, p2, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 90
     .line 91
@@ -322,7 +321,7 @@
 
     .line 98
     .line 99
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, p2, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 100
     .line 101
@@ -340,7 +339,7 @@
 
     .line 108
     .line 109
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, p2, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 110
     .line 111
@@ -354,7 +353,7 @@
     .line 115
     .line 116
     .line 117
-    invoke-static {v0, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
+    invoke-static {v0, p1}, LMsi;->Y(ILandroid/os/Parcel;)V
 
     .line 118
     .line 119

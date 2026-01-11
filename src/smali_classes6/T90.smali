@@ -1,73 +1,78 @@
-.class public final synthetic LT90;
-.super Loje;
+.class public final LT90;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final e0:LT90;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'type\':r:\'[0]\',\'status\':r<e>:\'[1]\',\'lat\':d@?,\'lng\':d@?,\'title\':s?,\'emoji\':s?,\'id\':s?,\'expiration\':d@?"
+    typeReferences = {
+        Lcom/snap/modules/map_shared/FriendPlaceAlertType;,
+        Lcom/snap/modules/map_shared/FriendPlaceAlertStatus;
+    }
+.end annotation
+
+
+# instance fields
+.field private _emoji:Ljava/lang/String;
+
+.field private _expiration:Ljava/lang/Double;
+
+.field private _id:Ljava/lang/String;
+
+.field private _lat:Ljava/lang/Double;
+
+.field private _lng:Ljava/lang/Double;
+
+.field private _status:Lcom/snap/modules/map_shared/FriendPlaceAlertStatus;
+
+.field private _title:Ljava/lang/String;
+
+.field private _type:Lcom/snap/modules/map_shared/FriendPlaceAlertType;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    .line 1
-    new-instance v0, LT90;
-
-    .line 2
-    .line 3
-    const-string v1, "isGroup(Lcom/snapchat/client/messaging/Conversation;)Z"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x1
-
-    .line 6
-    const-class v3, Lx14;
-
-    .line 7
-    .line 8
-    const-string v4, "isGroup"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Loje;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, LT90;->e0:LT90;
-
-    .line 14
-    .line 15
-    return-void
-.end method
-
-
-# virtual methods
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+.method public constructor <init>(Lcom/snap/modules/map_shared/FriendPlaceAlertType;Lcom/snap/modules/map_shared/FriendPlaceAlertStatus;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Double;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lcom/snapchat/client/messaging/Conversation;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {p1}, Lx14;->d(Lcom/snapchat/client/messaging/Conversation;)Z
-
     .line 4
+    iput-object p1, p0, LT90;->_type:Lcom/snap/modules/map_shared/FriendPlaceAlertType;
+
     .line 5
     .line 6
-    move-result p1
+    iput-object p2, p0, LT90;->_status:Lcom/snap/modules/map_shared/FriendPlaceAlertStatus;
 
     .line 7
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 8
+    iput-object p3, p0, LT90;->_lat:Ljava/lang/Double;
+
     .line 9
     .line 10
-    move-result-object p1
+    iput-object p4, p0, LT90;->_lng:Ljava/lang/Double;
 
     .line 11
-    return-object p1
+    .line 12
+    iput-object p5, p0, LT90;->_title:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, LT90;->_emoji:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, LT90;->_id:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    iput-object p8, p0, LT90;->_expiration:Ljava/lang/Double;
+
+    .line 19
+    .line 20
+    return-void
 .end method

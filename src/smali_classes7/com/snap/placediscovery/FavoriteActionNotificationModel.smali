@@ -1,10 +1,10 @@
 .class public final Lcom/snap/placediscovery/FavoriteActionNotificationModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'place\':r:\'[0]\',\'response\':r<e>:\'[1]\'"
     typeReferences = {

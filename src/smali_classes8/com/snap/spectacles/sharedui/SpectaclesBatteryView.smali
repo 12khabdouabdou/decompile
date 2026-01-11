@@ -50,9 +50,9 @@
 
 .field public w0:Z
 
-.field public x0:LG1h;
+.field public x0:Lznh;
 
-.field public final y0:LvYg;
+.field public final y0:Likh;
 
 
 # direct methods
@@ -72,7 +72,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -93,7 +93,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -170,13 +170,13 @@
     iput-boolean v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->w0:Z
 
     .line 16
-    new-instance v1, LvYg;
+    new-instance v1, Likh;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, v2, p0}, LvYg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Likh;-><init>(ILjava/lang/Object;)V
 
-    iput-object v1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->y0:LvYg;
+    iput-object v1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->y0:Likh;
 
     .line 17
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -184,7 +184,7 @@
     move-result-object v1
 
     .line 18
-    sget-object v2, LAve;->a:[I
+    sget-object v2, LjNe;->a:[I
 
     const/4 v3, 0x0
 
@@ -198,7 +198,7 @@
 
     move-result-object p3
 
-    const v2, 0x7f060031
+    const v2, 0x7f060033
 
     invoke-virtual {p3, v2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -216,7 +216,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f07015f
+    const v4, 0x7f070161
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -236,7 +236,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f07015d
+    const v4, 0x7f07015f
 
     invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -254,7 +254,7 @@
 
     move-result-object p1
 
-    const v2, 0x7f07015e
+    const v2, 0x7f070160
 
     invoke-virtual {p1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -270,7 +270,7 @@
     .line 28
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    const p1, 0x7f070161
+    const p1, 0x7f070163
 
     .line 29
     invoke-virtual {v1, p1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -279,7 +279,7 @@
 
     iput p1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->a:I
 
-    const p1, 0x7f06002f
+    const p1, 0x7f060031
 
     .line 30
     invoke-virtual {v1, p1}, Landroid/content/res/Resources;->getColor(I)I
@@ -288,7 +288,7 @@
 
     iput p1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->j0:I
 
-    const p1, 0x7f060030
+    const p1, 0x7f060032
 
     .line 31
     invoke-virtual {v1, p1}, Landroid/content/res/Resources;->getColor(I)I
@@ -435,7 +435,7 @@
     :cond_1
     iput-object p2, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->n0:[F
 
-    const p1, 0x7f070160
+    const p1, 0x7f070162
 
     .line 52
     invoke-virtual {v1, p1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -447,7 +447,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -533,7 +533,7 @@
     .line 28
     .line 29
     .line 30
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 31
     .line 32
@@ -545,7 +545,7 @@
 
     .line 35
     .line 36
-    iget v2, v0, LG1h;->g:I
+    iget v2, v0, Lznh;->g:I
 
     .line 37
     .line 38
@@ -573,7 +573,7 @@
 
     .line 48
     .line 49
-    iget-object v0, v0, LG1h;->e:Lh4h;
+    iget-object v0, v0, Lznh;->e:LZph;
 
     .line 50
     .line 51
@@ -581,7 +581,7 @@
 
     .line 52
     .line 53
-    invoke-virtual {v0}, Lh4h;->i()LC1h;
+    invoke-virtual {v0}, LZph;->i()Lvnh;
 
     .line 54
     .line 55
@@ -593,7 +593,7 @@
 
     .line 58
     .line 59
-    invoke-virtual {v0}, LC1h;->e()Z
+    invoke-virtual {v0}, Lvnh;->e()Z
 
     .line 60
     .line 61
@@ -605,7 +605,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {v0}, LC1h;->b()I
+    invoke-virtual {v0}, Lvnh;->b()I
 
     .line 66
     .line 67
@@ -650,7 +650,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 2
     .line 3
@@ -658,7 +658,7 @@
 
     .line 4
     .line 5
-    iget-object v0, v0, LG1h;->e:Lh4h;
+    iget-object v0, v0, Lznh;->e:LZph;
 
     .line 6
     .line 7
@@ -674,7 +674,7 @@
 
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->y0:LvYg;
+    iget-object v1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->y0:Likh;
 
     .line 13
     .line 14
@@ -714,7 +714,7 @@
 
     .line 32
     .line 33
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 34
     .line 35
@@ -722,7 +722,7 @@
 
     .line 36
     .line 37
-    iget v2, v0, LG1h;->g:I
+    iget v2, v0, Lznh;->g:I
 
     .line 38
     .line 39
@@ -737,7 +737,7 @@
 
     .line 43
     .line 44
-    iget v0, v0, LG1h;->h:I
+    iget v0, v0, Lznh;->h:I
 
     .line 45
     .line 46
@@ -867,7 +867,7 @@
 
     .line 103
     .line 104
-    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
+    invoke-virtual {v0}, Landroid/animation/Animator;->start()V
 
     .line 105
     .line 106
@@ -886,7 +886,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 5
     .line 6
@@ -900,7 +900,7 @@
 
     .line 9
     .line 10
-    iget-object v0, v0, LG1h;->e:Lh4h;
+    iget-object v0, v0, Lznh;->e:LZph;
 
     .line 11
     .line 12
@@ -908,7 +908,7 @@
 
     .line 13
     .line 14
-    iget v3, v0, Lh4h;->y:I
+    iget v3, v0, LZph;->y:I
 
     .line 15
     .line 16
@@ -919,7 +919,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {v0}, Lh4h;->i()LC1h;
+    invoke-virtual {v0}, LZph;->i()Lvnh;
 
     .line 20
     .line 21
@@ -931,7 +931,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v0}, LC1h;->e()Z
+    invoke-virtual {v0}, Lvnh;->e()Z
 
     .line 26
     .line 27
@@ -986,7 +986,7 @@
     .line 44
     .line 45
     :cond_3
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 46
     .line 47
@@ -997,7 +997,7 @@
 
     .line 49
     .line 50
-    iget-object v0, v0, LG1h;->e:Lh4h;
+    iget-object v0, v0, Lznh;->e:LZph;
 
     .line 51
     .line 52
@@ -1005,7 +1005,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {v0}, Lh4h;->i()LC1h;
+    invoke-virtual {v0}, LZph;->i()Lvnh;
 
     .line 55
     .line 56
@@ -1017,7 +1017,7 @@
 
     .line 59
     .line 60
-    invoke-virtual {v0}, LC1h;->b()I
+    invoke-virtual {v0}, Lvnh;->b()I
 
     .line 61
     .line 62
@@ -1317,7 +1317,7 @@
     .line 197
     .line 198
     .line 199
-    iget-object v5, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v5, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 200
     .line 201
@@ -1325,7 +1325,7 @@
 
     .line 202
     .line 203
-    iget v5, v5, LG1h;->h:I
+    iget v5, v5, Lznh;->h:I
 
     .line 204
     .line 205
@@ -1408,7 +1408,7 @@
     move-result v5
 
     .line 237
-    invoke-static {v6, v3, v5, v0}, LYHe;->d(FFFF)F
+    invoke-static {v6, v3, v5, v0}, Lm8f;->d(FFFF)F
 
     .line 238
     .line 239
@@ -1635,7 +1635,7 @@
 
     .line 355
     .line 356
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 357
     .line 358
@@ -1643,7 +1643,7 @@
 
     .line 359
     .line 360
-    iget v0, v0, LG1h;->g:I
+    iget v0, v0, Lznh;->g:I
 
     .line 361
     .line 362
@@ -2185,7 +2185,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 5
     .line 6
@@ -2193,16 +2193,16 @@
 
     .line 7
     .line 8
-    iput-object p0, v0, LG1h;->f:Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;
+    iput-object p0, v0, Lznh;->f:Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, LG1h;->a()V
+    invoke-virtual {v0}, Lznh;->a()V
 
     .line 11
     .line 12
     .line 13
-    iget-object v1, v0, LG1h;->e:Lh4h;
+    iget-object v1, v0, Lznh;->e:LZph;
 
     .line 14
     .line 15
@@ -2210,7 +2210,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v1}, Lh4h;->i()LC1h;
+    invoke-virtual {v1}, LZph;->i()Lvnh;
 
     .line 18
     .line 19
@@ -2222,7 +2222,7 @@
 
     .line 22
     .line 23
-    iget v1, v1, LC1h;->c:I
+    iget v1, v1, Lvnh;->c:I
 
     .line 24
     .line 25
@@ -2234,11 +2234,11 @@
 
     .line 27
     :goto_0
-    iput v1, v0, LG1h;->g:I
+    iput v1, v0, Lznh;->g:I
 
     .line 28
     .line 29
-    iget-object v0, v0, LG1h;->f:Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;
+    iget-object v0, v0, Lznh;->f:Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;
 
     .line 30
     .line 31
@@ -2264,7 +2264,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 5
     .line 6
@@ -2272,7 +2272,7 @@
 
     .line 7
     .line 8
-    iget-object v1, v0, LG1h;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, Lznh;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 9
     .line 10
@@ -2284,7 +2284,7 @@
     const/4 v1, 0x0
 
     .line 14
-    iput-object v1, v0, LG1h;->f:Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;
+    iput-object v1, v0, Lznh;->f:Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;
 
     .line 15
     .line 16
@@ -2571,7 +2571,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:LG1h;
+    iget-object p1, p0, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;->x0:Lznh;
 
     .line 5
     .line 6
@@ -2583,7 +2583,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {p1}, LG1h;->a()V
+    invoke-virtual {p1}, Lznh;->a()V
 
     .line 11
     .line 12
@@ -2592,7 +2592,7 @@
 
     .line 14
     :cond_0
-    iget-object p1, p1, LG1h;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object p1, p1, Lznh;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 15
     .line 16

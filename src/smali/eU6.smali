@@ -1,92 +1,71 @@
-.class public final LeU6;
+.class public abstract LeU6;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LB39;
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
 
 
 # virtual methods
-.method public final a(Ljava/nio/ByteBuffer;LuZ0;)I
+.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;)Z
+.end method
+
+.method public abstract b(Ljava/lang/Object;)I
+.end method
+
+.method public final c(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
 
     .line 1
-    invoke-static {p1}, LtD1;->f(Ljava/nio/ByteBuffer;)LsD1;
+    if-ne p1, p2, :cond_0
 
     .line 2
     .line 3
+    const/4 p1, 0x1
+
     .line 4
-    move-result-object p1
-
-    .line 5
-    invoke-virtual {p0, p1, p2}, LeU6;->b(Ljava/io/InputStream;LuZ0;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p1
-
-    .line 9
     return p1
-.end method
 
-.method public final b(Ljava/io/InputStream;LuZ0;)I
-    .locals 1
-
-    .line 1
-    new-instance p2, LdU6;
-
-    .line 2
-    .line 3
-    invoke-direct {p2, p1}, LdU6;-><init>(Ljava/io/InputStream;)V
-
-    .line 4
     .line 5
+    :cond_0
+    if-eqz p1, :cond_2
+
     .line 6
-    const-string p1, "Orientation"
-
     .line 7
-    .line 8
-    const/4 v0, 0x1
+    if-nez p2, :cond_1
 
+    .line 8
     .line 9
-    invoke-virtual {p2, v0, p1}, LdU6;->j(ILjava/lang/String;)I
+    goto :goto_0
 
     .line 10
+    :cond_1
+    invoke-virtual {p0, p1, p2}, LeU6;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 11
     .line 12
+    .line 13
     move-result p1
 
-    .line 13
-    if-nez p1, :cond_0
-
     .line 14
+    return p1
+
     .line 15
-    const/4 p1, -0x1
+    :cond_2
+    :goto_0
+    const/4 p1, 0x0
 
     .line 16
-    :cond_0
     return p1
-.end method
-
-.method public final c(Ljava/nio/ByteBuffer;)Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
-    .locals 0
-
-    .line 1
-    sget-object p1, Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;->UNKNOWN:Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
-
-    .line 2
-    .line 3
-    return-object p1
-.end method
-
-.method public final d(Ljava/io/InputStream;)Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
-    .locals 0
-
-    .line 1
-    sget-object p1, Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;->UNKNOWN:Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
-
-    .line 2
-    .line 3
-    return-object p1
 .end method

@@ -1,23 +1,23 @@
 .class public final Lcom/snap/identity/takeover/VerificationTakeoverImpressionUpdateDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "VerificationTakeoverImpressionUpdateDurableJob"
-    metadataType = Li7j;
+    metadataType = Lewj;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:LtB6;
+.field public static final f:LRE6;
 
 
 # direct methods
@@ -25,15 +25,15 @@
     .locals 17
 
     .line 1
-    sget-object v3, LEB6;->a:LEB6;
+    sget-object v3, LcF6;->a:LcF6;
 
     .line 2
     .line 3
-    sget-object v2, LsL6;->a:LsL6;
+    sget-object v2, LgP6;->a:LgP6;
 
     .line 4
     .line 5
-    new-instance v0, LtB6;
+    new-instance v0, LRE6;
 
     .line 6
     .line 7
@@ -81,12 +81,12 @@
     const/4 v14, 0x0
 
     .line 23
-    invoke-direct/range {v0 .. v16}, LtB6;-><init>(ILjava/util/List;LEB6;Ljava/lang/String;Lnk9;Lp7f;LnCi;ZZLjava/lang/Boolean;Ljava/lang/String;LWD7;Lnk9;ZILHr5;)V
+    invoke-direct/range {v0 .. v16}, LRE6;-><init>(ILjava/util/List;LcF6;Ljava/lang/String;LSs9;Lupf;LF1j;ZZLjava/lang/Boolean;Ljava/lang/String;LyJ7;LSs9;ZILex5;)V
 
     .line 24
     .line 25
     .line 26
-    sput-object v0, Lcom/snap/identity/takeover/VerificationTakeoverImpressionUpdateDurableJob;->f:LtB6;
+    sput-object v0, Lcom/snap/identity/takeover/VerificationTakeoverImpressionUpdateDurableJob;->f:LRE6;
 
     .line 27
     .line 28
@@ -97,20 +97,20 @@
     .locals 2
 
     .line 2
-    sget-object v0, Li7j;->a:Li7j;
+    sget-object v0, Lewj;->a:Lewj;
 
-    sget-object v1, Lcom/snap/identity/takeover/VerificationTakeoverImpressionUpdateDurableJob;->f:LtB6;
+    sget-object v1, Lcom/snap/identity/takeover/VerificationTakeoverImpressionUpdateDurableJob;->f:LRE6;
 
-    invoke-direct {p0, v1, v0}, Lcom/snap/identity/takeover/VerificationTakeoverImpressionUpdateDurableJob;-><init>(LtB6;Li7j;)V
+    invoke-direct {p0, v1, v0}, Lcom/snap/identity/takeover/VerificationTakeoverImpressionUpdateDurableJob;-><init>(LRE6;Lewj;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;Li7j;)V
+.method public constructor <init>(LRE6;Lewj;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

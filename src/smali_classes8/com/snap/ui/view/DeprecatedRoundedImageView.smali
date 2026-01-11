@@ -9,11 +9,11 @@
 
 
 # static fields
-.field public static final i0:Lz36;
+.field public static final i0:LA66;
 
-.field public static final j0:Lz36;
+.field public static final j0:LA66;
 
-.field public static final k0:Lz36;
+.field public static final k0:LA66;
 
 
 # instance fields
@@ -31,7 +31,7 @@
     .locals 4
 
     .line 1
-    new-instance v0, Lz36;
+    new-instance v0, LA66;
 
     .line 2
     .line 3
@@ -66,11 +66,11 @@
     .line 18
     .line 19
     .line 20
-    sput-object v0, Lcom/snap/ui/view/DeprecatedRoundedImageView;->i0:Lz36;
+    sput-object v0, Lcom/snap/ui/view/DeprecatedRoundedImageView;->i0:LA66;
 
     .line 21
     .line 22
-    new-instance v0, Lz36;
+    new-instance v0, LA66;
 
     .line 23
     .line 24
@@ -102,11 +102,11 @@
     .line 38
     .line 39
     .line 40
-    sput-object v0, Lcom/snap/ui/view/DeprecatedRoundedImageView;->j0:Lz36;
+    sput-object v0, Lcom/snap/ui/view/DeprecatedRoundedImageView;->j0:LA66;
 
     .line 41
     .line 42
-    new-instance v0, Lz36;
+    new-instance v0, LA66;
 
     .line 43
     .line 44
@@ -138,7 +138,7 @@
     .line 58
     .line 59
     .line 60
-    sput-object v0, Lcom/snap/ui/view/DeprecatedRoundedImageView;->k0:Lz36;
+    sput-object v0, Lcom/snap/ui/view/DeprecatedRoundedImageView;->k0:LA66;
 
     .line 61
     .line 62
@@ -204,7 +204,7 @@
 
     move-result-object p1
 
-    sget-object v0, LCve;->h:[I
+    sget-object v0, LlNe;->h:[I
 
     const/4 v1, 0x0
 
@@ -359,7 +359,7 @@
 
     .line 24
     .line 25
-    sget-object v2, Lcom/snap/ui/view/DeprecatedRoundedImageView;->k0:Lz36;
+    sget-object v2, Lcom/snap/ui/view/DeprecatedRoundedImageView;->k0:LA66;
 
     .line 26
     .line 27
@@ -392,7 +392,7 @@
 
     .line 40
     .line 41
-    sget-object v2, Lcom/snap/ui/view/DeprecatedRoundedImageView;->j0:Lz36;
+    sget-object v2, Lcom/snap/ui/view/DeprecatedRoundedImageView;->j0:LA66;
 
     .line 42
     .line 43
@@ -405,7 +405,7 @@
 
     .line 47
     :cond_2
-    sget-object v2, Lcom/snap/ui/view/DeprecatedRoundedImageView;->i0:Lz36;
+    sget-object v2, Lcom/snap/ui/view/DeprecatedRoundedImageView;->i0:LA66;
 
     .line 48
     .line 49

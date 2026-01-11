@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'Unknown\':0,\'GenAIEdit\':1,\'ActivityCenter\':2,\'InfiniteFeed\':3,\'OnePersonDreams\':4,\'TwoPersonsDreams\':5,\'OnePersonVideoDreams\':6,\'TwoPersonsVideoDreams\':7,\'GenAIEditsContextSwitch\':8"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

@@ -1,15 +1,15 @@
 .class public final Lcom/snap/dpa/DpaComposerEntryPointNativeFunctions;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'reportTrackInfo\':f(r:\'[0]\'),\'onFocusedItemChanged\':f(d@),\'logIssueToNative\':f(s),\'onDpaTopSnapInteraction\':f?(r:\'[1]\'),\'onVideoProgressUpdated\':f?(d@, d@),\'onDpaTopSnapImpression\':f?(t)"
     typeReferences = {
-        LNt6;,
-        Lgu6;
+        LUw6;,
+        Lnx6;
     }
 .end annotation
 

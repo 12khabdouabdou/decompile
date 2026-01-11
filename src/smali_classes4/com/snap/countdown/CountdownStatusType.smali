@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'COUNTDOWN_STATUS_UNSET\':0,\'COUNTDOWN_STATUS_CREATED\':1,\'COUNTDOWN_STATUS_DELETED\':2,\'COUNTDOWN_STATUS_UPDATED\':3,\'COUNTDOWN_STATUS_STARTED\':4"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

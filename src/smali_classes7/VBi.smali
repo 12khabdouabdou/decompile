@@ -1,29 +1,25 @@
-.class public final LVBi;
+.class public final synthetic LVBi;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Lh04;
-
-.field public final synthetic c:Lio/reactivex/rxjava3/subjects/Subject;
+.field public final synthetic b:LX1h;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lh04;Lio/reactivex/rxjava3/subjects/Subject;I)V
+.method public synthetic constructor <init>(LX1h;I)V
     .locals 0
 
     .line 1
-    iput p3, p0, LVBi;->a:I
+    iput p2, p0, LVBi;->a:I
 
-    iput-object p1, p0, LVBi;->b:Lh04;
-
-    iput-object p2, p0, LVBi;->c:Lio/reactivex/rxjava3/subjects/Subject;
+    iput-object p1, p0, LVBi;->b:LX1h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,8 +28,8 @@
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 1
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 2
 
     .line 1
     iget v0, p0, LVBi;->a:I
@@ -45,52 +41,127 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/util/List;
+    iget-object v0, p0, LVBi;->b:LX1h;
 
     .line 7
     .line 8
-    iget-object p1, p0, LVBi;->b:Lh04;
+    iget-object v0, v0, LX1h;->t:Ljava/lang/Object;
 
     .line 9
     .line 10
-    iget-object v0, p0, LVBi;->c:Lio/reactivex/rxjava3/subjects/Subject;
+    check-cast v0, Lsfd;
 
     .line 11
     .line 12
-    invoke-static {p1, v0}, Lh04;->m(Lh04;Lio/reactivex/rxjava3/subjects/Subject;)V
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     .line 13
     .line 14
     .line 15
-    return-void
+    move-result-object p1
 
     .line 16
-    :pswitch_0
-    check-cast p1, Ljava/lang/String;
+    check-cast p1, Ljava/lang/Integer;
 
     .line 17
     .line 18
-    iget-object p1, p0, LVBi;->b:Lh04;
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     .line 19
     .line 20
-    iget-object v0, p0, LVBi;->c:Lio/reactivex/rxjava3/subjects/Subject;
-
     .line 21
+    move-result p1
+
     .line 22
-    invoke-static {p1, v0}, Lh04;->m(Lh04;Lio/reactivex/rxjava3/subjects/Subject;)V
+    const/4 v1, 0x0
 
     .line 23
+    invoke-static {p1, v1, v1, v1}, Landroid/graphics/Color;->argb(IIII)I
+
     .line 24
     .line 25
-    return-void
-
     .line 26
-    nop
+    move-result p1
 
     .line 27
+    invoke-virtual {v0, p1}, Landroid/view/View;->setBackgroundColor(I)V
+
+    .line 28
+    .line 29
+    .line 30
+    return-void
+
+    .line 31
+    :pswitch_0
+    iget-object p1, p0, LVBi;->b:LX1h;
+
+    .line 32
+    .line 33
+    iget-object p1, p1, LX1h;->Y:Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    check-cast p1, LKKi;
+
+    .line 36
+    .line 37
+    invoke-virtual {p1}, LKKi;->l()V
+
+    .line 38
+    .line 39
+    .line 40
+    return-void
+
+    .line 41
+    :pswitch_1
+    iget-object v0, p0, LVBi;->b:LX1h;
+
+    .line 42
+    .line 43
+    iget-object v1, v0, LX1h;->Y:Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    check-cast v1, LKKi;
+
+    .line 46
+    .line 47
+    invoke-virtual {v1}, LKKi;->l()V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->isRunning()Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result p1
+
+    .line 54
+    if-eqz p1, :cond_0
+
+    .line 55
+    .line 56
+    const/high16 p1, 0x3f800000    # 1.0f
+
+    .line 57
+    .line 58
+    invoke-virtual {v0, p1}, LX1h;->p(F)V
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_0
+    return-void
+
+    .line 62
+    nop
+
+    .line 63
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

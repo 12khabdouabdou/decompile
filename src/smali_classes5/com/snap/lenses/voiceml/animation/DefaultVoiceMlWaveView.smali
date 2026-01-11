@@ -49,9 +49,9 @@
 
     move-result-object p1
 
-    const p2, 0x7f060202
+    const p2, 0x7f06025a
 
-    invoke-static {p1, p2}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, p2}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p1
 
@@ -90,9 +90,9 @@
     :goto_0
     if-ge p3, p2, :cond_0
 
-    new-instance v0, LIY5;
+    new-instance v0, LB16;
 
-    invoke-direct {v0, p0, p3}, LIY5;-><init>(Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlWaveView;I)V
+    invoke-direct {v0, p0, p3}, LB16;-><init>(Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlWaveView;I)V
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -157,15 +157,15 @@
     move-result-object v1
 
     .line 20
-    check-cast v1, LIY5;
+    check-cast v1, LB16;
 
     .line 21
     .line 22
-    iget-object v2, v1, LIY5;->g:Landroid/animation/ValueAnimator;
+    iget-object v2, v1, LB16;->g:Landroid/animation/ValueAnimator;
 
     .line 23
     .line 24
-    iget-object v1, v1, LIY5;->h:LHY5;
+    iget-object v1, v1, LB16;->h:LA16;
 
     .line 25
     .line 26
@@ -223,15 +223,15 @@
     move-result-object v1
 
     .line 20
-    check-cast v1, LIY5;
+    check-cast v1, LB16;
 
     .line 21
     .line 22
-    iget-object v2, v1, LIY5;->g:Landroid/animation/ValueAnimator;
+    iget-object v2, v1, LB16;->g:Landroid/animation/ValueAnimator;
 
     .line 23
     .line 24
-    iget-object v1, v1, LIY5;->h:LHY5;
+    iget-object v1, v1, LB16;->h:LA16;
 
     .line 25
     .line 26
@@ -289,7 +289,7 @@
     move-result-object v1
 
     .line 20
-    check-cast v1, LIY5;
+    check-cast v1, LB16;
 
     .line 21
     .line 22
@@ -304,11 +304,11 @@
     int-to-float v2, v2
 
     .line 27
-    iget v3, v1, LIY5;->c:F
+    iget v3, v1, LB16;->c:F
 
     .line 28
     .line 29
-    iget v4, v1, LIY5;->d:F
+    iget v4, v1, LB16;->d:F
 
     .line 30
     .line 31
@@ -324,7 +324,7 @@
     sub-float/2addr v3, v4
 
     .line 35
-    iget-object v4, v1, LIY5;->f:Landroid/graphics/Path;
+    iget-object v4, v1, LB16;->f:Landroid/graphics/Path;
 
     .line 36
     .line 37
@@ -367,7 +367,7 @@
     add-float/2addr v6, v7
 
     .line 57
-    iget v7, v1, LIY5;->d:F
+    iget v7, v1, LB16;->d:F
 
     .line 58
     .line 59
@@ -389,7 +389,7 @@
     add-float/2addr v8, v3
 
     .line 67
-    invoke-static {v6}, LIY5;->a(F)F
+    invoke-static {v6}, LB16;->a(F)F
 
     .line 68
     .line 69
@@ -397,21 +397,21 @@
     move-result v7
 
     .line 71
-    iget v9, v1, LIY5;->i:F
+    iget v9, v1, LB16;->i:F
 
     .line 72
     .line 73
     sub-float/2addr v7, v9
 
     .line 74
-    iget v9, v1, LIY5;->j:F
+    iget v9, v1, LB16;->j:F
 
     .line 75
     .line 76
     div-float/2addr v7, v9
 
     .line 77
-    iget v9, v1, LIY5;->e:F
+    iget v9, v1, LB16;->e:F
 
     .line 78
     .line 79

@@ -1,9 +1,9 @@
 .class public Landroidx/appcompat/widget/SearchView;
-.super Lbma;
+.super Lqya;
 .source "SourceFile"
 
 # interfaces
-.implements Lyd3;
+.implements Lqg3;
 
 
 # annotations
@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final Y0:LW73;
+.field public static final Y0:LCuf;
 
 
 # instance fields
@@ -55,7 +55,7 @@
 
 .field private final R0:Ljava/lang/Runnable;
 
-.field public final S0:LgEf;
+.field public final S0:LCXf;
 
 .field private final T0:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -94,7 +94,7 @@
 
 .field private final x0:Landroid/view/View;
 
-.field public y0:LmEf;
+.field public y0:LIXf;
 
 .field public final z0:Landroid/graphics/Rect;
 
@@ -107,7 +107,7 @@
     const/4 v0, 0x1
 
     .line 2
-    new-instance v1, LW73;
+    new-instance v1, LCuf;
 
     .line 3
     .line 4
@@ -115,7 +115,7 @@
 
     .line 5
     .line 6
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v1}, LCuf;-><init>()V
 
     .line 7
     .line 8
@@ -136,7 +136,7 @@
     move-result-object v4
 
     .line 16
-    iput-object v4, v1, LW73;->a:Ljava/lang/reflect/Method;
+    iput-object v4, v1, LCuf;->b:Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -161,7 +161,7 @@
     move-result-object v3
 
     .line 27
-    iput-object v3, v1, LW73;->b:Ljava/lang/reflect/Method;
+    iput-object v3, v1, LCuf;->c:Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -201,7 +201,7 @@
     move-result-object v2
 
     .line 45
-    iput-object v2, v1, LW73;->c:Ljava/lang/reflect/Method;
+    iput-object v2, v1, LCuf;->t:Ljava/lang/Object;
 
     .line 46
     .line 47
@@ -213,7 +213,7 @@
     .line 49
     .line 50
     :catch_2
-    sput-object v1, Landroidx/appcompat/widget/SearchView;->Y0:LW73;
+    sput-object v1, Landroidx/appcompat/widget/SearchView;->Y0:LCuf;
 
     .line 51
     .line 52
@@ -234,7 +234,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x7f040487
+    const v0, 0x7f040511
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/SearchView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -250,7 +250,7 @@
     move-object/from16 v1, p1
 
     .line 3
-    invoke-direct/range {p0 .. p3}, Lbma;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct/range {p0 .. p3}, Lqya;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
     new-instance v2, Landroid/graphics/Rect;
@@ -279,18 +279,18 @@
     iput-object v3, v0, Landroidx/appcompat/widget/SearchView;->C0:[I
 
     .line 8
-    new-instance v3, LfEf;
+    new-instance v3, LBXf;
 
-    invoke-direct {v3, v0}, LfEf;-><init>(Landroidx/appcompat/widget/SearchView;)V
+    invoke-direct {v3, v0}, LBXf;-><init>(Landroidx/appcompat/widget/SearchView;)V
 
     iput-object v3, v0, Landroidx/appcompat/widget/SearchView;->R0:Ljava/lang/Runnable;
 
     .line 9
-    new-instance v3, LgEf;
+    new-instance v3, LCXf;
 
-    invoke-direct {v3, v0}, LgEf;-><init>(Landroidx/appcompat/widget/SearchView;)V
+    invoke-direct {v3, v0}, LCXf;-><init>(Landroidx/appcompat/widget/SearchView;)V
 
-    iput-object v3, v0, Landroidx/appcompat/widget/SearchView;->S0:LgEf;
+    iput-object v3, v0, Landroidx/appcompat/widget/SearchView;->S0:LCXf;
 
     .line 10
     new-instance v3, Ljava/util/WeakHashMap;
@@ -319,9 +319,9 @@
     iput-object v5, v0, Landroidx/appcompat/widget/SearchView;->V0:Landroid/widget/TextView$OnEditorActionListener;
 
     .line 14
-    new-instance v6, LjEf;
+    new-instance v6, LFXf;
 
-    invoke-direct {v6, v0}, LjEf;-><init>(Landroidx/appcompat/widget/SearchView;)V
+    invoke-direct {v6, v0}, LFXf;-><init>(Landroidx/appcompat/widget/SearchView;)V
 
     iput-object v6, v0, Landroidx/appcompat/widget/SearchView;->W0:Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -338,10 +338,10 @@
     invoke-direct {v8, v0}, Landroidx/appcompat/widget/n;-><init>(Landroidx/appcompat/widget/SearchView;)V
 
     .line 17
-    sget-object v9, LOve;->u:[I
+    sget-object v9, LxNe;->u:[I
 
     .line 18
-    new-instance v10, LQDi;
+    new-instance v10, Lu3j;
 
     const/4 v11, 0x0
 
@@ -354,7 +354,7 @@
 
     move-result-object v9
 
-    invoke-direct {v10, v1, v9}, LQDi;-><init>(Landroid/content/Context;Landroid/content/res/TypedArray;)V
+    invoke-direct {v10, v1, v9}, Lu3j;-><init>(Landroid/content/Context;Landroid/content/res/TypedArray;)V
 
     .line 20
     invoke-static {v1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -366,7 +366,7 @@
     const v12, 0x7f0e001a
 
     .line 21
-    invoke-virtual {v10, v9, v12}, LQDi;->n(II)I
+    invoke-virtual {v10, v9, v12}, Lu3j;->n(II)I
 
     move-result v9
 
@@ -375,7 +375,7 @@
     .line 22
     invoke-virtual {v1, v9, v0, v12}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
-    const v1, 0x7f0b1416
+    const v1, 0x7f0b154f
 
     .line 23
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -389,7 +389,7 @@
     .line 24
     iput-object v0, v1, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;->e0:Landroidx/appcompat/widget/SearchView;
 
-    const v9, 0x7f0b140e
+    const v9, 0x7f0b1547
 
     .line 25
     invoke-virtual {v0, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -398,7 +398,7 @@
 
     iput-object v9, v0, Landroidx/appcompat/widget/SearchView;->q0:Landroid/view/View;
 
-    const v9, 0x7f0b1415
+    const v9, 0x7f0b154e
 
     .line 26
     invoke-virtual {v0, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -407,7 +407,7 @@
 
     iput-object v9, v0, Landroidx/appcompat/widget/SearchView;->r0:Landroid/view/View;
 
-    const v13, 0x7f0b182c
+    const v13, 0x7f0b1980
 
     .line 27
     invoke-virtual {v0, v13}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -416,7 +416,7 @@
 
     iput-object v13, v0, Landroidx/appcompat/widget/SearchView;->s0:Landroid/view/View;
 
-    const v14, 0x7f0b1409
+    const v14, 0x7f0b1542
 
     .line 28
     invoke-virtual {v0, v14}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -427,7 +427,7 @@
 
     iput-object v14, v0, Landroidx/appcompat/widget/SearchView;->t0:Landroid/widget/ImageView;
 
-    const v15, 0x7f0b1412
+    const v15, 0x7f0b154b
 
     .line 29
     invoke-virtual {v0, v15}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -438,7 +438,7 @@
 
     iput-object v15, v0, Landroidx/appcompat/widget/SearchView;->u0:Landroid/widget/ImageView;
 
-    const v2, 0x7f0b140d
+    const v2, 0x7f0b1546
 
     .line 30
     invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -449,7 +449,7 @@
 
     iput-object v2, v0, Landroidx/appcompat/widget/SearchView;->v0:Landroid/widget/ImageView;
 
-    const v12, 0x7f0b141c
+    const v12, 0x7f0b1555
 
     .line 31
     invoke-virtual {v0, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -460,7 +460,7 @@
 
     iput-object v12, v0, Landroidx/appcompat/widget/SearchView;->w0:Landroid/widget/ImageView;
 
-    const v11, 0x7f0b1414
+    const v11, 0x7f0b154d
 
     .line 32
     invoke-virtual {v0, v11}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -476,12 +476,12 @@
     const/16 v4, 0xa
 
     .line 33
-    invoke-virtual {v10, v4}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v4}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
     .line 34
-    sget-object v17, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v17, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 35
     invoke-virtual {v9, v4}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
@@ -489,7 +489,7 @@
     const/16 v4, 0xe
 
     .line 36
-    invoke-virtual {v10, v4}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v4}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
@@ -499,7 +499,7 @@
     const/16 v4, 0xd
 
     .line 38
-    invoke-virtual {v10, v4}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v4}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v9
 
@@ -508,7 +508,7 @@
     const/4 v9, 0x7
 
     .line 39
-    invoke-virtual {v10, v9}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v9}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v9
 
@@ -517,7 +517,7 @@
     const/4 v9, 0x4
 
     .line 40
-    invoke-virtual {v10, v9}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v9}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v9
 
@@ -526,14 +526,14 @@
     const/16 v9, 0x10
 
     .line 41
-    invoke-virtual {v10, v9}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v9}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v9
 
     invoke-virtual {v12, v9}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 42
-    invoke-virtual {v10, v4}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v4}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
@@ -542,7 +542,7 @@
     const/16 v4, 0xc
 
     .line 43
-    invoke-virtual {v10, v4}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v10, v4}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
@@ -560,14 +560,14 @@
     move-result-object v4
 
     .line 45
-    invoke-static {v14, v4}, Lhkk;->j(Landroid/view/View;Ljava/lang/CharSequence;)V
+    invoke-static {v14, v4}, LwFk;->k(Landroid/view/View;Ljava/lang/CharSequence;)V
 
     const/16 v4, 0xf
 
     const v9, 0x7f0e0019
 
     .line 46
-    invoke-virtual {v10, v4, v9}, LQDi;->n(II)I
+    invoke-virtual {v10, v4, v9}, Lu3j;->n(II)I
 
     move-result v4
 
@@ -578,7 +578,7 @@
     const/4 v9, 0x0
 
     .line 47
-    invoke-virtual {v10, v4, v9}, LQDi;->n(II)I
+    invoke-virtual {v10, v4, v9}, Lu3j;->n(II)I
 
     move-result v4
 
@@ -617,9 +617,9 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     .line 58
-    new-instance v2, LhEf;
+    new-instance v2, LDXf;
 
-    invoke-direct {v2, v0}, LhEf;-><init>(Landroidx/appcompat/widget/SearchView;)V
+    invoke-direct {v2, v0}, LDXf;-><init>(Landroidx/appcompat/widget/SearchView;)V
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
@@ -628,7 +628,7 @@
     const/4 v3, 0x1
 
     .line 59
-    invoke-virtual {v10, v2, v3}, LQDi;->a(IZ)Z
+    invoke-virtual {v10, v2, v3}, Lu3j;->a(IZ)Z
 
     move-result v2
 
@@ -653,7 +653,7 @@
     const/4 v2, -0x1
 
     .line 64
-    invoke-virtual {v10, v3, v2}, LQDi;->f(II)I
+    invoke-virtual {v10, v3, v2}, Lu3j;->f(II)I
 
     move-result v4
 
@@ -669,7 +669,7 @@
     const/4 v3, 0x6
 
     .line 67
-    invoke-virtual {v10, v3}, LQDi;->p(I)Ljava/lang/CharSequence;
+    invoke-virtual {v10, v3}, Lu3j;->p(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -678,7 +678,7 @@
     const/16 v3, 0xb
 
     .line 68
-    invoke-virtual {v10, v3}, LQDi;->p(I)Ljava/lang/CharSequence;
+    invoke-virtual {v10, v3}, Lu3j;->p(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -687,7 +687,7 @@
     const/4 v3, 0x3
 
     .line 69
-    invoke-virtual {v10, v3, v2}, LQDi;->k(II)I
+    invoke-virtual {v10, v3, v2}, Lu3j;->k(II)I
 
     move-result v3
 
@@ -700,7 +700,7 @@
     const/4 v3, 0x2
 
     .line 71
-    invoke-virtual {v10, v3, v2}, LQDi;->k(II)I
+    invoke-virtual {v10, v3, v2}, Lu3j;->k(II)I
 
     move-result v3
 
@@ -715,7 +715,7 @@
     const/4 v9, 0x0
 
     .line 73
-    invoke-virtual {v10, v9, v3}, LQDi;->a(IZ)Z
+    invoke-virtual {v10, v9, v3}, Lu3j;->a(IZ)Z
 
     move-result v2
 
@@ -723,7 +723,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setFocusable(Z)V
 
     .line 75
-    invoke-virtual {v10}, LQDi;->t()V
+    invoke-virtual {v10}, Lu3j;->t()V
 
     .line 76
     new-instance v2, Landroid/content/Intent;
@@ -772,9 +772,9 @@
     if-eqz v1, :cond_4
 
     .line 82
-    new-instance v2, LiEf;
+    new-instance v2, LEXf;
 
-    invoke-direct {v2, v0}, LiEf;-><init>(Landroidx/appcompat/widget/SearchView;)V
+    invoke-direct {v2, v0}, LEXf;-><init>(Landroidx/appcompat/widget/SearchView;)V
 
     invoke-virtual {v1, v2}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
@@ -1063,7 +1063,7 @@
     .line 27
     .line 28
     .line 29
-    invoke-static {p0}, LaLj;->a(Landroid/view/View;)Z
+    invoke-static {p0}, LEak;->a(Landroid/view/View;)Z
 
     .line 30
     .line 31
@@ -1234,7 +1234,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0}, LPve;->z(Landroidx/appcompat/widget/SearchView$SearchAutoComplete;)V
+    invoke-static {v0}, LANe;->A(Landroidx/appcompat/widget/SearchView$SearchAutoComplete;)V
 
     .line 10
     .line 11
@@ -1247,51 +1247,59 @@
 
     .line 14
     .line 15
-    sget-object v1, Landroidx/appcompat/widget/SearchView;->Y0:LW73;
+    sget-object v1, Landroidx/appcompat/widget/SearchView;->Y0:LCuf;
 
     .line 16
     .line 17
-    iget-object v2, v1, LW73;->a:Ljava/lang/reflect/Method;
+    iget-object v2, v1, LCuf;->b:Ljava/lang/Object;
 
     .line 18
     .line 19
-    const/4 v3, 0x0
+    check-cast v2, Ljava/lang/reflect/Method;
 
     .line 20
+    .line 21
+    const/4 v3, 0x0
+
+    .line 22
     if-eqz v2, :cond_1
 
-    .line 21
-    .line 22
+    .line 23
+    .line 24
     :try_start_0
     invoke-virtual {v2, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 23
-    .line 24
     .line 25
+    .line 26
+    .line 27
     :catch_0
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView;->p0:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
-    .line 26
-    .line 27
-    iget-object v1, v1, LW73;->b:Ljava/lang/reflect/Method;
-
     .line 28
     .line 29
-    if-eqz v1, :cond_2
+    iget-object v1, v1, LCuf;->c:Ljava/lang/Object;
 
     .line 30
     .line 31
+    check-cast v1, Ljava/lang/reflect/Method;
+
+    .line 32
+    .line 33
+    if-eqz v1, :cond_2
+
+    .line 34
+    .line 35
     :try_start_1
     invoke-virtual {v1, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 32
-    .line 33
-    .line 34
+    .line 36
+    .line 37
+    .line 38
     :catch_1
     :cond_2
     return-void
@@ -1453,7 +1461,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Landroidx/appcompat/widget/SearchView;->S0:LgEf;
+    iget-object v0, p0, Landroidx/appcompat/widget/SearchView;->S0:LCXf;
 
     .line 7
     .line 8
@@ -1474,7 +1482,7 @@
     .locals 4
 
     .line 1
-    invoke-super/range {p0 .. p5}, Lbma;->onLayout(ZIIII)V
+    invoke-super/range {p0 .. p5}, Lqya;->onLayout(ZIIII)V
 
     .line 2
     .line 3
@@ -1590,7 +1598,7 @@
     .line 55
     .line 56
     .line 57
-    iget-object p2, p1, Landroidx/appcompat/widget/SearchView;->y0:LmEf;
+    iget-object p2, p1, Landroidx/appcompat/widget/SearchView;->y0:LIXf;
 
     .line 58
     .line 59
@@ -1598,7 +1606,7 @@
 
     .line 60
     .line 61
-    new-instance p2, LmEf;
+    new-instance p2, LIXf;
 
     .line 62
     .line 63
@@ -1606,12 +1614,12 @@
 
     .line 64
     .line 65
-    invoke-direct {p2, p3, v3, p4}, LmEf;-><init>(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/view/View;)V
+    invoke-direct {p2, p3, v3, p4}, LIXf;-><init>(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/view/View;)V
 
     .line 66
     .line 67
     .line 68
-    iput-object p2, p1, Landroidx/appcompat/widget/SearchView;->y0:LmEf;
+    iput-object p2, p1, Landroidx/appcompat/widget/SearchView;->y0:LIXf;
 
     .line 69
     .line 70
@@ -1624,7 +1632,7 @@
 
     .line 74
     :cond_0
-    invoke-virtual {p2, p3, v3}, LmEf;->a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+    invoke-virtual {p2, p3, v3}, LIXf;->a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
     .line 75
     .line 76
@@ -1645,7 +1653,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0, p1, p2}, Lbma;->onMeasure(II)V
+    invoke-super {p0, p1, p2}, Lqya;->onMeasure(II)V
 
     .line 6
     .line 7
@@ -1923,7 +1931,7 @@
     move-result p2
 
     .line 136
-    invoke-super {p0, p1, p2}, Lbma;->onMeasure(II)V
+    invoke-super {p0, p1, p2}, Lqya;->onMeasure(II)V
 
     .line 137
     .line 138
@@ -1935,7 +1943,7 @@
     .locals 1
 
     .line 1
-    instance-of v0, p1, LlEf;
+    instance-of v0, p1, LHXf;
 
     .line 2
     .line 3
@@ -1952,11 +1960,11 @@
 
     .line 9
     :cond_0
-    check-cast p1, LlEf;
+    check-cast p1, LHXf;
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lt1;->a()Landroid/os/Parcelable;
+    invoke-virtual {p1}, LM1;->a()Landroid/os/Parcelable;
 
     .line 12
     .line 13
@@ -1969,7 +1977,7 @@
     .line 16
     .line 17
     .line 18
-    iget-boolean p1, p1, LlEf;->c:Z
+    iget-boolean p1, p1, LHXf;->c:Z
 
     .line 19
     .line 20
@@ -1998,11 +2006,11 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, LlEf;
+    new-instance v1, LHXf;
 
     .line 6
     .line 7
-    invoke-direct {v1, v0}, Lt1;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, LM1;-><init>(Landroid/os/Parcelable;)V
 
     .line 8
     .line 9
@@ -2011,7 +2019,7 @@
 
     .line 11
     .line 12
-    iput-boolean v0, v1, LlEf;->c:Z
+    iput-boolean v0, v1, LHXf;->c:Z
 
     .line 13
     .line 14

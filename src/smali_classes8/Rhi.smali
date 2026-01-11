@@ -1,180 +1,127 @@
-.class public final enum LRhi;
-.super Ljava/lang/Enum;
+.class public abstract synthetic LRhi;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LRhi;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
 
 
 # static fields
-.field public static final enum b:LRhi;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "TAB_SELECTION"
-    .end annotation
-.end field
-
-.field public static final enum c:LRhi;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SESSION_CLOSED"
-    .end annotation
-.end field
-
-.field public static final synthetic t:[LRhi;
-
-
-# instance fields
-.field public final a:I
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 3
 
     .line 1
-    new-instance v0, LRhi;
+    invoke-static {}, Lz1c;->values()[Lz1c;
 
     .line 2
     .line 3
-    const-string v1, "TAB_SELECTION"
-
     .line 4
+    move-result-object v0
+
     .line 5
-    const/4 v2, 0x0
+    array-length v0, v0
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, LRhi;-><init>(Ljava/lang/String;II)V
+    new-array v0, v0, [I
 
     .line 7
     .line 8
+    :try_start_0
+    sget-object v1, Lz1c;->X:Lz1c;
+
     .line 9
-    sput-object v0, LRhi;->b:LRhi;
-
     .line 10
-    .line 11
-    new-instance v1, LRhi;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
     .line 12
     .line 13
-    const-string v3, "SESSION_CLOSED"
+    move-result v1
 
     .line 14
+    const/4 v2, 0x1
+
     .line 15
-    const/4 v4, 0x1
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, LRhi;-><init>(Ljava/lang/String;II)V
-
     .line 17
+    :catch_0
+    :try_start_1
+    sget-object v1, Lz1c;->b:Lz1c;
+
     .line 18
     .line 19
-    sput-object v1, LRhi;->c:LRhi;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 20
     .line 21
-    const/4 v3, 0x2
-
     .line 22
-    new-array v3, v3, [LRhi;
+    move-result v1
 
     .line 23
+    const/4 v2, 0x2
+
     .line 24
-    aput-object v0, v3, v2
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 25
     .line 26
-    aput-object v1, v3, v4
+    :catch_1
+    :try_start_2
+    sget-object v1, Lz1c;->t:Lz1c;
 
     .line 27
     .line 28
-    sput-object v3, LRhi;->t:[LRhi;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 29
     .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    const/4 v2, 0x3
+
+    .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 34
+    .line 35
+    :catch_2
+    :try_start_3
+    sget-object v1, Lz1c;->Z:Lz1c;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 43
+    .line 44
+    :catch_3
+    sput-object v0, LRhi;->a:[I
+
+    .line 45
+    .line 46
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LRhi;->a:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LRhi;
-    .locals 1
-
-    .line 1
-    const-class v0, LRhi;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LRhi;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LRhi;
-    .locals 1
-
-    .line 1
-    sget-object v0, LRhi;->t:[LRhi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LRhi;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LRhi;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LRhi;->a:I
-
-    .line 2
-    .line 3
-    return v0
 .end method

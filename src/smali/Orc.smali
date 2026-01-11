@@ -1,668 +1,607 @@
-.class public final enum LOrc;
-.super Ljava/lang/Enum;
+.class public final LOrc;
+.super LSX3;
 .source "SourceFile"
 
-# interfaces
-.implements LcTb;
+
+# annotations
+.annotation runtime Lcom/snap/content/UriHandlerPathSpec;
+    value = "music/track"
+.end annotation
 
 
-# static fields
-.field public static final enum X:LOrc;
+# instance fields
+.field private final a:LpW3;
 
-.field public static final enum Y:LOrc;
+.field private final b:LDBe;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LDBe;"
+        }
+    .end annotation
+.end field
 
-.field public static final enum Z:LOrc;
-
-.field public static final enum a:LOrc;
-
-.field public static final enum b:LOrc;
-
-.field public static final enum c:LOrc;
-
-.field public static final enum e0:LOrc;
-
-.field public static final enum f0:LOrc;
-
-.field public static final enum g0:LOrc;
-
-.field public static final enum h0:LOrc;
-
-.field public static final enum i0:LOrc;
-
-.field public static final enum j0:LOrc;
-
-.field public static final enum k0:LOrc;
-
-.field public static final enum l0:LOrc;
-
-.field public static final enum m0:LOrc;
-
-.field public static final enum n0:LOrc;
-
-.field public static final enum o0:LOrc;
-
-.field public static final enum p0:LOrc;
-
-.field public static final synthetic q0:[LOrc;
-
-.field public static final enum t:LOrc;
+.field private final c:LRS9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 40
+.method public constructor <init>(LpW3;LDBe;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LpW3;",
+            "LDBe;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    const/16 v5, 0xd
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/16 v6, 0xc
+    .line 4
+    iput-object p1, p0, LOrc;->a:LpW3;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LOrc;->b:LDBe;
+
+    .line 7
+    .line 8
+    new-instance p1, LTfc;
+
+    .line 9
+    .line 10
+    const/16 p2, 0x14
+
+    .line 11
+    .line 12
+    invoke-direct {p1, p2, p0}, LTfc;-><init>(ILjava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    new-instance p2, LREi;
+
+    .line 16
+    .line 17
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object p2, p0, LOrc;->c:LRS9;
+
+    .line 21
+    .line 22
+    return-void
+.end method
+
+.method public static final synthetic d(LOrc;)LDBe;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, LOrc;->b:LDBe;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public static final synthetic e(LOrc;)LpW3;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, LOrc;->a:LpW3;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method private final f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LCPf;Ljava/util/Set;ZLFNj;)Lio/reactivex/rxjava3/core/Single;
+    .locals 18
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "LCPf;",
+            "Ljava/util/Set<",
+            "+",
+            "LpM1;",
+            ">;Z",
+            "LFNj;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LgY3;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Luxb;
+
+    .line 2
+    .line 3
+    sget-object v1, Lmeh;->s0:Lmeh;
 
     .line 4
     .line 5
-    const/16 v7, 0xb
+    sget-object v4, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 6
     .line 7
-    const/16 v8, 0xa
+    const/4 v5, 0x0
 
     .line 8
+    const/4 v6, 0x0
+
     .line 9
-    const/16 v9, 0x9
+    const/16 v7, 0xf0
 
     .line 10
     .line 11
-    const/16 v10, 0x8
+    move-object/from16 v2, p2
 
     .line 12
     .line 13
-    const/4 v11, 0x7
+    move-object/from16 v3, p3
 
     .line 14
-    const/4 v12, 0x6
-
     .line 15
-    const/4 v13, 0x5
+    invoke-direct/range {v0 .. v7}, Luxb;-><init>(Lmeh;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;I)V
 
     .line 16
-    const/4 v14, 0x4
-
     .line 17
-    const/4 v15, 0x3
-
     .line 18
-    const/4 v0, 0x2
+    invoke-direct/range {p0 .. p0}, LOrc;->h()Z
 
     .line 19
-    const/4 v1, 0x1
-
     .line 20
-    const/4 v2, 0x0
-
     .line 21
-    new-instance v3, LOrc;
+    move-result v1
 
     .line 22
+    if-eqz v1, :cond_0
+
     .line 23
-    const-string v4, "SURFACE_FETCH"
-
     .line 24
-    .line 25
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-object/from16 v1, p1
 
+    .line 25
     .line 26
+    move-object/from16 v2, p2
+
     .line 27
     .line 28
-    sput-object v3, LOrc;->a:LOrc;
+    move-object/from16 v3, p3
 
     .line 29
     .line 30
-    new-instance v4, LOrc;
+    move-object/from16 v4, p4
 
     .line 31
     .line 32
-    const/16 v21, 0x0
+    move-object/from16 v5, p5
 
     .line 33
     .line 34
-    const-string v2, "INITIAL_DISPLAY_LATENCY"
+    move/from16 v6, p6
 
     .line 35
     .line 36
-    invoke-direct {v4, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-object/from16 v8, p7
 
     .line 37
     .line 38
+    move-object v7, v0
+
     .line 39
-    sput-object v4, LOrc;->b:LOrc;
+    move-object/from16 v0, p0
 
     .line 40
     .line 41
-    new-instance v2, LOrc;
+    invoke-direct/range {v0 .. v8}, LOrc;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LCPf;Ljava/util/Set;ZLuxb;LFNj;)Lio/reactivex/rxjava3/core/Single;
 
     .line 42
     .line 43
-    const/16 v22, 0x1
-
     .line 44
+    move-result-object v1
+
     .line 45
-    const-string v1, "PAGE_OPEN"
+    return-object v1
 
     .line 46
-    .line 47
-    invoke-direct {v2, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :cond_0
+    invoke-virtual/range {p2 .. p2}, Ljava/lang/String;->length()I
 
+    .line 47
     .line 48
     .line 49
+    move-result v1
+
     .line 50
-    sput-object v2, LOrc;->c:LOrc;
+    const/4 v11, 0x0
 
     .line 51
+    if-lez v1, :cond_1
+
     .line 52
-    new-instance v1, LOrc;
-
     .line 53
+    new-instance v1, Lxe8;
+
     .line 54
-    const/16 v23, 0x2
-
     .line 55
+    move-object/from16 v12, p2
+
     .line 56
-    const-string v0, "PAGE_CLOSE"
-
     .line 57
-    .line 58
-    invoke-direct {v1, v0, v15}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-object/from16 v13, p3
 
+    .line 58
     .line 59
+    invoke-direct {v1, v12, v13}, Lxe8;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 60
     .line 61
-    sput-object v1, LOrc;->t:LOrc;
-
     .line 62
-    .line 63
-    new-instance v0, LOrc;
+    invoke-static {v0, v11, v1}, LrZ3;->C(Luxb;Ljava/lang/String;LUQ6;)LuQ5;
 
+    .line 63
     .line 64
     .line 65
-    const/16 v24, 0x3
+    move-result-object v1
 
     .line 66
-    .line 67
-    const-string v15, "PAGE_SESSION"
+    :goto_0
+    move-object/from16 v14, p0
 
+    .line 67
     .line 68
+    goto :goto_1
+
     .line 69
-    invoke-direct {v0, v15, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :cond_1
+    move-object/from16 v12, p2
 
     .line 70
     .line 71
+    move-object/from16 v13, p3
+
     .line 72
-    sput-object v0, LOrc;->X:LOrc;
-
     .line 73
-    .line 74
-    new-instance v15, LOrc;
+    invoke-static {v0, v11, v11}, LrZ3;->C(Luxb;Ljava/lang/String;LUQ6;)LuQ5;
 
+    .line 74
     .line 75
     .line 76
-    const/16 v25, 0x4
+    move-result-object v1
 
     .line 77
+    goto :goto_0
+
     .line 78
-    const-string v14, "TOGGLE_CHANGED"
+    :goto_1
+    iget-object v15, v14, LOrc;->a:LpW3;
 
     .line 79
     .line 80
-    invoke-direct {v15, v14, v13}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v16, Lrx5;
 
     .line 81
     .line 82
+    sget-object v2, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
+
     .line 83
-    sput-object v15, LOrc;->Y:LOrc;
-
     .line 84
+    new-instance v5, Ljava/util/HashMap;
+
     .line 85
-    new-instance v14, LOrc;
-
     .line 86
-    .line 87
-    const/16 v26, 0x5
+    invoke-direct {v5, v2}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
+    .line 87
     .line 88
     .line 89
-    const-string v13, "FRIENDS_RECEIVED"
+    new-instance v3, Ljava/util/HashMap;
 
     .line 90
     .line 91
-    invoke-direct {v14, v13, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    if-eqz v2, :cond_2
 
     .line 92
     .line 93
-    .line 94
-    sput-object v14, LOrc;->Z:LOrc;
+    invoke-direct {v3, v2}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
+    .line 94
     .line 95
     .line 96
-    new-instance v13, LOrc;
+    :goto_2
+    move-object v7, v3
 
     .line 97
+    goto :goto_3
+
     .line 98
-    const/16 v27, 0x6
+    :cond_2
+    invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     .line 99
     .line 100
-    const-string v12, "FRIENDS_ADDED"
-
     .line 101
+    goto :goto_2
+
     .line 102
-    invoke-direct {v13, v12, v11}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :goto_3
+    const-string v2, "original_url"
 
     .line 103
     .line 104
+    move-object/from16 v3, p1
+
     .line 105
-    sput-object v13, LOrc;->e0:LOrc;
-
     .line 106
-    .line 107
-    new-instance v12, LOrc;
+    invoke-interface {v7, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 107
     .line 108
     .line 109
-    const/16 v28, 0x7
+    new-instance v2, LhLg;
 
     .line 110
     .line 111
-    const-string v11, "FEATURE_SESSION_TIME"
+    const/4 v9, 0x0
 
     .line 112
+    const/4 v10, 0x0
+
     .line 113
-    invoke-direct {v12, v11, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v4, 0x1
 
     .line 114
+    const/4 v6, 0x0
+
     .line 115
+    const/4 v8, 0x1
+
     .line 116
-    sput-object v12, LOrc;->f0:LOrc;
+    invoke-direct/range {v2 .. v10}, LhLg;-><init>(Ljava/lang/String;ILjava/util/HashMap;Ljava/lang/Object;Ljava/util/HashMap;ZZLjava/lang/Integer;)V
 
     .line 117
     .line 118
-    new-instance v11, LOrc;
-
     .line 119
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
     .line 120
-    const/16 v29, 0x8
-
     .line 121
-    .line 122
-    const-string v10, "FEATURE_TIME_OUT"
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
+    .line 122
     .line 123
     .line 124
-    invoke-direct {v11, v10, v9}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-static {v0, v11}, LrZ3;->g(Luxb;Ljava/lang/String;)LDi7;
 
     .line 125
     .line 126
     .line 127
-    sput-object v11, LOrc;->g0:LOrc;
+    move-result-object v11
 
     .line 128
+    move-object v2, v15
+
     .line 129
-    new-instance v10, LOrc;
+    const/4 v15, 0x0
 
     .line 130
+    move-object v3, v2
+
     .line 131
-    const/16 v30, 0x9
+    move-object/from16 v2, v16
 
     .line 132
     .line 133
-    const-string v9, "NETWORK_LATENCY"
+    const/16 v16, 0x0
 
     .line 134
     .line 135
-    invoke-direct {v10, v9, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v5, 0x0
 
     .line 136
+    const/4 v6, 0x0
+
     .line 137
+    const/4 v12, 0x0
+
     .line 138
-    sput-object v10, LOrc;->h0:LOrc;
+    const/4 v13, 0x0
 
     .line 139
+    const/4 v14, 0x0
+
     .line 140
-    new-instance v9, LOrc;
+    const/16 v17, 0x7e0c
 
     .line 141
     .line 142
-    const/16 v31, 0xa
+    move-object/from16 v9, p4
 
     .line 143
     .line 144
-    const-string v8, "FAILED"
+    move-object/from16 v10, p5
 
     .line 145
     .line 146
-    invoke-direct {v9, v8, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-object/from16 v8, p7
 
     .line 147
     .line 148
+    move-object v7, v1
+
     .line 149
-    sput-object v9, LOrc;->i0:LOrc;
+    move-object v1, v3
 
     .line 150
+    move-object/from16 v3, p1
+
     .line 151
-    new-instance v8, LOrc;
-
     .line 152
-    .line 153
-    const/16 v32, 0xb
+    invoke-direct/range {v2 .. v17}, Lrx5;-><init>(Ljava/lang/String;Lio/reactivex/rxjava3/core/Single;Llz1;LNX3;Lxud;LWY3;LCPf;Ljava/util/Set;LDi7;ZLjava/lang/String;Ljava/lang/String;LiV3;LpXd;I)V
 
+    .line 153
     .line 154
     .line 155
-    const-string v7, "SUCCEEDED"
+    invoke-interface {v1, v2}, LpW3;->i(LOX3;)LzKg;
 
     .line 156
     .line 157
-    invoke-direct {v8, v7, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 158
+    move-result-object v1
+
     .line 159
+    iget-object v1, v1, LzKg;->a:Lio/reactivex/rxjava3/core/Single;
+
     .line 160
-    sput-object v8, LOrc;->j0:LOrc;
-
     .line 161
+    move/from16 v9, p6
+
     .line 162
-    new-instance v7, LOrc;
-
     .line 163
-    .line 164
-    const/16 v33, 0xc
+    invoke-static {v1, v9}, LCz9;->H(Lio/reactivex/rxjava3/core/Single;Z)Lio/reactivex/rxjava3/core/Single;
 
+    .line 164
     .line 165
     .line 166
-    const-string v6, "PAGE_LOCATION_LATENCY"
+    move-result-object v10
 
     .line 167
+    move-object v3, v0
+
     .line 168
-    invoke-direct {v7, v6, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v0, Lwu1;
 
     .line 169
     .line 170
+    move-object/from16 v4, p0
+
     .line 171
-    sput-object v7, LOrc;->k0:LOrc;
-
     .line 172
+    move-object/from16 v5, p1
+
     .line 173
-    new-instance v6, LOrc;
-
     .line 174
+    move-object/from16 v1, p2
+
     .line 175
-    const/16 v34, 0xd
-
     .line 176
+    move-object/from16 v2, p3
+
     .line 177
-    const-string v5, "APP_BACKGROUNDED"
-
     .line 178
+    move-object/from16 v7, p4
+
     .line 179
-    move-object/from16 v35, v0
-
     .line 180
+    move-object/from16 v8, p5
+
     .line 181
-    const/16 v0, 0xe
-
     .line 182
-    .line 183
-    invoke-direct {v6, v5, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-object/from16 v6, p7
 
+    .line 183
     .line 184
+    invoke-direct/range {v0 .. v9}, Lwu1;-><init>(Ljava/lang/String;Ljava/lang/String;Luxb;LOrc;Ljava/lang/String;LFNj;LCPf;Ljava/util/Set;Z)V
+
     .line 185
     .line 186
-    sput-object v6, LOrc;->l0:LOrc;
-
     .line 187
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
     .line 188
-    new-instance v0, LOrc;
-
     .line 189
-    .line 190
-    const-string v5, "APP_FOREGROUNDED"
+    invoke-direct {v1, v10, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 190
     .line 191
     .line 192
-    move-object/from16 v36, v1
-
-    .line 193
-    .line 194
-    const/16 v1, 0xf
-
-    .line 195
-    .line 196
-    invoke-direct {v0, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 197
-    .line 198
-    .line 199
-    sput-object v0, LOrc;->m0:LOrc;
-
-    .line 200
-    .line 201
-    new-instance v1, LOrc;
-
-    .line 202
-    .line 203
-    const-string v5, "NUM_FRIENDS_ADDED"
-
-    .line 204
-    .line 205
-    move-object/from16 v37, v0
-
-    .line 206
-    .line 207
-    const/16 v0, 0x10
-
-    .line 208
-    .line 209
-    invoke-direct {v1, v5, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 210
-    .line 211
-    .line 212
-    sput-object v1, LOrc;->n0:LOrc;
-
-    .line 213
-    .line 214
-    new-instance v0, LOrc;
-
-    .line 215
-    .line 216
-    const-string v5, "NUM_FRIENDS_IMPRESSED"
-
-    .line 217
-    .line 218
-    move-object/from16 v38, v1
-
-    .line 219
-    .line 220
-    const/16 v1, 0x11
-
-    .line 221
-    .line 222
-    invoke-direct {v0, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 223
-    .line 224
-    .line 225
-    sput-object v0, LOrc;->o0:LOrc;
-
-    .line 226
-    .line 227
-    new-instance v1, LOrc;
-
-    .line 228
-    .line 229
-    const-string v5, "BIND_SERVICE_ERROR"
-
-    .line 230
-    .line 231
-    move-object/from16 v39, v0
-
-    .line 232
-    .line 233
-    const/16 v0, 0x12
-
-    .line 234
-    .line 235
-    invoke-direct {v1, v5, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 236
-    .line 237
-    .line 238
-    sput-object v1, LOrc;->p0:LOrc;
-
-    .line 239
-    .line 240
-    const/16 v0, 0x13
-
-    .line 241
-    .line 242
-    new-array v0, v0, [LOrc;
-
-    .line 243
-    .line 244
-    aput-object v3, v0, v21
-
-    .line 245
-    .line 246
-    aput-object v4, v0, v22
-
-    .line 247
-    .line 248
-    aput-object v2, v0, v23
-
-    .line 249
-    .line 250
-    aput-object v36, v0, v24
-
-    .line 251
-    .line 252
-    aput-object v35, v0, v25
-
-    .line 253
-    .line 254
-    aput-object v15, v0, v26
-
-    .line 255
-    .line 256
-    aput-object v14, v0, v27
-
-    .line 257
-    .line 258
-    aput-object v13, v0, v28
-
-    .line 259
-    .line 260
-    aput-object v12, v0, v29
-
-    .line 261
-    .line 262
-    aput-object v11, v0, v30
-
-    .line 263
-    .line 264
-    aput-object v10, v0, v31
-
-    .line 265
-    .line 266
-    aput-object v9, v0, v32
-
-    .line 267
-    .line 268
-    aput-object v8, v0, v33
-
-    .line 269
-    .line 270
-    aput-object v7, v0, v34
-
-    .line 271
-    .line 272
-    const/16 v20, 0xe
-
-    .line 273
-    .line 274
-    aput-object v6, v0, v20
-
-    .line 275
-    .line 276
-    const/16 v19, 0xf
-
-    .line 277
-    .line 278
-    aput-object v37, v0, v19
-
-    .line 279
-    .line 280
-    const/16 v18, 0x10
-
-    .line 281
-    .line 282
-    aput-object v38, v0, v18
-
-    .line 283
-    .line 284
-    const/16 v17, 0x11
-
-    .line 285
-    .line 286
-    aput-object v39, v0, v17
-
-    .line 287
-    .line 288
-    const/16 v16, 0x12
-
-    .line 289
-    .line 290
-    aput-object v1, v0, v16
-
-    .line 291
-    .line 292
-    sput-object v0, LOrc;->q0:[LOrc;
-
-    .line 293
-    .line 294
-    return-void
+    return-object v1
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LOrc;
-    .locals 1
+.method public static synthetic g(LOrc;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LCPf;Ljava/util/Set;ZLFNj;ILjava/lang/Object;)Lio/reactivex/rxjava3/core/Single;
+    .locals 9
 
     .line 1
-    const-class v0, LOrc;
+    and-int/lit8 v0, p8, 0x40
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    move-result-object p0
+    sget-object v0, Lrrc;->r:Lrrc;
 
+    .line 6
     .line 7
-    check-cast p0, LOrc;
+    move-object v8, v0
 
     .line 8
+    :goto_0
+    move-object v1, p0
+
     .line 9
+    move-object v2, p1
+
+    .line 10
+    move-object v3, p2
+
+    .line 11
+    move-object v4, p3
+
+    .line 12
+    move-object v5, p4
+
+    .line 13
+    move-object v6, p5
+
+    .line 14
+    move v7, p6
+
+    .line 15
+    goto :goto_1
+
+    .line 16
+    :cond_0
+    move-object/from16 v8, p7
+
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :goto_1
+    invoke-direct/range {v1 .. v8}, LOrc;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LCPf;Ljava/util/Set;ZLFNj;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p0
+
+    .line 23
     return-object p0
 .end method
 
-.method public static values()[LOrc;
+.method private final h()Z
     .locals 1
 
     .line 1
-    sget-object v0, LOrc;->q0:[LOrc;
+    iget-object v0, p0, LOrc;->c:LRS9;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-interface {v0}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -670,85 +609,581 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, [LOrc;
+    check-cast v0, Ljava/lang/Boolean;
 
     .line 8
     .line 9
-    return-object v0
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method private final j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LCPf;Ljava/util/Set;ZLuxb;LFNj;)Lio/reactivex/rxjava3/core/Single;
+    .locals 21
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "LCPf;",
+            "Ljava/util/Set<",
+            "+",
+            "LpM1;",
+            ">;Z",
+            "Luxb;",
+            "LFNj;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LgY3;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    move-object/from16 v0, p2
+
+    .line 2
+    .line 3
+    move-object/from16 v1, p3
+
+    .line 4
+    .line 5
+    move-object/from16 v2, p7
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v3
+
+    .line 11
+    const/4 v4, 0x0
+
+    .line 12
+    if-lez v3, :cond_2
+
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v3
+
+    .line 18
+    if-lez v3, :cond_2
+
+    .line 19
+    .line 20
+    new-instance v3, Lhz2;
+
+    .line 21
+    .line 22
+    invoke-direct {v3, v0, v1}, Lhz2;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance v5, Lxe8;
+
+    .line 26
+    .line 27
+    invoke-direct {v5, v0, v1}, Lxe8;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v5}, Lxe8;->d()[B
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    if-eqz v0, :cond_0
+
+    .line 35
+    .line 36
+    array-length v0, v0
+
+    .line 37
+    const/16 v1, 0xc
+
+    .line 38
+    .line 39
+    if-ne v0, v1, :cond_0
+
+    .line 40
+    .line 41
+    invoke-static {v2, v4, v5}, LrZ3;->C(Luxb;Ljava/lang/String;LUQ6;)LuQ5;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    :goto_0
+    move-object v10, v0
+
+    .line 46
+    move-object/from16 v0, p0
+
+    .line 47
+    .line 48
+    goto :goto_1
+
+    .line 49
+    :cond_0
+    invoke-virtual {v3}, Lhz2;->d()[B
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v0
+
+    .line 53
+    array-length v0, v0
+
+    .line 54
+    const/16 v1, 0x10
+
+    .line 55
+    .line 56
+    if-ne v0, v1, :cond_1
+
+    .line 57
+    .line 58
+    invoke-static {v2, v4, v3}, LrZ3;->C(Luxb;Ljava/lang/String;LUQ6;)LuQ5;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v0
+
+    .line 62
+    goto :goto_0
+
+    .line 63
+    :cond_1
+    invoke-static {v2, v4, v4}, LrZ3;->C(Luxb;Ljava/lang/String;LUQ6;)LuQ5;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v0
+
+    .line 67
+    goto :goto_0
+
+    .line 68
+    :cond_2
+    invoke-static {v2, v4, v4}, LrZ3;->C(Luxb;Ljava/lang/String;LUQ6;)LuQ5;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v0
+
+    .line 72
+    goto :goto_0
+
+    .line 73
+    :goto_1
+    iget-object v1, v0, LOrc;->a:LpW3;
+
+    .line 74
+    .line 75
+    new-instance v5, Lrx5;
+
+    .line 76
+    .line 77
+    sget-object v3, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
+
+    .line 78
+    .line 79
+    new-instance v14, Ljava/util/HashMap;
+
+    .line 80
+    .line 81
+    invoke-direct {v14, v3}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+
+    .line 82
+    .line 83
+    .line 84
+    new-instance v6, Ljava/util/HashMap;
+
+    .line 85
+    .line 86
+    if-eqz v3, :cond_3
+
+    .line 87
+    .line 88
+    invoke-direct {v6, v3}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+
+    .line 89
+    .line 90
+    .line 91
+    goto :goto_2
+
+    .line 92
+    :cond_3
+    invoke-direct {v6}, Ljava/util/HashMap;-><init>()V
+
+    .line 93
+    .line 94
+    .line 95
+    :goto_2
+    const-string v3, "original_url"
+
+    .line 96
+    .line 97
+    move-object/from16 v12, p1
+
+    .line 98
+    .line 99
+    invoke-interface {v6, v3, v12}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 100
+    .line 101
+    .line 102
+    new-instance v11, LhLg;
+
+    .line 103
+    .line 104
+    const/16 v18, 0x0
+
+    .line 105
+    .line 106
+    const/16 v19, 0x0
+
+    .line 107
+    .line 108
+    const/4 v13, 0x1
+
+    .line 109
+    const/4 v15, 0x0
+
+    .line 110
+    const/16 v17, 0x1
+
+    .line 111
+    .line 112
+    move-object/from16 v16, v6
+
+    .line 113
+    .line 114
+    invoke-direct/range {v11 .. v19}, LhLg;-><init>(Ljava/lang/String;ILjava/util/HashMap;Ljava/lang/Object;Ljava/util/HashMap;ZZLjava/lang/Integer;)V
+
+    .line 115
+    .line 116
+    .line 117
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 118
+    .line 119
+    invoke-direct {v7, v11}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
+    .line 120
+    .line 121
+    .line 122
+    invoke-static {v2, v4}, LrZ3;->g(Luxb;Ljava/lang/String;)LDi7;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object v14
+
+    .line 126
+    const/16 v18, 0x0
+
+    .line 127
+    .line 128
+    const/16 v19, 0x0
+
+    .line 129
+    .line 130
+    const/4 v8, 0x0
+
+    .line 131
+    const/4 v9, 0x0
+
+    .line 132
+    const/4 v15, 0x0
+
+    .line 133
+    const/16 v16, 0x0
+
+    .line 134
+    .line 135
+    const/16 v17, 0x0
+
+    .line 136
+    .line 137
+    const/16 v20, 0x7e0c
+
+    .line 138
+    .line 139
+    move-object/from16 v6, p1
+
+    .line 140
+    .line 141
+    move-object/from16 v12, p4
+
+    .line 142
+    .line 143
+    move-object/from16 v13, p5
+
+    .line 144
+    .line 145
+    move-object/from16 v11, p8
+
+    .line 146
+    .line 147
+    invoke-direct/range {v5 .. v20}, Lrx5;-><init>(Ljava/lang/String;Lio/reactivex/rxjava3/core/Single;Llz1;LNX3;Lxud;LWY3;LCPf;Ljava/util/Set;LDi7;ZLjava/lang/String;Ljava/lang/String;LiV3;LpXd;I)V
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-interface {v1, v5}, LpW3;->i(LOX3;)LzKg;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object v1
+
+    .line 154
+    iget-object v1, v1, LzKg;->a:Lio/reactivex/rxjava3/core/Single;
+
+    .line 155
+    .line 156
+    move/from16 v2, p6
+
+    .line 157
+    .line 158
+    invoke-static {v1, v2}, LCz9;->H(Lio/reactivex/rxjava3/core/Single;Z)Lio/reactivex/rxjava3/core/Single;
+
+    .line 159
+    .line 160
+    .line 161
+    move-result-object v1
+
+    .line 162
+    return-object v1
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Ljava/lang/String;)LqTb;
-    .locals 0
+.method public c(Landroid/net/Uri;LCPf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/net/Uri;",
+            "LCPf;",
+            "Z",
+            "Ljava/util/Set<",
+            "+",
+            "LpM1;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LgY3;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    invoke-static {p0, p1, p2}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
+    const-string v0, "url"
 
     .line 2
     .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final b(Ljava/lang/String;Ljava/lang/Enum;)LqTb;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->W(LcTb;Ljava/lang/String;Ljava/lang/Enum;)LqTb;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final c()LqTb;
-    .locals 1
-
-    .line 1
-    new-instance v0, LqTb;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p0}, LqTb;-><init>(LcTb;)V
+    invoke-virtual {p1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    return-object v0
-.end method
+    move-result-object v2
 
-.method public final d(Ljava/lang/String;Z)LqTb;
-    .locals 0
+    .line 7
+    const-string v0, "encryption_key"
 
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->Y(LcTb;Ljava/lang/String;Z)LqTb;
+    .line 8
+    .line 9
+    invoke-virtual {p1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 2
-    .line 3
-    .line 4
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const-string v1, ""
+
+    .line 14
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
+    move-object v3, v1
+
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    move-object v3, v0
+
+    .line 20
+    :goto_0
+    const-string v0, "encryption_iv"
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
     move-result-object p1
 
-    .line 5
+    .line 26
+    if-nez p1, :cond_1
+
+    .line 27
+    .line 28
+    move-object v4, v1
+
+    .line 29
+    goto :goto_1
+
+    .line 30
+    :cond_1
+    move-object v4, p1
+
+    .line 31
+    :goto_1
+    const/4 v10, 0x0
+
+    .line 32
+    const/4 v8, 0x0
+
+    .line 33
+    const/16 v9, 0x40
+
+    .line 34
+    .line 35
+    move-object v1, p0
+
+    .line 36
+    move-object v5, p2
+
+    .line 37
+    move v7, p3
+
+    .line 38
+    move-object v6, p4
+
+    .line 39
+    invoke-static/range {v1 .. v10}, LOrc;->g(LOrc;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LCPf;Ljava/util/Set;ZLFNj;ILjava/lang/Object;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p1
+
+    .line 43
+    if-nez p1, :cond_2
+
+    .line 44
+    .line 45
+    new-instance p1, Ljava/lang/Throwable;
+
+    .line 46
+    .line 47
+    const-string p2, "something went wrong"
+
+    .line 48
+    .line 49
+    invoke-direct {p1, p2}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
+
+    .line 50
+    .line 51
+    .line 52
+    new-instance p2, LGc7;
+
+    .line 53
+    .line 54
+    new-instance p3, LXc7;
+
+    .line 55
+    .line 56
+    sget-object p4, LlY3;->b:LlY3;
+
+    .line 57
+    .line 58
+    const/4 v0, 0x0
+
+    .line 59
+    invoke-direct {p3, p4, p1, v0}, LXc7;-><init>(LlY3;Ljava/lang/Throwable;Lyhf;)V
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-direct {p2, p3, v0}, LGc7;-><init>(LXc7;LX7c;)V
+
+    .line 63
+    .line 64
+    .line 65
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 66
+    .line 67
+    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
+    .line 68
+    .line 69
+    .line 70
+    :cond_2
     return-object p1
 .end method
 
-.method public final f()Ljava/lang/String;
-    .locals 1
+.method public final i(Landroid/net/Uri;LCPf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/net/Uri;",
+            "LCPf;",
+            "Z",
+            "Ljava/util/Set<",
+            "+",
+            "LpM1;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LgY3;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    sget-object v0, Lhcd;->D2:Lhcd;
+    const-string v0, "url"
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -756,16 +1191,102 @@
     move-result-object v0
 
     .line 7
-    return-object v0
-.end method
+    const-string v1, ""
 
-.method public final g()Lhcd;
-    .locals 1
+    .line 8
+    .line 9
+    if-nez v0, :cond_0
 
-    .line 1
-    sget-object v0, Lhcd;->D2:Lhcd;
+    .line 10
+    .line 11
+    move-object v3, v1
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    move-object v3, v0
+
+    .line 14
+    :goto_0
+    const-string v0, "key"
+
+    .line 15
+    .line 16
+    invoke-virtual {p1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    if-nez v0, :cond_1
+
+    .line 21
+    .line 22
+    move-object v4, v1
+
+    .line 23
+    goto :goto_1
+
+    .line 24
+    :cond_1
+    move-object v4, v0
+
+    .line 25
+    :goto_1
+    const-string v0, "iv"
+
+    .line 26
+    .line 27
+    invoke-virtual {p1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p1
+
+    .line 31
+    if-nez p1, :cond_2
+
+    .line 32
+    .line 33
+    move-object v5, v1
+
+    .line 34
+    goto :goto_2
+
+    .line 35
+    :cond_2
+    move-object v5, p1
+
+    .line 36
+    :goto_2
+    sget-object v9, Ljs9;->r:Ljs9;
+
+    .line 37
+    .line 38
+    move-object v2, p0
+
+    .line 39
+    move-object v6, p2
+
+    .line 40
+    move v8, p3
+
+    .line 41
+    move-object v7, p4
+
+    .line 42
+    invoke-direct/range {v2 .. v9}, LOrc;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LCPf;Ljava/util/Set;ZLFNj;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    return-object p1
 .end method

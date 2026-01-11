@@ -1,5 +1,5 @@
 .class public final Lcom/snap/discoverfeed/playback/opera/spotlight/LastViewedStoryClearedEvent;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -51,7 +51,7 @@
 
     iget-object p1, p1, Lcom/snap/discoverfeed/playback/opera/spotlight/LastViewedStoryClearedEvent;->b:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -100,7 +100,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14

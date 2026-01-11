@@ -1,3 +1,6 @@
-.class public final LsY9;
-.super LxY9;
+.class public interface abstract LsY9;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LCu9;

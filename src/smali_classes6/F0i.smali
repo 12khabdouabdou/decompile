@@ -1,81 +1,98 @@
-.class public abstract synthetic LF0i;
-.super Ljava/lang/Object;
+.class public final LF0i;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'accessibilityId\':s,\'key\':s,\'opacity\':d@?,\'scale\':d@?,\'itemImageSize\':r?<e>:\'[0]\',\'size\':r?:\'[1]\',\'displaySize\':r?:\'[1]\',\'onTap\':f?()"
+    typeReferences = {
+        Lcom/snap/modules/creative_tools/item_instance/SCItemInstanceViewImageSize;,
+        Lcom/snap/client/composer/Size;
+    }
+.end annotation
+
+
+# instance fields
+.field private _accessibilityId:Ljava/lang/String;
+
+.field private _displaySize:Lcom/snap/client/composer/Size;
+
+.field private _itemImageSize:Lcom/snap/modules/creative_tools/item_instance/SCItemInstanceViewImageSize;
+
+.field private _key:Ljava/lang/String;
+
+.field private _onTap:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _opacity:Ljava/lang/Double;
+
+.field private _scale:Ljava/lang/Double;
+
+.field private _size:Lcom/snap/client/composer/Size;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Double;Ljava/lang/Double;Lcom/snap/modules/creative_tools/item_instance/SCItemInstanceViewImageSize;Lcom/snap/client/composer/Size;Lcom/snap/client/composer/Size;Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/lang/Double;",
+            "Ljava/lang/Double;",
+            "Lcom/snap/modules/creative_tools/item_instance/SCItemInstanceViewImageSize;",
+            "Lcom/snap/client/composer/Size;",
+            "Lcom/snap/client/composer/Size;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    invoke-static {}, LlYd;->values()[LlYd;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, LF0i;->_accessibilityId:Ljava/lang/String;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p2, p0, LF0i;->_key:Ljava/lang/String;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, LlYd;->t:LlYd;
+    iput-object p3, p0, LF0i;->_opacity:Ljava/lang/Double;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iput-object p4, p0, LF0i;->_scale:Ljava/lang/Double;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    iput-object p5, p0, LF0i;->_itemImageSize:Lcom/snap/modules/creative_tools/item_instance/SCItemInstanceViewImageSize;
 
+    .line 13
     .line 14
-    const/4 v2, 0x1
+    iput-object p6, p0, LF0i;->_size:Lcom/snap/client/composer/Size;
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
+    iput-object p7, p0, LF0i;->_displaySize:Lcom/snap/client/composer/Size;
+
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, LlYd;->c:LlYd;
-
     .line 18
+    iput-object p8, p0, LF0i;->_onTap:Lkotlin/jvm/functions/Function0;
+
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    sput-object v0, LF0i;->a:[I
-
-    .line 27
-    .line 28
     return-void
 .end method

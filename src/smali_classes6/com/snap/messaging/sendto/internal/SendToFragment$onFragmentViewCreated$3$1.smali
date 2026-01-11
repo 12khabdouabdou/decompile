@@ -26,11 +26,11 @@
 
 
 # virtual methods
-.method public final B0(LHGe;)V
+.method public final G0(LqYe;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->B0(LHGe;)V
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->G0(LqYe;)V
 
     .line 2
     .line 3
@@ -55,7 +55,7 @@
 
     .line 13
     .line 14
-    sget-object v0, Li7j;->a:Li7j;
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 15
     .line 16

@@ -1,72 +1,58 @@
-.class public final synthetic Ldv5;
-.super Lj28;
+.class public final Ldv5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
-# static fields
-.field public static final f0:Ldv5;
+# instance fields
+.field public final synthetic a:Lgv5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(Lgv5;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ldv5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "<init>(Landroid/view/View;)V"
-
     .line 4
+    iput-object p1, p0, Ldv5;->a:Lgv5;
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/4 v1, 0x1
-
-    .line 7
-    const-class v3, Lbv5;
-
-    .line 8
-    .line 9
-    const-string v4, "<init>"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, Ldv5;->f0:Ldv5;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final accept(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    check-cast p1, Landroid/view/View;
+    check-cast p1, Lpu2;
 
     .line 2
     .line 3
-    new-instance v0, Lbv5;
+    iget-object p1, p0, Ldv5;->a:Lgv5;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1}, Lbv5;-><init>(Landroid/view/View;)V
+    iget-object p1, p1, Lgv5;->Y:LHP;
 
     .line 6
     .line 7
+    sget-object v0, LEP$I;->d:LEP$I;
+
     .line 8
-    return-object v0
+    .line 9
+    invoke-interface {p1, v0}, LHP;->a(LEP;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
 .end method

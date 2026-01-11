@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
-.super Lz34;
+.super Lj84;
 .source "SourceFile"
 
 
@@ -9,7 +9,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lz34;"
+        "Lj84;"
     }
 .end annotation
 
@@ -31,7 +31,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    sget-object v0, Ldve;->h:[I
+    sget-object v0, LLMe;->h:[I
 
     .line 4
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -72,11 +72,11 @@
     throw p1
 .end method
 
-.method public final c(LC34;)V
+.method public final c(Lm84;)V
     .locals 1
 
     .line 1
-    iget v0, p1, LC34;->h:I
+    iget v0, p1, Lm84;->h:I
 
     .line 2
     .line 3
@@ -88,7 +88,7 @@
 
     .line 6
     .line 7
-    iput v0, p1, LC34;->h:I
+    iput v0, p1, Lm84;->h:I
 
     .line 8
     .line 9

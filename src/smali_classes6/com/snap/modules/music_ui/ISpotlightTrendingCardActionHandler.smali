@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRY8;
+    proxyClass = LA69;
     schema = "\'launchSpotlightTrendingSnap\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/music/core/composer/SelectedSpotlightTrendingCard;

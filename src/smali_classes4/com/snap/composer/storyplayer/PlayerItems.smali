@@ -1,14 +1,14 @@
 .class public final Lcom/snap/composer/storyplayer/PlayerItems;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'items\':a<r:\'[0]\'>,\'startingIndex\':d"
     typeReferences = {
-        LBzd;
+        LNQd;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LBzd;",
+            "LNQd;",
             ">;"
         }
     .end annotation
@@ -34,7 +34,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LBzd;",
+            "LNQd;",
             ">;D)V"
         }
     .end annotation

@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field public final l0:Lobi;
+.field public final l0:LiAi;
 
 
 # direct methods
@@ -46,17 +46,17 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/snap/ui/view/DeprecatedRoundedImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    new-instance p1, LfS;
+    new-instance p1, LnU;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p2, p0}, LfS;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LnU;-><init>(ILjava/lang/Object;)V
 
-    invoke-static {p1}, LCq9;->c1(Lobi;)Lobi;
+    invoke-static {p1}, LIjj;->W(LiAi;)LiAi;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/snap/messaging/sendto/internal/ui/view/AnimatedDeprecatedRoundedImageView;->l0:Lobi;
+    iput-object p1, p0, Lcom/snap/messaging/sendto/internal/ui/view/AnimatedDeprecatedRoundedImageView;->l0:LiAi;
 
     return-void
 .end method
@@ -75,7 +75,7 @@
     move-result v0
 
     .line 5
-    iget-object v1, p0, Lcom/snap/messaging/sendto/internal/ui/view/AnimatedDeprecatedRoundedImageView;->l0:Lobi;
+    iget-object v1, p0, Lcom/snap/messaging/sendto/internal/ui/view/AnimatedDeprecatedRoundedImageView;->l0:LiAi;
 
     .line 6
     .line 7
@@ -83,7 +83,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v1}, Lobi;->get()Ljava/lang/Object;
+    invoke-interface {v1}, LiAi;->get()Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -91,7 +91,7 @@
     move-result-object v0
 
     .line 13
-    check-cast v0, LFph;
+    check-cast v0, LgNh;
 
     .line 14
     .line 15
@@ -99,7 +99,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, v2, v3}, LFph;->f(D)V
+    invoke-virtual {v0, v2, v3}, LgNh;->f(D)V
 
     .line 18
     .line 19
@@ -113,7 +113,7 @@
     .line 23
     .line 24
     :cond_0
-    invoke-interface {v1}, Lobi;->get()Ljava/lang/Object;
+    invoke-interface {v1}, LiAi;->get()Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -121,7 +121,7 @@
     move-result-object v0
 
     .line 28
-    check-cast v0, LFph;
+    check-cast v0, LgNh;
 
     .line 29
     .line 30
@@ -129,7 +129,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {v0, v1, v2}, LFph;->g(D)V
+    invoke-virtual {v0, v1, v2}, LgNh;->g(D)V
 
     .line 33
     .line 34

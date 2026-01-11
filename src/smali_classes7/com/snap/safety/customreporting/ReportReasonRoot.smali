@@ -1,14 +1,14 @@
 .class public final Lcom/snap/safety/customreporting/ReportReasonRoot;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'reasonId\':s,\'subheaderText\':s,\'sections\':a<r:\'[0]\'>"
     typeReferences = {
-        LOXe;
+        LGff;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LOXe;",
+            "LGff;",
             ">;"
         }
     .end annotation
@@ -38,7 +38,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "LOXe;",
+            "LGff;",
             ">;)V"
         }
     .end annotation

@@ -167,7 +167,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Llva;->L(I)I
+    invoke-static {v0}, LzHa;->L(I)I
 
     .line 4
     .line 5

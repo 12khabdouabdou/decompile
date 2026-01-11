@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -21,7 +21,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -39,7 +39,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -64,7 +64,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -127,7 +127,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -140,7 +140,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
 
     move-result-object p0
 
@@ -151,7 +151,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -190,7 +190,7 @@
     const/4 v0, 0x0
 
     .line 8
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 9
     .line 10
@@ -208,7 +208,7 @@
     .locals 4
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -257,7 +257,7 @@
     const/4 v3, 0x1
 
     .line 23
-    invoke-static {v3, v2}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v2}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 24
     .line 25
@@ -283,7 +283,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -292,14 +292,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -310,7 +310,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -321,7 +321,7 @@
     if-eq v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -331,7 +331,7 @@
 
     .line 4
     :cond_1
-    invoke-static {p1, v1}, Ldw8;->E(Lqa3;I)I
+    invoke-static {p1, v1}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
@@ -374,10 +374,10 @@
     aput-object v1, v4, v3
 
     .line 9
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 10
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
@@ -392,7 +392,7 @@
     aput-object v0, v4, v3
 
     .line 12
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 13
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters;->parameters:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$AppActionTriggerParameters$Parameter;
@@ -404,7 +404,7 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -454,7 +454,7 @@
     const/4 v2, 0x1
 
     .line 19
-    invoke-virtual {p1, v2, v1}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v1}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 20
     .line 21
@@ -468,7 +468,7 @@
 
     .line 25
     :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 26
     .line 27

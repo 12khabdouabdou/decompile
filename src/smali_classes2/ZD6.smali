@@ -1,308 +1,105 @@
 .class public final LZD6;
-.super Ljd7;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LWe5;
 
-# instance fields
-.field public final synthetic c:I
+
+# static fields
+.field public static final a:LZD6;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    iput p1, p0, LZD6;->c:I
+    new-instance v0, LZD6;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LZD6;->a:LZD6;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final f(Ljava/lang/Object;)F
+.method public final a()Landroid/net/Uri;
     .locals 1
 
     .line 1
-    iget v0, p0, LZD6;->c:I
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, Landroid/view/View;
-
-    .line 7
-    .line 8
-    invoke-virtual {p1}, Landroid/view/View;->getX()F
-
-    .line 9
-    .line 10
-    .line 11
-    move-result p1
-
-    .line 12
-    return p1
-
-    .line 13
-    :pswitch_0
-    check-cast p1, Landroid/view/View;
-
-    .line 14
-    .line 15
-    invoke-virtual {p1}, Landroid/view/View;->getRotationY()F
-
-    .line 16
-    .line 17
-    .line 18
-    move-result p1
-
-    .line 19
-    return p1
-
-    .line 20
-    :pswitch_1
-    check-cast p1, Landroid/view/View;
-
-    .line 21
-    .line 22
-    invoke-virtual {p1}, Landroid/view/View;->getRotationX()F
-
-    .line 23
-    .line 24
-    .line 25
-    move-result p1
-
-    .line 26
-    return p1
-
-    .line 27
-    :pswitch_2
-    check-cast p1, Landroid/view/View;
-
-    .line 28
-    .line 29
-    invoke-virtual {p1}, Landroid/view/View;->getRotation()F
-
-    .line 30
-    .line 31
-    .line 32
-    move-result p1
-
-    .line 33
-    return p1
-
-    .line 34
-    :pswitch_3
-    check-cast p1, Landroid/view/View;
-
-    .line 35
-    .line 36
-    invoke-virtual {p1}, Landroid/view/View;->getScaleY()F
-
-    .line 37
-    .line 38
-    .line 39
-    move-result p1
-
-    .line 40
-    return p1
-
-    .line 41
-    :pswitch_4
-    check-cast p1, Landroid/view/View;
-
-    .line 42
-    .line 43
-    invoke-virtual {p1}, Landroid/view/View;->getScaleX()F
-
-    .line 44
-    .line 45
-    .line 46
-    move-result p1
-
-    .line 47
-    return p1
-
-    .line 48
-    :pswitch_5
-    check-cast p1, Landroid/view/View;
-
-    .line 49
-    .line 50
-    invoke-virtual {p1}, Landroid/view/View;->getAlpha()F
-
-    .line 51
-    .line 52
-    .line 53
-    move-result p1
-
-    .line 54
-    return p1
-
-    .line 55
-    :pswitch_6
-    check-cast p1, Landroid/view/View;
-
-    .line 56
-    .line 57
-    invoke-virtual {p1}, Landroid/view/View;->getY()F
-
-    .line 58
-    .line 59
-    .line 60
-    move-result p1
-
-    .line 61
-    return p1
-
-    .line 62
-    nop
-
-    .line 63
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method
 
-.method public final h(Ljava/lang/Object;F)V
+.method public final close()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d(Lcf5;)J
     .locals 1
 
     .line 1
-    iget v0, p0, LZD6;->c:I
+    new-instance p1, Ljava/io/IOException;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string v0, "DummyDataSource cannot be opened"
+
+    .line 4
+    .line 5
+    invoke-direct {p1, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p1
+.end method
+
+.method public final f()Ljava/util/Map;
+    .locals 1
+
+    .line 1
+    sget-object v0, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final i(LUgj;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final read([BII)I
+    .locals 0
+
+    .line 1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    .line 2
+    .line 3
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Landroid/view/View;
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, p2}, Landroid/view/View;->setX(F)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :pswitch_0
-    check-cast p1, Landroid/view/View;
-
-    .line 13
-    .line 14
-    invoke-virtual {p1, p2}, Landroid/view/View;->setRotationY(F)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-
-    .line 18
-    :pswitch_1
-    check-cast p1, Landroid/view/View;
-
-    .line 19
-    .line 20
-    invoke-virtual {p1, p2}, Landroid/view/View;->setRotationX(F)V
-
-    .line 21
-    .line 22
-    .line 23
-    return-void
-
-    .line 24
-    :pswitch_2
-    check-cast p1, Landroid/view/View;
-
-    .line 25
-    .line 26
-    invoke-virtual {p1, p2}, Landroid/view/View;->setRotation(F)V
-
-    .line 27
-    .line 28
-    .line 29
-    return-void
-
-    .line 30
-    :pswitch_3
-    check-cast p1, Landroid/view/View;
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
-
-    .line 33
-    .line 34
-    .line 35
-    return-void
-
-    .line 36
-    :pswitch_4
-    check-cast p1, Landroid/view/View;
-
-    .line 37
-    .line 38
-    invoke-virtual {p1, p2}, Landroid/view/View;->setScaleX(F)V
-
-    .line 39
-    .line 40
-    .line 41
-    return-void
-
-    .line 42
-    :pswitch_5
-    check-cast p1, Landroid/view/View;
-
-    .line 43
-    .line 44
-    invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
-
-    .line 45
-    .line 46
-    .line 47
-    return-void
-
-    .line 48
-    :pswitch_6
-    check-cast p1, Landroid/view/View;
-
-    .line 49
-    .line 50
-    invoke-virtual {p1, p2}, Landroid/view/View;->setY(F)V
-
-    .line 51
-    .line 52
-    .line 53
-    return-void
-
-    .line 54
-    nop
-
-    .line 55
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    throw p1
 .end method

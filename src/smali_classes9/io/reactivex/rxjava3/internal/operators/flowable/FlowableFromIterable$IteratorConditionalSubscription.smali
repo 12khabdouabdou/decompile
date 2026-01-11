@@ -112,7 +112,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-interface {v1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 29
     .line 30
@@ -161,7 +161,7 @@
 
     .line 49
     .line 50
-    invoke-interface {v1}, LV6i;->onComplete()V
+    invoke-interface {v1}, Lmvi;->onComplete()V
 
     .line 51
     .line 52
@@ -180,7 +180,7 @@
     .line 56
     .line 57
     .line 58
-    invoke-interface {v1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 59
     .line 60
@@ -197,7 +197,7 @@
     .line 64
     .line 65
     .line 66
-    invoke-interface {v1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 67
     .line 68
@@ -205,7 +205,7 @@
     return-void
 .end method
 
-.method public final b(J)V
+.method public final c(J)V
     .locals 8
 
     .line 1
@@ -287,7 +287,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-interface {v1, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 36
     .line 37
@@ -339,7 +339,7 @@
 
     .line 57
     .line 58
-    invoke-interface {v1}, LV6i;->onComplete()V
+    invoke-interface {v1}, Lmvi;->onComplete()V
 
     .line 59
     .line 60
@@ -371,7 +371,7 @@
     .line 70
     .line 71
     .line 72
-    invoke-interface {v1, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 73
     .line 74
@@ -388,7 +388,7 @@
     .line 78
     .line 79
     .line 80
-    invoke-interface {v1, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 81
     .line 82

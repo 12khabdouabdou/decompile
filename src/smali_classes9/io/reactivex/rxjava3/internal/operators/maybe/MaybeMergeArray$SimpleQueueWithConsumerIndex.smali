@@ -29,7 +29,7 @@
 
 
 # virtual methods
-.method public abstract d()V
+.method public abstract b()V
 .end method
 
 .method public abstract f()I
@@ -38,5 +38,5 @@
 .method public abstract peek()Ljava/lang/Object;
 .end method
 
-.method public abstract v()I
+.method public abstract s()I
 .end method

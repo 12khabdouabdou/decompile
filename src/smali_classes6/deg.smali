@@ -1,89 +1,101 @@
-.class public final Ldeg;
+.class public abstract Ldeg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LTqc;
-
-.field public final b:LVKc;
-
-.field public final c:LdLc;
-
-.field public final d:LtGc;
-
-.field public final e:LBre;
-
-.field public final f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+# static fields
+.field public static final a:Ljava/util/Set;
 
 
 # direct methods
-.method public constructor <init>(LTqc;LVKc;LdLc;LtGc;Lnwf;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x6
 
     .line 2
+    new-array v0, v0, [LD7e;
+
     .line 3
     .line 4
-    iput-object p1, p0, Ldeg;->a:LTqc;
+    sget-object v1, LD7e;->c:LD7e;
 
     .line 5
     .line 6
-    iput-object p2, p0, Ldeg;->b:LVKc;
+    const/4 v2, 0x0
 
     .line 7
+    aput-object v1, v0, v2
+
     .line 8
-    iput-object p3, p0, Ldeg;->c:LdLc;
-
     .line 9
-    .line 10
-    iput-object p4, p0, Ldeg;->d:LtGc;
+    sget-object v1, LD7e;->b:LD7e;
 
+    .line 10
     .line 11
+    const/4 v2, 0x1
+
     .line 12
-    sget-object p1, Lhdg;->Z:Lhdg;
+    aput-object v1, v0, v2
 
     .line 13
     .line 14
-    check-cast p5, LIP5;
+    sget-object v1, LD7e;->h0:LD7e;
 
     .line 15
     .line 16
-    invoke-virtual {p5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v2, 0x2
 
     .line 17
+    aput-object v1, v0, v2
+
     .line 18
     .line 19
-    const-string p2, "ShareUpsellContextFactory"
+    sget-object v1, LD7e;->r0:LD7e;
 
     .line 20
     .line 21
-    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
+    const/4 v2, 0x3
 
     .line 22
+    aput-object v1, v0, v2
+
     .line 23
     .line 24
-    move-result-object p1
+    sget-object v1, LD7e;->s0:LD7e;
 
     .line 25
-    iput-object p1, p0, Ldeg;->e:LBre;
-
     .line 26
+    const/4 v2, 0x4
+
     .line 27
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    aput-object v1, v0, v2
 
     .line 28
     .line 29
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    sget-object v1, LD7e;->i0:LD7e;
 
     .line 30
     .line 31
+    const/4 v2, 0x5
+
     .line 32
-    iput-object p1, p0, Ldeg;->f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    aput-object v1, v0, v2
 
     .line 33
     .line 34
+    invoke-static {v0}, Ldog;->n0([Ljava/lang/Object;)Ljava/util/Set;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    sput-object v0, Ldeg;->a:Ljava/util/Set;
+
+    .line 39
+    .line 40
     return-void
 .end method

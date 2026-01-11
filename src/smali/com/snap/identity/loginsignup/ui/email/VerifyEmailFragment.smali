@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Luzj;
+.implements LJYj;
 
 
 # instance fields
@@ -33,36 +33,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()Lszj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, Lszj;->r3(Luzj;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()Lszj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()LHYj;
 
     .line 2
     .line 3
@@ -70,7 +45,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, Lszj;->C1()V
+    invoke-virtual {v0}, LHYj;->D1()V
 
     .line 6
     .line 7
@@ -78,11 +53,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e02b2
+    const p3, 0x7f0e02c8
 
     .line 2
     .line 3
@@ -101,16 +76,16 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    const p2, 0x7f0b07de
+    const p2, 0x7f0b088e
 
     .line 5
     .line 6
@@ -131,7 +106,7 @@
 
     .line 14
     .line 15
-    const p2, 0x7f0b07dd
+    const p2, 0x7f0b088c
 
     .line 16
     .line 17
@@ -152,7 +127,7 @@
 
     .line 25
     .line 26
-    const p2, 0x7f0b0691
+    const p2, 0x7f0b0728
 
     .line 27
     .line 28
@@ -173,7 +148,7 @@
 
     .line 36
     .line 37
-    const p2, 0x7f0b0f8a
+    const p2, 0x7f0b10a7
 
     .line 38
     .line 39
@@ -190,7 +165,7 @@
 
     .line 45
     .line 46
-    const p2, 0x7f0b0f8b
+    const p2, 0x7f0b10a8
 
     .line 47
     .line 48
@@ -239,7 +214,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -250,19 +225,19 @@
     throw v0
 .end method
 
-.method public abstract Z1()Lszj;
+.method public abstract Z1()LHYj;
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()Lszj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()LHYj;
 
     .line 5
     .line 6
@@ -270,7 +245,7 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1}, Lszj;->d()V
+    invoke-virtual {p1}, LHYj;->e()V
 
     .line 9
     .line 10
@@ -278,11 +253,11 @@
     return-void
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -290,16 +265,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()Lszj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()LHYj;
 
     .line 5
     .line 6
@@ -307,7 +282,32 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1}, Lszj;->o3()V
+    invoke-virtual {p1}, LHYj;->l3()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/email/VerifyEmailFragment;->Z1()LHYj;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, LHYj;->o3(LJYj;)V
 
     .line 9
     .line 10

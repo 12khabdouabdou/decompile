@@ -355,7 +355,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, LDDi;->p(Landroid/view/Window$Callback;Z)V
+    invoke-static {v0, p1}, LhQj;->m(Landroid/view/Window$Callback;Z)V
 
     .line 4
     .line 5
@@ -390,7 +390,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2, p3}, LWqj;->l(Landroid/view/Window$Callback;Ljava/util/List;Landroid/view/Menu;I)V
+    invoke-static {v0, p1, p2, p3}, LCkk;->g(Landroid/view/Window$Callback;Ljava/util/List;Landroid/view/Menu;I)V
 
     .line 4
     .line 5
@@ -417,7 +417,7 @@
     .line 1
     iget-object v0, p0, Landroidx/appcompat/view/WindowCallbackWrapper;->mWrapped:Landroid/view/Window$Callback;
 
-    invoke-static {v0, p1}, LPUj;->s(Landroid/view/Window$Callback;Landroid/view/SearchEvent;)Z
+    invoke-static {v0, p1}, LDkk;->i(Landroid/view/Window$Callback;Landroid/view/SearchEvent;)Z
 
     move-result p1
 
@@ -475,7 +475,7 @@
     .line 2
     iget-object v0, p0, Landroidx/appcompat/view/WindowCallbackWrapper;->mWrapped:Landroid/view/Window$Callback;
 
-    invoke-static {v0, p1, p2}, LPUj;->n(Landroid/view/Window$Callback;Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+    invoke-static {v0, p1, p2}, LDkk;->e(Landroid/view/Window$Callback;Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
 
     move-result-object p1
 

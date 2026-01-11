@@ -1,16 +1,16 @@
 .class public final Lcom/snap/opera/composer/events/OperaEventProviders;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'viewerLifecycleEventBridgeSubject\':g<c>:\'[0]\'<r:\'[1]\'>,\'playbackEventBridgeSubject\':g<c>:\'[0]\'<r:\'[2]\'>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeSubject;,
-        Lr0d;,
-        LKXc;
+        Lofd;,
+        LFcd;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/bridge_observables/BridgeSubject<",
-            "LKXc;",
+            "LFcd;",
             ">;"
         }
     .end annotation
@@ -30,7 +30,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/bridge_observables/BridgeSubject<",
-            "Lr0d;",
+            "Lofd;",
             ">;"
         }
     .end annotation
@@ -44,10 +44,10 @@
         value = {
             "(",
             "Lcom/snap/composer/bridge_observables/BridgeSubject<",
-            "Lr0d;",
+            "Lofd;",
             ">;",
             "Lcom/snap/composer/bridge_observables/BridgeSubject<",
-            "LKXc;",
+            "LFcd;",
             ">;)V"
         }
     .end annotation

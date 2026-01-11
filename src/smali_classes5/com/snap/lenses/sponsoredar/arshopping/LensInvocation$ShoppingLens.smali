@@ -1,22 +1,22 @@
 .class public final Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;
-.super LoX9;
+.super LO9a;
 .source "SourceFile"
 
 
 # instance fields
-.field private final adId:LfD1;
+.field private final adId:LuG1;
 
 .field private final isSponsored:Z
 
-.field private final lensId:Lo09;
+.field private final lensId:LY79;
 
 .field private final metricsSessionId:I
 
-.field private final shoppingLensInfo:Lnig;
+.field private final shoppingLensInfo:LhDg;
 
 
 # direct methods
-.method public constructor <init>(ILo09;Lnig;LfD1;Z)V
+.method public constructor <init>(ILY79;LhDg;LuG1;Z)V
     .locals 0
 
     .line 1
@@ -29,15 +29,15 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:Lo09;
+    iput-object p2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:LY79;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:Lnig;
+    iput-object p3, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:LhDg;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LfD1;
+    iput-object p4, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LuG1;
 
     .line 11
     .line 12
@@ -80,11 +80,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:Lo09;
+    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:LY79;
 
-    iget-object v3, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:Lo09;
+    iget-object v3, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:LY79;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -93,11 +93,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:Lnig;
+    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:LhDg;
 
-    iget-object v3, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:Lnig;
+    iget-object v3, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:LhDg;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -106,11 +106,11 @@
     return v2
 
     :cond_4
-    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LfD1;
+    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LuG1;
 
-    iget-object v3, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LfD1;
+    iget-object v3, p1, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LuG1;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -158,15 +158,15 @@
 
     .line 6
     .line 7
-    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:Lo09;
+    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:LY79;
 
     .line 8
     .line 9
-    iget-object v2, v2, Lo09;->a:Ljava/lang/String;
+    iget-object v2, v2, LY79;->a:Ljava/lang/String;
 
     .line 10
     .line 11
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 12
     .line 13
@@ -174,11 +174,11 @@
     move-result v0
 
     .line 15
-    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:Lnig;
+    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:LhDg;
 
     .line 16
     .line 17
-    invoke-virtual {v2}, Lnig;->hashCode()I
+    invoke-virtual {v2}, LhDg;->hashCode()I
 
     .line 18
     .line 19
@@ -193,7 +193,7 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LfD1;
+    iget-object v0, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LuG1;
 
     .line 25
     .line 26
@@ -208,7 +208,7 @@
 
     .line 30
     :cond_0
-    iget-object v0, v0, LfD1;->a:[B
+    iget-object v0, v0, LuG1;->a:[B
 
     .line 31
     .line 32
@@ -255,23 +255,23 @@
     return v2
 .end method
 
-.method public final toActivationAction()Lo60;
+.method public final toActivationAction()LH80;
     .locals 6
 
     .line 1
-    new-instance v0, Lo60;
+    new-instance v0, LH80;
 
     .line 2
     .line 3
-    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:Lo09;
+    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:LY79;
 
     .line 4
     .line 5
-    iget-object v3, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:Lnig;
+    iget-object v3, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:LhDg;
 
     .line 6
     .line 7
-    iget-object v4, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LfD1;
+    iget-object v4, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LuG1;
 
     .line 8
     .line 9
@@ -283,7 +283,7 @@
 
     .line 12
     .line 13
-    invoke-direct/range {v0 .. v5}, Lo60;-><init>(ILo09;Lnig;LfD1;Z)V
+    invoke-direct/range {v0 .. v5}, LH80;-><init>(ILY79;LhDg;LuG1;Z)V
 
     .line 14
     .line 15
@@ -299,15 +299,15 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:Lo09;
+    iget-object v1, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->lensId:LY79;
 
     .line 4
     .line 5
-    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:Lnig;
+    iget-object v2, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->shoppingLensInfo:LhDg;
 
     .line 6
     .line 7
-    iget-object v3, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LfD1;
+    iget-object v3, p0, Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$ShoppingLens;->adId:LuG1;
 
     .line 8
     .line 9
@@ -388,7 +388,7 @@
 
     .line 51
     .line 52
-    invoke-static {v0, v5, v4}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+    invoke-static {v0, v5, v4}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
     .line 53
     .line 54

@@ -14,6 +14,8 @@
     .end annotation
 .end field
 
+.field final mPartial:Z
+
 .field final mTimestampUs:J
 
 .field final mVideoChunks:Ljava/util/ArrayList;
@@ -28,7 +30,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
+.method public constructor <init>(Ljava/util/ArrayList;Ljava/util/ArrayList;ZJ)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38,7 +40,7 @@
             ">;",
             "Ljava/util/ArrayList<",
             "Ljava/nio/ByteBuffer;",
-            ">;J)V"
+            ">;ZJ)V"
         }
     .end annotation
 
@@ -56,10 +58,14 @@
 
     .line 7
     .line 8
-    iput-wide p3, p0, Lcom/addlive/djinni/ParsedFrameData;->mTimestampUs:J
+    iput-boolean p3, p0, Lcom/addlive/djinni/ParsedFrameData;->mPartial:Z
 
     .line 9
     .line 10
+    iput-wide p4, p0, Lcom/addlive/djinni/ParsedFrameData;->mTimestampUs:J
+
+    .line 11
+    .line 12
     return-void
 .end method
 
@@ -82,6 +88,17 @@
     .line 2
     .line 3
     return-object v0
+.end method
+
+.method public getPartial()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/addlive/djinni/ParsedFrameData;->mPartial:Z
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public getTimestampUs()J
@@ -115,7 +132,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 7
+    .locals 8
 
     .line 1
     iget-object v0, p0, Lcom/addlive/djinni/ParsedFrameData;->mConfigChunks:Ljava/util/ArrayList;
@@ -142,41 +159,69 @@
     move-result-object v1
 
     .line 13
-    iget-wide v2, p0, Lcom/addlive/djinni/ParsedFrameData;->mTimestampUs:J
+    iget-boolean v2, p0, Lcom/addlive/djinni/ParsedFrameData;->mPartial:Z
 
     .line 14
     .line 15
-    const-string v4, "ParsedFrameData{mConfigChunks="
+    iget-wide v3, p0, Lcom/addlive/djinni/ParsedFrameData;->mTimestampUs:J
 
     .line 16
     .line 17
-    const-string v5, ",mVideoChunks="
+    const-string v5, "ParsedFrameData{mConfigChunks="
 
     .line 18
     .line 19
-    const-string v6, ",mTimestampUs="
+    const-string v6, ",mVideoChunks="
 
     .line 20
     .line 21
-    invoke-static {v4, v0, v5, v1, v6}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v7, ",mPartial="
 
     .line 22
     .line 23
+    invoke-static {v5, v0, v6, v1, v7}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 24
+    .line 25
+    .line 26
     move-result-object v0
 
-    .line 25
-    const-string v1, "}"
-
-    .line 26
     .line 27
-    invoke-static {v0, v2, v3, v1}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 28
     .line 29
     .line 30
-    move-result-object v0
+    const-string v1, ",mTimestampUs="
 
     .line 31
+    .line 32
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    const-string v1, "}"
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
     return-object v0
 .end method

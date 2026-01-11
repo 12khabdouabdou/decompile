@@ -3,15 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements LDE;
+.implements LvG;
 
 
 # instance fields
 .field public A0:Landroid/widget/DatePicker;
 
-.field public w0:LCE;
+.field public w0:LuG;
 
-.field public x0:LzE;
+.field public x0:LrG;
 
 .field public y0:Lcom/snap/component/button/SnapButtonView;
 
@@ -33,36 +33,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LCE;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, LCE;->S2(LDE;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0042
+    const p3, 0x7f0e0043
 
     .line 2
     .line 3
@@ -81,7 +56,7 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 5
 
     .line 1
@@ -118,7 +93,7 @@
     move-result-object v1
 
     .line 16
-    check-cast v1, LzE;
+    check-cast v1, LrG;
 
     .line 17
     .line 18
@@ -130,7 +105,7 @@
 
     .line 20
     :goto_0
-    instance-of v3, v1, LzE;
+    instance-of v3, v1, LrG;
 
     .line 21
     .line 22
@@ -150,15 +125,15 @@
 
     .line 27
     .line 28
-    new-instance v1, LzE;
+    new-instance v1, LrG;
 
     .line 29
     .line 30
-    new-instance v3, LB5$a$a;
+    new-instance v3, Lo6$a$a;
 
     .line 31
     .line 32
-    invoke-direct {v3}, LB5$a$a;-><init>()V
+    invoke-direct {v3}, Lo6$a$a;-><init>()V
 
     .line 33
     .line 34
@@ -166,17 +141,17 @@
     const/4 v4, 0x6
 
     .line 36
-    invoke-direct {v1, v3, v2, v4}, LzE;-><init>(LB5$a$a;Ljava/lang/String;I)V
+    invoke-direct {v1, v3, v2, v4}, LrG;-><init>(Lo6$a$a;Ljava/lang/String;I)V
 
     .line 37
     .line 38
     .line 39
     :cond_2
-    iput-object v1, p0, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->x0:LzE;
+    iput-object v1, p0, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->x0:LrG;
 
     .line 40
     .line 41
-    new-instance v1, LEsj;
+    new-instance v1, LS7j;
 
     .line 42
     .line 43
@@ -188,16 +163,16 @@
     move-result-object v3
 
     .line 47
-    invoke-direct {v1, v3}, LEsj;-><init>(Landroidx/fragment/app/FragmentActivity;)V
+    invoke-direct {v1, v3}, LS7j;-><init>(Landroidx/fragment/app/FragmentActivity;)V
 
     .line 48
     .line 49
     .line 50
-    const-class v3, LEE;
+    const-class v3, LwG;
 
     .line 51
     .line 52
-    invoke-virtual {v1, v3}, LEsj;->d(Ljava/lang/Class;)LyJj;
+    invoke-virtual {v1, v3}, LS7j;->a(Ljava/lang/Class;)Lb9k;
 
     .line 53
     .line 54
@@ -205,11 +180,11 @@
     move-result-object v1
 
     .line 56
-    check-cast v1, LEE;
+    check-cast v1, LwG;
 
     .line 57
     .line 58
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->U1()LzE;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->U1()LrG;
 
     .line 59
     .line 60
@@ -217,12 +192,12 @@
     move-result-object v3
 
     .line 62
-    invoke-virtual {v1, v3}, LEE;->d(LzE;)V
+    invoke-virtual {v1, v3}, LwG;->d(LrG;)V
 
     .line 63
     .line 64
     .line 65
-    const v1, 0x7f0b0691
+    const v1, 0x7f0b0728
 
     .line 66
     .line 67
@@ -243,7 +218,7 @@
 
     .line 75
     .line 76
-    const v1, 0x7f0b01c6
+    const v1, 0x7f0b0210
 
     .line 77
     .line 78
@@ -264,7 +239,7 @@
 
     .line 86
     .line 87
-    const v1, 0x7f0b0222
+    const v1, 0x7f0b026c
 
     .line 88
     .line 89
@@ -285,7 +260,7 @@
 
     .line 97
     .line 98
-    const v1, 0x7f0b1759
+    const v1, 0x7f0b189b
 
     .line 99
     .line 100
@@ -336,7 +311,7 @@
 
     .line 122
     .line 123
-    const v1, 0x7f133517
+    const v1, 0x7f1337e0
 
     .line 124
     .line 125
@@ -362,16 +337,16 @@
 
     .line 136
     .line 137
-    new-instance v1, LY95;
+    new-instance v1, Log5;
 
     .line 138
     .line 139
-    invoke-direct {v1}, LtK0;-><init>()V
+    invoke-direct {v1}, LpN0;-><init>()V
 
     .line 140
     .line 141
     .line 142
-    iget-wide v3, v1, LtK0;->a:J
+    iget-wide v3, v1, LpN0;->a:J
 
     .line 143
     .line 144
@@ -388,11 +363,11 @@
 
     .line 150
     .line 151
-    new-instance v1, LAE;
+    new-instance v1, LsG;
 
     .line 152
     .line 153
-    invoke-direct {v1, p0, p2}, LAE;-><init>(Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;I)V
+    invoke-direct {v1, p0, p2}, LsG;-><init>(Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;I)V
 
     .line 154
     .line 155
@@ -410,11 +385,11 @@
 
     .line 162
     .line 163
-    new-instance p2, LAE;
+    new-instance p2, LsG;
 
     .line 164
     .line 165
-    invoke-direct {p2, p0, v0}, LAE;-><init>(Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;I)V
+    invoke-direct {p2, p0, v0}, LsG;-><init>(Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;I)V
 
     .line 166
     .line 167
@@ -432,7 +407,7 @@
 
     .line 173
     .line 174
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 175
     .line 176
@@ -445,7 +420,7 @@
 
     .line 179
     .line 180
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 181
     .line 182
@@ -458,7 +433,7 @@
 
     .line 185
     .line 186
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 187
     .line 188
@@ -466,11 +441,11 @@
     throw v2
 .end method
 
-.method public final U1()LzE;
+.method public final U1()LrG;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->x0:LzE;
+    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->x0:LrG;
 
     .line 2
     .line 3
@@ -486,7 +461,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -497,11 +472,11 @@
     throw v0
 .end method
 
-.method public final V1()LCE;
+.method public final V1()LuG;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->w0:LCE;
+    iget-object v0, p0, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->w0:LuG;
 
     .line 2
     .line 3
@@ -517,7 +492,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -532,7 +507,7 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LCE;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LuG;
 
     .line 2
     .line 3
@@ -540,11 +515,11 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, LUE;->c:LUE;
+    sget-object v1, LMG;->c:LMG;
 
     .line 6
     .line 7
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->U1()LzE;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->U1()LrG;
 
     .line 8
     .line 9
@@ -552,7 +527,7 @@
     move-result-object v2
 
     .line 11
-    invoke-virtual {v2}, LzE;->b()Ljava/lang/String;
+    invoke-virtual {v2}, LrG;->b()Ljava/lang/String;
 
     .line 12
     .line 13
@@ -560,7 +535,7 @@
     move-result-object v2
 
     .line 15
-    invoke-virtual {v0, v1, v2}, LCE;->Q2(LUE;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, LuG;->c3(LMG;Ljava/lang/String;)V
 
     .line 16
     .line 17
@@ -576,11 +551,11 @@
     return v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -588,56 +563,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LCE;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    sget-object v0, LUE;->b:LUE;
-
-    .line 9
-    .line 10
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->U1()LzE;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v1
-
-    .line 14
-    invoke-virtual {v1}, LzE;->b()Ljava/lang/String;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v1
-
-    .line 18
-    invoke-virtual {p1, v0, v1}, LCE;->Q2(LUE;Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-.end method
-
-.method public final w1()V
+.method public final u1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LCE;
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LuG;
 
     .line 2
     .line 3
@@ -645,10 +575,80 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LCE;->C1()V
+    invoke-virtual {v0}, LuG;->D1()V
 
     .line 6
     .line 7
     .line 8
+    return-void
+.end method
+
+.method public final v(LiGc;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LuG;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    sget-object v0, LMG;->b:LMG;
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->U1()LrG;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    invoke-virtual {v1}, LrG;->b()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    invoke-virtual {p1, v0, v1}, LuG;->c3(LMG;Ljava/lang/String;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/compliance/lib/core/ui/ageComplianceSplash/AgeComplianceSplashFragment;->V1()LuG;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, LuG;->d3(LvG;)V
+
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

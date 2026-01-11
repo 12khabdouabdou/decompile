@@ -1,12 +1,12 @@
 .class public final Lcom/snap/opera/layer/LoadingErrorInfoLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
@@ -18,7 +18,7 @@
 
 .field public final i:Landroid/widget/TextView;
 
-.field public final j:LPta;
+.field public final j:LYFa;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -48,7 +48,7 @@
     move-result-object p1
 
     .line 13
-    const v1, 0x7f0e03c5
+    const v1, 0x7f0e03e7
 
     .line 14
     .line 15
@@ -62,7 +62,7 @@
 
     .line 20
     .line 21
-    const p1, 0x7f0b0c27
+    const p1, 0x7f0b0d4b
 
     .line 22
     .line 23
@@ -83,7 +83,7 @@
 
     .line 31
     .line 32
-    const p1, 0x7f0b0c26
+    const p1, 0x7f0b0d4a
 
     .line 33
     .line 34
@@ -104,11 +104,11 @@
 
     .line 42
     .line 43
-    sget-object p1, LPta;->c:LPta;
+    sget-object p1, LYFa;->c:LYFa;
 
     .line 44
     .line 45
-    iput-object p1, p0, Lcom/snap/opera/layer/LoadingErrorInfoLayerView;->j:LPta;
+    iput-object p1, p0, Lcom/snap/opera/layer/LoadingErrorInfoLayerView;->j:LYFa;
 
     .line 46
     .line 47
@@ -121,7 +121,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/layer/LoadingErrorInfoLayerView;->j:LPta;
+    iget-object v0, p0, Lcom/snap/opera/layer/LoadingErrorInfoLayerView;->j:LYFa;
 
     .line 2
     .line 3
@@ -143,15 +143,15 @@
     .locals 4
 
     .line 1
-    check-cast p1, LPta;
+    check-cast p1, LYFa;
 
     .line 2
     .line 3
-    check-cast p2, LPta;
+    check-cast p2, LYFa;
 
     .line 4
     .line 5
-    iget-object p2, p1, LPta;->a:Ljava/lang/String;
+    iget-object p2, p1, LYFa;->a:Ljava/lang/String;
 
     .line 6
     .line 7
@@ -188,7 +188,7 @@
 
     .line 19
     .line 20
-    invoke-static {v3, v0}, LLZj;->E0(Landroid/view/View;Z)V
+    invoke-static {v3, v0}, LDz9;->p0(Landroid/view/View;Z)V
 
     .line 21
     .line 22
@@ -198,7 +198,7 @@
     .line 24
     .line 25
     .line 26
-    iget-object p1, p1, LPta;->b:Ljava/lang/String;
+    iget-object p1, p1, LYFa;->b:Ljava/lang/String;
 
     .line 27
     .line 28
@@ -222,7 +222,7 @@
 
     .line 36
     .line 37
-    invoke-static {p2, v1}, LLZj;->E0(Landroid/view/View;Z)V
+    invoke-static {p2, v1}, LDz9;->p0(Landroid/view/View;Z)V
 
     .line 38
     .line 39

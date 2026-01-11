@@ -257,7 +257,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, LRka;->a:[I
+    sget-object v0, Lixa;->a:[I
 
     .line 2
     .line 3

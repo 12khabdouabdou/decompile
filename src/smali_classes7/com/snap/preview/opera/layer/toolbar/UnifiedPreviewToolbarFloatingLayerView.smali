@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LqZ8;)V
+.method public constructor <init>(Landroid/content/Context;LZ69;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;-><init>(Landroid/content/Context;LqZ8;)V
+    invoke-direct {p0, p1, p2}, Lcom/snap/preview/opera/layer/toolbar/UnifiedPreviewToolbarLayerView;-><init>(Landroid/content/Context;LZ69;)V
 
     .line 2
     .line 3

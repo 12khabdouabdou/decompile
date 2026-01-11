@@ -1,5 +1,5 @@
 .class public abstract Lapp/aifactory/base/data/db/Database;
-.super Lm9f;
+.super LErf;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lm9f;-><init>()V
+    invoke-direct {p0}, LErf;-><init>()V
 
     .line 2
     .line 3
@@ -18,14 +18,14 @@
 
 
 # virtual methods
-.method public abstract p()LOZe;
+.method public abstract p()LShf;
 .end method
 
-.method public abstract q()Lzuf;
+.method public abstract q()LHNf;
 .end method
 
-.method public abstract r()LQKf;
+.method public abstract r()Lj4g;
 .end method
 
-.method public abstract s()LQii;
+.method public abstract s()LKHi;
 .end method

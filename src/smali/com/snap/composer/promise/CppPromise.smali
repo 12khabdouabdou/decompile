@@ -1,5 +1,5 @@
 .class public final Lcom/snap/composer/promise/CppPromise;
-.super Ld74;
+.super LJb4;
 .source "SourceFile"
 
 # interfaces
@@ -15,7 +15,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Ld74;",
+        "LJb4;",
         "Lcom/snap/composer/promise/Promise<",
         "TT;>;"
     }
@@ -23,18 +23,18 @@
 
 
 # static fields
-.field public static final Companion:Le74;
+.field public static final Companion:LKb4;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Le74;
+    new-instance v0, LKb4;
 
-    invoke-direct {v0}, Le74;-><init>()V
+    invoke-direct {v0}, LKb4;-><init>()V
 
-    sput-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:Le74;
+    sput-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:LKb4;
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Ld74;-><init>(JJ)V
+    invoke-direct {p0, p1, p2, p3, p4}, LJb4;-><init>(JJ)V
 
     .line 2
     .line 3
@@ -105,11 +105,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:Le74;
+    sget-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:LKb4;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, Ld74;->getNativeHandle1()J
+    invoke-virtual {p0}, LJb4;->getNativeHandle1()J
 
     .line 4
     .line 5
@@ -117,7 +117,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2}, Le74;->a(Le74;J)V
+    invoke-static {v0, v1, v2}, LKb4;->a(LKb4;J)V
 
     .line 8
     .line 9
@@ -129,11 +129,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:Le74;
+    sget-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:LKb4;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, Ld74;->getNativeHandle1()J
+    invoke-virtual {p0}, LJb4;->getNativeHandle1()J
 
     .line 4
     .line 5
@@ -141,7 +141,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2}, Le74;->b(Le74;J)Z
+    invoke-static {v0, v1, v2}, LKb4;->b(LKb4;J)Z
 
     .line 8
     .line 9
@@ -163,11 +163,11 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:Le74;
+    sget-object v0, Lcom/snap/composer/promise/CppPromise;->Companion:LKb4;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, Ld74;->getNativeHandle1()J
+    invoke-virtual {p0}, LJb4;->getNativeHandle1()J
 
     .line 4
     .line 5
@@ -175,7 +175,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-virtual {p0}, Ld74;->getNativeHandle2()J
+    invoke-virtual {p0}, LJb4;->getNativeHandle2()J
 
     .line 8
     .line 9
@@ -186,7 +186,7 @@
     move-object v5, p1
 
     .line 12
-    invoke-static/range {v0 .. v5}, Le74;->c(Le74;JJLcom/snap/composer/promise/PromiseCallback;)V
+    invoke-static/range {v0 .. v5}, LKb4;->c(LKb4;JJLcom/snap/composer/promise/PromiseCallback;)V
 
     .line 13
     .line 14

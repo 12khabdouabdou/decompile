@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lv94;
+    proxyClass = Lce4;
     schema = "\'presentCreateGroupPage\':f|m|()"
     typeReferences = {}
 .end annotation

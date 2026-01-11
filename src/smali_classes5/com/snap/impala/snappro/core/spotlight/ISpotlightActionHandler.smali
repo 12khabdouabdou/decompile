@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LQY8;
+    proxyClass = Lz69;
     schema = "\'approveReply\':f|m|(s, l, l, f(b@)),\'rejectReply\':f|m|(s, l, l, f(b@)),\'reportReply\':f|m|(s, s, l, l),\'openSpotlightSnap\':f|m|(s, r<e>:\'[0]\', r?:\'[1]\', r?:\'[2]\', r?:\'[3]\', s?),\'observeReplyUpdates\':f|m|(f(b@, s?, s?))"
     typeReferences = {
         Lcom/snap/modules/activity_center_api/ContentCommentsDefaultTab;,

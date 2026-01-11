@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LoNf;
+    proxyClass = LK6g;
     schema = "\'sendCallStatusMessage\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/talkcore/CallStatusMessage;

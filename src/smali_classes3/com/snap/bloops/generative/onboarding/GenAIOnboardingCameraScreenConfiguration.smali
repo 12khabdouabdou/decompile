@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = La98;
+    proxyClass = Lsf8;
     schema = "\'selfieFrameWidth\':d,\'selfieFrameSizeRatio\':d,\'selfieFrameCenterX\':d,\'selfieFrameCenterY\':d"
     typeReferences = {}
 .end annotation

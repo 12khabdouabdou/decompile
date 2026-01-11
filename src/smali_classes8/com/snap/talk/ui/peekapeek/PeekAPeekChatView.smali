@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final m0:LKph;
+.field public static final m0:LlNh;
 
 
 # instance fields
@@ -12,7 +12,7 @@
 
 .field public final b:Landroid/graphics/Paint;
 
-.field public final c:LXfi;
+.field public final c:LREi;
 
 .field public final e0:F
 
@@ -22,7 +22,7 @@
 
 .field public final h0:F
 
-.field public i0:LoJ8;
+.field public i0:LNQ8;
 
 .field public j0:F
 
@@ -38,7 +38,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LKph;
+    new-instance v0, LlNh;
 
     .line 2
     .line 3
@@ -47,7 +47,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->m0:LKph;
+    sput-object v0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->m0:LlNh;
 
     .line 7
     .line 8
@@ -95,94 +95,95 @@
 
     .line 19
     .line 20
-    new-instance p2, Lhf8;
+    new-instance p2, LJl8;
 
     .line 21
     .line 22
-    const/4 v0, 0x7
+    const/16 v0, 0x8
 
     .line 23
-    invoke-direct {p2, p1, v0}, Lhf8;-><init>(Landroid/content/Context;I)V
-
     .line 24
+    invoke-direct {p2, p1, v0}, LJl8;-><init>(Landroid/content/Context;I)V
+
     .line 25
     .line 26
-    new-instance v0, LXfi;
-
     .line 27
-    .line 28
-    invoke-direct {v0, p2}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    new-instance v0, LREi;
 
+    .line 28
     .line 29
+    invoke-direct {v0, p2}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 30
     .line 31
-    iput-object v0, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->c:LXfi;
-
     .line 32
+    iput-object v0, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->c:LREi;
+
     .line 33
+    .line 34
     new-instance p2, Landroid/graphics/RectF;
 
-    .line 34
     .line 35
+    .line 36
     invoke-direct {p2}, Landroid/graphics/RectF;-><init>()V
 
-    .line 36
     .line 37
     .line 38
+    .line 39
     iput-object p2, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->t:Landroid/graphics/RectF;
 
-    .line 39
     .line 40
+    .line 41
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    .line 41
     .line 42
     .line 43
+    .line 44
     move-result-object p1
 
-    .line 44
-    const p2, 0x7f070d6e
-
     .line 45
+    const p2, 0x7f070d9c
+
     .line 46
     .line 47
+    .line 48
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
-    .line 48
     .line 49
     .line 50
+    .line 51
     move-result p1
 
-    .line 51
+    .line 52
     iput p1, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->e0:F
 
-    .line 52
     .line 53
+    .line 54
     iput p1, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->g0:F
 
-    .line 54
     .line 55
+    .line 56
     const/high16 p1, 0x41a00000    # 20.0f
 
-    .line 56
     .line 57
+    .line 58
     iput p1, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->h0:F
 
-    .line 58
     .line 59
+    .line 60
     new-instance p1, Landroid/graphics/Matrix;
 
-    .line 60
     .line 61
+    .line 62
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 62
     .line 63
     .line 64
+    .line 65
     iput-object p1, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->l0:Landroid/graphics/Matrix;
 
-    .line 65
     .line 66
+    .line 67
     return-void
 .end method
 
@@ -197,7 +198,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->i0:LoJ8;
+    iget-object v0, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->i0:LNQ8;
 
     .line 5
     .line 6
@@ -208,7 +209,7 @@
 
     .line 8
     .line 9
-    iget-object v0, v0, LoJ8;->a:Ljava/lang/String;
+    iget-object v0, v0, LNQ8;->a:Ljava/lang/String;
 
     .line 10
     .line 11
@@ -266,7 +267,7 @@
     .line 32
     .line 33
     .line 34
-    iget-object v2, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->i0:LoJ8;
+    iget-object v2, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->i0:LNQ8;
 
     .line 35
     .line 36
@@ -274,7 +275,7 @@
 
     .line 37
     .line 38
-    iget-object v2, v2, LoJ8;->b:Landroid/graphics/Bitmap;
+    iget-object v2, v2, LNQ8;->b:Landroid/graphics/Bitmap;
 
     .line 39
     .line 40
@@ -337,7 +338,7 @@
     .line 68
     .line 69
     .line 70
-    iget-object v0, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->i0:LoJ8;
+    iget-object v0, p0, Lcom/snap/talk/ui/peekapeek/PeekAPeekChatView;->i0:LNQ8;
 
     .line 71
     .line 72
@@ -345,7 +346,7 @@
 
     .line 73
     .line 74
-    iget-object v0, v0, LoJ8;->b:Landroid/graphics/Bitmap;
+    iget-object v0, v0, LNQ8;->b:Landroid/graphics/Bitmap;
 
     .line 75
     .line 76
@@ -366,7 +367,7 @@
     .line 83
     .line 84
     .line 85
-    sget-object v1, Li7j;->a:Li7j;
+    sget-object v1, Lewj;->a:Lewj;
 
     .line 86
     .line 87

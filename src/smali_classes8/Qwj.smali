@@ -1,132 +1,108 @@
-.class public final LQwj;
-.super Lcom/snap/composer/utils/b;
+.class public abstract LQwj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'photoBoltContent\':t?,\'lat\':d@?,\'lng\':d@?,\'altitude_m\':d@?,\'timestamp_ms\':d@?"
-    typeReferences = {}
-.end annotation
-
-
-# instance fields
-.field private _altitude_m:Ljava/lang/Double;
-
-.field private _lat:Ljava/lang/Double;
-
-.field private _lng:Ljava/lang/Double;
-
-.field private _photoBoltContent:[B
-
-.field private _timestamp_ms:Ljava/lang/Double;
+# static fields
+.field public static final a:LRE6;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 17
+
+    .line 1
+    new-instance v0, LRE6;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x8
+
+    .line 4
+    .line 5
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v2
+
+    .line 13
+    sget-object v3, LcF6;->a:LcF6;
+
+    .line 14
+    .line 15
+    const/16 v15, 0x3ff9
+
+    .line 16
+    .line 17
+    const/16 v16, 0x0
+
+    .line 18
+    .line 19
+    const/4 v1, 0x0
+
+    .line 20
+    const/4 v4, 0x0
+
+    .line 21
+    const/4 v5, 0x0
+
+    .line 22
+    const/4 v6, 0x0
+
+    .line 23
+    const/4 v7, 0x0
+
+    .line 24
+    const/4 v8, 0x0
+
+    .line 25
+    const/4 v9, 0x0
+
+    .line 26
+    const/4 v10, 0x0
+
+    .line 27
+    const/4 v11, 0x0
+
+    .line 28
+    const/4 v12, 0x0
+
+    .line 29
+    const/4 v13, 0x0
+
+    .line 30
+    const/4 v14, 0x0
+
+    .line 31
+    invoke-direct/range {v0 .. v16}, LRE6;-><init>(ILjava/util/List;LcF6;Ljava/lang/String;LSs9;Lupf;LF1j;ZZLjava/lang/Boolean;Ljava/lang/String;LyJ7;LSs9;ZILex5;)V
+
+    .line 32
+    .line 33
+    .line 34
+    sput-object v0, LQwj;->a:LRE6;
+
+    .line 35
+    .line 36
+    return-void
+.end method
+
+.method public static final synthetic a()LRE6;
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-object v0, p0, LQwj;->_photoBoltContent:[B
-
-    .line 3
-    iput-object v0, p0, LQwj;->_lat:Ljava/lang/Double;
-
-    .line 4
-    iput-object v0, p0, LQwj;->_lng:Ljava/lang/Double;
-
-    .line 5
-    iput-object v0, p0, LQwj;->_altitude_m:Ljava/lang/Double;
-
-    .line 6
-    iput-object v0, p0, LQwj;->_timestamp_ms:Ljava/lang/Double;
-
-    return-void
-.end method
-
-.method public constructor <init>([BLjava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
-    .locals 0
-
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 8
-    iput-object p1, p0, LQwj;->_photoBoltContent:[B
-
-    .line 9
-    iput-object p2, p0, LQwj;->_lat:Ljava/lang/Double;
-
-    .line 10
-    iput-object p3, p0, LQwj;->_lng:Ljava/lang/Double;
-
-    .line 11
-    iput-object p4, p0, LQwj;->_altitude_m:Ljava/lang/Double;
-
-    .line 12
-    iput-object p5, p0, LQwj;->_timestamp_ms:Ljava/lang/Double;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Double;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LQwj;->_altitude_m:Ljava/lang/Double;
+    sget-object v0, LQwj;->a:LRE6;
 
     .line 2
     .line 3
-    return-void
-.end method
-
-.method public final b(Ljava/lang/Double;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LQwj;->_lat:Ljava/lang/Double;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final c(Ljava/lang/Double;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LQwj;->_lng:Ljava/lang/Double;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final d([B)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LQwj;->_photoBoltContent:[B
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final e(Ljava/lang/Double;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LQwj;->_timestamp_ms:Ljava/lang/Double;
-
-    .line 2
-    .line 3
-    return-void
+    return-object v0
 .end method

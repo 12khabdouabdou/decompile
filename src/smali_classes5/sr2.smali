@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LBr2;
+.implements Ltr2;
 
 
 # static fields
@@ -33,24 +33,26 @@
 
 
 # virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    sget-object v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
+    check-cast p1, LF22;
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    sget-object p1, LgP6;->a:LgP6;
 
-.method public final f()Lio/reactivex/rxjava3/functions/Consumer;
-    .locals 1
+    .line 4
+    .line 5
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
-    .line 1
-    sget-object v0, LsH0;->x0:LsH0;
+    .line 6
+    .line 7
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
-    .line 2
-    .line 3
+    .line 8
+    .line 9
+    .line 10
     return-object v0
 .end method

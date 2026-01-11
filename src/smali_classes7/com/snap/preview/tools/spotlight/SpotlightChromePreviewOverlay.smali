@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LYhh;
+.implements LZEh;
 
 
 # instance fields
@@ -11,7 +11,7 @@
 
 .field public final b:[I
 
-.field public final c:LR77;
+.field public final c:LDc7;
 
 .field public final t:Ljava/util/LinkedHashSet;
 
@@ -39,7 +39,7 @@
 
     iput-object v0, p0, Lcom/snap/preview/tools/spotlight/SpotlightChromePreviewOverlay;->t:Ljava/util/LinkedHashSet;
 
-    const v0, 0x7f0e06f0
+    const v0, 0x7f0e0716
 
     .line 5
     invoke-static {p1, v0, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -50,7 +50,7 @@
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
     .line 7
-    sget-object p1, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 8
     invoke-virtual {p0}, Landroid/view/View;->isLaidOut()Z
@@ -86,17 +86,17 @@
 
     .line 14
     :cond_0
-    new-instance p1, Lqx1;
+    new-instance p1, LDA1;
 
-    const/4 p2, 0x7
+    const/16 p2, 0x9
 
-    invoke-direct {p1, p2, p0}, Lqx1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LDA1;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p0, p1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 15
     :goto_0
-    new-instance p1, LR77;
+    new-instance p1, LDc7;
 
     .line 16
     invoke-static {p0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
@@ -108,9 +108,9 @@
     const/4 v1, 0x0
 
     .line 17
-    invoke-direct {p1, p2, v1, v0}, LR77;-><init>(Ljava/util/List;FI)V
+    invoke-direct {p1, p2, v1, v0}, LDc7;-><init>(Ljava/util/List;FI)V
 
-    iput-object p1, p0, Lcom/snap/preview/tools/spotlight/SpotlightChromePreviewOverlay;->c:LR77;
+    iput-object p1, p0, Lcom/snap/preview/tools/spotlight/SpotlightChromePreviewOverlay;->c:LDc7;
 
     .line 18
     invoke-static {p0}, Lcom/snap/preview/tools/spotlight/SpotlightChromePreviewOverlay;->a(Landroid/view/ViewGroup;)V
@@ -118,7 +118,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2

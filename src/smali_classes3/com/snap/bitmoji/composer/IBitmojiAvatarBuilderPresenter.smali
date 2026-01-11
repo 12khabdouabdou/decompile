@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LcU8;
+    proxyClass = LD19;
     schema = "\'presentAvatarBuilder\':f|m|(f?(s))"
     typeReferences = {}
 .end annotation

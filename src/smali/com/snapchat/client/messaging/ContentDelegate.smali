@@ -31,3 +31,6 @@
         }
     .end annotation
 .end method
+
+.method public abstract onMediaPrefetchComplete(Lcom/snapchat/client/messaging/UUID;JLcom/snapchat/client/messaging/MediaPrefetchResult;)V
+.end method

@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final Companion:LPue;
+.field public static final Companion:LyMe;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LPue;
+    new-instance v0, LyMe;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/chat_reply/QuotedMessageView;->Companion:LPue;
+    sput-object v0, Lcom/snap/chat_reply/QuotedMessageView;->Companion:LyMe;
 
     .line 7
     .line 8
@@ -62,54 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/chat_reply/QuotedMessageView;
-    .locals 6
-
-    sget-object v0, Lcom/snap/chat_reply/QuotedMessageView;->Companion:LPue;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v2, 0x0
-
-    const/16 v5, 0x10
-
-    const/4 v4, 0x0
-
-    move-object v1, p0
-
-    move-object v3, p1
-
-    .line 1
-    invoke-static/range {v0 .. v5}, LPue;->a(LPue;LqZ8;Lcom/snap/chat_reply/QuotedMessageViewModel;LTB3;Lkotlin/jvm/functions/Function1;I)Lcom/snap/chat_reply/QuotedMessageView;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Lcom/snap/chat_reply/QuotedMessageViewModel;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/QuotedMessageView;
+.method public static final create(LZ69;Lcom/snap/chat_reply/QuotedMessageViewModel;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/chat_reply/QuotedMessageView;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
+            "LZ69;",
             "Lcom/snap/chat_reply/QuotedMessageViewModel;",
             "Ljava/lang/Object;",
-            "LTB3;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/chat_reply/QuotedMessageView;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/chat_reply/QuotedMessageView;->Companion:LPue;
+    sget-object v0, Lcom/snap/chat_reply/QuotedMessageView;->Companion:LyMe;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     new-instance v2, Lcom/snap/chat_reply/QuotedMessageView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -133,7 +108,32 @@
     move-object v7, p4
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/chat_reply/QuotedMessageView;
+    .locals 6
+
+    sget-object v0, Lcom/snap/chat_reply/QuotedMessageView;->Companion:LyMe;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v2, 0x0
+
+    const/16 v5, 0x10
+
+    const/4 v4, 0x0
+
+    move-object v1, p0
+
+    move-object v3, p1
+
+    .line 1
+    invoke-static/range {v0 .. v5}, LyMe;->a(LyMe;LZ69;Lcom/snap/chat_reply/QuotedMessageViewModel;LvF3;Lkotlin/jvm/functions/Function1;I)Lcom/snap/chat_reply/QuotedMessageView;
+
+    move-result-object p0
+
+    return-object p0
 .end method

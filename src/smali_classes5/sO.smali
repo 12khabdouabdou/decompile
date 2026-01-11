@@ -1,197 +1,177 @@
-.class public final LsO;
-.super Ljava/lang/Object;
+.class public final enum LsO;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
+# static fields
+.field public static final synthetic X:[LsO;
 
-# instance fields
-.field public final synthetic a:LtO;
+.field public static final enum a:LsO;
+
+.field public static final enum b:LsO;
+
+.field public static final enum c:LsO;
+
+.field public static final enum t:LsO;
 
 
 # direct methods
-.method public constructor <init>(LtO;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
-    .line 4
-    iput-object p1, p0, LsO;->a:LtO;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 3
-
-    .line 1
-    check-cast p1, LDU9;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, LsO;->a:LtO;
+    const/4 v2, 0x1
 
     .line 4
+    const/4 v3, 0x0
+
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v4, LsO;
 
     .line 6
     .line 7
+    const-string v5, "AVAILABLE_FRESH"
+
     .line 8
-    instance-of v1, p1, LAU9;
-
     .line 9
-    .line 10
-    if-eqz v1, :cond_0
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 10
     .line 11
     .line 12
-    new-instance v1, LFN$p$b$a;
+    sput-object v4, LsO;->a:LsO;
 
     .line 13
     .line 14
-    iget-object v2, v0, LtO;->a:LGS9;
+    new-instance v5, LsO;
 
     .line 15
     .line 16
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    const-string v6, "AVAILABLE_THROTTLING"
 
     .line 17
     .line 18
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 19
-    move-result v2
-
     .line 20
-    packed-switch v2, :pswitch_data_0
-
     .line 21
+    sput-object v5, LsO;->b:LsO;
+
     .line 22
     .line 23
-    new-instance p1, LFzc;
+    new-instance v6, LsO;
 
     .line 24
     .line 25
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+    const-string v7, "AVAIlABLE_LAST_KNOWN"
 
     .line 26
     .line 27
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 28
-    throw p1
-
     .line 29
-    :pswitch_0
-    sget-object v2, LyL;->a:LyL;
-
     .line 30
-    .line 31
-    goto :goto_0
+    sput-object v6, LsO;->c:LsO;
 
+    .line 31
     .line 32
-    :pswitch_1
-    sget-object v2, LvL;->a:LvL;
+    new-instance v7, LsO;
 
     .line 33
     .line 34
-    goto :goto_0
+    const-string v8, "NOT_AVAILABLE"
 
     .line 35
-    :pswitch_2
-    sget-object v2, LsL;->a:LsL;
-
     .line 36
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 37
-    goto :goto_0
-
     .line 38
-    :pswitch_3
-    sget-object v2, LrL;->a:LrL;
-
     .line 39
-    .line 40
-    goto :goto_0
+    sput-object v7, LsO;->t:LsO;
 
+    .line 40
     .line 41
-    :pswitch_4
-    sget-object v2, LuL;->a:LuL;
+    const/4 v8, 0x4
 
     .line 42
-    .line 43
-    goto :goto_0
+    new-array v8, v8, [LsO;
 
+    .line 43
     .line 44
-    :pswitch_5
-    sget-object v2, LxL;->a:LxL;
+    aput-object v4, v8, v3
 
     .line 45
     .line 46
-    goto :goto_0
+    aput-object v5, v8, v2
 
     .line 47
-    :pswitch_6
-    sget-object v2, LtL;->a:LtL;
-
     .line 48
-    .line 49
-    :goto_0
-    invoke-direct {v1, v2}, LFN$p$b$a;-><init>(LzL;)V
+    aput-object v6, v8, v1
 
+    .line 49
     .line 50
+    aput-object v7, v8, v0
+
     .line 51
     .line 52
-    goto :goto_1
+    sput-object v8, LsO;->X:[LsO;
 
     .line 53
-    :cond_0
-    const/4 v1, 0x0
-
     .line 54
-    :goto_1
-    if-eqz v1, :cond_1
-
-    .line 55
-    .line 56
-    iget-object v2, v0, LtO;->b:LIN;
-
-    .line 57
-    .line 58
-    invoke-interface {v2, v1}, LIN;->a(LFN;)V
-
-    .line 59
-    .line 60
-    .line 61
-    :cond_1
-    iget-object v0, v0, LtO;->c:LDD5;
-
-    .line 62
-    .line 63
-    iget-object v0, v0, LDD5;->f0:LjA5;
-
-    .line 64
-    .line 65
-    invoke-virtual {v0, p1}, LjA5;->accept(Ljava/lang/Object;)V
-
-    .line 66
-    .line 67
-    .line 68
     return-void
+.end method
 
-    .line 69
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+.method public static valueOf(Ljava/lang/String;)LsO;
+    .locals 1
+
+    .line 1
+    const-class v0, LsO;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LsO;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LsO;
+    .locals 1
+
+    .line 1
+    sget-object v0, LsO;->X:[LsO;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LsO;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

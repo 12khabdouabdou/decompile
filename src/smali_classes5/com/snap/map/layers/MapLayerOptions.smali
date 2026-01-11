@@ -1,15 +1,15 @@
 .class public final Lcom/snap/map/layers/MapLayerOptions;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'userAvatarId\':s?,\'headerTitle\':s?,\'headerImageUrl\':s?,\'headerImageBackgroundColor\':d@?,\'headerSubtitleObservable\':g?<c>:\'[0]\'<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lz0b;
+        LBdb;
     }
 .end annotation
 
@@ -23,7 +23,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lz0b;",
+            "LBdb;",
             ">;"
         }
     .end annotation
@@ -71,7 +71,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/Double;",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lz0b;",
+            "LBdb;",
             ">;)V"
         }
     .end annotation

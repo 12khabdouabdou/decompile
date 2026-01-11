@@ -70,7 +70,7 @@
     if-nez p1, :cond_0
 
     .line 5
-    sget-object p1, LqB9;->a:LqB9;
+    sget-object p1, LIK9;->a:LIK9;
 
     .line 6
     :cond_0
@@ -89,7 +89,7 @@
 
     if-nez p1, :cond_0
 
-    sget-object p1, LqB9;->a:LqB9;
+    sget-object p1, LIK9;->a:LIK9;
 
     goto :goto_0
 
@@ -114,7 +114,7 @@
 
     if-nez p1, :cond_0
 
-    sget-object p1, LqB9;->a:LqB9;
+    sget-object p1, LIK9;->a:LIK9;
 
     goto :goto_0
 
@@ -139,7 +139,7 @@
 
     if-nez p1, :cond_0
 
-    sget-object p1, LqB9;->a:LqB9;
+    sget-object p1, LIK9;->a:LIK9;
 
     goto :goto_0
 
@@ -164,7 +164,7 @@
 
     if-nez p1, :cond_0
 
-    sget-object p1, LqB9;->a:LqB9;
+    sget-object p1, LIK9;->a:LIK9;
 
     goto :goto_0
 

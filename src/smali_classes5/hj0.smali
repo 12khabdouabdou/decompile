@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+.implements Lio/reactivex/rxjava3/functions/Predicate;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+.field public final synthetic b:Lb89;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
+.method public synthetic constructor <init>(Lb89;I)V
     .locals 0
 
     .line 1
     iput p2, p0, Lhj0;->a:I
 
-    iput-object p1, p0, Lhj0;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iput-object p1, p0, Lhj0;->b:Lb89;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
 
 
 # virtual methods
-.method public final run()V
+.method public final test(Ljava/lang/Object;)Z
     .locals 2
 
     .line 1
@@ -41,67 +41,142 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lhj0;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    check-cast p1, Lku2;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onComplete()V
+    invoke-virtual {p1}, Lku2;->g()Lb89;
 
     .line 9
     .line 10
     .line 11
-    return-void
+    move-result-object p1
 
     .line 12
-    :pswitch_0
-    iget-object v0, p0, Lhj0;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iget-object v0, p0, Lhj0;->b:Lb89;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onComplete()V
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 15
     .line 16
     .line 17
-    return-void
+    move-result p1
 
     .line 18
-    :pswitch_1
-    iget-object v0, p0, Lhj0;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    return p1
 
     .line 19
-    .line 20
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onComplete()V
+    :pswitch_0
+    check-cast p1, LDu2;
 
+    .line 20
     .line 21
+    iget-object p1, p1, LDu2;->c:Lms2;
+
     .line 22
     .line 23
-    return-void
+    invoke-virtual {p1}, Lms2;->a()Lb89;
 
     .line 24
-    :pswitch_2
-    sget-object v0, Li7j;->a:Li7j;
-
     .line 25
     .line 26
-    iget-object v1, p0, Lhj0;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    move-result-object p1
 
     .line 27
-    .line 28
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+    iget-object v0, p0, Lhj0;->b:Lb89;
 
+    .line 28
     .line 29
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 30
     .line 31
-    return-void
-
     .line 32
-    nop
+    move-result p1
 
     .line 33
+    return p1
+
+    .line 34
+    :pswitch_1
+    check-cast p1, LEf2;
+
+    .line 35
+    .line 36
+    instance-of v0, p1, Lzf2;
+
+    .line 37
+    .line 38
+    iget-object v1, p0, Lhj0;->b:Lb89;
+
+    .line 39
+    .line 40
+    if-eqz v0, :cond_0
+
+    .line 41
+    .line 42
+    check-cast p1, Lzf2;
+
+    .line 43
+    .line 44
+    iget-object p1, p1, Lzf2;->a:LY79;
+
+    .line 45
+    .line 46
+    invoke-static {p1, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 47
+    .line 48
+    .line 49
+    move-result p1
+
+    .line 50
+    goto :goto_0
+
+    .line 51
+    :cond_0
+    instance-of v0, p1, LBf2;
+
+    .line 52
+    .line 53
+    if-eqz v0, :cond_1
+
+    .line 54
+    .line 55
+    check-cast p1, LBf2;
+
+    .line 56
+    .line 57
+    iget-object p1, p1, LBf2;->a:LY79;
+
+    .line 58
+    .line 59
+    invoke-static {p1, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 60
+    .line 61
+    .line 62
+    move-result p1
+
+    .line 63
+    goto :goto_0
+
+    .line 64
+    :cond_1
+    const/4 p1, 0x1
+
+    .line 65
+    :goto_0
+    return p1
+
+    .line 66
+    nop
+
+    .line 67
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

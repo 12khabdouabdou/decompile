@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LR3b;
+    proxyClass = Lihb;
     schema = "\'handleCloseTray\':f|m|(b)"
     typeReferences = {}
 .end annotation

@@ -4,11 +4,21 @@
 
 
 # instance fields
-.field public final a:J
+.field public final a:I
+
+.field public final b:I
+
+.field public final c:I
+
+.field public final d:Z
+
+.field public final e:Z
+
+.field public final f:Z
 
 
 # direct methods
-.method public constructor <init>(J)V
+.method public constructor <init>(IIIZZZ)V
     .locals 0
 
     .line 1
@@ -17,17 +27,37 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, LVcg;->a:J
+    iput p1, p0, LVcg;->a:I
 
     .line 5
     .line 6
+    iput p2, p0, LVcg;->b:I
+
+    .line 7
+    .line 8
+    iput p3, p0, LVcg;->c:I
+
+    .line 9
+    .line 10
+    iput-boolean p4, p0, LVcg;->d:Z
+
+    .line 11
+    .line 12
+    iput-boolean p5, p0, LVcg;->e:Z
+
+    .line 13
+    .line 14
+    iput-boolean p6, p0, LVcg;->f:Z
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+    .locals 4
 
     .line 1
     const/4 v0, 0x1
@@ -60,63 +90,231 @@
 
     .line 12
     .line 13
-    iget-wide v3, p0, LVcg;->a:J
+    iget v1, p1, LVcg;->a:I
 
     .line 14
     .line 15
-    iget-wide v5, p1, LVcg;->a:J
+    iget v3, p0, LVcg;->a:I
 
     .line 16
     .line 17
-    cmp-long p1, v3, v5
+    if-eq v3, v1, :cond_2
 
     .line 18
     .line 19
-    if-eqz p1, :cond_2
-
-    .line 20
-    .line 21
     return v2
 
-    .line 22
+    .line 20
     :cond_2
+    iget v1, p0, LVcg;->b:I
+
+    .line 21
+    .line 22
+    iget v3, p1, LVcg;->b:I
+
+    .line 23
+    .line 24
+    if-eq v1, v3, :cond_3
+
+    .line 25
+    .line 26
+    return v2
+
+    .line 27
+    :cond_3
+    iget v1, p0, LVcg;->c:I
+
+    .line 28
+    .line 29
+    iget v3, p1, LVcg;->c:I
+
+    .line 30
+    .line 31
+    if-eq v1, v3, :cond_4
+
+    .line 32
+    .line 33
+    return v2
+
+    .line 34
+    :cond_4
+    iget-boolean v1, p0, LVcg;->d:Z
+
+    .line 35
+    .line 36
+    iget-boolean v3, p1, LVcg;->d:Z
+
+    .line 37
+    .line 38
+    if-eq v1, v3, :cond_5
+
+    .line 39
+    .line 40
+    return v2
+
+    .line 41
+    :cond_5
+    iget-boolean v1, p0, LVcg;->e:Z
+
+    .line 42
+    .line 43
+    iget-boolean v3, p1, LVcg;->e:Z
+
+    .line 44
+    .line 45
+    if-eq v1, v3, :cond_6
+
+    .line 46
+    .line 47
+    return v2
+
+    .line 48
+    :cond_6
+    iget-boolean v1, p0, LVcg;->f:Z
+
+    .line 49
+    .line 50
+    iget-boolean p1, p1, LVcg;->f:Z
+
+    .line 51
+    .line 52
+    if-eq v1, p1, :cond_7
+
+    .line 53
+    .line 54
+    return v2
+
+    .line 55
+    :cond_7
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 5
+    .locals 4
 
     .line 1
-    const/16 v0, 0x20
+    iget v0, p0, LVcg;->a:I
 
     .line 2
     .line 3
-    iget-wide v1, p0, LVcg;->a:J
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 4
     .line 5
-    ushr-long v3, v1, v0
+    iget v1, p0, LVcg;->b:I
 
     .line 6
     .line 7
-    xor-long/2addr v1, v3
+    add-int/2addr v0, v1
 
     .line 8
-    long-to-int v0, v1
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 9
+    .line 10
+    iget v1, p0, LVcg;->c:I
+
+    .line 11
+    .line 12
+    add-int/2addr v0, v1
+
+    .line 13
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 14
+    .line 15
+    const/16 v1, 0x4d5
+
+    .line 16
+    .line 17
+    const/16 v2, 0x4cf
+
+    .line 18
+    .line 19
+    iget-boolean v3, p0, LVcg;->d:Z
+
+    .line 20
+    .line 21
+    if-eqz v3, :cond_0
+
+    .line 22
+    .line 23
+    const/16 v3, 0x4cf
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_0
+    const/16 v3, 0x4d5
+
+    .line 27
+    .line 28
+    :goto_0
+    add-int/2addr v0, v3
+
+    .line 29
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 30
+    .line 31
+    iget-boolean v3, p0, LVcg;->e:Z
+
+    .line 32
+    .line 33
+    if-eqz v3, :cond_1
+
+    .line 34
+    .line 35
+    const/16 v3, 0x4cf
+
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_1
+    const/16 v3, 0x4d5
+
+    .line 39
+    .line 40
+    :goto_1
+    add-int/2addr v0, v3
+
+    .line 41
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 42
+    .line 43
+    iget-boolean v3, p0, LVcg;->f:Z
+
+    .line 44
+    .line 45
+    if-eqz v3, :cond_2
+
+    .line 46
+    .line 47
+    const/16 v1, 0x4cf
+
+    .line 48
+    .line 49
+    :cond_2
+    add-int/2addr v0, v1
+
+    .line 50
     return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 4
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "ShareSelectionViewCreated(latencyMs="
+    const-string v1, "SendToPagePreloaderFeatureConfig(sectionHeaderViewCount="
 
     .line 4
     .line 5
@@ -125,21 +323,111 @@
     .line 6
     .line 7
     .line 8
-    iget-wide v1, p0, LVcg;->a:J
+    iget v1, p0, LVcg;->a:I
 
     .line 9
     .line 10
-    const-string v3, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
-
     .line 13
+    const-string v1, ", sectionCellViewCount="
+
     .line 14
     .line 15
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
+    .line 17
+    .line 18
+    iget v1, p0, LVcg;->b:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", sectionTwinCellViewCount="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget v1, p0, LVcg;->c:I
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", isPreloadInflationEnabled="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-boolean v1, p0, LVcg;->d:Z
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", isPrefetchedContentViewCleanupEnabled="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-boolean v1, p0, LVcg;->e:Z
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const-string v1, ", isPrefetchedSectionViewMapCleanupEnabled="
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    iget-boolean v1, p0, LVcg;->f:Z
+
+    .line 59
+    .line 60
+    const-string v2, ")"
+
+    .line 61
+    .line 62
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v0
+
+    .line 66
     return-object v0
 .end method

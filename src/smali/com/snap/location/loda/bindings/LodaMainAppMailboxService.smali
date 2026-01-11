@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:LGEa;
+.field public a:LPQa;
 
-.field public final b:LHEa;
+.field public final b:LQQa;
 
 
 # direct methods
@@ -19,16 +19,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LHEa;
+    new-instance v0, LQQa;
 
     .line 5
     .line 6
-    invoke-direct {v0, p0}, LHEa;-><init>(Lcom/snap/location/loda/bindings/LodaMainAppMailboxService;)V
+    invoke-direct {v0, p0}, LQQa;-><init>(Lcom/snap/location/loda/bindings/LodaMainAppMailboxService;)V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lcom/snap/location/loda/bindings/LodaMainAppMailboxService;->b:LHEa;
+    iput-object v0, p0, Lcom/snap/location/loda/bindings/LodaMainAppMailboxService;->b:LQQa;
 
     .line 10
     .line 11
@@ -41,7 +41,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/snap/location/loda/bindings/LodaMainAppMailboxService;->b:LHEa;
+    iget-object p1, p0, Lcom/snap/location/loda/bindings/LodaMainAppMailboxService;->b:LQQa;
 
     .line 2
     .line 3
@@ -52,7 +52,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, LCq9;->x0(Landroid/app/Service;)V
+    invoke-static {p0}, LbS2;->v(Landroid/app/Service;)V
 
     .line 2
     .line 3

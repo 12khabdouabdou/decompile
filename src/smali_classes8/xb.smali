@@ -1,66 +1,105 @@
-.class public final Lxb;
-.super Lo17;
+.class public abstract synthetic Lxb;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final synthetic a:[I
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-static {}, LDI6;->values()[LDI6;
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    move-result-object v0
 
     .line 5
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    array-length v0, v0
 
     .line 6
-    .line 7
-    const/4 v0, -0x1
+    new-array v0, v0, [I
 
+    .line 7
     .line 8
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+    const/4 v1, 0x0
 
     .line 9
+    const/4 v2, 0x1
+
     .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 1
-
-    .line 1
-    :cond_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_1
-
-    .line 6
-    .line 7
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
+    :try_start_0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 11
-    if-nez v0, :cond_0
-
     .line 12
+    :catch_0
+    const/4 v3, 0x4
+
     .line 13
-    :cond_1
-    return-object p0
+    const/4 v4, 0x2
+
+    .line 14
+    :try_start_1
+    aput v4, v0, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 15
+    .line 16
+    :catch_1
+    const/4 v3, 0x3
+
+    .line 17
+    :try_start_2
+    aput v3, v0, v2
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 18
+    .line 19
+    :catch_2
+    sput-object v0, Lxb;->a:[I
+
+    .line 20
+    .line 21
+    invoke-static {}, Lwb;->values()[Lwb;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    array-length v0, v0
+
+    .line 26
+    new-array v0, v0, [I
+
+    .line 27
+    .line 28
+    :try_start_3
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 29
+    .line 30
+    :catch_3
+    :try_start_4
+    aput v4, v0, v2
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 31
+    .line 32
+    :catch_4
+    return-void
 .end method

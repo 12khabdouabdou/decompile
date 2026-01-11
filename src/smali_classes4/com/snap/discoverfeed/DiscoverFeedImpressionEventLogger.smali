@@ -7,21 +7,18 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lhf6;
+    proxyClass = LFi6;
     schema = "\'onImpressionEvents\':f|m, w|(a<r:\'[0]\'>),\'onSettledImpressionEvents\':f|m, w|(a<r:\'[0]\'>),\'onFirstRender\':f|m, w|(d, d),\'observeTrigger\':f?|m|(f(d@)): f()"
     typeReferences = {
-        Lgf6;
+        LEi6;
     }
 .end annotation
 
 
 # virtual methods
 .method public abstract observeTrigger(Lkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -29,6 +26,9 @@
             ")",
             "Lkotlin/jvm/functions/Function0;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -40,7 +40,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lgf6;",
+            "LEi6;",
             ">;)V"
         }
     .end annotation
@@ -51,7 +51,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lgf6;",
+            "LEi6;",
             ">;)V"
         }
     .end annotation

@@ -1,74 +1,15 @@
 .class public final LgO2;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'onTap\':f(r?:\'[0]\'),\'snapPlayerViewFactory\':r:\'[1]\',\'mediaObservable\':g?<c>:\'[2]\'<r:\'[3]\'>,\'messageVisibilityObservable\':g?<c>:\'[2]\'<b@>,\'displayStateLogger\':r?:\'[4]\'"
-    typeReferences = {
-        Lcom/snap/composer/nodes/IComposerViewNode;,
-        Lcom/snap/composer/ViewFactory;,
-        Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lcom/snap/modules/chat_media/ChatMediaData;,
-        Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;
-    }
-.end annotation
-
-
 # instance fields
-.field private _displayStateLogger:Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;
-
-.field private _mediaObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lcom/snap/modules/chat_media/ChatMediaData;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _messageVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _onTap:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1;"
-        }
-    .end annotation
-.end field
-
-.field private _snapPlayerViewFactory:Lcom/snap/composer/ViewFactory;
+.field public final a:LdH2;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lcom/snap/composer/ViewFactory;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;)V
+.method public constructor <init>(LdH2;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1;",
-            "Lcom/snap/composer/ViewFactory;",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lcom/snap/modules/chat_media/ChatMediaData;",
-            ">;",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;",
-            "Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -76,38 +17,168 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LgO2;->_onTap:Lkotlin/jvm/functions/Function1;
+    iput-object p1, p0, LgO2;->a:LdH2;
 
     .line 5
     .line 6
-    iput-object p2, p0, LgO2;->_snapPlayerViewFactory:Lcom/snap/composer/ViewFactory;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LgO2;->_mediaObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LgO2;->_messageVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, LgO2;->_displayStateLogger:Lcom/snap/modules/chat_common/ChatMessageDisplayStateLogging;
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    iput-object p1, p0, LgO2;->_mediaObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    return-void
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, LgO2;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, LgO2;
+
+    .line 10
+    .line 11
+    iget-object p1, p1, LgO2;->a:LdH2;
+
+    .line 12
+    .line 13
+    iget-object v0, p0, LgO2;->a:LdH2;
+
+    .line 14
+    .line 15
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p1
+
+    .line 19
+    if-nez p1, :cond_2
+
+    .line 20
+    .line 21
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 22
+    return p1
+
+    .line 23
+    :cond_2
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 24
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LgO2;->a:LdH2;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LdH2;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit16 v0, v0, 0x745f
+
+    .line 8
+    .line 9
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "ChatPageNavigableEvent(chatContext="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LgO2;->a:LdH2;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", action="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 v1, 0x0
+
+    .line 19
+    invoke-static {v1}, LSq2;->k(I)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string v1, ", entryPoint=null, friendsFeedShortcutType=null)"
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    return-object v0
 .end method

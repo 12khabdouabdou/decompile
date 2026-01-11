@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -22,13 +22,13 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicLong;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;
 
@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;)V
     .locals 0
 
     .line 1
@@ -45,7 +45,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:Lmvi;
 
     .line 5
     .line 6
@@ -128,7 +128,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->d()V
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->b()V
 
     .line 17
     .line 18
@@ -162,7 +162,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->d()V
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->b()V
 
     .line 13
     .line 14

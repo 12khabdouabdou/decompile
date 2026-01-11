@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:LCU3;
+.field public final a:LWY3;
 
 .field public final b:Z
 
 
 # direct methods
-.method public constructor <init>(LCU3;Z)V
+.method public constructor <init>(LWY3;Z)V
     .locals 0
 
     .line 1
@@ -19,7 +19,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnMarkForDeletion;->a:LCU3;
+    iput-object p1, p0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnMarkForDeletion;->a:LWY3;
 
     .line 5
     .line 6

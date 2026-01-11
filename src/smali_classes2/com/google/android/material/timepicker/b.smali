@@ -99,7 +99,7 @@
     sub-int/2addr v1, v3
 
     .line 32
-    iget v3, v0, LZve;->q0:I
+    iget v3, v0, LKNe;->q0:I
 
     .line 33
     .line 34
@@ -107,16 +107,16 @@
 
     .line 35
     .line 36
-    iput v1, v0, LZve;->q0:I
+    iput v1, v0, LKNe;->q0:I
 
     .line 37
     .line 38
-    invoke-virtual {v0}, LZve;->g()V
+    invoke-virtual {v0}, LKNe;->f()V
 
     .line 39
     .line 40
     .line 41
-    iget v1, v0, LZve;->q0:I
+    iget v1, v0, LKNe;->q0:I
 
     .line 42
     .line 43

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lqxj;
+    proxyClass = LEWj;
     schema = "\'provideExitCallback\':f|m|(f(s))"
     typeReferences = {}
 .end annotation

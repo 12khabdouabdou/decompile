@@ -9,7 +9,7 @@
 
 
 # static fields
-.field public static final Companion:LBVa;
+.field public static final Companion:Ll8b;
 
 .field private static final TAG:Ljava/lang/String; = "MapBitmojiImageView"
 
@@ -17,7 +17,7 @@
 # instance fields
 .field private avatarId:Ljava/lang/String;
 
-.field private page:LQ1j;
+.field private page:Lcrj;
 
 .field private stickerId:Ljava/lang/String;
 
@@ -27,7 +27,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LBVa;
+    new-instance v0, Ll8b;
 
     .line 2
     .line 3
@@ -36,7 +36,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/map/composer/MapBitmojiImageView;->Companion:LBVa;
+    sput-object v0, Lcom/snap/map/composer/MapBitmojiImageView;->Companion:Ll8b;
 
     .line 7
     .line 8
@@ -56,7 +56,7 @@
 .end method
 
 .method private final internalSetUri()V
-    .locals 7
+    .locals 6
 
     .line 1
     iget-object v0, p0, Lcom/snap/map/composer/MapBitmojiImageView;->avatarId:Ljava/lang/String;
@@ -75,36 +75,33 @@
 
     .line 8
     .line 9
-    sget-object v2, Lqc7;->l0:Lqc7;
+    sget-object v2, Lfh7;->l0:Lfh7;
 
     .line 10
     .line 11
-    const/4 v4, 0x0
-
-    .line 12
-    const/4 v5, 0x0
-
-    .line 13
     const/4 v3, 0x0
 
+    .line 12
+    const/4 v4, 0x0
+
+    .line 13
+    const/16 v5, 0x10
+
     .line 14
-    const/16 v6, 0x70
-
     .line 15
-    .line 16
-    invoke-static/range {v0 .. v6}, Lew8;->h(Ljava/lang/String;Ljava/lang/String;Lqc7;ZIZI)Landroid/net/Uri;
+    invoke-static/range {v0 .. v5}, LSpk;->f(Ljava/lang/String;Ljava/lang/String;Lfh7;ZII)Landroid/net/Uri;
 
+    .line 16
     .line 17
     .line 18
-    .line 19
     move-result-object v0
 
-    .line 20
+    .line 19
     invoke-virtual {p0, v0}, Lcom/snap/composer/views/ComposerImageView;->setUri(Landroid/net/Uri;)V
 
+    .line 20
     .line 21
     .line 22
-    .line 23
     :cond_0
     return-void
 .end method
@@ -185,11 +182,11 @@
     return-void
 .end method
 
-.method public final setStickerId(Ljava/lang/String;LQ1j;)V
+.method public final setStickerId(Ljava/lang/String;Lcrj;)V
     .locals 0
 
     .line 1
-    iput-object p2, p0, Lcom/snap/map/composer/MapBitmojiImageView;->page:LQ1j;
+    iput-object p2, p0, Lcom/snap/map/composer/MapBitmojiImageView;->page:Lcrj;
 
     .line 2
     .line 3

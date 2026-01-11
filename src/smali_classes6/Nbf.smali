@@ -1,17 +1,14 @@
 .class public final LNbf;
-.super Ljava/lang/Object;
+.super LgYk;
 .source "SourceFile"
-
-# interfaces
-.implements LSbd;
 
 
 # instance fields
-.field public final a:LGa0;
+.field public final a:J
 
 
 # direct methods
-.method public constructor <init>(LGa0;)V
+.method public constructor <init>(J)V
     .locals 0
 
     .line 1
@@ -20,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LNbf;->a:LGa0;
+    iput-wide p1, p0, LNbf;->a:J
 
     .line 5
     .line 6
@@ -29,142 +26,120 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
 
     .line 1
-    sget-object v0, LZF2;->Z:LZF2;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    const-string v1, "RoutingSeenBySubtextProvider"
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    invoke-static {v0, v0, v1}, LEU0;->h(LZF2;LZF2;Ljava/lang/String;)LWm0;
+    :cond_0
+    instance-of v1, p1, LNbf;
 
     .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    move-result-object v0
+    if-nez v1, :cond_1
 
     .line 9
-    iget-object v1, p0, LNbf;->a:LGa0;
-
     .line 10
+    return v2
+
     .line 11
-    invoke-virtual {v1, v0}, LGa0;->c(LWm0;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSubscribe;
+    :cond_1
+    check-cast p1, LNbf;
 
     .line 12
     .line 13
-    .line 14
-    move-result-object v0
+    iget-wide v3, p0, LNbf;->a:J
 
+    .line 14
     .line 15
-    sget-object v1, LbCe;->X:LbCe;
+    iget-wide v5, p1, LNbf;->a:J
 
     .line 16
     .line 17
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    cmp-long p1, v3, v5
 
     .line 18
     .line 19
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    if-eqz p1, :cond_2
 
     .line 20
     .line 21
+    return v2
+
     .line 22
-    new-instance v0, LR6;
-
-    .line 23
-    .line 24
-    const/16 v1, 0x1c
-
-    .line 25
-    .line 26
-    invoke-direct {v0, p1, v1}, LR6;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 30
-    .line 31
-    invoke-direct {p1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 32
-    .line 33
-    .line 34
-    return-object p1
+    :cond_2
+    return v0
 .end method
 
-.method public final b(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .locals 3
+.method public final hashCode()I
+    .locals 5
 
     .line 1
-    sget-object v0, LZF2;->Z:LZF2;
+    const/16 v0, 0x20
 
     .line 2
     .line 3
-    const-string v1, "RoutingSeenBySubtextProvider"
+    iget-wide v1, p0, LNbf;->a:J
 
     .line 4
     .line 5
-    invoke-static {v0, v0, v1}, LEU0;->h(LZF2;LZF2;Ljava/lang/String;)LWm0;
+    ushr-long v3, v1, v0
+
+    .line 6
+    .line 7
+    xor-long/2addr v1, v3
+
+    .line 8
+    long-to-int v0, v1
+
+    .line 9
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "FirstCallRenderAfterItemChanged(elapsedRealtimeMs="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    iget-wide v1, p0, LNbf;->a:J
 
     .line 9
-    iget-object v1, p0, LNbf;->a:LGa0;
-
     .line 10
-    .line 11
-    invoke-virtual {v1, v0}, LGa0;->c(LWm0;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSubscribe;
+    const-string v3, ")"
 
+    .line 11
     .line 12
+    invoke-static {v0, v1, v2, v3}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+
     .line 13
     .line 14
+    .line 15
     move-result-object v0
 
-    .line 15
-    sget-object v1, LbCe;->X:LbCe;
-
     .line 16
-    .line 17
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
-    .line 18
-    .line 19
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 20
-    .line 21
-    .line 22
-    new-instance v0, LLI;
-
-    .line 23
-    .line 24
-    const/16 v1, 0xe
-
-    .line 25
-    .line 26
-    invoke-direct {v0, p1, v1}, LLI;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 30
-    .line 31
-    invoke-direct {p1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 32
-    .line 33
-    .line 34
-    return-object p1
+    return-object v0
 .end method

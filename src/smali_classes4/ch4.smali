@@ -4,12 +4,40 @@
 
 
 # instance fields
-.field public final a:Ljava/security/SecureRandom;
+.field public final a:LQS9;
+
+.field public b:Ljava/util/UUID;
+
+.field public c:Ljava/lang/String;
+
+.field public d:Ljava/lang/String;
+
+.field public e:Ljava/lang/String;
+
+.field public f:LTO9;
+
+.field public g:Z
+
+.field public h:LR3h;
+
+.field public i:Lnh4;
+
+.field public j:Ljava/lang/String;
+
+.field public k:Z
+
+.field public l:Z
+
+.field public m:Z
+
+.field public n:Z
+
+.field public o:Z
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(LQS9;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -17,389 +45,333 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LnFf;->a:Ljava/security/SecureRandom;
+    iput-object p1, p0, Lch4;->a:LQS9;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lch4;->a:Ljava/security/SecureRandom;
+    sget-object p1, LR3h;->b:LR3h;
 
     .line 7
     .line 8
+    iput-object p1, p0, Lch4;->h:LR3h;
+
+    .line 9
+    .line 10
+    sget-object p1, Lnh4;->b:Lnh4;
+
+    .line 11
+    .line 12
+    iput-object p1, p0, Lch4;->i:Lnh4;
+
+    .line 13
+    .line 14
     return-void
-.end method
-
-.method public static a([B[B[BI[B)[B
-    .locals 4
-
-    .line 1
-    invoke-static {}, Lch4;->e()LO28;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    new-instance v1, LZzk;
-
-    .line 6
-    .line 7
-    new-instance v2, LdD9;
-
-    .line 8
-    .line 9
-    array-length v3, p0
-
-    .line 10
-    invoke-direct {v2, p0, v3}, LdD9;-><init>([BI)V
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-direct {v1, v2, p3, p1, p4}, LZzk;-><init>(LdD9;I[B[B)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 p0, 0x0
-
-    .line 17
-    invoke-virtual {v0, p0, v1}, LO28;->d(ZLZzk;)V
-
-    .line 18
-    .line 19
-    .line 20
-    array-length p1, p2
-
-    .line 21
-    invoke-virtual {v0, p1}, LO28;->c(I)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result p1
-
-    .line 25
-    new-array p1, p1, [B
-
-    .line 26
-    .line 27
-    array-length p3, p2
-
-    .line 28
-    invoke-virtual {v0, p2, p0, p1, p3}, LO28;->g([BI[BI)I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p0
-
-    .line 32
-    :try_start_0
-    invoke-virtual {v0, p0, p1}, LO28;->a(I[B)I
-    :try_end_0
-    .catch LKq9; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 33
-    .line 34
-    .line 35
-    return-object p1
-
-    .line 36
-    :catch_0
-    move-exception p0
-
-    .line 37
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    .line 38
-    .line 39
-    invoke-direct {p1, p0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/Throwable;)V
-
-    .line 40
-    .line 41
-    .line 42
-    throw p1
-.end method
-
-.method public static b([B[B[BI[B)[B
-    .locals 4
-
-    .line 1
-    invoke-static {}, Lch4;->e()LO28;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    new-instance v1, LZzk;
-
-    .line 6
-    .line 7
-    new-instance v2, LdD9;
-
-    .line 8
-    .line 9
-    array-length v3, p0
-
-    .line 10
-    invoke-direct {v2, p0, v3}, LdD9;-><init>([BI)V
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-direct {v1, v2, p3, p1, p4}, LZzk;-><init>(LdD9;I[B[B)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 p0, 0x1
-
-    .line 17
-    invoke-virtual {v0, p0, v1}, LO28;->d(ZLZzk;)V
-
-    .line 18
-    .line 19
-    .line 20
-    array-length p0, p2
-
-    .line 21
-    invoke-virtual {v0, p0}, LO28;->c(I)I
-
-    .line 22
-    .line 23
-    .line 24
-    move-result p0
-
-    .line 25
-    new-array p0, p0, [B
-
-    .line 26
-    .line 27
-    array-length p1, p2
-
-    .line 28
-    const/4 p3, 0x0
-
-    .line 29
-    invoke-virtual {v0, p2, p3, p0, p1}, LO28;->g([BI[BI)I
-
-    .line 30
-    .line 31
-    .line 32
-    move-result p1
-
-    .line 33
-    :try_start_0
-    invoke-virtual {v0, p1, p0}, LO28;->a(I[B)I
-    :try_end_0
-    .catch LKq9; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 34
-    .line 35
-    .line 36
-    return-object p0
-
-    .line 37
-    :catch_0
-    move-exception p0
-
-    .line 38
-    new-instance p1, Ljava/security/GeneralSecurityException;
-
-    .line 39
-    .line 40
-    invoke-direct {p1, p0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/Throwable;)V
-
-    .line 41
-    .line 42
-    .line 43
-    throw p1
-.end method
-
-.method public static c([B[B[B)[B
-    .locals 3
-
-    .line 1
-    array-length v0, p1
-
-    .line 2
-    const/16 v1, 0xc
-
-    .line 3
-    .line 4
-    if-le v0, v1, :cond_0
-
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-static {p1, v0, v1}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    array-length v2, p1
-
-    .line 12
-    invoke-static {p1, v1, v2}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    const/16 v1, 0x80
-
-    .line 17
-    .line 18
-    invoke-static {p0, v0, p1, v1, p2}, Lch4;->a([B[B[BI[B)[B
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p0
-
-    .line 22
-    return-object p0
-
-    .line 23
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    .line 24
-    .line 25
-    const-string p1, "Input is not sufficiently long!"
-
-    .line 26
-    .line 27
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 28
-    .line 29
-    .line 30
-    throw p0
-.end method
-
-.method public static e()LO28;
-    .locals 3
-
-    .line 1
-    new-instance v0, LO28;
-
-    .line 2
-    .line 3
-    new-instance v1, LQ;
-
-    .line 4
-    .line 5
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
-
-    .line 6
-    .line 7
-    .line 8
-    const/4 v2, 0x0
-
-    .line 9
-    iput-object v2, v1, LQ;->b:[[I
-
-    .line 10
-    .line 11
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 12
-    .line 13
-    .line 14
-    new-instance v2, LrOh;
-
-    .line 15
-    .line 16
-    invoke-direct {v2}, LrOh;-><init>()V
-
-    .line 17
-    .line 18
-    .line 19
-    iput-object v1, v0, LO28;->a:LQ;
-
-    .line 20
-    .line 21
-    iput-object v2, v0, LO28;->b:LrOh;
-
-    .line 22
-    .line 23
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final d([B[B[B)[B
-    .locals 2
+.method public final a(LCg4;)V
+    .locals 1
 
     .line 1
-    const/16 v0, 0xc
+    iget-object v0, p0, Lch4;->b:Ljava/util/UUID;
 
     .line 2
     .line 3
-    new-array v0, v0, [B
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    iget-object v1, p0, Lch4;->a:Ljava/security/SecureRandom;
+    invoke-virtual {v0}, Ljava/util/UUID;->toString()Ljava/lang/String;
 
     .line 6
     .line 7
-    invoke-virtual {v1, v0}, Ljava/security/SecureRandom;->nextBytes([B)V
-
     .line 8
+    move-result-object v0
+
     .line 9
+    goto :goto_0
+
     .line 10
-    const/16 v1, 0x80
+    :cond_0
+    const/4 v0, 0x0
 
     .line 11
-    .line 12
-    invoke-static {p1, v0, p2, v1, p3}, Lch4;->b([B[B[BI[B)[B
+    :goto_0
+    iput-object v0, p1, LEV6;->G:Ljava/lang/String;
 
+    .line 12
     .line 13
+    iget-object v0, p0, Lch4;->c:Ljava/lang/String;
+
     .line 14
     .line 15
-    move-result-object p1
+    iput-object v0, p1, Lv4h;->s0:Ljava/lang/String;
 
     .line 16
-    const/4 p2, 0x2
-
     .line 17
-    new-array p2, p2, [[B
+    iget-object v0, p0, Lch4;->d:Ljava/lang/String;
 
     .line 18
     .line 19
-    const/4 p3, 0x0
+    iput-object v0, p1, Lv4h;->p0:Ljava/lang/String;
 
     .line 20
-    aput-object v0, p2, p3
-
     .line 21
-    .line 22
-    const/4 p3, 0x1
+    iget-object v0, p0, Lch4;->e:Ljava/lang/String;
 
+    .line 22
     .line 23
-    aput-object p1, p2, p3
+    iput-object v0, p1, Lv4h;->r0:Ljava/lang/String;
 
     .line 24
     .line 25
-    invoke-static {p2}, LFm;->b([[B)[B
+    iget-object v0, p0, Lch4;->f:LTO9;
 
     .line 26
     .line 27
+    if-eqz v0, :cond_1
+
     .line 28
+    .line 29
+    iput-object v0, p1, Lv4h;->t0:LTO9;
+
+    .line 30
+    .line 31
+    :cond_1
+    sget-object v0, LUO9;->Y:LUO9;
+
+    .line 32
+    .line 33
+    iput-object v0, p1, Lv4h;->q0:LUO9;
+
+    .line 34
+    .line 35
+    iget-object v0, p0, Lch4;->j:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    iput-object v0, p1, LCg4;->D0:Ljava/lang/String;
+
+    .line 38
+    .line 39
+    iget-object v0, p0, Lch4;->i:Lnh4;
+
+    .line 40
+    .line 41
+    iput-object v0, p1, LCg4;->w0:Lnh4;
+
+    .line 42
+    .line 43
+    iget-object v0, p0, Lch4;->h:LR3h;
+
+    .line 44
+    .line 45
+    iput-object v0, p1, LCg4;->v0:LR3h;
+
+    .line 46
+    .line 47
+    iget-boolean v0, p0, Lch4;->k:Z
+
+    .line 48
+    .line 49
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v0
+
+    .line 53
+    iput-object v0, p1, LCg4;->x0:Ljava/lang/Boolean;
+
+    .line 54
+    .line 55
+    iget-boolean v0, p0, Lch4;->l:Z
+
+    .line 56
+    .line 57
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v0
+
+    .line 61
+    iput-object v0, p1, LCg4;->y0:Ljava/lang/Boolean;
+
+    .line 62
+    .line 63
+    iget-boolean v0, p0, Lch4;->m:Z
+
+    .line 64
+    .line 65
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    iput-object v0, p1, LCg4;->z0:Ljava/lang/Boolean;
+
+    .line 70
+    .line 71
+    iget-boolean v0, p0, Lch4;->n:Z
+
+    .line 72
+    .line 73
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v0
+
+    .line 77
+    iput-object v0, p1, LCg4;->A0:Ljava/lang/Boolean;
+
+    .line 78
+    .line 79
+    iget-boolean v0, p0, Lch4;->o:Z
+
+    .line 80
+    .line 81
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v0
+
+    .line 85
+    iput-object v0, p1, LCg4;->B0:Ljava/lang/Boolean;
+
+    .line 86
+    .line 87
+    iget-boolean v0, p0, Lch4;->g:Z
+
+    .line 88
+    .line 89
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v0
+
+    .line 93
+    iput-object v0, p1, Lv4h;->u0:Ljava/lang/Boolean;
+
+    .line 94
+    .line 95
+    return-void
+.end method
+
+.method public final b(LXg4;Ljava/lang/Integer;Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, LYg4;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, LYg4;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0, v0}, Lch4;->a(LCg4;)V
+
+    .line 7
+    .line 8
+    .line 9
+    iget-boolean v1, p1, LXg4;->a:Z
+
+    .line 10
+    .line 11
+    xor-int/lit8 v1, v1, 0x1
+
+    .line 12
+    .line 13
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    iput-object v1, v0, LYg4;->E0:Ljava/lang/Boolean;
+
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
     move-result-object p1
 
+    .line 23
+    iput-object p1, v0, LYg4;->F0:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    if-eqz p2, :cond_0
+
+    .line 26
+    .line 27
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    .line 28
     .line 29
-    return-object p1
+    .line 30
+    move-result p1
+
+    .line 31
+    int-to-long p1, p1
+
+    .line 32
+    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iput-object p1, v0, LYg4;->G0:Ljava/lang/Long;
+
+    .line 37
+    .line 38
+    :cond_0
+    iput-object p3, v0, LYg4;->H0:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    iget-object p1, p0, Lch4;->a:LQS9;
+
+    .line 41
+    .line 42
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    check-cast p1, Lbe1;
+
+    .line 47
+    .line 48
+    invoke-interface {p1, v0}, LlW6;->e(LEV6;)V
+
+    .line 49
+    .line 50
+    .line 51
+    return-void
 .end method

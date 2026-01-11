@@ -14,13 +14,13 @@
 
 .field public final f0:Landroid/graphics/Paint;
 
-.field public final g0:F
+.field public g0:F
 
-.field public final h0:F
+.field public h0:F
 
-.field public final i0:F
+.field public i0:F
 
-.field public final j0:F
+.field public j0:F
 
 .field public final k0:I
 
@@ -68,12 +68,12 @@
 
     .line 10
     .line 11
-    const v3, 0x7f06020b
+    const v3, 0x7f060263
 
     .line 12
     .line 13
     .line 14
-    invoke-static {v1, v3}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v1, v3}, LV14;->c(Landroid/content/Context;I)I
 
     .line 15
     .line 16
@@ -81,12 +81,12 @@
     move-result v3
 
     .line 18
-    const v4, 0x7f06049b
+    const v4, 0x7f060569
 
     .line 19
     .line 20
     .line 21
-    invoke-static {v1, v4}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v1, v4}, LV14;->c(Landroid/content/Context;I)I
 
     .line 22
     .line 23
@@ -94,12 +94,12 @@
     move-result v4
 
     .line 25
-    const v5, 0x7f060214
+    const v5, 0x7f06026c
 
     .line 26
     .line 27
     .line 28
-    invoke-static {v1, v5}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v1, v5}, LV14;->c(Landroid/content/Context;I)I
 
     .line 29
     .line 30
@@ -107,12 +107,12 @@
     move-result v5
 
     .line 32
-    const v6, 0x7f060327
+    const v6, 0x7f0603af
 
     .line 33
     .line 34
     .line 35
-    invoke-static {v1, v6}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v1, v6}, LV14;->c(Landroid/content/Context;I)I
 
     .line 36
     .line 37
@@ -128,7 +128,7 @@
     move-result-object v7
 
     .line 43
-    const v8, 0x7f070637
+    const v8, 0x7f070663
 
     .line 44
     .line 45
@@ -152,7 +152,7 @@
     move-result-object v8
 
     .line 55
-    const v9, 0x7f07062f
+    const v9, 0x7f07065b
 
     .line 56
     .line 57
@@ -180,7 +180,7 @@
     move-result-object v9
 
     .line 69
-    const v10, 0x7f070631
+    const v10, 0x7f07065d
 
     .line 70
     .line 71
@@ -208,7 +208,7 @@
     move-result-object v10
 
     .line 83
-    const v11, 0x7f070636
+    const v11, 0x7f070662
 
     .line 84
     .line 85
@@ -236,7 +236,7 @@
     move-result-object v10
 
     .line 97
-    const v11, 0x7f070632
+    const v11, 0x7f07065e
 
     .line 98
     .line 99
@@ -264,7 +264,7 @@
     move-result-object v10
 
     .line 111
-    const v11, 0x7f070634
+    const v11, 0x7f070660
 
     .line 112
     .line 113
@@ -292,7 +292,7 @@
     move-result-object v10
 
     .line 125
-    const v11, 0x7f070638
+    const v11, 0x7f070664
 
     .line 126
     .line 127
@@ -316,7 +316,7 @@
     move-result-object v11
 
     .line 137
-    const v12, 0x7f070633
+    const v12, 0x7f07065f
 
     .line 138
     .line 139
@@ -351,7 +351,7 @@
 
     .line 153
     .line 154
-    invoke-static {v2}, Llva;->o(Z)Landroid/graphics/Paint;
+    invoke-static {v2}, LJF0;->l(Z)Landroid/graphics/Paint;
 
     .line 155
     .line 156
@@ -417,7 +417,7 @@
 
     .line 189
     .line 190
-    invoke-static {v15, v1}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {v15, v1}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 191
     .line 192
@@ -479,7 +479,7 @@
 
     .line 223
     .line 224
-    invoke-static {v14, v1}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {v14, v1}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 225
     .line 226
@@ -525,7 +525,7 @@
     .line 248
     .line 249
     .line 250
-    invoke-static {v15, v1}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {v15, v1}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 251
     .line 252
@@ -805,11 +805,11 @@
 
     .line 57
     :cond_2
-    sub-float v10, v5, v1
+    iget v7, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
 
     .line 58
     .line 59
-    iget v7, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
+    sub-float v10, v5, v1
 
     .line 60
     .line 61
@@ -864,11 +864,11 @@
 
     .line 84
     :cond_3
-    add-float v11, v5, v1
+    iget v10, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
 
     .line 85
     .line 86
-    iget v10, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
+    add-float v11, v5, v1
 
     .line 87
     .line 88
@@ -885,22 +885,22 @@
     .line 93
     .line 94
     :goto_1
-    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->r0:I
+    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
 
     .line 95
     .line 96
-    div-int/lit8 v5, v1, 0x2
+    iget v5, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->r0:I
 
     .line 97
     .line 98
-    int-to-float v5, v5
+    div-int/lit8 v6, v5, 0x2
 
     .line 99
-    iget v6, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
-
     .line 100
+    int-to-float v6, v6
+
     .line 101
-    sub-float v16, v6, v5
+    sub-float v16, v1, v6
 
     .line 102
     .line 103
@@ -911,15 +911,15 @@
     sub-float/2addr v7, v2
 
     .line 106
-    sub-float v17, v7, v5
+    sub-float v17, v7, v6
 
     .line 107
     .line 108
-    add-float v18, v6, v5
+    add-float v18, v1, v6
 
     .line 109
     .line 110
-    iget-object v5, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->e0:Landroid/graphics/Paint;
+    iget-object v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->e0:Landroid/graphics/Paint;
 
     .line 111
     .line 112
@@ -931,7 +931,7 @@
 
     .line 115
     .line 116
-    move-object/from16 v20, v5
+    move-object/from16 v20, v1
 
     .line 117
     .line 118
@@ -940,22 +940,22 @@
     .line 119
     .line 120
     .line 121
-    move/from16 v5, v16
+    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
 
     .line 122
     .line 123
-    move/from16 v8, v18
+    iget v7, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->i0:F
 
     .line 124
     .line 125
-    int-to-float v1, v1
+    sub-float v19, v7, v2
 
     .line 126
-    sub-float v17, v7, v1
-
     .line 127
+    int-to-float v5, v5
+
     .line 128
-    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
+    sub-float v17, v19, v5
 
     .line 129
     .line 130
@@ -967,36 +967,36 @@
 
     .line 133
     .line 134
-    move/from16 v19, v7
+    invoke-virtual/range {v15 .. v20}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     .line 135
     .line 136
-    invoke-virtual/range {v15 .. v20}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
-
     .line 137
+    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
+
     .line 138
     .line 139
-    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->j0:F
+    sub-float v16, v1, v6
 
     .line 140
     .line 141
-    add-float v17, v1, v2
+    iget v5, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->j0:F
 
     .line 142
     .line 143
-    move/from16 v19, v17
+    add-float v17, v5, v2
 
     .line 144
     .line 145
-    move-object/from16 v15, p1
+    add-float v18, v1, v6
 
     .line 146
     .line 147
-    move/from16 v16, v5
+    move/from16 v19, v17
 
     .line 148
     .line 149
-    move/from16 v18, v8
+    move-object/from16 v15, p1
 
     .line 150
     .line 151
@@ -1005,176 +1005,184 @@
     .line 152
     .line 153
     .line 154
-    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->s0:F
+    iget v1, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
 
     .line 155
     .line 156
-    iget v2, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->n0:I
+    iget v2, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->s0:F
 
     .line 157
     .line 158
-    int-to-float v2, v2
+    iget v5, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->n0:I
 
     .line 159
-    iget-object v5, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->c:Landroid/graphics/Paint;
-
     .line 160
+    int-to-float v5, v5
+
     .line 161
-    move-object/from16 v15, p1
+    iget-object v6, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->c:Landroid/graphics/Paint;
 
     .line 162
     .line 163
-    invoke-virtual {v15, v6, v1, v2, v5}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
+    move-object/from16 v15, p1
 
     .line 164
     .line 165
-    .line 166
-    invoke-virtual {v0}, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->a()F
+    invoke-virtual {v15, v1, v2, v5, v6}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
+    .line 166
     .line 167
     .line 168
+    invoke-virtual {v0}, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->a()F
+
     .line 169
+    .line 170
+    .line 171
     move-result v1
 
-    .line 170
+    .line 172
     :goto_2
     const/16 v2, 0x8
 
-    .line 171
-    .line 172
-    if-ge v4, v2, :cond_4
-
     .line 173
     .line 174
-    int-to-float v2, v4
+    if-ge v4, v2, :cond_4
 
     .line 175
+    .line 176
+    int-to-float v2, v4
+
+    .line 177
     const v5, 0x40490fdb    # (float)Math.PI
 
-    .line 176
-    .line 177
     .line 178
-    mul-float v2, v2, v5
-
     .line 179
     .line 180
-    int-to-float v5, v3
-
-    .line 181
-    div-float/2addr v2, v5
-
-    .line 182
-    float-to-double v7, v2
-
-    .line 183
-    invoke-static {v7, v8}, Ljava/lang/Math;->cos(D)D
-
-    .line 184
-    .line 185
-    .line 186
-    move-result-wide v9
-
-    .line 187
-    double-to-float v2, v9
-
-    .line 188
-    iget v5, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->o0:F
-
-    .line 189
-    .line 190
     mul-float v2, v2, v5
 
+    .line 181
+    .line 182
+    int-to-float v5, v3
+
+    .line 183
+    div-float/2addr v2, v5
+
+    .line 184
+    iget v5, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
+
+    .line 185
+    .line 186
+    float-to-double v6, v2
+
+    .line 187
+    invoke-static {v6, v7}, Ljava/lang/Math;->cos(D)D
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-wide v8
+
     .line 191
+    double-to-float v2, v8
+
     .line 192
-    add-float v16, v2, v6
+    iget v8, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->o0:F
 
     .line 193
     .line 194
-    iget v2, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->s0:F
+    mul-float v2, v2, v8
 
     .line 195
     .line 196
-    invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
+    add-float v16, v2, v5
 
     .line 197
     .line 198
-    .line 199
-    move-result-wide v9
+    iget v2, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->s0:F
 
+    .line 199
     .line 200
-    double-to-float v9, v9
+    invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
     .line 201
-    mul-float v5, v5, v9
-
     .line 202
     .line 203
-    add-float v17, v5, v2
+    move-result-wide v9
 
     .line 204
+    double-to-float v5, v9
+
     .line 205
-    invoke-static {v7, v8}, Ljava/lang/Math;->cos(D)D
+    mul-float v8, v8, v5
 
     .line 206
     .line 207
-    .line 208
-    move-result-wide v9
+    add-float v17, v8, v2
 
+    .line 208
     .line 209
-    double-to-float v2, v9
+    invoke-static {v6, v7}, Ljava/lang/Math;->cos(D)D
 
     .line 210
-    mul-float v2, v2, v1
-
     .line 211
     .line 212
-    add-float v18, v2, v16
+    move-result-wide v8
 
     .line 213
+    double-to-float v2, v8
+
     .line 214
-    invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
+    mul-float v2, v2, v1
 
     .line 215
     .line 216
-    .line 217
-    move-result-wide v7
+    add-float v18, v2, v16
 
+    .line 217
     .line 218
-    double-to-float v2, v7
+    invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
     .line 219
-    mul-float v2, v2, v1
-
     .line 220
     .line 221
-    add-float v19, v2, v17
+    move-result-wide v5
 
     .line 222
+    double-to-float v2, v5
+
     .line 223
-    iget-object v2, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->f0:Landroid/graphics/Paint;
+    mul-float v2, v2, v1
 
     .line 224
     .line 225
-    move-object/from16 v20, v2
+    add-float v19, v2, v17
 
     .line 226
     .line 227
-    invoke-virtual/range {v15 .. v20}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
+    iget-object v2, v0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->f0:Landroid/graphics/Paint;
 
     .line 228
     .line 229
+    move-object/from16 v20, v2
+
     .line 230
-    add-int/lit8 v4, v4, 0x1
-
     .line 231
-    .line 232
-    move-object/from16 v15, p1
+    invoke-virtual/range {v15 .. v20}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
+    .line 232
     .line 233
     .line 234
-    goto :goto_2
+    add-int/lit8 v4, v4, 0x1
 
     .line 235
+    .line 236
+    move-object/from16 v15, p1
+
+    .line 237
+    .line 238
+    goto :goto_2
+
+    .line 239
     :cond_4
     return-void
 .end method
@@ -1192,4 +1200,78 @@
 
     .line 5
     return v0
+.end method
+
+.method public final setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget v0, p1, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    .line 5
+    .line 6
+    int-to-float v0, v0
+
+    .line 7
+    const/high16 v1, 0x40000000    # 2.0f
+
+    .line 8
+    .line 9
+    div-float/2addr v0, v1
+
+    .line 10
+    iput v0, p0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->g0:F
+
+    .line 11
+    .line 12
+    iget p1, p1, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    .line 13
+    .line 14
+    int-to-float p1, p1
+
+    .line 15
+    div-float/2addr p1, v1
+
+    .line 16
+    iput p1, p0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->h0:F
+
+    .line 17
+    .line 18
+    iget v0, p0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->k0:I
+
+    .line 19
+    .line 20
+    div-int/lit8 v0, v0, 0x2
+
+    .line 21
+    .line 22
+    int-to-float v0, v0
+
+    .line 23
+    sub-float v1, p1, v0
+
+    .line 24
+    .line 25
+    iput v1, p0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->i0:F
+
+    .line 26
+    .line 27
+    add-float/2addr v0, p1
+
+    .line 28
+    iput v0, p0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->j0:F
+
+    .line 29
+    .line 30
+    iput p1, p0, Lcom/snap/camera/subcomponents/exposurecontrol/ExposureControlTapView;->s0:F
+
+    .line 31
+    .line 32
+    return-void
 .end method

@@ -1,68 +1,38 @@
-.class public final LZg1;
+.class public abstract LZg1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LTqc;
-
-.field public final b:LXF4;
-
-.field public final c:Lio/reactivex/rxjava3/subjects/SingleSubject;
+# static fields
+.field public static final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(LTqc;LXF4;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, LEe1;->Z:LEe1;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LZg1;->a:LTqc;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LZg1;->b:LXF4;
+    const-string v0, "BlizzardRtusEventRouter"
 
     .line 7
     .line 8
-    new-instance p1, Lio/reactivex/rxjava3/subjects/SingleSubject;
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 9
     .line 10
-    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/SingleSubject;-><init>()V
-
     .line 11
+    sget-object v0, LJp0;->a:LJp0;
+
     .line 12
     .line 13
-    iput-object p1, p0, LZg1;->c:Lio/reactivex/rxjava3/subjects/SingleSubject;
-
-    .line 14
-    .line 15
-    sget-object p1, LUg1;->Z:LUg1;
-
-    .line 16
-    .line 17
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 18
-    .line 19
-    .line 20
-    const-string p1, "BloopsCameraNavigationImpl"
-
-    .line 21
-    .line 22
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 23
-    .line 24
-    .line 25
-    sget-object p1, Lrn0;->a:Lrn0;
-
-    .line 26
-    .line 27
     return-void
 .end method

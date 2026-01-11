@@ -4,97 +4,83 @@
 
 # interfaces
 .implements Lio/reactivex/rxjava3/functions/Function;
-.implements Lio/reactivex/rxjava3/core/ObservableOnSubscribe;
 
 
 # instance fields
-.field public final synthetic a:Lio/reactivex/rxjava3/subjects/Subject;
+.field public final synthetic a:LXv7;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/subjects/Subject;)V
+.method public constructor <init>(LXv7;Ldj0;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LVi0;->a:Lio/reactivex/rxjava3/subjects/Subject;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LVi0;->a:LXv7;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    check-cast p1, Lhad;
+    check-cast p1, Lewj;
 
     .line 2
     .line 3
-    iget-object p1, p0, LVi0;->a:Lio/reactivex/rxjava3/subjects/Subject;
+    new-instance p1, LEP$n0;
 
     .line 4
     .line 5
-    const-wide/16 v0, 0x1
+    iget-object v0, p0, LVi0;->a:LXv7;
 
     .line 6
     .line 7
-    invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->N0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
+    iget-object v0, v0, Law7;->a:LY79;
 
     .line 8
     .line 9
-    .line 10
-    move-result-object p1
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
+    .line 10
     .line 11
-    sget-object v0, LJi0;->g0:LJi0;
+    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 12
     .line 13
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     .line 14
     .line 15
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
-
     .line 16
+    move-result-wide v2
+
     .line 17
+    sget-object v4, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
     .line 18
-    sget-object p1, LVQ6;->i0:LVQ6;
-
     .line 19
-    .line 20
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-virtual {v1, v2, v3, v4}, Ljava/util/concurrent/TimeUnit;->convert(JLjava/util/concurrent/TimeUnit;)J
 
+    .line 20
     .line 21
     .line 22
-    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    move-result-wide v1
 
     .line 23
+    invoke-direct {p1, v0, v1, v2}, LEP$n0;-><init>(Ljava/lang/String;J)V
+
     .line 24
     .line 25
-    return-object v0
-.end method
-
-.method public subscribe(Lio/reactivex/rxjava3/core/ObservableEmitter;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LVi0;->a:Lio/reactivex/rxjava3/subjects/Subject;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/core/Observer;->onComplete()V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/Emitter;->onComplete()V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
+    .line 26
+    return-object p1
 .end method

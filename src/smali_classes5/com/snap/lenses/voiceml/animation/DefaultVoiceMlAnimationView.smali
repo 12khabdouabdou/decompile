@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LJNj;
+.implements Lodk;
 
 
 # instance fields
@@ -50,11 +50,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, LINj;
+    check-cast p1, Lndk;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlAnimationView;->b(LINj;)V
+    invoke-virtual {p0, p1}, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlAnimationView;->b(Lndk;)V
 
     .line 4
     .line 5
@@ -62,11 +62,11 @@
     return-void
 .end method
 
-.method public final b(LINj;)V
+.method public final b(Lndk;)V
     .locals 6
 
     .line 1
-    instance-of v0, p1, LHNj;
+    instance-of v0, p1, Lmdk;
 
     .line 2
     .line 3
@@ -84,7 +84,7 @@
 
     .line 8
     .line 9
-    check-cast p1, LHNj;
+    check-cast p1, Lmdk;
 
     .line 10
     .line 11
@@ -101,11 +101,11 @@
 
     .line 17
     .line 18
-    iget-object v1, v0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:LAY5;
+    iget-object v1, v0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:Lt16;
 
     .line 19
     .line 20
-    iget-object v2, v1, LAY5;->h:Landroid/animation/ValueAnimator;
+    iget-object v2, v1, Lt16;->h:Landroid/animation/ValueAnimator;
 
     .line 21
     .line 22
@@ -130,7 +130,7 @@
 
     .line 32
     .line 33
-    iget-object p1, v1, LAY5;->h:Landroid/animation/ValueAnimator;
+    iget-object p1, v1, Lt16;->h:Landroid/animation/ValueAnimator;
 
     .line 34
     .line 35
@@ -139,7 +139,7 @@
     .line 36
     .line 37
     .line 38
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
+    invoke-virtual {p1}, Landroid/animation/Animator;->start()V
 
     .line 39
     .line 40
@@ -154,7 +154,7 @@
 
     .line 45
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -163,7 +163,7 @@
 
     .line 49
     :cond_2
-    instance-of v0, p1, LGNj;
+    instance-of v0, p1, Lldk;
 
     .line 50
     .line 51
@@ -175,7 +175,7 @@
 
     .line 54
     .line 55
-    check-cast p1, LGNj;
+    check-cast p1, Lldk;
 
     .line 56
     .line 57
@@ -226,7 +226,7 @@
     move-result-object v1
 
     .line 80
-    check-cast v1, LIY5;
+    check-cast v1, LB16;
 
     .line 81
     .line 82
@@ -234,7 +234,7 @@
 
     .line 83
     .line 84
-    iget v3, p1, LGNj;->a:F
+    iget v3, p1, Lldk;->a:F
 
     .line 85
     .line 86
@@ -242,11 +242,11 @@
 
     .line 87
     .line 88
-    iput v3, v1, LIY5;->b:F
+    iput v3, v1, LB16;->b:F
 
     .line 89
     .line 90
-    iget-object v1, v1, LIY5;->g:Landroid/animation/ValueAnimator;
+    iget-object v1, v1, LB16;->g:Landroid/animation/ValueAnimator;
 
     .line 91
     .line 92
@@ -262,7 +262,7 @@
 
     .line 97
     .line 98
-    invoke-virtual {v1}, Landroid/animation/ValueAnimator;->start()V
+    invoke-virtual {v1}, Landroid/animation/Animator;->start()V
 
     .line 99
     .line 100
@@ -271,7 +271,7 @@
 
     .line 102
     :cond_4
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 103
     .line 104
@@ -280,7 +280,7 @@
 
     .line 106
     :cond_5
-    instance-of p1, p1, LFNj;
+    instance-of p1, p1, Lkdk;
 
     .line 107
     .line 108
@@ -310,11 +310,11 @@
     .line 120
     .line 121
     .line 122
-    iget-object v0, v0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:LAY5;
+    iget-object v0, v0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:Lt16;
 
     .line 123
     .line 124
-    iget-object v0, v0, LAY5;->h:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lt16;->h:Landroid/animation/ValueAnimator;
 
     .line 125
     .line 126
@@ -369,11 +369,11 @@
     move-result-object v0
 
     .line 152
-    check-cast v0, LIY5;
+    check-cast v0, LB16;
 
     .line 153
     .line 154
-    iget-object v0, v0, LIY5;->g:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, LB16;->g:Landroid/animation/ValueAnimator;
 
     .line 155
     .line 156
@@ -386,7 +386,7 @@
 
     .line 160
     :cond_6
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 161
     .line 162
@@ -395,7 +395,7 @@
 
     .line 164
     :cond_7
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 165
     .line 166
@@ -416,7 +416,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b1a69
+    const v0, 0x7f0b1bd2
 
     .line 5
     .line 6
@@ -437,7 +437,7 @@
 
     .line 14
     .line 15
-    const v0, 0x7f0b1a73    # 1.8490002E38f
+    const v0, 0x7f0b1bdc
 
     .line 16
     .line 17

@@ -4,34 +4,31 @@
 
 
 # virtual methods
-.method public abstract batchLocation(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LsR0;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract batchLocation(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LyU0;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snapchat-Personal-Version"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Route-Tag"
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p5    # LsR0;
-        .annotation runtime Ljv1;
+    .param p5    # LyU0;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -44,34 +41,34 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LsR0;",
+            "LyU0;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LtR0;",
+            "Ljnf<",
+            "LzU0;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract clearLocation(Ljava/lang/String;Ljava/lang/String;LT23;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract clearLocation(Ljava/lang/String;Ljava/lang/String;Lf53;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LT23;
-        .annotation runtime Ljv1;
+    .param p3    # Lf53;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -82,33 +79,33 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LT23;",
+            "Lf53;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LU23;",
+            "Lg53;",
             ">;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getFriendClusters(Ljava/lang/String;Ljava/lang/String;LSL7;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getFriendClusters(Ljava/lang/String;Ljava/lang/String;LHR7;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LSL7;
-        .annotation runtime Ljv1;
+    .param p3    # LHR7;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -119,12 +116,15 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LSL7;",
+            "LHR7;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

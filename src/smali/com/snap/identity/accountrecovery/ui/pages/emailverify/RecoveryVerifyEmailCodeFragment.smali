@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public E0:Ltm5;
+.field public E0:LE99;
 
-.field public F0:LHFe;
+.field public F0:LtXe;
 
 
 # direct methods
@@ -24,11 +24,11 @@
 
 
 # virtual methods
-.method public final U1()LJL0;
+.method public final U1()LKO0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/emailverify/RecoveryVerifyEmailCodeFragment;->E0:Ltm5;
+    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/emailverify/RecoveryVerifyEmailCodeFragment;->E0:LE99;
 
     .line 2
     .line 3
@@ -44,7 +44,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -55,22 +55,22 @@
     throw v0
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->W1:LZ8d;
+    sget-object v0, Lsod;->X1:Lsod;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final Z1()Lnzj;
+.method public final Z1()LzYj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/emailverify/RecoveryVerifyEmailCodeFragment;->F0:LHFe;
+    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/emailverify/RecoveryVerifyEmailCodeFragment;->F0:LtXe;
 
     .line 2
     .line 3
@@ -86,7 +86,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10

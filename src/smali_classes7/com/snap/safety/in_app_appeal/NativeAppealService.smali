@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LYkc;
+    proxyClass = LmAc;
     schema = "\'submitAppeal\':f|m|(t): g<c>:\'[0]\'<t>,\'checkExistingAppeal\':f|m|(t): g<c>:\'[0]\'<t>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;

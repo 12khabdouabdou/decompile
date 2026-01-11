@@ -1,197 +1,134 @@
 .class public final LEi6;
-.super LrE9;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function3;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'eventTimeSec\':d,\'viewWidth\':d,\'viewHeight\':d,\'visibleWidth\':d,\'visibleHeight\':d,\'visible\':b,\'gesture\':s?,\'impressionId\':d,\'positionInSection\':d,\'sectionId\':d,\'cardData\':t,\'cardFormat\':d,\'requestId\':s,\'unfilledAdIdentifier\':s?"
+    typeReferences = {}
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:LFi6;
+.field private _cardData:[B
 
-.field public final synthetic b:LTg6;
+.field private _cardFormat:D
 
-.field public final synthetic c:LbV3;
+.field private _eventTimeSec:D
 
-.field public final synthetic t:Z
+.field private _gesture:Ljava/lang/String;
+
+.field private _impressionId:D
+
+.field private _positionInSection:D
+
+.field private _requestId:Ljava/lang/String;
+
+.field private _sectionId:D
+
+.field private _unfilledAdIdentifier:Ljava/lang/String;
+
+.field private _viewHeight:D
+
+.field private _viewWidth:D
+
+.field private _visible:Z
+
+.field private _visibleHeight:D
+
+.field private _visibleWidth:D
 
 
 # direct methods
-.method public constructor <init>(LFi6;LTg6;LbV3;Z)V
+.method public constructor <init>(DDDDDZLjava/lang/String;DDD[BDLjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LEi6;->a:LFi6;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, LEi6;->b:LTg6;
-
     .line 4
+    iput-wide p1, p0, LEi6;->_eventTimeSec:D
+
     .line 5
-    iput-object p3, p0, LEi6;->c:LbV3;
-
     .line 6
+    iput-wide p3, p0, LEi6;->_viewWidth:D
+
     .line 7
-    iput-boolean p4, p0, LEi6;->t:Z
-
     .line 8
-    .line 9
-    const/4 p1, 0x3
+    iput-wide p5, p0, LEi6;->_viewHeight:D
 
+    .line 9
     .line 10
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    iput-wide p7, p0, LEi6;->_visibleWidth:D
 
     .line 11
     .line 12
+    iput-wide p9, p0, LEi6;->_visibleHeight:D
+
     .line 13
-    return-void
-.end method
-
-
-# virtual methods
-.method public final I(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    check-cast p1, Li7j;
-
-    .line 2
-    .line 3
-    check-cast p2, Lt95;
-
-    .line 4
-    .line 5
-    check-cast p3, Ljava/util/List;
-
-    .line 6
-    .line 7
-    iget-object p1, p0, LEi6;->a:LFi6;
-
-    .line 8
-    .line 9
-    iget-object v0, p1, LFi6;->c:Lbpf;
-
-    .line 10
-    .line 11
-    iget-object v1, p0, LEi6;->b:LTg6;
-
-    .line 12
-    .line 13
-    iget-object v2, p0, LEi6;->c:LbV3;
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1, v2}, Lbpf;->b(LTg6;LbV3;)LXe6;
+    iput-boolean p11, p0, LEi6;->_visible:Z
 
+    .line 15
     .line 16
+    iput-object p12, p0, LEi6;->_gesture:Ljava/lang/String;
+
     .line 17
     .line 18
-    move-result-object v0
+    iput-wide p13, p0, LEi6;->_impressionId:D
 
     .line 19
-    iget-object p1, p1, LFi6;->d:LVof;
-
     .line 20
+    move-wide p1, p15
+
     .line 21
-    sget-object v2, LB18;->e:LB18;
+    iput-wide p1, p0, LEi6;->_positionInSection:D
 
     .line 22
     .line 23
-    invoke-virtual {p1, v1, v2}, LVof;->a(LTg6;Lj9k;)LYEf;
+    move-wide/from16 p1, p17
 
     .line 24
     .line 25
-    .line 26
-    move-result-object p1
+    iput-wide p1, p0, LEi6;->_sectionId:D
 
+    .line 26
     .line 27
-    invoke-static {p3}, Ldbk;->b(Ljava/util/List;)Lqoa;
+    move-object/from16 p1, p19
 
     .line 28
     .line 29
-    .line 30
-    move-result-object p3
+    iput-object p1, p0, LEi6;->_cardData:[B
 
+    .line 30
     .line 31
-    invoke-static {v0}, Ldbk;->f(Ljava/lang/Object;)Lqoa;
+    move-wide/from16 p1, p20
 
     .line 32
     .line 33
-    .line 34
-    move-result-object v0
+    iput-wide p1, p0, LEi6;->_cardFormat:D
 
+    .line 34
     .line 35
-    new-instance v1, LU20;
+    move-object/from16 p1, p22
 
     .line 36
     .line 37
-    invoke-direct {v1, v0, p3}, LU20;-><init>(LOFf;LOFf;)V
+    iput-object p1, p0, LEi6;->_requestId:Ljava/lang/String;
 
     .line 38
     .line 39
-    .line 40
-    invoke-static {p1}, Ldbk;->f(Ljava/lang/Object;)Lqoa;
+    move-object/from16 p1, p23
 
+    .line 40
     .line 41
+    iput-object p1, p0, LEi6;->_unfilledAdIdentifier:Ljava/lang/String;
+
     .line 42
     .line 43
-    move-result-object p1
-
-    .line 44
-    new-instance p3, LNb;
-
-    .line 45
-    .line 46
-    iget-boolean v0, p0, LEi6;->t:Z
-
-    .line 47
-    .line 48
-    const/16 v2, 0x9
-
-    .line 49
-    .line 50
-    invoke-direct {p3, v0, p2, v2}, LNb;-><init>(ZLjava/lang/Object;I)V
-
-    .line 51
-    .line 52
-    .line 53
-    invoke-virtual {p3}, LNb;->invoke()Ljava/lang/Object;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object p2
-
-    .line 57
-    check-cast p2, Ljava/lang/Boolean;
-
-    .line 58
-    .line 59
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 60
-    .line 61
-    .line 62
-    move-result p2
-
-    .line 63
-    if-eqz p2, :cond_0
-
-    .line 64
-    .line 65
-    new-instance p2, LU20;
-
-    .line 66
-    .line 67
-    invoke-direct {p2, v1, p1}, LU20;-><init>(LOFf;LOFf;)V
-
-    .line 68
-    .line 69
-    .line 70
-    return-object p2
-
-    .line 71
-    :cond_0
-    return-object v1
+    return-void
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'grpcClientFactory\':r:\'[0]\',\'cofStore\':r:\'[1]\',\'loggingHelper\':r?:\'[2]\',\'subscribedToSnapchatPlus\':g<c>:\'[3]\'<b@>,\'presentChatWallpapersPlusUpsell\':f?(): g<c>:\'[3]\'<b@>,\'displayPlusGenerativeBackgroundUpsellPage\':f?(),\'presentFirstTimeAlert\':f(): g<c>:\'[3]\'<b@>,\'onOpenCommunityGuidelines\':f(),\'onSendFeedback\':f?(s, s),\'getActionSheetPresenter\':f(): r:\'[4]\',\'generativeBackgroundsPlusFeatureState\':g<c>:\'[3]\'<r<e>:\'[5]\'>,\'bitmojiFlatlandConfigProvider\':r?:\'[6]\'"
     typeReferences = {
@@ -98,6 +98,53 @@
 
 
 # direct methods
+.method public constructor <init>(LEz3;Lcom/snap/composer/cof/ICOFStore;Lcom/snap/composer/bridge_observables/BridgeObservable;Lqk8;Lrk8;Lrk8;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_grpcClientFactory:Lcom/snap/composer/networking/IGrpcServiceFactory;
+
+    .line 3
+    iput-object p2, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_cofStore:Lcom/snap/composer/cof/ICOFStore;
+
+    const/4 p1, 0x0
+
+    .line 4
+    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_loggingHelper:Lcom/snap/bloops/generative/GenerativeContentLoggingHelper;
+
+    .line 5
+    iput-object p3, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_subscribedToSnapchatPlus:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 6
+    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_presentChatWallpapersPlusUpsell:Lkotlin/jvm/functions/Function0;
+
+    .line 7
+    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_displayPlusGenerativeBackgroundUpsellPage:Lkotlin/jvm/functions/Function0;
+
+    .line 8
+    iput-object p4, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_presentFirstTimeAlert:Lkotlin/jvm/functions/Function0;
+
+    .line 9
+    iput-object p5, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_onOpenCommunityGuidelines:Lkotlin/jvm/functions/Function0;
+
+    .line 10
+    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_onSendFeedback:Lkotlin/jvm/functions/Function2;
+
+    .line 11
+    iput-object p6, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_getActionSheetPresenter:Lkotlin/jvm/functions/Function0;
+
+    .line 12
+    iput-object p7, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_generativeBackgroundsPlusFeatureState:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 13
+    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_bitmojiFlatlandConfigProvider:Lcom/snap/composer/bitmoji/IBitmojiFlatlandConfigProvider;
+
+    return-void
+.end method
+
 .method public constructor <init>(Lcom/snap/composer/networking/IGrpcServiceFactory;Lcom/snap/composer/cof/ICOFStore;Lcom/snap/bloops/generative/GenerativeContentLoggingHelper;Lcom/snap/composer/bridge_observables/BridgeObservable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function0;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bitmoji/IBitmojiFlatlandConfigProvider;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -165,53 +212,6 @@
     return-void
 .end method
 
-.method public constructor <init>(Ltw3;Lcom/snap/composer/cof/ICOFStore;Lcom/snap/composer/bridge_observables/BridgeObservable;LTd8;LUd8;LUd8;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_grpcClientFactory:Lcom/snap/composer/networking/IGrpcServiceFactory;
-
-    .line 3
-    iput-object p2, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_cofStore:Lcom/snap/composer/cof/ICOFStore;
-
-    const/4 p1, 0x0
-
-    .line 4
-    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_loggingHelper:Lcom/snap/bloops/generative/GenerativeContentLoggingHelper;
-
-    .line 5
-    iput-object p3, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_subscribedToSnapchatPlus:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
-    .line 6
-    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_presentChatWallpapersPlusUpsell:Lkotlin/jvm/functions/Function0;
-
-    .line 7
-    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_displayPlusGenerativeBackgroundUpsellPage:Lkotlin/jvm/functions/Function0;
-
-    .line 8
-    iput-object p4, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_presentFirstTimeAlert:Lkotlin/jvm/functions/Function0;
-
-    .line 9
-    iput-object p5, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_onOpenCommunityGuidelines:Lkotlin/jvm/functions/Function0;
-
-    .line 10
-    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_onSendFeedback:Lkotlin/jvm/functions/Function2;
-
-    .line 11
-    iput-object p6, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_getActionSheetPresenter:Lkotlin/jvm/functions/Function0;
-
-    .line 12
-    iput-object p7, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_generativeBackgroundsPlusFeatureState:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
-    .line 13
-    iput-object p1, p0, Lcom/snap/bloops/generativecontent/backgrounds/GenerativeBackgroundsViewContext;->_bitmojiFlatlandConfigProvider:Lcom/snap/composer/bitmoji/IBitmojiFlatlandConfigProvider;
-
-    return-void
-.end method
-
 
 # virtual methods
 .method public final a(Lcom/snap/composer/bitmoji/IBitmojiFlatlandConfigProvider;)V
@@ -225,7 +225,7 @@
     return-void
 .end method
 
-.method public final b(LTd8;)V
+.method public final b(Lqk8;)V
     .locals 0
 
     .line 1
@@ -236,7 +236,7 @@
     return-void
 .end method
 
-.method public final c(LOd8;)V
+.method public final c(Llk8;)V
     .locals 0
 
     .line 1
@@ -247,7 +247,7 @@
     return-void
 .end method
 
-.method public final d(LUX2;)V
+.method public final d(Lw03;)V
     .locals 0
 
     .line 1
@@ -258,7 +258,7 @@
     return-void
 .end method
 
-.method public final e(LTd8;)V
+.method public final e(Lqk8;)V
     .locals 0
 
     .line 1

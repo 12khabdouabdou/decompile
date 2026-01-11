@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LZP1;
+    proxyClass = LGT1;
     schema = "\'requestCameoTile\':f|m, w|(s, s, t, f(r:\'[0]\'))"
     typeReferences = {
         Lcom/snapchat/client/valdi_core/Asset;

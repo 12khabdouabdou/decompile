@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public a:LKPa;
+.field public a:Lx2b;
 
 .field public b:Lcom/snap/imageloading/view/SnapImageView;
 
@@ -59,12 +59,12 @@
 
     move-result-object p3
 
-    const v0, 0x7f0e07ba
+    const v0, 0x7f0e07e4
 
     invoke-static {p3, v0, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 5
-    sget-object p3, LFve;->a:[I
+    sget-object p3, LoNe;->a:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -165,12 +165,12 @@
 
     .line 27
     .line 28
-    const v6, 0x7f070511
+    const v6, 0x7f070538
 
     .line 29
     .line 30
     .line 31
-    const v7, 0x7f070060
+    const v7, 0x7f070061
 
     .line 32
     .line 33
@@ -178,7 +178,7 @@
     const/4 v8, 0x0
 
     .line 35
-    const v9, 0x7f07005f
+    const v9, 0x7f070060
 
     .line 36
     .line 37
@@ -265,7 +265,7 @@
     move-result v7
 
     .line 80
-    invoke-static {v5, v7}, LLZj;->g0(Landroid/view/View;I)V
+    invoke-static {v5, v7}, LDz9;->e0(Landroid/view/View;I)V
 
     .line 81
     .line 82
@@ -302,7 +302,7 @@
     move-result v6
 
     .line 99
-    invoke-static {v5, v6}, LLZj;->f0(Landroid/view/View;I)V
+    invoke-static {v5, v6}, LDz9;->d0(Landroid/view/View;I)V
 
     .line 100
     .line 101
@@ -311,7 +311,7 @@
 
     .line 103
     :cond_0
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 104
     .line 105
@@ -320,7 +320,7 @@
 
     .line 107
     :cond_1
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 108
     .line 109
@@ -403,7 +403,7 @@
     move-result v7
 
     .line 149
-    invoke-static {v5, v7}, LLZj;->f0(Landroid/view/View;I)V
+    invoke-static {v5, v7}, LDz9;->d0(Landroid/view/View;I)V
 
     .line 150
     .line 151
@@ -440,7 +440,7 @@
     move-result v6
 
     .line 168
-    invoke-static {v5, v6}, LLZj;->g0(Landroid/view/View;I)V
+    invoke-static {v5, v6}, LDz9;->e0(Landroid/view/View;I)V
 
     .line 169
     .line 170
@@ -476,7 +476,7 @@
 
     .line 186
     :cond_3
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 187
     .line 188
@@ -485,7 +485,7 @@
 
     .line 190
     :cond_4
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 191
     .line 192
@@ -494,7 +494,7 @@
 
     .line 194
     :cond_5
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 195
     .line 196
@@ -503,7 +503,7 @@
 
     .line 198
     :cond_6
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 199
     .line 200
@@ -512,7 +512,7 @@
 
     .line 202
     :cond_7
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 203
     .line 204
@@ -521,7 +521,7 @@
 
     .line 206
     :cond_8
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 207
     .line 208
@@ -544,7 +544,7 @@
 
     .line 5
     .line 6
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     .line 7
     .line 8
@@ -552,7 +552,7 @@
 
     .line 9
     .line 10
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_4
 
     .line 11
     .line 12
@@ -564,49 +564,49 @@
     move-result-object v3
 
     .line 16
-    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    const v4, 0x7f080a5e
 
     .line 17
     .line 18
     .line 19
-    move-result-object v3
+    invoke-static {v3, v4}, LV14;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     .line 20
-    const v4, 0x7f080a47
-
     .line 21
     .line 22
+    move-result-object v3
+
     .line 23
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v0, v3}, Lcom/snap/imageloading/view/SnapImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 24
     .line 25
     .line 26
-    move-result-object v3
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 27
-    invoke-virtual {v0, v3}, Lcom/snap/imageloading/view/SnapImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
-
     .line 28
+    if-eqz v0, :cond_3
+
     .line 29
     .line 30
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 31
     .line 32
-    if-eqz v0, :cond_4
-
     .line 33
+    move-result-object v0
+
     .line 34
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 35
     .line 36
     .line 37
-    move-result-object v0
+    move-result-object v3
 
     .line 38
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 39
     .line 40
@@ -614,48 +614,48 @@
     move-result-object v3
 
     .line 42
-    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    const v4, 0x7f070709
 
     .line 43
     .line 44
     .line 45
-    move-result-object v3
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     .line 46
-    const v4, 0x7f0706de
-
     .line 47
     .line 48
+    move-result v3
+
     .line 49
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 50
     .line 51
-    .line 52
-    move-result v3
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
 
+    .line 52
     .line 53
-    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
+    if-eqz v0, :cond_2
 
     .line 54
     .line 55
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 56
     .line 57
-    if-eqz v0, :cond_3
-
     .line 58
+    move-result-object v0
+
     .line 59
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 60
     .line 61
     .line 62
-    move-result-object v0
+    move-result-object v3
 
     .line 63
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 64
     .line 65
@@ -663,27 +663,27 @@
     move-result-object v3
 
     .line 67
-    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     .line 68
     .line 69
     .line 70
-    move-result-object v3
+    move-result v3
 
     .line 71
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 72
     .line 73
-    .line 74
-    move-result v3
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
 
+    .line 74
     .line 75
-    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+    if-eqz v0, :cond_1
 
     .line 76
     .line 77
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 78
     .line 79
@@ -691,460 +691,364 @@
     move-result-object v0
 
     .line 81
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
 
     .line 82
     .line 83
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
     .line 84
-    move-result-object v0
-
     .line 85
-    const v3, 0x7f0706df
-
     .line 86
-    .line 87
-    .line 88
-    invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    move-result-object v1
 
+    .line 87
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 88
     .line 89
     .line 90
+    move-result-object v1
+
     .line 91
-    move-result v0
+    const v2, 0x7f070708
 
     .line 92
-    iget-object v3, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
-
     .line 93
     .line 94
-    if-eqz v3, :cond_2
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     .line 95
     .line 96
-    invoke-virtual {v3, v0, v0, v0, v0}, Landroid/view/View;->setPadding(IIII)V
-
     .line 97
+    move-result v1
+
     .line 98
+    iget v2, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+
     .line 99
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
-
     .line 100
+    if-lez v2, :cond_0
+
     .line 101
-    if-eqz v0, :cond_1
-
     .line 102
+    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+
     .line 103
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
     .line 104
-    .line 105
-    .line 106
-    move-result-object v0
+    return-void
 
+    .line 105
+    :cond_0
+    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
+
+    .line 106
     .line 107
-    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
+    return-void
 
     .line 108
-    .line 109
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    :cond_1
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 109
     .line 110
     .line 111
+    throw v1
+
     .line 112
-    move-result-object v1
+    :cond_2
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 113
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
     .line 114
     .line 115
+    throw v1
+
     .line 116
-    move-result-object v1
+    :cond_3
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 117
-    const v2, 0x7f0706dd
-
     .line 118
     .line 119
+    throw v1
+
     .line 120
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    :cond_4
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 121
     .line 122
     .line 123
-    move-result v1
+    throw v1
 
     .line 124
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->topMargin:I
+    :cond_5
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 125
     .line 126
-    iget v2, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+    if-eqz v0, :cond_b
 
     .line 127
     .line 128
-    if-lez v2, :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 129
     .line 130
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
-
     .line 131
+    move-result-object v3
+
     .line 132
-    return-void
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 133
-    :cond_0
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
-
     .line 134
     .line 135
-    return-void
+    move-result-object v3
 
     .line 136
-    :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    const v4, 0x7f0800b5
 
     .line 137
     .line 138
     .line 139
-    throw v1
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     .line 140
-    :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 141
     .line 142
+    move-result-object v3
+
     .line 143
-    throw v1
+    invoke-virtual {v0, v3}, Lcom/snap/imageloading/view/SnapImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 144
-    :cond_3
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 145
     .line 146
-    .line 147
-    throw v1
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
 
+    .line 147
     .line 148
-    :cond_4
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    if-eqz v0, :cond_a
 
     .line 149
     .line 150
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
     .line 151
-    throw v1
-
     .line 152
-    :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 153
+    move-result-object v0
+
     .line 154
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
     .line 155
-    throw v1
-
     .line 156
-    :cond_6
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
-
     .line 157
+    move-result-object v3
+
     .line 158
-    if-eqz v0, :cond_c
+    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 159
     .line 160
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
     .line 161
-    .line 162
-    .line 163
     move-result-object v3
 
-    .line 164
-    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    .line 162
+    const v4, 0x7f071533
 
+    .line 163
+    .line 164
     .line 165
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
     .line 166
     .line 167
-    move-result-object v3
-
     .line 168
-    const v4, 0x7f0800b2
+    move-result v3
 
     .line 169
+    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
+
     .line 170
     .line 171
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 172
     .line 173
-    .line 174
-    move-result-object v3
+    if-eqz v0, :cond_9
 
+    .line 174
     .line 175
-    invoke-virtual {v0, v3}, Lcom/snap/imageloading/view/SnapImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 176
     .line 177
     .line 178
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
-
-    .line 179
-    .line 180
-    if-eqz v0, :cond_b
-
-    .line 181
-    .line 182
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    .line 183
-    .line 184
-    .line 185
     move-result-object v0
 
-    .line 186
+    .line 179
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    .line 187
-    .line 188
-    .line 189
+    .line 180
+    .line 181
+    .line 182
     move-result-object v3
 
-    .line 190
+    .line 183
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    .line 191
-    .line 192
-    .line 193
+    .line 184
+    .line 185
+    .line 186
     move-result-object v3
 
-    .line 194
-    const v4, 0x7f071518
-
-    .line 195
-    .line 196
-    .line 197
+    .line 187
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    .line 198
-    .line 199
-    .line 200
+    .line 188
+    .line 189
+    .line 190
     move-result v3
 
+    .line 191
+    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    .line 192
+    .line 193
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 194
+    .line 195
+    if-eqz v0, :cond_8
+
+    .line 196
+    .line 197
+    const/4 v3, 0x0
+
+    .line 198
+    invoke-virtual {v0, v3, v3, v3, v3}, Landroid/view/View;->setPadding(IIII)V
+
+    .line 199
+    .line 200
     .line 201
-    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
+    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 202
     .line 203
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
+    if-eqz v0, :cond_7
 
     .line 204
     .line 205
-    if-eqz v0, :cond_a
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 206
     .line 207
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
     .line 208
-    .line 209
-    .line 210
     move-result-object v0
 
+    .line 209
+    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
+
+    .line 210
     .line 211
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 212
     .line 213
     .line 214
-    move-result-object v3
+    move-result-object v1
 
     .line 215
-    invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     .line 216
     .line 217
     .line 218
-    move-result-object v3
+    move-result-object v1
 
     .line 219
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    const v2, 0x7f070060
 
     .line 220
     .line 221
     .line 222
-    move-result v3
+    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     .line 223
-    iput v3, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
-
     .line 224
     .line 225
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
+    move-result v1
 
     .line 226
+    iget v2, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
+
     .line 227
-    if-eqz v0, :cond_9
-
     .line 228
-    .line 229
-    const/4 v3, 0x0
+    if-lez v2, :cond_6
 
+    .line 229
     .line 230
-    invoke-virtual {v0, v3, v3, v3, v3}, Landroid/view/View;->setPadding(IIII)V
+    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
 
     .line 231
     .line 232
+    return-void
+
     .line 233
-    iget-object v0, p0, Lcom/snap/web/core/lib/webview/URLBar;->b:Lcom/snap/imageloading/view/SnapImageView;
+    :cond_6
+    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
 
     .line 234
     .line 235
-    if-eqz v0, :cond_8
+    return-void
 
     .line 236
-    .line 237
-    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    :cond_7
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 237
     .line 238
     .line 239
+    throw v1
+
     .line 240
-    move-result-object v0
+    :cond_8
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 241
-    check-cast v0, Landroid/widget/RelativeLayout$LayoutParams;
-
     .line 242
     .line 243
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    throw v1
 
     .line 244
+    :cond_9
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 245
     .line 246
-    move-result-object v1
-
     .line 247
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    throw v1
 
     .line 248
+    :cond_a
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 249
     .line 250
-    move-result-object v1
-
     .line 251
-    const v2, 0x7f0701ff
+    throw v1
 
     .line 252
+    :cond_b
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 253
     .line 254
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
     .line 255
-    .line 256
-    .line 257
-    move-result v1
-
-    .line 258
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->topMargin:I
-
-    .line 259
-    .line 260
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 261
-    .line 262
-    .line 263
-    move-result-object v1
-
-    .line 264
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 265
-    .line 266
-    .line 267
-    move-result-object v1
-
-    .line 268
-    const v2, 0x7f07005f
-
-    .line 269
-    .line 270
-    .line 271
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    .line 272
-    .line 273
-    .line 274
-    move-result v1
-
-    .line 275
-    iget v2, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
-
-    .line 276
-    .line 277
-    if-lez v2, :cond_7
-
-    .line 278
-    .line 279
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->leftMargin:I
-
-    .line 280
-    .line 281
-    return-void
-
-    .line 282
-    :cond_7
-    iput v1, v0, Landroid/widget/RelativeLayout$LayoutParams;->rightMargin:I
-
-    .line 283
-    .line 284
-    return-void
-
-    .line 285
-    :cond_8
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 286
-    .line 287
-    .line 288
-    throw v1
-
-    .line 289
-    :cond_9
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 290
-    .line 291
-    .line 292
-    throw v1
-
-    .line 293
-    :cond_a
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 294
-    .line 295
-    .line 296
-    throw v1
-
-    .line 297
-    :cond_b
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 298
-    .line 299
-    .line 300
-    throw v1
-
-    .line 301
-    :cond_c
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 302
-    .line 303
-    .line 304
     throw v1
 .end method
 
@@ -1157,7 +1061,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b05bd
+    const v0, 0x7f0b0645
 
     .line 5
     .line 6
@@ -1178,14 +1082,14 @@
 
     .line 14
     .line 15
-    new-instance v1, Ln0j;
+    new-instance v1, LKpj;
 
     .line 16
     .line 17
     const/4 v2, 0x0
 
     .line 18
-    invoke-direct {v1, p0, v2}, Ln0j;-><init>(Lcom/snap/web/core/lib/webview/URLBar;I)V
+    invoke-direct {v1, p0, v2}, LKpj;-><init>(Lcom/snap/web/core/lib/webview/URLBar;I)V
 
     .line 19
     .line 20
@@ -1195,7 +1099,7 @@
     .line 22
     .line 23
     .line 24
-    const v0, 0x7f0b004d
+    const v0, 0x7f0b005e
 
     .line 25
     .line 26
@@ -1216,14 +1120,14 @@
 
     .line 34
     .line 35
-    new-instance v1, Ln0j;
+    new-instance v1, LKpj;
 
     .line 36
     .line 37
     const/4 v2, 0x1
 
     .line 38
-    invoke-direct {v1, p0, v2}, Ln0j;-><init>(Lcom/snap/web/core/lib/webview/URLBar;I)V
+    invoke-direct {v1, p0, v2}, LKpj;-><init>(Lcom/snap/web/core/lib/webview/URLBar;I)V
 
     .line 39
     .line 40
@@ -1233,7 +1137,7 @@
     .line 42
     .line 43
     .line 44
-    sget-object v0, LG71;->l0:LG71;
+    sget-object v0, LVa1;->l0:LVa1;
 
     .line 45
     .line 46
@@ -1242,7 +1146,7 @@
     .line 47
     .line 48
     .line 49
-    const v0, 0x7f0b19cb
+    const v0, 0x7f0b1b2f
 
     .line 50
     .line 51
@@ -1263,7 +1167,7 @@
 
     .line 59
     .line 60
-    const v0, 0x7f0b191c
+    const v0, 0x7f0b1a80
 
     .line 61
     .line 62
@@ -1284,7 +1188,7 @@
 
     .line 70
     .line 71
-    const v0, 0x7f0b11dd
+    const v0, 0x7f0b1303
 
     .line 72
     .line 73
@@ -1338,12 +1242,12 @@
     move-result-object v2
 
     .line 99
-    const v3, 0x7f0404b7
+    const v3, 0x7f040544
 
     .line 100
     .line 101
     .line 102
-    invoke-static {v2, v3}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v2, v3}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 103
     .line 104
@@ -1430,7 +1334,7 @@
 
     .line 146
     :cond_0
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 147
     .line 148
@@ -1439,7 +1343,7 @@
 
     .line 150
     :cond_1
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 151
     .line 152

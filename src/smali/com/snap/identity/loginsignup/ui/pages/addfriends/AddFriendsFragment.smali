@@ -3,19 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Loz;
+.implements LRA;
 
 
 # instance fields
-.field public final E0:LAJe;
+.field public final E0:Lk1f;
 
-.field public F0:LpC3;
+.field public F0:LOF3;
 
-.field public G0:Lsog;
+.field public G0:LuJg;
 
-.field public H0:LRy;
+.field public H0:LuA;
 
-.field public I0:Lnwf;
+.field public I0:LyPf;
 
 .field public J0:Lcom/snap/identity/api/sharedui/ProgressButton;
 
@@ -31,11 +31,11 @@
 
 .field public final P0:Lio/reactivex/rxjava3/subjects/CompletableSubject;
 
-.field public final Q0:LXfi;
+.field public final Q0:LREi;
 
 .field public R0:I
 
-.field public final S0:Lrn0;
+.field public final S0:LJp0;
 
 .field public final T0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
@@ -45,25 +45,25 @@
     .locals 1
 
     .line 1
-    sget-object v0, LAJe;->l:LAJe;
+    sget-object v0, Lk1f;->l:Lk1f;
 
     .line 2
-    invoke-direct {p0, v0}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;-><init>(LAJe;)V
+    invoke-direct {p0, v0}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;-><init>(Lk1f;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LAJe;)V
+.method public constructor <init>(Lk1f;)V
     .locals 1
 
     .line 3
     invoke-direct {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->E0:LAJe;
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->E0:Lk1f;
 
     .line 5
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     move-result-object p1
 
@@ -78,14 +78,14 @@
     iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->M0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 8
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->N0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 9
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     move-result-object p1
 
@@ -100,19 +100,19 @@
     iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->P0:Lio/reactivex/rxjava3/subjects/CompletableSubject;
 
     .line 12
-    new-instance p1, LUx;
+    new-instance p1, LHz;
 
     const/4 v0, 0x1
 
-    invoke-direct {p1, p0, v0}, LUx;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
+    invoke-direct {p1, p0, v0}, LHz;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
 
     .line 13
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 14
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->Q0:LXfi;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->Q0:LREi;
 
     const/4 p1, -0x1
 
@@ -120,7 +120,7 @@
     iput p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->R0:I
 
     .line 16
-    sget-object p1, LMKa;->Z:LMKa;
+    sget-object p1, LtXa;->Z:LtXa;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -130,10 +130,10 @@
     invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 18
-    sget-object p1, Lrn0;->a:Lrn0;
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 19
-    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->S0:Lrn0;
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->S0:LJp0;
 
     .line 20
     new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
@@ -170,7 +170,7 @@
     move-result-object v1
 
     .line 12
-    const v2, 0x7f07072d
+    const v2, 0x7f070759
 
     .line 13
     .line 14
@@ -191,7 +191,7 @@
     move-result-object v2
 
     .line 23
-    const v3, 0x7f080639
+    const v3, 0x7f0806a2
 
     .line 24
     .line 25
@@ -204,11 +204,11 @@
     move-result-object v2
 
     .line 30
-    iget-object p0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->E0:LAJe;
+    iget-object p0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->E0:Lk1f;
 
     .line 31
     .line 32
-    invoke-virtual {p0}, LAJe;->a()Z
+    invoke-virtual {p0}, Lk1f;->a()Z
 
     .line 33
     .line 34
@@ -324,11 +324,11 @@
 
 
 # virtual methods
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->c2()LRy;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->c2()LuA;
 
     .line 2
     .line 3
@@ -336,7 +336,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LRy;->C1()V
+    invoke-virtual {v0}, LuA;->D1()V
 
     .line 6
     .line 7
@@ -344,23 +344,23 @@
     return-void
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->F1()V
+    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->D1()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LVx;
+    new-instance v0, LIz;
 
     .line 5
     .line 6
     const/4 v1, 0x0
 
     .line 7
-    invoke-direct {v0, p0, v1}, LVx;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
+    invoke-direct {v0, p0, v1}, LIz;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
 
     .line 8
     .line 9
@@ -377,23 +377,23 @@
     return-void
 .end method
 
-.method public final G1()V
+.method public final E1()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->G1()V
+    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->E1()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LVx;
+    new-instance v0, LIz;
 
     .line 5
     .line 6
     const/4 v1, 0x1
 
     .line 7
-    invoke-direct {v0, p0, v1}, LVx;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
+    invoke-direct {v0, p0, v1}, LIz;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
 
     .line 8
     .line 9
@@ -414,7 +414,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 19
     .line 20
@@ -422,11 +422,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0296
+    const p3, 0x7f0e02ad
 
     .line 2
     .line 3
@@ -445,16 +445,16 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->G0:Lsog;
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->G0:LuJg;
 
     .line 5
     .line 6
@@ -462,7 +462,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p2}, Lsog;->c()Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    invoke-virtual {p2}, LuJg;->c()Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
     .line 9
     .line 10
@@ -470,11 +470,11 @@
     move-result-object p2
 
     .line 12
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->Q0:LXfi;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->Q0:LREi;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -482,15 +482,15 @@
     move-result-object v1
 
     .line 18
-    check-cast v1, Lzre;
+    check-cast v1, LlJe;
 
     .line 19
     .line 20
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 21
     .line 22
-    invoke-virtual {v1}, LBre;->g()LF06;
+    invoke-virtual {v1}, LnJe;->g()LA36;
 
     .line 23
     .line 24
@@ -507,7 +507,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -515,15 +515,15 @@
     move-result-object p2
 
     .line 35
-    check-cast p2, Lzre;
+    check-cast p2, LlJe;
 
     .line 36
     .line 37
-    check-cast p2, LBre;
+    check-cast p2, LnJe;
 
     .line 38
     .line 39
-    invoke-virtual {p2}, LBre;->i()Lgn0;
+    invoke-virtual {p2}, LnJe;->i()Lxp0;
 
     .line 40
     .line 41
@@ -540,86 +540,85 @@
     .line 46
     .line 47
     .line 48
-    new-instance p2, LRd;
+    new-instance p2, LIe;
 
     .line 49
     .line 50
-    const/16 v1, 0x9
+    const/16 v1, 0xa
 
     .line 51
     .line 52
-    invoke-direct {p2, p0, v1, p1}, LRd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p2, p0, v1, p1}, LIe;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 53
     .line 54
     .line 55
-    new-instance p1, LE0;
+    new-instance p1, LTy;
 
     .line 56
     .line 57
-    const/16 v1, 0x1c
+    const/4 v1, 0x1
 
     .line 58
-    .line 59
-    invoke-direct {p1, v1, p0}, LE0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v1, p0}, LTy;-><init>(ILjava/lang/Object;)V
 
+    .line 59
     .line 60
     .line 61
-    .line 62
     iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->T0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 62
     .line 63
-    .line 64
     invoke-virtual {v0, p2, p1, v1}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 64
     .line 65
     .line 66
+    sget-object p1, LUPf;->Z:LUPf;
+
     .line 67
-    sget-object p1, LLwf;->Z:LLwf;
-
     .line 68
+    iget-object p2, p0, LXPf;->a:Ljava/lang/String;
+
     .line 69
-    iget-object p2, p0, LOwf;->a:Ljava/lang/String;
-
     .line 70
-    .line 71
-    invoke-virtual {p0, v1, p1, p2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {p0, v1, p1, p2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
+    .line 71
     .line 72
     .line 73
-    .line 74
     return-void
 
-    .line 75
+    .line 74
     :cond_0
     const-string p1, "friendingMetadataService"
 
+    .line 75
     .line 76
-    .line 77
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 77
     .line 78
     .line 79
-    .line 80
     const/4 p1, 0x0
 
-    .line 81
+    .line 80
     throw p1
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->h1:LZ8d;
+    sget-object v0, Lsod;->h1:Lsod;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final a2(LMpk;)V
-    .locals 21
+.method public final a2(LVPk;)V
+    .locals 22
 
     .line 1
     move-object/from16 v0, p0
@@ -636,7 +635,7 @@
     const/4 v3, 0x0
 
     .line 7
-    instance-of v4, v1, Lmz;
+    instance-of v4, v1, LPA;
 
     .line 8
     .line 9
@@ -650,7 +649,7 @@
 
     .line 12
     .line 13
-    check-cast v1, Lmz;
+    check-cast v1, LPA;
 
     .line 14
     .line 15
@@ -659,55 +658,55 @@
     .line 16
     .line 17
     .line 18
-    new-instance v1, LTx;
+    new-instance v1, LGz;
 
     .line 19
     .line 20
-    invoke-direct {v1, v0, v3}, LTx;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
+    invoke-direct {v1, v0, v3}, LGz;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
 
     .line 21
     .line 22
     .line 23
-    new-instance v9, LTx;
+    new-instance v9, LGz;
 
     .line 24
     .line 25
-    invoke-direct {v9, v0, v5}, LTx;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
+    invoke-direct {v9, v0, v5}, LGz;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
 
     .line 26
     .line 27
     .line 28
-    new-instance v4, LUx;
+    new-instance v4, LHz;
 
     .line 29
     .line 30
-    invoke-direct {v4, v0, v3}, LUx;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
+    invoke-direct {v4, v0, v3}, LHz;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
 
     .line 31
     .line 32
     .line 33
-    new-instance v3, LTx;
+    new-instance v3, LGz;
 
     .line 34
     .line 35
-    invoke-direct {v3, v0, v2}, LTx;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
+    invoke-direct {v3, v0, v2}, LGz;-><init>(Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;I)V
 
     .line 36
     .line 37
     .line 38
-    new-instance v10, LcSa;
+    new-instance v10, LL4b;
 
     .line 39
     .line 40
-    sget-object v11, LMKa;->Z:LMKa;
+    sget-object v11, LtXa;->Z:LtXa;
 
     .line 41
     .line 42
-    const/16 v17, 0x0
+    const/16 v18, 0x0
 
     .line 43
     .line 44
-    const/16 v20, 0x3ff4
+    const/16 v21, 0x7ff4
 
     .line 45
     .line 46
@@ -728,7 +727,7 @@
 
     .line 52
     .line 53
-    const/16 v18, 0x0
+    const/16 v17, 0x0
 
     .line 54
     .line 55
@@ -736,883 +735,887 @@
 
     .line 56
     .line 57
-    invoke-direct/range {v10 .. v20}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v20, 0x0
 
     .line 58
     .line 59
-    .line 60
-    new-instance v7, LO76;
+    invoke-direct/range {v10 .. v21}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
 
+    .line 60
     .line 61
     .line 62
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+    new-instance v7, LYa6;
 
     .line 63
     .line 64
+    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
     .line 65
+    .line 66
+    .line 67
     move-result-object v11
 
-    .line 66
-    iget-object v12, v0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->B0:LTqc;
-
-    .line 67
     .line 68
-    const-string v2, "navigationHost"
+    iget-object v12, v0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->B0:LmGc;
 
     .line 69
     .line 70
-    if-eqz v12, :cond_1
+    const-string v2, "navigationHost"
 
     .line 71
     .line 72
-    const/4 v15, 0x0
+    if-eqz v12, :cond_1
 
     .line 73
+    .line 74
+    const/4 v15, 0x0
+
+    .line 75
     const/16 v16, 0xf8
 
-    .line 74
-    .line 75
+    .line 76
+    .line 77
     const/4 v14, 0x0
 
-    .line 76
+    .line 78
     move-object v13, v10
 
-    .line 77
+    .line 79
     move-object v10, v7
 
-    .line 78
-    invoke-direct/range {v10 .. v16}, LO76;-><init>(Landroid/content/Context;LTqc;LcSa;ZLcYg;I)V
-
-    .line 79
     .line 80
-    .line 81
-    const v8, 0x7f133267
+    invoke-direct/range {v10 .. v16}, LYa6;-><init>(Landroid/content/Context;LmGc;LL4b;ZLPjh;I)V
 
+    .line 81
     .line 82
     .line 83
-    .line 84
-    invoke-virtual {v7, v8}, LO76;->j(I)V
+    const v8, 0x7f133519
 
+    .line 84
     .line 85
     .line 86
+    invoke-virtual {v7, v8}, LYa6;->j(I)V
+
     .line 87
+    .line 88
+    .line 89
     const/4 v10, 0x1
 
-    .line 88
-    const/16 v12, 0x8
-
-    .line 89
     .line 90
-    const v8, 0x7f133268
+    const/16 v12, 0x8
 
     .line 91
     .line 92
-    .line 93
-    const v11, 0x7f0b08b1
+    const v8, 0x7f13351a
 
+    .line 93
     .line 94
     .line 95
-    .line 96
-    invoke-static/range {v7 .. v12}, LO76;->e(LO76;ILkotlin/jvm/functions/Function1;ZII)V
+    const v11, 0x7f0b099c
 
+    .line 96
     .line 97
     .line 98
-    .line 99
-    const v8, 0x7f13326f
+    invoke-static/range {v7 .. v12}, LYa6;->d(LYa6;ILkotlin/jvm/functions/Function1;ZII)V
 
+    .line 99
     .line 100
     .line 101
-    .line 102
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const v8, 0x7f133521
 
+    .line 102
     .line 103
     .line 104
+    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 105
+    .line 106
+    .line 107
     move-result-object v8
 
-    .line 106
-    const/16 v9, 0x18
-
-    .line 107
     .line 108
-    invoke-static {v7, v1, v5, v8, v9}, LO76;->h(LO76;Lkotlin/jvm/functions/Function1;ZLjava/lang/Integer;I)V
+    const/16 v9, 0x18
 
     .line 109
     .line 110
-    .line 111
-    invoke-virtual {v7, v4}, LO76;->p(LUx;)V
+    invoke-static {v7, v1, v5, v8, v9}, LYa6;->h(LYa6;Lkotlin/jvm/functions/Function1;ZLjava/lang/Integer;I)V
 
+    .line 111
     .line 112
     .line 113
-    .line 114
-    invoke-virtual {v7, v3}, LO76;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v7, v4}, LYa6;->p(LHz;)V
 
+    .line 114
     .line 115
     .line 116
-    .line 117
-    const v1, 0x7f133269
+    invoke-virtual {v7, v3}, LYa6;->q(Lkotlin/jvm/functions/Function1;)V
 
+    .line 117
     .line 118
     .line 119
-    .line 120
-    invoke-virtual {v7, v1}, LO76;->w(I)V
+    const v1, 0x7f13351b
 
+    .line 120
     .line 121
     .line 122
-    .line 123
-    invoke-virtual {v7}, LO76;->b()LP76;
+    invoke-virtual {v7, v1}, LYa6;->w(I)V
 
+    .line 123
     .line 124
     .line 125
+    invoke-virtual {v7}, LYa6;->b()LZa6;
+
     .line 126
+    .line 127
+    .line 128
     move-result-object v1
 
-    .line 127
-    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->B0:LTqc;
-
-    .line 128
     .line 129
-    if-eqz v3, :cond_0
+    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->B0:LmGc;
 
     .line 130
     .line 131
-    invoke-virtual {v1}, LP76;->z()Lcqc;
+    if-eqz v3, :cond_0
 
     .line 132
     .line 133
+    invoke-virtual {v1}, LZa6;->l()LxFc;
+
     .line 134
+    .line 135
+    .line 136
     move-result-object v2
 
-    .line 135
-    invoke-virtual {v3, v1, v2, v6}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 136
     .line 137
+    invoke-virtual {v3, v1, v2, v6}, LmGc;->w(LG4b;LyFc;LkFc;)V
+
     .line 138
+    .line 139
+    .line 140
     return-void
 
-    .line 139
-    :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 140
     .line 141
+    :cond_0
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 142
-    throw v6
-
     .line 143
-    :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 144
-    .line 145
-    .line 146
     throw v6
 
-    .line 147
-    :cond_2
-    instance-of v4, v1, Lnz;
+    .line 145
+    :cond_1
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 146
+    .line 147
     .line 148
+    throw v6
+
     .line 149
-    if-eqz v4, :cond_16
+    :cond_2
+    instance-of v4, v1, LQA;
 
     .line 150
     .line 151
-    check-cast v1, Lnz;
+    if-eqz v4, :cond_16
 
     .line 152
     .line 153
-    invoke-virtual {v1}, Lnz;->A()Lo8d;
+    check-cast v1, LQA;
 
     .line 154
     .line 155
+    invoke-virtual {v1}, LQA;->o()LHnd;
+
     .line 156
+    .line 157
+    .line 158
     move-result-object v4
 
-    .line 157
-    invoke-virtual {v1}, Lnz;->B()Ljava/util/List;
-
-    .line 158
     .line 159
+    invoke-virtual {v1}, LQA;->p()Ljava/util/List;
+
     .line 160
+    .line 161
+    .line 162
     move-result-object v7
 
-    .line 161
+    .line 163
     invoke-interface {v7}, Ljava/util/List;->size()I
 
-    .line 162
-    .line 163
     .line 164
+    .line 165
+    .line 166
     move-result v7
 
-    .line 165
-    invoke-virtual {v1}, Lnz;->x()Z
-
-    .line 166
     .line 167
+    invoke-virtual {v1}, LQA;->l()Z
+
     .line 168
+    .line 169
+    .line 170
     move-result v8
 
-    .line 169
-    invoke-virtual {v1}, Lnz;->C()Z
-
-    .line 170
     .line 171
+    invoke-virtual {v1}, LQA;->q()Z
+
     .line 172
+    .line 173
+    .line 174
     move-result v9
 
-    .line 173
+    .line 175
     invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
 
-    .line 174
-    .line 175
     .line 176
+    .line 177
+    .line 178
     move-result v4
 
-    .line 177
+    .line 179
     const-string v10, "recyclerView"
 
-    .line 178
-    .line 179
+    .line 180
+    .line 181
     const/4 v11, 0x4
 
-    .line 180
-    const-string v12, "continueButton"
-
-    .line 181
     .line 182
-    if-eqz v4, :cond_a
+    const-string v12, "continueButton"
 
     .line 183
     .line 184
-    if-ne v4, v5, :cond_9
+    if-eqz v4, :cond_a
 
     .line 185
     .line 186
-    if-eqz v9, :cond_5
+    if-ne v4, v5, :cond_9
 
     .line 187
     .line 188
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->J0:Lcom/snap/identity/api/sharedui/ProgressButton;
+    if-eqz v9, :cond_5
 
     .line 189
     .line 190
-    if-eqz v2, :cond_4
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->J0:Lcom/snap/identity/api/sharedui/ProgressButton;
 
     .line 191
     .line 192
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    if-eqz v2, :cond_4
 
     .line 193
     .line 194
-    .line 195
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->K0:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
+    .line 195
     .line 196
     .line 197
-    if-eqz v2, :cond_3
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->K0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 198
     .line 199
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    if-eqz v2, :cond_3
 
     .line 200
     .line 201
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+
     .line 202
+    .line 203
+    .line 204
     goto :goto_0
 
-    .line 203
-    :cond_3
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 204
     .line 205
+    :cond_3
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 206
-    throw v6
-
     .line 207
-    :cond_4
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
-
     .line 208
-    .line 209
-    .line 210
     throw v6
 
+    .line 209
+    :cond_4
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 210
     .line 211
+    .line 212
+    throw v6
+
+    .line 213
     :cond_5
     :goto_0
     if-eqz v8, :cond_6
 
-    .line 212
-    .line 213
-    invoke-virtual {v0, v3}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->e2(I)V
-
     .line 214
     .line 215
+    invoke-virtual {v0, v3}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->e2(I)V
+
     .line 216
+    .line 217
+    .line 218
     goto :goto_1
 
-    .line 217
+    .line 219
     :cond_6
     invoke-virtual {v0, v11}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->e2(I)V
 
-    .line 218
-    .line 219
     .line 220
-    :goto_1
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->E0:LAJe;
-
     .line 221
     .line 222
-    invoke-virtual {v2}, LAJe;->b()Z
+    :goto_1
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->E0:Lk1f;
 
     .line 223
     .line 224
+    invoke-virtual {v2}, Lk1f;->b()Z
+
     .line 225
+    .line 226
+    .line 227
     move-result v2
 
-    .line 226
-    if-eqz v2, :cond_7
-
-    .line 227
     .line 228
-    const v2, 0x7f1100a8
+    if-eqz v2, :cond_7
 
     .line 229
     .line 230
+    const v2, 0x7f1100a8
+
     .line 231
+    .line 232
+    .line 233
     goto :goto_2
 
-    .line 232
+    .line 234
     :cond_7
     const v2, 0x7f1100ba
 
-    .line 233
-    .line 234
     .line 235
+    .line 236
+    .line 237
     :goto_2
     if-nez v7, :cond_8
 
-    .line 236
-    .line 237
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
-
     .line 238
     .line 239
+    invoke-virtual {v0}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
+
     .line 240
+    .line 241
+    .line 242
     move-result-object v2
 
-    .line 241
-    const v4, 0x7f131089
-
-    .line 242
     .line 243
-    .line 244
-    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    const v4, 0x7f131135
 
+    .line 244
     .line 245
     .line 246
+    invoke-virtual {v2, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
     .line 247
+    .line 248
+    .line 249
     move-result-object v2
 
-    .line 248
+    .line 250
     invoke-virtual {v0, v2}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->d2(Ljava/lang/String;)V
 
-    .line 249
-    .line 250
     .line 251
+    .line 252
+    .line 253
     goto :goto_3
 
-    .line 252
+    .line 254
     :cond_8
     invoke-virtual {v0}, Landroidx/fragment/app/g;->getResources()Landroid/content/res/Resources;
 
-    .line 253
-    .line 254
     .line 255
+    .line 256
+    .line 257
     move-result-object v4
 
-    .line 256
+    .line 258
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 257
-    .line 258
     .line 259
+    .line 260
+    .line 261
     move-result-object v8
 
-    .line 260
-    new-array v9, v5, [Ljava/lang/Object;
-
-    .line 261
     .line 262
-    aput-object v8, v9, v3
+    new-array v9, v5, [Ljava/lang/Object;
 
     .line 263
     .line 264
-    invoke-virtual {v4, v2, v7, v9}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+    aput-object v8, v9, v3
 
     .line 265
     .line 266
+    invoke-virtual {v4, v2, v7, v9}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
+
     .line 267
+    .line 268
+    .line 269
     move-result-object v2
 
-    .line 268
+    .line 270
     invoke-virtual {v0, v2}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->d2(Ljava/lang/String;)V
 
-    .line 269
-    .line 270
     .line 271
+    .line 272
+    .line 273
     goto :goto_3
 
-    .line 272
-    :cond_9
-    new-instance v1, LFzc;
-
-    .line 273
     .line 274
-    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+    :cond_9
+    new-instance v1, LwOc;
 
     .line 275
     .line 276
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+
     .line 277
+    .line 278
+    .line 279
     throw v1
 
-    .line 278
+    .line 280
     :cond_a
     iget-object v4, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->J0:Lcom/snap/identity/api/sharedui/ProgressButton;
 
-    .line 279
-    .line 280
-    if-eqz v4, :cond_15
-
     .line 281
     .line 282
-    invoke-virtual {v4, v2}, LOuh;->b(I)V
+    if-eqz v4, :cond_15
 
     .line 283
     .line 284
-    .line 285
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->J0:Lcom/snap/identity/api/sharedui/ProgressButton;
+    invoke-virtual {v4, v2}, LOSh;->b(I)V
 
+    .line 285
     .line 286
     .line 287
-    if-eqz v2, :cond_14
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->J0:Lcom/snap/identity/api/sharedui/ProgressButton;
 
     .line 288
     .line 289
-    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+    if-eqz v2, :cond_14
 
     .line 290
     .line 291
-    .line 292
-    invoke-virtual {v0, v11}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->e2(I)V
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
+    .line 292
     .line 293
     .line 294
+    invoke-virtual {v0, v11}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->e2(I)V
+
     .line 295
+    .line 296
+    .line 297
     :goto_3
     iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 296
-    .line 297
-    invoke-virtual {v1}, Lnz;->z()Ljava/util/List;
-
     .line 298
     .line 299
+    invoke-virtual {v1}, LQA;->n()Ljava/util/List;
+
     .line 300
+    .line 301
+    .line 302
     move-result-object v4
 
-    .line 301
+    .line 303
     invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 302
-    .line 303
     .line 304
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->N0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 305
     .line 306
-    invoke-virtual {v1}, Lnz;->B()Ljava/util/List;
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->N0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 307
     .line 308
+    invoke-virtual {v1}, LQA;->p()Ljava/util/List;
+
     .line 309
+    .line 310
+    .line 311
     move-result-object v4
 
-    .line 310
+    .line 312
     invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 311
-    .line 312
     .line 313
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 314
     .line 315
-    invoke-virtual {v1}, Lnz;->y()Ljava/util/Set;
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 316
     .line 317
+    invoke-virtual {v1}, LQA;->m()Ljava/util/Set;
+
     .line 318
+    .line 319
+    .line 320
     move-result-object v4
 
-    .line 319
+    .line 321
     invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 320
-    .line 321
     .line 322
-    invoke-virtual {v1}, Lnz;->B()Ljava/util/List;
-
     .line 323
     .line 324
+    invoke-virtual {v1}, LQA;->p()Ljava/util/List;
+
     .line 325
+    .line 326
+    .line 327
     move-result-object v1
 
-    .line 326
-    check-cast v1, Ljava/lang/Iterable;
-
-    .line 327
     .line 328
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    check-cast v1, Ljava/lang/Iterable;
 
     .line 329
     .line 330
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
     .line 331
+    .line 332
+    .line 333
     move-result-object v1
 
-    .line 332
+    .line 334
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 333
-    .line 334
     .line 335
+    .line 336
+    .line 337
     move-result v2
 
-    .line 336
+    .line 338
     if-nez v2, :cond_b
 
-    .line 337
-    .line 338
+    .line 339
+    .line 340
     move-object v2, v6
 
-    .line 339
+    .line 341
     goto :goto_5
 
-    .line 340
+    .line 342
     :cond_b
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 341
-    .line 342
     .line 343
+    .line 344
+    .line 345
     move-result-object v2
 
-    .line 344
-    check-cast v2, LKKf;
-
-    .line 345
     .line 346
-    invoke-virtual {v2}, LKKf;->a()I
+    check-cast v2, Ld4g;
 
     .line 347
     .line 348
+    invoke-virtual {v2}, Ld4g;->a()I
+
     .line 349
+    .line 350
+    .line 351
     move-result v2
 
-    .line 350
+    .line 352
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 351
-    .line 352
     .line 353
+    .line 354
+    .line 355
     move-result-object v2
 
-    .line 354
+    .line 356
     :cond_c
     :goto_4
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 355
-    .line 356
     .line 357
+    .line 358
+    .line 359
     move-result v4
 
-    .line 358
-    if-eqz v4, :cond_d
-
-    .line 359
     .line 360
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    if-eqz v4, :cond_d
 
     .line 361
     .line 362
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 363
+    .line 364
+    .line 365
     move-result-object v4
 
-    .line 364
-    check-cast v4, LKKf;
-
-    .line 365
     .line 366
-    invoke-virtual {v4}, LKKf;->a()I
+    check-cast v4, Ld4g;
 
     .line 367
     .line 368
+    invoke-virtual {v4}, Ld4g;->a()I
+
     .line 369
+    .line 370
+    .line 371
     move-result v4
 
-    .line 370
+    .line 372
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 371
-    .line 372
     .line 373
+    .line 374
+    .line 375
     move-result-object v4
 
-    .line 374
+    .line 376
     invoke-virtual {v2, v4}, Ljava/lang/Integer;->compareTo(Ljava/lang/Object;)I
 
-    .line 375
-    .line 376
     .line 377
+    .line 378
+    .line 379
     move-result v7
 
-    .line 378
+    .line 380
     if-gez v7, :cond_c
 
-    .line 379
-    .line 380
+    .line 381
+    .line 382
     move-object v2, v4
 
-    .line 381
+    .line 383
     goto :goto_4
 
-    .line 382
+    .line 384
     :cond_d
     :goto_5
     if-eqz v2, :cond_e
 
-    .line 383
-    .line 384
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
-
     .line 385
     .line 386
+    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
+
     .line 387
+    .line 388
+    .line 389
     move-result v1
 
-    .line 388
+    .line 390
     goto :goto_6
 
-    .line 389
+    .line 391
     :cond_e
     const/4 v1, -0x1
 
-    .line 390
+    .line 392
     :goto_6
     iget v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->R0:I
 
-    .line 391
-    .line 392
-    if-le v1, v2, :cond_13
-
     .line 393
     .line 394
-    invoke-virtual {v0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
+    if-le v1, v2, :cond_13
 
     .line 395
     .line 396
+    invoke-virtual {v0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
+
     .line 397
+    .line 398
+    .line 399
     move-result-object v2
 
-    .line 398
-    new-instance v4, LXx;
-
-    .line 399
     .line 400
-    invoke-direct {v4, v2, v3}, LXx;-><init>(Landroid/content/Context;I)V
+    new-instance v4, LKz;
 
     .line 401
     .line 402
-    .line 403
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->K0:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-direct {v4, v2, v3}, LKz;-><init>(Landroid/content/Context;I)V
 
+    .line 403
     .line 404
     .line 405
-    if-eqz v2, :cond_12
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->K0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 406
     .line 407
-    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView;->b0()LwGe;
+    if-eqz v2, :cond_12
 
     .line 408
     .line 409
+    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView;->b0()LfYe;
+
     .line 410
+    .line 411
+    .line 412
     move-result-object v2
 
-    .line 411
-    instance-of v3, v2, Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    .line 412
     .line 413
-    if-eqz v3, :cond_f
+    instance-of v3, v2, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 414
     .line 415
-    check-cast v2, Landroidx/recyclerview/widget/LinearLayoutManager;
+    if-eqz v3, :cond_f
 
     .line 416
     .line 417
-    goto :goto_7
+    check-cast v2, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 418
+    .line 419
+    goto :goto_7
+
+    .line 420
     :cond_f
     move-object v2, v6
 
-    .line 419
+    .line 421
     :goto_7
     if-eqz v2, :cond_10
 
-    .line 420
-    .line 421
-    invoke-virtual {v2}, Landroidx/recyclerview/widget/LinearLayoutManager;->k1()I
-
     .line 422
     .line 423
+    invoke-virtual {v2}, Landroidx/recyclerview/widget/LinearLayoutManager;->p1()I
+
     .line 424
+    .line 425
+    .line 426
     move-result v2
 
-    .line 425
+    .line 427
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 426
-    .line 427
     .line 428
+    .line 429
+    .line 430
     move-result-object v2
 
-    .line 429
+    .line 431
     goto :goto_8
 
-    .line 430
+    .line 432
     :cond_10
     move-object v2, v6
 
-    .line 431
+    .line 433
     :goto_8
     if-eqz v2, :cond_13
 
-    .line 432
-    .line 433
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
-
     .line 434
     .line 435
+    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
+
     .line 436
+    .line 437
+    .line 438
     move-result v2
 
-    .line 437
+    .line 439
     add-int/2addr v2, v5
 
-    .line 438
-    invoke-virtual {v4, v2}, Lgma;->l(I)V
-
-    .line 439
     .line 440
-    .line 441
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->K0:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {v4, v2}, Lvya;->l(I)V
 
+    .line 441
     .line 442
     .line 443
-    if-eqz v2, :cond_11
+    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->K0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 444
     .line 445
-    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView;->b0()LwGe;
+    if-eqz v2, :cond_11
 
     .line 446
     .line 447
+    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView;->b0()LfYe;
+
     .line 448
+    .line 449
+    .line 450
     move-result-object v2
 
-    .line 449
-    if-eqz v2, :cond_13
-
-    .line 450
     .line 451
-    invoke-virtual {v2, v4}, LwGe;->b1(Lgma;)V
+    if-eqz v2, :cond_13
 
     .line 452
     .line 453
+    invoke-virtual {v2, v4}, LfYe;->g1(Lvya;)V
+
     .line 454
+    .line 455
+    .line 456
     goto :goto_9
 
-    .line 455
-    :cond_11
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 456
     .line 457
+    :cond_11
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 458
-    throw v6
-
     .line 459
-    :cond_12
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
-
     .line 460
-    .line 461
-    .line 462
     throw v6
 
+    .line 461
+    :cond_12
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 462
     .line 463
+    .line 464
+    throw v6
+
+    .line 465
     :cond_13
     :goto_9
     iput v1, v0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->R0:I
 
-    .line 464
-    .line 465
+    .line 466
+    .line 467
     return-void
 
-    .line 466
-    :cond_14
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 467
     .line 468
+    :cond_14
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 469
-    throw v6
-
     .line 470
-    :cond_15
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
-
     .line 471
-    .line 472
-    .line 473
     throw v6
 
-    .line 474
-    :cond_16
-    new-instance v1, LFzc;
+    .line 472
+    :cond_15
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 473
+    .line 474
     .line 475
+    throw v6
+
     .line 476
-    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+    :cond_16
+    new-instance v1, LwOc;
 
     .line 477
     .line 478
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+
     .line 479
+    .line 480
+    .line 481
     throw v1
 .end method
 
-.method public final c2()LRy;
+.method public final c2()LuA;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->H0:LRy;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->H0:LuA;
 
     .line 2
     .line 3
@@ -1628,7 +1631,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1643,7 +1646,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Ldz;->a:Ldz;
+    sget-object v0, LGA;->a:LGA;
 
     .line 2
     .line 3
@@ -1700,7 +1703,7 @@
     const/4 v0, 0x0
 
     .line 17
-    invoke-virtual {p1, v0}, LOuh;->b(I)V
+    invoke-virtual {p1, v0}, LOSh;->b(I)V
 
     .line 18
     .line 19
@@ -1713,7 +1716,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p1, v3}, LOuh;->b(I)V
+    invoke-virtual {p1, v3}, LOSh;->b(I)V
 
     .line 25
     .line 26
@@ -1722,7 +1725,7 @@
 
     .line 28
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -1731,7 +1734,7 @@
 
     .line 32
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 33
     .line 34
@@ -1740,7 +1743,7 @@
 
     .line 36
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -1764,7 +1767,7 @@
 
     .line 6
     .line 7
-    const v1, 0x7f0b00fc
+    const v1, 0x7f0b0136
 
     .line 8
     .line 9
@@ -1794,9 +1797,9 @@
     return-void
 .end method
 
-.method public final onQuickAddItemSelectFriendEvent(Lete;)V
+.method public final onQuickAddItemSelectFriendEvent(LNKe;)V
     .locals 1
-    .annotation runtime Lv6i;
+    .annotation runtime LOui;
         threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
     .end annotation
 
@@ -1809,7 +1812,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Lqtk;->h(Landroid/content/Context;)Z
+    invoke-static {v0}, LVTk;->g(Landroid/content/Context;)Z
 
     .line 6
     .line 7
@@ -1829,17 +1832,17 @@
     move-result-object v0
 
     .line 15
-    invoke-static {v0}, LKpk;->g(Landroid/content/Context;)V
+    invoke-static {v0}, LCPk;->f(Landroid/content/Context;)V
 
     .line 16
     .line 17
     .line 18
     :cond_0
-    new-instance v0, Lfz;
+    new-instance v0, LIA;
 
     .line 19
     .line 20
-    invoke-direct {v0, p1}, Lfz;-><init>(Lete;)V
+    invoke-direct {v0, p1}, LIA;-><init>(LNKe;)V
 
     .line 21
     .line 22
@@ -1856,18 +1859,18 @@
     return-void
 .end method
 
-.method public final onQuickAddListItemSeenEvent(Lfte;)V
+.method public final onQuickAddListItemSeenEvent(LOKe;)V
     .locals 1
-    .annotation runtime Lv6i;
+    .annotation runtime LOui;
         threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
     .end annotation
 
     .line 1
-    new-instance v0, Lkz;
+    new-instance v0, LNA;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Lkz;-><init>(Lfte;)V
+    invoke-direct {v0, p1}, LNA;-><init>(LOKe;)V
 
     .line 4
     .line 5
@@ -1884,16 +1887,16 @@
     return-void
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->c2()LRy;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/addfriends/AddFriendsFragment;->c2()LuA;
 
     .line 5
     .line 6
@@ -1901,7 +1904,7 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1, p0}, LqM0;->O2(Ljava/lang/Object;)V
+    invoke-virtual {p1, p0}, LrP0;->Z2(Ljava/lang/Object;)V
 
     .line 9
     .line 10
@@ -1909,11 +1912,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
@@ -1926,7 +1929,7 @@
     move-result-object p1
 
     .line 8
-    invoke-static {p1}, Lqtk;->h(Landroid/content/Context;)Z
+    invoke-static {p1}, LVTk;->g(Landroid/content/Context;)Z
 
     .line 9
     .line 10
@@ -1946,7 +1949,7 @@
     move-result-object p1
 
     .line 18
-    invoke-static {p1}, LKpk;->g(Landroid/content/Context;)V
+    invoke-static {p1}, LCPk;->f(Landroid/content/Context;)V
 
     .line 19
     .line 20
@@ -1955,14 +1958,14 @@
     return-void
 .end method
 
-.method public final y1()V
+.method public final w1()V
     .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p0, v0}, Lcom/snapchat/deck/fragment/MainPageFragment;->T1(LQqc;)V
+    invoke-virtual {p0, v0}, Lcom/snapchat/deck/fragment/MainPageFragment;->T1(LiGc;)V
 
     .line 3
     .line 4

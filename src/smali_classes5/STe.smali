@@ -1,145 +1,99 @@
 .class public final LSTe;
-.super LWyk;
+.super LA7k;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:J
+.field public X:Landroid/widget/TextView;
 
 
 # direct methods
-.method public constructor <init>(J)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, LA7k;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, LSTe;->a:J
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final t(Lsw;Lsw;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, LZTe;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    check-cast p2, LZTe;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LSTe;
+    iget-object p2, p0, LSTe;->X:Landroid/widget/TextView;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    if-eqz p2, :cond_0
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
-    .line 10
-    return v2
+    iget-object p1, p1, LZTe;->X:Ljava/lang/CharSequence;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, LSTe;
+    invoke-virtual {p2, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 12
     .line 13
-    iget-wide v3, p0, LSTe;->a:J
-
     .line 14
+    return-void
+
     .line 15
-    iget-wide v5, p1, LSTe;->a:J
+    :cond_0
+    const-string p1, "subtext"
 
     .line 16
     .line 17
-    cmp-long p1, v3, v5
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 18
     .line 19
-    if-eqz p1, :cond_2
-
     .line 20
+    const/4 p1, 0x0
+
     .line 21
-    return v2
-
-    .line 22
-    :cond_2
-    return v0
+    throw p1
 .end method
 
-.method public final hashCode()I
-    .locals 5
+.method public final u(Landroid/view/View;)V
+    .locals 1
 
     .line 1
-    const/16 v0, 0x20
+    const v0, 0x7f0b1354
 
     .line 2
     .line 3
-    iget-wide v1, p0, LSTe;->a:J
-
     .line 4
-    .line 5
-    ushr-long v3, v1, v0
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 5
     .line 6
     .line 7
-    xor-long/2addr v1, v3
+    move-result-object p1
 
     .line 8
-    long-to-int v0, v1
-
-    .line 9
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "FormatChanged(elapsedRealtimeMs="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-wide v1, p0, LSTe;->a:J
+    check-cast p1, Landroid/widget/TextView;
 
     .line 9
     .line 10
-    const-string v3, ")"
+    iput-object p1, p0, LSTe;->X:Landroid/widget/TextView;
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    return-object v0
+    return-void
 .end method

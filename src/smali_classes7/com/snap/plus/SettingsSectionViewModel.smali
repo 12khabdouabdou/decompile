@@ -1,10 +1,10 @@
 .class public final Lcom/snap/plus/SettingsSectionViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'subscriptionInfo\':r:\'[0]\',\'cheapestProductPrice\':r?:\'[1]\'"
     typeReferences = {

@@ -1,108 +1,204 @@
 .class public final LUFg;
-.super Ljava/lang/Object;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LFJ6;
+.field public a:I
+
+.field public b:Z
 
 
 # direct methods
-.method public constructor <init>(LFJ6;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LUFg;->a:LFJ6;
+    const/4 v0, 0x0
 
     .line 5
+    iput v0, p0, LUFg;->a:I
+
     .line 6
+    .line 7
+    iput-boolean v0, p0, LUFg;->b:Z
+
+    .line 8
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
+
+    .line 11
+    .line 12
+    const/4 v0, -0x1
+
+    .line 13
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+
+    .line 14
+    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+.method public final computeSerializedSize()I
     .locals 3
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
-    const-string v1, "emoji:convert"
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    iget v1, p0, LUFg;->a:I
 
     .line 6
     .line 7
+    const/4 v2, 0x1
+
     .line 8
-    move-result v1
+    and-int/2addr v1, v2
 
     .line 9
-    :try_start_0
-    iget-object v2, p0, LUFg;->a:LFJ6;
+    if-eqz v1, :cond_0
 
     .line 10
     .line 11
-    invoke-virtual {v2, p1}, LFJ6;->b(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v2}, Lbd3;->a(I)I
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    move-result v1
 
     .line 15
-    if-nez p1, :cond_0
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
+
+    .line 17
+    :cond_0
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_2
+
+    .line 6
+    .line 7
+    const/16 v1, 0x8
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_0
 
     .line 16
     .line 17
-    const-string p1, ""
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :catchall_0
-    move-exception p1
-
-    .line 21
     goto :goto_1
 
+    .line 18
+    :cond_1
+    invoke-virtual {p1}, LZc3;->g()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
     .line 22
-    :cond_0
-    :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    iput-boolean v0, p0, LUFg;->b:Z
 
     .line 23
     .line 24
-    .line 25
-    return-object p1
+    iget v0, p0, LUFg;->a:I
 
+    .line 25
     .line 26
-    :goto_1
-    sget-object v0, LXRg;->b:Lzhi;
+    or-int/lit8 v0, v0, 0x1
 
     .line 27
     .line 28
-    if-eqz v0, :cond_1
+    iput v0, p0, LUFg;->a:I
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    goto :goto_0
 
     .line 31
-    .line 32
-    .line 33
-    :cond_1
-    throw p1
+    :cond_2
+    :goto_1
+    return-object p0
+.end method
+
+.method public final writeTo(Lbd3;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LUFg;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    and-int/2addr v0, v1
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-boolean v0, p0, LUFg;->b:Z
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v1, v0}, Lbd3;->z(IZ)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
 .end method

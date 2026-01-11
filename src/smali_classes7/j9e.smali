@@ -3,102 +3,68 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements LJgc;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LDgc;
 
-.field public final synthetic b:LBE8;
+.field public final b:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
 
 # direct methods
-.method public synthetic constructor <init>(LBE8;I)V
+.method public constructor <init>(LDgc;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lj9e;->a:I
-
-    iput-object p1, p0, Lj9e;->b:LBE8;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lj9e;->a:LDgc;
+
+    .line 5
+    .line 6
+    new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 7
+    .line 8
+    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, Lj9e;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public final a(F)V
     .locals 1
 
     .line 1
-    iget v0, p0, Lj9e;->a:I
+    new-instance v0, Li9e;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0, p1}, Li9e;-><init>(F)V
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    iget-object p1, p0, Lj9e;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 7
     .line 8
-    iget-object p1, p0, Lj9e;->b:LBE8;
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
 
     .line 9
     .line 10
-    iget-object p1, p1, LBE8;->h0:Ljava/lang/Object;
-
     .line 11
-    .line 12
-    check-cast p1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 13
-    .line 14
-    sget-object v0, Lu1;->a:Lu1;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 17
-    .line 18
-    .line 19
     return-void
-
-    .line 20
-    :pswitch_0
-    check-cast p1, Lm3d;
-
-    .line 21
-    .line 22
-    iget-object v0, p0, Lj9e;->b:LBE8;
-
-    .line 23
-    .line 24
-    iget-object v0, v0, LBE8;->h0:Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    check-cast v0, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 27
-    .line 28
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-
-    .line 32
-    nop
-
-    .line 33
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

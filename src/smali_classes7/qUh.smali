@@ -1,3 +1,3 @@
-.class public final LqUh;
-.super Ljava/lang/Object;
+.class public abstract LqUh;
+.super LrUh;
 .source "SourceFile"

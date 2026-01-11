@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final z0:LBaf;
+.field public static final z0:LRsf;
 
 
 # instance fields
@@ -14,7 +14,7 @@
 
 .field public final j0:Z
 
-.field public k0:LTp0;
+.field public k0:LXYk;
 
 .field public l0:Z
 
@@ -26,21 +26,21 @@
 
 .field public final p0:F
 
-.field public final q0:LBaf;
+.field public final q0:LRsf;
 
 .field public final r0:Landroid/content/res/ColorStateList;
 
-.field public s0:LP90;
+.field public s0:LVYk;
 
 .field public t0:F
 
-.field public final u0:LdGe;
+.field public final u0:LLXe;
 
-.field public v0:LPZj;
+.field public v0:LDz9;
 
 .field public final w0:J
 
-.field public x0:Ljava/lang/Object;
+.field public x0:Ljava/util/List;
 
 .field public y0:J
 
@@ -50,7 +50,7 @@
     .locals 3
 
     .line 1
-    new-instance v0, LBaf;
+    new-instance v0, LRsf;
 
     .line 2
     .line 3
@@ -60,12 +60,12 @@
     const/4 v2, 0x3
 
     .line 5
-    invoke-direct {v0, v2, v1}, LBaf;-><init>(IF)V
+    invoke-direct {v0, v2, v1}, LRsf;-><init>(IF)V
 
     .line 6
     .line 7
     .line 8
-    sput-object v0, Lcom/snap/lenses/common/RoundedImageView;->z0:LBaf;
+    sput-object v0, Lcom/snap/lenses/common/RoundedImageView;->z0:LRsf;
 
     .line 9
     .line 10
@@ -95,7 +95,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
-    .locals 18
+    .locals 17
 
     const/4 v0, 0x0
 
@@ -114,7 +114,7 @@
     move/from16 v4, p3
 
     .line 3
-    invoke-direct/range {v1 .. v7}, Lcom/snap/imageloading/view/SnapImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILbke;ILHr5;)V
+    invoke-direct/range {v1 .. v7}, Lcom/snap/imageloading/view/SnapImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILDBe;ILex5;)V
 
     .line 4
     new-instance v2, Landroid/graphics/Paint;
@@ -139,9 +139,9 @@
     iput-object v2, v1, Lcom/snap/lenses/common/RoundedImageView;->i0:Landroid/graphics/Paint;
 
     .line 8
-    sget-object v2, Lzaf;->l:Lzaf;
+    sget-object v2, LPsf;->a:LPsf;
 
-    iput-object v2, v1, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iput-object v2, v1, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     const/high16 v2, -0x40800000    # -1.0f
 
@@ -149,9 +149,9 @@
     iput v2, v1, Lcom/snap/lenses/common/RoundedImageView;->p0:F
 
     .line 10
-    sget-object v5, Lcom/snap/lenses/common/RoundedImageView;->z0:LBaf;
+    sget-object v5, Lcom/snap/lenses/common/RoundedImageView;->z0:LRsf;
 
-    iput-object v5, v1, Lcom/snap/lenses/common/RoundedImageView;->q0:LBaf;
+    iput-object v5, v1, Lcom/snap/lenses/common/RoundedImageView;->q0:LRsf;
 
     .line 11
     invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
@@ -162,9 +162,9 @@
     iput-object v5, v1, Lcom/snap/lenses/common/RoundedImageView;->r0:Landroid/content/res/ColorStateList;
 
     .line 13
-    sget-object v5, Luaf;->g:Luaf;
+    sget-object v5, LKsf;->a:LKsf;
 
-    iput-object v5, v1, Lcom/snap/lenses/common/RoundedImageView;->s0:LP90;
+    iput-object v5, v1, Lcom/snap/lenses/common/RoundedImageView;->s0:LVYk;
 
     const/high16 v6, 0x3f800000    # 1.0f
 
@@ -172,26 +172,26 @@
     iput v6, v1, Lcom/snap/lenses/common/RoundedImageView;->t0:F
 
     .line 15
-    sget-object v7, LdGe;->e:LdGe;
+    sget-object v7, LLXe;->e:LLXe;
 
-    iput-object v7, v1, Lcom/snap/lenses/common/RoundedImageView;->u0:LdGe;
+    iput-object v7, v1, Lcom/snap/lenses/common/RoundedImageView;->u0:LLXe;
 
     .line 16
-    sget-object v7, LLDi;->e:LLDi;
+    sget-object v7, Lp3j;->d:Lp3j;
 
-    iput-object v7, v1, Lcom/snap/lenses/common/RoundedImageView;->v0:LPZj;
+    iput-object v7, v1, Lcom/snap/lenses/common/RoundedImageView;->v0:LDz9;
 
     .line 17
-    sget v7, LHC6;->t:I
+    sget v7, LeG6;->t:I
 
     const-wide/16 v7, 0x0
 
     iput-wide v7, v1, Lcom/snap/lenses/common/RoundedImageView;->w0:J
 
     .line 18
-    sget-object v9, LsL6;->a:LsL6;
+    sget-object v9, LgP6;->a:LgP6;
 
-    iput-object v9, v1, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/lang/Object;
+    iput-object v9, v1, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/util/List;
 
     const-wide/16 v9, -0x1
 
@@ -199,33 +199,33 @@
     iput-wide v9, v1, Lcom/snap/lenses/common/RoundedImageView;->y0:J
 
     .line 20
-    invoke-static {}, LQtc;->x()V
+    invoke-static {}, LYh7;->M()V
 
     iput-boolean v4, v1, Lcom/snap/lenses/common/RoundedImageView;->j0:Z
 
     .line 21
-    new-instance v9, LhY2;
+    new-instance v9, LJ03;
 
     const/4 v10, 0x4
 
-    invoke-direct {v9, v10, v1}, LhY2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v9, v10, v1}, LJ03;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {v1, v9}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
 
     if-eqz v3, :cond_1e
 
     .line 22
-    sget-object v9, LXRg;->a:LWRg;
+    sget-object v9, LOdh;->a:LNdh;
 
     const-string v10, "LOOK:RoundedImageView#obtainStyledAttributes"
 
-    invoke-virtual {v9, v10}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v9, v10}, LNdh;->e(Ljava/lang/String;)I
 
     move-result v10
 
     .line 23
     :try_start_0
-    sget-object v11, Lrve;->a:[I
+    sget-object v11, LaNe;->a:[I
 
     move-object/from16 v12, p1
 
@@ -237,7 +237,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_a
 
-    invoke-virtual {v9, v10}, LWRg;->h(I)V
+    invoke-virtual {v9, v10}, LNdh;->h(I)V
 
     const/16 v10, 0xf
 
@@ -258,7 +258,7 @@
 
     .line 25
     :cond_1
-    invoke-static {v10}, LX4i;->X0(Ljava/lang/String;)Ljava/lang/Float;
+    invoke-static {v10}, Lqti;->e0(Ljava/lang/String;)Ljava/lang/Float;
 
     move-result-object v12
 
@@ -274,7 +274,7 @@
     const/16 v12, 0x3a
 
     .line 26
-    invoke-static {v10, v12, v0, v11}, LR4i;->t1(Ljava/lang/CharSequence;CII)I
+    invoke-static {v10, v12, v0, v11}, Lkti;->A0(Ljava/lang/CharSequence;CII)I
 
     move-result v12
 
@@ -297,7 +297,7 @@
 
     move-result-object v12
 
-    invoke-static {v12}, LY4i;->Z0(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-static {v12}, Lrti;->g0(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v12
 
@@ -306,7 +306,7 @@
 
     move-result-object v10
 
-    invoke-static {v10}, LY4i;->Z0(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-static {v10}, Lrti;->g0(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v10
 
@@ -351,17 +351,15 @@
 
     const/16 v13, 0xa
 
-    const/4 v14, 0x2
-
     cmpl-float v15, v2, v12
 
     if-ltz v15, :cond_4
 
     .line 34
-    new-instance v15, LBaf;
+    new-instance v15, LRsf;
 
     .line 35
-    new-instance v7, LAaf;
+    new-instance v7, LQsf;
 
     const v8, 0x10100a1
 
@@ -371,7 +369,7 @@
     move-result-object v8
 
     .line 37
-    invoke-direct {v7, v8, v2}, LAaf;-><init>([IF)V
+    invoke-direct {v7, v8, v2}, LQsf;-><init>([IF)V
 
     .line 38
     invoke-static {v7}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
@@ -379,15 +377,15 @@
     move-result-object v2
 
     .line 39
-    invoke-direct {v15, v2, v10}, LBaf;-><init>(Ljava/util/List;F)V
+    invoke-direct {v15, v2, v10}, LRsf;-><init>(Ljava/util/List;F)V
 
-    goto/16 :goto_9
+    goto/16 :goto_8
 
     .line 40
     :cond_4
     const-string v2, "LOOK:RoundedImageView#readShapeStrokeStatesIds"
 
-    invoke-virtual {v9, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v9, v2}, LNdh;->e(Ljava/lang/String;)I
 
     move-result v2
 
@@ -403,12 +401,12 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_9
 
-    invoke-virtual {v9, v2}, LWRg;->h(I)V
+    invoke-virtual {v9, v2}, LNdh;->h(I)V
 
     .line 42
     const-string v2, "LOOK:RoundedImageView#readShapeStrokeStatesSize"
 
-    invoke-virtual {v9, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v9, v2}, LNdh;->e(Ljava/lang/String;)I
 
     move-result v2
 
@@ -422,7 +420,7 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_8
 
-    invoke-virtual {v9, v2}, LWRg;->h(I)V
+    invoke-virtual {v9, v2}, LNdh;->h(I)V
 
     if-eq v7, v8, :cond_d
 
@@ -431,7 +429,7 @@
     .line 44
     const-string v2, "LOOK:RoundedImageView#resolveComplexSizeStateList"
 
-    invoke-virtual {v9, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v9, v2}, LNdh;->e(Ljava/lang/String;)I
 
     move-result v2
 
@@ -439,7 +437,7 @@
     :try_start_3
     const-string v8, "LOOK:RoundedImageView#readStatesArray"
 
-    invoke-virtual {v9, v8}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v9, v8}, LNdh;->e(Ljava/lang/String;)I
 
     move-result v8
     :try_end_3
@@ -451,9 +449,9 @@
 
     move-result-object v11
 
-    new-instance v6, LCaf;
+    new-instance v6, LTsf;
 
-    invoke-direct {v6, v1, v4}, LCaf;-><init>(Lcom/snap/lenses/common/RoundedImageView;I)V
+    invoke-direct {v6, v1, v4}, LTsf;-><init>(Lcom/snap/lenses/common/RoundedImageView;I)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_4
 
@@ -469,7 +467,7 @@
 
     .line 48
     :try_start_6
-    invoke-virtual {v6, v7}, LCaf;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v6, v7}, LTsf;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v6
     :try_end_6
@@ -489,12 +487,12 @@
 
     .line 51
     :try_start_8
-    invoke-virtual {v9, v8}, LWRg;->h(I)V
+    invoke-virtual {v9, v8}, LNdh;->h(I)V
 
     .line 52
     const-string v7, "LOOK:RoundedImageView#readStatesSize"
 
-    invoke-virtual {v9, v7}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v9, v7}, LNdh;->e(Ljava/lang/String;)I
 
     move-result v7
     :try_end_8
@@ -518,54 +516,54 @@
 
     .line 55
     :try_start_b
-    invoke-static {v8}, LCnk;->b(Landroid/content/res/TypedArray;)LZn9;
+    invoke-static {v8}, LRKk;->b(Landroid/content/res/TypedArray;)Lcx9;
 
     move-result-object v11
 
     .line 56
     new-instance v15, Ljava/util/ArrayList;
 
-    invoke-static {v11, v13}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v11, v13}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
-    move-result v4
+    move-result v14
 
-    invoke-direct {v15, v4}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v15, v14}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 57
-    invoke-virtual {v11}, LXn9;->iterator()Ljava/util/Iterator;
-
-    move-result-object v4
-
-    :goto_2
-    move-object v11, v4
-
-    check-cast v11, LYn9;
-
-    .line 58
-    iget-boolean v11, v11, LYn9;->c:Z
-
-    if-eqz v11, :cond_6
-
-    .line 59
-    move-object v11, v4
-
-    check-cast v11, LSn9;
-
-    invoke-virtual {v11}, LSn9;->a()I
-
-    move-result v11
-
-    .line 60
-    invoke-virtual {v8, v11, v12}, Landroid/content/res/TypedArray;->getDimension(IF)F
-
-    move-result v11
-
-    invoke-static {v11}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    invoke-virtual {v11}, Lax9;->iterator()Ljava/util/Iterator;
 
     move-result-object v11
 
+    :goto_2
+    move-object v14, v11
+
+    check-cast v14, Lbx9;
+
+    .line 58
+    iget-boolean v14, v14, Lbx9;->c:Z
+
+    if-eqz v14, :cond_6
+
+    .line 59
+    move-object v14, v11
+
+    check-cast v14, LVw9;
+
+    invoke-virtual {v14}, LVw9;->a()I
+
+    move-result v14
+
+    .line 60
+    invoke-virtual {v8, v14, v12}, Landroid/content/res/TypedArray;->getDimension(IF)F
+
+    move-result v14
+
+    invoke-static {v14}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v14
+
     .line 61
-    invoke-virtual {v15, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v15, v14}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_1
 
@@ -580,104 +578,103 @@
 
     .line 63
     :try_start_d
-    invoke-virtual {v9, v7}, LWRg;->h(I)V
+    invoke-virtual {v9, v7}, LNdh;->h(I)V
 
     .line 64
-    move-object v4, v6
+    move-object v7, v6
 
-    check-cast v4, Ljava/util/Collection;
+    check-cast v7, Ljava/util/Collection;
 
-    invoke-interface {v4}, Ljava/util/Collection;->isEmpty()Z
-
-    move-result v4
-
-    if-nez v4, :cond_7
-
-    invoke-interface {v6}, Ljava/util/List;->size()I
-
-    move-result v4
-
-    invoke-virtual {v15}, Ljava/util/ArrayList;->size()I
+    invoke-interface {v7}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v7
 
-    if-ne v4, v7, :cond_7
+    if-nez v7, :cond_7
+
+    invoke-interface {v6}, Ljava/util/List;->size()I
+
+    move-result v7
+
+    invoke-virtual {v15}, Ljava/util/ArrayList;->size()I
+
+    move-result v8
+
+    if-ne v7, v8, :cond_7
 
     .line 65
-    new-instance v4, LBaf;
+    new-instance v7, LRsf;
 
     .line 66
     check-cast v6, Ljava/lang/Iterable;
 
     .line 67
-    new-instance v7, LDe3;
+    new-instance v8, LR90;
 
-    invoke-direct {v7, v0, v6}, LDe3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v8, v4, v6}, LR90;-><init>(ILjava/lang/Object;)V
 
     .line 68
-    sget-object v6, Lr3f;->X:Lr3f;
+    sget-object v6, LXbf;->f0:LXbf;
 
-    invoke-static {v7, v6}, LvYf;->N0(LrYf;Lkotlin/jvm/functions/Function1;)LBt7;
+    invoke-static {v8, v6}, Lvig;->o0(Lrig;Lkotlin/jvm/functions/Function1;)Lmy7;
 
     move-result-object v6
 
     .line 69
-    new-instance v7, Lcpb;
+    new-instance v8, LSsf;
 
-    const/16 v8, 0x14
-
-    invoke-direct {v7, v8, v15}, Lcpb;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v8, v15, v0}, LSsf;-><init>(Ljava/util/ArrayList;I)V
 
     .line 70
-    new-instance v8, Lay6;
+    new-instance v11, LuB6;
 
-    invoke-direct {v8, v6, v7}, Lay6;-><init>(LrYf;Lkotlin/jvm/functions/Function2;)V
+    invoke-direct {v11, v6, v8}, LuB6;-><init>(Lrig;Lkotlin/jvm/functions/Function2;)V
 
     .line 71
-    invoke-static {v8}, LvYf;->b1(LrYf;)Ljava/util/List;
+    invoke-static {v11}, Lvig;->A0(Lrig;)Ljava/util/List;
 
     move-result-object v6
 
     .line 72
-    invoke-direct {v4, v6, v10}, LBaf;-><init>(Ljava/util/List;F)V
+    invoke-direct {v7, v6, v10}, LRsf;-><init>(Ljava/util/List;F)V
 
-    :goto_3
-    move-object v15, v4
+    move-object v15, v7
 
-    goto :goto_4
+    goto :goto_3
 
     :catchall_0
     move-exception v0
 
-    goto :goto_8
+    goto :goto_7
 
     .line 73
     :cond_7
-    new-instance v4, LBaf;
+    new-instance v6, LRsf;
 
-    invoke-direct {v4, v14, v10}, LBaf;-><init>(IF)V
+    const/4 v7, 0x2
+
+    invoke-direct {v6, v7, v10}, LRsf;-><init>(IF)V
     :try_end_d
     .catchall {:try_start_d .. :try_end_d} :catchall_0
 
-    goto :goto_3
+    move-object v15, v6
 
     .line 74
-    :goto_4
-    invoke-virtual {v9, v2}, LWRg;->h(I)V
+    :goto_3
+    invoke-virtual {v9, v2}, LNdh;->h(I)V
 
-    goto :goto_9
+    goto :goto_8
 
     :catchall_1
     move-exception v0
 
     move-object/from16 v16, v8
 
-    goto :goto_5
+    goto :goto_4
 
     :catchall_2
     move-exception v0
 
-    :goto_5
+    :goto_4
     if-eqz v16, :cond_8
 
     .line 75
@@ -694,12 +691,12 @@
 
     .line 76
     :try_start_f
-    sget-object v3, LXRg;->b:Lzhi;
+    sget-object v3, LOdh;->b:LtGi;
 
     if-eqz v3, :cond_9
 
     .line 77
-    invoke-virtual {v3, v7}, Lzhi;->o(I)V
+    invoke-virtual {v3, v7}, LtGi;->o(I)V
 
     .line 78
     :cond_9
@@ -710,19 +707,19 @@
     :catchall_4
     move-exception v0
 
-    goto :goto_7
+    goto :goto_6
 
     :catchall_5
     move-exception v0
 
     move-object/from16 v16, v7
 
-    goto :goto_6
+    goto :goto_5
 
     :catchall_6
     move-exception v0
 
-    :goto_6
+    :goto_5
     if-eqz v16, :cond_a
 
     .line 79
@@ -735,14 +732,14 @@
     .catchall {:try_start_10 .. :try_end_10} :catchall_4
 
     .line 80
-    :goto_7
+    :goto_6
     :try_start_11
-    sget-object v3, LXRg;->b:Lzhi;
+    sget-object v3, LOdh;->b:LtGi;
 
     if-eqz v3, :cond_b
 
     .line 81
-    invoke-virtual {v3, v8}, Lzhi;->o(I)V
+    invoke-virtual {v3, v8}, LtGi;->o(I)V
 
     .line 82
     :cond_b
@@ -751,13 +748,13 @@
     .catchall {:try_start_11 .. :try_end_11} :catchall_0
 
     .line 83
-    :goto_8
-    sget-object v3, LXRg;->b:Lzhi;
+    :goto_7
+    sget-object v3, LOdh;->b:LtGi;
 
     if-eqz v3, :cond_c
 
     .line 84
-    invoke-virtual {v3, v2}, Lzhi;->o(I)V
+    invoke-virtual {v3, v2}, LtGi;->o(I)V
 
     .line 85
     :cond_c
@@ -765,34 +762,36 @@
 
     .line 86
     :cond_d
-    new-instance v15, LBaf;
+    new-instance v15, LRsf;
 
-    invoke-direct {v15, v14, v10}, LBaf;-><init>(IF)V
+    const/4 v7, 0x2
+
+    invoke-direct {v15, v7, v10}, LRsf;-><init>(IF)V
 
     .line 87
-    :goto_9
-    iget-object v2, v1, Lcom/snap/lenses/common/RoundedImageView;->q0:LBaf;
+    :goto_8
+    iget-object v2, v1, Lcom/snap/lenses/common/RoundedImageView;->q0:LRsf;
 
-    invoke-static {v2, v15}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v15}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_e
 
-    goto :goto_a
+    goto :goto_9
 
     .line 88
     :cond_e
-    iput-object v15, v1, Lcom/snap/lenses/common/RoundedImageView;->q0:LBaf;
+    iput-object v15, v1, Lcom/snap/lenses/common/RoundedImageView;->q0:LRsf;
 
     .line 89
-    invoke-virtual {v1}, Lcom/snap/lenses/common/RoundedImageView;->w()V
+    invoke-virtual {v1}, Lcom/snap/lenses/common/RoundedImageView;->v()V
 
     .line 90
-    :goto_a
+    :goto_9
     const-string v2, "LOOK:RoundedImageView#readShapeStrokeColor"
 
-    invoke-virtual {v9, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v9, v2}, LNdh;->e(Ljava/lang/String;)I
 
     move-result v2
 
@@ -800,34 +799,34 @@
     :try_start_12
     invoke-virtual {v3, v13}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
-    move-result-object v4
+    move-result-object v6
 
-    if-eqz v4, :cond_10
+    if-eqz v6, :cond_10
 
     .line 92
-    iget-object v6, v1, Lcom/snap/lenses/common/RoundedImageView;->r0:Landroid/content/res/ColorStateList;
+    iget-object v7, v1, Lcom/snap/lenses/common/RoundedImageView;->r0:Landroid/content/res/ColorStateList;
 
-    invoke-static {v6, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v6}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_f
+    if-eqz v7, :cond_f
 
-    goto :goto_b
+    goto :goto_a
 
     .line 93
     :cond_f
-    iput-object v4, v1, Lcom/snap/lenses/common/RoundedImageView;->r0:Landroid/content/res/ColorStateList;
+    iput-object v6, v1, Lcom/snap/lenses/common/RoundedImageView;->r0:Landroid/content/res/ColorStateList;
 
     .line 94
-    invoke-virtual {v1}, Lcom/snap/lenses/common/RoundedImageView;->x()V
+    invoke-virtual {v1}, Lcom/snap/lenses/common/RoundedImageView;->w()V
     :try_end_12
     .catchall {:try_start_12 .. :try_end_12} :catchall_7
 
     .line 95
     :cond_10
-    :goto_b
-    invoke-virtual {v9, v2}, LWRg;->h(I)V
+    :goto_a
+    invoke-virtual {v9, v2}, LNdh;->h(I)V
 
     const/16 v2, 0x9
 
@@ -836,13 +835,13 @@
 
     move-result v2
 
-    const/4 v4, 0x1
-
     if-eq v2, v4, :cond_12
 
-    if-eq v2, v14, :cond_11
+    const/4 v7, 0x2
 
-    goto :goto_c
+    if-eq v2, v7, :cond_11
+
+    goto :goto_b
 
     .line 97
     :cond_11
@@ -850,66 +849,61 @@
 
     move-result v2
 
-    cmpl-float v4, v2, v12
+    cmpl-float v6, v2, v12
 
-    if-lez v4, :cond_13
+    if-lez v6, :cond_13
 
     .line 98
-    new-instance v5, Ltaf;
+    new-instance v5, LJsf;
 
-    invoke-direct {v5, v2}, Ltaf;-><init>(F)V
+    invoke-direct {v5, v2}, LJsf;-><init>(F)V
 
-    goto :goto_c
+    goto :goto_b
 
     .line 99
     :cond_12
-    sget-object v5, Lsaf;->g:Lsaf;
+    sget-object v5, LIsf;->a:LIsf;
 
     .line 100
     :cond_13
-    :goto_c
-    invoke-virtual {v1, v5}, Lcom/snap/lenses/common/RoundedImageView;->B(LP90;)V
+    :goto_b
+    invoke-virtual {v1, v5}, Lcom/snap/lenses/common/RoundedImageView;->A(LVYk;)V
 
     const/16 v2, 0x8
 
-    const/high16 v4, 0x3f800000    # 1.0f
+    const/high16 v5, 0x3f800000    # 1.0f
 
     .line 101
-    invoke-virtual {v3, v2, v4}, Landroid/content/res/TypedArray;->getFloat(IF)F
+    invoke-virtual {v3, v2, v5}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
     move-result v2
 
     .line 102
-    iget v5, v1, Lcom/snap/lenses/common/RoundedImageView;->t0:F
+    iget v6, v1, Lcom/snap/lenses/common/RoundedImageView;->t0:F
 
-    cmpg-float v5, v5, v2
+    cmpg-float v6, v6, v2
 
-    if-nez v5, :cond_14
+    if-nez v6, :cond_14
 
-    goto :goto_f
+    goto :goto_d
 
     .line 103
     :cond_14
     iput v2, v1, Lcom/snap/lenses/common/RoundedImageView;->t0:F
 
-    cmpg-float v2, v2, v4
+    cmpg-float v2, v2, v5
 
     if-nez v2, :cond_15
 
-    const/4 v4, 0x1
+    const/4 v2, 0x1
 
-    :goto_d
-    const/16 v17, 0x1
-
-    goto :goto_e
+    goto :goto_c
 
     :cond_15
-    const/4 v4, 0x0
+    const/4 v2, 0x0
 
-    goto :goto_d
-
-    :goto_e
-    xor-int/lit8 v2, v4, 0x1
+    :goto_c
+    xor-int/2addr v2, v4
 
     .line 104
     iput-boolean v2, v1, Lcom/snap/lenses/common/RoundedImageView;->n0:Z
@@ -918,13 +912,13 @@
     invoke-virtual {v1}, Landroid/view/View;->invalidate()V
 
     .line 106
-    :goto_f
+    :goto_d
     iget-boolean v2, v1, Lcom/snap/lenses/common/RoundedImageView;->j0:Z
 
     if-eqz v2, :cond_19
 
     .line 107
-    sget v2, LHC6;->t:I
+    sget v2, LeG6;->t:I
 
     const/4 v2, 0x6
 
@@ -932,9 +926,9 @@
 
     move-result v0
 
-    sget-object v2, LUC6;->c:LUC6;
+    sget-object v2, LrG6;->c:LrG6;
 
-    invoke-static {v0, v2}, LI0j;->P(ILUC6;)J
+    invoke-static {v0, v2}, LKi5;->a0(ILrG6;)J
 
     move-result-wide v4
 
@@ -944,18 +938,18 @@
     if-eqz v0, :cond_17
 
     .line 109
-    new-instance v0, LHC6;
+    new-instance v0, LeG6;
 
-    invoke-direct {v0, v4, v5}, LHC6;-><init>(J)V
+    invoke-direct {v0, v4, v5}, LeG6;-><init>(J)V
 
-    new-instance v2, LHC6;
+    new-instance v2, LeG6;
 
     const-wide/16 v4, 0x0
 
-    invoke-direct {v2, v4, v5}, LHC6;-><init>(J)V
+    invoke-direct {v2, v4, v5}, LeG6;-><init>(J)V
 
     .line 110
-    invoke-virtual {v0, v2}, LHC6;->compareTo(Ljava/lang/Object;)I
+    invoke-virtual {v0, v2}, LeG6;->compareTo(Ljava/lang/Object;)I
 
     move-result v4
 
@@ -965,9 +959,9 @@
 
     .line 111
     :cond_16
-    iget-wide v7, v0, LHC6;->a:J
+    iget-wide v7, v0, LeG6;->a:J
 
-    goto :goto_10
+    goto :goto_e
 
     :cond_17
     const-wide/16 v4, 0x0
@@ -975,16 +969,16 @@
     move-wide v7, v4
 
     .line 112
-    :goto_10
+    :goto_e
     iget-wide v4, v1, Lcom/snap/lenses/common/RoundedImageView;->w0:J
 
-    invoke-static {v4, v5, v7, v8}, LHC6;->d(JJ)Z
+    invoke-static {v4, v5, v7, v8}, LeG6;->d(JJ)Z
 
     move-result v0
 
     if-eqz v0, :cond_18
 
-    goto :goto_11
+    goto :goto_f
 
     .line 113
     :cond_18
@@ -995,7 +989,7 @@
 
     .line 115
     :cond_19
-    :goto_11
+    :goto_f
     invoke-virtual {v3}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -1004,12 +998,12 @@
     move-exception v0
 
     .line 116
-    sget-object v3, LXRg;->b:Lzhi;
+    sget-object v3, LOdh;->b:LtGi;
 
     if-eqz v3, :cond_1a
 
     .line 117
-    invoke-virtual {v3, v2}, Lzhi;->o(I)V
+    invoke-virtual {v3, v2}, LtGi;->o(I)V
 
     .line 118
     :cond_1a
@@ -1019,12 +1013,12 @@
     move-exception v0
 
     .line 119
-    sget-object v3, LXRg;->b:Lzhi;
+    sget-object v3, LOdh;->b:LtGi;
 
     if-eqz v3, :cond_1b
 
     .line 120
-    invoke-virtual {v3, v2}, Lzhi;->o(I)V
+    invoke-virtual {v3, v2}, LtGi;->o(I)V
 
     .line 121
     :cond_1b
@@ -1034,12 +1028,12 @@
     move-exception v0
 
     .line 122
-    sget-object v3, LXRg;->b:Lzhi;
+    sget-object v3, LOdh;->b:LtGi;
 
     if-eqz v3, :cond_1c
 
     .line 123
-    invoke-virtual {v3, v2}, Lzhi;->o(I)V
+    invoke-virtual {v3, v2}, LtGi;->o(I)V
 
     .line 124
     :cond_1c
@@ -1049,12 +1043,12 @@
     move-exception v0
 
     .line 125
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     if-eqz v2, :cond_1d
 
     .line 126
-    invoke-virtual {v2, v10}, Lzhi;->o(I)V
+    invoke-virtual {v2, v10}, LtGi;->o(I)V
 
     .line 127
     :cond_1d
@@ -1064,7 +1058,7 @@
     return-void
 .end method
 
-.method public static synthetic A(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
+.method public static synthetic z(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
     .locals 1
 
     .line 1
@@ -1072,7 +1066,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, v0}, Lcom/snap/lenses/common/RoundedImageView;->z(Landroid/graphics/Canvas;F)V
+    invoke-virtual {p0, p1, v0}, Lcom/snap/lenses/common/RoundedImageView;->y(Landroid/graphics/Canvas;F)V
 
     .line 4
     .line 5
@@ -1082,15 +1076,15 @@
 
 
 # virtual methods
-.method public final B(LP90;)V
+.method public final A(LVYk;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->s0:LP90;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->s0:LVYk;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -1106,11 +1100,11 @@
 
     .line 10
     :cond_0
-    iput-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->s0:LP90;
+    iput-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->s0:LVYk;
 
     .line 11
     .line 12
-    sget-object v0, Luaf;->g:Luaf;
+    sget-object v0, LKsf;->a:LKsf;
 
     .line 13
     .line 14
@@ -1133,7 +1127,7 @@
     .line 21
     .line 22
     .line 23
-    instance-of v0, p1, Lsaf;
+    instance-of v0, p1, LIsf;
 
     .line 24
     .line 25
@@ -1141,11 +1135,11 @@
 
     .line 26
     .line 27
-    new-instance v0, Lraf;
+    new-instance v0, LHsf;
 
     .line 28
     .line 29
-    invoke-direct {v0}, Lraf;-><init>()V
+    invoke-direct {v0}, LHsf;-><init>()V
 
     .line 30
     .line 31
@@ -1154,7 +1148,7 @@
 
     .line 33
     :cond_1
-    instance-of v0, p1, Ltaf;
+    instance-of v0, p1, LJsf;
 
     .line 34
     .line 35
@@ -1162,22 +1156,22 @@
 
     .line 36
     .line 37
-    new-instance v0, Lyaf;
+    new-instance v0, LOsf;
 
     .line 38
     .line 39
     move-object v2, p1
 
     .line 40
-    check-cast v2, Ltaf;
+    check-cast v2, LJsf;
 
     .line 41
     .line 42
-    iget v2, v2, Ltaf;->g:F
+    iget v2, v2, LJsf;->a:F
 
     .line 43
     .line 44
-    invoke-direct {v0, v2}, Lyaf;-><init>(F)V
+    invoke-direct {v0, v2}, LOsf;-><init>(F)V
 
     .line 45
     .line 46
@@ -1186,7 +1180,7 @@
 
     .line 48
     :cond_2
-    instance-of v0, p1, Luaf;
+    instance-of v0, p1, LKsf;
 
     .line 49
     .line 50
@@ -1194,20 +1188,20 @@
 
     .line 51
     .line 52
-    new-instance v0, Lyaf;
+    new-instance v0, LOsf;
 
     .line 53
     .line 54
     const/4 v2, 0x0
 
     .line 55
-    invoke-direct {v0, v2}, Lyaf;-><init>(F)V
+    invoke-direct {v0, v2}, LOsf;-><init>(F)V
 
     .line 56
     .line 57
     .line 58
     :goto_0
-    invoke-virtual {p1}, LP90;->f()Z
+    invoke-virtual {p1}, LVYk;->h()Z
 
     .line 59
     .line 60
@@ -1219,11 +1213,11 @@
 
     .line 63
     .line 64
-    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 65
     .line 66
-    invoke-static {p1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 67
     .line 68
@@ -1235,7 +1229,7 @@
 
     .line 71
     .line 72
-    iput-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iput-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 73
     .line 74
@@ -1255,7 +1249,7 @@
 
     .line 81
     :cond_4
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 82
     .line 83
@@ -1380,11 +1374,11 @@
 
     .line 50
     .line 51
-    iget-object v2, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object v2, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 52
     .line 53
-    invoke-virtual {v2}, LTp0;->c()F
+    invoke-virtual {v2}, LXYk;->i()F
 
     .line 54
     .line 55
@@ -1392,11 +1386,11 @@
     move-result v2
 
     .line 57
-    iget-object v3, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object v3, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 58
     .line 59
-    invoke-virtual {v3}, LTp0;->d()F
+    invoke-virtual {v3}, LXYk;->j()F
 
     .line 60
     .line 61
@@ -1427,11 +1421,11 @@
     .line 73
     .line 74
     :cond_3
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 75
     .line 76
-    invoke-virtual {v0, v1}, LTp0;->a(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, v1}, LXYk;->a(Landroid/graphics/Canvas;)V
 
     .line 77
     .line 78
@@ -1497,7 +1491,7 @@
 
     .line 107
     .line 108
-    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 109
     .line 110
@@ -1505,7 +1499,7 @@
 
     .line 111
     .line 112
-    invoke-virtual {p1, v1, v0}, LTp0;->b(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
+    invoke-virtual {p1, v1, v0}, LXYk;->h(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
     .line 113
     .line 114
@@ -1523,7 +1517,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/util/List;
 
     .line 5
     .line 6
@@ -1587,11 +1581,11 @@
     move-result-object v2
 
     .line 35
-    check-cast v2, Lxaf;
+    check-cast v2, LNsf;
 
     .line 36
     .line 37
-    iget-object v2, v2, Lxaf;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v2, LNsf;->a:Landroid/graphics/drawable/Drawable;
 
     .line 38
     .line 39
@@ -1604,12 +1598,12 @@
 
     .line 43
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/lenses/common/RoundedImageView;->x()V
+    invoke-virtual {p0}, Lcom/snap/lenses/common/RoundedImageView;->w()V
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {p0}, Lcom/snap/lenses/common/RoundedImageView;->w()V
+    invoke-virtual {p0}, Lcom/snap/lenses/common/RoundedImageView;->v()V
 
     .line 47
     .line 48
@@ -1658,7 +1652,7 @@
 
     .line 18
     .line 19
-    invoke-static {v3, v4, v5, v6}, LHC6;->c(JJ)I
+    invoke-static {v3, v4, v5, v6}, LeG6;->c(JJ)I
 
     .line 20
     .line 21
@@ -1683,7 +1677,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-static {p0, p1}, Lcom/snap/lenses/common/RoundedImageView;->A(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
+    invoke-static {p0, p1}, Lcom/snap/lenses/common/RoundedImageView;->z(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
 
     .line 33
     .line 34
@@ -1738,7 +1732,7 @@
     .line 57
     .line 58
     .line 59
-    invoke-static {p0, p1}, Lcom/snap/lenses/common/RoundedImageView;->A(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
+    invoke-static {p0, p1}, Lcom/snap/lenses/common/RoundedImageView;->z(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
 
     .line 60
     .line 61
@@ -1747,7 +1741,7 @@
 
     .line 63
     :cond_3
-    invoke-static {v3, v4}, LHC6;->e(J)J
+    invoke-static {v3, v4}, LeG6;->e(J)J
 
     .line 64
     .line 65
@@ -1788,7 +1782,7 @@
     .line 80
     .line 81
     .line 82
-    invoke-static {p0, p1}, Lcom/snap/lenses/common/RoundedImageView;->A(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
+    invoke-static {p0, p1}, Lcom/snap/lenses/common/RoundedImageView;->z(Lcom/snap/lenses/common/RoundedImageView;Landroid/graphics/Canvas;)V
 
     .line 83
     .line 84
@@ -1855,7 +1849,7 @@
     .line 113
     .line 114
     :goto_0
-    invoke-virtual {p0, p1, v2}, Lcom/snap/lenses/common/RoundedImageView;->z(Landroid/graphics/Canvas;F)V
+    invoke-virtual {p0, p1, v2}, Lcom/snap/lenses/common/RoundedImageView;->y(Landroid/graphics/Canvas;F)V
 
     .line 115
     .line 116
@@ -2116,7 +2110,7 @@
 
     .line 9
     .line 10
-    iget-object p3, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object p3, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 11
     .line 12
@@ -2128,11 +2122,11 @@
     move-result p4
 
     .line 16
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->u0:LdGe;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->u0:LLXe;
 
     .line 17
     .line 18
-    invoke-virtual {p3, p1, p2, p4, v0}, LTp0;->i(IIFLdGe;)V
+    invoke-virtual {p3, p1, p2, p4, v0}, LXYk;->q(IIFLLXe;)V
 
     .line 19
     .line 20
@@ -2141,7 +2135,7 @@
 
     .line 22
     :cond_0
-    iget-object p3, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object p3, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 23
     .line 24
@@ -2153,17 +2147,17 @@
     move-result p4
 
     .line 28
-    sget-object v0, LdGe;->e:LdGe;
+    sget-object v0, LLXe;->e:LLXe;
 
     .line 29
     .line 30
-    invoke-virtual {p3, p1, p2, p4, v0}, LTp0;->i(IIFLdGe;)V
+    invoke-virtual {p3, p1, p2, p4, v0}, LXYk;->q(IIFLLXe;)V
 
     .line 31
     .line 32
     .line 33
     :goto_0
-    invoke-virtual {p0}, Lcom/snap/lenses/common/RoundedImageView;->y()V
+    invoke-virtual {p0}, Lcom/snap/lenses/common/RoundedImageView;->x()V
 
     .line 34
     .line 35
@@ -2183,7 +2177,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/util/List;
 
     .line 2
     .line 3
@@ -2278,19 +2272,19 @@
     move-result-object v3
 
     .line 47
-    check-cast v3, Lxaf;
+    check-cast v3, LNsf;
 
     .line 48
     .line 49
-    iget-object v4, v3, Lxaf;->b:LZ90;
+    iget-object v4, v3, LNsf;->b:LWYk;
 
     .line 50
     .line 51
-    iget-object v3, v3, Lxaf;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v3, v3, LNsf;->a:Landroid/graphics/drawable/Drawable;
 
     .line 52
     .line 53
-    invoke-virtual {v4, v3, p1, v1, v2}, LZ90;->a(Landroid/graphics/drawable/Drawable;III)V
+    invoke-virtual {v4, v3, p1, v1, v2}, LWYk;->a(Landroid/graphics/drawable/Drawable;III)V
 
     .line 54
     .line 55
@@ -2323,7 +2317,7 @@
 
     .line 6
     .line 7
-    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 8
     .line 9
@@ -2351,11 +2345,11 @@
     move-result v1
 
     .line 21
-    iget-object v3, p0, Lcom/snap/lenses/common/RoundedImageView;->u0:LdGe;
+    iget-object v3, p0, Lcom/snap/lenses/common/RoundedImageView;->u0:LLXe;
 
     .line 22
     .line 23
-    invoke-virtual {p1, v0, v2, v1, v3}, LTp0;->i(IIFLdGe;)V
+    invoke-virtual {p1, v0, v2, v1, v3}, LXYk;->q(IIFLLXe;)V
 
     .line 24
     .line 25
@@ -2378,7 +2372,7 @@
 
     .line 34
     .line 35
-    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LTp0;
+    iget-object p1, p0, Lcom/snap/lenses/common/RoundedImageView;->k0:LXYk;
 
     .line 36
     .line 37
@@ -2406,11 +2400,11 @@
     move-result v1
 
     .line 49
-    sget-object v3, LdGe;->e:LdGe;
+    sget-object v3, LLXe;->e:LLXe;
 
     .line 50
     .line 51
-    invoke-virtual {p1, v0, v2, v1, v3}, LTp0;->i(IIFLdGe;)V
+    invoke-virtual {p1, v0, v2, v1, v3}, LXYk;->q(IIFLLXe;)V
 
     .line 52
     .line 53
@@ -2429,11 +2423,11 @@
     return-void
 .end method
 
-.method public final w()V
+.method public final v()V
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->q0:LBaf;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->q0:LRsf;
 
     .line 2
     .line 3
@@ -2445,7 +2439,7 @@
     move-result-object v1
 
     .line 7
-    iget-object v2, v0, LBaf;->b:Ljava/util/List;
+    iget-object v2, v0, LRsf;->b:Ljava/util/List;
 
     .line 8
     .line 9
@@ -2485,11 +2479,11 @@
     move-object v4, v3
 
     .line 26
-    check-cast v4, LAaf;
+    check-cast v4, LQsf;
 
     .line 27
     .line 28
-    iget-object v4, v4, LAaf;->a:[I
+    iget-object v4, v4, LQsf;->a:[I
 
     .line 29
     .line 30
@@ -2513,7 +2507,7 @@
 
     .line 38
     :goto_0
-    check-cast v3, LAaf;
+    check-cast v3, LQsf;
 
     .line 39
     .line 40
@@ -2521,7 +2515,7 @@
 
     .line 41
     .line 42
-    iget v0, v3, LAaf;->b:F
+    iget v0, v3, LQsf;->b:F
 
     .line 43
     .line 44
@@ -2529,7 +2523,7 @@
 
     .line 45
     :cond_2
-    iget v0, v0, LBaf;->a:F
+    iget v0, v0, LRsf;->a:F
 
     .line 46
     .line 47
@@ -2622,7 +2616,7 @@
     return-void
 .end method
 
-.method public final x()V
+.method public final w()V
     .locals 3
 
     .line 1
@@ -2730,15 +2724,15 @@
     return-void
 .end method
 
-.method public final y()V
+.method public final x()V
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->v0:LPZj;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->v0:LDz9;
 
     .line 2
     .line 3
-    instance-of v1, v0, LKDi;
+    instance-of v1, v0, Lo3j;
 
     .line 4
     .line 5
@@ -2814,11 +2808,11 @@
 
     .line 35
     .line 36
-    check-cast v0, LKDi;
+    check-cast v0, Lo3j;
 
     .line 37
     .line 38
-    invoke-static {v2, v0, v1, v4}, Lwik;->a(Landroid/graphics/Paint;LKDi;FF)V
+    invoke-static {v2, v0, v1, v4}, LPCk;->a(Landroid/graphics/Paint;Lo3j;FF)V
 
     .line 39
     .line 40
@@ -2845,7 +2839,7 @@
 
     .line 52
     :cond_2
-    instance-of v1, v0, LIDi;
+    instance-of v1, v0, Lm3j;
 
     .line 53
     .line 54
@@ -2862,11 +2856,11 @@
     .line 59
     .line 60
     .line 61
-    check-cast v0, LIDi;
+    check-cast v0, Lm3j;
 
     .line 62
     .line 63
-    iget v0, v0, LIDi;->e:I
+    iget v0, v0, Lm3j;->d:I
 
     .line 64
     .line 65
@@ -2887,7 +2881,7 @@
 
     .line 73
     :cond_3
-    instance-of v0, v0, LLDi;
+    instance-of v0, v0, Lp3j;
 
     .line 74
     .line 75
@@ -2904,21 +2898,29 @@
     .line 80
     .line 81
     .line 82
+    const/4 v0, 0x0
+
+    .line 83
+    invoke-virtual {p0, v0}, Landroid/widget/ImageView;->setImageTintList(Landroid/content/res/ColorStateList;)V
+
+    .line 84
+    .line 85
+    .line 86
     :cond_4
     :goto_1
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
-    .line 83
-    .line 84
-    .line 85
+    .line 87
+    .line 88
+    .line 89
     return-void
 .end method
 
-.method public final z(Landroid/graphics/Canvas;F)V
+.method public final y(Landroid/graphics/Canvas;F)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/snap/lenses/common/RoundedImageView;->x0:Ljava/util/List;
 
     .line 2
     .line 3
@@ -2955,11 +2957,11 @@
     move-result-object v1
 
     .line 19
-    check-cast v1, Lxaf;
+    check-cast v1, LNsf;
 
     .line 20
     .line 21
-    iget-object v1, v1, Lxaf;->a:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v1, LNsf;->a:Landroid/graphics/drawable/Drawable;
 
     .line 22
     .line 23

@@ -1,210 +1,268 @@
 .class public final LZIf;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LiKc;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Lbke;
+.field public final synthetic a:I
 
-.field public final b:LBre;
-
-.field public final c:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final synthetic b:LaJf;
 
 
 # direct methods
-.method public constructor <init>(Lbke;)V
-    .locals 1
+.method public synthetic constructor <init>(LaJf;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LZIf;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LZIf;->a:Lbke;
+    iput-object p1, p0, LZIf;->b:LaJf;
 
-    .line 5
-    .line 6
-    sget-object p1, Ljwb;->Z:Ljwb;
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
-    const-string v0, "SelectModeBottomPaddingSectionController"
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 9
-    .line 10
-    invoke-static {p1, p1, v0}, LmG8;->d(Ljwb;Ljwb;Ljava/lang/String;)LWm0;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    new-instance v0, LBre;
-
-    .line 15
-    .line 16
-    invoke-direct {v0, p1}, LBre;-><init>(LWm0;)V
-
-    .line 17
-    .line 18
-    .line 19
-    iput-object v0, p0, LZIf;->b:LBre;
-
-    .line 20
-    .line 21
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 22
-    .line 23
-    const/4 v0, 0x0
-
-    .line 24
-    invoke-direct {p1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    .line 25
-    .line 26
-    .line 27
-    iput-object p1, p0, LZIf;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 28
-    .line 29
     return-void
 .end method
 
 
 # virtual methods
-.method public final P(Landroid/view/View;LKu;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final a(Landroid/view/View;LKu;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LZIf;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final d()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, Lu9k;->o(LiKc;)Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final dispose()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LZIf;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final r()Lio/reactivex/rxjava3/core/Observable;
+.method public final d()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    iget-object v0, p0, LZIf;->a:Lbke;
+    iget v0, p0, LZIf;->a:I
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    iget-object v0, p0, LZIf;->b:LaJf;
 
     .line 7
-    check-cast v0, LO4c;
-
     .line 8
-    .line 9
-    invoke-interface {v0}, LO4c;->c()Lio/reactivex/rxjava3/core/Observable;
+    iget-object v1, v0, LpIf;->V0:LRn1;
 
+    .line 9
     .line 10
+    if-eqz v1, :cond_0
+
     .line 11
     .line 12
-    move-result-object v0
+    invoke-virtual {v1}, LRn1;->b0()V
 
     .line 13
-    iget-object v1, p0, LZIf;->b:LBre;
-
     .line 14
     .line 15
-    invoke-virtual {v1}, LBre;->d()LF06;
+    :cond_0
+    const/4 v1, 0x0
 
     .line 16
+    iput-object v1, v0, LpIf;->V0:LRn1;
+
     .line 17
     .line 18
-    move-result-object v1
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 19
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 20
-    .line 21
-    .line 22
-    move-result-object v0
+    return-object v0
 
+    .line 21
+    :pswitch_0
+    iget-object v0, p0, LZIf;->b:LaJf;
+
+    .line 22
     .line 23
-    sget-object v1, LKMe;->e0:LKMe;
+    iget-object v1, v0, LaJf;->g1:LUGb;
 
     .line 24
     .line 25
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    const-string v2, "releaseSession"
 
     .line 26
     .line 27
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-virtual {v1, v2}, LUGb;->e(Ljava/lang/String;)V
 
     .line 28
     .line 29
     .line 30
-    return-object v2
+    iget-object v0, v0, LaJf;->f1:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    invoke-virtual {v1, v0}, LUGb;->r(Ljava/lang/String;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v0
+
+    .line 36
+    if-nez v0, :cond_1
+
+    .line 37
+    .line 38
+    goto :goto_0
+
+    .line 39
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 40
+    iput-object v0, v1, LUGb;->g0:Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    :goto_0
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 43
+    .line 44
+    return-object v0
+
+    .line 45
+    :pswitch_1
+    iget-object v0, p0, LZIf;->b:LaJf;
+
+    .line 46
+    .line 47
+    iget-boolean v0, v0, LpIf;->M0:Z
+
+    .line 48
+    .line 49
+    if-eqz v0, :cond_2
+
+    .line 50
+    .line 51
+    iget-object v0, p0, LZIf;->b:LaJf;
+
+    .line 52
+    .line 53
+    iget-object v1, v0, LaJf;->g1:LUGb;
+
+    .line 54
+    .line 55
+    iget-object v0, v0, LaJf;->f1:Ljava/lang/String;
+
+    .line 56
+    .line 57
+    invoke-virtual {v1, v0}, LUGb;->g(Ljava/lang/String;)V
+
+    .line 58
+    .line 59
+    .line 60
+    :cond_2
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 61
+    .line 62
+    return-object v0
+
+    .line 63
+    :pswitch_2
+    iget-object v0, p0, LZIf;->b:LaJf;
+
+    .line 64
+    .line 65
+    iget-object v1, v0, LaJf;->g1:LUGb;
+
+    .line 66
+    .line 67
+    const-string v2, "resetRenderPassManager"
+
+    .line 68
+    .line 69
+    invoke-virtual {v1, v2}, LUGb;->e(Ljava/lang/String;)V
+
+    .line 70
+    .line 71
+    .line 72
+    iget-object v0, v0, LaJf;->f1:Ljava/lang/String;
+
+    .line 73
+    .line 74
+    invoke-virtual {v1, v0}, LUGb;->r(Ljava/lang/String;)Z
+
+    .line 75
+    .line 76
+    .line 77
+    move-result v0
+
+    .line 78
+    if-nez v0, :cond_3
+
+    .line 79
+    .line 80
+    goto :goto_1
+
+    .line 81
+    :cond_3
+    iget-object v0, v1, LUGb;->c:Ljava/lang/Object;
+
+    .line 82
+    .line 83
+    check-cast v0, LMQd;
+
+    .line 84
+    .line 85
+    iget-object v2, v0, LMQd;->t:Ljava/lang/Object;
+
+    .line 86
+    .line 87
+    check-cast v2, LREi;
+
+    .line 88
+    .line 89
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v2
+
+    .line 93
+    check-cast v2, Llbf;
+
+    .line 94
+    .line 95
+    invoke-virtual {v2}, Lu1b;->evictAll()V
+
+    .line 96
+    .line 97
+    .line 98
+    const/4 v2, 0x0
+
+    .line 99
+    iput-object v2, v0, LMQd;->b:Ljava/lang/Object;
+
+    .line 100
+    .line 101
+    iput-object v2, v1, LUGb;->j0:Ljava/lang/Object;
+
+    .line 102
+    .line 103
+    :goto_1
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 104
+    .line 105
+    return-object v0
+
+    .line 106
+    nop
+
+    .line 107
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

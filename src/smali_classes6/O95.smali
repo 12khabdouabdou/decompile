@@ -4,15 +4,11 @@
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:I
-
-.field public final c:I
+.field public final synthetic a:LsP4;
 
 
 # direct methods
-.method public constructor <init>(III)V
+.method public constructor <init>(LsP4;)V
     .locals 0
 
     .line 1
@@ -21,209 +17,160 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, LO95;->a:I
+    iput-object p1, p0, LO95;->a:LsP4;
 
     .line 5
     .line 6
-    iput p2, p0, LO95;->b:I
-
-    .line 7
-    .line 8
-    iput p3, p0, LO95;->c:I
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a(Z)LUdg;
+    .locals 9
 
     .line 1
-    const/4 v0, 0x1
+    new-instance v0, LUdg;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    iget-object v1, p0, LO95;->a:LsP4;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LO95;
+    new-instance v2, Lese;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    iget-object v3, v1, LsP4;->t:Ljava/lang/Object;
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
-    .line 10
-    return v2
+    check-cast v3, LZ95;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, LO95;
+    iget-object v3, v3, LZ95;->c:Laa5;
 
     .line 12
     .line 13
-    iget v1, p1, LO95;->a:I
+    iget-object v4, v3, Laa5;->c:Lt55;
 
     .line 14
     .line 15
-    iget v3, p0, LO95;->a:I
-
-    .line 16
-    .line 17
-    if-eq v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    iget v1, p0, LO95;->b:I
-
-    .line 21
-    .line 22
-    iget v3, p1, LO95;->b:I
-
-    .line 23
-    .line 24
-    if-eq v1, v3, :cond_3
-
-    .line 25
-    .line 26
-    return v2
-
-    .line 27
-    :cond_3
-    iget v1, p0, LO95;->c:I
-
-    .line 28
-    .line 29
-    iget p1, p1, LO95;->c:I
-
-    .line 30
-    .line 31
-    if-eq v1, p1, :cond_4
-
-    .line 32
-    .line 33
-    return v2
-
-    .line 34
-    :cond_4
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, LO95;->a:I
-
-    .line 2
-    .line 3
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 4
-    .line 5
-    iget v1, p0, LO95;->b:I
-
-    .line 6
-    .line 7
-    add-int/2addr v0, v1
-
-    .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 9
-    .line 10
-    iget v1, p0, LO95;->c:I
-
-    .line 11
-    .line 12
-    add-int/2addr v0, v1
-
-    .line 13
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "SearchDate(year="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, LO95;->a:I
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", monthOfYear="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4}, Lt55;->getContext()Landroid/content/Context;
 
     .line 16
     .line 17
     .line 18
-    iget v1, p0, LO95;->b:I
+    move-result-object v4
 
     .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget-object v5, v3, Laa5;->B0:Lz95;
 
+    .line 20
     .line 21
+    invoke-virtual {v5}, Lz95;->get()Ljava/lang/Object;
+
     .line 22
     .line 23
-    const-string v1, ", dayOfMonth="
-
     .line 24
+    move-result-object v5
+
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast v5, LmGc;
 
     .line 26
     .line 27
+    move-object v6, v3
+
     .line 28
-    iget v1, p0, LO95;->c:I
+    move-object v3, v4
 
     .line 29
+    move-object v4, v5
+
     .line 30
-    const-string v2, ")"
+    iget-object v5, v6, Laa5;->R0:Lz95;
 
     .line 31
     .line 32
-    invoke-static {v0, v1, v2}, LEU0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    move-object v7, v6
 
     .line 33
+    iget-object v6, v7, Laa5;->V:Lz95;
+
     .line 34
     .line 35
-    move-result-object v0
+    iget-object v7, v7, Laa5;->f0:Lz95;
 
     .line 36
+    .line 37
+    invoke-virtual {v7}, Lz95;->get()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v7
+
+    .line 41
+    check-cast v7, LyPf;
+
+    .line 42
+    .line 43
+    const/16 v8, 0x14
+
+    .line 44
+    .line 45
+    invoke-direct/range {v2 .. v8}, Lese;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object v1, v1, LsP4;->c:Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    check-cast v1, Laa5;
+
+    .line 51
+    .line 52
+    iget-object v3, v1, Laa5;->X:LCBe;
+
+    .line 53
+    .line 54
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v3
+
+    .line 58
+    check-cast v3, LgKg;
+
+    .line 59
+    .line 60
+    iget-object v1, v1, Laa5;->f0:Lz95;
+
+    .line 61
+    .line 62
+    invoke-virtual {v1}, Lz95;->get()Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v1
+
+    .line 66
+    check-cast v1, LyPf;
+
+    .line 67
+    .line 68
+    invoke-direct {v0, v2, v3, v1, p1}, LUdg;-><init>(Lese;LgKg;LyPf;Z)V
+
+    .line 69
+    .line 70
+    .line 71
     return-object v0
 .end method

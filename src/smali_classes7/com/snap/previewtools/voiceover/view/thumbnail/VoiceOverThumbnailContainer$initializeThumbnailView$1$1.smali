@@ -6,11 +6,11 @@
 # instance fields
 .field public final synthetic F:Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer;
 
-.field public final synthetic G:LTxj;
+.field public final synthetic G:LI5k;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer;LTxj;)V
+.method public constructor <init>(Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer;LI5k;)V
     .locals 0
 
     .line 1
@@ -18,7 +18,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer$initializeThumbnailView$1$1;->G:LTxj;
+    iput-object p2, p0, Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer$initializeThumbnailView$1$1;->G:LI5k;
 
     .line 4
     .line 5
@@ -35,11 +35,11 @@
 
 
 # virtual methods
-.method public final B0(LHGe;)V
+.method public final G0(LqYe;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->B0(LHGe;)V
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->G0(LqYe;)V
 
     .line 2
     .line 3
@@ -59,7 +59,7 @@
 
     .line 10
     .line 11
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 12
     .line 13
@@ -95,7 +95,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->n1()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->s1()I
 
     .line 26
     .line 27
@@ -111,7 +111,7 @@
 
     .line 32
     .line 33
-    iget-object v2, v2, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object v2, v2, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 34
     .line 35
@@ -119,7 +119,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {v2, v0}, LwGe;->D(I)Landroid/view/View;
+    invoke-virtual {v2, v0}, LfYe;->I(I)Landroid/view/View;
 
     .line 38
     .line 39
@@ -135,7 +135,7 @@
 
     .line 43
     :goto_2
-    instance-of v2, v0, LlQj;
+    instance-of v2, v0, LQfk;
 
     .line 44
     .line 45
@@ -146,7 +146,7 @@
     move-object v1, v0
 
     .line 48
-    check-cast v1, LlQj;
+    check-cast v1, LQfk;
 
     .line 49
     .line 50
@@ -155,7 +155,7 @@
 
     .line 51
     .line 52
-    iput-object v1, p1, Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer;->c:LlQj;
+    iput-object v1, p1, Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer;->c:LQfk;
 
     .line 53
     .line 54
@@ -206,11 +206,11 @@
     .line 73
     .line 74
     :cond_5
-    iget-object p1, p0, Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer$initializeThumbnailView$1$1;->G:LTxj;
+    iget-object p1, p0, Lcom/snap/previewtools/voiceover/view/thumbnail/VoiceOverThumbnailContainer$initializeThumbnailView$1$1;->G:LI5k;
 
     .line 75
     .line 76
-    invoke-virtual {p1}, LTxj;->invoke()Ljava/lang/Object;
+    invoke-virtual {p1}, LI5k;->d()Ljava/lang/Object;
 
     .line 77
     .line 78

@@ -28,17 +28,17 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
-.field public final b:LrIg;
+.field public final b:Lb4h;
 
-.field public final c:LXXf;
+.field public final c:LZeg;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;LrIg;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;Lb4h;)V
     .locals 1
 
     .line 1
-    sget-object v0, LXXf;->m:LXXf;
+    sget-object v0, LZeg;->q:LZeg;
 
     .line 2
     .line 3
@@ -51,11 +51,11 @@
 
     .line 7
     .line 8
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->b:LrIg;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->b:Lb4h;
 
     .line 9
     .line 10
-    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->c:LXXf;
+    iput-object v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->c:LZeg;
 
     .line 11
     .line 12
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final u(Lio/reactivex/rxjava3/core/SingleObserver;)V
+.method public final t(Lio/reactivex/rxjava3/core/SingleObserver;)V
     .locals 3
 
     .line 1
@@ -72,15 +72,15 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->b:LrIg;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->b:Lb4h;
 
     .line 4
     .line 5
-    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->c:LXXf;
+    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector;->c:LZeg;
 
     .line 6
     .line 7
-    invoke-direct {v0, p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver;-><init>(Lio/reactivex/rxjava3/core/SingleObserver;LrIg;LXXf;)V
+    invoke-direct {v0, p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapBiSelector$FlatMapBiMainObserver;-><init>(Lio/reactivex/rxjava3/core/SingleObserver;Lb4h;LZeg;)V
 
     .line 8
     .line 9

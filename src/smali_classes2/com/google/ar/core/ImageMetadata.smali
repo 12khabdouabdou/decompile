@@ -278,7 +278,7 @@
 
 .field private final session:Lcom/google/ar/core/Session;
 
-.field private final sketchEntry:LU4k;
+.field private final sketchEntry:LVuk;
 
 
 # direct methods
@@ -298,7 +298,7 @@
 
     iput-wide v1, p0, Lcom/google/ar/core/ImageMetadata;->nativeSymbolTableHandle:J
 
-    iput-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iput-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     return-void
 .end method
@@ -317,28 +317,28 @@
 
     iput-wide p1, p0, Lcom/google/ar/core/ImageMetadata;->nativeSymbolTableHandle:J
 
-    new-instance p1, LU4k;
+    new-instance p1, LVuk;
 
     .line 3
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 p2, 0x0
 
-    iput-wide p2, p1, LU4k;->a:J
+    iput-wide p2, p1, LVuk;->a:J
 
     const/4 p2, -0x1
 
-    iput p2, p1, LU4k;->b:I
+    iput p2, p1, LVuk;->b:I
 
-    iput p2, p1, LU4k;->c:I
+    iput p2, p1, LVuk;->c:I
 
     .line 4
-    iput-object p1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iput-object p1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     return-void
 .end method
 
-.method private getMetdataEntry(ILU4k;)V
+.method private getMetdataEntry(ILVuk;)V
     .locals 7
 
     .line 1
@@ -368,7 +368,7 @@
     move-result-wide v2
 
     .line 13
-    iput-wide v2, p2, LU4k;->a:J
+    iput-wide v2, p2, LVuk;->a:J
 
     .line 14
     .line 15
@@ -400,7 +400,7 @@
     move-result p1
 
     .line 29
-    iput p1, p2, LU4k;->b:I
+    iput p1, p2, LVuk;->b:I
 
     .line 30
     .line 31
@@ -412,7 +412,7 @@
 
     .line 34
     .line 35
-    iget-wide v4, p2, LU4k;->a:J
+    iget-wide v4, p2, LVuk;->a:J
 
     .line 36
     .line 37
@@ -424,7 +424,7 @@
     move-result p1
 
     .line 41
-    iput p1, p2, LU4k;->c:I
+    iput p1, p2, LVuk;->c:I
 
     .line 42
     .line 43
@@ -592,20 +592,20 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 3
     .line 4
-    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 5
     .line 6
     .line 7
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 8
     .line 9
-    iget v2, v1, LU4k;->b:I
+    iget v2, v1, LVuk;->b:I
 
     .line 10
     .line 11
@@ -613,7 +613,7 @@
 
     .line 12
     .line 13
-    iget v2, v1, LU4k;->c:I
+    iget v2, v1, LVuk;->c:I
 
     .line 14
     .line 15
@@ -629,7 +629,7 @@
 
     .line 20
     .line 21
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 22
     .line 23
@@ -645,7 +645,7 @@
 
     .line 28
     .line 29
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 30
     .line 31
@@ -653,7 +653,7 @@
 
     .line 32
     .line 33
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 34
     .line 35
@@ -718,20 +718,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 7
     .line 8
-    iget v1, v0, LU4k;->b:I
+    iget v1, v0, LVuk;->b:I
 
     .line 9
     .line 10
@@ -747,7 +747,7 @@
 
     .line 15
     .line 16
-    iget-wide v3, v0, LU4k;->a:J
+    iget-wide v3, v0, LVuk;->a:J
 
     .line 17
     .line 18
@@ -763,7 +763,7 @@
 
     .line 23
     .line 24
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 25
     .line 26
@@ -771,7 +771,7 @@
 
     .line 27
     .line 28
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 29
     .line 30
@@ -842,20 +842,20 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 3
     .line 4
-    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 5
     .line 6
     .line 7
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 8
     .line 9
-    iget v2, v1, LU4k;->b:I
+    iget v2, v1, LVuk;->b:I
 
     .line 10
     .line 11
@@ -866,7 +866,7 @@
 
     .line 13
     .line 14
-    iget v2, v1, LU4k;->c:I
+    iget v2, v1, LVuk;->c:I
 
     .line 15
     .line 16
@@ -882,7 +882,7 @@
 
     .line 21
     .line 22
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 23
     .line 24
@@ -898,7 +898,7 @@
 
     .line 29
     .line 30
-    iget-object v2, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v2, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 31
     .line 32
@@ -906,7 +906,7 @@
 
     .line 33
     .line 34
-    iget-wide v5, v2, LU4k;->a:J
+    iget-wide v5, v2, LVuk;->a:J
 
     .line 35
     .line 36
@@ -971,20 +971,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 7
     .line 8
-    iget v1, v0, LU4k;->b:I
+    iget v1, v0, LVuk;->b:I
 
     .line 9
     .line 10
@@ -1003,7 +1003,7 @@
 
     .line 16
     .line 17
-    iget-wide v3, v0, LU4k;->a:J
+    iget-wide v3, v0, LVuk;->a:J
 
     .line 18
     .line 19
@@ -1019,7 +1019,7 @@
 
     .line 24
     .line 25
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 26
     .line 27
@@ -1027,7 +1027,7 @@
 
     .line 28
     .line 29
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 30
     .line 31
@@ -1098,20 +1098,20 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 3
     .line 4
-    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 5
     .line 6
     .line 7
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 8
     .line 9
-    iget v2, v1, LU4k;->b:I
+    iget v2, v1, LVuk;->b:I
 
     .line 10
     .line 11
@@ -1122,7 +1122,7 @@
 
     .line 13
     .line 14
-    iget v2, v1, LU4k;->c:I
+    iget v2, v1, LVuk;->c:I
 
     .line 15
     .line 16
@@ -1138,7 +1138,7 @@
 
     .line 21
     .line 22
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 23
     .line 24
@@ -1154,7 +1154,7 @@
 
     .line 29
     .line 30
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 31
     .line 32
@@ -1162,7 +1162,7 @@
 
     .line 33
     .line 34
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 35
     .line 36
@@ -1227,20 +1227,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 7
     .line 8
-    iget v1, v0, LU4k;->b:I
+    iget v1, v0, LVuk;->b:I
 
     .line 9
     .line 10
@@ -1259,7 +1259,7 @@
 
     .line 16
     .line 17
-    iget-wide v3, v0, LU4k;->a:J
+    iget-wide v3, v0, LVuk;->a:J
 
     .line 18
     .line 19
@@ -1275,7 +1275,7 @@
 
     .line 24
     .line 25
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 26
     .line 27
@@ -1283,7 +1283,7 @@
 
     .line 28
     .line 29
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 30
     .line 31
@@ -1351,20 +1351,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 7
     .line 8
-    iget v1, v0, LU4k;->b:I
+    iget v1, v0, LVuk;->b:I
 
     .line 9
     .line 10
@@ -1375,7 +1375,7 @@
 
     .line 12
     .line 13
-    iget v1, v0, LU4k;->c:I
+    iget v1, v0, LVuk;->c:I
 
     .line 14
     .line 15
@@ -1391,7 +1391,7 @@
 
     .line 20
     .line 21
-    iget-wide v3, v0, LU4k;->a:J
+    iget-wide v3, v0, LVuk;->a:J
 
     .line 22
     .line 23
@@ -1407,7 +1407,7 @@
 
     .line 28
     .line 29
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 30
     .line 31
@@ -1415,7 +1415,7 @@
 
     .line 32
     .line 33
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 34
     .line 35
@@ -1480,20 +1480,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 7
     .line 8
-    iget v1, v0, LU4k;->b:I
+    iget v1, v0, LVuk;->b:I
 
     .line 9
     .line 10
@@ -1512,7 +1512,7 @@
 
     .line 16
     .line 17
-    iget-wide v3, v0, LU4k;->a:J
+    iget-wide v3, v0, LVuk;->a:J
 
     .line 18
     .line 19
@@ -1528,7 +1528,7 @@
 
     .line 24
     .line 25
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 26
     .line 27
@@ -1536,7 +1536,7 @@
 
     .line 28
     .line 29
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 30
     .line 31
@@ -1652,20 +1652,20 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 3
     .line 4
-    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 5
     .line 6
     .line 7
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 8
     .line 9
-    iget v2, v1, LU4k;->b:I
+    iget v2, v1, LVuk;->b:I
 
     .line 10
     .line 11
@@ -1676,7 +1676,7 @@
 
     .line 13
     .line 14
-    iget v2, v1, LU4k;->c:I
+    iget v2, v1, LVuk;->c:I
 
     .line 15
     .line 16
@@ -1692,7 +1692,7 @@
 
     .line 21
     .line 22
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 23
     .line 24
@@ -1708,7 +1708,7 @@
 
     .line 29
     .line 30
-    iget-object v2, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v2, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 31
     .line 32
@@ -1716,7 +1716,7 @@
 
     .line 33
     .line 34
-    iget-wide v5, v2, LU4k;->a:J
+    iget-wide v5, v2, LVuk;->a:J
 
     .line 35
     .line 36
@@ -1741,11 +1741,11 @@
     move-result-object p1
 
     .line 46
-    iget-object v2, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v2, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 47
     .line 48
-    iget v2, v2, LU4k;->b:I
+    iget v2, v2, LVuk;->b:I
 
     .line 49
     .line 50
@@ -1757,11 +1757,11 @@
     move-result-object v2
 
     .line 54
-    iget-object v4, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v4, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 55
     .line 56
-    iget v4, v4, LU4k;->c:I
+    iget v4, v4, LVuk;->c:I
 
     .line 57
     .line 58
@@ -1824,20 +1824,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 7
     .line 8
-    iget v1, v0, LU4k;->b:I
+    iget v1, v0, LVuk;->b:I
 
     .line 9
     .line 10
@@ -1856,7 +1856,7 @@
 
     .line 16
     .line 17
-    iget-wide v3, v0, LU4k;->a:J
+    iget-wide v3, v0, LVuk;->a:J
 
     .line 18
     .line 19
@@ -1872,7 +1872,7 @@
 
     .line 24
     .line 25
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 26
     .line 27
@@ -1880,7 +1880,7 @@
 
     .line 28
     .line 29
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 30
     .line 31
@@ -1951,20 +1951,20 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 3
     .line 4
-    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v1}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 5
     .line 6
     .line 7
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 8
     .line 9
-    iget v2, v1, LU4k;->b:I
+    iget v2, v1, LVuk;->b:I
 
     .line 10
     .line 11
@@ -1975,7 +1975,7 @@
 
     .line 13
     .line 14
-    iget v2, v1, LU4k;->c:I
+    iget v2, v1, LVuk;->c:I
 
     .line 15
     .line 16
@@ -1991,7 +1991,7 @@
 
     .line 21
     .line 22
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 23
     .line 24
@@ -2007,7 +2007,7 @@
 
     .line 29
     .line 30
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 31
     .line 32
@@ -2015,7 +2015,7 @@
 
     .line 33
     .line 34
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 35
     .line 36
@@ -2080,20 +2080,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 2
     .line 3
-    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILU4k;)V
+    invoke-direct {p0, p1, v0}, Lcom/google/ar/core/ImageMetadata;->getMetdataEntry(ILVuk;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v0, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 7
     .line 8
-    iget v1, v0, LU4k;->b:I
+    iget v1, v0, LVuk;->b:I
 
     .line 9
     .line 10
@@ -2112,7 +2112,7 @@
 
     .line 16
     .line 17
-    iget-wide v3, v0, LU4k;->a:J
+    iget-wide v3, v0, LVuk;->a:J
 
     .line 18
     .line 19
@@ -2128,7 +2128,7 @@
 
     .line 24
     .line 25
-    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LU4k;
+    iget-object v1, p0, Lcom/google/ar/core/ImageMetadata;->sketchEntry:LVuk;
 
     .line 26
     .line 27
@@ -2136,7 +2136,7 @@
 
     .line 28
     .line 29
-    iget-wide v0, v1, LU4k;->a:J
+    iget-wide v0, v1, LVuk;->a:J
 
     .line 30
     .line 31

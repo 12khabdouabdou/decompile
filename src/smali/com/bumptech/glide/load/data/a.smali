@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lr85;
+.implements LDe5;
 
 
 # instance fields
@@ -38,7 +38,14 @@
 
 
 # virtual methods
-.method public final a()Landroid/os/ParcelFileDescriptor;
+.method public final a()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final b()Landroid/os/ParcelFileDescriptor;
     .locals 1
 
     .line 1
@@ -57,14 +64,7 @@
     return-object v0
 .end method
 
-.method public final b()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final d()Ljava/lang/Object;
+.method public final c()Ljava/lang/Object;
     .locals 1
 
     .line 1

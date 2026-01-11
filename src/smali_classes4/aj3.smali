@@ -1,104 +1,99 @@
-.class public abstract synthetic Laj3;
+.class public final Laj3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lbj3;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lbj3;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Laj3;->a:I
 
     .line 1
-    invoke-static {}, Leg3;->values()[Leg3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Laj3;->b:Lbj3;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lbj3;Lcj3;)V
+    .locals 0
+
+    const/4 p2, 0x1
+
+    iput p2, p0, Laj3;->a:I
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Laj3;->b:Lbj3;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
+
+    .line 1
+    iget v0, p0, Laj3;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Leg3;->e0:Leg3;
+    iget-object p1, p0, Laj3;->b:Lbj3;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iget-object p1, p1, Lbj3;->c:LJp0;
 
     .line 11
     .line 12
+    return-void
+
     .line 13
-    move-result v1
+    :pswitch_0
+    check-cast p1, Lcj3;
 
     .line 14
-    const/4 v2, 0x1
-
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object p1, p0, Laj3;->b:Lbj3;
 
     .line 16
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Leg3;->X:Leg3;
+    iget-object p1, p1, Lbj3;->c:LJp0;
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    return-void
 
     .line 20
+    nop
+
     .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Leg3;->f0:Leg3;
-
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    const/4 v2, 0x3
-
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    sput-object v0, Laj3;->a:[I
-
-    .line 36
-    .line 37
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

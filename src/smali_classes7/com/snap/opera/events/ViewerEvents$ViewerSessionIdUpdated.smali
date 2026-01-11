@@ -1,5 +1,5 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$ViewerSessionIdUpdated;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -14,7 +14,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -57,7 +57,7 @@
 
     iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$ViewerSessionIdUpdated;->b:Ljava/lang/String;
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -70,7 +70,7 @@
 
     iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$ViewerSessionIdUpdated;->c:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -147,7 +147,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

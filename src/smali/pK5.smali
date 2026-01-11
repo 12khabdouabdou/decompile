@@ -1,25 +1,38 @@
-.class public final LpK5;
+.class public interface abstract LpK5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LKv3;
 
-# instance fields
-.field public final a:Lbke;
 
+# virtual methods
+.method public abstract B8()LMLd;
+.end method
 
-# direct methods
-.method public constructor <init>(Lbke;)V
-    .locals 0
+.method public abstract I8()Ltn4;
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.method public abstract O6()LyX7;
+.end method
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LpK5;->a:Lbke;
+.method public abstract V6()LnLa;
+.end method
 
-    .line 5
-    .line 6
-    return-void
+.method public abstract a()LyPf;
+.end method
+
+.method public abstract b()Lrp0;
+.end method
+
+.method public abstract h1()LI8j;
+.end method
+
+.method public abstract i3()Lhri;
+.end method
+
+.method public abstract s()Ly18;
+.end method
+
+.method public abstract y3()LEW0;
 .end method

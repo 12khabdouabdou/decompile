@@ -1,180 +1,51 @@
-.class public final enum LBWj;
-.super Ljava/lang/Enum;
+.class public final LBWj;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LBWj;",
-        ">;",
-        "LgQ6;"
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'networkingClient\':r:\'[0]\',\'venueProfileConfig\':r:\'[1]\',\'venueProfileActionHandler\':r?:\'[2]\',\'venueProfileContextualInfoProvider\':r?:\'[3]\',\'blizzardLogger\':r?:\'[4]\',\'venueProfileExitCallback\':r?:\'[5]\',\'venueProfileMetricCallback\':r?:\'[6]\',\'venueLoadStateCallback\':r?:\'[7]\',\'favoritesActionHandler\':r?:\'[8]\',\'actionSheetPresenter\':r?:\'[9]\',\'placesGrpcService\':r?:\'[10]\',\'hitGrpcStaging\':b@?,\'bottomPaddingObservable\':g?<c>:\'[11]\'<d@>,\'isAndroidNewTray\':b@?,\'venueLayersConfig\':r?:\'[12]\',\'venueFavoritesStore\':r?:\'[13]\',\'mapPresenter\':r?:\'[14]\',\'scrollOffsetSubject\':g?<c>:\'[15]\'<d@>,\'subscriptionStore\':r?:\'[16]\',\'storyHandler\':r?:\'[17]\',\'mapUrlGenerator\':r?:\'[18]\',\'sessionIdsHolderObservable\':g<c>:\'[11]\'<r:\'[19]\'>,\'componentsCallback\':r?:\'[20]\',\'friendFavoritesDataObservable\':g?<c>:\'[11]\'<a<r:\'[21]\'>>,\'isKioskMode\':b@?,\'isKioskModeTacoBellBannerEnabled\':b@?,\'isKioskModeDunkinBannerEnabled\':b@?,\'getAdsBannerComponent\':f?(s): g<c>:\'[11]\'<r:\'[22]\'>,\'googlePlaceProfileDataObservable\':g?<c>:\'[11]\'<r:\'[23]\'>,\'deckHierarchy\':r?:\'[24]\'"
+    typeReferences = {
+        Lcom/snap/composer/networking/ClientProtocol;,
+        Lcom/snap/venueprofile/VenueProfileV2Config;,
+        Lcom/snap/venueprofile/VenueProfileActionHandler;,
+        Lcom/snap/venueprofile/VenueProfileContextualInfoProvider;,
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/venueprofile/VenueProfileExitCallback;,
+        Lcom/snap/venueprofile/VenueProfileMetricCallback;,
+        Lcom/snap/venueprofile/VenueProfileLoadStateCallback;,
+        Lcom/snap/placediscovery/VenueFavoritesActionHandler;,
+        Lcom/snap/composer/foundation/IActionSheetPresenter;,
+        Lcom/snap/composer/networking/GrpcServiceProtocol;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lcom/snap/venueprofile/VenueLayersConfig;,
+        Lcom/snap/venues/api/ComposerVenueFavoriteStore;,
+        Lcom/snap/composer/map/MapPresenter;,
+        Lcom/snap/composer/bridge_observables/BridgeSubject;,
+        Lcom/snap/composer/people/SubscriptionStore;,
+        Lcom/snap/venueprofile/VenueProfileStoryHandler;,
+        Lcom/snap/composer/map/StaticMapUrlGenerator;,
+        LNId;,
+        Lcom/snap/placeprofile/PlaceProfileComponentsCallback;,
+        LaS7;,
+        Ltwe;,
+        LpF8;,
+        Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
     }
 .end annotation
 
 
-# static fields
-.field public static final enum b:LBWj;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "OPERA_WEBVIEW"
-    .end annotation
-.end field
-
-.field public static final enum c:LBWj;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "WEB_MODULE_WEBVIEW"
-    .end annotation
-.end field
-
-.field public static final synthetic t:[LBWj;
-
-
-# instance fields
-.field public final a:I
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    .line 1
-    new-instance v0, LBWj;
-
-    .line 2
-    .line 3
-    const-string v1, "OPERA_WEBVIEW"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, LBWj;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, LBWj;->b:LBWj;
-
-    .line 10
-    .line 11
-    new-instance v1, LBWj;
-
-    .line 12
-    .line 13
-    const-string v3, "WEB_MODULE_WEBVIEW"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, LBWj;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, LBWj;->c:LBWj;
-
-    .line 20
-    .line 21
-    const/4 v3, 0x2
-
-    .line 22
-    new-array v3, v3, [LBWj;
-
-    .line 23
-    .line 24
-    aput-object v0, v3, v2
-
-    .line 25
-    .line 26
-    aput-object v1, v3, v4
-
-    .line 27
-    .line 28
-    sput-object v3, LBWj;->t:[LBWj;
-
-    .line 29
-    .line 30
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput p3, p0, LBWj;->a:I
-
-    .line 5
-    .line 6
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LBWj;
-    .locals 1
-
-    .line 1
-    const-class v0, LBWj;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LBWj;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LBWj;
-    .locals 1
-
-    .line 1
-    sget-object v0, LBWj;->t:[LBWj;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LBWj;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LBWj;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LBWj;->a:I
-
-    .line 2
-    .line 3
-    return v0
 .end method

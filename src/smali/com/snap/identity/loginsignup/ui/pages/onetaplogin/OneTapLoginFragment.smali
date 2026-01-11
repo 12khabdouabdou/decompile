@@ -3,9 +3,9 @@
 .source "SourceFile"
 
 # interfaces
-.implements LoRc;
-.implements LcOc;
-.implements LhG9;
+.implements La6d;
+.implements LY2d;
+.implements LFR9;
 
 
 # instance fields
@@ -13,7 +13,7 @@
 
 .field public F0:Landroid/view/View;
 
-.field public G0:Le5;
+.field public G0:LJ5;
 
 .field public final H0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
@@ -21,7 +21,7 @@
 
 .field public J0:Z
 
-.field public K0:LfRc;
+.field public K0:LR5d;
 
 
 # direct methods
@@ -72,52 +72,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LfRc;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, p0}, LfRc;->h3(LoRc;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :cond_0
-    const-string p1, "presenter"
-
-    .line 13
-    .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    throw p1
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LfRc;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LR5d;
 
     .line 2
     .line 3
@@ -125,7 +84,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LfRc;->C1()V
+    invoke-virtual {v0}, LR5d;->D1()V
 
     .line 6
     .line 7
@@ -138,7 +97,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -149,11 +108,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0289
+    const p3, 0x7f0e029f
 
     .line 2
     .line 3
@@ -172,483 +131,347 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 4
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 2
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    const/4 v1, 0x1
 
     .line 3
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
+
     .line 4
     .line 5
+    .line 6
     invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
 
-    .line 6
     .line 7
     .line 8
+    .line 9
     move-result-object p2
 
-    .line 9
+    .line 10
     if-eqz p2, :cond_0
 
-    .line 10
     .line 11
-    const-string v1, "real_1TL_only"
-
     .line 12
-    .line 13
-    invoke-virtual {p2, v1}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    const-string v2, "real_1TL_only"
 
+    .line 13
     .line 14
+    invoke-virtual {p2, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
     .line 15
     .line 16
+    .line 17
     move-result p2
 
-    .line 17
+    .line 18
     goto :goto_0
 
-    .line 18
+    .line 19
     :cond_0
     const/4 p2, 0x1
 
-    .line 19
+    .line 20
     :goto_0
     iput-boolean p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->J0:Z
 
-    .line 20
     .line 21
-    const p2, 0x7f0b1a0d
-
     .line 22
+    const p2, 0x7f0b1b77
+
     .line 23
     .line 24
+    .line 25
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    .line 25
     .line 26
     .line 27
+    .line 28
     move-result-object p2
 
-    .line 28
+    .line 29
     check-cast p2, Landroid/view/ViewStub;
 
-    .line 29
     .line 30
+    .line 31
     if-eqz p2, :cond_1
 
-    .line 31
     .line 32
-    new-instance v1, LLKj;
-
     .line 33
-    .line 34
-    invoke-direct {v1, p2}, LLKj;-><init>(Landroid/view/ViewStub;)V
+    invoke-virtual {p2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
 
+    .line 34
     .line 35
     .line 36
+    move-result-object p2
+
     .line 37
-    invoke-virtual {v1}, LLKj;->a()Landroid/view/View;
+    invoke-virtual {p2, v0}, Landroid/view/View;->setSelected(Z)V
 
     .line 38
     .line 39
     .line 40
-    move-result-object p2
+    const/high16 v2, 0x3f800000    # 1.0f
 
     .line 41
-    check-cast p2, Le5;
-
     .line 42
-    .line 43
-    iput-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->G0:Le5;
+    invoke-virtual {p2, v2}, Landroid/view/View;->setAlpha(F)V
 
+    .line 43
     .line 44
     .line 45
-    :cond_1
-    const p2, 0x7f0b02bc
+    check-cast p2, LJ5;
 
     .line 46
     .line 47
-    .line 48
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iput-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->G0:LJ5;
 
+    .line 48
     .line 49
+    :cond_1
+    const p2, 0x7f0b0310
+
     .line 50
     .line 51
-    move-result-object p2
-
     .line 52
-    iput-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->E0:Landroid/view/View;
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 53
     .line 54
-    const p2, 0x7f0b186c
-
     .line 55
-    .line 56
-    .line 57
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result-object p2
 
+    .line 56
+    iput-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->E0:Landroid/view/View;
+
+    .line 57
     .line 58
+    const p2, 0x7f0b19c1
+
     .line 59
     .line 60
-    move-result-object p1
-
     .line 61
-    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->F0:Landroid/view/View;
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 62
     .line 63
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LfRc;
-
     .line 64
+    move-result-object p1
+
     .line 65
-    const/4 p2, 0x0
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->F0:Landroid/view/View;
 
     .line 66
+    .line 67
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LR5d;
+
+    .line 68
+    .line 69
+    const/4 p2, 0x0
+
+    .line 70
     if-eqz p1, :cond_5
 
-    .line 67
-    .line 68
-    invoke-virtual {p1}, LfRc;->a3()V
-
-    .line 69
-    .line 70
     .line 71
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->E0:Landroid/view/View;
-
     .line 72
-    .line 73
-    if-eqz p1, :cond_4
+    invoke-virtual {p1}, LR5d;->h3()V
 
+    .line 73
     .line 74
     .line 75
-    sget-object v1, LkRc;->e:LkRc;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->E0:Landroid/view/View;
 
     .line 76
     .line 77
-    new-instance v2, Lhad;
+    if-eqz p1, :cond_4
 
     .line 78
     .line 79
-    invoke-direct {v2, p1, v1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    sget-object v2, LW5d;->d:LW5d;
 
     .line 80
     .line 81
+    new-instance v3, LDpd;
+
     .line 82
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->F0:Landroid/view/View;
-
     .line 83
-    .line 84
-    if-eqz p1, :cond_3
+    invoke-direct {v3, p1, v2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
+    .line 84
     .line 85
     .line 86
-    sget-object v1, LkRc;->f:LkRc;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->F0:Landroid/view/View;
 
     .line 87
     .line 88
-    new-instance v3, Lhad;
+    if-eqz p1, :cond_3
 
     .line 89
     .line 90
-    invoke-direct {v3, p1, v1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    sget-object v2, LW5d;->e:LW5d;
 
     .line 91
     .line 92
-    .line 93
-    const/4 p1, 0x2
+    new-instance v4, LDpd;
 
+    .line 93
     .line 94
-    new-array p1, p1, [Lhad;
+    invoke-direct {v4, p1, v2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 95
     .line 96
-    const/4 v1, 0x0
-
     .line 97
-    aput-object v2, p1, v1
+    const/4 p1, 0x2
 
     .line 98
+    new-array p1, p1, [LDpd;
+
     .line 99
+    .line 100
     aput-object v3, p1, v0
 
-    .line 100
     .line 101
-    invoke-static {p1}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
-
     .line 102
+    aput-object v4, p1, v1
+
     .line 103
     .line 104
-    move-result-object p1
+    invoke-static {p1}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
 
     .line 105
-    check-cast p1, Ljava/lang/Iterable;
-
     .line 106
     .line 107
-    invoke-static {p1}, LFak;->e(Ljava/lang/Iterable;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 108
-    .line 109
-    .line 110
     move-result-object p1
 
-    .line 111
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->G0:Le5;
+    .line 108
+    check-cast p1, Ljava/lang/Iterable;
 
+    .line 109
+    .line 110
+    invoke-static {p1}, LItk;->h(Ljava/lang/Iterable;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 111
     .line 112
     .line 113
-    if-eqz v0, :cond_2
+    move-result-object p1
 
     .line 114
-    .line 115
-    invoke-interface {v0}, Le5;->a()Lio/reactivex/rxjava3/core/Observable;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->G0:LJ5;
 
+    .line 115
     .line 116
+    if-eqz v0, :cond_2
+
     .line 117
     .line 118
-    move-result-object p2
+    invoke-interface {v0}, LJ5;->a()Lio/reactivex/rxjava3/core/Observable;
 
     .line 119
-    sget-object v0, Luha;->q0:Luha;
-
     .line 120
     .line 121
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object p2
 
     .line 122
+    sget-object v0, LhR7;->z0:LhR7;
+
     .line 123
     .line 124
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 125
     .line 126
-    invoke-direct {v1, p2, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 127
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
     .line 128
     .line 129
-    invoke-static {p1, v1}, Lio/reactivex/rxjava3/core/Observable;->o0(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-direct {v1, p2, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 130
     .line 131
     .line 132
-    move-result-object p1
+    invoke-static {p1, v1}, Lio/reactivex/rxjava3/core/Observable;->r0(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 133
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->H0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 134
     .line 135
-    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/core/Observer;)V
+    move-result-object p1
 
     .line 136
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->H0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 137
     .line 138
-    return-void
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/core/Observer;)V
 
     .line 139
+    .line 140
+    .line 141
+    return-void
+
+    .line 142
     :cond_2
     const-string p1, "accountCarouselView"
 
-    .line 140
-    .line 141
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 142
     .line 143
     .line 144
-    throw p2
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 145
+    .line 146
+    .line 147
+    throw p2
+
+    .line 148
     :cond_3
     const-string p1, "switchAccountButton"
 
-    .line 146
-    .line 147
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 148
     .line 149
     .line 150
-    throw p2
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 151
+    .line 152
+    .line 153
+    throw p2
+
+    .line 154
     :cond_4
     const-string p1, "signupButton"
 
-    .line 152
-    .line 153
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 154
     .line 155
     .line 156
-    throw p2
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 157
+    .line 158
+    .line 159
+    throw p2
+
+    .line 160
     :cond_5
     const-string p1, "presenter"
 
-    .line 158
-    .line 159
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 160
     .line 161
     .line 162
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 163
+    .line 164
+    .line 165
     throw p2
 .end method
 
-.method public final L(LnRc;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->G0:Le5;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    if-eqz v0, :cond_3
-
-    .line 5
-    .line 6
-    invoke-virtual {p1}, LnRc;->a()Ld5;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v2
-
-    .line 10
-    invoke-interface {v0, v2}, Lio/reactivex/rxjava3/functions/Consumer;->accept(Ljava/lang/Object;)V
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {p1}, LnRc;->a()Ld5;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    invoke-virtual {p1}, Ld5;->a()I
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    const/4 v0, 0x3
-
-    .line 22
-    if-eq p1, v0, :cond_0
-
-    .line 23
-    .line 24
-    const/4 p1, 0x1
-
-    .line 25
-    goto :goto_0
-
-    .line 26
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 27
-    :goto_0
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->E0:Landroid/view/View;
-
-    .line 28
-    .line 29
-    if-eqz v0, :cond_2
-
-    .line 30
-    .line 31
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
-
-    .line 32
-    .line 33
-    .line 34
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->F0:Landroid/view/View;
-
-    .line 35
-    .line 36
-    if-eqz v0, :cond_1
-
-    .line 37
-    .line 38
-    invoke-virtual {v0, p1}, Landroid/view/View;->setEnabled(Z)V
-
-    .line 39
-    .line 40
-    .line 41
-    return-void
-
-    .line 42
-    :cond_1
-    const-string p1, "switchAccountButton"
-
-    .line 43
-    .line 44
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 45
-    .line 46
-    .line 47
-    throw v1
-
-    .line 48
-    :cond_2
-    const-string p1, "signupButton"
-
-    .line 49
-    .line 50
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 51
-    .line 52
-    .line 53
-    throw v1
-
-    .line 54
-    :cond_3
-    const-string p1, "accountCarouselView"
-
-    .line 55
-    .line 56
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 57
-    .line 58
-    .line 59
-    throw v1
-.end method
-
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->J1:LZ8d;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->I0:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    sget-object v0, Lsod;->K1:Lsod;
 
     .line 2
     .line 3
@@ -668,17 +491,6 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->J0:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final k0()Z
-    .locals 1
-
-    .line 1
     const/4 v0, 0x0
 
     return v0
@@ -693,11 +505,11 @@
     return-wide v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -705,11 +517,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
@@ -722,12 +534,12 @@
     move-result-object p1
 
     .line 8
-    invoke-static {p1}, LKpk;->g(Landroid/content/Context;)V
+    invoke-static {p1}, LCPk;->f(Landroid/content/Context;)V
 
     .line 9
     .line 10
     .line 11
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LfRc;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LR5d;
 
     .line 12
     .line 13
@@ -735,7 +547,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {p1}, LfRc;->c3()V
+    invoke-virtual {p1}, LR5d;->i3()V
 
     .line 16
     .line 17
@@ -748,7 +560,7 @@
 
     .line 20
     .line 21
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 22
     .line 23
@@ -756,5 +568,46 @@
     const/4 p1, 0x0
 
     .line 25
+    throw p1
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/onetaplogin/OneTapLoginFragment;->K0:LR5d;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, p0}, LR5d;->j3(La6d;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    const-string p1, "presenter"
+
+    .line 13
+    .line 14
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 p1, 0x0
+
+    .line 18
     throw p1
 .end method

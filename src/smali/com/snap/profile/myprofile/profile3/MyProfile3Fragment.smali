@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/profile/fragments/profile3/Profile3Fragment<",
-        "Llhc;",
+        "Lrwc;",
         ">;"
     }
 .end annotation

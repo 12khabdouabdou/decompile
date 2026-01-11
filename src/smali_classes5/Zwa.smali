@@ -1,3 +1,3 @@
-.class public interface abstract LZwa;
-.super Ljava/lang/Object;
+.class public abstract LZwa;
+.super Laxa;
 .source "SourceFile"

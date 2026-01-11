@@ -21,11 +21,11 @@
 
 
 # instance fields
-.field public final a:LZne;
+.field public final a:LSFe;
 
 
 # direct methods
-.method public constructor <init>(LZne;)V
+.method public constructor <init>(LSFe;)V
     .locals 0
 
     .line 1
@@ -34,7 +34,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromPublisher;->a:LZne;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromPublisher;->a:LSFe;
 
     .line 5
     .line 6
@@ -43,7 +43,7 @@
 
 
 # virtual methods
-.method public final t(Lio/reactivex/rxjava3/core/CompletableObserver;)V
+.method public final s(Lio/reactivex/rxjava3/core/CompletableObserver;)V
     .locals 1
 
     .line 1
@@ -56,11 +56,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromPublisher;->a:LZne;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromPublisher;->a:LSFe;
 
     .line 7
     .line 8
-    invoke-interface {p1, v0}, LZne;->subscribe(LV6i;)V
+    invoke-interface {p1, v0}, LSFe;->subscribe(Lmvi;)V
 
     .line 9
     .line 10

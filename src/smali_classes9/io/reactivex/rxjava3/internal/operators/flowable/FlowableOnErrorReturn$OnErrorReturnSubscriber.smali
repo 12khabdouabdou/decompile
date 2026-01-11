@@ -29,11 +29,11 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/functions/Function;)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;-><init>(LV6i;)V
+    invoke-direct {p0, p1}, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;-><init>(Lmvi;)V
 
     .line 2
     .line 3
@@ -51,11 +51,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 4
     .line 5
@@ -129,11 +129,11 @@
     .line 27
     .line 28
     .line 29
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:Lmvi;
 
     .line 30
     .line 31
-    invoke-interface {p1, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 32
     .line 33
@@ -160,11 +160,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:Lmvi;
 
     .line 9
     .line 10
-    invoke-interface {v0, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 11
     .line 12

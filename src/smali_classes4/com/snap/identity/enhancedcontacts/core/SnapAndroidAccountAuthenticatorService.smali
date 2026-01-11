@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Lpyg;
+.field public a:LDTg;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/snap/identity/enhancedcontacts/core/SnapAndroidAccountAuthenticatorService;->a:Lpyg;
+    iget-object p1, p0, Lcom/snap/identity/enhancedcontacts/core/SnapAndroidAccountAuthenticatorService;->a:LDTg;
 
     .line 2
     .line 3
@@ -50,7 +50,7 @@
 
     .line 11
     .line 12
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -65,16 +65,16 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lpyg;
+    new-instance v0, LDTg;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lpyg;-><init>(Lcom/snap/identity/enhancedcontacts/core/SnapAndroidAccountAuthenticatorService;)V
+    invoke-direct {v0, p0}, LDTg;-><init>(Lcom/snap/identity/enhancedcontacts/core/SnapAndroidAccountAuthenticatorService;)V
 
     .line 4
     .line 5
     .line 6
-    iput-object v0, p0, Lcom/snap/identity/enhancedcontacts/core/SnapAndroidAccountAuthenticatorService;->a:Lpyg;
+    iput-object v0, p0, Lcom/snap/identity/enhancedcontacts/core/SnapAndroidAccountAuthenticatorService;->a:LDTg;
 
     .line 7
     .line 8

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFWa;
+    proxyClass = LK9b;
     schema = "\'handlePlaceTap\':f|m|(r:\'[0]\'),\'handlePlacePivotTap\':f|m|(r:\'[1]\', b@?, d@?),\'handleMemoriesPivotTap\':f|m|(),\'handleFootstepsPivotTap\':f|m|(),\'handleCloseSearchTray\':f|m|(),\'handleFriendButtonTap\':f|m|(a<s>, d@?),\'handleMyBitmojiButtonTap\':f|m|(d@?),\'handleSearchButtonTap\':f|m|(),\'handleAddFriendsButtonTap\':f|m|(),\'handleBackToTopButtonTap\':f?|m|(),\'handleTryAgainButtonTap\':f?|m|(),\'handlePlaceTrayTap\':f?|m|()"
     typeReferences = {
         Lcom/snap/places/placeprofile/PlaceCardData;,
@@ -23,7 +23,7 @@
 .end method
 
 .method public abstract handleBackToTopButtonTap()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -59,7 +59,7 @@
 .end method
 
 .method public abstract handlePlaceTrayTap()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -67,7 +67,7 @@
 .end method
 
 .method public abstract handleTryAgainButtonTap()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

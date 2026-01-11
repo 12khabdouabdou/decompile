@@ -101,11 +101,11 @@
 
     .line 26
     .line 27
-    new-instance v0, LD0h;
+    new-instance v0, Lxmh;
 
     .line 28
     .line 29
-    invoke-direct {v0, p1, p1}, LD0h;-><init>(II)V
+    invoke-direct {v0, p1, p1}, Lxmh;-><init>(II)V
 
     .line 30
     .line 31

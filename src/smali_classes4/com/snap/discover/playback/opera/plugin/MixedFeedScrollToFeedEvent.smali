@@ -1,5 +1,5 @@
 .class public final Lcom/snap/discover/playback/opera/plugin/MixedFeedScrollToFeedEvent;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -12,7 +12,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -111,7 +111,7 @@
 
     .line 11
     .line 12
-    invoke-static {v2, v0, v1}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
     .line 13
     .line 14

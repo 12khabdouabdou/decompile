@@ -1,266 +1,229 @@
-.class public final LtJ2;
-.super Ljava/lang/Object;
+.class public final enum LtJ2;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LfY4;
+# static fields
+.field public static final enum X:LtJ2;
 
-.field public final b:LfY4;
+.field public static final enum Y:LtJ2;
 
-.field public final c:LNG4;
+.field public static final synthetic Z:[LtJ2;
 
-.field public final d:LXfi;
+.field public static final enum a:LtJ2;
+
+.field public static final enum b:LtJ2;
+
+.field public static final enum c:LtJ2;
+
+.field public static final enum t:LtJ2;
 
 
 # direct methods
-.method public constructor <init>(LfY4;LfY4;LNG4;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x5
 
     .line 2
+    const/4 v1, 0x4
+
     .line 3
+    const/4 v2, 0x3
+
     .line 4
-    iput-object p1, p0, LtJ2;->a:LfY4;
+    const/4 v3, 0x2
 
     .line 5
+    const/4 v4, 0x1
+
     .line 6
-    iput-object p2, p0, LtJ2;->b:LfY4;
+    const/4 v5, 0x0
 
     .line 7
+    new-instance v6, LtJ2;
+
     .line 8
-    iput-object p3, p0, LtJ2;->c:LNG4;
-
     .line 9
+    const-string v7, "VISIBLE"
+
     .line 10
-    new-instance p1, LZh2;
-
     .line 11
-    .line 12
-    const/16 p2, 0x16
+    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 12
     .line 13
     .line 14
-    invoke-direct {p1, p2, p0}, LZh2;-><init>(ILjava/lang/Object;)V
+    sput-object v6, LtJ2;->a:LtJ2;
 
     .line 15
     .line 16
+    new-instance v7, LtJ2;
+
     .line 17
-    new-instance p2, LXfi;
-
     .line 18
-    .line 19
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 20
-    .line 21
-    .line 22
-    iput-object p2, p0, LtJ2;->d:LXfi;
-
-    .line 23
-    .line 24
-    return-void
-.end method
-
-.method public static final a(LtJ2;LaZf;)Z
-    .locals 2
-
-    .line 1
-    instance-of p0, p1, LsJ2;
-
-    .line 2
-    .line 3
-    const/4 v0, 0x1
-
-    .line 4
-    if-eqz p0, :cond_3
-
-    .line 5
-    .line 6
-    invoke-interface {p1}, LbZf;->d()Ljava/lang/String;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p0
-
-    .line 10
-    sget-object v1, LfNb;->c:LfNb;
-
-    .line 11
-    .line 12
-    iget-object v1, v1, LfNb;->a:Ljava/lang/String;
-
-    .line 13
-    .line 14
-    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v1
-
-    .line 18
-    if-eqz v1, :cond_0
+    const-string v8, "RESUME"
 
     .line 19
     .line 20
-    const/4 v1, 0x1
+    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 21
-    goto :goto_0
-
     .line 22
-    :cond_0
-    sget-object v1, LfNb;->l0:LfNb;
-
     .line 23
-    .line 24
-    iget-object v1, v1, LfNb;->a:Ljava/lang/String;
+    sput-object v7, LtJ2;->b:LtJ2;
 
+    .line 24
     .line 25
-    .line 26
-    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    new-instance v8, LtJ2;
 
+    .line 26
     .line 27
+    const-string v9, "PAUSED"
+
     .line 28
     .line 29
-    move-result v1
+    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 30
-    :goto_0
-    if-eqz v1, :cond_1
-
     .line 31
     .line 32
-    const/4 v1, 0x1
+    sput-object v8, LtJ2;->c:LtJ2;
 
     .line 33
-    goto :goto_1
-
     .line 34
-    :cond_1
-    sget-object v1, LfNb;->p0:LfNb;
+    new-instance v9, LtJ2;
 
     .line 35
     .line 36
-    iget-object v1, v1, LfNb;->a:Ljava/lang/String;
+    const-string v10, "DESTROYED"
 
     .line 37
     .line 38
-    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 39
     .line 40
     .line 41
-    move-result v1
+    sput-object v9, LtJ2;->t:LtJ2;
 
     .line 42
-    :goto_1
-    if-eqz v1, :cond_2
-
     .line 43
-    .line 44
-    const/4 p0, 0x1
+    new-instance v10, LtJ2;
 
+    .line 44
     .line 45
-    goto :goto_2
+    const-string v11, "HIDDEN"
 
     .line 46
-    :cond_2
-    sget-object v1, LfNb;->q0:LfNb;
-
     .line 47
-    .line 48
-    iget-object v1, v1, LfNb;->a:Ljava/lang/String;
+    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 48
     .line 49
     .line 50
-    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    sput-object v10, LtJ2;->X:LtJ2;
 
     .line 51
     .line 52
-    .line 53
-    move-result p0
+    new-instance v11, LtJ2;
 
+    .line 53
     .line 54
-    :goto_2
-    if-eqz p0, :cond_4
+    const-string v12, "UNKNOWN"
 
     .line 55
     .line 56
-    check-cast p1, LsJ2;
+    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 57
     .line 58
-    iget-object p0, p1, LsJ2;->d:Lkkb;
-
     .line 59
-    .line 60
-    iget-object p0, p0, Lkkb;->b:Ljava/lang/String;
+    sput-object v11, LtJ2;->Y:LtJ2;
 
+    .line 60
     .line 61
+    const/4 v12, 0x6
+
     .line 62
-    const-string v1, "VIDEO_NO_SOUND"
+    new-array v12, v12, [LtJ2;
 
     .line 63
     .line 64
-    invoke-static {p0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    aput-object v6, v12, v5
 
     .line 65
     .line 66
-    .line 67
-    move-result p0
+    aput-object v7, v12, v4
 
+    .line 67
     .line 68
-    if-nez p0, :cond_4
+    aput-object v8, v12, v3
 
     .line 69
     .line 70
-    iget-object p0, p1, LsJ2;->d:Lkkb;
+    aput-object v9, v12, v2
 
     .line 71
     .line 72
-    iget-object p0, p0, Lkkb;->b:Ljava/lang/String;
+    aput-object v10, v12, v1
 
     .line 73
     .line 74
-    const-string p1, "VIDEO"
+    aput-object v11, v12, v0
 
     .line 75
     .line 76
-    invoke-static {p0, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sput-object v12, LtJ2;->Z:[LtJ2;
 
     .line 77
     .line 78
-    .line 79
-    move-result p0
+    return-void
+.end method
 
-    .line 80
-    if-nez p0, :cond_4
+.method public static valueOf(Ljava/lang/String;)LtJ2;
+    .locals 1
 
-    .line 81
-    .line 82
-    return v0
+    .line 1
+    const-class v0, LtJ2;
 
-    .line 83
-    :cond_3
-    instance-of p0, p1, LvR0;
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 84
-    .line 85
-    if-eqz p0, :cond_4
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 86
-    .line 87
-    return v0
+    .line 7
+    check-cast p0, LtJ2;
 
-    .line 88
-    :cond_4
-    const/4 p0, 0x0
+    .line 8
+    .line 9
+    return-object p0
+.end method
 
-    .line 89
-    return p0
+.method public static values()[LtJ2;
+    .locals 1
+
+    .line 1
+    sget-object v0, LtJ2;->Z:[LtJ2;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LtJ2;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

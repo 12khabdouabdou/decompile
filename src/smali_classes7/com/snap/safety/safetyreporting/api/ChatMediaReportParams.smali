@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/ChatMediaReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'conversationId\':s,\'messageId\':l,\'reportedUserId\':s,\'reportedMedia\':r?:\'[0]\',\'mediaSentTimestamp\':l,\'attachmentUrl\':s?,\'lensCustomizationPrompt\':s?,\'lensCustomizationId\':s?"
     typeReferences = {

@@ -1,29 +1,33 @@
 .class public final Lkob;
-.super Luob;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lkob;
+# instance fields
+.field public final a:Ljava/util/Map;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public synthetic constructor <init>()V
     .locals 1
 
-    .line 1
-    new-instance v0, Lkob;
-
-    .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, LiP6;->a:LiP6;
 
     .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lkob;->a:Lkob;
+    invoke-direct {p0, v0}, Lkob;-><init>(Ljava/util/Map;)V
 
-    .line 7
-    .line 8
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/Map;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lkob;->a:Ljava/util/Map;
+
     return-void
 .end method

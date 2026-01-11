@@ -1,167 +1,125 @@
 .class public final LWdb;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:LQdb;
+.field public final synthetic a:I
 
-.field public final b:Ljava/util/ArrayList;
-
-.field public final c:Ljava/util/LinkedHashMap;
+.field public final synthetic b:LXdb;
 
 
 # direct methods
-.method public constructor <init>(LQdb;)V
+.method public synthetic constructor <init>(LXdb;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LWdb;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LWdb;->a:LQdb;
+    iput-object p1, p0, LWdb;->b:LXdb;
 
-    .line 5
-    .line 6
-    new-instance p1, Ljava/util/ArrayList;
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 9
-    .line 10
-    .line 11
-    iput-object p1, p0, LWdb;->b:Ljava/util/ArrayList;
-
-    .line 12
-    .line 13
-    new-instance p1, Ljava/util/LinkedHashMap;
-
-    .line 14
-    .line 15
-    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 16
-    .line 17
-    .line 18
-    iput-object p1, p0, LWdb;->c:Ljava/util/LinkedHashMap;
-
-    .line 19
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LmZ0;)V
+.method public final d()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    monitor-enter p0
+    iget v0, p0, LWdb;->a:I
 
     .line 2
-    :try_start_0
-    iget-object v0, p0, LWdb;->c:Ljava/util/LinkedHashMap;
-
     .line 3
-    .line 4
-    iget-object v1, p1, LmZ0;->a:Ljava/lang/String;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    iget-object v0, p0, LWdb;->b:LXdb;
 
     .line 7
     .line 8
+    invoke-virtual {v0}, LXdb;->a()Landroid/view/ViewGroup;
+
     .line 9
-    move-result v0
-
     .line 10
-    if-eqz v0, :cond_0
-
     .line 11
+    move-result-object v0
+
     .line 12
-    const/4 p1, 0x0
+    return-object v0
 
     .line 13
-    goto :goto_0
+    :pswitch_0
+    iget-object v0, p0, LWdb;->b:LXdb;
 
     .line 14
-    :cond_0
-    iget-object v0, p0, LWdb;->b:Ljava/util/ArrayList;
-
     .line 15
-    .line 16
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    iget-object v1, v0, LXdb;->d:Lio/reactivex/rxjava3/subjects/SingleSubject;
 
+    .line 16
     .line 17
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/subjects/SingleSubject;->K()Ljava/lang/Object;
+
     .line 18
     .line 19
-    iget-object v0, p0, LWdb;->b:Ljava/util/ArrayList;
-
     .line 20
+    move-result-object v1
+
     .line 21
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    check-cast v1, Landroid/view/ViewGroup;
 
     .line 22
     .line 23
+    if-nez v1, :cond_0
+
     .line 24
-    iget-object v0, p0, LWdb;->c:Ljava/util/LinkedHashMap;
-
     .line 25
+    iget-object v1, v0, LXdb;->c:La5f;
+
     .line 26
-    iget-object v1, p1, LmZ0;->a:Ljava/lang/String;
-
     .line 27
-    .line 28
-    invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 28
     .line 29
     .line 30
-    .line 31
-    const/4 p1, 0x1
+    iget-object v0, v0, LXdb;->d:Lio/reactivex/rxjava3/subjects/SingleSubject;
 
+    .line 31
     .line 32
-    :goto_0
-    monitor-exit p0
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Single;->e()Ljava/lang/Object;
 
     .line 33
-    if-eqz p1, :cond_1
-
     .line 34
     .line 35
-    iget-object p1, p0, LWdb;->a:LQdb;
+    move-result-object v0
 
     .line 36
+    move-object v1, v0
+
     .line 37
-    sget-object v0, Li7j;->a:Li7j;
+    check-cast v1, Landroid/view/ViewGroup;
 
     .line 38
     .line 39
-    iget-object p1, p1, LQdb;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    :cond_0
+    return-object v1
 
     .line 40
+    nop
+
     .line 41
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 42
-    .line 43
-    .line 44
-    :cond_1
-    return-void
-
-    .line 45
-    :catchall_0
-    move-exception p1
-
-    .line 46
-    monitor-exit p0
-
-    .line 47
-    throw p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

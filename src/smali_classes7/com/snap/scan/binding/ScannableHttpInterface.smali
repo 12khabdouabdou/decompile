@@ -4,41 +4,41 @@
 
 
 # virtual methods
-.method public abstract getScannableForSnapcodeScan(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Lfuf;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getScannableForSnapcodeScan(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;LnNf;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/Boolean;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-GeofilterResponse-Deprecate"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime Ludd;
+        .annotation runtime Lvtd;
             value = "snapcodeIdentifier"
         .end annotation
     .end param
-    .param p4    # Lfuf;
-        .annotation runtime Ljv1;
+    .param p4    # LnNf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/scannablesv2/SNAPCODE/{snapcodeIdentifier}/actions"
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/Boolean;",
             "Ljava/lang/String;",
-            "Lfuf;",
+            "LnNf;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lguf;",
+            "LoNf;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "/scannablesv2/SNAPCODE/{snapcodeIdentifier}/actions"
     .end annotation
 .end method

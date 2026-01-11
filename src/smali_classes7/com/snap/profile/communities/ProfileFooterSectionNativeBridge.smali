@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LY5e;
+    proxyClass = Lxne;
     schema = "\'getGroupDisplayName\':f|m|(s): g<c>:\'[0]\'<s>,\'getJoinedTimestampMs\':f|m|(s): g<c>:\'[0]\'<d@>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;

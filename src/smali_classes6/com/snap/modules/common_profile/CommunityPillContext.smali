@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/common_profile/CommunityPillContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'communityStore\':r:\'[0]\',\'onCommunityPillTap\':f(s, s)"
     typeReferences = {

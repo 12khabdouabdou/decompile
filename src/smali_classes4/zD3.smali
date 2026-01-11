@@ -1,0 +1,132 @@
+.class public final LzD3;
+.super LMx1;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/modules/sup/SUPBooleanRepo;
+
+
+# direct methods
+.method public constructor <init>(Lyzi;)V
+    .locals 1
+
+    .line 1
+    sget-object v0, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lc1f;->a(Ljava/lang/Class;)Lm43;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-direct {p0, p1, v0}, LMx1;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    new-instance v0, Lcom/snap/modules/sup/SUPBoolean;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p1}, Lcom/snap/modules/sup/SUPBoolean;-><init>(Ljava/lang/Boolean;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-object v0
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/modules/sup/SUPBooleanRepo;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+.end method
+
+.method public final bridge synthetic putConfirmed(JZ)Lcom/snap/composer/promise/Promise;
+    .locals 0
+
+    .line 1
+    invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p3
+
+    .line 5
+    invoke-virtual {p0, p1, p2, p3}, LMx1;->C(JLjava/lang/Object;)Lav3;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method
+
+.method public final bridge synthetic putSpeculative(JZ)Lcom/snap/composer/promise/Promise;
+    .locals 0
+
+    .line 1
+    invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p3
+
+    .line 5
+    invoke-virtual {p0, p1, p2, p3}, LMx1;->D(JLjava/lang/Object;)Lav3;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method

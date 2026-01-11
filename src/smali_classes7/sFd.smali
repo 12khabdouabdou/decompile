@@ -1,19 +1,14 @@
 .class public final LsFd;
-.super Ljava/lang/Object;
+.super LtFd;
 .source "SourceFile"
-
-# interfaces
-.implements LtFd;
 
 
 # instance fields
-.field public a:LtFd;
-
-.field public final synthetic b:Lj0d;
+.field public final a:Landroid/view/View;
 
 
 # direct methods
-.method public constructor <init>(Lj0d;)V
+.method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
     .line 1
@@ -22,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LsFd;->b:Lj0d;
+    iput-object p1, p0, LsFd;->a:Landroid/view/View;
 
     .line 5
     .line 6
@@ -31,98 +26,128 @@
 
 
 # virtual methods
-.method public final a(LdXc;Lj8d;)Ljava/util/List;
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LsFd;->a:LtFd;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    if-nez v0, :cond_0
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    iget-object v0, p0, LsFd;->b:Lj0d;
+    :cond_0
+    instance-of v1, p1, LsFd;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Lj0d;->invoke()Ljava/lang/Object;
+    const/4 v2, 0x0
 
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
     .line 10
-    move-result-object v0
+    return v2
 
     .line 11
-    check-cast v0, LtFd;
+    :cond_1
+    check-cast p1, LsFd;
 
     .line 12
     .line 13
-    iput-object v0, p0, LsFd;->a:LtFd;
+    iget-object v1, p0, LsFd;->a:Landroid/view/View;
 
     .line 14
     .line 15
-    :cond_0
-    iget-object v0, p0, LsFd;->a:LtFd;
+    iget-object p1, p1, LsFd;->a:Landroid/view/View;
 
     .line 16
     .line 17
-    invoke-interface {v0, p1, p2}, LtFd;->a(LdXc;Lj8d;)Ljava/util/List;
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
     .line 20
-    move-result-object p1
+    move-result p1
 
     .line 21
-    return-object p1
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
 .end method
 
-.method public final b(LdXc;Lj8d;)Ljava/util/Map;
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, LsFd;->a:LtFd;
+    iget-object v0, p0, LsFd;->a:Landroid/view/View;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
-    iget-object v0, p0, LsFd;->b:Lj0d;
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "StopTracking(view="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Lj0d;->invoke()Ljava/lang/Object;
-
     .line 8
+    iget-object v1, p0, LsFd;->a:Landroid/view/View;
+
     .line 9
     .line 10
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
-    check-cast v0, LtFd;
-
     .line 12
     .line 13
-    iput-object v0, p0, LsFd;->a:LtFd;
+    const-string v1, ")"
 
     .line 14
     .line 15
-    :cond_0
-    iget-object v0, p0, LsFd;->a:LtFd;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
-    invoke-interface {v0, p1, p2}, LtFd;->b(LdXc;Lj8d;)Ljava/util/Map;
-
     .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 19
     .line 20
-    move-result-object p1
-
     .line 21
-    return-object p1
+    move-result-object v0
+
+    .line 22
+    return-object v0
 .end method

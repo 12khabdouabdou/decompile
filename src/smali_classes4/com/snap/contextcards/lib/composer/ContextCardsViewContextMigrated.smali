@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LcX3;
+    proxyClass = LF14;
     schema = "\'performAction\':f|m|(r:\'[0]\'),\'playStory\':f|m|(s, m?<s,u>, f?()),\'presentRemoteDocumentModally\':f|m|(r:\'[1]\'),\'playUserStory\':f|m|(s, s, r?:\'[2]\'),\'shouldCardsBeInitiallyCollapsed\':f|m|(): b,\'registerExpansionStateListener\':f|m|(f(b@)),\'wantsToExpandFromCollapsedState\':f|m|(),\'gameLauncher\':r?:\'[3]\',\'suggestedFriendsService\':f?|m|(): r?:\'[4]\',\'networkingClient\':r?:\'[5]\',\'storyPlayer\':r?:\'[6]\',\'allowRelatedStories\':b@?,\'actionHandler\':r?:\'[7]\',\'myAstrologyUserInfo\':r?:\'[8]\',\'musicFavoritesService\':r?:\'[9]\',\'musicNotificationPresenter\':r?:\'[10]\',\'alertPresenter\':r?:\'[11]\',\'logMusicFavorite\':f?|m|(s, b),\'isMusicPrivate\':f?|m|(r:\'[0]\'): b,\'musicFeatureSettings\':r?:\'[12]\',\'placeCardV2Context\':r?:\'[13]\',\'favoritesProductHandler\':r?:\'[14]\',\'bootstrapVenueFavoritesStore\':f?|m|(),\'itemInstanceViewFactory\':r?:\'[15]\',\'mentionSigBottomButtonsEnabled\':b@?"
     typeReferences = {
         Lcom/snap/contextcards/lib/composer/NativeAction;,
@@ -34,7 +34,7 @@
 
 # virtual methods
 .method public abstract bootstrapVenueFavoritesStore()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -81,12 +81,12 @@
 .end method
 
 .method public abstract isMusicPrivate(Lcom/snap/contextcards/lib/composer/NativeAction;)Z
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract logMusicFavorite(Ljava/lang/String;Z)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -132,7 +132,7 @@
 .end method
 
 .method public abstract suggestedFriendsService()Lcom/snap/contextcards/lib/composer/SuggestedFriendsService;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

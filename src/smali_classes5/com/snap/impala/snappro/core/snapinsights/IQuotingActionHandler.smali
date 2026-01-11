@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LgY8;
+    proxyClass = LK59;
     schema = "\'presentCamera\':f|m|(s, s, s, r:\'[0]\', r<e>:\'[1]\', s?, s?),\'getStickerImage\':f|m|(s, s, b, s?, s?, s?, f?(r:\'[0]\')),\'getQandAStickerImage\':f|m|(s, s, s, f?(r:\'[0]\'))"
     typeReferences = {
         Lcom/snap/impala/common/media/IImage;,

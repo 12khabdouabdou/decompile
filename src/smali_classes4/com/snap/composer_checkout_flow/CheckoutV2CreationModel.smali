@@ -1,17 +1,17 @@
 .class public final Lcom/snap/composer_checkout_flow/CheckoutV2CreationModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'storeId\':t,\'storeInfo\':r:\'[0]\',\'placeOrderButtonType\':r<e>:\'[1]\',\'checkoutLineItemList\':a<r:\'[2]\'>,\'additionalParameters\':a<r:\'[3]\'>,\'entryPage\':s?"
     typeReferences = {
         Lcom/snap/composer_checkout_flow/CheckoutStoreInfo;,
         Lcom/snap/composer_checkout/PlaceOrderButtonType;,
-        LKR2;,
-        LMB;
+        LnU2;,
+        LxD;
     }
 .end annotation
 
@@ -21,7 +21,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LMB;",
+            "LxD;",
             ">;"
         }
     .end annotation
@@ -31,7 +31,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LKR2;",
+            "LnU2;",
             ">;"
         }
     .end annotation
@@ -84,10 +84,10 @@
             "Lcom/snap/composer_checkout_flow/CheckoutStoreInfo;",
             "Lcom/snap/composer_checkout/PlaceOrderButtonType;",
             "Ljava/util/List<",
-            "LKR2;",
+            "LnU2;",
             ">;",
             "Ljava/util/List<",
-            "LMB;",
+            "LxD;",
             ">;",
             "Ljava/lang/String;",
             ")V"

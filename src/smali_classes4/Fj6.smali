@@ -1,81 +1,38 @@
-.class public abstract synthetic LFj6;
+.class public abstract LFj6;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final a:Llj7;
+
+.field public static final b:Lmj7;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     .line 1
-    invoke-static {}, LbV3;->values()[LbV3;
+    sget-object v0, Llj7;->b:Llj7;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    sput-object v0, LFj6;->a:Llj7;
 
+    .line 4
     .line 5
-    array-length v0, v0
+    invoke-static {v0}, LQWg;->c(Llj7;)Lmj7;
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, LbV3;->r0:LbV3;
+    move-result-object v0
 
     .line 9
+    sput-object v0, LFj6;->b:Lmj7;
+
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 11
-    .line 12
-    .line 13
-    move-result v1
-
-    .line 14
-    const/4 v2, 0x1
-
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, LbV3;->n2:LbV3;
-
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    sput-object v0, LFj6;->a:[I
-
-    .line 27
-    .line 28
     return-void
 .end method

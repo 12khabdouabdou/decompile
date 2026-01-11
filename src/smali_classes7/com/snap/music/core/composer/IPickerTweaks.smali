@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LJX8;
+    proxyClass = Lm59;
     schema = "\'useBeta\':b@?,\'disableCaching\':b@?,\'customRouteTag\':s?,\'acceptLanguage\':s?,\'countryCode\':s?"
     typeReferences = {}
 .end annotation

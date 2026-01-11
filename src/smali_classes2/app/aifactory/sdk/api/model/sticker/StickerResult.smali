@@ -107,7 +107,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/sticker/StickerResult;->file:Ljava/io/File;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 

@@ -2,178 +2,230 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
 
 # instance fields
-.field public final a:Lcom/snap/mushroom/app/MushroomApplication;
+.field public final synthetic a:I
 
-.field public final b:LOB6;
-
-.field public final c:LpC3;
-
-.field public final d:LAHh;
-
-.field public final e:LTqc;
-
-.field public final f:Lake;
-
-.field public final g:LBre;
+.field public final synthetic b:LKKh;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/mushroom/app/MushroomApplication;LOB6;LpC3;LAHh;LTqc;Lake;)V
+.method public synthetic constructor <init>(LKKh;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LIKh;->a:I
+
+    iput-object p1, p0, LIKh;->b:LKKh;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LIKh;->a:Lcom/snap/mushroom/app/MushroomApplication;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LIKh;->b:LOB6;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LIKh;->c:LpC3;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LIKh;->d:LAHh;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, LIKh;->e:LTqc;
-
-    .line 13
-    .line 14
-    iput-object p6, p0, LIKh;->f:Lake;
-
-    .line 15
-    .line 16
-    sget-object p1, LFHh;->Z:LFHh;
-
-    .line 17
-    .line 18
-    const-string p2, "StoryBlacklistHandler"
-
-    .line 19
-    .line 20
-    invoke-static {p1, p1, p2}, Ln9f;->j(LFHh;LFHh;Ljava/lang/String;)LWm0;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    new-instance p2, LBre;
-
-    .line 25
-    .line 26
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
-
-    .line 27
-    .line 28
-    .line 29
-    iput-object p2, p0, LIKh;->g:LBre;
-
-    .line 30
-    .line 31
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LlYd;Ljava/util/List;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
-    .locals 2
+.method public final call()Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    new-instance v0, LUog;
+    iget v0, p0, LIKh;->a:I
 
     .line 2
     .line 3
-    const/16 v1, 0x17
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, p0, p1, p2, v1}, LUog;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
     .line 6
+    iget-object v0, p0, LIKh;->b:LKKh;
+
     .line 7
     .line 8
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    iget-object v0, v0, LKKh;->t0:Lbb5;
 
     .line 9
     .line 10
-    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    invoke-virtual {v0}, Lbb5;->get()Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    new-instance p2, LHKh;
+    move-result-object v0
 
     .line 14
-    .line 15
-    const/4 v0, 0x0
+    check-cast v0, LFKh;
 
+    .line 15
     .line 16
-    invoke-direct {p2, v0, p0}, LHKh;-><init>(ILjava/lang/Object;)V
+    const/4 v1, 0x1
 
     .line 17
+    iput-boolean v1, v0, LFKh;->l:Z
+
     .line 18
     .line 19
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    iget-object v2, v0, LFKh;->h:LGKh;
 
     .line 20
     .line 21
-    invoke-direct {v0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    iget-object v3, v0, LFKh;->m:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 22
     .line 23
+    const/4 v4, 0x0
+
     .line 24
-    iget-object p1, p0, LIKh;->g:LBre;
+    if-eqz v3, :cond_0
 
     .line 25
     .line 26
-    invoke-virtual {p1}, LBre;->d()LF06;
+    const/4 v3, 0x1
 
     .line 27
+    goto :goto_0
+
     .line 28
+    :cond_0
+    const/4 v3, 0x0
+
     .line 29
-    move-result-object p1
+    :goto_0
+    if-eqz v2, :cond_1
 
     .line 30
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
     .line 31
+    goto :goto_1
+
     .line 32
-    invoke-direct {p2, v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    :cond_1
+    const/4 v1, 0x0
 
     .line 33
+    :goto_1
+    iget-object v4, v0, LFKh;->c:Lbb5;
+
     .line 34
     .line 35
-    sget-object p1, LyJh;->X:LyJh;
+    invoke-virtual {v4}, Lbb5;->get()Ljava/lang/Object;
 
     .line 36
     .line 37
-    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
-
     .line 38
-    .line 39
-    .line 40
-    move-result-object p1
+    move-result-object v4
 
+    .line 39
+    check-cast v4, LcH8;
+
+    .line 40
     .line 41
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Completable;->q()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+    sget-object v5, LUi6;->Y0:LUi6;
 
     .line 42
     .line 43
-    .line 44
-    move-result-object p1
+    const-string v6, "preloaded"
 
+    .line 44
     .line 45
-    return-object p1
+    invoke-static {v5, v6, v3}, LDz9;->u0(LH7c;Ljava/lang/String;Z)LV7c;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v3
+
+    .line 49
+    const-string v5, "acquired"
+
+    .line 50
+    .line 51
+    invoke-static {v1, v3, v5, v4, v3}, LzHa;->H(ZLV7c;Ljava/lang/String;LcH8;LV7c;)V
+
+    .line 52
+    .line 53
+    .line 54
+    iget-object v1, v0, LFKh;->m:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 55
+    .line 56
+    if-eqz v1, :cond_2
+
+    .line 57
+    .line 58
+    invoke-interface {v1}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_2
+    const/4 v1, 0x0
+
+    .line 62
+    iput-object v1, v0, LFKh;->m:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 63
+    .line 64
+    iput-object v1, v0, LFKh;->h:LGKh;
+
+    .line 65
+    .line 66
+    if-nez v2, :cond_3
+
+    .line 67
+    .line 68
+    sget-object v0, LN1;->a:LN1;
+
+    .line 69
+    .line 70
+    goto :goto_2
+
+    .line 71
+    :cond_3
+    new-instance v0, Lr4e;
+
+    .line 72
+    .line 73
+    invoke-direct {v0, v2}, Lr4e;-><init>(Ljava/lang/Object;)V
+
+    .line 74
+    .line 75
+    .line 76
+    :goto_2
+    return-object v0
+
+    .line 77
+    :pswitch_0
+    iget-object v0, p0, LIKh;->b:LKKh;
+
+    .line 78
+    .line 79
+    iget-object v0, v0, LKKh;->l0:Lbb5;
+
+    .line 80
+    .line 81
+    invoke-virtual {v0}, Lbb5;->get()Ljava/lang/Object;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v0
+
+    .line 85
+    check-cast v0, LXm6;
+
+    .line 86
+    .line 87
+    return-object v0
+
+    .line 88
+    nop
+
+    .line 89
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

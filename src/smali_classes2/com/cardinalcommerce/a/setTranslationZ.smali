@@ -56,7 +56,7 @@
     return-void
 .end method
 
-.method public static b(Lj6k;)V
+.method public static b(Lkwk;)V
     .locals 2
 
     .line 1
@@ -87,12 +87,12 @@
 
     .line 13
     .line 14
-    const v0, 0x7f0803c5
+    const v0, 0x7f080429
 
     .line 15
     .line 16
     .line 17
-    invoke-virtual {p0, v0}, Lj6k;->a(I)V
+    invoke-virtual {p0, v0}, Lkwk;->a(I)V
 
     .line 18
     .line 19
@@ -144,7 +144,7 @@
 
     .line 10
     .line 11
-    invoke-static {v1, v0, v2, v3}, Lmmi;->c(IIII)I
+    invoke-static {v1, v0, v2, v3}, LbOi;->c(IIII)I
 
     .line 12
     .line 13
@@ -156,7 +156,7 @@
 
     .line 16
     .line 17
-    instance-of v0, p1, Lj6k;
+    instance-of v0, p1, Lkwk;
 
     .line 18
     .line 19
@@ -164,20 +164,20 @@
 
     .line 20
     .line 21
-    new-instance v0, LJTh;
+    new-instance v0, LShi;
 
     .line 22
     .line 23
-    invoke-direct {v0}, LJTh;-><init>()V
+    invoke-direct {v0}, LShi;-><init>()V
 
     .line 24
     .line 25
     .line 26
-    iput-object p0, v0, LJTh;->c:Ljava/lang/Object;
+    iput-object p0, v0, LShi;->c:Ljava/lang/Object;
 
     .line 27
     .line 28
-    iput-object p1, v0, LJTh;->b:Ljava/lang/Object;
+    iput-object p1, v0, LShi;->b:Ljava/lang/Object;
 
     .line 29
     .line 30

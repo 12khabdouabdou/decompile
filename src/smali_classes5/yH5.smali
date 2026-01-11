@@ -1,155 +1,153 @@
 .class public final LyH5;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lok0;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:LFH5;
 
-.field public final synthetic b:LYK1;
+.field public final synthetic b:LTkg;
+
+.field public final synthetic c:LTnd;
+
+.field public final synthetic t:LEP$p$c;
 
 
 # direct methods
-.method public synthetic constructor <init>(LYK1;I)V
+.method public constructor <init>(LFH5;LTkg;LTnd;LEP$p$c;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LyH5;->a:I
+    iput-object p1, p0, LyH5;->a:LFH5;
 
-    iput-object p1, p0, LyH5;->b:LYK1;
+    .line 2
+    .line 3
+    iput-object p2, p0, LyH5;->b:LTkg;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    .line 5
+    iput-object p3, p0, LyH5;->c:LTnd;
 
+    .line 6
+    .line 7
+    iput-object p4, p0, LyH5;->t:LEP$p$c;
+
+    .line 8
+    .line 9
+    const/4 p1, 0x0
+
+    .line 10
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1()Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 3
+.method public final d()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iget v0, p0, LyH5;->a:I
+    new-instance v0, LC5a;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0}, LC5a;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LyH5;->b:LYK1;
+    iget-object v1, p0, LyH5;->t:LEP$p$c;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LYK1;->a()Lio/reactivex/rxjava3/core/Maybe;
+    iget v2, v1, LEP$p$c;->d:I
 
     .line 9
     .line 10
-    .line 11
-    move-result-object v0
+    sget-object v3, LxH5;->a:[I
 
+    .line 11
     .line 12
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Maybe;->k()Lio/reactivex/rxjava3/core/Maybe;
+    invoke-static {v2}, LzHa;->L(I)I
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
+    move-result v2
 
     .line 16
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Maybe;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+    aget v2, v3, v2
 
     .line 17
     .line 18
+    const/4 v3, 0x1
+
     .line 19
-    move-result-object v0
+    if-ne v2, v3, :cond_0
 
     .line 20
-    return-object v0
-
     .line 21
-    :pswitch_0
-    new-instance v0, Lvz5;
+    const-string v2, "SEE_MORE"
 
     .line 22
     .line 23
-    iget-object v1, p0, LyH5;->b:LYK1;
+    iput-object v2, v0, LE5a;->r0:Ljava/lang/String;
 
     .line 24
     .line 25
-    const/4 v2, 0x7
+    sget-object v2, LK5a;->Z:LK5a;
 
     .line 26
-    invoke-direct {v0, v2, v1}, Lvz5;-><init>(ILjava/lang/Object;)V
-
     .line 27
+    iput-object v2, v0, LE5a;->u0:LK5a;
+
     .line 28
     .line 29
-    invoke-static {v0}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
+    sget-object v2, LD5a;->Y:LD5a;
 
     .line 30
     .line 31
-    .line 32
-    move-result-object v0
+    iput-object v2, v0, LC5a;->D0:LD5a;
 
+    .line 32
     .line 33
-    return-object v0
+    :cond_0
+    iget-object v2, p0, LyH5;->b:LTkg;
 
     .line 34
-    nop
-
     .line 35
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
-.end method
+    iget-object v3, p0, LyH5;->c:LTnd;
 
-.method public final observe()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
+    .line 36
+    .line 37
+    iget-object v4, p0, LyH5;->a:LFH5;
 
-    .line 1
-    iget v0, p0, LyH5;->a:I
+    .line 38
+    .line 39
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
+    .line 40
+    .line 41
+    .line 42
+    iget-object v4, v1, LEP$p$c;->f:LON;
 
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p0}, LXsk;->d(Lok0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+    .line 43
+    .line 44
+    iget-object v1, v1, LEP$p$c;->e:LcO;
 
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
+    .line 45
+    .line 46
+    invoke-static {v0, v2, v3, v4, v1}, LFH5;->b(LE5a;LTkg;LTnd;LON;LcO;)V
 
-    .line 10
+    .line 47
+    .line 48
+    .line 49
     return-object v0
-
-    .line 11
-    :pswitch_0
-    invoke-static {p0}, LXsk;->d(Lok0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
-
-    .line 15
-    return-object v0
-
-    .line 16
-    nop
-
-    .line 17
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

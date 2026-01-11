@@ -1,10 +1,10 @@
 .class public final Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'avatarId\':s,\'selfieId\':s?,\'userId\':s"
     typeReferences = {}

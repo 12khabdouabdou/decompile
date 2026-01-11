@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Supplier;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LUn1;
+.field public final synthetic b:LVn1;
 
 
 # direct methods
-.method public synthetic constructor <init>(LUn1;I)V
+.method public synthetic constructor <init>(LVn1;I)V
     .locals 0
 
     .line 1
     iput p2, p0, LTn1;->a:I
 
-    iput-object p1, p0, LTn1;->b:LUn1;
+    iput-object p1, p0, LTn1;->b:LVn1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,8 +28,8 @@
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 3
+.method public final accept(Ljava/lang/Object;)V
+    .locals 4
 
     .line 1
     iget v0, p0, LTn1;->a:I
@@ -41,140 +41,147 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LTn1;->b:LUn1;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    iget-object v0, v0, LUn1;->a:LUo4;
+    iget-object v0, p0, LTn1;->b:LVn1;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, LUo4;->get()Ljava/lang/Object;
+    iget-object v0, v0, LVn1;->a:LYK4;
 
     .line 11
     .line 12
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
+
     .line 13
+    .line 14
+    .line 15
     move-result-object v0
 
-    .line 14
-    check-cast v0, LBt1;
-
-    .line 15
     .line 16
-    iget-object v1, v0, LBt1;->a:LXZ5;
+    check-cast v0, LjX6;
 
     .line 17
     .line 18
-    invoke-virtual {v1}, LXZ5;->get()Ljava/lang/Object;
+    const/16 v1, 0x16
 
     .line 19
     .line 20
+    invoke-static {v1}, LAx6;->e(I)LtU6;
+
     .line 21
+    .line 22
+    .line 23
     move-result-object v1
 
-    .line 22
-    check-cast v1, LZeh;
-
-    .line 23
     .line 24
-    iget-object v0, v0, LBt1;->e:LWm0;
+    sget-object v2, LNn1;->Z:LNn1;
 
     .line 25
     .line 26
-    const-string v2, "getMyLensesSelfie"
+    const-string v3, "BloopsFriendCacheImpl"
 
     .line 27
     .line 28
-    invoke-virtual {v0, v2}, LWm0;->a(Ljava/lang/String;)LWm0;
+    invoke-static {v2, v2, v3}, LAx6;->d(LNn1;LNn1;Ljava/lang/String;)Lnp0;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v0
+    move-result-object v2
 
     .line 32
-    invoke-virtual {v1, v0}, LZeh;->c(LWm0;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;
+    const/4 v3, 0x0
 
     .line 33
+    invoke-interface {v0, v1, p1, v2, v3}, LjX6;->c(LtU6;Ljava/lang/Throwable;Lnp0;Lr6c;)V
+
     .line 34
     .line 35
-    move-result-object v0
-
     .line 36
-    sget-object v1, LR0;->s0:LR0;
+    return-void
 
     .line 37
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 38
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
-
     .line 39
-    .line 40
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+    iget-object v0, p0, LTn1;->b:LVn1;
 
+    .line 40
     .line 41
+    iget-object v0, v0, LVn1;->a:LYK4;
+
     .line 42
     .line 43
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeSwitchIfEmptySingle;
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
 
     .line 44
     .line 45
-    invoke-direct {v1, v0, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeSwitchIfEmptySingle;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/core/SingleSource;)V
-
     .line 46
+    move-result-object v0
+
     .line 47
+    check-cast v0, LjX6;
+
     .line 48
-    sget-object v0, Lxwk;->t0:Lxwk;
-
     .line 49
+    const/16 v1, 0x15
+
     .line 50
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
     .line 51
-    .line 52
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-static {v1}, LAx6;->e(I)LtU6;
 
+    .line 52
     .line 53
     .line 54
+    move-result-object v1
+
     .line 55
-    sget-object v0, LCzk;->t0:LCzk;
+    sget-object v2, LNn1;->Z:LNn1;
 
     .line 56
     .line 57
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    const-string v3, "BloopsFriendCacheImpl"
 
     .line 58
     .line 59
-    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-static {v2, v2, v3}, LAx6;->d(LNn1;LNn1;Ljava/lang/String;)Lnp0;
 
     .line 60
     .line 61
     .line 62
-    sget-object v0, LTzk;->t0:LTzk;
+    move-result-object v2
 
     .line 63
+    const/4 v3, 0x0
+
     .line 64
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-interface {v0, v1, p1, v2, v3}, LjX6;->c(LtU6;Ljava/lang/Throwable;Lnp0;Lr6c;)V
 
     .line 65
     .line 66
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 67
-    .line 68
-    .line 69
-    return-object v2
+    return-void
 
+    .line 68
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 69
     .line 70
-    :pswitch_0
-    iget-object v0, p0, LTn1;->b:LUn1;
+    iget-object v0, p0, LTn1;->b:LVn1;
 
     .line 71
     .line 72
-    iget-object v0, v0, LUn1;->c:LUo4;
+    iget-object v0, v0, LVn1;->a:LYK4;
 
     .line 73
     .line 74
-    invoke-virtual {v0}, LUo4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
 
     .line 75
     .line 76
@@ -182,155 +189,118 @@
     move-result-object v0
 
     .line 78
-    check-cast v0, Lyg1;
+    check-cast v0, LjX6;
 
     .line 79
     .line 80
-    const/4 v1, 0x0
+    const/16 v1, 0x14
 
     .line 81
-    invoke-virtual {v0, v1}, Lyg1;->a(Ljava/util/Set;)Lio/reactivex/rxjava3/core/Completable;
-
     .line 82
+    invoke-static {v1}, LAx6;->e(I)LtU6;
+
     .line 83
     .line 84
-    move-result-object v0
-
     .line 85
-    return-object v0
+    move-result-object v1
 
     .line 86
-    :pswitch_1
-    iget-object v0, p0, LTn1;->b:LUn1;
+    sget-object v2, LNn1;->Z:LNn1;
 
     .line 87
     .line 88
-    iget-object v0, v0, LUn1;->d:LUo4;
+    const-string v3, "BloopsFriendCacheImpl"
 
     .line 89
     .line 90
-    invoke-virtual {v0}, LUo4;->get()Ljava/lang/Object;
+    invoke-static {v2, v2, v3}, LAx6;->d(LNn1;LNn1;Ljava/lang/String;)Lnp0;
 
     .line 91
     .line 92
     .line 93
-    move-result-object v0
+    move-result-object v2
 
     .line 94
-    check-cast v0, Lwg1;
+    const/4 v3, 0x0
 
     .line 95
-    .line 96
-    sget-object v1, LMF;->c:LMF;
+    invoke-interface {v0, v1, p1, v2, v3}, LjX6;->c(LtU6;Ljava/lang/Throwable;Lnp0;Lr6c;)V
 
+    .line 96
     .line 97
     .line 98
-    invoke-static {v1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+    return-void
 
     .line 99
+    :pswitch_2
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 100
     .line 101
-    move-result-object v1
+    iget-object v0, p0, LTn1;->b:LVn1;
 
     .line 102
-    invoke-virtual {v0, v1}, Lwg1;->b(Ljava/util/Set;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapCompletableCompletable;
-
     .line 103
+    iget-object v0, v0, LVn1;->a:LYK4;
+
     .line 104
     .line 105
-    move-result-object v0
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
 
     .line 106
-    return-object v0
-
     .line 107
-    :pswitch_2
-    iget-object v0, p0, LTn1;->b:LUn1;
-
     .line 108
+    move-result-object v0
+
     .line 109
-    iget-object v0, v0, LUn1;->c:LUo4;
+    check-cast v0, LjX6;
 
     .line 110
     .line 111
-    invoke-virtual {v0}, LUo4;->get()Ljava/lang/Object;
+    const/16 v1, 0x17
 
     .line 112
     .line 113
+    invoke-static {v1}, LAx6;->e(I)LtU6;
+
     .line 114
-    move-result-object v0
-
     .line 115
-    check-cast v0, Lyg1;
-
     .line 116
+    move-result-object v1
+
     .line 117
-    sget-object v1, LMF;->c:LMF;
+    sget-object v2, LNn1;->Z:LNn1;
 
     .line 118
     .line 119
-    invoke-static {v1}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+    const-string v3, "BloopsFriendCacheImpl"
 
     .line 120
     .line 121
+    invoke-static {v2, v2, v3}, LAx6;->d(LNn1;LNn1;Ljava/lang/String;)Lnp0;
+
     .line 122
-    move-result-object v1
-
     .line 123
-    invoke-virtual {v0, v1}, Lyg1;->a(Ljava/util/Set;)Lio/reactivex/rxjava3/core/Completable;
-
     .line 124
+    move-result-object v2
+
     .line 125
+    const/4 v3, 0x0
+
     .line 126
-    move-result-object v0
+    invoke-interface {v0, v1, p1, v2, v3}, LjX6;->c(LtU6;Ljava/lang/Throwable;Lnp0;Lr6c;)V
 
     .line 127
-    return-object v0
-
     .line 128
-    :pswitch_3
-    iget-object v0, p0, LTn1;->b:LUn1;
-
     .line 129
+    return-void
+
     .line 130
-    iget-object v0, v0, LUn1;->a:LUo4;
+    nop
 
     .line 131
-    .line 132
-    invoke-virtual {v0}, LUo4;->get()Ljava/lang/Object;
-
-    .line 133
-    .line 134
-    .line 135
-    move-result-object v0
-
-    .line 136
-    check-cast v0, LBt1;
-
-    .line 137
-    .line 138
-    invoke-virtual {v0}, LBt1;->d()Lio/reactivex/rxjava3/core/Observable;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v0
-
-    .line 142
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Observable;->c0()Lio/reactivex/rxjava3/core/Single;
-
-    .line 143
-    .line 144
-    .line 145
-    move-result-object v0
-
-    .line 146
-    return-object v0
-
-    .line 147
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_3
         :pswitch_2
         :pswitch_1
         :pswitch_0

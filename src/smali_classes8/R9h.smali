@@ -2,152 +2,185 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field public final a:LcX2;
+.field public final synthetic a:I
+
+.field public final synthetic b:LJP9;
+
+.field public final synthetic c:LN0f;
 
 
 # direct methods
-.method public constructor <init>(LcX2;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;LN0f;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p3, p0, LR9h;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LR9h;->a:LcX2;
+    packed-switch p3, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    check-cast p1, LJP9;
+
+    .line 10
+    .line 11
+    iput-object p1, p0, LR9h;->b:LJP9;
+
+    .line 12
+    .line 13
+    iput-object p2, p0, LR9h;->c:LN0f;
+
+    .line 14
+    .line 15
     return-void
+
+    .line 16
+    :pswitch_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 17
+    .line 18
+    .line 19
+    check-cast p1, LJP9;
+
+    .line 20
+    .line 21
+    iput-object p1, p0, LR9h;->b:LJP9;
+
+    .line 22
+    .line 23
+    iput-object p2, p0, LR9h;->c:LN0f;
+
+    .line 24
+    .line 25
+    return-void
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final accept(Ljava/lang/Object;)V
+    .locals 4
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LR9h;->a:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LR9h;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    check-cast p1, Ljava/lang/Throwable;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     .line 9
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, LR9h;
+    move-result-wide v0
 
     .line 12
+    iget-object p1, p0, LR9h;->c:LN0f;
+
     .line 13
-    iget-object v1, p0, LR9h;->a:LcX2;
-
     .line 14
-    .line 15
-    iget-object p1, p1, LR9h;->a:LcX2;
+    iget-wide v2, p1, LN0f;->a:J
 
+    .line 15
     .line 16
+    sub-long/2addr v0, v2
+
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result-object p1
 
     .line 21
-    if-nez p1, :cond_2
+    iget-object v0, p0, LR9h;->b:LJP9;
 
     .line 22
     .line 23
-    return v2
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 24
-    :cond_2
-    return v0
-.end method
+    .line 25
+    .line 26
+    return-void
 
-.method public final hashCode()I
-    .locals 1
+    .line 27
+    :pswitch_0
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    .line 1
-    iget-object v0, p0, LR9h;->a:LcX2;
+    .line 28
+    .line 29
+    .line 30
+    move-result-wide v0
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LcX2;->hashCode()I
+    .line 31
+    iget-object p1, p0, LR9h;->c:LN0f;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 32
+    .line 33
+    iget-wide v2, p1, LN0f;->a:J
 
-    .line 7
-    return v0
-.end method
+    .line 34
+    .line 35
+    sub-long/2addr v0, v2
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    .line 36
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
 
-    .line 2
-    .line 3
-    const-string v1, "PairingValidation(result="
+    .line 40
+    iget-object v0, p0, LR9h;->b:LJP9;
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 41
+    .line 42
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LR9h;->a:LcX2;
+    .line 43
+    .line 44
+    .line 45
+    return-void
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 46
+    nop
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
+    .line 47
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

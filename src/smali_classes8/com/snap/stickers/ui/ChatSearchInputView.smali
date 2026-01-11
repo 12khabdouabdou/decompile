@@ -1,5 +1,5 @@
 .class public final Lcom/snap/stickers/ui/ChatSearchInputView;
-.super LgRg;
+.super Ljdh;
 .source "SourceFile"
 
 
@@ -24,7 +24,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x7f040486
+    const v0, 0x7f040510
 
     .line 3
     invoke-direct {p0, p1, p2, v0}, Lcom/snap/stickers/ui/ChatSearchInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -48,9 +48,9 @@
 
     if-nez p4, :cond_0
 
-    const v0, 0x7f0e031c
+    const v0, 0x7f0e0332
 
-    const v5, 0x7f0e031c
+    const v5, 0x7f0e0332
 
     :goto_0
     move-object v1, p0
@@ -66,20 +66,20 @@
     goto :goto_1
 
     :cond_0
-    const v0, 0x7f0e0319
+    const v0, 0x7f0e032f
 
-    const v5, 0x7f0e0319
+    const v5, 0x7f0e032f
 
     goto :goto_0
 
     .line 5
     :goto_1
-    invoke-direct/range {v1 .. v6}, LgRg;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IIZ)V
+    invoke-direct/range {v1 .. v6}, Ljdh;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IIZ)V
 
     .line 6
     iput-boolean v6, v1, Lcom/snap/stickers/ui/ChatSearchInputView;->y0:Z
 
-    const p1, 0x7f0b0a8e
+    const p1, 0x7f0b0b95
 
     .line 7
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -91,7 +91,7 @@
     iput-object p1, v1, Lcom/snap/stickers/ui/ChatSearchInputView;->z0:Landroid/widget/TextView;
 
     .line 8
-    sget-object p2, LBve;->a:[I
+    sget-object p2, LkNe;->a:[I
 
     invoke-virtual {v2, v3, p2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -110,10 +110,10 @@
     .line 10
     invoke-virtual {p1, p4, p3}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    const p3, 0x7f080b7c
+    const p3, 0x7f080c00
 
     .line 11
-    invoke-static {v2, p3}, LsX3;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {v2, p3}, LV14;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p3
 
@@ -122,10 +122,10 @@
     if-eqz p3, :cond_1
 
     .line 12
-    iget v0, v1, LgRg;->e0:I
+    iget v0, v1, Ljdh;->e0:I
 
     .line 13
-    invoke-static {p3, v0}, LrUi;->Y(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/drawable/Drawable;
+    invoke-static {p3, v0}, LSpk;->t0(Landroid/graphics/drawable/Drawable;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p3
 
@@ -151,7 +151,7 @@
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 16
-    iget-boolean p2, v1, LgRg;->w0:Z
+    iget-boolean p2, v1, Ljdh;->w0:Z
 
     if-nez p2, :cond_2
 
@@ -160,9 +160,9 @@
 
     move-result-object p2
 
-    const p3, 0x7f040662
+    const p3, 0x7f04071f
 
-    invoke-static {p2, p3}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {p2, p3}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     move-result p2
 
@@ -184,7 +184,7 @@
 
     const/4 v0, 0x0
 
-    const v1, 0x7f040486
+    const v1, 0x7f040510
 
     .line 2
     invoke-direct {p0, p1, v0, v1, p2}, Lcom/snap/stickers/ui/ChatSearchInputView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IZ)V
@@ -214,7 +214,7 @@
     const/4 p1, 0x0
 
     .line 9
-    invoke-virtual {p0, p1}, LgRg;->n(Z)V
+    invoke-virtual {p0, p1}, Ljdh;->n(Z)V
 
     .line 10
     .line 11

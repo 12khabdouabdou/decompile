@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LiY0;
+    proxyClass = LQ11;
     schema = "\'getLocalDateFromLocalizedValues\':f?|m|(d, d, d): s,\'onSaveBirthdayToSession\':f?|m|(d, d, d)"
     typeReferences = {}
 .end annotation
@@ -17,12 +17,12 @@
 
 # virtual methods
 .method public abstract getLocalDateFromLocalizedValues(DDD)Ljava/lang/String;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onSaveBirthdayToSession(DDD)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

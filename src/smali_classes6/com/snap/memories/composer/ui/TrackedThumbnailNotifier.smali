@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LpOi;
+    proxyClass = LPdj;
     schema = "\'observe\':f|m|(): g<c>:\'[0]\'<s>,\'notify\':f|m|(r?:\'[1]\', s?)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,

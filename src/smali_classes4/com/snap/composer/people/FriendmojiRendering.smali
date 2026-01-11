@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LKU7;
+    proxyClass = LO08;
     schema = "\'renderForFriend\':f|m|(r:\'[0]\'): s,\'renderForGroup\':f|m|(r:\'[1]\'): s,\'renderForFriendNoRequest\':f?|m|(s, d, a?<r:\'[2]\'>, d@?): s,\'renderForGroupNoRequest\':f?|m|(s, d@?): s"
     typeReferences = {
         Lcom/snap/composer/people/FriendmojiFriendRenderRequest;,
         Lcom/snap/composer/people/FriendmojiGroupRenderRequest;,
-        LsU7;
+        Lx08;
     }
 .end annotation
 
@@ -27,21 +27,21 @@
 .end method
 
 .method public abstract renderForFriendNoRequest(Ljava/lang/String;DLjava/util/List;Ljava/lang/Double;)Ljava/lang/String;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "D",
             "Ljava/util/List<",
-            "LsU7;",
+            "Lx08;",
             ">;",
             "Ljava/lang/Double;",
             ")",
             "Ljava/lang/String;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -49,6 +49,6 @@
 .end method
 
 .method public abstract renderForGroupNoRequest(Ljava/lang/String;Ljava/lang/Double;)Ljava/lang/String;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

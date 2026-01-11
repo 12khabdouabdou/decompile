@@ -1,42 +1,194 @@
-.class public abstract Lrs;
-.super LHC;
+.class public final Lrs;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic a:I
 
-.field public final b:Z
+.field public final synthetic b:LEt4;
 
 
 # direct methods
-.method public constructor <init>(IZ)V
+.method public synthetic constructor <init>(LEt4;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lrs;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, Lrs;->a:I
+    iput-object p1, p0, Lrs;->b:LEt4;
 
-    .line 5
-    .line 6
-    iput-boolean p2, p0, Lrs;->b:Z
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a()Ljava/lang/String;
-.end method
+.method public final d()Ljava/lang/Object;
+    .locals 1
 
-.method public abstract b()I
-.end method
+    .line 1
+    iget v0, p0, Lrs;->a:I
 
-.method public abstract c()J
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lrs;->b:LEt4;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, LEt4;->get()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    check-cast v0, LFo5;
+
+    .line 13
+    .line 14
+    return-object v0
+
+    .line 15
+    :pswitch_0
+    iget-object v0, p0, Lrs;->b:LEt4;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0}, LEt4;->get()Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    check-cast v0, LFo5;
+
+    .line 22
+    .line 23
+    return-object v0
+
+    .line 24
+    :pswitch_1
+    iget-object v0, p0, Lrs;->b:LEt4;
+
+    .line 25
+    .line 26
+    invoke-virtual {v0}, LEt4;->get()Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    check-cast v0, LFo5;
+
+    .line 31
+    .line 32
+    return-object v0
+
+    .line 33
+    :pswitch_2
+    iget-object v0, p0, Lrs;->b:LEt4;
+
+    .line 34
+    .line 35
+    invoke-virtual {v0}, LEt4;->get()Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v0
+
+    .line 39
+    check-cast v0, LDo5;
+
+    .line 40
+    .line 41
+    return-object v0
+
+    .line 42
+    :pswitch_3
+    iget-object v0, p0, Lrs;->b:LEt4;
+
+    .line 43
+    .line 44
+    invoke-virtual {v0}, LEt4;->get()Ljava/lang/Object;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    check-cast v0, LFo5;
+
+    .line 49
+    .line 50
+    return-object v0
+
+    .line 51
+    :pswitch_4
+    iget-object v0, p0, Lrs;->b:LEt4;
+
+    .line 52
+    .line 53
+    invoke-virtual {v0}, LEt4;->get()Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    check-cast v0, LFo5;
+
+    .line 58
+    .line 59
+    return-object v0
+
+    .line 60
+    :pswitch_5
+    iget-object v0, p0, Lrs;->b:LEt4;
+
+    .line 61
+    .line 62
+    invoke-virtual {v0}, LEt4;->get()Ljava/lang/Object;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v0
+
+    .line 66
+    check-cast v0, LcH8;
+
+    .line 67
+    .line 68
+    return-object v0
+
+    .line 69
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

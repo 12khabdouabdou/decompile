@@ -1,5 +1,5 @@
 .class public final Lcom/snap/core/model/FriendMessageRecipient;
-.super LPOb;
+.super Lj3c;
 .source "SourceFile"
 
 # interfaces
@@ -89,7 +89,7 @@
 
     iget-object p1, p1, Lcom/snap/core/model/FriendMessageRecipient;->conversationId:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -161,7 +161,7 @@
     const/4 v3, 0x0
 
     .line 11
-    invoke-static {v0, v1, v3, v2}, LR4i;->M1(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    invoke-static {v0, v1, v3, v2}, Lkti;->T0(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     .line 12
     .line 13
@@ -237,7 +237,7 @@
 
     .line 46
     .line 47
-    invoke-static {v2, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 48
     .line 49
@@ -285,7 +285,7 @@
 
     .line 69
     .line 70
-    invoke-static {v2, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 71
     .line 72
@@ -333,7 +333,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1, v0, v2}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0, v2}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 8
     .line 9

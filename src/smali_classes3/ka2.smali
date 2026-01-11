@@ -1,59 +1,71 @@
 .class public final Lka2;
-.super LrE9;
+.super LBM0;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lna2;
+.field public final synthetic j:I
 
 
 # direct methods
-.method public constructor <init>(Lna2;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lka2;->a:I
+.method public synthetic constructor <init>(Landroid/content/Context;Lpzd;Li3k;ILandroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;LcH8;I)V
+    .locals 0
 
     .line 1
-    iput-object p1, p0, Lka2;->b:Lna2;
+    iput p9, p0, Lka2;->j:I
 
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct/range {p0 .. p8}, LBM0;-><init>(Landroid/content/Context;Lpzd;Li3k;ILandroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;LcH8;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lna2;Ljava/lang/String;)V
-    .locals 0
+.method public constructor <init>(Lq92;LcH8;Lpzd;Landroid/content/Context;)V
+    .locals 10
 
-    const/4 p2, 0x0
+    const/4 v0, 0x0
 
-    iput p2, p0, Lka2;->a:I
+    iput v0, p0, Lka2;->j:I
 
     .line 2
-    iput-object p1, p0, Lka2;->b:Lna2;
+    new-instance v4, LHMf;
 
-    const/4 p1, 0x1
+    .line 3
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 4
+    sget-object v6, Landroid/provider/MediaStore$Images$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+
+    .line 5
+    sget-object v7, LYD1;->b:[Ljava/lang/String;
+
+    .line 6
+    invoke-virtual {p1}, Lq92;->a()Ljava/lang/String;
+
+    move-result-object v8
+
+    const/4 v5, 0x1
+
+    move-object v1, p0
+
+    move-object v9, p2
+
+    move-object v3, p3
+
+    move-object v2, p4
+
+    .line 7
+    invoke-direct/range {v1 .. v9}, LBM0;-><init>(Landroid/content/Context;Lpzd;Li3k;ILandroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;LcH8;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Landroid/database/Cursor;)Lk92;
     .locals 1
 
     .line 1
-    iget v0, p0, Lka2;->a:I
+    iget v0, p0, Lka2;->j:I
 
     .line 2
     .line 3
@@ -62,56 +74,50 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, Lja2;
+    new-instance v0, LMc2;
 
     .line 7
     .line 8
-    new-instance p1, Lda2;
+    invoke-direct {v0, p1}, LMc2;-><init>(Landroid/database/Cursor;)V
 
     .line 9
     .line 10
-    invoke-direct {p1}, Lda2;-><init>()V
-
     .line 11
+    return-object v0
+
     .line 12
+    :pswitch_0
+    new-instance v0, Lcb2;
+
     .line 13
-    iget-object v0, p0, Lka2;->b:Lna2;
-
     .line 14
-    .line 15
-    iput-object p1, v0, Lna2;->t:Lda2;
+    invoke-direct {v0, p1}, Lcb2;-><init>(Landroid/database/Cursor;)V
 
+    .line 15
     .line 16
     .line 17
-    sget-object p1, Li7j;->a:Li7j;
+    return-object v0
 
     .line 18
-    .line 19
-    return-object p1
+    :pswitch_1
+    new-instance v0, Lga2;
 
+    .line 19
     .line 20
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
+    invoke-direct {v0, p1}, Lga2;-><init>(Landroid/database/Cursor;)V
 
     .line 21
     .line 22
-    iget-object p1, p0, Lka2;->b:Lna2;
-
     .line 23
+    return-object v0
+
     .line 24
-    iget-object p1, p1, Lna2;->b:Lrn0;
+    nop
 
     .line 25
-    .line 26
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 27
-    .line 28
-    return-object p1
-
-    .line 29
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

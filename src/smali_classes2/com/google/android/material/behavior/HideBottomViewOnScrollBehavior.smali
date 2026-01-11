@@ -1,5 +1,5 @@
 .class public Lcom/google/android/material/behavior/HideBottomViewOnScrollBehavior;
-.super Lz34;
+.super Lj84;
 .source "SourceFile"
 
 
@@ -9,7 +9,7 @@
         "<V:",
         "Landroid/view/View;",
         ">",
-        "Lz34;"
+        "Lj84;"
     }
 .end annotation
 
@@ -154,7 +154,7 @@
 
     .line 22
     .line 23
-    sget-object p3, LuT;->c:Lya7;
+    sget-object p3, LCV;->c:Lof7;
 
     .line 24
     .line 25
@@ -197,7 +197,7 @@
     move-result-object p1
 
     .line 44
-    new-instance p2, Lc4;
+    new-instance p2, Ly4;
 
     .line 45
     .line 46
@@ -205,7 +205,7 @@
 
     .line 47
     .line 48
-    invoke-direct {p2, p3, p0}, Lc4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, p3, p0}, Ly4;-><init>(ILjava/lang/Object;)V
 
     .line 49
     .line 50
@@ -268,7 +268,7 @@
 
     .line 77
     .line 78
-    sget-object p1, LuT;->d:Lya7;
+    sget-object p1, LCV;->d:Lof7;
 
     .line 79
     .line 80
@@ -314,7 +314,7 @@
     move-result-object p1
 
     .line 100
-    new-instance p2, Lc4;
+    new-instance p2, Ly4;
 
     .line 101
     .line 102
@@ -322,7 +322,7 @@
 
     .line 103
     .line 104
-    invoke-direct {p2, p3, p0}, Lc4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, p3, p0}, Ly4;-><init>(ILjava/lang/Object;)V
 
     .line 105
     .line 106

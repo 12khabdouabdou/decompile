@@ -251,16 +251,16 @@
     .line 85
     .line 86
     .line 87
-    new-instance p0, LAG8;
+    new-instance p0, LCN8;
 
     .line 88
     .line 89
-    invoke-direct {p0}, LAG8;-><init>()V
+    invoke-direct {p0}, LCN8;-><init>()V
 
     .line 90
     .line 91
     .line 92
-    invoke-virtual {p0, v0}, LAG8;->i(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, LCN8;->i(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 93
     .line 94

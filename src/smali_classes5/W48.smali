@@ -1,8 +1,40 @@
-.class public abstract LW48;
-.super Ljava/lang/Object;
+.class public final LW48;
+.super Lsw;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a()LKjj;
+# instance fields
+.field public final X:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 3
+
+    .line 1
+    sget-object v0, Lt08;->t0:Lt08;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    int-to-long v1, v1
+
+    .line 8
+    invoke-direct {p0, v0, v1, v2}, Lsw;-><init>(Ltw;J)V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, LW48;->X:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    return-void
 .end method

@@ -1,18 +1,15 @@
-.class public final Ly03;
-.super Ljava/lang/Object;
+.class public abstract Ly03;
+.super LSX3;
 .source "SourceFile"
-
-# interfaces
-.implements LMe;
 
 
 # instance fields
-.field public final synthetic a:LH03;
+.field private final a:LRS9;
 
 
 # direct methods
-.method public constructor <init>(LH03;)V
-    .locals 0
+.method public constructor <init>(LX1f;Ldsk;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -20,125 +17,78 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ly03;->a:LH03;
+    new-instance v0, LEK2;
 
     .line 5
     .line 6
+    const/4 v1, 0x7
+
+    .line 7
+    invoke-direct {v0, p2, v1, p1}, LEK2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    new-instance p1, LREi;
+
+    .line 11
+    .line 12
+    invoke-direct {p1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iput-object p1, p0, Ly03;->a:LRS9;
+
+    .line 16
+    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(IJZLandroid/os/Bundle;Landroid/content/Intent;)V
-    .locals 0
+.method public c(Landroid/net/Uri;LCPf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/net/Uri;",
+            "LCPf;",
+            "Z",
+            "Ljava/util/Set<",
+            "+",
+            "LpM1;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LgY3;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    return-void
-.end method
-
-.method public final b(Z)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final c(IJZ)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final d(JZ)V
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Ly03;->a:LH03;
+    iget-object v0, p0, Ly03;->a:LRS9;
 
     .line 2
     .line 3
-    iget p1, p1, LH03;->q:I
+    invoke-interface {v0}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
-    sget-object p2, Lx03;->a:[I
-
     .line 6
+    move-result-object v0
+
     .line 7
-    invoke-static {p1}, Llva;->L(I)I
+    check-cast v0, Lcsk;
 
     .line 8
     .line 9
+    invoke-virtual {v0, p1, p2, p3, p4}, Lcsk;->d(Landroid/net/Uri;LCPf;ZLjava/util/Set;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
     .line 10
-    move-result p1
-
     .line 11
-    aget p1, p2, p1
-
     .line 12
+    move-result-object p1
+
     .line 13
-    const/4 p2, 0x1
-
-    .line 14
-    if-ne p1, p2, :cond_0
-
-    .line 15
-    .line 16
-    iget-object p1, p0, Ly03;->a:LH03;
-
-    .line 17
-    .line 18
-    const/4 p2, 0x2
-
-    .line 19
-    iput p2, p1, LH03;->q:I
-
-    .line 20
-    .line 21
-    :cond_0
-    iget-object p1, p0, Ly03;->a:LH03;
-
-    .line 22
-    .line 23
-    iget-object p1, p1, LH03;->o:Lrn0;
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public final e(Landroid/app/Activity;IZ)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final f(IJZZZ)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final g(IJZLandroid/content/Intent;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final h(JZZ)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final i(IJZ)V
-    .locals 0
-
-    .line 1
-    return-void
+    return-object p1
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/chat_media_view/QuotedChatMediaContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'mediasObservable\':g?<c>:\'[0]\'<a<r:\'[1]\'>>,\'onTap\':f?(d@, r?:\'[2]\'),\'snapPlayerViewFactory\':r?:\'[3]\',\'videoProvider\':r?:\'[4]\',\'messageVisibilityObservable\':g?<c>:\'[0]\'<b@>,\'displayStateLogger\':r?:\'[5]\'"
     typeReferences = {
@@ -209,7 +209,7 @@
     return-void
 .end method
 
-.method public final d(LRQ6;)V
+.method public final d(LHU6;)V
     .locals 0
 
     .line 1

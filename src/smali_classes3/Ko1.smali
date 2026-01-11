@@ -2,19 +2,16 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Supplier;
+
 
 # instance fields
-.field public final a:LXF4;
-
-.field public final b:LXF4;
-
-.field public final c:LBre;
-
-.field public final d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public final synthetic a:LOo1;
 
 
 # direct methods
-.method public constructor <init>(LXF4;LXF4;Lnwf;)V
+.method public constructor <init>(LOo1;Lap1;)V
     .locals 0
 
     .line 1
@@ -23,55 +20,70 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LKo1;->a:LXF4;
+    iput-object p1, p0, LKo1;->a:LOo1;
 
     .line 5
     .line 6
-    iput-object p2, p0, LKo1;->b:LXF4;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LKo1;->a:LOo1;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, LOo1;->v0:LJp0;
+
+    .line 4
+    .line 5
+    iget-object v0, v0, LOo1;->g0:Lnv4;
+
+    .line 6
     .line 7
-    .line 8
-    sget-object p1, Lkk1;->Z:Lkk1;
+    invoke-virtual {v0}, Lnv4;->get()Ljava/lang/Object;
 
+    .line 8
     .line 9
     .line 10
-    check-cast p3, LIP5;
+    move-result-object v0
 
     .line 11
-    .line 12
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v0, Lkm1;
 
+    .line 12
     .line 13
+    iget-object v0, v0, Lkm1;->a:LYK4;
+
     .line 14
     .line 15
-    const-string p2, "BloopsOnboardingServiceImpl"
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
 
     .line 16
     .line 17
-    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
-
     .line 18
-    .line 19
-    .line 20
-    move-result-object p1
+    move-result-object v0
 
+    .line 19
+    check-cast v0, LOF3;
+
+    .line 20
     .line 21
-    iput-object p1, p0, LKo1;->c:LBre;
+    sget-object v1, Lex1;->u2:Lex1;
 
     .line 22
     .line 23
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-interface {v0, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 24
     .line 25
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
     .line 26
-    .line 27
-    .line 28
-    iput-object p1, p0, LKo1;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    move-result-object v0
 
-    .line 29
-    .line 30
-    return-void
+    .line 27
+    return-object v0
 .end method

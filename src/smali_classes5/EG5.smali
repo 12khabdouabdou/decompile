@@ -1,300 +1,425 @@
 .class public final LEG5;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Ldia;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Lkd7;
-
-.field public final b:LA73;
-
-.field public final c:J
-
-.field public final d:Ljava/util/concurrent/TimeUnit;
-
-.field public final e:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+.field public final synthetic a:LFG5;
 
 
 # direct methods
-.method public constructor <init>(Lkd7;LA73;)V
-    .locals 1
+.method public constructor <init>(LFG5;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
+    iput-object p1, p0, LEG5;->a:LFG5;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p1, 0x0
 
     .line 4
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     .line 5
     .line 6
-    iput-object p1, p0, LEG5;->a:Lkd7;
-
     .line 7
-    .line 8
-    iput-object p2, p0, LEG5;->b:LA73;
-
-    .line 9
-    .line 10
-    const-wide/16 p1, 0xb4
-
-    .line 11
-    .line 12
-    iput-wide p1, p0, LEG5;->c:J
-
-    .line 13
-    .line 14
-    iput-object v0, p0, LEG5;->d:Ljava/util/concurrent/TimeUnit;
-
-    .line 15
-    .line 16
-    new-instance p1, LrB5;
-
-    .line 17
-    .line 18
-    const/16 p2, 0xa
-
-    .line 19
-    .line 20
-    invoke-direct {p1, p2, p0}, LrB5;-><init>(ILjava/lang/Object;)V
-
-    .line 21
-    .line 22
-    .line 23
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
-
-    .line 24
-    .line 25
-    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 26
-    .line 27
-    .line 28
-    sget-object p1, LjL2;->x0:LjL2;
-
-    .line 29
-    .line 30
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 31
-    .line 32
-    invoke-direct {v0, p2, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 33
-    .line 34
-    .line 35
-    sget-object p1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
-
-    .line 36
-    .line 37
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object p1
-
-    .line 41
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object p1
-
-    .line 45
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object p1
-
-    .line 49
-    iput-object p1, p0, LEG5;->e:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 50
-    .line 51
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
+.method public final d()Ljava/lang/Object;
+    .locals 10
 
     .line 1
-    iget-object v0, p0, LEG5;->e:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+    const-string v0, "Component type mismatch. Expected ["
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final b(Lo09;)Lio/reactivex/rxjava3/core/Single;
-    .locals 6
-
-    .line 1
-    new-instance v0, LHSe;
-
-    .line 2
-    .line 3
-    sget-object v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    const-string v1, "No factory defined to create component for: "
 
     .line 4
     .line 5
-    iget-object v2, p0, LEG5;->b:LA73;
+    const-string v2, "No factory found for component: "
 
     .line 6
     .line 7
-    invoke-interface {v2, v1}, LA73;->a(Ljava/util/concurrent/TimeUnit;)J
+    iget-object v3, p0, LEG5;->a:LFG5;
 
     .line 8
     .line 9
-    .line 10
-    move-result-wide v1
+    iget-object v4, v3, LFG5;->X:Lf2a;
 
+    .line 10
     .line 11
-    invoke-direct {v0, p1, v1, v2}, LHSe;-><init>(Lo09;J)V
+    iget-object v5, v3, LFG5;->f0:LO88;
 
     .line 12
     .line 13
-    .line 14
-    iget-object p1, p0, LEG5;->a:Lkd7;
+    invoke-interface {v4}, Lf2a;->a()Z
 
+    .line 14
     .line 15
     .line 16
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v4
 
     .line 17
+    const/4 v6, 0x0
+
     .line 18
+    if-nez v4, :cond_0
+
     .line 19
-    new-instance v1, LA97;
-
     .line 20
+    invoke-virtual {v3}, LFG5;->dispose()V
+
     .line 21
-    const/4 v2, 0x2
-
     .line 22
-    invoke-direct {v1, p1, v2, v0}, LA97;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 23
+    return-object v6
+
     .line 24
+    :cond_0
+    :try_start_0
+    sget-object v4, LX1a$c;->c:LX1a$c;
+
     .line 25
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
-
     .line 26
-    .line 27
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
+    invoke-interface {v5, v4}, LO88;->a1(LU88;)V
 
+    .line 27
     .line 28
     .line 29
-    .line 30
-    invoke-virtual {v0}, LHSe;->toString()Ljava/lang/String;
+    iget-object v4, v3, LFG5;->k0:Ljava/util/LinkedHashMap;
 
+    .line 30
     .line 31
+    const-class v7, Lcom/looksery/sdk/LSCoreManagerWrapper;
+
     .line 32
     .line 33
-    sget-object v1, LQFa;->a:LQFa;
+    invoke-static {v7}, Lc1f;->a(Ljava/lang/Class;)Lm43;
 
     .line 34
     .line 35
-    iget-object v1, p1, Lkd7;->c:LXfi;
-
     .line 36
+    move-result-object v7
+
     .line 37
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v7}, Lm43;->c()Ljava/lang/String;
 
     .line 38
     .line 39
     .line 40
-    move-result-object v1
+    sget-object v8, LOdh;->a:LNdh;
 
     .line 41
-    check-cast v1, Lgd7;
-
     .line 42
+    const-string v9, "<*>"
+
     .line 43
-    iget-object v3, p1, Lkd7;->a:Lw5a;
-
     .line 44
-    .line 45
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v8, v9}, LNdh;->e(Ljava/lang/String;)I
 
+    .line 45
     .line 46
     .line 47
+    move-result v9
+    :try_end_0
+    .catch Lcom/looksery/sdk/exception/LookseryConstructorException; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 48
-    new-instance v4, LWm0;
+    :try_start_1
+    invoke-virtual {v4, v7}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 49
     .line 50
-    const-string v5, "FeatureDbRemovedLensStore"
-
     .line 51
+    move-result-object v4
+
     .line 52
-    invoke-direct {v4, v3, v5}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    check-cast v4, Luc7;
 
     .line 53
     .line 54
-    .line 55
-    invoke-virtual {v1, v4}, Lgd7;->n(LWm0;)Lswi;
+    if-eqz v4, :cond_3
 
+    .line 55
     .line 56
+    iget-object v2, v4, Luc7;->b:Lkotlin/jvm/functions/Function1;
+
     .line 57
     .line 58
-    move-result-object v1
+    invoke-interface {v2, v3}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 59
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
     .line 60
     .line 61
-    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    move-result-object v2
 
     .line 62
+    if-eqz v2, :cond_2
+
     .line 63
     .line 64
-    iget-object p1, p1, Lkd7;->b:LBre;
+    instance-of v1, v2, Lcom/looksery/sdk/LSCoreManagerWrapper;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 65
     .line 66
-    invoke-virtual {p1}, LBre;->d()LF06;
+    if-eqz v1, :cond_1
 
     .line 67
     .line 68
+    :try_start_2
+    invoke-virtual {v8, v9}, LNdh;->h(I)V
+
     .line 69
-    move-result-object p1
-
     .line 70
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
-
     .line 71
+    move-object v0, v2
+
     .line 72
-    invoke-direct {v1, v3, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    check-cast v0, Lcom/looksery/sdk/LSCoreManagerWrapper;
 
     .line 73
     .line 74
-    .line 75
-    invoke-virtual {v0}, LHSe;->toString()Ljava/lang/String;
+    sget-object v0, LX1a$b;->c:LX1a$b;
 
+    .line 75
     .line 76
+    invoke-interface {v5, v0}, LO88;->a1(LU88;)V
+
     .line 77
     .line 78
-    sget-object p1, Lbia;->b:Lbia;
-
     .line 79
-    .line 80
-    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/core/Completable;->B(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
+    check-cast v2, Lcom/looksery/sdk/LSCoreManagerWrapper;
+    :try_end_2
+    .catch Lcom/looksery/sdk/exception/LookseryConstructorException; {:try_start_2 .. :try_end_2} :catch_0
 
+    .line 80
     .line 81
+    return-object v2
+
     .line 82
+    :catch_0
+    move-exception v0
+
     .line 83
-    move-result-object p1
+    goto :goto_1
 
     .line 84
-    return-object p1
+    :cond_1
+    :try_start_3
+    new-instance v1, Ljava/lang/IllegalArgumentException;
+
+    .line 85
+    .line 86
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-object v2
+
+    .line 90
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 91
+    .line 92
+    invoke-direct {v4, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    .line 98
+    const-string v0, "] but was ["
+
+    .line 99
+    .line 100
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 101
+    .line 102
+    .line 103
+    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 104
+    .line 105
+    .line 106
+    const-string v0, "]"
+
+    .line 107
+    .line 108
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 109
+    .line 110
+    .line 111
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v0
+
+    .line 115
+    invoke-direct {v1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 116
+    .line 117
+    .line 118
+    throw v1
+
+    .line 119
+    :catchall_0
+    move-exception v0
+
+    .line 120
+    goto :goto_0
+
+    .line 121
+    :cond_2
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 122
+    .line 123
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 124
+    .line 125
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 126
+    .line 127
+    .line 128
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 129
+    .line 130
+    .line 131
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 132
+    .line 133
+    .line 134
+    move-result-object v1
+
+    .line 135
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 136
+    .line 137
+    .line 138
+    throw v0
+
+    .line 139
+    :cond_3
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 140
+    .line 141
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 142
+    .line 143
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 144
+    .line 145
+    .line 146
+    invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 147
+    .line 148
+    .line 149
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object v1
+
+    .line 153
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 154
+    .line 155
+    .line 156
+    throw v0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 157
+    :goto_0
+    :try_start_4
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 158
+    .line 159
+    if-eqz v1, :cond_4
+
+    .line 160
+    .line 161
+    invoke-virtual {v1, v9}, LtGi;->o(I)V
+
+    .line 162
+    .line 163
+    .line 164
+    :cond_4
+    throw v0
+    :try_end_4
+    .catch Lcom/looksery/sdk/exception/LookseryConstructorException; {:try_start_4 .. :try_end_4} :catch_0
+
+    .line 165
+    :goto_1
+    invoke-virtual {v3}, LFG5;->dispose()V
+
+    .line 166
+    .line 167
+    .line 168
+    invoke-static {v0}, LqWk;->f(Lcom/looksery/sdk/exception/LookserySdkException;)LYaa;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v0
+
+    .line 172
+    new-instance v1, LTaa;
+
+    .line 173
+    .line 174
+    iget-object v2, v0, LYaa;->a:Ljava/lang/Exception;
+
+    .line 175
+    .line 176
+    iget-object v0, v0, LYaa;->b:Lu3a;
+
+    .line 177
+    .line 178
+    invoke-direct {v1, v2, v0}, LYaa;-><init>(Ljava/lang/Exception;Lu3a;)V
+
+    .line 179
+    .line 180
+    .line 181
+    iget-object v0, v3, LFG5;->a:LIm0;
+
+    .line 182
+    .line 183
+    invoke-interface {v0, v1}, LGBc;->a(LYaa;)V
+
+    .line 184
+    .line 185
+    .line 186
+    return-object v6
 .end method

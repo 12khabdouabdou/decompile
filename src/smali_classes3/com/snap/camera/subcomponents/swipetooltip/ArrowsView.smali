@@ -16,7 +16,7 @@
 
 .field public g0:J
 
-.field public final h0:LCEh;
+.field public final h0:LQ2i;
 
 .field public final t:I
 
@@ -26,16 +26,16 @@
     .locals 1
 
     .line 17
-    invoke-static {}, LE73;->a()LOze;
+    invoke-static {}, LV93;->a()LFRe;
 
     move-result-object v0
 
-    invoke-direct {p0, p1, v0}, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;-><init>(Landroid/content/Context;LB73;)V
+    invoke-direct {p0, p1, v0}, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;-><init>(Landroid/content/Context;LR93;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;LB73;)V
+.method public constructor <init>(Landroid/content/Context;LR93;)V
     .locals 1
 
     .line 1
@@ -46,7 +46,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f080c39
+    const v0, 0x7f080cc0
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -92,11 +92,11 @@
     iput p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->f0:I
 
     .line 8
-    new-instance p1, LCEh;
+    new-instance p1, LQ2i;
 
-    invoke-direct {p1, p2}, LCEh;-><init>(LB73;)V
+    invoke-direct {p1, p2}, LQ2i;-><init>(LR93;)V
 
-    iput-object p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LCEh;
+    iput-object p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LQ2i;
 
     return-void
 .end method
@@ -105,16 +105,16 @@
     .locals 1
 
     .line 18
-    invoke-static {}, LE73;->a()LOze;
+    invoke-static {}, LV93;->a()LFRe;
 
     move-result-object v0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;LB73;)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;LR93;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;LB73;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;LR93;)V
     .locals 0
 
     .line 9
@@ -125,7 +125,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f080c39
+    const p2, 0x7f080cc0
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -171,11 +171,11 @@
     iput p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->f0:I
 
     .line 16
-    new-instance p1, LCEh;
+    new-instance p1, LQ2i;
 
-    invoke-direct {p1, p3}, LCEh;-><init>(LB73;)V
+    invoke-direct {p1, p3}, LQ2i;-><init>(LR93;)V
 
-    iput-object p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LCEh;
+    iput-object p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LQ2i;
 
     return-void
 .end method
@@ -317,11 +317,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LCEh;
+    iget-object v0, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LQ2i;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LCEh;->a()J
+    invoke-virtual {v0}, LQ2i;->a()J
 
     .line 7
     .line 8
@@ -483,11 +483,11 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LCEh;
+    iget-object p1, p0, Lcom/snap/camera/subcomponents/swipetooltip/ArrowsView;->h0:LQ2i;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LCEh;->b()V
+    invoke-virtual {p1}, LQ2i;->b()V
 
     .line 4
     .line 5

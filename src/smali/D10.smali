@@ -1,270 +1,178 @@
-.class public final enum LD10;
-.super Ljava/lang/Enum;
+.class public final LD10;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LD10;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum X:LD10;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "COLD_START"
-    .end annotation
-.end field
-
-.field public static final enum Y:LD10;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "FOREGROUND_NOT_TOP"
-    .end annotation
-.end field
-
-.field public static final synthetic Z:[LD10;
-
-.field public static final enum b:LD10;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "KILL"
-    .end annotation
-.end field
-
-.field public static final enum c:LD10;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "IN_BACKGROUND"
-    .end annotation
-.end field
-
-.field public static final enum t:LD10;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "ACTIVE_FOREGROUND"
-    .end annotation
-.end field
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic a:I
+
+.field public final synthetic b:LE10;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
-
-    .line 1
-    new-instance v0, LD10;
-
-    .line 2
-    .line 3
-    const-string v1, "KILL"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, LD10;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, LD10;->b:LD10;
-
-    .line 10
-    .line 11
-    new-instance v1, LD10;
-
-    .line 12
-    .line 13
-    const-string v3, "IN_BACKGROUND"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, LD10;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, LD10;->c:LD10;
-
-    .line 20
-    .line 21
-    new-instance v3, LD10;
-
-    .line 22
-    .line 23
-    const-string v5, "ACTIVE_FOREGROUND"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, LD10;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, LD10;->t:LD10;
-
-    .line 30
-    .line 31
-    new-instance v5, LD10;
-
-    .line 32
-    .line 33
-    const-string v7, "COLD_START"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8, v8}, LD10;-><init>(Ljava/lang/String;II)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, LD10;->X:LD10;
-
-    .line 40
-    .line 41
-    new-instance v7, LD10;
-
-    .line 42
-    .line 43
-    const-string v9, "FOREGROUND_NOT_TOP"
-
-    .line 44
-    .line 45
-    const/4 v10, 0x4
-
-    .line 46
-    invoke-direct {v7, v9, v10, v10}, LD10;-><init>(Ljava/lang/String;II)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v7, LD10;->Y:LD10;
-
-    .line 50
-    .line 51
-    const/4 v9, 0x5
-
-    .line 52
-    new-array v9, v9, [LD10;
-
-    .line 53
-    .line 54
-    aput-object v0, v9, v2
-
-    .line 55
-    .line 56
-    aput-object v1, v9, v4
-
-    .line 57
-    .line 58
-    aput-object v3, v9, v6
-
-    .line 59
-    .line 60
-    aput-object v5, v9, v8
-
-    .line 61
-    .line 62
-    aput-object v7, v9, v10
-
-    .line 63
-    .line 64
-    sput-object v9, LD10;->Z:[LD10;
-
-    .line 65
-    .line 66
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public synthetic constructor <init>(LE10;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput p2, p0, LD10;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LD10;->a:I
+    iput-object p1, p0, LD10;->b:LE10;
 
-    .line 5
-    .line 6
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LD10;
-    .locals 1
-
-    .line 1
-    const-class v0, LD10;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LD10;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LD10;
-    .locals 1
-
-    .line 1
-    sget-object v0, LD10;->Z:[LD10;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LD10;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LD10;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final d()Ljava/lang/Object;
+    .locals 7
 
     .line 1
     iget v0, p0, LD10;->a:I
 
     .line 2
     .line 3
-    return v0
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LD10;->b:LE10;
+
+    .line 7
+    .line 8
+    iget-wide v1, v0, LE10;->i:J
+
+    .line 9
+    .line 10
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 11
+    .line 12
+    iget-object v3, v0, LE10;->e:LnJe;
+
+    .line 13
+    .line 14
+    invoke-virtual {v3}, LnJe;->d()LA36;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v6
+
+    .line 18
+    move-wide v3, v1
+
+    .line 19
+    invoke-static/range {v1 .. v6}, Lio/reactivex/rxjava3/core/Observable;->l0(JJLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableInterval;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    new-instance v2, LeO3;
+
+    .line 24
+    .line 25
+    const/4 v3, 0x5
+
+    .line 26
+    invoke-direct {v2, v3, v0}, LeO3;-><init>(ILjava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 30
+    .line 31
+    invoke-direct {v0, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 32
+    .line 33
+    .line 34
+    sget-object v1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    return-object v0
+
+    .line 41
+    :pswitch_0
+    iget-object v0, p0, LD10;->b:LE10;
+
+    .line 42
+    .line 43
+    iget-object v0, v0, LE10;->c:Lm96;
+
+    .line 44
+    .line 45
+    iget-object v0, v0, Lm96;->f:LREi;
+
+    .line 46
+    .line 47
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    check-cast v0, Ljava/lang/Number;
+
+    .line 52
+    .line 53
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-wide v0
+
+    .line 57
+    const/16 v2, 0x400
+
+    .line 58
+    .line 59
+    int-to-long v2, v2
+
+    .line 60
+    div-long/2addr v0, v2
+
+    .line 61
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v0
+
+    .line 65
+    return-object v0
+
+    .line 66
+    nop
+
+    .line 67
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

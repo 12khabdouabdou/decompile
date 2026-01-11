@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'ADD\':0,\'ACCEPT\':1,\'SNAP\':2,\'CHAT_SNAP\':3,\'LOADING\':4,\'CHAT\':5,\'ADDED\':6"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

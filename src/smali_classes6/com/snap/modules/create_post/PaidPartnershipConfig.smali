@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/create_post/PaidPartnershipConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'hasMusic\':b,\'isAnonymous\':b,\'canSearchBrands\':b,\'canUseSponsorTool\':b,\'approvedProfiles\':a?<r:\'[0]\'>,\'selectedSponsor\':r?:\'[1]\',\'sponsorableProfile\':r?:\'[0]\'"
     typeReferences = {
@@ -88,4 +88,28 @@
     .line 17
     .line 18
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/snap/modules/business_sponsored/SponsorInfo;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/modules/create_post/PaidPartnershipConfig;->_selectedSponsor:Lcom/snap/modules/business_sponsored/SponsorInfo;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Lcom/snap/modules/business_sponsored/SponsorableProfile;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/modules/create_post/PaidPartnershipConfig;->_sponsorableProfile:Lcom/snap/modules/business_sponsored/SponsorableProfile;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

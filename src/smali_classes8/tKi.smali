@@ -3,109 +3,282 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements LrKi;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final X:Lkotlin/jvm/functions/Function1;
 
-.field public final synthetic b:LJkh;
+.field public final Y:Lkotlin/jvm/functions/Function1;
+
+.field public final Z:Lkotlin/jvm/functions/Function0;
+
+.field public final a:Lkotlin/jvm/functions/Function2;
+
+.field public final b:Lkotlin/jvm/functions/Function1;
+
+.field public final c:Lkotlin/jvm/functions/Function1;
+
+.field public final t:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public constructor <init>(LJkh;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, LtKi;->a:I
+.method public constructor <init>(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LtKi;->b:LJkh;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(LJkh;LaKi;I)V
-    .locals 0
-
     .line 2
-    iput p3, p0, LtKi;->a:I
+    .line 3
+    .line 4
+    iput-object p1, p0, LtKi;->a:Lkotlin/jvm/functions/Function2;
 
-    iput-object p1, p0, LtKi;->b:LJkh;
+    .line 5
+    .line 6
+    iput-object p2, p0, LtKi;->b:Lkotlin/jvm/functions/Function1;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 7
+    .line 8
+    iput-object p3, p0, LtKi;->c:Lkotlin/jvm/functions/Function1;
 
+    .line 9
+    .line 10
+    iput-object p4, p0, LtKi;->t:Lkotlin/jvm/functions/Function1;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LtKi;->X:Lkotlin/jvm/functions/Function1;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, LtKi;->Y:Lkotlin/jvm/functions/Function1;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, LtKi;->Z:Lkotlin/jvm/functions/Function0;
+
+    .line 17
+    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public createCallingSession(Lcom/snap/talkcore/SessionParameters;Lcom/snap/composer/bridge_observables/BridgeObservable;)Lcom/snap/composer/promise/Promise;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/talkcore/SessionParameters;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "LFLd;",
+            ">;)",
+            "Lcom/snap/composer/promise/Promise<",
+            "LpS1;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    iget v0, p0, LtKi;->a:I
+    iget-object v0, p0, LtKi;->a:Lkotlin/jvm/functions/Function2;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public dispose()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LtKi;->Z:Lkotlin/jvm/functions/Function0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public onConnectivityNetworkTypeChange(Lcom/snap/talkcore/ConnectivityNetworkType;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LtKi;->b:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public onIncomingCallActionMessageFailedToDisplay(Lcom/snap/talkcore/IncomingMessage;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LtKi;->X:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public onPowerStateChange(Z)V
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget-object v0, p0, LtKi;->c:Lkotlin/jvm/functions/Function1;
+
+    .line 6
+    .line 7
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public processIncomingMessageForDisplay(Lcom/snap/talkcore/IncomingMessage;)Lcom/snap/composer/promise/Promise;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/talkcore/IncomingMessage;",
+            ")",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LtKi;->t:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public processRingingTimeout(Ljava/lang/String;)Lcom/snap/composer/promise/Promise;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LtKi;->Y:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    iget-object p1, p0, LtKi;->b:LJkh;
+    const-class v1, LrKi;
 
     .line 9
     .line 10
-    iget-object p1, p1, LJkh;->c:Ljava/lang/Object;
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
-    return-void
-
     .line 13
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
+    move-result p1
 
     .line 14
-    .line 15
-    iget-object p1, p0, LtKi;->b:LJkh;
-
-    .line 16
-    .line 17
-    iget-object p1, p1, LJkh;->c:Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_1
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 21
-    .line 22
-    iget-object p1, p0, LtKi;->b:LJkh;
-
-    .line 23
-    .line 24
-    iget-object p1, p1, LJkh;->c:Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    return-void
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return p1
 .end method

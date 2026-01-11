@@ -4,7 +4,7 @@
 
 
 # annotations
-.annotation runtime LhB3;
+.annotation runtime LJE3;
 .end annotation
 
 

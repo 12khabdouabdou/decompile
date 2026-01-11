@@ -2,10 +2,7 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LVsh;
-
 
 # virtual methods
-.method public abstract getType()Lzc7;
+.method public abstract a()Ljava/lang/Object;
 .end method

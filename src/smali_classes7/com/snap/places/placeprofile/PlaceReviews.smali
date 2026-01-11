@@ -1,15 +1,15 @@
 .class public final Lcom/snap/places/placeprofile/PlaceReviews;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'tippets\':a?<s>,\'reviews\':a<r:\'[0]\'>,\'reviewLandingPages\':a?<r:\'[1]\'>"
     typeReferences = {
-        LHsd;,
-        LIsd;
+        LkJd;,
+        LlJd;
     }
 .end annotation
 
@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LIsd;",
+            "LlJd;",
             ">;"
         }
     .end annotation
@@ -29,7 +29,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LHsd;",
+            "LkJd;",
             ">;"
         }
     .end annotation
@@ -76,10 +76,10 @@
             "Ljava/lang/String;",
             ">;",
             "Ljava/util/List<",
-            "LHsd;",
+            "LkJd;",
             ">;",
             "Ljava/util/List<",
-            "LIsd;",
+            "LlJd;",
             ">;)V"
         }
     .end annotation

@@ -3,159 +3,206 @@
 .source "SourceFile"
 
 # interfaces
-.implements LtWc;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final a:LIq4;
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljk1;
 
 
 # direct methods
-.method public constructor <init>(LIq4;)V
+.method public synthetic constructor <init>(Ljk1;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Lfk1;->a:I
+
+    iput-object p1, p0, Lfk1;->b:Ljk1;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lfk1;->a:LIq4;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final E(Lql5;)V
-    .locals 11
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    new-instance v2, LFN0;
+    iget v0, p0, Lfk1;->a:I
 
     .line 2
     .line 3
-    const/16 v0, 0x17
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v2, v0, p0}, LFN0;-><init>(ILjava/lang/Object;)V
-
     .line 6
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 7
     .line 8
-    new-instance v3, LjU0;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 9
     .line 10
-    const-class v6, Lfk1;
-
     .line 11
+    move-result p1
+
     .line 12
-    const-string v7, "needToShow"
+    if-eqz p1, :cond_0
 
     .line 13
     .line 14
-    const/4 v4, 0x1
+    iget-object p1, p0, Lfk1;->b:Ljk1;
 
     .line 15
-    const-string v8, "needToShow(Lcom/snap/opera/model/OperaPageModel;)Z"
-
     .line 16
-    .line 17
-    const/4 v9, 0x0
+    iget-object p1, p1, Ljk1;->c:LtK4;
 
+    .line 17
     .line 18
-    const/16 v10, 0x1b
+    invoke-virtual {p1}, LtK4;->get()Ljava/lang/Object;
 
     .line 19
     .line 20
-    move-object v5, p0
-
     .line 21
-    invoke-direct/range {v3 .. v10}, LjU0;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    move-result-object p1
 
     .line 22
+    check-cast p1, Lts1;
+
     .line 23
     .line 24
-    move-object v0, v3
+    invoke-virtual {p1}, Lts1;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
     .line 25
-    new-instance v3, LjU0;
-
     .line 26
     .line 27
-    const-class v6, Lfk1;
+    move-result-object p1
 
     .line 28
-    .line 29
-    const-string v7, "createLayerParam"
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->T()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinct;
 
+    .line 29
     .line 30
     .line 31
-    const/4 v4, 0x1
+    move-result-object p1
 
     .line 32
-    const-string v8, "createLayerParam(Lcom/snap/opera/model/OperaPageModel;)Lcom/snap/bloops/ui/fullscreen/fallback/BloopsFallbackUxLayerParams;"
+    goto :goto_0
 
     .line 33
-    .line 34
-    const/4 v9, 0x0
+    :cond_0
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
+    .line 34
     .line 35
-    const/16 v10, 0x1c
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
     .line 36
     .line 37
-    move-object v5, p0
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
     .line 38
-    invoke-direct/range {v3 .. v10}, LjU0;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
     .line 39
     .line 40
+    move-object p1, v0
+
     .line 41
-    const/4 v6, 0x0
+    :goto_0
+    return-object p1
 
     .line 42
-    const/4 v1, 0x0
+    :pswitch_0
+    check-cast p1, Ljava/lang/Number;
 
     .line 43
-    move-object v4, v3
-
     .line 44
-    move-object v3, v0
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
 
     .line 45
-    const-string v0, "BLOOPS_FALLBACK_UX_LAYER"
-
     .line 46
     .line 47
-    const/4 v5, 0x0
+    move-result-wide v0
 
     .line 48
-    const/16 v7, 0x62
+    iget-object p1, p0, Lfk1;->b:Ljk1;
 
     .line 49
     .line 50
-    invoke-static/range {v0 .. v7}, LLRi;->k(Ljava/lang/String;ILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZII)LzG9;
+    iget-object v2, p1, Ljk1;->g:LtK4;
 
     .line 51
     .line 52
+    invoke-virtual {v2}, LtK4;->get()Ljava/lang/Object;
+
     .line 53
-    move-result-object v0
-
     .line 54
-    sget-object v1, LyL5;->f:LzG9;
-
     .line 55
+    move-result-object v2
+
     .line 56
-    invoke-virtual {p1, v0, v1}, Lql5;->g(LzG9;LzG9;)V
+    check-cast v2, LJAh;
 
     .line 57
     .line 58
+    iget-object p1, p1, Ljk1;->f:Lnp0;
+
     .line 59
-    return-void
+    .line 60
+    const-string v3, "fillBloopsPreviewAnalytics"
+
+    .line 61
+    .line 62
+    invoke-virtual {p1, v3}, Lnp0;->a(Ljava/lang/String;)Lnp0;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object p1
+
+    .line 66
+    invoke-virtual {v2, p1}, LJAh;->c(Lnp0;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p1
+
+    .line 70
+    new-instance v2, Li60;
+
+    .line 71
+    .line 72
+    const/4 v3, 0x4
+
+    .line 73
+    invoke-direct {v2, v0, v1, v3}, Li60;-><init>(JI)V
+
+    .line 74
+    .line 75
+    .line 76
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
+
+    .line 77
+    .line 78
+    invoke-direct {v0, p1, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 79
+    .line 80
+    .line 81
+    return-object v0
+
+    .line 82
+    nop
+
+    .line 83
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

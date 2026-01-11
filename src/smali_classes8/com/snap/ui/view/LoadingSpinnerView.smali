@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:LIua;
+.field public final a:LSGa;
 
 
 # direct methods
@@ -26,26 +26,26 @@
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    sget-object v0, LDve;->a:[I
+    sget-object v0, LmNe;->a:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
     .line 4
-    new-instance v0, LIua;
+    new-instance v0, LSGa;
 
-    invoke-direct {v0, p1}, LIua;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, LSGa;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LIua;
+    iput-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LSGa;
 
     .line 5
     invoke-virtual {p0, v0}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    const v1, 0x7f060217
+    const v1, 0x7f06026f
 
     .line 6
-    invoke-static {p1, v1}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, v1}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p1
 
@@ -57,7 +57,7 @@
     move-result p1
 
     .line 8
-    iget-object v0, v0, LIua;->c:Landroid/graphics/Paint;
+    iget-object v0, v0, LSGa;->c:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -73,11 +73,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LIua;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LSGa;
 
     .line 2
     .line 3
-    iget-object v0, v0, LIua;->c:Landroid/graphics/Paint;
+    iget-object v0, v0, LSGa;->c:Landroid/graphics/Paint;
 
     .line 4
     .line 5
@@ -93,7 +93,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LIua;
+    iget-object v0, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LSGa;
 
     .line 2
     .line 3
@@ -129,7 +129,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v0}, LIua;->a()V
+    invoke-virtual {v0}, LSGa;->a()V
 
     .line 19
     .line 20
@@ -138,7 +138,7 @@
 
     .line 22
     :cond_1
-    invoke-virtual {v0}, LIua;->b()V
+    invoke-virtual {v0}, LSGa;->b()V
 
     .line 23
     .line 24
@@ -201,7 +201,7 @@
     .locals 0
 
     .line 1
-    iget-object p3, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LIua;
+    iget-object p3, p0, Lcom/snap/ui/view/LoadingSpinnerView;->a:LSGa;
 
     .line 2
     .line 3

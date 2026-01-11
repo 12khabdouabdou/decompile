@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
-.implements LTB3;
+.implements LY2d;
+.implements LvF3;
 
 
 # static fields
@@ -12,25 +12,25 @@
 
 
 # instance fields
-.field public A0:Lnwf;
+.field public A0:LZ69;
 
-.field public B0:LQ05;
+.field public B0:LyPf;
 
-.field public C0:LqZ8;
+.field public C0:LR55;
 
-.field public final D0:LXfi;
+.field public final D0:LREi;
 
-.field public final w0:LXpc;
+.field public final w0:LsFc;
 
 .field public x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public y0:LTqc;
+.field public y0:LmGc;
 
-.field public z0:LQ05;
+.field public z0:LR55;
 
 
 # direct methods
-.method public constructor <init>(LXpc;)V
+.method public constructor <init>(LsFc;)V
     .locals 1
 
     .line 1
@@ -39,103 +39,42 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->w0:LXpc;
+    iput-object p1, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->w0:LsFc;
 
     .line 5
     .line 6
-    new-instance p1, LiPc;
+    new-instance p1, LDwc;
 
     .line 7
     .line 8
-    const/4 v0, 0x1
+    const/16 v0, 0x1b
 
     .line 9
-    invoke-direct {p1, v0, p0}, LiPc;-><init>(ILjava/lang/Object;)V
-
     .line 10
+    invoke-direct {p1, v0, p0}, LDwc;-><init>(ILjava/lang/Object;)V
+
     .line 11
     .line 12
-    new-instance v0, LXfi;
-
     .line 13
-    .line 14
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    new-instance v0, LREi;
 
+    .line 14
     .line 15
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 16
     .line 17
-    iput-object v0, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->D0:LXfi;
-
     .line 18
+    iput-object v0, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->D0:LREi;
+
     .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    sget-object p1, LXRg;->a:LWRg;
-
-    .line 5
-    .line 6
-    const-string v0, "onboarding:daggerinject"
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, v0}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
-    :try_start_0
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 13
-    .line 14
-    .line 15
-    invoke-virtual {p1, v0}, LWRg;->h(I)V
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-
-    .line 19
-    :catchall_0
-    move-exception p1
-
-    .line 20
-    sget-object v1, LXRg;->b:Lzhi;
-
-    .line 21
-    .line 22
-    if-eqz v1, :cond_0
-
-    .line 23
-    .line 24
-    invoke-virtual {v1, v0}, Lzhi;->o(I)V
-
-    .line 25
-    .line 26
-    .line 27
-    :cond_0
-    throw p1
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
@@ -160,7 +99,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -171,7 +110,7 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
 
     .line 1
@@ -192,7 +131,7 @@
     .line 8
     .line 9
     .line 10
-    iget-object p2, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->z0:LQ05;
+    iget-object p2, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->z0:LR55;
 
     .line 11
     .line 12
@@ -203,7 +142,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {p2}, LQ05;->get()Ljava/lang/Object;
+    invoke-virtual {p2}, LR55;->get()Ljava/lang/Object;
 
     .line 16
     .line 17
@@ -211,24 +150,24 @@
     move-result-object p2
 
     .line 19
-    check-cast p2, LsPc;
+    check-cast p2, Ll4d;
 
     .line 20
     .line 21
-    new-instance v0, LkCa;
+    new-instance v0, LDIb;
 
     .line 22
     .line 23
-    invoke-direct {v0, p0}, LkCa;-><init>(Lcom/snap/communities/fragment/OnboardingPageFragment;)V
+    invoke-direct {v0, p0}, LDIb;-><init>(Lcom/snap/communities/fragment/OnboardingPageFragment;)V
 
     .line 24
     .line 25
     .line 26
-    iget-object v1, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->w0:LXpc;
+    iget-object v1, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->w0:LsFc;
 
     .line 27
     .line 28
-    invoke-virtual {p2, v1, v0}, LsPc;->a(LXpc;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-virtual {p2, v1, v0}, Ll4d;->a(LsFc;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 29
     .line 30
@@ -236,11 +175,11 @@
     move-result-object p2
 
     .line 32
-    iget-object v0, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->D0:LXfi;
+    iget-object v0, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->D0:LREi;
 
     .line 33
     .line 34
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -248,15 +187,15 @@
     move-result-object v1
 
     .line 38
-    check-cast v1, Lzre;
+    check-cast v1, LlJe;
 
     .line 39
     .line 40
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 41
     .line 42
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    invoke-virtual {v1}, LnJe;->i()Lxp0;
 
     .line 43
     .line 44
@@ -273,124 +212,125 @@
     .line 49
     .line 50
     .line 51
-    new-instance p2, LOPc;
+    new-instance p2, LWhc;
 
     .line 52
     .line 53
-    const/4 v1, 0x0
+    const/16 v1, 0x19
 
     .line 54
-    invoke-direct {p2, p0, v1, p1}, LOPc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 55
+    invoke-direct {p2, p0, v1, p1}, LWhc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 56
     .line 57
+    .line 58
     new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
-    .line 58
     .line 59
+    .line 60
     invoke-direct {v1, v2, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 60
     .line 61
     .line 62
+    .line 63
     new-instance p2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
 
-    .line 63
     .line 64
+    .line 65
     invoke-direct {p2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
 
-    .line 65
     .line 66
     .line 67
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 68
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
     .line 69
     .line 70
-    move-result-object v0
-
     .line 71
-    check-cast v0, Lzre;
+    move-result-object v0
 
     .line 72
+    check-cast v0, LlJe;
+
     .line 73
-    check-cast v0, LBre;
-
     .line 74
-    .line 75
-    invoke-virtual {v0}, LBre;->h()LF06;
+    check-cast v0, LnJe;
 
+    .line 75
     .line 76
+    invoke-virtual {v0}, LnJe;->h()LA36;
+
     .line 77
     .line 78
+    .line 79
     move-result-object v0
 
-    .line 79
+    .line 80
     new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
 
-    .line 80
     .line 81
+    .line 82
     invoke-direct {v1, p2, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 82
     .line 83
     .line 84
-    sget-object p2, LVqc;->u0:LVqc;
-
     .line 85
-    .line 86
-    sget-object v0, LD5c;->A0:LD5c;
+    sget-object p2, LpNc;->o0:LpNc;
 
+    .line 86
     .line 87
+    sget-object v0, LLuc;->q0:LLuc;
+
     .line 88
+    .line 89
     invoke-static {v1, v0, p2}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->d(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 89
     .line 90
     .line 91
+    .line 92
     move-result-object p2
 
-    .line 92
+    .line 93
     iget-object v0, p0, Lcom/snap/communities/fragment/OnboardingPageFragment;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 93
     .line 94
+    .line 95
     if-eqz v0, :cond_0
 
-    .line 95
     .line 96
-    invoke-virtual {v0, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 97
+    invoke-virtual {v0, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 98
     .line 99
+    .line 100
     return-object p1
 
-    .line 100
+    .line 101
     :cond_0
     const-string p1, "disposable"
 
-    .line 101
     .line 102
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 103
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 104
     .line 105
+    .line 106
     throw p3
 
-    .line 106
+    .line 107
     :cond_1
     const-string p1, "onboardingContextFactory"
 
-    .line 107
     .line 108
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 109
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 110
     .line 111
+    .line 112
     throw p3
 .end method
 
@@ -403,9 +343,71 @@
     return-wide v0
 .end method
 
-.method public final u0()V
+.method public final t0()V
     .locals 0
 
     .line 1
     return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object p1, LOdh;->a:LNdh;
+
+    .line 5
+    .line 6
+    const-string v0, "onboarding:daggerinject"
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, v0}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    :try_start_0
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {p1, v0}, LNdh;->h(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    return-void
+
+    .line 19
+    :catchall_0
+    move-exception p1
+
+    .line 20
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 21
+    .line 22
+    if-eqz v1, :cond_0
+
+    .line 23
+    .line 24
+    invoke-virtual {v1, v0}, LtGi;->o(I)V
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_0
+    throw p1
 .end method

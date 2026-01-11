@@ -3,15 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements LhQc;
-.implements Ljsc;
-.implements LkI3;
+.implements LU4d;
+.implements LjHc;
+.implements LLL3;
 
 
 # instance fields
-.field public a:Lan0;
+.field public a:Lrp0;
 
-.field public b:Lx3f;
+.field public b:Lrlf;
 
 .field public c:Landroid/view/View;
 
@@ -29,7 +29,7 @@
 
 .field public k0:Lcom/snap/ui/view/SnapFontTextView;
 
-.field public l0:LgQc;
+.field public l0:LT4d;
 
 .field public m0:I
 
@@ -66,19 +66,19 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    sget-object p1, LCT;->Z:LCT;
+    sget-object p1, LKV;->Z:LKV;
 
-    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lan0;
+    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lrp0;
 
     .line 5
-    sget-object p1, Lu3f;->a:Lu3f;
+    sget-object p1, Lplf;->a:Lplf;
 
-    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lx3f;
+    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lrlf;
 
     .line 6
-    sget-object p1, LeQc;->a:LeQc;
+    sget-object p1, LR4d;->a:LR4d;
 
-    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->l0:LgQc;
+    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->l0:LT4d;
 
     return-void
 .end method
@@ -141,7 +141,7 @@
     move-result-object p0
 
     .line 29
-    sget-object p2, LZH5;->e:Landroid/view/animation/DecelerateInterpolator;
+    sget-object p2, LrM5;->e:Landroid/view/animation/DecelerateInterpolator;
 
     .line 30
     .line 31
@@ -153,14 +153,14 @@
     move-result-object p0
 
     .line 35
-    new-instance p2, Ldk1;
+    new-instance p2, LGn1;
 
     .line 36
     .line 37
     const/4 p3, 0x3
 
     .line 38
-    invoke-direct {p2, p1, p3}, Ldk1;-><init>(Landroid/view/View;I)V
+    invoke-direct {p2, p1, p3}, LGn1;-><init>(Landroid/view/View;I)V
 
     .line 39
     .line 40
@@ -181,7 +181,7 @@
     return-void
 .end method
 
-.method public static final e(Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;Landroid/view/View;JLVW3;)V
+.method public static final e(Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;Landroid/view/View;JLZV3;)V
     .locals 0
 
     .line 1
@@ -239,36 +239,35 @@
     move-result-object p0
 
     .line 29
-    new-instance p2, LNs3;
+    new-instance p2, LIA5;
 
     .line 30
     .line 31
-    const/16 p3, 0x1c
+    const/4 p3, 0x5
 
     .line 32
-    .line 33
-    invoke-direct {p2, p1, p3, p4}, LNs3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p2, p1, p3, p4}, LIA5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 33
     .line 34
     .line 35
-    .line 36
     invoke-virtual {p0, p2}, Landroid/view/ViewPropertyAnimator;->withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
 
+    .line 36
     .line 37
     .line 38
-    .line 39
     move-result-object p0
 
-    .line 40
+    .line 39
     invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
 
+    .line 40
     .line 41
     .line 42
-    .line 43
     return-void
 .end method
 
-.method public static final g(Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;Landroid/view/View;J)V
+.method public static final f(Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;Landroid/view/View;J)V
     .locals 2
 
     .line 1
@@ -332,14 +331,14 @@
     move-result-object p0
 
     .line 31
-    new-instance p2, Ldk1;
+    new-instance p2, LGn1;
 
     .line 32
     .line 33
     const/4 p3, 0x4
 
     .line 34
-    invoke-direct {p2, p1, p3}, Ldk1;-><init>(Landroid/view/View;I)V
+    invoke-direct {p2, p1, p3}, LGn1;-><init>(Landroid/view/View;I)V
 
     .line 35
     .line 36
@@ -366,11 +365,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, LgQc;
+    check-cast p1, LT4d;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->c(LgQc;)V
+    invoke-virtual {p0, p1}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->c(LT4d;)V
 
     .line 4
     .line 5
@@ -378,38 +377,38 @@
     return-void
 .end method
 
-.method public final b(LJkc;)V
+.method public final b(LqZc;)V
     .locals 1
 
     .line 1
-    iget-object v0, p1, LJkc;->b:Ljava/lang/Object;
+    iget-object v0, p1, LqZc;->b:Ljava/lang/Object;
 
     .line 2
     .line 3
-    check-cast v0, Lan0;
+    check-cast v0, Lrp0;
 
     .line 4
     .line 5
-    iput-object v0, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lan0;
+    iput-object v0, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lrp0;
 
     .line 6
     .line 7
-    iget-object p1, p1, LJkc;->c:Ljava/lang/Object;
+    iget-object p1, p1, LqZc;->c:Ljava/lang/Object;
 
     .line 8
     .line 9
-    check-cast p1, Lx3f;
+    check-cast p1, Lrlf;
 
     .line 10
     .line 11
-    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lx3f;
+    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lrlf;
 
     .line 12
     .line 13
     return-void
 .end method
 
-.method public final c(LgQc;)V
+.method public final c(LT4d;)V
     .locals 12
 
     .line 1
@@ -425,11 +424,11 @@
     const/4 v3, 0x3
 
     .line 5
-    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->l0:LgQc;
+    iput-object p1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->l0:LT4d;
 
     .line 6
     .line 7
-    instance-of v4, p1, LfQc;
+    instance-of v4, p1, LS4d;
 
     .line 8
     .line 9
@@ -441,28 +440,28 @@
 
     .line 12
     .line 13
-    check-cast p1, LfQc;
+    check-cast p1, LS4d;
 
     .line 14
     .line 15
-    sget-object v4, LZH5;->a:LIjj;
+    sget-object v4, LrM5;->a:LGIj;
 
     .line 16
     .line 17
-    iget-object v6, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lx3f;
+    iget-object v6, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lrlf;
 
     .line 18
     .line 19
-    new-instance v7, LZ2f;
+    new-instance v7, LVkf;
 
     .line 20
     .line 21
-    invoke-direct {v7, v4}, LZ2f;-><init>(LIjj;)V
+    invoke-direct {v7, v4}, LVkf;-><init>(LGIj;)V
 
     .line 22
     .line 23
     .line 24
-    invoke-interface {v6, v7}, Lx3f;->c(Lk3f;)LKjj;
+    invoke-interface {v6, v7}, Lrlf;->c(Lglf;)LIIj;
 
     .line 25
     .line 26
@@ -470,24 +469,24 @@
     move-result-object v4
 
     .line 28
-    sget-object v6, LZH5;->b:LIjj;
+    sget-object v6, LrM5;->b:LGIj;
 
     .line 29
     .line 30
-    iget-object v7, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lx3f;
+    iget-object v7, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lrlf;
 
     .line 31
     .line 32
-    new-instance v8, LZ2f;
+    new-instance v8, LVkf;
 
     .line 33
     .line 34
-    invoke-direct {v8, v6}, LZ2f;-><init>(LIjj;)V
+    invoke-direct {v8, v6}, LVkf;-><init>(LGIj;)V
 
     .line 35
     .line 36
     .line 37
-    invoke-interface {v7, v8}, Lx3f;->c(Lk3f;)LKjj;
+    invoke-interface {v7, v8}, Lrlf;->c(Lglf;)LIIj;
 
     .line 38
     .line 39
@@ -495,24 +494,24 @@
     move-result-object v6
 
     .line 41
-    sget-object v7, LZH5;->c:LIjj;
+    sget-object v7, LrM5;->c:LGIj;
 
     .line 42
     .line 43
-    iget-object v8, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lx3f;
+    iget-object v8, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lrlf;
 
     .line 44
     .line 45
-    new-instance v9, LZ2f;
+    new-instance v9, LVkf;
 
     .line 46
     .line 47
-    invoke-direct {v9, v7}, LZ2f;-><init>(LIjj;)V
+    invoke-direct {v9, v7}, LVkf;-><init>(LGIj;)V
 
     .line 48
     .line 49
     .line 50
-    invoke-interface {v8, v9}, Lx3f;->c(Lk3f;)LKjj;
+    invoke-interface {v8, v9}, Lrlf;->c(Lglf;)LIIj;
 
     .line 51
     .line 52
@@ -520,7 +519,7 @@
     move-result-object v7
 
     .line 54
-    new-array v8, v3, [LKjj;
+    new-array v8, v3, [LIIj;
 
     .line 55
     .line 56
@@ -536,7 +535,7 @@
 
     .line 61
     .line 62
-    invoke-static {v8}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v8}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
 
     .line 63
     .line 64
@@ -544,24 +543,24 @@
     move-result-object v4
 
     .line 66
-    sget-object v6, LZH5;->d:LIjj;
+    sget-object v6, LrM5;->d:LGIj;
 
     .line 67
     .line 68
-    iget-object v7, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lx3f;
+    iget-object v7, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->b:Lrlf;
 
     .line 69
     .line 70
-    new-instance v8, LZ2f;
+    new-instance v8, LVkf;
 
     .line 71
     .line 72
-    invoke-direct {v8, v6}, LZ2f;-><init>(LIjj;)V
+    invoke-direct {v8, v6}, LVkf;-><init>(LGIj;)V
 
     .line 73
     .line 74
     .line 75
-    invoke-interface {v7, v8}, Lx3f;->c(Lk3f;)LKjj;
+    invoke-interface {v7, v8}, Lrlf;->c(Lglf;)LIIj;
 
     .line 76
     .line 77
@@ -569,11 +568,11 @@
     move-result-object v6
 
     .line 79
-    iget-object v7, p1, LfQc;->b:Ljava/lang/String;
+    iget-object v7, p1, LS4d;->b:Ljava/lang/String;
 
     .line 80
     .line 81
-    invoke-static {v7}, LR4i;->w1(Ljava/lang/CharSequence;)Z
+    invoke-static {v7}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
     .line 82
     .line 83
@@ -622,7 +621,7 @@
 
     .line 105
     :cond_0
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 106
     .line 107
@@ -631,7 +630,7 @@
 
     .line 109
     :cond_1
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 110
     .line 111
@@ -654,11 +653,11 @@
     .line 119
     .line 120
     :goto_0
-    iget-object p1, p1, LfQc;->c:Ljava/lang/String;
+    iget-object p1, p1, LS4d;->c:Ljava/lang/String;
 
     .line 121
     .line 122
-    invoke-static {p1}, LR4i;->w1(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
     .line 123
     .line 124
@@ -686,7 +685,7 @@
 
     .line 135
     .line 136
-    invoke-static {p1, v10}, LGnk;->f(Ljava/lang/String;I)Landroid/text/Spanned;
+    invoke-static {p1, v10}, LsNk;->c(Ljava/lang/String;I)Landroid/text/Spanned;
 
     .line 137
     .line 138
@@ -716,7 +715,7 @@
 
     .line 151
     :cond_3
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 152
     .line 153
@@ -725,7 +724,7 @@
 
     .line 155
     :cond_4
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 156
     .line 157
@@ -890,16 +889,16 @@
     .line 240
     .line 241
     .line 242
-    invoke-static {}, LQtc;->x()V
+    invoke-static {}, LYh7;->M()V
 
     .line 243
     .line 244
     .line 245
-    new-instance p1, LYH5;
+    new-instance p1, LqM5;
 
     .line 246
     .line 247
-    invoke-direct {p1, p0}, LYH5;-><init>(Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;)V
+    invoke-direct {p1, p0}, LqM5;-><init>(Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;)V
 
     .line 248
     .line 249
@@ -912,7 +911,7 @@
 
     .line 253
     .line 254
-    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LeIj;)V
+    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LC7k;)V
 
     .line 255
     .line 256
@@ -925,7 +924,7 @@
 
     .line 260
     .line 261
-    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LeIj;)V
+    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LC7k;)V
 
     .line 262
     .line 263
@@ -938,7 +937,7 @@
 
     .line 267
     .line 268
-    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LeIj;)V
+    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LC7k;)V
 
     .line 269
     .line 270
@@ -951,7 +950,7 @@
 
     .line 274
     .line 275
-    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LeIj;)V
+    invoke-virtual {v3, p1}, Lcom/snap/imageloading/view/SnapImageView;->d(LC7k;)V
 
     .line 276
     .line 277
@@ -964,11 +963,11 @@
 
     .line 281
     .line 282
-    iget-object v3, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lan0;
+    iget-object v3, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lrp0;
 
     .line 283
     .line 284
-    invoke-virtual {v3}, Lan0;->c()Lbwh;
+    invoke-virtual {v3}, Lrp0;->c()LcUh;
 
     .line 285
     .line 286
@@ -980,7 +979,7 @@
 
     .line 289
     .line 290
-    invoke-static {p1, v6, v3, v5}, LU52;->g(Lcom/snap/imageloading/view/SnapImageView;LKjj;Lbwh;I)V
+    invoke-static {p1, v6, v3, v5}, LpZk;->m(Lcom/snap/imageloading/view/SnapImageView;LIIj;LcUh;I)V
 
     .line 291
     .line 292
@@ -1001,15 +1000,15 @@
     move-result-object v2
 
     .line 301
-    check-cast v2, LKjj;
+    check-cast v2, LIIj;
 
     .line 302
     .line 303
-    iget-object v3, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lan0;
+    iget-object v3, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lrp0;
 
     .line 304
     .line 305
-    invoke-virtual {v3}, Lan0;->c()Lbwh;
+    invoke-virtual {v3}, Lrp0;->c()LcUh;
 
     .line 306
     .line 307
@@ -1017,7 +1016,7 @@
     move-result-object v3
 
     .line 309
-    invoke-static {p1, v2, v3, v5}, LU52;->g(Lcom/snap/imageloading/view/SnapImageView;LKjj;Lbwh;I)V
+    invoke-static {p1, v2, v3, v5}, LpZk;->m(Lcom/snap/imageloading/view/SnapImageView;LIIj;LcUh;I)V
 
     .line 310
     .line 311
@@ -1038,15 +1037,15 @@
     move-result-object v1
 
     .line 320
-    check-cast v1, LKjj;
+    check-cast v1, LIIj;
 
     .line 321
     .line 322
-    iget-object v2, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lan0;
+    iget-object v2, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lrp0;
 
     .line 323
     .line 324
-    invoke-virtual {v2}, Lan0;->c()Lbwh;
+    invoke-virtual {v2}, Lrp0;->c()LcUh;
 
     .line 325
     .line 326
@@ -1054,7 +1053,7 @@
     move-result-object v2
 
     .line 328
-    invoke-static {p1, v1, v2, v5}, LU52;->g(Lcom/snap/imageloading/view/SnapImageView;LKjj;Lbwh;I)V
+    invoke-static {p1, v1, v2, v5}, LpZk;->m(Lcom/snap/imageloading/view/SnapImageView;LIIj;LcUh;I)V
 
     .line 329
     .line 330
@@ -1075,15 +1074,15 @@
     move-result-object v0
 
     .line 339
-    check-cast v0, LKjj;
+    check-cast v0, LIIj;
 
     .line 340
     .line 341
-    iget-object v1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lan0;
+    iget-object v1, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->a:Lrp0;
 
     .line 342
     .line 343
-    invoke-virtual {v1}, Lan0;->c()Lbwh;
+    invoke-virtual {v1}, Lrp0;->c()LcUh;
 
     .line 344
     .line 345
@@ -1091,7 +1090,7 @@
     move-result-object v1
 
     .line 347
-    invoke-static {p1, v0, v1, v5}, LU52;->g(Lcom/snap/imageloading/view/SnapImageView;LKjj;Lbwh;I)V
+    invoke-static {p1, v0, v1, v5}, LpZk;->m(Lcom/snap/imageloading/view/SnapImageView;LIIj;LcUh;I)V
 
     .line 348
     .line 349
@@ -1100,7 +1099,7 @@
 
     .line 351
     :cond_6
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 352
     .line 353
@@ -1109,7 +1108,7 @@
 
     .line 355
     :cond_7
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 356
     .line 357
@@ -1118,7 +1117,7 @@
 
     .line 359
     :cond_8
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 360
     .line 361
@@ -1127,7 +1126,7 @@
 
     .line 363
     :cond_9
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 364
     .line 365
@@ -1136,7 +1135,7 @@
 
     .line 367
     :cond_a
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 368
     .line 369
@@ -1145,7 +1144,7 @@
 
     .line 371
     :cond_b
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 372
     .line 373
@@ -1154,7 +1153,7 @@
 
     .line 375
     :cond_c
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 376
     .line 377
@@ -1163,7 +1162,7 @@
 
     .line 379
     :cond_d
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 380
     .line 381
@@ -1172,7 +1171,7 @@
 
     .line 383
     :cond_e
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 384
     .line 385
@@ -1181,7 +1180,7 @@
 
     .line 387
     :cond_f
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 388
     .line 389
@@ -1190,7 +1189,7 @@
 
     .line 391
     :cond_10
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 392
     .line 393
@@ -1199,7 +1198,7 @@
 
     .line 395
     :cond_11
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 396
     .line 397
@@ -1212,7 +1211,7 @@
 
     .line 400
     .line 401
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 402
     .line 403
@@ -1221,7 +1220,7 @@
 
     .line 405
     :cond_13
-    invoke-virtual {p0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->h()V
+    invoke-virtual {p0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->g()V
 
     .line 406
     .line 407
@@ -1282,7 +1281,7 @@
 
     .line 437
     :cond_14
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 438
     .line 439
@@ -1291,7 +1290,7 @@
 
     .line 441
     :cond_15
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 442
     .line 443
@@ -1300,7 +1299,7 @@
 
     .line 445
     :cond_16
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 446
     .line 447
@@ -1309,7 +1308,7 @@
 
     .line 449
     :cond_17
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 450
     .line 451
@@ -1322,7 +1321,7 @@
 
     .line 454
     .line 455
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 456
     .line 457
@@ -1331,7 +1330,7 @@
 
     .line 459
     :cond_19
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 460
     .line 461
@@ -1340,7 +1339,7 @@
 
     .line 463
     :cond_1a
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 464
     .line 465
@@ -1349,7 +1348,7 @@
 
     .line 467
     :cond_1b
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 468
     .line 469
@@ -1358,7 +1357,7 @@
 
     .line 471
     :cond_1c
-    sget-object v0, LeQc;->a:LeQc;
+    sget-object v0, LR4d;->a:LR4d;
 
     .line 472
     .line 473
@@ -1379,7 +1378,7 @@
     .line 480
     .line 481
     .line 482
-    invoke-virtual {p0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->h()V
+    invoke-virtual {p0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->g()V
 
     .line 483
     .line 484
@@ -1388,11 +1387,11 @@
     return-void
 .end method
 
-.method public final h()V
+.method public final g()V
     .locals 7
 
     .line 1
-    const v0, 0x7f0b0831
+    const v0, 0x7f0b08f1
 
     .line 2
     .line 3
@@ -1405,7 +1404,7 @@
     move-result-object v0
 
     .line 8
-    const v1, 0x7f0b0832
+    const v1, 0x7f0b08f2
 
     .line 9
     .line 10
@@ -1418,7 +1417,7 @@
     move-result-object v1
 
     .line 15
-    const v2, 0x7f0b0833
+    const v2, 0x7f0b08f3
 
     .line 16
     .line 17
@@ -1431,7 +1430,7 @@
     move-result-object v2
 
     .line 22
-    const v3, 0x7f0b0836
+    const v3, 0x7f0b08f6
 
     .line 23
     .line 24
@@ -1511,16 +1510,16 @@
 
     .line 58
     .line 59
-    sget-object v3, LhIj;->c0:LdIj;
+    sget-object v3, LF7k;->c0:LB7k;
 
     .line 60
     .line 61
-    invoke-virtual {v2, v3}, Lcom/snap/imageloading/view/SnapImageView;->d(LeIj;)V
+    invoke-virtual {v2, v3}, Lcom/snap/imageloading/view/SnapImageView;->d(LC7k;)V
 
     .line 62
     .line 63
     .line 64
-    invoke-static {v2, v6}, LU52;->b(Lcom/snap/imageloading/view/SnapImageView;Z)V
+    invoke-static {v2, v6}, LpZk;->a(Lcom/snap/imageloading/view/SnapImageView;Z)V
 
     .line 65
     .line 66
@@ -1552,11 +1551,11 @@
     .locals 5
 
     .line 1
-    check-cast p1, LjI3;
+    check-cast p1, LKL3;
 
     .line 2
     .line 3
-    iget-boolean v0, p1, LjI3;->a:Z
+    iget-boolean v0, p1, LKL3;->a:Z
 
     .line 4
     .line 5
@@ -1579,7 +1578,7 @@
 
     .line 13
     .line 14
-    const v1, 0x7f080316
+    const v1, 0x7f080373
 
     .line 15
     .line 16
@@ -1593,7 +1592,7 @@
 
     .line 21
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 22
     .line 23
@@ -1619,7 +1618,7 @@
     .line 32
     .line 33
     :goto_0
-    iget p1, p1, LjI3;->b:I
+    iget p1, p1, LKL3;->b:I
 
     .line 34
     .line 35
@@ -1703,7 +1702,7 @@
 
     .line 71
     :cond_4
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 72
     .line 73
@@ -1720,11 +1719,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->l0:LgQc;
+    iget-object v0, p0, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->l0:LT4d;
 
     .line 5
     .line 6
-    invoke-virtual {p0, v0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->c(LgQc;)V
+    invoke-virtual {p0, v0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->c(LT4d;)V
 
     .line 7
     .line 8
@@ -1750,7 +1749,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-virtual {p0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->h()V
+    invoke-virtual {p0}, Lcom/snap/lenses/explorer/onboarding/DefaultLongPressOnboardingView;->g()V
 
     .line 10
     .line 11
@@ -1767,7 +1766,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b0834
+    const v0, 0x7f0b08f4
 
     .line 5
     .line 6
@@ -1784,7 +1783,7 @@
 
     .line 12
     .line 13
-    const v0, 0x7f0b0839
+    const v0, 0x7f0b08f9
 
     .line 14
     .line 15
@@ -1820,7 +1819,7 @@
 
     .line 30
     .line 31
-    const v0, 0x7f0b0831
+    const v0, 0x7f0b08f1
 
     .line 32
     .line 33
@@ -1841,7 +1840,7 @@
 
     .line 41
     .line 42
-    const v0, 0x7f0b0832
+    const v0, 0x7f0b08f2
 
     .line 43
     .line 44
@@ -1862,7 +1861,7 @@
 
     .line 52
     .line 53
-    const v0, 0x7f0b0833
+    const v0, 0x7f0b08f3
 
     .line 54
     .line 55
@@ -1883,7 +1882,7 @@
 
     .line 63
     .line 64
-    const v0, 0x7f0b0836
+    const v0, 0x7f0b08f6
 
     .line 65
     .line 66
@@ -1904,7 +1903,7 @@
 
     .line 74
     .line 75
-    const v0, 0x7f0b083b
+    const v0, 0x7f0b08fb
 
     .line 76
     .line 77
@@ -1921,7 +1920,7 @@
 
     .line 83
     .line 84
-    const v0, 0x7f0b083a
+    const v0, 0x7f0b08fa
 
     .line 85
     .line 86
@@ -1942,7 +1941,7 @@
 
     .line 94
     .line 95
-    const v0, 0x7f0b0835
+    const v0, 0x7f0b08f5
 
     .line 96
     .line 97

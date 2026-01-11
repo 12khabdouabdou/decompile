@@ -4,22 +4,22 @@
 
 
 # virtual methods
-.method public abstract pair(LF5i;)Lio/reactivex/rxjava3/core/Completable;
-    .param p1    # LF5i;
-        .annotation runtime Ljv1;
+.method public abstract pair(LYti;)Lio/reactivex/rxjava3/core/Completable;
+    .param p1    # LYti;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
+    .annotation runtime Llmd;
         value = "/studio3d/register"
     .end annotation
 .end method
 
-.method public abstract unpair(Lew0;)Lio/reactivex/rxjava3/core/Completable;
-    .param p1    # Lew0;
-        .annotation runtime Ljv1;
+.method public abstract unpair(LMy0;)Lio/reactivex/rxjava3/core/Completable;
+    .param p1    # LMy0;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
+    .annotation runtime Llmd;
         value = "/studio3d/unregister"
     .end annotation
 .end method

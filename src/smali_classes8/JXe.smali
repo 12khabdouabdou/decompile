@@ -1,82 +1,108 @@
 .class public final LJXe;
-.super Ldu3;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LUv3;
-    propertyReplacements = ""
-    schema = "\'log\':f(r:\'[0]\', r<e>:\'[1]\', s, d@?, d@?)"
-    typeReferences = {
-        Lcom/snap/composer/blizzard/Logging;,
-        Lcom/snap/venueeditor/ReportActionType;
-    }
-.end annotation
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field private _invoker:Lkotlin/jvm/functions/Function5;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function5;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:I
+
+.field public final synthetic b:LKXe;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function5;)V
+.method public synthetic constructor <init>(LKXe;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function5;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
+    iput p2, p0, LJXe;->a:I
+
+    iput-object p1, p0, LJXe;->b:LKXe;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LJXe;->_invoker:Lkotlin/jvm/functions/Function5;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LoGa;Lcom/snap/venueeditor/ReportActionType;Ljava/lang/String;Ljava/lang/Double;Ljava/lang/Double;)V
-    .locals 6
+.method public final run()V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LJXe;->_invoker:Lkotlin/jvm/functions/Function5;
+    iget v0, p0, LJXe;->a:I
 
     .line 2
     .line 3
-    move-object v1, p1
+    packed-switch v0, :pswitch_data_0
 
     .line 4
-    move-object v2, p2
-
     .line 5
-    move-object v3, p3
-
     .line 6
-    move-object v4, p4
+    iget-object v0, p0, LJXe;->b:LKXe;
 
     .line 7
-    move-object v5, p5
-
     .line 8
-    invoke-interface/range {v0 .. v5}, Lkotlin/jvm/functions/Function5;->Q(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, v0, LKXe;->f:Landroid/view/ViewPropertyAnimator;
 
     .line 9
     .line 10
+    if-eqz v1, :cond_0
+
     .line 11
+    .line 12
+    invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->cancel()V
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 16
+    iput-object v1, v0, LKXe;->f:Landroid/view/ViewPropertyAnimator;
+
+    .line 17
+    .line 18
     return-void
+
+    .line 19
+    :pswitch_0
+    iget-object v0, p0, LJXe;->b:LKXe;
+
+    .line 20
+    .line 21
+    iget-object v1, v0, LKXe;->g:Landroid/view/ViewPropertyAnimator;
+
+    .line 22
+    .line 23
+    if-eqz v1, :cond_1
+
+    .line 24
+    .line 25
+    invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->cancel()V
+
+    .line 26
+    .line 27
+    .line 28
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 29
+    iput-object v1, v0, LKXe;->g:Landroid/view/ViewPropertyAnimator;
+
+    .line 30
+    .line 31
+    return-void
+
+    .line 32
+    nop
+
+    .line 33
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

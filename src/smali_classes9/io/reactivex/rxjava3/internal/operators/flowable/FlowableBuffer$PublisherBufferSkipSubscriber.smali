@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lio/reactivex/rxjava3/core/FlowableSubscriber;
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -27,7 +27,7 @@
         "Ljava/util/concurrent/atomic/AtomicInteger;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TT;>;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
@@ -35,11 +35,11 @@
 # instance fields
 .field public X:Ljava/util/Collection;
 
-.field public Y:Lc7i;
+.field public Y:Ltvi;
 
 .field public Z:Z
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/internal/util/ArrayListSupplier;
 
@@ -51,7 +51,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
+.method public constructor <init>(Lmvi;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
     .locals 0
 
     .line 1
@@ -60,7 +60,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -85,11 +85,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Ltvi;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 4
     .line 5
@@ -183,7 +183,7 @@
     move-result-wide p1
 
     .line 39
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Ltvi;
 
     .line 40
     .line 41
@@ -195,7 +195,7 @@
     move-result-wide p1
 
     .line 45
-    invoke-interface {v0, p1, p2}, Lc7i;->l(J)V
+    invoke-interface {v0, p1, p2}, Ltvi;->l(J)V
 
     .line 46
     .line 47
@@ -204,7 +204,7 @@
 
     .line 49
     :cond_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Ltvi;
 
     .line 50
     .line 51
@@ -219,7 +219,7 @@
     move-result-wide p1
 
     .line 56
-    invoke-interface {v0, p1, p2}, Lc7i;->l(J)V
+    invoke-interface {v0, p1, p2}, Ltvi;->l(J)V
 
     .line 57
     .line 58
@@ -262,7 +262,7 @@
 
     .line 13
     .line 14
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:LV6i;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:Lmvi;
 
     .line 15
     .line 16
@@ -270,13 +270,13 @@
 
     .line 17
     .line 18
-    invoke-interface {v1, v0}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, v0}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 19
     .line 20
     .line 21
     :cond_1
-    invoke-interface {v1}, LV6i;->onComplete()V
+    invoke-interface {v1}, Lmvi;->onComplete()V
 
     .line 22
     .line 23
@@ -319,11 +319,11 @@
 
     .line 14
     .line 15
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:Lmvi;
 
     .line 16
     .line 17
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 18
     .line 19
@@ -447,11 +447,11 @@
 
     .line 53
     .line 54
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:Lmvi;
 
     .line 55
     .line 56
-    invoke-interface {p1, v0}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {p1, v0}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 57
     .line 58
@@ -476,15 +476,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -496,15 +496,15 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->Y:Ltvi;
 
     .line 10
     .line 11
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;->a:Lmvi;
 
     .line 12
     .line 13
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 14
     .line 15

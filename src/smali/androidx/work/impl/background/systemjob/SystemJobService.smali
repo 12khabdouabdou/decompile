@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LOT6;
+.implements LNX6;
 
 
 # static fields
@@ -11,13 +11,13 @@
 
 
 # instance fields
-.field public a:LNZj;
+.field public a:LQpk;
 
 .field public final b:Ljava/util/HashMap;
 
-.field public final c:LTlc;
+.field public final c:LUZ7;
 
-.field public t:Lk0c;
+.field public t:LVcj;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, LRu7;->k(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, LYG9;->g(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -59,27 +59,27 @@
 
     .line 10
     .line 11
-    new-instance v0, LTlc;
+    new-instance v0, LUZ7;
 
     .line 12
     .line 13
-    const/16 v1, 0xd
+    const/16 v1, 0x19
 
     .line 14
     .line 15
-    invoke-direct {v0, v1}, LTlc;-><init>(I)V
+    invoke-direct {v0, v1}, LUZ7;-><init>(I)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LTlc;
+    iput-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LUZ7;
 
     .line 19
     .line 20
     return-void
 .end method
 
-.method public static b(Landroid/app/job/JobParameters;)LGZj;
+.method public static b(Landroid/app/job/JobParameters;)LEpk;
     .locals 3
 
     .line 1
@@ -112,7 +112,7 @@
 
     .line 14
     .line 15
-    new-instance v1, LGZj;
+    new-instance v1, LEpk;
 
     .line 16
     .line 17
@@ -136,7 +136,7 @@
     move-result p0
 
     .line 27
-    invoke-direct {v1, v0, p0}, LGZj;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v0, p0}, LEpk;-><init>(Ljava/lang/String;I)V
     :try_end_0
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -156,11 +156,11 @@
 
 
 # virtual methods
-.method public final a(LGZj;Z)V
+.method public final a(LEpk;Z)V
     .locals 2
 
     .line 1
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 2
     .line 3
@@ -202,11 +202,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 20
-    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LTlc;
+    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LUZ7;
 
     .line 21
     .line 22
-    invoke-virtual {v0, p1}, LTlc;->i(LGZj;)LOsh;
+    invoke-virtual {v0, p1}, LUZ7;->f(LEpk;)LDQh;
 
     .line 23
     .line 24
@@ -255,7 +255,7 @@
     move-result-object v0
 
     .line 8
-    invoke-static {v0}, LNZj;->I0(Landroid/content/Context;)LNZj;
+    invoke-static {v0}, LQpk;->R(Landroid/content/Context;)LQpk;
 
     .line 9
     .line 10
@@ -263,111 +263,110 @@
     move-result-object v0
 
     .line 12
-    iput-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LNZj;
+    iput-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LQpk;
 
     .line 13
     .line 14
-    iget-object v1, v0, LNZj;->j:LxZd;
+    iget-object v1, v0, LQpk;->p:LWge;
 
     .line 15
     .line 16
-    new-instance v2, Lk0c;
+    new-instance v2, LVcj;
 
     .line 17
     .line 18
-    iget-object v0, v0, LNZj;->h:LQZj;
+    iget-object v0, v0, LQpk;->n:LTpk;
 
     .line 19
     .line 20
-    const/16 v3, 0x17
+    const/4 v3, 0x3
 
     .line 21
-    .line 22
-    invoke-direct {v2, v1, v3, v0}, Lk0c;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v2, v1, v3, v0}, LVcj;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 22
     .line 23
     .line 24
-    .line 25
-    iput-object v2, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->t:Lk0c;
+    iput-object v2, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->t:LVcj;
 
+    .line 25
     .line 26
-    .line 27
-    invoke-virtual {v1, p0}, LxZd;->a(LOT6;)V
+    invoke-virtual {v1, p0}, LWge;->a(LNX6;)V
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 27
     .line 28
     .line 29
-    .line 30
     return-void
 
-    .line 31
+    .line 30
     :catch_0
     move-exception v0
 
-    .line 32
+    .line 31
     invoke-virtual {p0}, Landroid/app/Service;->getApplication()Landroid/app/Application;
 
+    .line 32
     .line 33
     .line 34
-    .line 35
     move-result-object v1
 
-    .line 36
+    .line 35
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 36
     .line 37
     .line 38
-    .line 39
     move-result-object v1
 
-    .line 40
+    .line 39
     const-class v2, Landroid/app/Application;
 
+    .line 40
     .line 41
-    .line 42
     invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
+    .line 42
     .line 43
     .line 44
-    .line 45
     move-result v1
 
-    .line 46
+    .line 45
     if-eqz v1, :cond_0
 
+    .line 46
     .line 47
-    .line 48
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
+    .line 48
     .line 49
     .line 50
-    .line 51
     move-result-object v0
 
-    .line 52
+    .line 51
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 52
     .line 53
     .line 54
-    .line 55
     return-void
 
-    .line 56
+    .line 55
     :cond_0
     new-instance v1, Ljava/lang/IllegalStateException;
 
+    .line 56
     .line 57
-    .line 58
     const-string v2, "WorkManager needs to be initialized via a ContentProvider#onCreate() or an Application#onCreate()."
 
+    .line 58
     .line 59
-    .line 60
     invoke-direct {v1, v2, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
+    .line 60
     .line 61
     .line 62
-    .line 63
     throw v1
 .end method
 
@@ -380,7 +379,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LNZj;
+    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LQpk;
 
     .line 5
     .line 6
@@ -388,11 +387,11 @@
 
     .line 7
     .line 8
-    iget-object v0, v0, LNZj;->j:LxZd;
+    iget-object v0, v0, LQpk;->p:LWge;
 
     .line 9
     .line 10
-    invoke-virtual {v0, p0}, LxZd;->h(LOT6;)V
+    invoke-virtual {v0, p0}, LWge;->h(LNX6;)V
 
     .line 11
     .line 12
@@ -405,7 +404,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LNZj;
+    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LQpk;
 
     .line 2
     .line 3
@@ -419,7 +418,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 8
     .line 9
@@ -441,7 +440,7 @@
 
     .line 18
     :cond_0
-    invoke-static {p1}, Landroidx/work/impl/background/systemjob/SystemJobService;->b(Landroid/app/job/JobParameters;)LGZj;
+    invoke-static {p1}, Landroidx/work/impl/background/systemjob/SystemJobService;->b(Landroid/app/job/JobParameters;)LEpk;
 
     .line 19
     .line 20
@@ -453,7 +452,7 @@
 
     .line 23
     .line 24
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 25
     .line 26
@@ -494,7 +493,7 @@
 
     .line 42
     .line 43
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 44
     .line 45
@@ -502,7 +501,7 @@
     move-result-object p1
 
     .line 47
-    invoke-virtual {v0}, LGZj;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, LEpk;->toString()Ljava/lang/String;
 
     .line 48
     .line 49
@@ -526,7 +525,7 @@
 
     .line 57
     :cond_2
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 58
     .line 59
@@ -534,7 +533,7 @@
     move-result-object v2
 
     .line 61
-    invoke-virtual {v0}, LGZj;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, LEpk;->toString()Ljava/lang/String;
 
     .line 62
     .line 63
@@ -570,20 +569,20 @@
 
     .line 78
     .line 79
-    new-instance v3, LTlc;
+    new-instance v3, LcA8;
 
     .line 80
     .line 81
-    const/16 v4, 0x11
+    const/16 v4, 0x1c
 
     .line 82
     .line 83
-    invoke-direct {v3, v4}, LTlc;-><init>(I)V
+    invoke-direct {v3, v4}, LcA8;-><init>(I)V
 
     .line 84
     .line 85
     .line 86
-    invoke-static {p1}, LEgi;->b(Landroid/app/job/JobParameters;)[Landroid/net/Uri;
+    invoke-static {p1}, LwFi;->b(Landroid/app/job/JobParameters;)[Landroid/net/Uri;
 
     .line 87
     .line 88
@@ -595,7 +594,7 @@
 
     .line 91
     .line 92
-    invoke-static {p1}, LEgi;->b(Landroid/app/job/JobParameters;)[Landroid/net/Uri;
+    invoke-static {p1}, LwFi;->b(Landroid/app/job/JobParameters;)[Landroid/net/Uri;
 
     .line 93
     .line 94
@@ -611,12 +610,12 @@
     move-result-object v4
 
     .line 100
-    iput-object v4, v3, LTlc;->c:Ljava/lang/Object;
+    iput-object v4, v3, LcA8;->c:Ljava/lang/Object;
 
     .line 101
     .line 102
     :cond_3
-    invoke-static {p1}, LEgi;->a(Landroid/app/job/JobParameters;)[Ljava/lang/String;
+    invoke-static {p1}, LwFi;->a(Landroid/app/job/JobParameters;)[Ljava/lang/String;
 
     .line 103
     .line 104
@@ -628,7 +627,7 @@
 
     .line 107
     .line 108
-    invoke-static {p1}, LEgi;->a(Landroid/app/job/JobParameters;)[Ljava/lang/String;
+    invoke-static {p1}, LwFi;->a(Landroid/app/job/JobParameters;)[Ljava/lang/String;
 
     .line 109
     .line 110
@@ -644,7 +643,7 @@
     move-result-object v4
 
     .line 116
-    iput-object v4, v3, LTlc;->b:Ljava/lang/Object;
+    iput-object v4, v3, LcA8;->b:Ljava/lang/Object;
 
     .line 117
     .line 118
@@ -657,7 +656,7 @@
 
     .line 121
     .line 122
-    invoke-static {p1}, LFgi;->a(Landroid/app/job/JobParameters;)Landroid/net/Network;
+    invoke-static {p1}, LxFi;->a(Landroid/app/job/JobParameters;)Landroid/net/Network;
 
     .line 123
     .line 124
@@ -671,15 +670,15 @@
     .line 127
     :cond_6
     :goto_0
-    iget-object p1, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->t:Lk0c;
+    iget-object p1, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->t:LVcj;
 
     .line 128
     .line 129
-    iget-object v2, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LTlc;
+    iget-object v2, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LUZ7;
 
     .line 130
     .line 131
-    invoke-virtual {v2, v0}, LTlc;->k(LGZj;)LOsh;
+    invoke-virtual {v2, v0}, LUZ7;->j(LEpk;)LDQh;
 
     .line 132
     .line 133
@@ -687,7 +686,7 @@
     move-result-object v0
 
     .line 135
-    invoke-virtual {p1, v0, v3}, Lk0c;->n(LOsh;LTlc;)V
+    invoke-virtual {p1, v0, v3}, LVcj;->a(LDQh;LcA8;)V
 
     .line 136
     .line 137
@@ -709,7 +708,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LNZj;
+    iget-object v0, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LQpk;
 
     .line 2
     .line 3
@@ -720,7 +719,7 @@
 
     .line 5
     .line 6
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 7
     .line 8
@@ -737,7 +736,7 @@
 
     .line 14
     :cond_0
-    invoke-static {p1}, Landroidx/work/impl/background/systemjob/SystemJobService;->b(Landroid/app/job/JobParameters;)LGZj;
+    invoke-static {p1}, Landroidx/work/impl/background/systemjob/SystemJobService;->b(Landroid/app/job/JobParameters;)LEpk;
 
     .line 15
     .line 16
@@ -749,7 +748,7 @@
 
     .line 19
     .line 20
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 21
     .line 22
@@ -769,7 +768,7 @@
 
     .line 29
     :cond_1
-    invoke-static {}, LRu7;->j()LRu7;
+    invoke-static {}, LYG9;->d()LYG9;
 
     .line 30
     .line 31
@@ -777,7 +776,7 @@
     move-result-object v2
 
     .line 33
-    invoke-virtual {v0}, LGZj;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, LEpk;->toString()Ljava/lang/String;
 
     .line 34
     .line 35
@@ -809,11 +808,11 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 48
-    iget-object v2, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LTlc;
+    iget-object v2, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->c:LUZ7;
 
     .line 49
     .line 50
-    invoke-virtual {v2, v0}, LTlc;->i(LGZj;)LOsh;
+    invoke-virtual {v2, v0}, LUZ7;->f(LEpk;)LDQh;
 
     .line 51
     .line 52
@@ -837,7 +836,7 @@
 
     .line 61
     .line 62
-    invoke-static {p1}, LGgi;->a(Landroid/app/job/JobParameters;)I
+    invoke-static {p1}, LyFi;->a(Landroid/app/job/JobParameters;)I
 
     .line 63
     .line 64
@@ -854,29 +853,29 @@
     .line 68
     .line 69
     :goto_0
-    iget-object v3, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->t:Lk0c;
+    iget-object v3, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->t:LVcj;
 
     .line 70
     .line 71
-    invoke-virtual {v3, v2, p1}, Lk0c;->o(LOsh;I)V
+    invoke-virtual {v3, v2, p1}, LVcj;->b(LDQh;I)V
 
     .line 72
     .line 73
     .line 74
     :cond_3
-    iget-object p1, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LNZj;
+    iget-object p1, p0, Landroidx/work/impl/background/systemjob/SystemJobService;->a:LQpk;
 
     .line 75
     .line 76
-    iget-object p1, p1, LNZj;->j:LxZd;
+    iget-object p1, p1, LQpk;->p:LWge;
 
     .line 77
     .line 78
-    iget-object v0, v0, LGZj;->a:Ljava/lang/String;
+    iget-object v0, v0, LEpk;->a:Ljava/lang/String;
 
     .line 79
     .line 80
-    invoke-virtual {p1, v0}, LxZd;->f(Ljava/lang/String;)Z
+    invoke-virtual {p1, v0}, LWge;->f(Ljava/lang/String;)Z
 
     .line 81
     .line 82

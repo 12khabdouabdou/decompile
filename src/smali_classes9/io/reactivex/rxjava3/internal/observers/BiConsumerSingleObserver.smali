@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 2
 
     .line 1

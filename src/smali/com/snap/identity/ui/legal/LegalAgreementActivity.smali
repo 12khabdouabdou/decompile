@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKI8;
+.implements LfQ8;
 
 
 # instance fields
-.field public s0:LKLi;
+.field public s0:Llbj;
 
 .field public t0:Lcom/snapchat/deck/views/DeckView;
 
-.field public u0:LLp6;
+.field public u0:LYs6;
 
-.field public v0:LrH9;
+.field public v0:LQS9;
 
-.field public w0:LrH9;
+.field public w0:LQS9;
 
-.field public x0:LrH9;
+.field public x0:LQS9;
 
-.field public y0:LrH9;
+.field public y0:LQS9;
 
 
 # direct methods
@@ -37,11 +37,11 @@
 
 
 # virtual methods
-.method public final Z(Landroid/os/Bundle;)V
+.method public final W(Landroid/os/Bundle;)V
     .locals 2
 
     .line 1
-    const p1, 0x7f0e0030
+    const p1, 0x7f0e0031
 
     .line 2
     .line 3
@@ -51,7 +51,7 @@
     .line 5
     .line 6
     .line 7
-    const p1, 0x7f0b0737
+    const p1, 0x7f0b07d4
 
     .line 8
     .line 9
@@ -76,7 +76,7 @@
 
     .line 19
     .line 20
-    iget-object p1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->y0:LrH9;
+    iget-object p1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->y0:LQS9;
 
     .line 21
     .line 22
@@ -87,7 +87,7 @@
 
     .line 24
     .line 25
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -95,11 +95,11 @@
     move-result-object p1
 
     .line 29
-    check-cast p1, LXog;
+    check-cast p1, LgKg;
 
     .line 30
     .line 31
-    iget-object v1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->w0:LrH9;
+    iget-object v1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->w0:LQS9;
 
     .line 32
     .line 33
@@ -107,7 +107,7 @@
 
     .line 34
     .line 35
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v1}, LQS9;->get()Ljava/lang/Object;
 
     .line 36
     .line 37
@@ -115,7 +115,7 @@
     move-result-object v0
 
     .line 39
-    invoke-virtual {p1, v0}, LXog;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1, v0}, LgKg;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 40
     .line 41
@@ -123,7 +123,7 @@
     move-result-object p1
 
     .line 43
-    invoke-static {p0, p1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+    invoke-static {p0, p1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
 
     .line 44
     .line 45
@@ -136,7 +136,7 @@
 
     .line 48
     .line 49
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -149,7 +149,7 @@
 
     .line 54
     .line 55
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 56
     .line 57
@@ -174,11 +174,11 @@
     throw p1
 .end method
 
-.method public final a0()V
+.method public final X()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->w0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->w0:LQS9;
 
     .line 2
     .line 3
@@ -189,7 +189,7 @@
 
     .line 5
     .line 6
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -197,16 +197,16 @@
     move-result-object v0
 
     .line 10
-    check-cast v0, LBK9;
+    check-cast v0, LgW9;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, LBK9;->a()V
+    invoke-virtual {v0}, LgW9;->a()V
 
     .line 13
     .line 14
     .line 15
-    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LQS9;
 
     .line 16
     .line 17
@@ -214,7 +214,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 20
     .line 21
@@ -222,11 +222,11 @@
     move-result-object v0
 
     .line 23
-    check-cast v0, LTqc;
+    check-cast v0, LmGc;
 
     .line 24
     .line 25
-    invoke-virtual {v0}, LTqc;->A()V
+    invoke-virtual {v0}, LmGc;->A()V
 
     .line 26
     .line 27
@@ -239,7 +239,7 @@
 
     .line 30
     .line 31
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 32
     .line 33
@@ -252,7 +252,7 @@
 
     .line 36
     .line 37
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -260,11 +260,11 @@
     throw v1
 .end method
 
-.method public final androidInjector()LtQ;
+.method public final androidInjector()LyS;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->u0:LLp6;
+    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->u0:LYs6;
 
     .line 2
     .line 3
@@ -280,7 +280,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -291,16 +291,16 @@
     throw v0
 .end method
 
-.method public final h0()V
+.method public final e0()V
     .locals 7
 
     .line 1
-    invoke-static {p0}, LCq9;->v0(Landroid/app/Activity;)V
+    invoke-static {p0}, LbS2;->u(Landroid/app/Activity;)V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LKLi;
+    new-instance v0, Llbj;
 
     .line 5
     .line 6
@@ -411,16 +411,16 @@
     move-result v3
 
     .line 56
-    invoke-direct {v0, v2, v1, v3, v4}, LKLi;-><init>(Ljava/lang/String;IILjava/lang/String;)V
+    invoke-direct {v0, v2, v1, v3, v4}, Llbj;-><init>(Ljava/lang/String;IILjava/lang/String;)V
 
     .line 57
     .line 58
     .line 59
-    iput-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->s0:LKLi;
+    iput-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->s0:Llbj;
 
     .line 60
     .line 61
-    invoke-virtual {v0}, LKLi;->d()I
+    invoke-virtual {v0}, Llbj;->d()I
 
     .line 62
     .line 63
@@ -432,7 +432,7 @@
 
     .line 66
     .line 67
-    invoke-virtual {v0}, LKLi;->c()Ljava/lang/String;
+    invoke-virtual {v0}, Llbj;->c()Ljava/lang/String;
 
     .line 68
     .line 69
@@ -440,7 +440,7 @@
     move-result-object v1
 
     .line 71
-    invoke-static {v1}, LR4i;->w1(Ljava/lang/CharSequence;)Z
+    invoke-static {v1}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
     .line 72
     .line 73
@@ -452,7 +452,7 @@
 
     .line 76
     .line 77
-    invoke-virtual {v0}, LKLi;->b()Ljava/lang/String;
+    invoke-virtual {v0}, Llbj;->b()Ljava/lang/String;
 
     .line 78
     .line 79
@@ -460,7 +460,7 @@
     move-result-object v1
 
     .line 81
-    invoke-static {v1}, LR4i;->w1(Ljava/lang/CharSequence;)Z
+    invoke-static {v1}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
     .line 82
     .line 83
@@ -472,7 +472,7 @@
 
     .line 86
     .line 87
-    invoke-virtual {v0}, LKLi;->a()I
+    invoke-virtual {v0}, Llbj;->a()I
 
     .line 88
     .line 89
@@ -500,7 +500,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LQS9;
 
     .line 2
     .line 3
@@ -511,7 +511,7 @@
 
     .line 5
     .line 6
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -519,11 +519,11 @@
     move-result-object v0
 
     .line 10
-    check-cast v0, LTqc;
+    check-cast v0, LmGc;
 
     .line 11
     .line 12
-    invoke-virtual {v0, v1}, LTqc;->z(LqU6;)Z
+    invoke-virtual {v0, v1}, LmGc;->z(LEY6;)Z
 
     .line 13
     .line 14
@@ -576,7 +576,7 @@
 
     .line 38
     :cond_0
-    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->v0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->v0:LQS9;
 
     .line 39
     .line 40
@@ -584,7 +584,7 @@
 
     .line 41
     .line 42
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 43
     .line 44
@@ -592,7 +592,7 @@
     move-result-object v0
 
     .line 46
-    check-cast v0, Lwo9;
+    check-cast v0, Lyx9;
 
     .line 47
     .line 48
@@ -600,7 +600,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {v0, v1}, Lwo9;->a(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0, v1}, Lyx9;->a(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 51
     .line 52
@@ -632,7 +632,7 @@
 
     .line 65
     .line 66
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 67
     .line 68
@@ -649,7 +649,7 @@
 
     .line 72
     .line 73
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 74
     .line 75
@@ -666,7 +666,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LrH9;
+    iget-object p1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LQS9;
 
     .line 5
     .line 6
@@ -681,7 +681,7 @@
 
     .line 10
     .line 11
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -689,7 +689,7 @@
     move-result-object p1
 
     .line 15
-    check-cast p1, LTqc;
+    check-cast p1, LmGc;
 
     .line 16
     .line 17
@@ -701,12 +701,12 @@
 
     .line 20
     .line 21
-    invoke-virtual {p1, v2}, LTqc;->C(Lcom/snapchat/deck/views/DeckView;)V
+    invoke-virtual {p1, v2}, LmGc;->C(Lcom/snapchat/deck/views/DeckView;)V
 
     .line 22
     .line 23
     .line 24
-    iget-object p1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LrH9;
+    iget-object p1, p0, Lcom/snap/identity/ui/legal/LegalAgreementActivity;->x0:LQS9;
 
     .line 25
     .line 26
@@ -714,7 +714,7 @@
 
     .line 27
     .line 28
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -725,7 +725,7 @@
     move-object v0, p1
 
     .line 33
-    check-cast v0, LTqc;
+    check-cast v0, LmGc;
 
     .line 34
     .line 35
@@ -751,7 +751,7 @@
 
     .line 42
     .line 43
-    invoke-static/range {v0 .. v7}, LTqc;->P(LTqc;LcSa;LOpc;Ljava/util/ArrayList;LPpc;LJqc;ZI)V
+    invoke-static/range {v0 .. v7}, LmGc;->N(LmGc;LL4b;LjFc;Ljava/util/ArrayList;LkFc;LcGc;ZI)V
 
     .line 44
     .line 45
@@ -760,7 +760,7 @@
 
     .line 47
     :cond_0
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 48
     .line 49
@@ -773,7 +773,7 @@
 
     .line 52
     .line 53
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -782,7 +782,7 @@
 
     .line 57
     :cond_2
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 58
     .line 59

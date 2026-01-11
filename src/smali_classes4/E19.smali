@@ -3,100 +3,140 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+.implements Lcom/snap/composer/bitmoji/IBitmojiFlatlandConfigProvider;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Lkotlin/jvm/functions/Function1;
 
-.field public final synthetic b:LTqc;
-
-.field public final synthetic c:LaH7;
+.field public final b:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public synthetic constructor <init>(LTqc;LaH7;I)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iput p3, p0, LE19;->a:I
-
-    iput-object p1, p0, LE19;->b:LTqc;
-
-    iput-object p2, p0, LE19;->c:LaH7;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LE19;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LE19;->b:Lkotlin/jvm/functions/Function1;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public getDefaultBitmojiBackgroundIdObservable(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    iget v0, p0, LE19;->a:I
+    iget-object v0, p0, LE19;->a:Lkotlin/jvm/functions/Function1;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, LP5g;->f0:Lcqc;
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public getDefaultBitmojiSceneIdObservable(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LE19;->b:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    iget-object v1, p0, LE19;->c:LaH7;
+    const-class v1, Lcom/snap/composer/bitmoji/IBitmojiFlatlandConfigProvider;
 
     .line 9
     .line 10
-    const/4 v2, 0x0
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
-    iget-object v3, p0, LE19;->b:LTqc;
-
     .line 12
     .line 13
-    invoke-virtual {v3, v1, v0, v2}, LTqc;->w(LWRa;Ldqc;LPpc;)V
+    move-result p1
 
     .line 14
-    .line 15
-    .line 16
-    return-void
-
-    .line 17
-    :pswitch_0
-    sget-object v0, LG4g;->f0:Lcqc;
-
-    .line 18
-    .line 19
-    iget-object v1, p0, LE19;->c:LaH7;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x0
-
-    .line 22
-    iget-object v3, p0, LE19;->b:LTqc;
-
-    .line 23
-    .line 24
-    invoke-virtual {v3, v1, v0, v2}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 25
-    .line 26
-    .line 27
-    return-void
-
-    .line 28
-    nop
-
-    .line 29
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return p1
 .end method

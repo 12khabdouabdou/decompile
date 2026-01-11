@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/placeprofile/PlaceCardData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'placeId\':s,\'name\':s,\'isFavorite\':b,\'favoritesData\':r?:\'[0]\',\'pricyness\':s?,\'category\':s?,\'kindName\':s?,\'orbisStoryUrl\':s?,\'providerImageUrl\':s?,\'iconUrl\':s?,\'numOrbisStories\':d@?,\'numProviderStories\':d@?,\'lat\':d@?,\'lng\':d@?,\'boundingBox\':r?:\'[1]\',\'isLocality\':b@?,\'distanceFromUser\':s?,\'locality\':s?,\'openingHours\':r?:\'[2]\',\'debugInfo\':r?:\'[3]\'"
     typeReferences = {

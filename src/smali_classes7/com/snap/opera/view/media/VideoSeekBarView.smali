@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:LKGj;
+.field public a:Lg6k;
 
 .field public b:F
 
@@ -46,7 +46,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/view/media/VideoSeekBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/view/media/VideoSeekBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/view/media/VideoSeekBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/view/media/VideoSeekBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 5
-    sget-object p3, LIUc;->Z:LIUc;
+    sget-object p3, Lt9d;->Z:Lt9d;
 
     invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -89,7 +89,7 @@
     invoke-static {p3}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 7
-    sget-object p3, Lrn0;->a:Lrn0;
+    sget-object p3, LJp0;->a:LJp0;
 
     const/high16 p3, -0x40800000    # -1.0f
 
@@ -129,7 +129,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lvve;->a:[I
+    sget-object v2, LeNe;->a:[I
 
     const/4 v3, 0x0
 
@@ -143,7 +143,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f070522
+    const v2, 0x7f070549
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f070523
+    const v4, 0x7f07054a
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -187,7 +187,7 @@
 
     move-result-object v1
 
-    const v4, 0x7f070525
+    const v4, 0x7f07054c
 
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -204,10 +204,10 @@
 
     iput v1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->j0:F
 
-    const v1, 0x7f060469
+    const v1, 0x7f06052b
 
     .line 20
-    invoke-static {p1, v1}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, v1}, LV14;->c(Landroid/content/Context;I)I
 
     move-result v1
 
@@ -219,10 +219,10 @@
     .line 22
     invoke-virtual {p3, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    const p3, 0x7f060462
+    const p3, 0x7f060521
 
     .line 23
-    invoke-static {p1, p3}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, p3}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p1
 
@@ -255,7 +255,7 @@
     throw p1
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -336,7 +336,7 @@
 
     .line 22
     .line 23
-    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:LKGj;
+    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:Lg6k;
 
     .line 24
     .line 25
@@ -344,7 +344,7 @@
 
     .line 26
     .line 27
-    invoke-interface {p1}, LKGj;->i()V
+    invoke-interface {p1}, Lg6k;->f()V
 
     .line 28
     .line 29
@@ -383,7 +383,7 @@
 
     .line 44
     .line 45
-    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:LKGj;
+    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:Lg6k;
 
     .line 46
     .line 47
@@ -391,7 +391,7 @@
 
     .line 48
     .line 49
-    invoke-interface {p1, p2}, LKGj;->j(F)V
+    invoke-interface {p1, p2}, Lg6k;->i(F)V
 
     .line 50
     .line 51
@@ -430,7 +430,7 @@
 
     .line 66
     .line 67
-    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:LKGj;
+    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:Lg6k;
 
     .line 68
     .line 69
@@ -438,7 +438,7 @@
 
     .line 70
     .line 71
-    invoke-interface {p1, p2}, LKGj;->j(F)V
+    invoke-interface {p1, p2}, Lg6k;->i(F)V
 
     .line 72
     .line 73
@@ -448,7 +448,7 @@
 
     .line 75
     .line 76
-    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:LKGj;
+    iget-object p1, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:Lg6k;
 
     .line 77
     .line 78
@@ -456,7 +456,7 @@
 
     .line 79
     .line 80
-    invoke-interface {p1}, LKGj;->i()V
+    invoke-interface {p1}, Lg6k;->f()V
 
     .line 81
     .line 82
@@ -467,7 +467,7 @@
 
     .line 84
     :cond_6
-    iget-object p2, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:LKGj;
+    iget-object p2, p0, Lcom/snap/opera/view/media/VideoSeekBarView;->a:Lg6k;
 
     .line 85
     .line 86
@@ -475,7 +475,7 @@
 
     .line 87
     .line 88
-    invoke-interface {p2}, LKGj;->h()V
+    invoke-interface {p2}, Lg6k;->b()V
 
     .line 89
     .line 90

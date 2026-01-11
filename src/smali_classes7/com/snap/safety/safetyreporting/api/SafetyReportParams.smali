@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/SafetyReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'reportType\':r:\'[0]\',\'userParams\':r?:\'[1]\',\'lensParams\':r?:\'[2]\',\'spotlightSnapParams\':r?:\'[3]\',\'customStoryParams\':r?:\'[4]\',\'myStoryParams\':r?:\'[5]\',\'publicUserStoryParams\':r?:\'[6]\',\'publisherStoryTileParams\':r?:\'[7]\',\'officialUserStoryTileParams\':r?:\'[8]\',\'nonPartnerStoryTileParams\':r?:\'[9]\',\'mapStoryParams\':r?:\'[10]\',\'savedStorySnapParams\':r?:\'[11]\',\'savedStoryTileParams\':r?:\'[12]\',\'topicStoryParams\':r?:\'[13]\',\'spotlightReplyParams\':r?:\'[14]\',\'publisherStoryParams\':r?:\'[15]\',\'privateSnapParams\':r?:\'[16]\',\'chatMediaParams\':r?:\'[17]\',\'chatMessageParams\':r?:\'[18]\',\'chatWallpaperParams\':r?:\'[19]\',\'profileBackgroundParams\':r?:\'[20]\',\'mediaShareParams\':r?:\'[21]\',\'storyCommentParams\':r?:\'[22]\',\'bitmojiOutfitParams\':r?:\'[23]\'"
     typeReferences = {

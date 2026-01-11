@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/commerce_blizzard_logging/ShoppingHubBaseBlizzardEvent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'commerce_session_id\':s?,\'source_session_id\':s?"
     typeReferences = {}

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lohi;
+    proxyClass = LiGi;
     schema = "\'presentShareSheet\':f|m|(s),\'presentShareSheetForValues\':f?|m|(a<s>)"
     typeReferences = {}
 .end annotation
@@ -20,9 +20,6 @@
 .end method
 
 .method public abstract presentShareSheetForValues(Ljava/util/List;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -30,6 +27,9 @@
             "Ljava/lang/String;",
             ">;)V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

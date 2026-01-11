@@ -1,212 +1,491 @@
-.class public abstract synthetic LIQ5;
+.class public final LIQ5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
-# static fields
-.field public static final synthetic a:[I
 
-.field public static final synthetic b:[I
+# instance fields
+.field public final X:I
+
+.field public final synthetic a:I
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:[B
+
+.field public final t:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 8
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 1
 
-    .line 1
-    const/4 v0, 0x6
+    const/4 v0, 0x0
+
+    iput v0, p0, LIQ5;->a:I
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
+    iput-object p1, p0, LIQ5;->b:Ljava/lang/String;
+
     .line 4
+    iput p2, p0, LIQ5;->X:I
+
     .line 5
-    move-result-object v1
+    iput p3, p0, LIQ5;->t:I
+
+    mul-int p2, p2, p3
 
     .line 6
-    array-length v1, v1
+    new-array p1, p2, [B
+
+    iput-object p1, p0, LIQ5;->c:[B
+
+    const/4 p2, -0x1
 
     .line 7
-    new-array v1, v1, [I
+    invoke-static {p1, p2}, Ljava/util/Arrays;->fill([BB)V
 
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;[BIII)V
+    .locals 0
+
+    .line 1
+    iput p5, p0, LIQ5;->a:I
+
+    iput-object p1, p0, LIQ5;->b:Ljava/lang/String;
+
+    iput-object p2, p0, LIQ5;->c:[B
+
+    iput p3, p0, LIQ5;->t:I
+
+    iput p4, p0, LIQ5;->X:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(IIII)V
+    .locals 2
+
+    .line 1
+    if-gez p1, :cond_0
+
+    .line 2
+    .line 3
+    iget v0, p0, LIQ5;->t:I
+
+    .line 4
+    .line 5
+    add-int/2addr p1, v0
+
+    .line 6
+    add-int/lit8 v0, v0, 0x4
+
+    .line 7
     .line 8
-    .line 9
-    const/4 v2, 0x0
+    rem-int/lit8 v0, v0, 0x8
 
+    .line 9
     .line 10
-    const/4 v3, 0x1
+    rsub-int/lit8 v0, v0, 0x4
 
     .line 11
-    :try_start_0
-    aput v3, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 12
+    add-int/2addr p2, v0
+
     .line 13
-    :catch_0
-    const/4 v4, 0x2
+    :cond_0
+    iget v0, p0, LIQ5;->X:I
 
     .line 14
-    :try_start_1
-    aput v4, v1, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 15
-    .line 16
-    :catch_1
-    const/4 v5, 0x3
+    if-gez p2, :cond_1
 
+    .line 16
     .line 17
-    :try_start_2
-    aput v5, v1, v5
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    add-int/2addr p2, v0
 
     .line 18
-    .line 19
-    :catch_2
-    const/4 v6, 0x4
+    add-int/lit8 v1, v0, 0x4
 
+    .line 19
     .line 20
-    :try_start_3
-    aput v6, v1, v4
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    rem-int/lit8 v1, v1, 0x8
 
     .line 21
     .line 22
-    :catch_3
-    const/4 v7, 0x5
+    rsub-int/lit8 v1, v1, 0x4
 
     .line 23
-    :try_start_4
-    aput v7, v1, v6
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
     .line 24
+    add-int/2addr p1, v1
+
     .line 25
-    :catch_4
-    :try_start_5
-    aput v0, v1, v7
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    :cond_1
+    iget-object v1, p0, LIQ5;->b:Ljava/lang/String;
 
     .line 26
     .line 27
-    :catch_5
-    sput-object v1, LIQ5;->a:[I
+    invoke-virtual {v1, p3}, Ljava/lang/String;->charAt(I)C
 
     .line 28
     .line 29
-    invoke-static {v6}, Llva;->M(I)[I
-
     .line 30
-    .line 31
-    .line 32
-    move-result-object v0
+    move-result p3
 
+    .line 31
+    rsub-int/lit8 p4, p4, 0x8
+
+    .line 32
     .line 33
-    array-length v0, v0
+    const/4 v1, 0x1
 
     .line 34
-    new-array v0, v0, [I
+    shl-int p4, v1, p4
 
     .line 35
     .line 36
-    :try_start_6
-    aput v3, v0, v5
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    and-int/2addr p3, p4
+
+    .line 37
+    if-eqz p3, :cond_2
+
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_2
+    const/4 v1, 0x0
+
+    .line 41
+    :goto_0
+    mul-int p1, p1, v0
+
+    .line 42
+    .line 43
+    add-int/2addr p1, p2
+
+    .line 44
+    int-to-byte p2, v1
+
+    .line 45
+    iget-object p3, p0, LIQ5;->c:[B
+
+    .line 46
+    .line 47
+    aput-byte p2, p3, p1
+
+    .line 48
+    .line 49
+    return-void
+.end method
+
+.method public apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    iget v0, p0, LIQ5;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, LqUa;
+
+    .line 7
+    .line 8
+    new-instance v0, LI7g;
+
+    .line 9
+    .line 10
+    invoke-direct {v0}, LI7g;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    iput-object p1, v0, LI7g;->Z:LqUa;
+
+    .line 14
+    .line 15
+    const/4 p1, 0x3
+
+    .line 16
+    iput p1, v0, LI7g;->a:I
+
+    .line 17
+    .line 18
+    iget-object v1, p0, LIQ5;->b:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    iput-object v1, v0, LI7g;->b:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    iget-object v1, p0, LIQ5;->c:[B
+
+    .line 23
+    .line 24
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object v1, v0, LI7g;->t:[B
+
+    .line 28
+    .line 29
+    iget v1, v0, LI7g;->c:I
+
+    .line 30
+    .line 31
+    iget v2, p0, LIQ5;->t:I
+
+    .line 32
+    .line 33
+    iput v2, v0, LI7g;->X:I
+
+    .line 34
+    .line 35
+    or-int/2addr p1, v1
+
+    .line 36
+    iput p1, v0, LI7g;->c:I
 
     .line 37
     .line 38
-    :catch_6
-    :try_start_7
-    aput v4, v0, v3
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    iget p1, p0, LIQ5;->X:I
 
     .line 39
     .line 40
-    :catch_7
-    :try_start_8
-    aput v5, v0, v4
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    invoke-static {p1}, LqEk;->i(I)I
 
     .line 41
     .line 42
-    :catch_8
-    :try_start_9
-    aput v6, v0, v2
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
     .line 43
+    move-result p1
+
     .line 44
-    :catch_9
-    invoke-static {v7}, Llva;->M(I)[I
+    iput p1, v0, LI7g;->Y:I
 
     .line 45
     .line 46
-    .line 47
-    move-result-object v0
+    iget p1, v0, LI7g;->c:I
 
+    .line 47
     .line 48
-    array-length v0, v0
+    or-int/lit8 p1, p1, 0x4
 
     .line 49
-    new-array v0, v0, [I
-
     .line 50
-    .line 51
-    :try_start_a
-    aput v3, v0, v5
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+    iput p1, v0, LI7g;->c:I
 
+    .line 51
     .line 52
+    return-object v0
+
     .line 53
-    :catch_a
-    :try_start_b
-    aput v4, v0, v3
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+    :pswitch_0
+    check-cast p1, LqUa;
 
     .line 54
     .line 55
-    :catch_b
-    :try_start_c
-    aput v5, v0, v4
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+    new-instance v0, LI7g;
 
     .line 56
     .line 57
-    :catch_c
-    :try_start_d
-    aput v6, v0, v6
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
+    invoke-direct {v0}, LI7g;-><init>()V
 
     .line 58
     .line 59
-    :catch_d
-    :try_start_e
-    aput v7, v0, v2
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
-
     .line 60
-    .line 61
-    :catch_e
-    sput-object v0, LIQ5;->b:[I
+    iput-object p1, v0, LI7g;->Z:LqUa;
 
+    .line 61
     .line 62
+    const/4 p1, 0x2
+
     .line 63
+    iput p1, v0, LI7g;->a:I
+
+    .line 64
+    .line 65
+    iget-object p1, p0, LIQ5;->b:Ljava/lang/String;
+
+    .line 66
+    .line 67
+    iput-object p1, v0, LI7g;->b:Ljava/lang/String;
+
+    .line 68
+    .line 69
+    iget-object p1, p0, LIQ5;->c:[B
+
+    .line 70
+    .line 71
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 72
+    .line 73
+    .line 74
+    iput-object p1, v0, LI7g;->t:[B
+
+    .line 75
+    .line 76
+    iget p1, v0, LI7g;->c:I
+
+    .line 77
+    .line 78
+    iget v1, p0, LIQ5;->t:I
+
+    .line 79
+    .line 80
+    iput v1, v0, LI7g;->X:I
+
+    .line 81
+    .line 82
+    or-int/lit8 p1, p1, 0x3
+
+    .line 83
+    .line 84
+    iput p1, v0, LI7g;->c:I
+
+    .line 85
+    .line 86
+    iget p1, p0, LIQ5;->X:I
+
+    .line 87
+    .line 88
+    invoke-static {p1}, LqEk;->i(I)I
+
+    .line 89
+    .line 90
+    .line 91
+    move-result p1
+
+    .line 92
+    iput p1, v0, LI7g;->Y:I
+
+    .line 93
+    .line 94
+    iget p1, v0, LI7g;->c:I
+
+    .line 95
+    .line 96
+    or-int/lit8 p1, p1, 0x4
+
+    .line 97
+    .line 98
+    iput p1, v0, LI7g;->c:I
+
+    .line 99
+    .line 100
+    return-object v0
+
+    .line 101
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public b(III)V
+    .locals 4
+
+    .line 1
+    add-int/lit8 v0, p1, -0x2
+
+    .line 2
+    .line 3
+    add-int/lit8 v1, p2, -0x2
+
+    .line 4
+    .line 5
+    const/4 v2, 0x1
+
+    .line 6
+    invoke-virtual {p0, v0, v1, p3, v2}, LIQ5;->a(IIII)V
+
+    .line 7
+    .line 8
+    .line 9
+    add-int/lit8 v2, p2, -0x1
+
+    .line 10
+    .line 11
+    const/4 v3, 0x2
+
+    .line 12
+    invoke-virtual {p0, v0, v2, p3, v3}, LIQ5;->a(IIII)V
+
+    .line 13
+    .line 14
+    .line 15
+    add-int/lit8 v0, p1, -0x1
+
+    .line 16
+    .line 17
+    const/4 v3, 0x3
+
+    .line 18
+    invoke-virtual {p0, v0, v1, p3, v3}, LIQ5;->a(IIII)V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 v3, 0x4
+
+    .line 22
+    invoke-virtual {p0, v0, v2, p3, v3}, LIQ5;->a(IIII)V
+
+    .line 23
+    .line 24
+    .line 25
+    const/4 v3, 0x5
+
+    .line 26
+    invoke-virtual {p0, v0, p2, p3, v3}, LIQ5;->a(IIII)V
+
+    .line 27
+    .line 28
+    .line 29
+    const/4 v0, 0x6
+
+    .line 30
+    invoke-virtual {p0, p1, v1, p3, v0}, LIQ5;->a(IIII)V
+
+    .line 31
+    .line 32
+    .line 33
+    const/4 v0, 0x7
+
+    .line 34
+    invoke-virtual {p0, p1, v2, p3, v0}, LIQ5;->a(IIII)V
+
+    .line 35
+    .line 36
+    .line 37
+    const/16 v0, 0x8
+
+    .line 38
+    .line 39
+    invoke-virtual {p0, p1, p2, p3, v0}, LIQ5;->a(IIII)V
+
+    .line 40
+    .line 41
+    .line 42
     return-void
 .end method

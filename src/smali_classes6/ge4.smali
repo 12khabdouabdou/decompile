@@ -1,220 +1,237 @@
 .class public final Lge4;
-.super LEP2;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final I0:Lde4;
+.field public final synthetic a:I
 
-.field public final J0:LwG1;
+.field public final synthetic b:Lje4;
 
-.field public final K0:Z
-
-.field public final L0:I
-
-.field public final M0:I
+.field public final synthetic c:LdH2;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LeLj;Ljava/lang/String;Ljava/util/LinkedHashMap;ZLFM2;ZLPua;LDxk;Lde4;LwG1;Z[BLcom/snapchat/client/messaging/ConversationSubType;Lcom/snapchat/client/messaging/ConversationSubTypeMetadata;)V
-    .locals 20
+.method public constructor <init>(LdH2;Lje4;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lge4;->a:I
 
     .line 1
-    sget-object v2, LFP2;->g0:LFP2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lge4;->c:LdH2;
+
+    iput-object p2, p0, Lge4;->b:Lje4;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lje4;LdH2;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Lge4;->a:I
 
     .line 2
-    .line 3
-    const/4 v15, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
-    const/16 v18, 0x0
+    iput-object p1, p0, Lge4;->b:Lje4;
 
-    .line 5
-    .line 6
-    const/4 v12, 0x0
+    iput-object p2, p0, Lge4;->c:LdH2;
 
-    .line 7
-    const/4 v13, 0x0
-
-    .line 8
-    const v19, 0x4d800
-
-    .line 9
-    .line 10
-    .line 11
-    move-object/from16 v0, p0
-
-    .line 12
-    .line 13
-    move-object/from16 v1, p1
-
-    .line 14
-    .line 15
-    move-object/from16 v3, p2
-
-    .line 16
-    .line 17
-    move-object/from16 v4, p3
-
-    .line 18
-    .line 19
-    move-object/from16 v5, p4
-
-    .line 20
-    .line 21
-    move/from16 v7, p5
-
-    .line 22
-    .line 23
-    move-object/from16 v10, p6
-
-    .line 24
-    .line 25
-    move/from16 v6, p7
-
-    .line 26
-    .line 27
-    move-object/from16 v8, p8
-
-    .line 28
-    .line 29
-    move-object/from16 v9, p9
-
-    .line 30
-    .line 31
-    move/from16 v11, p12
-
-    .line 32
-    .line 33
-    move-object/from16 v14, p13
-
-    .line 34
-    .line 35
-    move-object/from16 v16, p14
-
-    .line 36
-    .line 37
-    move-object/from16 v17, p15
-
-    .line 38
-    .line 39
-    invoke-direct/range {v0 .. v19}, LEP2;-><init>(Landroid/content/Context;LTIj;LeLj;Ljava/lang/String;Ljava/util/Map;ZZLPua;LDxk;LFM2;ZLvGd;LmGd;[BLjava/lang/String;Lcom/snapchat/client/messaging/ConversationSubType;Lcom/snapchat/client/messaging/ConversationSubTypeMetadata;LlY7;I)V
-
-    .line 40
-    .line 41
-    .line 42
-    move-object/from16 v1, p10
-
-    .line 43
-    .line 44
-    iput-object v1, v0, Lge4;->I0:Lde4;
-
-    .line 45
-    .line 46
-    move-object/from16 v1, p11
-
-    .line 47
-    .line 48
-    iput-object v1, v0, Lge4;->J0:LwG1;
-
-    .line 49
-    .line 50
-    invoke-interface/range {p2 .. p2}, LeLj;->W()LhNb;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v1
-
-    .line 54
-    sget-object v2, LhNb;->Z:LhNb;
-
-    .line 55
-    .line 56
-    if-ne v1, v2, :cond_0
-
-    .line 57
-    .line 58
-    if-nez p12, :cond_0
-
-    .line 59
-    .line 60
-    const/4 v1, 0x1
-
-    .line 61
-    goto :goto_0
-
-    .line 62
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 63
-    :goto_0
-    iput-boolean v1, v0, Lge4;->K0:Z
-
-    .line 64
-    .line 65
-    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v1
-
-    .line 69
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v1
-
-    .line 73
-    iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    .line 74
-    .line 75
-    iput v1, v0, Lge4;->L0:I
-
-    .line 76
-    .line 77
-    invoke-virtual/range {p1 .. p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 78
-    .line 79
-    .line 80
-    move-result-object v1
-
-    .line 81
-    const v2, 0x7f0702e6
-
-    .line 82
-    .line 83
-    .line 84
-    invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    .line 85
-    .line 86
-    .line 87
-    move-result v1
-
-    .line 88
-    iput v1, v0, Lge4;->M0:I
-
-    .line 89
-    .line 90
     return-void
 .end method
 
 
 # virtual methods
-.method public final E()Z
-    .locals 1
+.method public final run()V
+    .locals 10
 
     .line 1
-    iget-boolean v0, p0, Lge4;->K0:Z
+    iget-object v0, p0, Lge4;->c:LdH2;
 
     .line 2
     .line 3
-    return v0
+    iget-object v1, p0, Lge4;->b:Lje4;
+
+    .line 4
+    .line 5
+    iget v2, p0, Lge4;->a:I
+
+    .line 6
+    .line 7
+    packed-switch v2, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v2, v1, Lje4;->f0:LJd4;
+
+    .line 14
+    .line 15
+    sget-object v3, LsKc;->b:LsKc;
+
+    .line 16
+    .line 17
+    iput-object v3, v2, LJd4;->c:LsKc;
+
+    .line 18
+    .line 19
+    sget v2, Lt4c;->a:I
+
+    .line 20
+    .line 21
+    sget-object v8, Lkmh;->M1:Lkmh;
+
+    .line 22
+    .line 23
+    iget-wide v4, v0, LdH2;->a:J
+
+    .line 24
+    .line 25
+    iget v9, v0, LdH2;->X:I
+
+    .line 26
+    .line 27
+    new-instance v3, LdH2;
+
+    .line 28
+    .line 29
+    iget-object v6, v0, LdH2;->b:Ljava/lang/String;
+
+    .line 30
+    .line 31
+    iget-boolean v7, v0, LdH2;->c:Z
+
+    .line 32
+    .line 33
+    invoke-direct/range {v3 .. v9}, LdH2;-><init>(JLjava/lang/String;ZLkmh;I)V
+
+    .line 34
+    .line 35
+    .line 36
+    const-string v0, "snapchat://notification/chat_on_friendsfeed/"
+
+    .line 37
+    .line 38
+    invoke-static {v3, v0}, Lt4c;->b(LdH2;Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    sget-object v2, Lkmh;->b:Lkmh;
+
+    .line 43
+    .line 44
+    iget-object v1, v1, Lje4;->b:Lnl5;
+
+    .line 45
+    .line 46
+    invoke-interface {v1, v0, v2}, Lnl5;->b(Landroid/net/Uri;Lkmh;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 47
+    .line 48
+    .line 49
+    return-void
+
+    .line 50
+    :pswitch_0
+    new-instance v2, LeKi;
+
+    .line 51
+    .line 52
+    iget-object v3, v0, LdH2;->b:Ljava/lang/String;
+
+    .line 53
+    .line 54
+    iget-boolean v0, v0, LdH2;->c:Z
+
+    .line 55
+    .line 56
+    invoke-direct {v2, v3, v0}, LeKi;-><init>(Ljava/lang/String;Z)V
+
+    .line 57
+    .line 58
+    .line 59
+    new-instance v0, LUP1;
+
+    .line 60
+    .line 61
+    sget-object v3, LnS1;->b:LnS1;
+
+    .line 62
+    .line 63
+    invoke-direct {v0, v3}, LUP1;-><init>(LnS1;)V
+
+    .line 64
+    .line 65
+    .line 66
+    new-instance v3, LZP1;
+
+    .line 67
+    .line 68
+    new-instance v4, LWP1;
+
+    .line 69
+    .line 70
+    invoke-direct {v4, v2}, LWP1;-><init>(LeKi;)V
+
+    .line 71
+    .line 72
+    .line 73
+    sget-object v2, Lkmh;->M1:Lkmh;
+
+    .line 74
+    .line 75
+    const/4 v5, 0x0
+
+    .line 76
+    invoke-direct {v3, v4, v0, v2, v5}, LZP1;-><init>(LYP1;LVP1;Lkmh;LjFc;)V
+
+    .line 77
+    .line 78
+    .line 79
+    invoke-static {v3}, Lqyd;->j(LZP1;)Landroid/net/Uri;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v0
+
+    .line 83
+    iget-object v1, v1, Lje4;->b:Lnl5;
+
+    .line 84
+    .line 85
+    sget-object v2, Lkmh;->b:Lkmh;
+
+    .line 86
+    .line 87
+    invoke-interface {v1, v0, v2}, Lnl5;->b(Landroid/net/Uri;Lkmh;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 88
+    .line 89
+    .line 90
+    return-void
+
+    .line 91
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

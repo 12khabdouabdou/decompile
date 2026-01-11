@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LnV8;
+    proxyClass = LP29;
     schema = "\'openEmailApp\':f|m|(),\'openUrl\':f|m|(s),\'copyToClipboard\':f|m|(s, s, s)"
     typeReferences = {}
 .end annotation

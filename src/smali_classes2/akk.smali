@@ -1,288 +1,235 @@
-.class public final Lakk;
+.class public final synthetic Lakk;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LPJc;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
-# static fields
-.field public static final a:Lakk;
+# instance fields
+.field public final synthetic a:Lbkk;
 
-.field public static final b:LNo7;
+.field public final synthetic b:I
 
-.field public static final c:LNo7;
+.field public final synthetic c:I
 
-.field public static final d:LNo7;
+.field public final synthetic d:J
 
-.field public static final e:LNo7;
+.field public final synthetic e:LOjk;
+
+.field public final synthetic f:LQjk;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public synthetic constructor <init>(Lbkk;IIJLOjk;LQjk;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lakk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lakk;->a:Lbkk;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lakk;->a:Lakk;
+    iput p2, p0, Lakk;->b:I
 
-    .line 7
-    .line 8
-    new-instance v0, Lgdk;
+    iput p3, p0, Lakk;->c:I
 
-    .line 9
-    .line 10
-    const/4 v1, 0x1
+    iput-wide p4, p0, Lakk;->d:J
 
-    .line 11
-    invoke-direct {v0, v1}, Lgdk;-><init>(I)V
+    iput-object p6, p0, Lakk;->e:LOjk;
 
-    .line 12
-    .line 13
-    .line 14
-    const-class v1, LAdk;
+    iput-object p7, p0, Lakk;->f:LQjk;
 
-    .line 15
-    .line 16
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    new-instance v2, LNo7;
-
-    .line 21
-    .line 22
-    invoke-static {v0}, LsMj;->n(Ljava/util/HashMap;)Ljava/util/Map;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    const-string v3, "imageFormat"
-
-    .line 27
-    .line 28
-    invoke-direct {v2, v3, v0}, LNo7;-><init>(Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 29
-    .line 30
-    .line 31
-    sput-object v2, Lakk;->b:LNo7;
-
-    .line 32
-    .line 33
-    new-instance v0, Lgdk;
-
-    .line 34
-    .line 35
-    const/4 v2, 0x2
-
-    .line 36
-    invoke-direct {v0, v2}, Lgdk;-><init>(I)V
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    new-instance v2, LNo7;
-
-    .line 44
-    .line 45
-    invoke-static {v0}, LsMj;->n(Ljava/util/HashMap;)Ljava/util/Map;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v0
-
-    .line 49
-    const-string v3, "originalImageSize"
-
-    .line 50
-    .line 51
-    invoke-direct {v2, v3, v0}, LNo7;-><init>(Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 52
-    .line 53
-    .line 54
-    sput-object v2, Lakk;->c:LNo7;
-
-    .line 55
-    .line 56
-    new-instance v0, Lgdk;
-
-    .line 57
-    .line 58
-    const/4 v2, 0x3
-
-    .line 59
-    invoke-direct {v0, v2}, Lgdk;-><init>(I)V
-
-    .line 60
-    .line 61
-    .line 62
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object v0
-
-    .line 66
-    new-instance v2, LNo7;
-
-    .line 67
-    .line 68
-    invoke-static {v0}, LsMj;->n(Ljava/util/HashMap;)Ljava/util/Map;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v0
-
-    .line 72
-    const-string v3, "compressedImageSize"
-
-    .line 73
-    .line 74
-    invoke-direct {v2, v3, v0}, LNo7;-><init>(Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 75
-    .line 76
-    .line 77
-    sput-object v2, Lakk;->d:LNo7;
-
-    .line 78
-    .line 79
-    new-instance v0, Lgdk;
-
-    .line 80
-    .line 81
-    const/4 v2, 0x4
-
-    .line 82
-    invoke-direct {v0, v2}, Lgdk;-><init>(I)V
-
-    .line 83
-    .line 84
-    .line 85
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object v0
-
-    .line 89
-    new-instance v1, LNo7;
-
-    .line 90
-    .line 91
-    invoke-static {v0}, LsMj;->n(Ljava/util/HashMap;)Ljava/util/Map;
-
-    .line 92
-    .line 93
-    .line 94
-    move-result-object v0
-
-    .line 95
-    const-string v2, "isOdmlImage"
-
-    .line 96
-    .line 97
-    invoke-direct {v1, v2, v0}, LNo7;-><init>(Ljava/lang/String;Ljava/util/Map;)V
-
-    .line 98
-    .line 99
-    .line 100
-    sput-object v1, Lakk;->e:LNo7;
-
-    .line 101
-    .line 102
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 2
+.method public final run()V
+    .locals 9
 
     .line 1
-    check-cast p1, Lirk;
+    iget-object v1, p0, Lakk;->a:Lbkk;
 
     .line 2
     .line 3
-    check-cast p2, LQJc;
+    iget v0, p0, Lakk;->b:I
 
     .line 4
     .line 5
-    iget-object v0, p1, Lirk;->a:Ldrk;
+    iget v2, p0, Lakk;->c:I
 
     .line 6
     .line 7
-    sget-object v1, Lakk;->b:LNo7;
+    move v4, v2
 
     .line 8
-    .line 9
-    invoke-interface {p2, v1, v0}, LQJc;->a(LNo7;Ljava/lang/Object;)LQJc;
+    iget-wide v2, p0, Lakk;->d:J
 
+    .line 9
     .line 10
+    iget-object v5, p0, Lakk;->e:LOjk;
+
     .line 11
     .line 12
-    sget-object v0, Lakk;->c:LNo7;
+    iget v5, v5, LOjk;->a:I
 
     .line 13
     .line 14
-    iget-object p1, p1, Lirk;->b:Ljava/lang/Integer;
+    iget-object v6, p0, Lakk;->f:LQjk;
 
     .line 15
     .line 16
-    invoke-interface {p2, v0, p1}, LQJc;->a(LNo7;Ljava/lang/Object;)LQJc;
+    invoke-interface {v6}, LQjk;->c()Ljava/io/FileOutputStream;
 
     .line 17
     .line 18
     .line 19
-    sget-object p1, Lakk;->d:LNo7;
+    move-result-object v6
 
     .line 20
-    .line 21
-    const/4 v0, 0x0
+    :try_start_0
+    iget-object v7, v1, Lbkk;->a:Lekk;
 
+    .line 21
     .line 22
-    invoke-interface {p2, p1, v0}, LQJc;->a(LNo7;Ljava/lang/Object;)LQJc;
+    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 23
     .line 24
     .line 25
-    sget-object p1, Lakk;->e:LNo7;
+    new-instance v7, LhU5;
 
     .line 26
     .line 27
-    invoke-interface {p2, p1, v0}, LQJc;->a(LNo7;Ljava/lang/Object;)LQJc;
+    new-instance v8, LZm7;
 
     .line 28
     .line 29
+    invoke-direct {v8, v6}, LZm7;-><init>(Ljava/io/FileOutputStream;)V
+
     .line 30
+    .line 31
+    .line 32
+    invoke-direct {v7, v8}, LhU5;-><init>(LZm7;)V
+
+    .line 33
+    .line 34
+    .line 35
+    move v8, v4
+
+    .line 36
+    new-instance v4, Ldkk;
+
+    .line 37
+    .line 38
+    invoke-direct {v4, v7, v5}, Ldkk;-><init>(LhU5;I)V
+
+    .line 39
+    .line 40
+    .line 41
+    iput v0, v4, Ldkk;->X:I
+
+    .line 42
+    .line 43
+    iput v8, v4, Ldkk;->Y:I
+
+    .line 44
+    .line 45
+    iget-object v7, v1, Lbkk;->c:Ljava/util/LinkedList;
+
+    .line 46
+    .line 47
+    new-instance v0, LH8h;
+
+    .line 48
+    .line 49
+    const/16 v5, 0xe
+
+    .line 50
+    .line 51
+    invoke-direct/range {v0 .. v5}, LH8h;-><init>(Ljava/lang/Object;JLjava/lang/Object;I)V
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-virtual {v7}, Ljava/util/LinkedList;->poll()Ljava/lang/Object;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v1
+
+    .line 58
+    :goto_0
+    if-eqz v1, :cond_0
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v1}, LH8h;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-interface {v7}, Ljava/util/Queue;->poll()Ljava/lang/Object;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v1
+
+    .line 67
+    goto :goto_0
+
+    .line 68
+    :cond_0
+    iget-object v0, v4, Ldkk;->a:LhU5;
+
+    .line 69
+    .line 70
+    invoke-virtual {v0}, LhU5;->close()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-virtual {v6}, Ljava/io/FileOutputStream;->close()V
+
+    .line 74
+    .line 75
+    .line 76
     return-void
+
+    .line 77
+    :goto_1
+    move-object v1, v0
+
+    .line 78
+    goto :goto_2
+
+    .line 79
+    :catchall_0
+    move-exception v0
+
+    .line 80
+    goto :goto_1
+
+    .line 81
+    :goto_2
+    :try_start_1
+    throw v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 82
+    :catchall_1
+    move-exception v0
+
+    .line 83
+    invoke-static {v6, v1}, LrZ3;->p(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    .line 84
+    .line 85
+    .line 86
+    throw v0
 .end method

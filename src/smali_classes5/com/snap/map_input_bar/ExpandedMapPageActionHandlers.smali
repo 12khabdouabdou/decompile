@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LuW6;
-    schema = "\'updateCurrentUserVisibilityOnMap\':f|m|(b),\'handleCenterMapOnUserLocation\':f|m|(),\'getCurrentUserLocation\':f|m|(): a<d@>,\'handleSendDropPin\':f|m|(a<d@>),\'handleSendPlaceCard\':f|m|(s),\'getPlaceCardDataObservable\':f|m|(s): g<c>:\'[0]\'<r:\'[1]\'>,\'onMapClose\':f?|m|()"
+    proxyClass = LK07;
+    schema = "\'updateCurrentUserVisibilityOnMap\':f|m|(b),\'handleCenterMapOnUserLocation\':f|m|(),\'getCurrentUserLocation\':f|m|(): a<d@>,\'handleSendDropPin\':f|m|(a<d@>),\'handleSendPlaceCard\':f|m|(s),\'getPlaceCardDataObservable\':f|m|(s): g<c>:\'[0]\'<r:\'[1]\'>,\'onMapClose\':f?|m|(),\'launchEmojiPicker\':f?|m|(),\'presentDirectionsMenu\':f?|m|(d, d)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LSqd;
+        LkHd;
     }
 .end annotation
 
@@ -37,7 +37,7 @@
             "Ljava/lang/String;",
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LSqd;",
+            "LkHd;",
             ">;"
         }
     .end annotation
@@ -60,8 +60,18 @@
 .method public abstract handleSendPlaceCard(Ljava/lang/String;)V
 .end method
 
+.method public abstract launchEmojiPicker()V
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
 .method public abstract onMapClose()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract presentDirectionsMenu(DD)V
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

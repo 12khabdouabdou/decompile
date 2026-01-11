@@ -1,0 +1,111 @@
+.class public final LVKe;
+.super LhPj;
+.source "SourceFile"
+
+
+# instance fields
+.field public p0:Ljava/lang/String;
+
+
+# virtual methods
+.method public final b()Ljava/util/HashMap;
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, LEV6;->b()Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const-string v1, "QUICK_ADD_SEEN_EVENT"
+
+    .line 6
+    .line 7
+    iget-object v2, p0, LVKe;->p0:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    .line 11
+    .line 12
+    const-string v1, "event_name"
+
+    .line 13
+    .line 14
+    iget-object v2, p0, LEV6;->b:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    return-object v0
+.end method
+
+.method public final d(LeO3;Ljava/util/Set;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final e()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 6
+    .line 7
+    iget-object v1, p0, LVKe;->p0:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v1
+
+    .line 13
+    add-int/2addr v1, v0
+
+    .line 14
+    return v1
+.end method

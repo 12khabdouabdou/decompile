@@ -1,104 +1,122 @@
-.class public abstract synthetic LqKg;
-.super Ljava/lang/Object;
+.class public final LqKg;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LuKg;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(LuKg;I)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lcom/snap/modules/plus_common/SnapMode;->values()[Lcom/snap/modules/plus_common/SnapMode;
+    iput p2, p0, LqKg;->a:I
+
+    iput-object p1, p0, LqKg;->b:LuKg;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LqKg;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iget-object v0, p0, LqKg;->b:LuKg;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lcom/snap/modules/plus_common/SnapMode;->None:Lcom/snap/modules/plus_common/SnapMode;
+    iget-object v0, v0, LuKg;->t:Lq25;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0}, Lq25;->get()Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    move-result v1
+    move-result-object v0
 
     .line 14
-    const/4 v2, 0x1
+    check-cast v0, LEIc;
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
+    return-object v0
+
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lcom/snap/modules/plus_common/SnapMode;->OneTimeOnly:Lcom/snap/modules/plus_common/SnapMode;
+    :pswitch_0
+    iget-object v0, p0, LqKg;->b:LuKg;
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iget-object v0, v0, LuKg;->c:LRbd;
 
     .line 20
     .line 21
+    invoke-virtual {v0}, LRbd;->get()Ljava/lang/Object;
+
     .line 22
-    move-result v1
-
     .line 23
-    const/4 v2, 0x2
-
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    move-result-object v0
 
     .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lcom/snap/modules/plus_common/SnapMode;->SelfDestruct:Lcom/snap/modules/plus_common/SnapMode;
+    check-cast v0, Ldsi;
 
+    .line 26
     .line 27
+    return-object v0
+
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :pswitch_1
+    iget-object v0, p0, LqKg;->b:LuKg;
 
     .line 29
     .line 30
-    .line 31
-    move-result v1
+    iget-object v0, v0, LuKg;->b:LRbd;
 
+    .line 31
     .line 32
-    const/4 v2, 0x3
+    invoke-virtual {v0}, LRbd;->get()Ljava/lang/Object;
 
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
     .line 34
     .line 35
-    :catch_2
-    sput-object v0, LqKg;->a:[I
+    move-result-object v0
 
     .line 36
+    check-cast v0, LeY5;
+
     .line 37
-    return-void
+    .line 38
+    return-object v0
+
+    .line 39
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lkn9;
+.implements Lgw9;
 
 
 # virtual methods

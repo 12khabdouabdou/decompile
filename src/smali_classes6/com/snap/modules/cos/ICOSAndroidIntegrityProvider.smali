@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LtU8;
+    proxyClass = LU19;
     schema = "\'androidIntegrity\':f|m|(t, r<e>:\'[0]\'): p<t>"
     typeReferences = {
         Lcom/snap/modules/cos/COSIntegrityType;

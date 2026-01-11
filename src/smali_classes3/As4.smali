@@ -4,35 +4,15 @@
 
 
 # instance fields
-.field public final a:LvY4;
-
-.field public final b:LII4;
-
-.field public final c:LFY4;
-
-.field public final d:LqY4;
-
-.field public final e:LBlj;
-
-.field public final f:Lfs4;
-
-.field public final g:Lfs4;
-
-.field public final h:Lfs4;
-
-.field public final i:Lfs4;
-
-.field public final j:Lake;
-
-.field public final k:Lfs4;
-
-.field public final l:Lfs4;
-
-.field public final m:Lfs4;
+.field private final a:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "avatar_asset_url"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(LqY4;LFY4;LvY4;LII4;LBlj;)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -41,165 +21,129 @@
     .line 2
     .line 3
     .line 4
-    iput-object p3, p0, LAs4;->a:LvY4;
+    iput-object p1, p0, LAs4;->a:Ljava/lang/String;
 
     .line 5
     .line 6
-    iput-object p4, p0, LAs4;->b:LII4;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LAs4;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LAs4;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    iput-object p2, p0, LAs4;->c:LFY4;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    iput-object p1, p0, LAs4;->d:LqY4;
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, LAs4;
+
     .line 12
-    iput-object p5, p0, LAs4;->e:LBlj;
-
     .line 13
+    iget-object v1, p0, LAs4;->a:Ljava/lang/String;
+
     .line 14
-    new-instance p1, Lfs4;
-
     .line 15
-    .line 16
-    const/4 p2, 0x0
+    iget-object p1, p1, LAs4;->a:Ljava/lang/String;
 
+    .line 16
     .line 17
-    const/16 p3, 0xc
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
-
     .line 20
+    move-result p1
+
     .line 21
+    if-nez p1, :cond_2
+
     .line 22
-    iput-object p1, p0, LAs4;->f:Lfs4;
-
     .line 23
+    return v2
+
     .line 24
-    new-instance p1, Lfs4;
+    :cond_2
+    return v0
+.end method
 
-    .line 25
-    .line 26
-    const/4 p2, 0x2
+.method public final hashCode()I
+    .locals 1
 
-    .line 27
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
+    .line 1
+    iget-object v0, p0, LAs4;->a:Ljava/lang/String;
 
-    .line 28
-    .line 29
-    .line 30
-    iput-object p1, p0, LAs4;->g:Lfs4;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
-    .line 31
-    .line 32
-    new-instance p1, Lfs4;
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
 
-    .line 33
-    .line 34
-    const/4 p2, 0x3
+    .line 7
+    return v0
+.end method
 
-    .line 35
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    .line 36
-    .line 37
-    .line 38
-    iput-object p1, p0, LAs4;->h:Lfs4;
+    .line 1
+    iget-object v0, p0, LAs4;->a:Ljava/lang/String;
 
-    .line 39
-    .line 40
-    new-instance p1, Lfs4;
+    .line 2
+    .line 3
+    const-string v1, "CustomojiAvatarAsset(avatarAssetUrl="
 
-    .line 41
-    .line 42
-    const/4 p2, 0x4
+    .line 4
+    .line 5
+    const-string v2, ")"
 
-    .line 43
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
+    .line 6
+    .line 7
+    invoke-static {v1, v0, v2}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 44
-    .line 45
-    .line 46
-    iput-object p1, p0, LAs4;->i:Lfs4;
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
 
-    .line 47
-    .line 48
-    new-instance p1, Lfs4;
-
-    .line 49
-    .line 50
-    const/4 p2, 0x1
-
-    .line 51
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-static {p1}, LSqg;->a(Lake;)Lake;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object p1
-
-    .line 58
-    iput-object p1, p0, LAs4;->j:Lake;
-
-    .line 59
-    .line 60
-    new-instance p1, Lfs4;
-
-    .line 61
-    .line 62
-    const/4 p2, 0x5
-
-    .line 63
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
-
-    .line 64
-    .line 65
-    .line 66
-    iput-object p1, p0, LAs4;->k:Lfs4;
-
-    .line 67
-    .line 68
-    new-instance p1, Lfs4;
-
-    .line 69
-    .line 70
-    const/4 p2, 0x7
-
-    .line 71
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
-
-    .line 72
-    .line 73
-    .line 74
-    iput-object p1, p0, LAs4;->l:Lfs4;
-
-    .line 75
-    .line 76
-    new-instance p1, Lfs4;
-
-    .line 77
-    .line 78
-    const/4 p2, 0x6
-
-    .line 79
-    invoke-direct {p1, p0, p2, p3}, Lfs4;-><init>(Ljava/lang/Object;II)V
-
-    .line 80
-    .line 81
-    .line 82
-    iput-object p1, p0, LAs4;->m:Lfs4;
-
-    .line 83
-    .line 84
-    return-void
+    .line 11
+    return-object v0
 .end method

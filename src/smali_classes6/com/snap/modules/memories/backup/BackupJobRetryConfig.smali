@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/memories/backup/BackupJobRetryConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'retryType\':r<e>:\'[0]\',\'retryDelaySec\':d,\'maxBackoffExponent\':d,\'maxNumRetries\':d"
     typeReferences = {

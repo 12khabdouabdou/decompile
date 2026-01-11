@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/home/HomeAsset;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'identifier\':s,\'assetInfix\':s,\'name\':s,\'previewUrl\':s,\'shape\':s,\'theme\':s,\'plusOnly\':b,\'depth\':d@?,\'height\':d@?,\'width\':d@?,\'darkPreviewUrl\':s?"
     typeReferences = {}

@@ -1,90 +1,92 @@
 .class public final LHrg;
-.super Lcom/snapchat/client/messaging/SnapInteractionCallback;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/core/SingleEmitter;
+.field public final synthetic a:I
 
-.field public final b:Lez0;
+.field public final synthetic b:LIrg;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;Lez0;)V
+.method public synthetic constructor <init>(LIrg;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/snapchat/client/messaging/SnapInteractionCallback;-><init>()V
+    iput p2, p0, LHrg;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LHrg;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+    iput-object p1, p0, LHrg;->b:LIrg;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LHrg;->b:Lez0;
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final onError(Lcom/snapchat/client/messaging/CallbackStatus;)V
-    .locals 2
+.method public final d()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    new-instance v0, Ly80;
+    iget v0, p0, LHrg;->a:I
 
     .line 2
     .line 3
-    iget-object v1, p0, LHrg;->b:Lez0;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-virtual {v1, p1}, Lez0;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 6
+    new-instance v0, LGrg;
+
     .line 7
     .line 8
-    move-result-object v1
+    iget-object v1, p0, LHrg;->b:LIrg;
 
     .line 9
-    check-cast v1, Ljava/lang/String;
-
     .line 10
+    const/4 v2, 0x1
+
     .line 11
-    invoke-direct {v0, p1, v1}, Ly80;-><init>(Lcom/snapchat/client/messaging/CallbackStatus;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, LGrg;-><init>(LIrg;I)V
 
     .line 12
     .line 13
     .line 14
-    iget-object p1, p0, LHrg;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+    return-object v0
 
     .line 15
-    .line 16
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->f(Ljava/lang/Throwable;)Z
+    :pswitch_0
+    new-instance v0, LGrg;
 
+    .line 16
     .line 17
+    iget-object v1, p0, LHrg;->b:LIrg;
+
     .line 18
     .line 19
-    return-void
-.end method
+    const/4 v2, 0x0
 
-.method public final onSuccess(Ljava/util/ArrayList;)V
-    .locals 1
+    .line 20
+    invoke-direct {v0, v1, v2}, LGrg;-><init>(LIrg;I)V
 
-    .line 1
-    iget-object v0, p0, LHrg;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+    .line 21
+    .line 22
+    .line 23
+    return-object v0
 
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    .line 24
+    nop
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
+    .line 25
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

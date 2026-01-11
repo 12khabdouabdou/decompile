@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LA7e;
+    proxyClass = LUoe;
     schema = "\'mapUrlGenerator\':r?:\'[0]\',\'mapPresenter\':r:\'[1]\',\'getMapPlaceInfo\':f|m|(s): g<c>:\'[2]\'<r:\'[3]\'>"
     typeReferences = {
         Lcom/snap/composer/map/StaticMapUrlGenerator;,

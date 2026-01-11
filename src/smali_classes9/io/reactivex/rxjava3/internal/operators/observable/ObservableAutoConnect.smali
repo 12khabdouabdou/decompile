@@ -65,7 +65,7 @@
 
 
 # virtual methods
-.method public final K0(Lio/reactivex/rxjava3/core/Observer;)V
+.method public final N0(Lio/reactivex/rxjava3/core/Observer;)V
     .locals 2
 
     .line 1
@@ -102,7 +102,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->c1(Lio/reactivex/rxjava3/functions/Consumer;)V
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->f1(Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 19
     .line 20

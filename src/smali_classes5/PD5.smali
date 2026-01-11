@@ -3,18 +3,16 @@
 .source "SourceFile"
 
 # interfaces
-.implements LA0a;
+.implements Lsc9;
 
 
 # instance fields
-.field public final a:LSs;
-
-.field public b:Ljava/util/Set;
+.field public final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(LSs;)V
-    .locals 0
+.method public constructor <init>(LFG5;Lhsc;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,47 +20,58 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LPD5;->a:LSs;
+    new-instance v0, LmA3;
 
     .line 5
     .line 6
-    sget-object p1, LIL6;->a:LIL6;
+    const/16 v1, 0xd
 
     .line 7
     .line 8
-    iput-object p1, p0, LPD5;->b:Ljava/util/Set;
+    invoke-direct {v0, p1, p0, p2, v1}, LmA3;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 9
     .line 10
+    .line 11
+    const/4 p1, 0x2
+
+    .line 12
+    invoke-static {p1, v0}, Lfqj;->y(ILkotlin/jvm/functions/Function0;)LRS9;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    iput-object p1, p0, LPD5;->a:Ljava/lang/Object;
+
+    .line 17
+    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LFN$t;)V
+.method public final e()LTfd;
     .locals 1
 
     .line 1
-    instance-of v0, p1, LFN$t$b;
+    iget-object v0, p0, LPD5;->a:Ljava/lang/Object;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-interface {v0}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
-    check-cast p1, LFN$t$b;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    iget-object p1, p1, LFN$t$b;->d:Ljava/util/Set;
+    check-cast v0, LTfd;
 
     .line 8
     .line 9
-    iput-object p1, p0, LPD5;->b:Ljava/util/Set;
-
-    .line 10
-    .line 11
-    :cond_0
-    return-void
+    return-object v0
 .end method

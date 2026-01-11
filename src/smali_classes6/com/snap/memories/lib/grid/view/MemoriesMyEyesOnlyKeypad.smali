@@ -207,12 +207,12 @@
     move-result-object p1
 
     .line 5
-    invoke-static {p1}, Lsc5;->C0(Landroid/content/Context;)F
+    invoke-static {p1}, LTVd;->T(Landroid/content/Context;)F
 
     move-result p2
 
     .line 6
-    sget-object p3, LgYg;->l:Lq79;
+    sget-object p3, LTjh;->l:Lcf9;
 
     .line 7
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -226,10 +226,10 @@
     iget p1, p1, Landroid/util/DisplayMetrics;->heightPixels:I
 
     .line 8
-    sget-object p3, LeYg;->a:LgYg;
+    sget-object p3, LRjh;->a:LTjh;
 
     .line 9
-    invoke-virtual {p3}, LgYg;->b()I
+    invoke-virtual {p3}, LTjh;->b()I
 
     move-result p3
 
@@ -290,7 +290,7 @@
     :cond_2
     sget-object p1, Lcom/snap/memories/lib/grid/view/MemoriesMyEyesOnlyKeypad;->j0:[I
 
-    invoke-static {v2}, Llva;->L(I)I
+    invoke-static {v2}, LzHa;->L(I)I
 
     move-result p2
 
@@ -303,7 +303,7 @@
     move-result-object v2
 
     .line 11
-    invoke-static {p1, v2, v1}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {p1, v2, v1}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -322,7 +322,7 @@
     move-result-object v2
 
     .line 14
-    invoke-static {p1, v2, v1}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {p1, v2, v1}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -341,7 +341,7 @@
     move-result-object v2
 
     .line 17
-    invoke-static {p1, v2, v1}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {p1, v2, v1}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p1
 
@@ -357,7 +357,7 @@
     move-result-object v3
 
     .line 19
-    invoke-static {v2, v3, v1}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v2, v3, v1}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result v2
 
@@ -376,7 +376,7 @@
     move-result-object v3
 
     .line 22
-    invoke-static {v2, v3, v1}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {v2, v3, v1}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result v2
 
@@ -395,7 +395,7 @@
     move-result-object v2
 
     .line 25
-    invoke-static {p2, v2, v1}, Lsc5;->X(FLandroid/content/Context;Z)I
+    invoke-static {p2, v2, v1}, LTVd;->v(FLandroid/content/Context;Z)I
 
     move-result p2
 
@@ -473,7 +473,7 @@
     .line 38
     invoke-virtual {v4, v6}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    const v6, 0x7f0804de
+    const v6, 0x7f080549
 
     .line 39
     invoke-virtual {v4, v6}, Landroid/view/View;->setBackgroundResource(I)V
@@ -560,7 +560,7 @@
 
     move-result-object v2
 
-    const v4, 0x7f0b0ddd
+    const v4, 0x7f0b0ef8
 
     .line 51
     invoke-virtual {v2, v4}, Landroid/view/View;->setId(I)V
@@ -615,7 +615,7 @@
     .line 60
     invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    const p2, 0x7f0804dc
+    const p2, 0x7f080547
 
     .line 61
     invoke-virtual {p0, p2, v3}, Lcom/snap/memories/lib/grid/view/MemoriesMyEyesOnlyKeypad;->a(IZ)Landroid/widget/Button;
@@ -682,7 +682,7 @@
     move-result-object v1
 
     .line 19
-    const v2, 0x7f060100
+    const v2, 0x7f06012a
 
     .line 20
     .line 21
@@ -785,7 +785,7 @@
     .locals 1
 
     .line 1
-    const v0, 0x7f0804dd
+    const v0, 0x7f080548
 
     .line 2
     .line 3

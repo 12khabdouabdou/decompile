@@ -6,45 +6,45 @@
 # static fields
 .field public static final TYPE:Ljava/lang/String; = "trun"
 
-.field private static final synthetic ajc$tjp_0:Lnz9;
+.field private static final synthetic ajc$tjp_0:LwI9;
 
-.field private static final synthetic ajc$tjp_1:Lnz9;
+.field private static final synthetic ajc$tjp_1:LwI9;
 
-.field private static final synthetic ajc$tjp_10:Lnz9;
+.field private static final synthetic ajc$tjp_10:LwI9;
 
-.field private static final synthetic ajc$tjp_11:Lnz9;
+.field private static final synthetic ajc$tjp_11:LwI9;
 
-.field private static final synthetic ajc$tjp_12:Lnz9;
+.field private static final synthetic ajc$tjp_12:LwI9;
 
-.field private static final synthetic ajc$tjp_13:Lnz9;
+.field private static final synthetic ajc$tjp_13:LwI9;
 
-.field private static final synthetic ajc$tjp_14:Lnz9;
+.field private static final synthetic ajc$tjp_14:LwI9;
 
-.field private static final synthetic ajc$tjp_15:Lnz9;
+.field private static final synthetic ajc$tjp_15:LwI9;
 
-.field private static final synthetic ajc$tjp_16:Lnz9;
+.field private static final synthetic ajc$tjp_16:LwI9;
 
-.field private static final synthetic ajc$tjp_17:Lnz9;
+.field private static final synthetic ajc$tjp_17:LwI9;
 
-.field private static final synthetic ajc$tjp_18:Lnz9;
+.field private static final synthetic ajc$tjp_18:LwI9;
 
-.field private static final synthetic ajc$tjp_19:Lnz9;
+.field private static final synthetic ajc$tjp_19:LwI9;
 
-.field private static final synthetic ajc$tjp_2:Lnz9;
+.field private static final synthetic ajc$tjp_2:LwI9;
 
-.field private static final synthetic ajc$tjp_3:Lnz9;
+.field private static final synthetic ajc$tjp_3:LwI9;
 
-.field private static final synthetic ajc$tjp_4:Lnz9;
+.field private static final synthetic ajc$tjp_4:LwI9;
 
-.field private static final synthetic ajc$tjp_5:Lnz9;
+.field private static final synthetic ajc$tjp_5:LwI9;
 
-.field private static final synthetic ajc$tjp_6:Lnz9;
+.field private static final synthetic ajc$tjp_6:LwI9;
 
-.field private static final synthetic ajc$tjp_7:Lnz9;
+.field private static final synthetic ajc$tjp_7:LwI9;
 
-.field private static final synthetic ajc$tjp_8:Lnz9;
+.field private static final synthetic ajc$tjp_8:LwI9;
 
-.field private static final synthetic ajc$tjp_9:Lnz9;
+.field private static final synthetic ajc$tjp_9:LwI9;
 
 
 # instance fields
@@ -54,13 +54,13 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LaOi;",
+            "LAdj;",
             ">;"
         }
     .end annotation
 .end field
 
-.field private firstSampleFlags:LCif;
+.field private firstSampleFlags:LhBf;
 
 
 # direct methods
@@ -109,7 +109,7 @@
     .locals 6
 
     .line 1
-    new-instance v0, LJ77;
+    new-instance v0, Lvc7;
 
     .line 2
     .line 3
@@ -121,7 +121,7 @@
 
     .line 6
     .line 7
-    invoke-direct {v0, v2, v1}, LJ77;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
+    invoke-direct {v0, v2, v1}, Lvc7;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
     .line 8
     .line 9
@@ -146,7 +146,7 @@
 
     .line 19
     .line 20
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 21
     .line 22
@@ -154,7 +154,7 @@
     move-result-object v1
 
     .line 24
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 25
     .line 26
@@ -162,7 +162,7 @@
     move-result-object v1
 
     .line 28
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_0:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_0:LwI9;
 
     .line 29
     .line 30
@@ -186,7 +186,7 @@
 
     .line 39
     .line 40
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 41
     .line 42
@@ -194,7 +194,7 @@
     move-result-object v1
 
     .line 44
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 45
     .line 46
@@ -202,7 +202,7 @@
     move-result-object v1
 
     .line 48
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_1:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_1:LwI9;
 
     .line 49
     .line 50
@@ -226,7 +226,7 @@
 
     .line 59
     .line 60
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 61
     .line 62
@@ -234,7 +234,7 @@
     move-result-object v1
 
     .line 64
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 65
     .line 66
@@ -242,7 +242,7 @@
     move-result-object v1
 
     .line 68
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_10:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_10:LwI9;
 
     .line 69
     .line 70
@@ -266,7 +266,7 @@
 
     .line 79
     .line 80
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 81
     .line 82
@@ -274,7 +274,7 @@
     move-result-object v1
 
     .line 84
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 85
     .line 86
@@ -282,7 +282,7 @@
     move-result-object v1
 
     .line 88
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_11:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_11:LwI9;
 
     .line 89
     .line 90
@@ -306,7 +306,7 @@
 
     .line 99
     .line 100
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 101
     .line 102
@@ -314,7 +314,7 @@
     move-result-object v1
 
     .line 104
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 105
     .line 106
@@ -322,7 +322,7 @@
     move-result-object v1
 
     .line 108
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_12:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_12:LwI9;
 
     .line 109
     .line 110
@@ -346,7 +346,7 @@
 
     .line 119
     .line 120
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 121
     .line 122
@@ -354,7 +354,7 @@
     move-result-object v1
 
     .line 124
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 125
     .line 126
@@ -362,7 +362,7 @@
     move-result-object v1
 
     .line 128
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_13:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_13:LwI9;
 
     .line 129
     .line 130
@@ -386,7 +386,7 @@
 
     .line 139
     .line 140
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 141
     .line 142
@@ -394,7 +394,7 @@
     move-result-object v1
 
     .line 144
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 145
     .line 146
@@ -402,7 +402,7 @@
     move-result-object v1
 
     .line 148
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_14:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_14:LwI9;
 
     .line 149
     .line 150
@@ -426,7 +426,7 @@
 
     .line 159
     .line 160
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 161
     .line 162
@@ -434,7 +434,7 @@
     move-result-object v1
 
     .line 164
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 165
     .line 166
@@ -442,7 +442,7 @@
     move-result-object v1
 
     .line 168
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_15:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_15:LwI9;
 
     .line 169
     .line 170
@@ -466,7 +466,7 @@
 
     .line 179
     .line 180
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 181
     .line 182
@@ -474,7 +474,7 @@
     move-result-object v1
 
     .line 184
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 185
     .line 186
@@ -482,7 +482,7 @@
     move-result-object v1
 
     .line 188
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_16:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_16:LwI9;
 
     .line 189
     .line 190
@@ -506,7 +506,7 @@
 
     .line 199
     .line 200
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 201
     .line 202
@@ -514,7 +514,7 @@
     move-result-object v1
 
     .line 204
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 205
     .line 206
@@ -522,7 +522,7 @@
     move-result-object v1
 
     .line 208
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_17:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_17:LwI9;
 
     .line 209
     .line 210
@@ -546,7 +546,7 @@
 
     .line 219
     .line 220
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 221
     .line 222
@@ -554,7 +554,7 @@
     move-result-object v1
 
     .line 224
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 225
     .line 226
@@ -562,7 +562,7 @@
     move-result-object v1
 
     .line 228
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_18:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_18:LwI9;
 
     .line 229
     .line 230
@@ -586,7 +586,7 @@
 
     .line 239
     .line 240
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 241
     .line 242
@@ -594,7 +594,7 @@
     move-result-object v1
 
     .line 244
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 245
     .line 246
@@ -602,7 +602,7 @@
     move-result-object v1
 
     .line 248
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_19:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_19:LwI9;
 
     .line 249
     .line 250
@@ -626,7 +626,7 @@
 
     .line 259
     .line 260
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 261
     .line 262
@@ -634,7 +634,7 @@
     move-result-object v1
 
     .line 264
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 265
     .line 266
@@ -642,7 +642,7 @@
     move-result-object v1
 
     .line 268
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_2:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_2:LwI9;
 
     .line 269
     .line 270
@@ -666,7 +666,7 @@
 
     .line 279
     .line 280
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 281
     .line 282
@@ -674,7 +674,7 @@
     move-result-object v1
 
     .line 284
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 285
     .line 286
@@ -682,7 +682,7 @@
     move-result-object v1
 
     .line 288
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_3:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_3:LwI9;
 
     .line 289
     .line 290
@@ -706,7 +706,7 @@
 
     .line 299
     .line 300
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 301
     .line 302
@@ -714,7 +714,7 @@
     move-result-object v1
 
     .line 304
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 305
     .line 306
@@ -722,7 +722,7 @@
     move-result-object v1
 
     .line 308
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_4:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_4:LwI9;
 
     .line 309
     .line 310
@@ -746,7 +746,7 @@
 
     .line 319
     .line 320
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 321
     .line 322
@@ -754,7 +754,7 @@
     move-result-object v1
 
     .line 324
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 325
     .line 326
@@ -762,7 +762,7 @@
     move-result-object v1
 
     .line 328
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_5:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_5:LwI9;
 
     .line 329
     .line 330
@@ -786,7 +786,7 @@
 
     .line 339
     .line 340
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 341
     .line 342
@@ -794,7 +794,7 @@
     move-result-object v1
 
     .line 344
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 345
     .line 346
@@ -802,7 +802,7 @@
     move-result-object v1
 
     .line 348
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_6:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_6:LwI9;
 
     .line 349
     .line 350
@@ -826,7 +826,7 @@
 
     .line 359
     .line 360
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 361
     .line 362
@@ -834,7 +834,7 @@
     move-result-object v1
 
     .line 364
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 365
     .line 366
@@ -842,7 +842,7 @@
     move-result-object v1
 
     .line 368
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_7:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_7:LwI9;
 
     .line 369
     .line 370
@@ -866,7 +866,7 @@
 
     .line 379
     .line 380
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 381
     .line 382
@@ -874,7 +874,7 @@
     move-result-object v1
 
     .line 384
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 385
     .line 386
@@ -882,7 +882,7 @@
     move-result-object v1
 
     .line 388
-    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_8:Lnz9;
+    sput-object v1, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_8:LwI9;
 
     .line 389
     .line 390
@@ -906,7 +906,7 @@
 
     .line 399
     .line 400
-    invoke-virtual/range {v0 .. v5}, LJ77;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LxA0;
+    invoke-virtual/range {v0 .. v5}, Lvc7;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)LmD0;
 
     .line 401
     .line 402
@@ -914,7 +914,7 @@
     move-result-object v1
 
     .line 404
-    invoke-virtual {v0, v1}, LJ77;->e(LxA0;)Lvk9;
+    invoke-virtual {v0, v1}, Lvc7;->e(LmD0;)LnL8;
 
     .line 405
     .line 406
@@ -922,7 +922,7 @@
     move-result-object v0
 
     .line 408
-    sput-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_9:Lnz9;
+    sput-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_9:LwI9;
 
     .line 409
     .line 410
@@ -940,7 +940,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p1}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 5
     .line 6
@@ -966,7 +966,7 @@
 
     .line 15
     .line 16
-    invoke-static {p1}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p1}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 17
     .line 18
@@ -974,7 +974,7 @@
     move-result-wide v2
 
     .line 20
-    invoke-static {v2, v3}, Lskk;->s(J)I
+    invoke-static {v2, v3}, LXJk;->f(J)I
 
     .line 21
     .line 22
@@ -1016,16 +1016,16 @@
 
     .line 37
     .line 38
-    new-instance v2, LCif;
+    new-instance v2, LhBf;
 
     .line 39
     .line 40
-    invoke-direct {v2, p1}, LCif;-><init>(Ljava/nio/ByteBuffer;)V
+    invoke-direct {v2, p1}, LhBf;-><init>(Ljava/nio/ByteBuffer;)V
 
     .line 41
     .line 42
     .line 43
-    iput-object v2, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LCif;
+    iput-object v2, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LhBf;
 
     .line 44
     .line 45
@@ -1049,7 +1049,7 @@
 
     .line 52
     :cond_2
-    new-instance v3, LaOi;
+    new-instance v3, LAdj;
 
     .line 53
     .line 54
@@ -1077,7 +1077,7 @@
 
     .line 65
     .line 66
-    invoke-static {p1}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p1}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 67
     .line 68
@@ -1085,7 +1085,7 @@
     move-result-wide v4
 
     .line 70
-    iput-wide v4, v3, LaOi;->a:J
+    iput-wide v4, v3, LAdj;->a:J
 
     .line 71
     .line 72
@@ -1109,7 +1109,7 @@
 
     .line 80
     .line 81
-    invoke-static {p1}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p1}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 82
     .line 83
@@ -1117,7 +1117,7 @@
     move-result-wide v4
 
     .line 85
-    iput-wide v4, v3, LaOi;->b:J
+    iput-wide v4, v3, LAdj;->b:J
 
     .line 86
     .line 87
@@ -1141,16 +1141,16 @@
 
     .line 95
     .line 96
-    new-instance v4, LCif;
+    new-instance v4, LhBf;
 
     .line 97
     .line 98
-    invoke-direct {v4, p1}, LCif;-><init>(Ljava/nio/ByteBuffer;)V
+    invoke-direct {v4, p1}, LhBf;-><init>(Ljava/nio/ByteBuffer;)V
 
     .line 99
     .line 100
     .line 101
-    iput-object v4, v3, LaOi;->c:LCif;
+    iput-object v4, v3, LAdj;->c:LhBf;
 
     .line 102
     .line 103
@@ -1186,7 +1186,7 @@
 
     .line 117
     .line 118
-    invoke-static {p1}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p1}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 119
     .line 120
@@ -1194,7 +1194,7 @@
     move-result-wide v4
 
     .line 122
-    iput-wide v4, v3, LaOi;->d:J
+    iput-wide v4, v3, LAdj;->d:J
 
     .line 123
     .line 124
@@ -1213,7 +1213,7 @@
     int-to-long v4, v4
 
     .line 130
-    iput-wide v4, v3, LaOi;->d:J
+    iput-wide v4, v3, LAdj;->d:J
 
     .line 131
     .line 132
@@ -1313,11 +1313,11 @@
 
     .line 35
     .line 36
-    iget-object v1, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LCif;
+    iget-object v1, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LhBf;
 
     .line 37
     .line 38
-    invoke-virtual {v1, p1}, LCif;->a(Ljava/nio/ByteBuffer;)V
+    invoke-virtual {v1, p1}, LhBf;->a(Ljava/nio/ByteBuffer;)V
 
     .line 39
     .line 40
@@ -1361,7 +1361,7 @@
     move-result-object v2
 
     .line 58
-    check-cast v2, LaOi;
+    check-cast v2, LAdj;
 
     .line 59
     .line 60
@@ -1377,7 +1377,7 @@
 
     .line 65
     .line 66
-    iget-wide v3, v2, LaOi;->a:J
+    iget-wide v3, v2, LAdj;->a:J
 
     .line 67
     .line 68
@@ -1402,7 +1402,7 @@
 
     .line 77
     .line 78
-    iget-wide v3, v2, LaOi;->b:J
+    iget-wide v3, v2, LAdj;->b:J
 
     .line 79
     .line 80
@@ -1427,11 +1427,11 @@
 
     .line 89
     .line 90
-    iget-object v3, v2, LaOi;->c:LCif;
+    iget-object v3, v2, LAdj;->c:LhBf;
 
     .line 91
     .line 92
-    invoke-virtual {v3, p1}, LCif;->a(Ljava/nio/ByteBuffer;)V
+    invoke-virtual {v3, p1}, LhBf;->a(Ljava/nio/ByteBuffer;)V
 
     .line 93
     .line 94
@@ -1461,7 +1461,7 @@
 
     .line 106
     .line 107
-    iget-wide v2, v2, LaOi;->d:J
+    iget-wide v2, v2, LAdj;->d:J
 
     .line 108
     .line 109
@@ -1477,7 +1477,7 @@
 
     .line 114
     :cond_7
-    iget-wide v2, v2, LaOi;->d:J
+    iget-wide v2, v2, LAdj;->d:J
 
     .line 115
     .line 116
@@ -1647,11 +1647,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_15:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_15:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -1659,7 +1659,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 8
     .line 9
@@ -1677,17 +1677,17 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "LaOi;",
+            "LAdj;",
             ">;"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_0:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_0:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -1695,7 +1695,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 8
     .line 9
@@ -1707,15 +1707,15 @@
     return-object v0
 .end method
 
-.method public getFirstSampleFlags()LCif;
+.method public getFirstSampleFlags()LhBf;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_16:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_16:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -1723,12 +1723,12 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 8
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LCif;
+    iget-object v0, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LhBf;
 
     .line 11
     .line 12
@@ -1739,11 +1739,11 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_2:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_2:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -1751,7 +1751,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {}, LL0f;->a()LL0f;
+    invoke-static {}, LOif;->a()LOif;
 
     .line 8
     .line 9
@@ -1764,7 +1764,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, LL0f;->b(LbU7;)V
+    invoke-static {v0}, LOif;->b(LHk6;)V
 
     .line 15
     .line 16
@@ -1821,11 +1821,11 @@
     move-result-object v3
 
     .line 41
-    check-cast v3, LaOi;
+    check-cast v3, LAdj;
 
     .line 42
     .line 43
-    iget-wide v3, v3, LaOi;->d:J
+    iget-wide v3, v3, LAdj;->d:J
 
     .line 44
     .line 45
@@ -1851,11 +1851,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_3:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_3:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -1863,7 +1863,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 8
     .line 9
@@ -1890,11 +1890,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_4:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_4:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -1902,7 +1902,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {}, LL0f;->a()LL0f;
+    invoke-static {}, LOif;->a()LOif;
 
     .line 8
     .line 9
@@ -1915,7 +1915,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, LL0f;->b(LbU7;)V
+    invoke-static {v0}, LOif;->b(LHk6;)V
 
     .line 15
     .line 16
@@ -1952,11 +1952,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_5:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_5:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -1964,7 +1964,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {}, LL0f;->a()LL0f;
+    invoke-static {}, LOif;->a()LOif;
 
     .line 8
     .line 9
@@ -1977,7 +1977,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, LL0f;->b(LbU7;)V
+    invoke-static {v0}, LOif;->b(LHk6;)V
 
     .line 15
     .line 16
@@ -2017,11 +2017,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_9:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_9:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -2029,7 +2029,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {}, LL0f;->a()LL0f;
+    invoke-static {}, LOif;->a()LOif;
 
     .line 8
     .line 9
@@ -2042,7 +2042,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, LL0f;->b(LbU7;)V
+    invoke-static {v0}, LOif;->b(LHk6;)V
 
     .line 15
     .line 16
@@ -2083,11 +2083,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_7:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_7:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -2095,7 +2095,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {}, LL0f;->a()LL0f;
+    invoke-static {}, LOif;->a()LOif;
 
     .line 8
     .line 9
@@ -2108,7 +2108,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, LL0f;->b(LbU7;)V
+    invoke-static {v0}, LOif;->b(LHk6;)V
 
     .line 15
     .line 16
@@ -2149,11 +2149,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_8:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_8:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -2161,7 +2161,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {}, LL0f;->a()LL0f;
+    invoke-static {}, LOif;->a()LOif;
 
     .line 8
     .line 9
@@ -2174,7 +2174,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, LL0f;->b(LbU7;)V
+    invoke-static {v0}, LOif;->b(LHk6;)V
 
     .line 15
     .line 16
@@ -2215,11 +2215,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_6:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_6:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -2227,7 +2227,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {}, LL0f;->a()LL0f;
+    invoke-static {}, LOif;->a()LOif;
 
     .line 8
     .line 9
@@ -2240,7 +2240,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v0}, LL0f;->b(LbU7;)V
+    invoke-static {v0}, LOif;->b(LHk6;)V
 
     .line 15
     .line 16
@@ -2281,7 +2281,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_1:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_1:LwI9;
 
     .line 2
     .line 3
@@ -2294,7 +2294,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0, p0, p0, v1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, v1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 9
     .line 10
@@ -2302,7 +2302,7 @@
     move-result-object v0
 
     .line 12
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 13
     .line 14
@@ -2368,7 +2368,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_10:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_10:LwI9;
 
     .line 2
     .line 3
@@ -2381,7 +2381,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0, p0, p0, v1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, v1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 9
     .line 10
@@ -2389,7 +2389,7 @@
     move-result-object v0
 
     .line 12
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 13
     .line 14
@@ -2449,17 +2449,17 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LaOi;",
+            "LAdj;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_19:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_19:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0, p1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, p1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -2467,7 +2467,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 8
     .line 9
@@ -2479,15 +2479,15 @@
     return-void
 .end method
 
-.method public setFirstSampleFlags(LCif;)V
+.method public setFirstSampleFlags(LhBf;)V
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_17:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_17:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0, p1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, p1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -2495,7 +2495,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 8
     .line 9
@@ -2547,7 +2547,7 @@
     .line 32
     .line 33
     :goto_0
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LCif;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LhBf;
 
     .line 34
     .line 35
@@ -2558,7 +2558,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_14:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_14:LwI9;
 
     .line 2
     .line 3
@@ -2571,7 +2571,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0, p0, p0, v1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, v1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 9
     .line 10
@@ -2579,7 +2579,7 @@
     move-result-object v0
 
     .line 12
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 13
     .line 14
@@ -2637,7 +2637,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_12:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_12:LwI9;
 
     .line 2
     .line 3
@@ -2650,7 +2650,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0, p0, p0, v1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, v1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 9
     .line 10
@@ -2658,7 +2658,7 @@
     move-result-object v0
 
     .line 12
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 13
     .line 14
@@ -2716,7 +2716,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_13:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_13:LwI9;
 
     .line 2
     .line 3
@@ -2729,7 +2729,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0, p0, p0, v1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, v1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 9
     .line 10
@@ -2737,7 +2737,7 @@
     move-result-object v0
 
     .line 12
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 13
     .line 14
@@ -2795,7 +2795,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_11:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_11:LwI9;
 
     .line 2
     .line 3
@@ -2808,7 +2808,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0, p0, p0, v1}, LJ77;->c(Lnz9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0, v1}, Lvc7;->c(LwI9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 9
     .line 10
@@ -2816,7 +2816,7 @@
     move-result-object v0
 
     .line 12
-    invoke-static {v0}, LUl;->m(LbU7;)V
+    invoke-static {v0}, Lgn;->l(LHk6;)V
 
     .line 13
     .line 14
@@ -2874,11 +2874,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_18:Lnz9;
+    sget-object v0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->ajc$tjp_18:LwI9;
 
     .line 2
     .line 3
-    invoke-static {v0, p0, p0}, LJ77;->b(Lnz9;Ljava/lang/Object;Ljava/lang/Object;)LbU7;
+    invoke-static {v0, p0, p0}, Lvc7;->b(LwI9;Ljava/lang/Object;Ljava/lang/Object;)LHk6;
 
     .line 4
     .line 5
@@ -2890,7 +2890,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v1}, LUl;->k(LbU7;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lgn;->j(LHk6;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 10
     .line 11
@@ -3052,7 +3052,7 @@
     .line 95
     .line 96
     .line 97
-    iget-object v1, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LCif;
+    iget-object v1, p0, Lcom/coremedia/iso/boxes/fragment/TrackRunBox;->firstSampleFlags:LhBf;
 
     .line 98
     .line 99

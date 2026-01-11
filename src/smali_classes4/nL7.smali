@@ -1,14 +1,20 @@
 .class public final LnL7;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'onTapDismiss\':f(),\'onTapStartPhotoShoot\':f(),\'animatedImageViewFactory\':r:\'[0]\'"
+    typeReferences = {
+        Lcom/snap/composer/ViewFactory;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -17,9 +23,5 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LnL7;->a:Ljava/lang/String;
-
-    .line 5
-    .line 6
     return-void
 .end method

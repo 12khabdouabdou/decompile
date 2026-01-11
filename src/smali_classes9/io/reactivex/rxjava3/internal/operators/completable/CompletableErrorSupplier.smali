@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method public final t(Lio/reactivex/rxjava3/core/CompletableObserver;)V
+.method public final s(Lio/reactivex/rxjava3/core/CompletableObserver;)V
     .locals 2
 
     .line 1

@@ -4,31 +4,28 @@
 
 
 # virtual methods
-.method public abstract addExemptBlockedUsersApiGateway(Lkv;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lkv;
-        .annotation runtime Ljv1;
+.method public abstract addExemptBlockedUsersApiGateway(LSw;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LSw;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkv;",
+            "LSw;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -37,69 +34,69 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Llv;",
+            "Ljnf<",
+            "LTw;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract batchSnapStats(LTQ0;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LTQ0;
-        .annotation runtime Ljv1;
+.method public abstract batchSnapStats(LaU0;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LaU0;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LTQ0;",
+            "LaU0;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LUQ0;",
+            "LbU0;",
             ">;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract createMobStoryApiGateway(Lda4;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lda4;
-        .annotation runtime Ljv1;
+.method public abstract createMobStoryApiGateway(LIe4;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LIe4;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lda4;",
+            "LIe4;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -108,38 +105,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lea4;",
+            "Ljnf<",
+            "LJe4;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract deleteMobStoryApiGateway(Lh16;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lh16;
-        .annotation runtime Ljv1;
+.method public abstract deleteMobStoryApiGateway(Lf46;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lf46;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lh16;",
+            "Lf46;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -148,38 +145,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Void;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract deleteStorySnap(LY16;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-    .param p1    # LY16;
-        .annotation runtime Ljv1;
+.method public abstract deleteStorySnap(LX46;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+    .param p1    # LX46;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LY16;",
+            "LX46;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -190,85 +187,85 @@
             "Lio/reactivex/rxjava3/core/Completable;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract fetchOurStories(Lew0;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lew0;
-        .annotation runtime Ljv1;
+.method public abstract fetchOurStories(LMy0;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LMy0;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/bq/our_story"
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lew0;",
+            "LMy0;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
             "Ljava/lang/Object;",
             ">;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+        value = "/bq/our_story"
+    .end annotation
 .end method
 
-.method public abstract fetchUserViewHistory(Llqj;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Llqj;
-        .annotation runtime Ljv1;
+.method public abstract fetchUserViewHistory(LlPj;Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LlPj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Llqj;",
+            "LlPj;",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lmqj;",
+            "LmPj;",
             ">;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getActiveStoryStatus(LOh8;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LOh8;
-        .annotation runtime Ljv1;
+.method public abstract getActiveStoryStatus(Lqo8;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lqo8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LOh8;",
+            "Lqo8;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -277,38 +274,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LPh8;",
+            "Ljnf<",
+            "Lro8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getMobStoryApiGateway(LZj8;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LZj8;
-        .annotation runtime Ljv1;
+.method public abstract getMobStoryApiGateway(LAq8;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LAq8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LZj8;",
+            "LAq8;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -317,78 +314,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lak8;",
-            ">;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract getSnapElementSTMS(LBq8;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LBq8;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
-        .end annotation
-    .end param
-    .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
-        .end annotation
-    .end param
-    .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "__xsc_local__snap_token"
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
+            "Ljnf<",
             "LBq8;",
-            "Ljava/lang/String;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;",
-            "Ljava/lang/String;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LCq8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract joinCustomStoryGroup(Llz9;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Llz9;
-        .annotation runtime Ljv1;
+.method public abstract getSnapElementSTMS(Lkx8;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lkx8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Llz9;",
+            "Lkx8;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -397,38 +354,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lmz9;",
+            "Ljnf<",
+            "Llx8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract listUserCustomStoryGroups(LAoa;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LAoa;
-        .annotation runtime Ljv1;
+.method public abstract joinCustomStoryGroup(LuI9;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LuI9;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LAoa;",
+            "LuI9;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -437,38 +394,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LBoa;",
+            "Ljnf<",
+            "LvI9;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract syncGroupsApiGateway(LIei;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LIei;
-        .annotation runtime Ljv1;
+.method public abstract listUserCustomStoryGroups(LOAa;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LOAa;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LIei;",
+            "LOAa;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -477,38 +434,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LJei;",
+            "Ljnf<",
+            "LPAa;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract updateMobStoryApiGateway(Lrdj;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lrdj;
-        .annotation runtime Ljv1;
+.method public abstract syncGroupsApiGateway(LEDi;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LEDi;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lrdj;",
+            "LEDi;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -517,38 +474,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lsdj;",
+            "Ljnf<",
+            "LFDi;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract updateMobStoryMembershipApiGateway(Lqdj;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lqdj;
-        .annotation runtime Ljv1;
+.method public abstract updateMobStoryApiGateway(LkCj;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LkCj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lqdj;",
+            "LkCj;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -557,80 +514,120 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
+            "LlCj;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
+.end method
+
+.method public abstract updateMobStoryMembershipApiGateway(LjCj;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LjCj;
+        .annotation runtime Lzy1;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation runtime LoJj;
+        .end annotation
+    .end param
+    .param p3    # Ljava/util/Map;
+        .annotation runtime LhR8;
+        .end annotation
+    .end param
+    .param p4    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "__xsc_local__snap_token"
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LjCj;",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/lang/String;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "Ljnf<",
             "Ljava/lang/Void;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract updateStories(LQej;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LQej;
-        .annotation runtime Ljv1;
+.method public abstract updateStories(LJDj;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LJDj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LJDj;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "LUlf;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Llmd;
         value = "/bq/update_stories"
     .end annotation
+.end method
 
+.method public abstract updateStoriesV2(LLDj;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LLDj;
+        .annotation runtime Lzy1;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LQej;",
+            "LLDj;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LY3f;",
+            "LUlf;",
             ">;"
         }
     .end annotation
-.end method
 
-.method public abstract updateStoriesV2(LSej;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LSej;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
+    .annotation runtime Llmd;
         value = "/bq/update_stories_v2"
     .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "LSej;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "LY3f;",
-            ">;"
-        }
-    .end annotation
 .end method
 
-.method public abstract updateStoryPrivacy(LUej;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LUej;
-        .annotation runtime Ljv1;
+.method public abstract updateStoryPrivacy(LNDj;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LNDj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LUej;",
+            "LNDj;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -639,38 +636,38 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LVej;",
+            "Ljnf<",
+            "LODj;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract updateUserRequestedRankingSignal(Lmfj;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lmfj;
-        .annotation runtime Ljv1;
+.method public abstract updateUserRequestedRankingSignal(LfEj;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LfEj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
     .param p4    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lmfj;",
+            "LfEj;",
             "Ljava/lang/String;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -679,9 +676,12 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lnfj;",
+            "Ljnf<",
+            "LgEj;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

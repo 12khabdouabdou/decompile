@@ -1,3 +1,3 @@
 .class public final LZd6;
-.super Ljava/lang/Object;
+.super Lp4;
 .source "SourceFile"

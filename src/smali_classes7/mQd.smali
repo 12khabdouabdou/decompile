@@ -1,780 +1,433 @@
-.class public final enum LmQd;
-.super Ljava/lang/Enum;
+.class public final LmQd;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
-# static fields
-.field public static final enum X:LmQd;
 
-.field public static final enum Y:LmQd;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final enum Z:LmQd;
-
-.field public static final enum a:LmQd;
-
-.field public static final enum b:LmQd;
-
-.field public static final enum c:LmQd;
-
-.field public static final enum e0:LmQd;
-
-.field public static final enum f0:LmQd;
-
-.field public static final enum g0:LmQd;
-
-.field public static final enum h0:LmQd;
-
-.field public static final enum i0:LmQd;
-
-.field public static final enum j0:LmQd;
-
-.field public static final enum k0:LmQd;
-
-.field public static final enum l0:LmQd;
-
-.field public static final enum m0:LmQd;
-
-.field public static final enum n0:LmQd;
-
-.field public static final enum o0:LmQd;
-
-.field public static final enum p0:LmQd;
-
-.field public static final enum q0:LmQd;
-
-.field public static final enum r0:LmQd;
-
-.field public static final enum s0:LmQd;
-
-.field public static final enum t:LmQd;
-
-.field public static final synthetic t0:[LmQd;
+.field public final synthetic b:LpQd;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 46
+.method public synthetic constructor <init>(LpQd;I)V
+    .locals 0
 
     .line 1
-    const/16 v8, 0xd
+    iput p2, p0, LmQd;->a:I
+
+    iput-object p1, p0, LmQd;->b:LpQd;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
+
+    .line 1
+    iget v0, p0, LmQd;->a:I
 
     .line 2
     .line 3
-    const/16 v9, 0xc
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const/16 v10, 0xb
-
     .line 6
+    check-cast p1, LDpd;
+
     .line 7
-    const/16 v11, 0xa
-
     .line 8
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
+
     .line 9
-    const/16 v12, 0x9
-
     .line 10
+    check-cast v0, Ljava/util/List;
+
     .line 11
-    const/16 v13, 0x8
-
     .line 12
-    .line 13
-    const/4 v14, 0x7
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
+    .line 13
     .line 14
-    const/4 v15, 0x6
+    check-cast p1, LmBb;
 
     .line 15
-    const/4 v0, 0x5
-
     .line 16
-    const/4 v1, 0x4
+    iget-object v1, p0, LmQd;->b:LpQd;
 
     .line 17
-    const/4 v2, 0x3
-
     .line 18
-    const/4 v3, 0x2
+    invoke-virtual {v1}, LpQd;->b()LBR5;
 
     .line 19
-    const/4 v4, 0x1
-
     .line 20
-    const/4 v5, 0x0
-
     .line 21
-    new-instance v6, LmQd;
+    move-result-object v2
 
     .line 22
-    .line 23
-    const-string v7, "MAIN"
+    invoke-virtual {v2}, LBR5;->t()LM8e;
 
+    .line 23
     .line 24
     .line 25
-    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-result-object v2
 
     .line 26
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
     .line 27
     .line 28
-    sput-object v6, LmQd;->a:LmQd;
-
     .line 29
+    move-result v2
+
     .line 30
-    new-instance v7, LmQd;
+    const-wide/16 v3, -0x1
 
     .line 31
     .line 32
-    const/16 v24, 0x0
+    iget-object v5, v1, LpQd;->c:LL9e;
 
     .line 33
     .line 34
-    const-string v5, "FEED"
+    const/4 v6, 0x3
 
     .line 35
-    .line 36
-    invoke-direct {v7, v5, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iget-object v7, v1, LpQd;->b:LU6e;
 
+    .line 36
     .line 37
+    if-eq v2, v6, :cond_0
+
     .line 38
     .line 39
-    sput-object v7, LmQd;->b:LmQd;
+    const/4 v6, 0x4
 
     .line 40
+    if-eq v2, v6, :cond_0
+
     .line 41
-    new-instance v5, LmQd;
-
     .line 42
+    sget-object p1, LRPd;->h0:LRPd;
+
     .line 43
-    const/16 v25, 0x1
-
     .line 44
-    .line 45
-    const-string v4, "REQUEST_REPLY"
+    invoke-virtual {v5, p1, v3, v4}, LL9e;->a(LRPd;J)V
 
+    .line 45
     .line 46
     .line 47
-    invoke-direct {v5, v4, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, LpQd;->b()LBR5;
 
     .line 48
     .line 49
     .line 50
-    sput-object v5, LmQd;->c:LmQd;
+    move-result-object p1
 
     .line 51
-    .line 52
-    new-instance v4, LmQd;
+    invoke-virtual {v7}, LU6e;->e()Lhce;
 
+    .line 52
     .line 53
     .line 54
-    const/16 v26, 0x2
+    move-result-object v2
 
     .line 55
-    .line 56
-    const-string v3, "GALLERY"
+    invoke-virtual {p1, v0, v2}, LBR5;->Q(Ljava/util/List;Lhce;)V
 
+    .line 56
     .line 57
     .line 58
-    invoke-direct {v4, v3, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v1}, LpQd;->b()LBR5;
 
     .line 59
     .line 60
     .line 61
-    sput-object v4, LmQd;->t:LmQd;
+    move-result-object p1
 
     .line 62
-    .line 63
-    new-instance v3, LmQd;
+    invoke-virtual {p1}, LBR5;->B()V
 
+    .line 63
     .line 64
     .line 65
-    const/16 v27, 0x3
+    goto :goto_1
 
     .line 66
+    :cond_0
+    iget-boolean p1, p1, LmBb;->b:Z
+
     .line 67
-    const-string v2, "GALLERY_UNSAVABLE"
-
     .line 68
-    .line 69
-    invoke-direct {v3, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    if-eqz p1, :cond_2
 
+    .line 69
     .line 70
+    invoke-virtual {v7}, LU6e;->e()Lhce;
+
     .line 71
     .line 72
-    sput-object v3, LmQd;->X:LmQd;
-
     .line 73
+    move-result-object p1
+
     .line 74
-    new-instance v2, LmQd;
+    iget-object p1, p1, Lhce;->a:Lcom/snap/camera/model/MediaTypeConfig;
 
     .line 75
     .line 76
-    const/16 v28, 0x4
+    invoke-static {p1}, LOWk;->g(Lcom/snap/camera/model/MediaTypeConfig;)Z
 
     .line 77
     .line 78
-    const-string v1, "CAMERA_ROLL"
-
     .line 79
+    move-result p1
+
     .line 80
-    invoke-direct {v2, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    if-eqz p1, :cond_1
 
     .line 81
     .line 82
-    .line 83
-    sput-object v2, LmQd;->Y:LmQd;
+    invoke-virtual {v1}, LpQd;->b()LBR5;
 
+    .line 83
     .line 84
     .line 85
-    new-instance v1, LmQd;
+    move-result-object p1
 
     .line 86
-    .line 87
-    const/16 v29, 0x5
+    invoke-virtual {p1, v0}, LBR5;->F(Ljava/util/List;)V
 
+    .line 87
     .line 88
     .line 89
-    const-string v0, "DISCOVER"
+    goto :goto_0
 
     .line 90
-    .line 91
-    invoke-direct {v1, v0, v15}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :cond_1
+    invoke-virtual {v1}, LpQd;->b()LBR5;
 
+    .line 91
     .line 92
     .line 93
+    move-result-object p1
+
     .line 94
-    sput-object v1, LmQd;->Z:LmQd;
+    const/4 v1, 0x0
 
     .line 95
-    .line 96
-    new-instance v0, LmQd;
+    invoke-virtual {p1, v1, v0}, LBR5;->S(ILjava/util/List;)V
 
+    .line 96
     .line 97
     .line 98
-    const/16 v30, 0x6
+    :cond_2
+    :goto_0
+    sget-object p1, LRPd;->g0:LRPd;
 
     .line 99
     .line 100
-    const-string v15, "CHAT_GALLERY"
+    invoke-virtual {v5, p1, v3, v4}, LL9e;->a(LRPd;J)V
 
     .line 101
     .line 102
-    invoke-direct {v0, v15, v14}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 103
+    :goto_1
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 104
     .line 105
-    sput-object v0, LmQd;->e0:LmQd;
+    return-object p1
 
     .line 106
+    :pswitch_0
+    check-cast p1, LDpd;
+
     .line 107
-    new-instance v15, LmQd;
-
     .line 108
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
+
     .line 109
-    const/16 v31, 0x7
-
     .line 110
+    check-cast p1, LiGc;
+
     .line 111
-    const-string v14, "EXT_SHARE"
-
     .line 112
-    .line 113
-    invoke-direct {v15, v14, v13}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iget-object v0, p1, LiGc;->e:Lwmd;
 
+    .line 113
     .line 114
+    iget-object v0, v0, Lwmd;->c:LG4b;
+
     .line 115
     .line 116
-    sput-object v15, LmQd;->f0:LmQd;
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
 
     .line 117
     .line 118
-    new-instance v14, LmQd;
-
     .line 119
+    move-result-object v0
+
     .line 120
-    const/16 v32, 0x8
+    sget-object v1, LlH1;->n0:LlH1;
 
     .line 121
     .line 122
-    const-string v13, "EXT_SHARE_TO_USER"
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 123
     .line 124
-    invoke-direct {v14, v13, v12}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 125
+    move-result v1
+
     .line 126
+    const/4 v2, 0x1
+
     .line 127
-    sput-object v14, LmQd;->g0:LmQd;
+    const/4 v3, 0x0
 
     .line 128
+    if-nez v1, :cond_3
+
     .line 129
-    new-instance v13, LmQd;
-
     .line 130
+    sget-object v1, LVZ1;->e0:LL4b;
+
     .line 131
-    const/16 v33, 0x9
-
     .line 132
-    .line 133
-    const-string v12, "PUBLIC_STORY_REPLY"
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 133
     .line 134
     .line 135
-    invoke-direct {v13, v12, v11}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-result v1
 
     .line 136
+    if-eqz v1, :cond_4
+
     .line 137
     .line 138
-    sput-object v13, LmQd;->h0:LmQd;
+    :cond_3
+    iget-boolean p1, p1, LiGc;->l:Z
 
     .line 139
     .line 140
-    new-instance v12, LmQd;
+    if-nez p1, :cond_5
 
     .line 141
     .line 142
-    const/16 v34, 0xa
+    :cond_4
+    const/4 p1, 0x1
 
     .line 143
+    goto :goto_2
+
     .line 144
-    const-string v11, "SNAP_REPLY_STICKER"
+    :cond_5
+    const/4 p1, 0x0
 
     .line 145
-    .line 146
-    invoke-direct {v12, v11, v10}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :goto_2
+    iget-object v1, p0, LmQd;->b:LpQd;
 
+    .line 146
     .line 147
+    iget-object v4, v1, LpQd;->b:LU6e;
+
     .line 148
     .line 149
-    sput-object v12, LmQd;->i0:LmQd;
+    invoke-virtual {v4}, LU6e;->e()Lhce;
 
     .line 150
     .line 151
-    new-instance v11, LmQd;
-
     .line 152
+    move-result-object v4
+
     .line 153
-    const/16 v35, 0xb
+    iget-object v4, v4, Lhce;->b:LnIk;
 
     .line 154
     .line 155
-    const-string v10, "LOCK_SCREEN"
+    instance-of v4, v4, LKbe;
 
     .line 156
     .line 157
-    invoke-direct {v11, v10, v9}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sget-object v5, LYWh;->e0:LL4b;
 
     .line 158
     .line 159
-    .line 160
-    sput-object v11, LmQd;->j0:LmQd;
+    invoke-static {v0, v5}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 160
     .line 161
     .line 162
-    new-instance v10, LmQd;
+    move-result v0
 
     .line 163
+    if-nez v0, :cond_8
+
     .line 164
-    const/16 v36, 0xc
-
     .line 165
-    .line 166
-    const-string v9, "REMIX"
+    invoke-virtual {v1}, LpQd;->b()LBR5;
 
+    .line 166
     .line 167
     .line 168
-    invoke-direct {v10, v9, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-result-object v0
 
     .line 169
+    if-nez p1, :cond_7
+
     .line 170
     .line 171
-    sput-object v10, LmQd;->k0:LmQd;
+    if-eqz v4, :cond_6
 
     .line 172
     .line 173
-    new-instance v9, LmQd;
+    goto :goto_3
 
     .line 174
+    :cond_6
+    const/4 v2, 0x0
+
     .line 175
-    const/16 v37, 0xd
+    :cond_7
+    :goto_3
+    sget-object p1, LK8e;->a:LK8e;
 
     .line 176
     .line 177
-    const-string v8, "REMIX_SPOTLIGHT"
+    invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 178
     .line 179
-    move-object/from16 v38, v0
-
     .line 180
+    move-result-object v1
+
     .line 181
-    const/16 v0, 0xe
+    invoke-virtual {v0, p1, v1}, LBR5;->R(LnSh;Ljava/lang/Object;)V
 
     .line 182
     .line 183
-    invoke-direct {v9, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 184
+    :cond_8
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 185
     .line 186
-    sput-object v9, LmQd;->l0:LmQd;
+    return-object p1
 
     .line 187
-    .line 188
-    new-instance v0, LmQd;
-
-    .line 189
-    .line 190
-    const-string v8, "QUESTION_STICKER_QUOTE"
-
-    .line 191
-    .line 192
-    move-object/from16 v39, v1
-
-    .line 193
-    .line 194
-    const/16 v1, 0xf
-
-    .line 195
-    .line 196
-    invoke-direct {v0, v8, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 197
-    .line 198
-    .line 199
-    sput-object v0, LmQd;->m0:LmQd;
-
-    .line 200
-    .line 201
-    new-instance v1, LmQd;
-
-    .line 202
-    .line 203
-    const-string v8, "SOUND_SYNC"
-
-    .line 204
-    .line 205
-    move-object/from16 v40, v0
-
-    .line 206
-    .line 207
-    const/16 v0, 0x10
-
-    .line 208
-    .line 209
-    invoke-direct {v1, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 210
-    .line 211
-    .line 212
-    sput-object v1, LmQd;->n0:LmQd;
-
-    .line 213
-    .line 214
-    new-instance v0, LmQd;
-
-    .line 215
-    .line 216
-    const-string v8, "TEMPLATES"
-
-    .line 217
-    .line 218
-    move-object/from16 v41, v1
-
-    .line 219
-    .line 220
-    const/16 v1, 0x11
-
-    .line 221
-    .line 222
-    invoke-direct {v0, v8, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 223
-    .line 224
-    .line 225
-    sput-object v0, LmQd;->o0:LmQd;
-
-    .line 226
-    .line 227
-    new-instance v1, LmQd;
-
-    .line 228
-    .line 229
-    const-string v8, "REPOST"
-
-    .line 230
-    .line 231
-    move-object/from16 v42, v0
-
-    .line 232
-    .line 233
-    const/16 v0, 0x12
-
-    .line 234
-    .line 235
-    invoke-direct {v1, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 236
-    .line 237
-    .line 238
-    sput-object v1, LmQd;->p0:LmQd;
-
-    .line 239
-    .line 240
-    new-instance v0, LmQd;
-
-    .line 241
-    .line 242
-    const-string v8, "AI_MODE"
-
-    .line 243
-    .line 244
-    move-object/from16 v43, v1
-
-    .line 245
-    .line 246
-    const/16 v1, 0x13
-
-    .line 247
-    .line 248
-    invoke-direct {v0, v8, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 249
-    .line 250
-    .line 251
-    sput-object v0, LmQd;->q0:LmQd;
-
-    .line 252
-    .line 253
-    new-instance v1, LmQd;
-
-    .line 254
-    .line 255
-    const-string v8, "PROMPT_LENS_REPLY"
-
-    .line 256
-    .line 257
-    move-object/from16 v44, v0
-
-    .line 258
-    .line 259
-    const/16 v0, 0x14
-
-    .line 260
-    .line 261
-    invoke-direct {v1, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 262
-    .line 263
-    .line 264
-    sput-object v1, LmQd;->r0:LmQd;
-
-    .line 265
-    .line 266
-    new-instance v0, LmQd;
-
-    .line 267
-    .line 268
-    const-string v8, "GALLERY_SNAPEDITOR"
-
-    .line 269
-    .line 270
-    move-object/from16 v45, v1
-
-    .line 271
-    .line 272
-    const/16 v1, 0x15
-
-    .line 273
-    .line 274
-    invoke-direct {v0, v8, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 275
-    .line 276
-    .line 277
-    sput-object v0, LmQd;->s0:LmQd;
-
-    .line 278
-    .line 279
-    const/16 v1, 0x16
-
-    .line 280
-    .line 281
-    new-array v1, v1, [LmQd;
-
-    .line 282
-    .line 283
-    aput-object v6, v1, v24
-
-    .line 284
-    .line 285
-    aput-object v7, v1, v25
-
-    .line 286
-    .line 287
-    aput-object v5, v1, v26
-
-    .line 288
-    .line 289
-    aput-object v4, v1, v27
-
-    .line 290
-    .line 291
-    aput-object v3, v1, v28
-
-    .line 292
-    .line 293
-    aput-object v2, v1, v29
-
-    .line 294
-    .line 295
-    aput-object v39, v1, v30
-
-    .line 296
-    .line 297
-    aput-object v38, v1, v31
-
-    .line 298
-    .line 299
-    aput-object v15, v1, v32
-
-    .line 300
-    .line 301
-    aput-object v14, v1, v33
-
-    .line 302
-    .line 303
-    aput-object v13, v1, v34
-
-    .line 304
-    .line 305
-    aput-object v12, v1, v35
-
-    .line 306
-    .line 307
-    aput-object v11, v1, v36
-
-    .line 308
-    .line 309
-    aput-object v10, v1, v37
-
-    .line 310
-    .line 311
-    const/16 v23, 0xe
-
-    .line 312
-    .line 313
-    aput-object v9, v1, v23
-
-    .line 314
-    .line 315
-    const/16 v22, 0xf
-
-    .line 316
-    .line 317
-    aput-object v40, v1, v22
-
-    .line 318
-    .line 319
-    const/16 v21, 0x10
-
-    .line 320
-    .line 321
-    aput-object v41, v1, v21
-
-    .line 322
-    .line 323
-    const/16 v20, 0x11
-
-    .line 324
-    .line 325
-    aput-object v42, v1, v20
-
-    .line 326
-    .line 327
-    const/16 v19, 0x12
-
-    .line 328
-    .line 329
-    aput-object v43, v1, v19
-
-    .line 330
-    .line 331
-    const/16 v18, 0x13
-
-    .line 332
-    .line 333
-    aput-object v44, v1, v18
-
-    .line 334
-    .line 335
-    const/16 v17, 0x14
-
-    .line 336
-    .line 337
-    aput-object v45, v1, v17
-
-    .line 338
-    .line 339
-    const/16 v16, 0x15
-
-    .line 340
-    .line 341
-    aput-object v0, v1, v16
-
-    .line 342
-    .line 343
-    sput-object v1, LmQd;->t0:[LmQd;
-
-    .line 344
-    .line 345
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LmQd;
-    .locals 1
-
-    .line 1
-    const-class v0, LmQd;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LmQd;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LmQd;
-    .locals 1
-
-    .line 1
-    sget-object v0, LmQd;->t0:[LmQd;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LmQd;
-
-    .line 8
-    .line 9
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

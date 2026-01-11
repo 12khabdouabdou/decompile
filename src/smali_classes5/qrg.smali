@@ -1,166 +1,232 @@
 .class public final Lqrg;
-.super Ljava/lang/Object;
+.super Landroid/content/BroadcastReceiver;
 .source "SourceFile"
 
-# interfaces
-.implements LPI3;
+
+# static fields
+.field public static final c:Landroid/content/IntentFilter;
+
+.field public static final d:Ljava/util/regex/Pattern;
 
 
 # instance fields
-.field public final a:LWC3;
+.field public final a:LgKa;
 
-.field public final b:LAba;
-
-.field public final c:LYG3;
-
-.field public final d:Ljava/util/concurrent/ConcurrentHashMap;
+.field public final b:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
 
 # direct methods
-.method public constructor <init>(LWC3;LAba;)V
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/content/IntentFilter;
+
+    .line 2
+    .line 3
+    const-string v1, "android.location.PROVIDERS_CHANGED"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lqrg;->c:Landroid/content/IntentFilter;
+
+    .line 9
+    .line 10
+    invoke-static {v1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    sput-object v0, Lqrg;->d:Ljava/util/regex/Pattern;
+
+    .line 15
+    .line 16
+    return-void
+.end method
+
+.method public constructor <init>(LgKa;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lqrg;->a:LWC3;
+    iput-object p1, p0, Lqrg;->a:LgKa;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lqrg;->b:LAba;
+    new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 7
     .line 8
-    new-instance p1, LYG3;
+    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
 
     .line 9
     .line 10
-    new-instance p2, Lorg;
-
     .line 11
+    iput-object p1, p0, Lqrg;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 12
-    invoke-direct {p2, p0}, Lorg;-><init>(Lqrg;)V
-
     .line 13
-    .line 14
-    .line 15
-    invoke-direct {p1, p2}, LYG3;-><init>(Lc85;)V
-
-    .line 16
-    .line 17
-    .line 18
-    iput-object p1, p0, Lqrg;->c:LYG3;
-
-    .line 19
-    .line 20
-    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 21
-    .line 22
-    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
-
-    .line 23
-    .line 24
-    .line 25
-    iput-object p1, p0, Lqrg;->d:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 26
-    .line 27
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LOI3;
-    .locals 2
+.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lqrg;->a:LWC3;
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     .line 2
     .line 3
-    new-instance v1, LPHe;
-
     .line 4
+    move-result-object p1
+
     .line 5
-    invoke-direct {v1, v0}, LPHe;-><init>(LWC3;)V
+    if-eqz p1, :cond_3
 
     .line 6
     .line 7
-    .line 8
-    return-object v1
-.end method
+    sget-object p2, Lqrg;->d:Ljava/util/regex/Pattern;
 
-.method public final observe()LMI3;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lqrg;->a:LWC3;
-
-    .line 2
-    .line 3
-    new-instance v1, LIx3;
-
-    .line 4
-    .line 5
-    const/4 v2, 0x5
-
-    .line 6
-    invoke-direct {v1, v2, v0}, LIx3;-><init>(ILjava/lang/Object;)V
-
-    .line 7
     .line 8
     .line 9
-    new-instance v0, Lhkg;
+    invoke-virtual {p2, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     .line 10
     .line 11
-    const/4 v2, 0x7
-
     .line 12
-    invoke-direct {v0, p0, v2, v1}, Lhkg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    move-result-object p1
 
     .line 13
-    .line 14
-    .line 15
-    return-object v0
-.end method
-
-.method public final read()LNI3;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lqrg;->a:LWC3;
-
-    .line 2
-    .line 3
-    new-instance v1, LJx3;
-
-    .line 4
-    .line 5
-    const/4 v2, 0x4
-
-    .line 6
-    invoke-direct {v1, v2, v0}, LJx3;-><init>(ILjava/lang/Object;)V
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance v0, LTXf;
-
-    .line 10
-    .line 11
-    const/16 v2, 0x15
-
-    .line 12
-    .line 13
-    invoke-direct {v0, p0, v2, v1}, LTXf;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-virtual {p1}, Ljava/util/regex/Matcher;->matches()Z
 
     .line 14
     .line 15
     .line 16
-    return-object v0
+    move-result p1
+
+    .line 17
+    if-eqz p1, :cond_3
+
+    .line 18
+    .line 19
+    iget-object p1, p0, Lqrg;->a:LgKa;
+
+    .line 20
+    .line 21
+    invoke-virtual {p1}, LgKa;->b()Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p2
+
+    .line 25
+    const/4 v0, 0x0
+
+    .line 26
+    if-nez p2, :cond_0
+
+    .line 27
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_0
+    invoke-virtual {p1}, LgKa;->a()Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p2
+
+    .line 33
+    if-nez p2, :cond_1
+
+    .line 34
+    .line 35
+    :try_start_0
+    iget-object p1, p1, LgKa;->a:LREi;
+
+    .line 36
+    .line 37
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p1
+
+    .line 41
+    check-cast p1, Landroid/location/LocationManager;
+
+    .line 42
+    .line 43
+    const-string p2, "network"
+
+    .line 44
+    .line 45
+    invoke-virtual {p1, p2}, Landroid/location/LocationManager;->isProviderEnabled(Ljava/lang/String;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p1
+    :try_end_0
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 49
+    goto :goto_0
+
+    .line 50
+    :catch_0
+    nop
+
+    .line 51
+    const/4 p1, 0x0
+
+    .line 52
+    :goto_0
+    if-eqz p1, :cond_2
+
+    .line 53
+    .line 54
+    :cond_1
+    const/4 v0, 0x1
+
+    .line 55
+    :cond_2
+    :goto_1
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p1
+
+    .line 59
+    iget-object p2, p0, Lqrg;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 60
+    .line 61
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 62
+    .line 63
+    .line 64
+    :cond_3
+    return-void
 .end method

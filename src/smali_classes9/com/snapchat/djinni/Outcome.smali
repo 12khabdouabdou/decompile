@@ -438,26 +438,26 @@
 
     .line 15
     .line 16
-    new-instance v0, Ls5d;
+    new-instance v0, LQkd;
 
     .line 17
     .line 18
     const/4 v1, 0x0
 
     .line 19
-    invoke-direct {v0, p1, v1}, Ls5d;-><init>(Lcom/snapchat/djinni/Outcome;I)V
+    invoke-direct {v0, p1, v1}, LQkd;-><init>(Lcom/snapchat/djinni/Outcome;I)V
 
     .line 20
     .line 21
     .line 22
-    new-instance v1, Ls5d;
+    new-instance v1, LQkd;
 
     .line 23
     .line 24
     const/4 v2, 0x1
 
     .line 25
-    invoke-direct {v1, p1, v2}, Ls5d;-><init>(Lcom/snapchat/djinni/Outcome;I)V
+    invoke-direct {v1, p1, v2}, LQkd;-><init>(Lcom/snapchat/djinni/Outcome;I)V
 
     .line 26
     .line 27
@@ -494,26 +494,26 @@
     .end annotation
 
     .line 1
-    new-instance v0, Lu2c;
+    new-instance v0, Lkhc;
 
     .line 2
     .line 3
     const/4 v1, 0x3
 
     .line 4
-    invoke-direct {v0, v1}, Lu2c;-><init>(I)V
+    invoke-direct {v0, v1}, Lkhc;-><init>(I)V
 
     .line 5
     .line 6
     .line 7
-    new-instance v1, Lu2c;
+    new-instance v1, Lkhc;
 
     .line 8
     .line 9
     const/4 v2, 0x4
 
     .line 10
-    invoke-direct {v1, v2}, Lu2c;-><init>(I)V
+    invoke-direct {v1, v2}, Lkhc;-><init>(I)V
 
     .line 11
     .line 12
@@ -541,26 +541,26 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, Lr5d;
+    new-instance v1, LPkd;
 
     .line 6
     .line 7
     const/4 v2, 0x0
 
     .line 8
-    invoke-direct {v1, v0, v2}, Lr5d;-><init>(Ljava/lang/Class;I)V
+    invoke-direct {v1, v0, v2}, LPkd;-><init>(Ljava/lang/Class;I)V
 
     .line 9
     .line 10
     .line 11
-    new-instance v2, Lr5d;
+    new-instance v2, LPkd;
 
     .line 12
     .line 13
     const/4 v3, 0x1
 
     .line 14
-    invoke-direct {v2, v0, v3}, Lr5d;-><init>(Ljava/lang/Class;I)V
+    invoke-direct {v2, v0, v3}, LPkd;-><init>(Ljava/lang/Class;I)V
 
     .line 15
     .line 16
@@ -611,27 +611,27 @@
     .end annotation
 
     .line 1
-    new-instance v0, Lu2c;
+    new-instance v0, Lkhc;
 
     .line 2
     .line 3
     const/4 v1, 0x5
 
     .line 4
-    invoke-direct {v0, v1}, Lu2c;-><init>(I)V
+    invoke-direct {v0, v1}, Lkhc;-><init>(I)V
 
     .line 5
     .line 6
     .line 7
-    new-instance v1, Lvy7;
+    new-instance v1, LjO7;
 
     .line 8
     .line 9
-    const/16 v2, 0x1c
+    const/16 v2, 0x1b
 
     .line 10
     .line 11
-    invoke-direct {v1, v2, p1}, Lvy7;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p1}, LjO7;-><init>(ILjava/lang/Object;)V
 
     .line 12
     .line 13

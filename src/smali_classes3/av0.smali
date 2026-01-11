@@ -1,66 +1,158 @@
-.class public final Lav0;
-.super Lcom/snap/composer/utils/b;
+.class public abstract Lav0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'serializedAstrologySnap\':t,\'bitmojiInfo\':r?:\'[0]\'"
-    typeReferences = {
-        Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
-    }
-.end annotation
+# static fields
+.field public static final a:LL4b;
 
-
-# instance fields
-.field private _bitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
-
-.field private _serializedAstrologySnap:[B
+.field public static final b:LxFc;
 
 
 # direct methods
-.method public constructor <init>([B)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
     .line 2
-    iput-object p1, p0, Lav0;->_serializedAstrologySnap:[B
-
-    const/4 p1, 0x0
+    new-instance v1, LL4b;
 
     .line 3
-    iput-object p1, p0, Lav0;->_bitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
-
-    return-void
-.end method
-
-.method public constructor <init>([BLcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;)V
-    .locals 0
-
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v2, LNv0;->Z:LNv0;
 
     .line 5
-    iput-object p1, p0, Lav0;->_serializedAstrologySnap:[B
-
     .line 6
-    iput-object p2, p0, Lav0;->_bitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
+    const/4 v10, 0x0
 
-    return-void
-.end method
+    .line 7
+    const/4 v11, 0x0
 
+    .line 8
+    const-string v3, "AuraBirthInfoPage"
 
-# virtual methods
-.method public final a(Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;)V
-    .locals 0
+    .line 9
+    .line 10
+    const/4 v4, 0x0
 
-    .line 1
-    iput-object p1, p0, Lav0;->_bitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
+    .line 11
+    const/4 v5, 0x0
 
-    .line 2
-    .line 3
+    .line 12
+    const/4 v6, 0x0
+
+    .line 13
+    const/4 v7, 0x0
+
+    .line 14
+    const-string v8, "AuraBirthInfoPage"
+
+    .line 15
+    .line 16
+    const/4 v9, 0x0
+
+    .line 17
+    const/16 v12, 0x7dfc
+
+    .line 18
+    .line 19
+    invoke-direct/range {v1 .. v12}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 20
+    .line 21
+    .line 22
+    sput-object v1, Lav0;->a:LL4b;
+
+    .line 23
+    .line 24
+    sget-object v2, Lvu9;->t:Lvu9;
+
+    .line 25
+    .line 26
+    new-instance v3, LZH0;
+
+    .line 27
+    .line 28
+    const/high16 v4, 0x66000000
+
+    .line 29
+    .line 30
+    invoke-direct {v3, v4, v0}, LZH0;-><init>(IZ)V
+
+    .line 31
+    .line 32
+    .line 33
+    const/4 v4, 0x2
+
+    .line 34
+    new-array v4, v4, [Luld;
+
+    .line 35
+    .line 36
+    sget-object v5, Luld;->Q:LtOc;
+
+    .line 37
+    .line 38
+    const/4 v6, 0x0
+
+    .line 39
+    aput-object v5, v4, v6
+
+    .line 40
+    .line 41
+    aput-object v3, v4, v0
+
+    .line 42
+    .line 43
+    new-instance v3, LKV1;
+
+    .line 44
+    .line 45
+    const/16 v0, 0x15
+
+    .line 46
+    .line 47
+    invoke-direct {v3, v0, v4}, LKV1;-><init>(ILjava/lang/Object;)V
+
+    .line 48
+    .line 49
+    .line 50
+    move-object v5, v1
+
+    .line 51
+    new-instance v1, LxFc;
+
+    .line 52
+    .line 53
+    const/4 v7, 0x0
+
+    .line 54
+    const/16 v10, 0xc0
+
+    .line 55
+    .line 56
+    const/4 v4, 0x0
+
+    .line 57
+    const/4 v6, 0x1
+
+    .line 58
+    const/4 v8, 0x0
+
+    .line 59
+    const/4 v9, 0x0
+
+    .line 60
+    invoke-direct/range {v1 .. v10}, LxFc;-><init>(Lvu9;Luld;LL4b;LL4b;ZZZLnp0;I)V
+
+    .line 61
+    .line 62
+    .line 63
+    sput-object v1, Lav0;->b:LxFc;
+
+    .line 64
+    .line 65
     return-void
 .end method

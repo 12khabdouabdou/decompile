@@ -1,80 +1,111 @@
-.class public final synthetic LrH;
+.class public abstract synthetic LrH;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput p1, p0, LrH;->a:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LrH;->a:I
+    invoke-static {}, Lapp/aifactory/ai/aiinternals/AiLoggingLevel;->values()[Lapp/aifactory/ai/aiinternals/AiLoggingLevel;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    move-result-object v0
+
     .line 5
+    array-length v0, v0
+
     .line 6
-    invoke-static {}, LUMi;->a()V
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    .line 9
-    return-void
+    sget-object v1, Lapp/aifactory/ai/aiinternals/AiLoggingLevel;->WARN:Lapp/aifactory/ai/aiinternals/AiLoggingLevel;
 
+    .line 9
     .line 10
-    :pswitch_0
-    invoke-static {}, Landroid/opengl/GLES20;->glFinish()V
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 11
     .line 12
     .line 13
-    return-void
+    move-result v1
 
     .line 14
-    :pswitch_1
-    invoke-static {}, Landroid/opengl/GLES20;->glFlush()V
+    const/4 v2, 0x1
 
     .line 15
+    aput v2, v0, v1
+
     .line 16
     .line 17
-    return-void
+    sget-object v1, Lapp/aifactory/ai/aiinternals/AiLoggingLevel;->DEBUG:Lapp/aifactory/ai/aiinternals/AiLoggingLevel;
 
     .line 18
-    :pswitch_2
-    sget v0, Lcom/google/android/datatransport/runtime/scheduling/jobscheduling/AlarmManagerSchedulerBroadcastReceiver;->a:I
-
     .line 19
-    .line 20
-    return-void
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 20
     .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 22
+    move-result v1
+
+    .line 23
+    const/4 v2, 0x2
+
+    .line 24
+    aput v2, v0, v1
+
+    .line 25
+    .line 26
+    sget-object v1, Lapp/aifactory/ai/aiinternals/AiLoggingLevel;->INFO:Lapp/aifactory/ai/aiinternals/AiLoggingLevel;
+
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    const/4 v2, 0x3
+
+    .line 33
+    aput v2, v0, v1
+
+    .line 34
+    .line 35
+    sget-object v1, Lapp/aifactory/ai/aiinternals/AiLoggingLevel;->ERROR:Lapp/aifactory/ai/aiinternals/AiLoggingLevel;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    aput v2, v0, v1
+
+    .line 43
+    .line 44
+    sput-object v0, LrH;->a:[I
+
+    .line 45
+    .line 46
+    return-void
 .end method

@@ -8,11 +8,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, LFHh;->j0:LcSa;
+    sget-object v0, LU5i;->j0:LL4b;
 
     .line 2
     .line 3
-    invoke-direct {p0, v0}, Lcom/snap/profile/fragments/UnifiedProfileFragment;-><init>(LcSa;)V
+    invoke-direct {p0, v0}, Lcom/snap/profile/fragments/UnifiedProfileFragment;-><init>(LL4b;)V
 
     .line 4
     .line 5

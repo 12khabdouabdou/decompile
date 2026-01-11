@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LkG0;
+    proxyClass = LbJ0;
     schema = "\'scheduleBackupJob\':f|m|(r:\'[0]\'): p<v>"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupJobConfig;
@@ -28,7 +28,7 @@
             "Lcom/snap/modules/memories/backup/BackupJobConfig;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

@@ -75,7 +75,7 @@
 
     .line 23
     .line 24
-    invoke-static {}, LUff;->g()Ljava/time/Instant;
+    invoke-static {}, Lwyf;->i()Ljava/time/Instant;
 
     .line 25
     .line 26

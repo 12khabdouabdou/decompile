@@ -1,16 +1,16 @@
 .class public final Lcom/snap/modules/profile3_api/MyProfile3NativeActionHandlers;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'coreActionHandlers\':g:\'[0]\'<r:\'[1]\'>,\'sharingActionHandlers\':g:\'[0]\'<r:\'[2]\'>"
     typeReferences = {
         Lcom/snap/composer/foundation/Provider;,
-        Ld3e;,
-        Lxfg;
+        LHke;,
+        LnAg;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/foundation/Provider<",
-            "Ld3e;",
+            "LHke;",
             ">;"
         }
     .end annotation
@@ -30,7 +30,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/foundation/Provider<",
-            "Lxfg;",
+            "LnAg;",
             ">;"
         }
     .end annotation
@@ -44,10 +44,10 @@
         value = {
             "(",
             "Lcom/snap/composer/foundation/Provider<",
-            "Ld3e;",
+            "LHke;",
             ">;",
             "Lcom/snap/composer/foundation/Provider<",
-            "Lxfg;",
+            "LnAg;",
             ">;)V"
         }
     .end annotation

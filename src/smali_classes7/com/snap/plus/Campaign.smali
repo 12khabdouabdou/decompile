@@ -1,10 +1,10 @@
 .class public final Lcom/snap/plus/Campaign;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'campaignId\':s,\'title\':s,\'subtitle\':s,\'iconUrl\':s?,\'emoji\':s?,\'deeplinkUrl\':s?,\'data\':t,\'fhpLayoutVariant\':d,\'halfSheetUi\':r?:\'[0]\'"
     typeReferences = {

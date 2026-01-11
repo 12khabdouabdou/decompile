@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/search_api/NativeUserSearchingDependencies;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'blizzardLogger\':r:\'[0]\',\'userInfoProvider\':r:\'[1]\',\'friendStore\':r:\'[2]\',\'groupStore\':r:\'[3]\',\'searchUiScopedCofStore\':g<c>:\'[4]\'<r:\'[5]\'>,\'cofStore\':r?:\'[6]\',\'contactUserStore\':r:\'[7]\',\'contactAddressBookEntryStore\':r:\'[8]\',\'friendmojiProvider\':r:\'[9]\',\'networkingClient\':r:\'[10]\'"
     typeReferences = {
@@ -111,7 +111,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/snap/composer/blizzard/Logging;Lcom/snap/composer/people/userinfo/UserInfoProviding;Lcom/snap/composer/people/FriendStoring;Lcom/snap/composer/people/GroupStoring;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/people/ContactUserStoring;Lcom/snap/composer/people/ContactAddressBookEntryStoring;Lcom/snap/composer/people/FriendmojiProviding;Lnvc;)V
+.method public constructor <init>(Lcom/snap/composer/blizzard/Logging;Lcom/snap/composer/people/userinfo/UserInfoProviding;Lcom/snap/composer/people/FriendStoring;Lcom/snap/composer/people/GroupStoring;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/people/ContactUserStoring;Lcom/snap/composer/people/ContactAddressBookEntryStoring;Lcom/snap/composer/people/FriendmojiProviding;LlKc;)V
     .locals 0
 
     .line 12

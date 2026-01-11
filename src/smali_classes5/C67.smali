@@ -1,8 +1,29 @@
-.class public interface abstract LC67;
-.super Ljava/lang/Object;
+.class public final LC67;
+.super LCXk;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a(LJfb;)Lio/reactivex/rxjava3/core/Single;
+# static fields
+.field public static final a:LC67;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LC67;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LC67;->a:LC67;
+
+    .line 7
+    .line 8
+    return-void
 .end method

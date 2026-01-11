@@ -1,56 +1,48 @@
-.class public final Lwq3;
-.super Lcom/snap/composer/utils/b;
+.class public abstract Lwq3;
+.super LAo3;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'onGroupInfoTap\':f?()"
-    typeReferences = {}
-.end annotation
-
-
 # instance fields
-.field private _onGroupInfoTap:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
+.field public final d:Ljava/lang/String;
+
+.field public final e:Z
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lqp3;LRo3;Ljava/lang/String;Z)V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
+    const/16 v0, 0x8
 
     .line 2
-    iput-object v0, p0, Lwq3;->_onGroupInfoTap:Lkotlin/jvm/functions/Function0;
+    .line 3
+    invoke-direct {p0, p1, p2, p4, v0}, LAo3;-><init>(Lqp3;LRo3;ZI)V
 
+    .line 4
+    .line 5
+    .line 6
+    iput-object p3, p0, Lwq3;->d:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    iput-boolean p4, p0, Lwq3;->e:Z
+
+    .line 9
+    .line 10
     return-void
 .end method
 
-.method public constructor <init>(Lkotlin/jvm/functions/Function0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function0;",
-            ")V"
-        }
-    .end annotation
 
+# virtual methods
+.method public final a()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lwq3;->e:Z
+
+    .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    iput-object p1, p0, Lwq3;->_onGroupInfoTap:Lkotlin/jvm/functions/Function0;
-
-    return-void
+    return v0
 .end method

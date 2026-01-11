@@ -17,9 +17,9 @@
 
 .field public c:Ljava/lang/String;
 
-.field public final e0:LXfi;
+.field public final e0:LREi;
 
-.field public final t:LXfi;
+.field public final t:LREi;
 
 
 # direct methods
@@ -45,41 +45,41 @@
     iput-object p1, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 5
-    new-instance p1, LSp1;
+    new-instance p1, Lxt1;
 
     const/4 v0, 0x0
 
-    invoke-direct {p1, p0, v0}, LSp1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
+    invoke-direct {p1, p0, v0}, Lxt1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
 
     .line 6
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 7
-    iput-object v0, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LXfi;
+    iput-object v0, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LREi;
 
     .line 8
-    new-instance p1, LSp1;
+    new-instance p1, Lxt1;
 
     const/4 v0, 0x1
 
-    invoke-direct {p1, p0, v0}, LSp1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
+    invoke-direct {p1, p0, v0}, Lxt1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
 
     .line 9
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 10
-    iput-object v0, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->e0:LXfi;
+    iput-object v0, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->e0:LREi;
 
     .line 11
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    const v0, 0x7f0e071d
+    const v0, 0x7f0e0744
 
     invoke-static {p1, v0, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -116,41 +116,41 @@
     iput-object p1, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 18
-    new-instance p1, LSp1;
+    new-instance p1, Lxt1;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LSp1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
+    invoke-direct {p1, p0, p2}, Lxt1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
 
     .line 19
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 20
-    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LXfi;
+    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LREi;
 
     .line 21
-    new-instance p1, LSp1;
+    new-instance p1, Lxt1;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LSp1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
+    invoke-direct {p1, p0, p2}, Lxt1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
 
     .line 22
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 23
-    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->e0:LXfi;
+    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->e0:LREi;
 
     .line 24
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    const p2, 0x7f0e071d
+    const p2, 0x7f0e0744
 
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -187,41 +187,41 @@
     iput-object p1, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 31
-    new-instance p1, LSp1;
+    new-instance p1, Lxt1;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LSp1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
+    invoke-direct {p1, p0, p2}, Lxt1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
 
     .line 32
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 33
-    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LXfi;
+    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LREi;
 
     .line 34
-    new-instance p1, LSp1;
+    new-instance p1, Lxt1;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LSp1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
+    invoke-direct {p1, p0, p2}, Lxt1;-><init>(Lcom/snap/stickers/ui/views/BloopsProgressBarView;I)V
 
     .line 35
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 36
-    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->e0:LXfi;
+    iput-object p2, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->e0:LREi;
 
     .line 37
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    const p2, 0x7f0e071d
+    const p2, 0x7f0e0744
 
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
@@ -242,7 +242,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, LG71;->t:LG71;
+    sget-object v0, LVa1;->t:LVa1;
 
     .line 2
     .line 3
@@ -251,11 +251,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LXfi;
+    iget-object v0, p0, Lcom/snap/stickers/ui/views/BloopsProgressBarView;->t:LREi;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -267,14 +267,14 @@
 
     .line 13
     .line 14
-    new-instance v1, Lno1;
+    new-instance v1, LUr1;
 
     .line 15
     .line 16
-    const/4 v2, 0x2
+    const/4 v2, 0x1
 
     .line 17
-    invoke-direct {v1, v2, p0}, Lno1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LUr1;-><init>(ILjava/lang/Object;)V
 
     .line 18
     .line 19
@@ -287,7 +287,7 @@
     return-void
 .end method
 
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1

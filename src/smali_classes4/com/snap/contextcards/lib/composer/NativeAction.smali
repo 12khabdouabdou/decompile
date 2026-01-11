@@ -1,10 +1,10 @@
 .class public final Lcom/snap/contextcards/lib/composer/NativeAction;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'urls\':a?<s>,\'url\':s?,\'external\':b@?,\'openProfileForUser\':r?:\'[0]\',\'actionMetric\':s?,\'cardId\':s?,\'cardType\':s?,\'protoAction\':s?"
     typeReferences = {

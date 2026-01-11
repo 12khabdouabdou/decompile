@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -62,7 +62,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableJust;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableJust;)V
 
     .line 6
     .line 7

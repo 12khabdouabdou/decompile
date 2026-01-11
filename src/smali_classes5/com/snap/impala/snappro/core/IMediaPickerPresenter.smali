@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LcW8;
-    schema = "\'presentMediaPicker\':f|m|(d, f(a<r:\'[0]\'>, a<r:\'[1]\'>, a<r:\'[2]\'>)),\'presentPhotoPicker\':f?|m|(f(r?:\'[0]\', r?:\'[1]\', r?:\'[2]\'))"
+    proxyClass = LD39;
+    schema = "\'presentMediaPicker\':f|m|(d, f(a<r:\'[0]\'>, a<r:\'[1]\'>, a<r:\'[2]\'>)),\'presentPhotoPicker\':f?|m|(f(r?:\'[0]\', r?:\'[1]\', r?:\'[2]\')),\'presentSpotlightMediaPicker\':f|m|()"
     typeReferences = {
         Lcom/snap/composer/memories/MemoriesSnap;,
         Lcom/snap/impala/common/media/MediaLibraryItem;,
@@ -31,9 +31,6 @@
 .end method
 
 .method public abstract presentPhotoPicker(Lkotlin/jvm/functions/Function3;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -41,6 +38,12 @@
             ")V"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract presentSpotlightMediaPicker()V
 .end method
 
 .method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I

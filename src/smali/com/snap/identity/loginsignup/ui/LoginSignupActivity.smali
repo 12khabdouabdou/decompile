@@ -3,85 +3,85 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKI8;
+.implements LfQ8;
 .implements Landroid/hardware/SensorEventListener;
-.implements LjRg;
+.implements Lmdh;
 
 
 # instance fields
-.field public A0:LhV4;
+.field public A0:LYY4;
 
-.field public B0:LpC3;
+.field public B0:LOF3;
 
-.field public C0:LO74;
+.field public C0:Lwc4;
 
-.field public D0:LTe5;
+.field public D0:Lnl5;
 
-.field public E0:Lng5;
+.field public E0:LJm5;
 
-.field public F0:LLp6;
+.field public F0:LYs6;
 
 .field public G0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public H0:Lbke;
+.field public H0:LDBe;
 
-.field public I0:Lbke;
+.field public I0:LDBe;
 
-.field public J0:LhV4;
+.field public J0:LYY4;
 
-.field public K0:LUl7;
+.field public K0:LYq7;
 
-.field public L0:Lbke;
+.field public L0:LDBe;
 
-.field public M0:LhV4;
+.field public M0:LYY4;
 
-.field public N0:LPm9;
+.field public N0:LIv9;
 
-.field public O0:LrH9;
+.field public O0:LQS9;
 
-.field public P0:LrH9;
+.field public P0:LQS9;
 
-.field public Q0:LYBa;
+.field public Q0:LoOa;
 
-.field public R0:LrH9;
+.field public R0:LQS9;
 
-.field public S0:LrH9;
+.field public S0:LQS9;
 
-.field public T0:LrH9;
+.field public T0:LQS9;
 
-.field public U0:LhV4;
+.field public U0:LYY4;
 
-.field public V0:LrH9;
+.field public V0:LQS9;
 
-.field public W0:LfM5;
+.field public W0:LxQ5;
 
-.field public X0:LrH9;
+.field public X0:LQS9;
 
-.field public Y0:Lbke;
+.field public Y0:LDBe;
 
-.field public Z0:LhV4;
+.field public Z0:LYY4;
 
-.field public a1:LhV4;
+.field public a1:LYY4;
 
-.field public b1:LhV4;
+.field public b1:LYY4;
 
-.field public c1:LrH9;
+.field public c1:LQS9;
 
-.field public d1:LrH9;
+.field public d1:LQS9;
 
-.field public e1:Lnwf;
+.field public e1:LyPf;
 
-.field public f1:LrH9;
+.field public f1:LQS9;
 
-.field public g1:LrH9;
+.field public g1:LQS9;
 
-.field public h1:LrH9;
+.field public h1:LQS9;
 
 .field public i1:Lio/reactivex/rxjava3/disposables/Disposable;
 
 .field public final j1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final k1:Lrn0;
+.field public final k1:LJp0;
 
 .field public l1:Lio/reactivex/rxjava3/disposables/Disposable;
 
@@ -101,23 +101,23 @@
 
 .field public s1:Landroid/hardware/SensorManager;
 
-.field public t0:LrH9;
+.field public t0:LQS9;
 
 .field public t1:Landroid/hardware/Sensor;
 
-.field public u0:LrH9;
+.field public u0:LQS9;
 
 .field public u1:Landroid/hardware/SensorEvent;
 
-.field public v0:LhV4;
+.field public v0:LYY4;
 
-.field public w0:LOa1;
+.field public w0:Lbe1;
 
-.field public x0:LhV4;
+.field public x0:LYY4;
 
-.field public y0:Llz1;
+.field public y0:LyC1;
 
-.field public z0:LhV4;
+.field public z0:LYY4;
 
 
 # direct methods
@@ -143,7 +143,7 @@
 
     .line 10
     .line 11
-    sget-object v0, LMKa;->Z:LMKa;
+    sget-object v0, LtXa;->Z:LtXa;
 
     .line 12
     .line 13
@@ -161,11 +161,11 @@
     .line 19
     .line 20
     .line 21
-    sget-object v1, Lrn0;->a:Lrn0;
+    sget-object v1, LJp0;->a:LJp0;
 
     .line 22
     .line 23
-    iput-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->k1:Lrn0;
+    iput-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->k1:LJp0;
 
     .line 24
     .line 25
@@ -197,7 +197,7 @@
     return-void
 .end method
 
-.method public static final s0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+.method public static final o0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
     .locals 2
 
     .line 1
@@ -243,1364 +243,1246 @@
 
 
 # virtual methods
-.method public final Z(Landroid/os/Bundle;)V
-    .locals 7
+.method public final W(Landroid/os/Bundle;)V
+    .locals 6
 
     .line 1
-    const/4 p1, 0x1
+    const/4 p1, 0x0
 
     .line 2
-    const/4 v0, 0x0
-
-    .line 3
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
+    .line 3
     .line 4
     .line 5
+    move-result-object v0
+
     .line 6
-    move-result-object v1
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 7
-    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
-
     .line 8
+    const/16 v2, 0x1e
+
     .line 9
-    const/16 v3, 0x1e
-
     .line 10
+    if-lt v1, v2, :cond_0
+
     .line 11
-    if-lt v2, v3, :cond_0
-
     .line 12
-    .line 13
-    invoke-static {v1, v0}, LgYj;->a(Landroid/view/Window;Z)V
+    invoke-static {v0, p1}, LZnk;->a(Landroid/view/Window;Z)V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
     goto :goto_0
 
-    .line 17
+    .line 16
     :cond_0
-    invoke-virtual {v1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
+    .line 17
     .line 18
     .line 19
+    move-result-object v0
+
     .line 20
-    move-result-object v1
+    invoke-virtual {v0}, Landroid/view/View;->getSystemUiVisibility()I
 
     .line 21
-    invoke-virtual {v1}, Landroid/view/View;->getSystemUiVisibility()I
-
     .line 22
     .line 23
+    move-result v1
+
     .line 24
-    move-result v2
+    or-int/lit16 v1, v1, 0x700
 
     .line 25
-    or-int/lit16 v2, v2, 0x700
-
     .line 26
-    .line 27
-    invoke-virtual {v1, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
 
+    .line 27
     .line 28
     .line 29
-    .line 30
     :goto_0
-    const v1, 0x7f0e0031
+    const v0, 0x7f0e0032
 
+    .line 30
     .line 31
     .line 32
-    .line 33
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(I)V
 
+    .line 33
     .line 34
     .line 35
-    .line 36
-    const v1, 0x7f0b0737
+    const v0, 0x7f0b07d4
 
+    .line 36
     .line 37
     .line 38
-    .line 39
-    invoke-virtual {p0, v1}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
+    .line 39
     .line 40
     .line 41
+    move-result-object v0
+
     .line 42
-    move-result-object v1
+    if-eqz v0, :cond_16
 
     .line 43
-    if-eqz v1, :cond_16
-
     .line 44
+    check-cast v0, Lcom/snapchat/deck/views/DeckView;
+
     .line 45
-    check-cast v1, Lcom/snapchat/deck/views/DeckView;
-
     .line 46
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0:Lcom/snapchat/deck/views/DeckView;
+
     .line 47
-    iput-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0:Lcom/snapchat/deck/views/DeckView;
-
     .line 48
+    sget-object v1, LYG9;->r0:LYG9;
+
     .line 49
-    sget-object v2, LRu7;->y0:LRu7;
-
     .line 50
+    sget-object v2, Lb8k;->a:Ljava/util/WeakHashMap;
+
     .line 51
-    sget-object v3, LDIj;->a:Ljava/util/WeakHashMap;
-
     .line 52
-    .line 53
-    invoke-static {v1, v2}, LtIj;->u(Landroid/view/View;LxMc;)V
+    invoke-static {v0, v1}, LR7k;->u(Landroid/view/View;Lq1d;)V
 
+    .line 53
     .line 54
     .line 55
-    .line 56
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
+    .line 56
     .line 57
     .line 58
+    move-result-object v0
+
     .line 59
-    move-result-object v1
+    invoke-virtual {p0, v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0(Landroid/content/Intent;)V
 
     .line 60
-    invoke-virtual {p0, v1}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->w0(Landroid/content/Intent;)V
-
     .line 61
     .line 62
-    .line 63
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->c1:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->c1:LQS9;
 
+    .line 63
     .line 64
+    const/4 v1, 0x0
+
     .line 65
-    const/4 v2, 0x0
+    if-eqz v0, :cond_15
 
     .line 66
-    if-eqz v1, :cond_15
-
     .line 67
-    .line 68
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
+    .line 68
     .line 69
     .line 70
+    move-result-object v0
+
     .line 71
-    move-result-object v1
+    check-cast v0, LgKg;
 
     .line 72
-    check-cast v1, LXog;
-
     .line 73
+    iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LQS9;
+
     .line 74
-    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LrH9;
-
     .line 75
+    const-string v3, "loginSignupCoordinator"
+
     .line 76
-    const-string v4, "loginSignupCoordinator"
-
     .line 77
+    if-eqz v2, :cond_14
+
     .line 78
-    if-eqz v3, :cond_14
-
     .line 79
-    .line 80
-    invoke-interface {v3}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v2}, LQS9;->get()Ljava/lang/Object;
 
+    .line 80
     .line 81
     .line 82
+    move-result-object v2
+
     .line 83
-    move-result-object v3
+    invoke-virtual {v0, v2}, LgKg;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 84
-    invoke-virtual {v1, v3}, LXog;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 85
     .line 86
+    move-result-object v0
+
     .line 87
-    move-result-object v1
+    invoke-static {p0, v0, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
 
     .line 88
-    invoke-static {p0, v1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
-
     .line 89
     .line 90
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LQS9;
+
     .line 91
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LrH9;
-
     .line 92
+    if-eqz v0, :cond_13
+
     .line 93
-    if-eqz v1, :cond_13
-
     .line 94
-    .line 95
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
+    .line 95
     .line 96
     .line 97
+    move-result-object v0
+
     .line 98
-    move-result-object v1
+    check-cast v0, LkXa;
 
     .line 99
-    check-cast v1, LFKa;
-
     .line 100
-    .line 101
-    iget-object v1, v1, LFKa;->W0:Lio/reactivex/rxjava3/subjects/SingleSubject;
+    iget-object v0, v0, LkXa;->W0:Lio/reactivex/rxjava3/subjects/SingleSubject;
 
+    .line 101
     .line 102
-    .line 103
     invoke-static {}, Lio/reactivex/rxjava3/android/schedulers/AndroidSchedulers;->b()Lio/reactivex/rxjava3/core/Scheduler;
 
+    .line 103
     .line 104
     .line 105
+    move-result-object v2
+
     .line 106
-    move-result-object v3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 107
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 108
     .line 109
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
+
     .line 110
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
-
     .line 111
-    .line 112
-    invoke-direct {v5, v1, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    invoke-direct {v4, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 112
     .line 113
     .line 114
+    new-instance v0, LWVa;
+
     .line 115
-    new-instance v1, LtJa;
-
     .line 116
-    .line 117
-    invoke-direct {v1, p0, v0}, LtJa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+    invoke-direct {v0, p0, p1}, LWVa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
 
+    .line 117
     .line 118
     .line 119
-    .line 120
-    invoke-virtual {v5, v1}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v4, v0}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 120
     .line 121
     .line 122
+    move-result-object p1
+
     .line 123
-    move-result-object v1
+    invoke-static {p0, p1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
 
     .line 124
-    invoke-static {p0, v1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
-
     .line 125
     .line 126
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LQS9;
+
     .line 127
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LrH9;
-
     .line 128
+    if-eqz p1, :cond_12
+
     .line 129
-    if-eqz v1, :cond_12
-
     .line 130
-    .line 131
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
+    .line 131
     .line 132
     .line 133
+    move-result-object p1
+
     .line 134
-    move-result-object v1
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 135
-    check-cast v1, Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 136
-    .line 137
-    invoke-static {p0, v1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+    invoke-static {p0, p1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
 
+    .line 137
     .line 138
     .line 139
+    const-string p1, "notification"
+
     .line 140
-    const-string v1, "notification"
-
     .line 141
-    .line 142
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
+    .line 142
     .line 143
     .line 144
+    move-result-object p1
+
     .line 145
-    move-result-object v1
+    check-cast p1, Landroid/app/NotificationManager;
 
     .line 146
-    check-cast v1, Landroid/app/NotificationManager;
-
     .line 147
-    .line 148
     :try_start_0
-    invoke-virtual {v1}, Landroid/app/NotificationManager;->cancelAll()V
+    invoke-virtual {p1}, Landroid/app/NotificationManager;->cancelAll()V
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 148
     .line 149
     .line 150
-    .line 151
     goto :goto_1
 
-    .line 152
+    .line 151
     :catch_0
     nop
 
-    .line 153
+    .line 152
     :goto_1
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LrH9;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LQS9;
 
+    .line 153
     .line 154
+    if-eqz p1, :cond_11
+
     .line 155
-    if-eqz v1, :cond_11
-
     .line 156
-    .line 157
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
+    .line 157
     .line 158
     .line 159
+    move-result-object p1
+
     .line 160
-    move-result-object v1
+    check-cast p1, Ljava/util/Set;
 
     .line 161
-    check-cast v1, Ljava/util/Set;
-
     .line 162
-    .line 163
-    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
+    .line 163
     .line 164
     .line 165
+    move-result-object p1
+
     .line 166
-    move-result-object v1
+    :goto_2
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     .line 167
-    :goto_2
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
     .line 168
     .line 169
+    move-result v0
+
     .line 170
-    move-result v3
+    if-eqz v0, :cond_1
 
     .line 171
-    if-eqz v3, :cond_1
-
     .line 172
-    .line 173
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 173
     .line 174
     .line 175
+    move-result-object v0
+
     .line 176
-    move-result-object v3
+    check-cast v0, LIf;
 
     .line 177
-    check-cast v3, LNe;
-
     .line 178
-    .line 179
-    invoke-virtual {v3}, LNe;->j()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v0}, LIf;->j()Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 179
     .line 180
     .line 181
+    move-result-object v2
+
     .line 182
-    move-result-object v4
+    iput-object v2, v0, LIf;->a:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 183
-    iput-object v4, v3, LNe;->a:Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 184
-    .line 185
     goto :goto_2
 
-    .line 186
+    .line 185
     :cond_1
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->e1:Lnwf;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->e1:LyPf;
 
+    .line 186
     .line 187
+    if-eqz p1, :cond_10
+
     .line 188
-    if-eqz v1, :cond_10
-
     .line 189
+    sget-object p1, LtXa;->Z:LtXa;
+
     .line 190
-    sget-object v1, LMKa;->Z:LMKa;
-
     .line 191
+    const-string v0, "LoginSignupActivity"
+
     .line 192
-    const-string v3, "LoginSignupActivity"
-
     .line 193
-    .line 194
-    invoke-static {v1, v1, v3}, Llva;->k(LMKa;LMKa;Ljava/lang/String;)LWm0;
+    invoke-static {p1, p1, v0}, LzHa;->l(LtXa;LtXa;Ljava/lang/String;)Lnp0;
 
+    .line 194
     .line 195
     .line 196
+    move-result-object p1
+
     .line 197
-    move-result-object v1
+    new-instance v0, LnJe;
 
     .line 198
-    new-instance v3, LBre;
-
     .line 199
-    .line 200
-    invoke-direct {v3, v1}, LBre;-><init>(LWm0;)V
+    invoke-direct {v0, p1}, LnJe;-><init>(Lnp0;)V
 
+    .line 200
     .line 201
     .line 202
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Y0:LDBe;
+
     .line 203
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Y0:Lbke;
-
     .line 204
+    if-eqz p1, :cond_f
+
     .line 205
-    if-eqz v1, :cond_f
-
     .line 206
-    .line 207
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LDBe;->get()Ljava/lang/Object;
 
+    .line 207
     .line 208
     .line 209
+    move-result-object p1
+
     .line 210
-    move-result-object v1
+    check-cast p1, LSXa;
 
     .line 211
-    check-cast v1, LlLa;
-
     .line 212
-    .line 213
-    invoke-virtual {v1}, LlLa;->b()Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;
+    invoke-virtual {p1}, LSXa;->b()Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;
 
+    .line 213
     .line 214
     .line 215
+    move-result-object p1
+
     .line 216
-    move-result-object v1
+    const-string v2, "LoginSignupActivity.isFirstAppSession"
 
     .line 217
-    const-string v4, "LoginSignupActivity.isFirstAppSession"
-
     .line 218
-    .line 219
-    invoke-static {v1, v4}, LANi;->p(Lio/reactivex/rxjava3/core/Single;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    invoke-static {p1, v2}, LZcj;->q(Lio/reactivex/rxjava3/core/Single;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
 
+    .line 219
     .line 220
     .line 221
+    move-result-object p1
+
     .line 222
-    move-result-object v1
+    new-instance v2, LWY8;
 
     .line 223
-    new-instance v4, LuJa;
-
     .line 224
-    .line 225
-    invoke-direct {v4, p0, v0}, LuJa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+    const/16 v3, 0x12
 
+    .line 225
     .line 226
+    invoke-direct {v2, v3, p0}, LWY8;-><init>(ILjava/lang/Object;)V
+
     .line 227
     .line 228
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 229
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 230
     .line 231
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
     .line 232
-    .line 233
-    invoke-direct {v0, v1, v4}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
+    .line 233
     .line 234
+    invoke-direct {v3, p1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 235
     .line 236
-    invoke-virtual {v3}, LBre;->d()LF06;
-
     .line 237
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
     .line 238
     .line 239
-    move-result-object v1
-
     .line 240
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    move-result-object p1
 
     .line 241
-    .line 242
-    invoke-direct {v4, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
+    .line 242
     .line 243
+    invoke-direct {v2, v3, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 244
     .line 245
-    invoke-virtual {v4}, Lio/reactivex/rxjava3/core/Single;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 246
+    invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Single;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 247
     .line 248
-    move-result-object v0
-
     .line 249
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->m1:Lio/reactivex/rxjava3/disposables/Disposable;
+    move-result-object p1
 
     .line 250
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->m1:Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 251
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->b1:LhV4;
-
     .line 252
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->b1:LYY4;
+
     .line 253
-    const-string v1, "releaseManager"
-
     .line 254
+    const-string v2, "releaseManager"
+
     .line 255
-    if-eqz v0, :cond_e
-
     .line 256
-    .line 257
-    invoke-virtual {v0}, LhV4;->get()Ljava/lang/Object;
+    if-eqz p1, :cond_e
 
+    .line 257
     .line 258
+    invoke-virtual {p1}, LYY4;->get()Ljava/lang/Object;
+
     .line 259
     .line 260
-    move-result-object v0
-
     .line 261
-    check-cast v0, LeNe;
+    move-result-object p1
 
     .line 262
-    .line 263
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, La5f;
 
+    .line 263
     .line 264
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 265
     .line 266
-    new-instance v0, LCd;
-
     .line 267
+    new-instance p1, Lre;
+
     .line 268
-    const/16 v4, 0x1b
-
     .line 269
-    .line 270
-    invoke-direct {v0, v4, p0}, LCd;-><init>(ILjava/lang/Object;)V
+    const/16 v3, 0x18
 
+    .line 270
     .line 271
+    invoke-direct {p1, v3, p0}, Lre;-><init>(ILjava/lang/Object;)V
+
     .line 272
     .line 273
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromRunnable;
-
     .line 274
-    .line 275
-    invoke-direct {v4, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromRunnable;-><init>(Ljava/lang/Runnable;)V
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromRunnable;
 
+    .line 275
     .line 276
+    invoke-direct {v3, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromRunnable;-><init>(Ljava/lang/Runnable;)V
+
     .line 277
     .line 278
-    invoke-virtual {v3}, LBre;->d()LF06;
-
     .line 279
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
     .line 280
     .line 281
-    move-result-object v0
-
     .line 282
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+    move-result-object p1
 
     .line 283
-    .line 284
-    invoke-direct {v5, v4, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 285
-    .line 286
-    .line 287
-    invoke-virtual {v5}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 288
-    .line 289
-    .line 290
-    move-result-object v0
-
-    .line 291
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->i1:Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 292
-    .line 293
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->K0:LUl7;
-
-    .line 294
-    .line 295
-    if-eqz v0, :cond_d
-
-    .line 296
-    .line 297
-    check-cast v0, LZl7;
-
-    .line 298
-    .line 299
-    invoke-virtual {v0}, LZl7;->c()Lio/reactivex/rxjava3/internal/operators/maybe/MaybeSwitchIfEmpty;
-
-    .line 300
-    .line 301
-    .line 302
-    move-result-object v4
-
-    .line 303
-    iget-object v0, v0, LZl7;->b:LBre;
-
-    .line 304
-    .line 305
-    invoke-virtual {v0}, LBre;->d()LF06;
-
-    .line 306
-    .line 307
-    .line 308
-    move-result-object v5
-
-    .line 309
-    new-instance v6, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;
-
-    .line 310
-    .line 311
-    invoke-direct {v6, v4, v5}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 312
-    .line 313
-    .line 314
-    sget-object v4, LER5;->v0:LER5;
-
-    .line 315
-    .line 316
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;
-
-    .line 317
-    .line 318
-    invoke-direct {v5, v6, v4}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 319
-    .line 320
-    .line 321
-    invoke-virtual {v0}, LBre;->d()LF06;
-
-    .line 322
-    .line 323
-    .line 324
-    move-result-object v0
-
-    .line 325
     new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
 
-    .line 326
-    .line 327
-    invoke-direct {v4, v5, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    .line 284
+    .line 285
+    invoke-direct {v4, v3, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 328
-    .line 329
-    .line 330
-    invoke-virtual {v3}, LBre;->d()LF06;
+    .line 286
+    .line 287
+    .line 288
+    invoke-virtual {v4}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 331
-    .line 332
-    .line 333
-    move-result-object v0
+    .line 289
+    .line 290
+    .line 291
+    move-result-object p1
 
-    .line 334
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+    .line 292
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->i1:Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 335
-    .line 336
-    invoke-direct {v5, v4, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    .line 293
+    .line 294
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->K0:LYq7;
 
-    .line 337
-    .line 338
-    .line 339
-    invoke-virtual {v5}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 295
+    .line 296
+    if-eqz p1, :cond_d
 
-    .line 340
-    .line 341
-    .line 342
-    move-result-object v0
+    .line 297
+    .line 298
+    check-cast p1, Lfr7;
 
-    .line 343
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->l1:Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 299
+    .line 300
+    invoke-virtual {p1}, Lfr7;->c()Lio/reactivex/rxjava3/internal/operators/maybe/MaybeSwitchIfEmpty;
 
-    .line 344
-    .line 345
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->N0:LPm9;
-
-    .line 346
-    .line 347
-    if-eqz v0, :cond_c
-
-    .line 348
-    .line 349
-    iget-object v4, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0:Lcom/snapchat/deck/views/DeckView;
-
-    .line 350
-    .line 351
-    if-eqz v4, :cond_b
-
-    .line 352
-    .line 353
-    invoke-interface {v0, p0, v4}, LPm9;->c(Landroid/app/Activity;Landroid/view/ViewGroup;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 354
-    .line 355
-    .line 356
-    move-result-object v0
-
-    .line 357
-    invoke-static {p0, v0, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
-
-    .line 358
-    .line 359
-    .line 360
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->z0:LhV4;
-
-    .line 361
-    .line 362
-    const-string v4, "circumstanceEngine"
-
-    .line 363
-    .line 364
-    if-eqz v0, :cond_a
-
-    .line 365
-    .line 366
-    invoke-virtual {v0}, LhV4;->get()Ljava/lang/Object;
-
-    .line 367
-    .line 368
-    .line 369
-    move-result-object v0
-
-    .line 370
-    check-cast v0, Le03;
-
-    .line 371
-    .line 372
-    sget-object v5, LpFf;->w0:LpFf;
-
-    .line 373
-    .line 374
-    sget-object v6, LJ03;->a:LQd7;
-
-    .line 375
-    .line 376
-    invoke-interface {v0, v5, v6}, Le03;->H(LBI3;LQd7;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 377
-    .line 378
-    .line 379
-    move-result-object v0
-
-    .line 380
-    invoke-virtual {v3}, LBre;->d()LF06;
-
-    .line 381
-    .line 382
-    .line 383
+    .line 301
+    .line 302
+    .line 303
     move-result-object v3
 
+    .line 304
+    iget-object p1, p1, Lfr7;->b:LnJe;
+
+    .line 305
+    .line 306
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
+    .line 307
+    .line 308
+    .line 309
+    move-result-object v4
+
+    .line 310
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;
+
+    .line 311
+    .line 312
+    invoke-direct {v5, v3, v4}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 313
+    .line 314
+    .line 315
+    sget-object v3, LC36;->y0:LC36;
+
+    .line 316
+    .line 317
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;
+
+    .line 318
+    .line 319
+    invoke-direct {v4, v5, v3}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 320
+    .line 321
+    .line 322
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
+    .line 323
+    .line 324
+    .line 325
+    move-result-object p1
+
+    .line 326
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 327
+    .line 328
+    invoke-direct {v3, v4, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 329
+    .line 330
+    .line 331
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 332
+    .line 333
+    .line 334
+    move-result-object p1
+
+    .line 335
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 336
+    .line 337
+    invoke-direct {v0, v3, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 338
+    .line 339
+    .line 340
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 341
+    .line 342
+    .line 343
+    move-result-object p1
+
+    .line 344
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->l1:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 345
+    .line 346
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->N0:LIv9;
+
+    .line 347
+    .line 348
+    if-eqz p1, :cond_c
+
+    .line 349
+    .line 350
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0:Lcom/snapchat/deck/views/DeckView;
+
+    .line 351
+    .line 352
+    if-eqz v0, :cond_b
+
+    .line 353
+    .line 354
+    invoke-interface {p1, p0, v0}, LIv9;->c(Landroid/app/Activity;Landroid/view/ViewGroup;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 355
+    .line 356
+    .line 357
+    move-result-object p1
+
+    .line 358
+    invoke-static {p0, p1, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+
+    .line 359
+    .line 360
+    .line 361
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->A0:LYY4;
+
+    .line 362
+    .line 363
+    if-eqz p1, :cond_a
+
+    .line 364
+    .line 365
+    invoke-virtual {p1}, LYY4;->get()Ljava/lang/Object;
+
+    .line 366
+    .line 367
+    .line 368
+    move-result-object p1
+
+    .line 369
+    check-cast p1, LOa3;
+
+    .line 370
+    .line 371
+    sget-object v0, LhH1;->c:LhH1;
+
+    .line 372
+    .line 373
+    invoke-virtual {p1, v0}, LOa3;->d(LhH1;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
+
+    .line 374
+    .line 375
+    .line 376
+    move-result-object p1
+
+    .line 377
+    new-instance v0, Lw;
+
+    .line 378
+    .line 379
+    const/16 v3, 0x17
+
+    .line 380
+    .line 381
+    invoke-direct {v0, v3, p0}, Lw;-><init>(ILjava/lang/Object;)V
+
+    .line 382
+    .line 383
     .line 384
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    new-instance v3, LWVa;
 
     .line 385
     .line 386
-    invoke-direct {v5, v0, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    const/4 v4, 0x1
 
     .line 387
+    invoke-direct {v3, p0, v4}, LWVa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+
     .line 388
     .line 389
-    new-instance v0, LuJa;
-
     .line 390
-    .line 391
-    invoke-direct {v0, p0, p1}, LuJa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+    invoke-virtual {p1, v0, v3}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 391
     .line 392
     .line 393
+    move-result-object p1
+
     .line 394
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->p1:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 395
     .line 396
-    invoke-direct {v3, v5, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
 
     .line 397
     .line 398
     .line 399
-    new-instance v0, Lk;
+    move-result-object p1
 
     .line 400
-    .line 401
-    const/16 v5, 0xd
-
-    .line 402
-    .line 403
-    invoke-direct {v0, v5, p0}, Lk;-><init>(ILjava/lang/Object;)V
-
-    .line 404
-    .line 405
-    .line 406
-    new-instance v5, LtJa;
-
-    .line 407
-    .line 408
-    invoke-direct {v5, p0, p1}, LtJa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
-
-    .line 409
-    .line 410
-    .line 411
-    invoke-virtual {v3, v0, v5}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 412
-    .line 413
-    .line 414
-    move-result-object p1
-
-    .line 415
-    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->p1:Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 416
-    .line 417
-    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
-
-    .line 418
-    .line 419
-    .line 420
-    move-result-object p1
-
-    .line 421
     instance-of v0, p1, Lcom/snap/core/application/SnapContextWrapper;
 
-    .line 422
-    .line 423
+    .line 401
+    .line 402
     if-eqz v0, :cond_2
 
-    .line 424
-    .line 425
+    .line 403
+    .line 404
     check-cast p1, Lcom/snap/core/application/SnapContextWrapper;
 
-    .line 426
-    .line 427
+    .line 405
+    .line 406
     goto :goto_3
 
-    .line 428
+    .line 407
     :cond_2
-    move-object p1, v2
+    move-object p1, v1
 
-    .line 429
+    .line 408
     :goto_3
     if-eqz p1, :cond_8
 
-    .line 430
-    .line 431
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->J0:LhV4;
+    .line 409
+    .line 410
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->J0:LYY4;
 
-    .line 432
-    .line 433
+    .line 411
+    .line 412
     if-eqz v0, :cond_7
 
-    .line 434
-    .line 435
-    invoke-virtual {v0}, LhV4;->get()Ljava/lang/Object;
+    .line 413
+    .line 414
+    invoke-virtual {v0}, LYY4;->get()Ljava/lang/Object;
 
-    .line 436
-    .line 437
-    .line 438
+    .line 415
+    .line 416
+    .line 417
     move-result-object v0
 
-    .line 439
-    check-cast v0, LkT6;
+    .line 418
+    check-cast v0, LjX6;
 
-    .line 440
-    .line 441
-    iput-object v0, p1, Lcom/snap/core/application/SnapContextWrapper;->a:LkT6;
+    .line 419
+    .line 420
+    iput-object v0, p1, Lcom/snap/core/application/SnapContextWrapper;->b:LjX6;
 
-    .line 442
-    .line 443
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->v0:LhV4;
+    .line 421
+    .line 422
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->v0:LYY4;
 
-    .line 444
-    .line 445
+    .line 423
+    .line 424
     if-eqz v0, :cond_6
 
-    .line 446
-    .line 447
-    invoke-virtual {v0}, LhV4;->get()Ljava/lang/Object;
+    .line 425
+    .line 426
+    invoke-virtual {v0}, LYY4;->get()Ljava/lang/Object;
 
-    .line 448
-    .line 449
-    .line 450
+    .line 427
+    .line 428
+    .line 429
     move-result-object v0
 
-    .line 451
-    check-cast v0, Lu00;
+    .line 430
+    check-cast v0, Lb30;
 
-    .line 452
-    .line 453
-    iput-object v0, p1, Lcom/snap/core/application/SnapContextWrapper;->c:Lu00;
+    .line 431
+    .line 432
+    iput-object v0, p1, Lcom/snap/core/application/SnapContextWrapper;->d:Lb30;
 
-    .line 454
-    .line 455
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->b1:LhV4;
+    .line 433
+    .line 434
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->b1:LYY4;
 
-    .line 456
-    .line 457
+    .line 435
+    .line 436
     if-eqz v0, :cond_5
 
-    .line 458
-    .line 459
-    invoke-virtual {v0}, LhV4;->get()Ljava/lang/Object;
+    .line 437
+    .line 438
+    invoke-virtual {v0}, LYY4;->get()Ljava/lang/Object;
 
-    .line 460
-    .line 461
-    .line 462
+    .line 439
+    .line 440
+    .line 441
     move-result-object v0
 
-    .line 463
-    check-cast v0, LeNe;
+    .line 442
+    check-cast v0, La5f;
 
-    .line 464
-    .line 465
-    iput-object v0, p1, Lcom/snap/core/application/SnapContextWrapper;->b:LeNe;
+    .line 443
+    .line 444
+    iput-object v0, p1, Lcom/snap/core/application/SnapContextWrapper;->c:La5f;
 
-    .line 466
-    .line 467
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->M0:LhV4;
+    .line 445
+    .line 446
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->M0:LYY4;
 
-    .line 468
-    .line 469
+    .line 447
+    .line 448
     if-eqz v0, :cond_4
 
-    .line 470
-    .line 471
-    invoke-virtual {v0}, LhV4;->get()Ljava/lang/Object;
+    .line 449
+    .line 450
+    invoke-virtual {v0}, LYY4;->get()Ljava/lang/Object;
 
-    .line 472
-    .line 473
-    .line 474
+    .line 451
+    .line 452
+    .line 453
     move-result-object v0
 
-    .line 475
-    check-cast v0, LaA8;
+    .line 454
+    check-cast v0, LcH8;
 
-    .line 476
-    .line 477
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->z0:LhV4;
+    .line 455
+    .line 456
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->z0:LYY4;
 
-    .line 478
-    .line 479
+    .line 457
+    .line 458
     if-eqz v0, :cond_3
 
-    .line 480
-    .line 481
-    invoke-virtual {v0}, LhV4;->get()Ljava/lang/Object;
+    .line 459
+    .line 460
+    invoke-virtual {v0}, LYY4;->get()Ljava/lang/Object;
 
-    .line 482
-    .line 483
-    .line 484
+    .line 461
+    .line 462
+    .line 463
     move-result-object v0
 
-    .line 485
-    check-cast v0, Le03;
+    .line 464
+    check-cast v0, LI23;
 
-    .line 486
-    .line 487
+    .line 465
+    .line 466
     if-eqz v0, :cond_8
 
-    .line 488
-    .line 489
-    iget-object p1, p1, Lcom/snap/core/application/SnapContextWrapper;->b:LeNe;
+    .line 467
+    .line 468
+    iget-object p1, p1, Lcom/snap/core/application/SnapContextWrapper;->c:La5f;
 
-    .line 490
-    .line 491
+    .line 469
+    .line 470
     if-nez p1, :cond_8
 
-    .line 492
-    .line 493
-    sget-object p1, LeNe;->c:LrH9;
+    .line 471
+    .line 472
+    sget-object p1, La5f;->c:LQS9;
 
-    .line 494
-    .line 495
-    invoke-static {}, LHHd;->u()LeNe;
+    .line 473
+    .line 474
+    invoke-static {}, LtOc;->p()La5f;
 
-    .line 496
-    .line 497
-    .line 498
+    .line 475
+    .line 476
+    .line 477
     goto :goto_4
 
-    .line 499
+    .line 478
     :cond_3
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    const-string p1, "circumstanceEngine"
 
-    .line 500
-    .line 501
-    .line 502
-    throw v2
+    .line 479
+    .line 480
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 503
+    .line 481
+    .line 482
+    .line 483
+    throw v1
+
+    .line 484
     :cond_4
     const-string p1, "graphene"
 
-    .line 504
-    .line 505
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 485
+    .line 486
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 506
-    .line 507
-    .line 508
-    throw v2
+    .line 487
+    .line 488
+    .line 489
+    throw v1
 
-    .line 509
+    .line 490
     :cond_5
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 510
-    .line 511
-    .line 512
-    throw v2
+    .line 491
+    .line 492
+    .line 493
+    throw v1
 
-    .line 513
+    .line 494
     :cond_6
     const-string p1, "appStartExperimentReader"
 
-    .line 514
-    .line 515
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 495
+    .line 496
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 516
-    .line 517
-    .line 518
-    throw v2
+    .line 497
+    .line 498
+    .line 499
+    throw v1
 
-    .line 519
+    .line 500
     :cond_7
     const-string p1, "exceptionTracker"
 
-    .line 520
-    .line 521
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 501
+    .line 502
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 522
-    .line 523
-    .line 524
-    throw v2
+    .line 503
+    .line 504
+    .line 505
+    throw v1
 
-    .line 525
+    .line 506
     :cond_8
     :goto_4
     const-string p1, "sensor"
 
-    .line 526
-    .line 527
+    .line 507
+    .line 508
     invoke-virtual {p0, p1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 528
-    .line 529
-    .line 530
+    .line 509
+    .line 510
+    .line 511
     move-result-object p1
 
-    .line 531
+    .line 512
     check-cast p1, Landroid/hardware/SensorManager;
 
-    .line 532
-    .line 533
+    .line 513
+    .line 514
     iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s1:Landroid/hardware/SensorManager;
+
+    .line 515
+    .line 516
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->r0()LQS9;
+
+    .line 517
+    .line 518
+    .line 519
+    move-result-object p1
+
+    .line 520
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
+
+    .line 521
+    .line 522
+    .line 523
+    move-result-object p1
+
+    .line 524
+    check-cast p1, Lzxf;
+
+    .line 525
+    .line 526
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s1:Landroid/hardware/SensorManager;
+
+    .line 527
+    .line 528
+    iput-object v0, p1, Lzxf;->f:Landroid/hardware/SensorManager;
+
+    .line 529
+    .line 530
+    if-eqz v0, :cond_9
+
+    .line 531
+    .line 532
+    const/4 p1, 0x4
+
+    .line 533
+    invoke-virtual {v0, p1}, Landroid/hardware/SensorManager;->getDefaultSensor(I)Landroid/hardware/Sensor;
 
     .line 534
     .line 535
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0()LrH9;
-
     .line 536
+    move-result-object v1
+
     .line 537
-    .line 538
-    move-result-object p1
-
-    .line 539
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
-
-    .line 540
-    .line 541
-    .line 542
-    move-result-object p1
-
-    .line 543
-    check-cast p1, LWef;
-
-    .line 544
-    .line 545
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s1:Landroid/hardware/SensorManager;
-
-    .line 546
-    .line 547
-    iput-object v0, p1, LWef;->f:Landroid/hardware/SensorManager;
-
-    .line 548
-    .line 549
-    if-eqz v0, :cond_9
-
-    .line 550
-    .line 551
-    const/4 p1, 0x4
-
-    .line 552
-    invoke-virtual {v0, p1}, Landroid/hardware/SensorManager;->getDefaultSensor(I)Landroid/hardware/Sensor;
-
-    .line 553
-    .line 554
-    .line 555
-    move-result-object v2
-
-    .line 556
     :cond_9
-    iput-object v2, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t1:Landroid/hardware/Sensor;
+    iput-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t1:Landroid/hardware/Sensor;
 
-    .line 557
-    .line 558
+    .line 538
+    .line 539
     return-void
 
-    .line 559
+    .line 540
     :cond_a
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    const-string p1, "cloudAccountIdProvider"
 
-    .line 560
-    .line 561
-    .line 562
-    throw v2
+    .line 541
+    .line 542
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 563
+    .line 543
+    .line 544
+    .line 545
+    throw v1
+
+    .line 546
     :cond_b
     const-string p1, "deckView"
 
-    .line 564
-    .line 565
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 547
+    .line 548
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 566
-    .line 567
-    .line 568
-    throw v2
+    .line 549
+    .line 550
+    .line 551
+    throw v1
 
-    .line 569
+    .line 552
     :cond_c
     const-string p1, "insetsDetector"
 
-    .line 570
-    .line 571
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 553
+    .line 554
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 572
-    .line 573
-    .line 574
-    throw v2
+    .line 555
+    .line 556
+    .line 557
+    throw v1
 
-    .line 575
+    .line 558
     :cond_d
     const-string p1, "fideliusBlockstoreUserStore"
 
-    .line 576
-    .line 577
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 559
+    .line 560
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 578
-    .line 579
-    .line 580
-    throw v2
+    .line 561
+    .line 562
+    .line 563
+    throw v1
 
-    .line 581
+    .line 564
     :cond_e
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 582
-    .line 583
-    .line 584
-    throw v2
+    .line 565
+    .line 566
+    .line 567
+    throw v1
 
-    .line 585
+    .line 568
     :cond_f
     const-string p1, "persistentSessionService"
 
-    .line 586
-    .line 587
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 569
+    .line 570
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 588
-    .line 589
-    .line 590
-    throw v2
+    .line 571
+    .line 572
+    .line 573
+    throw v1
 
-    .line 591
+    .line 574
     :cond_10
     const-string p1, "schedulersProvider"
 
-    .line 592
-    .line 593
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 575
+    .line 576
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 594
-    .line 595
-    .line 596
-    throw v2
+    .line 577
+    .line 578
+    .line 579
+    throw v1
 
-    .line 597
+    .line 580
     :cond_11
     const-string p1, "activityLifecycleObservers"
 
-    .line 598
-    .line 599
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 581
+    .line 582
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 600
-    .line 601
-    .line 602
-    throw v2
+    .line 583
+    .line 584
+    .line 585
+    throw v1
 
-    .line 603
+    .line 586
     :cond_12
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 604
-    .line 605
-    .line 606
-    throw v2
+    .line 587
+    .line 588
+    .line 589
+    throw v1
 
-    .line 607
+    .line 590
     :cond_13
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 608
-    .line 609
-    .line 610
-    throw v2
+    .line 591
+    .line 592
+    .line 593
+    throw v1
 
-    .line 611
+    .line 594
     :cond_14
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 612
-    .line 613
-    .line 614
-    throw v2
+    .line 595
+    .line 596
+    .line 597
+    throw v1
 
-    .line 615
+    .line 598
     :cond_15
     const-string p1, "rxBus"
 
-    .line 616
-    .line 617
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 599
+    .line 600
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 618
-    .line 619
-    .line 620
-    throw v2
+    .line 601
+    .line 602
+    .line 603
+    throw v1
 
-    .line 621
+    .line 604
     :cond_16
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    .line 622
-    .line 623
+    .line 605
+    .line 606
     const-string v0, "Required value was null."
 
-    .line 624
-    .line 625
+    .line 607
+    .line 608
     invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 626
-    .line 627
-    .line 628
+    .line 609
+    .line 610
+    .line 611
     throw p1
 .end method
 
-.method public final androidInjector()LtQ;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->F0:LLp6;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "dispatchingAndroidInjector"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final attachBaseContext(Landroid/content/Context;)V
-    .locals 3
-
-    .line 1
-    new-instance v0, Lcom/snap/identity/loginsignup/ui/LoginContextWrapper;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p1}, Lcom/snap/core/application/SnapContextWrapper;-><init>(Landroid/content/Context;)V
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance p1, LT5a;
-
-    .line 7
-    .line 8
-    const/16 v1, 0x1a
-
-    .line 9
-    .line 10
-    invoke-direct {p1, v1, v0}, LT5a;-><init>(ILjava/lang/Object;)V
-
-    .line 11
-    .line 12
-    .line 13
-    new-instance v1, LXfi;
-
-    .line 14
-    .line 15
-    invoke-direct {v1, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object p1, v0, Lcom/snap/core/application/SnapContextWrapper;->e:Ljava/util/LinkedHashMap;
-
-    .line 19
-    .line 20
-    const-string v2, "layout_inflater"
-
-    .line 21
-    .line 22
-    invoke-interface {p1, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-super {p0, v0}, Landroid/app/Activity;->attachBaseContext(Landroid/content/Context;)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-void
-.end method
-
-.method public final b0()V
+.method public final Y()V
     .locals 2
 
     .line 1
@@ -1618,7 +1500,7 @@
     .line 7
     .line 8
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0()LrH9;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->r0()LQS9;
 
     .line 9
     .line 10
@@ -1626,7 +1508,7 @@
     move-result-object v0
 
     .line 12
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -1634,18 +1516,18 @@
     move-result-object v0
 
     .line 16
-    check-cast v0, LWef;
+    check-cast v0, Lzxf;
 
     .line 17
     .line 18
     const/4 v1, 0x0
 
     .line 19
-    iput-object v1, v0, LWef;->f:Landroid/hardware/SensorManager;
+    iput-object v1, v0, Lzxf;->f:Landroid/hardware/SensorManager;
 
     .line 20
     .line 21
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LQS9;
 
     .line 22
     .line 23
@@ -1653,7 +1535,7 @@
 
     .line 24
     .line 25
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -1694,11 +1576,11 @@
     move-result-object v1
 
     .line 45
-    check-cast v1, LNe;
+    check-cast v1, LIf;
 
     .line 46
     .line 47
-    invoke-virtual {v1}, LNe;->a()V
+    invoke-virtual {v1}, LIf;->a()V
 
     .line 48
     .line 49
@@ -1715,7 +1597,7 @@
 
     .line 53
     .line 54
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 55
     .line 56
@@ -1723,7 +1605,7 @@
     throw v1
 .end method
 
-.method public final c0()V
+.method public final Z()V
     .locals 6
 
     .line 1
@@ -1752,7 +1634,7 @@
     .line 12
     .line 13
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0()LrH9;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->r0()LQS9;
 
     .line 14
     .line 15
@@ -1760,7 +1642,7 @@
     move-result-object v0
 
     .line 17
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -1768,7 +1650,7 @@
     move-result-object v0
 
     .line 21
-    check-cast v0, LWef;
+    check-cast v0, Lzxf;
 
     .line 22
     .line 23
@@ -1776,11 +1658,11 @@
 
     .line 24
     .line 25
-    iput-object v1, v0, LWef;->f:Landroid/hardware/SensorManager;
+    iput-object v1, v0, Lzxf;->f:Landroid/hardware/SensorManager;
 
     .line 26
     .line 27
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LQS9;
 
     .line 28
     .line 29
@@ -1791,7 +1673,7 @@
 
     .line 31
     .line 32
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 33
     .line 34
@@ -1832,11 +1714,11 @@
     move-result-object v2
 
     .line 52
-    check-cast v2, LNe;
+    check-cast v2, LIf;
 
     .line 53
     .line 54
-    invoke-virtual {v2}, LNe;->e()V
+    invoke-virtual {v2}, LIf;->e()V
 
     .line 55
     .line 56
@@ -1860,7 +1742,7 @@
 
     .line 64
     .line 65
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->E0:Lng5;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->E0:LJm5;
 
     .line 66
     .line 67
@@ -1876,7 +1758,7 @@
     move-result-object v0
 
     .line 73
-    invoke-static {v0}, Lng5;->g(Landroid/content/Intent;)Z
+    invoke-static {v0}, LJm5;->g(Landroid/content/Intent;)Z
 
     .line 74
     .line 75
@@ -1900,7 +1782,7 @@
 
     .line 84
     .line 85
-    invoke-static {p0}, LsJa;->b(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;)Landroid/net/Uri;
+    invoke-static {p0}, Lu36;->b(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;)Landroid/net/Uri;
 
     .line 86
     .line 87
@@ -1912,7 +1794,7 @@
 
     .line 90
     .line 91
-    invoke-static {p0}, LsJa;->b(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;)Landroid/net/Uri;
+    invoke-static {p0}, Lu36;->b(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;)Landroid/net/Uri;
 
     .line 92
     .line 93
@@ -1937,7 +1819,7 @@
     .line 101
     .line 102
     :goto_1
-    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->D0:LTe5;
+    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->D0:Lnl5;
 
     .line 103
     .line 104
@@ -1956,7 +1838,7 @@
     const/4 v5, 0x4
 
     .line 111
-    invoke-static {v3, v4, v2, v0, v5}, Ldw8;->M(LTe5;Landroid/content/Intent;ZLjava/lang/String;I)Lio/reactivex/rxjava3/core/Single;
+    invoke-static {v3, v4, v2, v0, v5}, LKi5;->T(Lnl5;Landroid/content/Intent;ZLjava/lang/String;I)Lio/reactivex/rxjava3/core/Single;
 
     .line 112
     .line 113
@@ -1964,26 +1846,26 @@
     move-result-object v0
 
     .line 115
-    new-instance v3, LvJa;
+    new-instance v3, LXVa;
 
     .line 116
     .line 117
     const/4 v4, 0x0
 
     .line 118
-    invoke-direct {v3, p0, v4}, LvJa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+    invoke-direct {v3, p0, v4}, LXVa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
 
     .line 119
     .line 120
     .line 121
-    new-instance v4, LvJa;
+    new-instance v4, LXVa;
 
     .line 122
     .line 123
     const/4 v5, 0x1
 
     .line 124
-    invoke-direct {v4, p0, v5}, LvJa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+    invoke-direct {v4, p0, v5}, LXVa;-><init>(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
 
     .line 125
     .line 126
@@ -1996,7 +1878,7 @@
     move-result-object v0
 
     .line 131
-    invoke-static {p0, v0, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+    invoke-static {p0, v0, p0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
 
     .line 132
     .line 133
@@ -2009,7 +1891,7 @@
 
     .line 136
     .line 137
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 138
     .line 139
@@ -2022,7 +1904,7 @@
 
     .line 142
     .line 143
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 144
     .line 145
@@ -2057,7 +1939,7 @@
     move-result-object v0
 
     .line 159
-    invoke-static {v0}, LOtc;->A(Landroid/content/Intent;)Z
+    invoke-static {v0}, LUPe;->o(Landroid/content/Intent;)Z
 
     .line 160
     .line 161
@@ -2069,7 +1951,7 @@
 
     .line 164
     .line 165
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->e1:Lnwf;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->e1:LyPf;
 
     .line 166
     .line 167
@@ -2077,7 +1959,7 @@
 
     .line 168
     .line 169
-    sget-object v0, LMKa;->Z:LMKa;
+    sget-object v0, LtXa;->Z:LtXa;
 
     .line 170
     .line 171
@@ -2085,7 +1967,7 @@
 
     .line 172
     .line 173
-    invoke-static {v0, v0, v3}, Llva;->k(LMKa;LMKa;Ljava/lang/String;)LWm0;
+    invoke-static {v0, v0, v3}, LzHa;->l(LtXa;LtXa;Ljava/lang/String;)Lnp0;
 
     .line 174
     .line 175
@@ -2093,16 +1975,16 @@
     move-result-object v0
 
     .line 177
-    new-instance v3, LBre;
+    new-instance v3, LnJe;
 
     .line 178
     .line 179
-    invoke-direct {v3, v0}, LBre;-><init>(LWm0;)V
+    invoke-direct {v3, v0}, LnJe;-><init>(Lnp0;)V
 
     .line 180
     .line 181
     .line 182
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Q0:LYBa;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Q0:LoOa;
 
     .line 183
     .line 184
@@ -2118,7 +2000,7 @@
     move-result-object v1
 
     .line 190
-    invoke-virtual {v0, v1}, LYBa;->a(Landroid/content/Intent;)Lio/reactivex/rxjava3/core/Completable;
+    invoke-virtual {v0, v1}, LoOa;->a(Landroid/content/Intent;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 191
     .line 192
@@ -2126,7 +2008,7 @@
     move-result-object v0
 
     .line 194
-    invoke-virtual {v3}, LBre;->d()LF06;
+    invoke-virtual {v3}, LnJe;->d()LA36;
 
     .line 195
     .line 196
@@ -2147,7 +2029,7 @@
 
     .line 204
     .line 205
-    invoke-static {v3, v0}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v3, v0}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 206
     .line 207
@@ -2160,7 +2042,7 @@
 
     .line 210
     .line 211
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 212
     .line 213
@@ -2173,7 +2055,7 @@
 
     .line 216
     .line 217
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 218
     .line 219
@@ -2199,7 +2081,7 @@
 
     .line 227
     .line 228
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 229
     .line 230
@@ -2207,11 +2089,98 @@
     throw v1
 .end method
 
+.method public final androidInjector()LyS;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->F0:LYs6;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "dispatchingAndroidInjector"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final attachBaseContext(Landroid/content/Context;)V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/snap/identity/loginsignup/ui/LoginContextWrapper;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1}, Lcom/snap/core/application/SnapContextWrapper;-><init>(Landroid/content/Context;)V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance p1, LKua;
+
+    .line 7
+    .line 8
+    const/16 v1, 0x9
+
+    .line 9
+    .line 10
+    invoke-direct {p1, v1, v0}, LKua;-><init>(ILjava/lang/Object;)V
+
+    .line 11
+    .line 12
+    .line 13
+    new-instance v1, LREi;
+
+    .line 14
+    .line 15
+    invoke-direct {v1, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object p1, v0, Lcom/snap/core/application/SnapContextWrapper;->e:Ljava/util/LinkedHashMap;
+
+    .line 19
+    .line 20
+    const-string v2, "layout_inflater"
+
+    .line 21
+    .line 22
+    invoke-interface {p1, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-super {p0, v0}, Landroid/app/Activity;->attachBaseContext(Landroid/content/Context;)V
+
+    .line 26
+    .line 27
+    .line 28
+    return-void
+.end method
+
 .method public final dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0()LrH9;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->r0()LQS9;
 
     .line 2
     .line 3
@@ -2219,7 +2188,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -2227,7 +2196,7 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, LWef;
+    check-cast v0, Lzxf;
 
     .line 10
     .line 11
@@ -2256,7 +2225,7 @@
     .line 22
     .line 23
     :cond_0
-    iget-object v0, v0, LWef;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v0, v0, Lzxf;->b:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 24
     .line 25
@@ -2277,117 +2246,11 @@
     return p1
 .end method
 
-.method public final h(ZZZ)V
-    .locals 1
-
-    .line 1
-    const-string v0, "huawei"
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lh56;->b(Ljava/lang/String;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    const-string v0, "xiaomi"
-
-    .line 10
-    .line 11
-    invoke-static {v0}, Lh56;->b(Ljava/lang/String;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
-    if-eqz v0, :cond_1
-
-    .line 16
-    .line 17
-    :cond_0
-    const v0, 0x7f14018b
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-static {p0, v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_1
-    if-eqz p2, :cond_2
-
-    .line 24
-    .line 25
-    const p2, 0x7f140418
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-static {p0, p2}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
-
-    .line 29
-    .line 30
-    .line 31
-    :cond_2
-    if-eqz p3, :cond_3
-
-    .line 32
-    .line 33
-    const p2, 0x7f140419
-
-    .line 34
-    .line 35
-    .line 36
-    invoke-static {p0, p2}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
-
-    .line 37
-    .line 38
-    .line 39
-    :cond_3
-    if-eqz p1, :cond_4
-
-    .line 40
-    .line 41
-    const p1, 0x7f140274
-
-    .line 42
-    .line 43
-    .line 44
-    invoke-static {p0, p1}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
-
-    .line 45
-    .line 46
-    .line 47
-    :cond_4
-    const p1, 0x7f14041a
-
-    .line 48
-    .line 49
-    .line 50
-    invoke-static {p0, p1}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
-
-    .line 51
-    .line 52
-    .line 53
-    return-void
-.end method
-
-.method public final h0()V
+.method public final e0()V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LCq9;->v0(Landroid/app/Activity;)V
+    invoke-static {p0}, LbS2;->u(Landroid/app/Activity;)V
 
     .line 2
     .line 3
@@ -2395,11 +2258,11 @@
     return-void
 .end method
 
-.method public final k0()V
+.method public final f0()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->g1:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->g1:LQS9;
 
     .line 2
     .line 3
@@ -2410,7 +2273,7 @@
 
     .line 5
     .line 6
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -2418,16 +2281,16 @@
     move-result-object v0
 
     .line 10
-    check-cast v0, LpLa;
+    check-cast v0, LWXa;
 
     .line 11
     .line 12
-    invoke-interface {v0}, LpLa;->dispose()V
+    invoke-interface {v0}, LWXa;->dispose()V
 
     .line 13
     .line 14
     .line 15
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Y0:Lbke;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Y0:LDBe;
 
     .line 16
     .line 17
@@ -2435,7 +2298,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 20
     .line 21
@@ -2443,11 +2306,11 @@
     move-result-object v0
 
     .line 23
-    check-cast v0, LlLa;
+    check-cast v0, LSXa;
 
     .line 24
     .line 25
-    iget-object v0, v0, LlLa;->g:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, v0, LSXa;->g:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 26
     .line 27
@@ -2456,7 +2319,7 @@
     .line 28
     .line 29
     .line 30
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->R0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->R0:LQS9;
 
     .line 31
     .line 32
@@ -2464,7 +2327,7 @@
 
     .line 33
     .line 34
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -2472,16 +2335,16 @@
     move-result-object v0
 
     .line 38
-    check-cast v0, LHJa;
+    check-cast v0, LjWa;
 
     .line 39
     .line 40
-    invoke-virtual {v0}, LHJa;->c()V
+    invoke-virtual {v0}, LjWa;->c()V
 
     .line 41
     .line 42
     .line 43
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->f1:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->f1:LQS9;
 
     .line 44
     .line 45
@@ -2489,7 +2352,7 @@
 
     .line 46
     .line 47
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 48
     .line 49
@@ -2497,11 +2360,11 @@
     move-result-object v0
 
     .line 51
-    check-cast v0, Lsog;
+    check-cast v0, LuJg;
 
     .line 52
     .line 53
-    iget-object v0, v0, Lsog;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, v0, LuJg;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 54
     .line 55
@@ -2510,7 +2373,7 @@
     .line 56
     .line 57
     .line 58
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->O0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->O0:LQS9;
 
     .line 59
     .line 60
@@ -2518,7 +2381,7 @@
 
     .line 61
     .line 62
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 63
     .line 64
@@ -2526,16 +2389,16 @@
     move-result-object v0
 
     .line 66
-    check-cast v0, Lcn9;
+    check-cast v0, LYv9;
 
     .line 67
     .line 68
-    invoke-virtual {v0}, Lcn9;->a()V
+    invoke-virtual {v0}, LYv9;->a()V
 
     .line 69
     .line 70
     .line 71
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->C0:LO74;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->C0:Lwc4;
 
     .line 72
     .line 73
@@ -2543,11 +2406,11 @@
 
     .line 74
     .line 75
-    iput-object v1, v0, LO74;->b:LwJa;
+    iput-object v1, v0, Lwc4;->b:LYVa;
 
     .line 76
     .line 77
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t0:LQS9;
 
     .line 78
     .line 79
@@ -2555,7 +2418,7 @@
 
     .line 80
     .line 81
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 82
     .line 83
@@ -2563,16 +2426,16 @@
     move-result-object v0
 
     .line 85
-    check-cast v0, Li6;
+    check-cast v0, LU6;
 
     .line 86
     .line 87
-    invoke-virtual {v0}, Li6;->dispose()V
+    invoke-virtual {v0}, LU6;->dispose()V
 
     .line 88
     .line 89
     .line 90
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t0()LrH9;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->p0()LQS9;
 
     .line 91
     .line 92
@@ -2580,7 +2443,7 @@
     move-result-object v0
 
     .line 94
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 95
     .line 96
@@ -2588,11 +2451,11 @@
     move-result-object v0
 
     .line 98
-    check-cast v0, LTqc;
+    check-cast v0, LmGc;
 
     .line 99
     .line 100
-    invoke-virtual {v0}, LTqc;->A()V
+    invoke-virtual {v0}, LmGc;->A()V
 
     .line 101
     .line 102
@@ -2681,7 +2544,7 @@
     .line 146
     .line 147
     .line 148
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->L0:Lbke;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->L0:LDBe;
 
     .line 149
     .line 150
@@ -2689,7 +2552,7 @@
 
     .line 151
     .line 152
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 153
     .line 154
@@ -2697,16 +2560,16 @@
     move-result-object v0
 
     .line 156
-    check-cast v0, LoB7;
+    check-cast v0, LDG7;
 
     .line 157
     .line 158
-    invoke-virtual {v0}, LoB7;->a()V
+    invoke-virtual {v0}, LDG7;->a()V
 
     .line 159
     .line 160
     .line 161
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0:LQS9;
 
     .line 162
     .line 163
@@ -2714,7 +2577,7 @@
 
     .line 164
     .line 165
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 166
     .line 167
@@ -2755,11 +2618,11 @@
     move-result-object v2
 
     .line 185
-    check-cast v2, LNe;
+    check-cast v2, LIf;
 
     .line 186
     .line 187
-    invoke-virtual {v2}, LNe;->d()V
+    invoke-virtual {v2}, LIf;->b()V
 
     .line 188
     .line 189
@@ -2789,7 +2652,7 @@
 
     .line 200
     .line 201
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 202
     .line 203
@@ -2802,7 +2665,7 @@
 
     .line 206
     .line 207
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 208
     .line 209
@@ -2815,7 +2678,7 @@
 
     .line 212
     .line 213
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 214
     .line 215
@@ -2828,7 +2691,7 @@
 
     .line 218
     .line 219
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 220
     .line 221
@@ -2841,7 +2704,7 @@
 
     .line 224
     .line 225
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 226
     .line 227
@@ -2854,7 +2717,7 @@
 
     .line 230
     .line 231
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 232
     .line 233
@@ -2867,7 +2730,7 @@
 
     .line 236
     .line 237
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 238
     .line 239
@@ -2880,7 +2743,7 @@
 
     .line 242
     .line 243
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 244
     .line 245
@@ -2893,7 +2756,7 @@
 
     .line 248
     .line 249
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 250
     .line 251
@@ -2906,7 +2769,7 @@
 
     .line 254
     .line 255
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 256
     .line 257
@@ -2919,7 +2782,7 @@
 
     .line 260
     .line 261
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 262
     .line 263
@@ -2932,7 +2795,7 @@
 
     .line 266
     .line 267
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 268
     .line 269
@@ -2945,7 +2808,7 @@
 
     .line 272
     .line 273
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 274
     .line 275
@@ -2958,12 +2821,118 @@
 
     .line 278
     .line 279
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 280
     .line 281
     .line 282
     throw v1
+.end method
+
+.method public final g(ZZZ)V
+    .locals 1
+
+    .line 1
+    const-string v0, "huawei"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ll86;->a(Ljava/lang/String;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    const-string v0, "xiaomi"
+
+    .line 10
+    .line 11
+    invoke-static {v0}, Ll86;->a(Ljava/lang/String;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_1
+
+    .line 16
+    .line 17
+    :cond_0
+    const v0, 0x7f14018f
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-static {p0, v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->o0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_1
+    if-eqz p2, :cond_2
+
+    .line 24
+    .line 25
+    const p2, 0x7f14044c
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-static {p0, p2}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->o0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    :cond_2
+    if-eqz p3, :cond_3
+
+    .line 32
+    .line 33
+    const p2, 0x7f14044d
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-static {p0, p2}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->o0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    :cond_3
+    if-eqz p1, :cond_4
+
+    .line 40
+    .line 41
+    const p1, 0x7f1402a1
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-static {p0, p1}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->o0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+
+    .line 45
+    .line 46
+    .line 47
+    :cond_4
+    const p1, 0x7f14044e
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-static {p0, p1}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->o0(Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;I)V
+
+    .line 51
+    .line 52
+    .line 53
+    return-void
 .end method
 
 .method public final m(I)V
@@ -3010,6 +2979,666 @@
     return-void
 .end method
 
+.method public final n0(Landroid/view/MotionEvent;)V
+    .locals 11
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->r0()LQS9;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    check-cast v0, Lzxf;
+
+    .line 10
+    .line 11
+    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u1:Landroid/hardware/SensorEvent;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v2
+
+    .line 20
+    const/4 v3, 0x1
+
+    .line 21
+    if-ne v2, v3, :cond_7
+
+    .line 22
+    .line 23
+    new-instance v2, LLT;
+
+    .line 24
+    .line 25
+    invoke-direct {v2}, LLT;-><init>()V
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-wide v4
+
+    .line 32
+    invoke-virtual {v2, v4, v5}, LLT;->d(J)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDeviceId()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v4
+
+    .line 39
+    invoke-virtual {v2, v4}, LLT;->a(I)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPressure()F
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v4
+
+    .line 46
+    const v5, 0x461c4000    # 10000.0f
+
+    .line 47
+    .line 48
+    .line 49
+    mul-float v4, v4, v5
+
+    .line 50
+    .line 51
+    invoke-static {v4}, Ljava/lang/Math;->round(F)I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v4
+
+    .line 55
+    int-to-float v4, v4
+
+    .line 56
+    div-float/2addr v4, v5
+
+    .line 57
+    invoke-virtual {v2, v4}, LLT;->c(F)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getSize()F
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v4
+
+    .line 64
+    mul-float v4, v4, v5
+
+    .line 65
+    .line 66
+    invoke-static {v4}, Ljava/lang/Math;->round(F)I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v4
+
+    .line 70
+    int-to-float v4, v4
+
+    .line 71
+    div-float/2addr v4, v5
+
+    .line 72
+    invoke-virtual {v2, v4}, LLT;->e(F)V
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v4
+
+    .line 79
+    const/high16 v5, 0x41200000    # 10.0f
+
+    .line 80
+    .line 81
+    mul-float v4, v4, v5
+
+    .line 82
+    .line 83
+    invoke-static {v4}, Ljava/lang/Math;->round(F)I
+
+    .line 84
+    .line 85
+    .line 86
+    move-result v4
+
+    .line 87
+    int-to-float v4, v4
+
+    .line 88
+    div-float/2addr v4, v5
+
+    .line 89
+    invoke-virtual {v2, v4}, LLT;->g(F)V
+
+    .line 90
+    .line 91
+    .line 92
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v4
+
+    .line 96
+    mul-float v4, v4, v5
+
+    .line 97
+    .line 98
+    invoke-static {v4}, Ljava/lang/Math;->round(F)I
+
+    .line 99
+    .line 100
+    .line 101
+    move-result v4
+
+    .line 102
+    int-to-float v4, v4
+
+    .line 103
+    div-float/2addr v4, v5
+
+    .line 104
+    invoke-virtual {v2, v4}, LLT;->h(F)V
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-wide v4
+
+    .line 111
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDownTime()J
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-wide v6
+
+    .line 115
+    sub-long/2addr v4, v6
+
+    .line 116
+    long-to-int v5, v4
+
+    .line 117
+    invoke-virtual {v2, v5}, LLT;->b(I)V
+
+    .line 118
+    .line 119
+    .line 120
+    iget-object v4, v0, Lzxf;->c:Ljava/util/LinkedList;
+
+    .line 121
+    .line 122
+    invoke-virtual {v4}, Ljava/util/LinkedList;->size()I
+
+    .line 123
+    .line 124
+    .line 125
+    move-result v5
+
+    .line 126
+    const/4 v6, 0x0
+
+    .line 127
+    const/4 v7, 0x5
+
+    .line 128
+    if-lt v5, v7, :cond_0
+
+    .line 129
+    .line 130
+    invoke-virtual {v4, v6}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
+
+    .line 131
+    .line 132
+    .line 133
+    :cond_0
+    invoke-virtual {v4, v2}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+
+    .line 134
+    .line 135
+    .line 136
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDeviceId()I
+
+    .line 137
+    .line 138
+    .line 139
+    move-result v2
+
+    .line 140
+    iget-object v5, v0, Lzxf;->d:Ljava/util/LinkedList;
+
+    .line 141
+    .line 142
+    invoke-virtual {v5}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v8
+
+    .line 146
+    :cond_1
+    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 147
+    .line 148
+    .line 149
+    move-result v9
+
+    .line 150
+    const/4 v10, 0x2
+
+    .line 151
+    if-eqz v9, :cond_2
+
+    .line 152
+    .line 153
+    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object v9
+
+    .line 157
+    check-cast v9, LBS;
+
+    .line 158
+    .line 159
+    invoke-virtual {v9}, LBS;->getId()I
+
+    .line 160
+    .line 161
+    .line 162
+    move-result v9
+
+    .line 163
+    if-ne v9, v2, :cond_1
+
+    .line 164
+    .line 165
+    goto :goto_0
+
+    .line 166
+    :cond_2
+    new-instance v8, LBS;
+
+    .line 167
+    .line 168
+    invoke-direct {v8}, LBS;-><init>()V
+
+    .line 169
+    .line 170
+    .line 171
+    invoke-static {v2}, Landroid/view/InputDevice;->getDevice(I)Landroid/view/InputDevice;
+
+    .line 172
+    .line 173
+    .line 174
+    move-result-object v9
+
+    .line 175
+    invoke-virtual {v8, v2}, LBS;->c(I)V
+
+    .line 176
+    .line 177
+    .line 178
+    if-eqz v9, :cond_3
+
+    .line 179
+    .line 180
+    invoke-virtual {v9}, Landroid/view/InputDevice;->getName()Ljava/lang/String;
+
+    .line 181
+    .line 182
+    .line 183
+    move-result-object v2
+
+    .line 184
+    invoke-virtual {v8, v2}, LBS;->e(Ljava/lang/String;)V
+
+    .line 185
+    .line 186
+    .line 187
+    invoke-virtual {v9}, Landroid/view/InputDevice;->getDescriptor()Ljava/lang/String;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v2
+
+    .line 191
+    invoke-virtual {v8, v2}, LBS;->b(Ljava/lang/String;)V
+
+    .line 192
+    .line 193
+    .line 194
+    invoke-virtual {v9}, Landroid/view/InputDevice;->getKeyboardType()I
+
+    .line 195
+    .line 196
+    .line 197
+    move-result v2
+
+    .line 198
+    invoke-virtual {v8, v2}, LBS;->d(I)V
+
+    .line 199
+    .line 200
+    .line 201
+    invoke-virtual {v9}, Landroid/view/InputDevice;->getSources()I
+
+    .line 202
+    .line 203
+    .line 204
+    move-result v2
+
+    .line 205
+    invoke-virtual {v8, v2}, LBS;->g(I)V
+
+    .line 206
+    .line 207
+    .line 208
+    :cond_3
+    invoke-virtual {v5}, Ljava/util/LinkedList;->size()I
+
+    .line 209
+    .line 210
+    .line 211
+    move-result v2
+
+    .line 212
+    if-lt v2, v10, :cond_4
+
+    .line 213
+    .line 214
+    invoke-virtual {v5, v6}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
+
+    .line 215
+    .line 216
+    .line 217
+    :cond_4
+    invoke-virtual {v5, v8}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+
+    .line 218
+    .line 219
+    .line 220
+    :goto_0
+    iget-object v2, v0, Lzxf;->e:Ljava/util/LinkedList;
+
+    .line 221
+    .line 222
+    if-eqz v1, :cond_6
+
+    .line 223
+    .line 224
+    new-instance v8, LbO8;
+
+    .line 225
+    .line 226
+    invoke-direct {v8}, LbO8;-><init>()V
+
+    .line 227
+    .line 228
+    .line 229
+    iget-object v9, v1, Landroid/hardware/SensorEvent;->values:[F
+
+    .line 230
+    .line 231
+    aget v9, v9, v6
+
+    .line 232
+    .line 233
+    invoke-virtual {v8, v9}, LbO8;->b(F)V
+
+    .line 234
+    .line 235
+    .line 236
+    iget-object v9, v1, Landroid/hardware/SensorEvent;->values:[F
+
+    .line 237
+    .line 238
+    aget v3, v9, v3
+
+    .line 239
+    .line 240
+    invoke-virtual {v8, v3}, LbO8;->c(F)V
+
+    .line 241
+    .line 242
+    .line 243
+    iget-object v1, v1, Landroid/hardware/SensorEvent;->values:[F
+
+    .line 244
+    .line 245
+    aget v1, v1, v10
+
+    .line 246
+    .line 247
+    invoke-virtual {v8, v1}, LbO8;->d(F)V
+
+    .line 248
+    .line 249
+    .line 250
+    invoke-virtual {v2}, Ljava/util/LinkedList;->size()I
+
+    .line 251
+    .line 252
+    .line 253
+    move-result v1
+
+    .line 254
+    if-lt v1, v7, :cond_5
+
+    .line 255
+    .line 256
+    invoke-virtual {v2, v6}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
+
+    .line 257
+    .line 258
+    .line 259
+    :cond_5
+    invoke-virtual {v2, v8}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+
+    .line 260
+    .line 261
+    .line 262
+    :cond_6
+    iget-object v1, v0, Lzxf;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 263
+    .line 264
+    new-instance v3, Lyxf;
+
+    .line 265
+    .line 266
+    invoke-direct {v3, v4, v5, v2}, Lyxf;-><init>(Ljava/util/LinkedList;Ljava/util/LinkedList;Ljava/util/LinkedList;)V
+
+    .line 267
+    .line 268
+    .line 269
+    invoke-virtual {v1, v3}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
+
+    .line 270
+    .line 271
+    .line 272
+    :cond_7
+    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDeviceId()I
+
+    .line 273
+    .line 274
+    .line 275
+    move-result p1
+
+    .line 276
+    if-nez p1, :cond_8
+
+    .line 277
+    .line 278
+    iget-object p1, v0, Lzxf;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 279
+    .line 280
+    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+
+    .line 281
+    .line 282
+    .line 283
+    :cond_8
+    sget-object p1, LOdh;->a:LNdh;
+
+    .line 284
+    .line 285
+    const-string v0, "dispatchTweakTouch"
+
+    .line 286
+    .line 287
+    invoke-virtual {p1, v0}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 288
+    .line 289
+    .line 290
+    move-result v0
+
+    .line 291
+    :try_start_0
+    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->h1:LQS9;
+
+    .line 292
+    .line 293
+    if-eqz v1, :cond_9
+
+    .line 294
+    .line 295
+    invoke-interface {v1}, LQS9;->get()Ljava/lang/Object;
+
+    .line 296
+    .line 297
+    .line 298
+    move-result-object v1
+
+    .line 299
+    check-cast v1, LAkj;
+
+    .line 300
+    .line 301
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 302
+    .line 303
+    .line 304
+    invoke-virtual {p1, v0}, LNdh;->h(I)V
+
+    .line 305
+    .line 306
+    .line 307
+    return-void
+
+    .line 308
+    :catchall_0
+    move-exception p1
+
+    .line 309
+    goto :goto_1
+
+    .line 310
+    :cond_9
+    :try_start_1
+    const-string p1, "tweaksUITapDetector"
+
+    .line 311
+    .line 312
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 313
+    .line 314
+    .line 315
+    const/4 p1, 0x0
+
+    .line 316
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 317
+    :goto_1
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 318
+    .line 319
+    if-eqz v1, :cond_a
+
+    .line 320
+    .line 321
+    invoke-virtual {v1, v0}, LtGi;->o(I)V
+
+    .line 322
+    .line 323
+    .line 324
+    :cond_a
+    throw p1
+.end method
+
 .method public final onAccuracyChanged(Landroid/hardware/Sensor;I)V
     .locals 0
 
@@ -3045,7 +3674,7 @@
     .line 12
     .line 13
     :try_start_0
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Z0:LhV4;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->Z0:LYY4;
 
     .line 14
     .line 15
@@ -3056,7 +3685,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p1}, LhV4;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, LYY4;->get()Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -3064,11 +3693,11 @@
     move-result-object p1
 
     .line 22
-    check-cast p1, LAy8;
+    check-cast p1, LSdc;
 
     .line 23
     .line 24
-    invoke-virtual {p1, p3}, LAy8;->a(Landroid/content/Intent;)Ljava/lang/String;
+    invoke-interface {p1, p3}, LSdc;->a(Landroid/content/Intent;)Ljava/lang/String;
 
     .line 25
     .line 26
@@ -3076,7 +3705,7 @@
     move-result-object p1
 
     .line 28
-    iget-object p3, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->I0:Lbke;
+    iget-object p3, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->I0:LDBe;
 
     .line 29
     .line 30
@@ -3084,7 +3713,7 @@
 
     .line 31
     .line 32
-    invoke-interface {p3}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {p3}, LDBe;->get()Ljava/lang/Object;
 
     .line 33
     .line 34
@@ -3092,20 +3721,20 @@
     move-result-object p2
 
     .line 36
-    check-cast p2, LWR6;
+    check-cast p2, LSV6;
 
     .line 37
     .line 38
-    new-instance p3, LLkd;
+    new-instance p3, LjBd;
 
     .line 39
     .line 40
-    invoke-direct {p3, p1}, LLkd;-><init>(Ljava/lang/String;)V
+    invoke-direct {p3, p1}, LjBd;-><init>(Ljava/lang/String;)V
 
     .line 41
     .line 42
     .line 43
-    invoke-interface {p2, p3}, LWR6;->a(Ljava/lang/Object;)V
+    invoke-interface {p2, p3}, LSV6;->a(Ljava/lang/Object;)V
 
     .line 44
     .line 45
@@ -3118,7 +3747,7 @@
 
     .line 48
     .line 49
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -3131,7 +3760,7 @@
 
     .line 54
     .line 55
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 56
     .line 57
@@ -3150,7 +3779,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t0()LrH9;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->p0()LQS9;
 
     .line 2
     .line 3
@@ -3158,7 +3787,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -3166,14 +3795,14 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, LTqc;
+    check-cast v0, LmGc;
 
     .line 10
     .line 11
     const/4 v1, 0x0
 
     .line 12
-    invoke-virtual {v0, v1}, LTqc;->z(LqU6;)Z
+    invoke-virtual {v0, v1}, LmGc;->z(LEY6;)Z
 
     .line 13
     .line 14
@@ -3207,7 +3836,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {p0, p1}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->w0(Landroid/content/Intent;)V
+    invoke-virtual {p0, p1}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0(Landroid/content/Intent;)V
 
     .line 7
     .line 8
@@ -3229,53 +3858,53 @@
 .end method
 
 .method public final onPostCreate(Landroid/os/Bundle;)V
-    .locals 19
+    .locals 20
 
     .line 1
     move-object/from16 v0, p0
 
     .line 2
     .line 3
-    invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
+    const/4 v1, 0x1
 
     .line 4
+    invoke-super/range {p0 .. p1}, Landroid/app/Activity;->onPostCreate(Landroid/os/Bundle;)V
+
     .line 5
     .line 6
-    const/4 v1, 0x0
-
     .line 7
-    if-eqz p1, :cond_1
+    const/4 v2, 0x0
 
     .line 8
+    if-eqz p1, :cond_1
+
     .line 9
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->E0:Lng5;
-
     .line 10
-    .line 11
-    if-eqz v2, :cond_0
+    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->E0:LJm5;
 
+    .line 11
     .line 12
+    if-eqz v3, :cond_0
+
     .line 13
+    .line 14
     invoke-virtual {v0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
-    .line 14
     .line 15
     .line 16
-    move-result-object v2
-
     .line 17
-    sget-object v3, LLwi;->a:Lobi;
+    move-result-object v3
 
     .line 18
+    sget-object v4, LOVi;->a:LiAi;
+
     .line 19
-    const-string v3, "com.snap.deeplink.is_deep_link_processed"
-
     .line 20
-    .line 21
-    const/4 v4, 0x1
+    const-string v4, "com.snap.deeplink.is_deep_link_processed"
 
+    .line 21
     .line 22
-    invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+    invoke-virtual {v3, v4, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 23
     .line 24
@@ -3284,507 +3913,508 @@
 
     .line 26
     :cond_0
-    const-string v2, "deepLinkUtils"
+    const-string v1, "deepLinkUtils"
 
     .line 27
     .line 28
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 29
     .line 30
     .line 31
-    throw v1
+    throw v2
 
     .line 32
     :cond_1
     :goto_0
-    invoke-virtual {v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t0()LrH9;
+    invoke-virtual {v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->p0()LQS9;
 
     .line 33
     .line 34
     .line 35
-    move-result-object v2
+    move-result-object v3
 
     .line 36
-    invoke-interface {v2}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v3}, LQS9;->get()Ljava/lang/Object;
 
     .line 37
     .line 38
     .line 39
-    move-result-object v2
+    move-result-object v3
 
     .line 40
-    check-cast v2, LTqc;
+    check-cast v3, LmGc;
 
     .line 41
     .line 42
-    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0:Lcom/snapchat/deck/views/DeckView;
+    iget-object v4, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->s0:Lcom/snapchat/deck/views/DeckView;
 
     .line 43
     .line 44
-    if-eqz v3, :cond_a
+    if-eqz v4, :cond_a
 
     .line 45
     .line 46
-    invoke-virtual {v2, v3}, LTqc;->C(Lcom/snapchat/deck/views/DeckView;)V
+    invoke-virtual {v3, v4}, LmGc;->C(Lcom/snapchat/deck/views/DeckView;)V
 
     .line 47
     .line 48
     .line 49
-    invoke-virtual {v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t0()LrH9;
+    invoke-virtual {v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->p0()LQS9;
 
     .line 50
     .line 51
     .line 52
-    move-result-object v2
+    move-result-object v3
 
     .line 53
-    invoke-interface {v2}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v3}, LQS9;->get()Ljava/lang/Object;
 
     .line 54
     .line 55
     .line 56
-    move-result-object v2
+    move-result-object v3
 
     .line 57
-    move-object v3, v2
+    move-object v4, v3
 
     .line 58
-    check-cast v3, LTqc;
+    check-cast v4, LmGc;
 
     .line 59
     .line 60
-    const/4 v8, 0x0
-
-    .line 61
     const/4 v9, 0x0
 
-    .line 62
-    const/4 v4, 0x0
+    .line 61
+    const/4 v10, 0x0
 
-    .line 63
+    .line 62
     const/4 v5, 0x0
 
-    .line 64
+    .line 63
     const/4 v6, 0x0
 
-    .line 65
+    .line 64
     const/4 v7, 0x0
 
+    .line 65
+    const/4 v8, 0x0
+
     .line 66
-    const/16 v10, 0x3f
+    const/16 v11, 0x3f
 
     .line 67
     .line 68
-    invoke-static/range {v3 .. v10}, LTqc;->P(LTqc;LcSa;LOpc;Ljava/util/ArrayList;LPpc;LJqc;ZI)V
+    invoke-static/range {v4 .. v11}, LmGc;->N(LmGc;LL4b;LjFc;Ljava/util/ArrayList;LkFc;LcGc;ZI)V
 
     .line 69
     .line 70
     .line 71
-    new-instance v11, LEqc;
+    new-instance v12, LXFc;
 
     .line 72
     .line 73
-    invoke-virtual {v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->t0()LrH9;
+    invoke-virtual {v0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->p0()LQS9;
 
     .line 74
     .line 75
     .line 76
-    move-result-object v2
+    move-result-object v3
 
     .line 77
-    invoke-interface {v2}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v3}, LQS9;->get()Ljava/lang/Object;
 
     .line 78
     .line 79
     .line 80
-    move-result-object v2
+    move-result-object v3
 
     .line 81
-    move-object v12, v2
+    move-object v13, v3
 
     .line 82
-    check-cast v12, LTqc;
+    check-cast v13, LmGc;
 
     .line 83
     .line 84
-    iget-object v13, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->U0:LhV4;
+    iget-object v14, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->U0:LYY4;
 
     .line 85
     .line 86
-    if-eqz v13, :cond_9
+    if-eqz v14, :cond_9
 
     .line 87
     .line 88
-    iget-object v15, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->w0:LOa1;
+    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->w0:Lbe1;
 
     .line 89
     .line 90
-    if-eqz v15, :cond_8
+    if-eqz v3, :cond_8
 
     .line 91
     .line 92
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->B0:LpC3;
+    iget-object v4, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->B0:LOF3;
 
     .line 93
     .line 94
-    if-eqz v2, :cond_7
+    if-eqz v4, :cond_7
 
     .line 95
     .line 96
-    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->W0:LfM5;
+    iget-object v5, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->W0:LxQ5;
 
     .line 97
     .line 98
-    if-eqz v3, :cond_6
+    if-eqz v5, :cond_6
 
     .line 99
     .line 100
-    iget-object v4, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->e1:Lnwf;
+    iget-object v6, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->e1:LyPf;
 
     .line 101
     .line 102
-    if-eqz v4, :cond_5
+    if-eqz v6, :cond_5
 
     .line 103
     .line 104
-    iget-object v4, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->y0:Llz1;
+    iget-object v6, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->y0:LyC1;
 
     .line 105
     .line 106
-    if-eqz v4, :cond_4
+    if-eqz v6, :cond_4
 
     .line 107
     .line 108
-    const/4 v14, 0x0
+    const/4 v15, 0x0
 
     .line 109
-    move-object/from16 v16, v2
+    move-object/from16 v16, v3
 
     .line 110
     .line 111
-    move-object/from16 v17, v3
+    move-object/from16 v17, v4
 
     .line 112
     .line 113
-    move-object/from16 v18, v4
+    move-object/from16 v18, v5
 
     .line 114
     .line 115
-    invoke-direct/range {v11 .. v18}, LEqc;-><init>(LTqc;Lake;LfY4;LOa1;LpC3;LfM5;Llz1;)V
+    move-object/from16 v19, v6
 
     .line 116
     .line 117
-    .line 118
-    invoke-virtual {v12, v11}, LTqc;->d(Lxrc;)V
+    invoke-direct/range {v12 .. v19}, LXFc;-><init>(LmGc;LCBe;Ly45;Lbe1;LOF3;LxQ5;LyC1;)V
 
+    .line 118
     .line 119
     .line 120
-    .line 121
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->C0:LO74;
+    invoke-virtual {v13, v12}, LmGc;->d(LQGc;)V
 
+    .line 121
     .line 122
     .line 123
-    if-eqz v2, :cond_3
+    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->C0:Lwc4;
 
     .line 124
     .line 125
-    new-instance v3, LwJa;
+    if-eqz v3, :cond_3
 
     .line 126
     .line 127
-    const/4 v4, 0x0
+    new-instance v4, LYVa;
 
     .line 128
-    invoke-direct {v3, v11, v4}, LwJa;-><init>(LEqc;I)V
-
     .line 129
-    .line 130
-    .line 131
-    iput-object v3, v2, LO74;->b:LwJa;
+    const/4 v5, 0x0
 
+    .line 130
+    invoke-direct {v4, v12, v5}, LYVa;-><init>(LXFc;I)V
+
+    .line 131
     .line 132
     .line 133
-    iget-object v2, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LrH9;
+    iput-object v4, v3, Lwc4;->b:LYVa;
 
     .line 134
     .line 135
-    if-eqz v2, :cond_2
+    iget-object v3, v0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->T0:LQS9;
 
     .line 136
     .line 137
-    invoke-interface {v2}, LrH9;->get()Ljava/lang/Object;
+    if-eqz v3, :cond_2
 
     .line 138
     .line 139
+    invoke-interface {v3}, LQS9;->get()Ljava/lang/Object;
+
     .line 140
-    move-result-object v1
-
     .line 141
-    check-cast v1, LFKa;
-
     .line 142
+    move-result-object v2
+
     .line 143
-    iget-object v2, v1, LFKa;->t:LrH9;
+    check-cast v2, LkXa;
 
     .line 144
     .line 145
-    invoke-interface {v2}, LrH9;->get()Ljava/lang/Object;
+    iget-object v3, v2, LkXa;->t:LQS9;
 
     .line 146
     .line 147
+    invoke-interface {v3}, LQS9;->get()Ljava/lang/Object;
+
     .line 148
-    move-result-object v3
-
     .line 149
-    check-cast v3, LpLa;
-
     .line 150
+    move-result-object v4
+
     .line 151
-    invoke-interface {v3}, LpLa;->init()Lio/reactivex/rxjava3/core/Completable;
+    check-cast v4, LWXa;
 
     .line 152
     .line 153
+    invoke-interface {v4}, LWXa;->init()Lio/reactivex/rxjava3/core/Completable;
+
     .line 154
-    move-result-object v3
-
     .line 155
-    iget-object v4, v1, LFKa;->w1:LBre;
-
     .line 156
+    move-result-object v4
+
     .line 157
-    invoke-virtual {v4}, LBre;->d()LF06;
+    iget-object v5, v2, LkXa;->B1:LnJe;
 
     .line 158
     .line 159
+    invoke-virtual {v5}, LnJe;->d()LA36;
+
     .line 160
-    move-result-object v5
-
     .line 161
-    new-instance v6, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
-
     .line 162
+    move-result-object v6
+
     .line 163
-    invoke-direct {v6, v3, v5}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
 
     .line 164
     .line 165
-    .line 166
-    invoke-interface {v2}, LrH9;->get()Ljava/lang/Object;
+    invoke-direct {v7, v4, v6}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 166
     .line 167
     .line 168
+    invoke-interface {v3}, LQS9;->get()Ljava/lang/Object;
+
     .line 169
-    move-result-object v2
-
     .line 170
-    check-cast v2, LpLa;
-
     .line 171
+    move-result-object v3
+
     .line 172
-    invoke-interface {v2}, LpLa;->l()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    check-cast v3, LWXa;
 
     .line 173
     .line 174
+    invoke-interface {v3}, LWXa;->m()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 175
-    move-result-object v2
-
     .line 176
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenObservable;
-
     .line 177
+    move-result-object v3
+
     .line 178
-    invoke-direct {v3, v6, v2}, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenObservable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/ObservableSource;)V
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenObservable;
 
     .line 179
     .line 180
-    .line 181
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtMaybe;
+    invoke-direct {v4, v7, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenObservable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/ObservableSource;)V
 
+    .line 181
     .line 182
     .line 183
-    invoke-direct {v2, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtMaybe;-><init>(Lio/reactivex/rxjava3/core/Observable;)V
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtMaybe;
 
     .line 184
     .line 185
-    .line 186
-    invoke-virtual {v4}, LBre;->i()Lgn0;
+    invoke-direct {v3, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtMaybe;-><init>(Lio/reactivex/rxjava3/core/Observable;)V
 
+    .line 186
     .line 187
     .line 188
+    invoke-virtual {v5}, LnJe;->i()Lxp0;
+
     .line 189
-    move-result-object v3
-
     .line 190
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;
-
     .line 191
+    move-result-object v4
+
     .line 192
-    invoke-direct {v4, v2, v3}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;
 
     .line 193
     .line 194
-    .line 195
-    new-instance v2, LxKa;
+    invoke-direct {v5, v3, v4}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeObserveOn;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 195
     .line 196
     .line 197
-    const/4 v3, 0x2
+    new-instance v3, LcXa;
 
     .line 198
-    invoke-direct {v2, v1, v3}, LxKa;-><init>(LFKa;I)V
-
     .line 199
+    invoke-direct {v3, v2, v1}, LcXa;-><init>(LkXa;I)V
+
     .line 200
     .line 201
-    invoke-virtual {v4, v2}, Lio/reactivex/rxjava3/core/Maybe;->h(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/maybe/MaybePeek;
-
     .line 202
+    invoke-virtual {v5, v3}, Lio/reactivex/rxjava3/core/Maybe;->i(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/maybe/MaybePeek;
+
     .line 203
     .line 204
-    move-result-object v1
-
     .line 205
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeIgnoreElementCompletable;
+    move-result-object v1
 
     .line 206
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeIgnoreElementCompletable;
+
     .line 207
+    .line 208
     invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeIgnoreElementCompletable;-><init>(Lio/reactivex/rxjava3/core/Maybe;)V
 
-    .line 208
     .line 209
     .line 210
+    .line 211
     invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 211
     .line 212
     .line 213
+    .line 214
     move-result-object v1
 
-    .line 214
-    invoke-static {v0, v1, v0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->Y(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
-
     .line 215
+    invoke-static {v0, v1, v0}, Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;->V(Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;Lio/reactivex/rxjava3/disposables/Disposable;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;)V
+
     .line 216
     .line 217
+    .line 218
     return-void
 
-    .line 218
-    :cond_2
-    const-string v2, "loginSignupCoordinator"
-
     .line 219
-    .line 220
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_2
+    const-string v1, "loginSignupCoordinator"
 
+    .line 220
     .line 221
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 222
     .line 223
-    throw v1
-
     .line 224
-    :cond_3
-    const-string v2, "crashBreadcrumbProviderFactory"
+    throw v2
 
     .line 225
-    .line 226
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_3
+    const-string v1, "crashBreadcrumbProviderFactory"
 
+    .line 226
     .line 227
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 228
     .line 229
-    throw v1
-
     .line 230
-    :cond_4
-    const-string v2, "breadcrumbReporter"
+    throw v2
 
     .line 231
-    .line 232
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_4
+    const-string v1, "breadcrumbReporter"
 
+    .line 232
     .line 233
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 234
     .line 235
-    throw v1
-
     .line 236
-    :cond_5
-    const-string v2, "schedulersProvider"
+    throw v2
 
     .line 237
-    .line 238
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_5
+    const-string v1, "schedulersProvider"
 
+    .line 238
     .line 239
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 240
     .line 241
-    throw v1
-
     .line 242
-    :cond_6
-    const-string v2, "perfMonitorConfig"
+    throw v2
 
     .line 243
-    .line 244
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_6
+    const-string v1, "perfMonitorConfig"
 
+    .line 244
     .line 245
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 246
     .line 247
-    throw v1
-
     .line 248
-    :cond_7
-    const-string v2, "configurationProvider"
+    throw v2
 
     .line 249
-    .line 250
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_7
+    const-string v1, "configurationProvider"
 
+    .line 250
     .line 251
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 252
     .line 253
-    throw v1
-
     .line 254
-    :cond_8
-    const-string v2, "blizzardEventLogger"
+    throw v2
 
     .line 255
-    .line 256
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_8
+    const-string v1, "blizzardEventLogger"
 
+    .line 256
     .line 257
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 258
     .line 259
-    throw v1
-
     .line 260
-    :cond_9
-    const-string v2, "memoryInfo"
+    throw v2
 
     .line 261
-    .line 262
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_9
+    const-string v1, "memoryInfo"
 
+    .line 262
     .line 263
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 264
     .line 265
-    throw v1
-
     .line 266
-    :cond_a
-    const-string v2, "deckView"
+    throw v2
 
     .line 267
-    .line 268
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_a
+    const-string v1, "deckView"
 
+    .line 268
     .line 269
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 270
     .line 271
-    throw v1
+    .line 272
+    throw v2
 .end method
 
 .method public final onRequestPermissionsResult(I[Ljava/lang/String;[I)V
@@ -3796,7 +4426,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->X0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->X0:LQS9;
 
     .line 5
     .line 6
@@ -3811,7 +4441,7 @@
 
     .line 10
     .line 11
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -3819,11 +4449,11 @@
     move-result-object v0
 
     .line 15
-    check-cast v0, Lhjd;
+    check-cast v0, Lpzd;
 
     .line 16
     .line 17
-    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->X0:LrH9;
+    iget-object v3, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->X0:LQS9;
 
     .line 18
     .line 19
@@ -3831,7 +4461,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v3}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v3}, LQS9;->get()Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -3839,11 +4469,11 @@
     move-result-object v1
 
     .line 25
-    check-cast v1, Lhjd;
+    check-cast v1, Lpzd;
 
     .line 26
     .line 27
-    invoke-static {v1, p0, p1, p2, p3}, Lt0f;->h(Lhjd;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I[Ljava/lang/String;[I)Lt0f;
+    invoke-static {v1, p0, p1, p2, p3}, Lwif;->h(Lpzd;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I[Ljava/lang/String;[I)Lwif;
 
     .line 28
     .line 29
@@ -3851,7 +4481,7 @@
     move-result-object p1
 
     .line 31
-    invoke-virtual {v0, p1}, Lhjd;->o(Lt0f;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v0, p1}, Lpzd;->o(Lwif;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 32
     .line 33
@@ -3863,7 +4493,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 38
     .line 39
@@ -3872,7 +4502,7 @@
 
     .line 41
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -3881,7 +4511,7 @@
 
     .line 45
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -3928,671 +4558,11 @@
     return-void
 .end method
 
-.method public final q0(Landroid/view/MotionEvent;)V
-    .locals 11
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u0()LrH9;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    check-cast v0, LWef;
-
-    .line 10
-    .line 11
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->u1:Landroid/hardware/SensorEvent;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result v2
-
-    .line 20
-    const/4 v3, 0x1
-
-    .line 21
-    if-ne v2, v3, :cond_7
-
-    .line 22
-    .line 23
-    new-instance v2, LCR;
-
-    .line 24
-    .line 25
-    invoke-direct {v2}, LCR;-><init>()V
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-wide v4
-
-    .line 32
-    invoke-virtual {v2, v4, v5}, LCR;->d(J)V
-
-    .line 33
-    .line 34
-    .line 35
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDeviceId()I
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v4
-
-    .line 39
-    invoke-virtual {v2, v4}, LCR;->a(I)V
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getPressure()F
-
-    .line 43
-    .line 44
-    .line 45
-    move-result v4
-
-    .line 46
-    const v5, 0x461c4000    # 10000.0f
-
-    .line 47
-    .line 48
-    .line 49
-    mul-float v4, v4, v5
-
-    .line 50
-    .line 51
-    invoke-static {v4}, Ljava/lang/Math;->round(F)I
-
-    .line 52
-    .line 53
-    .line 54
-    move-result v4
-
-    .line 55
-    int-to-float v4, v4
-
-    .line 56
-    div-float/2addr v4, v5
-
-    .line 57
-    invoke-virtual {v2, v4}, LCR;->c(F)V
-
-    .line 58
-    .line 59
-    .line 60
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getSize()F
-
-    .line 61
-    .line 62
-    .line 63
-    move-result v4
-
-    .line 64
-    mul-float v4, v4, v5
-
-    .line 65
-    .line 66
-    invoke-static {v4}, Ljava/lang/Math;->round(F)I
-
-    .line 67
-    .line 68
-    .line 69
-    move-result v4
-
-    .line 70
-    int-to-float v4, v4
-
-    .line 71
-    div-float/2addr v4, v5
-
-    .line 72
-    invoke-virtual {v2, v4}, LCR;->e(F)V
-
-    .line 73
-    .line 74
-    .line 75
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
-
-    .line 76
-    .line 77
-    .line 78
-    move-result v4
-
-    .line 79
-    const/high16 v5, 0x41200000    # 10.0f
-
-    .line 80
-    .line 81
-    mul-float v4, v4, v5
-
-    .line 82
-    .line 83
-    invoke-static {v4}, Ljava/lang/Math;->round(F)I
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v4
-
-    .line 87
-    int-to-float v4, v4
-
-    .line 88
-    div-float/2addr v4, v5
-
-    .line 89
-    invoke-virtual {v2, v4}, LCR;->g(F)V
-
-    .line 90
-    .line 91
-    .line 92
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
-
-    .line 93
-    .line 94
-    .line 95
-    move-result v4
-
-    .line 96
-    mul-float v4, v4, v5
-
-    .line 97
-    .line 98
-    invoke-static {v4}, Ljava/lang/Math;->round(F)I
-
-    .line 99
-    .line 100
-    .line 101
-    move-result v4
-
-    .line 102
-    int-to-float v4, v4
-
-    .line 103
-    div-float/2addr v4, v5
-
-    .line 104
-    invoke-virtual {v2, v4}, LCR;->h(F)V
-
-    .line 105
-    .line 106
-    .line 107
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
-
-    .line 108
-    .line 109
-    .line 110
-    move-result-wide v4
-
-    .line 111
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDownTime()J
-
-    .line 112
-    .line 113
-    .line 114
-    move-result-wide v6
-
-    .line 115
-    sub-long/2addr v4, v6
-
-    .line 116
-    long-to-int v5, v4
-
-    .line 117
-    invoke-virtual {v2, v5}, LCR;->b(I)V
-
-    .line 118
-    .line 119
-    .line 120
-    iget-object v4, v0, LWef;->c:Ljava/util/LinkedList;
-
-    .line 121
-    .line 122
-    invoke-virtual {v4}, Ljava/util/LinkedList;->size()I
-
-    .line 123
-    .line 124
-    .line 125
-    move-result v5
-
-    .line 126
-    const/4 v6, 0x0
-
-    .line 127
-    const/4 v7, 0x5
-
-    .line 128
-    if-lt v5, v7, :cond_0
-
-    .line 129
-    .line 130
-    invoke-virtual {v4, v6}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
-
-    .line 131
-    .line 132
-    .line 133
-    :cond_0
-    invoke-virtual {v4, v2}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
-
-    .line 134
-    .line 135
-    .line 136
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDeviceId()I
-
-    .line 137
-    .line 138
-    .line 139
-    move-result v2
-
-    .line 140
-    iget-object v5, v0, LWef;->d:Ljava/util/LinkedList;
-
-    .line 141
-    .line 142
-    invoke-virtual {v5}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
-
-    .line 143
-    .line 144
-    .line 145
-    move-result-object v8
-
-    .line 146
-    :cond_1
-    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 147
-    .line 148
-    .line 149
-    move-result v9
-
-    .line 150
-    const/4 v10, 0x2
-
-    .line 151
-    if-eqz v9, :cond_2
-
-    .line 152
-    .line 153
-    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 154
-    .line 155
-    .line 156
-    move-result-object v9
-
-    .line 157
-    check-cast v9, LwQ;
-
-    .line 158
-    .line 159
-    invoke-virtual {v9}, LwQ;->getId()I
-
-    .line 160
-    .line 161
-    .line 162
-    move-result v9
-
-    .line 163
-    if-ne v9, v2, :cond_1
-
-    .line 164
-    .line 165
-    goto :goto_0
-
-    .line 166
-    :cond_2
-    new-instance v8, LwQ;
-
-    .line 167
-    .line 168
-    invoke-direct {v8}, LwQ;-><init>()V
-
-    .line 169
-    .line 170
-    .line 171
-    invoke-static {v2}, Landroid/view/InputDevice;->getDevice(I)Landroid/view/InputDevice;
-
-    .line 172
-    .line 173
-    .line 174
-    move-result-object v9
-
-    .line 175
-    invoke-virtual {v8, v2}, LwQ;->c(I)V
-
-    .line 176
-    .line 177
-    .line 178
-    if-eqz v9, :cond_3
-
-    .line 179
-    .line 180
-    invoke-virtual {v9}, Landroid/view/InputDevice;->getName()Ljava/lang/String;
-
-    .line 181
-    .line 182
-    .line 183
-    move-result-object v2
-
-    .line 184
-    invoke-virtual {v8, v2}, LwQ;->e(Ljava/lang/String;)V
-
-    .line 185
-    .line 186
-    .line 187
-    invoke-virtual {v9}, Landroid/view/InputDevice;->getDescriptor()Ljava/lang/String;
-
-    .line 188
-    .line 189
-    .line 190
-    move-result-object v2
-
-    .line 191
-    invoke-virtual {v8, v2}, LwQ;->b(Ljava/lang/String;)V
-
-    .line 192
-    .line 193
-    .line 194
-    invoke-virtual {v9}, Landroid/view/InputDevice;->getKeyboardType()I
-
-    .line 195
-    .line 196
-    .line 197
-    move-result v2
-
-    .line 198
-    invoke-virtual {v8, v2}, LwQ;->d(I)V
-
-    .line 199
-    .line 200
-    .line 201
-    invoke-virtual {v9}, Landroid/view/InputDevice;->getSources()I
-
-    .line 202
-    .line 203
-    .line 204
-    move-result v2
-
-    .line 205
-    invoke-virtual {v8, v2}, LwQ;->g(I)V
-
-    .line 206
-    .line 207
-    .line 208
-    :cond_3
-    invoke-virtual {v5}, Ljava/util/LinkedList;->size()I
-
-    .line 209
-    .line 210
-    .line 211
-    move-result v2
-
-    .line 212
-    if-lt v2, v10, :cond_4
-
-    .line 213
-    .line 214
-    invoke-virtual {v5, v6}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
-
-    .line 215
-    .line 216
-    .line 217
-    :cond_4
-    invoke-virtual {v5, v8}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
-
-    .line 218
-    .line 219
-    .line 220
-    :goto_0
-    iget-object v2, v0, LWef;->e:Ljava/util/LinkedList;
-
-    .line 221
-    .line 222
-    if-eqz v1, :cond_6
-
-    .line 223
-    .line 224
-    new-instance v8, LaH8;
-
-    .line 225
-    .line 226
-    invoke-direct {v8}, LaH8;-><init>()V
-
-    .line 227
-    .line 228
-    .line 229
-    iget-object v9, v1, Landroid/hardware/SensorEvent;->values:[F
-
-    .line 230
-    .line 231
-    aget v9, v9, v6
-
-    .line 232
-    .line 233
-    invoke-virtual {v8, v9}, LaH8;->b(F)V
-
-    .line 234
-    .line 235
-    .line 236
-    iget-object v9, v1, Landroid/hardware/SensorEvent;->values:[F
-
-    .line 237
-    .line 238
-    aget v3, v9, v3
-
-    .line 239
-    .line 240
-    invoke-virtual {v8, v3}, LaH8;->c(F)V
-
-    .line 241
-    .line 242
-    .line 243
-    iget-object v1, v1, Landroid/hardware/SensorEvent;->values:[F
-
-    .line 244
-    .line 245
-    aget v1, v1, v10
-
-    .line 246
-    .line 247
-    invoke-virtual {v8, v1}, LaH8;->d(F)V
-
-    .line 248
-    .line 249
-    .line 250
-    invoke-virtual {v2}, Ljava/util/LinkedList;->size()I
-
-    .line 251
-    .line 252
-    .line 253
-    move-result v1
-
-    .line 254
-    if-lt v1, v7, :cond_5
-
-    .line 255
-    .line 256
-    invoke-virtual {v2, v6}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
-
-    .line 257
-    .line 258
-    .line 259
-    :cond_5
-    invoke-virtual {v2, v8}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
-
-    .line 260
-    .line 261
-    .line 262
-    :cond_6
-    iget-object v1, v0, LWef;->g:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 263
-    .line 264
-    new-instance v3, LVef;
-
-    .line 265
-    .line 266
-    invoke-direct {v3, v4, v5, v2}, LVef;-><init>(Ljava/util/LinkedList;Ljava/util/LinkedList;Ljava/util/LinkedList;)V
-
-    .line 267
-    .line 268
-    .line 269
-    invoke-virtual {v1, v3}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
-
-    .line 270
-    .line 271
-    .line 272
-    :cond_7
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getDeviceId()I
-
-    .line 273
-    .line 274
-    .line 275
-    move-result p1
-
-    .line 276
-    if-nez p1, :cond_8
-
-    .line 277
-    .line 278
-    iget-object p1, v0, LWef;->a:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 279
-    .line 280
-    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
-
-    .line 281
-    .line 282
-    .line 283
-    :cond_8
-    sget-object p1, LXRg;->a:LWRg;
-
-    .line 284
-    .line 285
-    const-string v0, "dispatchTweakTouch"
-
-    .line 286
-    .line 287
-    invoke-virtual {p1, v0}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 288
-    .line 289
-    .line 290
-    move-result v0
-
-    .line 291
-    :try_start_0
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->h1:LrH9;
-
-    .line 292
-    .line 293
-    if-eqz v1, :cond_9
-
-    .line 294
-    .line 295
-    invoke-interface {v1}, LrH9;->get()Ljava/lang/Object;
-
-    .line 296
-    .line 297
-    .line 298
-    move-result-object v1
-
-    .line 299
-    check-cast v1, LpVi;
-
-    .line 300
-    .line 301
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 302
-    .line 303
-    .line 304
-    invoke-virtual {p1, v0}, LWRg;->h(I)V
-
-    .line 305
-    .line 306
-    .line 307
-    return-void
-
-    .line 308
-    :catchall_0
-    move-exception p1
-
-    .line 309
-    goto :goto_1
-
-    .line 310
-    :cond_9
-    :try_start_1
-    const-string p1, "tweaksUITapDetector"
-
-    .line 311
-    .line 312
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 313
-    .line 314
-    .line 315
-    const/4 p1, 0x0
-
-    .line 316
-    throw p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 317
-    :goto_1
-    sget-object v1, LXRg;->b:Lzhi;
-
-    .line 318
-    .line 319
-    if-eqz v1, :cond_a
-
-    .line 320
-    .line 321
-    invoke-virtual {v1, v0}, Lzhi;->o(I)V
-
-    .line 322
-    .line 323
-    .line 324
-    :cond_a
-    throw p1
-.end method
-
-.method public final t0()LrH9;
+.method public final p0()LQS9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->V0:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->V0:LQS9;
 
     .line 2
     .line 3
@@ -4608,7 +4578,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4619,11 +4589,11 @@
     throw v0
 .end method
 
-.method public final u0()LrH9;
+.method public final r0()LQS9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->d1:LrH9;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->d1:LQS9;
 
     .line 2
     .line 3
@@ -4639,7 +4609,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4650,7 +4620,7 @@
     throw v0
 .end method
 
-.method public final w0(Landroid/content/Intent;)V
+.method public final s0(Landroid/content/Intent;)V
     .locals 3
 
     .line 1
@@ -4694,7 +4664,7 @@
 
     .line 20
     .line 21
-    invoke-static {p1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 22
     .line 23
@@ -4706,7 +4676,7 @@
 
     .line 26
     .line 27
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->a1:LhV4;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/LoginSignupActivity;->a1:LYY4;
 
     .line 28
     .line 29
@@ -4714,7 +4684,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p1}, LhV4;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, LYY4;->get()Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -4722,11 +4692,11 @@
     move-result-object p1
 
     .line 35
-    check-cast p1, LdLe;
+    check-cast p1, LS2f;
 
     .line 36
     .line 37
-    invoke-virtual {p1}, LdLe;->b()V
+    invoke-virtual {p1}, LS2f;->b()V
 
     .line 38
     .line 39
@@ -4739,7 +4709,7 @@
 
     .line 42
     .line 43
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 44
     .line 45

@@ -63,7 +63,7 @@
 
 
 # virtual methods
-.method public final d()V
+.method public final b()V
     .locals 0
 
     .line 1
@@ -142,7 +142,7 @@
     return-object v0
 .end method
 
-.method public final v()I
+.method public final s()I
     .locals 1
 
     .line 1

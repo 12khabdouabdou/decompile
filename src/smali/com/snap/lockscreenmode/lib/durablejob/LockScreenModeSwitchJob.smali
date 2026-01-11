@@ -1,5 +1,5 @@
 .class public final Lcom/snap/lockscreenmode/lib/durablejob/LockScreenModeSwitchJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
@@ -7,12 +7,12 @@
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "LOCKSCREEN_MODE_SWITCH_JOB"
     isSingleton = true
-    metadataType = Li7j;
+    metadataType = Lewj;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -22,22 +22,22 @@
     .locals 2
 
     .line 2
-    invoke-static {}, LWBa;->a()LtB6;
+    invoke-static {}, LmOa;->a()LRE6;
 
     move-result-object v0
 
-    sget-object v1, Li7j;->a:Li7j;
+    sget-object v1, Lewj;->a:Lewj;
 
-    invoke-direct {p0, v0, v1}, Lcom/snap/lockscreenmode/lib/durablejob/LockScreenModeSwitchJob;-><init>(LtB6;Li7j;)V
+    invoke-direct {p0, v0, v1}, Lcom/snap/lockscreenmode/lib/durablejob/LockScreenModeSwitchJob;-><init>(LRE6;Lewj;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;Li7j;)V
+.method public constructor <init>(LRE6;Lewj;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

@@ -1,127 +1,107 @@
-.class public abstract synthetic Lus1;
+.class public final Lus1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
+
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final a:Lus1;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     .line 1
-    invoke-static {}, Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;->values()[Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;
+    new-instance v0, Lus1;
 
     .line 2
     .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    sput-object v0, Lus1;->a:Lus1;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;->UNKNOWN:Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;
+    return-void
+.end method
 
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p1, Lapp/aifactory/sdk/api/model/TargetState;
+
+    .line 2
+    .line 3
+    instance-of v0, p1, Lapp/aifactory/sdk/api/model/TargetState$Success;
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 8
     .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
+    .line 10
     .line 11
     .line 12
+    return-object v0
+
     .line 13
-    move-result v1
+    :cond_0
+    instance-of v0, p1, Lapp/aifactory/sdk/api/model/TargetState$Error;
 
     .line 14
-    const/4 v2, 0x1
-
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    if-eqz v0, :cond_1
 
     .line 16
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;->CACHE_MISS:Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;
+    check-cast p1, Lapp/aifactory/sdk/api/model/TargetState$Error;
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p1}, Lapp/aifactory/sdk/api/model/TargetState$Error;->getCause()Ljava/lang/Throwable;
 
     .line 20
     .line 21
     .line 22
-    move-result v1
+    move-result-object p1
 
     .line 23
-    const/4 v2, 0x2
+    invoke-static {p1}, Lio/reactivex/rxjava3/core/Single;->j(Ljava/lang/Throwable;)Lio/reactivex/rxjava3/internal/operators/single/SingleError;
 
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 25
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;->CACHE_RESOURCES_READY:Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;
+    move-result-object p1
 
     .line 27
+    return-object p1
+
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_1
+    new-instance p1, LwOc;
 
     .line 29
     .line 30
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
     .line 31
-    move-result v1
-
     .line 32
-    const/4 v2, 0x3
-
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;->CACHE_WEBP_READY:Lapp/aifactory/sdk/api/model/sticker/StickerCacheType;
-
-    .line 36
-    .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v1
-
-    .line 41
-    const/4 v2, 0x4
-
-    .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 43
-    .line 44
-    :catch_3
-    sput-object v0, Lus1;->a:[I
-
-    .line 45
-    .line 46
-    return-void
+    throw p1
 .end method

@@ -1,25 +1,22 @@
-.class public final LCr4;
+.class public abstract LCr4;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LELi;
+
 
 # instance fields
-.field public final a:LlV7;
+.field public final a:I
 
-.field public final b:LBS4;
+.field public final b:I
 
-.field public final c:LRZ4;
-
-.field public final d:LUo4;
-
-.field public final e:LUo4;
-
-.field public final f:LUo4;
+.field public c:LWgf;
 
 
 # direct methods
-.method public constructor <init>(LlV7;LBS4;LRZ4;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,69 +24,132 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LCr4;->a:LlV7;
+    const/high16 v0, -0x80000000
 
     .line 5
     .line 6
-    iput-object p2, p0, LCr4;->b:LBS4;
+    invoke-static {v0, v0}, LZPj;->i(II)Z
 
     .line 7
     .line 8
-    iput-object p3, p0, LCr4;->c:LRZ4;
-
     .line 9
+    move-result v1
+
     .line 10
-    new-instance p1, LUo4;
+    if-eqz v1, :cond_0
 
     .line 11
     .line 12
-    const/4 p2, 0x0
+    iput v0, p0, LCr4;->a:I
 
     .line 13
-    const/16 p3, 0xb
-
     .line 14
+    iput v0, p0, LCr4;->b:I
+
     .line 15
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
-
     .line 16
+    return-void
+
     .line 17
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
     .line 18
-    iput-object p1, p0, LCr4;->d:LUo4;
-
     .line 19
+    const-string v1, "Width and height must both be > 0 or Target#SIZE_ORIGINAL, but given width: -2147483648 and height: -2147483648"
+
     .line 20
-    new-instance p1, LUo4;
-
     .line 21
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
     .line 22
-    const/4 p2, 0x1
-
     .line 23
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
-
     .line 24
-    .line 25
-    .line 26
-    iput-object p1, p0, LCr4;->e:LUo4;
+    throw v0
+.end method
 
-    .line 27
-    .line 28
-    new-instance p1, LUo4;
 
-    .line 29
-    .line 30
-    const/4 p2, 0x2
+# virtual methods
+.method public final a()V
+    .locals 0
 
-    .line 31
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
+    .line 1
+    return-void
+.end method
 
-    .line 32
-    .line 33
-    .line 34
-    iput-object p1, p0, LCr4;->f:LUo4;
+.method public final b()V
+    .locals 0
 
-    .line 35
-    .line 36
+    .line 1
+    return-void
+.end method
+
+.method public final c()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d()LWgf;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LCr4;->c:LWgf;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final f(LyMg;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final h(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final l(LyMg;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LCr4;->b:I
+
+    .line 2
+    .line 3
+    iget v1, p0, LCr4;->a:I
+
+    .line 4
+    .line 5
+    invoke-virtual {p1, v1, v0}, LyMg;->j(II)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final m(LWgf;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LCr4;->c:LWgf;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final n(Landroid/graphics/drawable/Drawable;)V
+    .locals 0
+
+    .line 1
     return-void
 .end method

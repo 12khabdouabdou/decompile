@@ -20,7 +20,7 @@
         "Lio/reactivex/rxjava3/functions/BiFunction<",
         "Ljava/lang/Object;",
         "Ljava/lang/Object;",
-        "Lhad;",
+        "LDpd;",
         ">;"
     }
 .end annotation
@@ -53,15 +53,15 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    new-instance v0, Lhad;
+    new-instance v0, LDpd;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p1, p2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
     .line 5

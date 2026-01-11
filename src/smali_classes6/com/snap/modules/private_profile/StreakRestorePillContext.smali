@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/private_profile/StreakRestorePillContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'onStreakRestorePillTap\':f?(r:\'[0]\'),\'expiredStreakDataObservable\':g?<c>:\'[1]\'<r:\'[2]\'>"
     typeReferences = {

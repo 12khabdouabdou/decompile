@@ -2,127 +2,361 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field public final a:LE34;
+.field public final synthetic a:I
 
-.field public final b:LvG4;
+.field public final synthetic b:Lko5;
 
-.field public final c:Lbke;
+.field public final synthetic c:Lxq;
 
-.field public final d:Lio/reactivex/rxjava3/core/Observable;
-
-.field public final e:Lio/reactivex/rxjava3/core/Observable;
-
-.field public final f:LnB8;
-
-.field public g:Lcom/snap/modules/camera_director_mode/GreenScreenMediaPicker;
-
-.field public final h:Lrn0;
-
-.field public final i:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final j:LBre;
-
-.field public volatile k:Lq02;
-
-.field public volatile l:Ljava/lang/String;
+.field public final synthetic t:LN0f;
 
 
 # direct methods
-.method public constructor <init>(LE34;LvG4;Lbke;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;LnB8;)V
+.method public synthetic constructor <init>(Lko5;Lxq;LN0f;I)V
     .locals 0
 
     .line 1
+    iput p4, p0, Lco5;->a:I
+
+    iput-object p1, p0, Lco5;->b:Lko5;
+
+    iput-object p2, p0, Lco5;->c:Lxq;
+
+    iput-object p3, p0, Lco5;->t:LN0f;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 6
+
+    .line 1
+    iget v0, p0, Lco5;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lco5;->a:LE34;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lco5;->b:LvG4;
+    check-cast p1, LBq;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lco5;->c:Lbke;
+    iget-object v0, p0, Lco5;->b:Lko5;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lco5;->d:Lio/reactivex/rxjava3/core/Observable;
+    iget-object v1, p0, Lco5;->c:Lxq;
 
     .line 11
     .line 12
-    iput-object p5, p0, Lco5;->e:Lio/reactivex/rxjava3/core/Observable;
+    invoke-static {v0, v1, p1}, Lko5;->a(Lko5;Lxq;LBq;)V
 
     .line 13
     .line 14
-    iput-object p6, p0, Lco5;->f:LnB8;
-
     .line 15
+    iget-object p1, v0, Lko5;->h:LCo5;
+
     .line 16
-    sget-object p1, LtW1;->Z:LtW1;
-
     .line 17
-    .line 18
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p1}, LCo5;->a()J
 
+    .line 18
     .line 19
     .line 20
+    move-result-wide v2
+
     .line 21
-    const-string p2, "DefaultCameraMediaPickerUIController"
+    iget-object p1, p0, Lco5;->t:LN0f;
 
     .line 22
     .line 23
-    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iget-wide v4, p1, LN0f;->a:J
 
     .line 24
     .line 25
+    sub-long/2addr v2, v4
+
     .line 26
-    sget-object p3, Lrn0;->a:Lrn0;
+    sget-object p1, LOE;->k0:LOE;
 
     .line 27
     .line 28
-    iput-object p3, p0, Lco5;->h:Lrn0;
+    iget-object v4, v1, Lxq;->b:LDq;
 
     .line 29
     .line 30
-    new-instance p3, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v4, v4, LDq;->a:LZk;
 
     .line 31
     .line 32
-    invoke-direct {p3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    const-string v5, "inventory_type"
 
     .line 33
     .line 34
-    .line 35
-    iput-object p3, p0, Lco5;->i:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-static {p1, v5, v4}, LDz9;->s0(LH7c;Ljava/lang/String;Ljava/lang/Enum;)LV7c;
 
+    .line 35
     .line 36
     .line 37
-    new-instance p3, LWm0;
+    move-result-object p1
 
     .line 38
-    .line 39
-    invoke-direct {p3, p1, p2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    iget-object v0, v0, Lko5;->c:LcH8;
 
+    .line 39
     .line 40
+    invoke-interface {v0, p1, v2, v3}, LcH8;->l(LV7c;J)V
+
     .line 41
     .line 42
-    new-instance p1, LBre;
-
     .line 43
-    .line 44
-    invoke-direct {p1, p3}, LBre;-><init>(LWm0;)V
+    sget-object p1, LOE;->l0:LOE;
 
+    .line 44
     .line 45
+    iget-object v1, v1, Lxq;->b:LDq;
+
     .line 46
     .line 47
-    iput-object p1, p0, Lco5;->j:LBre;
+    iget-object v1, v1, LDq;->a:LZk;
 
     .line 48
     .line 49
+    invoke-static {p1, v5, v1}, LDz9;->s0(LH7c;Ljava/lang/String;Ljava/lang/Enum;)LV7c;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p1
+
+    .line 53
+    invoke-static {v0, p1}, LaH8;->e(LcH8;LV7c;)V
+
+    .line 54
+    .line 55
+    .line 56
     return-void
+
+    .line 57
+    :pswitch_0
+    check-cast p1, LBq;
+
+    .line 58
+    .line 59
+    iget-object v0, p0, Lco5;->b:Lko5;
+
+    .line 60
+    .line 61
+    iget-object v1, p0, Lco5;->c:Lxq;
+
+    .line 62
+    .line 63
+    invoke-static {v0, v1, p1}, Lko5;->a(Lko5;Lxq;LBq;)V
+
+    .line 64
+    .line 65
+    .line 66
+    iget-object p1, v0, Lko5;->h:LCo5;
+
+    .line 67
+    .line 68
+    invoke-virtual {p1}, LCo5;->a()J
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-wide v2
+
+    .line 72
+    iget-object p1, p0, Lco5;->t:LN0f;
+
+    .line 73
+    .line 74
+    iget-wide v4, p1, LN0f;->a:J
+
+    .line 75
+    .line 76
+    sub-long/2addr v2, v4
+
+    .line 77
+    sget-object p1, LOE;->k0:LOE;
+
+    .line 78
+    .line 79
+    iget-object v4, v1, Lxq;->b:LDq;
+
+    .line 80
+    .line 81
+    iget-object v4, v4, LDq;->a:LZk;
+
+    .line 82
+    .line 83
+    const-string v5, "inventory_type"
+
+    .line 84
+    .line 85
+    invoke-static {p1, v5, v4}, LDz9;->s0(LH7c;Ljava/lang/String;Ljava/lang/Enum;)LV7c;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object p1
+
+    .line 89
+    iget-object v0, v0, Lko5;->c:LcH8;
+
+    .line 90
+    .line 91
+    invoke-interface {v0, p1, v2, v3}, LcH8;->l(LV7c;J)V
+
+    .line 92
+    .line 93
+    .line 94
+    sget-object p1, LOE;->l0:LOE;
+
+    .line 95
+    .line 96
+    iget-object v1, v1, Lxq;->b:LDq;
+
+    .line 97
+    .line 98
+    iget-object v1, v1, LDq;->a:LZk;
+
+    .line 99
+    .line 100
+    invoke-static {p1, v5, v1}, LDz9;->s0(LH7c;Ljava/lang/String;Ljava/lang/Enum;)LV7c;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object p1
+
+    .line 104
+    invoke-static {v0, p1}, LaH8;->e(LcH8;LV7c;)V
+
+    .line 105
+    .line 106
+    .line 107
+    return-void
+
+    .line 108
+    :pswitch_1
+    check-cast p1, LBq;
+
+    .line 109
+    .line 110
+    iget-object v0, p0, Lco5;->b:Lko5;
+
+    .line 111
+    .line 112
+    iget-object v1, p0, Lco5;->c:Lxq;
+
+    .line 113
+    .line 114
+    invoke-static {v0, v1, p1}, Lko5;->a(Lko5;Lxq;LBq;)V
+
+    .line 115
+    .line 116
+    .line 117
+    iget-object p1, v0, Lko5;->h:LCo5;
+
+    .line 118
+    .line 119
+    invoke-virtual {p1}, LCo5;->a()J
+
+    .line 120
+    .line 121
+    .line 122
+    move-result-wide v2
+
+    .line 123
+    iget-object p1, p0, Lco5;->t:LN0f;
+
+    .line 124
+    .line 125
+    iget-wide v4, p1, LN0f;->a:J
+
+    .line 126
+    .line 127
+    sub-long/2addr v2, v4
+
+    .line 128
+    sget-object p1, LOE;->h0:LOE;
+
+    .line 129
+    .line 130
+    iget-object v4, v1, Lxq;->b:LDq;
+
+    .line 131
+    .line 132
+    iget-object v4, v4, LDq;->a:LZk;
+
+    .line 133
+    .line 134
+    const-string v5, "inventory_type"
+
+    .line 135
+    .line 136
+    invoke-static {p1, v5, v4}, LDz9;->s0(LH7c;Ljava/lang/String;Ljava/lang/Enum;)LV7c;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object p1
+
+    .line 140
+    iget-object v0, v0, Lko5;->c:LcH8;
+
+    .line 141
+    .line 142
+    invoke-interface {v0, p1, v2, v3}, LcH8;->l(LV7c;J)V
+
+    .line 143
+    .line 144
+    .line 145
+    sget-object p1, LOE;->i0:LOE;
+
+    .line 146
+    .line 147
+    iget-object v1, v1, Lxq;->b:LDq;
+
+    .line 148
+    .line 149
+    iget-object v1, v1, LDq;->a:LZk;
+
+    .line 150
+    .line 151
+    invoke-static {p1, v5, v1}, LDz9;->s0(LH7c;Ljava/lang/String;Ljava/lang/Enum;)LV7c;
+
+    .line 152
+    .line 153
+    .line 154
+    move-result-object p1
+
+    .line 155
+    invoke-static {v0, p1}, LaH8;->e(LcH8;LV7c;)V
+
+    .line 156
+    .line 157
+    .line 158
+    return-void
+
+    .line 159
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

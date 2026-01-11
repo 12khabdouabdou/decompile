@@ -1,96 +1,125 @@
-.class public final LsYd;
-.super Ljava/lang/Object;
+.class public final enum LsYd;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
+# static fields
+.field public static final enum a:LsYd;
+
+.field public static final enum b:LsYd;
+
+.field public static final synthetic c:[LsYd;
+
+
 # direct methods
-.method public static a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    sget-object v0, LnFf;->a:Ljava/security/SecureRandom;
+    const/4 v0, 0x1
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
+    new-instance v2, LsYd;
 
     .line 4
     .line 5
-    const-string v2, "$2a$0"
+    const-string v3, "PERSIST_SESSION"
 
     .line 6
     .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 8
     .line 9
     .line 10
-    const/16 v2, 0x10
+    sput-object v2, LsYd;->a:LsYd;
 
     .line 11
     .line 12
-    new-array v3, v2, [B
+    new-instance v3, LsYd;
 
     .line 13
     .line 14
-    invoke-virtual {v0, v3}, Ljava/security/SecureRandom;->nextBytes([B)V
+    const-string v4, "DB_UPDATE"
 
     .line 15
     .line 16
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 17
-    const/4 v0, 0x6
-
     .line 18
-    invoke-static {v0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
     .line 19
+    sput-object v3, LsYd;->b:LsYd;
+
     .line 20
     .line 21
-    move-result-object v0
+    const/4 v4, 0x2
 
     .line 22
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-array v4, v4, [LsYd;
 
     .line 23
     .line 24
+    aput-object v2, v4, v1
+
     .line 25
-    const-string v0, "$"
-
     .line 26
-    .line 27
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object v3, v4, v0
 
+    .line 27
     .line 28
+    sput-object v4, LsYd;->c:[LsYd;
+
     .line 29
     .line 30
-    invoke-static {v2, v3}, LTl5;->c(I[B)Ljava/lang/String;
+    return-void
+.end method
 
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
+.method public static valueOf(Ljava/lang/String;)LsYd;
+    .locals 1
 
-    .line 34
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 1
+    const-class v0, LsYd;
 
-    .line 35
-    .line 36
-    .line 37
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v0
-
-    .line 41
-    invoke-static {p0, v0}, LTl5;->j(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 42
-    .line 43
-    .line 44
+    .line 4
+    .line 5
+    .line 6
     move-result-object p0
 
-    .line 45
+    .line 7
+    check-cast p0, LsYd;
+
+    .line 8
+    .line 9
     return-object p0
+.end method
+
+.method public static values()[LsYd;
+    .locals 1
+
+    .line 1
+    sget-object v0, LsYd;->c:[LsYd;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LsYd;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

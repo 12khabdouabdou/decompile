@@ -2,35 +2,16 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LlTe;
-
 
 # instance fields
-.field public volatile X:LWRi;
+.field public final a:Landroid/content/ContentResolver;
 
-.field public Y:LjTe;
-
-.field public Z:Lzb6;
-
-.field public a:Z
-
-.field public b:Z
-
-.field public c:LVu8;
-
-.field public e0:LZ8g;
-
-.field public f0:LHui;
-
-.field public g0:I
-
-.field public volatile t:LWRi;
+.field public final b:LBM0;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Landroid/content/ContentResolver;LBM0;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,578 +19,320 @@
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x1
+    iput-object p1, p0, LAM0;->a:Landroid/content/ContentResolver;
 
     .line 5
-    iput-boolean v0, p0, LAM0;->a:Z
-
     .line 6
+    iput-object p2, p0, LAM0;->b:LBM0;
+
     .line 7
-    iput-boolean v0, p0, LAM0;->b:Z
-
     .line 8
-    .line 9
-    new-instance v0, Lez5;
-
-    .line 10
-    .line 11
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v1
-
-    .line 15
-    invoke-static {v1}, LsJe;->a(Ljava/lang/Class;)Lc23;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v1
-
-    .line 19
-    invoke-virtual {v1}, Lc23;->c()Ljava/lang/String;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v1
-
-    .line 23
-    if-nez v1, :cond_0
-
-    .line 24
-    .line 25
-    const-string v1, "RenderPass"
-
-    .line 26
-    .line 27
-    :cond_0
-    invoke-direct {v0, v1}, Lez5;-><init>(Ljava/lang/String;)V
-
-    .line 28
-    .line 29
-    .line 30
-    iput-object v0, p0, LAM0;->c:LVu8;
-
-    .line 31
-    .line 32
-    new-instance v0, LWRi;
-
-    .line 33
-    .line 34
-    invoke-direct {v0}, LWRi;-><init>()V
-
-    .line 35
-    .line 36
-    .line 37
-    iput-object v0, p0, LAM0;->t:LWRi;
-
-    .line 38
-    .line 39
-    new-instance v0, LWRi;
-
-    .line 40
-    .line 41
-    invoke-direct {v0}, LWRi;-><init>()V
-
-    .line 42
-    .line 43
-    .line 44
-    iput-object v0, p0, LAM0;->X:LWRi;
-
-    .line 45
-    .line 46
-    const/high16 v0, -0x1000000
-
-    .line 47
-    .line 48
-    iput v0, p0, LAM0;->g0:I
-
-    .line 49
-    .line 50
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract A(LZ8g;)V
-.end method
-
-.method public abstract B(LHui;)V
-.end method
-
-.method public abstract C()V
-.end method
-
-.method public final a()V
-    .locals 0
+.method public final a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
 
     .line 1
-    invoke-virtual {p0}, LAM0;->C()V
+    invoke-virtual {p0}, LAM0;->b()Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
-    return-void
-.end method
+    move-result-object v0
 
-.method public final b(LWRi;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LAM0;->X:LWRi;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, LWRi;->equals(Ljava/lang/Object;)Z
-
-    .line 4
     .line 5
-    .line 6
-    move-result v0
+    if-eqz v0, :cond_1
 
+    .line 6
     .line 7
-    if-nez v0, :cond_0
+    const-string v1, " AND ("
 
     .line 8
     .line 9
-    iput-object p1, p0, LAM0;->X:LWRi;
+    const-string v2, ")"
 
     .line 10
     .line 11
-    invoke-virtual {p0, p1}, LAM0;->z(LWRi;)V
+    invoke-static {p1, v1, v0, v2}, LToi;->n(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13
     .line 14
-    :cond_0
-    return-void
-.end method
+    move-result-object v0
 
-.method public final c()LWRi;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LAM0;->t:LWRi;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final d(LjTe;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LAM0;->Y:LjTe;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, LjTe;->equals(Ljava/lang/Object;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    iput-object p1, p0, LAM0;->Y:LjTe;
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, p1}, LAM0;->x(LjTe;)V
-
-    .line 12
-    .line 13
-    .line 14
-    :cond_0
-    return-void
-.end method
-
-.method public final f(Lzb6;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LAM0;->Z:Lzb6;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1}, LAM0;->v(Lzb6;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final g()LjTe;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LAM0;->Y:LjTe;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    new-instance v0, Li38;
-
-    .line 7
-    .line 8
-    const-string v1, "null inputParams in getter function!"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v1}, Li38;-><init>(Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    throw v0
-.end method
-
-.method public final h()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, LAM0;->a:Z
-
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public i(IJLWRi;LV5d;Ljava/util/List;)V
-    .locals 0
-
-    .line 1
-    invoke-static/range {p0 .. p5}, LEyk;->q(LAM0;IJLWRi;LV5d;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final j(I)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LAM0;->g0:I
-
-    .line 2
-    .line 3
-    if-eq p1, v0, :cond_0
-
-    .line 4
-    .line 5
-    iput p1, p0, LAM0;->g0:I
-
-    .line 6
-    .line 7
-    invoke-virtual {p0, p1}, LAM0;->w(I)V
-
-    .line 8
-    .line 9
-    .line 10
-    :cond_0
-    return-void
-.end method
-
-.method public final k(LHui;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LAM0;->f0:LHui;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    iput-object p1, p0, LAM0;->f0:LHui;
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, p1}, LAM0;->B(LHui;)V
-
-    .line 12
-    .line 13
-    .line 14
-    :cond_0
-    return-void
-.end method
-
-.method public final l(LWRi;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LAM0;->t:LWRi;
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, LWRi;->equals(Ljava/lang/Object;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    iput-object p1, p0, LAM0;->t:LWRi;
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, p1}, LAM0;->y(LWRi;)V
-
-    .line 12
-    .line 13
-    .line 14
-    :cond_0
-    return-void
-.end method
-
-.method public m()LVu8;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LAM0;->c:LVu8;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final n(LWRi;LWRi;IILDui;Llu5;LZ8g;LHui;)V
-    .locals 1
-
-    .line 1
-    new-instance v0, LjTe;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p3, p4, p5}, LjTe;-><init>(IILDui;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0, v0}, LAM0;->d(LjTe;)V
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-virtual {p0, p6}, LAM0;->f(Lzb6;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {p0, p7}, LAM0;->q(LZ8g;)V
-
-    .line 13
-    .line 14
     .line 15
-    invoke-virtual {p0, p8}, LAM0;->k(LHui;)V
+    if-nez v0, :cond_0
 
     .line 16
     .line 17
+    goto :goto_0
+
     .line 18
-    invoke-virtual {p0}, LAM0;->C()V
+    :cond_0
+    return-object v0
 
     .line 19
+    :cond_1
+    :goto_0
+    return-object p1
+.end method
+
+.method public abstract b()Ljava/lang/String;
+.end method
+
+.method public abstract c()Ljava/util/List;
+.end method
+
+.method public final d(J)Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;
+    .locals 2
+
+    .line 1
+    new-instance v0, LEJ0;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-direct {v0, p0, p1, p2, v1}, LEJ0;-><init>(Ljava/lang/Object;JI)V
+
+    .line 5
+    .line 6
+    .line 7
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;
+
+    .line 8
+    .line 9
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object p1
+.end method
+
+.method public final e(Ljava/util/List;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lsa;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x1c
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p1, v1, p0}, Lsa;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 9
+    .line 10
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-object p1
+.end method
+
+.method public final f(LA36;)Lio/reactivex/rxjava3/core/Observable;
+    .locals 8
+
+    .line 1
+    new-instance v0, LIJ0;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {v0, v1, p0}, LIJ0;-><init>(ILjava/lang/Object;)V
+
+    .line 5
+    .line 6
+    .line 7
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+
+    .line 8
+    .line 9
+    invoke-direct {v3, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;-><init>(Lio/reactivex/rxjava3/core/ObservableOnSubscribe;)V
+
+    .line 10
+    .line 11
+    .line 12
+    sget-object v6, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 13
+    .line 14
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounceTimed;
+
+    .line 15
+    .line 16
+    const-wide/16 v4, 0x32
+
+    .line 17
+    .line 18
+    move-object v7, p1
+
+    .line 19
+    invoke-direct/range {v2 .. v7}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounceTimed;-><init>(Lio/reactivex/rxjava3/core/Observable;JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 20
     .line 21
-    invoke-virtual {p0, p1}, LAM0;->l(LWRi;)V
+    .line 22
+    new-instance p1, Lpk0;
+
+    .line 23
+    .line 24
+    const/16 v0, 0x11
+
+    .line 25
+    .line 26
+    invoke-direct {p1, v0, p0}, Lpk0;-><init>(ILjava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    const/4 v0, 0x0
+
+    .line 30
+    invoke-virtual {v2, p1, v0}, Lio/reactivex/rxjava3/core/Observable;->g0(Lio/reactivex/rxjava3/functions/Function;Z)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p1
+
+    .line 34
+    return-object p1
+.end method
+
+.method public final g(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    .locals 4
+
+    .line 1
+    if-eqz p1, :cond_0
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, LAM0;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    if-nez p1, :cond_1
+
+    .line 8
+    .line 9
+    :cond_0
+    invoke-virtual {p0}, LAM0;->b()Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    :cond_1
+    new-instance v0, LzM0;
+
+    .line 14
+    .line 15
+    const/4 v1, 0x0
+
+    .line 16
+    invoke-direct {v0, p0, v1, p1}, LzM0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;
+
+    .line 20
+    .line 21
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {p0, p2}, LAM0;->b(LWRi;)V
+    new-instance v0, LIJ0;
 
     .line 25
     .line 26
+    const/4 v2, 0x2
+
     .line 27
-    return-void
-.end method
+    invoke-direct {v0, v2, p0}, LIJ0;-><init>(ILjava/lang/Object;)V
 
-.method public final o()Lzb6;
-    .locals 1
+    .line 28
+    .line 29
+    .line 30
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
 
-    .line 1
-    iget-object v0, p0, LAM0;->Z:Lzb6;
+    .line 31
+    .line 32
+    invoke-direct {v2, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;-><init>(Lio/reactivex/rxjava3/core/ObservableOnSubscribe;)V
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    .line 33
+    .line 34
+    .line 35
+    new-instance v0, LPv0;
 
-.method public final p()LWRi;
-    .locals 1
+    .line 36
+    .line 37
+    const/16 v3, 0xb
 
-    .line 1
-    iget-object v0, p0, LAM0;->X:LWRi;
+    .line 38
+    .line 39
+    invoke-direct {v0, p0, v3, p1}, LPv0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    .line 2
-    .line 3
-    return-object v0
-.end method
+    .line 40
+    .line 41
+    .line 42
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
-.method public final q(LZ8g;)V
-    .locals 1
+    .line 43
+    .line 44
+    invoke-direct {p1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 1
-    iget-object v0, p0, LAM0;->e0:LZ8g;
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/core/Observable;->K0(Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
 
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    .line 48
+    .line 49
+    .line 50
+    move-result-object p1
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 51
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 7
-    if-nez v0, :cond_0
+    .line 52
+    .line 53
+    .line 54
+    sget-object v0, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
 
-    .line 8
-    .line 9
-    iput-object p1, p0, LAM0;->e0:LZ8g;
+    .line 55
+    .line 56
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
-    .line 10
-    .line 11
-    invoke-virtual {p0, p1}, LAM0;->A(LZ8g;)V
+    .line 57
+    .line 58
+    .line 59
+    move-result-object p1
 
-    .line 12
-    .line 13
-    .line 14
-    :cond_0
-    return-void
-.end method
-
-.method public r()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    return v0
-.end method
-
-.method public final s()LZ8g;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LAM0;->e0:LZ8g;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    new-instance v0, Li38;
-
-    .line 7
-    .line 8
-    const-string v1, "null shader cache in getter function!"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v1}, Li38;-><init>(Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    throw v0
-.end method
-
-.method public final t()LHui;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LAM0;->f0:LHui;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    new-instance v0, Li38;
-
-    .line 7
-    .line 8
-    const-string v1, "null textureQuadFactory in getter function!"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v1}, Li38;-><init>(Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    throw v0
-.end method
-
-.method public u()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, LAM0;->b:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public abstract v(Lzb6;)V
-.end method
-
-.method public abstract w(I)V
-.end method
-
-.method public abstract x(LjTe;)V
-.end method
-
-.method public abstract y(LWRi;)V
-.end method
-
-.method public abstract z(LWRi;)V
+    .line 60
+    return-object p1
 .end method

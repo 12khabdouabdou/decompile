@@ -1,12 +1,20 @@
-.class public final Luli;
-.super Lcom/snapchat/talkcorev3/Logger;
+.class public interface abstract Luli;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LKv3;
 
 
 # virtual methods
-.method public final log(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public abstract h()Ljava/util/Set;
+.end method
 
-    .line 1
-    return-void
+.method public abstract k()Ljava/util/Map;
+.end method
+
+.method public abstract l()Ljava/util/Map;
+.end method
+
+.method public abstract m()Lcf9;
 .end method

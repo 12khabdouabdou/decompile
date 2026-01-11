@@ -1,10 +1,10 @@
 .class public final Lcom/snap/recents_ranking/UpdatedMessageMetadata;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'seenBy\':a<s>,\'openedBy\':a<s>,\'createdAt\':d,\'readAt\':d"
     typeReferences = {}

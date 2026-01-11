@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map/layers/api/MapViewportChangeParameters;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'minZoomLevel\':d@?,\'maxZoomLevel\':d@?,\'insets\':r?:\'[0]\',\'animated\':b"
     typeReferences = {

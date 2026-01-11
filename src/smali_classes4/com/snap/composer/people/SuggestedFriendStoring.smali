@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LB9i;
+    proxyClass = LYxi;
     schema = "\'getSuggestedFriends\':f|m|(f|s|(a?<r:\'[0]\'>, m?<s,u>)),\'hideSuggestedFriend\':f|m|(r:\'[1]\'),\'onSuggestedFriendsUpdated\':f|m|(f()): f(),\'onCacheHideFriend\':f?|m|(r:\'[1]\'),\'onHideFriendFeedback\':f?|m|(s, d),\'onClickShortcut\':f?|m|(s?),\'undoHideSuggestedFriend\':f?|m|(s),\'suggestionsObservable\':g?<c>:\'[2]\'<a<r:\'[0]\'>>,\'onUserPullToRefresh\':f?|m|()"
     typeReferences = {
-        LW8i;,
+        Ltxi;,
         Lcom/snap/composer/people/HideSuggestedFriendRequest;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
@@ -36,7 +36,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LW8i;",
+            "Ltxi;",
             ">;>;"
         }
     .end annotation
@@ -46,17 +46,17 @@
 .end method
 
 .method public abstract onCacheHideFriend(Lcom/snap/composer/people/HideSuggestedFriendRequest;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onClickShortcut(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onHideFriendFeedback(Ljava/lang/String;D)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -72,7 +72,7 @@
 .end method
 
 .method public abstract onUserPullToRefresh()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -80,6 +80,6 @@
 .end method
 
 .method public abstract undoHideSuggestedFriend(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

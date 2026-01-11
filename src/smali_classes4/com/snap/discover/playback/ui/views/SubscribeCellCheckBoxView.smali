@@ -62,7 +62,7 @@
     move-result-object v0
 
     .line 9
-    const v1, 0x7f071230
+    const v1, 0x7f071260
 
     .line 10
     .line 11
@@ -101,7 +101,7 @@
     .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    const p3, 0x7f0808f0
+    const p3, 0x7f080973
 
     .line 3
     iput p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->j0:I
@@ -109,7 +109,7 @@
     .line 4
     iput p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->k0:I
 
-    const p3, 0x7f080915
+    const p3, 0x7f080998
 
     .line 5
     iput p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->l0:I
@@ -127,12 +127,12 @@
 
     check-cast p3, Landroid/view/LayoutInflater;
 
-    const p4, 0x7f0e076c
+    const p4, 0x7f0e0794
 
     .line 7
     invoke-virtual {p3, p4, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
-    const p3, 0x7f0b183b
+    const p3, 0x7f0b198f
 
     .line 8
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -142,7 +142,7 @@
     iput-object p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->a:Landroid/view/View;
 
     .line 9
-    new-instance p4, Lw6i;
+    new-instance p4, LPui;
 
     .line 10
     invoke-direct {p4}, Ljava/lang/Object;-><init>()V
@@ -150,7 +150,7 @@
     .line 11
     invoke-virtual {p3, p4}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
-    const p3, 0x7f0b1836
+    const p3, 0x7f0b198a
 
     .line 12
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -161,7 +161,7 @@
 
     iput-object p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->b:Lcom/snap/ui/view/PausableLoadingSpinnerView;
 
-    const p3, 0x7f0b1839
+    const p3, 0x7f0b198d
 
     .line 13
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -172,7 +172,7 @@
 
     iput-object p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->c:Landroid/widget/ImageView;
 
-    const p3, 0x7f0b183c
+    const p3, 0x7f0b1990
 
     .line 14
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -183,7 +183,7 @@
 
     iput-object p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->t:Landroid/widget/ImageView;
 
-    const p3, 0x7f0b1838
+    const p3, 0x7f0b198c
 
     .line 15
     invoke-virtual {p0, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -199,9 +199,9 @@
 
     move-result-object p3
 
-    const p4, 0x7f060327
+    const p4, 0x7f0603af
 
-    invoke-static {p3, p4}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p3, p4}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p3
 
@@ -212,9 +212,9 @@
 
     move-result-object p3
 
-    const p4, 0x7f06022d
+    const p4, 0x7f060285
 
-    invoke-static {p3, p4}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p3, p4}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p3
 
@@ -225,9 +225,9 @@
 
     move-result-object p3
 
-    const p4, 0x7f06022e
+    const p4, 0x7f060286
 
-    invoke-static {p3, p4}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p3, p4}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p3
 
@@ -239,7 +239,7 @@
     iput p3, p0, Lcom/snap/discover/playback/ui/views/SubscribeCellCheckBoxView;->p0:I
 
     .line 20
-    sget-object p4, Lhve;->c:[I
+    sget-object p4, LPMe;->c:[I
 
     invoke-virtual {p1, p2, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -455,7 +455,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-static {p1}, LzHa;->L(I)I
 
     .line 4
     .line 5
@@ -886,7 +886,7 @@
 
     .line 227
     .line 228
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-static {p1}, LzHa;->L(I)I
 
     .line 229
     .line 230

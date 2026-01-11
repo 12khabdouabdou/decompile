@@ -1,149 +1,231 @@
 .class public final LLSe;
-.super Lcom/snap/composer/utils/b;
+.super LMSe;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'performingUserIdsObservable\':g?<c>:\'[0]\'<a<s>>,\'totalActionCountObservable\':g?<c>:\'[0]\'<d@>,\'alertPresenter\':r?:\'[1]\',\'userProvider\':r?:\'[2]\'"
-    typeReferences = {
-        Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lcom/snap/composer/foundation/IAlertPresenter;,
-        Lcom/snap/composer/people/UserProviding;
-    }
-.end annotation
-
-
 # instance fields
-.field private _alertPresenter:Lcom/snap/composer/foundation/IAlertPresenter;
+.field public final a:Lcom/snap/scan/core/SnapScanResult;
 
-.field private _performingUserIdsObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;>;"
-        }
-    .end annotation
-.end field
-
-.field private _totalActionCountObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Double;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _userProvider:Lcom/snap/composer/people/UserProviding;
+.field public final b:LwLf;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lcom/snap/scan/core/SnapScanResult;LwLf;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput-object v0, p0, LLSe;->_performingUserIdsObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
     .line 3
-    iput-object v0, p0, LLSe;->_totalActionCountObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
     .line 4
-    iput-object v0, p0, LLSe;->_alertPresenter:Lcom/snap/composer/foundation/IAlertPresenter;
+    iput-object p1, p0, LLSe;->a:Lcom/snap/scan/core/SnapScanResult;
 
     .line 5
-    iput-object v0, p0, LLSe;->_userProvider:Lcom/snap/composer/people/UserProviding;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/foundation/IAlertPresenter;Lcom/snap/composer/people/UserProviding;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;>;",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Double;",
-            ">;",
-            "Lcom/snap/composer/foundation/IAlertPresenter;",
-            "Lcom/snap/composer/people/UserProviding;",
-            ")V"
-        }
-    .end annotation
-
     .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, LLSe;->b:LwLf;
 
     .line 7
-    iput-object p1, p0, LLSe;->_performingUserIdsObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
     .line 8
-    iput-object p2, p0, LLSe;->_totalActionCountObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
-
-    .line 9
-    iput-object p3, p0, LLSe;->_alertPresenter:Lcom/snap/composer/foundation/IAlertPresenter;
-
-    .line 10
-    iput-object p4, p0, LLSe;->_userProvider:Lcom/snap/composer/people/UserProviding;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/snap/composer/foundation/IAlertPresenter;)V
-    .locals 0
+.method public final a()LwLf;
+    .locals 1
 
     .line 1
-    iput-object p1, p0, LLSe;->_alertPresenter:Lcom/snap/composer/foundation/IAlertPresenter;
+    iget-object v0, p0, LLSe;->b:LwLf;
 
     .line 2
     .line 3
-    return-void
+    return-object v0
 .end method
 
-.method public final b(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iput-object p1, p0, LLSe;->_performingUserIdsObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    return-void
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LLSe;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LLSe;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, LLSe;->a:Lcom/snap/scan/core/SnapScanResult;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, LLSe;->a:Lcom/snap/scan/core/SnapScanResult;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, LLSe;->b:LwLf;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, LLSe;->b:LwLf;
+
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
 .end method
 
-.method public final c(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
-    .locals 0
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LLSe;->_totalActionCountObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    iget-object v0, p0, LLSe;->a:Lcom/snap/scan/core/SnapScanResult;
 
     .line 2
     .line 3
-    return-void
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LLSe;->b:LwLf;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, LwLf;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
 .end method
 
-.method public final d(Lcom/snap/composer/people/UserProviding;)V
-    .locals 0
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LLSe;->_userProvider:Lcom/snap/composer/people/UserProviding;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    return-void
+    const-string v1, "Snapcode(snapScanResult="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LLSe;->a:Lcom/snap/scan/core/SnapScanResult;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", frame="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LLSe;->b:LwLf;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

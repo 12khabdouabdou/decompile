@@ -3,123 +3,219 @@
 .source "SourceFile"
 
 # interfaces
-.implements LtWc;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final X:LJ7d;
+.field public final synthetic a:I
 
-.field public final Y:LIq4;
-
-.field public final a:LIq4;
-
-.field public final b:LpYc;
-
-.field public final c:LIq4;
-
-.field public final t:LIq4;
+.field public final synthetic b:LOo1;
 
 
 # direct methods
-.method public constructor <init>(LIq4;LpYc;Lnwf;LIq4;LIq4;LJ7d;LIq4;)V
+.method public synthetic constructor <init>(LOo1;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LJo1;->a:I
+
+    iput-object p1, p0, LJo1;->b:LOo1;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LJo1;->a:LIq4;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LJo1;->b:LpYc;
-
-    .line 7
-    .line 8
-    iput-object p4, p0, LJo1;->c:LIq4;
-
-    .line 9
-    .line 10
-    iput-object p5, p0, LJo1;->t:LIq4;
-
-    .line 11
-    .line 12
-    iput-object p6, p0, LJo1;->X:LJ7d;
-
-    .line 13
-    .line 14
-    iput-object p7, p0, LJo1;->Y:LIq4;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final E(Lql5;)V
-    .locals 8
+.method public final run()V
+    .locals 6
 
     .line 1
-    sget-object v3, LD01;->r0:LD01;
+    iget v0, p0, LJo1;->a:I
 
     .line 2
     .line 3
-    sget-object v0, Lzo1;->a:Lgbd;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
     .line 6
+    iget-object v0, p0, LJo1;->b:LOo1;
+
     .line 7
     .line 8
-    move-result-object v2
+    iget-object v0, v0, LOo1;->G0:LDo1;
 
     .line 9
-    new-instance v1, LIo1;
-
     .line 10
-    .line 11
-    const/4 v0, 0x0
+    if-eqz v0, :cond_0
 
+    .line 11
     .line 12
-    invoke-direct {v1, v0, p0}, LIo1;-><init>(ILjava/lang/Object;)V
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     .line 13
     .line 14
     .line 15
-    const/4 v5, 0x0
+    move-result-wide v1
 
     .line 16
-    const/4 v6, 0x0
+    iput-wide v1, v0, LDo1;->g0:J
 
     .line 17
-    const-string v0, "BLOOPS_FULLSCREEN_ONBOARDING_LAYER"
-
     .line 18
+    :cond_0
+    return-void
+
     .line 19
-    const/4 v4, 0x0
+    :pswitch_0
+    iget-object v0, p0, LJo1;->b:LOo1;
 
     .line 20
-    const/16 v7, 0x1e0
-
     .line 21
-    .line 22
-    invoke-static/range {v0 .. v7}, LLRi;->n(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Ljava/util/List;Lkotlin/jvm/functions/Function1;Ljava/util/Map;ZII)LzG9;
+    iget-object v1, v0, LOo1;->v0:LJp0;
 
+    .line 22
     .line 23
+    iget-boolean v1, v0, LOo1;->C0:Z
+
     .line 24
     .line 25
-    move-result-object v0
+    if-eqz v1, :cond_4
 
     .line 26
-    invoke-virtual {p1, v0}, Lql5;->i(LzG9;)V
-
     .line 27
+    iget-object v1, v0, LrP0;->t:Ljava/lang/Object;
+
     .line 28
     .line 29
+    check-cast v1, LPo1;
+
+    .line 30
+    .line 31
+    if-eqz v1, :cond_3
+
+    .line 32
+    .line 33
+    check-cast v1, LXo1;
+
+    .line 34
+    .line 35
+    iget-object v2, v1, LXo1;->F0:Landroid/widget/LinearLayout;
+
+    .line 36
+    .line 37
+    if-nez v2, :cond_1
+
+    .line 38
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_1
+    const/4 v3, 0x4
+
+    .line 41
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 42
+    .line 43
+    .line 44
+    :goto_0
+    iget-object v2, v1, LXo1;->z0:LTm6;
+
+    .line 45
+    .line 46
+    const/4 v3, 0x0
+
+    .line 47
+    if-eqz v2, :cond_2
+
+    .line 48
+    .line 49
+    const/4 v4, 0x1
+
+    .line 50
+    invoke-virtual {v2, v4}, LTm6;->A(I)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {v1}, Lqbd;->E0()Llbd;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v2
+
+    .line 57
+    sget-object v5, Lsbd;->b:Lsbd;
+
+    .line 58
+    .line 59
+    iget v5, v5, Lsbd;->a:I
+
+    .line 60
+    .line 61
+    invoke-interface {v2, v1, v5, v4, v3}, Llbd;->O(Lqbd;IZLlAh;)V
+
+    .line 62
+    .line 63
+    .line 64
+    goto :goto_1
+
+    .line 65
+    :cond_2
+    const-string v0, "loadingViewController"
+
+    .line 66
+    .line 67
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 68
+    .line 69
+    .line 70
+    throw v3
+
+    .line 71
+    :cond_3
+    :goto_1
+    invoke-virtual {v0}, LOo1;->f3()V
+
+    .line 72
+    .line 73
+    .line 74
+    iget-object v0, v0, LrP0;->t:Ljava/lang/Object;
+
+    .line 75
+    .line 76
+    check-cast v0, LPo1;
+
+    .line 77
+    .line 78
+    if-eqz v0, :cond_4
+
+    .line 79
+    .line 80
+    check-cast v0, LXo1;
+
+    .line 81
+    .line 82
+    invoke-virtual {v0}, LXo1;->j1()V
+
+    .line 83
+    .line 84
+    .line 85
+    :cond_4
     return-void
+
+    .line 86
+    nop
+
+    .line 87
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

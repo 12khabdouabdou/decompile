@@ -131,7 +131,7 @@
     .line 15
     .line 16
     .line 17
-    new-instance v1, Lsyi;
+    new-instance v1, LxXi;
 
     .line 18
     .line 19
@@ -148,11 +148,11 @@
     const/4 v0, 0x1
 
     .line 26
-    iput-boolean v0, v1, Lsyi;->F:Z
+    iput-boolean v0, v1, LxXi;->F:Z
 
     .line 27
     .line 28
-    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 29
     .line 30
@@ -160,7 +160,7 @@
     const/4 v0, 0x0
 
     .line 32
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->F0(LfB5;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->F0(LdF5;)V
 
     .line 33
     .line 34
@@ -196,7 +196,7 @@
     move-result-object v2
 
     .line 12
-    instance-of v3, v2, LL5c;
+    instance-of v3, v2, Lwkc;
 
     .line 13
     .line 14
@@ -204,7 +204,7 @@
 
     .line 15
     .line 16
-    check-cast v2, LL5c;
+    check-cast v2, Lwkc;
 
     .line 17
     .line 18
@@ -220,7 +220,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v2}, LL5c;->x()V
+    invoke-virtual {v2}, Lwkc;->w()V
 
     .line 23
     .line 24
@@ -241,11 +241,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 2
     .line 3
-    instance-of v1, v0, Lsyi;
+    instance-of v1, v0, LxXi;
 
     .line 4
     .line 5
@@ -253,7 +253,7 @@
 
     .line 6
     .line 7
-    check-cast v0, Lsyi;
+    check-cast v0, LxXi;
 
     .line 8
     .line 9
@@ -269,7 +269,7 @@
 
     .line 12
     .line 13
-    iput-boolean p1, v0, Lsyi;->F:Z
+    iput-boolean p1, v0, LxXi;->F:Z
 
     .line 14
     .line 15

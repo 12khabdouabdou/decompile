@@ -3,617 +3,454 @@
 .source "SourceFile"
 
 # interfaces
-.implements LQwc;
-.implements Lio/reactivex/rxjava3/core/ObservableSource;
+.implements Lio/reactivex/rxjava3/functions/Supplier;
 
 
 # instance fields
-.field public final X:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public final synthetic a:I
 
-.field public final Y:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public final synthetic b:LY79;
 
-.field public final Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final a:Landroid/content/Context;
-
-.field public final b:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-.field public final e0:LBre;
-
-.field public f0:Lexc;
-
-.field public g0:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
-.field public h0:Landroid/view/ViewGroup;
-
-.field public final t:LWk9;
+.field public final synthetic c:LjG5;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lnwf;Lan0;)V
-    .locals 1
+.method public synthetic constructor <init>(ILjG5;LY79;)V
+    .locals 0
 
     .line 1
+    iput p1, p0, LiG5;->a:I
+
+    iput-object p3, p0, LiG5;->b:LY79;
+
+    iput-object p2, p0, LiG5;->c:LjG5;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LiG5;->a:Landroid/content/Context;
-
-    .line 5
-    .line 6
-    new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 7
-    .line 8
-    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
-
-    .line 9
-    .line 10
-    .line 11
-    iput-object p1, p0, LiG5;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 12
-    .line 13
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object p1
-
-    .line 21
-    iput-object p1, p0, LiG5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 22
-    .line 23
-    new-instance p1, LcC5;
-
-    .line 24
-    .line 25
-    const/16 v0, 0x11
-
-    .line 26
-    .line 27
-    invoke-direct {p1, v0, p0}, LcC5;-><init>(ILjava/lang/Object;)V
-
-    .line 28
-    .line 29
-    .line 30
-    new-instance v0, LWk9;
-
-    .line 31
-    .line 32
-    invoke-direct {v0, p1}, LWk9;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 33
-    .line 34
-    .line 35
-    iput-object v0, p0, LiG5;->t:LWk9;
-
-    .line 36
-    .line 37
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 38
-    .line 39
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
-    .line 40
-    .line 41
-    .line 42
-    iput-object p1, p0, LiG5;->X:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 43
-    .line 44
-    sget-object p1, Lbf3;->d:Lbf3;
-
-    .line 45
-    .line 46
-    new-instance v0, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 47
-    .line 48
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
-
-    .line 49
-    .line 50
-    .line 51
-    iput-object v0, p0, LiG5;->Y:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 52
-    .line 53
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 54
-    .line 55
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
-    .line 56
-    .line 57
-    .line 58
-    iput-object p1, p0, LiG5;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 59
-    .line 60
-    check-cast p2, LIP5;
-
-    .line 61
-    .line 62
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 63
-    .line 64
-    .line 65
-    const-string p1, "DefaultLensesNgsActionBarModeController"
-
-    .line 66
-    .line 67
-    invoke-static {p3, p1}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
-
-    .line 68
-    .line 69
-    .line 70
-    move-result-object p1
-
-    .line 71
-    iput-object p1, p0, LiG5;->e0:LBre;
-
-    .line 72
-    .line 73
     return-void
 .end method
 
 
 # virtual methods
-.method public final destroy()V
-    .locals 3
+.method public final get()Ljava/lang/Object;
+    .locals 10
 
     .line 1
-    invoke-static {}, LCId;->d()V
+    iget-object v0, p0, LiG5;->b:LY79;
 
     .line 2
     .line 3
+    iget-object v1, p0, LiG5;->c:LjG5;
+
     .line 4
-    iget-object v0, p0, LiG5;->h0:Landroid/view/ViewGroup;
-
     .line 5
+    iget v2, p0, LiG5;->a:I
+
     .line 6
-    if-eqz v0, :cond_1
-
     .line 7
-    .line 8
-    iget-object v1, p0, LiG5;->f0:Lexc;
+    packed-switch v2, :pswitch_data_0
 
+    .line 8
     .line 9
     .line 10
-    const/4 v2, 0x0
-
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    invoke-virtual {v1, v0}, Lexc;->e(Landroid/view/View;)V
-
-    .line 14
-    .line 15
-    .line 16
-    iput-object v2, p0, LiG5;->h0:Landroid/view/ViewGroup;
-
-    .line 17
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    const-string v0, "actionBarViewContainer"
-
-    .line 20
-    .line 21
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 22
-    .line 23
-    .line 24
-    throw v2
-
-    .line 25
-    :cond_1
-    :goto_0
-    iget-object v0, p0, LiG5;->X:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 26
-    .line 27
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 28
-    .line 29
-    .line 30
-    return-void
-.end method
-
-.method public final dismiss()V
-    .locals 2
-
-    .line 1
-    invoke-static {}, LCId;->d()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, LiG5;->h0:Landroid/view/ViewGroup;
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_0
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    const/4 v1, 0x4
-
-    .line 10
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+    iget-object v2, v1, LjG5;->l:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 11
     .line 12
-    .line 13
-    :goto_0
-    iget-object v0, p0, LiG5;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-virtual {v2, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
-    .line 15
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-.end method
-
-.method public final initialize(Ldxc;Lio/reactivex/rxjava3/core/Observable;)V
-    .locals 3
-
-    .line 1
-    move-object v0, p1
-
-    .line 2
-    check-cast v0, Lexc;
-
-    .line 3
-    .line 4
-    iput-object v0, p0, LiG5;->f0:Lexc;
-
-    .line 5
-    .line 6
-    invoke-static {}, LCId;->d()V
-
-    .line 7
-    .line 8
-    .line 9
-    iget-object v0, p0, LiG5;->a:Landroid/content/Context;
-
-    .line 10
-    .line 11
-    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    .line 12
     .line 13
     .line 14
-    move-result-object v0
-
     .line 15
-    const v1, 0x7f0e03a9
+    move-result-object v3
 
     .line 16
-    .line 17
-    .line 18
-    const/4 v2, 0x0
-
-    .line 19
-    invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v0
-
-    .line 23
-    check-cast v0, Landroid/view/ViewGroup;
-
-    .line 24
-    .line 25
-    iput-object v0, p0, LiG5;->h0:Landroid/view/ViewGroup;
-
-    .line 26
-    .line 27
-    invoke-static {p1, v0}, LCId;->b(Ldxc;Landroid/view/View;)V
-
-    .line 28
-    .line 29
-    .line 30
-    iget-object p1, p0, LiG5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 31
-    .line 32
-    iget-object v1, p0, LiG5;->X:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 33
-    .line 34
-    invoke-static {p1, v1}, LLZj;->o0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 35
-    .line 36
-    .line 37
-    iget-object p1, p0, LiG5;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 38
-    .line 39
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 40
-    .line 41
-    .line 42
-    check-cast p2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
-    .line 43
-    .line 44
-    iput-object p2, p0, LiG5;->g0:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
-    .line 45
-    .line 46
-    return-void
-.end method
-
-.method public final present(LcSa;)V
-    .locals 13
-
-    .line 1
-    invoke-static {}, LCId;->d()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, LiG5;->h0:Landroid/view/ViewGroup;
-
-    .line 5
-    .line 6
-    if-nez p1, :cond_0
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 10
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 11
-    .line 12
-    .line 13
-    :goto_0
-    iget-object p1, p0, LiG5;->g0:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
-    .line 14
-    .line 15
-    const/4 v0, 0x0
-
-    .line 16
-    const-string v1, "colorSpecObservable"
+    if-nez v3, :cond_1
 
     .line 17
     .line 18
-    if-eqz p1, :cond_2
+    new-instance v3, Lada;
 
     .line 19
     .line 20
-    new-instance v2, Lds5;
+    invoke-direct {v3, v0}, Lada;-><init>(LY79;)V
 
     .line 21
     .line 22
-    const/16 v3, 0x17
-
     .line 23
-    .line 24
-    invoke-direct {v2, v3, p0}, Lds5;-><init>(ILjava/lang/Object;)V
+    iget-object v4, v1, LjG5;->d:Lbda;
 
+    .line 24
     .line 25
+    invoke-interface {v4, v3}, Lbda;->b(LOWk;)Lio/reactivex/rxjava3/core/Flowable;
+
     .line 26
     .line 27
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
     .line 28
+    move-result-object v3
+
     .line 29
-    invoke-direct {v3, p1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    sget-object v4, LzQ3;->k0:LzQ3;
 
     .line 30
     .line 31
-    .line 32
-    new-instance v4, LX7;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 32
     .line 33
     .line 34
-    new-instance v5, Ly7;
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapMaybe;
 
     .line 35
     .line 36
-    iget-object p1, p0, LiG5;->t:LWk9;
+    invoke-direct {v5, v3, v4}, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapMaybe;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 37
     .line 38
-    iget-object p1, p1, LWk9;->c:Ljava/lang/Object;
-
     .line 39
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromPublisher;
+
     .line 40
-    check-cast p1, Ljava/lang/Number;
-
     .line 41
-    .line 42
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+    invoke-direct {v3, v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromPublisher;-><init>(LSFe;)V
 
+    .line 42
     .line 43
     .line 44
-    .line 45
-    move-result p1
+    sget-object v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
 
+    .line 45
     .line 46
-    invoke-direct {v5, p1}, Ly7;-><init>(I)V
+    new-instance v5, LhG5;
 
     .line 47
     .line 48
+    const/4 v6, 0x1
+
     .line 49
-    const/4 v10, 0x0
+    invoke-direct {v5, v6, v1, v0}, LhG5;-><init>(ILjG5;LY79;)V
 
     .line 50
-    const/4 v11, 0x0
-
     .line 51
-    const/4 v6, 0x0
-
     .line 52
-    const/4 v7, 0x0
+    sget-object v6, LYRa;->a:LYRa;
 
     .line 53
-    const/4 v8, 0x0
-
     .line 54
-    const/4 v9, 0x0
+    invoke-virtual {v3, v4}, Lio/reactivex/rxjava3/core/Observable;->A0(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableOnErrorNext;
 
     .line 55
-    const/16 v12, 0x7e
-
     .line 56
     .line 57
-    invoke-direct/range {v4 .. v12}, LX7;-><init>(LA7;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Integer;ZI)V
+    move-result-object v3
 
     .line 58
+    sget-object v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableNever;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableNever;
+
     .line 59
     .line 60
-    invoke-virtual {v3, v4}, Lio/reactivex/rxjava3/core/Observable;->J0(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-static {v3, v4}, Lio/reactivex/rxjava3/core/Observable;->r0(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 61
     .line 62
     .line 63
-    move-result-object p1
+    move-result-object v3
 
     .line 64
-    iget-object v2, p0, LiG5;->e0:LBre;
+    invoke-virtual {v3, v5}, Lio/reactivex/rxjava3/core/Observable;->c0(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
     .line 65
     .line 66
-    invoke-virtual {v2}, LBre;->i()Lgn0;
-
     .line 67
+    move-result-object v3
+
     .line 68
+    invoke-virtual {v3, v5}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
+
     .line 69
-    move-result-object v2
-
     .line 70
-    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 71
+    move-result-object v3
+
     .line 72
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
+
     .line 73
-    move-result-object p1
-
     .line 74
-    new-instance v2, LhG5;
-
     .line 75
+    move-result-object v4
+
     .line 76
-    const/4 v3, 0x0
+    iget-object v3, v1, LjG5;->f:LlJe;
 
     .line 77
-    invoke-direct {v2, p0, v3}, LhG5;-><init>(LiG5;I)V
-
     .line 78
+    check-cast v3, LnJe;
+
     .line 79
     .line 80
-    iget-object v3, p0, LiG5;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-virtual {v3}, LnJe;->d()LA36;
 
     .line 81
     .line 82
-    invoke-static {p1, v2, v3}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 83
-    .line 84
-    .line 85
-    iget-object p1, p0, LiG5;->g0:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    move-result-object v9
 
+    .line 84
+    iget-object v8, v1, LjG5;->h:Ljava/util/concurrent/TimeUnit;
+
+    .line 85
     .line 86
+    const/4 v5, 0x1
+
     .line 87
-    if-eqz p1, :cond_1
+    iget-wide v6, v1, LjG5;->g:J
 
     .line 88
     .line 89
-    new-instance v0, LhG5;
+    invoke-virtual/range {v4 .. v9}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->i1(IJLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 90
     .line 91
-    const/4 v1, 0x1
-
     .line 92
-    invoke-direct {v0, p0, v1}, LhG5;-><init>(LiG5;I)V
+    move-result-object v1
 
     .line 93
+    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 94
     .line 95
-    invoke-static {p1, v0, v3}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 96
-    .line 97
-    .line 98
-    return-void
+    move-result-object v0
 
+    .line 97
+    if-nez v0, :cond_0
+
+    .line 98
     .line 99
-    :cond_1
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    move-object v3, v1
 
     .line 100
+    goto :goto_0
+
     .line 101
+    :cond_0
+    move-object v3, v0
+
     .line 102
-    throw v0
+    :cond_1
+    :goto_0
+    check-cast v3, Lio/reactivex/rxjava3/core/ObservableSource;
 
     .line 103
-    :cond_2
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 104
+    return-object v3
+
     .line 105
+    :pswitch_0
+    iget-object v2, v1, LjG5;->j:Ljava/util/concurrent/ConcurrentHashMap;
+
     .line 106
-    throw v0
-.end method
+    .line 107
+    invoke-virtual {v2, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-.method public final subscribe(Lio/reactivex/rxjava3/core/Observer;)V
-    .locals 1
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v3
 
-    .line 1
-    iget-object v0, p0, LiG5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+    .line 111
+    if-nez v3, :cond_3
 
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/core/Observer;)V
+    .line 112
+    .line 113
+    iget-object v3, v1, LjG5;->b:Ldh3;
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
+    .line 114
+    .line 115
+    invoke-interface {v3, v0}, Ldh3;->a(LY79;)Lio/reactivex/rxjava3/core/Maybe;
+
+    .line 116
+    .line 117
+    .line 118
+    move-result-object v3
+
+    .line 119
+    sget-object v4, LvP6;->a:LvP6;
+
+    .line 120
+    .line 121
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;
+
+    .line 122
+    .line 123
+    invoke-direct {v5, v3, v4}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Ljava/lang/Object;)V
+
+    .line 124
+    .line 125
+    .line 126
+    new-instance v3, LGo5;
+
+    .line 127
+    .line 128
+    const/16 v4, 0x1d
+
+    .line 129
+    .line 130
+    invoke-direct {v3, v1, v4, v0}, LGo5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 131
+    .line 132
+    .line 133
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 134
+    .line 135
+    invoke-direct {v4, v5, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 136
+    .line 137
+    .line 138
+    invoke-virtual {v4}, Lio/reactivex/rxjava3/core/Single;->A()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object v3
+
+    .line 142
+    sget-object v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
+
+    .line 143
+    .line 144
+    new-instance v5, LhG5;
+
+    .line 145
+    .line 146
+    const/4 v6, 0x0
+
+    .line 147
+    invoke-direct {v5, v6, v1, v0}, LhG5;-><init>(ILjG5;LY79;)V
+
+    .line 148
+    .line 149
+    .line 150
+    sget-object v6, LYRa;->a:LYRa;
+
+    .line 151
+    .line 152
+    invoke-virtual {v3, v4}, Lio/reactivex/rxjava3/core/Observable;->A0(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableOnErrorNext;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object v3
+
+    .line 156
+    sget-object v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableNever;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableNever;
+
+    .line 157
+    .line 158
+    invoke-static {v3, v4}, Lio/reactivex/rxjava3/core/Observable;->r0(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 159
+    .line 160
+    .line 161
+    move-result-object v3
+
+    .line 162
+    invoke-virtual {v3, v5}, Lio/reactivex/rxjava3/core/Observable;->c0(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 163
+    .line 164
+    .line 165
+    move-result-object v3
+
+    .line 166
+    invoke-virtual {v3, v5}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
+
+    .line 167
+    .line 168
+    .line 169
+    move-result-object v3
+
+    .line 170
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
+
+    .line 171
+    .line 172
+    .line 173
+    move-result-object v4
+
+    .line 174
+    iget-object v3, v1, LjG5;->f:LlJe;
+
+    .line 175
+    .line 176
+    check-cast v3, LnJe;
+
+    .line 177
+    .line 178
+    invoke-virtual {v3}, LnJe;->d()LA36;
+
+    .line 179
+    .line 180
+    .line 181
+    move-result-object v9
+
+    .line 182
+    iget-object v8, v1, LjG5;->h:Ljava/util/concurrent/TimeUnit;
+
+    .line 183
+    .line 184
+    const/4 v5, 0x1
+
+    .line 185
+    iget-wide v6, v1, LjG5;->g:J
+
+    .line 186
+    .line 187
+    invoke-virtual/range {v4 .. v9}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->i1(IJLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v1
+
+    .line 191
+    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 192
+    .line 193
+    .line 194
+    move-result-object v0
+
+    .line 195
+    if-nez v0, :cond_2
+
+    .line 196
+    .line 197
+    move-object v3, v1
+
+    .line 198
+    goto :goto_1
+
+    .line 199
+    :cond_2
+    move-object v3, v0
+
+    .line 200
+    :cond_3
+    :goto_1
+    check-cast v3, Lio/reactivex/rxjava3/core/ObservableSource;
+
+    .line 201
+    .line 202
+    return-object v3
+
+    .line 203
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

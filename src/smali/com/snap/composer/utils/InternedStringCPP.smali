@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljq9;
+.implements Llz9;
 
 
 # instance fields
@@ -13,14 +13,24 @@
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(J)V
+    .locals 1
 
-    new-instance v0, LT2j;
+    .line 8
+    invoke-direct {p0, p1, p2}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;-><init>(J)V
 
-    const/16 v1, 0x17
+    const/4 v0, 0x0
 
-    invoke-direct {v0, v1}, LT2j;-><init>(I)V
+    .line 9
+    iput-object v0, p0, Lcom/snap/composer/utils/InternedStringCPP;->a:Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    .line 10
+    iput-boolean v0, p0, Lcom/snap/composer/utils/InternedStringCPP;->b:Z
+
+    .line 11
+    invoke-static {p1, p2}, Lcom/snap/composer/utils/InternedStringCPP;->nativeRetain(J)V
 
     return-void
 .end method
@@ -28,90 +38,43 @@
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 2
 
-    .line 1
     const-wide/16 v0, 0x0
 
-    .line 2
-    .line 3
+    .line 1
     invoke-direct {p0, v0, v1}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;-><init>(J)V
 
-    .line 4
-    .line 5
-    .line 6
     if-eqz p2, :cond_0
 
-    .line 7
-    .line 8
+    .line 2
     iput-object p1, p0, Lcom/snap/composer/utils/InternedStringCPP;->a:Ljava/lang/String;
 
-    .line 9
-    .line 10
     const/4 p1, 0x1
 
-    .line 11
+    .line 3
     iput-boolean p1, p0, Lcom/snap/composer/utils/InternedStringCPP;->b:Z
 
-    .line 12
-    .line 13
     return-void
 
-    .line 14
     :cond_0
     const/4 p2, 0x0
 
-    .line 15
+    .line 4
     iput-object p2, p0, Lcom/snap/composer/utils/InternedStringCPP;->a:Ljava/lang/String;
 
-    .line 16
-    .line 17
     const/4 p2, 0x0
 
-    .line 18
+    .line 5
     iput-boolean p2, p0, Lcom/snap/composer/utils/InternedStringCPP;->b:Z
 
-    .line 19
-    .line 20
-    invoke-static {p1}, LT2j;->r(Ljava/lang/String;)J
+    .line 6
+    invoke-static {p1}, Lcom/snap/composer/utils/InternedStringCPP;->nativeCreate(Ljava/lang/String;)J
 
-    .line 21
-    .line 22
-    .line 23
     move-result-wide p1
 
-    .line 24
+    .line 7
     invoke-virtual {p0, p1, p2}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->setNativeHandle(J)V
 
-    .line 25
-    .line 26
-    .line 27
     return-void
-.end method
-
-.method public static final synthetic A(J)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/snap/composer/utils/InternedStringCPP;->nativeRetain(J)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public static final synthetic B(J)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lcom/snap/composer/utils/InternedStringCPP;->nativeToString(J)Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
 .end method
 
 .method private static final native nativeCreate(Ljava/lang/String;)J
@@ -126,31 +89,19 @@
 .method private static final native nativeToString(J)Ljava/lang/String;
 .end method
 
-.method public static final synthetic y(Ljava/lang/String;)J
-    .locals 2
-
-    .line 1
-    invoke-static {p0}, Lcom/snap/composer/utils/InternedStringCPP;->nativeCreate(Ljava/lang/String;)J
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-wide v0
-
-    .line 5
-    return-wide v0
-.end method
-
-.method public static final synthetic z(J)V
+.method public static final synthetic x(J)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lcom/snap/composer/utils/InternedStringCPP;->nativeRelease(J)V
+    invoke-static {p0, p1}, Lcom/snap/composer/utils/InternedStringCPP;->nativeToString(J)Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
-    return-void
+    move-result-object p0
+
+    .line 5
+    return-object p0
 .end method
 
 
@@ -159,7 +110,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p2}, LT2j;->s(J)V
+    invoke-static {p1, p2}, Lcom/snap/composer/utils/InternedStringCPP;->nativeRelease(J)V
 
     .line 2
     .line 3
@@ -270,7 +221,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0}, LT2j;->r(Ljava/lang/String;)J
+    invoke-static {v0}, Lcom/snap/composer/utils/InternedStringCPP;->nativeCreate(Ljava/lang/String;)J
 
     .line 21
     .line 22
@@ -361,7 +312,7 @@
     move-result-wide v0
 
     .line 9
-    invoke-static {v0, v1}, LT2j;->u(J)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/snap/composer/utils/InternedStringCPP;->nativeToString(J)Ljava/lang/String;
 
     .line 10
     .line 11

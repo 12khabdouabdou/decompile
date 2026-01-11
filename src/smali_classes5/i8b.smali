@@ -1,86 +1,174 @@
 .class public final Li8b;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:LQsj;
+.field public final synthetic a:I
 
-.field public final b:Lrbb;
-
-.field public final c:LpC3;
-
-.field public final d:LBtj;
-
-.field public final e:LXab;
-
-.field public final f:LnA7;
-
-.field public final g:LBre;
+.field public final synthetic b:LMh7;
 
 
 # direct methods
-.method public constructor <init>(LQsj;Lrbb;LpC3;LBtj;LXab;LnA7;)V
+.method public synthetic constructor <init>(LMh7;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Li8b;->a:I
+
+    iput-object p1, p0, Li8b;->b:LMh7;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+
+    .line 1
+    iget v0, p0, Li8b;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Li8b;->a:LQsj;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Li8b;->b:Lrbb;
+    check-cast p1, Lxej;
 
     .line 7
     .line 8
-    iput-object p3, p0, Li8b;->c:LpC3;
+    iget-object p1, p0, Li8b;->b:LMh7;
 
     .line 9
     .line 10
-    iput-object p4, p0, Li8b;->d:LBtj;
+    iget-object p1, p1, LMh7;->Q:LQbg;
 
     .line 11
     .line 12
-    iput-object p5, p0, Li8b;->e:LXab;
+    const v0, 0x3ed7a86d
 
     .line 13
     .line 14
-    iput-object p6, p0, Li8b;->f:LnA7;
-
     .line 15
-    .line 16
-    sget-object p1, LpYa;->Z:LpYa;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 16
     .line 17
     .line 18
-    const-string p2, "MapViewportStreamUpdater"
+    move-result-object v1
 
     .line 19
+    new-instance v2, Lrcg;
+
     .line 20
-    invoke-static {p1, p1, p2}, Ln9f;->f(LpYa;LpYa;Ljava/lang/String;)LWm0;
-
     .line 21
+    const/4 v3, 0x4
+
     .line 22
+    invoke-direct {v2, p1, v3}, Lrcg;-><init>(Lvej;I)V
+
     .line 23
-    move-result-object p1
-
     .line 24
-    new-instance p2, LBre;
-
     .line 25
-    .line 26
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
+    iget-object v3, p1, Lvej;->a:Lkch;
 
+    .line 26
     .line 27
+    const-string v4, "DELETE FROM ShareLocationPreferences\nWHERE syncStatus=?"
+
     .line 28
     .line 29
-    iput-object p2, p0, Li8b;->g:LBre;
+    const/4 v5, 0x1
 
     .line 30
+    invoke-virtual {v3, v1, v4, v5, v2}, Lkch;->c(Ljava/lang/Integer;Ljava/lang/String;ILkotlin/jvm/functions/Function1;)LJJe;
+
     .line 31
-    return-void
+    .line 32
+    .line 33
+    sget-object v1, Lyog;->j0:Lyog;
+
+    .line 34
+    .line 35
+    invoke-virtual {p1, v0, v1}, Lvej;->b(ILkotlin/jvm/functions/Function1;)V
+
+    .line 36
+    .line 37
+    .line 38
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 39
+    .line 40
+    return-object p1
+
+    .line 41
+    :pswitch_0
+    check-cast p1, Lxej;
+
+    .line 42
+    .line 43
+    iget-object p1, p0, Li8b;->b:LMh7;
+
+    .line 44
+    .line 45
+    iget-object p1, p1, LMh7;->H:LsR7;
+
+    .line 46
+    .line 47
+    const v0, 0x46e56bf3
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v1
+
+    .line 54
+    iget-object v2, p1, Lvej;->a:Lkch;
+
+    .line 55
+    .line 56
+    const-string v3, "DELETE FROM MapBestFriend"
+
+    .line 57
+    .line 58
+    invoke-static {v2, v1, v3}, LKi5;->r(Lkch;Ljava/lang/Integer;Ljava/lang/String;)V
+
+    .line 59
+    .line 60
+    .line 61
+    sget-object v1, LrXa;->p0:LrXa;
+
+    .line 62
+    .line 63
+    invoke-virtual {p1, v0, v1}, Lvej;->b(ILkotlin/jvm/functions/Function1;)V
+
+    .line 64
+    .line 65
+    .line 66
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 67
+    .line 68
+    return-object p1
+
+    .line 69
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

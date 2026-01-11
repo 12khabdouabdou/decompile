@@ -1,102 +1,244 @@
-.class public LVQc;
-.super Lhqj;
+.class public final LVQc;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public j:Ljava/lang/Long;
+.field public final a:Landroid/net/Uri;
 
-.field public k:Ljava/lang/String;
+.field public final b:Landroid/content/Intent;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(Landroid/net/Uri;Landroid/content/Intent;)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "ONE_TAP_LOGIN_PERSISTENT_STORE_ATTEMPT"
-
     .line 4
+    iput-object p1, p0, LVQc;->a:Landroid/net/Uri;
+
     .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
     .line 6
+    iput-object p2, p0, LVQc;->b:Landroid/content/Intent;
+
     .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
-
     .line 8
-    .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
-    .line 10
-    .line 11
-    move-object v0, p0
-
-    .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 13
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    new-array v0, v0, [B
+    if-ne p0, p1, :cond_0
 
     .line 3
     .line 4
-    const/4 v1, 0x2
+    return v0
 
     .line 5
-    iget-object v2, p0, LVQc;->k:Ljava/lang/String;
+    :cond_0
+    instance-of v1, p1, LVQc;
 
     .line 6
     .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    const/4 v2, 0x0
 
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
     .line 10
-    const/4 v1, 0x3
+    return v2
 
     .line 11
-    iget-object v2, p0, LVQc;->j:Ljava/lang/Long;
+    :cond_1
+    check-cast p1, LVQc;
 
     .line 12
     .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    iget-object v1, p1, LVQc;->a:Landroid/net/Uri;
 
     .line 14
     .line 15
+    iget-object v3, p0, LVQc;->a:Landroid/net/Uri;
+
     .line 16
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, LVQc;->b:Landroid/content/Intent;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, LVQc;->b:Landroid/content/Intent;
+
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iget-object v1, p0, LVQc;->a:Landroid/net/Uri;
+
+    .line 3
+    .line 4
+    if-nez v1, :cond_0
+
+    .line 5
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    invoke-virtual {v1}, Landroid/net/Uri;->hashCode()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v1
+
+    .line 12
+    :goto_0
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 13
+    .line 14
+    iget-object v2, p0, LVQc;->b:Landroid/content/Intent;
+
+    .line 15
+    .line 16
+    if-nez v2, :cond_1
 
     .line 17
     .line 18
+    goto :goto_1
+
     .line 19
-    return-void
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v0
+
+    .line 23
+    :goto_1
+    add-int/2addr v1, v0
+
+    .line 24
+    return v1
 .end method
 
-.method public final d()I
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    const/16 v0, 0x13f5
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    return v0
+    const-string v1, "NotificationActions(endCallUri="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LVQc;->a:Landroid/net/Uri;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", stopScreenSharingIntent="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LVQc;->b:Landroid/content/Intent;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

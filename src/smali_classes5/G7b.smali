@@ -1,105 +1,72 @@
 .class public final LG7b;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'identifier\':s,\'position\':r<e>:\'[0]\',\'backgroundColor\':d@?,\'textColor\':d@?,\'flavorTextColor\':d@?,\'maxNumLines\':d@?,\'visibility\':r<e>:\'[1]\'"
+    typeReferences = {
+        Lcom/snap/map/layers/api/MapAnnotationAncillaryPosition;,
+        Lcom/snap/map/layers/api/MapAnnotationAncillaryVisibility;
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field private _backgroundColor:Ljava/lang/Double;
 
-.field public final synthetic b:Lu78;
+.field private _flavorTextColor:Ljava/lang/Double;
+
+.field private _identifier:Ljava/lang/String;
+
+.field private _maxNumLines:Ljava/lang/Double;
+
+.field private _position:Lcom/snap/map/layers/api/MapAnnotationAncillaryPosition;
+
+.field private _textColor:Ljava/lang/Double;
+
+.field private _visibility:Lcom/snap/map/layers/api/MapAnnotationAncillaryVisibility;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lu78;I)V
+.method public constructor <init>(Ljava/lang/String;Lcom/snap/map/layers/api/MapAnnotationAncillaryPosition;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Lcom/snap/map/layers/api/MapAnnotationAncillaryVisibility;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LG7b;->a:I
-
-    iput-object p1, p0, LG7b;->b:Lu78;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LG7b;->a:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    iput-object p1, p0, LG7b;->_identifier:Ljava/lang/String;
+
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    iput-object p2, p0, LG7b;->_position:Lcom/snap/map/layers/api/MapAnnotationAncillaryPosition;
 
     .line 7
     .line 8
-    iget-object p1, p0, LG7b;->b:Lu78;
+    iput-object p3, p0, LG7b;->_backgroundColor:Ljava/lang/Double;
 
     .line 9
     .line 10
-    iget-object p1, p1, Lu78;->X:Ljava/lang/Object;
+    iput-object p4, p0, LG7b;->_textColor:Ljava/lang/Double;
 
     .line 11
     .line 12
-    return-void
+    iput-object p5, p0, LG7b;->_flavorTextColor:Ljava/lang/Double;
 
     .line 13
-    :pswitch_0
-    check-cast p1, Lzp6;
-
     .line 14
+    iput-object p6, p0, LG7b;->_maxNumLines:Ljava/lang/Double;
+
     .line 15
-    iget-object p1, p0, LG7b;->b:Lu78;
-
     .line 16
+    iput-object p7, p0, LG7b;->_visibility:Lcom/snap/map/layers/api/MapAnnotationAncillaryVisibility;
+
     .line 17
-    iget-object p1, p1, Lu78;->X:Ljava/lang/Object;
-
     .line 18
-    .line 19
     return-void
-
-    .line 20
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 21
-    .line 22
-    instance-of p1, p1, Ljava/util/concurrent/TimeoutException;
-
-    .line 23
-    .line 24
-    if-eqz p1, :cond_0
-
-    .line 25
-    .line 26
-    iget-object p1, p0, LG7b;->b:Lu78;
-
-    .line 27
-    .line 28
-    iget-object p1, p1, Lu78;->X:Ljava/lang/Object;
-
-    .line 29
-    .line 30
-    :cond_0
-    return-void
-
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

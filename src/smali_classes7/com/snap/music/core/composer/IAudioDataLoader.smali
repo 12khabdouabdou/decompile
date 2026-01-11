@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LST8;
+    proxyClass = Lt19;
     schema = "\'loadAudioDataForTrack\':f|m|(r:\'[0]\', f(t?, r?:\'[1]\'))"
     typeReferences = {
         Lcom/snap/music/core/composer/PickerTrack;,

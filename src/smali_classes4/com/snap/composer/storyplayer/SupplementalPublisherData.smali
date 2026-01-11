@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/SupplementalPublisherData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'bitmojiWeatherStory\':r?:\'[0]\',\'happeningNowStory\':r?:\'[1]\'"
     typeReferences = {

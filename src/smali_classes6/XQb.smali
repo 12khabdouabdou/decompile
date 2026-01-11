@@ -1,108 +1,126 @@
 .class public final LXQb;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:LxFc;
+.field public final synthetic a:I
 
-.field public final b:Ljava/util/Set;
+.field public final synthetic b:LYQb;
 
 
 # direct methods
-.method public constructor <init>(LxFc;Lake;)V
-    .locals 1
+.method public synthetic constructor <init>(LYQb;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LXQb;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LXQb;->a:LxFc;
+    iput-object p1, p0, LXQb;->b:LYQb;
 
-    .line 5
-    .line 6
-    sget-object p1, LeEc;->Z:LeEc;
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
-    const-string p2, "MessagingNotificationRemover"
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 9
-    .line 10
-    invoke-virtual {p1, p2}, LeEc;->g(Ljava/lang/String;)Lrn0;
-
-    .line 11
-    .line 12
-    .line 13
-    const/4 p1, 0x2
-
-    .line 14
-    new-array p1, p1, [LYQb;
-
-    .line 15
-    .line 16
-    sget-object p2, LYQb;->h0:LYQb;
-
-    .line 17
-    .line 18
-    const/4 v0, 0x0
-
-    .line 19
-    aput-object p2, p1, v0
-
-    .line 20
-    .line 21
-    sget-object p2, LYQb;->n0:LYQb;
-
-    .line 22
-    .line 23
-    const/4 v0, 0x1
-
-    .line 24
-    aput-object p2, p1, v0
-
-    .line 25
-    .line 26
-    invoke-static {p1}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p1
-
-    .line 30
-    iput-object p1, p0, LXQb;->b:Ljava/util/Set;
-
-    .line 31
-    .line 32
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
-    .locals 1
+.method public final d()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    new-instance v0, LWQb;
+    iget v0, p0, LXQb;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p1}, LWQb;-><init>(LXQb;Ljava/lang/String;)V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
+    iget-object v0, p0, LXQb;->b:LYQb;
 
     .line 7
     .line 8
-    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
+    invoke-virtual {v0}, LYQb;->a()Landroid/view/View;
 
     .line 9
     .line 10
     .line 11
-    return-object p1
+    move-result-object v0
+
+    .line 12
+    const v1, 0x7f0b0a51
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    check-cast v0, Lcom/snap/memories/lib/grid/view/MemoriesMyEyesOnlyKeypad;
+
+    .line 20
+    .line 21
+    return-object v0
+
+    .line 22
+    :pswitch_0
+    iget-object v0, p0, LXQb;->b:LYQb;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object v0, v0, LYQb;->Y:Landroid/content/Context;
+
+    .line 28
+    .line 29
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    const v1, 0x7f0e048d
+
+    .line 34
+    .line 35
+    .line 36
+    const/4 v2, 0x0
+
+    .line 37
+    invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    return-object v0
+
+    .line 42
+    nop
+
+    .line 43
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,8 +1,29 @@
-.class public interface abstract LT27;
-.super Ljava/lang/Object;
+.class public final LT27;
+.super LV27;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a(Lo09;Lo09;LAZ6;)Lio/reactivex/rxjava3/core/Observable;
+# static fields
+.field public static final a:LT27;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LT27;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LT27;->a:LT27;
+
+    .line 7
+    .line 8
+    return-void
 .end method

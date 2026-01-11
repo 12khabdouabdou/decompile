@@ -1,189 +1,298 @@
 .class public final Ls30;
-.super Ljava/lang/Object;
+.super LY30;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final b:LZi7;
+
+.field public final c:LJ00;
+
+.field public final d:Lpsc;
+
+.field public final e:LJ4b;
+
+.field public final f:Landroid/content/Intent;
+
+.field public final g:Z
+
+.field public final h:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method public constructor <init>(LZi7;LJ00;Lpsc;LJ4b;ILandroid/content/Intent;I)V
+    .locals 2
 
     .line 1
-    iput p1, p0, Ls30;->a:I
+    and-int/lit8 p5, p7, 0x40
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    .line 3
+    const/4 v0, 0x1
 
+    .line 4
+    const/4 v1, 0x0
+
+    .line 5
+    if-eqz p5, :cond_0
+
+    .line 6
+    .line 7
+    const/4 p5, 0x0
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 p5, 0x1
+
+    .line 10
+    :goto_0
+    and-int/lit16 p7, p7, 0x80
+
+    .line 11
+    .line 12
+    if-eqz p7, :cond_1
+
+    .line 13
+    .line 14
+    const/4 v0, 0x0
+
+    .line 15
+    :cond_1
+    invoke-direct {p0, p4}, Ld40;-><init>(LJ4b;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object p1, p0, Ls30;->b:LZi7;
+
+    .line 19
+    .line 20
+    iput-object p2, p0, Ls30;->c:LJ00;
+
+    .line 21
+    .line 22
+    iput-object p3, p0, Ls30;->d:Lpsc;
+
+    .line 23
+    .line 24
+    iput-object p4, p0, Ls30;->e:LJ4b;
+
+    .line 25
+    .line 26
+    iput-object p6, p0, Ls30;->f:Landroid/content/Intent;
+
+    .line 27
+    .line 28
+    iput-boolean p5, p0, Ls30;->g:Z
+
+    .line 29
+    .line 30
+    iput-boolean v0, p0, Ls30;->h:Z
+
+    .line 31
+    .line 32
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 5
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 11
 
     .line 1
-    iget v0, p0, Ls30;->a:I
+    const/4 v0, 0x2
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v2, 0x1
 
     .line 4
+    new-instance v3, Lu30;
+
     .line 5
     .line 6
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+    iget-boolean v9, p0, Ls30;->h:Z
 
     .line 7
     .line 8
-    .line 9
-    move-result-wide v0
+    iget-boolean v10, p0, Ls30;->g:Z
 
+    .line 9
     .line 10
-    sget-object v2, LhJ7;->a:Ljava/util/ArrayList;
+    if-nez v10, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    if-nez v9, :cond_0
 
     .line 13
     .line 14
+    const/4 v8, 0x1
+
     .line 15
-    move-result-object v2
+    goto :goto_0
 
     .line 16
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    :cond_0
+    const/4 v8, 0x0
 
     .line 17
+    :goto_0
+    iget-object v6, p0, Ls30;->d:Lpsc;
+
     .line 18
     .line 19
-    move-result v3
+    iget-object v7, p0, Ls30;->f:Landroid/content/Intent;
 
     .line 20
-    if-eqz v3, :cond_0
-
     .line 21
-    .line 22
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    iget-object v4, p0, Ls30;->b:LZi7;
 
+    .line 22
     .line 23
+    iget-object v5, p0, Ls30;->c:LJ00;
+
     .line 24
     .line 25
-    move-result-object v3
+    invoke-direct/range {v3 .. v8}, Lu30;-><init>(LZi7;LJ00;Lpsc;Landroid/content/Intent;Z)V
 
     .line 26
-    check-cast v3, Lkotlin/jvm/functions/Function1;
-
     .line 27
     .line 28
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iget-object v4, p0, Ls30;->c:LJ00;
 
     .line 29
     .line 30
-    .line 31
-    move-result-object v4
+    iget-object v5, p0, Ls30;->b:LZi7;
 
+    .line 31
     .line 32
-    invoke-interface {v3, v4}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v10, :cond_1
 
     .line 33
     .line 34
-    .line 35
-    goto :goto_0
+    new-instance v6, LK30;
 
+    .line 35
     .line 36
-    :cond_0
-    sget-object v0, LhJ7;->a:Ljava/util/ArrayList;
+    iget-object v5, v5, LZi7;->b:LAp0;
 
     .line 37
     .line 38
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+    iget-boolean v7, v4, LJ00;->j:Z
 
     .line 39
     .line 40
+    invoke-direct {v6, v5, v4, v7}, LK30;-><init>(LAp0;LJ00;Z)V
+
     .line 41
-    return-void
-
     .line 42
-    :pswitch_0
-    invoke-static {}, Lorg/chromium/net/impl/CronetLibraryLoader;->b()V
-
     .line 43
+    new-instance v7, LR30;
+
     .line 44
     .line 45
-    return-void
+    invoke-direct {v7, v5, v4}, LR30;-><init>(LAp0;LJ00;)V
 
     .line 46
-    :pswitch_1
-    sget-object v0, Lorg/chromium/base/ApplicationStatus;->b:Ll2k;
-
     .line 47
     .line 48
-    if-eqz v0, :cond_1
+    const/4 v4, 0x3
 
     .line 49
-    .line 50
-    goto :goto_1
+    new-array v4, v4, [Le40;
 
+    .line 50
     .line 51
-    :cond_1
-    new-instance v0, Ll2k;
+    aput-object v6, v4, v1
 
     .line 52
     .line 53
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    aput-object v7, v4, v2
 
     .line 54
     .line 55
+    aput-object v3, v4, v0
+
     .line 56
-    sput-object v0, Lorg/chromium/base/ApplicationStatus;->b:Ll2k;
-
     .line 57
-    .line 58
-    sget-object v1, Lorg/chromium/base/ApplicationStatus;->c:LFKc;
+    invoke-static {v4}, Lio/reactivex/rxjava3/core/Observable;->j0([Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 58
     .line 59
     .line 60
-    if-nez v1, :cond_2
+    move-result-object v0
 
     .line 61
+    return-object v0
+
     .line 62
-    new-instance v1, LFKc;
+    :cond_1
+    if-eqz v9, :cond_2
 
     .line 63
     .line 64
-    invoke-direct {v1}, LFKc;-><init>()V
+    new-instance v6, LR30;
 
     .line 65
     .line 66
+    iget-object v5, v5, LZi7;->b:LAp0;
+
     .line 67
-    sput-object v1, Lorg/chromium/base/ApplicationStatus;->c:LFKc;
-
     .line 68
-    .line 69
-    :cond_2
-    sget-object v1, Lorg/chromium/base/ApplicationStatus;->c:LFKc;
+    invoke-direct {v6, v5, v4}, LR30;-><init>(LAp0;LJ00;)V
 
+    .line 69
     .line 70
     .line 71
-    invoke-virtual {v1, v0}, LFKc;->c(Ljava/lang/Object;)V
+    new-array v0, v0, [Le40;
 
     .line 72
     .line 73
-    .line 74
-    :goto_1
-    return-void
+    aput-object v6, v0, v1
 
+    .line 74
     .line 75
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    aput-object v3, v0, v2
+
+    .line 76
+    .line 77
+    invoke-static {v0}, Lio/reactivex/rxjava3/core/Observable;->j0([Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v0
+
+    .line 81
+    return-object v0
+
+    .line 82
+    :cond_2
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
+    .line 83
+    .line 84
+    invoke-direct {v0, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+
+    .line 85
+    .line 86
+    .line 87
+    return-object v0
+.end method
+
+.method public final b()LJ4b;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ls30;->e:LJ4b;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

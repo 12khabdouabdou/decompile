@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LzW8;
+    proxyClass = La49;
     schema = "\'onConfirm\':f|m|(r:\'[0]\'),\'onCancel\':f|m|()"
     typeReferences = {
         Lcom/snap/music/core/composer/PickerSelectedTrack;

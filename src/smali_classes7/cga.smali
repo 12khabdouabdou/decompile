@@ -1,5 +1,5 @@
 .class public final Lcga;
-.super Lega;
+.super Ldga;
 .source "SourceFile"
 
 

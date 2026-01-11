@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -137,11 +137,11 @@
 
     .line 39
     .line 40
-    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Lc7i;
+    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelFromPublisher$ParallelDispatcher;->Y:Ltvi;
 
     .line 41
     .line 42
-    invoke-interface {v1}, Lc7i;->cancel()V
+    invoke-interface {v1}, Ltvi;->cancel()V
 
     .line 43
     .line 44

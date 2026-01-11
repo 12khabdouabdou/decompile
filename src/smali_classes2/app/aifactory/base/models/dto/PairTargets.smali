@@ -28,7 +28,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lapp/aifactory/base/models/dto/Target;Lapp/aifactory/base/models/dto/Target;ILHr5;)V
+.method public synthetic constructor <init>(Lapp/aifactory/base/models/dto/Target;Lapp/aifactory/base/models/dto/Target;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -121,7 +121,7 @@
 
     iget-object v3, p1, Lapp/aifactory/base/models/dto/PairTargets;->firstTarget:Lapp/aifactory/base/models/dto/Target;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -134,7 +134,7 @@
 
     iget-object p1, p1, Lapp/aifactory/base/models/dto/PairTargets;->secondTarget:Lapp/aifactory/base/models/dto/Target;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/creative_tools/captions/CaptionCarouselStateChange;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'displayingCarouselPluginTypeDidChange\':f?(r<e>:\'[0]\'),\'didManuallyCloseCarousel\':f?(r<e>:\'[0]\'),\'didDisplayCaptionStyle\':f?(r:\'[1]\')"
     typeReferences = {

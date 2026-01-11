@@ -2,26 +2,19 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
-
 
 # instance fields
-.field public final synthetic X:LPp9;
+.field public final a:LYK4;
 
-.field public final synthetic Y:Z
+.field public final b:LYK4;
 
-.field public final synthetic a:LCr1;
+.field public final c:LYK4;
 
-.field public final synthetic b:Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;
-
-.field public final synthetic c:Z
-
-.field public final synthetic t:Z
+.field public final d:LYK4;
 
 
 # direct methods
-.method public constructor <init>(LCr1;Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;ZZLPp9;Z)V
+.method public constructor <init>(LYK4;LYK4;LYK4;LYK4;)V
     .locals 0
 
     .line 1
@@ -30,113 +23,43 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LAr1;->a:LCr1;
+    iput-object p1, p0, LAr1;->a:LYK4;
 
     .line 5
     .line 6
-    iput-object p2, p0, LAr1;->b:Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;
+    iput-object p2, p0, LAr1;->b:LYK4;
 
     .line 7
     .line 8
-    iput-boolean p3, p0, LAr1;->c:Z
+    iput-object p3, p0, LAr1;->c:LYK4;
 
     .line 9
     .line 10
-    iput-boolean p4, p0, LAr1;->t:Z
+    iput-object p4, p0, LAr1;->d:LYK4;
 
     .line 11
     .line 12
-    iput-object p5, p0, LAr1;->X:LPp9;
+    sget-object p1, LNn1;->Z:LNn1;
 
     .line 13
     .line 14
-    iput-boolean p6, p0, LAr1;->Y:Z
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 15
     .line 16
-    return-void
-.end method
-
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
-
-    .line 1
-    move-object v6, p1
-
-    .line 2
-    check-cast v6, Ljava/util/List;
-
-    .line 3
-    .line 4
-    iget-object p1, p0, LAr1;->a:LCr1;
-
-    .line 5
-    .line 6
-    iget-object p1, p1, LCr1;->a:LUo4;
-
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LUo4;->get()Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
-
-    .line 12
-    check-cast p1, Lfj1;
-
-    .line 13
-    .line 14
-    new-instance v3, Lz0h;
-
-    .line 15
-    .line 16
-    iget-boolean v0, p0, LAr1;->t:Z
-
     .line 17
+    const-string p1, "BloopsMyLensesSelfieServiceImpl"
+
     .line 18
-    iget-object v1, p0, LAr1;->X:LPp9;
-
     .line 19
-    .line 20
-    invoke-direct {v3, v1, v0}, Lz0h;-><init>(LPp9;Z)V
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 20
     .line 21
     .line 22
+    sget-object p1, LJp0;->a:LJp0;
+
     .line 23
-    sget-object v4, LsL6;->a:LsL6;
-
     .line 24
-    .line 25
-    move-object v0, p1
-
-    .line 26
-    check-cast v0, Llj1;
-
-    .line 27
-    .line 28
-    iget-object v1, p0, LAr1;->b:Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;
-
-    .line 29
-    .line 30
-    iget-boolean v2, p0, LAr1;->c:Z
-
-    .line 31
-    .line 32
-    iget-boolean v5, p0, LAr1;->Y:Z
-
-    .line 33
-    .line 34
-    invoke-virtual/range {v0 .. v6}, Llj1;->c(Lapp/aifactory/sdk/api/model/ResourceId;ZLz0h;Ljava/util/List;ZLjava/util/List;)Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object p1
-
-    .line 38
-    return-object p1
+    return-void
 .end method

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LSW0;
+    proxyClass = Lx01;
     schema = "\'getStrings\':f|m|(a<s>, f(m?<s,u>, r?:\'[0]\')),\'getStringsSync\':f|m|(a<s>): m<s,u>"
     typeReferences = {
         Lcom/snap/composer/foundation/Error;

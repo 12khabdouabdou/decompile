@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lxmf;
+.implements LvFf;
 
 
 # instance fields
-.field public final a:LXfi;
+.field public final a:LREi;
 
 
 # direct methods
@@ -40,26 +40,26 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    new-instance p1, Lzef;
+    new-instance p1, LhAf;
 
-    const/16 p2, 0x10
+    const/16 p2, 0x8
 
-    invoke-direct {p1, p2, p0}, Lzef;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LhAf;-><init>(ILjava/lang/Object;)V
 
     .line 5
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 6
-    iput-object p2, p0, Lcom/snap/identity/onetaplogin/settings/SavedLoginInfoEmptyView;->a:LXfi;
+    iput-object p2, p0, Lcom/snap/identity/onetaplogin/settings/SavedLoginInfoEmptyView;->a:LREi;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final P(LEQc;)V
+.method public final N(Ls5d;)V
     .locals 0
 
     .line 1
@@ -70,11 +70,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/onetaplogin/settings/SavedLoginInfoEmptyView;->a:LXfi;
+    iget-object v0, p0, Lcom/snap/identity/onetaplogin/settings/SavedLoginInfoEmptyView;->a:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -93,7 +93,7 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lwmf;
+    check-cast p1, LuFf;
 
     .line 2
     .line 3

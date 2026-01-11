@@ -1,59 +1,56 @@
 .class public final LHb1;
-.super Ljava/lang/Object;
+.super LAPc;
 .source "SourceFile"
 
-# interfaces
-.implements LfZ5;
 
-
-# instance fields
-.field public final a:Litc;
-
-.field public final b:LJif;
-
-.field public final c:LCO1;
-
-.field public final d:Lf9d;
+# static fields
+.field public static final q:LHb1;
 
 
 # direct methods
-.method public constructor <init>(Litc;LJif;LCO1;Lf9d;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 11
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LHb1;
 
     .line 2
     .line 3
+    sget-object v2, Lv71;->Z:Lv71;
+
     .line 4
-    iput-object p1, p0, LHb1;->a:Litc;
-
     .line 5
+    sget-wide v6, LL51;->a:J
+
     .line 6
-    iput-object p2, p0, LHb1;->b:LJif;
-
     .line 7
+    sget-wide v8, LL51;->b:J
+
     .line 8
-    iput-object p3, p0, LHb1;->c:LCO1;
-
     .line 9
+    const-wide/16 v4, 0x0
+
     .line 10
-    iput-object p4, p0, LHb1;->d:Lf9d;
-
     .line 11
+    const/16 v10, 0x35c
+
     .line 12
+    .line 13
+    const-string v1, "bitmoji-ua-pose"
+
+    .line 14
+    .line 15
+    const/4 v3, 0x0
+
+    .line 16
+    invoke-direct/range {v0 .. v10}, LAPc;-><init>(Ljava/lang/String;Lrp0;Ljava/lang/String;JJJI)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v0, LHb1;->q:LHb1;
+
+    .line 20
+    .line 21
     return-void
-.end method
-
-
-# virtual methods
-.method public final b()Lio/reactivex/rxjava3/core/Completable;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

@@ -1,568 +1,337 @@
-.class public abstract LqS6;
-.super Ljava/lang/Object;
+.class public final LqS6;
+.super Le57;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-.implements Ljava/lang/Comparable;
-.implements LOq6;
 
 
 # instance fields
-.field private volatile _heap:Ljava/lang/Object;
-
-.field public a:J
+.field public a:I
 
 .field public b:I
 
+.field public c:Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>(J)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, LqS6;->a:J
+    const/4 v0, 0x0
 
     .line 5
-    .line 6
-    const/4 p1, -0x1
+    iput v0, p0, LqS6;->a:I
 
+    .line 6
     .line 7
-    iput p1, p0, LqS6;->b:I
+    iput v0, p0, LqS6;->b:I
 
     .line 8
     .line 9
+    const-string v0, ""
+
+    .line 10
+    .line 11
+    iput-object v0, p0, LqS6;->c:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    const/4 v0, 0x0
+
+    .line 14
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
+
+    .line 15
+    .line 16
+    const/4 v0, -0x1
+
+    .line 17
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+
+    .line 18
+    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LEwi;
+.method public final computeSerializedSize()I
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Le57;->computeSerializedSize()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget v1, p0, LqS6;->a:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    and-int/2addr v1, v2
+
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    iget v1, p0, LqS6;->b:I
+
+    .line 12
+    .line 13
+    invoke-static {v2, v1}, Lbd3;->i(II)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
+
+    .line 17
+    add-int/2addr v0, v1
+
+    .line 18
+    :cond_0
+    iget v1, p0, LqS6;->a:I
+
+    .line 19
+    .line 20
+    const/4 v2, 0x2
+
+    .line 21
+    and-int/2addr v1, v2
+
+    .line 22
+    if-eqz v1, :cond_1
+
+    .line 23
+    .line 24
+    iget-object v1, p0, LqS6;->c:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    invoke-static {v2, v1}, Lbd3;->q(ILjava/lang/String;)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v1
+
+    .line 30
+    add-int/2addr v1, v0
+
+    .line 31
+    return v1
+
+    .line 32
+    :cond_1
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 2
 
     .line 1
-    iget-object v0, p0, LqS6;->_heap:Ljava/lang/Object;
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
 
     .line 2
     .line 3
-    instance-of v1, v0, LEwi;
-
     .line 4
+    move-result v0
+
     .line 5
-    if-eqz v1, :cond_0
+    if-eqz v0, :cond_3
 
     .line 6
     .line 7
-    check-cast v0, LEwi;
+    const/16 v1, 0x8
 
     .line 8
     .line 9
-    return-object v0
+    if-eq v0, v1, :cond_2
 
     .line 10
-    :cond_0
-    const/4 v0, 0x0
-
     .line 11
-    return-object v0
-.end method
-
-.method public final declared-synchronized b(JLrS6;LsS6;)I
-    .locals 7
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, LqS6;->_heap:Ljava/lang/Object;
-
-    .line 3
-    .line 4
-    sget-object v1, LRac;->a:Llq7;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 5
-    .line 6
-    if-ne v0, v1, :cond_0
-
-    .line 7
-    .line 8
-    monitor-exit p0
-
-    .line 9
-    const/4 p1, 0x2
-
-    .line 10
-    return p1
-
-    .line 11
-    :cond_0
-    :try_start_1
-    monitor-enter p3
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    const/16 v1, 0x12
 
     .line 12
-    :try_start_2
-    invoke-virtual {p3}, LEwi;->b()LqS6;
-
     .line 13
+    if-eq v0, v1, :cond_1
+
     .line 14
     .line 15
-    move-result-object v0
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     .line 16
-    invoke-static {p4}, LsS6;->G(LsS6;)Z
-
     .line 17
     .line 18
+    move-result v0
+
     .line 19
-    move-result p4
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    if-nez v0, :cond_0
 
     .line 20
-    if-eqz p4, :cond_1
-
     .line 21
+    goto :goto_1
+
     .line 22
-    :try_start_3
-    monitor-exit p3
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    :cond_1
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
 
     .line 23
-    monitor-exit p0
-
     .line 24
-    const/4 p1, 0x1
-
     .line 25
-    return p1
+    move-result-object v0
 
     .line 26
-    :catchall_0
-    move-exception p1
+    iput-object v0, p0, LqS6;->c:Ljava/lang/String;
 
     .line 27
-    goto :goto_3
-
     .line 28
-    :cond_1
-    const-wide/16 v1, 0x0
+    iget v0, p0, LqS6;->a:I
 
     .line 29
     .line 30
-    if-nez v0, :cond_2
+    or-int/lit8 v0, v0, 0x2
 
     .line 31
     .line 32
-    :try_start_4
-    iput-wide p1, p3, LrS6;->b:J
+    iput v0, p0, LqS6;->a:I
 
     .line 33
     .line 34
-    goto :goto_1
+    goto :goto_0
 
     .line 35
-    :catchall_1
-    move-exception p1
+    :cond_2
+    invoke-virtual {p1}, LZc3;->r()I
 
     .line 36
-    goto :goto_2
-
     .line 37
-    :cond_2
-    iget-wide v3, v0, LqS6;->a:J
-
     .line 38
+    move-result v0
+
     .line 39
-    sub-long v5, v3, p1
+    packed-switch v0, :pswitch_data_0
 
     .line 40
     .line 41
-    cmp-long p4, v5, v1
-
     .line 42
+    goto :goto_0
+
     .line 43
-    if-ltz p4, :cond_3
+    :pswitch_0
+    iput v0, p0, LqS6;->b:I
 
     .line 44
     .line 45
-    goto :goto_0
+    iget v0, p0, LqS6;->a:I
 
     .line 46
-    :cond_3
-    move-wide p1, v3
-
     .line 47
-    :goto_0
-    iget-wide v3, p3, LrS6;->b:J
+    or-int/lit8 v0, v0, 0x1
 
     .line 48
     .line 49
-    sub-long v3, p1, v3
+    iput v0, p0, LqS6;->a:I
 
     .line 50
     .line 51
-    cmp-long p4, v3, v1
+    goto :goto_0
 
     .line 52
-    .line 53
-    if-lez p4, :cond_4
-
-    .line 54
-    .line 55
-    iput-wide p1, p3, LrS6;->b:J
-
-    .line 56
-    .line 57
-    :cond_4
+    :cond_3
     :goto_1
-    iget-wide p1, p0, LqS6;->a:J
+    return-object p0
 
-    .line 58
-    .line 59
-    iget-wide v3, p3, LrS6;->b:J
-
-    .line 60
-    .line 61
-    sub-long/2addr p1, v3
-
-    .line 62
-    cmp-long p4, p1, v1
-
-    .line 63
-    .line 64
-    if-gez p4, :cond_5
-
-    .line 65
-    .line 66
-    iput-wide v3, p0, LqS6;->a:J
-
-    .line 67
-    .line 68
-    :cond_5
-    invoke-virtual {p3, p0}, LEwi;->a(LqS6;)V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
-
-    .line 69
-    .line 70
-    .line 71
-    :try_start_5
-    monitor-exit p3
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_0
-
-    .line 72
-    monitor-exit p0
-
-    .line 73
-    const/4 p1, 0x0
-
-    .line 74
-    return p1
-
-    .line 75
-    :goto_2
-    :try_start_6
-    monitor-exit p3
-
-    .line 76
-    throw p1
-
-    .line 77
-    :goto_3
-    monitor-exit p0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
-
-    .line 78
-    throw p1
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final c(LrS6;)V
+.method public final writeTo(Lbd3;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, LqS6;->_heap:Ljava/lang/Object;
+    iget v0, p0, LqS6;->a:I
 
     .line 2
     .line 3
-    sget-object v1, LRac;->a:Llq7;
+    const/4 v1, 0x1
 
     .line 4
+    and-int/2addr v0, v1
+
     .line 5
-    if-eq v0, v1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 6
     .line 7
-    iput-object p1, p0, LqS6;->_heap:Ljava/lang/Object;
+    iget v0, p0, LqS6;->b:I
 
     .line 8
     .line 9
-    return-void
+    invoke-virtual {p1, v1, v0}, Lbd3;->I(II)V
 
     .line 10
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
-
     .line 11
     .line 12
-    const-string v0, "Failed requirement."
+    :cond_0
+    iget v0, p0, LqS6;->a:I
 
     .line 13
     .line 14
-    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    const/4 v1, 0x2
 
     .line 15
-    .line 16
-    .line 17
-    throw p1
-.end method
-
-.method public final compareTo(Ljava/lang/Object;)I
-    .locals 4
-
-    .line 1
-    check-cast p1, LqS6;
-
-    .line 2
-    .line 3
-    iget-wide v0, p0, LqS6;->a:J
-
-    .line 4
-    .line 5
-    iget-wide v2, p1, LqS6;->a:J
-
-    .line 6
-    .line 7
-    sub-long/2addr v0, v2
-
-    .line 8
-    const-wide/16 v2, 0x0
-
-    .line 9
-    .line 10
-    cmp-long p1, v0, v2
-
-    .line 11
-    .line 12
-    if-lez p1, :cond_0
-
-    .line 13
-    .line 14
-    const/4 p1, 0x1
-
-    .line 15
-    return p1
+    and-int/2addr v0, v1
 
     .line 16
-    :cond_0
-    if-gez p1, :cond_1
+    if-eqz v0, :cond_1
 
     .line 17
     .line 18
-    const/4 p1, -0x1
+    iget-object v0, p0, LqS6;->c:Ljava/lang/String;
 
     .line 19
-    return p1
-
     .line 20
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 21
-    return p1
-.end method
-
-.method public final d(J)Z
-    .locals 3
-
-    .line 1
-    iget-wide v0, p0, LqS6;->a:J
-
-    .line 2
-    .line 3
-    sub-long/2addr p1, v0
-
-    .line 4
-    const-wide/16 v0, 0x0
-
-    .line 5
-    .line 6
-    cmp-long v2, p1, v0
-
-    .line 7
-    .line 8
-    if-ltz v2, :cond_0
-
-    .line 9
-    .line 10
-    const/4 p1, 0x1
-
-    .line 11
-    return p1
-
-    .line 12
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 13
-    return p1
-.end method
-
-.method public final declared-synchronized dispose()V
-    .locals 3
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, LqS6;->_heap:Ljava/lang/Object;
-
-    .line 3
-    .line 4
-    sget-object v1, LRac;->a:Llq7;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 5
-    .line 6
-    if-ne v0, v1, :cond_0
-
-    .line 7
-    .line 8
-    monitor-exit p0
-
-    .line 9
-    return-void
-
-    .line 10
-    :cond_0
-    :try_start_1
-    instance-of v2, v0, LrS6;
-
-    .line 11
-    .line 12
-    if-eqz v2, :cond_1
-
-    .line 13
-    .line 14
-    check-cast v0, LrS6;
-
-    .line 15
-    .line 16
-    goto :goto_0
-
-    .line 17
-    :catchall_0
-    move-exception v0
-
-    .line 18
-    goto :goto_1
-
-    .line 19
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 20
-    :goto_0
-    if-eqz v0, :cond_2
+    invoke-virtual {p1, v1, v0}, Lbd3;->R(ILjava/lang/String;)V
 
     .line 21
     .line 22
-    invoke-virtual {v0, p0}, LEwi;->e(LqS6;)V
-
     .line 23
+    :cond_1
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
     .line 24
     .line 25
-    :cond_2
-    iput-object v1, p0, LqS6;->_heap:Ljava/lang/Object;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
     .line 26
-    .line 27
-    monitor-exit p0
-
-    .line 28
     return-void
-
-    .line 29
-    :goto_1
-    :try_start_2
-    monitor-exit p0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 30
-    throw v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Delayed@"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-static {p0}, Lsc5;->s0(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v1
-
-    .line 12
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 13
-    .line 14
-    .line 15
-    const-string v1, "[nanos="
-
-    .line 16
-    .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 18
-    .line 19
-    .line 20
-    iget-wide v1, p0, LqS6;->a:J
-
-    .line 21
-    .line 22
-    const/16 v3, 0x5d
-
-    .line 23
-    .line 24
-    invoke-static {v0, v1, v2, v3}, LmG8;->o(Ljava/lang/StringBuilder;JC)Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v0
-
-    .line 28
-    return-object v0
 .end method

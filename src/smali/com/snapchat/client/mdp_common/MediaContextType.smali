@@ -98,6 +98,8 @@
 
 .field public static final enum TEMPUNASSIGNED:Lcom/snapchat/client/mdp_common/MediaContextType;
 
+.field public static final enum TINSEL:Lcom/snapchat/client/mdp_common/MediaContextType;
+
 .field public static final enum TOSHTML:Lcom/snapchat/client/mdp_common/MediaContextType;
 
 .field public static final enum UGCLENSASSETS:Lcom/snapchat/client/mdp_common/MediaContextType;
@@ -110,7 +112,7 @@
     .locals 3
 
     .line 1
-    const/16 v0, 0x2c
+    const/16 v0, 0x2d
 
     .line 2
     .line 3
@@ -638,6 +640,18 @@
 
     .line 260
     .line 261
+    sget-object v1, Lcom/snapchat/client/mdp_common/MediaContextType;->TINSEL:Lcom/snapchat/client/mdp_common/MediaContextType;
+
+    .line 262
+    .line 263
+    const/16 v2, 0x2c
+
+    .line 264
+    .line 265
+    aput-object v1, v0, v2
+
+    .line 266
+    .line 267
     return-object v0
 .end method
 
@@ -1561,18 +1575,39 @@
 
     .line 476
     .line 477
-    invoke-static {}, Lcom/snapchat/client/mdp_common/MediaContextType;->$values()[Lcom/snapchat/client/mdp_common/MediaContextType;
+    new-instance v0, Lcom/snapchat/client/mdp_common/MediaContextType;
 
     .line 478
     .line 479
-    .line 480
-    move-result-object v0
+    const-string v1, "TINSEL"
 
+    .line 480
     .line 481
-    sput-object v0, Lcom/snapchat/client/mdp_common/MediaContextType;->$VALUES:[Lcom/snapchat/client/mdp_common/MediaContextType;
+    const/16 v2, 0x2c
 
     .line 482
     .line 483
+    invoke-direct {v0, v1, v2}, Lcom/snapchat/client/mdp_common/MediaContextType;-><init>(Ljava/lang/String;I)V
+
+    .line 484
+    .line 485
+    .line 486
+    sput-object v0, Lcom/snapchat/client/mdp_common/MediaContextType;->TINSEL:Lcom/snapchat/client/mdp_common/MediaContextType;
+
+    .line 487
+    .line 488
+    invoke-static {}, Lcom/snapchat/client/mdp_common/MediaContextType;->$values()[Lcom/snapchat/client/mdp_common/MediaContextType;
+
+    .line 489
+    .line 490
+    .line 491
+    move-result-object v0
+
+    .line 492
+    sput-object v0, Lcom/snapchat/client/mdp_common/MediaContextType;->$VALUES:[Lcom/snapchat/client/mdp_common/MediaContextType;
+
+    .line 493
+    .line 494
     return-void
 .end method
 

@@ -1,5 +1,5 @@
 .class public final Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -8,15 +8,15 @@
 
 .field public final c:Z
 
-.field public final d:LdG9;
+.field public final d:Le16;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLdG9;)V
+.method public constructor <init>(Ljava/lang/String;ZLe16;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -29,7 +29,7 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:LdG9;
+    iput-object p3, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:Le16;
 
     .line 9
     .line 10
@@ -63,7 +63,7 @@
 
     iget-object v3, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->b:Ljava/lang/String;
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -81,11 +81,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:LdG9;
+    iget-object v1, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:Le16;
 
-    iget-object p1, p1, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:LdG9;
+    iget-object p1, p1, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:Le16;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -145,7 +145,7 @@
 
     .line 20
     .line 21
-    iget-object v1, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:LdG9;
+    iget-object v1, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:Le16;
 
     .line 22
     .line 23
@@ -188,7 +188,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:LdG9;
+    iget-object v1, p0, Lcom/snap/opera/presenter/plugin/OperaAnalyticsPlugin$LaunchRequested;->d:Le16;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

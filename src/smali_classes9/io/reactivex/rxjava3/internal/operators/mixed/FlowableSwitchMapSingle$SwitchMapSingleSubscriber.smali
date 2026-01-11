@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lio/reactivex/rxjava3/core/FlowableSubscriber;
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -33,7 +33,7 @@
         "Ljava/util/concurrent/atomic/AtomicInteger;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TT;>;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
@@ -45,11 +45,11 @@
 # instance fields
 .field public final X:Ljava/util/concurrent/atomic/AtomicReference;
 
-.field public Y:Lc7i;
+.field public Y:Ltvi;
 
 .field public volatile Z:Z
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/functions/Function;
 
@@ -86,7 +86,7 @@
     return-void
 .end method
 
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/functions/Function;)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;)V
     .locals 0
 
     .line 1
@@ -95,7 +95,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -208,7 +208,7 @@
 
     .line 8
     :cond_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->a:Lmvi;
 
     .line 9
     .line 10
@@ -260,7 +260,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(LV6i;)V
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(Lmvi;)V
 
     .line 32
     .line 33
@@ -308,7 +308,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(LV6i;)V
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(Lmvi;)V
 
     .line 53
     .line 54
@@ -385,7 +385,7 @@
 
     .line 86
     .line 87
-    invoke-interface {v0, v8}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, v8}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 88
     .line 89
@@ -436,11 +436,11 @@
 
     .line 3
     .line 4
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Ltvi;
 
     .line 5
     .line 6
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 7
     .line 8
@@ -671,11 +671,11 @@
     .line 57
     .line 58
     .line 59
-    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Lc7i;
+    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Ltvi;
 
     .line 60
     .line 61
-    invoke-interface {v2}, Lc7i;->cancel()V
+    invoke-interface {v2}, Ltvi;->cancel()V
 
     .line 62
     .line 63
@@ -693,15 +693,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -713,15 +713,15 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->Y:Ltvi;
 
     .line 10
     .line 11
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;->a:Lmvi;
 
     .line 12
     .line 13
-    invoke-interface {v0, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v0, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 14
     .line 15
@@ -733,7 +733,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 22
     .line 23

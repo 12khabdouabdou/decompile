@@ -1,5 +1,5 @@
 .class public final Lcom/snap/lenses/sponsoredar/arshopping/LensInvocation$EmptyLens;
-.super LoX9;
+.super LO9a;
 .source "SourceFile"
 
 

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/customreporting/ReportEntrypoint;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'feature\':r:\'[0]\',\'subfeature\':s"
     typeReferences = {
@@ -38,4 +38,28 @@
     .line 7
     .line 8
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/snap/safety/customreporting/ReportedFeature;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/safety/customreporting/ReportEntrypoint;->_feature:Lcom/snap/safety/customreporting/ReportedFeature;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/safety/customreporting/ReportEntrypoint;->_subfeature:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

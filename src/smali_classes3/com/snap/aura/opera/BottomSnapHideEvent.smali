@@ -1,3 +1,3 @@
 .class public final Lcom/snap/aura/opera/BottomSnapHideEvent;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"

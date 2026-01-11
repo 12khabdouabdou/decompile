@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lac;
+    proxyClass = LMc;
     schema = "\'actionSheetPresenter\':r?:\'[0]\',\'presentActionSheetForGroup\':f|m|(s, r:\'[1]\')"
     typeReferences = {
         Lcom/snap/composer/foundation/IActionSheetPresenter;,

@@ -3,14 +3,53 @@
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lo09;
+# static fields
+.field public static final d:LDS9;
 
-.field public final b:LGjj;
+
+# instance fields
+.field public final a:I
+
+.field public final b:I
+
+.field public final c:Z
 
 
 # direct methods
-.method public constructor <init>(Lo09;LGjj;)V
+.method static constructor <clinit>()V
+    .locals 4
+
+    .line 1
+    new-instance v0, LDS9;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    const v2, 0x7f0e03ba
+
+    .line 5
+    .line 6
+    .line 7
+    const v3, 0x7f0b0cc3
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-direct {v0, v2, v3, v1}, LDS9;-><init>(IIZ)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, LDS9;->d:LDS9;
+
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public constructor <init>(IIZ)V
     .locals 0
 
     .line 1
@@ -19,14 +58,18 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LDS9;->a:Lo09;
+    iput p1, p0, LDS9;->a:I
 
     .line 5
     .line 6
-    iput-object p2, p0, LDS9;->b:LGjj;
+    iput p2, p0, LDS9;->b:I
 
     .line 7
     .line 8
+    iput-boolean p3, p0, LDS9;->c:Z
+
+    .line 9
+    .line 10
     return-void
 .end method
 
@@ -66,54 +109,54 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, LDS9;->a:Lo09;
+    iget v1, p1, LDS9;->a:I
 
     .line 14
     .line 15
-    iget-object v3, p0, LDS9;->a:Lo09;
+    iget v3, p0, LDS9;->a:I
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eq v3, v1, :cond_2
 
     .line 18
     .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
     return v2
 
-    .line 24
+    .line 20
     :cond_2
-    iget-object v1, p0, LDS9;->b:LGjj;
+    iget v1, p0, LDS9;->b:I
+
+    .line 21
+    .line 22
+    iget v3, p1, LDS9;->b:I
+
+    .line 23
+    .line 24
+    if-eq v1, v3, :cond_3
 
     .line 25
     .line 26
-    iget-object p1, p1, LDS9;->b:LGjj;
-
-    .line 27
-    .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
     return v2
 
-    .line 35
+    .line 27
     :cond_3
+    iget-boolean v1, p0, LDS9;->c:Z
+
+    .line 28
+    .line 29
+    iget-boolean p1, p1, LDS9;->c:Z
+
+    .line 30
+    .line 31
+    if-eq v1, p1, :cond_4
+
+    .line 32
+    .line 33
+    return v2
+
+    .line 34
+    :cond_4
     return v0
 .end method
 
@@ -121,53 +164,61 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, LDS9;->a:Lo09;
+    iget v0, p0, LDS9;->a:I
 
     .line 2
     .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    iget v1, p0, LDS9;->b:I
 
     .line 6
     .line 7
-    .line 8
-    move-result v0
+    add-int/2addr v0, v1
 
-    .line 9
+    .line 8
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 9
     .line 10
+    iget-boolean v1, p0, LDS9;->c:Z
+
     .line 11
-    iget-object v1, p0, LDS9;->b:LGjj;
-
     .line 12
-    .line 13
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    if-eqz v1, :cond_0
 
+    .line 13
     .line 14
+    const/16 v1, 0x4cf
+
     .line 15
     .line 16
-    move-result v1
+    goto :goto_0
 
     .line 17
-    add-int/2addr v1, v0
+    :cond_0
+    const/16 v1, 0x4d5
 
     .line 18
-    return v1
+    .line 19
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 20
+    return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "ContentPreview(lensId="
+    const-string v1, "LayoutConfiguration(rootLayout="
 
     .line 4
     .line 5
@@ -176,16 +227,16 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LDS9;->a:Lo09;
+    iget v1, p0, LDS9;->a:I
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", uri="
+    const-string v1, ", categoriesViewIdRes="
 
     .line 14
     .line 15
@@ -194,16 +245,16 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LDS9;->b:LGjj;
+    iget v1, p0, LDS9;->b:I
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, ")"
+    const-string v1, ", withErrorStateView="
 
     .line 24
     .line 25
@@ -212,13 +263,21 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-boolean v1, p0, LDS9;->c:Z
 
     .line 29
     .line 30
+    const-string v2, ")"
+
     .line 31
+    .line 32
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
     move-result-object v0
 
-    .line 32
+    .line 36
     return-object v0
 .end method

@@ -1,116 +1,25 @@
 .class public final LySj;
-.super LrE9;
+.super LDSj;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LzSj;
+.field public final a:LNQj;
 
 
 # direct methods
-.method public synthetic constructor <init>(LzSj;I)V
+.method public constructor <init>(LNQj;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LySj;->a:I
-
-    iput-object p1, p0, LySj;->b:LzSj;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LySj;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    iput-object p1, p0, LySj;->a:LNQj;
+
     .line 5
     .line 6
-    iget-object v0, p0, LySj;->b:LzSj;
-
-    .line 7
-    .line 8
-    iget-object v1, v0, LzSj;->q0:Ldui;
-
-    .line 9
-    .line 10
-    iget-object v0, v0, LzSj;->j0:LHq6;
-
-    .line 11
-    .line 12
-    invoke-interface {v0}, LHq6;->A2()Landroid/graphics/Bitmap;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    invoke-virtual {v1, v0}, Ldui;->a(Landroid/graphics/Bitmap;)LLti;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    return-object v0
-
-    .line 21
-    :pswitch_0
-    iget-object v0, p0, LySj;->b:LzSj;
-
-    .line 22
-    .line 23
-    iget-object v1, v0, LzSj;->q0:Ldui;
-
-    .line 24
-    .line 25
-    iget-object v0, v0, LzSj;->i0:LHq6;
-
-    .line 26
-    .line 27
-    invoke-interface {v0}, LHq6;->A2()Landroid/graphics/Bitmap;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v0
-
-    .line 31
-    invoke-virtual {v1, v0}, Ldui;->a(Landroid/graphics/Bitmap;)LLti;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v0
-
-    .line 35
-    return-object v0
-
-    .line 36
-    nop
-
-    .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

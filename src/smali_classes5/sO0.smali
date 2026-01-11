@@ -1,56 +1,60 @@
-.class public final LsO0;
-.super LrE9;
+.class public abstract synthetic LsO0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
-
-# instance fields
-.field public final synthetic a:LtO0;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(LtO0;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    iput-object p1, p0, LsO0;->a:LtO0;
+    const/4 v0, 0x2
 
     .line 2
+    invoke-static {v0}, LzHa;->M(I)[I
+
     .line 3
-    const/4 p1, 0x1
-
-    .line 4
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    check-cast p1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature$Property$Value;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, LsO0;->a:LtO0;
-
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, LtO0;->a(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Feature$Property$Value;)Ljava/lang/String;
+    move-result-object v1
 
     .line 6
+    array-length v1, v1
+
     .line 7
+    new-array v1, v1, [I
+
     .line 8
-    move-result-object p1
-
     .line 9
-    return-object p1
+    const/4 v2, 0x0
+
+    .line 10
+    const/4 v3, 0x1
+
+    .line 11
+    :try_start_0
+    aput v3, v1, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 12
+    .line 13
+    :catch_0
+    :try_start_1
+    aput v0, v1, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 14
+    .line 15
+    :catch_1
+    sput-object v1, LsO0;->a:[I
+
+    .line 16
+    .line 17
+    return-void
 .end method

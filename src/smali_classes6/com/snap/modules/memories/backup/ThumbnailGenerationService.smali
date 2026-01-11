@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lbyi;
+    proxyClass = LfXi;
     schema = "\'generateThumbnail\':f|m|(r:\'[0]\'): p<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupStepData;,
-        LXb8;
+        Lsi8;
     }
 .end annotation
 
@@ -26,7 +26,7 @@
             "Lcom/snap/modules/memories/backup/BackupStepData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "LXb8;",
+            "Lsi8;",
             ">;"
         }
     .end annotation

@@ -1,280 +1,676 @@
 .class public final LYu5;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lok0;
+.implements Lkotlin/jvm/functions/Function3;
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/core/Observable;
+.field public final synthetic a:I
 
-.field public final b:Lio/reactivex/rxjava3/core/ObservableTransformer;
+.field public final synthetic b:Lcom/snap/lenses/carousel/DefaultCarouselItemView;
 
-.field public final c:LZu5;
-
-.field public final t:Lzre;
+.field public final synthetic c:LIIj;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/ObservableTransformer;LZu5;Lzre;)V
+.method public synthetic constructor <init>(Lcom/snap/lenses/carousel/DefaultCarouselItemView;LIIj;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p3, p0, LYu5;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LYu5;->a:Lio/reactivex/rxjava3/core/Observable;
+    iput-object p1, p0, LYu5;->b:Lcom/snap/lenses/carousel/DefaultCarouselItemView;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LYu5;->b:Lio/reactivex/rxjava3/core/ObservableTransformer;
+    iput-object p2, p0, LYu5;->c:LIIj;
 
-    .line 7
-    .line 8
-    iput-object p3, p0, LYu5;->c:LZu5;
+    const/4 p1, 0x3
 
-    .line 9
-    .line 10
-    iput-object p4, p0, LYu5;->t:Lzre;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final B1()Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 6
+.method public final H(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget v0, p0, LYu5;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, LYu5;->c:LZu5;
+    check-cast p1, Lcom/snap/lenses/common/RoundedImageView;
 
     .line 7
     .line 8
-    iget-object v2, v1, LZu5;->t:Lio/reactivex/rxjava3/core/Observable;
+    check-cast p2, Ljava/lang/Number;
 
     .line 9
     .line 10
-    sget-object v3, LWK2;->q0:LWK2;
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
     .line 11
     .line 12
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 13
+    move-result p1
+
     .line 14
+    check-cast p3, Ljava/lang/Number;
+
     .line 15
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapMaybe;
-
     .line 16
-    .line 17
-    invoke-direct {v4, v2, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapMaybe;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
 
+    .line 17
     .line 18
     .line 19
+    move-result p2
+
     .line 20
-    iget-object v2, p0, LYu5;->b:Lio/reactivex/rxjava3/core/ObservableTransformer;
+    iget-object p3, p0, LYu5;->b:Lcom/snap/lenses/carousel/DefaultCarouselItemView;
 
     .line 21
     .line 22
-    invoke-virtual {v4, v2}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+    iget-object v0, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
 
     .line 23
     .line 24
-    .line 25
-    move-result-object v2
+    if-eqz v0, :cond_0
 
+    .line 25
     .line 26
-    sget-object v3, LQFa;->a:LQFa;
+    invoke-static {p3, v0, p1, p2}, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->d(Lcom/snap/lenses/carousel/DefaultCarouselItemView;Lcom/snap/lenses/common/RoundedImageView;II)V
 
     .line 27
     .line 28
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
-
     .line 29
+    :cond_0
+    sget-object p1, LyIj;->a:LyIj;
+
     .line 30
     .line 31
-    move-result-object v2
+    iget-object p2, p0, LYu5;->c:LIIj;
 
     .line 32
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
     .line 33
+    invoke-static {p2, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 34
     .line 35
-    move-result-object v2
-
     .line 36
-    const-class v3, LnW6;
+    move-result p1
 
     .line 37
+    sget-object v0, LOdh;->a:LNdh;
+
     .line 38
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->v0(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
     .line 39
-    .line 40
-    .line 41
-    move-result-object v3
+    const/4 v1, 0x0
 
+    .line 40
+    if-eqz p1, :cond_6
+
+    .line 41
     .line 42
-    iget-object v4, p0, LYu5;->a:Lio/reactivex/rxjava3/core/Observable;
+    const-string p1, "LOOK:DefaultCarouselItemView#bind:clear"
 
     .line 43
     .line 44
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0, p1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 45
     .line 46
     .line 47
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDelaySubscriptionOther;
+    move-result p1
 
     .line 48
-    .line 49
-    invoke-direct {v5, v4, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDelaySubscriptionOther;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)V
+    :try_start_0
+    iget-object p2, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
 
+    .line 49
     .line 50
+    if-eqz p2, :cond_1
+
     .line 51
     .line 52
-    sget-object v3, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
+    invoke-virtual {p2}, Lcom/snap/imageloading/view/SnapImageView;->clear()V
 
     .line 53
     .line 54
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 55
+    goto :goto_0
+
     .line 56
+    :catchall_0
+    move-exception p2
+
     .line 57
-    invoke-static {v2, v5}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
+    goto :goto_3
 
     .line 58
+    :cond_1
+    :goto_0
+    iget-object p2, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
     .line 59
     .line 60
-    move-result-object v2
+    if-eqz p2, :cond_2
 
     .line 61
-    iget-object v3, p0, LYu5;->t:Lzre;
-
     .line 62
+    const/4 v2, 0x2
+
     .line 63
-    check-cast v3, LBre;
+    invoke-static {p2, v1, v1, v2}, Lqbk;->e(Landroid/view/View;Lobk;LJ7k;I)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 64
     .line 65
-    invoke-virtual {v3}, LBre;->i()Lgn0;
-
     .line 66
+    :cond_2
+    invoke-virtual {v0, p1}, LNdh;->h(I)V
+
     .line 67
     .line 68
-    move-result-object v4
-
     .line 69
-    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    const-string p1, "LOOK:DefaultCarouselItemView#bind:setImageResource"
 
     .line 70
     .line 71
+    invoke-virtual {v0, p1}, LNdh;->e(Ljava/lang/String;)I
+
     .line 72
-    move-result-object v2
-
     .line 73
-    sget-object v4, LPt5;->Z:LPt5;
-
     .line 74
+    move-result p1
+
     .line 75
-    invoke-static {v2, v4, v0}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    :try_start_1
+    iget-object p2, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
 
     .line 76
     .line 77
-    .line 78
-    invoke-virtual {v3}, LBre;->i()Lgn0;
+    if-eqz p2, :cond_3
 
+    .line 78
     .line 79
+    const p3, 0x7f080491
+
     .line 80
     .line 81
-    move-result-object v2
-
     .line 82
-    invoke-virtual {v5, v2}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {p2, p3}, Lcom/snap/imageloading/view/SnapImageView;->setImageResource(I)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 83
     .line 84
     .line 85
-    move-result-object v2
+    goto :goto_1
 
     .line 86
-    sget-object v3, LqK2;->q0:LqK2;
+    :catchall_1
+    move-exception p2
 
     .line 87
+    goto :goto_2
+
     .line 88
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+    :cond_3
+    :goto_1
+    invoke-virtual {v0, p1}, LNdh;->h(I)V
 
     .line 89
     .line 90
     .line 91
-    move-result-object v2
+    goto :goto_7
 
     .line 92
-    sget-object v3, LTK2;->p0:LTK2;
+    :goto_2
+    sget-object p3, LOdh;->b:LtGi;
 
     .line 93
     .line 94
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz p3, :cond_4
 
     .line 95
     .line 96
-    .line 97
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-virtual {p3, p1}, LtGi;->o(I)V
 
+    .line 97
     .line 98
     .line 99
-    invoke-direct {v4, v2, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    :cond_4
+    throw p2
 
     .line 100
+    :goto_3
+    sget-object p3, LOdh;->b:LtGi;
+
     .line 101
     .line 102
-    iget-object v1, v1, LZu5;->c:LLn5;
+    if-eqz p3, :cond_5
 
     .line 103
     .line 104
-    invoke-virtual {v4, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p3, p1}, LtGi;->o(I)V
 
     .line 105
     .line 106
     .line 107
-    move-result-object v1
+    :cond_5
+    throw p2
 
     .line 108
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    :cond_6
+    instance-of p1, p2, LEIj;
 
     .line 109
     .line 110
+    if-eqz p1, :cond_a
+
     .line 111
-    return-object v0
-.end method
+    .line 112
+    iget-object p1, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
 
-.method public final observe()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
+    .line 113
+    .line 114
+    if-nez p1, :cond_7
 
-    .line 1
-    invoke-static {p0}, LXsk;->d(Lok0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+    .line 115
+    .line 116
+    goto :goto_4
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
+    .line 117
+    :cond_7
+    invoke-virtual {p1, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 5
-    return-object v0
+    .line 118
+    .line 119
+    .line 120
+    :goto_4
+    const-string p1, "LOOK:DefaultCarouselItemView#bind:setImageUri"
+
+    .line 121
+    .line 122
+    invoke-virtual {v0, p1}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 123
+    .line 124
+    .line 125
+    move-result p1
+
+    .line 126
+    :try_start_2
+    iget-object v1, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 127
+    .line 128
+    if-eqz v1, :cond_8
+
+    .line 129
+    .line 130
+    check-cast p2, LEIj;
+
+    .line 131
+    .line 132
+    invoke-virtual {p2}, LEIj;->a()Ljava/lang/String;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object p2
+
+    .line 136
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 137
+    .line 138
+    .line 139
+    move-result-object p2
+
+    .line 140
+    iget-object p3, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->h0:Lrp0;
+
+    .line 141
+    .line 142
+    const-string v2, "lensIcon"
+
+    .line 143
+    .line 144
+    invoke-virtual {p3, v2}, Lrp0;->b(Ljava/lang/String;)Lcrj;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object p3
+
+    .line 148
+    invoke-virtual {v1, p2, p3}, Lcom/snap/imageloading/view/SnapImageView;->g(Landroid/net/Uri;Lcrj;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    .line 149
+    .line 150
+    .line 151
+    goto :goto_5
+
+    .line 152
+    :catchall_2
+    move-exception p2
+
+    .line 153
+    goto :goto_6
+
+    .line 154
+    :cond_8
+    :goto_5
+    invoke-virtual {v0, p1}, LNdh;->h(I)V
+
+    .line 155
+    .line 156
+    .line 157
+    goto :goto_7
+
+    .line 158
+    :goto_6
+    sget-object p3, LOdh;->b:LtGi;
+
+    .line 159
+    .line 160
+    if-eqz p3, :cond_9
+
+    .line 161
+    .line 162
+    invoke-virtual {p3, p1}, LtGi;->o(I)V
+
+    .line 163
+    .line 164
+    .line 165
+    :cond_9
+    throw p2
+
+    .line 166
+    :cond_a
+    :goto_7
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 167
+    .line 168
+    return-object p1
+
+    .line 169
+    :pswitch_0
+    check-cast p1, Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 170
+    .line 171
+    check-cast p2, Ljava/lang/Number;
+
+    .line 172
+    .line 173
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    .line 174
+    .line 175
+    .line 176
+    move-result p1
+
+    .line 177
+    check-cast p3, Ljava/lang/Number;
+
+    .line 178
+    .line 179
+    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
+
+    .line 180
+    .line 181
+    .line 182
+    move-result p2
+
+    .line 183
+    iget-object p3, p0, LYu5;->b:Lcom/snap/lenses/carousel/DefaultCarouselItemView;
+
+    .line 184
+    .line 185
+    iget-object v0, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 186
+    .line 187
+    if-eqz v0, :cond_b
+
+    .line 188
+    .line 189
+    invoke-static {p3, v0, p1, p2}, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->d(Lcom/snap/lenses/carousel/DefaultCarouselItemView;Lcom/snap/lenses/common/RoundedImageView;II)V
+
+    .line 190
+    .line 191
+    .line 192
+    :cond_b
+    iget-object p1, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 193
+    .line 194
+    const/4 p2, 0x0
+
+    .line 195
+    if-nez p1, :cond_c
+
+    .line 196
+    .line 197
+    goto :goto_8
+
+    .line 198
+    :cond_c
+    invoke-virtual {p1, p2}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+
+    .line 199
+    .line 200
+    .line 201
+    :goto_8
+    iget-object p1, p0, LYu5;->c:LIIj;
+
+    .line 202
+    .line 203
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 204
+    .line 205
+    const-string v1, "LOOK:DefaultCarouselItemView#bindActionButton:setImageUri"
+
+    .line 206
+    .line 207
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 208
+    .line 209
+    .line 210
+    move-result v1
+
+    .line 211
+    :try_start_3
+    sget-object v2, LyIj;->a:LyIj;
+
+    .line 212
+    .line 213
+    invoke-static {p1, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 214
+    .line 215
+    .line 216
+    move-result v2
+
+    .line 217
+    if-eqz v2, :cond_f
+
+    .line 218
+    .line 219
+    iget-object p1, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 220
+    .line 221
+    if-eqz p1, :cond_d
+
+    .line 222
+    .line 223
+    invoke-virtual {p1}, Lcom/snap/imageloading/view/SnapImageView;->clear()V
+
+    .line 224
+    .line 225
+    .line 226
+    goto :goto_9
+
+    .line 227
+    :catchall_3
+    move-exception p1
+
+    .line 228
+    goto :goto_b
+
+    .line 229
+    :cond_d
+    :goto_9
+    iget-object p1, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 230
+    .line 231
+    if-eqz p1, :cond_e
+
+    .line 232
+    .line 233
+    const/4 v2, 0x2
+
+    .line 234
+    invoke-static {p1, p2, p2, v2}, Lqbk;->e(Landroid/view/View;Lobk;LJ7k;I)Z
+
+    .line 235
+    .line 236
+    .line 237
+    :cond_e
+    iget-object p1, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 238
+    .line 239
+    if-eqz p1, :cond_10
+
+    .line 240
+    .line 241
+    const p2, 0x7f080491
+
+    .line 242
+    .line 243
+    .line 244
+    invoke-virtual {p1, p2}, Lcom/snap/imageloading/view/SnapImageView;->setImageResource(I)V
+
+    .line 245
+    .line 246
+    .line 247
+    goto :goto_a
+
+    .line 248
+    :cond_f
+    instance-of p2, p1, LEIj;
+
+    .line 249
+    .line 250
+    if-eqz p2, :cond_10
+
+    .line 251
+    .line 252
+    iget-object p2, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->c:Lcom/snap/lenses/common/RoundedImageView;
+
+    .line 253
+    .line 254
+    if-eqz p2, :cond_10
+
+    .line 255
+    .line 256
+    check-cast p1, LEIj;
+
+    .line 257
+    .line 258
+    invoke-virtual {p1}, LEIj;->a()Ljava/lang/String;
+
+    .line 259
+    .line 260
+    .line 261
+    move-result-object p1
+
+    .line 262
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 263
+    .line 264
+    .line 265
+    move-result-object p1
+
+    .line 266
+    iget-object p3, p3, Lcom/snap/lenses/carousel/DefaultCarouselItemView;->h0:Lrp0;
+
+    .line 267
+    .line 268
+    const-string v2, "actionButtonIcon"
+
+    .line 269
+    .line 270
+    invoke-virtual {p3, v2}, Lrp0;->b(Ljava/lang/String;)Lcrj;
+
+    .line 271
+    .line 272
+    .line 273
+    move-result-object p3
+
+    .line 274
+    invoke-virtual {p2, p1, p3}, Lcom/snap/imageloading/view/SnapImageView;->g(Landroid/net/Uri;Lcrj;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_3
+
+    .line 275
+    .line 276
+    .line 277
+    :cond_10
+    :goto_a
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
+
+    .line 278
+    .line 279
+    .line 280
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 281
+    .line 282
+    return-object p1
+
+    .line 283
+    :goto_b
+    sget-object p2, LOdh;->b:LtGi;
+
+    .line 284
+    .line 285
+    if-eqz p2, :cond_11
+
+    .line 286
+    .line 287
+    invoke-virtual {p2, v1}, LtGi;->o(I)V
+
+    .line 288
+    .line 289
+    .line 290
+    :cond_11
+    throw p1
+
+    .line 291
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

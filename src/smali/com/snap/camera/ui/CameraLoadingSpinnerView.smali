@@ -38,7 +38,7 @@
     .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    const p2, 0x7f0e00a8
+    const p2, 0x7f0e00a9
 
     .line 4
     invoke-static {p1, p2, p0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
@@ -47,7 +47,7 @@
 
     check-cast p1, Landroid/view/ViewGroup;
 
-    const p2, 0x7f0b03d9
+    const p2, 0x7f0b0465
 
     .line 5
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -58,7 +58,7 @@
 
     iput-object p2, p0, Lcom/snap/camera/ui/CameraLoadingSpinnerView;->a:Lcom/snap/ui/view/SnapFontTextView;
 
-    const p2, 0x7f0b03d8
+    const p2, 0x7f0b0464
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;

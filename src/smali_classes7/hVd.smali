@@ -2,22 +2,193 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+
+# static fields
+.field public static final p:LL4b;
+
+.field public static final q:LxFc;
 
 
 # instance fields
-.field public final synthetic a:LsVd;
+.field public final a:LJE4;
 
-.field public final synthetic b:Ljava/lang/String;
+.field public final b:LJE4;
 
-.field public final synthetic c:Ljava/util/Map;
+.field public final c:LJE4;
 
-.field public final synthetic t:LnVd;
+.field public final d:LmGc;
+
+.field public final e:LFVd;
+
+.field public final f:LOF3;
+
+.field public final g:LJE4;
+
+.field public final h:LJE4;
+
+.field public final i:LQS9;
+
+.field public final j:LJE4;
+
+.field public final k:LJE4;
+
+.field public final l:Lnp0;
+
+.field public final m:LJp0;
+
+.field public final n:LnJe;
+
+.field public final o:LREi;
 
 
 # direct methods
-.method public constructor <init>(LsVd;Ljava/lang/String;Ljava/util/Map;LnVd;)V
+.method static constructor <clinit>()V
+    .locals 13
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    new-instance v1, LL4b;
+
+    .line 3
+    .line 4
+    sget-object v2, LJ04;->Z:LJ04;
+
+    .line 5
+    .line 6
+    const/4 v10, 0x0
+
+    .line 7
+    const/4 v11, 0x0
+
+    .line 8
+    const-string v3, "PollLauncherImpl"
+
+    .line 9
+    .line 10
+    const/4 v4, 0x0
+
+    .line 11
+    const/4 v5, 0x1
+
+    .line 12
+    const/4 v6, 0x0
+
+    .line 13
+    const/4 v7, 0x0
+
+    .line 14
+    const/4 v8, 0x0
+
+    .line 15
+    const/4 v9, 0x0
+
+    .line 16
+    const/16 v12, 0x7ff4
+
+    .line 17
+    .line 18
+    invoke-direct/range {v1 .. v12}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 19
+    .line 20
+    .line 21
+    sput-object v1, LhVd;->p:LL4b;
+
+    .line 22
+    .line 23
+    sget-object v2, Lvu9;->t:Lvu9;
+
+    .line 24
+    .line 25
+    new-instance v3, LZH0;
+
+    .line 26
+    .line 27
+    const/high16 v4, -0x34000000    # -3.3554432E7f
+
+    .line 28
+    .line 29
+    invoke-direct {v3, v4, v0}, LZH0;-><init>(IZ)V
+
+    .line 30
+    .line 31
+    .line 32
+    const/4 v4, 0x2
+
+    .line 33
+    new-array v4, v4, [Luld;
+
+    .line 34
+    .line 35
+    sget-object v5, Luld;->Q:LtOc;
+
+    .line 36
+    .line 37
+    const/4 v6, 0x0
+
+    .line 38
+    aput-object v5, v4, v6
+
+    .line 39
+    .line 40
+    aput-object v3, v4, v0
+
+    .line 41
+    .line 42
+    new-instance v3, LKV1;
+
+    .line 43
+    .line 44
+    const/16 v0, 0x15
+
+    .line 45
+    .line 46
+    invoke-direct {v3, v0, v4}, LKV1;-><init>(ILjava/lang/Object;)V
+
+    .line 47
+    .line 48
+    .line 49
+    move-object v5, v1
+
+    .line 50
+    new-instance v1, LxFc;
+
+    .line 51
+    .line 52
+    const/4 v7, 0x0
+
+    .line 53
+    const/16 v10, 0xc0
+
+    .line 54
+    .line 55
+    const/4 v4, 0x0
+
+    .line 56
+    const/4 v6, 0x1
+
+    .line 57
+    const/4 v8, 0x0
+
+    .line 58
+    const/4 v9, 0x0
+
+    .line 59
+    invoke-direct/range {v1 .. v10}, LxFc;-><init>(Lvu9;Luld;LL4b;LL4b;ZZZLnp0;I)V
+
+    .line 60
+    .line 61
+    .line 62
+    sput-object v1, LhVd;->q:LxFc;
+
+    .line 63
+    .line 64
+    return-void
+.end method
+
+.method public constructor <init>(LJE4;LJE4;LJE4;LmGc;LFVd;LOF3;LJE4;LJE4;LQS9;LJE4;LJE4;)V
     .locals 0
 
     .line 1
@@ -26,202 +197,136 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LhVd;->a:LsVd;
+    iput-object p1, p0, LhVd;->a:LJE4;
 
     .line 5
     .line 6
-    iput-object p2, p0, LhVd;->b:Ljava/lang/String;
+    iput-object p2, p0, LhVd;->b:LJE4;
 
     .line 7
     .line 8
-    iput-object p3, p0, LhVd;->c:Ljava/util/Map;
+    iput-object p3, p0, LhVd;->c:LJE4;
 
     .line 9
     .line 10
-    iput-object p4, p0, LhVd;->t:LnVd;
+    iput-object p4, p0, LhVd;->d:LmGc;
 
     .line 11
     .line 12
-    return-void
-.end method
+    iput-object p5, p0, LhVd;->e:LFVd;
 
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
-
-    .line 1
-    check-cast p1, LCDh;
-
-    .line 2
-    .line 3
-    invoke-interface {p1}, LCDh;->i()Luyh;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, LFKb;
-
-    .line 8
-    .line 9
-    iget-object v0, v0, LFKb;->z:LDKb;
-
-    .line 10
-    .line 11
-    invoke-virtual {v0}, LDKb;->g()LQKb;
-
-    .line 12
     .line 13
     .line 14
-    move-result-object v1
+    iput-object p6, p0, LhVd;->f:LOF3;
 
     .line 15
-    iget-object v2, p0, LhVd;->b:Ljava/lang/String;
-
     .line 16
+    iput-object p7, p0, LhVd;->g:LJE4;
+
     .line 17
-    iput-object v2, v1, LQKb;->b:Ljava/lang/String;
-
     .line 18
-    .line 19
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+    iput-object p8, p0, LhVd;->h:LJE4;
 
+    .line 19
     .line 20
+    iput-object p9, p0, LhVd;->i:LQS9;
+
     .line 21
     .line 22
-    move-result-object v3
+    iput-object p10, p0, LhVd;->j:LJE4;
 
     .line 23
-    invoke-virtual {v2, v3}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
     .line 24
+    iput-object p11, p0, LhVd;->k:LJE4;
+
     .line 25
     .line 26
-    move-result-object v3
+    sget-object p1, LJ04;->Z:LJ04;
 
     .line 27
-    iget-object v4, p0, LhVd;->c:Ljava/util/Map;
-
     .line 28
-    .line 29
-    invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const-string p2, "PollLauncherImpl"
 
+    .line 29
     .line 30
+    invoke-static {p1, p1, p2}, LbOi;->d(LJ04;LJ04;Ljava/lang/String;)Lnp0;
+
     .line 31
     .line 32
-    move-result-object v3
-
     .line 33
-    check-cast v3, Ljava/lang/String;
+    move-result-object p1
 
     .line 34
+    iput-object p1, p0, LhVd;->l:Lnp0;
+
     .line 35
-    if-eqz v3, :cond_0
-
     .line 36
+    sget-object p2, LJp0;->a:LJp0;
+
     .line 37
-    iget-object v4, p0, LhVd;->t:LnVd;
-
     .line 38
+    iput-object p2, p0, LhVd;->m:LJp0;
+
     .line 39
-    iget-object v4, v4, LnVd;->N:Lrn0;
-
     .line 40
+    new-instance p2, LnJe;
+
     .line 41
-    iput-object v3, v1, LQKb;->a:Ljava/lang/String;
-
     .line 42
-    .line 43
-    :cond_0
-    sget-object v3, LQKb$a;->c:LQKb$a;
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
 
+    .line 43
     .line 44
     .line 45
-    iget-object v3, v3, LQKb$a;->a:Ljava/lang/String;
+    iput-object p2, p0, LhVd;->n:LnJe;
 
     .line 46
     .line 47
-    iput-object v3, v1, LQKb;->c:Ljava/lang/String;
+    new-instance p1, LgVd;
 
     .line 48
     .line 49
-    iget-object v1, p0, LhVd;->a:LsVd;
+    const/4 p2, 0x1
 
     .line 50
-    .line 51
-    check-cast v1, LgBh;
+    invoke-direct {p1, p0, p2}, LgVd;-><init>(LhVd;I)V
 
+    .line 51
     .line 52
     .line 53
-    iget-object v1, v1, LgBh;->a:LsHg;
+    new-instance p2, LREi;
 
     .line 54
     .line 55
-    new-instance v3, LTj9;
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 56
     .line 57
-    invoke-direct {v3}, LTj9;-><init>()V
-
     .line 58
+    new-instance p1, LgVd;
+
     .line 59
     .line 60
-    new-instance v4, LQKb;
+    const/4 p2, 0x0
 
     .line 61
-    .line 62
-    invoke-direct {v4}, LQKb;-><init>()V
+    invoke-direct {p1, p0, p2}, LgVd;-><init>(LhVd;I)V
 
+    .line 62
     .line 63
     .line 64
+    new-instance p2, LREi;
+
     .line 65
-    iput-object v2, v4, LQKb;->b:Ljava/lang/String;
-
     .line 66
-    .line 67
-    invoke-virtual {v0}, LDKb;->g()LQKb;
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 67
     .line 68
     .line 69
+    iput-object p2, p0, LhVd;->o:LREi;
+
     .line 70
-    move-result-object v2
-
     .line 71
-    iget-object v2, v2, LQKb;->a:Ljava/lang/String;
-
-    .line 72
-    .line 73
-    iput-object v2, v4, LQKb;->a:Ljava/lang/String;
-
-    .line 74
-    .line 75
-    invoke-virtual {v0}, LDKb;->g()LQKb;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v0
-
-    .line 79
-    iget-object v0, v0, LQKb;->c:Ljava/lang/String;
-
-    .line 80
-    .line 81
-    iput-object v0, v4, LQKb;->c:Ljava/lang/String;
-
-    .line 82
-    .line 83
-    iput-object v4, v3, LTj9;->g:LQKb;
-
-    .line 84
-    .line 85
-    invoke-virtual {v1, v3}, LsHg;->k(LTj9;)V
-
-    .line 86
-    .line 87
-    .line 88
-    return-object p1
+    return-void
 .end method

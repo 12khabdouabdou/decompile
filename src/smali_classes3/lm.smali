@@ -1,644 +1,176 @@
 .class public final Llm;
-.super Lmm;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final c:LSn;
+.field public final synthetic a:I
 
-.field public final d:J
-
-.field public final e:LdXc;
-
-.field public final f:LdXc;
-
-.field public final g:I
-
-.field public final h:J
-
-.field public final i:Ljava/lang/Integer;
-
-.field public final j:Ljava/lang/String;
+.field public final synthetic b:LwA3;
 
 
 # direct methods
-.method public constructor <init>(LSn;JLdXc;LdXc;IJLjava/lang/Integer;Ljava/lang/String;)V
-    .locals 2
+.method public synthetic constructor <init>(LwA3;I)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0xe
+    iput p2, p0, Llm;->a:I
 
-    .line 2
-    .line 3
-    const-string v1, ""
+    iput-object p1, p0, Llm;->b:LwA3;
 
-    .line 4
-    .line 5
-    invoke-direct {p0, v0, v1}, Lmm;-><init>(ILjava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    .line 7
-    .line 8
-    iput-object p1, p0, Llm;->c:LSn;
-
-    .line 9
-    .line 10
-    iput-wide p2, p0, Llm;->d:J
-
-    .line 11
-    .line 12
-    iput-object p4, p0, Llm;->e:LdXc;
-
-    .line 13
-    .line 14
-    iput-object p5, p0, Llm;->f:LdXc;
-
-    .line 15
-    .line 16
-    iput p6, p0, Llm;->g:I
-
-    .line 17
-    .line 18
-    iput-wide p7, p0, Llm;->h:J
-
-    .line 19
-    .line 20
-    iput-object p9, p0, Llm;->i:Ljava/lang/Integer;
-
-    .line 21
-    .line 22
-    iput-object p10, p0, Llm;->j:Ljava/lang/String;
-
-    .line 23
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()LSn;
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Llm;->c:LSn;
+    iget v0, p0, Llm;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, LSTb;
+
+    .line 7
+    .line 8
+    new-instance v0, LDpd;
+
+    .line 9
+    .line 10
+    iget-object v1, p0, Llm;->b:LwA3;
+
+    .line 11
+    .line 12
+    invoke-direct {v0, p1, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
     return-object v0
-.end method
-
-.method public final c()J
-    .locals 2
-
-    .line 1
-    iget-wide v0, p0, Llm;->d:J
-
-    .line 2
-    .line 3
-    return-wide v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Llm;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Llm;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, Llm;->c:LSn;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, Llm;->c:LSn;
 
     .line 16
-    .line 17
-    if-eq v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    iget-wide v3, p0, Llm;->d:J
-
-    .line 21
-    .line 22
-    iget-wide v5, p1, Llm;->d:J
-
-    .line 23
-    .line 24
-    cmp-long v1, v3, v5
-
-    .line 25
-    .line 26
-    if-eqz v1, :cond_3
-
-    .line 27
-    .line 28
-    return v2
-
-    .line 29
-    :cond_3
-    iget-object v1, p0, Llm;->e:LdXc;
-
-    .line 30
-    .line 31
-    iget-object v3, p1, Llm;->e:LdXc;
-
-    .line 32
-    .line 33
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v1
-
-    .line 37
-    if-nez v1, :cond_4
-
-    .line 38
-    .line 39
-    return v2
-
-    .line 40
-    :cond_4
-    iget-object v1, p0, Llm;->f:LdXc;
-
-    .line 41
-    .line 42
-    iget-object v3, p1, Llm;->f:LdXc;
-
-    .line 43
-    .line 44
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 45
-    .line 46
-    .line 47
-    move-result v1
-
-    .line 48
-    if-nez v1, :cond_5
-
-    .line 49
-    .line 50
-    return v2
-
-    .line 51
-    :cond_5
-    iget v1, p0, Llm;->g:I
-
-    .line 52
-    .line 53
-    iget v3, p1, Llm;->g:I
-
-    .line 54
-    .line 55
-    if-eq v1, v3, :cond_6
-
-    .line 56
-    .line 57
-    return v2
-
-    .line 58
-    :cond_6
-    iget-wide v3, p0, Llm;->h:J
-
-    .line 59
-    .line 60
-    iget-wide v5, p1, Llm;->h:J
-
-    .line 61
-    .line 62
-    cmp-long v1, v3, v5
-
-    .line 63
-    .line 64
-    if-eqz v1, :cond_7
-
-    .line 65
-    .line 66
-    return v2
-
-    .line 67
-    :cond_7
-    iget-object v1, p0, Llm;->i:Ljava/lang/Integer;
-
-    .line 68
-    .line 69
-    iget-object v3, p1, Llm;->i:Ljava/lang/Integer;
-
-    .line 70
-    .line 71
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 72
-    .line 73
-    .line 74
-    move-result v1
-
-    .line 75
-    if-nez v1, :cond_8
-
-    .line 76
-    .line 77
-    return v2
-
-    .line 78
-    :cond_8
-    iget-object v1, p0, Llm;->j:Ljava/lang/String;
-
-    .line 79
-    .line 80
-    iget-object p1, p1, Llm;->j:Ljava/lang/String;
-
-    .line 81
-    .line 82
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 83
-    .line 84
-    .line 85
-    move-result p1
-
-    .line 86
-    if-nez p1, :cond_9
-
-    .line 87
-    .line 88
-    return v2
-
-    .line 89
-    :cond_9
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 8
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    iget-object v1, p0, Llm;->c:LSn;
-
-    .line 3
-    .line 4
-    if-nez v1, :cond_0
-
-    .line 5
-    .line 6
-    const/4 v1, 0x0
-
-    .line 7
-    goto :goto_0
-
-    .line 8
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v1
-
-    .line 12
-    :goto_0
-    const/16 v2, 0x1f
-
-    .line 13
-    .line 14
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 15
-    .line 16
-    iget-wide v3, p0, Llm;->d:J
+    :pswitch_0
+    check-cast p1, Lewj;
 
     .line 17
     .line 18
-    const/16 v5, 0x20
+    sget-object p1, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
     .line 19
     .line 20
-    ushr-long v6, v3, v5
-
-    .line 21
-    .line 22
-    xor-long/2addr v3, v6
-
-    .line 23
-    long-to-int v4, v3
-
-    .line 24
-    add-int/2addr v1, v4
-
-    .line 25
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 26
-    .line 27
-    iget-object v3, p0, Llm;->e:LdXc;
-
-    .line 28
-    .line 29
-    invoke-static {v3, v1, v2}, LG0;->c(LdXc;II)I
-
-    .line 30
-    .line 31
-    .line 32
-    move-result v1
-
-    .line 33
-    iget-object v3, p0, Llm;->f:LdXc;
-
-    .line 34
-    .line 35
-    invoke-static {v3, v1, v2}, LG0;->c(LdXc;II)I
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v1
-
-    .line 39
-    iget v3, p0, Llm;->g:I
-
-    .line 40
-    .line 41
-    add-int/2addr v1, v3
-
-    .line 42
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 43
-    .line 44
-    iget-wide v3, p0, Llm;->h:J
-
-    .line 45
-    .line 46
-    ushr-long v5, v3, v5
-
-    .line 47
-    .line 48
-    xor-long/2addr v3, v5
-
-    .line 49
-    long-to-int v4, v3
-
-    .line 50
-    add-int/2addr v1, v4
-
-    .line 51
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 52
-    .line 53
-    iget-object v3, p0, Llm;->i:Ljava/lang/Integer;
-
-    .line 54
-    .line 55
-    if-nez v3, :cond_1
-
-    .line 56
-    .line 57
-    const/4 v3, 0x0
-
-    .line 58
-    goto :goto_1
-
-    .line 59
-    :cond_1
-    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v3
-
-    .line 63
-    :goto_1
-    add-int/2addr v1, v3
-
-    .line 64
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 65
-    .line 66
-    iget-object v2, p0, Llm;->j:Ljava/lang/String;
-
-    .line 67
-    .line 68
-    if-nez v2, :cond_2
-
-    .line 69
-    .line 70
-    goto :goto_2
-
-    .line 71
-    :cond_2
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
-
-    .line 72
-    .line 73
-    .line 74
-    move-result v0
-
-    .line 75
-    :goto_2
-    add-int/2addr v1, v0
-
-    .line 76
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "SlotEnter(adProduct="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Llm;->c:LSn;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", timestamp="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-wide v1, p0, Llm;->d:J
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->create()Lcom/snap/composer/utils/ComposerMarshaller;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, ", fromModel="
+    move-result-object p1
 
     .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v0, LcF3;->m:LbF3;
 
+    .line 25
     .line 26
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 27
     .line 28
-    iget-object v1, p0, Llm;->e:LdXc;
-
     .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    sget-object v0, LbF3;->b:LcF3;
 
+    .line 30
     .line 31
+    const-class v1, LX4b;
+
     .line 32
     .line 33
-    const-string v1, ", toModel="
+    invoke-interface {v0, v1, p1}, LcF3;->setActiveSchemaOfClassToMarshaller(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;)V
 
     .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 36
+    const-string v2, "ad_format/src/cta/end_card/MultiSegmentSessionManagerNativeWrapper"
+
     .line 37
     .line 38
-    iget-object v1, p0, Llm;->f:LdXc;
+    iget-object v3, p0, Llm;->b:LwA3;
 
     .line 39
     .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2, p1}, LwA3;->c(Ljava/lang/String;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
     .line 41
     .line 42
     .line 43
-    const-string v1, ", snapViewCountSinceLastAd="
+    move-result v2
 
     .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Lcom/snap/composer/utils/ComposerMarshaller;->checkError()V
 
+    .line 45
     .line 46
     .line 47
-    .line 48
-    iget v1, p0, Llm;->g:I
+    invoke-interface {v0, v1, p1, v2}, LcF3;->unmarshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;I)Ljava/lang/Object;
 
+    .line 48
     .line 49
     .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ", timeViewedMillisSinceLastAd="
-
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    iget-wide v1, p0, Llm;->h:J
-
-    .line 59
-    .line 60
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 61
-    .line 62
-    .line 63
-    const-string v1, ", storyViewCountSinceLastAd="
-
-    .line 64
-    .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 66
-    .line 67
-    .line 68
-    iget-object v1, p0, Llm;->i:Ljava/lang/Integer;
-
-    .line 69
-    .line 70
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 71
-    .line 72
-    .line 73
-    const-string v1, ", noFillAdClientId="
-
-    .line 74
-    .line 75
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 76
-    .line 77
-    .line 78
-    iget-object v1, p0, Llm;->j:Ljava/lang/String;
-
-    .line 79
-    .line 80
-    const-string v2, ")"
-
-    .line 81
-    .line 82
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 83
-    .line 84
-    .line 85
     move-result-object v0
 
-    .line 86
-    return-object v0
+    .line 51
+    check-cast v0, Lhx3;
+
+    .line 52
+    .line 53
+    invoke-virtual {p1}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->destroy()V
+
+    .line 54
+    .line 55
+    .line 56
+    check-cast v0, LX4b;
+
+    .line 57
+    .line 58
+    invoke-virtual {v0}, LX4b;->a()LDjc;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p1
+
+    .line 62
+    invoke-interface {p1}, LDjc;->onSessionResumed()Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object p1
+
+    .line 66
+    invoke-static {p1}, LCC2;->p(Lcom/snap/composer/bridge_observables/BridgeObservable;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p1
+
+    .line 70
+    return-object p1
+
+    .line 71
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

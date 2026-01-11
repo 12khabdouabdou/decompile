@@ -1,64 +1,81 @@
 .class public final LBfg;
-.super Ljava/lang/Object;
+.super Lsw;
 .source "SourceFile"
 
 # interfaces
-.implements LEX0;
+.implements Licg;
 
 
 # instance fields
-.field public final X:LB73;
+.field public final X:LuKh;
 
-.field public final Y:LaA8;
+.field public final Y:LOl8;
 
-.field public final Z:Lid1;
+.field public final Z:Ljava/lang/String;
 
-.field public final a:LqZ8;
-
-.field public final b:LrH9;
-
-.field public final c:LrH9;
-
-.field public final t:LrH9;
+.field public final e0:Ljava/lang/Long;
 
 
 # direct methods
-.method public constructor <init>(LqZ8;LrH9;LrH9;LrH9;LB73;LaA8;Lid1;)V
+.method public constructor <init>(LuKh;LOl8;Ljava/lang/String;Ljava/lang/Long;)V
+    .locals 3
+
+    .line 1
+    sget-object v0, Lmhg;->u0:Lmhg;
+
+    .line 2
+    .line 3
+    const-wide/16 v1, 0x0
+
+    .line 4
+    .line 5
+    invoke-direct {p0, v0, v1, v2}, Lsw;-><init>(Ltw;J)V
+
+    .line 6
+    .line 7
+    .line 8
+    iput-object p1, p0, LBfg;->X:LuKh;
+
+    .line 9
+    .line 10
+    iput-object p2, p0, LBfg;->Y:LOl8;
+
+    .line 11
+    .line 12
+    iput-object p3, p0, LBfg;->Z:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    iput-object p4, p0, LBfg;->e0:Ljava/lang/Long;
+
+    .line 15
+    .line 16
+    return-void
+.end method
+
+
+# virtual methods
+.method public final k()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    return v0
+.end method
+
+.method public final u(Lsw;)Z
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LBfg;->a:LqZ8;
+    move-result p1
 
     .line 5
-    .line 6
-    iput-object p2, p0, LBfg;->b:LrH9;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LBfg;->c:LrH9;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LBfg;->t:LrH9;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, LBfg;->X:LB73;
-
-    .line 13
-    .line 14
-    iput-object p6, p0, LBfg;->Y:LaA8;
-
-    .line 15
-    .line 16
-    iput-object p7, p0, LBfg;->Z:Lid1;
-
-    .line 17
-    .line 18
-    return-void
+    return p1
 .end method

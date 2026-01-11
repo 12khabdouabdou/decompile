@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LfDe;
+    proxyClass = LGUe;
     schema = "\'updateObservable\':g<c>:\'[0]\'<d@>,\'getRecents\':f|m|(f(a<r:\'[1]\'>, r?:\'[2]\')),\'setRecentlyUsed\':f|m|(r:\'[3]\')"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LfCe;,
+        LPTe;,
         Lcom/snap/composer/foundation/Error;,
         Lcom/snap/composer/foundation/Long;
     }

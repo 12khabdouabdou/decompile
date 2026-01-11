@@ -4,11 +4,13 @@
 
 
 # instance fields
-.field public final a:LlN9;
+.field public final a:LnJ1;
+
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>(LlN9;)V
+.method public constructor <init>(LnJ1;I)V
     .locals 0
 
     .line 1
@@ -17,17 +19,21 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LuN9;->a:LlN9;
+    iput-object p1, p0, LuN9;->a:LnJ1;
 
     .line 5
     .line 6
+    iput p2, p0, LuN9;->b:I
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 4
 
     .line 1
     const/4 v0, 0x1
@@ -60,23 +66,23 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, LuN9;->a:LlN9;
+    iget-object v1, p1, LuN9;->a:LnJ1;
 
     .line 14
     .line 15
-    iget-object p1, p1, LuN9;->a:LlN9;
+    iget-object v3, p0, LuN9;->a:LnJ1;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result v1
 
     .line 21
-    if-nez p1, :cond_2
+    if-nez v1, :cond_2
 
     .line 22
     .line 23
@@ -84,18 +90,34 @@
 
     .line 24
     :cond_2
+    iget v1, p0, LuN9;->b:I
+
+    .line 25
+    .line 26
+    iget p1, p1, LuN9;->b:I
+
+    .line 27
+    .line 28
+    if-eq v1, p1, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LuN9;->a:LlN9;
+    iget-object v0, p0, LuN9;->a:LnJ1;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LlN9;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
@@ -103,6 +125,17 @@
     move-result v0
 
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget v1, p0, LuN9;->b:I
+
+    .line 10
+    .line 11
+    add-int/2addr v0, v1
+
+    .line 12
     return v0
 .end method
 
@@ -114,7 +147,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Openable(ctaText="
+    const-string v1, "StickerSent(ctItem="
 
     .line 4
     .line 5
@@ -123,7 +156,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LuN9;->a:LlN9;
+    iget-object v1, p0, LuN9;->a:LnJ1;
 
     .line 9
     .line 10
@@ -132,7 +165,7 @@
     .line 11
     .line 12
     .line 13
-    const-string v1, ")"
+    const-string v1, ", index="
 
     .line 14
     .line 15
@@ -141,13 +174,31 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget v1, p0, LuN9;->b:I
 
     .line 19
     .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 22
+    .line 32
     return-object v0
 .end method

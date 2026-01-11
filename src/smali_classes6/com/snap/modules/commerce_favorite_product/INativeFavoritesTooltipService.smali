@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LNW8;
+    proxyClass = Lo49;
     schema = "\'shouldShowFavoriteTooltip\':f|m|(): g<c>:\'[0]\'<b@>,\'shouldShowAlert\':f?|m|(): g<c>:\'[0]\'<b@>,\'markSeenFavoriteTooltip\':f|m|(): g<c>:\'[0]\'<b@>,\'markSeenFavoriteAlert\':f?|m|(): g<c>:\'[0]\'<b@>,\'markTappedFavoriteButtonForContextCard\':f|m|(s, b): g<c>:\'[0]\'<b@>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
@@ -19,9 +19,6 @@
 
 # virtual methods
 .method public abstract markSeenFavoriteAlert()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -29,6 +26,9 @@
             "Ljava/lang/Boolean;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -60,9 +60,6 @@
 .end method
 
 .method public abstract shouldShowAlert()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -70,6 +67,9 @@
             "Ljava/lang/Boolean;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/plus/BuddyPassData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'id\':s,\'senderUserId\':s,\'receiverUserId\':s,\'createdTimeMs\':d,\'expiresTimeMs\':d"
     typeReferences = {}

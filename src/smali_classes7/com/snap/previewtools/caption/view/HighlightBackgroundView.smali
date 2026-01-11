@@ -6,7 +6,7 @@
 # instance fields
 .field public a:Landroid/graphics/RectF;
 
-.field public final b:LXfi;
+.field public final b:LREi;
 
 
 # direct methods
@@ -17,20 +17,20 @@
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    sget-object p1, LYC8;->n0:LYC8;
+    sget-object p1, LDL8;->l0:LDL8;
 
     .line 4
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 5
-    iput-object p2, p0, Lcom/snap/previewtools/caption/view/HighlightBackgroundView;->b:LXfi;
+    iput-object p2, p0, Lcom/snap/previewtools/caption/view/HighlightBackgroundView;->b:LREi;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -166,11 +166,11 @@
     div-float/2addr v1, v3
 
     .line 57
-    iget-object v3, p0, Lcom/snap/previewtools/caption/view/HighlightBackgroundView;->b:LXfi;
+    iget-object v3, p0, Lcom/snap/previewtools/caption/view/HighlightBackgroundView;->b:LREi;
 
     .line 58
     .line 59
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 60
     .line 61

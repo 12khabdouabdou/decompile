@@ -1,270 +1,460 @@
-.class public final enum LDyh;
-.super Ljava/lang/Enum;
+.class public final LDyh;
+.super LQrg;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LDyh;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
 
 
 # static fields
-.field public static final enum X:LDyh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "CACHE_WITHOUT_TEXT"
-    .end annotation
-.end field
+.field public static final r0:LL4b;
 
-.field public static final enum Y:LDyh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "CACHE_RESOURCES_READY"
-    .end annotation
-.end field
+.field public static final s0:Ljava/lang/String;
 
-.field public static final synthetic Z:[LDyh;
-
-.field public static final enum b:LDyh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "UNKNOWN"
-    .end annotation
-.end field
-
-.field public static final enum c:LDyh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "NETWORK"
-    .end annotation
-.end field
-
-.field public static final enum t:LDyh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "CACHE"
-    .end annotation
-.end field
+.field public static final t0:Ljava/lang/String;
 
 
 # instance fields
-.field public final a:I
+.field public final n0:LCyh;
+
+.field public final o0:Z
+
+.field public p0:Landroid/webkit/WebView;
+
+.field public q0:Landroid/view/View;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 12
 
     .line 1
-    new-instance v0, LDyh;
+    new-instance v0, LL4b;
 
     .line 2
     .line 3
-    const-string v1, "UNKNOWN"
+    sget-object v1, Lqrh;->Z:Lqrh;
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const/4 v9, 0x0
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, LDyh;-><init>(Ljava/lang/String;II)V
+    const/4 v10, 0x0
 
     .line 7
+    const-string v2, "spectacles_settings_webview"
+
     .line 8
     .line 9
-    sput-object v0, LDyh;->b:LDyh;
+    const/4 v3, 0x0
 
     .line 10
+    const/4 v4, 0x0
+
     .line 11
-    new-instance v1, LDyh;
+    const/4 v5, 0x0
 
     .line 12
+    const/4 v6, 0x0
+
     .line 13
-    const-string v3, "NETWORK"
+    const/4 v7, 0x0
 
     .line 14
+    const/4 v8, 0x0
+
     .line 15
-    const/4 v4, 0x1
+    const/16 v11, 0x7ff4
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, LDyh;-><init>(Ljava/lang/String;II)V
-
     .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 18
     .line 19
-    sput-object v1, LDyh;->c:LDyh;
-
     .line 20
+    sput-object v0, LDyh;->r0:LL4b;
+
     .line 21
-    new-instance v3, LDyh;
-
     .line 22
+    const-string v0, "intent://"
+
     .line 23
-    const-string v5, "CACHE"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    sput-object v0, LDyh;->s0:Ljava/lang/String;
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6, v6}, LDyh;-><init>(Ljava/lang/String;II)V
+    const-string v0, "https://snapchat.com/"
 
     .line 27
     .line 28
+    sput-object v0, LDyh;->t0:Ljava/lang/String;
+
     .line 29
-    sput-object v3, LDyh;->t:LDyh;
-
     .line 30
-    .line 31
-    new-instance v5, LDyh;
-
-    .line 32
-    .line 33
-    const-string v7, "CACHE_WITHOUT_TEXT"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8, v8}, LDyh;-><init>(Ljava/lang/String;II)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, LDyh;->X:LDyh;
-
-    .line 40
-    .line 41
-    new-instance v7, LDyh;
-
-    .line 42
-    .line 43
-    const-string v9, "CACHE_RESOURCES_READY"
-
-    .line 44
-    .line 45
-    const/4 v10, 0x4
-
-    .line 46
-    invoke-direct {v7, v9, v10, v10}, LDyh;-><init>(Ljava/lang/String;II)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v7, LDyh;->Y:LDyh;
-
-    .line 50
-    .line 51
-    const/4 v9, 0x5
-
-    .line 52
-    new-array v9, v9, [LDyh;
-
-    .line 53
-    .line 54
-    aput-object v0, v9, v2
-
-    .line 55
-    .line 56
-    aput-object v1, v9, v4
-
-    .line 57
-    .line 58
-    aput-object v3, v9, v6
-
-    .line 59
-    .line 60
-    aput-object v5, v9, v8
-
-    .line 61
-    .line 62
-    aput-object v7, v9, v10
-
-    .line 63
-    .line 64
-    sput-object v9, LDyh;->Z:[LDyh;
-
-    .line 65
-    .line 66
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;LmGc;LIv9;LCyh;)V
+    .locals 7
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sget-object v2, LDyh;->r0:LL4b;
 
     .line 2
     .line 3
-    .line 4
-    iput p3, p0, LDyh;->a:I
+    iget v3, p4, LCyh;->a:I
 
+    .line 4
     .line 5
+    const v4, 0x7f0e070a
+
     .line 6
+    .line 7
+    .line 8
+    move-object v0, p0
+
+    .line 9
+    move-object v1, p1
+
+    .line 10
+    move-object v5, p2
+
+    .line 11
+    move-object v6, p3
+
+    .line 12
+    invoke-direct/range {v0 .. v6}, LQrg;-><init>(Landroid/content/Context;LL4b;IILmGc;LIv9;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iput-object p4, v0, LDyh;->n0:LCyh;
+
+    .line 16
+    .line 17
+    const/4 p1, 0x1
+
+    .line 18
+    iput-boolean p1, v0, LDyh;->o0:Z
+
+    .line 19
+    .line 20
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LDyh;
-    .locals 1
-
-    .line 1
-    const-class v0, LDyh;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LDyh;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LDyh;
-    .locals 1
-
-    .line 1
-    sget-object v0, LDyh;->Z:[LDyh;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LDyh;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LDyh;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final d()Z
+    .locals 3
 
     .line 1
-    iget v0, p0, LDyh;->a:I
+    iget-object v0, p0, LDyh;->n0:LCyh;
 
     .line 2
     .line 3
+    iget-boolean v0, v0, LCyh;->c:Z
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
     return v0
+
+    .line 9
+    :cond_0
+    iget-object v0, p0, LDyh;->p0:Landroid/webkit/WebView;
+
+    .line 10
+    .line 11
+    const/4 v1, 0x0
+
+    .line 12
+    const-string v2, "webView"
+
+    .line 13
+    .line 14
+    if-eqz v0, :cond_3
+
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Landroid/webkit/WebView;->canGoBack()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    if-eqz v0, :cond_2
+
+    .line 21
+    .line 22
+    iget-object v0, p0, LDyh;->p0:Landroid/webkit/WebView;
+
+    .line 23
+    .line 24
+    if-eqz v0, :cond_1
+
+    .line 25
+    .line 26
+    invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
+
+    .line 27
+    .line 28
+    .line 29
+    const/4 v0, 0x1
+
+    .line 30
+    return v0
+
+    .line 31
+    :cond_1
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 32
+    .line 33
+    .line 34
+    throw v1
+
+    .line 35
+    :cond_2
+    const/4 v0, 0x0
+
+    .line 36
+    return v0
+
+    .line 37
+    :cond_3
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    throw v1
+.end method
+
+.method public final j()V
+    .locals 5
+
+    .line 1
+    invoke-super {p0}, LQrg;->j()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, LQrg;->k0:Landroid/view/View;
+
+    .line 5
+    .line 6
+    const v1, 0x7f0b1303
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    iput-object v1, p0, LDyh;->q0:Landroid/view/View;
+
+    .line 14
+    .line 15
+    const v1, 0x7f0b1bed
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    check-cast v0, Landroid/webkit/WebView;
+
+    .line 23
+    .line 24
+    iput-object v0, p0, LDyh;->p0:Landroid/webkit/WebView;
+
+    .line 25
+    .line 26
+    invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    const/4 v1, 0x1
+
+    .line 31
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
+
+    .line 32
+    .line 33
+    .line 34
+    const/4 v1, 0x0
+
+    .line 35
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccess(Z)V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setSaveFormData(Z)V
+
+    .line 39
+    .line 40
+    .line 41
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setSavePassword(Z)V
+
+    .line 42
+    .line 43
+    .line 44
+    sget-object v2, Landroid/webkit/WebSettings$PluginState;->OFF:Landroid/webkit/WebSettings$PluginState;
+
+    .line 45
+    .line 46
+    invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setPluginState(Landroid/webkit/WebSettings$PluginState;)V
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setAllowUniversalAccessFromFileURLs(Z)V
+
+    .line 53
+    .line 54
+    .line 55
+    iget-boolean v1, p0, LDyh;->o0:Z
+
+    .line 56
+    .line 57
+    invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
+
+    .line 58
+    .line 59
+    .line 60
+    iget-object v0, p0, LDyh;->p0:Landroid/webkit/WebView;
+
+    .line 61
+    .line 62
+    const/4 v1, 0x0
+
+    .line 63
+    const-string v2, "webView"
+
+    .line 64
+    .line 65
+    if-eqz v0, :cond_2
+
+    .line 66
+    .line 67
+    new-instance v3, LpA2;
+
+    .line 68
+    .line 69
+    const/4 v4, 0x3
+
+    .line 70
+    invoke-direct {v3, v4, p0}, LpA2;-><init>(ILjava/lang/Object;)V
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-virtual {v0, v3}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
+
+    .line 74
+    .line 75
+    .line 76
+    iget-object v0, p0, LDyh;->p0:Landroid/webkit/WebView;
+
+    .line 77
+    .line 78
+    if-eqz v0, :cond_1
+
+    .line 79
+    .line 80
+    iget-object v3, p0, LDyh;->n0:LCyh;
+
+    .line 81
+    .line 82
+    iget-object v3, v3, LCyh;->b:Ljava/lang/String;
+
+    .line 83
+    .line 84
+    invoke-virtual {v0, v3}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
+
+    .line 85
+    .line 86
+    .line 87
+    iget-object v0, p0, LDyh;->p0:Landroid/webkit/WebView;
+
+    .line 88
+    .line 89
+    if-eqz v0, :cond_0
+
+    .line 90
+    .line 91
+    new-instance v1, LeNd;
+
+    .line 92
+    .line 93
+    const/4 v2, 0x4
+
+    .line 94
+    invoke-direct {v1, v2, p0}, LeNd;-><init>(ILjava/lang/Object;)V
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setWebChromeClient(Landroid/webkit/WebChromeClient;)V
+
+    .line 98
+    .line 99
+    .line 100
+    return-void
+
+    .line 101
+    :cond_0
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 102
+    .line 103
+    .line 104
+    throw v1
+
+    .line 105
+    :cond_1
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 106
+    .line 107
+    .line 108
+    throw v1
+
+    .line 109
+    :cond_2
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 110
+    .line 111
+    .line 112
+    throw v1
 .end method

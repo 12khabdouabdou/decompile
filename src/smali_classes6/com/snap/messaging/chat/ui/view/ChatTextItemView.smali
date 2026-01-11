@@ -3,14 +3,14 @@
 .source "SourceFile"
 
 # interfaces
-.implements LWJc;
+.implements LCYc;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/ui/view/SnapFontTextView;",
-        "LWJc;"
+        "LCYc;"
     }
 .end annotation
 
@@ -78,7 +78,7 @@
 
     .line 19
     .line 20
-    invoke-static {v2, v1}, LM4i;->g(CI)Ljava/lang/String;
+    invoke-static {v2, v1}, Lfti;->g(CI)Ljava/lang/String;
 
     .line 21
     .line 22

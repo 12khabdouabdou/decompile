@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Landroidx/lifecycle/LifecycleOwner;
-.implements LXC9;
+.implements LCM9;
 
 
 # annotations
@@ -16,10 +16,10 @@
 
 
 # instance fields
-.field private final a:LRog;
+.field private final a:LWJg;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "LRog;"
+            "LWJg;"
         }
     .end annotation
 .end field
@@ -37,16 +37,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LRog;
+    new-instance v0, LWJg;
 
     .line 5
     .line 6
-    invoke-direct {v0}, LRog;-><init>()V
+    invoke-direct {v0}, LWJg;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/core/app/ComponentActivity;->a:LRog;
+    iput-object v0, p0, Landroidx/core/app/ComponentActivity;->a:LWJg;
 
     .line 10
     .line 11
@@ -68,6 +68,21 @@
 
 
 # virtual methods
+.method public d(Landroid/view/KeyEvent;)Z
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    return p1
+.end method
+
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
 
@@ -88,7 +103,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0, p1}, Lltk;->b(Landroid/view/View;Landroid/view/KeyEvent;)Z
+    invoke-static {v0, p1}, LJTk;->b(Landroid/view/View;Landroid/view/KeyEvent;)Z
 
     .line 10
     .line 11
@@ -107,7 +122,7 @@
 
     .line 17
     :cond_0
-    invoke-static {p0, v0, p0, p1}, Lltk;->c(LXC9;Landroid/view/View;Landroid/view/Window$Callback;Landroid/view/KeyEvent;)Z
+    invoke-static {p0, v0, p0, p1}, LJTk;->c(LCM9;Landroid/view/View;Landroid/view/Window$Callback;Landroid/view/KeyEvent;)Z
 
     .line 18
     .line 19
@@ -138,7 +153,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0, p1}, Lltk;->b(Landroid/view/View;Landroid/view/KeyEvent;)Z
+    invoke-static {v0, p1}, LJTk;->b(Landroid/view/View;Landroid/view/KeyEvent;)Z
 
     .line 10
     .line 11
@@ -168,21 +183,6 @@
     return p1
 .end method
 
-.method public e(Landroid/view/KeyEvent;)Z
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
-.end method
-
 .method public getLifecycle()Landroidx/lifecycle/Lifecycle;
     .locals 1
 
@@ -203,11 +203,11 @@
     .line 2
     .line 3
     .line 4
-    sget p1, LSWe;->b:I
+    sget p1, LMef;->b:I
 
     .line 5
     .line 6
-    invoke-static {p0}, LQWe;->b(Landroid/app/Activity;)V
+    invoke-static {p0}, LKef;->b(Landroid/app/Activity;)V
 
     .line 7
     .line 8

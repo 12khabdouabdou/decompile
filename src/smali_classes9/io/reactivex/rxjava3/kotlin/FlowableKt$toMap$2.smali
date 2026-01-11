@@ -37,11 +37,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lhad;
+    check-cast p1, LDpd;
 
     .line 2
     .line 3
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
     .line 4
     .line 5

@@ -1,11 +1,336 @@
-.class public interface abstract LPlf;
+.class public final LPlf;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract b(Landroid/os/Bundle;)V
+# instance fields
+.field public final a:Ljava/util/Map;
+
+.field public final b:I
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Z
+
+.field public final e:I
+
+.field public final f:Ljava/lang/String;
+
+.field public final g:Ljava/lang/Throwable;
+
+.field public final h:Lyhf;
+
+.field public final i:LaLg;
+
+.field public final j:Ljava/lang/String;
+
+.field public final k:Ljava/lang/Boolean;
+
+
+# direct methods
+.method public constructor <init>(LKlf;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p1, LKlf;->d:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput-object v0, p0, LPlf;->f:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    iget v0, p1, LKlf;->a:I
+
+    .line 9
+    .line 10
+    iput v0, p0, LPlf;->b:I
+
+    .line 11
+    .line 12
+    iget-object v0, p1, LKlf;->g:LaLg;
+
+    .line 13
+    .line 14
+    iput-object v0, p0, LPlf;->i:LaLg;
+
+    .line 15
+    .line 16
+    iget-object v0, p1, LKlf;->e:Ljava/lang/Throwable;
+
+    .line 17
+    .line 18
+    iput-object v0, p0, LPlf;->g:Ljava/lang/Throwable;
+
+    .line 19
+    .line 20
+    iget-object v0, p1, LKlf;->b:Ljava/util/HashMap;
+
+    .line 21
+    .line 22
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    iput-object v0, p0, LPlf;->a:Ljava/util/Map;
+
+    .line 27
+    .line 28
+    iget-object v0, p1, LKlf;->i:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    iput-object v0, p0, LPlf;->c:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    iget v0, p1, LKlf;->h:I
+
+    .line 33
+    .line 34
+    iput v0, p0, LPlf;->e:I
+
+    .line 35
+    .line 36
+    iget-object v0, p1, LKlf;->f:Lyhf;
+
+    .line 37
+    .line 38
+    iput-object v0, p0, LPlf;->h:Lyhf;
+
+    .line 39
+    .line 40
+    iget-object v0, p1, LKlf;->j:Ljava/lang/String;
+
+    .line 41
+    .line 42
+    iput-object v0, p0, LPlf;->j:Ljava/lang/String;
+
+    .line 43
+    .line 44
+    iget-boolean v0, p1, LKlf;->c:Z
+
+    .line 45
+    .line 46
+    iput-boolean v0, p0, LPlf;->d:Z
+
+    .line 47
+    .line 48
+    iget-object p1, p1, LKlf;->k:Ljava/lang/Boolean;
+
+    .line 49
+    .line 50
+    iput-object p1, p0, LPlf;->k:Ljava/lang/Boolean;
+
+    .line 51
+    .line 52
+    return-void
 .end method
 
-.method public abstract f(Landroid/os/Bundle;)V
+
+# virtual methods
+.method public final a()LKlf;
+    .locals 3
+
+    .line 1
+    new-instance v0, LKlf;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, Ljava/util/HashMap;
+
+    .line 7
+    .line 8
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object v1, v0, LKlf;->b:Ljava/util/HashMap;
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    iput-boolean v1, v0, LKlf;->c:Z
+
+    .line 15
+    .line 16
+    const/4 v1, 0x3
+
+    .line 17
+    iput v1, v0, LKlf;->h:I
+
+    .line 18
+    .line 19
+    sget-object v1, Lcmf;->a:LWJc;
+
+    .line 20
+    .line 21
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 22
+    .line 23
+    iput-object v1, v0, LKlf;->k:Ljava/lang/Boolean;
+
+    .line 24
+    .line 25
+    iget v1, p0, LPlf;->b:I
+
+    .line 26
+    .line 27
+    iput v1, v0, LKlf;->a:I
+
+    .line 28
+    .line 29
+    iget-object v1, p0, LPlf;->f:Ljava/lang/String;
+
+    .line 30
+    .line 31
+    iput-object v1, v0, LKlf;->d:Ljava/lang/String;
+
+    .line 32
+    .line 33
+    iget-object v1, p0, LPlf;->g:Ljava/lang/Throwable;
+
+    .line 34
+    .line 35
+    iput-object v1, v0, LKlf;->e:Ljava/lang/Throwable;
+
+    .line 36
+    .line 37
+    iget-object v1, p0, LPlf;->i:LaLg;
+
+    .line 38
+    .line 39
+    iput-object v1, v0, LKlf;->g:LaLg;
+
+    .line 40
+    .line 41
+    new-instance v1, Ljava/util/HashMap;
+
+    .line 42
+    .line 43
+    iget-object v2, p0, LPlf;->a:Ljava/util/Map;
+
+    .line 44
+    .line 45
+    invoke-direct {v1, v2}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+
+    .line 46
+    .line 47
+    .line 48
+    iput-object v1, v0, LKlf;->b:Ljava/util/HashMap;
+
+    .line 49
+    .line 50
+    iget-object v1, p0, LPlf;->c:Ljava/lang/String;
+
+    .line 51
+    .line 52
+    iput-object v1, v0, LKlf;->i:Ljava/lang/String;
+
+    .line 53
+    .line 54
+    iget v1, p0, LPlf;->e:I
+
+    .line 55
+    .line 56
+    iput v1, v0, LKlf;->h:I
+
+    .line 57
+    .line 58
+    iget-object v1, p0, LPlf;->h:Lyhf;
+
+    .line 59
+    .line 60
+    iput-object v1, v0, LKlf;->f:Lyhf;
+
+    .line 61
+    .line 62
+    iget-object v1, p0, LPlf;->j:Ljava/lang/String;
+
+    .line 63
+    .line 64
+    iput-object v1, v0, LKlf;->j:Ljava/lang/String;
+
+    .line 65
+    .line 66
+    iget-boolean v1, p0, LPlf;->d:Z
+
+    .line 67
+    .line 68
+    iput-boolean v1, v0, LKlf;->c:Z
+
+    .line 69
+    .line 70
+    iget-object v1, p0, LPlf;->k:Ljava/lang/Boolean;
+
+    .line 71
+    .line 72
+    iput-object v1, v0, LKlf;->k:Ljava/lang/Boolean;
+
+    .line 73
+    .line 74
+    return-object v0
+.end method
+
+.method public final b()Z
+    .locals 2
+
+    .line 1
+    const/16 v0, 0xc8
+
+    .line 2
+    .line 3
+    iget v1, p0, LPlf;->b:I
+
+    .line 4
+    .line 5
+    if-lt v1, v0, :cond_0
+
+    .line 6
+    .line 7
+    const/16 v0, 0x12c
+
+    .line 8
+    .line 9
+    if-ge v1, v0, :cond_0
+
+    .line 10
+    .line 11
+    iget-object v0, p0, LPlf;->g:Ljava/lang/Throwable;
+
+    .line 12
+    .line 13
+    if-nez v0, :cond_0
+
+    .line 14
+    .line 15
+    const/4 v0, 0x1
+
+    .line 16
+    return v0
+
+    .line 17
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 18
+    return v0
 .end method

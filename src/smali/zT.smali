@@ -1,41 +1,46 @@
-.class public interface abstract LzT;
+.class public final LzT;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract b()I
-.end method
+# instance fields
+.field public a:LnNh;
 
-.method public abstract c()Ljava/lang/String;
-.end method
+.field public final b:Landroid/view/Choreographer;
 
-.method public abstract d()Ljava/util/Map;
-.end method
+.field public final c:LyT;
 
-.method public abstract e()Z
-.end method
+.field public d:Z
 
-.method public abstract f()Ljava/lang/String;
-.end method
+.field public e:J
 
-.method public abstract g()Ljava/lang/String;
-.end method
 
-.method public abstract getErrorMessage()Ljava/lang/String;
-.end method
+# direct methods
+.method public constructor <init>(Landroid/view/Choreographer;)V
+    .locals 0
 
-.method public abstract getMetadata()LURb;
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract h()[B
-.end method
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LzT;->b:Landroid/view/Choreographer;
 
-.method public abstract i()Z
-.end method
+    .line 5
+    .line 6
+    new-instance p1, LyT;
 
-.method public abstract j()LTQ6;
-.end method
+    .line 7
+    .line 8
+    invoke-direct {p1, p0}, LyT;-><init>(LzT;)V
 
-.method public abstract k()Ljava/lang/String;
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, LzT;->c:LyT;
+
+    .line 12
+    .line 13
+    return-void
 .end method

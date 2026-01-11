@@ -1,20 +1,25 @@
-.class public LS69;
-.super Lp3;
+.class public final LS69;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/io/Serializable;
+.implements LR69;
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
-
-.field public final b:Ljava/lang/Object;
+.field public final a:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,53 +27,59 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LS69;->a:Ljava/lang/Object;
+    iput-object p1, p0, LS69;->a:Lkotlin/jvm/functions/Function1;
 
     .line 5
     .line 6
-    iput-object p2, p0, LS69;->b:Ljava/lang/Object;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final getKey()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LS69;->a:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final getValue()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LS69;->b:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final setValue(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
     .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    invoke-static {p0, p1}, LNOk;->j(LR69;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
     .line 2
     .line 3
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    .line 4
+    move-result p1
+
+    .line 5
+    return p1
+.end method
+
+.method public transcode(Lcom/snap/modules/media/TranscodeRequest;)Lcom/snap/composer/promise/Promise;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/modules/media/TranscodeRequest;",
+            ")",
+            "Lcom/snap/composer/promise/Promise<",
+            "LPej;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LS69;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    throw p1
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/promise/Promise;
+
+    .line 8
+    .line 9
+    return-object p1
 .end method

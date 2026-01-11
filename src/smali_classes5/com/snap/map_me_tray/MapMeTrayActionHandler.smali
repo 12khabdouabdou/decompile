@@ -7,13 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lw2b;
-    schema = "\'onTapMyPose\':f|m|(a<r:\'[0]\'>, s, b, r<e>:\'[1]\'),\'onTapMyCar\':f?|m|(r:\'[2]\', r<e>:\'[1]\'),\'onTapMyPet\':f?|m|(r:\'[2]\', r<e>:\'[1]\'),\'onToggleGhostMode\':f?|m|(s),\'onTapContinue\':f?|m|(),\'onTapQuickShareCell\':f?|m|(s),\'onTapShareLocation\':f?|m|(s)"
+    proxyClass = LKfb;
+    schema = "\'onTapMyPose\':f|m|(a<r:\'[0]\'>, s, b),\'onTapMyCar\':f?|m|(r:\'[1]\'),\'onTapMyPet\':f?|m|(r:\'[1]\'),\'onToggleGhostMode\':f?|m|(s),\'onTapContinue\':f?|m|(),\'onTapQuickShareCell\':f?|m|(s),\'onTapShareLocation\':f?|m|(s)"
     typeReferences = {
-        Lx2b;,
-        Lcom/snap/composer/bitmoji/Bitmoji3DRenderStyle;,
+        LLfb;,
         Lcom/snap/composer/people/userinfo/UserInfo;
     }
 .end annotation
@@ -21,47 +20,45 @@
 
 # virtual methods
 .method public abstract onTapContinue()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
-.method public abstract onTapMyCar(Lcom/snap/composer/people/userinfo/UserInfo;Lcom/snap/composer/bitmoji/Bitmoji3DRenderStyle;)V
-    .annotation runtime LUy3;
+.method public abstract onTapMyCar(Lcom/snap/composer/people/userinfo/UserInfo;)V
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
-.method public abstract onTapMyPet(Lcom/snap/composer/people/userinfo/UserInfo;Lcom/snap/composer/bitmoji/Bitmoji3DRenderStyle;)V
-    .annotation runtime LUy3;
+.method public abstract onTapMyPet(Lcom/snap/composer/people/userinfo/UserInfo;)V
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
-.method public abstract onTapMyPose(Ljava/util/List;Ljava/lang/String;ZLcom/snap/composer/bitmoji/Bitmoji3DRenderStyle;)V
+.method public abstract onTapMyPose(Ljava/util/List;Ljava/lang/String;Z)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "Lx2b;",
+            "LLfb;",
             ">;",
             "Ljava/lang/String;",
-            "Z",
-            "Lcom/snap/composer/bitmoji/Bitmoji3DRenderStyle;",
-            ")V"
+            "Z)V"
         }
     .end annotation
 .end method
 
 .method public abstract onTapQuickShareCell(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onTapShareLocation(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onToggleGhostMode(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

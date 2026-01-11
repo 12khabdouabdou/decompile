@@ -3,19 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lop1;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # static fields
 .field public static final a:Lnp1;
 
-.field public static final b:Lnp1;
-
-.field public static final c:Lnp1;
-
 
 # direct methods
-.method static synthetic constructor <clinit>()V
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
@@ -32,31 +28,34 @@
 
     .line 7
     .line 8
-    new-instance v0, Lnp1;
-
-    .line 9
-    .line 10
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lnp1;->b:Lnp1;
-
-    .line 14
-    .line 15
-    new-instance v0, Lnp1;
-
-    .line 16
-    .line 17
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 18
-    .line 19
-    .line 20
-    sput-object v0, Lnp1;->c:Lnp1;
-
-    .line 21
-    .line 22
     return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lmid;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lmid;->c()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Ljp1;
+
+    .line 8
+    .line 9
+    iget-object p1, p1, Ljp1;->a:Lapp/aifactory/sdk/api/model/TargetState$Success;
+
+    .line 10
+    .line 11
+    return-object p1
 .end method

@@ -1,308 +1,280 @@
 .class public final LTm7;
-.super Lo17;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final c:LTm7;
+
+.field public static final d:LTm7;
+
+
 # instance fields
-.field public a:I
+.field public final a:Lmid;
 
-.field public b:[B
-
-.field public c:[B
+.field public final b:Lio/reactivex/rxjava3/core/Observable;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    new-instance v0, LTm7;
+
+    .line 2
+    .line 3
+    sget-object v1, LN1;->a:LN1;
+
+    .line 4
+    .line 5
+    sget-object v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
+
+    .line 6
+    .line 7
+    invoke-direct {v0, v1, v2}, LTm7;-><init>(Lmid;Lio/reactivex/rxjava3/core/Observable;)V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v0, LTm7;->c:LTm7;
+
+    .line 11
+    .line 12
+    new-instance v0, LTm7;
+
+    .line 13
+    .line 14
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 15
+    .line 16
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
+    .line 17
+    .line 18
+    invoke-direct {v3, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {v0, v1, v3}, LTm7;-><init>(Lmid;Lio/reactivex/rxjava3/core/Observable;)V
+
+    .line 22
+    .line 23
+    .line 24
+    sput-object v0, LTm7;->d:LTm7;
+
+    .line 25
+    .line 26
+    return-void
+.end method
+
+.method public constructor <init>(Lmid;Lio/reactivex/rxjava3/core/Observable;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    iput-object p1, p0, LTm7;->a:Lmid;
 
     .line 5
-    iput v0, p0, LTm7;->a:I
-
     .line 6
+    iput-object p2, p0, LTm7;->b:Lio/reactivex/rxjava3/core/Observable;
+
     .line 7
-    sget-object v0, Ldw8;->j:[B
-
     .line 8
-    .line 9
-    iput-object v0, p0, LTm7;->b:[B
-
-    .line 10
-    .line 11
-    iput-object v0, p0, LTm7;->c:[B
-
-    .line 12
-    .line 13
-    const/4 v0, 0x0
-
-    .line 14
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 15
-    .line 16
-    const/4 v0, -0x1
-
-    .line 17
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 18
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
     .line 4
-    move-result v0
-
-    .line 5
-    iget v1, p0, LTm7;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    iget-object v1, p0, LTm7;->b:[B
-
-    .line 12
-    .line 13
-    invoke-static {v2, v1}, Lsa3;->b(I[B)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    :cond_0
-    iget v1, p0, LTm7;->a:I
-
-    .line 19
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    and-int/2addr v1, v2
-
-    .line 22
-    if-eqz v1, :cond_1
-
-    .line 23
-    .line 24
-    iget-object v1, p0, LTm7;->c:[B
-
-    .line 25
-    .line 26
-    invoke-static {v2, v1}, Lsa3;->b(I[B)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v1
-
-    .line 30
-    add-int/2addr v1, v0
-
-    .line 31
-    return v1
-
-    .line 32
-    :cond_1
     return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
 
     .line 5
-    if-eqz v0, :cond_3
+    :cond_0
+    instance-of v1, p1, LTm7;
 
     .line 6
     .line 7
-    const/16 v1, 0xa
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    if-eq v0, v1, :cond_2
+    if-nez v1, :cond_1
 
+    .line 9
     .line 10
+    return v2
+
     .line 11
-    const/16 v1, 0x12
+    :cond_1
+    check-cast p1, LTm7;
 
     .line 12
     .line 13
-    if-eq v0, v1, :cond_1
+    iget-object v1, p1, LTm7;->a:Lmid;
 
     .line 14
     .line 15
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    iget-object v3, p0, LTm7;->a:Lmid;
 
     .line 16
     .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 18
-    move-result v0
-
     .line 19
-    if-nez v0, :cond_0
-
     .line 20
+    move-result v1
+
     .line 21
-    goto :goto_1
+    if-nez v1, :cond_2
 
     .line 22
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->g()[B
-
     .line 23
-    .line 24
-    .line 25
-    move-result-object v0
+    return v2
 
+    .line 24
+    :cond_2
+    iget-object v1, p0, LTm7;->b:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 25
     .line 26
-    iput-object v0, p0, LTm7;->c:[B
+    iget-object p1, p1, LTm7;->b:Lio/reactivex/rxjava3/core/Observable;
 
     .line 27
     .line 28
-    iget v0, p0, LTm7;->a:I
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
-    or-int/lit8 v0, v0, 0x2
-
     .line 31
+    move-result p1
+
     .line 32
-    iput v0, p0, LTm7;->a:I
+    if-nez p1, :cond_3
 
     .line 33
     .line 34
-    goto :goto_0
+    return v2
 
     .line 35
-    :cond_2
-    invoke-virtual {p1}, Lqa3;->g()[B
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v0
-
-    .line 39
-    iput-object v0, p0, LTm7;->b:[B
-
-    .line 40
-    .line 41
-    iget v0, p0, LTm7;->a:I
-
-    .line 42
-    .line 43
-    or-int/lit8 v0, v0, 0x1
-
-    .line 44
-    .line 45
-    iput v0, p0, LTm7;->a:I
-
-    .line 46
-    .line 47
-    goto :goto_0
-
-    .line 48
     :cond_3
-    :goto_1
-    return-object p0
+    return v0
 .end method
 
-.method public final writeTo(Lsa3;)V
+.method public final hashCode()I
     .locals 2
 
     .line 1
-    iget v0, p0, LTm7;->a:I
+    iget-object v0, p0, LTm7;->a:Lmid;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    invoke-virtual {v0}, Lmid;->hashCode()I
 
     .line 4
-    and-int/2addr v0, v1
-
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    move-result v0
+
     .line 7
-    iget-object v0, p0, LTm7;->b:[B
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
     .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->A(I[B)V
+    iget-object v1, p0, LTm7;->b:Lio/reactivex/rxjava3/core/Observable;
 
     .line 10
     .line 11
-    .line 12
-    :cond_0
-    iget v0, p0, LTm7;->a:I
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
+    .line 12
     .line 13
     .line 14
-    const/4 v1, 0x2
+    move-result v1
 
     .line 15
-    and-int/2addr v0, v1
+    add-int/2addr v1, v0
 
     .line 16
-    if-eqz v0, :cond_1
+    return v1
+.end method
 
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "FeedHolder(viewStub="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LTm7;->a:Lmid;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", suspendedWhen="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
     .line 17
     .line 18
-    iget-object v0, p0, LTm7;->c:[B
+    iget-object v1, p0, LTm7;->b:Lio/reactivex/rxjava3/core/Observable;
 
     .line 19
     .line 20
-    invoke-virtual {p1, v1, v0}, Lsa3;->A(I[B)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    const-string v1, ")"
 
     .line 24
     .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 26
-    return-void
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

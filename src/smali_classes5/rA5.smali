@@ -1,186 +1,132 @@
-.class public abstract LrA5;
+.class public final LrA5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final a:LgIj;
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public synthetic constructor <init>(Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LfIj;
+    iput p2, p0, LrA5;->a:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, LfIj;-><init>()V
+    iput-object p1, p0, LrA5;->b:Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;
 
-    .line 4
-    .line 5
-    .line 6
-    const v1, 0x7f080a8c
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
-    .line 8
-    .line 9
-    iput v1, v0, LfIj;->j:I
-
-    .line 10
-    .line 11
-    new-instance v1, LgIj;
-
-    .line 12
-    .line 13
-    invoke-direct {v1, v0}, LgIj;-><init>(LfIj;)V
-
-    .line 14
-    .line 15
-    .line 16
-    sput-object v1, LrA5;->a:LgIj;
-
-    .line 17
-    .line 18
     return-void
 .end method
 
-.method public static a(Landroid/view/View;F)Landroid/animation/ObjectAnimator;
-    .locals 5
+
+# virtual methods
+.method public final run()V
+    .locals 3
 
     .line 1
-    const/4 v0, 0x0
+    iget-object v0, p0, LrA5;->b:Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    sget-object v2, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+    iget v1, p0, LrA5;->a:I
 
     .line 4
     .line 5
-    new-array v3, v1, [F
+    packed-switch v1, :pswitch_data_0
 
     .line 6
     .line 7
-    aput p1, v3, v0
-
     .line 8
-    .line 9
-    invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+    sget v1, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->i0:I
 
+    .line 9
     .line 10
+    invoke-virtual {v0}, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->f()V
+
     .line 11
     .line 12
-    move-result-object p1
-
     .line 13
-    sget-object v2, Landroid/view/View;->ALPHA:Landroid/util/Property;
+    return-void
 
     .line 14
+    :pswitch_0
+    const/16 v1, 0x8
+
     .line 15
-    new-array v3, v1, [F
-
     .line 16
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
     .line 17
-    const/4 v4, 0x0
-
     .line 18
-    aput v4, v3, v0
-
     .line 19
+    iget-object v1, v0, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->e0:Landroid/view/View;
+
     .line 20
-    invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
-
     .line 21
-    .line 22
-    .line 23
-    move-result-object v2
+    const/4 v2, 0x0
 
+    .line 22
+    if-eqz v1, :cond_1
+
+    .line 23
     .line 24
-    const/4 v3, 0x2
+    invoke-static {v1}, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->b(Landroid/view/View;)V
 
     .line 25
-    new-array v3, v3, [Landroid/animation/PropertyValuesHolder;
-
     .line 26
     .line 27
-    aput-object p1, v3, v0
+    iget-object v0, v0, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->f0:Landroid/view/View;
 
     .line 28
     .line 29
-    aput-object v2, v3, v1
+    if-eqz v0, :cond_0
 
     .line 30
     .line 31
-    invoke-static {p0, v3}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+    invoke-static {v0}, Lcom/snap/lenses/camera/onboarding/explorerhint/DefaultExplorerHintView;->b(Landroid/view/View;)V
 
     .line 32
     .line 33
     .line 34
-    move-result-object p0
+    return-void
 
     .line 35
-    const-wide/16 v0, 0x64
+    :cond_0
+    const-string v0, "arrow2"
 
     .line 36
     .line 37
-    invoke-virtual {p0, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
     .line 40
-    move-result-object p0
+    throw v2
 
     .line 41
-    return-object p0
-.end method
+    :cond_1
+    const-string v0, "arrow1"
 
-.method public static b(Landroid/view/View;)Landroid/animation/ObjectAnimator;
-    .locals 4
+    .line 42
+    .line 43
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 1
-    sget-object v0, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
+    .line 44
+    .line 45
+    .line 46
+    throw v2
 
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    new-array v1, v1, [F
-
-    .line 5
-    .line 6
-    const/4 v2, 0x0
-
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    aput v2, v1, v3
-
-    .line 9
-    .line 10
-    invoke-static {p0, v0, v1}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;[F)Landroid/animation/ObjectAnimator;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p0
-
-    .line 14
-    const-wide/16 v0, 0x64
-
-    .line 15
-    .line 16
-    invoke-virtual {p0, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object p0
-
-    .line 20
-    return-object p0
+    .line 47
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

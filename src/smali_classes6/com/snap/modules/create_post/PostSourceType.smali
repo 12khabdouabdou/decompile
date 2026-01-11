@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'UNKNOWN\':0,\'MAIN_CAMERA\':1,\'CAMERA_ROLL\':2,\'REPLY_CAMERA\':3,\'PROFILE\':4,\'SPOTLIGHT_TAB\':5,\'MEMORIES\':6"
-    type = .enum LJv3;->a:LJv3;
+    schema = "\'UNKNOWN\':0,\'MAIN_CAMERA\':1,\'CAMERA_ROLL\':2,\'REPLY_CAMERA\':3,\'PROFILE\':4,\'SPOTLIGHT_TAB\':5,\'MEMORIES\':6,\'MEMORIES_QUICK_POST\':7,\'SPOTLIGHT_SUBMISSION\':8"
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -26,9 +26,13 @@
 
 .field public static final enum MEMORIES:Lcom/snap/modules/create_post/PostSourceType;
 
+.field public static final enum MEMORIES_QUICK_POST:Lcom/snap/modules/create_post/PostSourceType;
+
 .field public static final enum PROFILE:Lcom/snap/modules/create_post/PostSourceType;
 
 .field public static final enum REPLY_CAMERA:Lcom/snap/modules/create_post/PostSourceType;
+
+.field public static final enum SPOTLIGHT_SUBMISSION:Lcom/snap/modules/create_post/PostSourceType;
 
 .field public static final enum SPOTLIGHT_TAB:Lcom/snap/modules/create_post/PostSourceType;
 
@@ -39,188 +43,250 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 19
 
     .line 1
-    const/4 v0, 0x6
+    const/16 v0, 0x8
 
     .line 2
-    const/4 v1, 0x5
-
     .line 3
-    const/4 v2, 0x4
+    const/4 v1, 0x7
 
     .line 4
-    const/4 v3, 0x3
+    const/4 v2, 0x6
 
     .line 5
-    const/4 v4, 0x2
+    const/4 v3, 0x5
 
     .line 6
-    const/4 v5, 0x1
+    const/4 v4, 0x4
 
     .line 7
-    const/4 v6, 0x0
+    const/4 v5, 0x3
 
     .line 8
-    new-instance v7, Lcom/snap/modules/create_post/PostSourceType;
+    const/4 v6, 0x2
 
     .line 9
+    const/4 v7, 0x1
+
     .line 10
-    const-string v8, "UNKNOWN"
+    const/4 v8, 0x0
 
     .line 11
-    .line 12
-    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v9, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 12
     .line 13
+    const-string v10, "UNKNOWN"
+
     .line 14
     .line 15
-    sput-object v7, Lcom/snap/modules/create_post/PostSourceType;->UNKNOWN:Lcom/snap/modules/create_post/PostSourceType;
+    invoke-direct {v9, v10, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 16
     .line 17
-    new-instance v8, Lcom/snap/modules/create_post/PostSourceType;
-
     .line 18
+    sput-object v9, Lcom/snap/modules/create_post/PostSourceType;->UNKNOWN:Lcom/snap/modules/create_post/PostSourceType;
+
     .line 19
-    const-string v9, "MAIN_CAMERA"
-
     .line 20
-    .line 21
-    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v10, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 21
     .line 22
+    const-string v11, "MAIN_CAMERA"
+
     .line 23
     .line 24
-    sput-object v8, Lcom/snap/modules/create_post/PostSourceType;->MAIN_CAMERA:Lcom/snap/modules/create_post/PostSourceType;
+    invoke-direct {v10, v11, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 25
     .line 26
-    new-instance v9, Lcom/snap/modules/create_post/PostSourceType;
-
     .line 27
+    sput-object v10, Lcom/snap/modules/create_post/PostSourceType;->MAIN_CAMERA:Lcom/snap/modules/create_post/PostSourceType;
+
     .line 28
-    const-string v10, "CAMERA_ROLL"
-
     .line 29
-    .line 30
-    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v11, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 30
     .line 31
+    const-string v12, "CAMERA_ROLL"
+
     .line 32
     .line 33
-    sput-object v9, Lcom/snap/modules/create_post/PostSourceType;->CAMERA_ROLL:Lcom/snap/modules/create_post/PostSourceType;
+    invoke-direct {v11, v12, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 34
     .line 35
-    new-instance v10, Lcom/snap/modules/create_post/PostSourceType;
-
     .line 36
+    sput-object v11, Lcom/snap/modules/create_post/PostSourceType;->CAMERA_ROLL:Lcom/snap/modules/create_post/PostSourceType;
+
     .line 37
-    const-string v11, "REPLY_CAMERA"
-
     .line 38
-    .line 39
-    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v12, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 39
     .line 40
+    const-string v13, "REPLY_CAMERA"
+
     .line 41
     .line 42
-    sput-object v10, Lcom/snap/modules/create_post/PostSourceType;->REPLY_CAMERA:Lcom/snap/modules/create_post/PostSourceType;
+    invoke-direct {v12, v13, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 43
     .line 44
-    new-instance v11, Lcom/snap/modules/create_post/PostSourceType;
-
     .line 45
+    sput-object v12, Lcom/snap/modules/create_post/PostSourceType;->REPLY_CAMERA:Lcom/snap/modules/create_post/PostSourceType;
+
     .line 46
-    const-string v12, "PROFILE"
-
     .line 47
-    .line 48
-    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v13, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 48
     .line 49
+    const-string v14, "PROFILE"
+
     .line 50
     .line 51
-    sput-object v11, Lcom/snap/modules/create_post/PostSourceType;->PROFILE:Lcom/snap/modules/create_post/PostSourceType;
+    invoke-direct {v13, v14, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 52
     .line 53
-    new-instance v12, Lcom/snap/modules/create_post/PostSourceType;
-
     .line 54
+    sput-object v13, Lcom/snap/modules/create_post/PostSourceType;->PROFILE:Lcom/snap/modules/create_post/PostSourceType;
+
     .line 55
-    const-string v13, "SPOTLIGHT_TAB"
-
     .line 56
-    .line 57
-    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v14, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 57
     .line 58
+    const-string v15, "SPOTLIGHT_TAB"
+
     .line 59
     .line 60
-    sput-object v12, Lcom/snap/modules/create_post/PostSourceType;->SPOTLIGHT_TAB:Lcom/snap/modules/create_post/PostSourceType;
+    invoke-direct {v14, v15, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 61
     .line 62
-    new-instance v13, Lcom/snap/modules/create_post/PostSourceType;
-
     .line 63
+    sput-object v14, Lcom/snap/modules/create_post/PostSourceType;->SPOTLIGHT_TAB:Lcom/snap/modules/create_post/PostSourceType;
+
     .line 64
-    const-string v14, "MEMORIES"
-
     .line 65
-    .line 66
-    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v15, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 66
     .line 67
+    const/16 v16, 0x5
+
     .line 68
     .line 69
-    sput-object v13, Lcom/snap/modules/create_post/PostSourceType;->MEMORIES:Lcom/snap/modules/create_post/PostSourceType;
+    const-string v3, "MEMORIES"
 
     .line 70
     .line 71
-    const/4 v14, 0x7
+    invoke-direct {v15, v3, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 72
-    new-array v14, v14, [Lcom/snap/modules/create_post/PostSourceType;
-
     .line 73
     .line 74
-    aput-object v7, v14, v6
+    sput-object v15, Lcom/snap/modules/create_post/PostSourceType;->MEMORIES:Lcom/snap/modules/create_post/PostSourceType;
 
     .line 75
     .line 76
-    aput-object v8, v14, v5
+    new-instance v3, Lcom/snap/modules/create_post/PostSourceType;
 
     .line 77
     .line 78
-    aput-object v9, v14, v4
+    const/16 v17, 0x6
 
     .line 79
     .line 80
-    aput-object v10, v14, v3
+    const-string v2, "MEMORIES_QUICK_POST"
 
     .line 81
     .line 82
-    aput-object v11, v14, v2
+    invoke-direct {v3, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 83
     .line 84
-    aput-object v12, v14, v1
-
     .line 85
+    sput-object v3, Lcom/snap/modules/create_post/PostSourceType;->MEMORIES_QUICK_POST:Lcom/snap/modules/create_post/PostSourceType;
+
     .line 86
-    aput-object v13, v14, v0
-
     .line 87
-    .line 88
-    sput-object v14, Lcom/snap/modules/create_post/PostSourceType;->a:[Lcom/snap/modules/create_post/PostSourceType;
+    new-instance v2, Lcom/snap/modules/create_post/PostSourceType;
 
+    .line 88
     .line 89
+    const/16 v18, 0x7
+
     .line 90
+    .line 91
+    const-string v1, "SPOTLIGHT_SUBMISSION"
+
+    .line 92
+    .line 93
+    invoke-direct {v2, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 94
+    .line 95
+    .line 96
+    sput-object v2, Lcom/snap/modules/create_post/PostSourceType;->SPOTLIGHT_SUBMISSION:Lcom/snap/modules/create_post/PostSourceType;
+
+    .line 97
+    .line 98
+    const/16 v1, 0x9
+
+    .line 99
+    .line 100
+    new-array v1, v1, [Lcom/snap/modules/create_post/PostSourceType;
+
+    .line 101
+    .line 102
+    aput-object v9, v1, v8
+
+    .line 103
+    .line 104
+    aput-object v10, v1, v7
+
+    .line 105
+    .line 106
+    aput-object v11, v1, v6
+
+    .line 107
+    .line 108
+    aput-object v12, v1, v5
+
+    .line 109
+    .line 110
+    aput-object v13, v1, v4
+
+    .line 111
+    .line 112
+    aput-object v14, v1, v16
+
+    .line 113
+    .line 114
+    aput-object v15, v1, v17
+
+    .line 115
+    .line 116
+    aput-object v3, v1, v18
+
+    .line 117
+    .line 118
+    aput-object v2, v1, v0
+
+    .line 119
+    .line 120
+    sput-object v1, Lcom/snap/modules/create_post/PostSourceType;->a:[Lcom/snap/modules/create_post/PostSourceType;
+
+    .line 121
+    .line 122
     return-void
 .end method
 

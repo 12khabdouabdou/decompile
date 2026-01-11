@@ -1,10 +1,10 @@
 .class public final Lcom/snap/snapshots/opera/SnapshotsOperaOverlayButton;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'icon\':r?<e>:\'[0]\',\'text\':s?,\'width\':s?,\'onClick\':f?(),\'noSpinnerOnClick\':b@?"
     typeReferences = {

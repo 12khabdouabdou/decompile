@@ -1,37 +1,43 @@
 .class public final LwQb;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements LBu7;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LZJc;
+.field public final b:LwOb;
+
+.field public final c:LtOb;
+
+.field public final d:LQS9;
 
 
 # direct methods
-.method public synthetic constructor <init>(LZJc;I)V
+.method public synthetic constructor <init>(LwOb;LtOb;LQS9;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, LwQb;->a:I
+    iput p4, p0, LwQb;->a:I
 
-    iput-object p1, p0, LwQb;->b:LZJc;
+    iput-object p1, p0, LwQb;->b:LwOb;
 
-    const/4 p1, 0x0
+    iput-object p2, p0, LwQb;->c:LtOb;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    iput-object p3, p0, LwQb;->d:LQS9;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public final a()Lsv7;
+    .locals 1
 
     .line 1
     iget v0, p0, LwQb;->a:I
@@ -43,99 +49,467 @@
     .line 4
     .line 5
     .line 6
-    sget-object v0, LJ03;->a:LQd7;
+    iget-object v0, p0, LwQb;->b:LwOb;
 
     .line 7
     .line 8
-    const-string v1, "STREAKS_EDUCATION_ENABLED"
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    iget-object v0, p0, LwQb;->b:LwOb;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LwQb;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v0, "thumbnails"
+
+    .line 7
+    .line 8
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    const-string v0, "files"
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final c()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, LwQb;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :pswitch_0
+    const/4 v0, 0x0
+
+    return v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final d()J
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, LwQb;->c:LtOb;
+
+    .line 2
+    .line 3
+    iget v1, p0, LwQb;->a:I
+
+    .line 4
+    .line 5
+    packed-switch v1, :pswitch_data_0
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 9
     .line 10
-    iget-object v2, p0, LwQb;->b:LZJc;
+    .line 11
+    sget-object v1, LOVi;->a:LiAi;
+
+    .line 12
+    .line 13
+    iget-object v0, v0, LtOb;->d:LREi;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    check-cast v0, Ljava/lang/Number;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-wide v0
+
+    .line 25
+    return-wide v0
+
+    .line 26
+    :pswitch_0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 27
+    .line 28
+    .line 29
+    sget-object v1, LOVi;->a:LiAi;
+
+    .line 30
+    .line 31
+    iget-object v1, v0, LtOb;->c:LREi;
+
+    .line 32
+    .line 33
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v1
+
+    .line 37
+    check-cast v1, Ljava/lang/Number;
+
+    .line 38
+    .line 39
+    invoke-virtual {v1}, Ljava/lang/Number;->floatValue()F
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v1
+
+    .line 43
+    invoke-static {}, Landroid/os/Environment;->getDataDirectory()Ljava/io/File;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v2
+
+    .line 47
+    new-instance v3, Landroid/os/StatFs;
+
+    .line 48
+    .line 49
+    invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v2
+
+    .line 53
+    invoke-direct {v3, v2}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
+
+    .line 54
+    .line 55
+    .line 56
+    invoke-virtual {v3}, Landroid/os/StatFs;->getBlockSizeLong()J
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-wide v4
+
+    .line 60
+    invoke-virtual {v3}, Landroid/os/StatFs;->getAvailableBlocksLong()J
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-wide v2
+
+    .line 64
+    mul-long v2, v2, v4
+
+    .line 65
+    .line 66
+    long-to-float v2, v2
+
+    .line 67
+    mul-float v1, v1, v2
+
+    .line 68
+    .line 69
+    float-to-long v1, v1
+
+    .line 70
+    iget-object v0, v0, LtOb;->b:LREi;
+
+    .line 71
+    .line 72
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object v0
+
+    .line 76
+    check-cast v0, Ljava/lang/Number;
+
+    .line 77
+    .line 78
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-wide v3
+
+    .line 82
+    invoke-static {v3, v4, v1, v2}, Ljava/lang/Math;->max(JJ)J
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-wide v0
+
+    .line 86
+    return-wide v0
+
+    .line 87
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final e()Lrp0;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LwQb;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LTJb;->Z:LTJb;
+
+    .line 7
+    .line 8
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    sget-object v0, LTJb;->Z:LTJb;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final f()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, LwQb;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LwQb;->c:LtOb;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    return v0
+
+    .line 13
+    :pswitch_0
+    iget-object v0, p0, LwQb;->c:LtOb;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 v0, 0x0
+
+    .line 19
+    return v0
+
+    .line 20
+    nop
+
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final g()Ljava/util/Set;
+    .locals 6
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    const/4 v2, 0x0
+
+    .line 4
+    const/4 v3, 0x2
+
+    .line 5
+    iget v4, p0, LwQb;->a:I
+
+    .line 6
+    .line 7
+    packed-switch v4, :pswitch_data_0
+
+    .line 8
+    .line 9
+    .line 10
+    new-array v0, v3, [LCv7;
 
     .line 11
     .line 12
-    invoke-static {v2, v1, v0}, LNWi;->l(LcH3;Ljava/lang/String;LQd7;)Ljava/lang/Boolean;
+    sget-object v4, LWa8;->c:LWa8;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object v0
+    aput-object v4, v0, v2
 
+    .line 15
     .line 16
-    if-eqz v0, :cond_0
+    sget-object v2, LWa8;->t:LWa8;
 
     .line 17
     .line 18
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    aput-object v2, v0, v1
 
     .line 19
     .line 20
+    invoke-static {v3}, LKi5;->O(I)Ljava/util/HashSet;
+
     .line 21
-    move-result v0
-
     .line 22
-    goto :goto_0
-
     .line 23
-    :cond_0
-    const/4 v0, 0x0
+    move-result-object v1
 
     .line 24
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v1, v0}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     .line 25
     .line 26
     .line 27
-    move-result-object v0
+    return-object v1
 
     .line 28
-    return-object v0
+    :pswitch_0
+    new-array v4, v0, [LCv7;
 
     .line 29
-    :pswitch_0
-    sget-object v0, LJ03;->a:LQd7;
-
     .line 30
+    sget-object v5, LWa8;->Z:LWa8;
+
     .line 31
-    const-string v1, "MIN_STREAK_COUNT_TO_ENABLE_RESTORE"
-
     .line 32
+    aput-object v5, v4, v2
+
     .line 33
-    iget-object v2, p0, LwQb;->b:LZJc;
-
     .line 34
-    .line 35
-    invoke-static {v2, v1, v0}, LNWi;->p(LcH3;Ljava/lang/String;LQd7;)Ljava/lang/Integer;
+    sget-object v2, LWa8;->e0:LWa8;
 
+    .line 35
     .line 36
+    aput-object v2, v4, v1
+
     .line 37
     .line 38
-    move-result-object v0
+    sget-object v1, LWa8;->X:LWa8;
 
     .line 39
-    if-eqz v0, :cond_1
-
     .line 40
-    .line 41
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    aput-object v1, v4, v3
 
+    .line 41
     .line 42
+    sget-object v1, LWa8;->Y:LWa8;
+
     .line 43
     .line 44
-    move-result v0
+    const/4 v2, 0x3
 
     .line 45
-    goto :goto_1
+    aput-object v1, v4, v2
 
     .line 46
-    :cond_1
-    const/4 v0, 0x0
-
     .line 47
-    :goto_1
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v0}, LKi5;->O(I)Ljava/util/HashSet;
 
     .line 48
     .line 49
@@ -143,101 +517,102 @@
     move-result-object v0
 
     .line 51
-    return-object v0
+    invoke-static {v0, v4}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     .line 52
-    :pswitch_1
-    sget-object v0, LJ03;->a:LQd7;
-
     .line 53
     .line 54
-    const-string v1, "MERLIN_WELCOME_CARD_ENABLED"
+    return-object v0
 
     .line 55
-    .line 56
-    iget-object v2, p0, LwQb;->b:LZJc;
-
-    .line 57
-    .line 58
-    invoke-static {v2, v1, v0}, LNWi;->l(LcH3;Ljava/lang/String;LQd7;)Ljava/lang/Boolean;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object v0
-
-    .line 62
-    if-eqz v0, :cond_2
-
-    .line 63
-    .line 64
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 65
-    .line 66
-    .line 67
-    move-result v0
-
-    .line 68
-    goto :goto_2
-
-    .line 69
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 70
-    :goto_2
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v0
-
-    .line 74
-    return-object v0
-
-    .line 75
-    :pswitch_2
-    sget-object v0, LJ03;->a:LQd7;
-
-    .line 76
-    .line 77
-    const-string v1, "ANDROID_API_GATEWAY_PROD_ENDPOINT"
-
-    .line 78
-    .line 79
-    iget-object v2, p0, LwQb;->b:LZJc;
-
-    .line 80
-    .line 81
-    invoke-static {v2, v1, v0}, LNWi;->t(LcH3;Ljava/lang/String;LQd7;)Ljava/lang/String;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v0
-
-    .line 85
-    if-nez v0, :cond_3
-
-    .line 86
-    .line 87
-    const-string v0, "aws-proxy-gcp.api.snapchat.com"
-
-    .line 88
-    .line 89
-    :cond_3
-    return-object v0
-
-    .line 90
-    nop
-
-    .line 91
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final h()LkLg;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LwQb;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LwQb;->d:LQS9;
+
+    .line 7
+    .line 8
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    check-cast v0, LkLg;
+
+    .line 13
+    .line 14
+    return-object v0
+
+    .line 15
+    :pswitch_0
+    iget-object v0, p0, LwQb;->d:LQS9;
+
+    .line 16
+    .line 17
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    check-cast v0, LkLg;
+
+    .line 22
+    .line 23
+    return-object v0
+
+    .line 24
+    nop
+
+    .line 25
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final i()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, LwQb;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :pswitch_0
+    const/4 v0, 0x0
+
+    return v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
         :pswitch_0
     .end packed-switch
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final Z0:Lli;
+.field public final Z0:Lnj;
 
 .field public a1:Z
 
@@ -17,15 +17,15 @@
     invoke-direct {p0, p1}, Landroidx/viewpager/widget/ViewPager;-><init>(Landroid/content/Context;)V
 
     .line 2
-    new-instance p1, Lli;
+    new-instance p1, Lnj;
 
     const/16 v0, 0xd
 
     .line 3
-    invoke-direct {p1, v0}, Lli;-><init>(I)V
+    invoke-direct {p1, v0}, Lnj;-><init>(I)V
 
     .line 4
-    iput-object p1, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lli;
+    iput-object p1, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lnj;
 
     const/4 p1, 0x0
 
@@ -44,7 +44,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {v0, v1}, LTVd;->u(FLandroid/content/Context;)F
 
     move-result v0
 
@@ -63,15 +63,15 @@
     invoke-direct {p0, p1, p2}, Landroidx/viewpager/widget/ViewPager;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 10
-    new-instance p1, Lli;
+    new-instance p1, Lnj;
 
     const/16 p2, 0xd
 
     .line 11
-    invoke-direct {p1, p2}, Lli;-><init>(I)V
+    invoke-direct {p1, p2}, Lnj;-><init>(I)V
 
     .line 12
-    iput-object p1, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lli;
+    iput-object p1, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lnj;
 
     const/4 p1, 0x0
 
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    invoke-static {p2, v0}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {p2, v0}, LTVd;->u(FLandroid/content/Context;)F
 
     move-result p2
 
@@ -104,11 +104,11 @@
 
 
 # virtual methods
-.method public final B(I)V
+.method public final A(I)V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager;->e0:Lvu1;
+    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager;->e0:LMx1;
 
     .line 2
     .line 3
@@ -120,11 +120,11 @@
 
     .line 6
     :cond_0
-    check-cast v0, LkWa;
+    check-cast v0, LM8b;
 
     .line 7
     .line 8
-    iget-object v1, v0, LkWa;->t:Ljava/util/ArrayList;
+    iget-object v1, v0, LM8b;->t:Ljava/util/ArrayList;
 
     .line 9
     .line 10
@@ -160,7 +160,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-static {v2, v1}, LkWa;->J(II)I
+    invoke-static {v2, v1}, LM8b;->I(II)I
 
     .line 25
     .line 26
@@ -168,14 +168,14 @@
     move-result v3
 
     .line 28
-    iget v0, v0, LkWa;->X:I
+    iget v0, v0, LM8b;->X:I
 
     .line 29
     .line 30
     add-int/2addr v3, v0
 
     .line 31
-    invoke-static {v3, v1}, LkWa;->J(II)I
+    invoke-static {v3, v1}, LM8b;->I(II)I
 
     .line 32
     .line 33
@@ -186,7 +186,7 @@
     sub-int/2addr p1, v0
 
     .line 36
-    invoke-static {p1, v1}, LkWa;->J(II)I
+    invoke-static {p1, v1}, LM8b;->I(II)I
 
     .line 37
     .line 38
@@ -198,7 +198,7 @@
 
     .line 41
     :cond_2
-    invoke-super {p0, p1}, Landroidx/viewpager/widget/ViewPager;->B(I)V
+    invoke-super {p0, p1}, Landroidx/viewpager/widget/ViewPager;->A(I)V
 
     .line 42
     .line 43
@@ -210,7 +210,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager;->e0:Lvu1;
+    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager;->e0:LMx1;
 
     .line 2
     .line 3
@@ -222,11 +222,11 @@
 
     .line 6
     :cond_0
-    check-cast v0, LkWa;
+    check-cast v0, LM8b;
 
     .line 7
     .line 8
-    iget-object v1, v0, LkWa;->t:Ljava/util/ArrayList;
+    iget-object v1, v0, LM8b;->t:Ljava/util/ArrayList;
 
     .line 9
     .line 10
@@ -262,7 +262,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-static {v2, v1}, LkWa;->J(II)I
+    invoke-static {v2, v1}, LM8b;->I(II)I
 
     .line 25
     .line 26
@@ -270,14 +270,14 @@
     move-result v3
 
     .line 28
-    iget v0, v0, LkWa;->X:I
+    iget v0, v0, LM8b;->X:I
 
     .line 29
     .line 30
     add-int/2addr v3, v0
 
     .line 31
-    invoke-static {v3, v1}, LkWa;->J(II)I
+    invoke-static {v3, v1}, LM8b;->I(II)I
 
     .line 32
     .line 33
@@ -288,7 +288,7 @@
     sub-int/2addr p1, v0
 
     .line 36
-    invoke-static {p1, v1}, LkWa;->J(II)I
+    invoke-static {p1, v1}, LM8b;->I(II)I
 
     .line 37
     .line 38
@@ -312,7 +312,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lli;
+    iget-object v0, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lnj;
 
     .line 2
     .line 3
@@ -320,7 +320,7 @@
 
     .line 4
     .line 5
-    iget-boolean v0, v0, Lli;->b:Z
+    iget-boolean v0, v0, Lnj;->b:Z
 
     .line 6
     .line 7
@@ -350,11 +350,11 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager;->e0:Lvu1;
+    iget-object v0, p0, Landroidx/viewpager/widget/ViewPager;->e0:LMx1;
 
     .line 2
     .line 3
-    check-cast v0, LkWa;
+    check-cast v0, LM8b;
 
     .line 4
     .line 5
@@ -369,7 +369,7 @@
 
     .line 9
     :cond_0
-    iget-object v0, v0, LkWa;->t:Ljava/util/ArrayList;
+    iget-object v0, v0, LM8b;->t:Ljava/util/ArrayList;
 
     .line 10
     .line 11
@@ -433,7 +433,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Landroidx/viewpager/widget/ViewPager;->e0:Lvu1;
+    iget-object v1, p0, Landroidx/viewpager/widget/ViewPager;->e0:LMx1;
 
     .line 4
     .line 5
@@ -445,11 +445,11 @@
 
     .line 8
     :cond_0
-    check-cast v1, LkWa;
+    check-cast v1, LM8b;
 
     .line 9
     .line 10
-    iget-object v1, v1, LkWa;->t:Ljava/util/ArrayList;
+    iget-object v1, v1, LM8b;->t:Ljava/util/ArrayList;
 
     .line 11
     .line 12
@@ -604,7 +604,7 @@
     move-result v0
 
     .line 5
-    iget-object v1, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lli;
+    iget-object v1, p0, Lcom/snap/maps/components/carousel/MapCarouselView;->Z0:Lnj;
 
     .line 6
     .line 7
@@ -633,7 +633,7 @@
 
     .line 17
     :cond_0
-    iput-boolean v2, v1, Lli;->b:Z
+    iput-boolean v2, v1, Lnj;->b:Z
 
     .line 18
     .line 19
@@ -669,7 +669,7 @@
     move-result-object v5
 
     .line 33
-    const v6, 0x7f0b1119
+    const v6, 0x7f0b1248
 
     .line 34
     .line 35
@@ -750,7 +750,7 @@
     move-result v4
 
     .line 71
-    invoke-virtual {v5, v0, v4}, Landroidx/recyclerview/widget/RecyclerView;->K(FF)Landroid/view/View;
+    invoke-virtual {v5, v0, v4}, Landroidx/recyclerview/widget/RecyclerView;->J(FF)Landroid/view/View;
 
     .line 72
     .line 73
@@ -766,7 +766,7 @@
 
     .line 78
     :cond_4
-    iput-boolean v3, v1, Lli;->b:Z
+    iput-boolean v3, v1, Lnj;->b:Z
 
     .line 79
     .line 80

@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -25,15 +25,19 @@
 
 
 # instance fields
-.field public allowFootsteps:LU0k;
+.field public allowFootsteps:LPqk;
 
-.field public allowFootstepsRealtimeCollection:LU0k;
+.field public allowFootstepsRealtimeCollection:LPqk;
 
-.field public allowHomeWorkCallout:LU0k;
+.field public allowHomeWorkCallout:LPqk;
 
-.field public currentUserAvatarId:LW0k;
+.field public batteryInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
 
-.field public currentUserId:LW0k;
+.field public currentUserAvatarId:LRqk;
+
+.field public currentUserId:LRqk;
+
+.field public currentUserPetId:LRqk;
 
 .field public currentUserPose:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
@@ -49,7 +53,7 @@
 
 .field public mapBestFriendScores:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;
 
-.field public mapSessionId:LX0k;
+.field public mapSessionId:LSqk;
 
 .field public mutedFriendLocations:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MutedFriendLocationsUpdate;
 
@@ -71,7 +75,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -96,7 +100,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -159,7 +163,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -172,7 +176,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
 
     move-result-object p0
 
@@ -183,7 +187,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -210,15 +214,15 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LX0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LSqk;
 
     .line 3
     .line 4
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LW0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LRqk;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LW0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LRqk;
 
     .line 7
     .line 8
@@ -270,7 +274,7 @@
 
     .line 31
     .line 32
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LPqk;
 
     .line 33
     .line 34
@@ -286,11 +290,11 @@
 
     .line 39
     .line 40
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LPqk;
 
     .line 41
     .line 42
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LPqk;
 
     .line 43
     .line 44
@@ -306,17 +310,25 @@
 
     .line 49
     .line 50
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPetId:LRqk;
 
     .line 51
     .line 52
-    const/4 v0, -0x1
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->batteryInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
 
     .line 53
+    .line 54
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
+
+    .line 55
+    .line 56
+    const/4 v0, -0x1
+
+    .line 57
     iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
-    .line 54
-    .line 55
+    .line 58
+    .line 59
     return-object p0
 .end method
 
@@ -324,7 +336,7 @@
     .locals 5
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -332,7 +344,7 @@
     move-result v0
 
     .line 5
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LX0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LSqk;
 
     .line 6
     .line 7
@@ -343,7 +355,7 @@
     const/4 v2, 0x1
 
     .line 10
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 11
     .line 12
@@ -355,7 +367,7 @@
 
     .line 15
     :cond_0
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LW0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LRqk;
 
     .line 16
     .line 17
@@ -366,7 +378,7 @@
     const/4 v2, 0x2
 
     .line 20
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 21
     .line 22
@@ -378,7 +390,7 @@
 
     .line 25
     :cond_1
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LW0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LRqk;
 
     .line 26
     .line 27
@@ -389,7 +401,7 @@
     const/4 v2, 0x3
 
     .line 30
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 31
     .line 32
@@ -412,7 +424,7 @@
     const/4 v2, 0x4
 
     .line 40
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 41
     .line 42
@@ -435,7 +447,7 @@
     const/4 v2, 0x5
 
     .line 50
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 51
     .line 52
@@ -458,7 +470,7 @@
     const/4 v2, 0x7
 
     .line 60
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 61
     .line 62
@@ -482,7 +494,7 @@
 
     .line 70
     .line 71
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 72
     .line 73
@@ -506,7 +518,7 @@
 
     .line 81
     .line 82
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 83
     .line 84
@@ -530,7 +542,7 @@
 
     .line 92
     .line 93
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 94
     .line 95
@@ -554,7 +566,7 @@
 
     .line 103
     .line 104
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 105
     .line 106
@@ -578,7 +590,7 @@
 
     .line 114
     .line 115
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 116
     .line 117
@@ -635,7 +647,7 @@
 
     .line 139
     .line 140
-    invoke-static {v4, v3}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v4, v3}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 141
     .line 142
@@ -670,7 +682,7 @@
 
     .line 154
     .line 155
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 156
     .line 157
@@ -682,7 +694,7 @@
 
     .line 160
     :cond_d
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LU0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LPqk;
 
     .line 161
     .line 162
@@ -694,7 +706,7 @@
 
     .line 165
     .line 166
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 167
     .line 168
@@ -718,7 +730,7 @@
 
     .line 176
     .line 177
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 178
     .line 179
@@ -742,7 +754,7 @@
 
     .line 187
     .line 188
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 189
     .line 190
@@ -766,7 +778,7 @@
 
     .line 198
     .line 199
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 200
     .line 201
@@ -778,7 +790,7 @@
 
     .line 204
     :cond_11
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LU0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LPqk;
 
     .line 205
     .line 206
@@ -790,7 +802,7 @@
 
     .line 209
     .line 210
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 211
     .line 212
@@ -802,7 +814,7 @@
 
     .line 215
     :cond_12
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LU0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LPqk;
 
     .line 216
     .line 217
@@ -814,7 +826,7 @@
 
     .line 220
     .line 221
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 222
     .line 223
@@ -865,7 +877,7 @@
 
     .line 243
     .line 244
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 245
     .line 246
@@ -888,10 +900,61 @@
 
     .line 253
     :cond_15
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPetId:LRqk;
+
+    .line 254
+    .line 255
+    if-eqz v1, :cond_16
+
+    .line 256
+    .line 257
+    const/16 v2, 0x16
+
+    .line 258
+    .line 259
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
+    .line 260
+    .line 261
+    .line 262
+    move-result v1
+
+    .line 263
+    add-int/2addr v0, v1
+
+    .line 264
+    :cond_16
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->batteryInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
+
+    .line 265
+    .line 266
+    if-eqz v1, :cond_17
+
+    .line 267
+    .line 268
+    const/16 v2, 0x17
+
+    .line 269
+    .line 270
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
+    .line 271
+    .line 272
+    .line 273
+    move-result v1
+
+    .line 274
+    add-int/2addr v1, v0
+
+    .line 275
+    return v1
+
+    .line 276
+    :cond_17
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -900,14 +963,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -918,7 +981,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -927,7 +990,7 @@
     sparse-switch v0, :sswitch_data_0
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -935,557 +998,601 @@
 
     goto/16 :goto_5
 
+    .line 4
     :sswitch_0
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->batteryInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
+
+    if-nez v0, :cond_1
+
+    .line 5
+    new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
+
+    invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->batteryInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
+
+    .line 6
+    :cond_1
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->batteryInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
+
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    goto :goto_0
+
+    .line 7
+    :sswitch_1
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPetId:LRqk;
+
+    if-nez v0, :cond_2
+
+    .line 8
+    new-instance v0, LRqk;
+
+    invoke-direct {v0}, LRqk;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPetId:LRqk;
+
+    .line 9
+    :cond_2
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPetId:LRqk;
+
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    goto :goto_0
+
+    :sswitch_2
     const/16 v0, 0xaa
 
-    .line 4
-    invoke-static {p1, v0}, Ldw8;->E(Lqa3;I)I
+    .line 10
+    invoke-static {p1, v0}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
-    .line 5
+    .line 11
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapBestFriendScores:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;
 
-    if-nez v2, :cond_1
+    if-nez v2, :cond_3
 
     const/4 v3, 0x0
 
     goto :goto_1
 
-    :cond_1
+    :cond_3
     array-length v3, v2
 
     :goto_1
     add-int/2addr v0, v3
 
-    .line 6
+    .line 12
     new-array v4, v0, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;
 
-    if-eqz v3, :cond_2
+    if-eqz v3, :cond_4
 
-    .line 7
+    .line 13
     invoke-static {v2, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    :cond_2
+    :cond_4
     :goto_2
     add-int/lit8 v1, v0, -0x1
 
-    if-ge v3, v1, :cond_3
+    if-ge v3, v1, :cond_5
 
-    .line 8
+    .line 14
     new-instance v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;
 
     invoke-direct {v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;-><init>()V
 
     aput-object v1, v4, v3
 
-    .line 9
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 15
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 10
-    invoke-virtual {p1}, Lqa3;->u()I
+    .line 16
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 11
-    :cond_3
+    .line 17
+    :cond_5
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;-><init>()V
 
     aput-object v0, v4, v3
 
-    .line 12
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    .line 13
-    iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapBestFriendScores:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;
-
-    goto :goto_0
-
-    .line 14
-    :sswitch_1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LU0k;
-
-    if-nez v0, :cond_4
-
-    .line 15
-    new-instance v0, LU0k;
-
-    invoke-direct {v0}, LU0k;-><init>()V
-
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LU0k;
-
-    .line 16
-    :cond_4
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LU0k;
-
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    goto :goto_0
-
-    .line 17
-    :sswitch_2
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LU0k;
-
-    if-nez v0, :cond_5
-
     .line 18
-    new-instance v0, LU0k;
-
-    invoke-direct {v0}, LU0k;-><init>()V
-
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LU0k;
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 19
-    :cond_5
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LU0k;
-
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapBestFriendScores:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapBestFriendScore;
 
     goto :goto_0
 
     .line 20
     :sswitch_3
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->usersDetails:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UsersDetails;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LPqk;
 
     if-nez v0, :cond_6
 
     .line 21
+    new-instance v0, LPqk;
+
+    invoke-direct {v0}, LPqk;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LPqk;
+
+    .line 22
+    :cond_6
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LPqk;
+
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    goto :goto_0
+
+    .line 23
+    :sswitch_4
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LPqk;
+
+    if-nez v0, :cond_7
+
+    .line 24
+    new-instance v0, LPqk;
+
+    invoke-direct {v0}, LPqk;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LPqk;
+
+    .line 25
+    :cond_7
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LPqk;
+
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    goto/16 :goto_0
+
+    .line 26
+    :sswitch_5
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->usersDetails:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UsersDetails;
+
+    if-nez v0, :cond_8
+
+    .line 27
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UsersDetails;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UsersDetails;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->usersDetails:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UsersDetails;
 
-    .line 22
-    :cond_6
+    .line 28
+    :cond_8
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->usersDetails:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UsersDetails;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    .line 23
-    :sswitch_4
+    .line 29
+    :sswitch_6
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->stickerOverrides:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StickerOverrides;
 
-    if-nez v0, :cond_7
+    if-nez v0, :cond_9
 
-    .line 24
+    .line 30
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StickerOverrides;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StickerOverrides;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->stickerOverrides:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StickerOverrides;
 
-    .line 25
-    :cond_7
+    .line 31
+    :cond_9
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->stickerOverrides:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$StickerOverrides;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 26
-    :sswitch_5
+    .line 32
+    :sswitch_7
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->sensorInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SensorInfo;
 
-    if-nez v0, :cond_8
+    if-nez v0, :cond_a
 
-    .line 27
+    .line 33
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SensorInfo;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SensorInfo;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->sensorInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SensorInfo;
 
-    .line 28
-    :cond_8
+    .line 34
+    :cond_a
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->sensorInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$SensorInfo;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 29
-    :sswitch_6
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LU0k;
+    .line 35
+    :sswitch_8
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LPqk;
 
-    if-nez v0, :cond_9
+    if-nez v0, :cond_b
 
-    .line 30
-    new-instance v0, LU0k;
+    .line 36
+    new-instance v0, LPqk;
 
-    invoke-direct {v0}, LU0k;-><init>()V
+    invoke-direct {v0}, LPqk;-><init>()V
 
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LPqk;
 
-    .line 31
-    :cond_9
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LU0k;
+    .line 37
+    :cond_b
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LPqk;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 32
-    :sswitch_7
+    .line 38
+    :sswitch_9
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->widgetInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$WidgetInfo;
 
-    if-nez v0, :cond_a
+    if-nez v0, :cond_c
 
-    .line 33
+    .line 39
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$WidgetInfo;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$WidgetInfo;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->widgetInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$WidgetInfo;
 
-    .line 34
-    :cond_a
+    .line 40
+    :cond_c
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->widgetInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$WidgetInfo;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    :sswitch_8
+    :sswitch_a
     const/16 v0, 0x6a
 
-    .line 35
-    invoke-static {p1, v0}, Ldw8;->E(Lqa3;I)I
+    .line 41
+    invoke-static {p1, v0}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
-    .line 36
+    .line 42
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->emojiPreferences:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
 
-    if-nez v2, :cond_b
+    if-nez v2, :cond_d
 
     const/4 v3, 0x0
 
     goto :goto_3
 
-    :cond_b
+    :cond_d
     array-length v3, v2
 
     :goto_3
     add-int/2addr v0, v3
 
-    .line 37
+    .line 43
     new-array v4, v0, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
 
-    if-eqz v3, :cond_c
+    if-eqz v3, :cond_e
 
-    .line 38
+    .line 44
     invoke-static {v2, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    :cond_c
+    :cond_e
     :goto_4
     add-int/lit8 v1, v0, -0x1
 
-    if-ge v3, v1, :cond_d
+    if-ge v3, v1, :cond_f
 
-    .line 39
+    .line 45
     new-instance v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
 
     invoke-direct {v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;-><init>()V
 
     aput-object v1, v4, v3
 
-    .line 40
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 46
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 41
-    invoke-virtual {p1}, Lqa3;->u()I
+    .line 47
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_4
 
-    .line 42
-    :cond_d
+    .line 48
+    :cond_f
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;-><init>()V
 
     aput-object v0, v4, v3
 
-    .line 43
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 49
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 44
+    .line 50
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->emojiPreferences:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
 
     goto/16 :goto_0
 
-    .line 45
-    :sswitch_9
+    .line 51
+    :sswitch_b
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->locationSharingPreferences:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
 
-    if-nez v0, :cond_e
+    if-nez v0, :cond_10
 
-    .line 46
+    .line 52
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->locationSharingPreferences:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
 
-    .line 47
-    :cond_e
+    .line 53
+    :cond_10
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->locationSharingPreferences:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 48
-    :sswitch_a
+    .line 54
+    :sswitch_c
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mutedFriendLocations:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MutedFriendLocationsUpdate;
 
-    if-nez v0, :cond_f
+    if-nez v0, :cond_11
 
-    .line 49
+    .line 55
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MutedFriendLocationsUpdate;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MutedFriendLocationsUpdate;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mutedFriendLocations:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MutedFriendLocationsUpdate;
 
-    .line 50
-    :cond_f
+    .line 56
+    :cond_11
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mutedFriendLocations:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MutedFriendLocationsUpdate;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 51
-    :sswitch_b
+    .line 57
+    :sswitch_d
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->travelStatus:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$TravelStatusUpdate;
 
-    if-nez v0, :cond_10
+    if-nez v0, :cond_12
 
-    .line 52
+    .line 58
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$TravelStatusUpdate;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$TravelStatusUpdate;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->travelStatus:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$TravelStatusUpdate;
 
-    .line 53
-    :cond_10
+    .line 59
+    :cond_12
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->travelStatus:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$TravelStatusUpdate;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 54
-    :sswitch_c
+    .line 60
+    :sswitch_e
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->friendFeed:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendFeedUpdate;
 
-    if-nez v0, :cond_11
+    if-nez v0, :cond_13
 
-    .line 55
+    .line 61
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendFeedUpdate;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendFeedUpdate;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->friendFeed:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendFeedUpdate;
 
-    .line 56
-    :cond_11
+    .line 62
+    :cond_13
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->friendFeed:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendFeedUpdate;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 57
-    :sswitch_d
+    .line 63
+    :sswitch_f
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->friends:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendsUpdate;
 
-    if-nez v0, :cond_12
+    if-nez v0, :cond_14
 
-    .line 58
+    .line 64
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendsUpdate;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendsUpdate;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->friends:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendsUpdate;
 
-    .line 59
-    :cond_12
+    .line 65
+    :cond_14
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->friends:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$FriendsUpdate;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 60
-    :sswitch_e
+    .line 66
+    :sswitch_10
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->devicePermissions:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$DevicePermissions;
 
-    if-nez v0, :cond_13
+    if-nez v0, :cond_15
 
-    .line 61
+    .line 67
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$DevicePermissions;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$DevicePermissions;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->devicePermissions:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$DevicePermissions;
 
-    .line 62
-    :cond_13
+    .line 68
+    :cond_15
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->devicePermissions:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$DevicePermissions;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 63
-    :sswitch_f
+    .line 69
+    :sswitch_11
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->userLocation:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
-    if-nez v0, :cond_14
+    if-nez v0, :cond_16
 
-    .line 64
+    .line 70
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->userLocation:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
-    .line 65
-    :cond_14
+    .line 71
+    :cond_16
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->userLocation:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
-    .line 66
-    :sswitch_10
+    .line 72
+    :sswitch_12
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPose:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
-    if-nez v0, :cond_15
+    if-nez v0, :cond_17
 
-    .line 67
+    .line 73
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPose:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
-    .line 68
-    :cond_15
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPose:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
-
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    goto/16 :goto_0
-
-    .line 69
-    :sswitch_11
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LW0k;
-
-    if-nez v0, :cond_16
-
-    .line 70
-    new-instance v0, LW0k;
-
-    invoke-direct {v0}, LW0k;-><init>()V
-
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LW0k;
-
-    .line 71
-    :cond_16
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LW0k;
-
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    goto/16 :goto_0
-
-    .line 72
-    :sswitch_12
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LW0k;
-
-    if-nez v0, :cond_17
-
-    .line 73
-    new-instance v0, LW0k;
-
-    invoke-direct {v0}, LW0k;-><init>()V
-
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LW0k;
-
     .line 74
     :cond_17
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPose:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Sticker;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
     .line 75
     :sswitch_13
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LX0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LRqk;
 
     if-nez v0, :cond_18
 
     .line 76
-    new-instance v0, LX0k;
+    new-instance v0, LRqk;
 
-    invoke-direct {v0}, LX0k;-><init>()V
+    invoke-direct {v0}, LRqk;-><init>()V
 
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LX0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LRqk;
 
     .line 77
     :cond_18
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LX0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LRqk;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    goto/16 :goto_0
+
+    .line 78
+    :sswitch_14
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LRqk;
+
+    if-nez v0, :cond_19
+
+    .line 79
+    new-instance v0, LRqk;
+
+    invoke-direct {v0}, LRqk;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LRqk;
+
+    .line 80
+    :cond_19
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LRqk;
+
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    goto/16 :goto_0
+
+    .line 81
+    :sswitch_15
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LSqk;
+
+    if-nez v0, :cond_1a
+
+    .line 82
+    new-instance v0, LSqk;
+
+    invoke-direct {v0}, LSqk;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LSqk;
+
+    .line 83
+    :cond_1a
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LSqk;
+
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
     :goto_5
-    :sswitch_14
+    :sswitch_16
     return-object p0
 
     nop
 
     :sswitch_data_0
     .sparse-switch
-        0x0 -> :sswitch_14
-        0xa -> :sswitch_13
-        0x12 -> :sswitch_12
-        0x1a -> :sswitch_11
-        0x22 -> :sswitch_10
-        0x2a -> :sswitch_f
-        0x3a -> :sswitch_e
-        0x42 -> :sswitch_d
-        0x4a -> :sswitch_c
-        0x52 -> :sswitch_b
-        0x5a -> :sswitch_a
-        0x62 -> :sswitch_9
-        0x6a -> :sswitch_8
-        0x72 -> :sswitch_7
-        0x7a -> :sswitch_6
-        0x82 -> :sswitch_5
-        0x8a -> :sswitch_4
-        0x92 -> :sswitch_3
-        0x9a -> :sswitch_2
-        0xa2 -> :sswitch_1
-        0xaa -> :sswitch_0
+        0x0 -> :sswitch_16
+        0xa -> :sswitch_15
+        0x12 -> :sswitch_14
+        0x1a -> :sswitch_13
+        0x22 -> :sswitch_12
+        0x2a -> :sswitch_11
+        0x3a -> :sswitch_10
+        0x42 -> :sswitch_f
+        0x4a -> :sswitch_e
+        0x52 -> :sswitch_d
+        0x5a -> :sswitch_c
+        0x62 -> :sswitch_b
+        0x6a -> :sswitch_a
+        0x72 -> :sswitch_9
+        0x7a -> :sswitch_8
+        0x82 -> :sswitch_7
+        0x8a -> :sswitch_6
+        0x92 -> :sswitch_5
+        0x9a -> :sswitch_4
+        0xa2 -> :sswitch_3
+        0xaa -> :sswitch_2
+        0xb2 -> :sswitch_1
+        0xba -> :sswitch_0
     .end sparse-switch
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1494,7 +1601,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LX0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->mapSessionId:LSqk;
 
     .line 2
     .line 3
@@ -1505,13 +1612,13 @@
     const/4 v1, 0x1
 
     .line 6
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 7
     .line 8
     .line 9
     :cond_0
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserId:LRqk;
 
     .line 10
     .line 11
@@ -1522,13 +1629,13 @@
     const/4 v1, 0x2
 
     .line 14
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 15
     .line 16
     .line 17
     :cond_1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserAvatarId:LRqk;
 
     .line 18
     .line 19
@@ -1539,7 +1646,7 @@
     const/4 v1, 0x3
 
     .line 22
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 23
     .line 24
@@ -1556,7 +1663,7 @@
     const/4 v1, 0x4
 
     .line 30
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 31
     .line 32
@@ -1573,7 +1680,7 @@
     const/4 v1, 0x5
 
     .line 38
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 39
     .line 40
@@ -1590,7 +1697,7 @@
     const/4 v1, 0x7
 
     .line 46
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 47
     .line 48
@@ -1608,7 +1715,7 @@
 
     .line 54
     .line 55
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 56
     .line 57
@@ -1626,7 +1733,7 @@
 
     .line 63
     .line 64
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 65
     .line 66
@@ -1644,7 +1751,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 74
     .line 75
@@ -1662,7 +1769,7 @@
 
     .line 81
     .line 82
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 83
     .line 84
@@ -1680,7 +1787,7 @@
 
     .line 90
     .line 91
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 92
     .line 93
@@ -1731,7 +1838,7 @@
 
     .line 113
     .line 114
-    invoke-virtual {p1, v3, v2}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v3, v2}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 115
     .line 116
@@ -1757,13 +1864,13 @@
 
     .line 125
     .line 126
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 127
     .line 128
     .line 129
     :cond_d
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowHomeWorkCallout:LPqk;
 
     .line 130
     .line 131
@@ -1775,7 +1882,7 @@
 
     .line 134
     .line 135
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 136
     .line 137
@@ -1793,7 +1900,7 @@
 
     .line 143
     .line 144
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 145
     .line 146
@@ -1811,7 +1918,7 @@
 
     .line 152
     .line 153
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 154
     .line 155
@@ -1829,13 +1936,13 @@
 
     .line 161
     .line 162
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 163
     .line 164
     .line 165
     :cond_11
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootsteps:LPqk;
 
     .line 166
     .line 167
@@ -1847,13 +1954,13 @@
 
     .line 170
     .line 171
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 172
     .line 173
     .line 174
     :cond_12
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->allowFootstepsRealtimeCollection:LPqk;
 
     .line 175
     .line 176
@@ -1865,7 +1972,7 @@
 
     .line 179
     .line 180
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 181
     .line 182
@@ -1910,7 +2017,7 @@
 
     .line 200
     .line 201
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 202
     .line 203
@@ -1924,10 +2031,46 @@
 
     .line 207
     :cond_15
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->currentUserPetId:LRqk;
 
     .line 208
     .line 209
+    if-eqz v0, :cond_16
+
     .line 210
+    .line 211
+    const/16 v1, 0x16
+
+    .line 212
+    .line 213
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+
+    .line 214
+    .line 215
+    .line 216
+    :cond_16
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$UpdateUserInfoRequest;->batteryInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$BatteryInfo;
+
+    .line 217
+    .line 218
+    if-eqz v0, :cond_17
+
+    .line 219
+    .line 220
+    const/16 v1, 0x17
+
+    .line 221
+    .line 222
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+
+    .line 223
+    .line 224
+    .line 225
+    :cond_17
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 226
+    .line 227
+    .line 228
     return-void
 .end method

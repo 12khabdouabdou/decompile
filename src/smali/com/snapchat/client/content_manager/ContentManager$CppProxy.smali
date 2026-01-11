@@ -145,6 +145,9 @@
 .method private native native_queryCachedContentMetadataWithAttribution(JLcom/snapchat/client/mdp_common/MediaContextType;ILcom/snapchat/client/content_manager/QueryCachedContentMetadataCallback;)V
 .end method
 
+.method private native native_queryContentRetrievalMetricsAsync(JLcom/snapchat/client/content_manager/ContentKey;Lcom/snapchat/client/content_manager/ContentRetrievalMetricsCallback;)V
+.end method
+
 .method private native native_queryContentStatus(JLcom/snapchat/client/content_manager/ContentKey;)Lcom/snapchat/client/content_manager/ContentStatus;
 .end method
 
@@ -491,6 +494,22 @@
     .line 8
     .line 9
     .line 10
+    return-void
+.end method
+
+.method public queryContentRetrievalMetricsAsync(Lcom/snapchat/client/content_manager/ContentKey;Lcom/snapchat/client/content_manager/ContentRetrievalMetricsCallback;)V
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/content_manager/ContentManager$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1, p1, p2}, Lcom/snapchat/client/content_manager/ContentManager$CppProxy;->native_queryContentRetrievalMetricsAsync(JLcom/snapchat/client/content_manager/ContentKey;Lcom/snapchat/client/content_manager/ContentRetrievalMetricsCallback;)V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 

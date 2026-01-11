@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LTa;
+.implements LEb;
 
 
 # instance fields

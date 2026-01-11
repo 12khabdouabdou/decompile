@@ -3,78 +3,31 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/core/SingleOnSubscribe;
-
-
-# static fields
-.field public static final synthetic t:[LtC9;
+.implements LPi7;
 
 
 # instance fields
-.field public final synthetic a:LLYi;
+.field public final X:LT75;
 
-.field public final synthetic b:LMWe;
+.field public final Y:Lio/reactivex/rxjava3/core/Observable;
 
-.field public final synthetic c:LI66;
+.field public final Z:LREi;
+
+.field public final a:LU6e;
+
+.field public final b:LT75;
+
+.field public final c:Lio/reactivex/rxjava3/core/Observable;
+
+.field public final e0:LREi;
+
+.field public final f0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+.field public final t:LT75;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    .line 1
-    new-instance v0, Lnje;
-
-    .line 2
-    .line 3
-    const-class v1, LI66;
-
-    .line 4
-    .line 5
-    const-string v2, "emitterLocalRef"
-
-    .line 6
-    .line 7
-    const-string v3, "<v#0>"
-
-    .line 8
-    .line 9
-    invoke-direct {v0, v1, v2, v3}, Lnje;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    sget-object v1, LsJe;->a:LuJe;
-
-    .line 13
-    .line 14
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 v1, 0x1
-
-    .line 18
-    new-array v1, v1, [LtC9;
-
-    .line 19
-    .line 20
-    const/4 v2, 0x0
-
-    .line 21
-    aput-object v0, v1, v2
-
-    .line 22
-    .line 23
-    sput-object v1, LH66;->t:[LtC9;
-
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public constructor <init>(LLYi;LMWe;LI66;)V
+.method public constructor <init>(LU6e;LT75;LT75;Lio/reactivex/rxjava3/core/Observable;LT75;LT75;Lio/reactivex/rxjava3/core/Observable;)V
     .locals 0
 
     .line 1
@@ -83,218 +36,397 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LH66;->a:LLYi;
+    iput-object p1, p0, LH66;->a:LU6e;
 
     .line 5
     .line 6
-    iput-object p2, p0, LH66;->b:LMWe;
+    iput-object p3, p0, LH66;->b:LT75;
 
     .line 7
     .line 8
-    iput-object p3, p0, LH66;->c:LI66;
+    iput-object p4, p0, LH66;->c:Lio/reactivex/rxjava3/core/Observable;
 
     .line 9
     .line 10
+    iput-object p5, p0, LH66;->t:LT75;
+
+    .line 11
+    .line 12
+    iput-object p6, p0, LH66;->X:LT75;
+
+    .line 13
+    .line 14
+    iput-object p7, p0, LH66;->Y:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 15
+    .line 16
+    new-instance p1, LGz5;
+
+    .line 17
+    .line 18
+    const/4 p3, 0x1
+
+    .line 19
+    invoke-direct {p1, p2, p3}, LGz5;-><init>(LT75;I)V
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance p2, LREi;
+
+    .line 23
+    .line 24
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object p2, p0, LH66;->Z:LREi;
+
+    .line 28
+    .line 29
+    new-instance p1, Lg06;
+
+    .line 30
+    .line 31
+    const/16 p2, 0x13
+
+    .line 32
+    .line 33
+    invoke-direct {p1, p2, p0}, Lg06;-><init>(ILjava/lang/Object;)V
+
+    .line 34
+    .line 35
+    .line 36
+    new-instance p2, LREi;
+
+    .line 37
+    .line 38
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 39
+    .line 40
+    .line 41
+    iput-object p2, p0, LH66;->e0:LREi;
+
+    .line 42
+    .line 43
+    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 44
+    .line 45
+    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+
+    .line 46
+    .line 47
+    .line 48
+    iput-object p1, p0, LH66;->f0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 49
+    .line 50
     return-void
 .end method
 
-
-# virtual methods
-.method public final subscribe(Lio/reactivex/rxjava3/core/SingleEmitter;)V
-    .locals 5
+.method public static final b(LH66;)LVph;
+    .locals 0
 
     .line 1
-    new-instance v0, LXG7;
+    iget-object p0, p0, LH66;->e0:LREi;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, LXG7;-><init>(Ljava/lang/Object;)V
+    invoke-virtual {p0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    sget-object p1, LoRg;->c:LoRg;
+    move-result-object p0
 
     .line 7
+    check-cast p0, LVph;
+
     .line 8
-    new-instance p1, Lhad;
+    .line 9
+    return-object p0
+.end method
+
+.method public static final c(LH66;Luzb;)Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, LH66;->d()LFph;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {p1}, Luzb;->i()LEp2;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
 
     .line 9
-    .line 10
-    const-string v1, "__xsc_local__snap_token"
+    invoke-static {v0, v1}, LFph;->a(LFph;LEp2;)Lio/reactivex/rxjava3/core/Maybe;
 
+    .line 10
     .line 11
     .line 12
-    const-string v2, "https://auth.snapchat.com/snap_token/api/api-gateway"
+    move-result-object v0
 
     .line 13
-    .line 14
-    invoke-direct {p1, v1, v2}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    sget-object v1, LLX3;->s0:LLX3;
 
+    .line 14
     .line 15
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
+
     .line 16
     .line 17
-    const/4 v1, 0x1
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 18
-    new-array v1, v1, [Lhad;
-
     .line 19
     .line 20
-    const/4 v2, 0x0
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 21
-    aput-object p1, v1, v2
-
     .line 22
-    .line 23
-    invoke-static {v1}, LEdb;->h0([Lhad;)Ljava/util/HashMap;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeJust;
 
+    .line 23
     .line 24
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeJust;-><init>(Ljava/lang/Object;)V
+
     .line 25
     .line 26
-    move-result-object p1
-
     .line 27
-    new-instance v1, LRF8;
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeSwitchIfEmpty;
 
     .line 28
     .line 29
-    invoke-direct {v1}, LRF8;-><init>()V
+    invoke-direct {v0, v2, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeSwitchIfEmpty;-><init>(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/core/MaybeSource;)V
 
     .line 30
     .line 31
     .line 32
-    iput-object p1, v1, LRF8;->b:Ljava/util/HashMap;
+    new-instance v1, LE66;
 
     .line 33
     .line 34
-    iget-object p1, p0, LH66;->b:LMWe;
+    invoke-direct {v1, p1, p0}, LE66;-><init>(Luzb;LH66;)V
 
     .line 35
     .line 36
-    new-instance v2, Lm5;
+    .line 37
+    new-instance p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;
+
+    .line 38
+    .line 39
+    invoke-direct {p0, v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 40
+    .line 41
+    .line 42
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final C(Lb3e;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d()LFph;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LH66;->Z:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LFph;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final start()Lio/reactivex/rxjava3/disposables/Disposable;
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, LH66;->a:LU6e;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, LU6e;->j:Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
+
+    .line 4
+    .line 5
+    sget-object v2, LR46;->c:LR46;
+
+    .line 6
+    .line 7
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;
+
+    .line 11
+    .line 12
+    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
+    .line 13
+    .line 14
+    .line 15
+    sget-object v1, LKX3;->s0:LKX3;
+
+    .line 16
+    .line 17
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
+
+    .line 18
+    .line 19
+    invoke-direct {v4, v3, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance v3, LuR5;
+
+    .line 23
+    .line 24
+    const/16 v5, 0x10
+
+    .line 25
+    .line 26
+    invoke-direct {v3, v5, p0}, LuR5;-><init>(ILjava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
+
+    .line 30
+    .line 31
+    invoke-direct {v5, v4, v3}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 32
+    .line 33
+    .line 34
+    new-instance v3, LAW5;
+
+    .line 35
+    .line 36
+    const/16 v4, 0x8
 
     .line 37
     .line 38
-    iget-object v3, p0, LH66;->c:LI66;
+    invoke-direct {v3, v4, p0}, LAW5;-><init>(ILjava/lang/Object;)V
 
     .line 39
     .line 40
-    const/4 v4, 0x6
-
     .line 41
-    invoke-direct {v2, v3, v4, v0}, Lm5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;
 
     .line 42
     .line 43
-    .line 44
-    iget-object v0, p0, LH66;->a:LLYi;
+    invoke-direct {v4, v5, v3}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 44
     .line 45
     .line 46
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v3, p0, LH66;->f0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 47
     .line 48
-    .line 49
-    :try_start_0
-    invoke-static {p1}, LvD1;->a(Lcom/google/protobuf/nano/MessageNano;)Ljava/nio/ByteBuffer;
+    invoke-static {v4, v3}, LOIc;->M(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
+    .line 49
     .line 50
     .line 51
-    .line 52
-    move-result-object p1
+    iget-object v0, v0, LU6e;->j:Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
 
+    .line 52
     .line 53
-    new-instance v3, LrD1;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 54
     .line 55
-    const-class v4, LNWe;
-
     .line 56
-    .line 57
-    invoke-direct {v3, v2, v4}, LrD1;-><init>(LoG8;Ljava/lang/Class;)V
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;
 
+    .line 57
     .line 58
+    invoke-direct {v4, v0, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
     .line 59
     .line 60
-    iget-object v0, v0, LLYi;->a:Lcom/snapchat/client/grpc/UnifiedGrpcService;
-
     .line 61
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
+
     .line 62
-    const-string v4, "/snapchat.notif.DeviceStateReceiver/ReportDeviceState"
-
     .line 63
-    .line 64
-    invoke-virtual {v0, v4, p1, v1, v3}, Lcom/snapchat/client/grpc/UnifiedGrpcService;->unaryCall(Ljava/lang/String;Ljava/nio/ByteBuffer;Lcom/snapchat/client/grpc/CallOptionsBuilder;Lcom/snapchat/client/grpc/UnaryEventHandler;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-direct {v0, v4, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 64
     .line 65
     .line 66
-    .line 67
-    return-void
+    new-instance v1, LsO5;
 
+    .line 67
     .line 68
-    :catch_0
-    move-exception p1
+    const/16 v2, 0x15
 
     .line 69
-    goto :goto_0
-
     .line 70
-    :catch_1
-    move-exception p1
+    invoke-direct {v1, v2, p0}, LsO5;-><init>(ILjava/lang/Object;)V
 
     .line 71
-    goto :goto_0
-
     .line 72
-    :catch_2
-    move-exception p1
-
     .line 73
-    goto :goto_0
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapObservable;
 
     .line 74
-    :catch_3
-    move-exception p1
-
     .line 75
-    :goto_0
-    new-instance v0, Lcom/snapchat/client/grpc/Status;
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapObservable;-><init>(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 76
     .line 77
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->INTERNAL:Lcom/snapchat/client/grpc/StatusCode;
-
     .line 78
+    new-instance v0, LD66;
+
     .line 79
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
     .line 80
+    const/4 v1, 0x0
+
     .line 81
+    invoke-direct {v0, p0, v1}, LD66;-><init>(LH66;I)V
+
     .line 82
-    move-result-object p1
-
     .line 83
-    invoke-direct {v0, v1, p1}, Lcom/snapchat/client/grpc/Status;-><init>(Lcom/snapchat/client/grpc/StatusCode;Ljava/lang/String;)V
-
     .line 84
+    invoke-static {v2, v0, v3}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 85
     .line 86
-    const/4 p1, 0x0
-
     .line 87
-    invoke-virtual {v2, p1, v0}, Lm5;->a(Lcom/google/protobuf/nano/MessageNano;Lcom/snapchat/client/grpc/Status;)V
-
-    .line 88
-    .line 89
-    .line 90
-    return-void
+    return-object v3
 .end method

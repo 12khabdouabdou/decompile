@@ -1,37 +1,37 @@
 .class public final Lmu1;
-.super LrE9;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Lnu1;
+.field public final synthetic b:Lou1;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lnu1;I)V
+.method public synthetic constructor <init>(Lou1;I)V
     .locals 0
 
     .line 1
     iput p2, p0, Lmu1;->a:I
 
-    iput-object p1, p0, Lmu1;->b:Lnu1;
+    iput-object p1, p0, Lmu1;->b:Lou1;
 
-    const/4 p1, 0x0
+    const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
     iget v0, p0, Lmu1;->a:I
@@ -43,181 +43,91 @@
     .line 4
     .line 5
     .line 6
-    new-instance v0, Landroid/graphics/Paint;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    iget-object p1, p0, Lmu1;->b:Lou1;
 
     .line 9
-    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
-
     .line 10
+    iget-object p1, p1, Lou1;->X:LJp0;
+
     .line 11
     .line 12
-    sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 13
     .line 14
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    return-object p1
 
     .line 15
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 16
     .line 17
-    iget-object v1, p0, Lmu1;->b:Lnu1;
+    iget-object p1, p0, Lmu1;->b:Lou1;
 
     .line 18
     .line 19
-    iget-object v2, v1, Lnu1;->a:LOD0;
+    iget-object p1, p1, Lou1;->X:LJp0;
 
     .line 20
     .line 21
-    iget-object v2, v2, LOD0;->c:LWli;
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 22
     .line 23
-    iget v2, v2, LWli;->d:I
+    return-object p1
 
     .line 24
-    .line 25
-    invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setColor(I)V
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
 
+    .line 25
     .line 26
+    iget-object p1, p0, Lmu1;->b:Lou1;
+
     .line 27
     .line 28
-    iget-object v1, v1, Lnu1;->n:LXfi;
+    iget-object p1, p1, Lou1;->X:LJp0;
 
     .line 29
     .line 30
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 31
     .line 32
+    return-object p1
+
     .line 33
-    move-result-object v1
+    :pswitch_2
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 34
-    check-cast v1, Ljava/lang/Number;
-
     .line 35
-    .line 36
-    invoke-virtual {v1}, Ljava/lang/Number;->floatValue()F
+    iget-object p1, p0, Lmu1;->b:Lou1;
 
+    .line 36
     .line 37
+    iget-object p1, p1, Lou1;->X:LJp0;
+
     .line 38
     .line 39
-    move-result v1
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 40
-    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
-
     .line 41
+    return-object p1
+
     .line 42
-    .line 43
-    return-object v0
-
-    .line 44
-    :pswitch_0
-    iget-object v0, p0, Lmu1;->b:Lnu1;
-
-    .line 45
-    .line 46
-    iget-object v0, v0, Lnu1;->l:LXfi;
-
-    .line 47
-    .line 48
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    check-cast v0, Ljava/lang/Number;
-
-    .line 53
-    .line 54
-    invoke-virtual {v0}, Ljava/lang/Number;->floatValue()F
-
-    .line 55
-    .line 56
-    .line 57
-    move-result v0
-
-    .line 58
-    const v1, 0x3f666666    # 0.9f
-
-    .line 59
-    .line 60
-    .line 61
-    mul-float v0, v0, v1
-
-    .line 62
-    .line 63
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 64
-    .line 65
-    .line 66
-    move-result-object v0
-
-    .line 67
-    return-object v0
-
-    .line 68
-    :pswitch_1
-    iget-object v0, p0, Lmu1;->b:Lnu1;
-
-    .line 69
-    .line 70
-    iget-object v0, v0, Lnu1;->n:LXfi;
-
-    .line 71
-    .line 72
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object v0
-
-    .line 76
-    check-cast v0, Ljava/lang/Number;
-
-    .line 77
-    .line 78
-    invoke-virtual {v0}, Ljava/lang/Number;->floatValue()F
-
-    .line 79
-    .line 80
-    .line 81
-    move-result v0
-
-    .line 82
-    const/high16 v1, 0x40000000    # 2.0f
-
-    .line 83
-    .line 84
-    div-float/2addr v0, v1
-
-    .line 85
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object v0
-
-    .line 89
-    return-object v0
-
-    .line 90
     nop
 
-    .line 91
+    .line 43
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lzff;
+    proxyClass = Ldyf;
     schema = "\'isCompatibleWithClient\':f|m|(r:\'[0]\', f(b@), f(s)),\'calculateMediaEffectCapabilities\':f|m|(r:\'[0]\', f(l@), f(s))"
     typeReferences = {
         Lcom/snap/modules/mdp/NativeSnapDoc;

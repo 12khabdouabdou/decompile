@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LPd8;
+    proxyClass = Lmk8;
     schema = "\'blizzardLogger\':r:\'[0]\'"
     typeReferences = {
         Lcom/snap/composer/blizzard/Logging;

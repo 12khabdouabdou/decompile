@@ -4,89 +4,89 @@
 
 
 # virtual methods
-.method public abstract validateApprovalOAuthRequest(LR51;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LR51;
-        .annotation runtime Ljv1;
+.method public abstract validateApprovalOAuthRequest(Lh91;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lh91;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
+    .annotation runtime LQK9;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lh91;",
+            "Ljava/lang/String;",
+            ")",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "Lg41;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation runtime Llmd;
         value = "/oauth2/sc/approval"
     .end annotation
+.end method
 
+.method public abstract validateBitmojiOAuthRequest(Lo41;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lo41;
+        .annotation runtime Lzy1;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/String;
+        .annotation runtime LQQ8;
+            value = "__xsc_local__snap_token"
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LR51;",
+            "Lo41;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LA01;",
+            "Lq41;",
             ">;"
         }
     .end annotation
 
-    .annotation runtime LzB9;
-    .end annotation
-.end method
-
-.method public abstract validateBitmojiOAuthRequest(LI01;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LI01;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "__xsc_local__snap_token"
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
+    .annotation runtime Llmd;
         value = "/oauth2/sc/auth"
     .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "LI01;",
-            "Ljava/lang/String;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "LK01;",
-            ">;"
-        }
-    .end annotation
 .end method
 
-.method public abstract validateDenialOAuthRequest(LR51;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LR51;
-        .annotation runtime Ljv1;
+.method public abstract validateDenialOAuthRequest(Lh91;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lh91;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/oauth2/sc/denial"
+    .annotation runtime LQK9;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LR51;",
+            "Lh91;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LA01;",
+            "Lg41;",
             ">;"
         }
     .end annotation
 
-    .annotation runtime LzB9;
+    .annotation runtime Llmd;
+        value = "/oauth2/sc/denial"
     .end annotation
 .end method

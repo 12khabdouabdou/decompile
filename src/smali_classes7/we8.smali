@@ -2,19 +2,20 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lgw9;
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:LRoh;
 
-.field public final b:Ljava/lang/String;
+.field public final synthetic b:LbJk;
 
-.field public final c:Lte8;
-
-.field public final d:Lxe8;
+.field public final synthetic c:Landroid/app/Activity;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lte8;Lxe8;)V
+.method public constructor <init>(LRoh;LbJk;Landroid/app/Activity;)V
     .locals 0
 
     .line 1
@@ -23,380 +24,338 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lwe8;->a:Ljava/lang/String;
+    iput-object p1, p0, Lwe8;->a:LRoh;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lwe8;->b:Ljava/lang/String;
+    iput-object p2, p0, Lwe8;->b:LbJk;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lwe8;->c:Lte8;
+    iput-object p3, p0, Lwe8;->c:Landroid/app/Activity;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lwe8;->d:Lxe8;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a(Ljava/lang/Object;)V
+    .locals 7
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, Lcom/google/android/play/core/install/InstallState;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    invoke-virtual {p1}, Lcom/google/android/play/core/install/InstallState;->c()I
+
     .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lwe8;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lwe8;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, Lwe8;->a:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, Lwe8;->a:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, Lwe8;->b:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    iget-object v3, p1, Lwe8;->b:Ljava/lang/String;
-
-    .line 27
-    .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    if-nez v1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    iget-object v1, p0, Lwe8;->c:Lte8;
-
-    .line 36
-    .line 37
-    iget-object v3, p1, Lwe8;->c:Lte8;
-
-    .line 38
-    .line 39
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v1
-
-    .line 43
-    if-nez v1, :cond_4
-
-    .line 44
-    .line 45
-    return v2
-
-    .line 46
-    :cond_4
-    iget-object v1, p0, Lwe8;->d:Lxe8;
-
-    .line 47
-    .line 48
-    iget-object p1, p1, Lwe8;->d:Lxe8;
-
-    .line 49
-    .line 50
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 51
-    .line 52
-    .line 53
-    move-result p1
-
-    .line 54
-    if-nez p1, :cond_5
-
-    .line 55
-    .line 56
-    return v2
-
-    .line 57
-    :cond_5
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    iget-object v1, p0, Lwe8;->a:Ljava/lang/String;
-
-    .line 3
-    .line 4
-    if-nez v1, :cond_0
-
     .line 5
     .line 6
-    const/4 v1, 0x0
-
-    .line 7
-    goto :goto_0
-
-    .line 8
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v1
-
-    .line 12
-    :goto_0
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 13
-    .line 14
-    iget-object v2, p0, Lwe8;->b:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    if-nez v2, :cond_1
-
-    .line 17
-    .line 18
-    const/4 v2, 0x0
-
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_1
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
-
-    .line 21
-    .line 22
-    .line 23
-    move-result v2
-
-    .line 24
-    :goto_1
-    add-int/2addr v1, v2
-
-    .line 25
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 26
-    .line 27
-    iget-object v2, p0, Lwe8;->c:Lte8;
-
-    .line 28
-    .line 29
-    if-nez v2, :cond_2
-
-    .line 30
-    .line 31
-    const/4 v2, 0x0
-
-    .line 32
-    goto :goto_2
-
-    .line 33
-    :cond_2
-    invoke-virtual {v2}, Lte8;->hashCode()I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v2
-
-    .line 37
-    :goto_2
-    add-int/2addr v1, v2
-
-    .line 38
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 39
-    .line 40
-    iget-object v2, p0, Lwe8;->d:Lxe8;
-
-    .line 41
-    .line 42
-    if-nez v2, :cond_3
-
-    .line 43
-    .line 44
-    goto :goto_3
-
-    .line 45
-    :cond_3
-    invoke-virtual {v2}, Lxe8;->hashCode()I
-
-    .line 46
-    .line 47
-    .line 48
     move-result v0
 
-    .line 49
-    :goto_3
-    add-int/2addr v1, v0
-
-    .line 50
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "InAppStyle(title="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
     .line 7
-    .line 8
-    iget-object v1, p0, Lwe8;->a:Ljava/lang/String;
+    iget-object v4, p0, Lwe8;->a:LRoh;
 
+    .line 8
     .line 9
+    const/4 v1, 0x2
+
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-ne v0, v1, :cond_0
 
     .line 11
     .line 12
+    iget-object v0, v4, LRoh;->Y:Ljava/lang/Object;
+
     .line 13
-    const-string v1, ", body="
-
     .line 14
+    check-cast v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, Lwe8;->b:Ljava/lang/String;
+    const/4 v2, 0x1
 
+    .line 17
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
+
+    .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_0
 
     .line 21
+    :cond_0
+    iget-object v0, v4, LRoh;->Y:Ljava/lang/Object;
+
     .line 22
     .line 23
-    const-string v1, ", bitmoji="
+    check-cast v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v2, 0x0
 
     .line 26
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+
     .line 27
     .line 28
-    iget-object v1, p0, Lwe8;->c:Lte8;
-
     .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    :goto_0
+    invoke-virtual {p1}, Lcom/google/android/play/core/install/InstallState;->c()I
 
+    .line 30
     .line 31
     .line 32
+    move-result v0
+
     .line 33
-    const-string v1, ", thumbnailData="
+    iget-object v3, p0, Lwe8;->b:LbJk;
 
     .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v2, 0x4
 
     .line 36
+    if-eq v0, v2, :cond_4
+
     .line 37
     .line 38
-    iget-object v1, p0, Lwe8;->d:Lxe8;
+    const/4 v2, 0x5
 
     .line 39
+    if-eq v0, v2, :cond_3
+
     .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 41
+    const/4 p1, 0x6
+
     .line 42
+    if-eq v0, p1, :cond_2
+
     .line 43
-    const-string v1, ")"
-
     .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 p1, 0xb
 
+    .line 45
     .line 46
+    if-eq v0, p1, :cond_1
+
     .line 47
     .line 48
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    return-void
 
     .line 49
+    :cond_1
+    iget-object p1, v4, LRoh;->b:Ljava/lang/Object;
+
     .line 50
     .line 51
-    move-result-object v0
+    check-cast p1, LcH8;
 
     .line 52
-    return-object v0
+    .line 53
+    sget-object v0, LRLd;->h3:LRLd;
+
+    .line 54
+    .line 55
+    invoke-static {p1, v0}, LaH8;->d(LcH8;LH7c;)V
+
+    .line 56
+    .line 57
+    .line 58
+    iget-object v2, p0, Lwe8;->c:Landroid/app/Activity;
+
+    .line 59
+    .line 60
+    new-instance v1, LyR5;
+
+    .line 61
+    .line 62
+    const/16 v6, 0xf
+
+    .line 63
+    .line 64
+    const/4 v5, 0x0
+
+    .line 65
+    invoke-direct/range {v1 .. v6}, LyR5;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZI)V
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v2, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    .line 69
+    .line 70
+    .line 71
+    return-void
+
+    .line 72
+    :cond_2
+    iget-object p1, v4, LRoh;->b:Ljava/lang/Object;
+
+    .line 73
+    .line 74
+    check-cast p1, LcH8;
+
+    .line 75
+    .line 76
+    sget-object v0, LRLd;->k3:LRLd;
+
+    .line 77
+    .line 78
+    invoke-static {p1, v0}, LaH8;->d(LcH8;LH7c;)V
+
+    .line 79
+    .line 80
+    .line 81
+    monitor-enter v3
+
+    .line 82
+    :try_start_0
+    iget-object p1, v3, LbJk;->b:LLBk;
+
+    .line 83
+    .line 84
+    invoke-virtual {p1, p0}, LLBk;->b(Lgw9;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 85
+    .line 86
+    .line 87
+    monitor-exit v3
+
+    .line 88
+    return-void
+
+    .line 89
+    :catchall_0
+    move-exception v0
+
+    .line 90
+    move-object p1, v0
+
+    .line 91
+    :try_start_1
+    monitor-exit v3
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 92
+    throw p1
+
+    .line 93
+    :cond_3
+    iget-object v0, v4, LRoh;->b:Ljava/lang/Object;
+
+    .line 94
+    .line 95
+    check-cast v0, LcH8;
+
+    .line 96
+    .line 97
+    sget-object v2, LRLd;->j3:LRLd;
+
+    .line 98
+    .line 99
+    invoke-static {v0, v2}, LaH8;->d(LcH8;LH7c;)V
+
+    .line 100
+    .line 101
+    .line 102
+    new-instance v0, LtU6;
+
+    .line 103
+    .line 104
+    invoke-direct {v0}, LtU6;-><init>()V
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v0, v1}, LtU6;->setAppUpdate(I)LtU6;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v0
+
+    .line 111
+    new-instance v1, Law9;
+
+    .line 112
+    .line 113
+    invoke-virtual {p1}, Lcom/google/android/play/core/install/InstallState;->b()I
+
+    .line 114
+    .line 115
+    .line 116
+    move-result p1
+
+    .line 117
+    invoke-direct {v1, p1}, Law9;-><init>(I)V
+
+    .line 118
+    .line 119
+    .line 120
+    iget-object p1, v4, LRoh;->X:Ljava/lang/Object;
+
+    .line 121
+    .line 122
+    check-cast p1, Lnp0;
+
+    .line 123
+    .line 124
+    iget-object v2, v4, LRoh;->t:Ljava/lang/Object;
+
+    .line 125
+    .line 126
+    check-cast v2, LjX6;
+
+    .line 127
+    .line 128
+    const/4 v4, 0x0
+
+    .line 129
+    invoke-interface {v2, v0, v1, p1, v4}, LjX6;->c(LtU6;Ljava/lang/Throwable;Lnp0;Lr6c;)V
+
+    .line 130
+    .line 131
+    .line 132
+    invoke-virtual {v3, p0}, LbJk;->b(Lwe8;)V
+
+    .line 133
+    .line 134
+    .line 135
+    return-void
+
+    .line 136
+    :cond_4
+    iget-object p1, v4, LRoh;->b:Ljava/lang/Object;
+
+    .line 137
+    .line 138
+    check-cast p1, LcH8;
+
+    .line 139
+    .line 140
+    sget-object v0, LRLd;->i3:LRLd;
+
+    .line 141
+    .line 142
+    invoke-static {p1, v0}, LaH8;->d(LcH8;LH7c;)V
+
+    .line 143
+    .line 144
+    .line 145
+    invoke-virtual {v3, p0}, LbJk;->b(Lwe8;)V
+
+    .line 146
+    .line 147
+    .line 148
+    return-void
 .end method

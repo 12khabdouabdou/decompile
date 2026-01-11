@@ -29,30 +29,21 @@
 
 
 # virtual methods
-.method public final U1(Lw0d;)V
+.method public final U1(Lsfd;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final V1(Lw0d;)V
+.method public final V1(Lsfd;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final c2()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    return v0
-.end method
-
-.method public final e2()V
+.method public final c2()V
     .locals 0
 
     .line 1

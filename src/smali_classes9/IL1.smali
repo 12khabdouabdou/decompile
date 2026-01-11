@@ -1,269 +1,406 @@
 .class public final LIL1;
-.super LzG7;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnTouchListener;
 
 
 # instance fields
-.field public final a:LeK3;
+.field public final synthetic a:I
 
-.field public final b:Ljava/util/concurrent/atomic/AtomicInteger;
-
-.field public volatile c:Lywh;
-
-.field public final synthetic d:LJL1;
+.field public b:Landroid/view/GestureDetector;
 
 
 # direct methods
-.method public constructor <init>(LJL1;LeK3;Ljava/lang/String;)V
-    .locals 0
+.method public synthetic constructor <init>()V
+    .locals 1
 
     .line 1
+    const/4 v0, 0x5
+
+    iput v0, p0, LIL1;->a:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Landroid/view/GestureDetector;I)V
+    .locals 0
+
     .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LIL1;->d:LJL1;
+    iput p2, p0, LIL1;->a:I
 
-    .line 5
-    .line 6
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
 
-    .line 7
-    .line 8
-    const p3, -0x7fffffff
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
-    .line 10
-    .line 11
-    invoke-direct {p1, p3}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object p1, p0, LIL1;->b:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 15
-    .line 16
-    new-instance p1, LMWi;
-
-    .line 17
-    .line 18
-    const/16 p3, 0xb
-
-    .line 19
-    .line 20
-    invoke-direct {p1, p3, p0}, LMWi;-><init>(ILjava/lang/Object;)V
-
-    .line 21
-    .line 22
-    .line 23
-    const-string p1, "delegate"
-
-    .line 24
-    .line 25
-    invoke-static {p2, p1}, Lew8;->F(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    iput-object p2, p0, LIL1;->a:LeK3;
-
-    .line 29
-    .line 30
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lywh;)V
-    .locals 2
+.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+    .locals 5
 
     .line 1
-    const-string v0, "status"
+    iget v0, p0, LIL1;->a:I
 
     .line 2
     .line 3
-    invoke-static {p1, v0}, Lew8;->F(Ljava/lang/Object;Ljava/lang/String;)V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    monitor-enter p0
+    check-cast p1, Landroid/widget/Checkable;
 
     .line 7
-    :try_start_0
-    iget-object v0, p0, LIL1;->b:Ljava/util/concurrent/atomic/AtomicInteger;
-
     .line 8
-    .line 9
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    invoke-interface {p1}, Landroid/widget/Checkable;->isChecked()Z
 
+    .line 9
     .line 10
     .line 11
+    move-result p1
+
     .line 12
-    move-result v0
+    if-eqz p1, :cond_0
 
     .line 13
-    if-gez v0, :cond_1
-
     .line 14
+    iget-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
+
     .line 15
-    iput-object p1, p0, LIL1;->c:Lywh;
-
     .line 16
-    .line 17
-    iget-object v0, p0, LIL1;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
+    .line 17
     .line 18
     .line 19
-    const v1, 0x7fffffff
+    move-result p1
 
     .line 20
-    .line 21
-    .line 22
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
-
-    .line 23
-    .line 24
-    .line 25
-    iget-object v0, p0, LIL1;->b:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 26
-    .line 27
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v0
-
-    .line 31
-    if-eqz v0, :cond_0
-
-    .line 32
-    .line 33
-    monitor-exit p0
-
-    .line 34
-    return-void
-
-    .line 35
-    :catchall_0
-    move-exception p1
-
-    .line 36
     goto :goto_0
 
-    .line 37
-    :cond_0
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 38
-    invoke-super {p0, p1}, LzG7;->a(Lywh;)V
-
-    .line 39
-    .line 40
-    .line 41
-    return-void
-
-    .line 42
-    :cond_1
-    :try_start_1
-    monitor-exit p0
-
-    .line 43
-    return-void
-
-    .line 44
-    :goto_0
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 45
-    throw p1
-.end method
-
-.method public final d(LGAa;LVRb;LNM1;[Lrrk;)LF63;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p0, LIL1;->d:LJL1;
-
-    .line 5
-    .line 6
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 7
-    .line 8
-    .line 9
-    iget-object v0, p0, LIL1;->b:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 10
-    .line 11
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
-    if-ltz v0, :cond_0
-
-    .line 16
-    .line 17
-    new-instance p1, Le87;
-
-    .line 18
-    .line 19
-    iget-object p2, p0, LIL1;->c:Lywh;
-
-    .line 20
     .line 21
-    sget-object p3, LG63;->a:LG63;
+    :cond_0
+    const/4 p1, 0x0
 
     .line 22
+    :goto_0
+    return p1
+
     .line 23
-    invoke-direct {p1, p2, p3, p4}, Le87;-><init>(Lywh;LG63;[Lrrk;)V
+    :pswitch_0
+    iget-object v0, p0, LIL1;->b:Landroid/view/GestureDetector;
 
     .line 24
     .line 25
+    invoke-virtual {v0, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
     .line 26
-    return-object p1
-
     .line 27
-    :cond_0
-    iget-object v0, p0, LIL1;->a:LeK3;
-
     .line 28
-    .line 29
-    invoke-interface {v0, p1, p2, p3, p4}, LT63;->d(LGAa;LVRb;LNM1;[Lrrk;)LF63;
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
+    .line 29
     .line 30
     .line 31
+    move-result p2
+
     .line 32
-    move-result-object p1
+    const/4 v0, 0x1
 
     .line 33
-    return-object p1
-.end method
+    if-ne p2, v0, :cond_1
 
-.method public final e()LeK3;
-    .locals 1
+    .line 34
+    .line 35
+    invoke-virtual {p1}, Landroid/view/View;->performClick()Z
 
-    .line 1
-    iget-object v0, p0, LIL1;->a:LeK3;
+    .line 36
+    .line 37
+    .line 38
+    :cond_1
+    return v0
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 39
+    :pswitch_1
+    iget-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
+
+    .line 40
+    .line 41
+    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 42
+    .line 43
+    .line 44
+    const/4 p1, 0x1
+
+    .line 45
+    return p1
+
+    .line 46
+    :pswitch_2
+    if-eqz p1, :cond_2
+
+    .line 47
+    .line 48
+    invoke-virtual {p1}, Landroid/view/View;->performClick()Z
+
+    .line 49
+    .line 50
+    .line 51
+    :cond_2
+    iget-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
+
+    .line 52
+    .line 53
+    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result p1
+
+    .line 57
+    return p1
+
+    .line 58
+    :pswitch_3
+    iget-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
+
+    .line 59
+    .line 60
+    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result p1
+
+    .line 64
+    return p1
+
+    .line 65
+    :pswitch_4
+    invoke-virtual {p1}, Landroid/view/View;->getWidth()I
+
+    .line 66
+    .line 67
+    .line 68
+    move-result v0
+
+    .line 69
+    invoke-virtual {p1}, Landroid/view/View;->getHeight()I
+
+    .line 70
+    .line 71
+    .line 72
+    move-result v1
+
+    .line 73
+    int-to-float v0, v0
+
+    .line 74
+    const v2, 0x3dcccccd    # 0.1f
+
+    .line 75
+    .line 76
+    .line 77
+    mul-float v3, v0, v2
+
+    .line 78
+    .line 79
+    const v4, 0x3f266666    # 0.65f
+
+    .line 80
+    .line 81
+    .line 82
+    mul-float v0, v0, v4
+
+    .line 83
+    .line 84
+    int-to-float v1, v1
+
+    .line 85
+    mul-float v2, v2, v1
+
+    .line 86
+    .line 87
+    const v4, 0x3f3ae148    # 0.73f
+
+    .line 88
+    .line 89
+    .line 90
+    mul-float v1, v1, v4
+
+    .line 91
+    .line 92
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v4
+
+    .line 96
+    cmpl-float v3, v4, v3
+
+    .line 97
+    .line 98
+    if-ltz v3, :cond_3
+
+    .line 99
+    .line 100
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
+
+    .line 101
+    .line 102
+    .line 103
+    move-result v3
+
+    .line 104
+    cmpg-float v0, v3, v0
+
+    .line 105
+    .line 106
+    if-gtz v0, :cond_3
+
+    .line 107
+    .line 108
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v0
+
+    .line 112
+    cmpl-float v0, v0, v2
+
+    .line 113
+    .line 114
+    if-ltz v0, :cond_3
+
+    .line 115
+    .line 116
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v0
+
+    .line 120
+    cmpg-float v0, v0, v1
+
+    .line 121
+    .line 122
+    if-gtz v0, :cond_3
+
+    .line 123
+    .line 124
+    iget-object v0, p0, LIL1;->b:Landroid/view/GestureDetector;
+
+    .line 125
+    .line 126
+    invoke-virtual {v0, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 127
+    .line 128
+    .line 129
+    invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
+
+    .line 130
+    .line 131
+    .line 132
+    move-result p2
+
+    .line 133
+    const/4 v0, 0x1
+
+    .line 134
+    if-ne p2, v0, :cond_4
+
+    .line 135
+    .line 136
+    invoke-virtual {p1}, Landroid/view/View;->performClick()Z
+
+    .line 137
+    .line 138
+    .line 139
+    goto :goto_1
+
+    .line 140
+    :cond_3
+    const/4 v0, 0x0
+
+    .line 141
+    :cond_4
+    :goto_1
+    return v0
+
+    .line 142
+    :pswitch_5
+    iget-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
+
+    .line 143
+    .line 144
+    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 145
+    .line 146
+    .line 147
+    move-result p1
+
+    .line 148
+    return p1
+
+    .line 149
+    :pswitch_6
+    iget-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
+
+    .line 150
+    .line 151
+    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 152
+    .line 153
+    .line 154
+    move-result p1
+
+    .line 155
+    return p1
+
+    .line 156
+    :pswitch_7
+    iget-object p1, p0, LIL1;->b:Landroid/view/GestureDetector;
+
+    .line 157
+    .line 158
+    invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    .line 159
+    .line 160
+    .line 161
+    const/4 p1, 0x0
+
+    .line 162
+    return p1
+
+    .line 163
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

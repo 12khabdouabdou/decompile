@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LVL8;
+    proxyClass = LUT8;
     schema = "\'getHiddenSuggestedFriends\':f|m|(f(a?<r:\'[0]\'>, m?<s,u>)),\'onHiddenSuggestedFriendsUpdated\':f|m|(f()): f()"
     typeReferences = {
-        LW8i;
+        Ltxi;
     }
 .end annotation
 

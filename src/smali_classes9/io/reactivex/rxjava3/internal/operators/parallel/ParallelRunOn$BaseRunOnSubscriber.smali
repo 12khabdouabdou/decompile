@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lio/reactivex/rxjava3/core/FlowableSubscriber;
-.implements Lc7i;
+.implements Ltvi;
 .implements Ljava/lang/Runnable;
 
 
@@ -26,14 +26,14 @@
         "Ljava/util/concurrent/atomic/AtomicInteger;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TT;>;",
-        "Lc7i;",
+        "Ltvi;",
         "Ljava/lang/Runnable;"
     }
 .end annotation
 
 
 # instance fields
-.field public X:Lc7i;
+.field public X:Ltvi;
 
 .field public volatile Y:Z
 
@@ -124,11 +124,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->X:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->X:Ltvi;
 
     .line 9
     .line 10
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 11
     .line 12
@@ -208,7 +208,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p1, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->d(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->b(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 21
     .line 22
@@ -256,7 +256,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->d(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->b(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 18
     .line 19
@@ -314,7 +314,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p1, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->d(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->b(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 23
     .line 24
@@ -355,11 +355,11 @@
 
     .line 13
     .line 14
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->X:Lc7i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->X:Ltvi;
 
     .line 15
     .line 16
-    invoke-interface {p1}, Lc7i;->cancel()V
+    invoke-interface {p1}, Ltvi;->cancel()V
 
     .line 17
     .line 18
@@ -398,7 +398,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {p1, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->d(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1, p0}, Lio/reactivex/rxjava3/core/Scheduler$Worker;->b(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 37
     .line 38

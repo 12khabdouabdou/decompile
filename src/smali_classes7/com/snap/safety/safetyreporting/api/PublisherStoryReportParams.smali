@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/PublisherStoryReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'snapId\':s,\'editionId\':s,\'publisherId\':s,\'publisherName\':s,\'compositeStoryId\':s?,\'chapterId\':s?"
     typeReferences = {}

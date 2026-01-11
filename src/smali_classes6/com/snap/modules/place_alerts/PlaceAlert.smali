@@ -1,14 +1,14 @@
 .class public final Lcom/snap/modules/place_alerts/PlaceAlert;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'alertId\':s?,\'creatorUserId\':s,\'placeName\':s,\'lat\':d,\'lng\':d,\'radiusMeters\':d,\'userNotificationSettings\':a<r:\'[0]\'>"
     typeReferences = {
-        Lzqd;
+        LNGd;
     }
 .end annotation
 
@@ -30,7 +30,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lzqd;",
+            "LNGd;",
             ">;"
         }
     .end annotation
@@ -48,7 +48,7 @@
             "Ljava/lang/String;",
             "DDD",
             "Ljava/util/List<",
-            "Lzqd;",
+            "LNGd;",
             ">;)V"
         }
     .end annotation

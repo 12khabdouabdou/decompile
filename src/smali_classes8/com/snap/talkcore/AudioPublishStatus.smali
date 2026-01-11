@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lsq0;
+    proxyClass = LUs0;
     schema = "\'isMuted\':b,\'isSpeaking\':b,\'lastSpokeTimestampMs\':d,\'sinkId\':s?"
     typeReferences = {}
 .end annotation

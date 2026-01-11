@@ -1,105 +1,95 @@
-.class public Lqag;
-.super Lhqj;
+.class public abstract synthetic Lqag;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public j:Lkag;
-
-.field public k:Lkag;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
-
-    .line 1
-    sget-object v2, LCre;->c:LCre;
-
-    .line 2
-    .line 3
-    const-string v1, "SHAKE_TO_REPORT_ADJUST_SENSITIVITY"
-
-    .line 4
-    .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
-    .line 6
-    .line 7
-    const-wide v5, 0x3fb999999999999aL    # 0.1
-
-    .line 8
-    .line 9
-    .line 10
-    .line 11
-    .line 12
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
-    .line 13
-    .line 14
-    move-object v0, p0
-
-    .line 15
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 16
-    .line 17
-    .line 18
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
+.method static constructor <clinit>()V
     .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    invoke-static {}, LRlg;->values()[LRlg;
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
     .line 4
-    const/4 v1, 0x2
+    move-result-object v0
 
     .line 5
-    iget-object v2, p0, Lqag;->k:Lkag;
+    array-length v0, v0
 
     .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
+    new-array v0, v0, [I
 
+    .line 7
     .line 8
+    const/4 v1, 0x0
+
     .line 9
+    const/4 v2, 0x1
+
     .line 10
-    const/4 v1, 0x3
+    :try_start_0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 11
-    iget-object v2, p0, Lqag;->j:Lkag;
-
     .line 12
+    :catch_0
+    const/4 v1, 0x2
+
     .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
+    :try_start_1
+    aput v1, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 14
     .line 15
-    .line 16
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
+    :catch_1
+    invoke-static {}, Lcom/snapchat/client/messaging/MetricsMessageMediaType;->values()[Lcom/snapchat/client/messaging/MetricsMessageMediaType;
 
+    .line 16
     .line 17
     .line 18
+    move-result-object v0
+
     .line 19
+    array-length v0, v0
+
+    .line 20
+    new-array v0, v0, [I
+
+    .line 21
+    .line 22
+    :try_start_2
+    sget-object v1, Lcom/snapchat/client/messaging/MetricsMessageMediaType;->NO_MEDIA:Lcom/snapchat/client/messaging/MetricsMessageMediaType;
+
+    .line 23
+    .line 24
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v1
+
+    .line 28
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 29
+    .line 30
+    :catch_2
+    sput-object v0, Lqag;->a:[I
+
+    .line 31
+    .line 32
     return-void
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x7d3
-
-    .line 2
-    .line 3
-    return v0
 .end method

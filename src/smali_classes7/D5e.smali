@@ -1,20 +1,14 @@
 .class public final LD5e;
-.super LF5e;
+.super LI5e;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:D
-
-.field public final b:D
-
-.field public final c:D
-
-.field public final d:Ljava/lang/Double;
+.field public final a:Z
 
 
 # direct methods
-.method public constructor <init>(DDDLjava/lang/Double;)V
+.method public constructor <init>(Z)V
     .locals 0
 
     .line 1
@@ -23,29 +17,17 @@
     .line 2
     .line 3
     .line 4
-    iput-wide p1, p0, LD5e;->a:D
+    iput-boolean p1, p0, LD5e;->a:Z
 
     .line 5
     .line 6
-    iput-wide p3, p0, LD5e;->b:D
-
-    .line 7
-    .line 8
-    iput-wide p5, p0, LD5e;->c:D
-
-    .line 9
-    .line 10
-    iput-object p7, p0, LD5e;->d:Ljava/lang/Double;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+    .locals 3
 
     .line 1
     const/4 v0, 0x1
@@ -78,225 +60,50 @@
 
     .line 12
     .line 13
-    iget-wide v3, p1, LD5e;->a:D
+    iget-boolean v1, p0, LD5e;->a:Z
 
     .line 14
     .line 15
-    iget-wide v5, p0, LD5e;->a:D
+    iget-boolean p1, p1, LD5e;->a:Z
 
     .line 16
     .line 17
-    invoke-static {v5, v6, v3, v4}, Ljava/lang/Double;->compare(DD)I
+    if-eq v1, p1, :cond_2
 
     .line 18
     .line 19
+    return v2
+
     .line 20
-    move-result v1
-
-    .line 21
-    if-eqz v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
     :cond_2
-    iget-wide v3, p0, LD5e;->b:D
-
-    .line 25
-    .line 26
-    iget-wide v5, p1, LD5e;->b:D
-
-    .line 27
-    .line 28
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Double;->compare(DD)I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    if-eqz v1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    iget-wide v3, p0, LD5e;->c:D
-
-    .line 36
-    .line 37
-    iget-wide v5, p1, LD5e;->c:D
-
-    .line 38
-    .line 39
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Double;->compare(DD)I
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v1
-
-    .line 43
-    if-eqz v1, :cond_4
-
-    .line 44
-    .line 45
-    return v2
-
-    .line 46
-    :cond_4
-    iget-object v1, p0, LD5e;->d:Ljava/lang/Double;
-
-    .line 47
-    .line 48
-    iget-object p1, p1, LD5e;->d:Ljava/lang/Double;
-
-    .line 49
-    .line 50
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 51
-    .line 52
-    .line 53
-    move-result p1
-
-    .line 54
-    if-nez p1, :cond_5
-
-    .line 55
-    .line 56
-    return v2
-
-    .line 57
-    :cond_5
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 7
+    .locals 1
 
     .line 1
-    iget-wide v0, p0, LD5e;->a:D
+    iget-boolean v0, p0, LD5e;->a:Z
 
     .line 2
     .line 3
-    invoke-static {v0, v1}, Ljava/lang/Double;->doubleToLongBits(D)J
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    move-result-wide v0
+    const/16 v0, 0x4cf
 
+    .line 6
     .line 7
-    const/16 v2, 0x20
+    return v0
 
     .line 8
-    .line 9
-    ushr-long v3, v0, v2
-
-    .line 10
-    .line 11
-    xor-long/2addr v0, v3
-
-    .line 12
-    long-to-int v1, v0
-
-    .line 13
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 14
-    .line 15
-    iget-wide v3, p0, LD5e;->b:D
-
-    .line 16
-    .line 17
-    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-wide v3
-
-    .line 21
-    ushr-long v5, v3, v2
-
-    .line 22
-    .line 23
-    xor-long/2addr v3, v5
-
-    .line 24
-    long-to-int v0, v3
-
-    .line 25
-    add-int/2addr v1, v0
-
-    .line 26
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 27
-    .line 28
-    iget-wide v3, p0, LD5e;->c:D
-
-    .line 29
-    .line 30
-    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-wide v3
-
-    .line 34
-    ushr-long v5, v3, v2
-
-    .line 35
-    .line 36
-    xor-long/2addr v3, v5
-
-    .line 37
-    long-to-int v0, v3
-
-    .line 38
-    add-int/2addr v1, v0
-
-    .line 39
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 40
-    .line 41
-    iget-object v0, p0, LD5e;->d:Ljava/lang/Double;
-
-    .line 42
-    .line 43
-    if-nez v0, :cond_0
-
-    .line 44
-    .line 45
-    const/4 v0, 0x0
-
-    .line 46
-    goto :goto_0
-
-    .line 47
     :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    const/16 v0, 0x4d5
 
-    .line 48
-    .line 49
-    .line 50
-    move-result v0
-
-    .line 51
-    :goto_0
-    add-int/2addr v1, v0
-
-    .line 52
-    return v1
+    .line 9
+    .line 10
+    return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -307,7 +114,7 @@
 
     .line 2
     .line 3
-    const-string v1, "MySnapScoreDialog(snapScore="
+    const-string v1, "UpdateFooterVisibility(visible="
 
     .line 4
     .line 5
@@ -316,75 +123,21 @@
     .line 6
     .line 7
     .line 8
-    iget-wide v1, p0, LD5e;->a:D
+    iget-boolean v1, p0, LD5e;->a:Z
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
+    const-string v2, ")"
 
     .line 11
     .line 12
-    .line 13
-    const-string v1, ", snapSent="
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
+    .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-wide v1, p0, LD5e;->b:D
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", snapReceived="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-wide v1, p0, LD5e;->c:D
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", storiesSent="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LD5e;->d:Ljava/lang/Double;
-
-    .line 39
-    .line 40
-    const-string v2, ")"
-
-    .line 41
-    .line 42
-    invoke-static {v0, v1, v2}, Lkah;->g(Ljava/lang/StringBuilder;Ljava/lang/Double;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
     move-result-object v0
 
-    .line 46
+    .line 16
     return-object v0
 .end method

@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 4
 
     .line 1
@@ -76,12 +76,12 @@
 
     .line 10
     .line 11
-    invoke-direct {v0, p1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelJoin$JoinSubscriptionBase;-><init>(LV6i;II)V
+    invoke-direct {v0, p1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelJoin$JoinSubscriptionBase;-><init>(Lmvi;II)V
 
     .line 12
     .line 13
     .line 14
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 15
     .line 16
@@ -90,7 +90,7 @@
 
     .line 18
     .line 19
-    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/parallel/ParallelFlowable;->subscribe([LV6i;)V
+    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/parallel/ParallelFlowable;->subscribe([Lmvi;)V
 
     .line 20
     .line 21

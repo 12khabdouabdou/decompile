@@ -2,16 +2,17 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
-
 
 # instance fields
-.field public final synthetic a:LW2g;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(LW2g;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -20,24 +21,141 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LP2g;->a:LW2g;
+    iput-object p1, p0, LP2g;->a:Ljava/lang/String;
 
     .line 5
     .line 6
+    iput-object p2, p0, LP2g;->b:Ljava/lang/String;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LP2g;->c:Ljava/lang/String;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     .line 1
-    check-cast p1, LdKa;
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LP2g;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LP2g;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, LP2g;->a:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, LP2g;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, LP2g;->b:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, LP2g;->b:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-nez v1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    iget-object v1, p0, LP2g;->c:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    iget-object p1, p1, LP2g;->c:Ljava/lang/String;
+
+    .line 38
+    .line 39
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result p1
+
+    .line 43
+    if-nez p1, :cond_4
+
+    .line 44
+    .line 45
+    return v2
+
+    .line 46
+    :cond_4
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LP2g;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
@@ -45,148 +163,139 @@
     move-result v0
 
     .line 7
-    const/4 v1, 0x2
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
-    if-eq v0, v1, :cond_0
-
     .line 9
+    const/4 v1, 0x0
+
     .line 10
-    const/4 v1, 0x3
+    iget-object v2, p0, LP2g;->b:Ljava/lang/String;
 
     .line 11
-    if-eq v0, v1, :cond_0
-
     .line 12
-    .line 13
-    const/4 v1, 0x4
+    if-nez v2, :cond_0
 
+    .line 13
     .line 14
-    if-eq v0, v1, :cond_0
+    const/4 v2, 0x0
 
     .line 15
+    goto :goto_0
+
     .line 16
-    return-void
+    :cond_0
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
 
     .line 17
-    :cond_0
-    iget-object v0, p0, LP2g;->a:LW2g;
-
     .line 18
     .line 19
-    iget-object v1, v0, LW2g;->A0:LhV4;
+    move-result v2
 
     .line 20
+    :goto_0
+    add-int/2addr v0, v2
+
     .line 21
-    invoke-virtual {v1}, LhV4;->get()Ljava/lang/Object;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 22
     .line 23
-    .line 24
-    move-result-object v1
+    iget-object v2, p0, LP2g;->c:Ljava/lang/String;
 
+    .line 24
     .line 25
-    check-cast v1, LY2g;
+    if-nez v2, :cond_1
 
     .line 26
     .line 27
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    goto :goto_1
 
     .line 28
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
     .line 29
     .line 30
-    new-instance v2, LTXf;
+    .line 31
+    move-result v1
+
+    .line 32
+    :goto_1
+    add-int/2addr v0, v1
+
+    .line 33
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SelectPreviewsForCreators(creatorId="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LP2g;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", lensIconUri="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LP2g;->b:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", thumbnailUri="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LP2g;->c:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    const-string v2, ")"
 
     .line 31
     .line 32
-    const/4 v3, 0x4
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 33
-    invoke-direct {v2, v1, v3, p1}, LTXf;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 34
     .line 35
+    move-result-object v0
+
     .line 36
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;
-
-    .line 37
-    .line 38
-    invoke-direct {p1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;-><init>(Lio/reactivex/rxjava3/core/SingleOnSubscribe;)V
-
-    .line 39
-    .line 40
-    .line 41
-    iget-object v1, v0, LW2g;->t0:LBre;
-
-    .line 42
-    .line 43
-    invoke-virtual {v1}, LBre;->i()Lgn0;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v1
-
-    .line 47
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 48
-    .line 49
-    invoke-direct {v2, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 50
-    .line 51
-    .line 52
-    new-instance p1, LJ2g;
-
-    .line 53
-    .line 54
-    const/4 v1, 0x3
-
-    .line 55
-    invoke-direct {p1, v0, v1}, LJ2g;-><init>(LW2g;I)V
-
-    .line 56
-    .line 57
-    .line 58
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
-
-    .line 59
-    .line 60
-    invoke-direct {v1, v2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;)V
-
-    .line 61
-    .line 62
-    .line 63
-    new-instance p1, LJ2g;
-
-    .line 64
-    .line 65
-    const/4 v2, 0x4
-
-    .line 66
-    invoke-direct {p1, v0, v2}, LJ2g;-><init>(LW2g;I)V
-
-    .line 67
-    .line 68
-    .line 69
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
-
-    .line 70
-    .line 71
-    invoke-direct {v2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Consumer;)V
-
-    .line 72
-    .line 73
-    .line 74
-    iget-object p1, v0, LW2g;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 75
-    .line 76
-    invoke-static {v2, p1}, LLZj;->q0(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 77
-    .line 78
-    .line 79
-    return-void
+    return-object v0
 .end method

@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LZBe;
+    proxyClass = LKTe;
     schema = "\'recentlyAddedFriendsObservable\':g<c>:\'[0]\'<a<r:\'[1]\'>>,\'recentlyHiddenFriendsObservable\':g<c>:\'[0]\'<a<r:\'[2]\'>>,\'recentlyIgnoredFriendsObservable\':g<c>:\'[0]\'<a<r:\'[3]\'>>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LPCe;,
-        LQCe;,
-        LRCe;
+        LtUe;,
+        LuUe;,
+        LvUe;
     }
 .end annotation
 
@@ -27,7 +27,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LPCe;",
+            "LtUe;",
             ">;>;"
         }
     .end annotation
@@ -39,7 +39,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LQCe;",
+            "LuUe;",
             ">;>;"
         }
     .end annotation
@@ -51,7 +51,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LRCe;",
+            "LvUe;",
             ">;>;"
         }
     .end annotation

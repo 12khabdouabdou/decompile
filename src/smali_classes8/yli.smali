@@ -1,130 +1,76 @@
-.class public final Lyli;
-.super Ljava/lang/Object;
+.class public final synthetic Lyli;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/snap/composer/utils/ComposerMarshallable;
+.implements Lkotlin/jvm/functions/Function2;
 
 
-# instance fields
-.field public final a:Lake;
-
-.field public final b:Lake;
-
-.field public final c:Lake;
+# static fields
+.field public static final f0:Lyli;
 
 
 # direct methods
-.method public constructor <init>(Lake;Lake;Lake;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lyli;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lyli;->a:Lake;
+    const-string v5, "<init>(Ljava/lang/Object;Ljava/lang/Object;)V"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    iput-object p2, p0, Lyli;->b:Lake;
+    const/4 v1, 0x2
 
     .line 7
-    .line 8
-    iput-object p3, p0, Lyli;->c:Lake;
+    const-class v3, LDpd;
 
+    .line 8
     .line 9
+    const-string v4, "<init>"
+
     .line 10
+    .line 11
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    sput-object v0, Lyli;->f0:Lyli;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
+.method public final R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lyli;->c:Lake;
+    check-cast p1, LDpd;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    new-instance v0, LDpd;
 
+    .line 6
     .line 7
-    check-cast v0, LOoj;
+    invoke-direct {v0, p1, p2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 8
     .line 9
-    iget-object v0, v0, LOoj;->a:LAt3;
-
     .line 10
-    .line 11
-    iget-object v0, v0, LAt3;->b:LXfi;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    check-cast v0, Lgsj;
-
-    .line 18
-    .line 19
-    iget-object v1, p0, Lyli;->b:Lake;
-
-    .line 20
-    .line 21
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v1
-
-    .line 25
-    check-cast v1, Lcom/snapchat/client/valdi_core/ModuleFactory;
-
-    .line 26
-    .line 27
-    invoke-virtual {v0, v1}, Lgsj;->h0(Lcom/snapchat/client/valdi_core/ModuleFactory;)V
-
-    .line 28
-    .line 29
-    .line 30
-    iget-object v0, p0, Lyli;->a:Lake;
-
-    .line 31
-    .line 32
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    check-cast v0, LBO1;
-
-    .line 37
-    .line 38
-    invoke-virtual {v0, p1}, Lcom/snap/composer/utils/b;->pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-
-    .line 39
-    .line 40
-    .line 41
-    move-result p1
-
-    .line 42
-    return p1
+    return-object v0
 .end method

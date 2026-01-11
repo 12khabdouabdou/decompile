@@ -161,7 +161,7 @@
     const/4 p1, 0x0
 
     .line 13
-    invoke-interface {v1, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 14
     .line 15
@@ -185,7 +185,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 23
-    invoke-interface {v1, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 24
     .line 25

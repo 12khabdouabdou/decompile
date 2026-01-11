@@ -8,14 +8,14 @@
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
         "Ljava/lang/Object;",
-        "Lgd9;",
+        "Lxl9;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:Lfd9;
+.field public static final Companion:Lwl9;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lfd9;
+    new-instance v0, Lwl9;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/inclusion_panel/InclusionPanelSurvey;->Companion:Lfd9;
+    sput-object v0, Lcom/snap/inclusion_panel/InclusionPanelSurvey;->Companion:Lwl9;
 
     .line 7
     .line 8
@@ -62,48 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/inclusion_panel/InclusionPanelSurvey;
-    .locals 3
-
-    sget-object v0, Lcom/snap/inclusion_panel/InclusionPanelSurvey;->Companion:Lfd9;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x10
-
-    .line 1
-    invoke-static {v0, p0, v1, p1, v2}, Lfd9;->a(Lfd9;LqZ8;Lgd9;LTB3;I)Lcom/snap/inclusion_panel/InclusionPanelSurvey;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Ljava/lang/Object;Lgd9;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/inclusion_panel/InclusionPanelSurvey;
+.method public static final create(LZ69;Ljava/lang/Object;Lxl9;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/inclusion_panel/InclusionPanelSurvey;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
+            "LZ69;",
             "Ljava/lang/Object;",
-            "Lgd9;",
-            "LTB3;",
+            "Lxl9;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/inclusion_panel/InclusionPanelSurvey;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/inclusion_panel/InclusionPanelSurvey;->Companion:Lfd9;
+    sget-object v0, Lcom/snap/inclusion_panel/InclusionPanelSurvey;->Companion:Lwl9;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     new-instance v2, Lcom/snap/inclusion_panel/InclusionPanelSurvey;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -127,7 +108,26 @@
     move-object v7, p4
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/inclusion_panel/InclusionPanelSurvey;
+    .locals 3
+
+    sget-object v0, Lcom/snap/inclusion_panel/InclusionPanelSurvey;->Companion:Lwl9;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x10
+
+    .line 1
+    invoke-static {v0, p0, v1, p1, v2}, Lwl9;->a(Lwl9;LZ69;Lxl9;LvF3;I)Lcom/snap/inclusion_panel/InclusionPanelSurvey;
+
+    move-result-object p0
+
+    return-object p0
 .end method

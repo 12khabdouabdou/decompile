@@ -14,7 +14,7 @@
 
 .field public f0:Z
 
-.field public g0:Ldzh;
+.field public g0:LN3i;
 
 .field public t:I
 
@@ -70,14 +70,14 @@
     const/4 p1, 0x0
 
     .line 9
-    iput-object p1, p0, Lcom/snap/opera/view/basics/RotateLayout;->g0:Ldzh;
+    iput-object p1, p0, Lcom/snap/opera/view/basics/RotateLayout;->g0:LN3i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LQOh;)V
+.method public final a(Lalh;)V
     .locals 5
 
     .line 1
@@ -216,11 +216,11 @@
     move-result-object v1
 
     .line 60
-    new-instance v2, LN9f;
+    new-instance v2, Ldsf;
 
     .line 61
     .line 62
-    invoke-direct {v2, p0, v0, p1}, LN9f;-><init>(Lcom/snap/opera/view/basics/RotateLayout;ILQOh;)V
+    invoke-direct {v2, p0, v0, p1}, Ldsf;-><init>(Lcom/snap/opera/view/basics/RotateLayout;ILalh;)V
 
     .line 63
     .line 64
@@ -233,7 +233,7 @@
     move-result-object p1
 
     .line 69
-    iget-object v1, p0, Lcom/snap/opera/view/basics/RotateLayout;->g0:Ldzh;
+    iget-object v1, p0, Lcom/snap/opera/view/basics/RotateLayout;->g0:LN3i;
 
     .line 70
     .line 71
@@ -241,7 +241,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {v1, p0, v0}, Ldzh;->c(Lcom/snap/opera/view/basics/RotateLayout;I)F
+    invoke-virtual {v1, p0, v0}, LN3i;->a(Lcom/snap/opera/view/basics/RotateLayout;I)F
 
     .line 74
     .line 75
@@ -254,11 +254,11 @@
     .line 78
     .line 79
     .line 80
-    iget-object v1, p0, Lcom/snap/opera/view/basics/RotateLayout;->g0:Ldzh;
+    iget-object v1, p0, Lcom/snap/opera/view/basics/RotateLayout;->g0:LN3i;
 
     .line 81
     .line 82
-    invoke-virtual {v1, p0, v0}, Ldzh;->c(Lcom/snap/opera/view/basics/RotateLayout;I)F
+    invoke-virtual {v1, p0, v0}, LN3i;->a(Lcom/snap/opera/view/basics/RotateLayout;I)F
 
     .line 83
     .line 84

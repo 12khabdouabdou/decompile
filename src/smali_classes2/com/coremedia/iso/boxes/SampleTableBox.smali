@@ -78,7 +78,7 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 22
     .line 23
@@ -145,7 +145,7 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 22
     .line 23
@@ -212,7 +212,7 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 22
     .line 23
@@ -279,7 +279,7 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 22
     .line 23
@@ -346,7 +346,7 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 22
     .line 23
@@ -425,7 +425,7 @@
     move-result-object v1
 
     .line 26
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 27
     .line 28
@@ -496,7 +496,7 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 22
     .line 23
@@ -563,7 +563,7 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 22
     .line 23

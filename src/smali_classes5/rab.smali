@@ -4,22 +4,16 @@
 
 
 # instance fields
-.field public final a:Landroid/app/Activity;
+.field public final a:La5f;
 
-.field public b:LlI9;
+.field public final b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public c:Landroidx/constraintlayout/widget/ConstraintLayout;
-
-.field public d:Z
-
-.field public e:Z
-
-.field public f:Laxa;
+.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;)V
-    .locals 0
+.method public constructor <init>(La5f;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,9 +21,37 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lrab;->a:Landroid/app/Activity;
+    iput-object p1, p0, Lrab;->a:La5f;
 
     .line 5
     .line 6
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p1
+
+    .line 10
+    iput-object p1, p0, Lrab;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 11
+    .line 12
+    sget-object v0, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+
+    .line 13
+    .line 14
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    iput-object p1, p0, Lrab;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 19
+    .line 20
     return-void
 .end method

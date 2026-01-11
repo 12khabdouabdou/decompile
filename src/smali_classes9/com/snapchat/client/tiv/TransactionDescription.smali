@@ -143,7 +143,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1, v2, v0}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v1, v2, v0}, LToi;->g(IILjava/lang/String;)I
 
     .line 8
     .line 9
@@ -193,7 +193,7 @@
 
     .line 10
     .line 11
-    invoke-static {v2, v0, v3, v1, v4}, Lf3j;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v3, v1, v4}, LToi;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13

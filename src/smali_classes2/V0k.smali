@@ -1,207 +1,488 @@
 .class public final LV0k;
-.super Lo17;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/disposables/Disposable;
+.implements LqSa;
 
 
 # instance fields
-.field public a:I
+.field public final X:LB8f;
 
-.field public b:F
+.field public final Y:Lgkk;
+
+.field public final Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+.field public final a:LQZe;
+
+.field public final b:LBj1;
+
+.field public final c:LDZe;
+
+.field public final e0:LzHi;
+
+.field public final t:LTM0;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(LQZe;LBj1;LDZe;LTM0;LB8f;Lgkk;)V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 2
     .line 3
+    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+
     .line 4
-    const/4 v0, 0x0
-
     .line 5
-    iput v0, p0, LV0k;->a:I
-
     .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 7
-    const/4 v0, 0x0
-
     .line 8
-    iput v0, p0, LV0k;->b:F
-
     .line 9
-    .line 10
-    const/4 v0, 0x0
+    iput-object p1, p0, LV0k;->a:LQZe;
 
+    .line 10
     .line 11
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object p2, p0, LV0k;->b:LBj1;
 
     .line 12
     .line 13
-    const/4 v0, -0x1
+    iput-object p3, p0, LV0k;->c:LDZe;
 
     .line 14
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
     .line 15
+    iput-object p4, p0, LV0k;->t:LTM0;
+
     .line 16
+    .line 17
+    iput-object p5, p0, LV0k;->X:LB8f;
+
+    .line 18
+    .line 19
+    iput-object p6, p0, LV0k;->Y:Lgkk;
+
+    .line 20
+    .line 21
+    iput-object v0, p0, LV0k;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 22
+    .line 23
+    new-instance p1, LzHi;
+
+    .line 24
+    .line 25
+    const-string p2, "VideoCreatingInteractorImpl"
+
+    .line 26
+    .line 27
+    const/4 p3, 0x0
+
+    .line 28
+    invoke-direct {p1, p2, p3}, LzHi;-><init>(Ljava/lang/String;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    iput-object p1, p0, LV0k;->e0:LzHi;
+
+    .line 32
+    .line 33
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public final a(Ljava/lang/String;ZLapp/aifactory/sdk/api/model/VideoResultQuality;)Lapp/aifactory/base/models/dto/ReenactmentKey;
+    .locals 21
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    iget-object v1, v0, LV0k;->b:LBj1;
 
+    .line 4
     .line 5
-    iget v1, p0, LV0k;->a:I
+    move-object/from16 v2, p1
 
     .line 6
     .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    invoke-static {v2}, Lsa3;->h(I)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-
-    .line 17
-    :cond_0
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_2
-
-    .line 6
-    .line 7
-    const/16 v1, 0xd
+    invoke-virtual {v1, v2}, LBj1;->b(Ljava/lang/String;)Lapp/aifactory/base/models/dto/ReenactmentKey;
 
     .line 8
     .line 9
-    if-eq v0, v1, :cond_1
-
     .line 10
+    move-result-object v2
+
     .line 11
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    if-eqz v2, :cond_6
 
     .line 12
     .line 13
+    invoke-virtual {v2}, Lapp/aifactory/base/models/dto/ReenactmentKey;->getEncodingFormat()Lapp/aifactory/base/models/dto/EncodingFormat;
+
     .line 14
-    move-result v0
-
     .line 15
-    if-nez v0, :cond_0
-
     .line 16
+    move-result-object v1
+
     .line 17
-    goto :goto_1
+    sget-object v3, Lapp/aifactory/base/models/dto/EncodingFormat;->WEBP:Lapp/aifactory/base/models/dto/EncodingFormat;
 
     .line 18
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->i()F
-
     .line 19
+    if-ne v1, v3, :cond_0
+
     .line 20
     .line 21
-    move-result v0
+    invoke-virtual {v2}, Lapp/aifactory/base/models/dto/ReenactmentKey;->getReenactmentType()Lapp/aifactory/sdk/api/model/dto/ReenactmentType;
 
     .line 22
-    iput v0, p0, LV0k;->b:F
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    :goto_0
+    move-object v7, v1
+
+    .line 26
+    goto :goto_1
+
+    .line 27
+    :cond_0
+    sget-object v1, LU0k;->a:[I
+
+    .line 28
+    .line 29
+    invoke-virtual/range {p3 .. p3}, Ljava/lang/Enum;->ordinal()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v3
+
+    .line 33
+    aget v1, v1, v3
+
+    .line 34
+    .line 35
+    const/4 v3, 0x1
+
+    .line 36
+    if-eq v1, v3, :cond_5
+
+    .line 37
+    .line 38
+    const/4 v3, 0x2
+
+    .line 39
+    if-eq v1, v3, :cond_4
+
+    .line 40
+    .line 41
+    const/4 v3, 0x3
+
+    .line 42
+    if-eq v1, v3, :cond_3
+
+    .line 43
+    .line 44
+    const/4 v3, 0x4
+
+    .line 45
+    if-eq v1, v3, :cond_2
+
+    .line 46
+    .line 47
+    const/4 v3, 0x5
+
+    .line 48
+    if-ne v1, v3, :cond_1
+
+    .line 49
+    .line 50
+    sget-object v1, Lapp/aifactory/sdk/api/model/dto/ReenactmentType;->PREVIEW:Lapp/aifactory/sdk/api/model/dto/ReenactmentType;
+
+    .line 51
+    .line 52
+    goto :goto_0
+
+    .line 53
+    :cond_1
+    new-instance v1, LwOc;
+
+    .line 54
+    .line 55
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 56
+    .line 57
+    .line 58
+    throw v1
+
+    .line 59
+    :cond_2
+    sget-object v1, Lapp/aifactory/sdk/api/model/dto/ReenactmentType;->THUMBNAIL:Lapp/aifactory/sdk/api/model/dto/ReenactmentType;
+
+    .line 60
+    .line 61
+    goto :goto_0
+
+    .line 62
+    :cond_3
+    sget-object v1, Lapp/aifactory/sdk/api/model/dto/ReenactmentType;->FULLSCREEN:Lapp/aifactory/sdk/api/model/dto/ReenactmentType;
+
+    .line 63
+    .line 64
+    goto :goto_0
+
+    .line 65
+    :cond_4
+    sget-object v1, Lapp/aifactory/sdk/api/model/dto/ReenactmentType;->HIGH_FULL_PREVIEW:Lapp/aifactory/sdk/api/model/dto/ReenactmentType;
+
+    .line 66
+    .line 67
+    goto :goto_0
+
+    .line 68
+    :cond_5
+    sget-object v1, Lapp/aifactory/sdk/api/model/dto/ReenactmentType;->FULL_PREVIEW:Lapp/aifactory/sdk/api/model/dto/ReenactmentType;
+
+    .line 69
+    .line 70
+    goto :goto_0
+
+    .line 71
+    :goto_1
+    const/16 v17, 0x0
+
+    .line 72
+    .line 73
+    const/16 v18, 0x0
+
+    .line 74
+    .line 75
+    const/4 v3, 0x0
+
+    .line 76
+    const/4 v4, 0x0
+
+    .line 77
+    const/4 v5, 0x0
+
+    .line 78
+    const/4 v6, 0x0
+
+    .line 79
+    const/4 v8, 0x0
+
+    .line 80
+    const/4 v9, 0x0
+
+    .line 81
+    const/4 v10, 0x0
+
+    .line 82
+    const/4 v11, 0x0
+
+    .line 83
+    const/4 v13, 0x0
+
+    .line 84
+    const-wide/16 v14, 0x0
+
+    .line 85
+    .line 86
+    const/16 v16, 0x0
+
+    .line 87
+    .line 88
+    const/16 v19, 0x7def
+
+    .line 89
+    .line 90
+    const/16 v20, 0x0
+
+    .line 91
+    .line 92
+    move/from16 v12, p2
+
+    .line 93
+    .line 94
+    invoke-static/range {v2 .. v20}, Lapp/aifactory/base/models/dto/ReenactmentKey;->copy$default(Lapp/aifactory/base/models/dto/ReenactmentKey;Ljava/lang/String;Lapp/aifactory/base/models/dto/ScenarioType;Ljava/util/List;Lapp/aifactory/sdk/api/model/ResourceId;Lapp/aifactory/sdk/api/model/dto/ReenactmentType;Lapp/aifactory/sdk/api/model/dto/ReenactmentType;LOWf;Ljava/lang/String;ZZZJLapp/aifactory/base/models/dto/EncodingFormat;Lapp/aifactory/sdk/api/model/ReenactmentCacheType;Ljava/util/List;ILjava/lang/Object;)Lapp/aifactory/base/models/dto/ReenactmentKey;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v1
+
+    .line 98
+    return-object v1
+
+    .line 99
+    :cond_6
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    .line 100
+    .line 101
+    const-string v2, "ReenactmentKey is not found"
+
+    .line 102
+    .line 103
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 104
+    .line 105
+    .line 106
+    throw v1
+.end method
+
+.method public final b(Lapp/aifactory/base/models/dto/ReenactmentKey;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoFinally;
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x3
+
+    .line 2
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 3
+    .line 4
+    const/4 v2, 0x0
+
+    .line 5
+    invoke-direct {v1, v2}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance v2, Lcbe;
+
+    .line 9
+    .line 10
+    invoke-direct {v2, p0, p1, v1, v0}, Lcbe;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sget p1, Lio/reactivex/rxjava3/core/Flowable;->a:I
+
+    .line 14
+    .line 15
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDefer;
+
+    .line 16
+    .line 17
+    invoke-direct {p1, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 18
+    .line 19
+    .line 20
+    new-instance v2, Lodj;
+
+    .line 21
+    .line 22
+    const/16 v3, 0x9
 
     .line 23
     .line 24
-    iget v0, p0, LV0k;->a:I
+    invoke-direct {v2, v3}, Lodj;-><init>(I)V
 
     .line 25
     .line 26
-    or-int/lit8 v0, v0, 0x1
-
     .line 27
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnErrorReturn;
+
     .line 28
-    iput v0, p0, LV0k;->a:I
-
     .line 29
-    .line 30
-    goto :goto_0
+    invoke-direct {v3, p1, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableOnErrorReturn;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 30
     .line 31
-    :cond_2
-    :goto_1
-    return-object p0
+    .line 32
+    new-instance p1, LUy9;
+
+    .line 33
+    .line 34
+    invoke-direct {p1, v1, v0}, LUy9;-><init>(Ljava/util/concurrent/atomic/AtomicReference;I)V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/core/Flowable;->j(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoOnEach;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p1
+
+    .line 41
+    new-instance v2, Lp68;
+
+    .line 42
+    .line 43
+    invoke-direct {v2, v1, v0}, Lp68;-><init>(Ljava/util/concurrent/atomic/AtomicReference;I)V
+
+    .line 44
+    .line 45
+    .line 46
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoFinally;
+
+    .line 47
+    .line 48
+    invoke-direct {v0, p1, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoFinally;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/Action;)V
+
+    .line 49
+    .line 50
+    .line 51
+    return-object v0
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 2
+.method public final d()Z
+    .locals 1
 
     .line 1
-    iget v0, p0, LV0k;->a:I
+    iget-object v0, p0, LV0k;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
 
     .line 4
-    and-int/2addr v0, v1
-
     .line 5
-    if-eqz v0, :cond_0
+    return v0
+.end method
 
+.method public final dispose()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LV0k;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
+
+    .line 4
+    .line 5
     .line 6
-    .line 7
-    iget v0, p0, LV0k;->b:F
-
-    .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->G(IF)V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 13
-    .line 14
-    .line 15
     return-void
+.end method
+
+.method public final getTag()Lge0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LV0k;->e0:LzHi;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

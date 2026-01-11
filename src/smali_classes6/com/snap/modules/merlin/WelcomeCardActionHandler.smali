@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LlXj;
+    proxyClass = Lenk;
     schema = "\'updateDisplayName\':f|m|(s, f(r?:\'[0]\')),\'sendMessage\':f|m|(s, f(r?:\'[0]\')),\'suggestMessage\':f?|m|(s, b, f(r?:\'[0]\')),\'presentAvatarBuilder\':f?|m|(),\'presentReplyCamera\':f?|m|()"
     typeReferences = {
         Lcom/snap/composer/foundation/Error;
@@ -19,12 +19,12 @@
 
 # virtual methods
 .method public abstract presentAvatarBuilder()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract presentReplyCamera()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -43,9 +43,6 @@
 .end method
 
 .method public abstract suggestMessage(Ljava/lang/String;ZLkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -54,6 +51,9 @@
             "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

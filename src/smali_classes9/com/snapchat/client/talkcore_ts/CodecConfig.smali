@@ -4,8 +4,6 @@
 
 
 # instance fields
-.field final mAudioAdaptationEnabled:Z
-
 .field final mHasH264Decoder:Z
 
 .field final mHasH264Encoder:Z
@@ -16,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(ZZZZZ)V
+.method public constructor <init>(ZZZZ)V
     .locals 0
 
     .line 1
@@ -41,26 +39,11 @@
 
     .line 11
     .line 12
-    iput-boolean p5, p0, Lcom/snapchat/client/talkcore_ts/CodecConfig;->mAudioAdaptationEnabled:Z
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public getAudioAdaptationEnabled()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lcom/snapchat/client/talkcore_ts/CodecConfig;->mAudioAdaptationEnabled:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
 .method public getHasH264Decoder()Z
     .locals 1
 
@@ -106,7 +89,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 8
+    .locals 7
 
     .line 1
     iget-boolean v0, p0, Lcom/snapchat/client/talkcore_ts/CodecConfig;->mHasH264Encoder:Z
@@ -125,54 +108,61 @@
 
     .line 8
     .line 9
-    iget-boolean v4, p0, Lcom/snapchat/client/talkcore_ts/CodecConfig;->mAudioAdaptationEnabled:Z
+    const-string v4, "CodecConfig{mHasH264Encoder="
 
     .line 10
     .line 11
-    const-string v5, "CodecConfig{mHasH264Encoder="
+    const-string v5, ",mHasH264Decoder="
 
     .line 12
     .line 13
-    const-string v6, ",mHasH264Decoder="
+    const-string v6, ",mHasH265Encoder="
 
     .line 14
     .line 15
-    const-string v7, ",mHasH265Encoder="
+    invoke-static {v4, v5, v6, v0, v1}, LBv7;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
-    invoke-static {v5, v6, v7, v0, v1}, LmG8;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/StringBuilder;
-
     .line 18
-    .line 19
-    .line 20
     move-result-object v0
 
+    .line 19
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 20
     .line 21
+    .line 22
     const-string v1, ",mHasH265Decoder="
 
-    .line 22
     .line 23
-    const-string v5, ",mAudioAdaptationEnabled="
-
     .line 24
-    .line 25
-    invoke-static {v0, v2, v1, v3, v5}, Lkah;->j(Ljava/lang/StringBuilder;ZLjava/lang/String;ZLjava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 25
     .line 26
     .line 27
-    .line 28
-    const-string v1, "}"
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 28
     .line 29
     .line 30
-    invoke-static {v1, v0, v4}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+    const-string v1, "}"
 
     .line 31
     .line 32
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
     move-result-object v0
 
-    .line 34
+    .line 39
     return-object v0
 .end method

@@ -4,130 +4,130 @@
 
 
 # virtual methods
-.method public abstract getWallets(Ljava/lang/String;Ljava/lang/String;Let8;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getWallets(Ljava/lang/String;Ljava/lang/String;LLz8;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # Let8;
-        .annotation runtime Ljv1;
+    .param p3    # LLz8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Let8;",
+            "LLz8;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lft8;",
+            "Ljnf<",
+            "LMz8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract registerWallet(Ljava/lang/String;Ljava/lang/String;LaKe;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract registerWallet(Ljava/lang/String;Ljava/lang/String;LJ1f;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LaKe;
-        .annotation runtime Ljv1;
+    .param p3    # LJ1f;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LaKe;",
+            "LJ1f;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LbKe;",
+            "Ljnf<",
+            "LK1f;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract removeWallet(Ljava/lang/String;Ljava/lang/String;LFSe;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract removeWallet(Ljava/lang/String;Ljava/lang/String;Lwaf;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LFSe;
-        .annotation runtime Ljv1;
+    .param p3    # Lwaf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LFSe;",
+            "Lwaf;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract walletOwner(Ljava/lang/String;Ljava/lang/String;LNY9;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract walletOwner(Ljava/lang/String;Ljava/lang/String;Loba;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LNY9;
-        .annotation runtime Ljv1;
+    .param p3    # Loba;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LNY9;",
+            "Loba;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LOY9;",
+            "Ljnf<",
+            "Lpba;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

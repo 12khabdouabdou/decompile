@@ -1,64 +1,120 @@
 .class public final LRue;
-.super Lcom/snap/composer/utils/b;
+.super LJP9;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'senderColor\':d,\'durationMs\':d@?"
-    typeReferences = {}
-.end annotation
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field private _durationMs:Ljava/lang/Double;
+.field public final synthetic a:I
 
-.field private _senderColor:D
+.field public final synthetic b:LSue;
 
 
 # direct methods
-.method public constructor <init>(D)V
+.method public synthetic constructor <init>(LSue;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LRue;->a:I
 
-    .line 2
-    iput-wide p1, p0, LRue;->_senderColor:D
+    iput-object p1, p0, LRue;->b:LSue;
 
     const/4 p1, 0x0
 
-    .line 3
-    iput-object p1, p0, LRue;->_durationMs:Ljava/lang/Double;
-
-    return-void
-.end method
-
-.method public constructor <init>(DLjava/lang/Double;)V
-    .locals 0
-
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    iput-wide p1, p0, LRue;->_senderColor:D
-
-    .line 6
-    iput-object p3, p0, LRue;->_durationMs:Ljava/lang/Double;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Double;)V
-    .locals 0
+.method public final d()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iput-object p1, p0, LRue;->_durationMs:Ljava/lang/Double;
+    iget v0, p0, LRue;->a:I
 
     .line 2
     .line 3
-    return-void
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LRue;->b:LSue;
+
+    .line 7
+    .line 8
+    iget-object v1, v0, LSue;->b:LmGc;
+
+    .line 9
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    iget-object v0, v0, LSue;->c:LL4b;
+
+    .line 12
+    .line 13
+    const/4 v3, 0x1
+
+    .line 14
+    const/4 v4, 0x0
+
+    .line 15
+    invoke-virtual {v1, v0, v3, v4, v2}, LmGc;->D(LL4b;ZZLkFc;)V
+
+    .line 16
+    .line 17
+    .line 18
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 19
+    .line 20
+    return-object v0
+
+    .line 21
+    :pswitch_0
+    iget-object v0, p0, LRue;->b:LSue;
+
+    .line 22
+    .line 23
+    iget-object v1, v0, LSue;->b:LmGc;
+
+    .line 24
+    .line 25
+    const/4 v2, 0x0
+
+    .line 26
+    iget-object v0, v0, LSue;->c:LL4b;
+
+    .line 27
+    .line 28
+    const/4 v3, 0x1
+
+    .line 29
+    const/4 v4, 0x0
+
+    .line 30
+    invoke-virtual {v1, v0, v3, v4, v2}, LmGc;->D(LL4b;ZZLkFc;)V
+
+    .line 31
+    .line 32
+    .line 33
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 34
+    .line 35
+    return-object v0
+
+    .line 36
+    nop
+
+    .line 37
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

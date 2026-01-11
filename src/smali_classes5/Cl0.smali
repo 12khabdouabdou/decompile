@@ -1,18 +1,202 @@
-.class public abstract synthetic LCl0;
+.class public final LCl0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LCm0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final a:Lio/reactivex/rxjava3/core/Observable;
+
+.field public final b:Lbda;
+
+.field public final c:LHP;
+
+.field public final t:Ljava/util/concurrent/locks/ReentrantLock;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;Lbda;LHP;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, LQW9$a;->values()[LQW9$a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LCl0;->a:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LCl0;->b:Lbda;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LCl0;->c:LHP;
+
+    .line 9
+    .line 10
+    new-instance p1, Ljava/util/concurrent/locks/ReentrantLock;
+
+    .line 11
+    .line 12
+    invoke-direct {p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
+
+    .line 13
+    .line 14
+    .line 15
+    iput-object p1, p0, LCl0;->t:Ljava/util/concurrent/locks/ReentrantLock;
+
+    .line 16
+    .line 17
+    return-void
+.end method
+
+
+# virtual methods
+.method public final f2()Lio/reactivex/rxjava3/disposables/Disposable;
+    .locals 6
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    new-instance v1, Ljava/util/HashMap;
+
+    .line 3
+    .line 4
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    new-instance v2, LBl0;
+
+    .line 8
+    .line 9
+    invoke-direct {v2, p0}, LBl0;-><init>(LCl0;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object v3, p0, LCl0;->a:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 13
+    .line 14
+    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v2
+
+    .line 18
+    new-instance v4, Lwl0;
+
+    .line 19
+    .line 20
+    invoke-direct {v4, p0, v1}, Lwl0;-><init>(LCl0;Ljava/util/HashMap;)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v2, v4}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    sget-object v4, LdTc;->h0:LdTc;
+
+    .line 28
+    .line 29
+    invoke-virtual {v3, v4, v0}, Lio/reactivex/rxjava3/core/Observable;->g0(Lio/reactivex/rxjava3/functions/Function;Z)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v3
+
+    .line 33
+    new-instance v4, Lxl0;
+
+    .line 34
+    .line 35
+    invoke-direct {v4, p0, v1}, Lxl0;-><init>(LCl0;Ljava/util/HashMap;)V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 39
+    .line 40
+    .line 41
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoFinally;
+
+    .line 42
+    .line 43
+    invoke-direct {v5, v3, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoFinally;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Action;)V
+
+    .line 44
+    .line 45
+    .line 46
+    new-instance v3, Lyl0;
+
+    .line 47
+    .line 48
+    invoke-direct {v3, p0, v1}, Lyl0;-><init>(LCl0;Ljava/util/HashMap;)V
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {v5, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v1
+
+    .line 55
+    new-instance v3, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 56
+    .line 57
+    const/4 v4, 0x2
+
+    .line 58
+    new-array v4, v4, [Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 59
+    .line 60
+    aput-object v2, v4, v0
+
+    .line 61
+    .line 62
+    const/4 v0, 0x1
+
+    .line 63
+    aput-object v1, v4, v0
+
+    .line 64
+    .line 65
+    invoke-direct {v3, v4}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>([Lio/reactivex/rxjava3/disposables/Disposable;)V
+
+    .line 66
+    .line 67
+    .line 68
+    return-object v3
+.end method
+
+.method public final observe()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, LlFg;->C(LCm0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
 
     .line 2
     .line 3
@@ -20,142 +204,5 @@
     move-result-object v0
 
     .line 5
-    array-length v0, v0
-
-    .line 6
-    new-array v0, v0, [I
-
-    .line 7
-    .line 8
-    :try_start_0
-    sget-object v1, LQW9$a;->t:LQW9$a;
-
-    .line 9
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v1
-
-    .line 14
-    const/4 v2, 0x1
-
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, LQW9$a;->X:LQW9$a;
-
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, LQW9$a;->Y:LQW9$a;
-
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    const/4 v2, 0x3
-
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, LQW9$a;->c:LQW9$a;
-
-    .line 36
-    .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v1
-
-    .line 41
-    const/4 v2, 0x4
-
-    .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 43
-    .line 44
-    :catch_3
-    const/4 v1, 0x5
-
-    .line 45
-    :try_start_4
-    sget-object v2, LQW9$a;->b:LQW9$a;
-
-    .line 46
-    .line 47
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v2
-
-    .line 51
-    aput v1, v0, v2
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 52
-    .line 53
-    :catch_4
-    const/4 v2, 0x6
-
-    .line 54
-    :try_start_5
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 55
-    .line 56
-    :catch_5
-    sput-object v0, LCl0;->a:[I
-
-    .line 57
-    .line 58
-    return-void
+    return-object v0
 .end method

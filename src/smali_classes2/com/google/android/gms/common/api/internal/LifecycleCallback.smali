@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lfla;)V
+.method public constructor <init>(Lvxa;)V
     .locals 0
 
     .line 1
@@ -24,7 +24,7 @@
     return-void
 .end method
 
-.method private static getChimeraLifecycleFragmentImpl(LVka;)Lfla;
+.method private static getChimeraLifecycleFragmentImpl(Lmxa;)Lvxa;
     .locals 1
     .annotation build Landroidx/annotation/Keep;
     .end annotation
@@ -56,7 +56,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lfla;->C0()Landroid/app/Activity;
+    invoke-interface {v0}, Lvxa;->A0()Landroid/app/Activity;
 
     .line 4
     .line 5
@@ -64,7 +64,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Ldw8;->s(Ljava/lang/Object;)V
+    invoke-static {v0}, LNpk;->k(Ljava/lang/Object;)V
 
     .line 8
     .line 9

@@ -12,7 +12,7 @@
 
 .field public final b:Landroid/graphics/Paint;
 
-.field public final c:LBgg;
+.field public final c:LtBg;
 
 .field public e0:Landroid/graphics/Bitmap;
 
@@ -34,13 +34,13 @@
 
 .field public n0:Z
 
-.field public o0:Lmo4;
+.field public o0:LSj3;
 
 .field public p0:Landroid/animation/ValueAnimator;
 
 .field public q0:Landroid/graphics/Bitmap;
 
-.field public t:LCsa;
+.field public t:LLEa;
 
 
 # direct methods
@@ -104,13 +104,13 @@
     invoke-virtual {p0, p3}, Landroid/view/View;->setWillNotDraw(Z)V
 
     .line 5
-    new-instance v0, LBgg;
+    new-instance v0, LtBg;
 
     .line 6
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 7
-    iput-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LBgg;
+    iput-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LtBg;
 
     .line 8
     new-instance v1, Landroid/graphics/Paint;
@@ -148,7 +148,7 @@
     if-eqz p2, :cond_13
 
     .line 15
-    sget-object v1, Lcve;->a:[I
+    sget-object v1, LKMe;->a:[I
 
     invoke-virtual {p1, p2, v1, p3, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -333,25 +333,25 @@
     if-eq v5, v3, :cond_6
 
     .line 43
-    iput v2, v0, LBgg;->a:I
+    iput v2, v0, LtBg;->a:I
 
     goto :goto_1
 
     .line 44
     :cond_6
-    iput v4, v0, LBgg;->a:I
+    iput v4, v0, LtBg;->a:I
 
     goto :goto_1
 
     .line 45
     :cond_7
-    iput v3, v0, LBgg;->a:I
+    iput v3, v0, LtBg;->a:I
 
     goto :goto_1
 
     .line 46
     :cond_8
-    iput p2, v0, LBgg;->a:I
+    iput p2, v0, LtBg;->a:I
 
     :cond_9
     :goto_1
@@ -372,13 +372,13 @@
     if-eq v3, v2, :cond_a
 
     .line 49
-    iput v2, v0, LBgg;->i:I
+    iput v2, v0, LtBg;->i:I
 
     goto :goto_2
 
     .line 50
     :cond_a
-    iput p2, v0, LBgg;->i:I
+    iput p2, v0, LtBg;->i:I
 
     :cond_b
     :goto_2
@@ -396,7 +396,7 @@
 
     move-result p2
 
-    iput p2, v0, LBgg;->c:F
+    iput p2, v0, LtBg;->c:F
 
     :cond_c
     const/16 p2, 0x8
@@ -413,7 +413,7 @@
 
     move-result p2
 
-    iput p2, v0, LBgg;->d:I
+    iput p2, v0, LtBg;->d:I
 
     :cond_d
     const/16 p2, 0x9
@@ -430,7 +430,7 @@
 
     move-result p2
 
-    iput p2, v0, LBgg;->e:I
+    iput p2, v0, LtBg;->e:I
 
     :cond_e
     const/16 p2, 0xa
@@ -447,7 +447,7 @@
 
     move-result p2
 
-    iput p2, v0, LBgg;->f:F
+    iput p2, v0, LtBg;->f:F
 
     :cond_f
     const/16 p2, 0xb
@@ -464,7 +464,7 @@
 
     move-result p2
 
-    iput p2, v0, LBgg;->g:F
+    iput p2, v0, LtBg;->g:F
 
     :cond_10
     const/16 p2, 0xc
@@ -481,7 +481,7 @@
 
     move-result p2
 
-    iput p2, v0, LBgg;->h:F
+    iput p2, v0, LtBg;->h:F
 
     :cond_11
     const/16 p2, 0xe
@@ -498,7 +498,7 @@
 
     move-result p2
 
-    iput p2, v0, LBgg;->b:F
+    iput p2, v0, LtBg;->b:F
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -642,19 +642,19 @@
     move-result v4
 
     .line 23
-    sget-object v5, LAgg;->a:[I
+    sget-object v5, LsBg;->a:[I
 
     .line 24
     .line 25
-    iget-object v6, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LBgg;
+    iget-object v6, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LtBg;
 
     .line 26
     .line 27
-    iget v7, v6, LBgg;->i:I
+    iget v7, v6, LtBg;->i:I
 
     .line 28
     .line 29
-    invoke-static {v7}, Llva;->L(I)I
+    invoke-static {v7}, LzHa;->L(I)I
 
     .line 30
     .line 31
@@ -666,11 +666,11 @@
 
     .line 34
     .line 35
-    iget v5, v6, LBgg;->a:I
+    iget v5, v6, LtBg;->a:I
 
     .line 36
     .line 37
-    invoke-static {v5}, Llva;->L(I)I
+    invoke-static {v5}, LzHa;->L(I)I
 
     .line 38
     .line 39
@@ -693,26 +693,26 @@
 
     .line 47
     .line 48
-    iget-object v4, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LCsa;
+    iget-object v4, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LLEa;
 
     .line 49
     .line 50
     neg-int v5, v3
 
     .line 51
-    iput v5, v4, LCsa;->b:I
+    iput v5, v4, LLEa;->b:I
 
     .line 52
     .line 53
-    iput v1, v4, LCsa;->c:I
+    iput v1, v4, LLEa;->c:I
 
     .line 54
     .line 55
-    iput v3, v4, LCsa;->d:I
+    iput v3, v4, LLEa;->d:I
 
     .line 56
     .line 57
-    iput v1, v4, LCsa;->e:I
+    iput v1, v4, LLEa;->e:I
 
     .line 58
     .line 59
@@ -720,26 +720,26 @@
 
     .line 60
     :cond_2
-    iget-object v3, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LCsa;
+    iget-object v3, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LLEa;
 
     .line 61
     .line 62
     neg-int v5, v4
 
     .line 63
-    iput v1, v3, LCsa;->b:I
+    iput v1, v3, LLEa;->b:I
 
     .line 64
     .line 65
-    iput v4, v3, LCsa;->c:I
+    iput v4, v3, LLEa;->c:I
 
     .line 66
     .line 67
-    iput v1, v3, LCsa;->d:I
+    iput v1, v3, LLEa;->d:I
 
     .line 68
     .line 69
-    iput v5, v3, LCsa;->e:I
+    iput v5, v3, LLEa;->e:I
 
     .line 70
     .line 71
@@ -747,26 +747,26 @@
 
     .line 72
     :cond_3
-    iget-object v4, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LCsa;
+    iget-object v4, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LLEa;
 
     .line 73
     .line 74
     neg-int v5, v3
 
     .line 75
-    iput v3, v4, LCsa;->b:I
+    iput v3, v4, LLEa;->b:I
 
     .line 76
     .line 77
-    iput v1, v4, LCsa;->c:I
+    iput v1, v4, LLEa;->c:I
 
     .line 78
     .line 79
-    iput v5, v4, LCsa;->d:I
+    iput v5, v4, LLEa;->d:I
 
     .line 80
     .line 81
-    iput v1, v4, LCsa;->e:I
+    iput v1, v4, LLEa;->e:I
 
     .line 82
     .line 83
@@ -774,26 +774,26 @@
 
     .line 84
     :cond_4
-    iget-object v3, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LCsa;
+    iget-object v3, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LLEa;
 
     .line 85
     .line 86
     neg-int v5, v4
 
     .line 87
-    iput v1, v3, LCsa;->b:I
+    iput v1, v3, LLEa;->b:I
 
     .line 88
     .line 89
-    iput v5, v3, LCsa;->c:I
+    iput v5, v3, LLEa;->c:I
 
     .line 90
     .line 91
-    iput v1, v3, LCsa;->d:I
+    iput v1, v3, LLEa;->d:I
 
     .line 92
     .line 93
-    iput v4, v3, LCsa;->e:I
+    iput v4, v3, LLEa;->e:I
 
     .line 94
     .line 95
@@ -898,7 +898,7 @@
 
     .line 142
     .line 143
-    new-instance v1, LeW;
+    new-instance v1, LkY;
 
     .line 144
     .line 145
@@ -906,7 +906,7 @@
 
     .line 146
     .line 147
-    invoke-direct {v1, v3, p0}, LeW;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v3, p0}, LkY;-><init>(ILjava/lang/Object;)V
 
     .line 148
     .line 149
@@ -1268,11 +1268,11 @@
     move-result v4
 
     .line 82
-    iget-object v6, v0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LBgg;
+    iget-object v6, v0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LtBg;
 
     .line 83
     .line 84
-    iget v7, v6, LBgg;->d:I
+    iget v7, v6, LtBg;->d:I
 
     .line 85
     .line 86
@@ -1287,7 +1287,7 @@
     int-to-float v4, v4
 
     .line 90
-    iget v7, v6, LBgg;->g:F
+    iget v7, v6, LtBg;->g:F
 
     .line 91
     .line 92
@@ -1307,7 +1307,7 @@
     move-result v4
 
     .line 99
-    iget v8, v6, LBgg;->e:I
+    iget v8, v6, LtBg;->e:I
 
     .line 100
     .line 101
@@ -1322,7 +1322,7 @@
     int-to-float v4, v4
 
     .line 105
-    iget v8, v6, LBgg;->h:F
+    iget v8, v6, LtBg;->h:F
 
     .line 106
     .line 107
@@ -1388,11 +1388,11 @@
     .line 133
     .line 134
     .line 135
-    iget v4, v6, LBgg;->i:I
+    iget v4, v6, LtBg;->i:I
 
     .line 136
     .line 137
-    invoke-static {v4}, Llva;->L(I)I
+    invoke-static {v4}, LzHa;->L(I)I
 
     .line 138
     .line 139
@@ -1417,11 +1417,11 @@
 
     .line 147
     .line 148
-    iget v4, v6, LBgg;->a:I
+    iget v4, v6, LtBg;->a:I
 
     .line 149
     .line 150
-    invoke-static {v4}, Llva;->L(I)I
+    invoke-static {v4}, LzHa;->L(I)I
 
     .line 151
     .line 152
@@ -1534,11 +1534,11 @@
     int-to-float v15, v15
 
     .line 192
-    iget v5, v6, LBgg;->i:I
+    iget v5, v6, LtBg;->i:I
 
     .line 193
     .line 194
-    invoke-static {v5}, Llva;->L(I)I
+    invoke-static {v5}, LzHa;->L(I)I
 
     .line 195
     .line 196
@@ -1579,7 +1579,7 @@
 
     .line 212
     :goto_8
-    invoke-virtual {v6}, LBgg;->a()[F
+    invoke-virtual {v6}, LtBg;->a()[F
 
     .line 213
     .line 214
@@ -1673,11 +1673,11 @@
     double-to-float v13, v13
 
     .line 256
-    iget v14, v6, LBgg;->i:I
+    iget v14, v6, LtBg;->i:I
 
     .line 257
     .line 258
-    invoke-static {v14}, Llva;->L(I)I
+    invoke-static {v14}, LzHa;->L(I)I
 
     .line 259
     .line 260
@@ -1718,7 +1718,7 @@
 
     .line 276
     :goto_b
-    invoke-virtual {v6}, LBgg;->a()[F
+    invoke-virtual {v6}, LtBg;->a()[F
 
     .line 277
     .line 278
@@ -1751,7 +1751,7 @@
 
     .line 292
     :goto_c
-    iget v5, v6, LBgg;->b:F
+    iget v5, v6, LtBg;->b:F
 
     .line 293
     .line 294
@@ -2013,15 +2013,15 @@
     .line 29
     .line 30
     .line 31
-    iget-object v2, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LBgg;
+    iget-object v2, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->c:LtBg;
 
     .line 32
     .line 33
-    iput v1, v2, LBgg;->a:I
+    iput v1, v2, LtBg;->a:I
 
     .line 34
     .line 35
-    iput v1, v2, LBgg;->i:I
+    iput v1, v2, LtBg;->i:I
 
     .line 36
     .line 37
@@ -2029,22 +2029,22 @@
 
     .line 38
     .line 39
-    iput v1, v2, LBgg;->c:F
+    iput v1, v2, LtBg;->c:F
 
     .line 40
     .line 41
-    iput v0, v2, LBgg;->d:I
+    iput v0, v2, LtBg;->d:I
 
     .line 42
     .line 43
-    iput v0, v2, LBgg;->e:I
+    iput v0, v2, LtBg;->e:I
 
     .line 44
     .line 45
     const/4 v0, 0x0
 
     .line 46
-    iput v0, v2, LBgg;->f:F
+    iput v0, v2, LtBg;->f:F
 
     .line 47
     .line 48
@@ -2052,11 +2052,11 @@
 
     .line 49
     .line 50
-    iput v1, v2, LBgg;->g:F
+    iput v1, v2, LtBg;->g:F
 
     .line 51
     .line 52
-    iput v1, v2, LBgg;->h:F
+    iput v1, v2, LtBg;->h:F
 
     .line 53
     .line 54
@@ -2064,23 +2064,23 @@
 
     .line 55
     .line 56
-    iput v3, v2, LBgg;->b:F
+    iput v3, v2, LtBg;->b:F
 
     .line 57
     .line 58
-    new-instance v2, LCsa;
+    new-instance v2, LLEa;
 
     .line 59
     .line 60
     const/4 v3, 0x3
 
     .line 61
-    invoke-direct {v2, v3}, LCsa;-><init>(I)V
+    invoke-direct {v2, v3}, LLEa;-><init>(I)V
 
     .line 62
     .line 63
     .line 64
-    iput-object v2, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LCsa;
+    iput-object v2, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->t:LLEa;
 
     .line 65
     .line 66
@@ -2147,7 +2147,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:Lmo4;
+    iget-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:LSj3;
 
     .line 5
     .line 6
@@ -2155,19 +2155,19 @@
 
     .line 7
     .line 8
-    new-instance v0, Lmo4;
+    new-instance v0, LSj3;
 
     .line 9
     .line 10
-    const/4 v1, 0x3
+    const/4 v1, 0x4
 
     .line 11
-    invoke-direct {v0, v1, p0}, Lmo4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LSj3;-><init>(ILjava/lang/Object;)V
 
     .line 12
     .line 13
     .line 14
-    iput-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:Lmo4;
+    iput-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:LSj3;
 
     .line 15
     .line 16
@@ -2180,7 +2180,7 @@
     move-result-object v0
 
     .line 20
-    iget-object v1, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:Lmo4;
+    iget-object v1, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:LSj3;
 
     .line 21
     .line 22
@@ -2201,7 +2201,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:Lmo4;
+    iget-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:LSj3;
 
     .line 5
     .line 6
@@ -2217,7 +2217,7 @@
     move-result-object v0
 
     .line 12
-    iget-object v1, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:Lmo4;
+    iget-object v1, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:LSj3;
 
     .line 13
     .line 14
@@ -2229,7 +2229,7 @@
     const/4 v0, 0x0
 
     .line 18
-    iput-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:Lmo4;
+    iput-object v0, p0, Lcom/facebook/shimmer/ShimmerFrameLayout;->o0:LSj3;
 
     .line 19
     .line 20

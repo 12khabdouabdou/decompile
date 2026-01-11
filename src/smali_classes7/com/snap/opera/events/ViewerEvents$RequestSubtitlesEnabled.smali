@@ -1,10 +1,10 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
 .field public final c:Z
 
@@ -12,16 +12,16 @@
 
 
 # direct methods
-.method public constructor <init>(ILdXc;Z)V
+.method public constructor <init>(ILYbd;Z)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LdXc;
+    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LYbd;
 
     .line 5
     .line 6
@@ -38,11 +38,11 @@
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LYbd;
 
     .line 2
     .line 3
@@ -66,11 +66,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;
 
-    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LdXc;
+    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LYbd;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LYbd;
 
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -110,11 +110,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LYbd;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     .line 4
     .line 5
@@ -158,7 +158,7 @@
 
     .line 22
     .line 23
-    invoke-static {v1}, Llva;->L(I)I
+    invoke-static {v1}, LzHa;->L(I)I
 
     .line 24
     .line 25
@@ -181,7 +181,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$RequestSubtitlesEnabled;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

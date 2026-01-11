@@ -4,539 +4,310 @@
 
 
 # instance fields
-.field public final a:LaKi;
+.field public final a:LMEi;
 
-.field public final b:Ljava/lang/String;
-
-.field public final c:LbV3;
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:Lp0h;
-
-.field public final f:LaLi;
+.field public final b:J
 
 
 # direct methods
-.method public synthetic constructor <init>(LaKi;Ljava/lang/String;LbV3;Ljava/lang/String;LP9c;I)V
-    .locals 9
-
-    and-int/lit8 v0, p6, 0x8
-
-    const/4 v1, 0x0
-
-    if-eqz v0, :cond_0
-
-    move-object v6, v1
-
-    goto :goto_0
-
-    :cond_0
-    move-object v6, p4
-
-    :goto_0
-    and-int/lit8 p4, p6, 0x10
-
-    if-eqz p4, :cond_1
-
-    move-object v7, v1
-
-    goto :goto_1
-
-    :cond_1
-    move-object v7, p5
-
-    :goto_1
-    const/4 v8, 0x0
-
-    move-object v2, p0
-
-    move-object v3, p1
-
-    move-object v4, p2
-
-    move-object v5, p3
+.method public constructor <init>()V
+    .locals 3
 
     .line 1
-    invoke-direct/range {v2 .. v8}, LgKi;-><init>(LaKi;Ljava/lang/String;LbV3;Ljava/lang/String;Lp0h;LaLi;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(LaKi;Ljava/lang/String;LbV3;Ljava/lang/String;Lp0h;LaLi;)V
-    .locals 0
-
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
     .line 3
-    iput-object p1, p0, LgKi;->a:LaKi;
-
     .line 4
-    iput-object p2, p0, LgKi;->b:Ljava/lang/String;
+    invoke-static {}, LuQ8;->b()LuQ8;
 
     .line 5
-    iput-object p3, p0, LgKi;->c:LbV3;
-
     .line 6
-    iput-object p4, p0, LgKi;->d:Ljava/lang/String;
-
     .line 7
-    iput-object p5, p0, LgKi;->e:Lp0h;
+    move-result-object v0
 
     .line 8
-    iput-object p6, p0, LgKi;->f:LaLi;
+    new-instance v1, LMEi;
 
+    .line 9
+    .line 10
+    const/4 v2, 0x0
+
+    .line 11
+    invoke-direct {v1, v0, v2}, LOEi;-><init>(Ljava/lang/Object;LOEi;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object v2, v1, LMEi;->Y:LMEi;
+
+    .line 15
+    .line 16
+    iput-object v1, p0, LgKi;->a:LMEi;
+
+    .line 17
+    .line 18
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-wide v0
+
+    .line 22
+    iput-wide v0, p0, LgKi;->b:J
+
+    .line 23
+    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final declared-synchronized a(LeKi;)LfKi;
+    .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    monitor-enter p0
 
     .line 2
-    if-ne p0, p1, :cond_0
+    :try_start_0
+    iget-object v0, p0, LgKi;->a:LMEi;
 
     .line 3
     .line 4
-    return v0
+    invoke-virtual {v0, p1}, LMEi;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
-    :cond_0
-    instance-of v1, p1, LgKi;
-
     .line 6
     .line 7
-    const/4 v2, 0x0
+    move-result-object v1
 
     .line 8
-    if-nez v1, :cond_1
+    if-nez v1, :cond_0
 
     .line 9
     .line 10
-    return v2
+    new-instance v1, LfKi;
 
     .line 11
-    :cond_1
-    check-cast p1, LgKi;
-
     .line 12
-    .line 13
-    iget-object v1, p1, LgKi;->a:LaKi;
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
 
+    .line 13
     .line 14
     .line 15
-    iget-object v3, p0, LgKi;->a:LaKi;
+    move-result-object v2
 
     .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {v2}, Ljava/util/UUID;->toString()Ljava/lang/String;
 
+    .line 17
     .line 18
     .line 19
+    move-result-object v2
+
     .line 20
-    move-result v1
+    invoke-direct {v1, v2}, LfKi;-><init>(Ljava/lang/String;)V
 
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
     .line 23
-    return v2
+    invoke-virtual {v1}, LfKi;->toString()Ljava/lang/String;
 
     .line 24
-    :cond_2
-    iget-object v1, p0, LgKi;->b:Ljava/lang/String;
-
     .line 25
     .line 26
-    iget-object v3, p1, LgKi;->b:Ljava/lang/String;
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 29
-    .line 30
-    .line 31
-    move-result v1
+    const/4 v2, 0x0
 
+    .line 30
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 31
     .line 32
-    if-nez v1, :cond_3
+    invoke-static {v2}, LMIc;->i([Ljava/lang/Object;)V
 
     .line 33
     .line 34
-    return v2
-
     .line 35
-    :cond_3
-    iget-object v1, p0, LgKi;->c:LbV3;
+    invoke-virtual {v0, p1, v1}, LMEi;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
     .line 37
-    iget-object v3, p1, LgKi;->c:LbV3;
-
     .line 38
-    .line 39
-    if-eq v1, v3, :cond_4
-
-    .line 40
-    .line 41
-    return v2
-
-    .line 42
-    :cond_4
-    iget-object v1, p0, LgKi;->d:Ljava/lang/String;
-
-    .line 43
-    .line 44
-    iget-object v3, p1, LgKi;->d:Ljava/lang/String;
-
-    .line 45
-    .line 46
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v1
-
-    .line 50
-    if-nez v1, :cond_5
-
-    .line 51
-    .line 52
-    return v2
-
-    .line 53
-    :cond_5
-    iget-object v1, p0, LgKi;->e:Lp0h;
-
-    .line 54
-    .line 55
-    iget-object v3, p1, LgKi;->e:Lp0h;
-
-    .line 56
-    .line 57
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 58
-    .line 59
-    .line 60
-    move-result v1
-
-    .line 61
-    if-nez v1, :cond_6
-
-    .line 62
-    .line 63
-    return v2
-
-    .line 64
-    :cond_6
-    iget-object v1, p0, LgKi;->f:LaLi;
-
-    .line 65
-    .line 66
-    iget-object p1, p1, LgKi;->f:LaLi;
-
-    .line 67
-    .line 68
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 69
-    .line 70
-    .line 71
-    move-result p1
-
-    .line 72
-    if-nez p1, :cond_7
-
-    .line 73
-    .line 74
-    return v2
-
-    .line 75
-    :cond_7
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, LgKi;->a:LaKi;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const/16 v1, 0x1f
-
-    .line 8
-    .line 9
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 10
-    .line 11
-    iget-object v2, p0, LgKi;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    iget-object v2, p0, LgKi;->c:LbV3;
-
-    .line 18
-    .line 19
-    invoke-static {v2, v0, v1}, LUl;->e(LbV3;II)I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    const/4 v2, 0x0
-
-    .line 24
-    iget-object v3, p0, LgKi;->d:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    if-nez v3, :cond_0
-
-    .line 27
-    .line 28
-    const/4 v3, 0x0
-
-    .line 29
     goto :goto_0
 
-    .line 30
-    :cond_0
-    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
-
-    .line 31
-    .line 32
-    .line 33
-    move-result v3
-
-    .line 34
-    :goto_0
-    add-int/2addr v0, v3
-
-    .line 35
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 36
-    .line 37
-    iget-object v3, p0, LgKi;->e:Lp0h;
-
-    .line 38
     .line 39
-    if-nez v3, :cond_1
+    :catchall_0
+    move-exception p1
 
     .line 40
-    .line 41
-    const/4 v3, 0x0
-
-    .line 42
     goto :goto_1
 
+    .line 41
+    :cond_0
+    :goto_0
+    check-cast v1, LfKi;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 42
     .line 43
-    :cond_1
-    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+    monitor-exit p0
 
     .line 44
+    return-object v1
+
     .line 45
-    .line 46
-    move-result v3
-
-    .line 47
     :goto_1
-    add-int/2addr v0, v3
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 48
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 49
-    .line 50
-    iget-object v1, p0, LgKi;->f:LaLi;
-
-    .line 51
-    .line 52
-    if-nez v1, :cond_2
-
-    .line 53
-    .line 54
-    goto :goto_2
-
-    .line 55
-    :cond_2
-    invoke-virtual {v1}, LaLi;->hashCode()I
-
-    .line 56
-    .line 57
-    .line 58
-    move-result v2
-
-    .line 59
-    :goto_2
-    add-int/2addr v0, v2
-
-    .line 60
-    return v0
+    .line 46
+    throw p1
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public final declared-synchronized b(LfKi;)LeKi;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    monitor-enter p0
 
     .line 2
+    :try_start_0
+    iget-object v0, p0, LgKi;->a:LMEi;
+
     .line 3
-    const-string v1, "TopicOperaLaunchEvent(topic="
-
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0}, LMEi;->o()LaX0;
 
+    .line 5
     .line 6
     .line 7
+    move-result-object v0
+
     .line 8
-    iget-object v1, p0, LgKi;->a:LaKi;
+    check-cast v0, LMEi;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, LMEi;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", snapId="
+    move-result-object p1
+
+    .line 14
+    check-cast p1, LeKi;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 15
+    .line 16
+    monitor-exit p0
+
+    .line 17
+    return-object p1
+
+    .line 18
+    :catchall_0
+    move-exception p1
+
+    .line 19
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 20
+    throw p1
+.end method
+
+.method public final declared-synchronized c(LfKi;LeKi;)V
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, LgKi;->a:LMEi;
+
+    .line 3
+    .line 4
+    invoke-virtual {v0}, LMEi;->o()LaX0;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    check-cast v0, LMEi;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, p1}, LMEi;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v0, p0, LgKi;->a:LMEi;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p2, p1}, LMEi;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LgKi;->b:Ljava/lang/String;
+    invoke-static {p1}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 21
+    invoke-static {p2}, Ljava/util/Objects;->toString(Ljava/lang/Object;)Ljava/lang/String;
+
     .line 22
     .line 23
-    const-string v1, ", viewSource="
-
     .line 24
+    const/4 p1, 0x0
+
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-array p1, p1, [Ljava/lang/Object;
 
     .line 26
     .line 27
-    .line 28
-    iget-object v1, p0, LgKi;->c:LbV3;
+    invoke-static {p1}, LMIc;->i([Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 28
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    monitor-exit p0
 
     .line 31
+    return-void
+
     .line 32
+    :catchall_0
+    move-exception p1
+
     .line 33
-    const-string v1, ", requestId="
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LgKi;->d:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", sourceTarget="
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    iget-object v1, p0, LgKi;->e:Lp0h;
-
-    .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ", topicPageResponse="
-
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    iget-object v1, p0, LgKi;->f:LaLi;
-
-    .line 59
-    .line 60
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 61
-    .line 62
-    .line 63
-    const-string v1, ")"
-
-    .line 64
-    .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 66
-    .line 67
-    .line 68
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v0
-
-    .line 72
-    return-object v0
+    throw p1
 .end method

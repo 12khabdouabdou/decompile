@@ -1,9 +1,6 @@
 .class public final Lb4a;
-.super Ljava/lang/Object;
+.super Lh4a;
 .source "SourceFile"
-
-# interfaces
-.implements Lc4a;
 
 
 # static fields
@@ -33,13 +30,13 @@
 
 
 # virtual methods
-.method public final a(Lo09;)Lio/reactivex/rxjava3/core/Maybe;
-    .locals 0
+.method public final bridge synthetic getType()Ljava/lang/Enum;
+    .locals 1
 
     .line 1
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
+    sget-object v0, Lg4a;->a:Lg4a;
 
     .line 2
     .line 3
-    return-object p1
+    return-object v0
 .end method

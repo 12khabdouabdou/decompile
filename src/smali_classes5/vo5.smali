@@ -1,151 +1,170 @@
-.class public final Lvo5;
+.class public abstract synthetic Lvo5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LEa2;
 
-
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/subjects/Subject;
-
-.field public final b:LLn5;
-
-.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
+.method static constructor <clinit>()V
+    .locals 8
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x5
 
     .line 2
+    invoke-static {v0}, LzHa;->M(I)[I
+
     .line 3
     .line 4
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 5
+    move-result-object v1
+
     .line 6
+    array-length v1, v1
+
     .line 7
-    move-result-object v0
+    new-array v1, v1, [I
 
     .line 8
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/Subject;->b1()Lio/reactivex/rxjava3/subjects/Subject;
-
     .line 9
+    const/4 v2, 0x0
+
     .line 10
+    const/4 v3, 0x1
+
     .line 11
-    move-result-object v0
+    :try_start_0
+    aput v3, v1, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 12
-    iput-object v0, p0, Lvo5;->a:Lio/reactivex/rxjava3/subjects/Subject;
-
     .line 13
+    :catch_0
+    const/4 v4, 0x2
+
     .line 14
-    new-instance v1, LLn5;
+    :try_start_1
+    aput v4, v1, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 15
     .line 16
-    const/4 v2, 0x5
+    :catch_1
+    const/4 v5, 0x3
 
     .line 17
-    invoke-direct {v1, v2, v0}, LLn5;-><init>(ILio/reactivex/rxjava3/subjects/Subject;)V
+    :try_start_2
+    aput v5, v1, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 18
     .line 19
+    :catch_2
+    const/4 v6, 0x4
+
     .line 20
-    iput-object v1, p0, Lvo5;->b:LLn5;
+    :try_start_3
+    aput v6, v1, v5
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 21
     .line 22
-    new-instance v0, LNP3;
+    :catch_3
+    :try_start_4
+    aput v0, v1, v6
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
     .line 23
     .line 24
-    const/16 v1, 0x14
+    :catch_4
+    const/4 v1, 0x7
 
     .line 25
-    .line 26
-    invoke-direct {v0, v1, p0}, LNP3;-><init>(ILjava/lang/Object;)V
+    invoke-static {v1}, LzHa;->M(I)[I
 
+    .line 26
     .line 27
     .line 28
+    move-result-object v7
+
     .line 29
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
+    array-length v7, v7
 
     .line 30
-    .line 31
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+    new-array v7, v7, [I
 
+    .line 31
     .line 32
+    :try_start_5
+    aput v3, v7, v3
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
     .line 33
     .line 34
-    new-instance v0, LCa2;
+    :catch_5
+    :try_start_6
+    aput v4, v7, v4
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
 
     .line 35
     .line 36
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    :catch_6
+    :try_start_7
+    aput v5, v7, v5
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
 
     .line 37
     .line 38
-    .line 39
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->J0(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Observable;
+    :catch_7
+    :try_start_8
+    aput v6, v7, v6
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
 
+    .line 39
     .line 40
+    :catch_8
+    :try_start_9
+    aput v0, v7, v0
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
     .line 41
     .line 42
-    move-result-object v0
+    :catch_9
+    const/4 v0, 0x6
 
     .line 43
-    sget-object v1, LQFa;->a:LQFa;
+    :try_start_a
+    aput v0, v7, v0
+    :try_end_a
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
 
     .line 44
     .line 45
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
+    :catch_a
+    :try_start_b
+    aput v1, v7, v2
+    :try_end_b
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
 
     .line 46
     .line 47
+    :catch_b
+    sput-object v7, Lvo5;->a:[I
+
     .line 48
-    move-result-object v0
-
     .line 49
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v0
-
-    .line 53
-    iput-object v0, p0, Lvo5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 54
-    .line 55
     return-void
-.end method
-
-
-# virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lvo5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final f()Lio/reactivex/rxjava3/functions/Consumer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lvo5;->b:LLn5;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

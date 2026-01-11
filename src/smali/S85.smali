@@ -1,17 +1,87 @@
-.class public interface abstract LS85;
+.class public final LS85;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LGs3;
+.implements LKv3;
 
 
-# virtual methods
-.method public abstract M6()Lp95;
-.end method
+# instance fields
+.field public final X:LCBe;
 
-.method public abstract Z3()Lb95;
-.end method
+.field public final a:Lk45;
 
-.method public abstract r1()Leu5;
+.field public final b:Lz45;
+
+.field public final c:LBKj;
+
+.field public final t:Lq85;
+
+
+# direct methods
+.method public constructor <init>(Lk45;Lz45;LBKj;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LS85;->a:Lk45;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LS85;->b:Lz45;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LS85;->c:LBKj;
+
+    .line 9
+    .line 10
+    new-instance p1, Lq85;
+
+    .line 11
+    .line 12
+    const/4 p2, 0x1
+
+    .line 13
+    const/4 p3, 0x7
+
+    .line 14
+    invoke-direct {p1, p0, p2, p3}, Lq85;-><init>(Ljava/lang/Object;II)V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object p1, p0, LS85;->t:Lq85;
+
+    .line 18
+    .line 19
+    new-instance p1, Lq85;
+
+    .line 20
+    .line 21
+    const/4 p2, 0x0
+
+    .line 22
+    invoke-direct {p1, p0, p2, p3}, Lq85;-><init>(Ljava/lang/Object;II)V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {p1}, Lfv6;->b(LCBe;)LCBe;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
+
+    .line 29
+    iput-object p1, p0, LS85;->X:LCBe;
+
+    .line 30
+    .line 31
+    return-void
 .end method

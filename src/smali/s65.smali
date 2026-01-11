@@ -3,33 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGs3;
+.implements Lpsi;
 
 
 # instance fields
-.field public final X:LI45;
+.field public final a:Lu65;
 
-.field public final Y:Lake;
+.field public final b:LJ65;
 
-.field public final Z:LI45;
-
-.field public final a:LGZ4;
-
-.field public final b:LsL4;
-
-.field public final c:LFY4;
-
-.field public final e0:Lake;
-
-.field public final f0:Lake;
-
-.field public final g0:Lake;
-
-.field public final t:Lt65;
+.field public final c:LCBe;
 
 
 # direct methods
-.method public constructor <init>(Lt65;LFY4;LGZ4;LsL4;)V
+.method public constructor <init>(Lu65;LJ65;)V
     .locals 0
 
     .line 1
@@ -38,153 +24,87 @@
     .line 2
     .line 3
     .line 4
-    iput-object p3, p0, Ls65;->a:LGZ4;
+    iput-object p1, p0, Ls65;->a:Lu65;
 
     .line 5
     .line 6
-    iput-object p4, p0, Ls65;->b:LsL4;
+    iput-object p2, p0, Ls65;->b:LJ65;
 
     .line 7
     .line 8
-    iput-object p2, p0, Ls65;->c:LFY4;
+    new-instance p1, LB55;
 
     .line 9
     .line 10
-    iput-object p1, p0, Ls65;->t:Lt65;
+    const/16 p2, 0xb
 
     .line 11
     .line 12
-    new-instance p1, LI45;
+    invoke-direct {p1, p2}, LB55;-><init>(I)V
 
     .line 13
     .line 14
-    const/4 p2, 0x3
-
     .line 15
-    const/16 p3, 0x17
+    invoke-static {p1}, Lfv6;->b(LCBe;)LCBe;
 
     .line 16
     .line 17
-    invoke-direct {p1, p0, p2, p3}, LI45;-><init>(LGs3;II)V
+    .line 18
+    move-result-object p1
+
+    .line 19
+    iput-object p1, p0, Ls65;->c:LCBe;
+
+    .line 20
+    .line 21
+    return-void
+.end method
+
+
+# virtual methods
+.method public final u3()Lcf9;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Ls65;->c:LCBe;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LPv3;
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Ls65;->b:LJ65;
+
+    .line 10
+    .line 11
+    iget-object v2, p0, Ls65;->a:Lu65;
+
+    .line 12
+    .line 13
+    invoke-static {v0, v2, v1}, LnPk;->d(LPv3;Lu65;LJ65;)LrX4;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    invoke-static {v0}, LkYk;->b(LrX4;)Lcf9;
 
     .line 18
     .line 19
     .line 20
-    iput-object p1, p0, Ls65;->X:LI45;
+    move-result-object v0
 
     .line 21
-    .line 22
-    new-instance p1, LI45;
-
-    .line 23
-    .line 24
-    const/4 p2, 0x2
-
-    .line 25
-    invoke-direct {p1, p0, p2, p3}, LI45;-><init>(LGs3;II)V
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object p1
-
-    .line 32
-    iput-object p1, p0, Ls65;->Y:Lake;
-
-    .line 33
-    .line 34
-    new-instance p1, LI45;
-
-    .line 35
-    .line 36
-    const/4 p2, 0x4
-
-    .line 37
-    invoke-direct {p1, p0, p2, p3}, LI45;-><init>(LGs3;II)V
-
-    .line 38
-    .line 39
-    .line 40
-    iput-object p1, p0, Ls65;->Z:LI45;
-
-    .line 41
-    .line 42
-    new-instance p1, LI45;
-
-    .line 43
-    .line 44
-    const/4 p2, 0x1
-
-    .line 45
-    invoke-direct {p1, p0, p2, p3}, LI45;-><init>(LGs3;II)V
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object p1
-
-    .line 52
-    iput-object p1, p0, Ls65;->e0:Lake;
-
-    .line 53
-    .line 54
-    new-instance p1, LI45;
-
-    .line 55
-    .line 56
-    const/4 p2, 0x0
-
-    .line 57
-    invoke-direct {p1, p0, p2, p3}, LI45;-><init>(LGs3;II)V
-
-    .line 58
-    .line 59
-    .line 60
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object p1
-
-    .line 64
-    iput-object p1, p0, Ls65;->f0:Lake;
-
-    .line 65
-    .line 66
-    new-instance p1, LI45;
-
-    .line 67
-    .line 68
-    const/4 p2, 0x5
-
-    .line 69
-    invoke-direct {p1, p0, p2, p3}, LI45;-><init>(LGs3;II)V
-
-    .line 70
-    .line 71
-    .line 72
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object p1
-
-    .line 76
-    iput-object p1, p0, Ls65;->g0:Lake;
-
-    .line 77
-    .line 78
-    return-void
+    return-object v0
 .end method

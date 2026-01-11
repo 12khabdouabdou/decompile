@@ -1,5 +1,5 @@
 .class public final Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -8,15 +8,15 @@
 
 .field public final c:I
 
-.field public final d:LT38;
+.field public final d:Lna8;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ILT38;)V
+.method public constructor <init>(Ljava/lang/String;ILna8;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -29,7 +29,7 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:LT38;
+    iput-object p3, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:Lna8;
 
     .line 9
     .line 10
@@ -106,11 +106,11 @@
 
     .line 29
     :cond_3
-    iget-object v0, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:LT38;
+    iget-object v0, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:Lna8;
 
     .line 30
     .line 31
-    iget-object p1, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:LT38;
+    iget-object p1, p1, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:Lna8;
 
     .line 32
     .line 33
@@ -161,7 +161,7 @@
 
     .line 12
     .line 13
-    invoke-static {v2, v0, v1}, Lf3j;->a(III)I
+    invoke-static {v2, v0, v1}, LToi;->e(III)I
 
     .line 14
     .line 15
@@ -169,7 +169,7 @@
     move-result v0
 
     .line 17
-    iget-object v1, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:LT38;
+    iget-object v1, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:Lna8;
 
     .line 18
     .line 19
@@ -254,7 +254,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:LT38;
+    iget-object v1, p0, Lcom/snap/contextcards/api/opera/ContextOperaEvents$SaveSnapEvent;->d:Lna8;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

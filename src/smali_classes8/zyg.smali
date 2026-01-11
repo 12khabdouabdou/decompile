@@ -1,175 +1,18 @@
-.class public Lzyg;
+.class public abstract synthetic Lzyg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field private final a:Ljava/util/List;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        alternate = {
-            "a"
-        }
-        value = "webAttachmentDataList"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "LITj;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lzyg;->a:Ljava/util/List;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()Ljava/util/List;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lzyg;->a:Ljava/util/List;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    if-ne p0, p1, :cond_0
-
-    .line 2
-    .line 3
-    const/4 p1, 0x1
-
-    .line 4
-    return p1
-
-    .line 5
-    :cond_0
-    if-eqz p1, :cond_2
-
-    .line 6
-    .line 7
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v1
-
-    .line 15
-    if-eq v0, v1, :cond_1
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_1
-    check-cast p1, Lzyg;
-
-    .line 19
-    .line 20
-    new-instance v0, LnQ6;
-
-    .line 21
-    .line 22
-    invoke-direct {v0}, LnQ6;-><init>()V
-
-    .line 23
-    .line 24
-    .line 25
-    iget-object v1, p0, Lzyg;->a:Ljava/util/List;
-
-    .line 26
-    .line 27
-    iget-object p1, p1, Lzyg;->a:Ljava/util/List;
-
-    .line 28
-    .line 29
-    invoke-virtual {v0, v1, p1}, LnQ6;->e(Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 30
-    .line 31
-    .line 32
-    iget-boolean p1, v0, LnQ6;->a:Z
-
-    .line 33
-    .line 34
-    return p1
-
-    .line 35
-    :cond_2
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 36
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    new-instance v0, LdJ8;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, LdJ8;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v1, p0, Lzyg;->a:Ljava/util/List;
-
-    .line 7
-    .line 8
-    invoke-virtual {v0, v1}, LdJ8;->e(Ljava/lang/Object;)V
-
-    .line 9
-    .line 10
-    .line 11
-    iget v0, v0, LdJ8;->a:I
-
-    .line 12
-    .line 13
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method static constructor <clinit>()V
     .locals 3
 
     .line 1
-    invoke-static {p0}, Lgye;->u0(Ljava/lang/Object;)LyW9;
+    invoke-static {}, Lkmh;->values()[Lkmh;
 
     .line 2
     .line 3
@@ -177,26 +20,177 @@
     move-result-object v0
 
     .line 5
-    const-string v1, "webattachmentdata"
+    array-length v0, v0
 
     .line 6
+    new-array v0, v0, [I
+
     .line 7
-    iget-object v2, p0, Lzyg;->a:Ljava/util/List;
-
     .line 8
-    .line 9
-    invoke-virtual {v0, v2, v1}, LyW9;->l(Ljava/lang/Object;Ljava/lang/String;)V
+    :try_start_0
+    sget-object v1, Lkmh;->X:Lkmh;
 
+    .line 9
     .line 10
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 11
     .line 12
-    invoke-virtual {v0}, LyW9;->toString()Ljava/lang/String;
-
     .line 13
+    move-result v1
+
     .line 14
+    const/4 v2, 0x1
+
     .line 15
-    move-result-object v0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
-    return-object v0
+    .line 17
+    :catch_0
+    :try_start_1
+    sget-object v1, Lkmh;->R1:Lkmh;
+
+    .line 18
+    .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    const/4 v2, 0x2
+
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
+    .line 26
+    :catch_1
+    :try_start_2
+    sget-object v1, Lkmh;->h0:Lkmh;
+
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    const/4 v2, 0x3
+
+    .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 34
+    .line 35
+    :catch_2
+    :try_start_3
+    sget-object v1, Lkmh;->m0:Lkmh;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 43
+    .line 44
+    :catch_3
+    :try_start_4
+    sget-object v1, Lkmh;->c:Lkmh;
+
+    .line 45
+    .line 46
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v1
+
+    .line 50
+    const/4 v2, 0x5
+
+    .line 51
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 52
+    .line 53
+    :catch_4
+    :try_start_5
+    sget-object v1, Lkmh;->P1:Lkmh;
+
+    .line 54
+    .line 55
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v1
+
+    .line 59
+    const/4 v2, 0x6
+
+    .line 60
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 61
+    .line 62
+    :catch_5
+    :try_start_6
+    sget-object v1, Lkmh;->m1:Lkmh;
+
+    .line 63
+    .line 64
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v1
+
+    .line 68
+    const/4 v2, 0x7
+
+    .line 69
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 70
+    .line 71
+    :catch_6
+    sput-object v0, Lzyg;->a:[I
+
+    .line 72
+    .line 73
+    return-void
 .end method

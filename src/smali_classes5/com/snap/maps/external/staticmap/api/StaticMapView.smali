@@ -14,13 +14,13 @@
 
 .field public final c:Lcom/snap/ui/view/LoadingSpinnerView;
 
-.field public e0:Lxvh;
+.field public e0:LqTa;
 
-.field public f0:Lzre;
+.field public f0:LnJe;
 
-.field public g0:LUvh;
+.field public g0:LVTh;
 
-.field public t:Lzvh;
+.field public t:LATh;
 
 
 # direct methods
@@ -212,7 +212,7 @@
     return-void
 .end method
 
-.method public static final a(Lcom/snap/maps/external/staticmap/api/StaticMapView;Lzvh;Lxvh;Lzre;LUvh;)V
+.method public static final a(Lcom/snap/maps/external/staticmap/api/StaticMapView;LATh;LqTa;LnJe;LVTh;)V
     .locals 8
 
     .line 1
@@ -227,7 +227,7 @@
     int-to-double v0, v0
 
     .line 6
-    iput-wide v0, p1, Lzvh;->a:D
+    iput-wide v0, p1, LATh;->a:D
 
     .line 7
     .line 8
@@ -242,11 +242,11 @@
     int-to-double v0, v0
 
     .line 13
-    iput-wide v0, p1, Lzvh;->b:D
+    iput-wide v0, p1, LATh;->b:D
 
     .line 14
     .line 15
-    invoke-virtual {p1}, Lzvh;->a()LVxk;
+    invoke-virtual {p1}, LATh;->a()LpXk;
 
     .line 16
     .line 17
@@ -267,7 +267,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 27
     .line 28
@@ -276,383 +276,374 @@
 
     .line 30
     .line 31
-    iget-object v1, p2, Lxvh;->f:LB73;
+    iget-object v1, p2, LqTa;->e0:Ljava/lang/Object;
 
     .line 32
     .line 33
-    check-cast v1, LOze;
+    check-cast v1, LR93;
 
     .line 34
     .line 35
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v1, LFRe;
 
     .line 36
     .line 37
-    .line 38
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 38
     .line 39
     .line 40
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
     .line 41
+    .line 42
+    .line 43
     move-result-wide v1
 
-    .line 42
-    iput-wide v1, p2, Lxvh;->i:J
-
-    .line 43
     .line 44
-    iget-object v1, p2, Lxvh;->b:LKvh;
+    iput-wide v1, p2, LqTa;->a:J
 
     .line 45
     .line 46
-    instance-of v2, p1, LAvh;
+    iget-object v1, p2, LqTa;->t:Ljava/lang/Object;
 
     .line 47
     .line 48
-    if-eqz v2, :cond_0
+    check-cast v1, LLTh;
 
     .line 49
     .line 50
-    invoke-virtual {v1, p1}, LKvh;->a(LVxk;)Lio/reactivex/rxjava3/core/Observable;
+    instance-of v2, p1, LBTh;
 
     .line 51
     .line 52
-    .line 53
-    move-result-object v2
+    if-eqz v2, :cond_0
 
+    .line 53
     .line 54
-    new-instance v3, LUmh;
+    invoke-virtual {v1, p1}, LLTh;->a(LpXk;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 55
     .line 56
-    move-object v4, p1
-
     .line 57
-    check-cast v4, LAvh;
+    move-result-object v2
 
     .line 58
-    .line 59
-    const/16 v5, 0x8
+    new-instance v3, LKIh;
 
+    .line 59
     .line 60
+    move-object v4, p1
+
     .line 61
-    invoke-direct {v3, v4, v5, v1}, LUmh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    check-cast v4, LBTh;
 
     .line 62
     .line 63
+    const/16 v5, 0xa
+
     .line 64
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
     .line 65
-    .line 66
-    invoke-direct {v1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-direct {v3, v4, v5, v1}, LKIh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 66
     .line 67
     .line 68
-    .line 69
-    goto :goto_0
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
+    .line 69
     .line 70
-    :cond_0
-    instance-of v2, p1, LDvh;
+    invoke-direct {v1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 71
     .line 72
-    if-eqz v2, :cond_1
-
     .line 73
+    goto :goto_0
+
     .line 74
-    move-object v2, p1
+    :cond_0
+    instance-of v2, p1, LETh;
 
     .line 75
-    check-cast v2, LDvh;
-
     .line 76
-    .line 77
-    sget-object v2, Lzbh;->r0:Lzbh;
+    if-eqz v2, :cond_1
 
+    .line 77
     .line 78
+    move-object v2, p1
+
     .line 79
-    iget-object v3, v1, LKvh;->k:Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+    check-cast v2, LETh;
 
     .line 80
     .line 81
-    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    sget-object v2, LbEh;->m0:LbEh;
 
     .line 82
     .line 83
-    .line 84
-    move-result-object v2
+    iget-object v3, v1, LLTh;->k:Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
 
+    .line 84
     .line 85
-    new-instance v3, LIjh;
+    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
     .line 86
     .line 87
-    move-object v4, p1
-
     .line 88
-    check-cast v4, LDvh;
+    move-result-object v2
 
     .line 89
-    .line 90
-    const/16 v5, 0x11
+    new-instance v3, LJTh;
 
+    .line 90
     .line 91
+    move-object v4, p1
+
     .line 92
-    invoke-direct {v3, v4, v5, v1}, LIjh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    check-cast v4, LETh;
 
     .line 93
     .line 94
+    const/4 v5, 0x0
+
     .line 95
-    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-direct {v3, v4, v5, v1}, LJTh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 96
     .line 97
     .line 98
-    move-result-object v1
+    invoke-virtual {v2, v3}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 99
+    .line 100
+    .line 101
+    move-result-object v1
+
+    .line 102
     goto :goto_0
 
-    .line 100
+    .line 103
     :cond_1
-    instance-of v1, p1, LCvh;
+    instance-of v1, p1, LDTh;
 
-    .line 101
-    .line 102
+    .line 104
+    .line 105
     if-eqz v1, :cond_2
 
-    .line 103
-    .line 104
-    new-instance v2, LOvh;
-
-    .line 105
     .line 106
-    invoke-virtual {p1}, LVxk;->i()D
-
     .line 107
+    new-instance v2, LPTh;
+
     .line 108
     .line 109
-    move-result-wide v3
+    invoke-virtual {p1}, LpXk;->l()D
 
     .line 110
-    invoke-virtual {p1}, LVxk;->f()D
-
     .line 111
     .line 112
+    move-result-wide v3
+
     .line 113
-    move-result-wide v5
+    invoke-virtual {p1}, LpXk;->i()D
 
     .line 114
-    invoke-virtual {p1}, LVxk;->e()Luvh;
-
     .line 115
     .line 116
+    move-result-wide v5
+
     .line 117
-    move-result-object v7
+    invoke-virtual {p1}, LpXk;->g()LwTh;
 
     .line 118
-    invoke-direct/range {v2 .. v7}, LOvh;-><init>(DDLuvh;)V
-
     .line 119
     .line 120
+    move-result-object v7
+
     .line 121
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    invoke-direct/range {v2 .. v7}, LPTh;-><init>(DDLwTh;)V
 
     .line 122
     .line 123
-    invoke-direct {v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
-
     .line 124
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
     .line 125
     .line 126
-    :goto_0
-    iget-object v2, p2, Lxvh;->h:LBre;
+    invoke-direct {v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
     .line 127
     .line 128
-    invoke-virtual {v2}, LBre;->d()LF06;
-
     .line 129
+    :goto_0
+    iget-object v2, p2, LqTa;->g0:Ljava/lang/Object;
+
     .line 130
     .line 131
-    move-result-object v3
+    check-cast v2, LnJe;
 
     .line 132
-    invoke-virtual {v1, v3}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 133
+    invoke-virtual {v2}, LnJe;->d()LA36;
+
     .line 134
     .line 135
-    move-result-object v1
-
     .line 136
-    new-instance v3, LQih;
+    move-result-object v3
 
     .line 137
-    .line 138
-    const/16 v4, 0x11
+    invoke-virtual {v1, v3}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
+    .line 138
     .line 139
     .line 140
-    invoke-direct {v3, p2, v4, v0}, LQih;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    move-result-object v1
 
     .line 141
+    new-instance v3, LJkh;
+
     .line 142
     .line 143
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;
+    const/16 v4, 0x1a
 
     .line 144
     .line 145
-    invoke-direct {v4, v1, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-direct {v3, p2, v4, v0}, LJkh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 146
     .line 147
     .line 148
-    invoke-virtual {v2}, LBre;->i()Lgn0;
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;
 
     .line 149
     .line 150
+    invoke-direct {v4, v1, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 151
-    move-result-object v1
-
     .line 152
-    invoke-virtual {v4, v1}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 153
+    invoke-virtual {v2}, LnJe;->i()Lxp0;
+
     .line 154
     .line 155
+    .line 156
     move-result-object v1
 
-    .line 156
-    new-instance v2, LSdg;
-
     .line 157
-    .line 158
-    const/16 v3, 0x15
+    invoke-virtual {v4, v1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
+    .line 158
     .line 159
     .line 160
-    invoke-direct {v2, p2, p1, v0, v3}, LSdg;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    move-result-object v1
 
     .line 161
+    new-instance v2, Lo0h;
+
     .line 162
     .line 163
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    const/16 v3, 0x12
 
     .line 164
     .line 165
-    invoke-direct {p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-direct {v2, p2, p1, v0, v3}, Lo0h;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 166
     .line 167
     .line 168
-    check-cast p3, LBre;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
     .line 169
     .line 170
-    invoke-virtual {p3}, LBre;->i()Lgn0;
+    invoke-direct {p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 171
     .line 172
     .line 173
-    move-result-object p2
+    invoke-virtual {p3}, LnJe;->i()Lxp0;
 
     .line 174
-    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 175
     .line 176
+    move-result-object p2
+
     .line 177
-    move-result-object p1
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 178
-    new-instance p2, LhSg;
-
     .line 179
     .line 180
-    const/16 p3, 0x17
+    move-result-object p1
 
     .line 181
-    .line 182
-    invoke-direct {p2, p0, p3, p4}, LhSg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    new-instance p2, LCeh;
 
+    .line 182
     .line 183
+    const/16 p3, 0x16
+
     .line 184
     .line 185
-    sget-object p3, Lzbh;->s0:Lzbh;
+    invoke-direct {p2, p0, p3, p4}, LCeh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 186
     .line 187
+    .line 188
+    sget-object p3, LbEh;->n0:LbEh;
+
+    .line 189
+    .line 190
     iget-object p0, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    .line 188
-    .line 189
-    invoke-static {p1, p2, p3, p0}, LLZj;->v0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
-
-    .line 190
     .line 191
     .line 192
-    return-void
+    invoke-static {p1, p2, p3, p0}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
     .line 193
-    :cond_2
-    new-instance p0, LFzc;
-
     .line 194
     .line 195
-    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
+    return-void
 
     .line 196
+    :cond_2
+    new-instance p0, LwOc;
+
     .line 197
     .line 198
+    invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 199
+    .line 200
+    .line 201
     throw p0
 .end method
 
 
 # virtual methods
-.method public final b()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final c(Lzvh;Lxvh;Lzre;LUvh;)V
+.method public final b(LATh;LqTa;LnJe;LVTh;)V
     .locals 7
 
     .line 1
-    iput-object p1, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->t:Lzvh;
+    iput-object p1, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->t:LATh;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->e0:Lxvh;
+    iput-object p2, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->e0:LqTa;
 
     .line 4
     .line 5
-    iput-object p3, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->f0:Lzre;
+    iput-object p3, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->f0:LnJe;
 
     .line 6
     .line 7
-    iput-object p4, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->g0:LUvh;
+    iput-object p4, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->g0:LVTh;
 
     .line 8
     .line 9
-    new-instance v0, LE6;
+    new-instance v0, Lk7;
 
     .line 10
     .line 11
-    const/16 v6, 0xc
+    const/16 v6, 0xe
 
     .line 12
     .line 13
@@ -671,7 +662,7 @@
     move-object v5, p4
 
     .line 18
-    invoke-direct/range {v0 .. v6}, LE6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct/range {v0 .. v6}, Lk7;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 19
     .line 20
@@ -706,19 +697,19 @@
 
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->t:Lzvh;
+    iget-object v0, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->t:LATh;
 
     .line 12
     .line 13
-    iget-object v1, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->e0:Lxvh;
+    iget-object v1, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->e0:LqTa;
 
     .line 14
     .line 15
-    iget-object v2, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->f0:Lzre;
+    iget-object v2, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->f0:LnJe;
 
     .line 16
     .line 17
-    iget-object v3, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->g0:LUvh;
+    iget-object v3, p0, Lcom/snap/maps/external/staticmap/api/StaticMapView;->g0:LVTh;
 
     .line 18
     .line 19
@@ -738,7 +729,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/snap/maps/external/staticmap/api/StaticMapView;->c(Lzvh;Lxvh;Lzre;LUvh;)V
+    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/snap/maps/external/staticmap/api/StaticMapView;->b(LATh;LqTa;LnJe;LVTh;)V
 
     .line 28
     .line 29

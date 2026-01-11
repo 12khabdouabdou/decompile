@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field public final h0:LKog;
+.field public final h0:LNJg;
 
-.field public final i0:LO61;
+.field public final i0:Lea1;
 
 .field public j0:Lio/reactivex/rxjava3/disposables/Disposable;
 
@@ -29,32 +29,32 @@
     .line 2
     .line 3
     .line 4
-    new-instance p2, LO61;
+    new-instance p2, Lea1;
 
     .line 5
     .line 6
-    invoke-direct {p2}, LO61;-><init>()V
+    invoke-direct {p2}, Lea1;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object p2, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->i0:LO61;
+    iput-object p2, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->i0:Lea1;
 
     .line 10
     .line 11
-    new-instance v0, LKog;
+    new-instance v0, LNJg;
 
     .line 12
     .line 13
     const/4 v1, 0x0
 
     .line 14
-    invoke-direct {v0, p1, v1}, LKog;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {v0, p1, v1}, LNJg;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    iput-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LKog;
+    iput-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LNJg;
 
     .line 18
     .line 19
@@ -65,7 +65,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p0, p2}, Lcom/snap/imageloading/view/SnapImageView;->d(LeIj;)V
+    invoke-virtual {p0, p2}, Lcom/snap/imageloading/view/SnapImageView;->d(LC7k;)V
 
     .line 23
     .line 24
@@ -84,22 +84,22 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->i0:LO61;
+    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->i0:Lea1;
 
     .line 5
     .line 6
-    iget-object v0, v0, LO61;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lea1;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 7
     .line 8
-    new-instance v1, LC71;
+    new-instance v1, LSa1;
 
     .line 9
     .line 10
     const/4 v2, 0x0
 
     .line 11
-    invoke-direct {v1, v2, p0}, LC71;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LSa1;-><init>(ILjava/lang/Object;)V
 
     .line 12
     .line 13
@@ -157,11 +157,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LKog;
+    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LNJg;
 
     .line 9
     .line 10
-    invoke-virtual {v0, p1}, LKog;->a(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, LNJg;->a(Landroid/graphics/Canvas;)V
 
     .line 11
     .line 12
@@ -195,11 +195,11 @@
     move-result p2
 
     .line 12
-    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LKog;
+    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LNJg;
 
     .line 13
     .line 14
-    invoke-virtual {v0, p1, p2}, LKog;->b(II)V
+    invoke-virtual {v0, p1, p2}, LNJg;->b(II)V
 
     .line 15
     .line 16
@@ -207,7 +207,7 @@
     return-void
 .end method
 
-.method public final t(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/Integer;Ljava/lang/Integer;LQ1j;)V
+.method public final t(Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/lang/Integer;Ljava/lang/Integer;Lcrj;)V
     .locals 2
 
     .line 1
@@ -251,7 +251,7 @@
     .line 19
     .line 20
     :cond_0
-    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LKog;
+    iget-object v0, p0, Lcom/snap/bitmoji/view/BitmojiSilhouetteView;->h0:LNJg;
 
     .line 21
     .line 22
@@ -267,7 +267,7 @@
     move-result p5
 
     .line 28
-    iput p5, v0, LKog;->d:I
+    iput p5, v0, LNJg;->d:I
 
     .line 29
     .line 30
@@ -284,7 +284,7 @@
     move-result p4
 
     .line 36
-    iput p4, v0, LKog;->c:I
+    iput p4, v0, LNJg;->c:I
 
     .line 37
     .line 38
@@ -312,7 +312,7 @@
     .line 45
     .line 46
     .line 47
-    invoke-static {p4}, LrUi;->r(Ljava/lang/String;)I
+    invoke-static {p4}, LQIc;->u(Ljava/lang/String;)I
 
     .line 48
     .line 49
@@ -320,7 +320,7 @@
     move-result p4
 
     .line 51
-    iput p4, v0, LKog;->c:I
+    iput p4, v0, LNJg;->c:I
 
     .line 52
     .line 53
@@ -403,7 +403,7 @@
 
     .line 87
     :cond_7
-    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->j()Landroid/net/Uri;
+    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->i()Landroid/net/Uri;
 
     .line 88
     .line 89
@@ -443,7 +443,7 @@
 
     .line 105
     .line 106
-    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->j()Landroid/net/Uri;
+    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->i()Landroid/net/Uri;
 
     .line 107
     .line 108
@@ -459,7 +459,7 @@
 
     .line 113
     :cond_9
-    invoke-static {p2}, Lew8;->X(Landroid/net/Uri;)Ljava/lang/String;
+    invoke-static {p2}, LSpk;->a0(Landroid/net/Uri;)Ljava/lang/String;
 
     .line 114
     .line 115
@@ -471,7 +471,7 @@
 
     .line 118
     .line 119
-    invoke-static {p3}, Lew8;->X(Landroid/net/Uri;)Ljava/lang/String;
+    invoke-static {p3}, LSpk;->a0(Landroid/net/Uri;)Ljava/lang/String;
 
     .line 120
     .line 121
@@ -495,7 +495,7 @@
 
     .line 130
     .line 131
-    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->l()LgIj;
+    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->k()LE7k;
 
     .line 132
     .line 133
@@ -503,7 +503,7 @@
     move-result-object p1
 
     .line 135
-    invoke-virtual {p1}, LgIj;->h()LfIj;
+    invoke-virtual {p1}, LE7k;->h()LD7k;
 
     .line 136
     .line 137
@@ -511,16 +511,16 @@
     move-result-object p1
 
     .line 139
-    invoke-virtual {p1}, LfIj;->l()V
+    invoke-virtual {p1}, LD7k;->l()V
 
     .line 140
     .line 141
     .line 142
-    new-instance p2, LgIj;
+    new-instance p2, LE7k;
 
     .line 143
     .line 144
-    invoke-direct {p2, p1}, LgIj;-><init>(LfIj;)V
+    invoke-direct {p2, p1}, LE7k;-><init>(LD7k;)V
 
     .line 145
     .line 146
@@ -537,7 +537,7 @@
 
     .line 150
     .line 151
-    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->l()LgIj;
+    invoke-virtual {p0}, Lcom/snap/imageloading/view/SnapImageView;->k()LE7k;
 
     .line 152
     .line 153
@@ -545,7 +545,7 @@
     move-result-object p1
 
     .line 155
-    invoke-virtual {p1}, LgIj;->h()LfIj;
+    invoke-virtual {p1}, LE7k;->h()LD7k;
 
     .line 156
     .line 157
@@ -553,26 +553,26 @@
     move-result-object p1
 
     .line 159
-    iput-boolean v1, p1, LfIj;->v:Z
+    iput-boolean v1, p1, LD7k;->v:Z
 
     .line 160
     .line 161
-    new-instance p2, LgIj;
+    new-instance p2, LE7k;
 
     .line 162
     .line 163
-    invoke-direct {p2, p1}, LgIj;-><init>(LfIj;)V
+    invoke-direct {p2, p1}, LE7k;-><init>(LD7k;)V
 
     .line 164
     .line 165
     .line 166
     :goto_5
-    invoke-virtual {p0, p2}, Lcom/snap/imageloading/view/SnapImageView;->i(LgIj;)V
+    invoke-virtual {p0, p2}, Lcom/snap/imageloading/view/SnapImageView;->h(LE7k;)V
 
     .line 167
     .line 168
     .line 169
-    invoke-virtual {p0, p3, p6}, Lcom/snap/imageloading/view/SnapImageView;->h(Landroid/net/Uri;LQ1j;)V
+    invoke-virtual {p0, p3, p6}, Lcom/snap/imageloading/view/SnapImageView;->g(Landroid/net/Uri;Lcrj;)V
 
     .line 170
     .line 171
@@ -597,7 +597,7 @@
 
     .line 180
     .line 181
-    const p1, 0x7f080c44
+    const p1, 0x7f080ce8
 
     .line 182
     .line 183
@@ -615,12 +615,12 @@
     move-result-object p1
 
     .line 191
-    const p2, 0x7f06020b
+    const p2, 0x7f060263
 
     .line 192
     .line 193
     .line 194
-    invoke-static {p1, p2}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, p2}, LV14;->c(Landroid/content/Context;I)I
 
     .line 195
     .line 196

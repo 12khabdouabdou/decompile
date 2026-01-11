@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lp98;
+    proxyClass = LHf8;
     schema = "\'genderScreenOnMaleTapped\':f|m|(),\'genderScreenOnFemaleTapped\':f|m|(),\'genderScreenOnSkipTapped\':f|m|(),\'genderScreenOnCancelTapped\':f|m|()"
     typeReferences = {}
 .end annotation

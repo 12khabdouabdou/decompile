@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LHng;
+.implements LKIg;
 
 
 # static fields
@@ -13,7 +13,7 @@
 # instance fields
 .field public final a:Z
 
-.field public final b:LKG7;
+.field public final b:LrM7;
 
 .field public final c:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
@@ -31,7 +31,7 @@
 
     const/4 v1, 0x2
 
-    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
 
     return-void
 .end method
@@ -43,18 +43,18 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    invoke-static {}, LQtc;->x()V
+    invoke-static {}, LYh7;->M()V
 
     const/4 p1, 0x1
 
     iput-boolean p1, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->a:Z
 
     .line 5
-    new-instance p2, LKG7;
+    new-instance p2, LrM7;
 
-    invoke-direct {p2, p0}, LKG7;-><init>(Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;)V
+    invoke-direct {p2, p0}, LrM7;-><init>(Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;)V
 
-    iput-object p2, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
+    iput-object p2, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
 
     .line 6
     new-instance v0, Lio/reactivex/rxjava3/subjects/PublishSubject;
@@ -80,7 +80,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f130892
+    const v0, 0x7f130911
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -89,25 +89,25 @@
     invoke-virtual {p0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 12
-    new-instance p1, Lpu5;
+    new-instance p1, Liz5;
 
     .line 13
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     .line 14
-    iput-object p1, p2, LKG7;->f0:Lpu5;
+    iput-object p1, p2, LrM7;->f0:Liz5;
 
     const/4 p1, 0x2
 
     .line 15
-    invoke-virtual {p2, p1}, LKG7;->s(I)LUji;
+    invoke-virtual {p2, p1}, LrM7;->s(I)LOIi;
 
     move-result-object p1
 
-    iput-object p1, p2, LKG7;->h0:LUji;
+    iput-object p1, p2, LrM7;->h0:LOIi;
 
     .line 16
-    iput-object p1, p2, LKG7;->g0:LUji;
+    iput-object p1, p2, LrM7;->g0:LOIi;
 
     const/4 p1, 0x0
 
@@ -120,7 +120,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -138,11 +138,32 @@
 
 
 # virtual methods
-.method public final Q()V
+.method public final L(LDz9;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LrM7;->L(LDz9;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method public final N()V
     .locals 2
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -150,7 +171,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->j(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LNdh;->j(Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -176,11 +197,11 @@
     .line 17
     .line 18
     .line 19
-    iget-object v1, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
+    iget-object v1, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
 
     .line 20
     .line 21
-    invoke-virtual {v1, v0}, LKG7;->I(Z)V
+    invoke-virtual {v1, v0}, LrM7;->E(Z)V
 
     .line 22
     .line 23
@@ -199,27 +220,6 @@
     return-object v0
 .end method
 
-.method public final i(LPZj;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LKG7;->i(LPZj;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
 .method public final onAttachedToWindow()V
     .locals 1
 
@@ -229,11 +229,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
+    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LKG7;->onAttachedToWindow()V
+    invoke-virtual {v0}, LrM7;->onAttachedToWindow()V
 
     .line 7
     .line 8
@@ -250,11 +250,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
+    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LKG7;->onDetachedFromWindow()V
+    invoke-virtual {v0}, LrM7;->onDetachedFromWindow()V
 
     .line 7
     .line 8
@@ -266,11 +266,11 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
+    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LKG7;->M()Z
+    invoke-virtual {v0}, LrM7;->I()Z
 
     .line 4
     .line 5
@@ -290,7 +290,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0}, LKG7;->p()Z
+    invoke-virtual {v0}, LrM7;->m()Z
 
     .line 14
     .line 15
@@ -322,7 +322,7 @@
     .line 28
     :cond_1
     :goto_0
-    invoke-virtual {v0, p1}, LKG7;->onDraw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, LrM7;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 29
     .line 30
@@ -367,11 +367,11 @@
 
     .line 16
     :cond_1
-    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
+    iget-object v0, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
 
     .line 17
     .line 18
-    invoke-virtual {v0, p1, p2, p3, p4}, LKG7;->onSizeChanged(IIII)V
+    invoke-virtual {v0, p1, p2, p3, p4}, LrM7;->onSizeChanged(IIII)V
 
     .line 19
     .line 20
@@ -429,7 +429,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->a1()Z
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->d1()Z
 
     .line 23
     .line 24
@@ -441,7 +441,7 @@
 
     .line 27
     .line 28
-    sget-object v1, LFng;->a:LFng;
+    sget-object v1, LIIg;->a:LIIg;
 
     .line 29
     .line 30
@@ -478,11 +478,11 @@
 
     .line 9
     :goto_0
-    iget-object p2, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LKG7;
+    iget-object p2, p0, Lcom/snap/camera/ui/takesnapbutton/TakeSnapButton;->b:LrM7;
 
     .line 10
     .line 11
-    invoke-virtual {p2, p1}, LKG7;->h(Z)V
+    invoke-virtual {p2, p1}, LrM7;->f(Z)V
 
     .line 12
     .line 13

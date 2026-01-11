@@ -12,7 +12,7 @@
 
 .field public e0:Landroid/animation/ValueAnimator;
 
-.field public f0:LFph;
+.field public f0:LgNh;
 
 .field public g0:I
 
@@ -43,7 +43,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, LMph;->b()LMph;
+    invoke-static {}, LnNh;->b()LnNh;
 
     .line 5
     .line 6
@@ -51,7 +51,7 @@
     move-result-object v0
 
     .line 8
-    invoke-virtual {v0}, LMph;->c()LFph;
+    invoke-virtual {v0}, LnNh;->c()LgNh;
 
     .line 9
     .line 10
@@ -59,23 +59,23 @@
     move-result-object v0
 
     .line 12
-    iput-object v0, p0, Lcom/snap/camera/subcomponents/capture/view/HandsFreeRecordingLockView;->f0:LFph;
+    iput-object v0, p0, Lcom/snap/camera/subcomponents/capture/view/HandsFreeRecordingLockView;->f0:LgNh;
 
     .line 13
     .line 14
-    new-instance v1, LIU5;
+    new-instance v1, LCY5;
 
     .line 15
     .line 16
     const/4 v2, 0x1
 
     .line 17
-    invoke-direct {v1, v2, p0}, LIU5;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LCY5;-><init>(ILjava/lang/Object;)V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, LFph;->a(LLph;)V
+    invoke-virtual {v0, v1}, LgNh;->a(LmNh;)V
 
     .line 21
     .line 22
@@ -92,7 +92,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/camera/subcomponents/capture/view/HandsFreeRecordingLockView;->f0:LFph;
+    iget-object v0, p0, Lcom/snap/camera/subcomponents/capture/view/HandsFreeRecordingLockView;->f0:LgNh;
 
     .line 5
     .line 6
@@ -103,12 +103,12 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, LFph;->b()V
+    invoke-virtual {v0}, LgNh;->b()V
 
     .line 10
     .line 11
     .line 12
-    iput-object v1, p0, Lcom/snap/camera/subcomponents/capture/view/HandsFreeRecordingLockView;->f0:LFph;
+    iput-object v1, p0, Lcom/snap/camera/subcomponents/capture/view/HandsFreeRecordingLockView;->f0:LgNh;
 
     .line 13
     .line 14
@@ -117,7 +117,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0}, Lrmk;->t(Landroid/animation/ValueAnimator;)V
+    invoke-static {v0}, LtMk;->q(Landroid/animation/ValueAnimator;)V
 
     .line 17
     .line 18
@@ -130,7 +130,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0}, Lrmk;->t(Landroid/animation/ValueAnimator;)V
+    invoke-static {v0}, LtMk;->q(Landroid/animation/ValueAnimator;)V
 
     .line 24
     .line 25
@@ -143,7 +143,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0}, Lrmk;->t(Landroid/animation/ValueAnimator;)V
+    invoke-static {v0}, LtMk;->q(Landroid/animation/ValueAnimator;)V
 
     .line 31
     .line 32
@@ -164,7 +164,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b03d0
+    const v0, 0x7f0b045c
 
     .line 5
     .line 6
@@ -181,7 +181,7 @@
 
     .line 12
     .line 13
-    const v0, 0x7f0b03cf
+    const v0, 0x7f0b045b
 
     .line 14
     .line 15

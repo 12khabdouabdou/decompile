@@ -1,212 +1,198 @@
-.class public final LNXh;
-.super Lo17;
+.class public LNXh;
+.super Lbkh;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
+    value = LOXh;
+.end annotation
+
+.annotation runtime LnJ9;
+    value = Ldkh;
+.end annotation
+
+
 # instance fields
-.field public a:I
+.field public a:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "mini_app_id"
+    .end annotation
+.end field
 
 .field public b:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "mini_app_share_info"
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    iput v0, p0, LNXh;->a:I
-
-    .line 6
-    .line 7
-    const-string v0, ""
-
-    .line 8
-    .line 9
-    iput-object v0, p0, LNXh;->b:Ljava/lang/String;
-
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 13
-    .line 14
-    const/4 v0, -0x1
-
-    .line 15
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p1, p0, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz p1, :cond_2
+
+    .line 7
+    .line 8
+    instance-of v2, p1, LNXh;
+
+    .line 9
+    .line 10
+    if-nez v2, :cond_1
+
+    .line 11
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_1
+    check-cast p1, LNXh;
+
+    .line 14
+    .line 15
+    iget-object v2, p0, LNXh;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iget-object v3, p1, LNXh;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v2
+
+    .line 23
+    if-eqz v2, :cond_2
+
+    .line 24
+    .line 25
+    iget-object v2, p0, LNXh;->b:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iget-object p1, p1, LNXh;->b:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    invoke-static {v2, p1}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p1
+
+    .line 33
+    if-eqz p1, :cond_2
+
+    .line 34
+    .line 35
+    return v0
+
+    .line 36
+    :cond_2
+    :goto_0
+    return v1
+.end method
+
+.method public final hashCode()I
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    iget-object v0, p0, LNXh;->a:Ljava/lang/String;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    move-result v0
-
-    .line 5
-    iget v1, p0, LNXh;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    iget-object v1, p0, LNXh;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {v2, v1}, Lsa3;->q(ILjava/lang/String;)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    add-int/2addr v1, v0
-
-    .line 18
-    return v1
-
-    .line 19
-    :cond_0
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_2
-
-    .line 6
-    .line 7
-    const/16 v1, 0xa
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_1
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
     if-nez v0, :cond_0
 
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    :goto_0
+    const/16 v2, 0x20f
+
+    .line 13
+    .line 14
+    add-int/2addr v2, v0
+
+    .line 15
+    mul-int/lit8 v2, v2, 0x1f
+
     .line 16
     .line 17
-    goto :goto_1
+    iget-object v0, p0, LNXh;->b:Ljava/lang/String;
 
     .line 18
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
-
     .line 19
+    if-nez v0, :cond_1
+
     .line 20
     .line 21
-    move-result-object v0
+    goto :goto_1
 
     .line 22
-    iput-object v0, p0, LNXh;->b:Ljava/lang/String;
+    :cond_1
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 23
     .line 24
-    iget v0, p0, LNXh;->a:I
-
     .line 25
+    move-result v1
+
     .line 26
-    or-int/lit8 v0, v0, 0x1
+    :goto_1
+    add-int/2addr v2, v1
 
     .line 27
-    .line 28
-    iput v0, p0, LNXh;->a:I
-
-    .line 29
-    .line 30
-    goto :goto_0
-
-    .line 31
-    :cond_2
-    :goto_1
-    return-object p0
-.end method
-
-.method public final writeTo(Lsa3;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, LNXh;->a:I
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    and-int/2addr v0, v1
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget-object v0, p0, LNXh;->b:Ljava/lang/String;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->R(ILjava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 13
-    .line 14
-    .line 15
-    return-void
+    return v2
 .end method

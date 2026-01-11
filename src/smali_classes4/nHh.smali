@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LyGe;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
@@ -29,72 +29,132 @@
 
 
 # virtual methods
-.method public final a(Landroid/view/View;)V
-    .locals 0
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    return-void
-.end method
-
-.method public final b(Landroid/view/View;)V
-    .locals 2
-
-    .line 1
-    const-string v0, "ssc"
+    check-cast p1, LEGh;
 
     .line 2
     .line 3
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
+    iget-object v0, p1, LEGh;->d:Ljava/util/ArrayList;
 
     .line 4
     .line 5
+    invoke-static {v0}, LJVk;->f(Ljava/util/ArrayList;)LWEh;
+
     .line 6
-    move-result-object p1
-
     .line 7
-    check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
-
     .line 8
+    move-result-object v0
+
     .line 9
-    if-eqz p1, :cond_1
+    iget-object v1, p0, LnHh;->a:LoHh;
 
     .line 10
     .line 11
-    iget-object v0, p0, LnHh;->a:LoHh;
+    iput-object v0, v1, LoHh;->c:LWEh;
 
     .line 12
     .line 13
-    iget-object v1, v0, LoHh;->e0:LtAf;
+    const/4 v2, 0x0
 
     .line 14
-    .line 15
-    invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    if-eqz v0, :cond_0
 
+    .line 15
     .line 16
+    iget-object v3, v0, LWEh;->Y:LZ7;
+
     .line 17
     .line 18
-    iget-object p1, v0, LoHh;->c:LmHh;
+    if-eqz v3, :cond_0
 
     .line 19
     .line 20
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->A0:Ljava/util/ArrayList;
+    invoke-virtual {v3}, LZ7;->d()LDkh;
 
     .line 21
     .line 22
-    if-nez p1, :cond_0
-
     .line 23
+    move-result-object v3
+
     .line 24
     goto :goto_0
 
     .line 25
     :cond_0
-    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    move-object v3, v2
 
     .line 26
+    :goto_0
+    if-nez v3, :cond_1
+
     .line 27
     .line 28
+    sget-object p1, LN1;->a:LN1;
+
+    .line 29
+    .line 30
+    return-object p1
+
+    .line 31
     :cond_1
-    :goto_0
-    return-void
+    iget v3, v3, LDkh;->Y:I
+
+    .line 32
+    .line 33
+    const/4 v4, 0x1
+
+    .line 34
+    if-ne v3, v4, :cond_2
+
+    .line 35
+    .line 36
+    iget-object p1, v0, LWEh;->X:LWEh$a;
+
+    .line 37
+    .line 38
+    if-eqz p1, :cond_3
+
+    .line 39
+    .line 40
+    const/4 v0, 0x0
+
+    .line 41
+    iget-object v1, v1, LoHh;->a:LuHh;
+
+    .line 42
+    .line 43
+    invoke-virtual {v1, p1, v0}, LuHh;->a(LWEh$a;Z)Landroid/net/Uri;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v2
+
+    .line 47
+    goto :goto_1
+
+    .line 48
+    :cond_2
+    iget-object p1, p1, LEGh;->f:LxGh;
+
+    .line 49
+    .line 50
+    iget-object v2, p1, LxGh;->a:Landroid/net/Uri;
+
+    .line 51
+    .line 52
+    :cond_3
+    :goto_1
+    invoke-static {v2}, Lmid;->b(Ljava/lang/Object;)Lmid;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    return-object p1
 .end method

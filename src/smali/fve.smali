@@ -1,50 +1,63 @@
-.class public abstract Lfve;
-.super Ljava/lang/Object;
+.class public final Lfve;
+.super Live;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:[I
+# instance fields
+.field public final synthetic a:Ljava/util/UUID;
+
+.field public final synthetic b:J
+
+.field public final synthetic c:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/util/UUID;JZ)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0xc
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    new-array v0, v0, [I
-
     .line 4
-    .line 5
-    fill-array-data v0, :array_0
+    iput-object p1, p0, Lfve;->a:Ljava/util/UUID;
 
+    .line 5
     .line 6
+    iput-wide p2, p0, Lfve;->b:J
+
     .line 7
     .line 8
-    sput-object v0, Lfve;->a:[I
+    iput-boolean p4, p0, Lfve;->c:Z
 
     .line 9
     .line 10
     return-void
+.end method
 
-    .line 11
-    :array_0
-    .array-data 4
-        0x7f040055
-        0x7f040067
-        0x7f0401c1
-        0x7f0401c2
-        0x7f040272
-        0x7f040276
-        0x7f040277
-        0x7f04045c
-        0x7f04045d
-        0x7f0405f5
-        0x7f0405f6
-        0x7f0405f7
-    .end array-data
+
+# virtual methods
+.method public final a(LeP1;)V
+    .locals 4
+
+    .line 1
+    iget-boolean v0, p0, Lfve;->c:Z
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lfve;->a:Ljava/util/UUID;
+
+    .line 4
+    .line 5
+    iget-wide v2, p0, Lfve;->b:J
+
+    .line 6
+    .line 7
+    invoke-interface {p1, v1, v2, v3, v0}, LeP1;->b(Ljava/util/UUID;JZ)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
 .end method

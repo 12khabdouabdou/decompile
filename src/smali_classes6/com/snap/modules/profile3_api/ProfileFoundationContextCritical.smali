@@ -1,15 +1,15 @@
 .class public final Lcom/snap/modules/profile3_api/ProfileFoundationContextCritical;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'deckTransitionEventsObservable\':g<c>:\'[0]\'<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lnv3;
+        Lsy3;
     }
 .end annotation
 
@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lnv3;",
+            "Lsy3;",
             ">;"
         }
     .end annotation
@@ -33,7 +33,7 @@
         value = {
             "(",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lnv3;",
+            "Lsy3;",
             ">;)V"
         }
     .end annotation

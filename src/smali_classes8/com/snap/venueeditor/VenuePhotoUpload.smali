@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRwj;
+    proxyClass = LeWj;
     schema = "\'openPhotoPicker\':f|m|(),\'provideOnPhotoSelected\':f|m|(f(s)),\'showErrorDialog\':f|m|(s)"
     typeReferences = {}
 .end annotation

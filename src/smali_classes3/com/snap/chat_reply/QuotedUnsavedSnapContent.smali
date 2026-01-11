@@ -1,10 +1,10 @@
 .class public final Lcom/snap/chat_reply/QuotedUnsavedSnapContent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'mediaType\':r:\'[0]\',\'useNewBrandPurple\':b@?"
     typeReferences = {

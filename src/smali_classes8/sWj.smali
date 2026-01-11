@@ -1,111 +1,196 @@
-.class public final LsWj;
+.class public abstract synthetic LsWj;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LrWj;
 
-
-# instance fields
-.field public final a:Ljava/util/concurrent/ConcurrentHashMap;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lcom/snap/venueprofile/VenueProfileOpenSource;->values()[Lcom/snap/venueprofile/VenueProfileOpenSource;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    .line 9
-    iput-object v0, p0, LsWj;->a:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 10
-    .line 11
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/String;)LqWj;
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
     :try_start_0
-    iget-object v0, p0, LsWj;->a:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 3
-    .line 4
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
-
-    .line 5
-    .line 6
-    .line 7
-    move-result v0
-
-    .line 8
-    if-eqz v0, :cond_0
+    sget-object v1, Lcom/snap/venueprofile/VenueProfileOpenSource;->MAP:Lcom/snap/venueprofile/VenueProfileOpenSource;
 
     .line 9
     .line 10
-    iget-object v0, p0, LsWj;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 11
     .line 12
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 13
+    move-result v1
+
     .line 14
+    const/4 v2, 0x1
+
     .line 15
-    move-result-object p1
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
-    check-cast p1, LqWj;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 17
-    .line 18
-    monitor-exit p0
+    :catch_0
+    :try_start_1
+    sget-object v1, Lcom/snap/venueprofile/VenueProfileOpenSource;->UNKNOWN:Lcom/snap/venueprofile/VenueProfileOpenSource;
 
+    .line 18
     .line 19
-    return-object p1
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 20
-    :catchall_0
-    move-exception p1
-
     .line 21
-    goto :goto_0
-
     .line 22
-    :cond_0
-    monitor-exit p0
+    move-result v1
 
     .line 23
-    const/4 p1, 0x0
+    const/4 v2, 0x2
 
     .line 24
-    return-object p1
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 25
-    :goto_0
-    monitor-exit p0
-
     .line 26
-    throw p1
+    :catch_1
+    :try_start_2
+    sget-object v1, Lcom/snap/venueprofile/VenueProfileOpenSource;->MAP_SEARCH:Lcom/snap/venueprofile/VenueProfileOpenSource;
+
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    const/4 v2, 0x3
+
+    .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 34
+    .line 35
+    :catch_2
+    :try_start_3
+    sget-object v1, Lcom/snap/venueprofile/VenueProfileOpenSource;->SEARCH:Lcom/snap/venueprofile/VenueProfileOpenSource;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 43
+    .line 44
+    :catch_3
+    :try_start_4
+    sget-object v1, Lcom/snap/venueprofile/VenueProfileOpenSource;->CONTEXT:Lcom/snap/venueprofile/VenueProfileOpenSource;
+
+    .line 45
+    .line 46
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v1
+
+    .line 50
+    const/4 v2, 0x5
+
+    .line 51
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 52
+    .line 53
+    :catch_4
+    :try_start_5
+    sget-object v1, Lcom/snap/venueprofile/VenueProfileOpenSource;->AD:Lcom/snap/venueprofile/VenueProfileOpenSource;
+
+    .line 54
+    .line 55
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v1
+
+    .line 59
+    const/4 v2, 0x6
+
+    .line 60
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 61
+    .line 62
+    :catch_5
+    :try_start_6
+    sget-object v1, Lcom/snap/venueprofile/VenueProfileOpenSource;->PROFILE:Lcom/snap/venueprofile/VenueProfileOpenSource;
+
+    .line 63
+    .line 64
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v1
+
+    .line 68
+    const/4 v2, 0x7
+
+    .line 69
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 70
+    .line 71
+    :catch_6
+    sput-object v0, LsWj;->a:[I
+
+    .line 72
+    .line 73
+    return-void
 .end method

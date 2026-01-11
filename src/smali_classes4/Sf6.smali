@@ -3,338 +3,314 @@
 .source "SourceFile"
 
 # interfaces
-.implements LXRa;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final a:Ltih;
-
-.field public final b:LvAd;
-
-.field public final c:Lfg6;
+.field public final synthetic a:I
 
 
 # direct methods
-.method public constructor <init>(LvUi;Ltih;LYf6;Lfid;LvAd;)V
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
+    iput p1, p0, LSf6;->a:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p2, p0, LSf6;->a:Ltih;
-
-    .line 5
-    .line 6
-    iput-object p5, p0, LSf6;->b:LvAd;
-
-    .line 7
-    .line 8
-    invoke-virtual {p4, p3}, Lfid;->b(LYf6;)V
-
-    .line 9
-    .line 10
-    .line 11
-    sget-object p1, LZg6;->c:LZg6;
-
-    .line 12
-    .line 13
-    invoke-virtual {p4, p1}, Lfid;->a(LZg6;)Lfg6;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    iput-object p1, p0, LSf6;->c:Lfg6;
-
-    .line 18
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/os/Bundle;)LWRa;
-    .locals 5
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LSf6;->c:Lfg6;
+    iget v0, p0, LSf6;->a:I
 
     .line 2
     .line 3
-    iget-object v1, v0, Lfg6;->a:LB73;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    check-cast v1, LOze;
-
     .line 6
-    .line 7
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, Ljava/util/List;
 
+    .line 7
     .line 8
+    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+
     .line 9
     .line 10
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
     .line 11
-    .line 12
-    .line 13
-    move-result-wide v1
+    return-void
 
+    .line 12
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 13
     .line 14
-    new-instance v3, Lag6;
+    return-void
 
     .line 15
-    .line 16
-    const/4 v4, 0x1
+    :pswitch_1
+    check-cast p1, Lg7j;
 
+    .line 16
     .line 17
-    invoke-direct {v3, v4, v1, v2, v0}, Lag6;-><init>(IJLfg6;)V
+    return-void
 
     .line 18
+    :pswitch_2
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 19
     .line 20
-    invoke-virtual {v0, v3}, Lfg6;->n(Ljava/lang/Runnable;)V
+    return-void
 
     .line 21
+    :pswitch_3
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 22
     .line 23
-    iget-object v0, p0, LSf6;->b:LvAd;
+    return-void
 
     .line 24
+    :pswitch_4
+    check-cast p1, Ljava/util/List;
+
     .line 25
-    invoke-interface {v0}, LvAd;->p()Z
-
     .line 26
-    .line 27
-    .line 28
-    move-result v0
+    return-void
 
+    .line 27
+    :pswitch_5
+    check-cast p1, Ljava/lang/String;
+
+    .line 28
     .line 29
-    if-nez v0, :cond_1
+    return-void
 
     .line 30
-    .line 31
-    new-instance v0, Llqc;
+    :pswitch_6
+    check-cast p1, Ljava/util/List;
 
+    .line 31
     .line 32
+    return-void
+
     .line 33
-    new-instance v1, Ljava/util/LinkedHashMap;
+    :pswitch_7
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 34
     .line 35
-    invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
+    return-void
 
     .line 36
+    :pswitch_8
+    check-cast p1, Ljava/lang/String;
+
     .line 37
     .line 38
-    invoke-direct {v0, v1}, Llqc;-><init>(Ljava/util/LinkedHashMap;)V
+    return-void
 
     .line 39
+    :pswitch_9
+    check-cast p1, Lpnf;
+
     .line 40
     .line 41
-    sget-object v1, Lve6;->Z:Lve6;
+    return-void
 
     .line 42
+    :pswitch_a
+    check-cast p1, Ljava/lang/String;
+
     .line 43
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 44
-    .line 45
-    .line 46
-    sget-object v1, Lve6;->f0:LXfi;
+    return-void
 
+    .line 45
+    :pswitch_b
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 46
     .line 47
+    return-void
+
     .line 48
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    :pswitch_c
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 49
     .line 50
+    return-void
+
     .line 51
-    move-result-object v1
+    :pswitch_d
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 52
-    check-cast v1, LZpc;
-
     .line 53
+    return-void
+
     .line 54
-    invoke-virtual {v0, v1}, Ljqc;->c(Ldqc;)Ljqc;
+    :pswitch_e
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 55
     .line 56
+    return-void
+
     .line 57
-    move-result-object v0
+    :pswitch_f
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 58
-    check-cast v0, Llqc;
-
     .line 59
+    return-void
+
     .line 60
-    iget-object v1, p0, LSf6;->a:Ltih;
+    :pswitch_10
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 61
     .line 62
-    invoke-virtual {v1}, Ltih;->b()Z
+    return-void
 
     .line 63
+    :pswitch_11
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 64
     .line 65
-    move-result v1
+    return-void
 
     .line 66
-    if-eqz v1, :cond_0
+    :pswitch_12
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 67
     .line 68
-    sget-object v1, LFkh;->Z:LFkh;
+    return-void
 
     .line 69
+    :pswitch_13
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 70
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 71
+    return-void
+
     .line 72
+    :pswitch_14
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 73
-    invoke-static {}, LFkh;->g()Lcqc;
-
     .line 74
-    .line 75
-    .line 76
-    move-result-object v1
+    return-void
 
+    .line 75
+    :pswitch_15
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 76
     .line 77
-    goto :goto_0
+    return-void
 
     .line 78
-    :cond_0
-    invoke-static {}, LeCf;->b()Ldqc;
+    :pswitch_16
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 79
     .line 80
+    return-void
+
     .line 81
-    move-result-object v1
+    :pswitch_17
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 82
-    :goto_0
-    invoke-virtual {v0, v1}, Ljqc;->c(Ldqc;)Ljqc;
-
     .line 83
-    .line 84
-    .line 85
-    move-result-object v0
+    return-void
 
+    .line 84
+    :pswitch_18
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 85
     .line 86
-    check-cast v0, Llqc;
+    return-void
 
     .line 87
+    :pswitch_19
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 88
-    invoke-virtual {v0}, Llqc;->d()LrK5;
-
     .line 89
-    .line 90
-    .line 91
-    move-result-object v0
+    return-void
 
+    .line 90
+    :pswitch_1a
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 91
     .line 92
-    goto :goto_1
+    return-void
 
     .line 93
-    :cond_1
-    new-instance v0, Llqc;
+    :pswitch_1b
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 94
     .line 95
-    new-instance v1, Ljava/util/LinkedHashMap;
+    return-void
 
     .line 96
+    :pswitch_1c
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 97
-    invoke-direct {v1}, Ljava/util/LinkedHashMap;-><init>()V
-
     .line 98
+    return-void
+
     .line 99
-    .line 100
-    invoke-direct {v0, v1}, Llqc;-><init>(Ljava/util/LinkedHashMap;)V
-
-    .line 101
-    .line 102
-    .line 103
-    sget-object v1, Lve6;->Z:Lve6;
-
-    .line 104
-    .line 105
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 106
-    .line 107
-    .line 108
-    sget-object v1, Lve6;->f0:LXfi;
-
-    .line 109
-    .line 110
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 111
-    .line 112
-    .line 113
-    move-result-object v1
-
-    .line 114
-    check-cast v1, LZpc;
-
-    .line 115
-    .line 116
-    invoke-virtual {v0, v1}, Ljqc;->c(Ldqc;)Ljqc;
-
-    .line 117
-    .line 118
-    .line 119
-    move-result-object v0
-
-    .line 120
-    check-cast v0, Llqc;
-
-    .line 121
-    .line 122
-    invoke-virtual {v0}, Llqc;->d()LrK5;
-
-    .line 123
-    .line 124
-    .line 125
-    move-result-object v0
-
-    .line 126
-    :goto_1
-    new-instance v1, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedFragment;
-
-    .line 127
-    .line 128
-    invoke-direct {v1}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedFragment;-><init>()V
-
-    .line 129
-    .line 130
-    .line 131
-    invoke-virtual {v1, p1}, Landroidx/fragment/app/g;->setArguments(Landroid/os/Bundle;)V
-
-    .line 132
-    .line 133
-    .line 134
-    new-instance p1, LaH7;
-
-    .line 135
-    .line 136
-    sget-object v2, Lue6;->n0:Lue6;
-
-    .line 137
-    .line 138
-    invoke-direct {p1, v2, v1, v0}, LaH7;-><init>(LcSa;Lcom/snapchat/deck/fragment/MainPageFragment;Lmqc;)V
-
-    .line 139
-    .line 140
-    .line 141
-    return-object p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -24,7 +24,7 @@
 
 
 # instance fields
-.field public final X:LF06;
+.field public final X:LA36;
 
 .field public final c:J
 
@@ -32,7 +32,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Flowable;JLF06;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Flowable;JLA36;)V
     .locals 1
 
     .line 1
@@ -53,7 +53,7 @@
 
     .line 9
     .line 10
-    iput-object p4, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimeoutTimed;->X:LF06;
+    iput-object p4, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimeoutTimed;->X:LA36;
 
     .line 11
     .line 12
@@ -62,7 +62,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 6
 
     .line 1
@@ -70,11 +70,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimeoutTimed;->X:LF06;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimeoutTimed;->X:LA36;
 
     .line 4
     .line 5
-    iget-object v1, v1, LF06;->t:Lio/reactivex/rxjava3/internal/schedulers/ExecutorScheduler;
+    iget-object v1, v1, LA36;->t:Lio/reactivex/rxjava3/internal/schedulers/ExecutorScheduler;
 
     .line 6
     .line 7
@@ -97,12 +97,12 @@
     move-object v1, p1
 
     .line 16
-    invoke-direct/range {v0 .. v5}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimeoutTimed$TimeoutSubscriber;-><init>(LV6i;JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler$Worker;)V
+    invoke-direct/range {v0 .. v5}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimeoutTimed$TimeoutSubscriber;-><init>(Lmvi;JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler$Worker;)V
 
     .line 17
     .line 18
     .line 19
-    invoke-interface {v1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 20
     .line 21

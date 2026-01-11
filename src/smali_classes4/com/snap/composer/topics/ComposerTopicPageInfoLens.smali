@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/topics/ComposerTopicPageInfoLens;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'lensId\':s,\'lensName\':s,\'iconUrl\':s,\'creatorId\':s?,\'creatorName\':s?,\'creatorProId\':s?,\'isOfficialCreator\':b@?,\'isBusinessCategoryType\':b@?"
     typeReferences = {}

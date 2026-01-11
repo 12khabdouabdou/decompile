@@ -73,7 +73,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/internal/disposables/SequentialDisposable;->c()Z
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/internal/disposables/SequentialDisposable;->d()Z
 
     .line 6
     .line 7
@@ -110,7 +110,7 @@
     .line 20
     .line 21
     :cond_2
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/internal/disposables/SequentialDisposable;->c()Z
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/internal/disposables/SequentialDisposable;->d()Z
 
     .line 22
     .line 23

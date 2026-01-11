@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'Story\':\'cameos\',\'GenerativeContent\':\'generative-content\',\'DreamsSnap\':\'dreams-snap\',\'MemoriesGenAIFeaturedStory\':\'memories-genAI-featured-story\',\'GenAiContent\':\'genAI-content\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

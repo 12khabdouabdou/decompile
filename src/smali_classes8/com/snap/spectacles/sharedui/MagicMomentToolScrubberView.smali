@@ -80,7 +80,7 @@
     move-result-object v1
 
     .line 18
-    const v2, 0x7f0e03ee
+    const v2, 0x7f0e0411
 
     .line 19
     .line 20
@@ -174,103 +174,104 @@
 
     .line 65
     .line 66
-    new-instance v2, LGMa;
+    new-instance v2, Luna;
 
     .line 67
     .line 68
-    const/4 v5, 0x5
+    const/16 v5, 0x11
 
     .line 69
-    invoke-direct {v2, p0, v5, v1}, LGMa;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 70
+    invoke-direct {v2, p0, v5, v1}, Luna;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 71
     .line 72
+    .line 73
     invoke-virtual {v1, v2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 73
     .line 74
     .line 75
+    .line 76
     iget-object v1, p0, Lcom/snap/spectacles/sharedui/MagicMomentToolScrubberView;->b:Landroid/widget/SeekBar;
 
-    .line 76
     .line 77
+    .line 78
     if-eqz v1, :cond_1
 
-    .line 78
     .line 79
+    .line 80
     invoke-virtual {v1, v0}, Landroid/widget/AbsSeekBar;->setSplitTrack(Z)V
 
-    .line 80
     .line 81
     .line 82
+    .line 83
     iget-object v0, p0, Lcom/snap/spectacles/sharedui/MagicMomentToolScrubberView;->b:Landroid/widget/SeekBar;
 
-    .line 83
     .line 84
+    .line 85
     if-eqz v0, :cond_0
 
-    .line 85
     .line 86
-    new-instance v1, LgRa;
-
     .line 87
-    .line 88
-    invoke-direct {v1, p1, p0, p2}, LgRa;-><init>(Lio/reactivex/rxjava3/core/Observer;Lcom/snap/spectacles/sharedui/MagicMomentToolScrubberView;Z)V
+    new-instance v1, LS3b;
 
+    .line 88
     .line 89
+    invoke-direct {v1, p1, p0, p2}, LS3b;-><init>(Lio/reactivex/rxjava3/core/Observer;Lcom/snap/spectacles/sharedui/MagicMomentToolScrubberView;Z)V
+
     .line 90
     .line 91
+    .line 92
     invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
-    .line 92
     .line 93
     .line 94
+    .line 95
     return-void
 
-    .line 95
-    :cond_0
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 96
+    :cond_0
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 97
     .line 98
-    throw v3
-
     .line 99
-    :cond_1
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    throw v3
 
     .line 100
+    :cond_1
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 101
     .line 102
-    throw v3
-
     .line 103
-    :cond_2
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    throw v3
 
     .line 104
+    :cond_2
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 105
     .line 106
-    throw v3
-
     .line 107
-    :cond_3
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    throw v3
 
     .line 108
+    :cond_3
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 109
     .line 110
+    .line 111
     throw v3
 
-    .line 111
-    :cond_4
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
     .line 112
+    :cond_4
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 113
     .line 114
+    .line 115
     throw v3
 .end method
 
@@ -366,20 +367,20 @@
     .line 33
     .line 34
     .line 35
-    new-instance p1, LUCa;
+    new-instance p1, LIGa;
 
     .line 36
     .line 37
-    const/16 p2, 0xd
+    const/16 p2, 0x12
 
     .line 38
     .line 39
-    invoke-direct {p1, p2, p0}, LUCa;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LIGa;-><init>(ILjava/lang/Object;)V
 
     .line 40
     .line 41
     .line 42
-    invoke-static {v1, p1, v0}, LLZj;->m0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v1, p1, v0}, LOIc;->F(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 43
     .line 44

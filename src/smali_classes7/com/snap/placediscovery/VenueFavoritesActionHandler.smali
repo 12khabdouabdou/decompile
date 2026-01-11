@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lewj;
+    proxyClass = LrVj;
     schema = "\'handleFavoriteNotificationUpdate\':f|m|(r:\'[0]\'),\'refetchFavoritesObservable\':g?<c>:\'[1]\'<b@>,\'sharedVenueFavoritesManager\':r?:\'[2]\'"
     typeReferences = {
         Lcom/snap/placediscovery/FavoriteActionNotificationModel;,

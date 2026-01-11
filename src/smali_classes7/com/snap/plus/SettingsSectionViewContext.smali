@@ -1,10 +1,10 @@
 .class public final Lcom/snap/plus/SettingsSectionViewContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'presentSubscribePage\':f(s?),\'presentManagementPage\':f(),\'onDismiss\':f?(),\'cofStore\':r?:\'[0]\',\'blizzardLogger\':r?:\'[1]\',\'onInteraction\':f?(),\'onImpression\':f?()"
     typeReferences = {
@@ -61,6 +61,38 @@
 
 
 # direct methods
+.method public constructor <init>(LPBd;Lkwd;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_presentSubscribePage:Lkotlin/jvm/functions/Function1;
+
+    .line 3
+    iput-object p2, p0, Lcom/snap/plus/SettingsSectionViewContext;->_presentManagementPage:Lkotlin/jvm/functions/Function0;
+
+    const/4 p1, 0x0
+
+    .line 4
+    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_onDismiss:Lkotlin/jvm/functions/Function0;
+
+    .line 5
+    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_cofStore:Lcom/snap/composer/cof/ICOFRxStore;
+
+    .line 6
+    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
+
+    .line 7
+    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_onInteraction:Lkotlin/jvm/functions/Function0;
+
+    .line 8
+    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_onImpression:Lkotlin/jvm/functions/Function0;
+
+    return-void
+.end method
+
 .method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lcom/snap/composer/cof/ICOFRxStore;Lcom/snap/composer/blizzard/Logging;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
@@ -100,38 +132,6 @@
 
     .line 16
     iput-object p7, p0, Lcom/snap/plus/SettingsSectionViewContext;->_onImpression:Lkotlin/jvm/functions/Function0;
-
-    return-void
-.end method
-
-.method public constructor <init>(LoWc;LJSc;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_presentSubscribePage:Lkotlin/jvm/functions/Function1;
-
-    .line 3
-    iput-object p2, p0, Lcom/snap/plus/SettingsSectionViewContext;->_presentManagementPage:Lkotlin/jvm/functions/Function0;
-
-    const/4 p1, 0x0
-
-    .line 4
-    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_onDismiss:Lkotlin/jvm/functions/Function0;
-
-    .line 5
-    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_cofStore:Lcom/snap/composer/cof/ICOFRxStore;
-
-    .line 6
-    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
-
-    .line 7
-    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_onInteraction:Lkotlin/jvm/functions/Function0;
-
-    .line 8
-    iput-object p1, p0, Lcom/snap/plus/SettingsSectionViewContext;->_onImpression:Lkotlin/jvm/functions/Function0;
 
     return-void
 .end method
@@ -182,7 +182,7 @@
     return-void
 .end method
 
-.method public final e(LbCd;)V
+.method public final e(LyTd;)V
     .locals 0
 
     .line 1

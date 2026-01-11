@@ -1,154 +1,196 @@
 .class public final LtG1;
-.super LvG1;
+.super LZee;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
+# static fields
+.field public static final c:LtG1;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LtG1;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LtG1;->a:Ljava/lang/String;
+    sget-object v1, LOG1;->a:LOG1;
 
+    .line 4
     .line 5
+    invoke-direct {v0, v1}, LZee;-><init>(LOL9;)V
+
     .line 6
+    .line 7
+    .line 8
+    sput-object v0, LtG1;->c:LtG1;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final g(Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, [B
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    array-length p1, p1
 
+    .line 4
+    return p1
+.end method
+
+.method public final i(LLG3;ILjava/lang/Object;)V
+    .locals 2
+
+    .line 1
+    check-cast p3, LnG1;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LZee;->b:LYee;
+
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LtG1;
+    invoke-interface {p1, v0, p2}, LLG3;->c(LYee;I)B
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LtG1;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LtG1;->a:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    iget-object p1, p1, LtG1;->a:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
     move-result p1
 
+    .line 9
+    invoke-static {p3}, LXee;->c(LXee;)V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object p2, p3, LnG1;->a:[B
+
+    .line 13
+    .line 14
+    iget v0, p3, LnG1;->b:I
+
+    .line 15
+    .line 16
+    add-int/lit8 v1, v0, 0x1
+
+    .line 17
+    .line 18
+    iput v1, p3, LnG1;->b:I
+
+    .line 19
+    .line 20
+    aput-byte p1, p2, v0
+
     .line 21
-    if-nez p1, :cond_2
-
     .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    return v0
+    return-void
 .end method
 
-.method public final hashCode()I
+.method public final j(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LtG1;->a:Ljava/lang/String;
+    check-cast p1, [B
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    new-instance v0, LnG1;
 
     .line 4
     .line 5
-    const/4 v0, 0x0
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    return v0
-
     .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
     .line 8
+    iput-object p1, v0, LnG1;->a:[B
+
     .line 9
     .line 10
-    move-result v0
+    array-length p1, p1
 
     .line 11
-    return v0
+    iput p1, v0, LnG1;->b:I
+
+    .line 12
+    .line 13
+    const/16 p1, 0xa
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, LnG1;->b(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    return-object v0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public final m()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    new-array v0, v0, [B
+
+    .line 3
+    .line 4
+    return-object v0
+.end method
+
+.method public final n(LYri;Ljava/lang/Object;I)V
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    check-cast p2, [B
 
     .line 2
     .line 3
-    const-string v1, "ChatStickerPicker(searchString="
+    const/4 v0, 0x0
 
     .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    :goto_0
+    if-ge v0, p3, :cond_0
 
+    .line 5
     .line 6
+    aget-byte v1, p2, v0
+
     .line 7
     .line 8
-    iget-object v1, p0, LtG1;->a:Ljava/lang/String;
+    iget-object v2, p0, LZee;->b:LYee;
 
     .line 9
     .line 10
-    const-string v2, ")"
+    invoke-virtual {p1, v2, v0}, LYri;->f(LRig;I)V
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
     .line 13
+    invoke-virtual {p1, v1}, LYri;->c(B)V
+
     .line 14
     .line 15
-    move-result-object v0
-
     .line 16
-    return-object v0
+    add-int/lit8 v0, v0, 0x1
+
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    return-void
 .end method

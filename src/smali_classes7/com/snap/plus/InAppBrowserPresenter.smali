@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lc99;
+    proxyClass = LWg9;
     schema = "\'present\':f|m|(s),\'presentSystemBrowser\':f|m|(s)"
     typeReferences = {}
 .end annotation

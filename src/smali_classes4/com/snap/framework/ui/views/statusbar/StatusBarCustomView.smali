@@ -27,7 +27,7 @@
 
     move-result-object p1
 
-    sget-object v1, Live;->d:[I
+    sget-object v1, LQMe;->d:[I
 
     invoke-virtual {p1, p2, v1, v0, v0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -81,7 +81,7 @@
 
     move-result-object p3
 
-    sget-object v0, Live;->d:[I
+    sget-object v0, LQMe;->d:[I
 
     invoke-virtual {p3, p2, v0, p1, p1}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -122,41 +122,45 @@
     .locals 1
 
     .line 1
-    sget-object p2, LGwh;->a:LHwh;
+    invoke-static {}, LHUh;->a()LIUh;
 
     .line 2
     .line 3
-    invoke-virtual {p2}, LHwh;->a()I
-
     .line 4
+    move-result-object p2
+
     .line 5
+    invoke-virtual {p2}, LIUh;->a()I
+
     .line 6
+    .line 7
+    .line 8
     move-result p2
 
-    .line 7
+    .line 9
     iget v0, p0, Lcom/snap/framework/ui/views/statusbar/StatusBarCustomView;->a:I
 
-    .line 8
-    .line 9
+    .line 10
+    .line 11
     add-int/2addr p2, v0
 
-    .line 10
-    const/high16 v0, 0x40000000    # 2.0f
-
-    .line 11
     .line 12
-    invoke-static {p2, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+    const/high16 v0, 0x40000000    # 2.0f
 
     .line 13
     .line 14
+    invoke-static {p2, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
     .line 15
+    .line 16
+    .line 17
     move-result p2
 
-    .line 16
+    .line 18
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
-    .line 17
-    .line 18
     .line 19
+    .line 20
+    .line 21
     return-void
 .end method

@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static a(LjVe;)Lio/reactivex/rxjava3/functions/Action;
+.method public static a(Lddf;)Lio/reactivex/rxjava3/functions/Action;
     .locals 1
 
     .line 1
@@ -23,7 +23,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnComplete;-><init>(LjVe;)V
+    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnComplete;-><init>(Lddf;)V
 
     .line 4
     .line 5
@@ -31,7 +31,7 @@
     return-object v0
 .end method
 
-.method public static b(LjVe;)Lio/reactivex/rxjava3/functions/Consumer;
+.method public static b(Lddf;)Lio/reactivex/rxjava3/functions/Consumer;
     .locals 1
 
     .line 1
@@ -39,7 +39,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnError;-><init>(LjVe;)V
+    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnError;-><init>(Lddf;)V
 
     .line 4
     .line 5
@@ -47,7 +47,7 @@
     return-object v0
 .end method
 
-.method public static c(LjVe;)Lio/reactivex/rxjava3/functions/Consumer;
+.method public static c(Lddf;)Lio/reactivex/rxjava3/functions/Consumer;
     .locals 1
 
     .line 1
@@ -55,7 +55,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnNext;-><init>(LjVe;)V
+    invoke-direct {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableInternalHelper$SubscriberOnNext;-><init>(Lddf;)V
 
     .line 4
     .line 5

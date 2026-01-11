@@ -3,134 +3,187 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lgmc;
+.implements LGl5;
 
 
-# static fields
-.field public static final a:Lbfa;
-
-.field public static final b:LGJe;
+# instance fields
+.field public final a:Lpm5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lpm5;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lbfa;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, Lbfa;->a:Lpm5;
+
     .line 5
     .line 6
-    sput-object v0, Lbfa;->a:Lbfa;
-
-    .line 7
-    .line 8
-    new-instance v0, LGJe;
-
-    .line 9
-    .line 10
-    const-string v1, "\\\"?Looksery \\[(.*?)\\]\\\"?\\ ?:? \\\"active effect: (.*?), upcoming effect: (.*?)\\\""
-
-    .line 11
-    .line 12
-    invoke-direct {v0, v1}, LGJe;-><init>(Ljava/lang/String;)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, Lbfa;->b:LGJe;
-
-    .line 16
-    .line 17
     return-void
 .end method
 
-.method public static final a(Ljava/lang/String;)Lu09;
-    .locals 3
+
+# virtual methods
+.method public final B(Landroid/net/Uri;)Lc64;
+    .locals 0
 
     .line 1
-    const-string v0, "<null>"
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public final J(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public final N(Landroid/net/Uri;ZLWl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p3}, Lbfa;->l(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public final b(Landroid/net/Uri;LWl5;LLl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, Lbfa;->l(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public final l(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 7
+
+    .line 1
+    const-string p2, "lens_id"
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    move-result-object v1
 
     .line 7
-    sget-object v1, Lr09;->a:Lr09;
+    sget-object p1, LlH1;->n0:LlH1;
 
     .line 8
     .line 9
-    if-eqz v0, :cond_0
+    const/4 p2, 0x0
 
     .line 10
-    .line 11
-    goto :goto_1
+    if-eqz v1, :cond_0
 
+    .line 11
     .line 12
-    :cond_0
-    const/4 v0, 0x0
+    new-instance v6, LP72;
 
     .line 13
-    if-nez p0, :cond_1
-
     .line 14
-    .line 15
-    goto :goto_0
+    new-instance v0, Lpla;
 
+    .line 15
     .line 16
-    :cond_1
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    const/4 v3, 0x0
 
     .line 17
+    const/4 v4, 0x0
+
     .line 18
+    const/4 v2, 0x0
+
     .line 19
-    move-result-object p0
+    const/16 v5, 0x7e
 
     .line 20
-    invoke-static {p0}, LR4i;->w1(Ljava/lang/CharSequence;)Z
-
     .line 21
+    invoke-direct/range {v0 .. v5}, Lpla;-><init>(Ljava/lang/String;Ljava/lang/String;Lola;Ljava/lang/String;I)V
+
     .line 22
     .line 23
-    move-result v2
-
     .line 24
-    if-eqz v2, :cond_2
+    invoke-direct {v6, v0, p2}, LP72;-><init>(LHla;Ljava/lang/String;)V
 
     .line 25
     .line 26
-    goto :goto_0
-
     .line 27
-    :cond_2
-    new-instance v0, Lo09;
+    move-object p2, v6
 
     .line 28
-    .line 29
-    invoke-direct {v0, p0}, Lo09;-><init>(Ljava/lang/String;)V
+    :cond_0
+    iget-object v0, p0, Lbfa;->a:Lpm5;
 
+    .line 29
     .line 30
+    invoke-virtual {v0, p1, p2}, Lpm5;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 31
     .line 32
-    :goto_0
-    if-eqz v0, :cond_3
-
     .line 33
+    move-result-object p1
+
     .line 34
-    return-object v0
+    check-cast p1, Lio/reactivex/rxjava3/core/Completable;
 
     .line 35
-    :cond_3
-    :goto_1
-    return-object v1
+    .line 36
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Completable;->p()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    return-object p1
+.end method
+
+.method public final s(Landroid/net/Uri;Z)Lc64;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public final t(Landroid/net/Uri;)Lc64;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
 .end method

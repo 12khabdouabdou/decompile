@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LLWe;
-    schema = "\'reportDidComplete\':f|m|(b),\'submitReport\':f|m|(s, s): g<c>:\'[0]\'<b@>"
+    proxyClass = LFef;
+    schema = "\'reportDidComplete\':f|m|(b),\'submitReport\':f|m|(s, s): g<c>:\'[0]\'<b@>,\'didSelectWebViewReason\':f?|m|(s)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
@@ -18,6 +18,11 @@
 
 
 # virtual methods
+.method public abstract didSelectWebViewReason(Ljava/lang/String;)V
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
 .method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
 .end method
 

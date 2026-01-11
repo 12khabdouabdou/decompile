@@ -9,8 +9,13 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 0
+    .locals 1
 
+    .line 1
+    sget-object v0, LMt7;->n:Lq66;
+
+    .line 2
+    .line 3
     return-void
 .end method
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LxO3;
+.implements LlS3;
 
 
 # static fields
@@ -17,9 +17,9 @@
 
 .field public G0:Landroid/view/View;
 
-.field public H0:LiId;
+.field public H0:LxZd;
 
-.field public I0:LwO3;
+.field public I0:LkS3;
 
 
 # direct methods
@@ -37,98 +37,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    if-eqz p1, :cond_0
-
-    .line 9
-    .line 10
-    const-string v0, "string_copy"
-
-    .line 11
-    .line 12
-    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    if-nez p1, :cond_1
-
-    .line 17
-    .line 18
-    :cond_0
-    const-string p1, "UNSET"
-
-    .line 19
-    .line 20
-    :cond_1
-    invoke-static {p1}, LiId;->valueOf(Ljava/lang/String;)LiId;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->H0:LiId;
-
-    .line 25
-    .line 26
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LwO3;
-
-    .line 27
-    .line 28
-    if-eqz p1, :cond_2
-
-    .line 29
-    .line 30
-    invoke-virtual {p1, p0}, LwO3;->W2(LxO3;)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-void
-
-    .line 34
-    :cond_2
-    const-string p1, "presenter"
-
-    .line 35
-    .line 36
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    const/4 p1, 0x0
-
-    .line 40
-    throw p1
-.end method
-
-.method public final E1()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LwO3;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LkS3;
 
     .line 2
     .line 3
@@ -136,7 +49,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LwO3;->C1()V
+    invoke-virtual {v0}, LkS3;->D1()V
 
     .line 6
     .line 7
@@ -149,7 +62,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -160,11 +73,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0298
+    const p3, 0x7f0e02af
 
     .line 2
     .line 3
@@ -183,16 +96,16 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    const p2, 0x7f0b1060
+    const p2, 0x7f0b1189
 
     .line 5
     .line 6
@@ -209,7 +122,7 @@
 
     .line 12
     .line 13
-    const p2, 0x7f0b1130
+    const p2, 0x7f0b125f
 
     .line 14
     .line 15
@@ -226,7 +139,7 @@
 
     .line 21
     .line 22
-    const p2, 0x7f0b112f
+    const p2, 0x7f0b125e
 
     .line 23
     .line 24
@@ -243,7 +156,7 @@
 
     .line 30
     .line 31
-    const p2, 0x7f0b1131
+    const p2, 0x7f0b1260
 
     .line 32
     .line 33
@@ -260,7 +173,7 @@
 
     .line 39
     .line 40
-    const v0, 0x7f0b112e
+    const v0, 0x7f0b125d
 
     .line 41
     .line 42
@@ -277,7 +190,7 @@
 
     .line 48
     .line 49
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->H0:LiId;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->H0:LxZd;
 
     .line 50
     .line 51
@@ -325,7 +238,7 @@
     move-result-object v0
 
     .line 71
-    const v2, 0x7f130fc6
+    const v2, 0x7f13106d
 
     .line 72
     .line 73
@@ -351,7 +264,7 @@
     move-result-object p2
 
     .line 85
-    const v0, 0x7f130fc2
+    const v0, 0x7f131069
 
     .line 86
     .line 87
@@ -381,7 +294,7 @@
     move-result-object v0
 
     .line 100
-    const v2, 0x7f130fc9
+    const v2, 0x7f131070
 
     .line 101
     .line 102
@@ -407,7 +320,7 @@
     move-result-object p2
 
     .line 114
-    const v0, 0x7f130fc5
+    const v0, 0x7f13106c
 
     .line 115
     .line 116
@@ -437,7 +350,7 @@
     move-result-object v0
 
     .line 129
-    const v2, 0x7f130fc8
+    const v2, 0x7f13106f
 
     .line 130
     .line 131
@@ -463,7 +376,7 @@
     move-result-object p2
 
     .line 143
-    const v0, 0x7f130fc4
+    const v0, 0x7f13106b
 
     .line 144
     .line 145
@@ -493,7 +406,7 @@
     move-result-object v0
 
     .line 158
-    const v2, 0x7f130fc7
+    const v2, 0x7f13106e
 
     .line 159
     .line 160
@@ -519,7 +432,7 @@
     move-result-object p2
 
     .line 172
-    const v0, 0x7f130fc3
+    const v0, 0x7f13106a
 
     .line 173
     .line 174
@@ -538,7 +451,7 @@
     .line 181
     .line 182
     :goto_0
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LwO3;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LkS3;
 
     .line 183
     .line 184
@@ -546,7 +459,7 @@
 
     .line 185
     .line 186
-    invoke-virtual {p1}, LwO3;->Q2()V
+    invoke-virtual {p1}, LkS3;->c3()V
 
     .line 187
     .line 188
@@ -559,7 +472,7 @@
 
     .line 191
     .line 192
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 193
     .line 194
@@ -572,7 +485,7 @@
 
     .line 197
     .line 198
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 199
     .line 200
@@ -580,22 +493,22 @@
     throw v1
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->f1:LZ8d;
+    sget-object v0, Lsod;->f1:Lsod;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -603,16 +516,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LwO3;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LkS3;
 
     .line 5
     .line 6
@@ -620,7 +533,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1}, LwO3;->U2()V
+    invoke-virtual {p1}, LkS3;->e3()V
 
     .line 9
     .line 10
@@ -633,7 +546,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -641,5 +554,92 @@
     const/4 p1, 0x0
 
     .line 18
+    throw p1
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    if-eqz p1, :cond_0
+
+    .line 9
+    .line 10
+    const-string v0, "string_copy"
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, v0}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    if-nez p1, :cond_1
+
+    .line 17
+    .line 18
+    :cond_0
+    const-string p1, "UNSET"
+
+    .line 19
+    .line 20
+    :cond_1
+    invoke-static {p1}, LxZd;->valueOf(Ljava/lang/String;)LxZd;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->H0:LxZd;
+
+    .line 25
+    .line 26
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/contactsync/ContactSyncPrepromptFragment;->I0:LkS3;
+
+    .line 27
+    .line 28
+    if-eqz p1, :cond_2
+
+    .line 29
+    .line 30
+    invoke-virtual {p1, p0}, LkS3;->f3(LlS3;)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-void
+
+    .line 34
+    :cond_2
+    const-string p1, "presenter"
+
+    .line 35
+    .line 36
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    const/4 p1, 0x0
+
+    .line 40
     throw p1
 .end method

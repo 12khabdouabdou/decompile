@@ -1,3 +1,3 @@
-.class public abstract LAyh;
-.super Ljava/lang/Object;
+.class public final LAyh;
+.super Ljava/lang/Exception;
 .source "SourceFile"

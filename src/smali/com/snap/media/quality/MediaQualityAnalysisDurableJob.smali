@@ -1,23 +1,23 @@
 .class public final Lcom/snap/media/quality/MediaQualityAnalysisDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "MediaQualityJob"
-    metadataType = Lfqb;
+    metadataType = LIDb;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(LtB6;Lfqb;)V
+.method public constructor <init>(LRE6;LIDb;)V
     .locals 0
 
     .line 1

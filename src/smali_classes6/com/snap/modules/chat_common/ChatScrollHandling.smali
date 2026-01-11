@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LnN2;
+    proxyClass = LKP2;
     schema = "\'onHorizontalScrollStart\':f|m|(),\'onHorizontalScrollEnd\':f|m|()"
     typeReferences = {}
 .end annotation

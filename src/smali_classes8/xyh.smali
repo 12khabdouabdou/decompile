@@ -1,52 +1,52 @@
-.class public final Lxyh;
-.super LVOi;
+.class public abstract synthetic Lxyh;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LUOi;
 
-
-# instance fields
-.field public final b:Luc0;
-
-.field public final c:Lcl;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(LfQg;LIN5;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0, p1}, LVOi;-><init>(LfQg;)V
+    const/4 v0, 0x2
 
     .line 2
+    invoke-static {v0}, LzHa;->M(I)[I
+
     .line 3
     .line 4
-    new-instance v0, Luc0;
-
     .line 5
+    move-result-object v0
+
     .line 6
-    invoke-direct {v0, p1, p2}, Luc0;-><init>(LfQg;Ljava/lang/Object;)V
+    array-length v0, v0
 
     .line 7
+    new-array v0, v0, [I
+
     .line 8
     .line 9
-    iput-object v0, p0, Lxyh;->b:Luc0;
+    const/4 v1, 0x1
 
     .line 10
+    const/4 v2, 0x0
+
     .line 11
-    new-instance p2, Lcl;
+    :try_start_0
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 12
     .line 13
-    invoke-direct {p2, p1}, LVOi;-><init>(LfQg;)V
+    :catch_0
+    sput-object v0, Lxyh;->a:[I
 
     .line 14
     .line 15
-    .line 16
-    iput-object p2, p0, Lxyh;->c:Lcl;
-
-    .line 17
-    .line 18
     return-void
 .end method

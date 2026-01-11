@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LzAj;",
-        "LuAj;",
+        "LSZj;",
+        "LMZj;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LyAj;
+.field public static final Companion:LRZj;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LyAj;
+    new-instance v0, LRZj;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LyAj;
+    sput-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LRZj;
 
     .line 7
     .line 8
@@ -62,10 +62,37 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
+.method public static final create(LZ69;LSZj;LMZj;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LZ69;",
+            "LSZj;",
+            "LMZj;",
+            "LvF3;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")",
+            "Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LRZj;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-static {p0, p1, p2, p3, p4}, LRZj;->a(LZ69;LSZj;LMZj;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
     .locals 6
 
-    sget-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LyAj;
+    sget-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LRZj;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -80,34 +107,7 @@
     move-object v4, p1
 
     .line 2
-    invoke-static/range {v0 .. v5}, LyAj;->b(LyAj;LqZ8;LzAj;LuAj;LTB3;I)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;LzAj;LuAj;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "LqZ8;",
-            "LzAj;",
-            "LuAj;",
-            "LTB3;",
-            "Lkotlin/jvm/functions/Function1;",
-            ")",
-            "Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;->Companion:LyAj;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-static {p0, p1, p2, p3, p4}, LyAj;->a(LqZ8;LzAj;LuAj;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
+    invoke-static/range {v0 .. v5}, LRZj;->b(LRZj;LZ69;LSZj;LMZj;LvF3;I)Lcom/snap/modules/preview_toolbar/VerticalToolbarV2;
 
     move-result-object p0
 

@@ -1,399 +1,466 @@
 .class public final LHe1;
-.super Ljava/lang/Object;
+.super LJd1;
 .source "SourceFile"
-
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final c:LIe1;
 
-.field public final synthetic b:LKe1;
+.field public final d:LFi1;
+
+.field public final e:LREi;
 
 
 # direct methods
-.method public synthetic constructor <init>(LKe1;I)V
+.method public constructor <init>(LIe1;LFi1;Lfh1;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LHe1;->a:I
+    iget-object p3, p3, Lfh1;->c:LA36;
 
-    iput-object p1, p0, LHe1;->b:LKe1;
+    .line 2
+    .line 3
+    invoke-direct {p0, p3}, LJd1;-><init>(Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    .line 5
+    .line 6
+    iput-object p1, p0, LHe1;->c:LIe1;
 
+    .line 7
+    .line 8
+    iput-object p2, p0, LHe1;->d:LFi1;
+
+    .line 9
+    .line 10
+    new-instance p1, Lv;
+
+    .line 11
+    .line 12
+    const/16 p2, 0x17
+
+    .line 13
+    .line 14
+    invoke-direct {p1, p2, p0}, Lv;-><init>(ILjava/lang/Object;)V
+
+    .line 15
+    .line 16
+    .line 17
+    new-instance p2, LREi;
+
+    .line 18
+    .line 19
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 20
+    .line 21
+    .line 22
+    iput-object p2, p0, LHe1;->e:LREi;
+
+    .line 23
+    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 6
+.method public final a()J
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LHe1;->b:LKe1;
+    iget-object v0, p0, LHe1;->e:LREi;
 
     .line 2
     .line 3
-    iget v1, p0, LHe1;->a:I
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
-    packed-switch v1, :pswitch_data_0
-
     .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Number;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v0
+
+    .line 13
+    return-wide v0
+.end method
+
+.method public final b()V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, LHe1;->c:LIe1;
+
+    .line 2
+    .line 3
+    monitor-enter v0
+
+    .line 4
+    :try_start_0
+    sget v1, LJe1;->a:I
+
+    .line 5
+    .line 6
+    invoke-virtual {v0}, LIe1;->b()Lkh1;
+
     .line 7
     .line 8
-    check-cast p1, LTd1;
-
     .line 9
+    move-result-object v1
+
     .line 10
-    invoke-virtual {v0}, LKe1;->c()V
+    check-cast v1, Llh1;
 
     .line 11
     .line 12
-    .line 13
-    return-void
+    iget-object v1, v1, Llh1;->e:Ljava/util/concurrent/atomic/AtomicLong;
 
+    .line 13
     .line 14
-    :pswitch_0
-    check-cast p1, LSe1;
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     .line 15
     .line 16
-    sget v1, LPe1;->a:I
-
     .line 17
+    move-result-wide v1
+
     .line 18
-    iget p1, p1, LSe1;->b:I
+    iget-object v3, v0, LIe1;->a:LFi1;
 
     .line 19
     .line 20
-    const/4 v1, 0x0
+    iget-object v3, v3, LFi1;->x:LREi;
 
     .line 21
-    if-lez p1, :cond_0
-
     .line 22
-    .line 23
-    iget-object p1, v0, LKe1;->k:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
+    .line 23
     .line 24
     .line 25
-    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+    move-result-object v3
 
     .line 26
+    check-cast v3, Ljava/lang/Number;
+
     .line 27
     .line 28
-    goto :goto_0
+    invoke-virtual {v3}, Ljava/lang/Number;->longValue()J
 
     .line 29
-    :cond_0
-    iget-object p1, v0, LKe1;->k:Ljava/util/concurrent/atomic/AtomicInteger;
-
     .line 30
     .line 31
-    invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
+    move-result-wide v3
 
     .line 32
+    cmp-long v5, v1, v3
+
     .line 33
     .line 34
-    :goto_0
-    iget-object p1, v0, LKe1;->c:LXZ5;
+    if-lez v5, :cond_2
 
     .line 35
     .line 36
-    invoke-virtual {p1}, LXZ5;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LIe1;->b()Lkh1;
 
     .line 37
     .line 38
     .line 39
-    move-result-object v2
+    move-result-object v3
 
     .line 40
-    check-cast v2, LTd1;
+    check-cast v3, Llh1;
 
     .line 41
     .line 42
-    check-cast v2, LUd1;
+    invoke-virtual {v3}, Llh1;->f()Ljava/util/ArrayList;
 
     .line 43
     .line 44
-    iget-object v2, v2, LUd1;->c:Ljava/util/TreeSet;
-
     .line 45
+    move-result-object v3
+
     .line 46
-    invoke-virtual {v2}, Ljava/util/TreeSet;->size()I
+    invoke-static {v3}, Llh3;->b4(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 47
     .line 48
     .line 49
-    move-result v2
+    move-result-object v3
 
     .line 50
-    if-nez v2, :cond_1
+    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 51
     .line 52
-    goto :goto_3
-
     .line 53
-    :cond_1
-    iget-object v2, v0, LKe1;->k:Ljava/util/concurrent/atomic/AtomicInteger;
+    move-result-object v3
 
     .line 54
-    .line 55
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    :cond_0
+    :goto_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 55
     .line 56
     .line 57
-    .line 58
-    move-result v3
-
-    .line 59
-    invoke-virtual {v0}, LKe1;->a()LNe1;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object v4
-
-    .line 63
-    iget-object v4, v4, LNe1;->r:LXfi;
-
-    .line 64
-    .line 65
-    invoke-virtual {v4}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v4
-
-    .line 69
-    check-cast v4, Ljava/lang/Number;
-
-    .line 70
-    .line 71
-    invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
-
-    .line 72
-    .line 73
-    .line 74
     move-result v4
 
-    .line 75
-    const/4 v5, 0x1
+    .line 58
+    if-eqz v4, :cond_1
 
+    .line 59
+    .line 60
+    iget-object v4, v0, LIe1;->a:LFi1;
+
+    .line 61
+    .line 62
+    iget-object v4, v4, LFi1;->x:LREi;
+
+    .line 63
+    .line 64
+    invoke-virtual {v4}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v4
+
+    .line 68
+    check-cast v4, Ljava/lang/Number;
+
+    .line 69
+    .line 70
+    invoke-virtual {v4}, Ljava/lang/Number;->longValue()J
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-wide v4
+
+    .line 74
+    cmp-long v6, v1, v4
+
+    .line 75
     .line 76
-    if-gt v3, v4, :cond_2
+    if-lez v6, :cond_1
 
     .line 77
     .line 78
-    const/4 v3, 0x1
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 79
-    goto :goto_1
-
     .line 80
-    :cond_2
-    const/4 v3, 0x0
-
     .line 81
-    :goto_1
-    invoke-virtual {p1}, LXZ5;->get()Ljava/lang/Object;
+    move-result-object v4
 
     .line 82
+    check-cast v4, Lih1;
+
     .line 83
     .line 84
-    move-result-object p1
+    invoke-virtual {v0}, LIe1;->b()Lkh1;
 
     .line 85
-    check-cast p1, LTd1;
-
     .line 86
     .line 87
-    check-cast p1, LUd1;
+    move-result-object v5
 
     .line 88
-    .line 89
-    invoke-virtual {p1}, LUd1;->b()I
+    check-cast v5, Llh1;
 
+    .line 89
     .line 90
+    invoke-virtual {v5, v4}, Llh1;->c(Lih1;)Z
+
     .line 91
     .line 92
-    move-result p1
-
     .line 93
-    if-nez p1, :cond_3
+    move-result v5
 
     .line 94
-    .line 95
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    if-eqz v5, :cond_0
 
+    .line 95
     .line 96
+    sget-object v1, Lef1;->X:Lef1;
+
     .line 97
     .line 98
-    move-result p1
+    const-string v2, "reason"
 
     .line 99
-    invoke-virtual {v0}, LKe1;->a()LNe1;
-
     .line 100
+    const-string v5, "quota"
+
     .line 101
     .line 102
-    move-result-object v4
+    invoke-static {v1, v2, v5}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 103
-    iget-object v4, v4, LNe1;->s:LXfi;
-
     .line 104
     .line 105
-    invoke-virtual {v4}, LXfi;->getValue()Ljava/lang/Object;
+    move-result-object v1
 
     .line 106
+    const-string v2, "maxPri"
+
     .line 107
     .line 108
-    move-result-object v4
+    iget v5, v4, Lih1;->e:I
 
     .line 109
-    check-cast v4, Ljava/lang/Number;
-
     .line 110
-    .line 111
-    invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
+    invoke-static {v5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
+    .line 111
     .line 112
     .line 113
+    move-result-object v5
+
     .line 114
-    move-result v4
+    invoke-virtual {v1, v2, v5}, LV7c;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 115
-    if-gt p1, v4, :cond_3
-
     .line 116
     .line 117
-    const/4 v1, 0x1
+    const-string v2, "spectrum"
 
     .line 118
-    :cond_3
-    if-nez v3, :cond_4
-
     .line 119
+    iget-object v5, v4, Lih1;->d:LMi1;
+
     .line 120
-    if-eqz v1, :cond_6
-
     .line 121
-    .line 122
-    :cond_4
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+    iget-boolean v5, v5, LMi1;->X:Z
 
+    .line 122
     .line 123
+    invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 124
     .line 125
-    move-result p1
-
     .line 126
-    if-ne p1, v5, :cond_5
+    move-result-object v5
 
     .line 127
-    .line 128
-    invoke-virtual {v0}, LKe1;->a()LNe1;
+    invoke-virtual {v1, v2, v5}, LV7c;->a(Ljava/lang/String;Ljava/lang/Boolean;)V
 
+    .line 128
     .line 129
     .line 130
-    .line 131
-    move-result-object p1
+    iget-object v2, v0, LIe1;->c:LQ26;
 
+    .line 131
     .line 132
-    iget-object p1, p1, LNe1;->j:LXfi;
+    invoke-virtual {v2}, LQ26;->get()Ljava/lang/Object;
 
     .line 133
     .line 134
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 135
-    .line 136
-    .line 137
-    move-result-object p1
+    move-result-object v2
 
+    .line 136
+    check-cast v2, LcH8;
+
+    .line 137
     .line 138
-    check-cast p1, Ljava/lang/Number;
+    iget-wide v5, v4, Lih1;->i:J
 
     .line 139
     .line 140
-    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+    invoke-interface {v2, v1, v5, v6}, LcH8;->f(LV7c;J)V
 
     .line 141
     .line 142
     .line 143
-    move-result-wide v3
+    iget-wide v5, v4, Lih1;->i:J
 
     .line 144
-    goto :goto_2
-
     .line 145
-    :cond_5
-    invoke-virtual {v0}, LKe1;->a()LNe1;
+    invoke-interface {v2, v1, v5, v6}, LcH8;->d(LV7c;J)V
 
     .line 146
     .line 147
     .line 148
-    move-result-object p1
+    invoke-virtual {v0}, LIe1;->b()Lkh1;
 
     .line 149
-    invoke-virtual {p1}, LNe1;->a()J
-
     .line 150
     .line 151
+    move-result-object v1
+
     .line 152
-    move-result-wide v3
+    check-cast v1, Llh1;
 
     .line 153
-    :goto_2
-    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
-
     .line 154
+    iget-object v1, v1, Llh1;->e:Ljava/util/concurrent/atomic/AtomicLong;
+
     .line 155
     .line 156
-    invoke-virtual {v0, v3, v4}, LKe1;->d(J)V
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     .line 157
     .line 158
     .line 159
-    :cond_6
-    :goto_3
-    return-void
+    move-result-wide v1
 
     .line 160
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
+    invoke-virtual {v4}, Lih1;->a()J
 
     .line 161
     .line 162
-    sget p1, LPe1;->a:I
-
     .line 163
+    goto :goto_0
+
     .line 164
-    iget-object p1, v0, LKe1;->k:Ljava/util/concurrent/atomic/AtomicInteger;
+    :catchall_0
+    move-exception v1
 
     .line 165
+    goto :goto_1
+
     .line 166
-    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+    :cond_1
+    sget v1, LJe1;->a:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 167
     .line 168
+    :cond_2
+    monitor-exit v0
+
     .line 169
-    return-void
+    iget-object v0, p0, LHe1;->c:LIe1;
 
     .line 170
-    nop
-
     .line 171
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    invoke-virtual {v0}, LIe1;->a()V
+
+    .line 172
+    .line 173
+    .line 174
+    return-void
+
+    .line 175
+    :goto_1
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 176
+    throw v1
 .end method

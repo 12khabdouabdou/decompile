@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lfqc;
+    proxyClass = LAFc;
     schema = "\'handleWalkingTap\':f|m|(),\'handleDrivingTap\':f|m|(),\'handleSeeMoreTap\':f|m|()"
     typeReferences = {}
 .end annotation

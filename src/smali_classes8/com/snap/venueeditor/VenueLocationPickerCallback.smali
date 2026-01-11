@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LLwj;
+    proxyClass = LYVj;
     schema = "\'getUpdatedBoundingBox\':f?|m|(f(a<d@>)),\'getUpdatedLocation\':f?|m|(f(a<d@>))"
     typeReferences = {}
 .end annotation
@@ -17,28 +17,28 @@
 
 # virtual methods
 .method public abstract getUpdatedBoundingBox(Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract getUpdatedLocation(Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

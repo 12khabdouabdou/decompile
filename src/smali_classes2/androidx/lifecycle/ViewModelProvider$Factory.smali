@@ -4,11 +4,11 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Class;)LyJj;
+.method public abstract a(Ljava/lang/Class;)Lb9k;
 .end method
 
-.method public abstract b(Ljava/lang/Class;Ledc;)LyJj;
+.method public abstract b(Ljava/lang/Class;LYrc;)Lb9k;
 .end method
 
-.method public abstract c(Lc23;Ledc;)LyJj;
+.method public abstract c(Lm43;LYrc;)Lb9k;
 .end method

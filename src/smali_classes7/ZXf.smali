@@ -1,272 +1,145 @@
 .class public final LZXf;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LaYf;
+.field public final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(LaYf;I)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LZXf;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LZXf;->b:LaYf;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LZXf;->a:Ljava/lang/Object;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    iget v0, p0, LZXf;->a:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, LZXf;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, LZXf;
+
+    .line 10
+    .line 11
+    iget-object v0, p0, LZXf;->a:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    iget-object p1, p1, LZXf;->a:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p1
+
+    .line 19
+    if-nez p1, :cond_2
+
+    .line 20
+    .line 21
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 22
+    return p1
+
+    .line 23
+    :cond_2
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 24
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LZXf;->a:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LZXf;->b:LaYf;
+    move-result v0
 
     .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SearchserviceClientUserResult(users="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
-    iget-object v0, v0, LaYf;->h:LfY4;
+    iget-object v1, p0, LZXf;->a:Ljava/lang/Object;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, LfY4;->get()Ljava/lang/Object;
+    const-string v2, ")"
 
     .line 11
     .line 12
+    invoke-static {v0, v1, v2}, Lf8d;->d(Ljava/lang/StringBuilder;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
+
     .line 13
-    move-result-object v0
-
     .line 14
-    check-cast v0, LpC3;
-
     .line 15
+    move-result-object v0
+
     .line 16
-    sget-object v1, LIXf;->x0:LIXf;
-
-    .line 17
-    .line 18
-    invoke-interface {v0, v1}, LpC3;->a(LBI3;)Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
     return-object v0
-
-    .line 27
-    :pswitch_0
-    iget-object v0, p0, LZXf;->b:LaYf;
-
-    .line 28
-    .line 29
-    iget-object v0, v0, LaYf;->h:LfY4;
-
-    .line 30
-    .line 31
-    invoke-virtual {v0}, LfY4;->get()Ljava/lang/Object;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v0
-
-    .line 35
-    check-cast v0, LpC3;
-
-    .line 36
-    .line 37
-    sget-object v1, LIXf;->w0:LIXf;
-
-    .line 38
-    .line 39
-    invoke-interface {v0, v1}, LpC3;->a(LBI3;)Z
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v0
-
-    .line 43
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    return-object v0
-
-    .line 48
-    :pswitch_1
-    iget-object v0, p0, LZXf;->b:LaYf;
-
-    .line 49
-    .line 50
-    iget-object v0, v0, LaYf;->h:LfY4;
-
-    .line 51
-    .line 52
-    invoke-virtual {v0}, LfY4;->get()Ljava/lang/Object;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    check-cast v0, LpC3;
-
-    .line 57
-    .line 58
-    sget-object v1, LIXf;->B0:LIXf;
-
-    .line 59
-    .line 60
-    invoke-interface {v0, v1}, LpC3;->a(LBI3;)Z
-
-    .line 61
-    .line 62
-    .line 63
-    move-result v0
-
-    .line 64
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object v0
-
-    .line 68
-    return-object v0
-
-    .line 69
-    :pswitch_2
-    iget-object v0, p0, LZXf;->b:LaYf;
-
-    .line 70
-    .line 71
-    iget-object v0, v0, LaYf;->g:LfY4;
-
-    .line 72
-    .line 73
-    invoke-virtual {v0}, LfY4;->get()Ljava/lang/Object;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object v0
-
-    .line 77
-    check-cast v0, LNA8;
-
-    .line 78
-    .line 79
-    const-class v1, Llbd;
-
-    .line 80
-    .line 81
-    invoke-static {v1}, LsJe;->a(Ljava/lang/Class;)Lc23;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v1
-
-    .line 85
-    invoke-interface {v0, v1}, LNA8;->g(Lc23;)LjKe;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object v0
-
-    .line 89
-    return-object v0
-
-    .line 90
-    :pswitch_3
-    iget-object v0, p0, LZXf;->b:LaYf;
-
-    .line 91
-    .line 92
-    iget-object v0, v0, LaYf;->h:LfY4;
-
-    .line 93
-    .line 94
-    invoke-virtual {v0}, LfY4;->get()Ljava/lang/Object;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v0
-
-    .line 98
-    check-cast v0, LpC3;
-
-    .line 99
-    .line 100
-    sget-object v1, LIXf;->A0:LIXf;
-
-    .line 101
-    .line 102
-    invoke-interface {v0, v1}, LpC3;->a(LBI3;)Z
-
-    .line 103
-    .line 104
-    .line 105
-    move-result v0
-
-    .line 106
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 107
-    .line 108
-    .line 109
-    move-result-object v0
-
-    .line 110
-    return-object v0
-
-    .line 111
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

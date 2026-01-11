@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LCLb;
+.implements LTZb;
 
 
 # direct methods
@@ -44,14 +44,14 @@
 
     invoke-direct {p1, p2, p3}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(IZ)V
 
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(LfLb;)V
+.method public final b(LwZb;)V
     .locals 0
 
     .line 1

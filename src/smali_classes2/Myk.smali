@@ -1,96 +1,359 @@
 .class public final LMyk;
-.super LI3;
+.super LSeb;
 .source "SourceFile"
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "LMyk;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
 # instance fields
-.field public a:Ljava/lang/String;
+.field public final b:LuAk;
 
-.field public b:Ljava/lang/String;
+.field public final synthetic c:Ltzk;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Ltzk;LuAk;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Ly8k;
+    iput-object p1, p0, LMyk;->c:Ltzk;
 
     .line 2
     .line 3
-    const/4 v1, 0x2
+    const/4 p1, 0x2
 
     .line 4
-    invoke-direct {v0, v1}, Ly8k;-><init>(I)V
+    invoke-direct {p0, p1}, LSeb;-><init>(I)V
 
     .line 5
     .line 6
     .line 7
-    sput-object v0, LMyk;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
+    .line 10
+    iput-object p2, p0, LMyk;->b:LuAk;
+
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
+.method public final clear()V
+    .locals 3
 
     .line 1
-    const/16 p2, 0x4f45
+    invoke-virtual {p0}, LMyk;->iterator()Ljava/util/Iterator;
 
     .line 2
     .line 3
-    invoke-static {p2, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
+    .line 4
+    move-result-object v0
+
+    .line 5
+    :goto_0
+    move-object v1, v0
+
+    .line 6
+    check-cast v1, Lv3;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Lv3;->hasNext()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v2
+
+    .line 12
+    if-eqz v2, :cond_0
+
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Lv3;->next()Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v1}, Lv3;->remove()V
+
+    .line 18
+    .line 19
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    return-void
+.end method
+
+.method public final contains(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LuAk;->containsKey(Ljava/lang/Object;)Z
 
     .line 4
     .line 5
     .line 6
-    move-result p2
+    move-result p1
 
     .line 7
-    const/4 v0, 0x2
+    return p1
+.end method
+
+.method public final containsAll(Ljava/util/Collection;)Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LuAk;->keySet()Ljava/util/Set;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-interface {v0, p1}, Ljava/util/Set;->containsAll(Ljava/util/Collection;)Z
 
     .line 8
-    iget-object v1, p0, LMyk;->a:Ljava/lang/String;
-
     .line 9
     .line 10
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    move-result p1
 
     .line 11
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    if-eq p0, p1, :cond_1
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, LuAk;->keySet()Ljava/util/Set;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 10
+    .line 11
     .line 12
+    move-result p1
+
     .line 13
-    const/4 v0, 0x3
+    if-eqz p1, :cond_0
 
     .line 14
-    iget-object v1, p0, LMyk;->b:Ljava/lang/String;
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 17
+    return p1
+
+    .line 18
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    .line 19
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LuAk;->keySet()Ljava/util/Set;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    return v0
+.end method
+
+.method public final isEmpty()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LuAk;->isEmpty()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final iterator()Ljava/util/Iterator;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LuAk;->entrySet()Ljava/util/Set;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    new-instance v1, Lv3;
+
+    .line 12
+    .line 13
+    const/4 v2, 0x3
+
+    .line 14
+    invoke-direct {v1, p0, v0, v2}, Lv3;-><init>(Ljava/util/AbstractSet;Ljava/util/Iterator;I)V
 
     .line 15
     .line 16
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    .line 17
+    return-object v1
+.end method
 
+.method public final remove(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LuAk;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Ljava/util/Collection;
+
+    .line 8
+    .line 9
+    if-eqz p1, :cond_0
+
+    .line 10
+    .line 11
+    invoke-interface {p1}, Ljava/util/Collection;->size()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    invoke-interface {p1}, Ljava/util/Collection;->clear()V
+
+    .line 16
     .line 17
     .line 18
-    .line 19
-    invoke-static {p2, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
+    iget-object p1, p0, LMyk;->c:Ltzk;
 
+    .line 19
     .line 20
+    iget v1, p1, Ltzk;->t:I
+
     .line 21
     .line 22
-    return-void
+    sub-int/2addr v1, v0
+
+    .line 23
+    iput v1, p1, Ltzk;->t:I
+
+    .line 24
+    .line 25
+    if-lez v0, :cond_0
+
+    .line 26
+    .line 27
+    const/4 p1, 0x1
+
+    .line 28
+    return p1
+
+    .line 29
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 30
+    return p1
+.end method
+
+.method public final size()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMyk;->b:LuAk;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LuAk;->size()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
 .end method

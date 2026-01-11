@@ -1,111 +1,177 @@
-.class public final Ldcf;
-.super Ljava/lang/Object;
+.class public final enum Ldcf;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
 
+# static fields
+.field public static final synthetic X:[Ldcf;
 
-# instance fields
-.field public final synthetic X:J
+.field public static final enum a:Ldcf;
 
-.field public final synthetic Y:Z
+.field public static final enum b:Ldcf;
 
-.field public final synthetic a:Ljava/lang/String;
+.field public static final enum c:Ldcf;
 
-.field public final synthetic b:LiE2;
-
-.field public final synthetic c:Z
-
-.field public final synthetic t:Z
+.field public static final enum t:Ldcf;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;LiE2;ZZJZ)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x3
 
     .line 2
+    const/4 v1, 0x2
+
     .line 3
+    const/4 v2, 0x1
+
     .line 4
-    iput-object p1, p0, Ldcf;->a:Ljava/lang/String;
+    const/4 v3, 0x0
 
     .line 5
+    new-instance v4, Ldcf;
+
     .line 6
-    iput-object p2, p0, Ldcf;->b:LiE2;
-
     .line 7
+    const-string v5, "UNKNOWN"
+
     .line 8
-    iput-boolean p3, p0, Ldcf;->c:Z
-
     .line 9
-    .line 10
-    iput-boolean p4, p0, Ldcf;->t:Z
+    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 10
     .line 11
     .line 12
-    iput-wide p5, p0, Ldcf;->X:J
+    sput-object v4, Ldcf;->a:Ldcf;
 
     .line 13
     .line 14
-    iput-boolean p7, p0, Ldcf;->Y:Z
+    new-instance v5, Ldcf;
 
     .line 15
     .line 16
-    return-void
-.end method
-
-
-# virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
-
-    .line 1
-    move-object v0, p1
-
-    .line 2
-    check-cast v0, LaJg;
-
-    .line 3
-    .line 4
-    iget-wide v5, p0, Ldcf;->X:J
-
-    .line 5
-    .line 6
-    iget-boolean v7, p0, Ldcf;->Y:Z
-
-    .line 7
-    .line 8
-    iget-object v1, p0, Ldcf;->a:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    iget-object v2, p0, Ldcf;->b:LiE2;
-
-    .line 11
-    .line 12
-    iget-boolean v3, p0, Ldcf;->c:Z
-
-    .line 13
-    .line 14
-    iget-boolean v4, p0, Ldcf;->t:Z
-
-    .line 15
-    .line 16
-    invoke-interface/range {v0 .. v7}, LaJg;->k(Ljava/lang/String;LiE2;ZZJZ)V
+    const-string v6, "VIDEO"
 
     .line 17
     .line 18
-    .line 19
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 19
     .line 20
     .line 21
-    check-cast p1, Lio/reactivex/rxjava3/core/Completable;
+    sput-object v5, Ldcf;->b:Ldcf;
 
     .line 22
     .line 23
-    return-object p1
+    new-instance v6, Ldcf;
+
+    .line 24
+    .line 25
+    const-string v7, "AUDIO"
+
+    .line 26
+    .line 27
+    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 28
+    .line 29
+    .line 30
+    sput-object v6, Ldcf;->c:Ldcf;
+
+    .line 31
+    .line 32
+    new-instance v7, Ldcf;
+
+    .line 33
+    .line 34
+    const-string v8, "IMAGE"
+
+    .line 35
+    .line 36
+    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 37
+    .line 38
+    .line 39
+    sput-object v7, Ldcf;->t:Ldcf;
+
+    .line 40
+    .line 41
+    const/4 v8, 0x4
+
+    .line 42
+    new-array v8, v8, [Ldcf;
+
+    .line 43
+    .line 44
+    aput-object v4, v8, v3
+
+    .line 45
+    .line 46
+    aput-object v5, v8, v2
+
+    .line 47
+    .line 48
+    aput-object v6, v8, v1
+
+    .line 49
+    .line 50
+    aput-object v7, v8, v0
+
+    .line 51
+    .line 52
+    sput-object v8, Ldcf;->X:[Ldcf;
+
+    .line 53
+    .line 54
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Ldcf;
+    .locals 1
+
+    .line 1
+    const-class v0, Ldcf;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Ldcf;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Ldcf;
+    .locals 1
+
+    .line 1
+    sget-object v0, Ldcf;->X:[Ldcf;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Ldcf;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

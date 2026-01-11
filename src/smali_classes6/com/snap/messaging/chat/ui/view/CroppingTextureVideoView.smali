@@ -24,7 +24,7 @@
     move-object v1, p1
 
     .line 1
-    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     .line 2
     new-instance p1, Landroid/graphics/Matrix;
@@ -52,7 +52,7 @@
     move-object v2, p2
 
     .line 3
-    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     .line 4
     new-instance p1, Landroid/graphics/Matrix;
@@ -82,15 +82,15 @@
 
 
 # virtual methods
-.method public final B(FF)V
+.method public final A(FF)V
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    iget v1, v0, LkEj;->Z:I
+    iget v1, v0, LC3k;->Z:I
 
     .line 4
     .line 5
@@ -98,7 +98,7 @@
 
     .line 6
     .line 7
-    iget v0, v0, LkEj;->e0:I
+    iget v0, v0, LC3k;->e0:I
 
     .line 8
     .line 9
@@ -242,11 +242,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    iget v1, v0, LkEj;->e0:I
+    iget v1, v0, LC3k;->e0:I
 
     .line 4
     .line 5
@@ -258,7 +258,7 @@
     move-result p2
 
     .line 9
-    iget v0, v0, LkEj;->Z:I
+    iget v0, v0, LC3k;->Z:I
 
     .line 10
     .line 11
@@ -276,7 +276,7 @@
     int-to-float v1, p2
 
     .line 17
-    invoke-virtual {p0, v0, v1}, Lcom/snap/messaging/chat/ui/view/CroppingTextureVideoView;->B(FF)V
+    invoke-virtual {p0, v0, v1}, Lcom/snap/messaging/chat/ui/view/CroppingTextureVideoView;->A(FF)V
 
     .line 18
     .line 19
@@ -342,7 +342,7 @@
     int-to-float v0, v0
 
     .line 11
-    invoke-virtual {p0, p1, v0}, Lcom/snap/messaging/chat/ui/view/CroppingTextureVideoView;->B(FF)V
+    invoke-virtual {p0, p1, v0}, Lcom/snap/messaging/chat/ui/view/CroppingTextureVideoView;->A(FF)V
 
     .line 12
     .line 13

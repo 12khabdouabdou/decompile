@@ -7,16 +7,16 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LZY8;
+    proxyClass = LI69;
     schema = "\'getViewStates\':f|m, w|(a<s>, f|s|(a<r:\'[0]\'>, s?)),\'observeViewStatesForStoryIds\':f?|m|(a<s>, f(a<r:\'[0]\'>)): r:\'[1]\',\'observeViewStates\':f?|m|(a<r:\'[2]\'>, f(a<r:\'[0]\'>)): r:\'[1]\',\'observeViewState\':f?|m|(a<r:\'[2]\'>, a<r:\'[3]\'>, f(a<r:\'[0]\'>, a<r:\'[4]\'>)): r:\'[1]\'"
     typeReferences = {
-        LQZh;,
+        Lmoi;,
         Lcom/snap/composer/foundation/Cancelable;,
-        LyRh;,
-        LNge;,
-        LS0i;
+        LNfi;,
+        Llye;,
+        Lqpi;
     }
 .end annotation
 
@@ -36,46 +36,43 @@
 .end method
 
 .method public abstract observeViewState(Ljava/util/List;Ljava/util/List;Lkotlin/jvm/functions/Function2;)Lcom/snap/composer/foundation/Cancelable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "LyRh;",
+            "LNfi;",
             ">;",
             "Ljava/util/List<",
-            "LNge;",
+            "Llye;",
             ">;",
             "Lkotlin/jvm/functions/Function2;",
             ")",
             "Lcom/snap/composer/foundation/Cancelable;"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract observeViewStates(Ljava/util/List;Lkotlin/jvm/functions/Function1;)Lcom/snap/composer/foundation/Cancelable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "LyRh;",
+            "LNfi;",
             ">;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/composer/foundation/Cancelable;"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract observeViewStatesForStoryIds(Ljava/util/List;Lkotlin/jvm/functions/Function1;)Lcom/snap/composer/foundation/Cancelable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -86,6 +83,9 @@
             ")",
             "Lcom/snap/composer/foundation/Cancelable;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

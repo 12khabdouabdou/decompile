@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lzc8;
+    proxyClass = LUi8;
     schema = "\'generateImageFromPrompt\':f|m|(s, r?:\'[0]\'): g<c>:\'[1]\'<r:\'[2]\'>"
     typeReferences = {
         Lcom/snap/modules/generative_ai_camera_mode/GenerativeAISnapParameters;,

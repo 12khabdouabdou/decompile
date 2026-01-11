@@ -73,7 +73,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -81,7 +81,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->c()Z
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
 
     .line 4
     .line 5
@@ -226,7 +226,7 @@
 
     .line 16
     .line 17
-    invoke-interface {v4, p1, v3}, Lio/reactivex/rxjava3/functions/BiFunction;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v4, p1, v3}, Lio/reactivex/rxjava3/functions/BiFunction;->apply(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -377,7 +377,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 4
     .line 5

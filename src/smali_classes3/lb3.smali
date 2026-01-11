@@ -1,928 +1,790 @@
 .class public final Llb3;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lcom/snap/composer/cof/ICOFStore;
 
 
 # instance fields
-.field public final synthetic A0:[B
+.field public final X:LJp0;
 
-.field public final synthetic B0:Z
+.field public final a:LOF3;
 
-.field public final synthetic C0:Z
+.field public final b:LI23;
 
-.field public final synthetic D0:[B
+.field public final c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final synthetic E0:J
-
-.field public final synthetic F0:Ljava/lang/String;
-
-.field public final synthetic G0:J
-
-.field public final synthetic H0:J
-
-.field public final synthetic I0:J
-
-.field public final synthetic J0:Ljava/lang/String;
-
-.field public final synthetic K0:J
-
-.field public final synthetic L0:[B
-
-.field public final synthetic X:Ljava/lang/String;
-
-.field public final synthetic Y:Ljava/lang/String;
-
-.field public final synthetic Z:Ljava/lang/String;
-
-.field public final synthetic a:Ljava/lang/String;
-
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic c:Ljava/lang/String;
-
-.field public final synthetic e0:Ljava/lang/String;
-
-.field public final synthetic f0:Ljava/lang/String;
-
-.field public final synthetic g0:Ljava/lang/String;
-
-.field public final synthetic h0:Ljava/lang/String;
-
-.field public final synthetic i0:Ljava/lang/String;
-
-.field public final synthetic j0:Ljava/lang/String;
-
-.field public final synthetic k0:Ljava/lang/String;
-
-.field public final synthetic l0:Ljava/lang/String;
-
-.field public final synthetic m0:Ljava/lang/String;
-
-.field public final synthetic n0:J
-
-.field public final synthetic o0:J
-
-.field public final synthetic p0:J
-
-.field public final synthetic q0:Z
-
-.field public final synthetic r0:Z
-
-.field public final synthetic s0:J
-
-.field public final synthetic t:Ljava/lang/String;
-
-.field public final synthetic t0:Z
-
-.field public final synthetic u0:J
-
-.field public final synthetic v0:Ljava/lang/String;
-
-.field public final synthetic w0:Ljava/lang/String;
-
-.field public final synthetic x0:Ljava/lang/String;
-
-.field public final synthetic y0:Z
-
-.field public final synthetic z0:Ljava/lang/String;
+.field public final t:LnJe;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJJZZJZJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;[BZZ[BJLjava/lang/String;JJJLjava/lang/String;J[B)V
+.method public constructor <init>(LOF3;LI23;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Llb3;->a:Ljava/lang/String;
-
-    iput-object p2, p0, Llb3;->b:Ljava/lang/String;
-
-    iput-object p3, p0, Llb3;->c:Ljava/lang/String;
-
-    iput-object p4, p0, Llb3;->t:Ljava/lang/String;
-
-    iput-object p5, p0, Llb3;->X:Ljava/lang/String;
-
-    iput-object p6, p0, Llb3;->Y:Ljava/lang/String;
-
-    iput-object p7, p0, Llb3;->Z:Ljava/lang/String;
-
-    iput-object p8, p0, Llb3;->e0:Ljava/lang/String;
-
-    iput-object p9, p0, Llb3;->f0:Ljava/lang/String;
-
-    iput-object p10, p0, Llb3;->g0:Ljava/lang/String;
-
-    iput-object p11, p0, Llb3;->h0:Ljava/lang/String;
-
-    iput-object p12, p0, Llb3;->i0:Ljava/lang/String;
-
-    iput-object p13, p0, Llb3;->j0:Ljava/lang/String;
-
-    iput-object p14, p0, Llb3;->k0:Ljava/lang/String;
-
-    iput-object p15, p0, Llb3;->l0:Ljava/lang/String;
-
-    move-object/from16 p1, p16
-
-    iput-object p1, p0, Llb3;->m0:Ljava/lang/String;
-
-    move-wide/from16 p1, p17
-
-    iput-wide p1, p0, Llb3;->n0:J
-
-    move-wide/from16 p1, p19
-
-    iput-wide p1, p0, Llb3;->o0:J
-
-    move-wide/from16 p1, p21
-
-    iput-wide p1, p0, Llb3;->p0:J
-
-    move/from16 p1, p23
-
-    iput-boolean p1, p0, Llb3;->q0:Z
-
-    move/from16 p1, p24
-
-    iput-boolean p1, p0, Llb3;->r0:Z
-
-    move-wide/from16 p1, p25
-
-    iput-wide p1, p0, Llb3;->s0:J
-
-    move/from16 p1, p27
-
-    iput-boolean p1, p0, Llb3;->t0:Z
-
-    move-wide/from16 p1, p28
-
-    iput-wide p1, p0, Llb3;->u0:J
-
-    move-object/from16 p1, p30
-
-    iput-object p1, p0, Llb3;->v0:Ljava/lang/String;
-
-    move-object/from16 p1, p31
-
-    iput-object p1, p0, Llb3;->w0:Ljava/lang/String;
-
-    move-object/from16 p1, p32
-
-    iput-object p1, p0, Llb3;->x0:Ljava/lang/String;
-
-    move/from16 p1, p33
-
-    iput-boolean p1, p0, Llb3;->y0:Z
-
-    move-object/from16 p1, p34
-
-    iput-object p1, p0, Llb3;->z0:Ljava/lang/String;
-
-    move-object/from16 p1, p35
-
-    iput-object p1, p0, Llb3;->A0:[B
-
-    move/from16 p1, p36
-
-    iput-boolean p1, p0, Llb3;->B0:Z
-
-    move/from16 p1, p37
-
-    iput-boolean p1, p0, Llb3;->C0:Z
-
-    move-object/from16 p1, p38
-
-    iput-object p1, p0, Llb3;->D0:[B
-
-    move-wide/from16 p1, p39
-
-    iput-wide p1, p0, Llb3;->E0:J
-
-    move-object/from16 p1, p41
-
-    iput-object p1, p0, Llb3;->F0:Ljava/lang/String;
-
-    move-wide/from16 p1, p42
-
-    iput-wide p1, p0, Llb3;->G0:J
-
-    move-wide/from16 p1, p44
-
-    iput-wide p1, p0, Llb3;->H0:J
-
-    move-wide/from16 p1, p46
-
-    iput-wide p1, p0, Llb3;->I0:J
-
-    move-object/from16 p1, p48
-
-    iput-object p1, p0, Llb3;->J0:Ljava/lang/String;
-
-    move-wide/from16 p1, p49
-
-    iput-wide p1, p0, Llb3;->K0:J
-
-    move-object/from16 p1, p51
-
-    iput-object p1, p0, Llb3;->L0:[B
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Llb3;->a:LOF3;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Llb3;->b:LI23;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Llb3;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 9
+    .line 10
+    sget-object p1, Lpb1;->Z:Lpb1;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 13
+    .line 14
+    .line 15
+    new-instance p2, Lnp0;
+
+    .line 16
+    .line 17
+    const-string p3, "CoFStoreImpl"
+
+    .line 18
+    .line 19
+    invoke-direct {p2, p1, p3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance p1, LnJe;
+
+    .line 23
+    .line 24
+    invoke-direct {p1, p2}, LnJe;-><init>(Lnp0;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object p1, p0, Llb3;->t:LnJe;
+
+    .line 28
+    .line 29
+    invoke-static {p3}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 30
+    .line 31
+    .line 32
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 33
+    .line 34
+    iput-object p1, p0, Llb3;->X:LJp0;
+
+    .line 35
+    .line 36
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final getBoolAsyncFor(Ljava/lang/String;ZLkotlin/jvm/functions/Function1;)V
+    .locals 4
 
     .line 1
-    check-cast p1, LxR;
+    new-instance v0, LIH6;
 
     .line 2
     .line 3
-    const/4 v0, 0x0
+    new-instance v1, LbM3;
 
     .line 4
-    iget-object v1, p0, Llb3;->a:Ljava/lang/String;
+    .line 5
+    sget-object v2, LeM3;->a:LeM3;
+
+    .line 6
+    .line 7
+    invoke-static {p2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v3
+
+    .line 11
+    invoke-direct {v1, v2, v3}, LbM3;-><init>(LeM3;Ljava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    sget-object v2, LaM3;->p2:LaM3;
+
+    .line 15
+    .line 16
+    invoke-direct {v0, v2, v1, p1}, LIH6;-><init>(LaM3;LbM3;Ljava/lang/String;)V
+
+    .line 17
+    .line 18
+    .line 19
+    iget-object p1, p0, Llb3;->a:LOF3;
+
+    .line 20
+    .line 21
+    invoke-interface {p1, v0}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    iget-object v0, p0, Llb3;->t:LnJe;
+
+    .line 26
+    .line 27
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 32
+    .line 33
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 34
+    .line 35
+    .line 36
+    new-instance p1, LWi;
+
+    .line 37
+    .line 38
+    const/16 v0, 0xa
+
+    .line 39
+    .line 40
+    invoke-direct {p1, v0, p3}, LWi;-><init>(ILkotlin/jvm/functions/Function1;)V
+
+    .line 41
+    .line 42
+    .line 43
+    new-instance v0, LOs;
+
+    .line 44
+    .line 45
+    const/16 v2, 0x8
+
+    .line 46
+    .line 47
+    invoke-direct {v0, p0, p3, p2, v2}, LOs;-><init>(Ljava/lang/Object;Ljava/lang/Object;ZI)V
+
+    .line 48
+    .line 49
+    .line 50
+    iget-object p2, p0, Llb3;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 51
+    .line 52
+    invoke-virtual {v1, p1, v0, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 53
+    .line 54
+    .line 55
+    return-void
+.end method
+
+.method public final getByteArrayAsyncFor(Ljava/lang/String;[BLkotlin/jvm/functions/Function1;)V
+    .locals 4
+
+    .line 1
+    new-instance v0, LIH6;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    new-array v1, v1, [B
 
     .line 5
     .line 6
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    new-instance v2, LbM3;
 
     .line 7
     .line 8
-    .line 9
-    const/4 v0, 0x1
+    const-class v3, [B
 
+    .line 9
     .line 10
-    iget-object v1, p0, Llb3;->b:Ljava/lang/String;
+    invoke-direct {v2, v1, v3}, LbM3;-><init>(Ljava/lang/Object;Ljava/lang/reflect/Type;)V
 
     .line 11
     .line 12
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    .line 13
+    sget-object v1, LaM3;->p2:LaM3;
+
+    .line 14
+    .line 15
+    invoke-direct {v0, v1, v2, p1}, LIH6;-><init>(LaM3;LbM3;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    sget-object p1, Lk33;->a:LQi7;
+
+    .line 19
+    .line 20
+    iget-object v1, p0, Llb3;->b:LI23;
+
+    .line 21
+    .line 22
+    invoke-interface {v1, v0, p1}, LI23;->z(LcM3;LQi7;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    iget-object v0, p0, Llb3;->t:LnJe;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    invoke-static {p1, p1, v0}, LzHa;->s(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/core/Single;LA36;)Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    new-instance v0, LWi;
+
+    .line 37
+    .line 38
+    const/16 v1, 0xc
+
+    .line 39
+    .line 40
+    invoke-direct {v0, v1, p3}, LWi;-><init>(ILkotlin/jvm/functions/Function1;)V
+
+    .line 41
+    .line 42
+    .line 43
+    new-instance v1, Lyc2;
+
+    .line 44
+    .line 45
+    const/16 v2, 0xd
+
+    .line 46
+    .line 47
+    invoke-direct {v1, p0, p3, p2, v2}, Lyc2;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 48
+    .line 49
+    .line 50
+    iget-object p2, p0, Llb3;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 51
+    .line 52
+    invoke-virtual {p1, v0, v1, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 53
+    .line 54
+    .line 55
+    return-void
+.end method
+
+.method public final getFloatAsyncFor(Ljava/lang/String;DLkotlin/jvm/functions/Function1;)V
+    .locals 8
+
+    .line 1
+    new-instance v0, LIH6;
+
+    .line 2
+    .line 3
+    double-to-float v1, p2
+
+    .line 4
+    new-instance v2, LbM3;
+
+    .line 5
+    .line 6
+    sget-object v3, LeM3;->t:LeM3;
+
+    .line 7
+    .line 8
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    invoke-direct {v2, v3, v1}, LbM3;-><init>(LeM3;Ljava/lang/Object;)V
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x2
+    sget-object v1, LaM3;->p2:LaM3;
 
     .line 16
-    iget-object v1, p0, Llb3;->c:Ljava/lang/String;
-
     .line 17
-    .line 18
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    invoke-direct {v0, v1, v2, p1}, LIH6;-><init>(LaM3;LbM3;Ljava/lang/String;)V
 
+    .line 18
     .line 19
     .line 20
-    .line 21
-    const/4 v0, 0x3
+    iget-object p1, p0, Llb3;->a:LOF3;
 
+    .line 21
     .line 22
-    iget-object v1, p0, Llb3;->t:Ljava/lang/String;
+    invoke-interface {p1, v0}, LOF3;->w(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 23
     .line 24
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
     .line 25
-    .line 26
-    .line 27
-    const/4 v0, 0x4
+    move-result-object p1
 
+    .line 26
+    iget-object v0, p0, Llb3;->t:LnJe;
+
+    .line 27
     .line 28
-    iget-object v1, p0, Llb3;->X:Ljava/lang/String;
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 29
     .line 30
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
     .line 31
-    .line 32
-    .line 33
-    const/4 v0, 0x5
+    move-result-object v0
 
+    .line 32
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 33
     .line 34
-    iget-object v1, p0, Llb3;->Y:Ljava/lang/String;
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 35
     .line 36
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
     .line 37
+    new-instance p1, LWi;
+
     .line 38
     .line 39
-    const/4 v0, 0x6
+    const/16 v0, 0xe
 
     .line 40
-    iget-object v1, p0, Llb3;->Z:Ljava/lang/String;
-
     .line 41
-    .line 42
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    invoke-direct {p1, v0, p4}, LWi;-><init>(ILkotlin/jvm/functions/Function1;)V
 
+    .line 42
     .line 43
     .line 44
-    .line 45
-    const/4 v0, 0x7
+    new-instance v2, Ljb3;
 
+    .line 45
     .line 46
-    iget-object v1, p0, Llb3;->e0:Ljava/lang/String;
+    const/4 v7, 0x0
 
     .line 47
+    move-object v3, p0
+
     .line 48
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    move-wide v5, p2
 
     .line 49
-    .line 50
-    .line 51
-    const/16 v0, 0x8
+    move-object v4, p4
 
+    .line 50
+    invoke-direct/range {v2 .. v7}, Ljb3;-><init>(Llb3;Lkotlin/jvm/functions/Function1;DI)V
+
+    .line 51
     .line 52
     .line 53
-    iget-object v1, p0, Llb3;->f0:Ljava/lang/String;
+    iget-object p2, v3, Llb3;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 54
     .line 55
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    invoke-virtual {v1, p1, v2, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 56
     .line 57
     .line 58
-    const/16 v0, 0x9
+    return-void
+.end method
 
-    .line 59
-    .line 60
-    iget-object v1, p0, Llb3;->g0:Ljava/lang/String;
+.method public final getIntAsyncFor(Ljava/lang/String;DLkotlin/jvm/functions/Function1;)V
+    .locals 8
 
-    .line 61
-    .line 62
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    .line 1
+    new-instance v0, LIH6;
 
-    .line 63
-    .line 64
-    .line 65
-    const/16 v0, 0xa
+    .line 2
+    .line 3
+    double-to-int v1, p2
 
-    .line 66
-    .line 67
-    iget-object v1, p0, Llb3;->h0:Ljava/lang/String;
+    .line 4
+    new-instance v2, LbM3;
 
-    .line 68
-    .line 69
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    .line 5
+    .line 6
+    sget-object v3, LeM3;->b:LeM3;
 
-    .line 70
-    .line 71
-    .line 72
-    const/16 v0, 0xb
+    .line 7
+    .line 8
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 73
-    .line 74
-    iget-object v1, p0, Llb3;->i0:Ljava/lang/String;
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
 
-    .line 75
-    .line 76
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    .line 12
+    invoke-direct {v2, v3, v1}, LbM3;-><init>(LeM3;Ljava/lang/Object;)V
 
-    .line 77
-    .line 78
-    .line 79
-    const/16 v0, 0xc
+    .line 13
+    .line 14
+    .line 15
+    sget-object v1, LaM3;->p2:LaM3;
 
-    .line 80
-    .line 81
-    iget-object v1, p0, Llb3;->j0:Ljava/lang/String;
+    .line 16
+    .line 17
+    invoke-direct {v0, v1, v2, p1}, LIH6;-><init>(LaM3;LbM3;Ljava/lang/String;)V
 
-    .line 82
-    .line 83
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    .line 18
+    .line 19
+    .line 20
+    iget-object p1, p0, Llb3;->a:LOF3;
 
-    .line 84
-    .line 85
-    .line 86
-    const/16 v0, 0xd
+    .line 21
+    .line 22
+    invoke-interface {p1, v0}, LOF3;->r(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
-    .line 87
-    .line 88
-    iget-object v1, p0, Llb3;->k0:Ljava/lang/String;
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
 
-    .line 89
-    .line 90
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    .line 26
+    iget-object v0, p0, Llb3;->t:LnJe;
 
-    .line 91
-    .line 92
-    .line 93
-    const/16 v0, 0xe
+    .line 27
+    .line 28
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
-    .line 94
-    .line 95
-    iget-object v1, p0, Llb3;->l0:Ljava/lang/String;
-
-    .line 96
-    .line 97
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 98
-    .line 99
-    .line 100
-    const/16 v0, 0xf
-
-    .line 101
-    .line 102
-    iget-object v1, p0, Llb3;->m0:Ljava/lang/String;
-
-    .line 103
-    .line 104
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 105
-    .line 106
-    .line 107
-    iget-wide v0, p0, Llb3;->n0:J
-
-    .line 108
-    .line 109
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 110
-    .line 111
-    .line 112
+    .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 113
-    const/16 v1, 0x10
+    .line 32
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
-    .line 114
-    .line 115
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
+    .line 33
+    .line 34
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 116
-    .line 117
-    .line 118
-    iget-wide v0, p0, Llb3;->o0:J
+    .line 35
+    .line 36
+    .line 37
+    new-instance p1, LWi;
 
-    .line 119
-    .line 120
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    .line 38
+    .line 39
+    const/16 v0, 0x10
 
-    .line 121
-    .line 122
-    .line 123
+    .line 40
+    .line 41
+    invoke-direct {p1, v0, p4}, LWi;-><init>(ILkotlin/jvm/functions/Function1;)V
+
+    .line 42
+    .line 43
+    .line 44
+    new-instance v2, Ljb3;
+
+    .line 45
+    .line 46
+    const/4 v7, 0x1
+
+    .line 47
+    move-object v3, p0
+
+    .line 48
+    move-wide v5, p2
+
+    .line 49
+    move-object v4, p4
+
+    .line 50
+    invoke-direct/range {v2 .. v7}, Ljb3;-><init>(Llb3;Lkotlin/jvm/functions/Function1;DI)V
+
+    .line 51
+    .line 52
+    .line 53
+    iget-object p2, v3, Llb3;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 54
+    .line 55
+    invoke-virtual {v1, p1, v2, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 56
+    .line 57
+    .line 58
+    return-void
+.end method
+
+.method public final getLongAsyncFor(Ljava/lang/String;DLkotlin/jvm/functions/Function1;)V
+    .locals 8
+
+    .line 1
+    new-instance v0, LIH6;
+
+    .line 2
+    .line 3
+    double-to-long v1, p2
+
+    .line 4
+    new-instance v3, LbM3;
+
+    .line 5
+    .line 6
+    sget-object v4, LeM3;->c:LeM3;
+
+    .line 7
+    .line 8
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    invoke-direct {v3, v4, v1}, LbM3;-><init>(LeM3;Ljava/lang/Object;)V
+
+    .line 13
+    .line 14
+    .line 15
+    sget-object v1, LaM3;->p2:LaM3;
+
+    .line 16
+    .line 17
+    invoke-direct {v0, v1, v3, p1}, LIH6;-><init>(LaM3;LbM3;Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iget-object p1, p0, Llb3;->a:LOF3;
+
+    .line 21
+    .line 22
+    invoke-interface {p1, v0}, LOF3;->y(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    iget-object v0, p0, Llb3;->t:LnJe;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 29
+    .line 30
+    .line 31
     move-result-object v0
 
-    .line 124
-    const/16 v1, 0x11
+    .line 32
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
-    .line 125
-    .line 126
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
+    .line 33
+    .line 34
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 127
-    .line 128
-    .line 129
-    iget-wide v0, p0, Llb3;->p0:J
+    .line 35
+    .line 36
+    .line 37
+    new-instance p1, LWi;
 
-    .line 130
-    .line 131
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    .line 38
+    .line 39
+    const/16 v0, 0x12
 
-    .line 132
-    .line 133
-    .line 134
+    .line 40
+    .line 41
+    invoke-direct {p1, v0, p4}, LWi;-><init>(ILkotlin/jvm/functions/Function1;)V
+
+    .line 42
+    .line 43
+    .line 44
+    new-instance v2, Ljb3;
+
+    .line 45
+    .line 46
+    const/4 v7, 0x2
+
+    .line 47
+    move-object v3, p0
+
+    .line 48
+    move-wide v5, p2
+
+    .line 49
+    move-object v4, p4
+
+    .line 50
+    invoke-direct/range {v2 .. v7}, Ljb3;-><init>(Llb3;Lkotlin/jvm/functions/Function1;DI)V
+
+    .line 51
+    .line 52
+    .line 53
+    iget-object p2, v3, Llb3;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 54
+    .line 55
+    invoke-virtual {v1, p1, v2, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 56
+    .line 57
+    .line 58
+    return-void
+.end method
+
+.method public final getStringAsyncFor(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+    .locals 3
+
+    .line 1
+    new-instance v0, LIH6;
+
+    .line 2
+    .line 3
+    new-instance v1, LbM3;
+
+    .line 4
+    .line 5
+    sget-object v2, LeM3;->Y:LeM3;
+
+    .line 6
+    .line 7
+    invoke-direct {v1, v2, p2}, LbM3;-><init>(LeM3;Ljava/lang/Object;)V
+
+    .line 8
+    .line 9
+    .line 10
+    sget-object v2, LaM3;->p2:LaM3;
+
+    .line 11
+    .line 12
+    invoke-direct {v0, v2, v1, p1}, LIH6;-><init>(LaM3;LbM3;Ljava/lang/String;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object p1, p0, Llb3;->a:LOF3;
+
+    .line 16
+    .line 17
+    invoke-interface {p1, v0}, LOF3;->n(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    iget-object v0, p0, Llb3;->t:LnJe;
+
+    .line 22
+    .line 23
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 24
+    .line 25
+    .line 26
     move-result-object v0
 
-    .line 135
-    const/16 v1, 0x12
-
-    .line 136
-    .line 137
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 138
-    .line 139
-    .line 140
-    iget-boolean v0, p0, Llb3;->q0:Z
-
-    .line 141
-    .line 142
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 143
-    .line 144
-    .line 145
-    move-result-object v0
-
-    .line 146
-    const/16 v1, 0x13
-
-    .line 147
-    .line 148
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
-    .line 149
-    .line 150
-    .line 151
-    iget-boolean v0, p0, Llb3;->r0:Z
-
-    .line 152
-    .line 153
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 154
-    .line 155
-    .line 156
-    move-result-object v0
-
-    .line 157
-    const/16 v1, 0x14
-
-    .line 158
-    .line 159
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
-    .line 160
-    .line 161
-    .line 162
-    iget-wide v0, p0, Llb3;->s0:J
-
-    .line 163
-    .line 164
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 165
-    .line 166
-    .line 167
-    move-result-object v0
-
-    .line 168
-    const/16 v1, 0x15
-
-    .line 169
-    .line 170
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 171
-    .line 172
-    .line 173
-    iget-boolean v0, p0, Llb3;->t0:Z
-
-    .line 174
-    .line 175
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 176
-    .line 177
-    .line 178
-    move-result-object v0
-
-    .line 179
-    const/16 v1, 0x16
-
-    .line 180
-    .line 181
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
-    .line 182
-    .line 183
-    .line 184
-    iget-wide v0, p0, Llb3;->u0:J
-
-    .line 185
-    .line 186
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 187
-    .line 188
-    .line 189
-    move-result-object v0
-
-    .line 190
-    const/16 v1, 0x17
-
-    .line 191
-    .line 192
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 193
-    .line 194
-    .line 195
-    const/16 v0, 0x18
-
-    .line 196
-    .line 197
-    iget-object v1, p0, Llb3;->v0:Ljava/lang/String;
-
-    .line 198
-    .line 199
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 200
-    .line 201
-    .line 202
-    const/16 v0, 0x19
-
-    .line 203
-    .line 204
-    iget-object v1, p0, Llb3;->w0:Ljava/lang/String;
-
-    .line 205
-    .line 206
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 207
-    .line 208
-    .line 209
-    const/16 v0, 0x1a
-
-    .line 210
-    .line 211
-    iget-object v1, p0, Llb3;->x0:Ljava/lang/String;
-
-    .line 212
-    .line 213
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 214
-    .line 215
-    .line 216
-    iget-boolean v0, p0, Llb3;->y0:Z
-
-    .line 217
-    .line 218
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 219
-    .line 220
-    .line 221
-    move-result-object v0
-
-    .line 222
-    const/16 v1, 0x1b
-
-    .line 223
-    .line 224
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
-    .line 225
-    .line 226
-    .line 227
-    const/16 v0, 0x1c
-
-    .line 228
-    .line 229
-    iget-object v1, p0, Llb3;->z0:Ljava/lang/String;
-
-    .line 230
-    .line 231
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 232
-    .line 233
-    .line 234
-    const/16 v0, 0x1d
-
-    .line 235
-    .line 236
-    iget-object v1, p0, Llb3;->A0:[B
-
-    .line 237
-    .line 238
-    invoke-interface {p1, v0, v1}, LxR;->j(I[B)V
-
-    .line 239
-    .line 240
-    .line 241
-    iget-boolean v0, p0, Llb3;->B0:Z
-
-    .line 242
-    .line 243
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 244
-    .line 245
-    .line 246
-    move-result-object v0
-
-    .line 247
-    const/16 v1, 0x1e
-
-    .line 248
-    .line 249
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
-    .line 250
-    .line 251
-    .line 252
-    iget-boolean v0, p0, Llb3;->C0:Z
-
-    .line 253
-    .line 254
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 255
-    .line 256
-    .line 257
-    move-result-object v0
-
-    .line 258
-    const/16 v1, 0x1f
-
-    .line 259
-    .line 260
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
-    .line 261
-    .line 262
-    .line 263
-    const-wide/16 v0, 0x0
-
-    .line 264
-    .line 265
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 266
-    .line 267
-    .line 268
-    move-result-object v0
-
-    .line 269
-    const/16 v1, 0x20
-
-    .line 270
-    .line 271
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 272
-    .line 273
-    .line 274
-    const/16 v0, 0x21
-
-    .line 275
-    .line 276
-    iget-object v1, p0, Llb3;->D0:[B
-
-    .line 277
-    .line 278
-    invoke-interface {p1, v0, v1}, LxR;->j(I[B)V
-
-    .line 279
-    .line 280
-    .line 281
-    iget-wide v0, p0, Llb3;->E0:J
-
-    .line 282
-    .line 283
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 284
-    .line 285
-    .line 286
-    move-result-object v0
-
-    .line 287
-    const/16 v1, 0x22
-
-    .line 288
-    .line 289
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 290
-    .line 291
-    .line 292
-    const/16 v0, 0x23
-
-    .line 293
-    .line 294
-    iget-object v1, p0, Llb3;->F0:Ljava/lang/String;
-
-    .line 295
-    .line 296
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 297
-    .line 298
-    .line 299
-    iget-wide v0, p0, Llb3;->G0:J
-
-    .line 300
-    .line 301
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 302
-    .line 303
-    .line 304
-    move-result-object v0
-
-    .line 305
-    const/16 v1, 0x24
-
-    .line 306
-    .line 307
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 308
-    .line 309
-    .line 310
-    iget-wide v0, p0, Llb3;->H0:J
-
-    .line 311
-    .line 312
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 313
-    .line 314
-    .line 315
-    move-result-object v0
-
-    .line 316
-    const/16 v1, 0x25
-
-    .line 317
-    .line 318
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 319
-    .line 320
-    .line 321
-    iget-wide v0, p0, Llb3;->I0:J
-
-    .line 322
-    .line 323
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 324
-    .line 325
-    .line 326
-    move-result-object v0
-
-    .line 327
-    const/16 v1, 0x26
-
-    .line 328
-    .line 329
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 330
-    .line 331
-    .line 332
-    const/16 v0, 0x27
-
-    .line 333
-    .line 334
-    iget-object v1, p0, Llb3;->J0:Ljava/lang/String;
-
-    .line 335
-    .line 336
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
-    .line 337
-    .line 338
-    .line 339
-    iget-wide v0, p0, Llb3;->K0:J
-
-    .line 340
-    .line 341
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 342
-    .line 343
-    .line 344
-    move-result-object v0
-
-    .line 345
-    const/16 v1, 0x28
-
-    .line 346
-    .line 347
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
-    .line 348
-    .line 349
-    .line 350
-    const/16 v0, 0x29
-
-    .line 351
-    .line 352
-    iget-object v1, p0, Llb3;->L0:[B
-
-    .line 353
-    .line 354
-    invoke-interface {p1, v0, v1}, LxR;->j(I[B)V
-
-    .line 355
-    .line 356
-    .line 357
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 358
-    .line 359
-    return-object p1
+    .line 27
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 28
+    .line 29
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 30
+    .line 31
+    .line 32
+    new-instance p1, LWi;
+
+    .line 33
+    .line 34
+    const/16 v0, 0x14
+
+    .line 35
+    .line 36
+    invoke-direct {p1, v0, p3}, LWi;-><init>(ILkotlin/jvm/functions/Function1;)V
+
+    .line 37
+    .line 38
+    .line 39
+    new-instance v0, Lyc2;
+
+    .line 40
+    .line 41
+    const/16 v2, 0xf
+
+    .line 42
+    .line 43
+    invoke-direct {v0, p0, p3, p2, v2}, Lyc2;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 44
+    .line 45
+    .line 46
+    iget-object p2, p0, Llb3;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 47
+    .line 48
+    invoke-virtual {v1, p1, v0, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 49
+    .line 50
+    .line 51
+    return-void
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, LR19;->a(Lcom/snap/composer/cof/ICOFStore;Lcom/snap/composer/utils/ComposerMarshaller;)I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p1
+
+    .line 5
+    return p1
 .end method

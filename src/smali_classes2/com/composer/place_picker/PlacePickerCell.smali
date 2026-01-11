@@ -1,10 +1,10 @@
 .class public final Lcom/composer/place_picker/PlacePickerCell;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'venueId\':s,\'title\':s,\'address\':s,\'cameFromSearch\':b,\'rank\':d,\'distanceFromCaptureLocation\':d@?,\'distanceString\':s?"
     typeReferences = {}

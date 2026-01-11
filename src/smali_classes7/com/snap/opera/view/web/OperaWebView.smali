@@ -68,7 +68,7 @@
     const/high16 p2, 0x40a00000    # 5.0f
 
     .line 8
-    invoke-static {p2, p1}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {p2, p1}, LTVd;->u(FLandroid/content/Context;)F
 
     move-result p1
 
@@ -143,15 +143,15 @@
     move-result-object v0
 
     .line 18
-    check-cast v0, Lem0;
+    check-cast v0, Luo0;
 
     .line 19
     .line 20
-    iget-object v0, v0, Lem0;->a:Lhm0;
+    iget-object v0, v0, Luo0;->a:Lxo0;
 
     .line 21
     .line 22
-    iget v1, v0, Lhm0;->c:I
+    iget v1, v0, Lxo0;->c:I
 
     .line 23
     .line 24
@@ -159,7 +159,7 @@
 
     .line 25
     .line 26
-    iget-boolean v1, v0, Lhm0;->j:Z
+    iget-boolean v1, v0, Lxo0;->j:Z
 
     .line 27
     .line 28
@@ -178,11 +178,11 @@
 
     .line 33
     :goto_1
-    iput-boolean v1, v0, Lhm0;->m:Z
+    iput-boolean v1, v0, Lxo0;->m:Z
 
     .line 34
     .line 35
-    iput-boolean v1, v0, Lhm0;->n:Z
+    iput-boolean v1, v0, Lxo0;->n:Z
 
     .line 36
     .line 37

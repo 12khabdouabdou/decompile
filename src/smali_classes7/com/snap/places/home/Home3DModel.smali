@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/home/Home3DModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'location\':r:\'[0]\',\'homeModelUrl\':s,\'angle\':d@?,\'scale\':d@?,\'homeAsset\':r?:\'[1]\'"
     typeReferences = {

@@ -29,7 +29,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILHr5;)V
+.method public synthetic constructor <init>(ILex5;)V
     .locals 0
 
     .line 1

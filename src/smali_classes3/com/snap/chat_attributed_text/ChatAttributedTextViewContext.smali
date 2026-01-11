@@ -1,22 +1,35 @@
 .class public final Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'obscureSubject\':g?<c>:\'[0]\'<b@>,\'onTapUrl\':f?(s),\'onTapPhoneNumber\':f?(s),\'onTapAddress\':f?(s),\'onTapMention\':f?(s),\'urlPreviewProvider\':r?:\'[1]\',\'messageSendingObservable\':g?<c>:\'[2]\'<b@>"
+    schema = "\'obscureSubject\':g?<c>:\'[0]\'<b@>,\'onTapUrl\':f?(s),\'onTapPhoneNumber\':f?(s),\'onTapAddress\':f?(s),\'onTapMention\':f?(s),\'urlPreviewProvider\':r?:\'[1]\',\'webViewFactory\':r?:\'[2]\',\'baseUrl\':s?,\'messageSendingObservable\':g?<c>:\'[3]\'<b@>,\'messageVisibilityObservable\':g?<c>:\'[3]\'<b@>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeSubject;,
         Lcom/snap/modules/url_preview/UrlPreviewProviding;,
+        Lcom/snap/composer/ViewFactory;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
 .end annotation
 
 
 # instance fields
+.field private _baseUrl:Ljava/lang/String;
+
 .field private _messageSendingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private _messageVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
@@ -70,6 +83,8 @@
 
 .field private _urlPreviewProvider:Lcom/snap/modules/url_preview/UrlPreviewProviding;
 
+.field private _webViewFactory:Lcom/snap/composer/ViewFactory;
+
 
 # direct methods
 .method public constructor <init>()V
@@ -99,12 +114,21 @@
     iput-object v0, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_urlPreviewProvider:Lcom/snap/modules/url_preview/UrlPreviewProviding;
 
     .line 8
+    iput-object v0, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_webViewFactory:Lcom/snap/composer/ViewFactory;
+
+    .line 9
+    iput-object v0, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_baseUrl:Ljava/lang/String;
+
+    .line 10
     iput-object v0, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_messageSendingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 11
+    iput-object v0, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_messageVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeSubject;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/snap/modules/url_preview/UrlPreviewProviding;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeSubject;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/snap/modules/url_preview/UrlPreviewProviding;Lcom/snap/composer/ViewFactory;Ljava/lang/String;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -117,35 +141,49 @@
             "Lkotlin/jvm/functions/Function1;",
             "Lkotlin/jvm/functions/Function1;",
             "Lcom/snap/modules/url_preview/UrlPreviewProviding;",
+            "Lcom/snap/composer/ViewFactory;",
+            "Ljava/lang/String;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/lang/Boolean;",
             ">;)V"
         }
     .end annotation
 
-    .line 9
+    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
+    .line 13
     iput-object p1, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_obscureSubject:Lcom/snap/composer/bridge_observables/BridgeSubject;
 
-    .line 11
+    .line 14
     iput-object p2, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_onTapUrl:Lkotlin/jvm/functions/Function1;
 
-    .line 12
+    .line 15
     iput-object p3, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_onTapPhoneNumber:Lkotlin/jvm/functions/Function1;
 
-    .line 13
+    .line 16
     iput-object p4, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_onTapAddress:Lkotlin/jvm/functions/Function1;
 
-    .line 14
+    .line 17
     iput-object p5, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_onTapMention:Lkotlin/jvm/functions/Function1;
 
-    .line 15
+    .line 18
     iput-object p6, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_urlPreviewProvider:Lcom/snap/modules/url_preview/UrlPreviewProviding;
 
-    .line 16
-    iput-object p7, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_messageSendingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .line 19
+    iput-object p7, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_webViewFactory:Lcom/snap/composer/ViewFactory;
+
+    .line 20
+    iput-object p8, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_baseUrl:Ljava/lang/String;
+
+    .line 21
+    iput-object p9, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_messageSendingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 22
+    iput-object p10, p0, Lcom/snap/chat_attributed_text/ChatAttributedTextViewContext;->_messageVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     return-void
 .end method
@@ -174,7 +212,7 @@
     return-void
 .end method
 
-.method public final c(LjP2;)V
+.method public final c(LLR2;)V
     .locals 0
 
     .line 1

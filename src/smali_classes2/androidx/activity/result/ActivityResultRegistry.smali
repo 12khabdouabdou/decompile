@@ -176,7 +176,7 @@
     move-result-object v0
 
     .line 23
-    check-cast v0, Lif;
+    check-cast v0, Lcg;
 
     .line 24
     .line 25
@@ -184,7 +184,7 @@
 
     .line 26
     .line 27
-    iget-object v1, v0, Lif;->a:Landroidx/activity/result/ActivityResultCallback;
+    iget-object v1, v0, Lcg;->a:Landroidx/activity/result/ActivityResultCallback;
 
     .line 28
     .line 29
@@ -216,15 +216,15 @@
 
     .line 40
     .line 41
-    iget-object v2, v0, Lif;->a:Landroidx/activity/result/ActivityResultCallback;
+    iget-object v2, v0, Lcg;->a:Landroidx/activity/result/ActivityResultCallback;
 
     .line 42
     .line 43
-    iget-object v0, v0, Lif;->b:Landroidx/activity/result/contract/ActivityResultContract;
+    iget-object v0, v0, Lcg;->b:Landroidx/activity/result/contract/ActivityResultContract;
 
     .line 44
     .line 45
-    invoke-virtual {v0, p2, p3}, Landroidx/activity/result/contract/ActivityResultContract;->c(ILandroid/content/Intent;)Ljava/lang/Object;
+    invoke-virtual {v0, p3, p2}, Landroidx/activity/result/contract/ActivityResultContract;->c(Landroid/content/Intent;I)Ljava/lang/Object;
 
     .line 46
     .line 47
@@ -232,7 +232,7 @@
     move-result-object p2
 
     .line 49
-    invoke-interface {v2, p2}, Landroidx/activity/result/ActivityResultCallback;->b(Ljava/lang/Object;)V
+    invoke-interface {v2, p2}, Landroidx/activity/result/ActivityResultCallback;->e(Ljava/lang/Object;)V
 
     .line 50
     .line 51
@@ -255,11 +255,11 @@
     .line 59
     .line 60
     .line 61
-    new-instance v0, LWe;
+    new-instance v0, LQf;
 
     .line 62
     .line 63
-    invoke-direct {v0, p2, p3}, LWe;-><init>(ILandroid/content/Intent;)V
+    invoke-direct {v0, p3, p2}, LQf;-><init>(Landroid/content/Intent;I)V
 
     .line 64
     .line 65
@@ -280,5 +280,5 @@
     return p1
 .end method
 
-.method public abstract b(ILandroidx/activity/result/contract/ActivityResultContract;Lzo9;)V
+.method public abstract b(ILandroidx/activity/result/contract/ActivityResultContract;LBx9;)V
 .end method

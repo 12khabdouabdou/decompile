@@ -1,12 +1,12 @@
 .class public Lcom/snap/maps/components/carousel/OverScrollerSpringBehavior;
-.super Lz34;
+.super Lj84;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lz34;"
+        "Lj84;"
     }
 .end annotation
 
@@ -76,7 +76,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-static {p1}, LzHa;->L(I)I
 
     .line 4
     .line 5
@@ -198,7 +198,7 @@
 
     .line 51
     .line 52
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-static {p1}, LzHa;->L(I)I
 
     .line 53
     .line 54
@@ -273,7 +273,7 @@
 
     .line 2
     .line 3
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-static {p1}, LzHa;->L(I)I
 
     .line 4
     .line 5

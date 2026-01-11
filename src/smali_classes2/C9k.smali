@@ -1,467 +1,282 @@
 .class public final LC9k;
-.super LE3k;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkbk;
 
 
 # instance fields
-.field public final b:Lboi;
+.field public final a:[I
 
-.field public final synthetic c:Luak;
-
-.field public final synthetic t:I
+.field public final b:[I
 
 
 # direct methods
-.method public constructor <init>(Luak;Lboi;I)V
+.method public constructor <init>([I[I)V
     .locals 0
 
     .line 1
-    iput p3, p0, LC9k;->t:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p1, p0, LC9k;->c:Luak;
-
     .line 4
+    iput-object p1, p0, LC9k;->a:[I
+
     .line 5
-    const/16 p1, 0xc
-
     .line 6
-    .line 7
-    invoke-direct {p0, p1}, LE3k;-><init>(I)V
+    iput-object p2, p0, LC9k;->b:[I
 
+    .line 7
     .line 8
+    array-length p1, p1
+
     .line 9
+    array-length p2, p2
+
     .line 10
-    const-string p1, "com.google.android.play.core.splitinstall.protocol.ISplitInstallServiceCallback"
+    if-ne p1, p2, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {p0, p0, p1}, Landroid/os/Binder;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
+    return-void
 
     .line 13
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
     .line 14
     .line 15
-    iput-object p2, p0, LC9k;->b:Lboi;
+    const-string p2, "Draw and touch ordering should have the same size"
 
     .line 16
     .line 17
-    return-void
+    invoke-direct {p1, p2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final N(ILandroid/os/Bundle;)V
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    iget-object p2, p0, LC9k;->c:Luak;
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    iget-object p2, p2, Luak;->b:LC8k;
+    const/4 p1, 0x1
 
     .line 4
+    return p1
+
     .line 5
-    iget-object v0, p0, LC9k;->b:Lboi;
+    :cond_0
+    if-eqz p1, :cond_1
 
     .line 6
     .line 7
-    invoke-virtual {p2, v0}, LC8k;->d(Lboi;)V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    sget-object p2, Luak;->c:Llq7;
+    move-result-object v0
 
     .line 11
+    goto :goto_0
+
     .line 12
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :cond_1
+    const/4 v0, 0x0
 
     .line 13
+    :goto_0
+    const-class v1, LC9k;
+
     .line 14
     .line 15
-    move-result-object p1
+    invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 16
-    const/4 v0, 0x1
-
     .line 17
-    new-array v0, v0, [Ljava/lang/Object;
-
     .line 18
+    move-result v0
+
     .line 19
     const/4 v1, 0x0
 
     .line 20
-    aput-object p1, v0, v1
+    if-nez v0, :cond_2
 
     .line 21
     .line 22
-    const-string p1, "onCancelInstall(%d)"
+    return v1
 
     .line 23
+    :cond_2
+    check-cast p1, LC9k;
+
     .line 24
-    invoke-virtual {p2, p1, v0}, Llq7;->h(Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 25
+    iget-object v0, p0, LC9k;->a:[I
+
+    .line 26
+    .line 27
+    iget-object v2, p1, LC9k;->a:[I
+
+    .line 28
+    .line 29
+    invoke-static {v0, v2}, Ljava/util/Arrays;->equals([I[I)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    if-nez v0, :cond_3
+
+    .line 34
+    .line 35
+    return v1
+
+    .line 36
+    :cond_3
+    iget-object v0, p0, LC9k;->b:[I
+
+    .line 37
+    .line 38
+    iget-object p1, p1, LC9k;->b:[I
+
+    .line 39
+    .line 40
+    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([I[I)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result p1
+
+    .line 44
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LC9k;->a:[I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([I)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LC9k;->b:[I
+
+    .line 10
+    .line 11
+    invoke-static {v1}, Ljava/util/Arrays;->hashCode([I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 5
+
+    .line 1
+    const-string v0, ")"
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LC9k;->a:[I
+
+    .line 4
+    .line 5
+    iget-object v2, p0, LC9k;->b:[I
+
+    .line 6
+    .line 7
+    if-ne v1, v2, :cond_0
+
+    .line 8
+    .line 9
+    invoke-static {v1}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v1
+
+    .line 13
+    const-string v2, "ViewOrder("
+
+    .line 14
+    .line 15
+    invoke-static {v2, v1, v0}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    return-object v0
+
+    .line 20
+    :cond_0
+    invoke-static {v1}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v1
+
+    .line 24
+    invoke-static {v2}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
 
     .line 25
     .line 26
     .line 27
-    return-void
-.end method
+    move-result-object v2
 
-.method public final O(Landroid/os/Bundle;)V
-    .locals 2
+    .line 28
+    const-string v3, "ViewOrder(draw="
 
-    .line 1
-    iget-object p1, p0, LC9k;->c:Luak;
+    .line 29
+    .line 30
+    const-string v4, ", touch="
 
-    .line 2
-    .line 3
-    iget-object p1, p1, Luak;->b:LC8k;
+    .line 31
+    .line 32
+    invoke-static {v3, v1, v4, v2, v0}, LToi;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 4
-    .line 5
-    iget-object v0, p0, LC9k;->b:Lboi;
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
 
-    .line 6
-    .line 7
-    invoke-virtual {p1, v0}, LC8k;->d(Lboi;)V
-
-    .line 8
-    .line 9
-    .line 10
-    sget-object p1, Luak;->c:Llq7;
-
-    .line 11
-    .line 12
-    const/4 v0, 0x0
-
-    .line 13
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    const-string v1, "onDeferredInstall"
-
-    .line 16
-    .line 17
-    invoke-virtual {p1, v1, v0}, Llq7;->h(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 18
-    .line 19
-    .line 20
-    return-void
-.end method
-
-.method public final P(Landroid/os/Bundle;)V
-    .locals 2
-
-    .line 1
-    iget-object p1, p0, LC9k;->c:Luak;
-
-    .line 2
-    .line 3
-    iget-object p1, p1, Luak;->b:LC8k;
-
-    .line 4
-    .line 5
-    iget-object v0, p0, LC9k;->b:Lboi;
-
-    .line 6
-    .line 7
-    invoke-virtual {p1, v0}, LC8k;->d(Lboi;)V
-
-    .line 8
-    .line 9
-    .line 10
-    sget-object p1, Luak;->c:Llq7;
-
-    .line 11
-    .line 12
-    const/4 v0, 0x0
-
-    .line 13
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    const-string v1, "onDeferredUninstall"
-
-    .line 16
-    .line 17
-    invoke-virtual {p1, v1, v0}, Llq7;->h(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 18
-    .line 19
-    .line 20
-    return-void
-.end method
-
-.method public final Q(ILandroid/os/Bundle;)V
-    .locals 2
-
-    .line 1
-    iget-object p2, p0, LC9k;->c:Luak;
-
-    .line 2
-    .line 3
-    iget-object p2, p2, Luak;->b:LC8k;
-
-    .line 4
-    .line 5
-    iget-object v0, p0, LC9k;->b:Lboi;
-
-    .line 6
-    .line 7
-    invoke-virtual {p2, v0}, LC8k;->d(Lboi;)V
-
-    .line 8
-    .line 9
-    .line 10
-    sget-object p2, Luak;->c:Llq7;
-
-    .line 11
-    .line 12
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    const/4 v0, 0x1
-
-    .line 17
-    new-array v0, v0, [Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    const/4 v1, 0x0
-
-    .line 20
-    aput-object p1, v0, v1
-
-    .line 21
-    .line 22
-    const-string p1, "onStartInstall(%d)"
-
-    .line 23
-    .line 24
-    invoke-virtual {p2, p1, v0}, Llq7;->h(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 25
-    .line 26
-    .line 27
-    return-void
-.end method
-
-.method public a(Landroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LC9k;->t:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0, p1}, LC9k;->O(Landroid/os/Bundle;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-
-    .line 10
-    :pswitch_0
-    invoke-virtual {p0, p1}, LC9k;->O(Landroid/os/Bundle;)V
-
-    .line 11
-    .line 12
-    .line 13
-    iget-object p1, p0, LC9k;->b:Lboi;
-
-    .line 14
-    .line 15
-    const/4 v0, 0x0
-
-    .line 16
-    invoke-virtual {p1, v0}, Lboi;->d(Ljava/lang/Object;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public l(ILandroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LC9k;->t:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0, p1, p2}, LC9k;->Q(ILandroid/os/Bundle;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-
-    .line 10
-    :pswitch_0
-    invoke-virtual {p0, p1, p2}, LC9k;->Q(ILandroid/os/Bundle;)V
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    iget-object p2, p0, LC9k;->b:Lboi;
-
-    .line 18
-    .line 19
-    invoke-virtual {p2, p1}, Lboi;->d(Ljava/lang/Object;)V
-
-    .line 20
-    .line 21
-    .line 22
-    return-void
-
-    .line 23
-    :pswitch_data_0
-    .packed-switch 0x3
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public s(Landroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LC9k;->t:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0, p1}, LC9k;->P(Landroid/os/Bundle;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-
-    .line 10
-    :pswitch_0
-    invoke-virtual {p0, p1}, LC9k;->P(Landroid/os/Bundle;)V
-
-    .line 11
-    .line 12
-    .line 13
-    iget-object p1, p0, LC9k;->b:Lboi;
-
-    .line 14
-    .line 15
-    const/4 v0, 0x0
-
-    .line 16
-    invoke-virtual {p1, v0}, Lboi;->d(Ljava/lang/Object;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public w(ILandroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LC9k;->t:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p0, p1, p2}, LC9k;->N(ILandroid/os/Bundle;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-
-    .line 10
-    :pswitch_0
-    invoke-virtual {p0, p1, p2}, LC9k;->N(ILandroid/os/Bundle;)V
-
-    .line 11
-    .line 12
-    .line 13
-    iget-object p1, p0, LC9k;->b:Lboi;
-
-    .line 14
-    .line 15
-    const/4 p2, 0x0
-
-    .line 16
-    invoke-virtual {p1, p2}, Lboi;->d(Ljava/lang/Object;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 36
+    return-object v0
 .end method

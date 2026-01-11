@@ -23,7 +23,7 @@
 
 .field private final docking:Ljava/lang/String;
 
-.field private final interactionZone:Lu8f;
+.field private final interactionZone:LLqf;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "interaction_zone"
     .end annotation
@@ -45,7 +45,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lu8f;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LLqf;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -74,7 +74,7 @@
 
     .line 13
     .line 14
-    iput-object p6, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iput-object p6, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
     .line 15
     .line 16
@@ -85,7 +85,7 @@
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/SnapContent;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lu8f;Ljava/lang/String;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/SnapContent;
+.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/SnapContent;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LLqf;Ljava/lang/String;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/SnapContent;
     .locals 0
 
     .line 1
@@ -162,7 +162,7 @@
 
     .line 34
     .line 35
-    iget-object p6, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iget-object p6, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
     .line 36
     .line 37
@@ -204,7 +204,7 @@
     move-object p3, p1
 
     .line 51
-    invoke-virtual/range {p2 .. p9}, Lcom/snap/discover/playback/content/model/SnapContent;->copy(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lu8f;Ljava/lang/String;)Lcom/snap/discover/playback/content/model/SnapContent;
+    invoke-virtual/range {p2 .. p9}, Lcom/snap/discover/playback/content/model/SnapContent;->copy(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LLqf;Ljava/lang/String;)Lcom/snap/discover/playback/content/model/SnapContent;
 
     .line 52
     .line 53
@@ -257,11 +257,11 @@
     return-object v0
 .end method
 
-.method public final component6()Lu8f;
+.method public final component6()LLqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
     .line 2
     .line 3
@@ -276,7 +276,7 @@
     return-object v0
 .end method
 
-.method public final copy(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lu8f;Ljava/lang/String;)Lcom/snap/discover/playback/content/model/SnapContent;
+.method public final copy(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LLqf;Ljava/lang/String;)Lcom/snap/discover/playback/content/model/SnapContent;
     .locals 8
 
     .line 1
@@ -305,7 +305,7 @@
     move-object v7, p7
 
     .line 10
-    invoke-direct/range {v0 .. v7}, Lcom/snap/discover/playback/content/model/SnapContent;-><init>(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lu8f;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v7}, Lcom/snap/discover/playback/content/model/SnapContent;-><init>(Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LLqf;Ljava/lang/String;)V
 
     .line 11
     .line 12
@@ -338,7 +338,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/SnapContent;->docking:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -351,7 +351,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/SnapContent;->videoRotationEnabled:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -364,7 +364,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/SnapContent;->background:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -377,7 +377,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/SnapContent;->videoFirstFrame:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -390,7 +390,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/SnapContent;->backgroundType:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -399,11 +399,11 @@
     return v2
 
     :cond_6
-    iget-object v1, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iget-object v1, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
-    iget-object v3, p1, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iget-object v3, p1, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -416,7 +416,7 @@
 
     iget-object p1, p1, Lcom/snap/discover/playback/content/model/SnapContent;->mode:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -461,11 +461,11 @@
     return-object v0
 .end method
 
-.method public final getInteractionZone()Lu8f;
+.method public final getInteractionZone()LLqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
     .line 2
     .line 3
@@ -579,7 +579,7 @@
 
     .line 30
     .line 31
-    invoke-static {v0, v2, v3}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v2, v3}, LToi;->g(IILjava/lang/String;)I
 
     .line 32
     .line 33
@@ -622,7 +622,7 @@
 
     .line 49
     .line 50
-    invoke-static {v0, v2, v3}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v2, v3}, LToi;->g(IILjava/lang/String;)I
 
     .line 51
     .line 52
@@ -630,7 +630,7 @@
     move-result v0
 
     .line 54
-    iget-object v3, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iget-object v3, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
     .line 55
     .line 56
@@ -645,7 +645,7 @@
 
     .line 60
     :cond_3
-    invoke-virtual {v3}, Lu8f;->hashCode()I
+    invoke-virtual {v3}, LLqf;->hashCode()I
 
     .line 61
     .line 62
@@ -712,7 +712,7 @@
 
     .line 10
     .line 11
-    iget-object v5, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:Lu8f;
+    iget-object v5, p0, Lcom/snap/discover/playback/content/model/SnapContent;->interactionZone:LLqf;
 
     .line 12
     .line 13
@@ -769,7 +769,7 @@
 
     .line 41
     .line 42
-    invoke-static {v7, v2, v0, v3, v1}, LmG8;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v7, v2, v0, v3, v1}, Lcb9;->h(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 43
     .line 44
@@ -806,7 +806,7 @@
 
     .line 62
     .line 63
-    invoke-static {v7, v6, v0}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v6, v0}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 64
     .line 65

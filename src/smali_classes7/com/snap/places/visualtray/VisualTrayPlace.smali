@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/visualtray/VisualTrayPlace;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'placeId\':s,\'lat\':d,\'lng\':d,\'boundingBox\':r:\'[0]\',\'localizedName\':s,\'localizedCategory\':s,\'localizedAddressName\':s,\'storyThumbnailUrl\':s?,\'iconUrl\':s,\'isFavorited\':b,\'favoritesData\':r?:\'[1]\',\'providerImageUrls\':a<s>,\'placePivots\':a?<r:\'[2]\'>,\'pricyness\':s?,\'openingHours\':r?:\'[3]\',\'kindName\':s?,\'storyCarouselData\':r:\'[4]\',\'componentSourceType\':s?"
     typeReferences = {

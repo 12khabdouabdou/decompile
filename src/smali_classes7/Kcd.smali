@@ -1,116 +1,125 @@
-.class public final LKcd;
-.super LrE9;
+.class public final enum LKcd;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
+# static fields
+.field public static final enum a:LKcd;
 
-# instance fields
-.field public final synthetic a:I
+.field public static final enum b:LKcd;
 
-.field public final synthetic b:LQ05;
+.field public static final synthetic c:[LKcd;
 
 
 # direct methods
-.method public synthetic constructor <init>(LQ05;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput p2, p0, LKcd;->a:I
+    const/4 v0, 0x1
 
-    iput-object p1, p0, LKcd;->b:LQ05;
+    .line 2
+    const/4 v1, 0x0
 
-    const/4 p1, 0x0
+    .line 3
+    new-instance v2, LKcd;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 4
+    .line 5
+    const-string v3, "TOP_SNAP"
 
+    .line 6
+    .line 7
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 8
+    .line 9
+    .line 10
+    sput-object v2, LKcd;->a:LKcd;
+
+    .line 11
+    .line 12
+    new-instance v3, LKcd;
+
+    .line 13
+    .line 14
+    const-string v4, "ATTACHMENT"
+
+    .line 15
+    .line 16
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v3, LKcd;->b:LKcd;
+
+    .line 20
+    .line 21
+    const/4 v4, 0x2
+
+    .line 22
+    new-array v4, v4, [LKcd;
+
+    .line 23
+    .line 24
+    aput-object v2, v4, v1
+
+    .line 25
+    .line 26
+    aput-object v3, v4, v0
+
+    .line 27
+    .line 28
+    sput-object v4, LKcd;->c:[LKcd;
+
+    .line 29
+    .line 30
     return-void
 .end method
 
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
+.method public static valueOf(Ljava/lang/String;)LKcd;
+    .locals 1
 
     .line 1
-    iget v0, p0, LKcd;->a:I
+    const-class v0, LKcd;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LKcd;->b:LQ05;
+    move-result-object p0
 
     .line 7
+    check-cast p0, LKcd;
+
     .line 8
-    invoke-virtual {v0}, LQ05;->get()Ljava/lang/Object;
-
     .line 9
-    .line 10
-    .line 11
+    return-object p0
+.end method
+
+.method public static values()[LKcd;
+    .locals 1
+
+    .line 1
+    sget-object v0, LKcd;->c:[LKcd;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 12
-    check-cast v0, Lo43;
+    .line 7
+    check-cast v0, [LKcd;
 
-    .line 13
-    .line 14
-    invoke-interface {v0}, Lo43;->a()Ljava/lang/String;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
+    .line 8
+    .line 9
     return-object v0
-
-    .line 19
-    :pswitch_0
-    iget-object v0, p0, LKcd;->b:LQ05;
-
-    .line 20
-    .line 21
-    invoke-virtual {v0}, LQ05;->get()Ljava/lang/Object;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    check-cast v0, Lgqh;
-
-    .line 26
-    .line 27
-    invoke-virtual {v0}, Lgqh;->a()J
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-wide v0
-
-    .line 31
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v0
-
-    .line 35
-    return-object v0
-
-    .line 36
-    nop
-
-    .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

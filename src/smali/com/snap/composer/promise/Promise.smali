@@ -18,16 +18,16 @@
 
 
 # static fields
-.field public static final Companion:Lwee;
+.field public static final Companion:LRve;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    sget-object v0, Lwee;->a:Lwee;
+    sget-object v0, LRve;->a:LRve;
 
-    sput-object v0, Lcom/snap/composer/promise/Promise;->Companion:Lwee;
+    sput-object v0, Lcom/snap/composer/promise/Promise;->Companion:LRve;
 
     return-void
 .end method

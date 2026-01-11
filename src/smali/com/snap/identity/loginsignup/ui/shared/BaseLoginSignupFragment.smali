@@ -24,11 +24,11 @@
 
     .line 2
     .line 3
-    new-array v0, v0, [LZ8d;
+    new-array v0, v0, [Lsod;
 
     .line 4
     .line 5
-    sget-object v1, LZ8d;->j1:LZ8d;
+    sget-object v1, Lsod;->j1:Lsod;
 
     .line 6
     .line 7
@@ -39,7 +39,7 @@
 
     .line 9
     .line 10
-    sget-object v1, LZ8d;->X0:LZ8d;
+    sget-object v1, Lsod;->X0:Lsod;
 
     .line 11
     .line 12
@@ -50,7 +50,7 @@
 
     .line 14
     .line 15
-    sget-object v1, LZ8d;->Z0:LZ8d;
+    sget-object v1, Lsod;->Z0:Lsod;
 
     .line 16
     .line 17
@@ -61,7 +61,7 @@
 
     .line 19
     .line 20
-    sget-object v1, LZ8d;->Y0:LZ8d;
+    sget-object v1, Lsod;->Y0:Lsod;
 
     .line 21
     .line 22
@@ -72,7 +72,7 @@
 
     .line 24
     .line 25
-    sget-object v1, LZ8d;->W0:LZ8d;
+    sget-object v1, Lsod;->W0:Lsod;
 
     .line 26
     .line 27
@@ -83,7 +83,7 @@
 
     .line 29
     .line 30
-    sget-object v1, LZ8d;->l1:LZ8d;
+    sget-object v1, Lsod;->l1:Lsod;
 
     .line 31
     .line 32
@@ -94,7 +94,7 @@
 
     .line 34
     .line 35
-    sget-object v1, LZ8d;->V0:LZ8d;
+    sget-object v1, Lsod;->V0:Lsod;
 
     .line 36
     .line 37
@@ -105,7 +105,7 @@
 
     .line 39
     .line 40
-    sget-object v1, LZ8d;->m1:LZ8d;
+    sget-object v1, Lsod;->m1:Lsod;
 
     .line 41
     .line 42
@@ -116,7 +116,7 @@
 
     .line 44
     .line 45
-    sget-object v1, LZ8d;->a1:LZ8d;
+    sget-object v1, Lsod;->a1:Lsod;
 
     .line 46
     .line 47
@@ -128,7 +128,7 @@
 
     .line 50
     .line 51
-    invoke-static {v0}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v0}, LN90;->P0([Ljava/lang/Object;)Ljava/util/Set;
 
     .line 52
     .line 53
@@ -174,7 +174,7 @@
 
 
 # virtual methods
-.method public F1()V
+.method public D1()V
     .locals 2
 
     .line 1
@@ -213,7 +213,7 @@
     return-void
 .end method
 
-.method public G1()V
+.method public E1()V
     .locals 2
 
     .line 1
@@ -252,11 +252,11 @@
     return-void
 .end method
 
-.method public final I1()V
+.method public final G1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->U1()LJL0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->U1()LKO0;
 
     .line 2
     .line 3
@@ -264,7 +264,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0, p0}, LJL0;->h(Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;)V
+    invoke-interface {v0, p0}, LKO0;->l(Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;)V
 
     .line 6
     .line 7
@@ -272,11 +272,11 @@
     return-void
 .end method
 
-.method public J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 2
 
     .line 1
-    const p2, 0x7f0b01c6
+    const p2, 0x7f0b0210
 
     .line 2
     .line 3
@@ -293,15 +293,15 @@
 
     .line 9
     .line 10
-    new-instance v0, Lb4;
+    new-instance v0, Lx4;
 
     .line 11
     .line 12
-    const/16 v1, 0x15
+    const/16 v1, 0x14
 
     .line 13
     .line 14
-    invoke-direct {v0, v1, p0}, Lb4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lx4;-><init>(ILjava/lang/Object;)V
 
     .line 15
     .line 16
@@ -316,7 +316,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->V1()LZ8d;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->V1()Lsod;
 
     .line 23
     .line 24
@@ -336,7 +336,7 @@
 
     .line 31
     .line 32
-    const p2, 0x7f0b0e76
+    const p2, 0x7f0b0f92
 
     .line 33
     .line 34
@@ -349,7 +349,7 @@
     move-result-object p2
 
     .line 39
-    const v0, 0x7f0b0e75
+    const v0, 0x7f0b0f91
 
     .line 40
     .line 41
@@ -393,10 +393,10 @@
     return-void
 .end method
 
-.method public abstract U1()LJL0;
+.method public abstract U1()LKO0;
 .end method
 
-.method public abstract V1()LZ8d;
+.method public abstract V1()Lsod;
 .end method
 
 .method public final W1()Z
@@ -452,7 +452,7 @@
     move-result-object v0
 
     .line 9
-    const v1, 0x7f070514
+    const v1, 0x7f07053b
 
     .line 10
     .line 11
@@ -465,7 +465,7 @@
     move-result v0
 
     .line 16
-    const v1, 0x7f0b066a
+    const v1, 0x7f0b0701
 
     .line 17
     .line 18
@@ -486,18 +486,18 @@
 
     .line 26
     .line 27
-    invoke-static {v1, v0}, LLZj;->d0(Landroid/view/View;I)V
+    invoke-static {v1, v0}, LDz9;->b0(Landroid/view/View;I)V
 
     .line 28
     .line 29
     .line 30
-    invoke-static {v1, v0}, LLZj;->c0(Landroid/view/View;I)V
+    invoke-static {v1, v0}, LDz9;->a0(Landroid/view/View;I)V
 
     .line 31
     .line 32
     .line 33
     :cond_0
-    const v1, 0x7f0b0691
+    const v1, 0x7f0b0728
 
     .line 34
     .line 35
@@ -541,18 +541,18 @@
 
     .line 54
     .line 55
-    invoke-static {v1, v0}, LLZj;->d0(Landroid/view/View;I)V
+    invoke-static {v1, v0}, LDz9;->b0(Landroid/view/View;I)V
 
     .line 56
     .line 57
     .line 58
-    invoke-static {v1, v0}, LLZj;->c0(Landroid/view/View;I)V
+    invoke-static {v1, v0}, LDz9;->a0(Landroid/view/View;I)V
 
     .line 59
     .line 60
     .line 61
     :cond_1
-    const v1, 0x7f0b1291
+    const v1, 0x7f0b13bd
 
     .line 62
     .line 63
@@ -593,18 +593,18 @@
 
     .line 81
     .line 82
-    invoke-static {v1, v0}, LLZj;->d0(Landroid/view/View;I)V
+    invoke-static {v1, v0}, LDz9;->b0(Landroid/view/View;I)V
 
     .line 83
     .line 84
     .line 85
-    invoke-static {v1, v0}, LLZj;->c0(Landroid/view/View;I)V
+    invoke-static {v1, v0}, LDz9;->a0(Landroid/view/View;I)V
 
     .line 86
     .line 87
     .line 88
     :cond_2
-    const v0, 0x7f0b01c6
+    const v0, 0x7f0b0210
 
     .line 89
     .line 90
@@ -659,12 +659,12 @@
     .line 114
     .line 115
     .line 116
-    const v0, 0x7f06036e
+    const v0, 0x7f0603f7
 
     .line 117
     .line 118
     .line 119
-    invoke-static {p1, v0}, LPZj;->x(Landroid/widget/ImageView;I)V
+    invoke-static {p1, v0}, LbS2;->N(Landroid/widget/ImageView;I)V
 
     .line 120
     .line 121
@@ -676,7 +676,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->U1()LJL0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->U1()LKO0;
 
     .line 2
     .line 3
@@ -684,7 +684,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0, p0}, LJL0;->e(Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;)Z
+    invoke-interface {v0, p0}, LKO0;->h(Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;)Z
 
     .line 6
     .line 7
@@ -714,11 +714,11 @@
     return v0
 .end method
 
-.method public h(LQqc;)V
+.method public i(LiGc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
@@ -758,11 +758,11 @@
     return-void
 .end method
 
-.method public w(LQqc;)V
+.method public v(LiGc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
@@ -799,7 +799,7 @@
     .line 18
     .line 19
     .line 20
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->U1()LJL0;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->U1()LKO0;
 
     .line 21
     .line 22
@@ -807,7 +807,7 @@
     move-result-object p1
 
     .line 24
-    invoke-interface {p1, p0}, LJL0;->k(Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;)V
+    invoke-interface {p1, p0}, LKO0;->n(Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;)V
 
     .line 25
     .line 26

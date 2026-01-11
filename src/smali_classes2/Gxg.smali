@@ -1,139 +1,257 @@
-.class public final enum LGxg;
-.super Ljava/lang/Enum;
+.class public final LGxg;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/os/Parcelable;
 
 
 # static fields
-.field public static final enum a:LGxg;
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "LGxg;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final synthetic b:[LGxg;
+
+# instance fields
+.field public final X:Ljava/lang/String;
+
+.field public final a:Landroid/os/Bundle;
+
+.field public final b:Landroid/graphics/Bitmap;
+
+.field public final c:Landroid/net/Uri;
+
+.field public final t:Z
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 2
 
     .line 1
-    const/4 v0, 0x2
+    new-instance v0, LKfe;
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
+    const/16 v1, 0x11
 
     .line 4
-    new-instance v3, LGxg;
-
     .line 5
-    .line 6
-    const-string v4, "RESPECT_SERVER_VALUE"
+    invoke-direct {v0, v1}, LKfe;-><init>(I)V
 
+    .line 6
     .line 7
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v0, LGxg;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 9
     .line 10
-    .line 11
-    sput-object v3, LGxg;->a:LGxg;
-
-    .line 12
-    .line 13
-    new-instance v4, LGxg;
-
-    .line 14
-    .line 15
-    const-string v5, "DISABLE_AD_FAVORITE_LOCALLY"
-
-    .line 16
-    .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 18
-    .line 19
-    .line 20
-    new-instance v5, LGxg;
-
-    .line 21
-    .line 22
-    const-string v6, "ENABLE_AD_FAVORITE_LOCALLY"
-
-    .line 23
-    .line 24
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 25
-    .line 26
-    .line 27
-    const/4 v6, 0x3
-
-    .line 28
-    new-array v6, v6, [LGxg;
-
-    .line 29
-    .line 30
-    aput-object v3, v6, v2
-
-    .line 31
-    .line 32
-    aput-object v4, v6, v1
-
-    .line 33
-    .line 34
-    aput-object v5, v6, v0
-
-    .line 35
-    .line 36
-    sput-object v6, LGxg;->b:[LGxg;
-
-    .line 37
-    .line 38
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LGxg;
+.method public constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
     .line 1
-    const-class v0, LGxg;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
     .line 4
+    invoke-virtual {p1}, Landroid/os/Parcel;->readBundle()Landroid/os/Bundle;
+
     .line 5
     .line 6
-    move-result-object p0
-
     .line 7
-    check-cast p0, LGxg;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LGxg;
-    .locals 1
-
-    .line 1
-    sget-object v0, LGxg;->b:[LGxg;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LGxg;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
     move-result-object v0
 
+    .line 8
+    iput-object v0, p0, LGxg;->a:Landroid/os/Bundle;
+
+    .line 9
+    .line 10
+    const-class v0, Landroid/graphics/Bitmap;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    check-cast v0, Landroid/graphics/Bitmap;
+
+    .line 21
+    .line 22
+    iput-object v0, p0, LGxg;->b:Landroid/graphics/Bitmap;
+
+    .line 23
+    .line 24
+    const-class v0, Landroid/net/Uri;
+
+    .line 25
+    .line 26
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    check-cast v0, Landroid/net/Uri;
+
+    .line 35
+    .line 36
+    iput-object v0, p0, LGxg;->c:Landroid/net/Uri;
+
+    .line 37
+    .line 38
+    invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v0
+
+    .line 42
+    if-eqz v0, :cond_0
+
+    .line 43
+    .line 44
+    const/4 v0, 0x1
+
+    .line 45
+    goto :goto_0
+
+    .line 46
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 47
+    :goto_0
+    iput-boolean v0, p0, LGxg;->t:Z
+
+    .line 48
+    .line 49
+    invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p1
+
+    .line 53
+    iput-object p1, p0, LGxg;->X:Ljava/lang/String;
+
+    .line 54
+    .line 55
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/os/Parcel;I)V
+    .locals 0
+
+    .line 1
+    iget-object p2, p0, LGxg;->a:Landroid/os/Bundle;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeBundle(Landroid/os/Bundle;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final describeContents()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, LGxg;->a(Landroid/os/Parcel;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p2, p0, LGxg;->b:Landroid/graphics/Bitmap;
+
+    .line 5
+    .line 6
+    const/4 v0, 0x0
+
     .line 7
-    check-cast v0, [LGxg;
+    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 8
     .line 9
-    return-object v0
+    .line 10
+    iget-object p2, p0, LGxg;->c:Landroid/net/Uri;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-boolean p2, p0, LGxg;->t:Z
+
+    .line 16
+    .line 17
+    int-to-byte p2, p2
+
+    .line 18
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
+
+    .line 19
+    .line 20
+    .line 21
+    iget-object p2, p0, LGxg;->X:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
 .end method

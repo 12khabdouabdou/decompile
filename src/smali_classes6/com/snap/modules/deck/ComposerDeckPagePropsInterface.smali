@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lmv3;
+    proxyClass = Lry3;
     schema = "\'setBackButtonObserver\':f?|m|(f?()),\'setOnPausePopAfterDelay\':f?|m|(d@?)"
     typeReferences = {}
 .end annotation
@@ -20,9 +20,6 @@
 .end method
 
 .method public abstract setBackButtonObserver(Lkotlin/jvm/functions/Function0;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -30,9 +27,12 @@
             ")V"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract setOnPausePopAfterDelay(Ljava/lang/Double;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

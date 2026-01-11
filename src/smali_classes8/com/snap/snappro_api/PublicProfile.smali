@@ -1,10 +1,10 @@
 .class public final Lcom/snap/snappro_api/PublicProfile;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'logoUrl\':s,\'officialBadgeType\':r<e>:\'[0]\',\'title\':s,\'tier\':r<e>:\'[1]\',\'identifiers\':r:\'[2]\'"
     typeReferences = {

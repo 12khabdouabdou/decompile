@@ -24,7 +24,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -91,15 +91,15 @@
 
 
 # virtual methods
-.method public final B(FF)V
+.method public final A(FF)V
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    iget v1, v0, LkEj;->Z:I
+    iget v1, v0, LC3k;->Z:I
 
     .line 4
     .line 5
@@ -107,7 +107,7 @@
 
     .line 6
     .line 7
-    iget v0, v0, LkEj;->e0:I
+    iget v0, v0, LC3k;->e0:I
 
     .line 8
     .line 9
@@ -257,11 +257,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    iget v1, v0, LkEj;->e0:I
+    iget v1, v0, LC3k;->e0:I
 
     .line 4
     .line 5
@@ -276,7 +276,7 @@
     int-to-float p2, p2
 
     .line 10
-    iget v0, v0, LkEj;->Z:I
+    iget v0, v0, LC3k;->Z:I
 
     .line 11
     .line 12
@@ -291,7 +291,7 @@
     int-to-float p1, p1
 
     .line 17
-    invoke-virtual {p0, p1, p2}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;->B(FF)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;->A(FF)V
 
     .line 18
     .line 19
@@ -359,7 +359,7 @@
     int-to-float v0, v0
 
     .line 11
-    invoke-virtual {p0, p1, v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;->B(FF)V
+    invoke-virtual {p0, p1, v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;->A(FF)V
 
     .line 12
     .line 13

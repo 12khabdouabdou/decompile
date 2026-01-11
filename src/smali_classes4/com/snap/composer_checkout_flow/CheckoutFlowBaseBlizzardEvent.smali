@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer_checkout_flow/CheckoutFlowBaseBlizzardEvent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'ad_id\':s?,\'commerce_origin_type\':s?,\'commerce_session_id\':s?,\'commerce_product_type\':s?,\'commerce_product_area\':s?,\'context_session_id\':s?,\'product_id\':s?,\'source_session_id\':s?,\'source_id\':s?,\'store_id\':s?,\'tracking_id\':s?,\'is_sponsored\':b@?"
     typeReferences = {}

@@ -6,12 +6,13 @@
 //attribute vec2 texture0 3
 //attribute vec2 texture1 4
 //attribute vec4 tangent 2
-//sampler sampler baseTexSmpSC 0:8
-//sampler sampler borderTexSmpSC 0:9
-//texture texture2D baseTex 0:0:0:8
-//texture texture2D borderTex 0:1:0:9
-//texture texture2DArray baseTexArrSC 0:16:0:8
-//texture texture2DArray borderTexArrSC 0:17:0:9
+//output vec4 sc_FragData0 0
+//sampler sampler baseTexSmpSC 0:9
+//sampler sampler borderTexSmpSC 0:10
+//texture texture2D baseTex 0:0:0:9
+//texture texture2D borderTex 0:1:0:10
+//texture texture2DArray baseTexArrSC 0:18:0:9
+//texture texture2DArray borderTexArrSC 0:19:0:10
 //spec_const bool SC_USE_CLAMP_TO_BORDER_baseTex 0 0
 //spec_const bool SC_USE_CLAMP_TO_BORDER_borderTex 1 0
 //spec_const bool SC_USE_UV_MIN_MAX_baseTex 2 0
@@ -175,9 +176,9 @@ in vec4 position;
 in vec3 normal;
 in vec2 texture0;
 in vec2 texture1;
-out vec3 varPos;
-out vec3 varNormal;
-out vec4 varPackedTex;
+out vec4 varPosAndMotion;
+out vec4 varNormalAndMotion;
+out vec4 varTex01;
 out vec4 varScreenPos;
 out vec2 varScreenTexturePos;
 out vec4 varTangent;
@@ -188,28 +189,32 @@ void main()
 {
 vec4 l9_0=vec4(((texture0*1.002)*2.0)-vec2(1.0),0.0,1.0);
 vec4 l9_1=sc_ModelViewProjectionMatrixArray[0]*l9_0;
-varPos=(sc_ModelMatrix*l9_0).xyz;
-varNormal=normalize(sc_NormalMatrix*normal);
-varPackedTex=vec4(texture0.x,texture0.y,varPackedTex.z,varPackedTex.w);
-varPackedTex=vec4(varPackedTex.x,varPackedTex.y,texture1.x,texture1.y);
+vec4 l9_2=sc_ModelMatrix*l9_0;
+varPosAndMotion=vec4(l9_2.x,l9_2.y,l9_2.z,varPosAndMotion.w);
+vec3 l9_3=normalize(sc_NormalMatrix*normal);
+varNormalAndMotion=vec4(l9_3.x,l9_3.y,l9_3.z,varNormalAndMotion.w);
+varTex01=vec4(texture0.x,texture0.y,varTex01.z,varTex01.w);
+varTex01=vec4(varTex01.x,varTex01.y,texture1.x,texture1.y);
 varScreenPos=l9_1;
 varScreenTexturePos=((l9_1.xy/vec2(l9_1.w))*0.5)+vec2(0.5);
-vec4 l9_2=l9_1*1.0;
-vec4 l9_3;
+vec4 l9_4=l9_1*1.0;
+vec4 l9_5;
 #if (sc_ShaderCacheConstant!=0)
 {
-vec4 l9_4=l9_2;
-l9_4.x=l9_2.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
-l9_3=l9_4;
+vec4 l9_6=l9_4;
+l9_6.x=l9_4.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_5=l9_6;
 }
 #else
 {
-l9_3=l9_2;
+l9_5=l9_4;
 }
 #endif
-gl_Position=l9_3;
-varPos=(script_modelMatrix*(mat4(vec4(12.0,0.0,0.0,0.0),vec4(0.0,12.0,0.0,0.0),vec4(0.0,0.0,12.0,0.0),vec4(0.0,0.0,0.0,1.0))*(mat4(vec4(0.0,0.0,1.0,0.0),vec4(0.0,1.0,0.0,0.0),vec4(-1.0,0.0,0.0,0.0),vec4(0.0,0.0,0.0,1.0))*position))).xyz;
-varNormal=normalize(((script_modelMatrix*mat4(vec4(0.0,0.0,1.0,0.0),vec4(0.0,1.0,0.0,0.0),vec4(-1.0,0.0,0.0,0.0),vec4(0.0,0.0,0.0,1.0)))*vec4(normalize(position.xyz),0.0)).xyz);
+gl_Position=l9_5;
+vec4 l9_8=script_modelMatrix*(mat4(vec4(12.0,0.0,0.0,0.0),vec4(0.0,12.0,0.0,0.0),vec4(0.0,0.0,12.0,0.0),vec4(0.0,0.0,0.0,1.0))*(mat4(vec4(0.0,0.0,1.0,0.0),vec4(0.0,1.0,0.0,0.0),vec4(-1.0,0.0,0.0,0.0),vec4(0.0,0.0,0.0,1.0))*position));
+varPosAndMotion=vec4(l9_8.x,l9_8.y,l9_8.z,varPosAndMotion.w);
+vec3 l9_9=normalize(((script_modelMatrix*mat4(vec4(0.0,0.0,1.0,0.0),vec4(0.0,1.0,0.0,0.0),vec4(-1.0,0.0,0.0,0.0),vec4(0.0,0.0,0.0,1.0)))*vec4(normalize(position.xyz),0.0)).xyz);
+varNormalAndMotion=vec4(l9_9.x,l9_9.y,l9_9.z,varNormalAndMotion.w);
 }
 #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER
 #ifndef sc_FramebufferFetch
@@ -217,68 +222,6 @@ varNormal=normalize(((script_modelMatrix*mat4(vec4(0.0,0.0,1.0,0.0),vec4(0.0,1.0
 #elif sc_FramebufferFetch==1
 #undef sc_FramebufferFetch
 #define sc_FramebufferFetch 1
-#endif
-#if defined(GL_ES)||__VERSION__>=420
-#if sc_FragDataCount>=1
-#define sc_DeclareFragData0(StorageQualifier) layout(location=0) StorageQualifier sc_FragmentPrecision vec4 sc_FragData0
-#endif
-#if sc_FragDataCount>=2
-#define sc_DeclareFragData1(StorageQualifier) layout(location=1) StorageQualifier sc_FragmentPrecision vec4 sc_FragData1
-#endif
-#if sc_FragDataCount>=3
-#define sc_DeclareFragData2(StorageQualifier) layout(location=2) StorageQualifier sc_FragmentPrecision vec4 sc_FragData2
-#endif
-#if sc_FragDataCount>=4
-#define sc_DeclareFragData3(StorageQualifier) layout(location=3) StorageQualifier sc_FragmentPrecision vec4 sc_FragData3
-#endif
-#ifndef sc_DeclareFragData0
-#define sc_DeclareFragData0(_) const vec4 sc_FragData0=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData1
-#define sc_DeclareFragData1(_) const vec4 sc_FragData1=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData2
-#define sc_DeclareFragData2(_) const vec4 sc_FragData2=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData3
-#define sc_DeclareFragData3(_) const vec4 sc_FragData3=vec4(0.0)
-#endif
-#if sc_FramebufferFetch
-#ifdef GL_EXT_shader_framebuffer_fetch
-sc_DeclareFragData0(inout);
-sc_DeclareFragData1(inout);
-sc_DeclareFragData2(inout);
-sc_DeclareFragData3(inout);
-mediump mat4 getFragData() { return mat4(sc_FragData0,sc_FragData1,sc_FragData2,sc_FragData3); }
-#define gl_LastFragData (getFragData())
-#elif defined(GL_ARM_shader_framebuffer_fetch)
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(gl_LastFragColorARM,vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-#ifdef FRAGMENT_SHADER
-#define sc_FragData0 gl_FragData[0]
-#define sc_FragData1 gl_FragData[1]
-#define sc_FragData2 gl_FragData[2]
-#define sc_FragData3 gl_FragData[3]
-#endif
-mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#if sc_FramebufferFetch
-#error Framebuffer fetch is requested but not supported by this device.
-#endif
 #endif
 #ifndef sc_ShaderCacheConstant
 #define sc_ShaderCacheConstant 0
@@ -288,9 +231,6 @@ mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
 #elif baseTexHasSwappedViews==1
 #undef baseTexHasSwappedViews
 #define baseTexHasSwappedViews 1
-#endif
-#ifndef baseTexLayout
-#define baseTexLayout 0
 #endif
 #ifndef borderTexHasSwappedViews
 #define borderTexHasSwappedViews 0
@@ -318,6 +258,9 @@ mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
 #elif SC_USE_CLAMP_TO_BORDER_borderTex==1
 #undef SC_USE_CLAMP_TO_BORDER_borderTex
 #define SC_USE_CLAMP_TO_BORDER_borderTex 1
+#endif
+#ifndef baseTexLayout
+#define baseTexLayout 0
 #endif
 #ifndef SC_SOFTWARE_WRAP_MODE_U_baseTex
 #define SC_SOFTWARE_WRAP_MODE_U_baseTex -1
@@ -351,13 +294,14 @@ uniform mediump sampler2DArray borderTexArrSC;
 uniform mediump sampler2D borderTex;
 uniform mediump sampler2DArray baseTexArrSC;
 uniform mediump sampler2D baseTex;
-in vec2 varShadowTex;
-in vec3 varNormal;
-in vec3 varPos;
+layout(location=0) out vec4 sc_FragData0;
+in vec4 varNormalAndMotion;
+in vec4 varPosAndMotion;
 in vec4 varTangent;
-in vec4 varPackedTex;
+in vec4 varTex01;
 in vec4 varScreenPos;
 in vec2 varScreenTexturePos;
+in vec2 varShadowTex;
 flat in int varStereoViewID;
 in float varClipDistance;
 int borderTexGetStereoViewIndex()
@@ -569,16 +513,11 @@ l9_0=0;
 #endif
 return l9_0;
 }
-void sc_writeFragData0Internal(vec4 col,float zero,int cacheConst)
-{
-col.x+=zero*float(cacheConst);
-sc_FragData0=col;
-}
 void main()
 {
 vec3 l9_0=uniCameraPos-uniSphereCenter;
 float l9_1=max(length(l9_0),100.0);
-vec3 l9_2=uniSphereCenter+(normalize(varNormal)*l9_1);
+vec3 l9_2=uniSphereCenter+(normalize(varNormalAndMotion.xyz)*l9_1);
 vec4 l9_3=script_viewProjectionMatrix*vec4(l9_2,1.0);
 float l9_4=l9_3.w;
 float l9_5=sign(l9_4);
@@ -645,6 +584,19 @@ l9_31=sc_SampleTextureBias(baseTexLayout,baseTexGetStereoViewIndex(),l9_22,false
 l9_31=sc_SampleTextureBias(baseTexLayout,baseTexGetStereoViewIndex(),l9_22,false,mat3(vec3(1.0,0.0,0.0),vec3(0.0,1.0,0.0),vec3(0.0,0.0,1.0)),ivec2(SC_SOFTWARE_WRAP_MODE_U_baseTex,SC_SOFTWARE_WRAP_MODE_V_baseTex),(int(SC_USE_UV_MIN_MAX_baseTex)!=0),baseTexUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_baseTex)!=0),baseTexBorderColor,0.0,baseTex);
 }
 #endif
-sc_writeFragData0Internal(mix(l9_30,l9_31,vec4((step(abs(l9_6.x),1.0)*step(abs(l9_6.y),1.0))*step(abs(l9_6.z),1.0))),sc_UniformConstants.x,sc_ShaderCacheConstant);
+vec4 l9_32=mix(l9_30,l9_31,vec4((step(abs(l9_6.x),1.0)*step(abs(l9_6.y),1.0))*step(abs(l9_6.z),1.0)));
+vec4 l9_33;
+#if (sc_ShaderCacheConstant!=0)
+{
+vec4 l9_34=l9_32;
+l9_34.x=l9_32.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_33=l9_34;
+}
+#else
+{
+l9_33=l9_32;
+}
+#endif
+sc_FragData0=l9_33;
 }
 #endif // #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER

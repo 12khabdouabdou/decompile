@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'TAP\':\'TAP\',\'SWIPE_DOWN\':\'SWIPE_DOWN\',\'SWIPE_UP\':\'SWIPE_UP\',\'SWIPE_LEFT\':\'SWIPE_LEFT\',\'SWIPE_RIGHT\':\'SWIPE_RIGHT\',\'TAP_AND_HOLD\':\'TAP_AND_HOLD\',\'PINCH\':\'PINCH\',\'PAN\':\'PAN\',\'DOUBLE_TAP\':\'DOUBLE_TAP\',\'FOREGROUNDED\':\'FOREGROUNDED\',\'BACKGROUNDED\':\'BACKGROUNDED\',\'VOL_KEY_UP\':\'VOL_KEY_UP\',\'VOL_KEY_DOWN\':\'VOL_KEY_DOWN\',\'SYS_BACK_BTN\':\'SYS_BACK_BTN\',\'SYS_LOCK_DEVICE\':\'SYS_LOCK_DEVICE\',\'SYS_SCREENSHOT\':\'SYS_SCREENSHOT\',\'TAP_LOCATION_FILTER\':\'TAP_LOCATION_FILTER\',\'TAP_LOCATION_STICKER\':\'TAP_LOCATION_STICKER\',\'TAP_LOCATION_SEARCH\':\'TAP_LOCATION_SEARCH\',\'TYPE_LOCATION_SEARCH\':\'TYPE_LOCATION_SEARCH\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

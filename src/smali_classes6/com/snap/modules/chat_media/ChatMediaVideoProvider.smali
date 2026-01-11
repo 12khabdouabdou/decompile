@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRJ2;
+    proxyClass = LzM2;
     schema = "\'getVideoUri\':f|m|(r:\'[0]\', r:\'[1]\'): p<r:\'[2]\'>"
     typeReferences = {
         Lcom/snap/modules/chat_media/ChatMediaIdentifier;,
         Lcom/snap/modules/chat_media/ChatMediaVideoFetchConfiguration;,
-        LQJ2;
+        LyM2;
     }
 .end annotation
 
@@ -28,7 +28,7 @@
             "Lcom/snap/modules/chat_media/ChatMediaVideoFetchConfiguration;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "LQJ2;",
+            "LyM2;",
             ">;"
         }
     .end annotation

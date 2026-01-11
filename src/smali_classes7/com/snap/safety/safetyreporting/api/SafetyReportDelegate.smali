@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Loif;
+    proxyClass = LTAf;
     schema = "\'reportDidComplete\':f?|m|(b),\'reportDidSubmit\':f?|m|(s, s)"
     typeReferences = {}
 .end annotation
@@ -20,11 +20,11 @@
 .end method
 
 .method public abstract reportDidComplete(Z)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract reportDidSubmit(Ljava/lang/String;Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

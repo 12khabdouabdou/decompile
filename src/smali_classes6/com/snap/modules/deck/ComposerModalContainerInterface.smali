@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lqy3;
+    proxyClass = LGB3;
     schema = "\'deckContainerFactory\':r:\'[0]\',\'props\':r?:\'[1]\',\'present\':f|m|(b): p<r:\'[2]\'>,\'dismiss\':f|m|(b): p<r:\'[2]\'>"
     typeReferences = {
         Lcom/snap/modules/deck/ComposerDeckContainerFactoryInterface;,
         Lcom/snap/modules/deck/ComposerDeckPagePropsInterface;,
-        LpNd;
+        LE4e;
     }
 .end annotation
 
@@ -25,7 +25,7 @@
         value = {
             "(Z)",
             "Lcom/snap/composer/promise/Promise<",
-            "LpNd;",
+            "LE4e;",
             ">;"
         }
     .end annotation
@@ -42,7 +42,7 @@
         value = {
             "(Z)",
             "Lcom/snap/composer/promise/Promise<",
-            "LpNd;",
+            "LE4e;",
             ">;"
         }
     .end annotation

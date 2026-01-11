@@ -1,137 +1,108 @@
-.class public final Lks6;
-.super Lls6;
+.class public abstract Lks6;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final b:LZr6;
+# static fields
+.field public static final a:LRE6;
 
 
 # direct methods
-.method public constructor <init>(LZr6;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 17
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LRE6;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lks6;->b:LZr6;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()Ljava/lang/Long;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lks6;->b:LZr6;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LZr6;->a:LUXc;
+    const/16 v1, 0x8
 
     .line 4
     .line 5
-    invoke-interface {v0}, LUXc;->getId()J
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 6
     .line 7
     .line 8
-    move-result-wide v0
+    move-result-object v1
 
     .line 9
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object v2
 
     .line 13
-    return-object v0
-.end method
+    sget-object v3, LcF6;->a:LcF6;
 
-.method public final b()Lftk;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lks6;->b:LZr6;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lks6;->b:LZr6;
-
-    .line 2
-    .line 3
-    iget-boolean v1, p0, Lls6;->a:Z
-
-    .line 4
-    .line 5
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 6
-    .line 7
-    const-string v3, "Regular("
-
-    .line 8
-    .line 9
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object v0, v0, LZr6;->a:LUXc;
-
-    .line 13
     .line 14
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 15
+    const/16 v15, 0x3ff9
+
     .line 16
     .line 17
-    const-string v0, ", banned "
+    const/16 v16, 0x0
 
     .line 18
     .line 19
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v1, 0x0
 
     .line 20
+    const/4 v4, 0x0
+
     .line 21
+    const/4 v5, 0x0
+
     .line 22
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    const/4 v6, 0x0
 
     .line 23
+    const/4 v7, 0x0
+
     .line 24
+    const/4 v8, 0x0
+
     .line 25
-    const-string v0, ")"
+    const/4 v9, 0x0
 
     .line 26
+    const/4 v10, 0x0
+
     .line 27
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v11, 0x0
 
     .line 28
+    const/4 v12, 0x0
+
     .line 29
+    const/4 v13, 0x0
+
     .line 30
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v14, 0x0
 
     .line 31
+    invoke-direct/range {v0 .. v16}, LRE6;-><init>(ILjava/util/List;LcF6;Ljava/lang/String;LSs9;Lupf;LF1j;ZZLjava/lang/Boolean;Ljava/lang/String;LyJ7;LSs9;ZILex5;)V
+
     .line 32
     .line 33
-    move-result-object v0
-
     .line 34
+    sput-object v0, Lks6;->a:LRE6;
+
+    .line 35
+    .line 36
+    return-void
+.end method
+
+.method public static final synthetic a()LRE6;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lks6;->a:LRE6;
+
+    .line 2
+    .line 3
     return-object v0
 .end method

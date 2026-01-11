@@ -1,68 +1,24 @@
-.class public abstract LsV9;
+.class public final LsV9;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LCM8;
 
+# instance fields
+.field public final synthetic a:I
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "LsV9;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, LSR9;
-
-    .line 2
-    .line 3
-    const/16 v1, 0x13
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, LSR9;-><init>(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, LsV9;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final describeContents()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public writeToParcel(Landroid/os/Parcel;I)V
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, LTmk;->k(LCM8;Landroid/os/Parcel;)V
+    iput p1, p0, LsV9;->a:I
 
-    .line 2
-    .line 3
-    .line 4
+    iput-object p2, p0, LsV9;->b:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method

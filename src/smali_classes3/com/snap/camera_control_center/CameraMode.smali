@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'APP_THEME\':0,\'BATCH_CAPTURE\':1,\'GRID_LEVEL\':2,\'MUSIC\':3,\'NIGHT_MODE\':4,\'DUAL_CAM\':5,\'TIMELINE\':6,\'TIMER\':7,\'THREE_D\':8,\'PORTRAIT\':9,\'TONE\':10,\'SPEED_MODE\':11,\'FLIP_CAMERA\':12,\'FLASH\':13,\'IMPORT_MEDIA\':14,\'LENSES\':15,\'GREEN_SCREEN\':16,\'STABILIZATION\':17,\'ULTRA_WIDE\':18,\'DIRECTOR_MODE\':19,\'DIRECTOR_MODE_DRAFTS_PICKER\':20,\'SELFIE_SETTINGS\':21,\'HIGH_DEFINITION\':22"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

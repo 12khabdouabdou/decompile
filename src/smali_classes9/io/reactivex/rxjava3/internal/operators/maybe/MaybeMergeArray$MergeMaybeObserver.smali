@@ -36,7 +36,7 @@
 
 .field public volatile Z:Z
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
@@ -50,7 +50,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;ILio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;)V
+.method public constructor <init>(Lmvi;ILio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;)V
     .locals 0
 
     .line 1
@@ -59,7 +59,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:Lmvi;
 
     .line 5
     .line 6
@@ -147,7 +147,7 @@
 
     .line 13
     .line 14
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:Lmvi;
 
     .line 15
     .line 16
@@ -201,7 +201,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-interface {v0, v4}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, v4}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 41
     .line 42
@@ -210,7 +210,7 @@
 
     .line 44
     :cond_3
-    invoke-interface {v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;->v()I
+    invoke-interface {v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;->s()I
 
     .line 45
     .line 46
@@ -252,7 +252,7 @@
     const/4 v5, 0x0
 
     .line 62
-    invoke-interface {v0, v5}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, v5}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 63
     .line 64
@@ -262,7 +262,7 @@
 
     .line 66
     .line 67
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 68
     .line 69
@@ -291,7 +291,7 @@
     .line 79
     .line 80
     :cond_7
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:Lmvi;
 
     .line 81
     .line 82
@@ -376,11 +376,11 @@
 
     .line 120
     .line 121
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:LV6i;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:Lmvi;
 
     .line 122
     .line 123
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(LV6i;)V
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(Lmvi;)V
 
     .line 124
     .line 125
@@ -405,7 +405,7 @@
 
     .line 134
     .line 135
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 136
     .line 137
@@ -434,7 +434,7 @@
 
     .line 147
     .line 148
-    invoke-interface {v0, v9}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, v9}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 149
     .line 150
@@ -484,11 +484,11 @@
 
     .line 171
     .line 172
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:LV6i;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->a:Lmvi;
 
     .line 173
     .line 174
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(LV6i;)V
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(Lmvi;)V
 
     .line 175
     .line 176
@@ -510,7 +510,7 @@
 
     .line 183
     .line 184
-    invoke-interface {v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;->d()V
+    invoke-interface {v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;->b()V
 
     .line 185
     .line 186
@@ -535,7 +535,7 @@
 
     .line 195
     .line 196
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 197
     .line 198
@@ -773,7 +773,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 4
     .line 5
@@ -830,7 +830,7 @@
     return-object v0
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1

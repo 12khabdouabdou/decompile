@@ -3,168 +3,979 @@
 .source "SourceFile"
 
 # interfaces
-.implements LPJc;
+.implements LAhk;
 
 
-# static fields
-.field public static final a:LJhk;
+# instance fields
+.field public final a:LDhk;
+
+.field public final b:LZu1;
+
+.field public final c:LFhk;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LDhk;LZu1;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LJhk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p1, p0, LJhk;->a:LDhk;
+
     .line 5
     .line 6
-    sput-object v0, LJhk;->a:LJhk;
+    iput-object p2, p0, LJhk;->b:LZu1;
 
     .line 7
     .line 8
-    new-instance v0, Lgdk;
+    iget-object p1, p1, LDhk;->f0:LFhk;
 
     .line 9
     .line 10
-    const/4 v1, 0x1
+    iput-object p1, p0, LJhk;->c:LFhk;
 
     .line 11
-    invoke-direct {v0, v1}, Lgdk;-><init>(I)V
-
     .line 12
-    .line 13
-    .line 14
-    const-class v1, LAdk;
-
-    .line 15
-    .line 16
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    invoke-static {v0, v2}, LsMj;->p(Ljava/util/HashMap;I)Lgdk;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    const/4 v2, 0x3
-
-    .line 30
-    invoke-static {v0, v2}, LsMj;->p(Ljava/util/HashMap;I)Lgdk;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v0
-
-    .line 38
-    const/4 v2, 0x4
-
-    .line 39
-    invoke-static {v0, v2}, LsMj;->p(Ljava/util/HashMap;I)Lgdk;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    const/4 v2, 0x5
-
-    .line 48
-    invoke-static {v0, v2}, LsMj;->p(Ljava/util/HashMap;I)Lgdk;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 57
-    .line 58
-    .line 59
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final a()V
+    .locals 3
 
     .line 1
-    if-nez p1, :cond_0
+    new-instance v0, LHhk;
 
     .line 2
     .line 3
-    check-cast p2, LQJc;
+    const/16 v1, 0xb
 
     .line 4
     .line 5
-    const/4 p1, 0x0
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
 
     .line 6
-    throw p1
-
     .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#initializeBuffers"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final b()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0xe
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#releaseRendererBuffers"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x8
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#getScenarioId"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    check-cast v0, Ljava/lang/String;
+
+    .line 17
+    .line 18
+    return-object v0
+.end method
+
+.method public final close()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
 
     .line 8
     .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    const-string v2, "WarpingProcessor#close"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final d()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x13
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#startPreloading"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final e(Ljava/util/List;ZLapp/aifactory/sdk/api/model/dto/ReenactmentType;)V
+    .locals 6
+
+    .line 1
+    new-instance v0, Lzk;
+
+    .line 2
+    .line 3
+    const/16 v5, 0x11
+
+    .line 4
+    .line 5
+    move-object v1, p0
+
+    .line 6
+    move-object v2, p1
+
+    .line 7
+    move v3, p2
+
+    .line 8
+    move-object v4, p3
+
+    .line 9
+    invoke-direct/range {v0 .. v5}, Lzk;-><init>(Ljava/lang/Object;Ljava/lang/Object;ZLjava/lang/Object;I)V
 
     .line 10
     .line 11
     .line 12
-    throw p1
+    iget-object p1, v1, LJhk;->b:LZu1;
+
+    .line 13
+    .line 14
+    const-string p2, "WarpingProcessor#setTarget"
+
+    .line 15
+    .line 16
+    invoke-static {p1, p2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method public final f()I
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0xd
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#preloadFrame"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    check-cast v0, Ljava/lang/Number;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    return v0
+.end method
+
+.method public final g()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x14
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#startProcessing"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final h()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x4
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v2, "WarpingProcessor#fillBuffers"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final i()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x9
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#hardStop"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final init()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0xa
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#init"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final j()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x6
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v2, "WarpingProcessor#finishProcessing"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final k()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x12
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#softRendererStop"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final l()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x5
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v2, "WarpingProcessor#finishPreloading"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final m()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x3
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v2, "WarpingProcessor#emitMetrics"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final n(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
+    .locals 2
+
+    .line 1
+    new-instance v0, LVV3;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x8
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, p2, p1, v1}, LVV3;-><init>(Ljava/lang/Object;ILjava/lang/Object;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string p2, "WarpingProcessor#getFrame"
+
+    .line 11
+    .line 12
+    invoke-static {p1, p2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    check-cast p1, Landroid/graphics/Bitmap;
+
+    .line 17
+    .line 18
+    return-object p1
+.end method
+
+.method public final o()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0xc
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#load"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final p(I)V
+    .locals 2
+
+    .line 1
+    new-instance v0, LIhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, LIhk;-><init>(LJhk;II)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v1, "WarpingProcessor#renderFrame"
+
+    .line 10
+    .line 11
+    invoke-static {p1, v1, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final q()I
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x7
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v2, "WarpingProcessor#getFramesCount"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Ljava/lang/Number;
+
+    .line 16
+    .line 17
+    invoke-virtual {v0}, Ljava/lang/Number;->intValue()I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    return v0
+.end method
+
+.method public final r()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v2, "WarpingProcessor#closeRenderer"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final restart()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x10
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#restart"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final s(I)V
+    .locals 2
+
+    .line 1
+    new-instance v0, LIhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x3
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, LIhk;-><init>(LJhk;II)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v1, "WarpingProcessor#saveRenderDescription"
+
+    .line 10
+    .line 11
+    invoke-static {p1, v1, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final t(I)V
+    .locals 2
+
+    .line 1
+    new-instance v0, LIhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, LIhk;-><init>(LJhk;II)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v1, "WarpingProcessor#releaseFrameData"
+
+    .line 10
+    .line 11
+    invoke-static {p1, v1, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final u(I)V
+    .locals 2
+
+    .line 1
+    new-instance v0, LIhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, p0, p1, v1}, LIhk;-><init>(LJhk;II)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v1, "WarpingProcessor#prepareFrame"
+
+    .line 10
+    .line 11
+    invoke-static {p1, v1, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final v()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x11
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#saveCalibrationMouthData"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final w()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/16 v1, 0xf
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 9
+    .line 10
+    const-string v2, "WarpingProcessor#renderCalibrationMouth"
+
+    .line 11
+    .line 12
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public final x()V
+    .locals 3
+
+    .line 1
+    new-instance v0, LHhk;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, p0, v1}, LHhk;-><init>(LJhk;I)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object v1, p0, LJhk;->b:LZu1;
+
+    .line 8
+    .line 9
+    const-string v2, "WarpingProcessor#calibrateMouthInsertion"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v2, v0}, Lir4;->r(LZu1;Ljava/lang/String;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
 .end method

@@ -6,9 +6,10 @@
 //attribute vec3 normal 1
 //attribute vec4 tangent 2
 //attribute vec2 texture1 4
-//sampler sampler baseTexSmpSC 0:7
-//texture texture2D baseTex 0:0:0:7
-//texture texture2DArray baseTexArrSC 0:14:0:7
+//output vec4 sc_FragData0 0
+//sampler sampler baseTexSmpSC 0:8
+//texture texture2D baseTex 0:0:0:8
+//texture texture2DArray baseTexArrSC 0:16:0:8
 //spec_const bool SC_USE_CLAMP_TO_BORDER_baseTex 0 0
 //spec_const bool SC_USE_UV_MIN_MAX_baseTex 1 0
 //spec_const bool baseTexHasSwappedViews 2 0
@@ -165,11 +166,11 @@ uniform mat3 baseTexTransform;
 out float varClipDistance;
 in vec4 position;
 in vec2 texture0;
-out vec3 varPos;
-out vec4 varPackedTex;
+out vec4 varPosAndMotion;
+out vec4 varTex01;
 out vec4 varScreenPos;
 out vec2 varScreenTexturePos;
-out vec3 varNormal;
+out vec4 varNormalAndMotion;
 out vec4 varTangent;
 out vec2 varShadowTex;
 flat out int varStereoViewID;
@@ -180,26 +181,27 @@ void main()
 {
 vec4 l9_0=vec4((texture0*2.0)-vec2(1.0),0.0,1.0);
 vec2 l9_1=vec2((baseTexTransform*vec3(texture0,1.0)).xy);
-varPackedTex=vec4(varPackedTex.x,varPackedTex.y,l9_1.x,l9_1.y);
+varTex01=vec4(varTex01.x,varTex01.y,l9_1.x,l9_1.y);
 vec4 l9_2=sc_ModelViewProjectionMatrixArray[0]*l9_0;
-varPos=(sc_ModelMatrix*l9_0).xyz;
-varPackedTex=vec4(texture0.x,texture0.y,varPackedTex.z,varPackedTex.w);
+vec4 l9_3=sc_ModelMatrix*l9_0;
+varPosAndMotion=vec4(l9_3.x,l9_3.y,l9_3.z,varPosAndMotion.w);
+varTex01=vec4(texture0.x,texture0.y,varTex01.z,varTex01.w);
 varScreenPos=l9_2;
 varScreenTexturePos=((l9_2.xy/vec2(l9_2.w))*0.5)+vec2(0.5);
-vec4 l9_3=l9_2*1.0;
-vec4 l9_4;
+vec4 l9_4=l9_2*1.0;
+vec4 l9_5;
 #if (sc_ShaderCacheConstant!=0)
 {
-vec4 l9_5=l9_3;
-l9_5.x=l9_3.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
-l9_4=l9_5;
+vec4 l9_6=l9_4;
+l9_6.x=l9_4.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_5=l9_6;
 }
 #else
 {
-l9_4=l9_3;
+l9_5=l9_4;
 }
 #endif
-gl_Position=l9_4;
+gl_Position=l9_5;
 }
 #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER
 #ifndef sc_FramebufferFetch
@@ -207,68 +209,6 @@ gl_Position=l9_4;
 #elif sc_FramebufferFetch==1
 #undef sc_FramebufferFetch
 #define sc_FramebufferFetch 1
-#endif
-#if defined(GL_ES)||__VERSION__>=420
-#if sc_FragDataCount>=1
-#define sc_DeclareFragData0(StorageQualifier) layout(location=0) StorageQualifier sc_FragmentPrecision vec4 sc_FragData0
-#endif
-#if sc_FragDataCount>=2
-#define sc_DeclareFragData1(StorageQualifier) layout(location=1) StorageQualifier sc_FragmentPrecision vec4 sc_FragData1
-#endif
-#if sc_FragDataCount>=3
-#define sc_DeclareFragData2(StorageQualifier) layout(location=2) StorageQualifier sc_FragmentPrecision vec4 sc_FragData2
-#endif
-#if sc_FragDataCount>=4
-#define sc_DeclareFragData3(StorageQualifier) layout(location=3) StorageQualifier sc_FragmentPrecision vec4 sc_FragData3
-#endif
-#ifndef sc_DeclareFragData0
-#define sc_DeclareFragData0(_) const vec4 sc_FragData0=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData1
-#define sc_DeclareFragData1(_) const vec4 sc_FragData1=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData2
-#define sc_DeclareFragData2(_) const vec4 sc_FragData2=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData3
-#define sc_DeclareFragData3(_) const vec4 sc_FragData3=vec4(0.0)
-#endif
-#if sc_FramebufferFetch
-#ifdef GL_EXT_shader_framebuffer_fetch
-sc_DeclareFragData0(inout);
-sc_DeclareFragData1(inout);
-sc_DeclareFragData2(inout);
-sc_DeclareFragData3(inout);
-mediump mat4 getFragData() { return mat4(sc_FragData0,sc_FragData1,sc_FragData2,sc_FragData3); }
-#define gl_LastFragData (getFragData())
-#elif defined(GL_ARM_shader_framebuffer_fetch)
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(gl_LastFragColorARM,vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-#ifdef FRAGMENT_SHADER
-#define sc_FragData0 gl_FragData[0]
-#define sc_FragData1 gl_FragData[1]
-#define sc_FragData2 gl_FragData[2]
-#define sc_FragData3 gl_FragData[3]
-#endif
-mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#if sc_FramebufferFetch
-#error Framebuffer fetch is requested but not supported by this device.
-#endif
 #endif
 #ifndef sc_ShaderCacheConstant
 #define sc_ShaderCacheConstant 0
@@ -306,13 +246,14 @@ uniform vec4 baseTexUvMinMax;
 uniform vec4 baseTexBorderColor;
 uniform mediump sampler2DArray baseTexArrSC;
 uniform mediump sampler2D baseTex;
-in vec2 varShadowTex;
-in vec4 varPackedTex;
-in vec3 varPos;
-in vec3 varNormal;
+layout(location=0) out vec4 sc_FragData0;
+in vec4 varTex01;
+in vec4 varPosAndMotion;
+in vec4 varNormalAndMotion;
 in vec4 varTangent;
 in vec4 varScreenPos;
 in vec2 varScreenTexturePos;
+in vec2 varShadowTex;
 flat in int varStereoViewID;
 in float varClipDistance;
 vec3 calcDirFromPanoramicTexCoords(vec2 uv)
@@ -395,14 +336,9 @@ l9_0=l9_1;
 }
 return l9_0;
 }
-void sc_writeFragData0Internal(vec4 col,float zero,int cacheConst)
-{
-col.x+=zero*float(cacheConst);
-sc_FragData0=col;
-}
 void main()
 {
-vec2 l9_0=varPackedTex.zw-vec2(0.5);
+vec2 l9_0=varTex01.zw-vec2(0.5);
 vec2 l9_1=(vec2(0.5)+l9_0)+((sign(l9_0)*(baseTexSize.zw*1.0))*0.5);
 vec3 l9_2=calcDirFromPanoramicTexCoords(l9_1);
 vec3 l9_3=normalize(l9_2);
@@ -612,6 +548,21 @@ break;
 }
 vec3 l9_78=l9_21/vec3(9.0);
 float l9_79=max(1.0/max(1.0,max(l9_78.x,max(l9_78.y,l9_78.z))),0.0039607845);
-sc_writeFragData0Internal(vec4(l9_78*l9_79,l9_79),sc_UniformConstants.x,sc_ShaderCacheConstant);
+vec3 l9_80=l9_78*l9_79;
+float l9_81=l9_80.x;
+vec4 l9_82=vec4(l9_81,l9_80.yz,l9_79);
+vec4 l9_83;
+#if (sc_ShaderCacheConstant!=0)
+{
+vec4 l9_84=l9_82;
+l9_84.x=l9_81+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_83=l9_84;
+}
+#else
+{
+l9_83=l9_82;
+}
+#endif
+sc_FragData0=l9_83;
 }
 #endif // #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER

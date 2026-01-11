@@ -2,45 +2,36 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LIW1;
+
+# instance fields
+.field public final a:Landroid/app/Activity;
+
+.field public final b:LIX4;
+
+.field public final c:Ldz6;
 
 
-# virtual methods
-.method public final a(LD4f;Lde7;)V
+# direct methods
+.method public constructor <init>(Landroid/app/Activity;LIX4;Ldz6;)V
     .locals 0
 
     .line 1
-    return-void
-.end method
-
-.method public final b(Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final c(LD4f;)Lde7;
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    return-object p1
-.end method
+    .line 3
+    .line 4
+    iput-object p1, p0, LAA6;->a:Landroid/app/Activity;
 
-.method public final e(LD4f;)V
-    .locals 0
+    .line 5
+    .line 6
+    iput-object p2, p0, LAA6;->b:LIX4;
 
-    .line 1
-    return-void
-.end method
+    .line 7
+    .line 8
+    iput-object p3, p0, LAA6;->c:Ldz6;
 
-.method public final f(Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
+    .line 9
+    .line 10
     return-void
 .end method

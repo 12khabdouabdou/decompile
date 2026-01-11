@@ -7,17 +7,17 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LgW8;
+    proxyClass = LH39;
     schema = "\'friendmojiProvider\':r:\'[0]\',\'friendScoreProvider\':r:\'[1]\',\'observeGroupMembersWithActiveGroupSnap\':f?|m|(s): g<c>:\'[2]\'<a<s>>,\'getRankedGroupMembers\':f?|m|(s, d, d@?): g<c>:\'[2]\'<a<r:\'[3]\'>>,\'getGroupMembers\':f|m|(s, d@?): g<c>:\'[2]\'<a<r:\'[4]\'>>,\'getGroupMembersCount\':f|m|(s): g<c>:\'[2]\'<d@>,\'observeIncomingFriends\':f|m|(): g<c>:\'[2]\'<a<r:\'[5]\'>>,\'observeOutgoingFriends\':f|m|(): g<c>:\'[2]\'<a<r:\'[6]\'>>"
     typeReferences = {
         Lcom/snap/composer/people/FriendmojiProviding;,
         Lcom/snap/composer/people/FriendscoreProviding;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lrqj;,
+        LrPj;,
         Lcom/snap/composer/people/User;,
-        Ltd9;,
+        LKl9;,
         Lcom/snap/composer/people/Friend;
     }
 .end annotation
@@ -59,9 +59,6 @@
 .end method
 
 .method public abstract getRankedGroupMembers(Ljava/lang/String;DLjava/lang/Double;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -71,16 +68,16 @@
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Lrqj;",
+            "LrPj;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract observeGroupMembersWithActiveGroupSnap(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -92,6 +89,9 @@
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract observeIncomingFriends()Lcom/snap/composer/bridge_observables/BridgeObservable;
@@ -100,7 +100,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Ltd9;",
+            "LKl9;",
             ">;>;"
         }
     .end annotation

@@ -1,148 +1,147 @@
 .class public final Lt37;
-.super Ljava/lang/Object;
+.super LZWk;
 .source "SourceFile"
-
-# interfaces
-.implements Lio/reactivex/rxjava3/core/SingleTransformer;
 
 
 # instance fields
-.field public final X:Ljava/lang/Object;
-
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
-
-.field public final c:Ljava/lang/Object;
-
-.field public final t:Ljava/lang/Object;
+.field public final a:LY79;
 
 
 # direct methods
-.method public constructor <init>(LYzb;LWm0;Lajb;LAib;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lt37;->a:I
-
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lt37;->X:Ljava/lang/Object;
-
-    .line 7
-    iput-object p2, p0, Lt37;->b:Ljava/lang/Object;
-
-    .line 8
-    iput-object p3, p0, Lt37;->c:Ljava/lang/Object;
-
-    .line 9
-    iput-object p4, p0, Lt37;->t:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lgmj;Lukd;Lio/reactivex/rxjava3/core/Observable;LDR9;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lt37;->a:I
+.method public constructor <init>(LY79;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lt37;->b:Ljava/lang/Object;
-
     .line 3
-    iput-object p2, p0, Lt37;->c:Ljava/lang/Object;
-
     .line 4
-    iput-object p3, p0, Lt37;->t:Ljava/lang/Object;
+    iput-object p1, p0, Lt37;->a:LY79;
 
     .line 5
-    iput-object p4, p0, Lt37;->X:Ljava/lang/Object;
-
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Lio/reactivex/rxjava3/core/Single;)Lio/reactivex/rxjava3/core/SingleSource;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
-    iget v0, p0, Lt37;->a:I
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
-    .line 5
-    .line 6
-    new-instance v0, Lsib;
+    return v0
 
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lt37;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    iget-object v1, p0, Lt37;->X:Ljava/lang/Object;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    check-cast v1, LYzb;
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, Lt37;
+
     .line 12
-    const/16 v2, 0x14
-
     .line 13
-    .line 14
-    invoke-direct {v0, v1, v2, p0}, Lsib;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    iget-object v1, p0, Lt37;->a:LY79;
 
+    .line 14
     .line 15
+    iget-object p1, p1, Lt37;->a:LY79;
+
     .line 16
     .line 17
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 20
-    .line 21
-    .line 22
-    return-object v1
+    move-result p1
 
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
     .line 23
-    :pswitch_0
-    new-instance v0, LjP6;
+    return v2
 
     .line 24
-    .line 25
-    const/4 v1, 0x4
+    :cond_2
+    return v0
+.end method
 
-    .line 26
-    invoke-direct {v0, v1, p0}, LjP6;-><init>(ILjava/lang/Object;)V
+.method public final hashCode()I
+    .locals 1
 
-    .line 27
-    .line 28
-    .line 29
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    .line 1
+    iget-object v0, p0, Lt37;->a:LY79;
 
-    .line 30
-    .line 31
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    .line 2
+    .line 3
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
-    .line 32
-    .line 33
-    .line 34
-    return-object v1
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
-    .line 35
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "QueryCriteria.ById["
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lt37;->a:LY79;
+
+    .line 9
+    .line 10
+    const-string v2, "]"
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, LAM;->b(Ljava/lang/StringBuilder;LY79;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
 .end method

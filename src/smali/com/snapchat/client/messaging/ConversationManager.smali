@@ -216,10 +216,16 @@
 .method public abstract joinGroupConversation(Lcom/snapchat/client/messaging/UUID;Lcom/snapchat/client/messaging/JoinGroupConversationMetadata;Lcom/snapchat/client/messaging/Callback;)V
 .end method
 
+.method public abstract joinPublicGroup(Lcom/snapchat/client/messaging/UUID;Lcom/snapchat/client/messaging/Callback;)V
+.end method
+
 .method public abstract kickParticipant(Lcom/snapchat/client/messaging/UUID;Lcom/snapchat/client/messaging/UUID;Lcom/snapchat/client/messaging/Callback;)V
 .end method
 
 .method public abstract leaveConversation(Lcom/snapchat/client/messaging/UUID;Lcom/snapchat/client/messaging/Callback;)V
+.end method
+
+.method public abstract leavePublicGroup(Lcom/snapchat/client/messaging/UUID;Lcom/snapchat/client/messaging/Callback;)V
 .end method
 
 .method public abstract listLocalConversations(Lcom/snapchat/client/messaging/ListLocalConversationsCallback;)V

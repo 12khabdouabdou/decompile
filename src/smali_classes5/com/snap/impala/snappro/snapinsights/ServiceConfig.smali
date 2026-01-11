@@ -1,10 +1,10 @@
 .class public final Lcom/snap/impala/snappro/snapinsights/ServiceConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'accountServiceBaseUrl\':s,\'storyServiceBaseUrl\':s,\'storyReplyService\':r?:\'[0]\',\'insightsService\':r?:\'[0]\'"
     typeReferences = {

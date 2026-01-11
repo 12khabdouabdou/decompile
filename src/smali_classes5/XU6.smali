@@ -1,190 +1,236 @@
 .class public final LXU6;
-.super Ljava/lang/Object;
+.super Le57;
 .source "SourceFile"
-
-# interfaces
-.implements Lozd;
-
-
-# static fields
-.field public static final d:LFoj;
 
 
 # instance fields
-.field public final a:LKa3;
+.field public a:I
 
-.field public final b:LaA8;
-
-.field public final c:Lcom/snap/mushroom/app/MushroomApplication;
+.field public b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 12
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    new-instance v0, LFoj;
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
-    sget-object v2, LDS3;->Z:LDS3;
-
     .line 4
+    const/4 v0, 0x0
+
     .line 5
-    const-wide/16 v7, 0x0
+    iput v0, p0, LXU6;->a:I
 
     .line 6
     .line 7
-    const-wide/16 v9, 0x0
+    iput v0, p0, LXU6;->b:I
 
     .line 8
     .line 9
-    const-string v1, "MDP_ANDROID_EXO_CACHE_SIZE"
+    const/4 v0, 0x0
 
     .line 10
-    .line 11
-    const/4 v3, 0x0
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
+    .line 11
     .line 12
-    const/4 v4, 0x0
+    const/4 v0, -0x1
 
     .line 13
-    const-wide/16 v5, 0x0
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
     .line 14
     .line 15
-    const/16 v11, 0xffc
-
-    .line 16
-    .line 17
-    invoke-direct/range {v0 .. v11}, LFoj;-><init>(Ljava/lang/String;Lan0;Ljava/lang/String;ZJJJI)V
-
-    .line 18
-    .line 19
-    .line 20
-    sput-object v0, LXU6;->d:LFoj;
-
-    .line 21
-    .line 22
-    return-void
-.end method
-
-.method public constructor <init>(LKa3;LaA8;Lcom/snap/mushroom/app/MushroomApplication;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LXU6;->a:LKa3;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LXU6;->b:LaA8;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LXU6;->c:Lcom/snap/mushroom/app/MushroomApplication;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()V
-    .locals 5
+.method public final computeSerializedSize()I
+    .locals 3
 
     .line 1
-    sget-object v0, LXU6;->d:LFoj;
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
-    iget-object v1, p0, LXU6;->a:LKa3;
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-virtual {v1, v0}, LKa3;->a(LmKe;)LmKe;
+    iget v1, p0, LXU6;->a:I
 
     .line 6
     .line 7
+    const/4 v2, 0x1
+
     .line 8
-    move-result-object v0
+    and-int/2addr v1, v2
 
     .line 9
-    iget-wide v0, v0, LmKe;->j:J
+    if-eqz v1, :cond_0
 
     .line 10
     .line 11
-    iget-object v2, p0, LXU6;->c:Lcom/snap/mushroom/app/MushroomApplication;
+    iget v1, p0, LXU6;->b:I
 
     .line 12
     .line 13
-    const-string v3, "MDP_EXO_PLAYER_CACHE_SIZE_PREF"
+    invoke-static {v2, v1}, Lbd3;->i(II)I
 
     .line 14
     .line 15
-    const/4 v4, 0x0
-
     .line 16
-    invoke-virtual {v2, v3, v4}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    move-result v1
 
     .line 17
+    add-int/2addr v1, v0
+
     .line 18
+    return v1
+
     .line 19
-    move-result-object v2
+    :cond_0
+    return v0
+.end method
 
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 3
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_3
+
+    .line 6
+    .line 7
+    const/16 v1, 0x8
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
+    goto :goto_1
+
+    .line 18
+    :cond_1
+    invoke-virtual {p1}, LZc3;->r()I
+
+    .line 19
     .line 20
-    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
     .line 21
+    move-result v0
+
     .line 22
+    const/4 v1, 0x1
+
     .line 23
-    move-result-object v2
+    if-eqz v0, :cond_2
 
     .line 24
-    const-string v3, "MDP_ANDROID_EXO_CACHE_SIZE"
-
     .line 25
+    if-eq v0, v1, :cond_2
+
     .line 26
-    invoke-interface {v2, v3, v0, v1}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
-
     .line 27
-    .line 28
-    .line 29
-    move-result-object v2
+    const/4 v2, 0x2
 
+    .line 28
+    if-eq v0, v2, :cond_2
+
+    .line 29
     .line 30
-    invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
+    const/4 v2, 0x3
 
     .line 31
+    if-eq v0, v2, :cond_2
+
     .line 32
     .line 33
-    sget-object v2, LJS3;->X0:LJS3;
+    goto :goto_0
 
     .line 34
+    :cond_2
+    iput v0, p0, LXU6;->b:I
+
     .line 35
-    const/16 v3, 0x400
-
     .line 36
-    .line 37
-    int-to-long v3, v3
+    iget v0, p0, LXU6;->a:I
 
+    .line 37
     .line 38
-    div-long/2addr v0, v3
+    or-int/2addr v0, v1
 
     .line 39
-    iget-object v3, p0, LXU6;->b:LaA8;
+    iput v0, p0, LXU6;->a:I
 
     .line 40
     .line 41
-    invoke-interface {v3, v2, v0, v1}, LaA8;->j(LcTb;J)V
+    goto :goto_0
 
     .line 42
-    .line 43
-    .line 44
+    :cond_3
+    :goto_1
+    return-object p0
+.end method
+
+.method public final writeTo(Lbd3;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LXU6;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    and-int/2addr v0, v1
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget v0, p0, LXU6;->b:I
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v1, v0}, Lbd3;->I(II)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method

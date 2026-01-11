@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/creative_tools_item/NativeCTItemInstance;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'bytes\':t"
     typeReferences = {}

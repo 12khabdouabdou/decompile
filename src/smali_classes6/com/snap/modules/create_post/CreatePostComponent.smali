@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "Lkb4;",
-        "Leb4;",
+        "LLf4;",
+        "LFf4;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:Ldb4;
+.field public static final Companion:LEf4;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ldb4;
+    new-instance v0, LEf4;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/create_post/CreatePostComponent;->Companion:Ldb4;
+    sput-object v0, Lcom/snap/modules/create_post/CreatePostComponent;->Companion:LEf4;
 
     .line 7
     .line 8
@@ -62,32 +62,15 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/create_post/CreatePostComponent;
-    .locals 1
-
-    sget-object v0, Lcom/snap/modules/create_post/CreatePostComponent;->Companion:Ldb4;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {p0, v0, v0, p1, v0}, Ldb4;->a(LqZ8;Lkb4;Leb4;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/create_post/CreatePostComponent;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Lkb4;Leb4;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/create_post/CreatePostComponent;
+.method public static final create(LZ69;LLf4;LFf4;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/create_post/CreatePostComponent;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "Lkb4;",
-            "Leb4;",
-            "LTB3;",
+            "LZ69;",
+            "LLf4;",
+            "LFf4;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/modules/create_post/CreatePostComponent;"
@@ -95,11 +78,28 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/modules/create_post/CreatePostComponent;->Companion:Ldb4;
+    sget-object v0, Lcom/snap/modules/create_post/CreatePostComponent;->Companion:LEf4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2, p3, p4}, Ldb4;->a(LqZ8;Lkb4;Leb4;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/create_post/CreatePostComponent;
+    invoke-static {p0, p1, p2, p3, p4}, LEf4;->a(LZ69;LLf4;LFf4;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/create_post/CreatePostComponent;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/create_post/CreatePostComponent;
+    .locals 1
+
+    sget-object v0, Lcom/snap/modules/create_post/CreatePostComponent;->Companion:LEf4;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, LEf4;->a(LZ69;LLf4;LFf4;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/create_post/CreatePostComponent;
 
     move-result-object p0
 

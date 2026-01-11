@@ -3,272 +3,325 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:I
 
-.field public final synthetic b:LUDi;
+.field public final b:Z
 
-.field public final synthetic c:I
+.field public c:Z
+
+.field public final synthetic t:LTDi;
 
 
 # direct methods
-.method public synthetic constructor <init>(LUDi;II)V
+.method public constructor <init>(LTDi;IZ)V
     .locals 0
 
     .line 1
-    iput p3, p0, LSDi;->a:I
-
-    iput-object p1, p0, LSDi;->b:LUDi;
-
-    iput p2, p0, LSDi;->c:I
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LSDi;->t:LTDi;
+
+    .line 5
+    .line 6
+    iput p2, p0, LSDi;->a:I
+
+    .line 7
+    .line 8
+    iput-boolean p3, p0, LSDi;->b:Z
+
+    .line 9
+    .line 10
+    const/4 p1, 0x0
+
+    .line 11
+    iput-boolean p1, p0, LSDi;->c:Z
+
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 5
+.method public final run()V
+    .locals 4
 
     .line 1
-    iget v0, p0, LSDi;->a:I
+    iget-object v0, p0, LSDi;->t:LTDi;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    monitor-enter v0
 
     .line 4
+    :try_start_0
+    iget-boolean v1, p0, LSDi;->c:Z
+
     .line 5
     .line 6
-    check-cast p1, Lhad;
+    if-eqz v1, :cond_0
 
     .line 7
     .line 8
-    iget-object p1, p0, LSDi;->b:LUDi;
+    monitor-exit v0
 
     .line 9
+    return-void
+
     .line 10
-    iget-object p1, p1, LUDi;->f:Lake;
+    :catchall_0
+    move-exception v1
 
     .line 11
+    goto :goto_1
+
     .line 12
-    invoke-interface {p1}, Lbke;->get()Ljava/lang/Object;
+    :cond_0
+    iget-object v1, p0, LSDi;->t:LTDi;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object p1
+    iget v1, v1, LTDi;->C:I
 
+    .line 15
     .line 16
-    check-cast p1, LaA8;
+    iget v2, p0, LSDi;->a:I
 
     .line 17
     .line 18
-    sget-object v0, LGDb;->Z3:LGDb;
+    if-ne v1, v2, :cond_1
 
     .line 19
     .line 20
-    const-string v1, "is_success"
+    iget-boolean v1, p0, LSDi;->b:Z
 
     .line 21
     .line 22
-    const/4 v2, 0x1
+    if-nez v1, :cond_1
 
     .line 23
-    invoke-static {v0, v1, v2}, LDq9;->Y(LcTb;Ljava/lang/String;Z)LqTb;
-
     .line 24
+    monitor-exit v0
+
     .line 25
+    return-void
+
     .line 26
-    move-result-object v0
+    :cond_1
+    iget-object v1, p0, LSDi;->t:LTDi;
 
     .line 27
-    iget v1, p0, LSDi;->c:I
-
     .line 28
+    const/4 v3, 0x0
+
     .line 29
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iput-object v3, v1, LTDi;->r:LSDi;
 
     .line 30
     .line 31
-    .line 32
-    move-result-object v1
+    iput-object v3, v1, LTDi;->o:Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 32
     .line 33
-    const-string v2, "version"
+    iput v2, v1, LTDi;->C:I
 
     .line 34
     .line 35
-    invoke-virtual {v0, v2, v1}, LqTb;->c(Ljava/lang/String;Ljava/lang/Integer;)V
+    iget v1, p0, LSDi;->a:I
 
     .line 36
     .line 37
-    .line 38
-    invoke-static {p1, v0}, LYz8;->e(LaA8;LqTb;)V
+    invoke-static {v1}, LzHa;->L(I)I
 
+    .line 38
     .line 39
     .line 40
+    move-result v1
+
     .line 41
-    return-void
+    packed-switch v1, :pswitch_data_0
 
     .line 42
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
     .line 43
     .line 44
-    iget-object v0, p0, LSDi;->b:LUDi;
+    goto :goto_0
 
     .line 45
+    :pswitch_0
+    iget-object v1, p0, LSDi;->t:LTDi;
+
     .line 46
-    iget-object v1, v0, LUDi;->f:Lake;
-
     .line 47
-    .line 48
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
+    iget-object v1, v1, LTDi;->a:LEz2;
 
+    .line 48
     .line 49
+    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
     .line 50
     .line 51
-    move-result-object v1
+    iget-object v1, v1, LEz2;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 52
-    check-cast v1, LaA8;
-
     .line 53
-    .line 54
-    sget-object v2, LGDb;->Z3:LGDb;
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
+    .line 54
     .line 55
     .line 56
-    const-string v3, "is_success"
+    goto :goto_0
 
     .line 57
-    .line 58
-    const/4 v4, 0x0
+    :pswitch_1
+    iget-object v1, p0, LSDi;->t:LTDi;
 
+    .line 58
     .line 59
-    invoke-static {v2, v3, v4}, LDq9;->Y(LcTb;Ljava/lang/String;Z)LqTb;
+    invoke-virtual {v1}, LTDi;->e()V
 
     .line 60
     .line 61
     .line 62
-    move-result-object v2
+    goto :goto_0
 
     .line 63
-    iget v3, p0, LSDi;->c:I
+    :pswitch_2
+    iget-object v1, p0, LSDi;->t:LTDi;
 
     .line 64
     .line 65
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v2, 0x2
 
     .line 66
+    invoke-virtual {v1, v2}, LTDi;->k(I)V
+
     .line 67
     .line 68
-    move-result-object v3
-
     .line 69
-    const-string v4, "version"
+    goto :goto_0
 
     .line 70
+    :pswitch_3
+    iget-object v1, p0, LSDi;->t:LTDi;
+
     .line 71
-    invoke-virtual {v2, v4, v3}, LqTb;->c(Ljava/lang/String;Ljava/lang/Integer;)V
-
     .line 72
-    .line 73
-    .line 74
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v2, 0x7
 
+    .line 73
+    invoke-virtual {v1, v2}, LTDi;->k(I)V
+
+    .line 74
     .line 75
     .line 76
+    goto :goto_0
+
     .line 77
-    move-result-object v3
+    :pswitch_4
+    iget-boolean v1, p0, LSDi;->b:Z
 
     .line 78
-    invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
     .line 79
+    if-nez v1, :cond_2
+
     .line 80
     .line 81
-    move-result-object v3
+    iget-object v1, p0, LSDi;->t:LTDi;
 
     .line 82
-    const-string v4, "exception"
-
     .line 83
-    .line 84
-    invoke-virtual {v2, v4, v3}, LqTb;->d(Ljava/lang/String;Ljava/lang/String;)V
+    iget-object v2, v1, LTDi;->s:Ljava/util/concurrent/atomic/AtomicInteger;
 
+    .line 84
     .line 85
+    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
     .line 86
     .line 87
-    invoke-static {v1, v2}, LYz8;->e(LaA8;LqTb;)V
-
     .line 88
-    .line 89
-    .line 90
-    iget-object v0, v0, LUDi;->b:Lake;
+    move-result v2
 
+    .line 89
+    invoke-virtual {v1, v2}, LTDi;->j(I)V
+
+    .line 90
     .line 91
     .line 92
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    goto :goto_0
 
     .line 93
+    :cond_2
+    iget-object v1, p0, LSDi;->t:LTDi;
+
     .line 94
     .line 95
-    move-result-object v0
+    invoke-virtual {v1}, LTDi;->i()V
 
     .line 96
-    check-cast v0, LkT6;
-
     .line 97
     .line 98
-    new-instance v1, LFQ6;
+    goto :goto_0
 
     .line 99
-    .line 100
-    invoke-direct {v1}, LFQ6;-><init>()V
+    :pswitch_5
+    iget-object v1, p0, LSDi;->t:LTDi;
 
+    .line 100
     .line 101
+    iget-object v1, v1, LTDi;->s:Ljava/util/concurrent/atomic/AtomicInteger;
+
     .line 102
     .line 103
-    const/16 v2, 0x15
+    const/4 v2, 0x0
 
     .line 104
-    .line 105
-    invoke-virtual {v1, v2}, LFQ6;->setNonFatalAssert(I)LFQ6;
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
+    .line 105
     .line 106
     .line 107
-    .line 108
-    move-result-object v1
+    iget-object v1, p0, LSDi;->t:LTDi;
 
+    .line 108
     .line 109
-    sget-object v2, LVDi;->a:LWm0;
+    const/4 v2, 0x3
 
     .line 110
+    invoke-virtual {v1, v2}, LTDi;->k(I)V
+
     .line 111
-    const/4 v3, 0x0
-
     .line 112
-    invoke-interface {v0, v1, p1, v2, v3}, LkT6;->c(LFQ6;Ljava/lang/Throwable;LWm0;LURb;)V
-
     .line 113
+    :goto_0
+    monitor-exit v0
+
     .line 114
-    .line 115
     return-void
 
+    .line 115
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 116
-    nop
+    throw v1
 
     .line 117
     :pswitch_data_0
-    .packed-switch 0x0
+    .packed-switch 0x1
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

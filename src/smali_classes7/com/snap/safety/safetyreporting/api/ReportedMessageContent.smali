@@ -1,12 +1,12 @@
 .class public final Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'unknown\':r?:\'[0]\',\'text\':r?:\'[1]\',\'chatMedia\':r?:\'[2]\',\'snap\':r?:\'[3]\',\'qnaResponse\':r?:\'[4]\',\'tinySnap\':r?:\'[5]\',\'storyShare\':r?:\'[6]\',\'voiceNote\':r?:\'[7]\',\'spotlightShare\':r?:\'[8]\',\'creativeToolItem\':r?:\'[9]\'"
+    schema = "\'unknown\':r?:\'[0]\',\'text\':r?:\'[1]\',\'chatMedia\':r?:\'[2]\',\'snap\':r?:\'[3]\',\'qnaResponse\':r?:\'[4]\',\'tinySnap\':r?:\'[5]\',\'storyShare\':r?:\'[6]\',\'voiceNote\':r?:\'[7]\',\'spotlightShare\':r?:\'[8]\',\'creativeToolItem\':r?:\'[9]\',\'mapDropShare\':r?:\'[10]\'"
     typeReferences = {
         Lcom/snap/safety/safetyreporting/api/ReportedMessageUnknown;,
         Lcom/snap/safety/safetyreporting/api/ReportedMessageText;,
@@ -17,7 +17,8 @@
         Lcom/snap/safety/safetyreporting/api/ReportedMessageStoryShare;,
         Lcom/snap/safety/safetyreporting/api/ReportedMessageVoiceNote;,
         Lcom/snap/safety/safetyreporting/api/ReportedSpotlightShare;,
-        Lcom/snap/safety/safetyreporting/api/ReportedMessageCreativeToolItem;
+        Lcom/snap/safety/safetyreporting/api/ReportedMessageCreativeToolItem;,
+        Lcom/snap/safety/safetyreporting/api/ReportedMessageMapDropShare;
     }
 .end annotation
 
@@ -26,6 +27,8 @@
 .field private _chatMedia:Lcom/snap/safety/safetyreporting/api/ReportedMessageChatMedia;
 
 .field private _creativeToolItem:Lcom/snap/safety/safetyreporting/api/ReportedMessageCreativeToolItem;
+
+.field private _mapDropShare:Lcom/snap/safety/safetyreporting/api/ReportedMessageMapDropShare;
 
 .field private _qnaResponse:Lcom/snap/safety/safetyreporting/api/ReportedMessageQnaResponse;
 
@@ -83,44 +86,50 @@
     .line 11
     iput-object v0, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_creativeToolItem:Lcom/snap/safety/safetyreporting/api/ReportedMessageCreativeToolItem;
 
+    .line 12
+    iput-object v0, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_mapDropShare:Lcom/snap/safety/safetyreporting/api/ReportedMessageMapDropShare;
+
     return-void
 .end method
 
-.method public constructor <init>(Lcom/snap/safety/safetyreporting/api/ReportedMessageUnknown;Lcom/snap/safety/safetyreporting/api/ReportedMessageText;Lcom/snap/safety/safetyreporting/api/ReportedMessageChatMedia;Lcom/snap/safety/safetyreporting/api/ReportedMessageSnap;Lcom/snap/safety/safetyreporting/api/ReportedMessageQnaResponse;Lcom/snap/safety/safetyreporting/api/ReportedMessageTinySnap;Lcom/snap/safety/safetyreporting/api/ReportedMessageStoryShare;Lcom/snap/safety/safetyreporting/api/ReportedMessageVoiceNote;Lcom/snap/safety/safetyreporting/api/ReportedSpotlightShare;Lcom/snap/safety/safetyreporting/api/ReportedMessageCreativeToolItem;)V
+.method public constructor <init>(Lcom/snap/safety/safetyreporting/api/ReportedMessageUnknown;Lcom/snap/safety/safetyreporting/api/ReportedMessageText;Lcom/snap/safety/safetyreporting/api/ReportedMessageChatMedia;Lcom/snap/safety/safetyreporting/api/ReportedMessageSnap;Lcom/snap/safety/safetyreporting/api/ReportedMessageQnaResponse;Lcom/snap/safety/safetyreporting/api/ReportedMessageTinySnap;Lcom/snap/safety/safetyreporting/api/ReportedMessageStoryShare;Lcom/snap/safety/safetyreporting/api/ReportedMessageVoiceNote;Lcom/snap/safety/safetyreporting/api/ReportedSpotlightShare;Lcom/snap/safety/safetyreporting/api/ReportedMessageCreativeToolItem;Lcom/snap/safety/safetyreporting/api/ReportedMessageMapDropShare;)V
     .locals 0
 
-    .line 12
+    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
+    .line 14
     iput-object p1, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_unknown:Lcom/snap/safety/safetyreporting/api/ReportedMessageUnknown;
 
-    .line 14
+    .line 15
     iput-object p2, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_text:Lcom/snap/safety/safetyreporting/api/ReportedMessageText;
 
-    .line 15
+    .line 16
     iput-object p3, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_chatMedia:Lcom/snap/safety/safetyreporting/api/ReportedMessageChatMedia;
 
-    .line 16
+    .line 17
     iput-object p4, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_snap:Lcom/snap/safety/safetyreporting/api/ReportedMessageSnap;
 
-    .line 17
+    .line 18
     iput-object p5, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_qnaResponse:Lcom/snap/safety/safetyreporting/api/ReportedMessageQnaResponse;
 
-    .line 18
+    .line 19
     iput-object p6, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_tinySnap:Lcom/snap/safety/safetyreporting/api/ReportedMessageTinySnap;
 
-    .line 19
+    .line 20
     iput-object p7, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_storyShare:Lcom/snap/safety/safetyreporting/api/ReportedMessageStoryShare;
 
-    .line 20
+    .line 21
     iput-object p8, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_voiceNote:Lcom/snap/safety/safetyreporting/api/ReportedMessageVoiceNote;
 
-    .line 21
+    .line 22
     iput-object p9, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_spotlightShare:Lcom/snap/safety/safetyreporting/api/ReportedSpotlightShare;
 
-    .line 22
+    .line 23
     iput-object p10, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_creativeToolItem:Lcom/snap/safety/safetyreporting/api/ReportedMessageCreativeToolItem;
+
+    .line 24
+    iput-object p11, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_mapDropShare:Lcom/snap/safety/safetyreporting/api/ReportedMessageMapDropShare;
 
     return-void
 .end method
@@ -149,7 +158,18 @@
     return-void
 .end method
 
-.method public final c(Lcom/snap/safety/safetyreporting/api/ReportedMessageQnaResponse;)V
+.method public final c(Lcom/snap/safety/safetyreporting/api/ReportedMessageMapDropShare;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/safety/safetyreporting/api/ReportedMessageContent;->_mapDropShare:Lcom/snap/safety/safetyreporting/api/ReportedMessageMapDropShare;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final d(Lcom/snap/safety/safetyreporting/api/ReportedMessageQnaResponse;)V
     .locals 0
 
     .line 1
@@ -160,7 +180,7 @@
     return-void
 .end method
 
-.method public final d(Lcom/snap/safety/safetyreporting/api/ReportedMessageSnap;)V
+.method public final e(Lcom/snap/safety/safetyreporting/api/ReportedMessageSnap;)V
     .locals 0
 
     .line 1
@@ -171,7 +191,7 @@
     return-void
 .end method
 
-.method public final e(Lcom/snap/safety/safetyreporting/api/ReportedSpotlightShare;)V
+.method public final f(Lcom/snap/safety/safetyreporting/api/ReportedSpotlightShare;)V
     .locals 0
 
     .line 1
@@ -182,7 +202,7 @@
     return-void
 .end method
 
-.method public final f(Lcom/snap/safety/safetyreporting/api/ReportedMessageStoryShare;)V
+.method public final g(Lcom/snap/safety/safetyreporting/api/ReportedMessageStoryShare;)V
     .locals 0
 
     .line 1
@@ -193,7 +213,7 @@
     return-void
 .end method
 
-.method public final g(Lcom/snap/safety/safetyreporting/api/ReportedMessageText;)V
+.method public final h(Lcom/snap/safety/safetyreporting/api/ReportedMessageText;)V
     .locals 0
 
     .line 1
@@ -204,7 +224,7 @@
     return-void
 .end method
 
-.method public final h(Lcom/snap/safety/safetyreporting/api/ReportedMessageTinySnap;)V
+.method public final i(Lcom/snap/safety/safetyreporting/api/ReportedMessageTinySnap;)V
     .locals 0
 
     .line 1
@@ -215,7 +235,7 @@
     return-void
 .end method
 
-.method public final i(Lcom/snap/safety/safetyreporting/api/ReportedMessageUnknown;)V
+.method public final j(Lcom/snap/safety/safetyreporting/api/ReportedMessageUnknown;)V
     .locals 0
 
     .line 1
@@ -226,7 +246,7 @@
     return-void
 .end method
 
-.method public final j(Lcom/snap/safety/safetyreporting/api/ReportedMessageVoiceNote;)V
+.method public final k(Lcom/snap/safety/safetyreporting/api/ReportedMessageVoiceNote;)V
     .locals 0
 
     .line 1

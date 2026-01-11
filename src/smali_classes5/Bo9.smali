@@ -1,32 +1,27 @@
 .class public final LBo9;
-.super Ljava/lang/Object;
+.super LLo9;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-
-# instance fields
-.field public final synthetic a:LCo9;
-
-.field public final synthetic b:Lio/reactivex/rxjava3/disposables/SerialDisposable;
+# static fields
+.field public static final a:LBo9;
 
 
 # direct methods
-.method public constructor <init>(LCo9;Lio/reactivex/rxjava3/disposables/SerialDisposable;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LBo9;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LBo9;->a:LCo9;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LBo9;->b:Lio/reactivex/rxjava3/disposables/SerialDisposable;
+    sput-object v0, LBo9;->a:LBo9;
 
     .line 7
     .line 8
@@ -35,215 +30,13 @@
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 5
+.method public final bridge synthetic getType()Ljava/lang/Enum;
+    .locals 1
 
     .line 1
-    check-cast p1, Lhad;
+    sget-object v0, LZo9;->m0:LZo9;
 
     .line 2
     .line 3
-    iget-object v0, p1, Lhad;->a:Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    check-cast v0, Lo09;
-
-    .line 6
-    .line 7
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 10
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p1
-
-    .line 15
-    iget-object v1, p0, LBo9;->a:LCo9;
-
-    .line 16
-    .line 17
-    iget-object v2, v1, LCo9;->a:Lv28;
-
-    .line 18
-    .line 19
-    if-nez p1, :cond_0
-
-    .line 20
-    .line 21
-    invoke-interface {v2, v0}, Lv28;->G2(Lo09;)Ls28;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object p1
-
-    .line 25
-    if-eqz p1, :cond_4
-
-    .line 26
-    .line 27
-    sget-object v0, LKo2$a$a;->c:LKo2$a$a;
-
-    .line 28
-    .line 29
-    invoke-interface {p1, v0}, Ls28;->g1(Ly28;)V
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-interface {p1}, Ljava/io/Closeable;->close()V
-
-    .line 33
-    .line 34
-    .line 35
-    return-void
-
-    .line 36
-    :cond_0
-    iget-object p1, v1, LCo9;->f0:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 37
-    .line 38
-    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v3
-
-    .line 42
-    check-cast v3, Ls28;
-
-    .line 43
-    .line 44
-    if-eqz v3, :cond_1
-
-    .line 45
-    .line 46
-    invoke-interface {v3}, Ljava/io/Closeable;->close()V
-
-    .line 47
-    .line 48
-    .line 49
-    goto :goto_0
-
-    .line 50
-    :cond_1
-    const/4 v3, 0x0
-
-    .line 51
-    :goto_0
-    invoke-interface {v2, v0}, Lv28;->G2(Lo09;)Ls28;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v2
-
-    .line 55
-    :cond_2
-    invoke-virtual {p1, v3, v2}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 56
-    .line 57
-    .line 58
-    move-result v4
-
-    .line 59
-    if-eqz v4, :cond_3
-
-    .line 60
-    .line 61
-    iget-object p1, v1, LCo9;->X:LEE6;
-
-    .line 62
-    .line 63
-    iget-object v2, p1, LEE6;->a:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 64
-    .line 65
-    iget-object v1, v1, LCo9;->Y:LcXe;
-
-    .line 66
-    .line 67
-    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 68
-    .line 69
-    .line 70
-    new-instance v2, LDE6;
-
-    .line 71
-    .line 72
-    invoke-direct {v2, p1, v0, v1}, LDE6;-><init>(LEE6;Lo09;LcXe;)V
-
-    .line 73
-    .line 74
-    .line 75
-    new-instance p1, LKY5;
-
-    .line 76
-    .line 77
-    const/16 v0, 0x18
-
-    .line 78
-    .line 79
-    invoke-direct {p1, v0, v2}, LKY5;-><init>(ILjava/lang/Object;)V
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-static {p1}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object p1
-
-    .line 86
-    iget-object v0, p0, LBo9;->b:Lio/reactivex/rxjava3/disposables/SerialDisposable;
-
-    .line 87
-    .line 88
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/SerialDisposable;->e(Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 89
-    .line 90
-    .line 91
-    return-void
-
-    .line 92
-    :cond_3
-    invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object v4
-
-    .line 96
-    if-eq v4, v3, :cond_2
-
-    .line 97
-    .line 98
-    if-eqz v2, :cond_4
-
-    .line 99
-    .line 100
-    invoke-interface {v2}, Ljava/io/Closeable;->close()V
-
-    .line 101
-    .line 102
-    .line 103
-    :cond_4
-    return-void
+    return-object v0
 .end method

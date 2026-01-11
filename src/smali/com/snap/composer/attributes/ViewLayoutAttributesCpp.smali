@@ -9,18 +9,18 @@
 
 
 # static fields
-.field public static final Companion:LoJj;
+.field public static final Companion:LQ8k;
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, LoJj;
+    new-instance v0, LQ8k;
 
-    invoke-direct {v0}, LoJj;-><init>()V
+    invoke-direct {v0}, LQ8k;-><init>()V
 
-    sput-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LoJj;
+    sput-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LQ8k;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LoJj;
+    sget-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LQ8k;
 
     .line 2
     .line 3
@@ -109,7 +109,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, LoJj;->a(LoJj;JLjava/lang/String;)Z
+    invoke-static {v0, v1, v2, p1}, LQ8k;->a(LQ8k;JLjava/lang/String;)Z
 
     .line 8
     .line 9
@@ -124,7 +124,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LoJj;
+    sget-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LQ8k;
 
     .line 2
     .line 3
@@ -136,7 +136,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, LoJj;->b(LoJj;JLjava/lang/String;)D
+    invoke-static {v0, v1, v2, p1}, LQ8k;->b(LQ8k;JLjava/lang/String;)D
 
     .line 8
     .line 9
@@ -185,7 +185,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LoJj;
+    sget-object v0, Lcom/snap/composer/attributes/ViewLayoutAttributesCpp;->Companion:LQ8k;
 
     .line 2
     .line 3
@@ -197,7 +197,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v0, v1, v2, p1}, LoJj;->c(LoJj;JLjava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1, v2, p1}, LQ8k;->c(LQ8k;JLjava/lang/String;)Ljava/lang/Object;
 
     .line 8
     .line 9

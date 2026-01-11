@@ -1,6 +1,25 @@
-.class public abstract Lpz1;
-.super Ld74;
+.class public final Lpz1;
+.super Lsz1;
 .source "SourceFile"
 
-# interfaces
-.implements LZ18;
+
+# instance fields
+.field public final a:[B
+
+
+# direct methods
+.method public constructor <init>([B)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lpz1;->a:[B
+
+    .line 5
+    .line 6
+    return-void
+.end method

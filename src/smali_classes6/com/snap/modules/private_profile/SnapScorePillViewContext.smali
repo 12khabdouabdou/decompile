@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/private_profile/SnapScorePillViewContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'onImpression\':f?(),\'onTap\':f?(r:\'[0]\'),\'snapScoreObservable\':g<c>:\'[1]\'<d@?>,\'highlightObservable\':g<c>:\'[1]\'<b@>"
     typeReferences = {
@@ -116,7 +116,7 @@
     .locals 0
 
     .line 1
-    sget-object p1, LbQ7;->t:LbQ7;
+    sget-object p1, LOX7;->b:LOX7;
 
     .line 2
     .line 3

@@ -1,22 +1,15 @@
-.class public interface abstract Lqui;
-.super Ljava/lang/Object;
+.class public abstract Lqui;
+.super Landroid/preference/PreferenceFragment;
 .source "SourceFile"
 
 # interfaces
-.implements Lzui;
-.implements Lyui;
-.implements Lwui;
+.implements Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
 
 
 # virtual methods
-.method public abstract b(IZ)Lmui;
-.end method
+.method public final onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
+    .locals 0
 
-.method public abstract c(I[F)V
-.end method
-
-.method public abstract g()Ljava/lang/String;
-.end method
-
-.method public abstract i(JIII[F[F)V
+    .line 1
+    return-void
 .end method

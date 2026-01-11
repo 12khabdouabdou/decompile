@@ -1,60 +1,80 @@
-.class public abstract synthetic LoH5;
+.class public final LoH5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lz2a;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final a:Lcom/snap/core/application/SnapResourcesContextWrapper;
+
+.field public final b:LtM5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Lcom/snap/core/application/SnapResourcesContextWrapper;Llia;LjX6;LtM5;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
-
     .line 3
     .line 4
-    .line 5
-    move-result-object v1
+    iput-object p1, p0, LoH5;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
+    .line 5
     .line 6
-    array-length v1, v1
+    iput-object p4, p0, LoH5;->b:LtM5;
 
     .line 7
-    new-array v1, v1, [I
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;Ljava/lang/String;)Ly2a;
+    .locals 2
+
+    .line 1
+    sget-object v0, Lcom/looksery/sdk/domain/LensFormat;->ARCHIVE:Lcom/looksery/sdk/domain/LensFormat;
+
+    .line 2
+    .line 3
+    invoke-static {p1, p2, v0}, Lcom/looksery/sdk/domain/LensDescriptor;->newBuilder(Ljava/lang/String;Ljava/lang/String;Lcom/looksery/sdk/domain/LensFormat;)Lcom/looksery/sdk/domain/LensDescriptor$Builder;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-virtual {p1}, Lcom/looksery/sdk/domain/LensDescriptor$Builder;->build()Lcom/looksery/sdk/domain/LensDescriptor;
 
     .line 8
     .line 9
-    const/4 v2, 0x0
-
     .line 10
-    const/4 v3, 0x1
+    move-result-object p1
 
     .line 11
-    :try_start_0
-    aput v3, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    new-instance p2, LnH5;
 
     .line 12
     .line 13
-    :catch_0
-    :try_start_1
-    aput v0, v1, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    iget-object v0, p0, LoH5;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
     .line 14
     .line 15
-    :catch_1
-    sput-object v1, LoH5;->a:[I
+    iget-object v1, p0, LoH5;->b:LtM5;
 
     .line 16
     .line 17
-    return-void
+    invoke-direct {p2, v0, p1, v1}, LnH5;-><init>(Lcom/snap/core/application/SnapResourcesContextWrapper;Lcom/looksery/sdk/domain/LensDescriptor;LtM5;)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object p2
 .end method

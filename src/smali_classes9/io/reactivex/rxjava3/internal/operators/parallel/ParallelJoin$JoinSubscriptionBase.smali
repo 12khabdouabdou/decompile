@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -22,7 +22,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicInteger;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
@@ -32,7 +32,7 @@
 
 .field public final Y:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:[Lio/reactivex/rxjava3/internal/operators/parallel/ParallelJoin$JoinInnerSubscriber;
 
@@ -42,7 +42,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;II)V
+.method public constructor <init>(Lmvi;II)V
     .locals 2
 
     .line 1
@@ -90,7 +90,7 @@
 
     .line 24
     .line 25
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelJoin$JoinSubscriptionBase;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/parallel/ParallelJoin$JoinSubscriptionBase;->a:Lmvi;
 
     .line 26
     .line 27

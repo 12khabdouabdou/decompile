@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bloops/inappreporting/api/DreamsSnapReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'contentType\':r<e>:\'[0]\',\'generativeContentMetadata\':r:\'[1]\',\'mediaData\':r?:\'[2]\'"
     typeReferences = {

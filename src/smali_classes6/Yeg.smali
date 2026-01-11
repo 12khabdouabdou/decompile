@@ -1,10 +1,16 @@
 .class public final LYeg;
-.super LcAd;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# instance fields
+.field public final a:F
+
+.field public final b:I
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(IF)V
     .locals 0
 
     .line 1
@@ -13,69 +19,186 @@
     .line 2
     .line 3
     .line 4
+    iput p2, p0, LYeg;->a:F
+
+    .line 5
+    .line 6
+    iput p1, p0, LYeg;->b:I
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final j(LpYc;LOXc;LaXi;)Lio/reactivex/rxjava3/core/Single;
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    check-cast p2, LZL2;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    iget-object p1, p2, LZL2;->f:LTjb;
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    iget-object p1, p1, LTjb;->a:Ljava/lang/String;
+    :cond_0
+    instance-of v1, p1, LYeg;
 
     .line 6
     .line 7
-    if-eqz p1, :cond_0
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    new-instance p1, LM6c;
+    if-nez v1, :cond_1
 
+    .line 9
     .line 10
+    return v2
+
     .line 11
-    const/16 v0, 0x1d
+    :cond_1
+    check-cast p1, LYeg;
 
     .line 12
     .line 13
-    invoke-direct {p1, p0, p2, p3, v0}, LM6c;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    iget v1, p1, LYeg;->a:F
 
     .line 14
     .line 15
+    iget v3, p0, LYeg;->a:F
+
     .line 16
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
     .line 17
-    .line 18
-    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
 
+    .line 18
     .line 19
     .line 20
+    move-result v1
+
     .line 21
-    return-object p2
+    if-eqz v1, :cond_2
 
     .line 22
-    :cond_0
-    new-instance p1, Ljava/lang/RuntimeException;
-
     .line 23
+    return v2
+
     .line 24
-    const-string p2, "Can\'t build an URI to get items with null mediaId."
+    :cond_2
+    iget v1, p0, LYeg;->b:I
 
     .line 25
     .line 26
-    invoke-direct {p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    iget p1, p1, LYeg;->b:I
 
     .line 27
     .line 28
+    if-eq v1, p1, :cond_3
+
     .line 29
-    throw p1
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget v0, p0, LYeg;->a:F
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget v1, p0, LYeg;->b:I
+
+    .line 10
+    .line 11
+    add-int/2addr v0, v1
+
+    .line 12
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SendToShortcutListVisibilityInput(alpha="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, LYeg;->a:F
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", heightPx="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, LYeg;->b:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

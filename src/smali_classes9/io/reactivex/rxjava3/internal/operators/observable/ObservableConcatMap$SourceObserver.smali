@@ -338,7 +338,7 @@
     return-void
 .end method
 
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -534,7 +534,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 4
     .line 5
@@ -565,7 +565,7 @@
     const/4 v0, 0x3
 
     .line 18
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/operators/QueueFuseable;->s(I)I
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/operators/QueueFuseable;->r(I)I
 
     .line 19
     .line 20

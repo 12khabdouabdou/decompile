@@ -1,10 +1,10 @@
 .class public final Lcom/snap/context_reply_all/ContextReplyAllTweaks;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'useRecentFriendRanking\':b@?,\'inputBarEducation\':b@?,\'underInputBarEducation\':b@?,\'displayDialogOnInitialTap\':b@?,\'showTooltipOnInputBar\':b@?,\'useGroupIconForAddMention\':b@?,\'useNativeIconForAddMention\':b@?,\'useMentionedFriendRanking\':b@?"
     typeReferences = {}

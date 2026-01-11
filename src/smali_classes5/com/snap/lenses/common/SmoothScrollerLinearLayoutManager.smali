@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LAGe;
+.implements LjYe;
 
 
 # instance fields
@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public final O0(ILHGe;LBTe;)I
+.method public final T0(ILqYe;Lybf;)I
     .locals 1
 
     .line 1
@@ -73,7 +73,7 @@
 
     .line 12
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/LinearLayoutManager;->O0(ILHGe;LBTe;)I
+    invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/LinearLayoutManager;->T0(ILqYe;Lybf;)I
 
     .line 13
     .line 14
@@ -84,14 +84,14 @@
     return p1
 .end method
 
-.method public final P0(I)V
+.method public final U0(I)V
     .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->F1(II)V
+    invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->K1(II)V
 
     .line 3
     .line 4
@@ -108,38 +108,6 @@
     .line 2
     .line 3
     return v0
-.end method
-
-.method public final a1(Landroidx/recyclerview/widget/RecyclerView;LHGe;I)V
-    .locals 1
-
-    .line 1
-    new-instance p1, LF40;
-
-    .line 2
-    .line 3
-    iget-object p2, p0, Lcom/snap/lenses/common/SmoothScrollerLinearLayoutManager;->F:Landroid/content/Context;
-
-    .line 4
-    .line 5
-    const/4 v0, 0x5
-
-    .line 6
-    invoke-direct {p1, p2, p0, p0, v0}, LF40;-><init>(Landroid/content/Context;Landroidx/recyclerview/widget/LinearLayoutManager;Ljava/lang/Object;I)V
-
-    .line 7
-    .line 8
-    .line 9
-    iput p3, p1, Lgma;->a:I
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, p1}, LwGe;->b1(Lgma;)V
-
-    .line 12
-    .line 13
-    .line 14
-    return-void
 .end method
 
 .method public final d(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/MotionEvent;)Z
@@ -194,7 +162,39 @@
     return p2
 .end method
 
-.method public final j(Z)V
+.method public final f1(Landroidx/recyclerview/widget/RecyclerView;I)V
+    .locals 2
+
+    .line 1
+    new-instance p1, LZ60;
+
+    .line 2
+    .line 3
+    iget-object v0, p0, Lcom/snap/lenses/common/SmoothScrollerLinearLayoutManager;->F:Landroid/content/Context;
+
+    .line 4
+    .line 5
+    const/4 v1, 0x3
+
+    .line 6
+    invoke-direct {p1, v0, p0, p0, v1}, LZ60;-><init>(Landroid/content/Context;Landroidx/recyclerview/widget/LinearLayoutManager;Ljava/lang/Object;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    iput p2, p1, Lvya;->a:I
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1}, LfYe;->g1(Lvya;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final m(Z)V
     .locals 0
 
     .line 1
@@ -208,7 +208,7 @@
     return-void
 .end method
 
-.method public p()Z
+.method public u()Z
     .locals 1
 
     .line 1
@@ -220,7 +220,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->p()Z
+    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->u()Z
 
     .line 6
     .line 7

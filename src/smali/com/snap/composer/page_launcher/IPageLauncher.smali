@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LzX8;
+    proxyClass = Lc59;
     schema = "\'launch\':f|m|(t): p<v>,\'launchForResult\':f|m|(t): p<t>,\'launchPage\':f|m|(r:\'[0]\'): p<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/composer/page_launcher/ComposerPageLaunchPayload;,
@@ -24,7 +24,7 @@
         value = {
             "([B)",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/commerce_blizzard_logging/ICommerceSession;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'commerce_origin_type\':s?,\'commerce_session_id\':s?,\'commerce_product_type\':s?,\'source_id\':s?,\'source_session_id\':s?,\'source_type\':s?,\'tracking_id\':s?,\'is_sponsored\':b@?,\'context_metrics\':r?:\'[0]\',\'product_id\':s?,\'store_id\':s?,\'topic\':s?,\'section_name\':s?,\'section_index\':s?"
     typeReferences = {

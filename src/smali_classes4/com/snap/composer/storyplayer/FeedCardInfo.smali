@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/FeedCardInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'feedCardCompositeId\':s,\'title\':s,\'subtitle\':s?,\'logoUrl\':s?,\'feedCardId\':s?,\'startingSnapId\':s?,\'isManaged\':b@?"
     typeReferences = {}
@@ -66,4 +66,28 @@
     .line 17
     .line 18
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/FeedCardInfo;->_feedCardCompositeId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/composer/storyplayer/FeedCardInfo;->_startingSnapId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

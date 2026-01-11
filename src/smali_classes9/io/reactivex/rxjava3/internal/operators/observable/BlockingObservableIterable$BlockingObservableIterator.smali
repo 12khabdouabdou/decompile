@@ -145,7 +145,7 @@
     throw v1
 .end method
 
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -161,7 +161,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 8
     .line 9
@@ -194,7 +194,7 @@
 
     .line 1
     :goto_0
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/BlockingObservableIterable$BlockingObservableIterator;->c()Z
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/BlockingObservableIterable$BlockingObservableIterator;->d()Z
 
     .line 2
     .line 3
@@ -324,7 +324,7 @@
 
     .line 58
     .line 59
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/BlockingObservableIterable$BlockingObservableIterator;->c()Z
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/observable/BlockingObservableIterable$BlockingObservableIterator;->d()Z
 
     .line 60
     .line 61

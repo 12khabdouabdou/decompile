@@ -68,7 +68,7 @@
     return-void
 .end method
 
-.method public static subscribe(LV6i;Lio/reactivex/rxjava3/functions/Function;ILio/reactivex/rxjava3/internal/util/ErrorMode;)LV6i;
+.method public static subscribe(Lmvi;Lio/reactivex/rxjava3/functions/Function;ILio/reactivex/rxjava3/internal/util/ErrorMode;)Lmvi;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -77,14 +77,14 @@
             "R:",
             "Ljava/lang/Object;",
             ">(",
-            "LV6i;",
+            "Lmvi;",
             "Lio/reactivex/rxjava3/functions/Function<",
             "-TT;+",
-            "LZne;",
+            "LSFe;",
             ">;I",
             "Lio/reactivex/rxjava3/internal/util/ErrorMode;",
             ")",
-            "LV6i;"
+            "Lmvi;"
         }
     .end annotation
 
@@ -115,7 +115,7 @@
 
     .line 12
     .line 13
-    invoke-direct {p3, p0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$ConcatMapImmediate;-><init>(LV6i;Lio/reactivex/rxjava3/functions/Function;I)V
+    invoke-direct {p3, p0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$ConcatMapImmediate;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)V
 
     .line 14
     .line 15
@@ -128,7 +128,7 @@
 
     .line 18
     .line 19
-    invoke-direct {p3, p2, p0, p1, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$ConcatMapDelayed;-><init>(ILV6i;Lio/reactivex/rxjava3/functions/Function;Z)V
+    invoke-direct {p3, p2, p0, p1, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$ConcatMapDelayed;-><init>(ILmvi;Lio/reactivex/rxjava3/functions/Function;Z)V
 
     .line 20
     .line 21
@@ -144,7 +144,7 @@
     const/4 v0, 0x0
 
     .line 26
-    invoke-direct {p3, p2, p0, p1, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$ConcatMapDelayed;-><init>(ILV6i;Lio/reactivex/rxjava3/functions/Function;Z)V
+    invoke-direct {p3, p2, p0, p1, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap$ConcatMapDelayed;-><init>(ILmvi;Lio/reactivex/rxjava3/functions/Function;Z)V
 
     .line 27
     .line 28
@@ -154,7 +154,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 4
 
     .line 1
@@ -166,7 +166,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableScalarXMap;->b(LZne;LV6i;Lio/reactivex/rxjava3/functions/Function;)Z
+    invoke-static {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableScalarXMap;->b(LSFe;Lmvi;Lio/reactivex/rxjava3/functions/Function;)Z
 
     .line 6
     .line 7
@@ -190,7 +190,7 @@
 
     .line 15
     .line 16
-    invoke-static {p1, v1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap;->subscribe(LV6i;Lio/reactivex/rxjava3/functions/Function;ILio/reactivex/rxjava3/internal/util/ErrorMode;)LV6i;
+    invoke-static {p1, v1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatMap;->subscribe(Lmvi;Lio/reactivex/rxjava3/functions/Function;ILio/reactivex/rxjava3/internal/util/ErrorMode;)Lmvi;
 
     .line 17
     .line 18
@@ -198,7 +198,7 @@
     move-result-object p1
 
     .line 20
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Flowable;->subscribe(LV6i;)V
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Flowable;->subscribe(Lmvi;)V
 
     .line 21
     .line 22

@@ -1,155 +1,45 @@
-.class public abstract synthetic LGVh;
+.class public abstract LGVh;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# virtual methods
+.method public abstract a()LnJ1;
+.end method
 
-.field public static final synthetic b:[I
+.method public abstract b()Z
+.end method
 
+.method public abstract c()Z
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public abstract d()LDVh;
+.end method
+
+.method public e()Z
+    .locals 1
 
     .line 1
-    invoke-static {}, LBN7;->values()[LBN7;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    .line 4
-    move-result-object v0
+    return v0
+.end method
 
-    .line 5
-    array-length v0, v0
+.method public abstract f()J
+.end method
 
-    .line 6
-    new-array v0, v0, [I
+.method public abstract g()Landroid/net/Uri;
+.end method
 
-    .line 7
-    .line 8
-    const/4 v1, 0x1
+.method public abstract h()Z
+.end method
 
-    .line 9
-    const/4 v2, 0x0
+.method public abstract i()LHYh;
+.end method
 
-    .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+.method public abstract j()LzZh;
+.end method
 
-    .line 11
-    .line 12
-    :catch_0
-    const/4 v2, 0x2
-
-    .line 13
-    :try_start_1
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 14
-    .line 15
-    :catch_1
-    const/4 v3, 0x3
-
-    .line 16
-    const/4 v4, 0x4
-
-    .line 17
-    :try_start_2
-    aput v3, v0, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 18
-    .line 19
-    :catch_2
-    sput-object v0, LGVh;->a:[I
-
-    .line 20
-    .line 21
-    invoke-static {}, LJSh;->values()[LJSh;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    array-length v0, v0
-
-    .line 26
-    new-array v0, v0, [I
-
-    .line 27
-    .line 28
-    :try_start_3
-    sget-object v4, LJSh;->t:LJSh;
-
-    .line 29
-    .line 30
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    .line 31
-    .line 32
-    .line 33
-    move-result v4
-
-    .line 34
-    aput v1, v0, v4
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 35
-    .line 36
-    :catch_3
-    :try_start_4
-    sget-object v1, LJSh;->X:LJSh;
-
-    .line 37
-    .line 38
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v1
-
-    .line 42
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 43
-    .line 44
-    :catch_4
-    :try_start_5
-    sget-object v1, LJSh;->c:LJSh;
-
-    .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v1
-
-    .line 50
-    aput v3, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 51
-    .line 52
-    :catch_5
-    sput-object v0, LGVh;->b:[I
-
-    .line 53
-    .line 54
-    return-void
+.method public abstract k()Z
 .end method

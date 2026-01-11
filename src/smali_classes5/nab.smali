@@ -4,18 +4,30 @@
 
 
 # instance fields
-.field public final a:Loab;
+.field public final a:Lq25;
 
-.field public final b:LeNe;
+.field public final b:Lq25;
 
-.field public final c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public final c:Lq25;
 
-.field public final d:LBre;
+.field public final d:Lnp0;
+
+.field public final e:LREi;
+
+.field public final f:Lzh5;
+
+.field public final g:LLib;
+
+.field public final h:LnJe;
+
+.field public final i:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+.field public final j:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
 
 # direct methods
-.method public constructor <init>(Loab;LeNe;)V
-    .locals 0
+.method public constructor <init>(LbXg;Lq25;Lq25;Lq25;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,190 +35,404 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lnab;->a:Loab;
+    iput-object p2, p0, Lnab;->a:Lq25;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lnab;->b:LeNe;
+    iput-object p3, p0, Lnab;->b:Lq25;
 
     .line 7
     .line 8
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object p4, p0, Lnab;->c:Lq25;
 
     .line 9
     .line 10
-    .line 11
-    move-result-object p1
+    sget-object p2, Lqbb;->Z:Lqbb;
 
+    .line 11
     .line 12
-    iput-object p1, p0, Lnab;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    const-string p3, "MapDbHelperImpl"
 
     .line 13
     .line 14
-    sget-object p1, LpYa;->Z:LpYa;
+    invoke-static {p2, p2, p3}, Lnfe;->e(Lqbb;Lqbb;Ljava/lang/String;)Lnp0;
 
     .line 15
     .line 16
-    const-string p2, "MapTooltipPresenterImpl"
-
     .line 17
+    move-result-object p4
+
     .line 18
-    invoke-static {p1, p1, p2}, Ln9f;->f(LpYa;LpYa;Ljava/lang/String;)LWm0;
+    iput-object p4, p0, Lnab;->d:Lnp0;
 
     .line 19
     .line 20
-    .line 21
-    move-result-object p1
+    new-instance p4, LV9b;
 
+    .line 21
     .line 22
-    new-instance p2, LBre;
+    const/4 v0, 0x1
 
     .line 23
-    .line 24
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
+    invoke-direct {p4, v0, p0}, LV9b;-><init>(ILjava/lang/Object;)V
 
+    .line 24
     .line 25
     .line 26
-    .line 27
-    iput-object p2, p0, Lnab;->d:LBre;
+    new-instance v0, LREi;
 
+    .line 27
     .line 28
+    invoke-direct {v0, p4}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 29
+    .line 30
+    .line 31
+    iput-object v0, p0, Lnab;->e:LREi;
+
+    .line 32
+    .line 33
+    new-instance p4, LpMa;
+
+    .line 34
+    .line 35
+    const/16 v0, 0x13
+
+    .line 36
+    .line 37
+    invoke-direct {p4, p1, v0, p0}, LpMa;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 38
+    .line 39
+    .line 40
+    new-instance p1, LREi;
+
+    .line 41
+    .line 42
+    invoke-direct {p1, p4}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    check-cast p1, Lzh5;
+
+    .line 50
+    .line 51
+    iput-object p1, p0, Lnab;->f:Lzh5;
+
+    .line 52
+    .line 53
+    invoke-interface {p1}, Lzh5;->h()Luej;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object p1
+
+    .line 57
+    check-cast p1, LVWg;
+
+    .line 58
+    .line 59
+    check-cast p1, LWWg;
+
+    .line 60
+    .line 61
+    iget-object p1, p1, LWWg;->b0:LLib;
+
+    .line 62
+    .line 63
+    iput-object p1, p0, Lnab;->g:LLib;
+
+    .line 64
+    .line 65
+    new-instance p1, Lnp0;
+
+    .line 66
+    .line 67
+    invoke-direct {p1, p2, p3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
+    .line 68
+    .line 69
+    .line 70
+    new-instance p2, LnJe;
+
+    .line 71
+    .line 72
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 73
+    .line 74
+    .line 75
+    iput-object p2, p0, Lnab;->h:LnJe;
+
+    .line 76
+    .line 77
+    new-instance p1, Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 78
+    .line 79
+    invoke-direct {p1}, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+
+    .line 80
+    .line 81
+    .line 82
+    iput-object p1, p0, Lnab;->i:Ljava/util/concurrent/CopyOnWriteArrayList;
+
+    .line 83
+    .line 84
+    new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 85
+    .line 86
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
+    .line 87
+    .line 88
+    .line 89
+    iput-object p2, p0, Lnab;->j:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 90
+    .line 91
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lrab;)Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 4
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 10
 
     .line 1
-    new-instance v0, Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iget-object v0, p0, Lnab;->i:Ljava/util/concurrent/CopyOnWriteArrayList;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+    invoke-virtual {v0}, Ljava/util/concurrent/CopyOnWriteArrayList;->isEmpty()Z
 
     .line 4
     .line 5
     .line 6
-    new-instance v1, Laxa;
+    move-result v0
 
     .line 7
-    .line 8
-    const/4 v2, 0x1
+    if-eqz v0, :cond_0
 
+    .line 8
     .line 9
-    invoke-direct {v1, v0, v2}, Laxa;-><init>(Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
+    iget-object v0, p0, Lnab;->g:LLib;
 
     .line 10
     .line 11
-    .line 12
-    iget-boolean v2, p1, Lrab;->d:Z
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 12
     .line 13
     .line 14
-    if-eqz v2, :cond_1
+    const-string v1, "Friend"
 
     .line 15
     .line 16
-    iget-object v2, p1, Lrab;->c:Landroidx/constraintlayout/widget/ConstraintLayout;
+    filled-new-array {v1}, [Ljava/lang/String;
 
     .line 17
     .line 18
-    if-eqz v2, :cond_0
-
     .line 19
+    move-result-object v4
+
     .line 20
-    invoke-virtual {v2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    new-instance v9, LJib;
 
     .line 21
     .line 22
+    const/4 v1, 0x0
+
     .line 23
-    goto :goto_0
+    invoke-direct {v9, v0, v1}, LJib;-><init>(LLib;I)V
 
     .line 24
-    :cond_0
-    const-string p1, "tooltipContainer"
-
     .line 25
     .line 26
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    new-instance v2, LbLg;
 
     .line 27
     .line 28
-    .line 29
-    const/4 p1, 0x0
+    iget-object v5, v0, Lvej;->a:Lkch;
 
+    .line 29
     .line 30
-    throw p1
+    const-string v6, "Map.sq"
 
     .line 31
-    :cond_1
-    iput-object v1, p1, Lrab;->f:Laxa;
-
     .line 32
-    .line 33
-    :goto_0
-    iget-object v1, p0, Lnab;->b:LeNe;
+    const v3, -0x74df4b16
 
+    .line 33
     .line 34
     .line 35
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v7, "getAllFriendsInfo"
 
     .line 36
     .line 37
+    const-string v8, "SELECT\n    Friend._id,\n    Friend.displayName AS lastInteractionUserDisplayName,\n    Friend.username AS lastInteractionUserUsername,\n    Friend.userId AS lastInteractionUserId\nFROM Friend"
+
     .line 38
-    sget-object v1, LUga;->e0:LUga;
-
     .line 39
-    .line 40
-    iget-object v2, p0, Lnab;->c:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-direct/range {v2 .. v9}, LbLg;-><init>(I[Ljava/lang/String;Lkch;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
 
+    .line 40
     .line 41
     .line 42
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, Lnab;->f:Lzh5;
 
     .line 43
     .line 44
-    .line 45
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;
+    invoke-interface {v0, v2}, Lzh5;->f(LtJe;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 45
     .line 46
     .line 47
-    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+    move-result-object v0
 
     .line 48
+    iget-object v1, p0, Lnab;->b:Lq25;
+
     .line 49
     .line 50
-    new-instance v1, LX89;
+    invoke-virtual {v1}, Lq25;->get()Ljava/lang/Object;
 
     .line 51
     .line 52
-    const/16 v2, 0x15
-
     .line 53
+    move-result-object v1
+
     .line 54
-    invoke-direct {v1, p0, v0, p1, v2}, LX89;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    check-cast v1, LGm7;
 
     .line 55
     .line 56
-    .line 57
-    invoke-virtual {v3, v1}, Lio/reactivex/rxjava3/core/Observable;->D(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v1}, LGm7;->e()Lio/reactivex/rxjava3/core/Observable;
 
+    .line 57
     .line 58
     .line 59
+    move-result-object v1
+
     .line 60
-    move-result-object p1
+    sget-object v2, LGxa;->k:LGxa;
 
     .line 61
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 62
+    invoke-static {v0, v1, v2}, Lio/reactivex/rxjava3/core/Observable;->x(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Observable;
+
     .line 63
     .line 64
-    move-result-object p1
-
     .line 65
-    return-object p1
+    move-result-object v0
+
+    .line 66
+    new-instance v1, Lh3b;
+
+    .line 67
+    .line 68
+    const/4 v2, 0x5
+
+    .line 69
+    invoke-direct {v1, v2, p0}, Lh3b;-><init>(ILjava/lang/Object;)V
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 73
+    .line 74
+    .line 75
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 76
+    .line 77
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 78
+    .line 79
+    .line 80
+    new-instance v0, LIGa;
+
+    .line 81
+    .line 82
+    const/16 v1, 0x16
+
+    .line 83
+    .line 84
+    invoke-direct {v0, v1, p0}, LIGa;-><init>(ILjava/lang/Object;)V
+
+    .line 85
+    .line 86
+    .line 87
+    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v0
+
+    .line 91
+    iget-object v1, p0, Lnab;->h:LnJe;
+
+    .line 92
+    .line 93
+    invoke-virtual {v1}, LnJe;->k()LA36;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object v1
+
+    .line 97
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+
+    .line 98
+    .line 99
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 100
+    .line 101
+    .line 102
+    const-string v0, "MapDbHelperImpl:latestFeedInteractionsStateForAllFriends from feedEntryStore"
+
+    .line 103
+    .line 104
+    invoke-static {v2, v0}, LZcj;->p(Lio/reactivex/rxjava3/core/Observable;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v0
+
+    .line 108
+    return-object v0
+
+    .line 109
+    :cond_0
+    iget-object v0, p0, Lnab;->j:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 110
+    .line 111
+    invoke-static {v0, v0}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v0
+
+    .line 115
+    return-object v0
 .end method

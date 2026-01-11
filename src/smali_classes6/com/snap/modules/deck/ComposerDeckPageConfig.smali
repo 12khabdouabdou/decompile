@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lkv3;
+    proxyClass = Lpy3;
     schema = "\'page\':d,\'componentPath\':s,\'componentViewModel\':m<s,u>,\'componentContext\':m<s,u>,\'isDynamicTypeEligible\':b@?"
     typeReferences = {}
 .end annotation

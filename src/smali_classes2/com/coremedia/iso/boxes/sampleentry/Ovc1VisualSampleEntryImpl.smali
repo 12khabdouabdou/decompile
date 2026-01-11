@@ -87,7 +87,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 21
     .line 22
@@ -220,7 +220,7 @@
     return-object v0
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -229,7 +229,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p3, p4}, Lskk;->s(J)I
+    invoke-static {p3, p4}, LXJk;->f(J)I
 
     .line 2
     .line 3
@@ -245,7 +245,7 @@
     move-result-object p2
 
     .line 9
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 10
     .line 11
@@ -258,7 +258,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 17
     .line 18

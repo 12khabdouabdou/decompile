@@ -21,12 +21,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lzre;Lio/reactivex/rxjava3/core/Observable;)V
+.method public constructor <init>(LlJe;Lio/reactivex/rxjava3/core/Observable;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lzre;",
+            "LlJe;",
             "Lio/reactivex/rxjava3/core/Observable<",
             "TT;>;)V"
         }
@@ -51,11 +51,11 @@
 
     .line 10
     .line 11
-    check-cast p1, LBre;
+    check-cast p1, LnJe;
 
     .line 12
     .line 13
-    invoke-virtual {p1}, LBre;->i()Lgn0;
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
 
     .line 14
     .line 15
@@ -63,7 +63,7 @@
     move-result-object p1
 
     .line 17
-    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 18
     .line 19
@@ -71,7 +71,7 @@
     move-result-object p1
 
     .line 21
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
 
     .line 22
     .line 23
@@ -79,33 +79,34 @@
     move-result-object p1
 
     .line 25
-    new-instance p2, Lrv1;
+    new-instance p2, LGy1;
 
     .line 26
     .line 27
-    const/4 v0, 0x6
+    const/16 v0, 0x8
 
     .line 28
-    invoke-direct {p2, v0, p0}, Lrv1;-><init>(ILjava/lang/Object;)V
-
     .line 29
+    invoke-direct {p2, v0, p0}, LGy1;-><init>(ILjava/lang/Object;)V
+
     .line 30
     .line 31
+    .line 32
     const/4 v0, 0x1
 
-    .line 32
-    invoke-virtual {p1, v0, p2}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->b1(ILio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/core/Observable;
-
     .line 33
+    invoke-virtual {p1, v0, p2}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->e1(ILio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/core/Observable;
+
     .line 34
     .line 35
+    .line 36
     move-result-object p1
 
-    .line 36
+    .line 37
     iput-object p1, p0, Lcom/snap/composer/people/CachableQuery;->b:Lio/reactivex/rxjava3/core/Observable;
 
-    .line 37
     .line 38
+    .line 39
     return-void
 .end method
 

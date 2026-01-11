@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'PIVOT_UNSET\':0,\'PIVOT_CATEGORY\':1,\'PIVOT_SORT\':2,\'PIVOT_CATEGORY_SINGLE_SELECT\':3,\'PIVOT_CATEGORY_MULTI_SELECT\':4,\'PIVOT_ANNOTATION\':5,\'PIVOT_ATTRIBUTE\':6"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

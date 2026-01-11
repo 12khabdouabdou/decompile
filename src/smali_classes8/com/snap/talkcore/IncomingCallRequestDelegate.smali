@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lrd9;
+    proxyClass = LIl9;
     schema = "\'onIncomingCallRequestReceived\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/talkcore/IncomingCallRequest;

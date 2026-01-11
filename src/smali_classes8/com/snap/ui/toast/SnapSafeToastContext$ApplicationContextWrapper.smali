@@ -35,7 +35,7 @@
 
     .line 8
     .line 9
-    new-instance v0, LcPg;
+    new-instance v0, Lhbh;
 
     .line 10
     .line 11
@@ -59,7 +59,7 @@
 
     .line 20
     .line 21
-    invoke-direct {v0, p1}, LcPg;-><init>(Landroid/view/WindowManager;)V
+    invoke-direct {v0, p1}, Lhbh;-><init>(Landroid/view/WindowManager;)V
 
     .line 22
     .line 23

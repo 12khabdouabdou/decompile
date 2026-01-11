@@ -1,14 +1,14 @@
 .class public final LIRi;
-.super LUVi;
+.super Lhlj;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lobi;
+.field public final a:LiAi;
 
 
 # direct methods
-.method public constructor <init>(LAG8;)V
+.method public constructor <init>(LCN8;)V
     .locals 3
 
     .line 1
@@ -17,29 +17,29 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LYVi;
+    new-instance v0, Lllj;
 
     .line 5
     .line 6
-    new-instance v1, LPWi;
+    new-instance v1, Lhmj;
 
     .line 7
     .line 8
-    const-class v2, LRCd;
+    const-class v2, LWPi;
 
     .line 9
     .line 10
-    invoke-direct {v1, v2}, LPWi;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v1, v2}, Lhmj;-><init>(Ljava/lang/reflect/Type;)V
 
     .line 11
     .line 12
     .line 13
-    invoke-direct {v0, p1, v1}, LYVi;-><init>(LAG8;LPWi;)V
+    invoke-direct {v0, p1, v1}, Lllj;-><init>(LCN8;Lhmj;)V
 
     .line 14
     .line 15
     .line 16
-    invoke-static {v0}, LCq9;->c1(Lobi;)Lobi;
+    invoke-static {v0}, LIjj;->W(LiAi;)LiAi;
 
     .line 17
     .line 18
@@ -47,7 +47,7 @@
     move-result-object p1
 
     .line 20
-    iput-object p1, p0, LIRi;->a:Lobi;
+    iput-object p1, p0, LIRi;->a:LiAi;
 
     .line 21
     .line 22
@@ -56,7 +56,7 @@
 
 
 # virtual methods
-.method public a(LDB9;)LHRi;
+.method public a(LUK9;)LFRi;
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -68,7 +68,7 @@
     const/4 v0, 0x1
 
     .line 2
-    invoke-virtual {p1}, LDB9;->C()I
+    invoke-virtual {p1}, LUK9;->D()I
 
     .line 3
     .line 4
@@ -84,7 +84,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {p1}, LDB9;->y()V
+    invoke-virtual {p1}, LUK9;->x()V
 
     .line 11
     .line 12
@@ -96,26 +96,26 @@
 
     .line 15
     :cond_0
-    new-instance v1, LHRi;
+    new-instance v1, LFRi;
 
     .line 16
     .line 17
-    invoke-direct {v1}, LHRi;-><init>()V
+    invoke-direct {v1}, LFRi;-><init>()V
 
     .line 18
     .line 19
     .line 20
-    iput-boolean v0, p1, LDB9;->b:Z
+    iput-boolean v0, p1, LUK9;->b:Z
 
     .line 21
     .line 22
-    invoke-virtual {p1}, LDB9;->b()V
+    invoke-virtual {p1}, LUK9;->c()V
 
     .line 23
     .line 24
     .line 25
     :goto_0
-    invoke-virtual {p1}, LDB9;->i()Z
+    invoke-virtual {p1}, LUK9;->i()Z
 
     .line 26
     .line 27
@@ -123,11 +123,11 @@
     move-result v3
 
     .line 29
-    if-eqz v3, :cond_7
+    if-eqz v3, :cond_9
 
     .line 30
     .line 31
-    invoke-virtual {p1}, LDB9;->w()Ljava/lang/String;
+    invoke-virtual {p1}, LUK9;->v()Ljava/lang/String;
 
     .line 32
     .line 33
@@ -160,7 +160,7 @@
 
     .line 47
     :sswitch_0
-    const-string v5, "scale"
+    const-string v5, "color"
 
     .line 48
     .line 49
@@ -180,14 +180,14 @@
 
     .line 56
     :cond_1
-    const/4 v4, 0x2
+    const/4 v4, 0x3
 
     .line 57
     goto :goto_1
 
     .line 58
     :sswitch_1
-    const-string v5, "rotation"
+    const-string v5, "y"
 
     .line 59
     .line 60
@@ -207,14 +207,14 @@
 
     .line 67
     :cond_2
-    const/4 v4, 0x1
+    const/4 v4, 0x2
 
     .line 68
     goto :goto_1
 
     .line 69
     :sswitch_2
-    const-string v5, "translation"
+    const-string v5, "x"
 
     .line 70
     .line 71
@@ -234,165 +234,168 @@
 
     .line 78
     :cond_3
-    const/4 v4, 0x0
+    const/4 v4, 0x1
 
     .line 79
-    :goto_1
-    packed-switch v4, :pswitch_data_0
+    goto :goto_1
 
     .line 80
+    :sswitch_3
+    const-string v5, "radius"
+
     .line 81
     .line 82
-    invoke-virtual {p1}, LDB9;->K()V
+    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 83
     .line 84
     .line 85
-    goto :goto_0
+    move-result v3
 
     .line 86
-    :pswitch_0
-    invoke-virtual {p1}, LDB9;->C()I
+    if-nez v3, :cond_4
 
     .line 87
     .line 88
+    goto :goto_1
+
     .line 89
-    move-result v3
+    :cond_4
+    const/4 v4, 0x0
 
     .line 90
-    if-ne v3, v2, :cond_4
+    :goto_1
+    packed-switch v4, :pswitch_data_0
 
     .line 91
     .line 92
-    invoke-virtual {p1}, LDB9;->y()V
-
     .line 93
+    invoke-virtual {p1}, LUK9;->I()V
+
     .line 94
     .line 95
+    .line 96
     goto :goto_0
 
-    .line 96
-    :cond_4
-    invoke-virtual {p1}, LDB9;->o()D
-
     .line 97
+    :pswitch_0
+    invoke-virtual {p1}, LUK9;->D()I
+
     .line 98
     .line 99
-    move-result-wide v3
-
     .line 100
-    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    move-result v3
 
     .line 101
+    if-ne v3, v2, :cond_5
+
     .line 102
     .line 103
-    move-result-object v3
+    invoke-virtual {p1}, LUK9;->x()V
 
     .line 104
-    iput-object v3, v1, LHRi;->b:Ljava/lang/Double;
-
     .line 105
     .line 106
     goto :goto_0
 
     .line 107
-    :pswitch_1
-    invoke-virtual {p1}, LDB9;->C()I
+    :cond_5
+    iget-object v3, p0, LIRi;->a:LiAi;
 
     .line 108
     .line 109
+    invoke-interface {v3}, LiAi;->get()Ljava/lang/Object;
+
     .line 110
-    move-result v3
-
     .line 111
-    if-ne v3, v2, :cond_5
-
     .line 112
+    move-result-object v3
+
     .line 113
-    invoke-virtual {p1}, LDB9;->y()V
+    check-cast v3, Lhlj;
 
     .line 114
     .line 115
+    invoke-virtual {v3, p1}, Lhlj;->read(LUK9;)Ljava/lang/Object;
+
     .line 116
-    goto :goto_0
-
     .line 117
-    :cond_5
-    invoke-virtual {p1}, LDB9;->o()D
-
     .line 118
-    .line 119
-    .line 120
-    move-result-wide v3
+    move-result-object v3
 
+    .line 119
+    check-cast v3, LWPi;
+
+    .line 120
     .line 121
-    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    iput-object v3, v1, LFRi;->a:LWPi;
 
     .line 122
     .line 123
-    .line 124
-    move-result-object v3
-
-    .line 125
-    iput-object v3, v1, LHRi;->c:Ljava/lang/Double;
-
-    .line 126
-    .line 127
     goto :goto_0
 
+    .line 124
+    :pswitch_1
+    invoke-virtual {p1}, LUK9;->D()I
+
+    .line 125
+    .line 126
+    .line 127
+    move-result v3
+
     .line 128
-    :pswitch_2
-    invoke-virtual {p1}, LDB9;->C()I
+    if-ne v3, v2, :cond_6
 
     .line 129
     .line 130
+    invoke-virtual {p1}, LUK9;->x()V
+
     .line 131
-    move-result v3
-
     .line 132
-    if-ne v3, v2, :cond_6
-
     .line 133
+    goto :goto_0
+
     .line 134
-    invoke-virtual {p1}, LDB9;->y()V
+    :cond_6
+    invoke-virtual {p1}, LUK9;->o()D
 
     .line 135
     .line 136
     .line 137
-    goto :goto_0
+    move-result-wide v3
 
     .line 138
-    :cond_6
-    iget-object v3, p0, LIRi;->a:Lobi;
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 139
     .line 140
-    invoke-interface {v3}, Lobi;->get()Ljava/lang/Object;
-
     .line 141
-    .line 142
-    .line 143
     move-result-object v3
 
+    .line 142
+    iput-object v3, v1, LFRi;->c:Ljava/lang/Double;
+
+    .line 143
     .line 144
-    check-cast v3, LUVi;
+    goto :goto_0
 
     .line 145
-    .line 146
-    invoke-virtual {v3, p1}, LUVi;->read(LDB9;)Ljava/lang/Object;
+    :pswitch_2
+    invoke-virtual {p1}, LUK9;->D()I
 
+    .line 146
     .line 147
     .line 148
+    move-result v3
+
     .line 149
-    move-result-object v3
+    if-ne v3, v2, :cond_7
 
     .line 150
-    check-cast v3, LRCd;
-
     .line 151
-    .line 152
-    iput-object v3, v1, LHRi;->a:LRCd;
+    invoke-virtual {p1}, LUK9;->x()V
 
+    .line 152
     .line 153
     .line 154
     goto/16 :goto_0
@@ -400,47 +403,122 @@
     .line 155
     .line 156
     :cond_7
-    invoke-virtual {p1}, LDB9;->g()V
+    invoke-virtual {p1}, LUK9;->o()D
 
     .line 157
     .line 158
     .line 159
-    return-object v1
+    move-result-wide v3
 
     .line 160
-    nop
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 161
-    :sswitch_data_0
-    .sparse-switch
-        -0x6db60d4f -> :sswitch_2
-        -0x266f082 -> :sswitch_1
-        0x683094a -> :sswitch_0
-    .end sparse-switch
-
     .line 162
     .line 163
+    move-result-object v3
+
     .line 164
+    iput-object v3, v1, LFRi;->b:Ljava/lang/Double;
+
     .line 165
     .line 166
+    goto/16 :goto_0
+
     .line 167
     .line 168
+    :pswitch_3
+    invoke-virtual {p1}, LUK9;->D()I
+
     .line 169
     .line 170
     .line 171
+    move-result v3
+
     .line 172
+    if-ne v3, v2, :cond_8
+
     .line 173
     .line 174
+    invoke-virtual {p1}, LUK9;->x()V
+
     .line 175
+    .line 176
+    .line 177
+    goto/16 :goto_0
+
+    .line 178
+    .line 179
+    :cond_8
+    invoke-virtual {p1}, LUK9;->o()D
+
+    .line 180
+    .line 181
+    .line 182
+    move-result-wide v3
+
+    .line 183
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 184
+    .line 185
+    .line 186
+    move-result-object v3
+
+    .line 187
+    iput-object v3, v1, LFRi;->d:Ljava/lang/Double;
+
+    .line 188
+    .line 189
+    goto/16 :goto_0
+
+    .line 190
+    .line 191
+    :cond_9
+    invoke-virtual {p1}, LUK9;->g()V
+
+    .line 192
+    .line 193
+    .line 194
+    return-object v1
+
+    .line 195
+    :sswitch_data_0
+    .sparse-switch
+        -0x37f1936e -> :sswitch_3
+        0x78 -> :sswitch_2
+        0x79 -> :sswitch_1
+        0x5a72f63 -> :sswitch_0
+    .end sparse-switch
+
+    .line 196
+    .line 197
+    .line 198
+    .line 199
+    .line 200
+    .line 201
+    .line 202
+    .line 203
+    .line 204
+    .line 205
+    .line 206
+    .line 207
+    .line 208
+    .line 209
+    .line 210
+    .line 211
+    .line 212
+    .line 213
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_3
         :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method
 
-.method public b(LaC9;LHRi;)V
+.method public b(LrL9;LFRi;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -453,7 +531,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LaC9;->j()LaC9;
+    invoke-virtual {p1}, LrL9;->j()LrL9;
 
     .line 4
     .line 5
@@ -465,16 +543,16 @@
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p1, LaC9;->Y:Z
+    iput-boolean v0, p1, LrL9;->Y:Z
 
     .line 9
     .line 10
-    invoke-virtual {p1}, LaC9;->c()V
+    invoke-virtual {p1}, LrL9;->d()V
 
     .line 11
     .line 12
     .line 13
-    iget-object v0, p2, LHRi;->a:LRCd;
+    iget-object v0, p2, LFRi;->a:LWPi;
 
     .line 14
     .line 15
@@ -482,20 +560,20 @@
 
     .line 16
     .line 17
-    const-string v0, "translation"
+    const-string v0, "color"
 
     .line 18
     .line 19
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
     .line 20
     .line 21
     .line 22
-    iget-object v0, p0, LIRi;->a:Lobi;
+    iget-object v0, p0, LIRi;->a:LiAi;
 
     .line 23
     .line 24
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -503,21 +581,21 @@
     move-result-object v0
 
     .line 28
-    check-cast v0, LUVi;
+    check-cast v0, Lhlj;
 
     .line 29
     .line 30
-    iget-object v1, p2, LHRi;->a:LRCd;
+    iget-object v1, p2, LFRi;->a:LWPi;
 
     .line 31
     .line 32
-    invoke-virtual {v0, p1, v1}, LUVi;->write(LaC9;Ljava/lang/Object;)V
+    invoke-virtual {v0, p1, v1}, Lhlj;->write(LrL9;Ljava/lang/Object;)V
 
     .line 33
     .line 34
     .line 35
     :cond_1
-    iget-object v0, p2, LHRi;->b:Ljava/lang/Double;
+    iget-object v0, p2, LFRi;->b:Ljava/lang/Double;
 
     .line 36
     .line 37
@@ -525,26 +603,26 @@
 
     .line 38
     .line 39
-    const-string v0, "scale"
+    const-string v0, "x"
 
     .line 40
     .line 41
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
     .line 42
     .line 43
     .line 44
-    iget-object v0, p2, LHRi;->b:Ljava/lang/Double;
+    iget-object v0, p2, LFRi;->b:Ljava/lang/Double;
 
     .line 45
     .line 46
-    invoke-virtual {p1, v0}, LaC9;->x(Ljava/lang/Number;)V
+    invoke-virtual {p1, v0}, LrL9;->w(Ljava/lang/Number;)V
 
     .line 47
     .line 48
     .line 49
     :cond_2
-    iget-object v0, p2, LHRi;->c:Ljava/lang/Double;
+    iget-object v0, p2, LFRi;->c:Ljava/lang/Double;
 
     .line 50
     .line 51
@@ -552,34 +630,61 @@
 
     .line 52
     .line 53
-    const-string v0, "rotation"
+    const-string v0, "y"
 
     .line 54
     .line 55
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
     .line 56
     .line 57
     .line 58
-    iget-object p2, p2, LHRi;->c:Ljava/lang/Double;
+    iget-object v0, p2, LFRi;->c:Ljava/lang/Double;
 
     .line 59
     .line 60
-    invoke-virtual {p1, p2}, LaC9;->x(Ljava/lang/Number;)V
+    invoke-virtual {p1, v0}, LrL9;->w(Ljava/lang/Number;)V
 
     .line 61
     .line 62
     .line 63
     :cond_3
-    invoke-virtual {p1}, LaC9;->g()V
+    iget-object v0, p2, LFRi;->d:Ljava/lang/Double;
 
     .line 64
     .line 65
+    if-eqz v0, :cond_4
+
     .line 66
+    .line 67
+    const-string v0, "radius"
+
+    .line 68
+    .line 69
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
+
+    .line 70
+    .line 71
+    .line 72
+    iget-object p2, p2, LFRi;->d:Ljava/lang/Double;
+
+    .line 73
+    .line 74
+    invoke-virtual {p1, p2}, LrL9;->w(Ljava/lang/Number;)V
+
+    .line 75
+    .line 76
+    .line 77
+    :cond_4
+    invoke-virtual {p1}, LrL9;->g()V
+
+    .line 78
+    .line 79
+    .line 80
     return-void
 .end method
 
-.method public bridge synthetic read(LDB9;)Ljava/lang/Object;
+.method public bridge synthetic read(LUK9;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -588,7 +693,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, LIRi;->a(LDB9;)LHRi;
+    invoke-virtual {p0, p1}, LIRi;->a(LUK9;)LFRi;
 
     .line 2
     .line 3
@@ -599,7 +704,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic write(LaC9;Ljava/lang/Object;)V
+.method public bridge synthetic write(LrL9;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -608,11 +713,11 @@
     .end annotation
 
     .line 1
-    check-cast p2, LHRi;
+    check-cast p2, LFRi;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2}, LIRi;->b(LaC9;LHRi;)V
+    invoke-virtual {p0, p1, p2}, LIRi;->b(LrL9;LFRi;)V
 
     .line 4
     .line 5

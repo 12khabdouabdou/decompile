@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LNU8;
+    proxyClass = Lo29;
     schema = "\'presentCameraRollView\':f|m|(f(r:\'[0]\'))"
     typeReferences = {
         Lcom/snap/impala/common/media/IAudio;

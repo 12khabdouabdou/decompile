@@ -94,7 +94,13 @@
 .method public static native nativeDestroy(J)V
 .end method
 
+.method private native native_autoPitchForZoom(JF)F
+.end method
+
 .method private native native_flyTo(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraOptions;Lcom/snapchat/client/snap_maps_sdk/AnimationOptions;)V
+.end method
+
+.method private native native_getCameraViewport(J)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraViewport;
 .end method
 
 .method private native native_jumpTo(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraOptions;)V
@@ -103,8 +109,30 @@
 .method private native native_setEdgeInsets(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$EdgeInsets;)V
 .end method
 
+.method private native native_setManualPitch(JFF)V
+.end method
+
 
 # virtual methods
+.method public autoPitchForZoom(F)F
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/snap_maps_sdk/CameraManager$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1, p1}, Lcom/snapchat/client/snap_maps_sdk/CameraManager$CppProxy;->native_autoPitchForZoom(JF)F
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
 .method public flyTo(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraOptions;Lcom/snapchat/client/snap_maps_sdk/AnimationOptions;)V
     .locals 2
 
@@ -119,6 +147,25 @@
     .line 5
     .line 6
     return-void
+.end method
+
+.method public getCameraViewport()Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraViewport;
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/snap_maps_sdk/CameraManager$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1}, Lcom/snapchat/client/snap_maps_sdk/CameraManager$CppProxy;->native_getCameraViewport(J)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraViewport;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
 .end method
 
 .method public jumpTo(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$CameraOptions;)V
@@ -146,6 +193,22 @@
     .line 2
     .line 3
     invoke-direct {p0, v0, v1, p1}, Lcom/snapchat/client/snap_maps_sdk/CameraManager$CppProxy;->native_setEdgeInsets(JLsnap/snap_maps_sdk/nano/SnapMapsSdk$EdgeInsets;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public setManualPitch(FF)V
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/snapchat/client/snap_maps_sdk/CameraManager$CppProxy;->nativeRef:J
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, v1, p1, p2}, Lcom/snapchat/client/snap_maps_sdk/CameraManager$CppProxy;->native_setManualPitch(JFF)V
 
     .line 4
     .line 5

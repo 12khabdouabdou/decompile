@@ -3,29 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lgv9;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final X:Lio/reactivex/rxjava3/subjects/PublishSubject;
+.field public final synthetic a:Lma7;
 
-.field public final Y:Lio/reactivex/rxjava3/subjects/Subject;
+.field public final synthetic b:Landroid/graphics/Bitmap;
 
-.field public final Z:LjA5;
+.field public final synthetic c:F
 
-.field public final a:LAZ6;
-
-.field public final b:LLL6;
-
-.field public final c:Z
-
-.field public final e0:Lio/reactivex/rxjava3/core/Observable;
-
-.field public final t:Z
+.field public final synthetic t:F
 
 
 # direct methods
-.method public constructor <init>(LAZ6;LLL6;ZZ)V
+.method public constructor <init>(Lma7;Landroid/graphics/Bitmap;FF)V
     .locals 0
 
     .line 1
@@ -34,135 +26,191 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LkB5;->a:LAZ6;
+    iput-object p1, p0, LkB5;->a:Lma7;
 
     .line 5
     .line 6
-    iput-object p2, p0, LkB5;->b:LLL6;
+    iput-object p2, p0, LkB5;->b:Landroid/graphics/Bitmap;
 
     .line 7
     .line 8
-    iput-boolean p3, p0, LkB5;->c:Z
+    iput p3, p0, LkB5;->c:F
 
     .line 9
     .line 10
-    iput-boolean p4, p0, LkB5;->t:Z
+    iput p4, p0, LkB5;->t:F
 
     .line 11
     .line 12
-    new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 13
-    .line 14
-    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
-
-    .line 15
-    .line 16
-    .line 17
-    iput-object p1, p0, LkB5;->X:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 18
-    .line 19
-    invoke-static {}, Llva;->t()Lio/reactivex/rxjava3/subjects/Subject;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p2
-
-    .line 23
-    iput-object p2, p0, LkB5;->Y:Lio/reactivex/rxjava3/subjects/Subject;
-
-    .line 24
-    .line 25
-    new-instance p3, LjA5;
-
-    .line 26
-    .line 27
-    const/4 p4, 0x7
-
-    .line 28
-    invoke-direct {p3, p4, p2}, LjA5;-><init>(ILio/reactivex/rxjava3/subjects/Subject;)V
-
-    .line 29
-    .line 30
-    .line 31
-    iput-object p3, p0, LkB5;->Z:LjA5;
-
-    .line 32
-    .line 33
-    new-instance p2, LjB5;
-
-    .line 34
-    .line 35
-    const/4 p3, 0x1
-
-    .line 36
-    invoke-direct {p2, p0, p3}, LjB5;-><init>(LkB5;I)V
-
-    .line 37
-    .line 38
-    .line 39
-    new-instance p3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
-
-    .line 40
-    .line 41
-    invoke-direct {p3, p2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 42
-    .line 43
-    .line 44
-    invoke-virtual {p3}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object p2
-
-    .line 48
-    invoke-virtual {p2}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object p2
-
-    .line 52
-    invoke-static {p2, p1}, Lio/reactivex/rxjava3/core/Observable;->o0(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object p1
-
-    .line 56
-    iput-object p1, p0, LkB5;->e0:Lio/reactivex/rxjava3/core/Observable;
-
-    .line 57
-    .line 58
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
+.method public final call()Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget-object v0, p0, LkB5;->e0:Lio/reactivex/rxjava3/core/Observable;
+    iget-object v0, p0, LkB5;->a:Lma7;
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    invoke-interface {v0}, Lma7;->q0()Z
 
-.method public final f()Lio/reactivex/rxjava3/functions/Consumer;
-    .locals 1
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
 
-    .line 1
-    iget-object v0, p0, LkB5;->Z:LjA5;
+    .line 7
+    if-eqz v1, :cond_1
 
-    .line 2
-    .line 3
+    .line 8
+    .line 9
+    new-instance v1, LsN7;
+
+    .line 10
+    .line 11
+    iget-object v2, p0, LkB5;->b:Landroid/graphics/Bitmap;
+
+    .line 12
+    .line 13
+    invoke-direct {v1, v2}, LsN7;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-interface {v0, v1}, Lma7;->e0(LQgd;)Ljava/util/List;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 21
+    .line 22
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 23
+    .line 24
+    const/16 v2, 0xa
+
+    .line 25
+    .line 26
+    invoke-static {v0, v2}, Lnh3;->d3(Ljava/lang/Iterable;I)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v2
+
+    .line 30
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v2
+
+    .line 41
+    if-eqz v2, :cond_0
+
+    .line 42
+    .line 43
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v2
+
+    .line 47
+    check-cast v2, Ly97;
+
+    .line 48
+    .line 49
+    new-instance v3, Lw97;
+
+    .line 50
+    .line 51
+    iget v4, v2, Ly97;->a:F
+
+    .line 52
+    .line 53
+    iget v5, p0, LkB5;->c:F
+
+    .line 54
+    .line 55
+    mul-float v4, v4, v5
+
+    .line 56
+    .line 57
+    iget v6, v2, Ly97;->b:F
+
+    .line 58
+    .line 59
+    iget v7, p0, LkB5;->t:F
+
+    .line 60
+    .line 61
+    mul-float v6, v6, v7
+
+    .line 62
+    .line 63
+    iget v8, v2, Ly97;->c:F
+
+    .line 64
+    .line 65
+    mul-float v8, v8, v5
+
+    .line 66
+    .line 67
+    iget v2, v2, Ly97;->d:F
+
+    .line 68
+    .line 69
+    mul-float v2, v2, v7
+
+    .line 70
+    .line 71
+    invoke-direct {v3, v4, v6, v8, v2}, Lw97;-><init>(FFFF)V
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 75
+    .line 76
+    .line 77
+    goto :goto_0
+
+    .line 78
+    :cond_0
+    return-object v1
+
+    .line 79
+    :cond_1
+    sget-object v0, LgP6;->a:LgP6;
+
+    .line 80
+    .line 81
     return-object v0
 .end method

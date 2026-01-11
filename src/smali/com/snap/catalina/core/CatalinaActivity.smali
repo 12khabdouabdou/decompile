@@ -4,39 +4,39 @@
 
 # interfaces
 .implements Landroidx/lifecycle/LifecycleOwner;
-.implements LKI8;
+.implements LfQ8;
 
 
 # instance fields
-.field public A0:LPm9;
+.field public A0:LIv9;
 
-.field public B0:Lpf3;
+.field public B0:Lfi3;
 
 .field public C0:Landroid/view/KeyEvent$Callback;
 
-.field public D0:LiG9;
+.field public D0:LGR9;
 
-.field public E0:LlDa;
+.field public E0:LAPa;
 
-.field public F0:LwDa;
+.field public F0:LKPa;
 
-.field public G0:LXF4;
+.field public G0:LtK4;
 
-.field public H0:LTqc;
+.field public H0:LmGc;
 
-.field public I0:LFwc;
+.field public I0:LBLc;
 
-.field public J0:LrH9;
+.field public J0:LQS9;
 
-.field public K0:LVjd;
+.field public K0:LcAd;
 
-.field public L0:Lnwf;
+.field public L0:LyPf;
 
-.field public M0:LKs2;
+.field public M0:Lwv2;
 
-.field public N0:Lpci;
+.field public N0:LfBi;
 
-.field public O0:La9j;
+.field public O0:LWxj;
 
 .field public P0:Lcom/snapchat/deck/views/DeckView;
 
@@ -44,11 +44,11 @@
 
 .field public R0:Landroid/view/SurfaceView;
 
-.field public S0:LBre;
+.field public S0:LnJe;
 
-.field public T0:Lrn0;
+.field public T0:LJp0;
 
-.field public final U0:LWm0;
+.field public final U0:Lnp0;
 
 .field public final V0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
@@ -58,19 +58,19 @@
 
 .field public final Y0:Landroidx/lifecycle/e;
 
-.field public final t0:LiFf;
+.field public final t0:LGYf;
 
-.field public u0:LtQ;
+.field public u0:LyS;
 
-.field public v0:LsL4;
+.field public v0:LyQ4;
 
-.field public w0:Lss2;
+.field public w0:Lev2;
 
 .field public x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public y0:LDA8;
+.field public y0:LEH8;
 
-.field public z0:LPP8;
+.field public z0:LJX8;
 
 
 # direct methods
@@ -78,11 +78,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lzth;->Z:Lzth;
+    sget-object v0, LpRh;->Z:LpRh;
 
     .line 2
     .line 3
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 4
     .line 5
@@ -95,11 +95,11 @@
     .line 8
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->t0:LiFf;
+    iput-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->t0:LGYf;
 
     .line 11
     .line 12
-    sget-object v1, LtW1;->Z:LtW1;
+    sget-object v1, LVZ1;->Z:LVZ1;
 
     .line 13
     .line 14
@@ -107,7 +107,7 @@
 
     .line 15
     .line 16
-    invoke-static {v1, v1, v2}, LEU0;->f(LtW1;LtW1;Ljava/lang/String;)LWm0;
+    invoke-static {v1, v1, v2}, LJF0;->e(LVZ1;LVZ1;Ljava/lang/String;)Lnp0;
 
     .line 17
     .line 18
@@ -115,7 +115,7 @@
     move-result-object v1
 
     .line 20
-    iput-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:LWm0;
+    iput-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:Lnp0;
 
     .line 21
     .line 22
@@ -148,7 +148,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 38
     .line 39
@@ -162,19 +162,19 @@
 
 
 # virtual methods
-.method public final Z(Landroid/os/Bundle;)V
+.method public final W(Landroid/os/Bundle;)V
     .locals 10
 
     .line 1
-    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->t0:LiFf;
+    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->t0:LGYf;
 
     .line 2
     .line 3
-    sget-object v0, Lzth;->f0:Lzth;
+    sget-object v0, LpRh;->f0:LpRh;
 
     .line 4
     .line 5
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 6
     .line 7
@@ -183,7 +183,7 @@
 
     .line 9
     :try_start_0
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->L0:Lnwf;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->L0:LyPf;
 
     .line 10
     .line 11
@@ -194,20 +194,20 @@
 
     .line 13
     .line 14
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:LWm0;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:Lnp0;
 
     .line 15
     .line 16
-    new-instance v3, LBre;
+    new-instance v3, LnJe;
 
     .line 17
     .line 18
-    invoke-direct {v3, v1}, LBre;-><init>(LWm0;)V
+    invoke-direct {v3, v1}, LnJe;-><init>(Lnp0;)V
 
     .line 19
     .line 20
     .line 21
-    iput-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LBre;
+    iput-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LnJe;
 
     .line 22
     .line 23
@@ -226,7 +226,7 @@
     .line 28
     .line 29
     :try_start_1
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->w0:Lss2;
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->w0:Lev2;
 
     .line 30
     .line 31
@@ -234,7 +234,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {v4}, Lss2;->a()Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    invoke-virtual {v4}, Lev2;->a()Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
     .line 34
     .line 35
@@ -242,7 +242,7 @@
     move-result-object v4
 
     .line 37
-    iget-object v5, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LBre;
+    iget-object v5, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LnJe;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -257,7 +257,7 @@
     .line 42
     .line 43
     :try_start_2
-    invoke-virtual {v5}, LBre;->i()Lgn0;
+    invoke-virtual {v5}, LnJe;->i()Lxp0;
 
     .line 44
     .line 45
@@ -282,12 +282,12 @@
     move-result-object v4
 
     .line 56
-    invoke-virtual {v1, v4}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v4}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 57
     .line 58
     .line 59
-    const v1, 0x7f0e03f0
+    const v1, 0x7f0e0413
 
     .line 60
     .line 61
@@ -297,7 +297,7 @@
     .line 63
     .line 64
     .line 65
-    const v1, 0x7f0b01d2
+    const v1, 0x7f0b021c
 
     .line 66
     .line 67
@@ -329,7 +329,7 @@
 
     .line 79
     .line 80
-    const v1, 0x7f0b0a0b
+    const v1, 0x7f0b0b02
 
     .line 81
     .line 82
@@ -354,7 +354,7 @@
 
     .line 92
     .line 93
-    const v1, 0x7f0b094f
+    const v1, 0x7f0b0a42
 
     .line 94
     .line 95
@@ -379,15 +379,15 @@
 
     .line 105
     .line 106
-    sget-object v1, Lrn0;->a:Lrn0;
+    sget-object v1, LJp0;->a:LJp0;
 
     .line 107
     .line 108
-    iput-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->T0:Lrn0;
+    iput-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->T0:LJp0;
 
     .line 109
     .line 110
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LFwc;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LBLc;
 
     .line 111
     .line 112
@@ -410,12 +410,12 @@
     .line 119
     .line 120
     :try_start_4
-    invoke-virtual {v1, v4}, LFwc;->e(Landroid/view/ViewGroup;)V
+    invoke-virtual {v1, v4}, LBLc;->e(Landroid/view/ViewGroup;)V
 
     .line 121
     .line 122
     .line 123
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:LKs2;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:Lwv2;
 
     .line 124
     .line 125
@@ -423,7 +423,7 @@
 
     .line 126
     .line 127
-    invoke-virtual {v1}, LKs2;->j()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v1}, Lwv2;->j()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 128
     .line 129
@@ -432,7 +432,7 @@
 
     .line 131
     .line 132
-    iput-object v4, v1, LNe;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    iput-object v4, v1, LIf;->a:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 133
     .line 134
@@ -444,7 +444,7 @@
 
     .line 137
     .line 138
-    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->N0:Lpci;
+    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->N0:LfBi;
 
     .line 139
     .line 140
@@ -460,7 +460,7 @@
 
     .line 145
     .line 146
-    invoke-interface {v3, v4}, Lpci;->j(Landroid/view/SurfaceView;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-interface {v3, v4}, LfBi;->i(Landroid/view/SurfaceView;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 147
     .line 148
@@ -468,12 +468,12 @@
     move-result-object v3
 
     .line 150
-    invoke-virtual {v1, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 151
     .line 152
     .line 153
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->A0:LPm9;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->A0:LIv9;
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -488,7 +488,7 @@
     .line 158
     .line 159
     :try_start_5
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->B0:Lpf3;
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->B0:Lfi3;
 
     .line 160
     .line 161
@@ -504,7 +504,7 @@
 
     .line 166
     .line 167
-    invoke-interface {v1, p0, v4, v7}, LPm9;->d(Landroid/app/Activity;LUX;Landroid/view/ViewGroup;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-interface {v1, p0, v4, v7}, LIv9;->d(Landroid/app/Activity;Lq00;Landroid/view/ViewGroup;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 168
     .line 169
@@ -516,12 +516,12 @@
 
     .line 172
     .line 173
-    invoke-virtual {v4, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v4, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 174
     .line 175
     .line 176
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->z0:LPP8;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->z0:LJX8;
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
@@ -550,7 +550,7 @@
 
     .line 187
     .line 188
-    const v8, 0x7f0b0634
+    const v8, 0x7f0b06c8
 
     .line 189
     .line 190
@@ -568,37 +568,37 @@
 
     .line 196
     .line 197
-    iget-object v8, v1, LPP8;->e:LaX1;
+    iget-object v8, v1, LJX8;->e:LD02;
 
     .line 198
     .line 199
-    iget-object v9, v1, LPP8;->b:LTqc;
+    iget-object v9, v1, LJX8;->b:LmGc;
 
     .line 200
     .line 201
-    invoke-virtual {v9, v8}, LTqc;->d(Lxrc;)V
+    invoke-virtual {v9, v8}, LmGc;->d(LQGc;)V
 
     .line 202
     .line 203
     .line 204
-    new-instance v8, LrZ;
+    new-instance v8, LU10;
 
     .line 205
     .line 206
-    iget-object v9, v1, LPP8;->a:LcNd;
+    iget-object v9, v1, LJX8;->a:Lr4e;
 
     .line 207
     .line 208
-    invoke-direct {v8, v5, v9}, LrZ;-><init>(Landroid/view/ViewGroup;LcNd;)V
+    invoke-direct {v8, v5, v9}, LU10;-><init>(Landroid/view/ViewGroup;Lr4e;)V
 
     .line 209
     .line 210
     .line 211
-    iput-object v8, v1, LPP8;->g:LrZ;
+    iput-object v8, v1, LJX8;->g:LU10;
 
     .line 212
     .line 213
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->z0:LPP8;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->z0:LJX8;
 
     .line 214
     .line 215
@@ -606,11 +606,11 @@
 
     .line 216
     .line 217
-    sget-object v4, LWD1;->n0:LWD1;
+    sget-object v4, LmH1;->n0:LmH1;
 
     .line 218
     .line 219
-    invoke-virtual {v1, v4}, LPP8;->d(LcSa;)V
+    invoke-virtual {v1, v4}, LJX8;->d(LL4b;)V
 
     .line 220
     .line 221
@@ -623,7 +623,7 @@
 
     .line 225
     .line 226
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->A0:LPm9;
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->A0:LIv9;
 
     .line 227
     .line 228
@@ -631,7 +631,7 @@
 
     .line 229
     .line 230
-    invoke-interface {v4}, LPm9;->i()Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {v4}, LIv9;->i()Lio/reactivex/rxjava3/core/Observable;
 
     .line 231
     .line 232
@@ -639,7 +639,7 @@
     move-result-object v3
 
     .line 234
-    sget-object v4, Lpk2;->m0:Lpk2;
+    sget-object v4, Luo2;->h0:Luo2;
 
     .line 235
     .line 236
@@ -652,15 +652,15 @@
     .line 239
     .line 240
     .line 241
-    new-instance v3, LXW6;
+    new-instance v3, LXD5;
 
     .line 242
     .line 243
-    const/16 v4, 0x8
+    const/16 v4, 0x15
 
     .line 244
     .line 245
-    invoke-direct {v3, v4, v1}, LXW6;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, v1}, LXD5;-><init>(ILjava/lang/Object;)V
 
     .line 246
     .line 247
@@ -677,12 +677,12 @@
 
     .line 253
     .line 254
-    invoke-virtual {v1, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 255
     .line 256
     .line 257
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LBre;
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LnJe;
 
     .line 258
     .line 259
@@ -690,7 +690,7 @@
 
     .line 260
     .line 261
-    invoke-virtual {v1}, LBre;->b()Lkn0;
+    invoke-virtual {v1}, LnJe;->b()LCp0;
 
     .line 262
     .line 263
@@ -698,24 +698,24 @@
     move-result-object v1
 
     .line 265
-    new-instance v2, LVg2;
+    new-instance v2, LYh2;
 
     .line 266
     .line 267
-    const/4 v3, 0x2
+    const/4 v3, 0x3
 
     .line 268
-    invoke-direct {v2, v3, p0}, LVg2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, LYh2;-><init>(ILjava/lang/Object;)V
 
     .line 269
     .line 270
     .line 271
-    invoke-virtual {v1, v2}, LeGg;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+    invoke-virtual {v1, v2}, LN1h;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
     .line 272
     .line 273
     .line 274
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 275
     .line 276
@@ -723,16 +723,16 @@
     move-result-object v1
 
     .line 278
-    sget-object v2, LkG9;->a:LkG9;
+    sget-object v2, LIR9;->a:LIR9;
 
     .line 279
     .line 280
-    invoke-virtual {v1, v2, p1}, LiG9;->b(LP1g;LiFf;)V
+    invoke-virtual {v1, v2, p1}, LGR9;->b(Lhmg;LGYf;)V
 
     .line 281
     .line 282
     .line 283
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 284
     .line 285
@@ -740,14 +740,14 @@
     move-result-object v1
 
     .line 287
-    invoke-virtual {v1, p1}, LU1g;->k(LiFf;)V
+    invoke-virtual {v1, p1}, Lmmg;->k(LGYf;)V
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 288
     .line 289
     .line 290
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 291
     .line 292
@@ -755,12 +755,12 @@
     move-result-object p1
 
     .line 294
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 295
     .line 296
     .line 297
-    invoke-virtual {p1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {p1, v0}, Lmmg;->k(LGYf;)V
 
     .line 298
     .line 299
@@ -777,7 +777,7 @@
     .line 303
     :cond_0
     :try_start_8
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 304
     .line 305
@@ -786,7 +786,7 @@
 
     .line 307
     :cond_1
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 308
     .line 309
@@ -795,7 +795,7 @@
 
     .line 311
     :cond_2
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 312
     .line 313
@@ -804,7 +804,7 @@
 
     .line 315
     :cond_3
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 316
     .line 317
@@ -813,7 +813,7 @@
 
     .line 319
     :cond_4
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 320
     .line 321
@@ -822,7 +822,7 @@
 
     .line 323
     :cond_5
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 324
     .line 325
@@ -831,7 +831,7 @@
 
     .line 327
     :cond_6
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 328
     .line 329
@@ -844,7 +844,7 @@
 
     .line 332
     .line 333
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 334
     .line 335
@@ -853,7 +853,7 @@
 
     .line 337
     :cond_8
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 338
     .line 339
@@ -866,7 +866,7 @@
 
     .line 342
     .line 343
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 344
     .line 345
@@ -879,7 +879,7 @@
 
     .line 348
     .line 349
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 350
     .line 351
@@ -888,7 +888,7 @@
 
     .line 353
     :cond_b
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 354
     .line 355
@@ -901,7 +901,7 @@
 
     .line 358
     .line 359
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 360
     .line 361
@@ -910,7 +910,7 @@
 
     .line 363
     :cond_d
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 364
     .line 365
@@ -923,7 +923,7 @@
 
     .line 368
     .line 369
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 370
     .line 371
@@ -971,7 +971,7 @@
 
     .line 391
     :cond_12
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 392
     .line 393
@@ -984,7 +984,7 @@
 
     .line 396
     .line 397
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 398
     .line 399
@@ -993,7 +993,7 @@
 
     .line 401
     :cond_14
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 402
     .line 403
@@ -1006,7 +1006,7 @@
 
     .line 406
     .line 407
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 408
     .line 409
@@ -1017,7 +1017,7 @@
 
     .line 411
     :goto_0
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 412
     .line 413
@@ -1025,12 +1025,12 @@
     move-result-object v1
 
     .line 415
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 416
     .line 417
     .line 418
-    invoke-virtual {v1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {v1, v0}, Lmmg;->k(LGYf;)V
 
     .line 419
     .line 420
@@ -1038,7 +1038,7 @@
     throw p1
 .end method
 
-.method public final a0()V
+.method public final X()V
     .locals 5
 
     .line 1
@@ -1050,7 +1050,7 @@
     move-result-wide v0
 
     .line 5
-    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:LKs2;
+    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:Lwv2;
 
     .line 6
     .line 7
@@ -1061,12 +1061,12 @@
 
     .line 9
     .line 10
-    invoke-virtual {v2}, LNe;->d()V
+    invoke-virtual {v2}, LIf;->b()V
 
     .line 11
     .line 12
     .line 13
-    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LFwc;
+    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LBLc;
 
     .line 14
     .line 15
@@ -1074,12 +1074,12 @@
 
     .line 16
     .line 17
-    invoke-virtual {v2}, LFwc;->b()V
+    invoke-virtual {v2}, LBLc;->b()V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 21
     .line 22
@@ -1087,7 +1087,7 @@
     move-result-object v2
 
     .line 24
-    invoke-virtual {v2}, LTqc;->A()V
+    invoke-virtual {v2}, LmGc;->A()V
 
     .line 25
     .line 26
@@ -1114,7 +1114,7 @@
     .line 37
     .line 38
     .line 39
-    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->z0:LPP8;
+    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->z0:LJX8;
 
     .line 40
     .line 41
@@ -1122,12 +1122,12 @@
 
     .line 42
     .line 43
-    invoke-virtual {v2}, LPP8;->c()V
+    invoke-virtual {v2}, LJX8;->c()V
 
     .line 44
     .line 45
     .line 46
-    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LVjd;
+    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LcAd;
 
     .line 47
     .line 48
@@ -1135,7 +1135,7 @@
 
     .line 49
     .line 50
-    iget-object v3, v2, LVjd;->e0:Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v3, v2, LcAd;->f0:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 51
     .line 52
@@ -1144,7 +1144,7 @@
     .line 53
     .line 54
     .line 55
-    iget-object v3, v2, LVjd;->f0:Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v3, v2, LcAd;->g0:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 56
     .line 57
@@ -1153,7 +1153,7 @@
     .line 58
     .line 59
     .line 60
-    iget-object v2, v2, LVjd;->g0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v2, v2, LcAd;->h0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 61
     .line 62
@@ -1162,7 +1162,7 @@
     .line 63
     .line 64
     .line 65
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 66
     .line 67
@@ -1170,7 +1170,7 @@
     move-result-object v2
 
     .line 69
-    sget-object v3, LJth;->b:LJth;
+    sget-object v3, LzRh;->b:LzRh;
 
     .line 70
     .line 71
@@ -1178,7 +1178,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {v2, v3, v0, v1, v4}, LiG9;->d(LT1g;JLjava/lang/String;)V
+    invoke-virtual {v2, v3, v0, v1, v4}, LGR9;->d(Llmg;JLjava/lang/String;)V
 
     .line 74
     .line 75
@@ -1191,7 +1191,7 @@
 
     .line 78
     .line 79
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 80
     .line 81
@@ -1204,7 +1204,7 @@
 
     .line 84
     .line 85
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 86
     .line 87
@@ -1217,7 +1217,7 @@
 
     .line 90
     .line 91
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 92
     .line 93
@@ -1230,7 +1230,7 @@
 
     .line 96
     .line 97
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -1243,7 +1243,7 @@
 
     .line 102
     .line 103
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 104
     .line 105
@@ -1251,11 +1251,596 @@
     throw v3
 .end method
 
-.method public final androidInjector()LtQ;
+.method public final Y()V
+    .locals 5
+
+    .line 1
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:Lwv2;
+
+    .line 6
+    .line 7
+    const/4 v3, 0x0
+
+    .line 8
+    if-eqz v2, :cond_1
+
+    .line 9
+    .line 10
+    invoke-virtual {v2}, LIf;->a()V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LBLc;
+
+    .line 14
+    .line 15
+    if-eqz v2, :cond_0
+
+    .line 16
+    .line 17
+    invoke-virtual {v2}, LBLc;->f()V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    sget-object v3, LzRh;->b:LzRh;
+
+    .line 25
+    .line 26
+    const-string v4, "activity onPause()"
+
+    .line 27
+    .line 28
+    invoke-virtual {v2, v3, v0, v1, v4}, LGR9;->d(Llmg;JLjava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+
+    .line 32
+    :cond_0
+    const-string v0, "ngsActionBarController"
+
+    .line 33
+    .line 34
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 35
+    .line 36
+    .line 37
+    throw v3
+
+    .line 38
+    :cond_1
+    const-string v0, "shake2ReportActivityObserver"
+
+    .line 39
+    .line 40
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    throw v3
+.end method
+
+.method public final Z()V
+    .locals 7
+
+    .line 1
+    invoke-super {p0}, Lcom/snap/core/analytics/Tier0InstrumentedActivity;->Z()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, LpRh;->k0:LpRh;
+
+    .line 5
+    .line 6
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v0
+
+    .line 10
+    sget-object v1, LOdh;->a:LNdh;
+
+    .line 11
+    .line 12
+    const-string v2, "CatalinaActivity.onResume"
+
+    .line 13
+    .line 14
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    const/4 v3, 0x0
+
+    .line 19
+    :try_start_0
+    iput-boolean v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->W0:Z
+
+    .line 20
+    .line 21
+    iput-boolean v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->X0:Z
+
+    .line 22
+    .line 23
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LBLc;
+
+    .line 24
+    .line 25
+    const/4 v5, 0x0
+
+    .line 26
+    if-eqz v4, :cond_8
+
+    .line 27
+    .line 28
+    invoke-virtual {v4}, LBLc;->g()V
+
+    .line 29
+    .line 30
+    .line 31
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->y0:LEH8;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 32
+    .line 33
+    const-string v6, "grapheneInitializationListener"
+
+    .line 34
+    .line 35
+    if-eqz v4, :cond_7
+
+    .line 36
+    .line 37
+    :try_start_1
+    invoke-virtual {v4, v3}, LEH8;->q(Z)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 38
+    .line 39
+    .line 40
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->y0:LEH8;
+
+    .line 41
+    .line 42
+    if-eqz v4, :cond_6
+
+    .line 43
+    .line 44
+    iput-boolean v3, v4, LEH8;->q:Z
+
+    .line 45
+    .line 46
+    new-instance v3, LxH8;
+
+    .line 47
+    .line 48
+    const/4 v6, 0x0
+
+    .line 49
+    invoke-direct {v3, v4, v6}, LxH8;-><init>(LEH8;I)V
+
+    .line 50
+    .line 51
+    .line 52
+    iget-object v4, v4, LEH8;->c:LWYe;
+
+    .line 53
+    .line 54
+    invoke-static {v4, v3, v5}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 55
+    .line 56
+    .line 57
+    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:Lwv2;
+
+    .line 58
+    .line 59
+    if-eqz v3, :cond_5
+
+    .line 60
+    .line 61
+    invoke-virtual {v3}, LIf;->e()V
+
+    .line 62
+    .line 63
+    .line 64
+    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LcAd;
+
+    .line 65
+    .line 66
+    if-eqz v3, :cond_4
+
+    .line 67
+    .line 68
+    invoke-virtual {v3}, LcAd;->l()V
+
+    .line 69
+    .line 70
+    .line 71
+    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->G0:LtK4;
+
+    .line 72
+    .line 73
+    if-eqz v3, :cond_3
+
+    .line 74
+    .line 75
+    invoke-virtual {v3}, LtK4;->get()Ljava/lang/Object;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v3
+
+    .line 79
+    check-cast v3, LbAb;
+
+    .line 80
+    .line 81
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:Lnp0;
+
+    .line 82
+    .line 83
+    invoke-static {v3, v4}, LtPk;->b(LbAb;Lnp0;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v3
+
+    .line 87
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LnJe;
+
+    .line 88
+    .line 89
+    if-eqz v4, :cond_2
+
+    .line 90
+    .line 91
+    invoke-virtual {v4}, LnJe;->d()LA36;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object v4
+
+    .line 95
+    new-instance v6, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 96
+    .line 97
+    invoke-direct {v6, v3, v4}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 98
+    .line 99
+    .line 100
+    invoke-virtual {v6}, Lio/reactivex/rxjava3/core/Completable;->p()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object v3
+
+    .line 104
+    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->V0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 105
+    .line 106
+    invoke-static {v3, v4}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 107
+    .line 108
+    .line 109
+    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->E0:LAPa;
+
+    .line 110
+    .line 111
+    if-eqz v3, :cond_1
+
+    .line 112
+    .line 113
+    iget-object v4, v3, LAPa;->d:LeZ2;
+
+    .line 114
+    .line 115
+    if-eqz v4, :cond_0
+
+    .line 116
+    .line 117
+    iget-object v4, v3, LAPa;->d:LeZ2;
+
+    .line 118
+    .line 119
+    iput-object v4, v3, LAPa;->d:LeZ2;
+
+    .line 120
+    .line 121
+    iget-object v4, v3, LAPa;->e:LREi;
+
+    .line 122
+    .line 123
+    invoke-virtual {v4}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object v4
+
+    .line 127
+    check-cast v4, Landroid/app/KeyguardManager;
+
+    .line 128
+    .line 129
+    new-instance v5, LzOa;
+
+    .line 130
+    .line 131
+    const/4 v6, 0x1
+
+    .line 132
+    invoke-direct {v5, v3, v6, p0}, LzOa;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-static {v4, p0, v5}, LkR9;->v(Landroid/app/KeyguardManager;Landroid/app/Activity;Landroid/app/KeyguardManager$KeyguardDismissCallback;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 136
+    .line 137
+    .line 138
+    :cond_0
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v1
+
+    .line 145
+    invoke-virtual {v0}, LGYf;->b()LGYf;
+
+    .line 146
+    .line 147
+    .line 148
+    invoke-virtual {v1, v0}, Lmmg;->k(LGYf;)V
+
+    .line 149
+    .line 150
+    .line 151
+    return-void
+
+    .line 152
+    :cond_1
+    :try_start_2
+    const-string v0, "lockscreenAuthRequestManager"
+
+    .line 153
+    .line 154
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 155
+    .line 156
+    .line 157
+    throw v5
+
+    .line 158
+    :catchall_0
+    move-exception v0
+
+    .line 159
+    goto :goto_0
+
+    .line 160
+    :cond_2
+    const-string v0, "schedulers"
+
+    .line 161
+    .line 162
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 163
+    .line 164
+    .line 165
+    throw v5
+
+    .line 166
+    :cond_3
+    const-string v0, "mediaPackageManager"
+
+    .line 167
+    .line 168
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 169
+    .line 170
+    .line 171
+    throw v5
+
+    .line 172
+    :cond_4
+    const-string v0, "permissionsLifecycleHandler"
+
+    .line 173
+    .line 174
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 175
+    .line 176
+    .line 177
+    throw v5
+
+    .line 178
+    :cond_5
+    const-string v0, "shake2ReportActivityObserver"
+
+    .line 179
+    .line 180
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 181
+    .line 182
+    .line 183
+    throw v5
+
+    .line 184
+    :cond_6
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 185
+    .line 186
+    .line 187
+    throw v5
+
+    .line 188
+    :cond_7
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 189
+    .line 190
+    .line 191
+    throw v5
+
+    .line 192
+    :cond_8
+    const-string v0, "ngsActionBarController"
+
+    .line 193
+    .line 194
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 195
+    .line 196
+    .line 197
+    throw v5
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 198
+    :goto_0
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 199
+    .line 200
+    if-eqz v1, :cond_9
+
+    .line 201
+    .line 202
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 203
+    .line 204
+    .line 205
+    :cond_9
+    throw v0
+.end method
+
+.method public final a0()V
+    .locals 2
+
+    .line 1
+    sget-object v0, LpRh;->h0:LpRh;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LcAd;
+
+    .line 8
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, LcAd;->m()V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
+
+    .line 18
+    invoke-virtual {v0}, LGYf;->b()LGYf;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v1, v0}, Lmmg;->k(LGYf;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
+
+    .line 25
+    :cond_0
+    const-string v0, "permissionsLifecycleHandler"
+
+    .line 26
+    .line 27
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 28
+    .line 29
+    .line 30
+    const/4 v0, 0x0
+
+    .line 31
+    throw v0
+.end method
+
+.method public final androidInjector()LyS;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->u0:LtQ;
+    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->u0:LyS;
 
     .line 2
     .line 3
@@ -1271,7 +1856,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1303,609 +1888,11 @@
     return-void
 .end method
 
-.method public final b0()V
-    .locals 5
-
-    .line 1
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtimeNanos()J
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-wide v0
-
-    .line 5
-    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:LKs2;
-
-    .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    if-eqz v2, :cond_1
-
-    .line 9
-    .line 10
-    invoke-virtual {v2}, LNe;->a()V
-
-    .line 11
-    .line 12
-    .line 13
-    iget-object v2, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LFwc;
-
-    .line 14
-    .line 15
-    if-eqz v2, :cond_0
-
-    .line 16
-    .line 17
-    invoke-virtual {v2}, LFwc;->f()V
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v2
-
-    .line 24
-    sget-object v3, LJth;->b:LJth;
-
-    .line 25
-    .line 26
-    const-string v4, "activity onPause()"
-
-    .line 27
-    .line 28
-    invoke-virtual {v2, v3, v0, v1, v4}, LiG9;->d(LT1g;JLjava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-
-    .line 32
-    :cond_0
-    const-string v0, "ngsActionBarController"
-
-    .line 33
-    .line 34
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 35
-    .line 36
-    .line 37
-    throw v3
-
-    .line 38
-    :cond_1
-    const-string v0, "shake2ReportActivityObserver"
-
-    .line 39
-    .line 40
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 41
-    .line 42
-    .line 43
-    throw v3
-.end method
-
-.method public final c0()V
-    .locals 7
-
-    .line 1
-    invoke-super {p0}, Lcom/snap/core/analytics/Tier0InstrumentedActivity;->c0()V
-
-    .line 2
-    .line 3
-    .line 4
-    sget-object v0, Lzth;->k0:Lzth;
-
-    .line 5
-    .line 6
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    sget-object v1, LXRg;->a:LWRg;
-
-    .line 11
-    .line 12
-    const-string v2, "CatalinaActivity.onResume"
-
-    .line 13
-    .line 14
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v2
-
-    .line 18
-    const/4 v3, 0x0
-
-    .line 19
-    :try_start_0
-    iput-boolean v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->W0:Z
-
-    .line 20
-    .line 21
-    iput-boolean v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->X0:Z
-
-    .line 22
-    .line 23
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->I0:LFwc;
-
-    .line 24
-    .line 25
-    const/4 v5, 0x0
-
-    .line 26
-    if-eqz v4, :cond_9
-
-    .line 27
-    .line 28
-    invoke-virtual {v4}, LFwc;->g()V
-
-    .line 29
-    .line 30
-    .line 31
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->y0:LDA8;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 32
-    .line 33
-    const-string v6, "grapheneInitializationListener"
-
-    .line 34
-    .line 35
-    if-eqz v4, :cond_8
-
-    .line 36
-    .line 37
-    :try_start_1
-    invoke-virtual {v4, v3}, LDA8;->q(Z)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 38
-    .line 39
-    .line 40
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->y0:LDA8;
-
-    .line 41
-    .line 42
-    if-eqz v4, :cond_7
-
-    .line 43
-    .line 44
-    iput-boolean v3, v4, LDA8;->q:Z
-
-    .line 45
-    .line 46
-    new-instance v3, LwA8;
-
-    .line 47
-    .line 48
-    const/4 v6, 0x0
-
-    .line 49
-    invoke-direct {v3, v4, v6}, LwA8;-><init>(LDA8;I)V
-
-    .line 50
-    .line 51
-    .line 52
-    iget-object v4, v4, LDA8;->c:LlHe;
-
-    .line 53
-    .line 54
-    invoke-static {v4, v3, v5}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 55
-    .line 56
-    .line 57
-    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->M0:LKs2;
-
-    .line 58
-    .line 59
-    if-eqz v3, :cond_6
-
-    .line 60
-    .line 61
-    invoke-virtual {v3}, LNe;->e()V
-
-    .line 62
-    .line 63
-    .line 64
-    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LVjd;
-
-    .line 65
-    .line 66
-    if-eqz v3, :cond_5
-
-    .line 67
-    .line 68
-    invoke-virtual {v3}, LVjd;->e()Z
-
-    .line 69
-    .line 70
-    .line 71
-    move-result v4
-
-    .line 72
-    if-nez v4, :cond_0
-
-    .line 73
-    .line 74
-    invoke-virtual {v3}, LVjd;->p()V
-
-    .line 75
-    .line 76
-    .line 77
-    :cond_0
-    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->G0:LXF4;
-
-    .line 78
-    .line 79
-    if-eqz v3, :cond_4
-
-    .line 80
-    .line 81
-    invoke-virtual {v3}, LXF4;->get()Ljava/lang/Object;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v3
-
-    .line 85
-    check-cast v3, Lzmb;
-
-    .line 86
-    .line 87
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:LWm0;
-
-    .line 88
-    .line 89
-    invoke-static {v3, v4}, LMpk;->a(Lzmb;LWm0;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
-
-    .line 90
-    .line 91
-    .line 92
-    move-result-object v3
-
-    .line 93
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->S0:LBre;
-
-    .line 94
-    .line 95
-    if-eqz v4, :cond_3
-
-    .line 96
-    .line 97
-    invoke-virtual {v4}, LBre;->d()LF06;
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-object v4
-
-    .line 101
-    new-instance v6, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 102
-    .line 103
-    invoke-direct {v6, v3, v4}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 104
-    .line 105
-    .line 106
-    invoke-virtual {v6}, Lio/reactivex/rxjava3/core/Completable;->q()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
-
-    .line 107
-    .line 108
-    .line 109
-    move-result-object v3
-
-    .line 110
-    iget-object v4, p0, Lcom/snap/catalina/core/CatalinaActivity;->V0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 111
-    .line 112
-    invoke-static {v3, v4}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 113
-    .line 114
-    .line 115
-    iget-object v3, p0, Lcom/snap/catalina/core/CatalinaActivity;->E0:LlDa;
-
-    .line 116
-    .line 117
-    if-eqz v3, :cond_2
-
-    .line 118
-    .line 119
-    iget-object v4, v3, LlDa;->d:LRLd;
-
-    .line 120
-    .line 121
-    if-eqz v4, :cond_1
-
-    .line 122
-    .line 123
-    iget-object v4, v3, LlDa;->d:LRLd;
-
-    .line 124
-    .line 125
-    iput-object v4, v3, LlDa;->d:LRLd;
-
-    .line 126
-    .line 127
-    iget-object v4, v3, LlDa;->e:LXfi;
-
-    .line 128
-    .line 129
-    invoke-virtual {v4}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 130
-    .line 131
-    .line 132
-    move-result-object v4
-
-    .line 133
-    check-cast v4, Landroid/app/KeyguardManager;
-
-    .line 134
-    .line 135
-    new-instance v5, LjCa;
-
-    .line 136
-    .line 137
-    const/4 v6, 0x1
-
-    .line 138
-    invoke-direct {v5, v3, v6, p0}, LjCa;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 139
-    .line 140
-    .line 141
-    invoke-static {v4, p0, v5}, Lqn9;->v(Landroid/app/KeyguardManager;Landroid/app/Activity;Landroid/app/KeyguardManager$KeyguardDismissCallback;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 142
-    .line 143
-    .line 144
-    :cond_1
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
-
-    .line 145
-    .line 146
-    .line 147
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-object v1
-
-    .line 151
-    invoke-virtual {v0}, LiFf;->b()LiFf;
-
-    .line 152
-    .line 153
-    .line 154
-    invoke-virtual {v1, v0}, LU1g;->k(LiFf;)V
-
-    .line 155
-    .line 156
-    .line 157
-    return-void
-
-    .line 158
-    :cond_2
-    :try_start_2
-    const-string v0, "lockscreenAuthRequestManager"
-
-    .line 159
-    .line 160
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 161
-    .line 162
-    .line 163
-    throw v5
-
-    .line 164
-    :catchall_0
-    move-exception v0
-
-    .line 165
-    goto :goto_0
-
-    .line 166
-    :cond_3
-    const-string v0, "schedulers"
-
-    .line 167
-    .line 168
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 169
-    .line 170
-    .line 171
-    throw v5
-
-    .line 172
-    :cond_4
-    const-string v0, "mediaPackageManager"
-
-    .line 173
-    .line 174
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 175
-    .line 176
-    .line 177
-    throw v5
-
-    .line 178
-    :cond_5
-    const-string v0, "permissionsLifecycleHandler"
-
-    .line 179
-    .line 180
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 181
-    .line 182
-    .line 183
-    throw v5
-
-    .line 184
-    :cond_6
-    const-string v0, "shake2ReportActivityObserver"
-
-    .line 185
-    .line 186
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 187
-    .line 188
-    .line 189
-    throw v5
-
-    .line 190
-    :cond_7
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 191
-    .line 192
-    .line 193
-    throw v5
-
-    .line 194
-    :cond_8
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 195
-    .line 196
-    .line 197
-    throw v5
-
-    .line 198
-    :cond_9
-    const-string v0, "ngsActionBarController"
-
-    .line 199
-    .line 200
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 201
-    .line 202
-    .line 203
-    throw v5
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 204
-    :goto_0
-    sget-object v1, LXRg;->b:Lzhi;
-
-    .line 205
-    .line 206
-    if-eqz v1, :cond_a
-
-    .line 207
-    .line 208
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
-
-    .line 209
-    .line 210
-    .line 211
-    :cond_a
-    throw v0
-.end method
-
-.method public final f0()V
-    .locals 2
-
-    .line 1
-    sget-object v0, Lzth;->h0:Lzth;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    iget-object v1, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LVjd;
-
-    .line 8
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, LVjd;->k()V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v1
-
-    .line 18
-    invoke-virtual {v0}, LiFf;->b()LiFf;
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-virtual {v1, v0}, LU1g;->k(LiFf;)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-void
-
-    .line 25
-    :cond_0
-    const-string v0, "permissionsLifecycleHandler"
-
-    .line 26
-    .line 27
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 28
-    .line 29
-    .line 30
-    const/4 v0, 0x0
-
-    .line 31
-    throw v0
-.end method
-
-.method public final g0()V
+.method public final d0()V
     .locals 6
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -1913,7 +1900,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -1922,7 +1909,7 @@
 
     .line 9
     :try_start_0
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 10
     .line 11
@@ -1930,25 +1917,25 @@
     move-result-object v2
 
     .line 13
-    sget-object v3, LWD1;->n0:LWD1;
+    sget-object v3, LmH1;->n0:LmH1;
 
     .line 14
     .line 15
-    sget-object v4, Lj42;->a:Lj42;
+    sget-object v4, LN72;->a:LN72;
 
     .line 16
     .line 17
     const/4 v5, 0x0
 
     .line 18
-    invoke-virtual {v2, v3, v5, v5, v4}, LTqc;->D(LcSa;ZZLPpc;)V
+    invoke-virtual {v2, v3, v5, v5, v4}, LmGc;->D(LL4b;ZZLkFc;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 19
     .line 20
     .line 21
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 22
     .line 23
@@ -1960,7 +1947,7 @@
     move-exception v0
 
     .line 26
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 27
     .line 28
@@ -1968,7 +1955,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 31
     .line 32
@@ -1977,26 +1964,15 @@
     throw v0
 .end method
 
-.method public final getLifecycle()Landroidx/lifecycle/Lifecycle;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->Y0:Landroidx/lifecycle/e;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final h0()V
+.method public final e0()V
     .locals 4
 
     .line 1
-    sget-object v0, Lzth;->e0:Lzth;
+    sget-object v0, LpRh;->e0:LpRh;
 
     .line 2
     .line 3
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 4
     .line 5
@@ -2009,11 +1985,11 @@
 
     .line 8
     .line 9
-    sget-object v2, LXRg;->a:LWRg;
+    sget-object v2, LOdh;->a:LNdh;
 
     .line 10
     .line 11
-    invoke-virtual {v2, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v2, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 12
     .line 13
@@ -2024,7 +2000,7 @@
 
     .line 15
     :try_start_1
-    invoke-static {p0}, LCq9;->v0(Landroid/app/Activity;)V
+    invoke-static {p0}, LbS2;->u(Landroid/app/Activity;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -2032,14 +2008,14 @@
     .line 17
     .line 18
     :try_start_2
-    invoke-virtual {v2, v1}, LWRg;->h(I)V
+    invoke-virtual {v2, v1}, LNdh;->h(I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 19
     .line 20
     .line 21
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 22
     .line 23
@@ -2047,17 +2023,17 @@
     move-result-object v1
 
     .line 25
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {v1, v0}, Lmmg;->k(LGYf;)V
 
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 32
     .line 33
@@ -2065,11 +2041,11 @@
     move-result-object v0
 
     .line 35
-    sget-object v1, Lxth;->c:Lxth;
+    sget-object v1, LnRh;->c:LnRh;
 
     .line 36
     .line 37
-    invoke-virtual {v0, v1}, LU1g;->g(LR1g;)V
+    invoke-virtual {v0, v1}, Lmmg;->g(Ljmg;)V
 
     .line 38
     .line 39
@@ -2089,7 +2065,7 @@
 
     .line 44
     :try_start_3
-    sget-object v3, LXRg;->b:Lzhi;
+    sget-object v3, LOdh;->b:LtGi;
 
     .line 45
     .line 46
@@ -2097,7 +2073,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {v3, v1}, Lzhi;->o(I)V
+    invoke-virtual {v3, v1}, LtGi;->o(I)V
 
     .line 49
     .line 50
@@ -2109,7 +2085,7 @@
 
     .line 52
     :goto_0
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 53
     .line 54
@@ -2117,17 +2093,17 @@
     move-result-object v2
 
     .line 56
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 57
     .line 58
     .line 59
-    invoke-virtual {v2, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {v2, v0}, Lmmg;->k(LGYf;)V
 
     .line 60
     .line 61
     .line 62
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 63
     .line 64
@@ -2135,11 +2111,11 @@
     move-result-object v0
 
     .line 66
-    sget-object v2, Lxth;->c:Lxth;
+    sget-object v2, LnRh;->c:LnRh;
 
     .line 67
     .line 68
-    invoke-virtual {v0, v2}, LU1g;->g(LR1g;)V
+    invoke-virtual {v0, v2}, Lmmg;->g(Ljmg;)V
 
     .line 69
     .line 70
@@ -2147,11 +2123,63 @@
     throw v1
 .end method
 
+.method public final f0()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final g0()V
+    .locals 0
+
+    .line 1
+    invoke-super {p0}, Lcom/snap/core/analytics/Tier0InstrumentedActivity;->g0()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public final getLifecycle()Landroidx/lifecycle/Lifecycle;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->Y0:Landroidx/lifecycle/e;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final i0()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
 .method public final k0()V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
 
     .line 2
     .line 3
@@ -2163,48 +2191,50 @@
     .locals 0
 
     .line 1
-    invoke-super {p0}, Lcom/snap/core/analytics/Tier0InstrumentedActivity;->l0()V
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
+    return-void
+.end method
 
+.method public final o0()LGR9;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->D0:LGR9;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
     .line 5
+    return-object v0
+
     .line 6
+    :cond_0
+    const-string v0, "launchTracker"
+
     .line 7
-    return-void
-.end method
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
-.method public final n0()V
-    .locals 0
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
 
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final o0()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
+    .line 12
+    throw v0
 .end method
 
 .method public final onBackPressed()V
     .locals 4
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 2
     .line 3
@@ -2212,7 +2242,7 @@
     move-result-object v0
 
     .line 5
-    iget-boolean v0, v0, LTqc;->r:Z
+    iget-boolean v0, v0, LmGc;->r:Z
 
     .line 6
     .line 7
@@ -2227,7 +2257,7 @@
 
     .line 11
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 12
     .line 13
@@ -2235,16 +2265,16 @@
     move-result-object v0
 
     .line 15
-    new-instance v2, LrU6;
+    new-instance v2, LFY6;
 
     .line 16
     .line 17
-    invoke-direct {v2}, LrU6;-><init>()V
+    invoke-direct {v2}, LFY6;-><init>()V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v0, v2}, LTqc;->z(LqU6;)Z
+    invoke-virtual {v0, v2}, LmGc;->z(LEY6;)Z
 
     .line 21
     .line 22
@@ -2392,7 +2422,7 @@
 
     .line 23
     .line 24
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -2462,7 +2492,7 @@
 
     .line 23
     .line 24
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -2532,7 +2562,7 @@
 
     .line 23
     .line 24
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -2602,7 +2632,7 @@
 
     .line 23
     .line 24
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -2617,12 +2647,12 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lzth;->i0:Lzth;
+    sget-object v0, LpRh;->i0:LpRh;
 
     .line 5
     .line 6
@@ -2634,7 +2664,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 11
     .line 12
@@ -2646,7 +2676,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 16
     .line 17
@@ -2654,11 +2684,11 @@
     move-result-object v1
 
     .line 19
-    sget-object v2, LkG9;->b:LkG9;
+    sget-object v2, LIR9;->b:LIR9;
 
     .line 20
     .line 21
-    invoke-virtual {v1, v2, v0}, LiG9;->m(LkG9;Lzth;)LiFf;
+    invoke-virtual {v1, v2, v0}, LGR9;->m(LIR9;LpRh;)LGYf;
 
     .line 22
     .line 23
@@ -2666,11 +2696,11 @@
     move-result-object v0
 
     .line 25
-    sget-object v1, Lxth;->g0:Lxth;
+    sget-object v1, LnRh;->g0:LnRh;
 
     .line 26
     .line 27
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 28
     .line 29
@@ -2678,13 +2708,13 @@
     move-result-object v2
 
     .line 31
-    invoke-virtual {v2, v1}, LU1g;->g(LR1g;)V
+    invoke-virtual {v2, v1}, Lmmg;->g(Ljmg;)V
 
     .line 32
     .line 33
     .line 34
     :goto_0
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 35
     .line 36
@@ -2692,7 +2722,7 @@
 
     .line 37
     .line 38
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 39
     .line 40
@@ -2715,12 +2745,12 @@
 
     .line 47
     .line 48
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 52
     .line 53
@@ -2728,7 +2758,7 @@
     move-result-object p1
 
     .line 55
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 56
     .line 57
@@ -2736,7 +2766,7 @@
     move-result-object v0
 
     .line 59
-    invoke-virtual {p1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {p1, v0}, Lmmg;->k(LGYf;)V
 
     .line 60
     .line 61
@@ -2748,7 +2778,7 @@
     move-exception p1
 
     .line 64
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 65
     .line 66
@@ -2756,7 +2786,7 @@
 
     .line 67
     .line 68
-    invoke-virtual {v0, v2}, Lzhi;->o(I)V
+    invoke-virtual {v0, v2}, LtGi;->o(I)V
 
     .line 69
     .line 70
@@ -2769,11 +2799,11 @@
     .locals 14
 
     .line 1
-    sget-object v0, Lzth;->g0:Lzth;
+    sget-object v0, LpRh;->g0:LpRh;
 
     .line 2
     .line 3
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 4
     .line 5
@@ -2781,7 +2811,7 @@
     move-result-object v0
 
     .line 7
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 8
     .line 9
@@ -2789,7 +2819,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 12
     .line 13
@@ -2803,7 +2833,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 19
     .line 20
@@ -2822,7 +2852,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v3, v4}, LTqc;->C(Lcom/snapchat/deck/views/DeckView;)V
+    invoke-virtual {v3, v4}, LmGc;->C(Lcom/snapchat/deck/views/DeckView;)V
 
     .line 28
     .line 29
@@ -2864,7 +2894,7 @@
 
     .line 44
     :goto_0
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 45
     .line 46
@@ -2891,12 +2921,12 @@
     const/4 v12, 0x0
 
     .line 55
-    invoke-static/range {v6 .. v13}, LTqc;->P(LTqc;LcSa;LOpc;Ljava/util/ArrayList;LPpc;LJqc;ZI)V
+    invoke-static/range {v6 .. v13}, LmGc;->N(LmGc;LL4b;LjFc;Ljava/util/ArrayList;LkFc;LcGc;ZI)V
 
     .line 56
     .line 57
     .line 58
-    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->v0:LsL4;
+    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->v0:LyQ4;
 
     .line 59
     .line 60
@@ -2904,11 +2934,11 @@
 
     .line 61
     .line 62
-    iget-object p1, p1, LsL4;->t2:Lake;
+    iget-object p1, p1, LyQ4;->s2:LCBe;
 
     .line 63
     .line 64
-    invoke-interface {p1}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LDBe;->get()Ljava/lang/Object;
 
     .line 65
     .line 66
@@ -2916,16 +2946,16 @@
     move-result-object p1
 
     .line 68
-    check-cast p1, LbT1;
+    check-cast p1, LDW1;
 
     .line 69
     .line 70
-    invoke-virtual {p1, p0}, LbT1;->a(Lcom/snap/core/analytics/Tier0InstrumentedActivity;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1, p0}, LDW1;->a(Lcom/snap/core/analytics/Tier0InstrumentedActivity;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 71
     .line 72
     .line 73
-    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LVjd;
+    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->K0:LcAd;
 
     .line 74
     .line 75
@@ -2933,12 +2963,12 @@
 
     .line 76
     .line 77
-    invoke-virtual {p1}, LVjd;->j()V
+    invoke-virtual {p1}, LcAd;->k()V
 
     .line 78
     .line 79
     .line 80
-    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->F0:LwDa;
+    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->F0:LKPa;
 
     .line 81
     .line 82
@@ -2946,7 +2976,7 @@
 
     .line 83
     .line 84
-    invoke-virtual {p1}, LwDa;->a()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1}, LKPa;->a()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 85
     .line 86
@@ -2958,19 +2988,19 @@
 
     .line 89
     .line 90
-    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 91
     .line 92
     .line 93
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 94
     .line 95
     .line 96
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 97
     .line 98
@@ -2978,12 +3008,12 @@
     move-result-object p1
 
     .line 100
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 101
     .line 102
     .line 103
-    invoke-virtual {p1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {p1, v0}, Lmmg;->k(LGYf;)V
 
     .line 104
     .line 105
@@ -2997,7 +3027,7 @@
 
     .line 108
     .line 109
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 110
     .line 111
@@ -3010,7 +3040,7 @@
 
     .line 114
     .line 115
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 116
     .line 117
@@ -3023,7 +3053,7 @@
 
     .line 120
     .line 121
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 122
     .line 123
@@ -3036,7 +3066,7 @@
 
     .line 126
     .line 127
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 128
     .line 129
@@ -3047,7 +3077,7 @@
 
     .line 131
     :goto_1
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 132
     .line 133
@@ -3055,7 +3085,7 @@
 
     .line 134
     .line 135
-    invoke-virtual {v0, v2}, Lzhi;->o(I)V
+    invoke-virtual {v0, v2}, LtGi;->o(I)V
 
     .line 136
     .line 137
@@ -3068,16 +3098,16 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lzth;->l0:Lzth;
+    sget-object v0, LpRh;->l0:LpRh;
 
     .line 5
     .line 6
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 7
     .line 8
@@ -3085,7 +3115,7 @@
     move-result-object v0
 
     .line 10
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 11
     .line 12
@@ -3093,7 +3123,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 15
     .line 16
@@ -3109,12 +3139,12 @@
     .line 19
     .line 20
     .line 21
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 25
     .line 26
@@ -3122,12 +3152,12 @@
     move-result-object v1
 
     .line 28
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 29
     .line 30
     .line 31
-    invoke-virtual {v1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {v1, v0}, Lmmg;->k(LGYf;)V
 
     .line 32
     .line 33
@@ -3139,7 +3169,7 @@
     move-exception v0
 
     .line 36
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
     .line 37
     .line 38
@@ -3147,7 +3177,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
 
     .line 41
     .line 42
@@ -3165,7 +3195,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->J0:LrH9;
+    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->J0:LQS9;
 
     .line 5
     .line 6
@@ -3173,7 +3203,7 @@
 
     .line 7
     .line 8
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -3181,7 +3211,7 @@
     move-result-object v0
 
     .line 12
-    check-cast v0, Lhjd;
+    check-cast v0, Lpzd;
 
     .line 13
     .line 14
@@ -3189,7 +3219,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0, p0, p1, p2, p3}, Lt0f;->h(Lhjd;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I[Ljava/lang/String;[I)Lt0f;
+    invoke-static {v0, p0, p1, p2, p3}, Lwif;->h(Lpzd;Lcom/snap/taskexecution/scoping/recipes/ScopedFragmentActivity;I[Ljava/lang/String;[I)Lwif;
 
     .line 17
     .line 18
@@ -3197,7 +3227,7 @@
     move-result-object p1
 
     .line 20
-    invoke-virtual {v0, p1}, Lhjd;->o(Lt0f;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v0, p1}, Lpzd;->o(Lwif;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 21
     .line 22
@@ -3209,7 +3239,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 27
     .line 28
@@ -3222,12 +3252,12 @@
     .locals 3
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, Lzth;->j0:Lzth;
+    sget-object v0, LpRh;->j0:LpRh;
 
     .line 5
     .line 6
@@ -3239,7 +3269,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 11
     .line 12
@@ -3251,7 +3281,7 @@
 
     .line 15
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 16
     .line 17
@@ -3259,11 +3289,11 @@
     move-result-object v1
 
     .line 19
-    sget-object v2, LkG9;->c:LkG9;
+    sget-object v2, LIR9;->c:LIR9;
 
     .line 20
     .line 21
-    invoke-virtual {v1, v2, v0}, LiG9;->m(LkG9;Lzth;)LiFf;
+    invoke-virtual {v1, v2, v0}, LGR9;->m(LIR9;LpRh;)LGYf;
 
     .line 22
     .line 23
@@ -3272,7 +3302,7 @@
 
     .line 25
     :goto_0
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 26
     .line 27
@@ -3280,7 +3310,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 30
     .line 31
@@ -3296,12 +3326,12 @@
     .line 34
     .line 35
     .line 36
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 37
     .line 38
     .line 39
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->s0()LiG9;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->o0()LGR9;
 
     .line 40
     .line 41
@@ -3309,7 +3339,7 @@
     move-result-object v1
 
     .line 43
-    invoke-virtual {v0}, LiFf;->b()LiFf;
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 44
     .line 45
@@ -3317,7 +3347,7 @@
     move-result-object v0
 
     .line 47
-    invoke-virtual {v1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {v1, v0}, Lmmg;->k(LGYf;)V
 
     .line 48
     .line 49
@@ -3329,7 +3359,7 @@
     move-exception v0
 
     .line 52
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
     .line 53
     .line 54
@@ -3337,7 +3367,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
 
     .line 57
     .line 58
@@ -3350,7 +3380,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
 
     .line 2
     .line 3
@@ -3360,12 +3390,12 @@
     .line 5
     .line 6
     .line 7
-    invoke-static {p1}, LWwb;->f(Landroid/os/Bundle;)V
+    invoke-static {p1}, LMIc;->d(Landroid/os/Bundle;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 11
     .line 12
@@ -3373,7 +3403,7 @@
     move-result-object v0
 
     .line 14
-    invoke-virtual {v0}, LTqc;->n()Ljava/util/ArrayList;
+    invoke-virtual {v0}, LmGc;->n()Ljava/util/ArrayList;
 
     .line 15
     .line 16
@@ -3415,12 +3445,12 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->r0()LJp0;
 
     .line 5
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:LWm0;
+    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->U0:Lnp0;
 
     .line 8
     .line 9
@@ -3435,7 +3465,7 @@
 
     .line 13
     .line 14
-    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->O0:La9j;
+    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->O0:LWxj;
 
     .line 15
     .line 16
@@ -3443,7 +3473,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->t0()LTqc;
+    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->p0()LmGc;
 
     .line 19
     .line 20
@@ -3451,7 +3481,7 @@
     move-result-object v1
 
     .line 22
-    invoke-virtual {v1}, LTqc;->q()LcSa;
+    invoke-virtual {v1}, LmGc;->q()LL4b;
 
     .line 23
     .line 24
@@ -3459,7 +3489,7 @@
     move-result-object v1
 
     .line 26
-    invoke-static {p1, v0, v1}, LNpk;->e(La9j;LWm0;LcSa;)V
+    invoke-static {p1, v0, v1}, LyOk;->e(LWxj;Lnp0;LL4b;)V
 
     .line 27
     .line 28
@@ -3468,7 +3498,7 @@
 
     .line 30
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -3477,7 +3507,7 @@
 
     .line 34
     :cond_1
-    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->O0:La9j;
+    iget-object p1, p0, Lcom/snap/catalina/core/CatalinaActivity;->O0:LWxj;
 
     .line 35
     .line 36
@@ -3485,7 +3515,7 @@
 
     .line 37
     .line 38
-    invoke-virtual {p1, v0}, La9j;->b(LWm0;)V
+    invoke-virtual {p1, v0}, LWxj;->b(Lnp0;)V
 
     .line 39
     .line 40
@@ -3494,7 +3524,7 @@
 
     .line 42
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 43
     .line 44
@@ -3502,54 +3532,11 @@
     throw v1
 .end method
 
-.method public final p0()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/catalina/core/CatalinaActivity;->u0()Lrn0;
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final s0()LiG9;
+.method public final p0()LmGc;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->D0:LiG9;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "launchTracker"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final t0()LTqc;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->H0:LTqc;
+    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->H0:LmGc;
 
     .line 2
     .line 3
@@ -3565,7 +3552,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3576,11 +3563,11 @@
     throw v0
 .end method
 
-.method public final u0()Lrn0;
+.method public final r0()LJp0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->T0:Lrn0;
+    iget-object v0, p0, Lcom/snap/catalina/core/CatalinaActivity;->T0:LJp0;
 
     .line 2
     .line 3
@@ -3596,7 +3583,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10

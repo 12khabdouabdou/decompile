@@ -1,412 +1,250 @@
-.class public abstract synthetic LsXb;
+.class public final LsXb;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LtXb;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(LtXb;I)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lcom/snapchat/client/grpc/StatusCode;->values()[Lcom/snapchat/client/grpc/StatusCode;
+    iput p2, p0, LsXb;->a:I
+
+    iput-object p1, p0, LsXb;->b:LtXb;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onClick(Landroid/view/View;)V
+    .locals 5
+
+    .line 1
+    iget p1, p0, LsXb;->a:I
 
     .line 2
     .line 3
+    packed-switch p1, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    new-instance p1, LHM7;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->UNAVAILABLE:Lcom/snapchat/client/grpc/StatusCode;
+    sget-object v0, Lqrh;->e0:LL4b;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iget-object v1, p0, LsXb;->b:LtXb;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    iget-object v2, v1, LtXb;->h0:Le35;
 
+    .line 13
     .line 14
-    const/4 v2, 0x1
+    invoke-virtual {v2}, Le35;->get()Ljava/lang/Object;
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->DEADLINE_EXCEEDED:Lcom/snapchat/client/grpc/StatusCode;
+    move-result-object v2
 
     .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    check-cast v2, Lfsh;
 
+    .line 19
     .line 20
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 21
     .line 22
-    move-result v1
-
     .line 23
-    const/4 v2, 0x2
+    new-instance v2, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;
 
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->RESOURCE_EXTHAUSTED:Lcom/snapchat/client/grpc/StatusCode;
+    invoke-direct {v2}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;-><init>()V
 
+    .line 26
     .line 27
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    new-instance v3, LFFc;
 
     .line 29
     .line 30
+    invoke-direct {v3}, LFFc;-><init>()V
+
     .line 31
-    move-result v1
-
     .line 32
-    const/4 v2, 0x3
-
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    sget-object v4, Lqrh;->g0:LuFc;
 
     .line 34
     .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->INTERNAL:Lcom/snapchat/client/grpc/StatusCode;
+    invoke-virtual {v3, v4}, LEFc;->c(LyFc;)LEFc;
 
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 38
-    .line 39
-    .line 40
-    move-result v1
+    move-result-object v3
 
+    .line 39
+    check-cast v3, LFFc;
+
+    .line 40
     .line 41
-    const/4 v2, 0x4
+    invoke-virtual {v3}, LFFc;->d()LJO5;
 
     .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
     .line 43
     .line 44
-    :catch_3
-    :try_start_4
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->ABORTED:Lcom/snapchat/client/grpc/StatusCode;
+    move-result-object v3
 
     .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {p1, v0, v2, v3}, LHM7;-><init>(LL4b;Lcom/snapchat/deck/fragment/MainPageFragment;LHFc;)V
 
+    .line 46
     .line 47
     .line 48
-    .line 49
-    move-result v1
+    iget-object v0, v1, LtXb;->Z:Le35;
 
+    .line 49
     .line 50
-    const/4 v2, 0x5
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 51
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
     .line 52
     .line 53
-    :catch_4
-    :try_start_5
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->ALREADY_EXIST:Lcom/snapchat/client/grpc/StatusCode;
+    move-result-object v0
 
     .line 54
-    .line 55
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    check-cast v0, LmGc;
 
+    .line 55
     .line 56
+    sget-object v1, Lqrh;->f0:LxFc;
+
     .line 57
     .line 58
-    move-result v1
+    const/4 v2, 0x0
 
     .line 59
-    const/4 v2, 0x6
+    invoke-virtual {v0, p1, v1, v2}, LmGc;->w(LG4b;LyFc;LkFc;)V
 
     .line 60
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
     .line 61
     .line 62
-    :catch_5
-    :try_start_6
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->CANCELLED:Lcom/snapchat/client/grpc/StatusCode;
+    return-void
 
     .line 63
-    .line 64
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :pswitch_0
+    new-instance p1, LHM7;
 
+    .line 64
     .line 65
+    sget-object v0, LaOb;->J:LL4b;
+
     .line 66
     .line 67
-    move-result v1
+    new-instance v1, Lcom/snap/memories/lib/memtwo/MemoriesComposerFragment;
 
     .line 68
-    const/4 v2, 0x7
-
     .line 69
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    invoke-direct {v1}, Lcom/snap/memories/lib/memtwo/MemoriesComposerFragment;-><init>()V
 
     .line 70
     .line 71
-    :catch_6
-    :try_start_7
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->NOT_FOUND:Lcom/snapchat/client/grpc/StatusCode;
-
     .line 72
-    .line 73
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    new-instance v2, LFFc;
 
+    .line 73
     .line 74
+    invoke-direct {v2}, LFFc;-><init>()V
+
     .line 75
     .line 76
-    move-result v1
-
     .line 77
-    const/16 v2, 0x8
+    sget-object v3, LaOb;->M:LuFc;
 
     .line 78
     .line 79
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    invoke-virtual {v2, v3}, LEFc;->c(LyFc;)LEFc;
 
     .line 80
     .line 81
-    :catch_7
-    :try_start_8
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->DATA_LOSS:Lcom/snapchat/client/grpc/StatusCode;
-
     .line 82
+    move-result-object v2
+
     .line 83
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    check-cast v2, LFFc;
 
     .line 84
     .line 85
+    invoke-virtual {v2}, LFFc;->d()LJO5;
+
     .line 86
-    move-result v1
-
     .line 87
-    const/16 v2, 0x9
-
     .line 88
+    move-result-object v2
+
     .line 89
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    invoke-direct {p1, v0, v1, v2}, LHM7;-><init>(LL4b;Lcom/snapchat/deck/fragment/MainPageFragment;LHFc;)V
 
     .line 90
     .line 91
-    :catch_8
-    :try_start_9
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->FAILED_PRECONDITION:Lcom/snapchat/client/grpc/StatusCode;
-
     .line 92
-    .line 93
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iget-object v0, p0, LsXb;->b:LtXb;
 
+    .line 93
     .line 94
+    iget-object v0, v0, LtXb;->Z:Le35;
+
     .line 95
     .line 96
-    move-result v1
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 97
-    const/16 v2, 0xa
-
     .line 98
     .line 99
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+    move-result-object v0
 
     .line 100
+    check-cast v0, LmGc;
+
     .line 101
-    :catch_9
-    :try_start_a
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->INVALID_ARGUMENT:Lcom/snapchat/client/grpc/StatusCode;
-
     .line 102
+    sget-object v1, LaOb;->L:LxFc;
+
     .line 103
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 104
+    const/4 v2, 0x0
+
     .line 105
+    invoke-virtual {v0, p1, v1, v2}, LmGc;->w(LG4b;LyFc;LkFc;)V
+
     .line 106
-    move-result v1
-
     .line 107
-    const/16 v2, 0xb
-
     .line 108
-    .line 109
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    .line 110
-    .line 111
-    :catch_a
-    :try_start_b
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->PERMISSION_DENIED:Lcom/snapchat/client/grpc/StatusCode;
-
-    .line 112
-    .line 113
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 114
-    .line 115
-    .line 116
-    move-result v1
-
-    .line 117
-    const/16 v2, 0xc
-
-    .line 118
-    .line 119
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    .line 120
-    .line 121
-    :catch_b
-    :try_start_c
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->OUT_OF_RANGE:Lcom/snapchat/client/grpc/StatusCode;
-
-    .line 122
-    .line 123
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 124
-    .line 125
-    .line 126
-    move-result v1
-
-    .line 127
-    const/16 v2, 0xd
-
-    .line 128
-    .line 129
-    aput v2, v0, v1
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    .line 130
-    .line 131
-    :catch_c
-    :try_start_d
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->UNAUTHENTICATED:Lcom/snapchat/client/grpc/StatusCode;
-
-    .line 132
-    .line 133
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 134
-    .line 135
-    .line 136
-    move-result v1
-
-    .line 137
-    const/16 v2, 0xe
-
-    .line 138
-    .line 139
-    aput v2, v0, v1
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
-
-    .line 140
-    .line 141
-    :catch_d
-    :try_start_e
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->UNKNOWN:Lcom/snapchat/client/grpc/StatusCode;
-
-    .line 142
-    .line 143
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 144
-    .line 145
-    .line 146
-    move-result v1
-
-    .line 147
-    const/16 v2, 0xf
-
-    .line 148
-    .line 149
-    aput v2, v0, v1
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
-
-    .line 150
-    .line 151
-    :catch_e
-    :try_start_f
-    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->UNIMPLEMENTED:Lcom/snapchat/client/grpc/StatusCode;
-
-    .line 152
-    .line 153
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 154
-    .line 155
-    .line 156
-    move-result v1
-
-    .line 157
-    const/16 v2, 0x10
-
-    .line 158
-    .line 159
-    aput v2, v0, v1
-    :try_end_f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
-
-    .line 160
-    .line 161
-    :catch_f
-    sput-object v0, LsXb;->a:[I
-
-    .line 162
-    .line 163
     return-void
+
+    .line 109
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

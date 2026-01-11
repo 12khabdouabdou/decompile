@@ -1,515 +1,254 @@
-.class public final LFJi;
-.super Lo17;
+.class public LFJi;
+.super LhPj;
 .source "SourceFile"
 
 
-# static fields
-.field public static volatile k0:[LFJi;
-
-
 # instance fields
-.field public X:LWy7;
+.field public A0:Ljava/util/ArrayList;
 
-.field public Y:LWy7;
+.field public p0:Ljava/lang/String;
 
-.field public Z:LWy7;
+.field public q0:Ljava/lang/Long;
 
-.field public a:I
+.field public r0:LhO3;
 
-.field public b:I
+.field public s0:LgO3;
 
-.field public c:LLn9;
+.field public t0:Ljava/lang/Long;
 
-.field public e0:LWy7;
+.field public u0:Ljava/lang/Long;
 
-.field public f0:LLn9;
+.field public v0:LpO3;
 
-.field public g0:LWy7;
+.field public w0:Ljava/lang/Long;
 
-.field public h0:LWy7;
+.field public x0:Ljava/lang/Long;
 
-.field public i0:Z
+.field public y0:Ljava/lang/Long;
 
-.field public j0:LdYi;
-
-.field public t:LdYi;
+.field public z0:Ljava/util/ArrayList;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    sget-object v2, LoJe;->c:LoJe;
 
     .line 2
     .line 3
-    .line 4
-    const/4 v0, 0x0
+    const-string v1, "TALK_CALL_CONNECTIVITY"
 
+    .line 4
     .line 5
-    iput v0, p0, LFJi;->a:I
+    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
 
     .line 6
     .line 7
-    iput v0, p0, LFJi;->b:I
+    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
 
     .line 8
     .line 9
-    const/4 v1, 0x0
+    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
 
     .line 10
-    iput-object v1, p0, LFJi;->c:LLn9;
-
     .line 11
+    move-object v0, p0
+
     .line 12
-    iput-object v1, p0, LFJi;->t:LdYi;
+    invoke-direct/range {v0 .. v8}, LEV6;-><init>(Ljava/lang/String;LoJe;DDD)V
 
     .line 13
     .line 14
-    iput-object v1, p0, LFJi;->X:LWy7;
-
     .line 15
-    .line 16
-    iput-object v1, p0, LFJi;->Y:LWy7;
-
-    .line 17
-    .line 18
-    iput-object v1, p0, LFJi;->Z:LWy7;
-
-    .line 19
-    .line 20
-    iput-object v1, p0, LFJi;->e0:LWy7;
-
-    .line 21
-    .line 22
-    iput-object v1, p0, LFJi;->f0:LLn9;
-
-    .line 23
-    .line 24
-    iput-object v1, p0, LFJi;->g0:LWy7;
-
-    .line 25
-    .line 26
-    iput-object v1, p0, LFJi;->h0:LWy7;
-
-    .line 27
-    .line 28
-    iput-boolean v0, p0, LFJi;->i0:Z
-
-    .line 29
-    .line 30
-    iput-object v1, p0, LFJi;->j0:LdYi;
-
-    .line 31
-    .line 32
-    iput-object v1, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 33
-    .line 34
-    const/4 v0, -0x1
-
-    .line 35
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 36
-    .line 37
     return-void
-.end method
-
-.method public static a()[LFJi;
-    .locals 2
-
-    .line 1
-    sget-object v0, LFJi;->k0:[LFJi;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_1
-
-    .line 4
-    .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    monitor-enter v0
-
-    .line 8
-    :try_start_0
-    sget-object v1, LFJi;->k0:[LFJi;
-
-    .line 9
-    .line 10
-    if-nez v1, :cond_0
-
-    .line 11
-    .line 12
-    const/4 v1, 0x0
-
-    .line 13
-    new-array v1, v1, [LFJi;
-
-    .line 14
-    .line 15
-    sput-object v1, LFJi;->k0:[LFJi;
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :catchall_0
-    move-exception v1
-
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_0
-    :goto_0
-    monitor-exit v0
-
-    .line 21
-    goto :goto_2
-
-    .line 22
-    :goto_1
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 23
-    throw v1
-
-    .line 24
-    :cond_1
-    :goto_2
-    sget-object v0, LFJi;->k0:[LFJi;
-
-    .line 25
-    .line 26
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 4
+.method public final d(LeO3;Ljava/util/Set;)V
+    .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    const/4 v0, 0x2
 
     .line 2
+    new-array v1, v0, [B
+
     .line 3
     .line 4
-    move-result v0
+    iget-object v2, p0, LFJi;->q0:Ljava/lang/Long;
 
     .line 5
-    iget v1, p0, LFJi;->a:I
-
     .line 6
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
     .line 7
-    const/4 v2, 0x1
-
     .line 8
-    and-int/2addr v1, v2
-
     .line 9
-    if-eqz v1, :cond_0
+    const/4 v0, 0x3
 
     .line 10
+    iget-object v2, p0, LFJi;->s0:LgO3;
+
     .line 11
-    iget v1, p0, LFJi;->b:I
-
     .line 12
-    .line 13
-    invoke-static {v2, v1}, Lsa3;->i(II)I
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->W(LeO3;I[BLUT6;Ljava/util/Set;)V
 
+    .line 13
     .line 14
     .line 15
+    const/4 v0, 0x4
+
     .line 16
-    move-result v1
+    iget-object v2, p0, LFJi;->p0:Ljava/lang/String;
 
     .line 17
-    add-int/2addr v0, v1
-
     .line 18
-    :cond_0
-    iget-object v1, p0, LFJi;->c:LLn9;
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->Z(LeO3;I[BLjava/lang/String;Ljava/util/Set;)V
 
     .line 19
     .line 20
-    const/4 v2, 0x2
-
     .line 21
-    if-eqz v1, :cond_1
+    const/4 v0, 0x5
 
     .line 22
-    .line 23
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    iget-object v2, p0, LFJi;->v0:LpO3;
 
+    .line 23
     .line 24
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->W(LeO3;I[BLUT6;Ljava/util/Set;)V
+
     .line 25
     .line 26
-    move-result v1
-
     .line 27
-    add-int/2addr v0, v1
+    const/4 v0, 0x6
 
     .line 28
-    :cond_1
-    iget-object v1, p0, LFJi;->t:LdYi;
+    iget-object v2, p0, LFJi;->r0:LhO3;
 
     .line 29
     .line 30
-    if-eqz v1, :cond_2
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->W(LeO3;I[BLUT6;Ljava/util/Set;)V
 
     .line 31
     .line 32
-    const/4 v3, 0x3
-
     .line 33
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    iget-object v0, p0, LFJi;->A0:Ljava/util/ArrayList;
 
     .line 34
     .line 35
+    const/4 v2, 0x7
+
     .line 36
-    move-result v1
+    invoke-static {p1, v2, v1, v0, p2}, Lfqj;->e0(LeO3;I[BLjava/util/List;Ljava/util/Set;)V
 
     .line 37
-    add-int/2addr v0, v1
-
     .line 38
-    :cond_2
-    iget-object v1, p0, LFJi;->X:LWy7;
-
     .line 39
+    iget-object v0, p0, LFJi;->z0:Ljava/util/ArrayList;
+
     .line 40
-    if-eqz v1, :cond_3
-
     .line 41
-    .line 42
-    const/4 v3, 0x4
+    const/16 v2, 0x8
 
+    .line 42
     .line 43
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {p1, v2, v1, v0, p2}, Lfqj;->c0(LeO3;I[BLjava/util/List;Ljava/util/Set;)V
 
     .line 44
     .line 45
     .line 46
-    move-result v1
+    const/16 v0, 0x9
 
     .line 47
-    add-int/2addr v0, v1
-
     .line 48
-    :cond_3
-    iget-object v1, p0, LFJi;->Y:LWy7;
+    iget-object v2, p0, LFJi;->t0:Ljava/lang/Long;
 
     .line 49
     .line 50
-    if-eqz v1, :cond_4
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
 
     .line 51
     .line 52
-    const/4 v3, 0x5
-
     .line 53
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    const/16 v0, 0xa
 
     .line 54
     .line 55
-    .line 56
-    move-result v1
+    iget-object v2, p0, LFJi;->x0:Ljava/lang/Long;
 
+    .line 56
     .line 57
-    add-int/2addr v0, v1
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
 
     .line 58
-    :cond_4
-    iget-object v1, p0, LFJi;->Z:LWy7;
-
     .line 59
     .line 60
-    if-eqz v1, :cond_5
+    const/16 v0, 0xb
 
     .line 61
     .line 62
-    const/4 v3, 0x6
+    iget-object v2, p0, LFJi;->u0:Ljava/lang/Long;
 
     .line 63
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
     .line 64
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
     .line 65
     .line 66
-    move-result v1
-
     .line 67
-    add-int/2addr v0, v1
+    const/16 v0, 0xc
 
     .line 68
-    :cond_5
-    iget-object v1, p0, LFJi;->e0:LWy7;
-
     .line 69
+    iget-object v2, p0, LFJi;->w0:Ljava/lang/Long;
+
     .line 70
-    if-eqz v1, :cond_6
-
     .line 71
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
     .line 72
-    const/4 v3, 0x7
-
     .line 73
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
     .line 74
+    const/16 v0, 0xd
+
     .line 75
     .line 76
-    move-result v1
+    iget-object v2, p0, LFJi;->y0:Ljava/lang/Long;
 
     .line 77
-    add-int/2addr v0, v1
-
     .line 78
-    :cond_6
-    iget-object v1, p0, LFJi;->f0:LLn9;
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
 
     .line 79
     .line 80
-    if-eqz v1, :cond_7
-
     .line 81
-    .line 82
-    const/16 v3, 0x8
+    invoke-virtual {p1, v1}, LeO3;->k([B)V
 
+    .line 82
     .line 83
     .line 84
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 85
-    .line 86
-    .line 87
-    move-result v1
-
-    .line 88
-    add-int/2addr v0, v1
-
-    .line 89
-    :cond_7
-    iget-object v1, p0, LFJi;->g0:LWy7;
-
-    .line 90
-    .line 91
-    if-eqz v1, :cond_8
-
-    .line 92
-    .line 93
-    const/16 v3, 0x9
-
-    .line 94
-    .line 95
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 96
-    .line 97
-    .line 98
-    move-result v1
-
-    .line 99
-    add-int/2addr v0, v1
-
-    .line 100
-    :cond_8
-    iget-object v1, p0, LFJi;->h0:LWy7;
-
-    .line 101
-    .line 102
-    if-eqz v1, :cond_9
-
-    .line 103
-    .line 104
-    const/16 v3, 0xa
-
-    .line 105
-    .line 106
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 107
-    .line 108
-    .line 109
-    move-result v1
-
-    .line 110
-    add-int/2addr v0, v1
-
-    .line 111
-    :cond_9
-    iget v1, p0, LFJi;->a:I
-
-    .line 112
-    .line 113
-    and-int/2addr v1, v2
-
-    .line 114
-    if-eqz v1, :cond_a
-
-    .line 115
-    .line 116
-    const/16 v1, 0xb
-
-    .line 117
-    .line 118
-    invoke-static {v1}, Lsa3;->a(I)I
-
-    .line 119
-    .line 120
-    .line 121
-    move-result v1
-
-    .line 122
-    add-int/2addr v0, v1
-
-    .line 123
-    :cond_a
-    iget-object v1, p0, LFJi;->j0:LdYi;
-
-    .line 124
-    .line 125
-    if-eqz v1, :cond_b
-
-    .line 126
-    .line 127
-    const/16 v2, 0xc
-
-    .line 128
-    .line 129
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 130
-    .line 131
-    .line 132
-    move-result v1
-
-    .line 133
-    add-int/2addr v1, v0
-
-    .line 134
-    return v1
-
-    .line 135
-    :cond_b
-    return v0
+    return-void
 .end method
 
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public final e()I
     .locals 1
 
     .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    const/16 v0, 0xa40
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final f(Ljava/util/Map;)I
+    .locals 4
+
+    .line 1
+    invoke-super {p0, p1}, LhPj;->f(Ljava/util/Map;)I
 
     .line 2
     .line 3
@@ -517,775 +256,1108 @@
     move-result v0
 
     .line 5
-    sparse-switch v0, :sswitch_data_0
+    const-string v1, "ash"
 
     .line 6
     .line 7
-    .line 8
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 8
     .line 9
     .line 10
+    move-result-object v1
+
     .line 11
-    move-result v0
+    check-cast v1, Ljava/lang/Long;
 
     .line 12
-    if-nez v0, :cond_0
-
     .line 13
+    iput-object v1, p0, LFJi;->q0:Ljava/lang/Long;
+
     .line 14
-    goto/16 :goto_1
-
     .line 15
+    if-eqz v1, :cond_0
+
     .line 16
-    :sswitch_0
-    iget-object v0, p0, LFJi;->j0:LdYi;
-
     .line 17
+    add-int/lit8 v0, v0, 0x1
+
     .line 18
-    if-nez v0, :cond_1
-
     .line 19
+    :cond_0
+    const-string v1, "attempt_id"
+
     .line 20
-    new-instance v0, LdYi;
-
     .line 21
-    .line 22
-    invoke-direct {v0}, LdYi;-><init>()V
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 22
     .line 23
     .line 24
+    move-result-object v1
+
     .line 25
-    iput-object v0, p0, LFJi;->j0:LdYi;
+    check-cast v1, Ljava/lang/Long;
 
     .line 26
     .line 27
-    :cond_1
-    iget-object v0, p0, LFJi;->j0:LdYi;
+    iput-object v1, p0, LFJi;->y0:Ljava/lang/Long;
 
     .line 28
     .line 29
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    if-eqz v1, :cond_1
 
     .line 30
     .line 31
-    .line 32
-    goto :goto_0
+    add-int/lit8 v0, v0, 0x1
 
+    .line 32
     .line 33
-    :sswitch_1
-    invoke-virtual {p1}, Lqa3;->f()Z
+    :cond_1
+    const-string v1, "call_role"
 
     .line 34
     .line 35
+    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
     .line 36
-    move-result v0
-
     .line 37
-    iput-boolean v0, p0, LFJi;->i0:Z
-
     .line 38
+    move-result v2
+
     .line 39
-    iget v0, p0, LFJi;->a:I
+    if-eqz v2, :cond_3
 
     .line 40
     .line 41
-    or-int/lit8 v0, v0, 0x2
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
     .line 43
-    iput v0, p0, LFJi;->a:I
-
     .line 44
+    move-result-object v1
+
     .line 45
-    goto :goto_0
+    instance-of v2, v1, Ljava/lang/String;
 
     .line 46
-    :sswitch_2
-    iget-object v0, p0, LFJi;->h0:LWy7;
-
     .line 47
+    if-eqz v2, :cond_2
+
     .line 48
-    if-nez v0, :cond_2
-
     .line 49
+    check-cast v1, Ljava/lang/String;
+
     .line 50
-    new-instance v0, LWy7;
-
     .line 51
-    .line 52
-    invoke-direct {v0}, LWy7;-><init>()V
+    invoke-static {v1}, LgO3;->valueOf(Ljava/lang/String;)LgO3;
 
+    .line 52
     .line 53
     .line 54
+    move-result-object v1
+
     .line 55
-    iput-object v0, p0, LFJi;->h0:LWy7;
+    iput-object v1, p0, LFJi;->s0:LgO3;
 
     .line 56
     .line 57
-    :cond_2
-    iget-object v0, p0, LFJi;->h0:LWy7;
-
-    .line 58
-    .line 59
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    .line 60
-    .line 61
-    .line 62
     goto :goto_0
 
+    .line 58
+    :cond_2
+    check-cast v1, LgO3;
+
+    .line 59
+    .line 60
+    iput-object v1, p0, LFJi;->s0:LgO3;
+
+    .line 61
+    .line 62
+    :goto_0
+    add-int/lit8 v0, v0, 0x1
+
     .line 63
-    :sswitch_3
-    iget-object v0, p0, LFJi;->g0:LWy7;
-
     .line 64
+    :cond_3
+    const-string v1, "carrier_name"
+
     .line 65
-    if-nez v0, :cond_3
-
     .line 66
-    .line 67
-    new-instance v0, LWy7;
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 67
     .line 68
     .line 69
-    invoke-direct {v0}, LWy7;-><init>()V
+    move-result-object v1
 
     .line 70
+    check-cast v1, Ljava/lang/String;
+
     .line 71
     .line 72
-    iput-object v0, p0, LFJi;->g0:LWy7;
+    iput-object v1, p0, LFJi;->p0:Ljava/lang/String;
 
     .line 73
     .line 74
-    :cond_3
-    iget-object v0, p0, LFJi;->g0:LWy7;
+    if-eqz v1, :cond_4
 
     .line 75
     .line 76
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    add-int/lit8 v0, v0, 0x1
 
     .line 77
     .line 78
-    .line 79
-    goto :goto_0
+    :cond_4
+    const-string v1, "connection_result"
 
+    .line 79
     .line 80
-    :sswitch_4
-    iget-object v0, p0, LFJi;->f0:LLn9;
+    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     .line 81
     .line 82
-    if-nez v0, :cond_4
-
     .line 83
+    move-result v2
+
     .line 84
-    new-instance v0, LLn9;
+    if-eqz v2, :cond_6
 
     .line 85
     .line 86
-    invoke-direct {v0}, LLn9;-><init>()V
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 87
     .line 88
     .line 89
-    iput-object v0, p0, LFJi;->f0:LLn9;
+    move-result-object v1
 
     .line 90
+    instance-of v2, v1, Ljava/lang/String;
+
     .line 91
-    :cond_4
-    iget-object v0, p0, LFJi;->f0:LLn9;
-
     .line 92
-    .line 93
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    if-eqz v2, :cond_5
 
+    .line 93
     .line 94
+    check-cast v1, Ljava/lang/String;
+
     .line 95
     .line 96
-    goto :goto_0
+    invoke-static {v1}, LpO3;->valueOf(Ljava/lang/String;)LpO3;
 
     .line 97
-    :sswitch_5
-    iget-object v0, p0, LFJi;->e0:LWy7;
-
     .line 98
     .line 99
-    if-nez v0, :cond_5
+    move-result-object v1
 
     .line 100
-    .line 101
-    new-instance v0, LWy7;
+    iput-object v1, p0, LFJi;->v0:LpO3;
 
+    .line 101
     .line 102
+    goto :goto_1
+
     .line 103
-    invoke-direct {v0}, LWy7;-><init>()V
+    :cond_5
+    check-cast v1, LpO3;
 
     .line 104
     .line 105
+    iput-object v1, p0, LFJi;->v0:LpO3;
+
     .line 106
-    iput-object v0, p0, LFJi;->e0:LWy7;
-
     .line 107
+    :goto_1
+    add-int/lit8 v0, v0, 0x1
+
     .line 108
-    :cond_5
-    iget-object v0, p0, LFJi;->e0:LWy7;
-
     .line 109
-    .line 110
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    :cond_6
+    const-string v1, "experience_type"
 
+    .line 110
     .line 111
+    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
     .line 112
     .line 113
-    goto :goto_0
-
     .line 114
-    :sswitch_6
-    iget-object v0, p0, LFJi;->Z:LWy7;
+    move-result v2
 
     .line 115
+    if-eqz v2, :cond_8
+
     .line 116
-    if-nez v0, :cond_6
-
     .line 117
-    .line 118
-    new-instance v0, LWy7;
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 118
     .line 119
     .line 120
-    invoke-direct {v0}, LWy7;-><init>()V
+    move-result-object v1
 
     .line 121
+    instance-of v2, v1, Ljava/lang/String;
+
     .line 122
     .line 123
-    iput-object v0, p0, LFJi;->Z:LWy7;
+    if-eqz v2, :cond_7
 
     .line 124
     .line 125
-    :cond_6
-    iget-object v0, p0, LFJi;->Z:LWy7;
+    check-cast v1, Ljava/lang/String;
 
     .line 126
     .line 127
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-static {v1}, LhO3;->valueOf(Ljava/lang/String;)LhO3;
 
     .line 128
     .line 129
     .line 130
-    goto/16 :goto_0
+    move-result-object v1
 
     .line 131
-    .line 132
-    :sswitch_7
-    iget-object v0, p0, LFJi;->Y:LWy7;
+    iput-object v1, p0, LFJi;->r0:LhO3;
 
+    .line 132
     .line 133
+    goto :goto_2
+
     .line 134
-    if-nez v0, :cond_7
+    :cond_7
+    check-cast v1, LhO3;
 
     .line 135
     .line 136
-    new-instance v0, LWy7;
+    iput-object v1, p0, LFJi;->r0:LhO3;
 
     .line 137
     .line 138
-    invoke-direct {v0}, LWy7;-><init>()V
+    :goto_2
+    add-int/lit8 v0, v0, 0x1
 
     .line 139
     .line 140
+    :cond_8
+    const-string v1, "phases"
+
     .line 141
-    iput-object v0, p0, LFJi;->Y:LWy7;
-
     .line 142
-    .line 143
-    :cond_7
-    iget-object v0, p0, LFJi;->Y:LWy7;
+    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
+    .line 143
     .line 144
     .line 145
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    move-result v2
 
     .line 146
+    if-eqz v2, :cond_a
+
     .line 147
     .line 148
-    goto/16 :goto_0
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 149
     .line 150
-    :sswitch_8
-    iget-object v0, p0, LFJi;->X:LWy7;
-
     .line 151
+    move-result-object v1
+
     .line 152
-    if-nez v0, :cond_8
+    check-cast v1, Ljava/util/List;
 
     .line 153
     .line 154
-    new-instance v0, LWy7;
+    new-instance v2, Ljava/util/ArrayList;
 
     .line 155
     .line 156
-    invoke-direct {v0}, LWy7;-><init>()V
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 157
     .line 158
     .line 159
-    iput-object v0, p0, LFJi;->X:LWy7;
+    iput-object v2, p0, LFJi;->A0:Ljava/util/ArrayList;
 
     .line 160
     .line 161
-    :cond_8
-    iget-object v0, p0, LFJi;->X:LWy7;
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 162
     .line 163
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
     .line 164
-    .line 165
-    .line 166
-    goto/16 :goto_0
+    move-result-object v1
 
+    .line 165
+    :goto_3
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 166
     .line 167
     .line 168
-    :sswitch_9
-    iget-object v0, p0, LFJi;->t:LdYi;
+    move-result v2
 
     .line 169
+    if-eqz v2, :cond_9
+
     .line 170
-    if-nez v0, :cond_9
-
     .line 171
-    .line 172
-    new-instance v0, LdYi;
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 172
     .line 173
     .line 174
-    invoke-direct {v0}, LdYi;-><init>()V
+    move-result-object v2
 
     .line 175
+    check-cast v2, Ljava/util/Map;
+
     .line 176
     .line 177
-    iput-object v0, p0, LFJi;->t:LdYi;
+    new-instance v3, LoO3;
 
     .line 178
     .line 179
-    :cond_9
-    iget-object v0, p0, LFJi;->t:LdYi;
+    invoke-direct {v3}, LoO3;-><init>()V
 
     .line 180
     .line 181
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
     .line 182
+    invoke-virtual {v3, v2}, LoO3;->f(Ljava/util/Map;)I
+
     .line 183
     .line 184
-    goto/16 :goto_0
-
     .line 185
+    iget-object v2, p0, LFJi;->A0:Ljava/util/ArrayList;
+
     .line 186
-    :sswitch_a
-    iget-object v0, p0, LFJi;->c:LLn9;
-
     .line 187
-    .line 188
-    if-nez v0, :cond_a
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 188
     .line 189
     .line 190
-    new-instance v0, LLn9;
+    goto :goto_3
 
     .line 191
-    .line 192
-    invoke-direct {v0}, LLn9;-><init>()V
+    :cond_9
+    add-int/lit8 v0, v0, 0x1
 
+    .line 192
     .line 193
+    :cond_a
+    const-string v1, "reachability_events"
+
     .line 194
     .line 195
-    iput-object v0, p0, LFJi;->c:LLn9;
+    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     .line 196
     .line 197
-    :cond_a
-    iget-object v0, p0, LFJi;->c:LLn9;
-
     .line 198
+    move-result v2
+
     .line 199
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    if-eqz v2, :cond_d
 
     .line 200
     .line 201
-    .line 202
-    goto/16 :goto_0
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 202
     .line 203
     .line 204
-    :sswitch_b
-    invoke-virtual {p1}, Lqa3;->q()I
+    move-result-object v1
 
     .line 205
+    check-cast v1, Ljava/util/List;
+
     .line 206
     .line 207
-    move-result v0
+    new-instance v2, Ljava/util/ArrayList;
 
     .line 208
-    packed-switch v0, :pswitch_data_0
-
     .line 209
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
     .line 210
     .line 211
-    goto/16 :goto_0
-
     .line 212
+    iput-object v2, p0, LFJi;->z0:Ljava/util/ArrayList;
+
     .line 213
-    :pswitch_0
-    iput v0, p0, LFJi;->b:I
-
     .line 214
-    .line 215
-    iget v0, p0, LFJi;->a:I
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
+    .line 215
     .line 216
     .line 217
-    or-int/lit8 v0, v0, 0x1
+    move-result-object v1
 
     .line 218
-    .line 219
-    iput v0, p0, LFJi;->a:I
+    :goto_4
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
+    .line 219
     .line 220
     .line 221
-    goto/16 :goto_0
+    move-result v2
 
     .line 222
-    .line 223
-    :goto_1
-    :sswitch_c
-    return-object p0
+    if-eqz v2, :cond_c
 
+    .line 223
     .line 224
-    nop
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 225
-    :sswitch_data_0
-    .sparse-switch
-        0x0 -> :sswitch_c
-        0x8 -> :sswitch_b
-        0x12 -> :sswitch_a
-        0x1a -> :sswitch_9
-        0x22 -> :sswitch_8
-        0x2a -> :sswitch_7
-        0x32 -> :sswitch_6
-        0x3a -> :sswitch_5
-        0x42 -> :sswitch_4
-        0x4a -> :sswitch_3
-        0x52 -> :sswitch_2
-        0x58 -> :sswitch_1
-        0x62 -> :sswitch_0
-    .end sparse-switch
-
     .line 226
     .line 227
+    move-result-object v2
+
     .line 228
+    instance-of v3, v2, Ljava/lang/String;
+
     .line 229
     .line 230
+    if-eqz v3, :cond_b
+
     .line 231
     .line 232
+    iget-object v3, p0, LFJi;->z0:Ljava/util/ArrayList;
+
     .line 233
     .line 234
+    check-cast v2, Ljava/lang/String;
+
     .line 235
     .line 236
+    invoke-static {v2}, LnO3;->valueOf(Ljava/lang/String;)LnO3;
+
     .line 237
     .line 238
     .line 239
+    move-result-object v2
+
     .line 240
+    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 241
     .line 242
     .line 243
+    goto :goto_4
+
     .line 244
+    :cond_b
+    iget-object v3, p0, LFJi;->z0:Ljava/util/ArrayList;
+
     .line 245
     .line 246
+    check-cast v2, LnO3;
+
     .line 247
     .line 248
+    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 249
     .line 250
     .line 251
+    goto :goto_4
+
     .line 252
+    :cond_c
+    add-int/lit8 v0, v0, 0x1
+
     .line 253
     .line 254
+    :cond_d
+    const-string v1, "start_time_ms"
+
     .line 255
     .line 256
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 257
     .line 258
     .line 259
+    move-result-object v1
+
     .line 260
+    check-cast v1, Ljava/lang/Long;
+
     .line 261
     .line 262
+    iput-object v1, p0, LFJi;->t0:Ljava/lang/Long;
+
     .line 263
     .line 264
+    if-eqz v1, :cond_e
+
     .line 265
     .line 266
+    add-int/lit8 v0, v0, 0x1
+
     .line 267
     .line 268
+    :cond_e
+    const-string v1, "total_time_ms"
+
     .line 269
     .line 270
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 271
     .line 272
     .line 273
+    move-result-object v1
+
     .line 274
+    check-cast v1, Ljava/lang/Long;
+
     .line 275
     .line 276
+    iput-object v1, p0, LFJi;->x0:Ljava/lang/Long;
+
     .line 277
     .line 278
+    if-eqz v1, :cond_f
+
     .line 279
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
+    .line 280
+    add-int/lit8 v0, v0, 0x1
+
+    .line 281
+    .line 282
+    :cond_f
+    const-string v1, "udp_packets_num"
+
+    .line 283
+    .line 284
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 285
+    .line 286
+    .line 287
+    move-result-object v1
+
+    .line 288
+    check-cast v1, Ljava/lang/Long;
+
+    .line 289
+    .line 290
+    iput-object v1, p0, LFJi;->u0:Ljava/lang/Long;
+
+    .line 291
+    .line 292
+    if-eqz v1, :cond_10
+
+    .line 293
+    .line 294
+    add-int/lit8 v0, v0, 0x1
+
+    .line 295
+    .line 296
+    :cond_10
+    const-string v1, "users_in_scope_on_connect"
+
+    .line 297
+    .line 298
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 299
+    .line 300
+    .line 301
+    move-result-object p1
+
+    .line 302
+    check-cast p1, Ljava/lang/Long;
+
+    .line 303
+    .line 304
+    iput-object p1, p0, LFJi;->w0:Ljava/lang/Long;
+
+    .line 305
+    .line 306
+    if-eqz p1, :cond_11
+
+    .line 307
+    .line 308
+    add-int/lit8 v0, v0, 0x1
+
+    .line 309
+    .line 310
+    :cond_11
+    return v0
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 3
+.method public final g(Ljava/util/Map;)V
+    .locals 4
 
     .line 1
-    iget v0, p0, LFJi;->a:I
+    iget-object v0, p0, LFJi;->p0:Ljava/lang/String;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    if-eqz v0, :cond_0
 
     .line 4
-    and-int/2addr v0, v1
-
     .line 5
-    if-eqz v0, :cond_0
+    const-string v1, "carrier_name"
 
     .line 6
     .line 7
-    iget v0, p0, LFJi;->b:I
+    move-object v2, p1
 
     .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->I(II)V
+    check-cast v2, Ljava/util/HashMap;
 
+    .line 9
     .line 10
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 11
     .line 12
-    :cond_0
-    iget-object v0, p0, LFJi;->c:LLn9;
-
     .line 13
-    .line 14
-    const/4 v1, 0x2
+    :cond_0
+    iget-object v0, p0, LFJi;->q0:Ljava/lang/Long;
 
+    .line 14
     .line 15
     if-eqz v0, :cond_1
 
     .line 16
     .line 17
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    const-string v1, "ash"
 
     .line 18
     .line 19
+    move-object v2, p1
+
     .line 20
-    :cond_1
-    iget-object v0, p0, LFJi;->t:LdYi;
+    check-cast v2, Ljava/util/HashMap;
 
     .line 21
     .line 22
-    if-eqz v0, :cond_2
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 23
     .line 24
-    const/4 v2, 0x3
-
     .line 25
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    :cond_1
+    iget-object v0, p0, LFJi;->r0:LhO3;
 
     .line 26
     .line 27
+    if-eqz v0, :cond_2
+
     .line 28
-    :cond_2
-    iget-object v0, p0, LFJi;->X:LWy7;
-
     .line 29
-    .line 30
-    if-eqz v0, :cond_3
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
+    .line 30
     .line 31
     .line 32
-    const/4 v2, 0x4
+    move-result-object v0
 
     .line 33
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    move-object v1, p1
 
     .line 34
+    check-cast v1, Ljava/util/HashMap;
+
     .line 35
     .line 36
-    :cond_3
-    iget-object v0, p0, LFJi;->Y:LWy7;
+    const-string v2, "experience_type"
 
     .line 37
     .line 38
-    if-eqz v0, :cond_4
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
     .line 40
-    const/4 v2, 0x5
-
     .line 41
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    :cond_2
+    iget-object v0, p0, LFJi;->s0:LgO3;
 
     .line 42
     .line 43
+    if-eqz v0, :cond_3
+
     .line 44
-    :cond_4
-    iget-object v0, p0, LFJi;->Z:LWy7;
-
     .line 45
-    .line 46
-    if-eqz v0, :cond_5
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
+    .line 46
     .line 47
     .line 48
-    const/4 v2, 0x6
+    move-result-object v0
 
     .line 49
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    move-object v1, p1
 
     .line 50
+    check-cast v1, Ljava/util/HashMap;
+
     .line 51
     .line 52
-    :cond_5
-    iget-object v0, p0, LFJi;->e0:LWy7;
+    const-string v2, "call_role"
 
     .line 53
     .line 54
-    if-eqz v0, :cond_6
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 55
     .line 56
-    const/4 v2, 0x7
-
     .line 57
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    :cond_3
+    iget-object v0, p0, LFJi;->t0:Ljava/lang/Long;
 
     .line 58
     .line 59
+    if-eqz v0, :cond_4
+
     .line 60
-    :cond_6
-    iget-object v0, p0, LFJi;->f0:LLn9;
-
     .line 61
-    .line 62
-    if-eqz v0, :cond_7
+    const-string v1, "start_time_ms"
 
+    .line 62
     .line 63
+    move-object v2, p1
+
     .line 64
-    const/16 v2, 0x8
+    check-cast v2, Ljava/util/HashMap;
 
     .line 65
     .line 66
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 67
     .line 68
     .line 69
-    :cond_7
-    iget-object v0, p0, LFJi;->g0:LWy7;
+    :cond_4
+    iget-object v0, p0, LFJi;->u0:Ljava/lang/Long;
 
     .line 70
     .line 71
-    if-eqz v0, :cond_8
+    if-eqz v0, :cond_5
 
     .line 72
     .line 73
-    const/16 v2, 0x9
+    const-string v1, "udp_packets_num"
 
     .line 74
     .line 75
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    move-object v2, p1
 
     .line 76
+    check-cast v2, Ljava/util/HashMap;
+
     .line 77
     .line 78
-    :cond_8
-    iget-object v0, p0, LFJi;->h0:LWy7;
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 79
     .line 80
-    if-eqz v0, :cond_9
-
     .line 81
+    :cond_5
+    iget-object v0, p0, LFJi;->v0:LpO3;
+
     .line 82
-    const/16 v2, 0xa
-
     .line 83
-    .line 84
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    if-eqz v0, :cond_6
 
+    .line 84
     .line 85
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 86
     .line 87
-    :cond_9
-    iget v0, p0, LFJi;->a:I
-
     .line 88
+    move-result-object v0
+
     .line 89
-    and-int/2addr v0, v1
+    move-object v1, p1
 
     .line 90
-    if-eqz v0, :cond_a
+    check-cast v1, Ljava/util/HashMap;
 
     .line 91
     .line 92
-    const/16 v0, 0xb
+    const-string v2, "connection_result"
 
     .line 93
     .line 94
-    iget-boolean v1, p0, LFJi;->i0:Z
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 95
     .line 96
-    invoke-virtual {p1, v0, v1}, Lsa3;->z(IZ)V
-
     .line 97
+    :cond_6
+    iget-object v0, p0, LFJi;->w0:Ljava/lang/Long;
+
     .line 98
     .line 99
-    :cond_a
-    iget-object v0, p0, LFJi;->j0:LdYi;
+    if-eqz v0, :cond_7
 
     .line 100
     .line 101
-    if-eqz v0, :cond_b
+    const-string v1, "users_in_scope_on_connect"
 
     .line 102
     .line 103
-    const/16 v1, 0xc
+    move-object v2, p1
 
     .line 104
-    .line 105
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    check-cast v2, Ljava/util/HashMap;
 
+    .line 105
     .line 106
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 107
     .line 108
-    :cond_b
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
     .line 109
+    :cond_7
+    iget-object v0, p0, LFJi;->x0:Ljava/lang/Long;
+
     .line 110
     .line 111
+    if-eqz v0, :cond_8
+
+    .line 112
+    .line 113
+    const-string v1, "total_time_ms"
+
+    .line 114
+    .line 115
+    move-object v2, p1
+
+    .line 116
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 117
+    .line 118
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 119
+    .line 120
+    .line 121
+    :cond_8
+    iget-object v0, p0, LFJi;->y0:Ljava/lang/Long;
+
+    .line 122
+    .line 123
+    if-eqz v0, :cond_9
+
+    .line 124
+    .line 125
+    const-string v1, "attempt_id"
+
+    .line 126
+    .line 127
+    move-object v2, p1
+
+    .line 128
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 129
+    .line 130
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 131
+    .line 132
+    .line 133
+    :cond_9
+    iget-object v0, p0, LFJi;->z0:Ljava/util/ArrayList;
+
+    .line 134
+    .line 135
+    if-eqz v0, :cond_a
+
+    .line 136
+    .line 137
+    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
+
+    .line 138
+    .line 139
+    .line 140
+    move-result v0
+
+    .line 141
+    if-nez v0, :cond_a
+
+    .line 142
+    .line 143
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 144
+    .line 145
+    iget-object v1, p0, LFJi;->z0:Ljava/util/ArrayList;
+
+    .line 146
+    .line 147
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 148
+    .line 149
+    .line 150
+    const-string v1, "reachability_events"
+
+    .line 151
+    .line 152
+    move-object v2, p1
+
+    .line 153
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 154
+    .line 155
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 156
+    .line 157
+    .line 158
+    :cond_a
+    iget-object v0, p0, LFJi;->A0:Ljava/util/ArrayList;
+
+    .line 159
+    .line 160
+    if-eqz v0, :cond_c
+
+    .line 161
+    .line 162
+    invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
+
+    .line 163
+    .line 164
+    .line 165
+    move-result v0
+
+    .line 166
+    if-nez v0, :cond_c
+
+    .line 167
+    .line 168
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 169
+    .line 170
+    iget-object v1, p0, LFJi;->A0:Ljava/util/ArrayList;
+
+    .line 171
+    .line 172
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
+    .line 173
+    .line 174
+    .line 175
+    move-result v1
+
+    .line 176
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 177
+    .line 178
+    .line 179
+    iget-object v1, p0, LFJi;->A0:Ljava/util/ArrayList;
+
+    .line 180
+    .line 181
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 182
+    .line 183
+    .line 184
+    move-result-object v1
+
+    .line 185
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 186
+    .line 187
+    .line 188
+    move-result v2
+
+    .line 189
+    if-eqz v2, :cond_b
+
+    .line 190
+    .line 191
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 192
+    .line 193
+    .line 194
+    move-result-object v2
+
+    .line 195
+    check-cast v2, LoO3;
+
+    .line 196
+    .line 197
+    new-instance v3, Ljava/util/HashMap;
+
+    .line 198
+    .line 199
+    invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
+
+    .line 200
+    .line 201
+    .line 202
+    invoke-virtual {v2, v3}, LoO3;->g(Ljava/util/Map;)V
+
+    .line 203
+    .line 204
+    .line 205
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 206
+    .line 207
+    .line 208
+    goto :goto_0
+
+    .line 209
+    :cond_b
+    const-string v1, "phases"
+
+    .line 210
+    .line 211
+    move-object v2, p1
+
+    .line 212
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 213
+    .line 214
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 215
+    .line 216
+    .line 217
+    :cond_c
+    invoke-super {p0, p1}, LhPj;->g(Ljava/util/Map;)V
+
+    .line 218
+    .line 219
+    .line 220
+    iget-object v0, p0, LEV6;->b:Ljava/lang/String;
+
+    .line 221
+    .line 222
+    check-cast p1, Ljava/util/HashMap;
+
+    .line 223
+    .line 224
+    const-string v1, "event_name"
+
+    .line 225
+    .line 226
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 227
+    .line 228
+    .line 229
     return-void
 .end method

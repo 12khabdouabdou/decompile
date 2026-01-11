@@ -62,7 +62,7 @@
 .method public abstract a(Lio/reactivex/rxjava3/observers/SerializedObserver;Ljava/lang/Object;)V
 .end method
 
-.method public final d()Z
+.method public final b()Z
     .locals 1
 
     .line 1
@@ -170,7 +170,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/observers/QueueDrainObserver;->d()Z
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/observers/QueueDrainObserver;->b()Z
 
     .line 36
     .line 37
@@ -291,7 +291,7 @@
     .line 43
     .line 44
     .line 45
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/observers/QueueDrainObserver;->d()Z
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/observers/QueueDrainObserver;->b()Z
 
     .line 46
     .line 47

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/memories/ScreenshopCategoryGridOnboardingModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'checkShouldShowOnboardingModalNewUser\':f(f()),\'checkShouldShowOnboardingModalExistingUser\':f(f()),\'shouldUseGreatButton\':b,\'screenshopOnboardingEnabled\':b"
     typeReferences = {}

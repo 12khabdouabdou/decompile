@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public a:LIX0;
+.field public a:Lo11;
 
 .field public b:Lcom/snap/thumbnailui/view/ThumbnailRecyclerView;
 
-.field public c:LlQj;
+.field public c:LQfk;
 
 .field public e0:Z
 
@@ -34,7 +34,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f07051c
+    const p2, 0x7f070543
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
@@ -45,7 +45,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2

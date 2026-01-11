@@ -5,7 +5,7 @@
 
 # instance fields
 .field private mNativeContext:J
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 .end field
 
@@ -13,7 +13,7 @@
 # direct methods
 .method public constructor <init>(J)V
     .locals 0
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 
     .line 1

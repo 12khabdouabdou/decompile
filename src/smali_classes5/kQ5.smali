@@ -1,387 +1,295 @@
 .class public final LkQ5;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic X:Ljava/lang/Object;
-
-.field public final synthetic Y:Lkotlin/jvm/functions/Function1;
-
-.field public final synthetic a:I
-
-.field public final synthetic b:Lio/reactivex/rxjava3/core/SingleEmitter;
-
-.field public final synthetic c:Lkotlin/jvm/functions/Function0;
-
-.field public final synthetic t:LXj5;
+.field public final a:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;Lkotlin/jvm/functions/Function0;LXj5;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;I)V
+.method public synthetic constructor <init>(Ljava/util/ArrayList;)V
     .locals 0
 
     .line 1
-    iput p6, p0, LkQ5;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LkQ5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LkQ5;->a:Ljava/util/ArrayList;
 
-    iput-object p2, p0, LkQ5;->c:Lkotlin/jvm/functions/Function0;
-
-    iput-object p3, p0, LkQ5;->t:LXj5;
-
-    iput-object p4, p0, LkQ5;->X:Ljava/lang/Object;
-
-    iput-object p5, p0, LkQ5;->Y:Lkotlin/jvm/functions/Function1;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 5
+    .line 6
     return-void
+.end method
+
+.method public static varargs a([LDL9;)LZ88;
+    .locals 2
+
+    .line 1
+    new-instance v0, LZ88;
+
+    .line 2
+    .line 3
+    array-length v1, p0
+
+    .line 4
+    invoke-static {p0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p0
+
+    .line 8
+    check-cast p0, [LDL9;
+
+    .line 9
+    .line 10
+    invoke-direct {v0, p0}, LZ88;-><init>([LDL9;)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-object v0
+.end method
+
+.method public static b(La98;La98;)La98;
+    .locals 3
+
+    .line 1
+    instance-of v0, p1, LZ88;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    move-object v1, p1
+
+    .line 6
+    check-cast v1, LZ88;
+
+    .line 7
+    .line 8
+    iget-object v1, v1, LZ88;->a:[LDL9;
+
+    .line 9
+    .line 10
+    array-length v1, v1
+
+    .line 11
+    if-nez v1, :cond_0
+
+    .line 12
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    if-eqz v0, :cond_1
+
+    .line 15
+    .line 16
+    instance-of v0, p0, LZ88;
+
+    .line 17
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    new-instance v0, LZ88;
+
+    .line 21
+    .line 22
+    new-instance v1, Lo84;
+
+    .line 23
+    .line 24
+    const/4 v2, 0x2
+
+    .line 25
+    invoke-direct {v1, v2}, Lo84;-><init>(I)V
+
+    .line 26
+    .line 27
+    .line 28
+    check-cast p0, LZ88;
+
+    .line 29
+    .line 30
+    iget-object p0, p0, LZ88;->a:[LDL9;
+
+    .line 31
+    .line 32
+    invoke-virtual {v1, p0}, Lo84;->d(Ljava/lang/Object;)V
+
+    .line 33
+    .line 34
+    .line 35
+    check-cast p1, LZ88;
+
+    .line 36
+    .line 37
+    iget-object p0, p1, LZ88;->a:[LDL9;
+
+    .line 38
+    .line 39
+    invoke-virtual {v1, p0}, Lo84;->d(Ljava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    iget-object p0, v1, Lo84;->b:Ljava/util/ArrayList;
+
+    .line 43
+    .line 44
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result p1
+
+    .line 48
+    new-array p1, p1, [LDL9;
+
+    .line 49
+    .line 50
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p0
+
+    .line 54
+    check-cast p0, [LDL9;
+
+    .line 55
+    .line 56
+    invoke-direct {v0, p0}, LZ88;-><init>([LDL9;)V
+
+    .line 57
+    .line 58
+    .line 59
+    return-object v0
+
+    .line 60
+    :cond_1
+    return-object p1
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
 
     .line 1
-    iget v0, p0, LkQ5;->a:I
+    instance-of v0, p1, LkQ5;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    check-cast p1, LkQ5;
+
+    .line 7
+    .line 8
+    iget-object p1, p1, LkQ5;->a:Ljava/util/ArrayList;
+
+    .line 9
+    .line 10
+    iget-object v0, p0, LkQ5;->a:Ljava/util/ArrayList;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p1
+
+    .line 16
+    if-nez p1, :cond_1
+
+    .line 17
+    .line 18
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 19
+    return p1
+
+    .line 20
+    :cond_1
+    const/4 p1, 0x1
+
+    .line 21
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LkQ5;->a:Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Lcom/looksery/sdk/LSCoreManagerWrapper;
+    move-result v0
 
     .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "DefaultOrderDsl(alreadyReported="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
-    iget-object p1, p0, LkQ5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    iget-object v1, p0, LkQ5;->a:Ljava/util/ArrayList;
 
     .line 9
     .line 10
-    iget-object v0, p0, LkQ5;->c:Lkotlin/jvm/functions/Function0;
+    const-string v2, ")"
 
     .line 11
     .line 12
-    sget-object v1, Li7j;->a:Li7j;
+    invoke-static {v0, v1, v2}, LHr0;->c(Ljava/lang/StringBuilder;Ljava/util/ArrayList;Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
-    iget-object v2, p0, LkQ5;->t:LXj5;
-
     .line 15
+    move-result-object v0
+
     .line 16
-    iget-object v3, p0, LkQ5;->X:Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    iget-object v4, p0, LkQ5;->Y:Lkotlin/jvm/functions/Function1;
-
-    .line 19
-    .line 20
-    sget-object v5, LXRg;->a:LWRg;
-
-    .line 21
-    .line 22
-    const-string v6, "<*>"
-
-    .line 23
-    .line 24
-    invoke-virtual {v5, v6}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 25
-    .line 26
-    .line 27
-    move-result v6
-
-    .line 28
-    :try_start_0
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v7
-
-    .line 32
-    if-nez v7, :cond_1
-
-    .line 33
-    .line 34
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 35
-    .line 36
-    .line 37
-    :try_start_1
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v0
-
-    .line 41
-    if-nez v0, :cond_0
-
-    .line 42
-    .line 43
-    invoke-virtual {v2, v3}, LXj5;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 47
-    goto :goto_0
-
-    .line 48
-    :catchall_0
-    move-exception p1
-
-    .line 49
-    goto :goto_1
-
-    .line 50
-    :cond_0
-    move-object v0, v1
-
-    .line 51
-    :goto_0
-    :try_start_2
-    invoke-interface {v4, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
-
-    .line 55
-    .line 56
-    .line 57
-    goto :goto_2
-
-    .line 58
-    :catchall_1
-    move-exception p1
-
-    .line 59
-    goto :goto_3
-
-    .line 60
-    :goto_1
-    invoke-interface {v4, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 61
-    .line 62
-    .line 63
-    throw p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    .line 64
-    :cond_1
-    :goto_2
-    invoke-virtual {v5, v6}, LWRg;->h(I)V
-
-    .line 65
-    .line 66
-    .line 67
-    return-object v1
-
-    .line 68
-    :goto_3
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 69
-    .line 70
-    if-eqz v0, :cond_2
-
-    .line 71
-    .line 72
-    invoke-virtual {v0, v6}, Lzhi;->o(I)V
-
-    .line 73
-    .line 74
-    .line 75
-    :cond_2
-    throw p1
-
-    .line 76
-    :pswitch_0
-    check-cast p1, Lcom/looksery/sdk/LSCoreManagerWrapper;
-
-    .line 77
-    .line 78
-    iget-object p1, p0, LkQ5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
-
-    .line 79
-    .line 80
-    iget-object v0, p0, LkQ5;->c:Lkotlin/jvm/functions/Function0;
-
-    .line 81
-    .line 82
-    sget-object v1, Li7j;->a:Li7j;
-
-    .line 83
-    .line 84
-    iget-object v2, p0, LkQ5;->t:LXj5;
-
-    .line 85
-    .line 86
-    iget-object v3, p0, LkQ5;->X:Ljava/lang/Object;
-
-    .line 87
-    .line 88
-    iget-object v4, p0, LkQ5;->Y:Lkotlin/jvm/functions/Function1;
-
-    .line 89
-    .line 90
-    sget-object v5, LXRg;->a:LWRg;
-
-    .line 91
-    .line 92
-    const-string v6, "<*>"
-
-    .line 93
-    .line 94
-    invoke-virtual {v5, v6}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 95
-    .line 96
-    .line 97
-    move-result v6
-
-    .line 98
-    :try_start_3
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 99
-    .line 100
-    .line 101
-    move-result v7
-
-    .line 102
-    if-nez v7, :cond_4
-
-    .line 103
-    .line 104
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    .line 105
-    .line 106
-    .line 107
-    :try_start_4
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 108
-    .line 109
-    .line 110
-    move-result v0
-
-    .line 111
-    if-nez v0, :cond_3
-
-    .line 112
-    .line 113
-    invoke-virtual {v2, v3}, LXj5;->s(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 114
-    .line 115
-    .line 116
-    move-result-object v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
-
-    .line 117
-    goto :goto_4
-
-    .line 118
-    :cond_3
-    move-object v0, v1
-
-    .line 119
-    :goto_4
-    :try_start_5
-    invoke-interface {v4, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 120
-    .line 121
-    .line 122
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
-
-    .line 123
-    .line 124
-    .line 125
-    goto :goto_5
-
-    .line 126
-    :catchall_2
-    move-exception p1
-
-    .line 127
-    goto :goto_6
-
-    .line 128
-    :catchall_3
-    move-exception p1
-
-    .line 129
-    invoke-interface {v4, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 130
-    .line 131
-    .line 132
-    throw p1
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
-
-    .line 133
-    :cond_4
-    :goto_5
-    invoke-virtual {v5, v6}, LWRg;->h(I)V
-
-    .line 134
-    .line 135
-    .line 136
-    return-object v1
-
-    .line 137
-    :goto_6
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 138
-    .line 139
-    if-eqz v0, :cond_5
-
-    .line 140
-    .line 141
-    invoke-virtual {v0, v6}, Lzhi;->o(I)V
-
-    .line 142
-    .line 143
-    .line 144
-    :cond_5
-    throw p1
-
-    .line 145
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

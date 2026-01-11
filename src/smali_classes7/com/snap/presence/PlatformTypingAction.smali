@@ -1,10 +1,10 @@
 .class public final Lcom/snap/presence/PlatformTypingAction;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'typingActivity\':r<e>:\'[0]\',\'typingActivityType\':r<e>:\'[1]\'"
     typeReferences = {

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LCM7;
+    proxyClass = LhS7;
     schema = "\'onTapPlace\':f|m|(r:\'[0]\'),\'onTapViewOnMap\':f|m|(a<r:\'[0]\'>),\'onTapFriend\':f|m|(r:\'[1]\'),\'onTapFriends\':f?|m|(a<r:\'[2]\'>)"
     typeReferences = {
         Lcom/snap/places/placeprofile/PlaceCardData;,
@@ -24,9 +24,6 @@
 .end method
 
 .method public abstract onTapFriends(Ljava/util/List;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -34,6 +31,9 @@
             "Lcom/snap/map/takeover/MapItemData;",
             ">;)V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

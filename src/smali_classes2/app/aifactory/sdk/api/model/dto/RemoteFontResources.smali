@@ -25,7 +25,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LsL6;->a:LsL6;
+    sget-object v0, LgP6;->a:LgP6;
 
     .line 5
     .line 6

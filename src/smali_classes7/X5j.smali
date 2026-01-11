@@ -1,103 +1,71 @@
-.class public final LX5j;
-.super LeN;
+.class public abstract synthetic LX5j;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
+# static fields
+.field public static final synthetic a:[I
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    const-string v0, "OPEN_FRIEND_ACTION_SHEET"
+    invoke-static {}, Lu8e;->values()[Lu8e;
 
     .line 2
     .line 3
-    const/4 v1, 0x7
-
     .line 4
-    invoke-direct {p0, v0, v1}, LeN;-><init>(Ljava/lang/String;I)V
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    .line 7
-    return-void
-.end method
-
-
-# virtual methods
-.method public final b()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "OPEN_FRIEND_ACTION_SHEET"
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    if-ne p0, p1, :cond_0
-
-    .line 2
-    .line 3
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    instance-of v0, p1, LX5j;
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_1
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    const/4 p1, 0x0
+    const/4 v1, 0x1
 
     .line 9
-    return p1
+    :try_start_0
+    aput v1, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 10
-    :cond_1
-    check-cast p1, LX5j;
-
     .line 11
+    :catch_0
+    const/4 v1, 0x2
+
     .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v2, 0x0
 
     .line 13
+    :try_start_1
+    aput v1, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
     .line 14
     .line 15
-    :goto_0
-    const/4 p1, 0x1
+    :catch_1
+    const/4 v2, 0x3
 
     .line 16
-    return p1
-.end method
+    :try_start_2
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
-.method public final hashCode()I
-    .locals 1
+    .line 17
+    .line 18
+    :catch_2
+    sput-object v0, LX5j;->a:[I
 
-    .line 1
-    const v0, 0x132a7882
-
-    .line 2
-    .line 3
-    .line 4
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "PrimaryActionMenu(actionName=OPEN_FRIEND_ACTION_SHEET)"
-
-    .line 2
-    .line 3
-    return-object v0
+    .line 19
+    .line 20
+    return-void
 .end method

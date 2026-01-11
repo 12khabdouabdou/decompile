@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/customreporting/CoreReportDependencies;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'navigator\':r:\'[0]\',\'webViewFactory\':r?:\'[1]\',\'notificationPresenter\':r?:\'[2]\',\'openUrl\':f?(s),\'blockedUserStore\':r?:\'[3]\',\'pageLauncher\':r?:\'[4]\'"
     typeReferences = {
@@ -130,7 +130,7 @@
     return-void
 .end method
 
-.method public final c(LRO3;)V
+.method public final c(LB74;)V
     .locals 0
 
     .line 1
@@ -152,7 +152,7 @@
     return-void
 .end method
 
-.method public final e(LjI9;)V
+.method public final e(LFT9;)V
     .locals 0
 
     .line 1

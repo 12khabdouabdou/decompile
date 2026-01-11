@@ -1,10 +1,10 @@
 .class public final LKxd;
-.super LYxd;
+.super LDNk;
 .source "SourceFile"
 
 
 # static fields
-.field public static final b:LKxd;
+.field public static final a:LKxd;
 
 
 # direct methods
@@ -16,12 +16,12 @@
 
     .line 2
     .line 3
-    invoke-direct {v0}, LYxd;-><init>()V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, LKxd;->b:LKxd;
+    sput-object v0, LKxd;->a:LKxd;
 
     .line 7
     .line 8

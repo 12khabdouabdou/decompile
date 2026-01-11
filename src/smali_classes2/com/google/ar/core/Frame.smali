@@ -1243,7 +1243,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Ln3k;->values()[Ln3k;
+    invoke-static {}, Lptk;->values()[Lptk;
 
     .line 2
     .line 3
@@ -1258,7 +1258,7 @@
 
     .line 7
     :goto_0
-    sget-object v3, Ln3k;->c:Ln3k;
+    sget-object v3, Lptk;->c:Lptk;
 
     .line 8
     .line 9
@@ -1270,7 +1270,7 @@
 
     .line 12
     .line 13
-    iget-object v5, v4, Ln3k;->b:Ljava/lang/Class;
+    iget-object v5, v4, Lptk;->b:Ljava/lang/Class;
 
     .line 14
     .line 15
@@ -1327,7 +1327,7 @@
 
     .line 37
     .line 38
-    iget v10, v4, Ln3k;->a:I
+    iget v10, v4, Lptk;->a:I
 
     .line 39
     .line 40

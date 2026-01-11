@@ -1,0 +1,33 @@
+.class public final Lv83;
+.super Ljava/lang/Exception;
+.source "SourceFile"
+
+
+# static fields
+.field public static final a:Lv83;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lv83;
+
+    .line 2
+    .line 3
+    const-string v1, "additional operations"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lv83;->a:Lv83;
+
+    .line 9
+    .line 10
+    return-void
+.end method

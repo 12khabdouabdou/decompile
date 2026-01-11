@@ -1,16 +1,17 @@
 .class public final Lcom/snap/music/core/composer/PickerTrack;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'trackId\':r:\'[0]\',\'title\':s,\'artistName\':s,\'audioMedia\':r:\'[1]\',\'albumArtMedia\':r?:\'[1]\',\'defaultStartOffsetMs\':d,\'isPrivate\':b,\'encodedContentRestrictions\':t?,\'isExplicit\':b@?,\'subtextInfo\':r?:\'[2]\',\'matchedTrackId\':d@?"
+    schema = "\'trackId\':r:\'[0]\',\'title\':s,\'artistName\':s,\'audioMedia\':r:\'[1]\',\'albumArtMedia\':r?:\'[1]\',\'defaultStartOffsetMs\':d,\'isPrivate\':b,\'encodedContentRestrictions\':t?,\'isExplicit\':b@?,\'subtextInfo\':r?:\'[2]\',\'relatedTrackInfo\':r?:\'[3]\'"
     typeReferences = {
         Lcom/snap/composer/foundation/Long;,
         Lcom/snap/music/core/composer/PickerMediaInfo;,
-        Lcom/snap/music/core/composer/PickerSubtextInfo;
+        Lcom/snap/music/core/composer/PickerSubtextInfo;,
+        Lcom/snap/music/core/composer/MusicPickerRelatedTrackInfo;
     }
 .end annotation
 
@@ -30,7 +31,7 @@
 
 .field private _isPrivate:Z
 
-.field private _matchedTrackId:Ljava/lang/Double;
+.field private _relatedTrackInfo:Lcom/snap/music/core/composer/MusicPickerRelatedTrackInfo;
 
 .field private _subtextInfo:Lcom/snap/music/core/composer/PickerSubtextInfo;
 
@@ -40,7 +41,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/composer/foundation/Long;Ljava/lang/String;Ljava/lang/String;Lcom/snap/music/core/composer/PickerMediaInfo;)V
+.method public constructor <init>(Lcom/snap/composer/foundation/Long;Ljava/lang/String;Ljava/lang/String;Lcom/snap/music/core/composer/PickerMediaInfo;D)V
     .locals 0
 
     .line 1
@@ -63,10 +64,8 @@
     .line 6
     iput-object p1, p0, Lcom/snap/music/core/composer/PickerTrack;->_albumArtMedia:Lcom/snap/music/core/composer/PickerMediaInfo;
 
-    const-wide/16 p2, 0x0
-
     .line 7
-    iput-wide p2, p0, Lcom/snap/music/core/composer/PickerTrack;->_defaultStartOffsetMs:D
+    iput-wide p5, p0, Lcom/snap/music/core/composer/PickerTrack;->_defaultStartOffsetMs:D
 
     const/4 p2, 0x0
 
@@ -83,7 +82,7 @@
     iput-object p1, p0, Lcom/snap/music/core/composer/PickerTrack;->_subtextInfo:Lcom/snap/music/core/composer/PickerSubtextInfo;
 
     .line 12
-    iput-object p1, p0, Lcom/snap/music/core/composer/PickerTrack;->_matchedTrackId:Ljava/lang/Double;
+    iput-object p1, p0, Lcom/snap/music/core/composer/PickerTrack;->_relatedTrackInfo:Lcom/snap/music/core/composer/MusicPickerRelatedTrackInfo;
 
     return-void
 .end method
@@ -140,12 +139,12 @@
     move/from16 v11, p8
 
     .line 25
-    invoke-direct/range {v3 .. v15}, Lcom/snap/music/core/composer/PickerTrack;-><init>(Lcom/snap/composer/foundation/Long;Ljava/lang/String;Ljava/lang/String;Lcom/snap/music/core/composer/PickerMediaInfo;Lcom/snap/music/core/composer/PickerMediaInfo;DZ[BLjava/lang/Boolean;Lcom/snap/music/core/composer/PickerSubtextInfo;Ljava/lang/Double;)V
+    invoke-direct/range {v3 .. v15}, Lcom/snap/music/core/composer/PickerTrack;-><init>(Lcom/snap/composer/foundation/Long;Ljava/lang/String;Ljava/lang/String;Lcom/snap/music/core/composer/PickerMediaInfo;Lcom/snap/music/core/composer/PickerMediaInfo;DZ[BLjava/lang/Boolean;Lcom/snap/music/core/composer/PickerSubtextInfo;Lcom/snap/music/core/composer/MusicPickerRelatedTrackInfo;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/snap/composer/foundation/Long;Ljava/lang/String;Ljava/lang/String;Lcom/snap/music/core/composer/PickerMediaInfo;Lcom/snap/music/core/composer/PickerMediaInfo;DZ[BLjava/lang/Boolean;Lcom/snap/music/core/composer/PickerSubtextInfo;Ljava/lang/Double;)V
+.method public constructor <init>(Lcom/snap/composer/foundation/Long;Ljava/lang/String;Ljava/lang/String;Lcom/snap/music/core/composer/PickerMediaInfo;Lcom/snap/music/core/composer/PickerMediaInfo;DZ[BLjava/lang/Boolean;Lcom/snap/music/core/composer/PickerSubtextInfo;Lcom/snap/music/core/composer/MusicPickerRelatedTrackInfo;)V
     .locals 0
 
     .line 13
@@ -182,7 +181,7 @@
     iput-object p11, p0, Lcom/snap/music/core/composer/PickerTrack;->_subtextInfo:Lcom/snap/music/core/composer/PickerSubtextInfo;
 
     .line 24
-    iput-object p12, p0, Lcom/snap/music/core/composer/PickerTrack;->_matchedTrackId:Ljava/lang/Double;
+    iput-object p12, p0, Lcom/snap/music/core/composer/PickerTrack;->_relatedTrackInfo:Lcom/snap/music/core/composer/MusicPickerRelatedTrackInfo;
 
     return-void
 .end method

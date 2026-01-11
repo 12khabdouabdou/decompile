@@ -1,34 +1,24 @@
 .class public final LaP1;
-.super LM04;
+.super LcP1;
 .source "SourceFile"
 
 
 # instance fields
-.field public X:Lny9;
-
-.field public Y:LeJe;
-
-.field public synthetic Z:Ljava/lang/Object;
-
-.field public final synthetic e0:LcP1;
-
-.field public f0:I
-
-.field public t:LOr3;
+.field public final a:I
 
 
 # direct methods
-.method public constructor <init>(LcP1;LM04;)V
+.method public constructor <init>(I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LaP1;->e0:LcP1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0, p2}, LM04;-><init>(LK04;)V
-
     .line 4
+    iput p1, p0, LaP1;->a:I
+
     .line 5
     .line 6
     return-void
@@ -36,43 +26,120 @@
 
 
 # virtual methods
-.method public final l(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
-    iput-object p1, p0, LaP1;->Z:Ljava/lang/Object;
+    instance-of v0, p1, LaP1;
 
     .line 2
     .line 3
-    iget p1, p0, LaP1;->f0:I
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    const/high16 v0, -0x80000000
+    check-cast p1, LaP1;
 
     .line 6
     .line 7
-    or-int/2addr p1, v0
+    iget p1, p1, LaP1;->a:I
 
     .line 8
-    iput p1, p0, LaP1;->f0:I
+    .line 9
+    iget v0, p0, LaP1;->a:I
+
+    .line 10
+    .line 11
+    if-ne v0, p1, :cond_0
+
+    .line 12
+    .line 13
+    const/4 p1, 0x1
+
+    .line 14
+    return p1
+
+    .line 15
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 16
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, LaP1;->a:I
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    const/4 v1, 0x1
+
+    .line 8
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 9
     .line 10
-    iget-object p1, p0, LaP1;->e0:LcP1;
+    const/4 v2, 0x0
 
     .line 11
-    .line 12
-    const/4 v0, 0x0
+    aput-object v0, v1, v2
 
+    .line 12
     .line 13
-    invoke-virtual {p1, v0, v0, v0, p0}, LcP1;->c(LPr3;LPr3;Lny9;LM04;)Ljava/lang/Object;
+    invoke-static {v1}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 14
     .line 15
     .line 16
-    move-result-object p1
+    move-result v0
 
     .line 17
-    return-object p1
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "CallControlResult(Error[errorCode=("
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, LaP1;->a:I
+
+    .line 9
+    .line 10
+    const-string v2, ")])"
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, LJF0;->w(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
 .end method

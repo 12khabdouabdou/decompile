@@ -64,9 +64,9 @@
 
 .field public final h0:Landroid/widget/LinearLayout$LayoutParams;
 
-.field public final i0:Lo5h;
+.field public final i0:Lgrh;
 
-.field public j0:LmWa;
+.field public j0:LO8b;
 
 .field public final k0:Landroid/widget/LinearLayout;
 
@@ -180,13 +180,13 @@
     iput-object v3, v0, Lcom/snap/ui/view/viewpagerindicator/PagerSlidingTabStrip;->c:Landroid/graphics/RectF;
 
     .line 5
-    new-instance v3, Lo5h;
+    new-instance v3, Lgrh;
 
     const/4 v4, 0x2
 
-    invoke-direct {v3, v4, v0}, Lo5h;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, v0}, Lgrh;-><init>(ILjava/lang/Object;)V
 
-    iput-object v3, v0, Lcom/snap/ui/view/viewpagerindicator/PagerSlidingTabStrip;->i0:Lo5h;
+    iput-object v3, v0, Lcom/snap/ui/view/viewpagerindicator/PagerSlidingTabStrip;->i0:Lgrh;
 
     const/4 v3, 0x0
 
@@ -329,7 +329,7 @@
     .line 34
     iput v3, v0, Lcom/snap/ui/view/viewpagerindicator/PagerSlidingTabStrip;->S0:I
 
-    const v7, 0x7f0800df
+    const v7, 0x7f0800e5
 
     .line 35
     iput v7, v0, Lcom/snap/ui/view/viewpagerindicator/PagerSlidingTabStrip;->T0:I
@@ -569,7 +569,7 @@
     invoke-virtual {v6}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 64
-    sget-object v5, LCve;->d:[I
+    sget-object v5, LlNe;->d:[I
 
     invoke-virtual {v1, v2, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -687,7 +687,7 @@
 
     const/16 v3, 0x10
 
-    const v9, 0x7f0800df
+    const v9, 0x7f0800e5
 
     .line 77
     invoke-virtual {v1, v3, v9}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -1001,11 +1001,11 @@
     move-result-object p1
 
     .line 24
-    check-cast p1, LE9d;
+    check-cast p1, Lapd;
 
     .line 25
     .line 26
-    iget p1, p1, LE9d;->b:I
+    iget p1, p1, Lapd;->b:I
 
     .line 27
     .line 28
@@ -1085,11 +1085,11 @@
     move-result-object p1
 
     .line 24
-    check-cast p1, LE9d;
+    check-cast p1, Lapd;
 
     .line 25
     .line 26
-    iget p1, p1, LE9d;->a:I
+    iget p1, p1, Lapd;->a:I
 
     .line 27
     .line 28
@@ -1200,11 +1200,11 @@
 
     .line 40
     .line 41
-    iget-object v6, v6, Landroidx/viewpager/widget/ViewPager;->e0:Lvu1;
+    iget-object v6, v6, Landroidx/viewpager/widget/ViewPager;->e0:LMx1;
 
     .line 42
     .line 43
-    invoke-virtual {v6}, Lvu1;->l()I
+    invoke-virtual {v6}, LMx1;->l()I
 
     .line 44
     .line 45
@@ -1228,11 +1228,11 @@
 
     .line 53
     .line 54
-    new-instance v8, LE9d;
+    new-instance v8, Lapd;
 
     .line 55
     .line 56
-    invoke-direct {v8, v7, v7}, LE9d;-><init>(II)V
+    invoke-direct {v8, v7, v7}, Lapd;-><init>(II)V
 
     .line 57
     .line 58
@@ -1242,7 +1242,7 @@
     .line 60
     .line 61
     .line 62
-    new-instance v8, LE9d;
+    new-instance v8, Lapd;
 
     .line 63
     .line 64
@@ -1250,7 +1250,7 @@
 
     .line 65
     .line 66
-    invoke-direct {v8, v7, v9}, LE9d;-><init>(II)V
+    invoke-direct {v8, v7, v9}, Lapd;-><init>(II)V
 
     .line 67
     .line 68
@@ -1260,7 +1260,7 @@
     .line 70
     .line 71
     .line 72
-    invoke-virtual {v6, v7}, Lvu1;->u(I)Ljava/lang/CharSequence;
+    invoke-virtual {v6, v7}, LMx1;->s(I)Ljava/lang/CharSequence;
 
     .line 73
     .line 74
@@ -1432,11 +1432,11 @@
     move-result-object v8
 
     .line 160
-    check-cast v8, LE9d;
+    check-cast v8, Lapd;
 
     .line 161
     .line 162
-    iget v8, v8, LE9d;->a:I
+    iget v8, v8, Lapd;->a:I
 
     .line 163
     .line 164
@@ -1467,14 +1467,14 @@
     .line 173
     .line 174
     .line 175
-    new-instance v10, LG64;
+    new-instance v10, Lmb4;
 
     .line 176
     .line 177
     const/4 v12, 0x2
 
     .line 178
-    invoke-direct {v10, p0, v8, v12}, LG64;-><init>(Ljava/lang/Object;II)V
+    invoke-direct {v10, p0, v8, v12}, Lmb4;-><init>(Ljava/lang/Object;II)V
 
     .line 179
     .line 180
@@ -1640,11 +1640,11 @@
 
     .line 261
     .line 262
-    new-instance v1, LWx;
+    new-instance v1, LJz;
 
     .line 263
     .line 264
-    invoke-direct {v1, p0, v0}, LWx;-><init>(Lcom/snap/ui/view/viewpagerindicator/PagerSlidingTabStrip;Landroidx/viewpager/widget/ViewPager;)V
+    invoke-direct {v1, p0, v0}, LJz;-><init>(Lcom/snap/ui/view/viewpagerindicator/PagerSlidingTabStrip;Landroidx/viewpager/widget/ViewPager;)V
 
     .line 265
     .line 266
@@ -3145,7 +3145,7 @@
 
     .line 238
     .line 239
-    check-cast v10, Lfii;
+    check-cast v10, LZGi;
 
     .line 240
     .line 241
@@ -3332,7 +3332,7 @@
     .locals 1
 
     .line 1
-    check-cast p1, LF9d;
+    check-cast p1, Lbpd;
 
     .line 2
     .line 3
@@ -3349,7 +3349,7 @@
     .line 8
     .line 9
     .line 10
-    iget p1, p1, LF9d;->a:I
+    iget p1, p1, Lbpd;->a:I
 
     .line 11
     .line 12
@@ -3378,7 +3378,7 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, LF9d;
+    new-instance v1, Lbpd;
 
     .line 6
     .line 7
@@ -3391,7 +3391,7 @@
 
     .line 11
     .line 12
-    iput v0, v1, LF9d;->a:I
+    iput v0, v1, Lbpd;->a:I
 
     .line 13
     .line 14

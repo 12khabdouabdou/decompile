@@ -1,18 +1,18 @@
 .class public final Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'flowMode\':r<e>:\'[0]\',\'pageSource\':s,\'gender\':r?<e>:\'[1]\',\'outfitTryOnInfo\':r?:\'[2]\',\'page\':r?<e>:\'[3]\',\'dropId\':d@?,\'category\':r?<e>:\'[4]\',\'isFromLiveMirror\':b@?,\'contentId\':s?,\'bitmojiAvatarBuilderReferrer\':s?,\'granularSource\':s?"
     typeReferences = {
         Lcom/snap/modules/bitmoji_avatar_builder/AvatarBuilderFlowMode;,
-        Lcom/snap/modules/bitmoji_avatar_builder/AvatarGender;,
+        Lcom/snap/modules/bitmoji_customization_core/AvatarGender;,
         Lcom/snap/bitmoji/composer/OutfitTryOnInfo;,
         Lcom/snap/modules/bitmoji_avatar_builder/AvatarBuilderPage;,
-        Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;
+        Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
 # instance fields
 .field private _bitmojiAvatarBuilderReferrer:Ljava/lang/String;
 
-.field private _category:Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;
+.field private _category:Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;
 
 .field private _contentId:Ljava/lang/String;
 
@@ -28,7 +28,7 @@
 
 .field private _flowMode:Lcom/snap/modules/bitmoji_avatar_builder/AvatarBuilderFlowMode;
 
-.field private _gender:Lcom/snap/modules/bitmoji_avatar_builder/AvatarGender;
+.field private _gender:Lcom/snap/modules/bitmoji_customization_core/AvatarGender;
 
 .field private _granularSource:Ljava/lang/String;
 
@@ -57,7 +57,7 @@
     const/4 p1, 0x0
 
     .line 4
-    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_gender:Lcom/snap/modules/bitmoji_avatar_builder/AvatarGender;
+    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_gender:Lcom/snap/modules/bitmoji_customization_core/AvatarGender;
 
     .line 5
     iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_outfitTryOnInfo:Lcom/snap/bitmoji/composer/OutfitTryOnInfo;
@@ -69,7 +69,7 @@
     iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_dropId:Ljava/lang/Double;
 
     .line 8
-    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_category:Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;
+    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_category:Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;
 
     .line 9
     iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_isFromLiveMirror:Ljava/lang/Boolean;
@@ -86,7 +86,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lcom/snap/modules/bitmoji_avatar_builder/AvatarBuilderFlowMode;Ljava/lang/String;Lcom/snap/modules/bitmoji_avatar_builder/AvatarGender;Lcom/snap/bitmoji/composer/OutfitTryOnInfo;Lcom/snap/modules/bitmoji_avatar_builder/AvatarBuilderPage;Ljava/lang/Double;Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/snap/modules/bitmoji_avatar_builder/AvatarBuilderFlowMode;Ljava/lang/String;Lcom/snap/modules/bitmoji_customization_core/AvatarGender;Lcom/snap/bitmoji/composer/OutfitTryOnInfo;Lcom/snap/modules/bitmoji_avatar_builder/AvatarBuilderPage;Ljava/lang/Double;Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 13
@@ -99,7 +99,7 @@
     iput-object p2, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_pageSource:Ljava/lang/String;
 
     .line 16
-    iput-object p3, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_gender:Lcom/snap/modules/bitmoji_avatar_builder/AvatarGender;
+    iput-object p3, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_gender:Lcom/snap/modules/bitmoji_customization_core/AvatarGender;
 
     .line 17
     iput-object p4, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_outfitTryOnInfo:Lcom/snap/bitmoji/composer/OutfitTryOnInfo;
@@ -111,7 +111,7 @@
     iput-object p6, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_dropId:Ljava/lang/Double;
 
     .line 20
-    iput-object p7, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_category:Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;
+    iput-object p7, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_category:Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;
 
     .line 21
     iput-object p8, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_isFromLiveMirror:Ljava/lang/Boolean;
@@ -141,11 +141,11 @@
     return-void
 .end method
 
-.method public final b(Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;)V
+.method public final b(Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_category:Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;
+    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_category:Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;
 
     .line 2
     .line 3
@@ -185,11 +185,11 @@
     return-void
 .end method
 
-.method public final f(Lcom/snap/modules/bitmoji_avatar_builder/AvatarGender;)V
+.method public final f(Lcom/snap/modules/bitmoji_customization_core/AvatarGender;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_gender:Lcom/snap/modules/bitmoji_avatar_builder/AvatarGender;
+    iput-object p1, p0, Lcom/snap/bitmoji/composer/AvatarBuilderLaunchConfig;->_gender:Lcom/snap/modules/bitmoji_customization_core/AvatarGender;
 
     .line 2
     .line 3

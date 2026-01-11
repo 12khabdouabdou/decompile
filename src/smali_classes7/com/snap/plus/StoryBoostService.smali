@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LVKh;
+    proxyClass = Lk9i;
     schema = "\'observeBoostState\':f|m|(): g<c>:\'[0]\'<r:\'[1]\'>,\'boost\':f|m|(): p<v>,\'hasEligibleStoriesToBoost\':f|m|(): p<b@>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LXKh;
+        Lm9i;
     }
 .end annotation
 
@@ -24,7 +24,7 @@
         value = {
             "()",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation
@@ -46,7 +46,7 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LXKh;",
+            "Lm9i;",
             ">;"
         }
     .end annotation

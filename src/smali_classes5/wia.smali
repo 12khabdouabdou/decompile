@@ -1,208 +1,240 @@
 .class public final Lwia;
-.super LJ04;
+.super Lyia;
 .source "SourceFile"
 
 
+# instance fields
+.field public final a:LY79;
+
+.field public final b:LY79;
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(LY79;LY79;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LJ04;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
+    iput-object p1, p0, Lwia;->a:LY79;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lwia;->b:LY79;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic F(LEX0;Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lvia;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final t(LKu;LKu;)V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
     .line 1
-    check-cast p1, Lxia;
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lwia;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lwia;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, Lwia;->a:LY79;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, Lwia;->a:LY79;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Lwia;->b:LY79;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, Lwia;->b:LY79;
+
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lwia;->a:LY79;
 
     .line 2
     .line 3
-    check-cast p2, Lxia;
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
-    invoke-virtual {p0}, LcIj;->s()Landroid/view/View;
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 6
     .line 7
     .line 8
-    move-result-object p2
+    move-result v0
 
     .line 9
-    const v0, 0x7f0b0bf2
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 10
     .line 11
-    .line 12
-    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v1, p0, Lwia;->b:LY79;
 
+    .line 12
     .line 13
+    iget-object v1, v1, LY79;->a:Ljava/lang/String;
+
     .line 14
     .line 15
-    move-result-object p2
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
     .line 16
-    check-cast p2, Lcom/snap/imageloading/view/SnapImageView;
-
     .line 17
     .line 18
-    invoke-virtual {p0}, LcIj;->s()Landroid/view/View;
+    move-result v1
+
+    .line 19
+    add-int/2addr v1, v0
+
+    .line 20
+    return v1
+.end method
+
+.method public final k()LY79;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lwia;->b:LY79;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final l()LY79;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lwia;->a:LY79;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Failed(requestId="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lwia;->a:LY79;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", authDataId="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lwia;->b:LY79;
 
     .line 19
     .line 20
-    .line 21
-    move-result-object v0
+    const-string v2, ")"
 
+    .line 21
     .line 22
-    const v1, 0x7f0b0bf3
+    invoke-static {v0, v1, v2}, LAM;->b(Ljava/lang/StringBuilder;LY79;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 26
-    .line 27
-    .line 28
     move-result-object v0
 
-    .line 29
-    check-cast v0, Lcom/snap/ui/view/SnapFontTextView;
-
-    .line 30
-    .line 31
-    iget-object v1, p1, Lxia;->Z:LKjj;
-
-    .line 32
-    .line 33
-    instance-of v2, v1, LGjj;
-
-    .line 34
-    .line 35
-    if-eqz v2, :cond_0
-
-    .line 36
-    .line 37
-    check-cast v1, LGjj;
-
-    .line 38
-    .line 39
-    goto :goto_0
-
-    .line 40
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 41
-    :goto_0
-    if-eqz v1, :cond_1
-
-    .line 42
-    .line 43
-    invoke-virtual {v1}, LGjj;->a()Ljava/lang/String;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v1
-
-    .line 47
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v1
-
-    .line 51
-    invoke-virtual {p0}, LJ04;->E()LEX0;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v2
-
-    .line 55
-    check-cast v2, Lvia;
-
-    .line 56
-    .line 57
-    const-string v3, "lensIconForSettingsItem"
-
-    .line 58
-    .line 59
-    iget-object v2, v2, Lvia;->a:Lan0;
-
-    .line 60
-    .line 61
-    invoke-virtual {v2, v3}, Lan0;->b(Ljava/lang/String;)LQ1j;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v2
-
-    .line 65
-    invoke-virtual {p2, v1, v2}, Lcom/snap/imageloading/view/SnapImageView;->h(Landroid/net/Uri;LQ1j;)V
-
-    .line 66
-    .line 67
-    .line 68
-    :cond_1
-    iget-object p2, p1, Lxia;->Y:Ljava/lang/String;
-
-    .line 69
-    .line 70
-    invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 71
-    .line 72
-    .line 73
-    invoke-virtual {p0}, LcIj;->s()Landroid/view/View;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object p2
-
-    .line 77
-    new-instance v0, LjJ3;
-
-    .line 78
-    .line 79
-    const/16 v1, 0x1d
-
-    .line 80
-    .line 81
-    invoke-direct {v0, p0, v1, p1}, LjJ3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 82
-    .line 83
-    .line 84
-    invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 85
-    .line 86
-    .line 87
-    return-void
+    .line 26
+    return-object v0
 .end method

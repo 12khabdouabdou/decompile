@@ -1,10 +1,10 @@
 .class public final Lcom/snap/chat_reply/QuotedMessageContent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'senderDisplayName\':s,\'senderColor\':d,\'dateString\':s,\'isSaved\':b,\'isSentByCurrentUser\':b@?,\'isOpened\':b@?,\'hasExpired\':b@?,\'textContent\':r?:\'[0]\',\'attachmentCards\':r?:\'[1]\',\'mediaContent\':r?:\'[2]\',\'quotedMediaUri\':r?:\'[3]\',\'stickerUri\':r?:\'[4]\',\'audioContent\':r?:\'[5]\',\'batchContent\':a?<r:\'[3]\'>,\'pluginContent\':r?:\'[6]\',\'unsavedSnapContent\':r?:\'[7]\',\'senderUserId\':s?"
     typeReferences = {

@@ -1,14 +1,29 @@
-.class public interface abstract LYfa;
-.super Ljava/lang/Object;
+.class public final LYfa;
+.super Lbga;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a(Landroid/net/Uri;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Maybe;
-.end method
+# static fields
+.field public static final a:LYfa;
 
-.method public abstract b(Ljava/util/ArrayList;)Ljava/util/Set;
-.end method
 
-.method public abstract c(Ljava/lang/String;)V
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, LYfa;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LYfa;->a:LYfa;
+
+    .line 7
+    .line 8
+    return-void
 .end method

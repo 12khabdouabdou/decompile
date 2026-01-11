@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lsna;
+    proxyClass = LGza;
     schema = "\'listNameValidator\':r:\'[0]\',\'friendStore\':r:\'[1]\',\'groupStore\':r:\'[2]\',\'alertPresenter\':r:\'[3]\',\'onCancel\':f|m|(),\'onDelete\':f|m|(),\'onSuccess\':f|m|(r:\'[4]\'),\'onLoadComplete\':f?|m|(),\'actionSheetPresenter\':r?:\'[5]\'"
     typeReferences = {
         Lcom/snap/sharing/lists/StringValidator;,
@@ -45,7 +45,7 @@
 .end method
 
 .method public abstract onLoadComplete()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

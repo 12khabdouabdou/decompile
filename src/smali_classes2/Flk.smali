@@ -1,197 +1,96 @@
-.class public final LFlk;
-.super Lrdk;
+.class public abstract LFlk;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field private static final zzb:LFlk;
-
-
-# instance fields
-.field private zzd:I
-
-.field private zze:I
+.field public static final a:Lcmk;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 3
 
     .line 1
-    new-instance v0, LFlk;
+    :try_start_0
+    invoke-static {}, LeUk;->g()Ljava/lang/reflect/InvocationHandler;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lrdk;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
-    sput-object v0, LFlk;->zzb:LFlk;
-
-    .line 7
-    .line 8
-    const-class v1, LFlk;
-
-    .line 9
-    .line 10
-    invoke-static {v1, v0}, Lrdk;->g(Ljava/lang/Class;Lrdk;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-.end method
-
-
-# virtual methods
-.method public final k(I)Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    const/4 v1, 0x3
-
-    .line 3
-    const/4 v2, 0x2
-
-    .line 4
-    add-int/lit8 p1, p1, -0x1
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 5
+    new-instance v1, LpSj;
+
     .line 6
-    if-eqz p1, :cond_4
-
     .line 7
+    const-class v2, Lorg/chromium/support_lib_boundary/WebViewProviderFactoryBoundaryInterface;
+
     .line 8
-    if-eq p1, v2, :cond_3
-
     .line 9
-    .line 10
-    if-eq p1, v1, :cond_2
+    invoke-static {v2, v0}, LzB1;->b(Ljava/lang/Class;Ljava/lang/reflect/InvocationHandler;)Ljava/lang/Object;
 
+    .line 10
     .line 11
     .line 12
-    const/4 v0, 0x4
+    move-result-object v0
 
     .line 13
-    if-eq p1, v0, :cond_1
+    check-cast v0, Lorg/chromium/support_lib_boundary/WebViewProviderFactoryBoundaryInterface;
 
     .line 14
     .line 15
-    const/4 v0, 0x5
+    const/16 v2, 0xf
 
     .line 16
-    if-eq p1, v0, :cond_0
-
     .line 17
+    invoke-direct {v1, v2, v0}, LpSj;-><init>(ILjava/lang/Object;)V
+
     .line 18
-    const/4 p1, 0x0
-
     .line 19
-    return-object p1
-
     .line 20
-    :cond_0
-    sget-object p1, LFlk;->zzb:LFlk;
+    goto :goto_0
 
     .line 21
-    .line 22
-    return-object p1
+    :catch_0
+    new-instance v1, LdT7;
 
+    .line 22
     .line 23
-    :cond_1
-    new-instance p1, LDkk;
+    const/4 v0, 0x7
 
     .line 24
-    .line 25
-    sget-object v0, LFlk;->zzb:LFlk;
+    invoke-direct {v1, v0}, LdT7;-><init>(I)V
 
+    .line 25
     .line 26
     .line 27
-    invoke-direct {p1, v0}, Lbdk;-><init>(Lrdk;)V
+    :goto_0
+    sput-object v1, LFlk;->a:Lcmk;
 
     .line 28
     .line 29
+    return-void
+
     .line 30
-    return-object p1
+    :catch_1
+    move-exception v0
 
     .line 31
-    :cond_2
-    new-instance p1, LFlk;
+    new-instance v1, Ljava/lang/RuntimeException;
 
     .line 32
     .line 33
-    invoke-direct {p1}, Lrdk;-><init>()V
+    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
     .line 34
     .line 35
     .line 36
-    return-object p1
-
-    .line 37
-    :cond_3
-    new-array p1, v1, [Ljava/lang/Object;
-
-    .line 38
-    .line 39
-    const-string v1, "zzd"
-
-    .line 40
-    .line 41
-    const/4 v3, 0x0
-
-    .line 42
-    aput-object v1, p1, v3
-
-    .line 43
-    .line 44
-    const-string v1, "zze"
-
-    .line 45
-    .line 46
-    aput-object v1, p1, v0
-
-    .line 47
-    .line 48
-    sget-object v0, LAjk;->f:LAjk;
-
-    .line 49
-    .line 50
-    aput-object v0, p1, v2
-
-    .line 51
-    .line 52
-    sget-object v0, LFlk;->zzb:LFlk;
-
-    .line 53
-    .line 54
-    new-instance v1, LMgk;
-
-    .line 55
-    .line 56
-    const-string v2, "\u0001\u0001\u0000\u0001\u0001\u0001\u0001\u0000\u0000\u0000\u0001\u180c\u0000"
-
-    .line 57
-    .line 58
-    invoke-direct {v1, v0, v2, p1}, LMgk;-><init>(LT9k;Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 59
-    .line 60
-    .line 61
-    return-object v1
-
-    .line 62
-    :cond_4
-    invoke-static {v0}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object p1
-
-    .line 66
-    return-object p1
+    throw v1
 .end method

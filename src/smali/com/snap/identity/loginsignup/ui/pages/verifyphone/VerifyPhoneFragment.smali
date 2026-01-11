@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LZzj;
+.implements LoZj;
 
 
 # static fields
@@ -27,18 +27,12 @@
 
 .field public L0:Landroid/widget/TextView;
 
-.field public M0:LXzj;
+.field public M0:LmZj;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
-
-    new-instance v0, Lspc;
-
-    const/16 v1, 0xb
-
-    invoke-direct {v0, v1}, Lspc;-><init>(I)V
+    .locals 0
 
     return-void
 .end method
@@ -57,130 +51,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 4
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LXzj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, LXzj;->r3(LZzj;)V
-
-    .line 9
-    .line 10
-    .line 11
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LXzj;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    const-string v1, "Required value was null."
-
-    .line 20
-    .line 21
-    if-eqz v0, :cond_1
-
-    .line 22
-    .line 23
-    const-string v2, "allow_skip_button"
-
-    .line 24
-    .line 25
-    const/4 v3, 0x0
-
-    .line 26
-    invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v0
-
-    .line 30
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v2
-
-    .line 34
-    if-eqz v2, :cond_0
-
-    .line 35
-    .line 36
-    const-string v1, "allow_switch_to_email_button"
-
-    .line 37
-    .line 38
-    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v1
-
-    .line 42
-    invoke-virtual {p1, v0, v1}, LXzj;->U2(ZZ)V
-
-    .line 43
-    .line 44
-    .line 45
-    return-void
-
-    .line 46
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 47
-    .line 48
-    invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 49
-    .line 50
-    .line 51
-    throw p1
-
-    .line 52
-    :cond_1
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 53
-    .line 54
-    invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    throw p1
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LXzj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LmZj;
 
     .line 2
     .line 3
@@ -188,7 +63,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LXzj;->C1()V
+    invoke-virtual {v0}, LmZj;->D1()V
 
     .line 6
     .line 7
@@ -196,11 +71,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0288
+    const p3, 0x7f0e029e
 
     .line 2
     .line 3
@@ -219,16 +94,16 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 4
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
     .line 4
-    const p2, 0x7f0b05c6
+    const p2, 0x7f0b064f
 
     .line 5
     .line 6
@@ -249,7 +124,7 @@
 
     .line 14
     .line 15
-    const p2, 0x7f0b0808
+    const p2, 0x7f0b08ca
 
     .line 16
     .line 17
@@ -270,7 +145,7 @@
 
     .line 25
     .line 26
-    const p2, 0x7f0b074b
+    const p2, 0x7f0b07e8
 
     .line 27
     .line 28
@@ -291,7 +166,7 @@
 
     .line 36
     .line 37
-    const p2, 0x7f0b0691
+    const p2, 0x7f0b0728
 
     .line 38
     .line 39
@@ -312,7 +187,7 @@
 
     .line 47
     .line 48
-    const p2, 0x7f0b15a9
+    const p2, 0x7f0b16e9
 
     .line 49
     .line 50
@@ -329,7 +204,7 @@
 
     .line 56
     .line 57
-    const p2, 0x7f0b15ba
+    const p2, 0x7f0b16f6
 
     .line 58
     .line 59
@@ -346,7 +221,7 @@
 
     .line 65
     .line 66
-    const p2, 0x7f0b1a2c
+    const p2, 0x7f0b1b94
 
     .line 67
     .line 68
@@ -367,7 +242,7 @@
 
     .line 76
     .line 77
-    const p2, 0x7f0b0e75
+    const p2, 0x7f0b0f91
 
     .line 78
     .line 79
@@ -384,7 +259,7 @@
 
     .line 85
     .line 86
-    const v0, 0x7f0b01c6
+    const v0, 0x7f0b0210
 
     .line 87
     .line 88
@@ -462,7 +337,7 @@
     .line 120
     .line 121
     .line 122
-    const v0, 0x7f0b0e76
+    const v0, 0x7f0b0f92
 
     .line 123
     .line 124
@@ -521,7 +396,7 @@
     move-result-object p2
 
     .line 153
-    invoke-static {p1, p2}, LDDi;->s(Landroid/widget/EditText;[Ljava/lang/String;)V
+    invoke-static {p1, p2}, LhQj;->p(Landroid/widget/EditText;[Ljava/lang/String;)V
 
     .line 154
     .line 155
@@ -534,12 +409,12 @@
     move-result-object p1
 
     .line 160
-    invoke-static {p1}, LDDi;->r(Landroid/widget/EditText;)V
+    invoke-static {p1}, LhQj;->o(Landroid/widget/EditText;)V
 
     .line 161
     .line 162
     .line 163
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LXzj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LmZj;
 
     .line 164
     .line 165
@@ -547,7 +422,7 @@
     move-result-object p1
 
     .line 167
-    invoke-virtual {p1}, LXzj;->p3()V
+    invoke-virtual {p1}, LmZj;->m3()V
 
     .line 168
     .line 169
@@ -561,7 +436,7 @@
 
     .line 172
     .line 173
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 174
     .line 175
@@ -572,11 +447,11 @@
     throw p1
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->m1:LZ8d;
+    sget-object v0, Lsod;->m1:Lsod;
 
     .line 2
     .line 3
@@ -603,7 +478,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -614,11 +489,11 @@
     throw v0
 .end method
 
-.method public final b2()LXzj;
+.method public final b2()LmZj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->M0:LXzj;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->M0:LmZj;
 
     .line 2
     .line 3
@@ -634,7 +509,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -649,7 +524,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LXzj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LmZj;
 
     .line 2
     .line 3
@@ -657,7 +532,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LXzj;->h3()V
+    invoke-virtual {v0}, LmZj;->i3()V
 
     .line 6
     .line 7
@@ -673,11 +548,11 @@
     return v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -685,16 +560,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LXzj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LmZj;
 
     .line 5
     .line 6
@@ -702,10 +577,129 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1}, LXzj;->l3()V
+    invoke-virtual {p1}, LmZj;->k3()V
 
     .line 9
     .line 10
     .line 11
     return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 4
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LmZj;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, LmZj;->o3(LoZj;)V
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/verifyphone/VerifyPhoneFragment;->b2()LmZj;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    const-string v1, "Required value was null."
+
+    .line 20
+    .line 21
+    if-eqz v0, :cond_1
+
+    .line 22
+    .line 23
+    const-string v2, "allow_skip_button"
+
+    .line 24
+    .line 25
+    const/4 v3, 0x0
+
+    .line 26
+    invoke-virtual {v0, v2, v3}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v0
+
+    .line 30
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v2
+
+    .line 34
+    if-eqz v2, :cond_0
+
+    .line 35
+    .line 36
+    const-string v1, "allow_switch_to_email_button"
+
+    .line 37
+    .line 38
+    invoke-virtual {v2, v1, v3}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v1
+
+    .line 42
+    invoke-virtual {p1, v0, v1}, LmZj;->e3(ZZ)V
+
+    .line 43
+    .line 44
+    .line 45
+    return-void
+
+    .line 46
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 47
+    .line 48
+    invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 49
+    .line 50
+    .line 51
+    throw p1
+
+    .line 52
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 53
+    .line 54
+    invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 55
+    .line 56
+    .line 57
+    throw p1
 .end method

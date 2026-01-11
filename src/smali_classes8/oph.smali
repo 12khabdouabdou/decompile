@@ -1,30 +1,24 @@
 .class public final Loph;
-.super LcZc;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LyUc;
+.implements LNwh;
 
 
 # instance fields
-.field public X:Z
+.field public final a:Lbe1;
 
-.field public Y:LSC2;
+.field public final b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final Z:Ljava/lang/String;
+.field public final c:LREi;
 
-.field public final a:LWq6;
-
-.field public final b:LWm0;
-
-.field public final c:Lrn0;
-
-.field public final t:LJkh;
+.field public final d:LnJe;
 
 
 # direct methods
-.method public constructor <init>(LYYg;LWq6;)V
-    .locals 2
+.method public constructor <init>(Lbb5;Lbe1;Lbb5;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -32,361 +26,292 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Loph;->a:LWq6;
+    iput-object p2, p0, Loph;->a:Lbe1;
 
     .line 5
     .line 6
-    sget-object p2, LFkh;->Z:LFkh;
+    new-instance p2, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 7
     .line 8
-    const-string v0, "SpotlightTabNotificationSuppressPlugin"
+    invoke-direct {p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
 
     .line 9
     .line 10
-    invoke-static {p2, p2, v0}, Ln9f;->i(LFkh;LFkh;Ljava/lang/String;)LWm0;
-
     .line 11
+    iput-object p2, p0, Loph;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 12
     .line 13
-    move-result-object p2
+    new-instance p2, Lnnh;
 
     .line 14
-    iput-object p2, p0, Loph;->b:LWm0;
-
     .line 15
+    const/4 v0, 0x1
+
     .line 16
-    sget-object p2, Lrn0;->a:Lrn0;
+    invoke-direct {p2, p1, v0}, Lnnh;-><init>(Lbb5;I)V
 
     .line 17
     .line 18
-    iput-object p2, p0, Loph;->c:Lrn0;
-
     .line 19
+    new-instance p1, LREi;
+
     .line 20
-    sget-object p2, Lkmh;->c:Lkmh;
-
     .line 21
-    .line 22
-    new-instance v1, LJkh;
+    invoke-direct {p1, p2}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 22
     .line 23
     .line 24
-    iget-object p1, p1, LYYg;->b:Ljava/lang/Object;
+    iput-object p1, p0, Loph;->c:LREi;
 
     .line 25
     .line 26
-    check-cast p1, LB99;
+    sget-object p1, Lqrh;->Z:Lqrh;
 
     .line 27
     .line 28
-    invoke-direct {v1, p1, p2}, LJkh;-><init>(LB99;Lkmh;)V
+    const-string p2, "SpectaclesDataReporter"
 
     .line 29
     .line 30
-    .line 31
-    iput-object v1, p0, Loph;->t:LJkh;
+    invoke-static {p1, p1, p2}, Lnfe;->h(Lqrh;Lqrh;Ljava/lang/String;)Lnp0;
 
+    .line 31
     .line 32
     .line 33
-    iput-object v0, p0, Loph;->Z:Ljava/lang/String;
+    move-result-object p1
 
     .line 34
+    invoke-virtual {p3}, Lbb5;->get()Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
+    move-result-object p2
+
+    .line 38
+    check-cast p2, LyPf;
+
+    .line 39
+    .line 40
+    check-cast p2, LTT5;
+
+    .line 41
+    .line 42
+    invoke-static {p2, p1}, LJF0;->k(LTT5;Lnp0;)LnJe;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p1
+
+    .line 46
+    iput-object p1, p0, Loph;->d:LnJe;
+
+    .line 47
+    .line 48
     return-void
 .end method
 
 
 # virtual methods
-.method public final G(Lcom/snap/opera/events/ViewerEvents$StopViewer;)V
-    .locals 0
+.method public final a()V
+    .locals 11
 
     .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    iput-boolean p1, p0, Loph;->X:Z
-
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final I(Lcom/snap/opera/events/ViewerEvents$ResumeViewer;)V
-    .locals 0
-
-    .line 1
-    iget-boolean p1, p0, Loph;->X:Z
+    iget-object v0, p0, Loph;->c:LREi;
 
     .line 2
     .line 3
-    if-nez p1, :cond_0
-
-    .line 4
-    .line 5
-    const/4 p1, 0x1
-
-    .line 6
-    iput-boolean p1, p0, Loph;->X:Z
-
-    .line 7
-    .line 8
-    invoke-virtual {p0}, Loph;->J()V
-
-    .line 9
-    .line 10
-    .line 11
-    :cond_0
-    return-void
-.end method
-
-.method public final J()V
-    .locals 3
-
-    .line 1
-    sget-object v0, Ljmh;->b:Ljmh;
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result-object v1
 
     .line 7
-    iget-object v1, p0, Loph;->t:LJkh;
+    check-cast v1, Lkph;
 
     .line 8
     .line 9
-    invoke-virtual {v1, v0}, LJkh;->v(Ljava/util/List;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
+    invoke-virtual {v1}, Lkph;->f2()Lbrh;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v0
+    move-result-object v1
 
     .line 13
-    new-instance v1, Lnph;
+    iget-object v1, v1, Lbrh;->e:LREi;
 
     .line 14
     .line 15
-    const/4 v2, 0x0
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 16
-    invoke-direct {v1, p0, v2}, Lnph;-><init>(Loph;I)V
-
     .line 17
     .line 18
-    .line 19
-    const/4 v2, 0x2
-
-    .line 20
-    invoke-static {v0, v1, v2}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->g(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    iget-object v1, p0, Loph;->Y:LSC2;
-
-    .line 25
-    .line 26
-    const/4 v2, 0x0
-
-    .line 27
-    if-eqz v1, :cond_0
-
-    .line 28
-    .line 29
-    invoke-static {v0, v1, v2}, LVck;->b(Lio/reactivex/rxjava3/disposables/Disposable;LSC2;LdXc;)V
-
-    .line 30
-    .line 31
-    .line 32
-    return-void
-
-    .line 33
-    :cond_0
-    const-string v0, "operaDisposables"
-
-    .line 34
-    .line 35
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 36
-    .line 37
-    .line 38
-    throw v2
-.end method
-
-.method public final P(LpYc;)LcZc;
-    .locals 0
-
-    .line 1
-    iget-object p1, p1, LpYc;->Y:LSC2;
-
-    .line 2
-    .line 3
-    iput-object p1, p0, Loph;->Y:LSC2;
-
-    .line 4
-    .line 5
-    return-object p0
-.end method
-
-.method public final m0()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Loph;->Z:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final p(Lcom/snap/opera/events/ViewerEvents$CloseViewer;)V
-    .locals 2
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    iput-boolean p1, p0, Loph;->X:Z
-
-    .line 3
-    .line 4
-    iget-object p1, p0, Loph;->t:LJkh;
-
-    .line 5
-    .line 6
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance v0, Lb7h;
-
-    .line 10
-    .line 11
-    const/16 v1, 0xd
-
-    .line 12
-    .line 13
-    invoke-direct {v0, v1, p1}, Lb7h;-><init>(ILjava/lang/Object;)V
-
-    .line 14
-    .line 15
-    .line 16
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 17
-    .line 18
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    move-result-object v1
 
     .line 19
+    check-cast v1, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 20
     .line 21
-    iget-object p1, p1, LJkh;->b:Ljava/lang/Object;
+    iget-object v2, p0, Loph;->d:LnJe;
 
     .line 22
     .line 23
-    check-cast p1, LBre;
+    invoke-virtual {v2}, LnJe;->d()LA36;
 
     .line 24
     .line 25
-    invoke-virtual {p1}, LBre;->i()Lgn0;
-
     .line 26
+    move-result-object v3
+
     .line 27
+    invoke-virtual {v1, v3}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
     .line 28
-    move-result-object p1
-
     .line 29
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
     .line 30
+    move-result-object v1
+
     .line 31
-    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    new-instance v3, Lnph;
 
     .line 32
     .line 33
+    const/4 v4, 0x0
+
     .line 34
-    new-instance p1, Lnph;
+    invoke-direct {v3, p0, v4}, Lnph;-><init>(Loph;I)V
 
     .line 35
     .line 36
-    const/4 v1, 0x1
-
     .line 37
-    invoke-direct {p1, p0, v1}, Lnph;-><init>(Loph;I)V
+    iget-object v4, p0, Loph;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 38
     .line 39
+    invoke-static {v1, v3, v4}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 40
-    const/4 v1, 0x2
-
     .line 41
-    invoke-static {v0, p1, v1}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->g(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 42
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
     .line 43
     .line 44
-    move-result-object p1
-
     .line 45
-    iget-object v0, p0, Loph;->b:LWm0;
+    move-result-object v0
 
     .line 46
+    check-cast v0, Lkph;
+
     .line 47
-    iget-object v1, p0, Loph;->a:LWq6;
-
     .line 48
-    .line 49
-    invoke-virtual {v1, v0, p1}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+    invoke-virtual {v0}, Lkph;->f2()Lbrh;
 
+    .line 49
     .line 50
     .line 51
+    move-result-object v0
+
     .line 52
+    invoke-virtual {v0}, Lbrh;->d()Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v0
+
+    .line 56
+    invoke-virtual {v2}, LnJe;->d()LA36;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v1
+
+    .line 60
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v6
+
+    .line 64
+    sget-object v9, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
+
+    .line 65
+    .line 66
+    sget-object v10, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
+
+    .line 67
+    .line 68
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSampleTimed;
+
+    .line 69
+    .line 70
+    const-wide/16 v7, 0x1
+
+    .line 71
+    .line 72
+    invoke-direct/range {v5 .. v10}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSampleTimed;-><init>(Lio/reactivex/rxjava3/core/Observable;JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 73
+    .line 74
+    .line 75
+    sget-object v0, LRlh;->f0:LRlh;
+
+    .line 76
+    .line 77
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+
+    .line 78
+    .line 79
+    invoke-direct {v1, v5, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
+    .line 80
+    .line 81
+    .line 82
+    new-instance v0, Lnph;
+
+    .line 83
+    .line 84
+    const/4 v2, 0x1
+
+    .line 85
+    invoke-direct {v0, p0, v2}, Lnph;-><init>(Loph;I)V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-static {v1, v0, v4}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 89
+    .line 90
+    .line 91
     return-void
 .end method
 
-.method public final s0()Z
+.method public final b()V
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    iget-object v0, p0, Loph;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 2
-    return v0
-.end method
-
-.method public final v(LpYc;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final y(Lcom/snap/opera/events/ViewerEvents$OpenViewer;)V
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x1
-
-    .line 2
-    iput-boolean p1, p0, Loph;->X:Z
-
     .line 3
-    .line 4
-    invoke-virtual {p0}, Loph;->J()V
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
 
+    .line 4
     .line 5
     .line 6
-    .line 7
     return-void
 .end method

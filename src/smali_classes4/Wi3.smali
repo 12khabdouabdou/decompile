@@ -1,450 +1,367 @@
-.class public final LWi3;
-.super Ljava/lang/Object;
+.class public final enum LWi3;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "LWi3;",
+        ">;"
+    }
+.end annotation
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final enum X:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "USER_PENDING"
+    .end annotation
+.end field
 
-.field public final synthetic b:I
+.field public static final enum Y:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "PENDING"
+    .end annotation
+.end field
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public static final enum Z:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "PINNED"
+    .end annotation
+.end field
 
-.field public final synthetic t:Ljava/lang/Object;
+.field public static final enum a:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "UNKNOWN"
+    .end annotation
+.end field
+
+.field public static final enum b:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DELETED"
+    .end annotation
+.end field
+
+.field public static final enum c:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "REJECTED"
+    .end annotation
+.end field
+
+.field public static final enum e0:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "POSTING"
+    .end annotation
+.end field
+
+.field public static final enum f0:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "FAILED"
+    .end annotation
+.end field
+
+.field public static final synthetic g0:[LWi3;
+
+.field public static final enum t:LWi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "APPROVED"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;I)V
-    .locals 0
-
-    .line 2
-    iput p4, p0, LWi3;->a:I
-
-    iput-object p1, p0, LWi3;->c:Ljava/lang/Object;
-
-    iput p2, p0, LWi3;->b:I
-
-    iput-object p3, p0, LWi3;->t:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lp2k;Lcom/snap/ui/view/SnapFontTextView;I)V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    iput v0, p0, LWi3;->a:I
+.method static constructor <clinit>()V
+    .locals 19
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, LWi3;->c:Ljava/lang/Object;
-
-    iput-object p2, p0, LWi3;->t:Ljava/lang/Object;
-
-    iput p3, p0, LWi3;->b:I
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 7
-
-    .line 1
-    iget v0, p0, LWi3;->a:I
+    const/16 v0, 0x8
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v1, 0x7
 
     .line 4
+    const/4 v2, 0x6
+
     .line 5
+    const/4 v3, 0x5
+
     .line 6
-    iget-object p1, p0, LWi3;->c:Ljava/lang/Object;
+    const/4 v4, 0x4
 
     .line 7
+    const/4 v5, 0x3
+
     .line 8
-    check-cast p1, Lp2k;
+    const/4 v6, 0x2
 
     .line 9
+    const/4 v7, 0x1
+
     .line 10
-    iget-boolean v0, p1, Lp2k;->g0:Z
+    const/4 v8, 0x0
 
     .line 11
+    new-instance v9, LWi3;
+
     .line 12
-    if-nez v0, :cond_0
-
     .line 13
+    const-string v10, "UNKNOWN"
+
     .line 14
-    iget-object v0, p0, LWi3;->t:Ljava/lang/Object;
-
     .line 15
-    .line 16
-    check-cast v0, Lcom/snap/ui/view/SnapFontTextView;
+    invoke-direct {v9, v10, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 16
     .line 17
     .line 18
-    const/4 v1, 0x3
+    sput-object v9, LWi3;->a:LWi3;
 
     .line 19
-    invoke-virtual {v0, v1}, Landroid/view/View;->performHapticFeedback(I)Z
-
     .line 20
+    new-instance v10, LWi3;
+
     .line 21
     .line 22
-    :cond_0
-    iget v0, p0, LWi3;->b:I
+    const-string v11, "DELETED"
 
     .line 23
     .line 24
-    invoke-virtual {p1, v0}, Lp2k;->c(I)F
+    invoke-direct {v10, v11, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 25
     .line 26
     .line 27
-    move-result v0
+    sput-object v10, LWi3;->b:LWi3;
 
     .line 28
-    iget-object v1, p1, Lp2k;->a:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 29
+    new-instance v11, LWi3;
+
     .line 30
-    const/high16 v2, 0x3f800000    # 1.0f
-
     .line 31
+    const-string v12, "REJECTED"
+
     .line 32
-    cmpg-float v3, v0, v2
-
     .line 33
-    .line 34
-    if-nez v3, :cond_1
+    invoke-direct {v11, v12, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 34
     .line 35
     .line 36
-    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    sput-object v11, LWi3;->c:LWi3;
 
     .line 37
     .line 38
-    .line 39
-    move-result-object p1
+    new-instance v12, LWi3;
 
+    .line 39
     .line 40
-    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+    const-string v13, "APPROVED"
 
     .line 41
     .line 42
+    invoke-direct {v12, v13, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 43
-    goto :goto_2
-
     .line 44
-    :cond_1
-    const/4 v3, 0x0
-
     .line 45
-    cmpl-float v0, v0, v2
+    sput-object v12, LWi3;->t:LWi3;
 
     .line 46
     .line 47
-    if-lez v0, :cond_3
+    new-instance v13, LWi3;
 
     .line 48
     .line 49
-    iget-object v0, p1, Lp2k;->c:Ljava/util/List;
+    const-string v14, "USER_PENDING"
 
     .line 50
     .line 51
-    if-eqz v0, :cond_2
+    invoke-direct {v13, v14, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 52
     .line 53
-    goto :goto_0
-
     .line 54
-    :cond_2
-    const-string p1, "telephotoStops"
+    sput-object v13, LWi3;->X:LWi3;
 
     .line 55
     .line 56
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    new-instance v14, LWi3;
 
     .line 57
     .line 58
-    .line 59
-    throw v3
+    const-string v15, "PENDING"
 
+    .line 59
     .line 60
-    :cond_3
-    iget-object v0, p1, Lp2k;->b:Ljava/util/ArrayList;
+    invoke-direct {v14, v15, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 61
     .line 62
-    if-eqz v0, :cond_7
-
     .line 63
-    .line 64
-    :goto_0
-    move-object v2, v0
+    sput-object v14, LWi3;->Y:LWi3;
 
+    .line 64
     .line 65
-    check-cast v2, Ljava/lang/Iterable;
+    new-instance v15, LWi3;
 
     .line 66
     .line 67
-    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    const/16 v16, 0x5
 
     .line 68
     .line 69
-    .line 70
-    move-result-object v2
+    const-string v3, "PINNED"
 
+    .line 70
     .line 71
-    :cond_4
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-direct {v15, v3, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 72
     .line 73
     .line 74
-    move-result v4
+    sput-object v15, LWi3;->Z:LWi3;
 
     .line 75
-    if-eqz v4, :cond_5
-
     .line 76
-    .line 77
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    new-instance v3, LWi3;
 
+    .line 77
     .line 78
+    const/16 v17, 0x6
+
     .line 79
     .line 80
-    move-result-object v4
+    const-string v2, "POSTING"
 
     .line 81
-    move-object v5, v4
-
     .line 82
-    check-cast v5, Ljava/lang/Number;
+    invoke-direct {v3, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 83
     .line 84
-    invoke-virtual {v5}, Ljava/lang/Number;->floatValue()F
-
     .line 85
+    sput-object v3, LWi3;->e0:LWi3;
+
     .line 86
     .line 87
-    move-result v5
+    new-instance v2, LWi3;
 
     .line 88
-    iget v6, p1, Lp2k;->f0:F
-
     .line 89
+    const/16 v18, 0x7
+
     .line 90
-    cmpl-float v5, v5, v6
-
     .line 91
+    const-string v1, "FAILED"
+
     .line 92
-    if-lez v5, :cond_4
-
     .line 93
+    invoke-direct {v2, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 94
-    move-object v3, v4
-
     .line 95
-    :cond_5
-    check-cast v3, Ljava/lang/Float;
-
     .line 96
+    sput-object v2, LWi3;->f0:LWi3;
+
     .line 97
-    if-eqz v3, :cond_6
-
     .line 98
-    .line 99
-    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
+    const/16 v1, 0x9
 
+    .line 99
     .line 100
+    new-array v1, v1, [LWi3;
+
     .line 101
     .line 102
-    move-result p1
+    aput-object v9, v1, v8
 
     .line 103
-    goto :goto_1
-
     .line 104
-    :cond_6
-    const/4 p1, 0x0
+    aput-object v10, v1, v7
 
     .line 105
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 106
+    aput-object v11, v1, v6
+
     .line 107
     .line 108
-    move-result-object p1
+    aput-object v12, v1, v5
 
     .line 109
-    check-cast p1, Ljava/lang/Number;
-
     .line 110
-    .line 111
-    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+    aput-object v13, v1, v4
 
+    .line 111
     .line 112
+    aput-object v14, v1, v16
+
     .line 113
     .line 114
-    move-result p1
+    aput-object v15, v1, v17
 
     .line 115
-    :goto_1
-    invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
     .line 116
+    aput-object v3, v1, v18
+
     .line 117
     .line 118
-    move-result-object p1
+    aput-object v2, v1, v0
 
     .line 119
-    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
-
     .line 120
+    sput-object v1, LWi3;->g0:[LWi3;
+
     .line 121
     .line 122
-    :goto_2
     return-void
+.end method
 
-    .line 123
-    :cond_7
-    const-string p1, "ultraWideStops"
+.method public static valueOf(Ljava/lang/String;)LWi3;
+    .locals 1
 
-    .line 124
-    .line 125
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 1
+    const-class v0, LWi3;
 
-    .line 126
-    .line 127
-    .line 128
-    throw v3
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
-    .line 129
-    :pswitch_0
-    iget-object v0, p0, LWi3;->c:Ljava/lang/Object;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
 
-    .line 130
-    .line 131
-    check-cast v0, Lcom/snap/component/formselector/SnapFormSelector;
+    .line 7
+    check-cast p0, LWi3;
 
-    .line 132
-    .line 133
-    iget v1, p0, LWi3;->b:I
+    .line 8
+    .line 9
+    return-object p0
+.end method
 
-    .line 134
-    .line 135
-    invoke-virtual {v0, v1}, Lcom/snap/component/formselector/SnapFormSelector;->b(I)V
+.method public static values()[LWi3;
+    .locals 1
 
-    .line 136
-    .line 137
-    .line 138
-    iget-object v0, p0, LWi3;->t:Ljava/lang/Object;
+    .line 1
+    sget-object v0, LWi3;->g0:[LWi3;
 
-    .line 139
-    .line 140
-    check-cast v0, LXGg;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 141
-    .line 142
-    iget-object v0, v0, LXGg;->c:Landroid/view/View$OnClickListener;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 143
-    .line 144
-    if-eqz v0, :cond_8
+    .line 7
+    check-cast v0, [LWi3;
 
-    .line 145
-    .line 146
-    invoke-interface {v0, p1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
-
-    .line 147
-    .line 148
-    .line 149
-    :cond_8
-    return-void
-
-    .line 150
-    :pswitch_1
-    iget-object p1, p0, LWi3;->c:Ljava/lang/Object;
-
-    .line 151
-    .line 152
-    check-cast p1, LZi3;
-
-    .line 153
-    .line 154
-    iget-object p1, p1, LZi3;->m0:Lcom/snap/ui/view/SafeViewPager;
-
-    .line 155
-    .line 156
-    if-eqz p1, :cond_9
-
-    .line 157
-    .line 158
-    const/4 v0, 0x1
-
-    .line 159
-    iget v1, p0, LWi3;->b:I
-
-    .line 160
-    .line 161
-    invoke-virtual {p1, v1, v0}, Landroidx/viewpager/widget/ViewPager;->C(IZ)V
-
-    .line 162
-    .line 163
-    .line 164
-    const/4 p1, 0x0
-
-    .line 165
-    const/4 v0, 0x0
-
-    .line 166
-    iget-object v2, p0, LWi3;->t:Ljava/lang/Object;
-
-    .line 167
-    .line 168
-    check-cast v2, Lcom/snap/component/tabs/SnapTabLayout;
-
-    .line 169
-    .line 170
-    invoke-virtual {v2, v1, p1, v0}, Lcom/snap/component/tabs/SnapTabLayout;->a(IFI)V
-
-    .line 171
-    .line 172
-    .line 173
-    return-void
-
-    .line 174
-    :cond_9
-    const-string p1, "viewPager"
-
-    .line 175
-    .line 176
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 177
-    .line 178
-    .line 179
-    const/4 p1, 0x0
-
-    .line 180
-    throw p1
-
-    .line 181
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 8
+    .line 9
+    return-object v0
 .end method

@@ -1,14 +1,14 @@
 .class public final Lcom/snap/chat_attributed_text/ChatAttributedTextViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'text\':s,\'attributes\':a?<r:\'[0]\'>,\'fontOverride\':s?,\'scale\':d@?,\'shouldRenderFullWidth\':b@?"
     typeReferences = {
-        LvD2;
+        LoG2;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LvD2;",
+            "LoG2;",
             ">;"
         }
     .end annotation
@@ -67,7 +67,7 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "LvD2;",
+            "LoG2;",
             ">;",
             "Ljava/lang/String;",
             "Ljava/lang/Double;",

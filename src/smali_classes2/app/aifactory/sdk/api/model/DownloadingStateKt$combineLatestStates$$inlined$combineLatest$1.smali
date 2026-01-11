@@ -79,7 +79,7 @@
 
     const/16 v1, 0xa
 
-    invoke-static {p1, v1}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v1}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     move-result v1
 
@@ -109,7 +109,7 @@
     goto :goto_0
 
     :cond_0
-    new-instance p1, LKWi;
+    new-instance p1, Lbmj;
 
     .line 7
     const-string v0, "null cannot be cast to non-null type T"

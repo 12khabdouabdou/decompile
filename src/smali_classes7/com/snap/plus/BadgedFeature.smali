@@ -1,15 +1,15 @@
 .class public final Lcom/snap/plus/BadgedFeature;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'state\':g<c>:\'[0]\'<r:\'[1]\'>,\'clear\':f()"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LRH0;
+        LKK0;
     }
 .end annotation
 
@@ -27,7 +27,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LRH0;",
+            "LKK0;",
             ">;"
         }
     .end annotation
@@ -41,7 +41,7 @@
         value = {
             "(",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LRH0;",
+            "LKK0;",
             ">;",
             "Lkotlin/jvm/functions/Function0;",
             ")V"

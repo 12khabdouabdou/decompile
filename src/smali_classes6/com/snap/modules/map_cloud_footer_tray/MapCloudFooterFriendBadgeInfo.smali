@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/map_cloud_footer_tray/MapCloudFooterFriendBadgeInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'badgeType\':r<e>:\'[0]\',\'badgeAnnotation\':s?,\'badgeImageObservable\':g?<c>:\'[1]\'<s>"
     typeReferences = {

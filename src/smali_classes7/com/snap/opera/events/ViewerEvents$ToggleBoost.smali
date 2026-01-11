@@ -1,25 +1,27 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$ToggleBoost;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
 .field public final c:Z
 
+.field public final d:LXc;
+
 
 # direct methods
-.method public constructor <init>(LdXc;Z)V
+.method public constructor <init>(LYbd;ZLXc;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LdXc;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LYbd;
 
     .line 5
     .line 6
@@ -27,16 +29,20 @@
 
     .line 7
     .line 8
+    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->d:LXc;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LYbd;
 
     .line 2
     .line 3
@@ -64,11 +70,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;
 
-    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LdXc;
+    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LYbd;
 
-    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LdXc;
+    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LYbd;
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -79,13 +85,22 @@
     :cond_2
     iget-boolean v1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->c:Z
 
-    iget-boolean p1, p1, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->c:Z
+    iget-boolean v3, p1, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->c:Z
 
-    if-eq v1, p1, :cond_3
+    if-eq v1, v3, :cond_3
 
     return v2
 
     :cond_3
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->d:LXc;
+
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->d:LXc;
+
+    if-eq v1, p1, :cond_4
+
+    return v2
+
+    :cond_4
     return v0
 .end method
 
@@ -93,11 +108,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LYbd;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     .line 4
     .line 5
@@ -133,7 +148,26 @@
     add-int/2addr v0, v1
 
     .line 19
-    return v0
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 20
+    .line 21
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->d:LXc;
+
+    .line 22
+    .line 23
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    add-int/2addr v1, v0
+
+    .line 28
+    return v1
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -145,7 +179,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -156,6 +190,14 @@
     iget-boolean v1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->c:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    const-string v1, ", gesture="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ToggleBoost;->d:LXc;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v1, ")"
 

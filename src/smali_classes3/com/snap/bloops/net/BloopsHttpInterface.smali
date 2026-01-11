@@ -6,10 +6,10 @@
 # virtual methods
 .method public abstract download(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .annotation runtime Lb38;
+    .annotation runtime LEri;
     .end annotation
 
     .annotation system Ldalvik/annotation/Signature;
@@ -18,11 +18,11 @@
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LY3f;",
+            "LUlf;",
             ">;"
         }
     .end annotation
 
-    .annotation runtime Ll3i;
+    .annotation runtime Lw98;
     .end annotation
 .end method

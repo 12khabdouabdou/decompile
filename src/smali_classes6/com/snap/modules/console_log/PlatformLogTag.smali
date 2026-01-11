@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'CallingCore\':\'[talk][core]\',\'CallingUi\':\'[talk][ui]\',\'JobAppStart\':\'(job)AppStartJobSchedulerProcessor\',\'SnapEditor\':\'[SnapEditor]\',\'MapPlaceAlerts\':\'[Map][PlaceAlerts]\'"
-    type = .enum LJv3;->b:LJv3;
+    schema = "\'CallingCore\':\'[talk][core]\',\'CallingUi\':\'[talk][ui]\',\'JobAppStart\':\'(job)AppStartJobSchedulerProcessor\',\'SnapEditor\':\'[SnapEditor]\',\'MapPlaceAlerts\':\'[Map][PlaceAlerts]\',\'Presence\':\'[presence]\',\'Music\':\'[Music][Valdi]\'"
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -28,6 +28,10 @@
 
 .field public static final enum MapPlaceAlerts:Lcom/snap/modules/console_log/PlatformLogTag;
 
+.field public static final enum Music:Lcom/snap/modules/console_log/PlatformLogTag;
+
+.field public static final enum Presence:Lcom/snap/modules/console_log/PlatformLogTag;
+
 .field public static final enum SnapEditor:Lcom/snap/modules/console_log/PlatformLogTag;
 
 .field public static final synthetic a:[Lcom/snap/modules/console_log/PlatformLogTag;
@@ -35,140 +39,188 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 15
 
     .line 1
-    const/4 v0, 0x4
+    const/4 v0, 0x6
 
     .line 2
-    const/4 v1, 0x3
+    const/4 v1, 0x5
 
     .line 3
-    const/4 v2, 0x2
+    const/4 v2, 0x4
 
     .line 4
-    const/4 v3, 0x1
+    const/4 v3, 0x3
 
     .line 5
-    const/4 v4, 0x0
+    const/4 v4, 0x2
 
     .line 6
-    new-instance v5, Lcom/snap/modules/console_log/PlatformLogTag;
+    const/4 v5, 0x1
 
     .line 7
+    const/4 v6, 0x0
+
     .line 8
-    const-string v6, "CallingCore"
+    new-instance v7, Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 9
     .line 10
-    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v8, "CallingCore"
 
     .line 11
     .line 12
-    .line 13
-    sput-object v5, Lcom/snap/modules/console_log/PlatformLogTag;->CallingCore:Lcom/snap/modules/console_log/PlatformLogTag;
+    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 13
     .line 14
     .line 15
-    new-instance v6, Lcom/snap/modules/console_log/PlatformLogTag;
+    sput-object v7, Lcom/snap/modules/console_log/PlatformLogTag;->CallingCore:Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 16
     .line 17
-    const-string v7, "CallingUi"
+    new-instance v8, Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 18
     .line 19
-    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v9, "CallingUi"
 
     .line 20
     .line 21
-    .line 22
-    sput-object v6, Lcom/snap/modules/console_log/PlatformLogTag;->CallingUi:Lcom/snap/modules/console_log/PlatformLogTag;
+    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 22
     .line 23
     .line 24
-    new-instance v7, Lcom/snap/modules/console_log/PlatformLogTag;
+    sput-object v8, Lcom/snap/modules/console_log/PlatformLogTag;->CallingUi:Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 25
     .line 26
-    const-string v8, "JobAppStart"
+    new-instance v9, Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 27
     .line 28
-    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v10, "JobAppStart"
 
     .line 29
     .line 30
-    .line 31
-    sput-object v7, Lcom/snap/modules/console_log/PlatformLogTag;->JobAppStart:Lcom/snap/modules/console_log/PlatformLogTag;
+    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 31
     .line 32
     .line 33
-    new-instance v8, Lcom/snap/modules/console_log/PlatformLogTag;
+    sput-object v9, Lcom/snap/modules/console_log/PlatformLogTag;->JobAppStart:Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 34
     .line 35
-    const-string v9, "SnapEditor"
+    new-instance v10, Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 36
     .line 37
-    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v11, "SnapEditor"
 
     .line 38
     .line 39
-    .line 40
-    sput-object v8, Lcom/snap/modules/console_log/PlatformLogTag;->SnapEditor:Lcom/snap/modules/console_log/PlatformLogTag;
+    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 40
     .line 41
     .line 42
-    new-instance v9, Lcom/snap/modules/console_log/PlatformLogTag;
+    sput-object v10, Lcom/snap/modules/console_log/PlatformLogTag;->SnapEditor:Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 43
     .line 44
-    const-string v10, "MapPlaceAlerts"
+    new-instance v11, Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 45
     .line 46
-    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v12, "MapPlaceAlerts"
 
     .line 47
     .line 48
-    .line 49
-    sput-object v9, Lcom/snap/modules/console_log/PlatformLogTag;->MapPlaceAlerts:Lcom/snap/modules/console_log/PlatformLogTag;
+    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 49
     .line 50
     .line 51
-    const/4 v10, 0x5
+    sput-object v11, Lcom/snap/modules/console_log/PlatformLogTag;->MapPlaceAlerts:Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 52
-    new-array v10, v10, [Lcom/snap/modules/console_log/PlatformLogTag;
-
     .line 53
+    new-instance v12, Lcom/snap/modules/console_log/PlatformLogTag;
+
     .line 54
-    aput-object v5, v10, v4
-
     .line 55
+    const-string v13, "Presence"
+
     .line 56
-    aput-object v6, v10, v3
-
     .line 57
-    .line 58
-    aput-object v7, v10, v2
+    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 58
     .line 59
     .line 60
-    aput-object v8, v10, v1
+    sput-object v12, Lcom/snap/modules/console_log/PlatformLogTag;->Presence:Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 61
     .line 62
-    aput-object v9, v10, v0
+    new-instance v13, Lcom/snap/modules/console_log/PlatformLogTag;
 
     .line 63
     .line 64
-    sput-object v10, Lcom/snap/modules/console_log/PlatformLogTag;->a:[Lcom/snap/modules/console_log/PlatformLogTag;
+    const-string v14, "Music"
 
     .line 65
     .line 66
+    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 67
+    .line 68
+    .line 69
+    sput-object v13, Lcom/snap/modules/console_log/PlatformLogTag;->Music:Lcom/snap/modules/console_log/PlatformLogTag;
+
+    .line 70
+    .line 71
+    const/4 v14, 0x7
+
+    .line 72
+    new-array v14, v14, [Lcom/snap/modules/console_log/PlatformLogTag;
+
+    .line 73
+    .line 74
+    aput-object v7, v14, v6
+
+    .line 75
+    .line 76
+    aput-object v8, v14, v5
+
+    .line 77
+    .line 78
+    aput-object v9, v14, v4
+
+    .line 79
+    .line 80
+    aput-object v10, v14, v3
+
+    .line 81
+    .line 82
+    aput-object v11, v14, v2
+
+    .line 83
+    .line 84
+    aput-object v12, v14, v1
+
+    .line 85
+    .line 86
+    aput-object v13, v14, v0
+
+    .line 87
+    .line 88
+    sput-object v14, Lcom/snap/modules/console_log/PlatformLogTag;->a:[Lcom/snap/modules/console_log/PlatformLogTag;
+
+    .line 89
+    .line 90
     return-void
 .end method
 

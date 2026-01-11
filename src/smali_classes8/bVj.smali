@@ -3,98 +3,126 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/webkit/ValueCallback;
+.implements Lcom/snap/venueeditor/VenueEditorDismissCallback;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:LeVj;
 
-.field public final synthetic b:Ljava/lang/Object;
+.field public final synthetic b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+.field public final synthetic c:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
+.method public constructor <init>(LeVj;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Z)V
     .locals 0
 
     .line 1
-    iput p1, p0, LbVj;->a:I
-
-    iput-object p2, p0, LbVj;->b:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LbVj;->a:LeVj;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LbVj;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 7
+    .line 8
+    iput-boolean p3, p0, LbVj;->c:Z
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final onReceiveValue(Ljava/lang/Object;)V
-    .locals 2
+.method public final dismissEditorRoot(Z)V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, LbVj;->b:Ljava/lang/Object;
+    if-eqz p1, :cond_0
 
     .line 2
     .line 3
-    iget v1, p0, LbVj;->a:I
+    iget-object p1, p0, LbVj;->a:LeVj;
 
     .line 4
     .line 5
-    packed-switch v1, :pswitch_data_0
+    iget-object v0, p1, LeVj;->p:LnJe;
 
     .line 6
     .line 7
-    .line 8
-    check-cast p1, Ljava/lang/String;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
+    .line 8
     .line 9
     .line 10
-    check-cast v0, LFx2;
+    move-result-object v0
 
     .line 11
+    new-instance v1, Lrf0;
+
     .line 12
-    iget-object p1, v0, LFx2;->b:Ljava/lang/Object;
-
     .line 13
+    iget-boolean v2, p0, LbVj;->c:Z
+
     .line 14
-    check-cast p1, Ll8k;
-
     .line 15
+    const/16 v3, 0x19
+
     .line 16
-    sget v0, Ll8k;->t:I
-
     .line 17
-    .line 18
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v1, v2, p1, v3}, Lrf0;-><init>(ZLjava/lang/Object;I)V
 
+    .line 18
     .line 19
     .line 20
-    .line 21
-    return-void
+    iget-object p1, p0, LbVj;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 21
     .line 22
-    :pswitch_0
-    check-cast p1, Ljava/lang/String;
+    invoke-static {v0, v1, p1}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 23
     .line 24
-    check-cast v0, Lio/reactivex/rxjava3/core/SingleEmitter;
-
     .line 25
-    .line 26
-    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
-
-    .line 27
-    .line 28
-    .line 29
+    :cond_0
     return-void
+.end method
 
-    .line 30
-    nop
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
 
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/venueeditor/VenueEditorDismissCallback;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
 .end method

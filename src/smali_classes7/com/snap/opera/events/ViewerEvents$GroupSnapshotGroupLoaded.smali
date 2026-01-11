@@ -1,29 +1,29 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LJF8;
+.field public final b:LNM8;
 
-.field public final c:LOXc;
+.field public final c:LJcd;
 
 
 # direct methods
-.method public constructor <init>(LJF8;LOXc;)V
+.method public constructor <init>(LNM8;LJcd;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LJF8;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LNM8;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LOXc;
+    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LJcd;
 
     .line 7
     .line 8
@@ -49,11 +49,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;
 
-    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LJF8;
+    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LNM8;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LJF8;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LNM8;
 
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -62,11 +62,11 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LOXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LJcd;
 
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LOXc;
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LJcd;
 
-    invoke-static {v0, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -87,7 +87,7 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LJF8;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LNM8;
 
     if-nez v0, :cond_0
 
@@ -96,14 +96,14 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v0}, LJF8;->hashCode()I
+    invoke-virtual {v0}, LNM8;->hashCode()I
 
     move-result v0
 
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LJcd;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -123,7 +123,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LJF8;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->b:LNM8;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -131,7 +131,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$GroupSnapshotGroupLoaded;->c:LJcd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

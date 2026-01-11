@@ -1,84 +1,61 @@
-.class public final LrL8;
-.super LtL8;
+.class public final synthetic LrL8;
+.super LPAe;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:I
-
-.field public b:I
-
-.field public c:Z
+# static fields
+.field public static final e0:LrL8;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LrL8;
 
     .line 2
     .line 3
-    .line 4
-    iput p1, p0, LrL8;->a:I
+    const-string v1, "getKey()Ljava/lang/String;"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
+    const-class v3, LHJ8;
+
+    .line 7
+    .line 8
+    const-string v4, "key"
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v3, v4, v1, v2}, LPAe;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, LrL8;->e0:LrL8;
+
+    .line 14
+    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 1
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-boolean v0, p0, LrL8;->c:Z
+    check-cast p1, LHJ8;
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final b()V
-    .locals 3
-
-    .line 1
-    iget-boolean v0, p0, LrL8;->c:Z
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
+    iget-object p1, p1, LHJ8;->b:Ljava/lang/String;
 
     .line 4
     .line 5
-    iget v0, p0, LrL8;->b:I
-
-    .line 6
-    .line 7
-    const/4 v1, 0x1
-
-    .line 8
-    add-int/2addr v0, v1
-
-    .line 9
-    iput v0, p0, LrL8;->b:I
-
-    .line 10
-    .line 11
-    iget v2, p0, LrL8;->a:I
-
-    .line 12
-    .line 13
-    if-lt v0, v2, :cond_0
-
-    .line 14
-    .line 15
-    iput-boolean v1, p0, LrL8;->c:Z
-
-    .line 16
-    .line 17
-    :cond_0
-    return-void
+    return-object p1
 .end method

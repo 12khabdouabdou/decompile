@@ -1,223 +1,104 @@
-.class public final Llz3;
+.class public abstract synthetic Llz3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Z
-
-.field public final synthetic c:Lmz3;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lmz3;ZI)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput p3, p0, Llz3;->a:I
-
-    iput-object p1, p0, Llz3;->c:Lmz3;
-
-    iput-boolean p2, p0, Llz3;->b:Z
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(ZLmz3;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Llz3;->a:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-boolean p1, p0, Llz3;->b:Z
-
-    iput-object p2, p0, Llz3;->c:Lmz3;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 8
-
-    .line 1
-    iget v0, p0, Llz3;->a:I
+    invoke-static {}, Lfh7;->values()[Lfh7;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    move-result-object v0
+
     .line 5
+    array-length v0, v0
+
     .line 6
-    iget-object v0, p0, Llz3;->c:Lmz3;
+    new-array v0, v0, [I
 
     .line 7
     .line 8
-    new-instance v1, LwEd;
+    :try_start_0
+    sget-object v1, Lfh7;->q0:Lfh7;
 
     .line 9
     .line 10
-    iget-boolean v4, p0, Llz3;->b:Z
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 11
     .line 12
-    const/4 v5, 0x0
-
     .line 13
-    iget-object v2, v0, Lmz3;->t:LcSa;
+    move-result v1
 
     .line 14
+    const/4 v2, 0x1
+
     .line 15
-    const/4 v3, 0x0
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
-    const/16 v6, 0x10
-
     .line 17
-    .line 18
-    invoke-direct/range {v1 .. v6}, LwEd;-><init>(LcSa;ZZLPpc;I)V
+    :catch_0
+    :try_start_1
+    sget-object v1, Lfh7;->r1:Lfh7;
 
+    .line 18
     .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 20
     .line 21
-    iget-object v0, v0, Lmz3;->X:LTqc;
-
     .line 22
+    move-result v1
+
     .line 23
-    invoke-virtual {v0, v1}, LTqc;->H(LOpc;)V
+    const/4 v2, 0x2
 
     .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
     .line 25
     .line 26
-    return-void
+    :catch_1
+    :try_start_2
+    sget-object v1, Lfh7;->Z:Lfh7;
 
     .line 27
-    :pswitch_0
-    iget-object v0, p0, Llz3;->c:Lmz3;
-
     .line 28
-    .line 29
-    iget-object v0, v0, Lmz3;->X:LTqc;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 29
     .line 30
     .line 31
-    iget-boolean v1, p0, Llz3;->b:Z
+    move-result v1
 
     .line 32
+    const/4 v2, 0x3
+
     .line 33
-    invoke-virtual {v0, v1}, LTqc;->F(Z)V
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 34
     .line 35
+    :catch_2
+    sput-object v0, Llz3;->a:[I
+
     .line 36
-    return-void
-
     .line 37
-    :pswitch_1
-    iget-boolean v0, p0, Llz3;->b:Z
-
-    .line 38
-    .line 39
-    iget-object v1, p0, Llz3;->c:Lmz3;
-
-    .line 40
-    .line 41
-    if-eqz v0, :cond_0
-
-    .line 42
-    .line 43
-    iget-object v0, v1, Lmz3;->i0:LNy3;
-
-    .line 44
-    .line 45
-    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 46
-    .line 47
-    iput-object v1, v0, LNy3;->d:Ljava/lang/Boolean;
-
-    .line 48
-    .line 49
-    goto :goto_0
-
-    .line 50
-    :cond_0
-    iget-object v0, v1, Lmz3;->i0:LNy3;
-
-    .line 51
-    .line 52
-    const/4 v1, 0x0
-
-    .line 53
-    iput-object v1, v0, LNy3;->d:Ljava/lang/Boolean;
-
-    .line 54
-    .line 55
-    :goto_0
     return-void
-
-    .line 56
-    :pswitch_2
-    iget-object v0, p0, Llz3;->c:Lmz3;
-
-    .line 57
-    .line 58
-    iget-object v1, v0, Lmz3;->X:LTqc;
-
-    .line 59
-    .line 60
-    new-instance v2, LwEd;
-
-    .line 61
-    .line 62
-    iget-boolean v5, p0, Llz3;->b:Z
-
-    .line 63
-    .line 64
-    const/4 v6, 0x0
-
-    .line 65
-    iget-object v3, v0, Lmz3;->c:LcSa;
-
-    .line 66
-    .line 67
-    const/4 v4, 0x1
-
-    .line 68
-    const/16 v7, 0x10
-
-    .line 69
-    .line 70
-    invoke-direct/range {v2 .. v7}, LwEd;-><init>(LcSa;ZZLPpc;I)V
-
-    .line 71
-    .line 72
-    .line 73
-    invoke-virtual {v1, v2}, LTqc;->H(LOpc;)V
-
-    .line 74
-    .line 75
-    .line 76
-    return-void
-
-    .line 77
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

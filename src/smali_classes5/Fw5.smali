@@ -1,159 +1,123 @@
-.class public abstract LFw5;
+.class public final LFw5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LCu9;
 
-# static fields
-.field public static final a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
-.field public static final b:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+# instance fields
+.field public final a:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public static final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+.field public final b:Lki0;
 
-.field public static final d:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>()V
+    .locals 3
 
     .line 1
-    sget-object v0, LXa7;->a:LXa7;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
     .line 4
-    .line 5
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+    new-instance v0, Lio/reactivex/rxjava3/subjects/PublishSubject;
 
+    .line 5
     .line 6
+    invoke-direct {v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+
     .line 7
     .line 8
-    sput-object v1, LFw5;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
     .line 9
+    iput-object v0, p0, LFw5;->a:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 10
-    sget-object v0, LZa7;->a:LZa7;
-
     .line 11
-    .line 12
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    new-instance v1, Lki0;
 
+    .line 12
     .line 13
+    const/4 v2, 0x5
+
     .line 14
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v1, v0, v2}, Lki0;-><init>(Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
 
     .line 15
     .line 16
     .line 17
-    sput-object v1, LFw5;->b:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    iput-object v1, p0, LFw5;->b:Lki0;
 
     .line 18
     .line 19
-    sget-object v0, LYa7;->a:LYa7;
+    new-instance v0, LWi4;
 
     .line 20
     .line 21
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    const/16 v1, 0x19
 
     .line 22
     .line 23
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LWi4;-><init>(ILjava/lang/Object;)V
 
     .line 24
     .line 25
     .line 26
-    sput-object v1, LFw5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
 
     .line 27
     .line 28
-    sget-object v0, LYa7;->b:LYa7;
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
 
     .line 29
     .line 30
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
     .line 31
-    .line 32
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
 
+    .line 32
     .line 33
     .line 34
+    move-result-object v0
+
     .line 35
-    sput-object v1, LFw5;->d:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->g1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 36
     .line 37
+    .line 38
+    move-result-object v0
+
+    .line 39
+    iput-object v0, p0, LFw5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 40
+    .line 41
     return-void
 .end method
 
-.method public static final a(LUa7;Lo09;)Lfb7;
+
+# virtual methods
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
     .locals 1
 
     .line 1
-    sget-object v0, LNa7;->a:LNa7;
+    iget-object v0, p0, LFw5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 2
     .line 3
-    invoke-static {p0, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    return-object v0
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+.method public final j()Lio/reactivex/rxjava3/functions/Consumer;
+    .locals 1
 
-    .line 7
-    if-eqz v0, :cond_0
+    .line 1
+    iget-object v0, p0, LFw5;->b:Lki0;
 
-    .line 8
-    .line 9
-    new-instance p0, Lcb7;
-
-    .line 10
-    .line 11
-    invoke-direct {p0, p1}, Lcb7;-><init>(Lo09;)V
-
-    .line 12
-    .line 13
-    .line 14
-    return-object p0
-
-    .line 15
-    :cond_0
-    sget-object v0, LTa7;->a:LTa7;
-
-    .line 16
-    .line 17
-    invoke-static {p0, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p0
-
-    .line 21
-    if-eqz p0, :cond_1
-
-    .line 22
-    .line 23
-    new-instance p0, Ldb7;
-
-    .line 24
-    .line 25
-    invoke-direct {p0, p1}, Ldb7;-><init>(Lo09;)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-object p0
-
-    .line 29
-    :cond_1
-    sget-object p0, LXa7;->a:LXa7;
-
-    .line 30
-    .line 31
-    return-object p0
+    .line 2
+    .line 3
+    return-object v0
 .end method

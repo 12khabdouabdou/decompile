@@ -1,18 +1,68 @@
-.class public abstract synthetic LIH2;
+.class public final LIH2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+.field public static final b:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+.field public static final c:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     .line 1
-    invoke-static {}, Lq0h;->values()[Lq0h;
+    new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, LIH2;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    .line 7
+    .line 8
+    new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    .line 9
+    .line 10
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, LIH2;->b:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    .line 14
+    .line 15
+    new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    .line 16
+    .line 17
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    sput-object v0, LIH2;->c:Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    .line 21
+    .line 22
+    return-void
+.end method
+
+.method public static a(Landroid/content/Context;JZ)Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     .line 2
     .line 3
@@ -20,65 +70,61 @@
     move-result-object v0
 
     .line 5
-    array-length v0, v0
+    sget-object v1, Ljava/util/Locale;->CANADA:Ljava/util/Locale;
 
     .line 6
-    new-array v0, v0, [I
-
     .line 7
-    .line 8
-    :try_start_0
-    sget-object v1, Lq0h;->C0:Lq0h;
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 8
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    move-result v1
 
     .line 11
-    .line 12
-    .line 13
-    move-result v1
-
-    .line 14
     const/4 v2, 0x1
 
+    .line 12
+    if-eqz v1, :cond_0
+
+    .line 13
+    .line 14
+    const/4 v1, 0x1
+
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    goto :goto_0
 
     .line 16
+    :cond_0
+    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lq0h;->F0:Lq0h;
-
     .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     move-result v1
 
-    .line 23
-    const/4 v2, 0x2
+    .line 22
+    :goto_0
+    if-eqz v1, :cond_1
 
+    .line 23
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    const/4 v1, 0x1
 
     .line 25
+    goto :goto_1
+
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lq0h;->z0:Lq0h;
+    :cond_1
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     .line 27
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
@@ -86,207 +132,281 @@
     move-result v1
 
     .line 32
-    const/4 v2, 0x3
+    :goto_1
+    if-eqz v1, :cond_2
 
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
     .line 34
+    goto :goto_2
+
     .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, Lq0h;->I0:Lq0h;
+    :cond_2
+    sget-object v1, Ljava/util/Locale;->UK:Ljava/util/Locale;
 
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 38
     .line 39
     .line 40
-    move-result v1
+    move-result v2
 
     .line 41
-    const/4 v2, 0x4
+    :goto_2
+    if-eqz v2, :cond_6
 
     .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
     .line 43
+    if-eqz p3, :cond_4
+
     .line 44
-    :catch_3
-    :try_start_4
-    sget-object v1, Lq0h;->H0:Lq0h;
-
     .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sget-object p0, LIH2;->c:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
+    .line 46
     .line 47
+    invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
+
     .line 48
     .line 49
-    move-result v1
-
     .line 50
-    const/4 v2, 0x5
+    move-result-object p3
 
     .line 51
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    check-cast p3, Ljava/text/DateFormat;
 
     .line 52
     .line 53
-    :catch_4
-    :try_start_5
-    sget-object v1, Lq0h;->A0:Lq0h;
+    if-nez p3, :cond_3
 
     .line 54
     .line 55
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    new-instance p3, Ljava/text/SimpleDateFormat;
 
     .line 56
     .line 57
-    .line 58
-    move-result v1
+    const-string v0, "HH:mm"
 
+    .line 58
     .line 59
-    const/4 v2, 0x6
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     .line 60
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
     .line 61
-    .line 62
-    :catch_5
-    :try_start_6
-    sget-object v1, Lq0h;->B0:Lq0h;
+    invoke-direct {p3, v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
+    .line 62
     .line 63
     .line 64
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
 
     .line 65
     .line 66
     .line 67
-    move-result v1
+    move-result-object v0
 
     .line 68
-    const/4 v2, 0x7
+    invoke-virtual {p3, v0}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 69
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
     .line 70
     .line 71
-    :catch_6
-    :try_start_7
-    sget-object v1, Lq0h;->w0:Lq0h;
+    :cond_3
+    new-instance v0, LDpd;
 
     .line 72
     .line 73
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {v0, p0, p3}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 74
     .line 75
     .line 76
-    move-result v1
+    goto :goto_3
 
     .line 77
-    const/16 v2, 0x8
+    :cond_4
+    sget-object p0, LIH2;->b:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     .line 78
     .line 79
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    invoke-virtual {p0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
 
     .line 80
     .line 81
-    :catch_7
-    :try_start_8
-    sget-object v1, Lq0h;->G0:Lq0h;
-
     .line 82
+    move-result-object p3
+
     .line 83
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    check-cast p3, Ljava/text/DateFormat;
 
     .line 84
     .line 85
-    .line 86
-    move-result v1
+    if-nez p3, :cond_5
 
+    .line 86
     .line 87
-    const/16 v2, 0x9
+    new-instance p3, Ljava/text/SimpleDateFormat;
 
     .line 88
     .line 89
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    const-string v0, "h:mm a"
 
     .line 90
     .line 91
-    :catch_8
-    :try_start_9
-    sget-object v1, Lq0h;->D0:Lq0h;
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     .line 92
     .line 93
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {p3, v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
     .line 94
     .line 95
     .line 96
-    move-result v1
+    invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
 
     .line 97
-    const/16 v2, 0xa
-
     .line 98
     .line 99
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+    move-result-object v0
 
     .line 100
-    .line 101
-    :catch_9
-    :try_start_a
-    sget-object v1, Lq0h;->P1:Lq0h;
+    invoke-virtual {p3, v0}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
+    .line 101
     .line 102
     .line 103
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_5
+    new-instance v0, LDpd;
 
     .line 104
     .line 105
+    invoke-direct {v0, p0, p3}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
     .line 106
-    move-result v1
-
     .line 107
-    const/16 v2, 0xb
-
     .line 108
+    goto :goto_3
+
     .line 109
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+    :cond_6
+    sget-object p3, LIH2;->a:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     .line 110
     .line 111
-    :catch_a
-    sput-object v0, LIH2;->a:[I
+    invoke-virtual {p3}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
 
     .line 112
     .line 113
-    return-void
+    .line 114
+    move-result-object v0
+
+    .line 115
+    check-cast v0, Ljava/text/DateFormat;
+
+    .line 116
+    .line 117
+    if-nez v0, :cond_7
+
+    .line 118
+    .line 119
+    invoke-static {p0}, Landroid/text/format/DateFormat;->getTimeFormat(Landroid/content/Context;)Ljava/text/DateFormat;
+
+    .line 120
+    .line 121
+    .line 122
+    move-result-object v0
+
+    .line 123
+    invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object p0
+
+    .line 127
+    invoke-virtual {v0, p0}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
+
+    .line 128
+    .line 129
+    .line 130
+    :cond_7
+    new-instance p0, LDpd;
+
+    .line 131
+    .line 132
+    invoke-direct {p0, p3, v0}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 133
+    .line 134
+    .line 135
+    move-object v0, p0
+
+    .line 136
+    :goto_3
+    iget-object p0, v0, LDpd;->a:Ljava/lang/Object;
+
+    .line 137
+    .line 138
+    check-cast p0, Ljava/util/concurrent/ConcurrentLinkedQueue;
+
+    .line 139
+    .line 140
+    iget-object p3, v0, LDpd;->b:Ljava/lang/Object;
+
+    .line 141
+    .line 142
+    check-cast p3, Ljava/text/DateFormat;
+
+    .line 143
+    .line 144
+    new-instance v0, Ljava/util/Date;
+
+    .line 145
+    .line 146
+    const-wide/16 v1, 0x0
+
+    .line 147
+    .line 148
+    cmp-long v3, p1, v1
+
+    .line 149
+    .line 150
+    if-eqz v3, :cond_8
+
+    .line 151
+    .line 152
+    goto :goto_4
+
+    .line 153
+    :cond_8
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-wide p1
+
+    .line 157
+    :goto_4
+    invoke-direct {v0, p1, p2}, Ljava/util/Date;-><init>(J)V
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-virtual {p3, v0}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object p1
+
+    .line 164
+    invoke-virtual {p0, p3}, Ljava/util/concurrent/ConcurrentLinkedQueue;->add(Ljava/lang/Object;)Z
+
+    .line 165
+    .line 166
+    .line 167
+    return-object p1
 .end method

@@ -1,337 +1,195 @@
-.class public final LIe5;
-.super Lo17;
+.class public LIe5;
+.super LhPj;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:I
+.field public p0:Ljava/lang/Long;
 
-.field public b:I
-
-.field public c:J
+.field public q0:LJe5;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    sget-object v2, LoJe;->t:LoJe;
 
     .line 2
     .line 3
-    .line 4
-    const/4 v0, 0x0
+    const-string v1, "DATA_SAVER_ENABLE_EVENT"
 
+    .line 4
     .line 5
-    iput v0, p0, LIe5;->a:I
+    const-wide v3, 0x3fb999999999999aL    # 0.1
 
     .line 6
     .line 7
-    iput v0, p0, LIe5;->b:I
-
     .line 8
     .line 9
-    const-wide/16 v0, 0x0
-
     .line 10
-    .line 11
-    iput-wide v0, p0, LIe5;->c:J
+    const-wide v5, 0x3fb999999999999aL    # 0.1
 
+    .line 11
     .line 12
     .line 13
-    const/4 v0, 0x0
-
     .line 14
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
     .line 15
-    .line 16
-    const/4 v0, -0x1
+    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
 
+    .line 16
     .line 17
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+    move-object v0, p0
 
     .line 18
+    invoke-direct/range {v0 .. v8}, LEV6;-><init>(Ljava/lang/String;LoJe;DDD)V
+
     .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 5
+.method public final d(LeO3;Ljava/util/Set;)V
+    .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    const/4 v0, 0x1
 
     .line 2
+    new-array v0, v0, [B
+
     .line 3
     .line 4
-    move-result v0
+    const/4 v1, 0x2
 
     .line 5
-    iget v1, p0, LIe5;->a:I
+    iget-object v2, p0, LIe5;->p0:Ljava/lang/Long;
 
     .line 6
     .line 7
-    const/4 v2, 0x1
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
 
     .line 8
-    and-int/2addr v1, v2
-
     .line 9
-    if-eqz v1, :cond_0
-
     .line 10
+    const/4 v1, 0x3
+
     .line 11
-    iget v1, p0, LIe5;->b:I
+    iget-object v2, p0, LIe5;->q0:LJe5;
 
     .line 12
     .line 13
-    invoke-static {v2, v1}, Lsa3;->i(II)I
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->W(LeO3;I[BLUT6;Ljava/util/Set;)V
 
     .line 14
     .line 15
     .line 16
-    move-result v1
+    invoke-virtual {p1, v0}, LeO3;->k([B)V
 
     .line 17
-    add-int/2addr v0, v1
-
     .line 18
-    :cond_0
-    iget v1, p0, LIe5;->a:I
-
     .line 19
-    .line 20
-    const/4 v2, 0x2
+    return-void
+.end method
 
-    .line 21
-    and-int/2addr v1, v2
+.method public final e()I
+    .locals 1
 
-    .line 22
-    if-eqz v1, :cond_1
+    .line 1
+    const/16 v0, 0x2ba
 
-    .line 23
-    .line 24
-    iget-wide v3, p0, LIe5;->c:J
-
-    .line 25
-    .line 26
-    invoke-static {v2, v3, v4}, Lsa3;->k(IJ)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v1
-
-    .line 30
-    add-int/2addr v1, v0
-
-    .line 31
-    return v1
-
-    .line 32
-    :cond_1
+    .line 2
+    .line 3
     return v0
 .end method
 
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
+.method public final g(Ljava/util/Map;)V
+    .locals 3
 
     .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    iget-object v0, p0, LIe5;->p0:Ljava/lang/Long;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    if-eqz v0, :cond_0
 
+    .line 4
     .line 5
-    if-eqz v0, :cond_3
+    const-string v1, "data_saver_enable_duration_ms"
 
     .line 6
     .line 7
-    const/16 v1, 0x8
+    move-object v2, p1
 
     .line 8
+    check-cast v2, Ljava/util/HashMap;
+
     .line 9
-    if-eq v0, v1, :cond_2
-
     .line 10
-    .line 11
-    const/16 v1, 0x10
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 11
     .line 12
     .line 13
-    if-eq v0, v1, :cond_1
+    :cond_0
+    iget-object v0, p0, LIe5;->q0:LJe5;
 
     .line 14
     .line 15
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    if-eqz v0, :cond_1
 
     .line 16
     .line 17
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 18
-    move-result v0
-
     .line 19
-    if-nez v0, :cond_0
-
     .line 20
+    move-result-object v0
+
     .line 21
-    goto :goto_1
+    move-object v1, p1
 
     .line 22
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->r()J
+    check-cast v1, Ljava/util/HashMap;
 
     .line 23
     .line 24
-    .line 25
-    move-result-wide v0
+    const-string v2, "data_saver_enable_reason"
 
+    .line 25
     .line 26
-    iput-wide v0, p0, LIe5;->c:J
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 27
     .line 28
-    iget v0, p0, LIe5;->a:I
-
     .line 29
-    .line 30
-    or-int/lit8 v0, v0, 0x2
+    :cond_1
+    invoke-super {p0, p1}, LhPj;->g(Ljava/util/Map;)V
 
+    .line 30
     .line 31
     .line 32
-    iput v0, p0, LIe5;->a:I
+    iget-object v0, p0, LEV6;->b:Ljava/lang/String;
 
     .line 33
     .line 34
-    goto :goto_0
+    check-cast p1, Ljava/util/HashMap;
 
     .line 35
-    :cond_2
-    invoke-virtual {p1}, Lqa3;->q()I
-
     .line 36
+    const-string v1, "event_name"
+
     .line 37
     .line 38
-    move-result v0
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
-    packed-switch v0, :pswitch_data_0
-
     .line 40
     .line 41
-    .line 42
-    goto :goto_0
-
-    .line 43
-    :pswitch_0
-    iput v0, p0, LIe5;->b:I
-
-    .line 44
-    .line 45
-    iget v0, p0, LIe5;->a:I
-
-    .line 46
-    .line 47
-    or-int/lit8 v0, v0, 0x1
-
-    .line 48
-    .line 49
-    iput v0, p0, LIe5;->a:I
-
-    .line 50
-    .line 51
-    goto :goto_0
-
-    .line 52
-    :cond_3
-    :goto_1
-    return-object p0
-
-    .line 53
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final writeTo(Lsa3;)V
-    .locals 4
-
-    .line 1
-    iget v0, p0, LIe5;->a:I
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    and-int/2addr v0, v1
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget v0, p0, LIe5;->b:I
-
-    .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->I(II)V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    iget v0, p0, LIe5;->a:I
-
-    .line 13
-    .line 14
-    const/4 v1, 0x2
-
-    .line 15
-    and-int/2addr v0, v1
-
-    .line 16
-    if-eqz v0, :cond_1
-
-    .line 17
-    .line 18
-    iget-wide v2, p0, LIe5;->c:J
-
-    .line 19
-    .line 20
-    invoke-virtual {p1, v1, v2, v3}, Lsa3;->J(IJ)V
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 24
-    .line 25
-    .line 26
     return-void
 .end method

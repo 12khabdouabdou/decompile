@@ -3,78 +3,66 @@
 .source "SourceFile"
 
 
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "LUi3;",
+        ">;"
+    }
+.end annotation
+
+
 # static fields
 .field public static final enum a:LUi3;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "LIKE"
+    .end annotation
+.end field
 
-.field public static final enum b:LUi3;
-
-.field public static final synthetic c:[LUi3;
+.field public static final synthetic b:[LUi3;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 3
 
     .line 1
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     .line 2
-    const/4 v1, 0x0
+    new-instance v1, LUi3;
 
     .line 3
-    new-instance v2, LUi3;
-
     .line 4
+    const-string v2, "LIKE"
+
     .line 5
-    const-string v3, "LIVE"
-
     .line 6
-    .line 7
-    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 7
     .line 8
     .line 9
-    .line 10
-    sput-object v2, LUi3;->a:LUi3;
+    sput-object v1, LUi3;->a:LUi3;
 
+    .line 10
     .line 11
+    const/4 v2, 0x1
+
     .line 12
-    new-instance v3, LUi3;
+    new-array v2, v2, [LUi3;
 
     .line 13
     .line 14
-    const-string v4, "PENDING"
+    aput-object v1, v2, v0
 
     .line 15
     .line 16
-    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v2, LUi3;->b:[LUi3;
 
     .line 17
     .line 18
-    .line 19
-    sput-object v3, LUi3;->b:LUi3;
-
-    .line 20
-    .line 21
-    const/4 v4, 0x2
-
-    .line 22
-    new-array v4, v4, [LUi3;
-
-    .line 23
-    .line 24
-    aput-object v2, v4, v1
-
-    .line 25
-    .line 26
-    aput-object v3, v4, v0
-
-    .line 27
-    .line 28
-    sput-object v4, LUi3;->c:[LUi3;
-
-    .line 29
-    .line 30
     return-void
 .end method
 
@@ -105,7 +93,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, LUi3;->c:[LUi3;
+    sget-object v0, LUi3;->b:[LUi3;
 
     .line 2
     .line 3

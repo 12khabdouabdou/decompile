@@ -1,29 +1,14 @@
-.class public final LGL6;
+.class public interface abstract LGL6;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LGL6;
+# virtual methods
+.method public abstract a()Ljava/lang/String;
+.end method
 
+.method public abstract b(Luzb;LoL6;IZ)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, LGL6;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LGL6;->a:LGL6;
-
-    .line 7
-    .line 8
-    return-void
+.method public abstract c(IILoL6;Luzb;Z)Lio/reactivex/rxjava3/core/Completable;
 .end method

@@ -149,7 +149,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopChatSticker;->bloopId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -162,7 +162,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopChatSticker;->qsiBloopsId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -175,7 +175,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopChatSticker;->scenarioId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -188,7 +188,7 @@
 
     iget-object p1, p1, Lapp/aifactory/sdk/api/model/BloopChatSticker;->externalScenarioId:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -306,7 +306,7 @@
 
     .line 26
     .line 27
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 28
     .line 29

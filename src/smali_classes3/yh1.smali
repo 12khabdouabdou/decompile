@@ -1,49 +1,38 @@
-.class public abstract synthetic Lyh1;
+.class public abstract Lyh1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final synthetic a:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     .line 1
-    invoke-static {}, LEh1;->values()[LEh1;
+    sget-object v0, LEe1;->Z:LEe1;
 
     .line 2
     .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    const-string v0, "BlizzardSnapTokenProvider"
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 9
-    const/4 v2, 0x0
-
     .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 11
-    .line 12
-    :catch_0
-    sput-object v0, Lyh1;->a:[I
+    sget-object v0, LJp0;->a:LJp0;
 
+    .line 12
     .line 13
-    .line 14
     return-void
 .end method

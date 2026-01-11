@@ -1,602 +1,286 @@
-.class public final LvR1;
-.super Landroid/hardware/camera2/CameraDevice$StateCallback;
+.class public final enum LvR1;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
 # static fields
-.field public static final d:Ll2k;
+.field public static final enum X:LvR1;
 
+.field public static final enum Y:LvR1;
 
-# instance fields
-.field public final a:Landroid/hardware/camera2/CameraDevice$StateCallback;
+.field public static final enum Z:LvR1;
 
-.field public b:LtL0;
+.field public static final enum a:LvR1;
 
-.field public final c:Ljava/util/concurrent/CountDownLatch;
+.field public static final enum b:LvR1;
+
+.field public static final enum c:LvR1;
+
+.field public static final enum e0:LvR1;
+
+.field public static final synthetic f0:[LvR1;
+
+.field public static final enum t:LvR1;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 17
 
     .line 1
-    new-instance v0, Ll2k;
+    const/4 v0, 0x7
 
     .line 2
+    const/4 v1, 0x6
+
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x5
 
     .line 4
-    .line 5
-    .line 6
-    sput-object v0, LvR1;->d:Ll2k;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/hardware/camera2/CameraDevice$StateCallback;)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Landroid/hardware/camera2/CameraDevice$StateCallback;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LvR1;->a:Landroid/hardware/camera2/CameraDevice$StateCallback;
+    const/4 v3, 0x4
 
     .line 5
+    const/4 v4, 0x3
+
     .line 6
-    sget-object p1, LrZ1;->Z:LrZ1;
+    const/4 v5, 0x2
 
     .line 7
+    const/4 v6, 0x1
+
     .line 8
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v7, 0x0
 
     .line 9
+    new-instance v8, LvR1;
+
     .line 10
     .line 11
-    const-string p1, "Camera2DeviceStateInterceptor"
+    const-string v9, "REGISTER"
 
     .line 12
     .line 13
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    invoke-direct {v8, v9, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 14
     .line 15
     .line 16
-    sget-object p1, Lrn0;->a:Lrn0;
+    sput-object v8, LvR1;->a:LvR1;
 
     .line 17
     .line 18
-    new-instance p1, Ljava/util/concurrent/CountDownLatch;
+    new-instance v9, LvR1;
 
     .line 19
     .line 20
-    const/4 v0, 0x1
+    const-string v10, "RETRIEVE"
 
     .line 21
-    invoke-direct {p1, v0}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
-
     .line 22
+    invoke-direct {v9, v10, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 23
     .line 24
-    iput-object p1, p0, LvR1;->c:Ljava/util/concurrent/CountDownLatch;
-
     .line 25
+    sput-object v9, LvR1;->b:LvR1;
+
     .line 26
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()V
-    .locals 6
-
-    .line 1
-    sget-object v0, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v1, "Camera2DeviceStateInterceptor.forward"
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, LWRg;->d(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    :try_start_0
-    iget-object v2, p0, LvR1;->b:LtL0;
-
-    .line 10
-    .line 11
-    if-eqz v2, :cond_3
-
-    .line 12
-    .line 13
-    iget-object v3, v2, LtL0;->b:Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    check-cast v3, Landroid/hardware/camera2/CameraDevice;
-
-    .line 16
-    .line 17
-    iget-object v4, p0, LvR1;->a:Landroid/hardware/camera2/CameraDevice$StateCallback;
-
-    .line 18
-    .line 19
-    instance-of v5, v2, LuR1;
-
-    .line 20
-    .line 21
-    if-eqz v5, :cond_0
-
-    .line 22
-    .line 23
-    invoke-virtual {v4, v3}, Landroid/hardware/camera2/CameraDevice$StateCallback;->onOpened(Landroid/hardware/camera2/CameraDevice;)V
-
-    .line 24
-    .line 25
-    .line 26
-    goto :goto_0
-
     .line 27
-    :cond_0
-    instance-of v5, v2, LsR1;
+    new-instance v10, LvR1;
 
     .line 28
     .line 29
-    if-eqz v5, :cond_1
+    const-string v11, "QUERY"
 
     .line 30
     .line 31
-    invoke-virtual {v4, v3}, Landroid/hardware/camera2/CameraDevice$StateCallback;->onDisconnected(Landroid/hardware/camera2/CameraDevice;)V
+    invoke-direct {v10, v11, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 32
     .line 33
     .line 34
-    goto :goto_0
+    sput-object v10, LvR1;->c:LvR1;
 
     .line 35
-    :cond_1
-    instance-of v5, v2, LtR1;
-
     .line 36
+    new-instance v11, LvR1;
+
     .line 37
-    if-eqz v5, :cond_2
-
     .line 38
+    const-string v12, "QUERY_ASYNC"
+
     .line 39
-    check-cast v2, LtR1;
-
     .line 40
-    .line 41
-    invoke-virtual {v2}, LtR1;->y()I
+    invoke-direct {v11, v12, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 41
     .line 42
     .line 43
-    .line 44
-    move-result v2
+    sput-object v11, LvR1;->t:LvR1;
 
+    .line 44
     .line 45
-    invoke-virtual {v4, v3, v2}, Landroid/hardware/camera2/CameraDevice$StateCallback;->onError(Landroid/hardware/camera2/CameraDevice;I)V
+    new-instance v12, LvR1;
 
     .line 46
     .line 47
+    const-string v13, "RELEASE"
+
     .line 48
-    :cond_2
-    :goto_0
-    sget-object v2, Li7j;->a:Li7j;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 49
+    invoke-direct {v12, v13, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 50
-    goto :goto_1
-
     .line 51
-    :catchall_0
-    move-exception v0
-
     .line 52
-    goto :goto_2
+    sput-object v12, LvR1;->X:LvR1;
 
     .line 53
-    :cond_3
-    const/4 v2, 0x0
-
     .line 54
-    :goto_1
-    if-eqz v2, :cond_4
+    new-instance v13, LvR1;
 
     .line 55
     .line 56
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    const-string v14, "REMOVE"
 
     .line 57
     .line 58
+    invoke-direct {v13, v14, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 59
-    return-void
-
     .line 60
-    :cond_4
-    :try_start_1
-    new-instance v0, Ljava/lang/IllegalStateException;
-
     .line 61
+    sput-object v13, LvR1;->Y:LvR1;
+
     .line 62
-    const-string v2, "Camera2DeviceStateInterceptor.forward failed. No device state is intercepted."
-
     .line 63
-    .line 64
-    invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    new-instance v14, LvR1;
 
+    .line 64
     .line 65
+    const-string v15, "QUERY_CACHED_METADATA_ASYNC"
+
     .line 66
     .line 67
-    throw v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    invoke-direct {v14, v15, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 68
-    :goto_2
-    sget-object v2, LXRg;->b:Lzhi;
-
     .line 69
     .line 70
-    if-eqz v2, :cond_5
+    sput-object v14, LvR1;->Z:LvR1;
 
     .line 71
     .line 72
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    new-instance v15, LvR1;
 
     .line 73
     .line 74
+    const/16 v16, 0x6
+
     .line 75
-    :cond_5
-    throw v0
+    .line 76
+    const-string v1, "RETRIEVE_STREAMING"
+
+    .line 77
+    .line 78
+    invoke-direct {v15, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 79
+    .line 80
+    .line 81
+    sput-object v15, LvR1;->e0:LvR1;
+
+    .line 82
+    .line 83
+    const/16 v1, 0x8
+
+    .line 84
+    .line 85
+    new-array v1, v1, [LvR1;
+
+    .line 86
+    .line 87
+    aput-object v8, v1, v7
+
+    .line 88
+    .line 89
+    aput-object v9, v1, v6
+
+    .line 90
+    .line 91
+    aput-object v10, v1, v5
+
+    .line 92
+    .line 93
+    aput-object v11, v1, v4
+
+    .line 94
+    .line 95
+    aput-object v12, v1, v3
+
+    .line 96
+    .line 97
+    aput-object v13, v1, v2
+
+    .line 98
+    .line 99
+    aput-object v14, v1, v16
+
+    .line 100
+    .line 101
+    aput-object v15, v1, v0
+
+    .line 102
+    .line 103
+    sput-object v1, LvR1;->f0:[LvR1;
+
+    .line 104
+    .line 105
+    return-void
 .end method
 
-.method public final onDisconnected(Landroid/hardware/camera2/CameraDevice;)V
-    .locals 7
+.method public static valueOf(Ljava/lang/String;)LvR1;
+    .locals 1
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    const-class v0, LvR1;
 
     .line 2
     .line 3
-    const-string v1, "Camera2DeviceStateInterceptor.onDisconnected"
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->d(Ljava/lang/String;)I
-
     .line 6
+    move-result-object p0
+
     .line 7
+    check-cast p0, LvR1;
+
     .line 8
-    move-result v1
-
     .line 9
-    :try_start_0
-    new-instance v2, LsR1;
-
-    .line 10
-    .line 11
-    invoke-direct {v2, p1}, LsR1;-><init>(Landroid/hardware/camera2/CameraDevice;)V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object v2, p0, LvR1;->b:LtL0;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 15
-    .line 16
-    iget-object p1, p0, LvR1;->c:Ljava/util/concurrent/CountDownLatch;
-
-    .line 17
-    .line 18
-    :try_start_1
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->getCount()J
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-wide v2
-
-    .line 22
-    const-wide/16 v4, 0x0
-
-    .line 23
-    .line 24
-    cmp-long v6, v2, v4
-
-    .line 25
-    .line 26
-    if-lez v6, :cond_0
-
-    .line 27
-    .line 28
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
-
-    .line 29
-    .line 30
-    .line 31
-    goto :goto_0
-
-    .line 32
-    :catchall_0
-    move-exception p1
-
-    .line 33
-    goto :goto_1
-
-    .line 34
-    :cond_0
-    invoke-virtual {p0}, LvR1;->a()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 35
-    .line 36
-    .line 37
-    :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-
-    .line 41
-    :goto_1
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 42
-    .line 43
-    if-eqz v0, :cond_1
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
-
-    .line 46
-    .line 47
-    .line 48
-    :cond_1
-    throw p1
+    return-object p0
 .end method
 
-.method public final onError(Landroid/hardware/camera2/CameraDevice;I)V
-    .locals 6
+.method public static values()[LvR1;
+    .locals 1
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LvR1;->f0:[LvR1;
 
     .line 2
     .line 3
-    const-string v1, "Camera2DeviceStateInterceptor.onError"
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->d(Ljava/lang/String;)I
-
     .line 6
+    move-result-object v0
+
     .line 7
+    check-cast v0, [LvR1;
+
     .line 8
-    move-result v1
-
     .line 9
-    :try_start_0
-    new-instance v2, LtR1;
-
-    .line 10
-    .line 11
-    invoke-direct {v2, p1, p2}, LtR1;-><init>(Landroid/hardware/camera2/CameraDevice;I)V
-
-    .line 12
-    .line 13
-    .line 14
-    iput-object v2, p0, LvR1;->b:LtL0;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 15
-    .line 16
-    iget-object p1, p0, LvR1;->c:Ljava/util/concurrent/CountDownLatch;
-
-    .line 17
-    .line 18
-    :try_start_1
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->getCount()J
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-wide v2
-
-    .line 22
-    const-wide/16 v4, 0x0
-
-    .line 23
-    .line 24
-    cmp-long p2, v2, v4
-
-    .line 25
-    .line 26
-    if-lez p2, :cond_0
-
-    .line 27
-    .line 28
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
-
-    .line 29
-    .line 30
-    .line 31
-    goto :goto_0
-
-    .line 32
-    :catchall_0
-    move-exception p1
-
-    .line 33
-    goto :goto_1
-
-    .line 34
-    :cond_0
-    invoke-virtual {p0}, LvR1;->a()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 35
-    .line 36
-    .line 37
-    :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-
-    .line 41
-    :goto_1
-    sget-object p2, LXRg;->b:Lzhi;
-
-    .line 42
-    .line 43
-    if-eqz p2, :cond_1
-
-    .line 44
-    .line 45
-    invoke-virtual {p2, v1}, Lzhi;->o(I)V
-
-    .line 46
-    .line 47
-    .line 48
-    :cond_1
-    throw p1
-.end method
-
-.method public final onOpened(Landroid/hardware/camera2/CameraDevice;)V
-    .locals 7
-
-    .line 1
-    sget-object v0, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v1, "Camera2DeviceStateInterceptor.onOpened"
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, LWRg;->d(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    :try_start_0
-    new-instance v2, LuR1;
-
-    .line 10
-    .line 11
-    const/4 v3, 0x1
-
-    .line 12
-    invoke-direct {v2, v3, p1}, LtL0;-><init>(ILjava/lang/Object;)V
-
-    .line 13
-    .line 14
-    .line 15
-    iput-object v2, p0, LvR1;->b:LtL0;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 16
-    .line 17
-    iget-object p1, p0, LvR1;->c:Ljava/util/concurrent/CountDownLatch;
-
-    .line 18
-    .line 19
-    :try_start_1
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->getCount()J
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-wide v2
-
-    .line 23
-    const-wide/16 v4, 0x0
-
-    .line 24
-    .line 25
-    cmp-long v6, v2, v4
-
-    .line 26
-    .line 27
-    if-lez v6, :cond_0
-
-    .line 28
-    .line 29
-    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
-
-    .line 30
-    .line 31
-    .line 32
-    goto :goto_0
-
-    .line 33
-    :catchall_0
-    move-exception p1
-
-    .line 34
-    goto :goto_1
-
-    .line 35
-    :cond_0
-    invoke-virtual {p0}, LvR1;->a()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 36
-    .line 37
-    .line 38
-    :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
-
-    .line 39
-    .line 40
-    .line 41
-    return-void
-
-    .line 42
-    :goto_1
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 43
-    .line 44
-    if-eqz v0, :cond_1
-
-    .line 45
-    .line 46
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
-
-    .line 47
-    .line 48
-    .line 49
-    :cond_1
-    throw p1
+    return-object v0
 .end method

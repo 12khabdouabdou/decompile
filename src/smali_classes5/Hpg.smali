@@ -1,123 +1,177 @@
 .class public final LHpg;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
-# interfaces
-.implements LWlb;
 
+# static fields
+.field public static final Z:LHpg;
 
-# instance fields
-.field public final a:Lw5a;
+.field public static final e0:LL4b;
 
-.field public final b:LVF5;
+.field public static final f0:LxFc;
 
-.field public final c:Lu16;
+.field public static final g0:LyFc;
+
+.field public static final h0:LL4b;
 
 
 # direct methods
-.method public constructor <init>(Lw5a;LVF5;Lu16;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, LHpg;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LHpg;->a:Lw5a;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LHpg;->b:LVF5;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LHpg;->c:Lu16;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
-
-    .line 1
-    check-cast p1, LCjj;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, LHpg;->b:LVF5;
+    sget-object v0, LNH9;->S0:LNH9;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LVF5;->invoke()Ljava/lang/Object;
+    const/4 v2, 0x0
 
     .line 6
+    const/16 v3, 0x1c
+
     .line 7
     .line 8
-    move-result-object v0
+    const-string v4, "ConnectedApps"
 
     .line 9
-    check-cast v0, Lzmb;
-
     .line 10
+    invoke-direct {v1, v4, v0, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
+
     .line 11
-    iget-object v1, p0, LHpg;->a:Lw5a;
-
     .line 12
     .line 13
-    const-string v2, "SimpleLensesMemoriesMediaPackageBuilderProvider"
+    sput-object v1, LHpg;->Z:LHpg;
 
     .line 14
     .line 15
-    invoke-static {v1, v1, v2}, LDM4;->c(Lw5a;Lw5a;Ljava/lang/String;)LWm0;
+    new-instance v0, LL4b;
 
     .line 16
     .line 17
+    const/4 v9, 0x0
+
     .line 18
-    move-result-object v1
+    const/4 v10, 0x0
 
     .line 19
-    check-cast v0, LImb;
+    const-string v2, "ConnectedApps"
 
     .line 20
     .line 21
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v3, 0x0
 
     .line 22
+    const/4 v4, 0x0
+
     .line 23
+    const/4 v5, 0x0
+
     .line 24
-    invoke-static {v0, v1}, LMpk;->c(Lzmb;LWm0;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    const/4 v6, 0x0
 
     .line 25
+    const/4 v7, 0x0
+
     .line 26
+    const/4 v8, 0x0
+
     .line 27
-    move-result-object v0
+    const/16 v11, 0x7ffc
 
     .line 28
-    new-instance v1, LNjg;
-
     .line 29
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 30
-    const/4 v2, 0x5
-
     .line 31
-    invoke-direct {v1, p0, v2, p1}, LNjg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 32
+    sput-object v0, LHpg;->e0:LL4b;
+
     .line 33
     .line 34
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    sget-object v1, Luld;->O:LtOc;
 
     .line 35
     .line 36
-    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    const/4 v2, 0x1
 
     .line 37
+    invoke-static {v1, v0, v2}, LJea;->h(Luld;LL4b;Z)LxFc;
+
     .line 38
     .line 39
-    return-object p1
+    .line 40
+    move-result-object v0
+
+    .line 41
+    sput-object v0, LHpg;->f0:LxFc;
+
+    .line 42
+    .line 43
+    invoke-virtual {v0}, LxFc;->p()LuFc;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
+    sput-object v0, LHpg;->g0:LyFc;
+
+    .line 48
+    .line 49
+    new-instance v1, LL4b;
+
+    .line 50
+    .line 51
+    sget-object v2, LDUa;->Z:LDUa;
+
+    .line 52
+    .line 53
+    const/4 v10, 0x0
+
+    .line 54
+    const/4 v11, 0x0
+
+    .line 55
+    const-string v3, "ConnectedApps.dialog"
+
+    .line 56
+    .line 57
+    const/4 v4, 0x0
+
+    .line 58
+    const/4 v5, 0x1
+
+    .line 59
+    const/4 v6, 0x0
+
+    .line 60
+    const/4 v7, 0x0
+
+    .line 61
+    const/4 v8, 0x0
+
+    .line 62
+    const/4 v9, 0x0
+
+    .line 63
+    const/16 v12, 0x7ff0
+
+    .line 64
+    .line 65
+    invoke-direct/range {v1 .. v12}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 66
+    .line 67
+    .line 68
+    sput-object v1, LHpg;->h0:LL4b;
+
+    .line 69
+    .line 70
+    return-void
 .end method

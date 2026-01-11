@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LkF8;
+    proxyClass = LnM8;
     schema = "\'getGroups\':f|m|(f|s|(a<r:\'[0]\'>, m?<s,u>)),\'onGroupsUpdated\':f|m|(f()): f(),\'getMostRecentlyInteractedGroupByParticipants\':f?|m|(a<s>, f|s|(r?:\'[0]\', m?<s,u>)),\'observeTopGroupsIds\':f?|m|(): g<c>:\'[1]\'<a<s>>"
     typeReferences = {
         Lcom/snap/composer/people/Group;,
@@ -30,9 +30,6 @@
 .end method
 
 .method public abstract getMostRecentlyInteractedGroupByParticipants(Ljava/util/List;Lkotlin/jvm/functions/Function2;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -43,12 +40,12 @@
             ")V"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract observeTopGroupsIds()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -57,6 +54,9 @@
             "Ljava/lang/String;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

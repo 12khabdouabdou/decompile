@@ -1,123 +1,153 @@
 .class public final Lr27;
-.super Ljava/lang/Object;
+.super LUWk;
 .source "SourceFile"
-
-# interfaces
-.implements LBI3;
-.implements LS4f;
 
 
 # instance fields
-.field public final a:LBI3;
-
-.field public final b:Ljava/util/EnumSet;
+.field public final a:Ljava/util/Map;
 
 
 # direct methods
-.method public synthetic constructor <init>(LBI3;)V
-    .locals 1
-
-    .line 4
-    sget-object v0, LR4f;->a:Ljava/util/EnumSet;
-
-    .line 5
-    invoke-direct {p0, p1, v0}, Lr27;-><init>(LBI3;Ljava/util/EnumSet;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(LBI3;Ljava/util/EnumSet;)V
+.method public constructor <init>(Ljava/util/Map;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr27;->a:LBI3;
-
     .line 3
-    iput-object p2, p0, Lr27;->b:Ljava/util/EnumSet;
+    .line 4
+    iput-object p1, p0, Lr27;->a:Ljava/util/Map;
 
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final T0()LBI3;
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lr27;->a:LBI3;
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p0, p1, :cond_0
+
     .line 3
-    return-object v0
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lr27;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lr27;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lr27;->a:Ljava/util/Map;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, Lr27;->a:Ljava/util/Map;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
 .end method
 
-.method public final e()LzI3;
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lr27;->a:LBI3;
+    iget-object v0, p0, Lr27;->a:Ljava/util/Map;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LBI3;->e()LzI3;
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result v0
 
     .line 7
-    return-object v0
+    return v0
 .end method
 
-.method public final getName()Ljava/lang/String;
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lr27;->a:LBI3;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LBI3;->getName()Ljava/lang/String;
+    const-string v1, "Activated(transformations="
 
     .line 4
     .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lr27;->a:Ljava/util/Map;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ")"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
     move-result-object v0
 
-    .line 7
-    return-object v0
-.end method
-
-.method public final j()LAI3;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lr27;->a:LBI3;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LBI3;->j()LAI3;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final o2()Ljava/util/EnumSet;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lr27;->b:Ljava/util/EnumSet;
-
-    .line 2
-    .line 3
+    .line 22
     return-object v0
 .end method

@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LIO3;
+    proxyClass = LwS3;
     schema = "\'getContactUsers\':f|m|(f|s|(a?<r:\'[0]\'>, m?<s,u>)),\'onContactUsersUpdated\':f|m|(f()): f(),\'contactUsersObservable\':g?<c>:\'[1]\'<a<r:\'[0]\'>>"
     typeReferences = {
-        LFO3;,
+        LtS3;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
 .end annotation
@@ -35,7 +35,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LFO3;",
+            "LtS3;",
             ">;>;"
         }
     .end annotation

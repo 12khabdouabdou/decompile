@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LiV8;
+    proxyClass = LK29;
     schema = "\'onDualCameraModeSelectionDidChange\':f?|m|(r<e>:\'[0]\')"
     typeReferences = {
         Lcom/snap/modules/camera_mode_widgets/DualCameraMode;
@@ -19,7 +19,7 @@
 
 # virtual methods
 .method public abstract onDualCameraModeSelectionDidChange(Lcom/snap/modules/camera_mode_widgets/DualCameraMode;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

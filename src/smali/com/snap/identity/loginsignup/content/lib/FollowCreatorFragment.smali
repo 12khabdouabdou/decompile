@@ -8,15 +8,15 @@
 
 
 # instance fields
-.field public A0:LhB7;
+.field public A0:LwG7;
 
-.field public B0:Lnwf;
+.field public B0:LyPf;
 
 .field public C0:Landroidx/lifecycle/ViewModelProvider$Factory;
 
-.field public D0:LAB7;
+.field public D0:LPG7;
 
-.field public E0:LBre;
+.field public E0:LnJe;
 
 .field public F0:Z
 
@@ -46,11 +46,11 @@
 
 
 # virtual methods
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e026d
+    const p3, 0x7f0e0282
 
     .line 2
     .line 3
@@ -69,7 +69,7 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 5
 
     .line 1
@@ -112,7 +112,7 @@
 
     .line 17
     .line 18
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->B0:Lnwf;
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->B0:LyPf;
 
     .line 19
     .line 20
@@ -123,7 +123,7 @@
 
     .line 22
     .line 23
-    sget-object p2, LMKa;->Z:LMKa;
+    sget-object p2, LtXa;->Z:LtXa;
 
     .line 24
     .line 25
@@ -131,7 +131,7 @@
 
     .line 26
     .line 27
-    invoke-static {p2, p2, v2}, Llva;->k(LMKa;LMKa;Ljava/lang/String;)LWm0;
+    invoke-static {p2, p2, v2}, LzHa;->l(LtXa;LtXa;Ljava/lang/String;)Lnp0;
 
     .line 28
     .line 29
@@ -139,16 +139,16 @@
     move-result-object p2
 
     .line 31
-    new-instance v2, LBre;
+    new-instance v2, LnJe;
 
     .line 32
     .line 33
-    invoke-direct {v2, p2}, LBre;-><init>(LWm0;)V
+    invoke-direct {v2, p2}, LnJe;-><init>(Lnp0;)V
 
     .line 34
     .line 35
     .line 36
-    iput-object v2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LBre;
+    iput-object v2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LnJe;
 
     .line 37
     .line 38
@@ -176,7 +176,7 @@
 
     .line 48
     :goto_1
-    new-instance v2, LEsj;
+    new-instance v2, LS7j;
 
     .line 49
     .line 50
@@ -188,16 +188,16 @@
 
     .line 53
     .line 54
-    invoke-direct {v2, p2, v3}, LEsj;-><init>(LOJj;Landroidx/lifecycle/ViewModelProvider$Factory;)V
+    invoke-direct {v2, p2, v3}, LS7j;-><init>(Lr9k;Landroidx/lifecycle/ViewModelProvider$Factory;)V
 
     .line 55
     .line 56
     .line 57
-    const-class p2, LAB7;
+    const-class p2, LPG7;
 
     .line 58
     .line 59
-    invoke-virtual {v2, p2}, LEsj;->d(Ljava/lang/Class;)LyJj;
+    invoke-virtual {v2, p2}, LS7j;->a(Ljava/lang/Class;)Lb9k;
 
     .line 60
     .line 61
@@ -205,20 +205,20 @@
     move-result-object p2
 
     .line 63
-    check-cast p2, LAB7;
+    check-cast p2, LPG7;
 
     .line 64
     .line 65
-    iput-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->D0:LAB7;
+    iput-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->D0:LPG7;
 
     .line 66
     .line 67
-    invoke-virtual {p2}, LAB7;->d()V
+    invoke-virtual {p2}, LPG7;->d()V
 
     .line 68
     .line 69
     .line 70
-    const p2, 0x7f0b0660
+    const p2, 0x7f0b06f7
 
     .line 71
     .line 72
@@ -239,7 +239,7 @@
 
     .line 80
     .line 81
-    const p2, 0x7f0b0661
+    const p2, 0x7f0b06f8
 
     .line 82
     .line 83
@@ -293,7 +293,7 @@
 
     .line 108
     :cond_2
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 109
     .line 110
@@ -325,7 +325,7 @@
     .line 123
     .line 124
     :goto_2
-    const p2, 0x7f0b0691
+    const p2, 0x7f0b0728
 
     .line 125
     .line 126
@@ -346,7 +346,7 @@
 
     .line 134
     .line 135
-    const p2, 0x7f0b16dc
+    const p2, 0x7f0b181d
 
     .line 136
     .line 137
@@ -363,7 +363,7 @@
 
     .line 143
     .line 144
-    const p2, 0x7f0b124a
+    const p2, 0x7f0b1376
 
     .line 145
     .line 146
@@ -384,16 +384,16 @@
 
     .line 154
     .line 155
-    new-instance p1, LhB7;
+    new-instance p1, LwG7;
 
     .line 156
     .line 157
-    invoke-direct {p1}, LhB7;-><init>()V
+    invoke-direct {p1}, LwG7;-><init>()V
 
     .line 158
     .line 159
     .line 160
-    iput-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->A0:LhB7;
+    iput-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->A0:LwG7;
 
     .line 161
     .line 162
@@ -422,12 +422,12 @@
     .line 173
     .line 174
     .line 175
-    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 176
     .line 177
     .line 178
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->A0:LhB7;
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->A0:LwG7;
 
     .line 179
     .line 180
@@ -439,7 +439,7 @@
 
     .line 183
     .line 184
-    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->C0(LZXe;)V
 
     .line 185
     .line 186
@@ -452,24 +452,24 @@
 
     .line 190
     .line 191
-    new-instance p2, LeB7;
+    new-instance p2, LtG7;
 
     .line 192
     .line 193
     const/4 v3, 0x0
 
     .line 194
-    invoke-direct {p2, p0, v3}, LeB7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
+    invoke-direct {p2, p0, v3}, LtG7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
 
     .line 195
     .line 196
     .line 197
-    const v3, 0x7f0b1833
+    const v3, 0x7f0b1987
 
     .line 198
     .line 199
     .line 200
-    invoke-virtual {p1, v3, p2}, Lcom/snap/component/header/SnapSubscreenHeaderView;->x(ILandroid/view/View$OnClickListener;)V
+    invoke-virtual {p1, v3, p2}, Lcom/snap/component/header/SnapSubscreenHeaderView;->w(ILandroid/view/View$OnClickListener;)V
 
     .line 201
     .line 202
@@ -482,14 +482,14 @@
 
     .line 206
     .line 207
-    new-instance p2, LeB7;
+    new-instance p2, LtG7;
 
     .line 208
     .line 209
     const/4 v3, 0x1
 
     .line 210
-    invoke-direct {p2, p0, v3}, LeB7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
+    invoke-direct {p2, p0, v3}, LtG7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
 
     .line 211
     .line 212
@@ -499,7 +499,7 @@
     .line 214
     .line 215
     .line 216
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->A0:LhB7;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->A0:LwG7;
 
     .line 217
     .line 218
@@ -507,7 +507,7 @@
 
     .line 219
     .line 220
-    invoke-virtual {p1}, LhB7;->u()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-virtual {p1}, LwG7;->u()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 221
     .line 222
@@ -515,7 +515,7 @@
     move-result-object p1
 
     .line 224
-    iget-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LBre;
+    iget-object p2, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LnJe;
 
     .line 225
     .line 226
@@ -527,7 +527,7 @@
 
     .line 229
     .line 230
-    invoke-virtual {p2}, LBre;->g()LF06;
+    invoke-virtual {p2}, LnJe;->g()LA36;
 
     .line 231
     .line 232
@@ -549,7 +549,7 @@
     .line 240
     .line 241
     .line 242
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LBre;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LnJe;
 
     .line 243
     .line 244
@@ -557,7 +557,7 @@
 
     .line 245
     .line 246
-    invoke-virtual {p1}, LBre;->i()Lgn0;
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
 
     .line 247
     .line 248
@@ -565,7 +565,7 @@
     move-result-object p1
 
     .line 250
-    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 251
     .line 252
@@ -573,14 +573,14 @@
     move-result-object p1
 
     .line 254
-    new-instance p2, LdB7;
+    new-instance p2, LsG7;
 
     .line 255
     .line 256
     const/4 v3, 0x1
 
     .line 257
-    invoke-direct {p2, p0, v3}, LdB7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
+    invoke-direct {p2, p0, v3}, LsG7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
 
     .line 258
     .line 259
@@ -593,15 +593,15 @@
     move-result-object p1
 
     .line 264
-    sget-object p2, LLwf;->Z:LLwf;
+    sget-object p2, LUPf;->Z:LUPf;
 
     .line 265
     .line 266
-    iget-object v3, p0, LOwf;->a:Ljava/lang/String;
+    iget-object v3, p0, LXPf;->a:Ljava/lang/String;
 
     .line 267
     .line 268
-    invoke-virtual {p0, p1, p2, v3}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2, v3}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 269
     .line 270
@@ -611,7 +611,7 @@
     .line 272
     .line 273
     .line 274
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->D0:LAB7;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->D0:LPG7;
 
     .line 275
     .line 276
@@ -619,7 +619,7 @@
 
     .line 277
     .line 278
-    invoke-virtual {p1}, LAB7;->c()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-virtual {p1}, LPG7;->c()Lio/reactivex/rxjava3/core/Observable;
 
     .line 279
     .line 280
@@ -627,116 +627,115 @@
     move-result-object p1
 
     .line 282
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LBre;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 283
     .line 284
-    if-eqz v0, :cond_5
-
     .line 285
-    .line 286
-    invoke-virtual {v0}, LBre;->g()LF06;
+    sget-object v0, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
 
+    .line 286
     .line 287
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
     .line 288
     .line 289
-    move-result-object v0
-
     .line 290
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object p1
 
     .line 291
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LnJe;
+
     .line 292
     .line 293
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+    if-eqz v0, :cond_5
 
     .line 294
     .line 295
-    invoke-direct {v4, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    invoke-virtual {v0}, LnJe;->g()LA36;
 
     .line 296
     .line 297
     .line 298
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LBre;
+    move-result-object v0
 
     .line 299
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+
     .line 300
-    if-eqz p1, :cond_4
-
     .line 301
-    .line 302
-    invoke-virtual {p1}, LBre;->i()Lgn0;
+    invoke-direct {v4, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 302
     .line 303
     .line 304
-    .line 305
-    move-result-object p1
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->E0:LnJe;
 
+    .line 305
     .line 306
-    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    if-eqz p1, :cond_4
 
     .line 307
     .line 308
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
+
     .line 309
+    .line 310
+    .line 311
     move-result-object p1
 
-    .line 310
-    new-instance v0, LdB7;
-
-    .line 311
     .line 312
-    const/4 v1, 0x0
+    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 313
-    invoke-direct {v0, p0, v1}, LdB7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
-
     .line 314
     .line 315
+    move-result-object p1
+
     .line 316
-    sget-object v1, LS57;->u0:LS57;
+    new-instance v0, LsG7;
 
     .line 317
     .line 318
-    invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    const/4 v1, 0x0
 
     .line 319
+    invoke-direct {v0, p0, v1}, LsG7;-><init>(Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;I)V
+
     .line 320
     .line 321
-    move-result-object p1
-
     .line 322
-    invoke-virtual {p0, p1, p2, v3}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    sget-object v1, LZ47;->w0:LZ47;
 
     .line 323
     .line 324
+    invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 325
+    .line 326
+    .line 327
+    move-result-object p1
+
+    .line 328
+    invoke-virtual {p0, p1, p2, v3}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 329
+    .line 330
+    .line 331
     return-void
 
-    .line 326
-    :cond_4
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 327
-    .line 328
-    .line 329
-    throw v1
-
-    .line 330
-    :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 331
     .line 332
+    :cond_4
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 333
+    .line 334
+    .line 335
     throw v1
 
-    .line 334
-    :cond_6
-    const-string p1, "viewModel"
-
-    .line 335
     .line 336
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_5
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 337
     .line 338
@@ -744,39 +743,39 @@
     throw v1
 
     .line 340
-    :cond_7
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_6
+    const-string p1, "viewModel"
 
     .line 341
     .line 342
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 343
-    throw v1
-
     .line 344
-    :cond_8
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 345
+    throw v1
+
     .line 346
+    :cond_7
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 347
-    throw v1
-
     .line 348
-    :cond_9
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 349
-    .line 350
-    .line 351
     throw v1
 
-    .line 352
-    :cond_a
-    const-string p1, "continueButton"
+    .line 350
+    :cond_8
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 351
+    .line 352
     .line 353
+    throw v1
+
     .line 354
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_9
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 355
     .line 356
@@ -784,30 +783,30 @@
     throw v1
 
     .line 358
-    :cond_b
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    :cond_a
+    const-string p1, "continueButton"
 
     .line 359
     .line 360
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 361
-    throw v1
-
     .line 362
-    :cond_c
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 363
-    .line 364
-    .line 365
     throw v1
 
-    .line 366
-    :cond_d
-    const-string p1, "recyclerView"
+    .line 364
+    :cond_b
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 365
+    .line 366
     .line 367
+    throw v1
+
     .line 368
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_c
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 369
     .line 370
@@ -815,21 +814,21 @@
     throw v1
 
     .line 372
-    :cond_e
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    :cond_d
+    const-string p1, "recyclerView"
 
     .line 373
     .line 374
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 375
+    .line 376
+    .line 377
     throw v1
 
-    .line 376
-    :cond_f
-    const-string p1, "viewModelFactory"
-
-    .line 377
     .line 378
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_e
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 379
     .line 380
@@ -837,16 +836,29 @@
     throw v1
 
     .line 382
-    :cond_10
-    const-string p1, "schedulersProvider"
+    :cond_f
+    const-string p1, "viewModelFactory"
 
     .line 383
     .line 384
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 385
     .line 386
     .line 387
+    throw v1
+
+    .line 388
+    :cond_10
+    const-string p1, "schedulersProvider"
+
+    .line 389
+    .line 390
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 391
+    .line 392
+    .line 393
     throw v1
 .end method
 
@@ -920,15 +932,15 @@
 
     .line 32
     .line 33
-    new-instance v5, Lzzg;
+    new-instance v5, LLUg;
 
     .line 34
     .line 35
-    sget-object v6, LAzg;->Y:LAzg;
+    sget-object v6, LMUg;->Y:LMUg;
 
     .line 36
     .line 37
-    const v8, 0x7f0807f7
+    const v8, 0x7f08086f
 
     .line 38
     .line 39
@@ -940,12 +952,12 @@
 
     .line 42
     .line 43
-    invoke-direct/range {v5 .. v10}, Lzzg;-><init>(LAzg;Ljava/lang/String;IZI)V
+    invoke-direct/range {v5 .. v10}, LLUg;-><init>(LMUg;Ljava/lang/String;IZI)V
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {v0, v5, v4}, Lcom/snap/component/button/SnapButtonView;->e(Lzzg;Z)V
+    invoke-virtual {v0, v5, v4}, Lcom/snap/component/button/SnapButtonView;->e(LLUg;Z)V
 
     .line 47
     .line 48
@@ -979,7 +991,7 @@
 
     .line 61
     :cond_1
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 62
     .line 63
@@ -988,7 +1000,7 @@
 
     .line 65
     :cond_2
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -1015,7 +1027,7 @@
 
     .line 7
     :cond_0
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->D0:LAB7;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/content/lib/FollowCreatorFragment;->D0:LPG7;
 
     .line 8
     .line 9
@@ -1023,7 +1035,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0}, LAB7;->e()V
+    invoke-virtual {v0}, LPG7;->e()V
 
     .line 12
     .line 13
@@ -1039,7 +1051,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -1050,11 +1062,11 @@
     throw v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3

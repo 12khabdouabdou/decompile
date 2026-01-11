@@ -2,177 +2,37 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Supplier;
+
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final b:LNR4;
+.field public final synthetic b:LZf6;
 
-.field public final c:LBre;
-
-.field public final d:LZg6;
+.field public final synthetic c:LGbd;
 
 
 # direct methods
-.method public constructor <init>(LNR4;Lnwf;I)V
+.method public synthetic constructor <init>(LZf6;LGbd;I)V
     .locals 0
 
+    .line 1
     iput p3, p0, LYf6;->a:I
 
-    packed-switch p3, :pswitch_data_0
+    iput-object p1, p0, LYf6;->b:LZf6;
 
-    .line 1
+    iput-object p2, p0, LYf6;->c:LGbd;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, LYf6;->b:LNR4;
-
-    .line 3
-    sget-object p1, Lve6;->Z:Lve6;
-
-    sget-object p3, LZf6;->a:Ljava/lang/String;
-
-    check-cast p2, LIP5;
-
-    .line 4
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-static {p1, p3}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
-
-    move-result-object p1
-
-    .line 5
-    iput-object p1, p0, LYf6;->c:LBre;
-
-    .line 6
-    sget-object p1, LZg6;->c:LZg6;
-
-    iput-object p1, p0, LYf6;->d:LZg6;
-
-    return-void
-
-    .line 7
-    :pswitch_0
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 8
-    iput-object p1, p0, LYf6;->b:LNR4;
-
-    .line 9
-    sget-object p1, Lve6;->Z:Lve6;
-
-    sget-object p3, LRWb;->a:LKi6;
-
-    check-cast p2, LIP5;
-
-    .line 10
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const-string p2, "MixedCarouselPerformanceAnalyticsFactory"
-
-    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
-
-    move-result-object p1
-
-    .line 11
-    iput-object p1, p0, LYf6;->c:LBre;
-
-    .line 12
-    sget-object p1, LZg6;->l0:LZg6;
-
-    iput-object p1, p0, LYf6;->d:LZg6;
-
-    return-void
-
-    .line 13
-    :pswitch_1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 14
-    iput-object p1, p0, LYf6;->b:LNR4;
-
-    .line 15
-    sget-object p1, Lve6;->Z:Lve6;
-
-    sget-object p3, Lyl7;->a:LKi6;
-
-    check-cast p2, LIP5;
-
-    .line 16
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const-string p2, "FfLocalCarouselPerformanceAnalyticsFactory"
-
-    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
-
-    move-result-object p1
-
-    .line 17
-    iput-object p1, p0, LYf6;->c:LBre;
-
-    .line 18
-    sget-object p1, LZg6;->o0:LZg6;
-
-    iput-object p1, p0, LYf6;->d:LZg6;
-
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public constructor <init>(LNR4;Lnwf;Lelh;)V
-    .locals 1
-
-    const/4 v0, 0x3
-
-    iput v0, p0, LYf6;->a:I
-
-    .line 19
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 20
-    iput-object p1, p0, LYf6;->b:LNR4;
-
-    .line 21
-    sget-object p1, LFkh;->Z:LFkh;
-
-    check-cast p2, LIP5;
-
-    .line 22
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const-string p2, "SpotlightPerformanceAnalyticsFactory"
-
-    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
-
-    move-result-object p1
-
-    .line 23
-    iput-object p1, p0, LYf6;->c:LBre;
-
-    .line 24
-    check-cast p3, Lglh;
-
-    invoke-virtual {p3}, Lglh;->a()LTg6;
-
-    move-result-object p1
-
-    .line 25
-    iget-object p1, p1, LTg6;->f:LZg6;
-
-    .line 26
-    iput-object p1, p0, LYf6;->d:LZg6;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lfg6;
+.method public final get()Ljava/lang/Object;
     .locals 5
 
     .line 1
@@ -185,140 +45,150 @@
     .line 4
     .line 5
     .line 6
-    sget-object v0, LGmh;->a:LKi6;
+    iget-object v0, p0, LYf6;->b:LZf6;
 
     .line 7
     .line 8
-    iget-object v1, p0, LYf6;->d:LZg6;
+    iget-object v0, v0, LZf6;->a:LCBe;
 
     .line 9
     .line 10
-    const-string v2, "SPOTLIGHT_VIEW_READY_LATENCY"
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 11
     .line 12
-    iget-object v3, p0, LYf6;->b:LNR4;
-
     .line 13
+    move-result-object v0
+
     .line 14
-    iget-object v4, p0, LYf6;->c:LBre;
+    check-cast v0, Lkm1;
 
     .line 15
     .line 16
-    invoke-virtual {v3, v1, v2, v0, v4}, LNR4;->a(LZg6;Ljava/lang/String;LKi6;LBre;)Lfg6;
+    iget-object v0, v0, Lkm1;->a:LYK4;
 
     .line 17
     .line 18
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
+
     .line 19
-    move-result-object v0
-
     .line 20
-    return-object v0
-
     .line 21
-    :pswitch_0
-    sget-object v0, LRWb;->a:LKi6;
+    move-result-object v0
 
     .line 22
+    check-cast v0, LOF3;
+
     .line 23
-    const-string v1, "MIXED_CAROUSEL_VIEW_READY_LATENCY"
-
     .line 24
+    sget-object v1, Lex1;->b3:Lex1;
+
     .line 25
-    iget-object v2, p0, LYf6;->b:LNR4;
-
     .line 26
-    .line 27
-    iget-object v3, p0, LYf6;->d:LZg6;
+    invoke-interface {v0, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
+    .line 27
     .line 28
     .line 29
-    iget-object v4, p0, LYf6;->c:LBre;
-
-    .line 30
-    .line 31
-    invoke-virtual {v2, v3, v1, v0, v4}, LNR4;->a(LZg6;Ljava/lang/String;LKi6;LBre;)Lfg6;
-
-    .line 32
-    .line 33
-    .line 34
     move-result-object v0
 
+    .line 30
+    new-instance v1, Lmg;
+
+    .line 31
+    .line 32
+    iget-object v2, p0, LYf6;->c:LGbd;
+
+    .line 33
+    .line 34
+    const/4 v3, 0x3
+
     .line 35
-    return-object v0
+    invoke-direct {v1, v2, v3}, Lmg;-><init>(LGbd;I)V
 
     .line 36
-    :pswitch_1
-    sget-object v0, Lyl7;->a:LKi6;
-
     .line 37
     .line 38
-    const-string v1, "MIXED_CAROUSEL_VIEW_READY_LATENCY"
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
 
     .line 39
     .line 40
-    iget-object v2, p0, LYf6;->b:LNR4;
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 41
     .line 42
-    iget-object v3, p0, LYf6;->d:LZg6;
-
     .line 43
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
+
     .line 44
-    iget-object v4, p0, LYf6;->c:LBre;
-
     .line 45
-    .line 46
-    invoke-virtual {v2, v3, v1, v0, v4}, LNR4;->a(LZg6;Ljava/lang/String;LKi6;LBre;)Lfg6;
+    invoke-direct {v0, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
 
+    .line 46
     .line 47
     .line 48
-    .line 49
-    move-result-object v0
-
-    .line 50
     return-object v0
 
+    .line 49
+    :pswitch_0
+    iget-object v0, p0, LYf6;->b:LZf6;
+
+    .line 50
     .line 51
-    :pswitch_2
-    sget-object v0, LZf6;->b:LKi6;
+    iget-object v1, v0, LZf6;->a:LCBe;
 
     .line 52
     .line 53
-    const-string v1, "DISCOVER_FEED_VIEW_READY_LATENCY"
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
 
     .line 54
     .line 55
-    iget-object v2, p0, LYf6;->b:LNR4;
-
     .line 56
+    move-result-object v1
+
     .line 57
-    iget-object v3, p0, LYf6;->d:LZg6;
+    check-cast v1, Lkm1;
 
     .line 58
     .line 59
-    iget-object v4, p0, LYf6;->c:LBre;
+    invoke-virtual {v1}, Lkm1;->d()Lio/reactivex/rxjava3/core/Single;
 
     .line 60
     .line 61
-    invoke-virtual {v2, v3, v1, v0, v4}, LNR4;->a(LZg6;Ljava/lang/String;LKi6;LBre;)Lfg6;
-
     .line 62
-    .line 63
-    .line 64
-    move-result-object v0
+    move-result-object v1
 
+    .line 63
+    new-instance v2, LMf6;
+
+    .line 64
     .line 65
-    return-object v0
+    iget-object v3, p0, LYf6;->c:LGbd;
 
     .line 66
-    nop
-
     .line 67
+    const/4 v4, 0x3
+
+    .line 68
+    invoke-direct {v2, v0, v4, v3}, LMf6;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 69
+    .line 70
+    .line 71
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+
+    .line 72
+    .line 73
+    invoke-direct {v0, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 74
+    .line 75
+    .line 76
+    return-object v0
+
+    .line 77
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

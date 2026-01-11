@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talk/core/ScreenShareVideoWrapperView;
-.super LMB3;
+.super LoF3;
 .source "SourceFile"
 
 # interfaces
-.implements LcB3;
-.implements Lgqf;
+.implements LCE3;
+.implements LmJf;
 
 
 # annotations
@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field private final freezeFrame:LhK7;
+.field private final freezeFrame:LNP7;
 
 .field private onScaleChanged:Lcom/snap/composer/actions/ComposerAction;
 
@@ -23,24 +23,24 @@
 
 .field private videoHasLoaded:Z
 
-.field private final zoomTouchListener:LT2k;
+.field private final zoomTouchListener:LVsk;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LVY0;)V
+.method public constructor <init>(Landroid/content/Context;LG21;)V
     .locals 10
 
     .line 1
-    invoke-direct {p0, p1}, LMB3;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoF3;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LT2k;
+    new-instance v0, LVsk;
 
     .line 5
     .line 6
-    invoke-virtual {p0}, LMB3;->getTextureView()Lq3c;
+    invoke-virtual {p0}, LoF3;->getTextureView()Leic;
 
     .line 7
     .line 8
@@ -48,7 +48,7 @@
     move-result-object v1
 
     .line 10
-    new-instance v2, LdUe;
+    new-instance v2, LnLf;
 
     .line 11
     .line 12
@@ -70,93 +70,92 @@
     const/4 v8, 0x0
 
     .line 20
-    const/16 v9, 0xe
+    const/4 v9, 0x5
 
     .line 21
-    .line 22
     move-object v4, p0
 
-    .line 23
-    invoke-direct/range {v2 .. v9}, LdUe;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    .line 22
+    invoke-direct/range {v2 .. v9}, LnLf;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
+    .line 23
     .line 24
     .line 25
-    .line 26
-    invoke-direct {v0, p1, v1, p0, v2}, LT2k;-><init>(Landroid/content/Context;Lq3c;Lcom/snap/talk/core/ScreenShareVideoWrapperView;LdUe;)V
+    invoke-direct {v0, p1, v1, p0, v2}, LVsk;-><init>(Landroid/content/Context;Leic;Lcom/snap/talk/core/ScreenShareVideoWrapperView;LnLf;)V
 
+    .line 26
     .line 27
     .line 28
+    iput-object v0, v4, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LVsk;
+
     .line 29
-    iput-object v0, v4, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LT2k;
-
     .line 30
-    .line 31
-    invoke-virtual {p0}, LMB3;->getTextureView()Lq3c;
+    invoke-virtual {p0}, LoF3;->getTextureView()Leic;
 
+    .line 31
     .line 32
     .line 33
-    .line 34
     move-result-object p1
 
-    .line 35
+    .line 34
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
+    .line 35
     .line 36
     .line 37
-    .line 38
-    invoke-virtual {p0}, LMB3;->getTextureView()Lq3c;
+    invoke-virtual {p0}, LoF3;->getTextureView()Leic;
 
+    .line 38
     .line 39
     .line 40
-    .line 41
     move-result-object p1
 
-    .line 42
+    .line 41
     const/4 v0, -0x1
 
-    .line 43
+    .line 42
     invoke-virtual {p0, p1, v0, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
 
+    .line 43
     .line 44
     .line 45
+    new-instance p1, LNP7;
+
     .line 46
-    new-instance p1, LhK7;
-
     .line 47
-    .line 48
-    invoke-virtual {p0}, LMB3;->getTextureView()Lq3c;
+    invoke-virtual {p0}, LoF3;->getTextureView()Leic;
 
+    .line 48
     .line 49
     .line 50
-    .line 51
     move-result-object v0
 
+    .line 51
+    sget-object v1, LzKi;->Z:LzKi;
+
     .line 52
-    sget-object v1, LFli;->Z:LFli;
-
     .line 53
+    check-cast p2, Lwr5;
+
     .line 54
-    check-cast p2, Lol5;
-
     .line 55
-    .line 56
-    invoke-virtual {p2, v1}, Lol5;->a(Lan0;)LhJe;
+    invoke-virtual {p2, v1}, Lwr5;->a(Lrp0;)LR0f;
 
+    .line 56
     .line 57
     .line 58
-    .line 59
     move-result-object p2
 
-    .line 60
-    invoke-direct {p1, p0, v0, p2}, LhK7;-><init>(Landroid/widget/FrameLayout;Lq3c;LhJe;)V
+    .line 59
+    invoke-direct {p1, p0, v0, p2}, LNP7;-><init>(Landroid/widget/FrameLayout;Leic;LR0f;)V
 
+    .line 60
     .line 61
     .line 62
-    .line 63
-    iput-object p1, v4, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LhK7;
+    iput-object p1, v4, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LNP7;
 
+    .line 63
     .line 64
-    .line 65
     return-void
 .end method
 
@@ -206,11 +205,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LhK7;
+    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LNP7;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LhK7;->a(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, LNP7;->a(Landroid/graphics/Canvas;)V
 
     .line 4
     .line 5
@@ -227,15 +226,15 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LhK7;
+    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LNP7;
 
     .line 2
     .line 3
-    iget-object v1, v0, LhK7;->j:Lotk;
+    iget-object v1, v0, LNP7;->j:LYSk;
 
     .line 4
     .line 5
-    instance-of v1, v1, Lwu6;
+    instance-of v1, v1, LEx6;
 
     .line 6
     .line 7
@@ -260,7 +259,7 @@
     const/4 p1, 0x4
 
     .line 15
-    invoke-virtual {v0, p1}, LhK7;->b(I)V
+    invoke-virtual {v0, p1}, LNP7;->b(I)V
 
     .line 16
     .line 17
@@ -273,7 +272,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v0}, LhK7;->c()V
+    invoke-virtual {v0}, LNP7;->c()V
 
     .line 22
     .line 23
@@ -283,11 +282,11 @@
     return-void
 .end method
 
-.method public final getFreezeFrame()LhK7;
+.method public final getFreezeFrame()LNP7;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LhK7;
+    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->freezeFrame:LNP7;
 
     .line 2
     .line 3
@@ -342,7 +341,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, LMB3;->getVideoSinkId()Ljava/lang/String;
+    invoke-super {p0}, LoF3;->getVideoSinkId()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -357,7 +356,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LT2k;
+    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LVsk;
 
     .line 2
     .line 3
@@ -366,7 +365,7 @@
     .line 4
     .line 5
     .line 6
-    sget-object v1, LS2k;->a:[I
+    sget-object v1, LUsk;->a:[I
 
     .line 7
     .line 8
@@ -404,7 +403,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v0, p1}, LT2k;->a(F)V
+    invoke-virtual {v0, p1}, LVsk;->a(F)V
 
     .line 24
     .line 25
@@ -417,7 +416,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0, p1}, LT2k;->a(F)V
+    invoke-virtual {v0, p1}, LVsk;->a(F)V
 
     .line 30
     .line 31
@@ -437,24 +436,23 @@
     .locals 1
 
     .line 1
-    new-instance p1, LwVe;
+    new-instance p1, LFHf;
 
     .line 2
     .line 3
-    const/16 v0, 0xf
+    const/4 v0, 0x4
 
     .line 4
-    .line 5
-    invoke-direct {p1, v0, p0}, LwVe;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, LFHf;-><init>(ILjava/lang/Object;)V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     invoke-virtual {p0, p1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
+    .line 8
     .line 9
     .line 10
-    .line 11
     return-void
 .end method
 
@@ -503,7 +501,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {p0}, LMB3;->getAspectRatioStateHolder()Lmb0;
+    invoke-virtual {p0}, LoF3;->getAspectRatioStateHolder()LMd0;
 
     .line 21
     .line 22
@@ -511,7 +509,7 @@
     move-result-object v1
 
     .line 24
-    iget v1, v1, Lmb0;->b:F
+    iget v1, v1, LMd0;->b:F
 
     .line 25
     .line 26
@@ -545,11 +543,11 @@
 
     .line 38
     :goto_0
-    iget-object p2, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LT2k;
+    iget-object p2, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LVsk;
 
     .line 39
     .line 40
-    iget-object v3, p2, LT2k;->Z:Landroid/graphics/PointF;
+    iget-object v3, p2, LVsk;->Z:Landroid/graphics/PointF;
 
     .line 41
     .line 42
@@ -569,7 +567,7 @@
 
     .line 49
     :cond_1
-    iget-object v4, p2, LT2k;->a:Lq3c;
+    iget-object v4, p2, LVsk;->a:Leic;
 
     .line 50
     .line 51
@@ -631,7 +629,7 @@
     add-float/2addr v6, v7
 
     .line 77
-    iget-object v9, p2, LT2k;->l0:Landroid/graphics/RectF;
+    iget-object v9, p2, LVsk;->l0:Landroid/graphics/RectF;
 
     .line 78
     .line 79
@@ -645,11 +643,11 @@
     .line 83
     .line 84
     .line 85
-    iget-object v3, p2, LT2k;->e0:Landroid/graphics/Matrix;
+    iget-object v3, p2, LVsk;->e0:Landroid/graphics/Matrix;
 
     .line 86
     .line 87
-    iget p2, p2, LT2k;->Y:F
+    iget p2, p2, LVsk;->Y:F
 
     .line 88
     .line 89
@@ -717,7 +715,7 @@
     return-void
 .end method
 
-.method public processTouchEvent(Landroid/view/MotionEvent;)LaB3;
+.method public processTouchEvent(Landroid/view/MotionEvent;)LAE3;
     .locals 0
 
     .line 1
@@ -733,7 +731,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LaB3;->a:LaB3;
+    sget-object p1, LAE3;->a:LAE3;
 
     .line 8
     .line 9
@@ -741,7 +739,7 @@
 
     .line 10
     :cond_0
-    sget-object p1, LaB3;->b:LaB3;
+    sget-object p1, LAE3;->b:LAE3;
 
     .line 11
     .line 12
@@ -752,7 +750,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LT2k;
+    iget-object v0, p0, Lcom/snap/talk/core/ScreenShareVideoWrapperView;->zoomTouchListener:LVsk;
 
     .line 2
     .line 3
@@ -760,11 +758,11 @@
 
     .line 4
     .line 5
-    iput v1, v0, LT2k;->Y:F
+    iput v1, v0, LVsk;->Y:F
 
     .line 6
     .line 7
-    iget-object v2, v0, LT2k;->e0:Landroid/graphics/Matrix;
+    iget-object v2, v0, LVsk;->e0:Landroid/graphics/Matrix;
 
     .line 8
     .line 9
@@ -773,7 +771,7 @@
     .line 10
     .line 11
     .line 12
-    iget-object v0, v0, LT2k;->a:Lq3c;
+    iget-object v0, v0, LVsk;->a:Leic;
 
     .line 13
     .line 14
@@ -833,7 +831,7 @@
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, LMB3;->setVideoSinkId(Ljava/lang/String;)V
+    invoke-super {p0, p1}, LoF3;->setVideoSinkId(Ljava/lang/String;)V
 
     .line 2
     .line 3

@@ -1,29 +1,17 @@
-.class public final Lrr2;
-.super Lekk;
+.class public interface abstract Lrr2;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lrr2;
+# virtual methods
+.method public abstract c()Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+.end method
 
+.method public abstract h()Lio/reactivex/rxjava3/core/Observable;
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public abstract j()Lio/reactivex/rxjava3/core/Observable;
+.end method
 
-    .line 1
-    new-instance v0, Lrr2;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lrr2;->a:Lrr2;
-
-    .line 7
-    .line 8
-    return-void
+.method public abstract l()Lnr2;
 .end method

@@ -1,402 +1,284 @@
-.class public final LEq;
+.class public abstract LEq;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lksc;
+# static fields
+.field public static final a:LDq;
 
-.field public final b:Lksc;
+.field public static final b:LDq;
 
-.field public final c:Lksc;
+.field public static final c:Ljava/util/List;
 
-.field public final d:Lksc;
+.field public static final d:Ljava/util/List;
+
+.field public static final e:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Lksc;Lksc;Lksc;Lksc;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 14
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LDq;
 
     .line 2
     .line 3
+    sget-object v1, LZk;->e0:LZk;
+
     .line 4
-    iput-object p1, p0, LEq;->a:Lksc;
-
     .line 5
-    .line 6
-    iput-object p2, p0, LEq;->b:Lksc;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LEq;->c:Lksc;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LEq;->d:Lksc;
-
-    .line 11
-    .line 12
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LEq;
+    const/4 v9, 0x0
 
     .line 6
+    const/4 v10, 0x0
+
     .line 7
-    const/4 v2, 0x0
+    const-string v2, "contentfeed"
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
+    const/4 v3, -0x1
+
     .line 10
-    return v2
+    const/4 v4, 0x0
 
     .line 11
-    :cond_1
-    check-cast p1, LEq;
+    const/4 v5, 0x0
 
     .line 12
+    const/4 v6, 0x0
+
     .line 13
-    iget-object v1, p1, LEq;->a:Lksc;
+    const/4 v7, 0x0
 
     .line 14
+    const/4 v8, 0x0
+
     .line 15
-    iget-object v3, p0, LEq;->a:Lksc;
+    const v11, 0x1fff8
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
+    invoke-direct/range {v0 .. v11}, LDq;-><init>(LZk;Ljava/lang/String;IZLkg6;Lwi5;Lki7;LpA9;ZLcTg;I)V
+
     .line 19
     .line 20
-    move-result v1
-
     .line 21
-    if-nez v1, :cond_2
+    sput-object v0, LEq;->a:LDq;
 
     .line 22
     .line 23
-    return v2
+    sget-object v2, LZk;->k0:LZk;
 
     .line 24
-    :cond_2
-    iget-object v1, p0, LEq;->b:Lksc;
-
     .line 25
+    sget-object v9, LpA9;->b:LpA9;
+
     .line 26
-    iget-object v3, p1, LEq;->b:Lksc;
-
     .line 27
-    .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    new-instance v1, LDq;
 
+    .line 28
     .line 29
+    const/4 v10, 0x0
+
     .line 30
+    const/4 v11, 0x0
+
     .line 31
-    move-result v1
+    const-string v3, "default"
 
     .line 32
-    if-nez v1, :cond_3
-
     .line 33
+    const/4 v4, -0x1
+
     .line 34
-    return v2
+    const/4 v5, 0x0
 
     .line 35
-    :cond_3
-    iget-object v1, p0, LEq;->c:Lksc;
+    const v12, 0x1eff8
 
     .line 36
     .line 37
-    iget-object v3, p1, LEq;->c:Lksc;
-
     .line 38
-    .line 39
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-direct/range {v1 .. v12}, LDq;-><init>(LZk;Ljava/lang/String;IZLkg6;Lwi5;Lki7;LpA9;ZLcTg;I)V
 
+    .line 39
     .line 40
     .line 41
-    .line 42
-    move-result v1
+    sput-object v1, LEq;->b:LDq;
 
+    .line 42
     .line 43
-    if-nez v1, :cond_4
+    new-instance v2, LDq;
 
     .line 44
     .line 45
-    return v2
+    sget-object v3, LZk;->g0:LZk;
 
     .line 46
-    :cond_4
-    iget-object v1, p0, LEq;->d:Lksc;
-
     .line 47
+    const/4 v11, 0x0
+
     .line 48
-    iget-object p1, p1, LEq;->d:Lksc;
+    const/4 v12, 0x0
 
     .line 49
-    .line 50
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    const-string v4, "default/"
 
+    .line 50
     .line 51
+    const/4 v5, -0x1
+
     .line 52
+    const/4 v6, 0x0
+
     .line 53
-    move-result p1
+    const/4 v9, 0x0
 
     .line 54
-    if-nez p1, :cond_5
+    const/4 v10, 0x0
 
     .line 55
+    const v13, 0x1ffd8
+
     .line 56
-    return v2
-
     .line 57
-    :cond_5
-    return v0
-.end method
+    .line 58
+    invoke-direct/range {v2 .. v13}, LDq;-><init>(LZk;Ljava/lang/String;IZLkg6;Lwi5;Lki7;LpA9;ZLcTg;I)V
 
-.method public final hashCode()I
-    .locals 3
+    .line 59
+    .line 60
+    .line 61
+    invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    iget-object v1, p0, LEq;->a:Lksc;
-
-    .line 3
-    .line 4
-    if-nez v1, :cond_0
-
-    .line 5
-    .line 6
-    const/4 v1, 0x0
-
-    .line 7
-    goto :goto_0
-
-    .line 8
-    :cond_0
-    invoke-virtual {v1}, Lksc;->hashCode()I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v1
-
-    .line 12
-    :goto_0
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 13
-    .line 14
-    iget-object v2, p0, LEq;->b:Lksc;
-
-    .line 15
-    .line 16
-    if-nez v2, :cond_1
-
-    .line 17
-    .line 18
-    const/4 v2, 0x0
-
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_1
-    invoke-virtual {v2}, Lksc;->hashCode()I
-
-    .line 21
-    .line 22
-    .line 23
-    move-result v2
-
-    .line 24
-    :goto_1
-    add-int/2addr v1, v2
-
-    .line 25
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 26
-    .line 27
-    iget-object v2, p0, LEq;->c:Lksc;
-
-    .line 28
-    .line 29
-    if-nez v2, :cond_2
-
-    .line 30
-    .line 31
-    const/4 v2, 0x0
-
-    .line 32
-    goto :goto_2
-
-    .line 33
-    :cond_2
-    invoke-virtual {v2}, Lksc;->hashCode()I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v2
-
-    .line 37
-    :goto_2
-    add-int/2addr v1, v2
-
-    .line 38
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 39
-    .line 40
-    iget-object v2, p0, LEq;->d:Lksc;
-
-    .line 41
-    .line 42
-    if-nez v2, :cond_3
-
-    .line 43
-    .line 44
-    goto :goto_3
-
-    .line 45
-    :cond_3
-    invoke-virtual {v2}, Lksc;->hashCode()I
-
-    .line 46
-    .line 47
-    .line 48
-    move-result v0
-
-    .line 49
-    :goto_3
-    add-int/2addr v1, v0
-
-    .line 50
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "AdSnapNeighborInfo(prevSnap="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LEq;->a:Lksc;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", nextSnap="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LEq;->b:Lksc;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", prevGroupSnap="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LEq;->c:Lksc;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", nextGroupSnap="
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LEq;->d:Lksc;
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ")"
-
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 49
-    .line 50
-    .line 51
+    .line 62
+    .line 63
+    .line 64
     move-result-object v0
 
-    .line 52
-    return-object v0
+    .line 65
+    sput-object v0, LEq;->c:Ljava/util/List;
+
+    .line 66
+    .line 67
+    new-instance v1, LDq;
+
+    .line 68
+    .line 69
+    sget-object v2, LZk;->j0:LZk;
+
+    .line 70
+    .line 71
+    const/4 v10, 0x0
+
+    .line 72
+    const/4 v11, 0x0
+
+    .line 73
+    const-string v3, "default/"
+
+    .line 74
+    .line 75
+    const/4 v4, -0x1
+
+    .line 76
+    const/4 v5, 0x0
+
+    .line 77
+    const/4 v6, 0x0
+
+    .line 78
+    const/4 v7, 0x0
+
+    .line 79
+    const/4 v8, 0x0
+
+    .line 80
+    const/4 v9, 0x0
+
+    .line 81
+    const v12, 0x1ffd8
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-direct/range {v1 .. v12}, LDq;-><init>(LZk;Ljava/lang/String;IZLkg6;Lwi5;Lki7;LpA9;ZLcTg;I)V
+
+    .line 85
+    .line 86
+    .line 87
+    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v0
+
+    .line 91
+    sput-object v0, LEq;->d:Ljava/util/List;
+
+    .line 92
+    .line 93
+    new-instance v1, LDq;
+
+    .line 94
+    .line 95
+    sget-object v2, LZk;->c:LZk;
+
+    .line 96
+    .line 97
+    const/4 v10, 0x0
+
+    .line 98
+    const/4 v11, 0x0
+
+    .line 99
+    const-string v3, "default/"
+
+    .line 100
+    .line 101
+    const/4 v4, -0x1
+
+    .line 102
+    const/4 v5, 0x0
+
+    .line 103
+    const/4 v6, 0x0
+
+    .line 104
+    const/4 v7, 0x0
+
+    .line 105
+    const/4 v8, 0x0
+
+    .line 106
+    const/4 v9, 0x0
+
+    .line 107
+    const v12, 0x1ffd8
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-direct/range {v1 .. v12}, LDq;-><init>(LZk;Ljava/lang/String;IZLkg6;Lwi5;Lki7;LpA9;ZLcTg;I)V
+
+    .line 111
+    .line 112
+    .line 113
+    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object v0
+
+    .line 117
+    sput-object v0, LEq;->e:Ljava/util/List;
+
+    .line 118
+    .line 119
+    return-void
 .end method

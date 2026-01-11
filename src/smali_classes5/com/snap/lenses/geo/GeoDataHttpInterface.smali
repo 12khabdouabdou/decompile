@@ -4,24 +4,21 @@
 
 
 # virtual methods
-.method public abstract getWeatherData(Ljava/lang/String;Ljava/lang/String;LSi4;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getWeatherData(Ljava/lang/String;Ljava/lang/String;Lqn4;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .param p3    # LSi4;
-        .annotation runtime Ljv1;
+    .param p3    # Lqn4;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -32,11 +29,14 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LSi4;",
+            "Lqn4;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LTi4;",
+            "Lrn4;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

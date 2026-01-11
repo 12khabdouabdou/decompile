@@ -1,132 +1,116 @@
-.class public LLPe;
-.super LFR9;
+.class public abstract synthetic LLPe;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public l:Ljava/lang/String;
-
-.field public m:Ljava/lang/String;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    sget-object v2, LCre;->t:LCre;
+    invoke-static {}, Lgpi;->values()[Lgpi;
 
     .line 2
     .line 3
-    const-string v1, "REMOTE_API_REQUEST_SENT"
-
     .line 4
+    move-result-object v0
+
     .line 5
-    const-wide v3, 0x3fa999999999999aL    # 0.05
+    array-length v0, v0
 
     .line 6
+    new-array v0, v0, [I
+
     .line 7
     .line 8
-    .line 9
-    .line 10
-    const-wide v5, 0x3fa999999999999aL    # 0.05
+    const/4 v1, 0x1
 
+    .line 9
+    :try_start_0
+    sget-object v2, Lgpi;->I0:Lgpi;
+
+    .line 10
     .line 11
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
     .line 12
     .line 13
     .line 14
+    move-result v2
+
     .line 15
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
     .line 17
-    move-object v0, p0
-
-    .line 18
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 19
-    .line 20
-    .line 21
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    new-array v0, v0, [B
-
-    .line 3
-    .line 4
-    const/4 v1, 0x2
-
-    .line 5
-    iget-object v2, p0, LLPe;->l:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 8
-    .line 9
-    .line 10
-    const/4 v1, 0x3
-
-    .line 11
-    iget-object v2, p0, LLPe;->m:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 v1, 0x4
-
-    .line 17
-    iget-object v2, p0, LFR9;->j:Ljava/lang/String;
+    :catch_0
+    :try_start_1
+    sget-object v2, Lgpi;->N0:Lgpi;
 
     .line 18
     .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
     .line 20
     .line 21
     .line 22
-    const/4 v1, 0x5
+    move-result v2
 
     .line 23
-    iget-object v2, p0, LFR9;->k:Ljava/lang/String;
+    const/4 v3, 0x2
 
     .line 24
-    .line 25
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    aput v3, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 25
     .line 26
+    :catch_1
+    invoke-static {}, LZgi;->values()[LZgi;
+
     .line 27
     .line 28
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
     .line 29
+    move-result-object v0
+
     .line 30
+    array-length v0, v0
+
     .line 31
+    new-array v0, v0, [I
+
+    .line 32
+    .line 33
+    :try_start_2
+    sget-object v2, LZgi;->c:LZgi;
+
+    .line 34
+    .line 35
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v2
+
+    .line 39
+    aput v1, v0, v2
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 40
+    .line 41
+    :catch_2
+    sput-object v0, LLPe;->a:[I
+
+    .line 42
+    .line 43
     return-void
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0xd2b
-
-    .line 2
-    .line 3
-    return v0
 .end method

@@ -1,70 +1,36 @@
 .class public final LMtk;
-.super LI3;
+.super LPtk;
 .source "SourceFile"
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "LMtk;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
 # instance fields
-.field public X:Ljava/lang/String;
+.field public final synthetic X:LQtk;
 
-.field public Y:Ljava/lang/String;
+.field public final synthetic c:J
 
-.field public Z:Ljava/lang/String;
-
-.field public a:Ljava/lang/String;
-
-.field public b:Ljava/lang/String;
-
-.field public c:Ljava/lang/String;
-
-.field public e0:Ljava/lang/String;
-
-.field public f0:Ljava/lang/String;
-
-.field public g0:Ljava/lang/String;
-
-.field public h0:Ljava/lang/String;
-
-.field public i0:Ljava/lang/String;
-
-.field public j0:Ljava/lang/String;
-
-.field public k0:Ljava/lang/String;
-
-.field public t:Ljava/lang/String;
+.field public final synthetic t:LRMi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(LQtk;LRMi;JLRMi;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LqAk;
+    iput-object p1, p0, LMtk;->X:LQtk;
 
     .line 2
     .line 3
-    const/16 v1, 0xd
+    iput-wide p3, p0, LMtk;->c:J
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, LqAk;-><init>(I)V
+    iput-object p5, p0, LMtk;->t:LRMi;
 
     .line 6
     .line 7
-    .line 8
-    sput-object v0, LMtk;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-direct {p0, p1, p2}, LPtk;-><init>(LQtk;LRMi;)V
 
+    .line 8
     .line 9
     .line 10
     return-void
@@ -72,202 +38,202 @@
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
+.method public final b()V
+    .locals 11
 
     .line 1
-    const/16 p2, 0x4f45
+    const/4 v0, 0x0
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
-    invoke-static {p2, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
+    iget-object v2, p0, LMtk;->t:LRMi;
 
     .line 4
     .line 5
-    .line 6
-    move-result p2
+    iget-wide v3, p0, LMtk;->c:J
 
+    .line 6
     .line 7
-    const/4 v0, 0x2
+    iget-object v5, p0, LMtk;->X:LQtk;
 
     .line 8
-    iget-object v1, p0, LMtk;->a:Ljava/lang/String;
-
     .line 9
-    .line 10
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {v5}, LQtk;->c(LQtk;)Z
 
+    .line 10
     .line 11
     .line 12
+    move-result v6
+
     .line 13
-    const/4 v0, 0x3
+    if-nez v6, :cond_0
 
     .line 14
-    iget-object v1, p0, LMtk;->b:Ljava/lang/String;
-
     .line 15
-    .line 16
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    :try_start_0
+    iget-object v6, v5, LQtk;->e:Ljtk;
 
+    .line 16
     .line 17
+    iget-object v6, v6, Ljtk;->n:Landroid/os/IInterface;
+
     .line 18
     .line 19
-    const/4 v0, 0x4
+    check-cast v6, LDuk;
 
     .line 20
-    iget-object v1, p0, LMtk;->c:Ljava/lang/String;
-
     .line 21
-    .line 22
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {v5, v3, v4}, LQtk;->b(LQtk;J)Landroid/os/Bundle;
 
+    .line 22
     .line 23
     .line 24
+    move-result-object v7
+
     .line 25
-    const/4 v0, 0x5
+    new-instance v8, LOtk;
 
     .line 26
-    iget-object v1, p0, LMtk;->t:Ljava/lang/String;
-
     .line 27
-    .line 28
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-direct {v8, v5, v2, v1}, LOtk;-><init>(LQtk;LRMi;I)V
 
+    .line 28
     .line 29
     .line 30
-    .line 31
-    const/4 v0, 0x6
+    check-cast v6, Lruk;
 
+    .line 31
     .line 32
-    iget-object v1, p0, LMtk;->X:Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 33
     .line 34
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
-
     .line 35
+    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+
     .line 36
     .line 37
-    const/4 v0, 0x7
-
     .line 38
-    iget-object v1, p0, LMtk;->Y:Ljava/lang/String;
+    move-result-object v9
 
     .line 39
-    .line 40
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    iget-object v10, v6, LYsk;->c:Ljava/lang/String;
 
+    .line 40
     .line 41
+    invoke-virtual {v9, v10}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+
     .line 42
     .line 43
-    const/16 v0, 0x8
-
     .line 44
+    sget v10, LWtk;->a:I
+
     .line 45
-    iget-object v1, p0, LMtk;->Z:Ljava/lang/String;
-
     .line 46
-    .line 47
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-virtual {v9, v1}, Landroid/os/Parcel;->writeInt(I)V
 
+    .line 47
     .line 48
     .line 49
-    .line 50
-    const/16 v0, 0x9
+    invoke-virtual {v7, v9, v0}, Landroid/os/Bundle;->writeToParcel(Landroid/os/Parcel;I)V
 
+    .line 50
     .line 51
     .line 52
-    iget-object v1, p0, LMtk;->e0:Ljava/lang/String;
+    invoke-virtual {v9, v8}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 
     .line 53
     .line 54
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
-
     .line 55
-    .line 56
-    .line 57
-    const/16 v0, 0xa
+    const/4 v7, 0x2
 
+    .line 56
+    invoke-virtual {v6, v7, v9}, LYsk;->e(ILandroid/os/Parcel;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 57
     .line 58
     .line 59
-    iget-object v1, p0, LMtk;->f0:Ljava/lang/String;
+    return-void
 
     .line 60
+    :catch_0
+    move-exception v6
+
     .line 61
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 62
     .line 63
     .line 64
-    const/16 v0, 0xb
+    move-result-object v3
 
     .line 65
+    new-array v1, v1, [Ljava/lang/Object;
+
     .line 66
-    iget-object v1, p0, LMtk;->g0:Ljava/lang/String;
-
     .line 67
-    .line 68
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    aput-object v3, v1, v0
 
+    .line 68
     .line 69
+    const-string v0, "warmUpIntegrityToken(%s)"
+
     .line 70
     .line 71
-    const/16 v0, 0xc
+    iget-object v3, v5, LQtk;->a:LXuk;
 
     .line 72
     .line 73
-    iget-object v1, p0, LMtk;->h0:Ljava/lang/String;
+    invoke-virtual {v3, v6, v0, v1}, LXuk;->a(Landroid/os/RemoteException;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 74
     .line 75
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
-
     .line 76
+    new-instance v0, LOPh;
+
     .line 77
     .line 78
-    const/16 v0, 0xd
+    const/16 v1, -0x64
 
     .line 79
     .line 80
-    iget-object v1, p0, LMtk;->i0:Ljava/lang/String;
+    invoke-direct {v0, v1, v6}, LOPh;-><init>(ILjava/lang/Exception;)V
 
     .line 81
     .line 82
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
-
     .line 83
+    invoke-virtual {v2, v0}, LRMi;->c(Ljava/lang/Exception;)Z
+
     .line 84
     .line 85
-    const/16 v0, 0xe
-
     .line 86
+    return-void
+
     .line 87
-    iget-object v1, p0, LMtk;->j0:Ljava/lang/String;
+    :cond_0
+    new-instance v0, LOPh;
 
     .line 88
     .line 89
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    const/4 v1, -0x2
 
     .line 90
-    .line 91
-    .line 92
-    const/16 v0, 0xf
+    const/4 v2, 0x0
 
+    .line 91
+    invoke-direct {v0, v1, v2}, LOPh;-><init>(ILjava/lang/Exception;)V
+
+    .line 92
     .line 93
     .line 94
-    iget-object v1, p0, LMtk;->k0:Ljava/lang/String;
+    invoke-virtual {p0, v0}, LPtk;->a(Ljava/lang/Exception;)V
 
     .line 95
     .line 96
-    invoke-static {p1, v0, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
-
     .line 97
-    .line 98
-    .line 99
-    invoke-static {p2, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
-
-    .line 100
-    .line 101
-    .line 102
     return-void
 .end method

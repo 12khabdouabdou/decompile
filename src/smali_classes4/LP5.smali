@@ -1,65 +1,138 @@
-.class public abstract LLP5;
-.super Ljava/lang/Object;
+.class public final LLP5;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
-# static fields
-.field public static final a:Le44;
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LMP5;
+
+.field public final synthetic c:Lio/reactivex/rxjava3/core/SingleEmitter;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public synthetic constructor <init>(LMP5;Lio/reactivex/rxjava3/core/SingleEmitter;I)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, LLP5;->a:I
+
+    iput-object p1, p0, LLP5;->b:LMP5;
+
+    iput-object p2, p0, LLP5;->c:Lio/reactivex/rxjava3/core/SingleEmitter;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    sget-object v0, LhC9;->a:LXfi;
+    iget v0, p0, LLP5;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    check-cast p1, Landroid/view/View;
 
     .line 7
-    check-cast v0, Ljava/lang/Boolean;
-
     .line 8
-    .line 9
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    iget-object p1, p0, LLP5;->b:LMP5;
 
+    .line 9
     .line 10
+    iget-object p1, p1, LMP5;->b:LmGc;
+
     .line 11
     .line 12
-    move-result v0
+    const/4 v0, 0x0
 
     .line 13
-    if-eqz v0, :cond_0
+    invoke-virtual {p1, v0}, LmGc;->E(Z)V
 
     .line 14
     .line 15
-    sget-object v0, LKp6;->a:LFP5;
-
     .line 16
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
     .line 17
-    sget-object v0, LQRa;->a:LORa;
-
     .line 18
-    .line 19
-    goto :goto_0
+    iget-object v0, p0, LLP5;->c:Lio/reactivex/rxjava3/core/SingleEmitter;
 
+    .line 19
     .line 20
-    :cond_0
-    sget-object v0, LKp6;->a:LFP5;
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
 
     .line 21
     .line 22
-    :goto_0
-    sput-object v0, LLP5;->a:Le44;
-
     .line 23
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 24
-    return-void
+    .line 25
+    return-object p1
+
+    .line 26
+    :pswitch_0
+    check-cast p1, Landroid/view/View;
+
+    .line 27
+    .line 28
+    iget-object p1, p0, LLP5;->b:LMP5;
+
+    .line 29
+    .line 30
+    iget-object p1, p1, LMP5;->b:LmGc;
+
+    .line 31
+    .line 32
+    const/4 v0, 0x0
+
+    .line 33
+    invoke-virtual {p1, v0}, LmGc;->E(Z)V
+
+    .line 34
+    .line 35
+    .line 36
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 37
+    .line 38
+    iget-object v0, p0, LLP5;->c:Lio/reactivex/rxjava3/core/SingleEmitter;
+
+    .line 39
+    .line 40
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+
+    .line 41
+    .line 42
+    .line 43
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 44
+    .line 45
+    return-object p1
+
+    .line 46
+    nop
+
+    .line 47
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

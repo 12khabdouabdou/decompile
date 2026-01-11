@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/business_ad_creation/BusinessUserInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'email\':s?,\'phoneNumber\':s?,\'countryCode\':s?"
     typeReferences = {}

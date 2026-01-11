@@ -1,202 +1,147 @@
-.class public LvWj;
-.super Lhqj;
+.class public final LvWj;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/venueprofile/VenueProfileExitCallback;
 
 
 # instance fields
-.field public j:Ljava/lang/String;
+.field public final synthetic X:Ljava/lang/String;
 
-.field public k:Ljava/lang/Long;
+.field public final synthetic a:LoId;
 
-.field public l:Ljava/lang/Long;
+.field public final synthetic b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public m:Ljava/lang/Long;
+.field public final synthetic c:Z
 
-.field public n:Ljava/lang/Long;
-
-.field public o:Ljava/lang/Long;
-
-.field public p:Ljava/lang/Long;
-
-.field public q:Ljava/lang/Long;
-
-.field public r:Ljava/lang/Long;
+.field public final synthetic t:LzWj;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(LoId;Lio/reactivex/rxjava3/disposables/CompositeDisposable;ZLzWj;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "WEB_VIEW_SESSION"
-
     .line 4
+    iput-object p1, p0, LvWj;->a:LoId;
+
     .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
     .line 6
+    iput-object p2, p0, LvWj;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
-
     .line 8
+    iput-boolean p3, p0, LvWj;->c:Z
+
     .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
     .line 10
-    .line 11
-    move-object v0, p0
+    iput-object p4, p0, LvWj;->t:LzWj;
 
+    .line 11
     .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
+    iput-object p5, p0, LvWj;->X:Ljava/lang/String;
 
     .line 13
     .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final provideExitCallback(Lkotlin/jvm/functions/Function1;)V
+    .locals 7
 
     .line 1
-    const/4 v0, 0x2
+    iget-object v0, p0, LvWj;->a:LoId;
 
     .line 2
-    new-array v1, v0, [B
-
     .line 3
+    if-eqz v0, :cond_0
+
     .line 4
-    iget-object v2, p0, LvWj;->j:Ljava/lang/String;
-
     .line 5
-    .line 6
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    iget-object v0, v0, LoId;->a:Lio/reactivex/rxjava3/core/Observable;
 
+    .line 6
     .line 7
+    if-eqz v0, :cond_0
+
     .line 8
     .line 9
-    const/4 v0, 0x3
+    new-instance v1, Lbq;
 
     .line 10
-    iget-object v2, p0, LvWj;->k:Ljava/lang/Long;
-
     .line 11
-    .line 12
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    iget-object v4, p0, LvWj;->X:Ljava/lang/String;
 
+    .line 12
     .line 13
+    iget-boolean v2, p0, LvWj;->c:Z
+
     .line 14
     .line 15
-    const/4 v0, 0x5
+    iget-object v3, p0, LvWj;->t:LzWj;
 
     .line 16
-    iget-object v2, p0, LvWj;->q:Ljava/lang/Long;
-
     .line 17
+    const/16 v6, 0xd
+
     .line 18
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
     .line 19
+    move-object v5, p1
+
     .line 20
+    invoke-direct/range {v1 .. v6}, Lbq;-><init>(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 21
-    const/4 v0, 0x7
-
     .line 22
-    iget-object v2, p0, LvWj;->p:Ljava/lang/Long;
-
     .line 23
-    .line 24
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    iget-object p1, p0, LvWj;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 24
     .line 25
+    invoke-static {v0, v1, p1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 26
     .line 27
-    const/16 v0, 0x8
-
     .line 28
-    .line 29
-    iget-object v2, p0, LvWj;->r:Ljava/lang/Long;
-
-    .line 30
-    .line 31
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 32
-    .line 33
-    .line 34
-    const/16 v0, 0x9
-
-    .line 35
-    .line 36
-    iget-object v2, p0, LvWj;->o:Ljava/lang/Long;
-
-    .line 37
-    .line 38
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 39
-    .line 40
-    .line 41
-    const/16 v0, 0xa
-
-    .line 42
-    .line 43
-    iget-object v2, p0, LvWj;->l:Ljava/lang/Long;
-
-    .line 44
-    .line 45
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 46
-    .line 47
-    .line 48
-    const/16 v0, 0xb
-
-    .line 49
-    .line 50
-    iget-object v2, p0, LvWj;->n:Ljava/lang/Long;
-
-    .line 51
-    .line 52
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 53
-    .line 54
-    .line 55
-    const/16 v0, 0xc
-
-    .line 56
-    .line 57
-    iget-object v2, p0, LvWj;->m:Ljava/lang/Long;
-
-    .line 58
-    .line 59
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 60
-    .line 61
-    .line 62
-    invoke-virtual {p1, v1}, LAK3;->m([B)V
-
-    .line 63
-    .line 64
-    .line 65
+    :cond_0
     return-void
 .end method
 
-.method public final d()I
-    .locals 1
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
 
     .line 1
-    const/16 v0, 0x9de
+    sget-object v0, LcF3;->m:LbF3;
 
     .line 2
     .line 3
-    return v0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/venueprofile/VenueProfileExitCallback;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
 .end method

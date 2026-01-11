@@ -53,7 +53,35 @@
 
 
 # virtual methods
-.method public final c(Ljava/lang/Throwable;)V
+.method public final b()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/reactivex/rxjava3/internal/util/NotificationLite;->a:Lio/reactivex/rxjava3/internal/util/NotificationLite;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    iget v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay$UnboundedReplayBuffer;->a:I
+
+    .line 7
+    .line 8
+    add-int/lit8 v0, v0, 0x1
+
+    .line 9
+    .line 10
+    iput v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay$UnboundedReplayBuffer;->a:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Throwable;)V
     .locals 0
 
     .line 1
@@ -82,34 +110,6 @@
 
     .line 13
     .line 14
-    return-void
-.end method
-
-.method public final d()V
-    .locals 1
-
-    .line 1
-    sget-object v0, Lio/reactivex/rxjava3/internal/util/NotificationLite;->a:Lio/reactivex/rxjava3/internal/util/NotificationLite;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    iget v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay$UnboundedReplayBuffer;->a:I
-
-    .line 7
-    .line 8
-    add-int/lit8 v0, v0, 0x1
-
-    .line 9
-    .line 10
-    iput v0, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay$UnboundedReplayBuffer;->a:I
-
-    .line 11
-    .line 12
     return-void
 .end method
 

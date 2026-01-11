@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map/takeover/MapItemData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'id\':s,\'name\':s,\'subtitle\':s?,\'iconUrl\':s,\'overlayBadge\':r?:\'[0]\'"
     typeReferences = {
@@ -56,17 +56,4 @@
     .line 13
     .line 14
     return-void
-.end method
-
-
-# virtual methods
-.method public final getId()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/map/takeover/MapItemData;->_id:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

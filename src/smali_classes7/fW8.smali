@@ -1,77 +1,31 @@
-.class public abstract LfW8;
-.super Ljava/lang/Object;
+.class public final LfW8;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'blizzardLogger\':r:\'[0]\',\'homeSettingsMetrics\':r:\'[1]\',\'isSCPlusUser\':f?(): b@,\'dismissPage\':f(),\'onTapSave\':f(r:\'[2]\'),\'onHomeModelUpdated\':f(r:\'[3]\', r<e>:\'[4]\')"
+    typeReferences = {
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/places/home/HomeSettingsMetrics;,
+        Lcom/snap/composer/location/GeoPoint;,
+        Lcom/snap/places/home/Home3DModel;,
+        Lcom/snap/places/home/HomeModelUpdateType;
+    }
+.end annotation
+
+
 # direct methods
-.method public static getRankedGroupMembers(Lcom/snap/profile/communities/IMembersDataProvider;Ljava/lang/String;DLjava/lang/Double;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+.method public constructor <init>()V
     .locals 0
-    .annotation runtime LUy3;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/profile/communities/IMembersDataProvider;",
-            "Ljava/lang/String;",
-            "D",
-            "Ljava/lang/Double;",
-            ")",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/util/List<",
-            "Lrqj;",
-            ">;>;"
-        }
-    .end annotation
 
     .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string p1, "Unimplemented method"
-
     .line 4
-    .line 5
-    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p0
-.end method
-
-.method public static observeGroupMembersWithActiveGroupSnap(Lcom/snap/profile/communities/IMembersDataProvider;Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .locals 0
-    .annotation runtime LUy3;
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/profile/communities/IMembersDataProvider;",
-            "Ljava/lang/String;",
-            ")",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;>;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
-
-    .line 2
-    .line 3
-    const-string p1, "Unimplemented method"
-
-    .line 4
-    .line 5
-    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p0
+    return-void
 .end method

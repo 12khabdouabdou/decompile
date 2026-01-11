@@ -1,10 +1,10 @@
 .class public final Lcom/snap/contextcards/lib/composer/ModalPresentationInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'requestType\':s,\'requestParams\':m<s,u>,\'style\':s,\'height\':d@?,\'allowSwipeToDismiss\':b@?"
     typeReferences = {}

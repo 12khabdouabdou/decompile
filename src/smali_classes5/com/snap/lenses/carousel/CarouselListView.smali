@@ -16,17 +16,17 @@
 
 .field public D1:I
 
-.field public final E1:Lv6c;
+.field public final E1:Ldlc;
 
-.field public F1:LIo2;
+.field public F1:Lyr2;
 
-.field public G1:LBGe;
+.field public G1:LkYe;
 
-.field public H1:Lq1;
+.field public H1:LJ1;
 
 .field public I1:Landroidx/recyclerview/widget/LinearLayoutManager;
 
-.field public J1:Lhma;
+.field public J1:Lwya;
 
 .field public K1:D
 
@@ -34,11 +34,11 @@
 
 .field public M1:Z
 
-.field public final N1:LPp2;
+.field public final N1:LFs2;
 
 .field public final O1:Landroid/graphics/Rect;
 
-.field public P1:LzR;
+.field public P1:LHT;
 
 .field public final Q1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
@@ -48,7 +48,7 @@
 
 .field public T1:Z
 
-.field public z1:LTq2;
+.field public z1:LEt2;
 
 
 # direct methods
@@ -94,16 +94,16 @@
     iput p3, p0, Lcom/snap/lenses/carousel/CarouselListView;->D1:I
 
     .line 7
-    new-instance p3, Lv6c;
+    new-instance p3, Ldlc;
 
-    invoke-direct {p3}, Lv6c;-><init>()V
+    invoke-direct {p3}, Ldlc;-><init>()V
 
-    iput-object p3, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Lv6c;
+    iput-object p3, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Ldlc;
 
     .line 8
-    sget-object v0, LHo2;->a:LHo2;
+    sget-object v0, Lxr2;->a:Lxr2;
 
-    iput-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->F1:LIo2;
+    iput-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->F1:Lyr2;
 
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
@@ -116,13 +116,13 @@
     iput-boolean v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->M1:Z
 
     .line 11
-    new-instance v1, LPp2;
+    new-instance v1, LFs2;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v2, p0}, LPp2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LFs2;-><init>(ILjava/lang/Object;)V
 
-    iput-object v1, p0, Lcom/snap/lenses/carousel/CarouselListView;->N1:LPp2;
+    iput-object v1, p0, Lcom/snap/lenses/carousel/CarouselListView;->N1:LFs2;
 
     .line 12
     new-instance v1, Landroid/graphics/Rect;
@@ -163,7 +163,7 @@
     if-eqz p2, :cond_1
 
     .line 20
-    sget-object v2, Lqve;->a:[I
+    sget-object v2, LZMe;->a:[I
 
     invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -209,15 +209,15 @@
     .line 25
     :cond_1
     :goto_0
-    new-instance p1, LHp2;
+    new-instance p1, Lws2;
 
-    invoke-direct {p1, p0}, LHp2;-><init>(Lcom/snap/lenses/carousel/CarouselListView;)V
+    invoke-direct {p1, p0}, Lws2;-><init>(Lcom/snap/lenses/carousel/CarouselListView;)V
 
     .line 26
-    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView;->i1:LKGe;
+    iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView;->i1:LtYe;
 
     .line 27
-    invoke-static {p0, p1}, LDIj;->n(Landroid/view/View;Lp4;)V
+    invoke-static {p0, p1}, Lb8k;->n(Landroid/view/View;LU4;)V
 
     .line 28
     invoke-virtual {p0, v1}, Landroid/view/View;->setLayoutDirection(I)V
@@ -225,10 +225,10 @@
     const/4 p1, 0x0
 
     .line 29
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->F0(LfB5;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->F0(LdF5;)V
 
     .line 30
-    iput-object p3, p0, Landroidx/recyclerview/widget/RecyclerView;->T0:LzGe;
+    iput-object p3, p0, Landroidx/recyclerview/widget/RecyclerView;->T0:LiYe;
 
     return-void
 .end method
@@ -237,7 +237,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 2
     .line 3
@@ -245,7 +245,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1}, LwGe;->b0(Landroid/view/View;)I
+    invoke-static {p1}, LfYe;->g0(Landroid/view/View;)I
 
     .line 6
     .line 7
@@ -288,7 +288,7 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 25
     .line 26
@@ -296,7 +296,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {v0}, LwGe;->p()Z
+    invoke-virtual {v0}, LfYe;->u()Z
 
     .line 29
     .line 30
@@ -319,7 +319,7 @@
     move-result p1
 
     .line 39
-    sget-object v0, LMp2;->f:LMp2;
+    sget-object v0, LBs2;->f:LBs2;
 
     .line 40
     .line 41
@@ -328,11 +328,11 @@
     .line 42
     .line 43
     .line 44
-    new-instance v1, LKp2;
+    new-instance v1, Lzs2;
 
     .line 45
     .line 46
-    invoke-direct {v1, p1, v0}, LKp2;-><init>(ILdjk;)V
+    invoke-direct {v1, p1, v0}, Lzs2;-><init>(ILwIk;)V
 
     .line 47
     .line 48
@@ -350,7 +350,7 @@
     return-void
 .end method
 
-.method public static U0(Lcom/snap/lenses/carousel/CarouselListView;ILdjk;Z)V
+.method public static U0(Lcom/snap/lenses/carousel/CarouselListView;ILwIk;Z)V
     .locals 0
 
     .line 1
@@ -364,11 +364,11 @@
     .line 5
     .line 6
     .line 7
-    new-instance p3, LKp2;
+    new-instance p3, Lzs2;
 
     .line 8
     .line 9
-    invoke-direct {p3, p1, p2}, LKp2;-><init>(ILdjk;)V
+    invoke-direct {p3, p1, p2}, Lzs2;-><init>(ILwIk;)V
 
     .line 10
     .line 11
@@ -387,11 +387,11 @@
 
 
 # virtual methods
-.method public final I0(LzGe;)V
+.method public final I0(LiYe;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Lv6c;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Ldlc;
 
     .line 2
     .line 3
@@ -399,7 +399,7 @@
 
     .line 4
     .line 5
-    iget-object v1, v0, Lv6c;->a:LzGe;
+    iget-object v1, v0, Ldlc;->a:LiYe;
 
     .line 6
     .line 7
@@ -429,7 +429,7 @@
     .line 18
     :cond_1
     :goto_0
-    iput-object p1, v0, Lv6c;->a:LzGe;
+    iput-object p1, v0, Ldlc;->a:LiYe;
 
     .line 19
     .line 20
@@ -451,7 +451,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0, v1}, LI0j;->J(D)I
+    invoke-static {v0, v1}, LbS2;->J(D)I
 
     .line 7
     .line 8
@@ -553,7 +553,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 2
     .line 3
@@ -561,7 +561,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, LwGe;->D(I)Landroid/view/View;
+    invoke-virtual {v0, p1}, LfYe;->I(I)Landroid/view/View;
 
     .line 6
     .line 7
@@ -658,7 +658,7 @@
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->P1:LzR;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->P1:LHT;
 
     .line 6
     .line 7
@@ -674,7 +674,7 @@
     const/4 v0, 0x0
 
     .line 13
-    iput-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->P1:LzR;
+    iput-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->P1:LHT;
 
     .line 14
     .line 15
@@ -695,7 +695,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->f0()Z
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->g0()Z
 
     .line 24
     .line 25
@@ -707,19 +707,19 @@
 
     .line 28
     .line 29
-    new-instance p2, LzR;
+    new-instance p2, LHT;
 
     .line 30
     .line 31
     const/4 v0, 0x7
 
     .line 32
-    invoke-direct {p2, p0, p1, v0}, LzR;-><init>(Ljava/lang/Object;II)V
+    invoke-direct {p2, p0, p1, v0}, LHT;-><init>(Ljava/lang/Object;II)V
 
     .line 33
     .line 34
     .line 35
-    iput-object p2, p0, Lcom/snap/lenses/carousel/CarouselListView;->P1:LzR;
+    iput-object p2, p0, Lcom/snap/lenses/carousel/CarouselListView;->P1:LHT;
 
     .line 36
     .line 37
@@ -757,7 +757,7 @@
 
     .line 2
     .line 3
-    instance-of v1, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;
+    instance-of v1, v0, Lezg;
 
     .line 4
     .line 5
@@ -765,7 +765,7 @@
 
     .line 6
     .line 7
-    check-cast v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;
+    check-cast v0, Lezg;
 
     .line 8
     .line 9
@@ -785,49 +785,53 @@
 
     .line 14
     :cond_1
-    iget-boolean v1, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->g0:Z
+    check-cast v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;
 
     .line 15
     .line 16
-    if-ne v1, p1, :cond_2
+    iget-boolean v1, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->e0:Z
 
     .line 17
     .line 18
+    if-ne v1, p1, :cond_2
+
+    .line 19
+    .line 20
     :goto_1
     return-void
 
-    .line 19
-    :cond_2
-    iput-boolean p1, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->g0:Z
-
-    .line 20
     .line 21
-    invoke-virtual {v0, p1}, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->k2(Z)V
+    :cond_2
+    iput-boolean p1, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->e0:Z
 
     .line 22
     .line 23
-    .line 24
-    iget-boolean p1, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->g0:Z
+    invoke-virtual {v0, p1}, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->j2(Z)V
 
+    .line 24
     .line 25
     .line 26
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    iget-boolean p1, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->e0:Z
 
     .line 27
     .line 28
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 29
+    .line 30
+    .line 31
     move-result-object p1
 
-    .line 30
-    iget-object v0, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->f0:LRg2;
-
-    .line 31
     .line 32
-    invoke-virtual {v0, p1}, LRg2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, v0, Lcom/snap/lenses/carousel/CollapsibleLoopingCarouselLayoutManager;->d0:LFD1;
 
     .line 33
     .line 34
+    invoke-virtual {v0, p1}, LFD1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
     return-void
 .end method
 
@@ -843,7 +847,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, p1}, LEp2;->e(Z)V
+    invoke-interface {v0, p1}, Lts2;->f(Z)V
 
     .line 6
     .line 7
@@ -862,7 +866,7 @@
     .line 13
     .line 14
     .line 15
-    iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LwGe;
+    iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView;->m0:LfYe;
 
     .line 16
     .line 17
@@ -874,7 +878,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p1, p2}, LwGe;->P0(I)V
+    invoke-virtual {p1, p2}, LfYe;->U0(I)V
 
     .line 22
     .line 23
@@ -895,7 +899,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->z1:LTq2;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->z1:LEt2;
 
     .line 5
     .line 6
@@ -903,7 +907,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->t0(LuGe;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->t0(LdYe;)V
 
     .line 9
     .line 10
@@ -969,7 +973,7 @@
     .line 39
     .line 40
     :cond_2
-    new-instance p1, LTq2;
+    new-instance p1, LEt2;
 
     .line 41
     .line 42
@@ -980,16 +984,16 @@
     const/4 v1, 0x0
 
     .line 45
-    invoke-direct {p1, v0, v1}, LTq2;-><init>(II)V
+    invoke-direct {p1, v0, v1}, LEt2;-><init>(II)V
 
     .line 46
     .line 47
     .line 48
-    iput-object p1, p0, Lcom/snap/lenses/carousel/CarouselListView;->z1:LTq2;
+    iput-object p1, p0, Lcom/snap/lenses/carousel/CarouselListView;->z1:LEt2;
 
     .line 49
     .line 50
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
 
     .line 51
     .line 52
@@ -1021,7 +1025,7 @@
 
     .line 10
     :cond_0
-    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->O(I)LJGe;
+    invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView;->O(I)LsYe;
 
     .line 11
     .line 12
@@ -1036,7 +1040,7 @@
 
     .line 16
     .line 17
-    iget-object v1, v1, LJGe;->a:Landroid/view/View;
+    iget-object v1, v1, LsYe;->a:Landroid/view/View;
 
     .line 18
     .line 19
@@ -1065,7 +1069,7 @@
     .line 27
     .line 28
     :goto_1
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->O(I)LJGe;
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->O(I)LsYe;
 
     .line 29
     .line 30
@@ -1077,7 +1081,7 @@
 
     .line 33
     .line 34
-    iget-object v2, v0, LJGe;->a:Landroid/view/View;
+    iget-object v2, v0, LsYe;->a:Landroid/view/View;
 
     .line 35
     .line 36
@@ -1149,15 +1153,15 @@
     return p1
 .end method
 
-.method public final d0()LzGe;
+.method public final d0()LiYe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Lv6c;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Ldlc;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lv6c;->a:LzGe;
+    iget-object v0, v0, Ldlc;->a:LiYe;
 
     .line 4
     .line 5
@@ -1181,7 +1185,7 @@
     move-result-object v0
 
     .line 8
-    iget-object v1, p0, Lcom/snap/lenses/carousel/CarouselListView;->N1:LPp2;
+    iget-object v1, p0, Lcom/snap/lenses/carousel/CarouselListView;->N1:LFs2;
 
     .line 9
     .line 10
@@ -1190,7 +1194,7 @@
     .line 11
     .line 12
     .line 13
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->G1:LBGe;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->G1:LkYe;
 
     .line 14
     .line 15
@@ -1198,17 +1202,17 @@
 
     .line 16
     .line 17
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     .line 18
     .line 19
     .line 20
     :cond_0
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Lv6c;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->E1:Ldlc;
 
     .line 21
     .line 22
-    iget-object v0, v0, Lv6c;->a:LzGe;
+    iget-object v0, v0, Ldlc;->a:LiYe;
 
     .line 23
     .line 24
@@ -1216,7 +1220,7 @@
 
     .line 25
     .line 26
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->J1:Lhma;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->J1:Lwya;
 
     .line 27
     .line 28
@@ -1224,7 +1228,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v0, p0}, LcHg;->b(Landroidx/recyclerview/widget/RecyclerView;)V
+    invoke-virtual {v0, p0}, LM2h;->b(Landroidx/recyclerview/widget/RecyclerView;)V
 
     .line 31
     .line 32
@@ -1242,7 +1246,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->G1:LBGe;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->G1:LkYe;
 
     .line 5
     .line 6
@@ -1250,13 +1254,13 @@
 
     .line 7
     .line 8
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->w0(LBGe;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->w0(LkYe;)V
 
     .line 9
     .line 10
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->J1:Lhma;
+    iget-object v0, p0, Lcom/snap/lenses/carousel/CarouselListView;->J1:Lwya;
 
     .line 12
     .line 13
@@ -1267,7 +1271,7 @@
     const/4 v1, 0x0
 
     .line 16
-    invoke-virtual {v0, v1}, LcHg;->b(Landroidx/recyclerview/widget/RecyclerView;)V
+    invoke-virtual {v0, v1}, LM2h;->b(Landroidx/recyclerview/widget/RecyclerView;)V
 
     .line 17
     .line 18
@@ -1288,7 +1292,7 @@
     move-object p1, p0
 
     .line 5
-    iget-object p2, p1, Lcom/snap/lenses/carousel/CarouselListView;->F1:LIo2;
+    iget-object p2, p1, Lcom/snap/lenses/carousel/CarouselListView;->F1:Lyr2;
 
     .line 6
     .line 7

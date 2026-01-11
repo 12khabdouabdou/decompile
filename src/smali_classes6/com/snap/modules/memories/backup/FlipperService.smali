@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LIy7;
+    proxyClass = LBD7;
     schema = "\'logMemoriesData\':f|m|(s, m<s,u>)"
     typeReferences = {}
 .end annotation

@@ -58,7 +58,7 @@
 
 
 # virtual methods
-.method public final u(Lio/reactivex/rxjava3/core/SingleObserver;)V
+.method public final t(Lio/reactivex/rxjava3/core/SingleObserver;)V
     .locals 3
 
     .line 1
@@ -83,7 +83,7 @@
 
     .line 11
     .line 12
-    invoke-interface {p1, v0}, LZne;->subscribe(LV6i;)V
+    invoke-interface {p1, v0}, LSFe;->subscribe(Lmvi;)V
 
     .line 13
     .line 14

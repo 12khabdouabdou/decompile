@@ -1,35 +1,190 @@
-.class public interface abstract LB0a;
-.super Ljava/lang/Object;
+.class public final LB0a;
+.super LRP3;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LCR5;
+# instance fields
+.field public final a:LTBe;
+
+.field public final b:Lrxj;
+
+.field public final c:LUW5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(LTBe;Lrxj;LUW5;)V
+    .locals 0
 
     .line 1
-    sget-object v0, LCR5;->y0:LCR5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sput-object v0, LB0a;->a:LCR5;
-
     .line 4
+    iput-object p1, p0, LB0a;->a:LTBe;
+
     .line 5
+    .line 6
+    iput-object p2, p0, LB0a;->b:Lrxj;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LB0a;->c:LUW5;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public abstract a([LcN9;)Ljava/util/Map;
-.end method
+.method public final a(Lv67;)Lio/reactivex/rxjava3/core/Single;
+    .locals 3
 
-.method public abstract b(Lo09;[Lw0a;LD87;)Ljava/util/Map;
-.end method
+    .line 1
+    iget-object v0, p1, Lv67;->c:LM27;
 
-.method public abstract c(Lo09;Ljava/util/Map;)Z
+    .line 2
+    .line 3
+    instance-of v1, v0, LJ27;
+
+    .line 4
+    .line 5
+    if-eqz v1, :cond_0
+
+    .line 6
+    .line 7
+    check-cast v0, LJ27;
+
+    .line 8
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 11
+    :goto_0
+    if-eqz v0, :cond_2
+
+    .line 12
+    .line 13
+    iget-object v1, v0, LJ27;->h:LIIj;
+
+    .line 14
+    .line 15
+    instance-of v2, v1, LEIj;
+
+    .line 16
+    .line 17
+    if-eqz v2, :cond_1
+
+    .line 18
+    .line 19
+    check-cast v1, LEIj;
+
+    .line 20
+    .line 21
+    iget-object p1, p0, LB0a;->a:LTBe;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, v1}, LTBe;->a(LEIj;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    goto :goto_1
+
+    .line 28
+    :cond_1
+    new-instance v1, Lhxj;
+
+    .line 29
+    .line 30
+    new-instance v2, Lqxj;
+
+    .line 31
+    .line 32
+    iget-object v0, v0, LJ27;->a:LY79;
+
+    .line 33
+    .line 34
+    invoke-direct {v2, v0}, Lqxj;-><init>(LY79;)V
+
+    .line 35
+    .line 36
+    .line 37
+    iget-object p1, p1, Lv67;->a:LXA5;
+
+    .line 38
+    .line 39
+    iget-object v0, p0, LB0a;->c:LUW5;
+
+    .line 40
+    .line 41
+    invoke-virtual {v0, p1}, LUW5;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p1
+
+    .line 45
+    check-cast p1, Loxj;
+
+    .line 46
+    .line 47
+    invoke-direct {v1, v2, p1}, Lhxj;-><init>(Lqxj;Loxj;)V
+
+    .line 48
+    .line 49
+    .line 50
+    iget-object p1, p0, LB0a;->b:Lrxj;
+
+    .line 51
+    .line 52
+    invoke-interface {p1, v1}, Lrxj;->a(LPNk;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    :goto_1
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 57
+    .line 58
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Completable;->A(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p1
+
+    .line 62
+    return-object p1
+
+    .line 63
+    :cond_2
+    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 64
+    .line 65
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 66
+    .line 67
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
+    .line 68
+    .line 69
+    .line 70
+    return-object v0
 .end method

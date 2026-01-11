@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/sendflow_api/SendRequest;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'snap\':r:\'[0]\',\'config\':r:\'[1]\'"
     typeReferences = {

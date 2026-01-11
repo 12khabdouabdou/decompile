@@ -4,13 +4,11 @@
 
 
 # instance fields
-.field public final a:LVpa;
-
-.field public final b:LeNe;
+.field public final a:Lio/reactivex/rxjava3/core/Single;
 
 
 # direct methods
-.method public constructor <init>(Lnwf;LYEc;LVpa;LeNe;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Single;)V
     .locals 0
 
     .line 1
@@ -19,53 +17,9 @@
     .line 2
     .line 3
     .line 4
-    iput-object p3, p0, LIqa;->a:LVpa;
+    iput-object p1, p0, LIqa;->a:Lio/reactivex/rxjava3/core/Single;
 
     .line 5
     .line 6
-    iput-object p4, p0, LIqa;->b:LeNe;
-
-    .line 7
-    .line 8
-    sget-object p2, Lbya;->Z:Lbya;
-
-    .line 9
-    .line 10
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string p3, "LiveLocationPushHandlerImpl"
-
-    .line 14
-    .line 15
-    invoke-static {p3}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 16
-    .line 17
-    .line 18
-    sget-object p4, Lrn0;->a:Lrn0;
-
-    .line 19
-    .line 20
-    new-instance p4, LWm0;
-
-    .line 21
-    .line 22
-    invoke-direct {p4, p2, p3}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
-
-    .line 23
-    .line 24
-    .line 25
-    check-cast p1, LIP5;
-
-    .line 26
-    .line 27
-    invoke-virtual {p1, p4}, LIP5;->a(LWm0;)LBre;
-
-    .line 28
-    .line 29
-    .line 30
     return-void
 .end method

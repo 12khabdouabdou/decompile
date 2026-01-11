@@ -1,29 +1,84 @@
-.class public final LAVc;
-.super Lzek;
+.class public final synthetic LAVc;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-# static fields
-.field public static final c:LAVc;
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LMSc;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public synthetic constructor <init>(LMSc;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LAVc;->a:I
+
+    iput-object p1, p0, LAVc;->b:LMSc;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    new-instance v0, LAVc;
+    iget v0, p0, LAVc;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, LAVc;->c:LAVc;
+    check-cast p1, LpSc;
 
     .line 7
     .line 8
+    iget-object v0, p0, LAVc;->b:LMSc;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, p1}, LMSc;->b(LpSc;)V
+
+    .line 11
+    .line 12
+    .line 13
     return-void
+
+    .line 14
+    :pswitch_0
+    check-cast p1, LpSc;
+
+    .line 15
+    .line 16
+    iget-object v0, p0, LAVc;->b:LMSc;
+
+    .line 17
+    .line 18
+    invoke-interface {v0, p1}, LMSc;->a(LpSc;)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+
+    .line 22
+    nop
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,252 +1,366 @@
 .class public final LTg;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function2;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/lang/String;
 
-.field public final synthetic b:Lah;
+.field public final b:Ljava/lang/String;
+
+.field public final c:LLq;
+
+.field public final d:J
+
+.field public final e:J
+
+.field public final f:Z
+
+.field public final g:Z
+
+.field public final h:Z
+
+.field public final i:J
 
 
 # direct methods
-.method public synthetic constructor <init>(Lah;I)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;LLq;JJZZZJ)V
     .locals 0
 
     .line 1
-    iput p2, p0, LTg;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LTg;->b:Lah;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LTg;->a:Ljava/lang/String;
 
-    const/4 p1, 0x2
+    .line 5
+    .line 6
+    iput-object p2, p0, LTg;->b:Ljava/lang/String;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 7
+    .line 8
+    iput-object p3, p0, LTg;->c:LLq;
 
+    .line 9
+    .line 10
+    iput-wide p4, p0, LTg;->d:J
+
+    .line 11
+    .line 12
+    iput-wide p6, p0, LTg;->e:J
+
+    .line 13
+    .line 14
+    iput-boolean p8, p0, LTg;->f:Z
+
+    .line 15
+    .line 16
+    iput-boolean p9, p0, LTg;->g:Z
+
+    .line 17
+    .line 18
+    iput-boolean p10, p0, LTg;->h:Z
+
+    .line 19
+    .line 20
+    iput-wide p11, p0, LTg;->i:J
+
+    .line 21
+    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 9
+.method public final a()Z
+    .locals 1
 
     .line 1
-    iget v0, p0, LTg;->a:I
+    iget-boolean v0, p0, LTg;->h:Z
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 13
+    :goto_0
+    const-class v1, LTg;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    const/4 p1, 0x0
+
+    .line 22
+    return p1
+
+    .line 23
+    :cond_2
+    check-cast p1, LTg;
+
+    .line 24
+    .line 25
+    iget-object v0, p0, LTg;->b:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iget-object p1, p1, LTg;->b:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p1
+
+    .line 33
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LTg;->b:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/util/List;
+    move-result v0
 
     .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "AdCacheEntry(adCacheUrl="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
-    check-cast p2, Ljava/lang/Number;
+    iget-object v1, p0, LTg;->a:Ljava/lang/String;
 
     .line 9
     .line 10
-    invoke-virtual {p2}, Ljava/lang/Number;->doubleValue()D
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    move-result-wide v0
+    const-string v1, ", cacheEntryId="
 
     .line 14
-    check-cast p1, Ljava/lang/Iterable;
-
     .line 15
-    .line 16
-    new-instance p2, Ljava/util/ArrayList;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 16
     .line 17
     .line 18
-    const/16 v2, 0xa
+    iget-object v1, p0, LTg;->b:Ljava/lang/String;
 
     .line 19
     .line 20
-    invoke-static {p1, v2}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    move-result v2
+    const-string v1, ", adResponsePayload="
 
     .line 24
-    invoke-direct {p2, v2}, Ljava/util/ArrayList;-><init>(I)V
-
     .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 26
     .line 27
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 28
+    iget-object v1, p0, LTg;->c:LLq;
+
     .line 29
     .line 30
-    move-result-object p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 31
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
     .line 32
     .line 33
-    .line 34
-    move-result v2
+    const-string v1, ", creationTimestamp="
 
+    .line 34
     .line 35
-    if-eqz v2, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
     .line 37
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 38
+    iget-wide v1, p0, LTg;->d:J
+
     .line 39
     .line 40
-    move-result-object v2
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 41
-    check-cast v2, Lfo;
-
     .line 42
     .line 43
-    new-instance v3, LGci;
+    const-string v1, ", expiringTimestamp="
 
     .line 44
     .line 45
-    invoke-virtual {v2}, Lfo;->a()Ljava/util/List;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 46
     .line 47
     .line 48
-    move-result-object v4
+    iget-wide v1, p0, LTg;->e:J
 
     .line 49
-    invoke-virtual {v2}, Lfo;->e()Ljava/lang/Double;
-
     .line 50
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 51
     .line 52
-    move-result-object v6
-
     .line 53
-    invoke-virtual {v2}, Lfo;->c()Ljava/lang/Double;
+    const-string v1, ", isPrimary="
 
     .line 54
     .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 56
-    move-result-object v7
-
     .line 57
-    invoke-virtual {v2}, Lfo;->b()Ljava/lang/String;
-
     .line 58
+    iget-boolean v1, p0, LTg;->f:Z
+
     .line 59
     .line 60
-    move-result-object v5
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 61
-    invoke-virtual {v2}, Lfo;->d()Ljava/lang/Double;
-
     .line 62
     .line 63
-    .line 64
-    move-result-object v8
+    const-string v1, ", isShadow="
 
+    .line 64
     .line 65
-    invoke-direct/range {v3 .. v8}, LGci;-><init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 66
     .line 67
     .line 68
-    invoke-virtual {p2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    iget-boolean v1, p0, LTg;->g:Z
 
     .line 69
     .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
     .line 71
-    goto :goto_0
-
     .line 72
-    :cond_0
-    iget-object p1, p0, LTg;->b:Lah;
-
     .line 73
+    const-string v1, ", fromPrefetchRequest="
+
     .line 74
-    new-instance v2, LIci;
-
     .line 75
-    .line 76
-    invoke-direct {v2, p2, v0, v1}, LIci;-><init>(Ljava/util/ArrayList;D)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 76
     .line 77
     .line 78
+    iget-boolean v1, p0, LTg;->h:Z
+
     .line 79
-    iget-object p1, p1, Lah;->t:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 80
-    .line 81
-    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 81
     .line 82
     .line 83
+    const-string v1, ", backCacheExpirationTimestamp="
+
     .line 84
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 85
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 86
-    return-object p1
-
     .line 87
-    :pswitch_0
-    check-cast p1, Ljava/lang/Number;
-
     .line 88
-    .line 89
-    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
+    iget-wide v1, p0, LTg;->i:J
 
+    .line 89
     .line 90
+    const-string v3, ")"
+
     .line 91
     .line 92
-    move-result-wide v0
+    invoke-static {v0, v1, v2, v3}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 93
-    check-cast p2, Ljava/lang/Number;
-
     .line 94
     .line 95
-    invoke-virtual {p2}, Ljava/lang/Number;->doubleValue()D
+    move-result-object v0
 
     .line 96
-    .line 97
-    .line 98
-    move-result-wide p1
-
-    .line 99
-    iget-object v2, p0, LTg;->b:Lah;
-
-    .line 100
-    .line 101
-    invoke-static {v2, v0, v1, p1, p2}, Lah;->b(Lah;DD)V
-
-    .line 102
-    .line 103
-    .line 104
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 105
-    .line 106
-    return-object p1
-
-    .line 107
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

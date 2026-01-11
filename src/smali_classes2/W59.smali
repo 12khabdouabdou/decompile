@@ -1,39 +1,298 @@
 .class public final LW59;
-.super La69;
+.super LMk5;
 .source "SourceFile"
 
 
-# instance fields
-.field public final c:Ljava/util/List;
-
-.field public final d:Lapp/aifactory/sdk/api/model/ReenactmentCacheType;
+# static fields
+.field public static final c:LW59;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;ILapp/aifactory/sdk/api/model/ReenactmentCacheType;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    new-instance v0, LW59;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    sget-object v1, LCI8;->l1:LCI8;
 
+    .line 4
     .line 5
-    invoke-direct {p0, v0, p2}, La69;-><init>(II)V
+    iget-object v1, v1, LPd0;->I0:Lpg5;
 
     .line 6
     .line 7
+    sget-object v2, Lqg5;->X:Lqg5;
+
     .line 8
-    iput-object p1, p0, LW59;->c:Ljava/util/List;
+    .line 9
+    invoke-direct {v0, v1, v2}, LMk5;-><init>(Lpg5;Lqg5;)V
+
+    .line 10
+    .line 11
+    .line 12
+    sput-object v0, LW59;->c:LW59;
+
+    .line 13
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A(J)J
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Lpg5;->A(J)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
+
+    .line 7
+    return-wide p1
+.end method
+
+.method public final B(J)J
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Lpg5;->B(J)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
+
+    .line 7
+    return-wide p1
+.end method
+
+.method public final C(IJ)J
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lpg5;->q()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    invoke-static {p0, p1, v2, v1}, LMsi;->M(Lpg5;III)V
 
     .line 9
     .line 10
-    iput-object p3, p0, LW59;->d:Lapp/aifactory/sdk/api/model/ReenactmentCacheType;
-
     .line 11
+    invoke-virtual {v0, p2, p3}, Lpg5;->c(J)I
+
     .line 12
-    return-void
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    if-gez v1, :cond_0
+
+    .line 16
+    .line 17
+    neg-int p1, p1
+
+    .line 18
+    :cond_0
+    invoke-virtual {v0, p1, p2, p3}, Lpg5;->C(IJ)J
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-wide p1
+
+    .line 22
+    return-wide p1
+.end method
+
+.method public final a(IJ)J
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3}, Lpg5;->a(IJ)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
+
+    .line 7
+    return-wide p1
+.end method
+
+.method public final b(JJ)J
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3, p4}, Lpg5;->b(JJ)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
+
+    .line 7
+    return-wide p1
+.end method
+
+.method public final c(J)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Lpg5;->c(J)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    if-gez p1, :cond_0
+
+    .line 8
+    .line 9
+    neg-int p1, p1
+
+    .line 10
+    :cond_0
+    return p1
+.end method
+
+.method public final l(JJ)I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3, p4}, Lpg5;->l(JJ)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p1
+
+    .line 7
+    return p1
+.end method
+
+.method public final m(JJ)J
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2, p3, p4}, Lpg5;->m(JJ)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
+
+    .line 7
+    return-wide p1
+.end method
+
+.method public final q()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lpg5;->q()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final t()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final v()LkG6;
+    .locals 1
+
+    .line 1
+    sget-object v0, LCI8;->l1:LCI8;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, LPd0;->p0:LkG6;
+
+    .line 4
+    .line 5
+    return-object v0
+.end method
+
+.method public final z(J)J
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LMk5;->b:Lpg5;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1, p2}, Lpg5;->z(J)J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide p1
+
+    .line 7
+    return-wide p1
 .end method

@@ -1,54 +1,36 @@
-.class public final LV69;
-.super LH2;
+.class public interface abstract LV69;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/composer/utils/ComposerMarshallable;
 
-# instance fields
-.field public final c:LY69;
 
-
-# direct methods
-.method public constructor <init>(LY69;I)V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    invoke-direct {p0, v0, p2}, LH2;-><init>(II)V
-
-    .line 6
-    .line 7
-    .line 8
-    iput-object p1, p0, LV69;->c:LY69;
-
-    .line 9
-    .line 10
-    return-void
-.end method
+# annotations
+.annotation runtime LpA3;
+    propertyReplacements = ""
+    proxyClass = LW69;
+    schema = "\'upload\':f|m|(r:\'[0]\'): p<r:\'[1]\'>"
+    typeReferences = {
+        Lcom/snap/modules/upload/UploadRequest;,
+        LvGj;
+    }
+.end annotation
 
 
 # virtual methods
-.method public final a(I)Ljava/lang/Object;
-    .locals 1
+.method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+.end method
 
-    .line 1
-    iget-object v0, p0, LV69;->c:LY69;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
+.method public abstract upload(Lcom/snap/modules/upload/UploadRequest;)Lcom/snap/composer/promise/Promise;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/modules/upload/UploadRequest;",
+            ")",
+            "Lcom/snap/composer/promise/Promise<",
+            "LvGj;",
+            ">;"
+        }
+    .end annotation
 .end method

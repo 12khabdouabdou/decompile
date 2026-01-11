@@ -8,19 +8,19 @@
 
 
 # instance fields
-.field public final V0:Lrn0;
+.field public final V0:LJp0;
 
 .field public volatile W0:Z
 
 .field public volatile X0:Z
 
-.field public Y0:LQH4;
+.field public Y0:LxM4;
 
 .field public Z0:Lio/reactivex/rxjava3/core/Single;
 
-.field public a1:Lnwf;
+.field public a1:LyPf;
 
-.field public final b1:LXfi;
+.field public final b1:LREi;
 
 .field public c1:Landroid/view/TextureView;
 
@@ -30,7 +30,7 @@
 
 .field public f1:Landroid/view/View;
 
-.field public g1:LtL5;
+.field public g1:LVr5;
 
 .field public final h1:I
 
@@ -69,7 +69,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LqV2;->Z:LqV2;
+    sget-object v0, LUX2;->Z:LUX2;
 
     .line 5
     .line 6
@@ -87,11 +87,11 @@
     .line 12
     .line 13
     .line 14
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 15
     .line 16
-    iput-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->V0:Lrn0;
+    iput-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->V0:LJp0;
 
     .line 17
     .line 18
@@ -102,33 +102,33 @@
 
     .line 20
     .line 21
-    new-instance v0, LkO2;
+    new-instance v0, LkW2;
 
     .line 22
     .line 23
-    const/16 v1, 0x12
+    const/16 v1, 0xb
 
     .line 24
     .line 25
-    invoke-direct {v0, v1, p0}, LkO2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LkW2;-><init>(ILjava/lang/Object;)V
 
     .line 26
     .line 27
     .line 28
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 29
     .line 30
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 31
     .line 32
     .line 33
-    iput-object v1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LXfi;
+    iput-object v1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LREi;
 
     .line 34
     .line 35
-    const v0, 0x7f0e0673
+    const v0, 0x7f0e0694
 
     .line 36
     .line 37
@@ -137,7 +137,7 @@
 
     .line 39
     .line 40
-    const v0, 0x7f130bef
+    const v0, 0x7f130c72
 
     .line 41
     .line 42
@@ -146,7 +146,7 @@
 
     .line 44
     .line 45
-    const v0, 0x7f130bee
+    const v0, 0x7f130c71
 
     .line 46
     .line 47
@@ -155,7 +155,7 @@
 
     .line 49
     .line 50
-    const v0, 0x7f130bf1
+    const v0, 0x7f130c74
 
     .line 51
     .line 52
@@ -164,7 +164,7 @@
 
     .line 54
     .line 55
-    const v0, 0x7f130bf0
+    const v0, 0x7f130c73
 
     .line 56
     .line 57
@@ -173,7 +173,7 @@
 
     .line 59
     .line 60
-    const v0, 0x7f130bf6
+    const v0, 0x7f130c79
 
     .line 61
     .line 62
@@ -182,7 +182,7 @@
 
     .line 64
     .line 65
-    const v0, 0x7f130bea
+    const v0, 0x7f130c6d
 
     .line 66
     .line 67
@@ -191,7 +191,7 @@
 
     .line 69
     .line 70
-    const v0, 0x7f130bfd
+    const v0, 0x7f130c80
 
     .line 71
     .line 72
@@ -200,7 +200,7 @@
 
     .line 74
     .line 75
-    const v0, 0x7f130c07
+    const v0, 0x7f130c8a
 
     .line 76
     .line 77
@@ -209,7 +209,7 @@
 
     .line 79
     .line 80
-    const v0, 0x7f130b7a
+    const v0, 0x7f130bfd
 
     .line 81
     .line 82
@@ -218,7 +218,7 @@
 
     .line 84
     .line 85
-    const v0, 0x7f130b79
+    const v0, 0x7f130bfc
 
     .line 86
     .line 87
@@ -227,7 +227,7 @@
 
     .line 89
     .line 90
-    const v0, 0x7f130c06
+    const v0, 0x7f130c89
 
     .line 91
     .line 92
@@ -236,7 +236,7 @@
 
     .line 94
     .line 95
-    const v0, 0x7f130c08
+    const v0, 0x7f130c8b
 
     .line 96
     .line 97
@@ -250,146 +250,16 @@
 
 
 # virtual methods
-.method public final B1(Landroid/os/Bundle;)V
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->B1(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->Y0:LQH4;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LQH4;->get()Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
-
-    .line 12
-    check-cast p1, LpC3;
-
-    .line 13
-    .line 14
-    sget-object v0, LI2h;->T0:LI2h;
-
-    .line 15
-    .line 16
-    invoke-interface {p1, v0}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object p1
-
-    .line 20
-    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LXfi;
-
-    .line 21
-    .line 22
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    check-cast v0, Lzre;
-
-    .line 27
-    .line 28
-    check-cast v0, LBre;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0}, LBre;->g()LF06;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 35
-    .line 36
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 37
-    .line 38
-    .line 39
-    new-instance p1, LpX2;
-
-    .line 40
-    .line 41
-    const/4 v0, 0x1
-
-    .line 42
-    invoke-direct {p1, p0, v0}, LpX2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
-
-    .line 43
-    .line 44
-    .line 45
-    new-instance v0, LpX2;
-
-    .line 46
-    .line 47
-    const/4 v2, 0x2
-
-    .line 48
-    invoke-direct {v0, p0, v2}, LpX2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
-
-    .line 49
-    .line 50
-    .line 51
-    iget-object v2, p0, Lcom/snap/spectacles/api/SpectaclesFragment;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 52
-    .line 53
-    invoke-virtual {v1, p1, v0, v2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 54
-    .line 55
-    .line 56
-    return-void
-
-    .line 57
-    :cond_0
-    const-string p1, "configProvider"
-
-    .line 58
-    .line 59
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 60
-    .line 61
-    .line 62
-    const/4 p1, 0x0
-
-    .line 63
-    throw p1
-.end method
-
-.method public final C1()V
+.method public final A1()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snap/spectacles/api/SpectaclesFragment;->C1()V
+    invoke-super {p0}, Lcom/snap/spectacles/api/SpectaclesFragment;->A1()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 5
     .line 6
@@ -397,7 +267,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LtL5;->o()V
+    invoke-virtual {v0}, LVr5;->g()V
 
     .line 9
     .line 10
@@ -406,16 +276,16 @@
     return-void
 .end method
 
-.method public final E()I
+.method public final D()I
     .locals 1
 
     .line 1
-    const v0, 0x7f130c05
+    const v0, 0x7f130c88
 
     return v0
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 2
 
     .line 1
@@ -427,7 +297,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 6
     .line 7
@@ -435,11 +305,11 @@
 
     .line 8
     .line 9
-    iget-object v0, v0, LtL5;->X:Ljava/lang/Object;
+    iget-object v0, v0, LVr5;->X:Ljava/lang/Object;
 
     .line 10
     .line 11
-    check-cast v0, Lzpg;
+    check-cast v0, LKKg;
 
     .line 12
     .line 13
@@ -450,7 +320,7 @@
     const/4 v1, 0x0
 
     .line 16
-    invoke-virtual {v0, v1}, Lzpg;->A0(Z)V
+    invoke-virtual {v0, v1}, LKKg;->y0(Z)V
 
     .line 17
     .line 18
@@ -459,7 +329,7 @@
     return-void
 .end method
 
-.method public final G1()V
+.method public final E1()V
     .locals 4
 
     .line 1
@@ -471,7 +341,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 6
     .line 7
@@ -479,11 +349,11 @@
 
     .line 8
     .line 9
-    iget-object v1, v0, LtL5;->X:Ljava/lang/Object;
+    iget-object v1, v0, LVr5;->X:Ljava/lang/Object;
 
     .line 10
     .line 11
-    check-cast v1, Lzpg;
+    check-cast v1, LKKg;
 
     .line 12
     .line 13
@@ -491,7 +361,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {v1}, Lzpg;->o0()I
+    invoke-virtual {v1}, LKKg;->m0()I
 
     .line 16
     .line 17
@@ -506,7 +376,7 @@
 
     .line 21
     .line 22
-    iget-object v1, v0, LtL5;->Z:Ljava/lang/Object;
+    iget-object v1, v0, LVr5;->Z:Ljava/lang/Object;
 
     .line 23
     .line 24
@@ -518,15 +388,15 @@
 
     .line 27
     .line 28
-    iget v2, v0, LtL5;->b:I
+    iget v2, v0, LVr5;->b:I
 
     .line 29
     .line 30
-    sget-object v3, LLSc;->r0:LLSc;
+    sget-object v3, LHfd;->h0:LHfd;
 
     .line 31
     .line 32
-    invoke-virtual {v0, v1, v2, v3}, LtL5;->q(Landroid/net/Uri;ILkotlin/jvm/functions/Function0;)V
+    invoke-virtual {v0, v1, v2, v3}, LVr5;->i(Landroid/net/Uri;ILkotlin/jvm/functions/Function0;)V
 
     .line 33
     .line 34
@@ -535,7 +405,7 @@
 
     .line 36
     :cond_0
-    invoke-virtual {v1, v3}, Lzpg;->A0(Z)V
+    invoke-virtual {v1, v3}, LKKg;->y0(Z)V
 
     .line 37
     .line 38
@@ -544,7 +414,7 @@
     return-void
 .end method
 
-.method public final H(Ljava/lang/String;)V
+.method public final G(Ljava/lang/String;)V
     .locals 3
 
     .line 1
@@ -556,11 +426,11 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LXfi;
+    iget-object v1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LREi;
 
     .line 6
     .line 7
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -568,15 +438,15 @@
     move-result-object v1
 
     .line 11
-    check-cast v1, Lzre;
+    check-cast v1, LlJe;
 
     .line 12
     .line 13
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 14
     .line 15
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    invoke-virtual {v1}, LnJe;->i()Lxp0;
 
     .line 16
     .line 17
@@ -593,27 +463,27 @@
     .line 22
     .line 23
     .line 24
-    new-instance v0, LXl2;
+    new-instance v0, Ltk2;
 
     .line 25
     .line 26
-    const/16 v1, 0x1d
+    const/16 v1, 0x17
 
     .line 27
     .line 28
-    invoke-direct {v0, p1, v1, p0}, LXl2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p1, v1, p0}, Ltk2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 29
     .line 30
     .line 31
-    new-instance p1, LpX2;
+    new-instance p1, LSZ2;
 
     .line 32
     .line 33
     const/4 v1, 0x0
 
     .line 34
-    invoke-direct {p1, p0, v1}, LpX2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
+    invoke-direct {p1, p0, v1}, LSZ2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
 
     .line 35
     .line 36
@@ -630,7 +500,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 44
     .line 45
@@ -643,7 +513,7 @@
 
     .line 48
     .line 49
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -654,11 +524,11 @@
     throw p1
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     .line 2
     .line 3
@@ -666,7 +536,7 @@
     move-result-object p1
 
     .line 5
-    const p2, 0x7f0b0572
+    const p2, 0x7f0b0600
 
     .line 6
     .line 7
@@ -691,7 +561,7 @@
     move-result-object p3
 
     .line 18
-    const v0, 0x7f130bf8
+    const v0, 0x7f130c7b
 
     .line 19
     .line 20
@@ -707,7 +577,7 @@
     const/4 v0, 0x0
 
     .line 26
-    invoke-static {p3, v0}, LGnk;->f(Ljava/lang/String;I)Landroid/text/Spanned;
+    invoke-static {p3, v0}, LsNk;->c(Ljava/lang/String;I)Landroid/text/Spanned;
 
     .line 27
     .line 28
@@ -720,7 +590,7 @@
     .line 31
     .line 32
     .line 33
-    const p2, 0x7f0b0577
+    const p2, 0x7f0b0605
 
     .line 34
     .line 35
@@ -737,7 +607,7 @@
 
     .line 41
     .line 42
-    const p2, 0x7f0b056f
+    const p2, 0x7f0b05fd
 
     .line 43
     .line 44
@@ -754,7 +624,7 @@
 
     .line 50
     .line 51
-    const p2, 0x7f0b0feb
+    const p2, 0x7f0b110e
 
     .line 52
     .line 53
@@ -775,7 +645,7 @@
 
     .line 61
     .line 62
-    const p2, 0x7f0b0fea
+    const p2, 0x7f0b110d
 
     .line 63
     .line 64
@@ -792,7 +662,7 @@
 
     .line 70
     .line 71
-    const p2, 0x7f0b0b1b
+    const p2, 0x7f0b0c2d
 
     .line 72
     .line 73
@@ -809,14 +679,14 @@
 
     .line 79
     .line 80
-    new-instance p3, LqX2;
+    new-instance p3, LTZ2;
 
     .line 81
     .line 82
     const/4 v0, 0x0
 
     .line 83
-    invoke-direct {p3, p0, v0}, LqX2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
+    invoke-direct {p3, p0, v0}, LTZ2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
 
     .line 84
     .line 85
@@ -827,7 +697,7 @@
     .line 88
     .line 89
     :cond_0
-    const p2, 0x7f0b0fe8
+    const p2, 0x7f0b110b
 
     .line 90
     .line 91
@@ -848,7 +718,7 @@
 
     .line 99
     .line 100
-    const p3, 0x7f130bf7
+    const p3, 0x7f130c7a
 
     .line 101
     .line 102
@@ -873,19 +743,19 @@
     move-result-object p3
 
     .line 113
-    invoke-virtual {p2, p3}, Lcom/snap/component/button/SnapButtonView;->k(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p3}, Lcom/snap/component/button/SnapButtonView;->j(Ljava/lang/CharSequence;)V
 
     .line 114
     .line 115
     .line 116
-    new-instance p3, LqX2;
+    new-instance p3, LTZ2;
 
     .line 117
     .line 118
     const/4 v0, 0x1
 
     .line 119
-    invoke-direct {p3, p0, v0}, LqX2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
+    invoke-direct {p3, p0, v0}, LTZ2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
 
     .line 120
     .line 121
@@ -899,11 +769,11 @@
     return-object p1
 .end method
 
-.method public final Q(Ljava/util/List;Ljava/util/List;ZZZZZILjava/lang/String;)V
+.method public final O(Ljava/util/List;Ljava/util/List;ZZZZZILjava/lang/String;)V
     .locals 3
 
     .line 1
-    invoke-super/range {p0 .. p9}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->Q(Ljava/util/List;Ljava/util/List;ZZZZZILjava/lang/String;)V
+    invoke-super/range {p0 .. p9}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->O(Ljava/util/List;Ljava/util/List;ZZZZZILjava/lang/String;)V
 
     .line 2
     .line 3
@@ -1004,7 +874,7 @@
 
     .line 46
     .line 47
-    invoke-static {p9}, LR4i;->w1(Ljava/lang/CharSequence;)Z
+    invoke-static {p9}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
     .line 48
     .line 49
@@ -1053,7 +923,7 @@
 
     .line 70
     :cond_3
-    iget-object p7, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object p7, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 71
     .line 72
@@ -1061,11 +931,11 @@
 
     .line 73
     .line 74
-    new-instance p7, LtL5;
+    new-instance p7, LVr5;
 
     .line 75
     .line 76
-    invoke-direct {p7}, LtL5;-><init>()V
+    invoke-direct {p7}, LVr5;-><init>()V
 
     .line 77
     .line 78
@@ -1086,12 +956,12 @@
 
     .line 86
     .line 87
-    invoke-virtual {p7, p6, p8, p9}, LtL5;->l(Landroid/content/Context;Landroid/view/TextureView;Landroid/view/View;)V
+    invoke-virtual {p7, p6, p8, p9}, LVr5;->f(Landroid/content/Context;Landroid/view/TextureView;Landroid/view/View;)V
 
     .line 88
     .line 89
     .line 90
-    iput-object p7, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iput-object p7, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 91
     .line 92
@@ -1103,7 +973,7 @@
 
     .line 94
     .line 95
-    invoke-static {p2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 96
     .line 97
@@ -1116,7 +986,7 @@
 
     .line 100
     .line 101
-    invoke-static {p2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 102
     .line 103
@@ -1126,7 +996,7 @@
     .line 105
     :cond_6
     :goto_1
-    iget-object p6, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object p6, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 106
     .line 107
@@ -1134,11 +1004,11 @@
 
     .line 108
     .line 109
-    sget-object p7, LLSc;->r0:LLSc;
+    sget-object p7, LHfd;->h0:LHfd;
 
     .line 110
     .line 111
-    invoke-virtual {p6, p2, v1, p7}, LtL5;->q(Landroid/net/Uri;ILkotlin/jvm/functions/Function0;)V
+    invoke-virtual {p6, p2, v1, p7}, LVr5;->i(Landroid/net/Uri;ILkotlin/jvm/functions/Function0;)V
 
     .line 112
     .line 113
@@ -1175,7 +1045,7 @@
 
     .line 129
     :cond_8
-    invoke-static {p4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 130
     .line 131
@@ -1184,7 +1054,7 @@
 
     .line 133
     :cond_9
-    invoke-static {p5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 134
     .line 135
@@ -1193,7 +1063,7 @@
 
     .line 137
     :cond_a
-    iget-object p2, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object p2, p1, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 138
     .line 139
@@ -1201,7 +1071,7 @@
 
     .line 140
     .line 141
-    invoke-virtual {p2}, LtL5;->r()V
+    invoke-virtual {p2}, LVr5;->j()V
 
     .line 142
     .line 143
@@ -1237,7 +1107,7 @@
 
     .line 159
     :cond_c
-    invoke-static {p4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 160
     .line 161
@@ -1246,7 +1116,7 @@
 
     .line 163
     :cond_d
-    invoke-static {p5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 164
     .line 165
@@ -1254,7 +1124,7 @@
     throw p3
 .end method
 
-.method public final Q0()I
+.method public final O0()I
     .locals 1
 
     .line 1
@@ -1263,11 +1133,11 @@
     return v0
 .end method
 
-.method public final R0()Lio/reactivex/rxjava3/core/Observable;
+.method public final P0()Lio/reactivex/rxjava3/core/Observable;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->Y0:LQH4;
+    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->Y0:LxM4;
 
     .line 2
     .line 3
@@ -1275,7 +1145,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LQH4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -1283,15 +1153,15 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, LpC3;
+    check-cast v0, LOF3;
 
     .line 10
     .line 11
-    sget-object v1, LI2h;->T0:LI2h;
+    sget-object v1, Lxoh;->T0:Lxoh;
 
     .line 12
     .line 13
-    invoke-interface {v0, v1}, LpC3;->z(LBI3;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {v0, v1}, LOF3;->z(LcM3;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 14
     .line 15
@@ -1299,7 +1169,7 @@
     move-result-object v0
 
     .line 17
-    sget-object v1, LvL2;->c:LvL2;
+    sget-object v1, Lpx9;->A0:Lpx9;
 
     .line 18
     .line 19
@@ -1325,7 +1195,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -1336,7 +1206,7 @@
     throw v0
 .end method
 
-.method public final V0()Z
+.method public final T0()Z
     .locals 1
 
     .line 1
@@ -1389,6 +1259,15 @@
     return v0
 .end method
 
+.method public final a1()I
+    .locals 1
+
+    .line 1
+    const v0, 0x7f130c5b
+
+    return v0
+.end method
+
 .method public final a2()I
     .locals 1
 
@@ -1411,13 +1290,15 @@
     return v0
 .end method
 
-.method public final c1()I
-    .locals 1
+.method public final c0(LZph;)Z
+    .locals 0
 
     .line 1
-    const v0, 0x7f130bd8
+    instance-of p1, p1, LfX2;
 
-    return v0
+    .line 2
+    .line 3
+    return p1
 .end method
 
 .method public final c2()I
@@ -1440,17 +1321,6 @@
     .line 2
     .line 3
     return v0
-.end method
-
-.method public final e0(Lh4h;)Z
-    .locals 0
-
-    .line 1
-    instance-of p1, p1, LAU2;
-
-    .line 2
-    .line 3
-    return p1
 .end method
 
 .method public final e2()I
@@ -1486,11 +1356,22 @@
     return v0
 .end method
 
-.method public final h(LQqc;)V
+.method public final h2()I
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->h(LQqc;)V
+    iget v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->t1:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final i(LiGc;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->i(LiGc;)V
 
     .line 2
     .line 3
@@ -1503,7 +1384,7 @@
 
     .line 7
     .line 8
-    iget-object p1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object p1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 9
     .line 10
@@ -1511,11 +1392,11 @@
 
     .line 11
     .line 12
-    iget-object p1, p1, LtL5;->X:Ljava/lang/Object;
+    iget-object p1, p1, LVr5;->X:Ljava/lang/Object;
 
     .line 13
     .line 14
-    check-cast p1, Lzpg;
+    check-cast p1, LKKg;
 
     .line 15
     .line 16
@@ -1526,24 +1407,13 @@
     const/4 v0, 0x0
 
     .line 19
-    invoke-virtual {p1, v0}, Lzpg;->A0(Z)V
+    invoke-virtual {p1, v0}, LKKg;->y0(Z)V
 
     .line 20
     .line 21
     .line 22
     :cond_0
     return-void
-.end method
-
-.method public final h2()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->t1:I
-
-    .line 2
-    .line 3
-    return v0
 .end method
 
 .method public final i2()I
@@ -1573,7 +1443,7 @@
     return-wide v0
 .end method
 
-.method public final r0(ILjava/lang/String;)V
+.method public final q0(ILjava/lang/String;)V
     .locals 3
 
     .line 1
@@ -1597,7 +1467,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->l2()LCbh;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->l2()Lmxh;
 
     .line 12
     .line 13
@@ -1605,7 +1475,7 @@
     move-result-object v0
 
     .line 15
-    iget-object v0, v0, LCbh;->A0:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, v0, Lmxh;->A0:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 16
     .line 17
@@ -1632,11 +1502,11 @@
 
     .line 27
     .line 28
-    iget-object v1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LXfi;
+    iget-object v1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LREi;
 
     .line 29
     .line 30
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 31
     .line 32
@@ -1644,15 +1514,15 @@
     move-result-object v1
 
     .line 34
-    check-cast v1, Lzre;
+    check-cast v1, LlJe;
 
     .line 35
     .line 36
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 37
     .line 38
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    invoke-virtual {v1}, LnJe;->i()Lxp0;
 
     .line 39
     .line 40
@@ -1669,23 +1539,23 @@
     .line 45
     .line 46
     .line 47
-    new-instance v0, LEo;
+    new-instance v0, Leq;
 
     .line 48
     .line 49
-    invoke-direct {v0, p1, p2, p0}, LEo;-><init>(ILjava/lang/String;Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;)V
+    invoke-direct {v0, p1, p2, p0}, Leq;-><init>(ILjava/lang/String;Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;)V
 
     .line 50
     .line 51
     .line 52
-    new-instance p1, LpX2;
+    new-instance p1, LSZ2;
 
     .line 53
     .line 54
     const/4 p2, 0x3
 
     .line 55
-    invoke-direct {p1, p0, p2}, LpX2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
+    invoke-direct {p1, p0, p2}, LSZ2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
 
     .line 56
     .line 57
@@ -1702,7 +1572,7 @@
 
     .line 63
     .line 64
-    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 65
     .line 66
@@ -1715,7 +1585,7 @@
 
     .line 69
     .line 70
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 71
     .line 72
@@ -1730,7 +1600,7 @@
     return-void
 .end method
 
-.method public final u(Ljava/lang/String;Ljava/lang/String;)V
+.method public final t(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -1742,11 +1612,11 @@
 
     .line 4
     .line 5
-    iget-object p2, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LXfi;
+    iget-object p2, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LREi;
 
     .line 6
     .line 7
-    invoke-virtual {p2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -1754,15 +1624,15 @@
     move-result-object p2
 
     .line 11
-    check-cast p2, Lzre;
+    check-cast p2, LlJe;
 
     .line 12
     .line 13
-    check-cast p2, LBre;
+    check-cast p2, LnJe;
 
     .line 14
     .line 15
-    invoke-virtual {p2}, LBre;->i()Lgn0;
+    invoke-virtual {p2}, LnJe;->i()Lxp0;
 
     .line 16
     .line 17
@@ -1779,7 +1649,7 @@
     .line 22
     .line 23
     .line 24
-    new-instance p1, LpG2;
+    new-instance p1, LaJ2;
 
     .line 25
     .line 26
@@ -1787,7 +1657,7 @@
 
     .line 27
     .line 28
-    invoke-direct {p1, p2, p0}, LpG2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LaJ2;-><init>(ILjava/lang/Object;)V
 
     .line 29
     .line 30
@@ -1801,70 +1671,69 @@
     .line 34
     .line 35
     .line 36
-    new-instance p1, Lxu2;
+    new-instance p1, LGG2;
 
     .line 37
     .line 38
-    const/16 v0, 0x8
+    const/4 v0, 0x7
 
     .line 39
-    .line 40
-    invoke-direct {p1, v0, p0}, Lxu2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, LGG2;-><init>(ILjava/lang/Object;)V
 
+    .line 40
     .line 41
     .line 42
-    .line 43
     new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
 
+    .line 43
     .line 44
-    .line 45
     invoke-direct {v0, p2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;-><init>(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/functions/Predicate;)V
 
+    .line 45
     .line 46
     .line 47
-    .line 48
     iget-object p1, p0, Lcom/snap/spectacles/api/SpectaclesFragment;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 48
     .line 49
-    .line 50
-    invoke-static {v0, p1}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {v0, p1}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 50
     .line 51
     .line 52
-    .line 53
     return-void
 
-    .line 54
+    .line 53
     :cond_0
     const-string p1, "dynamicFeature"
 
+    .line 54
     .line 55
-    .line 56
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 56
     .line 57
     .line 58
-    .line 59
     const/4 p1, 0x0
 
-    .line 60
+    .line 59
     throw p1
 .end method
 
-.method public final v0()I
+.method public final u0()I
     .locals 1
 
     .line 1
-    const v0, 0x7f130b58
+    const v0, 0x7f130bdb
 
     return v0
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesSettingsFragment;->v(LiGc;)V
 
     .line 2
     .line 3
@@ -1877,7 +1746,7 @@
 
     .line 7
     .line 8
-    iget-object p1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LtL5;
+    iget-object p1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->g1:LVr5;
 
     .line 9
     .line 10
@@ -1885,11 +1754,11 @@
 
     .line 11
     .line 12
-    iget-object v0, p1, LtL5;->X:Ljava/lang/Object;
+    iget-object v0, p1, LVr5;->X:Ljava/lang/Object;
 
     .line 13
     .line 14
-    check-cast v0, Lzpg;
+    check-cast v0, LKKg;
 
     .line 15
     .line 16
@@ -1897,7 +1766,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v0}, Lzpg;->o0()I
+    invoke-virtual {v0}, LKKg;->m0()I
 
     .line 19
     .line 20
@@ -1912,7 +1781,7 @@
 
     .line 24
     .line 25
-    iget-object v0, p1, LtL5;->Z:Ljava/lang/Object;
+    iget-object v0, p1, LVr5;->Z:Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -1924,15 +1793,15 @@
 
     .line 30
     .line 31
-    iget v1, p1, LtL5;->b:I
+    iget v1, p1, LVr5;->b:I
 
     .line 32
     .line 33
-    sget-object v2, LLSc;->r0:LLSc;
+    sget-object v2, LHfd;->h0:LHfd;
 
     .line 34
     .line 35
-    invoke-virtual {p1, v0, v1, v2}, LtL5;->q(Landroid/net/Uri;ILkotlin/jvm/functions/Function0;)V
+    invoke-virtual {p1, v0, v1, v2}, LVr5;->i(Landroid/net/Uri;ILkotlin/jvm/functions/Function0;)V
 
     .line 36
     .line 37
@@ -1941,7 +1810,7 @@
 
     .line 39
     :cond_0
-    invoke-virtual {v0, v2}, Lzpg;->A0(Z)V
+    invoke-virtual {v0, v2}, LKKg;->y0(Z)V
 
     .line 40
     .line 41
@@ -1950,7 +1819,7 @@
     return-void
 .end method
 
-.method public final z0()Ljava/lang/String;
+.method public final x0()Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -1959,4 +1828,134 @@
     .line 2
     .line 3
     return-object v0
+.end method
+
+.method public final z1(Landroid/os/Bundle;)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->z1(Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->Y0:LxM4;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    check-cast p1, LOF3;
+
+    .line 13
+    .line 14
+    sget-object v0, Lxoh;->T0:Lxoh;
+
+    .line 15
+    .line 16
+    invoke-interface {p1, v0}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    iget-object v0, p0, Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;->b1:LREi;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    check-cast v0, LlJe;
+
+    .line 27
+    .line 28
+    check-cast v0, LnJe;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0}, LnJe;->g()LA36;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 35
+    .line 36
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 37
+    .line 38
+    .line 39
+    new-instance p1, LSZ2;
+
+    .line 40
+    .line 41
+    const/4 v0, 0x1
+
+    .line 42
+    invoke-direct {p1, p0, v0}, LSZ2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
+
+    .line 43
+    .line 44
+    .line 45
+    new-instance v0, LSZ2;
+
+    .line 46
+    .line 47
+    const/4 v2, 0x2
+
+    .line 48
+    invoke-direct {v0, p0, v2}, LSZ2;-><init>(Lcom/snap/cheerios/fragments/CheeriosSettingsFragment;I)V
+
+    .line 49
+    .line 50
+    .line 51
+    iget-object v2, p0, Lcom/snap/spectacles/api/SpectaclesFragment;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 52
+    .line 53
+    invoke-virtual {v1, p1, v0, v2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 54
+    .line 55
+    .line 56
+    return-void
+
+    .line 57
+    :cond_0
+    const-string p1, "configProvider"
+
+    .line 58
+    .line 59
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    const/4 p1, 0x0
+
+    .line 63
+    throw p1
 .end method

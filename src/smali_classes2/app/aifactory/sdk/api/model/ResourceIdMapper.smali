@@ -151,7 +151,7 @@
 
     .line 41
     :cond_2
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 42
     .line 43

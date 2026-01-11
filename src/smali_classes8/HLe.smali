@@ -1,203 +1,360 @@
-.class public LHLe;
-.super LpMe;
+.class public final LHLe;
+.super LM1i;
 .source "SourceFile"
 
 
 # instance fields
-.field public s:Ljava/lang/String;
+.field public i0:Z
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 9
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    invoke-direct {p0}, LM1i;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "REGISTRATION_USER_EMAIL_FAIL"
-
     .line 4
-    .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
-    .line 6
-    .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
-
-    .line 8
-    .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
-    .line 10
-    .line 11
-    move-object v0, p0
-
-    .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 13
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final bridge synthetic F(Lk11;Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    check-cast p1, LgYh;
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
+    invoke-virtual {p0, p1, p2}, LHLe;->I(LgYh;Landroid/view/View;)V
+
     .line 4
-    const/4 v1, 0x3
-
     .line 5
-    iget-object v2, p0, LHLe;->s:Ljava/lang/String;
-
     .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 8
-    .line 9
-    .line 10
-    const/4 v1, 0x6
-
-    .line 11
-    iget-object v2, p0, LpMe;->p:LsLe;
-
-    .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 v1, 0x7
-
-    .line 17
-    iget-object v2, p0, LpMe;->l:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 20
-    .line 21
-    .line 22
-    const/16 v1, 0x8
-
-    .line 23
-    .line 24
-    iget-object v2, p0, LpMe;->k:Ljava/lang/Boolean;
-
-    .line 25
-    .line 26
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 27
-    .line 28
-    .line 29
-    const/16 v1, 0x9
-
-    .line 30
-    .line 31
-    iget-object v2, p0, LpMe;->o:Ljava/lang/Boolean;
-
-    .line 32
-    .line 33
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 34
-    .line 35
-    .line 36
-    const/16 v1, 0xa
-
-    .line 37
-    .line 38
-    iget-object v2, p0, LpMe;->n:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 41
-    .line 42
-    .line 43
-    const/16 v1, 0xb
-
-    .line 44
-    .line 45
-    iget-object v2, p0, LpMe;->j:Ljava/lang/String;
-
-    .line 46
-    .line 47
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 48
-    .line 49
-    .line 50
-    const/16 v1, 0xc
-
-    .line 51
-    .line 52
-    iget-object v2, p0, LpMe;->m:Ljava/lang/String;
-
-    .line 53
-    .line 54
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 55
-    .line 56
-    .line 57
-    const/16 v1, 0xd
-
-    .line 58
-    .line 59
-    iget-object v2, p0, LpMe;->r:LJ20;
-
-    .line 60
-    .line 61
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 62
-    .line 63
-    .line 64
-    const/16 v1, 0xe
-
-    .line 65
-    .line 66
-    iget-object v2, p0, LpMe;->q:LJ20;
-
-    .line 67
-    .line 68
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 69
-    .line 70
-    .line 71
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
-    .line 72
-    .line 73
-    .line 74
     return-void
 .end method
 
-.method public final d()I
-    .locals 1
+.method public final bridge synthetic H(LRVh;LRVh;)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0x72b
+    check-cast p1, LILe;
 
     .line 2
     .line 3
-    return v0
+    check-cast p2, LILe;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, LHLe;->L(LILe;LILe;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final I(LgYh;Landroid/view/View;)V
+    .locals 5
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    invoke-super {p0, p1, p2}, LM1i;->I(LgYh;Landroid/view/View;)V
+
+    .line 4
+    .line 5
+    .line 6
+    const p1, 0x7f0b18df
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object p1
+
+    .line 13
+    sget-object p2, Landroid/view/View;->SCALE_X:Landroid/util/Property;
+
+    .line 14
+    .line 15
+    const v2, 0x3f570a3d    # 0.84f
+
+    .line 16
+    .line 17
+    .line 18
+    new-array v3, v1, [F
+
+    .line 19
+    .line 20
+    aput v2, v3, v0
+
+    .line 21
+    .line 22
+    invoke-static {p2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p2
+
+    .line 26
+    sget-object v3, Landroid/view/View;->SCALE_Y:Landroid/util/Property;
+
+    .line 27
+    .line 28
+    new-array v4, v1, [F
+
+    .line 29
+    .line 30
+    aput v2, v4, v0
+
+    .line 31
+    .line 32
+    invoke-static {v3, v4}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v2
+
+    .line 36
+    const/4 v3, 0x2
+
+    .line 37
+    new-array v3, v3, [Landroid/animation/PropertyValuesHolder;
+
+    .line 38
+    .line 39
+    aput-object p2, v3, v0
+
+    .line 40
+    .line 41
+    aput-object v2, v3, v1
+
+    .line 42
+    .line 43
+    invoke-static {p1, v3}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p2
+
+    .line 47
+    const-wide/16 v0, 0x12c
+
+    .line 48
+    .line 49
+    invoke-virtual {p2, v0, v1}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
+
+    .line 50
+    .line 51
+    .line 52
+    new-instance v0, LKb;
+
+    .line 53
+    .line 54
+    const/16 v1, 0x16
+
+    .line 55
+    .line 56
+    invoke-direct {v0, v1, p2}, LKb;-><init>(ILjava/lang/Object;)V
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {p1, v0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
+
+    .line 60
+    .line 61
+    .line 62
+    return-void
+.end method
+
+.method public final L(LILe;LILe;)V
+    .locals 5
+
+    .line 1
+    iget-boolean v0, p0, LHLe;->i0:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, LA7k;->s()Landroid/view/View;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v1
+
+    .line 16
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v2
+
+    .line 26
+    check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 27
+    .line 28
+    invoke-virtual {v2}, Landroid/view/ViewGroup$MarginLayoutParams;->getMarginEnd()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v2
+
+    .line 32
+    int-to-float v1, v1
+
+    .line 33
+    iget v3, p1, LILe;->f0:F
+
+    .line 34
+    .line 35
+    div-float/2addr v1, v3
+
+    .line 36
+    int-to-float v3, v2
+
+    .line 37
+    sub-float/2addr v1, v3
+
+    .line 38
+    float-to-double v3, v1
+
+    .line 39
+    invoke-static {v3, v4}, Ljava/lang/Math;->floor(D)D
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-wide v3
+
+    .line 43
+    double-to-float v1, v3
+
+    .line 44
+    float-to-int v1, v1
+
+    .line 45
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v3
+
+    .line 49
+    iput v1, v3, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    .line 50
+    .line 51
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v3
+
+    .line 55
+    iput v1, v3, Landroid/view/ViewGroup$LayoutParams;->height:I
+
+    .line 56
+    .line 57
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v0
+
+    .line 61
+    check-cast v0, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 62
+    .line 63
+    invoke-virtual {v0, v2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
+
+    .line 64
+    .line 65
+    .line 66
+    const/4 v0, 0x1
+
+    .line 67
+    iput-boolean v0, p0, LHLe;->i0:Z
+
+    .line 68
+    .line 69
+    :cond_0
+    invoke-super {p0, p1, p2}, LM1i;->H(LRVh;LRVh;)V
+
+    .line 70
+    .line 71
+    .line 72
+    return-void
+.end method
+
+.method public final bridge synthetic t(Lsw;Lsw;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, LILe;
+
+    .line 2
+    .line 3
+    check-cast p2, LILe;
+
+    .line 4
+    .line 5
+    invoke-virtual {p0, p1, p2}, LHLe;->L(LILe;LILe;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
 .end method

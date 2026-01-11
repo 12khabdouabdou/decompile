@@ -3,21 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKA1;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final a:LPI3;
-
-.field public final b:Lu38;
-
-.field public final c:Lio/reactivex/rxjava3/core/Observable;
-
-.field public final t:LIN;
+.field public final synthetic a:Lfi0;
 
 
 # direct methods
-.method public constructor <init>(LPI3;Lu38;Lio/reactivex/rxjava3/core/Observable;LIN;)V
+.method public constructor <init>(Lfi0;)V
     .locals 0
 
     .line 1
@@ -26,43 +20,100 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lei0;->a:LPI3;
+    iput-object p1, p0, Lei0;->a:Lfi0;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lei0;->b:Lu38;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lei0;->c:Lio/reactivex/rxjava3/core/Observable;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lei0;->t:LIN;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Ljava/lang/Object;
-    .locals 2
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    new-instance v0, LTf0;
+    check-cast p1, LUf7;
 
     .line 2
     .line 3
-    const/16 v1, 0x11
+    iget-object v0, p0, Lei0;->a:Lfi0;
 
     .line 4
     .line 5
-    invoke-direct {v0, p0, v1}, LTf0;-><init>(LKA1;I)V
+    iget-object v1, v0, Lfi0;->c:Lbda;
 
     .line 6
     .line 7
+    new-instance v2, Lada;
+
     .line 8
-    return-object v0
+    .line 9
+    invoke-virtual {p1}, LUf7;->a()LY79;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v3
+
+    .line 13
+    invoke-direct {v2, v3}, Lada;-><init>(LY79;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-interface {v1, v2}, Lbda;->b(LOWk;)Lio/reactivex/rxjava3/core/Flowable;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    sget-object v2, LT70;->m0:LT70;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFilter;
+
+    .line 26
+    .line 27
+    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFilter;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/Predicate;)V
+
+    .line 28
+    .line 29
+    .line 30
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromPublisher;
+
+    .line 31
+    .line 32
+    invoke-direct {v1, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromPublisher;-><init>(LSFe;)V
+
+    .line 33
+    .line 34
+    .line 35
+    new-instance v2, Ldi0;
+
+    .line 36
+    .line 37
+    invoke-direct {v2, v0, p1}, Ldi0;-><init>(Lfi0;LUf7;)V
+
+    .line 38
+    .line 39
+    .line 40
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 41
+    .line 42
+    invoke-direct {p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 43
+    .line 44
+    .line 45
+    return-object p1
 .end method

@@ -1,52 +1,34 @@
 .class public final LV87;
-.super Lcom/snap/composer/utils/b;
+.super Lhx3;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime Lez3;
     propertyReplacements = ""
-    schema = "\'pageLauncher\':r:\'[0]\',\'onOpenInvite\':f?(),\'inviteStatusUpdateObservable\':g?<c>:\'[1]\'<b@>"
-    typeReferences = {
-        Lcom/snap/composer/page_launcher/IPageLauncher;,
-        Lcom/snap/composer/bridge_observables/BridgeObservable;
-    }
+    schema = "\'shouldRenderSection\':f(s?): p<b@>"
+    typeReferences = {}
 .end annotation
 
 
 # instance fields
-.field private _inviteStatusUpdateObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+.field private _invoker:Lkotlin/jvm/functions/Function1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;"
+            "Lkotlin/jvm/functions/Function1;"
         }
     .end annotation
 .end field
-
-.field private _onOpenInvite:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/composer/page_launcher/IPageLauncher;Lkotlin/jvm/functions/Function0;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lcom/snap/composer/page_launcher/IPageLauncher;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljava/lang/Boolean;",
-            ">;)V"
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
         }
     .end annotation
 
@@ -56,17 +38,34 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LV87;->_pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+    iput-object p1, p0, LV87;->_invoker:Lkotlin/jvm/functions/Function1;
 
     .line 5
     .line 6
-    iput-object p2, p0, LV87;->_onOpenInvite:Lkotlin/jvm/functions/Function0;
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;)Lcom/snap/composer/promise/Promise;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LV87;->_invoker:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
     .line 7
-    .line 8
-    iput-object p3, p0, LV87;->_inviteStatusUpdateObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    check-cast p1, Lcom/snap/composer/promise/Promise;
 
+    .line 8
     .line 9
-    .line 10
-    return-void
+    return-object p1
 .end method

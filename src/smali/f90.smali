@@ -1,188 +1,421 @@
-.class public final Lf90;
-.super Ljava/lang/Object;
+.class public Lf90;
+.super LhPj;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LSoc;
+.field public p0:Ljava/lang/Long;
 
-.field public final b:LW14;
+.field public q0:Ljava/lang/String;
 
-.field public final c:LDQ3;
+.field public r0:Ljava/lang/Long;
 
-.field public final d:LlS1;
+.field public s0:Ljava/lang/Long;
 
-.field public final e:LfY4;
+.field public t0:Ljava/lang/String;
 
-.field public final f:LfY4;
+.field public u0:Ljava/lang/Long;
 
-.field public final g:LXfi;
+.field public v0:Ljava/lang/Boolean;
 
-.field public final h:LXfi;
+.field public w0:Ljava/lang/Long;
 
 
 # direct methods
-.method public constructor <init>(LSoc;LW14;LDQ3;LlS1;LfY4;LfY4;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v2, LoJe;->t:LoJe;
 
     .line 2
     .line 3
+    const-string v1, "ARGOS_CLIENT_EVENT"
+
     .line 4
-    iput-object p1, p0, Lf90;->a:LSoc;
-
     .line 5
-    .line 6
-    iput-object p2, p0, Lf90;->b:LW14;
+    const-wide v3, 0x3fb999999999999aL    # 0.1
 
+    .line 6
     .line 7
     .line 8
-    iput-object p3, p0, Lf90;->c:LDQ3;
-
     .line 9
     .line 10
-    iput-object p4, p0, Lf90;->d:LlS1;
+    const-wide v5, 0x3fb999999999999aL    # 0.1
 
     .line 11
     .line 12
-    iput-object p5, p0, Lf90;->e:LfY4;
+    .line 13
+    .line 14
+    .line 15
+    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+
+    .line 16
+    .line 17
+    move-object v0, p0
+
+    .line 18
+    invoke-direct/range {v0 .. v8}, LEV6;-><init>(Ljava/lang/String;LoJe;DDD)V
+
+    .line 19
+    .line 20
+    .line 21
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d(LeO3;Ljava/util/Set;)V
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    new-array v1, v0, [B
+
+    .line 3
+    .line 4
+    iget-object v2, p0, Lf90;->s0:Ljava/lang/Long;
+
+    .line 5
+    .line 6
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 v0, 0x4
+
+    .line 10
+    iget-object v2, p0, Lf90;->q0:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->Z(LeO3;I[BLjava/lang/String;Ljava/util/Set;)V
 
     .line 13
     .line 14
-    iput-object p6, p0, Lf90;->f:LfY4;
-
     .line 15
+    const/4 v0, 0x5
+
     .line 16
-    new-instance p1, Ld90;
+    iget-object v2, p0, Lf90;->r0:Ljava/lang/Long;
 
     .line 17
     .line 18
-    const/4 p2, 0x0
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
 
     .line 19
-    invoke-direct {p1, p0, p2}, Ld90;-><init>(Lf90;I)V
-
     .line 20
     .line 21
+    const/4 v0, 0x6
+
     .line 22
-    new-instance p2, LXfi;
+    iget-object v2, p0, Lf90;->p0:Ljava/lang/Long;
 
     .line 23
     .line 24
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
 
     .line 25
     .line 26
     .line 27
-    iput-object p2, p0, Lf90;->g:LXfi;
+    const/4 v0, 0x7
 
     .line 28
+    iget-object v2, p0, Lf90;->t0:Ljava/lang/String;
+
     .line 29
-    new-instance p1, Ld90;
-
     .line 30
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->Z(LeO3;I[BLjava/lang/String;Ljava/util/Set;)V
+
     .line 31
-    const/4 p2, 0x1
-
     .line 32
-    invoke-direct {p1, p0, p2}, Ld90;-><init>(Lf90;I)V
-
     .line 33
+    const/16 v0, 0x8
+
     .line 34
     .line 35
-    new-instance p2, LXfi;
+    iget-object v2, p0, Lf90;->u0:Ljava/lang/Long;
 
     .line 36
     .line 37
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
 
     .line 38
     .line 39
     .line 40
-    iput-object p2, p0, Lf90;->h:LXfi;
+    const/16 v0, 0x9
 
     .line 41
     .line 42
+    iget-object v2, p0, Lf90;->w0:Ljava/lang/Long;
+
+    .line 43
+    .line 44
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 45
+    .line 46
+    .line 47
+    const/16 v0, 0xa
+
+    .line 48
+    .line 49
+    iget-object v2, p0, Lf90;->v0:Ljava/lang/Boolean;
+
+    .line 50
+    .line 51
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->U(LeO3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-virtual {p1, v1}, LeO3;->k([B)V
+
+    .line 55
+    .line 56
+    .line 57
     return-void
 .end method
 
-.method public static final a(Lf90;Ljava/lang/String;Lcom/snapchat/client/messaging/Message;Z)Landroid/net/Uri;
-    .locals 2
+.method public final e()I
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lf90;->g:LXfi;
+    const/16 v0, 0xaa4
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    return v0
+.end method
+
+.method public final g(Ljava/util/Map;)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lf90;->p0:Ljava/lang/Long;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    const-string v1, "mode"
 
+    .line 6
     .line 7
-    check-cast v0, Ljava/lang/Boolean;
+    move-object v2, p1
 
     .line 8
-    .line 9
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    check-cast v2, Ljava/util/HashMap;
 
+    .line 9
     .line 10
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 11
     .line 12
-    move-result v0
-
     .line 13
-    const/4 v1, 0x0
+    :cond_0
+    iget-object v0, p0, Lf90;->q0:Ljava/lang/String;
 
     .line 14
+    .line 15
     if-eqz v0, :cond_1
 
-    .line 15
     .line 16
-    iget-object p0, p0, Lf90;->h:LXfi;
-
     .line 17
+    const-string v1, "path"
+
     .line 18
-    invoke-virtual {p0}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 19
-    .line 20
-    .line 21
-    move-result-object p0
+    move-object v2, p1
 
+    .line 20
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 21
     .line 22
-    check-cast p0, LGRb;
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 23
     .line 24
-    if-eqz p2, :cond_0
-
     .line 25
-    .line 26
-    invoke-static {p2, p3}, LUuk;->f(Lcom/snapchat/client/messaging/Message;Z)LZtb;
+    :cond_1
+    iget-object v0, p0, Lf90;->r0:Ljava/lang/Long;
 
+    .line 26
     .line 27
+    if-eqz v0, :cond_2
+
     .line 28
     .line 29
-    move-result-object v1
+    const-string v1, "returned_header"
 
     .line 30
-    :cond_0
-    invoke-virtual {p0, p1, v1}, LGRb;->a(Ljava/lang/String;LZtb;)Landroid/net/Uri;
-
     .line 31
-    .line 32
-    .line 33
-    move-result-object p0
+    move-object v2, p1
 
+    .line 32
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 33
     .line 34
-    return-object p0
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
-    :cond_1
-    return-object v1
+    .line 36
+    .line 37
+    :cond_2
+    iget-object v0, p0, Lf90;->s0:Ljava/lang/Long;
+
+    .line 38
+    .line 39
+    if-eqz v0, :cond_3
+
+    .line 40
+    .line 41
+    const-string v1, "latency_ms"
+
+    .line 42
+    .line 43
+    move-object v2, p1
+
+    .line 44
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 45
+    .line 46
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_3
+    iget-object v0, p0, Lf90;->t0:Ljava/lang/String;
+
+    .line 50
+    .line 51
+    if-eqz v0, :cond_4
+
+    .line 52
+    .line 53
+    const-string v1, "request_id"
+
+    .line 54
+    .line 55
+    move-object v2, p1
+
+    .line 56
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 57
+    .line 58
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_4
+    iget-object v0, p0, Lf90;->u0:Ljava/lang/Long;
+
+    .line 62
+    .line 63
+    if-eqz v0, :cond_5
+
+    .line 64
+    .line 65
+    const-string v1, "argos_token_type"
+
+    .line 66
+    .line 67
+    move-object v2, p1
+
+    .line 68
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 69
+    .line 70
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 71
+    .line 72
+    .line 73
+    :cond_5
+    iget-object v0, p0, Lf90;->v0:Ljava/lang/Boolean;
+
+    .line 74
+    .line 75
+    if-eqz v0, :cond_6
+
+    .line 76
+    .line 77
+    const-string v1, "token_in_cache"
+
+    .line 78
+    .line 79
+    move-object v2, p1
+
+    .line 80
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 81
+    .line 82
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 83
+    .line 84
+    .line 85
+    :cond_6
+    iget-object v0, p0, Lf90;->w0:Ljava/lang/Long;
+
+    .line 86
+    .line 87
+    if-eqz v0, :cond_7
+
+    .line 88
+    .line 89
+    const-string v1, "signature_latency_ms"
+
+    .line 90
+    .line 91
+    move-object v2, p1
+
+    .line 92
+    check-cast v2, Ljava/util/HashMap;
+
+    .line 93
+    .line 94
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 95
+    .line 96
+    .line 97
+    :cond_7
+    invoke-super {p0, p1}, LhPj;->g(Ljava/util/Map;)V
+
+    .line 98
+    .line 99
+    .line 100
+    iget-object v0, p0, LEV6;->b:Ljava/lang/String;
+
+    .line 101
+    .line 102
+    check-cast p1, Ljava/util/HashMap;
+
+    .line 103
+    .line 104
+    const-string v1, "event_name"
+
+    .line 105
+    .line 106
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 107
+    .line 108
+    .line 109
+    return-void
 .end method

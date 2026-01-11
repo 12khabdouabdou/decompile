@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public final q()Z
+.method public final v()Z
     .locals 1
 
     .line 1
@@ -31,7 +31,7 @@
 
     .line 4
     .line 5
-    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->q()Z
+    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->v()Z
 
     .line 6
     .line 7

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LO24;
+    proxyClass = Lx74;
     schema = "\'onReport\':f|m|(): p<b@>,\'onBlock\':f|m|(): p<b@>,\'onClearConversation\':f|m|(): p<b@>,\'onOkay\':f|m|(),\'onOpenSettings\':f|m|()"
     typeReferences = {}
 .end annotation

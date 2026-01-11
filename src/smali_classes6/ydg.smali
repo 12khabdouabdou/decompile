@@ -1,199 +1,106 @@
 .class public final Lydg;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'availableDestinations\':a<r<e>:\'[0]\'>,\'defaultDestinationOrder\':a?<r<e>:\'[0]\'>,\'style\':r?<e>:\'[1]\',\'cameraRollFirst\':b@?,\'title\':r?<e>:\'[2]\',\'shareSheetStyleConfig\':r?:\'[3]\',\'scrollViewBouncesFromDragAtStart\':b@?,\'scrollViewBouncesFromDragAtEnd\':b@?"
-    typeReferences = {
-        Lcom/snap/sharing/share_sheet/ShareDestination;,
-        Lcom/snap/sharing/share_sheet/ShareSheetStyle;,
-        Lcom/snap/sharing/share_sheet/ShareSheetTitle;,
-        Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;
-    }
-.end annotation
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field private _availableDestinations:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "+",
-            "Lcom/snap/sharing/share_sheet/ShareDestination;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:I
 
-.field private _cameraRollFirst:Ljava/lang/Boolean;
+.field public final synthetic b:LKdg;
 
-.field private _defaultDestinationOrder:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "+",
-            "Lcom/snap/sharing/share_sheet/ShareDestination;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _scrollViewBouncesFromDragAtEnd:Ljava/lang/Boolean;
-
-.field private _scrollViewBouncesFromDragAtStart:Ljava/lang/Boolean;
-
-.field private _shareSheetStyleConfig:Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;
-
-.field private _style:Lcom/snap/sharing/share_sheet/ShareSheetStyle;
-
-.field private _title:Lcom/snap/sharing/share_sheet/ShareSheetTitle;
+.field public final synthetic c:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
+.method public synthetic constructor <init>(LKdg;Ljava/util/ArrayList;I)V
     .locals 0
 
     .line 1
+    iput p3, p0, Lydg;->a:I
+
+    iput-object p1, p0, Lydg;->b:LKdg;
+
+    iput-object p2, p0, Lydg;->c:Ljava/util/ArrayList;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lydg;->_availableDestinations:Ljava/util/List;
-
-    const/4 p1, 0x0
-
-    .line 3
-    iput-object p1, p0, Lydg;->_defaultDestinationOrder:Ljava/util/List;
-
-    .line 4
-    iput-object p1, p0, Lydg;->_style:Lcom/snap/sharing/share_sheet/ShareSheetStyle;
-
-    .line 5
-    iput-object p1, p0, Lydg;->_cameraRollFirst:Ljava/lang/Boolean;
-
-    .line 6
-    iput-object p1, p0, Lydg;->_title:Lcom/snap/sharing/share_sheet/ShareSheetTitle;
-
-    .line 7
-    iput-object p1, p0, Lydg;->_shareSheetStyleConfig:Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;
-
-    .line 8
-    iput-object p1, p0, Lydg;->_scrollViewBouncesFromDragAtStart:Ljava/lang/Boolean;
-
-    .line 9
-    iput-object p1, p0, Lydg;->_scrollViewBouncesFromDragAtEnd:Ljava/lang/Boolean;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/List;Ljava/util/List;Lcom/snap/sharing/share_sheet/ShareSheetStyle;Ljava/lang/Boolean;Lcom/snap/sharing/share_sheet/ShareSheetTitle;Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;Ljava/lang/Boolean;Ljava/lang/Boolean;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "+",
-            "Lcom/snap/sharing/share_sheet/ShareDestination;",
-            ">;",
-            "Ljava/util/List<",
-            "+",
-            "Lcom/snap/sharing/share_sheet/ShareDestination;",
-            ">;",
-            "Lcom/snap/sharing/share_sheet/ShareSheetStyle;",
-            "Ljava/lang/Boolean;",
-            "Lcom/snap/sharing/share_sheet/ShareSheetTitle;",
-            "Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;",
-            "Ljava/lang/Boolean;",
-            "Ljava/lang/Boolean;",
-            ")V"
-        }
-    .end annotation
-
-    .line 10
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 11
-    iput-object p1, p0, Lydg;->_availableDestinations:Ljava/util/List;
-
-    .line 12
-    iput-object p2, p0, Lydg;->_defaultDestinationOrder:Ljava/util/List;
-
-    .line 13
-    iput-object p3, p0, Lydg;->_style:Lcom/snap/sharing/share_sheet/ShareSheetStyle;
-
-    .line 14
-    iput-object p4, p0, Lydg;->_cameraRollFirst:Ljava/lang/Boolean;
-
-    .line 15
-    iput-object p5, p0, Lydg;->_title:Lcom/snap/sharing/share_sheet/ShareSheetTitle;
-
-    .line 16
-    iput-object p6, p0, Lydg;->_shareSheetStyleConfig:Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;
-
-    .line 17
-    iput-object p7, p0, Lydg;->_scrollViewBouncesFromDragAtStart:Ljava/lang/Boolean;
-
-    .line 18
-    iput-object p8, p0, Lydg;->_scrollViewBouncesFromDragAtEnd:Ljava/lang/Boolean;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/util/List;
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lydg;->_availableDestinations:Ljava/util/List;
+    iget v0, p0, Lydg;->a:I
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public final b(Ljava/lang/Boolean;)V
-    .locals 0
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, LxIa;
 
-    .line 1
-    iput-object p1, p0, Lydg;->_cameraRollFirst:Ljava/lang/Boolean;
+    .line 7
+    .line 8
+    iget-object v0, p0, Lydg;->b:LKdg;
 
-    .line 2
-    .line 3
+    .line 9
+    .line 10
+    iget-object v1, p0, Lydg;->c:Ljava/util/ArrayList;
+
+    .line 11
+    .line 12
+    invoke-static {v0, p1, v1}, LKdg;->a(LKdg;LxIa;Ljava/util/ArrayList;)V
+
+    .line 13
+    .line 14
+    .line 15
     return-void
-.end method
 
-.method public final c(Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;)V
-    .locals 0
+    .line 16
+    :pswitch_0
+    check-cast p1, LxIa;
 
-    .line 1
-    iput-object p1, p0, Lydg;->_shareSheetStyleConfig:Lcom/snap/sharing/share_sheet/ShareSheetStyleConfig;
+    .line 17
+    .line 18
+    iget-object v0, p0, Lydg;->b:LKdg;
 
-    .line 2
-    .line 3
+    .line 19
+    .line 20
+    iget-object v1, p0, Lydg;->c:Ljava/util/ArrayList;
+
+    .line 21
+    .line 22
+    invoke-static {v0, p1, v1}, LKdg;->a(LKdg;LxIa;Ljava/util/ArrayList;)V
+
+    .line 23
+    .line 24
+    .line 25
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 26
+    .line 27
+    iget-object v0, v0, LKdg;->C0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 28
+    .line 29
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 30
+    .line 31
+    .line 32
     return-void
-.end method
 
-.method public final d(Lcom/snap/sharing/share_sheet/ShareSheetStyle;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lydg;->_style:Lcom/snap/sharing/share_sheet/ShareSheetStyle;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final e(Lcom/snap/sharing/share_sheet/ShareSheetTitle;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lydg;->_title:Lcom/snap/sharing/share_sheet/ShareSheetTitle;
-
-    .line 2
-    .line 3
-    return-void
+    .line 33
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

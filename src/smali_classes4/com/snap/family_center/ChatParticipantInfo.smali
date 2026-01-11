@@ -1,10 +1,10 @@
 .class public final Lcom/snap/family_center/ChatParticipantInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'userId\':s,\'userName\':s,\'displayName\':s?"
     typeReferences = {}

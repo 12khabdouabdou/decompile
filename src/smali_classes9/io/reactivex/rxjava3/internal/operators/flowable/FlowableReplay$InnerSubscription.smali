@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc7i;
+.implements Ltvi;
 .implements Lio/reactivex/rxjava3/disposables/Disposable;
 
 
@@ -23,7 +23,7 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicLong;",
-        "Lc7i;",
+        "Ltvi;",
         "Lio/reactivex/rxjava3/disposables/Disposable;"
     }
 .end annotation
@@ -36,7 +36,7 @@
 
 .field public final a:Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;
 
-.field public final b:LV6i;
+.field public final b:Lmvi;
 
 .field public c:Ljava/io/Serializable;
 
@@ -44,7 +44,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;LV6i;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;Lmvi;)V
     .locals 0
 
     .line 1
@@ -57,7 +57,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->b:LV6i;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->b:Lmvi;
 
     .line 7
     .line 8
@@ -79,7 +79,19 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final cancel()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->dispose()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final d()Z
     .locals 5
 
     .line 1
@@ -116,18 +128,6 @@
     return v0
 .end method
 
-.method public final cancel()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;->dispose()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
 .method public final dispose()V
     .locals 5
 
@@ -156,7 +156,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->d(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;)V
+    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$ReplaySubscriber;->b(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableReplay$InnerSubscription;)V
 
     .line 14
     .line 15

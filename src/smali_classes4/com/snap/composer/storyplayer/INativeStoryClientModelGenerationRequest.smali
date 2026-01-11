@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/INativeStoryClientModelGenerationRequest;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'rawStoryCards\':a<r:\'[0]\'>,\'scheduler\':r<e>:\'[1]\',\'options\':r?:\'[2]\'"
     typeReferences = {

@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LpV8;
+    proxyClass = LR29;
     schema = "\'generateFSPlaybackToComposerBindings\':f|m, w|(f(): r:\'[0]\')"
     typeReferences = {
-        LoV8;
+        LQ29;
     }
 .end annotation
 

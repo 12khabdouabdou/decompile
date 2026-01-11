@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'DISABLED\':0,\'DUAL_CAM_VERTICAL\':1,\'DUAL_CAM_HORIZONTAL\':2,\'DUAL_CAM_PICTURE_IN_PICTURE\':3,\'DUAL_CAM_CUTOUT\':4,\'DUAL_CAM_FACE_INSETS\':5"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

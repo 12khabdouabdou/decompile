@@ -1,24 +1,55 @@
 .class public final La3k;
-.super LY3k;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LXf0;
 
 
 # instance fields
-.field public final X:Liw8;
+.field public final a:LAGb;
 
-.field public final Y:Lorg/json/JSONObject;
+.field public final b:LPg0;
 
-.field public final a:I
+.field public final c:Lxp0;
 
-.field public final b:Ljava/util/HashMap;
+.field public final d:LM1j;
 
-.field public final c:Lj4k;
+.field public final e:Ljava/util/ArrayList;
 
-.field public final t:LlPi;
+.field public final f:Ljava/util/ArrayList;
+
+.field public final g:LM98;
+
+.field public final h:LP5k;
+
+.field public i:I
+
+.field public j:I
+
+.field public final k:LB23;
+
+.field public final l:LB23;
+
+.field public m:I
+
+.field public n:Z
+
+.field public final o:Z
+
+.field public p:I
+
+.field public final q:Ly1;
+
+.field public r:I
+
+.field public s:Z
+
+.field public t:Z
 
 
 # direct methods
-.method public constructor <init>(ILiw8;Lj4k;Lorg/json/JSONObject;)V
+.method public constructor <init>(LAGb;LPg0;Lxp0;LM1j;Ljava/util/ArrayList;Ljava/util/ArrayList;LM98;LP5k;)V
     .locals 0
 
     .line 1
@@ -27,810 +58,432 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, La3k;->a:I
+    iput-object p1, p0, La3k;->a:LAGb;
 
     .line 5
     .line 6
-    iput-object p2, p0, La3k;->X:Liw8;
+    iput-object p2, p0, La3k;->b:LPg0;
 
     .line 7
     .line 8
-    iput-object p3, p0, La3k;->c:Lj4k;
+    iput-object p3, p0, La3k;->c:Lxp0;
 
     .line 9
     .line 10
-    new-instance p1, Ljava/util/HashMap;
+    iput-object p4, p0, La3k;->d:LM1j;
 
     .line 11
     .line 12
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+    iput-object p5, p0, La3k;->e:Ljava/util/ArrayList;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, La3k;->f:Ljava/util/ArrayList;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, La3k;->g:LM98;
+
+    .line 17
+    .line 18
+    iput-object p8, p0, La3k;->h:LP5k;
+
+    .line 19
+    .line 20
+    new-instance p1, LB23;
+
+    .line 21
+    .line 22
+    const/4 p2, 0x5
+
+    .line 23
+    invoke-direct {p1, p2}, LB23;-><init>(I)V
+
+    .line 24
+    .line 25
+    .line 26
+    iput-object p1, p0, La3k;->k:LB23;
+
+    .line 27
+    .line 28
+    new-instance p1, LB23;
+
+    .line 29
+    .line 30
+    invoke-direct {p1, p2}, LB23;-><init>(I)V
+
+    .line 31
+    .line 32
+    .line 33
+    iput-object p1, p0, La3k;->l:LB23;
+
+    .line 34
+    .line 35
+    const/4 p1, 0x1
+
+    .line 36
+    iput-boolean p1, p0, La3k;->n:Z
+
+    .line 37
+    .line 38
+    iput-boolean p1, p0, La3k;->o:Z
+
+    .line 39
+    .line 40
+    const/16 p1, 0x1e
+
+    .line 41
+    .line 42
+    iput p1, p0, La3k;->p:I
+
+    .line 43
+    .line 44
+    new-instance p1, Ly1;
+
+    .line 45
+    .line 46
+    invoke-direct {p1, p0}, Ly1;-><init>(La3k;)V
+
+    .line 47
+    .line 48
+    .line 49
+    iput-object p1, p0, La3k;->q:Ly1;
+
+    .line 50
+    .line 51
+    return-void
+.end method
+
+.method public static final a(La3k;)LSu9;
+    .locals 1
+
+    .line 1
+    iget-object p0, p0, La3k;->b:LPg0;
+
+    .line 2
+    .line 3
+    iget-object p0, p0, LPg0;->B:LSu9;
+
+    .line 4
+    .line 5
+    if-eqz p0, :cond_0
+
+    .line 6
+    .line 7
+    return-object p0
+
+    .line 8
+    :cond_0
+    new-instance p0, LHf0;
+
+    .line 9
+    .line 10
+    const-string v0, "Null input surface"
+
+    .line 11
+    .line 12
+    invoke-direct {p0, v0}, LHf0;-><init>(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    iput-object p1, p0, La3k;->b:Ljava/util/HashMap;
-
-    .line 16
-    .line 17
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 18
-    .line 19
-    .line 20
-    new-instance p1, LlPi;
-
-    .line 21
-    .line 22
-    const/16 p2, 0x1b
-
-    .line 23
-    .line 24
-    invoke-direct {p1, p2}, LlPi;-><init>(I)V
-
-    .line 25
-    .line 26
-    .line 27
-    iput-object p1, p0, La3k;->t:LlPi;
-
-    .line 28
-    .line 29
-    iput-object p4, p0, La3k;->Y:Lorg/json/JSONObject;
-
-    .line 30
-    .line 31
-    return-void
+    throw p0
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/String;)V
-    .locals 4
+.method public final b()Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+    .locals 1
 
     .line 1
-    sget-object v0, LV2k;->a:[I
+    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
 
     .line 2
     .line 3
-    iget v1, p0, La3k;->a:I
-
-    .line 4
-    .line 5
-    invoke-static {v1}, Llva;->L(I)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    aget v0, v0, v1
-
-    .line 10
-    .line 11
-    iget-object v1, p0, La3k;->X:Liw8;
-
-    .line 12
-    .line 13
-    const/4 v2, 0x1
-
-    .line 14
-    if-eq v0, v2, :cond_2
-
-    .line 15
-    .line 16
-    const/4 v3, 0x2
-
-    .line 17
-    if-eq v0, v3, :cond_0
-
-    .line 18
-    .line 19
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    new-instance v0, Lorg/json/JSONObject;
-
-    .line 21
-    .line 22
-    invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-
-    .line 23
-    .line 24
-    .line 25
-    iget-object p1, v1, Liw8;->e:Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    check-cast p1, Landroid/content/Context;
-
-    .line 28
-    .line 29
-    invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v1
-
-    .line 33
-    const-string v3, "REMOTE_CONFIG"
-
-    .line 34
-    .line 35
-    invoke-static {p1, v1, v3}, LH3k;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-static {v0}, Li4k;->v(Lorg/json/JSONObject;)V
-
-    .line 39
-    .line 40
-    .line 41
-    const-string p1, "nc"
-
-    .line 42
-    .line 43
-    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object p1
-
-    .line 47
-    if-eqz p1, :cond_1
-
-    .line 48
-    .line 49
-    sput-boolean v2, Li4k;->d:Z
-
-    .line 50
-    .line 51
-    :cond_1
-    :goto_0
-    return-void
-
-    .line 52
-    :cond_2
-    iget-object v0, v1, Liw8;->e:Ljava/lang/Object;
-
-    .line 53
-    .line 54
-    check-cast v0, Landroid/content/Context;
-
-    .line 55
-    .line 56
-    const-string v1, "RAMP_CONFIG"
-
-    .line 57
-    .line 58
-    invoke-static {v0, p1, v1}, LH3k;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 59
-    .line 60
-    .line 61
-    return-void
+    return-object v0
 .end method
 
-.method public final c()Ljava/lang/String;
-    .locals 7
+.method public final c()D
+    .locals 2
 
     .line 1
-    iget v0, p0, La3k;->a:I
+    iget-object v0, p0, La3k;->e:Ljava/util/ArrayList;
 
     .line 2
     .line 3
-    const/4 v1, 0x3
+    iget v1, p0, La3k;->m:I
 
     .line 4
-    if-ne v0, v1, :cond_1
-
     .line 5
-    .line 6
-    iget-object v1, p0, La3k;->Y:Lorg/json/JSONObject;
+    invoke-static {v1, v0}, Llh3;->H3(ILjava/util/List;)Ljava/lang/Object;
 
+    .line 6
     .line 7
     .line 8
-    if-nez v1, :cond_0
-
-    .line 9
-    .line 10
-    const/4 v0, 0x0
-
-    .line 11
-    return-object v0
-
-    .line 12
-    :cond_0
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 13
-    .line 14
-    const-string v3, "https://b.stats.paypal.com/counter.cgi?p="
-
-    .line 15
-    .line 16
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 17
-    .line 18
-    .line 19
-    const-string v3, "pairing_id"
-
-    .line 20
-    .line 21
-    invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v3
-
-    .line 25
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    const-string v3, "&i="
-
-    .line 29
-    .line 30
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v3, "ip_addrs"
-
-    .line 34
-    .line 35
-    invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v1
-
-    .line 39
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 40
-    .line 41
-    .line 42
-    const-string v1, "&t="
-
-    .line 43
-    .line 44
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-wide v3
-
-    .line 51
-    const-wide/16 v5, 0x3e8
-
-    .line 52
-    .line 53
-    div-long/2addr v3, v5
-
-    .line 54
-    invoke-static {v3, v4}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object v1
-
-    .line 58
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 59
-    .line 60
-    .line 61
-    const-string v1, "&a="
-
-    .line 62
-    .line 63
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 64
-    .line 65
-    .line 66
-    iget-object v1, p0, La3k;->X:Liw8;
-
-    .line 67
-    .line 68
-    iget v1, v1, Liw8;->a:I
-
-    .line 69
-    .line 70
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 71
-    .line 72
-    .line 73
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object v1
-
-    .line 77
-    if-eqz v1, :cond_1
-
-    .line 78
-    .line 79
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    .line 80
-    .line 81
-    .line 82
-    move-result v2
-
-    .line 83
-    if-lez v2, :cond_1
-
-    .line 84
-    .line 85
-    return-object v1
-
-    .line 86
-    :cond_1
-    invoke-static {v0}, LsMj;->c(I)Ljava/lang/String;
-
-    .line 87
-    .line 88
-    .line 89
     move-result-object v0
 
-    .line 90
-    return-object v0
-.end method
-
-.method public final run()V
-    .locals 8
-
-    .line 1
-    iget v0, p0, La3k;->a:I
-
-    .line 2
-    .line 3
-    iget-object v1, p0, La3k;->c:Lj4k;
-
-    .line 4
-    .line 5
-    if-nez v1, :cond_0
-
-    .line 6
-    .line 7
-    goto/16 :goto_4
-
-    .line 8
     .line 9
-    :cond_0
-    const-string v2, "Magnes Request Started for URL: "
+    check-cast v0, Ljava/lang/Double;
 
     .line 10
     .line 11
-    iget-object v3, p0, La3k;->b:Ljava/util/HashMap;
+    if-eqz v0, :cond_0
 
     .line 12
     .line 13
-    const/4 v4, 0x3
+    invoke-virtual {v0}, Ljava/lang/Double;->doubleValue()D
 
     .line 14
-    if-ne v0, v4, :cond_2
-
     .line 15
     .line 16
-    iget-object v4, p0, La3k;->Y:Lorg/json/JSONObject;
+    move-result-wide v0
 
     .line 17
-    .line 18
-    if-nez v4, :cond_1
+    invoke-static {v0, v1}, Ljava/lang/Math;->abs(D)D
 
+    .line 18
     .line 19
     .line 20
-    goto :goto_0
+    move-result-wide v0
 
     .line 21
-    :cond_1
-    const-string v5, "app_id"
+    return-wide v0
 
     .line 22
+    :cond_0
+    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+
     .line 23
-    invoke-virtual {v4, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
     .line 24
-    .line 25
-    .line 26
-    move-result-object v5
+    return-wide v0
+.end method
 
-    .line 27
-    const-string v6, "app_version"
+.method public final d()Lio/reactivex/rxjava3/core/Completable;
+    .locals 3
 
-    .line 28
-    .line 29
-    invoke-virtual {v4, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    .line 1
+    new-instance v0, LXu3;
 
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v6
+    .line 2
+    .line 3
+    new-instance v1, LZ2k;
 
-    .line 33
-    const-string v7, "app_guid"
-
-    .line 34
-    .line 35
-    invoke-virtual {v4, v7}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v4
-
-    .line 39
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    .line 40
-    .line 41
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 42
-    .line 43
-    .line 44
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 45
-    .line 46
-    .line 47
-    const-string v5, "/"
-
-    .line 48
-    .line 49
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 50
-    .line 51
-    .line 52
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 59
-    .line 60
-    .line 61
-    const-string v4, "/Android"
-
-    .line 62
-    .line 63
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 64
-    .line 65
-    .line 66
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-object v4
-
-    .line 70
-    const-string v5, "User-Agent"
-
-    .line 71
-    .line 72
-    invoke-virtual {v3, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 73
-    .line 74
-    .line 75
-    const-string v4, "en-us"
-
-    .line 76
-    .line 77
-    const-string v5, "Accept-Language"
-
-    .line 78
-    .line 79
-    invoke-virtual {v3, v5, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 80
-    .line 81
-    .line 82
-    :cond_2
-    :goto_0
-    const/16 v4, 0x33
-
-    .line 83
-    .line 84
-    :try_start_0
-    iget-object v5, p0, La3k;->t:LlPi;
-
-    .line 85
-    .line 86
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 87
-    .line 88
-    .line 89
-    const/4 v5, 0x2
-
-    .line 90
-    invoke-static {v5}, LlPi;->c(I)LsRa;
-
-    .line 91
-    .line 92
-    .line 93
-    move-result-object v5
-
-    .line 94
-    invoke-virtual {p0}, La3k;->c()Ljava/lang/String;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v6
-
-    .line 98
-    if-nez v6, :cond_3
-
-    .line 99
-    .line 100
-    goto/16 :goto_4
-
-    .line 101
-    .line 102
-    :cond_3
-    invoke-static {v6}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v7
-
-    .line 106
-    invoke-interface {v5, v7}, LsRa;->b(Landroid/net/Uri;)V
-
-    .line 107
-    .line 108
-    .line 109
-    if-eqz v3, :cond_4
-
-    .line 110
-    .line 111
-    invoke-virtual {v3}, Ljava/util/HashMap;->isEmpty()Z
-
-    .line 112
-    .line 113
-    .line 114
-    move-result v7
-
-    .line 115
-    if-nez v7, :cond_4
-
-    .line 116
-    .line 117
-    invoke-interface {v5, v3}, LsRa;->c(Ljava/util/HashMap;)V
-
-    .line 118
-    .line 119
-    .line 120
-    :cond_4
-    if-eqz v1, :cond_5
-
-    .line 121
-    .line 122
-    invoke-virtual {v2, v6}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 123
-    .line 124
-    .line 125
-    move-result-object v2
-
-    .line 126
-    const/16 v3, 0x32
-
-    .line 127
-    .line 128
-    invoke-static {v1, v3, v2}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
-
-    .line 129
-    .line 130
-    .line 131
-    move-result-object v2
-
-    .line 132
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-
-    .line 133
-    .line 134
-    .line 135
-    goto :goto_1
-
-    .line 136
-    :catch_0
-    move-exception v0
-
-    .line 137
-    goto :goto_3
-
-    .line 138
-    :cond_5
-    :goto_1
+    .line 4
+    .line 5
     const/4 v2, 0x0
 
-    .line 139
-    invoke-interface {v5, v2}, LsRa;->a([B)I
+    .line 6
+    invoke-direct {v1, p0, v2}, LZ2k;-><init>(La3k;I)V
 
-    .line 140
-    .line 141
-    .line 142
-    move-result v2
+    .line 7
+    .line 8
+    .line 9
+    invoke-direct {v0, v1}, LXu3;-><init>(Lkotlin/jvm/functions/Function0;)V
 
-    .line 143
-    new-instance v3, Ljava/lang/String;
+    .line 10
+    .line 11
+    .line 12
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
 
-    .line 144
-    .line 145
-    invoke-interface {v5}, LsRa;->d()[B
+    .line 13
+    .line 14
+    iget-object v2, p0, La3k;->c:Lxp0;
 
-    .line 146
-    .line 147
-    .line 148
-    move-result-object v5
+    .line 15
+    .line 16
+    invoke-direct {v1, v0, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 149
-    const-string v6, "UTF-8"
+    .line 17
+    .line 18
+    .line 19
+    return-object v1
+.end method
 
-    .line 150
-    .line 151
-    invoke-direct {v3, v5, v6}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
+.method public final e()Lv1;
+    .locals 1
 
-    .line 152
-    .line 153
-    .line 154
-    invoke-static {v0}, LsMj;->c(I)Ljava/lang/String;
+    .line 1
+    const/4 v0, 0x0
 
-    .line 155
-    .line 156
-    .line 157
-    sget-boolean v0, LZ2k;->a:Z
+    .line 2
+    return-object v0
+.end method
 
-    .line 158
-    .line 159
-    const/16 v0, 0xc8
+.method public final f()Lfbf;
+    .locals 2
 
-    .line 160
-    .line 161
-    if-ne v2, v0, :cond_6
+    .line 1
+    iget-object v0, p0, La3k;->f:Ljava/util/ArrayList;
 
-    .line 162
-    .line 163
-    invoke-virtual {p0, v3}, La3k;->b(Ljava/lang/String;)V
+    .line 2
+    .line 3
+    iget v1, p0, La3k;->m:I
 
-    .line 164
-    .line 165
-    .line 166
-    if-eqz v1, :cond_7
+    .line 4
+    .line 5
+    invoke-static {v1, v0}, Llh3;->H3(ILjava/util/List;)Ljava/lang/Object;
 
-    .line 167
-    .line 168
-    const/16 v0, 0x34
-
-    .line 169
-    .line 170
-    invoke-static {v1, v0, v3}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
-
-    .line 171
-    .line 172
-    .line 173
+    .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
-    .line 174
-    goto :goto_2
+    .line 9
+    check-cast v0, Lfbf;
 
-    .line 175
-    :cond_6
-    if-eqz v1, :cond_7
+    .line 10
+    .line 11
+    return-object v0
+.end method
 
-    .line 176
-    .line 177
-    new-instance v0, Ljava/lang/StringBuilder;
+.method public final getTag()Ljava/lang/String;
+    .locals 3
 
-    .line 178
-    .line 179
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    .line 1
+    iget-object v0, p0, La3k;->a:LAGb;
 
-    .line 180
-    .line 181
-    .line 182
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lug0;->getTag()Ljava/lang/String;
 
-    .line 183
-    .line 184
-    .line 185
-    const-string v2, " : "
-
-    .line 186
-    .line 187
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 188
-    .line 189
-    .line 190
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 191
-    .line 192
-    .line 193
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 194
-    .line 195
-    .line 196
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 197
-    invoke-static {v1, v4, v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
+    .line 7
+    const-string v1, "VideoMediaSourceToEncoderBridge("
 
-    .line 198
-    .line 199
-    .line 200
+    .line 8
+    .line 9
+    const-string v2, "-AsyncVideoEncoder)"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v0, v2}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
     move-result-object v0
 
-    .line 201
-    :goto_2
-    invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    .line 15
+    return-object v0
+.end method
 
-    .line 202
-    .line 203
-    .line 204
-    return-void
+.method public final run()Lio/reactivex/rxjava3/core/Completable;
+    .locals 3
 
-    .line 205
-    :goto_3
-    if-eqz v1, :cond_7
+    .line 1
+    iget-object v0, p0, La3k;->a:LAGb;
 
-    .line 206
-    .line 207
-    invoke-static {v1, v4, v0}, Landroid/os/Message;->obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
+    .line 2
+    .line 3
+    invoke-interface {v0}, LYf0;->f()Lio/reactivex/rxjava3/core/Observable;
 
-    .line 208
-    .line 209
-    .line 210
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 211
-    invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
+    .line 7
+    new-instance v1, LKGj;
 
-    .line 212
-    .line 213
-    .line 214
-    :cond_7
-    :goto_4
-    return-void
+    .line 8
+    .line 9
+    const/16 v2, 0x19
+
+    .line 10
+    .line 11
+    invoke-direct {v1, v2, p0}, LKGj;-><init>(ILjava/lang/Object;)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    new-instance v1, LZ2k;
+
+    .line 19
+    .line 20
+    const/4 v2, 0x1
+
+    .line 21
+    invoke-direct {v1, p0, v2}, LZ2k;-><init>(La3k;I)V
+
+    .line 22
+    .line 23
+    .line 24
+    iget-object v2, p0, La3k;->d:LM1j;
+
+    .line 25
+    .line 26
+    invoke-static {v0, v2, v1}, LaBk;->l(Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;LM1j;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    iget-object v1, p0, La3k;->c:Lxp0;
+
+    .line 31
+    .line 32
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    new-instance v1, LEZj;
+
+    .line 37
+    .line 38
+    const/4 v2, 0x1
+
+    .line 39
+    invoke-direct {v1, v2, p0}, LEZj;-><init>(ILjava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->G(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    new-instance v1, LTxj;
+
+    .line 47
+    .line 48
+    const/16 v2, 0x16
+
+    .line 49
+    .line 50
+    invoke-direct {v1, v2, p0}, LTxj;-><init>(ILjava/lang/Object;)V
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    return-object v0
 .end method

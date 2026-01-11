@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
+.implements LY2d;
 
 
 # static fields
@@ -13,9 +13,9 @@
 # instance fields
 .field public final A0:Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
-.field public final B0:LTqc;
+.field public final B0:LmGc;
 
-.field public final C0:LPm9;
+.field public final C0:LIv9;
 
 .field public final D0:Ljava/lang/String;
 
@@ -41,7 +41,7 @@
 
 .field public final O0:Z
 
-.field public final P0:Lrn0;
+.field public final P0:LJp0;
 
 .field public final Q0:I
 
@@ -71,7 +71,7 @@
 
 
 # direct methods
-.method public constructor <init>(ILandroid/view/View$OnClickListener;ZLio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;LTqc;LPm9;Ljava/lang/String;I)V
+.method public constructor <init>(ILandroid/view/View$OnClickListener;ZLio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;LmGc;LIv9;Ljava/lang/String;I)V
     .locals 3
 
     .line 1
@@ -137,11 +137,11 @@
 
     .line 27
     .line 28
-    iput-object p5, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->B0:LTqc;
+    iput-object p5, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->B0:LmGc;
 
     .line 29
     .line 30
-    iput-object p6, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->C0:LPm9;
+    iput-object p6, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->C0:LIv9;
 
     .line 31
     .line 32
@@ -194,7 +194,7 @@
 
     .line 53
     .line 54
-    sget-object p1, Ly5h;->Z:Ly5h;
+    sget-object p1, Lqrh;->Z:Lqrh;
 
     .line 55
     .line 56
@@ -212,11 +212,11 @@
     .line 62
     .line 63
     .line 64
-    sget-object p1, Lrn0;->a:Lrn0;
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 65
     .line 66
-    iput-object p1, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->P0:Lrn0;
+    iput-object p1, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->P0:LJp0;
 
     .line 67
     .line 68
@@ -224,7 +224,7 @@
 
     .line 69
     .line 70
-    const p1, 0x7f132320
+    const p1, 0x7f1324e1
 
     .line 71
     .line 72
@@ -233,7 +233,7 @@
 
     .line 74
     :cond_4
-    const p1, 0x7f133702
+    const p1, 0x7f1339f8
 
     .line 75
     .line 76
@@ -247,7 +247,7 @@
 
     .line 80
     .line 81
-    const p1, 0x7f13231f
+    const p1, 0x7f1324e0
 
     .line 82
     .line 83
@@ -256,7 +256,7 @@
 
     .line 85
     :cond_5
-    const p1, 0x7f133701
+    const p1, 0x7f1339f7
 
     .line 86
     .line 87
@@ -270,7 +270,7 @@
 
     .line 91
     .line 92
-    const p1, 0x7f13231e
+    const p1, 0x7f1324df
 
     .line 93
     .line 94
@@ -279,7 +279,7 @@
 
     .line 96
     :cond_6
-    const p1, 0x7f133704
+    const p1, 0x7f1339fa
 
     .line 97
     .line 98
@@ -293,7 +293,7 @@
 
     .line 102
     .line 103
-    const p1, 0x7f13231d
+    const p1, 0x7f1324de
 
     .line 104
     .line 105
@@ -302,7 +302,7 @@
 
     .line 107
     :cond_7
-    const p1, 0x7f133703
+    const p1, 0x7f1339f9
 
     .line 108
     .line 109
@@ -316,7 +316,7 @@
 
     .line 113
     .line 114
-    const p1, 0x7f132318
+    const p1, 0x7f1324d9
 
     .line 115
     .line 116
@@ -325,7 +325,7 @@
 
     .line 118
     :cond_8
-    const p1, 0x7f130b48
+    const p1, 0x7f130bcb
 
     .line 119
     .line 120
@@ -339,7 +339,7 @@
 
     .line 124
     .line 125
-    const p1, 0x7f132317
+    const p1, 0x7f1324d8
 
     .line 126
     .line 127
@@ -348,7 +348,7 @@
 
     .line 129
     :cond_9
-    const p1, 0x7f130b46
+    const p1, 0x7f130bc9
 
     .line 130
     .line 131
@@ -358,7 +358,7 @@
 
     .line 133
     .line 134
-    const p1, 0x7f130b47
+    const p1, 0x7f130bca
 
     .line 135
     .line 136
@@ -371,7 +371,7 @@
 
     .line 140
     .line 141
-    const p1, 0x7f13231c
+    const p1, 0x7f1324dd
 
     .line 142
     .line 143
@@ -380,7 +380,7 @@
 
     .line 145
     :cond_a
-    const p1, 0x7f1333cf
+    const p1, 0x7f133695
 
     .line 146
     .line 147
@@ -394,7 +394,7 @@
 
     .line 151
     .line 152
-    const p1, 0x7f13231b
+    const p1, 0x7f1324dc
 
     .line 153
     .line 154
@@ -403,7 +403,7 @@
 
     .line 156
     :cond_b
-    const p1, 0x7f1333ce
+    const p1, 0x7f133694
 
     .line 157
     .line 158
@@ -418,7 +418,7 @@
 
 
 # virtual methods
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
 
     .line 1
@@ -431,7 +431,7 @@
     const/4 v1, 0x2
 
     .line 4
-    const v2, 0x7f0e04f9
+    const v2, 0x7f0e051c
 
     .line 5
     .line 6
@@ -447,7 +447,7 @@
     move-result-object p1
 
     .line 12
-    const p2, 0x7f0b0f83
+    const p2, 0x7f0b10a0
 
     .line 13
     .line 14
@@ -468,7 +468,7 @@
 
     .line 22
     .line 23
-    const p2, 0x7f0b0f80
+    const p2, 0x7f0b109d
 
     .line 24
     .line 25
@@ -489,7 +489,7 @@
 
     .line 33
     .line 34
-    const p2, 0x7f0b0f82
+    const p2, 0x7f0b109f
 
     .line 35
     .line 36
@@ -510,7 +510,7 @@
 
     .line 44
     .line 45
-    const p2, 0x7f0b0f81
+    const p2, 0x7f0b109e
 
     .line 46
     .line 47
@@ -531,7 +531,7 @@
 
     .line 55
     .line 56
-    const p2, 0x7f0b0e6e
+    const p2, 0x7f0b0f8a
 
     .line 57
     .line 58
@@ -552,7 +552,7 @@
 
     .line 66
     .line 67
-    const p2, 0x7f0b1699
+    const p2, 0x7f0b17da
 
     .line 68
     .line 69
@@ -573,7 +573,7 @@
 
     .line 77
     .line 78
-    const p2, 0x7f0b0796
+    const p2, 0x7f0b083f
 
     .line 79
     .line 80
@@ -590,7 +590,7 @@
 
     .line 86
     .line 87
-    const p2, 0x7f0b0f84
+    const p2, 0x7f0b10a1
 
     .line 88
     .line 89
@@ -611,7 +611,7 @@
 
     .line 97
     .line 98
-    const p2, 0x7f0b0af7
+    const p2, 0x7f0b0c09
 
     .line 99
     .line 100
@@ -628,7 +628,7 @@
 
     .line 106
     .line 107
-    const p2, 0x7f0b0f85
+    const p2, 0x7f0b10a2
 
     .line 108
     .line 109
@@ -645,7 +645,7 @@
 
     .line 115
     .line 116
-    const p2, 0x7f0b0c85
+    const p2, 0x7f0b0dab
 
     .line 117
     .line 118
@@ -685,7 +685,7 @@
 
     .line 135
     .line 136
-    invoke-static {v6, v5}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v5}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 137
     .line 138
@@ -693,7 +693,7 @@
     move-result v5
 
     .line 140
-    const v7, 0x7f060327
+    const v7, 0x7f0603af
 
     .line 141
     .line 142
@@ -710,7 +710,7 @@
 
     .line 147
     .line 148
-    invoke-static {v6, v5}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v5}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 149
     .line 150
@@ -722,7 +722,7 @@
 
     .line 153
     .line 154
-    const v7, 0x7f060193
+    const v7, 0x7f0601c3
 
     .line 155
     .line 156
@@ -737,7 +737,7 @@
     move-result-object v5
 
     .line 161
-    invoke-static {v5, v7}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v5, v7}, LV14;->c(Landroid/content/Context;I)I
 
     .line 162
     .line 163
@@ -783,7 +783,7 @@
 
     .line 183
     .line 184
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 185
     .line 186
@@ -796,7 +796,7 @@
 
     .line 189
     .line 190
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 191
     .line 192
@@ -806,42 +806,42 @@
     .line 194
     :cond_4
     :goto_1
-    new-instance v5, LnGg;
+    new-instance v5, LGth;
 
     .line 195
     .line 196
-    const/16 v6, 0x11
+    invoke-direct {v5, v0, p0}, LGth;-><init>(ILjava/lang/Object;)V
 
     .line 197
     .line 198
-    invoke-direct {v5, v6, p0}, LnGg;-><init>(ILjava/lang/Object;)V
-
     .line 199
+    iget-object v6, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->A0:Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
     .line 200
     .line 201
-    iget-object v6, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->A0:Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 202
     .line 203
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 204
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
     .line 205
     .line 206
-    new-instance v7, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-direct {v7, v6, v5}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 207
     .line 208
-    invoke-direct {v7, v6, v5}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 209
+    new-instance v5, Lujh;
+
     .line 210
     .line 211
-    new-instance v5, LV8h;
+    const/16 v6, 0x11
 
     .line 212
     .line 213
-    invoke-direct {v5, v1, p0}, LV8h;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v5, v6, p0}, Lujh;-><init>(ILjava/lang/Object;)V
 
     .line 214
     .line 215
@@ -854,15 +854,15 @@
     move-result-object v5
 
     .line 220
-    sget-object v6, LLwf;->e0:LLwf;
+    sget-object v6, LUPf;->e0:LUPf;
 
     .line 221
     .line 222
-    iget-object v7, p0, LOwf;->a:Ljava/lang/String;
+    iget-object v7, p0, LXPf;->a:Ljava/lang/String;
 
     .line 223
     .line 224
-    invoke-virtual {p0, v5, v6, v7}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {p0, v5, v6, v7}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 225
     .line 226
@@ -871,7 +871,7 @@
 
     .line 228
     .line 229
-    invoke-static {v5}, Llva;->L(I)I
+    invoke-static {v5}, LzHa;->L(I)I
 
     .line 230
     .line 231
@@ -941,11 +941,11 @@
 
     .line 261
     .line 262
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->X0:I
+    iget v1, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->X0:I
 
     .line 263
     .line 264
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p3, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 265
     .line 266
@@ -958,11 +958,11 @@
 
     .line 270
     .line 271
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->Y0:I
+    iget v1, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->Y0:I
 
     .line 272
     .line 273
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
+    invoke-virtual {p3, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 274
     .line 275
@@ -1014,7 +1014,7 @@
 
     .line 300
     :cond_6
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 301
     .line 302
@@ -1023,7 +1023,7 @@
 
     .line 304
     :cond_7
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 305
     .line 306
@@ -1032,7 +1032,7 @@
 
     .line 308
     :cond_8
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 309
     .line 310
@@ -1062,7 +1062,7 @@
 
     .line 322
     .line 323
-    const p3, 0x7f13344b
+    const p3, 0x7f133713
 
     .line 324
     .line 325
@@ -1080,1147 +1080,1143 @@
 
     .line 332
     .line 333
-    new-instance p3, LGgg;
+    new-instance p3, LGuh;
 
     .line 334
     .line 335
-    const/16 v1, 0x14
+    invoke-direct {p3, v0, p0}, LGuh;-><init>(ILjava/lang/Object;)V
 
     .line 336
     .line 337
-    invoke-direct {p3, v1, p0}, LGgg;-><init>(ILjava/lang/Object;)V
-
     .line 338
-    .line 339
-    .line 340
     invoke-virtual {p2, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 339
+    .line 340
     .line 341
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->J0:Landroid/widget/TextView;
+
     .line 342
     .line 343
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->J0:Landroid/widget/TextView;
+    const-string p3, "finishButton"
 
     .line 344
     .line 345
-    const-string p3, "finishButton"
+    if-eqz p2, :cond_c
 
     .line 346
     .line 347
-    if-eqz p2, :cond_c
+    invoke-virtual {p2, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 348
     .line 349
-    invoke-virtual {p2, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 350
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->J0:Landroid/widget/TextView;
+
     .line 351
     .line 352
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->J0:Landroid/widget/TextView;
+    if-eqz p2, :cond_b
 
     .line 353
     .line 354
-    if-eqz p2, :cond_b
+    invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 355
     .line 356
-    invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
-
     .line 357
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+
     .line 358
     .line 359
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+    if-eqz p2, :cond_a
 
     .line 360
     .line 361
-    if-eqz p2, :cond_a
+    invoke-virtual {p0, v1}, Landroidx/fragment/app/g;->getString(I)Ljava/lang/String;
 
     .line 362
     .line 363
-    invoke-virtual {p0, v0}, Landroidx/fragment/app/g;->getString(I)Ljava/lang/String;
-
     .line 364
-    .line 365
-    .line 366
     move-result-object p3
 
-    .line 367
+    .line 365
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+    .line 366
+    .line 367
     .line 368
-    .line 369
-    .line 370
     return-object p1
 
-    .line 371
+    .line 369
     :cond_a
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 370
+    .line 371
     .line 372
+    throw v2
+
     .line 373
-    .line 374
-    throw v2
-
-    .line 375
     :cond_b
-    invoke-static {p3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p3}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 374
+    .line 375
     .line 376
+    throw v2
+
     .line 377
-    .line 378
-    throw v2
-
-    .line 379
     :cond_c
-    invoke-static {p3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p3}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 378
+    .line 379
     .line 380
+    throw v2
+
     .line 381
-    .line 382
-    throw v2
-
-    .line 383
     :cond_d
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 382
+    .line 383
     .line 384
+    throw v2
+
     .line 385
-    .line 386
-    throw v2
-
-    .line 387
     :cond_e
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 386
+    .line 387
     .line 388
+    throw v2
+
     .line 389
-    .line 390
-    throw v2
-
-    .line 391
     :cond_f
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 390
+    .line 391
     .line 392
+    throw v2
+
     .line 393
-    .line 394
-    throw v2
-
-    .line 395
     :cond_10
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 394
+    .line 395
     .line 396
+    throw v2
+
     .line 397
-    .line 398
-    throw v2
-
-    .line 399
     :cond_11
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 398
+    .line 399
     .line 400
-    .line 401
-    .line 402
     throw v2
 
-    .line 403
+    .line 401
     :cond_12
     iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
 
+    .line 402
+    .line 403
+    if-eqz p3, :cond_19
+
     .line 404
     .line 405
-    if-eqz p3, :cond_19
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->U0:I
 
     .line 406
     .line 407
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->U0:I
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 408
     .line 409
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
-
     .line 410
+    iget-boolean p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->z0:Z
+
     .line 411
     .line 412
-    iget-boolean p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->z0:Z
+    if-eqz p3, :cond_14
 
     .line 413
     .line 414
-    if-eqz p3, :cond_14
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
 
     .line 415
     .line 416
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+    if-eqz p3, :cond_13
 
     .line 417
     .line 418
-    if-eqz p3, :cond_13
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->V0:I
 
     .line 419
     .line 420
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->V0:I
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 421
     .line 422
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
-
     .line 423
-    .line 424
-    .line 425
     goto :goto_2
 
-    .line 426
+    .line 424
     :cond_13
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 425
+    .line 426
     .line 427
-    .line 428
-    .line 429
     throw v2
 
-    .line 430
+    .line 428
     :cond_14
     iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
 
+    .line 429
+    .line 430
+    if-eqz p3, :cond_18
+
     .line 431
     .line 432
-    if-eqz p3, :cond_18
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->W0:I
 
     .line 433
     .line 434
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->W0:I
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 435
     .line 436
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
-
     .line 437
-    .line 438
-    .line 439
     :goto_2
     iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
 
+    .line 438
+    .line 439
+    if-eqz p3, :cond_17
+
     .line 440
     .line 441
-    if-eqz p3, :cond_17
+    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 442
     .line 443
-    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 444
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 445
     .line 446
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz p3, :cond_16
 
     .line 447
     .line 448
-    if-eqz p3, :cond_16
+    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 449
     .line 450
-    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
-
     .line 451
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+
     .line 452
     .line 453
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz p3, :cond_15
 
     .line 454
     .line 455
-    if-eqz p3, :cond_15
+    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 456
     .line 457
-    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
-
     .line 458
-    .line 459
-    .line 460
     return-object p1
 
-    .line 461
+    .line 459
     :cond_15
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 460
+    .line 461
     .line 462
+    throw v2
+
     .line 463
-    .line 464
-    throw v2
-
-    .line 465
     :cond_16
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 464
+    .line 465
     .line 466
+    throw v2
+
     .line 467
-    .line 468
-    throw v2
-
-    .line 469
     :cond_17
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 468
+    .line 469
     .line 470
+    throw v2
+
     .line 471
-    .line 472
-    throw v2
-
-    .line 473
     :cond_18
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 472
+    .line 473
     .line 474
+    throw v2
+
     .line 475
-    .line 476
-    throw v2
-
-    .line 477
     :cond_19
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 476
+    .line 477
     .line 478
-    .line 479
-    .line 480
     throw v2
 
-    .line 481
+    .line 479
     :cond_1a
     iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
 
+    .line 480
+    .line 481
+    if-eqz p3, :cond_1f
+
     .line 482
     .line 483
-    if-eqz p3, :cond_1f
+    const v0, 0x7f130a4c
 
     .line 484
     .line 485
-    const v0, 0x7f1309e0
-
     .line 486
-    .line 487
-    .line 488
     invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
+    .line 487
+    .line 488
     .line 489
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+
     .line 490
     .line 491
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+    if-eqz p3, :cond_1e
 
     .line 492
     .line 493
-    if-eqz p3, :cond_1e
+    const v0, 0x7f130a4b
 
     .line 494
     .line 495
-    const v0, 0x7f1309df
-
     .line 496
-    .line 497
-    .line 498
     invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
+    .line 497
+    .line 498
     .line 499
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+
     .line 500
     .line 501
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz p3, :cond_1d
 
     .line 502
     .line 503
-    if-eqz p3, :cond_1d
+    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 504
     .line 505
-    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 506
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+
     .line 507
     .line 508
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz p3, :cond_1c
 
     .line 509
     .line 510
-    if-eqz p3, :cond_1c
+    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 511
     .line 512
-    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
-
     .line 513
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 514
     .line 515
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz p3, :cond_1b
 
     .line 516
     .line 517
-    if-eqz p3, :cond_1b
+    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 518
     .line 519
-    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
-
     .line 520
-    .line 521
-    .line 522
     return-object p1
 
-    .line 523
+    .line 521
     :cond_1b
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 522
+    .line 523
     .line 524
+    throw v2
+
     .line 525
-    .line 526
-    throw v2
-
-    .line 527
     :cond_1c
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 526
+    .line 527
     .line 528
+    throw v2
+
     .line 529
-    .line 530
-    throw v2
-
-    .line 531
     :cond_1d
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 530
+    .line 531
     .line 532
+    throw v2
+
     .line 533
-    .line 534
-    throw v2
-
-    .line 535
     :cond_1e
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 534
+    .line 535
     .line 536
+    throw v2
+
     .line 537
-    .line 538
-    throw v2
-
-    .line 539
     :cond_1f
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 538
+    .line 539
     .line 540
-    .line 541
-    .line 542
     throw v2
 
-    .line 543
+    .line 541
     :cond_20
     iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
 
+    .line 542
+    .line 543
+    if-eqz p3, :cond_29
+
     .line 544
     .line 545
-    if-eqz p3, :cond_29
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->S0:I
 
     .line 546
     .line 547
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->S0:I
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 548
     .line 549
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
-
     .line 550
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+
     .line 551
     .line 552
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+    if-eqz p3, :cond_28
 
     .line 553
     .line 554
-    if-eqz p3, :cond_28
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->T0:I
 
     .line 555
     .line 556
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->T0:I
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 557
     .line 558
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
-
     .line 559
+    iget-boolean p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->y0:Z
+
     .line 560
     .line 561
-    iget-boolean p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->y0:Z
+    if-eqz p3, :cond_24
 
     .line 562
     .line 563
-    if-eqz p3, :cond_24
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
 
     .line 564
     .line 565
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz p3, :cond_23
 
     .line 566
     .line 567
-    if-eqz p3, :cond_23
+    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 568
     .line 569
-    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 570
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+
     .line 571
     .line 572
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz p3, :cond_22
 
     .line 573
     .line 574
-    if-eqz p3, :cond_22
+    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 575
     .line 576
-    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
-
     .line 577
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 578
     .line 579
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz p3, :cond_21
 
     .line 580
     .line 581
-    if-eqz p3, :cond_21
+    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 582
     .line 583
-    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
-
     .line 584
-    .line 585
-    .line 586
     return-object p1
 
-    .line 587
+    .line 585
     :cond_21
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 586
+    .line 587
     .line 588
+    throw v2
+
     .line 589
-    .line 590
-    throw v2
-
-    .line 591
     :cond_22
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 590
+    .line 591
     .line 592
+    throw v2
+
     .line 593
-    .line 594
-    throw v2
-
-    .line 595
     :cond_23
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 594
+    .line 595
     .line 596
-    .line 597
-    .line 598
     throw v2
 
-    .line 599
+    .line 597
     :cond_24
     iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
 
+    .line 598
+    .line 599
+    if-eqz p3, :cond_27
+
     .line 600
     .line 601
-    if-eqz p3, :cond_27
+    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 602
     .line 603
-    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 604
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 605
     .line 606
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz p3, :cond_26
 
     .line 607
     .line 608
-    if-eqz p3, :cond_26
+    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 609
     .line 610
-    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
-
     .line 611
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+
     .line 612
     .line 613
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz p3, :cond_25
 
     .line 614
     .line 615
-    if-eqz p3, :cond_25
+    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 616
     .line 617
-    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
-
     .line 618
-    .line 619
-    .line 620
     return-object p1
 
-    .line 621
+    .line 619
     :cond_25
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 620
+    .line 621
     .line 622
+    throw v2
+
     .line 623
-    .line 624
-    throw v2
-
-    .line 625
     :cond_26
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 624
+    .line 625
     .line 626
+    throw v2
+
     .line 627
-    .line 628
-    throw v2
-
-    .line 629
     :cond_27
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 628
+    .line 629
     .line 630
+    throw v2
+
     .line 631
-    .line 632
-    throw v2
-
-    .line 633
     :cond_28
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 632
+    .line 633
     .line 634
+    throw v2
+
     .line 635
-    .line 636
-    throw v2
-
-    .line 637
     :cond_29
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 636
+    .line 637
     .line 638
-    .line 639
-    .line 640
     throw v2
 
-    .line 641
+    .line 639
     :cond_2a
     iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
 
+    .line 640
+    .line 641
+    if-eqz p3, :cond_2f
+
     .line 642
     .line 643
-    if-eqz p3, :cond_2f
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->Q0:I
 
     .line 644
     .line 645
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->Q0:I
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 646
     .line 647
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
-
     .line 648
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+
     .line 649
     .line 650
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+    if-eqz p3, :cond_2e
 
     .line 651
     .line 652
-    if-eqz p3, :cond_2e
+    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->R0:I
 
     .line 653
     .line 654
-    iget v0, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->R0:I
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 655
     .line 656
-    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(I)V
-
     .line 657
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 658
     .line 659
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz p3, :cond_2d
 
     .line 660
     .line 661
-    if-eqz p3, :cond_2d
+    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 662
     .line 663
-    invoke-virtual {p3, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 664
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 665
     .line 666
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz p3, :cond_2c
 
     .line 667
     .line 668
-    if-eqz p3, :cond_2c
+    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 669
     .line 670
-    invoke-virtual {p3, v3}, Landroid/view/View;->setVisibility(I)V
-
     .line 671
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+
     .line 672
     .line 673
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz p3, :cond_2b
 
     .line 674
     .line 675
-    if-eqz p3, :cond_2b
+    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 676
     .line 677
-    invoke-virtual {p3, p2}, Landroid/view/View;->setVisibility(I)V
-
     .line 678
-    .line 679
-    .line 680
     return-object p1
 
-    .line 681
+    .line 679
     :cond_2b
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 680
+    .line 681
     .line 682
+    throw v2
+
     .line 683
-    .line 684
-    throw v2
-
-    .line 685
     :cond_2c
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 684
+    .line 685
     .line 686
+    throw v2
+
     .line 687
-    .line 688
-    throw v2
-
-    .line 689
     :cond_2d
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 688
+    .line 689
     .line 690
+    throw v2
+
     .line 691
-    .line 692
-    throw v2
-
-    .line 693
     :cond_2e
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 692
+    .line 693
     .line 694
+    throw v2
+
     .line 695
-    .line 696
-    throw v2
-
-    .line 697
     :cond_2f
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 696
+    .line 697
     .line 698
-    .line 699
-    .line 700
     throw v2
 
-    .line 701
+    .line 699
     :cond_30
     iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
 
+    .line 700
+    .line 701
+    if-eqz v4, :cond_3b
+
     .line 702
     .line 703
-    if-eqz v4, :cond_3b
+    const v5, 0x7f1324db
 
     .line 704
     .line 705
-    const v5, 0x7f13231a
-
     .line 706
-    .line 707
-    .line 708
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
+    .line 707
+    .line 708
     .line 709
+    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+
     .line 710
     .line 711
-    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+    if-eqz v4, :cond_3a
 
     .line 712
     .line 713
-    if-eqz v4, :cond_3a
+    const v5, 0x7f1324da
 
     .line 714
     .line 715
-    const v5, 0x7f132319
-
     .line 716
-    .line 717
-    .line 718
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(I)V
 
+    .line 717
+    .line 718
     .line 719
+    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 720
     .line 721
-    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz v4, :cond_39
 
     .line 722
     .line 723
-    if-eqz v4, :cond_39
+    invoke-virtual {v4, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 724
     .line 725
-    invoke-virtual {v4, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 726
+    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 727
     .line 728
-    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz v4, :cond_38
 
     .line 729
     .line 730
-    if-eqz v4, :cond_38
+    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 731
     .line 732
-    invoke-virtual {v4, v3}, Landroid/view/View;->setVisibility(I)V
-
     .line 733
+    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+
     .line 734
     .line 735
-    iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->H0:Landroid/widget/TextView;
+    if-eqz v4, :cond_37
 
     .line 736
     .line 737
-    if-eqz v4, :cond_37
+    invoke-virtual {v4, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 738
     .line 739
-    invoke-virtual {v4, p2}, Landroid/view/View;->setVisibility(I)V
-
     .line 740
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
+
     .line 741
     .line 742
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
+    if-eqz p2, :cond_36
 
     .line 743
     .line 744
-    if-eqz p2, :cond_36
-
-    .line 745
-    .line 746
     const/4 v4, 0x0
 
-    .line 747
+    .line 745
     invoke-virtual {p2, v4}, Landroid/view/View;->setAlpha(F)V
 
+    .line 746
+    .line 747
     .line 748
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+
     .line 749
     .line 750
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+    if-eqz p2, :cond_35
 
     .line 751
     .line 752
-    if-eqz p2, :cond_35
+    invoke-virtual {p2, v4}, Landroid/view/View;->setAlpha(F)V
 
     .line 753
     .line 754
-    invoke-virtual {p2, v4}, Landroid/view/View;->setAlpha(F)V
-
     .line 755
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
     .line 756
     .line 757
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+    if-eqz p2, :cond_34
 
     .line 758
     .line 759
-    if-eqz p2, :cond_34
+    invoke-virtual {p2, v4}, Landroid/view/View;->setAlpha(F)V
 
     .line 760
     .line 761
-    invoke-virtual {p2, v4}, Landroid/view/View;->setAlpha(F)V
-
     .line 762
+    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
+
     .line 763
     .line 764
-    iget-object p2, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->E0:Landroid/widget/TextView;
+    if-eqz p2, :cond_33
 
     .line 765
     .line 766
-    if-eqz p2, :cond_33
+    new-array v4, v1, [F
 
     .line 767
     .line 768
-    new-array v4, v1, [F
+    fill-array-data v4, :array_0
 
     .line 769
     .line 770
-    fill-array-data v4, :array_0
-
     .line 771
+    const-string v5, "alpha"
+
     .line 772
     .line 773
-    const-string v5, "alpha"
+    invoke-static {p2, v5, v4}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     .line 774
     .line 775
-    invoke-static {p2, v5, v4}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
-
     .line 776
-    .line 777
-    .line 778
     move-result-object p2
 
-    .line 779
+    .line 777
     const-wide/16 v6, 0x7d0
+
+    .line 778
+    .line 779
+    invoke-virtual {p2, v6, v7}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 780
     .line 781
-    invoke-virtual {p2, v6, v7}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
-
     .line 782
-    .line 783
-    .line 784
     move-result-object p2
 
-    .line 785
+    .line 783
     iget-object v4, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->F0:Landroid/widget/TextView;
+
+    .line 784
+    .line 785
+    if-eqz v4, :cond_32
 
     .line 786
     .line 787
-    if-eqz v4, :cond_32
+    new-array v8, v1, [F
 
     .line 788
     .line 789
-    new-array v8, v1, [F
+    fill-array-data v8, :array_1
 
     .line 790
     .line 791
-    fill-array-data v8, :array_1
-
     .line 792
-    .line 793
-    .line 794
     invoke-static {v4, v5, v8}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
+    .line 793
+    .line 794
     .line 795
-    .line 796
-    .line 797
     move-result-object v4
 
-    .line 798
+    .line 796
     invoke-virtual {v4, v6, v7}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
+    .line 797
+    .line 798
     .line 799
-    .line 800
-    .line 801
     move-result-object v4
 
-    .line 802
+    .line 800
     iget-object v8, p0, Lcom/snap/spectacles/lib/fragments/onboarding/SpectaclesOnboardingSubFragment;->G0:Landroid/widget/TextView;
+
+    .line 801
+    .line 802
+    if-eqz v8, :cond_31
 
     .line 803
     .line 804
-    if-eqz v8, :cond_31
+    new-array v2, v1, [F
 
     .line 805
     .line 806
-    new-array v2, v1, [F
+    fill-array-data v2, :array_2
 
     .line 807
     .line 808
-    fill-array-data v2, :array_2
-
     .line 809
-    .line 810
-    .line 811
     invoke-static {v8, v5, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
+    .line 810
+    .line 811
     .line 812
-    .line 813
-    .line 814
     move-result-object v2
 
-    .line 815
+    .line 813
     invoke-virtual {v2, v6, v7}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
+    .line 814
+    .line 815
     .line 816
-    .line 817
-    .line 818
     move-result-object v2
 
-    .line 819
+    .line 817
     new-instance v5, Landroid/animation/AnimatorSet;
+
+    .line 818
+    .line 819
+    invoke-direct {v5}, Landroid/animation/AnimatorSet;-><init>()V
 
     .line 820
     .line 821
-    invoke-direct {v5}, Landroid/animation/AnimatorSet;-><init>()V
-
     .line 822
+    new-array p3, p3, [Landroid/animation/Animator;
+
     .line 823
     .line 824
-    new-array p3, p3, [Landroid/animation/Animator;
+    aput-object p2, p3, v3
 
     .line 825
     .line 826
-    aput-object p2, p3, v3
+    aput-object v4, p3, v0
 
     .line 827
     .line 828
-    aput-object v4, p3, v0
+    aput-object v2, p3, v1
 
     .line 829
     .line 830
-    aput-object v2, p3, v1
+    invoke-virtual {v5, p3}, Landroid/animation/AnimatorSet;->playSequentially([Landroid/animation/Animator;)V
 
     .line 831
     .line 832
-    invoke-virtual {v5, p3}, Landroid/animation/AnimatorSet;->playSequentially([Landroid/animation/Animator;)V
-
     .line 833
+    invoke-virtual {v5}, Landroid/animation/Animator;->start()V
+
     .line 834
     .line 835
-    invoke-virtual {v5}, Landroid/animation/AnimatorSet;->start()V
-
     .line 836
-    .line 837
-    .line 838
     return-object p1
 
-    .line 839
+    .line 837
     :cond_31
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 838
+    .line 839
     .line 840
+    throw v2
+
     .line 841
-    .line 842
-    throw v2
-
-    .line 843
     :cond_32
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 842
+    .line 843
     .line 844
+    throw v2
+
     .line 845
-    .line 846
-    throw v2
-
-    .line 847
     :cond_33
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 846
+    .line 847
     .line 848
+    throw v2
+
     .line 849
-    .line 850
-    throw v2
-
-    .line 851
     :cond_34
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 850
+    .line 851
     .line 852
+    throw v2
+
     .line 853
-    .line 854
-    throw v2
-
-    .line 855
     :cond_35
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 854
+    .line 855
     .line 856
+    throw v2
+
     .line 857
-    .line 858
-    throw v2
-
-    .line 859
     :cond_36
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 858
+    .line 859
     .line 860
+    throw v2
+
     .line 861
-    .line 862
-    throw v2
-
-    .line 863
     :cond_37
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 862
+    .line 863
     .line 864
+    throw v2
+
     .line 865
-    .line 866
-    throw v2
-
-    .line 867
     :cond_38
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 866
+    .line 867
     .line 868
+    throw v2
+
     .line 869
-    .line 870
-    throw v2
-
-    .line 871
     :cond_39
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 870
+    .line 871
     .line 872
+    throw v2
+
     .line 873
-    .line 874
-    throw v2
-
-    .line 875
     :cond_3a
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 874
+    .line 875
     .line 876
+    throw v2
+
     .line 877
-    .line 878
-    throw v2
-
-    .line 879
     :cond_3b
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 878
+    .line 879
     .line 880
-    .line 881
-    .line 882
     throw v2
 
-    .line 883
+    .line 881
     :array_0
     .array-data 4
         0x0
         0x3f800000    # 1.0f
     .end array-data
 
+    .line 882
+    .line 883
     .line 884
     .line 885
     .line 886
     .line 887
     .line 888
     .line 889
-    .line 890
-    .line 891
     :array_1
     .array-data 4
         0x0
         0x3f800000    # 1.0f
     .end array-data
 
+    .line 890
+    .line 891
     .line 892
     .line 893
     .line 894
     .line 895
     .line 896
     .line 897
-    .line 898
-    .line 899
     :array_2
     .array-data 4
         0x0

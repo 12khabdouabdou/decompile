@@ -1,10 +1,10 @@
 .class public final Lcom/snap/impala/publicprofile/ImpalaServiceConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'accountService\':r?:\'[0]\',\'storyService\':r?:\'[0]\',\'discoverFeedService\':r?:\'[0]\',\'highlightsService\':r?:\'[0]\',\'insightsService\':r?:\'[0]\',\'lensService\':r?:\'[0]\'"
     typeReferences = {

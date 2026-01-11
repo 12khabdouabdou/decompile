@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'APP_START_JOB_SCHEDULER_PROCESSOR\':\'appStartJobSchedulerProcessor\',\'CALLING_APPEND_CALL_LOG_PROCESSOR\':\'callingAppendCallLogProcessor\',\'CALLING_DELETE_CALL_LOG_PROCESSOR\':\'callingDeleteCallLogProcessor\',\'CALL_LOG_DATA_SYNC_JOB_PROCESSOR\':\'callLogDataSyncJobProcessor\',\'CALLING_ML_MODEL_DATA_SYNC_JOB_PROCESSOR\':\'callingMLModelDataSyncJobProcessor\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

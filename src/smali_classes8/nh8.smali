@@ -1,182 +1,267 @@
 .class public final Lnh8;
-.super LPd1;
+.super Ln54;
 .source "SourceFile"
 
 
 # instance fields
-.field public b:Ljava/lang/Long;
+.field public Z:Lcom/snap/ui/view/SnapFontTextView;
 
-.field public c:Ljava/lang/Long;
+.field public e0:Lcom/snap/imageloading/view/SnapImageView;
 
-.field public d:Ljava/util/ArrayList;
+.field public f0:LlW6;
 
 
-# virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+# direct methods
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    invoke-direct {p0}, Ln54;-><init>()V
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
     .line 4
-    const/4 v1, 0x3
-
-    .line 5
-    iget-object v2, p0, Lnh8;->b:Ljava/lang/Long;
-
-    .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 8
-    .line 9
-    .line 10
-    iget-object v1, p0, Lnh8;->d:Ljava/util/ArrayList;
-
-    .line 11
-    .line 12
-    const/4 v2, 0x4
-
-    .line 13
-    invoke-static {p1, v2, v0, v1, p2}, Lew8;->K0(LAK3;I[BLjava/util/List;Ljava/util/Set;)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 v1, 0x5
-
-    .line 17
-    iget-object v2, p0, Lnh8;->c:Ljava/lang/Long;
-
-    .line 18
-    .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
-    .line 23
-    .line 24
-    .line 25
     return-void
 .end method
 
-.method public final f(Ljava/util/List;)V
-    .locals 4
+
+# virtual methods
+.method public final F(Lk11;Landroid/view/View;)V
+    .locals 1
 
     .line 1
-    if-nez p1, :cond_0
+    check-cast p1, LgYh;
 
     .line 2
     .line 3
-    const/4 p1, 0x0
+    const v0, 0x7f0b0489
 
     .line 4
-    iput-object p1, p0, Lnh8;->d:Ljava/util/ArrayList;
-
     .line 5
     .line 6
-    return-void
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 7
-    :cond_0
-    new-instance v0, Ljava/util/ArrayList;
-
     .line 8
     .line 9
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    move-result-object v0
 
     .line 10
+    check-cast v0, Lcom/snap/ui/view/SnapFontTextView;
+
     .line 11
     .line 12
-    iput-object v0, p0, Lnh8;->d:Ljava/util/ArrayList;
+    iput-object v0, p0, Lnh8;->Z:Lcom/snap/ui/view/SnapFontTextView;
 
     .line 13
     .line 14
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    const v0, 0x7f0b0db6
 
     .line 15
     .line 16
     .line 17
-    move-result-object p1
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 18
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
     .line 19
     .line 20
+    move-result-object p2
+
     .line 21
-    move-result v0
+    check-cast p2, Lcom/snap/imageloading/view/SnapImageView;
 
     .line 22
-    if-eqz v0, :cond_1
+    .line 23
+    iput-object p2, p0, Lnh8;->e0:Lcom/snap/imageloading/view/SnapImageView;
 
+    .line 24
+    .line 25
+    iget-object p1, p1, LgYh;->f0:LCBe;
+
+    .line 26
+    .line 27
+    if-eqz p1, :cond_0
+
+    .line 28
+    .line 29
+    invoke-interface {p1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    check-cast p1, LlW6;
+
+    .line 34
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 37
+    :goto_0
+    iput-object p1, p0, Lnh8;->f0:LlW6;
+
+    .line 38
+    .line 39
+    return-void
+.end method
+
+.method public final t(Lsw;Lsw;)V
+    .locals 3
+
+    .line 1
+    check-cast p1, Loh8;
+
+    .line 2
+    .line 3
+    check-cast p2, Loh8;
+
+    .line 4
+    .line 5
+    iget-object p2, p0, Lnh8;->Z:Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 6
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    if-eqz p2, :cond_3
+
+    .line 9
+    .line 10
+    iget-object v1, p1, Loh8;->X:Lmh8;
+
+    .line 11
+    .line 12
+    iget-object v2, v1, Lmh8;->w:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    invoke-virtual {p2, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 15
+    .line 16
+    .line 17
+    iget-object p2, p0, Lnh8;->e0:Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 18
+    .line 19
+    if-eqz p2, :cond_2
+
+    .line 20
+    .line 21
+    const v2, 0x7f080c01
+
+    .line 22
     .line 23
     .line 24
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {p2, v2}, Lcom/snap/imageloading/view/SnapImageView;->setImageResource(I)V
 
     .line 25
     .line 26
     .line 27
-    move-result-object v0
+    iget-boolean p2, v1, Lmh8;->x:Z
 
     .line 28
-    check-cast v0, LTLi;
-
     .line 29
+    if-eqz p2, :cond_0
+
     .line 30
-    iget-object v1, p0, Lnh8;->d:Ljava/util/ArrayList;
-
     .line 31
-    .line 32
-    new-instance v2, LTLi;
+    const-string p2, "upsell"
 
+    .line 32
     .line 33
+    goto :goto_0
+
     .line 34
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    :cond_0
+    const-string p2, "generate"
 
     .line 35
     .line 36
+    :goto_0
+    iget-object v1, p0, Lnh8;->f0:LlW6;
+
     .line 37
-    iget-object v3, v0, LTLi;->b:Ljava/lang/String;
-
     .line 38
+    if-eqz v1, :cond_1
+
     .line 39
-    iput-object v3, v2, LTLi;->b:Ljava/lang/String;
-
     .line 40
+    sget-object v2, LJSd;->t:LJSd;
+
     .line 41
-    iget-object v3, v0, LTLi;->c:Ljava/lang/String;
-
     .line 42
-    .line 43
-    iput-object v3, v2, LTLi;->c:Ljava/lang/String;
+    invoke-static {v2, p2, v0, v0}, LPCk;->f(LJSd;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)LoSd;
 
+    .line 43
     .line 44
     .line 45
-    iget-object v0, v0, LTLi;->d:LjMi;
+    move-result-object v0
 
     .line 46
-    .line 47
-    iput-object v0, v2, LTLi;->d:LjMi;
+    invoke-interface {v1, v0}, LlW6;->e(LEV6;)V
 
+    .line 47
     .line 48
     .line 49
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :cond_1
+    invoke-virtual {p0}, LA7k;->s()Landroid/view/View;
 
     .line 50
     .line 51
     .line 52
-    goto :goto_0
+    move-result-object v0
 
     .line 53
-    :cond_1
+    new-instance v1, LYb;
+
+    .line 54
+    .line 55
+    const/4 v2, 0x6
+
+    .line 56
+    invoke-direct {v1, p0, p1, p2, v2}, LYb;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 60
+    .line 61
+    .line 62
     return-void
+
+    .line 63
+    :cond_2
+    const-string p1, "mainIcon"
+
+    .line 64
+    .line 65
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    throw v0
+
+    .line 69
+    :cond_3
+    const-string p1, "captionView"
+
+    .line 70
+    .line 71
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 72
+    .line 73
+    .line 74
+    throw v0
 .end method

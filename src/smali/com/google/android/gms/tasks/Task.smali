@@ -4,13 +4,13 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/util/concurrent/Executor;LNMc;)LrAk;
+.method public abstract a(Ljava/util/concurrent/Executor;LH1d;)Lf0l;
 .end method
 
-.method public abstract b(Ljava/util/concurrent/Executor;LANc;)LrAk;
+.method public abstract b(Ljava/util/concurrent/Executor;Lx2d;)Lf0l;
 .end method
 
-.method public abstract c(Ljava/util/concurrent/Executor;LKOc;)LrAk;
+.method public abstract c(Ljava/util/concurrent/Executor;LE3d;)Lf0l;
 .end method
 
 .method public abstract d()Ljava/lang/Exception;

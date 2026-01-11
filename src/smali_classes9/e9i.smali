@@ -1,606 +1,210 @@
-.class public Le9i;
-.super LoYg;
+.class public final enum Le9i;
+.super Ljava/lang/Enum;
 .source "SourceFile"
+
+# interfaces
+.implements LUT6;
 
 
 # annotations
-.annotation runtime LVz9;
-    value = LqYg;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Le9i;",
+        ">;",
+        "LUT6;"
+    }
 .end annotation
 
-.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
-    value = Lf9i;
-.end annotation
+
+# static fields
+.field public static final synthetic X:[Le9i;
+
+.field public static final enum b:Le9i;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "READY"
+    .end annotation
+.end field
+
+.field public static final enum c:Le9i;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "ACTIVE"
+    .end annotation
+.end field
+
+.field public static final enum t:Le9i;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "COOLDOWN"
+    .end annotation
+.end field
 
 
 # instance fields
-.field public a:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "id"
-    .end annotation
-.end field
-
-.field public b:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "name"
-    .end annotation
-.end field
-
-.field public c:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "suggest_reason"
-    .end annotation
-.end field
-
-.field public d:Ljava/util/Map;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "score"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/Object;",
-            "Ljava/lang/Double;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public e:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "suggest_reason_display"
-    .end annotation
-.end field
-
-.field public f:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "display"
-    .end annotation
-.end field
-
-.field public g:Ljava/lang/Boolean;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "is_hidden"
-    .end annotation
-.end field
-
-.field public h:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "story_privacy"
-    .end annotation
-.end field
-
-.field public i:Ljava/lang/Boolean;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "is_new_snapchatter"
-    .end annotation
-.end field
+.field public final a:I
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
+    .locals 7
+
+    .line 1
+    new-instance v0, Le9i;
+
+    .line 2
+    .line 3
+    const-string v1, "READY"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    invoke-direct {v0, v1, v2, v2}, Le9i;-><init>(Ljava/lang/String;II)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, Le9i;->b:Le9i;
+
+    .line 10
+    .line 11
+    new-instance v1, Le9i;
+
+    .line 12
+    .line 13
+    const-string v3, "ACTIVE"
+
+    .line 14
+    .line 15
+    const/4 v4, 0x1
+
+    .line 16
+    invoke-direct {v1, v3, v4, v4}, Le9i;-><init>(Ljava/lang/String;II)V
+
+    .line 17
+    .line 18
+    .line 19
+    sput-object v1, Le9i;->c:Le9i;
+
+    .line 20
+    .line 21
+    new-instance v3, Le9i;
+
+    .line 22
+    .line 23
+    const-string v5, "COOLDOWN"
+
+    .line 24
+    .line 25
+    const/4 v6, 0x2
+
+    .line 26
+    invoke-direct {v3, v5, v6, v6}, Le9i;-><init>(Ljava/lang/String;II)V
+
+    .line 27
+    .line 28
+    .line 29
+    sput-object v3, Le9i;->t:Le9i;
+
+    .line 30
+    .line 31
+    const/4 v5, 0x3
+
+    .line 32
+    new-array v5, v5, [Le9i;
+
+    .line 33
+    .line 34
+    aput-object v0, v5, v2
+
+    .line 35
+    .line 36
+    aput-object v1, v5, v4
+
+    .line 37
+    .line 38
+    aput-object v3, v5, v6
+
+    .line 39
+    .line 40
+    sput-object v5, Le9i;->X:[Le9i;
+
+    .line 41
+    .line 42
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
     .line 3
     .line 4
+    iput p3, p0, Le9i;->a:I
+
+    .line 5
+    .line 6
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Le9i;
+    .locals 1
+
+    .line 1
+    const-class v0, Le9i;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Le9i;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Le9i;
+    .locals 1
+
+    .line 1
+    sget-object v0, Le9i;->X:[Le9i;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Le9i;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Le9i;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a()I
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p1, p0, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 6
-    if-eqz p1, :cond_2
-
-    .line 7
-    .line 8
-    instance-of v2, p1, Le9i;
-
-    .line 9
-    .line 10
-    if-nez v2, :cond_1
-
-    .line 11
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_1
-    check-cast p1, Le9i;
-
-    .line 14
-    .line 15
-    iget-object v2, p0, Le9i;->a:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    iget-object v3, p1, Le9i;->a:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v2
-
-    .line 23
-    if-eqz v2, :cond_2
-
-    .line 24
-    .line 25
-    iget-object v2, p0, Le9i;->b:Ljava/lang/String;
-
-    .line 26
-    .line 27
-    iget-object v3, p1, Le9i;->b:Ljava/lang/String;
-
-    .line 28
-    .line 29
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 30
-    .line 31
-    .line 32
-    move-result v2
-
-    .line 33
-    if-eqz v2, :cond_2
-
-    .line 34
-    .line 35
-    iget-object v2, p0, Le9i;->c:Ljava/lang/String;
-
-    .line 36
-    .line 37
-    iget-object v3, p1, Le9i;->c:Ljava/lang/String;
-
-    .line 38
-    .line 39
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v2
-
-    .line 43
-    if-eqz v2, :cond_2
-
-    .line 44
-    .line 45
-    iget-object v2, p0, Le9i;->d:Ljava/util/Map;
-
-    .line 46
-    .line 47
-    iget-object v3, p1, Le9i;->d:Ljava/util/Map;
-
-    .line 48
-    .line 49
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 50
-    .line 51
-    .line 52
-    move-result v2
-
-    .line 53
-    if-eqz v2, :cond_2
-
-    .line 54
-    .line 55
-    iget-object v2, p0, Le9i;->e:Ljava/lang/String;
-
-    .line 56
-    .line 57
-    iget-object v3, p1, Le9i;->e:Ljava/lang/String;
-
-    .line 58
-    .line 59
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v2
-
-    .line 63
-    if-eqz v2, :cond_2
-
-    .line 64
-    .line 65
-    iget-object v2, p0, Le9i;->f:Ljava/lang/String;
-
-    .line 66
-    .line 67
-    iget-object v3, p1, Le9i;->f:Ljava/lang/String;
-
-    .line 68
-    .line 69
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 70
-    .line 71
-    .line 72
-    move-result v2
-
-    .line 73
-    if-eqz v2, :cond_2
-
-    .line 74
-    .line 75
-    iget-object v2, p0, Le9i;->g:Ljava/lang/Boolean;
-
-    .line 76
-    .line 77
-    iget-object v3, p1, Le9i;->g:Ljava/lang/Boolean;
-
-    .line 78
-    .line 79
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 80
-    .line 81
-    .line 82
-    move-result v2
-
-    .line 83
-    if-eqz v2, :cond_2
-
-    .line 84
-    .line 85
-    iget-object v2, p0, Le9i;->h:Ljava/lang/String;
-
-    .line 86
-    .line 87
-    iget-object v3, p1, Le9i;->h:Ljava/lang/String;
-
-    .line 88
-    .line 89
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 90
-    .line 91
-    .line 92
-    move-result v2
-
-    .line 93
-    if-eqz v2, :cond_2
-
-    .line 94
-    .line 95
-    iget-object v2, p0, Le9i;->i:Ljava/lang/Boolean;
-
-    .line 96
-    .line 97
-    iget-object p1, p1, Le9i;->i:Ljava/lang/Boolean;
-
-    .line 98
-    .line 99
-    invoke-static {v2, p1}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 100
-    .line 101
-    .line 102
-    move-result p1
-
-    .line 103
-    if-eqz p1, :cond_2
-
-    .line 104
-    .line 105
-    return v0
-
-    .line 106
-    :cond_2
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Le9i;->a:Ljava/lang/String;
+    iget v0, p0, Le9i;->a:I
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    if-nez v0, :cond_0
-
-    .line 5
-    .line 6
-    const/4 v0, 0x0
-
-    .line 7
-    goto :goto_0
-
-    .line 8
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
-    :goto_0
-    const/16 v2, 0x20f
-
-    .line 13
-    .line 14
-    add-int/2addr v2, v0
-
-    .line 15
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 16
-    .line 17
-    iget-object v0, p0, Le9i;->b:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    if-nez v0, :cond_1
-
-    .line 20
-    .line 21
-    const/4 v0, 0x0
-
-    .line 22
-    goto :goto_1
-
-    .line 23
-    :cond_1
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v0
-
-    .line 27
-    :goto_1
-    add-int/2addr v2, v0
-
-    .line 28
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 29
-    .line 30
-    iget-object v0, p0, Le9i;->c:Ljava/lang/String;
-
-    .line 31
-    .line 32
-    if-nez v0, :cond_2
-
-    .line 33
-    .line 34
-    const/4 v0, 0x0
-
-    .line 35
-    goto :goto_2
-
-    .line 36
-    :cond_2
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 37
-    .line 38
-    .line 39
-    move-result v0
-
-    .line 40
-    :goto_2
-    add-int/2addr v2, v0
-
-    .line 41
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 42
-    .line 43
-    iget-object v0, p0, Le9i;->d:Ljava/util/Map;
-
-    .line 44
-    .line 45
-    if-nez v0, :cond_3
-
-    .line 46
-    .line 47
-    const/4 v0, 0x0
-
-    .line 48
-    goto :goto_3
-
-    .line 49
-    :cond_3
-    invoke-interface {v0}, Ljava/util/Map;->hashCode()I
-
-    .line 50
-    .line 51
-    .line 52
-    move-result v0
-
-    .line 53
-    :goto_3
-    add-int/2addr v2, v0
-
-    .line 54
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 55
-    .line 56
-    iget-object v0, p0, Le9i;->e:Ljava/lang/String;
-
-    .line 57
-    .line 58
-    if-nez v0, :cond_4
-
-    .line 59
-    .line 60
-    const/4 v0, 0x0
-
-    .line 61
-    goto :goto_4
-
-    .line 62
-    :cond_4
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 63
-    .line 64
-    .line 65
-    move-result v0
-
-    .line 66
-    :goto_4
-    add-int/2addr v2, v0
-
-    .line 67
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 68
-    .line 69
-    iget-object v0, p0, Le9i;->f:Ljava/lang/String;
-
-    .line 70
-    .line 71
-    if-nez v0, :cond_5
-
-    .line 72
-    .line 73
-    const/4 v0, 0x0
-
-    .line 74
-    goto :goto_5
-
-    .line 75
-    :cond_5
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 76
-    .line 77
-    .line 78
-    move-result v0
-
-    .line 79
-    :goto_5
-    add-int/2addr v2, v0
-
-    .line 80
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 81
-    .line 82
-    iget-object v0, p0, Le9i;->g:Ljava/lang/Boolean;
-
-    .line 83
-    .line 84
-    if-nez v0, :cond_6
-
-    .line 85
-    .line 86
-    const/4 v0, 0x0
-
-    .line 87
-    goto :goto_6
-
-    .line 88
-    :cond_6
-    invoke-virtual {v0}, Ljava/lang/Boolean;->hashCode()I
-
-    .line 89
-    .line 90
-    .line 91
-    move-result v0
-
-    .line 92
-    :goto_6
-    add-int/2addr v2, v0
-
-    .line 93
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 94
-    .line 95
-    iget-object v0, p0, Le9i;->h:Ljava/lang/String;
-
-    .line 96
-    .line 97
-    if-nez v0, :cond_7
-
-    .line 98
-    .line 99
-    const/4 v0, 0x0
-
-    .line 100
-    goto :goto_7
-
-    .line 101
-    :cond_7
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 102
-    .line 103
-    .line 104
-    move-result v0
-
-    .line 105
-    :goto_7
-    add-int/2addr v2, v0
-
-    .line 106
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 107
-    .line 108
-    iget-object v0, p0, Le9i;->i:Ljava/lang/Boolean;
-
-    .line 109
-    .line 110
-    if-nez v0, :cond_8
-
-    .line 111
-    .line 112
-    goto :goto_8
-
-    .line 113
-    :cond_8
-    invoke-virtual {v0}, Ljava/lang/Boolean;->hashCode()I
-
-    .line 114
-    .line 115
-    .line 116
-    move-result v1
-
-    .line 117
-    :goto_8
-    add-int/2addr v2, v1
-
-    .line 118
-    return v2
+    return v0
 .end method

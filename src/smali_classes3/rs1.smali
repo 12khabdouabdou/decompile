@@ -3,132 +3,104 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lqs1;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final a:LUo4;
+.field public final synthetic a:I
+
+.field public final synthetic b:Lts1;
 
 
 # direct methods
-.method public constructor <init>(LUo4;)V
-    .locals 1
+.method public synthetic constructor <init>(Lts1;I)V
+    .locals 0
 
     .line 1
+    iput p2, p0, Lrs1;->a:I
+
+    iput-object p1, p0, Lrs1;->b:Lts1;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    sget-object v0, Lkk1;->Z:Lkk1;
-
-    .line 5
-    .line 6
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 7
-    .line 8
-    .line 9
-    const-string v0, "BloopsStickerAssetsConverterImpl"
-
-    .line 10
-    .line 11
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 12
-    .line 13
-    .line 14
-    sget-object v0, Lrn0;->a:Lrn0;
-
-    .line 15
-    .line 16
-    iput-object p1, p0, Lrs1;->a:LUo4;
-
-    .line 17
-    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;[B)[B
-    .locals 4
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Lns1;
+    iget v0, p0, Lrs1;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lns1;-><init>()V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    invoke-static {v0, p2}, Lcom/google/protobuf/nano/MessageNano;->mergeFrom(Lcom/google/protobuf/nano/MessageNano;[B)Lcom/google/protobuf/nano/MessageNano;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    .line 9
-    move-result-object p2
+    iget-object p1, p0, Lrs1;->b:Lts1;
 
+    .line 9
     .line 10
-    check-cast p2, Lns1;
+    iget-object p1, p1, Lts1;->e:LJp0;
 
     .line 11
     .line 12
-    iget-object p2, p2, Lns1;->a:[Lls1;
+    return-void
 
     .line 13
-    .line 14
-    array-length v0, p2
+    :pswitch_0
+    check-cast p1, Ljava/lang/Boolean;
 
+    .line 14
     .line 15
-    const/4 v1, 0x0
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 16
-    :goto_0
-    if-ge v1, v0, :cond_1
-
     .line 17
     .line 18
-    aget-object v2, p2, v1
+    iget-object p1, p0, Lrs1;->b:Lts1;
 
     .line 19
     .line 20
-    iget-object v3, v2, Lls1;->b:Ljava/lang/String;
+    iget-object p1, p1, Lts1;->e:LJp0;
 
     .line 21
     .line 22
-    invoke-static {v3, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    return-void
 
     .line 23
+    :pswitch_1
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 24
     .line 25
-    move-result v3
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 26
-    if-eqz v3, :cond_0
-
     .line 27
     .line 28
-    iget-object p1, v2, Lls1;->c:[B
+    iget-object p1, p0, Lrs1;->b:Lts1;
 
     .line 29
     .line 30
-    return-object p1
+    iget-object p1, p1, Lts1;->e:LJp0;
 
     .line 31
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
     .line 32
+    return-void
+
     .line 33
-    goto :goto_0
-
-    .line 34
-    :cond_1
-    const/4 p1, 0x0
-
-    .line 35
-    return-object p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

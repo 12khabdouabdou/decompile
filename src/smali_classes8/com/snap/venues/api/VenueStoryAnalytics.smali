@@ -1,10 +1,10 @@
 .class public final Lcom/snap/venues/api/VenueStoryAnalytics;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'viewSource\':s,\'sourceType\':s?,\'mapSourceType\':s?,\'mapPlaceComponentType\':s?,\'placeSessionId\':d@?,\'mapSessionId\':d@?,\'pinId\':s?,\'mapViewportSessionId\':d@?"
     typeReferences = {}

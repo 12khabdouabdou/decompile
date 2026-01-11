@@ -1,88 +1,119 @@
 .class public final LRcd;
-.super Lan0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final Z:LRcd;
-
-.field public static final e0:LcSa;
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    new-instance v1, LRcd;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v0, LEy9;->a1:LEy9;
+    .line 4
+    return-void
+.end method
+
+.method public static a(Landroid/os/Bundle;)Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;
+    .locals 8
+
+    .line 1
+    new-instance v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;-><init>()V
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/16 v3, 0x1c
+    if-eqz p0, :cond_0
 
     .line 7
     .line 8
-    const-string v4, "PasskeyTakeover"
+    new-instance v1, LScd;
 
     .line 9
     .line 10
-    invoke-direct {v1, v4, v0, v2, v3}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
+    const-string v2, "usingNavBar"
 
     .line 11
     .line 12
-    .line 13
-    sput-object v1, LRcd;->Z:LRcd;
+    invoke-virtual {p0, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
+    .line 13
     .line 14
     .line 15
-    new-instance v0, LcSa;
+    move-result v3
 
     .line 16
-    .line 17
-    const/4 v8, 0x0
+    const-string v2, "usingNgsBar"
 
+    .line 17
     .line 18
-    const/4 v9, 0x0
+    invoke-virtual {p0, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     .line 19
-    const-string v2, "PasskeyTakeover"
-
     .line 20
     .line 21
-    const/4 v3, 0x0
+    move-result v4
 
     .line 22
-    const/4 v4, 0x1
+    const-string v2, "usingStatusBar"
 
     .line 23
-    const/4 v5, 0x0
-
     .line 24
-    const/4 v6, 0x0
+    invoke-virtual {p0, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
     .line 25
-    const/4 v7, 0x0
-
     .line 26
-    const/16 v10, 0x3ff4
-
     .line 27
+    move-result v5
+
     .line 28
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const-string v2, "restorationEnabled"
 
     .line 29
     .line 30
-    .line 31
-    sput-object v0, LRcd;->e0:LcSa;
+    invoke-virtual {p0, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
 
+    .line 31
     .line 32
     .line 33
-    return-void
+    move-result v6
+
+    .line 34
+    const-string v2, "restorationToken"
+
+    .line 35
+    .line 36
+    const-string v7, ""
+
+    .line 37
+    .line 38
+    invoke-virtual {p0, v2, v7}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v2
+
+    .line 42
+    invoke-direct/range {v1 .. v6}, LScd;-><init>(Ljava/lang/String;ZZZZ)V
+
+    .line 43
+    .line 44
+    .line 45
+    iput-object v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->V0:Ljava/lang/String;
+
+    .line 46
+    .line 47
+    iput-object v1, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:LScd;
+
+    .line 48
+    .line 49
+    :cond_0
+    return-object v0
 .end method

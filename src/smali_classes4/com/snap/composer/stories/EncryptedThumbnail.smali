@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/stories/EncryptedThumbnail;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'key\':s?,\'iv\':s?,\'url\':s?,\'cacheKey\':s?,\'clientId\':s?,\'contentObjectInfo\':r?:\'[0]\'"
     typeReferences = {

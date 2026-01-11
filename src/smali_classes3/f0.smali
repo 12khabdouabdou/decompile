@@ -49,7 +49,7 @@
 
     .line 9
     .line 10
-    iget-object p1, p1, Li0;->b:Lrn0;
+    iget-object p1, p1, Li0;->b:LJp0;
 
     .line 11
     .line 12
@@ -65,7 +65,7 @@
 
     .line 16
     .line 17
-    iget-object p1, p1, Li0;->b:Lrn0;
+    iget-object p1, p1, Li0;->b:LJp0;
 
     .line 18
     .line 19

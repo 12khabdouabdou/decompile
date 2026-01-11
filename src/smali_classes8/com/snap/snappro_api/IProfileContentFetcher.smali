@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LYX8;
+    proxyClass = LC59;
     schema = "\'getProfileContents\':f|m|(s, r<e>:\'[0]\', s, s, d): g<c>:\'[1]\'<a<r:\'[2]\'>>"
     typeReferences = {
         Lcom/snap/snappro_api/ProfileContentType;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lt4e;
+        LUle;
     }
 .end annotation
 
@@ -31,7 +31,7 @@
             "D)",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Lt4e;",
+            "LUle;",
             ">;>;"
         }
     .end annotation

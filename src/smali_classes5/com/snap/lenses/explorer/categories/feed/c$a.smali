@@ -17,7 +17,7 @@
 # instance fields
 .field public j0:Landroid/widget/LinearLayout;
 
-.field public k0:Landroid/widget/TextView;
+.field public k0:Lcom/snap/ui/view/SnapFontTextView;
 
 .field public l0:Landroid/widget/TextView;
 
@@ -38,7 +38,7 @@
     const/4 v2, 0x0
 
     .line 4
-    invoke-direct {p0, v2, v0, v1}, Lcom/snap/lenses/explorer/categories/feed/c$b;-><init>(ZILHr5;)V
+    invoke-direct {p0, v2, v0, v1}, Lcom/snap/lenses/explorer/categories/feed/c$b;-><init>(ZILex5;)V
 
     .line 5
     .line 6
@@ -48,15 +48,15 @@
 
 
 # virtual methods
-.method public final bridge synthetic F(LEX0;Landroid/view/View;)V
+.method public final bridge synthetic F(Lk11;Landroid/view/View;)V
     .locals 0
 
     .line 1
-    check-cast p1, LlB5;
+    check-cast p1, LjF5;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$a;->L(LlB5;Landroid/view/View;)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$a;->M(LjF5;Landroid/view/View;)V
 
     .line 4
     .line 5
@@ -64,19 +64,19 @@
     return-void
 .end method
 
-.method public final bridge synthetic K(LJv9;LJv9;)V
+.method public final bridge synthetic L(LNE9;LNE9;)V
     .locals 0
 
     .line 1
-    check-cast p1, LuX9;
+    check-cast p1, LT9a;
 
     .line 2
     .line 3
-    check-cast p2, LuX9;
+    check-cast p2, LT9a;
 
     .line 4
     .line 5
-    invoke-virtual {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$a;->N(LuX9;LuX9;)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$a;->O(LT9a;LT9a;)V
 
     .line 6
     .line 7
@@ -84,16 +84,16 @@
     return-void
 .end method
 
-.method public final L(LlB5;Landroid/view/View;)V
+.method public final M(LjF5;Landroid/view/View;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$b;->L(LlB5;Landroid/view/View;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$b;->M(LjF5;Landroid/view/View;)V
 
     .line 2
     .line 3
     .line 4
-    const p1, 0x7f0b0b33
+    const p1, 0x7f0b0c4b
 
     .line 5
     .line 6
@@ -114,7 +114,7 @@
 
     .line 14
     .line 15
-    const p1, 0x7f0b0b38
+    const p1, 0x7f0b0c50
 
     .line 16
     .line 17
@@ -127,15 +127,15 @@
     move-result-object p1
 
     .line 22
-    check-cast p1, Landroid/widget/TextView;
+    check-cast p1, Lcom/snap/ui/view/SnapFontTextView;
 
     .line 23
     .line 24
-    iput-object p1, p0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Landroid/widget/TextView;
+    iput-object p1, p0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
 
     .line 25
     .line 26
-    const p1, 0x7f0b0b27
+    const p1, 0x7f0b0c3f
 
     .line 27
     .line 28
@@ -156,7 +156,7 @@
 
     .line 36
     .line 37
-    const p1, 0x7f0b0b31
+    const p1, 0x7f0b0c49
 
     .line 38
     .line 39
@@ -180,8 +180,8 @@
     return-void
 .end method
 
-.method public final N(LuX9;LuX9;)V
-    .locals 16
+.method public final O(LT9a;LT9a;)V
+    .locals 18
 
     .line 1
     move-object/from16 v0, p0
@@ -196,997 +196,1494 @@
 
     .line 6
     .line 7
-    const/4 v7, 0x0
-
-    .line 8
     if-eqz v1, :cond_0
 
+    .line 8
     .line 9
+    iget-object v2, v1, LT9a;->n0:LS9a;
+
     .line 10
-    iget-object v2, v1, LuX9;->l0:LtX9;
-
     .line 11
-    .line 12
-    check-cast v2, LrX9;
+    check-cast v2, LQ9a;
 
+    .line 12
     .line 13
-    .line 14
     goto :goto_0
 
-    .line 15
+    .line 14
     :cond_0
-    move-object v2, v7
+    const/4 v2, 0x0
+
+    .line 15
+    :goto_0
+    iget-object v3, v6, LT9a;->n0:LS9a;
 
     .line 16
-    :goto_0
-    iget-object v3, v6, LuX9;->l0:LtX9;
-
     .line 17
-    .line 18
-    invoke-static {v3, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 18
     .line 19
     .line 20
-    .line 21
     move-result v2
 
+    .line 21
+    const/4 v8, 0x2
+
     .line 22
-    const/4 v8, 0x0
+    const-string v4, "icon"
 
     .line 23
-    const/4 v4, 0x1
-
     .line 24
-    const-string v5, "icon"
+    const-string v11, "infoContainer"
 
     .line 25
     .line 26
-    const-string v9, "infoContainer"
+    const-string v14, "name"
 
     .line 27
     .line 28
-    if-nez v2, :cond_7
+    if-nez v2, :cond_d
 
     .line 29
     .line 30
     move-object v2, v3
 
     .line 31
-    check-cast v2, LrX9;
+    check-cast v2, LQ9a;
 
     .line 32
     .line 33
-    invoke-virtual {v0}, Lcom/snap/lenses/explorer/categories/feed/c$b;->P()Lcom/snap/lenses/common/RoundedImageView;
+    invoke-virtual {v0}, Lcom/snap/lenses/explorer/categories/feed/c$b;->R()Lcom/snap/lenses/common/RoundedImageView;
 
     .line 34
     .line 35
     .line 36
-    move-result-object v10
+    move-result-object v5
 
     .line 37
-    invoke-virtual {v10}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v5}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 38
     .line 39
     .line 40
-    move-result-object v10
+    move-result-object v5
 
     .line 41
-    iget v11, v2, LrX9;->X:F
+    iget v15, v2, LQ9a;->Y:F
 
     .line 42
     .line 43
-    invoke-static {v11}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
+    invoke-static {v15}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
 
     .line 44
     .line 45
     .line 46
-    move-result-object v11
+    move-result-object v15
 
     .line 47
-    invoke-virtual {v0}, Lcom/snap/lenses/explorer/categories/feed/c$b;->P()Lcom/snap/lenses/common/RoundedImageView;
+    invoke-virtual {v0}, Lcom/snap/lenses/explorer/categories/feed/c$b;->R()Lcom/snap/lenses/common/RoundedImageView;
 
     .line 48
     .line 49
     .line 50
-    move-result-object v12
+    move-result-object v16
 
     .line 51
-    invoke-virtual {v12}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual/range {v16 .. v16}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 52
     .line 53
     .line 54
-    move-result-object v12
+    move-result-object v13
 
     .line 55
-    instance-of v13, v12, LLL3;
+    instance-of v12, v13, LlP3;
 
     .line 56
     .line 57
-    iget-boolean v14, v2, LrX9;->b:Z
+    const/16 v17, 0x0
 
     .line 58
     .line 59
-    if-eqz v13, :cond_2
+    iget-boolean v7, v2, LQ9a;->b:Z
 
     .line 60
     .line 61
-    move-object v13, v12
+    if-eqz v12, :cond_8
 
     .line 62
-    check-cast v13, LLL3;
-
     .line 63
+    move-object v12, v13
+
     .line 64
-    iput-object v11, v13, LLL3;->B:Ljava/lang/String;
+    check-cast v12, LlP3;
 
     .line 65
     .line 66
-    if-eqz v14, :cond_1
+    iput-object v15, v12, LlP3;->B:Ljava/lang/String;
 
     .line 67
     .line 68
-    const/4 v11, 0x2
+    iget-boolean v15, v2, LQ9a;->c:Z
 
     .line 69
-    iget v15, v2, LrX9;->t:I
-
     .line 70
+    if-eqz v15, :cond_3
+
     .line 71
-    if-ne v15, v11, :cond_1
-
     .line 72
-    .line 73
-    const v11, 0x7f0708c6
+    iget-object v9, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
 
+    .line 73
     .line 74
+    if-eqz v9, :cond_2
+
     .line 75
     .line 76
-    goto :goto_1
+    invoke-virtual {v9}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 77
-    :cond_1
-    const v11, 0x7f0708c5
-
     .line 78
     .line 79
+    move-result-object v9
+
     .line 80
-    :goto_1
-    invoke-virtual {v10, v11}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+    const v10, 0x7f071545
 
     .line 81
     .line 82
     .line 83
-    move-result v10
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     .line 84
-    iput v10, v13, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
-
     .line 85
     .line 86
-    invoke-virtual {v0}, Lcom/snap/lenses/explorer/categories/feed/c$b;->P()Lcom/snap/lenses/common/RoundedImageView;
+    move-result v9
 
     .line 87
+    invoke-virtual {v12, v9}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+
     .line 88
     .line 89
-    move-result-object v10
-
     .line 90
-    invoke-virtual {v10, v12}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+    iget-object v9, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
 
     .line 91
     .line 92
+    if-eqz v9, :cond_1
+
     .line 93
-    :cond_2
-    iget-object v10, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
-
     .line 94
-    .line 95
-    if-eqz v10, :cond_6
+    invoke-virtual {v9}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
+    .line 95
     .line 96
     .line 97
-    if-eqz v14, :cond_3
+    move-result-object v9
 
     .line 98
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
     .line 99
-    const/4 v11, 0x0
-
     .line 100
-    goto :goto_2
-
     .line 101
-    :cond_3
-    const/16 v11, 0x8
+    move-result v9
 
     .line 102
-    .line 103
-    :goto_2
-    invoke-virtual {v10, v11}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v12, v9}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
+    .line 103
     .line 104
     .line 105
+    goto :goto_1
+
     .line 106
-    iget-object v10, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->j0:Landroid/widget/LinearLayout;
+    :cond_1
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 107
     .line 108
-    if-eqz v10, :cond_5
-
     .line 109
+    throw v17
+
     .line 110
-    sget-object v11, Lcom/snap/lenses/explorer/categories/feed/a;->a:[I
+    :cond_2
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 111
     .line 112
-    iget v2, v2, LrX9;->c:I
-
     .line 113
+    throw v17
+
     .line 114
-    invoke-static {v2}, Llva;->L(I)I
+    :cond_3
+    iget-object v9, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
 
     .line 115
     .line 116
-    .line 117
-    move-result v2
+    if-eqz v9, :cond_7
 
+    .line 117
     .line 118
-    aget v2, v11, v2
+    invoke-virtual {v9}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 119
     .line 120
-    if-ne v2, v4, :cond_4
-
     .line 121
+    move-result-object v9
+
     .line 122
-    const v2, 0x800003
+    const v10, 0x7f070541
 
     .line 123
     .line 124
     .line 125
-    goto :goto_3
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     .line 126
-    :cond_4
-    const/4 v2, 0x1
-
     .line 127
-    :goto_3
-    invoke-virtual {v10, v2}, Landroid/widget/LinearLayout;->setGravity(I)V
-
     .line 128
+    move-result v9
+
     .line 129
+    invoke-virtual {v12, v9}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+
     .line 130
-    goto :goto_4
-
     .line 131
-    :cond_5
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
-
     .line 132
+    iget-object v9, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
+
     .line 133
     .line 134
-    throw v7
+    if-eqz v9, :cond_6
 
     .line 135
-    :cond_6
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 136
+    invoke-virtual {v9}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
     .line 137
     .line 138
-    throw v7
-
     .line 139
-    :cond_7
-    :goto_4
-    invoke-super/range {p0 .. p2}, Lcom/snap/lenses/explorer/categories/feed/c$b;->N(LuX9;LuX9;)V
+    move-result-object v9
 
     .line 140
+    invoke-virtual {v9, v10}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
     .line 141
     .line 142
-    move-object v10, v3
-
     .line 143
-    check-cast v10, LrX9;
+    move-result v9
 
     .line 144
-    .line 145
-    iget-boolean v2, v10, LrX9;->b:Z
+    invoke-virtual {v12, v9}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
+    .line 145
     .line 146
     .line 147
-    if-nez v2, :cond_9
+    :goto_1
+    if-eqz v7, :cond_4
 
     .line 148
     .line 149
-    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+    iget v9, v2, LQ9a;->X:I
 
     .line 150
     .line 151
-    if-eqz v1, :cond_8
+    if-ne v9, v8, :cond_4
 
     .line 152
     .line 153
-    invoke-static {v1, v8}, LU52;->b(Lcom/snap/imageloading/view/SnapImageView;Z)V
+    const v9, 0x7f0708f4
 
     .line 154
     .line 155
     .line 156
-    goto/16 :goto_9
+    goto :goto_2
 
     .line 157
-    .line 158
-    :cond_8
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    :cond_4
+    if-eqz v15, :cond_5
 
+    .line 158
     .line 159
+    const v9, 0x7f0708f3
+
     .line 160
     .line 161
-    throw v7
-
     .line 162
-    :cond_9
-    iget v3, v10, LrX9;->t:I
+    goto :goto_2
 
     .line 163
-    .line 164
-    iget-object v11, v6, LuX9;->e0:Lzxi;
+    :cond_5
+    const v9, 0x7f07052f
 
+    .line 164
     .line 165
     .line 166
-    if-eqz v1, :cond_b
+    :goto_2
+    invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     .line 167
     .line 168
-    iget-object v12, v1, LuX9;->e0:Lzxi;
-
     .line 169
+    move-result v5
+
     .line 170
-    if-eqz v12, :cond_b
+    iput v5, v12, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     .line 171
     .line 172
-    iget-boolean v13, v11, Lzxi;->d:Z
+    invoke-virtual {v0}, Lcom/snap/lenses/explorer/categories/feed/c$b;->R()Lcom/snap/lenses/common/RoundedImageView;
 
     .line 173
     .line 174
-    iget-boolean v12, v12, Lzxi;->d:Z
-
     .line 175
+    move-result-object v5
+
     .line 176
-    if-ne v13, v12, :cond_b
+    invoke-virtual {v5, v13}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 177
     .line 178
-    iget-object v1, v1, LuX9;->l0:LtX9;
-
     .line 179
+    goto :goto_3
+
     .line 180
-    check-cast v1, LrX9;
+    :cond_6
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 181
     .line 182
-    iget-boolean v12, v1, LrX9;->b:Z
-
     .line 183
+    throw v17
+
     .line 184
-    if-ne v2, v12, :cond_b
+    :cond_7
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 185
     .line 186
-    iget v1, v1, LrX9;->t:I
-
     .line 187
+    throw v17
+
     .line 188
-    if-eq v3, v1, :cond_a
+    :cond_8
+    :goto_3
+    iget-object v5, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 189
     .line 190
-    goto :goto_5
+    if-eqz v5, :cond_c
 
     .line 191
-    :cond_a
-    const/4 v1, 0x0
-
     .line 192
-    goto :goto_6
+    if-eqz v7, :cond_9
 
     .line 193
-    :cond_b
-    :goto_5
-    const/4 v1, 0x1
-
     .line 194
-    :goto_6
-    if-eqz v1, :cond_10
+    const/4 v7, 0x0
 
     .line 195
+    goto :goto_4
+
     .line 196
-    iget-object v2, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+    :cond_9
+    const/16 v7, 0x8
 
     .line 197
     .line 198
-    if-eqz v2, :cond_12
+    :goto_4
+    invoke-virtual {v5, v7}, Landroid/view/View;->setVisibility(I)V
 
     .line 199
     .line 200
-    const/4 v12, -0x1
-
     .line 201
-    const v13, 0x7f0b0b41
+    iget-object v5, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->j0:Landroid/widget/LinearLayout;
 
     .line 202
     .line 203
+    if-eqz v5, :cond_b
+
     .line 204
-    if-ne v3, v4, :cond_d
-
     .line 205
-    .line 206
-    invoke-virtual {v0}, LcIj;->s()Landroid/view/View;
+    sget-object v7, Lcom/snap/lenses/explorer/categories/feed/a;->a:[I
 
+    .line 206
     .line 207
+    iget v2, v2, LQ9a;->t:I
+
     .line 208
     .line 209
-    move-result-object v3
+    invoke-static {v2}, LzHa;->L(I)I
 
     .line 210
-    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 211
     .line 212
+    move-result v2
+
     .line 213
-    move-result-object v3
+    aget v2, v7, v2
 
     .line 214
-    const v4, 0x7f07134a
-
     .line 215
-    .line 216
-    .line 217
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    const/4 v7, 0x1
 
+    .line 216
+    if-ne v2, v7, :cond_a
+
+    .line 217
     .line 218
+    const v2, 0x800003
+
     .line 219
     .line 220
-    move-result v3
-
     .line 221
-    invoke-virtual {v0}, LcIj;->s()Landroid/view/View;
+    goto :goto_5
 
     .line 222
+    :cond_a
+    const/4 v2, 0x1
+
     .line 223
+    :goto_5
+    invoke-virtual {v5, v2}, Landroid/widget/LinearLayout;->setGravity(I)V
+
     .line 224
-    move-result-object v4
-
     .line 225
-    invoke-virtual {v4}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 226
+    goto :goto_6
+
     .line 227
+    :cond_b
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 228
-    move-result-object v4
-
     .line 229
-    const v11, 0x7f071346
-
     .line 230
-    .line 231
-    .line 232
-    invoke-virtual {v4, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    throw v17
 
+    .line 231
+    :cond_c
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 232
     .line 233
     .line 234
+    throw v17
+
     .line 235
-    move-result v4
+    :cond_d
+    const/16 v17, 0x0
 
     .line 236
-    iget-object v11, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
-
     .line 237
-    .line 238
-    if-eqz v11, :cond_c
+    :goto_6
+    invoke-super/range {p0 .. p2}, Lcom/snap/lenses/explorer/categories/feed/c$b;->O(LT9a;LT9a;)V
 
+    .line 238
     .line 239
     .line 240
-    invoke-virtual {v11}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    move-object v7, v3
 
     .line 241
+    check-cast v7, LQ9a;
+
     .line 242
     .line 243
-    move-result-object v11
+    iget-boolean v2, v7, LQ9a;->b:Z
 
     .line 244
-    check-cast v11, LLL3;
-
     .line 245
+    if-nez v2, :cond_f
+
     .line 246
-    iput v3, v11, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
-
     .line 247
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+
     .line 248
-    iput v3, v11, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
-
     .line 249
-    .line 250
-    iput v13, v11, LLL3;->k:I
+    if-eqz v1, :cond_e
 
+    .line 250
     .line 251
+    const/4 v2, 0x0
+
     .line 252
-    iput v12, v11, LLL3;->h:I
+    invoke-static {v1, v2}, LpZk;->a(Lcom/snap/imageloading/view/SnapImageView;Z)V
 
     .line 253
     .line 254
-    iput v12, v11, LLL3;->s:I
-
     .line 255
-    .line 256
-    invoke-virtual {v11, v4}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+    goto/16 :goto_b
 
+    .line 256
     .line 257
+    :cond_e
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 258
     .line 259
-    iput v4, v11, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
-
     .line 260
+    throw v17
+
     .line 261
-    goto :goto_7
+    :cond_f
+    iget v3, v7, LQ9a;->X:I
 
     .line 262
-    :cond_c
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 263
+    iget-object v5, v6, LT9a;->e0:LCWi;
+
     .line 264
     .line 265
-    throw v7
+    if-eqz v1, :cond_11
 
     .line 266
-    :cond_d
-    iget-boolean v3, v11, Lzxi;->d:Z
-
     .line 267
+    iget-object v9, v1, LT9a;->e0:LCWi;
+
     .line 268
-    if-eqz v3, :cond_f
-
     .line 269
-    .line 270
-    invoke-virtual {v0}, LcIj;->s()Landroid/view/View;
+    if-eqz v9, :cond_11
 
+    .line 270
     .line 271
+    iget-boolean v10, v5, LCWi;->d:Z
+
     .line 272
     .line 273
-    move-result-object v3
+    iget-boolean v9, v9, LCWi;->d:Z
 
     .line 274
-    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 275
+    if-ne v10, v9, :cond_11
+
     .line 276
     .line 277
-    move-result-object v3
+    iget-object v1, v1, LT9a;->n0:LS9a;
 
     .line 278
-    const v4, 0x7f071348
-
     .line 279
+    check-cast v1, LQ9a;
+
     .line 280
     .line 281
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    iget-boolean v9, v1, LQ9a;->b:Z
 
     .line 282
     .line 283
-    .line 284
-    move-result v3
+    if-ne v2, v9, :cond_11
 
+    .line 284
     .line 285
-    iget-object v4, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+    iget v1, v1, LQ9a;->X:I
 
     .line 286
     .line 287
-    if-eqz v4, :cond_e
+    if-eq v3, v1, :cond_10
 
     .line 288
     .line 289
-    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    goto :goto_7
 
     .line 290
+    :cond_10
+    move-object v1, v4
+
     .line 291
+    const/4 v4, 0x0
+
     .line 292
-    move-result-object v4
+    goto :goto_8
 
     .line 293
-    move-object v11, v4
+    :cond_11
+    :goto_7
+    move-object v1, v4
 
     .line 294
-    check-cast v11, LLL3;
+    const/4 v4, 0x1
 
     .line 295
+    :goto_8
+    if-eqz v4, :cond_16
+
     .line 296
-    iput v3, v11, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
-
     .line 297
+    iget-object v2, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+
     .line 298
-    iput v3, v11, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
-
     .line 299
-    .line 300
-    iput v13, v11, LLL3;->k:I
+    if-eqz v2, :cond_18
 
+    .line 300
     .line 301
+    const/4 v9, -0x1
+
     .line 302
-    iput v13, v11, LLL3;->h:I
+    const v10, 0x7f0b0c5a
 
     .line 303
     .line 304
-    iput v8, v11, LLL3;->s:I
-
     .line 305
+    const/4 v12, 0x1
+
     .line 306
-    invoke-virtual {v11, v8}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+    if-ne v3, v12, :cond_13
 
     .line 307
     .line 308
-    .line 309
-    iput v8, v11, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+    invoke-virtual {v0}, LA7k;->s()Landroid/view/View;
 
+    .line 309
     .line 310
     .line 311
-    goto :goto_7
+    move-result-object v3
 
     .line 312
-    :cond_e
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 313
     .line 314
     .line 315
-    throw v7
+    move-result-object v3
 
     .line 316
-    :cond_f
-    invoke-virtual {v0}, LcIj;->s()Landroid/view/View;
+    const v5, 0x7f071363
 
     .line 317
     .line 318
     .line 319
-    move-result-object v3
+    invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     .line 320
-    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
     .line 321
     .line 322
+    move-result v3
+
     .line 323
-    move-result-object v3
+    invoke-virtual {v0}, LA7k;->s()Landroid/view/View;
 
     .line 324
-    const v4, 0x7f071347
-
     .line 325
     .line 326
+    move-result-object v5
+
     .line 327
-    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+    invoke-virtual {v5}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 328
     .line 329
     .line 330
-    move-result v3
+    move-result-object v5
 
     .line 331
-    iget-object v4, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+    const v12, 0x7f07135f
 
     .line 332
     .line 333
-    if-eqz v4, :cond_11
-
     .line 334
-    .line 335
-    invoke-virtual {v4}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v5, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
+    .line 335
     .line 336
     .line 337
+    move-result v5
+
     .line 338
-    move-result-object v4
+    iget-object v12, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
 
     .line 339
-    move-object v11, v4
-
     .line 340
-    check-cast v11, LLL3;
+    if-eqz v12, :cond_12
 
     .line 341
     .line 342
-    iput v3, v11, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+    invoke-virtual {v12}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 343
     .line 344
-    iput v3, v11, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
-
     .line 345
+    move-result-object v12
+
     .line 346
-    const v3, 0x7f0b0b33
+    check-cast v12, LlP3;
 
     .line 347
     .line 348
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
     .line 349
-    iput v3, v11, LLL3;->j:I
-
     .line 350
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+
     .line 351
-    iput v12, v11, LLL3;->h:I
-
     .line 352
+    iput v10, v12, LlP3;->k:I
+
     .line 353
-    iput v8, v11, LLL3;->s:I
-
     .line 354
-    .line 355
-    invoke-virtual {v11, v8}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+    iput v9, v12, LlP3;->h:I
 
+    .line 355
     .line 356
+    iput v9, v12, LlP3;->s:I
+
     .line 357
     .line 358
-    iput v8, v11, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+    invoke-virtual {v12, v5}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
 
     .line 359
     .line 360
-    :goto_7
-    invoke-virtual {v2, v11}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
     .line 361
+    iput v5, v12, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
     .line 362
     .line 363
-    :cond_10
-    move v4, v1
+    goto :goto_9
 
     .line 364
-    goto :goto_8
+    :cond_12
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 365
-    :cond_11
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 366
     .line 367
+    throw v17
+
     .line 368
-    throw v7
+    :cond_13
+    iget-boolean v3, v5, LCWi;->d:Z
 
     .line 369
-    :cond_12
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 370
+    if-eqz v3, :cond_15
+
     .line 371
     .line 372
-    throw v7
+    invoke-virtual {v0}, LA7k;->s()Landroid/view/View;
 
     .line 373
-    :goto_8
-    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
-
     .line 374
     .line 375
-    if-eqz v1, :cond_18
+    move-result-object v3
 
     .line 376
-    .line 377
-    iget-object v2, v6, LuX9;->Z:LKjj;
+    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
+    .line 377
     .line 378
     .line 379
-    const/4 v5, 0x6
+    move-result-object v3
 
     .line 380
-    const/4 v3, 0x0
+    const v5, 0x7f071361
 
     .line 381
-    invoke-static/range {v0 .. v5}, LUt9;->M(LUt9;Lcom/snap/imageloading/view/SnapImageView;LKjj;LNY0;ZI)V
-
     .line 382
     .line 383
-    .line 384
-    :goto_9
-    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Landroid/widget/TextView;
+    invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
+    .line 384
     .line 385
     .line 386
-    if-eqz v1, :cond_17
+    move-result v3
 
     .line 387
+    iget-object v5, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+
     .line 388
-    iget-object v2, v6, LuX9;->f0:Ljava/lang/CharSequence;
-
     .line 389
-    .line 390
-    invoke-static {v2}, LR4i;->Z1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    if-eqz v5, :cond_14
 
+    .line 390
     .line 391
+    invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
     .line 392
     .line 393
-    move-result-object v2
-
     .line 394
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    move-result-object v5
 
     .line 395
+    move-object v12, v5
+
     .line 396
+    check-cast v12, LlP3;
+
     .line 397
-    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->l0:Landroid/widget/TextView;
-
     .line 398
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
     .line 399
-    if-eqz v1, :cond_16
-
     .line 400
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
+
     .line 401
-    iget-object v2, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->j0:Landroid/widget/LinearLayout;
-
     .line 402
-    .line 403
-    move-object v3, v7
+    iput v10, v12, LlP3;->k:I
 
+    .line 403
     .line 404
-    if-eqz v2, :cond_15
+    iput v10, v12, LlP3;->h:I
 
     .line 405
     .line 406
-    new-instance v7, Lcom/snap/lenses/explorer/categories/feed/b;
+    const/4 v3, 0x0
 
     .line 407
-    .line 408
-    invoke-direct {v7, v0, v6}, Lcom/snap/lenses/explorer/categories/feed/b;-><init>(Lcom/snap/lenses/explorer/categories/feed/c$a;LuX9;)V
+    iput v3, v12, LlP3;->s:I
 
+    .line 408
     .line 409
+    invoke-virtual {v12, v3}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+
     .line 410
     .line 411
-    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 412
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
     .line 413
     .line 414
-    iget-object v4, v6, LuX9;->h0:Lazk;
+    goto :goto_9
 
     .line 415
-    .line 416
-    instance-of v5, v4, Loi7;
+    :cond_14
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 416
     .line 417
     .line 418
-    if-eqz v5, :cond_13
+    throw v17
 
     .line 419
-    .line 420
-    invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
+    :cond_15
+    invoke-virtual {v0}, LA7k;->s()Landroid/view/View;
 
+    .line 420
     .line 421
     .line 422
+    move-result-object v3
+
     .line 423
-    move-object v5, v4
+    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 424
-    check-cast v5, Loi7;
-
     .line 425
     .line 426
-    const v4, 0x7f080413
+    move-result-object v3
 
     .line 427
+    const v5, 0x7f071360
+
     .line 428
     .line 429
-    const/4 v6, 0x0
-
     .line 430
-    const v3, 0x7f080438
+    invoke-virtual {v3, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     .line 431
     .line 432
     .line 433
-    const/16 v8, 0x410
+    move-result v3
 
     .line 434
-    .line 435
-    invoke-static/range {v0 .. v8}, LUt9;->I(LUt9;Landroid/widget/TextView;Landroid/view/View;IILoi7;Ljava/lang/String;Lkotlin/jvm/functions/Function0;I)V
+    iget-object v5, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
 
+    .line 435
     .line 436
+    if-eqz v5, :cond_17
+
     .line 437
     .line 438
-    return-void
+    invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     .line 439
-    :cond_13
-    instance-of v0, v4, Lpi7;
-
     .line 440
     .line 441
-    if-eqz v0, :cond_14
+    move-result-object v5
 
     .line 442
+    move-object v12, v5
+
     .line 443
-    const/4 v0, 0x4
+    check-cast v12, LlP3;
 
     .line 444
-    invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
-
     .line 445
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
     .line 446
     .line 447
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->width:I
 
     .line 448
     .line 449
+    const v3, 0x7f0b0c4b
+
     .line 450
-    :cond_14
-    return-void
-
     .line 451
-    :cond_15
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
-
     .line 452
+    iput v3, v12, LlP3;->j:I
+
     .line 453
     .line 454
-    throw v3
+    iput v9, v12, LlP3;->h:I
 
     .line 455
-    :cond_16
-    move-object v3, v7
-
     .line 456
-    const-string v0, "creator"
+    const/4 v3, 0x0
 
     .line 457
-    .line 458
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    iput v3, v12, LlP3;->s:I
 
+    .line 458
     .line 459
+    invoke-virtual {v12, v3}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginStart(I)V
+
     .line 460
     .line 461
-    throw v3
-
     .line 462
-    :cond_17
-    move-object v3, v7
+    iput v3, v12, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     .line 463
-    const-string v0, "name"
-
     .line 464
-    .line 465
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    :goto_9
+    invoke-virtual {v2, v12}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 465
     .line 466
     .line 467
+    :cond_16
+    move-object v2, v1
+
     .line 468
-    throw v3
+    goto :goto_a
 
     .line 469
-    :cond_18
-    move-object v3, v7
+    :cond_17
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 470
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 471
     .line 472
+    throw v17
+
     .line 473
-    throw v3
+    :cond_18
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 474
+    .line 475
+    .line 476
+    throw v17
+
+    .line 477
+    :goto_a
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->m0:Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 478
+    .line 479
+    if-eqz v1, :cond_28
+
+    .line 480
+    .line 481
+    iget-object v2, v6, LT9a;->Z:LIIj;
+
+    .line 482
+    .line 483
+    const/4 v5, 0x6
+
+    .line 484
+    const/4 v3, 0x0
+
+    .line 485
+    invoke-static/range {v0 .. v5}, LYC9;->N(LYC9;Lcom/snap/imageloading/view/SnapImageView;LIIj;Ly21;ZI)V
+
+    .line 486
+    .line 487
+    .line 488
+    :goto_b
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 489
+    .line 490
+    if-eqz v1, :cond_27
+
+    .line 491
+    .line 492
+    iget-object v2, v6, LT9a;->f0:Ljava/lang/CharSequence;
+
+    .line 493
+    .line 494
+    invoke-static {v2}, Lkti;->f1(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+
+    .line 495
+    .line 496
+    .line 497
+    move-result-object v2
+
+    .line 498
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 499
+    .line 500
+    .line 501
+    iget-boolean v1, v7, LQ9a;->c:Z
+
+    .line 502
+    .line 503
+    const/4 v2, 0x4
+
+    .line 504
+    const-string v3, "creator"
+
+    .line 505
+    .line 506
+    if-eqz v1, :cond_1e
+
+    .line 507
+    .line 508
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->l0:Landroid/widget/TextView;
+
+    .line 509
+    .line 510
+    if-eqz v1, :cond_1d
+
+    .line 511
+    .line 512
+    const/4 v4, 0x0
+
+    .line 513
+    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
+
+    .line 514
+    .line 515
+    .line 516
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->l0:Landroid/widget/TextView;
+
+    .line 517
+    .line 518
+    if-eqz v1, :cond_1c
+
+    .line 519
+    .line 520
+    const/4 v5, 0x4
+
+    .line 521
+    iget-object v2, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->j0:Landroid/widget/LinearLayout;
+
+    .line 522
+    .line 523
+    if-eqz v2, :cond_1b
+
+    .line 524
+    .line 525
+    new-instance v7, Lcom/snap/lenses/explorer/categories/feed/b;
+
+    .line 526
+    .line 527
+    invoke-direct {v7, v0, v6}, Lcom/snap/lenses/explorer/categories/feed/b;-><init>(Lcom/snap/lenses/explorer/categories/feed/c$a;LT9a;)V
+
+    .line 528
+    .line 529
+    .line 530
+    iget-object v3, v6, LT9a;->h0:LXYk;
+
+    .line 531
+    .line 532
+    instance-of v6, v3, Lrn7;
+
+    .line 533
+    .line 534
+    if-eqz v6, :cond_19
+
+    .line 535
+    .line 536
+    invoke-virtual {v1, v4}, Landroid/view/View;->setVisibility(I)V
+
+    .line 537
+    .line 538
+    .line 539
+    move-object v5, v3
+
+    .line 540
+    check-cast v5, Lrn7;
+
+    .line 541
+    .line 542
+    const v4, 0x7f08047f
+
+    .line 543
+    .line 544
+    .line 545
+    const/4 v6, 0x0
+
+    .line 546
+    const v3, 0x7f0804a7
+
+    .line 547
+    .line 548
+    .line 549
+    const/16 v8, 0x410
+
+    .line 550
+    .line 551
+    invoke-static/range {v0 .. v8}, LYC9;->I(LYC9;Landroid/widget/TextView;Landroid/view/View;IILrn7;Ljava/lang/String;Lkotlin/jvm/functions/Function0;I)V
+
+    .line 552
+    .line 553
+    .line 554
+    return-void
+
+    .line 555
+    :cond_19
+    instance-of v3, v3, Lsn7;
+
+    .line 556
+    .line 557
+    if-eqz v3, :cond_1a
+
+    .line 558
+    .line 559
+    invoke-virtual {v1, v5}, Landroid/view/View;->setVisibility(I)V
+
+    .line 560
+    .line 561
+    .line 562
+    move-object/from16 v1, v17
+
+    .line 563
+    .line 564
+    invoke-virtual {v2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 565
+    .line 566
+    .line 567
+    :cond_1a
+    return-void
+
+    .line 568
+    :cond_1b
+    move-object/from16 v1, v17
+
+    .line 569
+    .line 570
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 571
+    .line 572
+    .line 573
+    throw v1
+
+    .line 574
+    :cond_1c
+    move-object/from16 v1, v17
+
+    .line 575
+    .line 576
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 577
+    .line 578
+    .line 579
+    throw v1
+
+    .line 580
+    :cond_1d
+    move-object/from16 v1, v17
+
+    .line 581
+    .line 582
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 583
+    .line 584
+    .line 585
+    throw v1
+
+    .line 586
+    :cond_1e
+    const/4 v5, 0x4
+
+    .line 587
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->l0:Landroid/widget/TextView;
+
+    .line 588
+    .line 589
+    if-eqz v1, :cond_26
+
+    .line 590
+    .line 591
+    const/16 v2, 0x8
+
+    .line 592
+    .line 593
+    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 594
+    .line 595
+    .line 596
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 597
+    .line 598
+    if-eqz v1, :cond_25
+
+    .line 599
+    .line 600
+    const v2, 0x7f1403b8
+
+    .line 601
+    .line 602
+    .line 603
+    invoke-virtual {v1, v2}, Lcom/snap/ui/view/SnapFontTextView;->setTextAppearance(I)V
+
+    .line 604
+    .line 605
+    .line 606
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 607
+    .line 608
+    if-eqz v1, :cond_24
+
+    .line 609
+    .line 610
+    invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 611
+    .line 612
+    .line 613
+    move-result-object v1
+
+    .line 614
+    instance-of v2, v1, Landroid/widget/LinearLayout$LayoutParams;
+
+    .line 615
+    .line 616
+    if-eqz v2, :cond_21
+
+    .line 617
+    .line 618
+    move-object v2, v1
+
+    .line 619
+    check-cast v2, Landroid/widget/LinearLayout$LayoutParams;
+
+    .line 620
+    .line 621
+    iget-object v3, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 622
+    .line 623
+    if-eqz v3, :cond_20
+
+    .line 624
+    .line 625
+    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 626
+    .line 627
+    .line 628
+    move-result-object v3
+
+    .line 629
+    const v4, 0x7f07052f
+
+    .line 630
+    .line 631
+    .line 632
+    invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
+
+    .line 633
+    .line 634
+    .line 635
+    move-result v3
+
+    .line 636
+    iput v3, v2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
+
+    .line 637
+    .line 638
+    iget-object v2, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 639
+    .line 640
+    if-eqz v2, :cond_1f
+
+    .line 641
+    .line 642
+    invoke-virtual {v2, v1}, Lcom/snap/ui/view/SnapFontTextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 643
+    .line 644
+    .line 645
+    goto :goto_c
+
+    .line 646
+    :cond_1f
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 647
+    .line 648
+    .line 649
+    const/16 v17, 0x0
+
+    .line 650
+    .line 651
+    throw v17
+
+    .line 652
+    :cond_20
+    const/16 v17, 0x0
+
+    .line 653
+    .line 654
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 655
+    .line 656
+    .line 657
+    throw v17
+
+    .line 658
+    :cond_21
+    :goto_c
+    iget-object v1, v0, Lcom/snap/lenses/explorer/categories/feed/c$a;->k0:Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 659
+    .line 660
+    if-eqz v1, :cond_23
+
+    .line 661
+    .line 662
+    sget-object v2, Lcom/snap/lenses/explorer/categories/feed/a;->a:[I
+
+    .line 663
+    .line 664
+    iget v3, v7, LQ9a;->t:I
+
+    .line 665
+    .line 666
+    invoke-static {v3}, LzHa;->L(I)I
+
+    .line 667
+    .line 668
+    .line 669
+    move-result v3
+
+    .line 670
+    aget v2, v2, v3
+
+    .line 671
+    .line 672
+    const/4 v7, 0x1
+
+    .line 673
+    if-ne v2, v7, :cond_22
+
+    .line 674
+    .line 675
+    goto :goto_d
+
+    .line 676
+    :cond_22
+    const/4 v8, 0x4
+
+    .line 677
+    :goto_d
+    invoke-virtual {v1, v8}, Landroid/view/View;->setTextAlignment(I)V
+
+    .line 678
+    .line 679
+    .line 680
+    return-void
+
+    .line 681
+    :cond_23
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 682
+    .line 683
+    .line 684
+    const/16 v17, 0x0
+
+    .line 685
+    .line 686
+    throw v17
+
+    .line 687
+    :cond_24
+    const/16 v17, 0x0
+
+    .line 688
+    .line 689
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 690
+    .line 691
+    .line 692
+    throw v17
+
+    .line 693
+    :cond_25
+    const/16 v17, 0x0
+
+    .line 694
+    .line 695
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 696
+    .line 697
+    .line 698
+    throw v17
+
+    .line 699
+    :cond_26
+    const/16 v17, 0x0
+
+    .line 700
+    .line 701
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 702
+    .line 703
+    .line 704
+    throw v17
+
+    .line 705
+    :cond_27
+    invoke-static {v14}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 706
+    .line 707
+    .line 708
+    throw v17
+
+    .line 709
+    :cond_28
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 710
+    .line 711
+    .line 712
+    throw v17
 .end method
 
-.method public final bridge synthetic t(LKu;LKu;)V
+.method public final bridge synthetic t(Lsw;Lsw;)V
     .locals 0
 
     .line 1
-    check-cast p1, LuX9;
+    check-cast p1, LT9a;
 
     .line 2
     .line 3
-    check-cast p2, LuX9;
+    check-cast p2, LT9a;
 
     .line 4
     .line 5
-    invoke-virtual {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$a;->N(LuX9;LuX9;)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/lenses/explorer/categories/feed/c$a;->O(LT9a;LT9a;)V
 
     .line 6
     .line 7

@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lwwa;
+    proxyClass = LNIa;
     schema = "\'subscriptionInfoObservable\':g<c>:\'[0]\'<r:\'[1]\'>,\'forceSync\':f|m|(f(r?:\'[2]\')),\'isLinkedToDeviceAccount\':f|m|(f(b@, r?:\'[2]\')),\'isMock\':f?|m|(): b,\'mockSubscriptionStatus\':f?|m|(r<e>:\'[3]\', d@?)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
         Lcom/snap/plus/SubscriptionInfo;,
         Lcom/snap/composer/foundation/Error;,
-        Lcom/snap/plus/SubscriptionTier;
+        Lcom/snap/modules/plus_api/SubscriptionTier;
     }
 .end annotation
 
@@ -53,12 +53,12 @@
 .end method
 
 .method public abstract isMock()Z
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
-.method public abstract mockSubscriptionStatus(Lcom/snap/plus/SubscriptionTier;Ljava/lang/Double;)V
-    .annotation runtime LUy3;
+.method public abstract mockSubscriptionStatus(Lcom/snap/modules/plus_api/SubscriptionTier;Ljava/lang/Double;)V
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lvy1;
+.implements LJB1;
 
 
 # virtual methods
@@ -21,7 +21,7 @@
 .method public abstract synthetic getOffset()J
 .end method
 
-.method public abstract synthetic getParent()LRP3;
+.method public abstract synthetic getParent()LJT3;
 .end method
 
 .method public abstract synthetic getSize()J
@@ -30,7 +30,7 @@
 .method public abstract synthetic getType()Ljava/lang/String;
 .end method
 
-.method public abstract synthetic parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public abstract synthetic parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -41,5 +41,5 @@
 .method public abstract setDataReferenceIndex(I)V
 .end method
 
-.method public abstract synthetic setParent(LRP3;)V
+.method public abstract synthetic setParent(LJT3;)V
 .end method

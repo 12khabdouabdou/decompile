@@ -1,166 +1,286 @@
-.class public final LE7h;
-.super Ljava/lang/Object;
+.class public final enum LE7h;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements LD7h;
 
+# static fields
+.field public static final enum X:LE7h;
 
-# instance fields
-.field public final a:LcNd;
+.field public static final enum Y:LE7h;
 
-.field public final b:LB7h;
+.field public static final enum Z:LE7h;
 
-.field public final c:Lcom/snap/mushroom/app/MushroomApplication;
+.field public static final enum a:LE7h;
 
-.field public final d:LXfi;
+.field public static final enum b:LE7h;
 
-.field public final e:LXfi;
+.field public static final enum c:LE7h;
 
-.field public final f:LXfi;
+.field public static final enum e0:LE7h;
+
+.field public static final synthetic f0:[LE7h;
+
+.field public static final enum t:LE7h;
 
 
 # direct methods
-.method public constructor <init>(LcNd;LI45;LI45;Lbke;LB7h;Lcom/snap/mushroom/app/MushroomApplication;)V
-    .locals 9
+.method static constructor <clinit>()V
+    .locals 17
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x7
 
     .line 2
+    const/4 v1, 0x6
+
     .line 3
+    const/4 v2, 0x5
+
     .line 4
-    iput-object p1, p0, LE7h;->a:LcNd;
+    const/4 v3, 0x4
 
     .line 5
+    const/4 v4, 0x3
+
     .line 6
-    iput-object p5, p0, LE7h;->b:LB7h;
+    const/4 v5, 0x2
 
     .line 7
+    const/4 v6, 0x1
+
     .line 8
-    iput-object p6, p0, LE7h;->c:Lcom/snap/mushroom/app/MushroomApplication;
+    const/4 v7, 0x0
 
     .line 9
+    new-instance v8, LE7h;
+
     .line 10
-    new-instance p1, LQ2h;
-
     .line 11
+    const-string v9, "OK"
+
     .line 12
-    const/16 p5, 0x8
-
     .line 13
-    .line 14
-    invoke-direct {p1, p2, p5}, LQ2h;-><init>(LI45;I)V
+    invoke-direct {v8, v9, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 14
     .line 15
     .line 16
+    sput-object v8, LE7h;->a:LE7h;
+
     .line 17
-    new-instance p2, LXfi;
-
     .line 18
-    .line 19
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    new-instance v9, LE7h;
 
+    .line 19
     .line 20
+    const-string v10, "INVALID_IMAGE"
+
     .line 21
     .line 22
-    iput-object p2, p0, LE7h;->d:LXfi;
+    invoke-direct {v9, v10, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 23
     .line 24
-    new-instance v0, LUUg;
-
     .line 25
+    sput-object v9, LE7h;->b:LE7h;
+
     .line 26
-    const-class v3, Lbke;
-
     .line 27
+    new-instance v10, LE7h;
+
     .line 28
-    const-string v4, "get"
-
     .line 29
-    .line 30
-    const/4 v1, 0x0
+    const-string v11, "INVALID_TOO_SHORT"
 
+    .line 30
     .line 31
-    const-string v5, "get()Ljava/lang/Object;"
+    invoke-direct {v10, v11, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 32
     .line 33
-    const/4 v6, 0x0
-
     .line 34
-    const/16 v7, 0xf
+    sput-object v10, LE7h;->c:LE7h;
 
     .line 35
     .line 36
-    move-object v2, p3
+    new-instance v11, LE7h;
 
     .line 37
-    invoke-direct/range {v0 .. v7}, LUUg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
     .line 38
+    const-string v12, "INVALID_TOO_LONG"
+
     .line 39
     .line 40
-    new-instance p1, LXfi;
+    invoke-direct {v11, v12, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 41
     .line 42
-    invoke-direct {p1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
     .line 43
+    sput-object v11, LE7h;->t:LE7h;
+
     .line 44
     .line 45
-    iput-object p1, p0, LE7h;->e:LXfi;
+    new-instance v12, LE7h;
 
     .line 46
     .line 47
-    new-instance v1, LUUg;
+    const-string v13, "INVALID_MULTIPLE_ITEMS"
 
     .line 48
     .line 49
-    const-class v4, Lbke;
+    invoke-direct {v12, v13, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 50
     .line 51
-    const-string v5, "get"
-
     .line 52
-    .line 53
-    const/4 v2, 0x0
+    sput-object v12, LE7h;->X:LE7h;
 
+    .line 53
     .line 54
-    const-string v6, "get()Ljava/lang/Object;"
+    new-instance v13, LE7h;
 
     .line 55
     .line 56
-    const/4 v7, 0x0
+    const-string v14, "INVALID_MEMORIES_STORY"
 
     .line 57
-    const/16 v8, 0x10
-
     .line 58
+    invoke-direct {v13, v14, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 59
-    move-object v3, p4
-
     .line 60
-    invoke-direct/range {v1 .. v8}, LUUg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
     .line 61
+    sput-object v13, LE7h;->Y:LE7h;
+
     .line 62
     .line 63
-    new-instance p1, LXfi;
+    new-instance v14, LE7h;
 
     .line 64
     .line 65
-    invoke-direct {p1, v1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    const-string v15, "INVALID_MISSING_MEDIA_PACKAGE"
 
     .line 66
     .line 67
-    .line 68
-    iput-object p1, p0, LE7h;->f:LXfi;
+    invoke-direct {v14, v15, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 68
     .line 69
     .line 70
+    sput-object v14, LE7h;->Z:LE7h;
+
+    .line 71
+    .line 72
+    new-instance v15, LE7h;
+
+    .line 73
+    .line 74
+    const/16 v16, 0x6
+
+    .line 75
+    .line 76
+    const-string v1, "INVALID_NO_SOUND"
+
+    .line 77
+    .line 78
+    invoke-direct {v15, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 79
+    .line 80
+    .line 81
+    sput-object v15, LE7h;->e0:LE7h;
+
+    .line 82
+    .line 83
+    const/16 v1, 0x8
+
+    .line 84
+    .line 85
+    new-array v1, v1, [LE7h;
+
+    .line 86
+    .line 87
+    aput-object v8, v1, v7
+
+    .line 88
+    .line 89
+    aput-object v9, v1, v6
+
+    .line 90
+    .line 91
+    aput-object v10, v1, v5
+
+    .line 92
+    .line 93
+    aput-object v11, v1, v4
+
+    .line 94
+    .line 95
+    aput-object v12, v1, v3
+
+    .line 96
+    .line 97
+    aput-object v13, v1, v2
+
+    .line 98
+    .line 99
+    aput-object v14, v1, v16
+
+    .line 100
+    .line 101
+    aput-object v15, v1, v0
+
+    .line 102
+    .line 103
+    sput-object v1, LE7h;->f0:[LE7h;
+
+    .line 104
+    .line 105
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LE7h;
+    .locals 1
+
+    .line 1
+    const-class v0, LE7h;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LE7h;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LE7h;
+    .locals 1
+
+    .line 1
+    sget-object v0, LE7h;->f0:[LE7h;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LE7h;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

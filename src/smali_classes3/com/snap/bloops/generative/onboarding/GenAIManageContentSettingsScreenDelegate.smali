@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LI88;
+    proxyClass = Laf8;
     schema = "\'genAIManagerContentSettingsOnDismissTapped\':f?|m|()"
     typeReferences = {}
 .end annotation
@@ -17,7 +17,7 @@
 
 # virtual methods
 .method public abstract genAIManagerContentSettingsOnDismissTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

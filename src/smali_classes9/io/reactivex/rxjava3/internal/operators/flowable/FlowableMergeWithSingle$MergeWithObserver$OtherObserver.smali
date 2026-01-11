@@ -180,11 +180,11 @@
 
     .line 27
     .line 28
-    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableMergeWithSingle$MergeWithObserver;->a:LV6i;
+    iget-object v1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableMergeWithSingle$MergeWithObserver;->a:Lmvi;
 
     .line 29
     .line 30
-    invoke-interface {v1, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v1, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 31
     .line 32

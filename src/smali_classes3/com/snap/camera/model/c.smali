@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final X:LLtb;
+.field public final X:LmHb;
 
 .field public final a:Z
 
@@ -32,14 +32,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lqsb;
+    new-instance v0, LSFb;
 
     .line 2
     .line 3
     const/4 v1, 0x5
 
     .line 4
-    invoke-direct {v0, v1}, Lqsb;-><init>(I)V
+    invoke-direct {v0, v1}, LSFb;-><init>(I)V
 
     .line 5
     .line 6
@@ -58,7 +58,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, v0}, Lcom/snap/camera/model/MediaTypeConfig;-><init>(LHr5;)V
+    invoke-direct {p0, v0}, Lcom/snap/camera/model/MediaTypeConfig;-><init>(Lex5;)V
 
     .line 3
     .line 4
@@ -79,11 +79,11 @@
 
     .line 12
     .line 13
-    sget-object p1, LLtb;->b:LLtb;
+    sget-object p1, LmHb;->b:LmHb;
 
     .line 14
     .line 15
-    iput-object p1, p0, Lcom/snap/camera/model/c;->X:LLtb;
+    iput-object p1, p0, Lcom/snap/camera/model/c;->X:LmHb;
 
     .line 16
     .line 17
@@ -152,11 +152,11 @@
     return v0
 .end method
 
-.method public final getMediaType()LLtb;
+.method public final getMediaType()LmHb;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/camera/model/c;->X:LLtb;
+    iget-object v0, p0, Lcom/snap/camera/model/c;->X:LmHb;
 
     .line 2
     .line 3
@@ -354,7 +354,7 @@
 
     .line 41
     .line 42
-    invoke-static {v2, v0, v1}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
     .line 43
     .line 44

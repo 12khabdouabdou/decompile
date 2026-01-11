@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LC7e;
+    proxyClass = LWoe;
     schema = "\'membersDataProvider\':r:\'[0]\',\'membersActionHandler\':r:\'[1]\',\'navigator\':r:\'[2]\',\'enableCategoriesPill\':b@?"
     typeReferences = {
         Lcom/snap/profile/communities/IMembersDataProvider;,

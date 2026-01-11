@@ -1,325 +1,142 @@
 .class public final LNF6;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LLF6;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:LtUe;
+.field public final synthetic a:LAv0;
 
-.field public final b:LOF6;
+.field public final synthetic b:LVF6;
+
+.field public final synthetic c:J
+
+.field public final synthetic t:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(LtUe;LOF6;)V
+.method public constructor <init>(LAv0;LVF6;JLjava/lang/String;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LNF6;->a:LAv0;
 
     .line 2
     .line 3
+    iput-object p2, p0, LNF6;->b:LVF6;
+
     .line 4
-    iput-object p1, p0, LNF6;->a:LtUe;
-
     .line 5
-    .line 6
-    iput-object p2, p0, LNF6;->b:LOF6;
+    iput-wide p3, p0, LNF6;->c:J
 
+    .line 6
     .line 7
+    iput-object p5, p0, LNF6;->t:Ljava/lang/String;
+
     .line 8
+    .line 9
+    const/4 p1, 0x1
+
+    .line 10
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    .line 11
+    .line 12
+    .line 13
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()V
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
+    check-cast p1, LFT;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LOF6;->b()V
+    iget-object v0, p0, LNF6;->a:LAv0;
 
     .line 4
     .line 5
+    iget-object v0, v0, LAv0;->c:Ljava/lang/Object;
+
     .line 6
-    return-void
-.end method
-
-.method public final c()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LOF6;->c()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final d(Landroid/opengl/EGLSurface;J)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2, p3}, LOF6;->d(Landroid/opengl/EGLSurface;J)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final e(Landroid/opengl/EGLSurface;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LOF6;->e(Landroid/opengl/EGLSurface;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p1
-
     .line 7
-    return p1
-.end method
+    check-cast v0, Ly0e;
 
-.method public final f(Landroid/opengl/EGLSurface;)V
-    .locals 1
+    .line 8
+    .line 9
+    iget-object v0, v0, Ly0e;->b:Ljava/lang/Object;
 
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
+    .line 10
+    .line 11
+    check-cast v0, Lgx9;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LOF6;->f(Landroid/opengl/EGLSurface;)V
+    .line 12
+    .line 13
+    iget-object v1, p0, LNF6;->b:LVF6;
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Lgx9;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
-.method public final g(Landroid/view/Surface;)Landroid/opengl/EGLSurface;
-    .locals 1
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
 
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
+    .line 19
+    check-cast v0, Ljava/lang/Long;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LOF6;->g(Landroid/view/Surface;)Landroid/opengl/EGLSurface;
+    .line 20
+    .line 21
+    const/4 v1, 0x0
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
+    .line 22
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
 
-    .line 7
+    .line 23
+    .line 24
+    .line 25
+    iget-wide v0, p0, LNF6;->c:J
+
+    .line 26
+    .line 27
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    const/4 v1, 0x1
+
+    .line 32
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
+
+    .line 33
+    .line 34
+    .line 35
+    const/4 v0, 0x2
+
+    .line 36
+    iget-object v1, p0, LNF6;->t:Ljava/lang/String;
+
+    .line 37
+    .line 38
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
+
+    .line 39
+    .line 40
+    .line 41
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 42
+    .line 43
     return-object p1
-.end method
-
-.method public final h()Landroid/opengl/EGLSurface;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LOF6;->h()Landroid/opengl/EGLSurface;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final i(Landroid/opengl/EGLSurface;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LOF6;->i(Landroid/opengl/EGLSurface;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final j()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->a:LtUe;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p0}, LtUe;->i(LNF6;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final k()Landroid/opengl/EGLSurface;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LOF6;->k()Landroid/opengl/EGLSurface;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final l(Landroid/opengl/EGLSurface;Landroid/opengl/EGLSurface;Landroid/opengl/EGLContext;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2, p3}, LOF6;->l(Landroid/opengl/EGLSurface;Landroid/opengl/EGLSurface;Landroid/opengl/EGLContext;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final m(II)Landroid/opengl/EGLSurface;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2}, LOF6;->m(II)Landroid/opengl/EGLSurface;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    return-object p1
-.end method
-
-.method public final n()Landroid/opengl/EGLContext;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    iget-object v0, v0, LOF6;->b:Landroid/opengl/EGLContext;
-
-    .line 4
-    .line 5
-    return-object v0
-.end method
-
-.method public final o(Landroid/opengl/EGLSurface;[I)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2}, LOF6;->o(Landroid/opengl/EGLSurface;[I)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final p()Landroid/opengl/EGLContext;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LOF6;->p()Landroid/opengl/EGLContext;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final q(Landroid/opengl/EGLSurface;Landroid/opengl/EGLSurface;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->b:LOF6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2}, LOF6;->q(Landroid/opengl/EGLSurface;Landroid/opengl/EGLSurface;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final release()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNF6;->a:LtUe;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p0}, LtUe;->i(LNF6;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
 .end method

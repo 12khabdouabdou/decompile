@@ -1,128 +1,152 @@
 .class public final LFuh;
-.super LPd1;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
 # instance fields
-.field public b:Ljava/lang/String;
+.field public final synthetic a:I
 
-.field public c:Ljava/lang/String;
-
-.field public d:Ljava/lang/String;
-
-.field public e:Ljava/lang/Long;
+.field public final synthetic b:Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;
 
 
 # direct methods
-.method public constructor <init>(LFuh;)V
-    .locals 1
+.method public synthetic constructor <init>(Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;I)V
+    .locals 0
 
     .line 1
+    iput p2, p0, LFuh;->a:I
+
+    iput-object p1, p0, LFuh;->b:Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iget-object v0, p1, LFuh;->b:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    iput-object v0, p0, LFuh;->b:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    iget-object v0, p1, LFuh;->c:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    iput-object v0, p0, LFuh;->c:Ljava/lang/String;
-
-    .line 11
-    .line 12
-    iget-object v0, p1, LFuh;->d:Ljava/lang/String;
-
-    .line 13
-    .line 14
-    iput-object v0, p0, LFuh;->d:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    iget-object p1, p1, LFuh;->e:Ljava/lang/Long;
-
-    .line 17
-    .line 18
-    iput-object p1, p0, LFuh;->e:Ljava/lang/Long;
-
-    .line 19
-    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final onClick(Landroid/view/View;)V
+    .locals 4
 
     .line 1
-    const/4 v0, 0x1
+    iget p1, p0, LFuh;->a:I
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
+    packed-switch p1, :pswitch_data_0
+
     .line 4
-    const/4 v1, 0x2
-
     .line 5
-    iget-object v2, p0, LFuh;->b:Ljava/lang/String;
-
     .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    iget-object p1, p0, LFuh;->b:Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;
 
+    .line 7
     .line 8
+    invoke-virtual {p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;->X1()LJuh;
+
     .line 9
     .line 10
-    const/4 v1, 0x3
-
     .line 11
-    iget-object v2, p0, LFuh;->c:Ljava/lang/String;
+    move-result-object v0
 
     .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    sget-object v1, LEuh;->b:LEuh;
 
+    .line 13
     .line 14
+    new-instance v2, Lujh;
+
     .line 15
     .line 16
-    const/4 v1, 0x4
+    const/16 v3, 0xf
 
     .line 17
-    iget-object v2, p0, LFuh;->e:Ljava/lang/Long;
-
     .line 18
-    .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    invoke-direct {v2, v3, v1}, Lujh;-><init>(ILjava/lang/Object;)V
 
+    .line 19
     .line 20
     .line 21
+    invoke-virtual {v0, v0, v2}, LJuh;->g3(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+
     .line 22
-    const/4 v1, 0x5
-
     .line 23
-    iget-object v2, p0, LFuh;->d:Ljava/lang/String;
-
     .line 24
-    .line 25
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    invoke-virtual {p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;->X1()LJuh;
 
+    .line 25
     .line 26
     .line 27
+    move-result-object p1
+
     .line 28
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
+    invoke-virtual {p1}, LJuh;->d3()V
 
     .line 29
     .line 30
     .line 31
     return-void
+
+    .line 32
+    :pswitch_0
+    iget-object p1, p0, LFuh;->b:Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;
+
+    .line 33
+    .line 34
+    invoke-virtual {p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;->X1()LJuh;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    sget-object v1, LEuh;->c:LEuh;
+
+    .line 39
+    .line 40
+    new-instance v2, Lujh;
+
+    .line 41
+    .line 42
+    const/16 v3, 0xf
+
+    .line 43
+    .line 44
+    invoke-direct {v2, v3, v1}, Lujh;-><init>(ILjava/lang/Object;)V
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v0, v0, v2}, LJuh;->g3(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {p1}, Lcom/snap/spectacles/lib/fragments/SpectaclesOnboardingFragment;->X1()LJuh;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p1
+
+    .line 54
+    invoke-virtual {p1}, LJuh;->d3()V
+
+    .line 55
+    .line 56
+    .line 57
+    return-void
+
+    .line 58
+    nop
+
+    .line 59
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

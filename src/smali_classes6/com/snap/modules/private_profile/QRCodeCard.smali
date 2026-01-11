@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LYqe;",
-        "LWqe;",
+        "LKIe;",
+        "LGIe;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LVqe;
+.field public static final Companion:LFIe;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LVqe;
+    new-instance v0, LFIe;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/private_profile/QRCodeCard;->Companion:LVqe;
+    sput-object v0, Lcom/snap/modules/private_profile/QRCodeCard;->Companion:LFIe;
 
     .line 7
     .line 8
@@ -62,92 +62,46 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/private_profile/QRCodeCard;
-    .locals 9
-
-    sget-object v0, Lcom/snap/modules/private_profile/QRCodeCard;->Companion:LVqe;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 1
-    new-instance v2, Lcom/snap/modules/private_profile/QRCodeCard;
-
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-direct {v2, v0}, Lcom/snap/modules/private_profile/QRCodeCard;-><init>(Landroid/content/Context;)V
-
-    .line 2
-    invoke-static {}, Lcom/snap/modules/private_profile/QRCodeCard;->access$getComponentPath$cp()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v8, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v7, 0x0
-
-    move-object v1, p0
-
-    move-object v6, p1
-
-    .line 3
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
-
-    return-object v2
-.end method
-
-.method public static final create(LqZ8;LYqe;LWqe;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/private_profile/QRCodeCard;
-    .locals 9
+.method public static final create(LZ69;LKIe;LGIe;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/private_profile/QRCodeCard;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LYqe;",
-            "LWqe;",
-            "LTB3;",
+            "LZ69;",
+            "LKIe;",
+            "LGIe;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/modules/private_profile/QRCodeCard;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/modules/private_profile/QRCodeCard;->Companion:LVqe;
+    .line 1
+    sget-object v0, Lcom/snap/modules/private_profile/QRCodeCard;->Companion:LFIe;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 4
-    new-instance v2, Lcom/snap/modules/private_profile/QRCodeCard;
+    invoke-static {p0, p1, p2, p3, p4}, LFIe;->a(LZ69;LKIe;LGIe;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/private_profile/QRCodeCard;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    move-result-object p0
 
-    move-result-object v0
+    return-object p0
+.end method
 
-    invoke-direct {v2, v0}, Lcom/snap/modules/private_profile/QRCodeCard;-><init>(Landroid/content/Context;)V
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/private_profile/QRCodeCard;
+    .locals 1
 
-    .line 5
-    invoke-static {}, Lcom/snap/modules/private_profile/QRCodeCard;->access$getComponentPath$cp()Ljava/lang/String;
+    sget-object v0, Lcom/snap/modules/private_profile/QRCodeCard;->Companion:LFIe;
 
-    move-result-object v3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 v8, 0x0
+    const/4 v0, 0x0
 
-    move-object v1, p0
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, LFIe;->a(LZ69;LKIe;LGIe;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/private_profile/QRCodeCard;
 
-    move-object v4, p1
+    move-result-object p0
 
-    move-object v5, p2
-
-    move-object v6, p3
-
-    move-object v7, p4
-
-    .line 6
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
-
-    return-object v2
+    return-object p0
 .end method

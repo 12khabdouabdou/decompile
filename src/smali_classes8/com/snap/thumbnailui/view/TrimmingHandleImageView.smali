@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public c:LrE9;
+.field public c:LJP9;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/thumbnailui/view/TrimmingHandleImageView;->c:LrE9;
+    iget-object v0, p0, Lcom/snap/thumbnailui/view/TrimmingHandleImageView;->c:LJP9;
 
     .line 2
     .line 3
@@ -61,7 +61,7 @@
 
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/snap/thumbnailui/view/TrimmingHandleImageView;->c:LrE9;
+    iget-object v0, p0, Lcom/snap/thumbnailui/view/TrimmingHandleImageView;->c:LJP9;
 
     .line 12
     .line 13

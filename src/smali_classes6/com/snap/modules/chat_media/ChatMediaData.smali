@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/chat_media/ChatMediaData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'identifier\':r?:\'[0]\',\'imageUri\':s?,\'videoContent\':r?:\'[1]\',\'mediaSize\':r?:\'[2]\',\'mediaType\':r?<e>:\'[3]\',\'videoMetadata\':r?:\'[4]\'"
     typeReferences = {

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/memories/composer/api/MemoriesLocationSnap;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'memoriesId\':s,\'lat\':d,\'lng\':d,\'captureTimestamp\':d"
     typeReferences = {}

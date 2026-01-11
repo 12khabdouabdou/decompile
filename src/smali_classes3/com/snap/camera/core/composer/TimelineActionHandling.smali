@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LWAi;
+    proxyClass = Le0j;
     schema = "\'onConfirm\':f|m|(),\'onRemoveSegment\':f|m|(),\'onAddSound\':f|m|()"
     typeReferences = {}
 .end annotation

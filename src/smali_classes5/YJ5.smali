@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+.implements Lio/reactivex/rxjava3/core/ObservableTransformer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/util/concurrent/atomic/AtomicBoolean;I)V
+.method public synthetic constructor <init>(Lio/reactivex/rxjava3/internal/operators/single/SingleCache;I)V
     .locals 0
 
     .line 1
     iput p2, p0, LYJ5;->a:I
 
-    iput-object p1, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object p1, p0, LYJ5;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,8 +28,8 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final b(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/ObservableSource;
+    .locals 2
 
     .line 1
     iget v0, p0, LYJ5;->a:I
@@ -41,149 +41,99 @@
     .line 4
     .line 5
     .line 6
-    const/4 v0, 0x0
+    new-instance v0, LEdg;
 
     .line 7
-    const/4 v1, 0x1
-
     .line 8
-    iget-object v2, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    const/16 v1, 0x1d
 
     .line 9
     .line 10
-    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    invoke-direct {v0, v1, p0}, LEdg;-><init>(ILjava/lang/Object;)V
 
     .line 11
     .line 12
     .line 13
-    return-void
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    :pswitch_0
-    iget-object v0, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
     .line 15
     .line 16
-    const/4 v1, 0x1
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;
 
     .line 17
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-
     .line 18
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 19
     .line 20
-    return-void
-
     .line 21
-    :pswitch_1
-    iget-object v0, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    return-object v1
 
     .line 22
-    .line 23
-    const/4 v1, 0x1
+    :pswitch_0
+    new-instance v0, Lmk0;
 
+    .line 23
     .line 24
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    const/4 v1, 0x3
 
     .line 25
+    invoke-direct {v0, v1, p1}, Lmk0;-><init>(ILio/reactivex/rxjava3/core/Observable;)V
+
     .line 26
     .line 27
-    return-void
-
     .line 28
-    :pswitch_2
-    iget-object v0, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object p1, p0, LYJ5;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
     .line 29
     .line 30
-    const/4 v1, 0x1
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
 
     .line 31
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-
     .line 32
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 33
     .line 34
-    return-void
-
     .line 35
-    :pswitch_3
-    iget-object v0, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    return-object v1
 
     .line 36
-    .line 37
-    const/4 v1, 0x1
+    :pswitch_1
+    new-instance v0, LxF5;
 
+    .line 37
     .line 38
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    const/4 v1, 0x4
 
     .line 39
+    invoke-direct {v0, v1, p1}, LxF5;-><init>(ILjava/lang/Object;)V
+
     .line 40
     .line 41
-    return-void
-
     .line 42
-    :pswitch_4
-    const/4 v0, 0x0
+    iget-object p1, p0, LYJ5;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
     .line 43
-    const/4 v1, 0x1
-
     .line 44
-    iget-object v2, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
 
     .line 45
     .line 46
-    invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 47
     .line 48
     .line 49
-    return-void
+    return-object v1
 
     .line 50
-    :pswitch_5
-    iget-object v0, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 51
-    .line 52
-    const/4 v1, 0x1
-
-    .line 53
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-
-    .line 54
-    .line 55
-    .line 56
-    return-void
-
-    .line 57
-    :pswitch_6
-    iget-object v0, p0, LYJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 58
-    .line 59
-    const/4 v1, 0x1
-
-    .line 60
-    invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
-
-    .line 61
-    .line 62
-    .line 63
-    return-void
-
-    .line 64
     nop
 
-    .line 65
+    .line 51
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

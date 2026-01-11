@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lm6e;
+    proxyClass = LKne;
     schema = "\'getGroupDisplayName\':f|m|(s): g<c>:\'[0]\'<s>,\'dismissProfile\':f|m|(),\'launchGroupActionMenu\':f|m|(s)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;

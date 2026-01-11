@@ -1,33 +1,224 @@
-.class public final LGzh;
-.super LUVi;
+.class public LGzh;
+.super Lq6h;
 .source "SourceFile"
 
 
+# instance fields
+.field public y0:LFzh;
+
+.field public z0:Ljava/lang/Long;
+
+
 # direct methods
-.method public constructor <init>(LAG8;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 9
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v2, LoJe;->c:LoJe;
 
     .line 2
     .line 3
+    const-string v1, "SPEECH_SERVICE_PERF_SNAPSHOT"
+
     .line 4
+    .line 5
+    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
+
+    .line 6
+    .line 7
+    const-wide v5, 0x3fb999999999999aL    # 0.1
+
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+
+    .line 13
+    .line 14
+    move-object v0, p0
+
+    .line 15
+    invoke-direct/range {v0 .. v8}, LEV6;-><init>(Ljava/lang/String;LoJe;DDD)V
+
+    .line 16
+    .line 17
+    .line 18
     return-void
 .end method
 
 
 # virtual methods
-.method public a(LDB9;)LFzh;
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final d(LeO3;Ljava/util/Set;)V
+    .locals 3
 
     .line 1
-    invoke-virtual {p1}, LDB9;->C()I
+    const/4 v0, 0x2
+
+    .line 2
+    new-array v1, v0, [B
+
+    .line 3
+    .line 4
+    iget-object v2, p0, LGzh;->z0:Ljava/lang/Long;
+
+    .line 5
+    .line 6
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 7
+    .line 8
+    .line 9
+    const/4 v0, 0x3
+
+    .line 10
+    iget-object v2, p0, Lq6h;->p0:Ly6h;
+
+    .line 11
+    .line 12
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->W(LeO3;I[BLUT6;Ljava/util/Set;)V
+
+    .line 13
+    .line 14
+    .line 15
+    const/4 v0, 0x4
+
+    .line 16
+    iget-object v2, p0, Lq6h;->v0:Ljava/lang/Long;
+
+    .line 17
+    .line 18
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 v0, 0x5
+
+    .line 22
+    iget-object v2, p0, Lq6h;->r0:Ljava/lang/Double;
+
+    .line 23
+    .line 24
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->V(LeO3;I[BLjava/lang/Double;Ljava/util/Set;)V
+
+    .line 25
+    .line 26
+    .line 27
+    const/4 v0, 0x6
+
+    .line 28
+    iget-object v2, p0, Lq6h;->w0:Ljava/lang/Long;
+
+    .line 29
+    .line 30
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 31
+    .line 32
+    .line 33
+    const/4 v0, 0x7
+
+    .line 34
+    iget-object v2, p0, Lq6h;->t0:Ljava/lang/Long;
+
+    .line 35
+    .line 36
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 37
+    .line 38
+    .line 39
+    const/16 v0, 0x8
+
+    .line 40
+    .line 41
+    iget-object v2, p0, Lq6h;->u0:Ljava/lang/Long;
+
+    .line 42
+    .line 43
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 44
+    .line 45
+    .line 46
+    const/16 v0, 0x9
+
+    .line 47
+    .line 48
+    iget-object v2, p0, Lq6h;->q0:Ljava/lang/Long;
+
+    .line 49
+    .line 50
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 51
+    .line 52
+    .line 53
+    const/16 v0, 0xa
+
+    .line 54
+    .line 55
+    iget-object v2, p0, LGzh;->y0:LFzh;
+
+    .line 56
+    .line 57
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->W(LeO3;I[BLUT6;Ljava/util/Set;)V
+
+    .line 58
+    .line 59
+    .line 60
+    const/16 v0, 0xb
+
+    .line 61
+    .line 62
+    iget-object v2, p0, Lq6h;->x0:Ljava/lang/Long;
+
+    .line 63
+    .line 64
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 65
+    .line 66
+    .line 67
+    const/16 v0, 0xc
+
+    .line 68
+    .line 69
+    iget-object v2, p0, Lq6h;->s0:Ljava/lang/Long;
+
+    .line 70
+    .line 71
+    invoke-static {p1, v0, v1, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-virtual {p1, v1}, LeO3;->k([B)V
+
+    .line 75
+    .line 76
+    .line 77
+    return-void
+.end method
+
+.method public final e()I
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x8c5
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final f(Ljava/util/Map;)I
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1}, Lq6h;->f(Ljava/util/Map;)I
 
     .line 2
     .line 3
@@ -35,383 +226,187 @@
     move-result v0
 
     .line 5
-    const/16 v1, 0x9
+    const-string v1, "active_usage_msec"
 
     .line 6
     .line 7
-    if-ne v0, v1, :cond_0
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
-    invoke-virtual {p1}, LDB9;->y()V
-
     .line 10
-    .line 11
-    .line 12
-    const/4 p1, 0x0
+    move-result-object v1
 
+    .line 11
+    check-cast v1, Ljava/lang/Long;
+
+    .line 12
     .line 13
-    return-object p1
+    iput-object v1, p0, LGzh;->z0:Ljava/lang/Long;
 
     .line 14
-    :cond_0
-    new-instance v0, LFzh;
-
     .line 15
-    .line 16
-    invoke-direct {v0}, LFzh;-><init>()V
+    if-eqz v1, :cond_0
 
+    .line 16
     .line 17
+    add-int/lit8 v0, v0, 0x1
+
     .line 18
     .line 19
-    const/4 v2, 0x1
+    :cond_0
+    const-string v1, "speech_engine_type"
 
     .line 20
-    iput-boolean v2, p1, LDB9;->b:Z
-
     .line 21
-    .line 22
-    invoke-virtual {p1}, LDB9;->b()V
+    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
+    .line 22
     .line 23
     .line 24
+    move-result v2
+
     .line 25
-    :goto_0
-    invoke-virtual {p1}, LDB9;->i()Z
+    if-eqz v2, :cond_2
 
     .line 26
     .line 27
+    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 28
-    move-result v2
-
     .line 29
-    if-eqz v2, :cond_7
-
     .line 30
+    move-result-object p1
+
     .line 31
-    invoke-virtual {p1}, LDB9;->w()Ljava/lang/String;
+    instance-of v1, p1, Ljava/lang/String;
 
     .line 32
     .line 33
-    .line 34
-    move-result-object v2
+    if-eqz v1, :cond_1
 
+    .line 34
     .line 35
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p1, Ljava/lang/String;
 
     .line 36
     .line 37
-    .line 38
-    const/16 v3, 0x8
+    invoke-static {p1}, LFzh;->valueOf(Ljava/lang/String;)LFzh;
 
+    .line 38
     .line 39
     .line 40
-    const-string v4, "mini_app_share_info"
+    move-result-object p1
 
     .line 41
+    iput-object p1, p0, LGzh;->y0:LFzh;
+
     .line 42
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 43
-    .line 44
-    .line 45
-    move-result v4
+    goto :goto_0
 
+    .line 44
+    :cond_1
+    check-cast p1, LFzh;
+
+    .line 45
     .line 46
-    if-nez v4, :cond_4
+    iput-object p1, p0, LGzh;->y0:LFzh;
 
     .line 47
     .line 48
-    const-string v4, "mini_app_id"
+    :goto_0
+    add-int/lit8 v0, v0, 0x1
 
     .line 49
     .line 50
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 51
-    .line 52
-    .line 53
-    move-result v2
-
-    .line 54
-    if-nez v2, :cond_1
-
-    .line 55
-    .line 56
-    invoke-virtual {p1}, LDB9;->K()V
-
-    .line 57
-    .line 58
-    .line 59
-    goto :goto_0
-
-    .line 60
-    :cond_1
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 61
-    .line 62
-    .line 63
-    move-result v2
-
-    .line 64
-    if-ne v2, v1, :cond_2
-
-    .line 65
-    .line 66
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 67
-    .line 68
-    .line 69
-    goto :goto_0
-
-    .line 70
     :cond_2
-    if-ne v2, v3, :cond_3
-
-    .line 71
-    .line 72
-    invoke-virtual {p1}, LDB9;->n()Z
-
-    .line 73
-    .line 74
-    .line 75
-    move-result v2
-
-    .line 76
-    invoke-static {v2}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
-
-    .line 77
-    .line 78
-    .line 79
-    move-result-object v2
-
-    .line 80
-    goto :goto_1
-
-    .line 81
-    :cond_3
-    invoke-virtual {p1}, LDB9;->A()Ljava/lang/String;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v2
-
-    .line 85
-    :goto_1
-    iput-object v2, v0, LFzh;->a:Ljava/lang/String;
-
-    .line 86
-    .line 87
-    goto :goto_0
-
-    .line 88
-    :cond_4
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 89
-    .line 90
-    .line 91
-    move-result v2
-
-    .line 92
-    if-ne v2, v1, :cond_5
-
-    .line 93
-    .line 94
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 95
-    .line 96
-    .line 97
-    goto :goto_0
-
-    .line 98
-    :cond_5
-    if-ne v2, v3, :cond_6
-
-    .line 99
-    .line 100
-    invoke-virtual {p1}, LDB9;->n()Z
-
-    .line 101
-    .line 102
-    .line 103
-    move-result v2
-
-    .line 104
-    invoke-static {v2}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v2
-
-    .line 108
-    goto :goto_2
-
-    .line 109
-    :cond_6
-    invoke-virtual {p1}, LDB9;->A()Ljava/lang/String;
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-object v2
-
-    .line 113
-    :goto_2
-    iput-object v2, v0, LFzh;->b:Ljava/lang/String;
-
-    .line 114
-    .line 115
-    goto :goto_0
-
-    .line 116
-    :cond_7
-    invoke-virtual {p1}, LDB9;->g()V
-
-    .line 117
-    .line 118
-    .line 119
-    return-object v0
+    return v0
 .end method
 
-.method public b(LaC9;LFzh;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final g(Ljava/util/Map;)V
+    .locals 3
 
     .line 1
-    if-nez p2, :cond_0
+    iget-object v0, p0, LGzh;->y0:LFzh;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LaC9;->j()LaC9;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 6
-    return-void
-
     .line 7
-    :cond_0
-    const/4 v0, 0x1
-
     .line 8
-    iput-boolean v0, p1, LaC9;->Y:Z
+    move-result-object v0
 
     .line 9
+    move-object v1, p1
+
     .line 10
-    invoke-virtual {p1}, LaC9;->c()V
+    check-cast v1, Ljava/util/HashMap;
 
     .line 11
     .line 12
+    const-string v2, "speech_engine_type"
+
     .line 13
-    iget-object v0, p2, LFzh;->a:Ljava/lang/String;
-
     .line 14
-    .line 15
-    if-eqz v0, :cond_1
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 15
     .line 16
     .line 17
-    const-string v0, "mini_app_id"
+    :cond_0
+    iget-object v0, p0, LGzh;->z0:Ljava/lang/Long;
 
     .line 18
     .line 19
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
+    if-eqz v0, :cond_1
 
     .line 20
     .line 21
-    .line 22
-    iget-object v0, p2, LFzh;->a:Ljava/lang/String;
+    const-string v1, "active_usage_msec"
 
+    .line 22
     .line 23
+    move-object v2, p1
+
     .line 24
-    invoke-virtual {p1, v0}, LaC9;->p(Ljava/lang/String;)LaC9;
+    check-cast v2, Ljava/util/HashMap;
 
     .line 25
     .line 26
-    .line 27
-    :cond_1
-    iget-object v0, p2, LFzh;->b:Ljava/lang/String;
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 27
     .line 28
     .line 29
-    if-eqz v0, :cond_2
+    :cond_1
+    invoke-super {p0, p1}, Lq6h;->g(Ljava/util/Map;)V
 
     .line 30
     .line 31
-    const-string v0, "mini_app_share_info"
-
     .line 32
-    .line 33
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
+    iget-object v0, p0, LEV6;->b:Ljava/lang/String;
 
+    .line 33
     .line 34
+    check-cast p1, Ljava/util/HashMap;
+
     .line 35
     .line 36
-    iget-object p2, p2, LFzh;->b:Ljava/lang/String;
+    const-string v1, "event_name"
 
     .line 37
     .line 38
-    invoke-virtual {p1, p2}, LaC9;->p(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
     .line 40
     .line 41
-    :cond_2
-    invoke-virtual {p1}, LaC9;->g()V
-
-    .line 42
-    .line 43
-    .line 44
-    return-void
-.end method
-
-.method public bridge synthetic read(LDB9;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p1}, LGzh;->a(LDB9;)LFzh;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public bridge synthetic write(LaC9;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    check-cast p2, LFzh;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1, p2}, LGzh;->b(LaC9;LFzh;)V
-
-    .line 4
-    .line 5
-    .line 6
     return-void
 .end method

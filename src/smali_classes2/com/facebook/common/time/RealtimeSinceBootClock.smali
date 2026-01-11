@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lr1c;
+.implements Legc;
 
 
 # annotations
-.annotation build LAr6;
+.annotation build LMu6;
 .end annotation
 
 
@@ -50,7 +50,7 @@
 
 .method public static get()Lcom/facebook/common/time/RealtimeSinceBootClock;
     .locals 1
-    .annotation build LAr6;
+    .annotation build LMu6;
     .end annotation
 
     .line 1

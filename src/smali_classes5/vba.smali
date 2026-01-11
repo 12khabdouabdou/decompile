@@ -1,9 +1,6 @@
 .class public final Lvba;
-.super Ljava/lang/Object;
+.super Lxba;
 .source "SourceFile"
-
-# interfaces
-.implements Lwba;
 
 
 # static fields

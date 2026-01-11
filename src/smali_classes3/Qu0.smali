@@ -1,45 +1,19 @@
 .class public final LQu0;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'updateAuraData\':f(f()),\'diviningPageDidComplete\':f()"
-    typeReferences = {}
-.end annotation
-
-
 # instance fields
-.field private _diviningPageDidComplete:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
+.field public final a:LCBe;
 
-.field private _updateAuraData:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1;"
-        }
-    .end annotation
-.end field
+.field public final b:LCBe;
+
+.field public final c:LCBe;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;)V
+.method public constructor <init>(LCBe;LCBe;LCBe;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function1;",
-            "Lkotlin/jvm/functions/Function0;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,13 +21,17 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LQu0;->_updateAuraData:Lkotlin/jvm/functions/Function1;
+    iput-object p1, p0, LQu0;->a:LCBe;
 
     .line 5
     .line 6
-    iput-object p2, p0, LQu0;->_diviningPageDidComplete:Lkotlin/jvm/functions/Function0;
+    iput-object p2, p0, LQu0;->b:LCBe;
 
     .line 7
     .line 8
+    iput-object p3, p0, LQu0;->c:LCBe;
+
+    .line 9
+    .line 10
     return-void
 .end method

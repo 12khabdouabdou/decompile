@@ -1,132 +1,209 @@
-.class public final LGok;
+.class public abstract LGok;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
-
-
-# static fields
-.field public static final a:LGok;
-
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public static a(I)I
+    .locals 4
 
     .line 1
-    new-instance v0, LGok;
+    const/4 v0, 0x0
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x1
 
     .line 4
+    :goto_0
+    const/16 v3, 0x100
+
     .line 5
     .line 6
-    sput-object v0, LGok;->a:LGok;
+    if-gt v2, v3, :cond_9
 
     .line 7
     .line 8
-    new-instance v0, Lgdk;
+    and-int v3, p0, v2
 
     .line 9
     .line 10
-    const/4 v1, 0x1
+    if-eqz v3, :cond_8
 
     .line 11
-    invoke-direct {v0, v1}, Lgdk;-><init>(I)V
-
     .line 12
+    if-eq v2, v1, :cond_7
+
     .line 13
     .line 14
-    const-class v1, LAdk;
+    const/4 v3, 0x2
 
     .line 15
+    if-eq v2, v3, :cond_6
+
     .line 16
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
     .line 17
-    .line 18
-    .line 19
-    move-result-object v0
+    const/4 v3, 0x4
 
+    .line 18
+    if-eq v2, v3, :cond_5
+
+    .line 19
     .line 20
-    const/4 v2, 0x2
+    const/16 v3, 0x8
 
     .line 21
-    invoke-static {v0, v2}, LsMj;->p(Ljava/util/HashMap;I)Lgdk;
-
     .line 22
+    if-eq v2, v3, :cond_4
+
     .line 23
     .line 24
-    move-result-object v0
+    const/16 v3, 0x10
 
     .line 25
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
-
     .line 26
+    if-eq v2, v3, :cond_3
+
     .line 27
     .line 28
-    move-result-object v0
+    const/16 v3, 0x20
 
     .line 29
-    const/4 v2, 0x3
-
     .line 30
-    invoke-static {v0, v2}, LsMj;->p(Ljava/util/HashMap;I)Lgdk;
+    if-eq v2, v3, :cond_2
 
     .line 31
     .line 32
-    .line 33
-    move-result-object v0
+    const/16 v3, 0x40
 
+    .line 33
     .line 34
-    invoke-static {v1, v0}, LsMj;->l(Ljava/lang/Class;Lgdk;)Ljava/util/HashMap;
+    if-eq v2, v3, :cond_1
 
     .line 35
     .line 36
-    .line 37
-    move-result-object v0
+    const/16 v3, 0x80
 
+    .line 37
     .line 38
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
+    if-eq v2, v3, :cond_0
 
     .line 39
     .line 40
+    goto :goto_2
+
     .line 41
-    return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
     :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
+    invoke-static {}, LaJ7;->D()I
 
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    .line 42
+    .line 43
+    .line 44
+    move-result v3
 
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+    .line 45
+    :goto_1
+    or-int/2addr v0, v3
+
+    .line 46
+    goto :goto_2
+
+    .line 47
+    :cond_1
+    invoke-static {}, LaJ7;->C()I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v3
+
+    .line 51
+    goto :goto_1
+
+    .line 52
+    :cond_2
+    invoke-static {}, LaJ7;->B()I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v3
+
+    .line 56
+    goto :goto_1
+
+    .line 57
+    :cond_3
+    invoke-static {}, LaJ7;->A()I
+
+    .line 58
+    .line 59
+    .line 60
+    move-result v3
+
+    .line 61
+    goto :goto_1
+
+    .line 62
+    :cond_4
+    invoke-static {}, LaJ7;->a()I
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v3
+
+    .line 66
+    goto :goto_1
+
+    .line 67
+    :cond_5
+    invoke-static {}, LaJ7;->z()I
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v3
+
+    .line 71
+    goto :goto_1
+
+    .line 72
+    :cond_6
+    invoke-static {}, LaJ7;->y()I
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v3
+
+    .line 76
+    goto :goto_1
+
+    .line 77
+    :cond_7
+    invoke-static {}, LaJ7;->x()I
+
+    .line 78
+    .line 79
+    .line 80
+    move-result v3
+
+    .line 81
+    goto :goto_1
+
+    .line 82
+    :cond_8
+    :goto_2
+    shl-int/lit8 v2, v2, 0x1
+
+    .line 83
+    .line 84
+    goto :goto_0
+
+    .line 85
+    :cond_9
+    return v0
 .end method

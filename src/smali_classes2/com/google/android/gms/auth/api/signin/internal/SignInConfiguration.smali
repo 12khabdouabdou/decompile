@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/auth/api/signin/internal/SignInConfiguration;
-.super LI3;
+.super Le4;
 .source "SourceFile"
 
 # interfaces
@@ -29,15 +29,15 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lw7k;
+    new-instance v0, LKwk;
 
     .line 2
     .line 3
-    const/16 v1, 0xe
+    const/16 v1, 0x17
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lw7k;-><init>(I)V
+    invoke-direct {v0, v1}, LKwk;-><init>(I)V
 
     .line 6
     .line 7
@@ -58,7 +58,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Ldw8;->p(Ljava/lang/String;)V
+    invoke-static {p1}, LNpk;->h(Ljava/lang/String;)V
 
     .line 5
     .line 6
@@ -247,7 +247,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
+    invoke-static {v0, p1}, LMsi;->X(ILandroid/os/Parcel;)I
 
     .line 4
     .line 5
@@ -262,7 +262,7 @@
 
     .line 9
     .line 10
-    invoke-static {p1, v1, v2}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, v1, v2}, LMsi;->S(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 11
     .line 12
@@ -274,12 +274,12 @@
 
     .line 15
     .line 16
-    invoke-static {p1, v1, v2, p2}, Lew8;->F0(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+    invoke-static {p1, v1, v2, p2}, LMsi;->R(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 17
     .line 18
     .line 19
-    invoke-static {v0, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
+    invoke-static {v0, p1}, LMsi;->Y(ILandroid/os/Parcel;)V
 
     .line 20
     .line 21

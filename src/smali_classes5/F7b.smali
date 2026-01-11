@@ -1,82 +1,51 @@
 .class public final LF7b;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'flavorText\':s?,\'text\':s?,\'imageUrl\':s?,\'styleIdentifier\':s"
+    typeReferences = {}
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field private _flavorText:Ljava/lang/String;
 
-.field public final synthetic b:Lf4a;
+.field private _imageUrl:Ljava/lang/String;
+
+.field private _styleIdentifier:Ljava/lang/String;
+
+.field private _text:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lf4a;I)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LF7b;->a:I
-
-    iput-object p1, p0, LF7b;->b:Lf4a;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LF7b;->a:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    iput-object p1, p0, LF7b;->_flavorText:Ljava/lang/String;
+
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    iput-object p2, p0, LF7b;->_text:Ljava/lang/String;
 
     .line 7
     .line 8
-    iget-object p1, p0, LF7b;->b:Lf4a;
+    iput-object p3, p0, LF7b;->_imageUrl:Ljava/lang/String;
 
     .line 9
     .line 10
-    iget-object p1, p1, Lf4a;->Y:Ljava/lang/Object;
+    iput-object p4, p0, LF7b;->_styleIdentifier:Ljava/lang/String;
 
     .line 11
     .line 12
     return-void
-
-    .line 13
-    :pswitch_0
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 14
-    .line 15
-    iget-object p1, p0, LF7b;->b:Lf4a;
-
-    .line 16
-    .line 17
-    iget-object p1, p1, Lf4a;->Y:Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

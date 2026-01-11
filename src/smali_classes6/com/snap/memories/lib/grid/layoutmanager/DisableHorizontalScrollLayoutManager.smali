@@ -8,7 +8,7 @@
 
 
 # virtual methods
-.method public final L0(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;Landroid/graphics/Rect;ZZ)Z
+.method public final Q0(Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;Landroid/graphics/Rect;ZZ)Z
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     return p1
 .end method
 
-.method public final p()Z
+.method public final u()Z
     .locals 1
 
     .line 1

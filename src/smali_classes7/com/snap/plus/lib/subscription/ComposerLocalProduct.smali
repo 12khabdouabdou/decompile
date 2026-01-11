@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKZd;
+.implements Ljhe;
 
 
 # annotations
@@ -12,38 +12,40 @@
 
 
 # static fields
-.field public static final Companion:LNx3;
+.field public static final Companion:LcB3;
 
 .field private static final TAG:Ljava/lang/String; = "ComposerLocalProduct"
 
 
 # instance fields
+.field private final allowedMemoriesStorageGb:Ljava/lang/Double;
+
 .field private final compositeDisposable:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field private final configProvider:Lbke;
+.field private final configProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private final dataSyncerManager:Lbke;
+.field private final dataSyncerManager:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
 .field private final familyPlanMaxParticipants:Ljava/lang/Double;
 
-.field private final familyPlanMetadata:LT97;
+.field private final familyPlanMetadata:LBe7;
 
-.field private final graphene:Lbke;
+.field private final graphene:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
@@ -52,31 +54,39 @@
 
 .field private final isFamilyPlan:Z
 
-.field private final logger:Lrn0;
+.field private final logger:LJp0;
 
-.field private final networkClient:Lbke;
+.field private final networkClient:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private final offerDetail:LA0e;
+.field private final offerDetail:LYhe;
 
-.field private final preferences:Lbke;
+.field private final plusSyncService:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private final productDetails:LC0e;
+.field private final preferences:LDBe;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LDBe;"
+        }
+    .end annotation
+.end field
+
+.field private final productDetails:Laie;
 
 .field private final productId:Ljava/lang/String;
 
-.field private final purchaseFlowDelegate:Laqe;
+.field private final purchaseFlowDelegate:LNHe;
 
 .field private final refId:Ljava/lang/String;
 
@@ -84,12 +94,12 @@
 
 .field private final requiresEmail:Ljava/lang/Boolean;
 
-.field private final schedulers:Lzre;
+.field private final schedulers:LlJe;
 
-.field private final snapUserStore:Lbke;
+.field private final snapUserStore:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
@@ -104,7 +114,7 @@
     .end annotation
 .end field
 
-.field private final subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+.field private final subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
 
 # direct methods
@@ -112,7 +122,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LNx3;
+    new-instance v0, LcB3;
 
     .line 2
     .line 3
@@ -121,35 +131,37 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->Companion:LNx3;
+    sput-object v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->Companion:LcB3;
 
     .line 7
     .line 8
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;LC0e;LA0e;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/plus/SubscriptionTier;Ljava/lang/String;Lbke;Lbke;Ljava/lang/Boolean;LT97;Lbke;Lbke;Lbke;Lbke;Lzre;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Laie;LYhe;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/modules/plus_api/SubscriptionTier;Ljava/lang/String;LDBe;LDBe;Ljava/lang/Boolean;LBe7;Ljava/lang/Double;LDBe;LDBe;LDBe;LDBe;LlJe;LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LC0e;",
-            "LA0e;",
-            "Laqe;",
+            "Laie;",
+            "LYhe;",
+            "LNHe;",
             "Lio/reactivex/rxjava3/disposables/CompositeDisposable;",
-            "Lcom/snap/plus/SubscriptionTier;",
+            "Lcom/snap/modules/plus_api/SubscriptionTier;",
             "Ljava/lang/String;",
-            "Lbke;",
-            "Lbke;",
+            "LDBe;",
+            "LDBe;",
             "Ljava/lang/Boolean;",
-            "LT97;",
-            "Lbke;",
-            "Lbke;",
-            "Lbke;",
-            "Lbke;",
-            "Lzre;",
+            "LBe7;",
+            "Ljava/lang/Double;",
+            "LDBe;",
+            "LDBe;",
+            "LDBe;",
+            "LDBe;",
+            "LlJe;",
+            "LDBe;",
             ")V"
         }
     .end annotation
@@ -168,15 +180,15 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iput-object p3, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iput-object p4, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 11
     .line 12
-    iput-object p5, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iput-object p5, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
     .line 13
     .line 14
@@ -184,7 +196,7 @@
 
     .line 15
     .line 16
-    iput-object p7, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iput-object p7, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 17
     .line 18
@@ -192,11 +204,11 @@
 
     .line 19
     .line 20
-    iput-object p9, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iput-object p9, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
     .line 21
     .line 22
-    iput-object p10, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iput-object p10, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
     .line 23
     .line 24
@@ -204,19 +216,19 @@
 
     .line 25
     .line 26
-    iput-object p12, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    iput-object p12, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
     .line 27
     .line 28
-    iput-object p13, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iput-object p13, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
 
     .line 29
     .line 30
-    iput-object p14, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iput-object p14, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
     .line 31
     .line 32
-    iput-object p15, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iput-object p15, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
     .line 33
     .line 34
@@ -224,7 +236,7 @@
 
     .line 35
     .line 36
-    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
     .line 37
     .line 38
@@ -232,111 +244,127 @@
 
     .line 39
     .line 40
-    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
     .line 41
     .line 42
-    sget-object p1, LRLg;->Z:LRLg;
+    move-object/from16 p1, p18
 
     .line 43
     .line 44
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
 
     .line 45
     .line 46
+    move-object/from16 p1, p19
+
     .line 47
-    const-string p1, "ComposerLocalProduct"
-
     .line 48
-    .line 49
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
 
+    .line 49
     .line 50
+    sget-object p1, LB7h;->Z:LB7h;
+
     .line 51
     .line 52
-    sget-object p1, Lrn0;->a:Lrn0;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 53
     .line 54
-    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->logger:Lrn0;
-
     .line 55
+    const-string p1, "ComposerLocalProduct"
+
     .line 56
+    .line 57
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 58
+    .line 59
+    .line 60
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 61
+    .line 62
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->logger:LJp0;
+
+    .line 63
+    .line 64
     if-eqz p12, :cond_0
 
-    .line 57
-    .line 58
+    .line 65
+    .line 66
     const/4 p1, 0x1
 
-    .line 59
+    .line 67
     goto :goto_0
 
-    .line 60
+    .line 68
     :cond_0
     const/4 p1, 0x0
 
-    .line 61
+    .line 69
     :goto_0
     iput-boolean p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->isFamilyPlan:Z
 
-    .line 62
-    .line 63
-    if-eqz p12, :cond_1
-
-    .line 64
-    .line 65
-    iget p1, p12, LT97;->b:I
-
-    .line 66
-    .line 67
-    int-to-double p1, p1
-
-    .line 68
-    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    .line 69
     .line 70
     .line 71
-    move-result-object p1
+    if-eqz p12, :cond_1
 
     .line 72
-    goto :goto_1
-
     .line 73
-    :cond_1
-    const/4 p1, 0x0
+    iget p1, p12, LBe7;->b:I
 
     .line 74
-    :goto_1
-    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMaxParticipants:Ljava/lang/Double;
-
     .line 75
+    int-to-double p1, p1
+
     .line 76
-    sget-object p1, Lcom/snap/plus_iap/ProductQueueState;->None:Lcom/snap/plus_iap/ProductQueueState;
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 77
     .line 78
-    new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 79
+    move-result-object p1
+
     .line 80
-    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+    goto :goto_1
 
     .line 81
+    :cond_1
+    const/4 p1, 0x0
+
     .line 82
+    :goto_1
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMaxParticipants:Ljava/lang/Double;
+
     .line 83
+    .line 84
+    sget-object p1, Lcom/snap/plus_iap/ProductQueueState;->None:Lcom/snap/plus_iap/ProductQueueState;
+
+    .line 85
+    .line 86
+    new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 87
+    .line 88
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
+    .line 89
+    .line 90
+    .line 91
     iput-object p2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->stateSubject:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 84
-    .line 85
+    .line 92
+    .line 93
     return-void
 .end method
 
-.method public static final synthetic access$getLogger$p(Lcom/snap/plus/lib/subscription/ComposerLocalProduct;)Lrn0;
+.method public static final synthetic access$getLogger$p(Lcom/snap/plus/lib/subscription/ComposerLocalProduct;)LJp0;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->logger:Lrn0;
+    iget-object p0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->logger:LJp0;
 
     .line 2
     .line 3
@@ -414,7 +442,7 @@
     return-object p0
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/plus/lib/subscription/ComposerLocalProduct;Ljava/lang/String;Ljava/lang/String;LC0e;LA0e;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/plus/SubscriptionTier;Ljava/lang/String;Lbke;Lbke;Ljava/lang/Boolean;LT97;Lbke;Lbke;Lbke;Lbke;Lzre;ILjava/lang/Object;)Lcom/snap/plus/lib/subscription/ComposerLocalProduct;
+.method public static synthetic copy$default(Lcom/snap/plus/lib/subscription/ComposerLocalProduct;Ljava/lang/String;Ljava/lang/String;Laie;LYhe;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/modules/plus_api/SubscriptionTier;Ljava/lang/String;LDBe;LDBe;Ljava/lang/Boolean;LBe7;Ljava/lang/Double;LDBe;LDBe;LDBe;LDBe;LlJe;LDBe;ILjava/lang/Object;)Lcom/snap/plus/lib/subscription/ComposerLocalProduct;
     .locals 17
 
     .line 1
@@ -422,7 +450,7 @@
 
     .line 2
     .line 3
-    move/from16 v1, p18
+    move/from16 v1, p20
 
     .line 4
     .line 5
@@ -476,7 +504,7 @@
 
     .line 26
     .line 27
-    iget-object v4, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iget-object v4, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
     .line 28
     .line 29
@@ -497,7 +525,7 @@
 
     .line 35
     .line 36
-    iget-object v5, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v5, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 37
     .line 38
@@ -518,7 +546,7 @@
 
     .line 44
     .line 45
-    iget-object v6, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v6, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
     .line 46
     .line 47
@@ -560,7 +588,7 @@
 
     .line 62
     .line 63
-    iget-object v8, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v8, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 64
     .line 65
@@ -602,7 +630,7 @@
 
     .line 80
     .line 81
-    iget-object v10, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iget-object v10, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
     .line 82
     .line 83
@@ -623,7 +651,7 @@
 
     .line 89
     .line 90
-    iget-object v11, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v11, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
     .line 91
     .line 92
@@ -665,7 +693,7 @@
 
     .line 107
     .line 108
-    iget-object v13, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    iget-object v13, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
     .line 109
     .line 110
@@ -686,7 +714,7 @@
 
     .line 116
     .line 117
-    iget-object v14, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iget-object v14, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
 
     .line 118
     .line 119
@@ -707,7 +735,7 @@
 
     .line 125
     .line 126
-    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
     .line 127
     .line 128
@@ -732,7 +760,7 @@
 
     .line 136
     .line 137
-    iget-object v2, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iget-object v2, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
     .line 138
     .line 139
@@ -758,7 +786,7 @@
 
     .line 148
     .line 149
-    iget-object v1, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iget-object v1, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
     .line 150
     .line 151
@@ -775,179 +803,185 @@
 
     .line 155
     .line 156
-    and-int v16, p18, v16
+    and-int v16, p20, v16
 
     .line 157
     .line 158
-    if-eqz v16, :cond_10
+    move-object/from16 p2, v1
 
     .line 159
     .line 160
-    move-object/from16 p2, v1
+    if-eqz v16, :cond_10
 
     .line 161
     .line 162
-    iget-object v1, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iget-object v1, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
     .line 163
     .line 164
-    move-object/from16 p17, p2
+    goto :goto_10
 
     .line 165
+    :cond_10
+    move-object/from16 v1, p17
+
     .line 166
-    move-object/from16 p18, v1
-
     .line 167
+    :goto_10
+    const/high16 v16, 0x20000
+
     .line 168
-    move-object/from16 p16, v2
-
     .line 169
+    and-int v16, p20, v16
+
     .line 170
-    move-object/from16 p3, v3
-
     .line 171
+    move-object/from16 p3, v1
+
     .line 172
-    move-object/from16 p4, v4
-
     .line 173
+    if-eqz v16, :cond_11
+
     .line 174
-    move-object/from16 p5, v5
-
     .line 175
-    .line 176
-    move-object/from16 p6, v6
+    iget-object v1, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
 
+    .line 176
     .line 177
+    goto :goto_11
+
     .line 178
-    move-object/from16 p7, v7
+    :cond_11
+    move-object/from16 v1, p18
 
     .line 179
     .line 180
-    move-object/from16 p8, v8
+    :goto_11
+    const/high16 v16, 0x40000
 
     .line 181
     .line 182
-    move-object/from16 p9, v9
+    and-int v16, p20, v16
 
     .line 183
     .line 184
-    move-object/from16 p10, v10
+    if-eqz v16, :cond_12
 
     .line 185
     .line 186
-    move-object/from16 p11, v11
+    move-object/from16 p4, v1
 
     .line 187
     .line 188
-    move-object/from16 p12, v12
+    iget-object v1, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
 
     .line 189
     .line 190
-    move-object/from16 p13, v13
+    move-object/from16 p19, p4
 
     .line 191
     .line 192
-    move-object/from16 p14, v14
+    move-object/from16 p20, v1
 
     .line 193
     .line 194
-    move-object/from16 p15, v15
+    :goto_12
+    move-object/from16 p17, p2
 
     .line 195
     .line 196
-    move-object/from16 p2, p1
+    move-object/from16 p18, p3
 
     .line 197
     .line 198
-    move-object/from16 p1, v0
+    move-object/from16 p16, v2
 
     .line 199
     .line 200
-    goto :goto_10
-
-    .line 201
-    :cond_10
-    move-object/from16 p18, p17
-
-    .line 202
-    .line 203
-    move-object/from16 p17, v1
-
-    .line 204
-    .line 205
-    move-object/from16 p2, p1
-
-    .line 206
-    .line 207
-    move-object/from16 p1, v0
-
-    .line 208
-    .line 209
-    move-object/from16 p16, v2
-
-    .line 210
-    .line 211
     move-object/from16 p3, v3
 
-    .line 212
-    .line 213
+    .line 201
+    .line 202
     move-object/from16 p4, v4
 
-    .line 214
-    .line 215
+    .line 203
+    .line 204
     move-object/from16 p5, v5
 
-    .line 216
-    .line 217
+    .line 205
+    .line 206
     move-object/from16 p6, v6
 
-    .line 218
-    .line 219
+    .line 207
+    .line 208
     move-object/from16 p7, v7
 
-    .line 220
-    .line 221
+    .line 209
+    .line 210
     move-object/from16 p8, v8
 
-    .line 222
-    .line 223
+    .line 211
+    .line 212
     move-object/from16 p9, v9
 
-    .line 224
-    .line 225
+    .line 213
+    .line 214
     move-object/from16 p10, v10
 
-    .line 226
-    .line 227
+    .line 215
+    .line 216
     move-object/from16 p11, v11
 
-    .line 228
-    .line 229
+    .line 217
+    .line 218
     move-object/from16 p12, v12
 
-    .line 230
-    .line 231
+    .line 219
+    .line 220
     move-object/from16 p13, v13
+
+    .line 221
+    .line 222
+    move-object/from16 p14, v14
+
+    .line 223
+    .line 224
+    move-object/from16 p15, v15
+
+    .line 225
+    .line 226
+    move-object/from16 p2, p1
+
+    .line 227
+    .line 228
+    move-object/from16 p1, v0
+
+    .line 229
+    .line 230
+    goto :goto_13
+
+    .line 231
+    :cond_12
+    move-object/from16 p20, p19
 
     .line 232
     .line 233
-    move-object/from16 p14, v14
+    move-object/from16 p19, v1
 
     .line 234
     .line 235
-    move-object/from16 p15, v15
+    goto :goto_12
 
     .line 236
-    .line 237
-    :goto_10
-    invoke-virtual/range {p1 .. p18}, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->copy(Ljava/lang/String;Ljava/lang/String;LC0e;LA0e;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/plus/SubscriptionTier;Ljava/lang/String;Lbke;Lbke;Ljava/lang/Boolean;LT97;Lbke;Lbke;Lbke;Lbke;Lzre;)Lcom/snap/plus/lib/subscription/ComposerLocalProduct;
+    :goto_13
+    invoke-virtual/range {p1 .. p20}, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->copy(Ljava/lang/String;Ljava/lang/String;Laie;LYhe;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/modules/plus_api/SubscriptionTier;Ljava/lang/String;LDBe;LDBe;Ljava/lang/Boolean;LBe7;Ljava/lang/Double;LDBe;LDBe;LDBe;LDBe;LlJe;LDBe;)Lcom/snap/plus/lib/subscription/ComposerLocalProduct;
 
+    .line 237
     .line 238
     .line 239
-    .line 240
     move-result-object v0
 
-    .line 241
+    .line 240
     return-object v0
 .end method
 
@@ -992,11 +1026,11 @@
 
     .line 13
     .line 14
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
     .line 15
     .line 16
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -1004,15 +1038,15 @@
     move-result-object v0
 
     .line 20
-    check-cast v0, LpC3;
+    check-cast v0, LOF3;
 
     .line 21
     .line 22
-    sget-object v1, LQAd;->m0:LQAd;
+    sget-object v1, LgSd;->q0:LgSd;
 
     .line 23
     .line 24
-    invoke-interface {v0, v1}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v0, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 25
     .line 26
@@ -1033,17 +1067,17 @@
         value = {
             "()",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lcom/snap/plus/PurchaseResult;",
+            "Lcom/snap/modules/plus_api/PurchaseResult;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1051,11 +1085,11 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LKw8;
+    check-cast v0, LsD8;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, LKw8;->a()LyJd;
+    invoke-virtual {v0}, LsD8;->a()LO0e;
 
     .line 10
     .line 11
@@ -1063,33 +1097,33 @@
     move-result-object v0
 
     .line 13
-    sget-object v1, LQAd;->X:LQAd;
+    sget-object v1, LgSd;->X:LgSd;
 
     .line 14
     .line 15
-    sget-object v2, LN7i;->a:LN7i;
+    sget-object v2, Lfwi;->a:Lfwi;
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1, v2}, LvJd;->g(LBI3;Ljava/lang/Enum;)V
+    invoke-virtual {v0, v1, v2}, LL0e;->g(LcM3;Ljava/lang/Enum;)V
 
     .line 18
     .line 19
     .line 20
-    sget-object v1, LQAd;->Y:LQAd;
+    sget-object v1, LgSd;->Y:LgSd;
 
     .line 21
     .line 22
-    sget-object v2, Lv7i;->b:Lv7i;
+    sget-object v2, LMvi;->b:LMvi;
 
     .line 23
     .line 24
-    invoke-virtual {v0, v1, v2}, LvJd;->g(LBI3;Ljava/lang/Enum;)V
+    invoke-virtual {v0, v1, v2}, LL0e;->g(LcM3;Ljava/lang/Enum;)V
 
     .line 25
     .line 26
     .line 27
-    invoke-virtual {v0}, LyJd;->n()Lio/reactivex/rxjava3/core/Completable;
+    invoke-virtual {v0}, LO0e;->n()Lio/reactivex/rxjava3/core/Completable;
 
     .line 28
     .line 29
@@ -1097,7 +1131,7 @@
     move-result-object v0
 
     .line 31
-    sget-object v1, Lcom/snap/plus/PurchaseResult;->Purchased:Lcom/snap/plus/PurchaseResult;
+    sget-object v1, Lcom/snap/modules/plus_api/PurchaseResult;->Purchased:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 32
     .line 33
@@ -1133,7 +1167,7 @@
         value = {
             "()",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lcom/snap/plus/PurchaseResult;",
+            "Lcom/snap/modules/plus_api/PurchaseResult;",
             ">;"
         }
     .end annotation
@@ -1147,15 +1181,15 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, LrG2;
+    new-instance v1, LCQ2;
 
     .line 6
     .line 7
-    const/16 v2, 0x1c
+    const/16 v2, 0x11
 
     .line 8
     .line 9
-    invoke-direct {v1, v2, p0}, LrG2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LCQ2;-><init>(ILjava/lang/Object;)V
 
     .line 10
     .line 11
@@ -1174,15 +1208,15 @@
     .line 18
     .line 19
     .line 20
-    new-instance v0, LVF2;
+    new-instance v0, LYk2;
 
     .line 21
     .line 22
-    const/16 v1, 0x19
+    const/16 v1, 0x1b
 
     .line 23
     .line 24
-    invoke-direct {v0, v1, p0}, LVF2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LYk2;-><init>(ILjava/lang/Object;)V
 
     .line 25
     .line 26
@@ -1196,15 +1230,15 @@
     .line 30
     .line 31
     .line 32
-    new-instance v0, LkK2;
+    new-instance v0, LXL2;
 
     .line 33
     .line 34
-    const/16 v2, 0x13
+    const/16 v2, 0x14
 
     .line 35
     .line 36
-    invoke-direct {v0, v2, p0}, LkK2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, p0}, LXL2;-><init>(ILjava/lang/Object;)V
 
     .line 37
     .line 38
@@ -1218,7 +1252,29 @@
     .line 42
     .line 43
     .line 44
-    return-object v2
+    new-instance v0, Lhl2;
+
+    .line 45
+    .line 46
+    const/16 v1, 0x18
+
+    .line 47
+    .line 48
+    invoke-direct {v0, v1, p0}, Lhl2;-><init>(ILjava/lang/Object;)V
+
+    .line 49
+    .line 50
+    .line 51
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 52
+    .line 53
+    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 54
+    .line 55
+    .line 56
+    return-object v1
 .end method
 
 .method private final syncAtlas()Lio/reactivex/rxjava3/core/Single;
@@ -1227,17 +1283,17 @@
         value = {
             "()",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lcom/snap/plus/PurchaseResult;",
+            "Lcom/snap/modules/plus_api/PurchaseResult;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1245,15 +1301,15 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LHLd;
+    check-cast v0, Lc3e;
 
     .line 8
     .line 9
-    sget-object v1, La95;->t0:La95;
+    sget-object v1, Lof5;->t0:Lof5;
 
     .line 10
     .line 11
-    invoke-static {v0, v1}, LIsk;->l(LHLd;La95;)Lio/reactivex/rxjava3/core/Completable;
+    invoke-static {v0, v1}, LJRk;->o(Lc3e;Lof5;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 12
     .line 13
@@ -1261,11 +1317,11 @@
     move-result-object v0
 
     .line 15
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
     .line 16
     .line 17
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -1273,11 +1329,11 @@
     move-result-object v1
 
     .line 21
-    check-cast v1, LXSg;
+    check-cast v1, LQeh;
 
     .line 22
     .line 23
-    invoke-interface {v1}, LXSg;->n()Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v1}, LQeh;->n()Lio/reactivex/rxjava3/core/Single;
 
     .line 24
     .line 25
@@ -1299,7 +1355,7 @@
     .line 33
     .line 34
     .line 35
-    sget-object v0, LfG2;->Z:LfG2;
+    sget-object v0, LIHi;->z0:LIHi;
 
     .line 36
     .line 37
@@ -1312,15 +1368,15 @@
     .line 40
     .line 41
     .line 42
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
 
     .line 43
     .line 44
-    check-cast v0, LBre;
+    check-cast v0, LnJe;
 
     .line 45
     .line 46
-    invoke-virtual {v0}, LBre;->d()LF06;
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 47
     .line 48
@@ -1334,7 +1390,7 @@
     const/4 v3, 0x3
 
     .line 52
-    invoke-static {v1, v0, v3, v2}, LCq9;->m2(Lio/reactivex/rxjava3/core/Single;LF06;II)Lio/reactivex/rxjava3/core/Single;
+    invoke-static {v1, v0, v3, v2}, LoXk;->i(Lio/reactivex/rxjava3/core/Single;LA36;II)Lio/reactivex/rxjava3/core/Single;
 
     .line 53
     .line 54
@@ -1342,11 +1398,11 @@
     move-result-object v0
 
     .line 56
-    sget-object v1, Lcom/snap/plus/PurchaseResult;->Purchased:Lcom/snap/plus/PurchaseResult;
+    sget-object v1, Lcom/snap/modules/plus_api/PurchaseResult;->Purchased:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 57
     .line 58
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Single;->s(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Single;->q(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;
 
     .line 59
     .line 60
@@ -1363,17 +1419,17 @@
         value = {
             "()",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lcom/snap/plus/PurchaseResult;",
+            "Lcom/snap/modules/plus_api/PurchaseResult;",
             ">;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1381,15 +1437,15 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LJ7i;
+    check-cast v0, Lbwi;
 
     .line 8
     .line 9
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 10
     .line 11
-    invoke-direct {p0, v1}, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->toSubscriptionEnum(Lcom/snap/plus/SubscriptionTier;)I
+    invoke-direct {p0, v1}, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->toSubscriptionEnum(Lcom/snap/modules/plus_api/SubscriptionTier;)I
 
     .line 12
     .line 13
@@ -1405,15 +1461,15 @@
     move-result v2
 
     .line 19
-    iget-object v3, v0, LJ7i;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+    iget-object v3, v0, Lbwi;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
     .line 20
     .line 21
-    new-instance v4, Lv3g;
+    new-instance v4, LMng;
 
     .line 22
     .line 23
-    invoke-direct {v4}, Lv3g;-><init>()V
+    invoke-direct {v4}, LMng;-><init>()V
 
     .line 24
     .line 25
@@ -1421,19 +1477,19 @@
     const/4 v5, 0x1
 
     .line 27
-    iput v5, v4, Lv3g;->c:I
+    iput v5, v4, LMng;->c:I
 
     .line 28
     .line 29
-    iget v5, v4, Lv3g;->a:I
+    iget v5, v4, LMng;->a:I
 
     .line 30
     .line 31
-    iput v1, v4, Lv3g;->b:I
+    iput v1, v4, LMng;->b:I
 
     .line 32
     .line 33
-    iput-boolean v2, v4, Lv3g;->X:Z
+    iput-boolean v2, v4, LMng;->X:Z
 
     .line 34
     .line 35
@@ -1441,7 +1497,7 @@
 
     .line 36
     .line 37
-    iput v1, v4, Lv3g;->a:I
+    iput v1, v4, LMng;->a:I
 
     .line 38
     .line 39
@@ -1479,11 +1535,11 @@
     move-result-wide v1
 
     .line 57
-    iput-wide v1, v4, Lv3g;->t:J
+    iput-wide v1, v4, LMng;->t:J
 
     .line 58
     .line 59
-    iget v1, v4, Lv3g;->a:I
+    iget v1, v4, LMng;->a:I
 
     .line 60
     .line 61
@@ -1491,19 +1547,19 @@
 
     .line 62
     .line 63
-    iput v1, v4, Lv3g;->a:I
+    iput v1, v4, LMng;->a:I
 
     .line 64
     .line 65
-    sget-object v1, LG7i;->f0:LG7i;
+    sget-object v1, LYvi;->f0:LYvi;
 
     .line 66
     .line 67
-    iget-object v0, v0, LJ7i;->a:Lon6;
+    iget-object v0, v0, Lbwi;->a:LmF7;
 
     .line 68
     .line 69
-    invoke-virtual {v0, v3, v4, v1}, Lon6;->F(Lio/reactivex/rxjava3/core/Single;Lo17;Lkotlin/jvm/functions/Function4;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    invoke-virtual {v0, v3, v4, v1}, LmF7;->m(Lio/reactivex/rxjava3/core/Single;Le57;Lkotlin/jvm/functions/Function4;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 70
     .line 71
@@ -1511,15 +1567,15 @@
     move-result-object v0
 
     .line 73
-    new-instance v1, LwJ2;
+    new-instance v1, LaJ2;
 
     .line 74
     .line 75
-    const/16 v2, 0x15
+    const/16 v2, 0x1b
 
     .line 76
     .line 77
-    invoke-direct {v1, v2, p0}, LwJ2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LaJ2;-><init>(ILjava/lang/Object;)V
 
     .line 78
     .line 79
@@ -1536,11 +1592,11 @@
     return-object v2
 .end method
 
-.method private final toSubscriptionEnum(Lcom/snap/plus/SubscriptionTier;)I
+.method private final toSubscriptionEnum(Lcom/snap/modules/plus_api/SubscriptionTier;)I
     .locals 1
 
     .line 1
-    sget-object v0, LOx3;->a:[I
+    sget-object v0, LdB3;->a:[I
 
     .line 2
     .line 3
@@ -1580,26 +1636,36 @@
     const/4 v0, 0x4
 
     .line 19
-    if-ne p1, v0, :cond_0
+    if-eq p1, v0, :cond_1
 
     .line 20
     .line 21
-    return v0
+    const/4 v0, 0x5
 
     .line 22
-    :cond_0
-    new-instance p1, LFzc;
+    if-ne p1, v0, :cond_0
 
     .line 23
     .line 24
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+    const/4 p1, 0x0
 
     .line 25
+    return p1
+
     .line 26
+    :cond_0
+    new-instance p1, LwOc;
+
     .line 27
+    .line 28
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 29
+    .line 30
+    .line 31
     throw p1
 
-    .line 28
+    .line 32
     :cond_1
     return v0
 .end method
@@ -1614,17 +1680,17 @@
     return-object v0
 .end method
 
-.method public final component10()Lbke;
+.method public final component10()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
     .line 2
     .line 3
@@ -1639,90 +1705,115 @@
     return-object v0
 .end method
 
-.method public final component12()LT97;
+.method public final component12()LBe7;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component13()Lbke;
+.method public final component13()Ljava/lang/Double;
+    .locals 1
+
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
+
+    return-object v0
+.end method
+
+.method public final component14()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component14()Lbke;
+.method public final component15()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component15()Lbke;
+.method public final component16()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component16()Lbke;
+.method public final component17()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component17()Lzre;
+.method public final component18()LlJe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final component19()LDBe;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "LDBe;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
 
     .line 2
     .line 3
@@ -1737,33 +1828,33 @@
     return-object v0
 .end method
 
-.method public final component3()LC0e;
+.method public final component3()Laie;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component4()LA0e;
+.method public final component4()LYhe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component5()Laqe;
+.method public final component5()LNHe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
     .line 2
     .line 3
@@ -1778,10 +1869,10 @@
     return-object v0
 .end method
 
-.method public final component7()Lcom/snap/plus/SubscriptionTier;
+.method public final component7()Lcom/snap/modules/plus_api/SubscriptionTier;
     .locals 1
 
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     return-object v0
 .end method
@@ -1794,45 +1885,47 @@
     return-object v0
 .end method
 
-.method public final component9()Lbke;
+.method public final component9()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final copy(Ljava/lang/String;Ljava/lang/String;LC0e;LA0e;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/plus/SubscriptionTier;Ljava/lang/String;Lbke;Lbke;Ljava/lang/Boolean;LT97;Lbke;Lbke;Lbke;Lbke;Lzre;)Lcom/snap/plus/lib/subscription/ComposerLocalProduct;
-    .locals 18
+.method public final copy(Ljava/lang/String;Ljava/lang/String;Laie;LYhe;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/modules/plus_api/SubscriptionTier;Ljava/lang/String;LDBe;LDBe;Ljava/lang/Boolean;LBe7;Ljava/lang/Double;LDBe;LDBe;LDBe;LDBe;LlJe;LDBe;)Lcom/snap/plus/lib/subscription/ComposerLocalProduct;
+    .locals 20
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LC0e;",
-            "LA0e;",
-            "Laqe;",
+            "Laie;",
+            "LYhe;",
+            "LNHe;",
             "Lio/reactivex/rxjava3/disposables/CompositeDisposable;",
-            "Lcom/snap/plus/SubscriptionTier;",
+            "Lcom/snap/modules/plus_api/SubscriptionTier;",
             "Ljava/lang/String;",
-            "Lbke;",
-            "Lbke;",
+            "LDBe;",
+            "LDBe;",
             "Ljava/lang/Boolean;",
-            "LT97;",
-            "Lbke;",
-            "Lbke;",
-            "Lbke;",
-            "Lbke;",
-            "Lzre;",
+            "LBe7;",
+            "Ljava/lang/Double;",
+            "LDBe;",
+            "LDBe;",
+            "LDBe;",
+            "LDBe;",
+            "LlJe;",
+            "LDBe;",
             ")",
             "Lcom/snap/plus/lib/subscription/ComposerLocalProduct;"
         }
@@ -1911,11 +2004,19 @@
 
     .line 36
     .line 37
-    invoke-direct/range {v0 .. v17}, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;-><init>(Ljava/lang/String;Ljava/lang/String;LC0e;LA0e;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/plus/SubscriptionTier;Ljava/lang/String;Lbke;Lbke;Ljava/lang/Boolean;LT97;Lbke;Lbke;Lbke;Lbke;Lzre;)V
+    move-object/from16 v18, p18
 
     .line 38
     .line 39
+    move-object/from16 v19, p19
+
     .line 40
+    .line 41
+    invoke-direct/range {v0 .. v19}, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;-><init>(Ljava/lang/String;Ljava/lang/String;Laie;LYhe;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lcom/snap/modules/plus_api/SubscriptionTier;Ljava/lang/String;LDBe;LDBe;Ljava/lang/Boolean;LBe7;Ljava/lang/Double;LDBe;LDBe;LDBe;LDBe;LlJe;LDBe;)V
+
+    .line 42
+    .line 43
+    .line 44
     return-object v0
 .end method
 
@@ -1944,7 +2045,7 @@
 
     iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->refId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1957,7 +2058,7 @@
 
     iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1966,11 +2067,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1979,11 +2080,11 @@
     return v2
 
     :cond_4
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -1992,11 +2093,11 @@
     return v2
 
     :cond_5
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2009,7 +2110,7 @@
 
     iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->compositeDisposable:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2018,9 +2119,9 @@
     return v2
 
     :cond_7
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     if-eq v1, v3, :cond_8
 
@@ -2031,7 +2132,7 @@
 
     iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->referralToken:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2040,11 +2141,11 @@
     return v2
 
     :cond_9
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2053,11 +2154,11 @@
     return v2
 
     :cond_a
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2070,7 +2171,7 @@
 
     iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->requiresEmail:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2079,11 +2180,11 @@
     return v2
 
     :cond_c
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2092,11 +2193,11 @@
     return v2
 
     :cond_d
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2105,11 +2206,11 @@
     return v2
 
     :cond_e
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2118,11 +2219,11 @@
     return v2
 
     :cond_f
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2131,11 +2232,11 @@
     return v2
 
     :cond_10
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -2144,20 +2245,57 @@
     return v2
 
     :cond_11
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
-    iget-object p1, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result p1
+    move-result v1
 
-    if-nez p1, :cond_12
+    if-nez v1, :cond_12
 
     return v2
 
     :cond_12
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
+
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
+
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_13
+
+    return v2
+
+    :cond_13
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
+
+    iget-object p1, p1, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
+
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_14
+
+    return v2
+
+    :cond_14
     return v0
+.end method
+
+.method public getAllowedMemoriesStorageGb()Ljava/lang/Double;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method
 
 .method public final getCompositeDisposable()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
@@ -2171,34 +2309,34 @@
     return-object v0
 .end method
 
-.method public final getConfigProvider()Lbke;
+.method public final getConfigProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getDataSyncerManager()Lbke;
+.method public final getDataSyncerManager()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
     .line 2
     .line 3
@@ -2209,11 +2347,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lyuk;->m(LA0e;)Lcom/snap/plus/ProductDiscount;
+    invoke-static {v0}, LnTk;->q(LYhe;)Lcom/snap/plus/ProductDiscount;
 
     .line 4
     .line 5
@@ -2235,79 +2373,79 @@
     return-object v0
 .end method
 
-.method public final getFamilyPlanMetadata()LT97;
+.method public final getFamilyPlanMetadata()LBe7;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getGraphene()Lbke;
+.method public final getGraphene()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getNetworkClient()Lbke;
+.method public final getNetworkClient()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getOfferDetail()LA0e;
+.method public final getOfferDetail()LYhe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public getPeriod()Lcom/snap/plus/SubscriptionPeriod;
+.method public getPeriod()Lcom/snap/modules/plus_api/SubscriptionPeriod;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 2
     .line 3
-    iget-object v0, v0, LA0e;->d:LMh1;
+    iget-object v0, v0, LYhe;->d:LuG2;
 
     .line 4
     .line 5
-    iget-object v0, v0, LMh1;->b:Ljava/util/ArrayList;
+    iget-object v0, v0, LuG2;->b:Ljava/util/ArrayList;
 
     .line 6
     .line 7
-    invoke-static {v0}, Lue3;->Q0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Llh3;->O3(Ljava/util/List;)Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -2315,15 +2453,15 @@
     move-result-object v0
 
     .line 11
-    check-cast v0, Lz0e;
+    check-cast v0, LXhe;
 
     .line 12
     .line 13
-    iget-object v0, v0, Lz0e;->c:Ljava/lang/String;
+    iget-object v0, v0, LXhe;->c:Ljava/lang/String;
 
     .line 14
     .line 15
-    invoke-static {v0}, Lyuk;->d(Ljava/lang/String;)Lcom/snap/plus/SubscriptionPeriod;
+    invoke-static {v0}, LnTk;->h(Ljava/lang/String;)Lcom/snap/modules/plus_api/SubscriptionPeriod;
 
     .line 16
     .line 17
@@ -2334,17 +2472,34 @@
     return-object v0
 .end method
 
-.method public final getPreferences()Lbke;
+.method public final getPlusSyncService()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getPreferences()LDBe;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "LDBe;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
     .line 2
     .line 3
@@ -2355,11 +2510,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lyuk;->n(LA0e;)Lcom/snap/plus_iap/ProductPrice;
+    invoke-static {v0}, LnTk;->r(LYhe;)Lcom/snap/plus_iap/ProductPrice;
 
     .line 4
     .line 5
@@ -2370,11 +2525,11 @@
     return-object v0
 .end method
 
-.method public final getProductDetails()LC0e;
+.method public final getProductDetails()Laie;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
     .line 2
     .line 3
@@ -2392,11 +2547,11 @@
     return-object v0
 .end method
 
-.method public final getPurchaseFlowDelegate()Laqe;
+.method public final getPurchaseFlowDelegate()LNHe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
     .line 2
     .line 3
@@ -2419,7 +2574,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lz9k;->h(Lio/reactivex/rxjava3/core/Observable;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    invoke-static {v0}, LOlg;->i(Lio/reactivex/rxjava3/core/Observable;)Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 4
     .line 5
@@ -2463,50 +2618,50 @@
     return-object v0
 .end method
 
-.method public final getSchedulers()Lzre;
+.method public final getSchedulers()LlJe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getSnapUserStore()Lbke;
+.method public final getSnapUserStore()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getSubscriptionTier()Lcom/snap/plus/SubscriptionTier;
+.method public final getSubscriptionTier()Lcom/snap/modules/plus_api/SubscriptionTier;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public getTier()Lcom/snap/plus/SubscriptionTier;
+.method public getTier()Lcom/snap/modules/plus_api/SubscriptionTier;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 2
     .line 3
@@ -2541,7 +2696,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 14
     .line 15
@@ -2549,15 +2704,15 @@
     move-result v0
 
     .line 17
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
     .line 18
     .line 19
-    iget-object v2, v2, LC0e;->a:Ljava/lang/String;
+    iget-object v2, v2, Laie;->a:Ljava/lang/String;
 
     .line 20
     .line 21
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 22
     .line 23
@@ -2565,7 +2720,7 @@
     move-result v0
 
     .line 25
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 26
     .line 27
@@ -2584,7 +2739,7 @@
 
     .line 33
     .line 34
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
     .line 35
     .line 36
@@ -2622,7 +2777,7 @@
 
     .line 51
     .line 52
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 53
     .line 54
@@ -2675,195 +2830,203 @@
 
     .line 74
     .line 75
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
     .line 76
     .line 77
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-static {v2, v0, v1}, Lf8d;->c(LDBe;II)I
 
     .line 78
     .line 79
     .line 80
-    move-result v2
-
-    .line 81
-    add-int/2addr v2, v0
-
-    .line 82
-    mul-int/lit8 v2, v2, 0x1f
-
-    .line 83
-    .line 84
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
-
-    .line 85
-    .line 86
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 87
-    .line 88
-    .line 89
     move-result v0
 
-    .line 90
-    add-int/2addr v0, v2
+    .line 81
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
-    .line 91
-    mul-int/lit8 v0, v0, 0x1f
+    .line 82
+    .line 83
+    invoke-static {v2, v0, v1}, Lf8d;->c(LDBe;II)I
 
-    .line 92
-    .line 93
+    .line 84
+    .line 85
+    .line 86
+    move-result v0
+
+    .line 87
     iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->requiresEmail:Ljava/lang/Boolean;
 
-    .line 94
-    .line 95
+    .line 88
+    .line 89
     if-nez v2, :cond_1
 
-    .line 96
-    .line 97
+    .line 90
+    .line 91
     const/4 v2, 0x0
 
-    .line 98
+    .line 92
     goto :goto_1
 
-    .line 99
+    .line 93
     :cond_1
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 100
-    .line 101
-    .line 102
+    .line 94
+    .line 95
+    .line 96
     move-result v2
 
-    .line 103
+    .line 97
     :goto_1
     add-int/2addr v0, v2
 
-    .line 104
+    .line 98
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 105
-    .line 106
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    .line 99
+    .line 100
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
-    .line 107
-    .line 108
+    .line 101
+    .line 102
     if-nez v2, :cond_2
 
-    .line 109
-    .line 110
+    .line 103
+    .line 104
+    const/4 v2, 0x0
+
+    .line 105
     goto :goto_2
 
-    .line 111
+    .line 106
     :cond_2
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    .line 112
-    .line 113
-    .line 114
-    move-result v3
+    .line 107
+    .line 108
+    .line 109
+    move-result v2
 
-    .line 115
+    .line 110
     :goto_2
-    add-int/2addr v0, v3
+    add-int/2addr v0, v2
 
-    .line 116
+    .line 111
     mul-int/lit8 v0, v0, 0x1f
 
+    .line 112
+    .line 113
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
+
+    .line 114
+    .line 115
+    if-nez v2, :cond_3
+
+    .line 116
     .line 117
+    goto :goto_3
+
     .line 118
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    :cond_3
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 119
     .line 120
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
     .line 121
+    move-result v3
+
     .line 122
+    :goto_3
+    add-int/2addr v0, v3
+
     .line 123
-    move-result v2
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 124
-    add-int/2addr v2, v0
-
     .line 125
-    mul-int/lit8 v2, v2, 0x1f
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
     .line 126
     .line 127
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    invoke-static {v2, v0, v1}, Lf8d;->c(LDBe;II)I
 
     .line 128
     .line 129
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
     .line 130
-    .line 131
-    .line 132
     move-result v0
 
+    .line 131
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
+
+    .line 132
     .line 133
-    add-int/2addr v0, v2
+    invoke-static {v2, v0, v1}, Lf8d;->c(LDBe;II)I
 
     .line 134
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 135
     .line 136
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    move-result v0
 
     .line 137
-    .line 138
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
+    .line 138
     .line 139
+    invoke-static {v2, v0, v1}, Lf8d;->c(LDBe;II)I
+
     .line 140
     .line 141
-    move-result v2
-
     .line 142
-    add-int/2addr v2, v0
+    move-result v0
 
     .line 143
-    mul-int/lit8 v2, v2, 0x1f
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
     .line 144
     .line 145
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    invoke-static {v2, v0, v1}, Lf8d;->c(LDBe;II)I
 
     .line 146
     .line 147
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
     .line 148
-    .line 149
-    .line 150
     move-result v0
 
+    .line 149
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
+
+    .line 150
     .line 151
-    add-int/2addr v0, v2
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 152
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 153
     .line 154
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    move-result v2
 
     .line 155
+    add-int/2addr v2, v0
+
     .line 156
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    mul-int/lit8 v2, v2, 0x1f
 
     .line 157
     .line 158
-    .line 159
-    move-result v1
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
 
+    .line 159
     .line 160
-    add-int/2addr v1, v0
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 161
-    return v1
+    .line 162
+    .line 163
+    move-result v0
+
+    .line 164
+    add-int/2addr v0, v2
+
+    .line 165
+    return v0
 .end method
 
 .method public isConsumable()Z
@@ -2888,6 +3051,36 @@
     return v0
 .end method
 
+.method public isStorage()Z
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->getRefId()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    const-string v2, "scplus-storage"
+
+    .line 7
+    .line 8
+    invoke-static {v0, v2, v1}, Lkti;->r0(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    return v0
+.end method
+
 .method public purchase(Lkotlin/jvm/functions/Function1;)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
@@ -2899,11 +3092,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -2911,15 +3104,15 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LpC3;
+    check-cast v0, LOF3;
 
     .line 8
     .line 9
-    sget-object v1, LQAd;->e0:LQAd;
+    sget-object v1, LgSd;->h0:LgSd;
 
     .line 10
     .line 11
-    invoke-interface {v0, v1}, LpC3;->j(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v0, v1}, LOF3;->j(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 12
     .line 13
@@ -2927,7 +3120,7 @@
     move-result-object v0
 
     .line 15
-    new-instance v1, LpG2;
+    new-instance v1, LXf2;
 
     .line 16
     .line 17
@@ -2935,7 +3128,7 @@
 
     .line 18
     .line 19
-    invoke-direct {v1, v2, p0}, LpG2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LXf2;-><init>(ILjava/lang/Object;)V
 
     .line 20
     .line 21
@@ -2949,28 +3142,28 @@
     .line 25
     .line 26
     .line 27
-    new-instance v0, LUh;
+    new-instance v0, LWi;
 
     .line 28
     .line 29
-    const/16 v1, 0x1c
+    const/16 v1, 0x1d
 
     .line 30
     .line 31
-    invoke-direct {v0, v1, p1}, LUh;-><init>(ILkotlin/jvm/functions/Function1;)V
+    invoke-direct {v0, v1, p1}, LWi;-><init>(ILkotlin/jvm/functions/Function1;)V
 
     .line 32
     .line 33
     .line 34
-    new-instance v1, LMX2;
+    new-instance v1, LOl3;
 
     .line 35
     .line 36
-    const/16 v3, 0xf
+    const/16 v3, 0xa
 
     .line 37
     .line 38
-    invoke-direct {v1, p0, v3, p1}, LMX2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, p0, v3, p1}, LOl3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 39
     .line 40
@@ -2991,7 +3184,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lpuk;->o(LKZd;Lcom/snap/composer/utils/ComposerMarshaller;)I
+    invoke-static {p0, p1}, LfTk;->f(Ljhe;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
     .line 2
     .line 3
@@ -3003,7 +3196,7 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 20
+    .locals 22
 
     .line 1
     move-object/from16 v0, p0
@@ -3018,15 +3211,15 @@
 
     .line 6
     .line 7
-    iget-object v3, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:LC0e;
+    iget-object v3, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->productDetails:Laie;
 
     .line 8
     .line 9
-    iget-object v4, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LA0e;
+    iget-object v4, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->offerDetail:LYhe;
 
     .line 10
     .line 11
-    iget-object v5, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v5, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->purchaseFlowDelegate:LNHe;
 
     .line 12
     .line 13
@@ -3034,7 +3227,7 @@
 
     .line 14
     .line 15
-    iget-object v7, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/plus/SubscriptionTier;
+    iget-object v7, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->subscriptionTier:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 16
     .line 17
@@ -3042,11 +3235,11 @@
 
     .line 18
     .line 19
-    iget-object v9, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:Lbke;
+    iget-object v9, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->graphene:LDBe;
 
     .line 20
     .line 21
-    iget-object v10, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:Lbke;
+    iget-object v10, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->configProvider:LDBe;
 
     .line 22
     .line 23
@@ -3054,19 +3247,19 @@
 
     .line 24
     .line 25
-    iget-object v12, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LT97;
+    iget-object v12, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->familyPlanMetadata:LBe7;
 
     .line 26
     .line 27
-    iget-object v13, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:Lbke;
+    iget-object v13, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->allowedMemoriesStorageGb:Ljava/lang/Double;
 
     .line 28
     .line 29
-    iget-object v14, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:Lbke;
+    iget-object v14, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->networkClient:LDBe;
 
     .line 30
     .line 31
-    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:Lbke;
+    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->preferences:LDBe;
 
     .line 32
     .line 33
@@ -3074,7 +3267,7 @@
 
     .line 34
     .line 35
-    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:Lbke;
+    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->dataSyncerManager:LDBe;
 
     .line 36
     .line 37
@@ -3082,58 +3275,60 @@
 
     .line 38
     .line 39
-    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:Lzre;
+    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->snapUserStore:LDBe;
 
     .line 40
     .line 41
-    const-string v0, "ComposerLocalProduct(refId="
+    move-object/from16 v18, v15
 
     .line 42
     .line 43
-    move-object/from16 v18, v15
+    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->schedulers:LlJe;
 
     .line 44
     .line 45
-    const-string v15, ", productId="
+    move-object/from16 v19, v15
 
     .line 46
     .line 47
-    move-object/from16 v19, v14
+    iget-object v15, v0, Lcom/snap/plus/lib/subscription/ComposerLocalProduct;->plusSyncService:LDBe;
 
     .line 48
     .line 49
-    const-string v14, ", productDetails="
+    const-string v0, "ComposerLocalProduct(refId="
 
     .line 50
     .line 51
-    invoke-static {v0, v1, v15, v2, v14}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v20, v15
 
     .line 52
     .line 53
-    .line 54
-    move-result-object v0
+    const-string v15, ", productId="
 
+    .line 54
     .line 55
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-object/from16 v21, v14
 
     .line 56
     .line 57
+    const-string v14, ", productDetails="
+
     .line 58
-    const-string v1, ", offerDetail="
-
     .line 59
-    .line 60
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1, v15, v2, v14}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 60
     .line 61
     .line 62
+    move-result-object v0
+
     .line 63
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 64
     .line 65
     .line 66
-    const-string v1, ", purchaseFlowDelegate="
+    const-string v1, ", offerDetail="
 
     .line 67
     .line 68
@@ -3142,12 +3337,12 @@
     .line 69
     .line 70
     .line 71
-    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 72
     .line 73
     .line 74
-    const-string v1, ", compositeDisposable="
+    const-string v1, ", purchaseFlowDelegate="
 
     .line 75
     .line 76
@@ -3156,12 +3351,12 @@
     .line 77
     .line 78
     .line 79
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 80
     .line 81
     .line 82
-    const-string v1, ", subscriptionTier="
+    const-string v1, ", compositeDisposable="
 
     .line 83
     .line 84
@@ -3170,12 +3365,12 @@
     .line 85
     .line 86
     .line 87
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 88
     .line 89
     .line 90
-    const-string v1, ", referralToken="
+    const-string v1, ", subscriptionTier="
 
     .line 91
     .line 92
@@ -3184,12 +3379,12 @@
     .line 93
     .line 94
     .line 95
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 96
     .line 97
     .line 98
-    const-string v1, ", graphene="
+    const-string v1, ", referralToken="
 
     .line 99
     .line 100
@@ -3198,12 +3393,12 @@
     .line 101
     .line 102
     .line 103
-    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 104
     .line 105
     .line 106
-    const-string v1, ", configProvider="
+    const-string v1, ", graphene="
 
     .line 107
     .line 108
@@ -3212,12 +3407,12 @@
     .line 109
     .line 110
     .line 111
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 112
     .line 113
     .line 114
-    const-string v1, ", requiresEmail="
+    const-string v1, ", configProvider="
 
     .line 115
     .line 116
@@ -3226,12 +3421,12 @@
     .line 117
     .line 118
     .line 119
-    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 120
     .line 121
     .line 122
-    const-string v1, ", familyPlanMetadata="
+    const-string v1, ", requiresEmail="
 
     .line 123
     .line 124
@@ -3240,12 +3435,12 @@
     .line 125
     .line 126
     .line 127
-    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 128
     .line 129
     .line 130
-    const-string v1, ", networkClient="
+    const-string v1, ", familyPlanMetadata="
 
     .line 131
     .line 132
@@ -3254,12 +3449,12 @@
     .line 133
     .line 134
     .line 135
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 136
     .line 137
     .line 138
-    const-string v1, ", preferences="
+    const-string v1, ", allowedMemoriesStorageGb="
 
     .line 139
     .line 140
@@ -3268,85 +3463,135 @@
     .line 141
     .line 142
     .line 143
-    move-object/from16 v1, v19
+    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 144
     .line 145
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 146
+    const-string v1, ", networkClient="
+
     .line 147
     .line 148
-    const-string v1, ", dataSyncerManager="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 149
     .line 150
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 151
+    move-object/from16 v1, v21
+
     .line 152
     .line 153
-    move-object/from16 v1, v16
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 154
     .line 155
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 156
+    const-string v1, ", preferences="
+
     .line 157
     .line 158
-    const-string v1, ", snapUserStore="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 159
     .line 160
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 161
+    move-object/from16 v1, v16
+
     .line 162
     .line 163
-    move-object/from16 v1, v17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 164
     .line 165
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 166
+    const-string v1, ", dataSyncerManager="
+
     .line 167
     .line 168
-    const-string v1, ", schedulers="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 169
     .line 170
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 171
+    move-object/from16 v1, v17
+
     .line 172
     .line 173
-    move-object/from16 v1, v18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 174
     .line 175
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 176
+    const-string v1, ", snapUserStore="
+
     .line 177
     .line 178
-    const-string v1, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 179
     .line 180
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 181
+    move-object/from16 v1, v18
+
     .line 182
     .line 183
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 184
     .line 185
     .line 186
-    move-result-object v0
+    const-string v1, ", schedulers="
 
     .line 187
+    .line 188
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 189
+    .line 190
+    .line 191
+    move-object/from16 v1, v19
+
+    .line 192
+    .line 193
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 194
+    .line 195
+    .line 196
+    const-string v1, ", plusSyncService="
+
+    .line 197
+    .line 198
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 199
+    .line 200
+    .line 201
+    move-object/from16 v1, v20
+
+    .line 202
+    .line 203
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 204
+    .line 205
+    .line 206
+    const-string v1, ")"
+
+    .line 207
+    .line 208
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 209
+    .line 210
+    .line 211
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 212
+    .line 213
+    .line 214
+    move-result-object v0
+
+    .line 215
     return-object v0
 .end method

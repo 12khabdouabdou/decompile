@@ -1,180 +1,100 @@
-.class public final enum LMBh;
-.super Ljava/lang/Enum;
+.class public final LMBh;
+.super Lrp0;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LMBh;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
 
 
 # static fields
-.field public static final enum b:LMBh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "STICKER_PICKER"
-    .end annotation
-.end field
-
-.field public static final enum c:LMBh;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "FILTER_MENU"
-    .end annotation
-.end field
-
-.field public static final synthetic t:[LMBh;
-
-
-# instance fields
-.field public final a:I
+.field public static final Z:LMBh;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 12
 
     .line 1
-    new-instance v0, LMBh;
+    new-instance v1, LMBh;
 
     .line 2
     .line 3
-    const-string v1, "STICKER_PICKER"
+    sget-object v0, LNH9;->i1:LNH9;
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, LMBh;-><init>(Ljava/lang/String;II)V
+    const/16 v3, 0x1c
 
     .line 7
     .line 8
+    const-string v4, "SponsoredAr"
+
     .line 9
-    sput-object v0, LMBh;->b:LMBh;
-
     .line 10
-    .line 11
-    new-instance v1, LMBh;
+    invoke-direct {v1, v4, v0, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
 
+    .line 11
     .line 12
     .line 13
-    const-string v3, "FILTER_MENU"
+    sput-object v1, LMBh;->Z:LMBh;
 
     .line 14
     .line 15
-    const/4 v4, 0x1
+    new-instance v0, LL4b;
 
     .line 16
-    invoke-direct {v1, v3, v4, v4}, LMBh;-><init>(Ljava/lang/String;II)V
-
     .line 17
+    const/4 v9, 0x0
+
     .line 18
+    const/4 v10, 0x0
+
     .line 19
-    sput-object v1, LMBh;->c:LMBh;
+    const-string v2, "TrayBrowserExperiencePage"
 
     .line 20
     .line 21
-    const/4 v3, 0x2
+    const/4 v3, 0x0
 
     .line 22
-    new-array v3, v3, [LMBh;
+    const/4 v4, 0x0
 
     .line 23
+    const/4 v5, 0x1
+
     .line 24
-    aput-object v0, v3, v2
+    const/4 v6, 0x0
 
     .line 25
+    const/4 v7, 0x0
+
     .line 26
-    aput-object v1, v3, v4
+    const/4 v8, 0x0
 
     .line 27
+    const/16 v11, 0x7fec
+
     .line 28
-    sput-object v3, LMBh;->t:[LMBh;
-
     .line 29
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 30
+    .line 31
+    .line 32
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 33
+    .line 34
+    iput-object v1, v0, LL4b;->j0:Ljava/lang/Boolean;
+
+    .line 35
+    .line 36
+    const/4 v1, 0x1
+
+    .line 37
+    iput-boolean v1, v0, LL4b;->i0:Z
+
+    .line 38
+    .line 39
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LMBh;->a:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LMBh;
-    .locals 1
-
-    .line 1
-    const-class v0, LMBh;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LMBh;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LMBh;
-    .locals 1
-
-    .line 1
-    sget-object v0, LMBh;->t:[LMBh;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LMBh;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LMBh;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LMBh;->a:I
-
-    .line 2
-    .line 3
-    return v0
 .end method

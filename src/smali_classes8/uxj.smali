@@ -1,78 +1,86 @@
-.class public final Luxj;
-.super Lvxj;
+.class public abstract Luxj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Luxj;
+.field public static final a:Ljava/lang/String;
+
+.field public static final b:Ljava/lang/String;
+
+.field public static final c:J
+
+.field public static final d:J
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 3
 
     .line 1
-    new-instance v0, Luxj;
+    sget-object v0, Lrdh;->c:Lrdh;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "https://auth.snapchat.com/snap_token/api/gtq-unlockables"
 
     .line 4
     .line 5
+    sput-object v0, Luxj;->a:Ljava/lang/String;
+
     .line 6
-    sput-object v0, Luxj;->a:Luxj;
-
     .line 7
+    sget-object v0, Lrdh;->c:Lrdh;
+
     .line 8
-    new-instance v1, Ldsd;
-
     .line 9
-    .line 10
-    const/4 v12, 0x0
+    const-string v0, "https://auth.snapchat.com/snap_token/api/api-gateway"
 
+    .line 10
     .line 11
-    const/4 v13, 0x0
+    sput-object v0, Luxj;->b:Ljava/lang/String;
 
     .line 12
-    const/4 v2, 0x0
-
     .line 13
-    const/4 v3, 0x0
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
     .line 14
-    const/4 v4, 0x0
-
     .line 15
-    const/4 v5, 0x0
+    const-wide/16 v1, 0x18
 
     .line 16
-    const/4 v6, 0x0
-
     .line 17
-    const/4 v7, 0x0
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     .line 18
-    const/4 v8, 0x0
-
     .line 19
-    const/4 v9, 0x0
-
     .line 20
-    const/4 v10, 0x0
+    move-result-wide v0
 
     .line 21
-    const/4 v11, 0x0
+    sput-wide v0, Luxj;->c:J
 
     .line 22
-    const/16 v14, 0x7fff
-
     .line 23
-    .line 24
-    invoke-direct/range {v1 .. v14}, Ldsd;-><init>(Lq0h;Ljava/lang/String;Lcom/snap/venueprofile/VenueProfileOpenSource;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/Double;Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;I)V
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
+    .line 24
     .line 25
+    const-wide/16 v1, 0x5
+
     .line 26
     .line 27
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-wide v0
+
+    .line 31
+    sput-wide v0, Luxj;->d:J
+
+    .line 32
+    .line 33
     return-void
 .end method

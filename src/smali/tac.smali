@@ -1,0 +1,186 @@
+.class public final Ltac;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/disposables/Disposable;
+
+
+# instance fields
+.field public final a:Lnbd;
+
+.field public final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public volatile c:LUhd;
+
+.field public final t:Lio/reactivex/rxjava3/disposables/Disposable;
+
+
+# direct methods
+.method public constructor <init>(LE10;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lnbd;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Lnbd;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, Ltac;->a:Lnbd;
+
+    .line 10
+    .line 11
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object v0, p0, Ltac;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 18
+    .line 19
+    sget-object v0, LUhd;->r0:LUhd;
+
+    .line 20
+    .line 21
+    iput-object v0, p0, Ltac;->c:LUhd;
+
+    .line 22
+    .line 23
+    sget-object v0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->a:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
+
+    .line 24
+    .line 25
+    iput-object v0, p0, Ltac;->t:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 26
+    .line 27
+    invoke-virtual {p1}, LE10;->a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p1
+
+    .line 31
+    new-instance v0, LXD5;
+
+    .line 32
+    .line 33
+    const/16 v1, 0x1b
+
+    .line 34
+    .line 35
+    invoke-direct {v0, v1, p0}, LXD5;-><init>(ILjava/lang/Object;)V
+
+    .line 36
+    .line 37
+    .line 38
+    sget-object v1, Liia;->X:Liia;
+
+    .line 39
+    .line 40
+    invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object p1
+
+    .line 44
+    iput-object p1, p0, Ltac;->t:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 45
+    .line 46
+    invoke-virtual {p2, p0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 47
+    .line 48
+    .line 49
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ltac;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final dispose()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Ltac;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    const/4 v2, 0x1
+
+    .line 5
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    iget-object v0, p0, Ltac;->a:Lnbd;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Lnbd;->dispose()V
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object v0, p0, Ltac;->t:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 17
+    .line 18
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 19
+    .line 20
+    .line 21
+    :cond_0
+    return-void
+.end method

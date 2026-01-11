@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LiU8;
+    proxyClass = LJ19;
     schema = "\'updateMetadata\':f|m|(r:\'[0]\'),\'updatePageWorkflowData\':f|m|(m<s,u>),\'getPageLogger\':f|m|(r:\'[0]\'): r:\'[1]\',\'getPageWorkflowSessionId\':f|m|(): s"
     typeReferences = {
         Lcom/snap/modules/business/IBusinessMetadata;,

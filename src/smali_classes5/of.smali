@@ -1,3 +1,3 @@
-.class public abstract Lof;
+.class public final Lof;
 .super Ljava/lang/Object;
 .source "SourceFile"

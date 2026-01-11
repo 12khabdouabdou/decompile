@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LXFi;",
-        "LSFi;",
+        "LI5j;",
+        "LD5j;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LWFi;
+.field public static final Companion:LH5j;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LWFi;
+    new-instance v0, LH5j;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/camera/shortcut/ToastView;->Companion:LWFi;
+    sput-object v0, Lcom/snap/modules/camera/shortcut/ToastView;->Companion:LH5j;
 
     .line 7
     .line 8
@@ -62,32 +62,15 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/camera/shortcut/ToastView;
-    .locals 1
-
-    sget-object v0, Lcom/snap/modules/camera/shortcut/ToastView;->Companion:LWFi;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {p0, v0, v0, p1, v0}, LWFi;->a(LqZ8;LXFi;LSFi;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/camera/shortcut/ToastView;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;LXFi;LSFi;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/camera/shortcut/ToastView;
+.method public static final create(LZ69;LI5j;LD5j;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/camera/shortcut/ToastView;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LXFi;",
-            "LSFi;",
-            "LTB3;",
+            "LZ69;",
+            "LI5j;",
+            "LD5j;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/modules/camera/shortcut/ToastView;"
@@ -95,11 +78,28 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/modules/camera/shortcut/ToastView;->Companion:LWFi;
+    sget-object v0, Lcom/snap/modules/camera/shortcut/ToastView;->Companion:LH5j;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2, p3, p4}, LWFi;->a(LqZ8;LXFi;LSFi;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/camera/shortcut/ToastView;
+    invoke-static {p0, p1, p2, p3, p4}, LH5j;->a(LZ69;LI5j;LD5j;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/camera/shortcut/ToastView;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/camera/shortcut/ToastView;
+    .locals 1
+
+    sget-object v0, Lcom/snap/modules/camera/shortcut/ToastView;->Companion:LH5j;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, LH5j;->a(LZ69;LI5j;LD5j;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/camera/shortcut/ToastView;
 
     move-result-object p0
 

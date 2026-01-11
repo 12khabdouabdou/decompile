@@ -73,7 +73,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0, v1}, LKsk;->s(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->n(Ljava/nio/ByteBuffer;I)V
 
     .line 17
     .line 18
@@ -82,7 +82,7 @@
 
     .line 20
     .line 21
-    invoke-static {v0, v1}, LKsk;->r(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->m(Ljava/nio/ByteBuffer;I)V
 
     .line 22
     .line 23
@@ -237,7 +237,7 @@
     return v0
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -258,7 +258,7 @@
     move-result-object p2
 
     .line 7
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 8
     .line 9
@@ -268,7 +268,7 @@
     .line 11
     .line 12
     .line 13
-    sget-object v0, Lkt9;->a:LQn9;
+    sget-object v0, LnC9;->a:LTw9;
 
     .line 14
     .line 15
@@ -280,7 +280,7 @@
     move-result v0
 
     .line 19
-    invoke-static {v0}, Lkt9;->a(B)I
+    invoke-static {v0}, LnC9;->a(B)I
 
     .line 20
     .line 21
@@ -292,7 +292,7 @@
 
     .line 24
     .line 25
-    invoke-static {p2}, Lkt9;->j(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->j(Ljava/nio/ByteBuffer;)I
 
     .line 26
     .line 27
@@ -311,7 +311,7 @@
     sub-long/2addr p3, v0
 
     .line 34
-    invoke-virtual {p0, p1, p3, p4, p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->initContainer(LI85;JLwy1;)V
+    invoke-virtual {p0, p1, p3, p4, p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->initContainer(LVe5;JLKB1;)V
 
     .line 35
     .line 36

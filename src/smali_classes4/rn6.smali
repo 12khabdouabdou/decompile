@@ -1,164 +1,97 @@
 .class public final Lrn6;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lsn6;
-
-.field public final synthetic c:Ljpe;
-
-.field public final synthetic t:I
+# static fields
+.field public static final Z:Lrn6;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lsn6;Ljpe;II)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 12
 
     .line 1
-    iput p4, p0, Lrn6;->a:I
-
-    iput-object p1, p0, Lrn6;->b:Lsn6;
-
-    iput-object p2, p0, Lrn6;->c:Ljpe;
-
-    iput p3, p0, Lrn6;->t:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lrn6;->a:I
+    new-instance v1, Lrn6;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    sget-object v0, LNH9;->V0:LNH9;
 
     .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    check-cast p1, Ljava/util/List;
+    const/16 v3, 0x1c
 
     .line 7
     .line 8
-    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+    const-string v4, "DiscoverPlayback"
 
     .line 9
     .line 10
+    invoke-direct {v1, v4, v0, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
+
     .line 11
-    move-result p1
-
     .line 12
-    if-eqz p1, :cond_0
-
     .line 13
+    sput-object v1, Lrn6;->Z:Lrn6;
+
     .line 14
-    iget-object p1, p0, Lrn6;->b:Lsn6;
-
     .line 15
-    .line 16
-    iget-object p1, p1, Lsn6;->c:LBKd;
+    new-instance v0, LL4b;
 
+    .line 16
     .line 17
+    const/4 v9, 0x0
+
     .line 18
-    iget-object v0, p0, Lrn6;->c:Ljpe;
+    const/4 v10, 0x0
 
     .line 19
-    .line 20
-    iget-object v0, v0, Ljpe;->b:LLXb;
+    const-string v2, "DiscoverPlayback"
 
+    .line 20
     .line 21
+    const/4 v3, 0x0
+
     .line 22
-    iget-object v0, v0, LLXb;->y:Lz63;
+    const/4 v4, 0x1
 
     .line 23
+    const/4 v5, 0x0
+
     .line 24
-    iget v1, p0, Lrn6;->t:I
+    const/4 v6, 0x0
 
     .line 25
+    const/4 v7, 0x0
+
     .line 26
-    const/4 v2, 0x2
+    const/4 v8, 0x0
 
     .line 27
-    invoke-virtual {p1, v2, v0, v1}, LBKd;->b(ILz63;I)V
+    const/16 v11, 0x7ff4
 
     .line 28
     .line 29
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 30
-    :cond_0
-    return-void
-
     .line 31
-    :pswitch_0
-    check-cast p1, Ljava/util/List;
-
     .line 32
+    sget-object v1, Luld;->Q:LtOc;
+
     .line 33
-    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
-
     .line 34
+    const/4 v2, 0x0
+
     .line 35
+    invoke-static {v1, v0, v2}, LJea;->h(Luld;LL4b;Z)LxFc;
+
     .line 36
-    move-result p1
-
     .line 37
-    if-eqz p1, :cond_1
-
     .line 38
-    .line 39
-    iget-object p1, p0, Lrn6;->b:Lsn6;
-
-    .line 40
-    .line 41
-    iget-object p1, p1, Lsn6;->c:LBKd;
-
-    .line 42
-    .line 43
-    iget-object v0, p0, Lrn6;->c:Ljpe;
-
-    .line 44
-    .line 45
-    iget-object v0, v0, Ljpe;->b:LLXb;
-
-    .line 46
-    .line 47
-    iget-object v0, v0, LLXb;->y:Lz63;
-
-    .line 48
-    .line 49
-    iget v1, p0, Lrn6;->t:I
-
-    .line 50
-    .line 51
-    const/4 v2, 0x2
-
-    .line 52
-    invoke-virtual {p1, v2, v0, v1}, LBKd;->b(ILz63;I)V
-
-    .line 53
-    .line 54
-    .line 55
-    :cond_1
     return-void
-
-    .line 56
-    nop
-
-    .line 57
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

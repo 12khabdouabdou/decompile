@@ -1,151 +1,62 @@
-.class public final enum Lrme;
-.super Ljava/lang/Enum;
+.class public final Lrme;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum a:Lrme;
+# instance fields
+.field public final a:LbY5;
 
-.field public static final enum b:Lrme;
+.field public final b:LQ17;
 
-.field public static final enum c:Lrme;
-
-.field public static final synthetic t:[Lrme;
+.field public final c:LnJe;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(LbY5;LQ17;LyPf;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
-
     .line 4
-    new-instance v3, Lrme;
+    iput-object p1, p0, Lrme;->a:LbY5;
 
     .line 5
     .line 6
-    const-string v4, "UNKNOWN"
+    iput-object p2, p0, Lrme;->b:LQ17;
 
     .line 7
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sget-object p1, Lqbb;->Z:Lqbb;
 
     .line 9
     .line 10
+    check-cast p3, LTT5;
+
     .line 11
-    sput-object v3, Lrme;->a:Lrme;
-
     .line 12
-    .line 13
-    new-instance v4, Lrme;
+    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 13
     .line 14
     .line 15
-    const-string v5, "OPTED_IN"
+    const-string p2, "ProfileExploreStatusSyncer"
 
     .line 16
     .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-static {p1, p2}, LTT5;->b(Lrp0;Ljava/lang/String;)LnJe;
 
     .line 18
     .line 19
     .line 20
-    sput-object v4, Lrme;->b:Lrme;
+    move-result-object p1
 
     .line 21
+    iput-object p1, p0, Lrme;->c:LnJe;
+
     .line 22
-    new-instance v5, Lrme;
-
     .line 23
-    .line 24
-    const-string v6, "NOT_OPTED_IN"
-
-    .line 25
-    .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v5, Lrme;->c:Lrme;
-
-    .line 30
-    .line 31
-    const/4 v6, 0x3
-
-    .line 32
-    new-array v6, v6, [Lrme;
-
-    .line 33
-    .line 34
-    aput-object v3, v6, v2
-
-    .line 35
-    .line 36
-    aput-object v4, v6, v1
-
-    .line 37
-    .line 38
-    aput-object v5, v6, v0
-
-    .line 39
-    .line 40
-    sput-object v6, Lrme;->t:[Lrme;
-
-    .line 41
-    .line 42
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lrme;
-    .locals 1
-
-    .line 1
-    const-class v0, Lrme;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lrme;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lrme;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lrme;->t:[Lrme;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lrme;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

@@ -27,7 +27,7 @@
 
 .field public static final synthetic Y:[Lcom/snap/scan/core/SnapScanResult$Failure$Reason;
 
-.field public static final synthetic Z:LdQ6;
+.field public static final synthetic Z:LPT6;
 
 .field public static final enum a:Lcom/snap/scan/core/SnapScanResult$Failure$Reason;
 
@@ -195,16 +195,16 @@
 
     .line 56
     .line 57
-    new-instance v1, LdQ6;
+    new-instance v1, LPT6;
 
     .line 58
     .line 59
-    invoke-direct {v1, v0}, LdQ6;-><init>([Ljava/lang/Enum;)V
+    invoke-direct {v1, v0}, LPT6;-><init>([Ljava/lang/Enum;)V
 
     .line 60
     .line 61
     .line 62
-    sput-object v1, Lcom/snap/scan/core/SnapScanResult$Failure$Reason;->Z:LdQ6;
+    sput-object v1, Lcom/snap/scan/core/SnapScanResult$Failure$Reason;->Z:LPT6;
 
     .line 63
     .line 64
@@ -228,17 +228,17 @@
     return-void
 .end method
 
-.method public static getEntries()LcQ6;
+.method public static getEntries()LOT6;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "LcQ6;"
+            "LOT6;"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/scan/core/SnapScanResult$Failure$Reason;->Z:LdQ6;
+    sget-object v0, Lcom/snap/scan/core/SnapScanResult$Failure$Reason;->Z:LPT6;
 
     .line 2
     .line 3

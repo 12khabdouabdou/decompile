@@ -47,7 +47,7 @@
 
 
 # virtual methods
-.method public final a()Lp5;
+.method public final a()Lc6;
     .locals 3
 
     .line 1
@@ -94,14 +94,14 @@
 
     .line 21
     :cond_0
-    new-instance v0, Lp5;
+    new-instance v0, Lc6;
 
     .line 22
     .line 23
     const/4 v2, 0x0
 
     .line 24
-    invoke-direct {v0, v1, v2}, Lp5;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lc6;-><init>(Ljava/lang/String;I)V
 
     .line 25
     .line 26

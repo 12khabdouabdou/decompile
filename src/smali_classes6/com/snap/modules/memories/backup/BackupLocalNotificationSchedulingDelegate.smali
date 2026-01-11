@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LnG0;
+    proxyClass = LeJ0;
     schema = "\'scheduleLocalNotification\':f|m|(r:\'[0]\'): p<v>,\'removeBackupLocalNotifications\':f|m|()"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupLocalNotificationData;
@@ -31,7 +31,7 @@
             "Lcom/snap/modules/memories/backup/BackupLocalNotificationData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

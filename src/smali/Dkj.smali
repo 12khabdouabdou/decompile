@@ -1,195 +1,41 @@
-.class public final enum LDkj;
-.super Ljava/lang/Enum;
+.class public final LDkj;
+.super Landroid/widget/FrameLayout;
 .source "SourceFile"
 
-# interfaces
-.implements LcTb;
 
+# instance fields
+.field public final a:Landroid/view/View;
 
-# static fields
-.field public static final enum a:LDkj;
-
-.field public static final synthetic b:[LDkj;
+.field public final b:Landroid/view/View;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Landroid/content/Context;Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout$LayoutParams;Landroid/widget/FrameLayout$LayoutParams;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     .line 2
-    new-instance v1, LDkj;
-
     .line 3
     .line 4
-    const-string v2, "URL_PREVIEW_SERVICE_LOAD"
+    iput-object p2, p0, LDkj;->a:Landroid/view/View;
 
     .line 5
     .line 6
-    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p3, p0, LDkj;->b:Landroid/view/View;
 
     .line 7
     .line 8
-    .line 9
-    sput-object v1, LDkj;->a:LDkj;
+    invoke-virtual {p0, p2, p4}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
+    .line 9
     .line 10
     .line 11
-    const/4 v2, 0x1
+    invoke-virtual {p0, p3, p5}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 12
-    new-array v2, v2, [LDkj;
-
     .line 13
     .line 14
-    aput-object v1, v2, v0
-
-    .line 15
-    .line 16
-    sput-object v2, LDkj;->b:[LDkj;
-
-    .line 17
-    .line 18
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LDkj;
-    .locals 1
-
-    .line 1
-    const-class v0, LDkj;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LDkj;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LDkj;
-    .locals 1
-
-    .line 1
-    sget-object v0, LDkj;->b:[LDkj;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LDkj;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/String;Ljava/lang/String;)LqTb;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final b(Ljava/lang/String;Ljava/lang/Enum;)LqTb;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->W(LcTb;Ljava/lang/String;Ljava/lang/Enum;)LqTb;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final c()LqTb;
-    .locals 1
-
-    .line 1
-    new-instance v0, LqTb;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p0}, LqTb;-><init>(LcTb;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public final d(Ljava/lang/String;Z)LqTb;
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1, p2}, LDq9;->Y(LcTb;Ljava/lang/String;Z)LqTb;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final f()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lhcd;->G1:Lhcd;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Enum;->name()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
-.end method
-
-.method public final g()Lhcd;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lhcd;->G1:Lhcd;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

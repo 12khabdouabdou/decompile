@@ -1,248 +1,226 @@
 .class public final LlUf;
-.super LLWf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/modules/mdp/SDOMCapabilityManager;
 
-# virtual methods
-.method public final H()LoQf;
-    .locals 26
+
+# instance fields
+.field public final a:Lcom/snapchat/client/mediaengine_model/SnapDocPlaybackCapabilitiesManager;
+
+.field public final b:LAXg;
+
+.field public final c:LJp0;
+
+
+# direct methods
+.method public constructor <init>(Lcom/snapchat/client/mediaengine_model/SnapDocPlaybackCapabilitiesManager;LAXg;)V
+    .locals 0
 
     .line 1
-    move-object/from16 v0, p0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    new-instance v1, LlUf;
+    .line 4
+    iput-object p1, p0, LlUf;->a:Lcom/snapchat/client/mediaengine_model/SnapDocPlaybackCapabilitiesManager;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LlUf;->b:LAXg;
+
+    .line 7
+    .line 8
+    sget-object p1, LOEb;->Z:LOEb;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p1, "SdomCapabilityManagerImpl"
+
+    .line 14
+    .line 15
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 16
+    .line 17
+    .line 18
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 19
+    .line 20
+    iput-object p1, p0, LlUf;->c:LJp0;
+
+    .line 21
+    .line 22
+    return-void
+.end method
+
+
+# virtual methods
+.method public final calculateMediaEffectCapabilities(Lcom/snap/modules/mdp/NativeSnapDoc;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/snapchat/client/mediaengine_model/SnapDocWrapper;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Lcom/snap/modules/mdp/NativeSnapDoc;->a()[B
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LoQf;->getDisplayName()Ljava/lang/String;
+    .line 6
+    move-result-object p1
+
+    .line 7
+    invoke-direct {v0, p1}, Lcom/snapchat/client/mediaengine_model/SnapDocWrapper;-><init>([B)V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object p1, p0, LlUf;->a:Lcom/snapchat/client/mediaengine_model/SnapDocPlaybackCapabilitiesManager;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, v0}, Lcom/snapchat/client/mediaengine_model/SnapDocPlaybackCapabilitiesManager;->calculateMediaEffectCapabilities(Lcom/snapchat/client/mediaengine_model/SnapDocWrapper;)Lcom/snapchat/djinni/Outcome;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    new-instance v0, LhUf;
+
+    .line 17
+    .line 18
+    invoke-direct {v0, p2}, LhUf;-><init>(Lkotlin/jvm/functions/Function1;)V
+
+    .line 19
+    .line 20
+    .line 21
+    new-instance p2, LiUf;
+
+    .line 22
+    .line 23
+    invoke-direct {p2, p0, p3}, LiUf;-><init>(LlUf;Lkotlin/jvm/functions/Function1;)V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {p1, v0, p2}, Lcom/snapchat/djinni/Outcome;->match(Lcom/snapchat/djinni/Outcome$ResultHandler;Lcom/snapchat/djinni/Outcome$ErrorHandler;)Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+.end method
+
+.method public final isCompatibleWithClient(Lcom/snap/modules/mdp/NativeSnapDoc;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LlUf;->b:LAXg;
+
+    .line 2
+    .line 3
+    check-cast v0, LDXg;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, LDXg;->c()V
 
     .line 6
     .line 7
     .line 8
-    move-result-object v6
+    new-instance v0, Lcom/snapchat/client/mediaengine_model/SnapDocWrapper;
 
     .line 9
-    iget-boolean v2, v0, LoQf;->g0:Z
-
     .line 10
-    .line 11
-    xor-int/lit8 v10, v2, 0x1
+    invoke-virtual {p1}, Lcom/snap/modules/mdp/NativeSnapDoc;->a()[B
 
+    .line 11
     .line 12
     .line 13
-    invoke-virtual {v0}, LoQf;->z()Landroid/content/Context;
+    move-result-object p1
 
     .line 14
+    invoke-direct {v0, p1}, Lcom/snapchat/client/mediaengine_model/SnapDocWrapper;-><init>([B)V
+
     .line 15
     .line 16
-    move-result-object v18
-
     .line 17
-    iget-object v2, v0, LLWf;->C0:Ljava/lang/Boolean;
+    iget-object p1, p0, LlUf;->a:Lcom/snapchat/client/mediaengine_model/SnapDocPlaybackCapabilitiesManager;
 
     .line 18
     .line 19
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p1, v0}, Lcom/snapchat/client/mediaengine_model/SnapDocPlaybackCapabilitiesManager;->isPlaybackCapabilityCompatible(Lcom/snapchat/client/mediaengine_model/SnapDocWrapper;)Lcom/snapchat/djinni/Outcome;
 
     .line 20
     .line 21
     .line 22
-    sget-object v4, LuXf;->t:LuXf;
+    move-result-object p1
 
     .line 23
+    new-instance v0, LjUf;
+
     .line 24
-    iget-object v3, v0, LLWf;->A0:LeYf;
-
     .line 25
-    .line 26
-    iget-object v5, v0, LLWf;->B0:LKPh;
+    invoke-direct {v0, p2}, LjUf;-><init>(Lkotlin/jvm/functions/Function1;)V
 
+    .line 26
     .line 27
     .line 28
-    move-object/from16 v23, v2
+    new-instance p2, LkUf;
 
     .line 29
     .line 30
-    move-object/from16 v21, v3
+    invoke-direct {p2, p0, p3}, LkUf;-><init>(LlUf;Lkotlin/jvm/functions/Function1;)V
 
     .line 31
     .line 32
-    iget-wide v2, v0, LoQf;->X:J
-
     .line 33
-    .line 34
-    move-object/from16 v22, v5
+    invoke-virtual {p1, v0, p2}, Lcom/snapchat/djinni/Outcome;->match(Lcom/snapchat/djinni/Outcome$ResultHandler;Lcom/snapchat/djinni/Outcome$ErrorHandler;)Ljava/lang/Object;
 
+    .line 34
     .line 35
     .line 36
-    iget-object v5, v0, LoQf;->Z:Ljava/lang/String;
-
-    .line 37
-    .line 38
-    iget-object v7, v0, LLWf;->x0:LrOh;
-
-    .line 39
-    .line 40
-    iget-object v8, v0, LLWf;->y0:LI0i;
-
-    .line 41
-    .line 42
-    iget v11, v0, LoQf;->h0:I
-
-    .line 43
-    .line 44
-    iget v12, v0, LoQf;->j0:I
-
-    .line 45
-    .line 46
-    iget-object v13, v0, LLWf;->v0:Ljava/lang/String;
-
-    .line 47
-    .line 48
-    iget-object v14, v0, LoQf;->l0:Ljava/util/List;
-
-    .line 49
-    .line 50
-    iget-object v9, v0, LoQf;->i0:LdLf;
-
-    .line 51
-    .line 52
-    const/16 v17, 0x0
-
-    .line 53
-    .line 54
-    const/16 v19, 0x0
-
-    .line 55
-    .line 56
-    iget-object v15, v0, LLWf;->z0:LqRh;
-
-    .line 57
-    .line 58
-    move-object/from16 v24, v1
-
-    .line 59
-    .line 60
-    iget-object v1, v0, LLWf;->D0:LISh;
-
-    .line 61
-    .line 62
-    const/16 v25, 0x0
-
-    .line 63
-    .line 64
-    move-object/from16 v16, v24
-
-    .line 65
-    .line 66
-    move-object/from16 v24, v1
-
-    .line 67
-    .line 68
-    move-object/from16 v1, v16
-
-    .line 69
-    .line 70
-    move-object/from16 v16, v9
-
-    .line 71
-    .line 72
-    move-object/from16 v20, v15
-
-    .line 73
-    .line 74
-    const/4 v9, 0x0
-
-    .line 75
-    const/4 v15, 0x0
-
-    .line 76
-    invoke-direct/range {v1 .. v25}, LLWf;-><init>(JLuXf;Ljava/lang/String;Ljava/lang/String;LrOh;LI0i;Ljava/lang/String;ZIILjava/lang/String;Ljava/util/List;LOWf;LdLf;Ljava/lang/Integer;Landroid/content/Context;Ljava/lang/String;LqRh;LeYf;LKPh;Ljava/lang/Boolean;LISh;Ljava/lang/Integer;)V
-
-    .line 77
-    .line 78
-    .line 79
-    return-object v1
+    return-void
 .end method
 
-.method public final I()I
-    .locals 1
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final J()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LLWf;->w0:Ljava/lang/String;
+    sget-object v0, LcF3;->m:LbF3;
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-.method public final K()LI0i;
-    .locals 1
-
-    .line 1
-    sget-object v0, LI0i;->Y:LI0i;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final L()I
-    .locals 1
-
-    .line 1
-    const v0, 0x7f0806ab
-
-    .line 2
-    .line 3
     .line 4
-    return v0
-.end method
-
-.method public final v(LKu;)Z
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, LLWf;->v(LKu;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
     .line 7
-    instance-of p1, p1, LlUf;
-
     .line 8
+    const-class v1, Lcom/snap/modules/mdp/SDOMCapabilityManager;
+
     .line 9
-    if-eqz p1, :cond_0
-
     .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
     .line 11
-    const/4 p1, 0x1
-
     .line 12
-    return p1
-
     .line 13
-    :cond_0
-    const/4 p1, 0x0
+    move-result p1
 
     .line 14
     return p1

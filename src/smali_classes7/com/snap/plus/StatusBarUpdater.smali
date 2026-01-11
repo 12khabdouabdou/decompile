@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFwh;
+    proxyClass = LGUh;
     schema = "\'setStatusBarStyle\':f|m|(r<e>:\'[0]\', b)"
     typeReferences = {
         Lcom/snap/plus/StatusBarStyle;

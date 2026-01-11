@@ -2,125 +2,93 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+
 
 # instance fields
-.field public final a:[B
+.field public final synthetic a:I
 
-.field public final b:[Ljava/lang/String;
-
-.field public final c:Z
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:Z
+.field public final synthetic b:LiH7;
 
 
 # direct methods
-.method public constructor <init>([B[Ljava/lang/String;ZLjava/lang/String;Z)V
+.method public synthetic constructor <init>(LiH7;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LZsf;->a:I
+
+    iput-object p1, p0, LZsf;->b:LiH7;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LZsf;->a:[B
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LZsf;->b:[Ljava/lang/String;
-
-    .line 7
-    .line 8
-    iput-boolean p3, p0, LZsf;->c:Z
-
-    .line 9
-    .line 10
-    iput-object p4, p0, LZsf;->d:Ljava/lang/String;
-
-    .line 11
-    .line 12
-    iput-boolean p5, p0, LZsf;->e:Z
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LZsf;->a:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    if-eqz p1, :cond_1
-
     .line 6
-    .line 7
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, LZsf;->b:LiH7;
 
+    .line 7
     .line 8
+    iget-object v1, v0, LiH7;->Z:Ljava/lang/Object;
+
     .line 9
     .line 10
-    move-result-object v1
+    check-cast v1, LKKi;
 
     .line 11
-    goto :goto_0
-
     .line 12
-    :cond_1
-    const/4 v1, 0x0
+    if-eqz v1, :cond_1
 
     .line 13
-    :goto_0
-    const-class v2, LZsf;
-
     .line 14
-    .line 15
-    invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1}, LKKi;->l()V
 
+    .line 15
     .line 16
     .line 17
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->isRunning()Z
+
     .line 18
-    move-result v1
-
     .line 19
-    const/4 v2, 0x0
-
     .line 20
-    if-nez v1, :cond_2
+    move-result p1
 
     .line 21
-    .line 22
-    return v2
+    if-eqz p1, :cond_0
 
+    .line 22
     .line 23
-    :cond_2
-    check-cast p1, LZsf;
+    const/4 p1, 0x1
 
     .line 24
+    int-to-float p1, p1
+
     .line 25
-    iget-object v1, p0, LZsf;->a:[B
+    invoke-virtual {v0}, LiH7;->w()LrJf;
 
     .line 26
     .line 27
-    iget-object v3, p1, LZsf;->a:[B
-
     .line 28
+    move-result-object v1
+
     .line 29
-    invoke-static {v1, v3}, Ljava/util/Arrays;->equals([B[B)Z
+    invoke-virtual {v1}, LrJf;->getScaleY()F
 
     .line 30
     .line 31
@@ -128,306 +96,218 @@
     move-result v1
 
     .line 33
-    if-nez v1, :cond_3
+    sub-float/2addr p1, v1
 
     .line 34
+    invoke-static {v0, p1}, LiH7;->l(LiH7;F)V
+
     .line 35
-    return v2
-
     .line 36
-    :cond_3
-    iget-object v1, p0, LZsf;->b:[Ljava/lang/String;
-
     .line 37
+    :cond_0
+    return-void
+
     .line 38
-    iget-object v3, p1, LZsf;->b:[Ljava/lang/String;
+    :cond_1
+    const-string p1, "transitionListener"
 
     .line 39
     .line 40
-    invoke-static {v1, v3}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 41
     .line 42
     .line 43
-    move-result v1
+    const/4 p1, 0x0
 
     .line 44
-    if-nez v1, :cond_4
+    throw p1
 
     .line 45
-    .line 46
-    return v2
+    :pswitch_0
+    iget-object v0, p0, LZsf;->b:LiH7;
 
+    .line 46
     .line 47
-    :cond_4
-    iget-boolean v1, p0, LZsf;->c:Z
+    invoke-virtual {v0}, LiH7;->t()Landroid/view/View;
 
     .line 48
     .line 49
-    iget-boolean v3, p1, LZsf;->c:Z
-
     .line 50
+    move-result-object v0
+
     .line 51
-    if-eq v1, v3, :cond_5
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     .line 52
     .line 53
-    return v2
-
     .line 54
-    :cond_5
-    iget-object v1, p0, LZsf;->d:Ljava/lang/String;
+    move-result-object p1
 
     .line 55
+    check-cast p1, Ljava/lang/Integer;
+
     .line 56
-    iget-object v3, p1, LZsf;->d:Ljava/lang/String;
-
     .line 57
-    .line 58
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
+    .line 58
     .line 59
     .line 60
+    move-result p1
+
     .line 61
-    move-result v1
+    const/4 v1, 0x0
 
     .line 62
-    if-nez v1, :cond_6
+    invoke-static {p1, v1, v1, v1}, Landroid/graphics/Color;->argb(IIII)I
 
     .line 63
     .line 64
-    return v2
-
     .line 65
-    :cond_6
-    iget-boolean v1, p0, LZsf;->e:Z
+    move-result p1
 
     .line 66
-    .line 67
-    iget-boolean p1, p1, LZsf;->e:Z
+    invoke-virtual {v0, p1}, Landroid/view/View;->setBackgroundColor(I)V
 
+    .line 67
     .line 68
     .line 69
-    if-eq v1, p1, :cond_7
+    return-void
 
     .line 70
+    :pswitch_1
+    iget-object p1, p0, LZsf;->b:LiH7;
+
     .line 71
-    return v2
-
     .line 72
-    :cond_7
-    return v0
-.end method
+    iget-object p1, p1, LiH7;->Z:Ljava/lang/Object;
 
-.method public final hashCode()I
-    .locals 5
+    .line 73
+    .line 74
+    check-cast p1, LKKi;
 
-    .line 1
-    iget-object v0, p0, LZsf;->a:[B
+    .line 75
+    .line 76
+    if-eqz p1, :cond_2
 
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+    .line 77
+    .line 78
+    invoke-virtual {p1}, LKKi;->l()V
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 79
+    .line 80
+    .line 81
+    return-void
 
-    .line 7
-    const/16 v1, 0x1f
+    .line 82
+    :cond_2
+    const-string p1, "transitionListener"
 
-    .line 8
-    .line 9
-    mul-int/lit8 v0, v0, 0x1f
+    .line 83
+    .line 84
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 10
-    .line 11
-    iget-object v2, p0, LZsf;->b:[Ljava/lang/String;
+    .line 85
+    .line 86
+    .line 87
+    const/4 p1, 0x0
 
-    .line 12
-    .line 13
-    invoke-static {v2}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+    .line 88
+    throw p1
 
-    .line 14
-    .line 15
-    .line 16
-    move-result v2
+    .line 89
+    :pswitch_2
+    iget-object v0, p0, LZsf;->b:LiH7;
 
-    .line 17
-    add-int/2addr v0, v2
+    .line 90
+    .line 91
+    iget-object v1, v0, LiH7;->Z:Ljava/lang/Object;
 
-    .line 18
-    mul-int/lit8 v0, v0, 0x1f
+    .line 92
+    .line 93
+    check-cast v1, LKKi;
 
-    .line 19
-    .line 20
-    const/16 v2, 0x4d5
+    .line 94
+    .line 95
+    if-eqz v1, :cond_4
 
-    .line 21
-    .line 22
-    const/16 v3, 0x4cf
+    .line 96
+    .line 97
+    invoke-virtual {v1}, LKKi;->l()V
 
-    .line 23
-    .line 24
-    iget-boolean v4, p0, LZsf;->c:Z
+    .line 98
+    .line 99
+    .line 100
+    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->isRunning()Z
 
-    .line 25
-    .line 26
-    if-eqz v4, :cond_0
+    .line 101
+    .line 102
+    .line 103
+    move-result p1
 
-    .line 27
-    .line 28
-    const/16 v4, 0x4cf
+    .line 104
+    if-eqz p1, :cond_3
 
-    .line 29
-    .line 30
-    goto :goto_0
+    .line 105
+    .line 106
+    const/4 p1, 0x1
 
-    .line 31
-    :cond_0
-    const/16 v4, 0x4d5
+    .line 107
+    int-to-float p1, p1
 
-    .line 32
-    .line 33
-    :goto_0
-    add-int/2addr v0, v4
+    .line 108
+    invoke-virtual {v0}, LiH7;->w()LrJf;
 
-    .line 34
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 35
-    .line 36
-    iget-object v4, p0, LZsf;->d:Ljava/lang/String;
-
-    .line 37
-    .line 38
-    invoke-static {v0, v1, v4}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v0
-
-    .line 42
-    iget-boolean v1, p0, LZsf;->e:Z
-
-    .line 43
-    .line 44
-    if-eqz v1, :cond_1
-
-    .line 45
-    .line 46
-    const/16 v2, 0x4cf
-
-    .line 47
-    .line 48
-    :cond_1
-    add-int/2addr v0, v2
-
-    .line 49
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 5
-
-    .line 1
-    iget-object v0, p0, LZsf;->a:[B
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    iget-object v1, p0, LZsf;->b:[Ljava/lang/String;
-
-    .line 8
-    .line 9
-    invoke-static {v1}, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 10
-    .line 11
-    .line 12
+    .line 109
+    .line 110
+    .line 111
     move-result-object v1
 
-    .line 13
-    const-string v2, "ScanFromLensServiceRequest(image="
+    .line 112
+    invoke-virtual {v1}, LrJf;->getScaleY()F
 
-    .line 14
-    .line 15
-    const-string v3, ", services="
+    .line 113
+    .line 114
+    .line 115
+    move-result v1
 
-    .line 16
-    .line 17
-    const-string v4, ", isFrontFacing="
+    .line 116
+    sub-float/2addr p1, v1
 
-    .line 18
-    .line 19
-    invoke-static {v2, v0, v3, v1, v4}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 117
+    invoke-static {v0, p1}, LiH7;->l(LiH7;F)V
 
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v0
+    .line 118
+    .line 119
+    .line 120
+    :cond_3
+    return-void
 
-    .line 23
-    iget-boolean v1, p0, LZsf;->c:Z
+    .line 121
+    :cond_4
+    const-string p1, "transitionListener"
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    .line 122
+    .line 123
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 26
-    .line 27
-    .line 28
-    const-string v1, ", lensId="
+    .line 124
+    .line 125
+    .line 126
+    const/4 p1, 0x0
 
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 127
+    throw p1
 
-    .line 31
-    .line 32
-    .line 33
-    iget-object v1, p0, LZsf;->d:Ljava/lang/String;
+    .line 128
+    nop
 
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    const-string v1, ", isImageFromLens="
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    iget-boolean v1, p0, LZsf;->e:Z
-
-    .line 44
-    .line 45
-    const-string v2, ")"
-
-    .line 46
-    .line 47
-    invoke-static {v2, v0, v1}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v0
-
-    .line 51
-    return-object v0
+    .line 129
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

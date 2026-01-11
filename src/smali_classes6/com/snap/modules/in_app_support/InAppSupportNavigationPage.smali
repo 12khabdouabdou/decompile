@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LWa9;",
-        "LUa9;",
+        "Lej9;",
+        "Lcj9;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LTa9;
+.field public static final Companion:Lbj9;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LTa9;
+    new-instance v0, Lbj9;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;->Companion:LTa9;
+    sput-object v0, Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;->Companion:Lbj9;
 
     .line 7
     .line 8
@@ -62,32 +62,15 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
-    .locals 1
-
-    sget-object v0, Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;->Companion:LTa9;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {p0, v0, v0, p1, v0}, LTa9;->a(LqZ8;LWa9;LUa9;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;LWa9;LUa9;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
+.method public static final create(LZ69;Lej9;Lcj9;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LWa9;",
-            "LUa9;",
-            "LTB3;",
+            "LZ69;",
+            "Lej9;",
+            "Lcj9;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;"
@@ -95,11 +78,28 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;->Companion:LTa9;
+    sget-object v0, Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;->Companion:Lbj9;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2, p3, p4}, LTa9;->a(LqZ8;LWa9;LUa9;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
+    invoke-static {p0, p1, p2, p3, p4}, Lbj9;->a(LZ69;Lej9;Lcj9;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
+    .locals 1
+
+    sget-object v0, Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;->Companion:Lbj9;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, Lbj9;->a(LZ69;Lej9;Lcj9;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/in_app_support/InAppSupportNavigationPage;
 
     move-result-object p0
 

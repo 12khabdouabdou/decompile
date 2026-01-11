@@ -905,7 +905,7 @@
 
     .line 6
     .line 7
-    new-instance v1, LpH9;
+    new-instance v1, LOS9;
 
     .line 8
     .line 9
@@ -913,7 +913,7 @@
 
     .line 10
     .line 11
-    invoke-direct {v1, v0}, LpH9;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v0}, LOS9;-><init>(Ljava/lang/String;)V
 
     .line 12
     .line 13

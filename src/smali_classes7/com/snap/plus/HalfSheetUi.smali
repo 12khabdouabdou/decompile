@@ -1,10 +1,10 @@
 .class public final Lcom/snap/plus/HalfSheetUi;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'layout\':r<e>:\'[0]\',\'primaryButton\':r?:\'[1]\',\'secondaryButton\':r?:\'[1]\'"
     typeReferences = {

@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'UNKNOWN\':0,\'NIL_SELF\':1,\'FAILED_TO_FETCH_ENTRY\':2,\'FAILED_TO_FETCH_SNAPS\':3,\'TRANSCODER_FATAL_FAILURE\':4,\'DISK_FULL_EXCEPTION\':5,\'DEV_FORCE_FAIL\':6,\'FAILED_TO_DESERIALIZE_SNAP_DOC\':7,\'FAILED_TO_TRANSCODE_SNAP_DOC\':8,\'FAILED_TO_CLAIM_TRANSCODED_SNAP_DOC_MEDIA\':9,\'FAILED_TO_SAVE_TRANSOCDED_SNAP_DOC\':10,\'FAILED_DUE_TO_OUT_OF_MEMORY\':11,\'FAILED_DUE_TO_MISSING_FILE_ERROR\':12"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

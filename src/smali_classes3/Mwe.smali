@@ -1,18 +1,16 @@
 .class public final LMwe;
-.super Ljava/lang/Object;
+.super LqUk;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:I
+.field public final a:J
 
-.field public final b:LAe2;
-
-.field public final c:Lm34;
+.field public final b:Z
 
 
 # direct methods
-.method public constructor <init>(ILAe2;Lm34;)V
+.method public constructor <init>(JZ)V
     .locals 0
 
     .line 1
@@ -21,182 +19,156 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, LMwe;->a:I
+    iput-wide p1, p0, LMwe;->a:J
 
     .line 5
     .line 6
-    iput-object p2, p0, LMwe;->b:LAe2;
+    iput-boolean p3, p0, LMwe;->b:Z
 
     .line 7
     .line 8
-    iput-object p3, p0, LMwe;->c:Lm34;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
     if-ne p0, p1, :cond_0
 
+    .line 2
     .line 3
+    goto :goto_1
+
     .line 4
-    return v0
+    :cond_0
+    instance-of v0, p1, LMwe;
 
     .line 5
-    :cond_0
-    instance-of v1, p1, LMwe;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    if-nez v0, :cond_1
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    goto :goto_0
 
     .line 9
-    .line 10
-    return v2
-
-    .line 11
     :cond_1
     check-cast p1, LMwe;
 
+    .line 10
+    .line 11
+    iget-wide v0, p1, LMwe;->a:J
+
     .line 12
     .line 13
-    iget v1, p1, LMwe;->a:I
+    iget-wide v2, p0, LMwe;->a:J
 
     .line 14
     .line 15
-    iget v3, p0, LMwe;->a:I
+    cmp-long v4, v2, v0
 
     .line 16
     .line 17
-    if-eq v3, v1, :cond_2
+    if-eqz v4, :cond_2
 
     .line 18
     .line 19
-    return v2
+    goto :goto_0
 
     .line 20
     :cond_2
-    iget-object v1, p0, LMwe;->b:LAe2;
+    iget-boolean v0, p0, LMwe;->b:Z
 
     .line 21
     .line 22
-    iget-object v3, p1, LMwe;->b:LAe2;
+    iget-boolean p1, p1, LMwe;->b:Z
 
     .line 23
     .line 24
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eq v0, p1, :cond_3
 
     .line 25
     .line 26
+    :goto_0
+    const/4 p1, 0x0
+
     .line 27
-    move-result v1
+    return p1
 
     .line 28
-    if-nez v1, :cond_3
+    :cond_3
+    :goto_1
+    const/4 p1, 0x1
 
     .line 29
-    .line 30
-    return v2
-
-    .line 31
-    :cond_3
-    iget-object v1, p0, LMwe;->c:Lm34;
-
-    .line 32
-    .line 33
-    iget-object p1, p1, LMwe;->c:Lm34;
-
-    .line 34
-    .line 35
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result p1
-
-    .line 39
-    if-nez p1, :cond_4
-
-    .line 40
-    .line 41
-    return v2
-
-    .line 42
-    :cond_4
-    return v0
+    return p1
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 4
 
     .line 1
-    iget v0, p0, LMwe;->a:I
+    iget-wide v0, p0, LMwe;->a:J
 
     .line 2
     .line 3
-    mul-int/lit8 v0, v0, 0x1f
+    const/16 v2, 0x20
 
     .line 4
     .line 5
-    iget-object v1, p0, LMwe;->b:LAe2;
+    ushr-long v2, v0, v2
 
     .line 6
     .line 7
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    xor-long/2addr v0, v2
 
     .line 8
+    long-to-int v1, v0
+
     .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    add-int/2addr v1, v0
-
-    .line 12
     mul-int/lit8 v1, v1, 0x1f
 
+    .line 10
+    .line 11
+    iget-boolean v0, p0, LMwe;->b:Z
+
+    .line 12
     .line 13
+    if-eqz v0, :cond_0
+
     .line 14
-    iget-object v0, p0, LMwe;->c:Lm34;
-
     .line 15
+    const/16 v0, 0x4cf
+
     .line 16
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
     .line 17
-    .line 18
-    .line 19
-    move-result v0
+    goto :goto_0
 
+    .line 18
+    :cond_0
+    const/16 v0, 0x4d5
+
+    .line 19
     .line 20
-    add-int/2addr v0, v1
+    :goto_0
+    add-int/2addr v1, v0
 
     .line 21
-    return v0
+    return v1
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "RankableCampaignSnapshot(priorityListPlacement="
+    const-string v1, "WeatherEffectVisibilityChanged(timestamp="
 
     .line 4
     .line 5
@@ -205,16 +177,16 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, LMwe;->a:I
+    iget-wide v1, p0, LMwe;->a:J
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", campaignSnapshot="
+    const-string v1, ", visible="
 
     .line 14
     .line 15
@@ -223,49 +195,21 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LMwe;->b:LAe2;
+    iget-boolean v1, p0, LMwe;->b:Z
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, ")"
 
     .line 21
     .line 22
-    .line 23
-    const-string v1, ", cooldownCapStorageUnit="
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
+    .line 23
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LMwe;->c:Lm34;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ")"
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 39
-    .line 40
-    .line 41
     move-result-object v0
 
-    .line 42
+    .line 26
     return-object v0
 .end method

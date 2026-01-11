@@ -93,7 +93,7 @@
 
 
 # virtual methods
-.method public final K0(Lio/reactivex/rxjava3/core/Observer;)V
+.method public final N0(Lio/reactivex/rxjava3/core/Observer;)V
     .locals 6
 
     .line 1
@@ -170,7 +170,7 @@
 
     .line 37
     :cond_1
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->c()Z
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->d()Z
 
     .line 38
     .line 39
@@ -231,7 +231,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->c()Z
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->d()Z
 
     .line 67
     .line 68
@@ -243,7 +243,7 @@
 
     .line 71
     .line 72
-    invoke-virtual {p0, v0}, Lio/reactivex/rxjava3/subjects/AsyncSubject;->c1(Lio/reactivex/rxjava3/subjects/AsyncSubject$AsyncDisposable;)V
+    invoke-virtual {p0, v0}, Lio/reactivex/rxjava3/subjects/AsyncSubject;->f1(Lio/reactivex/rxjava3/subjects/AsyncSubject$AsyncDisposable;)V
 
     .line 73
     .line 74
@@ -268,7 +268,7 @@
     goto :goto_0
 .end method
 
-.method public final a1()Z
+.method public final d1()Z
     .locals 1
 
     .line 1
@@ -308,7 +308,7 @@
     return v0
 .end method
 
-.method public final c1(Lio/reactivex/rxjava3/subjects/AsyncSubject$AsyncDisposable;)V
+.method public final f1(Lio/reactivex/rxjava3/subjects/AsyncSubject$AsyncDisposable;)V
     .locals 7
 
     .line 1
@@ -526,7 +526,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {v3}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->c()Z
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->d()Z
 
     .line 29
     .line 30
@@ -665,7 +665,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {v3}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->c()Z
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/internal/observers/DeferredScalarDisposable;->d()Z
 
     .line 38
     .line 39

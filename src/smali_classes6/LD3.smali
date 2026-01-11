@@ -3,178 +3,178 @@
 .source "SourceFile"
 
 # interfaces
-.implements LBHb;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final a:LIe7;
+.field public final synthetic a:I
 
-.field public final b:LJZf;
+.field public final synthetic b:LMD3;
 
 
 # direct methods
-.method public constructor <init>(LIe7;LJZf;)V
+.method public synthetic constructor <init>(LMD3;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, LLD3;->a:I
+
+    iput-object p1, p0, LLD3;->b:LMD3;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LLD3;->a:LIe7;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LLD3;->b:LJZf;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, LLD3;->a:LIe7;
+    iget v0, p0, LLD3;->a:I
 
     .line 2
     .line 3
-    iget-object v0, v0, LIe7;->g0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
-
     .line 6
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 7
-    if-nez v0, :cond_1
-
     .line 8
+    iget-object p1, p0, LLD3;->b:LMD3;
+
     .line 9
-    iget-object v0, p0, LLD3;->b:LJZf;
-
     .line 10
-    .line 11
-    iget-object v0, v0, LJZf;->i0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object p1, p1, LMD3;->t:LJp0;
 
+    .line 11
     .line 12
+    return-void
+
     .line 13
-    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
+    :pswitch_0
+    check-cast p1, Ljava/util/List;
 
     .line 14
     .line 15
-    if-eqz v0, :cond_0
+    iget-object v0, p0, LLD3;->b:LMD3;
 
     .line 16
     .line 17
-    goto :goto_0
+    iget-object v1, v0, LMD3;->t:LJp0;
 
     .line 18
-    :cond_0
-    const/4 v0, 0x0
-
     .line 19
-    return v0
+    sget-object v1, Lcom/snap/memories/composer/api/PaginatedImageGridUpdateType;->RELOAD:Lcom/snap/memories/composer/api/PaginatedImageGridUpdateType;
 
     .line 20
-    :cond_1
-    :goto_0
-    const/4 v0, 0x1
-
     .line 21
-    return v0
-.end method
+    check-cast p1, Ljava/lang/Iterable;
 
-.method public final dispose()V
-    .locals 1
+    .line 22
+    .line 23
+    new-instance v2, Ljava/util/ArrayList;
 
-    .line 1
-    iget-object v0, p0, LLD3;->a:LIe7;
+    .line 24
+    .line 25
+    const/16 v3, 0xa
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LIe7;->dispose()V
+    .line 26
+    .line 27
+    invoke-static {p1, v3}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, LLD3;->b:LJZf;
+    .line 28
+    .line 29
+    .line 30
+    move-result v3
 
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LJZf;->dispose()V
+    .line 31
+    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
+    .line 32
+    .line 33
+    .line 34
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-.method public final i1()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LLD3;->a:LIe7;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LIe7;->i1()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, LLD3;->b:LJZf;
-
-    .line 7
-    .line 8
-    invoke-virtual {v0}, LJZf;->i1()V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final k3(Ljava/util/List;LBxb;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LLD3;->a:LIe7;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1, p2}, LIe7;->k3(Ljava/util/List;LBxb;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    iget-object v1, p0, LLD3;->b:LJZf;
-
-    .line 8
-    .line 9
-    invoke-virtual {v1, p1, p2}, LJZf;->k3(Ljava/util/List;LBxb;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 10
-    .line 11
-    .line 12
+    .line 35
+    .line 36
+    .line 37
     move-result-object p1
 
-    .line 13
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+    .line 38
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 14
-    .line 15
-    invoke-direct {p2, v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
+    .line 39
+    .line 40
+    .line 41
+    move-result v3
 
-    .line 16
-    .line 17
-    .line 18
-    return-object p2
+    .line 42
+    if-eqz v3, :cond_0
+
+    .line 43
+    .line 44
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v3
+
+    .line 48
+    check-cast v3, Lfa2;
+
+    .line 49
+    .line 50
+    iget-object v4, v0, LMD3;->b:LHT2;
+
+    .line 51
+    .line 52
+    invoke-static {v3, v4}, LqUk;->h(LOa2;LHT2;)Lcom/snap/impala/common/media/MediaLibraryItem;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v3
+
+    .line 56
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 57
+    .line 58
+    .line 59
+    goto :goto_0
+
+    .line 60
+    :cond_0
+    new-instance p1, Lfpd;
+
+    .line 61
+    .line 62
+    invoke-direct {p1, v1, v2}, Lfpd;-><init>(Lcom/snap/memories/composer/api/PaginatedImageGridUpdateType;Ljava/util/List;)V
+
+    .line 63
+    .line 64
+    .line 65
+    iget-object v0, v0, LMD3;->Y:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 66
+    .line 67
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 68
+    .line 69
+    .line 70
+    return-void
+
+    .line 71
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

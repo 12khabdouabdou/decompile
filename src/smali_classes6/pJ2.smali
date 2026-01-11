@@ -3,51 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements Lio/reactivex/rxjava3/functions/Predicate;
 
 
 # instance fields
-.field public final synthetic X:Ljava/lang/Integer;
-
-.field public final synthetic Y:Ljava/lang/Integer;
-
-.field public final synthetic Z:Ljava/lang/Long;
-
 .field public final synthetic a:I
 
-.field public final synthetic b:LrJ2;
-
-.field public final synthetic c:Ljava/lang/String;
-
-.field public final synthetic e0:J
-
-.field public final synthetic f0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final synthetic t:LuSg;
+.field public final synthetic b:Lcom/snap/messaging/chat/ChatFragment;
 
 
 # direct methods
-.method public synthetic constructor <init>(LrJ2;Ljava/lang/String;LuSg;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;JLio/reactivex/rxjava3/disposables/CompositeDisposable;I)V
+.method public synthetic constructor <init>(Lcom/snap/messaging/chat/ChatFragment;I)V
     .locals 0
 
     .line 1
-    iput p10, p0, LpJ2;->a:I
+    iput p2, p0, LpJ2;->a:I
 
-    iput-object p1, p0, LpJ2;->b:LrJ2;
-
-    iput-object p2, p0, LpJ2;->c:Ljava/lang/String;
-
-    iput-object p3, p0, LpJ2;->t:LuSg;
-
-    iput-object p4, p0, LpJ2;->X:Ljava/lang/Integer;
-
-    iput-object p5, p0, LpJ2;->Y:Ljava/lang/Integer;
-
-    iput-object p6, p0, LpJ2;->Z:Ljava/lang/Long;
-
-    iput-wide p7, p0, LpJ2;->e0:J
-
-    iput-object p9, p0, LpJ2;->f0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iput-object p1, p0, LpJ2;->b:Lcom/snap/messaging/chat/ChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,378 +28,352 @@
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 12
+.method public final test(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    const/4 v0, 0x3
+    iget v0, p0, LpJ2;->a:I
 
     .line 2
-    iget v1, p0, LpJ2;->a:I
-
     .line 3
-    .line 4
-    packed-switch v1, :pswitch_data_0
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
+    check-cast p1, Landroid/graphics/Rect;
+
     .line 7
-    check-cast p1, LMT3;
-
     .line 8
+    iget-object p1, p0, LpJ2;->b:Lcom/snap/messaging/chat/ChatFragment;
+
     .line 9
-    sget-object v1, Lcom/snapchat/client/content_manager/ConsumptionUseCase;->EXPORT:Lcom/snapchat/client/content_manager/ConsumptionUseCase;
-
     .line 10
+    iget-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->Q0:LmGc;
+
     .line 11
-    invoke-interface {p1, v1}, LMT3;->p0(Lcom/snapchat/client/content_manager/ConsumptionUseCase;)V
-
     .line 12
+    const/4 v1, 0x0
+
     .line 13
+    const-string v2, "navigationHost"
+
     .line 14
-    iget-object v7, p0, LpJ2;->b:LrJ2;
-
     .line 15
-    .line 16
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v0, :cond_3
 
+    .line 16
     .line 17
+    invoke-virtual {v0}, LmGc;->q()LL4b;
+
     .line 18
     .line 19
-    const-string v1, "media"
-
     .line 20
+    move-result-object v0
+
     .line 21
-    :try_start_0
-    invoke-static {p1, v1}, LCq9;->j(LMT3;Ljava/lang/String;)LPb0;
+    const/4 v3, 0x1
 
     .line 22
+    if-eqz v0, :cond_0
+
     .line 23
     .line 24
-    move-result-object v1
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    iget-boolean v0, v0, LL4b;->Z:Z
 
     .line 25
-    if-eqz v1, :cond_0
-
     .line 26
+    if-nez v0, :cond_0
+
     .line 27
-    invoke-interface {v1}, LPb0;->a()Landroid/net/Uri;
-
     .line 28
-    .line 29
-    .line 30
-    move-result-object v1
+    goto :goto_0
 
+    .line 29
+    :cond_0
+    iget-object p1, p1, Lcom/snap/messaging/chat/ChatFragment;->Q0:LmGc;
+
+    .line 30
     .line 31
-    if-eqz v1, :cond_0
+    if-eqz p1, :cond_2
 
     .line 32
     .line 33
-    invoke-virtual {v1}, Landroid/net/Uri;->getPath()Ljava/lang/String;
+    invoke-virtual {p1}, LmGc;->q()LL4b;
 
     .line 34
     .line 35
     .line 36
-    move-result-object v8
+    move-result-object p1
 
     .line 37
-    if-eqz v8, :cond_0
+    if-eqz p1, :cond_1
 
     .line 38
     .line 39
-    iget-object v1, v7, LrJ2;->a:Lbke;
+    invoke-virtual {p1}, LL4b;->a()Ljava/lang/String;
 
     .line 40
     .line 41
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
-
     .line 42
-    .line 43
-    .line 44
-    move-result-object v1
+    move-result-object p1
 
+    .line 43
+    if-eqz p1, :cond_1
+
+    .line 44
     .line 45
-    check-cast v1, Lzmb;
+    sget-object v0, Lt9d;->Z:Lt9d;
 
     .line 46
     .line 47
-    iget-object v2, v7, LrJ2;->g:LWm0;
+    iget-object v0, v0, Lrp0;->a:Ljava/lang/String;
 
     .line 48
     .line 49
-    check-cast v1, LImb;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 50
     .line 51
-    iget-object v3, p0, LpJ2;->c:Ljava/lang/String;
-
     .line 52
+    move-result p1
+
     .line 53
-    invoke-virtual {v1, v2, v3}, LImb;->i(LWm0;Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    if-ne p1, v3, :cond_1
 
     .line 54
     .line 55
+    goto :goto_0
+
     .line 56
-    move-result-object v1
+    :cond_1
+    const/4 v3, 0x0
 
     .line 57
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+    :goto_0
+    return v3
 
     .line 58
-    .line 59
-    invoke-direct {v2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+    :cond_2
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 59
     .line 60
     .line 61
+    throw v1
+
     .line 62
-    new-instance v4, Lxt1;
+    :cond_3
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 63
     .line 64
-    iget-object v5, p0, LpJ2;->f0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 65
+    throw v1
+
     .line 66
-    const/16 v6, 0xa
+    :pswitch_0
+    check-cast p1, LDpd;
 
     .line 67
     .line 68
-    invoke-direct {v4, v7, v3, v5, v6}, Lxt1;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    iget-object p1, p0, LpJ2;->b:Lcom/snap/messaging/chat/ChatFragment;
 
     .line 69
     .line 70
+    iget-boolean v0, p1, Lcom/snap/messaging/chat/ChatFragment;->k1:Z
+
     .line 71
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
     .line 72
-    .line 73
-    invoke-direct {v3, v2, v4}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    if-eqz v0, :cond_4
 
+    .line 73
     .line 74
+    iget-boolean v0, p1, Lcom/snap/messaging/chat/ChatFragment;->l1:Z
+
     .line 75
     .line 76
-    new-instance v2, LpG2;
+    if-nez v0, :cond_5
 
     .line 77
     .line 78
-    invoke-direct {v2, v0, p1}, LpG2;-><init>(ILjava/lang/Object;)V
+    iget-boolean v0, p1, Lcom/snap/messaging/chat/ChatFragment;->m1:Z
 
     .line 79
     .line 80
+    if-nez v0, :cond_5
+
     .line 81
-    new-instance v11, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;
-
     .line 82
-    .line 83
-    invoke-direct {v11, v3, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    :cond_4
+    iget-boolean p1, p1, Lcom/snap/messaging/chat/ChatFragment;->n1:Z
 
+    .line 83
     .line 84
+    if-eqz p1, :cond_6
+
     .line 85
     .line 86
-    new-instance v2, LkJ2;
+    :cond_5
+    const/4 p1, 0x1
 
     .line 87
+    goto :goto_1
+
     .line 88
-    const/4 v3, 0x1
+    :cond_6
+    const/4 p1, 0x0
 
     .line 89
-    invoke-direct {v2, p1, v7, v3}, LkJ2;-><init>(LMT3;LrJ2;I)V
+    :goto_1
+    return p1
 
     .line 90
+    :pswitch_1
+    check-cast p1, LlRf;
+
     .line 91
     .line 92
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    iget-object v0, p0, LpJ2;->b:Lcom/snap/messaging/chat/ChatFragment;
 
     .line 93
     .line 94
-    invoke-direct {v3, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    iget-object v0, v0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 95
     .line 96
+    if-eqz v0, :cond_7
+
     .line 97
-    new-instance v2, LpG2;
-
     .line 98
-    .line 99
-    invoke-direct {v2, v0, p1}, LpG2;-><init>(ILjava/lang/Object;)V
+    iget-object v0, v0, LdH2;->b:Ljava/lang/String;
 
+    .line 99
     .line 100
+    goto :goto_2
+
     .line 101
+    :cond_7
+    const/4 v0, 0x0
+
     .line 102
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;
+    :goto_2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 103
     .line 104
-    invoke-direct {p1, v3, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 105
+    instance-of v1, p1, LkRf;
+
     .line 106
     .line 107
-    new-instance v2, LlJ2;
+    if-eqz v1, :cond_8
 
     .line 108
     .line 109
-    iget-object v4, p0, LpJ2;->X:Ljava/lang/Integer;
+    check-cast p1, LkRf;
 
     .line 110
     .line 111
-    iget-object v5, p0, LpJ2;->Y:Ljava/lang/Integer;
+    iget-object p1, p1, LkRf;->a:Ljava/lang/String;
 
     .line 112
     .line 113
-    iget-object v3, p0, LpJ2;->t:LuSg;
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 114
     .line 115
-    iget-object v6, p0, LpJ2;->Z:Ljava/lang/Long;
-
     .line 116
+    move-result p1
+
     .line 117
-    iget-wide v9, p0, LpJ2;->e0:J
+    if-nez p1, :cond_8
 
     .line 118
     .line 119
-    invoke-direct/range {v2 .. v10}, LlJ2;-><init>(LuSg;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;LrJ2;Ljava/lang/String;J)V
+    const/4 p1, 0x1
 
     .line 120
+    goto :goto_3
+
     .line 121
+    :cond_8
+    const/4 p1, 0x0
+
     .line 122
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    :goto_3
+    return p1
 
     .line 123
-    .line 124
-    invoke-direct {v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    :pswitch_2
+    check-cast p1, Ljava/lang/Number;
 
+    .line 124
     .line 125
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+
     .line 126
     .line 127
-    sget-object v2, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
-
     .line 128
+    iget-object p1, p0, LpJ2;->b:Lcom/snap/messaging/chat/ChatFragment;
+
     .line 129
-    new-instance v2, Lt;
-
     .line 130
-    .line 131
-    const/4 v3, 0x7
+    iget-boolean v0, p1, Lcom/snap/messaging/chat/ChatFragment;->k1:Z
 
+    .line 131
     .line 132
-    invoke-direct {v2, v8, v3}, Lt;-><init>(Ljava/lang/String;I)V
+    if-eqz v0, :cond_9
 
     .line 133
     .line 134
-    .line 135
-    invoke-static {v1, v11, p1, v0, v2}, Lio/reactivex/rxjava3/core/Single;->H(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function4;)Lio/reactivex/rxjava3/core/Single;
+    iget-boolean v0, p1, Lcom/snap/messaging/chat/ChatFragment;->l1:Z
 
+    .line 135
     .line 136
+    if-nez v0, :cond_a
+
     .line 137
     .line 138
-    move-result-object p1
+    iget-boolean v0, p1, Lcom/snap/messaging/chat/ChatFragment;->m1:Z
 
     .line 139
-    return-object p1
-
     .line 140
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
+    if-nez v0, :cond_a
 
     .line 141
     .line 142
-    const-string v0, "Content result must contain media file"
+    :cond_9
+    iget-boolean p1, p1, Lcom/snap/messaging/chat/ChatFragment;->n1:Z
 
     .line 143
     .line 144
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    if-eqz p1, :cond_b
 
     .line 145
     .line 146
+    :cond_a
+    const/4 p1, 0x1
+
     .line 147
-    throw p1
+    goto :goto_4
 
     .line 148
-    :catch_0
-    move-exception v0
+    :cond_b
+    const/4 p1, 0x0
 
     .line 149
-    move-object p1, v0
+    :goto_4
+    return p1
 
     .line 150
-    new-instance v0, LLB0;
+    nop
 
     .line 151
-    .line 152
-    invoke-direct {v0, p1}, LLB0;-><init>(Ljava/lang/Throwable;)V
-
-    .line 153
-    .line 154
-    .line 155
-    throw v0
-
-    .line 156
-    :pswitch_0
-    move-object v2, p1
-
-    .line 157
-    check-cast v2, LMT3;
-
-    .line 158
-    .line 159
-    sget-object p1, Lcom/snapchat/client/content_manager/ConsumptionUseCase;->EXPORT:Lcom/snapchat/client/content_manager/ConsumptionUseCase;
-
-    .line 160
-    .line 161
-    invoke-interface {v2, p1}, LMT3;->p0(Lcom/snapchat/client/content_manager/ConsumptionUseCase;)V
-
-    .line 162
-    .line 163
-    .line 164
-    iget-object v10, p0, LpJ2;->f0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 165
-    .line 166
-    iget-object v6, p0, LpJ2;->Y:Ljava/lang/Integer;
-
-    .line 167
-    .line 168
-    iget-object v7, p0, LpJ2;->Z:Ljava/lang/Long;
-
-    .line 169
-    .line 170
-    iget-object v1, p0, LpJ2;->b:LrJ2;
-
-    .line 171
-    .line 172
-    iget-object v3, p0, LpJ2;->c:Ljava/lang/String;
-
-    .line 173
-    .line 174
-    iget-object v4, p0, LpJ2;->t:LuSg;
-
-    .line 175
-    .line 176
-    iget-object v5, p0, LpJ2;->X:Ljava/lang/Integer;
-
-    .line 177
-    .line 178
-    iget-wide v8, p0, LpJ2;->e0:J
-
-    .line 179
-    .line 180
-    invoke-virtual/range {v1 .. v10}, LrJ2;->b(LMT3;Ljava/lang/String;LuSg;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;JLio/reactivex/rxjava3/disposables/CompositeDisposable;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoFinally;
-
-    .line 181
-    .line 182
-    .line 183
-    move-result-object p1
-
-    .line 184
-    return-object p1
-
-    .line 185
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

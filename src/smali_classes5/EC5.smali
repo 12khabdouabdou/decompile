@@ -1,67 +1,80 @@
-.class public final synthetic LEC5;
-.super LGu;
+.class public final LEC5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements LU98;
 
 
-# static fields
-.field public static final e0:LEC5;
+# instance fields
+.field public final a:LFG5;
+
+.field public final b:LREi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(LFG5;)V
+    .locals 1
 
     .line 1
-    new-instance v0, LEC5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
     .line 4
-    const-string v2, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;Z)V"
+    iput-object p1, p0, LEC5;->a:LFG5;
 
     .line 5
     .line 6
-    const-class v3, LYj5;
+    new-instance p1, LWr5;
 
     .line 7
     .line 8
-    invoke-direct {v0, v1, v3, v2}, LGu;-><init>(ILjava/lang/Class;Ljava/lang/String;)V
+    const/16 v0, 0x18
 
     .line 9
     .line 10
-    .line 11
-    sput-object v0, LEC5;->e0:LEC5;
+    invoke-direct {p1, v0, p0}, LWr5;-><init>(ILjava/lang/Object;)V
 
+    .line 11
     .line 12
     .line 13
+    new-instance v0, LREi;
+
+    .line 14
+    .line 15
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object v0, p0, LEC5;->b:LREi;
+
+    .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final getVersion()LTfd;
+    .locals 1
 
     .line 1
-    check-cast p1, LAC5;
+    iget-object v0, p0, LEC5;->b:LREi;
 
     .line 2
     .line 3
-    new-instance v0, LYj5;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
-    const/4 v1, 0x0
-
     .line 6
-    invoke-direct {v0, p1, v1}, LYj5;-><init>(LAC5;Z)V
+    move-result-object v0
 
     .line 7
+    check-cast v0, LTfd;
+
     .line 8
     .line 9
     return-object v0

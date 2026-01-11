@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LI9i;
+    proxyClass = Lgyi;
     schema = "\'observeSuggestedFriendsOnStoryMention\':f|m|(s, f(s, a<r:\'[0]\'>)): f(),\'performHideSuggestedFriendAction\':f|m|(r:\'[0]\'),\'onSuggestedFriendImpression\':f?|m|(r:\'[0]\', d),\'onSuggestedFriendAdded\':f?|m|(r:\'[0]\', d),\'onSuggestedFriendsCarouselHidden\':f?|m|()"
     typeReferences = {
         Lcom/snap/contextcards/lib/composer/UserInfo;
@@ -31,17 +31,17 @@
 .end method
 
 .method public abstract onSuggestedFriendAdded(Lcom/snap/contextcards/lib/composer/UserInfo;D)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onSuggestedFriendImpression(Lcom/snap/contextcards/lib/composer/UserInfo;D)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onSuggestedFriendsCarouselHidden()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

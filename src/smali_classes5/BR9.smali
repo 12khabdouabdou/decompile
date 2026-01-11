@@ -1,20 +1,35 @@
-.class public final LBR9;
+.class final LBR9;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LyR9;
-
 
 # instance fields
-.field public final synthetic a:LyR9;
+.field private final a:Ljava/util/List;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "media"
+    .end annotation
 
-.field public final synthetic b:LQci;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "LKxb;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(LyR9;LQci;)V
+.method public constructor <init>(Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "LKxb;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,66 +37,137 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LBR9;->a:LyR9;
+    iput-object p1, p0, LBR9;->a:Ljava/util/List;
 
     .line 5
     .line 6
-    iput-object p2, p0, LBR9;->b:LQci;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    check-cast p1, LtL9;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    iget-object v0, p0, LBR9;->a:LyR9;
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_0
+    instance-of v1, p1, LBR9;
 
     .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    move-result-object p1
+    if-nez v1, :cond_1
 
     .line 9
-    check-cast p1, Lio/reactivex/rxjava3/core/Observable;
-
     .line 10
+    return v2
+
     .line 11
-    iget-object v0, p0, LBR9;->b:LQci;
+    :cond_1
+    check-cast p1, LBR9;
 
     .line 12
     .line 13
-    const-string v1, "LensDownloadStatusProvider#suspendable"
+    iget-object v1, p0, LBR9;->a:Ljava/util/List;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, LQci;->c(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/ObservableTransformer;
+    iget-object p1, p1, LBR9;->a:Ljava/util/List;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LBR9;->a:Ljava/util/List;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LBR9;->a:Ljava/util/List;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    const-string v2, "LaunchPickerResponse(media="
+
+    .line 6
+    .line 7
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v0, ")"
+
+    .line 14
+    .line 15
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
-
     .line 20
     .line 21
-    .line 22
-    move-result-object p1
+    move-result-object v0
 
-    .line 23
-    return-object p1
+    .line 22
+    return-object v0
 .end method

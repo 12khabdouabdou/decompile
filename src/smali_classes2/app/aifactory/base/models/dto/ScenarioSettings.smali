@@ -22,7 +22,7 @@
 
 .field private final path:Ljava/lang/String;
 
-.field private final segmentationType:LNGf;
+.field private final segmentationType:Ll0g;
 
 .field private final zipId:Ljava/lang/String;
 
@@ -58,12 +58,12 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v12}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILHr5;)V
+    invoke-direct/range {v0 .. v12}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILex5;)V
 
     return-void
 .end method
 
-.method public constructor <init>(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)V
+.method public constructor <init>(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)V
     .locals 0
 
     .line 2
@@ -73,7 +73,7 @@
     iput p1, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->fps:I
 
     .line 4
-    iput-object p2, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iput-object p2, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
     .line 5
     iput-object p3, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->path:Ljava/lang/String;
@@ -102,7 +102,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILHr5;)V
+.method public synthetic constructor <init>(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILex5;)V
     .locals 2
 
     and-int/lit8 p12, p11, 0x1
@@ -119,7 +119,7 @@
     if-eqz p12, :cond_1
 
     .line 13
-    sget-object p2, LNGf;->a:LNGf;
+    sget-object p2, Ll0g;->a:Ll0g;
 
     :cond_1
     and-int/lit8 p12, p11, 0x4
@@ -211,12 +211,12 @@
     goto :goto_0
 
     :goto_1
-    invoke-direct/range {p1 .. p11}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)V
+    invoke-direct/range {p1 .. p11}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Lapp/aifactory/base/models/dto/ScenarioSettings;ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILjava/lang/Object;)Lapp/aifactory/base/models/dto/ScenarioSettings;
+.method public static synthetic copy$default(Lapp/aifactory/base/models/dto/ScenarioSettings;ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;ZILjava/lang/Object;)Lapp/aifactory/base/models/dto/ScenarioSettings;
     .locals 0
 
     .line 1
@@ -241,7 +241,7 @@
 
     .line 10
     .line 11
-    iget-object p2, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iget-object p2, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
     .line 12
     .line 13
@@ -383,7 +383,7 @@
     move-object p2, p0
 
     .line 72
-    invoke-virtual/range {p2 .. p12}, Lapp/aifactory/base/models/dto/ScenarioSettings;->copy(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)Lapp/aifactory/base/models/dto/ScenarioSettings;
+    invoke-virtual/range {p2 .. p12}, Lapp/aifactory/base/models/dto/ScenarioSettings;->copy(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)Lapp/aifactory/base/models/dto/ScenarioSettings;
 
     .line 73
     .line 74
@@ -412,11 +412,11 @@
     return v0
 .end method
 
-.method public final component2()LNGf;
+.method public final component2()Ll0g;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
     .line 2
     .line 3
@@ -479,7 +479,7 @@
     return-object v0
 .end method
 
-.method public final copy(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)Lapp/aifactory/base/models/dto/ScenarioSettings;
+.method public final copy(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)Lapp/aifactory/base/models/dto/ScenarioSettings;
     .locals 11
 
     .line 1
@@ -523,7 +523,7 @@
 
     .line 18
     .line 19
-    invoke-direct/range {v0 .. v10}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILNGf;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)V
+    invoke-direct/range {v0 .. v10}, Lapp/aifactory/base/models/dto/ScenarioSettings;-><init>(ILl0g;Ljava/lang/String;ZILjava/lang/String;Ljava/lang/Integer;Lapp/aifactory/base/models/dto/MusicTrack;Lapp/aifactory/base/models/dto/MusicTrack;Z)V
 
     .line 20
     .line 21
@@ -561,9 +561,9 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
-    iget-object v3, p1, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iget-object v3, p1, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
     if-eq v1, v3, :cond_3
 
@@ -574,7 +574,7 @@
 
     iget-object v3, p1, Lapp/aifactory/base/models/dto/ScenarioSettings;->path:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -605,7 +605,7 @@
 
     iget-object v3, p1, Lapp/aifactory/base/models/dto/ScenarioSettings;->zipId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -618,7 +618,7 @@
 
     iget-object v3, p1, Lapp/aifactory/base/models/dto/ScenarioSettings;->fontHeight:Ljava/lang/Integer;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -631,7 +631,7 @@
 
     iget-object v3, p1, Lapp/aifactory/base/models/dto/ScenarioSettings;->musicTrack:Lapp/aifactory/base/models/dto/MusicTrack;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -644,7 +644,7 @@
 
     iget-object v3, p1, Lapp/aifactory/base/models/dto/ScenarioSettings;->musicReportTrack:Lapp/aifactory/base/models/dto/MusicTrack;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -753,11 +753,11 @@
     return-object v0
 .end method
 
-.method public final getSegmentationType()LNGf;
+.method public final getSegmentationType()Ll0g;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iget-object v0, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
     .line 2
     .line 3
@@ -791,7 +791,7 @@
 
     .line 6
     .line 7
-    iget-object v2, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iget-object v2, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
     .line 8
     .line 9
@@ -814,7 +814,7 @@
 
     .line 17
     .line 18
-    invoke-static {v2, v1, v0}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v2, v1, v0}, LToi;->g(IILjava/lang/String;)I
 
     .line 19
     .line 20
@@ -859,7 +859,7 @@
 
     .line 37
     .line 38
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 39
     .line 40
@@ -1039,7 +1039,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:LNGf;
+    iget-object v1, p0, Lapp/aifactory/base/models/dto/ScenarioSettings;->segmentationType:Ll0g;
 
     .line 19
     .line 20
@@ -1191,7 +1191,7 @@
 
     .line 101
     .line 102
-    invoke-static {v0, v1, v2}, LmG8;->q(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LBv7;->r(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 103
     .line 104

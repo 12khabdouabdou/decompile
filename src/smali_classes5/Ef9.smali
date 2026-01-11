@@ -1,3 +1,3 @@
-.class public abstract LEf9;
+.class public final LEf9;
 .super Ljava/lang/Object;
 .source "SourceFile"

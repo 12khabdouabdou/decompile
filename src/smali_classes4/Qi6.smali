@@ -1,196 +1,186 @@
 .class public final LQi6;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LmGc;
 
-.field public final synthetic b:LRi6;
+.field public final b:Liu6;
 
-.field public final synthetic c:LWR7;
+.field public final c:Lnp0;
+
+.field public final d:LREi;
 
 
 # direct methods
-.method public synthetic constructor <init>(LRi6;LWR7;I)V
+.method public constructor <init>(LyPf;LmGc;Liu6;)V
     .locals 0
 
     .line 1
-    iput p3, p0, LQi6;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LQi6;->b:LRi6;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p2, p0, LQi6;->a:LmGc;
 
-    iput-object p2, p0, LQi6;->c:LWR7;
+    .line 5
+    .line 6
+    iput-object p3, p0, LQi6;->b:Liu6;
 
-    const/4 p1, 0x0
+    .line 7
+    .line 8
+    sget-object p2, LPh6;->Z:LPh6;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 9
+    .line 10
+    const-string p3, "DiscoverFeedManagementLauncher"
 
+    .line 11
+    .line 12
+    invoke-static {p2, p2, p3}, LJF0;->g(LPh6;LPh6;Ljava/lang/String;)Lnp0;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p2
+
+    .line 16
+    iput-object p2, p0, LQi6;->c:Lnp0;
+
+    .line 17
+    .line 18
+    new-instance p2, LIh6;
+
+    .line 19
+    .line 20
+    const/4 p3, 0x1
+
+    .line 21
+    invoke-direct {p2, p1, p3, p0}, LIh6;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 22
+    .line 23
+    .line 24
+    new-instance p1, LREi;
+
+    .line 25
+    .line 26
+    invoke-direct {p1, p2}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 27
+    .line 28
+    .line 29
+    iput-object p1, p0, LQi6;->d:LREi;
+
+    .line 30
+    .line 31
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 12
+.method public final a(LU5b;LrVe;)V
+    .locals 6
 
     .line 1
-    iget v0, p0, LQi6;->a:I
+    new-instance v0, LyR5;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v5, 0x4
 
     .line 4
+    const/4 v4, 0x0
+
     .line 5
+    move-object v3, p0
+
     .line 6
-    iget-object v0, p0, LQi6;->b:LRi6;
+    move-object v1, p1
 
     .line 7
+    move-object v2, p2
+
     .line 8
-    invoke-virtual {v0}, LcIj;->r()LWR6;
+    invoke-direct/range {v0 .. v5}, LyR5;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;ZI)V
 
     .line 9
     .line 10
     .line 11
-    move-result-object v1
+    invoke-static {}, LOVi;->a()Z
 
     .line 12
-    new-instance v2, LWMc;
-
     .line 13
     .line 14
-    invoke-virtual {v0}, LVGh;->H()Lp0h;
+    move-result p1
 
     .line 15
+    if-eqz p1, :cond_0
+
     .line 16
     .line 17
-    move-result-object v3
+    invoke-virtual {v0}, LyR5;->run()V
 
     .line 18
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
     .line 19
     .line 20
+    return-void
+
     .line 21
-    move-result-wide v5
+    :cond_0
+    iget-object p1, v3, LQi6;->d:LREi;
 
     .line 22
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
     .line 23
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
     .line 24
     .line 25
-    move-result-wide v7
-
     .line 26
-    iget-object v4, p0, LQi6;->c:LWR7;
+    move-result-object p1
 
     .line 27
-    .line 28
-    const/4 v9, 0x0
+    check-cast p1, LlJe;
 
+    .line 28
     .line 29
-    const/4 v10, 0x0
+    check-cast p1, LnJe;
 
     .line 30
-    const/4 v11, 0x1
-
     .line 31
-    invoke-direct/range {v2 .. v11}, LWMc;-><init>(Lp0h;LaLh;JJLLyi;LGyi;Z)V
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
 
     .line 32
     .line 33
     .line 34
-    invoke-interface {v1, v2}, LWR6;->a(Ljava/lang/Object;)V
+    move-result-object p1
 
     .line 35
-    .line 36
-    .line 37
-    sget-object v0, Li7j;->a:Li7j;
+    const/4 p2, 0x0
 
+    .line 36
+    invoke-static {p1, v0, p2}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 37
     .line 38
     .line 39
-    return-object v0
+    move-result-object p1
 
     .line 40
-    :pswitch_0
-    iget-object v0, p0, LQi6;->b:LRi6;
+    iget-object p2, v3, LQi6;->c:Lnp0;
 
     .line 41
     .line 42
-    invoke-virtual {v0}, LcIj;->r()LWR6;
+    iget-object v0, v3, LQi6;->b:Liu6;
 
     .line 43
     .line 44
+    invoke-virtual {v0, p2, p1}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+
     .line 45
-    move-result-object v1
-
     .line 46
-    new-instance v2, Lbte;
-
     .line 47
-    .line 48
-    iget-object v3, p0, LQi6;->c:LWR7;
-
-    .line 49
-    .line 50
-    iget-object v3, v3, LWR7;->i0:LhS7;
-
-    .line 51
-    .line 52
-    iget-object v3, v3, LhS7;->e:Ljava/lang/String;
-
-    .line 53
-    .line 54
-    const/4 v4, -0x1
-
-    .line 55
-    const/4 v5, 0x0
-
-    .line 56
-    invoke-direct {v2, v3, v4, v5}, Lbte;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
-    .line 57
-    .line 58
-    .line 59
-    invoke-interface {v1, v2}, LWR6;->a(Ljava/lang/Object;)V
-
-    .line 60
-    .line 61
-    .line 62
-    const/4 v1, 0x1
-
-    .line 63
-    invoke-virtual {v0, v1}, LRi6;->N(Z)V
-
-    .line 64
-    .line 65
-    .line 66
-    invoke-virtual {v0}, LRi6;->O()LPi6;
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-object v0
-
-    .line 70
-    iput-object v5, v0, LPi6;->m0:LrE9;
-
-    .line 71
-    .line 72
-    sget-object v0, Li7j;->a:Li7j;
-
-    .line 73
-    .line 74
-    return-object v0
-
-    .line 75
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

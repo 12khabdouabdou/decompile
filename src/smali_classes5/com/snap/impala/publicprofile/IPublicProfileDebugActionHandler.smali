@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LdY8;
+    proxyClass = LH59;
     schema = "\'showInsights\':f|m|(t),\'showSignals\':f|m|(t),\'showDebug\':f|m|(t),\'showDebugHtml\':f?|m|(s)"
     typeReferences = {}
 .end annotation
@@ -23,7 +23,7 @@
 .end method
 
 .method public abstract showDebugHtml(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

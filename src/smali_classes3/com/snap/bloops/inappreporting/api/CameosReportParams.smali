@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bloops/inappreporting/api/CameosReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'reportType\':r:\'[0]\',\'cameosStoryParams\':r?:\'[1]\',\'generativeContentReportParams\':r?:\'[2]\',\'dreamsSnapReportParams\':r?:\'[3]\',\'memoriesGenAIFeaturedStoriesParam\':r?:\'[4]\',\'aIContentReportParams\':r?:\'[5]\'"
     typeReferences = {

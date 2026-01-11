@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lkd9;
+    proxyClass = LBl9;
     schema = "\'loadSurveyData\':f|m|(f(r?:\'[0]\', b@?)),\'setLatestSurveyData\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/inclusion_panel/SurveyData;

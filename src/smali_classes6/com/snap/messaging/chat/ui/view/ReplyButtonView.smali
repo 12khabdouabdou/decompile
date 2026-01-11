@@ -38,7 +38,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/ReplyButtonView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/ReplyButtonView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -50,28 +50,28 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    new-instance p2, Lhf8;
+    new-instance p2, LJl8;
 
     const/16 p3, 0x12
 
-    invoke-direct {p2, p1, p3}, Lhf8;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p2, p1, p3}, LJl8;-><init>(Landroid/content/Context;I)V
 
     const/4 p3, 0x3
 
-    invoke-static {p3, p2}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
+    invoke-static {p3, p2}, Lfqj;->y(ILkotlin/jvm/functions/Function0;)LRS9;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/ReplyButtonView;->c:Ljava/lang/Object;
 
     .line 5
-    new-instance p2, Lhf8;
+    new-instance p2, LJl8;
 
     const/16 v0, 0x11
 
-    invoke-direct {p2, p1, v0}, Lhf8;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p2, p1, v0}, LJl8;-><init>(Landroid/content/Context;I)V
 
-    invoke-static {p3, p2}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
+    invoke-static {p3, p2}, Lfqj;->y(ILkotlin/jvm/functions/Function0;)LRS9;
 
     move-result-object p2
 
@@ -82,7 +82,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f07034a
+    const p2, 0x7f070351
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -91,13 +91,13 @@
     iput p1, p0, Lcom/snap/messaging/chat/ui/view/ReplyButtonView;->e0:F
 
     .line 7
-    new-instance p1, Lyze;
+    new-instance p1, LVWe;
 
-    const/16 p2, 0xf
+    const/4 p2, 0x7
 
-    invoke-direct {p1, p2, p0}, Lyze;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LVWe;-><init>(ILjava/lang/Object;)V
 
-    invoke-static {p3, p1}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
+    invoke-static {p3, p1}, Lfqj;->y(ILkotlin/jvm/functions/Function0;)LRS9;
 
     move-result-object p1
 
@@ -106,7 +106,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p4, p4, 0x4
@@ -183,7 +183,7 @@
 
     .line 23
     .line 24
-    invoke-interface {v2}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -203,7 +203,7 @@
     move-result v3
 
     .line 34
-    invoke-interface {v2}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -287,7 +287,7 @@
 
     .line 71
     .line 72
-    invoke-interface {v8}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v8}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 73
     .line 74
@@ -299,7 +299,7 @@
 
     .line 77
     .line 78
-    invoke-virtual {v8}, Landroid/animation/ObjectAnimator;->start()V
+    invoke-virtual {v8}, Landroid/animation/Animator;->start()V
 
     .line 79
     .line 80
@@ -317,7 +317,7 @@
     .line 86
     .line 87
     :cond_2
-    invoke-interface {v2}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 88
     .line 89
@@ -422,7 +422,7 @@
 
     .line 134
     .line 135
-    invoke-interface {v1}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v1}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 136
     .line 137

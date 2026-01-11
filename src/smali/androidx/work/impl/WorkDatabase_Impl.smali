@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field public volatile k:Lf0k;
+.field public volatile k:Ljqk;
 
-.field public volatile l:Lp36;
+.field public volatile l:Lq66;
 
-.field public volatile m:Lh0k;
+.field public volatile m:Llqk;
 
-.field public volatile n:LBgi;
+.field public volatile n:LtFi;
 
-.field public volatile o:LVZj;
+.field public volatile o:LZpk;
 
-.field public volatile p:LWZj;
+.field public volatile p:Laqk;
 
-.field public volatile q:LiJd;
+.field public volatile q:Ly0e;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
 
 # virtual methods
-.method public final e()Lir9;
+.method public final e()LiA9;
     .locals 10
 
     .line 1
@@ -59,7 +59,7 @@
     .line 10
     .line 11
     .line 12
-    new-instance v1, Lir9;
+    new-instance v1, LiA9;
 
     .line 13
     .line 14
@@ -99,7 +99,7 @@
     move-result-object v3
 
     .line 32
-    invoke-direct {v1, p0, v0, v2, v3}, Lir9;-><init>(Lm9f;Ljava/util/HashMap;Ljava/util/HashMap;[Ljava/lang/String;)V
+    invoke-direct {v1, p0, v0, v2, v3}, LiA9;-><init>(LErf;Ljava/util/HashMap;Ljava/util/HashMap;[Ljava/lang/String;)V
 
     .line 33
     .line 34
@@ -107,19 +107,19 @@
     return-object v1
 .end method
 
-.method public final f(Lw95;)LKbi;
+.method public final f(LLf5;)LEAi;
     .locals 6
 
     .line 1
-    new-instance v3, Lo9f;
+    new-instance v3, LFrf;
 
     .line 2
     .line 3
-    new-instance v0, LCZj;
+    new-instance v0, Lqph;
 
     .line 4
     .line 5
-    invoke-direct {v0, p0}, LCZj;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+    invoke-direct {v0, p0}, Lqph;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
 
     .line 6
     .line 7
@@ -132,12 +132,12 @@
 
     .line 11
     .line 12
-    invoke-direct {v3, p1, v0, v1, v2}, Lo9f;-><init>(Lw95;LcY1;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v3, p1, v0, v1, v2}, LFrf;-><init>(LLf5;LB12;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    new-instance v0, LIbi;
+    new-instance v0, LCAi;
 
     .line 16
     .line 17
@@ -147,24 +147,24 @@
     const/4 v5, 0x0
 
     .line 19
-    iget-object v1, p1, Lw95;->b:Landroid/content/Context;
+    iget-object v1, p1, LLf5;->b:Landroid/content/Context;
 
     .line 20
     .line 21
-    iget-object v2, p1, Lw95;->c:Ljava/lang/String;
+    iget-object v2, p1, LLf5;->c:Ljava/lang/String;
 
     .line 22
     .line 23
-    invoke-direct/range {v0 .. v5}, LIbi;-><init>(Landroid/content/Context;Ljava/lang/String;LHbi;ZZ)V
+    invoke-direct/range {v0 .. v5}, LCAi;-><init>(Landroid/content/Context;Ljava/lang/String;LBAi;ZZ)V
 
     .line 24
     .line 25
     .line 26
-    iget-object p1, p1, Lw95;->a:LJbi;
+    iget-object p1, p1, LLf5;->a:LDAi;
 
     .line 27
     .line 28
-    invoke-interface {p1, v0}, LJbi;->create(LIbi;)LKbi;
+    invoke-interface {p1, v0}, LDAi;->create(LCAi;)LEAi;
 
     .line 29
     .line 30
@@ -176,160 +176,148 @@
 .end method
 
 .method public final g()Ljava/util/List;
-    .locals 8
+    .locals 10
 
     .line 1
-    const/16 v0, 0xe
+    const/4 v0, 0x2
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
-    const/16 v1, 0xd
+    const/4 v2, 0x0
 
     .line 4
+    new-instance v3, LP8c;
+
     .line 5
-    new-instance v2, LiUb;
-
     .line 6
+    const/16 v4, 0xd
+
     .line 7
-    const/16 v3, 0xa
-
     .line 8
-    .line 9
-    invoke-direct {v2, v1, v0, v3}, LiUb;-><init>(III)V
+    const/16 v5, 0xe
 
+    .line 9
     .line 10
+    const/16 v6, 0x1c
+
     .line 11
     .line 12
-    new-instance v3, LiUb;
+    invoke-direct {v3, v4, v5, v6}, LP8c;-><init>(III)V
 
     .line 13
     .line 14
-    const/16 v4, 0xb
-
     .line 15
-    .line 16
-    invoke-direct {v3, v4}, LiUb;-><init>(I)V
+    new-instance v4, LP8c;
 
+    .line 16
     .line 17
+    invoke-direct {v4}, LP8c;-><init>()V
+
     .line 18
     .line 19
-    new-instance v4, LiUb;
-
     .line 20
+    new-instance v5, LBpk;
+
     .line 21
-    const/16 v5, 0x10
-
     .line 22
+    const/16 v6, 0x10
+
     .line 23
-    const/16 v6, 0x11
-
     .line 24
+    const/16 v7, 0x11
+
     .line 25
-    const/16 v7, 0xc
-
     .line 26
-    .line 27
-    invoke-direct {v4, v5, v6, v7}, LiUb;-><init>(III)V
+    invoke-direct {v5, v6, v7, v2}, LBpk;-><init>(III)V
 
+    .line 27
     .line 28
     .line 29
+    new-instance v6, LBpk;
+
     .line 30
-    new-instance v5, LiUb;
-
     .line 31
+    const/16 v8, 0x12
+
     .line 32
-    const/16 v7, 0x12
-
     .line 33
-    .line 34
-    invoke-direct {v5, v6, v7, v1}, LiUb;-><init>(III)V
+    invoke-direct {v6, v7, v8, v1}, LBpk;-><init>(III)V
 
+    .line 34
     .line 35
     .line 36
+    new-instance v7, LBpk;
+
     .line 37
-    new-instance v1, LiUb;
-
     .line 38
+    const/16 v9, 0x13
+
     .line 39
-    const/16 v6, 0x13
-
     .line 40
-    .line 41
-    invoke-direct {v1, v7, v6, v0}, LiUb;-><init>(III)V
+    invoke-direct {v7, v8, v9, v0}, LBpk;-><init>(III)V
 
+    .line 41
     .line 42
     .line 43
+    new-instance v8, LBpk;
+
     .line 44
-    new-instance v0, LiUb;
-
     .line 45
-    .line 46
-    const/16 v6, 0xf
+    invoke-direct {v8}, LBpk;-><init>()V
 
+    .line 46
     .line 47
     .line 48
-    invoke-direct {v0, v6}, LiUb;-><init>(I)V
+    const/4 v9, 0x6
 
     .line 49
+    new-array v9, v9, [LI8c;
+
     .line 50
     .line 51
-    const/4 v6, 0x6
+    aput-object v3, v9, v2
 
     .line 52
-    new-array v6, v6, [LcUb;
-
     .line 53
-    .line 54
-    const/4 v7, 0x0
+    aput-object v4, v9, v1
 
+    .line 54
     .line 55
-    aput-object v2, v6, v7
+    aput-object v5, v9, v0
 
     .line 56
     .line 57
-    const/4 v2, 0x1
+    const/4 v0, 0x3
 
     .line 58
-    aput-object v3, v6, v2
+    aput-object v6, v9, v0
 
     .line 59
     .line 60
-    const/4 v2, 0x2
+    const/4 v0, 0x4
 
     .line 61
-    aput-object v4, v6, v2
+    aput-object v7, v9, v0
 
     .line 62
     .line 63
-    const/4 v2, 0x3
+    const/4 v0, 0x5
 
     .line 64
-    aput-object v5, v6, v2
+    aput-object v8, v9, v0
 
     .line 65
     .line 66
-    const/4 v2, 0x4
+    invoke-static {v9}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     .line 67
-    aput-object v1, v6, v2
-
     .line 68
     .line 69
-    const/4 v1, 0x5
-
-    .line 70
-    aput-object v0, v6, v1
-
-    .line 71
-    .line 72
-    invoke-static {v6}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 73
-    .line 74
-    .line 75
     move-result-object v0
 
-    .line 76
+    .line 70
     return-object v0
 .end method
 
@@ -366,7 +354,7 @@
 
     .line 7
     .line 8
-    const-class v2, Lf0k;
+    const-class v2, Ljqk;
 
     .line 9
     .line 10
@@ -375,7 +363,7 @@
     .line 11
     .line 12
     .line 13
-    const-class v2, Lp36;
+    const-class v2, Lq66;
 
     .line 14
     .line 15
@@ -384,7 +372,7 @@
     .line 16
     .line 17
     .line 18
-    const-class v2, Lh0k;
+    const-class v2, Llqk;
 
     .line 19
     .line 20
@@ -393,7 +381,7 @@
     .line 21
     .line 22
     .line 23
-    const-class v2, LBgi;
+    const-class v2, LtFi;
 
     .line 24
     .line 25
@@ -402,7 +390,7 @@
     .line 26
     .line 27
     .line 28
-    const-class v2, LVZj;
+    const-class v2, LZpk;
 
     .line 29
     .line 30
@@ -411,7 +399,7 @@
     .line 31
     .line 32
     .line 33
-    const-class v2, LWZj;
+    const-class v2, Laqk;
 
     .line 34
     .line 35
@@ -420,7 +408,7 @@
     .line 36
     .line 37
     .line 38
-    const-class v2, LiJd;
+    const-class v2, Ly0e;
 
     .line 39
     .line 40
@@ -429,7 +417,7 @@
     .line 41
     .line 42
     .line 43
-    const-class v2, Lgye;
+    const-class v2, LUPe;
 
     .line 44
     .line 45
@@ -441,11 +429,11 @@
     return-object v0
 .end method
 
-.method public final p()Lp36;
+.method public final p()Lq66;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lp36;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lq66;
 
     .line 2
     .line 3
@@ -453,7 +441,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lp36;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lq66;
 
     .line 6
     .line 7
@@ -465,7 +453,7 @@
 
     .line 9
     :try_start_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lp36;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lq66;
 
     .line 10
     .line 11
@@ -473,16 +461,16 @@
 
     .line 12
     .line 13
-    new-instance v0, Lp36;
+    new-instance v0, Lq66;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0}, Lp36;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+    invoke-direct {v0, p0}, Lq66;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lp36;
+    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lq66;
 
     .line 19
     .line 20
@@ -498,7 +486,7 @@
     .line 23
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lp36;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->l:Lq66;
 
     .line 24
     .line 25
@@ -517,11 +505,11 @@
     throw v0
 .end method
 
-.method public final q()LiJd;
+.method public final q()Ly0e;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:LiJd;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:Ly0e;
 
     .line 2
     .line 3
@@ -529,7 +517,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:LiJd;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:Ly0e;
 
     .line 6
     .line 7
@@ -541,7 +529,7 @@
 
     .line 9
     :try_start_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:LiJd;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:Ly0e;
 
     .line 10
     .line 11
@@ -549,16 +537,16 @@
 
     .line 12
     .line 13
-    new-instance v0, LiJd;
+    new-instance v0, Ly0e;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0}, LiJd;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+    invoke-direct {v0, p0}, Ly0e;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:LiJd;
+    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:Ly0e;
 
     .line 19
     .line 20
@@ -574,7 +562,7 @@
     .line 23
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:LiJd;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->q:Ly0e;
 
     .line 24
     .line 25
@@ -593,11 +581,11 @@
     throw v0
 .end method
 
-.method public final r()LBgi;
-    .locals 1
+.method public final r()LtFi;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LBgi;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LtFi;
 
     .line 2
     .line 3
@@ -605,7 +593,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LBgi;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LtFi;
 
     .line 6
     .line 7
@@ -617,7 +605,7 @@
 
     .line 9
     :try_start_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LBgi;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LtFi;
 
     .line 10
     .line 11
@@ -625,16 +613,144 @@
 
     .line 12
     .line 13
-    new-instance v0, LBgi;
+    new-instance v0, LtFi;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0}, LBgi;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LBgi;
+    iput-object p0, v0, LtFi;->a:Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    new-instance v1, Lp66;
+
+    .line 21
+    .line 22
+    const/4 v2, 0x2
+
+    .line 23
+    invoke-direct {v1, p0, v2}, Lp66;-><init>(LErf;I)V
+
+    .line 24
+    .line 25
+    .line 26
+    iput-object v1, v0, LtFi;->b:Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    new-instance v1, LsFi;
+
+    .line 29
+    .line 30
+    const/4 v2, 0x0
+
+    .line 31
+    invoke-direct {v1, p0, v2}, LsFi;-><init>(LErf;I)V
+
+    .line 32
+    .line 33
+    .line 34
+    iput-object v1, v0, LtFi;->c:Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    new-instance v1, LsFi;
+
+    .line 37
+    .line 38
+    const/4 v2, 0x1
+
+    .line 39
+    invoke-direct {v1, p0, v2}, LsFi;-><init>(LErf;I)V
+
+    .line 40
+    .line 41
+    .line 42
+    iput-object v1, v0, LtFi;->t:Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LtFi;
+
+    .line 45
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :catchall_0
+    move-exception v0
+
+    .line 48
+    goto :goto_1
+
+    .line 49
+    :cond_1
+    :goto_0
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LtFi;
+
+    .line 50
+    .line 51
+    monitor-exit p0
+
+    .line 52
+    return-object v0
+
+    .line 53
+    :goto_1
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 54
+    throw v0
+.end method
+
+.method public final s()LZpk;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LZpk;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LZpk;
+
+    .line 6
+    .line 7
+    return-object v0
+
+    .line 8
+    :cond_0
+    monitor-enter p0
+
+    .line 9
+    :try_start_0
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LZpk;
+
+    .line 10
+    .line 11
+    if-nez v0, :cond_1
+
+    .line 12
+    .line 13
+    new-instance v0, LZpk;
+
+    .line 14
+    .line 15
+    invoke-direct {v0, p0}, LZpk;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LZpk;
 
     .line 19
     .line 20
@@ -650,7 +766,7 @@
     .line 23
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->n:LBgi;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LZpk;
 
     .line 24
     .line 25
@@ -669,11 +785,11 @@
     throw v0
 .end method
 
-.method public final s()LVZj;
+.method public final t()Laqk;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LVZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:Laqk;
 
     .line 2
     .line 3
@@ -681,7 +797,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LVZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:Laqk;
 
     .line 6
     .line 7
@@ -693,7 +809,7 @@
 
     .line 9
     :try_start_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LVZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:Laqk;
 
     .line 10
     .line 11
@@ -701,16 +817,16 @@
 
     .line 12
     .line 13
-    new-instance v0, LVZj;
+    new-instance v0, Laqk;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0}, LVZj;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+    invoke-direct {v0, p0}, Laqk;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LVZj;
+    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:Laqk;
 
     .line 19
     .line 20
@@ -726,7 +842,7 @@
     .line 23
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->o:LVZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:Laqk;
 
     .line 24
     .line 25
@@ -745,11 +861,11 @@
     throw v0
 .end method
 
-.method public final t()LWZj;
+.method public final u()Ljqk;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:LWZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Ljqk;
 
     .line 2
     .line 3
@@ -757,7 +873,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:LWZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Ljqk;
 
     .line 6
     .line 7
@@ -769,7 +885,7 @@
 
     .line 9
     :try_start_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:LWZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Ljqk;
 
     .line 10
     .line 11
@@ -777,16 +893,16 @@
 
     .line 12
     .line 13
-    new-instance v0, LWZj;
+    new-instance v0, Ljqk;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0}, LWZj;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+    invoke-direct {v0, p0}, Ljqk;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:LWZj;
+    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Ljqk;
 
     .line 19
     .line 20
@@ -802,7 +918,7 @@
     .line 23
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->p:LWZj;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Ljqk;
 
     .line 24
     .line 25
@@ -821,11 +937,11 @@
     throw v0
 .end method
 
-.method public final u()Lf0k;
+.method public final v()Llqk;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Lf0k;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Llqk;
 
     .line 2
     .line 3
@@ -833,7 +949,7 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Lf0k;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Llqk;
 
     .line 6
     .line 7
@@ -845,7 +961,7 @@
 
     .line 9
     :try_start_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Lf0k;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Llqk;
 
     .line 10
     .line 11
@@ -853,16 +969,16 @@
 
     .line 12
     .line 13
-    new-instance v0, Lf0k;
+    new-instance v0, Llqk;
 
     .line 14
     .line 15
-    invoke-direct {v0, p0}, Lf0k;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
+    invoke-direct {v0, p0}, Llqk;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
 
     .line 16
     .line 17
     .line 18
-    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Lf0k;
+    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Llqk;
 
     .line 19
     .line 20
@@ -878,83 +994,7 @@
     .line 23
     :cond_1
     :goto_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->k:Lf0k;
-
-    .line 24
-    .line 25
-    monitor-exit p0
-
-    .line 26
-    return-object v0
-
-    .line 27
-    :goto_1
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 28
-    throw v0
-.end method
-
-.method public final v()Lh0k;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Lh0k;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Lh0k;
-
-    .line 6
-    .line 7
-    return-object v0
-
-    .line 8
-    :cond_0
-    monitor-enter p0
-
-    .line 9
-    :try_start_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Lh0k;
-
-    .line 10
-    .line 11
-    if-nez v0, :cond_1
-
-    .line 12
-    .line 13
-    new-instance v0, Lh0k;
-
-    .line 14
-    .line 15
-    invoke-direct {v0, p0}, Lh0k;-><init>(Landroidx/work/impl/WorkDatabase_Impl;)V
-
-    .line 16
-    .line 17
-    .line 18
-    iput-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Lh0k;
-
-    .line 19
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :catchall_0
-    move-exception v0
-
-    .line 22
-    goto :goto_1
-
-    .line 23
-    :cond_1
-    :goto_0
-    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Lh0k;
+    iget-object v0, p0, Landroidx/work/impl/WorkDatabase_Impl;->m:Llqk;
 
     .line 24
     .line 25

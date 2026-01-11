@@ -1,632 +1,357 @@
 .class public final Lv1c;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lk9d;
+
+
+# static fields
+.field public static final i0:LL7d;
+
+.field public static final j0:LL7d;
+
+.field public static final k0:LL7d;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final X:LCBe;
 
-.field public final synthetic b:Ly1c;
+.field public final Y:LYmd;
+
+.field public final Z:Lz7h;
+
+.field public final a:Ldd0;
+
+.field public final b:LYG2;
+
+.field public final c:LdH2;
+
+.field public e0:LTV6;
+
+.field public final f0:Lio/reactivex/rxjava3/disposables/SerialDisposable;
+
+.field public final g0:Lnp0;
+
+.field public final h0:Ljava/lang/String;
+
+.field public final t:Lkmh;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ly1c;I)V
+.method static constructor <clinit>()V
+    .locals 9
+
+    .line 1
+    sget-object v6, Ls1c;->b:Ls1c;
+
+    .line 2
+    .line 3
+    sget-object v5, LK7d;->m0:LK7d;
+
+    .line 4
+    .line 5
+    new-instance v0, LL7d;
+
+    .line 6
+    .line 7
+    const/4 v3, 0x0
+
+    .line 8
+    const/4 v4, 0x0
+
+    .line 9
+    const v1, 0x7f132388
+
+    .line 10
+    .line 11
+    .line 12
+    const v2, 0x7f080c97
+
+    .line 13
+    .line 14
+    .line 15
+    const/16 v7, 0x54
+
+    .line 16
+    .line 17
+    invoke-direct/range {v0 .. v7}, LL7d;-><init>(IIIZLK7d;Ljava/lang/Object;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    sput-object v0, Lv1c;->i0:LL7d;
+
+    .line 21
+    .line 22
+    sget-object v7, Ls1c;->a:Ls1c;
+
+    .line 23
+    .line 24
+    sget-object v6, LK7d;->n0:LK7d;
+
+    .line 25
+    .line 26
+    new-instance v1, LL7d;
+
+    .line 27
+    .line 28
+    const/4 v5, 0x0
+
+    .line 29
+    const v2, 0x7f132387
+
+    .line 30
+    .line 31
+    .line 32
+    const v3, 0x7f080bf3
+
+    .line 33
+    .line 34
+    .line 35
+    const/16 v8, 0x54
+
+    .line 36
+    .line 37
+    invoke-direct/range {v1 .. v8}, LL7d;-><init>(IIIZLK7d;Ljava/lang/Object;I)V
+
+    .line 38
+    .line 39
+    .line 40
+    sput-object v1, Lv1c;->j0:LL7d;
+
+    .line 41
+    .line 42
+    sget-object v2, LLqj;->n:LL7d;
+
+    .line 43
+    .line 44
+    sget-object v6, Ls1c;->c:Ls1c;
+
+    .line 45
+    .line 46
+    const/4 v5, 0x0
+
+    .line 47
+    const/4 v3, 0x0
+
+    .line 48
+    const/16 v7, 0x7f
+
+    .line 49
+    .line 50
+    invoke-static/range {v2 .. v7}, LL7d;->a(LL7d;IILandroid/graphics/drawable/Drawable;Ljava/lang/Object;I)LL7d;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    sput-object v0, Lv1c;->k0:LL7d;
+
+    .line 55
+    .line 56
+    return-void
+.end method
+
+.method public constructor <init>(Ldd0;LYG2;LdH2;Lkmh;LCBe;LYmd;Lz7h;)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lv1c;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lv1c;->b:Ly1c;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lv1c;->a:Ldd0;
 
-    const/4 p1, 0x0
+    .line 5
+    .line 6
+    iput-object p2, p0, Lv1c;->b:LYG2;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 7
+    .line 8
+    iput-object p3, p0, Lv1c;->c:LdH2;
 
+    .line 9
+    .line 10
+    iput-object p4, p0, Lv1c;->t:Lkmh;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lv1c;->X:LCBe;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Lv1c;->Y:LYmd;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, Lv1c;->Z:Lz7h;
+
+    .line 17
+    .line 18
+    new-instance p1, Lio/reactivex/rxjava3/disposables/SerialDisposable;
+
+    .line 19
+    .line 20
+    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/SerialDisposable;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object p1, p0, Lv1c;->f0:Lio/reactivex/rxjava3/disposables/SerialDisposable;
+
+    .line 24
+    .line 25
+    sget-object p1, LY18;->Z:LY18;
+
+    .line 26
+    .line 27
+    const-string p2, "MessageActionPlugin"
+
+    .line 28
+    .line 29
+    invoke-static {p1, p1, p2}, LBv7;->b(LY18;LY18;Ljava/lang/String;)Lnp0;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    iput-object p1, p0, Lv1c;->g0:Lnp0;
+
+    .line 34
+    .line 35
+    const-string p1, "MessageAction"
+
+    .line 36
+    .line 37
+    iput-object p1, p0, Lv1c;->h0:Ljava/lang/String;
+
+    .line 38
+    .line 39
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 20
+.method public final N(Lkdd;)LWdd;
+    .locals 2
 
     .line 1
-    move-object/from16 v0, p0
+    invoke-virtual {p1}, Lkdd;->b()LTV6;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    const/4 v2, 0x0
+    move-result-object v0
 
     .line 5
-    iget-object v3, v0, Lv1c;->b:Ly1c;
+    iput-object v0, p0, Lv1c;->e0:LTV6;
 
     .line 6
     .line 7
-    sget-object v4, Li7j;->a:Li7j;
+    iget-object v0, p1, Lkdd;->Y:LIF2;
 
     .line 8
     .line 9
-    iget v5, v0, Lv1c;->a:I
+    iget-object v0, v0, LIF2;->c:Ljava/lang/Object;
 
     .line 10
     .line 11
-    packed-switch v5, :pswitch_data_0
+    check-cast v0, Li9d;
 
     .line 12
     .line 13
+    sget-object v1, Llu6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 14
-    iget-object v2, v3, Ly1c;->i:LXfi;
-
     .line 15
-    .line 16
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object v1, p0, Lv1c;->f0:Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
+    .line 16
     .line 17
+    invoke-virtual {v0, v1}, Li9d;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 18
     .line 19
-    move-result-object v2
-
     .line 20
-    check-cast v2, LZjg;
+    new-instance v0, Lu1c;
 
     .line 21
     .line 22
-    invoke-virtual {v2}, LZjg;->a()Lio/reactivex/rxjava3/internal/operators/maybe/MaybeIgnoreElementCompletable;
+    invoke-direct {v0, p0, p1}, Lu1c;-><init>(Lv1c;Lkdd;)V
 
     .line 23
     .line 24
     .line 25
-    move-result-object v2
+    return-object v0
+.end method
 
-    .line 26
-    new-instance v5, Lx1c;
+.method public final a(Ljava/lang/String;ZZ)V
+    .locals 7
 
-    .line 27
-    .line 28
-    invoke-direct {v5, v1, v3}, Lx1c;-><init>(ILjava/lang/Object;)V
+    .line 1
+    iget-object v1, p0, Lv1c;->c:LdH2;
 
-    .line 29
-    .line 30
-    .line 31
-    iget-object v1, v3, Ly1c;->f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .line 2
+    .line 3
+    iget-object v5, p0, Lv1c;->t:Lkmh;
 
-    .line 32
-    .line 33
-    invoke-static {v2, v5, v1}, LLZj;->x0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 4
+    .line 5
+    iget-object v0, p0, Lv1c;->b:LYG2;
 
-    .line 34
-    .line 35
-    .line 36
-    return-object v4
+    .line 6
+    .line 7
+    const/16 v6, 0x20
 
-    .line 37
-    :pswitch_0
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 8
+    .line 9
+    move-object v2, p1
 
-    .line 38
-    .line 39
-    .line 40
-    new-instance v7, LtKb;
+    .line 10
+    move v3, p2
 
-    .line 41
-    .line 42
-    const/4 v1, 0x7
+    .line 11
+    move v4, p3
 
-    .line 43
-    invoke-direct {v7, v1, v3}, LtKb;-><init>(ILjava/lang/Object;)V
+    .line 12
+    invoke-static/range {v0 .. v6}, LCMk;->p(LYG2;LdH2;Ljava/lang/String;ZZLkmh;I)V
 
-    .line 44
-    .line 45
-    .line 46
-    iget-object v1, v3, Ly1c;->h:LXfi;
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
 
-    .line 47
-    .line 48
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+.method public final b(Lkdd;)V
+    .locals 0
 
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v1
+    .line 1
+    return-void
+.end method
 
-    .line 52
-    check-cast v1, LJ7d;
+.method public final k0()Ljava/lang/String;
+    .locals 1
 
-    .line 53
-    .line 54
-    new-instance v6, Lwa4;
+    .line 1
+    iget-object v0, p0, Lv1c;->h0:Ljava/lang/String;
 
-    .line 55
-    .line 56
-    sget-object v12, Lq0h;->i1:Lq0h;
+    .line 2
+    .line 3
+    return-object v0
+.end method
 
-    .line 57
-    .line 58
-    const/4 v10, 0x0
+.method public final q0()Z
+    .locals 1
 
-    .line 59
-    const/16 v14, 0x5e
+    .line 1
+    const/4 v0, 0x0
 
-    .line 60
-    .line 61
-    const/4 v8, 0x0
-
-    .line 62
-    const/4 v9, 0x0
-
-    .line 63
-    const/4 v11, 0x0
-
-    .line 64
-    const/4 v13, 0x0
-
-    .line 65
-    invoke-direct/range {v6 .. v14}, Lwa4;-><init>(Lla4;LcSa;Lcqc;Lw94;Lcom/snapchat/client/messaging/SourcePage;Lq0h;LwEd;I)V
-
-    .line 66
-    .line 67
-    .line 68
-    invoke-interface {v1, v6}, LJ7d;->b(Ljava/lang/Object;)V
-
-    .line 69
-    .line 70
-    .line 71
-    return-object v4
-
-    .line 72
-    :pswitch_1
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 73
-    .line 74
-    .line 75
-    new-instance v5, LaH7;
-
-    .line 76
-    .line 77
-    sget-object v6, LXV7;->h0:LcSa;
-
-    .line 78
-    .line 79
-    sget v7, Lcom/snap/messaging/createchat/dagger/CreateChatV2Fragment;->E0:I
-
-    .line 80
-    .line 81
-    sget-object v7, Lq0h;->i1:Lq0h;
-
-    .line 82
-    .line 83
-    const/4 v8, 0x5
-
-    .line 84
-    invoke-static {v7, v1, v8}, LyQi;->i(Lq0h;II)Lcom/snap/messaging/createchat/dagger/CreateChatV2Fragment;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object v1
-
-    .line 88
-    new-instance v7, Lkqc;
-
-    .line 89
-    .line 90
-    invoke-direct {v7}, Lkqc;-><init>()V
-
-    .line 91
-    .line 92
-    .line 93
-    sget-object v8, LXV7;->k0:LZpc;
-
-    .line 94
-    .line 95
-    invoke-virtual {v7, v8}, Ljqc;->c(Ldqc;)Ljqc;
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-object v7
-
-    .line 99
-    check-cast v7, Lkqc;
-
-    .line 100
-    .line 101
-    invoke-virtual {v7}, Lkqc;->d()LrK5;
-
-    .line 102
-    .line 103
-    .line 104
-    move-result-object v7
-
-    .line 105
-    invoke-direct {v5, v6, v1, v7}, LaH7;-><init>(LcSa;Lcom/snapchat/deck/fragment/MainPageFragment;Lmqc;)V
-
-    .line 106
-    .line 107
-    .line 108
-    sget-object v1, LXV7;->j0:Lcqc;
-
-    .line 109
-    .line 110
-    iget-object v6, v3, Ly1c;->b:LTqc;
-
-    .line 111
-    .line 112
-    invoke-virtual {v6, v5, v1, v2}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 113
-    .line 114
-    .line 115
-    iget-object v1, v3, Ly1c;->f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 116
-    .line 117
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 118
-    .line 119
-    .line 120
-    return-object v4
-
-    .line 121
-    :pswitch_2
-    iget-object v1, v3, Ly1c;->j:LXfi;
-
-    .line 122
-    .line 123
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v1
-
-    .line 127
-    check-cast v1, LG23;
-
-    .line 128
-    .line 129
-    invoke-virtual {v1}, LG23;->a()LH23;
-
-    .line 130
-    .line 131
-    .line 132
-    move-result-object v1
-
-    .line 133
-    iget-object v5, v3, Ly1c;->b:LTqc;
-
-    .line 134
-    .line 135
-    iget-object v6, v1, Lm7g;->h0:Lcqc;
-
-    .line 136
-    .line 137
-    invoke-virtual {v5, v1, v6, v2}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 138
-    .line 139
-    .line 140
-    iget-object v1, v3, Ly1c;->f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 141
-    .line 142
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 143
-    .line 144
-    .line 145
-    return-object v4
-
-    .line 146
-    :pswitch_3
-    iget-object v7, v0, Lv1c;->b:Ly1c;
-
-    .line 147
-    .line 148
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 149
-    .line 150
-    .line 151
-    new-instance v1, LVfc;
-
-    .line 152
-    .line 153
-    new-instance v3, LWfc;
-
-    .line 154
-    .line 155
-    new-instance v13, LV28;
-
-    .line 156
-    .line 157
-    new-instance v5, LkCa;
-
-    .line 158
-    .line 159
-    const-string v10, "onFriendClick(Lcom/snap/friending/api/event/FriendClickEvent;)V"
-
-    .line 160
-    .line 161
-    const/4 v11, 0x0
-
-    .line 162
-    const/4 v6, 0x1
-
-    .line 163
-    const-class v8, Ly1c;
-
-    .line 164
-    .line 165
-    const-string v9, "onFriendClick"
-
-    .line 166
-    .line 167
-    const/16 v12, 0xf
-
-    .line 168
-    .line 169
-    invoke-direct/range {v5 .. v12}, LkCa;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
-    .line 170
-    .line 171
-    .line 172
-    move-object v14, v5
-
-    .line 173
-    new-instance v5, LkCa;
-
-    .line 174
-    .line 175
-    const-string v10, "onFriendAvatarLongClick(Lcom/snap/friending/api/event/FriendAvatarLongClickEvent;)V"
-
-    .line 176
-    .line 177
-    const/4 v11, 0x0
-
-    .line 178
-    const/4 v6, 0x1
-
-    .line 179
-    const-class v8, Ly1c;
-
-    .line 180
-    .line 181
-    const-string v9, "onFriendAvatarLongClick"
-
-    .line 182
-    .line 183
-    const/16 v12, 0x10
-
-    .line 184
-    .line 185
-    invoke-direct/range {v5 .. v12}, LkCa;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
-    .line 186
-    .line 187
-    .line 188
-    const/16 v6, 0xa
-
-    .line 189
-    .line 190
-    invoke-direct {v13, v14, v2, v5, v6}, LV28;-><init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;I)V
-
-    .line 191
-    .line 192
-    .line 193
-    const/16 v17, 0x0
-
-    .line 194
-    .line 195
-    const/16 v19, 0x1ffd
-
-    .line 196
-    .line 197
-    const/4 v9, 0x0
-
-    .line 198
-    const/4 v11, 0x0
-
-    .line 199
-    const/4 v12, 0x0
-
-    .line 200
-    move-object v10, v13
-
-    .line 201
-    const/4 v13, 0x0
-
-    .line 202
-    const/4 v14, 0x0
-
-    .line 203
-    const/4 v15, 0x0
-
-    .line 204
-    const/16 v16, 0x0
-
-    .line 205
-    .line 206
-    const/16 v18, 0x0
-
-    .line 207
-    .line 208
-    move-object v8, v3
-
-    .line 209
-    invoke-direct/range {v8 .. v19}, LWfc;-><init>(LZfc;LV28;ZZZLjava/lang/Integer;Ljava/lang/String;LPfc;ZLlL7;I)V
-
-    .line 210
-    .line 211
-    .line 212
-    invoke-direct {v1, v8}, LVfc;-><init>(LWfc;)V
-
-    .line 213
-    .line 214
-    .line 215
-    iget-object v2, v7, Ly1c;->h:LXfi;
-
-    .line 216
-    .line 217
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 218
-    .line 219
-    .line 220
-    move-result-object v2
-
-    .line 221
-    check-cast v2, LJ7d;
-
-    .line 222
-    .line 223
-    new-instance v3, LOfc;
-
-    .line 224
-    .line 225
-    invoke-direct {v3, v1}, LOfc;-><init>(LVfc;)V
-
-    .line 226
-    .line 227
-    .line 228
-    invoke-interface {v2, v3}, LJ7d;->b(Ljava/lang/Object;)V
-
-    .line 229
-    .line 230
-    .line 231
-    iget-object v1, v7, Ly1c;->f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 232
-    .line 233
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 234
-    .line 235
-    .line 236
-    return-object v4
-
-    .line 237
-    :pswitch_4
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 238
-    .line 239
-    .line 240
-    new-instance v1, LaH7;
-
-    .line 241
-    .line 242
-    sget-object v5, LI5g;->e0:LcSa;
-
-    .line 243
-    .line 244
-    iget-object v6, v3, Ly1c;->d:LfY4;
-
-    .line 245
-    .line 246
-    invoke-virtual {v6}, LfY4;->get()Ljava/lang/Object;
-
-    .line 247
-    .line 248
-    .line 249
-    move-result-object v6
-
-    .line 250
-    check-cast v6, Lq19;
-
-    .line 251
-    .line 252
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 253
-    .line 254
-    .line 255
-    new-instance v6, Lcom/snap/identity/ui/settings/customemojis/SettingsCustomizeEmojisFragment;
-
-    .line 256
-    .line 257
-    invoke-direct {v6}, Lcom/snap/identity/ui/settings/customemojis/SettingsCustomizeEmojisFragment;-><init>()V
-
-    .line 258
-    .line 259
-    .line 260
-    new-instance v7, Lkqc;
-
-    .line 261
-    .line 262
-    invoke-direct {v7}, Lkqc;-><init>()V
-
-    .line 263
-    .line 264
-    .line 265
-    sget-object v8, LI5g;->h0:LZpc;
-
-    .line 266
-    .line 267
-    invoke-virtual {v7, v8}, Ljqc;->c(Ldqc;)Ljqc;
-
-    .line 268
-    .line 269
-    .line 270
-    move-result-object v7
-
-    .line 271
-    check-cast v7, Lkqc;
-
-    .line 272
-    .line 273
-    invoke-virtual {v7}, Lkqc;->d()LrK5;
-
-    .line 274
-    .line 275
-    .line 276
-    move-result-object v7
-
-    .line 277
-    invoke-direct {v1, v5, v6, v7}, LaH7;-><init>(LcSa;Lcom/snapchat/deck/fragment/MainPageFragment;Lmqc;)V
-
-    .line 278
-    .line 279
-    .line 280
-    sget-object v5, LI5g;->i0:Lcqc;
-
-    .line 281
-    .line 282
-    iget-object v6, v3, Ly1c;->b:LTqc;
-
-    .line 283
-    .line 284
-    invoke-virtual {v6, v1, v5, v2}, LTqc;->w(LWRa;Ldqc;LPpc;)V
-
-    .line 285
-    .line 286
-    .line 287
-    iget-object v1, v3, Ly1c;->f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 288
-    .line 289
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 290
-    .line 291
-    .line 292
-    return-object v4
-
-    .line 293
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    return v0
 .end method

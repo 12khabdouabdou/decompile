@@ -1,20 +1,20 @@
 .class public final Lxnj;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
 .field public a:I
 
-.field public b:Lynj;
+.field public b:J
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -26,34 +26,38 @@
 
     .line 6
     .line 7
-    const/4 v0, 0x0
+    const-wide/16 v0, 0x0
 
     .line 8
-    iput-object v0, p0, Lxnj;->b:Lynj;
-
     .line 9
-    .line 10
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-wide v0, p0, Lxnj;->b:J
 
+    .line 10
     .line 11
+    const/4 v0, 0x0
+
     .line 12
-    const/4 v0, -0x1
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 13
+    .line 14
+    const/4 v0, -0x1
+
+    .line 15
     iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
-    .line 14
-    .line 15
+    .line 16
+    .line 17
     return-void
 .end method
 
 
 # virtual methods
 .method public final computeSerializedSize()I
-    .locals 3
+    .locals 5
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -68,39 +72,42 @@
     const/4 v2, 0x1
 
     .line 8
-    if-ne v1, v2, :cond_0
+    and-int/2addr v1, v2
 
     .line 9
+    if-eqz v1, :cond_0
+
     .line 10
-    iget-object v1, p0, Lxnj;->b:Lynj;
-
     .line 11
-    .line 12
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    iget-wide v3, p0, Lxnj;->b:J
 
+    .line 12
     .line 13
+    invoke-static {v2, v3, v4}, Lbd3;->t(IJ)I
+
     .line 14
     .line 15
+    .line 16
     move-result v1
 
-    .line 16
+    .line 17
     add-int/2addr v1, v0
 
-    .line 17
+    .line 18
     return v1
 
-    .line 18
+    .line 19
     :cond_0
     return v0
 .end method
 
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 2
 
     .line 1
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     .line 2
     .line 3
@@ -108,11 +115,11 @@
     move-result v0
 
     .line 5
-    if-eqz v0, :cond_3
+    if-eqz v0, :cond_2
 
     .line 6
     .line 7
-    const/16 v1, 0xa
+    const/16 v1, 0x8
 
     .line 8
     .line 9
@@ -120,7 +127,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     .line 12
     .line 13
@@ -136,54 +143,40 @@
 
     .line 18
     :cond_1
-    iget v0, p0, Lxnj;->a:I
+    invoke-virtual {p1}, LZc3;->s()J
 
     .line 19
     .line 20
-    const/4 v1, 0x1
-
     .line 21
-    if-eq v0, v1, :cond_2
+    move-result-wide v0
 
     .line 22
+    iput-wide v0, p0, Lxnj;->b:J
+
     .line 23
-    new-instance v0, Lynj;
-
     .line 24
-    .line 25
-    invoke-direct {v0}, Lynj;-><init>()V
+    iget v0, p0, Lxnj;->a:I
 
+    .line 25
     .line 26
+    or-int/lit8 v0, v0, 0x1
+
     .line 27
     .line 28
-    iput-object v0, p0, Lxnj;->b:Lynj;
+    iput v0, p0, Lxnj;->a:I
 
     .line 29
     .line 30
-    :cond_2
-    iget-object v0, p0, Lxnj;->b:Lynj;
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    .line 33
-    .line 34
-    .line 35
-    iput v1, p0, Lxnj;->a:I
-
-    .line 36
-    .line 37
     goto :goto_0
 
-    .line 38
-    :cond_3
+    .line 31
+    :cond_2
     :goto_1
     return-object p0
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 2
+.method public final writeTo(Lbd3;)V
+    .locals 4
 
     .line 1
     iget v0, p0, Lxnj;->a:I
@@ -193,24 +186,27 @@
     const/4 v1, 0x1
 
     .line 4
-    if-ne v0, v1, :cond_0
+    and-int/2addr v0, v1
 
     .line 5
+    if-eqz v0, :cond_0
+
     .line 6
-    iget-object v0, p0, Lxnj;->b:Lynj;
-
     .line 7
-    .line 8
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    iget-wide v2, p0, Lxnj;->b:J
 
+    .line 8
     .line 9
+    invoke-virtual {p1, v1, v2, v3}, Lbd3;->U(IJ)V
+
     .line 10
     .line 11
-    :cond_0
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
     .line 12
+    :cond_0
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
     .line 13
     .line 14
+    .line 15
     return-void
 .end method

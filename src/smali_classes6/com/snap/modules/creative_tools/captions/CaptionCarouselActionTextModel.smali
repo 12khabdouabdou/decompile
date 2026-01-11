@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/creative_tools/captions/CaptionCarouselActionTextModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'text\':s?,\'textRange\':r:\'[0]\',\'entityType\':r?<e>:\'[1]\',\'entityId\':s?,\'color\':s?,\'underline\':b@?,\'bold\':b@?,\'italic\':b@?,\'entity\':r?:\'[2]\'"
     typeReferences = {

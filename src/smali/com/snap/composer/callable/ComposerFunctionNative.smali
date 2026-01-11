@@ -13,7 +13,7 @@
 
 
 # static fields
-.field public static final Companion:LVv3;
+.field public static final Companion:Lfz3;
 
 .field public static final FLAGS_ALLOW_THROTTLING:I = 0x4
 
@@ -30,12 +30,20 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, LVv3;
+    .line 1
+    new-instance v0, Lfz3;
 
-    invoke-direct {v0}, LVv3;-><init>()V
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:LVv3;
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:Lfz3;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -72,25 +80,144 @@
 .method public static final performFromNative(Lcom/snap/composer/callable/ComposerFunction;J)V
     .locals 1
 
-    sget-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:LVv3;
+    .line 1
+    sget-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:Lfz3;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2}, LVv3;->b(Lcom/snap/composer/callable/ComposerFunction;J)V
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, Lcom/snap/composer/utils/ComposerMarshallerCPP;->Companion:LtB3;
 
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-static {p1, p2}, LtB3;->b(J)Lcom/snap/composer/utils/ComposerMarshallerCPP;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    :try_start_0
+    invoke-interface {p0, p1}, Lcom/snap/composer/callable/ComposerFunction;->perform(Lcom/snap/composer/utils/ComposerMarshaller;)Z
+    :try_end_0
+    .catch Lcom/snap/composer/exceptions/ComposerException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 16
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :catch_0
+    move-exception p0
+
+    .line 20
+    :try_start_1
+    invoke-static {p0}, LgWk;->d(Ljava/lang/Throwable;)Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p0
+
+    .line 24
+    invoke-virtual {p1, p0}, Lcom/snap/composer/utils/ComposerMarshallerCPP;->setError(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    :goto_0
+    invoke-static {p1}, LtB3;->a(Lcom/snap/composer/utils/ComposerMarshallerCPP;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 28
+    .line 29
+    .line 30
     return-void
+
+    .line 31
+    :catchall_0
+    move-exception p0
+
+    .line 32
+    sget-object p1, Lcom/snap/composer/exceptions/GlobalExceptionHandler;->Companion:Lcom/snap/composer/exceptions/GlobalExceptionHandler$Companion;
+
+    .line 33
+    .line 34
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-static {p0}, Lcom/snap/composer/exceptions/GlobalExceptionHandler$Companion;->b(Ljava/lang/Throwable;)V
+
+    .line 38
+    .line 39
+    .line 40
+    const/4 p0, 0x0
+
+    .line 41
+    throw p0
 .end method
 
 .method public static final performRunnableFromNative(Ljava/lang/Runnable;)V
     .locals 1
 
-    sget-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:LVv3;
+    .line 1
+    sget-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:Lfz3;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, LVv3;->c(Ljava/lang/Runnable;)V
+    .line 4
+    .line 5
+    .line 6
+    :try_start_0
+    invoke-interface {p0}, Ljava/lang/Runnable;->run()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
+    .line 7
+    .line 8
+    .line 9
     return-void
+
+    .line 10
+    :catchall_0
+    move-exception p0
+
+    .line 11
+    sget-object v0, Lcom/snap/composer/exceptions/GlobalExceptionHandler;->Companion:Lcom/snap/composer/exceptions/GlobalExceptionHandler$Companion;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {p0}, Lcom/snap/composer/exceptions/GlobalExceptionHandler$Companion;->b(Ljava/lang/Throwable;)V
+
+    .line 17
+    .line 18
+    .line 19
+    const/4 p0, 0x0
+
+    .line 20
+    throw p0
 .end method
 
 
@@ -98,15 +225,15 @@
 .method public final perform(I[Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    .line 3
+    .line 5
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
-    .line 4
+    .line 6
     invoke-virtual {v0}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->create()Lcom/snap/composer/utils/ComposerMarshaller;
 
     move-result-object v0
 
-    .line 5
+    .line 7
     array-length v1, p2
 
     const/4 v2, 0x0
@@ -116,14 +243,14 @@
 
     aget-object v3, p2, v2
 
-    .line 6
+    .line 8
     invoke-virtual {v0, v3}, Lcom/snap/composer/utils/ComposerMarshaller;->pushUntyped(Ljava/lang/Object;)I
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 7
+    .line 9
     :cond_0
     invoke-virtual {p0, p1, v0}, Lcom/snap/composer/callable/ComposerFunctionNative;->perform(ILcom/snap/composer/utils/ComposerMarshaller;)Z
 
@@ -133,7 +260,7 @@
 
     const/4 p1, -0x1
 
-    .line 8
+    .line 10
     invoke-virtual {v0, p1}, Lcom/snap/composer/utils/ComposerMarshaller;->getUntyped(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -143,7 +270,7 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 9
+    .line 11
     :goto_1
     invoke-virtual {v0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->destroy()V
 
@@ -155,7 +282,7 @@
 
     const/4 v0, 0x0
 
-    .line 10
+    .line 12
     invoke-virtual {p0, v0, p1}, Lcom/snap/composer/callable/ComposerFunctionNative;->perform(I[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -164,10 +291,10 @@
 .end method
 
 .method public final perform(ILcom/snap/composer/utils/ComposerMarshaller;)Z
-    .locals 6
+    .locals 5
 
     .line 2
-    sget-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:LVv3;
+    sget-object v0, Lcom/snap/composer/callable/ComposerFunctionNative;->Companion:Lfz3;
 
     invoke-virtual {p0}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
@@ -175,11 +302,13 @@
 
     invoke-virtual {p2}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
 
-    move-result-wide v4
+    move-result-wide v3
 
-    move v3, p1
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static/range {v0 .. v5}, LVv3;->a(LVv3;JIJ)Z
+    .line 4
+    invoke-static {v1, v2, p1, v3, v4}, Lcom/snap/composer/callable/ComposerFunctionNative;->access$nativePerform(JIJ)Z
 
     move-result p1
 

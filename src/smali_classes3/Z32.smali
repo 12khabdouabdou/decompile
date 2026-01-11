@@ -1,191 +1,88 @@
 .class public final LZ32;
-.super LW42;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LI42;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Lp22;
+.field public final synthetic a:I
 
-.field public final b:Lrc2;
+.field public final synthetic b:LY62;
+
+.field public final synthetic c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lp22;)V
+.method public synthetic constructor <init>(LY62;Ljava/lang/String;I)V
     .locals 0
 
     .line 1
+    iput p3, p0, LZ32;->a:I
+
+    iput-object p1, p0, LZ32;->b:LY62;
+
+    iput-object p2, p0, LZ32;->c:Ljava/lang/String;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LZ32;->a:Lp22;
-
-    .line 5
-    .line 6
-    sget-object p1, Lrc2;->Y:Lrc2;
-
-    .line 7
-    .line 8
-    iput-object p1, p0, LZ32;->b:Lrc2;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LZ32;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LZ32;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LZ32;->a:Lp22;
-
-    .line 14
-    .line 15
-    iget-object p1, p1, LZ32;->a:Lp22;
-
-    .line 16
-    .line 17
-    if-eq v1, p1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    return v0
-.end method
-
-.method public final f()Lrc2;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LZ32;->b:Lrc2;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final g()Lp22;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LZ32;->a:Lp22;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LZ32;->a:Lp22;
-
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    return v0
-
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method public final run()V
     .locals 2
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, LZ32;->a:I
 
     .line 2
     .line 3
-    const-string v1, "AddToStory(navigationType="
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    iget-object v0, p0, LZ32;->b:LY62;
+
     .line 7
     .line 8
-    iget-object v1, p0, LZ32;->a:Lp22;
+    iget-object v1, p0, LZ32;->c:Ljava/lang/String;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-interface {v0, v1}, LY62;->n(Ljava/lang/String;)V
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ")"
+    return-void
 
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_0
+    iget-object v0, p0, LZ32;->b:LY62;
 
+    .line 15
     .line 16
+    iget-object v1, p0, LZ32;->c:Ljava/lang/String;
+
     .line 17
     .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-interface {v0, v1}, LY62;->p(Ljava/lang/String;)V
 
     .line 19
     .line 20
     .line 21
-    move-result-object v0
+    return-void
 
     .line 22
-    return-object v0
+    nop
+
+    .line 23
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,196 +1,203 @@
-.class public final LQk7;
-.super Lcom/snapchat/client/messaging/FetchFeedCallback;
+.class public final enum LQk7;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/core/SingleEmitter;
+# static fields
+.field public static final enum X:LQk7;
 
-.field public final b:Lroc;
+.field public static final synthetic Y:[LQk7;
+
+.field public static final enum a:LQk7;
+
+.field public static final enum b:LQk7;
+
+.field public static final enum c:LQk7;
+
+.field public static final enum t:LQk7;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 11
 
     .line 1
-    sget-object v0, Lroc;->g0:Lroc;
+    const/4 v0, 0x4
 
     .line 2
+    const/4 v1, 0x3
+
     .line 3
-    invoke-direct {p0}, Lcom/snapchat/client/messaging/FetchFeedCallback;-><init>()V
+    const/4 v2, 0x2
 
     .line 4
+    const/4 v3, 0x1
+
     .line 5
+    const/4 v4, 0x0
+
     .line 6
-    iput-object p1, p0, LQk7;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+    new-instance v5, LQk7;
 
     .line 7
     .line 8
-    iput-object v0, p0, LQk7;->b:Lroc;
+    const-string v6, "FETCH_DISPLAY_JITTER"
 
     .line 9
     .line 10
-    return-void
-.end method
+    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-
-# virtual methods
-.method public final onError(Lcom/snapchat/client/messaging/CallbackStatus;)V
-    .locals 2
-
-    .line 1
-    new-instance v0, Ly80;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LQk7;->b:Lroc;
-
-    .line 4
-    .line 5
-    invoke-virtual {v1, p1}, Lroc;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    check-cast v1, Ljava/lang/String;
-
-    .line 10
     .line 11
-    invoke-direct {v0, p1, v1}, Ly80;-><init>(Lcom/snapchat/client/messaging/CallbackStatus;Ljava/lang/String;)V
-
     .line 12
     .line 13
-    .line 14
-    iget-object p1, p0, LQk7;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
-
-    .line 15
-    .line 16
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->f(Ljava/lang/Throwable;)Z
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-.end method
-
-.method public final onFetchFeedComplete(Ljava/util/ArrayList;Ljava/util/ArrayList;Z)V
-    .locals 3
-
-    .line 1
-    iget-object p2, p0, LQk7;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
-
-    .line 2
-    .line 3
-    invoke-interface {p2}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_1
-
-    .line 8
-    .line 9
-    new-instance v0, Ljava/util/ArrayList;
-
-    .line 10
-    .line 11
-    const/16 v1, 0xa
-
-    .line 12
-    .line 13
-    invoke-static {p1, v1}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    sput-object v5, LQk7;->a:LQk7;
 
     .line 14
     .line 15
-    .line 16
-    move-result v1
+    new-instance v6, LQk7;
 
+    .line 16
     .line 17
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+    const-string v7, "FETCH_DISPLAY"
 
     .line 18
     .line 19
+    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 20
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
     .line 21
     .line 22
-    .line 23
-    move-result-object p1
+    sput-object v6, LQk7;->b:LQk7;
 
+    .line 23
     .line 24
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    new-instance v7, LQk7;
 
     .line 25
     .line 26
-    .line 27
-    move-result v1
+    const-string v8, "FETCH_OPTIMISTIC"
 
+    .line 27
     .line 28
-    if-eqz v1, :cond_0
+    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 29
     .line 30
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 31
+    sput-object v7, LQk7;->c:LQk7;
+
     .line 32
     .line 33
-    move-result-object v1
+    new-instance v8, LQk7;
 
     .line 34
-    check-cast v1, Lcom/snapchat/client/messaging/FeedEntry;
-
     .line 35
+    const-string v9, "DISPLAY"
+
     .line 36
-    new-instance v2, Lth7;
-
     .line 37
-    .line 38
-    invoke-direct {v2, v1}, Lth7;-><init>(Lcom/snapchat/client/messaging/FeedEntry;)V
+    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 38
     .line 39
     .line 40
-    .line 41
-    invoke-interface {v0, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+    sput-object v8, LQk7;->t:LQk7;
 
+    .line 41
     .line 42
+    new-instance v9, LQk7;
+
     .line 43
     .line 44
-    goto :goto_0
+    const-string v10, "DISPLAY_IF_UNSEEN"
 
     .line 45
-    :cond_0
-    invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 46
+    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 47
     .line 48
-    move-result-object p1
-
     .line 49
-    new-instance p3, Lhad;
+    sput-object v9, LQk7;->X:LQk7;
 
     .line 50
     .line 51
-    invoke-direct {p3, v0, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    const/4 v10, 0x5
 
     .line 52
+    new-array v10, v10, [LQk7;
+
     .line 53
     .line 54
-    invoke-interface {p2, p3}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    aput-object v5, v10, v4
 
     .line 55
     .line 56
+    aput-object v6, v10, v3
+
     .line 57
-    :cond_1
+    .line 58
+    aput-object v7, v10, v2
+
+    .line 59
+    .line 60
+    aput-object v8, v10, v1
+
+    .line 61
+    .line 62
+    aput-object v9, v10, v0
+
+    .line 63
+    .line 64
+    sput-object v10, LQk7;->Y:[LQk7;
+
+    .line 65
+    .line 66
     return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LQk7;
+    .locals 1
+
+    .line 1
+    const-class v0, LQk7;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LQk7;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LQk7;
+    .locals 1
+
+    .line 1
+    sget-object v0, LQk7;->Y:[LQk7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LQk7;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

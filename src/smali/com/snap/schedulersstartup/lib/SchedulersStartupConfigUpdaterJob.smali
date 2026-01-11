@@ -1,5 +1,5 @@
 .class public final Lcom/snap/schedulersstartup/lib/SchedulersStartupConfigUpdaterJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
@@ -7,12 +7,12 @@
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "SCHEDULERS_STARTUP_CONFIG_UPDATER"
     isSingleton = true
-    metadataType = Lpwf;
+    metadataType = LAPf;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -22,10 +22,10 @@
     .locals 17
 
     .line 2
-    sget-object v3, LEB6;->a:LEB6;
+    sget-object v3, LcF6;->a:LcF6;
 
     .line 3
-    new-instance v13, Lnk9;
+    new-instance v13, LSs9;
 
     const-wide/16 v0, 0x6
 
@@ -33,10 +33,10 @@
     sget-object v2, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
     .line 5
-    invoke-direct {v13, v0, v1, v2}, Lnk9;-><init>(JLjava/util/concurrent/TimeUnit;)V
+    invoke-direct {v13, v0, v1, v2}, LSs9;-><init>(JLjava/util/concurrent/TimeUnit;)V
 
     .line 6
-    new-instance v0, LtB6;
+    new-instance v0, LRE6;
 
     const/4 v12, 0x0
 
@@ -66,28 +66,28 @@
 
     const/16 v16, 0x0
 
-    invoke-direct/range {v0 .. v16}, LtB6;-><init>(ILjava/util/List;LEB6;Ljava/lang/String;Lnk9;Lp7f;LnCi;ZZLjava/lang/Boolean;Ljava/lang/String;LWD7;Lnk9;ZILHr5;)V
+    invoke-direct/range {v0 .. v16}, LRE6;-><init>(ILjava/util/List;LcF6;Ljava/lang/String;LSs9;Lupf;LF1j;ZZLjava/lang/Boolean;Ljava/lang/String;LyJ7;LSs9;ZILex5;)V
 
     .line 7
-    new-instance v1, Lpwf;
+    new-instance v1, LAPf;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v2}, Lpwf;-><init>(I)V
+    invoke-direct {v1, v2}, LAPf;-><init>(I)V
 
     move-object/from16 v2, p0
 
     .line 8
-    invoke-direct {v2, v0, v1}, Lcom/snap/schedulersstartup/lib/SchedulersStartupConfigUpdaterJob;-><init>(LtB6;Lpwf;)V
+    invoke-direct {v2, v0, v1}, Lcom/snap/schedulersstartup/lib/SchedulersStartupConfigUpdaterJob;-><init>(LRE6;LAPf;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;Lpwf;)V
+.method public constructor <init>(LRE6;LAPf;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

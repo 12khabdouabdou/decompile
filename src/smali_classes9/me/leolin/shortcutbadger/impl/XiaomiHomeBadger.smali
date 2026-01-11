@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LSH0;
+.implements LLK0;
 
 
 # annotations
@@ -81,7 +81,7 @@
     return-object v0
 .end method
 
-.method public final b(Lcom/snap/mushroom/app/MushroomApplication;Landroid/content/ComponentName;I)V
+.method public final b(Lcom/snap/core/application/SnapResourcesContextWrapper;Landroid/content/ComponentName;I)V
     .locals 7
 
     .line 1
@@ -318,9 +318,9 @@
     .line 109
     .line 110
     :try_start_3
-    invoke-static {p1, v3}, LI0j;->M(Lcom/snap/mushroom/app/MushroomApplication;Landroid/content/Intent;)V
+    invoke-static {p1, v3}, LUPe;->D(Lcom/snap/core/application/SnapResourcesContextWrapper;Landroid/content/Intent;)V
     :try_end_3
-    .catch LTjg; {:try_start_3 .. :try_end_3} :catch_2
+    .catch LQEg; {:try_start_3 .. :try_end_3} :catch_2
 
     .line 111
     .line 112
@@ -581,7 +581,7 @@
     move-exception p1
 
     .line 238
-    new-instance p2, LTjg;
+    new-instance p2, LQEg;
 
     .line 239
     .line 240

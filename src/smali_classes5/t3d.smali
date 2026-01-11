@@ -3,94 +3,229 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lt0a;
+.implements Lv3d;
 
 
 # instance fields
-.field public final a:Lac5;
+.field public final a:Landroid/view/View;
 
-.field public final b:LBre;
+.field public final b:I
 
-.field public final c:J
+.field public final c:I
 
-.field public final d:Ljava/util/concurrent/TimeUnit;
+.field public final d:Landroid/animation/ArgbEvaluator;
+
+.field public final e:I
+
+.field public final f:I
 
 
 # direct methods
-.method public constructor <init>(Lac5;LBre;)V
-    .locals 1
+.method public constructor <init>(Lcom/snap/core/application/SnapResourcesContextWrapper;Landroid/view/View;)V
+    .locals 2
 
     .line 1
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-object p2, p0, Lt3d;->a:Landroid/view/View;
+
     .line 5
     .line 6
-    iput-object p1, p0, Lt3d;->a:Lac5;
+    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     .line 7
     .line 8
-    iput-object p2, p0, Lt3d;->b:LBre;
-
     .line 9
+    move-result-object p2
+
     .line 10
-    const-wide/16 p1, 0x2
+    const v0, 0x7f04054a
 
     .line 11
     .line 12
-    iput-wide p1, p0, Lt3d;->c:J
-
     .line 13
-    .line 14
-    iput-object v0, p0, Lt3d;->d:Ljava/util/concurrent/TimeUnit;
+    invoke-static {p2, v0}, LNC8;->j(Landroid/content/res/Resources$Theme;I)I
 
+    .line 14
     .line 15
     .line 16
+    move-result p2
+
+    .line 17
+    iput p2, p0, Lt3d;->b:I
+
+    .line 18
+    .line 19
+    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    const v1, 0x7f04054b
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-static {v0, v1}, LNC8;->j(Landroid/content/res/Resources$Theme;I)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v0
+
+    .line 30
+    iput v0, p0, Lt3d;->c:I
+
+    .line 31
+    .line 32
+    new-instance v1, Landroid/animation/ArgbEvaluator;
+
+    .line 33
+    .line 34
+    invoke-direct {v1}, Landroid/animation/ArgbEvaluator;-><init>()V
+
+    .line 35
+    .line 36
+    .line 37
+    iput-object v1, p0, Lt3d;->d:Landroid/animation/ArgbEvaluator;
+
+    .line 38
+    .line 39
+    invoke-static {p1, p2}, LV14;->c(Landroid/content/Context;I)I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result p2
+
+    .line 43
+    iput p2, p0, Lt3d;->e:I
+
+    .line 44
+    .line 45
+    invoke-static {p1, v0}, LV14;->c(Landroid/content/Context;I)I
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p1
+
+    .line 49
+    iput p1, p0, Lt3d;->f:I
+
+    .line 50
+    .line 51
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Lpwk;)Lio/reactivex/rxjava3/core/Flowable;
-    .locals 3
+.method public final a(D)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lt3d;->a:Lac5;
+    iget v0, p0, Lt3d;->b:I
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lac5;->b(Lpwk;)Lio/reactivex/rxjava3/core/Flowable;
+    iget v1, p0, Lt3d;->c:I
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    if-ne v0, v1, :cond_0
 
+    .line 6
     .line 7
-    new-instance v1, Llyb;
+    return-void
 
     .line 8
-    .line 9
-    const/16 v2, 0x15
+    :cond_0
+    iget-object v0, p0, Lt3d;->d:Landroid/animation/ArgbEvaluator;
 
+    .line 9
     .line 10
+    double-to-float p1, p1
+
     .line 11
-    invoke-direct {v1, p1, p0, v0, v2}, Llyb;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    iget p2, p0, Lt3d;->e:I
 
     .line 12
     .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Flowable;->E(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Flowable;
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 14
     .line 15
     .line 16
+    move-result-object p2
+
     .line 17
-    move-result-object p1
+    iget v1, p0, Lt3d;->f:I
 
     .line 18
-    return-object p1
+    .line 19
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-virtual {v0, p1, p2, v1}, Landroid/animation/ArgbEvaluator;->evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    check-cast p1, Ljava/lang/Integer;
+
+    .line 28
+    .line 29
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p1
+
+    .line 33
+    iget-object p2, p0, Lt3d;->a:Landroid/view/View;
+
+    .line 34
+    .line 35
+    invoke-virtual {p2}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p2
+
+    .line 39
+    new-instance v0, Landroid/graphics/PorterDuffColorFilter;
+
+    .line 40
+    .line 41
+    sget-object v1, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
+
+    .line 42
+    .line 43
+    invoke-direct {v0, p1, v1}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {p2, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
+
+    .line 47
+    .line 48
+    .line 49
+    return-void
 .end method

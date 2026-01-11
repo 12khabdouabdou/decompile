@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/creative_tools/captions/CaptionCarouselMetrics;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'carouselScrolledByUser\':f(),\'carouselSuggestionsShown\':f?(l@),\'captionStyleDidLoadWithDuration\':f?(d@)"
     typeReferences = {}

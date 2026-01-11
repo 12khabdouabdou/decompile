@@ -30,7 +30,7 @@
     .locals 2
 
     .line 1
-    sget v0, Legb;->a:I
+    sget v0, LGtb;->a:I
 
     .line 2
     .line 3

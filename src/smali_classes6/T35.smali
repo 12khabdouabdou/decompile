@@ -2,13 +2,32 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LKv3;
+
 
 # instance fields
-.field public final synthetic a:LyH4;
+.field public final X:Le35;
+
+.field public final Y:Le35;
+
+.field public final Z:Le35;
+
+.field public final a:LF55;
+
+.field public final b:Lz45;
+
+.field public final c:Lgc5;
+
+.field public final e0:Le35;
+
+.field public final f0:Le35;
+
+.field public final t:Lfc5;
 
 
 # direct methods
-.method public constructor <init>(LyH4;)V
+.method public constructor <init>(Lz45;LF55;Lgc5;Lfc5;)V
     .locals 0
 
     .line 1
@@ -17,113 +36,105 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LT35;->a:LyH4;
+    iput-object p2, p0, LT35;->a:LF55;
 
     .line 5
     .line 6
-    return-void
-.end method
+    iput-object p1, p0, LT35;->b:Lz45;
 
-
-# virtual methods
-.method public final a(Lio/reactivex/rxjava3/core/Observable;)Lloe;
-    .locals 7
-
-    .line 1
-    new-instance v0, Lloe;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LT35;->a:LyH4;
-
-    .line 4
-    .line 5
-    iget-object v1, v1, LyH4;->b:Ljava/lang/Object;
-
-    .line 6
     .line 7
-    check-cast v1, LY35;
-
     .line 8
+    iput-object p3, p0, LT35;->c:Lgc5;
+
     .line 9
-    iget-object v2, v1, LY35;->m:LqY4;
-
     .line 10
+    iput-object p4, p0, LT35;->t:Lfc5;
+
     .line 11
-    iget-object v2, v2, LqY4;->b:Lcom/snap/mushroom/app/MushroomApplication;
-
     .line 12
-    .line 13
-    iget-object v3, v1, LY35;->n:LN55;
+    new-instance p1, Le35;
 
+    .line 13
     .line 14
+    const/4 p2, 0x0
+
     .line 15
-    move-object v4, v1
+    const/16 p3, 0x15
 
     .line 16
-    move-object v1, v2
-
     .line 17
-    new-instance v2, LwWf;
+    invoke-direct {p1, p0, p2, p3}, Le35;-><init>(Ljava/lang/Object;II)V
 
     .line 18
     .line 19
-    iget-object v5, v3, LN55;->c:LqY4;
-
     .line 20
+    iput-object p1, p0, LT35;->X:Le35;
+
     .line 21
-    iget-object v5, v5, LqY4;->b:Lcom/snap/mushroom/app/MushroomApplication;
-
     .line 22
-    .line 23
-    iget-object v3, v3, LN55;->j0:LI45;
+    new-instance p1, Le35;
 
+    .line 23
     .line 24
+    const/4 p2, 0x1
+
     .line 25
-    const/16 v6, 0x12
+    invoke-direct {p1, p0, p2, p3}, Le35;-><init>(Ljava/lang/Object;II)V
 
     .line 26
     .line 27
-    invoke-direct {v2, v5, v6, v3}, LwWf;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 28
+    iput-object p1, p0, LT35;->Y:Le35;
+
     .line 29
     .line 30
-    iget-object v3, v4, LY35;->i1:LB35;
+    new-instance p1, Le35;
 
     .line 31
     .line 32
-    iget-object v5, v4, LY35;->G:Lx45;
+    const/4 p2, 0x2
 
     .line 33
-    .line 34
-    invoke-virtual {v5}, Lx45;->u()LVkg;
+    invoke-direct {p1, p0, p2, p3}, Le35;-><init>(Ljava/lang/Object;II)V
 
+    .line 34
     .line 35
     .line 36
-    .line 37
-    move-result-object v5
+    iput-object p1, p0, LT35;->Z:Le35;
 
+    .line 37
     .line 38
-    iget-object v4, v4, LY35;->p:LBlj;
+    new-instance p1, Le35;
 
     .line 39
     .line 40
-    invoke-interface {v4}, LBlj;->b()LXSg;
+    const/4 p2, 0x3
 
     .line 41
+    invoke-direct {p1, p0, p2, p3}, Le35;-><init>(Ljava/lang/Object;II)V
+
     .line 42
     .line 43
-    move-result-object v6
-
     .line 44
-    move-object v4, p1
+    iput-object p1, p0, LT35;->e0:Le35;
 
     .line 45
-    invoke-direct/range {v0 .. v6}, Lloe;-><init>(Lcom/snap/mushroom/app/MushroomApplication;LwWf;LB35;Lio/reactivex/rxjava3/core/Observable;LVkg;LXSg;)V
-
     .line 46
+    new-instance p1, Le35;
+
     .line 47
     .line 48
-    return-object v0
+    const/4 p2, 0x4
+
+    .line 49
+    invoke-direct {p1, p0, p2, p3}, Le35;-><init>(Ljava/lang/Object;II)V
+
+    .line 50
+    .line 51
+    .line 52
+    iput-object p1, p0, LT35;->f0:Le35;
+
+    .line 53
+    .line 54
+    return-void
 .end method

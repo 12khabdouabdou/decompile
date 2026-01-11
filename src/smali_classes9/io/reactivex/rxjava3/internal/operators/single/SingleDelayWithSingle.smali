@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method public final u(Lio/reactivex/rxjava3/core/SingleObserver;)V
+.method public final t(Lio/reactivex/rxjava3/core/SingleObserver;)V
     .locals 2
 
     .line 1

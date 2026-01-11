@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/common_profile/ProfileSwitcherContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'privateProfileSwitcherContext\':r:\'[0]\',\'publicProfileSwitcherContext\':r:\'[0]\',\'cofStore\':r:\'[1]\'"
     typeReferences = {

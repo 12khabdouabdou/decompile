@@ -1,14 +1,14 @@
 .class public final Lcom/snap/plus/ProfileCampaignState;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'products\':a<r:\'[0]\'>,\'config\':t,\'subscribePageConfig\':t"
     typeReferences = {
-        Lye2;
+        Lih2;
     }
 .end annotation
 
@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lye2;",
+            "Lih2;",
             ">;"
         }
     .end annotation
@@ -36,7 +36,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lye2;",
+            "Lih2;",
             ">;[B[B)V"
         }
     .end annotation

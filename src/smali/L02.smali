@@ -1,66 +1,69 @@
 .class public final synthetic LL02;
-.super Ljava/lang/Object;
+.super LPAe;
 .source "SourceFile"
 
-# interfaces
-.implements Lobi;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+# static fields
+.field public static final e0:LL02;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILio/reactivex/rxjava3/subjects/BehaviorSubject;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    iput p1, p0, LL02;->a:I
+    new-instance v0, LL02;
 
-    iput-object p2, p0, LL02;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    .line 2
+    .line 3
+    const-string v1, "getRotation()I"
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    .line 5
+    const/4 v2, 0x0
 
+    .line 6
+    const-class v3, LdRf;
+
+    .line 7
+    .line 8
+    const-string v4, "rotation"
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v3, v4, v1, v2}, LPAe;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, LL02;->e0:LL02;
+
+    .line 14
+    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 1
+.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget v0, p0, LL02;->a:I
+    check-cast p1, LdRf;
 
-    packed-switch v0, :pswitch_data_0
+    .line 2
+    .line 3
+    iget p1, p1, LdRf;->l:I
 
-    iget-object v0, p0, LL02;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    .line 4
+    .line 5
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->d1()Ljava/lang/Object;
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
 
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Float;
-
-    return-object v0
-
-    :pswitch_0
-    iget-object v0, p0, LL02;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->d1()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lm3d;
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 9
+    return-object p1
 .end method

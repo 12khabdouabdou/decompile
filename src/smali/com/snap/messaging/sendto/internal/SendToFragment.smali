@@ -3,48 +3,48 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
-.implements LhG9;
-.implements LiTf;
-.implements LeRf;
+.implements LY2d;
+.implements LFR9;
+.implements LQcg;
+.implements LJag;
 
 
 # instance fields
-.field public A0:LWR6;
+.field public A0:LSV6;
 
 .field public final A1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public B0:LKRf;
+.field public B0:Lobg;
 
-.field public C0:LcYg;
+.field public C0:LPjh;
 
-.field public D0:LB35;
+.field public D0:Lz95;
 
-.field public E0:Lv45;
+.field public E0:Lwa5;
 
-.field public F0:LH35;
+.field public F0:LI95;
 
-.field public G0:Lnwf;
+.field public G0:LyPf;
 
-.field public H0:LMUf;
+.field public H0:Lyeg;
 
-.field public I0:LNUf;
+.field public I0:Lzeg;
 
-.field public J0:Lh8c;
+.field public J0:LSmc;
 
-.field public K0:Lh8c;
+.field public K0:LSmc;
 
-.field public L0:LlEh;
+.field public L0:Lz2i;
 
-.field public M0:LPm9;
+.field public M0:LIv9;
 
-.field public N0:LaUf;
+.field public N0:LKdg;
 
-.field public O0:LLKj;
+.field public O0:Ltak;
 
-.field public P0:LZna;
+.field public P0:LmAa;
 
-.field public Q0:LnEh;
+.field public Q0:LB2i;
 
 .field public R0:Z
 
@@ -94,7 +94,7 @@
 
 .field public o1:Landroid/view/ViewGroup;
 
-.field public p1:LLKj;
+.field public p1:Ltak;
 
 .field public q1:Landroidx/constraintlayout/widget/Guideline;
 
@@ -106,23 +106,23 @@
 
 .field public u1:Landroid/view/animation/Animation;
 
-.field public v1:LLKj;
+.field public v1:Ltak;
 
-.field public final w0:Lrn0;
+.field public final w0:LJp0;
 
 .field public w1:Lcom/snap/component/header/SnapSubscreenHeaderView;
 
-.field public x0:Lu00;
+.field public x0:Lb30;
 
 .field public x1:Landroid/view/View;
 
-.field public y0:LB73;
+.field public y0:LR93;
 
-.field public y1:Lql5;
+.field public y1:LFF5;
 
-.field public z0:LpC3;
+.field public z0:LOF3;
 
-.field public final z1:LXfi;
+.field public final z1:LREi;
 
 
 # direct methods
@@ -138,15 +138,15 @@
     .line 3
     .line 4
     .line 5
-    sget v1, LGRf;->a:I
+    sget v1, Llbg;->a:I
 
     .line 6
     .line 7
-    sget-object v1, Lrn0;->a:Lrn0;
+    sget-object v1, LJp0;->a:LJp0;
 
     .line 8
     .line 9
-    iput-object v1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->w0:Lrn0;
+    iput-object v1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->w0:LJp0;
 
     .line 10
     .line 11
@@ -197,7 +197,7 @@
 
     .line 35
     .line 36
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 37
     .line 38
@@ -209,14 +209,14 @@
 
     .line 41
     .line 42
-    new-instance v1, LCRf;
+    new-instance v1, Libg;
 
     .line 43
     .line 44
     const/4 v2, 0x2
 
     .line 45
-    invoke-direct {v1, p0, v2}, LCRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    invoke-direct {v1, p0, v2}, Libg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
     .line 46
     .line 47
@@ -224,7 +224,7 @@
     const/4 v2, 0x3
 
     .line 49
-    invoke-static {v2, v1}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
+    invoke-static {v2, v1}, Lfqj;->y(ILkotlin/jvm/functions/Function0;)LRS9;
 
     .line 50
     .line 51
@@ -262,7 +262,7 @@
 
     .line 68
     .line 69
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 70
     .line 71
@@ -379,19 +379,19 @@
 
     .line 129
     .line 130
-    new-instance v1, LCRf;
+    new-instance v1, Libg;
 
     .line 131
     .line 132
     const/4 v3, 0x1
 
     .line 133
-    invoke-direct {v1, p0, v3}, LCRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    invoke-direct {v1, p0, v3}, Libg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
     .line 134
     .line 135
     .line 136
-    invoke-static {v2, v1}, LPZj;->r(ILkotlin/jvm/functions/Function0;)LsH9;
+    invoke-static {v2, v1}, Lfqj;->y(ILkotlin/jvm/functions/Function0;)LRS9;
 
     .line 137
     .line 138
@@ -416,29 +416,29 @@
 
     .line 148
     .line 149
-    new-instance v1, LCRf;
+    new-instance v1, Libg;
 
     .line 150
     .line 151
-    invoke-direct {v1, p0, v0}, LCRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    invoke-direct {v1, p0, v0}, Libg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
     .line 152
     .line 153
     .line 154
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
     .line 155
     .line 156
-    invoke-direct {v0, v1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, v1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 157
     .line 158
     .line 159
-    iput-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LXfi;
+    iput-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LREi;
 
     .line 160
     .line 161
-    sget-object v0, LpRf;->a:LpRf;
+    sget-object v0, LUag;->a:LUag;
 
     .line 162
     .line 163
@@ -460,122 +460,16 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v1, "SendToFragment:onAttach"
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v1
-
-    .line 9
-    :try_start_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {p0}, Lcom/snapchat/deck/fragment/MainPageFragment;->W()LU7d;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p1
-
-    .line 16
-    if-eqz p1, :cond_0
-
-    .line 17
-    .line 18
-    check-cast p1, LlH7;
-
-    .line 19
-    .line 20
-    invoke-virtual {p1}, LlH7;->g()V
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_0
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-virtual {p0}, Lcom/snapchat/deck/fragment/MainPageFragment;->W()LU7d;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p1
-
-    .line 30
-    if-eqz p1, :cond_1
-
-    .line 31
-    .line 32
-    check-cast p1, LlH7;
-
-    .line 33
-    .line 34
-    invoke-virtual {p1}, LlH7;->k()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 35
-    .line 36
-    .line 37
-    :cond_1
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-
-    .line 41
-    :catchall_0
-    move-exception p1
-
-    .line 42
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 43
-    .line 44
-    if-eqz v0, :cond_2
-
-    .line 45
-    .line 46
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
-
-    .line 47
-    .line 48
-    .line 49
-    :cond_2
-    throw p1
-.end method
-
-.method public final D1()V
+.method public final B1()V
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->D1()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->B1()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LaUf;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LKdg;
 
     .line 5
     .line 6
@@ -583,7 +477,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LaUf;->n()V
+    invoke-virtual {v0}, LKdg;->n()V
 
     .line 9
     .line 10
@@ -598,7 +492,7 @@
     .line 14
     .line 15
     .line 16
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->B0:LKRf;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->B0:Lobg;
 
     .line 17
     .line 18
@@ -609,7 +503,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {v0}, LKRf;->b()V
+    invoke-virtual {v0}, Lobg;->b()V
 
     .line 22
     .line 23
@@ -622,12 +516,12 @@
 
     .line 27
     .line 28
-    invoke-virtual {v0, v1}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v1}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 29
     .line 30
     .line 31
-    invoke-virtual {v0, v1}, LgRg;->r(Lkotlin/jvm/functions/Function2;)V
+    invoke-virtual {v0, v1}, Ljdh;->r(Lkotlin/jvm/functions/Function2;)V
 
     .line 32
     .line 33
@@ -662,7 +556,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 51
     .line 52
@@ -671,7 +565,7 @@
 
     .line 54
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 55
     .line 56
@@ -680,7 +574,7 @@
 
     .line 58
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 59
     .line 60
@@ -693,7 +587,7 @@
 
     .line 63
     .line 64
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 65
     .line 66
@@ -706,7 +600,7 @@
 
     .line 69
     .line 70
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 71
     .line 72
@@ -714,11 +608,11 @@
     throw v1
 .end method
 
-.method public final G1()V
+.method public final E1()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:Lh8c;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:LSmc;
 
     .line 2
     .line 3
@@ -734,7 +628,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-virtual {v0, v1, v2}, Lh8c;->n(J)V
+    invoke-virtual {v0, v1, v2}, LSmc;->p(J)V
 
     .line 10
     .line 11
@@ -747,7 +641,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 16
     .line 17
@@ -758,11 +652,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 5
 
     .line 1
-    iget-object p3, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:Lh8c;
+    iget-object p3, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:LSmc;
 
     .line 2
     .line 3
@@ -780,12 +674,12 @@
     const/4 v2, 0x0
 
     .line 9
-    invoke-virtual {p3, v2}, Lh8c;->k(Z)V
+    invoke-virtual {p3, v2}, LSmc;->m(Z)V
 
     .line 10
     .line 11
     .line 12
-    iget-object p3, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:Lh8c;
+    iget-object p3, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:LSmc;
 
     .line 13
     .line 14
@@ -793,7 +687,7 @@
 
     .line 15
     .line 16
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->y0:LB73;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->y0:LR93;
 
     .line 17
     .line 18
@@ -809,12 +703,12 @@
     move-result-wide v3
 
     .line 24
-    invoke-virtual {p3, v3, v4}, Lh8c;->m(J)V
+    invoke-virtual {p3, v3, v4}, LSmc;->o(J)V
 
     .line 25
     .line 26
     .line 27
-    iget-object p3, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->B0:LKRf;
+    iget-object p3, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->B0:Lobg;
 
     .line 28
     .line 29
@@ -822,7 +716,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p3}, LKRf;->c()Landroid/view/View;
+    invoke-virtual {p3}, Lobg;->c()Landroid/view/View;
 
     .line 32
     .line 33
@@ -834,7 +728,7 @@
 
     .line 36
     .line 37
-    const p3, 0x7f0e063a
+    const p3, 0x7f0e065b
 
     .line 38
     .line 39
@@ -859,7 +753,7 @@
 
     .line 47
     .line 48
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -872,7 +766,7 @@
 
     .line 53
     .line 54
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 55
     .line 56
@@ -881,7 +775,7 @@
 
     .line 58
     :cond_3
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 59
     .line 60
@@ -890,7 +784,7 @@
 
     .line 62
     :cond_4
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 63
     .line 64
@@ -898,11 +792,11 @@
     throw v1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 6
 
     .line 1
-    const p2, 0x7f0b1480
+    const p2, 0x7f0b15b5
 
     .line 2
     .line 3
@@ -923,7 +817,7 @@
 
     .line 11
     .line 12
-    const p2, 0x7f0b147b
+    const p2, 0x7f0b15b0
 
     .line 13
     .line 14
@@ -940,7 +834,7 @@
 
     .line 20
     .line 21
-    const p2, 0x7f0b147a
+    const p2, 0x7f0b15af
 
     .line 22
     .line 23
@@ -961,7 +855,7 @@
 
     .line 31
     .line 32
-    const p2, 0x7f0b182d
+    const p2, 0x7f0b1981
 
     .line 33
     .line 34
@@ -982,1057 +876,1055 @@
 
     .line 42
     .line 43
-    new-instance v0, LBRf;
+    new-instance v0, Lfbg;
 
     .line 44
     .line 45
     const/4 v1, 0x0
 
     .line 46
-    invoke-direct {v0, p0, v1}, LBRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    invoke-direct {v0, p0, v1}, Lfbg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
     .line 47
     .line 48
     .line 49
-    invoke-virtual {p2, v0}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {p2, v0}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 50
     .line 51
     .line 52
-    new-instance v0, Lcpb;
+    new-instance v0, Lgbg;
 
     .line 53
     .line 54
-    const/16 v1, 0x19
+    invoke-direct {v0, v1, p0}, Lgbg;-><init>(ILjava/lang/Object;)V
 
     .line 55
     .line 56
-    invoke-direct {v0, v1, p0}, Lcpb;-><init>(ILjava/lang/Object;)V
-
     .line 57
+    invoke-virtual {p2, v0}, Ljdh;->r(Lkotlin/jvm/functions/Function2;)V
+
     .line 58
     .line 59
-    invoke-virtual {p2, v0}, LgRg;->r(Lkotlin/jvm/functions/Function2;)V
-
     .line 60
+    const p2, 0x7f0b15c4
+
     .line 61
     .line 62
-    const p2, 0x7f0b148f
-
     .line 63
-    .line 64
-    .line 65
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 64
+    .line 65
     .line 66
-    .line 67
-    .line 68
     move-result-object p2
 
-    .line 69
+    .line 67
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
+
+    .line 68
+    .line 69
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->l1:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 70
     .line 71
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->l1:Landroidx/recyclerview/widget/RecyclerView;
+    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->E0()V
 
     .line 72
     .line 73
-    invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->E0()V
-
     .line 74
-    .line 75
-    .line 76
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
+    .line 75
+    .line 76
     .line 77
+    new-instance v0, Lcom/snap/messaging/sendto/internal/SendToFragment$onFragmentViewCreated$3$1;
+
     .line 78
     .line 79
-    new-instance v0, Lcom/snap/messaging/sendto/internal/SendToFragment$onFragmentViewCreated$3$1;
+    invoke-direct {v0, p0}, Lcom/snap/messaging/sendto/internal/SendToFragment$onFragmentViewCreated$3$1;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;)V
 
     .line 80
     .line 81
-    invoke-direct {v0, p0}, Lcom/snap/messaging/sendto/internal/SendToFragment$onFragmentViewCreated$3$1;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;)V
-
     .line 82
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
+
     .line 83
     .line 84
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
-
     .line 85
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->x0:Lb30;
+
     .line 86
     .line 87
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->x0:Lu00;
-
-    .line 88
-    .line 89
     const/4 v1, 0x0
 
-    .line 90
+    .line 88
     if-eqz v0, :cond_10
+
+    .line 89
+    .line 90
+    sget-object v2, LBAg;->x2:LBAg;
 
     .line 91
     .line 92
-    sget-object v2, LLfg;->u2:LLfg;
+    invoke-interface {v0, v2}, Lb30;->a(LcM3;)Z
 
     .line 93
     .line 94
-    invoke-interface {v0, v2}, Lu00;->a(LBI3;)Z
-
     .line 95
-    .line 96
-    .line 97
     move-result v0
 
-    .line 98
+    .line 96
     if-eqz v0, :cond_0
 
-    .line 99
-    .line 100
+    .line 97
+    .line 98
     move-object v0, v1
 
-    .line 101
+    .line 99
     goto :goto_0
 
-    .line 102
+    .line 100
     :cond_0
-    new-instance v0, LfB5;
+    new-instance v0, LdF5;
+
+    .line 101
+    .line 102
+    invoke-direct {v0}, LdF5;-><init>()V
 
     .line 103
     .line 104
-    invoke-direct {v0}, LfB5;-><init>()V
-
     .line 105
+    :goto_0
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->F0(LdF5;)V
+
     .line 106
     .line 107
-    :goto_0
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->F0(LfB5;)V
-
     .line 108
+    new-instance v0, LQj3;
+
     .line 109
     .line 110
-    new-instance v0, LWg3;
-
-    .line 111
-    .line 112
     const/4 v2, 0x3
 
-    .line 113
-    invoke-direct {v0, v2}, LWg3;-><init>(I)V
+    .line 111
+    invoke-direct {v0, v2}, LQj3;-><init>(I)V
 
+    .line 112
+    .line 113
     .line 114
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
+
     .line 115
     .line 116
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
-
     .line 117
+    new-instance v0, LEt2;
+
     .line 118
     .line 119
-    new-instance v0, LTq2;
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     .line 120
     .line 121
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
     .line 122
-    .line 123
-    .line 124
     move-result-object v2
 
-    .line 125
+    .line 123
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 124
+    .line 125
     .line 126
-    .line 127
-    .line 128
     move-result-object v2
 
-    .line 129
-    const v3, 0x7f070508
+    .line 127
+    const v3, 0x7f07052f
 
+    .line 128
+    .line 129
     .line 130
-    .line 131
-    .line 132
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
+    .line 131
+    .line 132
     .line 133
-    .line 134
-    .line 135
     move-result v2
 
-    .line 136
+    .line 134
     const/4 v3, 0x5
 
-    .line 137
-    invoke-direct {v0, v2, v3}, LTq2;-><init>(II)V
+    .line 135
+    invoke-direct {v0, v2, v3}, LEt2;-><init>(II)V
 
+    .line 136
+    .line 137
     .line 138
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
+
     .line 139
     .line 140
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
-
     .line 141
+    new-instance v0, LJ1;
+
     .line 142
     .line 143
-    new-instance v0, LtAf;
+    iget-object v2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->m1:Landroid/view/View;
 
     .line 144
     .line 145
-    iget-object v2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->m1:Landroid/view/View;
+    if-eqz v2, :cond_f
 
     .line 146
     .line 147
-    if-eqz v2, :cond_f
+    const/16 v3, 0x1b
 
     .line 148
     .line 149
-    const/4 v3, 0x1
+    invoke-direct {v0, v3, v2}, LJ1;-><init>(ILjava/lang/Object;)V
 
     .line 150
-    invoke-direct {v0, v3, v2}, LtAf;-><init>(ILjava/lang/Object;)V
-
     .line 151
     .line 152
-    .line 153
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
+    .line 153
     .line 154
     .line 155
-    .line 156
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->K0:Lh8c;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->K0:LSmc;
 
+    .line 156
     .line 157
-    .line 158
     const-string v2, "sendToPerfLogger"
 
+    .line 158
     .line 159
-    .line 160
     if-eqz v0, :cond_e
 
+    .line 160
     .line 161
-    .line 162
-    invoke-virtual {v0}, Lh8c;->e()Z
+    invoke-virtual {v0}, LSmc;->e()Z
 
+    .line 162
     .line 163
     .line 164
-    .line 165
     move-result v0
 
-    .line 166
+    .line 165
     if-eqz v0, :cond_2
 
+    .line 166
     .line 167
-    .line 168
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->D0:LB35;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->D0:Lz95;
 
+    .line 168
     .line 169
-    .line 170
     if-eqz v0, :cond_1
 
+    .line 170
     .line 171
-    .line 172
-    invoke-virtual {v0}, LB35;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Lz95;->get()Ljava/lang/Object;
 
+    .line 172
     .line 173
     .line 174
-    .line 175
     move-result-object v0
 
+    .line 175
+    check-cast v0, LkYe;
+
     .line 176
-    check-cast v0, LBGe;
-
     .line 177
-    .line 178
-    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p2, v0}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
+    .line 178
     .line 179
     .line 180
-    .line 181
     goto :goto_1
 
-    .line 182
+    .line 181
     :cond_1
     const-string p1, "latencyOnScrollListenerProvider"
 
+    .line 182
     .line 183
-    .line 184
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 184
     .line 185
     .line 186
-    .line 187
     throw v1
 
-    .line 188
+    .line 187
     :cond_2
     :goto_1
-    new-instance p2, LLKj;
+    new-instance p2, Ltak;
 
+    .line 188
     .line 189
-    .line 190
-    const v0, 0x7f0b14a5
+    const v0, 0x7f0b15db
 
+    .line 190
     .line 191
     .line 192
-    .line 193
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 193
     .line 194
     .line 195
-    .line 196
     move-result-object v0
+
+    .line 196
+    check-cast v0, Landroid/view/ViewStub;
 
     .line 197
-    check-cast v0, Landroid/view/ViewStub;
-
     .line 198
-    .line 199
-    invoke-direct {p2, v0}, LLKj;-><init>(Landroid/view/ViewStub;)V
+    invoke-direct {p2, v0}, Ltak;-><init>(Landroid/view/ViewStub;)V
 
+    .line 199
     .line 200
     .line 201
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->v1:Ltak;
+
     .line 202
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->v1:LLKj;
-
     .line 203
+    new-instance p2, Ltak;
+
     .line 204
-    new-instance p2, LLKj;
-
     .line 205
-    .line 206
-    const v0, 0x7f0b1530
+    const v0, 0x7f0b166c
 
+    .line 206
     .line 207
     .line 208
-    .line 209
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 209
     .line 210
     .line 211
-    .line 212
     move-result-object v0
 
-    .line 213
+    .line 212
     check-cast v0, Landroid/view/ViewStub;
 
+    .line 213
     .line 214
-    .line 215
-    invoke-direct {p2, v0}, LLKj;-><init>(Landroid/view/ViewStub;)V
+    invoke-direct {p2, v0}, Ltak;-><init>(Landroid/view/ViewStub;)V
 
+    .line 215
     .line 216
     .line 217
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->p1:Ltak;
+
     .line 218
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->p1:LLKj;
-
     .line 219
-    .line 220
-    new-instance v0, LyRf;
+    new-instance v0, Ldbg;
 
+    .line 220
     .line 221
-    .line 222
     const/4 v3, 0x2
 
-    .line 223
-    invoke-direct {v0, p0, v3}, LyRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    .line 222
+    invoke-direct {v0, p0, v3}, Ldbg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
+    .line 223
     .line 224
     .line 225
-    .line 226
-    invoke-virtual {p2, v0}, LLKj;->f(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p2, v0}, Ltak;->e(Landroid/view/View$OnClickListener;)V
 
+    .line 226
     .line 227
     .line 228
-    .line 229
     iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->l1:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 229
     .line 230
-    .line 231
     const-string v0, "recyclerView"
 
+    .line 231
     .line 232
-    .line 233
     if-eqz p2, :cond_d
 
+    .line 233
     .line 234
-    .line 235
-    invoke-static {p2}, Lx37;->f(Landroidx/recyclerview/widget/RecyclerView;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
+    invoke-static {p2}, LOZ;->t0(Landroidx/recyclerview/widget/RecyclerView;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
 
+    .line 235
     .line 236
     .line 237
-    .line 238
     move-result-object p2
+
+    .line 238
+    new-instance v3, Lebg;
 
     .line 239
-    new-instance v3, LzRf;
-
     .line 240
-    .line 241
     const/4 v4, 0x2
 
-    .line 242
-    invoke-direct {v3, p0, v4}, LzRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    .line 241
+    invoke-direct {v3, p0, v4}, Lebg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
+    .line 242
     .line 243
     .line 244
-    .line 245
     invoke-virtual {p2, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 245
     .line 246
     .line 247
-    .line 248
     move-result-object p2
 
-    .line 249
+    .line 248
     iget-object v3, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->h1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 249
     .line 250
-    .line 251
-    invoke-virtual {v3, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v3, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 251
     .line 252
     .line 253
-    .line 254
-    const p2, 0x7f0b1476
+    const p2, 0x7f0b15ab
 
+    .line 254
     .line 255
     .line 256
-    .line 257
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 257
     .line 258
     .line 259
-    .line 260
     move-result-object p2
 
-    .line 261
+    .line 260
     iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->n1:Landroid/view/View;
 
+    .line 261
     .line 262
-    .line 263
-    const p2, 0x7f0b0c0e
+    const p2, 0x7f0b0d32
 
+    .line 263
     .line 264
     .line 265
-    .line 266
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 266
     .line 267
     .line 268
-    .line 269
     move-result-object p2
 
-    .line 270
+    .line 269
     check-cast p2, Landroid/view/ViewGroup;
 
+    .line 270
     .line 271
-    .line 272
     iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->o1:Landroid/view/ViewGroup;
 
+    .line 272
     .line 273
-    .line 274
-    invoke-static {p2}, Lx37;->e(Landroid/view/View;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
+    invoke-static {p2}, LOZ;->s0(Landroid/view/View;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
 
+    .line 274
     .line 275
     .line 276
-    .line 277
     move-result-object p2
 
-    .line 278
-    new-instance v4, La4f;
+    .line 277
+    new-instance v4, Lhbg;
 
+    .line 278
     .line 279
+    const/4 v5, 0x0
+
     .line 280
-    const/16 v5, 0x18
+    invoke-direct {v4, p0, v5}, Lhbg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
     .line 281
     .line 282
-    invoke-direct {v4, v5, p0}, La4f;-><init>(ILjava/lang/Object;)V
-
     .line 283
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
     .line 284
     .line 285
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    invoke-direct {v5, p2, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 286
     .line 287
-    invoke-direct {v5, p2, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 288
-    .line 289
-    .line 290
     const/4 p2, 0x0
 
-    .line 291
+    .line 289
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 290
+    .line 291
     .line 292
-    .line 293
-    .line 294
     move-result-object p2
 
+    .line 293
+    sget-object v4, La2e;->B:La2e;
+
+    .line 294
     .line 295
-    sget-object v4, LFOd;->A:LFOd;
+    invoke-virtual {v5, p2, v4}, Lio/reactivex/rxjava3/core/Observable;->G0(Ljava/lang/Object;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableScanSeed;
 
     .line 296
     .line 297
-    invoke-virtual {v5, p2, v4}, Lio/reactivex/rxjava3/core/Observable;->D0(Ljava/lang/Object;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableScanSeed;
-
     .line 298
-    .line 299
-    .line 300
     move-result-object p2
 
-    .line 301
+    .line 299
     sget-object v4, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+
+    .line 300
+    .line 301
+    invoke-virtual {p2, v4}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 302
     .line 303
-    invoke-virtual {p2, v4}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
     .line 304
-    .line 305
-    .line 306
     move-result-object p2
 
-    .line 307
-    new-instance v4, LzRf;
+    .line 305
+    new-instance v4, Lebg;
 
-    .line 308
-    .line 309
+    .line 306
+    .line 307
     const/4 v5, 0x3
 
-    .line 310
-    invoke-direct {v4, p0, v5}, LzRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    .line 308
+    invoke-direct {v4, p0, v5}, Lebg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
+    .line 309
+    .line 310
     .line 311
-    .line 312
-    .line 313
     invoke-virtual {p2, v4}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 312
+    .line 313
     .line 314
-    .line 315
-    .line 316
     move-result-object p2
 
-    .line 317
-    invoke-virtual {v3, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    .line 315
+    invoke-virtual {v3, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 316
+    .line 317
     .line 318
+    const p2, 0x7f0b15dd
+
     .line 319
     .line 320
-    const p2, 0x7f0b14a7
-
     .line 321
-    .line 322
-    .line 323
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 322
+    .line 323
     .line 324
-    .line 325
-    .line 326
     move-result-object p2
 
-    .line 327
+    .line 325
     check-cast p2, Landroidx/constraintlayout/widget/Guideline;
+
+    .line 326
+    .line 327
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->q1:Landroidx/constraintlayout/widget/Guideline;
 
     .line 328
     .line 329
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->q1:Landroidx/constraintlayout/widget/Guideline;
+    const p2, 0x7f0b15a1
 
     .line 330
     .line 331
-    const p2, 0x7f0b146c
-
     .line 332
-    .line 333
-    .line 334
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 333
+    .line 334
     .line 335
-    .line 336
-    .line 337
     move-result-object p2
 
-    .line 338
+    .line 336
     check-cast p2, Landroidx/constraintlayout/widget/Guideline;
+
+    .line 337
+    .line 338
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->r1:Landroidx/constraintlayout/widget/Guideline;
 
     .line 339
     .line 340
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->r1:Landroidx/constraintlayout/widget/Guideline;
+    const p2, 0x7f0b15a0
 
     .line 341
     .line 342
-    const p2, 0x7f0b146b
-
     .line 343
-    .line 344
-    .line 345
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 344
+    .line 345
     .line 346
-    .line 347
-    .line 348
     move-result-object p2
 
-    .line 349
+    .line 347
     check-cast p2, Landroidx/constraintlayout/widget/Barrier;
+
+    .line 348
+    .line 349
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->s1:Landroidx/constraintlayout/widget/Barrier;
 
     .line 350
     .line 351
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->s1:Landroidx/constraintlayout/widget/Barrier;
+    iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->E0:Lwa5;
 
     .line 352
     .line 353
-    iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->E0:Lv45;
+    if-eqz p2, :cond_c
 
     .line 354
     .line 355
-    if-eqz p2, :cond_c
+    iget-object v4, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->o1:Landroid/view/ViewGroup;
 
     .line 356
     .line 357
-    iget-object v4, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->o1:Landroid/view/ViewGroup;
+    if-eqz v4, :cond_b
 
     .line 358
     .line 359
-    if-eqz v4, :cond_b
+    invoke-virtual {p2, v4}, Lwa5;->a(Landroid/view/ViewGroup;)LmAa;
 
     .line 360
     .line 361
-    invoke-virtual {p2, v4}, Lv45;->a(Landroid/view/ViewGroup;)LZna;
-
     .line 362
-    .line 363
-    .line 364
     move-result-object p2
 
-    .line 365
-    invoke-virtual {v3, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    .line 363
+    invoke-virtual {v3, p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 364
+    .line 365
     .line 366
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->P0:LmAa;
+
     .line 367
     .line 368
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->P0:LZna;
+    new-instance p2, Ltak;
 
     .line 369
     .line 370
-    new-instance p2, LLKj;
+    const v4, 0x7f0b15ac
 
     .line 371
     .line 372
-    const v4, 0x7f0b1477
-
     .line 373
-    .line 374
-    .line 375
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 374
+    .line 375
     .line 376
-    .line 377
-    .line 378
     move-result-object v4
 
-    .line 379
+    .line 377
     check-cast v4, Landroid/view/ViewStub;
+
+    .line 378
+    .line 379
+    invoke-direct {p2, v4}, Ltak;-><init>(Landroid/view/ViewStub;)V
 
     .line 380
     .line 381
-    invoke-direct {p2, v4}, LLKj;-><init>(Landroid/view/ViewStub;)V
-
     .line 382
+    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->O0:Ltak;
+
     .line 383
     .line 384
-    iput-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->O0:LLKj;
+    new-instance v4, LCwf;
 
     .line 385
     .line 386
-    new-instance v4, LARf;
+    const/16 v5, 0x12
 
     .line 387
     .line 388
-    invoke-direct {v4, p0}, LARf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;)V
+    invoke-direct {v4, v5, p0}, LCwf;-><init>(ILjava/lang/Object;)V
 
     .line 389
     .line 390
     .line 391
-    invoke-virtual {p2, v4}, LLKj;->g(LARf;)V
+    iput-object v4, p2, Ltak;->d:Lqak;
 
     .line 392
     .line 393
-    .line 394
-    const p2, 0x7f0b065f
+    const p2, 0x7f0b06f6
 
+    .line 394
     .line 395
     .line 396
-    .line 397
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 397
     .line 398
     .line 399
-    .line 400
     move-result-object p1
 
-    .line 401
+    .line 400
     check-cast p1, Lcom/snap/ui/view/TouchInterceptorFrameLayout;
 
+    .line 401
     .line 402
+    new-instance p2, Ll4g;
+
     .line 403
-    new-instance p2, LNOe;
-
     .line 404
-    .line 405
-    iget-object v4, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->K0:Lh8c;
+    iget-object v4, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->K0:LSmc;
 
+    .line 405
     .line 406
-    .line 407
     if-eqz v4, :cond_a
 
+    .line 407
     .line 408
+    const/4 v2, 0x4
+
     .line 409
-    const/16 v2, 0x1c
+    invoke-direct {p2, v2, v4}, Ll4g;-><init>(ILjava/lang/Object;)V
 
     .line 410
     .line 411
-    invoke-direct {p2, v2, v4}, LNOe;-><init>(ILjava/lang/Object;)V
-
     .line 412
+    invoke-virtual {p1, p2}, Lcom/snap/ui/view/TouchInterceptorFrameLayout;->a(Ll4g;)V
+
     .line 413
     .line 414
-    invoke-virtual {p1, p2}, Lcom/snap/ui/view/TouchInterceptorFrameLayout;->a(LNOe;)V
-
     .line 415
+    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->M0:LIv9;
+
     .line 416
     .line 417
-    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->M0:LPm9;
+    if-eqz p1, :cond_9
 
     .line 418
     .line 419
-    if-eqz p1, :cond_9
+    invoke-interface {p1}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 420
     .line 421
-    invoke-interface {p1}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
-
     .line 422
-    .line 423
-    .line 424
     move-result-object p1
 
+    .line 423
+    iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->C0:LPjh;
+
+    .line 424
     .line 425
-    iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->C0:LcYg;
+    if-eqz p2, :cond_8
 
     .line 426
     .line 427
-    if-eqz p2, :cond_8
+    iget-object v2, p2, LPjh;->c:LIv9;
 
     .line 428
     .line 429
-    iget-object v2, p2, LcYg;->c:LPm9;
+    invoke-interface {v2}, LIv9;->a()Lio/reactivex/rxjava3/core/Observable;
 
     .line 430
     .line 431
-    invoke-interface {v2}, LPm9;->a()Lio/reactivex/rxjava3/core/Observable;
-
     .line 432
-    .line 433
-    .line 434
     move-result-object v2
 
-    .line 435
+    .line 433
     if-eqz v2, :cond_3
 
-    .line 436
-    .line 437
+    .line 434
+    .line 435
     goto :goto_2
 
-    .line 438
+    .line 436
     :cond_3
-    invoke-virtual {p2}, LcYg;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    invoke-virtual {p2}, LPjh;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
+    .line 437
+    .line 438
     .line 439
-    .line 440
-    .line 441
     move-result-object v2
 
-    .line 442
+    .line 440
     :goto_2
-    sget-object p2, LM3e;->o0:LM3e;
+    sget-object p2, LxTe;->h0:LxTe;
+
+    .line 441
+    .line 442
+    invoke-static {p1, v2, p2}, LTVd;->p(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function2;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 443
     .line 444
-    invoke-static {p1, v2, p2}, LzP2;->q(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function2;)Lio/reactivex/rxjava3/core/Observable;
-
     .line 445
-    .line 446
-    .line 447
     move-result-object p1
 
-    .line 448
-    new-instance p2, LzRf;
+    .line 446
+    new-instance p2, Lebg;
 
-    .line 449
-    .line 450
+    .line 447
+    .line 448
     const/4 v2, 0x1
 
-    .line 451
-    invoke-direct {p2, p0, v2}, LzRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    .line 449
+    invoke-direct {p2, p0, v2}, Lebg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
+    .line 450
+    .line 451
     .line 452
-    .line 453
-    .line 454
     invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 453
+    .line 454
     .line 455
-    .line 456
-    .line 457
     move-result-object p1
 
-    .line 458
-    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    .line 456
+    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 457
+    .line 458
     .line 459
+    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->l1:Landroidx/recyclerview/widget/RecyclerView;
+
     .line 460
     .line 461
-    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->l1:Landroidx/recyclerview/widget/RecyclerView;
+    if-eqz p1, :cond_7
 
     .line 462
     .line 463
-    if-eqz p1, :cond_7
+    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
 
     .line 464
     .line 465
-    invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
-
     .line 466
-    .line 467
-    .line 468
     move-result p1
 
-    .line 469
+    .line 467
     iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->s1:Landroidx/constraintlayout/widget/Barrier;
+
+    .line 468
+    .line 469
+    if-eqz p2, :cond_6
 
     .line 470
     .line 471
-    if-eqz p2, :cond_6
+    invoke-static {p2}, LOZ;->s0(Landroid/view/View;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
 
     .line 472
     .line 473
-    invoke-static {p2}, Lx37;->e(Landroid/view/View;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
-
     .line 474
-    .line 475
-    .line 476
     move-result-object p2
 
+    .line 475
+    new-instance v0, LLD0;
+
+    .line 476
     .line 477
-    new-instance v0, LWA0;
+    const/16 v2, 0x11
 
     .line 478
     .line 479
-    const/16 v2, 0x11
+    invoke-direct {v0, p0, p1, v2}, LLD0;-><init>(Ljava/lang/Object;II)V
 
     .line 480
     .line 481
-    invoke-direct {v0, p0, p1, v2}, LWA0;-><init>(Ljava/lang/Object;II)V
-
     .line 482
-    .line 483
-    .line 484
     invoke-virtual {p2, v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 483
+    .line 484
     .line 485
-    .line 486
-    .line 487
     move-result-object p1
 
-    .line 488
-    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    .line 486
+    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 487
+    .line 488
     .line 489
+    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:LSmc;
+
     .line 490
     .line 491
-    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->J0:Lh8c;
+    if-eqz p1, :cond_5
 
     .line 492
     .line 493
-    if-eqz p1, :cond_5
+    iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->y0:LR93;
 
     .line 494
     .line 495
-    iget-object p2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->y0:LB73;
+    if-eqz p2, :cond_4
 
     .line 496
     .line 497
-    if-eqz p2, :cond_4
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     .line 498
     .line 499
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
     .line 500
-    .line 501
-    .line 502
     move-result-wide v0
 
-    .line 503
-    invoke-virtual {p1, v0, v1}, Lh8c;->o(J)V
+    .line 501
+    invoke-virtual {p1, v0, v1}, LSmc;->q(J)V
 
+    .line 502
+    .line 503
     .line 504
-    .line 505
-    .line 506
     return-void
 
-    .line 507
+    .line 505
     :cond_4
     const-string p1, "clock"
 
+    .line 506
+    .line 507
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 508
     .line 509
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 510
-    .line 511
-    .line 512
     throw v1
 
-    .line 513
+    .line 511
     :cond_5
     const-string p1, "sendToLogger"
 
+    .line 512
+    .line 513
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 514
     .line 515
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 516
-    .line 517
-    .line 518
     throw v1
 
-    .line 519
+    .line 517
     :cond_6
     const-string p1, "bottomBarrier"
 
+    .line 518
+    .line 519
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 520
     .line 521
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 522
+    throw v1
+
     .line 523
-    .line 524
-    throw v1
-
-    .line 525
     :cond_7
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 524
+    .line 525
     .line 526
-    .line 527
-    .line 528
     throw v1
 
-    .line 529
+    .line 527
     :cond_8
     const-string p1, "imeInsetsDetector"
 
+    .line 528
+    .line 529
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 530
     .line 531
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 532
-    .line 533
-    .line 534
     throw v1
 
-    .line 535
+    .line 533
     :cond_9
     const-string p1, "windowInsetsDetector"
 
+    .line 534
+    .line 535
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 536
     .line 537
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 538
+    throw v1
+
     .line 539
-    .line 540
-    throw v1
-
-    .line 541
     :cond_a
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 540
+    .line 541
     .line 542
-    .line 543
-    .line 544
     throw v1
 
-    .line 545
+    .line 543
     :cond_b
     const-string p1, "listPickerContainer"
 
+    .line 544
+    .line 545
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 546
     .line 547
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 548
-    .line 549
-    .line 550
     throw v1
 
-    .line 551
+    .line 549
     :cond_c
     const-string p1, "listPickerControllerFactory"
 
+    .line 550
+    .line 551
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 552
     .line 553
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 554
+    throw v1
+
     .line 555
-    .line 556
-    throw v1
-
-    .line 557
     :cond_d
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 556
+    .line 557
     .line 558
+    throw v1
+
     .line 559
-    .line 560
-    throw v1
-
-    .line 561
     :cond_e
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 560
+    .line 561
     .line 562
-    .line 563
-    .line 564
     throw v1
 
-    .line 565
+    .line 563
     :cond_f
     const-string p1, "headerView"
 
+    .line 564
+    .line 565
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 566
     .line 567
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 568
-    .line 569
-    .line 570
     throw v1
 
-    .line 571
+    .line 569
     :cond_10
     const-string p1, "appStartExperimentReader"
 
+    .line 570
+    .line 571
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 572
     .line 573
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 574
-    .line 575
-    .line 576
     throw v1
 .end method
 
@@ -2040,11 +1932,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LXfi;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -2056,7 +1948,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->o1()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->p1()I
 
     .line 10
     .line 11
@@ -2067,7 +1959,38 @@
     return v0
 .end method
 
-.method public final V1()Lio/reactivex/rxjava3/core/Observable;
+.method public final V1()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LREi;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Landroidx/recyclerview/widget/LinearLayoutManager;
+
+    .line 8
+    .line 9
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->t1()I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    return v0
+.end method
+
+.method public final W1()Lio/reactivex/rxjava3/core/Observable;
     .locals 9
 
     .line 1
@@ -2082,7 +2005,7 @@
 
     .line 5
     .line 6
-    invoke-static {v0}, Lx37;->e(Landroid/view/View;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
+    invoke-static {v0}, LOZ;->s0(Landroid/view/View;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
 
     .line 7
     .line 8
@@ -2090,179 +2013,178 @@
     move-result-object v0
 
     .line 10
-    new-instance v2, LLbf;
+    new-instance v2, LGag;
 
     .line 11
     .line 12
-    const/16 v3, 0x14
+    const/4 v3, 0x1
 
     .line 13
-    .line 14
-    invoke-direct {v2, v3, p0}, LLbf;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, LGag;-><init>(ILjava/lang/Object;)V
 
+    .line 14
     .line 15
     .line 16
-    .line 17
     new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
+    .line 17
     .line 18
-    .line 19
     invoke-direct {v3, v0, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 19
     .line 20
     .line 21
-    .line 22
     const/4 v0, 0x2
 
-    .line 23
+    .line 22
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 23
     .line 24
     .line 25
-    .line 26
     move-result-object v0
 
-    .line 27
+    .line 26
     new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
+    .line 27
     .line 28
-    .line 29
     invoke-direct {v2, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
+    .line 29
     .line 30
     .line 31
-    .line 32
-    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->H0(Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Observable;->K0(Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 32
     .line 33
     .line 34
-    .line 35
     move-result-object v0
 
-    .line 36
+    .line 35
     const/4 v2, 0x0
 
-    .line 37
+    .line 36
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 37
     .line 38
     .line 39
-    .line 40
     move-result-object v2
+
+    .line 40
+    sget-object v3, La2e;->C:La2e;
 
     .line 41
-    sget-object v3, LFOd;->B:LFOd;
-
     .line 42
-    .line 43
-    invoke-virtual {v0, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->D0(Ljava/lang/Object;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableScanSeed;
+    invoke-virtual {v0, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->G0(Ljava/lang/Object;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableScanSeed;
 
+    .line 43
     .line 44
     .line 45
-    .line 46
     move-result-object v0
 
-    .line 47
+    .line 46
     sget-object v2, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
 
+    .line 47
     .line 48
-    .line 49
-    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
+    .line 49
     .line 50
     .line 51
-    .line 52
     move-result-object v4
 
+    .line 52
+    new-instance v0, Lddf;
+
     .line 53
-    new-instance v0, LjVe;
-
     .line 54
-    .line 55
-    invoke-direct {v0, v1}, LjVe;-><init>(Ljava/lang/Boolean;)V
+    invoke-direct {v0, v1}, Lddf;-><init>(LEP$s;)V
 
+    .line 55
     .line 56
     .line 57
+    new-instance v1, Lfdf;
+
     .line 58
-    new-instance v1, LlVe;
-
     .line 59
-    .line 60
-    invoke-static {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableInternalHelper;->d(LjVe;)Lio/reactivex/rxjava3/functions/Consumer;
+    invoke-static {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableInternalHelper;->d(Lddf;)Lio/reactivex/rxjava3/functions/Consumer;
 
+    .line 60
     .line 61
     .line 62
-    .line 63
     move-result-object v5
 
-    .line 64
-    invoke-static {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableInternalHelper;->c(LjVe;)Lio/reactivex/rxjava3/functions/Consumer;
+    .line 63
+    invoke-static {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableInternalHelper;->c(Lddf;)Lio/reactivex/rxjava3/functions/Consumer;
 
+    .line 64
     .line 65
     .line 66
-    .line 67
     move-result-object v6
 
-    .line 68
-    invoke-static {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableInternalHelper;->b(LjVe;)Lio/reactivex/rxjava3/functions/Action;
+    .line 67
+    invoke-static {v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableInternalHelper;->b(Lddf;)Lio/reactivex/rxjava3/functions/Action;
 
+    .line 68
     .line 69
     .line 70
-    .line 71
     move-result-object v7
 
-    .line 72
+    .line 71
     sget-object v8, Lio/reactivex/rxjava3/internal/functions/Functions;->c:Lio/reactivex/rxjava3/functions/Action;
 
+    .line 72
     .line 73
-    .line 74
     new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
+    .line 74
     .line 75
-    .line 76
     invoke-direct/range {v3 .. v8}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Action;)V
 
+    .line 76
     .line 77
     .line 78
-    .line 79
-    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Observable;->H0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
+    .line 79
     .line 80
     .line 81
-    .line 82
     move-result-object v2
 
-    .line 83
-    invoke-direct {v1, v2, v0}, LlVe;-><init>(Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;LjVe;)V
+    .line 82
+    invoke-direct {v1, v2, v0}, Lfdf;-><init>(Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;Lddf;)V
 
+    .line 83
     .line 84
     .line 85
-    .line 86
-    invoke-static {v1}, Lio/reactivex/rxjava3/core/Observable;->W0(Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-static {v1}, Lio/reactivex/rxjava3/core/Observable;->Z0(Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 86
     .line 87
     .line 88
-    .line 89
     move-result-object v0
 
-    .line 90
+    .line 89
     return-object v0
 
-    .line 91
+    .line 90
     :cond_0
     const-string v0, "headerView"
 
+    .line 91
     .line 92
-    .line 93
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 93
     .line 94
     .line 95
-    .line 96
     throw v1
 .end method
 
-.method public final W1()V
+.method public final X1()V
     .locals 3
 
     .line 1
@@ -2322,11 +2244,11 @@
     return-void
 .end method
 
-.method public final X1()Lio/reactivex/rxjava3/core/Single;
+.method public final Y1()Lio/reactivex/rxjava3/core/Single;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z0:LpC3;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z0:LOF3;
 
     .line 2
     .line 3
@@ -2334,11 +2256,11 @@
 
     .line 4
     .line 5
-    sget-object v1, LIXf;->c:LIXf;
+    sget-object v1, LAhg;->c:LAhg;
 
     .line 6
     .line 7
-    invoke-interface {v0, v1}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v0, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 8
     .line 9
@@ -2354,7 +2276,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -2365,7 +2287,7 @@
     throw v0
 .end method
 
-.method public final Y1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+.method public final Z1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
     .locals 3
 
     .line 1
@@ -2373,7 +2295,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, v0}, LEU0;->r(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-static {v0, v0}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 4
     .line 5
@@ -2385,7 +2307,7 @@
 
     .line 8
     .line 9
-    invoke-interface {v1}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v1}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -2393,15 +2315,15 @@
     move-result-object v1
 
     .line 13
-    check-cast v1, Lzre;
+    check-cast v1, LlJe;
 
     .line 14
     .line 15
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 16
     .line 17
-    invoke-virtual {v1}, LBre;->d()LF06;
+    invoke-virtual {v1}, LnJe;->d()LA36;
 
     .line 18
     .line 19
@@ -2421,7 +2343,7 @@
     return-object v2
 .end method
 
-.method public final Z1(I)V
+.method public final a2(I)V
     .locals 5
 
     .line 1
@@ -2433,14 +2355,14 @@
     move-result-object v0
 
     .line 5
-    new-instance v1, LXx;
+    new-instance v1, LKz;
 
     .line 6
     .line 7
     const/4 v2, 0x3
 
     .line 8
-    invoke-direct {v1, v0, v2}, LXx;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, v0, v2}, LKz;-><init>(Landroid/content/Context;I)V
 
     .line 9
     .line 10
@@ -2460,7 +2382,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->b0()LwGe;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->b0()LfYe;
 
     .line 19
     .line 20
@@ -2492,7 +2414,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->k1()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->p1()I
 
     .line 33
     .line 34
@@ -2531,7 +2453,7 @@
     add-int/2addr v0, p1
 
     .line 49
-    invoke-virtual {v1, v0}, Lgma;->l(I)V
+    invoke-virtual {v1, v0}, Lvya;->l(I)V
 
     .line 50
     .line 51
@@ -2544,7 +2466,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->b0()LwGe;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->b0()LfYe;
 
     .line 57
     .line 58
@@ -2556,7 +2478,7 @@
 
     .line 61
     .line 62
-    invoke-virtual {p1, v1}, LwGe;->b1(Lgma;)V
+    invoke-virtual {p1, v1}, LfYe;->g1(Lvya;)V
 
     .line 63
     .line 64
@@ -2565,7 +2487,7 @@
 
     .line 66
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 67
     .line 68
@@ -2578,7 +2500,7 @@
 
     .line 71
     :cond_4
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 72
     .line 73
@@ -2586,7 +2508,7 @@
     throw v3
 .end method
 
-.method public final a2(I)Lio/reactivex/rxjava3/core/Completable;
+.method public final b2(I)Lio/reactivex/rxjava3/core/Completable;
     .locals 3
 
     .line 1
@@ -2597,11 +2519,11 @@
 
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LXfi;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LREi;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -2613,7 +2535,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->n1()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->s1()I
 
     .line 13
     .line 14
@@ -2637,19 +2559,19 @@
     move-result-object v0
 
     .line 23
-    new-instance v1, LXx;
+    new-instance v1, LKz;
 
     .line 24
     .line 25
     const/4 v2, 0x4
 
     .line 26
-    invoke-direct {v1, v0, v2}, LXx;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, v0, v2}, LKz;-><init>(Landroid/content/Context;I)V
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v1, p1}, Lgma;->l(I)V
+    invoke-virtual {v1, p1}, Lvya;->l(I)V
 
     .line 30
     .line 31
@@ -2669,7 +2591,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->b0()LwGe;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->b0()LfYe;
 
     .line 40
     .line 41
@@ -2681,7 +2603,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {p1, v1}, LwGe;->b1(Lgma;)V
+    invoke-virtual {p1, v1}, LfYe;->g1(Lvya;)V
 
     .line 46
     .line 47
@@ -2695,7 +2617,7 @@
 
     .line 51
     .line 52
-    invoke-static {p1}, Lx37;->g(Landroidx/recyclerview/widget/RecyclerView;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
+    invoke-static {p1}, LOZ;->u0(Landroidx/recyclerview/widget/RecyclerView;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUsing;
 
     .line 53
     .line 54
@@ -2703,7 +2625,7 @@
     move-result-object p1
 
     .line 56
-    sget-object v0, LpCf;->p0:LpCf;
+    sget-object v0, LFVf;->n0:LFVf;
 
     .line 57
     .line 58
@@ -2738,7 +2660,7 @@
 
     .line 74
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 75
     .line 76
@@ -2747,7 +2669,7 @@
 
     .line 78
     :cond_3
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 79
     .line 80
@@ -2764,7 +2686,7 @@
     return-object p1
 .end method
 
-.method public final b2(II)V
+.method public final c2(II)V
     .locals 2
 
     .line 1
@@ -2775,11 +2697,11 @@
 
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LXfi;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->z1:LREi;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -2791,7 +2713,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->n1()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->s1()I
 
     .line 13
     .line 14
@@ -2815,16 +2737,16 @@
     move-result-object v0
 
     .line 23
-    new-instance v1, LDRf;
+    new-instance v1, Ljbg;
 
     .line 24
     .line 25
-    invoke-direct {v1, v0, p2}, LDRf;-><init>(Landroid/content/Context;I)V
+    invoke-direct {v1, v0, p2}, Ljbg;-><init>(Landroid/content/Context;I)V
 
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v1, p1}, Lgma;->l(I)V
+    invoke-virtual {v1, p1}, Lvya;->l(I)V
 
     .line 29
     .line 30
@@ -2837,7 +2759,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->b0()LwGe;
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->b0()LfYe;
 
     .line 36
     .line 37
@@ -2849,7 +2771,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {p1, v1}, LwGe;->b1(Lgma;)V
+    invoke-virtual {p1, v1}, LfYe;->g1(Lvya;)V
 
     .line 42
     .line 43
@@ -2862,7 +2784,7 @@
 
     .line 46
     .line 47
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 48
     .line 49
@@ -2878,114 +2800,11 @@
     return-void
 .end method
 
-.method public final c2(Z)V
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const-string v1, "exportFABWrapper"
-
-    .line 3
-    .line 4
-    iget-object v2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->p1:LLKj;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_1
-
-    .line 7
-    .line 8
-    if-eqz v2, :cond_0
-
-    .line 9
-    .line 10
-    invoke-virtual {v2}, LLKj;->a()Landroid/view/View;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    :goto_0
-    check-cast v0, Landroid/widget/ImageView;
-
-    .line 15
-    .line 16
-    goto :goto_1
-
-    .line 17
-    :cond_0
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 18
-    .line 19
-    .line 20
-    throw v0
-
-    .line 21
-    :cond_1
-    if-eqz v2, :cond_4
-
-    .line 22
-    .line 23
-    invoke-virtual {v2}, LLKj;->b()Landroid/view/View;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v0
-
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :goto_1
-    if-eqz v0, :cond_3
-
-    .line 29
-    .line 30
-    if-eqz p1, :cond_2
-
-    .line 31
-    .line 32
-    const/4 p1, 0x0
-
-    .line 33
-    goto :goto_2
-
-    .line 34
-    :cond_2
-    const/16 p1, 0x8
-
-    .line 35
-    .line 36
-    :goto_2
-    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
-
-    .line 37
-    .line 38
-    .line 39
-    :cond_3
-    return-void
-
-    .line 40
-    :cond_4
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 41
-    .line 42
-    .line 43
-    throw v0
-.end method
-
 .method public final d()Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LaUf;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LKdg;
 
     .line 2
     .line 3
@@ -2996,7 +2815,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LaUf;->m()Z
+    invoke-virtual {v0}, LKdg;->m()Z
 
     .line 7
     .line 8
@@ -3035,7 +2854,106 @@
     return v0
 .end method
 
-.method public final d2(Ljava/lang/String;)V
+.method public final d2(Z)V
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const-string v1, "exportFABWrapper"
+
+    .line 3
+    .line 4
+    iget-object v2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->p1:Ltak;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_1
+
+    .line 7
+    .line 8
+    if-eqz v2, :cond_0
+
+    .line 9
+    .line 10
+    invoke-virtual {v2}, Ltak;->a()Landroid/view/View;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    :goto_0
+    check-cast v0, Landroid/widget/ImageView;
+
+    .line 15
+    .line 16
+    goto :goto_1
+
+    .line 17
+    :cond_0
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    throw v0
+
+    .line 21
+    :cond_1
+    if-eqz v2, :cond_4
+
+    .line 22
+    .line 23
+    iget-object v0, v2, Ltak;->b:Landroid/view/View;
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 27
+    .line 28
+    if-eqz p1, :cond_2
+
+    .line 29
+    .line 30
+    const/4 p1, 0x0
+
+    .line 31
+    goto :goto_2
+
+    .line 32
+    :cond_2
+    const/16 p1, 0x8
+
+    .line 33
+    .line 34
+    :goto_2
+    invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setVisibility(I)V
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_3
+    return-void
+
+    .line 38
+    :cond_4
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 39
+    .line 40
+    .line 41
+    throw v0
+.end method
+
+.method public final e2(Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -3047,7 +2965,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, LgRg;->p(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, p1}, Ljdh;->p(Ljava/lang/CharSequence;)V
 
     .line 6
     .line 7
@@ -3060,7 +2978,7 @@
 
     .line 10
     .line 11
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -3071,7 +2989,7 @@
     throw p1
 .end method
 
-.method public final declared-synchronized e2(LsRf;)V
+.method public final declared-synchronized f2(LXag;)V
     .locals 1
 
     .line 1
@@ -3109,24 +3027,7 @@
     throw p1
 .end method
 
-.method public final h(LQqc;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/messaging/sendto/internal/SendToFragment;->W1()V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final h0()Ljava/lang/Object;
+.method public final g0()Ljava/lang/Object;
     .locals 4
 
     .line 1
@@ -3145,7 +3046,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->b0()LwGe;
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->b0()LfYe;
 
     .line 9
     .line 10
@@ -3189,7 +3090,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->S()LrGe;
+    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->S()LZXe;
 
     .line 28
     .line 29
@@ -3197,7 +3098,7 @@
     move-result-object v2
 
     .line 31
-    instance-of v3, v2, LzJj;
+    instance-of v3, v2, Lc9k;
 
     .line 32
     .line 33
@@ -3205,7 +3106,7 @@
 
     .line 34
     .line 35
-    check-cast v2, LzJj;
+    check-cast v2, Lc9k;
 
     .line 36
     .line 37
@@ -3230,7 +3131,7 @@
 
     .line 44
     :cond_3
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->n1()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->s1()I
 
     .line 45
     .line 46
@@ -3238,7 +3139,7 @@
     move-result v3
 
     .line 48
-    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->p1()I
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/LinearLayoutManager;->u1()I
 
     .line 49
     .line 50
@@ -3250,7 +3151,7 @@
 
     .line 53
     .line 54
-    invoke-static {v2, v3, v0}, LStk;->q(LzJj;II)LfSi;
+    invoke-static {v2, v3, v0}, LBSk;->j(Lc9k;II)Lvhj;
 
     .line 55
     .line 56
@@ -3258,11 +3159,11 @@
     move-result-object v0
 
     .line 58
-    sget-object v2, Lzd2;->v0:Lzd2;
+    sget-object v2, LZq2;->t0:LZq2;
 
     .line 59
     .line 60
-    invoke-static {v0, v2}, LvYf;->N0(LrYf;Lkotlin/jvm/functions/Function1;)LBt7;
+    invoke-static {v0, v2}, Lvig;->o0(Lrig;Lkotlin/jvm/functions/Function1;)Lmy7;
 
     .line 61
     .line 62
@@ -3270,15 +3171,15 @@
     move-result-object v0
 
     .line 64
-    sget-object v2, LyOf;->n0:LyOf;
+    sget-object v2, LY5g;->s0:LY5g;
 
     .line 65
     .line 66
-    new-instance v3, LfSi;
+    new-instance v3, Lvhj;
 
     .line 67
     .line 68
-    invoke-direct {v3, v0, v2}, LfSi;-><init>(LrYf;Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {v3, v0, v2}, Lvhj;-><init>(Lrig;Lkotlin/jvm/functions/Function1;)V
 
     .line 69
     .line 70
@@ -3291,7 +3192,7 @@
 
     .line 74
     .line 75
-    invoke-static {v3, v0, v1, v2}, LvYf;->V0(LrYf;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
+    invoke-static {v3, v0, v1, v2}, Lvig;->u0(Lrig;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
 
     .line 76
     .line 77
@@ -3303,7 +3204,7 @@
 
     .line 80
     :cond_4
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 81
     .line 82
@@ -3312,7 +3213,7 @@
 
     .line 84
     :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 85
     .line 86
@@ -3320,7 +3221,24 @@
     throw v1
 .end method
 
-.method public final k0()Z
+.method public final i(LiGc;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/messaging/sendto/internal/SendToFragment;->X1()V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public final i0()Z
     .locals 1
 
     .line 1
@@ -3338,16 +3256,16 @@
     return-wide v0
 .end method
 
-.method public final v(LPpc;)V
+.method public final u(LkFc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->v(LPpc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->u(LkFc;)V
 
     .line 2
     .line 3
     .line 4
-    instance-of v0, p1, LIRf;
+    instance-of v0, p1, Lnbg;
 
     .line 5
     .line 6
@@ -3355,11 +3273,11 @@
 
     .line 7
     .line 8
-    check-cast p1, LIRf;
+    check-cast p1, Lnbg;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, LIRf;->f()LUQf;
+    invoke-virtual {p1}, Lnbg;->f()Lyag;
 
     .line 11
     .line 12
@@ -3380,16 +3298,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->K0:Lh8c;
+    iget-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->K0:LSmc;
 
     .line 5
     .line 6
@@ -3397,7 +3315,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1}, Lh8c;->j()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {p1}, LSmc;->l()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 9
     .line 10
@@ -3405,11 +3323,11 @@
     move-result-object p1
 
     .line 12
-    sget-object v0, LSwf;->b:LSwf;
+    sget-object v0, LbQf;->b:LbQf;
 
     .line 13
     .line 14
-    iget-object v1, p0, Lcom/snapchat/deck/fragment/ScopedMainPageFragment;->g0:Lwoi;
+    iget-object v1, p0, Lcom/snapchat/deck/fragment/ScopedMainPageFragment;->g0:LkNi;
 
     .line 15
     .line 16
@@ -3417,7 +3335,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v1, p1, v0, v2}, Lwoi;->a(Lio/reactivex/rxjava3/disposables/Disposable;Ljava/lang/Enum;Ljava/lang/String;)V
+    invoke-virtual {v1, p1, v0, v2}, LkNi;->a(Lio/reactivex/rxjava3/disposables/Disposable;Ljava/lang/Enum;Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -3430,7 +3348,7 @@
 
     .line 23
     .line 24
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -3441,16 +3359,41 @@
     throw p1
 .end method
 
-.method public final w0(LPpc;)V
-    .locals 11
+.method public final w()V
+    .locals 2
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LPpc;)V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w()V
 
     .line 2
     .line 3
     .line 4
-    instance-of v0, p1, LIRf;
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 5
+    .line 6
+    iget-object v1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->Y0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final w0(LkFc;)V
+    .locals 11
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LkFc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    instance-of v0, p1, Lnbg;
 
     .line 5
     .line 6
@@ -3458,11 +3401,11 @@
 
     .line 7
     .line 8
-    check-cast p1, LIRf;
+    check-cast p1, Lnbg;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, LIRf;->f()LUQf;
+    invoke-virtual {p1}, Lnbg;->f()Lyag;
 
     .line 11
     .line 12
@@ -3479,7 +3422,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-virtual {p1}, LIRf;->a()LGQf;
+    invoke-virtual {p1}, Lnbg;->a()Lkag;
 
     .line 20
     .line 21
@@ -3487,7 +3430,7 @@
     move-result-object v0
 
     .line 23
-    invoke-virtual {v0}, LGQf;->c()Z
+    invoke-virtual {v0}, Lkag;->c()Z
 
     .line 24
     .line 25
@@ -3510,24 +3453,24 @@
 
     .line 33
     .line 34
-    new-instance v2, LyRf;
+    new-instance v2, Ldbg;
 
     .line 35
     .line 36
     const/4 v3, 0x0
 
     .line 37
-    invoke-direct {v2, p0, v3}, LyRf;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
+    invoke-direct {v2, p0, v3}, Ldbg;-><init>(Lcom/snap/messaging/sendto/internal/SendToFragment;I)V
 
     .line 38
     .line 39
     .line 40
-    const v3, 0x7f080af1
+    const v3, 0x7f080b75
 
     .line 41
     .line 42
     .line 43
-    const v4, 0x7f132f45
+    const v4, 0x7f1331d6
 
     .line 44
     .line 45
@@ -3536,7 +3479,7 @@
 
     .line 47
     .line 48
-    invoke-static {v0, v3, v4, v2, v5}, LgRg;->c(LgRg;IILyRf;I)V
+    invoke-static {v0, v3, v4, v2, v5}, Ljdh;->c(Ljdh;IILdbg;I)V
 
     .line 49
     .line 50
@@ -3549,7 +3492,7 @@
 
     .line 53
     .line 54
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 55
     .line 56
@@ -3559,7 +3502,7 @@
     .line 58
     :cond_1
     :goto_0
-    invoke-virtual {p1}, LIRf;->a()LGQf;
+    invoke-virtual {p1}, Lnbg;->a()Lkag;
 
     .line 59
     .line 60
@@ -3567,7 +3510,7 @@
     move-result-object v0
 
     .line 62
-    invoke-virtual {v0}, LGQf;->b()LVRf;
+    invoke-virtual {v0}, Lkag;->b()Lzbg;
 
     .line 63
     .line 64
@@ -3587,7 +3530,7 @@
 
     .line 71
     .line 72
-    invoke-virtual {p1}, LIRf;->a()LGQf;
+    invoke-virtual {p1}, Lnbg;->a()Lkag;
 
     .line 73
     .line 74
@@ -3595,7 +3538,7 @@
     move-result-object v2
 
     .line 76
-    invoke-virtual {v2}, LGQf;->b()LVRf;
+    invoke-virtual {v2}, Lkag;->b()Lzbg;
 
     .line 77
     .line 78
@@ -3608,7 +3551,7 @@
     .line 81
     .line 82
     .line 83
-    invoke-virtual {p1}, LIRf;->a()LGQf;
+    invoke-virtual {p1}, Lnbg;->a()Lkag;
 
     .line 84
     .line 85
@@ -3616,7 +3559,7 @@
     move-result-object v2
 
     .line 87
-    invoke-virtual {v2}, LGQf;->b()LVRf;
+    invoke-virtual {v2}, Lkag;->b()Lzbg;
 
     .line 88
     .line 89
@@ -3628,7 +3571,7 @@
 
     .line 92
     .line 93
-    const v2, 0x7f131c01
+    const v2, 0x7f131d46
 
     .line 94
     .line 95
@@ -3652,7 +3595,7 @@
     const/4 v3, 0x2
 
     .line 103
-    invoke-virtual {v0, v3, v2}, Lcom/snap/component/header/SnapSubscreenHeaderView;->z(ILjava/lang/Integer;)V
+    invoke-virtual {v0, v3, v2}, Lcom/snap/component/header/SnapSubscreenHeaderView;->y(ILjava/lang/Integer;)V
 
     .line 104
     .line 105
@@ -3729,7 +3672,7 @@
     move-result-object v2
 
     .line 139
-    const v3, 0x7f070508
+    const v3, 0x7f07052f
 
     .line 140
     .line 141
@@ -3750,7 +3693,7 @@
 
     .line 149
     :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 150
     .line 151
@@ -3759,7 +3702,7 @@
 
     .line 153
     :cond_6
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 154
     .line 155
@@ -3772,7 +3715,7 @@
 
     .line 158
     .line 159
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 160
     .line 161
@@ -3782,7 +3725,7 @@
     .line 163
     :cond_8
     :goto_3
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LaUf;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LKdg;
 
     .line 164
     .line 165
@@ -3790,7 +3733,7 @@
 
     .line 166
     .line 167
-    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->F0:LH35;
+    iget-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->F0:LI95;
 
     .line 168
     .line 169
@@ -3798,7 +3741,7 @@
 
     .line 170
     .line 171
-    invoke-virtual {v0, p0, p1}, LH35;->a(Lcom/snap/messaging/sendto/internal/SendToFragment;LIRf;)LOL4;
+    invoke-virtual {v0, p0, p1}, LI95;->a(Lcom/snap/messaging/sendto/internal/SendToFragment;Lnbg;)LZ95;
 
     .line 172
     .line 173
@@ -3806,7 +3749,7 @@
     move-result-object p1
 
     .line 175
-    iget-object v2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->L0:LlEh;
+    iget-object v2, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->L0:Lz2i;
 
     .line 176
     .line 177
@@ -3822,7 +3765,7 @@
     move-result-object v3
 
     .line 183
-    invoke-virtual {p1}, LOL4;->c()LpEh;
+    invoke-virtual {p1}, LZ95;->b()LD2i;
 
     .line 184
     .line 185
@@ -3830,7 +3773,7 @@
     move-result-object v4
 
     .line 187
-    iget-object v5, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->v1:LLKj;
+    iget-object v5, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->v1:Ltak;
 
     .line 188
     .line 189
@@ -3866,7 +3809,7 @@
 
     .line 204
     .line 205
-    invoke-virtual/range {v2 .. v10}, LlEh;->a(Landroid/content/Context;LpEh;LLKj;Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)LnEh;
+    invoke-virtual/range {v2 .. v10}, Lz2i;->a(Landroid/content/Context;LD2i;Ltak;Landroidx/recyclerview/widget/RecyclerView;Landroid/view/View;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)LB2i;
 
     .line 206
     .line 207
@@ -3878,16 +3821,16 @@
 
     .line 210
     .line 211
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 212
     .line 213
     .line 214
-    iput-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->Q0:LnEh;
+    iput-object v0, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->Q0:LB2i;
 
     .line 215
     .line 216
-    invoke-virtual {p1}, LOL4;->b()LaUf;
+    invoke-virtual {p1}, LZ95;->a()LKdg;
 
     .line 217
     .line 218
@@ -3895,7 +3838,7 @@
     move-result-object p1
 
     .line 220
-    invoke-virtual {p1, p0}, LaUf;->s(Lcom/snap/messaging/sendto/internal/SendToFragment;)Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-virtual {p1, p0}, LKdg;->s(Lcom/snap/messaging/sendto/internal/SendToFragment;)Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 221
     .line 222
@@ -3903,12 +3846,12 @@
     move-result-object v0
 
     .line 224
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 225
     .line 226
     .line 227
-    iput-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LaUf;
+    iput-object p1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->N0:LKdg;
 
     .line 228
     .line 229
@@ -3920,7 +3863,7 @@
 
     .line 231
     .line 232
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 233
     .line 234
@@ -3933,7 +3876,7 @@
 
     .line 237
     .line 238
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 239
     .line 240
@@ -3946,7 +3889,7 @@
 
     .line 243
     .line 244
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 245
     .line 246
@@ -3959,7 +3902,7 @@
 
     .line 249
     .line 250
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 251
     .line 252
@@ -3972,7 +3915,7 @@
 
     .line 255
     .line 256
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 257
     .line 258
@@ -4001,27 +3944,91 @@
     return-void
 .end method
 
-.method public final x()V
+.method public final y1(Landroid/content/Context;)V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->x()V
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
+    const-string v1, "SendToFragment:onAttach"
+
     .line 4
-    sget-object v0, Li7j;->a:Li7j;
-
     .line 5
-    .line 6
-    iget-object v1, p0, Lcom/snap/messaging/sendto/internal/SendToFragment;->Y0:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
+    .line 6
     .line 7
     .line 8
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+    move-result v1
 
     .line 9
+    :try_start_0
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
     .line 10
     .line 11
+    .line 12
+    invoke-virtual {p0}, Lcom/snapchat/deck/fragment/MainPageFragment;->U()Llnd;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    if-eqz p1, :cond_0
+
+    .line 17
+    .line 18
+    check-cast p1, LSM7;
+
+    .line 19
+    .line 20
+    invoke-virtual {p1}, LSM7;->g()V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_0
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {p0}, Lcom/snapchat/deck/fragment/MainPageFragment;->P1()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
+
+    .line 30
+    .line 31
+    .line 32
     return-void
+
+    .line 33
+    :catchall_0
+    move-exception p1
+
+    .line 34
+    sget-object v0, LOdh;->b:LtGi;
+
+    .line 35
+    .line 36
+    if-eqz v0, :cond_1
+
+    .line 37
+    .line 38
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
+
+    .line 39
+    .line 40
+    .line 41
+    :cond_1
+    throw p1
 .end method

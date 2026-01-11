@@ -1,28 +1,41 @@
 .class public final Lp0j;
-.super LHfd;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements LbKj;
 
 
 # instance fields
-.field public final Y:Ljava/util/ArrayList;
+.field public final a:Landroid/app/Activity;
 
-.field public Z:Lcom/snap/commerce/lib/views/CarouselIndicator;
+.field public final b:LmGc;
 
-.field public e0:Landroidx/viewpager/widget/ViewPager;
+.field public final c:LWo2;
 
-.field public f0:Landroid/view/View;
+.field public final d:LYK4;
 
-.field public g0:I
+.field public final e:LYK4;
 
-.field public h0:LWog;
+.field public final f:LYK4;
+
+.field public final g:Ly02;
+
+.field public final h:Ljava/util/concurrent/atomic/AtomicReference;
+
+.field public final i:Lnp0;
+
+.field public final j:LnJe;
+
+.field public final k:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field public l:Ljava/util/Set;
+
+.field public m:Ljava/util/Set;
+
+.field public n:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroid/app/Activity;LmGc;LWo2;LYK4;LYK4;LYK4;Ly02;Ljava/util/concurrent/atomic/AtomicReference;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -30,694 +43,346 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/ArrayList;
+    iput-object p1, p0, Lp0j;->a:Landroid/app/Activity;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    iput-object p2, p0, Lp0j;->b:LmGc;
 
     .line 7
     .line 8
-    .line 9
-    iput-object v0, p0, Lp0j;->Y:Ljava/util/ArrayList;
+    iput-object p3, p0, Lp0j;->c:LWo2;
 
+    .line 9
     .line 10
+    iput-object p4, p0, Lp0j;->d:LYK4;
+
     .line 11
+    .line 12
+    iput-object p5, p0, Lp0j;->e:LYK4;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Lp0j;->f:LYK4;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, Lp0j;->g:Ly02;
+
+    .line 17
+    .line 18
+    iput-object p8, p0, Lp0j;->h:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 19
+    .line 20
+    sget-object p1, LVZ1;->Z:LVZ1;
+
+    .line 21
+    .line 22
+    const-string p2, "TimelineDraftMemoriesSavingPresenter"
+
+    .line 23
+    .line 24
+    invoke-static {p1, p1, p2}, LJF0;->e(LVZ1;LVZ1;Ljava/lang/String;)Lnp0;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    iput-object p1, p0, Lp0j;->i:Lnp0;
+
+    .line 29
+    .line 30
+    sget-object p2, LJp0;->a:LJp0;
+
+    .line 31
+    .line 32
+    new-instance p2, LnJe;
+
+    .line 33
+    .line 34
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 35
+    .line 36
+    .line 37
+    iput-object p2, p0, Lp0j;->j:LnJe;
+
+    .line 38
+    .line 39
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 40
+    .line 41
+    const/4 p2, 0x0
+
+    .line 42
+    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 43
+    .line 44
+    .line 45
+    iput-object p1, p0, Lp0j;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 46
+    .line 47
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(IFI)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lp0j;->Y:Ljava/util/ArrayList;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
-
-    .line 17
-    check-cast v1, LbKj;
-
-    .line 18
-    .line 19
-    invoke-interface {v1, p1, p2, p3}, LbKj;->a(IFI)V
-
-    .line 20
-    .line 21
-    .line 22
-    goto :goto_0
-
-    .line 23
-    :cond_0
-    return-void
-.end method
-
-.method public final b(I)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lp0j;->Y:Ljava/util/ArrayList;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
-
-    .line 17
-    check-cast v1, LbKj;
-
-    .line 18
-    .line 19
-    invoke-interface {v1, p1}, LbKj;->b(I)V
-
-    .line 20
-    .line 21
-    .line 22
-    goto :goto_0
-
-    .line 23
-    :cond_0
-    return-void
-.end method
-
-.method public final c(I)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lp0j;->Y:Ljava/util/ArrayList;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
-
-    .line 17
-    check-cast v1, LbKj;
-
-    .line 18
-    .line 19
-    invoke-interface {v1, p1}, LbKj;->c(I)V
-
-    .line 20
-    .line 21
-    .line 22
-    goto :goto_0
-
-    .line 23
-    :cond_0
-    iget-object v0, p0, Lp0j;->h0:LWog;
-
-    .line 24
-    .line 25
-    if-eqz v0, :cond_1
-
-    .line 26
-    .line 27
-    new-instance v1, LLOc;
-
-    .line 28
-    .line 29
-    iget v2, p0, Lp0j;->g0:I
-
-    .line 30
-    .line 31
-    invoke-direct {v1, p1, v2}, LLOc;-><init>(II)V
-
-    .line 32
-    .line 33
-    .line 34
-    invoke-virtual {v0, v1}, LWog;->a(Ljava/lang/Object;)V
-
-    .line 35
-    .line 36
-    .line 37
-    :cond_1
-    return-void
-.end method
-
-.method public final d()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LHfd;->c:Landroidx/fragment/app/FragmentActivity;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final g(Landroid/content/Context;Landroid/os/Bundle;ZLXog;Landroidx/fragment/app/FragmentActivity;Landroidx/fragment/app/g;)V
-    .locals 7
-
-    .line 1
-    const/4 v3, 0x0
-
-    .line 2
-    move-object v0, p0
-
-    .line 3
-    move-object v1, p1
-
-    .line 4
-    move-object v2, p2
-
-    .line 5
-    move-object v4, p4
-
-    .line 6
-    move-object v5, p5
-
-    .line 7
-    move-object v6, p6
-
-    .line 8
-    invoke-super/range {v0 .. v6}, LHfd;->g(Landroid/content/Context;Landroid/os/Bundle;ZLXog;Landroidx/fragment/app/FragmentActivity;Landroidx/fragment/app/g;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final h(LbKj;)V
-    .locals 1
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    return-void
-
-    .line 4
-    :cond_0
-    iget-object v0, p0, Lp0j;->Y:Ljava/util/ArrayList;
-
-    .line 5
-    .line 6
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public final i(LWog;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lp0j;->h0:LWog;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final j(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
+.method public final a(LkFc;Ljava/util/List;)V
     .locals 4
 
     .line 1
-    const v0, 0x7f0e07bb
+    iget-object v0, p0, Lp0j;->g:Ly02;
 
     .line 2
     .line 3
+    invoke-static {v0}, LlFg;->w(Ly02;)Z
+
     .line 4
-    const/4 v1, 0x0
-
     .line 5
-    invoke-virtual {p1, v0, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
     .line 6
-    .line 7
-    .line 8
-    move-result-object p1
+    move-result v0
 
+    .line 7
+    if-eqz v0, :cond_2
+
+    .line 8
     .line 9
-    iput-object p1, p0, Lp0j;->f0:Landroid/view/View;
+    instance-of p1, p1, LL72;
 
     .line 10
     .line 11
-    const p2, 0x7f0b19ca
+    if-eqz p1, :cond_2
 
     .line 12
     .line 13
+    move-object p1, p2
+
     .line 14
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    check-cast p1, Ljava/lang/Iterable;
 
     .line 15
     .line 16
-    .line 17
-    move-result-object p1
+    new-instance v0, Ljava/util/ArrayList;
 
+    .line 17
     .line 18
-    check-cast p1, Landroidx/viewpager/widget/ViewPager;
+    const/16 v1, 0xa
 
     .line 19
     .line 20
-    iput-object p1, p0, Lp0j;->e0:Landroidx/viewpager/widget/ViewPager;
+    invoke-static {p1, v1}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 21
     .line 22
-    iget-object p1, p0, Lp0j;->f0:Landroid/view/View;
-
     .line 23
+    move-result v2
+
     .line 24
-    const p2, 0x7f0b19c9
+    invoke-direct {v0, v2}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 25
     .line 26
     .line 27
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 28
     .line 29
     .line 30
-    move-result-object p1
+    move-result-object v2
 
     .line 31
-    check-cast p1, Lcom/snap/commerce/lib/views/CarouselIndicator;
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     .line 32
     .line 33
-    iput-object p1, p0, Lp0j;->Z:Lcom/snap/commerce/lib/views/CarouselIndicator;
-
     .line 34
+    move-result v3
+
     .line 35
-    iget-object p1, p0, Lp0j;->f0:Landroid/view/View;
+    if-eqz v3, :cond_0
 
     .line 36
     .line 37
-    const p2, 0x7f0b193c
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 38
     .line 39
     .line 40
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result-object v3
 
     .line 41
+    check-cast v3, Luzb;
+
     .line 42
     .line 43
-    move-result-object p1
+    invoke-virtual {v3}, Luzb;->d()Ljava/lang/String;
 
     .line 44
-    iget-object p2, p0, Lp0j;->f0:Landroid/view/View;
-
     .line 45
     .line 46
-    const v0, 0x7f0b02c0
+    move-result-object v3
 
     .line 47
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 48
     .line 49
-    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
     .line 50
+    goto :goto_0
+
     .line 51
+    :cond_0
+    invoke-static {v0}, Llh3;->x4(Ljava/lang/Iterable;)Ljava/util/Set;
+
     .line 52
-    move-result-object p2
-
     .line 53
-    new-instance v0, LJD0;
-
     .line 54
+    move-result-object v0
+
     .line 55
-    const/16 v1, 0xc
+    iput-object v0, p0, Lp0j;->l:Ljava/util/Set;
 
     .line 56
     .line 57
-    invoke-direct {v0, v1, p0}, LJD0;-><init>(ILjava/lang/Object;)V
+    new-instance v0, Ljava/util/ArrayList;
 
     .line 58
     .line 59
-    .line 60
-    invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-static {p1, v1}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
+    .line 60
     .line 61
     .line 62
+    move-result v1
+
     .line 63
-    invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 64
     .line 65
     .line 66
-    new-instance p2, Ltu6;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 67
     .line 68
-    invoke-virtual {p0}, LHfd;->f()Landroid/content/Context;
-
     .line 69
+    move-result-object p1
+
     .line 70
+    :goto_1
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
     .line 71
-    move-result-object v0
-
     .line 72
-    iget-object v1, p0, Lp0j;->f0:Landroid/view/View;
-
     .line 73
+    move-result v1
+
     .line 74
-    new-instance v2, Lin7;
+    if-eqz v1, :cond_1
 
     .line 75
     .line 76
-    const/16 v3, 0x1a
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 77
     .line 78
-    invoke-direct {v2, v3, p0}, Lin7;-><init>(ILjava/lang/Object;)V
-
     .line 79
-    .line 80
-    .line 81
-    invoke-direct {p2, v0, v1, v1, v2}, Ltu6;-><init>(Landroid/content/Context;Landroid/view/View;Landroid/view/View;Lin7;)V
+    move-result-object v1
 
+    .line 80
+    check-cast v1, Luzb;
+
+    .line 81
     .line 82
+    invoke-virtual {v1}, Luzb;->n()Ljava/lang/String;
+
     .line 83
     .line 84
-    invoke-virtual {p1, p2}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
-
     .line 85
-    .line 86
-    .line 87
-    iget-object p1, p0, Lp0j;->e0:Landroidx/viewpager/widget/ViewPager;
+    move-result-object v1
 
+    .line 86
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 87
     .line 88
     .line 89
-    invoke-virtual {p1, p0}, Landroidx/viewpager/widget/ViewPager;->b(LbKj;)V
+    goto :goto_1
 
     .line 90
+    :cond_1
+    invoke-static {v0}, Llh3;->x4(Ljava/lang/Iterable;)Ljava/util/Set;
+
     .line 91
     .line 92
-    iget-object p1, p0, Lp0j;->f0:Landroid/view/View;
-
     .line 93
+    move-result-object p1
+
     .line 94
-    return-object p1
-.end method
+    iput-object p1, p0, Lp0j;->m:Ljava/util/Set;
 
-.method public final k()V
-    .locals 2
+    .line 95
+    .line 96
+    invoke-static {p2}, Llh3;->G3(Ljava/util/List;)Ljava/lang/Object;
 
-    .line 1
-    iget-object v0, p0, Lp0j;->h0:LWog;
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p1
 
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
+    .line 100
+    check-cast p1, Luzb;
 
-    .line 4
-    .line 5
-    sget-object v1, LtOc;->a:LtOc;
+    .line 101
+    .line 102
+    if-eqz p1, :cond_2
 
-    .line 6
-    .line 7
-    invoke-virtual {v0, v1}, LWog;->a(Ljava/lang/Object;)V
+    .line 103
+    .line 104
+    invoke-virtual {p1}, Luzb;->i()LEp2;
 
-    .line 8
-    .line 9
-    .line 10
-    :cond_0
-    return-void
-.end method
+    .line 105
+    .line 106
+    .line 107
+    move-result-object p1
 
-.method public final l()V
-    .locals 1
+    .line 108
+    if-eqz p1, :cond_2
 
-    .line 1
-    iget-object v0, p0, Lp0j;->Y:Ljava/util/ArrayList;
+    .line 109
+    .line 110
+    iget-object p1, p1, LEp2;->B:Ljava/lang/String;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
+    .line 111
+    .line 112
+    if-eqz p1, :cond_2
 
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
+    .line 113
+    .line 114
+    iget-object p2, p0, Lp0j;->h:Ljava/util/concurrent/atomic/AtomicReference;
 
-.method public onCreateCarouselIndicator(Lj94;)V
-    .locals 3
-    .annotation runtime Lv6i;
-        threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
-    .end annotation
+    .line 115
+    .line 116
+    invoke-static {p1}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
-    .line 1
-    iget v0, p1, Lj94;->a:I
+    .line 117
+    .line 118
+    .line 119
+    move-result-object p1
 
-    .line 2
-    .line 3
-    const/4 v1, 0x1
+    .line 120
+    invoke-virtual {p2, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 4
-    if-ne v0, v1, :cond_1
-
-    .line 5
-    .line 6
-    iget-object p1, p0, Lp0j;->Z:Lcom/snap/commerce/lib/views/CarouselIndicator;
-
-    .line 7
-    .line 8
-    if-nez p1, :cond_0
-
-    .line 9
-    .line 10
-    goto :goto_0
-
-    .line 11
-    :cond_0
-    const/16 v0, 0x8
-
-    .line 12
-    .line 13
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 14
-    .line 15
-    .line 16
-    return-void
-
-    .line 17
-    :cond_1
-    iget-object v1, p0, Lp0j;->Z:Lcom/snap/commerce/lib/views/CarouselIndicator;
-
-    .line 18
-    .line 19
-    if-nez v1, :cond_2
-
-    .line 20
-    .line 21
-    :goto_0
-    return-void
-
-    .line 22
+    .line 121
+    .line 122
+    .line 123
     :cond_2
-    const/4 v2, 0x0
-
-    .line 23
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
-
-    .line 24
-    .line 25
-    .line 26
-    iget-object v1, p0, Lp0j;->Z:Lcom/snap/commerce/lib/views/CarouselIndicator;
-
-    .line 27
-    .line 28
-    invoke-virtual {v1, v0}, Lcom/snap/commerce/lib/views/CarouselIndicator;->a(I)V
-
-    .line 29
-    .line 30
-    .line 31
-    iget-object v0, p0, Lp0j;->Z:Lcom/snap/commerce/lib/views/CarouselIndicator;
-
-    .line 32
-    .line 33
-    iget p1, p1, Lj94;->b:I
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, p1}, Lcom/snap/commerce/lib/views/CarouselIndicator;->b(I)V
-
-    .line 36
-    .line 37
-    .line 38
-    return-void
-.end method
-
-.method public onLoadImages(LGsa;)V
-    .locals 4
-    .annotation runtime Lv6i;
-        threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
-    .end annotation
-
-    .line 1
-    iget-object v0, p1, LGsa;->a:Ljava/util/List;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v1
-
-    .line 7
-    iput v1, p0, Lp0j;->g0:I
-
-    .line 8
-    .line 9
-    iget-object v1, p0, Lp0j;->e0:Landroidx/viewpager/widget/ViewPager;
-
-    .line 10
-    .line 11
-    new-instance v2, Lx2k;
-
-    .line 12
-    .line 13
-    iget-object v3, p1, LGsa;->b:LO41;
-
-    .line 14
-    .line 15
-    invoke-direct {v2, v0, v3, p0}, Lx2k;-><init>(Ljava/util/List;LO41;Lp0j;)V
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v1, v2}, Landroidx/viewpager/widget/ViewPager;->A(Lvu1;)V
-
-    .line 19
-    .line 20
-    .line 21
-    iget-object v0, p0, Lp0j;->e0:Landroidx/viewpager/widget/ViewPager;
-
-    .line 22
-    .line 23
-    iget p1, p1, LGsa;->c:I
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, p1}, Landroidx/viewpager/widget/ViewPager;->B(I)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-void
-.end method
-
-.method public onUpdateCarouselIndicator(LXcj;)V
-    .locals 1
-    .annotation runtime Lv6i;
-        threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
-    .end annotation
-
-    .line 1
-    iget p1, p1, LXcj;->a:I
-
-    .line 2
-    .line 3
-    iget-object v0, p0, Lp0j;->Z:Lcom/snap/commerce/lib/views/CarouselIndicator;
-
-    .line 4
-    .line 5
-    if-nez v0, :cond_0
-
-    .line 6
-    .line 7
-    return-void
-
-    .line 8
-    :cond_0
-    invoke-virtual {v0, p1}, Lcom/snap/commerce/lib/views/CarouselIndicator;->b(I)V
-
-    .line 9
-    .line 10
-    .line 11
     return-void
 .end method

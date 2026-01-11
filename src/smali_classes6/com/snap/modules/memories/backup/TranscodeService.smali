@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LxPi;
+    proxyClass = LUej;
     schema = "\'transcode\':f|m|(r:\'[0]\'): p<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupStepData;,
-        LtPi;
+        LQej;
     }
 .end annotation
 
@@ -29,7 +29,7 @@
             "Lcom/snap/modules/memories/backup/BackupStepData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "LtPi;",
+            "LQej;",
             ">;"
         }
     .end annotation

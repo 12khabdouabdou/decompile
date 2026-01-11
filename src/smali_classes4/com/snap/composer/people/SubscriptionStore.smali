@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LR7i;
+    proxyClass = Ljwi;
     schema = "\'getSubscription\':f|m, w|(r:\'[0]\', f|s|(r?:\'[1]\', m?<s,u>)),\'getSubscriptions\':f|m, w|(a<r:\'[0]\'>, f|s|(m?<s,u>, r?:\'[2]\')),\'updateSubscription\':f|m, w|(r:\'[0]\', b, r?:\'[3]\', f?|s|(m?<s,u>)),\'updateNotificationSubscription\':f|m, w|(r:\'[0]\', b, f?|s|(m?<s,u>)),\'updateHidden\':f|m, w|(r:\'[0]\', b, f?|s|(m?<s,u>)),\'observe\':f|m|(f(r?:\'[1]\')): f()"
     typeReferences = {
         Lcom/snap/composer/subscriptions/SubscriptionEntityID;,
-        Le7i;,
+        Lvvi;,
         Lcom/snap/composer/foundation/Error;,
         Lcom/snap/composer/people/InteractionPlacementInfo;
     }

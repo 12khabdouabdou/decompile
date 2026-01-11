@@ -1,60 +1,83 @@
-.class public abstract synthetic LlD3;
-.super Ljava/lang/Object;
+.class public final LlD3;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'id\':s?,\'title\':s?,\'subtitle\':s?,\'description\':s?,\'bitmojiTemplateId\':s?,\'tokenQuantity\':d@?"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _bitmojiTemplateId:Ljava/lang/String;
+
+.field private _description:Ljava/lang/String;
+
+.field private _id:Ljava/lang/String;
+
+.field private _subtitle:Ljava/lang/String;
+
+.field private _title:Ljava/lang/String;
+
+.field private _tokenQuantity:Ljava/lang/Double;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-static {}, LfW1;->values()[LfW1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
 
     .line 2
+    iput-object v0, p0, LlD3;->_id:Ljava/lang/String;
+
     .line 3
+    iput-object v0, p0, LlD3;->_title:Ljava/lang/String;
+
     .line 4
-    move-result-object v0
+    iput-object v0, p0, LlD3;->_subtitle:Ljava/lang/String;
 
     .line 5
-    array-length v0, v0
+    iput-object v0, p0, LlD3;->_description:Ljava/lang/String;
 
     .line 6
-    new-array v0, v0, [I
+    iput-object v0, p0, LlD3;->_bitmojiTemplateId:Ljava/lang/String;
 
     .line 7
+    iput-object v0, p0, LlD3;->_tokenQuantity:Ljava/lang/Double;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Double;)V
+    .locals 0
+
     .line 8
-    const/4 v1, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 9
-    const/4 v2, 0x0
+    iput-object p1, p0, LlD3;->_id:Ljava/lang/String;
 
     .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    iput-object p2, p0, LlD3;->_title:Ljava/lang/String;
 
     .line 11
+    iput-object p3, p0, LlD3;->_subtitle:Ljava/lang/String;
+
     .line 12
-    :catch_0
-    const/4 v2, 0x2
+    iput-object p4, p0, LlD3;->_description:Ljava/lang/String;
 
     .line 13
-    :try_start_1
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    iput-object p5, p0, LlD3;->_bitmojiTemplateId:Ljava/lang/String;
 
     .line 14
-    .line 15
-    :catch_1
-    sput-object v0, LlD3;->a:[I
+    iput-object p6, p0, LlD3;->_tokenQuantity:Ljava/lang/Double;
 
-    .line 16
-    .line 17
     return-void
 .end method

@@ -17,7 +17,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lo8f;",
+            "LFqf;",
             ">;"
         }
     .end annotation
@@ -32,7 +32,7 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Lo8f;",
+            "LFqf;",
             ">;)V"
         }
     .end annotation
@@ -75,7 +75,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lo8f;",
+            "LFqf;",
             ">;"
         }
     .end annotation
@@ -92,7 +92,7 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Lo8f;",
+            "LFqf;",
             ">;)",
             "Lcom/snap/discover/playback/content/model/CommerceContent;"
         }
@@ -130,7 +130,7 @@
 
     iget-object p1, p1, Lcom/snap/discover/playback/content/model/CommerceContent;->commerceCatalogs:Ljava/util/List;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -148,7 +148,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lo8f;",
+            "LFqf;",
             ">;"
         }
     .end annotation

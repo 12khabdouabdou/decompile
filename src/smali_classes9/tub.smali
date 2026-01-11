@@ -1,180 +1,178 @@
-.class public Ltub;
-.super LoYg;
+.class public final Ltub;
+.super Le57;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LVz9;
-    value = LqYg;
-.end annotation
-
-.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
-    value = Lvub;
-.end annotation
+# static fields
+.field public static volatile c:[Ltub;
 
 
 # instance fields
-.field public a:Lqub;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "entry_mem_data_id"
-    .end annotation
-.end field
+.field public a:I
 
-.field public b:Lqub;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "snap_mem_data_id"
-    .end annotation
-.end field
+.field public b:Ljava/lang/Object;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput v0, p0, Ltub;->a:I
+
+    .line 6
+    .line 7
+    const/4 v0, 0x0
+
+    .line 8
+    iput-object v0, p0, Ltub;->b:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
+
+    .line 11
+    .line 12
+    const/4 v0, -0x1
+
+    .line 13
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+
+    .line 14
+    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p1, p0, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 6
-    if-eqz p1, :cond_2
-
-    .line 7
-    .line 8
-    instance-of v2, p1, Ltub;
-
-    .line 9
-    .line 10
-    if-nez v2, :cond_1
-
-    .line 11
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_1
-    check-cast p1, Ltub;
-
-    .line 14
-    .line 15
-    iget-object v2, p0, Ltub;->a:Lqub;
-
-    .line 16
-    .line 17
-    iget-object v3, p1, Ltub;->a:Lqub;
-
-    .line 18
-    .line 19
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v2
-
-    .line 23
-    if-eqz v2, :cond_2
-
-    .line 24
-    .line 25
-    iget-object v2, p0, Ltub;->b:Lqub;
-
-    .line 26
-    .line 27
-    iget-object p1, p1, Ltub;->b:Lqub;
-
-    .line 28
-    .line 29
-    invoke-static {v2, p1}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 30
-    .line 31
-    .line 32
-    move-result p1
-
-    .line 33
-    if-eqz p1, :cond_2
-
-    .line 34
-    .line 35
-    return v0
-
-    .line 36
-    :cond_2
-    :goto_0
-    return v1
-.end method
-
-.method public final hashCode()I
+.method public final computeSerializedSize()I
     .locals 3
 
     .line 1
-    iget-object v0, p0, Ltub;->a:Lqub;
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    if-nez v0, :cond_0
+    move-result v0
 
     .line 5
-    .line 6
-    const/4 v0, 0x0
+    iget v1, p0, Ltub;->a:I
 
+    .line 6
     .line 7
-    goto :goto_0
+    const/4 v2, 0x1
 
     .line 8
-    :cond_0
-    invoke-virtual {v0}, Lqub;->hashCode()I
+    if-ne v1, v2, :cond_0
 
     .line 9
     .line 10
-    .line 11
-    move-result v0
+    iget-object v1, p0, Ltub;->b:Ljava/lang/Object;
 
+    .line 11
     .line 12
-    :goto_0
-    const/16 v2, 0x20f
+    check-cast v1, Ljava/lang/Integer;
 
     .line 13
     .line 14
-    add-int/2addr v2, v0
+    invoke-static {v2, v0, v1}, LIDj;->b(IILjava/lang/Integer;)I
 
     .line 15
-    mul-int/lit8 v2, v2, 0x1f
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    :cond_0
+    iget v1, p0, Ltub;->a:I
+
+    .line 19
+    .line 20
+    const/4 v2, 0x2
+
+    .line 21
+    if-ne v1, v2, :cond_1
+
+    .line 22
+    .line 23
+    iget-object v1, p0, Ltub;->b:Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    check-cast v1, Lcom/google/protobuf/nano/MessageNano;
+
+    .line 26
+    .line 27
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v1
+
+    .line 31
+    add-int/2addr v1, v0
+
+    .line 32
+    return v1
+
+    .line 33
+    :cond_1
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_4
+
+    .line 6
+    .line 7
+    const/16 v1, 0x8
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_3
+
+    .line 10
+    .line 11
+    const/16 v1, 0x12
+
+    .line 12
+    .line 13
+    if-eq v0, v1, :cond_1
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     .line 16
     .line 17
-    iget-object v0, p0, Ltub;->b:Lqub;
-
     .line 18
+    move-result v0
+
     .line 19
-    if-nez v0, :cond_1
+    if-nez v0, :cond_0
 
     .line 20
     .line 21
@@ -182,17 +180,153 @@
 
     .line 22
     :cond_1
-    invoke-virtual {v0}, Lqub;->hashCode()I
+    iget v0, p0, Ltub;->a:I
 
     .line 23
     .line 24
+    const/4 v1, 0x2
+
     .line 25
-    move-result v1
+    if-eq v0, v1, :cond_2
 
     .line 26
+    .line 27
+    new-instance v0, Lzvb;
+
+    .line 28
+    .line 29
+    invoke-direct {v0}, Lzvb;-><init>()V
+
+    .line 30
+    .line 31
+    .line 32
+    iput-object v0, p0, Ltub;->b:Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    :cond_2
+    iget-object v0, p0, Ltub;->b:Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    check-cast v0, Lcom/google/protobuf/nano/MessageNano;
+
+    .line 37
+    .line 38
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    .line 39
+    .line 40
+    .line 41
+    iput v1, p0, Ltub;->a:I
+
+    .line 42
+    .line 43
+    goto :goto_0
+
+    .line 44
+    :cond_3
+    invoke-virtual {p1}, LZc3;->r()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v0
+
+    .line 48
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
+    iput-object v0, p0, Ltub;->b:Ljava/lang/Object;
+
+    .line 53
+    .line 54
+    const/4 v0, 0x1
+
+    .line 55
+    iput v0, p0, Ltub;->a:I
+
+    .line 56
+    .line 57
+    goto :goto_0
+
+    .line 58
+    :cond_4
     :goto_1
-    add-int/2addr v2, v1
+    return-object p0
+.end method
+
+.method public final writeTo(Lbd3;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Ltub;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    if-ne v0, v1, :cond_0
+
+    .line 5
+    .line 6
+    iget-object v0, p0, Ltub;->b:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v0, Ljava/lang/Integer;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    invoke-virtual {p1, v1, v0}, Lbd3;->C(II)V
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    iget v0, p0, Ltub;->a:I
+
+    .line 18
+    .line 19
+    const/4 v1, 0x2
+
+    .line 20
+    if-ne v0, v1, :cond_1
+
+    .line 21
+    .line 22
+    iget-object v0, p0, Ltub;->b:Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    check-cast v0, Lcom/google/protobuf/nano/MessageNano;
+
+    .line 25
+    .line 26
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 27
-    return v2
+    .line 28
+    .line 29
+    :cond_1
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 30
+    .line 31
+    .line 32
+    return-void
 .end method

@@ -1,104 +1,217 @@
-.class public abstract synthetic LnKg;
+.class public final LnKg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LgY3;
+.implements Lio/reactivex/rxjava3/disposables/Disposable;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:Z
+
+.field public final synthetic b:LsY3;
+
+.field public final synthetic c:LX7c;
+
+.field public final synthetic t:LDi7;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(ZLsY3;LX7c;LDi7;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Lcom/snap/modules/plus_common/SnapMode;->values()[Lcom/snap/modules/plus_common/SnapMode;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-boolean p1, p0, LnKg;->a:Z
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p2, p0, LnKg;->b:LsY3;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lcom/snap/modules/plus_common/SnapMode;->OneTimeOnly:Lcom/snap/modules/plus_common/SnapMode;
+    iput-object p3, p0, LnKg;->c:LX7c;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iput-object p4, p0, LnKg;->t:LDi7;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    return-void
+.end method
 
+
+# virtual methods
+.method public final Z()LDi7;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LnKg;->t:LDi7;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->a:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->d()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final d1()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, LnKg;->a:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final dispose()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final f2()LgY3;
+    .locals 0
+
+    .line 1
+    return-object p0
+.end method
+
+.method public final h()LX7c;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LnKg;->c:LX7c;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final i()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LnKg;->b:LsY3;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final o0(Lcom/snapchat/client/content_manager/ConsumptionUseCase;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final x()LXc7;
+    .locals 4
+
+    .line 1
+    iget-boolean v0, p0, LnKg;->a:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v0, LXc7;
+
+    .line 6
+    .line 7
+    sget-object v1, LlY3;->c:LlY3;
+
+    .line 8
+    .line 9
+    new-instance v2, Ljava/io/IOException;
+
+    .line 10
+    .line 11
+    invoke-direct {v2}, Ljava/io/IOException;-><init>()V
+
+    .line 12
+    .line 13
     .line 14
-    const/4 v2, 0x1
+    const/4 v3, 0x0
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-direct {v0, v1, v2, v3}, LXc7;-><init>(LlY3;Ljava/lang/Throwable;Lyhf;)V
 
     .line 16
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lcom/snap/modules/plus_common/SnapMode;->SelfDestruct:Lcom/snap/modules/plus_common/SnapMode;
-
     .line 18
+    return-object v0
+
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
 
     .line 20
     .line 21
-    .line 22
-    move-result v1
+    const-string v1, "Result is successful"
 
+    .line 22
     .line 23
-    const/4 v2, 0x2
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 25
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lcom/snap/modules/plus_common/SnapMode;->None:Lcom/snap/modules/plus_common/SnapMode;
+    throw v0
+.end method
 
-    .line 27
-    .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+.method public final x0()Ljava/io/InputStream;
+    .locals 1
 
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
+    .line 1
+    iget-object v0, p0, LnKg;->b:LsY3;
 
-    .line 32
-    const/4 v2, 0x3
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LsY3;->l0()Ljava/io/InputStream;
 
-    .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 34
-    .line 35
-    :catch_2
-    sput-object v0, LnKg;->a:[I
-
-    .line 36
-    .line 37
-    return-void
+    .line 7
+    return-object v0
 .end method

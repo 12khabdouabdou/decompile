@@ -5,8 +5,8 @@
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 .implements Landroid/view/View$OnAttachStateChangeListener;
-.implements LoP;
-.implements LKIi;
+.implements LoR;
+.implements Li8j;
 
 
 # static fields
@@ -38,7 +38,7 @@
 
 .field public m0:I
 
-.field public n0:LzIi;
+.field public n0:LX7j;
 
 .field public o0:Landroid/view/View;
 
@@ -52,7 +52,7 @@
 
 .field public t:Z
 
-.field public t0:LkC7;
+.field public t0:LAH7;
 
 .field public u0:I
 
@@ -188,24 +188,7 @@
 
 
 # virtual methods
-.method public final a(FF)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/view/View;->setX(F)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0, p2}, Landroid/view/View;->setY(F)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public b(LKIi;Landroid/graphics/Rect;)V
+.method public a(Li8j;Landroid/graphics/Rect;)V
     .locals 18
 
     .line 1
@@ -537,7 +520,7 @@
     sub-int/2addr v5, v14
 
     .line 154
-    iget-object v15, v0, Lcom/snap/framework/ui/views/Tooltip;->t0:LkC7;
+    iget-object v15, v0, Lcom/snap/framework/ui/views/Tooltip;->t0:LAH7;
 
     .line 155
     .line 156
@@ -545,14 +528,14 @@
 
     .line 157
     .line 158
-    iget v6, v15, LkC7;->b:I
+    iget v6, v15, LAH7;->b:I
 
     .line 159
     .line 160
     add-int/2addr v12, v6
 
     .line 161
-    iget v15, v15, LkC7;->c:I
+    iget v15, v15, LAH7;->c:I
 
     .line 162
     .line 163
@@ -570,7 +553,7 @@
 
     .line 167
     .line 168
-    invoke-static {v6}, Llva;->L(I)I
+    invoke-static {v6}, LzHa;->L(I)I
 
     .line 169
     .line 170
@@ -787,7 +770,7 @@
 
     .line 260
     .line 261
-    invoke-static {v6}, Llva;->L(I)I
+    invoke-static {v6}, LzHa;->L(I)I
 
     .line 262
     .line 263
@@ -892,7 +875,7 @@
     add-int/2addr v2, v6
 
     .line 302
-    iget-object v6, v0, Lcom/snap/framework/ui/views/Tooltip;->t0:LkC7;
+    iget-object v6, v0, Lcom/snap/framework/ui/views/Tooltip;->t0:LAH7;
 
     .line 303
     .line 304
@@ -927,7 +910,7 @@
     int-to-float v6, v9
 
     .line 318
-    iget-object v8, v0, Lcom/snap/framework/ui/views/Tooltip;->n0:LzIi;
+    iget-object v8, v0, Lcom/snap/framework/ui/views/Tooltip;->n0:LX7j;
 
     .line 319
     .line 320
@@ -1152,7 +1135,7 @@
 
     .line 414
     .line 415
-    invoke-interface {v3, v6, v2}, LKIi;->a(FF)V
+    invoke-interface {v3, v6, v2}, Li8j;->c(FF)V
 
     .line 416
     .line 417
@@ -1195,7 +1178,7 @@
     return-void
 .end method
 
-.method public final c(Landroid/view/View;Z)V
+.method public final b(Landroid/view/View;Z)V
     .locals 0
 
     .line 1
@@ -1212,6 +1195,23 @@
     .line 6
     .line 7
     .line 8
+    return-void
+.end method
+
+.method public final c(FF)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/View;->setX(F)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0, p2}, Landroid/view/View;->setY(F)V
+
+    .line 5
+    .line 6
+    .line 7
     return-void
 .end method
 
@@ -1284,7 +1284,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, p0}, Lsc5;->Y0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-static {v0, p0}, LTVd;->d0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 21
     .line 22
@@ -1353,11 +1353,11 @@
 
     .line 28
     .line 29
-    sget-object p1, LzIi;->b:LzIi;
+    sget-object p1, LX7j;->b:LX7j;
 
     .line 30
     .line 31
-    iput-object p1, p0, Lcom/snap/framework/ui/views/Tooltip;->n0:LzIi;
+    iput-object p1, p0, Lcom/snap/framework/ui/views/Tooltip;->n0:LX7j;
 
     .line 32
     .line 33
@@ -1521,7 +1521,7 @@
     .line 69
     .line 70
     .line 71
-    invoke-virtual {p0, p0, v2}, Lcom/snap/framework/ui/views/Tooltip;->b(LKIi;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, p0, v2}, Lcom/snap/framework/ui/views/Tooltip;->a(Li8j;Landroid/graphics/Rect;)V
 
     .line 72
     .line 73
@@ -1707,11 +1707,11 @@
     .line 74
     .line 75
     .line 76
-    new-instance v6, LsZj;
+    new-instance v6, Lqpk;
 
     .line 77
     .line 78
-    invoke-direct {v6}, LsZj;-><init>()V
+    invoke-direct {v6}, Lqpk;-><init>()V
 
     .line 79
     .line 80
@@ -1905,14 +1905,14 @@
 
     .line 54
     .line 55
-    new-instance v2, LyIi;
+    new-instance v2, LW7j;
 
     .line 56
     .line 57
     const/4 v3, 0x0
 
     .line 58
-    invoke-direct {v2, p0, v3}, LyIi;-><init>(Lcom/snap/framework/ui/views/Tooltip;I)V
+    invoke-direct {v2, p0, v3}, LW7j;-><init>(Lcom/snap/framework/ui/views/Tooltip;I)V
 
     .line 59
     .line 60
@@ -1969,7 +1969,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p0}, Lsc5;->Y0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-static {p1, p0}, LTVd;->d0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 2
     .line 3

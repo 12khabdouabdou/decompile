@@ -4,15 +4,19 @@
 
 
 # instance fields
-.field public final a:I
+.field public final a:LdLa;
 
-.field public final b:I
+.field public final b:Landroid/app/Activity;
 
-.field public final c:I
+.field public final c:LnJe;
+
+.field public final d:LJp0;
+
+.field public final e:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
 
 # direct methods
-.method public constructor <init>(III)V
+.method public constructor <init>(LdLa;Landroid/app/Activity;)V
     .locals 0
 
     .line 1
@@ -21,279 +25,187 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, LhNa;->a:I
+    iput-object p1, p0, LhNa;->a:LdLa;
 
     .line 5
     .line 6
-    iput p2, p0, LhNa;->b:I
+    iput-object p2, p0, LhNa;->b:Landroid/app/Activity;
 
     .line 7
     .line 8
-    iput p3, p0, LhNa;->c:I
+    sget-object p1, Lz7e;->Z:Lz7e;
 
     .line 9
     .line 10
+    const-string p2, "LocationSystemPromptHelper"
+
+    .line 11
+    .line 12
+    invoke-static {p1, p1, p2}, LzHa;->m(Lz7e;Lz7e;Ljava/lang/String;)Lnp0;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    new-instance p2, LnJe;
+
+    .line 17
+    .line 18
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 19
+    .line 20
+    .line 21
+    iput-object p2, p0, LhNa;->c:LnJe;
+
+    .line 22
+    .line 23
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 24
+    .line 25
+    iput-object p1, p0, LhNa;->d:LJp0;
+
+    .line 26
+    .line 27
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p1
+
+    .line 31
+    iput-object p1, p0, LhNa;->e:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 32
+    .line 33
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    if-ne p0, p1, :cond_0
-
-    .line 2
-    .line 3
-    goto :goto_1
-
-    .line 4
-    :cond_0
-    instance-of v0, p1, LhNa;
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_1
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    check-cast p1, LhNa;
-
-    .line 10
-    .line 11
-    iget v0, p1, LhNa;->a:I
-
-    .line 12
-    .line 13
-    iget v1, p0, LhNa;->a:I
-
-    .line 14
-    .line 15
-    if-eq v1, v0, :cond_2
-
-    .line 16
-    .line 17
-    goto :goto_0
-
-    .line 18
-    :cond_2
-    iget v0, p0, LhNa;->b:I
-
-    .line 19
-    .line 20
-    iget v1, p1, LhNa;->b:I
-
-    .line 21
-    .line 22
-    if-eq v0, v1, :cond_3
-
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_3
-    iget v0, p0, LhNa;->c:I
-
-    .line 26
-    .line 27
-    iget p1, p1, LhNa;->c:I
-
-    .line 28
-    .line 29
-    if-eq v0, p1, :cond_4
-
-    .line 30
-    .line 31
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 32
-    return p1
-
-    .line 33
-    :cond_4
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 34
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget v0, p0, LhNa;->a:I
-
-    .line 2
-    .line 3
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 4
-    .line 5
-    iget v1, p0, LhNa;->b:I
-
-    .line 6
-    .line 7
-    add-int/2addr v0, v1
-
-    .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 9
-    .line 10
-    iget v1, p0, LhNa;->c:I
-
-    .line 11
-    .line 12
-    invoke-static {v1}, Llva;->L(I)I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result v1
-
-    .line 16
-    add-int/2addr v1, v0
-
-    .line 17
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method public final a(Z)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v0, Lod9;
 
     .line 2
     .line 3
-    const-string v1, "NavigationToInjectedPage(injectionSeekPointIdx="
+    const/16 v1, 0x1c
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1, p0}, Lod9;-><init>(ILjava/lang/Object;)V
 
     .line 6
     .line 7
     .line 8
-    iget v1, p0, LhNa;->a:I
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", prevSeekPointIdx="
+    iget-object v0, p0, LhNa;->c:LnJe;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 16
     .line 17
     .line 18
-    iget v1, p0, LhNa;->b:I
+    move-result-object v0
 
     .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
+    .line 20
     .line 21
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 22
     .line 23
-    const-string v1, ", type="
-
     .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, LPX6;
 
+    .line 25
     .line 26
+    const/16 v1, 0x17
+
     .line 27
     .line 28
-    iget v1, p0, LhNa;->c:I
+    invoke-direct {v0, p0, p1, v1}, LPX6;-><init>(Ljava/lang/Object;ZI)V
 
     .line 29
     .line 30
-    const/4 v2, 0x1
-
     .line 31
-    if-eq v1, v2, :cond_2
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 32
     .line 33
-    const/4 v2, 0x2
+    invoke-direct {p1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 34
-    if-eq v1, v2, :cond_1
-
     .line 35
     .line 36
-    const/4 v2, 0x3
+    new-instance v0, LyJa;
 
     .line 37
-    if-eq v1, v2, :cond_0
-
     .line 38
+    const/4 v1, 0x2
+
     .line 39
-    const-string v1, "null"
+    invoke-direct {v0, v1, p0}, LyJa;-><init>(ILjava/lang/Object;)V
 
     .line 40
     .line 41
-    goto :goto_0
-
     .line 42
-    :cond_0
-    const-string v1, "AUTO_ADVANCE"
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;
 
     .line 43
     .line 44
-    goto :goto_0
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleResumeNext;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 45
-    :cond_1
-    const-string v1, "TAP_RIGHT"
-
     .line 46
     .line 47
-    goto :goto_0
+    new-instance p1, LgMa;
 
     .line 48
-    :cond_2
-    const-string v1, "TAP_LEFT"
-
     .line 49
+    const/4 v0, 0x3
+
     .line 50
-    :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p1, v0, p0}, LgMa;-><init>(ILjava/lang/Object;)V
 
     .line 51
     .line 52
     .line 53
-    const-string v1, ")"
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
 
     .line 54
     .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 56
     .line 57
     .line 58
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
 
     .line 59
     .line 60
-    .line 61
-    move-result-object v0
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
 
+    .line 61
     .line 62
-    return-object v0
+    .line 63
+    return-object p1
 .end method

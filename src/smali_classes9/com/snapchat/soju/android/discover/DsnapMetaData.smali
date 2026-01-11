@@ -1,15 +1,15 @@
 .class public Lcom/snapchat/soju/android/discover/DsnapMetaData;
-.super LoYg;
+.super Lbkh;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LVz9;
-    value = LqYg;
-.end annotation
-
 .annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
     value = Lcom/snapchat/soju/android/discover/DsnapMetaDataAdapter;
+.end annotation
+
+.annotation runtime LnJ9;
+    value = Ldkh;
 .end annotation
 
 
@@ -115,7 +115,7 @@
     .end annotation
 .end field
 
-.field public moderation:LkKg;
+.field public moderation:LS5h;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "moderation"
     .end annotation
@@ -268,7 +268,7 @@
 
     .line 19
     .line 20
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 21
     .line 22
@@ -288,7 +288,7 @@
 
     .line 29
     .line 30
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 31
     .line 32
@@ -308,7 +308,7 @@
 
     .line 39
     .line 40
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 41
     .line 42
@@ -328,7 +328,7 @@
 
     .line 49
     .line 50
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 51
     .line 52
@@ -348,7 +348,7 @@
 
     .line 59
     .line 60
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 61
     .line 62
@@ -368,7 +368,7 @@
 
     .line 69
     .line 70
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 71
     .line 72
@@ -388,7 +388,7 @@
 
     .line 79
     .line 80
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 81
     .line 82
@@ -408,7 +408,7 @@
 
     .line 89
     .line 90
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 91
     .line 92
@@ -428,7 +428,7 @@
 
     .line 99
     .line 100
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 101
     .line 102
@@ -448,7 +448,7 @@
 
     .line 109
     .line 110
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 111
     .line 112
@@ -468,7 +468,7 @@
 
     .line 119
     .line 120
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 121
     .line 122
@@ -488,7 +488,7 @@
 
     .line 129
     .line 130
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 131
     .line 132
@@ -508,7 +508,7 @@
 
     .line 139
     .line 140
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 141
     .line 142
@@ -528,7 +528,7 @@
 
     .line 149
     .line 150
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 151
     .line 152
@@ -548,7 +548,7 @@
 
     .line 159
     .line 160
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 161
     .line 162
@@ -568,7 +568,7 @@
 
     .line 169
     .line 170
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 171
     .line 172
@@ -588,7 +588,7 @@
 
     .line 179
     .line 180
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 181
     .line 182
@@ -608,7 +608,7 @@
 
     .line 189
     .line 190
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 191
     .line 192
@@ -628,7 +628,7 @@
 
     .line 199
     .line 200
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 201
     .line 202
@@ -648,7 +648,7 @@
 
     .line 209
     .line 210
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 211
     .line 212
@@ -668,7 +668,7 @@
 
     .line 219
     .line 220
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 221
     .line 222
@@ -688,7 +688,7 @@
 
     .line 229
     .line 230
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 231
     .line 232
@@ -708,7 +708,7 @@
 
     .line 239
     .line 240
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 241
     .line 242
@@ -728,7 +728,7 @@
 
     .line 249
     .line 250
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 251
     .line 252
@@ -748,7 +748,7 @@
 
     .line 259
     .line 260
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 261
     .line 262
@@ -768,7 +768,7 @@
 
     .line 269
     .line 270
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 271
     .line 272
@@ -780,15 +780,15 @@
 
     .line 275
     .line 276
-    iget-object v2, p0, Lcom/snapchat/soju/android/discover/DsnapMetaData;->moderation:LkKg;
+    iget-object v2, p0, Lcom/snapchat/soju/android/discover/DsnapMetaData;->moderation:LS5h;
 
     .line 277
     .line 278
-    iget-object v3, p1, Lcom/snapchat/soju/android/discover/DsnapMetaData;->moderation:LkKg;
+    iget-object v3, p1, Lcom/snapchat/soju/android/discover/DsnapMetaData;->moderation:LS5h;
 
     .line 279
     .line 280
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 281
     .line 282
@@ -808,7 +808,7 @@
 
     .line 289
     .line 290
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 291
     .line 292
@@ -828,7 +828,7 @@
 
     .line 299
     .line 300
-    invoke-static {v2, p1}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 301
     .line 302
@@ -848,7 +848,7 @@
     return v1
 .end method
 
-.method public final getTypeEnum()LLtb;
+.method public final getTypeEnum()LmHb;
     .locals 1
 
     .line 1
@@ -856,7 +856,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, LLtb;->a(Ljava/lang/Integer;)LLtb;
+    invoke-static {v0}, LmHb;->a(Ljava/lang/Integer;)LmHb;
 
     .line 4
     .line 5
@@ -1684,7 +1684,7 @@
 
     .line 341
     .line 342
-    iget-object v0, p0, Lcom/snapchat/soju/android/discover/DsnapMetaData;->moderation:LkKg;
+    iget-object v0, p0, Lcom/snapchat/soju/android/discover/DsnapMetaData;->moderation:LS5h;
 
     .line 343
     .line 344
@@ -1699,7 +1699,7 @@
 
     .line 348
     :cond_1a
-    invoke-virtual {v0}, LkKg;->hashCode()I
+    invoke-virtual {v0}, LS5h;->hashCode()I
 
     .line 349
     .line 350

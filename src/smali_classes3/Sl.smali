@@ -2,17 +2,30 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field public final a:Ljava/lang/Boolean;
+.field public final synthetic X:LNq;
 
-.field public final b:Ljava/lang/Long;
+.field public final synthetic Y:LXu;
 
-.field public final c:Ljava/lang/Long;
+.field public final synthetic Z:I
+
+.field public final synthetic a:Lngb;
+
+.field public final synthetic b:Lbs;
+
+.field public final synthetic c:Lkp;
+
+.field public final synthetic e0:Z
+
+.field public final synthetic t:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;)V
+.method public constructor <init>(Lngb;Lbs;Lkp;Ljava/lang/String;LNq;LXu;IZ)V
     .locals 0
 
     .line 1
@@ -21,293 +34,194 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LSl;->a:Ljava/lang/Boolean;
+    iput-object p1, p0, LSl;->a:Lngb;
 
     .line 5
     .line 6
-    iput-object p2, p0, LSl;->b:Ljava/lang/Long;
+    iput-object p2, p0, LSl;->b:Lbs;
 
     .line 7
     .line 8
-    iput-object p3, p0, LSl;->c:Ljava/lang/Long;
+    iput-object p3, p0, LSl;->c:Lkp;
 
     .line 9
     .line 10
+    iput-object p4, p0, LSl;->t:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LSl;->X:LNq;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, LSl;->Y:LXu;
+
+    .line 15
+    .line 16
+    iput p7, p0, LSl;->Z:I
+
+    .line 17
+    .line 18
+    iput-boolean p8, p0, LSl;->e0:Z
+
+    .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final accept(Ljava/lang/Object;)V
+    .locals 12
 
     .line 1
-    const/4 v0, 0x1
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    new-instance p1, LPl;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LSl;
+    iget-object v6, p0, LSl;->b:Lbs;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    iget-object v0, p0, LSl;->c:Lkp;
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
-    .line 10
-    return v2
+    iget-object v10, p0, LSl;->a:Lngb;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, LSl;
+    const/4 v1, 0x1
 
     .line 12
-    .line 13
-    iget-object v1, p1, LSl;->a:Ljava/lang/Boolean;
+    invoke-direct {p1, v10, v6, v0, v1}, LPl;-><init>(Lngb;Lbs;Lkp;I)V
 
+    .line 13
     .line 14
     .line 15
-    iget-object v3, p0, LSl;->a:Ljava/lang/Boolean;
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 18
     .line 19
     .line 20
-    move-result v1
+    iget-object p1, v10, Lngb;->g0:Ljava/lang/Object;
 
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
-    .line 23
-    return v2
+    check-cast p1, LnJe;
 
+    .line 23
     .line 24
-    :cond_2
-    iget-object v1, p0, LSl;->b:Ljava/lang/Long;
+    invoke-virtual {p1}, LnJe;->d()LA36;
 
     .line 25
     .line 26
-    iget-object v3, p1, LSl;->b:Ljava/lang/Long;
-
     .line 27
+    move-result-object p1
+
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    new-instance v11, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
 
     .line 29
     .line 30
+    invoke-direct {v11, v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 31
-    move-result v1
-
     .line 32
-    if-nez v1, :cond_3
-
     .line 33
-    .line 34
-    return v2
+    new-instance v0, LQl;
 
+    .line 34
     .line 35
-    :cond_3
-    iget-object v1, p0, LSl;->c:Ljava/lang/Long;
+    iget v7, p0, LSl;->Z:I
 
     .line 36
     .line 37
-    iget-object p1, p1, LSl;->c:Ljava/lang/Long;
+    iget-boolean v8, p0, LSl;->e0:Z
 
     .line 38
     .line 39
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v1, p0, LSl;->a:Lngb;
 
     .line 40
     .line 41
-    .line 42
-    move-result p1
+    iget-object v2, p0, LSl;->t:Ljava/lang/String;
 
+    .line 42
     .line 43
-    if-nez p1, :cond_4
+    iget-object v3, p0, LSl;->X:LNq;
 
     .line 44
     .line 45
-    return v2
+    iget-object v4, p0, LSl;->Y:LXu;
 
     .line 46
-    :cond_4
-    return v0
-.end method
+    .line 47
+    iget-object v5, p0, LSl;->c:Lkp;
 
-.method public final hashCode()I
-    .locals 3
+    .line 48
+    .line 49
+    const/4 v9, 0x0
 
-    .line 1
-    const/4 v0, 0x0
+    .line 50
+    invoke-direct/range {v0 .. v9}, LQl;-><init>(Lngb;Ljava/lang/String;LNq;LXu;Lkp;Lbs;IZI)V
 
-    .line 2
-    iget-object v1, p0, LSl;->a:Ljava/lang/Boolean;
+    .line 51
+    .line 52
+    .line 53
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
-    .line 3
-    .line 4
-    if-nez v1, :cond_0
+    .line 54
+    .line 55
+    invoke-direct {p1, v11, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 5
-    .line 6
+    .line 56
+    .line 57
+    .line 58
+    new-instance v0, LRl;
+
+    .line 59
+    .line 60
     const/4 v1, 0x0
 
-    .line 7
-    goto :goto_0
+    .line 61
+    invoke-direct {v0, v10, v1}, LRl;-><init>(Lngb;I)V
 
-    .line 8
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    .line 62
+    .line 63
+    .line 64
+    new-instance v1, LRl;
 
-    .line 9
-    .line 10
-    .line 11
-    move-result v1
+    .line 65
+    .line 66
+    const/4 v2, 0x1
 
-    .line 12
-    :goto_0
-    mul-int/lit8 v1, v1, 0x1f
+    .line 67
+    invoke-direct {v1, v10, v2}, LRl;-><init>(Lngb;I)V
 
-    .line 13
-    .line 14
-    iget-object v2, p0, LSl;->b:Ljava/lang/Long;
+    .line 68
+    .line 69
+    .line 70
+    iget-object v2, v10, Lngb;->t:Ljava/lang/Object;
 
-    .line 15
-    .line 16
-    if-nez v2, :cond_1
+    .line 71
+    .line 72
+    check-cast v2, LXi;
 
-    .line 17
-    .line 18
-    const/4 v2, 0x0
+    .line 73
+    .line 74
+    invoke-static {p1, v0, v1, v2}, LcOk;->j(Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;LXi;)V
 
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_1
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 21
-    .line 22
-    .line 23
-    move-result v2
-
-    .line 24
-    :goto_1
-    add-int/2addr v1, v2
-
-    .line 25
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 26
-    .line 27
-    iget-object v2, p0, LSl;->c:Ljava/lang/Long;
-
-    .line 28
-    .line 29
-    if-nez v2, :cond_2
-
-    .line 30
-    .line 31
-    goto :goto_2
-
-    .line 32
-    :cond_2
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 33
-    .line 34
-    .line 35
-    move-result v0
-
-    .line 36
-    :goto_2
-    add-int/2addr v1, v0
-
-    .line 37
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "InsertedSnapRecord(topSnapPlaybackItemLoadedOnEntry="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LSl;->a:Ljava/lang/Boolean;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", topSnapOpenedTimestamp="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LSl;->b:Ljava/lang/Long;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", topSnapOpenedLoadedTimestamp="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LSl;->c:Ljava/lang/Long;
-
-    .line 29
-    .line 30
-    const-string v2, ")"
-
-    .line 31
-    .line 32
-    invoke-static {v0, v1, v2}, LsSb;->f(Ljava/lang/StringBuilder;Ljava/lang/Long;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    return-object v0
+    .line 75
+    .line 76
+    .line 77
+    return-void
 .end method

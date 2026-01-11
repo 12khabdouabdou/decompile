@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/business/IBusinessFormChangedParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'form\':s?,\'formData\':s?,\'fieldName\':s?,\'fieldValue\':s?,\'changeType\':r?:\'[0]\'"
     typeReferences = {

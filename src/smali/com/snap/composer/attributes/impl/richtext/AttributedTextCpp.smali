@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lnn0;
+.implements LFp0;
 
 
 # annotations
@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final Companion:Lpn0;
+.field public static final Companion:LHp0;
 
 .field private static final TEXT_DECORATION_NONE:I = 0x0
 
@@ -31,11 +31,11 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lpn0;
+    new-instance v0, LHp0;
 
-    invoke-direct {v0}, Lpn0;-><init>()V
+    invoke-direct {v0}, LHp0;-><init>()V
 
-    sput-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sput-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     return-void
 .end method
@@ -224,7 +224,7 @@
     .locals 8
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -240,7 +240,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->a(Lpn0;JI)J
+    invoke-static {v0, v1, v2, p1}, LHp0;->a(LHp0;JI)J
 
     .line 10
     .line 11
@@ -342,7 +342,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -358,7 +358,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->b(Lpn0;JI)Ljava/lang/String;
+    invoke-static {v0, v1, v2, p1}, LHp0;->b(LHp0;JI)Ljava/lang/String;
 
     .line 10
     .line 11
@@ -373,7 +373,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -389,7 +389,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->c(Lpn0;JI)Ljava/lang/String;
+    invoke-static {v0, v1, v2, p1}, LHp0;->c(LHp0;JI)Ljava/lang/String;
 
     .line 10
     .line 11
@@ -404,7 +404,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -420,7 +420,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->d(Lpn0;JI)Ljava/lang/Object;
+    invoke-static {v0, v1, v2, p1}, LHp0;->d(LHp0;JI)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -454,7 +454,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -470,7 +470,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->e(Lpn0;JI)Ljava/lang/Object;
+    invoke-static {v0, v1, v2, p1}, LHp0;->e(LHp0;JI)Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -504,7 +504,7 @@
     .locals 8
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -520,7 +520,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->f(Lpn0;JI)J
+    invoke-static {v0, v1, v2, p1}, LHp0;->f(LHp0;JI)J
 
     .line 10
     .line 11
@@ -622,7 +622,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -638,7 +638,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->g(Lpn0;JI)D
+    invoke-static {v0, v1, v2, p1}, LHp0;->g(LHp0;JI)D
 
     .line 10
     .line 11
@@ -656,7 +656,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -672,7 +672,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2}, Lpn0;->h(Lpn0;J)I
+    invoke-static {v0, v1, v2}, LHp0;->h(LHp0;J)I
 
     .line 10
     .line 11
@@ -683,11 +683,11 @@
     return v0
 .end method
 
-.method public getTextDecorationAtIndex(I)Ljri;
+.method public getTextDecorationAtIndex(I)LeQi;
     .locals 4
 
     .line 1
-    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:Lpn0;
+    sget-object v0, Lcom/snap/composer/attributes/impl/richtext/AttributedTextCpp;->Companion:LHp0;
 
     .line 2
     .line 3
@@ -703,7 +703,7 @@
     move-result-wide v1
 
     .line 9
-    invoke-static {v0, v1, v2, p1}, Lpn0;->i(Lpn0;JI)I
+    invoke-static {v0, v1, v2, p1}, LHp0;->i(LHp0;JI)I
 
     .line 10
     .line 11
@@ -740,7 +740,7 @@
 
     .line 25
     .line 26
-    sget-object p1, Ljri;->c:Ljri;
+    sget-object p1, LeQi;->c:LeQi;
 
     .line 27
     .line 28
@@ -792,7 +792,7 @@
 
     .line 52
     :cond_1
-    sget-object p1, Ljri;->b:Ljri;
+    sget-object p1, LeQi;->b:LeQi;
 
     .line 53
     .line 54
@@ -800,7 +800,7 @@
 
     .line 55
     :cond_2
-    sget-object p1, Ljri;->a:Ljri;
+    sget-object p1, LeQi;->a:LeQi;
 
     .line 56
     .line 57

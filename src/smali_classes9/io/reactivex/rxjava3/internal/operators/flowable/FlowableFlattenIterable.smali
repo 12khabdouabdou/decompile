@@ -50,7 +50,7 @@
     return-void
 .end method
 
-.method public static subscribe(LV6i;Lio/reactivex/rxjava3/functions/Function;I)LV6i;
+.method public static subscribe(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)Lmvi;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -59,12 +59,12 @@
             "R:",
             "Ljava/lang/Object;",
             ">(",
-            "LV6i;",
+            "Lmvi;",
             "Lio/reactivex/rxjava3/functions/Function<",
             "-TT;+",
             "Ljava/lang/Iterable<",
             "+TR;>;>;I)",
-            "LV6i;"
+            "Lmvi;"
         }
     .end annotation
 
@@ -73,7 +73,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/functions/Function;I)V
+    invoke-direct {v0, p0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)V
 
     .line 4
     .line 5
@@ -83,7 +83,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 4
 
     .line 1
@@ -126,12 +126,12 @@
 
     .line 18
     .line 19
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 20
     .line 21
     .line 22
-    invoke-interface {p1}, LV6i;->onComplete()V
+    invoke-interface {p1}, Lmvi;->onComplete()V
 
     .line 23
     .line 24
@@ -163,7 +163,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 36
-    invoke-static {p1, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable;->subscribe(LV6i;Ljava/util/Iterator;)V
+    invoke-static {p1, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable;->subscribe(Lmvi;Ljava/util/Iterator;)V
 
     .line 37
     .line 38
@@ -180,12 +180,12 @@
     .line 42
     .line 43
     .line 44
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 45
     .line 46
     .line 47
-    invoke-interface {p1, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 48
     .line 49
@@ -202,12 +202,12 @@
     .line 53
     .line 54
     .line 55
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 56
     .line 57
     .line 58
-    invoke-interface {p1, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 59
     .line 60
@@ -225,7 +225,7 @@
 
     .line 65
     .line 66
-    invoke-direct {v0, p1, v3, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/functions/Function;I)V
+    invoke-direct {v0, p1, v3, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlattenIterable$FlattenIterableSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)V
 
     .line 67
     .line 68

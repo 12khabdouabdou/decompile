@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'UNKNOWN\':0,\'AVAILABLE\':1,\'DELETED\':2,\'JOINED_AFTER_ORIGINAL_MESSAGE_SENT\':3,\'UNAVAILABLE\':4,\'STORY_MEDIA_DELETED_BY_POSTER\':5"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

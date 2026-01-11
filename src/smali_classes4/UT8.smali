@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/snap/impala/common/media/IAudioRecorder;
+.implements Lcom/snap/composer/people/HiddenSuggestedFriendStoring;
 
 
 # instance fields
-.field public final a:Lkotlin/jvm/functions/Function0;
+.field public final a:Lkotlin/jvm/functions/Function1;
 
-.field public final b:Lkotlin/jvm/functions/Function2;
+.field public final b:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
     .end annotation
@@ -30,11 +30,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LUT8;->a:Lkotlin/jvm/functions/Function0;
+    iput-object p1, p0, LUT8;->a:Lkotlin/jvm/functions/Function1;
 
     .line 5
     .line 6
-    iput-object p2, p0, LUT8;->b:Lkotlin/jvm/functions/Function2;
+    iput-object p2, p0, LUT8;->b:Lkotlin/jvm/functions/Function1;
 
     .line 7
     .line 8
@@ -43,34 +43,65 @@
 
 
 # virtual methods
-.method public getAuthorizationHandler()Lcom/snap/impala/common/media/IAuthorizationHandler;
+.method public getHiddenSuggestedFriends(Lkotlin/jvm/functions/Function2;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function2;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, LUT8;->a:Lkotlin/jvm/functions/Function0;
+    iget-object v0, p0, LUT8;->a:Lkotlin/jvm/functions/Function1;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    return-void
+.end method
+
+.method public onHiddenSuggestedFriendsUpdated(Lkotlin/jvm/functions/Function0;)Lkotlin/jvm/functions/Function0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            ")",
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LUT8;->b:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
     .line 7
-    check-cast v0, Lcom/snap/impala/common/media/IAuthorizationHandler;
+    check-cast p1, Lkotlin/jvm/functions/Function0;
 
     .line 8
     .line 9
-    return-object v0
+    return-object p1
 .end method
 
 .method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
     .locals 2
 
     .line 1
-    sget-object v0, LzB3;->n:LyB3;
+    sget-object v0, LcF3;->m:LbF3;
 
     .line 2
     .line 3
@@ -79,15 +110,15 @@
     .line 4
     .line 5
     .line 6
-    sget-object v0, LyB3;->b:LzB3;
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    const-class v1, Lcom/snap/impala/common/media/IAudioRecorder;
+    const-class v1, Lcom/snap/composer/people/HiddenSuggestedFriendStoring;
 
     .line 9
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
@@ -96,36 +127,4 @@
 
     .line 14
     return p1
-.end method
-
-.method public startRecording(Lcom/snap/impala/common/media/RecordingOptions;Lkotlin/jvm/functions/Function2;)Lcom/snap/composer/foundation/Cancelable;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/impala/common/media/RecordingOptions;",
-            "Lkotlin/jvm/functions/Function2;",
-            ")",
-            "Lcom/snap/composer/foundation/Cancelable;"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, LUT8;->b:Lkotlin/jvm/functions/Function2;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    check-cast p1, Lcom/snap/composer/foundation/Cancelable;
-
-    .line 8
-    .line 9
-    return-object p1
 .end method

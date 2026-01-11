@@ -1,23 +1,23 @@
 .class public final Lcom/snap/bloops/data/DownloadFriendTargetDataDurableJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "DOWNLOAD_BLOOPS_FRIEND_TARGET"
-    metadataType = LBs6;
+    metadataType = LOv6;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(LtB6;LBs6;)V
+.method public constructor <init>(LRE6;LOv6;)V
     .locals 0
 
     .line 1

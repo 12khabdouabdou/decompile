@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Llzi;
+    proxyClass = LsYi;
     schema = "\'applyFilter\':f|m|(d),\'launchEvent\':f|m|(s, s),\'close\':f|m|()"
     typeReferences = {}
 .end annotation

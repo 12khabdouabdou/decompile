@@ -1,102 +1,114 @@
-.class public abstract LWM7;
+.class public final LWM7;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LXM7;
 
-# static fields
-.field public static final a:Ljava/util/List;
 
-.field public static final b:Ljava/util/Set;
+# instance fields
+.field public final a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    const-string v0, "mutually_pinned_bff"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "number_one_bf_for_two_months"
+    .line 4
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    iput-object v0, p0, LWM7;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LWM7;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    const-string v2, "number_one_bf_for_two_weeks"
+    .line 6
+    sget-object v1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    return-object v0
+.end method
+
+.method public final b()V
+    .locals 2
+
+    .line 1
+    sget-object v0, LOVi;->a:LiAi;
+
+    .line 2
+    .line 3
+    sget-object v0, LVM7;->a:LVM7;
+
+    .line 4
+    .line 5
+    iget-object v1, p0, LWM7;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 6
     .line 7
-    const-string v3, "number_one_bf"
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
     .line 8
     .line 9
-    const-string v4, "one_of_your_bf"
-
     .line 10
-    .line 11
-    const-string v5, "your_number_one_bf_is_their_number_one_bf"
+    return-void
+.end method
 
-    .line 12
-    .line 13
-    const-string v6, "you_share_BF"
+.method public final c()V
+    .locals 2
 
-    .line 14
-    .line 15
-    filled-new-array/range {v0 .. v6}, [Ljava/lang/String;
+    .line 1
+    sget-object v0, LOVi;->a:LiAi;
 
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
+    .line 2
+    .line 3
+    sget-object v0, LVM7;->b:LVM7;
 
-    .line 19
-    invoke-static {v0}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
+    .line 4
+    .line 5
+    iget-object v1, p0, LWM7;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v0
+    .line 6
+    .line 7
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 23
-    sput-object v0, LWM7;->a:Ljava/util/List;
-
-    .line 24
-    .line 25
-    const-string v0, "birthday"
-
-    .line 26
-    .line 27
-    const-string v1, "merlin"
-
-    .line 28
-    .line 29
-    const-string v2, "pinned"
-
-    .line 30
-    .line 31
-    const-string v3, "official_story"
-
-    .line 32
-    .line 33
-    filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
-    invoke-static {v0}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v0
-
-    .line 41
-    sput-object v0, LWM7;->b:Ljava/util/Set;
-
-    .line 42
-    .line 43
+    .line 8
+    .line 9
+    .line 10
     return-void
 .end method

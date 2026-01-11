@@ -1,14 +1,14 @@
 .class public final Lcom/snap/places/PlaceStoryCarouselData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'numberOfRankedStoryThumbnailsToPreview\':d,\'areRankedStoryThumbnailsFullyLoaded\':b,\'rankedStoryThumbnails\':a<r:\'[0]\'>,\'hasImportantSnaps\':b@?"
     typeReferences = {
-        LZsd;
+        LFJd;
     }
 .end annotation
 
@@ -24,7 +24,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LZsd;",
+            "LFJd;",
             ">;"
         }
     .end annotation
@@ -38,7 +38,7 @@
         value = {
             "(DZ",
             "Ljava/util/List<",
-            "LZsd;",
+            "LFJd;",
             ">;",
             "Ljava/lang/Boolean;",
             ")V"

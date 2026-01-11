@@ -1,37 +1,29 @@
-.class public abstract Ls31;
+.class public interface abstract Ls31;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Lgbd;
+# virtual methods
+.method public abstract c()LkM6;
+.end method
 
+.method public abstract d()I
+.end method
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public abstract e()V
+.end method
 
-    .line 1
-    sget-object v0, Libd;->t:Lebd;
+.method public abstract f()LQ0f;
+.end method
 
-    .line 2
-    .line 3
-    new-instance v0, Lgbd;
+.method public abstract g(IIIILmhj;LjM6;LISf;)V
+.end method
 
-    .line 4
-    .line 5
-    const-string v1, "BITMOJI_AVATAR_IDS"
+.method public abstract h(LqZ1;)V
+.end method
 
-    .line 6
-    .line 7
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+.method public abstract j()Lmhj;
+.end method
 
-    .line 8
-    .line 9
-    .line 10
-    sput-object v0, Ls31;->a:Lgbd;
-
-    .line 11
-    .line 12
-    return-void
+.method public abstract release()V
 .end method

@@ -1,300 +1,204 @@
-.class public final enum Lez2;
-.super Ljava/lang/Enum;
+.class public final Lez2;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lez2;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum X:Lez2;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PASSWORD_CONFIRM_FAIL"
-    .end annotation
-.end field
-
-.field public static final enum Y:Lez2;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "CHANGE_USERNAME_FLOW_SUCCESS"
-    .end annotation
-.end field
-
-.field public static final enum Z:Lez2;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "CHANGE_USERNAME_FLOW_FAIL"
-    .end annotation
-.end field
-
-.field public static final enum b:Lez2;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "USERNAME_INPUT_VALID"
-    .end annotation
-.end field
-
-.field public static final enum c:Lez2;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "USERNAME_INPUT_INVALID"
-    .end annotation
-.end field
-
-.field public static final synthetic e0:[Lez2;
-
-.field public static final enum t:Lez2;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PASSWORD_CONFIRM_SUCCESS"
-    .end annotation
-.end field
 
 
 # instance fields
-.field public final a:I
+.field public final a:LYy2;
+
+.field public final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 13
-
-    .line 1
-    new-instance v0, Lez2;
-
-    .line 2
-    .line 3
-    const-string v1, "USERNAME_INPUT_VALID"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, Lez2;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Lez2;->b:Lez2;
-
-    .line 10
-    .line 11
-    new-instance v1, Lez2;
-
-    .line 12
-    .line 13
-    const-string v3, "USERNAME_INPUT_INVALID"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, Lez2;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lez2;->c:Lez2;
-
-    .line 20
-    .line 21
-    new-instance v3, Lez2;
-
-    .line 22
-    .line 23
-    const-string v5, "PASSWORD_CONFIRM_SUCCESS"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, Lez2;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lez2;->t:Lez2;
-
-    .line 30
-    .line 31
-    new-instance v5, Lez2;
-
-    .line 32
-    .line 33
-    const-string v7, "PASSWORD_CONFIRM_FAIL"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8, v8}, Lez2;-><init>(Ljava/lang/String;II)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, Lez2;->X:Lez2;
-
-    .line 40
-    .line 41
-    new-instance v7, Lez2;
-
-    .line 42
-    .line 43
-    const-string v9, "CHANGE_USERNAME_FLOW_SUCCESS"
-
-    .line 44
-    .line 45
-    const/4 v10, 0x4
-
-    .line 46
-    invoke-direct {v7, v9, v10, v10}, Lez2;-><init>(Ljava/lang/String;II)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v7, Lez2;->Y:Lez2;
-
-    .line 50
-    .line 51
-    new-instance v9, Lez2;
-
-    .line 52
-    .line 53
-    const-string v11, "CHANGE_USERNAME_FLOW_FAIL"
-
-    .line 54
-    .line 55
-    const/4 v12, 0x5
-
-    .line 56
-    invoke-direct {v9, v11, v12, v12}, Lez2;-><init>(Ljava/lang/String;II)V
-
-    .line 57
-    .line 58
-    .line 59
-    sput-object v9, Lez2;->Z:Lez2;
-
-    .line 60
-    .line 61
-    const/4 v11, 0x6
-
-    .line 62
-    new-array v11, v11, [Lez2;
-
-    .line 63
-    .line 64
-    aput-object v0, v11, v2
-
-    .line 65
-    .line 66
-    aput-object v1, v11, v4
-
-    .line 67
-    .line 68
-    aput-object v3, v11, v6
-
-    .line 69
-    .line 70
-    aput-object v5, v11, v8
-
-    .line 71
-    .line 72
-    aput-object v7, v11, v10
-
-    .line 73
-    .line 74
-    aput-object v9, v11, v12
-
-    .line 75
-    .line 76
-    sput-object v11, Lez2;->e0:[Lez2;
-
-    .line 77
-    .line 78
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(LYy2;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput p3, p0, Lez2;->a:I
+    iput-object p1, p0, Lez2;->a:LYy2;
 
     .line 5
     .line 6
+    iput p2, p0, Lez2;->b:I
+
+    .line 7
+    .line 8
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lez2;
-    .locals 1
-
-    .line 1
-    const-class v0, Lez2;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lez2;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lez2;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lez2;->e0:[Lez2;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lez2;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lez2;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget v0, p0, Lez2;->a:I
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lez2;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lez2;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, Lez2;->a:LYy2;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, Lez2;->a:LYy2;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget v1, p0, Lez2;->b:I
+
+    .line 25
+    .line 26
+    iget p1, p1, Lez2;->b:I
+
+    .line 27
+    .line 28
+    if-eq v1, p1, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lez2;->a:LYy2;
 
     .line 2
     .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget v1, p0, Lez2;->b:I
+
+    .line 10
+    .line 11
+    add-int/2addr v0, v1
+
+    .line 12
     return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "CategoryButtonWrapper(categoryButton="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lez2;->a:LYy2;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", pagePosition="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, Lez2;->b:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

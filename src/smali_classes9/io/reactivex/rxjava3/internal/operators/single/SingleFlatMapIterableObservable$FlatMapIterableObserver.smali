@@ -68,17 +68,6 @@
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapIterableObservable$FlatMapIterableObserver;->X:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
 .method public final clear()V
     .locals 1
 
@@ -91,6 +80,17 @@
     .line 3
     .line 4
     return-void
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapIterableObservable$FlatMapIterableObserver;->X:Z
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public final dispose()V
@@ -181,7 +181,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 4
     .line 5
@@ -461,7 +461,7 @@
     return-object v1
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1

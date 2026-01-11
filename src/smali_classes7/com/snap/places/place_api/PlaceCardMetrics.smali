@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/place_api/PlaceCardMetrics;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'sourceSessionId\':s,\'sourceType\':s?,\'placesSourceType\':s?"
     typeReferences = {}

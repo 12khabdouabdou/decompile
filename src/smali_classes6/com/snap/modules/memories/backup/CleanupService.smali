@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LA23;
+    proxyClass = LM43;
     schema = "\'cleanup\':f|m|(r:\'[0]\'): p<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupStepData;,
-        Lx23;
+        LJ43;
     }
 .end annotation
 
@@ -26,7 +26,7 @@
             "Lcom/snap/modules/memories/backup/BackupStepData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Lx23;",
+            "LJ43;",
             ">;"
         }
     .end annotation

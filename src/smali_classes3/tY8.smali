@@ -3,88 +3,160 @@
 .source "SourceFile"
 
 # interfaces
-.implements LsY8;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final a:Lcom/snap/composer/memories/ICameraRollProvider;
+.field public final synthetic a:I
 
-.field public final b:Lcom/snap/composer/memories/ICameraRollProvider;
+.field public final synthetic b:LwY8;
+
+.field public final synthetic c:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/composer/memories/ICameraRollProvider;Lcom/snap/composer/memories/ICameraRollProvider;)V
+.method public synthetic constructor <init>(LwY8;II)V
     .locals 0
 
     .line 1
+    iput p3, p0, LtY8;->a:I
+
+    iput-object p1, p0, LtY8;->b:LwY8;
+
+    iput p2, p0, LtY8;->c:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LtY8;->a:Lcom/snap/composer/memories/ICameraRollProvider;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LtY8;->b:Lcom/snap/composer/memories/ICameraRollProvider;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public getCategoryScreenshotsProvider()Lcom/snap/composer/memories/ICameraRollProvider;
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iget-object v0, p0, LtY8;->a:Lcom/snap/composer/memories/ICameraRollProvider;
+    iget v0, p0, LtY8;->a:I
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public getCategoryShoppableScreenshotsProvider()Lcom/snap/composer/memories/ICameraRollProvider;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LtY8;->b:Lcom/snap/composer/memories/ICameraRollProvider;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
-
-    .line 1
-    sget-object v0, LzB3;->n:LyB3;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, LyB3;->b:LzB3;
+    check-cast p1, LSod;
 
     .line 7
     .line 8
-    const-class v1, LsY8;
+    iget-object p1, p0, LtY8;->b:LwY8;
 
     .line 9
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+    iget-object v0, p1, LwY8;->t:LnTb;
 
     .line 11
     .line 12
-    .line 13
-    move-result p1
+    iget-object v0, v0, LnTb;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 13
     .line 14
-    return p1
+    invoke-static {v0, v0}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    new-instance v1, LtY8;
+
+    .line 19
+    .line 20
+    iget v2, p0, LtY8;->c:I
+
+    .line 21
+    .line 22
+    const/4 v3, 0x0
+
+    .line 23
+    invoke-direct {v1, p1, v2, v3}, LtY8;-><init>(LwY8;II)V
+
+    .line 24
+    .line 25
+    .line 26
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapCompletable;
+
+    .line 27
+    .line 28
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapCompletable;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object p1
+
+    .line 32
+    :pswitch_0
+    check-cast p1, Ljava/lang/String;
+
+    .line 33
+    .line 34
+    iget-object v0, p0, LtY8;->b:LwY8;
+
+    .line 35
+    .line 36
+    iget-object v1, v0, LwY8;->q0:LREi;
+
+    .line 37
+    .line 38
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object v1
+
+    .line 42
+    check-cast v1, Lio/reactivex/rxjava3/core/Observable;
+
+    .line 43
+    .line 44
+    new-instance v2, LsY8;
+
+    .line 45
+    .line 46
+    iget v3, p0, LtY8;->c:I
+
+    .line 47
+    .line 48
+    const/4 v4, 0x1
+
+    .line 49
+    invoke-direct {v2, v0, p1, v3, v4}, LsY8;-><init>(LwY8;Ljava/lang/String;II)V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 53
+    .line 54
+    .line 55
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapCompletable;
+
+    .line 56
+    .line 57
+    invoke-direct {p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapCompletable;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 58
+    .line 59
+    .line 60
+    return-object p1
+
+    .line 61
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

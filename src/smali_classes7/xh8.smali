@@ -1,19 +1,25 @@
 .class public final Lxh8;
-.super Ligk;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/plus/GenAiStickersPAndLService;
 
 
 # instance fields
-.field public final b:LQ1c;
-
-.field public final c:I
-
-.field public final d:LBh8;
+.field public final a:Lkotlin/jvm/functions/Function0;
 
 
 # direct methods
-.method public constructor <init>(LQ1c;ILBh8;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -21,119 +27,74 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lxh8;->b:LQ1c;
+    iput-object p1, p0, Lxh8;->a:Lkotlin/jvm/functions/Function0;
 
     .line 5
     .line 6
-    iput p2, p0, Lxh8;->c:I
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lxh8;->d:LBh8;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()LQ1c;
+.method public accept()Lcom/snap/composer/promise/Promise;
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/promise/Promise<",
+            "Lewj;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lxh8;->b:LQ1c;
+    iget-object v0, p0, Lxh8;->a:Lkotlin/jvm/functions/Function0;
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final c()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lxh8;->c:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Swipe("
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/snap/composer/promise/Promise;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
     .line 7
     .line 8
-    iget-object v1, p0, Lxh8;->b:LQ1c;
+    const-class v1, Lcom/snap/plus/GenAiStickersPAndLService;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", "
+    move-result p1
 
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget v2, p0, Lxh8;->c:I
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 24
-    .line 25
-    .line 26
-    iget-object v1, p0, Lxh8;->d:LBh8;
-
-    .line 27
-    .line 28
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 29
-    .line 30
-    .line 31
-    const-string v1, ")"
-
-    .line 32
-    .line 33
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 34
-    .line 35
-    .line 36
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v0
-
-    .line 40
-    return-object v0
+    return p1
 .end method

@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Ltc8;
+    proxyClass = LOi8;
     schema = "\'fetchSelfieShareableUsersData\':f|m|(): g<c>:\'[0]\'<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LCc8;
+        LXi8;
     }
 .end annotation
 
@@ -24,7 +24,7 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LCc8;",
+            "LXi8;",
             ">;"
         }
     .end annotation

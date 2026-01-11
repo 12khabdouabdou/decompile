@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public a:LSma;
+.field public a:Lfza;
 
-.field public b:LSma;
+.field public b:Lfza;
 
 .field public c:I
 
@@ -30,22 +30,22 @@
 
     .line 5
     .line 6
-    iget-object v0, p1, Lcom/google/gson/internal/LinkedTreeMap;->header:LSma;
+    iget-object v0, p1, Lcom/google/gson/internal/LinkedTreeMap;->header:Lfza;
 
     .line 7
     .line 8
-    iget-object v0, v0, LSma;->t:LSma;
+    iget-object v0, v0, Lfza;->t:Lfza;
 
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/google/gson/internal/c;->a:LSma;
+    iput-object v0, p0, Lcom/google/gson/internal/c;->a:Lfza;
 
     .line 11
     .line 12
     const/4 v0, 0x0
 
     .line 13
-    iput-object v0, p0, Lcom/google/gson/internal/c;->b:LSma;
+    iput-object v0, p0, Lcom/google/gson/internal/c;->b:Lfza;
 
     .line 14
     .line 15
@@ -62,11 +62,11 @@
 
 
 # virtual methods
-.method public final a()LSma;
+.method public final a()Lfza;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/gson/internal/c;->a:LSma;
+    iget-object v0, p0, Lcom/google/gson/internal/c;->a:Lfza;
 
     .line 2
     .line 3
@@ -74,7 +74,7 @@
 
     .line 4
     .line 5
-    iget-object v2, v1, Lcom/google/gson/internal/LinkedTreeMap;->header:LSma;
+    iget-object v2, v1, Lcom/google/gson/internal/LinkedTreeMap;->header:Lfza;
 
     .line 6
     .line 7
@@ -94,15 +94,15 @@
 
     .line 14
     .line 15
-    iget-object v1, v0, LSma;->t:LSma;
+    iget-object v1, v0, Lfza;->t:Lfza;
 
     .line 16
     .line 17
-    iput-object v1, p0, Lcom/google/gson/internal/c;->a:LSma;
+    iput-object v1, p0, Lcom/google/gson/internal/c;->a:Lfza;
 
     .line 18
     .line 19
-    iput-object v0, p0, Lcom/google/gson/internal/c;->b:LSma;
+    iput-object v0, p0, Lcom/google/gson/internal/c;->b:Lfza;
 
     .line 20
     .line 21
@@ -139,7 +139,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/gson/internal/c;->a:LSma;
+    iget-object v0, p0, Lcom/google/gson/internal/c;->a:Lfza;
 
     .line 2
     .line 3
@@ -147,7 +147,7 @@
 
     .line 4
     .line 5
-    iget-object v1, v1, Lcom/google/gson/internal/LinkedTreeMap;->header:LSma;
+    iget-object v1, v1, Lcom/google/gson/internal/LinkedTreeMap;->header:Lfza;
 
     .line 6
     .line 7
@@ -172,7 +172,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/google/gson/internal/c;->a()LSma;
+    invoke-virtual {p0}, Lcom/google/gson/internal/c;->a()Lfza;
 
     .line 2
     .line 3
@@ -187,7 +187,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/gson/internal/c;->b:LSma;
+    iget-object v0, p0, Lcom/google/gson/internal/c;->b:Lfza;
 
     .line 2
     .line 3
@@ -202,7 +202,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v2, v0, v1}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(LSma;Z)V
+    invoke-virtual {v2, v0, v1}, Lcom/google/gson/internal/LinkedTreeMap;->removeInternal(Lfza;Z)V
 
     .line 9
     .line 10
@@ -210,7 +210,7 @@
     const/4 v0, 0x0
 
     .line 12
-    iput-object v0, p0, Lcom/google/gson/internal/c;->b:LSma;
+    iput-object v0, p0, Lcom/google/gson/internal/c;->b:Lfza;
 
     .line 13
     .line 14

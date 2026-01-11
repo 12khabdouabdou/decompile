@@ -8,14 +8,14 @@
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
         "Ljava/lang/Object;",
-        "LFR2;",
+        "LiU2;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LER2;
+.field public static final Companion:LhU2;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LER2;
+    new-instance v0, LhU2;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;->Companion:LER2;
+    sput-object v0, Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;->Companion:LhU2;
 
     .line 7
     .line 8
@@ -62,48 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;
-    .locals 3
-
-    sget-object v0, Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;->Companion:LER2;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x10
-
-    .line 1
-    invoke-static {v0, p0, v1, p1, v2}, LER2;->a(LER2;LqZ8;LFR2;LTB3;I)Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Ljava/lang/Object;LFR2;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;
+.method public static final create(LZ69;Ljava/lang/Object;LiU2;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
+            "LZ69;",
             "Ljava/lang/Object;",
-            "LFR2;",
-            "LTB3;",
+            "LiU2;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;->Companion:LER2;
+    sget-object v0, Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;->Companion:LhU2;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     new-instance v2, Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -127,7 +108,26 @@
     move-object v7, p4
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;
+    .locals 3
+
+    sget-object v0, Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;->Companion:LhU2;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x10
+
+    .line 1
+    invoke-static {v0, p0, v1, p1, v2}, LhU2;->a(LhU2;LZ69;LiU2;LvF3;I)Lcom/snap/composer_checkout_flow/CheckoutFlowEntryPage;
+
+    move-result-object p0
+
+    return-object p0
 .end method

@@ -28,7 +28,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v5}, Lapp/aifactory/sdk/api/model/EncoderConfiguration;-><init>(IILapp/aifactory/sdk/api/model/EncoderAlignmentMode;ILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lapp/aifactory/sdk/api/model/EncoderConfiguration;-><init>(IILapp/aifactory/sdk/api/model/EncoderAlignmentMode;ILex5;)V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(IILapp/aifactory/sdk/api/model/EncoderAlignmentMode;ILHr5;)V
+.method public synthetic constructor <init>(IILapp/aifactory/sdk/api/model/EncoderAlignmentMode;ILex5;)V
     .locals 1
 
     and-int/lit8 p5, p4, 0x1

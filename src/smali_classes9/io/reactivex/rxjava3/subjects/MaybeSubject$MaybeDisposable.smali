@@ -57,7 +57,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -109,7 +109,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/subjects/MaybeSubject;->t(Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;)V
+    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/subjects/MaybeSubject;->u(Lio/reactivex/rxjava3/subjects/MaybeSubject$MaybeDisposable;)V
 
     .line 11
     .line 12

@@ -1,87 +1,59 @@
 .class public final Lbqd;
-.super Ljava/lang/Object;
+.super LT2d;
 .source "SourceFile"
-
-# interfaces
-.implements LR9g;
 
 
 # instance fields
-.field public final a:LhJe;
+.field public final synthetic e:LTe2;
 
 
 # direct methods
-.method public constructor <init>(LhJe;)V
-    .locals 0
+.method public constructor <init>(LTe2;)V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lbqd;->a:LhJe;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(LBO5;)Lio/reactivex/rxjava3/core/Single;
-    .locals 4
-
-    .line 1
-    new-instance v0, Laqd;
+    iput-object p1, p0, Lbqd;->e:LTe2;
 
     .line 2
     .line 3
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, p1, v1, p0}, Laqd;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    const-wide/16 v2, 0x0
 
     .line 5
     .line 6
+    const/4 v4, 0x0
+
     .line 7
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+    const/4 v5, 0x0
 
     .line 8
+    move-object v0, p0
+
     .line 9
-    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+    invoke-direct/range {v0 .. v5}, LT2d;-><init>(LeR9;DILLB6;)V
 
     .line 10
     .line 11
     .line 12
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+    return-void
+.end method
 
-    .line 13
-    .line 14
-    sget-object v1, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
 
-    .line 15
-    .line 16
-    const-wide/16 v2, 0x1f4
+# virtual methods
+.method public final a(Lkab;)V
+    .locals 1
 
-    .line 17
-    .line 18
-    invoke-static {v2, v3, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->R0(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTimer;
+    .line 1
+    iget-object v0, p0, Lbqd;->e:LTe2;
 
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LTe2;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 22
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleDelayWithObservable;
-
-    .line 23
-    .line 24
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDelayWithObservable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Observable;)V
-
-    .line 25
-    .line 26
-    .line 27
-    return-object v1
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

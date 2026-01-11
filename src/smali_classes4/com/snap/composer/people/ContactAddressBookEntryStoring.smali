@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LyM3;
+    proxyClass = LbQ3;
     schema = "\'getContactAddressBookEntries\':f|m|(b): g<c>:\'[0]\'<a<r:\'[1]\'>>,\'inviteContactAddressBookEntry\':f|m|(r:\'[2]\', f|s|(b@), b@?, r?<e>:\'[3]\')"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LvM3;,
+        LWP3;,
         Lcom/snap/composer/people/InviteContactAddressBookRequest;,
         Lcom/snap/modules/contacts_api/SmsInviteFeature;
     }
@@ -27,7 +27,7 @@
             "(Z)",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LvM3;",
+            "LWP3;",
             ">;>;"
         }
     .end annotation

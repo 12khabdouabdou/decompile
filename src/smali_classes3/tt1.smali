@@ -1,3 +1,37 @@
-.class public interface abstract Ltt1;
+.class public final Ltt1;
 .super Ljava/lang/Object;
 .source "SourceFile"
+
+
+# instance fields
+.field public final a:I
+
+.field public final b:Lja;
+
+.field public final c:Ljava/lang/Integer;
+
+
+# direct methods
+.method public constructor <init>(ILja;Ljava/lang/Integer;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p1, p0, Ltt1;->a:I
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Ltt1;->b:Lja;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, Ltt1;->c:Ljava/lang/Integer;
+
+    .line 9
+    .line 10
+    return-void
+.end method

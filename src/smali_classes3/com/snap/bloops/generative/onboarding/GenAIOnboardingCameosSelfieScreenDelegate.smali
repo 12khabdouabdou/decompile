@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LS88;
+    proxyClass = Lkf8;
     schema = "\'cameosSelfieScreenOnCloseTapped\':f?|m|(),\'cameosSelfieScreenOnContinueTapped\':f?|m|(),\'cameosSelfieScreenOnRetakeTapped\':f?|m|()"
     typeReferences = {}
 .end annotation
@@ -17,17 +17,17 @@
 
 # virtual methods
 .method public abstract cameosSelfieScreenOnCloseTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract cameosSelfieScreenOnContinueTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract cameosSelfieScreenOnRetakeTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

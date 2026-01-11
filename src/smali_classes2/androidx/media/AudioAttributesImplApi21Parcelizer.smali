@@ -16,11 +16,11 @@
     return-void
 .end method
 
-.method public static read(LgAj;)LWn0;
+.method public static read(LwZj;)Lsq0;
     .locals 3
 
     .line 1
-    new-instance v0, LWn0;
+    new-instance v0, Lsq0;
 
     .line 2
     .line 3
@@ -32,18 +32,18 @@
     const/4 v1, -0x1
 
     .line 7
-    iput v1, v0, LWn0;->b:I
+    iput v1, v0, Lsq0;->b:I
 
     .line 8
     .line 9
-    iget-object v1, v0, LWn0;->a:Landroid/media/AudioAttributes;
+    iget-object v1, v0, Lsq0;->a:Landroid/media/AudioAttributes;
 
     .line 10
     .line 11
     const/4 v2, 0x1
 
     .line 12
-    invoke-virtual {p0, v1, v2}, LgAj;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
+    invoke-virtual {p0, v1, v2}, LwZj;->g(Landroid/os/Parcelable;I)Landroid/os/Parcelable;
 
     .line 13
     .line 14
@@ -55,18 +55,18 @@
 
     .line 17
     .line 18
-    iput-object v1, v0, LWn0;->a:Landroid/media/AudioAttributes;
+    iput-object v1, v0, Lsq0;->a:Landroid/media/AudioAttributes;
 
     .line 19
     .line 20
-    iget v1, v0, LWn0;->b:I
+    iget v1, v0, Lsq0;->b:I
 
     .line 21
     .line 22
     const/4 v2, 0x2
 
     .line 23
-    invoke-virtual {p0, v1, v2}, LgAj;->f(II)I
+    invoke-virtual {p0, v1, v2}, LwZj;->f(II)I
 
     .line 24
     .line 25
@@ -74,14 +74,14 @@
     move-result p0
 
     .line 27
-    iput p0, v0, LWn0;->b:I
+    iput p0, v0, Lsq0;->b:I
 
     .line 28
     .line 29
     return-object v0
 .end method
 
-.method public static write(LWn0;LgAj;)V
+.method public static write(Lsq0;LwZj;)V
     .locals 3
 
     .line 1
@@ -90,14 +90,14 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, LWn0;->a:Landroid/media/AudioAttributes;
+    iget-object v0, p0, Lsq0;->a:Landroid/media/AudioAttributes;
 
     .line 5
     .line 6
     const/4 v1, 0x1
 
     .line 7
-    invoke-virtual {p1, v1}, LgAj;->i(I)V
+    invoke-virtual {p1, v1}, LwZj;->i(I)V
 
     .line 8
     .line 9
@@ -105,11 +105,11 @@
     move-object v1, p1
 
     .line 11
-    check-cast v1, LhAj;
+    check-cast v1, LxZj;
 
     .line 12
     .line 13
-    iget-object v1, v1, LhAj;->e:Landroid/os/Parcel;
+    iget-object v1, v1, LxZj;->e:Landroid/os/Parcel;
 
     .line 14
     .line 15
@@ -121,14 +121,14 @@
     .line 17
     .line 18
     .line 19
-    iget p0, p0, LWn0;->b:I
+    iget p0, p0, Lsq0;->b:I
 
     .line 20
     .line 21
     const/4 v0, 0x2
 
     .line 22
-    invoke-virtual {p1, p0, v0}, LgAj;->j(II)V
+    invoke-virtual {p1, p0, v0}, LwZj;->j(II)V
 
     .line 23
     .line 24

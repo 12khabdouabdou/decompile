@@ -113,7 +113,7 @@
 
     .line 25
     .line 26
-    const-class v0, Lrsb;
+    const-class v0, LTFb;
 
     .line 27
     .line 28

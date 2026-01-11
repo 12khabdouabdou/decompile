@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'PLAY_INTEGRITY_STANDARD\':0,\'PLAY_INTEGRITY_CLASSIC\':1,\'ANDROID_KEY_ATTESTATION\':2,\'SYSINTEGRITY\':3,\'APP_ATTEST\':4,\'DEVICE_CHECK\':5,\'SAFETY_NET\':6"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

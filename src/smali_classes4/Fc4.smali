@@ -1,37 +1,35 @@
 .class public final LFc4;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LYI4;
+.field public final synthetic b:LQ26;
 
 
 # direct methods
-.method public synthetic constructor <init>(LYI4;I)V
+.method public synthetic constructor <init>(LQ26;I)V
     .locals 0
 
     .line 1
     iput p2, p0, LFc4;->a:I
 
-    iput-object p1, p0, LFc4;->b:LYI4;
+    iput-object p1, p0, LFc4;->b:LQ26;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 1
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
     iget v0, p0, LFc4;->a:I
@@ -43,68 +41,84 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LFc4;->b:LYI4;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LYI4;->get()Ljava/lang/Object;
+    new-instance v0, LtU6;
 
     .line 9
     .line 10
+    invoke-direct {v0}, LtU6;-><init>()V
+
     .line 11
-    move-result-object v0
-
     .line 12
-    check-cast v0, Lxhf;
-
     .line 13
+    const/4 v1, 0x5
+
     .line 14
-    return-object v0
+    invoke-virtual {v0, v1}, LtU6;->setCrash(I)LtU6;
 
     .line 15
-    :pswitch_0
-    iget-object v0, p0, LFc4;->b:LYI4;
-
     .line 16
     .line 17
-    invoke-virtual {v0}, LYI4;->get()Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    .line 20
     move-result-object v0
 
-    .line 21
-    check-cast v0, LDc4;
+    .line 18
+    iget-object v1, p0, LFc4;->b:LQ26;
 
+    .line 19
+    .line 20
+    invoke-static {v1, v0, p1}, LVD1;->g(LDBe;LtU6;Ljava/lang/Throwable;)V
+
+    .line 21
     .line 22
     .line 23
-    return-object v0
+    return-void
 
     .line 24
-    :pswitch_1
-    iget-object v0, p0, LFc4;->b:LYI4;
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 25
     .line 26
-    invoke-virtual {v0}, LYI4;->get()Ljava/lang/Object;
+    new-instance v0, LtU6;
 
     .line 27
     .line 28
+    invoke-direct {v0}, LtU6;-><init>()V
+
     .line 29
-    move-result-object v0
-
     .line 30
-    check-cast v0, LEc4;
-
     .line 31
+    const/4 v1, 0x3
+
     .line 32
-    return-object v0
+    invoke-virtual {v0, v1}, LtU6;->setCrash(I)LtU6;
 
     .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    iget-object v1, p0, LFc4;->b:LQ26;
+
+    .line 37
+    .line 38
+    invoke-static {v1, v0, p1}, LVD1;->g(LDBe;LtU6;Ljava/lang/Throwable;)V
+
+    .line 39
+    .line 40
+    .line 41
+    return-void
+
+    .line 42
+    nop
+
+    .line 43
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

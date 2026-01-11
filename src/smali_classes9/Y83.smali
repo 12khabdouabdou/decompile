@@ -1,255 +1,301 @@
-.class public final enum LY83;
-.super Ljava/lang/Enum;
+.class public final LY83;
+.super Le57;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum X:LY83;
+# instance fields
+.field public a:I
 
-.field public static final enum Y:LY83;
+.field public b:J
 
-.field public static final enum Z:LY83;
-
-.field public static final enum a:LY83;
-
-.field public static final enum b:LY83;
-
-.field public static final enum c:LY83;
-
-.field public static final synthetic e0:[LY83;
-
-.field public static final enum t:LY83;
+.field public c:Lo73;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 15
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x6
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
-    const/4 v1, 0x5
-
     .line 3
-    const/4 v2, 0x4
-
     .line 4
-    const/4 v3, 0x3
+    const/4 v0, 0x0
 
     .line 5
-    const/4 v4, 0x2
+    iput v0, p0, LY83;->a:I
 
     .line 6
-    const/4 v5, 0x1
-
     .line 7
-    const/4 v6, 0x0
+    const-wide/16 v0, 0x0
 
     .line 8
-    new-instance v7, LY83;
-
     .line 9
-    .line 10
-    const-string v8, "IDLE"
+    iput-wide v0, p0, LY83;->b:J
 
+    .line 10
     .line 11
+    const/4 v0, 0x0
+
     .line 12
-    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object v0, p0, LY83;->c:Lo73;
 
     .line 13
     .line 14
-    .line 15
-    sput-object v7, LY83;->a:LY83;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
+    .line 15
     .line 16
+    const/4 v0, -0x1
+
     .line 17
-    new-instance v8, LY83;
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
     .line 18
     .line 19
-    const-string v9, "CONFIGURED"
+    return-void
+.end method
+
+
+# virtual methods
+.method public final computeSerializedSize()I
+    .locals 5
+
+    .line 1
+    invoke-super {p0}, Le57;->computeSerializedSize()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget v1, p0, LY83;->a:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    and-int/2addr v1, v2
+
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    iget-wide v3, p0, LY83;->b:J
+
+    .line 12
+    .line 13
+    invoke-static {v2, v3, v4}, Lbd3;->k(IJ)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v1
+
+    .line 17
+    add-int/2addr v0, v1
+
+    .line 18
+    :cond_0
+    iget-object v1, p0, LY83;->c:Lo73;
+
+    .line 19
+    .line 20
+    if-eqz v1, :cond_1
+
+    .line 21
+    .line 22
+    const/4 v2, 0x2
+
+    .line 23
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    add-int/2addr v1, v0
+
+    .line 28
+    return v1
+
+    .line 29
+    :cond_1
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_4
+
+    .line 6
+    .line 7
+    const/16 v1, 0x8
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_3
+
+    .line 10
+    .line 11
+    const/16 v1, 0x12
+
+    .line 12
+    .line 13
+    if-eq v0, v1, :cond_1
+
+    .line 14
+    .line 15
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_0
 
     .line 20
     .line 21
-    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    goto :goto_1
 
     .line 22
+    :cond_1
+    iget-object v0, p0, LY83;->c:Lo73;
+
     .line 23
     .line 24
-    sput-object v8, LY83;->b:LY83;
+    if-nez v0, :cond_2
 
     .line 25
     .line 26
-    new-instance v9, LY83;
+    new-instance v0, Lo73;
 
     .line 27
     .line 28
-    const-string v10, "STARTED"
+    invoke-direct {v0}, Lo73;-><init>()V
 
     .line 29
     .line 30
-    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 31
+    iput-object v0, p0, LY83;->c:Lo73;
+
     .line 32
     .line 33
-    sput-object v9, LY83;->c:LY83;
+    :cond_2
+    iget-object v0, p0, LY83;->c:Lo73;
 
     .line 34
     .line 35
-    new-instance v10, LY83;
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 36
     .line 37
-    const-string v11, "STOPPED"
-
     .line 38
+    goto :goto_0
+
     .line 39
-    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :cond_3
+    invoke-virtual {p1}, LZc3;->s()J
 
     .line 40
     .line 41
     .line 42
-    sput-object v10, LY83;->t:LY83;
+    move-result-wide v0
 
     .line 43
+    iput-wide v0, p0, LY83;->b:J
+
     .line 44
-    new-instance v11, LY83;
-
     .line 45
+    iget v0, p0, LY83;->a:I
+
     .line 46
-    const-string v12, "FLUSHING"
-
     .line 47
-    .line 48
-    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    or-int/lit8 v0, v0, 0x1
 
+    .line 48
     .line 49
+    iput v0, p0, LY83;->a:I
+
     .line 50
     .line 51
-    sput-object v11, LY83;->X:LY83;
+    goto :goto_0
 
     .line 52
-    .line 53
-    new-instance v12, LY83;
-
-    .line 54
-    .line 55
-    const-string v13, "RELEASED"
-
-    .line 56
-    .line 57
-    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 58
-    .line 59
-    .line 60
-    sput-object v12, LY83;->Y:LY83;
-
-    .line 61
-    .line 62
-    new-instance v13, LY83;
-
-    .line 63
-    .line 64
-    const-string v14, "ERROR"
-
-    .line 65
-    .line 66
-    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v13, LY83;->Z:LY83;
-
-    .line 70
-    .line 71
-    const/4 v14, 0x7
-
-    .line 72
-    new-array v14, v14, [LY83;
-
-    .line 73
-    .line 74
-    aput-object v7, v14, v6
-
-    .line 75
-    .line 76
-    aput-object v8, v14, v5
-
-    .line 77
-    .line 78
-    aput-object v9, v14, v4
-
-    .line 79
-    .line 80
-    aput-object v10, v14, v3
-
-    .line 81
-    .line 82
-    aput-object v11, v14, v2
-
-    .line 83
-    .line 84
-    aput-object v12, v14, v1
-
-    .line 85
-    .line 86
-    aput-object v13, v14, v0
-
-    .line 87
-    .line 88
-    sput-object v14, LY83;->e0:[LY83;
-
-    .line 89
-    .line 90
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LY83;
-    .locals 1
-
-    .line 1
-    const-class v0, LY83;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LY83;
-
-    .line 8
-    .line 9
+    :cond_4
+    :goto_1
     return-object p0
 .end method
 
-.method public static values()[LY83;
-    .locals 1
+.method public final writeTo(Lbd3;)V
+    .locals 4
 
     .line 1
-    sget-object v0, LY83;->e0:[LY83;
+    iget v0, p0, LY83;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [LY83;->clone()Ljava/lang/Object;
+    const/4 v1, 0x1
 
     .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    and-int/2addr v0, v1
 
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
     .line 7
-    check-cast v0, [LY83;
+    iget-wide v2, p0, LY83;->b:J
 
     .line 8
     .line 9
-    return-object v0
+    invoke-virtual {p1, v1, v2, v3}, Lbd3;->J(IJ)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    iget-object v0, p0, LY83;->c:Lo73;
+
+    .line 13
+    .line 14
+    if-eqz v0, :cond_1
+
+    .line 15
+    .line 16
+    const/4 v1, 0x2
+
+    .line 17
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+
+    .line 18
+    .line 19
+    .line 20
+    :cond_1
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
 .end method

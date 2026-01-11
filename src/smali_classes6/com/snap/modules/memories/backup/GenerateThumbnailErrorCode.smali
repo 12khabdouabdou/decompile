@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'UNKNOWN\':0,\'NIL_SELF\':1,\'FAILED_TO_FETCH_ENTRY\':2,\'FAILED_TO_FETCH_SNAPS\':3,\'FAILED_TO_WRITE_TO_DATA_URL\':4,\'FAILED_TO_SAVE_THUMBNAIL_URL\':5,\'CANCELED\':6,\'CONTENT_RESOLVE_URL_CLIENT_FAILURE\':7,\'RETRIEVE_METADATA_LOCAL_DB_FAIL\':8,\'DEV_FORCE_FAIL\':9,\'FAILED_TO_FIND_CLOUD_FILE\':10,\'FAILED_TO_RETRIEVE_THUMBNAIL_MEDIA\':11"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

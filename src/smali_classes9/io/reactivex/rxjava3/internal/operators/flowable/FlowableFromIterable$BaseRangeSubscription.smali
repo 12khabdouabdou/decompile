@@ -54,7 +54,7 @@
 .method public abstract a()V
 .end method
 
-.method public abstract b(J)V
+.method public abstract c(J)V
 .end method
 
 .method public final cancel()V
@@ -207,7 +207,7 @@
 
     .line 30
     :cond_0
-    invoke-virtual {p0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->b(J)V
+    invoke-virtual {p0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->c(J)V
 
     .line 31
     .line 32
@@ -287,7 +287,7 @@
     return-object v0
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1

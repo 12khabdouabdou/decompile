@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'BEST_FRIENDS\':0,\'BESTIES\':1,\'BFF\':2,\'SUPER_BFF\':3,\'MUTUALLY_PINNED_BFF\':4"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

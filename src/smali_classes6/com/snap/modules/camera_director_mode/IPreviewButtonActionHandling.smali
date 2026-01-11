@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LXX8;
+    proxyClass = LB59;
     schema = "\'onPreviewButtonTapped\':f?|m|()"
     typeReferences = {}
 .end annotation
@@ -17,7 +17,7 @@
 
 # virtual methods
 .method public abstract onPreviewButtonTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

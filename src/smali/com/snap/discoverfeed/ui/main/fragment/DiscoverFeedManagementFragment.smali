@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LeHe;
+.implements LOYe;
 
 
 # static fields
@@ -11,19 +11,19 @@
 
 
 # instance fields
-.field public A0:LQR4;
+.field public A0:LzX4;
 
-.field public B0:LPm9;
+.field public B0:LIv9;
 
-.field public C0:Lvf6;
+.field public C0:LSi6;
 
-.field public D0:LoJh;
+.field public D0:LD7i;
 
-.field public E0:LYg6;
+.field public E0:Lrk6;
 
-.field public F0:LIGh;
+.field public F0:LZ4i;
 
-.field public G0:LBre;
+.field public G0:LnJe;
 
 .field public H0:Landroid/widget/TextView;
 
@@ -37,21 +37,21 @@
 
 .field public M0:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public N0:LjTa;
+.field public N0:LU5b;
 
 .field public O0:J
 
-.field public final P0:LXfi;
+.field public final P0:LREi;
 
-.field public final Q0:LXfi;
+.field public final Q0:LREi;
 
-.field public w0:LUg6;
+.field public w0:Lnk6;
 
-.field public x0:LB73;
+.field public x0:LR93;
 
-.field public y0:LQg6;
+.field public y0:Lik6;
 
-.field public z0:LYGe;
+.field public z0:LIYe;
 
 
 # direct methods
@@ -64,74 +64,74 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lqf6;
+    new-instance v0, LOi6;
 
     .line 5
     .line 6
     const/4 v1, 0x1
 
     .line 7
-    invoke-direct {v0, p0, v1}, Lqf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+    invoke-direct {v0, p0, v1}, LOi6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
 
     .line 8
     .line 9
     .line 10
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 11
     .line 12
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 13
     .line 14
     .line 15
-    new-instance v0, Lqf6;
+    new-instance v0, LOi6;
 
     .line 16
     .line 17
     const/4 v1, 0x2
 
     .line 18
-    invoke-direct {v0, p0, v1}, Lqf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+    invoke-direct {v0, p0, v1}, LOi6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
 
     .line 19
     .line 20
     .line 21
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 22
     .line 23
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 24
     .line 25
     .line 26
-    iput-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->P0:LXfi;
+    iput-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->P0:LREi;
 
     .line 27
     .line 28
-    new-instance v0, Lqf6;
+    new-instance v0, LOi6;
 
     .line 29
     .line 30
     const/4 v1, 0x0
 
     .line 31
-    invoke-direct {v0, p0, v1}, Lqf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+    invoke-direct {v0, p0, v1}, LOi6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
 
     .line 32
     .line 33
     .line 34
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 35
     .line 36
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 37
     .line 38
     .line 39
-    iput-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->Q0:LXfi;
+    iput-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->Q0:LREi;
 
     .line 40
     .line 41
@@ -140,20 +140,20 @@
 
 
 # virtual methods
-.method public final D1()V
+.method public final B1()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->D1()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->B1()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LjTa;
+    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LU5b;
 
     .line 5
     .line 6
-    sget-object v1, LjTa;->t:LjTa;
+    sget-object v1, LU5b;->t:LU5b;
 
     .line 7
     .line 8
@@ -161,7 +161,7 @@
 
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
+    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 11
     .line 12
@@ -169,7 +169,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v0}, LUg6;->e()LrH9;
+    invoke-virtual {v0}, Lnk6;->e()LQS9;
 
     .line 15
     .line 16
@@ -177,7 +177,7 @@
     move-result-object v0
 
     .line 18
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -185,15 +185,15 @@
     move-result-object v0
 
     .line 22
-    check-cast v0, LSQh;
+    check-cast v0, Lgfi;
 
     .line 23
     .line 24
-    sget-object v1, LZg6;->Y:LZg6;
+    sget-object v1, Lsk6;->Y:Lsk6;
 
     .line 25
     .line 26
-    invoke-virtual {v0, v1}, LSQh;->g(LZg6;)V
+    invoke-virtual {v0, v1}, Lgfi;->g(Lsk6;)V
 
     .line 27
     .line 28
@@ -206,7 +206,7 @@
 
     .line 31
     .line 32
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 33
     .line 34
@@ -221,11 +221,11 @@
     return-void
 .end method
 
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()Lvf6;
+    invoke-virtual {p0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
 
     .line 2
     .line 3
@@ -233,7 +233,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, Lvf6;->C1()V
+    invoke-virtual {v0}, LSi6;->D1()V
 
     .line 6
     .line 7
@@ -241,7 +241,7 @@
     return-void
 .end method
 
-.method public final H1()V
+.method public final F1()V
     .locals 3
 
     .line 1
@@ -253,14 +253,14 @@
 
     .line 4
     .line 5
-    new-instance v1, Lpf6;
+    new-instance v1, LNi6;
 
     .line 6
     .line 7
     const/4 v2, 0x1
 
     .line 8
-    invoke-direct {v1, p0, v2}, Lpf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+    invoke-direct {v1, p0, v2}, LNi6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
 
     .line 9
     .line 10
@@ -278,7 +278,7 @@
 
     .line 16
     .line 17
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 18
     .line 19
@@ -289,11 +289,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
 
     .line 1
-    sget-object p3, LXRg;->a:LWRg;
+    sget-object p3, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -301,7 +301,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p3, v0}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {p3, v0}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -312,7 +312,7 @@
     const/4 v1, 0x0
 
     .line 10
-    const v2, 0x7f0e03f8
+    const v2, 0x7f0e041c
 
     .line 11
     .line 12
@@ -328,12 +328,12 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 17
-    invoke-virtual {p3, v0}, LWRg;->h(I)V
+    invoke-virtual {p3, v0}, LNdh;->h(I)V
 
     .line 18
     .line 19
     .line 20
-    const p2, 0x7f0b09d1
+    const p2, 0x7f0b0ac9
 
     .line 21
     .line 22
@@ -354,7 +354,7 @@
 
     .line 30
     .line 31
-    const p2, 0x7f0b1849
+    const p2, 0x7f0b199e
 
     .line 32
     .line 33
@@ -375,7 +375,7 @@
 
     .line 41
     .line 42
-    const p2, 0x7f0b0e90
+    const p2, 0x7f0b0fae
 
     .line 43
     .line 44
@@ -396,7 +396,7 @@
 
     .line 52
     .line 53
-    const p2, 0x7f0b07cd
+    const p2, 0x7f0b0878
 
     .line 54
     .line 55
@@ -417,7 +417,7 @@
 
     .line 63
     .line 64
-    const p2, 0x7f0b124a
+    const p2, 0x7f0b1376
 
     .line 65
     .line 66
@@ -438,7 +438,7 @@
 
     .line 74
     .line 75
-    const p2, 0x7f0b09c9
+    const p2, 0x7f0b0ac1
 
     .line 76
     .line 77
@@ -466,7 +466,7 @@
     move-exception p1
 
     .line 88
-    sget-object p2, LXRg;->b:Lzhi;
+    sget-object p2, LOdh;->b:LtGi;
 
     .line 89
     .line 90
@@ -474,7 +474,7 @@
 
     .line 91
     .line 92
-    invoke-virtual {p2, v0}, Lzhi;->o(I)V
+    invoke-virtual {p2, v0}, LtGi;->o(I)V
 
     .line 93
     .line 94
@@ -483,11 +483,11 @@
     throw p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 2
 
     .line 1
-    iget-object p2, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->B0:LPm9;
+    iget-object p2, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->B0:LIv9;
 
     .line 2
     .line 3
@@ -495,7 +495,7 @@
 
     .line 4
     .line 5
-    invoke-interface {p2}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {p2}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 6
     .line 7
@@ -503,7 +503,7 @@
     move-result-object p2
 
     .line 9
-    new-instance v0, LSi;
+    new-instance v0, LUj;
 
     .line 10
     .line 11
@@ -511,7 +511,7 @@
 
     .line 12
     .line 13
-    invoke-direct {v0, p1, v1}, LSi;-><init>(Landroid/view/View;I)V
+    invoke-direct {v0, p1, v1}, LUj;-><init>(Landroid/view/View;I)V
 
     .line 14
     .line 15
@@ -524,15 +524,15 @@
     move-result-object p1
 
     .line 20
-    sget-object p2, LLwf;->Z:LLwf;
+    sget-object p2, LUPf;->Z:LUPf;
 
     .line 21
     .line 22
-    iget-object v0, p0, LOwf;->a:Ljava/lang/String;
+    iget-object v0, p0, LXPf;->a:Ljava/lang/String;
 
     .line 23
     .line 24
-    invoke-virtual {p0, p1, p2, v0}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2, v0}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -545,7 +545,7 @@
 
     .line 29
     .line 30
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 31
     .line 32
@@ -560,11 +560,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->Q0:LXfi;
+    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->Q0:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -587,11 +587,11 @@
     return v0
 .end method
 
-.method public final V1()Lvf6;
+.method public final V1()LSi6;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->C0:Lvf6;
+    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->C0:LSi6;
 
     .line 2
     .line 3
@@ -607,7 +607,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -651,7 +651,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 17
     .line 18
@@ -680,11 +680,11 @@
     move-result v2
 
     .line 31
-    iget-object v3, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->P0:LXfi;
+    iget-object v3, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->P0:LREi;
 
     .line 32
     .line 33
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 34
     .line 35
@@ -716,7 +716,7 @@
 
     .line 48
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -725,7 +725,7 @@
 
     .line 52
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 53
     .line 54
@@ -733,20 +733,20 @@
     throw v1
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 7
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LjTa;
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LU5b;
 
     .line 5
     .line 6
-    sget-object v0, LjTa;->t:LjTa;
+    sget-object v0, LU5b;->t:LU5b;
 
     .line 7
     .line 8
@@ -754,7 +754,7 @@
 
     .line 9
     .line 10
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 11
     .line 12
@@ -769,7 +769,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p1}, LUg6;->b()LrH9;
+    invoke-virtual {p1}, Lnk6;->b()LQS9;
 
     .line 18
     .line 19
@@ -777,7 +777,7 @@
     move-result-object p1
 
     .line 21
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -785,11 +785,11 @@
     move-result-object p1
 
     .line 25
-    check-cast p1, Ll7c;
+    check-cast p1, LTlc;
 
     .line 26
     .line 27
-    new-instance v2, LDe6;
+    new-instance v2, LZh6;
 
     .line 28
     .line 29
@@ -797,17 +797,17 @@
 
     .line 30
     .line 31
-    invoke-direct {v2, v3}, LDe6;-><init>(I)V
+    invoke-direct {v2, v3}, LZh6;-><init>(I)V
 
     .line 32
     .line 33
     .line 34
-    invoke-virtual {p1, v2}, Ll7c;->d(LDe6;)V
+    invoke-virtual {p1, v2}, LTlc;->d(LZh6;)V
 
     .line 35
     .line 36
     .line 37
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->x0:LB73;
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->x0:LR93;
 
     .line 38
     .line 39
@@ -823,7 +823,7 @@
     move-result-wide v2
 
     .line 45
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->D0:LoJh;
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->D0:LD7i;
 
     .line 46
     .line 47
@@ -831,16 +831,16 @@
 
     .line 48
     .line 49
-    sget-object v4, LZg6;->Y:LZg6;
+    sget-object v4, Lsk6;->Y:Lsk6;
 
     .line 50
     .line 51
-    invoke-virtual {p1, v4}, LoJh;->b(LZg6;)V
+    invoke-virtual {p1, v4}, LD7i;->b(Lsk6;)V
 
     .line 52
     .line 53
     .line 54
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->F0:LIGh;
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->F0:LZ4i;
 
     .line 55
     .line 56
@@ -876,12 +876,12 @@
     move-result-object v2
 
     .line 70
-    invoke-static {p1, v4, v2, v1}, Lxyk;->h(LIGh;LZg6;Ljava/lang/Double;Llc;)V
+    invoke-static {p1, v4, v2, v1}, LGXk;->j(LZ4i;Lsk6;Ljava/lang/Double;LXc;)V
 
     .line 71
     .line 72
     .line 73
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 74
     .line 75
@@ -889,7 +889,7 @@
 
     .line 76
     .line 77
-    invoke-virtual {p1}, LUg6;->e()LrH9;
+    invoke-virtual {p1}, Lnk6;->e()LQS9;
 
     .line 78
     .line 79
@@ -897,7 +897,7 @@
     move-result-object p1
 
     .line 81
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
     .line 82
     .line 83
@@ -905,16 +905,16 @@
     move-result-object p1
 
     .line 85
-    check-cast p1, LSQh;
+    check-cast p1, Lgfi;
 
     .line 86
     .line 87
-    invoke-static {p1, v4}, LTp0;->g(LSQh;LZg6;)V
+    invoke-static {p1, v4}, LTYk;->e(Lgfi;Lsk6;)V
 
     .line 88
     .line 89
     .line 90
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->y0:LQg6;
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->y0:Lik6;
 
     .line 91
     .line 92
@@ -922,7 +922,7 @@
 
     .line 93
     .line 94
-    invoke-virtual {p1, v1}, LQg6;->j(LXg6;)V
+    invoke-virtual {p1, v1}, Lik6;->j(Lqk6;)V
 
     .line 95
     .line 96
@@ -935,7 +935,7 @@
 
     .line 99
     .line 100
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 101
     .line 102
@@ -944,7 +944,7 @@
 
     .line 104
     :cond_1
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 105
     .line 106
@@ -957,7 +957,7 @@
 
     .line 109
     .line 110
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 111
     .line 112
@@ -970,7 +970,7 @@
 
     .line 115
     .line 116
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 117
     .line 118
@@ -983,7 +983,7 @@
 
     .line 121
     .line 122
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 123
     .line 124
@@ -992,7 +992,7 @@
 
     .line 126
     :cond_5
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 127
     .line 128
@@ -1004,7 +1004,7 @@
     return-void
 .end method
 
-.method public final r()Landroidx/recyclerview/widget/RecyclerView;
+.method public final j0()Landroidx/recyclerview/widget/RecyclerView;
     .locals 1
 
     .line 1
@@ -1024,7 +1024,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1035,11 +1035,11 @@
     throw v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 5
 
     .line 1
-    sget-object p1, LXRg;->a:LWRg;
+    sget-object p1, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -1047,7 +1047,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p1, v0}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {p1, v0}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -1056,12 +1056,12 @@
 
     .line 9
     :try_start_0
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 10
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
+    iget-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 13
     .line 14
@@ -1069,7 +1069,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {v1}, LUg6;->c()Lnwf;
+    invoke-virtual {v1}, Lnk6;->c()LyPf;
 
     .line 17
     .line 18
@@ -1077,7 +1077,7 @@
     move-result-object v1
 
     .line 20
-    sget-object v2, Lve6;->Z:Lve6;
+    sget-object v2, LPh6;->Z:LPh6;
 
     .line 21
     .line 22
@@ -1090,16 +1090,16 @@
     .line 25
     .line 26
     .line 27
-    new-instance v4, LWm0;
+    new-instance v4, Lnp0;
 
     .line 28
     .line 29
-    invoke-direct {v4, v2, v3}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v4, v2, v3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 30
     .line 31
     .line 32
-    check-cast v1, LIP5;
+    check-cast v1, LTT5;
 
     .line 33
     .line 34
@@ -1108,20 +1108,20 @@
     .line 35
     .line 36
     .line 37
-    new-instance v1, LBre;
+    new-instance v1, LnJe;
 
     .line 38
     .line 39
-    invoke-direct {v1, v4}, LBre;-><init>(LWm0;)V
+    invoke-direct {v1, v4}, LnJe;-><init>(Lnp0;)V
 
     .line 40
     .line 41
     .line 42
-    iput-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->G0:LBre;
+    iput-object v1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->G0:LnJe;
 
     .line 43
     .line 44
-    invoke-virtual {p0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()Lvf6;
+    invoke-virtual {p0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
 
     .line 45
     .line 46
@@ -1129,14 +1129,14 @@
     move-result-object v1
 
     .line 48
-    invoke-virtual {v1, p0}, Lvf6;->h3(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;)V
+    invoke-virtual {v1, p0}, LSi6;->i3(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {p1, v0}, LWRg;->h(I)V
+    invoke-virtual {p1, v0}, LNdh;->h(I)V
 
     .line 52
     .line 53
@@ -1157,7 +1157,7 @@
 
     .line 58
     .line 59
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 60
     .line 61
@@ -1171,7 +1171,7 @@
 
     .line 64
     :goto_0
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
     .line 65
     .line 66
@@ -1179,7 +1179,7 @@
 
     .line 67
     .line 68
-    invoke-virtual {v1, v0}, Lzhi;->o(I)V
+    invoke-virtual {v1, v0}, LtGi;->o(I)V
 
     .line 69
     .line 70
@@ -1188,20 +1188,20 @@
     throw p1
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 5
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LjTa;
+    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LU5b;
 
     .line 5
     .line 6
-    sget-object v1, LjTa;->t:LjTa;
+    sget-object v1, LU5b;->t:LU5b;
 
     .line 7
     .line 8
@@ -1209,7 +1209,7 @@
 
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
+    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 11
     .line 12
@@ -1224,7 +1224,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0}, LUg6;->b()LrH9;
+    invoke-virtual {v0}, Lnk6;->b()LQS9;
 
     .line 18
     .line 19
@@ -1232,7 +1232,7 @@
     move-result-object v0
 
     .line 21
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 22
     .line 23
@@ -1240,15 +1240,15 @@
     move-result-object v0
 
     .line 25
-    check-cast v0, Ll7c;
+    check-cast v0, LTlc;
 
     .line 26
     .line 27
-    new-instance v3, LDe6;
+    new-instance v3, LZh6;
 
     .line 28
     .line 29
-    iget-object v4, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
+    iget-object v4, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 30
     .line 31
@@ -1256,7 +1256,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {v4}, LUg6;->b()LrH9;
+    invoke-virtual {v4}, Lnk6;->b()LQS9;
 
     .line 34
     .line 35
@@ -1264,7 +1264,7 @@
     move-result-object v4
 
     .line 37
-    invoke-interface {v4}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v4}, LQS9;->get()Ljava/lang/Object;
 
     .line 38
     .line 39
@@ -1272,269 +1272,264 @@
     move-result-object v4
 
     .line 41
-    check-cast v4, Ll7c;
+    check-cast v4, LTlc;
 
     .line 42
     .line 43
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v4, p1}, LTlc;->a(LiGc;)I
 
     .line 44
     .line 45
     .line 46
-    invoke-static {p1}, Ll7c;->a(LQqc;)I
-
-    .line 47
-    .line 48
-    .line 49
     move-result p1
 
+    .line 47
+    invoke-direct {v3, p1}, LZh6;-><init>(I)V
+
+    .line 48
+    .line 49
     .line 50
-    invoke-direct {v3, p1}, LDe6;-><init>(I)V
+    invoke-virtual {v0, v3}, LTlc;->d(LZh6;)V
 
     .line 51
     .line 52
     .line 53
-    invoke-virtual {v0, v3}, Ll7c;->d(LDe6;)V
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->x0:LR93;
 
     .line 54
     .line 55
-    .line 56
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->x0:LB73;
-
-    .line 57
-    .line 58
     if-eqz p1, :cond_5
 
-    .line 59
-    .line 60
+    .line 56
+    .line 57
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    .line 61
-    .line 62
-    .line 63
+    .line 58
+    .line 59
+    .line 60
     move-result-wide v3
 
-    .line 64
+    .line 61
     iput-wide v3, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->O0:J
 
-    .line 65
-    .line 66
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->y0:LQg6;
+    .line 62
+    .line 63
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->y0:Lik6;
 
-    .line 67
-    .line 68
+    .line 64
+    .line 65
     if-eqz p1, :cond_4
 
-    .line 69
-    .line 70
-    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->E0:LYg6;
+    .line 66
+    .line 67
+    iget-object v0, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->E0:Lrk6;
 
-    .line 71
-    .line 72
+    .line 68
+    .line 69
     if-eqz v0, :cond_3
 
+    .line 70
+    .line 71
+    invoke-virtual {p1, v0}, Lik6;->j(Lqk6;)V
+
+    .line 72
     .line 73
     .line 74
-    invoke-virtual {p1, v0}, LQg6;->j(LXg6;)V
+    sget-object v0, Lok6;->u:Lmk6;
 
     .line 75
     .line 76
-    .line 77
-    sget-object v0, LVg6;->t:LTg6;
-
-    .line 78
-    .line 79
     iget-object v3, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->M0:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 80
-    .line 81
+    .line 77
+    .line 78
     if-eqz v3, :cond_2
 
+    .line 79
+    .line 80
+    invoke-virtual {p1, v0, v3}, Lik6;->l(Lmk6;Landroidx/recyclerview/widget/RecyclerView;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 81
     .line 82
     .line 83
-    invoke-virtual {p1, v0, v3}, LQg6;->l(LTg6;Landroidx/recyclerview/widget/RecyclerView;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 84
-    .line 85
-    .line 86
     move-result-object p1
 
+    .line 84
+    sget-object v0, LUPf;->X:LUPf;
+
+    .line 85
+    .line 86
+    iget-object v3, p0, LXPf;->a:Ljava/lang/String;
+
     .line 87
-    sget-object v0, LLwf;->X:LLwf;
-
     .line 88
-    .line 89
-    iget-object v3, p0, LOwf;->a:Ljava/lang/String;
+    invoke-virtual {p0, p1, v0, v3}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
+    .line 89
     .line 90
     .line 91
-    invoke-virtual {p0, p1, v0, v3}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->F0:LZ4i;
 
     .line 92
     .line 93
-    .line 94
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->F0:LIGh;
-
-    .line 95
-    .line 96
     if-eqz p1, :cond_1
 
+    .line 94
+    .line 95
+    sget-object v0, Lsk6;->Y:Lsk6;
+
+    .line 96
     .line 97
+    sget-object v3, LXc;->Z:LXc;
+
     .line 98
-    sget-object v0, LZg6;->Y:LZg6;
-
     .line 99
-    .line 100
-    sget-object v3, Llc;->Z:Llc;
-
-    .line 101
-    .line 102
     const/16 v4, 0x1c
 
+    .line 100
+    .line 101
+    invoke-static {p1, v0, v3, v2, v4}, LGXk;->i(LZ4i;Lsk6;LXc;LKn7;I)V
+
+    .line 102
     .line 103
     .line 104
-    invoke-static {p1, v0, v3, v2, v4}, Lxyk;->g(LIGh;LZg6;Llc;LGi7;I)V
+    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 105
     .line 106
-    .line 107
-    iget-object p1, p0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
-
-    .line 108
-    .line 109
     if-eqz p1, :cond_0
 
+    .line 107
+    .line 108
+    invoke-virtual {p1}, Lnk6;->e()LQS9;
+
+    .line 109
     .line 110
     .line 111
-    invoke-virtual {p1}, LUg6;->e()LrH9;
+    move-result-object p1
 
     .line 112
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
+
     .line 113
     .line 114
-    move-result-object p1
-
     .line 115
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    move-result-object p1
 
     .line 116
+    check-cast p1, Lgfi;
+
     .line 117
     .line 118
-    move-result-object p1
+    sget-object v1, Lsod;->B0:Lsod;
 
     .line 119
-    check-cast p1, LSQh;
-
     .line 120
-    .line 121
-    sget-object v1, LZ8d;->B0:LZ8d;
+    invoke-static {p1, v0, v1}, LTYk;->f(Lgfi;Lsk6;Lsod;)V
 
+    .line 121
     .line 122
     .line 123
-    invoke-static {p1, v0, v1}, LTp0;->h(LSQh;LZg6;LZ8d;)V
-
-    .line 124
-    .line 125
-    .line 126
     return-void
 
-    .line 127
+    .line 124
     :cond_0
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 128
-    .line 129
-    .line 130
+    .line 125
+    .line 126
+    .line 127
     throw v2
 
-    .line 131
+    .line 128
     :cond_1
     const-string p1, "storiesAnalytics"
 
+    .line 129
+    .line 130
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 131
     .line 132
     .line 133
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 134
-    .line 135
-    .line 136
     throw v2
 
-    .line 137
+    .line 134
     :cond_2
     const-string p1, "recyclerView"
 
+    .line 135
+    .line 136
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 137
     .line 138
     .line 139
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 140
-    .line 141
-    .line 142
     throw v2
 
-    .line 143
+    .line 140
     :cond_3
     const-string p1, "sectionPaginator"
 
+    .line 141
+    .line 142
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 143
     .line 144
     .line 145
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 146
-    .line 147
-    .line 148
     throw v2
 
-    .line 149
+    .line 146
     :cond_4
     const-string p1, "discoverFeedScrollPaginator"
 
+    .line 147
+    .line 148
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 149
     .line 150
     .line 151
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 152
-    .line 153
-    .line 154
     throw v2
 
-    .line 155
+    .line 152
     :cond_5
     const-string p1, "clock"
 
+    .line 153
+    .line 154
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 155
     .line 156
     .line 157
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    throw v2
 
     .line 158
+    :cond_6
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 159
     .line 160
-    throw v2
-
     .line 161
-    :cond_6
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    throw v2
 
     .line 162
+    :cond_7
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 163
     .line 164
-    throw v2
-
     .line 165
-    :cond_7
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    throw v2
 
     .line 166
-    .line 167
-    .line 168
-    throw v2
-
-    .line 169
     :cond_8
     return-void
 .end method
 
-.method public final w0(LPpc;)V
+.method public final w0(LkFc;)V
     .locals 19
 
     .line 1
@@ -1546,24 +1541,24 @@
 
     .line 4
     .line 5
-    invoke-super/range {p0 .. p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LPpc;)V
+    invoke-super/range {p0 .. p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LkFc;)V
 
     .line 6
     .line 7
     .line 8
-    instance-of v2, v1, Lg76;
+    instance-of v2, v1, Lja6;
 
     .line 9
     .line 10
-    if-eqz v2, :cond_1e
+    if-eqz v2, :cond_1d
 
     .line 11
     .line 12
-    check-cast v1, Lg76;
+    check-cast v1, Lja6;
 
     .line 13
     .line 14
-    invoke-virtual {v1}, Lg76;->a()LjTa;
+    invoke-virtual {v1}, Lja6;->a()LU5b;
 
     .line 15
     .line 16
@@ -1571,11 +1566,11 @@
     move-result-object v2
 
     .line 18
-    iput-object v2, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LjTa;
+    iput-object v2, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->N0:LU5b;
 
     .line 19
     .line 20
-    invoke-virtual {v1}, Lg76;->a()LjTa;
+    invoke-virtual {v1}, Lja6;->a()LU5b;
 
     .line 21
     .line 22
@@ -1616,7 +1611,7 @@
 
     .line 38
     .line 39
-    if-eqz v2, :cond_17
+    if-eqz v2, :cond_16
 
     .line 40
     .line 41
@@ -1641,12 +1636,12 @@
 
     .line 49
     .line 50
-    goto/16 :goto_1
+    goto/16 :goto_0
 
     .line 51
     .line 52
     :cond_0
-    invoke-virtual {v1}, Lg76;->f()LRDe;
+    invoke-virtual {v1}, Lja6;->f()LrVe;
 
     .line 53
     .line 54
@@ -1654,7 +1649,7 @@
     move-result-object v1
 
     .line 56
-    if-eqz v1, :cond_1e
+    if-eqz v1, :cond_1d
 
     .line 57
     .line 58
@@ -1684,7 +1679,7 @@
     .line 70
     .line 71
     .line 72
-    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()Lvf6;
+    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
 
     .line 73
     .line 74
@@ -1692,7 +1687,7 @@
     move-result-object v2
 
     .line 76
-    invoke-virtual {v2, v1}, Lvf6;->Q2(LRDe;)V
+    invoke-virtual {v2, v1}, LSi6;->c3(LrVe;)V
 
     .line 77
     .line 78
@@ -1713,7 +1708,7 @@
     move-result-object v2
 
     .line 87
-    const v4, 0x7f132ba5
+    const v4, 0x7f132e1f
 
     .line 88
     .line 89
@@ -1739,14 +1734,14 @@
 
     .line 100
     .line 101
-    new-instance v2, Lsf6;
+    new-instance v2, LPi6;
 
     .line 102
     .line 103
-    const/4 v3, 0x1
+    const/4 v3, 0x2
 
     .line 104
-    invoke-direct {v2, v0, v3}, Lsf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+    invoke-direct {v2, v3, v0}, LPi6;-><init>(ILjava/lang/Object;)V
 
     .line 105
     .line 106
@@ -1765,7 +1760,7 @@
 
     .line 114
     :cond_1
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 115
     .line 116
@@ -1774,7 +1769,7 @@
 
     .line 118
     :cond_2
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 119
     .line 120
@@ -1783,7 +1778,7 @@
 
     .line 122
     :cond_3
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 123
     .line 124
@@ -1792,7 +1787,7 @@
 
     .line 126
     :cond_4
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 127
     .line 128
@@ -1827,7 +1822,7 @@
     .line 142
     .line 143
     .line 144
-    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()Lvf6;
+    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
 
     .line 145
     .line 146
@@ -1835,7 +1830,7 @@
     move-result-object v1
 
     .line 148
-    invoke-virtual {v1}, Lvf6;->W2()V
+    invoke-virtual {v1}, LSi6;->f3()V
 
     .line 149
     .line 150
@@ -1856,7 +1851,7 @@
     move-result-object v2
 
     .line 159
-    const v4, 0x7f131e72
+    const v4, 0x7f131fcb
 
     .line 160
     .line 161
@@ -1890,7 +1885,7 @@
     move-result-object v2
 
     .line 177
-    const v4, 0x7f131e71
+    const v4, 0x7f131fca
 
     .line 178
     .line 179
@@ -1916,14 +1911,14 @@
 
     .line 190
     .line 191
-    new-instance v2, Lsf6;
+    new-instance v2, LPi6;
 
     .line 192
     .line 193
-    const/4 v3, 0x0
+    const/4 v3, 0x1
 
     .line 194
-    invoke-direct {v2, v0, v3}, Lsf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+    invoke-direct {v2, v3, v0}, LPi6;-><init>(ILjava/lang/Object;)V
 
     .line 195
     .line 196
@@ -1942,7 +1937,7 @@
 
     .line 204
     :cond_6
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 205
     .line 206
@@ -1951,7 +1946,7 @@
 
     .line 208
     :cond_7
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 209
     .line 210
@@ -1960,7 +1955,7 @@
 
     .line 212
     :cond_8
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 213
     .line 214
@@ -1969,7 +1964,7 @@
 
     .line 216
     :cond_9
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 217
     .line 218
@@ -1978,7 +1973,7 @@
 
     .line 220
     :cond_a
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 221
     .line 222
@@ -1987,41 +1982,41 @@
 
     .line 224
     :cond_b
-    invoke-virtual {v1}, Lg76;->g()Z
+    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
 
     .line 225
     .line 226
     .line 227
-    move-result v1
+    move-result-object v1
 
     .line 228
-    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()Lvf6;
+    invoke-virtual {v1}, LSi6;->j3()V
 
     .line 229
     .line 230
     .line 231
-    move-result-object v2
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->H0:Landroid/widget/TextView;
 
     .line 232
-    invoke-virtual {v2}, Lvf6;->i3()V
-
     .line 233
+    if-eqz v1, :cond_15
+
     .line 234
     .line 235
-    if-eqz v1, :cond_c
+    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
 
     .line 236
     .line 237
-    new-instance v1, LnUi;
-
     .line 238
+    move-result-object v2
+
     .line 239
-    const v2, 0x7f131e69
+    const v4, 0x7f131fc2
 
     .line 240
     .line 241
     .line 242
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v2, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     .line 243
     .line 244
@@ -2029,720 +2024,572 @@
     move-result-object v2
 
     .line 246
-    const v4, 0x7f131e68
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 247
     .line 248
     .line 249
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->I0:Landroid/widget/TextView;
 
     .line 250
     .line 251
-    .line 252
-    move-result-object v4
+    if-eqz v1, :cond_14
 
+    .line 252
     .line 253
-    const v11, 0x7f131e6a
+    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
 
     .line 254
     .line 255
     .line 256
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v2
 
     .line 257
+    const v4, 0x7f131fc1
+
     .line 258
     .line 259
-    move-result-object v11
-
     .line 260
-    invoke-direct {v1, v2, v4, v11}, LnUi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-virtual {v2, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
     .line 261
     .line 262
     .line 263
-    goto :goto_0
+    move-result-object v2
 
     .line 264
-    :cond_c
-    new-instance v1, LnUi;
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 265
     .line 266
-    const v2, 0x7f131e6c
-
     .line 267
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->K0:Landroid/view/ViewStub;
+
     .line 268
     .line 269
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz v1, :cond_13
 
     .line 270
     .line 271
-    .line 272
-    move-result-object v2
+    new-instance v2, LPi6;
 
+    .line 272
     .line 273
-    const v4, 0x7f131e6b
+    const/4 v4, 0x0
 
     .line 274
+    invoke-direct {v2, v4, v0}, LPi6;-><init>(ILjava/lang/Object;)V
+
     .line 275
     .line 276
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 277
+    invoke-virtual {v1, v2}, Landroid/view/ViewStub;->setOnInflateListener(Landroid/view/ViewStub$OnInflateListener;)V
+
     .line 278
     .line 279
-    move-result-object v4
-
     .line 280
-    const v11, 0x7f131e6d
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
 
     .line 281
     .line 282
-    .line 283
-    invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz v1, :cond_12
 
+    .line 283
     .line 284
+    invoke-virtual {v1, v10}, Landroid/view/View;->setVisibility(I)V
+
     .line 285
     .line 286
-    move-result-object v11
-
     .line 287
-    invoke-direct {v1, v2, v4, v11}, LnUi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
 
     .line 288
     .line 289
+    if-eqz v1, :cond_11
+
     .line 290
-    :goto_0
-    iget-object v2, v1, LnUi;->a:Ljava/lang/Object;
-
     .line 291
-    .line 292
-    check-cast v2, Ljava/lang/Number;
+    invoke-virtual {v1, v8}, Landroid/view/View;->setClickable(Z)V
 
+    .line 292
     .line 293
     .line 294
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
+    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
 
     .line 295
     .line 296
     .line 297
-    move-result v2
+    move-result-object v1
 
     .line 298
-    iget-object v4, v1, LnUi;->b:Ljava/lang/Object;
+    invoke-virtual {v1}, LSi6;->d3()V
 
     .line 299
     .line 300
-    check-cast v4, Ljava/lang/Number;
-
     .line 301
-    .line 302
-    invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->M0:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 302
     .line 303
+    if-eqz v1, :cond_10
+
     .line 304
     .line 305
-    move-result v4
+    iget-object v2, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->z0:LIYe;
 
     .line 306
-    iget-object v1, v1, LnUi;->c:Ljava/lang/Object;
-
     .line 307
+    if-eqz v2, :cond_f
+
     .line 308
-    check-cast v1, Ljava/lang/Number;
-
     .line 309
-    .line 310
-    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+    invoke-static {v2, v1, v3, v10}, LIYe;->a(LIYe;Landroidx/recyclerview/widget/RecyclerView;Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;I)LHYe;
 
+    .line 310
     .line 311
     .line 312
+    move-result-object v12
+
     .line 313
-    move-result v1
+    sget-object v1, LUPf;->X:LUPf;
 
     .line 314
-    iget-object v11, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->H0:Landroid/widget/TextView;
-
     .line 315
+    iget-object v2, v0, LXPf;->a:Ljava/lang/String;
+
     .line 316
-    if-eqz v11, :cond_16
-
     .line 317
-    .line 318
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+    invoke-virtual {v0, v12, v1, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
+    .line 318
     .line 319
     .line 320
-    .line 321
-    move-result-object v6
+    sget-object v13, Lok6;->u:Lmk6;
 
+    .line 321
     .line 322
-    invoke-virtual {v6, v2}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    iget-object v11, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->A0:LzX4;
 
     .line 323
     .line 324
-    .line 325
-    move-result-object v2
+    if-eqz v11, :cond_e
 
+    .line 325
     .line 326
-    invoke-virtual {v11, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    iget-object v4, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:Lnk6;
 
     .line 327
     .line 328
+    if-eqz v4, :cond_d
+
     .line 329
-    iget-object v2, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->I0:Landroid/widget/TextView;
-
     .line 330
-    .line 331
-    if-eqz v2, :cond_15
+    invoke-virtual {v4}, Lnk6;->b()LQS9;
 
+    .line 331
     .line 332
     .line 333
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 334
-    .line 335
-    .line 336
-    move-result-object v5
-
-    .line 337
-    invoke-virtual {v5, v4}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
-
-    .line 338
-    .line 339
-    .line 340
     move-result-object v4
 
+    .line 334
+    invoke-interface {v4}, LQS9;->get()Ljava/lang/Object;
+
+    .line 335
+    .line 336
+    .line 337
+    move-result-object v4
+
+    .line 338
+    move-object v14, v4
+
+    .line 339
+    check-cast v14, LTlc;
+
+    .line 340
     .line 341
-    invoke-virtual {v2, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    invoke-static {}, LDYk;->e()LF9i;
 
     .line 342
     .line 343
     .line 344
-    iget-object v2, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->K0:Landroid/view/ViewStub;
+    move-result-object v15
 
     .line 345
+    iget-object v4, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->G0:LnJe;
+
     .line 346
-    if-eqz v2, :cond_14
-
     .line 347
+    if-eqz v4, :cond_c
+
     .line 348
-    new-instance v4, Lrf6;
-
     .line 349
-    .line 350
-    invoke-direct {v4, v0, v1}, Lrf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+    sget-object v17, LPh6;->l0:LL4b;
 
+    .line 350
     .line 351
+    const/16 v18, 0x0
+
     .line 352
     .line 353
-    invoke-virtual {v2, v4}, Landroid/view/ViewStub;->setOnInflateListener(Landroid/view/ViewStub$OnInflateListener;)V
+    move-object/from16 v16, v4
 
     .line 354
     .line 355
-    .line 356
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
+    invoke-virtual/range {v11 .. v18}, LzX4;->a(LHYe;Lmk6;LTlc;LF9i;LnJe;LL4b;LmYf;)LIo;
 
+    .line 356
     .line 357
     .line 358
-    if-eqz v1, :cond_13
+    move-result-object v3
 
     .line 359
-    .line 360
-    invoke-virtual {v1, v10}, Landroid/view/View;->setVisibility(I)V
+    invoke-virtual {v3}, LIo;->I()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 360
     .line 361
     .line 362
+    move-result-object v3
+
     .line 363
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
+    invoke-virtual {v0, v3, v1, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 364
     .line 365
-    if-eqz v1, :cond_12
-
     .line 366
+    return-void
+
     .line 367
-    invoke-virtual {v1, v8}, Landroid/view/View;->setClickable(Z)V
+    :cond_c
+    const-string v1, "schedulers"
 
     .line 368
     .line 369
-    .line 370
-    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()Lvf6;
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 370
     .line 371
     .line 372
+    throw v3
+
     .line 373
-    move-result-object v1
+    :cond_d
+    const-string v1, "adapterContext"
 
     .line 374
-    invoke-virtual {v1}, Lvf6;->S2()V
-
     .line 375
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 376
     .line 377
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->M0:Landroidx/recyclerview/widget/RecyclerView;
-
     .line 378
+    throw v3
+
     .line 379
-    if-eqz v1, :cond_11
+    :cond_e
+    const-string v1, "feedImpressionLoggerFactory"
 
     .line 380
     .line 381
-    iget-object v2, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->z0:LYGe;
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 382
     .line 383
-    if-eqz v2, :cond_10
-
     .line 384
+    throw v3
+
     .line 385
-    invoke-static {v2, v1, v3, v10}, LYGe;->a(LYGe;Landroidx/recyclerview/widget/RecyclerView;Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;I)LXGe;
+    :cond_f
+    const-string v1, "feedImpressionEventListenerFactory"
 
     .line 386
     .line 387
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 388
-    move-result-object v12
-
     .line 389
-    sget-object v1, LLwf;->X:LLwf;
-
     .line 390
+    throw v3
+
     .line 391
-    iget-object v2, v0, LOwf;->a:Ljava/lang/String;
+    :cond_10
+    const-string v1, "recyclerView"
 
     .line 392
     .line 393
-    invoke-virtual {v0, v12, v1, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 394
     .line 395
     .line 396
-    sget-object v13, LVg6;->t:LTg6;
+    throw v3
 
     .line 397
-    .line 398
-    iget-object v11, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->A0:LQR4;
+    :cond_11
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 398
     .line 399
     .line 400
-    if-eqz v11, :cond_f
+    throw v3
 
     .line 401
-    .line 402
-    iget-object v4, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->w0:LUg6;
+    :cond_12
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 402
     .line 403
     .line 404
-    if-eqz v4, :cond_e
+    throw v3
 
     .line 405
-    .line 406
-    invoke-virtual {v4}, LUg6;->b()LrH9;
+    :cond_13
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 406
     .line 407
     .line 408
+    throw v3
+
     .line 409
-    move-result-object v4
+    :cond_14
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 410
-    invoke-interface {v4}, LrH9;->get()Ljava/lang/Object;
-
     .line 411
     .line 412
+    throw v3
+
     .line 413
-    move-result-object v4
+    :cond_15
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 414
-    move-object v14, v4
-
     .line 415
-    check-cast v14, Ll7c;
-
     .line 416
+    throw v3
+
     .line 417
-    invoke-static {}, Lyzk;->a()LoLh;
+    :cond_16
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->H0:Landroid/widget/TextView;
 
     .line 418
     .line 419
-    .line 420
-    move-result-object v15
+    if-eqz v1, :cond_1c
 
+    .line 420
     .line 421
-    iget-object v4, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->G0:LBre;
+    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
 
     .line 422
     .line 423
-    if-eqz v4, :cond_d
-
     .line 424
+    move-result-object v2
+
     .line 425
-    sget-object v17, Lve6;->l0:LcSa;
+    const v6, 0x7f1339f2
 
     .line 426
     .line 427
-    const/16 v18, 0x0
-
     .line 428
-    .line 429
-    move-object/from16 v16, v4
+    invoke-virtual {v2, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
+    .line 429
     .line 430
     .line 431
-    invoke-virtual/range {v11 .. v18}, LQR4;->a(LXGe;LTg6;Ll7c;LoLh;LBre;LcSa;LOEf;)Lqn;
+    move-result-object v2
 
     .line 432
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
     .line 433
     .line 434
-    move-result-object v3
-
     .line 435
-    invoke-virtual {v3}, Lqn;->u()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->I0:Landroid/widget/TextView;
 
     .line 436
     .line 437
-    .line 438
-    move-result-object v3
+    if-eqz v1, :cond_1b
 
+    .line 438
     .line 439
-    invoke-virtual {v0, v3, v1, v2}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
 
     .line 440
     .line 441
     .line 442
-    return-void
+    move-result-object v2
 
     .line 443
-    :cond_d
-    const-string v1, "schedulers"
+    const v5, 0x7f131fc8
 
     .line 444
     .line 445
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 446
+    invoke-virtual {v2, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+
     .line 447
     .line 448
-    throw v3
-
     .line 449
-    :cond_e
-    const-string v1, "adapterContext"
+    move-result-object v2
 
     .line 450
-    .line 451
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+    .line 451
     .line 452
     .line 453
-    .line 454
-    throw v3
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->K0:Landroid/view/ViewStub;
 
+    .line 454
     .line 455
-    :cond_f
-    const-string v1, "feedImpressionLoggerFactory"
+    if-eqz v1, :cond_1a
 
     .line 456
     .line 457
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    new-instance v2, LPi6;
 
     .line 458
     .line 459
+    const/4 v5, 0x3
+
     .line 460
-    throw v3
+    invoke-direct {v2, v5, v0}, LPi6;-><init>(ILjava/lang/Object;)V
 
     .line 461
-    :cond_10
-    const-string v1, "feedImpressionEventListenerFactory"
-
     .line 462
     .line 463
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Landroid/view/ViewStub;->setOnInflateListener(Landroid/view/ViewStub$OnInflateListener;)V
 
     .line 464
     .line 465
     .line 466
-    throw v3
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
 
     .line 467
-    :cond_11
-    const-string v1, "recyclerView"
-
     .line 468
-    .line 469
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    if-eqz v1, :cond_19
 
+    .line 469
     .line 470
+    invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
+
     .line 471
     .line 472
-    throw v3
-
     .line 473
-    :cond_12
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
 
     .line 474
     .line 475
-    .line 476
-    throw v3
+    if-eqz v1, :cond_18
 
+    .line 476
     .line 477
-    :cond_13
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v1, v4}, Landroid/view/View;->setClickable(Z)V
 
     .line 478
     .line 479
     .line 480
-    throw v3
+    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
 
     .line 481
-    :cond_14
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
-
     .line 482
+    if-eqz v1, :cond_17
+
     .line 483
     .line 484
-    throw v3
+    new-instance v2, LNi6;
 
     .line 485
-    :cond_15
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 486
+    const/4 v3, 0x0
+
     .line 487
+    invoke-direct {v2, v0, v3}, LNi6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
+
     .line 488
-    throw v3
-
     .line 489
-    :cond_16
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
     .line 490
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
     .line 491
     .line 492
-    throw v3
-
     .line 493
-    :cond_17
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->H0:Landroid/widget/TextView;
+    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()LSi6;
 
     .line 494
     .line 495
-    if-eqz v1, :cond_1d
-
     .line 496
+    move-result-object v1
+
     .line 497
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+    invoke-virtual {v1}, LSi6;->h3()V
 
     .line 498
     .line 499
     .line 500
-    move-result-object v2
+    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->W1()V
 
     .line 501
-    const v6, 0x7f1336fc
-
     .line 502
     .line 503
+    return-void
+
     .line 504
-    invoke-virtual {v2, v6}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
+    :cond_17
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 505
     .line 506
     .line 507
-    move-result-object v2
+    throw v3
 
     .line 508
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    :cond_18
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 509
     .line 510
     .line 511
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->I0:Landroid/widget/TextView;
+    throw v3
 
     .line 512
-    .line 513
-    if-eqz v1, :cond_1c
+    :cond_19
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 513
     .line 514
     .line 515
-    invoke-virtual {v0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+    throw v3
 
     .line 516
+    :cond_1a
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 517
     .line 518
-    move-result-object v2
-
     .line 519
-    const v5, 0x7f131e6f
+    throw v3
 
     .line 520
+    :cond_1b
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 521
     .line 522
-    invoke-virtual {v2, v5}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
-
     .line 523
+    throw v3
+
     .line 524
-    .line 525
-    move-result-object v2
-
-    .line 526
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 527
-    .line 528
-    .line 529
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->K0:Landroid/view/ViewStub;
-
-    .line 530
-    .line 531
-    if-eqz v1, :cond_1b
-
-    .line 532
-    .line 533
-    new-instance v2, Lsf6;
-
-    .line 534
-    .line 535
-    const/4 v5, 0x2
-
-    .line 536
-    invoke-direct {v2, v0, v5}, Lsf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
-
-    .line 537
-    .line 538
-    .line 539
-    invoke-virtual {v1, v2}, Landroid/view/ViewStub;->setOnInflateListener(Landroid/view/ViewStub$OnInflateListener;)V
-
-    .line 540
-    .line 541
-    .line 542
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
-
-    .line 543
-    .line 544
-    if-eqz v1, :cond_1a
-
-    .line 545
-    .line 546
-    invoke-virtual {v1, v8}, Landroid/view/View;->setVisibility(I)V
-
-    .line 547
-    .line 548
-    .line 549
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
-
-    .line 550
-    .line 551
-    if-eqz v1, :cond_19
-
-    .line 552
-    .line 553
-    invoke-virtual {v1, v4}, Landroid/view/View;->setClickable(Z)V
-
-    .line 554
-    .line 555
-    .line 556
-    iget-object v1, v0, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->J0:Landroid/widget/TextView;
-
-    .line 557
-    .line 558
-    if-eqz v1, :cond_18
-
-    .line 559
-    .line 560
-    new-instance v2, Lpf6;
-
-    .line 561
-    .line 562
-    const/4 v3, 0x0
-
-    .line 563
-    invoke-direct {v2, v0, v3}, Lpf6;-><init>(Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;I)V
-
-    .line 564
-    .line 565
-    .line 566
-    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 567
-    .line 568
-    .line 569
-    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->V1()Lvf6;
-
-    .line 570
-    .line 571
-    .line 572
-    move-result-object v1
-
-    .line 573
-    invoke-virtual {v1}, Lvf6;->c3()V
-
-    .line 574
-    .line 575
-    .line 576
-    invoke-virtual {v0}, Lcom/snap/discoverfeed/ui/main/fragment/DiscoverFeedManagementFragment;->W1()V
-
-    .line 577
-    .line 578
-    .line 579
-    return-void
-
-    .line 580
-    :cond_18
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 581
-    .line 582
-    .line 583
-    throw v3
-
-    .line 584
-    :cond_19
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 585
-    .line 586
-    .line 587
-    throw v3
-
-    .line 588
-    :cond_1a
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 589
-    .line 590
-    .line 591
-    throw v3
-
-    .line 592
-    :cond_1b
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 593
-    .line 594
-    .line 595
-    throw v3
-
-    .line 596
     :cond_1c
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 597
-    .line 598
-    .line 599
+    .line 525
+    .line 526
+    .line 527
     throw v3
 
-    .line 600
+    .line 528
     :cond_1d
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 601
-    .line 602
-    .line 603
-    throw v3
-
-    .line 604
-    :cond_1e
-    :goto_1
+    :goto_0
     return-void
 .end method

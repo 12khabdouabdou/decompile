@@ -1,42 +1,45 @@
 .class public final LKh2;
-.super Ljava/lang/Object;
+.super LiCc;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/Comparator;
 
-
-# virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+# direct methods
+.method public constructor <init>()V
+    .locals 7
 
     .line 1
-    check-cast p1, LJh2;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    check-cast p2, LJh2;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 3
     .line 4
     .line 5
-    invoke-virtual {p1}, LJh2;->b()I
+    move-result-object v3
 
     .line 6
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
     .line 7
     .line 8
-    move-result p1
+    const-string v2, "Canceled"
 
     .line 9
-    invoke-virtual {p2}, LJh2;->b()I
-
     .line 10
+    move-object v4, v3
+
     .line 11
+    move-object v6, v3
+
     .line 12
-    move-result p2
+    move-object v1, p0
 
     .line 13
-    sub-int/2addr p1, p2
+    invoke-direct/range {v1 .. v6}, LiCc;-><init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Boolean;Ljava/lang/Integer;)V
 
     .line 14
-    return p1
+    .line 15
+    .line 16
+    return-void
 .end method

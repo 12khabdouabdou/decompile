@@ -9,5 +9,5 @@
 
 
 # virtual methods
-.method public abstract g()Z
+.method public abstract f()Z
 .end method

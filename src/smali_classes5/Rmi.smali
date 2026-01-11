@@ -2,16 +2,15 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lz6b;
-
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:LQS9;
+
+.field public final b:LnJe;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(LQS9;LyPf;)V
     .locals 0
 
     .line 1
@@ -20,127 +19,168 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LRmi;->a:Ljava/lang/String;
+    iput-object p1, p0, LRmi;->a:LQS9;
 
     .line 5
     .line 6
+    sget-object p1, Lvf9;->Z:Lvf9;
+
+    .line 7
+    .line 8
+    check-cast p2, LTT5;
+
+    .line 9
+    .line 10
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p2, "StoryServiceConfigProviderImpl"
+
+    .line 14
+    .line 15
+    invoke-static {p1, p2}, LTT5;->b(Lrp0;Ljava/lang/String;)LnJe;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    iput-object p1, p0, LRmi;->b:LnJe;
+
+    .line 20
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final a()Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
+    sget-object v0, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    iget-object v0, p0, LRmi;->a:LQS9;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LRmi;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result-object v1
 
     .line 9
-    .line 10
-    return v2
+    check-cast v1, LOF3;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, LRmi;
+    sget-object v2, LY7h;->i0:LY7h;
 
     .line 12
     .line 13
-    iget-object v1, p0, LRmi;->a:Ljava/lang/String;
+    invoke-interface {v1, v2}, LOF3;->j(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 14
     .line 15
-    iget-object p1, p1, LRmi;->a:Ljava/lang/String;
-
     .line 16
+    move-result-object v1
+
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 18
     .line 19
     .line 20
-    move-result p1
+    move-result-object v2
 
     .line 21
-    if-nez p1, :cond_2
+    check-cast v2, LOF3;
 
     .line 22
     .line 23
-    return v2
+    sget-object v3, LY7h;->w0:LY7h;
 
     .line 24
-    :cond_2
-    return v0
-.end method
+    .line 25
+    invoke-interface {v2, v3}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
-.method public final hashCode()I
-    .locals 1
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v2
 
-    .line 1
-    iget-object v0, p0, LRmi;->a:Ljava/lang/String;
+    .line 29
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "TargetChatLocationContext(id="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LRmi;->a:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
+    .line 30
+    .line 31
+    .line 32
     move-result-object v0
 
-    .line 16
-    return-object v0
+    .line 33
+    check-cast v0, LOF3;
+
+    .line 34
+    .line 35
+    sget-object v3, LY7h;->j0:LY7h;
+
+    .line 36
+    .line 37
+    invoke-interface {v0, v3}, LOF3;->n(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    new-instance v3, Lqeg;
+
+    .line 42
+    .line 43
+    const/4 v4, 0x3
+
+    .line 44
+    invoke-direct {v3, v4}, Lqeg;-><init>(I)V
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-static {v1, v2, v0, v3}, Lio/reactivex/rxjava3/core/Single;->H(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v0
+
+    .line 51
+    iget-object v1, p0, LRmi;->b:LnJe;
+
+    .line 52
+    .line 53
+    invoke-virtual {v1}, LnJe;->k()LA36;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v1
+
+    .line 57
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 58
+    .line 59
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 60
+    .line 61
+    .line 62
+    return-object v2
 .end method

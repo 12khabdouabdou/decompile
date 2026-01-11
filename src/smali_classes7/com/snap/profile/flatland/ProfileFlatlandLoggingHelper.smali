@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LK5e;
+    proxyClass = Ljne;
     schema = "\'blizzardLogger\':r:\'[0]\',\'profileSessionId\':s,\'friendshipStatus\':f|m|(): g<c>:\'[1]\'<s>"
     typeReferences = {
         Lcom/snap/composer/blizzard/Logging;,

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFK2;
+    proxyClass = LlN2;
     schema = "\'logMessageInitialized\':f|m|(s, s),\'logMessageLoadStarted\':f|m|(s, s),\'logMessageLoadEnded\':f|m|(s, s),\'logMessageLoadFailed\':f|m|(s, s),\'logMessageMediaDisplayed\':f|m|(s, s, a<r:\'[0]\'>)"
     typeReferences = {
         Lcom/snap/modules/chat_common/ChatMediaContentIdentifier;

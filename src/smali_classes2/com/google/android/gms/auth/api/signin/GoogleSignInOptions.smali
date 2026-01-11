@@ -1,9 +1,9 @@
 .class public Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
-.super LI3;
+.super Le4;
 .source "SourceFile"
 
 # interfaces
-.implements LWT;
+.implements LdW;
 .implements Lcom/google/android/gms/common/internal/ReflectedParcelable;
 
 
@@ -26,7 +26,7 @@
 
 .field public static final k0:Lcom/google/android/gms/common/api/Scope;
 
-.field public static final l0:LR6k;
+.field public static final l0:LBUj;
 
 
 # instance fields
@@ -371,39 +371,38 @@
     .line 156
     .line 157
     .line 158
-    new-instance v0, LWwi;
+    new-instance v0, LKwk;
 
     .line 159
     .line 160
-    const/16 v1, 0x19
+    const/4 v1, 0x4
 
     .line 161
-    .line 162
-    invoke-direct {v0, v1}, LWwi;-><init>(I)V
+    invoke-direct {v0, v1}, LKwk;-><init>(I)V
 
+    .line 162
     .line 163
     .line 164
-    .line 165
     sput-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 165
     .line 166
-    .line 167
-    new-instance v0, LR6k;
+    new-instance v0, LBUj;
 
+    .line 167
     .line 168
+    const/4 v1, 0x6
+
     .line 169
-    const/4 v1, 0x0
+    invoke-direct {v0, v1}, LBUj;-><init>(I)V
 
     .line 170
-    invoke-direct {v0, v1}, LR6k;-><init>(I)V
-
     .line 171
     .line 172
-    .line 173
-    sput-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->l0:LR6k;
+    sput-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->l0:LBUj;
 
+    .line 173
     .line 174
-    .line 175
     return-void
 .end method
 
@@ -836,11 +835,11 @@
     move-result-object v1
 
     .line 23
-    check-cast v1, LPy8;
+    check-cast v1, LDF8;
 
     .line 24
     .line 25
-    iget v2, v1, LPy8;->b:I
+    iget v2, v1, LDF8;->b:I
 
     .line 26
     .line 27
@@ -1364,7 +1363,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
+    invoke-static {v0, p1}, LMsi;->X(ILandroid/os/Parcel;)I
 
     .line 4
     .line 5
@@ -1378,7 +1377,7 @@
     const/4 v2, 0x4
 
     .line 9
-    invoke-static {p1, v1, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v1, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 10
     .line 11
@@ -1408,7 +1407,7 @@
     const/4 v3, 0x2
 
     .line 25
-    invoke-static {p1, v3, v1}, Lew8;->Q0(Landroid/os/Parcel;ILjava/util/List;)V
+    invoke-static {p1, v3, v1}, LMsi;->W(Landroid/os/Parcel;ILjava/util/List;)V
 
     .line 26
     .line 27
@@ -1420,12 +1419,12 @@
 
     .line 30
     .line 31
-    invoke-static {p1, v1, v3, p2}, Lew8;->F0(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
+    invoke-static {p1, v1, v3, p2}, LMsi;->R(Landroid/os/Parcel;ILandroid/os/Parcelable;I)V
 
     .line 32
     .line 33
     .line 34
-    invoke-static {p1, v2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, v2, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 35
     .line 36
@@ -1442,7 +1441,7 @@
     const/4 p2, 0x5
 
     .line 43
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, p2, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 44
     .line 45
@@ -1459,7 +1458,7 @@
     const/4 p2, 0x6
 
     .line 52
-    invoke-static {p1, p2, v2}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-static {p1, p2, v2}, LMsi;->Z(Landroid/os/Parcel;II)V
 
     .line 53
     .line 54
@@ -1480,7 +1479,7 @@
 
     .line 62
     .line 63
-    invoke-static {p1, p2, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, p2, v1}, LMsi;->S(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 64
     .line 65
@@ -1493,7 +1492,7 @@
 
     .line 69
     .line 70
-    invoke-static {p1, p2, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, p2, v1}, LMsi;->S(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 71
     .line 72
@@ -1506,7 +1505,7 @@
 
     .line 76
     .line 77
-    invoke-static {p1, v1, p2}, Lew8;->Q0(Landroid/os/Parcel;ILjava/util/List;)V
+    invoke-static {p1, v1, p2}, LMsi;->W(Landroid/os/Parcel;ILjava/util/List;)V
 
     .line 78
     .line 79
@@ -1519,12 +1518,12 @@
 
     .line 83
     .line 84
-    invoke-static {p1, p2, v1}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    invoke-static {p1, p2, v1}, LMsi;->S(Landroid/os/Parcel;ILjava/lang/String;)V
 
     .line 85
     .line 86
     .line 87
-    invoke-static {v0, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
+    invoke-static {v0, p1}, LMsi;->Y(ILandroid/os/Parcel;)V
 
     .line 88
     .line 89

@@ -1,130 +1,153 @@
-.class public final LZ8e;
-.super Ljava/lang/Object;
+.class public final enum LZ8e;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
+# static fields
+.field public static final enum b:LZ8e;
+
+.field public static final enum c:LZ8e;
+
+.field public static final synthetic t:[LZ8e;
+
+
 # instance fields
-.field public final a:Lake;
-
-.field public final b:LrH9;
-
-.field public final c:Lake;
-
-.field public final d:LBre;
-
-.field public final e:Ljava/util/concurrent/ConcurrentHashMap;
-
-.field public final f:Ljava/util/concurrent/ConcurrentHashMap;
-
-.field public final g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public final a:LN6e;
 
 
 # direct methods
-.method public constructor <init>(LrH9;Lake;Lake;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LZ8e;
 
     .line 2
     .line 3
+    sget-object v1, LN6e;->D1:LN6e;
+
     .line 4
-    iput-object p2, p0, LZ8e;->a:Lake;
-
     .line 5
-    .line 6
-    iput-object p1, p0, LZ8e;->b:LrH9;
+    const-string v2, "CAPTION"
 
+    .line 6
     .line 7
+    const/4 v3, 0x0
+
     .line 8
-    iput-object p3, p0, LZ8e;->c:Lake;
+    invoke-direct {v0, v2, v3, v1}, LZ8e;-><init>(Ljava/lang/String;ILN6e;)V
 
     .line 9
     .line 10
-    sget-object p1, LX4e;->Z:LX4e;
-
     .line 11
+    sput-object v0, LZ8e;->b:LZ8e;
+
     .line 12
-    const-string p2, "ProfileSavedAttachmentDecorationHelper"
-
     .line 13
-    .line 14
-    invoke-static {p1, p1, p2}, Lq27;->g(LX4e;LX4e;Ljava/lang/String;)LWm0;
+    new-instance v1, LZ8e;
 
+    .line 14
     .line 15
+    sget-object v2, LN6e;->E1:LN6e;
+
     .line 16
     .line 17
-    move-result-object p1
+    const-string v4, "STICKER"
 
     .line 18
-    new-instance p2, LBre;
-
     .line 19
+    const/4 v5, 0x1
+
     .line 20
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
+    invoke-direct {v1, v4, v5, v2}, LZ8e;-><init>(Ljava/lang/String;ILN6e;)V
 
     .line 21
     .line 22
     .line 23
-    iput-object p2, p0, LZ8e;->d:LBre;
+    sput-object v1, LZ8e;->c:LZ8e;
 
     .line 24
     .line 25
-    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+    const/4 v2, 0x2
 
     .line 26
-    .line 27
-    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+    new-array v2, v2, [LZ8e;
 
+    .line 27
     .line 28
+    aput-object v0, v2, v3
+
     .line 29
     .line 30
-    iput-object p1, p0, LZ8e;->e:Ljava/util/concurrent/ConcurrentHashMap;
+    aput-object v1, v2, v5
 
     .line 31
     .line 32
-    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+    sput-object v2, LZ8e;->t:[LZ8e;
 
     .line 33
     .line 34
-    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
-
-    .line 35
-    .line 36
-    .line 37
-    iput-object p1, p0, LZ8e;->f:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 38
-    .line 39
-    new-instance p2, Lve5;
-
-    .line 40
-    .line 41
-    invoke-static {p1}, LEdb;->u0(Ljava/util/Map;)Ljava/util/Map;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object p1
-
-    .line 45
-    invoke-direct {p2, p1}, Lve5;-><init>(Ljava/util/Map;)V
-
-    .line 46
-    .line 47
-    .line 48
-    new-instance p1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 49
-    .line 50
-    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
-
-    .line 51
-    .line 52
-    .line 53
-    iput-object p1, p0, LZ8e;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 54
-    .line 55
     return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ILN6e;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p3, p0, LZ8e;->a:LN6e;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LZ8e;
+    .locals 1
+
+    .line 1
+    const-class v0, LZ8e;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LZ8e;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[LZ8e;
+    .locals 1
+
+    .line 1
+    sget-object v0, LZ8e;->t:[LZ8e;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [LZ8e;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method

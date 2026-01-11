@@ -1,37 +1,136 @@
 .class public final LmU7;
-.super LWm0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final d:LmU7;
+# instance fields
+.field public final a:LQS9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LQS9;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LmU7;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, Lo19;->Z:Lo19;
+    .line 4
+    iput-object p1, p0, LmU7;->a:LQS9;
+
+    .line 5
+    .line 6
+    sget-object p1, LJ04;->Z:LJ04;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    const-string p1, "FriendProfileAction"
+
+    .line 12
+    .line 13
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;LqC;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 11
+
+    .line 1
+    new-instance v0, LOV7;
+
+    .line 2
+    .line 3
+    new-instance v1, LD78;
 
     .line 4
     .line 5
-    const-string v2, "FriendingSyncer"
+    invoke-direct {v1, p1}, LD78;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    invoke-direct {v0, v1, v2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
-
     .line 8
+    sget-object v2, Lsod;->g0:Lsod;
+
     .line 9
     .line 10
-    sput-object v0, LmU7;->d:LmU7;
+    if-nez p2, :cond_0
 
     .line 11
     .line 12
-    return-void
+    sget-object p2, LqC;->s0:LqC;
+
+    .line 13
+    .line 14
+    :cond_0
+    move-object v5, p2
+
+    .line 15
+    const/4 v8, 0x0
+
+    .line 16
+    const/4 v9, 0x0
+
+    .line 17
+    const/4 v3, 0x0
+
+    .line 18
+    const/4 v4, 0x0
+
+    .line 19
+    const/4 v6, 0x0
+
+    .line 20
+    const/4 v7, 0x0
+
+    .line 21
+    const/16 v10, 0x3ec
+
+    .line 22
+    .line 23
+    invoke-direct/range {v0 .. v10}, LOV7;-><init>(LD78;Lsod;LcWd;Ljava/lang/String;LqC;Ljava/lang/String;LrR9;LZQ7;Lni7;I)V
+
+    .line 24
+    .line 25
+    .line 26
+    iget-object p1, p0, LmU7;->a:LQS9;
+
+    .line 27
+    .line 28
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    check-cast p1, LYmd;
+
+    .line 33
+    .line 34
+    invoke-interface {p1, v0}, LYmd;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    return-object p1
 .end method

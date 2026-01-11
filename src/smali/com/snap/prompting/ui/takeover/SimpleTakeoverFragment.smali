@@ -3,19 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lnqg;
+.implements LwLg;
 
 
 # instance fields
-.field public A0:LqZ8;
+.field public A0:LZ69;
 
-.field public w0:Ljy2;
+.field public w0:LSA2;
 
 .field public x0:I
 
 .field public y0:Lcom/snap/prompting/ui/identity_takeover/IdentityTakeoverView;
 
-.field public z0:LPm9;
+.field public z0:LIv9;
 
 
 # direct methods
@@ -33,11 +33,11 @@
 
 
 # virtual methods
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()Ljy2;
+    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()LSA2;
 
     .line 2
     .line 3
@@ -45,7 +45,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, Ljy2;->C1()V
+    invoke-virtual {v0}, LSA2;->D1()V
 
     .line 6
     .line 7
@@ -53,7 +53,7 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
 
     .line 1
@@ -74,11 +74,11 @@
     .line 8
     .line 9
     .line 10
-    sget-object p2, Lcom/snap/prompting/ui/identity_takeover/IdentityTakeoverView;->Companion:LM19;
+    sget-object p2, Lcom/snap/prompting/ui/identity_takeover/IdentityTakeoverView;->Companion:Lt99;
 
     .line 11
     .line 12
-    iget-object p3, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->A0:LqZ8;
+    iget-object p3, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->A0:LZ69;
 
     .line 13
     .line 14
@@ -89,15 +89,15 @@
 
     .line 16
     .line 17
-    new-instance v1, LK19;
+    new-instance v1, Lr99;
 
     .line 18
     .line 19
-    new-instance v2, Lp6g;
+    new-instance v2, LvJg;
 
     .line 20
     .line 21
-    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()Ljy2;
+    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()LSA2;
 
     .line 22
     .line 23
@@ -105,180 +105,178 @@
     move-result-object v3
 
     .line 25
-    const/16 v4, 0x9
+    const/4 v4, 0x1
 
     .line 26
-    .line 27
-    invoke-direct {v2, v3, v4}, Lp6g;-><init>(Ljy2;I)V
+    invoke-direct {v2, v3, v4}, LvJg;-><init>(LSA2;I)V
 
+    .line 27
     .line 28
     .line 29
+    new-instance v3, LvJg;
+
     .line 30
-    new-instance v3, Lp6g;
-
     .line 31
-    .line 32
-    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()Ljy2;
+    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()LSA2;
 
+    .line 32
     .line 33
     .line 34
-    .line 35
     move-result-object v4
 
+    .line 35
+    const/4 v5, 0x2
+
     .line 36
-    const/16 v5, 0xa
+    invoke-direct {v3, v4, v5}, LvJg;-><init>(LSA2;I)V
 
     .line 37
     .line 38
-    invoke-direct {v3, v4, v5}, Lp6g;-><init>(Ljy2;I)V
-
     .line 39
+    invoke-direct {v1, v2, v3}, Lr99;-><init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+
     .line 40
     .line 41
-    invoke-direct {v1, v2, v3}, LK19;-><init>(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-
     .line 42
+    const/16 v2, 0x18
+
     .line 43
     .line 44
-    const/16 v2, 0x18
+    invoke-static {p2, p3, v1, v0, v2}, Lt99;->a(Lt99;LZ69;Lr99;LvF3;I)Lcom/snap/prompting/ui/identity_takeover/IdentityTakeoverView;
 
     .line 45
     .line 46
-    invoke-static {p2, p3, v1, v0, v2}, LM19;->a(LM19;LqZ8;LK19;LTB3;I)Lcom/snap/prompting/ui/identity_takeover/IdentityTakeoverView;
-
     .line 47
-    .line 48
-    .line 49
     move-result-object p2
 
-    .line 50
+    .line 48
     iput-object p2, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->y0:Lcom/snap/prompting/ui/identity_takeover/IdentityTakeoverView;
+
+    .line 49
+    .line 50
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 51
     .line 52
-    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
     .line 53
+    iget-object p2, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->z0:LIv9;
+
     .line 54
     .line 55
-    iget-object p2, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->z0:LPm9;
+    if-eqz p2, :cond_1
 
     .line 56
     .line 57
-    if-eqz p2, :cond_1
+    invoke-interface {p2}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 58
     .line 59
-    invoke-interface {p2}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
-
     .line 60
-    .line 61
-    .line 62
     move-result-object p2
 
+    .line 61
+    new-instance p3, Lttg;
+
+    .line 62
     .line 63
-    new-instance p3, Lseg;
+    const/16 v1, 0x11
 
     .line 64
     .line 65
-    const/16 v1, 0xc
+    invoke-direct {p3, v1, p0}, Lttg;-><init>(ILjava/lang/Object;)V
 
     .line 66
     .line 67
-    invoke-direct {p3, v1, p0}, Lseg;-><init>(ILjava/lang/Object;)V
-
     .line 68
-    .line 69
-    .line 70
     invoke-virtual {p2, p3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 69
+    .line 70
     .line 71
-    .line 72
-    .line 73
     move-result-object p2
 
+    .line 72
+    sget-object p3, LUPf;->Z:LUPf;
+
+    .line 73
     .line 74
-    sget-object p3, LLwf;->Z:LLwf;
+    iget-object v1, p0, LXPf;->a:Ljava/lang/String;
 
     .line 75
     .line 76
-    iget-object v1, p0, LOwf;->a:Ljava/lang/String;
+    invoke-virtual {p0, p2, p3, v1}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 77
     .line 78
-    invoke-virtual {p0, p2, p3, v1}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
     .line 79
+    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()LSA2;
+
     .line 80
     .line 81
-    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()Ljy2;
-
     .line 82
-    .line 83
-    .line 84
     move-result-object p2
 
-    .line 85
+    .line 83
     iget p3, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->x0:I
+
+    .line 84
+    .line 85
+    if-eqz p3, :cond_0
 
     .line 86
     .line 87
-    if-eqz p3, :cond_0
+    invoke-virtual {p2, p3}, LSA2;->d3(I)V
 
     .line 88
     .line 89
-    invoke-virtual {p2, p3}, Ljy2;->S2(I)V
-
     .line 90
-    .line 91
-    .line 92
     return-object p1
 
-    .line 93
+    .line 91
     :cond_0
     const-string p1, "page"
 
+    .line 92
+    .line 93
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 94
     .line 95
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 96
-    .line 97
-    .line 98
     throw v0
 
-    .line 99
+    .line 97
     :cond_1
     const-string p1, "insetsDetector"
 
+    .line 98
+    .line 99
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 100
     .line 101
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 102
-    .line 103
-    .line 104
     throw v0
 
-    .line 105
+    .line 103
     :cond_2
-    const-string p1, "viewLoader"
+    const-string p1, "runtime"
+
+    .line 104
+    .line 105
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 106
     .line 107
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 108
-    .line 109
-    .line 110
     throw v0
 .end method
 
-.method public final U1()Ljy2;
+.method public final U1()LSA2;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->w0:Ljy2;
+    iget-object v0, p0, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->w0:LSA2;
 
     .line 2
     .line 3
@@ -294,7 +292,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -305,16 +303,16 @@
     throw v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()Ljy2;
+    invoke-virtual {p0}, Lcom/snap/prompting/ui/takeover/SimpleTakeoverFragment;->U1()LSA2;
 
     .line 5
     .line 6
@@ -322,7 +320,7 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1, p0}, LqM0;->O2(Ljava/lang/Object;)V
+    invoke-virtual {p1, p0}, LrP0;->Z2(Ljava/lang/Object;)V
 
     .line 9
     .line 10

@@ -2,203 +2,273 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
+
 
 # instance fields
-.field public final a:F
+.field public final synthetic a:I
 
-.field public final b:I
+.field public final synthetic b:La5f;
 
 
 # direct methods
-.method public constructor <init>(IF)V
+.method public synthetic constructor <init>(La5f;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Ljbb;->a:I
+
+    iput-object p1, p0, Ljbb;->b:La5f;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput p2, p0, Ljbb;->a:F
-
-    .line 5
-    .line 6
-    iput p1, p0, Ljbb;->b:I
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    if-ne p0, p1, :cond_0
+    iget-object v1, p0, Ljbb;->b:La5f;
 
     .line 3
     .line 4
-    return v0
+    iget v2, p0, Ljbb;->a:I
 
     .line 5
-    :cond_0
-    instance-of v1, p1, Ljbb;
-
     .line 6
+    packed-switch v2, :pswitch_data_0
+
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
-    .line 10
-    return v2
+    check-cast p1, Ljava/lang/Boolean;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, Ljbb;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 12
     .line 13
-    iget v1, p1, Ljbb;->a:F
-
     .line 14
+    new-instance p1, LUM8;
+
     .line 15
-    iget v3, p0, Ljbb;->a:F
-
     .line 16
-    .line 17
-    invoke-static {v3, v1}, Ljava/lang/Float;->compare(FF)I
+    invoke-direct {p1}, LUM8;-><init>()V
 
+    .line 17
     .line 18
     .line 19
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 20
+    .line 21
+    .line 22
+    return-object p1
+
+    .line 23
+    :pswitch_0
+    check-cast p1, Ljava/lang/String;
+
+    .line 24
+    .line 25
+    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+
+    .line 26
+    .line 27
+    .line 28
+    move-result v2
+
+    .line 29
+    const v3, -0x7119e7c5
+
+    .line 30
+    .line 31
+    .line 32
+    if-eq v2, v3, :cond_5
+
+    .line 33
+    .line 34
+    const-string v3, "https://ms.sc-jpl.com"
+
+    .line 35
+    .line 36
+    if-eqz v2, :cond_3
+
+    .line 37
+    .line 38
+    const v1, 0x18415
+
+    .line 39
+    .line 40
+    .line 41
+    if-eq v2, v1, :cond_1
+
+    .line 42
+    .line 43
+    const v1, 0x687cf0b9
+
+    .line 44
+    .line 45
+    .line 46
+    if-eq v2, v1, :cond_0
+
+    .line 47
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :cond_0
+    const-string v1, "production"
+
+    .line 50
+    .line 51
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 52
+    .line 53
+    .line 54
     move-result v1
 
-    .line 21
-    if-eqz v1, :cond_2
+    .line 55
+    if-nez v1, :cond_7
 
-    .line 22
-    .line 23
-    return v2
+    .line 56
+    .line 57
+    goto :goto_0
 
-    .line 24
+    .line 58
+    :cond_1
+    const-string v1, "dev"
+
+    .line 59
+    .line 60
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v1
+
+    .line 64
+    if-nez v1, :cond_2
+
+    .line 65
+    .line 66
+    goto :goto_0
+
+    .line 67
     :cond_2
-    iget v1, p0, Ljbb;->b:I
+    const-string v3, "https://devms.sc-jpl-internal.com"
 
-    .line 25
-    .line 26
-    iget p1, p1, Ljbb;->b:I
+    .line 68
+    .line 69
+    goto :goto_1
 
-    .line 27
-    .line 28
-    if-eq v1, p1, :cond_3
-
-    .line 29
-    .line 30
-    return v2
-
-    .line 31
+    .line 70
     :cond_3
-    return v0
-.end method
+    const-string v2, ""
 
-.method public final hashCode()I
-    .locals 2
+    .line 71
+    .line 72
+    invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    .line 1
-    iget v0, p0, Ljbb;->a:F
+    .line 73
+    .line 74
+    .line 75
+    move-result v2
 
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+    .line 76
+    if-nez v2, :cond_4
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 77
+    .line 78
+    goto :goto_0
 
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    .line 79
+    :cond_4
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 8
-    .line 9
-    iget v1, p0, Ljbb;->b:I
+    .line 80
+    .line 81
+    .line 82
+    goto :goto_1
 
-    .line 10
-    .line 11
-    add-int/2addr v0, v1
+    .line 83
+    :cond_5
+    const-string v1, "staging"
 
-    .line 12
-    return v0
-.end method
+    .line 84
+    .line 85
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    .line 86
+    .line 87
+    .line 88
+    move-result v1
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 89
+    if-nez v1, :cond_6
 
-    .line 2
-    .line 3
-    const-string v1, "Weather(temperatureF="
+    .line 90
+    .line 91
+    :goto_0
+    new-array v1, v0, [Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 92
+    .line 93
+    const/4 v2, 0x0
 
-    .line 6
-    .line 7
-    .line 8
-    iget v1, p0, Ljbb;->a:F
+    .line 94
+    aput-object p1, v1, v2
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
+    .line 95
+    .line 96
+    invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", condition="
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p1
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 100
+    const-string v0, "https://%s.sc-jpl-internal.com"
 
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, Ljbb;->b:I
+    .line 101
+    .line 102
+    invoke-static {v0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    .line 103
+    .line 104
+    .line 105
+    move-result-object v3
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
+    .line 106
+    goto :goto_1
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 107
+    :cond_6
+    const-string v3, "https://ms-staging.sc-jpl.com"
 
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 108
+    .line 109
+    :cond_7
+    :goto_1
+    return-object v3
 
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
+    .line 110
+    nop
 
-    .line 32
-    return-object v0
+    .line 111
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

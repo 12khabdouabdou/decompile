@@ -1,288 +1,358 @@
-.class public final LXHg;
-.super LYHg;
+.class public LXHg;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# instance fields
-.field public final a:LqTg;
-
-.field public final b:J
-
-.field public final c:J
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
+.implements LRtb;
+.implements Lio/reactivex/rxjava3/functions/Function5;
 
 
 # direct methods
-.method public constructor <init>(LqTg;JJ)V
-    .locals 0
+.method public static a(LBpa;)Landroid/media/MediaCodec;
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iget-object v0, p0, LBpa;->c:Ljava/lang/Object;
 
     .line 2
     .line 3
+    check-cast v0, LXtb;
+
     .line 4
-    iput-object p1, p0, LXHg;->a:LqTg;
-
     .line 5
-    .line 6
-    iput-wide p2, p0, LXHg;->b:J
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 6
     .line 7
     .line 8
-    iput-wide p4, p0, LXHg;->c:J
+    iget-object p0, p0, LBpa;->c:Ljava/lang/Object;
 
     .line 9
     .line 10
-    return-void
+    check-cast p0, LXtb;
+
+    .line 11
+    .line 12
+    iget-object p0, p0, LXtb;->a:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    invoke-static {}, LcGk;->b()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    :try_start_0
+    invoke-static {p0}, Landroid/media/MediaCodec;->createByCodecName(Ljava/lang/String;)Landroid/media/MediaCodec;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    invoke-static {v0}, LcGk;->d(I)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-object p0
+
+    .line 26
+    :catchall_0
+    move-exception p0
+
+    .line 27
+    invoke-static {v0}, LcGk;->d(I)V
+
+    .line 28
+    .line 29
+    .line 30
+    throw p0
+.end method
+
+.method public static b()LXHg;
+    .locals 1
+
+    .line 1
+    new-instance v0, LXHg;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()LqTg;
-    .locals 1
+.method public apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LXHg;->a:LqTg;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 2
     .line 3
-    return-object v0
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/single/SingleNever;->a:Lio/reactivex/rxjava3/internal/operators/single/SingleNever;
+
+    .line 4
+    .line 5
+    return-object p1
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public c()V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    invoke-static {}, LJ/N;->MGVAvp19()V
 
     .line 2
-    if-ne p0, p1, :cond_0
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public f(LBpa;)LStb;
+    .locals 5
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    :try_start_0
+    invoke-static {p1}, LXHg;->a(LBpa;)Landroid/media/MediaCodec;
 
     .line 3
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LXHg;
+    move-result-object v0
 
     .line 6
+    invoke-static {}, LcGk;->b()I
+
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
+    move-result v1
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 10
-    return v2
+    :try_start_1
+    iget-object v2, p1, LBpa;->b:Ljava/lang/Object;
 
     .line 11
-    :cond_1
-    check-cast p1, LXHg;
-
     .line 12
+    check-cast v2, Landroid/media/MediaFormat;
+
     .line 13
-    iget-object v1, p1, LXHg;->a:LqTg;
-
     .line 14
+    iget-object v3, p1, LBpa;->X:Ljava/lang/Object;
+
     .line 15
-    iget-object v3, p0, LXHg;->a:LqTg;
-
     .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    check-cast v3, Landroid/view/Surface;
 
+    .line 17
     .line 18
+    iget-object p1, p1, LBpa;->Y:Ljava/lang/Object;
+
     .line 19
     .line 20
-    move-result v1
+    check-cast p1, Landroid/media/MediaCrypto;
 
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
+    const/4 v4, 0x0
+
     .line 23
-    return v2
+    invoke-virtual {v0, v2, v3, p1, v4}, Landroid/media/MediaCodec;->configure(Landroid/media/MediaFormat;Landroid/view/Surface;Landroid/media/MediaCrypto;I)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 24
-    :cond_2
-    iget-wide v3, p0, LXHg;->b:J
-
     .line 25
     .line 26
-    iget-wide v5, p1, LXHg;->b:J
+    :try_start_2
+    invoke-static {v1}, LcGk;->d(I)V
 
     .line 27
     .line 28
-    cmp-long v1, v3, v5
-
     .line 29
-    .line 30
-    if-eqz v1, :cond_3
+    invoke-static {}, LcGk;->b()I
 
+    .line 30
     .line 31
     .line 32
-    return v2
+    move-result p1
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
+    .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_0
 
     .line 33
-    :cond_3
-    iget-wide v3, p0, LXHg;->c:J
+    :try_start_3
+    invoke-virtual {v0}, Landroid/media/MediaCodec;->start()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     .line 34
     .line 35
-    iget-wide v5, p1, LXHg;->c:J
-
     .line 36
-    .line 37
-    cmp-long p1, v3, v5
+    :try_start_4
+    invoke-static {p1}, LcGk;->d(I)V
 
+    .line 37
     .line 38
     .line 39
-    if-eqz p1, :cond_4
+    new-instance p1, LAyi;
 
     .line 40
     .line 41
-    return v2
+    invoke-direct {p1, v0}, LAyi;-><init>(Landroid/media/MediaCodec;)V
 
     .line 42
-    :cond_4
-    return v0
+    .line 43
+    .line 44
+    return-object p1
+
+    .line 45
+    :catch_0
+    move-exception p1
+
+    .line 46
+    goto :goto_0
+
+    .line 47
+    :catch_1
+    move-exception p1
+
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :catchall_0
+    move-exception v1
+
+    .line 50
+    invoke-static {p1}, LcGk;->d(I)V
+
+    .line 51
+    .line 52
+    .line 53
+    throw v1
+
+    .line 54
+    :catchall_1
+    move-exception p1
+
+    .line 55
+    invoke-static {v1}, LcGk;->d(I)V
+
+    .line 56
+    .line 57
+    .line 58
+    throw p1
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
+    .catch Ljava/lang/RuntimeException; {:try_start_4 .. :try_end_4} :catch_0
+
+    .line 59
+    :goto_0
+    if-eqz v0, :cond_0
+
+    .line 60
+    .line 61
+    invoke-virtual {v0}, Landroid/media/MediaCodec;->release()V
+
+    .line 62
+    .line 63
+    .line 64
+    :cond_0
+    throw p1
 .end method
 
-.method public final hashCode()I
+.method public o(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
 
     .line 1
-    iget-object v0, p0, LXHg;->a:LqTg;
+    move-object v5, p5
 
     .line 2
+    check-cast v5, LW7i;
+
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
     .line 4
+    move-object v4, p4
+
     .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-wide v1, p0, LXHg;->b:J
-
-    .line 10
-    .line 11
-    const/16 v3, 0x20
-
-    .line 12
-    .line 13
-    ushr-long v4, v1, v3
-
-    .line 14
-    .line 15
-    xor-long/2addr v1, v4
-
-    .line 16
-    long-to-int v2, v1
-
-    .line 17
-    add-int/2addr v0, v2
-
-    .line 18
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 19
-    .line 20
-    iget-wide v1, p0, LXHg;->c:J
-
-    .line 21
-    .line 22
-    ushr-long v3, v1, v3
-
-    .line 23
-    .line 24
-    xor-long/2addr v1, v3
-
-    .line 25
-    long-to-int v2, v1
-
-    .line 26
-    add-int/2addr v0, v2
-
-    .line 27
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "SnapViewEvent(reportingInfo="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    check-cast v4, LDOj;
 
     .line 6
     .line 7
-    .line 8
-    iget-object v1, p0, LXHg;->a:LqTg;
+    check-cast p3, Lmid;
 
+    .line 8
     .line 9
+    move-object v2, p2
+
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    check-cast v2, LFOj;
 
     .line 11
     .line 12
+    check-cast p1, Lmid;
+
     .line 13
-    const-string v1, ", startViewTimeMs="
-
     .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, LEOj;
 
+    .line 15
     .line 16
+    invoke-virtual {p1}, Lmid;->i()Ljava/lang/Object;
+
     .line 17
     .line 18
-    iget-wide v1, p0, LXHg;->b:J
-
     .line 19
+    move-result-object p1
+
     .line 20
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    move-object v1, p1
 
     .line 21
+    check-cast v1, LN2g;
+
     .line 22
     .line 23
-    const-string v1, ", endViewTimeMs="
+    invoke-virtual {p3}, Lmid;->i()Ljava/lang/Object;
 
     .line 24
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 26
+    move-result-object p1
+
     .line 27
+    move-object v3, p1
+
     .line 28
-    iget-wide v1, p0, LXHg;->c:J
+    check-cast v3, Lq2g;
 
     .line 29
     .line 30
-    const-string v3, ")"
+    invoke-direct/range {v0 .. v5}, LEOj;-><init>(LN2g;LFOj;Lq2g;LDOj;LW7i;)V
 
     .line 31
     .line 32
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
-
     .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
     return-object v0
 .end method

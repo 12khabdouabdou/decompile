@@ -1,120 +1,146 @@
 .class public final LcVg;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Lcom/snap/mushroom/app/MushroomApplication;
+.field public final synthetic a:I
 
-.field public final b:LDS4;
-
-.field public final c:LDS4;
-
-.field public final d:LBre;
-
-.field public final e:LXfi;
-
-.field public volatile f:Z
-
-.field public volatile g:Z
+.field public final synthetic b:LdVg;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/mushroom/app/MushroomApplication;LDS4;Lnwf;LDS4;LDS4;)V
-    .locals 8
+.method public synthetic constructor <init>(LdVg;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LcVg;->a:I
+
+    iput-object p1, p0, LcVg;->b:LdVg;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget v0, p0, LcVg;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LcVg;->a:Lcom/snap/mushroom/app/MushroomApplication;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LcVg;->b:LDS4;
+    iget-object v0, p0, LcVg;->b:LdVg;
 
     .line 7
     .line 8
-    iput-object p5, p0, LcVg;->c:LDS4;
+    invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
 
     .line 9
     .line 10
-    sget-object p1, LX4e;->Z:LX4e;
-
     .line 11
-    .line 12
-    check-cast p3, LIP5;
+    invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 
+    .line 12
     .line 13
     .line 14
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 15
     .line 16
+    return-object v0
+
     .line 17
-    const-string p2, "SnapcodeDataProvider"
+    :pswitch_0
+    iget-object v0, p0, LcVg;->b:LdVg;
 
     .line 18
     .line 19
-    invoke-static {p1, p2}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
+    invoke-virtual {v0}, LdVg;->E()I
 
     .line 20
     .line 21
     .line 22
-    move-result-object p1
+    move-result v1
 
     .line 23
-    iput-object p1, p0, LcVg;->d:LBre;
+    invoke-virtual {v0}, LdVg;->z()I
 
     .line 24
     .line 25
-    new-instance v0, LUUg;
-
     .line 26
+    move-result v0
+
     .line 27
-    const-class v3, Lbke;
+    sub-int/2addr v1, v0
 
     .line 28
+    div-int/lit8 v1, v1, 0x2
+
     .line 29
-    const-string v4, "get"
-
     .line 30
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 31
-    const/4 v1, 0x0
-
     .line 32
-    const-string v5, "get()Ljava/lang/Object;"
-
     .line 33
+    move-result-object v0
+
     .line 34
-    const/4 v6, 0x0
+    return-object v0
 
     .line 35
-    const/4 v7, 0x6
+    :pswitch_1
+    iget-object v0, p0, LcVg;->b:LdVg;
 
     .line 36
-    move-object v2, p4
-
     .line 37
-    invoke-direct/range {v0 .. v7}, LUUg;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-virtual {v0}, LdVg;->y()I
 
     .line 38
     .line 39
     .line 40
-    new-instance p1, LXfi;
+    move-result v1
 
     .line 41
-    .line 42
-    invoke-direct {p1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-virtual {v0}, LdVg;->C()I
 
+    .line 42
     .line 43
     .line 44
+    move-result v0
+
     .line 45
-    iput-object p1, p0, LcVg;->e:LXfi;
+    sub-int/2addr v1, v0
 
     .line 46
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 47
-    return-void
+    .line 48
+    .line 49
+    move-result-object v0
+
+    .line 50
+    return-object v0
+
+    .line 51
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,10 +1,10 @@
 .class public final La84;
-.super LUVi;
+.super Lhlj;
 .source "SourceFile"
 
 
 # direct methods
-.method public constructor <init>(LAG8;)V
+.method public constructor <init>(LCN8;)V
     .locals 0
 
     .line 1
@@ -18,8 +18,8 @@
 
 
 # virtual methods
-.method public a(LDB9;)LZ74;
-    .locals 5
+.method public a(LUK9;)LX74;
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -27,7 +27,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p1}, LDB9;->C()I
+    invoke-virtual {p1}, LUK9;->D()I
 
     .line 2
     .line 3
@@ -43,7 +43,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p1}, LDB9;->y()V
+    invoke-virtual {p1}, LUK9;->x()V
 
     .line 10
     .line 11
@@ -55,11 +55,11 @@
 
     .line 14
     :cond_0
-    new-instance v0, LZ74;
+    new-instance v0, LX74;
 
     .line 15
     .line 16
-    invoke-direct {v0}, LZ74;-><init>()V
+    invoke-direct {v0}, LX74;-><init>()V
 
     .line 17
     .line 18
@@ -67,17 +67,17 @@
     const/4 v2, 0x1
 
     .line 20
-    iput-boolean v2, p1, LDB9;->b:Z
+    iput-boolean v2, p1, LUK9;->b:Z
 
     .line 21
     .line 22
-    invoke-virtual {p1}, LDB9;->b()V
+    invoke-virtual {p1}, LUK9;->c()V
 
     .line 23
     .line 24
     .line 25
     :goto_0
-    invoke-virtual {p1}, LDB9;->i()Z
+    invoke-virtual {p1}, LUK9;->i()Z
 
     .line 26
     .line 27
@@ -85,11 +85,11 @@
     move-result v2
 
     .line 29
-    if-eqz v2, :cond_7
+    if-eqz v2, :cond_5
 
     .line 30
     .line 31
-    invoke-virtual {p1}, LDB9;->w()Ljava/lang/String;
+    invoke-virtual {p1}, LUK9;->v()Ljava/lang/String;
 
     .line 32
     .line 33
@@ -102,184 +102,146 @@
     .line 36
     .line 37
     .line 38
-    const/16 v3, 0x8
+    const-string v3, "lat"
 
     .line 39
     .line 40
-    const-string v4, "key"
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 41
     .line 42
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 43
-    .line 44
-    .line 45
-    move-result v4
+    move-result v3
 
+    .line 44
+    if-nez v3, :cond_3
+
+    .line 45
     .line 46
-    if-nez v4, :cond_4
+    const-string v3, "long"
 
     .line 47
     .line 48
-    const-string v4, "value"
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 49
     .line 50
-    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 51
-    .line 52
-    .line 53
     move-result v2
 
-    .line 54
+    .line 52
     if-nez v2, :cond_1
+
+    .line 53
+    .line 54
+    invoke-virtual {p1}, LUK9;->I()V
 
     .line 55
     .line 56
-    invoke-virtual {p1}, LDB9;->K()V
-
     .line 57
-    .line 58
-    .line 59
     goto :goto_0
 
-    .line 60
+    .line 58
     :cond_1
-    invoke-virtual {p1}, LDB9;->C()I
+    invoke-virtual {p1}, LUK9;->D()I
 
+    .line 59
+    .line 60
     .line 61
-    .line 62
-    .line 63
     move-result v2
 
-    .line 64
+    .line 62
     if-ne v2, v1, :cond_2
+
+    .line 63
+    .line 64
+    invoke-virtual {p1}, LUK9;->x()V
 
     .line 65
     .line 66
-    invoke-virtual {p1}, LDB9;->y()V
-
     .line 67
-    .line 68
-    .line 69
     goto :goto_0
 
-    .line 70
+    .line 68
     :cond_2
-    if-ne v2, v3, :cond_3
+    invoke-virtual {p1}, LUK9;->o()D
 
+    .line 69
+    .line 70
     .line 71
+    move-result-wide v2
+
     .line 72
-    invoke-virtual {p1}, LDB9;->n()Z
+    invoke-static {v2, v3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 73
     .line 74
     .line 75
-    move-result v2
+    move-result-object v2
 
     .line 76
-    invoke-static {v2}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
+    iput-object v2, v0, LX74;->b:Ljava/lang/Double;
 
     .line 77
     .line 78
+    goto :goto_0
+
     .line 79
-    move-result-object v2
+    :cond_3
+    invoke-virtual {p1}, LUK9;->D()I
 
     .line 80
-    goto :goto_1
-
     .line 81
-    :cond_3
-    invoke-virtual {p1}, LDB9;->A()Ljava/lang/String;
-
     .line 82
-    .line 83
-    .line 84
-    move-result-object v2
+    move-result v2
 
+    .line 83
+    if-ne v2, v1, :cond_4
+
+    .line 84
     .line 85
-    :goto_1
-    iput-object v2, v0, LZ74;->l:Ljava/lang/String;
+    invoke-virtual {p1}, LUK9;->x()V
 
     .line 86
     .line 87
-    goto :goto_0
-
     .line 88
-    :cond_4
-    invoke-virtual {p1}, LDB9;->C()I
+    goto :goto_0
 
     .line 89
+    :cond_4
+    invoke-virtual {p1}, LUK9;->o()D
+
     .line 90
     .line 91
-    move-result v2
-
     .line 92
-    if-ne v2, v1, :cond_5
+    move-result-wide v2
 
     .line 93
-    .line 94
-    invoke-virtual {p1}, LDB9;->y()V
+    invoke-static {v2, v3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
+    .line 94
     .line 95
     .line 96
+    move-result-object v2
+
     .line 97
-    goto :goto_0
+    iput-object v2, v0, LX74;->a:Ljava/lang/Double;
 
     .line 98
-    :cond_5
-    if-ne v2, v3, :cond_6
-
     .line 99
+    goto :goto_0
+
     .line 100
-    invoke-virtual {p1}, LDB9;->n()Z
+    :cond_5
+    invoke-virtual {p1}, LUK9;->g()V
 
     .line 101
     .line 102
     .line 103
-    move-result v2
-
-    .line 104
-    invoke-static {v2}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v2
-
-    .line 108
-    goto :goto_2
-
-    .line 109
-    :cond_6
-    invoke-virtual {p1}, LDB9;->A()Ljava/lang/String;
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-object v2
-
-    .line 113
-    :goto_2
-    iput-object v2, v0, LZ74;->k:Ljava/lang/String;
-
-    .line 114
-    .line 115
-    goto :goto_0
-
-    .line 116
-    :cond_7
-    invoke-virtual {p1}, LDB9;->g()V
-
-    .line 117
-    .line 118
-    .line 119
     return-object v0
 .end method
 
-.method public b(LaC9;LZ74;)V
+.method public b(LrL9;LX74;)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -292,7 +254,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LaC9;->j()LaC9;
+    invoke-virtual {p1}, LrL9;->j()LrL9;
 
     .line 4
     .line 5
@@ -304,16 +266,16 @@
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p1, LaC9;->Y:Z
+    iput-boolean v0, p1, LrL9;->Y:Z
 
     .line 9
     .line 10
-    invoke-virtual {p1}, LaC9;->c()V
+    invoke-virtual {p1}, LrL9;->d()V
 
     .line 11
     .line 12
     .line 13
-    iget-object v0, p2, LZ74;->k:Ljava/lang/String;
+    iget-object v0, p2, LX74;->a:Ljava/lang/Double;
 
     .line 14
     .line 15
@@ -321,26 +283,26 @@
 
     .line 16
     .line 17
-    const-string v0, "key"
+    const-string v0, "lat"
 
     .line 18
     .line 19
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
     .line 20
     .line 21
     .line 22
-    iget-object v0, p2, LZ74;->k:Ljava/lang/String;
+    iget-object v0, p2, LX74;->a:Ljava/lang/Double;
 
     .line 23
     .line 24
-    invoke-virtual {p1, v0}, LaC9;->p(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, v0}, LrL9;->w(Ljava/lang/Number;)V
 
     .line 25
     .line 26
     .line 27
     :cond_1
-    iget-object v0, p2, LZ74;->l:Ljava/lang/String;
+    iget-object v0, p2, LX74;->b:Ljava/lang/Double;
 
     .line 28
     .line 29
@@ -348,26 +310,26 @@
 
     .line 30
     .line 31
-    const-string v0, "value"
+    const-string v0, "long"
 
     .line 32
     .line 33
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, v0}, LrL9;->h(Ljava/lang/String;)LrL9;
 
     .line 34
     .line 35
     .line 36
-    iget-object p2, p2, LZ74;->l:Ljava/lang/String;
+    iget-object p2, p2, LX74;->b:Ljava/lang/Double;
 
     .line 37
     .line 38
-    invoke-virtual {p1, p2}, LaC9;->p(Ljava/lang/String;)LaC9;
+    invoke-virtual {p1, p2}, LrL9;->w(Ljava/lang/Number;)V
 
     .line 39
     .line 40
     .line 41
     :cond_2
-    invoke-virtual {p1}, LaC9;->g()V
+    invoke-virtual {p1}, LrL9;->g()V
 
     .line 42
     .line 43
@@ -375,7 +337,7 @@
     return-void
 .end method
 
-.method public bridge synthetic read(LDB9;)Ljava/lang/Object;
+.method public bridge synthetic read(LUK9;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -384,7 +346,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, La84;->a(LDB9;)LZ74;
+    invoke-virtual {p0, p1}, La84;->a(LUK9;)LX74;
 
     .line 2
     .line 3
@@ -395,7 +357,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic write(LaC9;Ljava/lang/Object;)V
+.method public bridge synthetic write(LrL9;Ljava/lang/Object;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -404,11 +366,11 @@
     .end annotation
 
     .line 1
-    check-cast p2, LZ74;
+    check-cast p2, LX74;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2}, La84;->b(LaC9;LZ74;)V
+    invoke-virtual {p0, p1, p2}, La84;->b(LrL9;LX74;)V
 
     .line 4
     .line 5

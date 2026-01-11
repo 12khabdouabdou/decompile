@@ -1,26 +1,34 @@
 .class public final Lz67;
-.super LA67;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:I
+.field public final a:LB77;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method public synthetic constructor <init>()V
+    .locals 1
+
+    .line 3
+    sget-object v0, LC77;->a:LC77;
+
+    .line 4
+    invoke-direct {p0, v0}, Lz67;-><init>(LB77;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(LB77;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    .line 3
-    .line 4
-    iput p1, p0, Lz67;->a:I
+    iput-object p1, p0, Lz67;->a:LB77;
 
-    .line 5
-    .line 6
     return-void
 .end method
 
@@ -60,21 +68,29 @@
 
     .line 12
     .line 13
-    iget v1, p0, Lz67;->a:I
+    iget-object v1, p0, Lz67;->a:LB77;
 
     .line 14
     .line 15
-    iget p1, p1, Lz67;->a:I
+    iget-object p1, p1, Lz67;->a:LB77;
 
     .line 16
     .line 17
-    if-eq v1, p1, :cond_2
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
     return v2
 
-    .line 20
+    .line 24
     :cond_2
     return v0
 .end method
@@ -83,22 +99,30 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lz67;->a:I
+    iget-object v0, p0, Lz67;->a:LB77;
 
     .line 2
     .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
     return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "FaceCount(faceCount="
+    const-string v1, "Activated(selection="
 
     .line 4
     .line 5
@@ -107,21 +131,31 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Lz67;->a:I
+    iget-object v1, p0, Lz67;->a:LB77;
 
     .line 9
     .line 10
-    const-string v2, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, LEU0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
-
     .line 13
+    const-string v1, ")"
+
     .line 14
     .line 15
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
     return-object v0
 .end method

@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LEB3;
+    proxyClass = LgF3;
     schema = "\'isPlaceFavorited\':f|m|(s): b,\'arePlacesFavorited\':f|m|(a<s>): a<s>,\'getFavoritedPlaceIds\':f|m|(): a<s>,\'getFavoriteChangedObservable\':f|m|(): g<c>:\'[0]\'<r:\'[1]\'>,\'onFavoriteChanged\':f|m|(s, b)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LRb7;
+        LFg7;
     }
 .end annotation
 
@@ -38,7 +38,7 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LRb7;",
+            "LFg7;",
             ">;"
         }
     .end annotation

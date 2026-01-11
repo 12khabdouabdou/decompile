@@ -27,14 +27,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Lqsb;
+    new-instance v0, LSFb;
 
     .line 2
     .line 3
     const/4 v1, 0x2
 
     .line 4
-    invoke-direct {v0, v1}, Lqsb;-><init>(I)V
+    invoke-direct {v0, v1}, LSFb;-><init>(I)V
 
     .line 5
     .line 6

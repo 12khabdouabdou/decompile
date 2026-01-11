@@ -50,7 +50,7 @@
 
 
 # virtual methods
-.method public final m(Lio/reactivex/rxjava3/core/MaybeObserver;)V
+.method public final n(Lio/reactivex/rxjava3/core/MaybeObserver;)V
     .locals 2
 
     .line 1

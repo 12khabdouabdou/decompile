@@ -39,7 +39,7 @@
     invoke-direct {p0, p1, p2, p3}, Lcom/snap/ui/view/RoundedCornerFrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
-    sget-object p3, LCve;->g:[I
+    sget-object p3, LlNe;->g:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -103,15 +103,15 @@
 
     .line 10
     :cond_0
-    new-instance p1, LaM3;
+    new-instance p1, LAP3;
 
-    invoke-direct {p1}, LaM3;-><init>()V
+    invoke-direct {p1}, LAP3;-><init>()V
 
     .line 11
-    invoke-virtual {p1, p3}, LaM3;->s(Ljava/lang/String;)V
+    invoke-virtual {p1, p3}, LAP3;->s(Ljava/lang/String;)V
 
     .line 12
-    iget v1, p1, LaM3;->M:F
+    iget v1, p1, LAP3;->M:F
 
     .line 13
     :goto_0
@@ -203,7 +203,7 @@
     div-float/2addr p2, v0
 
     .line 9
-    invoke-static {p2}, LI0j;->K(F)I
+    invoke-static {p2}, LbS2;->K(F)I
 
     .line 10
     .line 11

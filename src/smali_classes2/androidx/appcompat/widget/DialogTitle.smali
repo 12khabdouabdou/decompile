@@ -106,7 +106,7 @@
     move-result-object v1
 
     .line 36
-    sget-object v2, LOve;->x:[I
+    sget-object v2, LxNe;->x:[I
 
     .line 37
     .line 38

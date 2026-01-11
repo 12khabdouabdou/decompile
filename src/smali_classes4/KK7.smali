@@ -1,82 +1,79 @@
 .class public final LKK7;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'avatarInfos\':a<r:\'[0]\'>,\'maxNumberOfPhotos\':d,\'avatarEntrance\':r<e>:\'[1]\'"
+    typeReferences = {
+        LGK7;,
+        Lcom/snap/forma/FormaTwoDTryonAvatarEntrance;
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field private _avatarEntrance:Lcom/snap/forma/FormaTwoDTryonAvatarEntrance;
 
-.field public final synthetic b:LOK7;
+.field private _avatarInfos:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "LGK7;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private _maxNumberOfPhotos:D
 
 
 # direct methods
-.method public synthetic constructor <init>(LOK7;I)V
+.method public constructor <init>(Ljava/util/List;DLcom/snap/forma/FormaTwoDTryonAvatarEntrance;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "LGK7;",
+            ">;D",
+            "Lcom/snap/forma/FormaTwoDTryonAvatarEntrance;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iput p2, p0, LKK7;->a:I
-
-    iput-object p1, p0, LKK7;->b:LOK7;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LKK7;->_avatarInfos:Ljava/util/List;
+
+    .line 5
+    .line 6
+    iput-wide p2, p0, LKK7;->_maxNumberOfPhotos:D
+
+    .line 7
+    .line 8
+    iput-object p4, p0, LKK7;->_avatarEntrance:Lcom/snap/forma/FormaTwoDTryonAvatarEntrance;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public final a()Lcom/snap/forma/FormaTwoDTryonAvatarEntrance;
     .locals 1
 
     .line 1
-    iget v0, p0, LKK7;->a:I
+    iget-object v0, p0, LKK7;->_avatarEntrance:Lcom/snap/forma/FormaTwoDTryonAvatarEntrance;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 7
-    .line 8
-    iget-object p1, p0, LKK7;->b:LOK7;
-
-    .line 9
-    .line 10
-    iget-object p1, p1, LOK7;->l:Lrn0;
-
-    .line 11
-    .line 12
-    return-void
-
-    .line 13
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 14
-    .line 15
-    iget-object p1, p0, LKK7;->b:LOK7;
-
-    .line 16
-    .line 17
-    iget-object p1, p1, LOK7;->l:Lrn0;
-
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

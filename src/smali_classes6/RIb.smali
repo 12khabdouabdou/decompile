@@ -1,305 +1,280 @@
 .class public final LRIb;
-.super LEP2;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LYIb;
 
 
 # instance fields
-.field public final I0:Lkkb;
+.field public final a:Lcom/snap/composer/memtwo/opera/IPlaylistItemCallback;
 
-.field public final J0:Ljava/util/List;
+.field public final b:LvXg;
 
-.field public final K0:Landroid/net/Uri;
+.field public final c:LbYg;
 
-.field public final L0:Ljava/lang/String;
+.field public final d:Ljava/lang/String;
 
-.field public final M0:I
+.field public final e:LcUh;
 
-.field public final N0:Ljava/lang/String;
+.field public final f:LgP6;
 
-.field public final O0:Z
+.field public final g:J
 
-.field public final P0:LAib;
+.field public final h:LPn3;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LeLj;LLIb;Ljava/lang/String;Ljava/util/LinkedHashMap;ZLFM2;ZZ[BLcom/snapchat/client/messaging/ConversationSubType;Lcom/snapchat/client/messaging/ConversationSubTypeMetadata;)V
-    .locals 20
+.method public constructor <init>(Lu59;LlGb;Lsmj;LOIb;)V
+    .locals 4
 
     .line 1
-    sget-object v2, LFP2;->k0:LFP2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v15, 0x0
-
     .line 4
-    const/16 v18, 0x0
+    invoke-interface {p1}, Lu59;->getCallbacks()Lcom/snap/composer/memtwo/opera/IPlaylistItemCallback;
 
     .line 5
     .line 6
-    const/4 v8, 0x0
-
     .line 7
-    const/4 v9, 0x0
+    move-result-object v0
 
     .line 8
-    const/4 v12, 0x0
+    iput-object v0, p0, LRIb;->a:Lcom/snap/composer/memtwo/opera/IPlaylistItemCallback;
 
     .line 9
-    const/4 v13, 0x0
-
     .line 10
-    const v19, 0x4d980
+    :try_start_0
+    invoke-interface {p1}, Lu59;->getSnapDoc()[B
 
     .line 11
     .line 12
     .line 13
-    move-object/from16 v0, p0
+    move-result-object v0
 
     .line 14
-    .line 15
-    move-object/from16 v1, p1
+    invoke-static {v0}, LvXg;->c([B)LvXg;
 
+    .line 15
     .line 16
     .line 17
-    move-object/from16 v3, p2
+    move-result-object p2
+    :try_end_0
+    .catch LYz9; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 18
+    iput-object p2, p0, LRIb;->b:LvXg;
+
     .line 19
-    move-object/from16 v4, p4
-
     .line 20
+    new-instance p2, LbYg;
+
     .line 21
-    move-object/from16 v5, p5
-
     .line 22
-    .line 23
-    move/from16 v7, p6
+    invoke-interface {p1}, Lu59;->getId()Ljava/lang/String;
 
+    .line 23
     .line 24
     .line 25
-    move-object/from16 v10, p7
+    move-result-object v0
 
     .line 26
+    sget-object v1, LTJb;->Z:LTJb;
+
     .line 27
-    move/from16 v6, p8
-
     .line 28
+    sget-object v2, LLVb;->r:LLVb;
+
     .line 29
-    move/from16 v11, p9
-
     .line 30
+    sget-object v3, Lcom/snapchat/client/mdp_common/MediaContextType;->MEMORIESSNAP:Lcom/snapchat/client/mdp_common/MediaContextType;
+
     .line 31
-    move-object/from16 v14, p10
-
     .line 32
-    .line 33
-    move-object/from16 v16, p11
+    invoke-direct {p2, v0, v1, v2, v3}, LbYg;-><init>(Ljava/lang/String;Lrp0;LWY3;Lcom/snapchat/client/mdp_common/MediaContextType;)V
 
+    .line 33
     .line 34
     .line 35
-    move-object/from16 v17, p12
+    iput-object p2, p0, LRIb;->c:LbYg;
 
     .line 36
     .line 37
-    invoke-direct/range {v0 .. v19}, LEP2;-><init>(Landroid/content/Context;LTIj;LeLj;Ljava/lang/String;Ljava/util/Map;ZZLPua;LDxk;LFM2;ZLvGd;LmGd;[BLjava/lang/String;Lcom/snapchat/client/messaging/ConversationSubType;Lcom/snapchat/client/messaging/ConversationSubTypeMetadata;LlY7;I)V
+    invoke-interface {p1}, Lu59;->getId()Ljava/lang/String;
 
     .line 38
     .line 39
     .line 40
-    move-object/from16 v1, p3
+    move-result-object p2
 
     .line 41
+    iput-object p2, p0, LRIb;->d:Ljava/lang/String;
+
     .line 42
-    iget-object v2, v1, LLIb;->a:Ljava/util/List;
-
     .line 43
+    invoke-static {p3, v0}, LTJb;->g(Lsmj;Ljava/lang/String;)LcUh;
+
     .line 44
-    const/4 v3, 0x0
-
     .line 45
-    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 46
-    .line 47
-    .line 48
-    move-result-object v3
+    move-result-object p2
 
+    .line 47
+    iput-object p2, p0, LRIb;->e:LcUh;
+
+    .line 48
     .line 49
-    check-cast v3, Lkkb;
+    sget-object p2, LgP6;->a:LgP6;
 
     .line 50
     .line 51
-    iput-object v3, v0, LRIb;->I0:Lkkb;
+    iput-object p2, p0, LRIb;->f:LgP6;
 
     .line 52
     .line 53
-    iput-object v2, v0, LRIb;->J0:Ljava/util/List;
+    invoke-interface {p1}, Lu59;->getId()Ljava/lang/String;
 
     .line 54
     .line 55
-    invoke-interface/range {p2 .. p2}, LeLj;->c()Ljava/lang/String;
-
     .line 56
+    move-result-object p1
+
     .line 57
+    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+
     .line 58
-    move-result-object v2
-
     .line 59
-    iget-object v4, v3, Lkkb;->a:Ljava/lang/String;
-
     .line 60
+    move-result p1
+
     .line 61
-    const/4 v5, 0x0
+    int-to-long p1, p1
 
     .line 62
-    const/4 v6, 0x0
+    iput-wide p1, p0, LRIb;->g:J
 
     .line 63
-    const/4 v7, 0x0
-
     .line 64
-    const/16 v8, 0xd
+    iget-object p1, p4, LOIb;->c:LPn3;
 
     .line 65
     .line 66
-    const/16 v9, 0x3c
+    iput-object p1, p0, LRIb;->h:LPn3;
 
     .line 67
     .line 68
-    move-object/from16 p4, v2
+    return-void
 
     .line 69
+    :catch_0
+    move-exception p1
+
     .line 70
-    move-object/from16 p5, v4
+    iget-object p2, p2, LlGb;->b:Ljava/lang/Object;
 
     .line 71
     .line 72
-    move-object/from16 p8, v6
-
-    .line 73
-    .line 74
-    move-object/from16 p6, v7
-
-    .line 75
-    .line 76
-    const/16 p7, 0x0
-
-    .line 77
-    .line 78
-    const/16 p9, 0xd
-
-    .line 79
-    .line 80
-    const/16 p10, 0x3c
-
-    .line 81
-    .line 82
-    invoke-static/range {p4 .. p10}, LOga;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;ZLjava/lang/Integer;II)Landroid/net/Uri;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object v2
-
-    .line 86
-    iput-object v2, v0, LRIb;->K0:Landroid/net/Uri;
-
-    .line 87
-    .line 88
-    iget-object v1, v1, LLIb;->b:Ljava/lang/String;
-
-    .line 89
-    .line 90
-    iput-object v1, v0, LRIb;->L0:Ljava/lang/String;
-
-    .line 91
-    .line 92
-    const/4 v1, 0x1
-
-    .line 93
-    iput v1, v0, LRIb;->M0:I
-
-    .line 94
-    .line 95
-    iget-object v1, v3, Lkkb;->a:Ljava/lang/String;
-
-    .line 96
-    .line 97
-    iput-object v1, v0, LRIb;->N0:Ljava/lang/String;
-
-    .line 98
-    .line 99
-    invoke-virtual {v0}, LEP2;->b0()Z
-
-    .line 100
-    .line 101
-    .line 102
-    move-result v1
-
-    .line 103
-    iput-boolean v1, v0, LRIb;->O0:Z
-
-    .line 104
-    .line 105
-    sget-object v1, LAib;->c:LAib;
-
-    .line 106
-    .line 107
-    iput-object v1, v0, LRIb;->P0:LAib;
-
-    .line 108
-    .line 109
-    return-void
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final F()Z
+.method public final a()Lcrj;
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, LRIb;->O0:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final T()LAib;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LRIb;->P0:LAib;
+    iget-object v0, p0, LRIb;->e:LcUh;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final V()LuSg;
+.method public final b()Ljava/util/List;
     .locals 1
 
     .line 1
-    sget-object v0, LuSg;->c:LuSg;
+    iget-object v0, p0, LRIb;->f:LgP6;
 
     .line 2
     .line 3
-    iget-object v0, p0, LRIb;->I0:Lkkb;
+    return-object v0
+.end method
 
-    .line 4
-    .line 5
-    iget-object v0, v0, Lkkb;->b:Ljava/lang/String;
+.method public final c()LBC9;
+    .locals 1
 
-    .line 6
-    .line 7
-    invoke-static {v0}, LCq9;->f2(Ljava/lang/String;)LuSg;
+    .line 1
+    const/4 v0, 0x0
 
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
+    .line 2
+    return-object v0
+.end method
 
-    .line 11
+.method public final d()LbYg;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LRIb;->c:LbYg;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getCallbacks()Lcom/snap/composer/memtwo/opera/IPlaylistItemCallback;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LRIb;->a:Lcom/snap/composer/memtwo/opera/IPlaylistItemCallback;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getId()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, LRIb;->g:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public final getSnapDoc()LvXg;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LRIb;->b:LvXg;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getSnapId()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LRIb;->d:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final getType()LA9d;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LRIb;->h:LPn3;
+
+    .line 2
+    .line 3
     return-object v0
 .end method

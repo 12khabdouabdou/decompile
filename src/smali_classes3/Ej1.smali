@@ -2,142 +2,99 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
+
 
 # instance fields
-.field public final a:Landroid/net/Uri;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Z
+
+.field public final c:Ljava/lang/String;
+
+.field public final t:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Landroid/net/Uri;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, LEj1;->a:Ljava/lang/String;
+
+    iput-object p2, p0, LEj1;->c:Ljava/lang/String;
+
+    iput-object p3, p0, LEj1;->t:Ljava/lang/String;
+
+    iput-boolean p4, p0, LEj1;->b:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
     .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 3
+    iput-object p1, p0, LEj1;->a:Ljava/lang/String;
+
     .line 4
-    iput-object p1, p0, LEj1;->a:Landroid/net/Uri;
+    iput-boolean p2, p0, LEj1;->b:Z
 
     .line 5
+    iput-object p3, p0, LEj1;->c:Ljava/lang/String;
+
     .line 6
+    iput-object p4, p0, LEj1;->t:Ljava/lang/String;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
 
     .line 1
-    const/4 v0, 0x1
+    move-object v0, p1
 
     .line 2
-    if-ne p0, p1, :cond_0
+    check-cast v0, LHXh;
 
     .line 3
     .line 4
-    return v0
+    sget-object v3, Lapp/aifactory/sdk/api/model/dto/StickerResourcesType;->HIGH_RES:Lapp/aifactory/sdk/api/model/dto/StickerResourcesType;
 
     .line 5
-    :cond_0
-    instance-of v1, p1, LEj1;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    iget-object v2, p0, LEj1;->c:Ljava/lang/String;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    iget-object v4, p0, LEj1;->t:Ljava/lang/String;
 
     .line 9
     .line 10
-    return v2
+    iget-boolean v5, p0, LEj1;->b:Z
 
     .line 11
-    :cond_1
-    check-cast p1, LEj1;
-
     .line 12
+    iget-object v1, p0, LEj1;->a:Ljava/lang/String;
+
     .line 13
-    iget-object v1, p0, LEj1;->a:Landroid/net/Uri;
-
     .line 14
-    .line 15
-    iget-object p1, p1, LEj1;->a:Landroid/net/Uri;
+    invoke-virtual/range {v0 .. v5}, LHXh;->a(Ljava/lang/String;Ljava/lang/String;Lapp/aifactory/sdk/api/model/dto/StickerResourcesType;Ljava/lang/String;Z)Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;
 
+    .line 15
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-result-object p1
 
     .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-nez p1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LEj1;->a:Landroid/net/Uri;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/net/Uri;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "BloopsDiscoverTileInfo(discoverTileUri="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LEj1;->a:Landroid/net/Uri;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, LJV0;->m(Ljava/lang/StringBuilder;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    return-object v0
+    return-object p1
 .end method

@@ -1,44 +1,28 @@
 .class public final Lpo3;
-.super Lan0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LkFc;
 
-# static fields
-.field public static final Z:Lpo3;
+
+# instance fields
+.field public final synthetic a:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Z)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lpo3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, LEy9;->S0:LEy9;
-
     .line 4
+    iput-boolean p1, p0, Lpo3;->a:Z
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/16 v3, 0x1c
-
-    .line 7
-    .line 8
-    const-string v4, "COMMON_PROFILE"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v4, v1, v2, v3}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lpo3;->Z:Lpo3;
-
-    .line 14
-    .line 15
     return-void
 .end method

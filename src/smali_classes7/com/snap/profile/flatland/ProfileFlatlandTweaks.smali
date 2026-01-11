@@ -1,10 +1,10 @@
 .class public final Lcom/snap/profile/flatland/ProfileFlatlandTweaks;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'sceneryEnableDebugToast\':b@?,\'generativeBitmojiBackgroundsEnabled\':b@?,\'generativeBitmojiBackgroundShowMoreEnabled\':b@?,\'renderTrayPlaceholder\':b@?"
     typeReferences = {}

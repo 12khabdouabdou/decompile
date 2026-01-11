@@ -1,0 +1,154 @@
+.class public final LV5i;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:LCBe;
+
+.field public final b:LCBe;
+
+
+# direct methods
+.method public constructor <init>(LCBe;LCBe;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LV5i;->a:LCBe;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LV5i;->b:LCBe;
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    .locals 5
+
+    .line 1
+    sget-object v0, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, LV5i;->b:LCBe;
+
+    .line 4
+    .line 5
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v2
+
+    .line 9
+    check-cast v2, LOF3;
+
+    .line 10
+    .line 11
+    sget-object v3, LK5i;->c1:LK5i;
+
+    .line 12
+    .line 13
+    invoke-interface {v2, v3}, LOF3;->z(LcM3;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v2
+
+    .line 17
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v3
+
+    .line 21
+    check-cast v3, LOF3;
+
+    .line 22
+    .line 23
+    sget-object v4, LK5i;->k1:LK5i;
+
+    .line 24
+    .line 25
+    invoke-interface {v3, v4}, LOF3;->C(LcM3;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v3
+
+    .line 29
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    check-cast v1, LOF3;
+
+    .line 34
+    .line 35
+    sget-object v4, LK5i;->l1:LK5i;
+
+    .line 36
+    .line 37
+    invoke-interface {v1, v4}, LOF3;->D(LcM3;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v1
+
+    .line 41
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-static {v2, v3, v1}, Lio/reactivex/rxjava3/kotlin/Observables;->b(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    new-instance v1, LBPh;
+
+    .line 49
+    .line 50
+    const/4 v2, 0x5
+
+    .line 51
+    invoke-direct {v1, v2, p0}, LBPh;-><init>(ILjava/lang/Object;)V
+
+    .line 52
+    .line 53
+    .line 54
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 55
+    .line 56
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 57
+    .line 58
+    .line 59
+    return-object v2
+.end method

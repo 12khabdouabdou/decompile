@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LnHi;
+    proxyClass = LL6j;
     schema = "\'tokenPackPurchaseObserver\':g<c>:\'[0]\'<r:\'[1]\'>,\'tokenShopGrpcService\':r:\'[2]\',\'tokenBalanceBridgeSubject\':g<c>:\'[0]\'<d@>,\'fetchTokenPackSkuDetails\':f|m|(a<r:\'[3]\'>, f(a<r:\'[4]\'>)),\'orderTokenPack\':f|m|(r:\'[4]\')"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeSubject;,
-        LOGi;,
+        LF6j;,
         Lcom/snap/composer/networking/GrpcServiceProtocol;,
-        LUA3;,
+        LuE3;,
         Lcom/snap/in_app_billing/TokenPackSku;
     }
 .end annotation
@@ -27,7 +27,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LUA3;",
+            "LuE3;",
             ">;",
             "Lkotlin/jvm/functions/Function1;",
             ")V"
@@ -51,7 +51,7 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeSubject<",
-            "LOGi;",
+            "LF6j;",
             ">;"
         }
     .end annotation

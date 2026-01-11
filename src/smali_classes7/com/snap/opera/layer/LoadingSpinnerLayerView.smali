@@ -1,24 +1,24 @@
 .class public final Lcom/snap/opera/layer/LoadingSpinnerLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
 
 # instance fields
-.field public final g:LNua;
+.field public final g:LWGa;
 
 .field public final h:Landroid/widget/FrameLayout;
 
 .field public final i:Landroid/view/ViewGroup;
 
-.field public final j:LW28;
+.field public final j:LTm6;
 
 
 # direct methods
@@ -26,16 +26,16 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, LNua;->e:LNua;
+    sget-object v0, LWGa;->e:LWGa;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->g:LNua;
+    iput-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->g:LWGa;
 
     .line 7
     .line 8
@@ -48,7 +48,7 @@
     .line 11
     .line 12
     .line 13
-    const v1, 0x7f0e03cb
+    const v1, 0x7f0e03ed
 
     .line 14
     .line 15
@@ -69,7 +69,7 @@
 
     .line 23
     .line 24
-    const p1, 0x7f0b0c2e
+    const p1, 0x7f0b0d52
 
     .line 25
     .line 26
@@ -90,16 +90,16 @@
 
     .line 34
     .line 35
-    new-instance v0, LW28;
+    new-instance v0, LTm6;
 
     .line 36
     .line 37
-    invoke-direct {v0, p1}, LW28;-><init>(Landroid/view/ViewGroup;)V
+    invoke-direct {v0, p1}, LTm6;-><init>(Landroid/view/ViewGroup;)V
 
     .line 38
     .line 39
     .line 40
-    iput-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LW28;
+    iput-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LTm6;
 
     .line 41
     .line 42
@@ -109,7 +109,7 @@
     const/4 v1, 0x0
 
     .line 44
-    invoke-virtual {v0, v1, p1}, LW28;->d(FZ)V
+    invoke-virtual {v0, v1, p1}, LTm6;->B(FZ)V
 
     .line 45
     .line 46
@@ -123,7 +123,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->g:LNua;
+    iget-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->g:LWGa;
 
     .line 2
     .line 3
@@ -145,12 +145,12 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, LPG9;->e()V
+    invoke-super {p0}, LoS9;->e()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LW28;
+    iget-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LTm6;
 
     .line 5
     .line 6
@@ -166,16 +166,16 @@
     .locals 2
 
     .line 1
-    invoke-super {p0}, LPG9;->i()V
+    invoke-super {p0}, LoS9;->i()V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LW28;
+    iget-object v0, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LTm6;
 
     .line 5
     .line 6
-    iget-object v1, v0, LW28;->t:Ljava/lang/Object;
+    iget-object v1, v0, LTm6;->t:Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -188,7 +188,7 @@
     .line 11
     .line 12
     .line 13
-    iget-object v0, v0, LW28;->X:Ljava/lang/Object;
+    iget-object v0, v0, LTm6;->X:Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -208,15 +208,15 @@
     .locals 4
 
     .line 1
-    check-cast p1, LNua;
+    check-cast p1, LWGa;
 
     .line 2
     .line 3
-    check-cast p2, LNua;
+    check-cast p2, LWGa;
 
     .line 4
     .line 5
-    iget-boolean v0, p1, LNua;->a:Z
+    iget-boolean v0, p1, LWGa;->a:Z
 
     .line 6
     .line 7
@@ -224,24 +224,24 @@
 
     .line 8
     .line 9
-    invoke-static {v1, v0}, LLZj;->E0(Landroid/view/View;Z)V
+    invoke-static {v1, v0}, LDz9;->p0(Landroid/view/View;Z)V
 
     .line 10
     .line 11
     .line 12
-    iget-boolean v0, p2, LNua;->c:Z
+    iget-boolean v0, p2, LWGa;->c:Z
 
     .line 13
     .line 14
-    iget-object v1, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LW28;
+    iget-object v1, p0, Lcom/snap/opera/layer/LoadingSpinnerLayerView;->j:LTm6;
 
     .line 15
     .line 16
-    iget v2, p1, LNua;->d:F
+    iget v2, p1, LWGa;->d:F
 
     .line 17
     .line 18
-    iget-boolean v3, p1, LNua;->c:Z
+    iget-boolean v3, p1, LWGa;->c:Z
 
     .line 19
     .line 20
@@ -249,7 +249,7 @@
 
     .line 21
     .line 22
-    iget p2, p2, LNua;->d:F
+    iget p2, p2, LWGa;->d:F
 
     .line 23
     .line 24
@@ -265,17 +265,17 @@
 
     .line 29
     :cond_0
-    invoke-virtual {v1, v2, v3}, LW28;->d(FZ)V
+    invoke-virtual {v1, v2, v3}, LTm6;->B(FZ)V
 
     .line 30
     .line 31
     .line 32
     :goto_0
-    iget p1, p1, LNua;->b:I
+    iget p1, p1, LWGa;->b:I
 
     .line 33
     .line 34
-    invoke-virtual {v1, p1}, LW28;->c(I)V
+    invoke-virtual {v1, p1}, LTm6;->A(I)V
 
     .line 35
     .line 36

@@ -1,5 +1,5 @@
 .class public final Lcom/snap/ads/core/lib/adformat/unskippable/CommercialAdUIRefreshView;
-.super LTEj;
+.super Ln4k;
 .source "SourceFile"
 
 
@@ -24,7 +24,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/ads/core/lib/adformat/unskippable/CommercialAdUIRefreshView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/ads/core/lib/adformat/unskippable/CommercialAdUIRefreshView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/ads/core/lib/adformat/unskippable/CommercialAdUIRefreshView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/ads/core/lib/adformat/unskippable/CommercialAdUIRefreshView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -120,14 +120,14 @@
     move-result-object p1
 
     .line 17
-    new-instance v0, LeW;
+    new-instance v0, LkY;
 
     .line 18
     .line 19
-    const/4 v1, 0x4
+    const/4 v1, 0x5
 
     .line 20
-    invoke-direct {v0, v1, p0}, LeW;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LkY;-><init>(ILjava/lang/Object;)V
 
     .line 21
     .line 22
@@ -146,7 +146,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
+    invoke-virtual {p1}, Landroid/animation/Animator;->start()V
 
     .line 32
     .line 33
@@ -159,7 +159,7 @@
 
     .line 36
     .line 37
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -182,12 +182,12 @@
     move-result-object v0
 
     .line 5
-    const v1, 0x7f060469
+    const v1, 0x7f06052b
 
     .line 6
     .line 7
     .line 8
-    invoke-static {v0, v1}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {v0, v1}, LV14;->c(Landroid/content/Context;I)I
 
     .line 9
     .line 10
@@ -224,7 +224,7 @@
     move-result-object v0
 
     .line 27
-    const v1, 0x7f070446
+    const v1, 0x7f07045a
 
     .line 28
     .line 29
@@ -253,7 +253,7 @@
 
     .line 40
     .line 41
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -273,7 +273,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b1a39
+    const v0, 0x7f0b1ba2
 
     .line 5
     .line 6

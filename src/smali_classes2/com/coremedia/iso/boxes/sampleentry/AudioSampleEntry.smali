@@ -167,7 +167,7 @@
 
     .line 37
     .line 38
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 39
     .line 40
@@ -176,7 +176,7 @@
 
     .line 42
     .line 43
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 44
     .line 45
@@ -185,7 +185,7 @@
 
     .line 47
     .line 48
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 49
     .line 50
@@ -206,7 +206,7 @@
 
     .line 58
     .line 59
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 60
     .line 61
@@ -215,7 +215,7 @@
 
     .line 63
     .line 64
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 65
     .line 66
@@ -224,7 +224,7 @@
 
     .line 68
     .line 69
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 70
     .line 71
@@ -233,7 +233,7 @@
 
     .line 73
     .line 74
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 75
     .line 76
@@ -706,7 +706,7 @@
     return-object v0
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -727,7 +727,7 @@
     move-result-object p2
 
     .line 7
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 8
     .line 9
@@ -740,7 +740,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 15
     .line 16
@@ -752,7 +752,7 @@
 
     .line 19
     .line 20
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 21
     .line 22
@@ -764,7 +764,7 @@
 
     .line 25
     .line 26
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 27
     .line 28
@@ -776,7 +776,7 @@
 
     .line 31
     .line 32
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 33
     .line 34
@@ -788,7 +788,7 @@
 
     .line 37
     .line 38
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 39
     .line 40
@@ -800,7 +800,7 @@
 
     .line 43
     .line 44
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 45
     .line 46
@@ -812,7 +812,7 @@
 
     .line 49
     .line 50
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 51
     .line 52
@@ -824,7 +824,7 @@
 
     .line 55
     .line 56
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 57
     .line 58
@@ -836,7 +836,7 @@
 
     .line 61
     .line 62
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 63
     .line 64
@@ -903,7 +903,7 @@
     move-result-object p2
 
     .line 94
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 95
     .line 96
@@ -913,7 +913,7 @@
     .line 98
     .line 99
     .line 100
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 101
     .line 102
@@ -925,7 +925,7 @@
 
     .line 105
     .line 106
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 107
     .line 108
@@ -937,7 +937,7 @@
 
     .line 111
     .line 112
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 113
     .line 114
@@ -949,7 +949,7 @@
 
     .line 117
     .line 118
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 119
     .line 120
@@ -985,7 +985,7 @@
     move-result-object p2
 
     .line 135
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 136
     .line 137
@@ -995,7 +995,7 @@
     .line 139
     .line 140
     .line 141
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 142
     .line 143
@@ -1007,7 +1007,7 @@
 
     .line 146
     .line 147
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 148
     .line 149
@@ -1019,7 +1019,7 @@
 
     .line 152
     .line 153
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 154
     .line 155
@@ -1031,7 +1031,7 @@
 
     .line 158
     .line 159
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 160
     .line 161
@@ -1140,7 +1140,7 @@
     sub-long/2addr p3, v0
 
     .line 207
-    invoke-static {p3, p4}, Lskk;->s(J)I
+    invoke-static {p3, p4}, LXJk;->f(J)I
 
     .line 208
     .line 209
@@ -1156,7 +1156,7 @@
     move-result-object p2
 
     .line 215
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 216
     .line 217
@@ -1170,7 +1170,7 @@
     .line 221
     .line 222
     .line 223
-    invoke-virtual {p0, p1}, Lcom/googlecode/mp4parser/a;->addBox(Lvy1;)V
+    invoke-virtual {p0, p1}, Lcom/googlecode/mp4parser/a;->addBox(LJB1;)V
 
     .line 224
     .line 225
@@ -1222,7 +1222,7 @@
     sub-long/2addr p3, v0
 
     .line 242
-    invoke-virtual {p0, p1, p3, p4, p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->initContainer(LI85;JLwy1;)V
+    invoke-virtual {p0, p1, p3, p4, p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->initContainer(LVe5;JLKB1;)V
 
     .line 243
     .line 244

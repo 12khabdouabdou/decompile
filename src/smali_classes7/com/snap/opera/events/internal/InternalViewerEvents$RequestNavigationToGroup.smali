@@ -1,37 +1,37 @@
 .class public final Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LOXc;
+.field public final b:LJcd;
 
-.field public final c:Lg96;
+.field public final c:Loc6;
 
-.field public final d:LWIj;
+.field public final d:Lu8k;
 
 .field public final e:Z
 
 
 # direct methods
-.method public constructor <init>(LOXc;Lg96;LWIj;Z)V
+.method public constructor <init>(LJcd;Loc6;Lu8k;Z)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LOXc;
+    iput-object p1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LJcd;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Lg96;
+    iput-object p2, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Loc6;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:LWIj;
+    iput-object p3, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:Lu8k;
 
     .line 9
     .line 10
@@ -61,11 +61,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;
 
-    iget-object v0, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LOXc;
+    iget-object v0, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LJcd;
 
-    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LJcd;
 
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -74,18 +74,18 @@
     goto :goto_0
 
     :cond_2
-    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Lg96;
+    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Loc6;
 
-    iget-object v1, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Lg96;
+    iget-object v1, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Loc6;
 
     if-eq v0, v1, :cond_3
 
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:LWIj;
+    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:Lu8k;
 
-    iget-object v1, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:LWIj;
+    iget-object v1, p1, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:Lu8k;
 
     if-eq v0, v1, :cond_4
 
@@ -114,7 +114,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LOXc;
+    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LJcd;
 
     .line 2
     .line 3
@@ -130,7 +130,7 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Lg96;
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Loc6;
 
     .line 10
     .line 11
@@ -149,7 +149,7 @@
 
     .line 17
     .line 18
-    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:LWIj;
+    iget-object v0, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:Lu8k;
 
     .line 19
     .line 20
@@ -212,7 +212,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->b:LJcd;
 
     .line 9
     .line 10
@@ -230,7 +230,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Lg96;
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->c:Loc6;
 
     .line 19
     .line 20
@@ -248,7 +248,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:LWIj;
+    iget-object v1, p0, Lcom/snap/opera/events/internal/InternalViewerEvents$RequestNavigationToGroup;->d:Lu8k;
 
     .line 29
     .line 30
@@ -274,7 +274,7 @@
 
     .line 41
     .line 42
-    invoke-static {v2, v0, v1}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
     .line 43
     .line 44

@@ -1,5 +1,5 @@
 .class public Lcom/google/android/exoplayer2/decoder/VideoDecoderOutputBuffer;
-.super LWd5;
+.super Lqk5;
 .source "SourceFile"
 
 
@@ -20,16 +20,16 @@
 
 .field public decoderPrivate:I
 
-.field public format:LjG7;
+.field public format:LJL7;
 
 .field public height:I
 
 .field public mode:I
 
-.field private final owner:LVd5;
+.field private final owner:Lpk5;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "LVd5;"
+            "Lpk5;"
         }
     .end annotation
 .end field
@@ -44,12 +44,12 @@
 
 
 # direct methods
-.method public constructor <init>(LVd5;)V
+.method public constructor <init>(Lpk5;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LVd5;",
+            "Lpk5;",
             ")V"
         }
     .end annotation
@@ -60,7 +60,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/google/android/exoplayer2/decoder/VideoDecoderOutputBuffer;->owner:LVd5;
+    iput-object p1, p0, Lcom/google/android/exoplayer2/decoder/VideoDecoderOutputBuffer;->owner:Lpk5;
 
     .line 5
     .line 6
@@ -115,7 +115,7 @@
     .locals 0
 
     .line 1
-    iput-wide p1, p0, LWd5;->timeUs:J
+    iput-wide p1, p0, Lqk5;->timeUs:J
 
     .line 2
     .line 3
@@ -143,7 +143,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {p0, p1}, LVz1;->addFlag(I)V
+    invoke-virtual {p0, p1}, LkD1;->addFlag(I)V
 
     .line 16
     .line 17
@@ -567,11 +567,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/exoplayer2/decoder/VideoDecoderOutputBuffer;->owner:LVd5;
+    iget-object v0, p0, Lcom/google/android/exoplayer2/decoder/VideoDecoderOutputBuffer;->owner:Lpk5;
 
     .line 2
     .line 3
-    invoke-interface {v0, p0}, LVd5;->a(LWd5;)V
+    invoke-interface {v0, p0}, Lpk5;->a(Lqk5;)V
 
     .line 4
     .line 5

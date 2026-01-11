@@ -1,41 +1,33 @@
 .class public final LZvc;
-.super Landroid/view/TextureView;
+.super Lbwc;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:Lr1f;
+# static fields
+.field public static final e:LZvc;
 
 
-# virtual methods
-.method public final onMeasure(II)V
-    .locals 0
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iget-object p1, p0, LZvc;->a:Lr1f;
+    new-instance v0, LZvc;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lr1f;->getWidth()I
+    sget-object v1, LFtj;->c2:LFtj;
 
     .line 4
     .line 5
+    invoke-direct {v0, v1}, Lbwc;-><init>(LFtj;)V
+
     .line 6
-    move-result p2
-
     .line 7
-    invoke-virtual {p1}, Lr1f;->getHeight()I
-
     .line 8
+    sput-object v0, LZvc;->e:LZvc;
+
     .line 9
     .line 10
-    move-result p1
-
-    .line 11
-    invoke-virtual {p0, p2, p1}, Landroid/view/View;->setMeasuredDimension(II)V
-
-    .line 12
-    .line 13
-    .line 14
     return-void
 .end method

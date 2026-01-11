@@ -2,342 +2,306 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Landroid/content/Context;
 
-.field public final synthetic b:Lcom/snap/camera/dagger/CameraFragmentImpl;
+.field public final b:Lyzi;
+
+.field public final c:LCBe;
+
+.field public final d:LCBe;
+
+.field public final e:LCBe;
+
+.field public final f:Liu6;
+
+.field public final g:Lnp0;
+
+.field public final h:LJp0;
+
+.field public final i:LnJe;
+
+.field public volatile j:Z
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/snap/camera/dagger/CameraFragmentImpl;I)V
+.method public constructor <init>(Landroid/content/Context;Lyzi;LCBe;LCBe;LCBe;Liu6;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LgX1;->a:I
-
-    iput-object p1, p0, LgX1;->b:Lcom/snap/camera/dagger/CameraFragmentImpl;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LgX1;->a:Landroid/content/Context;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LgX1;->b:Lyzi;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LgX1;->c:LCBe;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LgX1;->d:LCBe;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LgX1;->e:LCBe;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, LgX1;->f:Liu6;
+
+    .line 15
+    .line 16
+    sget-object p1, LVZ1;->Z:LVZ1;
+
+    .line 17
+    .line 18
+    const-string p2, "CameraBIPADisclaimer"
+
+    .line 19
+    .line 20
+    invoke-static {p1, p1, p2}, LJF0;->e(LVZ1;LVZ1;Ljava/lang/String;)Lnp0;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p1
+
+    .line 24
+    iput-object p1, p0, LgX1;->g:Lnp0;
+
+    .line 25
+    .line 26
+    sget-object p2, LJp0;->a:LJp0;
+
+    .line 27
+    .line 28
+    iput-object p2, p0, LgX1;->h:LJp0;
+
+    .line 29
+    .line 30
+    new-instance p2, LnJe;
+
+    .line 31
+    .line 32
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 33
+    .line 34
+    .line 35
+    iput-object p2, p0, LgX1;->i:LnJe;
+
+    .line 36
+    .line 37
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 7
+.method public final a(Lkotlin/jvm/functions/Function0;)V
+    .locals 9
 
     .line 1
-    iget v0, p0, LgX1;->a:I
+    iget-boolean v0, p0, LgX1;->j:Z
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
+    return-void
+
     .line 6
-    check-cast p1, LWW1;
+    :cond_0
+    iget-object v0, p0, LgX1;->d:LCBe;
 
     .line 7
     .line 8
-    iget-object v0, p0, LgX1;->b:Lcom/snap/camera/dagger/CameraFragmentImpl;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 9
     .line 10
-    iget-object v1, v0, Lcom/snap/camera/dagger/CameraFragmentImpl;->y1:Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlattenIterable;
-
     .line 11
+    move-result-object v0
+
     .line 12
-    iget-object v0, v0, Lcom/snap/camera/dagger/CameraFragmentImpl;->c2:LBre;
+    check-cast v0, LlW6;
 
     .line 13
     .line 14
-    if-eqz v0, :cond_0
+    new-instance v1, Lo4d;
 
     .line 15
     .line 16
-    invoke-virtual {v0}, LBre;->d()LF06;
+    invoke-direct {v1}, Lo4d;-><init>()V
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    sget-object v2, Lu4d;->j0:Lu4d;
 
     .line 20
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 21
+    iput-object v2, v1, Lo4d;->p0:Lu4d;
+
     .line 22
     .line 23
-    move-result-object v0
+    sget-object v2, Lr4d;->b:Lr4d;
 
     .line 24
-    new-instance v1, LAK3;
-
     .line 25
+    iput-object v2, v1, Lo4d;->q0:Lr4d;
+
     .line 26
-    const/16 v2, 0x19
-
     .line 27
-    .line 28
-    invoke-direct {v1, v2, p1}, LAK3;-><init>(ILjava/lang/Object;)V
+    invoke-interface {v0, v1}, LlW6;->e(LEV6;)V
 
+    .line 28
     .line 29
     .line 30
+    const/4 v0, 0x1
+
     .line 31
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    iput-boolean v0, p0, LgX1;->j:Z
 
     .line 32
     .line 33
-    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    iget-object v1, p0, LgX1;->c:LCBe;
 
     .line 34
     .line 35
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
+
     .line 36
-    return-object p1
-
     .line 37
-    :cond_0
-    const-string p1, "qualifiedSchedulers"
-
     .line 38
+    move-result-object v1
+
     .line 39
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    check-cast v1, LmGc;
 
     .line 40
     .line 41
-    .line 42
-    const/4 p1, 0x0
+    new-instance v2, LYa6;
 
+    .line 42
     .line 43
-    throw p1
+    iget-object v3, p0, LgX1;->a:Landroid/content/Context;
 
     .line 44
-    :pswitch_0
-    check-cast p1, LnUi;
-
     .line 45
+    iget-object v4, p0, LgX1;->c:LCBe;
+
     .line 46
-    iget-object v0, p1, LnUi;->a:Ljava/lang/Object;
-
     .line 47
+    invoke-interface {v4}, LDBe;->get()Ljava/lang/Object;
+
     .line 48
-    move-object v3, v0
-
     .line 49
-    check-cast v3, Lvhb;
-
     .line 50
+    move-result-object v4
+
     .line 51
-    iget-object v0, p1, LnUi;->b:Ljava/lang/Object;
+    check-cast v4, LmGc;
 
     .line 52
     .line 53
-    move-object v4, v0
+    sget-object v5, LVZ1;->g0:LL4b;
 
     .line 54
-    check-cast v4, LNNf;
-
     .line 55
+    const/4 v6, 0x0
+
     .line 56
-    iget-object p1, p1, LnUi;->c:Ljava/lang/Object;
+    const/4 v7, 0x0
 
     .line 57
-    .line 58
-    move-object v5, p1
+    const/16 v8, 0xf0
 
+    .line 58
     .line 59
-    check-cast v5, LmPf;
+    invoke-direct/range {v2 .. v8}, LYa6;-><init>(Landroid/content/Context;LmGc;LL4b;ZLPjh;I)V
 
     .line 60
     .line 61
-    new-instance v1, LuCb;
-
     .line 62
-    .line 63
-    iget-object v2, p0, LgX1;->b:Lcom/snap/camera/dagger/CameraFragmentImpl;
+    const v3, 0x7f130413
 
+    .line 63
     .line 64
     .line 65
-    const/4 v6, 0x7
+    invoke-virtual {v2, v3}, LYa6;->j(I)V
 
     .line 66
-    invoke-direct/range {v1 .. v6}, LuCb;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
     .line 67
     .line 68
-    .line 69
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
+    new-instance v3, LNR1;
 
+    .line 69
     .line 70
+    const/4 v4, 0x3
+
     .line 71
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
+    invoke-direct {v3, v4, p0}, LNR1;-><init>(ILjava/lang/Object;)V
 
     .line 72
     .line 73
     .line 74
-    return-object p1
+    invoke-virtual {v2, v3}, LYa6;->r(LNR1;)V
 
     .line 75
-    :pswitch_1
-    check-cast p1, Lhad;
-
     .line 76
     .line 77
-    iget-object v0, p1, Lhad;->a:Ljava/lang/Object;
+    new-instance v3, LKN1;
 
     .line 78
     .line 79
-    check-cast v0, Lvhb;
+    invoke-direct {v3, p1, p0}, LKN1;-><init>(Lkotlin/jvm/functions/Function0;LgX1;)V
 
     .line 80
     .line 81
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
-
     .line 82
+    const/16 p1, 0x8
+
     .line 83
-    check-cast p1, LNNf;
-
     .line 84
-    .line 85
-    invoke-virtual {v0}, Lvhb;->c()Lcom/snap/camera/model/MediaTypeConfig;
+    const v4, 0x7f13261b
 
+    .line 85
     .line 86
     .line 87
+    invoke-static {v2, v4, v3, v0, p1}, LYa6;->c(LYa6;ILkotlin/jvm/functions/Function1;ZI)V
+
     .line 88
-    move-result-object v1
-
     .line 89
-    invoke-virtual {v1}, Lcom/snap/camera/model/MediaTypeConfig;->isTimelineMode()Z
-
     .line 90
+    invoke-virtual {v2}, LYa6;->b()LZa6;
+
     .line 91
     .line 92
-    move-result v1
-
     .line 93
-    iget-object v2, p0, LgX1;->b:Lcom/snap/camera/dagger/CameraFragmentImpl;
+    move-result-object p1
 
     .line 94
-    .line 95
-    if-nez v1, :cond_1
+    sget-object v0, LVZ1;->h0:LxFc;
 
+    .line 95
     .line 96
+    const/4 v2, 0x0
+
     .line 97
-    new-instance v1, LnUi;
+    invoke-virtual {v1, p1, v0, v2}, LmGc;->H(LG4b;LyFc;LkFc;)V
 
     .line 98
     .line 99
-    iget-object v2, v2, Lcom/snap/camera/dagger/CameraFragmentImpl;->L1:LeX1;
-
     .line 100
-    .line 101
-    iget-object v2, v2, LeX1;->b:Ljava/lang/Object;
-
-    .line 102
-    .line 103
-    check-cast v2, LW42;
-
-    .line 104
-    .line 105
-    invoke-static {v2}, Lcom/snap/camera/dagger/CameraFragmentImpl;->e2(LPpc;)LmPf;
-
-    .line 106
-    .line 107
-    .line 108
-    move-result-object v2
-
-    .line 109
-    invoke-direct {v1, v0, p1, v2}, LnUi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
-
-    .line 110
-    .line 111
-    .line 112
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
-    .line 113
-    .line 114
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
-    .line 115
-    .line 116
-    .line 117
-    goto :goto_0
-
-    .line 118
-    :cond_1
-    invoke-virtual {v0}, Lvhb;->b()Lio/reactivex/rxjava3/core/Single;
-
-    .line 119
-    .line 120
-    .line 121
-    move-result-object v1
-
-    .line 122
-    new-instance v3, Lyt1;
-
-    .line 123
-    .line 124
-    const/16 v4, 0xb
-
-    .line 125
-    .line 126
-    invoke-direct {v3, v4, v2}, Lyt1;-><init>(ILjava/lang/Object;)V
-
-    .line 127
-    .line 128
-    .line 129
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 130
-    .line 131
-    .line 132
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 133
-    .line 134
-    invoke-direct {v2, v1, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 135
-    .line 136
-    .line 137
-    new-instance v1, Lzu1;
-
-    .line 138
-    .line 139
-    const/16 v3, 0x14
-
-    .line 140
-    .line 141
-    invoke-direct {v1, v0, v3, p1}, Lzu1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 142
-    .line 143
-    .line 144
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
-    .line 145
-    .line 146
-    invoke-direct {p1, v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 147
-    .line 148
-    .line 149
-    :goto_0
-    return-object p1
-
-    .line 150
-    nop
-
-    .line 151
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

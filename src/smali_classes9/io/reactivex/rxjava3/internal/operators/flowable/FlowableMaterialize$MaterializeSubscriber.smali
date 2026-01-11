@@ -141,11 +141,11 @@
     .line 11
     .line 12
     .line 13
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/SinglePostCompleteSubscriber;->a:Lmvi;
 
     .line 14
     .line 15
-    invoke-interface {p1, v0}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {p1, v0}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 16
     .line 17

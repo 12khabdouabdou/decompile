@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LgH9;
+.implements LFS9;
 
 
 # instance fields
@@ -47,11 +47,11 @@
 
 
 # virtual methods
-.method public final A0(LBTe;LHGe;)V
+.method public final F0(Lybf;LqYe;)V
     .locals 2
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -59,7 +59,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -68,14 +68,14 @@
 
     .line 9
     :try_start_0
-    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/LinearLayoutManager;->A0(LBTe;LHGe;)V
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/LinearLayoutManager;->F0(Lybf;LqYe;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 10
     .line 11
     .line 12
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 13
     .line 14
@@ -87,7 +87,7 @@
     move-exception p1
 
     .line 17
-    sget-object p2, LXRg;->b:Lzhi;
+    sget-object p2, LOdh;->b:LtGi;
 
     .line 18
     .line 19
@@ -95,7 +95,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p2, v1}, Lzhi;->o(I)V
+    invoke-virtual {p2, v1}, LtGi;->o(I)V
 
     .line 22
     .line 23
@@ -104,16 +104,16 @@
     throw p1
 .end method
 
-.method public final B0(LHGe;)V
+.method public final G0(LqYe;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->B0(LHGe;)V
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->G0(LqYe;)V
 
     .line 2
     .line 3
     .line 4
-    sget-object p1, Li7j;->a:Li7j;
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 5
     .line 6
@@ -133,11 +133,11 @@
     return-void
 .end method
 
-.method public final E()LxGe;
+.method public final J()LgYe;
     .locals 3
 
     .line 1
-    new-instance v0, LDH5;
+    new-instance v0, LTL5;
 
     .line 2
     .line 3
@@ -147,7 +147,7 @@
     const/4 v2, -0x2
 
     .line 5
-    invoke-direct {v0, v1, v2}, LxGe;-><init>(II)V
+    invoke-direct {v0, v1, v2}, LgYe;-><init>(II)V
 
     .line 6
     .line 7
@@ -155,15 +155,15 @@
     return-object v0
 .end method
 
-.method public final F(Landroid/content/Context;Landroid/util/AttributeSet;)LxGe;
+.method public final K(Landroid/content/Context;Landroid/util/AttributeSet;)LgYe;
     .locals 1
 
     .line 1
-    new-instance v0, LDH5;
+    new-instance v0, LTL5;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, LxGe;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, LgYe;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
     .line 5
@@ -171,15 +171,15 @@
     return-object v0
 .end method
 
-.method public final G(Landroid/view/ViewGroup$LayoutParams;)LxGe;
+.method public final L(Landroid/view/ViewGroup$LayoutParams;)LgYe;
     .locals 1
 
     .line 1
-    new-instance v0, LDH5;
+    new-instance v0, LTL5;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, LxGe;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {v0, p1}, LgYe;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 4
     .line 5
@@ -196,16 +196,7 @@
     return p1
 .end method
 
-.method public final c1()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final f(I)Z
+.method public final h(I)Z
     .locals 0
 
     .line 1
@@ -214,18 +205,27 @@
     return p1
 .end method
 
-.method public final h(I)I
+.method public final h1()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final j(I)I
     .locals 0
 
     .line 1
     return p1
 .end method
 
-.method public final i(Landroidx/recyclerview/widget/RecyclerView;)V
+.method public final k(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1, p0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {p1, p0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 2
     .line 3
@@ -233,7 +233,7 @@
     return-void
 .end method
 
-.method public final l0(Landroid/view/View;)V
+.method public final q0(Landroid/view/View;)V
     .locals 9
 
     .line 1
@@ -241,7 +241,7 @@
 
     .line 2
     .line 3
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 4
     .line 5
@@ -249,7 +249,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 8
     .line 9
@@ -266,7 +266,7 @@
     move-result-object v3
 
     .line 15
-    instance-of v4, v3, LDH5;
+    instance-of v4, v3, LTL5;
 
     .line 16
     .line 17
@@ -277,7 +277,7 @@
 
     .line 19
     .line 20
-    check-cast v3, LDH5;
+    check-cast v3, LTL5;
 
     .line 21
     .line 22
@@ -300,7 +300,7 @@
 
     .line 27
     .line 28
-    iget-object v5, v3, LDH5;->e:Lkotlin/jvm/functions/Function1;
+    iget-object v5, v3, LTL5;->e:Lkotlin/jvm/functions/Function1;
 
     .line 29
     .line 30
@@ -309,14 +309,14 @@
 
     .line 31
     .line 32
-    invoke-super {p0, p1}, LwGe;->l0(Landroid/view/View;)V
+    invoke-super {p0, p1}, LfYe;->q0(Landroid/view/View;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 33
     .line 34
     .line 35
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 36
     .line 37
@@ -326,7 +326,7 @@
     .line 39
     :cond_2
     :try_start_1
-    invoke-virtual {p0, v0, p1}, LwGe;->o(Landroid/graphics/Rect;Landroid/view/View;)V
+    invoke-virtual {p0, v0, p1}, LfYe;->t(Landroid/graphics/Rect;Landroid/view/View;)V
 
     .line 40
     .line 41
@@ -342,15 +342,15 @@
     add-int/2addr v4, v0
 
     .line 47
-    iget v0, p0, LwGe;->p:I
+    iget v0, p0, LfYe;->p:I
 
     .line 48
     .line 49
-    iget v6, p0, LwGe;->n:I
+    iget v6, p0, LfYe;->n:I
 
     .line 50
     .line 51
-    invoke-virtual {p0}, LwGe;->a0()I
+    invoke-virtual {p0}, LfYe;->f0()I
 
     .line 52
     .line 53
@@ -358,7 +358,7 @@
     move-result v7
 
     .line 55
-    invoke-virtual {p0}, LwGe;->X()I
+    invoke-virtual {p0}, LfYe;->c0()I
 
     .line 56
     .line 57
@@ -390,7 +390,7 @@
 
     .line 68
     .line 69
-    invoke-virtual {p0}, Lcom/snap/lenses/explorer/common/DefaultLinearLayoutManager;->q()Z
+    invoke-virtual {p0}, Lcom/snap/lenses/explorer/common/DefaultLinearLayoutManager;->v()Z
 
     .line 70
     .line 71
@@ -398,7 +398,7 @@
     move-result v8
 
     .line 73
-    invoke-static {v0, v6, v7, v4, v8}, LwGe;->J(IIIIZ)I
+    invoke-static {v0, v6, v7, v4, v8}, LfYe;->O(IIIIZ)I
 
     .line 74
     .line 75
@@ -406,7 +406,7 @@
     move-result v0
 
     .line 77
-    iget v4, p0, LwGe;->o:I
+    iget v4, p0, LfYe;->o:I
 
     .line 78
     .line 79
@@ -516,7 +516,7 @@
     .line 124
     .line 125
     .line 126
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 127
     .line 128
@@ -525,7 +525,7 @@
 
     .line 130
     :goto_3
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 131
     .line 132
@@ -533,7 +533,7 @@
 
     .line 133
     .line 134
-    invoke-virtual {v0, v2}, Lzhi;->o(I)V
+    invoke-virtual {v0, v2}, LtGi;->o(I)V
 
     .line 135
     .line 136
@@ -542,11 +542,11 @@
     throw p1
 .end method
 
-.method public final p()Z
+.method public final u()Z
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->p()Z
+    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->u()Z
 
     .line 2
     .line 3
@@ -583,11 +583,11 @@
     return v0
 .end method
 
-.method public final q()Z
+.method public final v()Z
     .locals 1
 
     .line 1
-    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->q()Z
+    invoke-super {p0}, Landroidx/recyclerview/widget/LinearLayoutManager;->v()Z
 
     .line 2
     .line 3
@@ -624,11 +624,11 @@
     return v0
 .end method
 
-.method public final r(LxGe;)Z
+.method public final w(LgYe;)Z
     .locals 0
 
     .line 1
-    instance-of p1, p1, LDH5;
+    instance-of p1, p1, LTL5;
 
     .line 2
     .line 3

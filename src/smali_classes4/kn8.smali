@@ -3,12 +3,8 @@
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/Long;
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -17,138 +13,162 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lkn8;->a:Ljava/lang/Long;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public static a(Lrjg;II)Landroid/net/Uri;
+    .locals 6
 
     .line 1
-    const/4 v0, 0x1
+    const-string v0, "geofilter"
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    const-string v1, "overlay"
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Lkn8;
+    invoke-static {v0, v1}, LyW7;->g(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result-object v0
 
     .line 9
+    invoke-virtual {p0}, Lrjg;->j()Ljava/lang/String;
+
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, Lkn8;
-
     .line 12
+    move-result-object v1
+
     .line 13
-    iget-object v1, p0, Lkn8;->a:Ljava/lang/Long;
+    const-string v2, "OVERLAY_GEOFILTER_ID"
 
     .line 14
     .line 15
-    iget-object p1, p1, Lkn8;->a:Ljava/lang/Long;
+    invoke-virtual {v0, v2, v1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
-    .line 19
-    .line 20
-    move-result p1
+    move-result-object v0
 
+    .line 19
+    const-string v1, "OVERLAY_WIDTH"
+
+    .line 20
     .line 21
-    if-nez p1, :cond_2
+    invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     .line 22
     .line 23
-    return v2
-
     .line 24
-    :cond_2
-    return v0
-.end method
+    move-result-object p1
 
-.method public final hashCode()I
-    .locals 1
+    .line 25
+    invoke-virtual {v0, v1, p1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    .line 1
-    iget-object v0, p0, Lkn8;->a:Ljava/lang/Long;
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p1
 
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
+    .line 29
+    const-string v0, "OVERLAY_HEIGHT"
 
-    .line 4
-    .line 5
-    const/4 v0, 0x0
+    .line 30
+    .line 31
+    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
-    .line 6
-    return v0
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p2
 
-    .line 7
+    .line 35
+    invoke-virtual {p1, v0, p2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p1
+
+    .line 39
+    invoke-virtual {p0}, Lrjg;->e()Ljava/util/List;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p0
+
+    .line 43
+    if-eqz p0, :cond_0
+
+    .line 44
+    .line 45
+    move-object v0, p0
+
+    .line 46
+    check-cast v0, Ljava/lang/Iterable;
+
+    .line 47
+    .line 48
+    sget-object v4, LG28;->t0:LG28;
+
+    .line 49
+    .line 50
+    const/4 v2, 0x0
+
+    .line 51
+    const/4 v3, 0x0
+
+    .line 52
+    const/4 v1, 0x0
+
+    .line 53
+    const/16 v5, 0x1f
+
+    .line 54
+    .line 55
+    invoke-static/range {v0 .. v5}, Llh3;->M3(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p0
+
+    .line 59
+    if-nez p0, :cond_1
+
+    .line 60
+    .line 61
     :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    const-string p0, ""
 
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
+    .line 62
+    .line 63
+    :cond_1
+    const-string p2, "DYNAMIC_TEXT"
 
-    .line 11
-    return v0
-.end method
+    .line 64
+    .line 65
+    invoke-virtual {p1, p2, p0}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+    .line 66
+    .line 67
+    .line 68
+    move-result-object p0
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 69
+    invoke-virtual {p0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
-    .line 2
-    .line 3
-    const-string v1, "GetMobStoryMetadataMembersCount(expr="
+    .line 70
+    .line 71
+    .line 72
+    move-result-object p0
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lkn8;->a:Ljava/lang/Long;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, LsSb;->f(Ljava/lang/StringBuilder;Ljava/lang/Long;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    return-object v0
+    .line 73
+    return-object p0
 .end method

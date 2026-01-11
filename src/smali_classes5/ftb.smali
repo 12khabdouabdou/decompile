@@ -1,316 +1,172 @@
-.class public abstract synthetic Lftb;
+.class public final Lftb;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:LXdb;
+
+.field public final b:Lulb;
+
+.field public final c:LNUh;
+
+.field public final d:LJp0;
+
+.field public e:Landroidx/constraintlayout/widget/ConstraintLayout;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LXdb;Lulb;LNUh;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, LSPg;->values()[LSPg;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, Lftb;->a:LXdb;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p2, p0, Lftb;->b:Lulb;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, LSPg;->g0:LSPg;
+    iput-object p3, p0, Lftb;->c:LNUh;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    sget-object p1, Lqbb;->Z:Lqbb;
 
     .line 11
     .line 12
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 13
-    move-result v1
-
     .line 14
-    const/4 v2, 0x1
-
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    const-string p1, "MeTrayTopBar"
 
     .line 16
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, LSPg;->b:LSPg;
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    .line 20
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 21
+    .line 22
+    iput-object p1, p0, Lftb;->d:LJp0;
+
+    .line 23
+    .line 24
+    return-void
+.end method
+
+
+# virtual methods
+.method public final declared-synchronized a()Landroidx/constraintlayout/widget/ConstraintLayout;
+    .locals 2
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, Lftb;->e:Landroidx/constraintlayout/widget/ConstraintLayout;
+
+    .line 3
+    .line 4
+    if-nez v0, :cond_1
+
+    .line 5
+    .line 6
+    iget-object v0, p0, Lftb;->a:LXdb;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, LXdb;->a()Landroid/view/ViewGroup;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    const v1, 0x7f0b0dea
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    check-cast v0, Landroid/view/ViewStub;
 
     .line 20
     .line 21
-    .line 22
-    move-result v1
+    if-eqz v0, :cond_0
 
+    .line 22
     .line 23
-    const/4 v2, 0x2
+    invoke-virtual {v0}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
 
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 25
     .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, LSPg;->c:LSPg;
+    move-result-object v0
 
     .line 27
+    goto :goto_0
+
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    :catchall_0
+    move-exception v0
 
     .line 29
+    goto :goto_1
+
     .line 30
+    :cond_0
+    const/4 v0, 0x0
+
     .line 31
-    move-result v1
+    :goto_0
+    check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 32
-    const/4 v2, 0x3
-
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    iput-object v0, p0, Lftb;->e:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 34
     .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, LSPg;->R0:LSPg;
+    :cond_1
+    iget-object v0, p0, Lftb;->e:Landroidx/constraintlayout/widget/ConstraintLayout;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    monitor-exit p0
 
     .line 38
+    return-object v0
+
     .line 39
+    :goto_1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 40
-    move-result v1
-
-    .line 41
-    const/4 v2, 0x4
-
-    .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 43
-    .line 44
-    :catch_3
-    :try_start_4
-    sget-object v1, LSPg;->X:LSPg;
-
-    .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v1
-
-    .line 50
-    const/4 v2, 0x5
-
-    .line 51
-    aput v2, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 52
-    .line 53
-    :catch_4
-    :try_start_5
-    sget-object v1, LSPg;->k0:LSPg;
-
-    .line 54
-    .line 55
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 56
-    .line 57
-    .line 58
-    move-result v1
-
-    .line 59
-    const/4 v2, 0x6
-
-    .line 60
-    aput v2, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 61
-    .line 62
-    :catch_5
-    :try_start_6
-    sget-object v1, LSPg;->N0:LSPg;
-
-    .line 63
-    .line 64
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 65
-    .line 66
-    .line 67
-    move-result v1
-
-    .line 68
-    const/4 v2, 0x7
-
-    .line 69
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 70
-    .line 71
-    :catch_6
-    :try_start_7
-    sget-object v1, LSPg;->n0:LSPg;
-
-    .line 72
-    .line 73
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 74
-    .line 75
-    .line 76
-    move-result v1
-
-    .line 77
-    const/16 v2, 0x8
-
-    .line 78
-    .line 79
-    aput v2, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 80
-    .line 81
-    :catch_7
-    :try_start_8
-    sget-object v1, LSPg;->m0:LSPg;
-
-    .line 82
-    .line 83
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v1
-
-    .line 87
-    const/16 v2, 0x9
-
-    .line 88
-    .line 89
-    aput v2, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 90
-    .line 91
-    :catch_8
-    :try_start_9
-    sget-object v1, LSPg;->j0:LSPg;
-
-    .line 92
-    .line 93
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 94
-    .line 95
-    .line 96
-    move-result v1
-
-    .line 97
-    const/16 v2, 0xa
-
-    .line 98
-    .line 99
-    aput v2, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    .line 100
-    .line 101
-    :catch_9
-    :try_start_a
-    sget-object v1, LSPg;->e0:LSPg;
-
-    .line 102
-    .line 103
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 104
-    .line 105
-    .line 106
-    move-result v1
-
-    .line 107
-    const/16 v2, 0xb
-
-    .line 108
-    .line 109
-    aput v2, v0, v1
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    .line 110
-    .line 111
-    :catch_a
-    :try_start_b
-    sget-object v1, LSPg;->Q0:LSPg;
-
-    .line 112
-    .line 113
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 114
-    .line 115
-    .line 116
-    move-result v1
-
-    .line 117
-    const/16 v2, 0xc
-
-    .line 118
-    .line 119
-    aput v2, v0, v1
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    .line 120
-    .line 121
-    :catch_b
-    sput-object v0, Lftb;->a:[I
-
-    .line 122
-    .line 123
-    return-void
+    throw v0
 .end method

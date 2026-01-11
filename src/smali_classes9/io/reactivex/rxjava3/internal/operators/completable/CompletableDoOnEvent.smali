@@ -14,11 +14,11 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/core/Completable;
 
-.field public final b:Lne;
+.field public final b:Ldf;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Completable;Lne;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Completable;Ldf;)V
     .locals 0
 
     .line 1
@@ -31,7 +31,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoOnEvent;->b:Lne;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoOnEvent;->b:Ldf;
 
     .line 7
     .line 8
@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public final t(Lio/reactivex/rxjava3/core/CompletableObserver;)V
+.method public final s(Lio/reactivex/rxjava3/core/CompletableObserver;)V
     .locals 1
 
     .line 1

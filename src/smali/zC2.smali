@@ -1,0 +1,224 @@
+.class public final LzC2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field public final a:Landroid/content/ContextWrapper;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/ContextWrapper;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LzC2;->a:Landroid/content/ContextWrapper;
+
+    .line 5
+    .line 6
+    sget-object p1, LSSc;->Z:LSSc;
+
+    .line 7
+    .line 8
+    const-string v0, "ChannelGroupFactory"
+
+    .line 9
+    .line 10
+    invoke-virtual {p1, v0}, LSSc;->g(Ljava/lang/String;)LJp0;
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
+    .locals 3
+
+    .line 1
+    if-eqz p1, :cond_3
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LzC2;->a:Landroid/content/ContextWrapper;
+
+    .line 4
+    .line 5
+    :try_start_0
+    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 6
+    .line 7
+    const/16 v2, 0x1c
+
+    .line 8
+    .line 9
+    if-lt v1, v2, :cond_0
+
+    .line 10
+    .line 11
+    invoke-static {v0}, LJFi;->b(Landroid/content/Context;)Landroid/app/NotificationManager;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    invoke-static {v1, p1}, LrW;->c(Landroid/app/NotificationManager;Ljava/lang/String;)Landroid/app/NotificationChannelGroup;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    if-eqz v1, :cond_2
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_0
+    invoke-static {v0}, LJFi;->b(Landroid/content/Context;)Landroid/app/NotificationManager;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v1
+
+    .line 26
+    invoke-static {v1}, LvP5;->k(Landroid/app/NotificationManager;)Ljava/util/List;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    check-cast v1, Ljava/lang/Iterable;
+
+    .line 31
+    .line 32
+    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v1
+
+    .line 36
+    :cond_1
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v2
+
+    .line 40
+    if-eqz v2, :cond_2
+
+    .line 41
+    .line 42
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v2
+
+    .line 46
+    invoke-static {v2}, LvP5;->a(Ljava/lang/Object;)Landroid/app/NotificationChannel;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v2
+
+    .line 50
+    invoke-static {v2}, LvP5;->s(Landroid/app/NotificationChannel;)Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v2
+
+    .line 54
+    invoke-static {v2, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v2
+    :try_end_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 58
+    if-eqz v2, :cond_1
+
+    .line 59
+    .line 60
+    goto :goto_0
+
+    .line 61
+    :catch_0
+    :cond_2
+    invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p1
+
+    .line 65
+    check-cast p1, LyC2;
+
+    .line 66
+    .line 67
+    invoke-static {v0}, LJFi;->b(Landroid/content/Context;)Landroid/app/NotificationManager;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p2
+
+    .line 71
+    invoke-static {}, LnW;->j()V
+
+    .line 72
+    .line 73
+    .line 74
+    iget-object v0, p1, LyC2;->a:Ljava/lang/String;
+
+    .line 75
+    .line 76
+    iget-object p1, p1, LyC2;->b:Ljava/lang/String;
+
+    .line 77
+    .line 78
+    invoke-static {v0, p1}, LnW;->d(Ljava/lang/String;Ljava/lang/String;)Landroid/app/NotificationChannelGroup;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object p1
+
+    .line 82
+    invoke-static {p2, p1}, LnW;->q(Landroid/app/NotificationManager;Landroid/app/NotificationChannelGroup;)V
+
+    .line 83
+    .line 84
+    .line 85
+    :cond_3
+    :goto_0
+    return-void
+.end method

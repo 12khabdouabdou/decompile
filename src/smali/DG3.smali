@@ -1,377 +1,56 @@
 .class public final LDG3;
-.super Lo17;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LqZ3;
 
 
 # instance fields
-.field public a:I
+.field public final synthetic a:I
 
-.field public b:Ljava/lang/String;
-
-.field public c:[LCG3;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    const/4 v0, 0x1
 
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
     iput v0, p0, LDG3;->a:I
 
-    .line 6
-    .line 7
-    const-string v0, ""
+    .line 3
+    sget-object v0, Lzx5;->f0:Lzx5;
 
-    .line 8
-    .line 9
-    iput-object v0, p0, LDG3;->b:Ljava/lang/String;
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
-    .line 11
-    invoke-static {}, LCG3;->a()[LCG3;
+    .line 5
+    iput-object v0, p0, LDG3;->b:Ljava/lang/Object;
 
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v0
+    return-void
+.end method
 
-    .line 15
-    iput-object v0, p0, LDG3;->c:[LCG3;
+.method public constructor <init>(LIe9;)V
+    .locals 1
 
-    .line 16
-    .line 17
     const/4 v0, 0x0
 
-    .line 18
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput v0, p0, LDG3;->a:I
 
-    .line 19
-    .line 20
-    const/4 v0, -0x1
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 21
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+    .line 2
+    iput-object p1, p0, LDG3;->b:Ljava/lang/Object;
 
-    .line 22
-    .line 23
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 4
-
-    .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    iget v1, p0, LDG3;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    iget-object v1, p0, LDG3;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {v2, v1}, Lsa3;->q(ILjava/lang/String;)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    :cond_0
-    iget-object v1, p0, LDG3;->c:[LCG3;
-
-    .line 19
-    .line 20
-    if-eqz v1, :cond_2
-
-    .line 21
-    .line 22
-    array-length v1, v1
-
-    .line 23
-    if-lez v1, :cond_2
-
-    .line 24
-    .line 25
-    const/4 v1, 0x0
-
-    .line 26
-    :goto_0
-    iget-object v2, p0, LDG3;->c:[LCG3;
-
-    .line 27
-    .line 28
-    array-length v3, v2
-
-    .line 29
-    if-ge v1, v3, :cond_2
-
-    .line 30
-    .line 31
-    aget-object v2, v2, v1
-
-    .line 32
-    .line 33
-    if-eqz v2, :cond_1
-
-    .line 34
-    .line 35
-    const/4 v3, 0x2
-
-    .line 36
-    invoke-static {v3, v2}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 37
-    .line 38
-    .line 39
-    move-result v2
-
-    .line 40
-    add-int/2addr v2, v0
-
-    .line 41
-    move v0, v2
-
-    .line 42
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    .line 43
-    .line 44
-    goto :goto_0
-
-    .line 45
-    :cond_2
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 5
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_6
-
-    .line 6
-    .line 7
-    const/16 v1, 0xa
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_5
-
-    .line 10
-    .line 11
-    const/16 v1, 0x12
-
-    .line 12
-    .line 13
-    if-eq v0, v1, :cond_1
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    if-nez v0, :cond_0
-
-    .line 20
-    .line 21
-    goto :goto_3
-
-    .line 22
-    :cond_1
-    invoke-static {p1, v1}, Ldw8;->E(Lqa3;I)I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v0
-
-    .line 26
-    iget-object v1, p0, LDG3;->c:[LCG3;
-
-    .line 27
-    .line 28
-    const/4 v2, 0x0
-
-    .line 29
-    if-nez v1, :cond_2
-
-    .line 30
-    .line 31
-    const/4 v3, 0x0
-
-    .line 32
-    goto :goto_1
-
-    .line 33
-    :cond_2
-    array-length v3, v1
-
-    .line 34
-    :goto_1
-    add-int/2addr v0, v3
-
-    .line 35
-    new-array v4, v0, [LCG3;
-
-    .line 36
-    .line 37
-    if-eqz v3, :cond_3
-
-    .line 38
-    .line 39
-    invoke-static {v1, v2, v4, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 40
-    .line 41
-    .line 42
-    :cond_3
-    :goto_2
-    add-int/lit8 v1, v0, -0x1
-
-    .line 43
-    .line 44
-    if-ge v3, v1, :cond_4
-
-    .line 45
-    .line 46
-    new-instance v1, LCG3;
-
-    .line 47
-    .line 48
-    invoke-direct {v1}, LCG3;-><init>()V
-
-    .line 49
-    .line 50
-    .line 51
-    aput-object v1, v4, v3
-
-    .line 52
-    .line 53
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    .line 54
-    .line 55
-    .line 56
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 57
-    .line 58
-    .line 59
-    add-int/lit8 v3, v3, 0x1
-
-    .line 60
-    .line 61
-    goto :goto_2
-
-    .line 62
-    :cond_4
-    new-instance v0, LCG3;
-
-    .line 63
-    .line 64
-    invoke-direct {v0}, LCG3;-><init>()V
-
-    .line 65
-    .line 66
-    .line 67
-    aput-object v0, v4, v3
-
-    .line 68
-    .line 69
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    .line 70
-    .line 71
-    .line 72
-    iput-object v4, p0, LDG3;->c:[LCG3;
-
-    .line 73
-    .line 74
-    goto :goto_0
-
-    .line 75
-    :cond_5
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v0
-
-    .line 79
-    iput-object v0, p0, LDG3;->b:Ljava/lang/String;
-
-    .line 80
-    .line 81
-    iget v0, p0, LDG3;->a:I
-
-    .line 82
-    .line 83
-    or-int/lit8 v0, v0, 0x1
-
-    .line 84
-    .line 85
-    iput v0, p0, LDG3;->a:I
-
-    .line 86
-    .line 87
-    goto :goto_0
-
-    .line 88
-    :cond_6
-    :goto_3
-    return-object p0
-.end method
-
-.method public final writeTo(Lsa3;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
     .line 1
@@ -379,85 +58,412 @@
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    packed-switch v0, :pswitch_data_0
 
     .line 4
-    and-int/2addr v0, v1
-
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    check-cast p1, Lglf;
+
     .line 7
-    iget-object v0, p0, LDG3;->b:Ljava/lang/String;
-
     .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->R(ILjava/lang/String;)V
+    instance-of v0, p1, LWkf;
 
+    .line 9
     .line 10
+    if-eqz v0, :cond_1
+
     .line 11
     .line 12
-    :cond_0
-    iget-object v0, p0, LDG3;->c:[LCG3;
+    check-cast p1, LWkf;
 
     .line 13
     .line 14
-    if-eqz v0, :cond_2
+    invoke-virtual {p1}, LWkf;->c()LDIj;
 
     .line 15
     .line 16
-    array-length v0, v0
-
     .line 17
-    if-lez v0, :cond_2
+    move-result-object p1
 
     .line 18
-    .line 19
-    const/4 v0, 0x0
+    sget-object v0, LlLf;->j0:Ljava/lang/String;
 
+    .line 19
     .line 20
-    :goto_0
-    iget-object v1, p0, LDG3;->c:[LCG3;
+    if-eqz v0, :cond_0
 
     .line 21
     .line 22
-    array-length v2, v1
+    invoke-static {p1, v0}, LAPk;->C(LDIj;Ljava/lang/String;)LDIj;
 
     .line 23
-    if-ge v0, v2, :cond_2
-
     .line 24
     .line 25
-    aget-object v1, v1, v0
+    move-result-object p1
 
     .line 26
-    .line 27
-    if-eqz v1, :cond_1
+    invoke-virtual {p1}, LDIj;->a()Ljava/lang/String;
 
+    .line 27
     .line 28
     .line 29
-    const/4 v2, 0x2
+    move-result-object p1
 
     .line 30
-    invoke-virtual {p1, v2, v1}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    iget-object v0, p0, LDG3;->b:Ljava/lang/Object;
 
     .line 31
     .line 32
-    .line 33
-    :cond_1
-    add-int/lit8 v0, v0, 0x1
+    check-cast v0, Lkotlin/jvm/functions/Function1;
 
+    .line 33
     .line 34
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    check-cast p1, Landroid/net/Uri;
+
+    .line 39
+    .line 40
     goto :goto_0
 
-    .line 36
-    :cond_2
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    .line 41
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalStateException;
 
-    .line 37
-    .line 38
-    .line 39
-    return-void
+    .line 42
+    .line 43
+    const-string v0, "AUTHORITY is not initialized"
+
+    .line 44
+    .line 45
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 46
+    .line 47
+    .line 48
+    throw p1
+
+    .line 49
+    :cond_1
+    const/4 p1, 0x0
+
+    .line 50
+    :goto_0
+    return-object p1
+
+    .line 51
+    :pswitch_0
+    check-cast p1, Lglf;
+
+    .line 52
+    .line 53
+    instance-of v0, p1, LYkf;
+
+    .line 54
+    .line 55
+    if-eqz v0, :cond_2
+
+    .line 56
+    .line 57
+    const-string v0, "lens_content"
+
+    .line 58
+    .line 59
+    goto :goto_1
+
+    .line 60
+    :cond_2
+    instance-of v0, p1, Lalf;
+
+    .line 61
+    .line 62
+    if-eqz v0, :cond_3
+
+    .line 63
+    .line 64
+    const-string v0, "lens_icon"
+
+    .line 65
+    .line 66
+    goto :goto_1
+
+    .line 67
+    :cond_3
+    instance-of v0, p1, Lclf;
+
+    .line 68
+    .line 69
+    if-eqz v0, :cond_4
+
+    .line 70
+    .line 71
+    const-string v0, "lens_remote_assets"
+
+    .line 72
+    .line 73
+    goto :goto_1
+
+    .line 74
+    :cond_4
+    instance-of v0, p1, Lelf;
+
+    .line 75
+    .line 76
+    if-eqz v0, :cond_5
+
+    .line 77
+    .line 78
+    const-string v0, "user_generated_assets"
+
+    .line 79
+    .line 80
+    goto :goto_1
+
+    .line 81
+    :cond_5
+    instance-of v0, p1, Ldlf;
+
+    .line 82
+    .line 83
+    if-eqz v0, :cond_6
+
+    .line 84
+    .line 85
+    const-string v0, "user_generated_assets_by_uri"
+
+    .line 86
+    .line 87
+    goto :goto_1
+
+    .line 88
+    :cond_6
+    instance-of v0, p1, LMkf;
+
+    .line 89
+    .line 90
+    if-eqz v0, :cond_7
+
+    .line 91
+    .line 92
+    const-string v0, "bitmoji_lens_glb_asset"
+
+    .line 93
+    .line 94
+    goto :goto_1
+
+    .line 95
+    :cond_7
+    instance-of v0, p1, LPkf;
+
+    .line 96
+    .line 97
+    if-eqz v0, :cond_8
+
+    .line 98
+    .line 99
+    const-string v0, "bitmoji_sticker"
+
+    .line 100
+    .line 101
+    goto :goto_1
+
+    .line 102
+    :cond_8
+    instance-of v0, p1, LWkf;
+
+    .line 103
+    .line 104
+    if-eqz v0, :cond_9
+
+    .line 105
+    .line 106
+    const-string v0, "DefaultContentUriBuilder"
+
+    .line 107
+    .line 108
+    goto :goto_1
+
+    .line 109
+    :cond_9
+    instance-of v0, p1, Lblf;
+
+    .line 110
+    .line 111
+    if-eqz v0, :cond_a
+
+    .line 112
+    .line 113
+    const-string v0, "lns_archive_file"
+
+    .line 114
+    .line 115
+    goto :goto_1
+
+    .line 116
+    :cond_a
+    instance-of v0, p1, LUkf;
+
+    .line 117
+    .line 118
+    if-eqz v0, :cond_b
+
+    .line 119
+    .line 120
+    const-string v0, "explorer_lens_preview"
+
+    .line 121
+    .line 122
+    goto :goto_1
+
+    .line 123
+    :cond_b
+    instance-of v0, p1, LVkf;
+
+    .line 124
+    .line 125
+    if-eqz v0, :cond_c
+
+    .line 126
+    .line 127
+    const-string v0, "explorer_onboarding"
+
+    .line 128
+    .line 129
+    goto :goto_1
+
+    .line 130
+    :cond_c
+    sget-object v0, LRkf;->a:LRkf;
+
+    .line 131
+    .line 132
+    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 133
+    .line 134
+    .line 135
+    move-result v0
+
+    .line 136
+    if-eqz v0, :cond_e
+
+    .line 137
+    .line 138
+    const/4 v0, 0x0
+
+    .line 139
+    :goto_1
+    if-eqz v0, :cond_d
+
+    .line 140
+    .line 141
+    iget-object v1, p0, LDG3;->b:Ljava/lang/Object;
+
+    .line 142
+    .line 143
+    check-cast v1, LIe9;
+
+    .line 144
+    .line 145
+    invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 146
+    .line 147
+    .line 148
+    move-result-object v0
+
+    .line 149
+    check-cast v0, LqZ3;
+
+    .line 150
+    .line 151
+    if-eqz v0, :cond_d
+
+    .line 152
+    .line 153
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object v0
+
+    .line 157
+    check-cast v0, Landroid/net/Uri;
+
+    .line 158
+    .line 159
+    if-eqz v0, :cond_d
+
+    .line 160
+    .line 161
+    return-object v0
+
+    .line 162
+    :cond_d
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 163
+    .line 164
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 165
+    .line 166
+    const-string v2, "Can\'t find uri builder for given "
+
+    .line 167
+    .line 168
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 169
+    .line 170
+    .line 171
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 172
+    .line 173
+    .line 174
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 175
+    .line 176
+    .line 177
+    move-result-object p1
+
+    .line 178
+    invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 179
+    .line 180
+    .line 181
+    throw v0
+
+    .line 182
+    :cond_e
+    new-instance p1, LwOc;
+
+    .line 183
+    .line 184
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 185
+    .line 186
+    .line 187
+    throw p1
+
+    .line 188
+    nop
+
+    .line 189
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

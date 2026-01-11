@@ -38,7 +38,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 1
 
     .line 1
@@ -46,7 +46,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;-><init>(LV6i;)V
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromCompletable$FromCompletableObserver;-><init>(Lmvi;)V
 
     .line 4
     .line 5

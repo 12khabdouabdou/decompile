@@ -3,21 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements LJ8h;
+.implements Lwuh;
 
 
 # static fields
-.field public static final G0:LcSa;
+.field public static final G0:LL4b;
 
-.field public static final H0:Lcqc;
+.field public static final H0:LxFc;
 
-.field public static final I0:LZpc;
+.field public static final I0:LuFc;
 
-.field public static final J0:LcSa;
+.field public static final J0:LL4b;
 
-.field public static final K0:Lcqc;
+.field public static final K0:LxFc;
 
-.field public static final L0:LZpc;
+.field public static final L0:LuFc;
 
 
 # instance fields
@@ -33,28 +33,28 @@
 
 .field public F0:Landroid/widget/RadioGroup;
 
-.field public y0:Lu3h;
+.field public y0:Ljph;
 
-.field public z0:LTqc;
+.field public z0:LmGc;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 14
+    .locals 15
 
     .line 1
-    new-instance v0, LcSa;
+    new-instance v0, LL4b;
 
     .line 2
     .line 3
-    sget-object v1, Ly5h;->Z:Ly5h;
+    sget-object v1, Lqrh;->Z:Lqrh;
 
     .line 4
     .line 5
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     .line 6
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     .line 7
     const-string v2, "SpectaclesContextNotificationSettingsFragment"
@@ -76,107 +76,113 @@
     const/4 v7, 0x0
 
     .line 14
-    const/16 v10, 0x3ffc
-
-    .line 15
-    .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->G0:LcSa;
-
-    .line 20
-    .line 21
-    sget-object v12, LW5d;->N:Lm7b;
-
-    .line 22
-    .line 23
-    const/4 v13, 0x1
-
-    .line 24
-    invoke-static {v12, v0, v13}, Lm7b;->i(LW5d;LcSa;Z)Lcqc;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v0
-
-    .line 28
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->H0:Lcqc;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0}, Lcqc;->p()LZpc;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->I0:LZpc;
-
-    .line 35
-    .line 36
-    move-object v2, v1
-
-    .line 37
-    new-instance v1, LcSa;
-
-    .line 38
-    .line 39
-    const/4 v10, 0x0
-
-    .line 40
-    const-string v3, "context_notification_settings_send_to"
-
-    .line 41
-    .line 42
-    const/4 v6, 0x0
-
-    .line 43
     const/4 v8, 0x0
 
+    .line 15
+    const/16 v11, 0x7ffc
+
+    .line 16
+    .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->G0:LL4b;
+
+    .line 21
+    .line 22
+    sget-object v13, Luld;->O:LtOc;
+
+    .line 23
+    .line 24
+    const/4 v14, 0x1
+
+    .line 25
+    invoke-static {v13, v0, v14}, LJea;->h(Luld;LL4b;Z)LxFc;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->H0:LxFc;
+
+    .line 30
+    .line 31
+    invoke-virtual {v0}, LxFc;->p()LuFc;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->I0:LuFc;
+
+    .line 36
+    .line 37
+    move-object v2, v1
+
+    .line 38
+    new-instance v1, LL4b;
+
+    .line 39
+    .line 40
+    const/4 v10, 0x0
+
+    .line 41
+    const/4 v11, 0x0
+
+    .line 42
+    const-string v3, "context_notification_settings_send_to"
+
+    .line 43
     .line 44
-    const/16 v11, 0x3ffc
+    const/4 v6, 0x0
 
     .line 45
+    const/4 v8, 0x0
+
     .line 46
-    invoke-direct/range {v1 .. v11}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v12, 0x7ffc
 
     .line 47
     .line 48
-    .line 49
-    sput-object v1, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->J0:LcSa;
+    invoke-direct/range {v1 .. v12}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
 
+    .line 49
     .line 50
     .line 51
-    invoke-static {v12, v1, v13}, Lm7b;->i(LW5d;LcSa;Z)Lcqc;
+    sput-object v1, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->J0:LL4b;
 
     .line 52
     .line 53
+    invoke-static {v13, v1, v14}, LJea;->h(Luld;LL4b;Z)LxFc;
+
     .line 54
+    .line 55
+    .line 56
     move-result-object v0
 
-    .line 55
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->K0:Lcqc;
-
-    .line 56
     .line 57
-    invoke-virtual {v0}, Lcqc;->p()LZpc;
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->K0:LxFc;
 
     .line 58
     .line 59
+    invoke-virtual {v0}, LxFc;->p()LuFc;
+
     .line 60
+    .line 61
+    .line 62
     move-result-object v0
 
-    .line 61
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->L0:LZpc;
-
-    .line 62
     .line 63
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->L0:LuFc;
+
+    .line 64
+    .line 65
     return-void
 .end method
 
@@ -194,77 +200,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Lu3h;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
-
-    .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    if-nez v0, :cond_0
-
-    .line 19
-    .line 20
-    const-string v0, ""
-
-    .line 21
-    .line 22
-    :cond_0
-    iput-object v0, p1, Lu3h;->p0:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Lu3h;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    invoke-virtual {p1, p0}, Lu3h;->h3(LJ8h;)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
 
     .line 1
-    const p3, 0x7f0e06df
+    const p3, 0x7f0e0701
 
     .line 2
     .line 3
@@ -280,7 +220,7 @@
     move-result-object p1
 
     .line 9
-    const p2, 0x7f0b0f91
+    const p2, 0x7f0b10ae
 
     .line 10
     .line 11
@@ -297,7 +237,7 @@
 
     .line 17
     .line 18
-    const p3, 0x7f0b0147
+    const p3, 0x7f0b0186
 
     .line 19
     .line 20
@@ -314,7 +254,7 @@
 
     .line 26
     .line 27
-    const p3, 0x7f0b0ea5
+    const p3, 0x7f0b0fc2
 
     .line 28
     .line 29
@@ -335,7 +275,7 @@
 
     .line 37
     .line 38
-    const p3, 0x7f0b0a59
+    const p3, 0x7f0b0b62
 
     .line 39
     .line 40
@@ -352,7 +292,7 @@
 
     .line 46
     .line 47
-    const p3, 0x7f0b05d9
+    const p3, 0x7f0b0662
 
     .line 48
     .line 49
@@ -384,15 +324,15 @@
 
     .line 62
     .line 63
-    new-instance v1, LKx2;
+    new-instance v1, LL5;
 
     .line 64
     .line 65
-    const/16 v2, 0x13
+    const/16 v2, 0x14
 
     .line 66
     .line 67
-    invoke-direct {v1, v2, p0}, LKx2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LL5;-><init>(ILjava/lang/Object;)V
 
     .line 68
     .line 69
@@ -410,14 +350,14 @@
 
     .line 76
     .line 77
-    new-instance v0, Lp3h;
+    new-instance v0, Leph;
 
     .line 78
     .line 79
     const/4 v1, 0x0
 
     .line 80
-    invoke-direct {v0, p0, v1}, Lp3h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;I)V
+    invoke-direct {v0, p0, v1}, Leph;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;I)V
 
     .line 81
     .line 82
@@ -427,7 +367,7 @@
     .line 84
     .line 85
     .line 86
-    const p3, 0x7f0b0679
+    const p3, 0x7f0b0710
 
     .line 87
     .line 88
@@ -448,14 +388,14 @@
 
     .line 96
     .line 97
-    new-instance v0, LjV;
+    new-instance v0, LmX;
 
     .line 98
     .line 99
     const/4 v1, 0x6
 
     .line 100
-    invoke-direct {v0, v1, p0}, LjV;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LmX;-><init>(ILjava/lang/Object;)V
 
     .line 101
     .line 102
@@ -477,14 +417,14 @@
 
     .line 111
     .line 112
-    new-instance p3, Lp3h;
+    new-instance p3, Leph;
 
     .line 113
     .line 114
     const/4 v0, 0x1
 
     .line 115
-    invoke-direct {p3, p0, v0}, Lp3h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;I)V
+    invoke-direct {p3, p0, v0}, Leph;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;I)V
 
     .line 116
     .line 117
@@ -502,7 +442,7 @@
 
     .line 123
     .line 124
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 125
     .line 126
@@ -515,7 +455,7 @@
 
     .line 129
     .line 130
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 131
     .line 132
@@ -523,11 +463,11 @@
     throw v0
 .end method
 
-.method public final W1()Lu3h;
+.method public final W1()Ljph;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->y0:Lu3h;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->y0:Ljph;
 
     .line 2
     .line 3
@@ -543,7 +483,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -683,7 +623,7 @@
 
     .line 65
     :cond_0
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 66
     .line 67
@@ -692,7 +632,7 @@
 
     .line 69
     :cond_1
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 70
     .line 71
@@ -701,7 +641,7 @@
 
     .line 73
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 74
     .line 75
@@ -710,7 +650,7 @@
 
     .line 77
     :cond_3
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 78
     .line 79
@@ -719,7 +659,7 @@
 
     .line 81
     :cond_4
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 82
     .line 83
@@ -728,7 +668,7 @@
 
     .line 85
     :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 86
     .line 87
@@ -737,7 +677,7 @@
 
     .line 89
     :cond_6
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 90
     .line 91
@@ -849,7 +789,7 @@
 
     .line 147
     :cond_8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 148
     .line 149
@@ -858,7 +798,7 @@
 
     .line 151
     :cond_9
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 152
     .line 153
@@ -867,7 +807,7 @@
 
     .line 155
     :cond_a
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 156
     .line 157
@@ -876,7 +816,7 @@
 
     .line 159
     :cond_b
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 160
     .line 161
@@ -885,7 +825,7 @@
 
     .line 163
     :cond_c
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 164
     .line 165
@@ -894,7 +834,7 @@
 
     .line 167
     :cond_d
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 168
     .line 169
@@ -903,7 +843,7 @@
 
     .line 171
     :cond_e
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 172
     .line 173
@@ -911,16 +851,36 @@
     throw v4
 .end method
 
-.method public final w(LQqc;)V
+.method public final u1()V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Ljph;
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Lu3h;
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ljph;->D1()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final v(LiGc;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Ljph;
 
     .line 5
     .line 6
@@ -928,7 +888,7 @@
     move-result-object p1
 
     .line 8
-    iget-object v0, p1, Lu3h;->q0:Lh4h;
+    iget-object v0, p1, Ljph;->q0:LZph;
 
     .line 9
     .line 10
@@ -936,7 +896,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Lu3h;->a3()V
+    invoke-virtual {p1}, Ljph;->g3()V
 
     .line 13
     .line 14
@@ -945,22 +905,68 @@
     return-void
 .end method
 
-.method public final w1()V
-    .locals 1
+.method public final y1(Landroid/content/Context;)V
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Lu3h;
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Ljph;
 
     .line 5
-    invoke-virtual {v0}, Lu3h;->C1()V
-
     .line 6
     .line 7
+    move-result-object p1
+
     .line 8
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
+
+    .line 13
+    .line 14
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    if-nez v0, :cond_0
+
+    .line 19
+    .line 20
+    const-string v0, ""
+
+    .line 21
+    .line 22
+    :cond_0
+    iput-object v0, p1, Ljph;->p0:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesContextNotificationSettingsFragment;->W1()Ljph;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p1
+
+    .line 28
+    invoke-virtual {p1, p0}, Ljph;->i3(Lwuh;)V
+
+    .line 29
+    .line 30
+    .line 31
     return-void
 .end method

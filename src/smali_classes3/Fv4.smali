@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final a:LDT4;
+.field public final a:LqL4;
 
 
 # direct methods
-.method public constructor <init>(LDT4;)V
+.method public constructor <init>(LqL4;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LFv4;->a:LDT4;
+    iput-object p1, p0, LFv4;->a:LqL4;
 
     .line 5
     .line 6

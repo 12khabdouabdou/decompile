@@ -1,63 +1,129 @@
-.class public abstract LqJc;
-.super Ljava/lang/Object;
+.class public final LqJc;
+.super LhLg;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LZn9;
+# instance fields
+.field public final j:I
 
-.field public static final b:LZn9;
+.field public final k:LCPf;
+
+.field public final l:Ljava/util/HashSet;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 4
+    .locals 1
 
     .line 1
-    new-instance v0, LZn9;
+    sget-object v0, Lerj;->a:LcUh;
 
     .line 2
     .line 3
-    const/16 v1, 0x13
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;ILjava/util/HashMap;Ljava/lang/Object;Ljava/util/HashMap;ILCPf;Ljava/util/HashSet;ZZLjava/lang/Integer;)V
+    .locals 9
+
+    .line 1
+    move-object v0, p0
+
+    .line 2
+    move-object v1, p1
+
+    .line 3
+    move v2, p2
 
     .line 4
+    move-object v3, p3
+
     .line 5
-    const/16 v2, 0x16
+    move-object v4, p4
 
     .line 6
+    move-object v5, p5
+
     .line 7
-    const/4 v3, 0x1
+    move/from16 v6, p9
 
     .line 8
-    invoke-direct {v0, v1, v2, v3}, LXn9;-><init>(III)V
-
     .line 9
+    move/from16 v7, p10
+
     .line 10
     .line 11
-    sput-object v0, LqJc;->a:LZn9;
+    move-object/from16 v8, p11
 
     .line 12
     .line 13
-    new-instance v0, LZn9;
+    invoke-direct/range {v0 .. v8}, LhLg;-><init>(Ljava/lang/String;ILjava/util/HashMap;Ljava/lang/Object;Ljava/util/HashMap;ZZLjava/lang/Integer;)V
 
     .line 14
     .line 15
-    const/16 v1, 0x17
-
     .line 16
+    iput p6, p0, LqJc;->j:I
+
     .line 17
-    const/16 v2, 0x19
-
     .line 18
-    .line 19
-    invoke-direct {v0, v1, v2, v3}, LXn9;-><init>(III)V
+    move-object/from16 p1, p7
 
+    .line 19
     .line 20
+    iput-object p1, p0, LqJc;->k:LCPf;
+
     .line 21
     .line 22
-    sput-object v0, LqJc;->b:LZn9;
+    new-instance p1, Ljava/util/HashSet;
 
     .line 23
     .line 24
+    move-object/from16 p2, p8
+
+    .line 25
+    .line 26
+    invoke-direct {p1, p2}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    .line 27
+    .line 28
+    .line 29
+    iput-object p1, p0, LqJc;->l:Ljava/util/HashSet;
+
+    .line 30
+    .line 31
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()LgLg;
+    .locals 1
+
+    .line 1
+    new-instance v0, LoJc;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, LoJc;-><init>(LqJc;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method
+
+.method public final b()LgLg;
+    .locals 1
+
+    .line 1
+    new-instance v0, LoJc;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, LoJc;-><init>(LqJc;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
 .end method

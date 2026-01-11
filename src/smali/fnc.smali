@@ -3,1734 +3,2307 @@
 .source "SourceFile"
 
 # interfaces
-.implements LNT6;
+.implements Lio/reactivex/rxjava3/functions/Function;
+.implements Ln74;
+.implements Lio/reactivex/rxjava3/functions/BiPredicate;
+.implements LeBa;
 
 
 # instance fields
-.field public final a:LRde;
+.field public final synthetic a:I
 
-.field public final b:LB73;
-
-.field public final c:LLOi;
-
-.field public final d:LUr7;
-
-.field public final e:LGS8;
+.field public b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(LRde;LB73;LLOi;LUr7;LGS8;)V
+.method public constructor <init>(I)V
+    .locals 1
+
+    iput p1, p0, Lfnc;->a:I
+
+    packed-switch p1, :pswitch_data_0
+
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    const-string p1, "application/x-protobuf"
+
+    const/4 v0, 0x0
+
+    invoke-static {p1, v0}, LNpk;->c(Ljava/lang/String;Z)LnHb;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lfnc;->b:Ljava/lang/Object;
+
+    return-void
+
+    .line 5
+    :pswitch_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x10
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
 
     .line 1
+    iput p1, p0, Lfnc;->a:I
+
+    iput-object p2, p0, Lfnc;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(LNTc;J)V
+    .locals 0
+
+    const/16 p2, 0xf
+
+    iput p2, p0, Lfnc;->a:I
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lfnc;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(LcA8;)V
+    .locals 2
+
+    const/16 v0, 0x18
+
+    iput v0, p0, Lfnc;->a:I
+
+    .line 8
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    new-instance v0, Lbph;
+
+    .line 10
+    iget-object v1, p1, LcA8;->b:Ljava/lang/Object;
+
+    check-cast v1, LCBe;
+
+    .line 11
+    iget-object p1, p1, LcA8;->c:Ljava/lang/Object;
+
+    check-cast p1, LR93;
+
+    .line 12
+    invoke-direct {v0, p1, v1}, Lbph;-><init>(LR93;LCBe;)V
+
+    .line 13
+    iput-object v0, p0, Lfnc;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(LcA8;LL52;)V
+    .locals 0
+
+    const/16 p2, 0x1d
+
+    iput p2, p0, Lfnc;->a:I
+
+    .line 6
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    iput-object p1, p0, Lfnc;->b:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public static c(Ljava/util/List;)LdH9;
+    .locals 7
+
+    .line 1
+    new-instance v0, LdH9;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    :cond_0
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    if-eqz v1, :cond_2
+
+    .line 15
+    .line 16
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v1
+
+    .line 20
+    check-cast v1, LHkf;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1}, LHkf;->a()LGkf;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v2
+
+    .line 26
+    invoke-virtual {v1}, LHkf;->c()I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v3
+
+    .line 30
+    int-to-long v3, v3
+
+    .line 31
+    invoke-virtual {v1}, LHkf;->b()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    int-to-long v5, v1
+
+    .line 36
+    mul-long v3, v3, v5
+
+    .line 37
+    .line 38
+    sget-object v1, LGkf;->a:LGkf;
+
+    .line 39
+    .line 40
+    if-ne v2, v1, :cond_1
+
+    .line 41
+    .line 42
+    iget-wide v1, v0, LdH9;->a:J
+
+    .line 43
+    .line 44
+    add-long/2addr v1, v3
+
+    .line 45
+    iput-wide v1, v0, LdH9;->a:J
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_1
+    sget-object v1, LGkf;->c:LGkf;
+
+    .line 49
+    .line 50
+    if-ne v2, v1, :cond_0
+
+    .line 51
+    .line 52
+    iget-wide v1, v0, LdH9;->b:J
+
+    .line 53
+    .line 54
+    add-long/2addr v1, v3
+
+    .line 55
+    iput-wide v1, v0, LdH9;->b:J
+
+    .line 56
+    .line 57
+    goto :goto_0
+
+    .line 58
+    :cond_2
+    return-object v0
+.end method
+
+.method public static e(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lfnc;->a:LRde;
+    move-result-object v0
 
     .line 5
+    const/high16 v1, 0x10000
+
     .line 6
-    iput-object p2, p0, Lfnc;->b:LB73;
+    .line 7
+    invoke-virtual {v0, p1, v1}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    if-nez v0, :cond_0
+
+    .line 18
+    .line 19
+    :try_start_0
+    invoke-virtual {p0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+
+    .line 23
+    :catch_0
+    move-exception p0
+
+    .line 24
+    new-instance p1, Lrzd;
+
+    .line 25
+    .line 26
+    invoke-direct {p1, p0}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
+
+    .line 27
+    .line 28
+    .line 29
+    throw p1
+
+    .line 30
+    :cond_0
+    new-instance p0, Lrzd;
+
+    .line 31
+    .line 32
+    const-string p1, "queryIntent error"
+
+    .line 33
+    .line 34
+    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 35
+    .line 36
+    .line 37
+    throw p0
+.end method
+
+.method public static f(Landroid/app/Application;Ljava/lang/String;)V
+    .locals 3
+
+    .line 1
+    new-instance v0, Landroid/content/Intent;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const/high16 v1, 0x10000000
 
     .line 7
     .line 8
-    iput-object p3, p0, Lfnc;->c:LLOi;
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lfnc;->d:LUr7;
+    .line 11
+    const/high16 v1, 0x40000000    # 2.0f
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 14
+    .line 15
+    .line 16
+    const/high16 v1, 0x800000
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 19
+    .line 20
+    .line 21
+    const-string v1, "packageName"
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 24
+    .line 25
+    .line 26
+    new-instance p1, Landroid/content/ComponentName;
+
+    .line 27
+    .line 28
+    const-string v1, "com.huawei.systemmanager"
+
+    .line 29
+    .line 30
+    const-string v2, "com.huawei.permissionmanager.ui.SingleAppActivity"
+
+    .line 31
+    .line 32
+    invoke-direct {p1, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    .line 36
+    .line 37
+    .line 38
+    :try_start_0
+    invoke-static {p0, v0}, Lfnc;->e(Landroid/content/Context;Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 39
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :catch_0
+    new-instance p1, Landroid/content/ComponentName;
+
+    .line 43
+    .line 44
+    const-string v1, "com.Android.settings"
+
+    .line 45
+    .line 46
+    const-string v2, "com.android.settings.permission.TabItem"
+
+    .line 47
+    .line 48
+    invoke-direct {p1, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {v0, p1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    .line 52
+    .line 53
+    .line 54
+    :goto_0
+    invoke-static {p0, v0}, Lfnc;->e(Landroid/content/Context;Landroid/content/Intent;)V
+
+    .line 55
+    .line 56
+    .line 57
+    return-void
+.end method
+
+.method public static g(Landroid/app/Application;Ljava/lang/String;)V
+    .locals 6
+
+    .line 1
+    sget-object v0, LCrf;->a:Ljava/util/HashMap;
+
+    .line 2
+    .line 3
+    const-string v0, "ro.miui.ui.version.name"
+
+    .line 4
+    .line 5
+    const-string v1, ""
+
+    .line 6
+    .line 7
+    invoke-static {v0, v1}, Lfqj;->o(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
 
     .line 11
-    .line 12
-    iput-object p5, p0, Lfnc;->e:LGS8;
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
+    .line 12
     .line 13
     .line 14
+    move-result v1
+
+    .line 15
+    if-nez v1, :cond_0
+
+    .line 16
+    .line 17
+    const/4 v1, 0x1
+
+    .line 18
+    :try_start_0
+    invoke-virtual {v0, v1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v0
+
+    .line 22
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v0
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :catch_0
+    :cond_0
+    const/4 v0, -0x1
+
+    .line 28
+    :goto_0
+    new-instance v1, Landroid/content/Intent;
+
+    .line 29
+    .line 30
+    invoke-direct {v1}, Landroid/content/Intent;-><init>()V
+
+    .line 31
+    .line 32
+    .line 33
+    const/high16 v2, 0x10000000
+
+    .line 34
+    .line 35
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 36
+    .line 37
+    .line 38
+    const/high16 v2, 0x40000000    # 2.0f
+
+    .line 39
+    .line 40
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 41
+    .line 42
+    .line 43
+    const/high16 v2, 0x800000
+
+    .line 44
+    .line 45
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    .line 46
+    .line 47
+    .line 48
+    const/4 v2, 0x5
+
+    .line 49
+    if-ne v0, v2, :cond_1
+
+    .line 50
+    .line 51
+    const-string v0, "android.settings.APPLICATION_DETAILS_SETTINGS"
+
+    .line 52
+    .line 53
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 54
+    .line 55
+    .line 56
+    const-string v0, "package"
+
+    .line 57
+    .line 58
+    const/4 v2, 0x0
+
+    .line 59
+    invoke-static {v0, p1, v2}, Landroid/net/Uri;->fromParts(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    invoke-virtual {v1, p1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    .line 64
+    .line 65
+    .line 66
+    goto :goto_2
+
+    .line 67
+    :cond_1
+    const/4 v2, 0x6
+
+    .line 68
+    const-string v3, "extra_pkgname"
+
+    .line 69
+    .line 70
+    const-string v4, "com.miui.securitycenter"
+
+    .line 71
+    .line 72
+    const-string v5, "miui.intent.action.APP_PERM_EDITOR"
+
+    .line 73
+    .line 74
+    if-eq v0, v2, :cond_3
+
+    .line 75
+    .line 76
+    const/4 v2, 0x7
+
+    .line 77
+    if-ne v0, v2, :cond_2
+
+    .line 78
+    .line 79
+    goto :goto_1
+
+    .line 80
+    :cond_2
+    invoke-virtual {v1, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 81
+    .line 82
+    .line 83
+    const-string v0, "com.miui.permcenter.permissions.PermissionsEditorActivity"
+
+    .line 84
+    .line 85
+    invoke-virtual {v1, v4, v0}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-virtual {v1, v3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 89
+    .line 90
+    .line 91
+    goto :goto_2
+
+    .line 92
+    :cond_3
+    :goto_1
+    invoke-virtual {v1, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 93
+    .line 94
+    .line 95
+    new-instance v0, Landroid/content/ComponentName;
+
+    .line 96
+    .line 97
+    const-string v2, "com.miui.permcenter.permissions.AppPermissionsEditorActivity"
+
+    .line 98
+    .line 99
+    invoke-direct {v0, v4, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    .line 103
+    .line 104
+    .line 105
+    invoke-virtual {v1, v3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 106
+    .line 107
+    .line 108
+    :goto_2
+    invoke-static {p0, v1}, Lfnc;->e(Landroid/content/Context;Landroid/content/Intent;)V
+
+    .line 109
+    .line 110
+    .line 111
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LWpg;Lu5f;I)LTr7;
-    .locals 33
+.method public D(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 11
 
     .line 1
-    move-object/from16 v0, p0
+    check-cast p1, Lcom/google/protobuf/nano/MessageNano;
 
     .line 2
     .line 3
-    move-object/from16 v1, p1
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 4
     .line 5
-    new-instance v4, Lioc;
+    const-string v1, "protoRequest:convert"
 
     .line 6
     .line 7
-    invoke-virtual {v1}, LWpg;->a()Lpuc;
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 8
     .line 9
     .line 10
-    move-result-object v3
+    move-result v1
 
     .line 11
-    move-object/from16 v2, p2
+    :try_start_0
+    invoke-static {p1}, Lcom/google/protobuf/nano/MessageNano;->toByteArray(Lcom/google/protobuf/nano/MessageNano;)[B
 
     .line 12
     .line 13
-    check-cast v2, Lcnc;
-
     .line 14
+    move-result-object p1
+
     .line 15
-    iget-object v7, v0, Lfnc;->d:LUr7;
+    iget-object v2, p0, Lfnc;->b:Ljava/lang/Object;
 
     .line 16
     .line 17
-    iget-object v8, v0, Lfnc;->e:LGS8;
+    check-cast v2, LnHb;
 
     .line 18
     .line 19
-    iget-object v5, v0, Lfnc;->b:LB73;
+    array-length v3, p1
 
     .line 20
+    array-length v4, p1
+
     .line 21
-    iget-object v6, v0, Lfnc;->c:LLOi;
+    int-to-long v5, v4
 
     .line 22
+    const/4 v4, 0x0
+
     .line 23
-    move-object/from16 v32, v4
+    int-to-long v7, v4
 
     .line 24
+    int-to-long v9, v3
+
     .line 25
-    move-object v4, v2
+    invoke-static/range {v5 .. v10}, LcQj;->c(JJJ)V
 
     .line 26
-    move-object/from16 v2, v32
-
     .line 27
     .line 28
-    invoke-direct/range {v2 .. v8}, Lioc;-><init>(LdZe;Lcnc;LB73;LLOi;LUr7;LGS8;)V
+    new-instance v4, LZgf;
 
     .line 29
     .line 30
+    invoke-direct {v4, v2, v3, p1}, LZgf;-><init>(LnHb;I[B)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 31
-    move-object v4, v2
-
     .line 32
-    iget-object v10, v0, Lfnc;->a:LRde;
-
     .line 33
-    .line 34
-    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
+    .line 34
     .line 35
     .line 36
+    return-object v4
+
     .line 37
-    invoke-virtual {v1}, LWpg;->a()Lpuc;
+    :catchall_0
+    move-exception v0
 
     .line 38
-    .line 39
-    .line 40
-    move-result-object v11
+    move-object p1, v0
 
+    .line 39
+    sget-object v0, LOdh;->b:LtGi;
+
+    .line 40
     .line 41
-    invoke-virtual {v1}, LWpg;->a()Lpuc;
+    if-eqz v0, :cond_0
 
     .line 42
     .line 43
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
+
     .line 44
-    move-result-object v2
+    .line 45
+    .line 46
+    :cond_0
+    throw p1
+.end method
+
+.method public a(LYAa;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, LjLg;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, p1}, LjLg;->a(LYAa;)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
+
+    .line 1
+    iget v0, p0, Lfnc;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    :pswitch_0
+    check-cast p1, Ljava/lang/Number;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+
+    .line 12
+    new-instance v0, LmId;
+
+    .line 13
+    .line 14
+    iget-object v1, p0, Lfnc;->b:Ljava/lang/Object;
+
+    .line 15
+    .line 16
+    check-cast v1, LU42;
+
+    .line 17
+    .line 18
+    const/4 v2, 0x7
+
+    .line 19
+    invoke-direct {v0, v1, p1, v2}, LmId;-><init>(Ljava/lang/Object;II)V
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;
+
+    .line 23
+    .line 24
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;-><init>(Lio/reactivex/rxjava3/core/CompletableOnSubscribe;)V
+
+    .line 25
+    .line 26
+    .line 27
+    return-object p1
+
+    .line 28
+    :pswitch_1
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 29
+    .line 30
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 31
+    .line 32
+    .line 33
+    iget-object p1, p0, Lfnc;->b:Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    check-cast p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;
+
+    .line 36
+    .line 37
+    return-object p1
+
+    .line 38
+    :pswitch_2
+    check-cast p1, Lmid;
+
+    .line 39
+    .line 40
+    iget-object p1, p0, Lfnc;->b:Ljava/lang/Object;
+
+    .line 41
+    .line 42
+    check-cast p1, LFee;
+
+    .line 43
+    .line 44
+    return-object p1
 
     .line 45
-    iget-object v3, v1, LWpg;->a:LC01;
+    :pswitch_3
+    check-cast p1, Ljava/lang/Number;
 
     .line 46
     .line 47
-    new-instance v5, Lcom/snapchat/client/network_types/DeprecatedHttpRequestInfo;
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
 
     .line 48
     .line 49
-    const/4 v6, 0x0
-
     .line 50
-    iget-object v7, v3, LC01;->X:Ljava/lang/Object;
+    move-result-wide v0
 
     .line 51
+    const-wide/16 v2, 0x0
+
     .line 52
-    check-cast v7, Lcom/snapchat/client/network_types/RequestType;
-
     .line 53
-    .line 54
-    invoke-direct {v5, v6, v7}, Lcom/snapchat/client/network_types/DeprecatedHttpRequestInfo;-><init>(ZLcom/snapchat/client/network_types/RequestType;)V
+    cmp-long p1, v0, v2
 
+    .line 54
     .line 55
+    if-lez p1, :cond_0
+
     .line 56
     .line 57
-    new-instance v12, Lcom/snapchat/client/network_types/HttpRequest;
+    sget-object p1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 58
     .line 59
-    new-instance v7, Lcom/snapchat/client/network_types/HttpParams;
+    iget-object v2, p0, Lfnc;->b:Ljava/lang/Object;
 
     .line 60
     .line 61
-    new-instance v8, Ljava/util/ArrayList;
+    check-cast v2, Ljod;
 
     .line 62
     .line 63
-    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
+    iget-object v3, v2, Ljod;->n:LnJe;
 
     .line 64
     .line 65
-    .line 66
-    new-instance v9, Ljava/util/ArrayList;
+    invoke-virtual {v3}, LnJe;->d()LA36;
 
+    .line 66
     .line 67
     .line 68
-    iget-object v13, v2, LRpg;->d:Ljava/util/Map;
+    move-result-object v3
 
     .line 69
-    .line 70
-    invoke-interface {v13}, Ljava/util/Map;->size()I
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableTimer;
 
+    .line 70
     .line 71
+    invoke-direct {v4, v0, v1, p1, v3}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableTimer;-><init>(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 72
     .line 73
-    move-result v14
-
     .line 74
-    invoke-direct {v9, v14}, Ljava/util/ArrayList;-><init>(I)V
+    new-instance p1, LpBc;
 
     .line 75
     .line 76
+    const/4 v0, 0x4
+
     .line 77
-    invoke-interface {v13}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    invoke-direct {p1, v0, v2}, LpBc;-><init>(ILjava/lang/Object;)V
 
     .line 78
     .line 79
     .line 80
-    move-result-object v13
+    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 81
-    invoke-interface {v13}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
     .line 82
     .line 83
+    move-result-object p1
+
     .line 84
-    move-result-object v13
+    goto :goto_0
 
     .line 85
-    :goto_0
-    invoke-interface {v13}, Ljava/util/Iterator;->hasNext()Z
+    :cond_0
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
 
     .line 86
     .line 87
+    :goto_0
+    return-object p1
+
     .line 88
-    move-result v14
+    :pswitch_4
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 89
-    if-eqz v14, :cond_2
-
     .line 90
-    .line 91
-    invoke-interface {v13}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 91
     .line 92
     .line 93
+    move-result p1
+
     .line 94
-    move-result-object v14
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
 
     .line 95
-    check-cast v14, Ljava/util/Map$Entry;
-
     .line 96
-    .line 97
-    invoke-interface {v14}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    check-cast v0, Lfod;
 
+    .line 97
     .line 98
+    iget-object v1, v0, Lfod;->c:Lwe2;
+
     .line 99
     .line 100
-    move-result-object v15
+    iget-object v1, v1, Lwe2;->o:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 101
-    iget-object v6, v2, LRpg;->b:Ljava/lang/String;
-
     .line 102
-    .line 103
-    if-eqz v15, :cond_1
+    invoke-static {v1, v1}, LJF0;->n(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
+    .line 103
     .line 104
     .line 105
-    invoke-interface {v14}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    move-result-object v1
 
     .line 106
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtMaybe;
+
     .line 107
     .line 108
-    move-result-object v15
+    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtMaybe;-><init>(Lio/reactivex/rxjava3/core/Observable;)V
 
     .line 109
-    if-eqz v15, :cond_0
-
     .line 110
     .line 111
-    new-instance v6, Lcom/snapchat/client/network_types/Header;
+    new-instance v1, LtKb;
 
     .line 112
     .line 113
-    invoke-interface {v14}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    const/16 v3, 0xd
 
     .line 114
     .line 115
+    invoke-direct {v1, p1, v0, v3}, LtKb;-><init>(ZLjava/lang/Object;I)V
+
     .line 116
-    move-result-object v15
-
     .line 117
-    check-cast v15, Ljava/lang/String;
-
     .line 118
-    .line 119
-    invoke-interface {v14}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
 
+    .line 119
     .line 120
+    invoke-direct {p1, v2, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 121
     .line 122
-    move-result-object v14
-
     .line 123
-    check-cast v14, Ljava/lang/String;
+    return-object p1
 
     .line 124
-    .line 125
-    invoke-direct {v6, v15, v14}, Lcom/snapchat/client/network_types/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    :pswitch_5
+    check-cast p1, Lcom/snap/notification/processor/durablejob/NotificationPeriodicDurableJob;
 
+    .line 125
     .line 126
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
+
     .line 127
     .line 128
-    invoke-virtual {v8, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    check-cast v0, LNTc;
 
     .line 129
     .line 130
-    .line 131
-    move-result v6
+    iget-object v0, v0, LNTc;->a:LmF6;
 
+    .line 131
     .line 132
-    invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-interface {v0, p1}, LmF6;->n(LOE6;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 133
     .line 134
     .line 135
-    move-result-object v6
+    move-result-object p1
 
     .line 136
-    invoke-virtual {v9, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    return-object p1
 
     .line 137
+    :pswitch_6
+    check-cast p1, LdGi;
+
     .line 138
     .line 139
-    const/4 v6, 0x0
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
 
     .line 140
-    goto :goto_0
-
     .line 141
-    :cond_0
-    invoke-interface {v14}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    check-cast v0, LZQc;
 
     .line 142
     .line 143
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 144
-    move-result-object v1
-
     .line 145
-    new-instance v2, Ljava/lang/StringBuilder;
-
     .line 146
+    new-instance v1, LiVb;
+
     .line 147
-    const-string v3, "Request header value is null, header: "
-
     .line 148
-    .line 149
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const/16 v2, 0x1d
 
+    .line 149
     .line 150
+    invoke-direct {v1, p1, v2, v0}, LiVb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 151
     .line 152
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 153
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
+
     .line 154
     .line 155
-    const-string v1, ", url: "
+    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
 
     .line 156
     .line 157
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 158
+    invoke-virtual {p1}, LdGi;->a()Z
+
     .line 159
     .line 160
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 161
-    .line 162
-    .line 163
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result p1
 
+    .line 162
+    if-eqz p1, :cond_1
+
+    .line 163
     .line 164
+    iget-object p1, v0, LZQc;->e:LD65;
+
     .line 165
     .line 166
-    move-result-object v1
+    invoke-virtual {p1}, LD65;->get()Ljava/lang/Object;
 
     .line 167
-    new-instance v2, Ljava/lang/IllegalStateException;
-
     .line 168
     .line 169
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    move-result-object p1
 
     .line 170
+    check-cast p1, Lqm7;
+
     .line 171
     .line 172
-    move-result-object v1
+    invoke-virtual {p1}, Lqm7;->a()Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
 
     .line 173
-    invoke-direct {v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
     .line 174
     .line 175
+    move-result-object p1
+
     .line 176
-    throw v2
+    goto :goto_1
 
     .line 177
     :cond_1
-    const-string v1, "Request header key is null, url: "
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
 
     .line 178
     .line 179
-    invoke-static {v1, v6}, LEU0;->w(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    :goto_1
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
 
     .line 180
     .line 181
+    invoke-direct {v1, v2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
+
     .line 182
-    move-result-object v1
-
     .line 183
-    new-instance v2, Ljava/lang/IllegalStateException;
-
     .line 184
-    .line 185
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    iget-object p1, v0, LZQc;->b:LDBe;
 
+    .line 185
     .line 186
+    invoke-interface {p1}, LDBe;->get()Ljava/lang/Object;
+
     .line 187
     .line 188
-    move-result-object v1
-
     .line 189
-    invoke-direct {v2, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    move-result-object p1
 
     .line 190
+    check-cast p1, LNFi;
+
     .line 191
     .line 192
-    throw v2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 193
-    :cond_2
-    iget-object v6, v2, LRpg;->e:Ljava/lang/Object;
-
     .line 194
     .line 195
-    check-cast v6, LLpg;
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
 
     .line 196
     .line 197
-    if-eqz v6, :cond_3
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
 
     .line 198
     .line 199
-    iget-object v6, v6, LLpg;->a:LNtb;
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
 
     .line 200
     .line 201
-    if-eqz v6, :cond_3
-
     .line 202
+    return-object v0
+
     .line 203
-    new-instance v9, Lcom/snapchat/client/network_types/Header;
+    :pswitch_7
+    check-cast p1, Ljava/lang/Number;
 
     .line 204
     .line 205
-    const-string v13, "Content-Type"
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     .line 206
     .line 207
-    invoke-virtual {v6}, LNtb;->toString()Ljava/lang/String;
-
     .line 208
+    iget-object p1, p0, Lfnc;->b:Ljava/lang/Object;
+
     .line 209
     .line 210
-    move-result-object v6
+    check-cast p1, LAOc;
 
     .line 211
-    invoke-direct {v9, v13, v6}, Lcom/snapchat/client/network_types/Header;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 212
+    iget-object v0, p1, LAOc;->t:Ljava/lang/Object;
+
     .line 213
     .line 214
-    invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    check-cast v0, LUZ7;
 
     .line 215
     .line 216
+    iget-object v0, v0, LUZ7;->c:Ljava/lang/Object;
+
     .line 217
-    :cond_3
-    iget v6, v2, LRpg;->c:I
-
     .line 218
-    .line 219
-    invoke-static {v6}, Llva;->L(I)I
+    check-cast v0, LOF3;
 
+    .line 219
     .line 220
+    sget-object v1, LlY1;->Z4:LlY1;
+
     .line 221
     .line 222
-    move-result v6
+    invoke-interface {v0, v1}, LOF3;->y(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 223
-    const/4 v9, 0x1
-
     .line 224
-    const/4 v13, 0x3
-
     .line 225
-    if-eqz v6, :cond_8
+    move-result-object v0
 
     .line 226
+    new-instance v1, Lyuc;
+
     .line 227
-    if-eq v6, v9, :cond_7
-
     .line 228
-    .line 229
-    const/4 v14, 0x2
+    const/16 v2, 0xb
 
+    .line 229
     .line 230
-    if-eq v6, v14, :cond_6
+    invoke-direct {v1, v2, p1}, Lyuc;-><init>(ILjava/lang/Object;)V
 
     .line 231
     .line 232
-    if-eq v6, v13, :cond_5
-
     .line 233
-    .line 234
-    const/4 v14, 0x4
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
 
+    .line 234
     .line 235
-    if-ne v6, v14, :cond_4
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 236
     .line 237
-    sget-object v6, Lcom/snapchat/client/network_types/HttpMethod;->HEAD:Lcom/snapchat/client/network_types/HttpMethod;
-
     .line 238
+    return-object p1
+
     .line 239
-    goto :goto_1
+    :pswitch_8
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 240
-    :cond_4
-    new-instance v1, LFzc;
-
     .line 241
-    .line 242
-    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 242
     .line 243
     .line 244
-    .line 245
-    throw v1
+    new-instance v0, Landroid/util/Pair;
 
+    .line 245
     .line 246
-    :cond_5
-    sget-object v6, Lcom/snapchat/client/network_types/HttpMethod;->DELETE:Lcom/snapchat/client/network_types/HttpMethod;
+    iget-object v1, p0, Lfnc;->b:Ljava/lang/Object;
 
     .line 247
     .line 248
-    goto :goto_1
+    check-cast v1, LhFc;
 
     .line 249
-    :cond_6
-    sget-object v6, Lcom/snapchat/client/network_types/HttpMethod;->POST:Lcom/snapchat/client/network_types/HttpMethod;
-
     .line 250
-    .line 251
-    goto :goto_1
+    iget-object v1, v1, LhFc;->a:LL4b;
 
+    .line 251
     .line 252
-    :cond_7
-    sget-object v6, Lcom/snapchat/client/network_types/HttpMethod;->PUT:Lcom/snapchat/client/network_types/HttpMethod;
+    invoke-direct {v0, v1, p1}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 253
     .line 254
-    goto :goto_1
-
     .line 255
-    :cond_8
-    sget-object v6, Lcom/snapchat/client/network_types/HttpMethod;->GET:Lcom/snapchat/client/network_types/HttpMethod;
+    return-object v0
 
     .line 256
-    .line 257
-    :goto_1
-    invoke-direct {v7, v8, v6}, Lcom/snapchat/client/network_types/HttpParams;-><init>(Ljava/util/ArrayList;Lcom/snapchat/client/network_types/HttpMethod;)V
+    :pswitch_9
+    check-cast p1, Lewj;
 
+    .line 257
     .line 258
+    new-instance p1, LtX;
+
     .line 259
     .line 260
-    const/16 v17, 0x0
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
 
     .line 261
     .line 262
-    const/16 v19, 0x0
+    check-cast v0, LxMc;
 
     .line 263
     .line 264
-    const/4 v6, 0x3
+    const/16 v1, 0x15
 
     .line 265
-    iget-wide v13, v1, LWpg;->h:J
-
     .line 266
-    .line 267
-    iget-object v15, v2, LRpg;->b:Ljava/lang/String;
+    invoke-direct {p1, v1, v0}, LtX;-><init>(ILjava/lang/Object;)V
 
+    .line 267
     .line 268
     .line 269
-    move-object/from16 v18, v5
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;
 
     .line 270
     .line 271
-    move-object/from16 v16, v7
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 272
     .line 273
-    const/16 v20, 0x3
-
     .line 274
+    return-object v0
+
     .line 275
-    invoke-direct/range {v12 .. v19}, Lcom/snapchat/client/network_types/HttpRequest;-><init>(JLjava/lang/String;Lcom/snapchat/client/network_types/HttpParams;ZLcom/snapchat/client/network_types/DeprecatedHttpRequestInfo;Z)V
+    :pswitch_a
+    check-cast p1, Ljava/lang/String;
 
     .line 276
     .line 277
+    new-instance v0, Landroid/util/Pair;
+
     .line 278
-    new-instance v2, LFi5;
-
     .line 279
+    iget-object v1, p0, Lfnc;->b:Ljava/lang/Object;
+
     .line 280
-    const/16 v5, 0x1d
-
     .line 281
-    .line 282
-    invoke-direct {v2, v10, v5, v12}, LFi5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    check-cast v1, Ljava/util/Map$Entry;
 
+    .line 282
     .line 283
+    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
     .line 284
     .line 285
-    iget-object v5, v10, LRde;->e:LpK5;
-
     .line 286
+    move-result-object v1
+
     .line 287
-    iget-object v5, v5, LpK5;->a:Lbke;
+    invoke-direct {v0, v1, p1}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 288
     .line 289
-    invoke-interface {v5}, Lbke;->get()Ljava/lang/Object;
-
     .line 290
-    .line 291
-    .line 292
-    move-result-object v5
+    return-object v0
 
+    .line 291
+    :pswitch_b
+    check-cast p1, Landroid/view/ViewGroup;
+
+    .line 292
     .line 293
-    check-cast v5, Lmnc;
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
 
     .line 294
     .line 295
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast v0, LvMc;
 
     .line 296
     .line 297
-    .line 298
-    invoke-virtual {v1}, LWpg;->a()Lpuc;
+    iget-object v1, v0, LvMc;->m0:Ljava/util/LinkedHashMap;
 
+    .line 298
     .line 299
+    invoke-static {v1}, LIe9;->c(Ljava/util/Map;)LIe9;
+
     .line 300
     .line 301
-    move-result-object v6
-
     .line 302
-    iget v7, v1, LWpg;->g:I
+    move-result-object v1
 
     .line 303
-    .line 304
-    invoke-virtual {v5, v6, v7}, Lmnc;->c(Lpuc;I)Lcom/snapchat/client/mdp_common/RankingSignals;
+    iget-object v2, v0, LvMc;->n0:Ljava/util/LinkedHashMap;
 
+    .line 304
     .line 305
+    invoke-static {v2}, LIe9;->c(Ljava/util/Map;)LIe9;
+
     .line 306
     .line 307
-    move-result-object v13
-
     .line 308
-    new-instance v5, LfJd;
+    move-result-object v2
 
     .line 309
-    .line 310
-    const/4 v6, 0x6
+    iget-object v3, v0, LvMc;->t:LxMc;
 
+    .line 310
     .line 311
-    invoke-direct {v5, v6, v12}, LfJd;-><init>(ILjava/lang/Object;)V
+    iget-boolean v4, v3, LxMc;->q:Z
 
     .line 312
     .line 313
+    if-eqz v4, :cond_2
+
     .line 314
-    new-instance v6, LXfi;
-
     .line 315
-    .line 316
-    invoke-direct {v6, v5}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
 
+    .line 316
     .line 317
+    goto :goto_2
+
     .line 318
+    :cond_2
+    const/4 v4, 0x1
+
     .line 319
-    sget-object v5, LUId;->a:Ljava/util/List;
+    iput-boolean v4, v3, LxMc;->q:Z
 
     .line 320
     .line 321
-    invoke-virtual {v13}, Lcom/snapchat/client/mdp_common/RankingSignals;->getMediaContextType()Lcom/snapchat/client/mdp_common/MediaContextType;
+    iput-object v1, v3, LxMc;->o:LIe9;
 
     .line 322
     .line 323
-    .line 324
-    move-result-object v5
+    iput-object v2, v3, LxMc;->p:LIe9;
 
+    .line 324
     .line 325
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
+    new-instance v4, Luz;
 
     .line 326
     .line 327
-    .line 328
-    move-result v5
+    const/16 v5, 0x19
 
+    .line 328
     .line 329
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-direct {v4, v5, v1}, Luz;-><init>(ILjava/lang/Object;)V
 
     .line 330
     .line 331
     .line 332
-    move-result-object v5
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
 
     .line 333
-    sget-object v7, LUId;->a:Ljava/util/List;
-
     .line 334
-    .line 335
-    invoke-interface {v7, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+    invoke-direct {v5, v4}, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
 
+    .line 335
     .line 336
     .line 337
-    .line 338
-    move-result v5
+    iget-object v4, v3, LxMc;->d:LnJe;
 
+    .line 338
     .line 339
-    if-eqz v5, :cond_9
+    invoke-virtual {v4}, LnJe;->h()LA36;
 
     .line 340
     .line 341
-    sget-object v5, Lcom/snapchat/client/network_types/RequestType;->LARGE_MEDIA:Lcom/snapchat/client/network_types/RequestType;
-
     .line 342
+    move-result-object v6
+
     .line 343
-    iget-object v3, v3, LC01;->X:Ljava/lang/Object;
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
     .line 344
     .line 345
-    check-cast v3, Lcom/snapchat/client/network_types/RequestType;
+    invoke-direct {v7, v5, v6}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 346
     .line 347
-    if-ne v3, v5, :cond_9
-
     .line 348
+    invoke-virtual {v4}, LnJe;->h()LA36;
+
     .line 349
-    const/4 v3, 0x1
-
     .line 350
-    goto :goto_2
-
     .line 351
-    :cond_9
-    const/4 v3, 0x0
+    move-result-object v5
 
     .line 352
-    :goto_2
-    iget-boolean v5, v11, LRpg;->g:Z
+    new-instance v6, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
 
     .line 353
     .line 354
-    if-eqz v5, :cond_a
+    invoke-direct {v6, v7, v5}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 355
     .line 356
-    if-nez v3, :cond_a
-
     .line 357
-    .line 358
-    const/4 v14, 0x1
+    new-instance v5, Laqk;
 
+    .line 358
     .line 359
-    goto :goto_3
+    const/16 v7, 0x12
 
     .line 360
-    :cond_a
-    const/4 v14, 0x0
-
     .line 361
-    :goto_3
-    if-ne v14, v9, :cond_b
+    invoke-direct {v5, v1, v3, p1, v7}, Laqk;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 362
     .line 363
-    sget-object v3, Lcom/snapchat/client/network_types/BytesConsumptionType;->PROGRESSIVE:Lcom/snapchat/client/network_types/BytesConsumptionType;
-
     .line 364
-    .line 365
-    :goto_4
-    move-object v15, v3
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
+    .line 365
     .line 366
-    goto :goto_5
+    invoke-direct {p1, v6, v5}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 367
-    :cond_b
-    if-nez v14, :cond_14
-
     .line 368
     .line 369
-    sget-object v3, Lcom/snapchat/client/network_types/BytesConsumptionType;->NON_PROGRESSIVE:Lcom/snapchat/client/network_types/BytesConsumptionType;
+    invoke-virtual {v4}, LnJe;->i()Lxp0;
 
     .line 370
     .line 371
-    goto :goto_4
-
     .line 372
-    :goto_5
-    iget-object v3, v10, LRde;->d:LB73;
+    move-result-object v1
 
     .line 373
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
+
     .line 374
-    iget-object v5, v10, LRde;->j:Lbke;
-
     .line 375
-    .line 376
-    iget-object v7, v4, Lioc;->k:Lgoc;
+    invoke-direct {v4, p1, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 376
     .line 377
     .line 378
-    iget-object v8, v4, Lioc;->i:Ljava/util/UUID;
+    new-instance p1, LHW3;
 
     .line 379
     .line 380
-    if-ne v14, v9, :cond_c
+    iget-object v0, v0, LvMc;->h0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 381
     .line 382
-    new-instance v21, Lcee;
+    const/4 v1, 0x4
 
     .line 383
-    .line 384
-    iget-object v9, v10, LRde;->k:LXfi;
+    invoke-direct {p1, v3, v0, v2, v1}, LHW3;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 384
     .line 385
     .line 386
-    invoke-virtual {v9}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 387
     .line 388
     .line 389
-    move-result-object v9
+    move-result-object p1
 
     .line 390
-    move-object/from16 v22, v9
+    :goto_2
+    return-object p1
 
     .line 391
+    :pswitch_c
+    check-cast p1, Lrz;
+
     .line 392
-    check-cast v22, Lcom/snapchat/client/network_api/NetworkApi;
-
     .line 393
-    .line 394
-    invoke-interface {v5}, Lbke;->get()Ljava/lang/Object;
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
 
+    .line 394
     .line 395
+    check-cast v0, LcMc;
+
     .line 396
     .line 397
-    move-result-object v9
+    iget-object v0, v0, LcMc;->A:LVZ7;
 
     .line 398
-    check-cast v9, Lltc;
-
     .line 399
-    .line 400
-    new-instance v0, LRs6;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 400
     .line 401
     .line 402
-    const/4 v1, 0x1
+    new-instance v1, LtX;
 
     .line 403
-    invoke-direct {v0, v1, v8, v7, v9}, LRs6;-><init>(ZLjava/util/UUID;Lgoc;Lltc;)V
-
     .line 404
+    const/16 v2, 0x9
+
     .line 405
     .line 406
-    invoke-virtual {v6}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-direct {v1, v2, v0}, LtX;-><init>(ILjava/lang/Object;)V
 
     .line 407
     .line 408
     .line 409
-    move-result-object v1
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
 
     .line 410
-    move-object/from16 v24, v1
-
     .line 411
-    .line 412
-    check-cast v24, LGNi;
+    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
+    .line 412
     .line 413
     .line 414
-    new-instance v1, Ls6e;
+    new-instance v1, LUZ7;
 
     .line 415
     .line 416
-    invoke-direct {v1, v4}, Ls6e;-><init>(Lioc;)V
+    const/4 v3, 0x0
 
     .line 417
+    invoke-direct {v1, p1, v3, v0}, LUZ7;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 418
     .line 419
-    new-instance v6, LXs6;
-
     .line 420
-    .line 421
-    invoke-direct {v6, v4}, LXs6;-><init>(Lioc;)V
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
+    .line 421
     .line 422
+    invoke-direct {p1, v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 423
     .line 424
-    invoke-interface {v5}, Lbke;->get()Ljava/lang/Object;
-
     .line 425
+    new-instance v1, LXD5;
+
     .line 426
     .line 427
-    move-result-object v5
+    const/16 v2, 0xf
 
     .line 428
-    move-object/from16 v28, v5
-
     .line 429
-    .line 430
-    check-cast v28, Lltc;
+    invoke-direct {v1, v2, v0}, LXD5;-><init>(ILjava/lang/Object;)V
 
+    .line 430
     .line 431
     .line 432
-    iget-object v5, v10, LRde;->b:LXZ5;
+    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 433
     .line 434
-    invoke-virtual {v5}, LXZ5;->get()Ljava/lang/Object;
-
     .line 435
+    move-result-object p1
+
     .line 436
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Completable;->p()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+
     .line 437
-    move-result-object v5
-
     .line 438
-    check-cast v5, LkT6;
-
     .line 439
+    move-result-object p1
+
     .line 440
-    new-instance v5, LWl9;
+    return-object p1
 
     .line 441
+    :pswitch_d
+    check-cast p1, Lcom/snapchat/client/content_manager/ContentManagerSupportInterfaces;
+
     .line 442
-    iget-boolean v7, v11, LRpg;->h:Z
-
     .line 443
-    .line 444
-    invoke-direct {v5, v3, v7}, LWl9;-><init>(LB73;Z)V
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
 
+    .line 444
     .line 445
+    check-cast v0, Lq25;
+
     .line 446
     .line 447
-    iget-object v7, v10, LRde;->i:LeNe;
+    invoke-virtual {v0}, Lq25;->get()Ljava/lang/Object;
 
     .line 448
     .line 449
-    iget-object v8, v10, LRde;->c:Ljava/util/concurrent/Executor;
-
     .line 450
+    move-result-object v0
+
     .line 451
-    move-object/from16 v23, v0
+    check-cast v0, LI23;
 
     .line 452
     .line 453
-    move-object/from16 v26, v1
+    const-wide/16 v1, 0x42
 
     .line 454
     .line 455
-    move-object/from16 v29, v2
+    invoke-interface {v0, v1, v2}, LI23;->d(J)Lio/reactivex/rxjava3/core/Completable;
 
     .line 456
     .line 457
-    move-object/from16 v30, v5
-
     .line 458
+    move-result-object v0
+
     .line 459
-    move-object/from16 v27, v6
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Completable;->A(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
 
     .line 460
     .line 461
-    move-object/from16 v31, v7
-
     .line 462
+    move-result-object p1
+
     .line 463
-    move-object/from16 v25, v8
+    return-object p1
 
     .line 464
-    .line 465
-    invoke-direct/range {v21 .. v31}, Lcee;-><init>(Lcom/snapchat/client/network_api/NetworkApi;LRs6;LGNi;Ljava/util/concurrent/Executor;Ls6e;LXs6;Lltc;LFi5;LWl9;LeNe;)V
+    :pswitch_e
+    check-cast p1, LLod;
 
+    .line 465
     .line 466
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
+
     .line 467
     .line 468
-    move-object/from16 v0, v29
+    check-cast v0, Leoc;
 
     .line 469
     .line 470
-    move-object v1, v3
+    iget-object v0, v0, Leoc;->c:LDBe;
 
     .line 471
-    const/16 v17, 0x0
-
     .line 472
-    .line 473
-    :goto_6
-    move-object/from16 v6, v21
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
+    .line 473
     .line 474
     .line 475
-    goto :goto_7
+    move-result-object v0
 
     .line 476
-    :cond_c
-    move-object v0, v2
+    check-cast v0, Lqu5;
 
     .line 477
-    if-nez v14, :cond_13
-
     .line 478
-    .line 479
-    invoke-interface {v5}, Lbke;->get()Ljava/lang/Object;
+    iget-object v0, v0, Llu5;->a:Lvu5;
 
+    .line 479
     .line 480
+    invoke-virtual {v0}, LL42;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
     .line 481
     .line 482
-    move-result-object v1
-
     .line 483
-    check-cast v1, Lltc;
+    move-result-object v0
 
     .line 484
+    new-instance v1, Lzd0;
+
     .line 485
-    new-instance v2, LRs6;
-
     .line 486
-    .line 487
-    const/4 v9, 0x0
+    const/16 v2, 0xe
 
+    .line 487
     .line 488
-    invoke-direct {v2, v9, v8, v7, v1}, LRs6;-><init>(ZLjava/util/UUID;Lgoc;Lltc;)V
+    invoke-direct {v1, v2, p1}, Lzd0;-><init>(ILjava/lang/Object;)V
 
     .line 489
     .line 490
     .line 491
-    invoke-virtual {v6}, LXfi;->getValue()Ljava/lang/Object;
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
     .line 492
     .line 493
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
     .line 494
-    move-result-object v1
-
     .line 495
-    move-object/from16 v23, v1
-
     .line 496
+    return-object p1
+
     .line 497
-    check-cast v23, LGNi;
+    :pswitch_f
+    check-cast p1, Lal4;
 
     .line 498
     .line 499
-    new-instance v26, LT21;
+    instance-of v0, p1, LVk4;
 
     .line 500
     .line 501
-    const-string v7, "onResponse(Lcom/snap/network/transport/api/Response;Z)V"
+    if-eqz v0, :cond_6
 
     .line 502
     .line 503
-    const/4 v8, 0x0
+    check-cast p1, LVk4;
 
     .line 504
-    move-object v1, v3
-
     .line 505
-    const/4 v3, 0x2
+    iget-object p1, p1, LVk4;->a:Ljava/util/Set;
 
     .line 506
-    move-object v6, v5
-
     .line 507
-    const-class v5, Lioc;
+    instance-of v0, p1, Ljava/util/Collection;
 
     .line 508
     .line 509
-    move-object/from16 v16, v6
+    if-eqz v0, :cond_3
 
     .line 510
     .line 511
-    const-string v6, "onResponse"
+    invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     .line 512
     .line 513
-    const/16 v17, 0x0
-
     .line 514
+    move-result v0
+
     .line 515
-    const/4 v9, 0x2
+    if-eqz v0, :cond_3
 
     .line 516
-    move-object/from16 v22, v2
-
     .line 517
+    goto :goto_3
+
     .line 518
-    move-object/from16 v2, v26
+    :cond_3
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     .line 519
     .line 520
-    invoke-direct/range {v2 .. v9}, LT21;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
-
     .line 521
-    .line 522
-    .line 523
-    new-instance v2, LO7a;
+    move-result-object p1
 
+    .line 522
+    :cond_4
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 523
     .line 524
     .line 525
-    const-string v7, "onRequestStart()V"
+    move-result v0
 
     .line 526
-    .line 527
-    const/4 v8, 0x0
+    if-eqz v0, :cond_5
 
+    .line 527
     .line 528
-    const/4 v3, 0x0
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 529
-    const-class v5, Lioc;
-
     .line 530
     .line 531
-    const-string v6, "onRequestStart"
+    move-result-object v0
 
     .line 532
+    check-cast v0, Lnp0;
+
     .line 533
-    const/16 v9, 0x11
-
     .line 534
-    .line 535
-    invoke-direct/range {v2 .. v9}, LO7a;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    iget-object v0, v0, Lnp0;->a:Lrp0;
 
+    .line 535
     .line 536
+    iget-object v1, p0, Lfnc;->b:Ljava/lang/Object;
+
     .line 537
     .line 538
-    invoke-interface/range {v16 .. v16}, Lbke;->get()Ljava/lang/Object;
+    check-cast v1, Lrp0;
 
     .line 539
     .line 540
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 541
-    move-result-object v3
-
     .line 542
-    move-object/from16 v27, v3
-
     .line 543
+    move-result v0
+
     .line 544
-    check-cast v27, Lltc;
+    if-eqz v0, :cond_4
 
     .line 545
     .line 546
-    new-instance v21, LHAc;
+    goto :goto_4
 
     .line 547
+    :cond_5
+    :goto_3
+    const/4 p1, 0x1
+
     .line 548
-    iget-object v3, v10, LRde;->c:Ljava/util/concurrent/Executor;
+    goto :goto_5
 
     .line 549
+    :cond_6
+    :goto_4
+    const/4 p1, 0x0
+
     .line 550
-    iget-object v5, v10, LRde;->i:LeNe;
+    :goto_5
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 551
     .line 552
-    move-object/from16 v25, v2
-
     .line 553
+    move-result-object p1
+
     .line 554
-    move-object/from16 v24, v3
+    return-object p1
 
     .line 555
-    .line 556
-    move-object/from16 v28, v5
-
-    .line 557
-    .line 558
-    invoke-direct/range {v21 .. v28}, LHAc;-><init>(LRs6;LGNi;Ljava/util/concurrent/Executor;LO7a;LT21;Lltc;LeNe;)V
-
-    .line 559
-    .line 560
-    .line 561
-    goto :goto_6
-
-    .line 562
-    :goto_7
-    invoke-virtual/range {p1 .. p1}, LWpg;->a()Lpuc;
-
-    .line 563
-    .line 564
-    .line 565
-    move-result-object v2
-
-    .line 566
-    sget-object v3, LMZe;->a:Ljava/lang/String;
-
-    .line 567
-    .line 568
-    const/4 v3, 0x0
-
-    .line 569
-    iget-object v5, v11, LRpg;->f:Ljava/util/Map;
-
-    .line 570
-    .line 571
-    if-eqz v5, :cond_d
-
-    .line 572
-    .line 573
-    sget-object v7, LMZe;->p:Ljava/lang/String;
-
-    .line 574
-    .line 575
-    invoke-interface {v5, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 576
-    .line 577
-    .line 578
-    move-result-object v5
-
-    .line 579
-    goto :goto_8
-
-    .line 580
-    :cond_d
-    move-object v5, v3
-
-    .line 581
-    :goto_8
-    instance-of v7, v5, Lcom/snapchat/client/network_types/RetryConfig;
-
-    .line 582
-    .line 583
-    if-eqz v7, :cond_e
-
-    .line 584
-    .line 585
-    move-object v3, v5
-
-    .line 586
-    check-cast v3, Lcom/snapchat/client/network_types/RetryConfig;
-
-    .line 587
-    .line 588
-    :cond_e
-    iget-object v5, v10, LRde;->h:Lkoc;
-
-    .line 589
-    .line 590
-    if-eqz v3, :cond_f
-
-    .line 591
-    .line 592
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 593
-    .line 594
-    .line 595
-    :goto_9
-    move-object v8, v3
-
-    .line 596
-    goto/16 :goto_c
-
-    .line 597
-    .line 598
-    :cond_f
-    iget-object v3, v5, Lkoc;->a:Lenc;
-
-    .line 599
-    .line 600
-    invoke-virtual {v3}, Lenc;->a()LpC3;
-
-    .line 601
-    .line 602
-    .line 603
-    move-result-object v3
-
-    .line 604
-    sget-object v7, Latc;->r0:Latc;
-
-    .line 605
-    .line 606
-    invoke-interface {v3, v7}, LpC3;->a(LBI3;)Z
-
-    .line 607
-    .line 608
-    .line 609
-    move-result v3
-
-    .line 610
-    if-nez v3, :cond_10
-
-    .line 611
-    .line 612
-    iget-object v2, v5, Lkoc;->f:LXfi;
-
-    .line 613
-    .line 614
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 615
-    .line 616
-    .line 617
-    move-result-object v2
-
-    .line 618
-    move-object v3, v2
-
-    .line 619
-    check-cast v3, Lcom/snapchat/client/network_types/RetryConfig;
-
-    .line 620
-    .line 621
-    goto :goto_9
-
-    .line 622
-    :cond_10
-    iget v2, v2, Lpuc;->j:I
-
-    .line 623
-    .line 624
-    invoke-static {v2}, Llva;->L(I)I
-
-    .line 625
-    .line 626
-    .line 627
-    move-result v2
-
-    .line 628
-    packed-switch v2, :pswitch_data_0
-
-    .line 629
-    .line 630
-    .line 631
-    new-instance v0, LFzc;
-
-    .line 632
-    .line 633
-    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 634
-    .line 635
-    .line 636
-    throw v0
-
-    .line 637
-    :pswitch_0
-    iget-object v2, v5, Lkoc;->c:LXfi;
-
-    .line 638
-    .line 639
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 640
-    .line 641
-    .line 642
-    move-result-object v2
-
-    .line 643
-    check-cast v2, Ljava/lang/Boolean;
-
-    .line 644
-    .line 645
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 646
-    .line 647
-    .line 648
-    move-result v2
-
-    .line 649
-    if-eqz v2, :cond_11
-
-    .line 650
-    .line 651
-    :goto_a
-    const/16 v22, 0x3
-
-    .line 652
-    .line 653
-    goto :goto_b
-
-    .line 654
-    :cond_11
-    const/16 v22, 0x0
-
-    .line 655
-    .line 656
-    goto :goto_b
-
-    .line 657
-    :pswitch_1
-    iget-object v2, v5, Lkoc;->e:LXfi;
-
-    .line 658
-    .line 659
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 660
-    .line 661
-    .line 662
-    move-result-object v2
-
-    .line 663
-    check-cast v2, Ljava/lang/Boolean;
-
-    .line 664
-    .line 665
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 666
-    .line 667
-    .line 668
-    move-result v2
-
-    .line 669
-    if-eqz v2, :cond_11
-
-    .line 670
-    .line 671
-    goto :goto_a
-
-    .line 672
-    :pswitch_2
-    iget-object v2, v5, Lkoc;->d:LXfi;
-
-    .line 673
-    .line 674
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 675
-    .line 676
-    .line 677
-    move-result-object v2
-
-    .line 678
-    check-cast v2, Ljava/lang/Boolean;
-
-    .line 679
-    .line 680
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 681
-    .line 682
-    .line 683
-    move-result v2
-
-    .line 684
-    if-eqz v2, :cond_11
-
-    .line 685
-    .line 686
-    goto :goto_a
-
-    .line 687
-    :pswitch_3
-    iget-object v2, v5, Lkoc;->b:LXfi;
-
-    .line 688
-    .line 689
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 690
-    .line 691
-    .line 692
-    move-result-object v2
-
-    .line 693
-    check-cast v2, Ljava/lang/Boolean;
-
-    .line 694
-    .line 695
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 696
-    .line 697
-    .line 698
-    move-result v2
-
-    .line 699
-    if-eqz v2, :cond_11
-
-    .line 700
-    .line 701
-    goto :goto_a
-
-    .line 702
-    :goto_b
-    if-eqz v14, :cond_12
-
-    .line 703
-    .line 704
-    new-instance v23, Lcom/snapchat/client/network_types/RetryConfig;
-
-    .line 705
-    .line 706
-    sget-object v26, Lcom/snapchat/client/network_types/RetryPolicy;->REGULARBACKOFF_RETRY:Lcom/snapchat/client/network_types/RetryPolicy;
-
-    .line 707
-    .line 708
-    new-instance v29, Ljava/util/HashSet;
-
-    .line 709
-    .line 710
-    invoke-direct/range {v29 .. v29}, Ljava/util/HashSet;-><init>()V
-
-    .line 711
-    .line 712
-    .line 713
-    const/16 v25, 0x0
-
-    .line 714
-    .line 715
-    const-wide/16 v27, 0x15e
-
-    .line 716
-    .line 717
-    const/16 v24, 0x5
-
-    .line 718
-    .line 719
-    const-wide/16 v30, 0x0
-
-    .line 720
-    .line 721
-    invoke-direct/range {v23 .. v31}, Lcom/snapchat/client/network_types/RetryConfig;-><init>(IILcom/snapchat/client/network_types/RetryPolicy;JLjava/util/HashSet;J)V
-
-    .line 722
-    .line 723
-    .line 724
-    move-object/from16 v8, v23
-
-    .line 725
-    .line 726
-    goto :goto_c
-
-    .line 727
-    :cond_12
-    new-instance v21, Lcom/snapchat/client/network_types/RetryConfig;
-
-    .line 728
-    .line 729
-    sget-object v24, Lcom/snapchat/client/network_types/RetryPolicy;->REGULARBACKOFF_RETRY:Lcom/snapchat/client/network_types/RetryPolicy;
-
-    .line 730
-    .line 731
-    new-instance v27, Ljava/util/HashSet;
-
-    .line 732
-    .line 733
-    invoke-direct/range {v27 .. v27}, Ljava/util/HashSet;-><init>()V
-
-    .line 734
-    .line 735
-    .line 736
-    const-wide/16 v28, 0x0
-
-    .line 737
-    .line 738
-    const/16 v23, 0x0
-
-    .line 739
-    .line 740
-    const-wide/16 v25, 0xc8
-
-    .line 741
-    .line 742
-    invoke-direct/range {v21 .. v29}, Lcom/snapchat/client/network_types/RetryConfig;-><init>(IILcom/snapchat/client/network_types/RetryPolicy;JLjava/util/HashSet;J)V
-
-    .line 743
-    .line 744
-    .line 745
-    move-object/from16 v8, v21
-
-    .line 746
-    .line 747
-    :goto_c
-    move-object v3, v1
-
-    .line 748
-    check-cast v3, LOze;
-
-    .line 749
-    .line 750
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 751
-    .line 752
-    .line 753
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    .line 754
-    .line 755
-    .line 756
-    new-instance v1, LPde;
-
-    .line 757
-    .line 758
-    move-object v7, v4
-
-    .line 759
-    move-object v3, v10
-
-    .line 760
-    move-object v2, v11
-
-    .line 761
-    move-object v4, v12
-
-    .line 762
-    move-object v5, v13
-
-    .line 763
-    move-object v9, v15
-
-    .line 764
-    invoke-direct/range {v1 .. v9}, LPde;-><init>(LdZe;LRde;Lcom/snapchat/client/network_types/HttpRequest;Lcom/snapchat/client/mdp_common/RankingSignals;Lcom/snapchat/client/network_types/HttpRequestCallback;Lioc;Lcom/snapchat/client/network_types/RetryConfig;Lcom/snapchat/client/network_types/BytesConsumptionType;)V
-
-    .line 765
-    .line 766
-    .line 767
-    move-object v4, v7
-
-    .line 768
-    iget-object v2, v3, LRde;->f:LdI8;
-
-    .line 769
-    .line 770
-    invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 771
-    .line 772
-    .line 773
-    new-instance v1, LQde;
-
-    .line 774
-    .line 775
-    invoke-direct {v1, v0, v3, v12}, LQde;-><init>(LFi5;LRde;Lcom/snapchat/client/network_types/HttpRequest;)V
-
-    .line 776
-    .line 777
-    .line 778
-    iget-object v0, v4, Lioc;->n:LXfi;
-
-    .line 779
-    .line 780
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 781
-    .line 782
-    .line 783
-    move-result-object v0
-
-    .line 784
-    check-cast v0, LHHc;
-
-    .line 785
-    .line 786
-    invoke-virtual {v0, v1}, LHHc;->b(Ljava/lang/Object;)V
-
-    .line 787
-    .line 788
-    .line 789
-    iget-object v0, v4, Lioc;->o:LTr7;
-
-    .line 790
-    .line 791
-    return-object v0
-
-    .line 792
-    :cond_13
-    new-instance v0, LFzc;
-
-    .line 793
-    .line 794
-    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 795
-    .line 796
-    .line 797
-    throw v0
-
-    .line 798
-    :cond_14
-    new-instance v0, LFzc;
-
-    .line 799
-    .line 800
-    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 801
-    .line 802
-    .line 803
-    throw v0
-
-    .line 804
-    nop
-
-    .line 805
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_f
+        :pswitch_e
+        :pswitch_0
+        :pswitch_d
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_0
+        :pswitch_4
         :pswitch_3
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
         :pswitch_2
-        :pswitch_2
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
         :pswitch_1
-        :pswitch_0
-        :pswitch_2
-        :pswitch_0
     .end packed-switch
+.end method
+
+.method public b(LmLg;)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    check-cast v0, LqCc;
+
+    .line 4
+    .line 5
+    monitor-enter v0
+
+    .line 6
+    :try_start_0
+    iget-object v1, v0, LqCc;->j:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 7
+    .line 8
+    iget-object v2, p1, LmLg;->e:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v1, v2, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v1, v0, LqCc;->b:LMX6;
+
+    .line 14
+    .line 15
+    new-instance v2, LpCc;
+
+    .line 16
+    .line 17
+    invoke-direct {v2, v0, p1}, LpCc;-><init>(LqCc;LmLg;)V
+
+    .line 18
+    .line 19
+    .line 20
+    const/4 v3, 0x3
+
+    .line 21
+    invoke-interface {v1, p1, v2, v3}, LMX6;->a(LmLg;Lunf;I)LRw7;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    iget-object p1, p1, LmLg;->c:LjWc;
+
+    .line 26
+    .line 27
+    invoke-virtual {p1, v1}, LjWc;->b(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 28
+    .line 29
+    .line 30
+    monitor-exit v0
+
+    .line 31
+    return-void
+
+    .line 32
+    :catchall_0
+    move-exception p1
+
+    .line 33
+    monitor-exit v0
+
+    .line 34
+    throw p1
+.end method
+
+.method public d(Ljava/util/List;)V
+    .locals 11
+
+    .line 1
+    const/4 v0, 0x4
+
+    .line 2
+    invoke-static {p1}, Lfnc;->c(Ljava/util/List;)LdH9;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object p1
+
+    .line 6
+    iget-object v1, p0, Lfnc;->b:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v1, LcA8;
+
+    .line 9
+    .line 10
+    iget-object v1, v1, LcA8;->c:Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    check-cast v1, LdH9;
+
+    .line 13
+    .line 14
+    iget-wide v2, v1, LdH9;->a:J
+
+    .line 15
+    .line 16
+    iget-wide v4, p1, LdH9;->a:J
+
+    .line 17
+    .line 18
+    cmp-long v6, v2, v4
+
+    .line 19
+    .line 20
+    if-ltz v6, :cond_0
+
+    .line 21
+    .line 22
+    iget-wide v6, v1, LdH9;->b:J
+
+    .line 23
+    .line 24
+    iget-wide v8, p1, LdH9;->b:J
+
+    .line 25
+    .line 26
+    cmp-long v10, v6, v8
+
+    .line 27
+    .line 28
+    if-ltz v10, :cond_0
+
+    .line 29
+    .line 30
+    sub-long/2addr v2, v4
+
+    .line 31
+    iput-wide v2, v1, LdH9;->a:J
+
+    .line 32
+    .line 33
+    sub-long/2addr v6, v8
+
+    .line 34
+    iput-wide v6, v1, LdH9;->b:J
+
+    .line 35
+    .line 36
+    return-void
+
+    .line 37
+    :cond_0
+    new-instance v2, Ljava/lang/IllegalArgumentException;
+
+    .line 38
+    .line 39
+    iget-wide v3, v1, LdH9;->a:J
+
+    .line 40
+    .line 41
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v3
+
+    .line 45
+    iget-wide v4, v1, LdH9;->b:J
+
+    .line 46
+    .line 47
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v1
+
+    .line 51
+    iget-wide v4, p1, LdH9;->a:J
+
+    .line 52
+    .line 53
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v4
+
+    .line 57
+    iget-wide v5, p1, LdH9;->b:J
+
+    .line 58
+    .line 59
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    new-array v5, v0, [Ljava/lang/Object;
+
+    .line 64
+    .line 65
+    const/4 v6, 0x0
+
+    .line 66
+    aput-object v3, v5, v6
+
+    .line 67
+    .line 68
+    const/4 v3, 0x1
+
+    .line 69
+    aput-object v1, v5, v3
+
+    .line 70
+    .line 71
+    const/4 v1, 0x2
+
+    .line 72
+    aput-object v4, v5, v1
+
+    .line 73
+    .line 74
+    const/4 v1, 0x3
+
+    .line 75
+    aput-object p1, v5, v1
+
+    .line 76
+    .line 77
+    invoke-static {v5, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object p1
+
+    .line 81
+    const-string v0, "The working codec resource is not enough. encoder pixel count=%d, decoder pixel count=%d, to be removed encoder pixel count=%d, to be removed decoder pixel count=%d"
+
+    .line 82
+    .line 83
+    invoke-static {v0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object p1
+
+    .line 87
+    invoke-direct {v2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 88
+    .line 89
+    .line 90
+    throw v2
+.end method
+
+.method public q(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    check-cast p1, LOmd;
+
+    .line 2
+    .line 3
+    check-cast p2, LOmd;
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lfnc;->b:Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    check-cast v0, LyBc;
+
+    .line 8
+    .line 9
+    invoke-static {v0, p1}, LyBc;->a(LyBc;LOmd;)I
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p1
+
+    .line 13
+    invoke-static {v0, p2}, LyBc;->a(LyBc;LOmd;)I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result p2
+
+    .line 17
+    if-ne p1, p2, :cond_0
+
+    .line 18
+    .line 19
+    const/4 p1, 0x1
+
+    .line 20
+    return p1
+
+    .line 21
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 22
+    return p1
 .end method

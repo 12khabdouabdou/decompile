@@ -1,0 +1,769 @@
+.class public final LGd2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LFd2;
+
+
+# instance fields
+.field public final a:LHO4;
+
+.field public final b:Ld7c;
+
+.field public c:Ljava/util/UUID;
+
+.field public d:I
+
+
+# direct methods
+.method public constructor <init>(LHO4;Ld7c;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LGd2;->a:LHO4;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LGd2;->b:Ld7c;
+
+    .line 7
+    .line 8
+    sget-object p1, LVZ1;->Z:LVZ1;
+
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p1, "CameraSessionManagerImpl"
+
+    .line 14
+    .line 15
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 16
+    .line 17
+    .line 18
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+.method public static f(LiGc;)Z
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, LiGc;->n:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-boolean v0, p0, LiGc;->m:Z
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, LiGc;->d:Lwmd;
+
+    .line 10
+    .line 11
+    iget-object v0, v0, Lwmd;->c:LG4b;
+
+    .line 12
+    .line 13
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    iget-object v0, v0, LL4b;->a:LAp0;
+
+    .line 18
+    .line 19
+    iget-object v0, v0, LAp0;->a:Lrp0;
+
+    .line 20
+    .line 21
+    sget-object v1, LVZ1;->Z:LVZ1;
+
+    .line 22
+    .line 23
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v0
+
+    .line 27
+    if-eqz v0, :cond_0
+
+    .line 28
+    .line 29
+    const/4 v0, 0x2
+
+    .line 30
+    iget p0, p0, LiGc;->g:I
+
+    .line 31
+    .line 32
+    if-ne p0, v0, :cond_0
+
+    .line 33
+    .line 34
+    const/4 p0, 0x1
+
+    .line 35
+    return p0
+
+    .line 36
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 37
+    return p0
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 1
+
+    .line 1
+    iget v0, p0, LGd2;->d:I
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-void
+
+    .line 6
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 7
+    iput-object v0, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 8
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    iput v0, p0, LGd2;->d:I
+
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v0, p0, LGd2;->a:LHO4;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0}, LHO4;->get()Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v0
+
+    .line 11
+    check-cast v0, LcH8;
+
+    .line 12
+    .line 13
+    sget-object v1, Le42;->c2:Le42;
+
+    .line 14
+    .line 15
+    invoke-static {v0, v1}, LaH8;->d(LcH8;LH7c;)V
+
+    .line 16
+    .line 17
+    .line 18
+    :cond_0
+    iget-object v0, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 19
+    .line 20
+    if-eqz v0, :cond_1
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Ljava/util/UUID;->toString()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    return-object v0
+
+    .line 27
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 28
+    return-object v0
+.end method
+
+.method public final c()LSi7;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, LGd2;->b()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    new-instance v1, LSi7;
+
+    .line 8
+    .line 9
+    invoke-direct {v1}, LSi7;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    sget-object v2, LUi7;->a:LUi7;
+
+    .line 13
+    .line 14
+    iput-object v2, v1, LSi7;->c:LUi7;
+
+    .line 15
+    .line 16
+    iput-object v0, v1, LSi7;->b:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    return-object v1
+
+    .line 19
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 20
+    return-object v0
+.end method
+
+.method public final d()V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    const/4 v0, 0x0
+
+    .line 6
+    iput v0, p0, LGd2;->d:I
+
+    .line 7
+    .line 8
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    iput-object v0, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 13
+    .line 14
+    iget-object v1, p0, LGd2;->b:Ld7c;
+
+    .line 15
+    .line 16
+    iput-object v0, v1, Ld7c;->c:Ljava/util/UUID;
+
+    .line 17
+    .line 18
+    :cond_0
+    return-void
+.end method
+
+.method public final e(LiGc;)V
+    .locals 11
+
+    .line 1
+    invoke-static {p1}, LGd2;->f(LiGc;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    const/4 v2, 0x1
+
+    .line 7
+    iget-boolean v3, p1, LiGc;->l:Z
+
+    .line 8
+    .line 9
+    iget-object v4, p1, LiGc;->f:Lwmd;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    if-eqz v3, :cond_0
+
+    .line 14
+    .line 15
+    iget-object v0, v4, Lwmd;->c:LG4b;
+
+    .line 16
+    .line 17
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    iget-object v0, v0, LL4b;->a:LAp0;
+
+    .line 22
+    .line 23
+    iget-object v0, v0, LAp0;->a:Lrp0;
+
+    .line 24
+    .line 25
+    sget-object v5, Lz7e;->Z:Lz7e;
+
+    .line 26
+    .line 27
+    invoke-static {v0, v5}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    if-eqz v0, :cond_0
+
+    .line 32
+    .line 33
+    iput v2, p0, LGd2;->d:I
+
+    .line 34
+    .line 35
+    goto/16 :goto_0
+
+    .line 36
+    .line 37
+    :cond_0
+    iget v0, p0, LGd2;->d:I
+
+    .line 38
+    .line 39
+    sget-object v5, LRGc;->b:LRGc;
+
+    .line 40
+    .line 41
+    const/4 v6, 0x0
+
+    .line 42
+    iget-boolean v7, p1, LiGc;->n:Z
+
+    .line 43
+    .line 44
+    iget-boolean v8, p1, LiGc;->m:Z
+
+    .line 45
+    .line 46
+    iget-object v9, p1, LiGc;->c:LRGc;
+
+    .line 47
+    .line 48
+    iget-object v10, p1, LiGc;->d:Lwmd;
+
+    .line 49
+    .line 50
+    if-ne v0, v2, :cond_1
+
+    .line 51
+    .line 52
+    if-ne v9, v5, :cond_1
+
+    .line 53
+    .line 54
+    if-eqz v8, :cond_1
+
+    .line 55
+    .line 56
+    if-eqz v7, :cond_1
+
+    .line 57
+    .line 58
+    iget-object v0, v10, Lwmd;->c:LG4b;
+
+    .line 59
+    .line 60
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    iget-object v0, v0, LL4b;->a:LAp0;
+
+    .line 65
+    .line 66
+    iget-object v0, v0, LAp0;->a:Lrp0;
+
+    .line 67
+    .line 68
+    sget-object v2, LPag;->Z:LPag;
+
+    .line 69
+    .line 70
+    invoke-static {v0, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 71
+    .line 72
+    .line 73
+    move-result v0
+
+    .line 74
+    if-eqz v0, :cond_1
+
+    .line 75
+    .line 76
+    iget-object v0, v4, Lwmd;->c:LG4b;
+
+    .line 77
+    .line 78
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v0
+
+    .line 82
+    iget-object v0, v0, LL4b;->a:LAp0;
+
+    .line 83
+    .line 84
+    iget-object v0, v0, LAp0;->a:Lrp0;
+
+    .line 85
+    .line 86
+    sget-object v2, Lz7e;->Z:Lz7e;
+
+    .line 87
+    .line 88
+    invoke-static {v0, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v0
+
+    .line 92
+    if-nez v0, :cond_1
+
+    .line 93
+    .line 94
+    iput-object v6, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 95
+    .line 96
+    iput v1, p0, LGd2;->d:I
+
+    .line 97
+    .line 98
+    goto :goto_0
+
+    .line 99
+    :cond_1
+    if-ne v9, v5, :cond_2
+
+    .line 100
+    .line 101
+    if-eqz v8, :cond_2
+
+    .line 102
+    .line 103
+    if-eqz v7, :cond_2
+
+    .line 104
+    .line 105
+    iget-object v0, v10, Lwmd;->c:LG4b;
+
+    .line 106
+    .line 107
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v0
+
+    .line 111
+    iget-object v0, v0, LL4b;->a:LAp0;
+
+    .line 112
+    .line 113
+    iget-object v0, v0, LAp0;->a:Lrp0;
+
+    .line 114
+    .line 115
+    sget-object v2, Lz7e;->Z:Lz7e;
+
+    .line 116
+    .line 117
+    invoke-static {v0, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 118
+    .line 119
+    .line 120
+    move-result v0
+
+    .line 121
+    if-eqz v0, :cond_2
+
+    .line 122
+    .line 123
+    iput-object v6, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 124
+    .line 125
+    iput v1, p0, LGd2;->d:I
+
+    .line 126
+    .line 127
+    goto :goto_0
+
+    .line 128
+    :cond_2
+    iget-object v0, v4, Lwmd;->c:LG4b;
+
+    .line 129
+    .line 130
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
+
+    .line 131
+    .line 132
+    .line 133
+    move-result-object v0
+
+    .line 134
+    iget-boolean v0, v0, LL4b;->i0:Z
+
+    .line 135
+    .line 136
+    if-eqz v0, :cond_3
+
+    .line 137
+    .line 138
+    goto :goto_0
+
+    .line 139
+    :cond_3
+    invoke-static {p1}, LGd2;->f(LiGc;)Z
+
+    .line 140
+    .line 141
+    .line 142
+    move-result p1
+
+    .line 143
+    if-eqz p1, :cond_4
+
+    .line 144
+    .line 145
+    iget-object p1, v10, Lwmd;->c:LG4b;
+
+    .line 146
+    .line 147
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
+
+    .line 148
+    .line 149
+    .line 150
+    move-result-object p1
+
+    .line 151
+    iget-object p1, p1, LL4b;->a:LAp0;
+
+    .line 152
+    .line 153
+    iget-object p1, p1, LAp0;->a:Lrp0;
+
+    .line 154
+    .line 155
+    iget-object p1, p1, Lrp0;->a:Ljava/lang/String;
+
+    .line 156
+    .line 157
+    iget-object p1, v4, Lwmd;->c:LG4b;
+
+    .line 158
+    .line 159
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
+
+    .line 160
+    .line 161
+    .line 162
+    move-result-object p1
+
+    .line 163
+    iget-object p1, p1, LL4b;->a:LAp0;
+
+    .line 164
+    .line 165
+    iget-object p1, p1, LAp0;->a:Lrp0;
+
+    .line 166
+    .line 167
+    iget-object p1, p1, Lrp0;->a:Ljava/lang/String;
+
+    .line 168
+    .line 169
+    iput-object v6, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 170
+    .line 171
+    iput v1, p0, LGd2;->d:I
+
+    .line 172
+    .line 173
+    :cond_4
+    :goto_0
+    if-eqz v3, :cond_5
+
+    .line 174
+    .line 175
+    iget-object p1, v4, Lwmd;->c:LG4b;
+
+    .line 176
+    .line 177
+    invoke-interface {p1}, LG4b;->Q0()LL4b;
+
+    .line 178
+    .line 179
+    .line 180
+    move-result-object p1
+
+    .line 181
+    iget-object p1, p1, LL4b;->a:LAp0;
+
+    .line 182
+    .line 183
+    iget-object p1, p1, LAp0;->a:Lrp0;
+
+    .line 184
+    .line 185
+    sget-object v0, LVZ1;->Z:LVZ1;
+
+    .line 186
+    .line 187
+    invoke-static {p1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 188
+    .line 189
+    .line 190
+    move-result p1
+
+    .line 191
+    if-eqz p1, :cond_5
+
+    .line 192
+    .line 193
+    iget-object p1, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 194
+    .line 195
+    if-nez p1, :cond_5
+
+    .line 196
+    .line 197
+    iput v1, p0, LGd2;->d:I
+
+    .line 198
+    .line 199
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
+
+    .line 200
+    .line 201
+    .line 202
+    move-result-object p1
+
+    .line 203
+    iput-object p1, p0, LGd2;->c:Ljava/util/UUID;
+
+    .line 204
+    .line 205
+    iget-object v0, p0, LGd2;->b:Ld7c;
+
+    .line 206
+    .line 207
+    iput-object p1, v0, Ld7c;->c:Ljava/util/UUID;
+
+    .line 208
+    .line 209
+    :cond_5
+    return-void
+.end method

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LBff;
+    proxyClass = Lfyf;
     schema = "\'addFileToLocalCache\':f|m|(s, f(s), f(s)),\'addBlobToLocalCache\':f|m|(t, f(s), f(s)),\'removeCachedContent\':f|m|(a<s>, f(), f(s)),\'getBlob\':f?|m|(r:\'[0]\', f(t), f(s))"
     typeReferences = {
         Lcom/snap/modules/mdp/SDOMMediaId;
@@ -42,9 +42,6 @@
 .end method
 
 .method public abstract getBlob(Lcom/snap/modules/mdp/SDOMMediaId;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -53,6 +50,9 @@
             "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

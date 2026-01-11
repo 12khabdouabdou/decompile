@@ -1,188 +1,155 @@
 .class public final LxDb;
-.super LzDb;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final r0:I
+.field public final a:LDBe;
 
-.field public final s0:I
+.field public final b:LDB4;
 
-.field public final t0:I
-
-.field public final u0:I
-
-.field public final v0:I
-
-.field public final w0:I
+.field public final c:LREi;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lake;Lake;Lake;LXZ5;Lnwf;Lake;)V
-    .locals 8
+.method public constructor <init>(LF10;LDBe;LDB4;LDB4;LDB4;LDB4;LDB4;LDB4;)V
+    .locals 0
 
     .line 1
-    const-string v1, "MemoriesMeoReconfirmPasscodePageController"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    move-object v0, p0
-
     .line 4
-    move-object v2, p1
+    iput-object p2, p0, LxDb;->a:LDBe;
 
     .line 5
-    move-object v3, p2
-
     .line 6
-    move-object v4, p3
+    iput-object p3, p0, LxDb;->b:LDB4;
 
     .line 7
-    move-object v5, p4
-
     .line 8
-    move-object v6, p5
+    new-instance p2, Lnp0;
 
     .line 9
-    move-object v7, p7
-
     .line 10
-    invoke-direct/range {v0 .. v7}, LzDb;-><init>(Ljava/lang/String;Landroid/content/Context;Lake;Lake;Lake;LXZ5;Lake;)V
+    const-string p3, "MediaQualityAnalyzer"
 
     .line 11
     .line 12
-    .line 13
-    const p1, 0x7f0e0471
+    invoke-direct {p2, p1, p3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    iput p1, v0, LxDb;->r0:I
+    new-instance p1, LwDb;
 
+    .line 16
     .line 17
+    const/4 p2, 0x3
+
     .line 18
-    const p1, 0x7f0b0965
+    invoke-direct {p1, p0, p2}, LwDb;-><init>(LxDb;I)V
 
     .line 19
     .line 20
     .line 21
-    iput p1, v0, LxDb;->s0:I
+    new-instance p2, LREi;
 
     .line 22
     .line 23
-    const p1, 0x7f0b193e
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 24
     .line 25
     .line 26
-    iput p1, v0, LxDb;->t0:I
+    new-instance p1, LwDb;
 
     .line 27
     .line 28
-    const p1, 0x7f0b095a
+    const/4 p2, 0x2
 
     .line 29
+    invoke-direct {p1, p0, p2}, LwDb;-><init>(LxDb;I)V
+
     .line 30
     .line 31
-    iput p1, v0, LxDb;->u0:I
-
     .line 32
-    .line 33
-    const p1, 0x7f0b0644
+    new-instance p2, LREi;
 
+    .line 33
     .line 34
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
     .line 35
     .line 36
-    iput p1, v0, LxDb;->v0:I
-
     .line 37
+    new-instance p1, LItb;
+
     .line 38
-    const p1, 0x7f0b0963
-
     .line 39
-    .line 40
-    .line 41
-    iput p1, v0, LxDb;->w0:I
+    const/4 p2, 0x6
 
+    .line 40
+    invoke-direct {p1, p2, p4}, LItb;-><init>(ILjava/lang/Object;)V
+
+    .line 41
     .line 42
     .line 43
+    new-instance p2, LREi;
+
+    .line 44
+    .line 45
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 46
+    .line 47
+    .line 48
+    iput-object p2, p0, LxDb;->c:LREi;
+
+    .line 49
+    .line 50
+    new-instance p1, LwDb;
+
+    .line 51
+    .line 52
+    const/4 p2, 0x1
+
+    .line 53
+    invoke-direct {p1, p0, p2}, LwDb;-><init>(LxDb;I)V
+
+    .line 54
+    .line 55
+    .line 56
+    new-instance p2, LREi;
+
+    .line 57
+    .line 58
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 59
+    .line 60
+    .line 61
+    new-instance p1, LwDb;
+
+    .line 62
+    .line 63
+    const/4 p2, 0x0
+
+    .line 64
+    invoke-direct {p1, p0, p2}, LwDb;-><init>(LxDb;I)V
+
+    .line 65
+    .line 66
+    .line 67
+    new-instance p2, LREi;
+
+    .line 68
+    .line 69
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 70
+    .line 71
+    .line 72
     return-void
-.end method
-
-
-# virtual methods
-.method public final B()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LxDb;->v0:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final F()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LxDb;->r0:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final K()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LxDb;->u0:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final M()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LxDb;->w0:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final N()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LxDb;->s0:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final O()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final z()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LxDb;->t0:I
-
-    .line 2
-    .line 3
-    return v0
 .end method

@@ -1,71 +1,84 @@
-.class public final synthetic LfE5;
-.super Lj28;
+.class public final LfE5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
-# static fields
-.field public static final f0:LfE5;
+# instance fields
+.field public final synthetic a:LgE5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(LgE5;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LfE5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "parse(Ljava/lang/String;)Landroid/net/Uri;"
-
     .line 4
+    iput-object p1, p0, LfE5;->a:LgE5;
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/4 v1, 0x1
-
-    .line 7
-    const-class v3, Landroid/net/Uri;
-
-    .line 8
-    .line 9
-    const-string v4, "parse"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, LfE5;->f0:LfE5;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    check-cast p1, Lio9;
 
     .line 2
     .line 3
-    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    instance-of v0, p1, Lho9;
 
     .line 4
     .line 5
+    if-eqz v0, :cond_0
+
     .line 6
+    .line 7
+    iget-object v0, p0, LfE5;->a:LgE5;
+
+    .line 8
+    .line 9
+    new-instance v1, LEP$n$b;
+
+    .line 10
+    .line 11
+    check-cast p1, Lho9;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1}, Lho9;->a()LY79;
+
+    .line 14
+    .line 15
+    .line 16
     move-result-object p1
 
-    .line 7
-    return-object p1
+    .line 17
+    invoke-direct {v1, p1}, LEP$n$b;-><init>(LY79;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iget-object p1, v0, LgE5;->X:LHP;
+
+    .line 21
+    .line 22
+    invoke-interface {p1, v1}, LHP;->a(LEP;)V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_0
+    return-void
 .end method

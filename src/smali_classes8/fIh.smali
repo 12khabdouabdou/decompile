@@ -1,314 +1,313 @@
-.class public final enum LfIh;
-.super Ljava/lang/Enum;
+.class public final LfIh;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LnIh;
 
-# static fields
-.field public static final enum a:LfIh;
 
-.field public static final enum b:LfIh;
+# instance fields
+.field public final a:LoIh;
 
-.field public static final enum c:LfIh;
+.field public final b:Lrk6;
 
-.field public static final synthetic t:[LfIh;
+.field public final c:Lbb5;
+
+.field public final d:LwA0;
+
+.field public final e:LsIh;
+
+.field public final f:LJp0;
+
+.field public g:I
+
+.field public final h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 21
+.method public constructor <init>(LoIh;Lrk6;Lbb5;LwA0;LsIh;)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0x9
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/16 v1, 0x8
-
     .line 4
-    .line 5
-    const/4 v2, 0x7
+    iput-object p1, p0, LfIh;->a:LoIh;
 
+    .line 5
     .line 6
-    const/4 v3, 0x6
+    iput-object p2, p0, LfIh;->b:Lrk6;
 
     .line 7
-    const/4 v4, 0x5
-
     .line 8
-    const/4 v5, 0x4
+    iput-object p3, p0, LfIh;->c:Lbb5;
 
     .line 9
-    const/4 v6, 0x3
-
     .line 10
-    const/4 v7, 0x2
+    iput-object p4, p0, LfIh;->d:LwA0;
 
     .line 11
-    const/4 v8, 0x1
-
     .line 12
-    const/4 v9, 0x0
+    iput-object p5, p0, LfIh;->e:LsIh;
 
     .line 13
-    new-instance v10, LfIh;
-
     .line 14
+    sget-object p1, LQHh;->Z:LQHh;
+
     .line 15
-    const-string v11, "ELIG_APPFG"
-
     .line 16
-    .line 17
-    invoke-direct {v10, v11, v9}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 17
     .line 18
     .line 19
+    const-string p1, "SpotlightFeedMetadataManager"
+
     .line 20
-    sput-object v10, LfIh;->a:LfIh;
-
     .line 21
-    .line 22
-    new-instance v11, LfIh;
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 22
     .line 23
     .line 24
-    const-string v12, "ELIG_OPTIN"
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 25
     .line 26
-    invoke-direct {v11, v12, v8}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p1, p0, LfIh;->f:LJp0;
+
+    .line 27
+    .line 28
+    const/4 p1, 0x1
+
+    .line 29
+    iput p1, p0, LfIh;->g:I
+
+    .line 30
+    .line 31
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 32
+    .line 33
+    new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 34
+    .line 35
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
+    .line 36
+    .line 37
+    .line 38
+    iput-object p2, p0, LfIh;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 39
+    .line 40
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lio/reactivex/rxjava3/core/Completable;
+    .locals 4
+
+    .line 1
+    new-instance v0, LJ0f;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v1, LeIh;
+
+    .line 7
+    .line 8
+    const/4 v2, 0x0
+
+    .line 9
+    invoke-direct {v1, p0, v2, v0}, LeIh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 10
+    .line 11
+    .line 12
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 13
+    .line 14
+    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 15
+    .line 16
+    .line 17
+    new-instance v1, LCih;
+
+    .line 18
+    .line 19
+    const/16 v3, 0x13
+
+    .line 20
+    .line 21
+    invoke-direct {v1, v0, v3, p0}, LCih;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 22
+    .line 23
+    .line 24
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+
+    .line 25
+    .line 26
+    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 27
     .line 28
     .line 29
-    new-instance v12, LfIh;
+    new-instance v1, LdIh;
 
     .line 30
     .line 31
-    const-string v13, "ELIG_NUM_OF_NOTIF"
+    const/4 v2, 0x1
 
     .line 32
-    .line 33
-    invoke-direct {v12, v13, v7}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v1, v0, p0, v2}, LdIh;-><init>(LJ0f;LfIh;I)V
 
+    .line 33
     .line 34
     .line 35
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;
+
     .line 36
-    new-instance v13, LfIh;
+    .line 37
+    invoke-direct {v0, v3, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/functions/Action;)V
+
+    .line 38
+    .line 39
+    .line 40
+    return-object v0
+.end method
+
+.method public final b()Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;
+    .locals 5
+
+    .line 1
+    new-instance v0, LJ0f;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, LfIh;->c:Lbb5;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Lbb5;->get()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    check-cast v1, LQ2i;
+
+    .line 13
+    .line 14
+    new-instance v2, Lj7h;
+
+    .line 15
+    .line 16
+    const/16 v3, 0xd
+
+    .line 17
+    .line 18
+    invoke-direct {v2, p0, v1, v0, v3}, Lj7h;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 19
+    .line 20
+    .line 21
+    const/4 v3, 0x0
+
+    .line 22
+    iget-object v4, p0, LfIh;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 23
+    .line 24
+    invoke-virtual {v4, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->g0(Lio/reactivex/rxjava3/functions/Function;Z)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v2
+
+    .line 28
+    const-wide/16 v3, 0x1
+
+    .line 29
+    .line 30
+    invoke-virtual {v2, v3, v4}, Lio/reactivex/rxjava3/core/Observable;->Q0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v2
+
+    .line 34
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableIgnoreElementsCompletable;
+
+    .line 35
+    .line 36
+    invoke-direct {v3, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableIgnoreElementsCompletable;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
 
     .line 37
     .line 38
-    const-string v14, "ELIG_NUM_OF_STORIES"
-
     .line 39
-    .line 40
-    invoke-direct {v13, v14, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v2, LdD3;
 
+    .line 40
     .line 41
+    const/16 v4, 0xe
+
     .line 42
     .line 43
-    new-instance v14, LfIh;
+    invoke-direct {v2, v1, v4}, LdD3;-><init>(LQ2i;I)V
 
     .line 44
     .line 45
-    const-string v15, "PAYLOAD_DESERI"
-
     .line 46
-    .line 47
-    invoke-direct {v14, v15, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v3, v2}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
+    .line 47
     .line 48
     .line 49
+    move-result-object v1
+
     .line 50
-    new-instance v15, LfIh;
+    new-instance v2, LdIh;
 
     .line 51
     .line 52
-    const/16 v16, 0x4
+    const/4 v3, 0x0
 
     .line 53
-    .line 54
-    const-string v5, "DISPLAY_PREP"
+    invoke-direct {v2, v0, p0, v3}, LdIh;-><init>(LJ0f;LfIh;I)V
 
+    .line 54
     .line 55
     .line 56
-    invoke-direct {v15, v5, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;
 
     .line 57
     .line 58
-    .line 59
-    new-instance v5, LfIh;
+    invoke-direct {v0, v1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/functions/Action;)V
 
+    .line 59
     .line 60
     .line 61
-    const/16 v17, 0x5
-
-    .line 62
-    .line 63
-    const-string v4, "NO_SPOTLIGHT"
-
-    .line 64
-    .line 65
-    invoke-direct {v5, v4, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 66
-    .line 67
-    .line 68
-    sput-object v5, LfIh;->b:LfIh;
-
-    .line 69
-    .line 70
-    new-instance v4, LfIh;
-
-    .line 71
-    .line 72
-    const/16 v18, 0x6
-
-    .line 73
-    .line 74
-    const-string v3, "PREFETCH_FAIL"
-
-    .line 75
-    .line 76
-    invoke-direct {v4, v3, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 77
-    .line 78
-    .line 79
-    new-instance v3, LfIh;
-
-    .line 80
-    .line 81
-    const/16 v19, 0x7
-
-    .line 82
-    .line 83
-    const-string v2, "NO_STORY_ID"
-
-    .line 84
-    .line 85
-    invoke-direct {v3, v2, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 86
-    .line 87
-    .line 88
-    sput-object v3, LfIh;->c:LfIh;
-
-    .line 89
-    .line 90
-    new-instance v2, LfIh;
-
-    .line 91
-    .line 92
-    const/16 v20, 0x8
-
-    .line 93
-    .line 94
-    const-string v1, "UNKNOWN"
-
-    .line 95
-    .line 96
-    invoke-direct {v2, v1, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 97
-    .line 98
-    .line 99
-    const/16 v1, 0xa
-
-    .line 100
-    .line 101
-    new-array v1, v1, [LfIh;
-
-    .line 102
-    .line 103
-    aput-object v10, v1, v9
-
-    .line 104
-    .line 105
-    aput-object v11, v1, v8
-
-    .line 106
-    .line 107
-    aput-object v12, v1, v7
-
-    .line 108
-    .line 109
-    aput-object v13, v1, v6
-
-    .line 110
-    .line 111
-    aput-object v14, v1, v16
-
-    .line 112
-    .line 113
-    aput-object v15, v1, v17
-
-    .line 114
-    .line 115
-    aput-object v5, v1, v18
-
-    .line 116
-    .line 117
-    aput-object v4, v1, v19
-
-    .line 118
-    .line 119
-    aput-object v3, v1, v20
-
-    .line 120
-    .line 121
-    aput-object v2, v1, v0
-
-    .line 122
-    .line 123
-    sput-object v1, LfIh;->t:[LfIh;
-
-    .line 124
-    .line 125
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LfIh;
-    .locals 1
-
-    .line 1
-    const-class v0, LfIh;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LfIh;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LfIh;
-    .locals 1
-
-    .line 1
-    sget-object v0, LfIh;->t:[LfIh;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LfIh;
-
-    .line 8
-    .line 9
     return-object v0
 .end method

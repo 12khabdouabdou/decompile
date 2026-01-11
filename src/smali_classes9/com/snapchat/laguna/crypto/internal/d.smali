@@ -145,7 +145,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, Liuk;->g([[B)[B
+    invoke-static {v0}, LZUk;->m([[B)[B
 
     .line 14
     .line 15

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LtVj;
+.implements Lhlk;
 
 
 # static fields
@@ -13,7 +13,7 @@
 # instance fields
 .field public E0:Landroid/webkit/WebView;
 
-.field public F0:LsVj;
+.field public F0:Lglk;
 
 
 # direct methods
@@ -31,16 +31,333 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 9
+.method public final A1()V
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()Lglk;
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()LsVj;
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lglk;->D1()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 1
+
+    .line 1
+    const p3, 0x7f0e02c9
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
+.end method
+
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    const p2, 0x7f0b1383
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p2
+
+    .line 11
+    check-cast p2, Landroid/webkit/WebView;
+
+    .line 12
+    .line 13
+    iput-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->E0:Landroid/webkit/WebView;
+
+    .line 14
+    .line 15
+    const p2, 0x7f0b0f91
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p2
+
+    .line 22
+    check-cast p2, Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 23
+    .line 24
+    const/16 v0, 0x8
+
+    .line 25
+    .line 26
+    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 27
+    .line 28
+    .line 29
+    const p2, 0x7f0b0210
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p2
+
+    .line 36
+    check-cast p2, Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 37
+    .line 38
+    const/4 v0, 0x0
+
+    .line 39
+    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p2
+
+    .line 46
+    if-eqz p2, :cond_0
+
+    .line 47
+    .line 48
+    const-string v1, "title"
+
+    .line 49
+    .line 50
+    invoke-virtual {p2, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p2
+
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :cond_0
+    const/4 p2, 0x0
+
+    .line 56
+    :goto_0
+    if-eqz p2, :cond_1
+
+    .line 57
+    .line 58
+    invoke-static {p2}, Lkti;->D0(Ljava/lang/CharSequence;)Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v1
+
+    .line 62
+    const/4 v2, 0x1
+
+    .line 63
+    xor-int/2addr v1, v2
+
+    .line 64
+    if-ne v1, v2, :cond_1
+
+    .line 65
+    .line 66
+    const v1, 0x7f0b0f92
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object p1
+
+    .line 73
+    check-cast p1, Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 74
+    .line 75
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 79
+    .line 80
+    .line 81
+    :cond_1
+    return-void
+.end method
+
+.method public final V1()Lsod;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lsod;->n1:Lsod;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final a2()Lglk;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->F0:Lglk;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "presenter"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final b2()Landroid/webkit/WebView;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->E0:Landroid/webkit/WebView;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "webview"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()Lglk;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Lglk;->d3()Z
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v0, 0x1
+
+    .line 9
+    return v0
+.end method
+
+.method public final q1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final v(LiGc;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()Lglk;
 
     .line 5
     .line 6
@@ -48,7 +365,32 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1, p0}, LsVj;->a3(LtVj;)V
+    invoke-virtual {p1}, Lglk;->e3()V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 9
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()Lglk;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, Lglk;->g3(Lhlk;)V
 
     .line 9
     .line 10
@@ -310,7 +652,7 @@
     move-object v7, v0
 
     .line 123
-    check-cast v7, LC44;
+    check-cast v7, Ll94;
 
     .line 124
     .line 125
@@ -344,7 +686,7 @@
     .line 138
     :cond_8
     :goto_6
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()LsVj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()Lglk;
 
     .line 139
     .line 140
@@ -352,352 +694,10 @@
     move-result-object v1
 
     .line 142
-    invoke-virtual/range {v1 .. v8}, LsVj;->Q2(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;LC44;Ljava/lang/String;)V
+    invoke-virtual/range {v1 .. v8}, Lglk;->c3(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;Ll94;Ljava/lang/String;)V
 
     .line 143
     .line 144
     .line 145
-    return-void
-.end method
-
-.method public final C1()V
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()LsVj;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, LsVj;->C1()V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 1
-
-    .line 1
-    const p3, 0x7f0e02b3
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    return-object p1
-.end method
-
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    const p2, 0x7f0b1257
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p2
-
-    .line 11
-    check-cast p2, Landroid/webkit/WebView;
-
-    .line 12
-    .line 13
-    iput-object p2, p0, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->E0:Landroid/webkit/WebView;
-
-    .line 14
-    .line 15
-    const p2, 0x7f0b0e75
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p2
-
-    .line 22
-    check-cast p2, Lcom/snap/ui/view/SnapFontTextView;
-
-    .line 23
-    .line 24
-    const/16 v0, 0x8
-
-    .line 25
-    .line 26
-    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 27
-    .line 28
-    .line 29
-    const p2, 0x7f0b01c6
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p2
-
-    .line 36
-    check-cast p2, Lcom/snap/imageloading/view/SnapImageView;
-
-    .line 37
-    .line 38
-    const/4 v0, 0x0
-
-    .line 39
-    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object p2
-
-    .line 46
-    if-eqz p2, :cond_0
-
-    .line 47
-    .line 48
-    const-string v1, "title"
-
-    .line 49
-    .line 50
-    invoke-virtual {p2, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object p2
-
-    .line 54
-    goto :goto_0
-
-    .line 55
-    :cond_0
-    const/4 p2, 0x0
-
-    .line 56
-    :goto_0
-    if-eqz p2, :cond_1
-
-    .line 57
-    .line 58
-    invoke-static {p2}, LR4i;->w1(Ljava/lang/CharSequence;)Z
-
-    .line 59
-    .line 60
-    .line 61
-    move-result v1
-
-    .line 62
-    const/4 v2, 0x1
-
-    .line 63
-    xor-int/2addr v1, v2
-
-    .line 64
-    if-ne v1, v2, :cond_1
-
-    .line 65
-    .line 66
-    const v1, 0x7f0b0e76
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object p1
-
-    .line 73
-    check-cast p1, Lcom/snap/ui/view/SnapFontTextView;
-
-    .line 74
-    .line 75
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 76
-    .line 77
-    .line 78
-    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 79
-    .line 80
-    .line 81
-    :cond_1
-    return-void
-.end method
-
-.method public final V1()LZ8d;
-    .locals 1
-
-    .line 1
-    sget-object v0, LZ8d;->n1:LZ8d;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final a2()LsVj;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->F0:LsVj;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "presenter"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final b2()Landroid/webkit/WebView;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->E0:Landroid/webkit/WebView;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "webview"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()LsVj;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {v0}, LsVj;->S2()Z
-
-    .line 6
-    .line 7
-    .line 8
-    const/4 v0, 0x1
-
-    .line 9
-    return v0
-.end method
-
-.method public final s1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final w(LQqc;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/webviewchallenge/WebViewChallengeFragment;->a2()LsVj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1}, LsVj;->U2()V
-
-    .line 9
-    .line 10
-    .line 11
     return-void
 .end method

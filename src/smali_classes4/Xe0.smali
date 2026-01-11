@@ -1,178 +1,160 @@
-.class public final synthetic LXe0;
-.super Lj28;
+.class public final LXe0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function4;
 
+# instance fields
+.field public final a:LR93;
 
-# static fields
-.field public static final f0:LXe0;
+.field public final b:Ljava/util/ArrayList;
+
+.field public final c:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(ILR93;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LXe0;
+    packed-switch p1, :pswitch_data_0
 
     .line 2
     .line 3
-    const-string v5, "getFriendsUserScore(Lcom/snapchat/atlas/gw/nano/GetFriendsUserScoreRequest;Lcom/snapchat/client/grpc/CallOptionsBuilder;Lcom/snap/network/transport/api/GrpcUnaryHandler;)V"
-
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/4 v1, 0x4
-
     .line 7
-    const-class v3, LyYi;
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 8
     .line 9
-    const-string v4, "getFriendsUserScore"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, LXe0;->f0:LXe0;
-
-    .line 15
-    .line 16
-    return-void
-.end method
-
-
-# virtual methods
-.method public final n(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    check-cast p1, LyYi;
-
-    .line 2
-    .line 3
-    check-cast p2, LAl8;
-
-    .line 4
-    .line 5
-    check-cast p3, Lcom/snapchat/client/grpc/CallOptionsBuilder;
-
-    .line 6
-    .line 7
-    check-cast p4, LoG8;
-
-    .line 8
-    .line 9
-    :try_start_0
-    invoke-static {p2}, LvD1;->a(Lcom/google/protobuf/nano/MessageNano;)Ljava/nio/ByteBuffer;
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     .line 10
     .line 11
     .line 12
-    move-result-object p2
+    iput-object p1, p0, LXe0;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 13
-    new-instance v0, LrD1;
-
     .line 14
-    .line 15
-    const-class v1, LBl8;
+    new-instance p1, Ljava/util/ArrayList;
 
+    .line 15
     .line 16
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
+
     .line 17
-    invoke-direct {v0, p4, v1}, LrD1;-><init>(LoG8;Ljava/lang/Class;)V
-
     .line 18
     .line 19
+    iput-object p1, p0, LXe0;->b:Ljava/util/ArrayList;
+
     .line 20
-    iget-object p1, p1, LyYi;->a:Lcom/snapchat/client/grpc/UnifiedGrpcService;
-
     .line 21
-    .line 22
-    const-string v1, "/com.snapchat.atlas.gw.AtlasGw/GetFriendsUserScore"
+    iput-object p2, p0, LXe0;->a:LR93;
 
+    .line 22
     .line 23
+    return-void
+
     .line 24
-    invoke-virtual {p1, v1, p2, p3, v0}, Lcom/snapchat/client/grpc/UnifiedGrpcService;->unaryCall(Ljava/lang/String;Ljava/nio/ByteBuffer;Lcom/snapchat/client/grpc/CallOptionsBuilder;Lcom/snapchat/client/grpc/UnaryEventHandler;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_0
+    :pswitch_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 25
     .line 26
     .line 27
-    goto :goto_1
+    iput-object p2, p0, LXe0;->a:LR93;
 
     .line 28
-    :catch_0
-    move-exception p1
-
     .line 29
-    goto :goto_0
+    new-instance p1, Ljava/util/ArrayList;
 
     .line 30
-    :catch_1
-    move-exception p1
-
     .line 31
-    goto :goto_0
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     .line 32
-    :catch_2
-    move-exception p1
-
     .line 33
-    goto :goto_0
-
     .line 34
-    :catch_3
-    move-exception p1
+    iput-object p1, p0, LXe0;->b:Ljava/util/ArrayList;
 
     .line 35
-    :goto_0
-    new-instance p2, Lcom/snapchat/client/grpc/Status;
-
     .line 36
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
     .line 37
-    sget-object p3, Lcom/snapchat/client/grpc/StatusCode;->INTERNAL:Lcom/snapchat/client/grpc/StatusCode;
-
     .line 38
-    .line 39
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
+    .line 39
     .line 40
     .line 41
-    .line 42
-    move-result-object p1
+    iput-object p1, p0, LXe0;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 42
     .line 43
-    invoke-direct {p2, p3, p1}, Lcom/snapchat/client/grpc/Status;-><init>(Lcom/snapchat/client/grpc/StatusCode;Ljava/lang/String;)V
+    return-void
 
     .line 44
+    nop
+
     .line 45
-    .line 46
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+
+# virtual methods
+.method public a(LIfi;Ljava/lang/String;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LXe0;->c:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
+
+    .line 7
+    if-nez v1, :cond_0
+
+    .line 8
+    .line 9
     const/4 p1, 0x0
 
-    .line 47
-    invoke-interface {p4, p1, p2}, LoG8;->a(Lcom/google/protobuf/nano/MessageNano;Lcom/snapchat/client/grpc/Status;)V
+    .line 10
+    return-object p1
 
-    .line 48
-    .line 49
-    .line 50
-    :goto_1
-    sget-object p1, Li7j;->a:Li7j;
+    .line 11
+    :cond_0
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 51
-    .line 52
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    check-cast p1, Ljava/util/Map;
+
+    .line 16
+    .line 17
+    invoke-interface {p1, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
     return-object p1
 .end method

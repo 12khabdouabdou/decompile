@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LKxj;
+    proxyClass = LYWj;
     schema = "\'nativeVenueStoryPlayer\':r:\'[0]\',\'createNativeThumbnailViewFactory\':f?|m|(): r:\'[1]\',\'notifyStoryThumbnailTapped\':f?|m|()"
     typeReferences = {
         Lcom/snap/venues/api/NativeVenueStoryPlayer;,
@@ -20,7 +20,7 @@
 
 # virtual methods
 .method public abstract createNativeThumbnailViewFactory()Lcom/snap/composer/ViewFactory;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -28,7 +28,7 @@
 .end method
 
 .method public abstract notifyStoryThumbnailTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

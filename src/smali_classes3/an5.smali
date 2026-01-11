@@ -1,261 +1,150 @@
 .class public final Lan5;
-.super Ljava/lang/Object;
+.super LnIk;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LaA8;
+.field public final c:LEt4;
+
+.field public final t:LREi;
 
 
 # direct methods
-.method public constructor <init>(LaA8;)V
+.method public constructor <init>(Latk;LHj5;LEt4;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2}, LnIk;-><init>(Latk;LHj5;)V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lan5;->a:LaA8;
+    iput-object p3, p0, Lan5;->c:LEt4;
 
     .line 5
     .line 6
-    return-void
-.end method
+    new-instance p1, LGk4;
 
-.method public static varargs a(LOv1;[Ljava/lang/String;)LqTb;
-    .locals 6
-
-    .line 1
-    array-length v0, p1
-
-    .line 2
-    const/4 v1, 0x0
-
-    .line 3
-    const/4 v2, 0x2
-
-    .line 4
-    const/4 v3, 0x1
-
-    .line 5
-    if-lt v0, v2, :cond_0
-
-    .line 6
     .line 7
-    const/4 v0, 0x1
-
     .line 8
-    goto :goto_0
+    const/16 p2, 0x11
 
     .line 9
-    :cond_0
-    const/4 v0, 0x0
-
     .line 10
-    :goto_0
-    invoke-static {v0}, Lew8;->A(Z)V
+    invoke-direct {p1, p2, p0}, LGk4;-><init>(ILjava/lang/Object;)V
 
     .line 11
     .line 12
     .line 13
-    array-length v0, p1
+    new-instance p2, LREi;
 
     .line 14
-    rem-int/2addr v0, v2
-
     .line 15
-    if-nez v0, :cond_1
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 16
     .line 17
-    const/4 v0, 0x1
-
     .line 18
-    goto :goto_1
+    iput-object p2, p0, Lan5;->t:LREi;
 
     .line 19
-    :cond_1
-    const/4 v0, 0x0
-
     .line 20
-    :goto_1
-    invoke-static {v0}, Lew8;->A(Z)V
-
-    .line 21
-    .line 22
-    .line 23
-    array-length v0, p1
-
-    .line 24
-    const/4 v4, 0x6
-
-    .line 25
-    if-gt v0, v4, :cond_2
-
-    .line 26
-    .line 27
-    const/4 v0, 0x1
-
-    .line 28
-    goto :goto_2
-
-    .line 29
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 30
-    :goto_2
-    invoke-static {v0}, Lew8;->A(Z)V
-
-    .line 31
-    .line 32
-    .line 33
-    aget-object v0, p1, v1
-
-    .line 34
-    .line 35
-    aget-object v3, p1, v3
-
-    .line 36
-    .line 37
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v4
-
-    .line 41
-    const/16 v5, 0x3f
-
-    .line 42
-    .line 43
-    if-gt v4, v5, :cond_3
-
-    .line 44
-    .line 45
-    goto :goto_3
-
-    .line 46
-    :cond_3
-    invoke-virtual {v3, v1, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object v3
-
-    .line 50
-    :goto_3
-    invoke-static {p0, v0, v3}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object p0
-
-    .line 54
-    :goto_4
-    array-length v0, p1
-
-    .line 55
-    if-ge v2, v0, :cond_5
-
-    .line 56
-    .line 57
-    aget-object v0, p1, v2
-
-    .line 58
-    .line 59
-    add-int/lit8 v3, v2, 0x1
-
-    .line 60
-    .line 61
-    aget-object v3, p1, v3
-
-    .line 62
-    .line 63
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
-
-    .line 64
-    .line 65
-    .line 66
-    move-result v4
-
-    .line 67
-    if-gt v4, v5, :cond_4
-
-    .line 68
-    .line 69
-    goto :goto_5
-
-    .line 70
-    :cond_4
-    invoke-virtual {v3, v1, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v3
-
-    .line 74
-    :goto_5
-    invoke-virtual {p0, v0, v3}, LqTb;->d(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 75
-    .line 76
-    .line 77
-    add-int/lit8 v2, v2, 0x2
-
-    .line 78
-    .line 79
-    goto :goto_4
-
-    .line 80
-    :cond_5
-    return-object p0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final varargs b(LOv1;J[Ljava/lang/String;)V
-    .locals 2
+.method public final g0(LPE;ZLjava/util/ArrayList;LXu;)V
+    .locals 3
 
     .line 1
-    array-length v0, p4
+    const-string v0, "DeeplinkImpressionValidator"
 
     .line 2
-    iget-object v1, p0, Lan5;->a:LaA8;
-
     .line 3
-    .line 4
-    if-lez v0, :cond_0
+    invoke-static {v0}, LHj5;->l(Ljava/lang/String;)V
 
+    .line 4
     .line 5
     .line 6
-    invoke-static {p1, p4}, Lan5;->a(LOv1;[Ljava/lang/String;)LqTb;
+    sget-object v1, LXu;->X:LXu;
 
     .line 7
     .line 8
+    invoke-virtual {p0, p1, p3, p4, v1}, LnIk;->X(LPE;Ljava/util/ArrayList;LXu;LXu;)V
+
     .line 9
-    move-result-object p1
-
     .line 10
-    invoke-interface {v1, p1, p2, p3}, LaA8;->l(LqTb;J)V
-
     .line 11
+    invoke-virtual {p0, p1, p3, p4, v1}, LnIk;->U(LPE;Ljava/util/ArrayList;LXu;LXu;)V
+
     .line 12
     .line 13
-    return-void
-
     .line 14
-    :cond_0
-    invoke-interface {v1, p1, p2, p3}, LaA8;->e(LcTb;J)V
+    if-eqz p2, :cond_0
 
     .line 15
     .line 16
+    invoke-static {v0}, LHj5;->l(Ljava/lang/String;)V
+
     .line 17
+    .line 18
+    .line 19
+    invoke-virtual {p0, p1, p3, p4, v1}, LnIk;->V(LPE;Ljava/util/ArrayList;LXu;LXu;)V
+
+    .line 20
+    .line 21
+    .line 22
+    iget-object p2, p0, Lan5;->t:LREi;
+
+    .line 23
+    .line 24
+    invoke-virtual {p2}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p2
+
+    .line 28
+    check-cast p2, LDo5;
+
+    .line 29
+    .line 30
+    invoke-virtual {p2}, LDo5;->c()LOF3;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object p2
+
+    .line 34
+    sget-object v2, LZSg;->m2:LZSg;
+
+    .line 35
+    .line 36
+    invoke-interface {p2, v2}, LOF3;->a(LcM3;)Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result p2
+
+    .line 40
+    if-eqz p2, :cond_0
+
+    .line 41
+    .line 42
+    invoke-static {v0}, LHj5;->l(Ljava/lang/String;)V
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {p0, p1, p3, p4, v1}, LnIk;->Y(LPE;Ljava/util/ArrayList;LXu;LXu;)V
+
+    .line 46
+    .line 47
+    .line 48
+    :cond_0
     return-void
 .end method

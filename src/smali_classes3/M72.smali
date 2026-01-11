@@ -1,209 +1,277 @@
 .class public final LM72;
-.super LIJ0;
+.super LA82;
 .source "SourceFile"
 
+# interfaces
+.implements Lm82;
 
-# static fields
-.field public static final c:Ljava/lang/String;
+
+# instance fields
+.field public final a:Lio/reactivex/rxjava3/core/Single;
+
+.field public final b:Lio/reactivex/rxjava3/core/Single;
+
+.field public final c:Lcf2;
+
+.field public final t:LS52;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/core/Single;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lfke;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    const-string v1, "\n            (media_type =\n            1\n            OR media_type =\n            3)\n            AND "
-
-    .line 4
-    .line 5
-    const-string v2, "\n            "
-
-    .line 6
-    .line 7
-    invoke-static {v1, v0, v2}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    sput-object v0, LM72;->c:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Lhjd;LaA8;)V
-    .locals 11
-
-    .line 1
-    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, LM72;->a:Lio/reactivex/rxjava3/core/Single;
 
     .line 5
-    new-instance v1, LJ62;
-
     .line 6
+    iput-object p2, p0, LM72;->b:Lio/reactivex/rxjava3/core/Single;
+
     .line 7
-    new-instance v4, Ll2k;
-
     .line 8
-    .line 9
-    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+    sget-object p1, Lcf2;->j0:Lcf2;
 
+    .line 9
     .line 10
+    iput-object p1, p0, LM72;->c:Lcf2;
+
     .line 11
     .line 12
-    const-string v2, "external"
+    sget-object p1, LS52;->t0:LS52;
 
     .line 13
     .line 14
-    invoke-static {v2}, Landroid/provider/MediaStore$Files;->getContentUri(Ljava/lang/String;)Landroid/net/Uri;
+    iput-object p1, p0, LM72;->t:LS52;
 
     .line 15
     .line 16
-    .line 17
-    move-result-object v6
-
-    .line 18
-    sget-object v7, LN72;->a:[Ljava/lang/String;
-
-    .line 19
-    .line 20
-    const/4 v2, 0x1
-
-    .line 21
-    invoke-static {v2}, LvHg;->b(I)Ljava/lang/String;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v3
-
-    .line 25
-    const/4 v5, 0x2
-
-    .line 26
-    invoke-static {v5}, Llva;->L(I)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v5
-
-    .line 30
-    if-eqz v5, :cond_1
-
-    .line 31
-    .line 32
-    if-ne v5, v2, :cond_0
-
-    .line 33
-    .line 34
-    const-string v2, "DESC"
-
-    .line 35
-    .line 36
-    goto :goto_0
-
-    .line 37
-    :cond_0
-    new-instance p1, LFzc;
-
-    .line 38
-    .line 39
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 40
-    .line 41
-    .line 42
-    throw p1
-
-    .line 43
-    :cond_1
-    const-string v2, "ASC"
-
-    .line 44
-    .line 45
-    :goto_0
-    const-string v5, " "
-
-    .line 46
-    .line 47
-    invoke-static {v3, v5, v2}, Llva;->y(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v8
-
-    .line 51
-    const/4 v5, 0x4
-
-    .line 52
-    const/4 v10, 0x1
-
-    .line 53
-    move-object v2, p1
-
-    .line 54
-    move-object v3, p2
-
-    .line 55
-    move-object v9, p3
-
-    .line 56
-    invoke-direct/range {v1 .. v10}, LJ62;-><init>(Landroid/content/Context;Lhjd;LRDj;ILandroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;LaA8;I)V
-
-    .line 57
-    .line 58
-    .line 59
-    invoke-direct {p0, v0, v1}, LIJ0;-><init>(Landroid/content/ContentResolver;LJJ0;)V
-
-    .line 60
-    .line 61
-    .line 62
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/lang/String;
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LM72;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LM72;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, LM72;->a:Lio/reactivex/rxjava3/core/Single;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, LM72;->a:Lio/reactivex/rxjava3/core/Single;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, LM72;->b:Lio/reactivex/rxjava3/core/Single;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, LM72;->b:Lio/reactivex/rxjava3/core/Single;
+
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final f()Lcf2;
     .locals 1
 
     .line 1
-    sget-object v0, LM72;->c:Ljava/lang/String;
+    iget-object v0, p0, LM72;->c:Lcf2;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final c()Ljava/util/List;
+.method public final g()LS52;
     .locals 1
 
     .line 1
-    sget-object v0, Landroid/provider/MediaStore$Video$Media;->EXTERNAL_CONTENT_URI:Landroid/net/Uri;
+    iget-object v0, p0, LM72;->t:LS52;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    return-object v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LM72;->a:Lio/reactivex/rxjava3/core/Single;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result v0
 
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, LM72;->b:Lio/reactivex/rxjava3/core/Single;
+
+    .line 10
+    .line 11
+    if-nez v1, :cond_0
+
+    .line 12
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 20
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "DirectorModeRecovery(mediaPackages="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LM72;->a:Lio/reactivex/rxjava3/core/Single;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", globalEdits="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LM72;->b:Lio/reactivex/rxjava3/core/Single;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
     return-object v0
 .end method

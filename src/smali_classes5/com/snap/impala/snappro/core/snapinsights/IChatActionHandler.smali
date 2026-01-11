@@ -7,41 +7,38 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRU8;
+    proxyClass = Ls29;
     schema = "\'openChat\':f|m|(s, s),\'sendScreenCaptureNotification\':f|m|(s, s, r<e>:\'[0]\'),\'observeConversationUpdatesByIds\':f?|m|(a<s>, f(r:\'[1]\')): r:\'[2]\',\'observeConversationUpdatesByCompositeIds\':f?|m|(a<r:\'[3]\'>, f(r:\'[1]\')): r:\'[2]\'"
     typeReferences = {
         Lcom/snap/composer/foundation/ScreenCaptureType;,
-        LuE2;,
+        LpH2;,
         Lcom/snap/composer/foundation/Cancelable;,
-        LdD3;
+        LGG3;
     }
 .end annotation
 
 
 # virtual methods
 .method public abstract observeConversationUpdatesByCompositeIds(Ljava/util/List;Lkotlin/jvm/functions/Function1;)Lcom/snap/composer/foundation/Cancelable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "LdD3;",
+            "LGG3;",
             ">;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/composer/foundation/Cancelable;"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract observeConversationUpdatesByIds(Ljava/util/List;Lkotlin/jvm/functions/Function1;)Lcom/snap/composer/foundation/Cancelable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -52,6 +49,9 @@
             ")",
             "Lcom/snap/composer/foundation/Cancelable;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

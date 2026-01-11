@@ -14,15 +14,15 @@
 
 .field public C0:Landroid/widget/TextView;
 
-.field public D0:LFph;
+.field public D0:LgNh;
 
 .field public E0:Landroid/animation/ObjectAnimator;
 
 .field public F0:I
 
-.field public final G0:LIph;
+.field public final G0:LjNh;
 
-.field public final H0:LS3;
+.field public final H0:Lo4;
 
 .field public final I0:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -79,7 +79,7 @@
 
     .line 17
     .line 18
-    new-instance p1, LIph;
+    new-instance p1, LjNh;
 
     .line 19
     .line 20
@@ -97,28 +97,28 @@
     int-to-double v2, v2
 
     .line 26
-    invoke-direct {p1, v0, v1, v2, v3}, LIph;-><init>(DD)V
+    invoke-direct {p1, v0, v1, v2, v3}, LjNh;-><init>(DD)V
 
     .line 27
     .line 28
     .line 29
-    iput-object p1, p0, Lcom/snap/ui/view/OnBoardTooltipView;->G0:LIph;
+    iput-object p1, p0, Lcom/snap/ui/view/OnBoardTooltipView;->G0:LjNh;
 
     .line 30
     .line 31
-    new-instance p1, LS3;
+    new-instance p1, Lo4;
 
     .line 32
     .line 33
-    const/4 v0, 0x7
+    const/4 v0, 0x6
 
     .line 34
-    invoke-direct {p1, v0, p0}, LS3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, Lo4;-><init>(ILjava/lang/Object;)V
 
     .line 35
     .line 36
     .line 37
-    iput-object p1, p0, Lcom/snap/ui/view/OnBoardTooltipView;->H0:LS3;
+    iput-object p1, p0, Lcom/snap/ui/view/OnBoardTooltipView;->H0:Lo4;
 
     .line 38
     .line 39
@@ -323,7 +323,7 @@
     move-result-object v9
 
     .line 77
-    const v10, 0x7f07051a
+    const v10, 0x7f070541
 
     .line 78
     .line 79
@@ -645,11 +645,11 @@
 
     .line 229
     :cond_6
-    sget-object v3, LIMc;->a:[I
+    sget-object v3, LB1d;->a:[I
 
     .line 230
     .line 231
-    invoke-static {v14}, Llva;->L(I)I
+    invoke-static {v14}, LzHa;->L(I)I
 
     .line 232
     .line 233
@@ -896,7 +896,7 @@
     add-int/2addr v3, v8
 
     .line 341
-    sget-object v8, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v8, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 342
     .line 343
@@ -1102,7 +1102,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1, p0}, Lsc5;->Y0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-static {p1, p0}, LTVd;->d0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 2
     .line 3
@@ -1115,7 +1115,7 @@
 
     .line 7
     .line 8
-    invoke-static {p1, p0}, Lsc5;->Y0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-static {p1, p0}, LTVd;->d0(Landroid/view/View;Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 9
     .line 10

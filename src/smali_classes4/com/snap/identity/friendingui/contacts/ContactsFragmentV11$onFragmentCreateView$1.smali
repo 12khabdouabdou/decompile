@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method public final y(LKu;)Ljava/lang/String;
+.method public final y(Lsw;)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -34,7 +34,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/snap/identity/friendingui/contacts/ContactsFragmentV11;->V1(LKu;)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lcom/snap/identity/friendingui/contacts/ContactsFragmentV11;->V1(Lsw;)Ljava/lang/String;
 
     .line 4
     .line 5

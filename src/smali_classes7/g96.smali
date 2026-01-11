@@ -2,6 +2,9 @@
 .super Ljava/lang/Enum;
 .source "SourceFile"
 
+# interfaces
+.implements LsUc;
+
 
 # static fields
 .field public static final enum X:Lg96;
@@ -10,201 +13,250 @@
 
 .field public static final enum Z:Lg96;
 
-.field public static final enum a:Lg96;
-
 .field public static final enum b:Lg96;
 
 .field public static final enum c:Lg96;
 
-.field public static final synthetic e0:[Lg96;
+.field public static final enum e0:Lg96;
+
+.field public static final synthetic f0:[Lg96;
 
 .field public static final enum t:Lg96;
 
 
+# instance fields
+.field public final a:LH7c;
+
+
 # direct methods
 .method static constructor <clinit>()V
-    .locals 15
+    .locals 17
 
     .line 1
-    const/4 v0, 0x6
+    new-instance v0, Lg96;
 
     .line 2
-    const/4 v1, 0x5
-
     .line 3
-    const/4 v2, 0x4
+    const-string v1, "GET_USER_SETTINGS"
 
     .line 4
-    const/4 v3, 0x3
-
     .line 5
-    const/4 v4, 0x2
+    const/4 v2, 0x0
 
     .line 6
-    const/4 v5, 0x1
+    invoke-direct {v0, v1, v2}, Lg96;-><init>(Ljava/lang/String;I)V
 
     .line 7
-    const/4 v6, 0x0
-
     .line 8
-    new-instance v7, Lg96;
-
     .line 9
+    sput-object v0, Lg96;->b:Lg96;
+
     .line 10
-    const-string v8, "CURRENT"
-
     .line 11
-    .line 12
-    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v1, Lg96;
 
+    .line 12
     .line 13
+    const-string v3, "GRPC_UPDATE_SETTINGS"
+
     .line 14
     .line 15
-    sput-object v7, Lg96;->a:Lg96;
+    const/4 v4, 0x1
 
     .line 16
-    .line 17
-    new-instance v8, Lg96;
+    invoke-direct {v1, v3, v4}, Lg96;-><init>(Ljava/lang/String;I)V
 
+    .line 17
     .line 18
     .line 19
-    const-string v9, "NEXT"
+    sput-object v1, Lg96;->c:Lg96;
 
     .line 20
     .line 21
-    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v3, Lg96;
 
     .line 22
     .line 23
-    .line 24
-    sput-object v8, Lg96;->b:Lg96;
+    const-string v5, "GRPC_ERROR"
 
+    .line 24
     .line 25
+    const/4 v6, 0x2
+
     .line 26
-    new-instance v9, Lg96;
+    invoke-direct {v3, v5, v6}, Lg96;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
-    const-string v10, "NEXT_GROUP"
-
     .line 29
-    .line 30
-    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v3, Lg96;->t:Lg96;
 
+    .line 30
     .line 31
+    new-instance v5, Lg96;
+
     .line 32
     .line 33
-    sput-object v9, Lg96;->c:Lg96;
+    const-string v7, "SETTING_UPDATE"
 
     .line 34
     .line 35
-    new-instance v10, Lg96;
+    const/4 v8, 0x3
 
     .line 36
-    .line 37
-    const-string v11, "PREVIOUS"
+    invoke-direct {v5, v7, v8}, Lg96;-><init>(Ljava/lang/String;I)V
 
+    .line 37
     .line 38
     .line 39
-    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    sput-object v5, Lg96;->X:Lg96;
 
     .line 40
     .line 41
+    new-instance v7, Lg96;
+
     .line 42
-    sput-object v10, Lg96;->t:Lg96;
-
     .line 43
-    .line 44
-    new-instance v11, Lg96;
+    const-string v9, "SYNC_SETTINGS"
 
+    .line 44
     .line 45
+    const/4 v10, 0x4
+
     .line 46
-    const-string v12, "PREVIOUS_GROUP"
+    invoke-direct {v7, v9, v10}, Lg96;-><init>(Ljava/lang/String;I)V
 
     .line 47
     .line 48
-    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 49
+    sput-object v7, Lg96;->Y:Lg96;
+
     .line 50
     .line 51
-    sput-object v11, Lg96;->X:Lg96;
+    new-instance v9, Lg96;
 
     .line 52
     .line 53
-    new-instance v12, Lg96;
+    const-string v11, "FORCE_ENABLE"
 
     .line 54
     .line 55
-    const-string v13, "ATTACHMENT"
+    const/4 v12, 0x5
 
     .line 56
-    .line 57
-    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v9, v11, v12}, Lg96;-><init>(Ljava/lang/String;I)V
 
+    .line 57
     .line 58
     .line 59
+    new-instance v11, Lg96;
+
     .line 60
-    sput-object v12, Lg96;->Y:Lg96;
-
     .line 61
-    .line 62
-    new-instance v13, Lg96;
+    const-string v13, "ENABLE_DLS"
 
+    .line 62
     .line 63
+    const/4 v14, 0x6
+
     .line 64
-    const-string v14, "PARENT"
+    invoke-direct {v11, v13, v14}, Lg96;-><init>(Ljava/lang/String;I)V
 
     .line 65
     .line 66
-    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 67
+    sput-object v11, Lg96;->Z:Lg96;
+
     .line 68
     .line 69
-    sput-object v13, Lg96;->Z:Lg96;
+    new-instance v13, Lg96;
 
     .line 70
     .line 71
-    const/4 v14, 0x7
+    const-string v15, "DISABLE_DLS"
 
     .line 72
-    new-array v14, v14, [Lg96;
-
     .line 73
-    .line 74
-    aput-object v7, v14, v6
+    const/16 v16, 0x0
 
+    .line 74
     .line 75
+    const/4 v2, 0x7
+
     .line 76
-    aput-object v8, v14, v5
+    invoke-direct {v13, v15, v2}, Lg96;-><init>(Ljava/lang/String;I)V
 
     .line 77
     .line 78
-    aput-object v9, v14, v4
-
     .line 79
+    sput-object v13, Lg96;->e0:Lg96;
+
     .line 80
-    aput-object v10, v14, v3
-
     .line 81
+    const/16 v15, 0x8
+
     .line 82
-    aput-object v11, v14, v2
-
     .line 83
+    new-array v15, v15, [Lg96;
+
     .line 84
-    aput-object v12, v14, v1
-
     .line 85
+    aput-object v0, v15, v16
+
     .line 86
-    aput-object v13, v14, v0
-
     .line 87
-    .line 88
-    sput-object v14, Lg96;->e0:[Lg96;
+    aput-object v1, v15, v4
 
+    .line 88
     .line 89
+    aput-object v3, v15, v6
+
     .line 90
+    .line 91
+    aput-object v5, v15, v8
+
+    .line 92
+    .line 93
+    aput-object v7, v15, v10
+
+    .line 94
+    .line 95
+    aput-object v9, v15, v12
+
+    .line 96
+    .line 97
+    aput-object v11, v15, v14
+
+    .line 98
+    .line 99
+    aput-object v13, v15, v2
+
+    .line 100
+    .line 101
+    sput-object v15, Lg96;->f0:[Lg96;
+
+    .line 102
+    .line 103
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;I)V
+    .locals 1
+
+    .line 1
+    sget-object v0, LyTc;->F2:LyTc;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 4
+    .line 5
+    .line 6
+    iput-object v0, p0, Lg96;->a:LH7c;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -235,7 +287,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lg96;->e0:[Lg96;
+    sget-object v0, Lg96;->f0:[Lg96;
 
     .line 2
     .line 3
@@ -256,174 +308,28 @@
 
 
 # virtual methods
-.method public final a()Z
+.method public final a()LH7c;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+    iget-object v0, p0, Lg96;->a:LH7c;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    new-instance v0, LFzc;
-
-    .line 9
-    .line 10
-    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 11
-    .line 12
-    .line 13
-    throw v0
-
-    .line 14
-    :pswitch_0
-    const/4 v0, 0x1
-
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :pswitch_1
-    const/4 v0, 0x0
-
-    .line 17
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 22
-    .line 23
-    .line 24
-    move-result v0
-
-    .line 25
-    return v0
-
-    .line 26
-    nop
-
-    .line 27
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_1
-        :pswitch_0
-        :pswitch_1
-        :pswitch_0
-        :pswitch_1
-        :pswitch_1
-    .end packed-switch
+    return-object v0
 .end method
 
-.method public final b()Lg96;
+.method public final bridge synthetic getName()Ljava/lang/String;
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
+    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
-    move-result v0
+    move-result-object v0
 
     .line 5
-    packed-switch v0, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    new-instance v0, LFzc;
-
-    .line 9
-    .line 10
-    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
-
-    .line 11
-    .line 12
-    .line 13
-    throw v0
-
-    .line 14
-    :pswitch_0
-    sget-object v0, Lg96;->Y:Lg96;
-
-    .line 15
-    .line 16
     return-object v0
-
-    .line 17
-    :pswitch_1
-    sget-object v0, Lg96;->Z:Lg96;
-
-    .line 18
-    .line 19
-    return-object v0
-
-    .line 20
-    :pswitch_2
-    sget-object v0, Lg96;->c:Lg96;
-
-    .line 21
-    .line 22
-    return-object v0
-
-    .line 23
-    :pswitch_3
-    sget-object v0, Lg96;->b:Lg96;
-
-    .line 24
-    .line 25
-    return-object v0
-
-    .line 26
-    :pswitch_4
-    sget-object v0, Lg96;->X:Lg96;
-
-    .line 27
-    .line 28
-    return-object v0
-
-    .line 29
-    :pswitch_5
-    sget-object v0, Lg96;->t:Lg96;
-
-    .line 30
-    .line 31
-    return-object v0
-
-    .line 32
-    :pswitch_6
-    sget-object v0, Lg96;->a:Lg96;
-
-    .line 33
-    .line 34
-    return-object v0
-
-    .line 35
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

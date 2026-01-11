@@ -1,17 +1,18 @@
 .class public final Lcom/snap/modules/create_post/CreatePostConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'descriptionText\':s,\'topics\':a<r:\'[0]\'>,\'isAutoApproveCommentsSelected\':b@?,\'isRemixAllowed\':b,\'isPostOnPublicProfileSelected\':b,\'placeTagsMetadata\':r?:\'[1]\',\'paidPartnershipConfig\':r?:\'[2]\',\'postSource\':r<e>:\'[3]\',\'posterDisplayName\':s?"
+    schema = "\'descriptionText\':s,\'topics\':a<r:\'[0]\'>,\'isAutoApproveCommentsSelected\':b@?,\'isRemixAllowed\':b,\'shouldCreateHighlight\':b,\'placeTagsMetadata\':r?:\'[1]\',\'paidPartnershipConfig\':r?:\'[2]\',\'postSource\':r<e>:\'[3]\',\'posterDisplayName\':s?,\'selectedProfile\':r?:\'[4]\'"
     typeReferences = {
-        LbKi;,
+        Lx9j;,
         Lcom/snap/modules/create_post/PlaceTagsMetadata;,
         Lcom/snap/modules/create_post/PaidPartnershipConfig;,
-        Lcom/snap/modules/create_post/PostSourceType;
+        Lcom/snap/modules/create_post/PostSourceType;,
+        Lcom/snap/modules/member_roles/MemberProfileInfo;
     }
 .end annotation
 
@@ -20,8 +21,6 @@
 .field private _descriptionText:Ljava/lang/String;
 
 .field private _isAutoApproveCommentsSelected:Ljava/lang/Boolean;
-
-.field private _isPostOnPublicProfileSelected:Z
 
 .field private _isRemixAllowed:Z
 
@@ -33,11 +32,15 @@
 
 .field private _posterDisplayName:Ljava/lang/String;
 
+.field private _selectedProfile:Lcom/snap/modules/member_roles/MemberProfileInfo;
+
+.field private _shouldCreateHighlight:Z
+
 .field private _topics:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LbKi;",
+            "Lx9j;",
             ">;"
         }
     .end annotation
@@ -45,14 +48,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;ZZLcom/snap/modules/create_post/PlaceTagsMetadata;Lcom/snap/modules/create_post/PaidPartnershipConfig;Lcom/snap/modules/create_post/PostSourceType;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/util/List;Ljava/lang/Boolean;ZZLcom/snap/modules/create_post/PlaceTagsMetadata;Lcom/snap/modules/create_post/PaidPartnershipConfig;Lcom/snap/modules/create_post/PostSourceType;Ljava/lang/String;Lcom/snap/modules/member_roles/MemberProfileInfo;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "LbKi;",
+            "Lx9j;",
             ">;",
             "Ljava/lang/Boolean;",
             "ZZ",
@@ -60,6 +63,7 @@
             "Lcom/snap/modules/create_post/PaidPartnershipConfig;",
             "Lcom/snap/modules/create_post/PostSourceType;",
             "Ljava/lang/String;",
+            "Lcom/snap/modules/member_roles/MemberProfileInfo;",
             ")V"
         }
     .end annotation
@@ -86,7 +90,7 @@
 
     .line 11
     .line 12
-    iput-boolean p5, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_isPostOnPublicProfileSelected:Z
+    iput-boolean p5, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_shouldCreateHighlight:Z
 
     .line 13
     .line 14
@@ -106,6 +110,10 @@
 
     .line 21
     .line 22
+    iput-object p10, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_selectedProfile:Lcom/snap/modules/member_roles/MemberProfileInfo;
+
+    .line 23
+    .line 24
     return-void
 .end method
 
@@ -122,7 +130,18 @@
     return-object v0
 .end method
 
-.method public final b()Lcom/snap/modules/create_post/PlaceTagsMetadata;
+.method public final b()Lcom/snap/modules/create_post/PaidPartnershipConfig;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_paidPartnershipConfig:Lcom/snap/modules/create_post/PaidPartnershipConfig;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()Lcom/snap/modules/create_post/PlaceTagsMetadata;
     .locals 1
 
     .line 1
@@ -133,7 +152,40 @@
     return-object v0
 .end method
 
-.method public final c()Z
+.method public final d()Lcom/snap/modules/create_post/PostSourceType;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_postSource:Lcom/snap/modules/create_post/PostSourceType;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final e()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_shouldCreateHighlight:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final f()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_topics:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final g()Z
     .locals 1
 
     .line 1
@@ -144,7 +196,18 @@
     return v0
 .end method
 
-.method public final d(Lcom/snap/modules/create_post/PlaceTagsMetadata;)V
+.method public final h(Lcom/snap/modules/create_post/PaidPartnershipConfig;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_paidPartnershipConfig:Lcom/snap/modules/create_post/PaidPartnershipConfig;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final i(Lcom/snap/modules/create_post/PlaceTagsMetadata;)V
     .locals 0
 
     .line 1
@@ -155,11 +218,33 @@
     return-void
 .end method
 
-.method public final e(Ljava/lang/String;)V
+.method public final j(Lcom/snap/modules/create_post/PostSourceType;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_postSource:Lcom/snap/modules/create_post/PostSourceType;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final k(Ljava/lang/String;)V
     .locals 0
 
     .line 1
     iput-object p1, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_posterDisplayName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final l(Lcom/snap/modules/member_roles/MemberProfileInfo;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/modules/create_post/CreatePostConfig;->_selectedProfile:Lcom/snap/modules/member_roles/MemberProfileInfo;
 
     .line 2
     .line 3

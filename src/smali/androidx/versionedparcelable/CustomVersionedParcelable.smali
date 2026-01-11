@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LiAj;
+.implements LyZj;
 
 
 # direct methods

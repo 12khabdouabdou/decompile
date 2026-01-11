@@ -99,7 +99,7 @@
     return p1
 .end method
 
-.method public final synthetic b(IJJ)I
+.method public final synthetic c(IJJ)I
     .locals 6
 
     .line 1
@@ -124,33 +124,6 @@
 
     .line 9
     return p1
-.end method
-
-.method public final synthetic c(IJJ)Ljava/nio/ByteBuffer;
-    .locals 6
-
-    .line 1
-    move-object v0, p0
-
-    .line 2
-    move v5, p1
-
-    .line 3
-    move-wide v1, p2
-
-    .line 4
-    move-wide v3, p4
-
-    .line 5
-    invoke-direct/range {v0 .. v5}, Lcom/google/ar/core/ArImage;->nativeGetBuffer(JJI)Ljava/nio/ByteBuffer;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object p1
-
-    .line 9
-    return-object p1
 .end method
 
 .method public final close()V
@@ -179,6 +152,33 @@
     .line 11
     .line 12
     return-void
+.end method
+
+.method public final synthetic d(IJJ)Ljava/nio/ByteBuffer;
+    .locals 6
+
+    .line 1
+    move-object v0, p0
+
+    .line 2
+    move v5, p1
+
+    .line 3
+    move-wide v1, p2
+
+    .line 4
+    move-wide v3, p4
+
+    .line 5
+    invoke-direct/range {v0 .. v5}, Lcom/google/ar/core/ArImage;->nativeGetBuffer(JJI)Ljava/nio/ByteBuffer;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    return-object p1
 .end method
 
 .method public final getCropRect()Landroid/graphics/Rect;

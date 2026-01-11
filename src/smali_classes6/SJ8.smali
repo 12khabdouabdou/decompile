@@ -1,316 +1,136 @@
 .class public final LSJ8;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LVJ8;
+.field public final synthetic b:LUJ8;
+
+.field public final synthetic c:LPJ8;
 
 
 # direct methods
-.method public synthetic constructor <init>(LVJ8;I)V
+.method public synthetic constructor <init>(LUJ8;LPJ8;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, LSJ8;->a:I
+    iput p3, p0, LSJ8;->a:I
 
-    iput-object p1, p0, LSJ8;->b:LVJ8;
+    iput-object p1, p0, LSJ8;->b:LUJ8;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, LSJ8;->c:LPJ8;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 1
+.method public final d()Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget p1, p0, LSJ8;->a:I
+    iget v0, p0, LSJ8;->a:I
 
     .line 2
     .line 3
-    packed-switch p1, :pswitch_data_0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    iget-object p1, p0, LSJ8;->b:LVJ8;
+    iget-object v0, p0, LSJ8;->c:LPJ8;
 
     .line 7
     .line 8
-    iget-object v0, p1, LVJ8;->i:LLJ8;
+    iget-object v1, p0, LSJ8;->b:LUJ8;
 
     .line 9
     .line 10
-    if-eqz v0, :cond_0
+    invoke-static {v1, v0}, LUJ8;->W(LUJ8;LPJ8;)LZa6;
 
     .line 11
     .line 12
-    iget-object p1, p1, LVJ8;->a:Landroid/widget/LinearLayout;
-
     .line 13
+    move-result-object v0
+
     .line 14
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    const/4 v2, 0x0
 
     .line 15
+    iget-object v1, v1, LUJ8;->f0:LmGc;
+
     .line 16
     .line 17
-    move-result-object p1
+    iget-object v3, v0, LZa6;->m0:LxFc;
 
     .line 18
-    invoke-virtual {v0, p1}, LLJ8;->d(Landroid/content/Context;)V
-
     .line 19
+    invoke-virtual {v1, v0, v3, v2}, LmGc;->H(LG4b;LyFc;LkFc;)V
+
     .line 20
     .line 21
-    return-void
-
     .line 22
-    :cond_0
-    const-string p1, "presenter"
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 23
     .line 24
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    return-object v0
 
     .line 25
+    :pswitch_0
+    iget-object v0, p0, LSJ8;->c:LPJ8;
+
     .line 26
     .line 27
-    const/4 p1, 0x0
+    iget-object v1, p0, LSJ8;->b:LUJ8;
 
     .line 28
-    throw p1
-
     .line 29
-    :pswitch_0
-    iget-object p1, p0, LSJ8;->b:LVJ8;
+    invoke-static {v1, v0}, LUJ8;->W(LUJ8;LPJ8;)LZa6;
 
     .line 30
     .line 31
-    iget-object v0, p1, LVJ8;->i:LLJ8;
-
     .line 32
+    move-result-object v0
+
     .line 33
-    if-eqz v0, :cond_1
+    const/4 v2, 0x0
 
     .line 34
+    iget-object v1, v1, LUJ8;->f0:LmGc;
+
     .line 35
-    iget-object p1, p1, LVJ8;->a:Landroid/widget/LinearLayout;
-
     .line 36
-    .line 37
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    iget-object v3, v0, LZa6;->m0:LxFc;
 
+    .line 37
     .line 38
+    invoke-virtual {v1, v0, v3, v2}, LmGc;->H(LG4b;LyFc;LkFc;)V
+
     .line 39
     .line 40
-    move-result-object p1
-
     .line 41
-    invoke-virtual {v0, p1}, LLJ8;->d(Landroid/content/Context;)V
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 42
     .line 43
+    return-object v0
+
     .line 44
-    return-void
-
-    .line 45
-    :cond_1
-    const-string p1, "presenter"
-
-    .line 46
-    .line 47
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 48
-    .line 49
-    .line 50
-    const/4 p1, 0x0
-
-    .line 51
-    throw p1
-
-    .line 52
-    :pswitch_1
-    iget-object p1, p0, LSJ8;->b:LVJ8;
-
-    .line 53
-    .line 54
-    iget-object p1, p1, LVJ8;->i:LLJ8;
-
-    .line 55
-    .line 56
-    if-eqz p1, :cond_2
-
-    .line 57
-    .line 58
-    invoke-virtual {p1}, LLJ8;->c()V
-
-    .line 59
-    .line 60
-    .line 61
-    return-void
-
-    .line 62
-    :cond_2
-    const-string p1, "presenter"
-
-    .line 63
-    .line 64
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 65
-    .line 66
-    .line 67
-    const/4 p1, 0x0
-
-    .line 68
-    throw p1
-
-    .line 69
-    :pswitch_2
-    iget-object p1, p0, LSJ8;->b:LVJ8;
-
-    .line 70
-    .line 71
-    iget-object p1, p1, LVJ8;->i:LLJ8;
-
-    .line 72
-    .line 73
-    if-eqz p1, :cond_3
-
-    .line 74
-    .line 75
-    invoke-virtual {p1}, LLJ8;->c()V
-
-    .line 76
-    .line 77
-    .line 78
-    return-void
-
-    .line 79
-    :cond_3
-    const-string p1, "presenter"
-
-    .line 80
-    .line 81
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 82
-    .line 83
-    .line 84
-    const/4 p1, 0x0
-
-    .line 85
-    throw p1
-
-    .line 86
-    :pswitch_3
-    iget-object p1, p0, LSJ8;->b:LVJ8;
-
-    .line 87
-    .line 88
-    iget-object p1, p1, LVJ8;->i:LLJ8;
-
-    .line 89
-    .line 90
-    if-eqz p1, :cond_4
-
-    .line 91
-    .line 92
-    sget-object v0, LZ8d;->J0:LZ8d;
-
-    .line 93
-    .line 94
-    iget-object p1, p1, LLJ8;->G0:LAJ8;
-
-    .line 95
-    .line 96
-    invoke-virtual {p1, v0}, LAJ8;->a(LZ8d;)V
-
-    .line 97
-    .line 98
-    .line 99
-    return-void
-
-    .line 100
-    :cond_4
-    const-string p1, "presenter"
-
-    .line 101
-    .line 102
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 103
-    .line 104
-    .line 105
-    const/4 p1, 0x0
-
-    .line 106
-    throw p1
-
-    .line 107
-    :pswitch_4
-    iget-object p1, p0, LSJ8;->b:LVJ8;
-
-    .line 108
-    .line 109
-    iget-object p1, p1, LVJ8;->i:LLJ8;
-
-    .line 110
-    .line 111
-    if-eqz p1, :cond_5
-
-    .line 112
-    .line 113
-    sget-object v0, LZ8d;->I0:LZ8d;
-
-    .line 114
-    .line 115
-    iget-object p1, p1, LLJ8;->G0:LAJ8;
-
-    .line 116
-    .line 117
-    invoke-virtual {p1, v0}, LAJ8;->a(LZ8d;)V
-
-    .line 118
-    .line 119
-    .line 120
-    return-void
-
-    .line 121
-    :cond_5
-    const-string p1, "presenter"
-
-    .line 122
-    .line 123
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 124
-    .line 125
-    .line 126
-    const/4 p1, 0x0
-
-    .line 127
-    throw p1
-
-    .line 128
     nop
 
-    .line 129
+    .line 45
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

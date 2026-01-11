@@ -1,131 +1,97 @@
-.class public final LPgc;
+.class public abstract LPgc;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LQgc;
-
 
 # direct methods
-.method public synthetic constructor <init>(LQgc;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, LPgc;->a:I
-
-    iput-object p1, p0, LPgc;->b:LQgc;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(LQgc;Lcom/snap/sharing/share_sheet/ShareDestination;)V
-    .locals 0
-
-    const/4 p2, 0x0
-
-    iput p2, p0, LPgc;->a:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, LPgc;->b:LQgc;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public static final a(Ld8e;)Z
     .locals 2
 
     .line 1
-    iget v0, p0, LPgc;->a:I
+    instance-of v0, p0, LY7e;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    check-cast p0, LY7e;
 
+    .line 6
     .line 7
+    goto :goto_0
+
     .line 8
-    iget-object p1, p0, LPgc;->b:LQgc;
+    :cond_0
+    const/4 p0, 0x0
 
     .line 9
+    :goto_0
+    const/4 v0, 0x0
+
     .line 10
-    iget-object p1, p1, LQgc;->i:Lrn0;
+    if-eqz p0, :cond_1
 
     .line 11
     .line 12
-    return-void
+    iget-object p0, p0, LY7e;->b:LnJ1;
 
     .line 13
-    :pswitch_0
-    check-cast p1, LfVf;
-
     .line 14
+    if-eqz p0, :cond_1
+
     .line 15
-    iget-object v0, p0, LPgc;->b:LQgc;
-
     .line 16
+    iget-object p0, p0, LnJ1;->t:LnJ1$b;
+
     .line 17
-    iget-object v0, v0, LQgc;->f:LQ05;
-
     .line 18
-    .line 19
-    invoke-virtual {v0}, LQ05;->get()Ljava/lang/Object;
+    if-eqz p0, :cond_1
 
+    .line 19
     .line 20
+    invoke-virtual {p0}, LnJ1$b;->m()LVBe;
+
     .line 21
     .line 22
-    move-result-object v0
-
     .line 23
-    check-cast v0, LKQf;
+    move-result-object p0
 
     .line 24
-    .line 25
-    const/4 v1, 0x0
+    if-eqz p0, :cond_1
 
+    .line 25
     .line 26
-    invoke-interface {v0, p1, v1}, LKQf;->f(LfVf;Lkotlin/jvm/functions/Function1;)V
+    iget-object p0, p0, LVBe;->a:LcCe;
 
     .line 27
     .line 28
-    .line 29
-    return-void
+    if-eqz p0, :cond_1
 
+    .line 29
     .line 30
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
+    invoke-virtual {p0}, LcCe;->a()I
 
     .line 31
     .line 32
-    iget-object p1, p0, LPgc;->b:LQgc;
-
     .line 33
+    move-result p0
+
     .line 34
-    iget-object p1, p1, LQgc;->i:Lrn0;
+    const/4 v1, 0x2
 
     .line 35
-    .line 36
-    return-void
+    if-ne p0, v1, :cond_1
 
+    .line 36
     .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    const/4 p0, 0x1
+
+    .line 38
+    return p0
+
+    .line 39
+    :cond_1
+    return v0
 .end method

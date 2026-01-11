@@ -1,10 +1,10 @@
 .class public final Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;
-.super LMW;
+.super LSY;
 .source "SourceFile"
 
 # interfaces
-.implements LAj2;
-.implements LJ06;
+.implements Lhm2;
+.implements LG36;
 
 
 # static fields
@@ -20,21 +20,21 @@
 
 .field public B0:Z
 
-.field public final a:LXfi;
+.field public final a:LREi;
 
-.field public final b:LXfi;
+.field public final b:LREi;
 
-.field public c:LNi2;
+.field public c:Lul2;
 
-.field public e0:LGg2;
+.field public e0:Lpj2;
 
-.field public f0:LJg2;
+.field public f0:Lsj2;
 
-.field public g0:LKg2;
+.field public g0:Ltj2;
 
-.field public final h0:LXfi;
+.field public final h0:LREi;
 
-.field public final i0:LXfi;
+.field public final i0:LREi;
 
 .field public final j0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
@@ -56,21 +56,21 @@
 
 .field public s0:F
 
-.field public final t:LXfi;
+.field public final t:LREi;
 
 .field public t0:F
 
 .field public u0:Z
 
-.field public final v0:LXfi;
+.field public final v0:LREi;
 
-.field public final w0:LXfi;
+.field public final w0:LREi;
 
-.field public final x0:LXfi;
+.field public final x0:LREi;
 
-.field public final y0:LXfi;
+.field public final y0:LREi;
 
-.field public z0:LS16;
+.field public z0:LCz6;
 
 
 # direct methods
@@ -78,7 +78,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, LD6d;->Z:LD6d;
+    sget-object v0, LSld;->Z:LSld;
 
     .line 2
     .line 3
@@ -96,7 +96,7 @@
     .line 9
     .line 10
     .line 11
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 12
     .line 13
@@ -145,11 +145,11 @@
 
     .line 35
     .line 36
-    sget-object v1, LIJ6;->a:LIJ6;
+    sget-object v1, LrN6;->a:LrN6;
 
     .line 37
     .line 38
-    invoke-virtual {v1, v0}, LIJ6;->d(Landroid/content/Context;)V
+    invoke-virtual {v1, v0}, LrN6;->d(Landroid/content/Context;)V
 
     .line 39
     .line 40
@@ -169,40 +169,40 @@
     .locals 2
 
     .line 1
-    invoke-direct {p0, p1, p2}, LMW;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, LSY;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x3
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 3
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 4
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->a:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->a:LREi;
 
     .line 5
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x7
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 6
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 7
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->b:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->b:LREi;
 
     .line 8
-    new-instance p1, LNi2;
+    new-instance p1, Lul2;
 
     const/4 p2, 0x0
 
@@ -210,50 +210,50 @@
 
     const v1, 0x7ffff
 
-    invoke-direct {p1, p2, v0, v1}, LNi2;-><init>(Landroid/graphics/Typeface;II)V
+    invoke-direct {p1, p2, v0, v1}, Lul2;-><init>(Landroid/graphics/Typeface;II)V
 
-    iput-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iput-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 9
-    sget-object p1, LJX1;->j0:LJX1;
+    sget-object p1, LSc2;->Y:LSc2;
 
     .line 10
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 11
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t:LREi;
 
     .line 12
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x6
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 13
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 14
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LREi;
 
     .line 15
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x5
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 16
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 17
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LREi;
 
     .line 18
     new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
@@ -339,64 +339,64 @@
     iput-boolean v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->u0:Z
 
     .line 37
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 38
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 39
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->v0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->v0:LREi;
 
     .line 40
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 41
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 42
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->w0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->w0:LREi;
 
     .line 43
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x2
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 44
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 45
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->x0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->x0:LREi;
 
     .line 46
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x4
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 47
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 48
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->y0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->y0:LREi;
 
     .line 49
     sget-boolean p1, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->D0:Z
@@ -416,26 +416,26 @@
     move-result-object p1
 
     .line 52
-    sget-object p2, LIJ6;->a:LIJ6;
+    sget-object p2, LrN6;->a:LrN6;
 
-    invoke-virtual {p2, p1, v1}, LIJ6;->c(Landroid/content/Context;Z)V
+    invoke-virtual {p2, p1, v1}, LrN6;->c(Landroid/content/Context;Z)V
 
     .line 53
     :cond_0
-    new-instance p1, Lqx1;
+    new-instance p1, LDA1;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p2, p0}, Lqx1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LDA1;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p0, p1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 54
-    new-instance p1, LEg2;
+    new-instance p1, Lnj2;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p2, p0}, LEg2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lnj2;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -446,40 +446,40 @@
     .locals 1
 
     .line 55
-    invoke-direct {p0, p1, p2, p3}, LMW;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, LSY;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 56
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x3
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 57
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 58
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->a:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->a:LREi;
 
     .line 59
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x7
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 60
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 61
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->b:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->b:LREi;
 
     .line 62
-    new-instance p1, LNi2;
+    new-instance p1, Lul2;
 
     const/4 p2, 0x0
 
@@ -487,50 +487,50 @@
 
     const v0, 0x7ffff
 
-    invoke-direct {p1, p2, p3, v0}, LNi2;-><init>(Landroid/graphics/Typeface;II)V
+    invoke-direct {p1, p2, p3, v0}, Lul2;-><init>(Landroid/graphics/Typeface;II)V
 
-    iput-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iput-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 63
-    sget-object p1, LJX1;->j0:LJX1;
+    sget-object p1, LSc2;->Y:LSc2;
 
     .line 64
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 65
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t:LREi;
 
     .line 66
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x6
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 67
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 68
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LREi;
 
     .line 69
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x5
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 70
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 71
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LREi;
 
     .line 72
     new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
@@ -616,64 +616,64 @@
     iput-boolean v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->u0:Z
 
     .line 91
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 92
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 93
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->v0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->v0:LREi;
 
     .line 94
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 95
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 96
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->w0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->w0:LREi;
 
     .line 97
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x2
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 98
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 99
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->x0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->x0:LREi;
 
     .line 100
-    new-instance p1, LMg2;
+    new-instance p1, Lvj2;
 
     const/4 p2, 0x4
 
-    invoke-direct {p1, p0, p2}, LMg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
+    invoke-direct {p1, p0, p2}, Lvj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;I)V
 
     .line 101
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 102
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->y0:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->y0:LREi;
 
     .line 103
     sget-boolean p1, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->D0:Z
@@ -693,26 +693,26 @@
     move-result-object p1
 
     .line 106
-    sget-object p2, LIJ6;->a:LIJ6;
+    sget-object p2, LrN6;->a:LrN6;
 
-    invoke-virtual {p2, p1, v0}, LIJ6;->c(Landroid/content/Context;Z)V
+    invoke-virtual {p2, p1, v0}, LrN6;->c(Landroid/content/Context;Z)V
 
     .line 107
     :cond_0
-    new-instance p1, Lqx1;
+    new-instance p1, LDA1;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p2, p0}, Lqx1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LDA1;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p0, p1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 108
-    new-instance p1, LEg2;
+    new-instance p1, Lnj2;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p2, p0}, LEg2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lnj2;-><init>(ILjava/lang/Object;)V
 
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
@@ -733,7 +733,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;ZILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;ZILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -765,7 +765,7 @@
     .locals 5
 
     .line 1
-    invoke-super {p0}, LMW;->getText()Landroid/text/Editable;
+    invoke-super {p0}, LSY;->getText()Landroid/text/Editable;
 
     .line 2
     .line 3
@@ -836,7 +836,7 @@
     move-result v3
 
     .line 34
-    invoke-static {v3}, Lg3c;->g(I)Z
+    invoke-static {v3}, LI0b;->e(I)Z
 
     .line 35
     .line 36
@@ -907,32 +907,32 @@
 
     .line 4
     .line 5
-    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 6
     .line 7
-    iget-object p1, p1, LNi2;->e:LIi2;
+    iget-object p1, p1, Lul2;->e:Lpl2;
 
     .line 8
     .line 9
-    iget p1, p1, LIi2;->b:I
+    iget p1, p1, Lpl2;->b:I
 
     .line 10
     .line 11
     :cond_0
-    iget-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 12
     .line 13
-    iget-object p2, p2, LNi2;->e:LIi2;
+    iget-object p2, p2, Lul2;->e:Lpl2;
 
     .line 14
     .line 15
-    iget v0, p2, LIi2;->f:I
+    iget v0, p2, Lpl2;->f:I
 
     .line 16
     .line 17
-    iget-object p2, p2, LIi2;->g:Ljava/util/List;
+    iget-object p2, p2, Lpl2;->g:Ljava/util/List;
 
     .line 18
     .line 19
@@ -949,8 +949,8 @@
 
 
 # virtual methods
-.method public final a(LNi2;ZZ)V
-    .locals 46
+.method public final a(Lul2;ZZ)V
+    .locals 47
 
     .line 1
     move-object/from16 v0, p0
@@ -961,11 +961,11 @@
 
     .line 4
     .line 5
-    iget-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 6
     .line 7
-    iget-object v2, v2, LNi2;->a:Ljava/lang/String;
+    iget-object v2, v2, Lul2;->a:Ljava/lang/String;
 
     .line 8
     .line 9
@@ -973,7 +973,7 @@
 
     .line 10
     .line 11
-    invoke-static {v2, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 12
     .line 13
@@ -985,13 +985,13 @@
 
     .line 16
     .line 17
-    const/4 v5, 0x0
+    const/4 v5, 0x1
 
     .line 18
     const/4 v6, 0x0
 
     .line 19
-    const/4 v7, 0x1
+    const/4 v7, 0x0
 
     .line 20
     if-nez v2, :cond_1
@@ -1006,11 +1006,11 @@
 
     .line 25
     :cond_0
-    iget-object v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 26
     .line 27
-    iget-object v12, v1, LNi2;->d:LJi2;
+    iget-object v12, v1, Lul2;->d:Lql2;
 
     .line 28
     .line 29
@@ -1031,11 +1031,11 @@
     const/4 v11, 0x0
 
     .line 36
-    iget-object v13, v1, LNi2;->e:LIi2;
+    iget-object v13, v1, Lul2;->e:Lpl2;
 
     .line 37
     .line 38
-    iget-object v14, v1, LNi2;->f:LGi2;
+    iget-object v14, v1, Lul2;->f:Lnl2;
 
     .line 39
     .line 40
@@ -1075,7 +1075,7 @@
     .line 56
     .line 57
     .line 58
-    invoke-static/range {v8 .. v25}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    invoke-static/range {v8 .. v25}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
 
     .line 59
     .line 60
@@ -1083,14 +1083,14 @@
     move-result-object v1
 
     .line 62
-    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 63
     .line 64
-    const/4 v12, 0x0
+    const/4 v14, 0x0
 
     .line 65
-    const/16 v20, 0x1
+    const/16 v19, 0x1
 
     .line 66
     .line 67
@@ -1100,11 +1100,11 @@
     .line 69
     :cond_1
     :goto_0
-    iget-object v2, v1, LNi2;->e:LIi2;
+    iget-object v2, v1, Lul2;->e:Lpl2;
 
     .line 70
     .line 71
-    iget v2, v2, LIi2;->c:I
+    iget v2, v2, Lpl2;->c:I
 
     .line 72
     .line 73
@@ -1116,15 +1116,15 @@
 
     .line 76
     :cond_2
-    iget-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 77
     .line 78
-    iget-object v2, v2, LNi2;->e:LIi2;
+    iget-object v2, v2, Lul2;->e:Lpl2;
 
     .line 79
     .line 80
-    iget v2, v2, LIi2;->c:I
+    iget v2, v2, Lpl2;->c:I
 
     .line 81
     .line 82
@@ -1132,7 +1132,7 @@
     const/4 v8, 0x0
 
     .line 83
-    iget v9, v1, LNi2;->m:F
+    iget v9, v1, Lul2;->m:F
 
     .line 84
     .line 85
@@ -1174,7 +1174,7 @@
     .line 101
     .line 102
     :goto_2
-    iget-boolean v9, v1, LNi2;->l:Z
+    iget-boolean v9, v1, Lul2;->l:Z
 
     .line 103
     .line 104
@@ -1207,11 +1207,11 @@
 
     .line 117
     :cond_6
-    iget v9, v1, LNi2;->s:I
+    iget v9, v1, Lul2;->s:I
 
     .line 118
     .line 119
-    invoke-static {v9}, LLY1;->a(I)I
+    invoke-static {v9}, LNW1;->a(I)I
 
     .line 120
     .line 121
@@ -1250,12 +1250,12 @@
     move-result-object v9
 
     .line 139
-    invoke-virtual {v9, v6}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+    invoke-virtual {v9, v7}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
     .line 140
     .line 141
     .line 142
-    iget v9, v1, LNi2;->p:I
+    iget v9, v1, Lul2;->p:I
 
     .line 143
     .line 144
@@ -1264,7 +1264,7 @@
     .line 145
     .line 146
     .line 147
-    iget-object v9, v1, LNi2;->g:LLi2;
+    iget-object v9, v1, Lul2;->g:Lsl2;
 
     .line 148
     .line 149
@@ -1272,19 +1272,19 @@
 
     .line 150
     .line 151
-    iget v10, v9, LLi2;->b:I
+    iget v10, v9, Lsl2;->b:I
 
     .line 152
     .line 153
-    iget v11, v9, LLi2;->d:I
+    iget v11, v9, Lsl2;->d:I
 
     .line 154
     .line 155
-    iget v12, v9, LLi2;->a:I
+    iget v12, v9, Lsl2;->a:I
 
     .line 156
     .line 157
-    iget v9, v9, LLi2;->c:I
+    iget v9, v9, Lsl2;->c:I
 
     .line 158
     .line 159
@@ -1294,11 +1294,11 @@
     .line 161
     .line 162
     :cond_7
-    iget v9, v1, LNi2;->q:F
+    iget v9, v1, Lul2;->q:F
 
     .line 163
     .line 164
-    iget v10, v1, LNi2;->r:F
+    iget v10, v1, Lul2;->r:F
 
     .line 165
     .line 166
@@ -1307,7 +1307,7 @@
     .line 167
     .line 168
     .line 169
-    iget v9, v1, LNi2;->h:I
+    iget v9, v1, Lul2;->h:I
 
     .line 170
     .line 171
@@ -1316,11 +1316,11 @@
     .line 172
     .line 173
     .line 174
-    iget-object v9, v1, LNi2;->n:Landroid/graphics/Typeface;
+    iget-object v9, v1, Lul2;->n:Landroid/graphics/Typeface;
 
     .line 175
     .line 176
-    iget v10, v1, LNi2;->o:I
+    iget v10, v1, Lul2;->o:I
 
     .line 177
     .line 178
@@ -1329,14 +1329,14 @@
     .line 179
     .line 180
     .line 181
-    sget-object v9, Lji2;->b:Lji2;
+    sget-object v9, LNk2;->b:LNk2;
 
     .line 182
     .line 183
     const/4 v10, 0x2
 
     .line 184
-    iget-object v11, v1, LNi2;->i:LMi2;
+    iget-object v11, v1, Lul2;->i:Ltl2;
 
     .line 185
     .line 186
@@ -1344,7 +1344,7 @@
 
     .line 187
     .line 188
-    iget-object v12, v11, LMi2;->a:Lji2;
+    iget-object v12, v11, Ltl2;->a:LNk2;
 
     .line 189
     .line 190
@@ -1361,11 +1361,11 @@
     .line 195
     .line 196
     :cond_8
-    iget-object v12, v11, LMi2;->a:Lji2;
+    iget-object v12, v11, Ltl2;->a:LNk2;
 
     .line 197
     .line 198
-    iget-object v13, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t:LXfi;
+    iget-object v13, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t:LREi;
 
     .line 199
     .line 200
@@ -1373,7 +1373,7 @@
 
     .line 201
     .line 202
-    invoke-virtual {v13}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v13}, LREi;->getValue()Ljava/lang/Object;
 
     .line 203
     .line 204
@@ -1393,7 +1393,7 @@
     move-result-object v13
 
     .line 212
-    invoke-static {v9, v13}, Lv70;->m0(Ljava/lang/Object;[Ljava/lang/Object;)Z
+    invoke-static {v9, v13}, LN90;->a0(Ljava/lang/Object;[Ljava/lang/Object;)Z
 
     .line 213
     .line 214
@@ -1408,7 +1408,7 @@
     array-length v14, v13
 
     .line 219
-    add-int/2addr v14, v7
+    add-int/2addr v14, v5
 
     .line 220
     invoke-static {v13, v14}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
@@ -1439,7 +1439,7 @@
 
     .line 233
     :cond_9
-    invoke-virtual {v13}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v13}, LREi;->getValue()Ljava/lang/Object;
 
     .line 234
     .line 235
@@ -1459,7 +1459,7 @@
     move-result-object v13
 
     .line 243
-    invoke-static {v9, v13}, Lv70;->m0(Ljava/lang/Object;[Ljava/lang/Object;)Z
+    invoke-static {v9, v13}, LN90;->a0(Ljava/lang/Object;[Ljava/lang/Object;)Z
 
     .line 244
     .line 245
@@ -1471,7 +1471,7 @@
 
     .line 248
     .line 249
-    invoke-static {v13}, Lv70;->a1([Ljava/lang/Object;)Ljava/util/ArrayList;
+    invoke-static {v13}, LN90;->N0([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     .line 250
     .line 251
@@ -1484,7 +1484,7 @@
     .line 254
     .line 255
     .line 256
-    new-array v9, v5, [Landroid/text/InputFilter;
+    new-array v9, v6, [Landroid/text/InputFilter;
 
     .line 257
     .line 258
@@ -1507,7 +1507,7 @@
     .line 267
     :cond_a
     :goto_4
-    invoke-super {v0}, LMW;->getText()Landroid/text/Editable;
+    invoke-super {v0}, LSY;->getText()Landroid/text/Editable;
 
     .line 268
     .line 269
@@ -1624,7 +1624,7 @@
 
     .line 320
     .line 321
-    if-nez v8, :cond_14
+    if-nez v8, :cond_15
 
     .line 322
     .line 323
@@ -1655,11 +1655,11 @@
     move-result v8
 
     .line 336
-    if-eq v8, v7, :cond_13
+    if-eq v8, v5, :cond_14
 
     .line 337
     .line 338
-    if-eq v8, v10, :cond_12
+    if-eq v8, v10, :cond_13
 
     .line 339
     .line 340
@@ -1679,639 +1679,640 @@
     move-result-object v8
 
     .line 348
-    sget v12, LM4i;->a:I
+    sget v12, Lfti;->a:I
 
     .line 349
     .line 350
-    invoke-virtual {v8}, Ljava/lang/String;->length()I
+    if-eqz v8, :cond_11
 
     .line 351
     .line 352
+    invoke-virtual {v8}, Ljava/lang/String;->length()I
+
     .line 353
+    .line 354
+    .line 355
     move-result v12
 
-    .line 354
+    .line 356
     if-nez v12, :cond_10
 
-    .line 355
-    .line 356
+    .line 357
+    .line 358
+    goto :goto_7
+
+    .line 359
+    :cond_10
+    invoke-virtual {v8, v6}, Ljava/lang/String;->charAt(I)C
+
+    .line 360
+    .line 361
+    .line 362
+    move-result v13
+
+    .line 363
+    invoke-static {v13}, Ljava/lang/Character;->isTitleCase(C)Z
+
+    .line 364
+    .line 365
+    .line 366
+    move-result v14
+
+    .line 367
+    if-eqz v14, :cond_12
+
+    .line 368
+    .line 369
+    :cond_11
     :goto_7
     move-object v14, v8
 
-    .line 357
+    .line 370
     goto :goto_8
 
-    .line 358
-    :cond_10
-    invoke-virtual {v8, v5}, Ljava/lang/String;->charAt(I)C
-
-    .line 359
-    .line 360
-    .line 361
-    move-result v13
-
-    .line 362
-    invoke-static {v13}, Ljava/lang/Character;->isTitleCase(C)Z
-
-    .line 363
-    .line 364
-    .line 365
-    move-result v14
-
-    .line 366
-    if-eqz v14, :cond_11
-
-    .line 367
-    .line 368
-    goto :goto_7
-
-    .line 369
-    :cond_11
-    new-instance v14, Ljava/lang/StringBuilder;
-
-    .line 370
     .line 371
-    invoke-direct {v14, v12}, Ljava/lang/StringBuilder;-><init>(I)V
+    :cond_12
+    new-instance v14, Ljava/lang/StringBuilder;
 
     .line 372
     .line 373
-    .line 374
-    invoke-static {v13}, Ljava/lang/Character;->toTitleCase(C)C
+    invoke-direct {v14, v12}, Ljava/lang/StringBuilder;-><init>(I)V
 
+    .line 374
     .line 375
     .line 376
+    invoke-static {v13}, Ljava/lang/Character;->toTitleCase(C)C
+
     .line 377
+    .line 378
+    .line 379
     move-result v12
 
-    .line 378
+    .line 380
     invoke-virtual {v14, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 379
-    .line 380
     .line 381
-    invoke-virtual {v8, v7}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
     .line 382
     .line 383
+    invoke-virtual {v8, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
     .line 384
+    .line 385
+    .line 386
     move-result-object v8
 
-    .line 385
+    .line 387
     invoke-virtual {v14, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 386
-    .line 387
     .line 388
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 389
     .line 390
+    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 391
-    move-result-object v8
-
     .line 392
-    goto :goto_7
-
     .line 393
-    :cond_12
-    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+    move-result-object v8
 
     .line 394
+    goto :goto_7
+
     .line 395
-    .line 396
-    move-result-object v8
-
-    .line 397
-    invoke-virtual {v9, v8}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    .line 398
-    .line 399
-    .line 400
-    move-result-object v14
-
-    .line 401
-    goto :goto_8
-
-    .line 402
     :cond_13
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
-    .line 403
-    .line 404
-    .line 405
+    .line 396
+    .line 397
+    .line 398
     move-result-object v8
 
-    .line 406
-    invoke-virtual {v9, v8}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+    .line 399
+    invoke-virtual {v9, v8}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
-    .line 407
-    .line 408
-    .line 409
+    .line 400
+    .line 401
+    .line 402
     move-result-object v14
 
-    .line 410
-    :cond_14
-    :goto_8
-    invoke-static {v9, v14}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .line 403
+    goto :goto_8
 
+    .line 404
+    :cond_14
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    .line 405
+    .line 406
+    .line 407
+    move-result-object v8
+
+    .line 408
+    invoke-virtual {v9, v8}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 409
+    .line 410
     .line 411
+    move-result-object v14
+
     .line 412
+    :cond_15
+    :goto_8
+    invoke-static {v9, v14}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 413
+    .line 414
+    .line 415
     move-result v8
 
-    .line 414
-    if-nez v8, :cond_15
-
-    .line 415
     .line 416
-    invoke-super {v0}, LMW;->getText()Landroid/text/Editable;
+    if-nez v8, :cond_16
 
     .line 417
     .line 418
+    invoke-super {v0}, LSY;->getText()Landroid/text/Editable;
+
     .line 419
+    .line 420
+    .line 421
     move-result-object v8
 
-    .line 420
+    .line 422
     invoke-virtual {v9}, Ljava/lang/String;->length()I
 
-    .line 421
-    .line 422
     .line 423
+    .line 424
+    .line 425
     move-result v9
 
-    .line 424
-    invoke-interface {v8, v5, v9, v14}, Landroid/text/Editable;->replace(IILjava/lang/CharSequence;)Landroid/text/Editable;
-
-    .line 425
     .line 426
-    .line 427
-    :cond_15
-    new-instance v8, LMi2;
+    invoke-interface {v8, v6, v9, v14}, Landroid/text/Editable;->replace(IILjava/lang/CharSequence;)Landroid/text/Editable;
 
+    .line 427
     .line 428
     .line 429
-    iget-object v9, v11, LMi2;->a:Lji2;
+    :cond_16
+    new-instance v8, Ltl2;
 
     .line 430
     .line 431
-    invoke-direct {v8, v9, v10, v5}, LMi2;-><init>(Lji2;II)V
+    iget-object v9, v11, Ltl2;->a:LNk2;
 
     .line 432
     .line 433
+    invoke-direct {v8, v9, v10, v6}, Ltl2;-><init>(LNk2;II)V
+
     .line 434
+    .line 435
+    .line 436
     move-object v11, v8
 
-    .line 435
-    :goto_9
-    iget-object v8, v1, LNi2;->d:LJi2;
-
-    .line 436
     .line 437
-    iget-object v9, v8, LJi2;->a:Ljava/lang/Float;
+    :goto_9
+    iget-object v8, v1, Lul2;->d:Lql2;
 
     .line 438
     .line 439
-    if-eqz v9, :cond_16
+    iget-object v9, v8, Lql2;->a:Ljava/lang/Float;
 
     .line 440
     .line 441
-    invoke-virtual {v9}, Ljava/lang/Float;->floatValue()F
+    if-eqz v9, :cond_17
 
     .line 442
     .line 443
-    .line 444
-    move-result v12
-
-    .line 445
-    invoke-virtual {v0, v10, v12}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextSize(IF)V
-
-    .line 446
-    .line 447
-    .line 448
     invoke-virtual {v9}, Ljava/lang/Float;->floatValue()F
 
+    .line 444
+    .line 445
+    .line 446
+    move-result v12
+
+    .line 447
+    invoke-virtual {v0, v10, v12}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextSize(IF)V
+
+    .line 448
     .line 449
     .line 450
+    invoke-virtual {v9}, Ljava/lang/Float;->floatValue()F
+
     .line 451
+    .line 452
+    .line 453
     move-result v9
 
-    .line 452
+    .line 454
     invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
-    .line 453
-    .line 454
     .line 455
+    .line 456
+    .line 457
     move-result-object v12
 
-    .line 456
+    .line 458
     invoke-virtual {v12}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
-    .line 457
-    .line 458
     .line 459
+    .line 460
+    .line 461
     move-result-object v12
 
-    .line 460
-    invoke-static {v7, v9, v12}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
-
-    .line 461
     .line 462
+    invoke-static {v5, v9, v12}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+
     .line 463
+    .line 464
+    .line 465
     move-result v9
 
-    .line 464
+    .line 466
     invoke-static {v9}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
-    .line 465
-    .line 466
     .line 467
+    .line 468
+    .line 469
     move-result-object v9
 
-    .line 468
-    iget-object v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->p0:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 469
     .line 470
-    invoke-virtual {v12, v9}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+    iget-object v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->p0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 471
     .line 472
-    .line 473
-    :cond_16
-    iget v9, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r0:F
+    invoke-virtual {v12, v9}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
 
+    .line 473
     .line 474
     .line 475
-    iput v9, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t0:F
+    :cond_17
+    iget v9, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r0:F
 
     .line 476
     .line 477
-    iget v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q0:F
+    iput v9, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t0:F
 
     .line 478
     .line 479
-    iget-object v8, v8, LJi2;->b:Ljava/lang/Float;
+    iget v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q0:F
 
     .line 480
     .line 481
-    if-eqz v8, :cond_17
+    iget-object v8, v8, Lql2;->b:Ljava/lang/Float;
 
     .line 482
     .line 483
-    invoke-virtual {v8}, Ljava/lang/Float;->floatValue()F
+    if-eqz v8, :cond_18
 
     .line 484
     .line 485
+    invoke-virtual {v8}, Ljava/lang/Float;->floatValue()F
+
     .line 486
+    .line 487
+    .line 488
     move-result v13
 
-    .line 487
-    cmpl-float v13, v13, p2
-
-    .line 488
     .line 489
-    if-lez v13, :cond_17
+    cmpl-float v13, v13, p2
 
     .line 490
     .line 491
-    invoke-virtual {v8}, Ljava/lang/Float;->floatValue()F
+    if-lez v13, :cond_18
 
     .line 492
     .line 493
+    invoke-virtual {v8}, Ljava/lang/Float;->floatValue()F
+
     .line 494
+    .line 495
+    .line 496
     move-result v8
 
-    .line 495
+    .line 497
     invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
-    .line 496
-    .line 497
     .line 498
+    .line 499
+    .line 500
     move-result-object v13
 
-    .line 499
+    .line 501
     invoke-virtual {v13}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
-    .line 500
-    .line 501
     .line 502
+    .line 503
+    .line 504
     move-result-object v13
 
-    .line 503
-    invoke-static {v7, v8, v13}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
-
-    .line 504
     .line 505
+    invoke-static {v5, v8, v13}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+
     .line 506
+    .line 507
+    .line 508
     move-result v8
 
-    .line 507
-    invoke-static {v8, v9, v12}, LMeb;->a(FFF)F
-
-    .line 508
     .line 509
+    invoke-static {v8, v9, v12}, Losb;->a(FFF)F
+
     .line 510
+    .line 511
+    .line 512
     move-result v12
 
-    .line 511
-    :cond_17
-    iput v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->s0:F
-
-    .line 512
     .line 513
-    iget v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t0:F
+    :cond_18
+    iput v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->s0:F
 
     .line 514
     .line 515
-    cmpg-float v9, v12, v8
+    iget v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->t0:F
 
     .line 516
     .line 517
-    if-gez v9, :cond_18
+    cmpg-float v9, v12, v8
 
     .line 518
     .line 519
-    iput v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->s0:F
+    if-gez v9, :cond_19
 
     .line 520
     .line 521
-    :cond_18
-    iget-object v9, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->g0:LKg2;
+    iput v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->s0:F
 
     .line 522
     .line 523
-    if-eqz v9, :cond_19
+    :cond_19
+    iget-object v9, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->g0:Ltj2;
 
     .line 524
     .line 525
-    iget v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->s0:F
+    if-eqz v9, :cond_1a
 
     .line 526
     .line 527
-    iget-object v9, v9, LKg2;->a:LU5c;
+    iget v12, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->s0:F
 
     .line 528
     .line 529
-    iput v8, v9, LU5c;->f:F
+    iget-object v9, v9, Ltj2;->a:LGkc;
 
     .line 530
     .line 531
-    iput v12, v9, LU5c;->g:F
+    iput v8, v9, LGkc;->f:F
 
     .line 532
     .line 533
-    :cond_19
-    invoke-super {v0}, LMW;->getText()Landroid/text/Editable;
+    iput v12, v9, LGkc;->g:F
 
     .line 534
     .line 535
+    :cond_1a
+    invoke-super {v0}, LSY;->getText()Landroid/text/Editable;
+
     .line 536
+    .line 537
+    .line 538
     move-result-object v8
 
-    .line 537
+    .line 539
     invoke-interface {v8}, Ljava/lang/CharSequence;->length()I
 
-    .line 538
-    .line 539
     .line 540
+    .line 541
+    .line 542
     move-result v8
 
-    .line 541
+    .line 543
     invoke-virtual {v0, v8}, Landroid/widget/EditText;->setSelection(I)V
 
-    .line 542
-    .line 543
     .line 544
-    iget-object v8, v1, LNi2;->e:LIi2;
-
     .line 545
     .line 546
-    invoke-static {v8, v2, v6, v4}, LIi2;->a(LIi2;ILKi2;I)LIi2;
+    iget-object v8, v1, Lul2;->e:Lpl2;
 
     .line 547
     .line 548
+    invoke-static {v8, v2, v7, v4}, Lpl2;->a(Lpl2;ILrl2;I)Lpl2;
+
     .line 549
+    .line 550
+    .line 551
     move-result-object v2
 
-    .line 550
-    iget-object v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
-
-    .line 551
     .line 552
-    iget-object v9, v8, LNi2;->a:Ljava/lang/String;
+    iget-object v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 553
     .line 554
-    invoke-static {v9, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v9, v8, Lul2;->a:Ljava/lang/String;
 
     .line 555
     .line 556
+    invoke-static {v9, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 557
+    .line 558
+    .line 559
     move-result v3
 
-    .line 558
-    if-eqz v3, :cond_1a
-
-    .line 559
     .line 560
-    invoke-static {}, LJ0j;->a()Ljava/util/UUID;
+    if-eqz v3, :cond_1b
 
     .line 561
     .line 562
+    invoke-static {}, Lgqj;->a()Ljava/util/UUID;
+
     .line 563
+    .line 564
+    .line 565
     move-result-object v3
 
-    .line 564
+    .line 566
     invoke-virtual {v3}, Ljava/util/UUID;->toString()Ljava/lang/String;
 
-    .line 565
-    .line 566
     .line 567
+    .line 568
+    .line 569
     move-result-object v3
 
-    .line 568
+    .line 570
     goto :goto_a
 
-    .line 569
-    :cond_1a
-    iget-object v3, v8, LNi2;->a:Ljava/lang/String;
-
-    .line 570
     .line 571
-    :goto_a
-    const/16 v16, 0x0
+    :cond_1b
+    iget-object v3, v8, Lul2;->a:Ljava/lang/String;
 
     .line 572
     .line 573
-    const/16 v17, 0x0
+    :goto_a
+    const/16 v16, 0x0
 
     .line 574
     .line 575
-    move-object v8, v6
+    const/16 v17, 0x0
 
     .line 576
+    .line 577
     move-object v6, v2
 
-    .line 577
+    .line 578
     move-object v2, v3
 
-    .line 578
-    const/4 v3, 0x0
-
     .line 579
-    const/16 v9, 0x1fb
-
-    .line 580
-    .line 581
-    const/4 v4, 0x0
-
-    .line 582
-    const/4 v12, 0x0
-
-    .line 583
-    const/4 v5, 0x0
-
-    .line 584
-    const/4 v13, 0x1
-
-    .line 585
-    const/4 v7, 0x0
-
-    .line 586
-    move-object v14, v8
-
-    .line 587
     const/4 v8, 0x0
 
+    .line 580
+    const/4 v3, 0x0
+
+    .line 581
+    const/16 v9, 0x1fb
+
+    .line 582
+    .line 583
+    const/4 v4, 0x0
+
+    .line 584
+    const/4 v12, 0x1
+
+    .line 585
+    const/4 v5, 0x0
+
+    .line 586
+    move-object v13, v7
+
+    .line 587
+    const/4 v7, 0x0
+
     .line 588
-    const/16 v15, 0x1fb
-
-    .line 589
-    .line 590
-    const/4 v9, 0x0
-
-    .line 591
-    move-object v10, v11
-
-    .line 592
-    const/16 v18, 0x2
-
-    .line 593
-    .line 594
-    const/4 v11, 0x0
-
-    .line 595
-    const/16 v19, 0x0
-
-    .line 596
-    .line 597
-    const/4 v12, 0x0
-
-    .line 598
-    const/16 v20, 0x1
-
-    .line 599
-    .line 600
-    const/4 v13, 0x0
-
-    .line 601
-    move-object/from16 v21, v14
-
-    .line 602
-    .line 603
     const/4 v14, 0x0
 
+    .line 589
+    const/4 v8, 0x0
+
+    .line 590
+    const/16 v15, 0x1fb
+
+    .line 591
+    .line 592
+    const/4 v9, 0x0
+
+    .line 593
+    move-object v10, v11
+
+    .line 594
+    const/16 v18, 0x2
+
+    .line 595
+    .line 596
+    const/4 v11, 0x0
+
+    .line 597
+    const/16 v19, 0x1
+
+    .line 598
+    .line 599
+    const/4 v12, 0x0
+
+    .line 600
+    move-object/from16 v20, v13
+
+    .line 601
+    .line 602
+    const/4 v13, 0x0
+
+    .line 603
+    const/16 v21, 0x0
+
     .line 604
+    .line 605
+    const/4 v14, 0x0
+
+    .line 606
     const/16 v22, 0x1fb
 
-    .line 605
-    .line 606
+    .line 607
+    .line 608
     const/4 v15, 0x0
 
-    .line 607
-    const/16 v23, 0x2
-
-    .line 608
     .line 609
-    const v18, 0x7feee
+    const/16 v23, 0x2
 
     .line 610
     .line 611
-    .line 612
-    invoke-static/range {v1 .. v18}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    const v18, 0x7feee
 
+    .line 612
     .line 613
     .line 614
+    invoke-static/range {v1 .. v18}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
+
     .line 615
+    .line 616
+    .line 617
     move-result-object v2
 
-    .line 616
-    iput-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
-
-    .line 617
     .line 618
-    iget-object v1, v1, LNi2;->f:LGi2;
+    iput-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 619
     .line 620
-    iget-object v1, v1, LGi2;->c:Ljava/lang/String;
+    iget-object v1, v1, Lul2;->f:Lnl2;
 
     .line 621
     .line 622
-    iget-object v3, v2, LNi2;->f:LGi2;
+    iget-object v1, v1, Lnl2;->c:Ljava/lang/String;
 
     .line 623
     .line 624
-    iget-object v4, v3, LGi2;->c:Ljava/lang/String;
+    iget-object v3, v2, Lul2;->f:Lnl2;
 
     .line 625
     .line 626
-    if-eqz v4, :cond_1b
+    iget-object v4, v3, Lnl2;->c:Ljava/lang/String;
 
     .line 627
     .line 628
-    if-nez v1, :cond_1b
+    if-eqz v4, :cond_1c
 
     .line 629
     .line 630
-    const/16 v38, 0x1
+    if-nez v1, :cond_1c
 
     .line 631
     .line 632
-    goto :goto_b
+    const/16 v39, 0x1
 
     .line 633
-    :cond_1b
-    const/16 v38, 0x0
-
     .line 634
+    goto :goto_b
+
     .line 635
-    :goto_b
-    const/16 v4, 0x3fb
+    :cond_1c
+    const/16 v39, 0x0
 
     .line 636
     .line 637
-    const/4 v12, 0x0
+    :goto_b
+    const/16 v4, 0x3fb
 
     .line 638
-    invoke-static {v3, v1, v12, v4}, LGi2;->a(LGi2;Ljava/lang/String;II)LGi2;
-
     .line 639
+    const/4 v14, 0x0
+
     .line 640
+    invoke-static {v3, v1, v14, v4}, Lnl2;->a(Lnl2;Ljava/lang/String;II)Lnl2;
+
     .line 641
-    move-result-object v34
-
     .line 642
-    const v45, 0x7fddf
-
     .line 643
-    .line 644
-    .line 645
-    const/16 v44, 0x0
+    move-result-object v35
 
+    .line 644
+    const v46, 0x7fddf
+
+    .line 645
     .line 646
     .line 647
-    const/16 v29, 0x0
+    const/16 v45, 0x0
 
     .line 648
     .line 649
@@ -2331,7 +2332,7 @@
 
     .line 656
     .line 657
-    const/16 v35, 0x0
+    const/16 v34, 0x0
 
     .line 658
     .line 659
@@ -2343,7 +2344,7 @@
 
     .line 662
     .line 663
-    const/16 v39, 0x0
+    const/16 v38, 0x0
 
     .line 664
     .line 665
@@ -2363,703 +2364,707 @@
 
     .line 672
     .line 673
-    move-object/from16 v28, v2
+    const/16 v44, 0x0
 
     .line 674
     .line 675
-    invoke-static/range {v28 .. v45}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    move-object/from16 v29, v2
 
     .line 676
     .line 677
+    invoke-static/range {v29 .. v46}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
+
     .line 678
+    .line 679
+    .line 680
     move-result-object v2
 
-    .line 679
-    iput-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
-
-    .line 680
     .line 681
-    if-eqz v1, :cond_1d
+    iput-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 682
     .line 683
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    if-eqz v1, :cond_1e
 
     .line 684
     .line 685
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
+
     .line 686
+    .line 687
+    .line 688
     move-result-object v2
 
-    .line 687
+    .line 689
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 688
-    .line 689
     .line 690
-    const-string v3, "GlowStyle-Background"
-
     .line 691
     .line 692
-    invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    const-string v3, "GlowStyle-Background"
 
     .line 693
     .line 694
+    invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
     .line 695
+    .line 696
+    .line 697
     move-result v1
 
-    .line 696
-    if-eqz v1, :cond_1d
-
-    .line 697
     .line 698
-    iget-object v1, v2, LEj2;->o:LXfi;
+    if-eqz v1, :cond_1e
 
     .line 699
     .line 700
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object v1, v2, Llm2;->o:LREi;
 
     .line 701
     .line 702
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
     .line 703
+    .line 704
+    .line 705
     move-result-object v1
 
-    .line 704
-    check-cast v1, LQw8;
-
-    .line 705
     .line 706
-    iget-object v2, v1, LQw8;->k:LOw8;
+    check-cast v1, LyD8;
 
     .line 707
     .line 708
-    iget-boolean v2, v2, LOw8;->a:Z
+    iget-object v2, v1, LyD8;->k:LwD8;
 
     .line 709
     .line 710
-    if-eqz v2, :cond_1c
+    iget-boolean v2, v2, LwD8;->a:Z
 
     .line 711
     .line 712
-    goto :goto_c
+    if-eqz v2, :cond_1d
 
     .line 713
-    :cond_1c
-    iget-object v2, v1, LQw8;->a:Landroid/widget/TextView;
-
     .line 714
+    goto :goto_c
+
     .line 715
-    invoke-virtual {v2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+    :cond_1d
+    iget-object v2, v1, LyD8;->a:Landroid/widget/TextView;
 
     .line 716
     .line 717
+    invoke-virtual {v2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+
     .line 718
+    .line 719
+    .line 720
     move-result-object v3
 
-    .line 719
-    sget-object v4, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
-
-    .line 720
     .line 721
-    invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+    sget-object v4, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     .line 722
     .line 723
-    .line 724
-    invoke-virtual {v2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+    invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
+    .line 724
     .line 725
     .line 726
+    invoke-virtual {v2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
+
     .line 727
+    .line 728
+    .line 729
     move-result-object v2
 
-    .line 728
-    iget-object v3, v1, LQw8;->g:LXfi;
-
-    .line 729
     .line 730
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object v3, v1, LyD8;->g:LREi;
 
     .line 731
     .line 732
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
+
     .line 733
+    .line 734
+    .line 735
     move-result-object v3
 
-    .line 734
-    check-cast v3, Ljava/lang/Number;
-
-    .line 735
     .line 736
-    invoke-virtual {v3}, Ljava/lang/Number;->floatValue()F
+    check-cast v3, Ljava/lang/Number;
 
     .line 737
     .line 738
+    invoke-virtual {v3}, Ljava/lang/Number;->floatValue()F
+
     .line 739
+    .line 740
+    .line 741
     move-result v3
 
-    .line 740
+    .line 742
     const v4, 0x3f19999a    # 0.6f
 
-    .line 741
-    .line 742
     .line 743
-    mul-float v3, v3, v4
-
     .line 744
     .line 745
-    invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+    mul-float v3, v3, v4
 
     .line 746
     .line 747
-    .line 748
-    new-instance v2, LOw8;
+    invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
+    .line 748
     .line 749
     .line 750
-    const/4 v3, 0x2
+    new-instance v2, LwD8;
 
     .line 751
-    invoke-direct {v2, v3}, LOw8;-><init>(I)V
-
     .line 752
-    .line 753
-    .line 754
-    iput-object v2, v1, LQw8;->k:LOw8;
+    const/4 v3, 0x2
 
+    .line 753
+    invoke-direct {v2, v3}, LwD8;-><init>(I)V
+
+    .line 754
     .line 755
     .line 756
-    :cond_1d
-    :goto_c
-    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iput-object v2, v1, LyD8;->k:LwD8;
 
     .line 757
     .line 758
-    iget-object v2, v1, LNi2;->e:LIi2;
+    :cond_1e
+    :goto_c
+    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 759
     .line 760
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()LIh2;
+    iget-object v2, v1, Lul2;->e:Lpl2;
 
     .line 761
     .line 762
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()Lmk2;
+
     .line 763
+    .line 764
+    .line 765
     move-result-object v3
 
-    .line 764
-    iget v4, v2, LIi2;->a:I
-
-    .line 765
     .line 766
-    iput v4, v3, LIh2;->d:I
+    iget v4, v2, Lpl2;->a:I
 
     .line 767
     .line 768
-    iget-boolean v3, v2, LIi2;->d:Z
+    iput v4, v3, Lmk2;->d:I
 
     .line 769
     .line 770
-    iget-object v4, v2, LIi2;->e:Ljava/util/List;
+    iget-boolean v3, v2, Lpl2;->d:Z
 
     .line 771
     .line 772
-    iget-object v5, v1, LNi2;->d:LJi2;
+    iget-object v4, v2, Lpl2;->e:Ljava/util/List;
 
     .line 773
     .line 774
-    if-eqz v3, :cond_1e
+    iget-object v5, v1, Lul2;->d:Lql2;
 
     .line 775
     .line 776
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()LIh2;
+    if-eqz v3, :cond_1f
 
     .line 777
     .line 778
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()Lmk2;
+
     .line 779
+    .line 780
+    .line 781
     move-result-object v3
 
-    .line 780
-    sget-object v6, LsL6;->a:LsL6;
-
-    .line 781
     .line 782
-    iget-object v5, v5, LJi2;->a:Ljava/lang/Float;
+    sget-object v6, LgP6;->a:LgP6;
 
     .line 783
     .line 784
-    invoke-virtual {v3, v6, v5}, LIh2;->c(Ljava/util/List;Ljava/lang/Float;)V
+    iget-object v5, v5, Lql2;->a:Ljava/lang/Float;
 
     .line 785
     .line 786
-    .line 787
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()LIh2;
+    invoke-virtual {v3, v6, v5}, Lmk2;->c(Ljava/util/List;Ljava/lang/Float;)V
 
+    .line 787
     .line 788
     .line 789
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()Lmk2;
+
     .line 790
+    .line 791
+    .line 792
     move-result-object v3
 
-    .line 791
+    .line 793
     invoke-virtual {v0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
-    .line 792
-    .line 793
     .line 794
+    .line 795
+    .line 796
     move-result-object v5
 
-    .line 795
-    invoke-static {v4}, Lue3;->I0(Ljava/util/List;)Ljava/lang/Object;
-
-    .line 796
     .line 797
+    invoke-static {v4}, Llh3;->G3(Ljava/util/List;)Ljava/lang/Object;
+
     .line 798
+    .line 799
+    .line 800
     move-result-object v4
 
-    .line 799
-    check-cast v4, Lii2;
-
-    .line 800
     .line 801
-    invoke-virtual {v3, v5, v4}, LIh2;->a(Landroid/text/TextPaint;Lii2;)V
+    check-cast v4, LMk2;
 
     .line 802
     .line 803
+    invoke-virtual {v3, v5, v4}, Lmk2;->a(Landroid/text/TextPaint;LMk2;)V
+
     .line 804
+    .line 805
+    .line 806
     goto :goto_d
 
-    .line 805
-    :cond_1e
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()LIh2;
-
-    .line 806
     .line 807
+    :cond_1f
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()Lmk2;
+
     .line 808
+    .line 809
+    .line 810
     move-result-object v3
 
-    .line 809
-    iget-object v5, v5, LJi2;->a:Ljava/lang/Float;
-
-    .line 810
     .line 811
-    invoke-virtual {v3, v4, v5}, LIh2;->c(Ljava/util/List;Ljava/lang/Float;)V
+    iget-object v5, v5, Lql2;->a:Ljava/lang/Float;
 
     .line 812
     .line 813
-    .line 814
-    :goto_d
-    iget-object v3, v1, LNi2;->f:LGi2;
+    invoke-virtual {v3, v4, v5}, Lmk2;->c(Ljava/util/List;Ljava/lang/Float;)V
 
+    .line 814
     .line 815
     .line 816
-    iget-object v4, v3, LGi2;->i:Lgi2;
+    :goto_d
+    iget-object v3, v1, Lul2;->f:Lnl2;
 
     .line 817
     .line 818
-    if-eqz v4, :cond_1f
+    iget-object v4, v3, Lnl2;->i:LKk2;
 
     .line 819
     .line 820
-    iget-object v5, v4, Lgi2;->e:Ljava/util/List;
+    if-eqz v4, :cond_20
 
     .line 821
     .line 822
-    iget v6, v3, LGi2;->d:I
+    iget-object v5, v4, LKk2;->e:Ljava/util/List;
 
     .line 823
     .line 824
-    iget v4, v4, Lgi2;->c:I
+    iget v6, v3, Lnl2;->d:I
 
     .line 825
     .line 826
-    invoke-virtual {v0, v6, v4, v5}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->o(IILjava/util/List;)I
+    iget v4, v4, LKk2;->c:I
 
     .line 827
     .line 828
+    invoke-virtual {v0, v6, v4, v5}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->o(IILjava/util/List;)I
+
     .line 829
+    .line 830
+    .line 831
     move-result v4
 
-    .line 830
+    .line 832
     const/16 v5, 0x3f7
 
-    .line 831
-    .line 832
-    const/4 v14, 0x0
-
     .line 833
-    invoke-static {v3, v14, v4, v5}, LGi2;->a(LGi2;Ljava/lang/String;II)LGi2;
-
     .line 834
+    const/4 v13, 0x0
+
     .line 835
+    invoke-static {v3, v13, v4, v5}, Lnl2;->a(Lnl2;Ljava/lang/String;II)Lnl2;
+
     .line 836
+    .line 837
+    .line 838
     move-result-object v3
 
-    .line 837
+    .line 839
     goto :goto_e
 
-    .line 838
-    :cond_1f
-    const/4 v14, 0x0
-
-    .line 839
-    :goto_e
-    iget-object v4, v3, LGi2;->a:Landroid/graphics/Bitmap;
-
     .line 840
+    :cond_20
+    const/4 v13, 0x0
+
     .line 841
-    iget v5, v2, LIi2;->b:I
+    :goto_e
+    iget-object v4, v3, Lnl2;->a:Landroid/graphics/Bitmap;
 
     .line 842
     .line 843
-    if-eqz v4, :cond_20
+    iget v5, v2, Lpl2;->b:I
 
     .line 844
     .line 845
-    invoke-virtual {v0, v5}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextColor(I)V
+    if-eqz v4, :cond_21
 
     .line 846
     .line 847
+    invoke-virtual {v0, v5}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextColor(I)V
+
     .line 848
+    .line 849
+    .line 850
     goto :goto_10
 
-    .line 849
-    :cond_20
-    iget v4, v2, LIi2;->c:I
-
-    .line 850
     .line 851
-    if-eqz v4, :cond_24
+    :cond_21
+    iget v4, v2, Lpl2;->c:I
 
     .line 852
     .line 853
-    iget-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    if-eqz v4, :cond_25
 
     .line 854
     .line 855
-    iget-object v6, v5, LNi2;->e:LIi2;
+    iget-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 856
     .line 857
-    iget v7, v6, LIi2;->c:I
+    iget-object v6, v5, Lul2;->e:Lpl2;
 
     .line 858
     .line 859
-    if-eq v7, v4, :cond_21
+    iget v7, v6, Lpl2;->c:I
 
     .line 860
     .line 861
-    const/16 v15, 0x1fb
+    if-eq v7, v4, :cond_22
 
     .line 862
     .line 863
-    invoke-static {v6, v4, v14, v15}, LIi2;->a(LIi2;ILKi2;I)LIi2;
+    const/16 v15, 0x1fb
 
     .line 864
     .line 865
+    invoke-static {v6, v4, v13, v15}, Lpl2;->a(Lpl2;ILrl2;I)Lpl2;
+
     .line 866
+    .line 867
+    .line 868
     move-result-object v31
 
-    .line 867
-    const/16 v41, 0x0
-
-    .line 868
     .line 869
-    const/16 v42, 0x0
+    const/16 v41, 0x0
 
     .line 870
     .line 871
-    const/16 v27, 0x0
+    const/16 v42, 0x0
 
     .line 872
     .line 873
-    const/16 v28, 0x0
+    const/16 v27, 0x0
 
     .line 874
     .line 875
-    const/16 v29, 0x0
+    const/16 v28, 0x0
 
     .line 876
     .line 877
-    const/16 v30, 0x0
+    const/16 v29, 0x0
 
     .line 878
     .line 879
-    const/16 v32, 0x0
+    const/16 v30, 0x0
 
     .line 880
     .line 881
-    const/16 v33, 0x0
+    const/16 v32, 0x0
 
     .line 882
     .line 883
-    const/16 v34, 0x0
+    const/16 v33, 0x0
 
     .line 884
     .line 885
-    const/16 v35, 0x0
+    const/16 v34, 0x0
 
     .line 886
     .line 887
-    const/16 v36, 0x0
+    const/16 v35, 0x0
 
     .line 888
     .line 889
-    const/16 v37, 0x0
+    const/16 v36, 0x0
 
     .line 890
     .line 891
-    const/16 v38, 0x0
+    const/16 v37, 0x0
 
     .line 892
     .line 893
-    const/16 v39, 0x0
+    const/16 v38, 0x0
 
     .line 894
     .line 895
-    const/16 v40, 0x0
+    const/16 v39, 0x0
 
     .line 896
     .line 897
-    const v43, 0x7ffef
+    const/16 v40, 0x0
 
     .line 898
     .line 899
-    .line 900
-    move-object/from16 v26, v5
+    const v43, 0x7ffef
 
+    .line 900
     .line 901
     .line 902
-    invoke-static/range {v26 .. v43}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    move-object/from16 v26, v5
 
     .line 903
     .line 904
+    invoke-static/range {v26 .. v43}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
+
     .line 905
+    .line 906
+    .line 907
     move-result-object v5
 
-    .line 906
-    iput-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
-
-    .line 907
     .line 908
-    :cond_21
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()LIh2;
+    iput-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 909
     .line 910
+    :cond_22
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()Lmk2;
+
     .line 911
+    .line 912
+    .line 913
     move-result-object v5
 
-    .line 912
-    iput v4, v5, LIh2;->f:I
-
-    .line 913
     .line 914
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()LIh2;
+    iput v4, v5, Lmk2;->f:I
 
     .line 915
     .line 916
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()Lmk2;
+
     .line 917
+    .line 918
+    .line 919
     move-result-object v5
 
-    .line 918
-    if-eqz v4, :cond_22
-
-    .line 919
     .line 920
-    const/4 v7, 0x1
+    if-eqz v4, :cond_23
 
     .line 921
-    goto :goto_f
-
     .line 922
-    :cond_22
-    const/4 v7, 0x0
+    const/4 v7, 0x1
 
     .line 923
-    :goto_f
-    iput-boolean v7, v5, LIh2;->e:Z
+    goto :goto_f
 
     .line 924
+    :cond_23
+    const/4 v7, 0x0
+
     .line 925
-    const/4 v5, 0x4
+    :goto_f
+    iput-boolean v7, v5, Lmk2;->e:Z
 
     .line 926
-    iget v7, v6, LIi2;->f:I
-
     .line 927
+    const/4 v5, 0x4
+
     .line 928
-    if-eq v7, v5, :cond_23
+    iget v7, v6, Lpl2;->f:I
 
     .line 929
     .line 930
-    invoke-virtual {v0, v4}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextColor(I)V
+    if-eq v7, v5, :cond_24
 
     .line 931
     .line 932
+    invoke-virtual {v0, v4}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextColor(I)V
+
     .line 933
+    .line 934
+    .line 935
     goto :goto_10
 
-    .line 934
-    :cond_23
-    iget v4, v6, LIi2;->b:I
-
-    .line 935
     .line 936
-    invoke-virtual {v0, v4}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextColor(I)V
+    :cond_24
+    iget v4, v6, Lpl2;->b:I
 
     .line 937
     .line 938
+    invoke-virtual {v0, v4}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextColor(I)V
+
     .line 939
+    .line 940
+    .line 941
     goto :goto_10
 
-    .line 940
-    :cond_24
+    .line 942
+    :cond_25
     invoke-virtual {v0, v5}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->setTextColor(I)V
 
-    .line 941
-    .line 942
     .line 943
-    :goto_10
-    iget-object v4, v2, LIi2;->h:LKi2;
-
     .line 944
     .line 945
-    iget-boolean v5, v4, LKi2;->a:Z
+    :goto_10
+    iget-object v4, v2, Lpl2;->h:Lrl2;
 
     .line 946
     .line 947
-    if-eqz v5, :cond_25
+    iget-boolean v5, v4, Lrl2;->a:Z
 
     .line 948
     .line 949
-    invoke-virtual {v0, v1}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->n(LNi2;)Landroid/graphics/LinearGradient;
+    if-eqz v5, :cond_26
 
     .line 950
     .line 951
+    invoke-virtual {v0, v1}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->n(Lul2;)Landroid/graphics/LinearGradient;
+
     .line 952
-    move-result-object v1
-
     .line 953
-    invoke-static {v4, v1}, LKi2;->a(LKi2;Landroid/graphics/LinearGradient;)LKi2;
-
     .line 954
-    .line 955
-    .line 956
     move-result-object v1
 
-    .line 957
-    goto :goto_11
+    .line 955
+    invoke-static {v4, v1}, Lrl2;->a(Lrl2;Landroid/graphics/LinearGradient;)Lrl2;
 
+    .line 956
+    .line 957
     .line 958
-    :cond_25
-    new-instance v1, LKi2;
+    move-result-object v1
 
     .line 959
+    goto :goto_11
+
     .line 960
-    const/16 v4, 0xf
+    :cond_26
+    new-instance v1, Lrl2;
 
     .line 961
     .line 962
-    invoke-direct {v1, v14, v14, v4}, LKi2;-><init>(Ljava/util/ArrayList;Ljava/util/ArrayList;I)V
+    const/16 v4, 0xf
 
     .line 963
     .line 964
-    .line 965
-    :goto_11
-    iget-object v4, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    invoke-direct {v1, v13, v13, v4}, Lrl2;-><init>(Ljava/util/ArrayList;Ljava/util/ArrayList;I)V
 
+    .line 965
     .line 966
     .line 967
-    const/16 v5, 0x17f
+    :goto_11
+    iget-object v4, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 968
     .line 969
-    invoke-static {v2, v12, v1, v5}, LIi2;->a(LIi2;ILKi2;I)LIi2;
+    const/16 v5, 0x17f
 
     .line 970
     .line 971
+    invoke-static {v2, v14, v1, v5}, Lpl2;->a(Lpl2;ILrl2;I)Lpl2;
+
     .line 972
+    .line 973
+    .line 974
     move-result-object v31
 
-    .line 973
+    .line 975
     const v43, 0x7ffcf
 
-    .line 974
-    .line 975
     .line 976
-    const/16 v42, 0x0
-
     .line 977
     .line 978
-    const/16 v27, 0x0
+    const/16 v42, 0x0
 
     .line 979
     .line 980
-    const/16 v28, 0x0
+    const/16 v27, 0x0
 
     .line 981
     .line 982
-    const/16 v29, 0x0
+    const/16 v28, 0x0
 
     .line 983
     .line 984
-    const/16 v30, 0x0
+    const/16 v29, 0x0
 
     .line 985
     .line 986
-    const/16 v33, 0x0
+    const/16 v30, 0x0
 
     .line 987
     .line 988
-    const/16 v34, 0x0
+    const/16 v33, 0x0
 
     .line 989
     .line 990
-    const/16 v35, 0x0
+    const/16 v34, 0x0
 
     .line 991
     .line 992
-    const/16 v36, 0x0
+    const/16 v35, 0x0
 
     .line 993
     .line 994
-    const/16 v37, 0x0
+    const/16 v36, 0x0
 
     .line 995
     .line 996
-    const/16 v38, 0x0
+    const/16 v37, 0x0
 
     .line 997
     .line 998
-    const/16 v39, 0x0
+    const/16 v38, 0x0
 
     .line 999
     .line 1000
-    const/16 v40, 0x0
+    const/16 v39, 0x0
 
     .line 1001
     .line 1002
-    const/16 v41, 0x0
+    const/16 v40, 0x0
 
     .line 1003
     .line 1004
-    move-object/from16 v32, v3
+    const/16 v41, 0x0
 
     .line 1005
     .line 1006
-    move-object/from16 v26, v4
+    move-object/from16 v32, v3
 
     .line 1007
     .line 1008
-    invoke-static/range {v26 .. v43}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    move-object/from16 v26, v4
 
     .line 1009
     .line 1010
+    invoke-static/range {v26 .. v43}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
+
     .line 1011
+    .line 1012
+    .line 1013
     move-result-object v1
 
-    .line 1012
-    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
-
-    .line 1013
     .line 1014
+    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
+
+    .line 1015
+    .line 1016
     return-void
 .end method
 
@@ -3078,11 +3083,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 2
     .line 3
-    iget-object v0, v0, LNi2;->a:Ljava/lang/String;
+    iget-object v0, v0, Lul2;->a:Ljava/lang/String;
 
     .line 4
     .line 5
@@ -3140,7 +3145,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0}, LMW;->getText()Landroid/text/Editable;
+    invoke-super {p0}, LSY;->getText()Landroid/text/Editable;
 
     .line 2
     .line 3
@@ -3161,7 +3166,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lsc5;->d0(Landroid/view/View;)V
+    invoke-static {p0}, LTVd;->B(Landroid/view/View;)V
 
     .line 2
     .line 3
@@ -3183,7 +3188,7 @@
     return-void
 .end method
 
-.method public final m(Landroid/graphics/Canvas;LNi2;)V
+.method public final m(Landroid/graphics/Canvas;Lul2;)V
     .locals 18
 
     .line 1
@@ -3199,7 +3204,7 @@
 
     .line 6
     .line 7
-    iget-object v3, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v3, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 8
     .line 9
@@ -3210,7 +3215,7 @@
 
     .line 11
     .line 12
-    iget-object v3, v3, LNi2;->f:LGi2;
+    iget-object v3, v3, Lul2;->f:Lnl2;
 
     .line 13
     .line 14
@@ -3218,7 +3223,7 @@
 
     .line 15
     .line 16
-    iget-object v3, v3, LGi2;->c:Ljava/lang/String;
+    iget-object v3, v3, Lnl2;->c:Ljava/lang/String;
 
     .line 17
     .line 18
@@ -3234,11 +3239,11 @@
 
     .line 21
     .line 22
-    iget-object v3, v2, LNi2;->e:LIi2;
+    iget-object v3, v2, Lul2;->e:Lpl2;
 
     .line 23
     .line 24
-    iget v3, v3, LIi2;->c:I
+    iget v3, v3, Lpl2;->c:I
 
     .line 25
     .line 26
@@ -3250,16 +3255,16 @@
 
     .line 29
     :cond_1
-    iget-object v2, v2, LNi2;->f:LGi2;
+    iget-object v2, v2, Lul2;->f:Lnl2;
 
     .line 30
     .line 31
-    iget v3, v2, LGi2;->d:I
+    iget v3, v2, Lnl2;->d:I
 
     .line 32
     .line 33
     :goto_1
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 34
     .line 35
@@ -3267,7 +3272,7 @@
     move-result-object v2
 
     .line 37
-    iget-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 38
     .line 39
@@ -3275,7 +3280,7 @@
 
     .line 40
     .line 41
-    iget-object v5, v5, LNi2;->f:LGi2;
+    iget-object v5, v5, Lul2;->f:Lnl2;
 
     .line 42
     .line 43
@@ -3283,7 +3288,7 @@
 
     .line 44
     .line 45
-    iget-object v4, v5, LGi2;->c:Ljava/lang/String;
+    iget-object v4, v5, Lnl2;->c:Ljava/lang/String;
 
     .line 46
     .line 47
@@ -3320,11 +3325,11 @@
 
     .line 62
     .line 63
-    iget-object v2, v2, LEj2;->n:LXfi;
+    iget-object v2, v2, Llm2;->n:LREi;
 
     .line 64
     .line 65
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 66
     .line 67
@@ -3332,11 +3337,11 @@
     move-result-object v2
 
     .line 69
-    check-cast v2, Llwe;
+    check-cast v2, LWNe;
 
     .line 70
     .line 71
-    iget-object v3, v2, Llwe;->a:Landroid/widget/TextView;
+    iget-object v3, v2, LWNe;->a:Landroid/widget/TextView;
 
     .line 72
     .line 73
@@ -3366,16 +3371,16 @@
     .line 84
     .line 85
     :cond_4
-    new-instance v8, Ljwe;
+    new-instance v8, LUNe;
 
     .line 86
     .line 87
-    invoke-direct {v8}, Ljwe;-><init>()V
+    invoke-direct {v8}, LUNe;-><init>()V
 
     .line 88
     .line 89
     .line 90
-    iput-object v8, v2, Llwe;->c:Ljwe;
+    iput-object v8, v2, LWNe;->c:LUNe;
 
     .line 91
     .line 92
@@ -3398,7 +3403,7 @@
 
     .line 99
     .line 100
-    iget-object v11, v2, Llwe;->d:Landroid/graphics/Rect;
+    iget-object v11, v2, LWNe;->d:Landroid/graphics/Rect;
 
     .line 101
     .line 102
@@ -3415,7 +3420,7 @@
 
     .line 108
     .line 109
-    invoke-virtual {v2}, Llwe;->a()F
+    invoke-virtual {v2}, LWNe;->a()F
 
     .line 110
     .line 111
@@ -3431,7 +3436,7 @@
     int-to-float v12, v12
 
     .line 116
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 117
     .line 118
@@ -3539,7 +3544,7 @@
 
     .line 167
     .line 168
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 169
     .line 170
@@ -3556,7 +3561,7 @@
 
     .line 175
     :cond_6
-    invoke-static {v3}, Lvek;->f(Landroid/widget/TextView;)Z
+    invoke-static {v3}, LqEk;->c(Landroid/widget/TextView;)Z
 
     .line 176
     .line 177
@@ -3578,7 +3583,7 @@
     sub-float/2addr v5, v13
 
     .line 185
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 186
     .line 187
@@ -3597,7 +3602,7 @@
     int-to-float v5, v5
 
     .line 193
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 194
     .line 195
@@ -3624,7 +3629,7 @@
     add-float/2addr v14, v15
 
     .line 205
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 206
     .line 207
@@ -3639,7 +3644,7 @@
 
     .line 211
     :cond_8
-    invoke-static {v3}, Lvek;->f(Landroid/widget/TextView;)Z
+    invoke-static {v3}, LqEk;->c(Landroid/widget/TextView;)Z
 
     .line 212
     .line 213
@@ -3658,7 +3663,7 @@
     int-to-float v9, v9
 
     .line 220
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 221
     .line 222
@@ -3684,7 +3689,7 @@
     add-float/2addr v9, v13
 
     .line 230
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 231
     .line 232
@@ -3696,11 +3701,11 @@
 
     .line 235
     :goto_6
-    iget-object v13, v2, Llwe;->c:Ljwe;
+    iget-object v13, v2, LWNe;->c:LUNe;
 
     .line 236
     .line 237
-    iget v14, v13, Ljwe;->a:F
+    iget v14, v13, LUNe;->a:F
 
     .line 238
     .line 239
@@ -3712,15 +3717,15 @@
     move-result v5
 
     .line 243
-    iput v5, v13, Ljwe;->a:F
+    iput v5, v13, LUNe;->a:F
 
     .line 244
     .line 245
-    iget-object v5, v2, Llwe;->c:Ljwe;
+    iget-object v5, v2, LWNe;->c:LUNe;
 
     .line 246
     .line 247
-    iget v13, v5, Ljwe;->b:F
+    iget v13, v5, LUNe;->b:F
 
     .line 248
     .line 249
@@ -3732,15 +3737,15 @@
     move-result v9
 
     .line 253
-    iput v9, v5, Ljwe;->b:F
+    iput v9, v5, LUNe;->b:F
 
     .line 254
     .line 255
-    iget-object v5, v2, Llwe;->c:Ljwe;
+    iget-object v5, v2, LWNe;->c:LUNe;
 
     .line 256
     .line 257
-    iget v9, v5, Ljwe;->c:F
+    iget v9, v5, LUNe;->c:F
 
     .line 258
     .line 259
@@ -3752,15 +3757,15 @@
     move-result v9
 
     .line 263
-    iput v9, v5, Ljwe;->c:F
+    iput v9, v5, LUNe;->c:F
 
     .line 264
     .line 265
-    iget-object v5, v2, Llwe;->c:Ljwe;
+    iget-object v5, v2, LWNe;->c:LUNe;
 
     .line 266
     .line 267
-    iget v9, v5, Ljwe;->d:F
+    iget v9, v5, LUNe;->d:F
 
     .line 268
     .line 269
@@ -3779,7 +3784,7 @@
     move-result v9
 
     .line 276
-    iput v9, v5, Ljwe;->d:F
+    iput v9, v5, LUNe;->d:F
 
     .line 277
     .line 278
@@ -3807,7 +3812,7 @@
     move-result-object v3
 
     .line 289
-    iget-object v4, v2, Llwe;->b:Landroid/graphics/Path;
+    iget-object v4, v2, LWNe;->b:Landroid/graphics/Path;
 
     .line 290
     .line 291
@@ -3820,7 +3825,7 @@
     .line 294
     .line 295
     :cond_a
-    invoke-virtual {v2}, Llwe;->a()F
+    invoke-virtual {v2}, LWNe;->a()F
 
     .line 296
     .line 297
@@ -3832,19 +3837,19 @@
 
     .line 300
     .line 301
-    iget-object v5, v2, Llwe;->c:Ljwe;
+    iget-object v5, v2, LWNe;->c:LUNe;
 
     .line 302
     .line 303
-    iget v6, v5, Ljwe;->a:F
+    iget v6, v5, LUNe;->a:F
 
     .line 304
     .line 305
-    iget v5, v5, Ljwe;->c:F
+    iget v5, v5, LUNe;->c:F
 
     .line 306
     .line 307
-    invoke-virtual {v2}, Llwe;->b()F
+    invoke-virtual {v2}, LWNe;->b()F
 
     .line 308
     .line 309
@@ -3876,11 +3881,11 @@
 
     .line 322
     :goto_8
-    iget-object v7, v2, Llwe;->c:Ljwe;
+    iget-object v7, v2, LWNe;->c:LUNe;
 
     .line 323
     .line 324
-    iget v7, v7, Ljwe;->d:F
+    iget v7, v7, LUNe;->d:F
 
     .line 325
     .line 326
@@ -3920,11 +3925,11 @@
     .line 342
     :cond_b
     :goto_9
-    iget-object v7, v2, Llwe;->c:Ljwe;
+    iget-object v7, v2, LWNe;->c:LUNe;
 
     .line 343
     .line 344
-    iget v7, v7, Ljwe;->b:F
+    iget v7, v7, LUNe;->b:F
 
     .line 345
     .line 346
@@ -4000,11 +4005,11 @@
     .line 378
     :cond_d
     :goto_b
-    iget-object v7, v2, Llwe;->c:Ljwe;
+    iget-object v7, v2, LWNe;->c:LUNe;
 
     .line 379
     .line 380
-    iget v7, v7, Ljwe;->a:F
+    iget v7, v7, LUNe;->a:F
 
     .line 381
     .line 382
@@ -4056,7 +4061,7 @@
     .line 403
     .line 404
     :goto_c
-    iget-object v2, v2, Llwe;->g:Landroid/graphics/Paint;
+    iget-object v2, v2, LWNe;->g:Landroid/graphics/Paint;
 
     .line 405
     .line 406
@@ -4085,11 +4090,11 @@
 
     .line 417
     .line 418
-    iget-object v2, v2, LEj2;->o:LXfi;
+    iget-object v2, v2, Llm2;->o:LREi;
 
     .line 419
     .line 420
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 421
     .line 422
@@ -4097,15 +4102,15 @@
     move-result-object v2
 
     .line 424
-    check-cast v2, LQw8;
+    check-cast v2, LyD8;
 
     .line 425
     .line 426
-    iget-object v4, v2, LQw8;->k:LOw8;
+    iget-object v4, v2, LyD8;->k:LwD8;
 
     .line 427
     .line 428
-    iget-boolean v4, v4, LOw8;->a:Z
+    iget-boolean v4, v4, LwD8;->a:Z
 
     .line 429
     .line 430
@@ -4118,7 +4123,7 @@
     .line 433
     .line 434
     :cond_10
-    iget-object v4, v2, LQw8;->a:Landroid/widget/TextView;
+    iget-object v4, v2, LyD8;->a:Landroid/widget/TextView;
 
     .line 435
     .line 436
@@ -4167,11 +4172,11 @@
     move-result-object v5
 
     .line 459
-    iget-object v8, v2, LQw8;->g:LXfi;
+    iget-object v8, v2, LyD8;->g:LREi;
 
     .line 460
     .line 461
-    invoke-virtual {v8}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v8}, LREi;->getValue()Ljava/lang/Object;
 
     .line 462
     .line 463
@@ -4206,19 +4211,19 @@
     .line 478
     .line 479
     :cond_11
-    iget-object v5, v2, LQw8;->k:LOw8;
+    iget-object v5, v2, LyD8;->k:LwD8;
 
     .line 480
     .line 481
-    iget v8, v5, LOw8;->b:I
+    iget v8, v5, LwD8;->b:I
 
     .line 482
     .line 483
-    iget-object v9, v2, LQw8;->j:LXfi;
+    iget-object v9, v2, LyD8;->j:LREi;
 
     .line 484
     .line 485
-    iget-object v10, v2, LQw8;->d:LXfi;
+    iget-object v10, v2, LyD8;->d:LREi;
 
     .line 486
     .line 487
@@ -4226,24 +4231,24 @@
 
     .line 488
     .line 489
-    new-instance v8, LOw8;
+    new-instance v8, LwD8;
 
     .line 490
     .line 491
-    iget-boolean v5, v5, LOw8;->a:Z
+    iget-boolean v5, v5, LwD8;->a:Z
 
     .line 492
     .line 493
-    invoke-direct {v8, v5, v3}, LOw8;-><init>(ZI)V
+    invoke-direct {v8, v5, v3}, LwD8;-><init>(ZI)V
 
     .line 494
     .line 495
     .line 496
-    iput-object v8, v2, LQw8;->k:LOw8;
+    iput-object v8, v2, LyD8;->k:LwD8;
 
     .line 497
     .line 498
-    invoke-virtual {v9}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v9}, LREi;->getValue()Ljava/lang/Object;
 
     .line 499
     .line 500
@@ -4276,7 +4281,7 @@
     .line 511
     .line 512
     .line 513
-    invoke-virtual {v10}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v10}, LREi;->getValue()Ljava/lang/Object;
 
     .line 514
     .line 515
@@ -4324,7 +4329,7 @@
     move-result-object v3
 
     .line 536
-    iget-object v5, v2, LQw8;->c:Landroid/graphics/RectF;
+    iget-object v5, v2, LyD8;->c:Landroid/graphics/RectF;
 
     .line 537
     .line 538
@@ -4374,7 +4379,7 @@
 
     .line 559
     .line 560
-    iget-object v13, v2, LQw8;->b:Landroid/graphics/Rect;
+    iget-object v13, v2, LyD8;->b:Landroid/graphics/Rect;
 
     .line 561
     .line 562
@@ -4391,11 +4396,11 @@
     move-result v14
 
     .line 569
-    iget-object v15, v2, LQw8;->i:LXfi;
+    iget-object v15, v2, LyD8;->i:LREi;
 
     .line 570
     .line 571
-    invoke-virtual {v15}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v15}, LREi;->getValue()Ljava/lang/Object;
 
     .line 572
     .line 573
@@ -4547,7 +4552,7 @@
 
     .line 642
     :cond_18
-    invoke-static {v4}, Lvek;->f(Landroid/widget/TextView;)Z
+    invoke-static {v4}, LqEk;->c(Landroid/widget/TextView;)Z
 
     .line 643
     .line 644
@@ -4782,7 +4787,7 @@
     .line 744
     :cond_1f
     :goto_17
-    invoke-virtual {v2}, LQw8;->a()I
+    invoke-virtual {v2}, LyD8;->a()I
 
     .line 745
     .line 746
@@ -4793,11 +4798,11 @@
     int-to-float v3, v3
 
     .line 749
-    iget-object v4, v2, LQw8;->f:LXfi;
+    iget-object v4, v2, LyD8;->f:LREi;
 
     .line 750
     .line 751
-    invoke-virtual {v4}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v4}, LREi;->getValue()Ljava/lang/Object;
 
     .line 752
     .line 753
@@ -4820,7 +4825,7 @@
     sub-float/2addr v3, v4
 
     .line 762
-    invoke-virtual {v10}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v10}, LREi;->getValue()Ljava/lang/Object;
 
     .line 763
     .line 764
@@ -4843,7 +4848,7 @@
     float-to-int v6, v6
 
     .line 773
-    invoke-virtual {v2}, LQw8;->a()I
+    invoke-virtual {v2}, LyD8;->a()I
 
     .line 774
     .line 775
@@ -4861,7 +4866,7 @@
     float-to-int v7, v7
 
     .line 781
-    invoke-virtual {v2}, LQw8;->a()I
+    invoke-virtual {v2}, LyD8;->a()I
 
     .line 782
     .line 783
@@ -4879,7 +4884,7 @@
     float-to-int v8, v8
 
     .line 789
-    invoke-virtual {v2}, LQw8;->a()I
+    invoke-virtual {v2}, LyD8;->a()I
 
     .line 790
     .line 791
@@ -4897,7 +4902,7 @@
     float-to-int v8, v8
 
     .line 797
-    invoke-virtual {v2}, LQw8;->a()I
+    invoke-virtual {v2}, LyD8;->a()I
 
     .line 798
     .line 799
@@ -4914,7 +4919,7 @@
     .line 804
     .line 805
     :cond_20
-    invoke-virtual {v10}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v10}, LREi;->getValue()Ljava/lang/Object;
 
     .line 806
     .line 807
@@ -4980,11 +4985,11 @@
 
     .line 835
     .line 836
-    iget-object v2, v2, LQw8;->e:LXfi;
+    iget-object v2, v2, LyD8;->e:LREi;
 
     .line 837
     .line 838
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 839
     .line 840
@@ -5004,7 +5009,7 @@
     move-result v3
 
     .line 848
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 849
     .line 850
@@ -5024,7 +5029,7 @@
     move-result v2
 
     .line 858
-    invoke-virtual {v9}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v9}, LREi;->getValue()Ljava/lang/Object;
 
     .line 859
     .line 860
@@ -5066,7 +5071,7 @@
     return-void
 .end method
 
-.method public final n(LNi2;)Landroid/graphics/LinearGradient;
+.method public final n(Lul2;)Landroid/graphics/LinearGradient;
     .locals 17
 
     .line 1
@@ -5109,15 +5114,15 @@
 
     .line 17
     :goto_1
-    iget-object v1, v1, LNi2;->e:LIi2;
+    iget-object v1, v1, Lul2;->e:Lpl2;
 
     .line 18
     .line 19
-    iget v2, v1, LIi2;->c:I
+    iget v2, v1, Lpl2;->c:I
 
     .line 20
     .line 21
-    iget v3, v1, LIi2;->b:I
+    iget v3, v1, Lpl2;->b:I
 
     .line 22
     .line 23
@@ -5133,11 +5138,11 @@
 
     .line 27
     :goto_2
-    iget v4, v1, LIi2;->f:I
+    iget v4, v1, Lpl2;->f:I
 
     .line 28
     .line 29
-    invoke-static {v4}, Llva;->L(I)I
+    invoke-static {v4}, LzHa;->L(I)I
 
     .line 30
     .line 31
@@ -5155,7 +5160,7 @@
     const/4 v7, 0x0
 
     .line 37
-    iget-object v8, v1, LIi2;->h:LKi2;
+    iget-object v8, v1, Lpl2;->h:Lrl2;
 
     .line 38
     .line 39
@@ -5170,7 +5175,7 @@
 
     .line 43
     .line 44
-    iget-object v1, v8, LKi2;->b:Ljava/util/List;
+    iget-object v1, v8, Lrl2;->b:Ljava/util/List;
 
     .line 45
     .line 46
@@ -5182,7 +5187,7 @@
 
     .line 49
     .line 50
-    invoke-static {v1}, Lue3;->t1(Ljava/util/Collection;)[I
+    invoke-static {v1}, Llh3;->s4(Ljava/util/Collection;)[I
 
     .line 51
     .line 52
@@ -5207,7 +5212,7 @@
 
     .line 60
     :cond_3
-    iget-object v3, v8, LKi2;->b:Ljava/util/List;
+    iget-object v3, v8, Lrl2;->b:Ljava/util/List;
 
     .line 61
     .line 62
@@ -5223,7 +5228,7 @@
 
     .line 67
     .line 68
-    invoke-static {v3, v6}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v6}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 69
     .line 70
@@ -5277,15 +5282,15 @@
     move-result v5
 
     .line 95
-    iget v6, v1, LIi2;->a:I
+    iget v6, v1, Lpl2;->a:I
 
     .line 96
     .line 97
-    iget-object v7, v1, LIi2;->g:Ljava/util/List;
+    iget-object v7, v1, Lpl2;->g:Ljava/util/List;
 
     .line 98
     .line 99
-    invoke-static {v2, v5, v6, v7}, Lff7;->q(IIILjava/util/List;)I
+    invoke-static {v2, v5, v6, v7}, LQp4;->i(IIILjava/util/List;)I
 
     .line 100
     .line 101
@@ -5310,7 +5315,7 @@
 
     .line 111
     :cond_4
-    invoke-static {v4}, Lue3;->t1(Ljava/util/Collection;)[I
+    invoke-static {v4}, Llh3;->s4(Ljava/util/Collection;)[I
 
     .line 112
     .line 113
@@ -5330,7 +5335,7 @@
 
     .line 119
     :cond_6
-    iget-object v1, v8, LKi2;->b:Ljava/util/List;
+    iget-object v1, v8, Lrl2;->b:Ljava/util/List;
 
     .line 120
     .line 121
@@ -5346,7 +5351,7 @@
 
     .line 126
     .line 127
-    invoke-static {v1, v6}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v6}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 128
     .line 129
@@ -5425,7 +5430,7 @@
 
     .line 165
     :cond_8
-    invoke-static {v4}, Lue3;->t1(Ljava/util/Collection;)[I
+    invoke-static {v4}, Llh3;->s4(Ljava/util/Collection;)[I
 
     .line 166
     .line 167
@@ -5467,7 +5472,7 @@
 
     .line 182
     .line 183
-    iget-object v0, v8, LKi2;->c:Ljava/util/List;
+    iget-object v0, v8, Lrl2;->c:Ljava/util/List;
 
     .line 184
     .line 185
@@ -5479,7 +5484,7 @@
 
     .line 188
     .line 189
-    invoke-static {v0}, Lue3;->r1(Ljava/util/Collection;)[F
+    invoke-static {v0}, Llh3;->q4(Ljava/util/Collection;)[F
 
     .line 190
     .line 191
@@ -5524,19 +5529,19 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 2
     .line 3
-    iget-object v0, v0, LNi2;->e:LIi2;
+    iget-object v0, v0, Lul2;->e:Lpl2;
 
     .line 4
     .line 5
-    iget v1, v0, LIi2;->a:I
+    iget v1, v0, Lpl2;->a:I
 
     .line 6
     .line 7
-    invoke-static {p2}, Llva;->L(I)I
+    invoke-static {p2}, LzHa;->L(I)I
 
     .line 8
     .line 9
@@ -5554,7 +5559,7 @@
     const/4 v2, 0x3
 
     .line 15
-    iget v0, v0, LIi2;->c:I
+    iget v0, v0, Lpl2;->c:I
 
     .line 16
     .line 17
@@ -5574,7 +5579,7 @@
 
     .line 23
     .line 24
-    invoke-static {v0, p1, v1, p3}, Lff7;->q(IIILjava/util/List;)I
+    invoke-static {v0, p1, v1, p3}, LQp4;->i(IIILjava/util/List;)I
 
     .line 25
     .line 26
@@ -5590,7 +5595,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, LMW;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+    invoke-super {p0, p1}, LSY;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
 
     .line 2
     .line 3
@@ -5613,7 +5618,7 @@
 
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LS16;
+    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LCz6;
 
     .line 13
     .line 14
@@ -5621,21 +5626,21 @@
 
     .line 15
     .line 16
-    new-instance v1, LS16;
+    new-instance v1, LCz6;
 
     .line 17
     .line 18
-    invoke-direct {v1, p0}, LS16;-><init>(Landroid/widget/EditText;)V
+    invoke-direct {v1, p0}, LCz6;-><init>(Landroid/widget/EditText;)V
 
     .line 19
     .line 20
     .line 21
-    iput-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LS16;
+    iput-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LCz6;
 
     .line 22
     .line 23
     :cond_0
-    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LS16;
+    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LCz6;
 
     .line 24
     .line 25
@@ -5643,7 +5648,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v1, v0, p1}, LS16;->b(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)LVJ6;
+    invoke-virtual {v1, v0, p1}, LCz6;->c(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;)LEN6;
 
     .line 28
     .line 29
@@ -5685,16 +5690,16 @@
 
     .line 44
     .line 45
-    invoke-static {p1, v1}, LWwb;->l(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
+    invoke-static {p1, v1}, LZUa;->z(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
 
     .line 46
     .line 47
     .line 48
-    sget-object v1, Lg;->z0:Lg;
+    sget-object v1, LT6c;->v0:LT6c;
 
     .line 49
     .line 50
-    invoke-static {v0, p1, v1}, LErk;->c(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lzl9;)Landroid/view/inputmethod/InputConnection;
+    invoke-static {v0, p1, v1}, LJRk;->a(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lnu9;)Landroid/view/inputmethod/InputConnection;
 
     .line 51
     .line 52
@@ -5716,20 +5721,20 @@
 
     .line 1
     :try_start_0
-    new-instance v0, Liq1;
+    new-instance v0, LYp1;
 
     .line 2
     .line 3
-    const/16 v1, 0x12
+    const/16 v1, 0x13
 
     .line 4
     .line 5
-    invoke-direct {v0, p0, v1, p1}, Liq1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, LYp1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0, p1, v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->w(Landroid/graphics/Canvas;Liq1;)V
+    invoke-virtual {p0, p1, v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->v(Landroid/graphics/Canvas;LYp1;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -5753,7 +5758,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 7
     .line 8
@@ -5765,7 +5770,7 @@
 
     .line 11
     .line 12
-    iget-object v2, v1, LNi2;->i:LMi2;
+    iget-object v2, v1, Lul2;->i:Ltl2;
 
     .line 13
     .line 14
@@ -5786,7 +5791,7 @@
 
     .line 20
     .line 21
-    invoke-super {v0}, LMW;->getText()Landroid/text/Editable;
+    invoke-super {v0}, LSY;->getText()Landroid/text/Editable;
 
     .line 22
     .line 23
@@ -5802,15 +5807,15 @@
     move-result v3
 
     .line 29
-    new-instance v10, LMi2;
+    new-instance v10, Ltl2;
 
     .line 30
     .line 31
-    iget-object v4, v2, LMi2;->a:Lji2;
+    iget-object v4, v2, Ltl2;->a:LNk2;
 
     .line 32
     .line 33
-    invoke-direct {v10, v4, v3}, LMi2;-><init>(Lji2;I)V
+    invoke-direct {v10, v4, v3}, Ltl2;-><init>(LNk2;I)V
 
     .line 34
     .line 35
@@ -5915,7 +5920,7 @@
 
     .line 73
     .line 74
-    invoke-static/range {v1 .. v18}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    invoke-static/range {v1 .. v18}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
 
     .line 75
     .line 76
@@ -5923,11 +5928,11 @@
     move-result-object v1
 
     .line 78
-    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 79
     .line 80
-    invoke-super {v0}, LMW;->getText()Landroid/text/Editable;
+    invoke-super {v0}, LSY;->getText()Landroid/text/Editable;
 
     .line 81
     .line 82
@@ -5947,7 +5952,7 @@
 
     .line 89
     .line 90
-    iget v2, v3, LMi2;->b:I
+    iget v2, v3, Ltl2;->b:I
 
     .line 91
     .line 92
@@ -5955,7 +5960,7 @@
 
     .line 93
     .line 94
-    invoke-super {v0}, LMW;->getText()Landroid/text/Editable;
+    invoke-super {v0}, LSY;->getText()Landroid/text/Editable;
 
     .line 95
     .line 96
@@ -6023,7 +6028,7 @@
 
     .line 125
     .line 126
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 127
     .line 128
@@ -6043,7 +6048,7 @@
     move-result-object v4
 
     .line 136
-    invoke-direct {v3, v2, v4}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v2, v4}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 137
     .line 138
@@ -6061,7 +6066,7 @@
 
     .line 144
     .line 145
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 146
     .line 147
@@ -6165,15 +6170,15 @@
     return v0
 .end method
 
-.method public final q()LEj2;
+.method public final q()Llm2;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->a:LXfi;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->a:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -6181,22 +6186,22 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LEj2;
+    check-cast v0, Llm2;
 
     .line 8
     .line 9
     return-object v0
 .end method
 
-.method public final r()LIh2;
+.method public final r()Lmk2;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->b:LXfi;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->b:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -6204,7 +6209,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LIh2;
+    check-cast v0, Lmk2;
 
     .line 8
     .line 9
@@ -6243,7 +6248,7 @@
 
     .line 14
     .line 15
-    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LS16;
+    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LCz6;
 
     .line 16
     .line 17
@@ -6251,21 +6256,21 @@
 
     .line 18
     .line 19
-    new-instance p1, LS16;
+    new-instance p1, LCz6;
 
     .line 20
     .line 21
-    invoke-direct {p1, p0}, LS16;-><init>(Landroid/widget/EditText;)V
+    invoke-direct {p1, p0}, LCz6;-><init>(Landroid/widget/EditText;)V
 
     .line 22
     .line 23
     .line 24
-    iput-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LS16;
+    iput-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LCz6;
 
     .line 25
     .line 26
     :cond_0
-    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LS16;
+    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->z0:LCz6;
 
     .line 27
     .line 28
@@ -6281,7 +6286,7 @@
     move-result-object v0
 
     .line 34
-    invoke-virtual {p1, v0}, LS16;->a(Landroid/text/method/KeyListener;)LYJ6;
+    invoke-virtual {p1, v0}, LCz6;->b(Landroid/text/method/KeyListener;)LHN6;
 
     .line 35
     .line 36
@@ -6326,11 +6331,11 @@
     move-result v0
 
     .line 5
-    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LXfi;
+    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LREi;
 
     .line 6
     .line 7
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -6353,11 +6358,11 @@
     div-float/2addr v1, v0
 
     .line 18
-    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LXfi;
+    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LREi;
 
     .line 19
     .line 20
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -6380,7 +6385,7 @@
     div-float/2addr v2, v0
 
     .line 31
-    invoke-static {p1, v1, v2}, LMeb;->a(FFF)F
+    invoke-static {p1, v1, v2}, Losb;->a(FFF)F
 
     .line 32
     .line 33
@@ -6408,11 +6413,11 @@
     move-result v0
 
     .line 5
-    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LXfi;
+    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->h0:LREi;
 
     .line 6
     .line 7
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -6435,11 +6440,11 @@
     div-float/2addr v1, v0
 
     .line 18
-    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LXfi;
+    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->i0:LREi;
 
     .line 19
     .line 20
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -6462,7 +6467,7 @@
     div-float/2addr v2, v0
 
     .line 31
-    invoke-static {p1, v1, v2}, LMeb;->a(FFF)F
+    invoke-static {p1, v1, v2}, Losb;->a(FFF)F
 
     .line 32
     .line 33
@@ -6504,7 +6509,7 @@
     move-result p2
 
     .line 12
-    const-class v0, LLg2;
+    const-class v0, Luj2;
 
     .line 13
     .line 14
@@ -6519,7 +6524,7 @@
     move-result-object p2
 
     .line 19
-    check-cast p2, [LLg2;
+    check-cast p2, [Luj2;
 
     .line 20
     .line 21
@@ -6557,7 +6562,7 @@
 
     .line 34
     .line 35
-    invoke-static {p1, v4, v1}, LR4i;->k1(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+    invoke-static {p1, v4, v1}, Lkti;->r0(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
 
     .line 36
     .line 37
@@ -6584,11 +6589,11 @@
     .line 47
     :cond_2
     :goto_1
-    new-instance p2, LLg2;
+    new-instance p2, Luj2;
 
     .line 48
     .line 49
-    invoke-direct {p2, p0}, LLg2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;)V
+    invoke-direct {p2, p0}, Luj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;)V
 
     .line 50
     .line 51
@@ -6621,27 +6626,27 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 2
     .line 3
-    iget-object v1, v0, LNi2;->e:LIi2;
+    iget-object v1, v0, Lul2;->e:Lpl2;
 
     .line 4
     .line 5
-    iget v2, v1, LIi2;->c:I
+    iget v2, v1, Lpl2;->c:I
 
     .line 6
     .line 7
-    iget-object v0, v0, LNi2;->f:LGi2;
+    iget-object v0, v0, Lul2;->f:Lnl2;
 
     .line 8
     .line 9
-    iget-object v0, v0, LGi2;->j:Lki2;
+    iget-object v0, v0, Lnl2;->j:LOk2;
 
     .line 10
     .line 11
-    sget-object v3, Lki2;->e0:Lki2;
+    sget-object v3, LOk2;->e0:LOk2;
 
     .line 12
     .line 13
@@ -6656,7 +6661,7 @@
     const/4 v0, 0x4
 
     .line 18
-    iget v1, v1, LIi2;->f:I
+    iget v1, v1, Lpl2;->f:I
 
     .line 19
     .line 20
@@ -6676,7 +6681,7 @@
 
     .line 27
     .line 28
-    invoke-static {v2}, LRL1;->a(I)F
+    invoke-static {v2}, LGQ1;->a(I)F
 
     .line 29
     .line 30
@@ -6879,7 +6884,7 @@
 
     .line 27
     .line 28
-    invoke-static {p2, p1, v0}, LMeb;->a(FFF)F
+    invoke-static {p2, p1, v0}, Losb;->a(FFF)F
 
     .line 29
     .line 30
@@ -6906,7 +6911,7 @@
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->e0:LGg2;
+    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->e0:Lpj2;
 
     .line 3
     .line 4
@@ -6914,7 +6919,7 @@
 
     .line 5
     .line 6
-    invoke-interface {v1, p1}, LGg2;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-interface {v1, p1}, Lpj2;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     .line 7
     .line 8
@@ -6930,7 +6935,7 @@
 
     .line 12
     :goto_0
-    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->f0:LJg2;
+    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->f0:Lsj2;
 
     .line 13
     .line 14
@@ -6938,7 +6943,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {v2, p1}, LJg2;->onTouchEvent(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v2, p1}, Lsj2;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     .line 17
     .line 18
@@ -6981,7 +6986,7 @@
 
     .line 31
     :goto_3
-    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->g0:LKg2;
+    iget-object v2, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->g0:Ltj2;
 
     .line 32
     .line 33
@@ -6989,11 +6994,11 @@
 
     .line 34
     .line 35
-    iget-object v2, v2, LKg2;->b:LT5c;
+    iget-object v2, v2, Ltj2;->b:LEkc;
 
     .line 36
     .line 37
-    invoke-virtual {v2, p1}, LT5c;->d(Landroid/view/MotionEvent;)Z
+    invoke-virtual {v2, p1}, LEkc;->d(Landroid/view/MotionEvent;)Z
 
     .line 38
     .line 39
@@ -7032,11 +7037,11 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->y0:LXfi;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->y0:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -7044,15 +7049,15 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LKg2;
+    check-cast v0, Ltj2;
 
     .line 8
     .line 9
-    iget-object v0, v0, LKg2;->a:LU5c;
+    iget-object v0, v0, Ltj2;->a:LGkc;
 
     .line 10
     .line 11
-    iget-object v1, v0, LU5c;->a:Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;
+    iget-object v1, v0, LGkc;->a:Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;
 
     .line 12
     .line 13
@@ -7060,7 +7065,7 @@
 
     .line 14
     .line 15
-    invoke-static {v1, v1}, Llva;->p(Lio/reactivex/rxjava3/subjects/PublishSubject;Lio/reactivex/rxjava3/subjects/PublishSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    invoke-static {v1, v1}, LzHa;->p(Lio/reactivex/rxjava3/subjects/PublishSubject;Lio/reactivex/rxjava3/subjects/PublishSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 16
     .line 17
@@ -7068,19 +7073,19 @@
     move-result-object v1
 
     .line 19
-    sget-object v2, Lc5c;->c:Lc5c;
+    sget-object v2, LFkc;->b:LFkc;
 
     .line 20
     .line 21
-    new-instance v3, LcJb;
+    new-instance v3, LL2c;
 
     .line 22
     .line 23
-    const/16 v4, 0x1d
+    const/16 v4, 0x16
 
     .line 24
     .line 25
-    invoke-direct {v3, v4, v0}, LcJb;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, v0}, LL2c;-><init>(ILjava/lang/Object;)V
 
     .line 26
     .line 27
@@ -7102,7 +7107,7 @@
     return-object v0
 .end method
 
-.method public final w(Landroid/graphics/Canvas;Liq1;)V
+.method public final v(Landroid/graphics/Canvas;LYp1;)V
     .locals 25
 
     .line 1
@@ -7114,7 +7119,7 @@
 
     .line 4
     .line 5
-    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 6
     .line 7
@@ -7122,11 +7127,11 @@
 
     .line 8
     .line 9
-    iget-object v1, v1, LNi2;->a:Ljava/lang/String;
+    iget-object v1, v1, Lul2;->a:Ljava/lang/String;
 
     .line 10
     .line 11
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 12
     .line 13
@@ -7143,11 +7148,11 @@
     .line 18
     .line 19
     :cond_0
-    iget-object v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v8, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 20
     .line 21
-    iget-boolean v1, v8, LNi2;->j:Z
+    iget-boolean v1, v8, Lul2;->j:Z
 
     .line 22
     .line 23
@@ -7161,7 +7166,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 28
     .line 29
@@ -7169,11 +7174,11 @@
     move-result-object v1
 
     .line 31
-    iget-object v3, v1, LEj2;->n:LXfi;
+    iget-object v3, v1, Llm2;->n:LREi;
 
     .line 32
     .line 33
-    invoke-virtual {v3}, LXfi;->a()Z
+    invoke-virtual {v3}, LREi;->a()Z
 
     .line 34
     .line 35
@@ -7185,11 +7190,11 @@
 
     .line 38
     .line 39
-    iget-object v3, v1, LEj2;->n:LXfi;
+    iget-object v3, v1, Llm2;->n:LREi;
 
     .line 40
     .line 41
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 42
     .line 43
@@ -7197,7 +7202,7 @@
     move-result-object v3
 
     .line 45
-    check-cast v3, Llwe;
+    check-cast v3, LWNe;
 
     .line 46
     .line 47
@@ -7216,11 +7221,11 @@
     .line 54
     .line 55
     :cond_1
-    iget-object v1, v1, LEj2;->o:LXfi;
+    iget-object v1, v1, Llm2;->o:LREi;
 
     .line 56
     .line 57
-    invoke-virtual {v1}, LXfi;->a()Z
+    invoke-virtual {v1}, LREi;->a()Z
 
     .line 58
     .line 59
@@ -7232,7 +7237,7 @@
 
     .line 62
     .line 63
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 64
     .line 65
@@ -7240,15 +7245,15 @@
     move-result-object v1
 
     .line 67
-    check-cast v1, LQw8;
+    check-cast v1, LyD8;
 
     .line 68
     .line 69
-    iget-object v3, v1, LQw8;->k:LOw8;
+    iget-object v3, v1, LyD8;->k:LwD8;
 
     .line 70
     .line 71
-    iget-boolean v3, v3, LOw8;->a:Z
+    iget-boolean v3, v3, LwD8;->a:Z
 
     .line 72
     .line 73
@@ -7260,7 +7265,7 @@
 
     .line 76
     :cond_2
-    iget-object v3, v1, LQw8;->a:Landroid/widget/TextView;
+    iget-object v3, v1, LyD8;->a:Landroid/widget/TextView;
 
     .line 77
     .line 78
@@ -7281,42 +7286,42 @@
     .line 85
     .line 86
     .line 87
-    new-instance v3, LOw8;
+    new-instance v3, LwD8;
 
     .line 88
     .line 89
-    invoke-direct {v3, v10}, LOw8;-><init>(I)V
+    invoke-direct {v3, v10}, LwD8;-><init>(I)V
 
     .line 90
     .line 91
     .line 92
-    iput-object v3, v1, LQw8;->k:LOw8;
+    iput-object v3, v1, LyD8;->k:LwD8;
 
     .line 93
     .line 94
     :cond_3
     :goto_0
-    iget-object v11, v8, LNi2;->f:LGi2;
+    iget-object v11, v8, Lul2;->f:Lnl2;
 
     .line 95
     .line 96
-    iget-object v1, v11, LGi2;->b:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v11, Lnl2;->b:Landroid/graphics/drawable/Drawable;
 
     .line 97
     .line 98
-    iget-object v13, v8, LNi2;->e:LIi2;
+    iget-object v13, v8, Lul2;->e:Lpl2;
 
     .line 99
     .line 100
-    iget-object v14, v11, LGi2;->g:Lhi2;
+    iget-object v14, v11, Lnl2;->g:LLk2;
 
     .line 101
     .line 102
-    iget-object v15, v11, LGi2;->j:Lki2;
+    iget-object v15, v11, Lnl2;->j:LOk2;
 
     .line 103
     .line 104
-    iget v3, v11, LGi2;->d:I
+    iget v3, v11, Lnl2;->d:I
 
     .line 105
     .line 106
@@ -7324,7 +7329,7 @@
 
     .line 107
     .line 108
-    iget v4, v13, LIi2;->c:I
+    iget v4, v13, Lpl2;->c:I
 
     .line 109
     .line 110
@@ -7332,7 +7337,7 @@
 
     .line 111
     .line 112
-    iget-object v4, v11, LGi2;->i:Lgi2;
+    iget-object v4, v11, Lnl2;->i:LKk2;
 
     .line 113
     .line 114
@@ -7340,7 +7345,7 @@
 
     .line 115
     .line 116
-    iget v5, v4, Lgi2;->c:I
+    iget v5, v4, LKk2;->c:I
 
     .line 117
     .line 118
@@ -7357,7 +7362,7 @@
 
     .line 122
     .line 123
-    iget-object v4, v4, Lgi2;->e:Ljava/util/List;
+    iget-object v4, v4, LKk2;->e:Ljava/util/List;
 
     .line 124
     .line 125
@@ -7366,7 +7371,7 @@
     .line 126
     .line 127
     :cond_6
-    sget-object v4, LsL6;->a:LsL6;
+    sget-object v4, LgP6;->a:LgP6;
 
     .line 128
     .line 129
@@ -7389,7 +7394,7 @@
     .line 137
     .line 138
     :cond_8
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 139
     .line 140
@@ -7410,7 +7415,7 @@
     .line 147
     .line 148
     .line 149
-    sget-object v6, LBj2;->a:[I
+    sget-object v6, Lim2;->a:[I
 
     .line 150
     .line 151
@@ -7426,14 +7431,14 @@
 
     .line 156
     .line 157
-    iget-object v7, v4, LEj2;->a:Landroid/widget/TextView;
+    iget-object v7, v4, Llm2;->a:Landroid/widget/TextView;
 
     .line 158
     .line 159
     const/4 v10, 0x6
 
     .line 160
-    iget-object v12, v4, LEj2;->c:Landroid/graphics/Rect;
+    iget-object v12, v4, Llm2;->c:Landroid/graphics/Rect;
 
     .line 161
     .line 162
@@ -7441,7 +7446,7 @@
 
     .line 163
     .line 164
-    invoke-static {v7}, Lvek;->f(Landroid/widget/TextView;)Z
+    invoke-static {v7}, LqEk;->c(Landroid/widget/TextView;)Z
 
     .line 165
     .line 166
@@ -7465,12 +7470,12 @@
 
     .line 174
     .line 175
-    invoke-virtual {v4, v7, v5, v14, v9}, LEj2;->i(IZLhi2;Z)V
+    invoke-virtual {v4, v7, v5, v14, v9}, Llm2;->i(IZLLk2;Z)V
 
     .line 176
     .line 177
     .line 178
-    iget-object v10, v4, LEj2;->d:Landroid/graphics/RectF;
+    iget-object v10, v4, Llm2;->d:Landroid/graphics/RectF;
 
     .line 179
     .line 180
@@ -7531,11 +7536,11 @@
 
     .line 206
     .line 207
-    new-instance v4, Lhad;
+    new-instance v4, LDpd;
 
     .line 208
     .line 209
-    invoke-direct {v4, v10, v10}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v10, v10}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 210
     .line 211
@@ -7565,7 +7570,7 @@
     move-result v10
 
     .line 224
-    invoke-static {v7}, Lvek;->f(Landroid/widget/TextView;)Z
+    invoke-static {v7}, LqEk;->c(Landroid/widget/TextView;)Z
 
     .line 225
     .line 226
@@ -7635,7 +7640,7 @@
     move-result v15
 
     .line 259
-    invoke-virtual {v4, v15, v9}, LEj2;->d(FZ)F
+    invoke-virtual {v4, v15, v9}, Llm2;->d(FZ)F
 
     .line 260
     .line 261
@@ -7715,7 +7720,7 @@
     move-result v3
 
     .line 297
-    iget v4, v14, Lhi2;->a:F
+    iget v4, v14, LLk2;->a:F
 
     .line 298
     .line 299
@@ -7723,7 +7728,7 @@
 
     .line 300
     .line 301
-    iget v6, v14, Lhi2;->c:F
+    iget v6, v14, LLk2;->c:F
 
     .line 302
     .line 303
@@ -7752,7 +7757,7 @@
     add-float/2addr v4, v15
 
     .line 313
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 314
     .line 315
@@ -7778,7 +7783,7 @@
     move-result-object v4
 
     .line 325
-    invoke-direct {v3, v6, v4}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v6, v4}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 326
     .line 327
@@ -7787,7 +7792,7 @@
 
     .line 329
     :goto_5
-    iget-object v3, v4, Lhad;->a:Ljava/lang/Object;
+    iget-object v3, v4, LDpd;->a:Ljava/lang/Object;
 
     .line 330
     .line 331
@@ -7803,7 +7808,7 @@
     move-result v3
 
     .line 337
-    iget-object v4, v4, Lhad;->b:Ljava/lang/Object;
+    iget-object v4, v4, LDpd;->b:Ljava/lang/Object;
 
     .line 338
     .line 339
@@ -7862,7 +7867,7 @@
     .line 364
     :cond_11
     :goto_6
-    iget-boolean v1, v11, LGi2;->f:Z
+    iget-boolean v1, v11, Lnl2;->f:Z
 
     .line 365
     .line 366
@@ -7870,7 +7875,7 @@
 
     .line 367
     .line 368
-    invoke-super {v0}, LMW;->getText()Landroid/text/Editable;
+    invoke-super {v0}, LSY;->getText()Landroid/text/Editable;
 
     .line 369
     .line 370
@@ -7890,7 +7895,7 @@
 
     .line 377
     .line 378
-    iget-object v1, v11, LGi2;->c:Ljava/lang/String;
+    iget-object v1, v11, Lnl2;->c:Ljava/lang/String;
 
     .line 379
     .line 380
@@ -7898,12 +7903,12 @@
 
     .line 381
     .line 382
-    invoke-virtual/range {p2 .. p2}, Liq1;->invoke()Ljava/lang/Object;
+    invoke-virtual/range {p2 .. p2}, LYp1;->d()Ljava/lang/Object;
 
     .line 383
     .line 384
     .line 385
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 386
     .line 387
@@ -7911,12 +7916,12 @@
     move-result-object v1
 
     .line 389
-    invoke-virtual {v1}, LEj2;->f()V
+    invoke-virtual {v1}, Llm2;->f()V
 
     .line 390
     .line 391
     .line 392
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 393
     .line 394
@@ -7924,23 +7929,23 @@
     move-result-object v1
 
     .line 396
-    iget-object v6, v11, LGi2;->g:Lhi2;
+    iget-object v6, v11, Lnl2;->g:LLk2;
 
     .line 397
     .line 398
-    iget-object v7, v11, LGi2;->j:Lki2;
+    iget-object v7, v11, Lnl2;->j:LOk2;
 
     .line 399
     .line 400
-    iget v3, v11, LGi2;->d:I
+    iget v3, v11, Lnl2;->d:I
 
     .line 401
     .line 402
-    iget v4, v11, LGi2;->e:F
+    iget v4, v11, Lnl2;->e:F
 
     .line 403
     .line 404
-    iget-object v5, v11, LGi2;->h:Lii2;
+    iget-object v5, v11, Lnl2;->h:LMk2;
 
     .line 405
     .line 406
@@ -7948,12 +7953,12 @@
 
     .line 407
     .line 408
-    invoke-virtual/range {v1 .. v7}, LEj2;->c(Landroid/graphics/Canvas;IFLii2;Lhi2;Lki2;)V
+    invoke-virtual/range {v1 .. v7}, Llm2;->c(Landroid/graphics/Canvas;IFLMk2;LLk2;LOk2;)V
 
     .line 409
     .line 410
     .line 411
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 412
     .line 413
@@ -7961,7 +7966,7 @@
     move-result-object v1
 
     .line 415
-    invoke-virtual {v1}, LEj2;->e()V
+    invoke-virtual {v1}, Llm2;->e()V
 
     .line 416
     .line 417
@@ -7975,7 +7980,7 @@
     .line 420
     .line 421
     :goto_7
-    iget-object v1, v11, LGi2;->a:Landroid/graphics/Bitmap;
+    iget-object v1, v11, Lnl2;->a:Landroid/graphics/Bitmap;
 
     .line 422
     .line 423
@@ -7983,7 +7988,7 @@
 
     .line 424
     .line 425
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 426
     .line 427
@@ -7991,7 +7996,7 @@
     move-result-object v3
 
     .line 429
-    iget-object v4, v3, LEj2;->g:Landroid/graphics/Paint;
+    iget-object v4, v3, Llm2;->g:Landroid/graphics/Paint;
 
     .line 430
     .line 431
@@ -8000,7 +8005,7 @@
     .line 432
     .line 433
     .line 434
-    iget-object v5, v11, LGi2;->h:Lii2;
+    iget-object v5, v11, Lnl2;->h:LMk2;
 
     .line 435
     .line 436
@@ -8008,11 +8013,11 @@
 
     .line 437
     .line 438
-    iget-object v6, v5, Lii2;->a:Lgi2;
+    iget-object v6, v5, LMk2;->a:LKk2;
 
     .line 439
     .line 440
-    iget-object v6, v6, Lgi2;->a:Ljava/util/List;
+    iget-object v6, v6, LKk2;->a:Ljava/util/List;
 
     .line 441
     .line 442
@@ -8039,15 +8044,15 @@
     move-result v6
 
     .line 453
-    iget v7, v5, Lii2;->c:F
+    iget v7, v5, LMk2;->c:F
 
     .line 454
     .line 455
-    iget v9, v5, Lii2;->d:F
+    iget v9, v5, LMk2;->d:F
 
     .line 456
     .line 457
-    iget v5, v5, Lii2;->b:F
+    iget v5, v5, LMk2;->b:F
 
     .line 458
     .line 459
@@ -8057,7 +8062,7 @@
     .line 461
     .line 462
     :cond_13
-    iget-object v4, v3, LEj2;->g:Landroid/graphics/Paint;
+    iget-object v4, v3, Llm2;->g:Landroid/graphics/Paint;
 
     .line 463
     .line 464
@@ -8094,11 +8099,11 @@
 
     .line 480
     .line 481
-    iget-object v6, v3, LEj2;->d:Landroid/graphics/RectF;
+    iget-object v6, v3, Llm2;->d:Landroid/graphics/RectF;
 
     .line 482
     .line 483
-    iget-object v7, v3, LEj2;->a:Landroid/widget/TextView;
+    iget-object v7, v3, Llm2;->a:Landroid/widget/TextView;
 
     .line 484
     .line 485
@@ -8192,7 +8197,7 @@
     move-result v3
 
     .line 523
-    iget v5, v14, Lhi2;->a:F
+    iget v5, v14, LLk2;->a:F
 
     .line 524
     .line 525
@@ -8200,7 +8205,7 @@
 
     .line 526
     .line 527
-    iget v9, v14, Lhi2;->b:F
+    iget v9, v14, LLk2;->b:F
 
     .line 528
     .line 529
@@ -8208,7 +8213,7 @@
 
     .line 530
     .line 531
-    iget v10, v14, Lhi2;->c:F
+    iget v10, v14, LLk2;->c:F
 
     .line 532
     .line 533
@@ -8216,7 +8221,7 @@
 
     .line 534
     .line 535
-    iget v11, v14, Lhi2;->d:F
+    iget v11, v14, LLk2;->d:F
 
     .line 536
     .line 537
@@ -8306,7 +8311,7 @@
 
     .line 573
     :cond_17
-    invoke-static {v7}, Lvek;->f(Landroid/widget/TextView;)Z
+    invoke-static {v7}, LqEk;->c(Landroid/widget/TextView;)Z
 
     .line 574
     .line 575
@@ -8333,7 +8338,7 @@
     const/4 v11, 0x0
 
     .line 585
-    invoke-virtual {v3, v9, v5, v14, v11}, LEj2;->i(IZLhi2;Z)V
+    invoke-virtual {v3, v9, v5, v14, v11}, Llm2;->i(IZLLk2;Z)V
 
     .line 586
     .line 587
@@ -8354,27 +8359,27 @@
     const/4 v11, 0x0
 
     .line 595
-    new-instance v4, LEa;
+    new-instance v4, Lob;
 
     .line 596
     .line 597
-    const/16 v5, 0xf
+    const/16 v5, 0x11
 
     .line 598
     .line 599
-    invoke-direct {v4, v2, v1, v3, v5}, LEa;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v4, v2, v1, v3, v5}, Lob;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 600
     .line 601
     .line 602
-    invoke-virtual {v3, v14, v11, v4}, LEj2;->b(Lhi2;ZLkotlin/jvm/functions/Function0;)V
+    invoke-virtual {v3, v14, v11, v4}, Llm2;->b(LLk2;ZLkotlin/jvm/functions/Function0;)V
 
     .line 603
     .line 604
     .line 605
     :cond_19
     :goto_b
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()LIh2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->r()Lmk2;
 
     .line 606
     .line 607
@@ -8382,16 +8387,16 @@
     move-result-object v1
 
     .line 609
-    invoke-virtual {v1, v2, v0}, LIh2;->b(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
+    invoke-virtual {v1, v2, v0}, Lmk2;->b(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
 
     .line 610
     .line 611
     .line 612
-    iget-object v1, v13, LIi2;->h:LKi2;
+    iget-object v1, v13, Lpl2;->h:Lrl2;
 
     .line 613
     .line 614
-    iget-boolean v3, v1, LKi2;->a:Z
+    iget-boolean v3, v1, Lrl2;->a:Z
 
     .line 615
     .line 616
@@ -8399,7 +8404,7 @@
 
     .line 617
     .line 618
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 619
     .line 620
@@ -8407,7 +8412,7 @@
     move-result-object v3
 
     .line 622
-    invoke-virtual {v3}, LEj2;->f()V
+    invoke-virtual {v3}, Llm2;->f()V
 
     .line 623
     .line 624
@@ -8420,7 +8425,7 @@
     move-result-object v3
 
     .line 629
-    iget-object v4, v1, LKi2;->d:Landroid/graphics/LinearGradient;
+    iget-object v4, v1, Lrl2;->d:Landroid/graphics/LinearGradient;
 
     .line 630
     .line 631
@@ -8433,17 +8438,17 @@
 
     .line 635
     .line 636
-    invoke-virtual {v0, v2, v3}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->m(Landroid/graphics/Canvas;LNi2;)V
+    invoke-virtual {v0, v2, v3}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->m(Landroid/graphics/Canvas;Lul2;)V
 
     .line 637
     .line 638
     .line 639
-    invoke-virtual/range {p2 .. p2}, Liq1;->invoke()Ljava/lang/Object;
+    invoke-virtual/range {p2 .. p2}, LYp1;->d()Ljava/lang/Object;
 
     .line 640
     .line 641
     .line 642
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 643
     .line 644
@@ -8451,7 +8456,7 @@
     move-result-object v4
 
     .line 646
-    invoke-virtual {v4}, LEj2;->e()V
+    invoke-virtual {v4}, Llm2;->e()V
 
     .line 647
     .line 648
@@ -8465,11 +8470,11 @@
     .line 651
     .line 652
     :goto_c
-    iget-object v4, v13, LIi2;->i:LKi2;
+    iget-object v4, v13, Lpl2;->i:Lrl2;
 
     .line 653
     .line 654
-    iget-boolean v5, v4, LKi2;->a:Z
+    iget-boolean v5, v4, Lrl2;->a:Z
 
     .line 655
     .line 656
@@ -8477,7 +8482,7 @@
 
     .line 657
     .line 658
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 659
     .line 660
@@ -8485,12 +8490,12 @@
     move-result-object v6
 
     .line 662
-    invoke-virtual {v6}, LEj2;->f()V
+    invoke-virtual {v6}, Llm2;->f()V
 
     .line 663
     .line 664
     .line 665
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 666
     .line 667
@@ -8506,7 +8511,7 @@
     move-result v17
 
     .line 673
-    iget-object v6, v4, LKi2;->b:Ljava/util/List;
+    iget-object v6, v4, Lrl2;->b:Ljava/util/List;
 
     .line 674
     .line 675
@@ -8518,7 +8523,7 @@
 
     .line 678
     .line 679
-    invoke-static {v6}, Lue3;->t1(Ljava/util/Collection;)[I
+    invoke-static {v6}, Llh3;->s4(Ljava/util/Collection;)[I
 
     .line 680
     .line 681
@@ -8549,7 +8554,7 @@
 
     .line 691
     :goto_e
-    iget-object v4, v4, LKi2;->c:Ljava/util/List;
+    iget-object v4, v4, Lrl2;->c:Ljava/util/List;
 
     .line 692
     .line 693
@@ -8561,7 +8566,7 @@
 
     .line 696
     .line 697
-    invoke-static {v4}, Lue3;->r1(Ljava/util/Collection;)[F
+    invoke-static {v4}, Llh3;->q4(Ljava/util/Collection;)[F
 
     .line 698
     .line 699
@@ -8586,7 +8591,7 @@
 
     .line 707
     :goto_10
-    iget v4, v13, LIi2;->c:I
+    iget v4, v13, Lpl2;->c:I
 
     .line 708
     .line 709
@@ -8603,7 +8608,7 @@
 
     .line 714
     :cond_1d
-    iget v4, v13, LIi2;->b:I
+    iget v4, v13, Lpl2;->b:I
 
     .line 715
     .line 716
@@ -8611,15 +8616,15 @@
 
     .line 717
     :goto_12
-    iget v4, v13, LIi2;->a:I
+    iget v4, v13, Lpl2;->a:I
 
     .line 718
     .line 719
-    iget-object v6, v13, LIi2;->g:Ljava/util/List;
+    iget-object v6, v13, Lpl2;->g:Ljava/util/List;
 
     .line 720
     .line 721
-    iget v7, v13, LIi2;->f:I
+    iget v7, v13, Lpl2;->f:I
 
     .line 722
     .line 723
@@ -8635,22 +8640,22 @@
 
     .line 728
     .line 729
-    invoke-virtual/range {v16 .. v23}, LEj2;->h(F[I[FIIILjava/util/List;)V
+    invoke-virtual/range {v16 .. v23}, Llm2;->h(F[I[FIIILjava/util/List;)V
 
     .line 730
     .line 731
     .line 732
-    invoke-virtual {v0, v2, v3}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->m(Landroid/graphics/Canvas;LNi2;)V
+    invoke-virtual {v0, v2, v3}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->m(Landroid/graphics/Canvas;Lul2;)V
 
     .line 733
     .line 734
     .line 735
-    invoke-virtual/range {p2 .. p2}, Liq1;->invoke()Ljava/lang/Object;
+    invoke-virtual/range {p2 .. p2}, LYp1;->d()Ljava/lang/Object;
 
     .line 736
     .line 737
     .line 738
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 739
     .line 740
@@ -8658,13 +8663,13 @@
     move-result-object v4
 
     .line 742
-    invoke-virtual {v4}, LEj2;->e()V
+    invoke-virtual {v4}, Llm2;->e()V
 
     .line 743
     .line 744
     .line 745
     :cond_1e
-    iget-boolean v1, v1, LKi2;->a:Z
+    iget-boolean v1, v1, Lrl2;->a:Z
 
     .line 746
     .line 747
@@ -8676,22 +8681,22 @@
 
     .line 750
     .line 751
-    invoke-virtual {v0, v2, v3}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->m(Landroid/graphics/Canvas;LNi2;)V
+    invoke-virtual {v0, v2, v3}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->m(Landroid/graphics/Canvas;Lul2;)V
 
     .line 752
     .line 753
     .line 754
-    invoke-virtual/range {p2 .. p2}, Liq1;->invoke()Ljava/lang/Object;
+    invoke-virtual/range {p2 .. p2}, LYp1;->d()Ljava/lang/Object;
 
     .line 755
     .line 756
     .line 757
     :cond_1f
-    iget-object v1, v3, LNi2;->c:LHi2;
+    iget-object v1, v3, Lul2;->c:Lol2;
 
     .line 758
     .line 759
-    iget-boolean v3, v1, LHi2;->a:Z
+    iget-boolean v3, v1, Lol2;->a:Z
 
     .line 760
     .line 761
@@ -8699,7 +8704,7 @@
 
     .line 762
     .line 763
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 764
     .line 765
@@ -8707,12 +8712,12 @@
     move-result-object v3
 
     .line 767
-    invoke-virtual {v3}, LEj2;->f()V
+    invoke-virtual {v3}, Llm2;->f()V
 
     .line 768
     .line 769
     .line 770
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 771
     .line 772
@@ -8736,7 +8741,7 @@
     move-result v4
 
     .line 782
-    iget v5, v1, LHi2;->b:F
+    iget v5, v1, Lol2;->b:F
 
     .line 783
     .line 784
@@ -8744,15 +8749,15 @@
 
     .line 785
     .line 786
-    iget v5, v1, LHi2;->d:I
+    iget v5, v1, Lol2;->d:I
 
     .line 787
     .line 788
-    iget-object v6, v1, LHi2;->e:Ljava/util/List;
+    iget-object v6, v1, Lol2;->e:Ljava/util/List;
 
     .line 789
     .line 790
-    iget v1, v1, LHi2;->c:I
+    iget v1, v1, Lol2;->c:I
 
     .line 791
     .line 792
@@ -8764,17 +8769,17 @@
     move-result v1
 
     .line 796
-    invoke-virtual {v3, v1, v4}, LEj2;->g(IF)V
+    invoke-virtual {v3, v1, v4}, Llm2;->g(IF)V
 
     .line 797
     .line 798
     .line 799
-    invoke-static {v2, v0}, Lvek;->d(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
+    invoke-static {v2, v0}, LqEk;->b(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
 
     .line 800
     .line 801
     .line 802
-    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()LEj2;
+    invoke-virtual {v0}, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->q()Llm2;
 
     .line 803
     .line 804
@@ -8782,7 +8787,7 @@
     move-result-object v1
 
     .line 806
-    invoke-virtual {v1}, LEj2;->e()V
+    invoke-virtual {v1}, Llm2;->e()V
 
     .line 807
     .line 808
@@ -8792,11 +8797,11 @@
     return-void
 .end method
 
-.method public final x()V
+.method public final w()V
     .locals 4
 
     .line 1
-    new-instance v0, LNi2;
+    new-instance v0, Lul2;
 
     .line 2
     .line 3
@@ -8811,23 +8816,23 @@
     .line 6
     .line 7
     .line 8
-    invoke-direct {v0, v1, v2, v3}, LNi2;-><init>(Landroid/graphics/Typeface;II)V
+    invoke-direct {v0, v1, v2, v3}, Lul2;-><init>(Landroid/graphics/Typeface;II)V
 
     .line 9
     .line 10
     .line 11
-    iput-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iput-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 12
     .line 13
     return-void
 .end method
 
-.method public final y(Z)V
+.method public final x(Z)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->w0:LXfi;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->w0:LREi;
 
     .line 2
     .line 3
@@ -8835,7 +8840,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -8843,7 +8848,7 @@
     move-result-object v1
 
     .line 9
-    check-cast v1, LIg2;
+    check-cast v1, Lrj2;
 
     .line 10
     .line 11
@@ -8851,11 +8856,11 @@
 
     .line 12
     :cond_0
-    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->v0:LXfi;
+    iget-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->v0:LREi;
 
     .line 13
     .line 14
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -8863,12 +8868,12 @@
     move-result-object v1
 
     .line 18
-    check-cast v1, LFg2;
+    check-cast v1, Loj2;
 
     .line 19
     .line 20
     :goto_0
-    iput-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->e0:LGg2;
+    iput-object v1, p0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->e0:Lpj2;
 
     .line 21
     .line 22
@@ -8876,7 +8881,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -8884,7 +8889,7 @@
     move-result-object p1
 
     .line 28
-    check-cast p1, LIg2;
+    check-cast p1, Lrj2;
 
     .line 29
     .line 30
@@ -8897,7 +8902,7 @@
     return-void
 .end method
 
-.method public final z(Ljava/lang/String;)V
+.method public final y(Ljava/lang/String;)V
     .locals 19
 
     .line 1
@@ -8905,7 +8910,7 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iget-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 4
     .line 5
@@ -8965,7 +8970,7 @@
 
     .line 26
     .line 27
-    invoke-static/range {v1 .. v18}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    invoke-static/range {v1 .. v18}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
 
     .line 28
     .line 29
@@ -8973,7 +8978,7 @@
     move-result-object v1
 
     .line 31
-    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:LNi2;
+    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionEditTextView;->c:Lul2;
 
     .line 32
     .line 33

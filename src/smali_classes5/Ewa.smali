@@ -1,17 +1,11 @@
-.class public final LEwa;
+.class public interface abstract LEwa;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# direct methods
-.method public constructor <init>(LGMi;Lthc;)V
-    .locals 0
+# virtual methods
+.method public abstract a(LBwa;)LqSk;
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
+.method public abstract b(LCwa;)V
 .end method

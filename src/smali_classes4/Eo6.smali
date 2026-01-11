@@ -3,27 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LGo6;
-
-.field public final synthetic c:LdXc;
+.field public final synthetic b:LBGg;
 
 
 # direct methods
-.method public synthetic constructor <init>(LGo6;LdXc;I)V
+.method public synthetic constructor <init>(LBGg;I)V
     .locals 0
 
     .line 1
-    iput p3, p0, LEo6;->a:I
+    iput p2, p0, LEo6;->a:I
 
-    iput-object p1, p0, LEo6;->b:LGo6;
-
-    iput-object p2, p0, LEo6;->c:LdXc;
+    iput-object p1, p0, LEo6;->b:LBGg;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,8 +28,8 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
     iget v0, p0, LEo6;->a:I
@@ -45,50 +41,40 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LEo6;->b:LGo6;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 7
     .line 8
-    iget-object v0, v0, LvWc;->h0:LdXc;
+    iget-object p1, p0, LEo6;->b:LBGg;
 
     .line 9
     .line 10
-    iget-object v1, p0, LEo6;->c:LdXc;
+    iget-object p1, p1, LBGg;->c:Ljava/lang/Object;
 
     .line 11
     .line 12
-    invoke-virtual {v0, v1}, LdXc;->U(LdXc;)V
+    return-void
 
     .line 13
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 14
     .line 15
-    return-void
+    iget-object p1, p0, LEo6;->b:LBGg;
 
     .line 16
-    :pswitch_0
-    iget-object v0, p0, LEo6;->b:LGo6;
-
     .line 17
+    iget-object p1, p1, LBGg;->c:Ljava/lang/Object;
+
     .line 18
-    iget-object v0, v0, LvWc;->h0:LdXc;
-
     .line 19
-    .line 20
-    iget-object v1, p0, LEo6;->c:LdXc;
-
-    .line 21
-    .line 22
-    invoke-virtual {v0, v1}, LdXc;->U(LdXc;)V
-
-    .line 23
-    .line 24
-    .line 25
     return-void
 
-    .line 26
+    .line 20
     nop
 
-    .line 27
+    .line 21
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

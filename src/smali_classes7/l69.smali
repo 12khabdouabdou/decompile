@@ -1,69 +1,131 @@
-.class public final synthetic Ll69;
-.super Loje;
+.class public final Ll69;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/music/core/composer/ISingleSectionPickerActionHandler;
 
-# static fields
-.field public static final e0:Ll69;
+
+# instance fields
+.field public final a:Lkotlin/jvm/functions/Function1;
+
+.field public final b:Lkotlin/jvm/functions/Function0;
+
+.field public final c:Lkotlin/jvm/functions/Function0;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Ll69;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v1, "getDurationMillis()I"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, Ll69;->a:Lkotlin/jvm/functions/Function1;
 
+    .line 5
     .line 6
-    const-class v3, LQCi;
+    iput-object p2, p0, Ll69;->b:Lkotlin/jvm/functions/Function0;
 
     .line 7
     .line 8
-    const-string v4, "durationMillis"
+    iput-object p3, p0, Ll69;->c:Lkotlin/jvm/functions/Function0;
 
     .line 9
     .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Loje;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Ll69;->e0:Ll69;
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public onActionButtonTapped()V
+    .locals 1
 
     .line 1
-    check-cast p1, LQCi;
+    iget-object v0, p0, Ll69;->c:Lkotlin/jvm/functions/Function0;
 
     .line 2
     .line 3
-    iget p1, p1, LQCi;->a:I
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 6
+    return-void
+.end method
+
+.method public onDismiss()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ll69;->b:Lkotlin/jvm/functions/Function0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public onTrackSelected(Lcom/snap/music/core/composer/PickerTrack;)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ll69;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
     .line 7
     .line 8
-    move-result-object p1
+    const-class v1, Lcom/snap/music/core/composer/ISingleSectionPickerActionHandler;
 
     .line 9
-    return-object p1
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
 .end method

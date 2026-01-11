@@ -3,29 +3,29 @@
 .source "SourceFile"
 
 # interfaces
-.implements LV4h;
+.implements LNqh;
 
 
 # static fields
-.field public static final G0:LcSa;
+.field public static final G0:LL4b;
 
-.field public static final H0:Lcqc;
+.field public static final H0:LxFc;
 
-.field public static final I0:LZpc;
+.field public static final I0:LuFc;
 
 
 # instance fields
 .field public A0:Landroid/view/View;
 
-.field public B0:LU4h;
+.field public B0:LMqh;
 
-.field public C0:LTqc;
+.field public C0:LmGc;
 
 .field public final D0:I
 
-.field public final E0:LcSa;
+.field public final E0:LL4b;
 
-.field public final F0:LXfi;
+.field public final F0:LREi;
 
 .field public y0:Landroid/widget/EditText;
 
@@ -34,21 +34,21 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 12
 
     .line 1
-    new-instance v0, LcSa;
+    new-instance v0, LL4b;
 
     .line 2
     .line 3
-    sget-object v1, Ly5h;->Z:Ly5h;
+    sget-object v1, Lqrh;->Z:Lqrh;
 
     .line 4
     .line 5
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     .line 6
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     .line 7
     const-string v2, "SpectaclesEditNameFragment"
@@ -70,50 +70,53 @@
     const/4 v7, 0x0
 
     .line 14
-    const/16 v10, 0x3ffc
+    const/4 v8, 0x0
 
     .line 15
-    .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v11, 0x7ffc
 
+    .line 16
     .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 18
     .line 19
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->G0:LcSa;
-
     .line 20
-    .line 21
-    sget-object v1, LW5d;->N:Lm7b;
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->G0:LL4b;
 
+    .line 21
     .line 22
+    sget-object v1, Luld;->O:LtOc;
+
     .line 23
+    .line 24
     const/4 v2, 0x1
 
-    .line 24
-    invoke-static {v1, v0, v2}, Lm7b;->i(LW5d;LcSa;Z)Lcqc;
-
     .line 25
+    invoke-static {v1, v0, v2}, LJea;->h(Luld;LL4b;Z)LxFc;
+
     .line 26
     .line 27
-    move-result-object v0
-
     .line 28
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->H0:Lcqc;
+    move-result-object v0
 
     .line 29
-    .line 30
-    invoke-virtual {v0}, Lcqc;->p()LZpc;
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->H0:LxFc;
 
+    .line 30
     .line 31
+    invoke-virtual {v0}, LxFc;->p()LuFc;
+
     .line 32
     .line 33
+    .line 34
     move-result-object v0
 
-    .line 34
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->I0:LZpc;
-
     .line 35
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->I0:LuFc;
+
     .line 36
+    .line 37
     return-void
 .end method
 
@@ -126,7 +129,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f131c1f
+    const v0, 0x7f131d72
 
     .line 5
     .line 6
@@ -135,37 +138,37 @@
 
     .line 8
     .line 9
-    sget-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->A1:LcSa;
+    sget-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageFragment;->A1:LL4b;
 
     .line 10
     .line 11
-    iput-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->E0:LcSa;
+    iput-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->E0:LL4b;
 
     .line 12
     .line 13
-    new-instance v0, LuPg;
+    new-instance v0, LSfh;
 
     .line 14
     .line 15
-    const/16 v1, 0xf
+    const/16 v1, 0xa
 
     .line 16
     .line 17
-    invoke-direct {v0, v1, p0}, LuPg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LSfh;-><init>(ILjava/lang/Object;)V
 
     .line 18
     .line 19
     .line 20
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 21
     .line 22
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 23
     .line 24
     .line 25
-    iput-object v1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->F0:LXfi;
+    iput-object v1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->F0:LREi;
 
     .line 26
     .line 27
@@ -174,89 +177,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LU4h;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
-
-    .line 15
-    .line 16
-    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 22
-    :goto_0
-    if-nez v0, :cond_1
-
-    .line 23
-    .line 24
-    const-string v0, ""
-
-    .line 25
-    .line 26
-    :cond_1
-    iput-object v0, p1, LU4h;->g0:Ljava/lang/String;
-
-    .line 27
-    .line 28
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LU4h;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object p1
-
-    .line 32
-    invoke-virtual {p1, p0}, LU4h;->S2(LV4h;)V
-
-    .line 33
-    .line 34
-    .line 35
-    return-void
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LU4h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LMqh;
 
     .line 2
     .line 3
@@ -264,7 +189,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LU4h;->C1()V
+    invoke-virtual {v0}, LMqh;->D1()V
 
     .line 6
     .line 7
@@ -272,15 +197,15 @@
     return-void
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->F0:LXfi;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->F0:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -324,7 +249,7 @@
 
     .line 23
     .line 24
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 25
     .line 26
@@ -335,7 +260,7 @@
     throw v0
 .end method
 
-.method public J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
@@ -373,7 +298,7 @@
     .line 17
     .line 18
     :cond_0
-    const p3, 0x7f0e06db
+    const p3, 0x7f0e06fd
 
     .line 19
     .line 20
@@ -389,7 +314,7 @@
     move-result-object p1
 
     .line 26
-    const p2, 0x7f0b078e
+    const p2, 0x7f0b0837
 
     .line 27
     .line 28
@@ -410,7 +335,7 @@
 
     .line 36
     .line 37
-    const p2, 0x7f0b078f
+    const p2, 0x7f0b0838
 
     .line 38
     .line 39
@@ -427,7 +352,7 @@
 
     .line 45
     .line 46
-    const p2, 0x7f0b078d
+    const p2, 0x7f0b0836
 
     .line 47
     .line 48
@@ -451,11 +376,11 @@
     return-object p1
 .end method
 
-.method public final W1()LU4h;
+.method public final W1()LMqh;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->B0:LU4h;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->B0:LMqh;
 
     .line 2
     .line 3
@@ -471,7 +396,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -482,11 +407,11 @@
     throw v0
 .end method
 
-.method public X1()LcSa;
+.method public X1()LL4b;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->E0:LcSa;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->E0:LL4b;
 
     .line 2
     .line 3
@@ -504,11 +429,11 @@
     return v0
 .end method
 
-.method public final Z1()LTqc;
+.method public final Z1()LmGc;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->C0:LTqc;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->C0:LmGc;
 
     .line 2
     .line 3
@@ -524,7 +449,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -572,11 +497,11 @@
     .line 16
     .line 17
     .line 18
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->F0:LXfi;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->F0:LREi;
 
     .line 19
     .line 20
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -620,7 +545,7 @@
 
     .line 40
     .line 41
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -633,7 +558,7 @@
 
     .line 46
     .line 47
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 48
     .line 49
@@ -646,7 +571,7 @@
 
     .line 52
     .line 53
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 54
     .line 55
@@ -658,7 +583,7 @@
     .locals 6
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LU4h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LMqh;
 
     .line 2
     .line 3
@@ -666,7 +591,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v0, v0, LU4h;->h0:Ljava/lang/String;
+    iget-object v0, v0, LMqh;->h0:Ljava/lang/String;
 
     .line 6
     .line 7
@@ -775,7 +700,7 @@
 
     .line 59
     :cond_0
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 60
     .line 61
@@ -808,7 +733,7 @@
 
     .line 74
     .line 75
-    const v2, 0x7f1330d4
+    const v2, 0x7f133375
 
     .line 76
     .line 77
@@ -838,7 +763,7 @@
 
     .line 90
     :cond_2
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 91
     .line 92
@@ -847,7 +772,7 @@
 
     .line 94
     :cond_3
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 95
     .line 96
@@ -856,7 +781,7 @@
 
     .line 98
     :cond_4
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 99
     .line 100
@@ -865,7 +790,7 @@
 
     .line 102
     :cond_5
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 103
     .line 104
@@ -905,7 +830,7 @@
 
     .line 121
     :cond_7
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 122
     .line 123
@@ -914,7 +839,7 @@
 
     .line 125
     :cond_8
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 126
     .line 127
@@ -923,7 +848,7 @@
 
     .line 129
     :cond_9
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 130
     .line 131
@@ -936,7 +861,7 @@
 
     .line 134
     .line 135
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 136
     .line 137
@@ -949,7 +874,7 @@
 
     .line 140
     .line 141
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 142
     .line 143
@@ -1017,7 +942,7 @@
 
     .line 28
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -1026,7 +951,7 @@
 
     .line 32
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 33
     .line 34
@@ -1034,16 +959,16 @@
     throw v1
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LU4h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LMqh;
 
     .line 5
     .line 6
@@ -1051,7 +976,7 @@
     move-result-object p1
 
     .line 8
-    iget-object p1, p1, LU4h;->l0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object p1, p1, LMqh;->l0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 9
     .line 10
@@ -1063,16 +988,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LU4h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LMqh;
 
     .line 5
     .line 6
@@ -1080,15 +1005,15 @@
     move-result-object p1
 
     .line 8
-    new-instance v0, Lrog;
+    new-instance v0, LHWg;
 
     .line 9
     .line 10
-    const/16 v1, 0x1c
+    const/16 v1, 0x16
 
     .line 11
     .line 12
-    invoke-direct {v0, v1, p1}, Lrog;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, LHWg;-><init>(ILjava/lang/Object;)V
 
     .line 13
     .line 14
@@ -1102,11 +1027,11 @@
     .line 18
     .line 19
     .line 20
-    iget-object v0, p1, LU4h;->k0:LBre;
+    iget-object v0, p1, LMqh;->k0:LnJe;
 
     .line 21
     .line 22
-    invoke-virtual {v0}, LBre;->d()LF06;
+    invoke-virtual {v0}, LnJe;->d()LA36;
 
     .line 23
     .line 24
@@ -1131,14 +1056,92 @@
     move-result-object v0
 
     .line 35
-    iget-object p1, p1, LU4h;->l0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object p1, p1, LMqh;->l0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 36
     .line 37
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 38
     .line 39
     .line 40
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LMqh;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 22
+    :goto_0
+    if-nez v0, :cond_1
+
+    .line 23
+    .line 24
+    const-string v0, ""
+
+    .line 25
+    .line 26
+    :cond_1
+    iput-object v0, p1, LMqh;->g0:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesEditNameFragment;->W1()LMqh;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    invoke-virtual {p1, p0}, LMqh;->d3(LNqh;)V
+
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method

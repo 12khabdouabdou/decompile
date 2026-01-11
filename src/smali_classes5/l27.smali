@@ -1,147 +1,138 @@
-.class public final Ll27;
+.class public abstract Ll27;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lo09;
+# static fields
+.field public static final a:LRE6;
 
 
 # direct methods
-.method public constructor <init>(Lo09;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 17
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v3, LcF6;->a:LcF6;
 
     .line 2
     .line 3
+    sget-object v5, LApf;->c:LApf;
+
     .line 4
-    iput-object p1, p0, Ll27;->a:Lo09;
-
     .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Ll27;
+    new-instance v4, Lupf;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    const/4 v0, 0x3
 
     .line 8
-    if-nez v1, :cond_1
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 9
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, Ll27;
+    move-result-object v8
 
     .line 12
+    const/4 v9, 0x4
+
     .line 13
-    iget-object v1, p0, Ll27;->a:Lo09;
+    const-wide/16 v6, 0xa
 
     .line 14
     .line 15
-    iget-object p1, p1, Ll27;->a:Lo09;
+    invoke-direct/range {v4 .. v9}, Lupf;-><init>(LApf;JLjava/lang/Integer;I)V
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
+    const/4 v0, 0x1
+
     .line 19
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
     .line 20
-    move-result p1
-
     .line 21
-    if-nez p1, :cond_2
-
     .line 22
+    move-result-object v0
+
     .line 23
-    return v2
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 24
-    :cond_2
-    return v0
+    .line 25
+    .line 26
+    move-result-object v2
+
+    .line 27
+    new-instance v0, LRE6;
+
+    .line 28
+    .line 29
+    const/4 v13, 0x0
+
+    .line 30
+    const/4 v14, 0x0
+
+    .line 31
+    const/4 v1, 0x0
+
+    .line 32
+    move-object v6, v4
+
+    .line 33
+    const/4 v4, 0x0
+
+    .line 34
+    const/4 v5, 0x0
+
+    .line 35
+    const/4 v7, 0x0
+
+    .line 36
+    const/4 v8, 0x0
+
+    .line 37
+    const/4 v9, 0x0
+
+    .line 38
+    const/4 v10, 0x0
+
+    .line 39
+    const/4 v11, 0x0
+
+    .line 40
+    const/4 v12, 0x0
+
+    .line 41
+    const/16 v15, 0x3fd9
+
+    .line 42
+    .line 43
+    const/16 v16, 0x0
+
+    .line 44
+    .line 45
+    invoke-direct/range {v0 .. v16}, LRE6;-><init>(ILjava/util/List;LcF6;Ljava/lang/String;LSs9;Lupf;LF1j;ZZLjava/lang/Boolean;Ljava/lang/String;LyJ7;LSs9;ZILex5;)V
+
+    .line 46
+    .line 47
+    .line 48
+    sput-object v0, Ll27;->a:LRE6;
+
+    .line 49
+    .line 50
+    return-void
 .end method
 
-.method public final hashCode()I
+.method public static final synthetic a()LRE6;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ll27;->a:Lo09;
+    sget-object v0, Ll27;->a:LRE6;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "ByPageId(pageId="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Ll27;->a:Lo09;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, LUl;->h(Ljava/lang/StringBuilder;Lo09;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
     return-object v0
 .end method

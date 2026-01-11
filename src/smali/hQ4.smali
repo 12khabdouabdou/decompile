@@ -3,15 +3,21 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGs3;
+.implements LKv3;
 
 
 # instance fields
-.field public final a:Lu35;
+.field public final a:LqR4;
+
+.field public final b:Lz45;
+
+.field public final c:LgT4;
+
+.field public final t:LOS4;
 
 
 # direct methods
-.method public constructor <init>(Lu35;)V
+.method public constructor <init>(Lz45;LOS4;LgT4;LqR4;)V
     .locals 0
 
     .line 1
@@ -20,9 +26,21 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LhQ4;->a:Lu35;
+    iput-object p4, p0, LhQ4;->a:LqR4;
 
     .line 5
     .line 6
+    iput-object p1, p0, LhQ4;->b:Lz45;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LhQ4;->c:LgT4;
+
+    .line 9
+    .line 10
+    iput-object p2, p0, LhQ4;->t:LOS4;
+
+    .line 11
+    .line 12
     return-void
 .end method

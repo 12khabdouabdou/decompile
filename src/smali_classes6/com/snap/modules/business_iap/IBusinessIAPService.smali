@@ -7,24 +7,24 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LlU8;
-    schema = "\'getBuildFlavor\':f?|m|(): s,\'initService\':f?|m|(),\'fetchProducts\':f?|m|(a<s>, f(r:\'[0]\')),\'getPaymentUpdateObservable\':f?|m|(): g<c>:\'[1]\'<r:\'[2]\'>,\'addPayment\':f?|m|(s, s, f(s?)),\'getUnfinishedTransactions\':f?|m|(s, a<s>, f(r:\'[3]\')),\'getAndroidUnfinishedTransactions\':f?|m|(s, a<s>, f(r:\'[3]\')),\'finishTransaction\':f?|m|(s, s),\'getStorefrontCountryCode\':f?|m|(): s,\'getStorefrontCountryCodeAsync\':f?|m|(): p<s>,\'isAndroidIapSupported\':f?|m|(): p<b@>,\'cleanUp\':f?|m|()"
+    proxyClass = LM19;
+    schema = "\'getBuildFlavor\':f|m|(): s,\'initService\':f?|m|(),\'fetchProducts\':f?|m|(a<s>, f(r:\'[0]\')),\'getPaymentUpdateObservable\':f?|m|(): g<c>:\'[1]\'<r:\'[2]\'>,\'addPayment\':f?|m|(s, s, f(s?)),\'purchase\':f|m|(r:\'[3]\'): p<r:\'[4]\'>,\'legacyGetUnfinishedTransactions\':f?|m|(s, a<s>, f(r:\'[5]\')),\'legacyGetAndroidUnfinishedTransactions\':f?|m|(s, a<s>, f(r:\'[5]\')),\'getUnfinishedTransactions\':f|m|(s): p<a<r:\'[6]\'>>,\'legacyFinishTransaction\':f|m|(s, s),\'finishTransaction\':f|m|(s, s): p<v>,\'getStorefrontCountryCode\':f|m|(): p<s>,\'getStorefrontCurrency\':f?|m|(): p<s>,\'isIAPSupported\':f|m|(): p<b@>,\'cleanUp\':f?|m|()"
     typeReferences = {
-        Ljl7;,
+        Liq7;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LcA;,
-        Lts8;
+        LNB;,
+        Lcom/snap/modules/business_iap/PurchasePayload;,
+        LbIe;,
+        Lcz8;,
+        Lcom/snap/modules/business_iap/Transaction;
     }
 .end annotation
 
 
 # virtual methods
 .method public abstract addPayment(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -33,18 +33,18 @@
             "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract cleanUp()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract fetchProducts(Ljava/util/List;Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -55,58 +55,43 @@
             ")V"
         }
     .end annotation
-.end method
 
-.method public abstract finishTransaction(Ljava/lang/String;Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
-.method public abstract getAndroidUnfinishedTransactions(Ljava/lang/String;Ljava/util/List;Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
+.method public abstract finishTransaction(Ljava/lang/String;Ljava/lang/String;)Lcom/snap/composer/promise/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "Ljava/util/List<",
             "Ljava/lang/String;",
-            ">;",
-            "Lkotlin/jvm/functions/Function1;",
-            ")V"
+            ")",
+            "Lcom/snap/composer/promise/Promise<",
+            "Lewj;",
+            ">;"
         }
     .end annotation
 .end method
 
 .method public abstract getBuildFlavor()Ljava/lang/String;
-    .annotation runtime LUy3;
-    .end annotation
 .end method
 
 .method public abstract getPaymentUpdateObservable()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LcA;",
+            "LNB;",
             ">;"
         }
     .end annotation
-.end method
 
-.method public abstract getStorefrontCountryCode()Ljava/lang/String;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
-.method public abstract getStorefrontCountryCodeAsync()Lcom/snap/composer/promise/Promise;
-    .annotation runtime LUy3;
-    .end annotation
-
+.method public abstract getStorefrontCountryCode()Lcom/snap/composer/promise/Promise;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -117,10 +102,54 @@
     .end annotation
 .end method
 
-.method public abstract getUnfinishedTransactions(Ljava/lang/String;Ljava/util/List;Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
+.method public abstract getStorefrontCurrency()Lcom/snap/composer/promise/Promise;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/lang/String;",
+            ">;"
+        }
     .end annotation
 
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract getUnfinishedTransactions(Ljava/lang/String;)Lcom/snap/composer/promise/Promise;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/util/List<",
+            "Lcom/snap/modules/business_iap/Transaction;",
+            ">;>;"
+        }
+    .end annotation
+.end method
+
+.method public abstract initService()V
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract isIAPSupported()Lcom/snap/composer/promise/Promise;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/promise/Promise<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract legacyFinishTransaction(Ljava/lang/String;Ljava/lang/String;)V
+.end method
+
+.method public abstract legacyGetAndroidUnfinishedTransactions(Ljava/lang/String;Ljava/util/List;Lkotlin/jvm/functions/Function1;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -132,22 +161,36 @@
             ")V"
         }
     .end annotation
-.end method
 
-.method public abstract initService()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
-.method public abstract isAndroidIapSupported()Lcom/snap/composer/promise/Promise;
-    .annotation runtime LUy3;
-    .end annotation
-
+.method public abstract legacyGetUnfinishedTransactions(Ljava/lang/String;Ljava/util/List;Lkotlin/jvm/functions/Function1;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
+.method public abstract purchase(Lcom/snap/modules/business_iap/PurchasePayload;)Lcom/snap/composer/promise/Promise;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/modules/business_iap/PurchasePayload;",
+            ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Ljava/lang/Boolean;",
+            "LbIe;",
             ">;"
         }
     .end annotation

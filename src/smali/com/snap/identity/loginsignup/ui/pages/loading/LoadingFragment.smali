@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public w0:LCua;
+.field public w0:LLGa;
 
 
 # direct methods
@@ -22,11 +22,11 @@
 
 
 # virtual methods
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 4
 
     .line 1
-    iget-object p3, p0, Lcom/snap/identity/loginsignup/ui/pages/loading/LoadingFragment;->w0:LCua;
+    iget-object p3, p0, Lcom/snap/identity/loginsignup/ui/pages/loading/LoadingFragment;->w0:LLGa;
 
     .line 2
     .line 3
@@ -34,7 +34,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LCua;->f0:Ljava/util/List;
+    sget-object v0, LLGa;->f0:Ljava/util/List;
 
     .line 6
     .line 7
@@ -50,7 +50,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v2}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 14
     .line 15
@@ -104,7 +104,7 @@
     move-result v2
 
     .line 40
-    iget-object v3, p3, LCua;->Z:Landroid/app/Activity;
+    iget-object v3, p3, LLGa;->Z:Landroid/app/Activity;
 
     .line 41
     .line 42
@@ -121,7 +121,7 @@
     .line 47
     .line 48
     .line 49
-    sget-object v2, Li7j;->a:Li7j;
+    sget-object v2, Lewj;->a:Lewj;
 
     .line 50
     .line 51
@@ -134,7 +134,7 @@
 
     .line 55
     :cond_0
-    const p3, 0x7f0e0277
+    const p3, 0x7f0e028c
 
     .line 56
     .line 57
@@ -158,7 +158,7 @@
 
     .line 65
     .line 66
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 67
     .line 68
@@ -169,11 +169,11 @@
     throw p1
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/loading/LoadingFragment;->w0:LCua;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/loading/LoadingFragment;->w0:LLGa;
 
     .line 2
     .line 3
@@ -181,7 +181,7 @@
 
     .line 4
     .line 5
-    sget-object v1, LCua;->f0:Ljava/util/List;
+    sget-object v1, LLGa;->f0:Ljava/util/List;
 
     .line 6
     .line 7
@@ -197,7 +197,7 @@
 
     .line 12
     .line 13
-    invoke-static {v1, v3}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v3}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 14
     .line 15
@@ -251,7 +251,7 @@
     move-result v3
 
     .line 40
-    iget-object v4, v0, LCua;->Z:Landroid/app/Activity;
+    iget-object v4, v0, LLGa;->Z:Landroid/app/Activity;
 
     .line 41
     .line 42
@@ -268,7 +268,7 @@
     .line 47
     .line 48
     .line 49
-    sget-object v3, Li7j;->a:Li7j;
+    sget-object v3, Lewj;->a:Lewj;
 
     .line 50
     .line 51
@@ -281,7 +281,7 @@
 
     .line 55
     :cond_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 56
     .line 57
@@ -294,7 +294,7 @@
 
     .line 60
     .line 61
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 62
     .line 63
@@ -305,11 +305,11 @@
     throw p1
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -317,16 +317,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/loading/LoadingFragment;->w0:LCua;
+    iget-object p1, p0, Lcom/snap/identity/loginsignup/ui/pages/loading/LoadingFragment;->w0:LLGa;
 
     .line 5
     .line 6
@@ -334,11 +334,11 @@
 
     .line 7
     .line 8
-    iget-object p1, p1, LCua;->e0:LrH9;
+    iget-object p1, p1, LLGa;->e0:LQS9;
 
     .line 9
     .line 10
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -346,11 +346,11 @@
     move-result-object p1
 
     .line 14
-    check-cast p1, LWR6;
+    check-cast p1, LSV6;
 
     .line 15
     .line 16
-    new-instance v0, LYpc;
+    new-instance v0, LtFc;
 
     .line 17
     .line 18
@@ -359,7 +359,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-interface {p1, v0}, LWR6;->a(Ljava/lang/Object;)V
+    invoke-interface {p1, v0}, LSV6;->a(Ljava/lang/Object;)V
 
     .line 22
     .line 23
@@ -372,7 +372,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 28
     .line 29

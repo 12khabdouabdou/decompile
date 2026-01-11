@@ -40,7 +40,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x7f040397
+    const v0, 0x7f040412
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/timepicker/ClockHandView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -76,9 +76,9 @@
     iput-object v1, p0, Lcom/google/android/material/timepicker/ClockHandView;->e0:Landroid/graphics/RectF;
 
     .line 7
-    sget-object v1, Ldve;->g:[I
+    sget-object v1, LLMe;->g:[I
 
-    const v2, 0x7f1404f4
+    const v2, 0x7f140528
 
     .line 8
     invoke-virtual {p1, p2, v1, p3, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -110,7 +110,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f070a4f
+    const v4, 0x7f070a76
 
     .line 12
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -119,7 +119,7 @@
 
     iput v4, p0, Lcom/google/android/material/timepicker/ClockHandView;->f0:I
 
-    const v4, 0x7f070a4d
+    const v4, 0x7f070a74
 
     .line 13
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -154,7 +154,7 @@
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
     .line 19
-    sget-object p1, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 20
     invoke-virtual {p0, v2}, Landroid/view/View;->setImportantForAccessibility(I)V
@@ -357,7 +357,7 @@
     move-result-object v1
 
     .line 87
-    check-cast v1, LC73;
+    check-cast v1, LT93;
 
     .line 88
     .line 89
@@ -397,7 +397,7 @@
 
     .line 106
     .line 107
-    invoke-virtual {v1}, Lcom/google/android/material/timepicker/ClockFaceView;->h()V
+    invoke-virtual {v1}, Lcom/google/android/material/timepicker/ClockFaceView;->g()V
 
     .line 108
     .line 109

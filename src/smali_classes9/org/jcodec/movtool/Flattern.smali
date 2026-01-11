@@ -84,7 +84,7 @@
 
     .line 19
     :cond_0
-    invoke-static {p1}, LDM4;->l(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
+    invoke-static {p1}, LBv7;->i(Ljava/util/Iterator;)Ljava/lang/ClassCastException;
 
     .line 20
     .line 21

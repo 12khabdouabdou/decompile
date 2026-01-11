@@ -4,16 +4,12 @@
 
 
 # instance fields
-.field public final a:LUo4;
-
-.field public final b:LXfi;
-
-.field public final c:LUo4;
+.field public final a:LYK4;
 
 
 # direct methods
-.method public constructor <init>(LUo4;LUo4;LUo4;)V
-    .locals 1
+.method public constructor <init>(LYK4;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -21,38 +17,138 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LRt1;->a:LUo4;
+    iput-object p1, p0, LRt1;->a:LYK4;
 
     .line 5
     .line 6
-    new-instance p1, Lmi1;
+    sget-object p1, LNn1;->Z:LNn1;
 
     .line 7
     .line 8
-    const/4 v0, 0x4
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 9
-    invoke-direct {p1, p2, v0}, Lmi1;-><init>(LUo4;I)V
+    .line 10
+    .line 11
+    const-string p1, "BloopsSUPDataServiceImpl"
+
+    .line 12
+    .line 13
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 17
+    .line 18
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LRt1;->a:LYK4;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LOF3;
+
+    .line 8
+    .line 9
+    sget-object v1, Lex1;->e0:Lex1;
 
     .line 10
     .line 11
-    .line 12
-    new-instance p2, LXfi;
+    invoke-interface {v0, v1}, LOF3;->z(LcM3;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 12
     .line 13
     .line 14
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    move-result-object v0
 
     .line 15
-    .line 16
-    .line 17
-    iput-object p2, p0, LRt1;->b:LXfi;
+    return-object v0
+.end method
 
-    .line 18
-    .line 19
-    iput-object p3, p0, LRt1;->c:LUo4;
+.method public final b()Lio/reactivex/rxjava3/core/Single;
+    .locals 2
 
-    .line 20
-    .line 21
-    return-void
+    .line 1
+    iget-object v0, p0, LRt1;->a:LYK4;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LOF3;
+
+    .line 8
+    .line 9
+    sget-object v1, Lex1;->e0:Lex1;
+
+    .line 10
+    .line 11
+    invoke-interface {v0, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    return-object v0
+.end method
+
+.method public final c()Lio/reactivex/rxjava3/core/Single;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LRt1;->a:LYK4;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LYK4;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LOF3;
+
+    .line 8
+    .line 9
+    sget-object v1, Lex1;->Z:Lex1;
+
+    .line 10
+    .line 11
+    invoke-interface {v0, v1}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    return-object v0
 .end method

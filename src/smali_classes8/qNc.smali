@@ -1,443 +1,548 @@
-.class public final enum LqNc;
-.super Ljava/lang/Enum;
+.class public final LqNc;
+.super LdZh;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LqNc;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum X:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "ML_ASSET_DOWNLOAD_END"
-    .end annotation
-.end field
-
-.field public static final enum Y:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "ML_ASSET_PROCESSING_START"
-    .end annotation
-.end field
-
-.field public static final enum Z:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "ML_ASSET_PROCESSING_END"
-    .end annotation
-.end field
-
-.field public static final enum b:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "JOB_START"
-    .end annotation
-.end field
-
-.field public static final enum c:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "JOB_END"
-    .end annotation
-.end field
-
-.field public static final enum e0:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PROCESSING_JOB_START"
-    .end annotation
-.end field
-
-.field public static final enum f0:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PROCESSING_JOB_END"
-    .end annotation
-.end field
-
-.field public static final enum g0:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "CACHE_CLEARANCE_JOB_START"
-    .end annotation
-.end field
-
-.field public static final enum h0:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "CACHE_CLEARANCE_JOB_END"
-    .end annotation
-.end field
-
-.field public static final synthetic i0:[LqNc;
-
-.field public static final enum t:LqNc;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "ML_ASSET_DOWNLOAD_START"
-    .end annotation
-.end field
 
 
 # instance fields
-.field public final a:I
+.field public final X:LTq5;
+
+.field public final Y:LnJe;
+
+.field public final Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+.field public e0:LJP9;
+
+.field public f0:LHYh;
+
+.field public final t:LKeh;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 21
+.method public constructor <init>(LKeh;LTq5;)V
+    .locals 1
 
     .line 1
-    new-instance v0, LqNc;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    const-string v1, "JOB_START"
+    invoke-direct {p0, v0}, LdZh;-><init>(Z)V
 
+    .line 3
     .line 4
     .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, LqNc;->t:LKeh;
 
     .line 6
-    invoke-direct {v0, v1, v2, v2}, LqNc;-><init>(Ljava/lang/String;II)V
-
     .line 7
+    iput-object p2, p0, LqNc;->X:LTq5;
+
     .line 8
     .line 9
-    sput-object v0, LqNc;->b:LqNc;
+    sget-object p1, Lc2i;->Z:Lc2i;
 
     .line 10
     .line 11
-    new-instance v1, LqNc;
+    const-string p2, "NoBitmojiCategory"
 
     .line 12
     .line 13
-    const-string v3, "JOB_END"
+    invoke-static {p1, p1, p2}, LoVh;->b(Lc2i;Lc2i;Ljava/lang/String;)Lnp0;
 
     .line 14
     .line 15
-    const/4 v4, 0x1
-
     .line 16
-    invoke-direct {v1, v3, v4, v4}, LqNc;-><init>(Ljava/lang/String;II)V
+    move-result-object p1
 
     .line 17
+    new-instance p2, LnJe;
+
     .line 18
     .line 19
-    sput-object v1, LqNc;->c:LqNc;
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
 
     .line 20
     .line 21
-    new-instance v3, LqNc;
-
     .line 22
+    iput-object p2, p0, LqNc;->Y:LnJe;
+
     .line 23
-    const-string v5, "ML_ASSET_DOWNLOAD_START"
-
     .line 24
-    .line 25
-    const/4 v6, 0x2
+    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 25
     .line 26
-    invoke-direct {v3, v5, v6, v6}, LqNc;-><init>(Ljava/lang/String;II)V
+    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
 
     .line 27
     .line 28
     .line 29
-    sput-object v3, LqNc;->t:LqNc;
+    iput-object p1, p0, LqNc;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 30
     .line 31
-    new-instance v5, LqNc;
+    sget-object p1, LpNc;->b:LpNc;
 
     .line 32
     .line 33
-    const-string v7, "ML_ASSET_DOWNLOAD_END"
+    iput-object p1, p0, LqNc;->e0:LJP9;
 
     .line 34
     .line 35
-    const/4 v8, 0x3
+    sget-object p1, LHYh;->a:LHYh;
 
     .line 36
-    invoke-direct {v5, v7, v8, v8}, LqNc;-><init>(Ljava/lang/String;II)V
-
     .line 37
+    iput-object p1, p0, LqNc;->f0:LHYh;
+
     .line 38
     .line 39
-    sput-object v5, LqNc;->X:LqNc;
-
-    .line 40
-    .line 41
-    new-instance v7, LqNc;
-
-    .line 42
-    .line 43
-    const-string v9, "ML_ASSET_PROCESSING_START"
-
-    .line 44
-    .line 45
-    const/4 v10, 0x4
-
-    .line 46
-    invoke-direct {v7, v9, v10, v10}, LqNc;-><init>(Ljava/lang/String;II)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v7, LqNc;->Y:LqNc;
-
-    .line 50
-    .line 51
-    new-instance v9, LqNc;
-
-    .line 52
-    .line 53
-    const-string v11, "ML_ASSET_PROCESSING_END"
-
-    .line 54
-    .line 55
-    const/4 v12, 0x5
-
-    .line 56
-    invoke-direct {v9, v11, v12, v12}, LqNc;-><init>(Ljava/lang/String;II)V
-
-    .line 57
-    .line 58
-    .line 59
-    sput-object v9, LqNc;->Z:LqNc;
-
-    .line 60
-    .line 61
-    new-instance v11, LqNc;
-
-    .line 62
-    .line 63
-    const-string v13, "PROCESSING_JOB_START"
-
-    .line 64
-    .line 65
-    const/4 v14, 0x6
-
-    .line 66
-    invoke-direct {v11, v13, v14, v14}, LqNc;-><init>(Ljava/lang/String;II)V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v11, LqNc;->e0:LqNc;
-
-    .line 70
-    .line 71
-    new-instance v13, LqNc;
-
-    .line 72
-    .line 73
-    const-string v15, "PROCESSING_JOB_END"
-
-    .line 74
-    .line 75
-    const/16 v16, 0x0
-
-    .line 76
-    .line 77
-    const/4 v2, 0x7
-
-    .line 78
-    invoke-direct {v13, v15, v2, v2}, LqNc;-><init>(Ljava/lang/String;II)V
-
-    .line 79
-    .line 80
-    .line 81
-    sput-object v13, LqNc;->f0:LqNc;
-
-    .line 82
-    .line 83
-    new-instance v15, LqNc;
-
-    .line 84
-    .line 85
-    const/16 v17, 0x7
-
-    .line 86
-    .line 87
-    const-string v2, "CACHE_CLEARANCE_JOB_START"
-
-    .line 88
-    .line 89
-    const/16 v18, 0x1
-
-    .line 90
-    .line 91
-    const/16 v4, 0x8
-
-    .line 92
-    .line 93
-    invoke-direct {v15, v2, v4, v4}, LqNc;-><init>(Ljava/lang/String;II)V
-
-    .line 94
-    .line 95
-    .line 96
-    sput-object v15, LqNc;->g0:LqNc;
-
-    .line 97
-    .line 98
-    new-instance v2, LqNc;
-
-    .line 99
-    .line 100
-    const/16 v19, 0x8
-
-    .line 101
-    .line 102
-    const-string v4, "CACHE_CLEARANCE_JOB_END"
-
-    .line 103
-    .line 104
-    const/16 v20, 0x2
-
-    .line 105
-    .line 106
-    const/16 v6, 0x9
-
-    .line 107
-    .line 108
-    invoke-direct {v2, v4, v6, v6}, LqNc;-><init>(Ljava/lang/String;II)V
-
-    .line 109
-    .line 110
-    .line 111
-    sput-object v2, LqNc;->h0:LqNc;
-
-    .line 112
-    .line 113
-    const/16 v4, 0xa
-
-    .line 114
-    .line 115
-    new-array v4, v4, [LqNc;
-
-    .line 116
-    .line 117
-    aput-object v0, v4, v16
-
-    .line 118
-    .line 119
-    aput-object v1, v4, v18
-
-    .line 120
-    .line 121
-    aput-object v3, v4, v20
-
-    .line 122
-    .line 123
-    aput-object v5, v4, v8
-
-    .line 124
-    .line 125
-    aput-object v7, v4, v10
-
-    .line 126
-    .line 127
-    aput-object v9, v4, v12
-
-    .line 128
-    .line 129
-    aput-object v11, v4, v14
-
-    .line 130
-    .line 131
-    aput-object v13, v4, v17
-
-    .line 132
-    .line 133
-    aput-object v15, v4, v19
-
-    .line 134
-    .line 135
-    aput-object v2, v4, v6
-
-    .line 136
-    .line 137
-    sput-object v4, LqNc;->i0:[LqNc;
-
-    .line 138
-    .line 139
     return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, LqNc;->a:I
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LqNc;
-    .locals 1
-
-    .line 1
-    const-class v0, LqNc;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LqNc;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LqNc;
-    .locals 1
-
-    .line 1
-    sget-object v0, LqNc;->i0:[LqNc;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LqNc;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LqNc;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final b(Ljava/util/List;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, LqNc;->a:I
+    return-void
+.end method
+
+.method public final k(Landroidx/viewpager/widget/ViewPager;IILfYh;Lj1i;)Landroid/view/View;
+    .locals 6
+
+    .line 1
+    new-instance v0, LtNc;
 
     .line 2
     .line 3
+    iget-object v3, p0, LqNc;->f0:LHYh;
+
+    .line 4
+    .line 5
+    iget-object v5, p0, LqNc;->e0:LJP9;
+
+    .line 6
+    .line 7
+    iget-object v2, p0, LqNc;->Y:LnJe;
+
+    .line 8
+    .line 9
+    iget-object v4, p0, LqNc;->X:LTq5;
+
+    .line 10
+    .line 11
+    move-object v1, p1
+
+    .line 12
+    invoke-direct/range {v0 .. v5}, LtNc;-><init>(Landroidx/viewpager/widget/ViewPager;LnJe;LHYh;LTq5;Lkotlin/jvm/functions/Function1;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget-object p1, v0, LtNc;->h0:LREi;
+
+    .line 16
+    .line 17
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p2
+
+    .line 21
+    check-cast p2, Landroid/view/View;
+
+    .line 22
+    .line 23
+    const p3, 0x7f0b18bc
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p2
+
+    .line 30
+    check-cast p2, Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 31
+    .line 32
+    iput-object p2, v0, LtNc;->i0:Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 33
+    .line 34
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    check-cast p1, Landroid/view/View;
+
+    .line 39
+    .line 40
+    const p2, 0x7f0b18bb
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    move-object p2, p1
+
+    .line 48
+    check-cast p2, Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 49
+    .line 50
+    const/4 p3, 0x1
+
+    .line 51
+    invoke-virtual {p2, p3}, Lcom/snap/ui/view/SnapFontTextView;->setTypefaceStyle(I)V
+
+    .line 52
+    .line 53
+    .line 54
+    check-cast p1, Landroid/widget/TextView;
+
+    .line 55
+    .line 56
+    iput-object p1, v0, LtNc;->j0:Landroid/widget/TextView;
+
+    .line 57
+    .line 58
+    new-instance p2, LsNc;
+
+    .line 59
+    .line 60
+    const/4 p3, 0x0
+
+    .line 61
+    invoke-direct {p2, p3, v0}, LsNc;-><init>(ILjava/lang/Object;)V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 65
+    .line 66
+    .line 67
+    iget-object p1, v0, LtNc;->i0:Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 68
+    .line 69
+    if-eqz p1, :cond_0
+
+    .line 70
+    .line 71
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p2
+
+    .line 75
+    invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object p3
+
+    .line 79
+    const p4, 0x7f07017c
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {p3, p4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 83
+    .line 84
+    .line 85
+    move-result p3
+
+    .line 86
+    iput p3, p2, Landroid/view/ViewGroup$LayoutParams;->width:I
+
+    .line 87
+    .line 88
+    const-string p2, "https://cf-st.sc-cdn.net/d/zu1QYl9a458UNmsix2h0w?bo=EhQaABoAMgIEfUgCUAhaBAiC-AxgAQ%3D%3D&uc=8"
+
+    .line 89
+    .line 90
+    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object p2
+
+    .line 94
+    sget-object p3, Lc2i;->Z:Lc2i;
+
+    .line 95
+    .line 96
+    invoke-virtual {p3}, Lrp0;->c()LcUh;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p3
+
+    .line 100
+    invoke-virtual {p1, p2, p3}, Lcom/snap/imageloading/view/SnapImageView;->g(Landroid/net/Uri;Lcrj;)V
+
+    .line 101
+    .line 102
+    .line 103
+    new-instance p1, LFmc;
+
+    .line 104
+    .line 105
+    const/16 p2, 0x19
+
+    .line 106
+    .line 107
+    invoke-direct {p1, p2, v0}, LFmc;-><init>(ILjava/lang/Object;)V
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-static {p1}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object p1
+
+    .line 114
+    iget-object p2, v0, LtNc;->e0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 115
+    .line 116
+    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 117
+    .line 118
+    .line 119
+    return-object v0
+
+    .line 120
+    :cond_0
+    const-string p1, "createAvatarImage"
+
+    .line 121
+    .line 122
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 123
+    .line 124
+    .line 125
+    const/4 p1, 0x0
+
+    .line 126
+    throw p1
+.end method
+
+.method public final l()LkWh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LqNc;->f0:LHYh;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    sget-object v0, Laz2;->t:Laz2;
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    sget-object v0, Laz2;->X:Laz2;
+
+    .line 13
+    .line 14
+    :goto_0
+    invoke-static {v0}, LxKk;->k(Laz2;)LkWh;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    return-object v0
+.end method
+
+.method public final n()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
     return v0
+.end method
+
+.method public final o()Lp1i;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lp1i;->e0:Lp1i;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final bridge synthetic p(I)Landroid/view/View;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public final t()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LqNc;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final x()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, LqNc;->t:LKeh;
+
+    .line 2
+    .line 3
+    check-cast v0, Lmh0;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Lmh0;->a()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Observable;->f0()Lio/reactivex/rxjava3/core/Single;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iget-object v1, p0, LqNc;->Y:LnJe;
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, LnJe;->d()LA36;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 20
+    .line 21
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 22
+    .line 23
+    .line 24
+    new-instance v0, LoNc;
+
+    .line 25
+    .line 26
+    const/4 v1, 0x0
+
+    .line 27
+    invoke-direct {v0, v1, p0}, LoNc;-><init>(ILjava/lang/Object;)V
+
+    .line 28
+    .line 29
+    .line 30
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+
+    .line 31
+    .line 32
+    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 33
+    .line 34
+    .line 35
+    new-instance v0, LJuc;
+
+    .line 36
+    .line 37
+    const/16 v2, 0xd
+
+    .line 38
+    .line 39
+    invoke-direct {v0, v2, p0}, LJuc;-><init>(ILjava/lang/Object;)V
+
+    .line 40
+    .line 41
+    .line 42
+    iget-object v2, p0, LqNc;->Z:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 43
+    .line 44
+    invoke-static {v1, v0, v2}, LOIc;->R(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 45
+    .line 46
+    .line 47
+    return-void
 .end method

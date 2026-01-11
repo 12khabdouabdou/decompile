@@ -40,7 +40,7 @@
     move-result-object v0
 
     .line 9
-    instance-of v0, v0, LODi;
+    instance-of v0, v0, Ls3j;
 
     .line 10
     .line 11
@@ -53,7 +53,7 @@
     .line 14
     .line 15
     .line 16
-    sget p0, LCuj;->a:I
+    sget p0, LOTj;->a:I
 
     .line 17
     .line 18

@@ -33,13 +33,13 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    sget-object p1, LgYg;->l:Lq79;
+    sget-object p1, LTjh;->l:Lcf9;
 
     .line 5
-    sget-object p1, LeYg;->a:LgYg;
+    sget-object p1, LRjh;->a:LTjh;
 
     .line 6
-    invoke-virtual {p1}, LgYg;->b()I
+    invoke-virtual {p1}, LTjh;->b()I
 
     move-result p1
 

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LU88;
+    proxyClass = Lmf8;
     schema = "\'identifier\':s,\'faceAngles\':r:\'[0]\',\'faceBoundingBox\':r?:\'[1]\'"
     typeReferences = {
         Lcom/snap/bloops/generative/onboarding/GenAIOnboardingCameraFaceAngles;,

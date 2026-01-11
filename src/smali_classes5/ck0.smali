@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LKP9;
+.field public final synthetic b:Lfk0;
 
 
 # direct methods
-.method public synthetic constructor <init>(LKP9;I)V
+.method public synthetic constructor <init>(Lfk0;I)V
     .locals 0
 
     .line 1
     iput p2, p0, Lck0;->a:I
 
-    iput-object p1, p0, Lck0;->b:LKP9;
+    iput-object p1, p0, Lck0;->b:Lfk0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,147 +28,105 @@
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final accept(Ljava/lang/Object;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lck0;->b:LKP9;
+    iget v0, p0, Lck0;->a:I
 
     .line 2
     .line 3
-    iget v1, p0, Lck0;->a:I
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    packed-switch v1, :pswitch_data_0
-
     .line 6
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 7
     .line 8
-    check-cast p1, Ljava/lang/Boolean;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
     .line 11
+    iget-object p1, p0, Lck0;->b:Lfk0;
+
     .line 12
     .line 13
-    move-result p1
+    iget-object p1, p1, Lfk0;->t:LFX5;
 
     .line 14
-    if-eqz p1, :cond_0
-
     .line 15
+    iget-object p1, p1, LFX5;->a:LQM5;
+
     .line 16
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
-
     .line 17
-    .line 18
-    goto :goto_0
+    sget-object v0, LcQh;->a:LcQh;
 
+    .line 18
     .line 19
-    :cond_0
-    invoke-interface {v0}, LKP9;->d()Lar7;
+    invoke-virtual {p1, v0}, LQM5;->accept(Ljava/lang/Object;)V
 
     .line 20
     .line 21
     .line 22
-    move-result-object p1
+    return-void
 
     .line 23
-    invoke-interface {p1}, Lar7;->k()LW0d;
+    :pswitch_0
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 24
     .line 25
-    .line 26
-    move-result-object p1
+    iget-object p1, p0, Lck0;->b:Lfk0;
 
+    .line 26
     .line 27
-    sget-object v0, Li7j;->a:Li7j;
+    iget-object v0, p1, Lfk0;->t:LFX5;
 
     .line 28
     .line 29
-    invoke-static {p1, v0}, Lmkk;->s(LW0d;Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Single;
+    iget-object v0, v0, LFX5;->a:LQM5;
 
     .line 30
     .line 31
-    .line 32
-    move-result-object p1
+    sget-object v1, LdQh;->a:LdQh;
 
+    .line 32
     .line 33
-    sget-object v0, LQFa;->a:LQFa;
+    invoke-virtual {v0, v1}, LQM5;->accept(Ljava/lang/Object;)V
 
     .line 34
     .line 35
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 36
+    sget-object v0, LLbk;->a:LLbk;
+
     .line 37
     .line 38
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
+    iget-object v1, p1, Lfk0;->i0:Lzif;
 
     .line 39
     .line 40
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
+    iget-object v2, p1, Lfk0;->j0:Ljava/util/Set;
 
     .line 41
     .line 42
-    .line 43
-    move-object p1, v0
+    iget-object p1, p1, Lfk0;->Y:LzSh;
 
+    .line 43
     .line 44
-    :goto_0
-    return-object p1
+    invoke-interface {p1, v1, v0, v2}, LzSh;->e(Lzif;LNbk;Ljava/util/Set;)V
 
     .line 45
-    :pswitch_0
-    check-cast p1, Ljava/util/List;
-
     .line 46
     .line 47
-    check-cast p1, Ljava/lang/Iterable;
+    return-void
 
     .line 48
-    .line 49
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromIterable;
-
-    .line 50
-    .line 51
-    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromIterable;-><init>(Ljava/lang/Iterable;)V
-
-    .line 52
-    .line 53
-    .line 54
-    new-instance p1, Lbk0;
-
-    .line 55
-    .line 56
-    const/4 v2, 0x0
-
-    .line 57
-    invoke-direct {p1, v0, v2}, Lbk0;-><init>(LKP9;I)V
-
-    .line 58
-    .line 59
-    .line 60
-    const/4 v0, 0x2
-
-    .line 61
-    invoke-virtual {v1, p1, v0}, Lio/reactivex/rxjava3/core/Observable;->M(Lio/reactivex/rxjava3/functions/Function;I)Lio/reactivex/rxjava3/internal/operators/mixed/ObservableConcatMapSingle;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object p1
-
-    .line 65
-    return-object p1
-
-    .line 66
     nop
 
-    .line 67
+    .line 49
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

@@ -1,34 +1,49 @@
-.class public abstract Ljg;
+.class public final Ljg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:I
+# instance fields
+.field public final a:Ljava/util/HashMap;
+
+.field public final b:Ljava/util/HashMap;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
-    sget-object v0, Lkg;->Z:Lkg;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 4
+    new-instance v0, Ljava/util/HashMap;
+
     .line 5
     .line 6
-    const-string v0, "AdCodeActionHandler"
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 7
     .line 8
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
     .line 9
+    iput-object v0, p0, Ljg;->a:Ljava/util/HashMap;
+
     .line 10
     .line 11
+    new-instance v0, Ljava/util/HashMap;
+
+    .line 12
+    .line 13
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    iput-object v0, p0, Ljg;->b:Ljava/util/HashMap;
+
+    .line 17
+    .line 18
     return-void
 .end method

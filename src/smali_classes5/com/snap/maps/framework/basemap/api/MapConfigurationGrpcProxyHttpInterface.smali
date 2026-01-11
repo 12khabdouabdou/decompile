@@ -4,23 +4,20 @@
 
 
 # virtual methods
-.method public abstract fetchMapStyle(Ljava/lang/String;LC9b;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract fetchMapStyle(Ljava/lang/String;Lfnb;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LC9b;
-        .annotation runtime Ljv1;
+    .param p2    # Lfnb;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -30,15 +27,18 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LC9b;",
+            "Lfnb;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;)",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LH9b;",
+            "Ljnf<",
+            "Lknb;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

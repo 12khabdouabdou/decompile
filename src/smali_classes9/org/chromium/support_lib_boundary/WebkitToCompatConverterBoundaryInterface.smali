@@ -36,3 +36,6 @@
 
 .method public abstract convertWebResourceRequest(Landroid/webkit/WebResourceRequest;)Ljava/lang/reflect/InvocationHandler;
 .end method
+
+.method public abstract convertWebStorage(Ljava/lang/Object;)Ljava/lang/reflect/InvocationHandler;
+.end method

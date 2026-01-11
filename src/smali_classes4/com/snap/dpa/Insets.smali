@@ -1,10 +1,10 @@
 .class public final Lcom/snap/dpa/Insets;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'top\':d@?,\'right\':d@?,\'bottom\':d@?,\'left\':d@?"
     typeReferences = {}

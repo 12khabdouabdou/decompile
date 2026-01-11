@@ -1,277 +1,250 @@
 .class public final LXt6;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'media\':a<r:\'[0]\'>,\'productId\':s?,\'title\':s?,\'subtitle\':s?,\'price\':s?,\'salePrice\':s?,\'percentOff\':d@?,\'productColorHexString\':s?,\'itemOverlays\':a?<r:\'[1]\'>,\'subTitleType\':r?<e>:\'[2]\',\'ratingInfoSubtitle\':r?:\'[3]\'"
-    typeReferences = {
-        LTfb;,
-        LYt6;,
-        Lcom/snap/dpa_api/SubtitleType;,
-        Lcom/snap/ad_common_api/DpaItemRatingInfo;
-    }
-.end annotation
+# interfaces
+.implements Lcom/snap/composer/foundation/Cancelable;
 
 
 # instance fields
-.field private _itemOverlays:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "LYt6;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic a:I
 
-.field private _media:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "LTfb;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private _percentOff:Ljava/lang/Double;
-
-.field private _price:Ljava/lang/String;
-
-.field private _productColorHexString:Ljava/lang/String;
-
-.field private _productId:Ljava/lang/String;
-
-.field private _ratingInfoSubtitle:Lcom/snap/ad_common_api/DpaItemRatingInfo;
-
-.field private _salePrice:Ljava/lang/String;
-
-.field private _subTitleType:Lcom/snap/dpa_api/SubtitleType;
-
-.field private _subtitle:Ljava/lang/String;
-
-.field private _title:Ljava/lang/String;
+.field public b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/ArrayList;)V
-    .locals 0
+.method public synthetic constructor <init>()V
+    .locals 1
 
     .line 1
+    const/4 v0, 0x1
+
+    iput v0, p0, LXt6;->a:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, LXt6;->_media:Ljava/util/List;
-
-    const/4 p1, 0x0
-
-    .line 3
-    iput-object p1, p0, LXt6;->_productId:Ljava/lang/String;
-
-    .line 4
-    iput-object p1, p0, LXt6;->_title:Ljava/lang/String;
-
-    .line 5
-    iput-object p1, p0, LXt6;->_subtitle:Ljava/lang/String;
-
-    .line 6
-    iput-object p1, p0, LXt6;->_price:Ljava/lang/String;
-
-    .line 7
-    iput-object p1, p0, LXt6;->_salePrice:Ljava/lang/String;
-
-    .line 8
-    iput-object p1, p0, LXt6;->_percentOff:Ljava/lang/Double;
-
-    .line 9
-    iput-object p1, p0, LXt6;->_productColorHexString:Ljava/lang/String;
-
-    .line 10
-    iput-object p1, p0, LXt6;->_itemOverlays:Ljava/util/List;
-
-    .line 11
-    iput-object p1, p0, LXt6;->_subTitleType:Lcom/snap/dpa_api/SubtitleType;
-
-    .line 12
-    iput-object p1, p0, LXt6;->_ratingInfoSubtitle:Lcom/snap/ad_common_api/DpaItemRatingInfo;
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Double;Ljava/lang/String;Ljava/util/List;Lcom/snap/dpa_api/SubtitleType;Lcom/snap/ad_common_api/DpaItemRatingInfo;)V
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "LTfb;",
-            ">;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/Double;",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "LYt6;",
-            ">;",
-            "Lcom/snap/dpa_api/SubtitleType;",
-            "Lcom/snap/ad_common_api/DpaItemRatingInfo;",
-            ")V"
-        }
-    .end annotation
 
-    .line 13
+    .line 2
+    iput p1, p0, LXt6;->a:I
+
+    iput-object p2, p0, LXt6;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 14
-    iput-object p1, p0, LXt6;->_media:Ljava/util/List;
-
-    .line 15
-    iput-object p2, p0, LXt6;->_productId:Ljava/lang/String;
-
-    .line 16
-    iput-object p3, p0, LXt6;->_title:Ljava/lang/String;
-
-    .line 17
-    iput-object p4, p0, LXt6;->_subtitle:Ljava/lang/String;
-
-    .line 18
-    iput-object p5, p0, LXt6;->_price:Ljava/lang/String;
-
-    .line 19
-    iput-object p6, p0, LXt6;->_salePrice:Ljava/lang/String;
-
-    .line 20
-    iput-object p7, p0, LXt6;->_percentOff:Ljava/lang/Double;
-
-    .line 21
-    iput-object p8, p0, LXt6;->_productColorHexString:Ljava/lang/String;
-
-    .line 22
-    iput-object p9, p0, LXt6;->_itemOverlays:Ljava/util/List;
-
-    .line 23
-    iput-object p10, p0, LXt6;->_subTitleType:Lcom/snap/dpa_api/SubtitleType;
-
-    .line 24
-    iput-object p11, p0, LXt6;->_ratingInfoSubtitle:Lcom/snap/ad_common_api/DpaItemRatingInfo;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lcom/snap/ad_common_api/DpaItemRatingInfo;
+.method public final cancel()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LXt6;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, LXt6;->b:Ljava/lang/Object;
+
+    .line 7
+    .line 8
+    check-cast v0, LLQd;
+
+    .line 9
+    .line 10
+    :try_start_0
+    iget-object v1, v0, LLQd;->a:LlK1;
+
+    .line 11
+    .line 12
+    invoke-interface {v1}, LlK1;->pause()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 13
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :catch_0
+    iget-object v0, v0, LLQd;->X:LJp0;
+
+    .line 17
+    .line 18
+    :goto_0
+    return-void
+
+    .line 19
+    :pswitch_0
+    iget-object v0, p0, LXt6;->b:Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    check-cast v0, Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 22
+    .line 23
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
+
+    .line 27
+    :pswitch_1
+    iget-object v0, p0, LXt6;->b:Ljava/lang/Object;
+
+    .line 28
+    .line 29
+    check-cast v0, Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 30
+    .line 31
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 32
+    .line 33
+    .line 34
+    return-void
+
+    .line 35
+    :pswitch_2
+    iget-object v0, p0, LXt6;->b:Ljava/lang/Object;
+
+    .line 36
+    .line 37
+    check-cast v0, Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 38
+    .line 39
+    if-eqz v0, :cond_0
+
+    .line 40
+    .line 41
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 42
+    .line 43
+    .line 44
+    :cond_0
+    return-void
+
+    .line 45
+    :pswitch_3
+    iget-object v0, p0, LXt6;->b:Ljava/lang/Object;
+
+    .line 46
+    .line 47
+    check-cast v0, Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 48
+    .line 49
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 50
+    .line 51
+    .line 52
+    return-void
+
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
     .locals 1
 
     .line 1
-    iget-object v0, p0, LXt6;->_ratingInfoSubtitle:Lcom/snap/ad_common_api/DpaItemRatingInfo;
+    iget v0, p0, LXt6;->a:I
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    packed-switch v0, :pswitch_data_0
 
-.method public final b(Ljava/util/ArrayList;)V
-    .locals 0
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0, p1}, LeBk;->n(Lcom/snap/composer/foundation/Cancelable;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
-    .line 1
-    iput-object p1, p0, LXt6;->_itemOverlays:Ljava/util/List;
+    .line 7
+    .line 8
+    .line 9
+    move-result p1
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 10
+    return p1
 
-.method public final c(Ljava/lang/Double;)V
-    .locals 0
+    .line 11
+    :pswitch_0
+    invoke-static {p0, p1}, LeBk;->n(Lcom/snap/composer/foundation/Cancelable;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
-    .line 1
-    iput-object p1, p0, LXt6;->_percentOff:Ljava/lang/Double;
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 15
+    return p1
 
-.method public final d(Ljava/lang/String;)V
-    .locals 0
+    .line 16
+    :pswitch_1
+    invoke-static {p0, p1}, LeBk;->n(Lcom/snap/composer/foundation/Cancelable;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
-    .line 1
-    iput-object p1, p0, LXt6;->_price:Ljava/lang/String;
+    .line 17
+    .line 18
+    .line 19
+    move-result p1
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 20
+    return p1
 
-.method public final e(Ljava/lang/String;)V
-    .locals 0
+    .line 21
+    :pswitch_2
+    invoke-static {p0, p1}, LeBk;->n(Lcom/snap/composer/foundation/Cancelable;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
-    .line 1
-    iput-object p1, p0, LXt6;->_productId:Ljava/lang/String;
+    .line 22
+    .line 23
+    .line 24
+    move-result p1
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 25
+    return p1
 
-.method public final f(Lcom/snap/ad_common_api/DpaItemRatingInfo;)V
-    .locals 0
+    .line 26
+    :pswitch_3
+    invoke-static {p0, p1}, LeBk;->n(Lcom/snap/composer/foundation/Cancelable;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
-    .line 1
-    iput-object p1, p0, LXt6;->_ratingInfoSubtitle:Lcom/snap/ad_common_api/DpaItemRatingInfo;
+    .line 27
+    .line 28
+    .line 29
+    move-result p1
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 30
+    return p1
 
-.method public final g(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LXt6;->_salePrice:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final h(Lcom/snap/dpa_api/SubtitleType;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LXt6;->_subTitleType:Lcom/snap/dpa_api/SubtitleType;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final i(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LXt6;->_subtitle:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final j(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LXt6;->_title:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
+    .line 31
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

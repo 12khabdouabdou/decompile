@@ -12,14 +12,14 @@
 
 
 # virtual methods
-.method public abstract fetchCollection(LgP9;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract fetchCollection(LP0a;)Lio/reactivex/rxjava3/core/Single;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LgP9;",
+            "LP0a;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LiP9;",
+            "LR0a;",
             ">;"
         }
     .end annotation

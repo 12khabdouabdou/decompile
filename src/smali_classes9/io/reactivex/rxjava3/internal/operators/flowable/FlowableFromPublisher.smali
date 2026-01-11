@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field public final b:LZne;
+.field public final b:LSFe;
 
 
 # direct methods
-.method public constructor <init>(LZne;)V
+.method public constructor <init>(LSFe;)V
     .locals 0
 
     .line 1
@@ -29,7 +29,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromPublisher;->b:LZne;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromPublisher;->b:LSFe;
 
     .line 5
     .line 6
@@ -38,15 +38,15 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromPublisher;->b:LZne;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFromPublisher;->b:LSFe;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v0, p1}, LSFe;->subscribe(Lmvi;)V
 
     .line 4
     .line 5

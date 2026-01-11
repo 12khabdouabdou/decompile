@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LYEj;
+    proxyClass = Ls4k;
     schema = "\'isPaused\':b,\'isFrozen\':b,\'sinkId\':s?,\'frameSize\':r?<e>:\'[0]\'"
     typeReferences = {
         Lcom/snap/talkcore/FrameSize;

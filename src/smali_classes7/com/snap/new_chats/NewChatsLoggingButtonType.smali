@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'START_CHAT_BUTTON\':1,\'NEW_GROUP_BUTTON\':2,\'START_CALL_BUTTON\':3,\'START_GROUP_CALL_BUTTON\':4"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

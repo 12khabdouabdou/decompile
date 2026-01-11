@@ -1,120 +1,115 @@
-.class public final Lq83;
-.super Ljava/lang/Object;
+.class public final enum Lq83;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements LqVf;
 
 
-# instance fields
-.field public final synthetic a:I
+# static fields
+.field public static final enum a:Lq83;
 
-.field public final synthetic b:Lt83;
+.field public static final synthetic b:[Lq83;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lt83;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    iput p2, p0, Lq83;->a:I
+    const/4 v0, 0x0
 
-    iput-object p1, p0, Lq83;->b:Lt83;
+    .line 2
+    new-instance v1, Lq83;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 3
+    .line 4
+    const-string v2, "UNKNOWN"
 
+    .line 5
+    .line 6
+    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v1, Lq83;->a:Lq83;
+
+    .line 10
+    .line 11
+    const/4 v2, 0x1
+
+    .line 12
+    new-array v2, v2, [Lq83;
+
+    .line 13
+    .line 14
+    aput-object v1, v2, v0
+
+    .line 15
+    .line 16
+    sput-object v2, Lq83;->b:[Lq83;
+
+    .line 17
+    .line 18
     return-void
 .end method
 
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public static valueOf(Ljava/lang/String;)Lq83;
     .locals 1
 
     .line 1
-    iget v0, p0, Lq83;->a:I
+    const-class v0, Lq83;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    move-result-object p0
 
     .line 7
+    check-cast p0, Lq83;
+
     .line 8
-    iget-object p1, p0, Lq83;->b:Lt83;
-
     .line 9
-    .line 10
-    iget-object v0, p1, Lt83;->f:Lrn0;
+    return-object p0
+.end method
 
-    .line 11
-    .line 12
-    sget-object v0, Lu83;->h0:Lu83;
+.method public static values()[Lq83;
+    .locals 1
 
-    .line 13
-    .line 14
-    iget-object p1, p1, Lt83;->c:Lmt1;
+    .line 1
+    sget-object v0, Lq83;->b:[Lq83;
 
-    .line 15
-    .line 16
-    iget-object p1, p1, Lmt1;->b:Ljava/lang/Object;
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 17
-    .line 18
-    check-cast p1, LaA8;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 19
-    .line 20
-    invoke-static {p1, v0}, LYz8;->d(LaA8;LcTb;)V
+    .line 7
+    check-cast v0, [Lq83;
 
-    .line 21
-    .line 22
-    .line 23
-    return-void
+    .line 8
+    .line 9
+    return-object v0
+.end method
 
-    .line 24
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
 
-    .line 25
-    .line 26
-    iget-object p1, p0, Lq83;->b:Lt83;
+# virtual methods
+.method public final a()Lym9;
+    .locals 1
 
-    .line 27
-    .line 28
-    iget-object p1, p1, Lt83;->f:Lrn0;
+    .line 1
+    sget-object v0, Lym9;->a:Lym9;
 
-    .line 29
-    .line 30
-    return-void
-
-    .line 31
-    :pswitch_1
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 32
-    .line 33
-    iget-object p1, p0, Lq83;->b:Lt83;
-
-    .line 34
-    .line 35
-    iget-object p1, p1, Lt83;->f:Lrn0;
-
-    .line 36
-    .line 37
-    return-void
-
-    .line 38
-    nop
-
-    .line 39
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    .line 3
+    return-object v0
 .end method

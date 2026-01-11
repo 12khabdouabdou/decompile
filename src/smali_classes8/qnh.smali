@@ -1,153 +1,156 @@
-.class public final Lqnh;
+.class public abstract synthetic Lqnh;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lmf5;
 
-
-# instance fields
-.field public final a:LQf5;
-
-.field public final b:LJ7d;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(LQf5;LJ7d;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v0, 0xe
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lqnh;->a:LQf5;
+    invoke-static {v0}, LzHa;->M(I)[I
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lqnh;->b:LJ7d;
+    move-result-object v0
 
     .line 7
+    array-length v0, v0
+
     .line 8
-    sget-object p1, LFkh;->Z:LFkh;
+    new-array v0, v0, [I
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v1, 0x1
 
     .line 11
+    const/16 v2, 0x9
+
     .line 12
     .line 13
-    const-string p1, "SpotlightQuickPostActionSheetDeepLinkHandler"
+    :try_start_0
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 14
     .line 15
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    :catch_0
+    const/4 v3, 0x2
 
     .line 16
+    const/16 v4, 0xa
+
     .line 17
     .line 18
+    :try_start_1
+    aput v3, v0, v4
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 19
+    .line 20
+    :catch_1
+    const/4 v3, 0x3
+
+    .line 21
+    :try_start_2
+    aput v3, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 22
+    .line 23
+    :catch_2
+    const/4 v1, 0x4
+
+    .line 24
+    :try_start_3
+    aput v1, v0, v3
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 25
+    .line 26
+    :catch_3
+    const/4 v3, 0x5
+
+    .line 27
+    :try_start_4
+    aput v3, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 28
+    .line 29
+    :catch_4
+    const/4 v1, 0x6
+
+    .line 30
+    :try_start_5
+    aput v1, v0, v3
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 31
+    .line 32
+    :catch_5
+    const/4 v3, 0x7
+
+    .line 33
+    :try_start_6
+    aput v3, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 34
+    .line 35
+    :catch_6
+    const/16 v1, 0x8
+
+    .line 36
+    .line 37
+    :try_start_7
+    aput v1, v0, v3
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    .line 38
+    .line 39
+    :catch_7
+    :try_start_8
+    aput v2, v0, v1
+    :try_end_8
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+
+    .line 40
+    .line 41
+    :catch_8
+    const/16 v1, 0xb
+
+    .line 42
+    .line 43
+    :try_start_9
+    aput v4, v0, v1
+    :try_end_9
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+
+    .line 44
+    .line 45
+    :catch_9
+    sput-object v0, Lqnh;->a:[I
+
+    .line 46
+    .line 47
     return-void
-.end method
-
-
-# virtual methods
-.method public final E(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
-.end method
-
-.method public final F(Landroid/net/Uri;ZLBf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p3}, Lqnh;->l(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final e(Landroid/net/Uri;LBf5;Lrf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, Lqnh;->l(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final l(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
-
-    .line 1
-    new-instance p1, Lb7h;
-
-    .line 2
-    .line 3
-    const/16 p2, 0xe
-
-    .line 4
-    .line 5
-    invoke-direct {p1, p2, p0}, Lb7h;-><init>(ILjava/lang/Object;)V
-
-    .line 6
-    .line 7
-    .line 8
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 9
-    .line 10
-    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-object p2
-.end method
-
-.method public final s(Landroid/net/Uri;Z)Lsga;
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
-.end method
-
-.method public final t(Landroid/net/Uri;)Lsga;
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
-.end method
-
-.method public final x(Landroid/net/Uri;)Lsga;
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
 .end method

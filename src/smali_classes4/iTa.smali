@@ -1,138 +1,110 @@
-.class public final LiTa;
+.class public abstract synthetic LiTa;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LQ9;
 
+# static fields
+.field public static final synthetic a:[I
 
-# instance fields
-.field public final a:Ltf6;
-
-.field public final b:LCP5;
-
-.field public final c:LB73;
-
-.field public final d:Z
+.field public static final synthetic b:[I
 
 
 # direct methods
-.method public constructor <init>(Ltf6;LCP5;LB73;Z)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LiTa;->a:Ltf6;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LiTa;->b:LCP5;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LiTa;->c:LB73;
-
-    .line 9
-    .line 10
-    iput-boolean p4, p0, LiTa;->d:Z
-
-    .line 11
-    .line 12
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()LS9;
+.method static constructor <clinit>()V
     .locals 4
 
     .line 1
-    new-instance v0, LGY3;
+    const/4 v0, 0x2
 
     .line 2
-    .line 3
-    iget-object v1, p0, LiTa;->a:Ltf6;
+    invoke-static {v0}, LzHa;->M(I)[I
 
+    .line 3
     .line 4
     .line 5
-    iget-object v2, p0, LiTa;->b:LCP5;
+    move-result-object v1
 
     .line 6
+    array-length v1, v1
+
     .line 7
-    const/4 v3, 0x1
+    new-array v1, v1, [I
 
     .line 8
-    invoke-direct {v0, v1, v3, v2}, LGY3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 9
+    const/4 v2, 0x1
+
     .line 10
+    :try_start_0
+    aput v2, v1, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 11
-    return-object v0
-.end method
-
-.method public final b()Ljava/util/List;
-    .locals 2
-
-    .line 1
-    new-instance v0, LmTa;
-
-    .line 2
-    .line 3
-    iget-boolean v1, p0, LiTa;->d:Z
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, LmTa;-><init>(Z)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
     .line 12
-    return-object v0
-.end method
+    :catch_0
+    sput-object v1, LiTa;->a:[I
 
-.method public final c()Ljava/util/Set;
-    .locals 1
+    .line 13
+    .line 14
+    invoke-static {}, LjYa;->values()[LjYa;
 
-    .line 1
-    const-class v0, LD9;
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v1
 
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+    .line 18
+    array-length v1, v1
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 19
+    new-array v1, v1, [I
 
-    .line 7
-    return-object v0
-.end method
+    .line 20
+    .line 21
+    :try_start_1
+    sget-object v3, LjYa;->Z:LjYa;
 
-.method public final d()LE9;
-    .locals 1
+    .line 22
+    .line 23
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
-    .line 1
-    new-instance v0, LRh6;
+    .line 24
+    .line 25
+    .line 26
+    move-result v3
 
-    .line 2
-    .line 3
-    invoke-direct {v0, p0}, LRh6;-><init>(LiTa;)V
+    .line 27
+    aput v2, v1, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
+    .line 28
+    .line 29
+    :catch_1
+    :try_start_2
+    sget-object v2, LjYa;->e0:LjYa;
+
+    .line 30
+    .line 31
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v2
+
+    .line 35
+    aput v0, v1, v2
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 36
+    .line 37
+    :catch_2
+    sput-object v1, LiTa;->b:[I
+
+    .line 38
+    .line 39
+    return-void
 .end method

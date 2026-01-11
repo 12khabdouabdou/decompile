@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LCpi;
+    proxyClass = LsOi;
     schema = "\'didDismiss\':f|m|(),\'didSelectTemplate\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/templates/core/composer/Template;

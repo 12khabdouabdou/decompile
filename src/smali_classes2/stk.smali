@@ -2,112 +2,365 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
 
+# instance fields
+.field public final a:LXuk;
 
-# static fields
-.field public static final a:Lstk;
+.field public final b:Ljava/lang/String;
+
+.field public final c:LKIf;
+
+.field public final d:Ljtk;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Landroid/content/Context;LXuk;LKIf;)V
+    .locals 7
 
     .line 1
-    new-instance v0, Lstk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    iput-object v0, p0, Lstk;->b:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    iput-object p2, p0, Lstk;->a:LXuk;
+
+    .line 11
+    .line 12
+    iput-object p3, p0, Lstk;->c:LKIf;
+
+    .line 13
+    .line 14
+    sget-object p3, Lotk;->a:LXuk;
+
+    .line 15
+    .line 16
+    const-string p3, "com.android.vending"
+
+    .line 17
+    .line 18
+    const/4 v0, 0x0
+
+    .line 19
+    :try_start_0
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v1
+
+    .line 23
+    invoke-virtual {v1, p3, v0}, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v1
+
+    .line 27
+    iget-boolean v1, v1, Landroid/content/pm/ApplicationInfo;->enabled:Z
+
+    .line 28
+    .line 29
+    if-eqz v1, :cond_0
+
+    .line 30
+    .line 31
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v1
+
+    .line 35
+    const/16 v2, 0x40
+
+    .line 36
+    .line 37
+    invoke-virtual {v1, p3, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p3
+
+    .line 41
+    iget-object p3, p3, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 42
+    .line 43
+    invoke-static {p3}, Lotk;->a([Landroid/content/pm/Signature;)Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result p3
+
+    .line 47
+    if-eqz p3, :cond_0
+
+    .line 48
+    .line 49
+    new-instance v1, Ljtk;
+
+    .line 50
+    .line 51
+    sget-object v5, Lvtk;->a:Landroid/content/Intent;
+
+    .line 52
+    .line 53
+    sget-object v6, LfQi;->f0:LfQi;
+
+    .line 54
+    .line 55
+    const-string v4, "IntegrityService"
+
+    .line 56
+    .line 57
+    move-object v2, p1
+
+    .line 58
+    move-object v3, p2
+
+    .line 59
+    invoke-direct/range {v1 .. v6}, Ljtk;-><init>(Landroid/content/Context;LXuk;Ljava/lang/String;Landroid/content/Intent;LDwk;)V
+
+    .line 60
+    .line 61
+    .line 62
+    iput-object v1, p0, Lstk;->d:Ljtk;
+
+    .line 63
+    .line 64
+    return-void
+
+    .line 65
+    :catch_0
+    :cond_0
+    move-object v3, p2
+
+    .line 66
+    new-array p1, v0, [Ljava/lang/Object;
+
+    .line 67
+    .line 68
+    const/4 p2, 0x6
+
+    .line 69
+    const-string p3, "PlayCore"
+
+    .line 70
+    .line 71
+    invoke-static {p3, p2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    .line 72
+    .line 73
+    .line 74
+    move-result p2
+
+    .line 75
+    if-eqz p2, :cond_1
+
+    .line 76
+    .line 77
+    iget-object p2, v3, LXuk;->a:Ljava/lang/String;
+
+    .line 78
+    .line 79
+    const-string p3, "Phonesky is not installed."
+
+    .line 80
+    .line 81
+    invoke-static {p2, p3, p1}, LXuk;->c(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 82
+    .line 83
+    .line 84
+    goto :goto_0
+
+    .line 85
+    :cond_1
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 86
+    .line 87
+    .line 88
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 89
+    iput-object p1, p0, Lstk;->d:Ljtk;
+
+    .line 90
+    .line 91
+    return-void
+.end method
+
+.method public static a(Lstk;[BLjava/lang/Long;)Landroid/os/Bundle;
+    .locals 3
+
+    .line 1
+    new-instance v0, Landroid/os/Bundle;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lstk;->a:Lstk;
+    const-string v1, "package.name"
 
     .line 7
     .line 8
-    new-instance v0, LFhk;
+    iget-object p0, p0, Lstk;->b:Ljava/lang/String;
 
     .line 9
     .line 10
-    const/4 v1, 0x1
+    invoke-virtual {v0, v1, p0}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
     .line 12
     .line 13
+    const-string p0, "nonce"
+
     .line 14
-    const-class v1, LUhk;
-
     .line 15
-    .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    invoke-virtual {v0, p0, p1}, Landroid/os/Bundle;->putByteArray(Ljava/lang/String;[B)V
 
+    .line 16
     .line 17
     .line 18
-    .line 19
-    move-result-object v0
+    const-string p0, "playcore.integrity.version.major"
 
+    .line 19
     .line 20
-    const/4 v2, 0x2
+    const/4 p1, 0x1
 
     .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
+    invoke-virtual {v0, p0, p1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    const-string p0, "playcore.integrity.version.minor"
 
     .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
     .line 26
+    const/4 p1, 0x3
+
     .line 27
+    invoke-virtual {v0, p0, p1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
     .line 28
-    move-result-object v0
-
     .line 29
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
     .line 30
+    const-string p0, "playcore.integrity.version.patch"
+
     .line 31
     .line 32
-    return-void
-.end method
+    const/4 v1, 0x0
 
+    .line 33
+    invoke-virtual {v0, p0, v1}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
 
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+    .line 34
+    .line 35
+    .line 36
+    if-eqz p2, :cond_0
 
-    .line 1
-    if-nez p1, :cond_0
+    .line 37
+    .line 38
+    const-string p0, "cloud.prj"
 
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
+    .line 39
+    .line 40
+    invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
-    .line 4
-    .line 5
-    const/4 p1, 0x0
+    .line 41
+    .line 42
+    .line 43
+    move-result-wide v1
 
-    .line 6
-    throw p1
+    .line 44
+    invoke-virtual {v0, p0, v1, v2}, Landroid/os/BaseBundle;->putLong(Ljava/lang/String;J)V
 
-    .line 7
+    .line 45
+    .line 46
+    .line 47
     :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
+    new-instance p0, Ljava/util/ArrayList;
 
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    .line 48
+    .line 49
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+    .line 50
+    .line 51
+    .line 52
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-wide v1
+
+    .line 56
+    new-instance p2, Lhuk;
+
+    .line 57
+    .line 58
+    invoke-direct {p2, p1, v1, v2}, Lhuk;-><init>(IJ)V
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {p0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    new-instance p1, Ljava/util/ArrayList;
+
+    .line 65
+    .line 66
+    invoke-static {p0}, LtVk;->a(Ljava/util/ArrayList;)Ljava/util/ArrayList;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p0
+
+    .line 70
+    invoke-direct {p1, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    .line 71
+    .line 72
+    .line 73
+    const-string p0, "event_timestamps"
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, p0, p1}, Landroid/os/Bundle;->putParcelableArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    .line 76
+    .line 77
+    .line 78
+    return-object v0
 .end method

@@ -59,14 +59,14 @@
 
     .line 4
     .line 5
-    iget-object v1, v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoOnEvent;->b:Lne;
+    iget-object v1, v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoOnEvent;->b:Ldf;
 
     .line 6
     .line 7
     const/4 v2, 0x0
 
     .line 8
-    invoke-virtual {v1, v2}, Lne;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v1, v2}, Ldf;->accept(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -107,11 +107,11 @@
 
     .line 2
     .line 3
-    iget-object v0, v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoOnEvent;->b:Lne;
+    iget-object v0, v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoOnEvent;->b:Ldf;
 
     .line 4
     .line 5
-    invoke-virtual {v0, p1}, Lne;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, Ldf;->accept(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

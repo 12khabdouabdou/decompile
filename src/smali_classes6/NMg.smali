@@ -1,107 +1,90 @@
 .class public final LNMg;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snapchat/client/messaging/SnapInteractionCallback;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'subscriptionManager\':r:\'[0]\',\'onTap\':f?(),\'onTapStory\':f?(r?:\'[1]\')"
-    typeReferences = {
-        Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;,
-        Lcom/snap/composer/nodes/IComposerViewNode;
-    }
-.end annotation
-
-
 # instance fields
-.field private _onTap:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
+.field public final a:Lio/reactivex/rxjava3/core/SingleEmitter;
 
-.field private _onTapStory:Lkotlin/jvm/functions/Function1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function1;"
-        }
-    .end annotation
-.end field
-
-.field private _subscriptionManager:Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;
+.field public final b:LTB0;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;LTB0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/snapchat/client/messaging/SnapInteractionCallback;-><init>()V
 
     .line 2
-    iput-object p1, p0, LNMg;->_subscriptionManager:Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;
-
-    const/4 p1, 0x0
-
     .line 3
-    iput-object p1, p0, LNMg;->_onTap:Lkotlin/jvm/functions/Function0;
-
     .line 4
-    iput-object p1, p0, LNMg;->_onTapStory:Lkotlin/jvm/functions/Function1;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function1;",
-            ")V"
-        }
-    .end annotation
+    iput-object p1, p0, LNMg;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
 
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    iput-object p1, p0, LNMg;->_subscriptionManager:Lcom/snap/impala/publicprofile/IPublicProfileSubscriptionManager;
+    iput-object p2, p0, LNMg;->b:LTB0;
 
     .line 7
-    iput-object p2, p0, LNMg;->_onTap:Lkotlin/jvm/functions/Function0;
-
     .line 8
-    iput-object p3, p0, LNMg;->_onTapStory:Lkotlin/jvm/functions/Function1;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lkotlin/jvm/functions/Function0;)V
-    .locals 0
+.method public final onError(Lcom/snapchat/client/messaging/CallbackStatus;)V
+    .locals 2
 
     .line 1
-    iput-object p1, p0, LNMg;->_onTap:Lkotlin/jvm/functions/Function0;
+    new-instance v0, LSa0;
 
     .line 2
     .line 3
+    iget-object v1, p0, LNMg;->b:LTB0;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1, p1}, LTB0;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    check-cast v1, Ljava/lang/String;
+
+    .line 10
+    .line 11
+    invoke-direct {v0, p1, v1}, LSa0;-><init>(Lcom/snapchat/client/messaging/CallbackStatus;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object p1, p0, LNMg;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+
+    .line 15
+    .line 16
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->f(Ljava/lang/Throwable;)Z
+
+    .line 17
+    .line 18
+    .line 19
     return-void
 .end method
 
-.method public final b(LxIg;)V
-    .locals 0
+.method public final onSuccess(Ljava/util/ArrayList;)V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, LNMg;->_onTapStory:Lkotlin/jvm/functions/Function1;
+    iget-object v0, p0, LNMg;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
 
     .line 2
     .line 3
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

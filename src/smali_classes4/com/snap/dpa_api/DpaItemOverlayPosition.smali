@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'UNKNOWN_OVERLAY_POSITION\':0,\'BOTTOM_MIDDLE\':1,\'BOTTOM_LEFT\':2,\'BOTTOM_RIGHT\':3,\'CENTER\':4,\'TOP_MIDDLE\':5,\'TOP_LEFT\':6,\'TOP_RIGHT\':7"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

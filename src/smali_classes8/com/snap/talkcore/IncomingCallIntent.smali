@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talkcore/IncomingCallIntent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'payload\':s,\'senderUserId\':s"
     typeReferences = {}

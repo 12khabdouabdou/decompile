@@ -39,7 +39,7 @@
 
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -67,25 +67,25 @@
 
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
     .line 1
     :try_start_0
-    new-instance v0, Lqa3;
+    new-instance v0, LZc3;
 
-    invoke-direct {v0, p1, p2, p3}, Lqa3;-><init>([BII)V
+    invoke-direct {v0, p1, p2, p3}, LZc3;-><init>([BII)V
 
     .line 2
-    invoke-virtual {p0, v0}, Lcom/google/protobuf/nano/MessageNano;->mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+    invoke-virtual {p0, v0}, Lcom/google/protobuf/nano/MessageNano;->mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
 
     const/4 p1, 0x0
 
     .line 3
-    invoke-virtual {v0, p1}, Lqa3;->a(I)V
+    invoke-virtual {v0, p1}, LZc3;->a(I)V
     :try_end_0
-    .catch LYq9; {:try_start_0 .. :try_end_0} :catch_0
+    .catch LYz9; {:try_start_0 .. :try_end_0} :catch_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
     return-object p0
@@ -227,15 +227,15 @@
 
     .line 3
     :try_start_0
-    invoke-static {p2, p3, p1}, Lsa3;->x(II[B)Lsa3;
+    invoke-static {p2, p3, p1}, Lbd3;->x(II[B)Lbd3;
 
     move-result-object p1
 
     .line 4
-    invoke-virtual {p0, p1}, Lcom/google/protobuf/nano/MessageNano;->writeTo(Lsa3;)V
+    invoke-virtual {p0, p1}, Lcom/google/protobuf/nano/MessageNano;->writeTo(Lbd3;)V
 
     .line 5
-    iget-object p0, p1, Lsa3;->a:Ljava/nio/ByteBuffer;
+    iget-object p0, p1, Lbd3;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0}, Ljava/nio/Buffer;->remaining()I
 
@@ -376,7 +376,7 @@
     return v0
 .end method
 
-.method public abstract mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public abstract mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -385,138 +385,21 @@
 .end method
 
 .method public toString()Ljava/lang/String;
-    .locals 4
+    .locals 1
 
     .line 1
-    const-string v0, "Error printing proto: "
+    invoke-static {p0}, LuTk;->j(Lcom/google/protobuf/nano/MessageNano;)Ljava/lang/String;
 
     .line 2
     .line 3
-    new-instance v1, Ljava/lang/StringBuffer;
-
     .line 4
+    move-result-object v0
+
     .line 5
-    invoke-direct {v1}, Ljava/lang/StringBuffer;-><init>()V
-
-    .line 6
-    .line 7
-    .line 8
-    :try_start_0
-    new-instance v2, Ljava/lang/StringBuffer;
-
-    .line 9
-    .line 10
-    invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
-
-    .line 11
-    .line 12
-    .line 13
-    const/4 v3, 0x0
-
-    .line 14
-    invoke-static {v3, p0, v2, v1}, Ldw8;->L(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/lang/StringBuffer;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 15
-    .line 16
-    .line 17
-    invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    return-object v0
-
-    .line 22
-    :catch_0
-    move-exception v1
-
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :catch_1
-    move-exception v1
-
-    .line 25
-    goto :goto_1
-
-    .line 26
-    :goto_0
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 27
-    .line 28
-    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v0
-
-    .line 35
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v0
-
-    .line 42
-    goto :goto_2
-
-    .line 43
-    :goto_1
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 44
-    .line 45
-    invoke-direct {v2, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object v0
-
-    .line 59
-    :goto_2
     return-object v0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

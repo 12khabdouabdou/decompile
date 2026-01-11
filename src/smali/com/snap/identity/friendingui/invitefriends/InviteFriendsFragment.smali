@@ -3,44 +3,54 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lhs9;
-.implements LnP3;
+.implements LhB9;
+.implements LcT3;
 
 
 # static fields
-.field public static final synthetic N0:I
+.field public static final synthetic S0:I
 
 
 # instance fields
-.field public A0:LcYg;
+.field public A0:LPjh;
 
-.field public B0:Lps9;
+.field public B0:LpB9;
 
-.field public final C0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public C0:LT21;
 
-.field public D0:Landroidx/recyclerview/widget/RecyclerView;
+.field public D0:LOF3;
 
-.field public E0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
+.field public E0:LyPf;
 
-.field public F0:Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment$onFragmentCreateView$2;
+.field public final F0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public G0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+.field public G0:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public H0:Lcom/snap/component/input/SnapSearchInputView;
+.field public H0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
 
-.field public I0:Landroid/view/View;
+.field public I0:Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment$onFragmentCreateView$2;
 
-.field public J0:LmP3;
+.field public J0:Lcom/snap/component/header/SnapSubscreenHeaderView;
 
-.field public final K0:LXfi;
+.field public K0:Lcom/snap/component/input/SnapSearchInputView;
 
-.field public final L0:LXfi;
+.field public L0:Landroid/view/View;
 
-.field public final M0:LlL7;
+.field public M0:LbT3;
 
-.field public y0:LjJ4;
+.field public N0:LR21;
 
-.field public z0:LPm9;
+.field public O0:LnJe;
+
+.field public final P0:LREi;
+
+.field public final Q0:LREi;
+
+.field public final R0:LZQ7;
+
+.field public y0:LsO4;
+
+.field public z0:LIv9;
 
 
 # direct methods
@@ -66,65 +76,65 @@
     .line 9
     .line 10
     .line 11
-    iput-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->C0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->F0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 12
     .line 13
-    new-instance v0, Les9;
+    new-instance v0, LeB9;
 
     .line 14
     .line 15
     const/4 v1, 0x0
 
     .line 16
-    invoke-direct {v0, p0, v1}, Les9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
+    invoke-direct {v0, p0, v1}, LeB9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
 
     .line 17
     .line 18
     .line 19
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 20
     .line 21
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 22
     .line 23
     .line 24
-    iput-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->K0:LXfi;
+    iput-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->P0:LREi;
 
     .line 25
     .line 26
-    new-instance v0, Les9;
+    new-instance v0, LeB9;
 
     .line 27
     .line 28
     const/4 v1, 0x1
 
     .line 29
-    invoke-direct {v0, p0, v1}, Les9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
+    invoke-direct {v0, p0, v1}, LeB9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
 
     .line 30
     .line 31
     .line 32
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 33
     .line 34
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 35
     .line 36
     .line 37
-    iput-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->L0:LXfi;
+    iput-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->Q0:LREi;
 
     .line 38
     .line 39
-    sget-object v0, LlL7;->V0:LlL7;
+    sget-object v0, LZQ7;->V0:LZQ7;
 
     .line 40
     .line 41
-    iput-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->M0:LlL7;
+    iput-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->R0:LZQ7;
 
     .line 42
     .line 43
@@ -133,11 +143,11 @@
 
 
 # virtual methods
-.method public final C1()V
+.method public final A1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->D0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     .line 3
@@ -158,7 +168,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -169,11 +179,11 @@
     throw v0
 .end method
 
-.method public final E1()V
+.method public final C1()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->B0:Lps9;
+    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->B0:LpB9;
 
     .line 2
     .line 3
@@ -184,12 +194,12 @@
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Lps9;->C1()V
+    invoke-virtual {v0}, LpB9;->D1()V
 
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:LmP3;
+    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->M0:LbT3;
 
     .line 10
     .line 11
@@ -197,7 +207,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0}, LmP3;->C1()V
+    invoke-virtual {v0}, LbT3;->D1()V
 
     .line 14
     .line 15
@@ -210,7 +220,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 20
     .line 21
@@ -223,7 +233,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 26
     .line 27
@@ -231,11 +241,11 @@
     throw v1
 .end method
 
-.method public final H1()V
+.method public final F1()V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->D0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     .line 3
@@ -246,7 +256,7 @@
 
     .line 5
     .line 6
-    iget-object v2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->H0:Lcom/snap/component/input/SnapSearchInputView;
+    iget-object v2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->K0:Lcom/snap/component/input/SnapSearchInputView;
 
     .line 7
     .line 8
@@ -254,19 +264,19 @@
 
     .line 9
     .line 10
-    new-instance v1, Lsm9;
+    new-instance v1, Lgv9;
 
     .line 11
     .line 12
-    const/4 v3, 0x2
+    const/4 v3, 0x3
 
     .line 13
-    invoke-direct {v1, v0, v3, p0}, Lsm9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, v0, v3, p0}, Lgv9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v2, v1}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v2, v1}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 17
     .line 18
@@ -279,7 +289,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -292,7 +302,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -300,11 +310,11 @@
     throw v1
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
 
     .line 1
-    const p3, 0x7f0e0272
+    const p3, 0x7f0e0287
 
     .line 2
     .line 3
@@ -320,7 +330,7 @@
     move-result-object p1
 
     .line 9
-    const p2, 0x7f0b0a58
+    const p2, 0x7f0b0b61
 
     .line 10
     .line 11
@@ -337,11 +347,11 @@
 
     .line 17
     .line 18
-    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->E0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
+    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->H0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
 
     .line 19
     .line 20
-    const p2, 0x7f0b13ec
+    const p2, 0x7f0b1524
 
     .line 21
     .line 22
@@ -358,11 +368,11 @@
 
     .line 28
     .line 29
-    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:Lcom/snap/component/header/SnapSubscreenHeaderView;
 
     .line 30
     .line 31
-    const p2, 0x7f0b182d
+    const p2, 0x7f0b1981
 
     .line 32
     .line 33
@@ -379,11 +389,11 @@
 
     .line 39
     .line 40
-    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->H0:Lcom/snap/component/input/SnapSearchInputView;
+    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->K0:Lcom/snap/component/input/SnapSearchInputView;
 
     .line 41
     .line 42
-    const p2, 0x7f0b124a
+    const p2, 0x7f0b1376
 
     .line 43
     .line 44
@@ -400,25 +410,25 @@
 
     .line 50
     .line 51
-    new-instance p3, Lfs9;
+    new-instance p3, LfB9;
 
     .line 52
     .line 53
-    invoke-direct {p3, p0, v0}, Lfs9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
+    invoke-direct {p3, p0, v0}, LfB9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p2, p3}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p2, p3}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     .line 57
     .line 58
     .line 59
-    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->D0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 60
     .line 61
-    const p2, 0x7f0b11dd
+    const p2, 0x7f0b1303
 
     .line 62
     .line 63
@@ -431,7 +441,7 @@
     move-result-object p2
 
     .line 68
-    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->I0:Landroid/view/View;
+    iput-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->L0:Landroid/view/View;
 
     .line 69
     .line 70
@@ -443,7 +453,7 @@
     move-result-object p2
 
     .line 74
-    iget-object p3, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+    iget-object p3, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:Lcom/snap/component/header/SnapSubscreenHeaderView;
 
     .line 75
     .line 76
@@ -467,11 +477,11 @@
     .line 84
     .line 85
     .line 86
-    iput-object v2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->F0:Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment$onFragmentCreateView$2;
+    iput-object v2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->I0:Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment$onFragmentCreateView$2;
 
     .line 87
     .line 88
-    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->E0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
+    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->H0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
 
     .line 89
     .line 90
@@ -495,7 +505,7 @@
 
     .line 99
     .line 100
-    iget-object v2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->E0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
+    iget-object v2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->H0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
 
     .line 101
     .line 102
@@ -503,7 +513,7 @@
 
     .line 103
     .line 104
-    iget-object p3, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+    iget-object p3, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:Lcom/snap/component/header/SnapSubscreenHeaderView;
 
     .line 105
     .line 106
@@ -532,7 +542,7 @@
 
     .line 118
     :cond_0
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 119
     .line 120
@@ -541,7 +551,7 @@
 
     .line 122
     :cond_1
-    invoke-static {p3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 123
     .line 124
@@ -550,7 +560,7 @@
 
     .line 126
     :cond_2
-    invoke-static {p3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 127
     .line 128
@@ -559,7 +569,7 @@
 
     .line 130
     :cond_3
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 131
     .line 132
@@ -567,8 +577,8 @@
     throw v0
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
-    .locals 4
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
+    .locals 7
 
     .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
@@ -587,398 +597,587 @@
     move-result-object p2
 
     .line 9
-    const v0, 0x7f0405c4
+    new-instance v0, Landroid/util/TypedValue;
 
     .line 10
     .line 11
-    .line 12
-    invoke-static {p2, v0}, LI0j;->s(Landroid/content/res/Resources$Theme;I)Landroid/graphics/drawable/Drawable;
+    invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
+    .line 12
     .line 13
     .line 14
+    const/4 v1, 0x1
+
     .line 15
-    move-result-object p2
+    const v2, 0x7f040677
 
     .line 16
-    const/4 v0, 0x0
-
     .line 17
-    const-string v1, "subscreenHeader"
-
     .line 18
-    .line 19
-    if-eqz p2, :cond_2
+    invoke-virtual {p2, v2, v0, v1}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
+    .line 19
     .line 20
     .line 21
-    invoke-virtual {p1, p2}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
+    move-result p2
 
     .line 22
-    .line 23
-    .line 24
-    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+    const/4 v1, 0x0
 
+    .line 23
+    if-eqz p2, :cond_0
+
+    .line 24
     .line 25
+    goto :goto_0
+
     .line 26
-    if-eqz p2, :cond_1
+    :cond_0
+    move-object v0, v1
 
     .line 27
-    .line 28
-    const/4 v2, 0x0
+    :goto_0
+    if-eqz v0, :cond_1
 
+    .line 28
     .line 29
-    invoke-virtual {p2, v2}, Lcom/snap/component/header/SnapSubscreenHeaderView;->u(I)V
+    iget p2, v0, Landroid/util/TypedValue;->type:I
 
     .line 30
     .line 31
+    const/4 v2, 0x3
+
     .line 32
-    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+    if-ne p2, v2, :cond_1
 
     .line 33
     .line 34
-    if-eqz p2, :cond_0
+    iget-object p2, v0, Landroid/util/TypedValue;->string:Ljava/lang/CharSequence;
 
     .line 35
     .line 36
-    invoke-virtual {p2}, Lcom/snap/component/header/SnapSubscreenHeaderView;->y()V
+    invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 37
     .line 38
     .line 39
-    goto :goto_0
+    move-result-object p2
 
     .line 40
-    :cond_0
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    goto :goto_1
 
     .line 41
-    .line 42
-    .line 43
-    throw v0
-
-    .line 44
     :cond_1
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    move-object p2, v1
+
+    .line 42
+    :goto_1
+    sget-object v0, LUPf;->Z:LUPf;
+
+    .line 43
+    .line 44
+    iget-object v2, p0, LXPf;->a:Ljava/lang/String;
 
     .line 45
     .line 46
-    .line 47
-    throw v0
+    const-string v3, "subscreenHeader"
 
+    .line 47
     .line 48
-    :cond_2
-    :goto_0
-    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+    if-eqz p2, :cond_7
 
     .line 49
     .line 50
-    if-eqz p2, :cond_9
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     .line 51
     .line 52
-    iget-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->D0:Landroidx/recyclerview/widget/RecyclerView;
-
     .line 53
+    move-result v4
+
     .line 54
-    const-string v2, "recyclerView"
+    if-nez v4, :cond_2
 
     .line 55
     .line 56
-    if-eqz v1, :cond_8
+    goto :goto_2
 
     .line 57
+    :cond_2
+    iget-object v4, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:Lcom/snap/component/header/SnapSubscreenHeaderView;
+
     .line 58
-    iget-object v3, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->F0:Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment$onFragmentCreateView$2;
-
     .line 59
-    .line 60
-    if-eqz v3, :cond_7
+    if-eqz v4, :cond_6
 
+    .line 60
     .line 61
+    const/4 v5, 0x0
+
     .line 62
-    invoke-virtual {p2, v1, v3}, Lcom/snap/component/header/SnapSubscreenHeaderView;->E(Landroidx/recyclerview/widget/RecyclerView;Lcom/snap/component/header/SnapSubscreenRecyclerViewBehavior;)V
+    invoke-virtual {v4, v5}, Lcom/snap/component/header/SnapSubscreenHeaderView;->u(I)V
 
     .line 63
     .line 64
     .line 65
-    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->D0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v4, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:Lcom/snap/component/header/SnapSubscreenHeaderView;
 
     .line 66
     .line 67
-    if-eqz p2, :cond_6
+    if-eqz v4, :cond_5
 
     .line 68
     .line 69
-    new-instance v1, Landroidx/recyclerview/widget/LinearLayoutManager;
+    invoke-virtual {v4}, Lcom/snap/component/header/SnapSubscreenHeaderView;->x()V
 
     .line 70
     .line 71
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getActivity()Landroidx/fragment/app/FragmentActivity;
-
     .line 72
+    iget-object v4, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->D0:LOF3;
+
     .line 73
     .line 74
-    invoke-direct {v1}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>()V
+    if-eqz v4, :cond_4
 
     .line 75
     .line 76
-    .line 77
-    invoke-virtual {p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    sget-object v5, LgSd;->Q0:LgSd;
 
+    .line 77
     .line 78
+    invoke-interface {v4, v5}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
     .line 79
     .line 80
-    new-instance v1, Lfs9;
-
     .line 81
+    move-result-object v4
+
     .line 82
-    const/4 v2, 0x1
+    new-instance v5, LAW8;
 
     .line 83
-    invoke-direct {v1, p0, v2}, Lfs9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
-
     .line 84
+    const/16 v6, 0x12
+
     .line 85
     .line 86
-    invoke-virtual {p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-direct {v5, p0, v6, p2}, LAW8;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 87
     .line 88
     .line 89
-    sget-object p2, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 90
     .line 91
-    iget-object v1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->z0:LPm9;
+    invoke-direct {p2, v4, v5}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 92
     .line 93
-    if-eqz v1, :cond_5
-
     .line 94
-    .line 95
-    invoke-interface {v1}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
+    iget-object v4, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->O0:LnJe;
 
+    .line 95
     .line 96
+    if-eqz v4, :cond_3
+
     .line 97
     .line 98
-    move-result-object v1
+    invoke-virtual {v4}, LnJe;->i()Lxp0;
 
     .line 99
-    iget-object v2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->A0:LcYg;
-
     .line 100
     .line 101
-    if-eqz v2, :cond_4
+    move-result-object v4
 
     .line 102
-    .line 103
-    invoke-virtual {v2}, LcYg;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
 
+    .line 103
     .line 104
+    invoke-direct {v5, p2, v4}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
     .line 105
     .line 106
-    move-result-object v2
-
     .line 107
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance p2, Ls38;
 
     .line 108
     .line 109
-    .line 110
-    invoke-static {v1, v2}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
+    const/16 v4, 0x1c
 
+    .line 110
     .line 111
+    invoke-direct {p2, p1, v4, p0}, Ls38;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 112
     .line 113
-    move-result-object p2
-
     .line 114
-    new-instance v1, LSi;
+    invoke-virtual {v5, p2}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 115
     .line 116
-    const/16 v2, 0xc
-
     .line 117
+    move-result-object p2
+
     .line 118
-    invoke-direct {v1, p1, v2}, LSi;-><init>(Landroid/view/View;I)V
+    invoke-virtual {p0, p2, v0, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 119
     .line 120
     .line 121
-    invoke-virtual {p2, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    goto :goto_2
 
     .line 122
+    :cond_3
+    const-string p1, "schedulers"
+
     .line 123
     .line 124
-    move-result-object p1
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 125
-    sget-object p2, LLwf;->Z:LLwf;
-
     .line 126
     .line 127
-    iget-object v1, p0, LOwf;->a:Ljava/lang/String;
+    throw v1
 
     .line 128
-    .line 129
-    invoke-virtual {p0, p1, p2, v1}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    :cond_4
+    const-string p1, "compositeConfigurationProvider"
 
+    .line 129
     .line 130
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 131
     .line 132
-    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->E0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
-
     .line 133
+    throw v1
+
     .line 134
-    if-eqz p1, :cond_3
+    :cond_5
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 135
     .line 136
-    invoke-virtual {p1}, Lcom/snap/component/scrollbar/SnapIndexScrollbar;->C()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-
     .line 137
+    throw v1
+
     .line 138
+    :cond_6
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 139
-    move-result-object p1
-
     .line 140
-    new-instance v0, Lm59;
-
     .line 141
+    throw v1
+
     .line 142
-    const/16 v2, 0xe
+    :cond_7
+    :goto_2
+    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:Lcom/snap/component/header/SnapSubscreenHeaderView;
 
     .line 143
     .line 144
-    invoke-direct {v0, v2, p0}, Lm59;-><init>(ILjava/lang/Object;)V
+    if-eqz p2, :cond_e
 
     .line 145
     .line 146
-    .line 147
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v3, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 147
     .line 148
+    const-string v4, "recyclerView"
+
     .line 149
     .line 150
-    move-result-object p1
+    if-eqz v3, :cond_d
 
     .line 151
-    invoke-virtual {p0, p1, p2, v1}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
     .line 152
+    iget-object v5, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->I0:Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment$onFragmentCreateView$2;
+
     .line 153
     .line 154
-    return-void
+    if-eqz v5, :cond_c
 
     .line 155
-    :cond_3
-    const-string p1, "scrollBar"
-
     .line 156
-    .line 157
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {p2, v3, v5}, Lcom/snap/component/header/SnapSubscreenHeaderView;->E(Landroidx/recyclerview/widget/RecyclerView;Lcom/snap/component/header/SnapSubscreenRecyclerViewBehavior;)V
 
+    .line 157
     .line 158
     .line 159
-    .line 160
-    throw v0
+    iget-object p2, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Landroidx/recyclerview/widget/RecyclerView;
 
+    .line 160
     .line 161
-    :cond_4
-    const-string p1, "keyboardDetector"
+    if-eqz p2, :cond_b
 
     .line 162
     .line 163
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    new-instance v3, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     .line 164
     .line 165
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
     .line 166
-    throw v0
-
     .line 167
-    :cond_5
-    const-string p1, "insetsDetector"
-
     .line 168
-    .line 169
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-direct {v3}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>()V
 
+    .line 169
     .line 170
     .line 171
+    invoke-virtual {p2, v3}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
+
     .line 172
-    throw v0
-
     .line 173
-    :cond_6
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 174
+    new-instance v3, LfB9;
+
     .line 175
     .line 176
-    throw v0
+    const/4 v4, 0x1
 
     .line 177
-    :cond_7
-    const-string p1, "subscreenRecyclerBehavior"
+    invoke-direct {v3, p0, v4}, LfB9;-><init>(Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;I)V
 
     .line 178
     .line 179
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 180
+    invoke-virtual {p2, v3}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
+
     .line 181
     .line 182
-    throw v0
-
     .line 183
-    :cond_8
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    sget-object p2, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
 
     .line 184
     .line 185
-    .line 186
-    throw v0
+    iget-object v3, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->z0:LIv9;
 
+    .line 186
     .line 187
-    :cond_9
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    if-eqz v3, :cond_a
 
     .line 188
     .line 189
+    invoke-interface {v3}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
+
     .line 190
-    throw v0
+    .line 191
+    .line 192
+    move-result-object v3
+
+    .line 193
+    iget-object v4, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->A0:LPjh;
+
+    .line 194
+    .line 195
+    if-eqz v4, :cond_9
+
+    .line 196
+    .line 197
+    invoke-virtual {v4}, LPjh;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 198
+    .line 199
+    .line 200
+    move-result-object v4
+
+    .line 201
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 202
+    .line 203
+    .line 204
+    invoke-static {v3, v4}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 205
+    .line 206
+    .line 207
+    move-result-object p2
+
+    .line 208
+    new-instance v3, LUj;
+
+    .line 209
+    .line 210
+    const/16 v4, 0xd
+
+    .line 211
+    .line 212
+    invoke-direct {v3, p1, v4}, LUj;-><init>(Landroid/view/View;I)V
+
+    .line 213
+    .line 214
+    .line 215
+    invoke-virtual {p2, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 216
+    .line 217
+    .line 218
+    move-result-object p1
+
+    .line 219
+    invoke-virtual {p0, p1, v0, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 220
+    .line 221
+    .line 222
+    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->H0:Lcom/snap/component/scrollbar/SnapIndexScrollbar;
+
+    .line 223
+    .line 224
+    if-eqz p1, :cond_8
+
+    .line 225
+    .line 226
+    invoke-virtual {p1}, Lcom/snap/component/scrollbar/SnapIndexScrollbar;->C()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+
+    .line 227
+    .line 228
+    .line 229
+    move-result-object p1
+
+    .line 230
+    new-instance p2, LGc9;
+
+    .line 231
+    .line 232
+    const/16 v1, 0x12
+
+    .line 233
+    .line 234
+    invoke-direct {p2, v1, p0}, LGc9;-><init>(ILjava/lang/Object;)V
+
+    .line 235
+    .line 236
+    .line 237
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 238
+    .line 239
+    .line 240
+    move-result-object p1
+
+    .line 241
+    invoke-virtual {p0, p1, v0, v2}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 242
+    .line 243
+    .line 244
+    return-void
+
+    .line 245
+    :cond_8
+    const-string p1, "scrollBar"
+
+    .line 246
+    .line 247
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 248
+    .line 249
+    .line 250
+    throw v1
+
+    .line 251
+    :cond_9
+    const-string p1, "keyboardDetector"
+
+    .line 252
+    .line 253
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 254
+    .line 255
+    .line 256
+    throw v1
+
+    .line 257
+    :cond_a
+    const-string p1, "insetsDetector"
+
+    .line 258
+    .line 259
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 260
+    .line 261
+    .line 262
+    throw v1
+
+    .line 263
+    :cond_b
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 264
+    .line 265
+    .line 266
+    throw v1
+
+    .line 267
+    :cond_c
+    const-string p1, "subscreenRecyclerBehavior"
+
+    .line 268
+    .line 269
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 270
+    .line 271
+    .line 272
+    throw v1
+
+    .line 273
+    :cond_d
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 274
+    .line 275
+    .line 276
+    throw v1
+
+    .line 277
+    :cond_e
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 278
+    .line 279
+    .line 280
+    throw v1
 .end method
 
-.method public final K()Lio/reactivex/rxjava3/core/Observable;
+.method public final J()Lio/reactivex/rxjava3/core/Observable;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->C0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->F0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final M()LlL7;
+.method public final K()LZQ7;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->M0:LlL7;
+    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->R0:LZQ7;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final V1(LKu;)Ljava/lang/String;
+.method public final V1(Lsw;)Ljava/lang/String;
     .locals 1
 
     .line 1
-    instance-of v0, p1, LYcg;
+    instance-of v0, p1, LVxg;
 
     .line 2
     .line 3
@@ -986,11 +1185,11 @@
 
     .line 4
     .line 5
-    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->L0:LXfi;
+    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->Q0:LREi;
 
     .line 6
     .line 7
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -1006,7 +1205,7 @@
 
     .line 14
     :cond_0
-    instance-of v0, p1, LhP3;
+    instance-of v0, p1, LWS3;
 
     .line 15
     .line 16
@@ -1014,11 +1213,11 @@
 
     .line 17
     .line 18
-    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->K0:LXfi;
+    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->P0:LREi;
 
     .line 19
     .line 20
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -1034,7 +1233,7 @@
 
     .line 27
     :cond_1
-    instance-of v0, p1, LjY7;
+    instance-of v0, p1, Li48;
 
     .line 28
     .line 29
@@ -1042,11 +1241,11 @@
 
     .line 30
     .line 31
-    check-cast p1, LjY7;
+    check-cast p1, Li48;
 
     .line 32
     .line 33
-    invoke-virtual {p1}, LjY7;->z()Ljava/lang/String;
+    invoke-virtual {p1}, Li48;->y()Ljava/lang/String;
 
     .line 34
     .line 35
@@ -1064,20 +1263,11 @@
     return-object p1
 .end method
 
-.method public final q()J
-    .locals 2
-
-    .line 1
-    const-wide/16 v0, -0x1
-
-    return-wide v0
-.end method
-
-.method public final r()Landroidx/recyclerview/widget/RecyclerView;
+.method public final j0()Landroidx/recyclerview/widget/RecyclerView;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->D0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->G0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     .line 3
@@ -1093,7 +1283,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1104,44 +1294,53 @@
     throw v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
-    .locals 1
+.method public final q()J
+    .locals 2
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    const-wide/16 v0, -0x1
+
+    return-wide v0
+.end method
+
+.method public final q1(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->B0:Lps9;
+    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->B0:LpB9;
 
     .line 5
     .line 6
     const/4 v0, 0x0
 
     .line 7
-    if-eqz p1, :cond_1
+    if-eqz p1, :cond_3
 
     .line 8
     .line 9
-    invoke-virtual {p1, p0}, Lps9;->Q2(Lhs9;)V
+    invoke-virtual {p1, p0}, LpB9;->c3(LhB9;)V
 
     .line 10
     .line 11
     .line 12
-    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->y0:LjJ4;
+    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->y0:LsO4;
 
     .line 13
     .line 14
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_2
 
     .line 15
     .line 16
-    sget-object v0, Lcom/snap/modules/contacts_api/SmsInviteFeature;->INVITE_FRIENDS:Lcom/snap/modules/contacts_api/SmsInviteFeature;
+    sget-object v1, Lcom/snap/modules/contacts_api/SmsInviteFeature;->INVITE_FRIENDS:Lcom/snap/modules/contacts_api/SmsInviteFeature;
 
     .line 17
     .line 18
-    invoke-virtual {p1, v0}, LjJ4;->a(Lcom/snap/modules/contacts_api/SmsInviteFeature;)LmP3;
+    invoke-virtual {p1, v1}, LsO4;->a(Lcom/snap/modules/contacts_api/SmsInviteFeature;)LbT3;
 
     .line 19
     .line 20
@@ -1149,40 +1348,123 @@
     move-result-object p1
 
     .line 22
-    invoke-virtual {p1, p0}, LmP3;->Q2(LnP3;)V
+    invoke-virtual {p1, p0}, LbT3;->c3(LcT3;)V
 
     .line 23
     .line 24
     .line 25
-    iput-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->J0:LmP3;
+    iput-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->M0:LbT3;
 
     .line 26
     .line 27
-    return-void
+    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->C0:LT21;
 
     .line 28
-    :cond_0
-    const-string p1, "contactsNotOnSnapchatSectionPresenterFactory"
-
     .line 29
-    .line 30
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    if-eqz p1, :cond_1
 
+    .line 30
     .line 31
+    invoke-interface {p1}, LT21;->a()LR21;
+
     .line 32
     .line 33
-    throw v0
-
     .line 34
-    :cond_1
-    const-string p1, "presenter"
+    move-result-object p1
 
     .line 35
-    .line 36
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    iput-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->N0:LR21;
 
+    .line 36
     .line 37
+    iget-object p1, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->E0:LyPf;
+
     .line 38
     .line 39
+    if-eqz p1, :cond_0
+
+    .line 40
+    .line 41
+    sget-object p1, Lc08;->Z:Lc08;
+
+    .line 42
+    .line 43
+    const-string v0, "InviteFriendsFragment"
+
+    .line 44
+    .line 45
+    invoke-static {p1, p1, v0}, LBv7;->a(Lc08;Lc08;Ljava/lang/String;)Lnp0;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p1
+
+    .line 49
+    new-instance v0, LnJe;
+
+    .line 50
+    .line 51
+    invoke-direct {v0, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 52
+    .line 53
+    .line 54
+    iput-object v0, p0, Lcom/snap/identity/friendingui/invitefriends/InviteFriendsFragment;->O0:LnJe;
+
+    .line 55
+    .line 56
+    return-void
+
+    .line 57
+    :cond_0
+    const-string p1, "schedulersProvider"
+
+    .line 58
+    .line 59
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    throw v0
+
+    .line 63
+    :cond_1
+    const-string p1, "bitmapLoaderFactory"
+
+    .line 64
+    .line 65
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    throw v0
+
+    .line 69
+    :cond_2
+    const-string p1, "contactsNotOnSnapchatSectionPresenterFactory"
+
+    .line 70
+    .line 71
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 72
+    .line 73
+    .line 74
+    throw v0
+
+    .line 75
+    :cond_3
+    const-string p1, "presenter"
+
+    .line 76
+    .line 77
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 78
+    .line 79
+    .line 80
     throw v0
 .end method

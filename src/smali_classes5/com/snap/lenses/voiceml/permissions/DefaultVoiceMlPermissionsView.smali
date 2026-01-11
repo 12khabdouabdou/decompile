@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LNOj;
+.implements Lsek;
 
 
 # static fields
@@ -11,9 +11,9 @@
 
 
 # instance fields
-.field public final a:LbY5;
+.field public final a:LAZ5;
 
-.field public final b:LXfi;
+.field public final b:LREi;
 
 
 # direct methods
@@ -46,28 +46,28 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    new-instance p1, LbY5;
+    new-instance p1, LAZ5;
 
-    const/4 p2, 0x2
+    const/4 p2, 0x6
 
-    invoke-direct {p1, p2, p0}, LbY5;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, LAZ5;-><init>(ILjava/lang/Object;)V
 
-    iput-object p1, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->a:LbY5;
+    iput-object p1, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->a:LAZ5;
 
     .line 5
-    new-instance p1, LsY5;
+    new-instance p1, Lg06;
 
-    const/4 p2, 0x1
+    const/4 p2, 0x7
 
-    invoke-direct {p1, p2, p0}, LsY5;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Lg06;-><init>(ILjava/lang/Object;)V
 
     .line 6
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 7
-    iput-object p2, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->b:LXfi;
+    iput-object p2, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->b:LREi;
 
     return-void
 .end method
@@ -78,11 +78,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->b:LXfi;
+    iget-object v0, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->b:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -97,11 +97,11 @@
     return-object v0
 .end method
 
-.method public final f()Lio/reactivex/rxjava3/functions/Consumer;
+.method public final j()Lio/reactivex/rxjava3/functions/Consumer;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->a:LbY5;
+    iget-object v0, p0, Lcom/snap/lenses/voiceml/permissions/DefaultVoiceMlPermissionsView;->a:LAZ5;
 
     .line 2
     .line 3

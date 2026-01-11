@@ -3,19 +3,27 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lmf5;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final synthetic X:J
 
-.field public final b:LUDa;
+.field public final synthetic Y:J
 
-.field public final c:Lrn0;
+.field public final synthetic Z:J
+
+.field public final synthetic a:J
+
+.field public final synthetic b:LBGg;
+
+.field public final synthetic c:Lio/reactivex/rxjava3/core/Observable;
+
+.field public final synthetic t:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LUDa;)V
+.method public constructor <init>(JLBGg;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;JJJ)V
     .locals 0
 
     .line 1
@@ -24,271 +32,234 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LpDa;->a:Landroid/content/Context;
+    iput-wide p1, p0, LpDa;->a:J
 
     .line 5
     .line 6
-    iput-object p2, p0, LpDa;->b:LUDa;
+    iput-object p3, p0, LpDa;->b:LBGg;
 
     .line 7
     .line 8
-    sget-object p1, LCDa;->Z:LCDa;
+    iput-object p4, p0, LpDa;->c:Lio/reactivex/rxjava3/core/Observable;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-object p5, p0, LpDa;->t:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 11
     .line 12
+    iput-wide p6, p0, LpDa;->X:J
+
     .line 13
-    const-string p1, "LockscreenDeepLinkHandler"
-
     .line 14
-    .line 15
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iput-wide p8, p0, LpDa;->Y:J
 
+    .line 15
     .line 16
+    iput-wide p10, p0, LpDa;->Z:J
+
     .line 17
     .line 18
-    sget-object p1, Lrn0;->a:Lrn0;
-
-    .line 19
-    .line 20
-    iput-object p1, p0, LpDa;->c:Lrn0;
-
-    .line 21
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final E(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 12
 
     .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    return-object p1
-.end method
-
-.method public final F(Landroid/net/Uri;ZLBf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p3}, LpDa;->l(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
+    check-cast p1, LDpd;
 
     .line 2
     .line 3
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
+
     .line 4
-    move-result-object p1
-
     .line 5
-    return-object p1
-.end method
-
-.method public final e(Landroid/net/Uri;LBf5;Lrf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1, p2}, LpDa;->l(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public final l(Landroid/net/Uri;LBf5;)Lio/reactivex/rxjava3/core/Completable;
-    .locals 2
-
-    .line 1
-    invoke-virtual {p1}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p2
-
-    .line 5
-    if-eqz p2, :cond_2
+    move-object v10, v0
 
     .line 6
-    .line 7
-    invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
+    check-cast v10, LNSj;
 
+    .line 7
     .line 8
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
+
     .line 9
     .line 10
-    move-result v0
+    check-cast p1, Lsxg;
 
     .line 11
-    const v1, -0x761ce827
-
     .line 12
+    iget-wide v0, p0, LpDa;->a:J
+
     .line 13
     .line 14
-    if-eq v0, v1, :cond_0
+    invoke-static {v10, v0, v1, p1}, LWQk;->t(LNSj;JLsxg;)Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;
 
     .line 15
     .line 16
-    goto :goto_0
-
     .line 17
-    :cond_0
-    const-string v0, "lockscreen-settings"
+    move-result-object v0
 
     .line 18
-    .line 19
-    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    iget-object v5, p0, LpDa;->b:LBGg;
 
+    .line 19
     .line 20
+    iget-object v1, v5, LBGg;->f0:Ljava/lang/Object;
+
     .line 21
     .line 22
-    move-result p2
+    check-cast v1, LPc9;
 
     .line 23
-    if-eqz p2, :cond_2
-
     .line 24
+    const/4 v2, 0x0
+
     .line 25
-    invoke-virtual {p1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
+    invoke-virtual {v1, v2}, LPc9;->b(Z)LpKa;
 
     .line 26
     .line 27
     .line 28
-    move-result-object p2
+    move-result-object v1
 
     .line 29
-    const-string v0, "system-settings"
+    invoke-virtual {v10, v1, p1}, LNSj;->a(LpKa;Lsxg;)Lio/reactivex/rxjava3/internal/operators/single/SingleCreate;
 
     .line 30
     .line 31
-    invoke-static {p2, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 32
-    .line 33
-    .line 34
-    move-result p2
+    move-result-object p1
 
+    .line 33
+    new-instance v4, LM0f;
+
+    .line 34
     .line 35
-    if-eqz p2, :cond_1
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
 
     .line 36
     .line 37
-    new-instance p2, LKL1;
-
     .line 38
-    .line 39
-    const/4 v0, 0x3
+    sget-object v1, LGxa;->d:LGxa;
 
+    .line 39
     .line 40
-    invoke-direct {p2, p1, v0}, LKL1;-><init>(Landroid/net/Uri;I)V
+    iget-object v2, p0, LpDa;->c:Lio/reactivex/rxjava3/core/Observable;
 
     .line 41
     .line 42
-    .line 43
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 43
     .line 44
     .line 45
-    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    new-instance v11, Lio/reactivex/rxjava3/internal/operators/observable/ObservableWithLatestFrom;
 
     .line 46
     .line 47
+    iget-object v3, p0, LpDa;->t:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
     .line 48
-    new-instance p2, Lcca;
-
     .line 49
-    .line 50
-    const/16 v0, 0xc
+    invoke-direct {v11, v2, v3, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableWithLatestFrom;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/BiFunction;)V
 
+    .line 50
     .line 51
     .line 52
-    invoke-direct {p2, v0, p0}, Lcca;-><init>(ILjava/lang/Object;)V
+    new-instance v1, LnDa;
 
     .line 53
     .line 54
+    iget-wide v6, p0, LpDa;->Y:J
+
     .line 55
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
-
     .line 56
-    .line 57
-    invoke-direct {v0, p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    iget-wide v8, p0, LpDa;->Z:J
 
+    .line 57
     .line 58
+    iget-wide v2, p0, LpDa;->X:J
+
     .line 59
     .line 60
-    new-instance p1, LKCa;
+    invoke-direct/range {v1 .. v10}, LnDa;-><init>(JLM0f;LBGg;JJLNSj;)V
 
     .line 61
     .line 62
-    const/4 p2, 0x4
-
     .line 63
-    invoke-direct {p1, p2, p0}, LKCa;-><init>(ILjava/lang/Object;)V
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;
 
     .line 64
     .line 65
-    .line 66
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-direct {v2, v11, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 66
     .line 67
     .line 68
-    .line 69
-    move-result-object p1
+    new-instance v1, LoDa;
 
+    .line 69
     .line 70
-    return-object p1
+    invoke-direct {v1, v5, v10}, LoDa;-><init>(LBGg;LNSj;)V
 
     .line 71
-    :cond_1
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
-
     .line 72
     .line 73
-    return-object p1
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoFinally;
 
     .line 74
-    :cond_2
-    :goto_0
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
-
     .line 75
+    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoFinally;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Action;)V
+
     .line 76
-    return-object p1
-.end method
+    .line 77
+    .line 78
+    new-instance v1, LIu9;
 
-.method public final s(Landroid/net/Uri;Z)Lsga;
-    .locals 0
+    .line 79
+    .line 80
+    const/16 v2, 0x12
 
-    .line 1
-    const/4 p1, 0x0
+    .line 81
+    .line 82
+    invoke-direct {v1, v2, p1}, LIu9;-><init>(ILjava/lang/Object;)V
 
-    .line 2
-    return-object p1
-.end method
+    .line 83
+    .line 84
+    .line 85
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
-.method public final t(Landroid/net/Uri;)Lsga;
-    .locals 0
+    .line 86
+    .line 87
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 1
-    const/4 p1, 0x0
+    .line 88
+    .line 89
+    .line 90
+    new-instance v0, LrCa;
 
-    .line 2
-    return-object p1
-.end method
+    .line 91
+    .line 92
+    const/4 v1, 0x1
 
-.method public final x(Landroid/net/Uri;)Lsga;
-    .locals 0
+    .line 93
+    invoke-direct {v0, v1, v3}, LrCa;-><init>(ILjava/lang/Object;)V
 
-    .line 1
-    const/4 p1, 0x0
+    .line 94
+    .line 95
+    .line 96
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;
 
-    .line 2
-    return-object p1
+    .line 97
+    .line 98
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/mixed/SingleFlatMapObservable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 99
+    .line 100
+    .line 101
+    return-object v1
 .end method

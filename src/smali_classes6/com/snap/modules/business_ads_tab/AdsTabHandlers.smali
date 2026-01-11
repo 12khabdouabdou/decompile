@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFD;
-    schema = "\'businessIAPService\':r?:\'[0]\',\'openEmailApp\':f?|m|()"
+    proxyClass = LuF;
+    schema = "\'businessIAPService\':r:\'[0]\',\'openEmailApp\':f|m|()"
     typeReferences = {
         Lcom/snap/modules/business_iap/IBusinessIAPService;
     }
@@ -22,8 +22,6 @@
 .end method
 
 .method public abstract openEmailApp()V
-    .annotation runtime LUy3;
-    .end annotation
 .end method
 
 .method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I

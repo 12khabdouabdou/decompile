@@ -52,12 +52,20 @@
 .method static constructor <clinit>()V
     .locals 1
 
+    .line 1
     new-instance v0, Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
-    invoke-direct {v0}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;-><init>()V
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
+    .line 5
+    .line 6
     sput-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -255,210 +263,360 @@
 .method public static final getValueTypeArray()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->a()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeArray$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeBool()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->b()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeBool$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeDouble()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->c()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeDouble$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeError()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->d()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeError$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeFunction()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->e()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeFunction$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeInt()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->f()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeInt$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeLong()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->g()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeLong$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeMap()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->h()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeMap$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeNull()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->i()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeNull$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeProxyObject()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->j()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeProxyObject$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeString()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->k()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeString$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeTypedArray()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->l()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeTypedArray$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeTypedObject()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->m()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeTypedObject$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeUndefined()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->n()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeUndefined$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
 .method public static final getValueTypeWrappedObject()I
     .locals 1
 
+    .line 1
     sget-object v0, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
 
+    .line 2
+    .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->o()I
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {}, Lcom/snap/composer/utils/ComposerMarshaller;->access$getValueTypeWrappedObject$cp()I
 
+    .line 7
+    .line 8
+    .line 9
     move-result v0
 
+    .line 10
     return v0
 .end method
 
@@ -512,7 +670,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 8
     .line 9
@@ -591,7 +749,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 8
     .line 9
@@ -705,7 +863,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 8
     .line 9
@@ -819,7 +977,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 8
     .line 9
@@ -933,7 +1091,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 8
     .line 9
@@ -1042,7 +1200,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 8
     .line 9
@@ -1232,14 +1390,14 @@
     return-object v0
 .end method
 
-.method public final getMapProperty(Ljq9;ILkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+.method public final getMapProperty(Llz9;ILkotlin/jvm/functions/Function1;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Ljq9;",
+            "Llz9;",
             "I",
             "Lkotlin/jvm/functions/Function1;",
             ")TT;"
@@ -1247,7 +1405,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1279,11 +1437,11 @@
     return-object p1
 .end method
 
-.method public getMapPropertyBoolean(Ljq9;I)Z
+.method public getMapPropertyBoolean(Llz9;I)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1307,11 +1465,11 @@
     return p1
 .end method
 
-.method public getMapPropertyByteArray(Ljq9;I)[B
+.method public getMapPropertyByteArray(Llz9;I)[B
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1335,11 +1493,11 @@
     return-object p1
 .end method
 
-.method public getMapPropertyDouble(Ljq9;I)D
+.method public getMapPropertyDouble(Llz9;I)D
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1363,11 +1521,11 @@
     return-wide p1
 .end method
 
-.method public getMapPropertyFunction(Ljq9;I)Lcom/snap/composer/callable/ComposerFunction;
+.method public getMapPropertyFunction(Llz9;I)Lcom/snap/composer/callable/ComposerFunction;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1391,14 +1549,14 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyList(Ljq9;ILkotlin/jvm/functions/Function1;)Ljava/util/List;
+.method public final getMapPropertyList(Llz9;ILkotlin/jvm/functions/Function1;)Ljava/util/List;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Ljq9;",
+            "Llz9;",
             "I",
             "Lkotlin/jvm/functions/Function1;",
             ")",
@@ -1408,7 +1566,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1428,7 +1586,7 @@
 
     .line 10
     .line 11
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 12
     .line 13
@@ -1457,11 +1615,11 @@
     throw p1
 .end method
 
-.method public getMapPropertyLong(Ljq9;I)J
+.method public getMapPropertyLong(Llz9;I)J
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1485,11 +1643,11 @@
     return-wide p1
 .end method
 
-.method public getMapPropertyOpaque(Ljq9;I)Ljava/lang/Object;
+.method public getMapPropertyOpaque(Llz9;I)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -1513,20 +1671,20 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyOpaqueCasted(Ljq9;I)Ljava/lang/Object;
+.method public final getMapPropertyOpaqueCasted(Llz9;I)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Ljq9;",
+            "Llz9;",
             "I)TT;"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->getMapPropertyOpaque(Ljq9;I)Ljava/lang/Object;
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->getMapPropertyOpaque(Llz9;I)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -1590,14 +1748,14 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyOptional(Ljq9;ILkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+.method public final getMapPropertyOptional(Llz9;ILkotlin/jvm/functions/Function1;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Ljq9;",
+            "Llz9;",
             "I",
             "Lkotlin/jvm/functions/Function1;",
             ")TT;"
@@ -1605,7 +1763,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     move-result p1
 
@@ -1633,11 +1791,11 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyOptionalBoolean(Ljq9;I)Ljava/lang/Boolean;
+.method public final getMapPropertyOptionalBoolean(Llz9;I)Ljava/lang/Boolean;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -1683,11 +1841,11 @@
     return-object p1
 .end method
 
-.method public getMapPropertyOptionalByteArray(Ljq9;I)[B
+.method public getMapPropertyOptionalByteArray(Llz9;I)[B
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -1725,11 +1883,11 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyOptionalDouble(Ljq9;I)Ljava/lang/Double;
+.method public final getMapPropertyOptionalDouble(Llz9;I)Ljava/lang/Double;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -1775,11 +1933,11 @@
     return-object p1
 .end method
 
-.method public getMapPropertyOptionalFunction(Ljq9;I)Lcom/snap/composer/callable/ComposerFunction;
+.method public getMapPropertyOptionalFunction(Llz9;I)Lcom/snap/composer/callable/ComposerFunction;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -1817,11 +1975,11 @@
     return-object p1
 .end method
 
-.method public getMapPropertyOptionalLong(Ljq9;I)Ljava/lang/Long;
+.method public getMapPropertyOptionalLong(Llz9;I)Ljava/lang/Long;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -1867,11 +2025,11 @@
     return-object p1
 .end method
 
-.method public getMapPropertyOptionalString(Ljq9;I)Ljava/lang/String;
+.method public getMapPropertyOptionalString(Llz9;I)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -1909,11 +2067,11 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyOptionalUntyped(Ljq9;I)Ljava/lang/Object;
+.method public final getMapPropertyOptionalUntyped(Llz9;I)Ljava/lang/Object;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -1951,12 +2109,12 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyOptionalUntypedMap(Ljq9;I)Ljava/util/Map;
+.method public final getMapPropertyOptionalUntypedMap(Llz9;I)Ljava/util/Map;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljq9;",
+            "Llz9;",
             "I)",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -1966,7 +2124,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -2004,11 +2162,11 @@
     return-object p1
 .end method
 
-.method public getMapPropertyString(Ljq9;I)Ljava/lang/String;
+.method public getMapPropertyString(Llz9;I)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -2032,12 +2190,12 @@
     return-object p1
 .end method
 
-.method public final getMapPropertyUntypedMap(Ljq9;I)Ljava/util/Map;
+.method public final getMapPropertyUntypedMap(Llz9;I)Ljava/util/Map;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljq9;",
+            "Llz9;",
             "I)",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -2047,7 +2205,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->mustMoveMapPropertyIntoTop(Llz9;I)V
 
     .line 2
     .line 3
@@ -2777,7 +2935,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LsL6;->a:LsL6;
+    sget-object p1, LgP6;->a:LgP6;
 
     .line 8
     .line 9
@@ -3256,23 +3414,23 @@
 .method public abstract moveMapPropertyIntoTop(Ljava/lang/String;I)Z
 .end method
 
-.method public abstract moveMapPropertyIntoTop(Ljq9;I)Z
+.method public abstract moveMapPropertyIntoTop(Llz9;I)Z
 .end method
 
 .method public abstract moveTopItemIntoMap(Ljava/lang/String;I)V
 .end method
 
-.method public abstract moveTopItemIntoMap(Ljq9;I)V
+.method public abstract moveTopItemIntoMap(Llz9;I)V
 .end method
 
 .method public abstract moveTypedObjectPropertyIntoTop(II)V
 .end method
 
-.method public final mustMoveMapPropertyIntoTop(Ljq9;I)V
+.method public final mustMoveMapPropertyIntoTop(Llz9;I)V
     .locals 3
 
     .line 1
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Ljq9;I)Z
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveMapPropertyIntoTop(Llz9;I)Z
 
     .line 2
     .line 3
@@ -3392,7 +3550,7 @@
     return p1
 .end method
 
-.method public abstract pushInternedString(Ljq9;)I
+.method public abstract pushInternedString(Llz9;)I
 .end method
 
 .method public abstract pushList(I)I
@@ -4551,7 +4709,7 @@
     .end annotation
 
     .line 3
-    invoke-interface {p3}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {p3}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 4
     invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljava/lang/String;I)V
@@ -4559,12 +4717,12 @@
     return-void
 .end method
 
-.method public final putMapProperty(Ljq9;ILkotlin/jvm/functions/Function0;)V
+.method public final putMapProperty(Llz9;ILkotlin/jvm/functions/Function0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljq9;",
+            "Llz9;",
             "I",
             "Lkotlin/jvm/functions/Function0;",
             ")V"
@@ -4572,15 +4730,15 @@
     .end annotation
 
     .line 1
-    invoke-interface {p3}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    invoke-interface {p3}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
     .line 2
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     return-void
 .end method
 
-.method public putMapPropertyBoolean(Ljq9;IZ)V
+.method public putMapPropertyBoolean(Llz9;IZ)V
     .locals 0
 
     .line 1
@@ -4589,7 +4747,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6
@@ -4597,7 +4755,7 @@
     return-void
 .end method
 
-.method public putMapPropertyByteArray(Ljq9;I[B)V
+.method public putMapPropertyByteArray(Llz9;I[B)V
     .locals 0
 
     .line 1
@@ -4606,7 +4764,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6
@@ -4614,7 +4772,7 @@
     return-void
 .end method
 
-.method public putMapPropertyDouble(Ljq9;ID)V
+.method public putMapPropertyDouble(Llz9;ID)V
     .locals 0
 
     .line 1
@@ -4623,7 +4781,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6
@@ -4631,14 +4789,14 @@
     return-void
 .end method
 
-.method public final putMapPropertyFloat(Ljq9;IF)V
+.method public final putMapPropertyFloat(Llz9;IF)V
     .locals 2
 
     .line 1
     float-to-double v0, p3
 
     .line 2
-    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyDouble(Ljq9;ID)V
+    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyDouble(Llz9;ID)V
 
     .line 3
     .line 4
@@ -4646,7 +4804,7 @@
     return-void
 .end method
 
-.method public putMapPropertyFunction(Ljq9;ILcom/snap/composer/callable/ComposerFunction;)V
+.method public putMapPropertyFunction(Llz9;ILcom/snap/composer/callable/ComposerFunction;)V
     .locals 0
 
     .line 1
@@ -4655,7 +4813,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6
@@ -4663,14 +4821,14 @@
     return-void
 .end method
 
-.method public final putMapPropertyInt(Ljq9;II)V
+.method public final putMapPropertyInt(Llz9;II)V
     .locals 2
 
     .line 1
     int-to-double v0, p3
 
     .line 2
-    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyDouble(Ljq9;ID)V
+    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyDouble(Llz9;ID)V
 
     .line 3
     .line 4
@@ -4678,14 +4836,14 @@
     return-void
 .end method
 
-.method public final putMapPropertyList(Ljq9;ILjava/util/List;Lkotlin/jvm/functions/Function1;)V
+.method public final putMapPropertyList(Llz9;ILjava/util/List;Lkotlin/jvm/functions/Function1;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Ljq9;",
+            "Llz9;",
             "I",
             "Ljava/util/List<",
             "+TT;>;",
@@ -4761,7 +4919,7 @@
 
     .line 33
     :cond_0
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 34
     .line 35
@@ -4769,7 +4927,7 @@
     return-void
 .end method
 
-.method public putMapPropertyLong(Ljq9;IJ)V
+.method public putMapPropertyLong(Llz9;IJ)V
     .locals 0
 
     .line 1
@@ -4778,7 +4936,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6
@@ -4786,7 +4944,7 @@
     return-void
 .end method
 
-.method public putMapPropertyOpaque(Ljq9;ILjava/lang/Object;)V
+.method public putMapPropertyOpaque(Llz9;ILjava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -4795,7 +4953,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6
@@ -4803,7 +4961,7 @@
     return-void
 .end method
 
-.method public final putMapPropertyOptionalBoolean(Ljq9;ILjava/lang/Boolean;)V
+.method public final putMapPropertyOptionalBoolean(Llz9;ILjava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -4819,7 +4977,7 @@
     move-result p3
 
     .line 7
-    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyBoolean(Ljq9;IZ)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyBoolean(Llz9;IZ)V
 
     .line 8
     .line 9
@@ -4828,7 +4986,7 @@
     return-void
 .end method
 
-.method public final putMapPropertyOptionalByteArray(Ljq9;I[B)V
+.method public final putMapPropertyOptionalByteArray(Llz9;I[B)V
     .locals 0
 
     .line 1
@@ -4836,7 +4994,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyByteArray(Ljq9;I[B)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyByteArray(Llz9;I[B)V
 
     .line 4
     .line 5
@@ -4845,7 +5003,7 @@
     return-void
 .end method
 
-.method public final putMapPropertyOptionalDouble(Ljq9;ILjava/lang/Double;)V
+.method public final putMapPropertyOptionalDouble(Llz9;ILjava/lang/Double;)V
     .locals 2
 
     .line 1
@@ -4861,7 +5019,7 @@
     move-result-wide v0
 
     .line 7
-    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyDouble(Ljq9;ID)V
+    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyDouble(Llz9;ID)V
 
     .line 8
     .line 9
@@ -4870,7 +5028,7 @@
     return-void
 .end method
 
-.method public final putMapPropertyOptionalLong(Ljq9;ILjava/lang/Long;)V
+.method public final putMapPropertyOptionalLong(Llz9;ILjava/lang/Long;)V
     .locals 2
 
     .line 1
@@ -4886,7 +5044,7 @@
     move-result-wide v0
 
     .line 7
-    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyLong(Ljq9;IJ)V
+    invoke-virtual {p0, p1, p2, v0, v1}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyLong(Llz9;IJ)V
 
     .line 8
     .line 9
@@ -4895,7 +5053,7 @@
     return-void
 .end method
 
-.method public final putMapPropertyOptionalString(Ljq9;ILjava/lang/String;)V
+.method public final putMapPropertyOptionalString(Llz9;ILjava/lang/String;)V
     .locals 0
 
     .line 1
@@ -4903,7 +5061,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyString(Ljq9;ILjava/lang/String;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyString(Llz9;ILjava/lang/String;)V
 
     .line 4
     .line 5
@@ -4912,7 +5070,7 @@
     return-void
 .end method
 
-.method public final putMapPropertyOptionalUntyped(Ljq9;ILjava/lang/Object;)V
+.method public final putMapPropertyOptionalUntyped(Llz9;ILjava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -4925,7 +5083,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 7
     .line 8
@@ -4934,12 +5092,12 @@
     return-void
 .end method
 
-.method public final putMapPropertyOptionalUntypedMap(Ljq9;ILjava/util/Map;)V
+.method public final putMapPropertyOptionalUntypedMap(Llz9;ILjava/util/Map;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljq9;",
+            "Llz9;",
             "I",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -4954,7 +5112,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyUntypedMap(Ljq9;ILjava/util/Map;)V
+    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/composer/utils/ComposerMarshaller;->putMapPropertyUntypedMap(Llz9;ILjava/util/Map;)V
 
     .line 4
     .line 5
@@ -4963,7 +5121,7 @@
     return-void
 .end method
 
-.method public putMapPropertyString(Ljq9;ILjava/lang/String;)V
+.method public putMapPropertyString(Llz9;ILjava/lang/String;)V
     .locals 0
 
     .line 1
@@ -4972,7 +5130,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6
@@ -4980,12 +5138,12 @@
     return-void
 .end method
 
-.method public final putMapPropertyUntypedMap(Ljq9;ILjava/util/Map;)V
+.method public final putMapPropertyUntypedMap(Llz9;ILjava/util/Map;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljq9;",
+            "Llz9;",
             "I",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
@@ -5001,7 +5159,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Ljq9;I)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/composer/utils/ComposerMarshaller;->moveTopItemIntoMap(Llz9;I)V
 
     .line 5
     .line 6

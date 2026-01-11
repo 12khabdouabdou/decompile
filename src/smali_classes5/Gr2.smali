@@ -1,14 +1,29 @@
 .class public final LGr2;
-.super LSr2;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LCm0;
 
 
 # instance fields
-.field public final a:I
+.field public final X:LHP;
+
+.field public final Y:Ljava/util/concurrent/atomic/AtomicReference;
+
+.field public final Z:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+.field public final a:Lio/reactivex/rxjava3/core/Observable;
+
+.field public final b:Lio/reactivex/rxjava3/core/Observable;
+
+.field public final c:Lel4;
+
+.field public final t:Lrp0;
 
 
 # direct methods
-.method public constructor <init>(I)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lel4;Lrp0;LHP;)V
     .locals 0
 
     .line 1
@@ -17,105 +32,103 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, LGr2;->a:I
+    iput-object p1, p0, LGr2;->a:Lio/reactivex/rxjava3/core/Observable;
 
     .line 5
     .line 6
+    iput-object p2, p0, LGr2;->b:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LGr2;->c:Lel4;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LGr2;->t:Lrp0;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LGr2;->X:LHP;
+
+    .line 13
+    .line 14
+    new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 15
+    .line 16
+    const/4 p2, 0x0
+
+    .line 17
+    invoke-direct {p1, p2}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object p1, p0, LGr2;->Y:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 21
+    .line 22
+    new-instance p1, LFr2;
+
+    .line 23
+    .line 24
+    invoke-direct {p1, p0}, LFr2;-><init>(LGr2;)V
+
+    .line 25
+    .line 26
+    .line 27
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
+
+    .line 28
+    .line 29
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {p2}, Lio/reactivex/rxjava3/core/Observable;->H0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    iput-object p1, p0, LGr2;->Z:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 37
+    .line 38
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final f2()Lio/reactivex/rxjava3/disposables/Disposable;
     .locals 3
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LGr2;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LGr2;
-
-    .line 12
-    .line 13
-    iget v1, p0, LGr2;->a:I
-
-    .line 14
-    .line 15
-    iget p1, p1, LGr2;->a:I
-
-    .line 16
-    .line 17
-    if-eq v1, p1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, LGr2;->a:I
+    new-instance v0, LUL;
 
     .line 2
     .line 3
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "ItemCentered(position="
+    iget-object v1, p0, LGr2;->X:LHP;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const/16 v2, 0xc
 
     .line 6
     .line 7
-    .line 8
-    iget v1, p0, LGr2;->a:I
+    invoke-direct {v0, v1, v2}, LUL;-><init>(LHP;I)V
 
+    .line 8
     .line 9
     .line 10
-    const-string v2, ")"
+    iget-object v1, p0, LGr2;->Z:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, LEU0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 13
     .line 14
@@ -123,5 +136,20 @@
     move-result-object v0
 
     .line 16
+    return-object v0
+.end method
+
+.method public final observe()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    invoke-static {p0}, LlFg;->C(LCm0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
     return-object v0
 .end method

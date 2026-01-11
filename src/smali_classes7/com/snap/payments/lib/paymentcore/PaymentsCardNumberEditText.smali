@@ -61,14 +61,14 @@
     .line 18
     .line 19
     .line 20
-    new-instance p2, LeN3;
+    new-instance p2, LMQ3;
 
     .line 21
     .line 22
     const/4 v0, 0x3
 
     .line 23
-    invoke-direct {p2, v0, p0}, LeN3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v0, p0}, LMQ3;-><init>(ILjava/lang/Object;)V
 
     .line 24
     .line 25

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LuU8;
+    proxyClass = LV19;
     schema = "\'appAttest\':f|m|(t): p<t>,\'deviceCheck\':f|m|(t): p<t>"
     typeReferences = {}
 .end annotation

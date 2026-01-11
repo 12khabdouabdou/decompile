@@ -1,8 +1,8 @@
-.class public interface abstract Lkaa;
+.class public abstract Lkaa;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # virtual methods
-.method public abstract a()Ljava/util/Map;
+.method public abstract d()Ljava/util/Set;
 .end method

@@ -1,14 +1,14 @@
 .class public final LhVc;
-.super Lzek;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final c:LQVc;
+.field public final a:Lfoc;
 
 
 # direct methods
-.method public constructor <init>(LQVc;)V
+.method public constructor <init>(Lfoc;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LhVc;->c:LQVc;
+    iput-object p1, p0, LhVc;->a:Lfoc;
 
     .line 5
     .line 6

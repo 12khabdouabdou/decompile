@@ -26,11 +26,11 @@
 # instance fields
 .field public final b:Lio/reactivex/rxjava3/internal/operators/flowable/FlowableElementAtMaybe;
 
-.field public final c:LXAj;
+.field public final c:LEZj;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableElementAtMaybe;LXAj;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableElementAtMaybe;LEZj;)V
     .locals 0
 
     .line 1
@@ -43,7 +43,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher;->c:LXAj;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher;->c:LEZj;
 
     .line 7
     .line 8
@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -60,11 +60,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher;->c:LXAj;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher;->c:LEZj;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;-><init>(LV6i;LXAj;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/MaybeFlatMapPublisher$FlatMapPublisherSubscriber;-><init>(Lmvi;LEZj;)V
 
     .line 6
     .line 7

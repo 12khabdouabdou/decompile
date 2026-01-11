@@ -1,57 +1,17 @@
-.class public final Lkvk;
-.super LI3;
+.class public Lkvk;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "Lkvk;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
 # instance fields
-.field public final a:I
+.field public final a:LQuk;
 
-.field public final b:F
-
-.field public final c:F
-
-.field public final t:I
+.field public final b:LQuk;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, LHqk;
-
-    .line 2
-    .line 3
-    const/16 v1, 0xb
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, LHqk;-><init>(I)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, Lkvk;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public constructor <init>(FFII)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -59,115 +19,299 @@
     .line 2
     .line 3
     .line 4
-    iput p3, p0, Lkvk;->a:I
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 5
     .line 6
-    iput p1, p0, Lkvk;->b:F
+    const/16 v1, 0x64
 
     .line 7
     .line 8
-    iput p2, p0, Lkvk;->c:F
+    invoke-direct {v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(I)V
 
     .line 9
     .line 10
-    iput p4, p0, Lkvk;->t:I
-
     .line 11
+    sget-object v1, Lvuk;->b:Luuk;
+
     .line 12
-    return-void
-.end method
-
-
-# virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
-
-    .line 1
-    const/16 p2, 0x4f45
-
-    .line 2
-    .line 3
-    invoke-static {p2, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p2
-
-    .line 7
-    const/4 v0, 0x1
-
-    .line 8
-    const/4 v1, 0x4
-
-    .line 9
-    invoke-static {p1, v0, v1}, Lew8;->T0(Landroid/os/Parcel;II)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget v0, p0, Lkvk;->a:I
-
     .line 13
-    .line 14
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    const-class v2, Ljava/util/Date;
 
+    .line 14
     .line 15
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 16
     .line 17
-    const/4 v0, 0x2
-
     .line 18
-    invoke-static {p1, v0, v1}, Lew8;->T0(Landroid/os/Parcel;II)V
+    sget-object v1, Lewk;->b:Ldwk;
 
     .line 19
     .line 20
+    const-class v2, [I
+
     .line 21
-    iget v0, p0, Lkvk;->b:F
-
     .line 22
-    .line 23
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 23
     .line 24
     .line 25
-    .line 26
-    const/4 v0, 0x3
+    sget-object v2, Lewk;->c:Ldwk;
 
+    .line 26
     .line 27
-    invoke-static {p1, v0, v1}, Lew8;->T0(Landroid/os/Parcel;II)V
+    const-class v3, [Ljava/lang/Integer;
 
     .line 28
     .line 29
-    .line 30
-    iget v0, p0, Lkvk;->c:F
+    invoke-virtual {v0, v3, v2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 30
     .line 31
     .line 32
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
+    const-class v3, [S
 
     .line 33
     .line 34
-    .line 35
-    invoke-static {p1, v1, v1}, Lew8;->T0(Landroid/os/Parcel;II)V
+    invoke-virtual {v0, v3, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 35
     .line 36
     .line 37
+    const-class v1, [Ljava/lang/Short;
+
     .line 38
-    iget v0, p0, Lkvk;->t:I
-
     .line 39
-    .line 40
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    invoke-virtual {v0, v1, v2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 40
     .line 41
     .line 42
-    .line 43
-    invoke-static {p2, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
+    sget-object v1, Lewk;->h:Ldwk;
 
+    .line 43
     .line 44
+    const-class v2, [J
+
     .line 45
     .line 46
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    .line 49
+    sget-object v1, Lewk;->i:Ldwk;
+
+    .line 50
+    .line 51
+    const-class v2, [Ljava/lang/Long;
+
+    .line 52
+    .line 53
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    .line 56
+    sget-object v1, Lewk;->d:Ldwk;
+
+    .line 57
+    .line 58
+    const-class v2, [B
+
+    .line 59
+    .line 60
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    sget-object v1, Lewk;->e:Ldwk;
+
+    .line 64
+    .line 65
+    const-class v2, [Ljava/lang/Byte;
+
+    .line 66
+    .line 67
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 68
+    .line 69
+    .line 70
+    sget-object v1, Lewk;->f:Ldwk;
+
+    .line 71
+    .line 72
+    const-class v2, [C
+
+    .line 73
+    .line 74
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 75
+    .line 76
+    .line 77
+    sget-object v1, Lewk;->g:Ldwk;
+
+    .line 78
+    .line 79
+    const-class v2, [Ljava/lang/Character;
+
+    .line 80
+    .line 81
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 82
+    .line 83
+    .line 84
+    sget-object v1, Lewk;->j:Ldwk;
+
+    .line 85
+    .line 86
+    const-class v2, [F
+
+    .line 87
+    .line 88
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 89
+    .line 90
+    .line 91
+    sget-object v1, Lewk;->k:Ldwk;
+
+    .line 92
+    .line 93
+    const-class v2, [Ljava/lang/Float;
+
+    .line 94
+    .line 95
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 96
+    .line 97
+    .line 98
+    sget-object v1, Lewk;->l:Ldwk;
+
+    .line 99
+    .line 100
+    const-class v2, [D
+
+    .line 101
+    .line 102
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 103
+    .line 104
+    .line 105
+    sget-object v1, Lewk;->m:Ldwk;
+
+    .line 106
+    .line 107
+    const-class v2, [Ljava/lang/Double;
+
+    .line 108
+    .line 109
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 110
+    .line 111
+    .line 112
+    sget-object v1, Lewk;->n:Ldwk;
+
+    .line 113
+    .line 114
+    const-class v2, [Z
+
+    .line 115
+    .line 116
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 117
+    .line 118
+    .line 119
+    sget-object v1, Lewk;->o:Ldwk;
+
+    .line 120
+    .line 121
+    const-class v2, [Ljava/lang/Boolean;
+
+    .line 122
+    .line 123
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 124
+    .line 125
+    .line 126
+    new-instance v1, LQuk;
+
+    .line 127
+    .line 128
+    const/4 v2, 0x1
+
+    .line 129
+    invoke-direct {v1, p0, v2}, LQuk;-><init>(Lkvk;I)V
+
+    .line 130
+    .line 131
+    .line 132
+    iput-object v1, p0, Lkvk;->a:LQuk;
+
+    .line 133
+    .line 134
+    new-instance v2, LQuk;
+
+    .line 135
+    .line 136
+    const/4 v3, 0x0
+
+    .line 137
+    invoke-direct {v2, p0, v3}, LQuk;-><init>(Lkvk;I)V
+
+    .line 138
+    .line 139
+    .line 140
+    iput-object v2, p0, Lkvk;->b:LQuk;
+
+    .line 141
+    .line 142
+    const-class v2, LhG9;
+
+    .line 143
+    .line 144
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 145
+    .line 146
+    .line 147
+    const-class v2, LgG9;
+
+    .line 148
+    .line 149
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 150
+    .line 151
+    .line 152
+    const-class v2, LfG9;
+
+    .line 153
+    .line 154
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 155
+    .line 156
+    .line 157
+    const-class v2, LiG9;
+
+    .line 158
+    .line 159
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 160
+    .line 161
+    .line 162
     return-void
 .end method

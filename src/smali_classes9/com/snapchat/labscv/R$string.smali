@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final keep_res_dir_workaround:I = 0x7f131c0f
+.field public static final keep_res_dir_workaround:I = 0x7f131d55
 
 
 # direct methods

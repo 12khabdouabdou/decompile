@@ -3,13 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcM9;
+.implements LJX9;
 
 
 # instance fields
-.field public A0:LhG8;
+.field public A0:LkN8;
 
-.field public B0:LxL9;
+.field public B0:LdX9;
 
 .field public C0:Lcom/snap/composer/people/SubscriptionStore;
 
@@ -17,37 +17,37 @@
 
 .field public E0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public F0:LPm9;
+.field public F0:LIv9;
 
-.field public G0:LcSa;
+.field public G0:LL4b;
 
-.field public H0:LTqc;
+.field public H0:LmGc;
 
-.field public I0:LbM9;
+.field public I0:LIX9;
 
-.field public J0:Lnwf;
+.field public J0:LZ69;
 
-.field public K0:LqZ8;
+.field public K0:LyPf;
 
-.field public final L0:LXfi;
+.field public final L0:LREi;
 
-.field public final M0:LXfi;
+.field public final M0:LREi;
 
-.field public final N0:LXfi;
+.field public final N0:LREi;
 
-.field public final O0:LXfi;
+.field public final O0:LREi;
 
-.field public final w0:LEL9;
+.field public final w0:LjX9;
 
-.field public x0:Lan0;
+.field public x0:Lrp0;
 
 .field public y0:Lcom/snap/composer/blizzard/Logging;
 
-.field public z0:Lovc;
+.field public z0:LmKc;
 
 
 # direct methods
-.method public constructor <init>(LEL9;)V
+.method public constructor <init>(LjX9;)V
     .locals 1
 
     .line 1
@@ -56,99 +56,99 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->w0:LEL9;
+    iput-object p1, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->w0:LjX9;
 
     .line 5
     .line 6
-    new-instance p1, LRL9;
+    new-instance p1, LxX9;
 
     .line 7
     .line 8
     const/4 v0, 0x3
 
     .line 9
-    invoke-direct {p1, p0, v0}, LRL9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
+    invoke-direct {p1, p0, v0}, LxX9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
 
     .line 10
     .line 11
     .line 12
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
     .line 13
     .line 14
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 15
     .line 16
     .line 17
-    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->L0:LXfi;
+    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->L0:LREi;
 
     .line 18
     .line 19
-    new-instance p1, LRL9;
+    new-instance p1, LxX9;
 
     .line 20
     .line 21
     const/4 v0, 0x1
 
     .line 22
-    invoke-direct {p1, p0, v0}, LRL9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
+    invoke-direct {p1, p0, v0}, LxX9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
 
     .line 23
     .line 24
     .line 25
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
     .line 26
     .line 27
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 28
     .line 29
     .line 30
-    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->M0:LXfi;
+    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->M0:LREi;
 
     .line 31
     .line 32
-    new-instance p1, LRL9;
+    new-instance p1, LxX9;
 
     .line 33
     .line 34
     const/4 v0, 0x0
 
     .line 35
-    invoke-direct {p1, p0, v0}, LRL9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
+    invoke-direct {p1, p0, v0}, LxX9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
 
     .line 36
     .line 37
     .line 38
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
     .line 39
     .line 40
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 41
     .line 42
     .line 43
-    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->N0:LXfi;
+    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->N0:LREi;
 
     .line 44
     .line 45
-    sget-object p1, LB59;->x0:LB59;
+    sget-object p1, LRm9;->u0:LRm9;
 
     .line 46
     .line 47
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
     .line 48
     .line 49
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 50
     .line 51
     .line 52
-    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->O0:LXfi;
+    iput-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->O0:LREi;
 
     .line 53
     .line 54
@@ -157,48 +157,7 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->I0:LbM9;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, p0}, LbM9;->Q2(LcM9;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :cond_0
-    const-string p1, "presenter"
-
-    .line 13
-    .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    throw p1
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
@@ -218,7 +177,7 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 20
 
     .line 1
@@ -243,20 +202,20 @@
     .line 10
     .line 11
     .line 12
-    new-instance v9, LaVi;
+    new-instance v9, Le2j;
 
     .line 13
     .line 14
-    const/16 v2, 0x18
+    const/16 v2, 0x15
 
     .line 15
     .line 16
-    invoke-direct {v9, v2}, LaVi;-><init>(I)V
+    invoke-direct {v9, v2}, Le2j;-><init>(I)V
 
     .line 17
     .line 18
     .line 19
-    new-instance v17, Lmz3;
+    new-instance v17, LAC3;
 
     .line 20
     .line 21
@@ -268,11 +227,11 @@
     move-result-object v4
 
     .line 25
-    iget-object v5, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->K0:LqZ8;
+    iget-object v5, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->J0:LZ69;
 
     .line 26
     .line 27
-    const-string v2, "viewLoader"
+    const-string v2, "runtime"
 
     .line 28
     .line 29
@@ -284,7 +243,7 @@
 
     .line 32
     .line 33
-    iget-object v6, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->G0:LcSa;
+    iget-object v6, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->G0:LL4b;
 
     .line 34
     .line 35
@@ -300,7 +259,7 @@
 
     .line 40
     .line 41
-    iget-object v8, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->H0:LTqc;
+    iget-object v8, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->H0:LmGc;
 
     .line 42
     .line 43
@@ -308,7 +267,7 @@
 
     .line 44
     .line 45
-    iget-object v10, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->J0:Lnwf;
+    iget-object v10, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->K0:LyPf;
 
     .line 46
     .line 47
@@ -324,7 +283,7 @@
     move-result-object v11
 
     .line 53
-    iget-object v12, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->F0:LPm9;
+    iget-object v12, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->F0:LIv9;
 
     .line 54
     .line 55
@@ -343,20 +302,20 @@
 
     .line 61
     .line 62
-    invoke-direct/range {v3 .. v13}, Lmz3;-><init>(Landroid/content/Context;LqZ8;LcSa;LcSa;LTqc;Lpz3;Lnwf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LPm9;I)V
+    invoke-direct/range {v3 .. v13}, LAC3;-><init>(Landroid/content/Context;LZ69;LL4b;LL4b;LmGc;LDC3;LyPf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LIv9;I)V
 
     .line 63
     .line 64
     .line 65
-    new-instance v6, LIL9;
+    new-instance v6, LnX9;
 
     .line 66
     .line 67
-    iget-object v3, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->M0:LXfi;
+    iget-object v3, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->M0:LREi;
 
     .line 68
     .line 69
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 70
     .line 71
@@ -371,11 +330,11 @@
 
     .line 75
     .line 76
-    iget-object v3, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->N0:LXfi;
+    iget-object v3, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->N0:LREi;
 
     .line 77
     .line 78
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 79
     .line 80
@@ -390,7 +349,7 @@
 
     .line 84
     .line 85
-    iget-object v13, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->B0:LxL9;
+    iget-object v13, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->B0:LdX9;
 
     .line 86
     .line 87
@@ -422,14 +381,14 @@
 
     .line 100
     .line 101
-    new-instance v4, LRL9;
+    new-instance v4, LxX9;
 
     .line 102
     .line 103
     const/4 v5, 0x2
 
     .line 104
-    invoke-direct {v4, v0, v5}, LRL9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
+    invoke-direct {v4, v0, v5}, LxX9;-><init>(Lcom/snap/lens/activitycenter/LensActivityCenterFragment;I)V
 
     .line 105
     .line 106
@@ -445,20 +404,20 @@
     move-object v10, v6
 
     .line 112
-    invoke-direct/range {v10 .. v18}, LIL9;-><init>(Lcom/snap/composer/networking/ClientProtocol;Lcom/snap/composer/networking/GrpcServiceProtocol;Lcom/snap/composer/lenses/ILensActionHandler;Lcom/snap/composer/people/SubscriptionStore;Lcom/snap/composer/people/userinfo/UserInfoProviding;Lcom/snap/composer/blizzard/Logging;Lcom/snap/composer/navigation/INavigator;Lkotlin/jvm/functions/Function0;)V
+    invoke-direct/range {v10 .. v18}, LnX9;-><init>(Lcom/snap/composer/networking/ClientProtocol;Lcom/snap/composer/networking/GrpcServiceProtocol;Lcom/snap/composer/lenses/ILensActionHandler;Lcom/snap/composer/people/SubscriptionStore;Lcom/snap/composer/people/userinfo/UserInfoProviding;Lcom/snap/composer/blizzard/Logging;Lcom/snap/composer/navigation/INavigator;Lkotlin/jvm/functions/Function0;)V
 
     .line 113
     .line 114
     .line 115
-    new-instance v5, LeM9;
+    new-instance v5, LLX9;
 
     .line 116
     .line 117
-    iget-object v3, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->O0:LXfi;
+    iget-object v3, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->O0:LREi;
 
     .line 118
     .line 119
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 120
     .line 121
@@ -470,11 +429,11 @@
 
     .line 124
     .line 125
-    iget-object v4, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->w0:LEL9;
+    iget-object v4, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->w0:LjX9;
 
     .line 126
     .line 127
-    invoke-virtual {v4}, LEL9;->a()Z
+    invoke-virtual {v4}, LjX9;->a()Z
 
     .line 128
     .line 129
@@ -482,16 +441,16 @@
     move-result v4
 
     .line 131
-    invoke-direct {v5, v3, v4}, LeM9;-><init>(Ljava/lang/String;Z)V
+    invoke-direct {v5, v3, v4}, LLX9;-><init>(Ljava/lang/String;Z)V
 
     .line 132
     .line 133
     .line 134
-    sget-object v3, Lcom/snap/modules/lens_activity_center/LensActivityCenter;->Companion:LDL9;
+    sget-object v3, Lcom/snap/modules/lens_activity_center/LensActivityCenter;->Companion:LiX9;
 
     .line 135
     .line 136
-    iget-object v4, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->K0:LqZ8;
+    iget-object v4, v0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->J0:LZ69;
 
     .line 137
     .line 138
@@ -506,7 +465,7 @@
 
     .line 142
     .line 143
-    invoke-static/range {v3 .. v8}, LDL9;->a(LDL9;LqZ8;LeM9;LIL9;LTB3;I)Lcom/snap/modules/lens_activity_center/LensActivityCenter;
+    invoke-static/range {v3 .. v8}, LiX9;->a(LiX9;LZ69;LLX9;LnX9;LvF3;I)Lcom/snap/modules/lens_activity_center/LensActivityCenter;
 
     .line 144
     .line 145
@@ -514,15 +473,15 @@
     move-result-object v2
 
     .line 147
-    new-instance v3, LJb9;
+    new-instance v3, Lyh9;
 
     .line 148
     .line 149
-    const/16 v4, 0xc
+    const/16 v4, 0x12
 
     .line 150
     .line 151
-    invoke-direct {v3, v4, v2}, LJb9;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, v2}, Lyh9;-><init>(ILjava/lang/Object;)V
 
     .line 152
     .line 153
@@ -543,7 +502,7 @@
     move-result-object v4
 
     .line 162
-    invoke-virtual {v4, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v4, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 163
     .line 164
@@ -557,7 +516,7 @@
 
     .line 169
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 170
     .line 171
@@ -570,7 +529,7 @@
 
     .line 174
     .line 175
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 176
     .line 177
@@ -583,7 +542,7 @@
 
     .line 180
     .line 181
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 182
     .line 183
@@ -596,7 +555,7 @@
 
     .line 186
     .line 187
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 188
     .line 189
@@ -609,7 +568,7 @@
 
     .line 192
     .line 193
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 194
     .line 195
@@ -622,7 +581,7 @@
 
     .line 198
     .line 199
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 200
     .line 201
@@ -635,7 +594,7 @@
 
     .line 204
     .line 205
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 206
     .line 207
@@ -648,7 +607,7 @@
 
     .line 210
     .line 211
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 212
     .line 213
@@ -657,7 +616,7 @@
 
     .line 215
     :cond_8
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 216
     .line 217
@@ -666,7 +625,7 @@
 
     .line 219
     :cond_9
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 220
     .line 221
@@ -675,7 +634,7 @@
 
     .line 223
     :cond_a
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 224
     .line 225
@@ -703,7 +662,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -714,11 +673,11 @@
     throw v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -726,11 +685,11 @@
     return-void
 .end method
 
-.method public final w1()V
+.method public final u1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->I0:LbM9;
+    iget-object v0, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->I0:LIX9;
 
     .line 2
     .line 3
@@ -738,7 +697,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LbM9;->C1()V
+    invoke-virtual {v0}, LIX9;->D1()V
 
     .line 6
     .line 7
@@ -751,7 +710,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -760,4 +719,45 @@
 
     .line 15
     throw v0
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lcom/snap/lens/activitycenter/LensActivityCenterFragment;->I0:LIX9;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, p0}, LIX9;->c3(LJX9;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    const-string p1, "presenter"
+
+    .line 13
+    .line 14
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 p1, 0x0
+
+    .line 18
+    throw p1
 .end method

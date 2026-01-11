@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public final m(Lio/reactivex/rxjava3/core/MaybeObserver;)V
+.method public final n(Lio/reactivex/rxjava3/core/MaybeObserver;)V
     .locals 2
 
     .line 1
@@ -72,7 +72,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p1, v1}, LZne;->subscribe(LV6i;)V
+    invoke-interface {p1, v1}, LSFe;->subscribe(Lmvi;)V
 
     .line 14
     .line 15

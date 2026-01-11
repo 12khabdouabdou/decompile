@@ -8,14 +8,14 @@
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
         "Ljava/lang/Object;",
-        "Lyr9;",
+        "LzA9;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LIr9;
+.field public static final Companion:LKA9;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LIr9;
+    new-instance v0, LKA9;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/invite_contacts/InviteContactsView;->Companion:LIr9;
+    sput-object v0, Lcom/snap/invite_contacts/InviteContactsView;->Companion:LKA9;
 
     .line 7
     .line 8
@@ -62,48 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/invite_contacts/InviteContactsView;
-    .locals 3
-
-    sget-object v0, Lcom/snap/invite_contacts/InviteContactsView;->Companion:LIr9;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x10
-
-    .line 1
-    invoke-static {v0, p0, v1, p1, v2}, LIr9;->a(LIr9;LqZ8;Lyr9;LTB3;I)Lcom/snap/invite_contacts/InviteContactsView;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Ljava/lang/Object;Lyr9;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/invite_contacts/InviteContactsView;
+.method public static final create(LZ69;Ljava/lang/Object;LzA9;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/invite_contacts/InviteContactsView;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
+            "LZ69;",
             "Ljava/lang/Object;",
-            "Lyr9;",
-            "LTB3;",
+            "LzA9;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/invite_contacts/InviteContactsView;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/invite_contacts/InviteContactsView;->Companion:LIr9;
+    sget-object v0, Lcom/snap/invite_contacts/InviteContactsView;->Companion:LKA9;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     new-instance v2, Lcom/snap/invite_contacts/InviteContactsView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -127,7 +108,26 @@
     move-object v7, p4
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/invite_contacts/InviteContactsView;
+    .locals 3
+
+    sget-object v0, Lcom/snap/invite_contacts/InviteContactsView;->Companion:LKA9;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v1, 0x0
+
+    const/16 v2, 0x10
+
+    .line 1
+    invoke-static {v0, p0, v1, p1, v2}, LKA9;->a(LKA9;LZ69;LzA9;LvF3;I)Lcom/snap/invite_contacts/InviteContactsView;
+
+    move-result-object p0
+
+    return-object p0
 .end method

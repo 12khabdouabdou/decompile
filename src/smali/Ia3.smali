@@ -1,67 +1,120 @@
-.class public abstract LIa3;
+.class public final LIa3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LnV1;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LOa3;
+
+
+# direct methods
+.method public synthetic constructor <init>(LOa3;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, LIa3;->a:I
+
+    iput-object p1, p0, LIa3;->b:LOa3;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public a(Lnji;LWm0;)Lio/reactivex/rxjava3/core/Single;
-    .locals 0
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    invoke-static {p0, p1, p2}, LPdd;->a(LnV1;Lnji;LWm0;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    iget v0, p0, LIa3;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result-object p1
-
     .line 5
-    return-object p1
-.end method
-
-.method public final b(Ljava/lang/Object;LWm0;)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, LIa3;->c(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p2
-
-    .line 5
-    if-nez p2, :cond_0
-
     .line 6
-    .line 7
-    invoke-virtual {p0, p1}, LIa3;->d(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast p1, Ljava/lang/Throwable;
 
+    .line 7
     .line 8
+    iget-object p1, p0, LIa3;->b:LOa3;
+
     .line 9
     .line 10
-    move-result-object p1
+    iget-object v0, p1, LOa3;->g:LJp0;
 
     .line 11
-    return-object p1
-
     .line 12
-    :cond_0
-    return-object p2
-.end method
+    sget-object v0, LPa3;->h0:LPa3;
 
-.method public c(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+    .line 13
+    .line 14
+    iget-object p1, p1, LOa3;->c:Llqk;
 
-    .line 1
-    const/4 p1, 0x0
+    .line 15
+    .line 16
+    iget-object p1, p1, Llqk;->b:Ljava/lang/Object;
 
-    .line 2
-    return-object p1
-.end method
+    .line 17
+    .line 18
+    check-cast p1, LcH8;
 
-.method public abstract d(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 19
+    .line 20
+    invoke-static {p1, v0}, LaH8;->d(LcH8;LH7c;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+
+    .line 24
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 25
+    .line 26
+    iget-object p1, p0, LIa3;->b:LOa3;
+
+    .line 27
+    .line 28
+    iget-object p1, p1, LOa3;->g:LJp0;
+
+    .line 29
+    .line 30
+    return-void
+
+    .line 31
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 32
+    .line 33
+    iget-object p1, p0, LIa3;->b:LOa3;
+
+    .line 34
+    .line 35
+    iget-object p1, p1, LOa3;->g:LJp0;
+
+    .line 36
+    .line 37
+    return-void
+
+    .line 38
+    nop
+
+    .line 39
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/chat_media/ChatMediaIdentifier;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'conversationId\':s,\'messageId\':s,\'analyticsMessageId\':s,\'contentIdentifier\':r:\'[0]\',\'overlayContentIdentifier\':r?:\'[0]\'"
     typeReferences = {

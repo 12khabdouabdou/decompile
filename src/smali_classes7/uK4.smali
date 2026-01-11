@@ -2,25 +2,20 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lsl4;
-
 
 # instance fields
-.field public final X:LWJ4;
+.field public final a:Lz45;
 
-.field public final a:LGZ4;
+.field public final b:LBKj;
 
-.field public final b:LFY4;
+.field public final c:LtK4;
 
-.field public final c:LqY4;
-
-.field public final t:LNf3;
+.field public final d:LtK4;
 
 
 # direct methods
-.method public constructor <init>(LqY4;LGZ4;LFY4;LNf3;)V
-    .locals 0
+.method public constructor <init>(Lz45;LBKj;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -28,37 +23,48 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, LuK4;->a:LGZ4;
+    iput-object p1, p0, LuK4;->a:Lz45;
 
     .line 5
     .line 6
-    iput-object p3, p0, LuK4;->b:LFY4;
+    iput-object p2, p0, LuK4;->b:LBKj;
 
     .line 7
     .line 8
-    iput-object p1, p0, LuK4;->c:LqY4;
+    new-instance p1, LtK4;
 
     .line 9
     .line 10
-    iput-object p4, p0, LuK4;->t:LNf3;
+    const/4 p2, 0x0
 
     .line 11
+    const/4 v0, 0x0
+
     .line 12
-    new-instance p1, LWJ4;
+    invoke-direct {p1, p0, p2, v0}, LtK4;-><init>(Ljava/lang/Object;II)V
 
     .line 13
     .line 14
-    const/4 p2, 0x2
-
     .line 15
-    invoke-direct {p1, p2, p0}, LWJ4;-><init>(ILjava/lang/Object;)V
+    iput-object p1, p0, LuK4;->c:LtK4;
 
     .line 16
     .line 17
-    .line 18
-    iput-object p1, p0, LuK4;->X:LWJ4;
+    new-instance p1, LtK4;
 
+    .line 18
     .line 19
+    const/4 p2, 0x1
+
     .line 20
+    invoke-direct {p1, p0, p2, v0}, LtK4;-><init>(Ljava/lang/Object;II)V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object p1, p0, LuK4;->d:LtK4;
+
+    .line 24
+    .line 25
     return-void
 .end method

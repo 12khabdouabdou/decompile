@@ -1,10 +1,10 @@
 .class public final Lcom/snap/profile/communities/CommunityProfilePageMetricsHelper;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'blizzardLogger\':r:\'[0]\',\'publicationId\':s,\'storyTypeSpecificValue\':s,\'storyTypeValue\':s,\'sourcePageValue\':s"
     typeReferences = {

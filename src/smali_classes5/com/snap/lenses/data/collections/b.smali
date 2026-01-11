@@ -47,11 +47,11 @@
 
 
 # virtual methods
-.method public final fetchCollection(LgP9;)Lio/reactivex/rxjava3/core/Single;
+.method public final fetchCollection(LP0a;)Lio/reactivex/rxjava3/core/Single;
     .locals 7
 
     .line 1
-    sget-object v0, LoRg;->c:LoRg;
+    sget-object v0, Lrdh;->c:Lrdh;
 
     .line 2
     .line 3
@@ -59,7 +59,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, LPZj;->y(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, LQIc;->d0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7
@@ -71,7 +71,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LPZj;->y(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, LQIc;->d0(Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13
@@ -115,7 +115,7 @@
     move-object v5, p1
 
     .line 32
-    invoke-interface/range {v1 .. v6}, Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LgP9;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface/range {v1 .. v6}, Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface$a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LP0a;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
 
     .line 33
     .line 34
@@ -123,7 +123,7 @@
     move-result-object p1
 
     .line 36
-    iget-object v0, v5, LgP9;->t:[J
+    iget-object v0, v5, LP0a;->t:[J
 
     .line 37
     .line 38
@@ -132,7 +132,7 @@
     .line 39
     .line 40
     .line 41
-    sget-object v0, LQFa;->a:LQFa;
+    sget-object v0, LYRa;->a:LYRa;
 
     .line 42
     .line 43

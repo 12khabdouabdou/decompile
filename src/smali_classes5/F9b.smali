@@ -1,215 +1,357 @@
 .class public final LF9b;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'composerVenueFavoritesStore\':r:\'[0]\',\'nativeVenueStoryPlayer\':r:\'[1]\',\'getPreviewThumbnailObservable\':f(s): g<c>:\'[2]\'<s>,\'actionHandler\':r:\'[3]\',\'getFormattedDistanceFromUser\':f(d@, d@): s,\'getCurrentViewport\':f?(): r?:\'[4]\',\'getCurrentUserLocation\':f?(): r?:\'[5]\',\'showHtmlDebugButton\':b@?,\'customSearchServiceDeployment\':s?,\'usePlaceDiscoveryStaging\':b@?,\'locationStore\':r:\'[6]\',\'friendStore\':r:\'[7]\',\'storySummaryInfoStore\':r:\'[8]\',\'storyPlayer\':r:\'[9]\',\'nativeUserStoryFetcher\':r:\'[10]\',\'getFriendBadgeInfo\':f(s): r?:\'[11]\',\'getFriendLocationContextObservable\':f(a<s>): g<c>:\'[2]\'<a<r:\'[12]\'>>,\'bottomPaddingObservable\':g?<c>:\'[2]\'<d@>,\'footstepsPivotVisibilityObservable\':g<c>:\'[2]\'<b@>"
+    typeReferences = {
+        Lcom/snap/venues/api/ComposerVenueFavoriteStore;,
+        Lcom/snap/venues/api/NativeVenueStoryPlayer;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;,
+        Lcom/snap/composer/location/GeoRect;,
+        Lcom/snap/composer/location/GeoPoint;,
+        Lcom/snap/composer/location/LocationStoring;,
+        Lcom/snap/composer/people/FriendStoring;,
+        Lcom/snap/composer/stories/StorySummaryInfoStoring;,
+        Lcom/snap/composer/storyplayer/IStoryPlayer;,
+        Lcom/snap/composer/storyplayer/INativeUserStoryFetcher;,
+        Lcom/snap/modules/map_cloud_footer_tray/MapCloudFooterFriendBadgeInfo;,
+        Lncb;
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:LG9b;
+.field private _actionHandler:Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;
 
-.field public final synthetic b:LH9b;
+.field private _bottomPaddingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private _composerVenueFavoritesStore:Lcom/snap/venues/api/ComposerVenueFavoriteStore;
+
+.field private _customSearchServiceDeployment:Ljava/lang/String;
+
+.field private _footstepsPivotVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private _friendStore:Lcom/snap/composer/people/FriendStoring;
+
+.field private _getCurrentUserLocation:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _getCurrentViewport:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+.field private _getFormattedDistanceFromUser:Lkotlin/jvm/functions/Function2;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function2;"
+        }
+    .end annotation
+.end field
+
+.field private _getFriendBadgeInfo:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
+
+.field private _getFriendLocationContextObservable:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
+
+.field private _getPreviewThumbnailObservable:Lkotlin/jvm/functions/Function1;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function1;"
+        }
+    .end annotation
+.end field
+
+.field private _locationStore:Lcom/snap/composer/location/LocationStoring;
+
+.field private _nativeUserStoryFetcher:Lcom/snap/composer/storyplayer/INativeUserStoryFetcher;
+
+.field private _nativeVenueStoryPlayer:Lcom/snap/venues/api/NativeVenueStoryPlayer;
+
+.field private _showHtmlDebugButton:Ljava/lang/Boolean;
+
+.field private _storyPlayer:Lcom/snap/composer/storyplayer/IStoryPlayer;
+
+.field private _storySummaryInfoStore:Lcom/snap/composer/stories/StorySummaryInfoStoring;
+
+.field private _usePlaceDiscoveryStaging:Ljava/lang/Boolean;
 
 
 # direct methods
-.method public constructor <init>(LG9b;LH9b;)V
+.method public constructor <init>(LX9b;LHQ5;LnXf;LFH7;LHU6;Lcom/snap/composer/location/LocationStoring;LSX7;Lcom/snap/composer/stories/StorySummaryInfoStoring;Lcom/snap/composer/storyplayer/IStoryPlayer;Lcom/snap/composer/storyplayer/INativeUserStoryFetcher;Lbc0;LnXf;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LF9b;->_composerVenueFavoritesStore:Lcom/snap/venues/api/ComposerVenueFavoriteStore;
+
     .line 3
+    iput-object p2, p0, LF9b;->_nativeVenueStoryPlayer:Lcom/snap/venues/api/NativeVenueStoryPlayer;
+
     .line 4
-    iput-object p1, p0, LF9b;->a:LG9b;
+    iput-object p3, p0, LF9b;->_getPreviewThumbnailObservable:Lkotlin/jvm/functions/Function1;
 
     .line 5
+    iput-object p4, p0, LF9b;->_actionHandler:Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;
+
     .line 6
-    iput-object p2, p0, LF9b;->b:LH9b;
+    iput-object p5, p0, LF9b;->_getFormattedDistanceFromUser:Lkotlin/jvm/functions/Function2;
+
+    const/4 p1, 0x0
 
     .line 7
+    iput-object p1, p0, LF9b;->_getCurrentViewport:Lkotlin/jvm/functions/Function0;
+
     .line 8
+    iput-object p1, p0, LF9b;->_getCurrentUserLocation:Lkotlin/jvm/functions/Function0;
+
+    .line 9
+    iput-object p1, p0, LF9b;->_showHtmlDebugButton:Ljava/lang/Boolean;
+
+    .line 10
+    iput-object p1, p0, LF9b;->_customSearchServiceDeployment:Ljava/lang/String;
+
+    .line 11
+    iput-object p1, p0, LF9b;->_usePlaceDiscoveryStaging:Ljava/lang/Boolean;
+
+    .line 12
+    iput-object p6, p0, LF9b;->_locationStore:Lcom/snap/composer/location/LocationStoring;
+
+    .line 13
+    iput-object p7, p0, LF9b;->_friendStore:Lcom/snap/composer/people/FriendStoring;
+
+    .line 14
+    iput-object p8, p0, LF9b;->_storySummaryInfoStore:Lcom/snap/composer/stories/StorySummaryInfoStoring;
+
+    .line 15
+    iput-object p9, p0, LF9b;->_storyPlayer:Lcom/snap/composer/storyplayer/IStoryPlayer;
+
+    .line 16
+    iput-object p10, p0, LF9b;->_nativeUserStoryFetcher:Lcom/snap/composer/storyplayer/INativeUserStoryFetcher;
+
+    .line 17
+    iput-object p11, p0, LF9b;->_getFriendBadgeInfo:Lkotlin/jvm/functions/Function1;
+
+    .line 18
+    iput-object p12, p0, LF9b;->_getFriendLocationContextObservable:Lkotlin/jvm/functions/Function1;
+
+    .line 19
+    iput-object p1, p0, LF9b;->_bottomPaddingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 20
+    iput-object p13, p0, LF9b;->_footstepsPivotVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/snap/venues/api/ComposerVenueFavoriteStore;Lcom/snap/venues/api/NativeVenueStoryPlayer;Lkotlin/jvm/functions/Function1;Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/Boolean;Lcom/snap/composer/location/LocationStoring;Lcom/snap/composer/people/FriendStoring;Lcom/snap/composer/stories/StorySummaryInfoStoring;Lcom/snap/composer/storyplayer/IStoryPlayer;Lcom/snap/composer/storyplayer/INativeUserStoryFetcher;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/venues/api/ComposerVenueFavoriteStore;",
+            "Lcom/snap/venues/api/NativeVenueStoryPlayer;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Ljava/lang/Boolean;",
+            "Ljava/lang/String;",
+            "Ljava/lang/Boolean;",
+            "Lcom/snap/composer/location/LocationStoring;",
+            "Lcom/snap/composer/people/FriendStoring;",
+            "Lcom/snap/composer/stories/StorySummaryInfoStoring;",
+            "Lcom/snap/composer/storyplayer/IStoryPlayer;",
+            "Lcom/snap/composer/storyplayer/INativeUserStoryFetcher;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Double;",
+            ">;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 21
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 22
+    iput-object p1, p0, LF9b;->_composerVenueFavoritesStore:Lcom/snap/venues/api/ComposerVenueFavoriteStore;
+
+    .line 23
+    iput-object p2, p0, LF9b;->_nativeVenueStoryPlayer:Lcom/snap/venues/api/NativeVenueStoryPlayer;
+
+    .line 24
+    iput-object p3, p0, LF9b;->_getPreviewThumbnailObservable:Lkotlin/jvm/functions/Function1;
+
+    .line 25
+    iput-object p4, p0, LF9b;->_actionHandler:Lcom/snap/mapcloudfooter/MapCloudFooterTrayActionHandler;
+
+    .line 26
+    iput-object p5, p0, LF9b;->_getFormattedDistanceFromUser:Lkotlin/jvm/functions/Function2;
+
+    .line 27
+    iput-object p6, p0, LF9b;->_getCurrentViewport:Lkotlin/jvm/functions/Function0;
+
+    .line 28
+    iput-object p7, p0, LF9b;->_getCurrentUserLocation:Lkotlin/jvm/functions/Function0;
+
+    .line 29
+    iput-object p8, p0, LF9b;->_showHtmlDebugButton:Ljava/lang/Boolean;
+
+    .line 30
+    iput-object p9, p0, LF9b;->_customSearchServiceDeployment:Ljava/lang/String;
+
+    .line 31
+    iput-object p10, p0, LF9b;->_usePlaceDiscoveryStaging:Ljava/lang/Boolean;
+
+    .line 32
+    iput-object p11, p0, LF9b;->_locationStore:Lcom/snap/composer/location/LocationStoring;
+
+    .line 33
+    iput-object p12, p0, LF9b;->_friendStore:Lcom/snap/composer/people/FriendStoring;
+
+    .line 34
+    iput-object p13, p0, LF9b;->_storySummaryInfoStore:Lcom/snap/composer/stories/StorySummaryInfoStoring;
+
+    .line 35
+    iput-object p14, p0, LF9b;->_storyPlayer:Lcom/snap/composer/storyplayer/IStoryPlayer;
+
+    .line 36
+    iput-object p15, p0, LF9b;->_nativeUserStoryFetcher:Lcom/snap/composer/storyplayer/INativeUserStoryFetcher;
+
+    move-object/from16 p1, p16
+
+    .line 37
+    iput-object p1, p0, LF9b;->_getFriendBadgeInfo:Lkotlin/jvm/functions/Function1;
+
+    move-object/from16 p1, p17
+
+    .line 38
+    iput-object p1, p0, LF9b;->_getFriendLocationContextObservable:Lkotlin/jvm/functions/Function1;
+
+    move-object/from16 p1, p18
+
+    .line 39
+    iput-object p1, p0, LF9b;->_bottomPaddingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    move-object/from16 p1, p19
+
+    .line 40
+    iput-object p1, p0, LF9b;->_footstepsPivotVisibilityObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 10
+.method public final a(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    .locals 0
 
     .line 1
-    check-cast p1, Lcom/snapchat/client/snap_maps_sdk/MapSdk;
+    iput-object p1, p0, LF9b;->_bottomPaddingObservable:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 2
     .line 3
-    new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResourcesRequest;
+    return-void
+.end method
 
-    .line 4
-    .line 5
-    invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResourcesRequest;-><init>()V
+.method public final b(Ljava/lang/String;)V
+    .locals 0
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LF9b;->b:LH9b;
+    .line 1
+    iput-object p1, p0, LF9b;->_customSearchServiceDeployment:Ljava/lang/String;
 
-    .line 9
-    .line 10
-    iget-object v1, v1, LH9b;->k0:[LcLd;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 11
-    .line 12
-    iget-object v2, p0, LF9b;->a:LG9b;
+.method public final c(Lkotlin/jvm/functions/Function0;)V
+    .locals 0
 
-    .line 13
-    .line 14
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 1
+    iput-object p1, p0, LF9b;->_getCurrentUserLocation:Lkotlin/jvm/functions/Function0;
 
-    .line 15
-    .line 16
-    .line 17
-    new-instance v3, Ljava/util/ArrayList;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 18
-    .line 19
-    array-length v4, v1
+.method public final d(Lkotlin/jvm/functions/Function0;)V
+    .locals 0
 
-    .line 20
-    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(I)V
+    .line 1
+    iput-object p1, p0, LF9b;->_getCurrentViewport:Lkotlin/jvm/functions/Function0;
 
-    .line 21
-    .line 22
-    .line 23
-    array-length v4, v1
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 24
-    const/4 v5, 0x0
+.method public final e(Ljava/lang/Boolean;)V
+    .locals 0
 
-    .line 25
-    const/4 v6, 0x0
+    .line 1
+    iput-object p1, p0, LF9b;->_showHtmlDebugButton:Ljava/lang/Boolean;
 
-    .line 26
-    :goto_0
-    if-ge v6, v4, :cond_2
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 27
-    .line 28
-    aget-object v7, v1, v6
+.method public final f(Ljava/lang/Boolean;)V
+    .locals 0
 
-    .line 29
-    .line 30
-    new-instance v8, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;
+    .line 1
+    iput-object p1, p0, LF9b;->_usePlaceDiscoveryStaging:Ljava/lang/Boolean;
 
-    .line 31
-    .line 32
-    invoke-direct {v8}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;-><init>()V
-
-    .line 33
-    .line 34
-    .line 35
-    iget-object v9, v7, LcLd;->c:Ljava/lang/String;
-
-    .line 36
-    .line 37
-    if-eqz v9, :cond_0
-
-    .line 38
-    .line 39
-    invoke-virtual {v8, v9}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;->setUrl(Ljava/lang/String;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;
-
-    .line 40
-    .line 41
-    .line 42
-    :cond_0
-    iget v9, v7, LcLd;->a:I
-
-    .line 43
-    .line 44
-    and-int/lit8 v9, v9, 0x1
-
-    .line 45
-    .line 46
-    if-eqz v9, :cond_1
-
-    .line 47
-    .line 48
-    iget v7, v7, LcLd;->b:I
-
-    .line 49
-    .line 50
-    invoke-virtual {v8, v7}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;->setMethod(I)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;
-
-    .line 51
-    .line 52
-    .line 53
-    :cond_1
-    invoke-virtual {v3, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 54
-    .line 55
-    .line 56
-    add-int/lit8 v6, v6, 0x1
-
-    .line 57
-    .line 58
-    goto :goto_0
-
-    .line 59
-    :cond_2
-    new-array v1, v5, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;
-
-    .line 60
-    .line 61
-    invoke-virtual {v3, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v1
-
-    .line 65
-    check-cast v1, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;
-
-    .line 66
-    .line 67
-    iput-object v1, v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResourcesRequest;->prefetchResources:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResource;
-
-    .line 68
-    .line 69
-    iget-object v1, v2, LG9b;->b:Lcom/snap/mushroom/app/MushroomApplication;
-
-    .line 70
-    .line 71
-    invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object v1
-
-    .line 75
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v1
-
-    .line 79
-    iget v1, v1, Landroid/util/DisplayMetrics;->density:F
-
-    .line 80
-    .line 81
-    invoke-virtual {v0, v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResourcesRequest;->setDevicePixelRatio(F)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResourcesRequest;
-
-    .line 82
-    .line 83
-    .line 84
-    invoke-virtual {p1, v0}, Lcom/snapchat/client/snap_maps_sdk/MapSdk;->prefetchResources(Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PrefetchResourcesRequest;)V
-
-    .line 85
-    .line 86
-    .line 87
+    .line 2
+    .line 3
     return-void
 .end method

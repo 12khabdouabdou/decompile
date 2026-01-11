@@ -12,7 +12,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Ls4;->d(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, LX4;->e(Landroid/content/Context;)Landroid/content/Context;
 
     .line 2
     .line 3

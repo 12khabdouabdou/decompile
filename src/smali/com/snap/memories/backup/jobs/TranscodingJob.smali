@@ -1,39 +1,37 @@
 .class public final Lcom/snap/memories/backup/jobs/TranscodingJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "TRANSCODING_JOB"
-    metadataType = LqPi;
+    metadataType = LNej;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
-    new-instance v0, LKbc;
+    new-instance v0, LIhg;
 
-    const/16 v1, 0xa
-
-    invoke-direct {v0, v1}, LKbc;-><init>(I)V
+    invoke-direct {v0}, LIhg;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;LqPi;)V
+.method public constructor <init>(LRE6;LNej;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     .line 2
     .line 3

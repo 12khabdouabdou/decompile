@@ -67,7 +67,7 @@
 
 
 # virtual methods
-.method public final K0(Lio/reactivex/rxjava3/core/Observer;)V
+.method public final N0(Lio/reactivex/rxjava3/core/Observer;)V
     .locals 6
 
     .line 1

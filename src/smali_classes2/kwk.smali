@@ -1,615 +1,730 @@
 .class public final Lkwk;
-.super Ljava/lang/Object;
+.super Landroid/widget/CompoundButton;
 .source "SourceFile"
 
 
 # static fields
-.field public static k:Lpck;
+.field public static a:I = 0x0
 
-.field public static final l:LJck;
-
-
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:LTvk;
-
-.field public final d:LSeg;
-
-.field public final e:LrAk;
-
-.field public final f:LrAk;
-
-.field public final g:Ljava/lang/String;
-
-.field public final h:I
-
-.field public final i:Ljava/util/HashMap;
-
-.field public final j:Ljava/util/HashMap;
+.field public static b:I = 0x1
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    const/4 v1, 0x0
-
-    .line 3
-    const/4 v2, 0x2
-
-    .line 4
-    new-array v2, v2, [Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    const-string v3, "optional-module-barcode"
-
-    .line 7
-    .line 8
-    aput-object v3, v2, v1
-
-    .line 9
-    .line 10
-    const-string v3, "com.google.android.gms.vision.barcode"
-
-    .line 11
-    .line 12
-    aput-object v3, v2, v0
-
-    .line 13
-    .line 14
-    aget-object v3, v2, v1
-
-    .line 15
-    .line 16
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 17
-    .line 18
-    .line 19
-    aget-object v0, v2, v0
-
-    .line 20
-    .line 21
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 22
-    .line 23
-    .line 24
-    new-instance v0, LJck;
-
-    .line 25
-    .line 26
-    invoke-direct {v0, v1, v2}, LJck;-><init>(I[Ljava/lang/Object;)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v0, Lkwk;->l:LJck;
-
-    .line 30
-    .line 31
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;LSeg;LTvk;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/cardinalcommerce/shared/cs/userinterfaces/ChallengeNativeView;)V
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Landroid/widget/CompoundButton;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Ljava/util/HashMap;
+    sget p1, Lkwk;->a:I
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    or-int/lit8 v0, p1, 0x55
 
     .line 7
     .line 8
+    shl-int/lit8 v0, v0, 0x1
+
     .line 9
-    iput-object v0, p0, Lkwk;->i:Ljava/util/HashMap;
-
     .line 10
-    .line 11
-    new-instance v0, Ljava/util/HashMap;
+    xor-int/lit8 p1, p1, 0x55
 
+    .line 11
     .line 12
+    sub-int/2addr v0, p1
+
     .line 13
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    rem-int/lit16 v0, v0, 0x80
 
     .line 14
     .line 15
+    sput v0, Lkwk;->b:I
+
     .line 16
-    iput-object v0, p0, Lkwk;->j:Ljava/util/HashMap;
-
     .line 17
-    .line 18
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    const/16 p1, 0x14
 
+    .line 18
     .line 19
+    const/16 v0, 0x1c
+
     .line 20
     .line 21
-    move-result-object v0
+    const/4 v1, 0x4
 
     .line 22
-    iput-object v0, p0, Lkwk;->a:Ljava/lang/String;
+    invoke-super {p0, p1, v1, v0, v1}, Landroid/widget/CompoundButton;->setPadding(IIII)V
 
     .line 23
     .line 24
-    invoke-static {p1}, Lvo3;->a(Landroid/content/Context;)Ljava/lang/String;
-
     .line 25
+    sget p1, Lkwk;->b:I
+
     .line 26
     .line 27
-    move-result-object v0
+    and-int/lit8 v0, p1, 0x37
 
     .line 28
-    iput-object v0, p0, Lkwk;->b:Ljava/lang/String;
-
     .line 29
-    .line 30
-    iput-object p2, p0, Lkwk;->d:LSeg;
+    or-int/lit8 p1, p1, 0x37
 
+    .line 30
     .line 31
+    add-int/2addr v0, p1
+
     .line 32
-    iput-object p3, p0, Lkwk;->c:LTvk;
+    rem-int/lit16 p1, v0, 0x80
 
     .line 33
     .line 34
-    invoke-static {}, Lxwk;->a()V
+    sput p1, Lkwk;->a:I
 
     .line 35
     .line 36
+    rem-int/lit8 v0, v0, 0x2
+
     .line 37
-    iput-object p4, p0, Lkwk;->g:Ljava/lang/String;
-
     .line 38
-    .line 39
-    invoke-static {}, LBx;->b()LBx;
+    if-eqz v0, :cond_0
 
+    .line 39
     .line 40
+    const/16 p1, 0x2c
+
     .line 41
     .line 42
-    move-result-object p3
+    div-int/lit8 p1, p1, 0x0
 
     .line 43
-    new-instance v0, Leuk;
-
     .line 44
+    :cond_0
+    const p1, 0x7f080429
+
     .line 45
-    const/4 v1, 0x1
-
     .line 46
-    invoke-direct {v0, v1, p0}, Leuk;-><init>(ILjava/lang/Object;)V
-
     .line 47
+    invoke-virtual {p0, p1}, Lkwk;->a(I)V
+
     .line 48
     .line 49
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 50
+    new-instance p1, Landroid/widget/LinearLayout$LayoutParams;
+
     .line 51
     .line 52
-    invoke-static {v0}, LBx;->c(Ljava/util/concurrent/Callable;)LrAk;
+    const/4 v0, -0x2
 
     .line 53
+    invoke-direct {p1, v0, v0}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
     .line 54
     .line 55
-    move-result-object p3
-
     .line 56
-    iput-object p3, p0, Lkwk;->e:LrAk;
+    const/16 v0, 0x10
 
     .line 57
     .line 58
-    invoke-static {}, LBx;->b()LBx;
+    const/16 v1, 0x8
 
     .line 59
     .line 60
+    invoke-virtual {p1, v1, v1, v1, v0}, Landroid/view/ViewGroup$MarginLayoutParams;->setMargins(IIII)V
+
     .line 61
-    move-result-object p3
-
     .line 62
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 63
+    invoke-virtual {p0, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
     .line 64
     .line 65
-    new-instance v0, Lhuk;
-
     .line 66
-    .line 67
-    invoke-direct {v0, p2, v1}, Lhuk;-><init>(LSeg;I)V
+    sget p1, Lkwk;->b:I
 
+    .line 67
     .line 68
+    xor-int/lit8 v0, p1, 0x73
+
     .line 69
     .line 70
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    and-int/lit8 v1, p1, 0x73
 
     .line 71
     .line 72
+    or-int/2addr v0, v1
+
     .line 73
-    invoke-static {v0}, LBx;->c(Ljava/util/concurrent/Callable;)LrAk;
+    shl-int/lit8 v0, v0, 0x1
 
     .line 74
     .line 75
+    not-int v1, v1
+
     .line 76
-    move-result-object p2
+    or-int/lit8 p1, p1, 0x73
 
     .line 77
-    iput-object p2, p0, Lkwk;->f:LrAk;
-
     .line 78
+    and-int/2addr p1, v1
+
     .line 79
-    sget-object p2, Lkwk;->l:LJck;
+    neg-int p1, p1
 
     .line 80
-    .line 81
-    invoke-virtual {p2, p4}, LJck;->containsKey(Ljava/lang/Object;)Z
+    or-int v1, v0, p1
 
+    .line 81
     .line 82
+    shl-int/lit8 v1, v1, 0x1
+
     .line 83
     .line 84
-    move-result p3
+    xor-int/2addr p1, v0
 
     .line 85
-    if-eqz p3, :cond_0
+    sub-int/2addr v1, p1
 
     .line 86
-    .line 87
-    invoke-virtual {p2, p4}, LJck;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    rem-int/lit16 p1, v1, 0x80
 
+    .line 87
     .line 88
+    sput p1, Lkwk;->a:I
+
     .line 89
     .line 90
-    move-result-object p2
+    rem-int/lit8 v1, v1, 0x2
 
     .line 91
-    check-cast p2, Ljava/lang/String;
-
     .line 92
-    .line 93
-    const/4 p3, 0x0
+    if-nez v1, :cond_2
 
+    .line 93
     .line 94
-    invoke-static {p1, p2, p3}, LCF6;->d(Landroid/content/Context;Ljava/lang/String;Z)I
+    and-int/lit8 v0, p1, 0x11
 
     .line 95
     .line 96
+    not-int v1, v0
+
     .line 97
-    move-result p1
+    or-int/lit8 p1, p1, 0x11
 
     .line 98
-    goto :goto_0
-
     .line 99
-    :cond_0
-    const/4 p1, -0x1
+    and-int/2addr p1, v1
 
     .line 100
-    :goto_0
-    iput p1, p0, Lkwk;->h:I
+    shl-int/lit8 v0, v0, 0x1
 
     .line 101
     .line 102
+    or-int v1, p1, v0
+
+    .line 103
+    .line 104
+    shl-int/lit8 v1, v1, 0x1
+
+    .line 105
+    .line 106
+    xor-int/2addr p1, v0
+
+    .line 107
+    sub-int/2addr v1, p1
+
+    .line 108
+    rem-int/lit16 p1, v1, 0x80
+
+    .line 109
+    .line 110
+    sput p1, Lkwk;->b:I
+
+    .line 111
+    .line 112
+    rem-int/lit8 v1, v1, 0x2
+
+    .line 113
+    .line 114
+    if-nez v1, :cond_1
+
+    .line 115
+    .line 116
+    const/16 p1, 0x4e
+
+    .line 117
+    .line 118
+    div-int/lit8 p1, p1, 0x0
+
+    .line 119
+    .line 120
+    :cond_1
     return-void
-.end method
 
-.method public static a(Ljava/util/ArrayList;D)J
-    .locals 2
+    .line 121
+    :cond_2
+    const/4 p1, 0x0
 
-    .line 1
-    const-wide/high16 v0, 0x4059000000000000L    # 100.0
-
-    .line 2
-    .line 3
-    div-double/2addr p1, v0
-
-    .line 4
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result v0
-
-    .line 8
-    int-to-double v0, v0
-
-    .line 9
-    mul-double p1, p1, v0
-
-    .line 10
-    .line 11
-    invoke-static {p1, p2}, Ljava/lang/Math;->ceil(D)D
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-wide p1
-
-    .line 15
-    double-to-int p1, p1
-
-    .line 16
-    add-int/lit8 p1, p1, -0x1
-
-    .line 17
-    .line 18
-    const/4 p2, 0x0
-
-    .line 19
-    invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p1
-
-    .line 23
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p0
-
-    .line 27
-    check-cast p0, Ljava/lang/Long;
-
-    .line 28
-    .line 29
-    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-wide p0
-
-    .line 33
-    return-wide p0
+    .line 122
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final b(Lhwk;LQrk;)V
-    .locals 9
+.method public final a(I)V
+    .locals 3
 
     .line 1
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+    sget v0, Lkwk;->a:I
 
     .line 2
     .line 3
-    .line 4
-    move-result-wide v0
+    and-int/lit8 v1, v0, 0x53
 
+    .line 4
     .line 5
-    invoke-virtual {p0, p2, v0, v1}, Lkwk;->d(LQrk;J)Z
+    xor-int/lit8 v0, v0, 0x53
 
     .line 6
     .line 7
+    or-int/2addr v0, v1
+
     .line 8
-    move-result v2
+    or-int v2, v1, v0
 
     .line 9
-    if-nez v2, :cond_0
-
     .line 10
+    shl-int/lit8 v2, v2, 0x1
+
     .line 11
+    .line 12
+    xor-int/2addr v0, v1
+
+    .line 13
+    sub-int/2addr v2, v0
+
+    .line 14
+    rem-int/lit16 v0, v2, 0x80
+
+    .line 15
+    .line 16
+    sput v0, Lkwk;->b:I
+
+    .line 17
+    .line 18
+    rem-int/lit8 v2, v2, 0x2
+
+    .line 19
+    .line 20
+    invoke-super {p0, p1}, Landroid/widget/CompoundButton;->setButtonDrawable(I)V
+
+    .line 21
+    .line 22
+    .line 23
+    if-eqz v2, :cond_0
+
+    .line 24
+    .line 25
     return-void
 
-    .line 12
+    .line 26
     :cond_0
-    iget-object v2, p0, Lkwk;->i:Ljava/util/HashMap;
+    const/4 p1, 0x0
+
+    .line 27
+    throw p1
+.end method
+
+.method public final b(LL5;)V
+    .locals 2
+
+    .line 1
+    sget v0, Lkwk;->b:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v1, v0, 0x4d
+
+    .line 4
+    .line 5
+    or-int/lit8 v0, v0, 0x4d
+
+    .line 6
+    .line 7
+    add-int/2addr v1, v0
+
+    .line 8
+    rem-int/lit16 v0, v1, 0x80
+
+    .line 9
+    .line 10
+    sput v0, Lkwk;->a:I
+
+    .line 11
+    .line 12
+    rem-int/lit8 v1, v1, 0x2
 
     .line 13
     .line 14
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-super {p0, p1}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 15
     .line 16
     .line 17
-    move-result-object v0
+    if-nez v1, :cond_0
 
     .line 18
-    invoke-virtual {v2, p2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 19
+    return-void
+
+    .line 20
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 21
+    throw p1
+.end method
+
+.method public final c(Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    sget v0, Lkwk;->a:I
+
+    .line 2
+    .line 3
+    or-int/lit8 v1, v0, 0x55
+
+    .line 4
+    .line 5
+    shl-int/lit8 v1, v1, 0x1
+
+    .line 6
+    .line 7
+    xor-int/lit8 v0, v0, 0x55
+
+    .line 8
+    .line 9
+    sub-int/2addr v1, v0
+
+    .line 10
+    rem-int/lit16 v0, v1, 0x80
+
+    .line 11
+    .line 12
+    sput v0, Lkwk;->b:I
+
+    .line 13
+    .line 14
+    rem-int/lit8 v1, v1, 0x2
+
+    .line 15
+    .line 16
+    sget-object v0, Landroid/widget/TextView$BufferType;->EDITABLE:Landroid/widget/TextView$BufferType;
+
+    .line 17
+    .line 18
+    invoke-super {p0, p1, v0}, Landroid/widget/CompoundButton;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
     .line 19
     .line 20
     .line 21
-    invoke-interface {p1}, Lhwk;->a()LC3j;
+    if-nez v1, :cond_0
 
     .line 22
     .line 23
-    .line 24
-    move-result-object v5
+    const/16 p1, 0x40
 
+    .line 24
     .line 25
-    invoke-virtual {p0}, Lkwk;->c()Ljava/lang/String;
+    div-int/lit8 p1, p1, 0x0
 
     .line 26
     .line 27
-    .line 28
-    move-result-object v7
+    :cond_0
+    sget p1, Lkwk;->b:I
 
+    .line 28
     .line 29
-    sget-object p1, Ltlk;->a:Ltlk;
+    and-int/lit8 v0, p1, 0x2d
 
     .line 30
     .line 31
-    new-instance v3, Lw3f;
+    or-int/lit8 p1, p1, 0x2d
 
     .line 32
     .line 33
-    const/16 v8, 0xd
+    and-int v1, v0, p1
 
     .line 34
     .line 35
-    move-object v4, p0
+    or-int/2addr p1, v0
 
     .line 36
-    move-object v6, p2
+    add-int/2addr v1, p1
 
     .line 37
-    invoke-direct/range {v3 .. v8}, Lw3f;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    rem-int/lit16 p1, v1, 0x80
 
     .line 38
     .line 39
-    .line 40
-    invoke-virtual {p1, v3}, Ltlk;->execute(Ljava/lang/Runnable;)V
+    sput p1, Lkwk;->a:I
 
+    .line 40
     .line 41
+    rem-int/lit8 v1, v1, 0x2
+
     .line 42
     .line 43
+    if-nez v1, :cond_1
+
+    .line 44
+    .line 45
     return-void
-.end method
 
-.method public final c()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lkwk;->e:LrAk;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LrAk;->g()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v1
-
-    .line 7
-    if-eqz v1, :cond_0
-
-    .line 8
-    .line 9
-    invoke-virtual {v0}, LrAk;->e()Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    check-cast v0, Ljava/lang/String;
-
-    .line 14
-    .line 15
-    return-object v0
-
-    .line 16
-    :cond_0
-    sget-object v0, LOka;->c:LOka;
-
-    .line 17
-    .line 18
-    iget-object v1, p0, Lkwk;->g:Ljava/lang/String;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, LOka;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    return-object v0
-.end method
-
-.method public final d(LQrk;J)Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lkwk;->i:Ljava/util/HashMap;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v1
-
-    .line 7
-    if-nez v1, :cond_0
-
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_0
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    check-cast p1, Ljava/lang/Long;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-wide v0
-
-    .line 20
-    sub-long/2addr p2, v0
-
-    .line 21
-    sget-object p1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 22
-    .line 23
-    const-wide/16 v0, 0x1e
-
-    .line 24
-    .line 25
-    invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-wide v0
-
-    .line 29
-    cmp-long p1, p2, v0
-
-    .line 30
-    .line 31
-    if-lez p1, :cond_1
-
-    .line 32
-    .line 33
-    :goto_0
-    const/4 p1, 0x1
-
-    .line 34
-    return p1
-
-    .line 35
+    .line 46
     :cond_1
     const/4 p1, 0x0
 
-    .line 36
-    return p1
+    .line 47
+    throw p1
+.end method
+
+.method public final getText()Ljava/lang/CharSequence;
+    .locals 2
+
+    .line 1
+    sget v0, Lkwk;->b:I
+
+    .line 2
+    .line 3
+    or-int/lit8 v1, v0, 0x62
+
+    .line 4
+    .line 5
+    shl-int/lit8 v1, v1, 0x1
+
+    .line 6
+    .line 7
+    xor-int/lit8 v0, v0, 0x62
+
+    .line 8
+    .line 9
+    sub-int/2addr v1, v0
+
+    .line 10
+    xor-int/lit8 v0, v1, -0x1
+
+    .line 11
+    .line 12
+    rsub-int/lit8 v0, v0, -0x2
+
+    .line 13
+    .line 14
+    rem-int/lit16 v0, v0, 0x80
+
+    .line 15
+    .line 16
+    sput v0, Lkwk;->a:I
+
+    .line 17
+    .line 18
+    const-string v0, "*"
+
+    .line 19
+    .line 20
+    return-object v0
+.end method
+
+.method public final setButtonDrawable(I)V
+    .locals 2
+
+    .line 1
+    sget p1, Lkwk;->a:I
+
+    .line 2
+    .line 3
+    xor-int/lit8 v0, p1, 0x6b
+
+    .line 4
+    .line 5
+    and-int/lit8 v1, p1, 0x6b
+
+    .line 6
+    .line 7
+    or-int/2addr v0, v1
+
+    .line 8
+    shl-int/lit8 v0, v0, 0x1
+
+    .line 9
+    .line 10
+    not-int v1, v1
+
+    .line 11
+    or-int/lit8 p1, p1, 0x6b
+
+    .line 12
+    .line 13
+    and-int/2addr p1, v1
+
+    .line 14
+    sub-int/2addr v0, p1
+
+    .line 15
+    rem-int/lit16 v0, v0, 0x80
+
+    .line 16
+    .line 17
+    sput v0, Lkwk;->b:I
+
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method public final setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    .locals 2
+
+    .line 1
+    sget p1, Lkwk;->b:I
+
+    .line 2
+    .line 3
+    xor-int/lit8 v0, p1, 0x1d
+
+    .line 4
+    .line 5
+    and-int/lit8 p1, p1, 0x1d
+
+    .line 6
+    .line 7
+    or-int/2addr p1, v0
+
+    .line 8
+    shl-int/lit8 p1, p1, 0x1
+
+    .line 9
+    .line 10
+    neg-int v0, v0
+
+    .line 11
+    or-int v1, p1, v0
+
+    .line 12
+    .line 13
+    shl-int/lit8 v1, v1, 0x1
+
+    .line 14
+    .line 15
+    xor-int/2addr p1, v0
+
+    .line 16
+    sub-int/2addr v1, p1
+
+    .line 17
+    rem-int/lit16 p1, v1, 0x80
+
+    .line 18
+    .line 19
+    sput p1, Lkwk;->a:I
+
+    .line 20
+    .line 21
+    rem-int/lit8 v1, v1, 0x2
+
+    .line 22
+    .line 23
+    if-eqz v1, :cond_0
+
+    .line 24
+    .line 25
+    const/16 p1, 0x44
+
+    .line 26
+    .line 27
+    div-int/lit8 p1, p1, 0x0
+
+    .line 28
+    .line 29
+    :cond_0
+    return-void
+.end method
+
+.method public final setPadding(IIII)V
+    .locals 0
+
+    .line 1
+    sget p1, Lkwk;->a:I
+
+    .line 2
+    .line 3
+    or-int/lit8 p2, p1, 0x54
+
+    .line 4
+    .line 5
+    shl-int/lit8 p2, p2, 0x1
+
+    .line 6
+    .line 7
+    xor-int/lit8 p1, p1, 0x54
+
+    .line 8
+    .line 9
+    sub-int/2addr p2, p1
+
+    .line 10
+    add-int/lit8 p2, p2, -0x1
+
+    .line 11
+    .line 12
+    rem-int/lit16 p1, p2, 0x80
+
+    .line 13
+    .line 14
+    sput p1, Lkwk;->b:I
+
+    .line 15
+    .line 16
+    rem-int/lit8 p2, p2, 0x2
+
+    .line 17
+    .line 18
+    if-eqz p2, :cond_0
+
+    .line 19
+    .line 20
+    return-void
+
+    .line 21
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 22
+    throw p1
+.end method
+
+.method public final setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
+    .locals 0
+
+    .line 1
+    sget p1, Lkwk;->b:I
+
+    .line 2
+    .line 3
+    add-int/lit8 p1, p1, 0x55
+
+    .line 4
+    .line 5
+    rem-int/lit16 p1, p1, 0x80
+
+    .line 6
+    .line 7
+    sput p1, Lkwk;->a:I
+
+    .line 8
+    .line 9
+    return-void
 .end method

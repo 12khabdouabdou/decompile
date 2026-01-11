@@ -1,278 +1,145 @@
-.class public final enum Lkgg;
-.super Ljava/lang/Enum;
+.class public final Lkgg;
+.super Lofg;
 .source "SourceFile"
 
-# interfaces
-.implements LdHc;
 
-
-# static fields
-.field public static final enum a:Lkgg;
-
-.field public static final enum b:Lkgg;
-
-.field public static final synthetic c:[Lkgg;
+# instance fields
+.field public final a:LE7h;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(LE7h;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lkgg;->a:LE7h;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    const/4 v1, 0x0
+    if-ne p0, p1, :cond_0
 
     .line 3
-    new-instance v2, Lkgg;
-
     .line 4
+    return v0
+
     .line 5
-    const-string v3, "SHARE"
+    :cond_0
+    instance-of v1, p1, Lkgg;
 
     .line 6
     .line 7
-    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v2, 0x0
 
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
     .line 10
-    sput-object v2, Lkgg;->a:Lkgg;
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lkgg;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lkgg;->a:LE7h;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, Lkgg;->a:LE7h;
+
+    .line 16
+    .line 17
+    if-eq v1, p1, :cond_2
+
+    .line 18
+    .line 19
+    return v2
+
+    .line 20
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lkgg;->a:LE7h;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SendToSpotlightValidationSelectionEvent(snapPostValidation="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lkgg;->a:LE7h;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    new-instance v3, Lkgg;
-
     .line 13
+    const-string v1, ")"
+
     .line 14
-    const-string v4, "COPY_LINK"
-
     .line 15
-    .line 16
-    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 16
     .line 17
     .line 18
-    .line 19
-    sput-object v3, Lkgg;->b:Lkgg;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 19
     .line 20
     .line 21
-    const/4 v4, 0x2
+    move-result-object v0
 
     .line 22
-    new-array v4, v4, [Lkgg;
-
-    .line 23
-    .line 24
-    aput-object v2, v4, v1
-
-    .line 25
-    .line 26
-    aput-object v3, v4, v0
-
-    .line 27
-    .line 28
-    sput-object v4, Lkgg;->c:[Lkgg;
-
-    .line 29
-    .line 30
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lkgg;
-    .locals 1
-
-    .line 1
-    const-class v0, Lkgg;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lkgg;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lkgg;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lkgg;->c:[Lkgg;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lkgg;
-
-    .line 8
-    .line 9
     return-object v0
-.end method
-
-
-# virtual methods
-.method public final b()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->F(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->D(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->I(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final f()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->k0(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final g()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final bridge synthetic getName()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final h()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->G(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final i()Z
-    .locals 0
-
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public final k()LfEc;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->w(LdHc;)LfEc;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final n()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->H(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
 .end method

@@ -23,23 +23,25 @@
 
 
 # static fields
-.field public static final synthetic X:[LZf5$a;
+.field public static final enum X:LZf5$a;
+
+.field public static final synthetic Y:[LZf5$a;
 
 .field public static final enum b:LZf5$a;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "noAction"
+        value = "TIME"
     .end annotation
 .end field
 
 .field public static final enum c:LZf5$a;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "addFriend"
+        value = "NUMERIC"
     .end annotation
 .end field
 
 .field public static final enum t:LZf5$a;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "view"
+        value = "ALPHANUMERIC"
     .end annotation
 .end field
 
@@ -57,117 +59,109 @@
 
     .line 2
     .line 3
-    const-string v1, "noAction"
+    const-string v1, "TIME"
 
     .line 4
     .line 5
-    const-string v2, "NOACTION"
+    const/4 v2, 0x0
 
     .line 6
+    invoke-direct {v0, v1, v2, v1}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+
     .line 7
-    const/4 v3, 0x0
-
     .line 8
-    invoke-direct {v0, v2, v3, v1}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
     .line 9
+    sput-object v0, LZf5$a;->b:LZf5$a;
+
     .line 10
     .line 11
-    sput-object v0, LZf5$a;->b:LZf5$a;
+    new-instance v1, LZf5$a;
 
     .line 12
     .line 13
-    new-instance v1, LZf5$a;
+    const-string v3, "NUMERIC"
 
     .line 14
     .line 15
-    const-string v2, "addFriend"
+    const/4 v4, 0x1
 
     .line 16
-    .line 17
-    const-string v4, "ADDFRIEND"
+    invoke-direct {v1, v3, v4, v3}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 17
     .line 18
     .line 19
-    const/4 v5, 0x1
+    sput-object v1, LZf5$a;->c:LZf5$a;
 
     .line 20
-    invoke-direct {v1, v4, v5, v2}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
     .line 21
+    new-instance v3, LZf5$a;
+
     .line 22
     .line 23
-    sput-object v1, LZf5$a;->c:LZf5$a;
+    const-string v5, "ALPHANUMERIC"
 
     .line 24
     .line 25
-    new-instance v2, LZf5$a;
+    const/4 v6, 0x2
 
     .line 26
-    .line 27
-    const-string v4, "view"
+    invoke-direct {v3, v5, v6, v5}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 27
     .line 28
     .line 29
-    const-string v6, "VIEW"
+    sput-object v3, LZf5$a;->t:LZf5$a;
 
     .line 30
     .line 31
-    const/4 v7, 0x2
+    new-instance v5, LZf5$a;
 
     .line 32
-    invoke-direct {v2, v6, v7, v4}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
-
     .line 33
+    const-string v7, "UNRECOGNIZED_VALUE"
+
     .line 34
     .line 35
-    sput-object v2, LZf5$a;->t:LZf5$a;
+    const/4 v8, 0x3
 
     .line 36
-    .line 37
-    new-instance v4, LZf5$a;
+    invoke-direct {v5, v7, v8, v7}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
+    .line 37
     .line 38
     .line 39
-    const-string v6, "UNRECOGNIZED_VALUE"
+    sput-object v5, LZf5$a;->X:LZf5$a;
 
     .line 40
     .line 41
-    const/4 v8, 0x3
+    const/4 v7, 0x4
 
     .line 42
-    invoke-direct {v4, v6, v8, v6}, LZf5$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
+    new-array v7, v7, [LZf5$a;
 
     .line 43
     .line 44
-    .line 45
-    const/4 v6, 0x4
+    aput-object v0, v7, v2
 
+    .line 45
     .line 46
-    new-array v6, v6, [LZf5$a;
+    aput-object v1, v7, v4
 
     .line 47
     .line 48
-    aput-object v0, v6, v3
+    aput-object v3, v7, v6
 
     .line 49
     .line 50
-    aput-object v1, v6, v5
+    aput-object v5, v7, v8
 
     .line 51
     .line 52
-    aput-object v2, v6, v7
+    sput-object v7, LZf5$a;->Y:[LZf5$a;
 
     .line 53
     .line 54
-    aput-object v4, v6, v8
-
-    .line 55
-    .line 56
-    sput-object v6, LZf5$a;->X:[LZf5$a;
-
-    .line 57
-    .line 58
     return-void
 .end method
 
@@ -185,6 +179,52 @@
     .line 5
     .line 6
     return-void
+.end method
+
+.method public static a(Ljava/lang/String;)LZf5$a;
+    .locals 2
+
+    .line 1
+    sget-object v0, LZf5$a;->X:LZf5$a;
+
+    .line 2
+    .line 3
+    if-nez p0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    :try_start_0
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    .line 7
+    .line 8
+    invoke-virtual {p0, v1}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    invoke-static {p0}, LZf5$a;->valueOf(Ljava/lang/String;)LZf5$a;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 16
+    return-object p0
+
+    .line 17
+    :catch_0
+    return-object v0
 .end method
 
 .method public static valueOf(Ljava/lang/String;)LZf5$a;
@@ -214,7 +254,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, LZf5$a;->X:[LZf5$a;
+    sget-object v0, LZf5$a;->Y:[LZf5$a;
 
     .line 2
     .line 3

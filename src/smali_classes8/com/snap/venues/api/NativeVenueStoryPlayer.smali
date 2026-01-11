@@ -7,13 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lwpc;
-    schema = "\'launchPlayback\':f|m|(s, r:\'[0]\', r:\'[1]\'): g<c>:\'[2]\'<b@>,\'launchOrderedPlayback\':f|m|(s, r:\'[0]\', s, r:\'[1]\', r<e>:\'[3]\'): g<c>:\'[2]\'<b@>"
+    proxyClass = LREc;
+    schema = "\'launchPlayback\':f|m|(s, r:\'[0]\', r:\'[1]\', r?<e>:\'[2]\'): g<c>:\'[3]\'<b@>,\'launchOrderedPlayback\':f|m|(s, r:\'[0]\', s, r:\'[1]\', r<e>:\'[4]\'): g<c>:\'[3]\'<b@>"
     typeReferences = {
         Lcom/snap/composer/utils/Ref;,
         Lcom/snap/venues/api/VenueStoryAnalytics;,
+        Lcom/snap/venues/api/PlaceStoryProviderPhotoType;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
         Lcom/snap/venues/api/PlaceStoryPlaylistRankingType;
     }
@@ -38,13 +39,14 @@
     .end annotation
 .end method
 
-.method public abstract launchPlayback(Ljava/lang/String;Lcom/snap/composer/utils/Ref;Lcom/snap/venues/api/VenueStoryAnalytics;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+.method public abstract launchPlayback(Ljava/lang/String;Lcom/snap/composer/utils/Ref;Lcom/snap/venues/api/VenueStoryAnalytics;Lcom/snap/venues/api/PlaceStoryProviderPhotoType;)Lcom/snap/composer/bridge_observables/BridgeObservable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             "Lcom/snap/composer/utils/Ref;",
             "Lcom/snap/venues/api/VenueStoryAnalytics;",
+            "Lcom/snap/venues/api/PlaceStoryProviderPhotoType;",
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/lang/Boolean;",

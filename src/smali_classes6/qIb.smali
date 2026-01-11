@@ -1,81 +1,41 @@
-.class public abstract synthetic LqIb;
+.class public final LqIb;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:LCBe;
+
+.field public final b:LCBe;
+
+.field public final c:LXHb;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(LCBe;LCBe;)V
+    .locals 1
 
     .line 1
-    invoke-static {}, Lcom/snap/composer/memories/MemoriesPickerItemType;->values()[Lcom/snap/composer/memories/MemoriesPickerItemType;
+    sget-object v0, LXHb;->t:LXHb;
 
     .line 2
     .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p1, p0, LqIb;->a:LCBe;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lcom/snap/composer/memories/MemoriesPickerItemType;->MEMORIES:Lcom/snap/composer/memories/MemoriesPickerItemType;
+    iput-object p2, p0, LqIb;->b:LCBe;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iput-object v0, p0, LqIb;->c:LXHb;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
-
-    .line 14
-    const/4 v2, 0x1
-
-    .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 16
-    .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lcom/snap/composer/memories/MemoriesPickerItemType;->CAMERA_ROLL:Lcom/snap/composer/memories/MemoriesPickerItemType;
-
-    .line 18
-    .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v1
-
-    .line 23
-    const/4 v2, 0x2
-
-    .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 25
-    .line 26
-    :catch_1
-    sput-object v0, LqIb;->a:[I
-
-    .line 27
-    .line 28
     return-void
 .end method

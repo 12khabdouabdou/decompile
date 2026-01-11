@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'CRYSTAL_HUB_PAGE\':\'crystal-hub-page\',\'PAYOUTS_EARNING_DISMISS\':\'payouts-earnings-dismiss\',\'PAYOUTS_EARNING_SETTING\':\'payouts-earnings-settings\',\'FAQ\':\'payouts-settings-sheet-faq\',\'NEED_HELP\':\'payouts-settings-sheet-need-help\',\'CLOSE_BUTTON\':\'payouts-close-button\',\'INVALIDATED_DIALOG\':\'payouts-invalidated-dialog\',\'INVALIDATED_DIALOG_LINK\':\'payouts-invalidated-dialog-link\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

@@ -1,14 +1,14 @@
 .class public final LiW1;
-.super LkW1;
+.super LdUh;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lo09;
+.field public final d:Z
 
 
 # direct methods
-.method public constructor <init>(Lo09;)V
+.method public constructor <init>(Z)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LiW1;->a:Lo09;
+    iput-boolean p1, p0, LiW1;->d:Z
 
     .line 5
     .line 6
@@ -60,29 +60,21 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, LiW1;->a:Lo09;
+    iget-boolean v1, p0, LiW1;->d:Z
 
     .line 14
     .line 15
-    iget-object p1, p1, LiW1;->a:Lo09;
+    iget-boolean p1, p1, LiW1;->d:Z
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eq v1, p1, :cond_2
 
     .line 18
     .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-nez p1, :cond_2
-
-    .line 22
-    .line 23
     return v2
 
-    .line 24
+    .line 20
     :cond_2
     return v0
 .end method
@@ -91,22 +83,26 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, LiW1;->a:Lo09;
+    iget-boolean v0, p0, LiW1;->d:Z
 
     .line 2
     .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    const/16 v0, 0x4cf
 
     .line 6
     .line 7
+    return v0
+
     .line 8
-    move-result v0
+    :cond_0
+    const/16 v0, 0x4d5
 
     .line 9
+    .line 10
     return v0
 .end method
 
@@ -118,7 +114,7 @@
 
     .line 2
     .line 3
-    const-string v1, "Add(lensId="
+    const-string v1, "Supported(isFavorite="
 
     .line 4
     .line 5
@@ -127,7 +123,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LiW1;->a:Lo09;
+    iget-boolean v1, p0, LiW1;->d:Z
 
     .line 9
     .line 10
@@ -135,7 +131,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, LUl;->h(Ljava/lang/StringBuilder;Lo09;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
     .line 13
     .line 14

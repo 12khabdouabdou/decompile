@@ -1,33 +1,11 @@
-.class public final LJ9e;
-.super LnSc;
+.class public interface abstract LJ9e;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final e:LJ9e;
+# virtual methods
+.method public abstract a(ILjava/lang/String;)Z
+.end method
 
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, LJ9e;
-
-    .line 2
-    .line 3
-    sget-object v1, LK4j;->n2:LK4j;
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, LnSc;-><init>(LK4j;)V
-
-    .line 6
-    .line 7
-    .line 8
-    sput-object v0, LJ9e;->e:LJ9e;
-
-    .line 9
-    .line 10
-    return-void
+.method public abstract f(ILjava/lang/String;)V
 .end method

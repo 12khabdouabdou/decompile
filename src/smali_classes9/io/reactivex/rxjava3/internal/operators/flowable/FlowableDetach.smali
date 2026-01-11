@@ -36,7 +36,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 1
 
     .line 1
@@ -49,7 +49,7 @@
     .line 4
     .line 5
     .line 6
-    iput-object p1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDetach$DetachSubscriber;->a:LV6i;
+    iput-object p1, v0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDetach$DetachSubscriber;->a:Lmvi;
 
     .line 7
     .line 8

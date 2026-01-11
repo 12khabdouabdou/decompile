@@ -1,220 +1,185 @@
 .class public final Lbh6;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic X:J
+.field public final synthetic a:I
 
-.field public final synthetic Y:J
-
-.field public final synthetic Z:J
-
-.field public final synthetic a:J
-
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic c:Ljava/lang/String;
-
-.field public final synthetic t:Z
+.field public final synthetic b:Lch6;
 
 
 # direct methods
-.method public constructor <init>(JLjava/lang/String;Ljava/lang/String;ZJJJ)V
+.method public synthetic constructor <init>(Lch6;I)V
     .locals 0
 
     .line 1
-    iput-wide p1, p0, Lbh6;->a:J
+    iput p2, p0, Lbh6;->a:I
 
-    .line 2
-    .line 3
-    iput-object p3, p0, Lbh6;->b:Ljava/lang/String;
+    iput-object p1, p0, Lbh6;->b:Lch6;
 
-    .line 4
-    .line 5
-    iput-object p4, p0, Lbh6;->c:Ljava/lang/String;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    .line 7
-    iput-boolean p5, p0, Lbh6;->t:Z
-
-    .line 8
-    .line 9
-    iput-wide p6, p0, Lbh6;->X:J
-
-    .line 10
-    .line 11
-    iput-wide p8, p0, Lbh6;->Y:J
-
-    .line 12
-    .line 13
-    iput-wide p10, p0, Lbh6;->Z:J
-
-    .line 14
-    .line 15
-    const/4 p1, 0x1
-
-    .line 16
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    .line 17
-    .line 18
-    .line 19
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final accept(Ljava/lang/Object;)V
+    .locals 3
 
     .line 1
-    check-cast p1, LxR;
+    iget v0, p0, Lbh6;->a:I
 
     .line 2
     .line 3
-    iget-wide v0, p0, Lbh6;->a:J
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
     .line 6
+    check-cast p1, LXGc;
+
     .line 7
     .line 8
-    move-result-object v0
+    iget-object p1, p0, Lbh6;->b:Lch6;
 
     .line 9
-    const/4 v1, 0x0
-
     .line 10
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
+    iget-object v0, p1, Lch6;->u0:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 11
     .line 12
-    .line 13
-    const/4 v0, 0x1
+    new-instance v1, LXGc;
 
+    .line 13
     .line 14
-    iget-object v1, p0, Lbh6;->b:Ljava/lang/String;
+    invoke-virtual {p1}, Lch6;->E()Lmk6;
 
     .line 15
     .line 16
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
-
     .line 17
+    move-result-object p1
+
     .line 18
+    invoke-direct {v1, p1}, LXGc;-><init>(Lmk6;)V
+
     .line 19
-    const/4 v0, 0x2
-
     .line 20
-    iget-object v1, p0, Lbh6;->c:Ljava/lang/String;
-
     .line 21
-    .line 22
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
 
+    .line 22
     .line 23
     .line 24
+    return-void
+
     .line 25
-    iget-boolean v0, p0, Lbh6;->t:Z
+    :pswitch_0
+    check-cast p1, Lpm0;
 
     .line 26
     .line 27
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    iget v0, p1, Lpm0;->a:I
 
     .line 28
     .line 29
+    invoke-static {v0}, LzHa;->L(I)I
+
     .line 30
-    move-result-object v0
-
     .line 31
-    const/4 v1, 0x3
-
     .line 32
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
+    move-result v0
 
     .line 33
+    iget-object v1, p0, Lbh6;->b:Lch6;
+
     .line 34
     .line 35
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    iget-object p1, p1, Lpm0;->b:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 36
     .line 37
-    const/4 v1, 0x4
+    if-eqz v0, :cond_1
 
     .line 38
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
     .line 39
-    .line 40
-    .line 41
-    iget-wide v0, p0, Lbh6;->X:J
+    const/4 v2, 0x1
 
+    .line 40
+    if-eq v0, v2, :cond_0
+
+    .line 41
     .line 42
+    goto :goto_0
+
     .line 43
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    :cond_0
+    const/4 v0, 0x0
 
     .line 44
+    iput-object v0, v1, Lch6;->z0:Landroidx/recyclerview/widget/RecyclerView;
+
     .line 45
     .line 46
-    move-result-object v0
+    iget-object v0, v1, Lch6;->A0:LJ1;
 
     .line 47
-    const/4 v1, 0x5
-
     .line 48
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
+    invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->w0(LkYe;)V
 
     .line 49
     .line 50
     .line 51
-    iget-wide v0, p0, Lbh6;->Y:J
+    iget-object p1, v1, Lch6;->x0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 52
     .line 53
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
 
     .line 54
     .line 55
     .line 56
-    move-result-object v0
+    goto :goto_0
 
     .line 57
-    const/4 v1, 0x6
+    :cond_1
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 58
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
     .line 59
     .line 60
+    new-instance v0, LIA5;
+
     .line 61
-    iget-wide v0, p0, Lbh6;->Z:J
-
     .line 62
-    .line 63
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    const/16 v2, 0x1b
 
+    .line 63
     .line 64
+    invoke-direct {v0, v1, v2, p1}, LIA5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 65
     .line 66
-    move-result-object v0
-
     .line 67
-    const/4 v1, 0x7
+    const-string p1, "dfa:onAttachToRecyclerView"
 
     .line 68
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
     .line 69
+    invoke-static {p1, v0}, LNcj;->c(Ljava/lang/String;Ljava/lang/Runnable;)V
+
     .line 70
     .line 71
-    sget-object p1, Li7j;->a:Li7j;
-
     .line 72
+    :goto_0
+    return-void
+
     .line 73
-    return-object p1
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

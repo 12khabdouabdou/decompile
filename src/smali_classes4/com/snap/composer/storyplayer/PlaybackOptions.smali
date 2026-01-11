@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/PlaybackOptions;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'startWithUnviewed\':b,\'useCircleTransition\':b,\'contentViewSource\':s,\'showMetricsFooterBar\':b,\'allowSaveEntireStory\':b,\'asyncPlayback\':b@?,\'allowProfilePresentation\':b@?,\'isSpotlightPlayback\':b@?,\'storyAnalyticOptions\':r?:\'[0]\',\'p2pOptions\':r?:\'[1]\',\'moderationData\':r?:\'[2]\',\'useManagedPlayback\':b@?,\'managementContext\':r?:\'[3]\',\'useContentPlaybackScopePlayback\':b@?,\'allowSwipeRightToDismiss\':b@?,\'commentsTrayOptions\':r?:\'[4]\'"
     typeReferences = {

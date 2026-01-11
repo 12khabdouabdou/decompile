@@ -1,60 +1,81 @@
-.class public final LXh1;
+.class public abstract synthetic LXh1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public b:LiE2;
-
-.field public c:LVbd;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;->values()[Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    new-array v0, v0, [I
 
     .line 7
     .line 8
+    :try_start_0
+    sget-object v1, Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;->c:Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;
+
     .line 9
-    iput-object v0, p0, LXh1;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 10
-    .line 11
-    sget-object v0, Lkk1;->Z:Lkk1;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
     .line 12
     .line 13
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result v1
 
     .line 14
+    const/4 v2, 0x1
+
     .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 16
-    const-string v0, "BloopsChatParticipantsProviderImpl"
-
     .line 17
-    .line 18
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    :catch_0
+    :try_start_1
+    sget-object v1, Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;->t:Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;
 
+    .line 18
     .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 20
     .line 21
-    sget-object v0, Lrn0;->a:Lrn0;
-
     .line 22
+    move-result v1
+
     .line 23
+    const/4 v2, 0x2
+
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
+    .line 26
+    :catch_1
+    sput-object v0, LXh1;->a:[I
+
+    .line 27
+    .line 28
     return-void
 .end method

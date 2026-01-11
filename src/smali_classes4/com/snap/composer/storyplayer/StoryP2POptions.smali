@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/StoryP2POptions;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'shouldShowButton\':b@?,\'snapParentType\':r?:\'[0]\',\'snapParentId\':s?,\'profileId\':s?,\'source\':r?:\'[1]\',\'deeplinkReferrer\':s?,\'deeplinkHandlingId\':d@?,\'redirectToAdsTab\':f?()"
     typeReferences = {

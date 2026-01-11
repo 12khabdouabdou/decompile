@@ -1,5 +1,5 @@
 .class public abstract Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
@@ -17,43 +17,43 @@
         "ComposerViewContext:",
         "Ljava/lang/Object;",
         ">",
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
 
 # instance fields
-.field public final g:LA4f;
+.field public final g:Lvmf;
 
-.field public final h:LqZ8;
+.field public final h:LZ69;
 
 .field public i:Lcom/snap/composer/views/ComposerRootView;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LqZ8;)V
+.method public constructor <init>(Landroid/content/Context;LZ69;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->h:LqZ8;
+    iput-object p2, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->h:LZ69;
 
     .line 5
     .line 6
-    new-instance p2, LA4f;
+    new-instance p2, Lvmf;
 
     .line 7
     .line 8
-    invoke-direct {p2, p1}, LA4f;-><init>(Landroid/content/Context;)V
+    invoke-direct {p2, p1}, Lvmf;-><init>(Landroid/content/Context;)V
 
     .line 9
     .line 10
     .line 11
-    iput-object p2, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:LA4f;
+    iput-object p2, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:Lvmf;
 
     .line 12
     .line 13
@@ -70,7 +70,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:LA4f;
+    iget-object v1, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:Lvmf;
 
     .line 4
     .line 5
@@ -82,7 +82,7 @@
 
     .line 8
     :cond_0
-    invoke-virtual {p0}, LPG9;->d()Ljava/lang/Object;
+    invoke-virtual {p0}, LoS9;->d()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -106,11 +106,11 @@
     move-result-object v2
 
     .line 20
-    iget-object v3, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->h:LqZ8;
+    iget-object v3, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->h:LZ69;
 
     .line 21
     .line 22
-    invoke-virtual {p0, v3, v0, v2}, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->m(LqZ8;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
+    invoke-virtual {p0, v3, v0, v2}, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->m(LZ69;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
 
     .line 23
     .line 24
@@ -134,7 +134,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:LA4f;
+    iget-object v0, p0, Lcom/snap/opera/composer/ComposerBasedLayer$ComposerLayerView;->g:Lvmf;
 
     .line 2
     .line 3
@@ -199,7 +199,7 @@
 .method public abstract l()Ljava/lang/Object;
 .end method
 
-.method public abstract m(LqZ8;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
+.method public abstract m(LZ69;Ljava/lang/Object;Ljava/lang/Object;)Lcom/snap/composer/views/ComposerRootView;
 .end method
 
 .method public abstract n(Ljava/lang/Object;)Ljava/lang/Object;

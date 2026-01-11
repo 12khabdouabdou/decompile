@@ -1,233 +1,295 @@
-.class public final LYdi;
-.super Ljava/lang/Object;
+.class public final enum LYdi;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Z
+# static fields
+.field public static final enum X:LYdi;
 
-.field public final b:Ljava/lang/Long;
+.field public static final enum Y:LYdi;
+
+.field public static final enum Z:LYdi;
+
+.field public static final enum b:LYdi;
+
+.field public static final enum c:LYdi;
+
+.field public static final enum e0:LYdi;
+
+.field public static final synthetic f0:[LYdi;
+
+.field public static final enum t:LYdi;
+
+
+# instance fields
+.field public final a:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Long;Z)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 16
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LYdi;
 
     .line 2
     .line 3
-    .line 4
-    iput-boolean p2, p0, LYdi;->a:Z
+    const-string v1, "ONE_HOUR"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    iput-object p1, p0, LYdi;->b:Ljava/lang/Long;
+    const/4 v3, 0x1
 
     .line 7
+    invoke-direct {v0, v1, v2, v3}, LYdi;-><init>(Ljava/lang/String;II)V
+
     .line 8
+    .line 9
+    .line 10
+    sput-object v0, LYdi;->b:LYdi;
+
+    .line 11
+    .line 12
+    new-instance v1, LYdi;
+
+    .line 13
+    .line 14
+    const-string v4, "SIX_HOURS"
+
+    .line 15
+    .line 16
+    const/4 v5, 0x6
+
+    .line 17
+    invoke-direct {v1, v4, v3, v5}, LYdi;-><init>(Ljava/lang/String;II)V
+
+    .line 18
+    .line 19
+    .line 20
+    sput-object v1, LYdi;->c:LYdi;
+
+    .line 21
+    .line 22
+    new-instance v4, LYdi;
+
+    .line 23
+    .line 24
+    const/16 v6, 0xc
+
+    .line 25
+    .line 26
+    const-string v7, "TWELVE_HOURS"
+
+    .line 27
+    .line 28
+    const/4 v8, 0x2
+
+    .line 29
+    invoke-direct {v4, v7, v8, v6}, LYdi;-><init>(Ljava/lang/String;II)V
+
+    .line 30
+    .line 31
+    .line 32
+    sput-object v4, LYdi;->t:LYdi;
+
+    .line 33
+    .line 34
+    new-instance v6, LYdi;
+
+    .line 35
+    .line 36
+    const/16 v7, 0x18
+
+    .line 37
+    .line 38
+    const-string v9, "TWENTY_FOUR_HOURS"
+
+    .line 39
+    .line 40
+    const/4 v10, 0x3
+
+    .line 41
+    invoke-direct {v6, v9, v10, v7}, LYdi;-><init>(Ljava/lang/String;II)V
+
+    .line 42
+    .line 43
+    .line 44
+    sput-object v6, LYdi;->X:LYdi;
+
+    .line 45
+    .line 46
+    new-instance v7, LYdi;
+
+    .line 47
+    .line 48
+    const/16 v9, 0x30
+
+    .line 49
+    .line 50
+    const-string v11, "TWO_DAYS"
+
+    .line 51
+    .line 52
+    const/4 v12, 0x4
+
+    .line 53
+    invoke-direct {v7, v11, v12, v9}, LYdi;-><init>(Ljava/lang/String;II)V
+
+    .line 54
+    .line 55
+    .line 56
+    sput-object v7, LYdi;->Y:LYdi;
+
+    .line 57
+    .line 58
+    new-instance v9, LYdi;
+
+    .line 59
+    .line 60
+    const/16 v11, 0x48
+
+    .line 61
+    .line 62
+    const-string v13, "THREE_DAYS"
+
+    .line 63
+    .line 64
+    const/4 v14, 0x5
+
+    .line 65
+    invoke-direct {v9, v13, v14, v11}, LYdi;-><init>(Ljava/lang/String;II)V
+
+    .line 66
+    .line 67
+    .line 68
+    sput-object v9, LYdi;->Z:LYdi;
+
+    .line 69
+    .line 70
+    new-instance v11, LYdi;
+
+    .line 71
+    .line 72
+    const-string v13, "ONE_WEEK"
+
+    .line 73
+    .line 74
+    const/16 v15, 0xa8
+
+    .line 75
+    .line 76
+    invoke-direct {v11, v13, v5, v15}, LYdi;-><init>(Ljava/lang/String;II)V
+
+    .line 77
+    .line 78
+    .line 79
+    sput-object v11, LYdi;->e0:LYdi;
+
+    .line 80
+    .line 81
+    const/4 v13, 0x7
+
+    .line 82
+    new-array v13, v13, [LYdi;
+
+    .line 83
+    .line 84
+    aput-object v0, v13, v2
+
+    .line 85
+    .line 86
+    aput-object v1, v13, v3
+
+    .line 87
+    .line 88
+    aput-object v4, v13, v8
+
+    .line 89
+    .line 90
+    aput-object v6, v13, v10
+
+    .line 91
+    .line 92
+    aput-object v7, v13, v12
+
+    .line 93
+    .line 94
+    aput-object v9, v13, v14
+
+    .line 95
+    .line 96
+    aput-object v11, v13, v5
+
+    .line 97
+    .line 98
+    sput-object v13, LYdi;->f0:[LYdi;
+
+    .line 99
+    .line 100
     return-void
 .end method
 
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
     .line 4
-    return v0
+    iput p3, p0, LYdi;->a:I
 
     .line 5
-    :cond_0
-    instance-of v1, p1, LYdi;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LYdi;
-
-    .line 12
-    .line 13
-    iget-boolean v1, p1, LYdi;->a:Z
-
-    .line 14
-    .line 15
-    iget-boolean v3, p0, LYdi;->a:Z
-
-    .line 16
-    .line 17
-    if-eq v3, v1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    iget-object v1, p0, LYdi;->b:Ljava/lang/Long;
-
-    .line 21
-    .line 22
-    iget-object p1, p1, LYdi;->b:Ljava/lang/Long;
-
-    .line 23
-    .line 24
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 25
-    .line 26
-    .line 27
-    move-result p1
-
-    .line 28
-    if-nez p1, :cond_3
-
-    .line 29
-    .line 30
-    return v2
-
-    .line 31
-    :cond_3
-    return v0
+    return-void
 .end method
 
-.method public final hashCode()I
-    .locals 2
+.method public static valueOf(Ljava/lang/String;)LYdi;
+    .locals 1
 
     .line 1
-    iget-boolean v0, p0, LYdi;->a:Z
+    const-class v0, LYdi;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
     .line 5
-    const/16 v0, 0x4cf
-
     .line 6
+    move-result-object p0
+
     .line 7
-    goto :goto_0
+    check-cast p0, LYdi;
 
     .line 8
-    :cond_0
-    const/16 v0, 0x4d5
-
     .line 9
-    .line 10
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 11
-    .line 12
-    iget-object v1, p0, LYdi;->b:Ljava/lang/Long;
-
-    .line 13
-    .line 14
-    if-nez v1, :cond_1
-
-    .line 15
-    .line 16
-    const/4 v1, 0x0
-
-    .line 17
-    goto :goto_1
-
-    .line 18
-    :cond_1
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v1
-
-    .line 22
-    :goto_1
-    add-int/2addr v0, v1
-
-    .line 23
-    return v0
+    return-object p0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public static values()[LYdi;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    sget-object v0, LYdi;->f0:[LYdi;
 
     .line 2
     .line 3
-    const-string v1, "SwitchFeedEvent(toSubs="
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
-    .line 7
-    .line 8
-    iget-boolean v1, p0, LYdi;->a:Z
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", tapElapsedRealTimeMs="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LYdi;->b:Ljava/lang/Long;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
     move-result-object v0
 
-    .line 32
+    .line 7
+    check-cast v0, [LYdi;
+
+    .line 8
+    .line 9
     return-object v0
 .end method

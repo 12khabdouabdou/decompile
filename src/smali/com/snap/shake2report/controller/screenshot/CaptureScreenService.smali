@@ -6,7 +6,7 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public b:LDxf;
+.field public b:LNQf;
 
 
 # direct methods
@@ -49,7 +49,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p0}, LCq9;->x0(Landroid/app/Service;)V
+    invoke-static {p0}, LbS2;->v(Landroid/app/Service;)V
 
     .line 5
     .line 6
@@ -147,7 +147,7 @@
     move-result-object v0
 
     .line 52
-    invoke-static {v0}, LHU;->t(Landroid/app/Notification$Builder;)V
+    invoke-static {v0}, LmZ;->t(Landroid/app/Notification$Builder;)V
 
     .line 53
     .line 54
@@ -168,12 +168,12 @@
 
     .line 62
     .line 63
-    invoke-static {}, Lnt6;->i()V
+    invoke-static {}, LvP5;->l()V
 
     .line 64
     .line 65
     .line 66
-    invoke-static {}, LHU;->c()Landroid/app/NotificationChannel;
+    invoke-static {}, LmZ;->c()Landroid/app/NotificationChannel;
 
     .line 67
     .line 68
@@ -181,7 +181,7 @@
     move-result-object v2
 
     .line 70
-    invoke-static {v0, v2}, Lnt6;->j(Landroid/app/NotificationManager;Landroid/app/NotificationChannel;)V
+    invoke-static {v0, v2}, LnW;->p(Landroid/app/NotificationManager;Landroid/app/NotificationChannel;)V
 
     .line 71
     .line 72
@@ -310,44 +310,48 @@
     move-result-object v0
 
     .line 37
-    iget-object v2, p0, Lcom/snap/shake2report/controller/screenshot/CaptureScreenService;->b:LDxf;
+    if-eqz v0, :cond_3
 
     .line 38
     .line 39
-    if-eqz v2, :cond_2
+    iget-object v2, p0, Lcom/snap/shake2report/controller/screenshot/CaptureScreenService;->b:LNQf;
 
     .line 40
     .line 41
-    invoke-virtual {v2, v0}, LDxf;->a(Landroid/media/projection/MediaProjection;)V
+    if-eqz v2, :cond_2
 
     .line 42
     .line 43
+    invoke-virtual {v2, v0}, LNQf;->a(Landroid/media/projection/MediaProjection;)V
+
     .line 44
+    .line 45
+    .line 46
     goto :goto_1
 
-    .line 45
+    .line 47
     :cond_2
     const-string p1, "screenCaptureManager"
 
-    .line 46
-    .line 47
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 48
     .line 49
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 50
+    .line 51
+    .line 52
     throw v1
 
-    .line 51
+    .line 53
     :cond_3
     :goto_1
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
-    .line 52
-    .line 53
     .line 54
+    .line 55
+    .line 56
     move-result p1
 
-    .line 55
+    .line 57
     return p1
 .end method

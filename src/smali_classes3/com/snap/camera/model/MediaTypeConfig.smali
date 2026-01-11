@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final Companion:LRtb;
+.field public static final Companion:LsHb;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LRtb;
+    new-instance v0, LsHb;
 
     .line 2
     .line 3
@@ -24,7 +24,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LRtb;
+    sput-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LsHb;
 
     .line 7
     .line 8
@@ -40,7 +40,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(LHr5;)V
+.method public synthetic constructor <init>(Lex5;)V
     .locals 0
 
     .line 1
@@ -49,33 +49,33 @@
     return-void
 .end method
 
-.method public static final aggregate(Lx6c;)Lcom/snap/camera/model/MediaTypeConfig;
+.method public static final aggregate(Lflc;)Lcom/snap/camera/model/MediaTypeConfig;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lx6c;",
+            "Lflc;",
             ")",
             "Lcom/snap/camera/model/MediaTypeConfig;"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LRtb;
+    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LsHb;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0}, LRtb;->a(Lx6c;)Lcom/snap/camera/model/MediaTypeConfig;
+    invoke-static {p0}, LsHb;->a(Lflc;)Lcom/snap/camera/model/MediaTypeConfig;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final fromMediaPackage(LSlb;LrNa;)Lcom/snap/camera/model/MediaTypeConfig;
+.method public static final fromMediaPackage(Luzb;LZZa;)Lcom/snap/camera/model/MediaTypeConfig;
     .locals 3
 
-    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LRtb;
+    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LsHb;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -84,37 +84,37 @@
     const/16 v2, 0xc
 
     .line 1
-    invoke-static {v0, p0, p1, v1, v2}, LRtb;->c(LRtb;LSlb;LrNa;ZI)Lcom/snap/camera/model/MediaTypeConfig;
+    invoke-static {v0, p0, p1, v1, v2}, LsHb;->c(LsHb;Luzb;LZZa;ZI)Lcom/snap/camera/model/MediaTypeConfig;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final fromMediaPackage(LSlb;LrNa;Z)Lcom/snap/camera/model/MediaTypeConfig;
+.method public static final fromMediaPackage(Luzb;LZZa;Z)Lcom/snap/camera/model/MediaTypeConfig;
     .locals 2
 
-    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LRtb;
+    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LsHb;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const/16 v1, 0x8
 
     .line 2
-    invoke-static {v0, p0, p1, p2, v1}, LRtb;->c(LRtb;LSlb;LrNa;ZI)Lcom/snap/camera/model/MediaTypeConfig;
+    invoke-static {v0, p0, p1, p2, v1}, LsHb;->c(LsHb;Luzb;LZZa;ZI)Lcom/snap/camera/model/MediaTypeConfig;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final fromMediaPackage(LSlb;LrNa;ZZ)Lcom/snap/camera/model/MediaTypeConfig;
+.method public static final fromMediaPackage(Luzb;LZZa;ZZ)Lcom/snap/camera/model/MediaTypeConfig;
     .locals 1
 
     .line 3
-    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LRtb;
+    sget-object v0, Lcom/snap/camera/model/MediaTypeConfig;->Companion:LsHb;
 
-    invoke-virtual {v0, p0, p1, p2, p3}, LRtb;->b(LSlb;LrNa;ZZ)Lcom/snap/camera/model/MediaTypeConfig;
+    invoke-virtual {v0, p0, p1, p2, p3}, LsHb;->b(Luzb;LZZa;ZZ)Lcom/snap/camera/model/MediaTypeConfig;
 
     move-result-object p0
 
@@ -131,7 +131,7 @@
     return v0
 .end method
 
-.method public abstract getMediaType()LLtb;
+.method public abstract getMediaType()LmHb;
 .end method
 
 .method public final isLensUsed()Z

@@ -1,13 +1,13 @@
 .class public Lcom/snap/opera/shared/view/TextureVideoViewPlayer;
-.super LFui;
+.super LETi;
 .source "SourceFile"
 
 # interfaces
-.implements Lh0d;
+.implements Lefd;
 
 
 # instance fields
-.field public final e0:LkEj;
+.field public final e0:LC3k;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -57,23 +57,23 @@
     .locals 0
 
     .line 4
-    invoke-direct {p0, p1, p2, p3}, LFui;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, LETi;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 5
-    new-instance p1, LkEj;
+    new-instance p1, LC3k;
 
-    invoke-direct {p1, p0, p0, p0}, LkEj;-><init>(Landroid/view/View;LYbi;LuEj;)V
+    invoke-direct {p1, p0, p0, p0}, LC3k;-><init>(Landroid/view/View;LQAi;LM3k;)V
 
     .line 6
-    iput-object p1, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iput-object p1, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 7
-    iput-object p1, p0, LFui;->c:LkEj;
+    iput-object p1, p0, LETi;->c:LC3k;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -102,11 +102,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2}, LkEj;->a(D)V
+    invoke-virtual {v0, p1, p2}, LC3k;->a(D)V
 
     .line 4
     .line 5
@@ -114,15 +114,15 @@
     return-void
 .end method
 
-.method public final d(JLEFf;)V
+.method public final e(JLcZf;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1, p2, p3}, LkEj;->d(JLEFf;)V
+    invoke-virtual {v0, p1, p2, p3}, LC3k;->e(JLcZf;)V
 
     .line 4
     .line 5
@@ -130,34 +130,15 @@
     return-void
 .end method
 
-.method public final e()J
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, LkEj;->e()J
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-wide v0
-
-    .line 7
-    return-wide v0
-.end method
-
-.method public final f(LJwd;)V
+.method public final f(LRNd;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LkEj;->f(LJwd;)V
+    invoke-virtual {v0, p1}, LC3k;->f(LRNd;)V
 
     .line 4
     .line 5
@@ -169,11 +150,27 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LkEj;->g(Z)V
+    invoke-virtual {v0, p1}, LC3k;->g(Z)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final h(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0, p1}, LC3k;->h(Z)V
 
     .line 4
     .line 5
@@ -185,11 +182,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LkEj;->i(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, LC3k;->i(Ljava/lang/String;)V
 
     .line 4
     .line 5
@@ -201,11 +198,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LkEj;->isPlaying()Z
+    invoke-virtual {v0}, LC3k;->isPlaying()Z
 
     .line 4
     .line 5
@@ -216,31 +213,34 @@
     return v0
 .end method
 
-.method public final j(Z)V
-    .locals 1
+.method public final j()J
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LkEj;->j(Z)V
+    invoke-virtual {v0}, LC3k;->j()J
 
     .line 4
     .line 5
     .line 6
-    return-void
+    move-result-wide v0
+
+    .line 7
+    return-wide v0
 .end method
 
-.method public final k()LgEj;
+.method public final k()Lx3k;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LkEj;->k()LgEj;
+    invoke-virtual {v0}, LC3k;->k()Lx3k;
 
     .line 4
     .line 5
@@ -255,7 +255,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
@@ -274,7 +274,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Lue3;->G0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p1}, Llh3;->E3(Ljava/util/List;)Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -282,19 +282,19 @@
     move-result-object p2
 
     .line 5
-    check-cast p2, LMfb;
+    check-cast p2, Lotb;
 
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 8
     .line 9
-    iget-object v1, v0, LkEj;->f0:Ljava/util/List;
+    iget-object v1, v0, LC3k;->f0:Ljava/util/List;
 
     .line 10
     .line 11
-    invoke-static {v1}, Lue3;->I0(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v1}, Llh3;->G3(Ljava/util/List;)Ljava/lang/Object;
 
     .line 12
     .line 13
@@ -302,7 +302,7 @@
     move-result-object v1
 
     .line 15
-    check-cast v1, LMfb;
+    check-cast v1, Lotb;
 
     .line 16
     .line 17
@@ -310,7 +310,7 @@
 
     .line 18
     .line 19
-    iget-object v1, v1, LMfb;->a:Landroid/net/Uri;
+    iget-object v1, v1, Lotb;->a:Landroid/net/Uri;
 
     .line 20
     .line 21
@@ -322,11 +322,11 @@
 
     .line 23
     :goto_0
-    iget-object p2, p2, LMfb;->a:Landroid/net/Uri;
+    iget-object p2, p2, Lotb;->a:Landroid/net/Uri;
 
     .line 24
     .line 25
-    invoke-static {v1, p2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 26
     .line 27
@@ -345,7 +345,7 @@
     const/4 p2, 0x0
 
     .line 33
-    invoke-virtual {v0, p1, p2}, LkEj;->o(Ljava/util/List;Z)V
+    invoke-virtual {v0, p1, p2}, LC3k;->o(Ljava/util/List;Z)V
 
     .line 34
     .line 35
@@ -357,11 +357,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LkEj;->pause()V
+    invoke-virtual {v0}, LC3k;->pause()V
 
     .line 4
     .line 5
@@ -373,11 +373,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LkEj;->q()J
+    invoke-virtual {v0}, LC3k;->q()J
 
     .line 4
     .line 5
@@ -392,11 +392,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LkEj;->start()V
+    invoke-virtual {v0}, LC3k;->start()V
 
     .line 4
     .line 5
@@ -408,11 +408,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LkEj;->stop()V
+    invoke-virtual {v0}, LC3k;->stop()V
 
     .line 4
     .line 5
@@ -420,30 +420,30 @@
     return-void
 .end method
 
-.method public final w(Lvp0;)V
+.method public final v(LWr0;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    iput-object p1, v0, LkEj;->h0:LDpb;
+    iput-object p1, v0, LC3k;->h0:LgDb;
 
     .line 4
     .line 5
     return-void
 .end method
 
-.method public final x()J
+.method public final w()J
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v0, p0, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LkEj;->x()J
+    invoke-virtual {v0}, LC3k;->w()J
 
     .line 4
     .line 5

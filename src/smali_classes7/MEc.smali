@@ -1,14 +1,22 @@
 .class public final LMEc;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'bytes\':t"
+    typeReferences = {}
+.end annotation
+
+
 # instance fields
-.field public final synthetic a:LMZ7;
+.field private _bytes:[B
 
 
 # direct methods
-.method public constructor <init>(LMZ7;)V
+.method public constructor <init>([B)V
     .locals 0
 
     .line 1
@@ -17,7 +25,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LMEc;->a:LMZ7;
+    iput-object p1, p0, LMEc;->_bytes:[B
 
     .line 5
     .line 6

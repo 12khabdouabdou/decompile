@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LNrd;
+    proxyClass = LiId;
     schema = "\'onPlaceComponentVisible\':f|m|(s, d)"
     typeReferences = {}
 .end annotation

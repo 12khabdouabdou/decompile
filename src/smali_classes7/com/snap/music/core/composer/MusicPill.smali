@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "Leac;",
-        "Laac;",
+        "LNoc;",
+        "LJoc;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LY9c;
+.field public static final Companion:LHoc;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LY9c;
+    new-instance v0, LHoc;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LY9c;
+    sput-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LHoc;
 
     .line 7
     .line 8
@@ -62,10 +62,37 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/music/core/composer/MusicPill;
+.method public static final create(LZ69;LNoc;LJoc;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/music/core/composer/MusicPill;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LZ69;",
+            "LNoc;",
+            "LJoc;",
+            "LvF3;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")",
+            "Lcom/snap/music/core/composer/MusicPill;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LHoc;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    invoke-static {p0, p1, p2, p3, p4}, LHoc;->a(LZ69;LNoc;LJoc;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/music/core/composer/MusicPill;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/music/core/composer/MusicPill;
     .locals 6
 
-    sget-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LY9c;
+    sget-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LHoc;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -80,34 +107,7 @@
     move-object v4, p1
 
     .line 2
-    invoke-static/range {v0 .. v5}, LY9c;->b(LY9c;LqZ8;Leac;Laac;LTB3;I)Lcom/snap/music/core/composer/MusicPill;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Leac;Laac;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/music/core/composer/MusicPill;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "LqZ8;",
-            "Leac;",
-            "Laac;",
-            "LTB3;",
-            "Lkotlin/jvm/functions/Function1;",
-            ")",
-            "Lcom/snap/music/core/composer/MusicPill;"
-        }
-    .end annotation
-
-    .line 1
-    sget-object v0, Lcom/snap/music/core/composer/MusicPill;->Companion:LY9c;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    invoke-static {p0, p1, p2, p3, p4}, LY9c;->a(LqZ8;Leac;Laac;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/music/core/composer/MusicPill;
+    invoke-static/range {v0 .. v5}, LHoc;->b(LHoc;LZ69;LNoc;LJoc;LvF3;I)Lcom/snap/music/core/composer/MusicPill;
 
     move-result-object p0
 

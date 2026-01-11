@@ -1,38 +1,37 @@
-.class public abstract Lxdh;
-.super Ljava/lang/Object;
+.class public final Lxdh;
+.super Lnp0;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:I
+.field public static final d:Lxdh;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 3
 
     .line 1
-    sget-object v0, LEdh;->Z:LEdh;
+    new-instance v0, Lxdh;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object v1, LUYf;->Z:LUYf;
 
     .line 4
     .line 5
+    const-string v2, "SnapTokenCachePrimingSyncer"
+
     .line 6
-    const-string v0, "SpectrumConfig"
-
     .line 7
-    .line 8
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    invoke-direct {v0, v1, v2}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
+    .line 8
     .line 9
     .line 10
-    .line 11
-    sget-object v0, Lrn0;->a:Lrn0;
+    sput-object v0, Lxdh;->d:Lxdh;
 
+    .line 11
     .line 12
-    .line 13
     return-void
 .end method

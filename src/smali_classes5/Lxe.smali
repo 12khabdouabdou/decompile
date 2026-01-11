@@ -2,282 +2,104 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field private final a:Ljava/util/List;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "pre_prompt_view_ts_2022"
-    .end annotation
+.field public final synthetic a:LQxe;
 
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final b:Ljava/util/HashMap;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "pre_prompt_ts_and_action_2022"
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic b:Lcom/snapchat/client/snap_maps_sdk/MapSdkSession;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
+.method public constructor <init>(LQxe;Lcom/snapchat/client/snap_maps_sdk/MapSdkSession;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, v0}, LLxe;-><init>(I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(I)V
-    .locals 1
-
-    .line 2
-    new-instance p1, Ljava/util/ArrayList;
-
-    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
-
-    .line 3
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LLxe;->a:LQxe;
+
     .line 5
-    iput-object p1, p0, LLxe;->a:Ljava/util/List;
-
     .line 6
-    iput-object v0, p0, LLxe;->b:Ljava/util/HashMap;
+    iput-object p2, p0, LLxe;->b:Lcom/snapchat/client/snap_maps_sdk/MapSdkSession;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/util/HashMap;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LLxe;->b:Ljava/util/HashMap;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final b()Ljava/util/List;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LLxe;->a:Ljava/util/List;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LLxe;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LLxe;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LLxe;->a:Ljava/util/List;
-
-    .line 14
-    .line 15
-    iget-object v3, p1, LLxe;->a:Ljava/util/List;
-
-    .line 16
-    .line 17
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, LLxe;->b:Ljava/util/HashMap;
-
-    .line 25
-    .line 26
-    iget-object p1, p1, LLxe;->b:Ljava/util/HashMap;
-
-    .line 27
-    .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
+.method public final accept(Ljava/lang/Object;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, LLxe;->a:Ljava/util/List;
+    check-cast p1, Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    iget-object v0, p0, LLxe;->a:LQxe;
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
+    iget-object v0, v0, LQxe;->i:LjS0;
 
+    .line 6
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    iput-object p1, v0, LjS0;->a:Ljava/lang/String;
 
     .line 8
     .line 9
-    iget-object v1, p0, LLxe;->b:Ljava/util/HashMap;
+    new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
     .line 10
     .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;-><init>()V
 
     .line 12
     .line 13
     .line 14
-    move-result v1
+    const-string v1, "AD_SERVER_URL"
 
     .line 15
-    add-int/2addr v1, v0
-
     .line 16
-    return v1
-.end method
+    invoke-virtual {v0, v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;->setName(Ljava/lang/String;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, LLxe;->a:Ljava/util/List;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LLxe;->b:Ljava/util/HashMap;
-
-    .line 4
-    .line 5
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 6
-    .line 7
-    const-string v3, "RatingInAppRatingPromptRecords(views="
-
-    .line 8
-    .line 9
-    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 13
-    .line 14
-    .line 15
-    const-string v0, ", actions="
-
-    .line 16
     .line 17
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 18
     .line 19
-    .line 20
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;->setStringValue(Ljava/lang/String;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
+    .line 20
     .line 21
     .line 22
+    new-instance p1, Ljava/util/ArrayList;
+
     .line 23
-    const-string v0, ")"
-
     .line 24
-    .line 25
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 25
     .line 26
     .line 27
-    .line 28
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 28
     .line 29
     .line 30
-    .line 31
-    move-result-object v0
+    iget-object v0, p0, LLxe;->b:Lcom/snapchat/client/snap_maps_sdk/MapSdkSession;
 
+    .line 31
     .line 32
-    return-object v0
+    invoke-virtual {v0, p1}, Lcom/snapchat/client/snap_maps_sdk/MapSdkSession;->updateSdkConfigs(Ljava/util/ArrayList;)V
+
+    .line 33
+    .line 34
+    .line 35
+    return-void
 .end method

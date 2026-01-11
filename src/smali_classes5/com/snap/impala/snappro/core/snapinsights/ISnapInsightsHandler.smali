@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LJY8;
+    proxyClass = Ls69;
     schema = "\'launchInsights\':f|m|(s, s, s, l, b@?)"
     typeReferences = {}
 .end annotation

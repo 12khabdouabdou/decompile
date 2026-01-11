@@ -4,11 +4,21 @@
 
 
 # instance fields
-.field public final a:Ljava/nio/ByteBuffer;
+.field public final a:LkA6;
+
+.field public final b:LYmd;
+
+.field public final c:LIX4;
+
+.field public final d:Ldz6;
+
+.field public final e:LnJe;
+
+.field public final f:LJp0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/nio/ByteBuffer;)V
+.method public constructor <init>(LkA6;LyPf;LYmd;LIX4;Ldz6;)V
     .locals 0
 
     .line 1
@@ -17,148 +27,46 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LlI;->a:Ljava/nio/ByteBuffer;
+    iput-object p1, p0, LlI;->a:LkA6;
 
     .line 5
     .line 6
-    return-void
-.end method
+    iput-object p3, p0, LlI;->b:LYmd;
 
-
-# virtual methods
-.method public final a()Ljava/nio/ByteBuffer;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LlI;->a:Ljava/nio/ByteBuffer;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LlI;
-
-    .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    iput-object p4, p0, LlI;->c:LIX4;
 
     .line 9
     .line 10
-    return v2
+    iput-object p5, p0, LlI;->d:Ldz6;
 
     .line 11
-    :cond_1
-    check-cast p1, LlI;
-
     .line 12
+    sget-object p1, LmI;->a:Lnp0;
+
     .line 13
-    iget-object v1, p0, LlI;->a:Ljava/nio/ByteBuffer;
-
     .line 14
+    new-instance p2, LnJe;
+
     .line 15
-    iget-object p1, p1, LlI;->a:Ljava/nio/ByteBuffer;
-
     .line 16
-    .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
 
+    .line 17
     .line 18
     .line 19
-    .line 20
-    move-result p1
+    iput-object p2, p0, LlI;->e:LnJe;
 
+    .line 20
     .line 21
-    if-nez p1, :cond_2
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 22
     .line 23
-    return v2
+    iput-object p1, p0, LlI;->f:LJp0;
 
     .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LlI;->a:Ljava/nio/ByteBuffer;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "AllNamespaceSectionData(sectionByteBuffer="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LlI;->a:Ljava/nio/ByteBuffer;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
+    .line 25
+    return-void
 .end method

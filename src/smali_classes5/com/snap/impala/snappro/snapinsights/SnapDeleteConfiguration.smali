@@ -1,10 +1,10 @@
 .class public final Lcom/snap/impala/snappro/snapinsights/SnapDeleteConfiguration;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'callSource\':s,\'deleteCallback\':f?()"
     typeReferences = {}

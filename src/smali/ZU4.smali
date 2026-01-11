@@ -3,18 +3,20 @@
 .source "SourceFile"
 
 # interfaces
-.implements LAZ9;
+.implements LKv3;
 
 
 # instance fields
-.field public final a:LYT4;
+.field public final a:Lz45;
 
-.field public final b:Lake;
+.field public final b:LxU4;
+
+.field public final c:LCBe;
 
 
 # direct methods
-.method public constructor <init>(LYT4;)V
-    .locals 1
+.method public constructor <init>(Lz45;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,58 +24,52 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LZU4;->a:LYT4;
+    iput-object p1, p0, LZU4;->a:Lz45;
 
     .line 5
     .line 6
-    new-instance p1, LYU4;
+    new-instance p1, LxU4;
 
     .line 7
     .line 8
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     .line 9
-    invoke-direct {p1, v0, p0}, LYU4;-><init>(ILjava/lang/Object;)V
+    const/4 v1, 0x7
 
     .line 10
+    invoke-direct {p1, p0, v0, v1}, LxU4;-><init>(LKv3;II)V
+
     .line 11
     .line 12
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
     .line 13
+    iput-object p1, p0, LZU4;->b:LxU4;
+
     .line 14
     .line 15
-    move-result-object p1
+    new-instance p1, LxU4;
 
     .line 16
-    iput-object p1, p0, LZU4;->b:Lake;
-
     .line 17
+    const/4 v0, 0x0
+
     .line 18
+    invoke-direct {p1, p0, v0, v1}, LxU4;-><init>(LKv3;II)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-static {p1}, Lfv6;->b(LCBe;)LCBe;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    iput-object p1, p0, LZU4;->c:LCBe;
+
+    .line 26
+    .line 27
     return-void
-.end method
-
-
-# virtual methods
-.method public final f3()LuPd;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LZU4;->b:Lake;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, LuPd;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

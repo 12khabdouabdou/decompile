@@ -3,165 +3,180 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+.implements LO27;
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/concurrent/atomic/AtomicReference;
+.field public final synthetic a:I
 
-.field public final synthetic b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-.field public final synthetic c:LZJ5;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicBoolean;LZJ5;)V
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
 
     .line 1
+    iput p1, p0, LXJ5;->a:I
+
+    iput-object p2, p0, LXJ5;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LXJ5;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LXJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LXJ5;->c:LZJ5;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 13
+.method public final a(LY79;)Lx37;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LXJ5;->a:Ljava/util/concurrent/atomic/AtomicReference;
+    iget v0, p0, LXJ5;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    new-instance v0, LQYc;
 
     .line 7
-    check-cast v0, LT3c;
-
     .line 8
+    const/4 v1, 0x0
+
     .line 9
-    if-eqz v0, :cond_0
+    invoke-direct {v0, p0, v1, p1}, LQYc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 10
     .line 11
-    iget-object v1, p0, LXJ5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
     .line 12
-    .line 13
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+    new-instance p1, Ly37;
 
+    .line 13
     .line 14
+    iget-object v1, p0, LXJ5;->b:Ljava/lang/Object;
+
     .line 15
     .line 16
-    move-result v1
+    check-cast v1, Lio/reactivex/rxjava3/core/Observable;
 
     .line 17
-    if-eqz v1, :cond_0
-
     .line 18
-    .line 19
-    instance-of v1, v0, LS3c;
+    invoke-direct {p1, v1, v0}, Ly37;-><init>(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;)V
 
+    .line 19
     .line 20
     .line 21
-    if-eqz v1, :cond_0
+    return-object p1
 
     .line 22
+    :pswitch_0
+    iget-object v0, p0, LXJ5;->b:Ljava/lang/Object;
+
     .line 23
-    iget-object v1, p0, LXJ5;->c:LZJ5;
-
     .line 24
+    check-cast v0, Lkotlin/jvm/functions/Function1;
+
     .line 25
-    iget-object v1, v1, LZJ5;->X:LHJ3;
-
     .line 26
-    .line 27
-    check-cast v0, LS3c;
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 27
     .line 28
     .line 29
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object p1
 
     .line 30
+    check-cast p1, Lx37;
+
     .line 31
     .line 32
-    sget-object v2, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+    return-object p1
 
     .line 33
+    :pswitch_1
+    iget-object v0, p0, LXJ5;->b:Ljava/lang/Object;
+
     .line 34
-    iget-object v3, v1, LHJ3;->b:LDEh;
-
     .line 35
-    .line 36
-    invoke-virtual {v3, v2}, LDEh;->a(Ljava/util/concurrent/TimeUnit;)J
+    check-cast v0, Lkotlin/jvm/functions/Function1;
 
+    .line 36
     .line 37
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 38
     .line 39
-    move-result-wide v11
-
     .line 40
-    invoke-virtual {v3}, LDEh;->b()V
+    move-result-object p1
 
     .line 41
+    check-cast p1, Lx37;
+
     .line 42
     .line 43
-    new-instance v4, LFN$h$a$b;
+    return-object p1
 
     .line 44
-    .line 45
-    const/4 v2, 0x1
+    :pswitch_2
+    iget-object v0, p0, LXJ5;->b:Ljava/lang/Object;
 
+    .line 45
     .line 46
-    int-to-long v7, v2
+    check-cast v0, Lkotlin/jvm/functions/Function1;
 
     .line 47
-    iget-object v5, v0, LS3c;->a:Lo09;
-
     .line 48
-    .line 49
-    iget v6, v1, LHJ3;->c:I
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 49
     .line 50
     .line 51
-    move-wide v9, v7
+    move-result-object p1
 
     .line 52
-    invoke-direct/range {v4 .. v12}, LFN$h$a$b;-><init>(Lo09;IJJJ)V
+    check-cast p1, Lx37;
 
     .line 53
     .line 54
+    return-object p1
+
     .line 55
-    iget-object v0, v1, LHJ3;->a:LIN;
+    :pswitch_3
+    iget-object v0, p0, LXJ5;->b:Ljava/lang/Object;
 
     .line 56
     .line 57
-    invoke-interface {v0, v4}, LIN;->a(LFN;)V
+    check-cast v0, Lkotlin/jvm/functions/Function1;
 
     .line 58
     .line 59
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 60
-    :cond_0
-    return-void
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    check-cast p1, Lx37;
+
+    .line 64
+    .line 65
+    return-object p1
+
+    .line 66
+    nop
+
+    .line 67
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

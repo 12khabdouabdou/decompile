@@ -1,285 +1,478 @@
-.class public final enum LKUc;
-.super Ljava/lang/Enum;
+.class public final LKUc;
+.super LJP9;
 .source "SourceFile"
 
-
-# static fields
-.field public static final enum X:LKUc;
-
-.field public static final synthetic Y:[LKUc;
-
-.field public static final enum b:LKUc;
-
-.field public static final enum c:LKUc;
-
-.field public static final enum t:LKUc;
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:Lo4f;
+.field public final synthetic a:I
+
+.field public final synthetic b:LvQ2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 16
+.method public synthetic constructor <init>(LvQ2;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LKUc;
+    iput p2, p0, LKUc;->a:I
+
+    iput-object p1, p0, LKUc;->b:LvQ2;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget v0, p0, LKUc;->a:I
 
     .line 2
     .line 3
-    sget-object v1, Lo4f;->b:Lo4f;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const-string v2, "LEGACY"
-
     .line 6
-    .line 7
-    const/4 v3, 0x0
+    check-cast p1, LnVc;
 
+    .line 7
     .line 8
-    invoke-direct {v0, v2, v3, v1}, LKUc;-><init>(Ljava/lang/String;ILo4f;)V
+    iget-object v0, p0, LKUc;->b:LvQ2;
 
     .line 9
     .line 10
+    iget-object v0, v0, LvQ2;->c:LIl;
+
     .line 11
-    new-instance v1, LKUc;
-
     .line 12
+    iget-object p1, p1, LnVc;->g:Ljava/lang/Long;
+
     .line 13
-    sget-object v2, Lo4f;->c:Lo4f;
-
     .line 14
+    iget-object v0, v0, LIl;->k0:Ljava/lang/Object;
+
     .line 15
-    const-string v4, "LEGACY_TOP_ALIGNED"
-
     .line 16
-    .line 17
-    const/4 v5, 0x1
+    check-cast v0, LJE4;
 
+    .line 17
     .line 18
-    invoke-direct {v1, v4, v5, v2}, LKUc;-><init>(Ljava/lang/String;ILo4f;)V
+    invoke-virtual {v0}, LJE4;->get()Ljava/lang/Object;
 
     .line 19
     .line 20
     .line 21
-    new-instance v2, LKUc;
+    move-result-object v0
 
     .line 22
+    check-cast v0, Liq4;
+
     .line 23
-    sget-object v4, Lo4f;->t:Lo4f;
-
     .line 24
+    if-eqz p1, :cond_0
+
     .line 25
-    const-string v6, "TOP_ALIGNED_FIXED_ASPECT_RATIO"
-
     .line 26
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
+
     .line 27
-    const/4 v7, 0x2
-
     .line 28
-    invoke-direct {v2, v6, v7, v4}, LKUc;-><init>(Ljava/lang/String;ILo4f;)V
-
     .line 29
+    move-result-wide v1
+
     .line 30
+    long-to-int p1, v1
+
     .line 31
-    new-instance v4, LKUc;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 32
     .line 33
-    sget-object v6, Lo4f;->X:Lo4f;
-
     .line 34
+    move-result-object p1
+
     .line 35
-    const-string v8, "SPOTLIGHT"
+    goto :goto_0
 
     .line 36
+    :cond_0
+    const/4 p1, 0x0
+
     .line 37
-    const/4 v9, 0x3
+    :goto_0
+    invoke-virtual {v0, p1}, Liq4;->a(Ljava/lang/Integer;)Ljava/lang/String;
 
     .line 38
-    invoke-direct {v4, v8, v9, v6}, LKUc;-><init>(Ljava/lang/String;ILo4f;)V
-
     .line 39
     .line 40
+    move-result-object p1
+
     .line 41
-    sput-object v4, LKUc;->b:LKUc;
+    return-object p1
 
     .line 42
+    :pswitch_0
+    check-cast p1, LnVc;
+
     .line 43
-    new-instance v6, LKUc;
-
     .line 44
+    iget-object v0, p0, LKUc;->b:LvQ2;
+
     .line 45
-    sget-object v8, Lo4f;->Y:Lo4f;
-
     .line 46
+    iget-object v0, v0, LvQ2;->c:LIl;
+
     .line 47
-    const-string v10, "ASPECT_FILL"
-
     .line 48
-    .line 49
-    const/4 v11, 0x4
+    iget-object p1, p1, LnVc;->h:Ljava/lang/Long;
 
+    .line 49
     .line 50
-    invoke-direct {v6, v10, v11, v8}, LKUc;-><init>(Ljava/lang/String;ILo4f;)V
+    iget-object v0, v0, LIl;->k0:Ljava/lang/Object;
 
     .line 51
     .line 52
+    check-cast v0, LJE4;
+
     .line 53
-    sput-object v6, LKUc;->c:LKUc;
-
     .line 54
-    .line 55
-    new-instance v8, LKUc;
+    invoke-virtual {v0}, LJE4;->get()Ljava/lang/Object;
 
+    .line 55
     .line 56
     .line 57
-    sget-object v10, Lo4f;->Z:Lo4f;
+    move-result-object v0
 
     .line 58
+    check-cast v0, Liq4;
+
     .line 59
-    const-string v12, "ASPECT_FIT"
-
     .line 60
-    .line 61
-    const/4 v13, 0x5
+    if-eqz p1, :cond_1
 
+    .line 61
     .line 62
-    invoke-direct {v8, v12, v13, v10}, LKUc;-><init>(Ljava/lang/String;ILo4f;)V
+    invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     .line 63
     .line 64
     .line 65
-    sput-object v8, LKUc;->t:LKUc;
+    move-result-wide v1
 
     .line 66
+    long-to-int p1, v1
+
     .line 67
-    new-instance v10, LKUc;
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 68
     .line 69
-    sget-object v12, Lo4f;->e0:Lo4f;
-
     .line 70
+    move-result-object p1
+
     .line 71
-    const-string v14, "DEFAULT"
+    goto :goto_1
 
     .line 72
+    :cond_1
+    const/4 p1, 0x0
+
     .line 73
-    const/4 v15, 0x6
+    :goto_1
+    invoke-virtual {v0, p1}, Liq4;->b(Ljava/lang/Integer;)Ljava/lang/String;
 
     .line 74
-    invoke-direct {v10, v14, v15, v12}, LKUc;-><init>(Ljava/lang/String;ILo4f;)V
-
     .line 75
     .line 76
+    move-result-object p1
+
     .line 77
-    sput-object v10, LKUc;->X:LKUc;
+    return-object p1
 
     .line 78
-    .line 79
-    const/4 v12, 0x7
+    :pswitch_1
+    check-cast p1, Ljava/lang/Number;
 
+    .line 79
     .line 80
-    new-array v12, v12, [LKUc;
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     .line 81
     .line 82
-    aput-object v0, v12, v3
-
     .line 83
+    move-result p1
+
     .line 84
-    aput-object v1, v12, v5
+    iget-object v0, p0, LKUc;->b:LvQ2;
 
     .line 85
     .line 86
-    aput-object v2, v12, v7
+    iget-object v1, v0, LvQ2;->Z:Ljava/lang/Object;
 
     .line 87
     .line 88
-    aput-object v4, v12, v9
+    check-cast v1, Ldme;
 
     .line 89
     .line 90
-    aput-object v6, v12, v11
+    iget-object v0, v0, LvQ2;->Y:Ljava/lang/Object;
 
     .line 91
     .line 92
-    aput-object v8, v12, v13
+    check-cast v0, LZ4c;
 
     .line 93
     .line 94
-    aput-object v10, v12, v15
+    const/4 v2, 0x0
 
     .line 95
+    const/16 v3, 0x3f
+
     .line 96
-    sput-object v12, LKUc;->Y:[LKUc;
-
     .line 97
+    invoke-static {v0, v2, p1, v3}, LZ4c;->a(LZ4c;Lcom/snapchat/client/messaging/NotificationPreference;II)LZ4c;
+
     .line 98
-    return-void
-.end method
+    .line 99
+    .line 100
+    move-result-object p1
 
-.method public constructor <init>(Ljava/lang/String;ILo4f;)V
-    .locals 0
+    .line 101
+    invoke-virtual {v1}, Ldme;->l()LYG2;
 
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p3, p0, LKUc;->a:Lo4f;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LKUc;
-    .locals 1
-
-    .line 1
-    const-class v0, LKUc;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LKUc;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LKUc;
-    .locals 1
-
-    .line 1
-    sget-object v0, LKUc;->Y:[LKUc;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
+    .line 102
+    .line 103
+    .line 104
     move-result-object v0
 
-    .line 7
-    check-cast v0, [LKUc;
+    .line 105
+    iget-object v2, p1, LZ4c;->a:Ljava/lang/String;
 
-    .line 8
-    .line 9
-    return-object v0
+    .line 106
+    .line 107
+    iget v3, p1, LZ4c;->g:I
+
+    .line 108
+    .line 109
+    iget-object v4, p1, LZ4c;->c:Lkmh;
+
+    .line 110
+    .line 111
+    iget-object p1, p1, LZ4c;->f:Ljava/lang/String;
+
+    .line 112
+    .line 113
+    invoke-interface {v0, v2, v3, v4, p1}, LYG2;->f0(Ljava/lang/String;ILkmh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object p1
+
+    .line 117
+    iget-object v0, v1, Ldme;->m0:LnJe;
+
+    .line 118
+    .line 119
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
+
+    .line 120
+    .line 121
+    .line 122
+    move-result-object v0
+
+    .line 123
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 124
+    .line 125
+    invoke-direct {v2, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 126
+    .line 127
+    .line 128
+    sget-object p1, LnYd;->v:LnYd;
+
+    .line 129
+    .line 130
+    new-instance v0, LbH0;
+
+    .line 131
+    .line 132
+    const/4 v4, 0x2
+
+    .line 133
+    invoke-direct {v0, v3, v4}, LbH0;-><init>(II)V
+
+    .line 134
+    .line 135
+    .line 136
+    iget-object v1, v1, Ldme;->k0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 137
+    .line 138
+    invoke-virtual {v2, p1, v0, v1}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 139
+    .line 140
+    .line 141
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 142
+    .line 143
+    return-object p1
+
+    .line 144
+    :pswitch_2
+    check-cast p1, Ljava/lang/Number;
+
+    .line 145
+    .line 146
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    .line 147
+    .line 148
+    .line 149
+    move-result p1
+
+    .line 150
+    iget-object v0, p0, LKUc;->b:LvQ2;
+
+    .line 151
+    .line 152
+    iget-object v1, v0, LvQ2;->Z:Ljava/lang/Object;
+
+    .line 153
+    .line 154
+    check-cast v1, Ldme;
+
+    .line 155
+    .line 156
+    iget-object v0, v0, LvQ2;->Y:Ljava/lang/Object;
+
+    .line 157
+    .line 158
+    check-cast v0, LZ4c;
+
+    .line 159
+    .line 160
+    const/4 v2, 0x0
+
+    .line 161
+    const/16 v3, 0x3f
+
+    .line 162
+    .line 163
+    invoke-static {v0, v2, p1, v3}, LZ4c;->a(LZ4c;Lcom/snapchat/client/messaging/NotificationPreference;II)LZ4c;
+
+    .line 164
+    .line 165
+    .line 166
+    move-result-object p1
+
+    .line 167
+    invoke-virtual {v1}, Ldme;->l()LYG2;
+
+    .line 168
+    .line 169
+    .line 170
+    move-result-object v0
+
+    .line 171
+    iget-object v2, p1, LZ4c;->a:Ljava/lang/String;
+
+    .line 172
+    .line 173
+    iget v3, p1, LZ4c;->g:I
+
+    .line 174
+    .line 175
+    iget-object v4, p1, LZ4c;->c:Lkmh;
+
+    .line 176
+    .line 177
+    iget-object p1, p1, LZ4c;->f:Ljava/lang/String;
+
+    .line 178
+    .line 179
+    invoke-interface {v0, v2, v3, v4, p1}, LYG2;->A(Ljava/lang/String;ILkmh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 180
+    .line 181
+    .line 182
+    move-result-object p1
+
+    .line 183
+    iget-object v0, v1, Ldme;->m0:LnJe;
+
+    .line 184
+    .line 185
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
+
+    .line 186
+    .line 187
+    .line 188
+    move-result-object v0
+
+    .line 189
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 190
+    .line 191
+    invoke-direct {v2, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 192
+    .line 193
+    .line 194
+    sget-object p1, LnYd;->u:LnYd;
+
+    .line 195
+    .line 196
+    new-instance v0, LbH0;
+
+    .line 197
+    .line 198
+    const/4 v4, 0x1
+
+    .line 199
+    invoke-direct {v0, v3, v4}, LbH0;-><init>(II)V
+
+    .line 200
+    .line 201
+    .line 202
+    iget-object v1, v1, Ldme;->k0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 203
+    .line 204
+    invoke-virtual {v2, p1, v0, v1}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 205
+    .line 206
+    .line 207
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 208
+    .line 209
+    return-object p1
+
+    .line 210
+    nop
+
+    .line 211
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,278 +1,193 @@
-.class public final enum LVSf;
-.super Ljava/lang/Enum;
+.class public final LVSf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LdHc;
+.implements LEXb;
 
 
-# static fields
-.field public static final enum a:LVSf;
+# instance fields
+.field public final a:LgQb;
 
-.field public static final enum b:LVSf;
+.field public final b:Lho3;
 
-.field public static final synthetic c:[LVSf;
+.field public final c:LnJe;
+
+.field public final d:LJp0;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(LgQb;Lho3;)V
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x0
-
     .line 3
-    new-instance v2, LVSf;
-
     .line 4
+    iput-object p1, p0, LVSf;->a:LgQb;
+
     .line 5
-    const-string v3, "SEND_TO_SECTION_DISABLED"
-
     .line 6
-    .line 7
-    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p2, p0, LVSf;->b:Lho3;
 
+    .line 7
     .line 8
+    sget-object p1, LTJb;->Z:LTJb;
+
     .line 9
     .line 10
-    sput-object v2, LVSf;->a:LVSf;
+    const-string p2, "ScreenshotsTabMetricHandler"
 
     .line 11
     .line 12
-    new-instance v3, LVSf;
+    invoke-static {p1, p1, p2}, LBv7;->d(LTJb;LTJb;Ljava/lang/String;)Lnp0;
 
     .line 13
     .line 14
-    const-string v4, "SEND_TO_SECTION_ERROR"
-
     .line 15
+    move-result-object p1
+
     .line 16
-    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v0, LnJe;
 
     .line 17
     .line 18
-    .line 19
-    sput-object v3, LVSf;->b:LVSf;
+    invoke-direct {v0, p1}, LnJe;-><init>(Lnp0;)V
 
+    .line 19
     .line 20
     .line 21
-    const/4 v4, 0x2
+    iput-object v0, p0, LVSf;->c:LnJe;
 
     .line 22
-    new-array v4, v4, [LVSf;
-
     .line 23
-    .line 24
-    aput-object v2, v4, v1
+    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 24
     .line 25
     .line 26
-    aput-object v3, v4, v0
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 27
     .line 28
-    sput-object v4, LVSf;->c:[LVSf;
+    iput-object p1, p0, LVSf;->d:LJp0;
 
     .line 29
     .line 30
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LVSf;
-    .locals 1
-
-    .line 1
-    const-class v0, LVSf;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LVSf;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LVSf;
-    .locals 1
-
-    .line 1
-    sget-object v0, LVSf;->c:[LVSf;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LVSf;
-
-    .line 8
-    .line 9
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public final b()Z
-    .locals 1
+.method public final start()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .locals 5
 
     .line 1
-    invoke-static {p0}, LLZj;->F(LdHc;)Z
+    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 2
     .line 3
+    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+
     .line 4
-    move-result v0
-
     .line 5
-    return v0
-.end method
+    .line 6
+    iget-object v1, p0, LVSf;->a:LgQb;
 
-.method public final c()Z
-    .locals 1
+    .line 7
+    .line 8
+    const-class v2, LcTf;
 
-    .line 1
-    invoke-static {p0}, LLZj;->D(LdHc;)Z
+    .line 9
+    .line 10
+    invoke-virtual {v1, v2}, LgQb;->b(Ljava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
 
-    .line 5
-    return v0
-.end method
+    .line 14
+    iget-object v2, p0, LVSf;->c:LnJe;
 
-.method public final d()Z
-    .locals 1
+    .line 15
+    .line 16
+    invoke-virtual {v2}, LnJe;->f()LA36;
 
-    .line 1
-    invoke-static {p0}, LLZj;->I(LdHc;)Z
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v3
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    .line 20
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
 
-    .line 5
-    return v0
-.end method
+    .line 21
+    .line 22
+    invoke-direct {v4, v1, v3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-.method public final f()Z
-    .locals 1
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v2}, LnJe;->f()LA36;
 
-    .line 1
-    invoke-static {p0}, LLZj;->k0(LdHc;)Z
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
 
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
+    .line 29
+    invoke-virtual {v4, v1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
-    .line 5
-    return v0
-.end method
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
 
-.method public final g()Z
-    .locals 1
+    .line 33
+    sget-object v2, Ldwd;->k0:Ldwd;
 
-    .line 1
-    const/4 v0, 0x0
+    .line 34
+    .line 35
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
 
-    .line 2
-    return v0
-.end method
+    .line 36
+    .line 37
+    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-.method public final bridge synthetic getName()Ljava/lang/String;
-    .locals 1
+    .line 38
+    .line 39
+    .line 40
+    new-instance v1, LUSf;
 
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
+    .line 41
+    .line 42
+    const/4 v2, 0x0
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
+    .line 43
+    invoke-direct {v1, p0, v2}, LUSf;-><init>(LVSf;I)V
 
-    .line 5
+    .line 44
+    .line 45
+    .line 46
+    new-instance v2, LUSf;
+
+    .line 47
+    .line 48
+    const/4 v4, 0x1
+
+    .line 49
+    invoke-direct {v2, p0, v4}, LUSf;-><init>(LVSf;I)V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-static {v3, v1, v2, v0}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+
+    .line 53
+    .line 54
+    .line 55
     return-object v0
-.end method
-
-.method public final h()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->G(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
-.end method
-
-.method public final i()Z
-    .locals 0
-
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public final k()LfEc;
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->w(LdHc;)LfEc;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    return-object v0
-.end method
-
-.method public final l()Z
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
-.method public final n()Z
-    .locals 1
-
-    .line 1
-    invoke-static {p0}, LLZj;->H(LdHc;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    return v0
 .end method

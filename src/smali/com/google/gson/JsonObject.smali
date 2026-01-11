@@ -56,7 +56,7 @@
 
     .line 4
     .line 5
-    sget-object p2, LqB9;->a:LqB9;
+    sget-object p2, LIK9;->a:LIK9;
 
     .line 6
     .line 7
@@ -75,7 +75,7 @@
     if-nez p2, :cond_0
 
     .line 3
-    sget-object p2, LqB9;->a:LqB9;
+    sget-object p2, LIK9;->a:LIK9;
 
     goto :goto_0
 
@@ -98,7 +98,7 @@
     if-nez p2, :cond_0
 
     .line 4
-    sget-object p2, LqB9;->a:LqB9;
+    sget-object p2, LIK9;->a:LIK9;
 
     goto :goto_0
 
@@ -121,7 +121,7 @@
     if-nez p2, :cond_0
 
     .line 2
-    sget-object p2, LqB9;->a:LqB9;
+    sget-object p2, LIK9;->a:LIK9;
 
     goto :goto_0
 
@@ -144,7 +144,7 @@
     if-nez p2, :cond_0
 
     .line 1
-    sget-object p2, LqB9;->a:LqB9;
+    sget-object p2, LIK9;->a:LIK9;
 
     goto :goto_0
 

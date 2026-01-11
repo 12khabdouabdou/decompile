@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lio/reactivex/rxjava3/functions/Function3<",
         "TT1;TT2;TT3;",
-        "LnUi;",
+        "LDjj;",
         ">;"
     }
 .end annotation
@@ -54,15 +54,15 @@
 
 
 # virtual methods
-.method public final w(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final t(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    new-instance v0, LnUi;
+    new-instance v0, LDjj;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2, p3}, LnUi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p1, p2, p3}, LDjj;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
     .line 5

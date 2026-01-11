@@ -37,13 +37,13 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/core/MaybeObserver;
 
-.field public final b:Lgn0;
+.field public final b:Lxp0;
 
 .field public c:Lio/reactivex/rxjava3/disposables/Disposable;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/MaybeObserver;Lgn0;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/MaybeObserver;Lxp0;)V
     .locals 0
 
     .line 1
@@ -56,7 +56,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn$UnsubscribeOnMaybeObserver;->b:Lgn0;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn$UnsubscribeOnMaybeObserver;->b:Lxp0;
 
     .line 7
     .line 8
@@ -65,7 +65,7 @@
 
 
 # virtual methods
-.method public final c()Z
+.method public final d()Z
     .locals 1
 
     .line 1
@@ -81,7 +81,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 8
     .line 9
@@ -120,7 +120,7 @@
 
     .line 12
     .line 13
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn$UnsubscribeOnMaybeObserver;->b:Lgn0;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn$UnsubscribeOnMaybeObserver;->b:Lxp0;
 
     .line 14
     .line 15

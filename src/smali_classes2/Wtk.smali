@@ -1,189 +1,111 @@
-.class public final LWtk;
+.class public abstract LWtk;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
-
 
 # static fields
-.field public static final a:LWtk;
+.field public static final synthetic a:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 1
 
     .line 1
-    new-instance v0, LWtk;
+    const-class v0, LWtk;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, LWtk;->a:LWtk;
+    return-void
+.end method
+
+.method public static a(Landroid/os/Parcel;)Landroid/os/Parcelable;
+    .locals 2
+
+    .line 1
+    sget-object v0, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v1
 
     .line 7
-    .line 8
-    new-instance v0, LFhk;
+    if-nez v1, :cond_0
 
+    .line 8
     .line 9
+    const/4 p0, 0x0
+
     .line 10
-    const/4 v1, 0x1
+    return-object p0
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
+    :cond_0
+    invoke-interface {v0, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
     .line 12
     .line 13
     .line 14
-    const-class v1, LUhk;
+    move-result-object p0
 
     .line 15
+    check-cast p0, Landroid/os/Parcelable;
+
     .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    .line 17
+    return-object p0
+.end method
+
+.method public static b(Landroid/os/Parcel;)V
+    .locals 2
+
+    .line 1
+    invoke-virtual {p0}, Landroid/os/Parcel;->dataAvail()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    if-gtz p0, :cond_0
+
+    .line 6
+    .line 7
+    return-void
+
+    .line 8
+    :cond_0
+    new-instance v0, Landroid/os/BadParcelableException;
+
+    .line 9
+    .line 10
+    const-string v1, "Parcel data not fully consumed, unread size: "
+
+    .line 11
+    .line 12
+    invoke-static {p0, v1}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p0
+
+    .line 16
+    invoke-direct {v0, p0}, Landroid/os/BadParcelableException;-><init>(Ljava/lang/String;)V
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
-
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    const/4 v2, 0x3
-
-    .line 30
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v0
-
-    .line 38
-    const/4 v2, 0x4
-
-    .line 39
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    const/4 v2, 0x5
-
-    .line 48
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    const/4 v2, 0x6
-
-    .line 57
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object v0
-
-    .line 61
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v0
-
-    .line 65
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 66
-    .line 67
-    .line 68
-    return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+    throw v0
 .end method

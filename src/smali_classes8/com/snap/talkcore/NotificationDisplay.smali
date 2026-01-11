@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talkcore/NotificationDisplay;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'displayType\':r<e>:\'[0]\',\'deliveryMechanism\':r<e>:\'[1]\'"
     typeReferences = {

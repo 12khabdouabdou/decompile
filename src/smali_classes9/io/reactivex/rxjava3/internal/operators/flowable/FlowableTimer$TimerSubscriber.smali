@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc7i;
+.implements Ltvi;
 .implements Ljava/lang/Runnable;
 
 
@@ -22,20 +22,20 @@
         "Ljava/util/concurrent/atomic/AtomicReference<",
         "Lio/reactivex/rxjava3/disposables/Disposable;",
         ">;",
-        "Lc7i;",
+        "Ltvi;",
         "Ljava/lang/Runnable;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public volatile b:Z
 
 
 # direct methods
-.method public constructor <init>(LV6i;)V
+.method public constructor <init>(Lmvi;)V
     .locals 0
 
     .line 1
@@ -44,7 +44,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -124,7 +124,7 @@
 
     .line 14
     .line 15
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:Lmvi;
 
     .line 16
     .line 17
@@ -140,7 +140,7 @@
     move-result-object v2
 
     .line 23
-    invoke-interface {v0, v2}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, v2}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 24
     .line 25
@@ -150,11 +150,11 @@
     .line 27
     .line 28
     .line 29
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:Lmvi;
 
     .line 30
     .line 31
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 32
     .line 33
@@ -168,7 +168,7 @@
     .line 36
     .line 37
     .line 38
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTimer$TimerSubscriber;->a:Lmvi;
 
     .line 39
     .line 40
@@ -180,7 +180,7 @@
     move-result-object v1
 
     .line 44
-    invoke-interface {v0, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 45
     .line 46

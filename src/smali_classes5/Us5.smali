@@ -1,116 +1,90 @@
 .class public final LUs5;
-.super LrE9;
+.super LBpc;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
+
+# static fields
+.field public static final c:LUs5;
+
+.field public static final d:LUs5;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Landroid/content/Context;
-
-.field public final synthetic c:LZya;
-
-.field public final synthetic t:LmTj;
+.field public final synthetic b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/content/Context;LZya;LmTj;I)V
+.method static synthetic constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, LUs5;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, LUs5;-><init>(I)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, LUs5;->c:LUs5;
+
+    .line 8
+    .line 9
+    new-instance v0, LUs5;
+
+    .line 10
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    invoke-direct {v0, v1}, LUs5;-><init>(I)V
+
+    .line 13
+    .line 14
+    .line 15
+    sput-object v0, LUs5;->d:LUs5;
+
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public synthetic constructor <init>(I)V
     .locals 0
 
     .line 1
-    iput p4, p0, LUs5;->a:I
+    iput p1, p0, LUs5;->b:I
 
-    iput-object p1, p0, LUs5;->b:Landroid/content/Context;
-
-    iput-object p2, p0, LUs5;->c:LZya;
-
-    iput-object p3, p0, LUs5;->t:LmTj;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final e()I
+    .locals 1
 
     .line 1
-    iget v0, p0, LUs5;->a:I
+    iget v0, p0, LUs5;->b:I
 
-    .line 2
-    .line 3
     packed-switch v0, :pswitch_data_0
 
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, LAC5;
+    const v0, 0x7f0e0367
 
-    .line 7
-    .line 8
-    new-instance v0, LXy5;
+    return v0
 
-    .line 9
-    .line 10
-    iget-object v1, p0, LUs5;->b:Landroid/content/Context;
-
-    .line 11
-    .line 12
-    iget-object v2, p0, LUs5;->c:LZya;
-
-    .line 13
-    .line 14
-    iget-object v3, p0, LUs5;->t:LmTj;
-
-    .line 15
-    .line 16
-    invoke-direct {v0, v1, p1, v2, v3}, LXy5;-><init>(Landroid/content/Context;LAC5;LZya;LmTj;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-object v0
-
-    .line 20
     :pswitch_0
-    check-cast p1, LAC5;
+    const v0, 0x7f0e0368
 
-    .line 21
-    .line 22
-    new-instance v0, LXy5;
+    return v0
 
-    .line 23
-    .line 24
-    iget-object v1, p0, LUs5;->b:Landroid/content/Context;
-
-    .line 25
-    .line 26
-    iget-object v2, p0, LUs5;->c:LZya;
-
-    .line 27
-    .line 28
-    iget-object v3, p0, LUs5;->t:LmTj;
-
-    .line 29
-    .line 30
-    invoke-direct {v0, v1, p1, v2, v3}, LXy5;-><init>(Landroid/content/Context;LAC5;LZya;LmTj;)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-object v0
-
-    .line 34
     nop
 
-    .line 35
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

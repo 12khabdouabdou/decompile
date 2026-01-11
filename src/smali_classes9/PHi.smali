@@ -1,204 +1,125 @@
-.class public LPHi;
-.super LoYg;
+.class public final enum LPHi;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LVz9;
-    value = LqYg;
-.end annotation
+# static fields
+.field public static final enum a:LPHi;
 
-.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
-    value = LRHi;
-.end annotation
+.field public static final enum b:LPHi;
 
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        LPHi$a;
-    }
-.end annotation
-
-
-# instance fields
-.field public a:Ljava/lang/String;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "tool"
-    .end annotation
-.end field
-
-.field public b:Ljava/lang/Integer;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "version"
-    .end annotation
-.end field
+.field public static final synthetic c:[LPHi;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    if-ne p1, p0, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
     const/4 v1, 0x0
 
+    .line 3
+    new-instance v2, LPHi;
+
+    .line 4
+    .line 5
+    const-string v3, "USER"
+
     .line 6
-    if-eqz p1, :cond_2
-
     .line 7
-    .line 8
-    instance-of v2, p1, LPHi;
+    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 8
     .line 9
     .line 10
-    if-nez v2, :cond_1
+    sput-object v2, LPHi;->a:LPHi;
 
     .line 11
     .line 12
-    goto :goto_0
+    new-instance v3, LPHi;
 
     .line 13
-    :cond_1
-    check-cast p1, LPHi;
-
     .line 14
+    const-string v4, "PLACE"
+
     .line 15
-    iget-object v2, p0, LPHi;->a:Ljava/lang/String;
-
     .line 16
-    .line 17
-    iget-object v3, p1, LPHi;->a:Ljava/lang/String;
+    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 17
     .line 18
     .line 19
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    sput-object v3, LPHi;->b:LPHi;
 
     .line 20
     .line 21
+    const/4 v4, 0x2
+
     .line 22
-    move-result v2
+    new-array v4, v4, [LPHi;
 
     .line 23
-    if-eqz v2, :cond_2
-
     .line 24
+    aput-object v2, v4, v1
+
     .line 25
-    iget-object v2, p0, LPHi;->b:Ljava/lang/Integer;
-
     .line 26
+    aput-object v3, v4, v0
+
     .line 27
-    iget-object p1, p1, LPHi;->b:Ljava/lang/Integer;
-
     .line 28
+    sput-object v4, LPHi;->c:[LPHi;
+
     .line 29
-    invoke-static {v2, p1}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 30
-    .line 31
-    .line 32
-    move-result p1
-
-    .line 33
-    if-eqz p1, :cond_2
-
-    .line 34
-    .line 35
-    return v0
-
-    .line 36
-    :cond_2
-    :goto_0
-    return v1
+    return-void
 .end method
 
-.method public final hashCode()I
-    .locals 3
+.method public static valueOf(Ljava/lang/String;)LPHi;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LPHi;->a:Ljava/lang/String;
+    const-class v0, LPHi;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     .line 4
-    if-nez v0, :cond_0
-
     .line 5
     .line 6
-    const/4 v0, 0x0
+    move-result-object p0
 
     .line 7
-    goto :goto_0
+    check-cast p0, LPHi;
 
     .line 8
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
     .line 9
-    .line 10
-    .line 11
-    move-result v0
+    return-object p0
+.end method
 
-    .line 12
-    :goto_0
-    const/16 v2, 0x20f
+.method public static values()[LPHi;
+    .locals 1
 
-    .line 13
-    .line 14
-    add-int/2addr v2, v0
+    .line 1
+    sget-object v0, LPHi;->c:[LPHi;
 
-    .line 15
-    mul-int/lit8 v2, v2, 0x1f
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
-    .line 16
-    .line 17
-    iget-object v0, p0, LPHi;->b:Ljava/lang/Integer;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 18
-    .line 19
-    if-nez v0, :cond_1
+    .line 7
+    check-cast v0, [LPHi;
 
-    .line 20
-    .line 21
-    goto :goto_1
-
-    .line 22
-    :cond_1
-    invoke-virtual {v0}, Ljava/lang/Integer;->hashCode()I
-
-    .line 23
-    .line 24
-    .line 25
-    move-result v1
-
-    .line 26
-    :goto_1
-    add-int/2addr v2, v1
-
-    .line 27
-    return v2
+    .line 8
+    .line 9
+    return-object v0
 .end method

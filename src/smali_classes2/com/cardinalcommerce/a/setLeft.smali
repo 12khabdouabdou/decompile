@@ -575,7 +575,7 @@
     throw v0
 .end method
 
-.method public final d(LIx2;)V
+.method public final d(LsA2;)V
     .locals 4
 
     .line 1

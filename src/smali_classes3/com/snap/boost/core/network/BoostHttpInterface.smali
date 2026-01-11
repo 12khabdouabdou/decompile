@@ -4,24 +4,21 @@
 
 
 # virtual methods
-.method public abstract createBoostAction(Ljava/lang/String;LZ84;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract createBoostAction(Ljava/lang/String;LEd4;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LZ84;
-        .annotation runtime Ljv1;
+    .param p2    # LEd4;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Access-Token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
@@ -33,35 +30,35 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LZ84;",
+            "LEd4;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "La94;",
+            "Ljnf<",
+            "LFd4;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract createBoostActionV2(Ljava/lang/String;LZ84;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract createBoostActionV2(Ljava/lang/String;LEd4;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LZ84;
-        .annotation runtime Ljv1;
+    .param p2    # LEd4;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
@@ -73,35 +70,35 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LZ84;",
+            "LEd4;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "La94;",
+            "Ljnf<",
+            "LFd4;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract deleteBoostAction(Ljava/lang/String;LS06;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract deleteBoostAction(Ljava/lang/String;LQ36;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LS06;
-        .annotation runtime Ljv1;
+    .param p2    # LQ36;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Access-Token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
@@ -113,35 +110,35 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LS06;",
+            "LQ36;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LT06;",
+            "Ljnf<",
+            "LR36;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method
 
-.method public abstract deleteBoostActionV2(Ljava/lang/String;LS06;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract deleteBoostActionV2(Ljava/lang/String;LQ36;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # LS06;
-        .annotation runtime Ljv1;
+    .param p2    # LQ36;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
@@ -153,13 +150,16 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LS06;",
+            "LQ36;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LT06;",
+            "Ljnf<",
+            "LR36;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

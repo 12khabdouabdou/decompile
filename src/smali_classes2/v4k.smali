@@ -1,1477 +1,417 @@
 .class public final Lv4k;
-.super Ll6k;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static volatile g:Lv4k; = null
+# instance fields
+.field public final a:I
 
-.field public static h:I = 0x0
+.field public final b:Libh;
 
-.field public static i:I = 0x1
+.field public final c:Lio/reactivex/rxjava3/subjects/CompletableSubject;
+
+.field public final d:Lio/reactivex/rxjava3/disposables/Disposable;
+
+.field public final e:Lykf;
 
 
 # direct methods
-.method public static k()Lv4k;
-    .locals 3
+.method public constructor <init>(ILibh;Lio/reactivex/rxjava3/subjects/CompletableSubject;Lio/reactivex/rxjava3/disposables/Disposable;Lykf;)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lv4k;->g:Lv4k;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    if-nez v0, :cond_2
-
     .line 4
+    iput p1, p0, Lv4k;->a:I
+
     .line 5
-    const-class v0, Lv4k;
-
     .line 6
-    .line 7
-    monitor-enter v0
+    iput-object p2, p0, Lv4k;->b:Libh;
 
+    .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lv4k;->g:Lv4k;
+    iput-object p3, p0, Lv4k;->c:Lio/reactivex/rxjava3/subjects/CompletableSubject;
 
     .line 9
     .line 10
-    if-nez v1, :cond_1
+    iput-object p4, p0, Lv4k;->d:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 11
     .line 12
-    new-instance v1, Lv4k;
+    iput-object p5, p0, Lv4k;->e:Lykf;
 
     .line 13
     .line 14
-    invoke-direct {v1}, Ll6k;-><init>()V
-
-    .line 15
-    .line 16
-    .line 17
-    sget-object v2, Lv4k;->g:Lv4k;
-
-    .line 18
-    .line 19
-    if-nez v2, :cond_0
-
-    .line 20
-    .line 21
-    const/4 v2, 0x1
-
-    .line 22
-    invoke-static {v2}, Ll6k;->g(Z)V
-
-    .line 23
-    .line 24
-    .line 25
-    sput-object v1, Lv4k;->g:Lv4k;
-
-    .line 26
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :catchall_0
-    move-exception v1
-
-    .line 29
-    goto :goto_1
-
-    .line 30
-    :cond_0
-    new-instance v1, Ljava/lang/RuntimeException;
-
-    .line 31
-    .line 32
-    const-string v2, "Use getInstance() method to get the single instance."
-
-    .line 33
-    .line 34
-    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    .line 35
-    .line 36
-    .line 37
-    throw v1
-
-    .line 38
-    :cond_1
-    :goto_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 39
-    goto :goto_2
-
-    .line 40
-    :goto_1
-    monitor-exit v0
-
-    .line 41
-    throw v1
-
-    .line 42
-    :cond_2
-    :goto_2
-    sget-object v0, Lv4k;->g:Lv4k;
-
-    .line 43
-    .line 44
-    return-object v0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public final equals(Ljava/lang/Object;)Z
     .locals 4
-
-    .line 1
-    sget v0, Lv4k;->h:I
-
-    .line 2
-    .line 3
-    or-int/lit8 v1, v0, 0x79
-
-    .line 4
-    .line 5
-    shl-int/lit8 v1, v1, 0x1
-
-    .line 6
-    .line 7
-    xor-int/lit8 v2, v0, 0x79
-
-    .line 8
-    .line 9
-    neg-int v2, v2
-
-    .line 10
-    xor-int v3, v1, v2
-
-    .line 11
-    .line 12
-    and-int/2addr v1, v2
-
-    .line 13
-    shl-int/lit8 v1, v1, 0x1
-
-    .line 14
-    .line 15
-    add-int/2addr v3, v1
-
-    .line 16
-    rem-int/lit16 v3, v3, 0x80
-
-    .line 17
-    .line 18
-    sput v3, Lv4k;->i:I
-
-    .line 19
-    .line 20
-    sget-boolean v1, Ll6k;->a:Z
-
-    .line 21
-    .line 22
-    const/4 v2, 0x0
-
-    .line 23
-    if-eqz v1, :cond_1
-
-    .line 24
-    .line 25
-    and-int/lit8 v1, v0, 0x45
-
-    .line 26
-    .line 27
-    not-int v3, v1
-
-    .line 28
-    or-int/lit8 v0, v0, 0x45
-
-    .line 29
-    .line 30
-    and-int/2addr v0, v3
-
-    .line 31
-    shl-int/lit8 v1, v1, 0x1
-
-    .line 32
-    .line 33
-    not-int v1, v1
-
-    .line 34
-    sub-int/2addr v0, v1
-
-    .line 35
-    add-int/lit8 v0, v0, -0x1
-
-    .line 36
-    .line 37
-    rem-int/lit16 v1, v0, 0x80
-
-    .line 38
-    .line 39
-    sput v1, Lv4k;->i:I
-
-    .line 40
-    .line 41
-    rem-int/lit8 v0, v0, 0x2
-
-    .line 42
-    .line 43
-    const-string v1, "CardinalLoggerV1"
-
-    .line 44
-    .line 45
-    if-eqz v0, :cond_0
-
-    .line 46
-    .line 47
-    invoke-static {}, Ls4k;->i()Ls4k;
-
-    .line 48
-    .line 49
-    .line 50
-    invoke-static {}, Ls4k;->l()Ljava/lang/String;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v0
-
-    .line 54
-    sput-object v0, Ll6k;->b:Ljava/lang/String;
-
-    .line 55
-    .line 56
-    sput-object v1, Ll6k;->c:Ljava/lang/String;
-
-    .line 57
-    .line 58
-    invoke-super {p0, p1, p2, p3}, Ll6k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 59
-    .line 60
-    .line 61
-    goto :goto_0
-
-    .line 62
-    :cond_0
-    invoke-static {}, Ls4k;->i()Ls4k;
-
-    .line 63
-    .line 64
-    .line 65
-    invoke-static {}, Ls4k;->l()Ljava/lang/String;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v0
-
-    .line 69
-    sput-object v0, Ll6k;->b:Ljava/lang/String;
-
-    .line 70
-    .line 71
-    sput-object v1, Ll6k;->c:Ljava/lang/String;
-
-    .line 72
-    .line 73
-    invoke-super {p0, p1, p2, p3}, Ll6k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 74
-    .line 75
-    .line 76
-    throw v2
-
-    .line 77
-    :cond_1
-    :goto_0
-    sget p1, Lv4k;->i:I
-
-    .line 78
-    .line 79
-    xor-int/lit8 p2, p1, 0x4b
-
-    .line 80
-    .line 81
-    and-int/lit8 p1, p1, 0x4b
-
-    .line 82
-    .line 83
-    or-int/2addr p1, p2
-
-    .line 84
-    shl-int/lit8 p1, p1, 0x1
-
-    .line 85
-    .line 86
-    sub-int/2addr p1, p2
-
-    .line 87
-    rem-int/lit16 p2, p1, 0x80
-
-    .line 88
-    .line 89
-    sput p2, Lv4k;->h:I
-
-    .line 90
-    .line 91
-    rem-int/lit8 p1, p1, 0x2
-
-    .line 92
-    .line 93
-    if-nez p1, :cond_2
-
-    .line 94
-    .line 95
-    return-void
-
-    .line 96
-    :cond_2
-    throw v2
-.end method
-
-.method public final c()LG5k;
-    .locals 5
-
-    .line 1
-    sget v0, Lv4k;->i:I
-
-    .line 2
-    .line 3
-    xor-int/lit8 v1, v0, 0x6f
-
-    .line 4
-    .line 5
-    and-int/lit8 v0, v0, 0x6f
-
-    .line 6
-    .line 7
-    or-int/2addr v0, v1
-
-    .line 8
-    const/4 v2, 0x1
-
-    .line 9
-    shl-int/2addr v0, v2
-
-    .line 10
-    neg-int v1, v1
-
-    .line 11
-    not-int v1, v1
-
-    .line 12
-    const/16 v3, 0x80
-
-    .line 13
-    .line 14
-    invoke-static {v0, v1, v2, v3}, Lmmi;->c(IIII)I
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v0
-
-    .line 18
-    sput v0, Lv4k;->h:I
-
-    .line 19
-    .line 20
-    invoke-super {p0}, Ll6k;->c()LG5k;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    sget v1, Lv4k;->i:I
-
-    .line 25
-    .line 26
-    or-int/lit8 v4, v1, 0x35
-
-    .line 27
-    .line 28
-    shl-int/lit8 v2, v4, 0x1
-
-    .line 29
-    .line 30
-    and-int/lit8 v4, v1, -0x36
-
-    .line 31
-    .line 32
-    not-int v1, v1
-
-    .line 33
-    and-int/lit8 v1, v1, 0x35
-
-    .line 34
-    .line 35
-    or-int/2addr v1, v4
-
-    .line 36
-    neg-int v1, v1
-
-    .line 37
-    and-int v4, v2, v1
-
-    .line 38
-    .line 39
-    or-int/2addr v1, v2
-
-    .line 40
-    add-int/2addr v4, v1
-
-    .line 41
-    rem-int/2addr v4, v3
-
-    .line 42
-    sput v4, Lv4k;->h:I
-
-    .line 43
-    .line 44
-    return-object v0
-.end method
-
-.method public final d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 4
-
-    .line 1
-    sget v0, Lv4k;->i:I
-
-    .line 2
-    .line 3
-    or-int/lit8 v1, v0, 0x28
-
-    .line 4
-    .line 5
-    const/4 v2, 0x1
-
-    .line 6
-    shl-int/2addr v1, v2
-
-    .line 7
-    xor-int/lit8 v0, v0, 0x28
-
-    .line 8
-    .line 9
-    const/16 v3, 0x80
-
-    .line 10
-    .line 11
-    invoke-static {v1, v0, v2, v3}, Lmmi;->c(IIII)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
-    sput v0, Lv4k;->h:I
-
-    .line 16
-    .line 17
-    sget-boolean v1, Ll6k;->a:Z
-
-    .line 18
-    .line 19
-    xor-int/2addr v1, v2
-
-    .line 20
-    if-eq v1, v2, :cond_1
-
-    .line 21
-    .line 22
-    xor-int/lit8 v1, v0, 0x25
-
-    .line 23
-    .line 24
-    and-int/lit8 v0, v0, 0x25
-
-    .line 25
-    .line 26
-    or-int/2addr v0, v1
-
-    .line 27
-    shl-int/2addr v0, v2
-
-    .line 28
-    neg-int v1, v1
-
-    .line 29
-    and-int v2, v0, v1
-
-    .line 30
-    .line 31
-    or-int/2addr v0, v1
-
-    .line 32
-    add-int/2addr v2, v0
-
-    .line 33
-    rem-int/lit16 v0, v2, 0x80
-
-    .line 34
-    .line 35
-    sput v0, Lv4k;->i:I
-
-    .line 36
-    .line 37
-    rem-int/lit8 v2, v2, 0x2
-
-    .line 38
-    .line 39
-    const-string v0, "CardinalLoggerV1"
-
-    .line 40
-    .line 41
-    if-eqz v2, :cond_0
-
-    .line 42
-    .line 43
-    invoke-static {}, Ls4k;->i()Ls4k;
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-static {}, Ls4k;->l()Ljava/lang/String;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object v1
-
-    .line 50
-    sput-object v1, Ll6k;->b:Ljava/lang/String;
-
-    .line 51
-    .line 52
-    sput-object v0, Ll6k;->c:Ljava/lang/String;
-
-    .line 53
-    .line 54
-    invoke-super {p0, p1, p2, p3}, Ll6k;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    goto :goto_0
-
-    .line 58
-    :cond_0
-    invoke-static {}, Ls4k;->i()Ls4k;
-
-    .line 59
-    .line 60
-    .line 61
-    invoke-static {}, Ls4k;->l()Ljava/lang/String;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v1
-
-    .line 65
-    sput-object v1, Ll6k;->b:Ljava/lang/String;
-
-    .line 66
-    .line 67
-    sput-object v0, Ll6k;->c:Ljava/lang/String;
-
-    .line 68
-    .line 69
-    invoke-super {p0, p1, p2, p3}, Ll6k;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 70
-    .line 71
-    .line 72
-    const/4 p1, 0x0
-
-    .line 73
-    throw p1
-
-    .line 74
-    :cond_1
-    :goto_0
-    sget p1, Lv4k;->i:I
-
-    .line 75
-    .line 76
-    and-int/lit8 p2, p1, 0xb
-
-    .line 77
-    .line 78
-    xor-int/lit8 p1, p1, 0xb
-
-    .line 79
-    .line 80
-    or-int/2addr p1, p2
-
-    .line 81
-    add-int/2addr p2, p1
-
-    .line 82
-    rem-int/2addr p2, v3
-
-    .line 83
-    sput p2, Lv4k;->h:I
-
-    .line 84
-    .line 85
-    return-void
-.end method
-
-.method public final h()V
-    .locals 3
-
-    .line 1
-    sget v0, Lv4k;->i:I
-
-    .line 2
-    .line 3
-    xor-int/lit8 v1, v0, 0x17
-
-    .line 4
-    .line 5
-    and-int/lit8 v2, v0, 0x17
-
-    .line 6
-    .line 7
-    or-int/2addr v1, v2
-
-    .line 8
-    shl-int/lit8 v1, v1, 0x1
-
-    .line 9
-    .line 10
-    not-int v2, v2
-
-    .line 11
-    or-int/lit8 v0, v0, 0x17
-
-    .line 12
-    .line 13
-    and-int/2addr v0, v2
-
-    .line 14
-    neg-int v0, v0
-
-    .line 15
-    xor-int v2, v1, v0
-
-    .line 16
-    .line 17
-    and-int/2addr v0, v1
-
-    .line 18
-    shl-int/lit8 v0, v0, 0x1
-
-    .line 19
-    .line 20
-    add-int/2addr v2, v0
-
-    .line 21
-    rem-int/lit16 v2, v2, 0x80
-
-    .line 22
-    .line 23
-    sput v2, Lv4k;->h:I
-
-    .line 24
-    .line 25
-    invoke-super {p0}, Ll6k;->h()V
-
-    .line 26
-    .line 27
-    .line 28
-    sget v0, Lv4k;->i:I
-
-    .line 29
-    .line 30
-    add-int/lit8 v0, v0, 0x53
-
-    .line 31
-    .line 32
-    rem-int/lit16 v0, v0, 0x80
-
-    .line 33
-    .line 34
-    sput v0, Lv4k;->h:I
-
-    .line 35
-    .line 36
-    return-void
-.end method
-
-.method public final i(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 4
-
-    .line 1
-    sget v0, Lv4k;->h:I
-
-    .line 2
-    .line 3
-    and-int/lit8 v1, v0, 0x2b
-
-    .line 4
-    .line 5
-    not-int v2, v1
-
-    .line 6
-    or-int/lit8 v0, v0, 0x2b
-
-    .line 7
-    .line 8
-    and-int/2addr v0, v2
-
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    shl-int/2addr v1, v2
-
-    .line 11
-    add-int/2addr v0, v1
-
-    .line 12
-    const/16 v1, 0x80
-
-    .line 13
-    .line 14
-    rem-int/2addr v0, v1
-
-    .line 15
-    sput v0, Lv4k;->i:I
-
-    .line 16
-    .line 17
-    const/4 v0, 0x0
-
-    .line 18
-    invoke-virtual {p0, p1, p2, v0}, Lv4k;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 19
-    .line 20
-    .line 21
-    sget p1, Lv4k;->i:I
-
-    .line 22
-    .line 23
-    and-int/lit8 p2, p1, -0x60
-
-    .line 24
-    .line 25
-    not-int v0, p1
-
-    .line 26
-    const/16 v3, 0x5f
-
-    .line 27
-    .line 28
-    and-int/2addr v0, v3
-
-    .line 29
-    or-int/2addr p2, v0
-
-    .line 30
-    and-int/2addr p1, v3
-
-    .line 31
-    shl-int/2addr p1, v2
-
-    .line 32
-    not-int p1, p1
-
-    .line 33
-    invoke-static {p2, p1, v2, v1}, Lmmi;->c(IIII)I
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p1
-
-    .line 37
-    sput p1, Lv4k;->h:I
-
-    .line 38
-    .line 39
-    return-void
-.end method
-
-.method public final j(LpX0;Ljava/lang/String;)V
-    .locals 3
-
-    .line 1
-    sget v0, Lv4k;->h:I
-
-    .line 2
-    .line 3
-    and-int/lit8 v1, v0, 0x7
-
-    .line 4
-    .line 5
-    not-int v2, v1
-
-    .line 6
-    or-int/lit8 v0, v0, 0x7
-
-    .line 7
-    .line 8
-    and-int/2addr v0, v2
-
-    .line 9
-    shl-int/lit8 v1, v1, 0x1
-
-    .line 10
-    .line 11
-    add-int/2addr v0, v1
-
-    .line 12
-    rem-int/lit16 v0, v0, 0x80
-
-    .line 13
-    .line 14
-    sput v0, Lv4k;->i:I
-
-    .line 15
-    .line 16
-    invoke-virtual {p1}, LpX0;->c()I
-
-    .line 17
-    .line 18
-    .line 19
-    move-result v0
-
-    .line 20
-    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    invoke-virtual {p1}, LpX0;->a()Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    invoke-virtual {p0, v0, p1, p2}, Lv4k;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    sget p1, Lv4k;->h:I
-
-    .line 32
-    .line 33
-    or-int/lit8 p2, p1, 0x47
-
-    .line 34
-    .line 35
-    shl-int/lit8 p2, p2, 0x1
-
-    .line 36
-    .line 37
-    and-int/lit8 v0, p1, -0x48
-
-    .line 38
-    .line 39
-    not-int p1, p1
-
-    .line 40
-    const/16 v1, 0x47
-
-    .line 41
-    .line 42
-    and-int/2addr p1, v1
-
-    .line 43
-    or-int/2addr p1, v0
-
-    .line 44
-    neg-int p1, p1
-
-    .line 45
-    or-int v0, p2, p1
-
-    .line 46
-    .line 47
-    shl-int/lit8 v0, v0, 0x1
-
-    .line 48
-    .line 49
-    xor-int/2addr p1, p2
-
-    .line 50
-    sub-int/2addr v0, p1
-
-    .line 51
-    rem-int/lit16 v0, v0, 0x80
-
-    .line 52
-    .line 53
-    sput v0, Lv4k;->i:I
-
-    .line 54
-    .line 55
-    return-void
-.end method
-
-.method public final l(Ljava/lang/String;)V
-    .locals 9
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    const/16 v1, 0x80
+    if-ne p0, p1, :cond_0
 
     .line 3
     .line 4
-    sget v2, Lv4k;->i:I
+    return v0
 
     .line 5
-    .line 6
-    add-int/lit8 v2, v2, 0x70
+    :cond_0
+    instance-of v1, p1, Lv4k;
 
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    xor-int/lit8 v3, v2, -0x1
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    shl-int/2addr v2, v0
+    return v2
 
     .line 11
-    add-int/2addr v3, v2
+    :cond_1
+    check-cast p1, Lv4k;
 
     .line 12
-    rem-int/2addr v3, v1
-
     .line 13
-    sput v3, Lv4k;->h:I
+    iget v1, p1, Lv4k;->a:I
 
     .line 14
     .line 15
-    sget v2, Ll6k;->f:I
+    iget v3, p0, Lv4k;->a:I
 
     .line 16
     .line 17
-    xor-int/lit8 v3, v2, 0x6b
+    if-eq v3, v1, :cond_2
 
     .line 18
     .line 19
-    and-int/lit8 v4, v2, 0x6b
+    return v2
 
     .line 20
-    .line 21
-    or-int/2addr v3, v4
+    :cond_2
+    iget-object v1, p0, Lv4k;->b:Libh;
 
+    .line 21
     .line 22
-    shl-int/2addr v3, v0
+    iget-object v3, p1, Lv4k;->b:Libh;
 
     .line 23
-    not-int v4, v4
-
     .line 24
-    or-int/lit8 v5, v2, 0x6b
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
-    and-int/2addr v4, v5
-
     .line 27
-    neg-int v4, v4
+    move-result v1
 
     .line 28
-    not-int v4, v4
+    if-nez v1, :cond_3
 
     .line 29
-    invoke-static {v3, v4, v0, v1}, Lmmi;->c(IIII)I
-
     .line 30
-    .line 31
-    .line 32
-    move-result v3
+    return v2
 
+    .line 31
+    :cond_3
+    iget-object v1, p0, Lv4k;->c:Lio/reactivex/rxjava3/subjects/CompletableSubject;
+
+    .line 32
     .line 33
-    sput v3, Ll6k;->e:I
+    iget-object v3, p1, Lv4k;->c:Lio/reactivex/rxjava3/subjects/CompletableSubject;
 
     .line 34
     .line 35
-    sget-boolean v3, Ll6k;->a:Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
     .line 37
-    if-eqz v3, :cond_7
-
     .line 38
+    move-result v1
+
     .line 39
-    new-instance v4, Lk6k;
+    if-nez v1, :cond_4
 
     .line 40
     .line 41
-    add-int/lit8 v2, v2, 0x23
+    return v2
 
     .line 42
+    :cond_4
+    iget-object v1, p0, Lv4k;->d:Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 43
-    rem-int/lit16 v5, v2, 0x80
-
     .line 44
+    iget-object v3, p1, Lv4k;->d:Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 45
-    sput v5, Ll6k;->e:I
-
     .line 46
-    .line 47
-    rem-int/lit8 v2, v2, 0x2
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 47
     .line 48
     .line 49
-    const/4 v6, 0x0
+    move-result v1
 
     .line 50
-    if-nez v2, :cond_6
+    if-nez v1, :cond_5
 
     .line 51
     .line 52
-    if-eqz v3, :cond_0
+    return v2
 
     .line 53
+    :cond_5
+    iget-object v1, p0, Lv4k;->e:Lykf;
+
     .line 54
-    new-instance v2, LF5k;
-
     .line 55
-    .line 56
-    invoke-direct {v2}, LF5k;-><init>()V
+    iget-object p1, p1, Lv4k;->e:Lykf;
 
+    .line 56
     .line 57
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 58
     .line 59
-    invoke-virtual {v2}, LF5k;->a()Ljava/lang/String;
-
     .line 60
-    .line 61
-    .line 62
-    move-result-object v2
-
-    .line 63
-    sget v3, Ll6k;->f:I
-
-    .line 64
-    .line 65
-    or-int/lit8 v5, v3, 0x33
-
-    .line 66
-    .line 67
-    shl-int/2addr v5, v0
-
-    .line 68
-    xor-int/lit8 v3, v3, 0x33
-
-    .line 69
-    .line 70
-    sub-int/2addr v5, v3
-
-    .line 71
-    rem-int/2addr v5, v1
-
-    .line 72
-    sput v5, Ll6k;->e:I
-
-    .line 73
-    .line 74
-    goto :goto_0
-
-    .line 75
-    :cond_0
-    or-int/lit8 v2, v5, 0x71
-
-    .line 76
-    .line 77
-    shl-int/2addr v2, v0
-
-    .line 78
-    xor-int/lit8 v3, v5, 0x71
-
-    .line 79
-    .line 80
-    neg-int v3, v3
-
-    .line 81
-    and-int v5, v2, v3
-
-    .line 82
-    .line 83
-    or-int/2addr v2, v3
-
-    .line 84
-    add-int/2addr v5, v2
-
-    .line 85
-    rem-int/2addr v5, v1
-
-    .line 86
-    sput v5, Ll6k;->f:I
-
-    .line 87
-    .line 88
-    move-object v2, v6
-
-    .line 89
-    :goto_0
-    sget v3, Ll6k;->f:I
-
-    .line 90
-    .line 91
-    xor-int/lit8 v5, v3, 0x2d
-
-    .line 92
-    .line 93
-    and-int/lit8 v7, v3, 0x2d
-
-    .line 94
-    .line 95
-    or-int/2addr v5, v7
-
-    .line 96
-    shl-int/2addr v5, v0
-
-    .line 97
-    not-int v7, v7
-
-    .line 98
-    or-int/lit8 v8, v3, 0x2d
-
-    .line 99
-    .line 100
-    and-int/2addr v7, v8
-
-    .line 101
-    neg-int v7, v7
-
-    .line 102
-    not-int v7, v7
-
-    .line 103
-    sub-int/2addr v5, v7
-
-    .line 104
-    sub-int/2addr v5, v0
-
-    .line 105
-    rem-int/lit16 v7, v5, 0x80
-
-    .line 106
-    .line 107
-    sput v7, Ll6k;->e:I
-
-    .line 108
-    .line 109
-    rem-int/lit8 v5, v5, 0x2
-
-    .line 110
-    .line 111
-    if-nez v5, :cond_5
-
-    .line 112
-    .line 113
-    const-string v5, "https://cmsdk.cardinalcommerce.com/prod_logs"
-
-    .line 114
-    .line 115
-    if-nez p1, :cond_2
-
-    .line 116
-    .line 117
-    add-int/lit8 v3, v3, 0x5e
-
-    .line 118
-    .line 119
-    xor-int/lit8 p1, v3, -0x1
-
-    .line 120
-    .line 121
-    shl-int/2addr v3, v0
-
-    .line 122
-    add-int/2addr p1, v3
-
-    .line 123
-    rem-int/lit16 v3, p1, 0x80
-
-    .line 124
-    .line 125
-    sput v3, Ll6k;->e:I
-
-    .line 126
-    .line 127
-    rem-int/lit8 p1, p1, 0x2
-
-    .line 128
-    .line 129
-    if-nez p1, :cond_1
-
-    .line 130
-    .line 131
-    goto :goto_1
-
-    .line 132
-    :cond_1
-    throw v6
-
-    .line 133
-    :cond_2
-    sget-object v3, LPwi;->a:[C
-
-    .line 134
-    .line 135
-    const-string v3, "STAGING"
-
-    .line 136
-    .line 137
-    invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 138
-    .line 139
-    .line 140
     move-result p1
 
-    .line 141
-    if-eqz p1, :cond_4
+    .line 61
+    if-nez p1, :cond_6
 
-    .line 142
-    .line 143
-    sget p1, Ll6k;->e:I
+    .line 62
+    .line 63
+    return v2
 
-    .line 144
-    .line 145
-    or-int/lit8 v3, p1, 0x6b
-
-    .line 146
-    .line 147
-    shl-int/2addr v3, v0
-
-    .line 148
-    xor-int/lit8 p1, p1, 0x6b
-
-    .line 149
-    .line 150
-    sub-int/2addr v3, p1
-
-    .line 151
-    rem-int/lit16 p1, v3, 0x80
-
-    .line 152
-    .line 153
-    sput p1, Ll6k;->f:I
-
-    .line 154
-    .line 155
-    rem-int/lit8 v3, v3, 0x2
-
-    .line 156
-    .line 157
-    if-eqz v3, :cond_3
-
-    .line 158
-    .line 159
-    const-string v5, "https://cmsdk.cardinalcommerce.com/stag_logs"
-
-    .line 160
-    .line 161
-    goto :goto_1
-
-    .line 162
-    :cond_3
-    throw v6
-
-    .line 163
-    :cond_4
-    sget p1, Ll6k;->f:I
-
-    .line 164
-    .line 165
-    and-int/lit8 v3, p1, -0xc
-
-    .line 166
-    .line 167
-    not-int v6, p1
-
-    .line 168
-    const/16 v7, 0xb
-
-    .line 169
-    .line 170
-    and-int/2addr v6, v7
-
-    .line 171
-    or-int/2addr v3, v6
-
-    .line 172
-    and-int/2addr p1, v7
-
-    .line 173
-    shl-int/2addr p1, v0
-
-    .line 174
-    neg-int p1, p1
-
-    .line 175
-    neg-int p1, p1
-
-    .line 176
-    xor-int v6, v3, p1
-
-    .line 177
-    .line 178
-    and-int/2addr p1, v3
-
-    .line 179
-    shl-int/2addr p1, v0
-
-    .line 180
-    add-int/2addr v6, p1
-
-    .line 181
-    rem-int/2addr v6, v1
-
-    .line 182
-    sput v6, Ll6k;->e:I
-
-    .line 183
-    .line 184
-    :goto_1
-    invoke-direct {v4}, Ls5k;-><init>()V
-
-    .line 185
-    .line 186
-    .line 187
-    const/16 p1, 0x2710
-
-    .line 188
-    .line 189
-    invoke-virtual {v4, p1, v5, v2}, Ls5k;->b(ILjava/lang/String;Ljava/lang/String;)V
-
-    .line 190
-    .line 191
-    .line 192
-    invoke-virtual {v4}, Ls5k;->g()V
-
-    .line 193
-    .line 194
-    .line 195
-    sget p1, Ll6k;->f:I
-
-    .line 196
-    .line 197
-    add-int/lit8 p1, p1, 0x9
-
-    .line 198
-    .line 199
-    rem-int/2addr p1, v1
-
-    .line 200
-    sput p1, Ll6k;->e:I
-
-    .line 201
-    .line 202
-    goto :goto_2
-
-    .line 203
-    :cond_5
-    throw v6
-
-    .line 204
+    .line 64
     :cond_6
-    throw v6
+    return v0
+.end method
 
-    .line 205
-    :cond_7
-    :goto_2
-    sget p1, Ll6k;->f:I
+.method public final hashCode()I
+    .locals 2
 
-    .line 206
-    .line 207
-    and-int/lit8 v2, p1, 0x3b
+    .line 1
+    iget v0, p0, Lv4k;->a:I
 
-    .line 208
-    .line 209
-    or-int/lit8 p1, p1, 0x3b
+    .line 2
+    .line 3
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 210
-    .line 211
-    neg-int p1, p1
+    .line 4
+    .line 5
+    iget-object v1, p0, Lv4k;->b:Libh;
 
-    .line 212
-    neg-int p1, p1
+    .line 6
+    .line 7
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
-    .line 213
-    and-int v3, v2, p1
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
 
-    .line 214
-    .line 215
-    or-int/2addr p1, v2
+    .line 11
+    add-int/2addr v1, v0
 
-    .line 216
-    add-int/2addr v3, p1
+    .line 12
+    mul-int/lit8 v1, v1, 0x1f
 
-    .line 217
-    rem-int/2addr v3, v1
+    .line 13
+    .line 14
+    iget-object v0, p0, Lv4k;->c:Lio/reactivex/rxjava3/subjects/CompletableSubject;
 
-    .line 218
-    sput v3, Ll6k;->e:I
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
-    .line 219
-    .line 220
-    sget p1, Lv4k;->h:I
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
 
-    .line 221
-    .line 222
-    xor-int/lit8 v2, p1, 0x1
+    .line 20
+    add-int/2addr v0, v1
 
-    .line 223
-    .line 224
-    and-int/lit8 v3, p1, 0x1
+    .line 21
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 225
-    .line 226
-    or-int/2addr v2, v3
+    .line 22
+    .line 23
+    iget-object v1, p0, Lv4k;->d:Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 227
-    shl-int/2addr v2, v0
+    .line 24
+    .line 25
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
-    .line 228
-    and-int/lit8 v3, p1, -0x2
+    .line 26
+    .line 27
+    .line 28
+    move-result v1
 
-    .line 229
-    .line 230
-    not-int p1, p1
+    .line 29
+    add-int/2addr v1, v0
 
-    .line 231
-    and-int/2addr p1, v0
+    .line 30
+    mul-int/lit8 v1, v1, 0x1f
 
-    .line 232
-    or-int/2addr p1, v3
+    .line 31
+    .line 32
+    iget-object v0, p0, Lv4k;->e:Lykf;
 
-    .line 233
-    sub-int/2addr v2, p1
+    .line 33
+    .line 34
+    if-nez v0, :cond_0
 
-    .line 234
-    rem-int/2addr v2, v1
+    .line 35
+    .line 36
+    const/4 v0, 0x0
 
-    .line 235
-    sput v2, Lv4k;->i:I
+    .line 37
+    goto :goto_0
 
-    .line 236
-    .line 237
-    return-void
+    .line 38
+    :cond_0
+    invoke-virtual {v0}, Lykf;->hashCode()I
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v0
+
+    .line 42
+    :goto_0
+    add-int/2addr v1, v0
+
+    .line 43
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "VideoReaderData(id="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Lv4k;->a:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", videoDecoder="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lv4k;->b:Libh;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", starterSubject="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, Lv4k;->c:Lio/reactivex/rxjava3/subjects/CompletableSubject;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    const-string v1, ", codecDisposable="
+
+    .line 34
+    .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v1, p0, Lv4k;->d:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ", resourceKey="
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object v1, p0, Lv4k;->e:Lykf;
+
+    .line 49
+    .line 50
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    const/16 v1, 0x29
+
+    .line 54
+    .line 55
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v0
+
+    .line 62
+    return-object v0
 .end method

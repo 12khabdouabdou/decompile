@@ -1,55 +1,41 @@
 .class public final LjU;
-.super Ljava/lang/Object;
+.super LBL1;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LjU;
+# instance fields
+.field public final Z:LD81;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(JLD81;LiK1;)V
+    .locals 6
 
     .line 1
-    new-instance v0, LjU;
+    sget-object v3, LmU;->a:LmU;
 
     .line 2
     .line 3
-    invoke-direct {v0}, LjU;-><init>()V
+    const/4 v5, 0x0
 
     .line 4
+    move-object v0, p0
+
     .line 5
+    move-wide v1, p1
+
     .line 6
-    sput-object v0, LjU;->a:LjU;
+    move-object v4, p4
 
     .line 7
+    invoke-direct/range {v0 .. v5}, LBL1;-><init>(JLtw;LiK1;Ljava/lang/Integer;)V
+
     .line 8
-    return-void
-.end method
+    .line 9
+    .line 10
+    iput-object p3, v0, LjU;->Z:LD81;
 
-.method private constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p1}, LiU;->i(Landroid/net/wifi/p2p/WifiP2pManager$Channel;)V
-
-    .line 2
-    .line 3
-    .line 4
+    .line 11
+    .line 12
     return-void
 .end method

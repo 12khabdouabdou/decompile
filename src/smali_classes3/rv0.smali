@@ -1,22 +1,24 @@
 .class public final Lrv0;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'serializedSummarySnap\':t,\'myBitmojiAvatarId\':s?,\'friendBitmojiAvatarId\':s?"
-    typeReferences = {}
+    schema = "\'serializedAstrologySnap\':t,\'myBitmojiInfo\':r?:\'[0]\',\'friendBitmojiInfo\':r?:\'[0]\'"
+    typeReferences = {
+        Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
+    }
 .end annotation
 
 
 # instance fields
-.field private _friendBitmojiAvatarId:Ljava/lang/String;
+.field private _friendBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
-.field private _myBitmojiAvatarId:Ljava/lang/String;
+.field private _myBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
-.field private _serializedSummarySnap:[B
+.field private _serializedAstrologySnap:[B
 
 
 # direct methods
@@ -27,55 +29,55 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lrv0;->_serializedSummarySnap:[B
+    iput-object p1, p0, Lrv0;->_serializedAstrologySnap:[B
 
     const/4 p1, 0x0
 
     .line 3
-    iput-object p1, p0, Lrv0;->_myBitmojiAvatarId:Ljava/lang/String;
+    iput-object p1, p0, Lrv0;->_myBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
     .line 4
-    iput-object p1, p0, Lrv0;->_friendBitmojiAvatarId:Ljava/lang/String;
+    iput-object p1, p0, Lrv0;->_friendBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
     return-void
 .end method
 
-.method public constructor <init>([BLjava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>([BLcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;)V
     .locals 0
 
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    iput-object p1, p0, Lrv0;->_serializedSummarySnap:[B
+    iput-object p1, p0, Lrv0;->_serializedAstrologySnap:[B
 
     .line 7
-    iput-object p2, p0, Lrv0;->_myBitmojiAvatarId:Ljava/lang/String;
+    iput-object p2, p0, Lrv0;->_myBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
     .line 8
-    iput-object p3, p0, Lrv0;->_friendBitmojiAvatarId:Ljava/lang/String;
+    iput-object p3, p0, Lrv0;->_friendBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)V
+.method public final a(Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lrv0;->_friendBitmojiAvatarId:Ljava/lang/String;
+    iput-object p1, p0, Lrv0;->_friendBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final b(Ljava/lang/String;)V
+.method public final b(Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lrv0;->_myBitmojiAvatarId:Ljava/lang/String;
+    iput-object p1, p0, Lrv0;->_myBitmojiInfo:Lcom/snap/aura/opera/AuraSnapchatterBitmojiInfo;
 
     .line 2
     .line 3

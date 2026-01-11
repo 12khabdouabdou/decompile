@@ -53,7 +53,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 1
 
     .line 1
@@ -61,7 +61,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableGroupBy$State;->subscribe(LV6i;)V
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableGroupBy$State;->subscribe(Lmvi;)V
 
     .line 4
     .line 5

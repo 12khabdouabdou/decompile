@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LrJe;
+    proxyClass = Lb1f;
     schema = "\'fetchEncodedReferralInfo\':f|m|(): p<t>"
     typeReferences = {}
 .end annotation

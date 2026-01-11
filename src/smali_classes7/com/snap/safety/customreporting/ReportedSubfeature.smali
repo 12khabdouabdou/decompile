@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'None\':\'NONE\',\'ActivityCenter\':\'ACTIVITY_CENTER\',\'AddFriendsPage\':\'ADD_FRIENDS\',\'BusinessProfile\':\'BUSINESS_PROFILE\',\'Camera\':\'CAMERA\',\'Chat\':\'CHAT\',\'ChatPlaybackV1\':\'CHAT_PLAYBACK_V1\',\'ChatPlaybackV2\':\'CHAT_PLAYBACK_V2\',\'Collection\':\'COLLECTION\',\'ConnectedLens\':\'CONNECTED_LENS\',\'ContextMenu\':\'CONTEXT_MENU\',\'CreatorsPage\':\'CREATORS_PAGE\',\'DirectorMode\':\'DIRECTOR_MODE\',\'DiscoverFeed\':\'DISCOVER_FEED\',\'DiscoverTile\':\'DISCOVER_TILE\',\'Explorer\':\'EXPLORER\',\'FamilyCenter\':\'FAMILY_CENTER\',\'FriendProfile\':\'FRIEND_PROFILE\',\'FriendsFeed\':\'FRIENDS_FEED\',\'InfoCardV2\':\'INFO_CARD_V2\',\'Insights\':\'INSIGHTS\',\'Lens\':\'LENS\',\'LensSnapCode\':\'LENS_SNAP_CODE\',\'LowMutualFriends\':\'LOW_MUTUAL_FRIENDS\',\'Maps\':\'MAPS\',\'Memories\':\'MEMORIES\',\'MyProfile\':\'MY_PROFILE\',\'MyReports\':\'MY_REPORTS\',\'NonFriend\':\'NON_FRIEND\',\'Opera\':\'OPERA\',\'Preview\':\'PREVIEW\',\'Search\':\'SEARCH\',\'SnapDevice\':\'SNAP_DEVICE\',\'SpotlightFeed\':\'SPOTLIGHT_FEED\',\'SpotlightTile\':\'SPOTLIGHT_TILE\',\'SpotlightManagement\':\'SPOTLIGHT_MANAGEMENT\',\'StoryCarousel\':\'STORY_CAROUSEL\',\'StoryManagement\':\'STORY_MANAGEMENT\',\'StoryReply\':\'STORY_REPLY\',\'StoryTile\':\'STORY_TILE\',\'TopicsPage\':\'TOPICS_PAGE\',\'TopicTile\':\'TOPIC_TILE\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

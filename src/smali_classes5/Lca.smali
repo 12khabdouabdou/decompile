@@ -1,44 +1,65 @@
 .class public final synthetic LLca;
-.super Ljava/lang/Object;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements Lrca;
-.implements Lf28;
+.implements Lkotlin/jvm/functions/Function1;
 
 
-# instance fields
-.field public final synthetic a:LEca;
+# static fields
+.field public static final f0:LLca;
 
 
 # direct methods
-.method public constructor <init>(LEca;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LLca;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LLca;->a:LEca;
+    const-string v5, "getPathSegments()Ljava/util/List;"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    const-class v3, Landroid/net/Uri;
+
+    .line 8
+    .line 9
+    const-string v4, "getPathSegments"
+
+    .line 10
+    .line 11
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    sput-object v0, LLca;->f0:LLca;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(LGS9;)Lsca;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LLca;->a:LEca;
+    check-cast p1, Landroid/net/Uri;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LEca;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     .line 4
     .line 5
@@ -46,93 +67,5 @@
     move-result-object p1
 
     .line 7
-    check-cast p1, Lsca;
-
-    .line 8
-    .line 9
     return-object p1
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    instance-of v0, p1, Lrca;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    instance-of v0, p1, Lf28;
-
-    .line 6
-    .line 7
-    if-eqz v0, :cond_0
-
-    .line 8
-    .line 9
-    iget-object v0, p0, LLca;->a:LEca;
-
-    .line 10
-    .line 11
-    check-cast p1, Lf28;
-
-    .line 12
-    .line 13
-    invoke-interface {p1}, Lf28;->l()LZ18;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    return p1
-
-    .line 22
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 23
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LLca;->a:LEca;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final l()LZ18;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LLca;->a:LEca;
-
-    .line 2
-    .line 3
-    return-object v0
 .end method

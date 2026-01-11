@@ -1,33 +1,32 @@
-.class public final Ly9e;
-.super LnSc;
+.class public abstract Ly9e;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final e:Ly9e;
+.field public static final a:LGqd;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, Ly9e;
+    const-string v0, "previewToolbar"
 
     .line 2
     .line 3
-    sget-object v1, LK4j;->m2:LK4j;
+    invoke-static {v0}, LIqd;->K(Ljava/lang/String;)LGqd;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, LnSc;-><init>(LK4j;)V
-
     .line 6
-    .line 7
-    .line 8
-    sput-object v0, Ly9e;->e:Ly9e;
+    move-result-object v0
 
+    .line 7
+    sput-object v0, Ly9e;->a:LGqd;
+
+    .line 8
     .line 9
-    .line 10
     return-void
 .end method

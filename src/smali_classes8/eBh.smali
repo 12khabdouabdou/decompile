@@ -1,43 +1,29 @@
 .class public final LeBh;
-.super Lgy1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final h0:Landroid/view/View;
+# static fields
+.field public static final a:LeBh;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
-    .locals 3
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    const/high16 v0, 0x41700000    # 15.0f
+    new-instance v0, LeBh;
 
     .line 2
     .line 3
-    const/high16 v1, 0x43fa0000    # 500.0f
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    invoke-direct {p0, p1, v1, v2, v0}, Lgy1;-><init>(Landroid/view/View;FFF)V
+    sput-object v0, LeBh;->a:LeBh;
 
     .line 7
     .line 8
-    .line 9
-    iput-object p1, p0, LeBh;->h0:Landroid/view/View;
-
-    .line 10
-    .line 11
-    const/4 p1, 0x0
-
-    .line 12
-    iput-boolean p1, p0, Lgy1;->Z:Z
-
-    .line 13
-    .line 14
     return-void
 .end method

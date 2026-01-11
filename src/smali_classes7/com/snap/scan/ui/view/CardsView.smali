@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ly34;
+.implements Li84;
 
 
 # instance fields
-.field public z1:Lx70;
+.field public z1:LP90;
 
 
 # direct methods
@@ -44,18 +44,18 @@
 
 
 # virtual methods
-.method public final Q0(Lx70;)V
+.method public final Q0(LP90;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/scan/ui/view/CardsView;->z1:Lx70;
+    iput-object p1, p0, Lcom/snap/scan/ui/view/CardsView;->z1:LP90;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final c()Lz34;
+.method public final c()Lj84;
     .locals 3
 
     .line 1
@@ -63,23 +63,24 @@
 
     .line 2
     .line 3
-    new-instance v1, LZh2;
+    new-instance v1, LaW1;
 
     .line 4
     .line 5
-    const/4 v2, 0x6
+    const/16 v2, 0x1d
 
     .line 6
-    invoke-direct {v1, v2, p0}, LZh2;-><init>(ILjava/lang/Object;)V
-
     .line 7
+    invoke-direct {v1, v2, p0}, LaW1;-><init>(ILjava/lang/Object;)V
+
     .line 8
     .line 9
-    invoke-direct {v0, v1}, Lcom/snap/scan/ui/view/CardBehavior;-><init>(LZh2;)V
-
     .line 10
+    invoke-direct {v0, v1}, Lcom/snap/scan/ui/view/CardBehavior;-><init>(LaW1;)V
+
     .line 11
     .line 12
+    .line 13
     return-object v0
 .end method
 
@@ -109,64 +110,64 @@
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LwGe;)V
+    invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView;->H0(LfYe;)V
 
     .line 14
     .line 15
     .line 16
-    new-instance v1, LRGe;
+    new-instance v1, LAYe;
 
     .line 17
     .line 18
     const/4 v2, 0x0
 
     .line 19
-    invoke-direct {v1, v2}, LRGe;-><init>(Lkotlin/jvm/functions/Function1;)V
+    invoke-direct {v1, v2}, LAYe;-><init>(Lkotlin/jvm/functions/Function1;)V
 
     .line 20
     .line 21
     .line 22
-    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     .line 23
     .line 24
     .line 25
-    new-instance v1, LWg3;
+    new-instance v1, LQj3;
 
     .line 26
     .line 27
     const/4 v2, 0x2
 
     .line 28
-    invoke-direct {v1, v2}, LWg3;-><init>(I)V
+    invoke-direct {v1, v2}, LQj3;-><init>(I)V
 
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->k(LuGe;)V
+    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->j(LdYe;)V
 
     .line 32
     .line 33
     .line 34
-    new-instance v1, LBw9;
+    new-instance v1, LEF9;
 
     .line 35
     .line 36
-    new-instance v2, LSn2;
+    new-instance v2, LFq2;
 
     .line 37
     .line 38
-    invoke-direct {v2, p0, v0}, LSn2;-><init>(Lcom/snap/scan/ui/view/CardsView;Lcom/snap/scan/ui/view/CardsLayoutManager;)V
+    invoke-direct {v2, p0, v0}, LFq2;-><init>(Lcom/snap/scan/ui/view/CardsView;Lcom/snap/scan/ui/view/CardsLayoutManager;)V
 
     .line 39
     .line 40
     .line 41
-    invoke-direct {v1, v2}, LBw9;-><init>(Lyw9;)V
+    invoke-direct {v1, v2}, LEF9;-><init>(LBF9;)V
 
     .line 42
     .line 43
     .line 44
-    invoke-virtual {v1, p0}, LBw9;->h(Landroidx/recyclerview/widget/RecyclerView;)V
+    invoke-virtual {v1, p0}, LEF9;->h(Landroidx/recyclerview/widget/RecyclerView;)V
 
     .line 45
     .line 46

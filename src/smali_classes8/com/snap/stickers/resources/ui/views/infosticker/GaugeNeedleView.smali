@@ -51,7 +51,7 @@
     move-result-object p2
 
     .line 9
-    invoke-static {p2}, Lsc5;->A0(Landroid/content/Context;)I
+    invoke-static {p2}, LTVd;->R(Landroid/content/Context;)I
 
     .line 10
     .line 11

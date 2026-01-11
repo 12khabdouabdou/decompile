@@ -28,7 +28,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(JLHr5;)V
+.method public synthetic constructor <init>(JLex5;)V
     .locals 0
 
     .line 1

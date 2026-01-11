@@ -45,7 +45,7 @@
 
     move-result-object p3
 
-    sget-object v0, Live;->c:[I
+    sget-object v0, LQMe;->c:[I
 
     invoke-virtual {p3, p2, v0, p1, p1}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -77,7 +77,9 @@
     if-eqz p1, :cond_1
 
     .line 8
-    sget-object p1, LGwh;->a:LHwh;
+    invoke-static {}, LHUh;->a()LIUh;
+
+    move-result-object p1
 
     .line 9
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -91,7 +93,7 @@
 
     move-result p3
 
-    invoke-virtual {p1}, LHwh;->a()I
+    invoke-virtual {p1}, LIUh;->a()I
 
     move-result p1
 
@@ -125,42 +127,46 @@
     move-result p2
 
     .line 5
-    sget-object v0, LGwh;->a:LHwh;
+    invoke-static {}, LHUh;->a()LIUh;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, LHwh;->a()I
-
     .line 8
+    move-result-object v0
+
     .line 9
+    invoke-virtual {v0}, LIUh;->a()I
+
     .line 10
+    .line 11
+    .line 12
     move-result v0
 
-    .line 11
+    .line 13
     add-int/2addr v0, p2
 
-    .line 12
-    const/high16 p2, 0x40000000    # 2.0f
-
-    .line 13
     .line 14
-    invoke-static {v0, p2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+    const/high16 p2, 0x40000000    # 2.0f
 
     .line 15
     .line 16
+    invoke-static {v0, p2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
+
     .line 17
+    .line 18
+    .line 19
     move-result p2
 
-    .line 18
+    .line 20
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
-    .line 19
-    .line 20
     .line 21
-    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
-
     .line 22
     .line 23
+    invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
+
     .line 24
+    .line 25
+    .line 26
     return-void
 .end method

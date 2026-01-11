@@ -1,82 +1,82 @@
-.class public abstract synthetic LTR5;
+.class public final LTR5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LIue;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:LkW6;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 2
 
     .line 1
-    invoke-static {}, LTCg;->values()[LTCg;
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>(LkW6;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, LTR5;->a:LkW6;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    new-instance p1, Ljava/util/LinkedHashSet;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
 
     .line 9
-    const/4 v2, 0x0
-
     .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 11
-    .line 12
-    :catch_0
-    const/4 v2, 0x2
+    new-instance p1, Ljava/util/LinkedHashSet;
 
+    .line 12
     .line 13
-    :try_start_1
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    invoke-direct {p1}, Ljava/util/LinkedHashSet;-><init>()V
 
     .line 14
     .line 15
-    :catch_1
-    const/4 v1, 0x3
-
     .line 16
-    :try_start_2
-    aput v1, v0, v2
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 17
-    .line 18
-    :catch_2
-    const/4 v2, 0x4
-
-    .line 19
-    :try_start_3
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 20
-    .line 21
-    :catch_3
-    sput-object v0, LTR5;->a:[I
-
-    .line 22
-    .line 23
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LTR5;->a:LkW6;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, LkW6;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 4
+    .line 5
+    return-object v0
 .end method

@@ -204,7 +204,19 @@
     return-void
 .end method
 
-.method public final c()Z
+.method public final b(Lio/reactivex/rxjava3/disposables/Disposable;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final d()Z
     .locals 2
 
     .line 1
@@ -235,18 +247,6 @@
 
     .line 12
     return v0
-.end method
-
-.method public final d(Lio/reactivex/rxjava3/disposables/Disposable;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
 .end method
 
 .method public final dispose()V

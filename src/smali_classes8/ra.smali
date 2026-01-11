@@ -1,52 +1,82 @@
 .class public final Lra;
-.super LKu;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final X:Ljava/lang/Integer;
+.field public final synthetic a:I
 
-.field public final Y:I
-
-.field public final Z:Landroid/text/SpannedString;
-
-.field public final e0:Lz9;
+.field public final synthetic b:Lta;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Integer;Landroid/text/SpannedString;Lz9;)V
+.method public synthetic constructor <init>(Lta;Lqa;I)V
+    .locals 0
+
+    .line 1
+    iput p3, p0, Lra;->a:I
+
+    iput-object p1, p0, Lra;->b:Lta;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    sget-object v0, LD9;->Z:LD9;
+    iget v0, p0, Lra;->a:I
 
     .line 2
     .line 3
-    invoke-direct {p0, v0}, LKu;-><init>(LLu;)V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    iput-object p1, p0, Lra;->X:Ljava/lang/Integer;
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 7
     .line 8
-    const p1, 0x7f1300be
+    iget-object p1, p0, Lra;->b:Lta;
 
     .line 9
     .line 10
-    .line 11
-    iput p1, p0, Lra;->Y:I
+    iget-object p1, p1, Lta;->h:LJp0;
 
+    .line 11
     .line 12
+    return-void
+
     .line 13
-    iput-object p2, p0, Lra;->Z:Landroid/text/SpannedString;
+    :pswitch_0
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 14
     .line 15
-    iput-object p3, p0, Lra;->e0:Lz9;
+    iget-object p1, p0, Lra;->b:Lta;
 
     .line 16
     .line 17
+    iget-object p1, p1, Lta;->h:LJp0;
+
+    .line 18
+    .line 19
     return-void
+
+    .line 20
+    nop
+
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

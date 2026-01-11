@@ -1,16 +1,21 @@
 .class public final LHNb;
-.super LMNb;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ln47;
 
 
 # instance fields
-.field public final a:LmNb;
+.field public final a:Lo47;
 
-.field public final b:LNNb;
+.field public final b:Ljava/util/concurrent/ConcurrentHashMap;
+
+.field public final c:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # direct methods
-.method public constructor <init>(LmNb;LNNb;)V
+.method public constructor <init>(Lo47;)V
     .locals 0
 
     .line 1
@@ -19,204 +24,506 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LHNb;->a:LmNb;
+    iput-object p1, p0, LHNb;->a:Lo47;
 
     .line 5
     .line 6
-    iput-object p2, p0, LHNb;->b:LNNb;
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 7
     .line 8
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    iput-object p1, p0, LHNb;->b:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 12
+    .line 13
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 14
+    .line 15
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 16
+    .line 17
+    .line 18
+    iput-object p1, p0, LHNb;->c:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 19
+    .line 20
     return-void
+.end method
+
+.method public static d(Ljava/util/List;)Ljava/util/ArrayList;
+    .locals 2
+
+    .line 1
+    check-cast p0, Ljava/lang/Iterable;
+
+    .line 2
+    .line 3
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 4
+    .line 5
+    const/16 v1, 0xa
+
+    .line 6
+    .line 7
+    invoke-static {p0, v1}, Lnh3;->d3(Ljava/lang/Iterable;I)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v1
+
+    .line 22
+    if-eqz v1, :cond_1
+
+    .line 23
+    .line 24
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v1
+
+    .line 28
+    check-cast v1, Luzb;
+
+    .line 29
+    .line 30
+    invoke-virtual {v1}, Luzb;->d()Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v1
+
+    .line 34
+    if-nez v1, :cond_0
+
+    .line 35
+    .line 36
+    const-string v1, ""
+
+    .line 37
+    .line 38
+    :cond_0
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 39
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :cond_1
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+.method public final a(Ljava/util/List;)Ljava/lang/String;
+    .locals 1
 
     .line 1
-    if-ne p0, p1, :cond_0
+    iget-object v0, p0, LHNb;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 2
     .line 3
-    goto :goto_1
+    invoke-static {p1}, LHNb;->d(Ljava/util/List;)Ljava/util/ArrayList;
 
     .line 4
-    :cond_0
-    instance-of v0, p1, LHNb;
-
     .line 5
     .line 6
-    if-nez v0, :cond_1
+    move-result-object p1
 
     .line 7
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 8
-    goto :goto_0
-
     .line 9
-    :cond_1
-    check-cast p1, LHNb;
-
     .line 10
+    move-result-object p1
+
     .line 11
-    iget-object v0, p1, LHNb;->a:LmNb;
+    check-cast p1, Ljava/lang/String;
 
     .line 12
     .line 13
-    iget-object v1, p0, LHNb;->a:LmNb;
-
-    .line 14
-    .line 15
-    invoke-virtual {v1, v0}, LmNb;->equals(Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    if-nez v0, :cond_2
-
-    .line 20
-    .line 21
-    goto :goto_0
-
-    .line 22
-    :cond_2
-    iget-object v0, p0, LHNb;->b:LNNb;
-
-    .line 23
-    .line 24
-    iget-object p1, p1, LHNb;->b:LNNb;
-
-    .line 25
-    .line 26
-    invoke-virtual {v0, p1}, LNNb;->equals(Ljava/lang/Object;)Z
-
-    .line 27
-    .line 28
-    .line 29
-    move-result p1
-
-    .line 30
-    if-nez p1, :cond_3
-
-    .line 31
-    .line 32
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 33
-    return p1
-
-    .line 34
-    :cond_3
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 35
-    return p1
+    return-object p1
 .end method
 
-.method public final hashCode()I
-    .locals 2
+.method public final b(LK47;)V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, LHNb;->a:LmNb;
+    invoke-virtual {p1}, LK47;->a()Lawb;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LmNb;->hashCode()I
-
     .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LHNb;->b:LNNb;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, LNNb;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "PreviewSnapForwardingContents(messageContent="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LHNb;->a:LmNb;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", mediaContents="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LHNb;->b:LNNb;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
     move-result-object v0
 
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    packed-switch v0, :pswitch_data_0
+
+    .line 10
+    .line 11
+    .line 12
+    new-instance p1, LwOc;
+
+    .line 13
+    .line 14
+    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+
+    .line 15
+    .line 16
+    .line 17
+    throw p1
+
+    .line 18
+    :pswitch_0
+    const/4 v0, 0x1
+
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :pswitch_1
+    const/4 v0, 0x0
+
+    .line 21
+    :goto_0
+    invoke-virtual {p1}, LK47;->b()Ljava/lang/String;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    if-eqz v1, :cond_3
+
+    .line 26
+    .line 27
+    instance-of v2, p1, LI47;
+
+    .line 28
+    .line 29
+    iget-object v3, p0, LHNb;->b:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 30
+    .line 31
+    if-eqz v2, :cond_0
+
     .line 32
-    return-object v0
+    .line 33
+    invoke-virtual {v3, v1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object p1
+
+    .line 37
+    check-cast p1, Lp47;
+
+    .line 38
+    .line 39
+    if-eqz p1, :cond_3
+
+    .line 40
+    .line 41
+    iget-object v0, p1, Lp47;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    .line 42
+    .line 43
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v0
+
+    .line 47
+    if-nez v0, :cond_3
+
+    .line 48
+    .line 49
+    iget-object p1, p1, Lp47;->b:Lfyd;
+
+    .line 50
+    .line 51
+    const-string v0, "ExportBlizzardLogger"
+
+    .line 52
+    .line 53
+    invoke-virtual {p1, v0}, Lfyd;->c(Ljava/lang/Object;)V
+
+    .line 54
+    .line 55
+    .line 56
+    return-void
+
+    .line 57
+    :cond_0
+    instance-of v2, p1, LG47;
+
+    .line 58
+    .line 59
+    if-eqz v2, :cond_1
+
+    .line 60
+    .line 61
+    invoke-virtual {v3, v1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object p1
+
+    .line 65
+    check-cast p1, Lp47;
+
+    .line 66
+    .line 67
+    if-eqz p1, :cond_3
+
+    .line 68
+    .line 69
+    sget-object v1, LVa8;->b:LVa8;
+
+    .line 70
+    .line 71
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v0
+
+    .line 75
+    const/4 v2, 0x4
+
+    .line 76
+    invoke-static {p1, v1, v0, v2}, Lp47;->b(Lp47;LVa8;Ljava/lang/Boolean;I)V
+
+    .line 77
+    .line 78
+    .line 79
+    return-void
+
+    .line 80
+    :cond_1
+    instance-of v2, p1, Ls47;
+
+    .line 81
+    .line 82
+    if-eqz v2, :cond_2
+
+    .line 83
+    .line 84
+    invoke-virtual {v3, v1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object v1
+
+    .line 88
+    check-cast v1, Lp47;
+
+    .line 89
+    .line 90
+    if-eqz v1, :cond_3
+
+    .line 91
+    .line 92
+    sget-object v2, LVa8;->c:LVa8;
+
+    .line 93
+    .line 94
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v0
+
+    .line 98
+    check-cast p1, Ls47;
+
+    .line 99
+    .line 100
+    iget-object p1, p1, Ls47;->e:Ljava/lang/Throwable;
+
+    .line 101
+    .line 102
+    invoke-virtual {v1, v2, v0, p1}, Lp47;->a(LVa8;Ljava/lang/Boolean;Ljava/lang/Throwable;)V
+
+    .line 103
+    .line 104
+    .line 105
+    return-void
+
+    .line 106
+    :cond_2
+    instance-of p1, p1, Lq47;
+
+    .line 107
+    .line 108
+    if-eqz p1, :cond_3
+
+    .line 109
+    .line 110
+    invoke-virtual {v3, v1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object p1
+
+    .line 114
+    check-cast p1, Lp47;
+
+    .line 115
+    .line 116
+    if-eqz p1, :cond_3
+
+    .line 117
+    .line 118
+    sget-object v0, LVa8;->t:LVa8;
+
+    .line 119
+    .line 120
+    const/4 v1, 0x6
+
+    .line 121
+    const/4 v2, 0x0
+
+    .line 122
+    invoke-static {p1, v0, v2, v1}, Lp47;->b(Lp47;LVa8;Ljava/lang/Boolean;I)V
+
+    .line 123
+    .line 124
+    .line 125
+    :cond_3
+    return-void
+
+    .line 126
+    nop
+
+    .line 127
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public final c(Ljava/lang/String;Ljava/util/List;LMNb;)V
+    .locals 1
+
+    .line 1
+    if-eqz p3, :cond_0
+
+    .line 2
+    .line 3
+    iget-object v0, p0, LHNb;->a:Lo47;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, p3, p2}, Lo47;->a(LMNb;Ljava/util/List;)Lp47;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p3
+
+    .line 9
+    iget-object v0, p0, LHNb;->b:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, p1, p3}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object p3, p0, LHNb;->c:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 15
+    .line 16
+    invoke-static {p2}, LHNb;->d(Ljava/util/List;)Ljava/util/ArrayList;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p2
+
+    .line 20
+    invoke-virtual {p3, p2, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_0
+    return-void
 .end method

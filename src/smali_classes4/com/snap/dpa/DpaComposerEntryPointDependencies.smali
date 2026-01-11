@@ -1,10 +1,10 @@
 .class public final Lcom/snap/dpa/DpaComposerEntryPointDependencies;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'pageStateObservable\':g?<c>:\'[0]\'<r<e>:\'[1]\'>,\'cofStore\':r?:\'[2]\',\'deckContainerFactory\':r?:\'[3]\',\'adFormatEventLogger\':r:\'[4]\'"
     typeReferences = {

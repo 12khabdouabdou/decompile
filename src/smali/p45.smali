@@ -3,15 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements LQfg;
+.implements LOE3;
 
 
 # instance fields
-.field public final a:LaJ4;
+.field public final a:Lu65;
+
+.field public final b:LJ65;
+
+.field public final c:LCBe;
 
 
 # direct methods
-.method public constructor <init>(LaJ4;)V
+.method public constructor <init>(Lu65;LJ65;)V
     .locals 0
 
     .line 1
@@ -20,39 +24,134 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lp45;->a:LaJ4;
+    iput-object p1, p0, Lp45;->a:Lu65;
 
     .line 5
     .line 6
+    iput-object p2, p0, Lp45;->b:LJ65;
+
+    .line 7
+    .line 8
+    new-instance p1, LCt4;
+
+    .line 9
+    .line 10
+    const/16 p2, 0x13
+
+    .line 11
+    .line 12
+    invoke-direct {p1, p2}, LCt4;-><init>(I)V
+
+    .line 13
+    .line 14
+    .line 15
+    invoke-static {p1}, Lfv6;->b(LCBe;)LCBe;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    iput-object p1, p0, Lp45;->c:LCBe;
+
+    .line 20
+    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final P6()LUfg;
-    .locals 2
+.method public final T7()Ljava/util/Map;
+    .locals 3
 
     .line 1
-    new-instance v0, LUfg;
+    iget-object v0, p0, Lp45;->c:LCBe;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lp45;->a:LaJ4;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-virtual {v1}, LaJ4;->u()LIe0;
-
     .line 6
-    .line 7
-    .line 8
-    move-result-object v1
+    move-result-object v0
 
+    .line 7
+    check-cast v0, LPv3;
+
+    .line 8
     .line 9
-    invoke-direct {v0, v1}, LUfg;-><init>(LIe0;)V
+    iget-object v1, p0, Lp45;->a:Lu65;
 
     .line 10
     .line 11
+    iget-object v2, p0, Lp45;->b:LJ65;
+
     .line 12
+    .line 13
+    invoke-static {v0, v1, v2}, LcOk;->d(LPv3;Lu65;LJ65;)LEW4;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    invoke-static {v0}, LZWk;->c(LEW4;)Ljava/util/Map;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
+    return-object v0
+.end method
+
+.method public final a2()Ljava/util/Map;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lp45;->c:LCBe;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, LPv3;
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lp45;->a:Lu65;
+
+    .line 10
+    .line 11
+    iget-object v2, p0, Lp45;->b:LJ65;
+
+    .line 12
+    .line 13
+    invoke-static {v0, v1, v2}, LcOk;->d(LPv3;Lu65;LJ65;)LEW4;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    invoke-static {v0}, LZWk;->b(LEW4;)Ljava/util/Map;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v0
+
+    .line 21
     return-object v0
 .end method

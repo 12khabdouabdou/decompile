@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LW6h;
+.implements LMsh;
 
 
 # instance fields
@@ -27,7 +27,7 @@
 
 .field public final k0:I
 
-.field public l0:Le7h;
+.field public l0:LTsh;
 
 .field public final m0:Z
 
@@ -53,7 +53,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesIconView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesIconView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -74,7 +74,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesIconView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/spectacles/sharedui/SpectaclesIconView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -93,7 +93,7 @@
     iput-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->j0:Ljava/util/ArrayList;
 
     .line 6
-    sget-object v0, LAve;->b:[I
+    sget-object v0, LjNe;->b:[I
 
     const/4 v1, 0x0
 
@@ -116,7 +116,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0707a0
+    const v0, 0x7f0707cd
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -185,7 +185,7 @@
 
     move-result-object v3
 
-    invoke-static {p2, v3}, LLZj;->Z(Landroid/widget/ImageView;Landroid/content/res/ColorStateList;)V
+    invoke-static {p2, v3}, LSpk;->r0(Landroid/widget/ImageView;Landroid/content/res/ColorStateList;)V
 
     .line 18
     :cond_1
@@ -232,7 +232,7 @@
 
     move-result-object v4
 
-    invoke-static {p3, v4}, LLZj;->Z(Landroid/widget/ImageView;Landroid/content/res/ColorStateList;)V
+    invoke-static {p3, v4}, LSpk;->r0(Landroid/widget/ImageView;Landroid/content/res/ColorStateList;)V
 
     .line 26
     :cond_2
@@ -260,7 +260,7 @@
 
     move-result-object v0
 
-    invoke-static {p3, v0}, LLZj;->Z(Landroid/widget/ImageView;Landroid/content/res/ColorStateList;)V
+    invoke-static {p3, v0}, LSpk;->r0(Landroid/widget/ImageView;Landroid/content/res/ColorStateList;)V
 
     .line 31
     :cond_3
@@ -303,7 +303,7 @@
 
     move-object v6, p1
 
-    invoke-direct/range {v5 .. v10}, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v5 .. v10}, Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     iput-object v5, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->g0:Lcom/snap/spectacles/sharedui/SpectaclesBatteryView;
 
@@ -335,7 +335,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -368,7 +368,7 @@
 
     .line 2
     .line 3
-    const v1, 0x7f0809c6
+    const v1, 0x7f080a47
 
     .line 4
     .line 5
@@ -394,12 +394,12 @@
     move-result-object v1
 
     .line 17
-    const v2, 0x7f040118
+    const v2, 0x7f040122
 
     .line 18
     .line 19
     .line 20
-    invoke-static {v1, v2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v1, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 21
     .line 22
@@ -416,7 +416,7 @@
 
     .line 28
     .line 29
-    const v1, 0x7f0808b6
+    const v1, 0x7f080937
 
     .line 30
     .line 31
@@ -430,7 +430,7 @@
 
     .line 36
     .line 37
-    const v3, 0x7f0808b8
+    const v3, 0x7f080939
 
     .line 38
     .line 39
@@ -456,7 +456,7 @@
     move-result-object v3
 
     .line 51
-    invoke-static {v3, v2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v3, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 52
     .line 53
@@ -493,7 +493,7 @@
     move-result-object v3
 
     .line 70
-    invoke-static {v3, v2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v3, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 71
     .line 72
@@ -526,7 +526,7 @@
     move-result-object v3
 
     .line 87
-    invoke-static {v3, v2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v3, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 88
     .line 89
@@ -555,7 +555,7 @@
     move-result-object v3
 
     .line 102
-    invoke-static {v3, v2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v3, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 103
     .line 104
@@ -584,7 +584,7 @@
     move-result-object v0
 
     .line 117
-    invoke-static {v0, v2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v0, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 118
     .line 119
@@ -597,7 +597,7 @@
     .line 122
     .line 123
     .line 124
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:Le7h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:LTsh;
 
     .line 125
     .line 126
@@ -605,7 +605,7 @@
 
     .line 127
     .line 128
-    invoke-virtual {v0}, Le7h;->f()V
+    invoke-virtual {v0}, LTsh;->f()V
 
     .line 129
     .line 130
@@ -754,7 +754,7 @@
 
     .line 70
     :cond_1
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 71
     .line 72
@@ -763,7 +763,7 @@
 
     .line 74
     :cond_2
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 75
     .line 76
@@ -772,7 +772,7 @@
 
     .line 78
     :cond_3
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 79
     .line 80
@@ -781,7 +781,7 @@
 
     .line 82
     :cond_4
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 83
     .line 84
@@ -790,7 +790,7 @@
 
     .line 86
     :cond_5
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 87
     .line 88
@@ -1235,11 +1235,11 @@
     .line 232
     .line 233
     .line 234
-    new-instance p1, LX6h;
+    new-instance p1, LNsh;
 
     .line 235
     .line 236
-    invoke-direct {p1, p0, v0}, LX6h;-><init>(Lcom/snap/spectacles/sharedui/SpectaclesIconView;I)V
+    invoke-direct {p1, p0, v0}, LNsh;-><init>(Lcom/snap/spectacles/sharedui/SpectaclesIconView;I)V
 
     .line 237
     .line 238
@@ -1249,7 +1249,7 @@
     .line 240
     .line 241
     .line 242
-    invoke-virtual {p2}, Landroid/animation/AnimatorSet;->start()V
+    invoke-virtual {p2}, Landroid/animation/Animator;->start()V
 
     .line 243
     .line 244
@@ -1565,11 +1565,11 @@
     .line 37
     .line 38
     .line 39
-    new-instance v3, LX6h;
+    new-instance v3, LNsh;
 
     .line 40
     .line 41
-    invoke-direct {v3, p0, v0}, LX6h;-><init>(Lcom/snap/spectacles/sharedui/SpectaclesIconView;I)V
+    invoke-direct {v3, p0, v0}, LNsh;-><init>(Lcom/snap/spectacles/sharedui/SpectaclesIconView;I)V
 
     .line 42
     .line 43
@@ -1643,14 +1643,14 @@
     .line 79
     .line 80
     .line 81
-    new-instance v1, LX6h;
+    new-instance v1, LNsh;
 
     .line 82
     .line 83
     const/4 v2, 0x3
 
     .line 84
-    invoke-direct {v1, p0, v2}, LX6h;-><init>(Lcom/snap/spectacles/sharedui/SpectaclesIconView;I)V
+    invoke-direct {v1, p0, v2}, LNsh;-><init>(Lcom/snap/spectacles/sharedui/SpectaclesIconView;I)V
 
     .line 85
     .line 86
@@ -1664,7 +1664,7 @@
 
     .line 91
     .line 92
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:Le7h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:LTsh;
 
     .line 93
     .line 94
@@ -1672,7 +1672,7 @@
 
     .line 95
     .line 96
-    iput-object p0, v0, Le7h;->l:Lcom/snap/spectacles/sharedui/SpectaclesIconView;
+    iput-object p0, v0, LTsh;->l:Lcom/snap/spectacles/sharedui/SpectaclesIconView;
 
     .line 97
     .line 98
@@ -1681,7 +1681,7 @@
 
     .line 99
     .line 100
-    invoke-virtual {v0}, Le7h;->e()V
+    invoke-virtual {v0}, LTsh;->e()V
 
     .line 101
     .line 102
@@ -1728,7 +1728,7 @@
     .line 5
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:Le7h;
+    iget-object v0, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:LTsh;
 
     .line 8
     .line 9
@@ -1736,7 +1736,7 @@
 
     .line 10
     .line 11
-    iget-object v1, v0, Le7h;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, LTsh;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 12
     .line 13
@@ -1745,7 +1745,7 @@
     .line 14
     .line 15
     .line 16
-    iget-object v1, v0, Le7h;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, LTsh;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 17
     .line 18
@@ -1757,7 +1757,7 @@
     const/4 v1, 0x0
 
     .line 22
-    iput-object v1, v0, Le7h;->l:Lcom/snap/spectacles/sharedui/SpectaclesIconView;
+    iput-object v1, v0, LTsh;->l:Lcom/snap/spectacles/sharedui/SpectaclesIconView;
 
     .line 23
     .line 24
@@ -2225,7 +2225,7 @@
     move-result-object v0
 
     .line 217
-    const v3, 0x7f07015f
+    const v3, 0x7f070161
 
     .line 218
     .line 219
@@ -2281,7 +2281,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:Le7h;
+    iget-object p1, p0, Lcom/snap/spectacles/sharedui/SpectaclesIconView;->l0:LTsh;
 
     .line 5
     .line 6
@@ -2289,7 +2289,7 @@
 
     .line 7
     .line 8
-    iget-object v0, p1, Le7h;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, p1, LTsh;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 9
     .line 10
@@ -2297,111 +2297,112 @@
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Le7h;->e()V
+    invoke-virtual {p1}, LTsh;->e()V
 
     .line 13
     .line 14
     .line 15
-    new-instance p2, Lb7h;
+    new-instance p2, LHWg;
 
     .line 16
     .line 17
-    const/4 v1, 0x0
+    const/16 v1, 0x18
 
     .line 18
-    invoke-direct {p2, v1, p1}, Lb7h;-><init>(ILjava/lang/Object;)V
-
     .line 19
+    invoke-direct {p2, v1, p1}, LHWg;-><init>(ILjava/lang/Object;)V
+
     .line 20
     .line 21
+    .line 22
     new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
 
-    .line 22
     .line 23
+    .line 24
     invoke-direct {v1, p2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
-    .line 24
     .line 25
     .line 26
-    iget-object p1, p1, Le7h;->o:LBre;
-
     .line 27
-    .line 28
-    invoke-virtual {p1}, LBre;->d()LF06;
+    iget-object p1, p1, LTsh;->o:LnJe;
 
+    .line 28
     .line 29
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
     .line 30
     .line 31
+    .line 32
     move-result-object p1
 
-    .line 32
+    .line 33
     new-instance p2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
 
-    .line 33
     .line 34
+    .line 35
     invoke-direct {p2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
-    .line 35
     .line 36
     .line 37
-    invoke-static {p2, v0}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 38
+    invoke-static {p2, v0}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 39
     .line 40
+    .line 41
     return-void
 
-    .line 41
+    .line 42
     :cond_0
     const/4 p2, 0x0
 
-    .line 42
-    iput-object p2, p1, Le7h;->f:Lh4h;
-
     .line 43
-    .line 44
-    iget-object v1, p1, Le7h;->m:LG1h;
+    iput-object p2, p1, LTsh;->f:LZph;
 
+    .line 44
     .line 45
+    iget-object v1, p1, LTsh;->m:Lznh;
+
     .line 46
+    .line 47
     if-eqz v1, :cond_1
 
-    .line 47
     .line 48
-    iput-object p2, v1, LG1h;->e:Lh4h;
-
     .line 49
-    .line 50
-    iget-object p1, p1, Le7h;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iput-object p2, v1, Lznh;->e:LZph;
 
+    .line 50
     .line 51
+    iget-object p1, p1, LTsh;->d:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 52
+    .line 53
     invoke-virtual {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
 
-    .line 53
     .line 54
     .line 55
+    .line 56
     invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
 
-    .line 56
     .line 57
     .line 58
+    .line 59
     return-void
 
-    .line 59
+    .line 60
     :cond_1
     const-string p1, "batteryViewPresenter"
 
-    .line 60
     .line 61
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 62
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 63
     .line 64
+    .line 65
     throw p2
 
-    .line 65
+    .line 66
     :cond_2
     return-void
 .end method
@@ -2423,15 +2424,15 @@
 
     .line 7
     :cond_0
-    new-instance p1, LGgg;
+    new-instance p1, LJsg;
 
     .line 8
     .line 9
-    const/16 v0, 0x12
+    const/16 v0, 0x1d
 
     .line 10
     .line 11
-    invoke-direct {p1, v0, p0}, LGgg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, LJsg;-><init>(ILjava/lang/Object;)V
 
     .line 12
     .line 13

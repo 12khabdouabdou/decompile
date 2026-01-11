@@ -1,129 +1,108 @@
 .class public final LzAk;
-.super LNyk;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LeCk;
 
 
 # instance fields
-.field public final transient Z:LJck;
+.field public final synthetic a:I
 
-.field public final transient e0:LDAk;
+.field public final b:LuRj;
 
 
 # direct methods
-.method public constructor <init>(LJck;LDAk;)V
-    .locals 1
+.method public synthetic constructor <init>(LuRj;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x3
+    iput p2, p0, LzAk;->a:I
 
-    .line 2
-    invoke-direct {p0, v0}, LY8k;-><init>(I)V
+    iput-object p1, p0, LzAk;->b:LuRj;
 
-    .line 3
-    .line 4
-    .line 5
-    iput-object p1, p0, LzAk;->Z:LJck;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    .line 7
-    iput-object p2, p0, LzAk;->e0:LDAk;
-
-    .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final c([Ljava/lang/Object;)I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LzAk;->e0:LDAk;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LPwk;->c([Ljava/lang/Object;)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p1
-
-    .line 7
-    return p1
-.end method
-
-.method public final contains(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LzAk;->Z:LJck;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LJck;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    if-eqz p1, :cond_0
-
-    .line 8
-    .line 9
-    const/4 p1, 0x1
-
-    .line 10
-    return p1
-
-    .line 11
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 12
-    return p1
-.end method
-
-.method public final synthetic iterator()Ljava/util/Iterator;
+.method public final a()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    iget-object v0, p0, LzAk;->e0:LDAk;
+    iget v0, p0, LzAk;->a:I
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    packed-switch v0, :pswitch_data_0
 
     .line 4
-    invoke-virtual {v0, v1}, LPwk;->r(I)Ljvk;
-
     .line 5
     .line 6
-    .line 7
-    move-result-object v0
+    iget-object v0, p0, LzAk;->b:LuRj;
 
+    .line 7
     .line 8
-    return-object v0
-.end method
+    iget-object v0, v0, LuRj;->b:Ljava/lang/Object;
 
-.method public final size()I
-    .locals 1
+    .line 9
+    .line 10
+    check-cast v0, Ljvd;
 
-    .line 1
-    iget-object v0, p0, LzAk;->Z:LJck;
+    .line 11
+    .line 12
+    iget-object v0, v0, Ljvd;->a:Landroid/content/Context;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 13
+    .line 14
+    new-instance v1, LuYk;
 
-    .line 4
-    .line 5
-    .line 6
-    const/4 v0, 0x1
+    .line 15
+    .line 16
+    invoke-direct {v1, v0}, LuYk;-><init>(Landroid/content/Context;)V
 
-    .line 7
-    return v0
+    .line 17
+    .line 18
+    .line 19
+    return-object v1
+
+    .line 20
+    :pswitch_0
+    iget-object v0, p0, LzAk;->b:LuRj;
+
+    .line 21
+    .line 22
+    iget-object v0, v0, LuRj;->b:Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    check-cast v0, Ljvd;
+
+    .line 25
+    .line 26
+    iget-object v0, v0, Ljvd;->a:Landroid/content/Context;
+
+    .line 27
+    .line 28
+    new-instance v1, LxAk;
+
+    .line 29
+    .line 30
+    invoke-direct {v1, v0}, LxAk;-><init>(Landroid/content/Context;)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-object v1
+
+    .line 34
+    nop
+
+    .line 35
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

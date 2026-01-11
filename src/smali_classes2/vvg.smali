@@ -1,84 +1,50 @@
 .class public final Lvvg;
-.super LQN0;
+.super Lwvg;
 .source "SourceFile"
 
 
-# static fields
-.field public static final r:[I
-
-
 # instance fields
-.field public final p:Landroid/view/accessibility/AccessibilityManager;
+.field public b:F
 
-.field public q:Z
+.field public c:F
 
 
-# direct methods
-.method static constructor <clinit>()V
+# virtual methods
+.method public final a(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
     .locals 2
 
     .line 1
-    const v0, 0x7f0405d2
+    iget-object v0, p0, Lwvg;->a:Landroid/graphics/Matrix;
 
     .line 2
     .line 3
-    .line 4
-    const v1, 0x7f0405d4
+    invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->invert(Landroid/graphics/Matrix;)Z
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    filled-new-array {v0, v1}, [I
+    invoke-virtual {p2, v0}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 
+    .line 7
     .line 8
     .line 9
-    .line 10
-    move-result-object v0
+    iget v0, p0, Lvvg;->b:F
 
+    .line 10
     .line 11
-    sput-object v0, Lvvg;->r:[I
+    iget v1, p0, Lvvg;->c:F
 
     .line 12
     .line 13
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/google/android/material/snackbar/SnackbarContentLayout;Lcom/google/android/material/snackbar/SnackbarContentLayout;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, LQN0;-><init>(Landroid/content/Context;Landroid/view/ViewGroup;Lcom/google/android/material/snackbar/SnackbarContentLayout;Lcom/google/android/material/snackbar/SnackbarContentLayout;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    const-string p2, "accessibility"
-
-    .line 9
-    .line 10
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
+    invoke-virtual {p2, v0, v1}, Landroid/graphics/Path;->lineTo(FF)V
 
     .line 14
-    check-cast p1, Landroid/view/accessibility/AccessibilityManager;
-
     .line 15
     .line 16
-    iput-object p1, p0, Lvvg;->p:Landroid/view/accessibility/AccessibilityManager;
+    invoke-virtual {p2, p1}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 
     .line 17
     .line 18
+    .line 19
     return-void
 .end method

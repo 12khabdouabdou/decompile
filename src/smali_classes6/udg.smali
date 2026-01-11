@@ -1,174 +1,98 @@
 .class public final Ludg;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:D
+.field public final synthetic a:I
+
+.field public final synthetic b:Lvdg;
+
+.field public final synthetic c:Lyag;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 2
-
-    const-wide/16 v0, 0x0
-
-    .line 1
-    invoke-direct {p0, v0, v1}, Ludg;-><init>(D)V
-
-    return-void
-.end method
-
-.method public constructor <init>(D)V
+.method public synthetic constructor <init>(Lvdg;Lyag;I)V
     .locals 0
 
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iput p3, p0, Ludg;->a:I
 
-    .line 3
-    iput-wide p1, p0, Ludg;->a:D
+    iput-object p1, p0, Ludg;->b:Lvdg;
+
+    iput-object p2, p0, Ludg;->c:Lyag;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+.method public final d()Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, Ludg;->a:I
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, Ludg;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    iget-object v0, p0, Ludg;->b:Lvdg;
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    iget-object v1, p0, Ludg;->c:Lyag;
 
     .line 9
     .line 10
-    return v2
+    invoke-virtual {v0, v1}, Lvdg;->a(Lyag;)V
 
     .line 11
-    :cond_1
-    check-cast p1, Ludg;
-
     .line 12
     .line 13
-    iget-wide v3, p0, Ludg;->a:D
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 14
     .line 15
-    iget-wide v5, p1, Ludg;->a:D
+    return-object v0
 
     .line 16
-    .line 17
-    invoke-static {v3, v4, v5, v6}, Ljava/lang/Double;->compare(DD)I
+    :pswitch_0
+    iget-object v0, p0, Ludg;->b:Lvdg;
 
+    .line 17
     .line 18
+    iget-object v1, p0, Ludg;->c:Lyag;
+
     .line 19
     .line 20
-    move-result p1
+    invoke-virtual {v0, v1}, Lvdg;->a(Lyag;)V
 
     .line 21
-    if-eqz p1, :cond_2
-
     .line 22
     .line 23
-    return v2
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 4
-
-    .line 1
-    iget-wide v0, p0, Ludg;->a:D
-
-    .line 2
-    .line 3
-    invoke-static {v0, v1}, Ljava/lang/Double;->doubleToLongBits(D)J
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-wide v0
-
-    .line 7
-    const/16 v2, 0x20
-
-    .line 8
-    .line 9
-    ushr-long v2, v0, v2
-
-    .line 10
-    .line 11
-    xor-long/2addr v0, v2
-
-    .line 12
-    long-to-int v1, v0
-
-    .line 13
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "ShareSheetStyleConfig(marginBottom="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-wide v1, p0, Ludg;->a:D
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
+    .line 25
     return-object v0
+
+    .line 26
+    nop
+
+    .line 27
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

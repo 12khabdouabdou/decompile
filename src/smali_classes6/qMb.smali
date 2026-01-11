@@ -1,170 +1,315 @@
 .class public final LqMb;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements LGl5;
 
 
 # instance fields
-.field public final synthetic a:Lio/reactivex/rxjava3/core/SingleEmitter;
+.field public final a:LmGc;
 
-.field public final synthetic b:LvMb;
-
-.field public final synthetic c:LkMb$a;
+.field public final b:Lmm5;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;LvMb;LkMb$a;)V
+.method public constructor <init>(LmGc;Lmm5;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LqMb;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, LqMb;->b:LvMb;
-
     .line 4
+    iput-object p1, p0, LqMb;->a:LmGc;
+
     .line 5
-    iput-object p3, p0, LqMb;->c:LkMb$a;
-
     .line 6
+    iput-object p2, p0, LqMb;->b:Lmm5;
+
     .line 7
-    const/4 p1, 0x1
-
     .line 8
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    .line 9
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final B(Landroid/net/Uri;)Lc64;
+    .locals 0
 
     .line 1
-    check-cast p1, Landroid/view/View;
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public final J(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public final N(Landroid/net/Uri;ZLWl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p3}, LqMb;->l(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 2
     .line 3
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public final b(Landroid/net/Uri;LWl5;LLl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1, p2}, LqMb;->l(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public final l(Landroid/net/Uri;LWl5;)Lio/reactivex/rxjava3/core/Completable;
+    .locals 3
+
+    .line 1
+    iget-object p2, p0, LqMb;->a:LmGc;
+
+    .line 2
+    .line 3
+    iget-boolean v0, p2, LmGc;->r:Z
 
     .line 4
     .line 5
-    iget-object v0, p0, LqMb;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+    const/4 v1, 0x0
 
     .line 6
-    .line 7
-    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    if-eqz v0, :cond_1
 
+    .line 7
     .line 8
+    invoke-virtual {p2}, LmGc;->k()Ljava/util/ArrayDeque;
+
     .line 9
     .line 10
-    iget-object p1, p0, LqMb;->b:LvMb;
-
     .line 11
+    move-result-object p2
+
     .line 12
-    sget-object v0, LhMb;->h0:LhMb;
+    invoke-virtual {p2}, Ljava/util/ArrayDeque;->peek()Ljava/lang/Object;
 
     .line 13
     .line 14
-    iget-object v1, p0, LqMb;->c:LkMb$a;
-
     .line 15
+    move-result-object p2
+
     .line 16
-    iget v1, v1, LkMb$a;->b:I
+    check-cast p2, Lwmd;
 
     .line 17
     .line 18
-    const/4 v2, 0x2
+    if-eqz p2, :cond_0
 
     .line 19
-    invoke-static {v1, v2}, LnMb;->b(II)Ljava/lang/String;
-
     .line 20
+    iget-object p2, p2, Lwmd;->c:LG4b;
+
     .line 21
     .line 22
-    move-result-object v1
+    invoke-interface {p2}, LG4b;->Q0()LL4b;
 
     .line 23
-    iget-object v2, p1, LvMb;->c:LXai;
-
     .line 24
     .line 25
-    invoke-virtual {v2, v0, v1}, LXai;->q(LBI3;Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Completable;
+    move-result-object p2
 
     .line 26
+    goto :goto_0
+
     .line 27
+    :cond_0
+    move-object p2, v1
+
     .line 28
-    move-result-object v0
+    :goto_0
+    sget-object v0, LZNb;->n0:LZNb;
 
     .line 29
-    iget-object v1, p1, LvMb;->f0:LBre;
-
     .line 30
-    .line 31
-    invoke-virtual {v1}, LBre;->d()LF06;
+    invoke-static {p2, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 31
     .line 32
     .line 33
+    move-result p2
+
     .line 34
-    move-result-object v1
+    if-eqz p2, :cond_1
 
     .line 35
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
     .line 36
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+
     .line 37
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
     .line 38
-    .line 39
-    .line 40
-    sget-object v0, LtMb;->a:LtMb;
+    return-object p1
 
+    .line 39
+    :cond_1
+    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+
+    .line 40
     .line 41
     .line 42
-    iget-object v1, p1, LvMb;->e0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    move-result-object p2
 
     .line 43
-    .line 44
-    invoke-static {v2, v0, v1}, LLZj;->x0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    if-eqz p2, :cond_3
 
+    .line 44
     .line 45
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
     .line 46
     .line 47
-    iget-object p1, p1, LvMb;->Y:LXF4;
-
     .line 48
+    move-result v0
+
     .line 49
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
+    const/4 v2, 0x2
 
     .line 50
+    if-ne v0, v2, :cond_2
+
     .line 51
     .line 52
-    move-result-object p1
+    const/4 v0, 0x0
 
     .line 53
-    check-cast p1, LmMb;
+    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 54
     .line 55
-    const/4 v0, 0x1
-
     .line 56
-    invoke-virtual {p1, v0}, LmMb;->b(Z)V
+    move-result-object v0
 
     .line 57
+    const-string v2, "featuredstory"
+
     .line 58
     .line 59
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-static {v0, v2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 60
     .line 61
+    .line 62
+    move-result v0
+
+    .line 63
+    if-eqz v0, :cond_2
+
+    .line 64
+    .line 65
+    goto :goto_1
+
+    .line 66
+    :cond_2
+    move-object p2, v1
+
+    .line 67
+    :goto_1
+    if-eqz p2, :cond_3
+
+    .line 68
+    .line 69
+    const/4 v0, 0x1
+
+    .line 70
+    invoke-interface {p2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object p2
+
+    .line 74
+    move-object v1, p2
+
+    .line 75
+    check-cast v1, Ljava/lang/String;
+
+    .line 76
+    .line 77
+    :cond_3
+    const-string p2, "notificationId"
+
+    .line 78
+    .line 79
+    invoke-virtual {p1, p2}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object p1
+
+    .line 83
+    new-instance p2, LT97;
+
+    .line 84
+    .line 85
+    const/16 v0, 0x1b
+
+    .line 86
+    .line 87
+    invoke-direct {p2, p0, p1, v1, v0}, LT97;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;I)V
+
+    .line 88
+    .line 89
+    .line 90
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
+
+    .line 91
+    .line 92
+    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 93
+    .line 94
+    .line 95
+    return-object p1
+.end method
+
+.method public final s(Landroid/net/Uri;Z)Lc64;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    return-object p1
+.end method
+
+.method public final t(Landroid/net/Uri;)Lc64;
+    .locals 0
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
     return-object p1
 .end method

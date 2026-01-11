@@ -1,12 +1,12 @@
 .class public final Lcom/snap/opera/layer/LayerViewFactory$EmptyLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
@@ -22,7 +22,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -52,7 +52,7 @@
     move-result-object p1
 
     .line 17
-    iput-object p1, p0, LPG9;->e:Ljava/lang/Object;
+    iput-object p1, p0, LoS9;->e:Ljava/lang/Object;
 
     .line 18
     .line 19

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LoC0;
+    proxyClass = LiF0;
     schema = "\'prompt\':s,\'aspectRatio\':r?:\'[0]\',\'batchSize\':d@?,\'timeoutInSeconds\':d@?,\'rfeModelId\':s?,\'requestId\':s?"
     typeReferences = {
         Lcom/snap/modules/bitmoji_avatar_builder/MinervaAspectRatio;

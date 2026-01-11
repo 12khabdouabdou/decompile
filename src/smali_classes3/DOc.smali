@@ -1,5 +1,5 @@
 .class public final LDOc;
-.super Ljmg;
+.super LEOc;
 .source "SourceFile"
 
 

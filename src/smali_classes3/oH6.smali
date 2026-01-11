@@ -3,1487 +3,892 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lxn0;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final synthetic a:I
 
-.field public final b:LAee;
-
-.field public c:I
+.field public final synthetic b:LwH6;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LAee;)V
-    .locals 0
+.method public constructor <init>(LwH6;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, LoH6;->a:I
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LoH6;->a:Landroid/content/Context;
+    iput-object p1, p0, LoH6;->b:LwH6;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LoH6;->b:LAee;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
-.method public static a(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/TextView;->getInputType()I
+.method public synthetic constructor <init>(LwH6;Ljava/lang/String;I)V
+    .locals 0
 
     .line 2
-    .line 3
-    .line 4
-    move-result v0
+    iput p3, p0, LoH6;->a:I
 
-    .line 5
-    and-int/lit16 v0, v0, -0x7001
+    iput-object p1, p0, LoH6;->b:LwH6;
 
-    .line 6
-    .line 7
-    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    sparse-switch v1, :sswitch_data_0
-
-    .line 12
-    .line 13
-    .line 14
-    goto :goto_0
-
-    .line 15
-    :sswitch_0
-    const-string v1, "characters"
-
-    .line 16
-    .line 17
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-nez p1, :cond_0
-
-    .line 22
-    .line 23
-    goto :goto_0
-
-    .line 24
-    :cond_0
-    or-int/lit16 p1, v0, 0x1000
-
-    .line 25
-    .line 26
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 27
-    .line 28
-    .line 29
     return-void
-
-    .line 30
-    :sswitch_1
-    const-string v1, "sentences"
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 33
-    .line 34
-    .line 35
-    move-result p1
-
-    .line 36
-    if-nez p1, :cond_1
-
-    .line 37
-    .line 38
-    goto :goto_0
-
-    .line 39
-    :cond_1
-    or-int/lit16 p1, v0, 0x4000
-
-    .line 40
-    .line 41
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 42
-    .line 43
-    .line 44
-    return-void
-
-    .line 45
-    :sswitch_2
-    const-string v1, "words"
-
-    .line 46
-    .line 47
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 48
-    .line 49
-    .line 50
-    move-result p1
-
-    .line 51
-    if-nez p1, :cond_2
-
-    .line 52
-    .line 53
-    goto :goto_0
-
-    .line 54
-    :cond_2
-    or-int/lit16 p1, v0, 0x2000
-
-    .line 55
-    .line 56
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 57
-    .line 58
-    .line 59
-    return-void
-
-    .line 60
-    :sswitch_3
-    const-string v1, "none"
-
-    .line 61
-    .line 62
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 63
-    .line 64
-    .line 65
-    move-result p1
-
-    .line 66
-    if-nez p1, :cond_3
-
-    .line 67
-    .line 68
-    :goto_0
-    return-void
-
-    .line 69
-    :cond_3
-    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 70
-    .line 71
-    .line 72
-    return-void
-
-    .line 73
-    :sswitch_data_0
-    .sparse-switch
-        0x33af38 -> :sswitch_3
-        0x6c11aa9 -> :sswitch_2
-        0x1d36f670 -> :sswitch_1
-        0x4a3baa6a -> :sswitch_0
-    .end sparse-switch
-.end method
-
-.method public static b(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/TextView;->getInputType()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const v1, -0x88001
-
-    .line 6
-    .line 7
-    .line 8
-    and-int/2addr v0, v1
-
-    .line 9
-    const-string v1, "none"
-
-    .line 10
-    .line 11
-    invoke-static {p1, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p1
-
-    .line 15
-    if-eqz p1, :cond_0
-
-    .line 16
-    .line 17
-    const/high16 p1, 0x80000
-
-    .line 18
-    .line 19
-    or-int/2addr p1, v0
-
-    .line 20
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 21
-    .line 22
-    .line 23
-    return-void
-
-    .line 24
-    :cond_0
-    const p1, 0x8000
-
-    .line 25
-    .line 26
-    .line 27
-    or-int/2addr p1, v0
-
-    .line 28
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-.end method
-
-.method public static c(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Landroid/widget/TextView;->getInputType()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    and-int/lit16 v0, v0, -0x1000
-
-    .line 6
-    .line 7
-    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    sparse-switch v1, :sswitch_data_0
-
-    .line 12
-    .line 13
-    .line 14
-    goto/16 :goto_0
-
-    .line 15
-    .line 16
-    :sswitch_0
-    const-string v1, "numberDecimalSigned"
-
-    .line 17
-    .line 18
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result p1
-
-    .line 22
-    if-nez p1, :cond_0
-
-    .line 23
-    .line 24
-    goto/16 :goto_0
-
-    .line 25
-    .line 26
-    :cond_0
-    or-int/lit16 p1, v0, 0x3002
-
-    .line 27
-    .line 28
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-
-    .line 32
-    :sswitch_1
-    const-string v1, "numberDecimal"
-
-    .line 33
-    .line 34
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 35
-    .line 36
-    .line 37
-    move-result p1
-
-    .line 38
-    if-nez p1, :cond_1
-
-    .line 39
-    .line 40
-    goto/16 :goto_0
-
-    .line 41
-    .line 42
-    :cond_1
-    or-int/lit16 p1, v0, 0x2002
-
-    .line 43
-    .line 44
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 45
-    .line 46
-    .line 47
-    return-void
-
-    .line 48
-    :sswitch_2
-    const-string v1, "password"
-
-    .line 49
-    .line 50
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 51
-    .line 52
-    .line 53
-    move-result p1
-
-    .line 54
-    if-nez p1, :cond_2
-
-    .line 55
-    .line 56
-    goto/16 :goto_0
-
-    .line 57
-    .line 58
-    :cond_2
-    or-int/lit16 p1, v0, 0x81
-
-    .line 59
-    .line 60
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 61
-    .line 62
-    .line 63
-    return-void
-
-    .line 64
-    :sswitch_3
-    const-string v1, "email"
-
-    .line 65
-    .line 66
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 67
-    .line 68
-    .line 69
-    move-result p1
-
-    .line 70
-    if-nez p1, :cond_3
-
-    .line 71
-    .line 72
-    goto :goto_0
-
-    .line 73
-    :cond_3
-    or-int/lit8 p1, v0, 0x21
-
-    .line 74
-    .line 75
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 76
-    .line 77
-    .line 78
-    return-void
-
-    .line 79
-    :sswitch_4
-    const-string v1, "url"
-
-    .line 80
-    .line 81
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 82
-    .line 83
-    .line 84
-    move-result p1
-
-    .line 85
-    if-nez p1, :cond_4
-
-    .line 86
-    .line 87
-    goto :goto_0
-
-    .line 88
-    :cond_4
-    or-int/lit8 p1, v0, 0x11
-
-    .line 89
-    .line 90
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 91
-    .line 92
-    .line 93
-    return-void
-
-    .line 94
-    :sswitch_5
-    const-string v1, "noSuggestions"
-
-    .line 95
-    .line 96
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 97
-    .line 98
-    .line 99
-    move-result p1
-
-    .line 100
-    if-nez p1, :cond_5
-
-    .line 101
-    .line 102
-    goto :goto_0
-
-    .line 103
-    :cond_5
-    const p1, -0x8001
-
-    .line 104
-    .line 105
-    .line 106
-    or-int/2addr p1, v0
-
-    .line 107
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 108
-    .line 109
-    .line 110
-    return-void
-
-    .line 111
-    :sswitch_6
-    const-string v1, "passwordNumber"
-
-    .line 112
-    .line 113
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 114
-    .line 115
-    .line 116
-    move-result p1
-
-    .line 117
-    if-nez p1, :cond_6
-
-    .line 118
-    .line 119
-    goto :goto_0
-
-    .line 120
-    :cond_6
-    or-int/lit8 p1, v0, 0x12
-
-    .line 121
-    .line 122
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 123
-    .line 124
-    .line 125
-    return-void
-
-    .line 126
-    :sswitch_7
-    const-string v1, "number"
-
-    .line 127
-    .line 128
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 129
-    .line 130
-    .line 131
-    move-result p1
-
-    .line 132
-    if-nez p1, :cond_7
-
-    .line 133
-    .line 134
-    goto :goto_0
-
-    .line 135
-    :cond_7
-    or-int/lit8 p1, v0, 0x2
-
-    .line 136
-    .line 137
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 138
-    .line 139
-    .line 140
-    return-void
-
-    .line 141
-    :sswitch_8
-    const-string v1, "passwordVisible"
-
-    .line 142
-    .line 143
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 144
-    .line 145
-    .line 146
-    move-result p1
-
-    .line 147
-    if-nez p1, :cond_8
-
-    .line 148
-    .line 149
-    goto :goto_0
-
-    .line 150
-    :cond_8
-    or-int/lit16 p1, v0, 0x91
-
-    .line 151
-    .line 152
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 153
-    .line 154
-    .line 155
-    return-void
-
-    .line 156
-    :sswitch_9
-    const-string v1, "phoneNumber"
-
-    .line 157
-    .line 158
-    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 159
-    .line 160
-    .line 161
-    move-result p1
-
-    .line 162
-    if-nez p1, :cond_9
-
-    .line 163
-    .line 164
-    :goto_0
-    or-int/lit8 p1, v0, 0x1
-
-    .line 165
-    .line 166
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 167
-    .line 168
-    .line 169
-    return-void
-
-    .line 170
-    :cond_9
-    or-int/lit8 p1, v0, 0x3
-
-    .line 171
-    .line 172
-    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setInputType(I)V
-
-    .line 173
-    .line 174
-    .line 175
-    return-void
-
-    .line 176
-    nop
-
-    .line 177
-    :sswitch_data_0
-    .sparse-switch
-        -0x471b45a9 -> :sswitch_9
-        -0x45ae46a9 -> :sswitch_8
-        -0x3da724b7 -> :sswitch_7
-        -0x28061e3c -> :sswitch_6
-        -0x252d6192 -> :sswitch_5
-        0x1c56f -> :sswitch_4
-        0x5c24b9c -> :sswitch_3
-        0x4889ba9b -> :sswitch_2
-        0x6a663bc8 -> :sswitch_1
-        0x7d06a104 -> :sswitch_0
-    .end sparse-switch
-.end method
-
-.method public static d(Lcom/snap/composer/views/ComposerEditText;Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const/4 v1, 0x5
-
-    .line 6
-    sparse-switch v0, :sswitch_data_0
-
-    .line 7
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :sswitch_0
-    const-string v0, "send"
-
-    .line 11
-    .line 12
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p1
-
-    .line 16
-    if-nez p1, :cond_0
-
-    .line 17
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    const/4 v1, 0x4
-
-    .line 20
-    goto :goto_1
-
-    .line 21
-    :sswitch_1
-    const-string v0, "next"
-
-    .line 22
-    .line 23
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result p1
-
-    .line 27
-    if-nez p1, :cond_3
-
-    .line 28
-    .line 29
-    goto :goto_0
-
-    .line 30
-    :sswitch_2
-    const-string v0, "join"
-
-    .line 31
-    .line 32
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 33
-    .line 34
-    .line 35
-    move-result p1
-
-    .line 36
-    if-nez p1, :cond_3
-
-    .line 37
-    .line 38
-    goto :goto_0
-
-    .line 39
-    :sswitch_3
-    const-string v0, "go"
-
-    .line 40
-    .line 41
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 42
-    .line 43
-    .line 44
-    move-result p1
-
-    .line 45
-    if-nez p1, :cond_1
-
-    .line 46
-    .line 47
-    goto :goto_0
-
-    .line 48
-    :cond_1
-    const/4 v1, 0x2
-
-    .line 49
-    goto :goto_1
-
-    .line 50
-    :sswitch_4
-    const-string v0, "continue"
-
-    .line 51
-    .line 52
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 53
-    .line 54
-    .line 55
-    move-result p1
-
-    .line 56
-    if-nez p1, :cond_3
-
-    .line 57
-    .line 58
-    goto :goto_0
-
-    .line 59
-    :sswitch_5
-    const-string v0, "search"
-
-    .line 60
-    .line 61
-    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 62
-    .line 63
-    .line 64
-    move-result p1
-
-    .line 65
-    if-nez p1, :cond_2
-
-    .line 66
-    .line 67
-    :goto_0
-    const/4 v1, 0x6
-
-    .line 68
-    goto :goto_1
-
-    .line 69
-    :cond_2
-    const/4 v1, 0x3
-
-    .line 70
-    :cond_3
-    :goto_1
-    invoke-virtual {p0, v1}, Landroid/widget/TextView;->setImeOptions(I)V
-
-    .line 71
-    .line 72
-    .line 73
-    return-void
-
-    .line 74
-    nop
-
-    .line 75
-    :sswitch_data_0
-    .sparse-switch
-        -0x36059a58 -> :sswitch_5
-        -0x21ced359 -> :sswitch_4
-        0xce8 -> :sswitch_3
-        0x31dd2a -> :sswitch_2
-        0x338af3 -> :sswitch_1
-        0x35cf88 -> :sswitch_0
-    .end sparse-switch
 .end method
 
 
 # virtual methods
-.method public final bindAttributes(Lzn0;)V
-    .locals 10
+.method public final run()V
+    .locals 26
 
     .line 1
-    new-instance v0, LnH6;
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    const/4 v1, 0x7
+    iget v1, v0, LoH6;->a:I
 
     .line 4
-    invoke-direct {v0, p0, p0, v1}, LnH6;-><init>(LoH6;LoH6;I)V
-
     .line 5
+    packed-switch v1, :pswitch_data_0
+
     .line 6
     .line 7
-    iget-object v2, p1, Lzn0;->a:LU;
-
     .line 8
+    iget-object v1, v0, LoH6;->b:LwH6;
+
     .line 9
-    const-string v1, "placeholder"
-
     .line 10
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 11
-    const/4 v8, 0x1
-
     .line 12
-    invoke-virtual {v2, v1, v8, v0}, LU;->f(Ljava/lang/String;ZLJJc;)V
-
     .line 13
+    return-void
+
     .line 14
+    :pswitch_0
+    iget-object v1, v0, LoH6;->b:LwH6;
+
     .line 15
-    new-instance v0, LlH6;
-
     .line 16
-    .line 17
-    const/4 v1, 0x0
+    iget-object v4, v1, LwH6;->d:LVl;
 
+    .line 17
     .line 18
-    invoke-direct {v0, p0, p0, v1}, LlH6;-><init>(LoH6;LoH6;I)V
+    if-eqz v4, :cond_e
 
     .line 19
     .line 20
+    iget-object v1, v1, LwH6;->j:LAG6;
+
     .line 21
-    const-string v1, "focused"
-
     .line 22
-    .line 23
-    const/4 v9, 0x0
+    iget-object v2, v1, LAG6;->e0:Ljava/lang/Object;
 
+    .line 23
     .line 24
-    invoke-virtual {v2, v1, v9, v0}, LU;->a(Ljava/lang/String;ZLFw1;)V
+    check-cast v2, LREi;
 
     .line 25
     .line 26
-    .line 27
-    new-instance v0, LlH6;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
+    .line 27
     .line 28
     .line 29
-    const/4 v1, 0x1
+    move-result-object v2
 
     .line 30
-    invoke-direct {v0, p0, p0, v1}, LlH6;-><init>(LoH6;LoH6;I)V
+    check-cast v2, Ljava/lang/ref/WeakReference;
 
     .line 31
     .line 32
-    .line 33
-    const-string v1, "enabled"
+    invoke-virtual {v2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 33
     .line 34
     .line 35
-    invoke-virtual {v2, v1, v9, v0}, LU;->a(Ljava/lang/String;ZLFw1;)V
+    move-result-object v2
 
     .line 36
+    check-cast v2, Lkdd;
+
     .line 37
     .line 38
-    new-instance v0, LnH6;
+    if-eqz v2, :cond_e
 
     .line 39
     .line 40
-    const/4 v1, 0x0
+    instance-of v3, v4, LWg6;
 
     .line 41
-    invoke-direct {v0, p1, p0, p0, v1}, LnH6;-><init>(Lzn0;LoH6;LoH6;I)V
-
     .line 42
-    .line 43
-    .line 44
-    const-string v1, "onWillChange"
+    const/4 v5, 0x0
 
+    .line 43
+    if-eqz v3, :cond_1
+
+    .line 44
     .line 45
+    move-object v3, v4
+
     .line 46
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
+    check-cast v3, LWg6;
 
     .line 47
     .line 48
+    iget-boolean v3, v3, LWg6;->a:Z
+
     .line 49
-    new-instance v0, LnH6;
-
     .line 50
-    .line 51
-    const/4 v1, 0x1
+    if-eqz v3, :cond_0
 
+    .line 51
     .line 52
-    invoke-direct {v0, p1, p0, p0, v1}, LnH6;-><init>(Lzn0;LoH6;LoH6;I)V
+    sget-object v3, Lkp;->t:Lkp;
 
     .line 53
     .line 54
+    goto :goto_0
+
     .line 55
-    const-string v1, "onChange"
+    :cond_0
+    sget-object v3, Lkp;->c:Lkp;
 
     .line 56
     .line 57
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
+    goto :goto_0
 
     .line 58
+    :cond_1
+    instance-of v3, v4, LrOj;
+
     .line 59
     .line 60
-    new-instance v0, LnH6;
+    if-eqz v3, :cond_2
 
     .line 61
     .line 62
-    const/4 v1, 0x2
+    sget-object v3, Lkp;->X:Lkp;
 
     .line 63
-    invoke-direct {v0, p1, p0, p0, v1}, LnH6;-><init>(Lzn0;LoH6;LoH6;I)V
-
     .line 64
+    goto :goto_0
+
     .line 65
+    :cond_2
+    instance-of v3, v4, LVxe;
+
     .line 66
-    const-string v1, "onEditBegin"
-
     .line 67
-    .line 68
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
+    if-eqz v3, :cond_3
 
+    .line 68
     .line 69
+    sget-object v3, Lkp;->Y:Lkp;
+
     .line 70
     .line 71
-    new-instance v0, LnH6;
+    goto :goto_0
 
     .line 72
-    .line 73
-    const/4 v1, 0x3
+    :cond_3
+    instance-of v3, v4, LwV3;
 
+    .line 73
     .line 74
-    invoke-direct {v0, p1, p0, p0, v1}, LnH6;-><init>(Lzn0;LoH6;LoH6;I)V
+    if-eqz v3, :cond_5
 
     .line 75
     .line 76
+    instance-of v3, v4, LYIh;
+
     .line 77
-    const-string v1, "onEditEnd"
-
     .line 78
-    .line 79
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
+    if-eqz v3, :cond_4
 
+    .line 79
     .line 80
+    sget-object v3, Lkp;->k0:Lkp;
+
     .line 81
     .line 82
-    new-instance v0, LnH6;
+    goto :goto_0
 
     .line 83
-    .line 84
-    const/4 v1, 0x4
+    :cond_4
+    sget-object v3, Lkp;->f0:Lkp;
 
+    .line 84
     .line 85
-    invoke-direct {v0, p1, p0, p0, v1}, LnH6;-><init>(Lzn0;LoH6;LoH6;I)V
+    goto :goto_0
 
     .line 86
+    :cond_5
+    instance-of v3, v4, LdFe;
+
     .line 87
     .line 88
-    const-string v1, "onReturn"
+    if-eqz v3, :cond_6
 
     .line 89
     .line 90
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
+    sget-object v3, Lkp;->Z:Lkp;
 
     .line 91
     .line 92
+    goto :goto_0
+
     .line 93
-    new-instance v0, LnH6;
+    :cond_6
+    instance-of v3, v4, LTZa;
 
     .line 94
     .line 95
-    const/4 v1, 0x5
+    if-eqz v3, :cond_7
 
     .line 96
-    invoke-direct {v0, p1, p0, p0, v1}, LnH6;-><init>(Lzn0;LoH6;LoH6;I)V
-
     .line 97
+    sget-object v3, Lkp;->l0:Lkp;
+
     .line 98
     .line 99
-    const-string v1, "onWillDelete"
+    goto :goto_0
 
     .line 100
+    :cond_7
+    move-object v3, v5
+
     .line 101
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
+    :goto_0
+    if-eqz v3, :cond_e
 
     .line 102
     .line 103
-    .line 104
-    new-instance v6, LnH6;
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
+    .line 104
     .line 105
     .line 106
-    const/16 v0, 0xd
+    move-result v6
 
     .line 107
-    .line 108
-    invoke-direct {v6, p0, p0, v0}, LnH6;-><init>(LoH6;LoH6;I)V
+    iget-object v7, v1, LAG6;->Y:Ljava/lang/Object;
 
+    .line 108
     .line 109
+    check-cast v7, LOF3;
+
     .line 110
     .line 111
-    const-string v4, "value"
+    const/16 v8, 0xd
 
     .line 112
     .line 113
-    const/4 v5, 0x1
+    const/16 v9, 0x8
 
     .line 114
-    const/16 v3, 0x9
-
     .line 115
+    const/4 v10, 0x3
+
     .line 116
-    const/4 v7, 0x0
+    const/4 v11, 0x0
 
     .line 117
-    invoke-virtual/range {v2 .. v7}, LU;->h(ILjava/lang/String;ZLRm0;Ljava/lang/Object;)V
+    if-eq v6, v10, :cond_9
 
     .line 118
     .line 119
+    if-eq v6, v9, :cond_8
+
     .line 120
-    new-instance v0, Lyn0;
-
     .line 121
-    .line 122
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    if-eq v6, v8, :cond_8
 
+    .line 122
     .line 123
+    const/4 v6, 0x0
+
     .line 124
+    goto :goto_1
+
     .line 125
-    const-string v1, "value"
+    :cond_8
+    sget-object v6, LZSg;->U4:LZSg;
 
     .line 126
     .line 127
-    invoke-virtual {v2, v1, v8, v0}, LU;->i(Ljava/lang/String;ZLUm0;)V
+    invoke-interface {v7, v6}, LOF3;->a(LcM3;)Z
 
     .line 128
     .line 129
     .line 130
-    new-instance v0, Lqt3;
+    move-result v6
 
     .line 131
+    goto :goto_1
+
     .line 132
-    const/4 v1, 0x1
+    :cond_9
+    const/4 v6, 0x1
 
     .line 133
-    invoke-direct {v0, p0, p0, v1}, Lqt3;-><init>(Lxn0;Lxn0;I)V
+    :goto_1
+    if-eqz v6, :cond_e
 
     .line 134
     .line 135
-    .line 136
-    const-string v1, "characterLimit"
+    new-instance v15, Lyq;
 
+    .line 136
     .line 137
+    const/4 v13, 0x0
+
     .line 138
-    invoke-virtual {v2, v1, v8, v0}, LU;->e(Ljava/lang/String;ZLPn9;)V
+    const/16 v16, 0x1ff8
 
     .line 139
     .line 140
+    move-object v6, v5
+
     .line 141
-    new-instance v0, LlH6;
+    const-string v5, ""
 
     .line 142
     .line 143
-    const/4 v1, 0x2
+    move-object v12, v6
 
     .line 144
-    invoke-direct {v0, p0, p0, v1}, LlH6;-><init>(LoH6;LoH6;I)V
+    const/4 v6, 0x0
 
     .line 145
+    move-object v14, v7
+
     .line 146
+    const/4 v7, 0x0
+
     .line 147
-    const-string v1, "closesWhenReturnKeyPressed"
+    const/16 v17, 0xd
 
     .line 148
     .line 149
-    invoke-virtual {v2, v1, v9, v0}, LU;->a(Ljava/lang/String;ZLFw1;)V
+    const/4 v8, 0x0
 
     .line 150
+    const/16 v18, 0x8
+
     .line 151
     .line 152
-    new-instance v0, LnH6;
+    const/4 v9, 0x0
 
     .line 153
-    .line 154
-    const/16 v1, 0x8
+    const/16 v19, 0x3
 
+    .line 154
     .line 155
+    const/4 v10, 0x0
+
     .line 156
-    invoke-direct {v0, p0, p0, v1}, LnH6;-><init>(LoH6;LoH6;I)V
+    const/16 v20, 0x0
 
     .line 157
     .line 158
+    const/4 v11, 0x0
+
     .line 159
-    const-string v1, "returnKeyText"
+    move-object/from16 v21, v12
 
     .line 160
     .line 161
-    invoke-virtual {v2, v1, v9, v0}, LU;->f(Ljava/lang/String;ZLJJc;)V
+    const/4 v12, 0x0
 
     .line 162
+    move-object/from16 v22, v14
+
     .line 163
     .line 164
-    new-instance v0, LmH6;
+    const/4 v14, 0x0
 
     .line 165
-    .line 166
-    const/4 v1, 0x0
+    move-object/from16 v23, v2
 
+    .line 166
     .line 167
-    invoke-direct {v0, p0, p0, v1}, LmH6;-><init>(LoH6;LoH6;I)V
+    move-object v2, v15
 
     .line 168
+    const/4 v15, 0x0
+
     .line 169
+    move-object/from16 v25, v22
+
     .line 170
-    const-string v1, "placeholderColor"
-
     .line 171
+    move-object/from16 v24, v23
+
     .line 172
-    invoke-virtual {v2, v1, v0}, LU;->b(Ljava/lang/String;LDMa;)V
-
     .line 173
-    .line 174
-    .line 175
-    new-instance v0, LnH6;
+    const/4 v0, 0x0
 
+    .line 174
+    invoke-direct/range {v2 .. v16}, Lyq;-><init>(Lkp;LVl;Ljava/lang/String;LvZ3;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLKt;Ljava/lang/Long;LLo;I)V
+
+    .line 175
     .line 176
     .line 177
-    const/16 v1, 0x9
+    new-instance v12, Lxq;
 
     .line 178
     .line 179
-    invoke-direct {v0, p0, p0, v1}, LnH6;-><init>(LoH6;LoH6;I)V
+    invoke-interface {v4}, LVl;->a()Ljava/util/List;
 
     .line 180
     .line 181
     .line 182
-    const-string v1, "autocapitalization"
+    move-result-object v4
 
     .line 183
-    .line 184
-    invoke-virtual {v2, v1, v9, v0}, LU;->f(Ljava/lang/String;ZLJJc;)V
+    invoke-interface {v4, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
+    .line 184
     .line 185
     .line 186
+    move-result-object v4
+
     .line 187
-    new-instance v0, LnH6;
+    move-object v14, v4
 
     .line 188
+    check-cast v14, LDq;
+
     .line 189
-    const/16 v1, 0xa
-
     .line 190
-    .line 191
-    invoke-direct {v0, p0, p0, v1}, LnH6;-><init>(LoH6;LoH6;I)V
+    move-object/from16 v4, v24
 
+    .line 191
     .line 192
+    iget-object v4, v4, Lkdd;->Y:LIF2;
+
     .line 193
     .line 194
-    const-string v1, "autocorrection"
+    if-eqz v4, :cond_a
 
     .line 195
     .line 196
-    invoke-virtual {v2, v1, v9, v0}, LU;->f(Ljava/lang/String;ZLJJc;)V
+    iget-object v5, v4, LIF2;->c:Ljava/lang/Object;
 
     .line 197
     .line 198
+    check-cast v5, Li9d;
+
     .line 199
-    new-instance v0, LnH6;
-
     .line 200
-    .line 201
-    const/16 v1, 0xb
+    move-object/from16 v16, v5
 
+    .line 201
     .line 202
+    goto :goto_2
+
     .line 203
-    invoke-direct {v0, p0, p0, v1}, LnH6;-><init>(LoH6;LoH6;I)V
+    :cond_a
+    const/16 v16, 0x0
 
     .line 204
     .line 205
+    :goto_2
+    const-string v13, ""
+
     .line 206
-    const-string v1, "contentType"
-
     .line 207
-    .line 208
-    invoke-virtual {v2, v1, v9, v0}, LU;->f(Ljava/lang/String;ZLJJc;)V
+    const/16 v19, 0xe0
 
+    .line 208
     .line 209
+    const/16 v17, 0x0
+
     .line 210
     .line 211
-    new-instance v0, LlH6;
+    const/16 v18, 0x0
 
     .line 212
     .line 213
-    const/4 v1, 0x3
+    move-object v15, v2
 
     .line 214
-    invoke-direct {v0, p0, p0, v1}, LlH6;-><init>(LoH6;LoH6;I)V
+    invoke-direct/range {v12 .. v19}, Lxq;-><init>(Ljava/lang/String;LDq;Lyq;Li9d;LGp;Ljava/util/ArrayList;I)V
 
     .line 215
     .line 216
     .line 217
-    const-string v1, "selectTextOnFocus"
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
     .line 218
     .line 219
-    invoke-virtual {v2, v1, v9, v0}, LU;->a(Ljava/lang/String;ZLFw1;)V
-
     .line 220
+    move-result v2
+
     .line 221
+    const/4 v3, 0x3
+
     .line 222
-    new-instance v0, LmH6;
+    if-eq v2, v3, :cond_c
 
     .line 223
     .line 224
-    const/4 v1, 0x1
+    const/16 v3, 0x8
 
     .line 225
-    invoke-direct {v0, p0, p0, v1}, LmH6;-><init>(LoH6;LoH6;I)V
-
     .line 226
+    if-eq v2, v3, :cond_b
+
     .line 227
     .line 228
-    const-string v1, "tintColor"
+    const/16 v3, 0xd
 
     .line 229
     .line 230
-    invoke-virtual {v2, v1, v0}, LU;->b(Ljava/lang/String;LDMa;)V
+    if-eq v2, v3, :cond_b
 
     .line 231
     .line 232
+    const/4 v11, 0x0
+
     .line 233
-    new-instance v0, LnH6;
+    goto :goto_3
 
     .line 234
+    :cond_b
+    sget-object v0, LZSg;->V4:LZSg;
+
     .line 235
-    const/16 v1, 0xc
-
     .line 236
-    .line 237
-    invoke-direct {v0, p0, p0, v1}, LnH6;-><init>(LoH6;LoH6;I)V
+    move-object/from16 v14, v25
 
+    .line 237
     .line 238
+    invoke-interface {v14, v0}, LOF3;->h(LcM3;)I
+
     .line 239
     .line 240
-    const-string v1, "keyboardAppearance"
-
     .line 241
+    move-result v11
+
     .line 242
-    invoke-virtual {v2, v1, v9, v0}, LU;->f(Ljava/lang/String;ZLJJc;)V
+    goto :goto_3
 
     .line 243
+    :cond_c
+    move-object/from16 v14, v25
+
     .line 244
     .line 245
-    new-instance v0, LMG6;
+    sget-object v0, LZSg;->j7:LZSg;
 
     .line 246
     .line 247
-    const/4 v1, 0x2
+    invoke-interface {v14, v0}, LOF3;->h(LcM3;)I
 
     .line 248
-    invoke-direct {v0, v1, p0}, LMG6;-><init>(ILjava/lang/Object;)V
-
     .line 249
     .line 250
+    move-result v11
+
     .line 251
-    new-instance v1, LXfi;
+    :goto_3
+    iget-object v0, v1, LAG6;->Z:Ljava/lang/Object;
 
     .line 252
     .line 253
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    check-cast v0, LW8f;
 
     .line 254
     .line 255
+    const/16 v2, 0xc
+
     .line 256
-    invoke-virtual {p1, v1}, Lzn0;->c(LXfi;)V
-
     .line 257
-    .line 258
-    .line 259
-    new-instance v0, LnH6;
+    const/4 v6, 0x0
 
+    .line 258
+    invoke-static {v0, v12, v11, v6, v2}, LW8f;->o(LW8f;Lxq;ILWM1;I)LYg;
+
+    .line 259
     .line 260
     .line 261
-    const/16 v1, 0xe
+    move-result-object v0
 
     .line 262
-    .line 263
-    invoke-direct {v0, p0, p0, v1}, LnH6;-><init>(LoH6;LoH6;I)V
+    iget-object v2, v1, LAG6;->c:Ljava/lang/Object;
 
+    .line 263
     .line 264
+    check-cast v2, LJ17;
+
     .line 265
     .line 266
-    const-string v1, "selection"
+    invoke-virtual {v2, v0}, LJ17;->b(LYg;)Ljava/util/List;
 
     .line 267
     .line 268
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
-
     .line 269
+    move-result-object v0
+
     .line 270
+    check-cast v0, Ljava/lang/Iterable;
+
     .line 271
-    new-instance v0, LnH6;
-
     .line 272
-    .line 273
-    const/4 v1, 0x6
+    new-instance v2, Ljava/util/ArrayList;
 
+    .line 273
     .line 274
-    invoke-direct {v0, p1, p0, p0, v1}, LnH6;-><init>(Lzn0;LoH6;LoH6;I)V
+    const/16 v3, 0xa
 
     .line 275
     .line 276
-    .line 277
-    const-string v1, "onSelectionChange"
+    invoke-static {v0, v3}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
+    .line 277
     .line 278
     .line 279
-    invoke-virtual {v2, v1, v9, v0}, LU;->g(Ljava/lang/String;ZLJJc;)V
+    move-result v5
 
     .line 280
+    invoke-direct {v2, v5}, Ljava/util/ArrayList;-><init>(I)V
+
     .line 281
     .line 282
-    new-instance v0, LlH6;
-
     .line 283
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
     .line 284
-    const/4 v1, 0x4
-
     .line 285
-    invoke-direct {v0, p0, p0, v1}, LlH6;-><init>(LoH6;LoH6;I)V
-
     .line 286
-    .line 287
-    .line 288
-    const-string v1, "enableInlinePredictions"
+    move-result-object v0
 
+    .line 287
+    :goto_4
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 288
     .line 289
     .line 290
-    invoke-virtual {v2, v1, v9, v0}, LU;->a(Ljava/lang/String;ZLFw1;)V
+    move-result v5
 
     .line 291
+    if-eqz v5, :cond_d
+
     .line 292
     .line 293
-    invoke-virtual {p1}, Lzn0;->a()I
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 294
     .line 295
     .line 296
-    move-result p1
+    move-result-object v5
 
     .line 297
-    iput p1, p0, LoH6;->c:I
+    check-cast v5, LTg;
 
     .line 298
     .line 299
+    iget-object v5, v5, LTg;->c:LLq;
+
+    .line 300
+    .line 301
+    iget-object v5, v5, LLq;->b:LNq;
+
+    .line 302
+    .line 303
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 304
+    .line 305
+    .line 306
+    goto :goto_4
+
+    .line 307
+    :cond_d
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 308
+    .line 309
+    invoke-static {v2, v3}, Lnh3;->d3(Ljava/lang/Iterable;I)I
+
+    .line 310
+    .line 311
+    .line 312
+    move-result v3
+
+    .line 313
+    invoke-direct {v0, v3}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 314
+    .line 315
+    .line 316
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 317
+    .line 318
+    .line 319
+    move-result-object v2
+
+    .line 320
+    :goto_5
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 321
+    .line 322
+    .line 323
+    move-result v3
+
+    .line 324
+    if-eqz v3, :cond_e
+
+    .line 325
+    .line 326
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 327
+    .line 328
+    .line 329
+    move-result-object v3
+
+    .line 330
+    check-cast v3, LNq;
+
+    .line 331
+    .line 332
+    iget-object v5, v1, LAG6;->t:Ljava/lang/Object;
+
+    .line 333
+    .line 334
+    check-cast v5, Liq;
+
+    .line 335
+    .line 336
+    iget-object v5, v5, Liq;->d:Lngb;
+
+    .line 337
+    .line 338
+    const-string v6, ""
+
+    .line 339
+    .line 340
+    const/4 v12, 0x0
+
+    .line 341
+    invoke-virtual {v5, v6, v3, v12}, Lngb;->t(Ljava/lang/String;LNq;LTl;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 342
+    .line 343
+    .line 344
+    move-result-object v3
+
+    .line 345
+    new-instance v5, LV0;
+
+    .line 346
+    .line 347
+    const/16 v6, 0x8
+
+    .line 348
+    .line 349
+    invoke-direct {v5, v6, v1}, LV0;-><init>(ILjava/lang/Object;)V
+
+    .line 350
+    .line 351
+    .line 352
+    invoke-virtual {v3, v5}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+
+    .line 353
+    .line 354
+    .line 355
+    move-result-object v3
+
+    .line 356
+    new-instance v5, LW0;
+
+    .line 357
+    .line 358
+    const/16 v6, 0x14
+
+    .line 359
+    .line 360
+    invoke-direct {v5, v6, v1}, LW0;-><init>(ILjava/lang/Object;)V
+
+    .line 361
+    .line 362
+    .line 363
+    invoke-virtual {v3, v5}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+
+    .line 364
+    .line 365
+    .line 366
+    move-result-object v3
+
+    .line 367
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Completable;->p()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+
+    .line 368
+    .line 369
+    .line 370
+    move-result-object v3
+
+    .line 371
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 372
+    .line 373
+    .line 374
+    move-result-object v3
+
+    .line 375
+    const/4 v6, 0x0
+
+    .line 376
+    invoke-static {v3, v4, v6}, LIzk;->a(Lio/reactivex/rxjava3/disposables/Disposable;LIF2;LYbd;)V
+
+    .line 377
+    .line 378
+    .line 379
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 380
+    .line 381
+    .line 382
+    goto :goto_5
+
+    .line 383
+    :cond_e
     return-void
-.end method
 
-.method public final e(Lcom/snap/composer/views/ComposerEditText;)Lzti;
-    .locals 3
+    .line 384
+    :pswitch_1
+    iget-object v1, v0, LoH6;->b:LwH6;
 
-    .line 1
-    invoke-virtual {p1}, Lcom/snap/composer/views/ComposerEditText;->getTextViewHelper()Lzti;
+    .line 385
+    .line 386
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
+    .line 387
+    .line 388
+    .line 389
+    return-void
 
-    .line 5
-    if-nez v0, :cond_0
+    .line 390
+    nop
 
-    .line 6
-    .line 7
-    new-instance v0, Lzti;
-
-    .line 8
-    .line 9
-    iget v1, p0, LoH6;->c:I
-
-    .line 10
-    .line 11
-    iget-object v2, p0, LoH6;->b:LAee;
-
-    .line 12
-    .line 13
-    invoke-direct {v0, p1, v2, v1}, Lzti;-><init>(Landroid/widget/TextView;LAee;I)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lcom/snap/composer/views/ComposerEditText;->setTextViewHelper(Lzti;)V
-
-    .line 17
-    .line 18
-    .line 19
-    :cond_0
-    return-object v0
-.end method
-
-.method public final getViewClass()Ljava/lang/Class;
-    .locals 1
-
-    .line 1
-    const-class v0, Lcom/snap/composer/views/ComposerEditText;
-
-    .line 2
-    .line 3
-    return-object v0
+    .line 391
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,341 +1,215 @@
 .class public final Ln2a;
-.super LUt9;
+.super LS1a;
 .source "SourceFile"
 
 
 # instance fields
-.field public Z:Landroid/view/View;
+.field public final synthetic f:I
 
-.field public e0:Lcom/snap/imageloading/view/SnapImageView;
+.field public final g:Ljava/lang/Object;
 
-.field public f0:Landroid/widget/TextView;
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(LNNg;Lcf9;)V
+    .locals 2
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Ln2a;->f:I
+
+    .line 6
+    invoke-direct {p0}, LS1a;-><init>()V
+
+    .line 7
+    new-instance v0, LxWi;
+
+    .line 8
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 9
+    iput-object v0, p0, Ln2a;->g:Ljava/lang/Object;
+
+    .line 10
+    new-instance v0, LMU9;
+
+    const/16 v1, 0x8
+
+    invoke-direct {v0, p1, v1, p2}, LMU9;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 11
+    iput-object v0, p0, Ln2a;->h:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcf9;)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Ln2a;->f:I
 
     .line 1
-    invoke-direct {p0}, LUt9;-><init>()V
+    invoke-direct {p0}, LS1a;-><init>()V
+
+    new-instance v0, LQK5;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, p1, v1}, LQK5;-><init>(Lcf9;I)V
 
     .line 2
+    iput-object v0, p0, Ln2a;->g:Ljava/lang/Object;
+
     .line 3
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
     .line 4
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+
+    .line 5
+    iput-object v0, p0, Ln2a;->h:Ljava/lang/Object;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic F(LEX0;Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, LlB5;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1, p2}, Ln2a;->L(LlB5;Landroid/view/View;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final bridge synthetic K(LJv9;LJv9;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lo2a;
-
-    .line 2
-    .line 3
-    check-cast p2, Lo2a;
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, p1, p2}, Ln2a;->N(Lo2a;Lo2a;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final L(LlB5;Landroid/view/View;)V
+.method public d()LGBc;
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, LUt9;->L(LlB5;Landroid/view/View;)V
+    iget v0, p0, Ln2a;->f:I
 
     .line 2
     .line 3
-    .line 4
-    const p1, 0x7f0b0b3c
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-super {p0}, LS1a;->d()LGBc;
 
+    .line 7
     .line 8
     .line 9
+    move-result-object v0
+
     .line 10
-    move-result-object p1
+    return-object v0
 
     .line 11
-    iput-object p1, p0, Ln2a;->Z:Landroid/view/View;
+    :pswitch_0
+    iget-object v0, p0, Ln2a;->g:Ljava/lang/Object;
 
     .line 12
     .line 13
-    const p1, 0x7f0b0b3d
+    check-cast v0, LxWi;
 
     .line 14
     .line 15
+    return-object v0
+
     .line 16
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    nop
 
     .line 17
-    .line 18
-    .line 19
-    move-result-object p1
-
-    .line 20
-    check-cast p1, Lcom/snap/imageloading/view/SnapImageView;
-
-    .line 21
-    .line 22
-    iput-object p1, p0, Ln2a;->e0:Lcom/snap/imageloading/view/SnapImageView;
-
-    .line 23
-    .line 24
-    const p1, 0x7f0b0b3e
-
-    .line 25
-    .line 26
-    .line 27
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object p1
-
-    .line 31
-    check-cast p1, Landroid/widget/TextView;
-
-    .line 32
-    .line 33
-    iput-object p1, p0, Ln2a;->f0:Landroid/widget/TextView;
-
-    .line 34
-    .line 35
-    iget-object p1, p0, Ln2a;->Z:Landroid/view/View;
-
-    .line 36
-    .line 37
-    if-eqz p1, :cond_0
-
-    .line 38
-    .line 39
-    new-instance p2, LaW7;
-
-    .line 40
-    .line 41
-    const/16 v0, 0xe
-
-    .line 42
-    .line 43
-    invoke-direct {p2, v0, p0}, LaW7;-><init>(ILjava/lang/Object;)V
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-virtual {p1, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 47
-    .line 48
-    .line 49
-    return-void
-
-    .line 50
-    :cond_0
-    const-string p1, "holder"
-
-    .line 51
-    .line 52
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 53
-    .line 54
-    .line 55
-    const/4 p1, 0x0
-
-    .line 56
-    throw p1
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final N(Lo2a;Lo2a;)V
-    .locals 6
+.method public h()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, LUt9;->K(LJv9;LJv9;)V
+    iget v0, p0, Ln2a;->f:I
 
     .line 2
     .line 3
-    .line 4
-    iget-object v1, p0, Ln2a;->e0:Lcom/snap/imageloading/view/SnapImageView;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    const/4 p2, 0x0
+    invoke-super {p0}, LS1a;->h()Lio/reactivex/rxjava3/core/Observable;
 
     .line 7
-    if-eqz v1, :cond_2
-
     .line 8
     .line 9
-    const/4 v3, 0x0
+    move-result-object v0
 
     .line 10
-    const/4 v4, 0x0
+    return-object v0
 
     .line 11
-    iget-object v2, p1, Lo2a;->Y:LKjj;
+    :pswitch_0
+    iget-object v0, p0, Ln2a;->h:Ljava/lang/Object;
 
     .line 12
     .line 13
-    const/16 v5, 0xe
+    check-cast v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
     .line 14
     .line 15
-    move-object v0, p0
+    return-object v0
 
     .line 16
-    invoke-static/range {v0 .. v5}, LUt9;->M(LUt9;Lcom/snap/imageloading/view/SnapImageView;LKjj;LNY0;ZI)V
+    nop
 
     .line 17
-    .line 18
-    .line 19
-    iget-object v1, v0, Ln2a;->f0:Landroid/widget/TextView;
-
-    .line 20
-    .line 21
-    const-string v2, "storyViews"
-
-    .line 22
-    .line 23
-    if-eqz v1, :cond_1
-
-    .line 24
-    .line 25
-    invoke-virtual {p0}, LcIj;->s()Landroid/view/View;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v3
-
-    .line 29
-    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v3
-
-    .line 33
-    iget-wide v4, p1, Lo2a;->Z:J
-
-    .line 34
-    .line 35
-    invoke-static {v4, v5, v3}, LJLj;->f(JLandroid/content/res/Resources;)Ljava/lang/String;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object p1
-
-    .line 39
-    invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 40
-    .line 41
-    .line 42
-    iget-object p1, v0, Ln2a;->f0:Landroid/widget/TextView;
-
-    .line 43
-    .line 44
-    if-eqz p1, :cond_0
-
-    .line 45
-    .line 46
-    const p2, 0x7f080c9a
-
-    .line 47
-    .line 48
-    .line 49
-    const/4 v1, 0x0
-
-    .line 50
-    invoke-virtual {p1, p2, v1, v1, v1}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
-
-    .line 51
-    .line 52
-    .line 53
-    return-void
-
-    .line 54
-    :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    throw p2
-
-    .line 58
-    :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 59
-    .line 60
-    .line 61
-    throw p2
-
-    .line 62
-    :cond_2
-    move-object v0, p0
-
-    .line 63
-    const-string p1, "storyPreview"
-
-    .line 64
-    .line 65
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 66
-    .line 67
-    .line 68
-    throw p2
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final bridge synthetic t(LKu;LKu;)V
-    .locals 0
+.method public final j()Lkotlin/jvm/functions/Function0;
+    .locals 1
 
     .line 1
-    check-cast p1, Lo2a;
+    iget v0, p0, Ln2a;->f:I
 
     .line 2
     .line 3
-    check-cast p2, Lo2a;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-virtual {p0, p1, p2}, Ln2a;->N(Lo2a;Lo2a;)V
-
     .line 6
+    iget-object v0, p0, Ln2a;->h:Ljava/lang/Object;
+
     .line 7
     .line 8
-    return-void
+    check-cast v0, LMU9;
+
+    .line 9
+    .line 10
+    return-object v0
+
+    .line 11
+    :pswitch_0
+    iget-object v0, p0, Ln2a;->g:Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    check-cast v0, LQK5;
+
+    .line 14
+    .line 15
+    return-object v0
+
+    .line 16
+    nop
+
+    .line 17
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

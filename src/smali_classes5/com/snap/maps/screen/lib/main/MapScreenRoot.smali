@@ -186,7 +186,7 @@
     .locals 1
 
     .line 1
-    const v0, 0x7f0b0e7e
+    const v0, 0x7f0b0f9b
 
     .line 2
     .line 3
@@ -203,7 +203,7 @@
 
     .line 9
     .line 10
-    const v0, 0x7f0b0ce1
+    const v0, 0x7f0b0e01
 
     .line 11
     .line 12

@@ -1,124 +1,173 @@
 .class public final LhAk;
-.super LI3;
+.super Ljava/lang/Thread;
 .source "SourceFile"
 
 
-# static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "LhAk;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
 # instance fields
-.field public final a:I
+.field public final a:Ljava/lang/ref/WeakReference;
 
-.field public final b:Ljava/lang/String;
+.field public final b:J
+
+.field public final c:Ljava/util/concurrent/CountDownLatch;
+
+.field public t:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(LRF;J)V
+    .locals 1
 
     .line 1
-    new-instance v0, LqAk;
+    invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     .line 2
     .line 3
-    const/4 v1, 0x1
-
     .line 4
-    invoke-direct {v0, v1}, LqAk;-><init>(I)V
+    new-instance v0, Ljava/lang/ref/WeakReference;
 
     .line 5
     .line 6
-    .line 7
-    sput-object v0, LhAk;->CREATOR:Landroid/os/Parcelable$Creator;
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 7
     .line 8
     .line 9
-    return-void
-.end method
+    iput-object v0, p0, LhAk;->a:Ljava/lang/ref/WeakReference;
 
-.method public constructor <init>(ILjava/lang/String;)V
-    .locals 0
+    .line 10
+    .line 11
+    iput-wide p2, p0, LhAk;->b:J
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 12
+    .line 13
+    new-instance p1, Ljava/util/concurrent/CountDownLatch;
 
-    .line 2
-    .line 3
-    .line 4
-    iput p1, p0, LhAk;->a:I
+    .line 14
+    .line 15
+    const/4 p2, 0x1
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LhAk;->b:Ljava/lang/String;
+    .line 16
+    invoke-direct {p1, p2}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    .line 7
-    .line 8
+    .line 17
+    .line 18
+    .line 19
+    iput-object p1, p0, LhAk;->c:Ljava/util/concurrent/CountDownLatch;
+
+    .line 20
+    .line 21
+    const/4 p1, 0x0
+
+    .line 22
+    iput-boolean p1, p0, LhAk;->t:Z
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Ljava/lang/Thread;->start()V
+
+    .line 25
+    .line 26
+    .line 27
     return-void
 .end method
 
 
 # virtual methods
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 2
+.method public final run()V
+    .locals 6
 
     .line 1
-    const/16 p2, 0x4f45
+    iget-object v0, p0, LhAk;->a:Ljava/lang/ref/WeakReference;
 
     .line 2
     .line 3
-    invoke-static {p2, p1}, Lew8;->R0(ILandroid/os/Parcel;)I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result p2
-
-    .line 7
-    const/4 v0, 0x4
-
-    .line 8
     const/4 v1, 0x1
 
-    .line 9
-    invoke-static {p1, v1, v0}, Lew8;->T0(Landroid/os/Parcel;II)V
+    .line 4
+    :try_start_0
+    iget-object v2, p0, LhAk;->c:Ljava/util/concurrent/CountDownLatch;
 
+    .line 5
+    .line 6
+    iget-wide v3, p0, LhAk;->b:J
+
+    .line 7
+    .line 8
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 9
     .line 10
+    invoke-virtual {v2, v3, v4, v5}, Ljava/util/concurrent/CountDownLatch;->await(JLjava/util/concurrent/TimeUnit;)Z
+
     .line 11
     .line 12
-    iget v0, p0, LhAk;->a:I
-
     .line 13
+    move-result v2
+
     .line 14
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+    if-nez v2, :cond_0
 
     .line 15
     .line 16
-    .line 17
-    iget-object v0, p0, LhAk;->b:Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
+    .line 17
     .line 18
     .line 19
-    const/4 v1, 0x2
+    move-result-object v2
 
     .line 20
-    invoke-static {p1, v1, v0}, Lew8;->M0(Landroid/os/Parcel;ILjava/lang/String;)V
+    check-cast v2, LRF;
 
     .line 21
     .line 22
-    .line 23
-    invoke-static {p2, p1}, Lew8;->S0(ILandroid/os/Parcel;)V
+    if-eqz v2, :cond_0
 
+    .line 23
     .line 24
+    invoke-virtual {v2}, LRF;->b()V
+
     .line 25
     .line 26
+    .line 27
+    iput-boolean v1, p0, LhAk;->t:Z
+    :try_end_0
+    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 28
+    .line 29
+    return-void
+
+    .line 30
+    :catch_0
+    nop
+
+    .line 31
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    check-cast v0, LRF;
+
+    .line 36
+    .line 37
+    if-eqz v0, :cond_0
+
+    .line 38
+    .line 39
+    invoke-virtual {v0}, LRF;->b()V
+
+    .line 40
+    .line 41
+    .line 42
+    iput-boolean v1, p0, LhAk;->t:Z
+
+    .line 43
+    .line 44
+    :cond_0
     return-void
 .end method

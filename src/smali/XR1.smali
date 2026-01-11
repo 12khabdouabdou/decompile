@@ -1,23 +1,21 @@
-.class public interface abstract LXR1;
-.super Ljava/lang/Object;
+.class public final LXR1;
+.super Ljava/lang/RuntimeException;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract b()V
-.end method
+# direct methods
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 1
 
-.method public abstract c()V
-.end method
+    .line 1
+    const-string v0, "Unexpected exception thrown by non-Glide code"
 
-.method public abstract e()V
-.end method
+    .line 2
+    .line 3
+    invoke-direct {p0, v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-.method public abstract j(LlS1;)V
-.end method
-
-.method public abstract k()V
-.end method
-
-.method public abstract l()V
+    .line 4
+    .line 5
+    .line 6
+    return-void
 .end method

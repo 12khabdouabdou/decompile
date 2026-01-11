@@ -1,5 +1,5 @@
 .class public final LQ2h;
-.super LrE9;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
@@ -9,29 +9,33 @@
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LI45;
+.field public final synthetic b:LS2h;
+
+.field public final synthetic c:LAch;
 
 
 # direct methods
-.method public synthetic constructor <init>(LI45;I)V
+.method public synthetic constructor <init>(LS2h;LAch;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, LQ2h;->a:I
+    iput p3, p0, LQ2h;->a:I
 
-    iput-object p1, p0, LQ2h;->b:LI45;
+    iput-object p1, p0, LQ2h;->b:LS2h;
+
+    iput-object p2, p0, LQ2h;->c:LAch;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public final d()Ljava/lang/Object;
+    .locals 5
 
     .line 1
     iget v0, p0, LQ2h;->a:I
@@ -43,288 +47,102 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LQ2h;->b:LI45;
+    iget-object v0, p0, LQ2h;->b:LS2h;
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
+    const/4 v1, 0x1
 
     .line 9
+    iput-boolean v1, v0, LS2h;->j:Z
+
     .line 10
     .line 11
-    move-result-object v0
+    new-instance v0, Lcom/snap/imageloading/view/SnapAnimatedImageView;
 
     .line 12
-    check-cast v0, LeNe;
-
     .line 13
-    .line 14
-    return-object v0
+    iget-object v1, p0, LQ2h;->c:LAch;
 
+    .line 14
     .line 15
-    :pswitch_0
-    iget-object v0, p0, LQ2h;->b:LI45;
+    iget-object v1, v1, LAch;->c:Landroid/content/Context;
 
     .line 16
     .line 17
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
+    sget-object v2, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
     .line 18
     .line 19
+    const/4 v3, 0x0
+
     .line 20
-    move-result-object v0
+    const/4 v4, 0x0
 
     .line 21
-    check-cast v0, LpC3;
+    invoke-direct {v0, v1, v3, v4, v2}, Lcom/snap/imageloading/view/SnapAnimatedImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILandroid/widget/ImageView$ScaleType;)V
 
     .line 22
     .line 23
+    .line 24
     return-object v0
 
-    .line 24
-    :pswitch_1
-    iget-object v0, p0, LQ2h;->b:LI45;
-
     .line 25
+    :pswitch_0
+    iget-object v0, p0, LQ2h;->b:LS2h;
+
     .line 26
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
     .line 27
-    .line 28
-    .line 29
-    move-result-object v0
+    const/4 v1, 0x1
 
+    .line 28
+    iput-boolean v1, v0, LS2h;->i:Z
+
+    .line 29
     .line 30
-    check-cast v0, Leof;
+    new-instance v1, Lcom/snap/imageloading/view/SnapAnimatedImageView;
 
     .line 31
     .line 32
-    return-object v0
+    iget-object v2, p0, LQ2h;->c:LAch;
 
     .line 33
-    :pswitch_2
-    iget-object v0, p0, LQ2h;->b:LI45;
-
     .line 34
-    .line 35
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
+    iget-object v2, v2, LAch;->c:Landroid/content/Context;
 
+    .line 35
     .line 36
+    invoke-direct {v1, v2}, Lcom/snap/imageloading/view/SnapAnimatedImageView;-><init>(Landroid/content/Context;)V
+
     .line 37
     .line 38
-    move-result-object v0
-
     .line 39
-    check-cast v0, LqS3;
+    new-instance v2, LNOg;
 
     .line 40
     .line 41
-    return-object v0
+    const/16 v3, 0x12
 
     .line 42
-    :pswitch_3
-    iget-object v0, p0, LQ2h;->b:LI45;
-
     .line 43
-    .line 44
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
+    invoke-direct {v2, v0, v3, v1}, LNOg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 44
     .line 45
     .line 46
+    invoke-virtual {v1, v2}, Lcom/snap/imageloading/view/SnapAnimatedImageView;->i(LfV;)V
+
     .line 47
-    move-result-object v0
-
     .line 48
-    check-cast v0, Lnwc;
-
     .line 49
+    return-object v1
+
     .line 50
-    return-object v0
-
-    .line 51
-    :pswitch_4
-    iget-object v0, p0, LQ2h;->b:LI45;
-
-    .line 52
-    .line 53
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v0
-
-    .line 57
-    check-cast v0, Lnwc;
-
-    .line 58
-    .line 59
-    return-object v0
-
-    .line 60
-    :pswitch_5
-    iget-object v0, p0, LQ2h;->b:LI45;
-
-    .line 61
-    .line 62
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object v0
-
-    .line 66
-    check-cast v0, LP3h;
-
-    .line 67
-    .line 68
-    return-object v0
-
-    .line 69
-    :pswitch_6
-    iget-object v0, p0, LQ2h;->b:LI45;
-
-    .line 70
-    .line 71
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object v0
-
-    .line 75
-    check-cast v0, Lz5h;
-
-    .line 76
-    .line 77
-    return-object v0
-
-    .line 78
-    :pswitch_7
-    iget-object v0, p0, LQ2h;->b:LI45;
-
-    .line 79
-    .line 80
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
-    .line 81
-    .line 82
-    .line 83
-    move-result-object v0
-
-    .line 84
-    check-cast v0, LkAg;
-
-    .line 85
-    .line 86
-    return-object v0
-
-    .line 87
-    :pswitch_8
-    iget-object v0, p0, LQ2h;->b:LI45;
-
-    .line 88
-    .line 89
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
-    .line 90
-    .line 91
-    .line 92
-    move-result-object v0
-
-    .line 93
-    check-cast v0, Lnwc;
-
-    .line 94
-    .line 95
-    return-object v0
-
-    .line 96
-    :pswitch_9
-    iget-object v0, p0, LQ2h;->b:LI45;
-
-    .line 97
-    .line 98
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
-    .line 99
-    .line 100
-    .line 101
-    move-result-object v0
-
-    .line 102
-    check-cast v0, LB7h;
-
-    .line 103
-    .line 104
-    return-object v0
-
-    .line 105
-    :pswitch_a
-    iget-object v0, p0, LQ2h;->b:LI45;
-
-    .line 106
-    .line 107
-    invoke-virtual {v0}, LI45;->get()Ljava/lang/Object;
-
-    .line 108
-    .line 109
-    .line 110
-    move-result-object v0
-
-    .line 111
-    check-cast v0, Lnwf;
-
-    .line 112
-    .line 113
-    sget-object v1, Ly5h;->Z:Ly5h;
-
-    .line 114
-    .line 115
-    const-string v2, "SpectaclesContentControllerImpl"
-
-    .line 116
-    .line 117
-    invoke-static {v1, v1, v2}, LvHg;->e(Ly5h;Ly5h;Ljava/lang/String;)LWm0;
-
-    .line 118
-    .line 119
-    .line 120
-    move-result-object v1
-
-    .line 121
-    check-cast v0, LIP5;
-
-    .line 122
-    .line 123
-    invoke-static {v0, v1}, LEU0;->p(LIP5;LWm0;)LBre;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v0
-
-    .line 127
-    return-object v0
-
-    .line 128
     nop
 
-    .line 129
+    .line 51
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

@@ -32,7 +32,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, p1, v0}, Lapp/aifactory/sdk/api/model/FullscreenViewStates;-><init>(Ljava/lang/String;LHr5;)V
+    invoke-direct {p0, p1, v0}, Lapp/aifactory/sdk/api/model/FullscreenViewStates;-><init>(Ljava/lang/String;Lex5;)V
 
     .line 3
     .line 4

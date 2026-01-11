@@ -6,9 +6,9 @@
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field public final b:LrH9;
+.field public final b:LQS9;
 
-.field public c:LHW3;
+.field public c:Lj14;
 
 .field public final d:Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
@@ -16,7 +16,7 @@
 
 
 # direct methods
-.method public constructor <init>(LrH9;Landroid/content/Context;)V
+.method public constructor <init>(LQS9;Landroid/content/Context;)V
     .locals 0
 
     .line 1
@@ -29,7 +29,7 @@
 
     .line 5
     .line 6
-    iput-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->b:LrH9;
+    iput-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->b:LQS9;
 
     .line 7
     .line 8
@@ -224,7 +224,7 @@
     .line 65
     .line 66
     :cond_6
-    iget-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->c:LHW3;
+    iget-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->c:Lj14;
 
     .line 67
     .line 68
@@ -232,11 +232,11 @@
 
     .line 69
     .line 70
-    sget-object v3, LyY3;->h0:LyY3;
+    sget-object v3, LZ24;->h0:LZ24;
 
     .line 71
     .line 72
-    invoke-virtual {p1, v0, v2, v1, v3}, LHW3;->E1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LyY3;)V
+    invoke-virtual {p1, v0, v2, v1, v3}, Lj14;->y1(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LZ24;)V
 
     .line 73
     .line 74
@@ -271,7 +271,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->c:LHW3;
+    iget-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->c:Lj14;
 
     .line 5
     .line 6
@@ -279,11 +279,11 @@
 
     .line 7
     .line 8
-    iget-object v0, p1, LQG9;->a:Lc14;
+    iget-object v0, p1, LpS9;->a:LI54;
 
     .line 9
     .line 10
-    sget-object v1, Lc14;->t:Lc14;
+    sget-object v1, LI54;->t:LI54;
 
     .line 11
     .line 12
@@ -291,7 +291,7 @@
 
     .line 13
     .line 14
-    sget-object v1, Lc14;->X:Lc14;
+    sget-object v1, LI54;->X:LI54;
 
     .line 15
     .line 16
@@ -303,7 +303,7 @@
 
     .line 19
     :cond_0
-    invoke-virtual {p1}, LHW3;->B1()Lze5;
+    invoke-virtual {p1}, Lj14;->v1()LUk5;
 
     .line 20
     .line 21
@@ -316,7 +316,7 @@
     .line 24
     .line 25
     .line 26
-    sget-object v0, LnP6;->g0:LnP6;
+    sget-object v0, LZS6;->g0:LZS6;
 
     .line 27
     .line 28
@@ -326,7 +326,7 @@
     const/4 v2, 0x4
 
     .line 30
-    invoke-static {p1, v1, v0, v2}, LiK0;->u1(LiK0;ZLnP6;I)V
+    invoke-static {p1, v1, v0, v2}, LaN0;->o1(LaN0;ZLZS6;I)V
 
     .line 31
     .line 32
@@ -573,7 +573,7 @@
 
     .line 90
     .line 91
-    invoke-static {v1, v3}, Lue3;->Y0(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/ArrayList;
+    invoke-static {v1, v3}, Llh3;->X3(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/ArrayList;
 
     .line 92
     .line 93
@@ -674,7 +674,7 @@
 .end method
 
 .method public final openUrl(Ljava/lang/String;Z)Z
-    .locals 6
+    .locals 4
     .annotation build Landroidx/annotation/Keep;
     .end annotation
 
@@ -684,112 +684,103 @@
     .line 2
     .line 3
     .line 4
-    move-result-object v2
+    move-result-object p1
 
     .line 5
-    iget-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->c:LHW3;
+    iget-object v0, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->c:Lj14;
 
     .line 6
     .line 7
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 8
     .line 9
-    iget-object v0, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->b:LrH9;
+    iget-object v1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->b:LQS9;
 
     .line 10
     .line 11
-    invoke-interface {v0}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v1}, LQS9;->get()Ljava/lang/Object;
 
     .line 12
     .line 13
     .line 14
-    move-result-object v0
+    move-result-object v1
 
     .line 15
-    check-cast v0, LDSc;
+    check-cast v1, Lt7d;
 
     .line 16
     .line 17
-    iget-object v0, v0, LDSc;->d:Lhg5;
+    iget-object v1, v1, Lt7d;->d:LDm5;
 
     .line 18
     .line 19
-    invoke-virtual {p1}, LHW3;->A1()LkW3;
+    invoke-virtual {v0}, Lj14;->u1()LI04;
 
     .line 20
     .line 21
     .line 22
-    move-result-object p1
+    move-result-object v0
 
     .line 23
-    iget-object p1, p1, LkW3;->v:LQZ3;
+    iget-object v0, v0, LI04;->w:Lv44;
 
     .line 24
     .line 25
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 26
     .line 27
-    iget-object p1, p1, LQZ3;->b:LDX3;
+    iget-object v0, v0, Lv44;->b:Lh24;
 
     .line 28
     .line 29
-    if-eqz p1, :cond_0
+    if-eqz v0, :cond_0
 
     .line 30
     .line 31
-    invoke-virtual {p1, v2, v0}, LDX3;->a(Landroid/net/Uri;Lhg5;)Landroid/net/Uri;
+    invoke-virtual {v0, p1, v1}, Lh24;->a(Landroid/net/Uri;LDm5;)Landroid/net/Uri;
 
     .line 32
     .line 33
     .line 34
     :cond_0
-    iget-object p1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->b:LrH9;
+    iget-object v0, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->b:LQS9;
 
     .line 35
     .line 36
-    invoke-interface {p1}, LrH9;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
 
     .line 37
     .line 38
     .line 39
-    move-result-object p1
+    move-result-object v0
 
     .line 40
-    move-object v0, p1
+    check-cast v0, Lt7d;
 
     .line 41
-    check-cast v0, LDSc;
-
     .line 42
-    .line 43
     iget-object v1, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->a:Landroid/content/Context;
 
+    .line 43
     .line 44
+    iget-object v2, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 45
-    iget-object v4, p0, Lcom/snap/contextcards/lib/composer/ActionHandler;->e:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 46
+    sget-object v3, Lt7d;->f:Ljava/util/Set;
+
     .line 47
-    sget-object p1, LDSc;->f:Ljava/util/Set;
-
     .line 48
+    invoke-virtual {v0, v1, p1, p2, v2}, Lt7d;->a(Landroid/content/Context;Landroid/net/Uri;ZLio/reactivex/rxjava3/disposables/CompositeDisposable;)Z
+
     .line 49
-    const/4 v5, 0x1
-
     .line 50
-    move v3, p2
-
     .line 51
-    invoke-virtual/range {v0 .. v5}, LDSc;->a(Landroid/content/Context;Landroid/net/Uri;ZLio/reactivex/rxjava3/disposables/CompositeDisposable;Z)Z
-
-    .line 52
-    .line 53
-    .line 54
     move-result p1
 
-    .line 55
+    .line 52
     return p1
 .end method
 

@@ -1,177 +1,143 @@
-.class public final enum Lop;
-.super Ljava/lang/Enum;
+.class public final Lop;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
-# static fields
-.field public static final synthetic X:[Lop;
 
-.field public static final enum a:Lop;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final enum b:Lop;
-
-.field public static final enum c:Lop;
-
-.field public static final enum t:Lop;
+.field public final synthetic b:Lcom/snap/ads/attachments/core/instantpage/AdProductInstantPageFragment;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
+.method public synthetic constructor <init>(Lcom/snap/ads/attachments/core/instantpage/AdProductInstantPageFragment;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x3
+    iput p2, p0, Lop;->a:I
 
-    .line 2
-    const/4 v1, 0x2
+    iput-object p1, p0, Lop;->b:Lcom/snap/ads/attachments/core/instantpage/AdProductInstantPageFragment;
 
-    .line 3
-    const/4 v2, 0x1
+    const/4 p1, 0x1
 
-    .line 4
-    const/4 v3, 0x0
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 5
-    new-instance v4, Lop;
-
-    .line 6
-    .line 7
-    const-string v5, "UNKNOWN"
-
-    .line 8
-    .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    sput-object v4, Lop;->a:Lop;
-
-    .line 13
-    .line 14
-    new-instance v5, Lop;
-
-    .line 15
-    .line 16
-    const-string v6, "PRIMARY_CACHE"
-
-    .line 17
-    .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 19
-    .line 20
-    .line 21
-    sput-object v5, Lop;->b:Lop;
-
-    .line 22
-    .line 23
-    new-instance v6, Lop;
-
-    .line 24
-    .line 25
-    const-string v7, "BACKUP_CACHE"
-
-    .line 26
-    .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 28
-    .line 29
-    .line 30
-    sput-object v6, Lop;->c:Lop;
-
-    .line 31
-    .line 32
-    new-instance v7, Lop;
-
-    .line 33
-    .line 34
-    const-string v8, "NETWORK"
-
-    .line 35
-    .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v7, Lop;->t:Lop;
-
-    .line 40
-    .line 41
-    const/4 v8, 0x4
-
-    .line 42
-    new-array v8, v8, [Lop;
-
-    .line 43
-    .line 44
-    aput-object v4, v8, v3
-
-    .line 45
-    .line 46
-    aput-object v5, v8, v2
-
-    .line 47
-    .line 48
-    aput-object v6, v8, v1
-
-    .line 49
-    .line 50
-    aput-object v7, v8, v0
-
-    .line 51
-    .line 52
-    sput-object v8, Lop;->X:[Lop;
-
-    .line 53
-    .line 54
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lop;
-    .locals 1
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    const-class v0, Lop;
+    iget v0, p0, Lop;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    check-cast p1, LtRj;
 
     .line 7
-    check-cast p0, Lop;
-
     .line 8
+    new-instance v0, Lop;
+
     .line 9
-    return-object p0
-.end method
+    .line 10
+    iget-object v1, p0, Lop;->b:Lcom/snap/ads/attachments/core/instantpage/AdProductInstantPageFragment;
 
-.method public static values()[Lop;
-    .locals 1
+    .line 11
+    .line 12
+    const/4 v2, 0x0
 
-    .line 1
-    sget-object v0, Lop;->X:[Lop;
+    .line 13
+    invoke-direct {v0, v1, v2}, Lop;-><init>(Lcom/snap/ads/attachments/core/instantpage/AdProductInstantPageFragment;I)V
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 14
+    .line 15
+    .line 16
+    new-instance v1, LtI1;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 17
+    .line 18
+    const/4 v2, 0x2
 
-    .line 7
-    check-cast v0, [Lop;
+    .line 19
+    invoke-direct {v1, v2}, LtI1;-><init>(I)V
 
-    .line 8
-    .line 9
+    .line 20
+    .line 21
+    .line 22
+    const-class v2, Lcom/snap/ads/attachments/core/instantpage/ComposerStaticWebView;
+
+    .line 23
+    .line 24
+    invoke-virtual {p1, v2, v0, v1}, LtRj;->j(Ljava/lang/Class;Lkotlin/jvm/functions/Function1;LQp0;)V
+
+    .line 25
+    .line 26
+    .line 27
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 28
+    .line 29
+    return-object p1
+
+    .line 30
+    :pswitch_0
+    check-cast p1, Landroid/content/Context;
+
+    .line 31
+    .line 32
+    new-instance v0, Lcom/snap/ads/attachments/core/instantpage/ComposerStaticWebView;
+
+    .line 33
+    .line 34
+    iget-object v1, p0, Lop;->b:Lcom/snap/ads/attachments/core/instantpage/AdProductInstantPageFragment;
+
+    .line 35
+    .line 36
+    iget-object v1, v1, Lcom/snap/ads/attachments/core/instantpage/AdProductInstantPageFragment;->B0:LOH8;
+
+    .line 37
+    .line 38
+    if-eqz v1, :cond_0
+
+    .line 39
+    .line 40
+    invoke-direct {v0, p1, v1}, Lcom/snap/ads/attachments/core/instantpage/ComposerStaticWebView;-><init>(Landroid/content/Context;LOH8;)V
+
+    .line 41
+    .line 42
+    .line 43
     return-object v0
+
+    .line 44
+    :cond_0
+    const-string p1, "grapheneRegistry"
+
+    .line 45
+    .line 46
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 47
+    .line 48
+    .line 49
+    const/4 p1, 0x0
+
+    .line 50
+    throw p1
+
+    .line 51
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

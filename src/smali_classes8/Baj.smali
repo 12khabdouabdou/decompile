@@ -4,21 +4,15 @@
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:Z
 
-.field public final b:I
+.field public final b:Z
 
-.field public final c:D
-
-.field public final d:D
-
-.field public final e:Ljava/lang/String;
-
-.field public final f:Ljava/lang/Integer;
+.field public final c:Ljava/lang/Long;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;IDDLjava/lang/String;Ljava/lang/Integer;)V
+.method public constructor <init>(ZZLjava/lang/Long;)V
     .locals 0
 
     .line 1
@@ -27,30 +21,18 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LBaj;->a:Ljava/lang/String;
+    iput-boolean p1, p0, LBaj;->a:Z
 
     .line 5
     .line 6
-    iput p2, p0, LBaj;->b:I
+    iput-boolean p2, p0, LBaj;->b:Z
 
     .line 7
     .line 8
-    iput-wide p3, p0, LBaj;->c:D
+    iput-object p3, p0, LBaj;->c:Ljava/lang/Long;
 
     .line 9
     .line 10
-    iput-wide p5, p0, LBaj;->d:D
-
-    .line 11
-    .line 12
-    iput-object p7, p0, LBaj;->e:Ljava/lang/String;
-
-    .line 13
-    .line 14
-    iput-object p8, p0, LBaj;->f:Ljava/lang/Integer;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
@@ -60,351 +42,180 @@
     .locals 4
 
     .line 1
-    if-ne p0, p1, :cond_0
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    goto :goto_1
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
-    :cond_0
-    instance-of v0, p1, LBaj;
+    return v0
 
     .line 5
-    .line 6
-    if-nez v0, :cond_1
+    :cond_0
+    instance-of v1, p1, LBaj;
 
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    goto :goto_0
+    if-nez v1, :cond_1
 
     .line 9
+    .line 10
+    return v2
+
+    .line 11
     :cond_1
     check-cast p1, LBaj;
 
-    .line 10
-    .line 11
-    iget-object v0, p1, LBaj;->a:Ljava/lang/String;
-
     .line 12
     .line 13
-    iget-object v1, p0, LBaj;->a:Ljava/lang/String;
+    iget-boolean v1, p1, LBaj;->a:Z
 
     .line 14
     .line 15
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-boolean v3, p0, LBaj;->a:Z
 
     .line 16
     .line 17
-    .line 18
-    move-result v0
+    if-eq v3, v1, :cond_2
 
+    .line 18
     .line 19
-    if-nez v0, :cond_2
+    return v2
 
     .line 20
-    .line 21
-    goto :goto_0
-
-    .line 22
     :cond_2
-    iget v0, p0, LBaj;->b:I
+    iget-boolean v1, p0, LBaj;->b:Z
+
+    .line 21
+    .line 22
+    iget-boolean v3, p1, LBaj;->b:Z
 
     .line 23
     .line 24
-    iget v1, p1, LBaj;->b:I
+    if-eq v1, v3, :cond_3
 
     .line 25
     .line 26
-    if-eq v0, v1, :cond_3
+    return v2
 
     .line 27
-    .line 28
-    goto :goto_0
-
-    .line 29
     :cond_3
-    iget-wide v0, p0, LBaj;->c:D
+    iget-object v1, p0, LBaj;->c:Ljava/lang/Long;
+
+    .line 28
+    .line 29
+    iget-object p1, p1, LBaj;->c:Ljava/lang/Long;
 
     .line 30
     .line 31
-    iget-wide v2, p1, LBaj;->c:D
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 32
     .line 33
-    invoke-static {v0, v1, v2, v3}, Ljava/lang/Double;->compare(DD)I
-
     .line 34
-    .line 35
-    .line 36
-    move-result v0
-
-    .line 37
-    if-eqz v0, :cond_4
-
-    .line 38
-    .line 39
-    goto :goto_0
-
-    .line 40
-    :cond_4
-    iget-wide v0, p0, LBaj;->d:D
-
-    .line 41
-    .line 42
-    iget-wide v2, p1, LBaj;->d:D
-
-    .line 43
-    .line 44
-    invoke-static {v0, v1, v2, v3}, Ljava/lang/Double;->compare(DD)I
-
-    .line 45
-    .line 46
-    .line 47
-    move-result v0
-
-    .line 48
-    if-eqz v0, :cond_5
-
-    .line 49
-    .line 50
-    goto :goto_0
-
-    .line 51
-    :cond_5
-    iget-object v0, p0, LBaj;->e:Ljava/lang/String;
-
-    .line 52
-    .line 53
-    iget-object v1, p1, LBaj;->e:Ljava/lang/String;
-
-    .line 54
-    .line 55
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 56
-    .line 57
-    .line 58
-    move-result v0
-
-    .line 59
-    if-nez v0, :cond_6
-
-    .line 60
-    .line 61
-    goto :goto_0
-
-    .line 62
-    :cond_6
-    iget-object v0, p0, LBaj;->f:Ljava/lang/Integer;
-
-    .line 63
-    .line 64
-    iget-object p1, p1, LBaj;->f:Ljava/lang/Integer;
-
-    .line 65
-    .line 66
-    invoke-static {v0, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 67
-    .line 68
-    .line 69
     move-result p1
 
-    .line 70
-    if-nez p1, :cond_7
+    .line 35
+    if-nez p1, :cond_4
 
-    .line 71
-    .line 72
-    :goto_0
-    const/4 p1, 0x0
+    .line 36
+    .line 37
+    return v2
 
-    .line 73
-    return p1
-
-    .line 74
-    :cond_7
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 75
-    return p1
+    .line 38
+    :cond_4
+    return v0
 .end method
 
 .method public final hashCode()I
-    .locals 8
+    .locals 4
 
     .line 1
-    const/4 v0, 0x0
+    const/16 v0, 0x4d5
 
     .line 2
-    iget-object v1, p0, LBaj;->a:Ljava/lang/String;
-
     .line 3
+    const/16 v1, 0x4cf
+
     .line 4
-    if-nez v1, :cond_0
-
     .line 5
-    .line 6
-    const/4 v1, 0x0
+    iget-boolean v2, p0, LBaj;->a:Z
 
+    .line 6
     .line 7
-    goto :goto_0
+    if-eqz v2, :cond_0
 
     .line 8
-    :cond_0
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
     .line 9
+    const/16 v2, 0x4cf
+
     .line 10
     .line 11
-    move-result v1
+    goto :goto_0
 
     .line 12
-    :goto_0
-    const/16 v2, 0x1f
+    :cond_0
+    const/16 v2, 0x4d5
 
     .line 13
     .line 14
-    mul-int/lit8 v1, v1, 0x1f
+    :goto_0
+    mul-int/lit8 v2, v2, 0x1f
 
     .line 15
     .line 16
-    iget v3, p0, LBaj;->b:I
+    iget-boolean v3, p0, LBaj;->b:Z
 
     .line 17
     .line 18
-    invoke-static {v3, v1, v2}, Lf3j;->a(III)I
+    if-eqz v3, :cond_1
 
     .line 19
     .line 20
-    .line 21
-    move-result v1
+    const/16 v0, 0x4cf
 
+    .line 21
     .line 22
-    iget-wide v3, p0, LBaj;->c:D
+    :cond_1
+    add-int/2addr v2, v0
 
     .line 23
-    .line 24
-    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
+    mul-int/lit8 v2, v2, 0x1f
 
+    .line 24
     .line 25
+    iget-object v0, p0, LBaj;->c:Ljava/lang/Long;
+
     .line 26
     .line 27
-    move-result-wide v3
+    if-nez v0, :cond_2
 
     .line 28
-    const/16 v5, 0x20
-
     .line 29
+    const/4 v0, 0x0
+
     .line 30
-    ushr-long v6, v3, v5
-
-    .line 31
-    .line 32
-    xor-long/2addr v3, v6
-
-    .line 33
-    long-to-int v4, v3
-
-    .line 34
-    add-int/2addr v1, v4
-
-    .line 35
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 36
-    .line 37
-    iget-wide v3, p0, LBaj;->d:D
-
-    .line 38
-    .line 39
-    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-wide v3
-
-    .line 43
-    ushr-long v5, v3, v5
-
-    .line 44
-    .line 45
-    xor-long/2addr v3, v5
-
-    .line 46
-    long-to-int v4, v3
-
-    .line 47
-    add-int/2addr v1, v4
-
-    .line 48
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 49
-    .line 50
-    iget-object v3, p0, LBaj;->e:Ljava/lang/String;
-
-    .line 51
-    .line 52
-    if-nez v3, :cond_1
-
-    .line 53
-    .line 54
-    const/4 v3, 0x0
-
-    .line 55
     goto :goto_1
 
-    .line 56
-    :cond_1
-    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v3
-
-    .line 60
-    :goto_1
-    const/16 v4, 0x4d5
-
-    .line 61
-    .line 62
-    invoke-static {v1, v3, v2, v4, v2}, LmG8;->b(IIIII)I
-
-    .line 63
-    .line 64
-    .line 65
-    move-result v1
-
-    .line 66
-    iget-object v2, p0, LBaj;->f:Ljava/lang/Integer;
-
-    .line 67
-    .line 68
-    if-nez v2, :cond_2
-
-    .line 69
-    .line 70
-    goto :goto_2
-
-    .line 71
+    .line 31
     :cond_2
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
-    .line 72
-    .line 73
-    .line 74
+    .line 32
+    .line 33
+    .line 34
     move-result v0
 
-    .line 75
-    :goto_2
-    add-int/2addr v1, v0
+    .line 35
+    :goto_1
+    add-int/2addr v2, v0
 
-    .line 76
-    return v1
+    .line 36
+    return v2
 .end method
 
 .method public final toString()Ljava/lang/String;
@@ -415,7 +226,7 @@
 
     .line 2
     .line 3
-    const-string v1, "UnlockablesViewTrackInfo(encryptedGeoData="
+    const-string v1, "FavoriteMetadata(isFavoritable="
 
     .line 4
     .line 5
@@ -424,16 +235,16 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LBaj;->a:Ljava/lang/String;
+    iget-boolean v1, p0, LBaj;->a:Z
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", viewType="
+    const-string v1, ", isFavorited="
 
     .line 14
     .line 15
@@ -442,189 +253,39 @@
     .line 16
     .line 17
     .line 18
-    iget v1, p0, LBaj;->b:I
+    iget-boolean v1, p0, LBaj;->b:Z
 
     .line 19
     .line 20
-    packed-switch v1, :pswitch_data_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, "null"
+    const-string v1, ", favoriteTimestampMs="
 
     .line 24
     .line 25
-    goto :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
-    :pswitch_0
-    const-string v1, "UNRECOGNIZED_VALUE"
-
     .line 27
     .line 28
-    goto :goto_0
+    iget-object v1, p0, LBaj;->c:Ljava/lang/Long;
 
     .line 29
-    :pswitch_1
-    const-string v1, "LENS_CAROUSEL"
-
     .line 30
-    .line 31
-    goto :goto_0
+    const-string v2, ")"
 
+    .line 31
     .line 32
-    :pswitch_2
-    const-string v1, "STORY_WITH_MODULAR_CAMERA"
+    invoke-static {v0, v1, v2}, Lgn;->i(Ljava/lang/StringBuilder;Ljava/lang/Long;Ljava/lang/String;)Ljava/lang/String;
 
     .line 33
     .line 34
-    goto :goto_0
-
     .line 35
-    :pswitch_3
-    const-string v1, "DIRECT_SNAP_WITH_MODULAR_CAMERA"
-
-    .line 36
-    .line 37
-    goto :goto_0
-
-    .line 38
-    :pswitch_4
-    const-string v1, "MEMORY_TILE"
-
-    .line 39
-    .line 40
-    goto :goto_0
-
-    .line 41
-    :pswitch_5
-    const-string v1, "MEMORY_EDIT"
-
-    .line 42
-    .line 43
-    goto :goto_0
-
-    .line 44
-    :pswitch_6
-    const-string v1, "MEMORY_PREVIEW"
-
-    .line 45
-    .line 46
-    goto :goto_0
-
-    .line 47
-    :pswitch_7
-    const-string v1, "STORY"
-
-    .line 48
-    .line 49
-    goto :goto_0
-
-    .line 50
-    :pswitch_8
-    const-string v1, "DIRECT_SNAP"
-
-    .line 51
-    .line 52
-    :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 53
-    .line 54
-    .line 55
-    const-string v1, ", viewTimeSeconds="
-
-    .line 56
-    .line 57
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 58
-    .line 59
-    .line 60
-    iget-wide v1, p0, LBaj;->c:D
-
-    .line 61
-    .line 62
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    .line 63
-    .line 64
-    .line 65
-    const-string v1, ", mediaDurationSeconds="
-
-    .line 66
-    .line 67
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 68
-    .line 69
-    .line 70
-    iget-wide v1, p0, LBaj;->d:D
-
-    .line 71
-    .line 72
-    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    .line 73
-    .line 74
-    .line 75
-    const-string v1, ", unlockablesSnapInfo="
-
-    .line 76
-    .line 77
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 78
-    .line 79
-    .line 80
-    iget-object v1, p0, LBaj;->e:Ljava/lang/String;
-
-    .line 81
-    .line 82
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 83
-    .line 84
-    .line 85
-    const-string v1, ", snappableInviteAction=false, withAttachmentOpenCount="
-
-    .line 86
-    .line 87
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 88
-    .line 89
-    .line 90
-    iget-object v1, p0, LBaj;->f:Ljava/lang/Integer;
-
-    .line 91
-    .line 92
-    const-string v2, ")"
-
-    .line 93
-    .line 94
-    invoke-static {v0, v1, v2}, Lur1;->k(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 95
-    .line 96
-    .line 97
     move-result-object v0
 
-    .line 98
+    .line 36
     return-object v0
-
-    .line 99
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

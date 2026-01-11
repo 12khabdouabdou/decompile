@@ -8,9 +8,9 @@
 
 
 # instance fields
-.field public E0:LpA2;
+.field public E0:LbD2;
 
-.field public F0:LPpa;
+.field public F0:LPG9;
 
 
 # direct methods
@@ -28,11 +28,128 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
+.method public final U1()LKO0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->F0:LPG9;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "loginSignupPageAnalyticsMixin"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final V1()Lsod;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lsod;->S1:Lsod;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final Z1()LzYj;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->E0:LbD2;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "channelVerifyCodePresenter"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->E0:LbD2;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, LbD2;->n3()V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->d()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    return v0
+
+    .line 13
+    :cond_0
+    const-string v0, "channelVerifyCodePresenter"
+
+    .line 14
+    .line 15
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 v0, 0x0
+
+    .line 19
+    throw v0
+.end method
+
+.method public final y1(Landroid/content/Context;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/codeverify/VerifyCodeFragment;->A1(Landroid/content/Context;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/codeverify/VerifyCodeFragment;->y1(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -104,7 +221,7 @@
 
     .line 33
     :goto_1
-    iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->E0:LpA2;
+    iget-object v2, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->E0:LbD2;
 
     .line 34
     .line 35
@@ -112,7 +229,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {v2, v0, p1}, LpA2;->o3(Ljava/lang/String;Z)V
+    invoke-virtual {v2, v0, p1}, LbD2;->l3(Ljava/lang/String;Z)V
 
     .line 38
     .line 39
@@ -125,127 +242,10 @@
 
     .line 42
     .line 43
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 44
     .line 45
     .line 46
     throw v1
-.end method
-
-.method public final U1()LJL0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->F0:LPpa;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "loginSignupPageAnalyticsMixin"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final V1()LZ8d;
-    .locals 1
-
-    .line 1
-    sget-object v0, LZ8d;->R1:LZ8d;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final Z1()Lnzj;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->E0:LpA2;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "channelVerifyCodePresenter"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
-    const/4 v0, 0x0
-
-    .line 12
-    throw v0
-.end method
-
-.method public final d()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/codeverify/ChannelVerifyCodeFragment;->E0:LpA2;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    invoke-virtual {v0}, LpA2;->q3()V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-super {p0}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->d()Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
-    return v0
-
-    .line 13
-    :cond_0
-    const-string v0, "channelVerifyCodePresenter"
-
-    .line 14
-    .line 15
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 16
-    .line 17
-    .line 18
-    const/4 v0, 0x0
-
-    .line 19
-    throw v0
 .end method

@@ -14,7 +14,7 @@
 
 .field private sharedCameraHandler:Landroid/os/Handler;
 
-.field private final sharedCameraInfo:Lx3k;
+.field private final sharedCameraInfo:Lytk;
 
 
 # direct methods
@@ -27,16 +27,16 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lx3k;
+    new-instance v0, Lytk;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Lx3k;-><init>()V
+    invoke-direct {v0}, Lytk;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iput-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 10
     .line 11
@@ -150,7 +150,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
@@ -162,7 +162,7 @@
 
     .line 6
     .line 7
-    iget-object v0, v0, Lx3k;->a:Landroid/hardware/camera2/CameraDevice;
+    iget-object v0, v0, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
 
     .line 8
     .line 9
@@ -181,7 +181,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
@@ -193,7 +193,7 @@
 
     .line 6
     .line 7
-    iget-object v0, v0, Lx3k;->a:Landroid/hardware/camera2/CameraDevice;
+    iget-object v0, v0, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
 
     .line 8
     .line 9
@@ -212,7 +212,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
@@ -224,7 +224,7 @@
 
     .line 6
     .line 7
-    iget-object v0, v0, Lx3k;->a:Landroid/hardware/camera2/CameraDevice;
+    iget-object v0, v0, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
 
     .line 8
     .line 9
@@ -243,7 +243,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
@@ -255,7 +255,7 @@
 
     .line 6
     .line 7
-    iget-object v0, v0, Lx3k;->a:Landroid/hardware/camera2/CameraDevice;
+    iget-object v0, v0, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
 
     .line 8
     .line 9
@@ -497,14 +497,14 @@
 
     .line 10
     .line 11
-    iget-object p1, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object p1, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 12
     .line 13
     const/4 v0, 0x0
 
     .line 14
-    iput-object v0, p1, Lx3k;->a:Landroid/hardware/camera2/CameraDevice;
+    iput-object v0, p1, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
 
     .line 15
     .line 16
@@ -515,11 +515,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
-    iput-object p1, v0, Lx3k;->a:Landroid/hardware/camera2/CameraDevice;
+    iput-object p1, v0, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
 
     .line 4
     .line 5
@@ -587,7 +587,7 @@
 
     .line 2
     .line 3
-    sget-object v0, Lz3k;->a:Lz3k;
+    sget-object v0, LAtk;->a:LAtk;
 
     .line 4
     .line 5
@@ -626,11 +626,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Ls3k;
+    new-instance v0, Lutk;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p2, p1}, Ls3k;-><init>(Lcom/google/ar/core/SharedCamera;Landroid/os/Handler;Landroid/hardware/camera2/CameraDevice$StateCallback;)V
+    invoke-direct {v0, p0, p2, p1}, Lutk;-><init>(Lcom/google/ar/core/SharedCamera;Landroid/os/Handler;Landroid/hardware/camera2/CameraDevice$StateCallback;)V
 
     .line 4
     .line 5
@@ -642,11 +642,11 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lv3k;
+    new-instance v0, Lwtk;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p2, p1}, Lv3k;-><init>(Lcom/google/ar/core/SharedCamera;Landroid/os/Handler;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;)V
+    invoke-direct {v0, p0, p2, p1}, Lwtk;-><init>(Lcom/google/ar/core/SharedCamera;Landroid/os/Handler;Landroid/hardware/camera2/CameraCaptureSession$StateCallback;)V
 
     .line 4
     .line 5
@@ -707,11 +707,11 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v1, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 7
     .line 8
-    iget-object v1, v1, Lx3k;->d:Landroid/view/Surface;
+    iget-object v1, v1, Lytk;->d:Landroid/view/Surface;
 
     .line 9
     .line 10
@@ -774,11 +774,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lx3k;->c:Landroid/graphics/SurfaceTexture;
+    iget-object v0, v0, Lytk;->c:Landroid/graphics/SurfaceTexture;
 
     .line 4
     .line 5
@@ -837,11 +837,11 @@
     return-object v0
 .end method
 
-.method public final synthetic n()Lx3k;
+.method public final synthetic n()Lytk;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
@@ -852,11 +852,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lx3k;->a:Landroid/hardware/camera2/CameraDevice;
+    iget-object v0, v0, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
 
     .line 4
     .line 5
@@ -886,11 +886,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lx3k;
+    iget-object v0, p0, Lcom/google/ar/core/SharedCamera;->sharedCameraInfo:Lytk;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lx3k;->b:Ljava/util/HashMap;
+    iget-object v0, v0, Lytk;->b:Ljava/util/HashMap;
 
     .line 4
     .line 5

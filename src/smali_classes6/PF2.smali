@@ -1,63 +1,37 @@
-.class public abstract synthetic LPF2;
+.class public final LPF2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/util/Map;
+
+.field public final c:Ljava/util/List;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;Ljava/util/List;Ljava/util/Map;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, LBN7;->values()[LBN7;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, LPF2;->a:Ljava/lang/String;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p3, p0, LPF2;->b:Ljava/util/Map;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    iput-object p2, p0, LPF2;->c:Ljava/util/List;
 
     .line 9
-    const/4 v2, 0x0
-
     .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 11
-    .line 12
-    :catch_0
-    const/4 v1, 0x2
-
-    .line 13
-    const/4 v2, 0x4
-
-    .line 14
-    :try_start_1
-    aput v1, v0, v2
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 15
-    .line 16
-    :catch_1
-    sput-object v0, LPF2;->a:[I
-
-    .line 17
-    .line 18
     return-void
 .end method

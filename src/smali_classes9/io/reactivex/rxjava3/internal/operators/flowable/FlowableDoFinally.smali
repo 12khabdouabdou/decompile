@@ -45,7 +45,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 3
 
     .line 1
@@ -91,7 +91,7 @@
 
     .line 21
     .line 22
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoFinally$DoFinallySubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/functions/Action;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoFinally$DoFinallySubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/Action;)V
 
     .line 23
     .line 24

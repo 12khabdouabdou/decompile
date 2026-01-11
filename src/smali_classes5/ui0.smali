@@ -3,75 +3,134 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lti0;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic a:[Lti0;
+.field public final synthetic a:I
+
+.field public final synthetic b:Lvi0;
 
 
 # direct methods
-.method public constructor <init>([Lti0;)V
+.method public synthetic constructor <init>(Lvi0;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Lui0;->a:I
+
+    iput-object p1, p0, Lui0;->b:Lvi0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lui0;->a:[Lti0;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final accept(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    check-cast p1, LAC5;
+    iget v0, p0, Lui0;->a:I
 
     .line 2
     .line 3
-    iget-object v0, p0, Lui0;->a:[Lti0;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    array-length v1, v0
-
     .line 6
-    const/4 v2, 0x0
+    check-cast p1, Ljava/lang/Number;
 
     .line 7
-    :goto_0
-    if-ge v2, v1, :cond_0
-
     .line 8
-    .line 9
-    aget-object v3, v0, v2
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
 
+    .line 9
     .line 10
     .line 11
-    invoke-interface {v3, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p1, p0, Lui0;->b:Lvi0;
 
     .line 12
     .line 13
+    iget-object p1, p1, Lvi0;->b:Ljava/lang/Object;
+
     .line 14
-    add-int/lit8 v2, v2, 0x1
-
     .line 15
-    .line 16
-    goto :goto_0
+    check-cast p1, LTu5;
 
+    .line 16
     .line 17
-    :cond_0
-    sget-object p1, Li7j;->a:Li7j;
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 18
     .line 19
-    return-object p1
+    iget-object p1, p1, LTu5;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 20
+    .line 21
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-void
+
+    .line 25
+    :pswitch_0
+    check-cast p1, Ljava/lang/Number;
+
+    .line 26
+    .line 27
+    invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
+
+    .line 28
+    .line 29
+    .line 30
+    iget-object p1, p0, Lui0;->b:Lvi0;
+
+    .line 31
+    .line 32
+    iget-object p1, p1, Lvi0;->c:Ljava/lang/Object;
+
+    .line 33
+    .line 34
+    check-cast p1, LFf2;
+
+    .line 35
+    .line 36
+    invoke-interface {p1}, LCu9;->j()Lio/reactivex/rxjava3/functions/Consumer;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    new-instance v0, Lrf2;
+
+    .line 41
+    .line 42
+    const-string v1, "AutoSelect"
+
+    .line 43
+    .line 44
+    invoke-direct {v0, v1}, Lrf2;-><init>(Ljava/lang/String;)V
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/functions/Consumer;->accept(Ljava/lang/Object;)V
+
+    .line 48
+    .line 49
+    .line 50
+    return-void
+
+    .line 51
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

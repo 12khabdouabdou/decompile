@@ -1,23 +1,23 @@
 .class public final Lcom/snap/content/snapdoc/impl/export/job/SnapExportJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "SNAP_EXPORT_JOB"
-    metadataType = LM07;
+    metadataType = LA47;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(LtB6;LM07;)V
+.method public constructor <init>(LRE6;LA47;)V
     .locals 0
 
     .line 1

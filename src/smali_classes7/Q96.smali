@@ -1,179 +1,141 @@
 .class public final LQ96;
-.super LwT;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final synthetic b:I
+.field public final a:LQAc;
 
-.field public final synthetic c:LS96;
+.field public final b:LEt4;
 
-.field public final synthetic d:Ljava/lang/Runnable;
+.field public final c:LEt4;
 
-.field public final synthetic e:Landroid/graphics/Point;
+.field public final d:LEt4;
+
+.field public final e:LEt4;
+
+.field public final f:LEt4;
+
+.field public final g:LnJe;
+
+.field public final h:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+
+.field public final i:LREi;
 
 
 # direct methods
-.method public synthetic constructor <init>(LS96;Ljava/lang/Runnable;Landroid/graphics/Point;I)V
+.method public constructor <init>(LQAc;LEt4;LEt4;LEt4;LEt4;LEt4;)V
     .locals 0
 
     .line 1
-    iput p4, p0, LQ96;->b:I
-
-    const/4 p4, 0x1
-
-    invoke-direct {p0, p4}, LwT;-><init>(I)V
-
-    iput-object p1, p0, LQ96;->c:LS96;
-
-    iput-object p2, p0, LQ96;->d:Ljava/lang/Runnable;
-
-    iput-object p3, p0, LQ96;->e:Landroid/graphics/Point;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 3
-
-    .line 1
-    iget p1, p0, LQ96;->b:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    packed-switch p1, :pswitch_data_0
-
     .line 4
+    iput-object p1, p0, LQ96;->a:LQAc;
+
     .line 5
     .line 6
-    iget-object p1, p0, LQ96;->c:LS96;
+    iput-object p2, p0, LQ96;->b:LEt4;
 
     .line 7
     .line 8
-    iget v0, p1, LS96;->M0:I
+    iput-object p3, p0, LQ96;->c:LEt4;
 
     .line 9
     .line 10
-    add-int/lit8 v0, v0, 0x1
+    iput-object p4, p0, LQ96;->d:LEt4;
 
     .line 11
     .line 12
-    iput v0, p1, LS96;->M0:I
+    iput-object p5, p0, LQ96;->e:LEt4;
 
     .line 13
     .line 14
-    iget v0, p1, LS96;->H0:I
+    iput-object p6, p0, LQ96;->f:LEt4;
 
     .line 15
     .line 16
-    const/4 v1, 0x0
+    sget-object p1, LSSc;->Z:LSSc;
 
     .line 17
-    iput v1, p1, LS96;->H0:I
-
     .line 18
+    const-string p2, "DeviceStateReceiverGrpcStubCreator"
+
     .line 19
-    iput-boolean v1, p1, LS96;->B0:Z
-
     .line 20
-    .line 21
-    iget-object v1, p0, LQ96;->d:Ljava/lang/Runnable;
+    invoke-static {p1, p1, p2}, LBv7;->e(LSSc;LSSc;Ljava/lang/String;)Lnp0;
 
+    .line 21
     .line 22
     .line 23
-    if-eqz v1, :cond_0
+    move-result-object p1
 
     .line 24
-    .line 25
-    invoke-interface {v1}, Ljava/lang/Runnable;->run()V
+    new-instance p2, LnJe;
 
+    .line 25
     .line 26
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
     .line 27
     .line 28
-    :cond_0
-    iget-object v1, p0, LQ96;->e:Landroid/graphics/Point;
-
     .line 29
-    .line 30
-    const/4 v2, 0x0
+    iput-object p2, p0, LQ96;->g:LnJe;
 
+    .line 30
     .line 31
-    invoke-virtual {p1, v0, v1, v2}, LS96;->y(ILandroid/graphics/Point;Landroid/view/MotionEvent;)V
+    new-instance p1, LP96;
 
     .line 32
     .line 33
+    const/4 p2, 0x1
+
     .line 34
-    return-void
+    invoke-direct {p1, p0, p2}, LP96;-><init>(LQ96;I)V
 
     .line 35
-    :pswitch_0
-    iget-object p1, p0, LQ96;->c:LS96;
-
     .line 36
     .line 37
-    iget v0, p1, LS96;->M0:I
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
 
     .line 38
     .line 39
-    add-int/lit8 v0, v0, 0x1
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
 
     .line 40
     .line 41
-    iput v0, p1, LS96;->M0:I
-
     .line 42
+    iput-object p2, p0, LQ96;->h:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+
     .line 43
-    iget v0, p1, LS96;->H0:I
-
     .line 44
-    .line 45
-    const/4 v1, 0x0
+    new-instance p1, Lg06;
 
+    .line 45
     .line 46
-    iput v1, p1, LS96;->H0:I
+    const/16 p2, 0x1a
 
     .line 47
     .line 48
-    iput-boolean v1, p1, LS96;->B0:Z
+    invoke-direct {p1, p2, p0}, Lg06;-><init>(ILjava/lang/Object;)V
 
     .line 49
     .line 50
-    iget-object v1, p0, LQ96;->d:Ljava/lang/Runnable;
-
     .line 51
+    new-instance p2, LREi;
+
     .line 52
-    if-eqz v1, :cond_1
-
     .line 53
-    .line 54
-    invoke-interface {v1}, Ljava/lang/Runnable;->run()V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 54
     .line 55
     .line 56
+    iput-object p2, p0, LQ96;->i:LREi;
+
     .line 57
-    :cond_1
-    iget-object v1, p0, LQ96;->e:Landroid/graphics/Point;
-
     .line 58
-    .line 59
-    const/4 v2, 0x0
-
-    .line 60
-    invoke-virtual {p1, v0, v1, v2}, LS96;->y(ILandroid/graphics/Point;Landroid/view/MotionEvent;)V
-
-    .line 61
-    .line 62
-    .line 63
     return-void
-
-    .line 64
-    nop
-
-    .line 65
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

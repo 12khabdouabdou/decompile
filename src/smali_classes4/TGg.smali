@@ -1,278 +1,143 @@
-.class public abstract synthetic LTGg;
+.class public final LTGg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Z)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
+    .line 3
+    .line 4
+    iput-boolean p1, p0, LTGg;->a:Z
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
 
     .line 3
     .line 4
+    return v0
+
     .line 5
-    move-result-object v1
+    :cond_0
+    instance-of v1, p1, LTGg;
 
     .line 6
-    array-length v1, v1
-
     .line 7
-    new-array v1, v1, [I
-
-    .line 8
-    .line 9
     const/4 v2, 0x0
 
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
     .line 10
-    const/4 v3, 0x1
+    return v2
 
     .line 11
-    :try_start_0
-    aput v3, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    :cond_1
+    check-cast p1, LTGg;
 
     .line 12
     .line 13
-    :catch_0
-    :try_start_1
-    aput v0, v1, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    iget-boolean v1, p0, LTGg;->a:Z
 
     .line 14
     .line 15
-    :catch_1
-    invoke-static {}, LWD7;->values()[LWD7;
+    iget-boolean p1, p1, LTGg;->a:Z
 
     .line 16
     .line 17
-    .line 18
-    move-result-object v1
+    if-eq v1, p1, :cond_2
 
+    .line 18
     .line 19
-    array-length v1, v1
+    return v2
 
     .line 20
-    new-array v1, v1, [I
+    :cond_2
+    return v0
+.end method
 
-    .line 21
-    .line 22
-    :try_start_2
-    sget-object v2, LWD7;->a:LWD7;
+.method public final hashCode()I
+    .locals 1
 
-    .line 23
-    .line 24
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    .line 1
+    iget-boolean v0, p0, LTGg;->a:Z
 
-    .line 25
-    .line 26
-    .line 27
-    move-result v2
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
 
-    .line 28
-    aput v3, v1, v2
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 4
+    .line 5
+    const/16 v0, 0x4cf
 
-    .line 29
-    .line 30
-    :catch_2
-    :try_start_3
-    sget-object v2, LWD7;->b:LWD7;
+    .line 6
+    .line 7
+    return v0
 
-    .line 31
-    .line 32
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    .line 8
+    :cond_0
+    const/16 v0, 0x4d5
 
-    .line 33
-    .line 34
-    .line 35
-    move-result v2
+    .line 9
+    .line 10
+    return v0
+.end method
 
-    .line 36
-    aput v0, v1, v2
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    .line 37
-    .line 38
-    :catch_3
-    :try_start_4
-    sget-object v0, LWD7;->c:LWD7;
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 39
-    .line 40
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    .line 2
+    .line 3
+    const-string v1, "ShowcaseCatalogViewConfig(nativeCheckoutAndroid="
 
-    .line 41
-    .line 42
-    .line 43
-    move-result v0
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 44
-    const/4 v2, 0x3
+    .line 6
+    .line 7
+    .line 8
+    iget-boolean v1, p0, LTGg;->a:Z
 
-    .line 45
-    aput v2, v1, v0
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+    .line 9
+    .line 10
+    const-string v2, ")"
 
-    .line 46
-    .line 47
-    :catch_4
-    :try_start_5
-    sget-object v0, LWD7;->f0:LWD7;
+    .line 11
+    .line 12
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
-    .line 48
-    .line 49
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
 
-    .line 50
-    .line 51
-    .line 52
-    move-result v0
-
-    .line 53
-    const/4 v2, 0x4
-
-    .line 54
-    aput v2, v1, v0
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 55
-    .line 56
-    :catch_5
-    :try_start_6
-    sget-object v0, LWD7;->t:LWD7;
-
-    .line 57
-    .line 58
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 59
-    .line 60
-    .line 61
-    move-result v0
-
-    .line 62
-    const/4 v2, 0x5
-
-    .line 63
-    aput v2, v1, v0
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 64
-    .line 65
-    :catch_6
-    :try_start_7
-    sget-object v0, LWD7;->X:LWD7;
-
-    .line 66
-    .line 67
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v0
-
-    .line 71
-    const/4 v2, 0x6
-
-    .line 72
-    aput v2, v1, v0
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 73
-    .line 74
-    :catch_7
-    :try_start_8
-    sget-object v0, LWD7;->Y:LWD7;
-
-    .line 75
-    .line 76
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 77
-    .line 78
-    .line 79
-    move-result v0
-
-    .line 80
-    const/4 v2, 0x7
-
-    .line 81
-    aput v2, v1, v0
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 82
-    .line 83
-    :catch_8
-    :try_start_9
-    sget-object v0, LWD7;->e0:LWD7;
-
-    .line 84
-    .line 85
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 86
-    .line 87
-    .line 88
-    move-result v0
-
-    .line 89
-    const/16 v2, 0x8
-
-    .line 90
-    .line 91
-    aput v2, v1, v0
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    .line 92
-    .line 93
-    :catch_9
-    :try_start_a
-    sget-object v0, LWD7;->Z:LWD7;
-
-    .line 94
-    .line 95
-    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
-
-    .line 96
-    .line 97
-    .line 98
-    move-result v0
-
-    .line 99
-    const/16 v2, 0x9
-
-    .line 100
-    .line 101
-    aput v2, v1, v0
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    .line 102
-    .line 103
-    :catch_a
-    sput-object v1, LTGg;->a:[I
-
-    .line 104
-    .line 105
-    return-void
+    .line 16
+    return-object v0
 .end method

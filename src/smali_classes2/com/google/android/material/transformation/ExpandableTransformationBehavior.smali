@@ -78,7 +78,7 @@
 
     .line 18
     .line 19
-    new-instance p2, Lc4;
+    new-instance p2, Ly4;
 
     .line 20
     .line 21
@@ -86,7 +86,7 @@
 
     .line 22
     .line 23
-    invoke-direct {p2, p3, p0}, Lc4;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, p3, p0}, Ly4;-><init>(ILjava/lang/Object;)V
 
     .line 24
     .line 25

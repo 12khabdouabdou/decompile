@@ -1,328 +1,309 @@
-.class public final Lcyd;
-.super Lo17;
+.class public abstract Lcyd;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:I
-
-.field public b:Ljava/lang/Object;
+# static fields
+.field public static final a:LUf9;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 8
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
+    const/4 v1, 0x1
 
+    .line 3
+    sget-object v2, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
+
+    .line 4
     .line 5
-    iput v0, p0, Lcyd;->a:I
+    const/4 v3, 0x0
 
     .line 6
-    .line 7
-    const/4 v0, 0x0
+    :try_start_0
+    const-string v4, "io.perfmark.impl.SecretPerfMarkImpl$PerfMarkImpl"
 
+    .line 7
     .line 8
-    iput-object v0, p0, Lcyd;->b:Ljava/lang/Object;
+    invoke-static {v4}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     .line 9
     .line 10
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
     .line 11
+    move-result-object v4
+    :try_end_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 12
-    const/4 v0, -0x1
+    move-object v5, v3
 
     .line 13
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+    goto :goto_3
 
     .line 14
-    .line 15
-    return-void
-.end method
-
-
-# virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
-
-    .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    iget v1, p0, Lcyd;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    if-ne v1, v2, :cond_0
-
-    .line 9
-    .line 10
-    iget-object v1, p0, Lcyd;->b:Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    check-cast v1, Ljava/lang/Integer;
-
-    .line 13
-    .line 14
-    invoke-static {v2, v0, v1}, LQG8;->e(IILjava/lang/Integer;)I
+    :catchall_0
+    move-exception v4
 
     .line 15
+    goto :goto_0
+
     .line 16
+    :catch_0
+    move-exception v2
+
     .line 17
-    move-result v0
+    goto :goto_2
 
     .line 18
-    :cond_0
-    iget v1, p0, Lcyd;->a:I
+    :goto_0
+    move-object v5, v4
 
     .line 19
+    :goto_1
+    move-object v4, v3
+
     .line 20
-    const/4 v2, 0x2
+    goto :goto_3
 
     .line 21
-    if-ne v1, v2, :cond_1
+    :goto_2
+    sget-object v4, Ljava/util/logging/Level;->FINE:Ljava/util/logging/Level;
 
     .line 22
     .line 23
-    iget-object v1, p0, Lcyd;->b:Ljava/lang/Object;
+    move-object v5, v2
 
     .line 24
+    move-object v2, v4
+
     .line 25
-    check-cast v1, Lcom/google/protobuf/nano/MessageNano;
-
-    .line 26
-    .line 27
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v1
-
-    .line 31
-    add-int/2addr v1, v0
-
-    .line 32
-    return v1
-
-    .line 33
-    :cond_1
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_4
-
-    .line 6
-    .line 7
-    const/16 v1, 0x8
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_3
-
-    .line 10
-    .line 11
-    const/16 v1, 0x12
-
-    .line 12
-    .line 13
-    if-eq v0, v1, :cond_1
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    if-nez v0, :cond_0
-
-    .line 20
-    .line 21
     goto :goto_1
 
-    .line 22
-    :cond_1
-    iget v0, p0, Lcyd;->a:I
-
-    .line 23
-    .line 24
-    const/4 v1, 0x2
-
-    .line 25
-    if-eq v0, v1, :cond_2
-
     .line 26
+    :goto_3
+    if-eqz v4, :cond_0
+
     .line 27
-    new-instance v0, LAG9;
-
     .line 28
-    .line 29
-    invoke-direct {v0}, LAG9;-><init>()V
+    :try_start_1
+    const-class v6, LUf9;
 
+    .line 29
     .line 30
+    invoke-virtual {v4, v6}, Ljava/lang/Class;->asSubclass(Ljava/lang/Class;)Ljava/lang/Class;
+
     .line 31
     .line 32
-    iput-object v0, p0, Lcyd;->b:Ljava/lang/Object;
-
     .line 33
+    move-result-object v4
+
     .line 34
-    :cond_2
-    iget-object v0, p0, Lcyd;->b:Ljava/lang/Object;
+    new-array v6, v1, [Ljava/lang/Class;
 
     .line 35
     .line 36
-    check-cast v0, Lcom/google/protobuf/nano/MessageNano;
+    const-class v7, LIHi;
 
     .line 37
     .line 38
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    aput-object v7, v6, v0
 
     .line 39
     .line 40
-    .line 41
-    iput v1, p0, Lcyd;->a:I
+    invoke-virtual {v4, v6}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
+    .line 41
     .line 42
     .line 43
-    goto :goto_0
+    move-result-object v4
 
     .line 44
-    :cond_3
-    invoke-virtual {p1}, Lqa3;->q()I
+    new-array v1, v1, [Ljava/lang/Object;
 
     .line 45
     .line 46
-    .line 47
-    move-result v0
+    sget-object v6, LUf9;->a:LIHi;
 
+    .line 47
     .line 48
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    aput-object v6, v1, v0
 
     .line 49
     .line 50
+    invoke-virtual {v4, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 51
+    .line 52
+    .line 53
     move-result-object v0
 
-    .line 52
-    iput-object v0, p0, Lcyd;->b:Ljava/lang/Object;
-
-    .line 53
     .line 54
-    const/4 v0, 0x1
+    check-cast v0, LUf9;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     .line 55
-    iput v0, p0, Lcyd;->a:I
-
     .line 56
+    move-object v3, v0
+
     .line 57
-    goto :goto_0
+    goto :goto_4
 
     .line 58
-    :cond_4
-    :goto_1
-    return-object p0
+    :catchall_1
+    move-exception v0
+
+    .line 59
+    move-object v5, v0
+
+    .line 60
+    :cond_0
+    :goto_4
+    if-eqz v3, :cond_1
+
+    .line 61
+    .line 62
+    sput-object v3, Lcyd;->a:LUf9;
+
+    .line 63
+    .line 64
+    goto :goto_5
+
+    .line 65
+    :cond_1
+    new-instance v0, LUf9;
+
+    .line 66
+    .line 67
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 68
+    .line 69
+    .line 70
+    sput-object v0, Lcyd;->a:LUf9;
+
+    .line 71
+    .line 72
+    :goto_5
+    if-eqz v5, :cond_2
+
+    .line 73
+    .line 74
+    const-class v0, Lcyd;
+
+    .line 75
+    .line 76
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v0
+
+    .line 80
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object v0
+
+    .line 84
+    const-string v1, "Error during PerfMark.<clinit>"
+
+    .line 85
+    .line 86
+    invoke-virtual {v0, v2, v1, v5}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 87
+    .line 88
+    .line 89
+    :cond_2
+    return-void
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 2
+.method public static a()V
+    .locals 1
 
     .line 1
-    iget v0, p0, Lcyd;->a:I
+    sget-object v0, Lcyd;->a:LUf9;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    if-ne v0, v1, :cond_0
-
     .line 5
     .line 6
-    iget-object v0, p0, Lcyd;->b:Ljava/lang/Object;
+    return-void
+.end method
 
-    .line 7
-    .line 8
-    check-cast v0, Ljava/lang/Integer;
+.method public static b()V
+    .locals 1
 
-    .line 9
-    .line 10
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    .line 1
+    sget-object v0, Lcyd;->a:LUf9;
 
-    .line 11
-    .line 12
-    .line 13
-    move-result v0
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 14
-    invoke-virtual {p1, v1, v0}, Lsa3;->T(II)V
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
-    .line 15
-    .line 16
-    .line 17
-    :cond_0
-    iget v0, p0, Lcyd;->a:I
+.method public static c()V
+    .locals 1
 
-    .line 18
-    .line 19
-    const/4 v1, 0x2
+    .line 1
+    sget-object v0, Lcyd;->a:LUf9;
 
-    .line 20
-    if-ne v0, v1, :cond_1
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 21
-    .line 22
-    iget-object v0, p0, Lcyd;->b:Ljava/lang/Object;
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
 
-    .line 23
-    .line 24
-    check-cast v0, Lcom/google/protobuf/nano/MessageNano;
+.method public static d()V
+    .locals 1
 
-    .line 25
-    .line 26
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    .line 1
+    sget-object v0, Lcyd;->a:LUf9;
 
-    .line 27
-    .line 28
-    .line 29
-    :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 30
-    .line 31
-    .line 32
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static e()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcyd;->a:LUf9;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method

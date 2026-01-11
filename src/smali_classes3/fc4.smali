@@ -1,160 +1,102 @@
 .class public final Lfc4;
-.super LrE9;
+.super LaW0;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LvG4;
-
-
-# direct methods
-.method public synthetic constructor <init>(LvG4;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, Lfc4;->a:I
-
-    iput-object p1, p0, Lfc4;->b:LvG4;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 1
+.method public final a()LjW0;
+    .locals 4
 
     .line 1
-    iget v0, p0, Lfc4;->a:I
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, Lfc4;->b:LvG4;
+    move-result-object v0
 
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/Runtime;->availableProcessors()I
+
+    .line 6
     .line 7
     .line 8
-    invoke-virtual {v0}, LvG4;->get()Ljava/lang/Object;
+    move-result v0
 
     .line 9
+    new-instance v1, LjW0;
+
     .line 10
     .line 11
-    move-result-object v0
+    invoke-direct {v1}, LjW0;-><init>()V
 
     .line 12
-    check-cast v0, Lzla;
-
     .line 13
     .line 14
-    return-object v0
+    iget v2, p0, LaW0;->a:I
 
     .line 15
-    :pswitch_0
-    iget-object v0, p0, Lfc4;->b:LvG4;
-
     .line 16
-    .line 17
-    invoke-virtual {v0}, LvG4;->get()Ljava/lang/Object;
+    invoke-virtual {v1, v2}, LjW0;->a(I)V
 
+    .line 17
     .line 18
     .line 19
-    .line 20
-    move-result-object v0
+    new-instance v2, LnW0;
 
+    .line 20
     .line 21
-    check-cast v0, Lzla;
+    invoke-direct {v2}, LnW0;-><init>()V
 
     .line 22
     .line 23
-    return-object v0
-
     .line 24
-    :pswitch_1
-    iget-object v0, p0, Lfc4;->b:LvG4;
+    iput-object v2, v1, LjW0;->c:LnW0;
 
     .line 25
     .line 26
-    invoke-virtual {v0}, LvG4;->get()Ljava/lang/Object;
+    const/4 v3, 0x1
 
     .line 27
+    iput v3, v2, LnW0;->a:I
+
     .line 28
     .line 29
-    move-result-object v0
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 30
-    check-cast v0, LEO;
-
     .line 31
     .line 32
-    invoke-interface {v0}, LEO;->h()LQT1;
+    move-result-object v0
 
     .line 33
+    iput-object v0, v2, LnW0;->b:Ljava/lang/Object;
+
     .line 34
     .line 35
-    move-result-object v0
+    return-object v1
+.end method
 
-    .line 36
-    return-object v0
+.method public final c()Z
+    .locals 1
 
-    .line 37
-    :pswitch_2
-    iget-object v0, p0, Lfc4;->b:LvG4;
+    .line 1
+    const/4 v0, 0x1
 
-    .line 38
-    .line 39
-    invoke-virtual {v0}, LvG4;->get()Ljava/lang/Object;
+    .line 2
+    return v0
+.end method
 
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
+.method public final close()V
+    .locals 0
 
-    .line 43
-    check-cast v0, LaA8;
+    .line 1
+    return-void
+.end method
 
-    .line 44
-    .line 45
-    return-object v0
+.method public final d()V
+    .locals 0
 
-    .line 46
-    :pswitch_3
-    iget-object v0, p0, Lfc4;->b:LvG4;
-
-    .line 47
-    .line 48
-    invoke-virtual {v0}, LvG4;->get()Ljava/lang/Object;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    check-cast v0, LOa1;
-
-    .line 53
-    .line 54
-    return-object v0
-
-    .line 55
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 1
+    return-void
 .end method

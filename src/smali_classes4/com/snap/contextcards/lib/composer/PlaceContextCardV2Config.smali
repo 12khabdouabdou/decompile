@@ -1,10 +1,10 @@
 .class public final Lcom/snap/contextcards/lib/composer/PlaceContextCardV2Config;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'contextSessionId\':s,\'hitStaging\':b,\'authHeader\':m?<s,u>,\'isPlaceProfileV2\':b@?,\'showNewPlaceCardsUi\':b@?"
     typeReferences = {}

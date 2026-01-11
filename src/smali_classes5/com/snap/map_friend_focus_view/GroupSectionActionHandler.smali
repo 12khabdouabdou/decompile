@@ -7,10 +7,10 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LdF8;
-    schema = "\'handleArrowTap\':f|m|(r:\'[0]\'),\'handleGroupMessageTap\':f|m|(),\'handleUpdateBitmojiTap\':f|m|(),\'handleLongPressStory\':f|m|(s),\'handleShareLocation\':f|m|(r:\'[0]\'),\'handleShareBackLive\':f?|m|(r:\'[0]\'),\'handleCloseButton\':f|m|(),\'handleUserMessageTap\':f|m|(s),\'handleStoryTap\':f|m|(r:\'[0]\'),\'handleCreateBitmojiTap\':f|m|()"
+    proxyClass = LgM8;
+    schema = "\'handleArrowTap\':f|m|(r:\'[0]\'),\'handleGroupMessageTap\':f|m|(),\'handleUpdateBitmojiTap\':f|m|(),\'handleLongPressStory\':f|m|(s),\'handleShareLocation\':f|m|(r:\'[0]\'),\'handleShareBackLive\':f?|m|(r:\'[0]\'),\'handleCloseButton\':f|m|(),\'handleUserMessageTap\':f|m|(s),\'handleStoryTap\':f|m|(r:\'[0]\'),\'handleCreateBitmojiTap\':f|m|(),\'handleMapSnapTap\':f?|m|()"
     typeReferences = {
         Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;
     }
@@ -33,8 +33,13 @@
 .method public abstract handleLongPressStory(Ljava/lang/String;)V
 .end method
 
+.method public abstract handleMapSnapTap()V
+    .annotation runtime LhC3;
+    .end annotation
+.end method
+
 .method public abstract handleShareBackLive(Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:LWf4;
+.field public final a:LKk4;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LWf4;
+    new-instance v0, LKk4;
 
     .line 5
     .line 6
@@ -26,7 +26,7 @@
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Landroidx/credentials/playservices/CredentialProviderMetadataHolder;->a:LWf4;
+    iput-object v0, p0, Landroidx/credentials/playservices/CredentialProviderMetadataHolder;->a:LKk4;
 
     .line 10
     .line 11
@@ -39,7 +39,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/credentials/playservices/CredentialProviderMetadataHolder;->a:LWf4;
+    iget-object p1, p0, Landroidx/credentials/playservices/CredentialProviderMetadataHolder;->a:LKk4;
 
     .line 2
     .line 3

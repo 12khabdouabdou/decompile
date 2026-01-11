@@ -1,197 +1,145 @@
-.class public final enum LG5e;
-.super Ljava/lang/Enum;
+.class public final LG5e;
+.super LI5e;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic X:[LG5e;
-
-.field public static final enum a:LG5e;
-
-.field public static final enum b:LG5e;
-
-.field public static final enum c:LG5e;
-
-.field public static final enum t:LG5e;
+# instance fields
+.field public final a:Z
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public constructor <init>(Z)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x3
-
     .line 3
-    const/4 v2, 0x2
-
     .line 4
-    const/4 v3, 0x1
+    iput-boolean p1, p0, LG5e;->a:Z
 
     .line 5
-    const/4 v4, 0x0
-
     .line 6
-    new-instance v5, LG5e;
-
-    .line 7
-    .line 8
-    const-string v6, "USERNAME"
-
-    .line 9
-    .line 10
-    invoke-direct {v5, v6, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v5, LG5e;->a:LG5e;
-
-    .line 14
-    .line 15
-    new-instance v6, LG5e;
-
-    .line 16
-    .line 17
-    const-string v7, "DISPLAY_NAME"
-
-    .line 18
-    .line 19
-    invoke-direct {v6, v7, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 20
-    .line 21
-    .line 22
-    sput-object v6, LG5e;->b:LG5e;
-
-    .line 23
-    .line 24
-    new-instance v7, LG5e;
-
-    .line 25
-    .line 26
-    const-string v8, "SNAPSCORE"
-
-    .line 27
-    .line 28
-    invoke-direct {v7, v8, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 29
-    .line 30
-    .line 31
-    sput-object v7, LG5e;->c:LG5e;
-
-    .line 32
-    .line 33
-    new-instance v8, LG5e;
-
-    .line 34
-    .line 35
-    const-string v9, "BIRTHDAY"
-
-    .line 36
-    .line 37
-    invoke-direct {v8, v9, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 38
-    .line 39
-    .line 40
-    new-instance v9, LG5e;
-
-    .line 41
-    .line 42
-    const-string v10, "AVATAR"
-
-    .line 43
-    .line 44
-    invoke-direct {v9, v10, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 45
-    .line 46
-    .line 47
-    sput-object v9, LG5e;->t:LG5e;
-
-    .line 48
-    .line 49
-    const/4 v10, 0x5
-
-    .line 50
-    new-array v10, v10, [LG5e;
-
-    .line 51
-    .line 52
-    aput-object v5, v10, v4
-
-    .line 53
-    .line 54
-    aput-object v6, v10, v3
-
-    .line 55
-    .line 56
-    aput-object v7, v10, v2
-
-    .line 57
-    .line 58
-    aput-object v8, v10, v1
-
-    .line 59
-    .line 60
-    aput-object v9, v10, v0
-
-    .line 61
-    .line 62
-    sput-object v10, LG5e;->X:[LG5e;
-
-    .line 63
-    .line 64
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LG5e;
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
     .line 1
-    const-class v0, LG5e;
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    goto :goto_1
 
     .line 4
+    :cond_0
+    instance-of v0, p1, LG5e;
+
     .line 5
     .line 6
-    move-result-object p0
+    if-nez v0, :cond_1
 
     .line 7
-    check-cast p0, LG5e;
-
     .line 8
+    goto :goto_0
+
     .line 9
-    return-object p0
+    :cond_1
+    check-cast p1, LG5e;
+
+    .line 10
+    .line 11
+    iget-boolean v0, p0, LG5e;->a:Z
+
+    .line 12
+    .line 13
+    iget-boolean p1, p1, LG5e;->a:Z
+
+    .line 14
+    .line 15
+    if-eq v0, p1, :cond_2
+
+    .line 16
+    .line 17
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 18
+    return p1
+
+    .line 19
+    :cond_2
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 20
+    return p1
 .end method
 
-.method public static values()[LG5e;
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    sget-object v0, LG5e;->X:[LG5e;
+    iget-boolean v0, p0, LG5e;->a:Z
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    const/16 v0, 0x4cf
 
+    .line 6
     .line 7
-    check-cast v0, [LG5e;
+    return v0
 
     .line 8
+    :cond_0
+    const/16 v0, 0x4d5
+
     .line 9
+    .line 10
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "UpdatePreviewControlsState(show="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-boolean v1, p0, LG5e;->a:Z
+
+    .line 9
+    .line 10
+    const-string v2, ")"
+
+    .line 11
+    .line 12
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
     return-object v0
 .end method

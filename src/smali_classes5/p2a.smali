@@ -1,127 +1,193 @@
-.class public final enum Lp2a;
-.super Ljava/lang/Enum;
+.class public final Lp2a;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LCX0;
+.implements LeZ5;
 
 
-# static fields
-.field public static final enum a:Lp2a;
+# instance fields
+.field public final X:Lrp0;
 
-.field public static final synthetic b:[Lp2a;
+.field public final synthetic a:I
+
+.field public final b:LyPf;
+
+.field public final c:Lkotlin/jvm/functions/Function1;
+
+.field public final t:Lio/reactivex/rxjava3/core/Observable;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(Lrp0;LyPf;Lkotlin/jvm/functions/Function1;Lio/reactivex/rxjava3/core/Observable;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    iput p5, p0, Lp2a;->a:I
 
-    .line 2
-    new-instance v1, Lp2a;
+    iput-object p1, p0, Lp2a;->X:Lrp0;
 
-    .line 3
-    .line 4
-    const-string v2, "HORIZONTAL"
+    iput-object p2, p0, Lp2a;->b:LyPf;
 
-    .line 5
-    .line 6
-    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p3, p0, Lp2a;->c:Lkotlin/jvm/functions/Function1;
 
-    .line 7
-    .line 8
-    .line 9
-    sput-object v1, Lp2a;->a:Lp2a;
+    iput-object p4, p0, Lp2a;->t:Lio/reactivex/rxjava3/core/Observable;
 
-    .line 10
-    .line 11
-    const/4 v2, 0x1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 12
-    new-array v2, v2, [Lp2a;
-
-    .line 13
-    .line 14
-    aput-object v1, v2, v0
-
-    .line 15
-    .line 16
-    sput-object v2, Lp2a;->b:[Lp2a;
-
-    .line 17
-    .line 18
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lp2a;
-    .locals 1
-
-    .line 1
-    const-class v0, Lp2a;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lp2a;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lp2a;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lp2a;->b:[Lp2a;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lp2a;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/lang/Class;
+.method public final a()LyPf;
     .locals 1
 
     .line 1
-    const-class v0, Ln2a;
+    iget v0, p0, Lp2a;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lp2a;->b:LyPf;
+
+    .line 7
+    .line 8
     return-object v0
+
+    .line 9
+    :pswitch_0
+    iget-object v0, p0, Lp2a;->b:LyPf;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final c()I
+.method public final b()Lrp0;
     .locals 1
 
     .line 1
-    const v0, 0x7f0e0394
+    iget v0, p0, Lp2a;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    return v0
+    .line 5
+    .line 6
+    iget-object v0, p0, Lp2a;->X:Lrp0;
+
+    .line 7
+    .line 8
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    iget-object v0, p0, Lp2a;->X:Lrp0;
+
+    .line 10
+    .line 11
+    check-cast v0, Lv71;
+
+    .line 12
+    .line 13
+    return-object v0
+
+    .line 14
+    nop
+
+    .line 15
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final c()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lp2a;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lp2a;->t:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 7
+    .line 8
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    iget-object v0, p0, Lp2a;->t:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final d()Lkotlin/jvm/functions/Function1;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lp2a;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lp2a;->c:Lkotlin/jvm/functions/Function1;
+
+    .line 7
+    .line 8
+    return-object v0
+
+    .line 9
+    :pswitch_0
+    iget-object v0, p0, Lp2a;->c:Lkotlin/jvm/functions/Function1;
+
+    .line 10
+    .line 11
+    return-object v0
+
+    .line 12
+    nop
+
+    .line 13
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

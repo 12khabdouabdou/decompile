@@ -53,7 +53,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 4
 
     .line 1
@@ -65,7 +65,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableScalarXMap;->b(LZne;LV6i;Lio/reactivex/rxjava3/functions/Function;)Z
+    invoke-static {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableScalarXMap;->b(LSFe;Lmvi;Lio/reactivex/rxjava3/functions/Function;)Z
 
     .line 6
     .line 7
@@ -89,7 +89,7 @@
 
     .line 15
     .line 16
-    invoke-direct {v2, p1, v1, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchMap$SwitchMapSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/functions/Function;I)V
+    invoke-direct {v2, p1, v1, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchMap$SwitchMapSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)V
 
     .line 17
     .line 18

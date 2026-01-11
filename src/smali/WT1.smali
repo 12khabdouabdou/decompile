@@ -1,69 +1,77 @@
-.class public final LWT1;
+.class public final synthetic LWT1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LXT1;
+.implements LX62;
 
 
-# static fields
-.field public static final a:LWT1;
+# instance fields
+.field public final synthetic a:LpU1;
+
+.field public final synthetic b:LbG;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(LpU1;LbG;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LWT1;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LWT1;->a:LpU1;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LWT1;->a:LWT1;
+    iput-object p2, p0, LWT1;->b:LbG;
 
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
+.method public final execute()V
+    .locals 2
 
     .line 1
-    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    iget-object v0, p0, LWT1;->b:LbG;
 
     .line 2
     .line 3
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+    iget-object v1, p0, LWT1;->a:LpU1;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
     .line 7
     .line 8
-    return-object v0
-.end method
+    :try_start_0
+    invoke-virtual {v1, v0}, LpU1;->m0(LbG;)V
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
-.method public final b(LVT1;)Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 0
+    .line 9
+    .line 10
+    .line 11
+    return-void
 
-    .line 1
-    invoke-static {}, Lio/reactivex/rxjava3/disposables/a;->a()Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 12
+    :catch_0
+    move-exception v1
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
+    .line 13
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    .line 5
-    return-object p1
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-virtual {v0, v1}, LbG;->p(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-void
 .end method

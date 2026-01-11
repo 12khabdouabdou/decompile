@@ -3,20 +3,22 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lvma;
+.implements LIdc;
 
 
 # instance fields
-.field public final a:LFY4;
+.field public final a:LwL9;
 
-.field public final b:LMs9;
+.field public final b:Lk45;
 
-.field public final c:LBlj;
+.field public final c:Lz45;
+
+.field public final d:LCBe;
 
 
 # direct methods
-.method public constructor <init>(LFY4;LBlj;LMs9;)V
-    .locals 0
+.method public constructor <init>(Lk45;Lz45;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -24,114 +26,89 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LDZ4;->a:LFY4;
+    new-instance v0, LwL9;
 
     .line 5
     .line 6
-    iput-object p3, p0, LDZ4;->b:LMs9;
+    const/4 v1, 0x1
 
     .line 7
-    .line 8
-    iput-object p2, p0, LDZ4;->c:LBlj;
+    invoke-direct {v0, v1}, LwL9;-><init>(I)V
 
+    .line 8
     .line 9
     .line 10
+    iput-object v0, p0, LDZ4;->a:LwL9;
+
+    .line 11
+    .line 12
+    iput-object p1, p0, LDZ4;->b:Lk45;
+
+    .line 13
+    .line 14
+    iput-object p2, p0, LDZ4;->c:Lz45;
+
+    .line 15
+    .line 16
+    new-instance p1, LaW4;
+
+    .line 17
+    .line 18
+    const/4 p2, 0x5
+
+    .line 19
+    invoke-direct {p1, p2, p0}, LaW4;-><init>(ILjava/lang/Object;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-static {p1}, Lfv6;->b(LCBe;)LCBe;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    iput-object p1, p0, LDZ4;->d:LCBe;
+
+    .line 27
+    .line 28
     return-void
 .end method
 
 
 # virtual methods
-.method public final X2()Ltma;
-    .locals 8
+.method public final a()Lxj1;
+    .locals 1
 
     .line 1
-    new-instance v0, LX28;
+    iget-object v0, p0, LDZ4;->d:LCBe;
 
     .line 2
     .line 3
-    iget-object v1, p0, LDZ4;->a:LFY4;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
-    move-object v2, v1
-
     .line 6
-    invoke-virtual {v2}, LFY4;->v()LpC3;
+    move-result-object v0
 
     .line 7
+    check-cast v0, Lxj1;
+
     .line 8
     .line 9
-    move-result-object v1
+    return-object v0
+.end method
 
-    .line 10
-    move-object v3, v2
+.method public final b()LVdc;
+    .locals 1
 
-    .line 11
-    invoke-virtual {v3}, LFY4;->P()LaA8;
+    .line 1
+    iget-object v0, p0, LDZ4;->a:LwL9;
 
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v2
-
-    .line 15
-    invoke-virtual {v3}, LFY4;->u()LB73;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v3
-
-    .line 19
-    new-instance v4, LIO8;
-
-    .line 20
-    .line 21
-    iget-object v5, p0, LDZ4;->b:LMs9;
-
-    .line 22
-    .line 23
-    invoke-interface {v5}, LMs9;->c0()LP59;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v5
-
-    .line 27
-    iget-object v6, p0, LDZ4;->c:LBlj;
-
-    .line 28
-    .line 29
-    invoke-interface {v6}, LBlj;->b()LXSg;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v6
-
-    .line 33
-    invoke-static {}, Lzma;->e()V
-
-    .line 34
-    .line 35
-    .line 36
-    sget v7, Lyma;->f0:I
-
-    .line 37
-    .line 38
-    invoke-direct {v4, v5, v6}, LIO8;-><init>(LP59;LXSg;)V
-
-    .line 39
-    .line 40
-    .line 41
-    const/4 v5, 0x7
-
-    .line 42
-    invoke-direct/range {v0 .. v5}, LX28;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    .line 43
-    .line 44
-    .line 45
+    .line 2
+    .line 3
     return-object v0
 .end method

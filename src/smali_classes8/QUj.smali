@@ -1,620 +1,258 @@
-.class public LQUj;
-.super Lhqj;
+.class public final LQUj;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'networkingClient\':r:\'[0]\',\'navigator\':r:\'[1]\',\'navigationContainer\':r?:\'[2]\',\'config\':r?:\'[3]\',\'blizzardLogger\':r?:\'[4]\',\'locationPickerCallback\':r?:\'[5]\',\'dismissHandler\':r?:\'[6]\',\'venuePhotoUpload\':r?:\'[7]\',\'venueAsyncRequestCallback\':r?:\'[8]\',\'mapUrlGenerator\':r?:\'[9]\',\'mapViewFactory\':r?:\'[10]\',\'fetchAddressForLatLong\':f?(d@, d@, f(r:\'[11]\'))"
+    typeReferences = {
+        Lcom/snap/composer/networking/ClientProtocol;,
+        Lcom/snap/composer/navigation/INavigator;,
+        Lcom/snap/modules/deck/ComposerNavigationContainerInterface;,
+        Lcom/snap/venueeditor/VenueEditorConfig;,
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/venueeditor/VenueLocationPickerCallback;,
+        Lcom/snap/venueeditor/VenueEditorDismissCallback;,
+        Lcom/snap/venueeditor/VenuePhotoUpload;,
+        Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;,
+        Lcom/snap/composer/map/StaticMapUrlGenerator;,
+        Lcom/snap/composer/ViewFactory;,
+        LMpf;
+    }
+.end annotation
+
+
 # instance fields
-.field public j:LZid;
+.field private _blizzardLogger:Lcom/snap/composer/blizzard/Logging;
 
-.field public k:LYid;
+.field private _config:Lcom/snap/venueeditor/VenueEditorConfig;
 
-.field public l:LFjd;
+.field private _dismissHandler:Lcom/snap/venueeditor/VenueEditorDismissCallback;
 
-.field public m:LZid;
+.field private _fetchAddressForLatLong:Lkotlin/jvm/functions/Function3;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function3;"
+        }
+    .end annotation
+.end field
 
-.field public n:LZid;
+.field private _locationPickerCallback:Lcom/snap/venueeditor/VenueLocationPickerCallback;
 
-.field public o:Ljava/lang/Boolean;
+.field private _mapUrlGenerator:Lcom/snap/composer/map/StaticMapUrlGenerator;
 
-.field public p:Ljava/lang/Boolean;
+.field private _mapViewFactory:Lcom/snap/composer/ViewFactory;
 
-.field public q:Ljava/lang/Boolean;
+.field private _navigationContainer:Lcom/snap/modules/deck/ComposerNavigationContainerInterface;
+
+.field private _navigator:Lcom/snap/composer/navigation/INavigator;
+
+.field private _networkingClient:Lcom/snap/composer/networking/ClientProtocol;
+
+.field private _venueAsyncRequestCallback:Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;
+
+.field private _venuePhotoUpload:Lcom/snap/venueeditor/VenuePhotoUpload;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(Lcom/snap/composer/networking/ClientProtocol;Lcom/snap/composer/navigation/INavigator;Lcom/snap/modules/deck/ComposerNavigationContainerInterface;Lcom/snap/venueeditor/VenueEditorConfig;Lcom/snap/composer/blizzard/Logging;Lcom/snap/venueeditor/VenueLocationPickerCallback;Lcom/snap/venueeditor/VenueEditorDismissCallback;Lcom/snap/venueeditor/VenuePhotoUpload;Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;Lcom/snap/composer/map/StaticMapUrlGenerator;Lcom/snap/composer/ViewFactory;Lkotlin/jvm/functions/Function3;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/networking/ClientProtocol;",
+            "Lcom/snap/composer/navigation/INavigator;",
+            "Lcom/snap/modules/deck/ComposerNavigationContainerInterface;",
+            "Lcom/snap/venueeditor/VenueEditorConfig;",
+            "Lcom/snap/composer/blizzard/Logging;",
+            "Lcom/snap/venueeditor/VenueLocationPickerCallback;",
+            "Lcom/snap/venueeditor/VenueEditorDismissCallback;",
+            "Lcom/snap/venueeditor/VenuePhotoUpload;",
+            "Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;",
+            "Lcom/snap/composer/map/StaticMapUrlGenerator;",
+            "Lcom/snap/composer/ViewFactory;",
+            "Lkotlin/jvm/functions/Function3;",
+            ")V"
+        }
+    .end annotation
+
+    .line 14
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 15
+    iput-object p1, p0, LQUj;->_networkingClient:Lcom/snap/composer/networking/ClientProtocol;
+
+    .line 16
+    iput-object p2, p0, LQUj;->_navigator:Lcom/snap/composer/navigation/INavigator;
+
+    .line 17
+    iput-object p3, p0, LQUj;->_navigationContainer:Lcom/snap/modules/deck/ComposerNavigationContainerInterface;
+
+    .line 18
+    iput-object p4, p0, LQUj;->_config:Lcom/snap/venueeditor/VenueEditorConfig;
+
+    .line 19
+    iput-object p5, p0, LQUj;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
+
+    .line 20
+    iput-object p6, p0, LQUj;->_locationPickerCallback:Lcom/snap/venueeditor/VenueLocationPickerCallback;
+
+    .line 21
+    iput-object p7, p0, LQUj;->_dismissHandler:Lcom/snap/venueeditor/VenueEditorDismissCallback;
+
+    .line 22
+    iput-object p8, p0, LQUj;->_venuePhotoUpload:Lcom/snap/venueeditor/VenuePhotoUpload;
+
+    .line 23
+    iput-object p9, p0, LQUj;->_venueAsyncRequestCallback:Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;
+
+    .line 24
+    iput-object p10, p0, LQUj;->_mapUrlGenerator:Lcom/snap/composer/map/StaticMapUrlGenerator;
+
+    .line 25
+    iput-object p11, p0, LQUj;->_mapViewFactory:Lcom/snap/composer/ViewFactory;
+
+    .line 26
+    iput-object p12, p0, LQUj;->_fetchAddressForLatLong:Lkotlin/jvm/functions/Function3;
+
+    return-void
+.end method
+
+.method public constructor <init>(LlKc;Lcom/snap/composer/navigation/INavigator;)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p1, p0, LQUj;->_networkingClient:Lcom/snap/composer/networking/ClientProtocol;
+
     .line 3
-    const-string v1, "WEB_STATE_FOREGROUND"
+    iput-object p2, p0, LQUj;->_navigator:Lcom/snap/composer/navigation/INavigator;
+
+    const/4 p1, 0x0
 
     .line 4
+    iput-object p1, p0, LQUj;->_navigationContainer:Lcom/snap/modules/deck/ComposerNavigationContainerInterface;
+
     .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
+    iput-object p1, p0, LQUj;->_config:Lcom/snap/venueeditor/VenueEditorConfig;
 
     .line 6
+    iput-object p1, p0, LQUj;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
+
     .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+    iput-object p1, p0, LQUj;->_locationPickerCallback:Lcom/snap/venueeditor/VenueLocationPickerCallback;
 
     .line 8
+    iput-object p1, p0, LQUj;->_dismissHandler:Lcom/snap/venueeditor/VenueEditorDismissCallback;
+
     .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
+    iput-object p1, p0, LQUj;->_venuePhotoUpload:Lcom/snap/venueeditor/VenuePhotoUpload;
 
     .line 10
+    iput-object p1, p0, LQUj;->_venueAsyncRequestCallback:Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;
+
     .line 11
-    move-object v0, p0
+    iput-object p1, p0, LQUj;->_mapUrlGenerator:Lcom/snap/composer/map/StaticMapUrlGenerator;
 
     .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
+    iput-object p1, p0, LQUj;->_mapViewFactory:Lcom/snap/composer/ViewFactory;
 
     .line 13
-    .line 14
-    .line 15
+    iput-object p1, p0, LQUj;->_fetchAddressForLatLong:Lkotlin/jvm/functions/Function3;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final a(Lcom/snap/composer/blizzard/Logging;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    iput-object p1, p0, LQUj;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
-    .line 4
-    const/4 v1, 0x2
-
-    .line 5
-    iget-object v2, p0, LQUj;->k:LYid;
-
-    .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 8
-    .line 9
-    .line 10
-    const/4 v1, 0x3
-
-    .line 11
-    iget-object v2, p0, LQUj;->l:LFjd;
-
-    .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 14
-    .line 15
-    .line 16
-    const/4 v1, 0x4
-
-    .line 17
-    iget-object v2, p0, LQUj;->o:Ljava/lang/Boolean;
-
-    .line 18
-    .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 20
-    .line 21
-    .line 22
-    const/4 v1, 0x5
-
-    .line 23
-    iget-object v2, p0, LQUj;->m:LZid;
-
-    .line 24
-    .line 25
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 26
-    .line 27
-    .line 28
-    const/4 v1, 0x6
-
-    .line 29
-    iget-object v2, p0, LQUj;->n:LZid;
-
-    .line 30
-    .line 31
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 32
-    .line 33
-    .line 34
-    const/4 v1, 0x7
-
-    .line 35
-    iget-object v2, p0, LQUj;->j:LZid;
-
-    .line 36
-    .line 37
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 38
-    .line 39
-    .line 40
-    const/16 v1, 0x8
-
-    .line 41
-    .line 42
-    iget-object v2, p0, LQUj;->p:Ljava/lang/Boolean;
-
-    .line 43
-    .line 44
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const/16 v1, 0x9
-
-    .line 48
-    .line 49
-    iget-object v2, p0, LQUj;->q:Ljava/lang/Boolean;
-
-    .line 50
-    .line 51
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
-    .line 55
-    .line 56
-    .line 57
     return-void
 .end method
 
-.method public final d()I
-    .locals 1
+.method public final b(Lcom/snap/venueeditor/VenueEditorConfig;)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0x126c
+    iput-object p1, p0, LQUj;->_config:Lcom/snap/venueeditor/VenueEditorConfig;
 
     .line 2
     .line 3
-    return v0
+    return-void
 .end method
 
-.method public final e(Ljava/util/Map;)I
-    .locals 3
+.method public final c(LbVj;)V
+    .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lhqj;->e(Ljava/util/Map;)I
+    iput-object p1, p0, LQUj;->_dismissHandler:Lcom/snap/venueeditor/VenueEditorDismissCallback;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    return-void
+.end method
 
-    .line 5
-    const-string v1, "app_notif"
+.method public final d(Lm1h;)V
+    .locals 0
 
-    .line 6
-    .line 7
-    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    .line 1
+    iput-object p1, p0, LQUj;->_fetchAddressForLatLong:Lkotlin/jvm/functions/Function3;
 
-    .line 8
-    .line 9
-    .line 10
-    move-result v2
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 11
-    if-eqz v2, :cond_1
+.method public final e(LcVj;)V
+    .locals 0
 
-    .line 12
-    .line 13
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 1
+    iput-object p1, p0, LQUj;->_locationPickerCallback:Lcom/snap/venueeditor/VenueLocationPickerCallback;
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 17
-    instance-of v2, v1, Ljava/lang/String;
+.method public final f(LeE3;)V
+    .locals 0
 
-    .line 18
-    .line 19
-    if-eqz v2, :cond_0
+    .line 1
+    iput-object p1, p0, LQUj;->_mapUrlGenerator:Lcom/snap/composer/map/StaticMapUrlGenerator;
 
-    .line 20
-    .line 21
-    check-cast v1, Ljava/lang/String;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 22
-    .line 23
-    invoke-static {v1}, LYid;->valueOf(Ljava/lang/String;)LYid;
+.method public final g(Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;)V
+    .locals 0
 
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
+    .line 1
+    iput-object p1, p0, LQUj;->_venueAsyncRequestCallback:Lcom/snap/venueeditor/VenueEditorAsyncRequestCallback;
 
-    .line 27
-    iput-object v1, p0, LQUj;->k:LYid;
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 28
-    .line 29
-    goto :goto_0
+.method public final h(Lcom/snap/venueeditor/VenuePhotoUpload;)V
+    .locals 0
 
-    .line 30
-    :cond_0
-    check-cast v1, LYid;
+    .line 1
+    iput-object p1, p0, LQUj;->_venuePhotoUpload:Lcom/snap/venueeditor/VenuePhotoUpload;
 
-    .line 31
-    .line 32
-    iput-object v1, p0, LQUj;->k:LYid;
-
-    .line 33
-    .line 34
-    :goto_0
-    add-int/lit8 v0, v0, 0x1
-
-    .line 35
-    .line 36
-    :cond_1
-    const-string v1, "app_sound"
-
-    .line 37
-    .line 38
-    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    .line 39
-    .line 40
-    .line 41
-    move-result v2
-
-    .line 42
-    if-eqz v2, :cond_3
-
-    .line 43
-    .line 44
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v1
-
-    .line 48
-    instance-of v2, v1, Ljava/lang/String;
-
-    .line 49
-    .line 50
-    if-eqz v2, :cond_2
-
-    .line 51
-    .line 52
-    check-cast v1, Ljava/lang/String;
-
-    .line 53
-    .line 54
-    invoke-static {v1}, LFjd;->valueOf(Ljava/lang/String;)LFjd;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object v1
-
-    .line 58
-    iput-object v1, p0, LQUj;->l:LFjd;
-
-    .line 59
-    .line 60
-    goto :goto_1
-
-    .line 61
-    :cond_2
-    check-cast v1, LFjd;
-
-    .line 62
-    .line 63
-    iput-object v1, p0, LQUj;->l:LFjd;
-
-    .line 64
-    .line 65
-    :goto_1
-    add-int/lit8 v0, v0, 0x1
-
-    .line 66
-    .line 67
-    :cond_3
-    const-string v1, "badged_icon"
-
-    .line 68
-    .line 69
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v1
-
-    .line 73
-    check-cast v1, Ljava/lang/Boolean;
-
-    .line 74
-    .line 75
-    iput-object v1, p0, LQUj;->o:Ljava/lang/Boolean;
-
-    .line 76
-    .line 77
-    if-eqz v1, :cond_4
-
-    .line 78
-    .line 79
-    add-int/lit8 v0, v0, 0x1
-
-    .line 80
-    .line 81
-    :cond_4
-    const-string v1, "browser_camera"
-
-    .line 82
-    .line 83
-    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v2
-
-    .line 87
-    if-eqz v2, :cond_6
-
-    .line 88
-    .line 89
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 90
-    .line 91
-    .line 92
-    move-result-object v1
-
-    .line 93
-    instance-of v2, v1, Ljava/lang/String;
-
-    .line 94
-    .line 95
-    if-eqz v2, :cond_5
-
-    .line 96
-    .line 97
-    check-cast v1, Ljava/lang/String;
-
-    .line 98
-    .line 99
-    invoke-static {v1}, LZid;->valueOf(Ljava/lang/String;)LZid;
-
-    .line 100
-    .line 101
-    .line 102
-    move-result-object v1
-
-    .line 103
-    iput-object v1, p0, LQUj;->m:LZid;
-
-    .line 104
-    .line 105
-    goto :goto_2
-
-    .line 106
-    :cond_5
-    check-cast v1, LZid;
-
-    .line 107
-    .line 108
-    iput-object v1, p0, LQUj;->m:LZid;
-
-    .line 109
-    .line 110
-    :goto_2
-    add-int/lit8 v0, v0, 0x1
-
-    .line 111
-    .line 112
-    :cond_6
-    const-string v1, "browser_mic"
-
-    .line 113
-    .line 114
-    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    .line 115
-    .line 116
-    .line 117
-    move-result v2
-
-    .line 118
-    if-eqz v2, :cond_8
-
-    .line 119
-    .line 120
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 121
-    .line 122
-    .line 123
-    move-result-object v1
-
-    .line 124
-    instance-of v2, v1, Ljava/lang/String;
-
-    .line 125
-    .line 126
-    if-eqz v2, :cond_7
-
-    .line 127
-    .line 128
-    check-cast v1, Ljava/lang/String;
-
-    .line 129
-    .line 130
-    invoke-static {v1}, LZid;->valueOf(Ljava/lang/String;)LZid;
-
-    .line 131
-    .line 132
-    .line 133
-    move-result-object v1
-
-    .line 134
-    iput-object v1, p0, LQUj;->n:LZid;
-
-    .line 135
-    .line 136
-    goto :goto_3
-
-    .line 137
-    :cond_7
-    check-cast v1, LZid;
-
-    .line 138
-    .line 139
-    iput-object v1, p0, LQUj;->n:LZid;
-
-    .line 140
-    .line 141
-    :goto_3
-    add-int/lit8 v0, v0, 0x1
-
-    .line 142
-    .line 143
-    :cond_8
-    const-string v1, "browser_notif"
-
-    .line 144
-    .line 145
-    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
-
-    .line 146
-    .line 147
-    .line 148
-    move-result v2
-
-    .line 149
-    if-eqz v2, :cond_a
-
-    .line 150
-    .line 151
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 152
-    .line 153
-    .line 154
-    move-result-object v1
-
-    .line 155
-    instance-of v2, v1, Ljava/lang/String;
-
-    .line 156
-    .line 157
-    if-eqz v2, :cond_9
-
-    .line 158
-    .line 159
-    check-cast v1, Ljava/lang/String;
-
-    .line 160
-    .line 161
-    invoke-static {v1}, LZid;->valueOf(Ljava/lang/String;)LZid;
-
-    .line 162
-    .line 163
-    .line 164
-    move-result-object v1
-
-    .line 165
-    iput-object v1, p0, LQUj;->j:LZid;
-
-    .line 166
-    .line 167
-    goto :goto_4
-
-    .line 168
-    :cond_9
-    check-cast v1, LZid;
-
-    .line 169
-    .line 170
-    iput-object v1, p0, LQUj;->j:LZid;
-
-    .line 171
-    .line 172
-    :goto_4
-    add-int/lit8 v0, v0, 0x1
-
-    .line 173
-    .line 174
-    :cond_a
-    const-string v1, "live_notifications"
-
-    .line 175
-    .line 176
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 177
-    .line 178
-    .line 179
-    move-result-object v1
-
-    .line 180
-    check-cast v1, Ljava/lang/Boolean;
-
-    .line 181
-    .line 182
-    iput-object v1, p0, LQUj;->p:Ljava/lang/Boolean;
-
-    .line 183
-    .line 184
-    if-eqz v1, :cond_b
-
-    .line 185
-    .line 186
-    add-int/lit8 v0, v0, 0x1
-
-    .line 187
-    .line 188
-    :cond_b
-    const-string v1, "sound_played"
-
-    .line 189
-    .line 190
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 191
-    .line 192
-    .line 193
-    move-result-object p1
-
-    .line 194
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 195
-    .line 196
-    iput-object p1, p0, LQUj;->q:Ljava/lang/Boolean;
-
-    .line 197
-    .line 198
-    if-eqz p1, :cond_c
-
-    .line 199
-    .line 200
-    add-int/lit8 v0, v0, 0x1
-
-    .line 201
-    .line 202
-    :cond_c
-    return v0
+    .line 2
+    .line 3
+    return-void
 .end method

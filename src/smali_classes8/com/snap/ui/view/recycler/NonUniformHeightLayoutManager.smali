@@ -41,85 +41,11 @@
 
 
 # virtual methods
-.method public final B0(LHGe;)V
-    .locals 4
-
-    .line 1
-    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->B0(LHGe;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, LwGe;->I()I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result p1
-
-    .line 8
-    const/4 v0, 0x0
-
-    .line 9
-    :goto_0
-    if-ge v0, p1, :cond_1
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, v0}, LwGe;->H(I)Landroid/view/View;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v1
-
-    .line 15
-    if-eqz v1, :cond_0
-
-    .line 16
-    .line 17
-    iget-object v2, p0, Lcom/snap/ui/view/recycler/NonUniformHeightLayoutManager;->G:Landroid/util/SparseIntArray;
-
-    .line 18
-    .line 19
-    invoke-static {v1}, LwGe;->b0(Landroid/view/View;)I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v3
-
-    .line 23
-    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v1
-
-    .line 27
-    invoke-virtual {v2, v3, v1}, Landroid/util/SparseIntArray;->put(II)V
-
-    .line 28
-    .line 29
-    .line 30
-    :cond_0
-    add-int/lit8 v0, v0, 0x1
-
-    .line 31
-    .line 32
-    goto :goto_0
-
-    .line 33
-    :cond_1
-    return-void
-.end method
-
-.method public final z(LHGe;)I
+.method public final E(LqYe;)I
     .locals 5
 
     .line 1
-    invoke-virtual {p0}, LwGe;->I()I
+    invoke-virtual {p0}, LfYe;->N()I
 
     .line 2
     .line 3
@@ -138,7 +64,7 @@
 
     .line 9
     :cond_0
-    invoke-virtual {p0, v0}, LwGe;->H(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, LfYe;->M(I)Landroid/view/View;
 
     .line 10
     .line 11
@@ -146,7 +72,7 @@
     move-result-object p1
 
     .line 13
-    invoke-static {p1}, LwGe;->b0(Landroid/view/View;)I
+    invoke-static {p1}, LfYe;->g0(Landroid/view/View;)I
 
     .line 14
     .line 15
@@ -154,7 +80,7 @@
     move-result v1
 
     .line 17
-    invoke-static {p1}, LLZj;->C(Landroid/view/View;)I
+    invoke-static {p1}, LDz9;->F(Landroid/view/View;)I
 
     .line 18
     .line 19
@@ -177,7 +103,7 @@
 
     .line 27
     .line 28
-    invoke-static {v2}, LLZj;->C(Landroid/view/View;)I
+    invoke-static {v2}, LDz9;->F(Landroid/view/View;)I
 
     .line 29
     .line 30
@@ -242,4 +168,78 @@
     .line 56
     :cond_1
     return v2
+.end method
+
+.method public final G0(LqYe;)V
+    .locals 4
+
+    .line 1
+    invoke-super {p0, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->G0(LqYe;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, LfYe;->N()I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result p1
+
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    :goto_0
+    if-ge v0, p1, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, v0}, LfYe;->M(I)Landroid/view/View;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    if-eqz v1, :cond_0
+
+    .line 16
+    .line 17
+    iget-object v2, p0, Lcom/snap/ui/view/recycler/NonUniformHeightLayoutManager;->G:Landroid/util/SparseIntArray;
+
+    .line 18
+    .line 19
+    invoke-static {v1}, LfYe;->g0(Landroid/view/View;)I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v3
+
+    .line 23
+    invoke-virtual {v1}, Landroid/view/View;->getHeight()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    invoke-virtual {v2, v3, v1}, Landroid/util/SparseIntArray;->put(II)V
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    .line 31
+    .line 32
+    goto :goto_0
+
+    .line 33
+    :cond_1
+    return-void
 .end method

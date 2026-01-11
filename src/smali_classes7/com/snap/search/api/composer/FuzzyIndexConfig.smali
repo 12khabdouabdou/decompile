@@ -1,10 +1,10 @@
 .class public final Lcom/snap/search/api/composer/FuzzyIndexConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'maxSkip\':d@?,\'decay\':d@?,\'limit\':d@?,\'threshold\':d@?"
     typeReferences = {}

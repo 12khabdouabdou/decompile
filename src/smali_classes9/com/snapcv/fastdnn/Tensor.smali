@@ -106,7 +106,7 @@
     const-string v2, " bytes capacity, but data only fits "
 
     .line 13
-    invoke-static {p1, p2, v1, v2}, Llva;->E(JLjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, p2, v1, v2}, LzHa;->B(JLjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 

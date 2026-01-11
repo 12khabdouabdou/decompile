@@ -1,10 +1,10 @@
 .class public final Lcom/snap/contextcards/lib/composer/GameLaunchInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'gameId\':s,\'gameShareInfo\':s,\'path\':s?,\'conversationId\':s?"
     typeReferences = {}

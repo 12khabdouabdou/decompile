@@ -24,5 +24,5 @@
     return-void
 .end method
 
-.method public static native createModuleFactory(Lcom/snapchat/client/talkcore_ts/TalkCoreDependencies;)Lcom/snapchat/client/valdi_core/ModuleFactory;
+.method public static native createModuleFactory(Lcom/snapchat/client/talkcore_ts/TalkCoreDependencies;Ljava/lang/Object;)Lcom/snapchat/client/valdi_core/ModuleFactory;
 .end method

@@ -1,83 +1,94 @@
 .class public final LrEc;
-.super Ljava/lang/ref/WeakReference;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/disposables/Disposable;
+.implements Lcom/snap/modules/snapdoc_wallpaper_remix_service/NativeSnapDocWallpaperRemixService;
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/disposables/Disposable;
+.field public final a:Lkotlin/jvm/functions/Function4;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;)V
-    .locals 1
+.method public constructor <init>(Lkotlin/jvm/functions/Function4;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function4;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    new-instance p1, Lt9c;
+    iput-object p1, p0, LrEc;->a:Lkotlin/jvm/functions/Function4;
 
     .line 5
     .line 6
-    const/16 v0, 0x18
-
-    .line 7
-    .line 8
-    invoke-direct {p1, v0, p0}, Lt9c;-><init>(ILjava/lang/Object;)V
-
-    .line 9
-    .line 10
-    .line 11
-    invoke-static {p1}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    iput-object p1, p0, LrEc;->a:Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LrEc;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    sget-object v0, LcF3;->m:LbF3;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->c()Z
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
-    return v0
+    .line 8
+    const-class v1, Lcom/snap/modules/snapdoc_wallpaper_remix_service/NativeSnapDocWallpaperRemixService;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
 .end method
 
-.method public final dispose()V
+.method public wallpaperRemix(Ljava/util/List;Lcom/snap/modules/snapdoc_wallpaper_remix_service/WallpaperRemixParameters;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/snap/modules/mdp/NativeSnapDoc;",
+            ">;",
+            "Lcom/snap/modules/snapdoc_wallpaper_remix_service/WallpaperRemixParameters;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, LrEc;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    iget-object v0, p0, LrEc;->a:Lkotlin/jvm/functions/Function4;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+    invoke-interface {v0, p1, p2, p3, p4}, Lkotlin/jvm/functions/Function4;->o(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5

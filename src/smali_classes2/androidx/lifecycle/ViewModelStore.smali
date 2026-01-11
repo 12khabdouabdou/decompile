@@ -80,11 +80,11 @@
     move-result-object v2
 
     .line 21
-    check-cast v2, LyJj;
+    check-cast v2, Lb9k;
 
     .line 22
     .line 23
-    invoke-virtual {v2}, LyJj;->a()V
+    invoke-virtual {v2}, Lb9k;->a()V
 
     .line 24
     .line 25

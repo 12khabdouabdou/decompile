@@ -1,6 +1,3 @@
-.class public abstract LDM;
-.super LGM;
+.class public interface abstract LDM;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements LXii;

@@ -22,11 +22,11 @@
 # instance fields
 .field public final a:Ljava/lang/Object;
 
-.field public final b:LV6i;
+.field public final b:Lmvi;
 
 
 # direct methods
-.method public constructor <init>(LV6i;Ljava/lang/Object;)V
+.method public constructor <init>(Lmvi;Ljava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -35,7 +35,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/subscriptions/ScalarSubscription;->b:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/subscriptions/ScalarSubscription;->b:Lmvi;
 
     .line 5
     .line 6
@@ -149,11 +149,11 @@
 
     .line 17
     .line 18
-    iget-object p2, p0, Lio/reactivex/rxjava3/internal/subscriptions/ScalarSubscription;->b:LV6i;
+    iget-object p2, p0, Lio/reactivex/rxjava3/internal/subscriptions/ScalarSubscription;->b:Lmvi;
 
     .line 19
     .line 20
-    invoke-interface {p2, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {p2, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 21
     .line 22
@@ -173,7 +173,7 @@
 
     .line 29
     .line 30
-    invoke-interface {p2}, LV6i;->onComplete()V
+    invoke-interface {p2}, Lmvi;->onComplete()V
 
     .line 31
     .line 32
@@ -241,7 +241,7 @@
     return-object v0
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1

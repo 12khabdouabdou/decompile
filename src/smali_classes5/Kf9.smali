@@ -1,29 +1,32 @@
 .class public final LKf9;
-.super LPf9;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LKf9;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'networkingClient\':r?:\'[0]\',\'alertPresenter\':r?:\'[1]\',\'updatePublicProfiles\':f?(f()),\'currentUserId\':s?,\'currentUsername\':s?,\'serviceConfig\':r?:\'[2]\',\'blizzardLogger\':r?:\'[3]\',\'onboardingType\':r?<e>:\'[4]\',\'shouldAnimatePresentation\':b@?,\'showMyNameDeprecation\':r?:\'[5]\'"
+    typeReferences = {
+        Lcom/snap/composer/networking/ClientProtocol;,
+        Lcom/snap/composer/foundation/IAlertPresenter;,
+        Lcom/snap/impala/snappro/core/ImpalaMainServiceConfig;,
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/impala/snappro/core/ImpalaProfileOnboardingType;,
+        Lcom/snap/impala/snappro/core/OnboardingShowMyName;
+    }
+.end annotation
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    new-instance v0, LKf9;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
-    sput-object v0, LKf9;->a:LKf9;
-
-    .line 7
-    .line 8
     return-void
 .end method

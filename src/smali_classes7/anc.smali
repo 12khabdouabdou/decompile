@@ -2,137 +2,90 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LKoa;
 
-
-# static fields
-.field public static final a:Lanc;
+# instance fields
+.field public final a:Lcom/snap/snapscan/generator/SnapcodeSvgGenerator;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
-    new-instance v0, Lanc;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    new-instance v0, Lcom/snap/snapscan/generator/SnapcodeSvgGenerator;
+
     .line 5
     .line 6
-    sput-object v0, Lanc;->a:Lanc;
+    invoke-direct {v0}, Lcom/snap/snapscan/generator/SnapcodeSvgGenerator;-><init>()V
 
     .line 7
     .line 8
+    .line 9
+    iput-object v0, p0, Lanc;->a:Lcom/snap/snapscan/generator/SnapcodeSvgGenerator;
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final onResult(Ljava/lang/Object;)V
-    .locals 3
+.method public final a(Lsb3;)V
+    .locals 2
 
     .line 1
-    check-cast p1, LTr7;
+    :try_start_0
+    iget-object v0, p0, Lanc;->a:Lcom/snap/snapscan/generator/SnapcodeSvgGenerator;
 
     .line 2
     .line 3
-    iget v0, p1, LTr7;->a:I
+    invoke-static {p1}, LkRk;->n(Lsb3;)Lcom/snap/snapscan/CodeType;
 
     .line 4
     .line 5
-    packed-switch v0, :pswitch_data_0
-
     .line 6
+    move-result-object p1
+
     .line 7
+    const/16 v1, 0x64
+
     .line 8
-    iget-object p1, p1, LTr7;->b:LtZe;
-
     .line 9
-    .line 10
-    check-cast p1, Lioc;
+    invoke-virtual {v0, v1, p1}, Lcom/snap/snapscan/generator/SnapcodeSvgGenerator;->setUp(ILcom/snap/snapscan/CodeType;)V
+    :try_end_0
+    .catch Lcom/snap/snapscan/SnapscanSetupError; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 10
     .line 11
     .line 12
-    iget-object v0, p1, Lioc;->n:LXfi;
+    return-void
 
     .line 13
+    :catch_0
+    move-exception p1
+
     .line 14
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    new-instance v0, LPGa;
 
     .line 15
     .line 16
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
     .line 17
-    move-result-object v0
-
     .line 18
-    check-cast v0, LHHc;
-
     .line 19
+    move-result-object v1
+
     .line 20
-    new-instance v1, LXmc;
+    invoke-direct {v0, v1, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 21
     .line 22
-    const/4 v2, 0x2
-
     .line 23
-    invoke-direct {v1, v2, p1}, LXmc;-><init>(ILjava/lang/Object;)V
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-virtual {v0, v1}, LHHc;->a(LKoa;)V
-
-    .line 27
-    .line 28
-    .line 29
-    goto :goto_0
-
-    .line 30
-    :pswitch_0
-    iget-object p1, p1, LTr7;->b:LtZe;
-
-    .line 31
-    .line 32
-    check-cast p1, LWr7;
-
-    .line 33
-    .line 34
-    iget-object v0, p1, LWr7;->f:LHHc;
-
-    .line 35
-    .line 36
-    new-instance v1, LRr7;
-
-    .line 37
-    .line 38
-    const/4 v2, 0x2
-
-    .line 39
-    invoke-direct {v1, p1, v2}, LRr7;-><init>(LWr7;I)V
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {v0, v1}, LHHc;->a(LKoa;)V
-
-    .line 43
-    .line 44
-    .line 45
-    :goto_0
-    return-void
-
-    .line 46
-    nop
-
-    .line 47
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    throw v0
 .end method

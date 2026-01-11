@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lil4;
+    proxyClass = LJp4;
     schema = "\'getProviderForUser\':f|m|(s, r<e>:\'[0]\', b, f(r?:\'[1]\', r?:\'[2]\')),\'getProviderForGroup\':f|m|(s, r<e>:\'[0]\', f(r?:\'[1]\', r?:\'[2]\')),\'getProviderForGlobalSound\':f|m|(r<e>:\'[0]\', f(r?:\'[1]\', r?:\'[2]\')),\'getSelectedSoundMetadataForUser\':f|m|(s, r<e>:\'[0]\', f(r?:\'[3]\', r?:\'[2]\')),\'getSelectedSoundMetadataForGroup\':f|m|(s, r<e>:\'[0]\', f(r?:\'[3]\', r?:\'[2]\')),\'getSelectedGlobalSoundMetadata\':f|m|(r<e>:\'[0]\', f(r?:\'[3]\', r?:\'[2]\'))"
     typeReferences = {
         Lcom/snap/plus/CustomNotificationSoundType;,
         Lcom/snap/plus/CustomNotificationSoundProvider;,
         Lcom/snap/composer/foundation/Error;,
-        Lbl4;
+        LCp4;
     }
 .end annotation
 

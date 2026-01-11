@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final synthetic a:LYI4;
+.field public final a:Ltc5;
 
 
 # direct methods
-.method public constructor <init>(LYI4;)V
+.method public constructor <init>(Ltc5;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LDJ4;->a:LYI4;
+    iput-object p1, p0, LDJ4;->a:Ltc5;
 
     .line 5
     .line 6

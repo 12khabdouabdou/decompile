@@ -3,63 +3,63 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
-.implements LvE2;
-.implements LZOc;
+.implements LY2d;
+.implements LqH2;
+.implements LT3d;
 
 
 # instance fields
-.field public A0:LXF4;
+.field public A0:LxM4;
 
-.field public B0:LAG2;
+.field public B0:LsJ2;
 
-.field public C0:LXF4;
+.field public C0:LxM4;
 
-.field public D0:LqL2;
+.field public D0:LQN2;
 
-.field public E0:LNL2;
+.field public E0:LiO2;
 
-.field public F0:LXF4;
+.field public F0:LxM4;
 
-.field public G0:LXF4;
+.field public G0:LxM4;
 
-.field public H0:LkT6;
+.field public H0:LjX6;
 
-.field public I0:LDi7;
+.field public I0:LHn7;
 
-.field public J0:LXF4;
+.field public J0:LxM4;
 
-.field public K0:LB99;
+.field public K0:LAh9;
 
-.field public L0:LPm9;
+.field public L0:LIv9;
 
-.field public M0:LcYg;
+.field public M0:LPjh;
 
-.field public N0:LXF4;
+.field public N0:LxM4;
 
-.field public O0:LXF4;
+.field public O0:LxM4;
 
-.field public P0:LXF4;
+.field public P0:LxM4;
 
-.field public Q0:LTqc;
+.field public Q0:LmGc;
 
-.field public R0:LXF4;
+.field public R0:LxM4;
 
-.field public S0:LXF4;
+.field public S0:LxM4;
 
-.field public T0:LzH4;
+.field public T0:LIM4;
 
-.field public U0:LXF4;
+.field public U0:LxM4;
 
-.field public V0:Lnwf;
+.field public V0:LyPf;
 
-.field public W0:LIzf;
+.field public W0:LSSf;
 
-.field public X0:LXF4;
+.field public X0:LxM4;
 
-.field public Y0:LFRb;
+.field public Y0:Lb6c;
 
-.field public Z0:LuFa;
+.field public Z0:LCRa;
 
 .field public a1:Z
 
@@ -69,17 +69,17 @@
 
 .field public final d1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final e1:LXfi;
+.field public final e1:LREi;
 
-.field public final f1:LXfi;
+.field public final f1:LREi;
 
-.field public g1:LiE2;
+.field public g1:LdH2;
 
 .field public h1:Landroid/view/ViewGroup;
 
-.field public i1:LM3d;
+.field public i1:LIid;
 
-.field public final j1:LMq6;
+.field public final j1:LZt6;
 
 .field public k1:Z
 
@@ -89,25 +89,23 @@
 
 .field public n1:Z
 
-.field public o1:LVK2;
+.field public o1:LzN2;
 
-.field public p1:LS04;
+.field public p1:Ly54;
 
 .field public final q1:Z
 
-.field public final r1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public final r1:LYI2;
 
-.field public final s1:LZF2;
+.field public final s1:Lnp0;
 
-.field public final t1:LWm0;
+.field public w0:LxM4;
 
-.field public w0:LXF4;
+.field public x0:LyR1;
 
-.field public x0:LUN1;
+.field public y0:LYG2;
 
-.field public y0:LdE2;
-
-.field public z0:LXF4;
+.field public z0:LxM4;
 
 
 # direct methods
@@ -120,7 +118,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LeEc;->Z:LeEc;
+    sget-object v0, LSSc;->Z:LSSc;
 
     .line 5
     .line 6
@@ -128,7 +126,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, LeEc;->g(Ljava/lang/String;)Lrn0;
+    invoke-virtual {v0, v1}, LSSc;->g(Ljava/lang/String;)LJp0;
 
     .line 9
     .line 10
@@ -146,7 +144,7 @@
 
     .line 17
     .line 18
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 19
     .line 20
@@ -158,66 +156,66 @@
 
     .line 23
     .line 24
-    new-instance v0, LtG2;
+    new-instance v0, LnJ2;
 
     .line 25
     .line 26
     const/4 v2, 0x1
 
     .line 27
-    invoke-direct {v0, p0, v2}, LtG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+    invoke-direct {v0, p0, v2}, LnJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
 
     .line 28
     .line 29
     .line 30
-    new-instance v2, LXfi;
+    new-instance v2, LREi;
 
     .line 31
     .line 32
-    invoke-direct {v2, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v2, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 33
     .line 34
     .line 35
-    iput-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->e1:LXfi;
+    iput-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->e1:LREi;
 
     .line 36
     .line 37
-    new-instance v0, LtG2;
+    new-instance v0, LnJ2;
 
     .line 38
     .line 39
     const/4 v2, 0x0
 
     .line 40
-    invoke-direct {v0, p0, v2}, LtG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+    invoke-direct {v0, p0, v2}, LnJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
 
     .line 41
     .line 42
     .line 43
-    new-instance v2, LXfi;
+    new-instance v2, LREi;
 
     .line 44
     .line 45
-    invoke-direct {v2, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v2, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 46
     .line 47
     .line 48
-    iput-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LXfi;
+    iput-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LREi;
 
     .line 49
     .line 50
-    new-instance v0, LMq6;
+    new-instance v0, LZt6;
 
     .line 51
     .line 52
-    invoke-direct {v0, p0}, LMq6;-><init>(Lcom/snap/messaging/chat/ChatFragment;)V
+    invoke-direct {v0, p0}, LZt6;-><init>(Lcom/snap/messaging/chat/ChatFragment;)V
 
     .line 53
     .line 54
     .line 55
-    iput-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->j1:LMq6;
+    iput-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->j1:LZt6;
 
     .line 56
     .line 57
@@ -228,1149 +226,36 @@
 
     .line 59
     .line 60
-    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    sget-object v0, LYI2;->Z:LYI2;
 
     .line 61
     .line 62
-    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    iput-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->r1:LYI2;
 
     .line 63
     .line 64
-    .line 65
-    iput-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->r1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-static {v0, v0, v1}, Lve4;->c(LYI2;LYI2;Ljava/lang/String;)Lnp0;
 
+    .line 65
     .line 66
     .line 67
-    sget-object v0, LZF2;->Z:LZF2;
-
-    .line 68
-    .line 69
-    iput-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->s1:LZF2;
-
-    .line 70
-    .line 71
-    invoke-static {v0, v0, v1}, LEU0;->h(LZF2;LZF2;Ljava/lang/String;)LWm0;
-
-    .line 72
-    .line 73
-    .line 74
     move-result-object v0
 
-    .line 75
-    iput-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->t1:LWm0;
+    .line 68
+    iput-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->s1:Lnp0;
 
-    .line 76
-    .line 77
+    .line 69
+    .line 70
     return-void
 .end method
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->O0:LXF4;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
-
-    .line 12
-    check-cast p1, LLPb;
-
-    .line 13
-    .line 14
-    invoke-virtual {p1}, LLPb;->a()LFRb;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p1
-
-    .line 18
-    iput-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->Y0:LFRb;
-
-    .line 19
-    .line 20
-    return-void
-
-    .line 21
-    :cond_0
-    const-string p1, "messagingConfigSnapshot"
-
-    .line 22
-    .line 23
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 24
-    .line 25
-    .line 26
-    const/4 p1, 0x0
-
-    .line 27
-    throw p1
-.end method
-
-.method public final B1(Landroid/os/Bundle;)V
-    .locals 14
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    const/4 v1, 0x0
-
-    .line 3
-    const/4 v2, 0x1
-
-    .line 4
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->B1(Landroid/os/Bundle;)V
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LNL2;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    invoke-virtual {p1}, LNL2;->i()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    sget-object v3, LLwf;->e0:LLwf;
-
-    .line 16
-    .line 17
-    iget-object v4, p0, LOwf;->a:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    invoke-virtual {p0, p1, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 20
-    .line 21
-    .line 22
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->j1:LMq6;
-
-    .line 23
-    .line 24
-    invoke-virtual {p0, p1, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 25
-    .line 26
-    .line 27
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->w0:LXF4;
-
-    .line 28
-    .line 29
-    const-string v5, "bloopsChatPreparationService"
-
-    .line 30
-    .line 31
-    const/4 v6, 0x0
-
-    .line 32
-    if-eqz p1, :cond_16
-
-    .line 33
-    .line 34
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object p1
-
-    .line 38
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 39
-    .line 40
-    invoke-virtual {p0, p1, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 41
-    .line 42
-    .line 43
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->p1:LS04;
-
-    .line 44
-    .line 45
-    if-eqz p1, :cond_0
-
-    .line 46
-    .line 47
-    const/4 v11, 0x1
-
-    .line 48
-    goto :goto_0
-
-    .line 49
-    :cond_0
-    const/4 v11, 0x0
-
-    .line 50
-    :goto_0
-    if-eqz p1, :cond_1
-
-    .line 51
-    .line 52
-    invoke-virtual {p1}, LS04;->a()LiE2;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object p1
-
-    .line 56
-    goto :goto_1
-
-    .line 57
-    :cond_1
-    move-object p1, v6
-
-    .line 58
-    :goto_1
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object v7
-
-    .line 62
-    if-eqz v7, :cond_2
-
-    .line 63
-    .line 64
-    const-string v8, "NavigablePayload"
-
-    .line 65
-    .line 66
-    invoke-virtual {v7, v8}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-object v7
-
-    .line 70
-    check-cast v7, LtE2;
-
-    .line 71
-    .line 72
-    goto :goto_2
-
-    .line 73
-    :cond_2
-    move-object v7, v6
-
-    .line 74
-    :goto_2
-    instance-of v8, v7, LtE2;
-
-    .line 75
-    .line 76
-    if-eqz v8, :cond_3
-
-    .line 77
-    .line 78
-    goto :goto_3
-
-    .line 79
-    :cond_3
-    move-object v7, v6
-
-    .line 80
-    :goto_3
-    if-eqz v7, :cond_4
-
-    .line 81
-    .line 82
-    invoke-virtual {v7}, LtE2;->a()LiE2;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object v7
-
-    .line 86
-    if-nez v7, :cond_5
-
-    .line 87
-    .line 88
-    :cond_4
-    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->I0:LDi7;
-
-    .line 89
-    .line 90
-    if-eqz v7, :cond_15
-
-    .line 91
-    .line 92
-    invoke-virtual {v7}, LDi7;->a()LiE2;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object v7
-
-    .line 96
-    :cond_5
-    if-nez p1, :cond_6
-
-    .line 97
-    .line 98
-    move-object v9, v7
-
-    .line 99
-    goto :goto_4
-
-    .line 100
-    :cond_6
-    move-object v9, p1
-
-    .line 101
-    :goto_4
-    if-eqz v11, :cond_8
-
-    .line 102
-    .line 103
-    if-eqz v7, :cond_8
-
-    .line 104
-    .line 105
-    if-nez v9, :cond_7
-
-    .line 106
-    .line 107
-    goto :goto_5
-
-    .line 108
-    :cond_7
-    invoke-virtual {v7}, LiE2;->b()I
-
-    .line 109
-    .line 110
-    .line 111
-    move-result p1
-
-    .line 112
-    invoke-virtual {v9, p1}, LiE2;->e(I)V
-
-    .line 113
-    .line 114
-    .line 115
-    :cond_8
-    :goto_5
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->e1:LXfi;
-
-    .line 116
-    .line 117
-    if-eqz v9, :cond_11
-
-    .line 118
-    .line 119
-    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->C0:LXF4;
-
-    .line 120
-    .line 121
-    if-eqz v7, :cond_10
-
-    .line 122
-    .line 123
-    invoke-virtual {v7}, LXF4;->get()Ljava/lang/Object;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v7
-
-    .line 127
-    check-cast v7, LZK2;
-
-    .line 128
-    .line 129
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
-
-    .line 130
-    .line 131
-    .line 132
-    move-result-object v8
-
-    .line 133
-    new-instance v10, Lfy0;
-
-    .line 134
-    .line 135
-    const/16 v12, 0xf
-
-    .line 136
-    .line 137
-    invoke-direct {v10, v12, p0}, Lfy0;-><init>(ILjava/lang/Object;)V
-
-    .line 138
-    .line 139
-    .line 140
-    iget-object v12, p0, Lcom/snap/messaging/chat/ChatFragment;->Y0:LFRb;
-
-    .line 141
-    .line 142
-    if-eqz v12, :cond_f
-
-    .line 143
-    .line 144
-    invoke-virtual {v12}, LFRb;->b()Z
-
-    .line 145
-    .line 146
-    .line 147
-    move-result v12
-
-    .line 148
-    iget-object v13, p0, Lcom/snap/messaging/chat/ChatFragment;->c1:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 149
-    .line 150
-    invoke-virtual/range {v7 .. v13}, LZK2;->a(Landroid/content/Context;LiE2;Lfy0;ZZLio/reactivex/rxjava3/subjects/PublishSubject;)LVK2;
-
-    .line 151
-    .line 152
-    .line 153
-    move-result-object v7
-
-    .line 154
-    invoke-virtual {v7}, LVK2;->r()Lio/reactivex/rxjava3/core/Observable;
-
-    .line 155
-    .line 156
-    .line 157
-    move-result-object v8
-
-    .line 158
-    invoke-static {v8}, Link;->g(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
-
-    .line 159
-    .line 160
-    .line 161
-    move-result-object v8
-
-    .line 162
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 163
-    .line 164
-    .line 165
-    move-result-object v10
-
-    .line 166
-    check-cast v10, Lzre;
-
-    .line 167
-    .line 168
-    check-cast v10, LBre;
-
-    .line 169
-    .line 170
-    invoke-virtual {v10}, LBre;->g()LF06;
-
-    .line 171
-    .line 172
-    .line 173
-    move-result-object v10
-
-    .line 174
-    new-instance v11, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
-
-    .line 175
-    .line 176
-    invoke-direct {v11, v8, v10}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 177
-    .line 178
-    .line 179
-    new-instance v8, LUZ1;
-
-    .line 180
-    .line 181
-    const/16 v10, 0x15
-
-    .line 182
-    .line 183
-    invoke-direct {v8, p0, v10, v9}, LUZ1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 184
-    .line 185
-    .line 186
-    const/4 v10, 0x6
-
-    .line 187
-    invoke-static {v11, v8, v6, v6, v10}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 188
-    .line 189
-    .line 190
-    move-result-object v8
-
-    .line 191
-    invoke-virtual {p0, v8, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 192
-    .line 193
-    .line 194
-    invoke-virtual {p0, v7, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 195
-    .line 196
-    .line 197
-    iput-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->o1:LVK2;
-
-    .line 198
-    .line 199
-    sget v7, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 200
-    .line 201
-    const/16 v8, 0x1f
-
-    .line 202
-    .line 203
-    if-lt v7, v8, :cond_9
-
-    .line 204
-    .line 205
-    sget-object v7, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->INSTANCE:Lcom/snap/framework/contentcapture/ContentCaptureHelper;
-
-    .line 206
-    .line 207
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireActivity()Landroidx/fragment/app/FragmentActivity;
-
-    .line 208
-    .line 209
-    .line 210
-    move-result-object v8
-
-    .line 211
-    invoke-virtual {v9}, LiE2;->a()Ljava/lang/String;
-
-    .line 212
-    .line 213
-    .line 214
-    move-result-object v10
-
-    .line 215
-    invoke-virtual {v7, v8, v10}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->onMaybeNewConversation(Landroid/app/Activity;Ljava/lang/String;)V
-
-    .line 216
-    .line 217
-    .line 218
-    :cond_9
-    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
-
-    .line 219
-    .line 220
-    invoke-virtual {v9, v7}, LiE2;->equals(Ljava/lang/Object;)Z
-
-    .line 221
-    .line 222
-    .line 223
-    move-result v7
-
-    .line 224
-    if-eqz v7, :cond_a
-
-    .line 225
-    .line 226
-    goto :goto_6
-
-    .line 227
-    :cond_a
-    iput-object v9, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
-
-    .line 228
-    .line 229
-    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->w0:LXF4;
-
-    .line 230
-    .line 231
-    if-eqz v7, :cond_e
-
-    .line 232
-    .line 233
-    invoke-virtual {v7}, LXF4;->get()Ljava/lang/Object;
-
-    .line 234
-    .line 235
-    .line 236
-    move-result-object v5
-
-    .line 237
-    check-cast v5, Lei1;
-
-    .line 238
-    .line 239
-    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->U0:LXF4;
-
-    .line 240
-    .line 241
-    if-eqz v7, :cond_d
-
-    .line 242
-    .line 243
-    invoke-virtual {v7}, LXF4;->get()Ljava/lang/Object;
-
-    .line 244
-    .line 245
-    .line 246
-    move-result-object v7
-
-    .line 247
-    check-cast v7, LVbd;
-
-    .line 248
-    .line 249
-    invoke-virtual {v5, v9, v7}, Lei1;->j(LiE2;LVbd;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
-
-    .line 250
-    .line 251
-    .line 252
-    move-result-object v5
-
-    .line 253
-    sget-object v7, LAz2;->o0:LAz2;
-
-    .line 254
-    .line 255
-    sget-object v8, LTB2;->Y:LTB2;
-
-    .line 256
-    .line 257
-    invoke-static {v5, v8, v7}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->d(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 258
-    .line 259
-    .line 260
-    move-result-object v5
-
-    .line 261
-    invoke-virtual {p0, v5, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 262
-    .line 263
-    .line 264
-    :goto_6
-    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->N0:LXF4;
-
-    .line 265
-    .line 266
-    if-eqz v5, :cond_c
-
-    .line 267
-    .line 268
-    invoke-virtual {v5}, LXF4;->get()Ljava/lang/Object;
-
-    .line 269
-    .line 270
-    .line 271
-    move-result-object v5
-
-    .line 272
-    check-cast v5, LsF9;
-
-    .line 273
-    .line 274
-    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->o1:LVK2;
-
-    .line 275
-    .line 276
-    if-eqz v7, :cond_b
-
-    .line 277
-    .line 278
-    invoke-virtual {v7}, LVK2;->e()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 279
-    .line 280
-    .line 281
-    move-result-object v7
-
-    .line 282
-    invoke-virtual {v5, v7}, LsF9;->a(Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;)V
-
-    .line 283
-    .line 284
-    .line 285
-    invoke-virtual {p0, v5, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 286
-    .line 287
-    .line 288
-    goto :goto_7
-
-    .line 289
-    :cond_b
-    const-string p1, "chatMessagesSection"
-
-    .line 290
-    .line 291
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 292
-    .line 293
-    .line 294
-    throw v6
-
-    .line 295
-    :cond_c
-    const-string p1, "lastReceivedTextMessageProvider"
-
-    .line 296
-    .line 297
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 298
-    .line 299
-    .line 300
-    throw v6
-
-    .line 301
-    :cond_d
-    const-string p1, "participantObserverProvider"
-
-    .line 302
-    .line 303
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 304
-    .line 305
-    .line 306
-    throw v6
-
-    .line 307
-    :cond_e
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 308
-    .line 309
-    .line 310
-    throw v6
-
-    .line 311
-    :cond_f
-    const-string p1, "messagingUiConfigProvider"
-
-    .line 312
-    .line 313
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 314
-    .line 315
-    .line 316
-    throw v6
-
-    .line 317
-    :cond_10
-    const-string p1, "chatMessagesSectionFactory"
-
-    .line 318
-    .line 319
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 320
-    .line 321
-    .line 322
-    throw v6
-
-    .line 323
-    :cond_11
-    move-object v5, v6
-
-    .line 324
-    :goto_7
-    if-eqz v5, :cond_14
-
-    .line 325
-    .line 326
-    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->W0:LIzf;
-
-    .line 327
-    .line 328
-    if-eqz v5, :cond_13
-
-    .line 329
-    .line 330
-    const-string v7, "ChatFragment"
-
-    .line 331
-    .line 332
-    invoke-virtual {v5, v7}, LIzf;->c(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
-
-    .line 333
-    .line 334
-    .line 335
-    move-result-object v5
-
-    .line 336
-    new-instance v7, Lya0;
-
-    .line 337
-    .line 338
-    const/16 v8, 0x18
-
-    .line 339
-    .line 340
-    invoke-direct {v7, v8}, Lya0;-><init>(I)V
-
-    .line 341
-    .line 342
-    .line 343
-    invoke-virtual {v5, v7}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
-
-    .line 344
-    .line 345
-    .line 346
-    move-result-object v5
-
-    .line 347
-    new-instance v7, LwG2;
-
-    .line 348
-    .line 349
-    invoke-direct {v7, p0, v1}, LwG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
-
-    .line 350
-    .line 351
-    .line 352
-    new-instance v8, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
-
-    .line 353
-    .line 354
-    invoke-direct {v8, v5, v7}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
-
-    .line 355
-    .line 356
-    .line 357
-    sget-object v5, LsC2;->j0:LsC2;
-
-    .line 358
-    .line 359
-    invoke-virtual {v8, v5}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
-
-    .line 360
-    .line 361
-    .line 362
-    move-result-object v5
-
-    .line 363
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 364
-    .line 365
-    .line 366
-    move-result-object p1
-
-    .line 367
-    check-cast p1, Lzre;
-
-    .line 368
-    .line 369
-    check-cast p1, LBre;
-
-    .line 370
-    .line 371
-    invoke-virtual {p1}, LBre;->i()Lgn0;
-
-    .line 372
-    .line 373
-    .line 374
-    move-result-object p1
-
-    .line 375
-    invoke-virtual {v5, p1}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
-    .line 376
-    .line 377
-    .line 378
-    move-result-object p1
-
-    .line 379
-    sget-object v5, LAz2;->q0:LAz2;
-
-    .line 380
-    .line 381
-    new-instance v7, LvG2;
-
-    .line 382
-    .line 383
-    invoke-direct {v7, p0, v2}, LvG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
-
-    .line 384
-    .line 385
-    .line 386
-    invoke-static {p1, v5, v6, v7, v0}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 387
-    .line 388
-    .line 389
-    move-result-object p1
-
-    .line 390
-    invoke-virtual {p0, p1, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 391
-    .line 392
-    .line 393
-    sget-object p1, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
-
-    .line 394
-    .line 395
-    sget-object v5, LxG2;->e0:LxG2;
-
-    .line 396
-    .line 397
-    new-instance v5, LT2j;
-
-    .line 398
-    .line 399
-    invoke-direct {v5}, LT2j;-><init>()V
-
-    .line 400
-    .line 401
-    .line 402
-    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->c1:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 403
-    .line 404
-    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 405
-    .line 406
-    .line 407
-    new-instance v8, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
-    .line 408
-    .line 409
-    invoke-direct {v8, v7, v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 410
-    .line 411
-    .line 412
-    sget-object v5, LOF2;->t:LOF2;
-
-    .line 413
-    .line 414
-    new-instance v7, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
-
-    .line 415
-    .line 416
-    invoke-direct {v7, v8, v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
-
-    .line 417
-    .line 418
-    .line 419
-    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->x0:LUN1;
-
-    .line 420
-    .line 421
-    if-eqz v5, :cond_12
-
-    .line 422
-    .line 423
-    invoke-virtual {v5}, LUN1;->d()Lio/reactivex/rxjava3/core/Observable;
-
-    .line 424
-    .line 425
-    .line 426
-    move-result-object v5
-
-    .line 427
-    new-instance v8, LwG2;
-
-    .line 428
-    .line 429
-    invoke-direct {v8, p0, v2}, LwG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
-
-    .line 430
-    .line 431
-    .line 432
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 433
-    .line 434
-    .line 435
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
-
-    .line 436
-    .line 437
-    invoke-direct {v2, v5, v8}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
-
-    .line 438
-    .line 439
-    .line 440
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 441
-    .line 442
-    .line 443
-    invoke-static {v7, v2}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 444
-    .line 445
-    .line 446
-    move-result-object p1
-
-    .line 447
-    new-instance v2, LwG2;
-
-    .line 448
-    .line 449
-    invoke-direct {v2, p0, v0}, LwG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
-
-    .line 450
-    .line 451
-    .line 452
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
-
-    .line 453
-    .line 454
-    invoke-direct {v5, p1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
-
-    .line 455
-    .line 456
-    .line 457
-    sget-object p1, LuG2;->b:LuG2;
-
-    .line 458
-    .line 459
-    invoke-virtual {v5, p1}, Lio/reactivex/rxjava3/core/Observable;->R(Lio/reactivex/rxjava3/functions/BiPredicate;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
-
-    .line 460
-    .line 461
-    .line 462
-    move-result-object p1
-
-    .line 463
-    sget-object v2, LAz2;->p0:LAz2;
-
-    .line 464
-    .line 465
-    new-instance v5, LvG2;
-
-    .line 466
-    .line 467
-    invoke-direct {v5, p0, v1}, LvG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
-
-    .line 468
-    .line 469
-    .line 470
-    invoke-static {p1, v2, v6, v5, v0}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 471
-    .line 472
-    .line 473
-    move-result-object p1
-
-    .line 474
-    invoke-virtual {p0, p1, v3, v4}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 475
-    .line 476
-    .line 477
-    return-void
-
-    .line 478
-    :cond_12
-    const-string p1, "callStateObserver"
-
-    .line 479
-    .line 480
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 481
-    .line 482
-    .line 483
-    throw v6
-
-    .line 484
-    :cond_13
-    const-string p1, "screenshotWatchman"
-
-    .line 485
-    .line 486
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 487
-    .line 488
-    .line 489
-    throw v6
-
-    .line 490
-    :cond_14
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 491
-    .line 492
-    const-string v0, "Opening chat fragment with no chat context."
-
-    .line 493
-    .line 494
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 495
-    .line 496
-    .line 497
-    throw p1
-
-    .line 498
-    :cond_15
-    const-string p1, "feedNavTracker"
-
-    .line 499
-    .line 500
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 501
-    .line 502
-    .line 503
-    throw v6
-
-    .line 504
-    :cond_16
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 505
-    .line 506
-    .line 507
-    throw v6
-.end method
-
-.method public final C1()V
+.method public final A1()V
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->K0:LB99;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->K0:LAh9;
 
     .line 2
     .line 3
@@ -1378,20 +263,20 @@
 
     .line 4
     .line 5
-    sget-object v1, LfE1;->n0:LfE1;
+    sget-object v1, LvH1;->n0:LvH1;
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1}, LB99;->b(LcSa;)V
+    invoke-virtual {v0, v1}, LAh9;->b(LL4b;)V
 
     .line 8
     .line 9
     .line 10
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LXfi;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LREi;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -1399,11 +284,11 @@
     move-result-object v0
 
     .line 16
-    check-cast v0, LTP2;
+    check-cast v0, LvS2;
 
     .line 17
     .line 18
-    invoke-virtual {v0}, LTP2;->g()V
+    invoke-virtual {v0}, LvS2;->e()V
 
     .line 19
     .line 20
@@ -1416,7 +301,7 @@
     move-result-object v0
 
     .line 25
-    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 26
     .line 27
@@ -1444,7 +329,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {v1}, LiE2;->a()Ljava/lang/String;
+    invoke-virtual {v1}, LdH2;->a()Ljava/lang/String;
 
     .line 40
     .line 41
@@ -1458,75 +343,66 @@
     .line 45
     .line 46
     :cond_0
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->r1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()LDBe;
 
     .line 47
     .line 48
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
     .line 49
-    .line 50
-    .line 51
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()Lbke;
+    move-result-object v0
 
+    .line 50
+    check-cast v0, LxM4;
+
+    .line 51
     .line 52
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
     .line 53
     .line 54
-    move-result-object v0
-
     .line 55
-    check-cast v0, LXF4;
+    move-result-object v0
 
     .line 56
-    .line 57
-    invoke-virtual {v0}, LXF4;->get()Ljava/lang/Object;
+    check-cast v0, LPI2;
 
+    .line 57
     .line 58
+    sget-object v1, LtJ2;->t:LtJ2;
+
     .line 59
     .line 60
-    move-result-object v0
+    const/4 v2, 0x1
 
     .line 61
-    check-cast v0, LYF2;
+    invoke-virtual {v0, v1, v2}, LPI2;->a(LtJ2;Z)V
 
     .line 62
     .line 63
-    sget-object v1, LBG2;->t:LBG2;
-
     .line 64
-    .line 65
-    const/4 v2, 0x1
-
-    .line 66
-    invoke-virtual {v0, v1, v2}, LYF2;->a(LBG2;Z)V
-
-    .line 67
-    .line 68
-    .line 69
     return-void
 
-    .line 70
+    .line 65
     :cond_1
     const-string v0, "inAppNotificationPolicySetter"
 
-    .line 71
-    .line 72
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    .line 66
+    .line 67
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 73
-    .line 74
-    .line 75
+    .line 68
+    .line 69
+    .line 70
     const/4 v0, 0x0
 
-    .line 76
+    .line 71
     throw v0
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 6
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -1534,7 +410,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -1550,7 +426,7 @@
 
     .line 11
     .line 12
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->D0:LqL2;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->D0:LQN2;
 
     .line 13
     .line 14
@@ -1561,7 +437,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p0, v2}, Lcom/snap/messaging/chat/ChatFragment;->Y1(LqL2;)V
+    invoke-virtual {p0, v2}, Lcom/snap/messaging/chat/ChatFragment;->Y1(LQN2;)V
 
     .line 18
     .line 19
@@ -1570,15 +446,15 @@
 
     .line 21
     .line 22
-    new-instance v4, Lhad;
+    new-instance v4, LDpd;
 
     .line 23
     .line 24
-    sget-object v5, Lm8d;->i0:Lm8d;
+    sget-object v5, LFnd;->i0:LFnd;
 
     .line 25
     .line 26
-    invoke-direct {v4, v5, v3}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v5, v3}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 27
     .line 28
@@ -1588,7 +464,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()Lbke;
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()LDBe;
 
     .line 33
     .line 34
@@ -1596,11 +472,11 @@
     move-result-object v2
 
     .line 36
-    check-cast v2, LXF4;
+    check-cast v2, LxM4;
 
     .line 37
     .line 38
-    invoke-virtual {v2}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, LxM4;->get()Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -1608,22 +484,22 @@
     move-result-object v2
 
     .line 42
-    check-cast v2, LYF2;
+    check-cast v2, LPI2;
 
     .line 43
     .line 44
-    sget-object v3, LBG2;->c:LBG2;
+    sget-object v3, LtJ2;->c:LtJ2;
 
     .line 45
     .line 46
-    invoke-static {v2, v3}, Lenk;->k(LYF2;LBG2;)V
+    invoke-static {v2, v3}, LQMk;->f(LPI2;LtJ2;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 47
     .line 48
     .line 49
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 50
     .line 51
@@ -1644,7 +520,7 @@
 
     .line 56
     .line 57
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 58
     .line 59
@@ -1655,7 +531,7 @@
 
     .line 61
     :goto_0
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 62
     .line 63
@@ -1663,7 +539,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 66
     .line 67
@@ -1672,11 +548,11 @@
     throw v0
 .end method
 
-.method public final G1()V
+.method public final E1()V
     .locals 6
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -1684,7 +560,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -1729,18 +605,18 @@
 
     .line 23
     .line 24
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 25
     .line 26
-    sget-object v4, Lm8d;->j0:Lm8d;
+    sget-object v4, LFnd;->j0:LFnd;
 
     .line 27
     .line 28
     const/4 v5, 0x0
 
     .line 29
-    invoke-direct {v3, v4, v5}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v4, v5}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 30
     .line 31
@@ -1750,7 +626,7 @@
     .line 33
     .line 34
     .line 35
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->R0:LXF4;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->R0:LxM4;
 
     .line 36
     .line 37
@@ -1758,7 +634,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {v2}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, LxM4;->get()Ljava/lang/Object;
 
     .line 40
     .line 41
@@ -1766,11 +642,11 @@
     move-result-object v2
 
     .line 43
-    check-cast v2, LLGc;
+    check-cast v2, LvVc;
 
     .line 44
     .line 45
-    iget-object v3, v2, LLGc;->l:LHGc;
+    iget-object v3, v2, LvVc;->l:LsVc;
 
     .line 46
     .line 47
@@ -1778,7 +654,7 @@
 
     .line 48
     .line 49
-    invoke-virtual {v3}, LHGc;->f()LdHc;
+    invoke-virtual {v3}, LsVc;->g()LFVc;
 
     .line 50
     .line 51
@@ -1787,156 +663,143 @@
 
     .line 53
     :cond_1
-    sget-object v3, LdHc;->K:LcHc;
+    invoke-virtual {v2, v5}, LvVc;->b(LFVc;)Z
 
     .line 54
     .line 55
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 56
-    .line 57
-    .line 58
-    sget-object v3, LcHc;->k:LYQb;
+    move-result v3
 
+    .line 57
+    if-nez v3, :cond_2
+
+    .line 58
     .line 59
+    goto :goto_1
+
     .line 60
-    invoke-static {v5, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_2
+    iget-object v3, v2, LvVc;->a:LR93;
 
     .line 61
     .line 62
-    .line 63
-    move-result v3
+    check-cast v3, LFRe;
 
+    .line 63
     .line 64
-    if-nez v3, :cond_2
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 65
     .line 66
-    goto :goto_1
-
     .line 67
-    :cond_2
-    iget-object v3, v2, LLGc;->a:LB73;
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     .line 68
     .line 69
-    check-cast v3, LOze;
-
     .line 70
+    move-result-wide v3
+
     .line 71
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v2, v2, LvVc;->l:LsVc;
 
     .line 72
     .line 73
-    .line 74
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-wide v3
-
-    .line 78
-    iget-object v2, v2, LLGc;->l:LHGc;
-
-    .line 79
-    .line 80
     if-nez v2, :cond_3
 
-    .line 81
-    .line 82
+    .line 74
+    .line 75
     goto :goto_1
 
-    .line 83
+    .line 76
     :cond_3
-    invoke-virtual {v2, v3, v4}, LHGc;->o(J)V
+    invoke-virtual {v2, v3, v4}, LsVc;->p(J)V
+
+    .line 77
+    .line 78
+    .line 79
+    :goto_1
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()LDBe;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object v2
+
+    .line 83
+    check-cast v2, LxM4;
 
     .line 84
     .line 85
-    .line 86
-    :goto_1
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()Lbke;
+    invoke-virtual {v2}, LxM4;->get()Ljava/lang/Object;
 
+    .line 86
     .line 87
     .line 88
-    .line 89
     move-result-object v2
+
+    .line 89
+    check-cast v2, LPI2;
 
     .line 90
-    check-cast v2, LXF4;
-
     .line 91
+    sget-object v3, LtJ2;->b:LtJ2;
+
     .line 92
-    invoke-virtual {v2}, LXF4;->get()Ljava/lang/Object;
-
     .line 93
-    .line 94
-    .line 95
-    move-result-object v2
-
-    .line 96
-    check-cast v2, LYF2;
-
-    .line 97
-    .line 98
-    sget-object v3, LBG2;->b:LBG2;
-
-    .line 99
-    .line 100
-    invoke-static {v2, v3}, Lenk;->k(LYF2;LBG2;)V
+    invoke-static {v2, v3}, LQMk;->f(LPI2;LtJ2;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 101
-    .line 102
-    .line 103
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    .line 94
+    .line 95
+    .line 96
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
-    .line 104
-    .line 105
-    .line 106
+    .line 97
+    .line 98
+    .line 99
     return-void
 
-    .line 107
+    .line 100
     :cond_4
     :try_start_1
     const-string v0, "notificationToMessageReadyAnalytics"
 
-    .line 108
-    .line 109
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    .line 101
+    .line 102
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 110
-    .line 111
-    .line 112
+    .line 103
+    .line 104
+    .line 105
     throw v5
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 113
+    .line 106
     :goto_2
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
-    .line 114
-    .line 115
+    .line 107
+    .line 108
     if-eqz v2, :cond_5
 
-    .line 116
-    .line 117
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    .line 109
+    .line 110
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
-    .line 118
-    .line 119
-    .line 120
+    .line 111
+    .line 112
+    .line 113
     :cond_5
     throw v0
 .end method
 
-.method public final I0(Z)LhYj;
-    .locals 8
+.method public final F0(Z)Laok;
+    .locals 6
 
     .line 1
-    new-instance v0, LhYj;
+    new-instance v0, Laok;
 
     .line 2
     .line 3
@@ -1956,7 +819,7 @@
 
     .line 8
     .line 9
-    invoke-direct/range {v0 .. v5}, LhYj;-><init>(Lew8;LCq9;IZI)V
+    invoke-direct/range {v0 .. v5}, Laok;-><init>(LlFg;LMsi;IZI)V
 
     .line 10
     .line 11
@@ -1985,7 +848,7 @@
     move-result-object v1
 
     .line 24
-    invoke-static {v1}, LI0j;->x(Landroid/content/res/Resources$Theme;)Z
+    invoke-static {v1}, LNC8;->v(Landroid/content/res/Resources$Theme;)Z
 
     .line 25
     .line 26
@@ -1993,19 +856,19 @@
     move-result v1
 
     .line 28
-    xor-int/lit8 v7, v1, 0x1
+    xor-int/lit8 v1, v1, 0x1
 
     .line 29
     .line 30
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 31
     .line 32
-    const/16 v2, 0x17
+    const/16 v3, 0x17
 
     .line 33
     .line 34
-    if-lt v1, v2, :cond_0
+    if-lt v2, v3, :cond_0
 
     .line 35
     .line 36
@@ -2017,12 +880,12 @@
     move-result-object p1
 
     .line 40
-    const v1, 0x7f04054b
+    const v2, 0x7f0405f5
 
     .line 41
     .line 42
     .line 43
-    invoke-static {p1, v1}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {p1, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 44
     .line 45
@@ -2030,48 +893,205 @@
     move-result p1
 
     .line 47
-    new-instance v4, LnYj;
+    new-instance v2, Lgok;
 
     .line 48
     .line 49
-    invoke-direct {v4, p1}, LnYj;-><init>(I)V
+    invoke-direct {v2, p1}, Lgok;-><init>(I)V
 
     .line 50
     .line 51
     .line 52
-    new-instance v2, LhYj;
+    invoke-static {v0, v2, v1}, Laok;->a(Laok;Lgok;Z)Laok;
 
     .line 53
     .line 54
-    iget-boolean v6, v0, LhYj;->d:Z
-
     .line 55
+    move-result-object p1
+
     .line 56
-    iget-object v3, v0, LhYj;->a:Lew8;
+    return-object p1
 
     .line 57
-    .line 58
-    iget v5, v0, LhYj;->c:I
-
-    .line 59
-    .line 60
-    invoke-direct/range {v2 .. v7}, LhYj;-><init>(Lew8;LCq9;IZZ)V
-
-    .line 61
-    .line 62
-    .line 63
-    return-object v2
-
-    .line 64
     :cond_0
     return-object v0
 .end method
 
-.method public final I1()V
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 3
+
+    .line 1
+    sget-object p1, LOdh;->a:LNdh;
+
+    .line 2
+    .line 3
+    const-string p3, "ChatFragment:onCreateView"
+
+    .line 4
+    .line 5
+    invoke-virtual {p1, p3}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result p3
+
+    .line 9
+    :try_start_0
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LiO2;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-virtual {v0}, LiO2;->b()V
+
+    .line 14
+    .line 15
+    .line 16
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->B0:LsJ2;
+
+    .line 17
+    .line 18
+    const/4 v1, 0x0
+
+    .line 19
+    if-eqz v0, :cond_1
+
+    .line 20
+    .line 21
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
+
+    .line 22
+    .line 23
+    if-eqz v2, :cond_0
+
+    .line 24
+    .line 25
+    invoke-virtual {v2}, LdH2;->c()Lkmh;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :catchall_0
+    move-exception p1
+
+    .line 31
+    goto :goto_1
+
+    .line 32
+    :cond_0
+    :goto_0
+    invoke-virtual {v0, p2, v1}, LsJ2;->a(Landroid/view/ViewGroup;Lkmh;)Landroid/view/View;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p2
+
+    .line 36
+    check-cast p2, Landroid/view/ViewGroup;
+
+    .line 37
+    .line 38
+    iput-object p2, p0, Lcom/snap/messaging/chat/ChatFragment;->h1:Landroid/view/ViewGroup;
+
+    .line 39
+    .line 40
+    iget-object p2, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LREi;
+
+    .line 41
+    .line 42
+    invoke-virtual {p2}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object p2
+
+    .line 46
+    check-cast p2, LvS2;
+
+    .line 47
+    .line 48
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->X1()Landroid/view/ViewGroup;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
+    invoke-virtual {p2, v0}, LvS2;->d(Landroid/view/ViewGroup;)V
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->X1()Landroid/view/ViewGroup;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 59
+    invoke-virtual {p1, p3}, LNdh;->h(I)V
+
+    .line 60
+    .line 61
+    .line 62
+    return-object p2
+
+    .line 63
+    :cond_1
+    :try_start_1
+    const-string p1, "chatFragmentPreloader"
+
+    .line 64
+    .line 65
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    throw v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 69
+    :goto_1
+    sget-object p2, LOdh;->b:LtGi;
+
+    .line 70
+    .line 71
+    if-eqz p2, :cond_2
+
+    .line 72
+    .line 73
+    invoke-virtual {p2, p3}, LtGi;->o(I)V
+
+    .line 74
+    .line 75
+    .line 76
+    :cond_2
+    throw p1
+.end method
+
+.method public final G1()V
     .locals 4
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -2079,7 +1099,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -2096,7 +1116,7 @@
 
     .line 12
     .line 13
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 14
     .line 15
@@ -2104,7 +1124,7 @@
 
     .line 16
     .line 17
-    iget-object v3, p0, Lcom/snap/messaging/chat/ChatFragment;->y0:LdE2;
+    iget-object v3, p0, Lcom/snap/messaging/chat/ChatFragment;->y0:LYG2;
 
     .line 18
     .line 19
@@ -2112,7 +1132,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v3, v2}, LdE2;->k(LiE2;)V
+    invoke-interface {v3, v2}, LYG2;->k(LdH2;)V
 
     .line 22
     .line 23
@@ -2132,7 +1152,7 @@
 
     .line 28
     .line 29
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -2147,7 +1167,7 @@
     .line 34
     :cond_1
     :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 35
     .line 36
@@ -2156,7 +1176,7 @@
 
     .line 38
     :goto_1
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 39
     .line 40
@@ -2164,7 +1184,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 43
     .line 44
@@ -2173,185 +1193,15 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
-    .locals 3
-
-    .line 1
-    sget-object p1, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string p3, "ChatFragment:onCreateView"
-
-    .line 4
-    .line 5
-    invoke-virtual {p1, p3}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result p3
-
-    .line 9
-    :try_start_0
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LNL2;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    invoke-virtual {v0}, LNL2;->b()V
-
-    .line 14
-    .line 15
-    .line 16
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->B0:LAG2;
-
-    .line 17
-    .line 18
-    const/4 v1, 0x0
-
-    .line 19
-    if-eqz v0, :cond_1
-
-    .line 20
-    .line 21
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
-
-    .line 22
-    .line 23
-    if-eqz v2, :cond_0
-
-    .line 24
-    .line 25
-    invoke-virtual {v2}, LiE2;->c()Lq0h;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v1
-
-    .line 29
-    goto :goto_0
-
-    .line 30
-    :catchall_0
-    move-exception p1
-
-    .line 31
-    goto :goto_1
-
-    .line 32
-    :cond_0
-    :goto_0
-    invoke-virtual {v0, p2, v1}, LAG2;->a(Landroid/view/ViewGroup;Lq0h;)Landroid/view/View;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p2
-
-    .line 36
-    check-cast p2, Landroid/view/ViewGroup;
-
-    .line 37
-    .line 38
-    iput-object p2, p0, Lcom/snap/messaging/chat/ChatFragment;->h1:Landroid/view/ViewGroup;
-
-    .line 39
-    .line 40
-    iget-object p2, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LXfi;
-
-    .line 41
-    .line 42
-    invoke-virtual {p2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object p2
-
-    .line 46
-    check-cast p2, LTP2;
-
-    .line 47
-    .line 48
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->X1()Landroid/view/ViewGroup;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    invoke-virtual {p2, v0}, LTP2;->f(Landroid/view/ViewGroup;)V
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->X1()Landroid/view/ViewGroup;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object p2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 59
-    invoke-virtual {p1, p3}, LWRg;->h(I)V
-
-    .line 60
-    .line 61
-    .line 62
-    return-object p2
-
-    .line 63
-    :cond_1
-    :try_start_1
-    const-string p1, "chatFragmentPreloader"
-
-    .line 64
-    .line 65
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 66
-    .line 67
-    .line 68
-    throw v1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 69
-    :goto_1
-    sget-object p2, LXRg;->b:Lzhi;
-
-    .line 70
-    .line 71
-    if-eqz p2, :cond_2
-
-    .line 72
-    .line 73
-    invoke-virtual {p2, p3}, Lzhi;->o(I)V
-
-    .line 74
-    .line 75
-    .line 76
-    :cond_2
-    throw p1
-.end method
-
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 8
 
     .line 1
-    iget-object p1, p0, LOwf;->a:Ljava/lang/String;
+    iget-object p1, p0, LXPf;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    sget-object p2, LXRg;->a:LWRg;
+    sget-object p2, LOdh;->a:LNdh;
 
     .line 4
     .line 5
@@ -2359,7 +1209,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p2, v0}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {p2, v0}, LNdh;->e(Ljava/lang/String;)I
 
     .line 8
     .line 9
@@ -2368,7 +1218,7 @@
 
     .line 11
     :try_start_0
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LNL2;
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LiO2;
 
     .line 12
     .line 13
@@ -2376,7 +1226,7 @@
     move-result-object v1
 
     .line 15
-    invoke-virtual {v1}, LNL2;->c()V
+    invoke-virtual {v1}, LiO2;->c()V
 
     .line 16
     .line 17
@@ -2389,7 +1239,7 @@
     move-result-object v1
 
     .line 22
-    const v2, 0x7f0b048b
+    const v2, 0x7f0b0514
 
     .line 23
     .line 24
@@ -2402,7 +1252,7 @@
     move-result-object v1
 
     .line 29
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->T0:LzH4;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->T0:LIM4;
 
     .line 30
     .line 31
@@ -2417,7 +1267,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v2, v4}, LzH4;->k(Lio/reactivex/rxjava3/core/Observable;)V
+    invoke-virtual {v2, v4}, LIM4;->k(Lio/reactivex/rxjava3/core/Observable;)V
 
     .line 37
     .line 38
@@ -2426,16 +1276,16 @@
 
     .line 40
     .line 41
-    invoke-virtual {v2, v4}, LzH4;->l(Lio/reactivex/rxjava3/subjects/BehaviorSubject;)V
+    invoke-virtual {v2, v4}, LIM4;->l(Lio/reactivex/rxjava3/subjects/BehaviorSubject;)V
 
     .line 42
     .line 43
     .line 44
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 45
     .line 46
-    invoke-virtual {v2, v4}, LzH4;->b(LiE2;)V
+    invoke-virtual {v2, v4}, LIM4;->b(LdH2;)V
 
     .line 47
     .line 48
@@ -2448,17 +1298,17 @@
     move-result-object v4
 
     .line 53
-    invoke-virtual {v2, v4}, LzH4;->m(Landroid/view/ViewGroup;)V
+    invoke-virtual {v2, v4}, LIM4;->m(Landroid/view/ViewGroup;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {v2, v1}, LzH4;->e(Landroid/view/View;)V
+    invoke-virtual {v2, v1}, LIM4;->e(Landroid/view/View;)V
 
     .line 57
     .line 58
     .line 59
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->M0:LcYg;
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->M0:LPjh;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2473,7 +1323,7 @@
     .line 64
     .line 65
     :try_start_1
-    invoke-virtual {v4}, LcYg;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    invoke-virtual {v4}, LPjh;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 66
     .line 67
@@ -2481,12 +1331,12 @@
     move-result-object v4
 
     .line 69
-    invoke-virtual {v2, v4}, LzH4;->f(Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;)V
+    invoke-virtual {v2, v4}, LIM4;->g(Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;)V
 
     .line 70
     .line 71
     .line 72
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->M0:LcYg;
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->M0:LPjh;
 
     .line 73
     .line 74
@@ -2494,7 +1344,7 @@
 
     .line 75
     .line 76
-    invoke-virtual {v4}, LcYg;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    invoke-virtual {v4}, LPjh;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 77
     .line 78
@@ -2502,90 +1352,90 @@
     move-result-object v4
 
     .line 80
-    invoke-virtual {v2, v4}, LzH4;->n(Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;)V
+    invoke-virtual {v2, v4}, LIM4;->n(Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;)V
 
     .line 81
     .line 82
     .line 83
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->j1:LMq6;
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->j1:LZt6;
 
     .line 84
     .line 85
-    invoke-virtual {v2, v4}, LzH4;->i(LiL2;)V
+    invoke-virtual {v2, v4}, LIM4;->j(LJN2;)V
 
     .line 86
     .line 87
     .line 88
-    invoke-virtual {v2}, LzH4;->j()V
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
     .line 89
     .line 90
     .line 91
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getLifecycle()Landroidx/lifecycle/Lifecycle;
-
-    .line 92
-    .line 93
-    .line 94
     move-result-object v4
 
+    .line 92
+    invoke-virtual {v2, v4}, LIM4;->h(Landroidx/lifecycle/Lifecycle;)V
+
+    .line 93
+    .line 94
     .line 95
-    invoke-virtual {v2, v4}, LzH4;->g(Landroidx/lifecycle/Lifecycle;)V
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->o1:LzN2;
 
     .line 96
     .line 97
-    .line 98
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->o1:LVK2;
-
-    .line 99
-    .line 100
     if-eqz v4, :cond_3
 
+    .line 98
+    .line 99
+    invoke-virtual {v2, v4}, LIM4;->c(LzN2;)V
+
+    .line 100
     .line 101
     .line 102
-    invoke-virtual {v2, v4}, LzH4;->c(LVK2;)V
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->p1:Ly54;
 
     .line 103
     .line 104
-    .line 105
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->p1:LS04;
+    invoke-static {v4}, Lmid;->b(Ljava/lang/Object;)Lmid;
 
+    .line 105
     .line 106
     .line 107
-    invoke-static {v4}, Lm3d;->b(Ljava/lang/Object;)Lm3d;
-
-    .line 108
-    .line 109
-    .line 110
     move-result-object v4
 
+    .line 108
+    invoke-virtual {v2, v4}, LIM4;->d(Lmid;)V
+
+    .line 109
+    .line 110
     .line 111
-    invoke-virtual {v2, v4}, LzH4;->d(Lm3d;)V
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->Y0:Lb6c;
 
     .line 112
     .line 113
-    .line 114
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->Y0:LFRb;
-
-    .line 115
-    .line 116
     if-eqz v4, :cond_2
 
+    .line 114
+    .line 115
+    invoke-virtual {v2, v4}, LIM4;->i(Lb6c;)V
+
+    .line 116
     .line 117
     .line 118
-    invoke-virtual {v2, v4}, LzH4;->h(LFRb;)V
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     .line 119
     .line 120
     .line 121
-    invoke-virtual {v2}, LzH4;->a()LgD;
+    move-result-object v4
 
     .line 122
+    invoke-virtual {v2, v4}, LIM4;->f(Landroidx/fragment/app/FragmentManager;)V
+
     .line 123
     .line 124
-    move-result-object v2
-
     .line 125
-    invoke-virtual {v2}, LgD;->d()LM3d;
+    invoke-virtual {v2}, LIM4;->a()LSE;
 
     .line 126
     .line 127
@@ -2593,261 +1443,260 @@
     move-result-object v2
 
     .line 129
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->b1:Ljava/lang/String;
+    invoke-virtual {v2}, LSE;->c()LIid;
 
     .line 130
     .line 131
-    invoke-virtual {v2, v4}, LM3d;->O(Ljava/lang/String;)V
-
     .line 132
+    move-result-object v2
+
     .line 133
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->b1:Ljava/lang/String;
+
     .line 134
-    iput-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LM3d;
-
     .line 135
-    .line 136
-    invoke-virtual {v2}, LM3d;->start()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v2, v4}, LIid;->Q(Ljava/lang/String;)V
 
+    .line 136
     .line 137
     .line 138
+    iput-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LIid;
+
     .line 139
+    .line 140
+    invoke-virtual {v2}, LIid;->start()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 141
+    .line 142
+    .line 143
     move-result-object v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 140
-    sget-object v4, LLwf;->Z:LLwf;
-
-    .line 141
-    .line 142
-    :try_start_2
-    invoke-virtual {p0, v2, v4, p1}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-
-    .line 143
     .line 144
-    .line 145
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LNL2;
+    sget-object v4, LUPf;->Z:LUPf;
 
+    .line 145
     .line 146
+    :try_start_2
+    invoke-virtual {p0, v2, v4, p1}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
     .line 147
     .line 148
-    move-result-object v2
-
     .line 149
-    invoke-virtual {v2}, LNL2;->d()V
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LiO2;
 
     .line 150
     .line 151
     .line 152
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LM3d;
+    move-result-object v2
 
     .line 153
-    .line 154
-    if-eqz v2, :cond_0
+    invoke-virtual {v2}, LiO2;->d()V
 
+    .line 154
     .line 155
     .line 156
-    invoke-virtual {v2}, LM3d;->M()Lio/reactivex/rxjava3/core/Observable;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LIid;
 
     .line 157
     .line 158
-    .line 159
-    move-result-object v2
+    if-eqz v2, :cond_0
 
+    .line 159
     .line 160
-    new-instance v5, LcG2;
+    invoke-virtual {v2}, LIid;->N()Lio/reactivex/rxjava3/core/Observable;
 
     .line 161
     .line 162
-    const/4 v6, 0x2
-
     .line 163
-    invoke-direct {v5, v6, p0}, LcG2;-><init>(ILjava/lang/Object;)V
-
-    .line 164
-    .line 165
-    .line 166
-    invoke-virtual {v2, v5}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 167
-    .line 168
-    .line 169
     move-result-object v2
 
+    .line 164
+    new-instance v5, LlJ2;
+
+    .line 165
+    .line 166
+    const/4 v6, 0x1
+
+    .line 167
+    invoke-direct {v5, v6, p0}, LlJ2;-><init>(ILjava/lang/Object;)V
+
+    .line 168
+    .line 169
     .line 170
-    invoke-virtual {p0, v2, v4, p1}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {v2, v5}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 171
     .line 172
     .line 173
-    goto :goto_0
+    move-result-object v2
 
     .line 174
+    invoke-virtual {p0, v2, v4, p1}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 175
+    .line 176
+    .line 177
+    goto :goto_0
+
+    .line 178
     :catchall_0
     move-exception p1
 
-    .line 175
+    .line 179
     goto :goto_1
 
-    .line 176
+    .line 180
     :cond_0
     :goto_0
     invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->X1()Landroid/view/ViewGroup;
 
-    .line 177
-    .line 178
-    .line 179
-    move-result-object v2
-
-    .line 180
-    const v5, 0x7f0b0e4e
-
     .line 181
     .line 182
     .line 183
-    invoke-virtual {v2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 184
-    .line 185
-    .line 186
     move-result-object v2
 
+    .line 184
+    const v5, 0x7f0b0f6a
+
+    .line 185
+    .line 186
     .line 187
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->X1()Landroid/view/ViewGroup;
+    invoke-virtual {v2, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 188
     .line 189
     .line 190
-    move-result-object v5
+    move-result-object v2
 
     .line 191
-    const v6, 0x7f0b1752
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->X1()Landroid/view/ViewGroup;
 
     .line 192
     .line 193
     .line 194
-    invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 195
-    .line 196
-    .line 197
     move-result-object v5
 
+    .line 195
+    const v6, 0x7f0b1894
+
+    .line 196
+    .line 197
     .line 198
-    iget-object v6, p0, Lcom/snap/messaging/chat/ChatFragment;->L0:LPm9;
+    invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 199
     .line 200
-    if-eqz v6, :cond_1
-
     .line 201
+    move-result-object v5
+
     .line 202
-    invoke-interface {v6}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
+    iget-object v6, p0, Lcom/snap/messaging/chat/ChatFragment;->L0:LIv9;
 
     .line 203
     .line 204
-    .line 205
-    move-result-object v3
+    if-eqz v6, :cond_1
 
+    .line 205
     .line 206
-    new-instance v6, LwG2;
+    invoke-interface {v6}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 207
     .line 208
-    const/4 v7, 0x3
-
     .line 209
-    invoke-direct {v6, p0, v7}, LwG2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+    move-result-object v3
 
     .line 210
+    new-instance v6, LpJ2;
+
     .line 211
     .line 212
-    new-instance v7, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+    const/4 v7, 0x3
 
     .line 213
-    .line 214
-    invoke-direct {v7, v3, v6}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+    invoke-direct {v6, p0, v7}, LpJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
 
+    .line 214
     .line 215
     .line 216
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+
     .line 217
-    new-instance v3, Lqj2;
-
     .line 218
+    invoke-direct {v7, v3, v6}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
     .line 219
-    const/4 v6, 0x5
-
     .line 220
-    invoke-direct {v3, v5, v2, v1, v6}, Lqj2;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
     .line 221
+    new-instance v3, Lyc2;
+
     .line 222
     .line 223
-    invoke-virtual {v7, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    const/4 v6, 0x7
 
     .line 224
+    invoke-direct {v3, v5, v2, v1, v6}, Lyc2;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
     .line 225
     .line 226
-    move-result-object v1
-
     .line 227
-    invoke-virtual {p0, v1, v4, p1}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    invoke-virtual {v7, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 228
     .line 229
     .line 230
-    invoke-virtual {p2, v0}, LWRg;->h(I)V
+    move-result-object v1
 
     .line 231
+    invoke-virtual {p0, v1, v4, p1}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
     .line 232
     .line 233
+    .line 234
+    invoke-virtual {p2, v0}, LNdh;->h(I)V
+
+    .line 235
+    .line 236
+    .line 237
     return-void
 
-    .line 234
+    .line 238
     :cond_1
     :try_start_3
     const-string p1, "insetsDetector"
 
-    .line 235
-    .line 236
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 237
-    .line 238
     .line 239
-    throw v3
-
     .line 240
-    :cond_2
-    const-string p1, "messagingUiConfigProvider"
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 241
     .line 242
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 243
-    .line 244
-    .line 245
     throw v3
 
+    .line 244
+    :cond_2
+    const-string p1, "messagingUiConfigProvider"
+
+    .line 245
     .line 246
-    :cond_3
-    const-string p1, "chatMessagesSection"
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 247
     .line 248
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 249
-    .line 250
-    .line 251
     throw v3
 
+    .line 250
+    :cond_3
+    const-string p1, "chatMessagesSection"
+
+    .line 251
     .line 252
-    :cond_4
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 253
     .line 254
@@ -2855,8 +1704,8 @@
     throw v3
 
     .line 256
-    :cond_5
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    :cond_4
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 257
     .line 258
@@ -2864,40 +1713,49 @@
     throw v3
 
     .line 260
-    :cond_6
-    const-string p1, "pageComponentBuilder"
+    :cond_5
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 261
     .line 262
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 263
+    throw v3
+
     .line 264
+    :cond_6
+    const-string p1, "pageComponentBuilder"
+
     .line 265
+    .line 266
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 267
+    .line 268
+    .line 269
     throw v3
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 266
-    :goto_1
-    sget-object p2, LXRg;->b:Lzhi;
-
-    .line 267
-    .line 268
-    if-eqz p2, :cond_7
-
-    .line 269
     .line 270
-    invoke-virtual {p2, v0}, Lzhi;->o(I)V
+    :goto_1
+    sget-object p2, LOdh;->b:LtGi;
 
     .line 271
     .line 272
+    if-eqz p2, :cond_7
+
     .line 273
+    .line 274
+    invoke-virtual {p2, v0}, LtGi;->o(I)V
+
+    .line 275
+    .line 276
+    .line 277
     :cond_7
     throw p1
 .end method
 
-.method public final M1()Z
+.method public final K1()Z
     .locals 1
 
     .line 1
@@ -2908,7 +1766,7 @@
     return v0
 .end method
 
-.method public final P1()Z
+.method public final N1()Z
     .locals 1
 
     .line 1
@@ -2921,7 +1779,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 2
     .line 3
@@ -2929,7 +1787,7 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->P0:LXF4;
+    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->P0:LxM4;
 
     .line 6
     .line 7
@@ -2940,7 +1798,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v1}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, LxM4;->get()Ljava/lang/Object;
 
     .line 11
     .line 12
@@ -2948,11 +1806,11 @@
     move-result-object v1
 
     .line 14
-    check-cast v1, LXQb;
+    check-cast v1, Lt5c;
 
     .line 15
     .line 16
-    invoke-virtual {v0}, LiE2;->a()Ljava/lang/String;
+    invoke-virtual {v0}, LdH2;->a()Ljava/lang/String;
 
     .line 17
     .line 18
@@ -2960,7 +1818,7 @@
     move-result-object v0
 
     .line 20
-    invoke-virtual {v1, v0}, LXQb;->a(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
+    invoke-virtual {v1, v0}, Lt5c;->a(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
 
     .line 21
     .line 22
@@ -2976,7 +1834,7 @@
     move-result-object v0
 
     .line 28
-    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->G0:LXF4;
+    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->G0:LxM4;
 
     .line 29
     .line 30
@@ -2984,7 +1842,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {v1}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, LxM4;->get()Ljava/lang/Object;
 
     .line 33
     .line 34
@@ -2992,15 +1850,15 @@
     move-result-object v1
 
     .line 36
-    check-cast v1, LWq6;
+    check-cast v1, Liu6;
 
     .line 37
     .line 38
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->t1:LWm0;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->s1:Lnp0;
 
     .line 39
     .line 40
-    invoke-virtual {v1, v2, v0}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+    invoke-virtual {v1, v2, v0}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
 
     .line 41
     .line 42
@@ -3013,7 +1871,7 @@
 
     .line 45
     .line 46
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 47
     .line 48
@@ -3026,7 +1884,7 @@
 
     .line 51
     .line 52
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 53
     .line 54
@@ -3038,11 +1896,11 @@
     return-void
 .end method
 
-.method public final V1()Lbke;
+.method public final V1()LDBe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->A0:LXF4;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->A0:LxM4;
 
     .line 2
     .line 3
@@ -3058,7 +1916,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3069,11 +1927,11 @@
     throw v0
 .end method
 
-.method public final W1()LNL2;
+.method public final W1()LiO2;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->E0:LNL2;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->E0:LiO2;
 
     .line 2
     .line 3
@@ -3089,7 +1947,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3120,7 +1978,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3131,11 +1989,11 @@
     throw v0
 .end method
 
-.method public final Y1(LqL2;)V
+.method public final Y1(LQN2;)V
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 2
     .line 3
@@ -3143,7 +2001,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LiE2;->a()Ljava/lang/String;
+    invoke-virtual {v0}, LdH2;->a()Ljava/lang/String;
 
     .line 6
     .line 7
@@ -3151,7 +2009,7 @@
     move-result-object v0
 
     .line 9
-    iget-object p1, p1, LqL2;->d:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object p1, p1, LQN2;->d:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 10
     .line 11
@@ -3212,7 +2070,7 @@
     const/4 v5, 0x0
 
     .line 38
-    invoke-static {v4, v0, v5}, LZ4i;->i1(Ljava/lang/String;Ljava/lang/String;Z)Z
+    invoke-static {v4, v0, v5}, Lsti;->p0(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     .line 39
     .line 40
@@ -3241,7 +2099,7 @@
     move-result-object p1
 
     .line 52
-    invoke-static {v2}, LBe3;->n0(Ljava/lang/Iterable;)Ljava/util/Collection;
+    invoke-static {v2}, Lsh3;->l3(Ljava/lang/Iterable;)Ljava/util/Collection;
 
     .line 53
     .line 54
@@ -3258,7 +2116,7 @@
     return-void
 .end method
 
-.method public final e(LQqc;)V
+.method public final e(LiGc;)V
     .locals 9
 
     .line 1
@@ -3266,7 +2124,7 @@
 
     .line 2
     .line 3
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 4
     .line 5
@@ -3274,7 +2132,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 8
     .line 9
@@ -3283,7 +2141,7 @@
 
     .line 11
     :try_start_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->e(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->e(LiGc;)V
 
     .line 12
     .line 13
@@ -3295,15 +2153,15 @@
 
     .line 16
     .line 17
-    new-instance v4, Lhad;
+    new-instance v4, LDpd;
 
     .line 18
     .line 19
-    sget-object v5, Lm8d;->Z:Lm8d;
+    sget-object v5, LFnd;->Z:LFnd;
 
     .line 20
     .line 21
-    invoke-direct {v4, v5, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v5, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 22
     .line 23
@@ -3313,7 +2171,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {p1}, LQqc;->a()Z
+    invoke-virtual {p1}, LiGc;->a()Z
 
     .line 28
     .line 29
@@ -3332,15 +2190,15 @@
 
     .line 35
     .line 36
-    new-instance v4, Lhad;
+    new-instance v4, LDpd;
 
     .line 37
     .line 38
-    sget-object v6, Lm8d;->g0:Lm8d;
+    sget-object v6, LFnd;->g0:LFnd;
 
     .line 39
     .line 40
-    invoke-direct {v4, v6, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v4, v6, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 41
     .line 42
@@ -3362,7 +2220,7 @@
     .line 49
     :cond_0
     :goto_0
-    invoke-static {p1, p0}, Ltkk;->h(LQqc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
+    invoke-static {p1, p0}, LOJk;->g(LiGc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
 
     .line 50
     .line 51
@@ -3370,7 +2228,7 @@
     move-result v4
 
     .line 53
-    invoke-static {p1, p0}, Ltkk;->i(LQqc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
+    invoke-static {p1, p0}, LOJk;->h(LiGc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
 
     .line 54
     .line 55
@@ -3378,11 +2236,11 @@
     move-result v6
 
     .line 57
-    iget-object v7, p1, LQqc;->c:Lyrc;
+    iget-object v7, p1, LiGc;->c:LRGc;
 
     .line 58
     .line 59
-    sget-object v8, Lyrc;->a:Lyrc;
+    sget-object v8, LRGc;->a:LRGc;
 
     .line 60
     .line 61
@@ -3394,7 +2252,7 @@
 
     .line 64
     :cond_1
-    iget-boolean v7, p1, LQqc;->n:Z
+    iget-boolean v7, p1, LiGc;->n:Z
 
     .line 65
     .line 66
@@ -3414,15 +2272,15 @@
 
     .line 73
     .line 74
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 75
     .line 76
-    sget-object v5, Lm8d;->e0:Lm8d;
+    sget-object v5, LFnd;->e0:LFnd;
 
     .line 77
     .line 78
-    invoke-direct {v3, v5, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v5, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 79
     .line 80
@@ -3433,7 +2291,7 @@
     .line 83
     .line 84
     :cond_2
-    invoke-static {p1, p0}, Ltkk;->j(LQqc;Lcom/snap/messaging/chat/ChatFragment;)Z
+    invoke-static {p1, p0}, LOJk;->i(LiGc;Lcom/snap/messaging/chat/ChatFragment;)Z
 
     .line 85
     .line 86
@@ -3451,7 +2309,7 @@
 
     .line 91
     .line 92
-    iget p1, p1, LQqc;->i:F
+    iget p1, p1, LiGc;->i:F
 
     .line 93
     .line 94
@@ -3587,7 +2445,7 @@
     .line 155
     :cond_5
     :goto_1
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 156
     .line 157
@@ -3596,7 +2454,7 @@
 
     .line 159
     :goto_2
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 160
     .line 161
@@ -3604,7 +2462,7 @@
 
     .line 162
     .line 163
-    invoke-virtual {v0, v2}, Lzhi;->o(I)V
+    invoke-virtual {v0, v2}, LtGi;->o(I)V
 
     .line 164
     .line 165
@@ -3613,11 +2471,11 @@
     throw p1
 .end method
 
-.method public final g()V
+.method public final f()V
     .locals 6
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -3625,7 +2483,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -3634,7 +2492,7 @@
 
     .line 9
     :try_start_0
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->g()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->f()V
 
     .line 10
     .line 11
@@ -3643,18 +2501,18 @@
 
     .line 13
     .line 14
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 15
     .line 16
-    sget-object v4, Lm8d;->Y:Lm8d;
+    sget-object v4, LFnd;->Y:LFnd;
 
     .line 17
     .line 18
     const/4 v5, 0x0
 
     .line 19
-    invoke-direct {v3, v4, v5}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v4, v5}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 20
     .line 21
@@ -3710,7 +2568,7 @@
 
     .line 45
     :cond_0
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 46
     .line 47
@@ -3718,7 +2576,7 @@
 
     .line 48
     .line 49
-    iget-object v3, p0, Lcom/snap/messaging/chat/ChatFragment;->y0:LdE2;
+    iget-object v3, p0, Lcom/snap/messaging/chat/ChatFragment;->y0:LYG2;
 
     .line 50
     .line 51
@@ -3726,7 +2584,7 @@
 
     .line 52
     .line 53
-    invoke-interface {v3, v2}, LdE2;->y(LiE2;)V
+    invoke-interface {v3, v2}, LYG2;->z(LdH2;)V
 
     .line 54
     .line 55
@@ -3739,7 +2597,7 @@
 
     .line 58
     .line 59
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 60
     .line 61
@@ -3749,7 +2607,7 @@
     .line 63
     :cond_2
     :goto_0
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->B0:LAG2;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->B0:LsJ2;
 
     .line 64
     .line 65
@@ -3757,7 +2615,7 @@
 
     .line 66
     .line 67
-    invoke-virtual {v2}, LAG2;->b()V
+    invoke-virtual {v2}, LsJ2;->b()V
 
     .line 68
     .line 69
@@ -3770,7 +2628,7 @@
 
     .line 72
     .line 73
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 74
     .line 75
@@ -3808,11 +2666,11 @@
 
     .line 90
     .line 91
-    sput-boolean v2, LQtc;->d:Z
+    sput-boolean v2, LlFg;->f:Z
 
     .line 92
     .line 93
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->z0:LXF4;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->z0:LxM4;
 
     .line 94
     .line 95
@@ -3820,7 +2678,7 @@
 
     .line 96
     .line 97
-    invoke-virtual {v2}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {v2}, LxM4;->get()Ljava/lang/Object;
 
     .line 98
     .line 99
@@ -3828,22 +2686,22 @@
     move-result-object v2
 
     .line 101
-    check-cast v2, LZE2;
+    check-cast v2, LTH2;
 
     .line 102
     .line 103
-    sget-object v3, LdF2;->a:LdF2;
+    sget-object v3, LXH2;->a:LXH2;
 
     .line 104
     .line 105
-    invoke-virtual {v2, v3}, LZE2;->d(Lank;)V
+    invoke-virtual {v2, v3}, LTH2;->d(LNMk;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 106
     .line 107
     .line 108
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 109
     .line 110
@@ -3857,7 +2715,7 @@
 
     .line 113
     .line 114
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 115
     .line 116
@@ -3868,7 +2726,7 @@
 
     .line 118
     :goto_2
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 119
     .line 120
@@ -3876,7 +2734,7 @@
 
     .line 121
     .line 122
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 123
     .line 124
@@ -3885,11 +2743,11 @@
     throw v0
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
@@ -3901,150 +2759,128 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->K0:LB99;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->K0:LAh9;
 
     .line 8
     .line 9
     const/4 v1, 0x0
 
     .line 10
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_1
 
     .line 11
     .line 12
-    sget-object v2, LfE1;->n0:LfE1;
+    sget-object v2, LvH1;->n0:LvH1;
 
     .line 13
     .line 14
-    invoke-virtual {v0, v2}, LB99;->b(LcSa;)V
+    invoke-virtual {v0, v2}, LAh9;->b(LL4b;)V
 
     .line 15
     .line 16
     .line 17
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->D0:LqL2;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->D0:LQN2;
 
     .line 18
     .line 19
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     .line 20
     .line 21
-    invoke-virtual {p0, v0}, Lcom/snap/messaging/chat/ChatFragment;->Y1(LqL2;)V
+    invoke-virtual {p0, v0}, Lcom/snap/messaging/chat/ChatFragment;->Y1(LQN2;)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v0, Lhad;
+    new-instance v0, LDpd;
 
     .line 25
     .line 26
-    sget-object v1, Lm8d;->t:Lm8d;
+    sget-object v1, LFnd;->t:LFnd;
 
     .line 27
     .line 28
-    invoke-direct {v0, v1, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 29
     .line 30
     .line 31
-    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->c1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->c1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 32
     .line 33
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
 
     .line 34
     .line 35
     .line 36
-    invoke-static {p1}, Lonk;->a(LQqc;)Z
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()LDBe;
 
     .line 37
     .line 38
     .line 39
-    move-result p1
+    move-result-object p1
 
     .line 40
-    if-nez p1, :cond_0
+    check-cast p1, LxM4;
 
     .line 41
     .line 42
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->r1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
 
     .line 43
     .line 44
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
     .line 45
-    .line 46
-    .line 47
-    :cond_0
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()Lbke;
+    move-result-object p1
 
+    .line 46
+    check-cast p1, LPI2;
+
+    .line 47
     .line 48
+    sget-object v0, LtJ2;->X:LtJ2;
+
     .line 49
     .line 50
-    move-result-object p1
+    invoke-static {p1, v0}, LQMk;->f(LPI2;LtJ2;)V
 
     .line 51
-    check-cast p1, LXF4;
-
     .line 52
     .line 53
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object p1
-
-    .line 57
-    check-cast p1, LYF2;
-
-    .line 58
-    .line 59
-    sget-object v0, LBG2;->X:LBG2;
-
-    .line 60
-    .line 61
-    invoke-static {p1, v0}, Lenk;->k(LYF2;LBG2;)V
-
-    .line 62
-    .line 63
-    .line 64
     return-void
 
-    .line 65
-    :cond_1
+    .line 54
+    :cond_0
     const-string p1, "chatNotificationRateLimiter"
 
-    .line 66
-    .line 67
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 55
+    .line 56
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 68
-    .line 69
-    .line 70
+    .line 57
+    .line 58
+    .line 59
     throw v1
 
-    .line 71
-    :cond_2
+    .line 60
+    :cond_1
     const-string p1, "inAppNotificationPolicySetter"
 
-    .line 72
-    .line 73
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 61
+    .line 62
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 74
-    .line 75
-    .line 76
+    .line 63
+    .line 64
+    .line 65
     throw v1
 .end method
 
-.method public final i()V
+.method public final j()V
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->i()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->j()V
 
     .line 2
     .line 3
@@ -4105,7 +2941,7 @@
     move-result-object v2
 
     .line 32
-    invoke-static {v2}, LI0j;->y(Landroid/content/res/Resources$Theme;)Z
+    invoke-static {v2}, LNC8;->z(Landroid/content/res/Resources$Theme;)Z
 
     .line 33
     .line 34
@@ -4117,7 +2953,7 @@
 
     .line 37
     .line 38
-    const v2, 0x7f0404bc
+    const v2, 0x7f040549
 
     .line 39
     .line 40
@@ -4126,13 +2962,13 @@
 
     .line 42
     :cond_0
-    const v2, 0x7f0404b8
+    const v2, 0x7f040545
 
     .line 43
     .line 44
     .line 45
     :goto_0
-    invoke-static {v1, v2}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v1, v2}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 46
     .line 47
@@ -4145,7 +2981,7 @@
     .line 50
     .line 51
     .line 52
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 53
     .line 54
@@ -4153,7 +2989,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {v0}, LiE2;->a()Ljava/lang/String;
+    invoke-virtual {v0}, LdH2;->a()Ljava/lang/String;
 
     .line 57
     .line 58
@@ -4165,11 +3001,11 @@
 
     .line 61
     .line 62
-    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LXfi;
+    iget-object v1, p0, Lcom/snap/messaging/chat/ChatFragment;->f1:LREi;
 
     .line 63
     .line 64
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 65
     .line 66
@@ -4177,28 +3013,28 @@
     move-result-object v1
 
     .line 68
-    check-cast v1, LTP2;
+    check-cast v1, LvS2;
 
     .line 69
     .line 70
-    invoke-virtual {v1, v0}, LTP2;->b(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, LvS2;->a(Ljava/lang/String;)V
 
     .line 71
     .line 72
     .line 73
     :cond_1
-    new-instance v0, Lhad;
+    new-instance v0, LDpd;
 
     .line 74
     .line 75
-    sget-object v1, Lm8d;->a:Lm8d;
+    sget-object v1, LFnd;->a:LFnd;
 
     .line 76
     .line 77
     const/4 v2, 0x0
 
     .line 78
-    invoke-direct {v0, v1, v2}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, v2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 79
     .line 80
@@ -4215,23 +3051,23 @@
     const/4 v0, 0x0
 
     .line 87
-    sput-boolean v0, LQtc;->d:Z
+    sput-boolean v0, LlFg;->f:Z
 
     .line 88
     .line 89
     return-void
 .end method
 
-.method public final k(LQqc;LF8d;)V
+.method public final k(LiGc;LYnd;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snapchat/deck/fragment/MainPageFragment;->k(LQqc;LF8d;)V
+    invoke-super {p0, p1, p2}, Lcom/snapchat/deck/fragment/MainPageFragment;->k(LiGc;LYnd;)V
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, LF8d;->c:LF8d;
+    sget-object v0, LYnd;->c:LYnd;
 
     .line 5
     .line 6
@@ -4239,7 +3075,7 @@
 
     .line 7
     .line 8
-    sget-object v0, LF8d;->X:LF8d;
+    sget-object v0, LYnd;->X:LYnd;
 
     .line 9
     .line 10
@@ -4248,61 +3084,83 @@
     .line 11
     .line 12
     :cond_0
-    iget-object p1, p1, LQqc;->e:Li7d;
+    iget-object p2, p1, LiGc;->e:Lwmd;
 
     .line 13
     .line 14
-    iget-object p1, p1, Li7d;->c:LWRa;
+    iget-object p2, p2, Lwmd;->c:LG4b;
 
     .line 15
     .line 16
-    invoke-interface {p1}, LWRa;->S0()LcSa;
+    invoke-interface {p2}, LG4b;->Q0()LL4b;
 
     .line 17
     .line 18
     .line 19
-    move-result-object p1
+    move-result-object p2
 
     .line 20
-    sget-object p2, LbJc;->o0:LbJc;
+    sget-object v0, LGXc;->o0:LGXc;
 
     .line 21
     .line 22
-    invoke-static {p1, p2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 23
     .line 24
     .line 25
-    move-result p1
+    move-result p2
 
     .line 26
-    if-nez p1, :cond_1
+    if-nez p2, :cond_1
 
     .line 27
     .line 28
-    const/4 p1, 0x1
+    const/4 p2, 0x1
 
     .line 29
     goto :goto_0
 
     .line 30
     :cond_1
-    const/4 p1, 0x0
+    const/4 p2, 0x0
 
     .line 31
     :goto_0
-    iput-boolean p1, p0, Lcom/snap/messaging/chat/ChatFragment;->m1:Z
+    iput-boolean p2, p0, Lcom/snap/messaging/chat/ChatFragment;->m1:Z
 
     .line 32
     .line 33
+    new-instance p2, LDpd;
+
+    .line 34
+    .line 35
+    sget-object v0, LFnd;->k0:LFnd;
+
+    .line 36
+    .line 37
+    invoke-direct {p2, v0, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 38
+    .line 39
+    .line 40
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->c1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 41
+    .line 42
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 43
+    .line 44
+    .line 45
     return-void
 .end method
 
-.method public final l(LQqc;)V
+.method public final m(LiGc;)V
     .locals 4
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->l(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->m(LiGc;)V
 
     .line 2
     .line 3
@@ -4314,7 +3172,7 @@
 
     .line 6
     .line 7
-    invoke-static {p1, p0}, Ltkk;->h(LQqc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
+    invoke-static {p1, p0}, LOJk;->g(LiGc;Lcom/snapchat/deck/fragment/MainPageFragment;)Z
 
     .line 8
     .line 9
@@ -4322,11 +3180,11 @@
     move-result v1
 
     .line 11
-    sget-object v2, Lyrc;->a:Lyrc;
+    sget-object v2, LRGc;->a:LRGc;
 
     .line 12
     .line 13
-    iget-object v3, p1, LQqc;->c:Lyrc;
+    iget-object v3, p1, LiGc;->c:LRGc;
 
     .line 14
     .line 15
@@ -4345,7 +3203,7 @@
 
     .line 20
     :goto_0
-    iget-boolean v3, p1, LQqc;->n:Z
+    iget-boolean v3, p1, LiGc;->n:Z
 
     .line 21
     .line 22
@@ -4365,15 +3223,15 @@
 
     .line 29
     .line 30
-    iget-object v0, p1, LQqc;->d:Li7d;
+    iget-object v0, p1, LiGc;->d:Lwmd;
 
     .line 31
     .line 32
-    iget-object v0, v0, Li7d;->c:LWRa;
+    iget-object v0, v0, Lwmd;->c:LG4b;
 
     .line 33
     .line 34
-    invoke-interface {v0}, LWRa;->S0()LcSa;
+    invoke-interface {v0}, LG4b;->Q0()LL4b;
 
     .line 35
     .line 36
@@ -4381,11 +3239,11 @@
     move-result-object v0
 
     .line 38
-    sget-object v1, LWV7;->n0:LWV7;
+    sget-object v1, LX18;->n0:LX18;
 
     .line 39
     .line 40
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 41
     .line 42
@@ -4397,7 +3255,7 @@
 
     .line 45
     .line 46
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LM3d;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LIid;
 
     .line 47
     .line 48
@@ -4405,21 +3263,21 @@
 
     .line 49
     .line 50
-    invoke-virtual {v0}, LM3d;->c()V
+    invoke-virtual {v0}, LIid;->c()V
 
     .line 51
     .line 52
     .line 53
     :cond_1
-    new-instance v0, Lhad;
+    new-instance v0, LDpd;
 
     .line 54
     .line 55
-    sget-object v1, Lm8d;->h0:Lm8d;
+    sget-object v1, LFnd;->h0:LFnd;
 
     .line 56
     .line 57
-    invoke-direct {v0, v1, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 58
     .line 59
@@ -4478,7 +3336,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 5
     .line 6
@@ -4486,16 +3344,16 @@
 
     .line 7
     .line 8
-    new-instance v1, LS04;
+    new-instance v1, Ly54;
 
     .line 9
     .line 10
-    invoke-direct {v1, v0}, LS04;-><init>(LiE2;)V
+    invoke-direct {v1, v0}, Ly54;-><init>(LdH2;)V
 
     .line 11
     .line 12
     .line 13
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LM3d;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->i1:LIid;
 
     .line 14
     .line 15
@@ -4503,7 +3361,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1}, LM3d;->N(LS04;)V
+    invoke-virtual {v0, v1}, LIid;->O(Ly54;)V
 
     .line 18
     .line 19
@@ -4522,6 +3380,26 @@
     return-void
 .end method
 
+.method public final p0()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    return-object v0
+.end method
+
+.method public final p1()Lrp0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->r1:LYI2;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
 .method public final q()J
     .locals 2
 
@@ -4531,36 +3409,16 @@
     return-wide v0
 .end method
 
-.method public final q0()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final r1()Lan0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ChatFragment;->s1:LZF2;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 5
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LNL2;
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LiO2;
 
     .line 5
     .line 6
@@ -4568,12 +3426,12 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1}, LNL2;->a()V
+    invoke-virtual {p1}, LiO2;->a()V
 
     .line 9
     .line 10
     .line 11
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->z0:LXF4;
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->z0:LxM4;
 
     .line 12
     .line 13
@@ -4584,7 +3442,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
 
     .line 17
     .line 18
@@ -4592,20 +3450,20 @@
     move-result-object p1
 
     .line 20
-    check-cast p1, LZE2;
+    check-cast p1, LTH2;
 
     .line 21
     .line 22
-    sget-object v1, LaF2;->a:LaF2;
+    sget-object v1, LUH2;->a:LUH2;
 
     .line 23
     .line 24
-    invoke-virtual {p1, v1}, LZE2;->d(Lank;)V
+    invoke-virtual {p1, v1}, LTH2;->d(LNMk;)V
 
     .line 25
     .line 26
     .line 27
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->R0:LXF4;
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->R0:LxM4;
 
     .line 28
     .line 29
@@ -4613,7 +3471,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -4621,11 +3479,11 @@
     move-result-object p1
 
     .line 35
-    check-cast p1, LLGc;
+    check-cast p1, LvVc;
 
     .line 36
     .line 37
-    iget-object v1, p1, LLGc;->l:LHGc;
+    iget-object v1, p1, LvVc;->l:LsVc;
 
     .line 38
     .line 39
@@ -4633,7 +3491,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {v1}, LHGc;->f()LdHc;
+    invoke-virtual {v1}, LsVc;->g()LFVc;
 
     .line 42
     .line 43
@@ -4642,142 +3500,129 @@
 
     .line 45
     :cond_0
-    sget-object v1, LdHc;->K:LcHc;
+    invoke-virtual {p1, v0}, LvVc;->b(LFVc;)Z
 
     .line 46
     .line 47
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 48
-    .line 49
-    .line 50
-    sget-object v1, LcHc;->k:LYQb;
+    move-result v0
 
+    .line 49
+    if-nez v0, :cond_1
+
+    .line 50
     .line 51
+    goto :goto_0
+
     .line 52
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_1
+    iget-object v0, p1, LvVc;->a:LR93;
 
     .line 53
     .line 54
-    .line 55
-    move-result v0
+    check-cast v0, LFRe;
 
+    .line 55
     .line 56
-    if-nez v0, :cond_1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 57
     .line 58
-    goto :goto_0
-
     .line 59
-    :cond_1
-    iget-object v0, p1, LLGc;->a:LB73;
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     .line 60
     .line 61
-    check-cast v0, LOze;
-
     .line 62
+    move-result-wide v0
+
     .line 63
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v2, p1, LvVc;->l:LsVc;
 
     .line 64
     .line 65
-    .line 66
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+    if-eqz v2, :cond_2
 
+    .line 66
     .line 67
+    invoke-virtual {v2, v0, v1}, LsVc;->v(J)V
+
     .line 68
     .line 69
-    move-result-wide v0
-
     .line 70
-    iget-object v2, p1, LLGc;->l:LHGc;
+    invoke-virtual {v2}, LsVc;->f()J
 
     .line 71
     .line 72
-    if-eqz v2, :cond_2
-
     .line 73
-    .line 74
-    invoke-virtual {v2, v0, v1}, LHGc;->u(J)V
-
-    .line 75
-    .line 76
-    .line 77
-    invoke-virtual {v2}, LHGc;->e()J
-
-    .line 78
-    .line 79
-    .line 80
     move-result-wide v3
 
-    .line 81
+    .line 74
     sub-long/2addr v0, v3
 
-    .line 82
-    invoke-virtual {v2, v0, v1}, LHGc;->t(J)V
+    .line 75
+    invoke-virtual {v2, v0, v1}, LsVc;->u(J)V
 
-    .line 83
-    .line 84
-    .line 85
-    invoke-virtual {p1, v2}, LLGc;->b(LHGc;)V
+    .line 76
+    .line 77
+    .line 78
+    invoke-virtual {p1, v2}, LvVc;->d(LsVc;)V
 
-    .line 86
-    .line 87
-    .line 88
+    .line 79
+    .line 80
+    .line 81
     :cond_2
     :goto_0
     return-void
 
-    .line 89
+    .line 82
     :cond_3
     const-string p1, "notificationToMessageReadyAnalytics"
 
-    .line 90
-    .line 91
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 83
+    .line 84
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 92
-    .line 93
-    .line 94
+    .line 85
+    .line 86
+    .line 87
     throw v0
 
-    .line 95
+    .line 88
     :cond_4
     const-string p1, "chatDisplayReadyApi"
 
-    .line 96
-    .line 97
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    .line 89
+    .line 90
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 98
-    .line 99
-    .line 100
+    .line 91
+    .line 92
+    .line 93
     throw v0
 .end method
 
-.method public final t()V
+.method public final s()V
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->t()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->s()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lhad;
+    new-instance v0, LDpd;
 
     .line 5
     .line 6
-    sget-object v1, Lm8d;->b:Lm8d;
+    sget-object v1, LFnd;->b:LFnd;
 
     .line 7
     .line 8
     const/4 v2, 0x0
 
     .line 9
-    invoke-direct {v0, v1, v2}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, v2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 10
     .line 11
@@ -4794,11 +3639,11 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 7
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -4806,7 +3651,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -4815,7 +3660,7 @@
 
     .line 9
     :try_start_0
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 10
     .line 11
@@ -4832,7 +3677,7 @@
 
     .line 17
     .line 18
-    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 19
     .line 20
@@ -4852,11 +3697,11 @@
     move-result-object v3
 
     .line 28
-    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LiE2;
+    iget-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
 
     .line 29
     .line 30
-    invoke-virtual {v4}, LiE2;->a()Ljava/lang/String;
+    invoke-virtual {v4}, LdH2;->a()Ljava/lang/String;
 
     .line 31
     .line 32
@@ -4893,15 +3738,15 @@
 
     .line 45
     .line 46
-    new-instance v3, Lhad;
+    new-instance v3, LDpd;
 
     .line 47
     .line 48
-    sget-object v4, Lm8d;->c:Lm8d;
+    sget-object v4, LFnd;->c:LFnd;
 
     .line 49
     .line 50
-    invoke-direct {v3, v4, p1}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v4, p1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 51
     .line 52
@@ -4911,7 +3756,7 @@
     .line 54
     .line 55
     .line 56
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->K0:LB99;
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->K0:LAh9;
 
     .line 57
     .line 58
@@ -4922,23 +3767,23 @@
 
     .line 60
     .line 61
-    sget-object v3, LfE1;->n0:LfE1;
+    sget-object v3, LvH1;->n0:LvH1;
 
     .line 62
     .line 63
-    new-instance v4, LXM1;
+    new-instance v4, LzQ1;
 
     .line 64
     .line 65
     const/4 v5, 0x2
 
     .line 66
-    invoke-direct {v4, v5, p0}, LXM1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v4, v5, p0}, LzQ1;-><init>(ILjava/lang/Object;)V
 
     .line 67
     .line 68
     .line 69
-    invoke-virtual {p1, v4, v3}, LB99;->c(Lz99;LcSa;)V
+    invoke-virtual {p1, v4, v3}, LAh9;->c(Lxh9;LL4b;)V
 
     .line 70
     .line 71
@@ -4981,7 +3826,7 @@
     .line 90
     .line 91
     .line 92
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->Z0:LuFa;
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->Z0:LCRa;
 
     .line 93
     .line 94
@@ -4989,7 +3834,7 @@
 
     .line 95
     .line 96
-    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->J0:LXF4;
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->J0:LxM4;
 
     .line 97
     .line 98
@@ -4997,7 +3842,7 @@
 
     .line 99
     .line 100
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
 
     .line 101
     .line 102
@@ -5005,20 +3850,20 @@
     move-result-object p1
 
     .line 104
-    check-cast p1, LfM5;
+    check-cast p1, LxQ5;
 
     .line 105
     .line 106
-    new-instance v4, LdW;
+    new-instance v4, LjY;
 
     .line 107
     .line 108
-    invoke-direct {v4}, LdW;-><init>()V
+    invoke-direct {v4}, LjY;-><init>()V
 
     .line 109
     .line 110
     .line 111
-    invoke-virtual {p1, v4}, LfM5;->a(Lhqj;)Z
+    invoke-virtual {p1, v4}, LxQ5;->a(LhPj;)Z
 
     .line 112
     .line 113
@@ -5038,7 +3883,7 @@
     move-result-object p1
 
     .line 121
-    const v4, 0x7f0b04c5
+    const v4, 0x7f0b0553
 
     .line 122
     .line 123
@@ -5055,11 +3900,11 @@
 
     .line 129
     .line 130
-    new-instance v4, LuFa;
+    new-instance v4, LCRa;
 
     .line 131
     .line 132
-    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->X0:LXF4;
+    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->X0:LxM4;
 
     .line 133
     .line 134
@@ -5067,11 +3912,11 @@
 
     .line 135
     .line 136
-    new-instance v2, LCn0;
+    new-instance v2, LZp0;
 
     .line 137
     .line 138
-    invoke-virtual {v3}, LcSa;->a()Ljava/lang/String;
+    invoke-virtual {v3}, LL4b;->a()Ljava/lang/String;
 
     .line 139
     .line 140
@@ -5079,25 +3924,25 @@
     move-result-object v3
 
     .line 142
-    sget-object v6, LZF2;->Z:LZF2;
+    sget-object v6, LYI2;->Z:LYI2;
 
     .line 143
     .line 144
-    invoke-direct {v2, v6, v3}, LCn0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v2, v6, v3}, LZp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 145
     .line 146
     .line 147
-    invoke-direct {v4, v5, v2}, LuFa;-><init>(Lbke;LCn0;)V
+    invoke-direct {v4, v5, v2}, LCRa;-><init>(LDBe;LZp0;)V
 
     .line 148
     .line 149
     .line 150
-    iput-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->Z0:LuFa;
+    iput-object v4, p0, Lcom/snap/messaging/chat/ChatFragment;->Z0:LCRa;
 
     .line 151
     .line 152
-    invoke-virtual {p1, v4}, Landroidx/recyclerview/widget/RecyclerView;->n(LBGe;)V
+    invoke-virtual {p1, v4}, Landroidx/recyclerview/widget/RecyclerView;->n(LkYe;)V
 
     .line 153
     .line 154
@@ -5110,7 +3955,7 @@
 
     .line 157
     .line 158
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 159
     .line 160
@@ -5123,7 +3968,7 @@
 
     .line 163
     .line 164
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 165
     .line 166
@@ -5133,7 +3978,7 @@
     .line 168
     :cond_3
     :goto_1
-    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()Lbke;
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->V1()LDBe;
 
     .line 169
     .line 170
@@ -5141,11 +3986,11 @@
     move-result-object p1
 
     .line 172
-    check-cast p1, LXF4;
+    check-cast p1, LxM4;
 
     .line 173
     .line 174
-    invoke-virtual {p1}, LXF4;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
 
     .line 175
     .line 176
@@ -5153,22 +3998,22 @@
     move-result-object p1
 
     .line 178
-    check-cast p1, LYF2;
+    check-cast p1, LPI2;
 
     .line 179
     .line 180
-    sget-object v2, LBG2;->a:LBG2;
+    sget-object v2, LtJ2;->a:LtJ2;
 
     .line 181
     .line 182
-    invoke-static {p1, v2}, Lenk;->k(LYF2;LBG2;)V
+    invoke-static {p1, v2}, LQMk;->f(LPI2;LtJ2;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 183
     .line 184
     .line 185
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 186
     .line 187
@@ -5182,7 +4027,7 @@
 
     .line 190
     .line 191
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 192
     .line 193
@@ -5193,7 +4038,7 @@
 
     .line 195
     :goto_2
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 196
     .line 197
@@ -5201,7 +4046,7 @@
 
     .line 198
     .line 199
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
 
     .line 200
     .line 201
@@ -5210,27 +4055,27 @@
     throw p1
 .end method
 
-.method public final x()V
+.method public final w()V
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->x()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lhad;
+    new-instance v0, LDpd;
 
     .line 5
     .line 6
-    sget-object v1, Lm8d;->X:Lm8d;
+    sget-object v1, LFnd;->X:LFnd;
 
     .line 7
     .line 8
     const/4 v2, 0x0
 
     .line 9
-    invoke-direct {v0, v1, v2}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, v2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 10
     .line 11
@@ -5245,4 +4090,1104 @@
     .line 16
     .line 17
     return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->O0:LxM4;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    check-cast p1, Lg4c;
+
+    .line 13
+    .line 14
+    invoke-virtual {p1}, Lg4c;->a()Lb6c;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    iput-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->Y0:Lb6c;
+
+    .line 19
+    .line 20
+    return-void
+
+    .line 21
+    :cond_0
+    const-string p1, "messagingConfigSnapshot"
+
+    .line 22
+    .line 23
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    const/4 p1, 0x0
+
+    .line 27
+    throw p1
+.end method
+
+.method public final z1(Landroid/os/Bundle;)V
+    .locals 14
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    const/4 v2, 0x1
+
+    .line 4
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->z1(Landroid/os/Bundle;)V
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lcom/snap/messaging/chat/ChatFragment;->W1()LiO2;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object p1
+
+    .line 11
+    invoke-virtual {p1}, LiO2;->i()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    sget-object v3, LUPf;->e0:LUPf;
+
+    .line 16
+    .line 17
+    iget-object v4, p0, LXPf;->a:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    invoke-virtual {p0, p1, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 20
+    .line 21
+    .line 22
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->j1:LZt6;
+
+    .line 23
+    .line 24
+    invoke-virtual {p0, p1, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->w0:LxM4;
+
+    .line 28
+    .line 29
+    const-string v5, "bloopsChatPreparationService"
+
+    .line 30
+    .line 31
+    const/4 v6, 0x0
+
+    .line 32
+    if-eqz p1, :cond_16
+
+    .line 33
+    .line 34
+    invoke-virtual {p1}, LxM4;->get()Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object p1
+
+    .line 38
+    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 39
+    .line 40
+    invoke-virtual {p0, p1, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->p1:Ly54;
+
+    .line 44
+    .line 45
+    if-eqz p1, :cond_0
+
+    .line 46
+    .line 47
+    const/4 v11, 0x1
+
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :cond_0
+    const/4 v11, 0x0
+
+    .line 50
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 51
+    .line 52
+    invoke-virtual {p1}, Ly54;->a()LdH2;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object p1
+
+    .line 56
+    goto :goto_1
+
+    .line 57
+    :cond_1
+    move-object p1, v6
+
+    .line 58
+    :goto_1
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object v7
+
+    .line 62
+    if-eqz v7, :cond_2
+
+    .line 63
+    .line 64
+    const-string v8, "NavigablePayload"
+
+    .line 65
+    .line 66
+    invoke-virtual {v7, v8}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v7
+
+    .line 70
+    check-cast v7, LoH2;
+
+    .line 71
+    .line 72
+    goto :goto_2
+
+    .line 73
+    :cond_2
+    move-object v7, v6
+
+    .line 74
+    :goto_2
+    instance-of v8, v7, LoH2;
+
+    .line 75
+    .line 76
+    if-eqz v8, :cond_3
+
+    .line 77
+    .line 78
+    goto :goto_3
+
+    .line 79
+    :cond_3
+    move-object v7, v6
+
+    .line 80
+    :goto_3
+    if-eqz v7, :cond_4
+
+    .line 81
+    .line 82
+    invoke-virtual {v7}, LoH2;->a()LdH2;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v7
+
+    .line 86
+    if-nez v7, :cond_5
+
+    .line 87
+    .line 88
+    :cond_4
+    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->I0:LHn7;
+
+    .line 89
+    .line 90
+    if-eqz v7, :cond_15
+
+    .line 91
+    .line 92
+    invoke-virtual {v7}, LHn7;->a()LdH2;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v7
+
+    .line 96
+    :cond_5
+    if-nez p1, :cond_6
+
+    .line 97
+    .line 98
+    move-object v9, v7
+
+    .line 99
+    goto :goto_4
+
+    .line 100
+    :cond_6
+    move-object v9, p1
+
+    .line 101
+    :goto_4
+    if-eqz v11, :cond_8
+
+    .line 102
+    .line 103
+    if-eqz v7, :cond_8
+
+    .line 104
+    .line 105
+    if-nez v9, :cond_7
+
+    .line 106
+    .line 107
+    goto :goto_5
+
+    .line 108
+    :cond_7
+    invoke-virtual {v7}, LdH2;->b()I
+
+    .line 109
+    .line 110
+    .line 111
+    move-result p1
+
+    .line 112
+    invoke-virtual {v9, p1}, LdH2;->e(I)V
+
+    .line 113
+    .line 114
+    .line 115
+    :cond_8
+    :goto_5
+    iget-object p1, p0, Lcom/snap/messaging/chat/ChatFragment;->e1:LREi;
+
+    .line 116
+    .line 117
+    if-eqz v9, :cond_11
+
+    .line 118
+    .line 119
+    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->C0:LxM4;
+
+    .line 120
+    .line 121
+    if-eqz v7, :cond_10
+
+    .line 122
+    .line 123
+    invoke-virtual {v7}, LxM4;->get()Ljava/lang/Object;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object v7
+
+    .line 127
+    check-cast v7, LAN2;
+
+    .line 128
+    .line 129
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireContext()Landroid/content/Context;
+
+    .line 130
+    .line 131
+    .line 132
+    move-result-object v8
+
+    .line 133
+    new-instance v10, LTA0;
+
+    .line 134
+    .line 135
+    const/16 v12, 0xd
+
+    .line 136
+    .line 137
+    invoke-direct {v10, v12, p0}, LTA0;-><init>(ILjava/lang/Object;)V
+
+    .line 138
+    .line 139
+    .line 140
+    iget-object v12, p0, Lcom/snap/messaging/chat/ChatFragment;->Y0:Lb6c;
+
+    .line 141
+    .line 142
+    if-eqz v12, :cond_f
+
+    .line 143
+    .line 144
+    invoke-virtual {v12}, Lb6c;->b()Z
+
+    .line 145
+    .line 146
+    .line 147
+    move-result v12
+
+    .line 148
+    iget-object v13, p0, Lcom/snap/messaging/chat/ChatFragment;->c1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 149
+    .line 150
+    invoke-virtual/range {v7 .. v13}, LAN2;->a(Landroid/content/Context;LdH2;LTA0;ZZLio/reactivex/rxjava3/subjects/PublishSubject;)LzN2;
+
+    .line 151
+    .line 152
+    .line 153
+    move-result-object v7
+
+    .line 154
+    invoke-virtual {v7}, LzN2;->r()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 155
+    .line 156
+    .line 157
+    move-result-object v8
+
+    .line 158
+    invoke-static {v8}, LUMk;->i(Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 159
+    .line 160
+    .line 161
+    move-result-object v8
+
+    .line 162
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 163
+    .line 164
+    .line 165
+    move-result-object v10
+
+    .line 166
+    check-cast v10, LlJe;
+
+    .line 167
+    .line 168
+    check-cast v10, LnJe;
+
+    .line 169
+    .line 170
+    invoke-virtual {v10}, LnJe;->g()LA36;
+
+    .line 171
+    .line 172
+    .line 173
+    move-result-object v10
+
+    .line 174
+    new-instance v11, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+
+    .line 175
+    .line 176
+    invoke-direct {v11, v8, v10}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 177
+    .line 178
+    .line 179
+    new-instance v8, LKN1;
+
+    .line 180
+    .line 181
+    const/16 v10, 0x1a
+
+    .line 182
+    .line 183
+    invoke-direct {v8, p0, v10, v9}, LKN1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 184
+    .line 185
+    .line 186
+    const/4 v10, 0x6
+
+    .line 187
+    invoke-static {v11, v8, v6, v6, v10}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 188
+    .line 189
+    .line 190
+    move-result-object v8
+
+    .line 191
+    invoke-virtual {p0, v8, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 192
+    .line 193
+    .line 194
+    invoke-virtual {p0, v7, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 195
+    .line 196
+    .line 197
+    iput-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->o1:LzN2;
+
+    .line 198
+    .line 199
+    sget v7, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 200
+    .line 201
+    const/16 v8, 0x1f
+
+    .line 202
+    .line 203
+    if-lt v7, v8, :cond_9
+
+    .line 204
+    .line 205
+    sget-object v7, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->INSTANCE:Lcom/snap/framework/contentcapture/ContentCaptureHelper;
+
+    .line 206
+    .line 207
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->requireActivity()Landroidx/fragment/app/FragmentActivity;
+
+    .line 208
+    .line 209
+    .line 210
+    move-result-object v8
+
+    .line 211
+    invoke-virtual {v9}, LdH2;->a()Ljava/lang/String;
+
+    .line 212
+    .line 213
+    .line 214
+    move-result-object v10
+
+    .line 215
+    invoke-virtual {v7, v8, v10}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->onMaybeNewConversation(Landroid/app/Activity;Ljava/lang/String;)V
+
+    .line 216
+    .line 217
+    .line 218
+    :cond_9
+    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
+
+    .line 219
+    .line 220
+    invoke-virtual {v9, v7}, LdH2;->equals(Ljava/lang/Object;)Z
+
+    .line 221
+    .line 222
+    .line 223
+    move-result v7
+
+    .line 224
+    if-eqz v7, :cond_a
+
+    .line 225
+    .line 226
+    goto :goto_6
+
+    .line 227
+    :cond_a
+    iput-object v9, p0, Lcom/snap/messaging/chat/ChatFragment;->g1:LdH2;
+
+    .line 228
+    .line 229
+    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->w0:LxM4;
+
+    .line 230
+    .line 231
+    if-eqz v7, :cond_e
+
+    .line 232
+    .line 233
+    invoke-virtual {v7}, LxM4;->get()Ljava/lang/Object;
+
+    .line 234
+    .line 235
+    .line 236
+    move-result-object v5
+
+    .line 237
+    check-cast v5, LDl1;
+
+    .line 238
+    .line 239
+    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->U0:LxM4;
+
+    .line 240
+    .line 241
+    if-eqz v7, :cond_d
+
+    .line 242
+    .line 243
+    invoke-virtual {v7}, LxM4;->get()Ljava/lang/Object;
+
+    .line 244
+    .line 245
+    .line 246
+    move-result-object v7
+
+    .line 247
+    check-cast v7, Lvrd;
+
+    .line 248
+    .line 249
+    invoke-virtual {v5, v9, v7}, LDl1;->j(LdH2;Lvrd;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+
+    .line 250
+    .line 251
+    .line 252
+    move-result-object v5
+
+    .line 253
+    sget-object v7, Lcx2;->r0:Lcx2;
+
+    .line 254
+    .line 255
+    sget-object v8, LAE2;->A0:LAE2;
+
+    .line 256
+    .line 257
+    invoke-static {v5, v8, v7}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->d(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 258
+    .line 259
+    .line 260
+    move-result-object v5
+
+    .line 261
+    invoke-virtual {p0, v5, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 262
+    .line 263
+    .line 264
+    :goto_6
+    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->N0:LxM4;
+
+    .line 265
+    .line 266
+    if-eqz v5, :cond_c
+
+    .line 267
+    .line 268
+    invoke-virtual {v5}, LxM4;->get()Ljava/lang/Object;
+
+    .line 269
+    .line 270
+    .line 271
+    move-result-object v5
+
+    .line 272
+    check-cast v5, LPQ9;
+
+    .line 273
+    .line 274
+    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->o1:LzN2;
+
+    .line 275
+    .line 276
+    if-eqz v7, :cond_b
+
+    .line 277
+    .line 278
+    invoke-virtual {v7}, LzN2;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 279
+    .line 280
+    .line 281
+    move-result-object v7
+
+    .line 282
+    invoke-virtual {v5, v7}, LPQ9;->a(Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;)V
+
+    .line 283
+    .line 284
+    .line 285
+    invoke-virtual {p0, v5, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 286
+    .line 287
+    .line 288
+    goto :goto_7
+
+    .line 289
+    :cond_b
+    const-string p1, "chatMessagesSection"
+
+    .line 290
+    .line 291
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 292
+    .line 293
+    .line 294
+    throw v6
+
+    .line 295
+    :cond_c
+    const-string p1, "lastReceivedTextMessageProvider"
+
+    .line 296
+    .line 297
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 298
+    .line 299
+    .line 300
+    throw v6
+
+    .line 301
+    :cond_d
+    const-string p1, "participantObserverProvider"
+
+    .line 302
+    .line 303
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 304
+    .line 305
+    .line 306
+    throw v6
+
+    .line 307
+    :cond_e
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 308
+    .line 309
+    .line 310
+    throw v6
+
+    .line 311
+    :cond_f
+    const-string p1, "messagingUiConfigProvider"
+
+    .line 312
+    .line 313
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 314
+    .line 315
+    .line 316
+    throw v6
+
+    .line 317
+    :cond_10
+    const-string p1, "chatMessagesSectionFactory"
+
+    .line 318
+    .line 319
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 320
+    .line 321
+    .line 322
+    throw v6
+
+    .line 323
+    :cond_11
+    move-object v5, v6
+
+    .line 324
+    :goto_7
+    if-eqz v5, :cond_14
+
+    .line 325
+    .line 326
+    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->W0:LSSf;
+
+    .line 327
+    .line 328
+    if-eqz v5, :cond_13
+
+    .line 329
+    .line 330
+    const-string v7, "ChatFragment"
+
+    .line 331
+    .line 332
+    invoke-virtual {v5, v7}, LSSf;->b(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
+
+    .line 333
+    .line 334
+    .line 335
+    move-result-object v5
+
+    .line 336
+    new-instance v7, LAi0;
+
+    .line 337
+    .line 338
+    const/16 v8, 0x12
+
+    .line 339
+    .line 340
+    invoke-direct {v7, v8}, LAi0;-><init>(I)V
+
+    .line 341
+    .line 342
+    .line 343
+    invoke-virtual {v5, v7}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 344
+    .line 345
+    .line 346
+    move-result-object v5
+
+    .line 347
+    new-instance v7, LpJ2;
+
+    .line 348
+    .line 349
+    invoke-direct {v7, p0, v1}, LpJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+
+    .line 350
+    .line 351
+    .line 352
+    new-instance v8, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+
+    .line 353
+    .line 354
+    invoke-direct {v8, v5, v7}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
+    .line 355
+    .line 356
+    .line 357
+    sget-object v5, LiF2;->l0:LiF2;
+
+    .line 358
+    .line 359
+    invoke-virtual {v8, v5}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 360
+    .line 361
+    .line 362
+    move-result-object v5
+
+    .line 363
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 364
+    .line 365
+    .line 366
+    move-result-object p1
+
+    .line 367
+    check-cast p1, LlJe;
+
+    .line 368
+    .line 369
+    check-cast p1, LnJe;
+
+    .line 370
+    .line 371
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
+
+    .line 372
+    .line 373
+    .line 374
+    move-result-object p1
+
+    .line 375
+    invoke-virtual {v5, p1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
+    .line 376
+    .line 377
+    .line 378
+    move-result-object p1
+
+    .line 379
+    sget-object v5, Lcx2;->t0:Lcx2;
+
+    .line 380
+    .line 381
+    new-instance v7, LoJ2;
+
+    .line 382
+    .line 383
+    invoke-direct {v7, p0, v2}, LoJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+
+    .line 384
+    .line 385
+    .line 386
+    invoke-static {p1, v5, v6, v7, v0}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 387
+    .line 388
+    .line 389
+    move-result-object p1
+
+    .line 390
+    invoke-virtual {p0, p1, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 391
+    .line 392
+    .line 393
+    sget-object p1, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
+
+    .line 394
+    .line 395
+    sget-object v5, LqJ2;->e0:LqJ2;
+
+    .line 396
+    .line 397
+    new-instance v5, Le6j;
+
+    .line 398
+    .line 399
+    invoke-direct {v5}, Le6j;-><init>()V
+
+    .line 400
+    .line 401
+    .line 402
+    iget-object v7, p0, Lcom/snap/messaging/chat/ChatFragment;->c1:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 403
+    .line 404
+    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 405
+    .line 406
+    .line 407
+    new-instance v8, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+
+    .line 408
+    .line 409
+    invoke-direct {v8, v7, v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 410
+    .line 411
+    .line 412
+    sget-object v5, Luo2;->z0:Luo2;
+
+    .line 413
+    .line 414
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+
+    .line 415
+    .line 416
+    invoke-direct {v7, v8, v5}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
+    .line 417
+    .line 418
+    .line 419
+    iget-object v5, p0, Lcom/snap/messaging/chat/ChatFragment;->x0:LyR1;
+
+    .line 420
+    .line 421
+    if-eqz v5, :cond_12
+
+    .line 422
+    .line 423
+    invoke-virtual {v5}, LyR1;->d()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 424
+    .line 425
+    .line 426
+    move-result-object v5
+
+    .line 427
+    new-instance v8, LpJ2;
+
+    .line 428
+    .line 429
+    invoke-direct {v8, p0, v2}, LpJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+
+    .line 430
+    .line 431
+    .line 432
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 433
+    .line 434
+    .line 435
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+
+    .line 436
+    .line 437
+    invoke-direct {v2, v5, v8}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
+    .line 438
+    .line 439
+    .line 440
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 441
+    .line 442
+    .line 443
+    invoke-static {v7, v2}, Lio/reactivex/rxjava3/kotlin/Observables;->a(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 444
+    .line 445
+    .line 446
+    move-result-object p1
+
+    .line 447
+    new-instance v2, LpJ2;
+
+    .line 448
+    .line 449
+    invoke-direct {v2, p0, v0}, LpJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+
+    .line 450
+    .line 451
+    .line 452
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
+
+    .line 453
+    .line 454
+    invoke-direct {v5, p1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Predicate;)V
+
+    .line 455
+    .line 456
+    .line 457
+    sget-object p1, LKHi;->v0:LKHi;
+
+    .line 458
+    .line 459
+    invoke-virtual {v5, p1}, Lio/reactivex/rxjava3/core/Observable;->U(Lio/reactivex/rxjava3/functions/BiPredicate;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 460
+    .line 461
+    .line 462
+    move-result-object p1
+
+    .line 463
+    sget-object v2, Lcx2;->s0:Lcx2;
+
+    .line 464
+    .line 465
+    new-instance v5, LoJ2;
+
+    .line 466
+    .line 467
+    invoke-direct {v5, p0, v1}, LoJ2;-><init>(Lcom/snap/messaging/chat/ChatFragment;I)V
+
+    .line 468
+    .line 469
+    .line 470
+    invoke-static {p1, v2, v6, v5, v0}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->j(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 471
+    .line 472
+    .line 473
+    move-result-object p1
+
+    .line 474
+    invoke-virtual {p0, p1, v3, v4}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
+
+    .line 475
+    .line 476
+    .line 477
+    return-void
+
+    .line 478
+    :cond_12
+    const-string p1, "callStateObserver"
+
+    .line 479
+    .line 480
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 481
+    .line 482
+    .line 483
+    throw v6
+
+    .line 484
+    :cond_13
+    const-string p1, "screenshotWatchman"
+
+    .line 485
+    .line 486
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 487
+    .line 488
+    .line 489
+    throw v6
+
+    .line 490
+    :cond_14
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 491
+    .line 492
+    const-string v0, "Opening chat fragment with no chat context."
+
+    .line 493
+    .line 494
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 495
+    .line 496
+    .line 497
+    throw p1
+
+    .line 498
+    :cond_15
+    const-string p1, "feedNavTracker"
+
+    .line 499
+    .line 500
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 501
+    .line 502
+    .line 503
+    throw v6
+
+    .line 504
+    :cond_16
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 505
+    .line 506
+    .line 507
+    throw v6
 .end method

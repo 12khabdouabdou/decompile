@@ -8,7 +8,7 @@
 
 .field public final b:Landroid/graphics/Paint;
 
-.field public final c:LAY5;
+.field public final c:Lt16;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f07089d
+    const p2, 0x7f0708cd
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -56,9 +56,9 @@
 
     move-result-object p2
 
-    const p3, 0x7f06020b
+    const p3, 0x7f060263
 
-    invoke-static {p2, p3}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p2, p3}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p2
 
@@ -71,7 +71,7 @@
 
     const p3, 0x106000d
 
-    invoke-static {p2, p3}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p2, p3}, LV14;->c(Landroid/content/Context;I)I
 
     move-result p2
 
@@ -97,11 +97,11 @@
     iput-object p3, p0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->b:Landroid/graphics/Paint;
 
     .line 12
-    new-instance p1, LAY5;
+    new-instance p1, Lt16;
 
-    invoke-direct {p1, p0}, LAY5;-><init>(Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;)V
+    invoke-direct {p1, p0}, Lt16;-><init>(Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;)V
 
-    iput-object p1, p0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:LAY5;
+    iput-object p1, p0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:Lt16;
 
     return-void
 .end method
@@ -126,11 +126,11 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:LAY5;
+    iget-object v0, p0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:Lt16;
 
     .line 10
     .line 11
-    iget-object v0, v0, LAY5;->h:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lt16;->h:Landroid/animation/ValueAnimator;
 
     .line 12
     .line 13
@@ -155,11 +155,11 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:LAY5;
+    iget-object v1, p0, Lcom/snap/lenses/voiceml/animation/DefaultVoiceMlBorderAnimationView;->c:Lt16;
 
     .line 7
     .line 8
-    iget-object v2, v1, LAY5;->f:Landroid/graphics/PathEffect;
+    iget-object v2, v1, Lt16;->f:Landroid/graphics/PathEffect;
 
     .line 9
     .line 10
@@ -168,11 +168,11 @@
     .line 11
     .line 12
     .line 13
-    iget-object v2, v1, LAY5;->a:Ljava/lang/Object;
+    iget-object v2, v1, Lt16;->a:Ljava/lang/Object;
 
     .line 14
     .line 15
-    invoke-interface {v2}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v2}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 16
     .line 17
@@ -189,11 +189,11 @@
     .line 22
     .line 23
     .line 24
-    iget-object v1, v1, LAY5;->b:Ljava/lang/Object;
+    iget-object v1, v1, Lt16;->b:Ljava/lang/Object;
 
     .line 25
     .line 26
-    invoke-interface {v1}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v1}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 27
     .line 28

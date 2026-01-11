@@ -1,9 +1,9 @@
 .class public final synthetic LX1j;
-.super Lj28;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function3;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # static fields
@@ -19,25 +19,25 @@
 
     .line 2
     .line 3
-    const-string v5, "onPageMightChangeTo(Lcom/snap/framework/attribution/UiPage;I)V"
+    const-string v5, "<init>(Landroid/content/Context;)V"
 
     .line 4
     .line 5
     const/4 v2, 0x0
 
     .line 6
-    const/4 v1, 0x3
+    const/4 v1, 0x1
 
     .line 7
-    const-class v3, LT1j;
+    const-class v3, LB94;
 
     .line 8
     .line 9
-    const-string v4, "onPageMightChangeTo"
+    const-string v4, "<init>"
 
     .line 10
     .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -51,39 +51,22 @@
 
 
 # virtual methods
-.method public final I(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, LT1j;
+    check-cast p1, Landroid/content/Context;
 
     .line 2
     .line 3
-    check-cast p2, LQ1j;
+    new-instance v0, LB94;
 
     .line 4
     .line 5
-    check-cast p3, Ljava/lang/Number;
+    invoke-direct {v0, p1}, LB94;-><init>(Landroid/content/Context;)V
 
     .line 6
     .line 7
-    invoke-virtual {p3}, Ljava/lang/Number;->intValue()I
-
     .line 8
-    .line 9
-    .line 10
-    iget-object p1, p1, LT1j;->a:LOW5;
-
-    .line 11
-    .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 13
-    .line 14
-    .line 15
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 16
-    .line 17
-    return-object p1
+    return-object v0
 .end method

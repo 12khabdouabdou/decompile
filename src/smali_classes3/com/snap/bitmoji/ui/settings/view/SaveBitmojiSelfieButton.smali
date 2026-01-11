@@ -1,5 +1,5 @@
 .class public final Lcom/snap/bitmoji/ui/settings/view/SaveBitmojiSelfieButton;
-.super LOuh;
+.super LOSh;
 .source "SourceFile"
 
 
@@ -12,7 +12,7 @@
 
     const/4 v1, 0x2
 
-    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/bitmoji/ui/settings/view/SaveBitmojiSelfieButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/bitmoji/ui/settings/view/SaveBitmojiSelfieButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
 
     return-void
 .end method
@@ -21,14 +21,14 @@
     .locals 5
 
     .line 3
-    invoke-direct {p0, p1, p2}, LOuh;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, LOSh;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
-    new-instance p2, Lqnb;
+    new-instance p2, LXAb;
 
-    invoke-direct {p2}, Lqnb;-><init>()V
+    invoke-direct {p2}, LXAb;-><init>()V
 
-    const v0, 0x7f1304b4
+    const v0, 0x7f130517
 
     .line 5
     invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -36,14 +36,14 @@
     move-result-object v0
 
     .line 6
-    iput-object v0, p2, Lqnb;->X:Ljava/lang/Object;
+    iput-object v0, p2, LXAb;->X:Ljava/lang/Object;
 
     .line 7
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x7f060233
+    const v1, 0x7f06028b
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -51,27 +51,27 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p2, v0, v2}, Lqnb;->b(ILjava/lang/Integer;)V
+    invoke-virtual {p2, v0, v2}, LXAb;->b(ILjava/lang/Integer;)V
 
     .line 8
-    invoke-virtual {p2, p1}, Lqnb;->c(Landroid/content/Context;)LXfi;
+    invoke-virtual {p2, p1}, LXAb;->c(Landroid/content/Context;)LREi;
 
     move-result-object p2
 
     const/4 v0, 0x0
 
     .line 9
-    invoke-virtual {p0, v0, p2}, LOuh;->a(ILXfi;)V
+    invoke-virtual {p0, v0, p2}, LOSh;->a(ILREi;)V
 
     .line 10
-    new-instance p2, Lqnb;
+    new-instance p2, LXAb;
 
-    invoke-direct {p2}, Lqnb;-><init>()V
+    invoke-direct {p2}, LXAb;-><init>()V
 
     const/4 v3, 0x1
 
     .line 11
-    iput-boolean v3, p2, Lqnb;->a:Z
+    iput-boolean v3, p2, LXAb;->a:Z
 
     .line 12
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -82,23 +82,23 @@
 
     move-result v1
 
-    invoke-virtual {p2, v1, v2}, Lqnb;->b(ILjava/lang/Integer;)V
+    invoke-virtual {p2, v1, v2}, LXAb;->b(ILjava/lang/Integer;)V
 
     .line 13
-    iput-boolean v0, p2, Lqnb;->c:Z
+    iput-boolean v0, p2, LXAb;->c:Z
 
     .line 14
-    invoke-virtual {p2, p1}, Lqnb;->c(Landroid/content/Context;)LXfi;
+    invoke-virtual {p2, p1}, LXAb;->c(Landroid/content/Context;)LREi;
 
     move-result-object p1
 
     .line 15
-    invoke-virtual {p0, v3, p1}, LOuh;->a(ILXfi;)V
+    invoke-virtual {p0, v3, p1}, LOSh;->a(ILREi;)V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2

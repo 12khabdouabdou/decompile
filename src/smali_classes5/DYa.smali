@@ -1,105 +1,244 @@
 .class public final LDYa;
-.super Ljava/lang/Object;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Landroid/content/res/Resources;
+.field public a:I
 
-.field public final b:LFYa;
-
-.field public final c:LKA7;
-
-.field public final d:LlA7;
-
-.field public final e:LDA7;
-
-.field public final f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final g:LBre;
-
-.field public final h:Lrn0;
+.field public b:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/res/Resources;LFYa;LKA7;LlA7;LDA7;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LDYa;->a:Landroid/content/res/Resources;
+    const/4 v0, 0x0
 
     .line 5
+    iput v0, p0, LDYa;->a:I
+
     .line 6
-    iput-object p2, p0, LDYa;->b:LFYa;
-
     .line 7
-    .line 8
-    iput-object p3, p0, LDYa;->c:LKA7;
+    iput v0, p0, LDYa;->b:I
 
+    .line 8
     .line 9
+    const/4 v0, 0x0
+
     .line 10
-    iput-object p4, p0, LDYa;->d:LlA7;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 11
     .line 12
-    iput-object p5, p0, LDYa;->e:LDA7;
+    const/4 v0, -0x1
 
     .line 13
-    .line 14
-    sget-object p1, LpYa;->Z:LpYa;
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
+    .line 14
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final computeSerializedSize()I
+    .locals 3
+
+    .line 1
+    invoke-super {p0}, Le57;->computeSerializedSize()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    iget v1, p0, LDYa;->a:I
+
+    .line 6
+    .line 7
+    const/4 v2, 0x1
+
+    .line 8
+    and-int/2addr v1, v2
+
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    iget v1, p0, LDYa;->b:I
+
+    .line 12
+    .line 13
+    invoke-static {v2, v1}, Lbd3;->i(II)I
+
+    .line 14
     .line 15
     .line 16
-    const-string p2, "MapFocusViewNavigationPresenter"
+    move-result v1
 
     .line 17
+    add-int/2addr v1, v0
+
     .line 18
-    invoke-static {p1, p1, p2}, Ln9f;->f(LpYa;LpYa;Ljava/lang/String;)LWm0;
+    return v1
+
+    .line 19
+    :cond_0
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_2
+
+    .line 6
+    .line 7
+    const/16 v1, 0x8
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
+    goto :goto_1
+
+    .line 18
+    :cond_1
+    invoke-virtual {p1}, LZc3;->r()I
 
     .line 19
     .line 20
     .line 21
-    move-result-object p1
+    move-result v0
 
     .line 22
-    new-instance p2, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    packed-switch v0, :pswitch_data_0
 
     .line 23
     .line 24
-    invoke-direct {p2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
     .line 25
+    goto :goto_0
+
     .line 26
+    :pswitch_0
+    iput v0, p0, LDYa;->b:I
+
     .line 27
-    iput-object p2, p0, LDYa;->f:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 28
+    iget v0, p0, LDYa;->a:I
+
     .line 29
-    new-instance p2, LBre;
-
     .line 30
-    .line 31
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
+    or-int/lit8 v0, v0, 0x1
 
+    .line 31
     .line 32
+    iput v0, p0, LDYa;->a:I
+
     .line 33
     .line 34
-    iput-object p2, p0, LDYa;->g:LBre;
+    goto :goto_0
 
     .line 35
+    :cond_2
+    :goto_1
+    return-object p0
+
     .line 36
-    sget-object p1, Lrn0;->a:Lrn0;
+    nop
 
     .line 37
-    .line 38
-    iput-object p1, p0, LDYa;->h:Lrn0;
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+        :pswitch_0
+    .end packed-switch
+.end method
 
-    .line 39
-    .line 40
+.method public final writeTo(Lbd3;)V
+    .locals 2
+
+    .line 1
+    iget v0, p0, LDYa;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    and-int/2addr v0, v1
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget v0, p0, LDYa;->b:I
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v1, v0}, Lbd3;->I(II)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 13
+    .line 14
+    .line 15
     return-void
 .end method

@@ -1,186 +1,78 @@
 .class public final LyPg;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LYK4;
 
-.field public final synthetic b:Lcom/snap/component/sectionheader/SnapSectionHeader;
+.field public final b:LYK4;
+
+.field public final c:LYK4;
+
+.field public final d:Lnp0;
+
+.field public final e:LnJe;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/snap/component/sectionheader/SnapSectionHeader;I)V
+.method public constructor <init>(LYK4;LYK4;LYK4;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LyPg;->a:I
-
-    iput-object p1, p0, LyPg;->b:Lcom/snap/component/sectionheader/SnapSectionHeader;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LyPg;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
-
     .line 4
+    iput-object p1, p0, LyPg;->a:LYK4;
+
     .line 5
     .line 6
-    iget-object v0, p0, LyPg;->b:Lcom/snap/component/sectionheader/SnapSectionHeader;
+    iput-object p2, p0, LyPg;->b:LYK4;
 
     .line 7
     .line 8
-    iget-object v0, v0, Lcom/snap/component/sectionheader/SnapSectionHeader;->k0:LLu6;
+    iput-object p3, p0, LyPg;->c:LYK4;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Ltt9;->requestLayout()V
+    sget-object p1, LNn1;->Z:LNn1;
 
     .line 11
     .line 12
+    const-string p2, "SmartReplyAIModelDownloaderImpl"
+
     .line 13
-    sget-object v0, Li7j;->a:Li7j;
-
     .line 14
+    invoke-static {p1, p1, p2}, LAx6;->d(LNn1;LNn1;Ljava/lang/String;)Lnp0;
+
     .line 15
-    return-object v0
-
     .line 16
-    :pswitch_0
-    iget-object v0, p0, LyPg;->b:Lcom/snap/component/sectionheader/SnapSectionHeader;
-
     .line 17
+    move-result-object p1
+
     .line 18
-    iget-object v0, v0, Lcom/snap/component/sectionheader/SnapSectionHeader;->m0:Lsri;
+    iput-object p1, p0, LyPg;->d:Lnp0;
 
     .line 19
     .line 20
-    const/4 v1, 0x0
+    new-instance p2, LnJe;
 
     .line 21
-    invoke-virtual {v0, v1}, Lsri;->a0(Ljava/lang/CharSequence;)V
-
     .line 22
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
     .line 23
     .line 24
-    sget-object v0, Li7j;->a:Li7j;
-
     .line 25
-    .line 26
-    return-object v0
+    iput-object p2, p0, LyPg;->e:LnJe;
 
+    .line 26
     .line 27
-    :pswitch_1
-    iget-object v0, p0, LyPg;->b:Lcom/snap/component/sectionheader/SnapSectionHeader;
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 28
     .line 29
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v0
-
-    .line 33
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
-    const v1, 0x7f07148b
-
-    .line 38
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v0
-
-    .line 44
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v0
-
-    .line 48
-    return-object v0
-
-    .line 49
-    :pswitch_2
-    iget-object v0, p0, LyPg;->b:Lcom/snap/component/sectionheader/SnapSectionHeader;
-
-    .line 50
-    .line 51
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v0
-
-    .line 55
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object v0
-
-    .line 59
-    const v1, 0x7f07148a
-
-    .line 60
-    .line 61
-    .line 62
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
-
-    .line 63
-    .line 64
-    .line 65
-    move-result v0
-
-    .line 66
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-object v0
-
-    .line 70
-    return-object v0
-
-    .line 71
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

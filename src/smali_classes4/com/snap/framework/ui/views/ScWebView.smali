@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public final a:LGf0;
+.field public final a:LJh0;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     .line 10
     .line 11
-    invoke-static {v3, v0, v4, v1, v4}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v0, v4, v1, v4}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 12
     .line 13
@@ -69,7 +69,7 @@
 
     .line 27
     .line 28
-    invoke-static {v2, v1, v0, v3}, LDM4;->q(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1, v0, v3}, LBv7;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 29
     .line 30
@@ -91,11 +91,11 @@
     invoke-direct {p0, p1}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
 
     .line 2
-    new-instance v0, LGf0;
+    new-instance v0, LJh0;
 
-    invoke-direct {v0}, LGf0;-><init>()V
+    invoke-direct {v0}, LJh0;-><init>()V
 
-    iput-object v0, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LGf0;
+    iput-object v0, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LJh0;
 
     .line 3
     invoke-virtual {p0, p1}, Lcom/snap/framework/ui/views/ScWebView;->a(Landroid/content/Context;)V
@@ -110,11 +110,11 @@
     invoke-direct {p0, p1, p2}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 5
-    new-instance p2, LGf0;
+    new-instance p2, LJh0;
 
-    invoke-direct {p2}, LGf0;-><init>()V
+    invoke-direct {p2}, LJh0;-><init>()V
 
-    iput-object p2, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LGf0;
+    iput-object p2, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LJh0;
 
     .line 6
     invoke-virtual {p0, p1}, Lcom/snap/framework/ui/views/ScWebView;->a(Landroid/content/Context;)V
@@ -129,11 +129,11 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 8
-    new-instance p2, LGf0;
+    new-instance p2, LJh0;
 
-    invoke-direct {p2}, LGf0;-><init>()V
+    invoke-direct {p2}, LJh0;-><init>()V
 
-    iput-object p2, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LGf0;
+    iput-object p2, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LJh0;
 
     .line 9
     invoke-virtual {p0, p1}, Lcom/snap/framework/ui/views/ScWebView;->a(Landroid/content/Context;)V
@@ -170,7 +170,7 @@
     float-to-double v0, v0
 
     .line 12
-    iget-object v2, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LGf0;
+    iget-object v2, p0, Lcom/snap/framework/ui/views/ScWebView;->a:LJh0;
 
     .line 13
     .line 14
@@ -187,7 +187,7 @@
     move-result-wide v0
 
     .line 21
-    iget-object v2, v2, LGf0;->a:Ljava/util/concurrent/atomic/AtomicLong;
+    iget-object v2, v2, LJh0;->a:Ljava/util/concurrent/atomic/AtomicLong;
 
     .line 22
     .line 23
@@ -362,7 +362,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LLwi;->a:Lobi;
+    sget-object v0, LOVi;->a:LiAi;
 
     .line 5
     .line 6

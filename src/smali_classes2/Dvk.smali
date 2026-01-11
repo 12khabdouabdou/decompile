@@ -2,131 +2,171 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
-
 
 # static fields
-.field public static final a:LDvk;
+.field public static final a:Ljava/util/Map;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 8
 
     .line 1
-    new-instance v0, LDvk;
+    new-instance v0, Ljava/util/HashMap;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, LDvk;->a:LDvk;
+    sget-object v1, Lswk;->b:Lswk;
 
     .line 7
     .line 8
-    new-instance v0, LFhk;
+    new-instance v2, Ljava/util/HashSet;
 
     .line 9
     .line 10
-    const/4 v1, 0x1
+    const/4 v3, 0x2
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
+    new-array v4, v3, [LCvk;
 
     .line 12
     .line 13
-    .line 14
-    const-class v1, LUhk;
+    sget-object v5, LCvk;->b:LCvk;
 
+    .line 14
     .line 15
+    const/4 v6, 0x0
+
     .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    aput-object v5, v4, v6
 
     .line 17
     .line 18
-    .line 19
-    move-result-object v0
+    sget-object v5, LCvk;->c:LCvk;
 
+    .line 19
     .line 20
-    const/4 v2, 0x2
+    const/4 v7, 0x1
 
     .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
+    aput-object v5, v4, v7
 
     .line 22
     .line 23
+    invoke-static {v4}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
     .line 24
-    move-result-object v0
-
     .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
     .line 26
+    move-result-object v4
+
     .line 27
+    invoke-direct {v2, v4}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
     .line 28
-    move-result-object v0
-
     .line 29
-    const/4 v2, 0x3
-
     .line 30
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 31
     .line 32
     .line 33
-    move-result-object v0
+    sget-object v1, Lswk;->c:Lswk;
 
     .line 34
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
     .line 35
+    new-instance v2, Ljava/util/HashSet;
+
     .line 36
     .line 37
-    move-result-object v0
+    const/4 v4, 0x4
 
     .line 38
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
+    new-array v4, v4, [LCvk;
 
     .line 39
     .line 40
+    sget-object v5, LCvk;->t:LCvk;
+
     .line 41
+    .line 42
+    aput-object v5, v4, v6
+
+    .line 43
+    .line 44
+    sget-object v5, LCvk;->X:LCvk;
+
+    .line 45
+    .line 46
+    aput-object v5, v4, v7
+
+    .line 47
+    .line 48
+    sget-object v5, LCvk;->Y:LCvk;
+
+    .line 49
+    .line 50
+    aput-object v5, v4, v3
+
+    .line 51
+    .line 52
+    sget-object v3, LCvk;->Z:LCvk;
+
+    .line 53
+    .line 54
+    const/4 v5, 0x3
+
+    .line 55
+    aput-object v3, v4, v5
+
+    .line 56
+    .line 57
+    invoke-static {v4}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v3
+
+    .line 61
+    invoke-direct {v2, v3}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v0
+
+    .line 71
+    sput-object v0, LDvk;->a:Ljava/util/Map;
+
+    .line 72
+    .line 73
     return-void
 .end method
 
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    if-nez p1, :cond_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    check-cast p2, LQJc;
-
     .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+    return-void
 .end method

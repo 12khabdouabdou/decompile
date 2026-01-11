@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:LCU3;
+.field public final a:LWY3;
 
 .field public final b:J
 
@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(LCU3;JZZ)V
+.method public constructor <init>(LWY3;JZZ)V
     .locals 0
 
     .line 1
@@ -23,7 +23,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnNetworkDownloadComplete;->a:LCU3;
+    iput-object p1, p0, Lcom/snap/core/net/content/impl/ContentManagerEvents$OnNetworkDownloadComplete;->a:LWY3;
 
     .line 5
     .line 6

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talk/SelectedLens;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'url\':s?,\'lensId\':s?,\'sponsorDetails\':r?:\'[0]\',\'wasPicked\':b@?"
     typeReferences = {

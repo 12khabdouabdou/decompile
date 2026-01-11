@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LCX8;
+    proxyClass = Lf59;
     schema = "\'getCountryCodes\':f|m|(): a<r:\'[0]\'>,\'formatAsYouType\':f|m|(s, s): s,\'getFormattedFullCountryNameWithFlagForRegion\':f|m|(s): s,\'getCountryCodesFromSearch\':f|m|(s): a<r:\'[0]\'>,\'getCurrentOrUSDefaultCountryCode\':f|m|(): s,\'isValidClientPhoneNumberFormat\':f|m|(s): b,\'getCountryCodeAbbreviation\':f|m|(s): s,\'getFullCountryNameFromCountryCodeAbbreviation\':f|m|(s): s,\'getCountryCodeNumber\':f|m|(s): s,\'formatAsYouTypeCountryCode\':f|m|(s): s"
     typeReferences = {
-        LaV8;
+        LC29;
     }
 .end annotation
 
@@ -35,7 +35,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "LaV8;",
+            "LC29;",
             ">;"
         }
     .end annotation
@@ -48,7 +48,7 @@
             "Ljava/lang/String;",
             ")",
             "Ljava/util/List<",
-            "LaV8;",
+            "LC29;",
             ">;"
         }
     .end annotation

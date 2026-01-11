@@ -1,58 +1,382 @@
 .class public final LNAc;
-.super LKAc;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/util/concurrent/Callable;
 
-# static fields
-.field public static final q:LNAc;
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 12
+.method public synthetic constructor <init>(Ljava/lang/String;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LNAc;
+    iput p2, p0, LNAc;->a:I
+
+    iput-object p1, p0, LNAc;->b:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final call()Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    iget v0, p0, LNAc;->a:I
 
     .line 2
     .line 3
-    sget-object v2, LV31;->Z:LV31;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    sget-wide v6, LC51;->a:J
-
     .line 6
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
     .line 7
-    sget-wide v4, LC51;->b:J
-
     .line 8
-    .line 9
-    const/4 v3, 0x0
+    sget-object v1, LOdh;->a:LNdh;
 
+    .line 9
     .line 10
-    const/16 v11, 0x34c
+    iget-object v2, p0, LNAc;->b:Ljava/lang/String;
 
     .line 11
     .line 12
-    const-string v1, "bitmoji_notifications"
+    invoke-virtual {v1, v2}, LNdh;->a(Ljava/lang/String;)I
 
     .line 13
     .line 14
-    const/4 v10, 0x0
-
     .line 15
-    move-wide v8, v6
+    move-result v1
 
     .line 16
-    invoke-direct/range {v0 .. v11}, LKAc;-><init>(Ljava/lang/String;Lan0;Ljava/lang/String;JJJII)V
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
     .line 17
     .line 18
     .line 19
-    sput-object v0, LNAc;->q:LNAc;
+    return-object v0
 
     .line 20
+    :pswitch_0
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
     .line 21
-    return-void
+    .line 22
+    sget-object v1, LOdh;->a:LNdh;
+
+    .line 23
+    .line 24
+    iget-object v2, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    invoke-virtual {v1, v2}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result v1
+
+    .line 30
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    .line 31
+    .line 32
+    .line 33
+    return-object v0
+
+    .line 34
+    :pswitch_1
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 35
+    .line 36
+    sget-object v1, LOdh;->a:LNdh;
+
+    .line 37
+    .line 38
+    iget-object v2, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    invoke-virtual {v1, v2}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v1
+
+    .line 44
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    .line 45
+    .line 46
+    .line 47
+    return-object v0
+
+    .line 48
+    :pswitch_2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 49
+    .line 50
+    sget-object v1, LOdh;->a:LNdh;
+
+    .line 51
+    .line 52
+    iget-object v2, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 53
+    .line 54
+    invoke-virtual {v1, v2}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v1
+
+    .line 58
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    .line 59
+    .line 60
+    .line 61
+    return-object v0
+
+    .line 62
+    :pswitch_3
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 63
+    .line 64
+    iget-object v1, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 65
+    .line 66
+    invoke-virtual {v0, v1}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v0
+
+    .line 70
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 71
+    .line 72
+    .line 73
+    move-result-object v0
+
+    .line 74
+    return-object v0
+
+    .line 75
+    :pswitch_4
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 76
+    .line 77
+    iget-object v1, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 78
+    .line 79
+    invoke-virtual {v0, v1}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v0
+
+    .line 83
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v0
+
+    .line 87
+    return-object v0
+
+    .line 88
+    :pswitch_5
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 89
+    .line 90
+    iget-object v1, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 91
+    .line 92
+    invoke-virtual {v0, v1}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v0
+
+    .line 96
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object v0
+
+    .line 100
+    return-object v0
+
+    .line 101
+    :pswitch_6
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 102
+    .line 103
+    iget-object v1, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 104
+    .line 105
+    invoke-virtual {v0, v1}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 106
+    .line 107
+    .line 108
+    move-result v0
+
+    .line 109
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v0
+
+    .line 113
+    return-object v0
+
+    .line 114
+    :pswitch_7
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 115
+    .line 116
+    iget-object v1, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 117
+    .line 118
+    invoke-virtual {v0, v1}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 119
+    .line 120
+    .line 121
+    move-result v0
+
+    .line 122
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 123
+    .line 124
+    .line 125
+    move-result-object v0
+
+    .line 126
+    return-object v0
+
+    .line 127
+    :pswitch_8
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 128
+    .line 129
+    iget-object v1, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 130
+    .line 131
+    invoke-virtual {v0, v1}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 132
+    .line 133
+    .line 134
+    move-result v0
+
+    .line 135
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v0
+
+    .line 139
+    return-object v0
+
+    .line 140
+    :pswitch_9
+    sget-object v0, LOdh;->a:LNdh;
+
+    .line 141
+    .line 142
+    iget-object v1, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 143
+    .line 144
+    invoke-virtual {v0, v1}, LNdh;->a(Ljava/lang/String;)I
+
+    .line 145
+    .line 146
+    .line 147
+    move-result v0
+
+    .line 148
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 149
+    .line 150
+    .line 151
+    move-result-object v0
+
+    .line 152
+    return-object v0
+
+    .line 153
+    :pswitch_a
+    iget-object v0, p0, LNAc;->b:Ljava/lang/String;
+
+    .line 154
+    .line 155
+    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+
+    .line 156
+    .line 157
+    .line 158
+    return-object v0
+
+    .line 159
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

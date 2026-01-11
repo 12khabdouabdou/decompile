@@ -1,0 +1,36 @@
+.class public abstract LJmg;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LCBe;
+
+
+# static fields
+.field public static final a:Ljw9;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Ljava/util/Collections;->EMPTY_SET:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljw9;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, v0}, Ljw9;-><init>(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v1, LJmg;->a:Ljw9;
+
+    .line 9
+    .line 10
+    return-void
+.end method

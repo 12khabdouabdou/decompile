@@ -1,350 +1,441 @@
 .class public final LJo5;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:LOF3;
 
-.field public final synthetic b:LOo5;
+.field public final b:LiVi;
+
+.field public final c:Lcom/snap/core/application/SnapResourcesContextWrapper;
+
+.field public final d:Lmjg;
+
+.field public final e:LcH8;
+
+.field public final f:Lu09;
+
+.field public final g:LREi;
 
 
 # direct methods
-.method public synthetic constructor <init>(LOo5;I)V
+.method public constructor <init>(LOF3;LiVi;Lcom/snap/core/application/SnapResourcesContextWrapper;Lmjg;LcH8;Lu09;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LJo5;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LJo5;->b:LOo5;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LJo5;->a:LOF3;
 
-    const/4 p1, 0x0
+    .line 5
+    .line 6
+    iput-object p2, p0, LJo5;->b:LiVi;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 7
+    .line 8
+    iput-object p3, p0, LJo5;->c:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
+    .line 9
+    .line 10
+    iput-object p4, p0, LJo5;->d:Lmjg;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LJo5;->e:LcH8;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, LJo5;->f:Lu09;
+
+    .line 15
+    .line 16
+    sget-object p1, LRv;->Z:LRv;
+
+    .line 17
+    .line 18
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 19
+    .line 20
+    .line 21
+    const-string p1, "DefaultAmazonHandshakeManager"
+
+    .line 22
+    .line 23
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 24
+    .line 25
+    .line 26
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 27
+    .line 28
+    new-instance p1, LGk4;
+
+    .line 29
+    .line 30
+    const/16 p2, 0x14
+
+    .line 31
+    .line 32
+    invoke-direct {p1, p2, p0}, LGk4;-><init>(ILjava/lang/Object;)V
+
+    .line 33
+    .line 34
+    .line 35
+    new-instance p2, LREi;
+
+    .line 36
+    .line 37
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 38
+    .line 39
+    .line 40
+    iput-object p2, p0, LJo5;->g:LREi;
+
+    .line 41
+    .line 42
     return-void
+.end method
+
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    const-string v0, "amazon."
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-static {p0, v0, v1}, Lsti;->p0(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
+    .line 10
+    const/4 v0, 0x7
+
+    .line 11
+    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p0
+
+    .line 15
+    return-object p0
+
+    .line 16
+    :cond_0
+    const-string v0, "www.amazon."
+
+    .line 17
+    .line 18
+    invoke-static {p0, v0, v1}, Lsti;->p0(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    if-eqz v0, :cond_1
+
+    .line 23
+    .line 24
+    const/16 v0, 0xb
+
+    .line 25
+    .line 26
+    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object p0
+
+    .line 30
+    return-object p0
+
+    .line 31
+    :cond_1
+    const-string v0, "social.amazon."
+
+    .line 32
+    .line 33
+    invoke-static {p0, v0, v1}, Lsti;->p0(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v0
+
+    .line 37
+    if-eqz v0, :cond_2
+
+    .line 38
+    .line 39
+    const/16 v0, 0xe
+
+    .line 40
+    .line 41
+    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object p0
+
+    .line 45
+    return-object p0
+
+    .line 46
+    :cond_2
+    const-string v0, "web.shop-external.amazon"
+
+    .line 47
+    .line 48
+    invoke-static {p0, v0, v1}, Lsti;->p0(Ljava/lang/String;Ljava/lang/String;Z)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v0
+
+    .line 52
+    if-eqz v0, :cond_3
+
+    .line 53
+    .line 54
+    const/16 v0, 0x18
+
+    .line 55
+    .line 56
+    invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object p0
+
+    .line 60
+    return-object p0
+
+    .line 61
+    :cond_3
+    const/4 p0, 0x0
+
+    .line 62
+    return-object p0
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 8
+.method public final b(Landroid/net/Uri;Lkotlin/jvm/functions/Function0;)V
+    .locals 2
 
     .line 1
-    sget-object v0, Li7j;->a:Li7j;
+    iget-object v0, p0, LJo5;->g:LREi;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
-    const/4 v2, 0x1
-
     .line 5
-    iget-object v3, p0, LJo5;->b:LOo5;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    iget v4, p0, LJo5;->a:I
+    check-cast v0, Ljava/lang/String;
 
     .line 8
     .line 9
-    packed-switch v4, :pswitch_data_0
+    if-eqz v0, :cond_1
 
     .line 10
     .line 11
-    .line 12
-    iget-object v0, v3, Landroidx/recyclerview/widget/RecyclerView;->l0:LrGe;
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
+    .line 12
     .line 13
     .line 14
-    if-eqz v0, :cond_0
-
-    .line 15
-    .line 16
-    invoke-virtual {v0}, LrGe;->getItemCount()I
-
-    .line 17
-    .line 18
-    .line 19
     move-result v0
 
-    .line 20
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
     goto :goto_0
 
-    .line 21
+    .line 18
     :cond_0
-    const/4 v0, 0x0
+    new-instance v0, LM53;
 
+    .line 19
+    .line 20
+    const/16 v1, 0x1a
+
+    .line 21
     .line 22
-    :goto_0
-    if-lez v0, :cond_3
+    invoke-direct {v0, p0, p1, p2, v1}, LM53;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 23
     .line 24
-    invoke-virtual {v3}, Landroid/view/View;->isLaidOut()Z
-
     .line 25
-    .line 26
-    .line 27
-    move-result v0
+    const/4 p1, 0x0
 
+    .line 26
+    iget-object p2, p0, LJo5;->b:LiVi;
+
+    .line 27
     .line 28
-    if-eqz v0, :cond_1
+    check-cast p2, LcZ5;
 
     .line 29
     .line 30
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->f0()Z
+    invoke-virtual {p2, v0, p1}, LcZ5;->a(Lkotlin/jvm/functions/Function1;Z)V
 
     .line 31
     .line 32
     .line 33
-    move-result v0
-
-    .line 34
-    if-nez v0, :cond_2
-
-    .line 35
-    .line 36
     :cond_1
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->h0()Z
+    :goto_0
+    return-void
+.end method
 
-    .line 37
-    .line 38
-    .line 39
-    move-result v0
+.method public final c(Landroid/net/Uri;)Z
+    .locals 5
 
-    .line 40
-    if-nez v0, :cond_2
+    .line 1
+    invoke-virtual {p1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
 
-    .line 41
-    .line 42
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->i0()Z
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
 
-    .line 43
-    .line 44
-    .line 45
-    move-result v0
-
-    .line 46
-    if-nez v0, :cond_2
-
-    .line 47
-    .line 48
-    const/4 v0, 0x1
-
-    .line 49
-    goto :goto_1
-
-    .line 50
-    :cond_2
+    .line 5
     const/4 v0, 0x0
 
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {p1}, LJo5;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    if-eqz p1, :cond_0
+
+    .line 13
+    .line 14
+    sget-object v1, LZSg;->Z3:LZSg;
+
+    .line 15
+    .line 16
+    iget-object v2, p0, LJo5;->a:LOF3;
+
+    .line 17
+    .line 18
+    invoke-interface {v2, v1}, LOF3;->f(LcM3;)Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    const-string v3, ","
+
+    .line 23
+    .line 24
+    filled-new-array {v3}, [Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v3
+
+    .line 28
+    const/4 v4, 0x6
+
+    .line 29
+    invoke-static {v1, v3, v0, v4}, Lkti;->T0(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    sget-object v3, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
+
+    .line 34
+    .line 35
+    invoke-virtual {p1, v3}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object p1
+
+    .line 39
+    invoke-interface {v1, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result p1
+
+    .line 43
+    if-eqz p1, :cond_0
+
+    .line 44
+    .line 45
+    sget-object p1, LZSg;->Y3:LZSg;
+
+    .line 46
+    .line 47
+    invoke-interface {v2, p1}, LOF3;->a(LcM3;)Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result p1
+
     .line 51
-    :goto_1
-    if-eqz v0, :cond_3
+    if-eqz p1, :cond_0
 
     .line 52
     .line 53
-    const/4 v1, 0x1
+    const/4 p1, 0x1
 
     .line 54
-    :cond_3
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    return p1
 
     .line 55
-    .line 56
-    .line 57
-    move-result-object v0
-
-    .line 58
-    return-object v0
-
-    .line 59
-    :pswitch_0
-    iget-object v0, v3, LOo5;->F1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 60
-    .line 61
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->d1()Ljava/lang/Object;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v0
-
-    .line 65
-    if-eqz v0, :cond_5
-
-    .line 66
-    .line 67
-    iget-object v0, v3, LOo5;->F1:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 68
-    .line 69
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->d1()Ljava/lang/Object;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v0
-
-    .line 73
-    instance-of v0, v0, LOb2;
-
-    .line 74
-    .line 75
-    if-nez v0, :cond_5
-
-    .line 76
-    .line 77
-    invoke-virtual {v3}, Landroid/view/View;->isLaidOut()Z
-
-    .line 78
-    .line 79
-    .line 80
-    move-result v0
-
-    .line 81
-    if-eqz v0, :cond_4
-
-    .line 82
-    .line 83
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->f0()Z
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v0
-
-    .line 87
-    if-nez v0, :cond_6
-
-    .line 88
-    .line 89
-    :cond_4
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->h0()Z
-
-    .line 90
-    .line 91
-    .line 92
-    move-result v0
-
-    .line 93
-    if-nez v0, :cond_6
-
-    .line 94
-    .line 95
-    invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->i0()Z
-
-    .line 96
-    .line 97
-    .line 98
-    move-result v0
-
-    .line 99
-    if-nez v0, :cond_6
-
-    .line 100
-    .line 101
-    :cond_5
-    const/4 v1, 0x1
-
-    .line 102
-    :cond_6
-    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v0
-
-    .line 106
-    return-object v0
-
-    .line 107
-    :pswitch_1
-    iget-object v1, p0, LJo5;->b:LOo5;
-
-    .line 108
-    .line 109
-    iget-object v2, v1, LOo5;->E1:LNWi;
-
-    .line 110
-    .line 111
-    instance-of v3, v2, Lq09;
-
-    .line 112
-    .line 113
-    if-eqz v3, :cond_7
-
-    .line 114
-    .line 115
-    check-cast v2, Lq09;
-
-    .line 116
-    .line 117
-    goto :goto_2
-
-    .line 118
-    :cond_7
-    const/4 v2, 0x0
-
-    .line 119
-    :goto_2
-    if-eqz v2, :cond_8
-
-    .line 120
-    .line 121
-    const/4 v5, 0x0
-
-    .line 122
-    const/16 v7, 0x58
-
-    .line 123
-    .line 124
-    const/4 v3, 0x1
-
-    .line 125
-    const/4 v4, 0x1
-
-    .line 126
-    const/4 v6, 0x0
-
-    .line 127
-    invoke-static/range {v1 .. v7}, LOo5;->S0(LOo5;Lq09;IZZLJo5;I)V
-
-    .line 128
-    .line 129
-    .line 130
-    :cond_8
-    return-object v0
-
-    .line 131
-    :pswitch_2
-    sget-object v1, LGzg;->F0:LfMj;
-
-    .line 132
-    .line 133
-    sget v4, LOo5;->V1:I
-
-    .line 134
-    .line 135
-    invoke-virtual {v3, v1, v2}, LOo5;->R0(LgMj;Z)V
-
-    .line 136
-    .line 137
-    .line 138
-    return-object v0
-
-    .line 139
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :cond_0
+    return v0
 .end method

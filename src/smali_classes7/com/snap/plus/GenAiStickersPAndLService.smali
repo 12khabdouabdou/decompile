@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lcb8;
+    proxyClass = Lxh8;
     schema = "\'accept\':f|m|(): p<v>"
     typeReferences = {}
 .end annotation
@@ -21,7 +21,7 @@
         value = {
             "()",
             "Lcom/snap/composer/promise/Promise<",
-            "Li7j;",
+            "Lewj;",
             ">;"
         }
     .end annotation

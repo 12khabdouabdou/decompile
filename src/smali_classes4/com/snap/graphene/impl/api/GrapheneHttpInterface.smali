@@ -4,16 +4,12 @@
 
 
 # virtual methods
-.method public abstract emitMetricFrame(LiZe;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LiZe;
-        .annotation runtime Ljv1;
+.method public abstract emitMetricFrame(Lahf;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lahf;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "v1/metrics"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "__xsc_local__gzip:request"
         }
@@ -22,12 +18,16 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LiZe;",
+            "Lahf;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Void;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "v1/metrics"
     .end annotation
 .end method

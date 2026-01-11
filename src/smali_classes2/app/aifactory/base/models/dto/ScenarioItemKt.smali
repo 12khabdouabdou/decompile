@@ -68,7 +68,7 @@
 
     .line 26
     .line 27
-    sget-object v8, LuN2;->a:LtN2;
+    sget-object v8, LRP2;->a:LQP2;
 
     .line 28
     .line 29
@@ -94,7 +94,7 @@
 
     .line 38
     .line 39
-    invoke-direct/range {v0 .. v11}, Lapp/aifactory/base/models/dto/ScenarioItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lapp/aifactory/base/models/dto/ScenarioType;Ljava/lang/String;Lapp/aifactory/sdk/api/model/dto/ReenactmentType;Lapp/aifactory/sdk/api/model/ResourceId;LuDf;Ljava/lang/String;Lapp/aifactory/base/models/dto/ScenarioResources;Z)V
+    invoke-direct/range {v0 .. v11}, Lapp/aifactory/base/models/dto/ScenarioItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lapp/aifactory/base/models/dto/ScenarioType;Ljava/lang/String;Lapp/aifactory/sdk/api/model/dto/ReenactmentType;Lapp/aifactory/sdk/api/model/ResourceId;LOWf;Ljava/lang/String;Lapp/aifactory/base/models/dto/ScenarioResources;Z)V
 
     .line 40
     .line 41

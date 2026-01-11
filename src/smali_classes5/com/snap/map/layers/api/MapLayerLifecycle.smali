@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LD0b;
+    proxyClass = LFdb;
     schema = "\'onTrayPositionChanged\':g<c>:\'[0]\'<r<e>:\'[1]\'>,\'onLoadingChanged\':g<c>:\'[0]\'<b@>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,

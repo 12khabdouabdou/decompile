@@ -1,5 +1,5 @@
 .class public abstract Lcom/snap/contextcards/api/opera/ContextChatItemEvents;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -21,7 +21,7 @@
     .locals 0
 
     .line 2
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     return-void
 .end method

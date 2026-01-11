@@ -1,180 +1,102 @@
-.class public final enum Lee6;
-.super Ljava/lang/Enum;
+.class public final Lee6;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lee6;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum b:Lee6;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "FRIEND"
-    .end annotation
-.end field
-
-.field public static final enum c:Lee6;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "NON_FRIEND"
-    .end annotation
-.end field
-
-.field public static final synthetic t:[Lee6;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic a:I
+
+.field public final synthetic b:Lfe6;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    .line 1
-    new-instance v0, Lee6;
-
-    .line 2
-    .line 3
-    const-string v1, "FRIEND"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, Lee6;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Lee6;->b:Lee6;
-
-    .line 10
-    .line 11
-    new-instance v1, Lee6;
-
-    .line 12
-    .line 13
-    const-string v3, "NON_FRIEND"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, Lee6;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lee6;->c:Lee6;
-
-    .line 20
-    .line 21
-    const/4 v3, 0x2
-
-    .line 22
-    new-array v3, v3, [Lee6;
-
-    .line 23
-    .line 24
-    aput-object v0, v3, v2
-
-    .line 25
-    .line 26
-    aput-object v1, v3, v4
-
-    .line 27
-    .line 28
-    sput-object v3, Lee6;->t:[Lee6;
-
-    .line 29
-    .line 30
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public synthetic constructor <init>(Lfe6;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput p2, p0, Lee6;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput p3, p0, Lee6;->a:I
+    iput-object p1, p0, Lee6;->b:Lfe6;
 
-    .line 5
-    .line 6
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lee6;
-    .locals 1
-
-    .line 1
-    const-class v0, Lee6;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lee6;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lee6;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lee6;->t:[Lee6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lee6;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lee6;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final d()Ljava/lang/Object;
+    .locals 2
 
     .line 1
     iget v0, p0, Lee6;->a:I
 
     .line 2
     .line 3
-    return v0
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lee6;->b:Lfe6;
+
+    .line 7
+    .line 8
+    const v1, 0x7f0b080d
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    check-cast v0, Lcom/snap/thumbnailui/view/PlayheadOverlay;
+
+    .line 16
+    .line 17
+    return-object v0
+
+    .line 18
+    :pswitch_0
+    iget-object v0, p0, Lee6;->b:Lfe6;
+
+    .line 19
+    .line 20
+    const v1, 0x7f0b0841
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    check-cast v0, Lcom/snap/ui/view/SnapFontTextView;
+
+    .line 28
+    .line 29
+    return-object v0
+
+    .line 30
+    nop
+
+    .line 31
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

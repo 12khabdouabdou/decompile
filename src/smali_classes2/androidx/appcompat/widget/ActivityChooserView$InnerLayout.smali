@@ -45,7 +45,7 @@
 
     .line 5
     .line 6
-    new-instance v1, LQDi;
+    new-instance v1, Lu3j;
 
     .line 7
     .line 8
@@ -57,7 +57,7 @@
     move-result-object p2
 
     .line 12
-    invoke-direct {v1, p1, p2}, LQDi;-><init>(Landroid/content/Context;Landroid/content/res/TypedArray;)V
+    invoke-direct {v1, p1, p2}, Lu3j;-><init>(Landroid/content/Context;Landroid/content/res/TypedArray;)V
 
     .line 13
     .line 14
@@ -65,7 +65,7 @@
     const/4 p1, 0x0
 
     .line 16
-    invoke-virtual {v1, p1}, LQDi;->g(I)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1, p1}, Lu3j;->g(I)Landroid/graphics/drawable/Drawable;
 
     .line 17
     .line 18
@@ -78,7 +78,7 @@
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v1}, LQDi;->t()V
+    invoke-virtual {v1}, Lu3j;->t()V
 
     .line 24
     .line 25

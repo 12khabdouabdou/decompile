@@ -1,44 +1,55 @@
 .class public final Lnhb;
-.super Lan0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final Z:Lnhb;
+# instance fields
+.field public final a:LSgb;
+
+.field public final b:Z
+
+.field public final c:Ljava/lang/Object;
+
+.field public final d:LeR9;
+
+.field public final e:Landroid/graphics/Rect;
+
+.field public final f:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>(LSgb;ZLjava/util/Set;LeR9;Landroid/graphics/Rect;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lnhb;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, LEy9;->i0:LEy9;
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, Lnhb;->a:LSgb;
 
+    .line 5
     .line 6
-    const/16 v3, 0x1c
+    iput-boolean p2, p0, Lnhb;->b:Z
 
     .line 7
     .line 8
-    const-string v4, "MediaCore"
+    iput-object p3, p0, Lnhb;->c:Ljava/lang/Object;
 
     .line 9
     .line 10
-    invoke-direct {v0, v4, v1, v2, v3}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
+    iput-object p4, p0, Lnhb;->d:LeR9;
 
     .line 11
     .line 12
-    .line 13
-    sput-object v0, Lnhb;->Z:Lnhb;
+    iput-object p5, p0, Lnhb;->e:Landroid/graphics/Rect;
 
+    .line 13
     .line 14
+    iput-object p6, p0, Lnhb;->f:Ljava/lang/String;
+
     .line 15
+    .line 16
     return-void
 .end method

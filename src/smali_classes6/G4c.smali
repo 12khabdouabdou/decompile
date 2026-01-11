@@ -1,25 +1,36 @@
 .class public final LG4c;
-.super Ljava/lang/Object;
+.super LPn3;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LK4c;
+# static fields
+.field public static final d:LG4c;
 
 
 # direct methods
-.method public constructor <init>(LK4c;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LG4c;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LG4c;->a:LK4c;
+    const-string v1, "SHARED_PUBLIC_SNAP"
 
+    .line 4
     .line 5
+    const/4 v2, 0x3
+
     .line 6
+    invoke-direct {v0, v1, v2}, LPn3;-><init>(Ljava/lang/String;I)V
+
+    .line 7
+    .line 8
+    .line 9
+    sput-object v0, LG4c;->d:LG4c;
+
+    .line 10
+    .line 11
     return-void
 .end method

@@ -1,441 +1,210 @@
 .class public final Ljq1;
-.super Ljava/lang/Object;
+.super Llq1;
 .source "SourceFile"
-
-# interfaces
-.implements LE7d;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/lang/String;
 
-.field public final synthetic b:Lgq1;
+.field public final b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lgq1;I)V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Ljq1;->a:I
-
-    iput-object p1, p0, Ljq1;->b:Lgq1;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Ljq1;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iput p2, p0, Ljq1;->b:I
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Completable;
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Ljq1;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, Ljq1;
+
+    .line 10
+    .line 11
+    iget-object v0, p1, Ljq1;->a:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Ljq1;->a:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_2
+    iget v0, p0, Ljq1;->b:I
+
+    .line 23
+    .line 24
+    iget p1, p1, Ljq1;->b:I
+
+    .line 25
+    .line 26
+    if-eq v0, p1, :cond_3
+
+    .line 27
+    .line 28
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 29
+    return p1
+
+    .line 30
+    :cond_3
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 31
+    return p1
+.end method
+
+.method public final hashCode()I
     .locals 4
 
     .line 1
-    iget v0, p0, Ljq1;->a:I
+    iget-object v0, p0, Ljq1;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, LeBb;
+    move-result v0
 
     .line 7
+    const/16 v1, 0x1f
+
     .line 8
-    iget-object v0, p0, Ljq1;->b:Lgq1;
-
     .line 9
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 10
-    check-cast v0, LgG4;
-
     .line 11
-    .line 12
-    invoke-virtual {v0}, LgG4;->u()LPe;
+    iget v2, p0, Ljq1;->b:I
 
+    .line 12
     .line 13
+    const v3, -0x72b5b610
+
     .line 14
     .line 15
-    move-result-object v0
-
     .line 16
-    new-instance v1, LGJ0;
+    invoke-static {v0, v2, v1, v3, v1}, Lznc;->d(IIIII)I
 
     .line 17
     .line 18
-    const/16 v2, 0x18
-
     .line 19
+    move-result v0
+
     .line 20
-    invoke-direct {v1, p1, v2, v0}, LGJ0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 21
-    .line 22
-    .line 23
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 24
-    .line 25
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v0, v0, LPe;->Z:Ljava/lang/Object;
-
-    .line 29
-    .line 30
-    check-cast v0, LBre;
-
-    .line 31
-    .line 32
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v0
-
-    .line 36
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 37
-    .line 38
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 39
-    .line 40
-    .line 41
-    return-object v1
-
-    .line 42
-    :pswitch_0
-    check-cast p1, LNd8;
-
-    .line 43
-    .line 44
-    iget-object v0, p0, Ljq1;->b:Lgq1;
-
-    .line 45
-    .line 46
-    check-cast v0, LgG4;
-
-    .line 47
-    .line 48
-    invoke-virtual {v0}, LgG4;->u()LPe;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    new-instance v1, LGJ0;
-
-    .line 53
-    .line 54
-    const/16 v2, 0x16
-
-    .line 55
-    .line 56
-    invoke-direct {v1, p1, v2, v0}, LGJ0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 57
-    .line 58
-    .line 59
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 60
-    .line 61
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 62
-    .line 63
-    .line 64
-    iget-object v0, v0, LPe;->Z:Ljava/lang/Object;
-
-    .line 65
-    .line 66
-    check-cast v0, LBre;
-
-    .line 67
-    .line 68
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v0
-
-    .line 72
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 73
-    .line 74
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 75
-    .line 76
-    .line 77
-    return-object v1
-
-    .line 78
-    :pswitch_1
-    check-cast p1, Ljx6;
-
-    .line 79
-    .line 80
-    iget-object v0, p0, Ljq1;->b:Lgq1;
-
-    .line 81
-    .line 82
-    check-cast v0, LgG4;
-
-    .line 83
-    .line 84
-    invoke-virtual {v0}, LgG4;->u()LPe;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object v0
-
-    .line 88
-    new-instance v1, LGJ0;
-
-    .line 89
-    .line 90
-    const/16 v2, 0x17
-
-    .line 91
-    .line 92
-    invoke-direct {v1, p1, v2, v0}, LGJ0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 93
-    .line 94
-    .line 95
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 96
-    .line 97
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 98
-    .line 99
-    .line 100
-    iget-object v0, v0, LPe;->Z:Ljava/lang/Object;
-
-    .line 101
-    .line 102
-    check-cast v0, LBre;
-
-    .line 103
-    .line 104
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v0
-
-    .line 108
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 109
-    .line 110
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 111
-    .line 112
-    .line 113
-    return-object v1
-
-    .line 114
-    :pswitch_2
-    check-cast p1, Lmq1;
-
-    .line 115
-    .line 116
-    iget-object v0, p0, Ljq1;->b:Lgq1;
-
-    .line 117
-    .line 118
-    check-cast v0, LgG4;
-
-    .line 119
-    .line 120
-    invoke-virtual {v0}, LgG4;->u()LPe;
-
-    .line 121
-    .line 122
-    .line 123
-    move-result-object v0
-
-    .line 124
-    iget-object v1, p1, Lmq1;->a:Lcom/snap/bloops/inappreporting/api/CameosReportParams;
-
-    .line 125
-    .line 126
-    invoke-virtual {v1}, Lcom/snap/bloops/inappreporting/api/CameosReportParams;->a()Lcom/snap/bloops/inappreporting/api/CameosStoryReportParams;
-
-    .line 127
-    .line 128
-    .line 129
-    move-result-object v1
-
-    .line 130
-    if-nez v1, :cond_0
-
-    .line 131
-    .line 132
-    goto :goto_0
-
-    .line 133
-    :cond_0
-    new-instance v2, Liq1;
-
-    .line 134
-    .line 135
-    const/4 v3, 0x0
-
-    .line 136
-    invoke-direct {v2, v0, v3, p1}, Liq1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 137
-    .line 138
-    .line 139
-    invoke-virtual {v1, v2}, Lcom/snap/bloops/inappreporting/api/CameosStoryReportParams;->a(Lkotlin/jvm/functions/Function0;)V
-
-    .line 140
-    .line 141
-    .line 142
-    :goto_0
-    new-instance v1, LGJ0;
-
-    .line 143
-    .line 144
-    const/16 v2, 0x15
-
-    .line 145
-    .line 146
-    invoke-direct {v1, p1, v2, v0}, LGJ0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 147
-    .line 148
-    .line 149
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 150
-    .line 151
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 152
-    .line 153
-    .line 154
-    iget-object v0, v0, LPe;->Z:Ljava/lang/Object;
-
-    .line 155
-    .line 156
-    check-cast v0, LBre;
-
-    .line 157
-    .line 158
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 159
-    .line 160
-    .line 161
-    move-result-object v0
-
-    .line 162
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 163
-    .line 164
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 165
-    .line 166
-    .line 167
-    return-object v1
-
-    .line 168
-    nop
-
-    .line 169
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return v0
 .end method
 
-.method public final bridge synthetic d(Ljava/lang/Object;)Lsga;
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
     .line 1
-    iget v0, p0, Ljq1;->a:I
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string v1, "Error(lensId="
 
     .line 4
     .line 5
-    .line 6
-    check-cast p1, LeBb;
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    const/4 p1, 0x0
+    iget-object v1, p0, Ljq1;->a:Ljava/lang/String;
 
     .line 9
-    return-object p1
-
     .line 10
-    :pswitch_0
-    check-cast p1, LNd8;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    const/4 p1, 0x0
-
     .line 13
-    return-object p1
+    const-string v1, ", code="
 
     .line 14
-    :pswitch_1
-    check-cast p1, Ljx6;
-
     .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 16
-    const/4 p1, 0x0
-
     .line 17
-    return-object p1
-
     .line 18
-    :pswitch_2
-    check-cast p1, Lmq1;
+    iget v1, p0, Ljq1;->b:I
 
     .line 19
     .line 20
-    const/4 p1, 0x0
+    const-string v2, ", domain=BloopsLensAssetPathResolverImpl, reason=null)"
 
     .line 21
-    return-object p1
-
     .line 22
-    nop
+    invoke-static {v0, v1, v2}, LJF0;->w(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
 
     .line 23
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    return-object v0
 .end method

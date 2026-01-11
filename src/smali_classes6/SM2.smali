@@ -1,138 +1,139 @@
 .class public final LSM2;
-.super Ljava/lang/Object;
+.super Landroid/text/style/ClickableSpan;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/text/style/UpdateAppearance;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final X:Z
 
-.field public final synthetic b:LTM2;
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/lang/Integer;
+
+.field public final c:Landroid/graphics/Typeface;
+
+.field public final t:Ljava/lang/Integer;
 
 
 # direct methods
-.method public synthetic constructor <init>(LTM2;I)V
-    .locals 0
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/Integer;Landroid/graphics/Typeface;I)V
+    .locals 6
+
+    and-int/lit8 p4, p4, 0x10
+
+    if-eqz p4, :cond_0
+
+    const/4 p4, 0x0
+
+    const/4 v5, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p4, 0x1
+
+    const/4 v5, 0x1
+
+    :goto_0
+    const/4 v4, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
 
     .line 1
-    iput p2, p0, LSM2;->a:I
+    invoke-direct/range {v0 .. v5}, LSM2;-><init>(Ljava/lang/String;Ljava/lang/Integer;Landroid/graphics/Typeface;Ljava/lang/Integer;Z)V
 
-    iput-object p1, p0, LSM2;->b:LTM2;
+    return-void
+.end method
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Integer;Landroid/graphics/Typeface;Ljava/lang/Integer;Z)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
+
+    .line 3
+    iput-object p1, p0, LSM2;->a:Ljava/lang/String;
+
+    .line 4
+    iput-object p2, p0, LSM2;->b:Ljava/lang/Integer;
+
+    .line 5
+    iput-object p3, p0, LSM2;->c:Landroid/graphics/Typeface;
+
+    .line 6
+    iput-object p4, p0, LSM2;->t:Ljava/lang/Integer;
+
+    .line 7
+    iput-boolean p5, p0, LSM2;->X:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final onClick(Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, LSM2;->a:I
+    return-void
+.end method
+
+.method public final updateDrawState(Landroid/text/TextPaint;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LSM2;->b:Ljava/lang/Integer;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    iget-object v0, p0, LSM2;->b:LTM2;
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
+    .line 6
     .line 7
     .line 8
-    iget-object v0, v0, LTM2;->c:LbN2;
+    move-result v0
 
     .line 9
-    .line 10
-    if-eqz v0, :cond_0
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
+    .line 10
     .line 11
     .line 12
-    invoke-virtual {v0}, LbN2;->b()V
+    :cond_0
+    iget-object v0, p0, LSM2;->c:Landroid/graphics/Typeface;
 
     .line 13
     .line 14
-    .line 15
-    return-void
+    if-eqz v0, :cond_1
 
+    .line 15
     .line 16
-    :cond_0
-    const-string v0, "presenter"
+    const/4 v1, 0x1
 
     .line 17
-    .line 18
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setFakeBoldText(Z)V
 
+    .line 18
     .line 19
     .line 20
+    invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
+
     .line 21
-    const/4 v0, 0x0
-
     .line 22
-    throw v0
-
     .line 23
-    :pswitch_0
-    iget-object v0, p0, LSM2;->b:LTM2;
-
-    .line 24
-    .line 25
-    iget-object v1, v0, LTM2;->a:Landroid/view/ViewGroup;
-
-    .line 26
-    .line 27
-    invoke-virtual {v1}, Landroid/view/ViewGroup;->removeAllViews()V
-
-    .line 28
-    .line 29
-    .line 30
-    const/16 v1, 0x8
-
-    .line 31
-    .line 32
-    iget-object v2, v0, LTM2;->a:Landroid/view/ViewGroup;
-
-    .line 33
-    .line 34
-    invoke-virtual {v2, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 35
-    .line 36
-    .line 37
-    iget-object v1, v0, LTM2;->d:Lcom/snap/chat_reply/ChatReplyComposeView;
-
-    .line 38
-    .line 39
-    if-eqz v1, :cond_1
-
-    .line 40
-    .line 41
-    invoke-virtual {v1}, Lcom/snap/composer/views/ComposerRootView;->destroy()V
-
-    .line 42
-    .line 43
-    .line 44
     :cond_1
-    const/4 v1, 0x0
-
-    .line 45
-    iput-object v1, v0, LTM2;->d:Lcom/snap/chat_reply/ChatReplyComposeView;
-
-    .line 46
-    .line 47
     return-void
-
-    .line 48
-    nop
-
-    .line 49
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

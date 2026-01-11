@@ -1,62 +1,76 @@
-.class public abstract LKEd;
+.class public final LKEd;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
 
-# static fields
-.field public static final a:LcSa;
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Landroid/animation/ValueAnimator;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public synthetic constructor <init>(Landroid/animation/ValueAnimator;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LcSa;
+    iput p2, p0, LKEd;->a:I
+
+    iput-object p1, p0, LKEd;->b:Landroid/animation/ValueAnimator;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 1
+    iget v0, p0, LKEd;->a:I
 
     .line 2
     .line 3
-    sget-object v1, LFli;->Z:LFli;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const/4 v8, 0x0
-
     .line 6
-    const/4 v9, 0x0
+    iget-object v0, p0, LKEd;->b:Landroid/animation/ValueAnimator;
 
     .line 7
-    const-string v2, "talk_permissions_page"
-
     .line 8
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
+
     .line 9
-    const/4 v3, 0x0
-
     .line 10
-    const/4 v4, 0x1
-
     .line 11
-    const/4 v5, 0x0
+    return-void
 
     .line 12
-    const/4 v6, 0x0
+    :pswitch_0
+    iget-object v0, p0, LKEd;->b:Landroid/animation/ValueAnimator;
 
     .line 13
-    const/4 v7, 0x0
-
     .line 14
-    const/16 v10, 0x3ff4
+    invoke-virtual {v0}, Landroid/animation/Animator;->start()V
 
     .line 15
     .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
-
     .line 17
-    .line 18
-    .line 19
-    sput-object v0, LKEd;->a:LcSa;
-
-    .line 20
-    .line 21
     return-void
+
+    .line 18
+    nop
+
+    .line 19
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -3,26 +3,32 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKEf;
+.implements Lcom/snap/discoverfeed/DiscoverFeedImpressionEventLogger;
 
 
 # instance fields
-.field public final a:LJh6;
+.field public final a:Lkotlin/jvm/functions/Function1;
 
-.field public final b:LNZg;
+.field public final b:Lkotlin/jvm/functions/Function1;
 
-.field public final c:Lbpf;
+.field public final c:Lkotlin/jvm/functions/Function2;
 
-.field public final d:LVof;
-
-.field public final e:LJi6;
-
-.field public final f:LBre;
+.field public final t:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public constructor <init>(Lnwf;LJh6;LNZg;Lbpf;LVof;LJi6;)V
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -30,275 +36,166 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, LFi6;->a:LJh6;
+    iput-object p1, p0, LFi6;->a:Lkotlin/jvm/functions/Function1;
 
     .line 5
     .line 6
-    iput-object p3, p0, LFi6;->b:LNZg;
+    iput-object p2, p0, LFi6;->b:Lkotlin/jvm/functions/Function1;
 
     .line 7
     .line 8
-    iput-object p4, p0, LFi6;->c:Lbpf;
+    iput-object p3, p0, LFi6;->c:Lkotlin/jvm/functions/Function2;
 
     .line 9
     .line 10
-    iput-object p5, p0, LFi6;->d:LVof;
+    iput-object p4, p0, LFi6;->t:Lkotlin/jvm/functions/Function1;
 
     .line 11
     .line 12
-    iput-object p6, p0, LFi6;->e:LJi6;
-
-    .line 13
-    .line 14
-    sget-object p2, Lve6;->Z:Lve6;
-
-    .line 15
-    .line 16
-    check-cast p1, LIP5;
-
-    .line 17
-    .line 18
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 19
-    .line 20
-    .line 21
-    const-string p1, "DiscoverFeedVerticalSectionFactory"
-
-    .line 22
-    .line 23
-    invoke-static {p2, p1}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object p1
-
-    .line 27
-    iput-object p1, p0, LFi6;->f:LBre;
-
-    .line 28
-    .line 29
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LTg6;)Z
+.method public observeTrigger(Lkotlin/jvm/functions/Function1;)Lkotlin/jvm/functions/Function0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1;",
+            ")",
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LFi6;->t:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lkotlin/jvm/functions/Function0;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public onFirstRender(DD)V
     .locals 0
 
     .line 1
-    iget-object p1, p1, LTg6;->g:LWg6;
+    invoke-static {p1, p2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 2
     .line 3
-    if-eqz p1, :cond_0
-
     .line 4
+    move-result-object p1
+
     .line 5
-    iget-boolean p1, p1, LWg6;->c:Z
-
-    .line 6
-    .line 7
-    return p1
-
-    .line 8
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 9
-    return p1
-.end method
-
-.method public final b(LTg6;LbV3;II)LJf6;
-    .locals 6
-
-    .line 1
-    sget-object v0, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v1, "dfosf:createVerticalSection"
-
-    .line 4
-    .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-static {p3, p4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 6
     .line 7
     .line 8
-    move-result v1
+    move-result-object p2
 
     .line 9
-    :try_start_0
-    iget-object v2, p0, LFi6;->b:LNZg;
+    iget-object p3, p0, LFi6;->c:Lkotlin/jvm/functions/Function2;
 
     .line 10
     .line 11
-    new-instance v3, LWeg;
+    invoke-interface {p3, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 12
     .line 13
-    iget-object v2, v2, LNZg;->b:Ljava/lang/Object;
+    .line 14
+    return-void
+.end method
+
+.method public onImpressionEvents(Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "LEi6;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LFi6;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public onSettledImpressionEvents(Ljava/util/List;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "LEi6;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LFi6;->b:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/discoverfeed/DiscoverFeedImpressionEventLogger;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
 
     .line 14
-    .line 15
-    check-cast v2, LT0c;
-
-    .line 16
-    .line 17
-    invoke-direct {v3, p1, v2}, LWeg;-><init>(LTg6;LT0c;)V
-
-    .line 18
-    .line 19
-    .line 20
-    const/4 v2, 0x1
-
-    .line 21
-    sub-int/2addr p4, v2
-
-    .line 22
-    if-ne p3, p4, :cond_0
-
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_0
-    const/4 v2, 0x0
-
-    .line 26
-    :goto_0
-    iget-object p3, p0, LFi6;->e:LJi6;
-
-    .line 27
-    .line 28
-    iget-object p3, p3, LJi6;->g:Lio/reactivex/rxjava3/internal/operators/completable/CompletableCache;
-
-    .line 29
-    .line 30
-    iget-object p4, p0, LFi6;->a:LJh6;
-
-    .line 31
-    .line 32
-    invoke-virtual {p4, p1}, LJh6;->e(LTg6;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p4
-
-    .line 36
-    new-instance v4, LMg6;
-
-    .line 37
-    .line 38
-    const/4 v5, 0x1
-
-    .line 39
-    invoke-direct {v4, v3, p0, p2, v5}, LMg6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    .line 40
-    .line 41
-    .line 42
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;
-
-    .line 43
-    .line 44
-    invoke-direct {v3, p4, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 45
-    .line 46
-    .line 47
-    sget-object v4, Li7j;->a:Li7j;
-
-    .line 48
-    .line 49
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
-
-    .line 50
-    .line 51
-    invoke-direct {v5, v4}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-virtual {p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 55
-    .line 56
-    .line 57
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenObservable;
-
-    .line 58
-    .line 59
-    invoke-direct {v4, p3, v5}, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenObservable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/ObservableSource;)V
-
-    .line 60
-    .line 61
-    .line 62
-    new-instance p3, LEi6;
-
-    .line 63
-    .line 64
-    invoke-direct {p3, p0, p1, p2, v2}, LEi6;-><init>(LFi6;LTg6;LbV3;Z)V
-
-    .line 65
-    .line 66
-    .line 67
-    invoke-static {v4, p4, v3, p3}, LzP2;->p(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function3;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 68
-    .line 69
-    .line 70
-    move-result-object p2
-
-    .line 71
-    invoke-virtual {p2}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object p2
-
-    .line 75
-    new-instance p3, LJf6;
-
-    .line 76
-    .line 77
-    invoke-direct {p3, p1, p2}, LJf6;-><init>(LTg6;Lio/reactivex/rxjava3/core/Observable;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 78
-    .line 79
-    .line 80
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
-
-    .line 81
-    .line 82
-    .line 83
-    return-object p3
-
-    .line 84
-    :catchall_0
-    move-exception p1
-
-    .line 85
-    sget-object p2, LXRg;->b:Lzhi;
-
-    .line 86
-    .line 87
-    if-eqz p2, :cond_1
-
-    .line 88
-    .line 89
-    invoke-virtual {p2, v1}, Lzhi;->o(I)V
-
-    .line 90
-    .line 91
-    .line 92
-    :cond_1
-    throw p1
+    return p1
 .end method

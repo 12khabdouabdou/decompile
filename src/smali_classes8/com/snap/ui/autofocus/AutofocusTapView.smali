@@ -40,9 +40,9 @@
 
 .field public final q0:I
 
-.field public r0:LnB0;
+.field public r0:LcE0;
 
-.field public final s0:LU3;
+.field public final s0:Lq4;
 
 .field public final t:F
 
@@ -72,7 +72,7 @@
 
     .line 10
     .line 11
-    new-instance v1, LmB0;
+    new-instance v1, LbE0;
 
     .line 12
     .line 13
@@ -81,24 +81,24 @@
     .line 14
     .line 15
     .line 16
-    iput-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->r0:LnB0;
+    iput-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->r0:LcE0;
 
     .line 17
     .line 18
-    new-instance v1, LU3;
+    new-instance v1, Lq4;
 
     .line 19
     .line 20
-    const/16 v2, 0x19
+    const/16 v2, 0x1c
 
     .line 21
     .line 22
-    invoke-direct {v1, v2, p0}, LU3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Lq4;-><init>(ILjava/lang/Object;)V
 
     .line 23
     .line 24
     .line 25
-    iput-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->s0:LU3;
+    iput-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->s0:Lq4;
 
     .line 26
     .line 27
@@ -169,7 +169,7 @@
     move-result-object v0
 
     .line 64
-    const v1, 0x7f07013a
+    const v1, 0x7f07013b
 
     .line 65
     .line 66
@@ -222,7 +222,7 @@
 
     .line 90
     .line 91
-    invoke-static {p2, p2, p2, v0}, LBdd;->b(FFFF)Landroid/view/animation/Interpolator;
+    invoke-static {p2, p2, p2, v0}, LDtd;->b(FFFF)Landroid/view/animation/Interpolator;
 
     .line 92
     .line 93
@@ -234,7 +234,7 @@
 
     .line 96
     .line 97
-    invoke-static {v0, p1}, Lsc5;->W(FLandroid/content/Context;)F
+    invoke-static {v0, p1}, LTVd;->u(FLandroid/content/Context;)F
 
     .line 98
     .line 99
@@ -262,7 +262,7 @@
     move-result-object p1
 
     .line 111
-    const p2, 0x7f070139
+    const p2, 0x7f07013a
 
     .line 112
     .line 113
@@ -302,7 +302,7 @@
 
 
 # virtual methods
-.method public final a(FFLbB0;Z)V
+.method public final a(FFLQD0;Z)V
     .locals 0
 
     .line 1
@@ -310,7 +310,7 @@
 
     .line 2
     .line 3
-    iput-object p3, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->r0:LnB0;
+    iput-object p3, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->r0:LcE0;
 
     .line 4
     .line 5
@@ -379,7 +379,7 @@
 
     .line 35
     .line 36
-    iget-object p1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->s0:LU3;
+    iget-object p1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->s0:Lq4;
 
     .line 37
     .line 38
@@ -581,7 +581,7 @@
 
     .line 83
     :cond_3
-    iget-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->s0:LU3;
+    iget-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->s0:Lq4;
 
     .line 84
     .line 85
@@ -602,11 +602,11 @@
     .line 92
     .line 93
     .line 94
-    iget-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->r0:LnB0;
+    iget-object v1, p0, Lcom/snap/ui/autofocus/AutofocusTapView;->r0:LcE0;
 
     .line 95
     .line 96
-    invoke-interface {v1}, LnB0;->a()V
+    invoke-interface {v1}, LcE0;->a()V
 
     .line 97
     .line 98

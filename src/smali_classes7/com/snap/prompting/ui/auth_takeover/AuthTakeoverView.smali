@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LIw0;",
-        "LBw0;",
+        "Lrz0;",
+        "Lkz0;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LHw0;
+.field public static final Companion:Lqz0;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LHw0;
+    new-instance v0, Lqz0;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;->Companion:LHw0;
+    sput-object v0, Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;->Companion:Lqz0;
 
     .line 7
     .line 8
@@ -62,29 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LIw0;LBw0;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;
+.method public static final create(LZ69;Lrz0;Lkz0;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LIw0;",
-            "LBw0;",
-            "LTB3;",
+            "LZ69;",
+            "Lrz0;",
+            "Lkz0;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;->Companion:LHw0;
+    sget-object v0, Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;->Companion:Lqz0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     new-instance v2, Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -108,15 +108,15 @@
     move-object v7, p4
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;
+.method public static final create(LZ69;LvF3;)Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;
     .locals 3
 
-    sget-object v0, Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;->Companion:LHw0;
+    sget-object v0, Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;->Companion:Lqz0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -125,7 +125,7 @@
     const/16 v2, 0x10
 
     .line 1
-    invoke-static {v0, p0, v1, p1, v2}, LHw0;->a(LHw0;LqZ8;LBw0;LTB3;I)Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;
+    invoke-static {v0, p0, v1, p1, v2}, Lqz0;->a(Lqz0;LZ69;Lkz0;LvF3;I)Lcom/snap/prompting/ui/auth_takeover/AuthTakeoverView;
 
     move-result-object p0
 

@@ -1,25 +1,68 @@
 .class public final Lrp1;
-.super Lwp1;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Supplier;
 
 
 # instance fields
-.field public final b:Ljava/lang/String;
+.field public final synthetic a:LBp1;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(LBp1;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lwp1;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lrp1;->b:Ljava/lang/String;
+    iput-object p1, p0, Lrp1;->a:LBp1;
 
     .line 5
     .line 6
     return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lrp1;->a:LBp1;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, LBp1;->i:LtK4;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, LtK4;->get()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    check-cast v0, Lts1;
+
+    .line 10
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    invoke-virtual {v0, v1}, Lts1;->d(Z)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
 .end method

@@ -4,55 +4,51 @@
 
 
 # virtual methods
-.method public abstract acknowledgeNotification(LO6;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LO6;
-        .annotation runtime Ljv1;
+.method public abstract acknowledgeNotification(Lv7;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lv7;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
-    .annotation runtime LX6d;
+    .annotation runtime LIR8;
+        value = {
+            "Accept: application/x-protobuf"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lv7;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lio/reactivex/rxjava3/core/Single<",
+            "Ljnf<",
+            "Lw7;",
+            ">;>;"
+        }
+    .end annotation
+
+    .annotation runtime Llmd;
         value = "/snapchat.notification.PushNotificationService/AckNotification"
     .end annotation
-
-    .annotation runtime LaK8;
-        value = {
-            "Accept: application/x-protobuf"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "LO6;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LP6;",
-            ">;>;"
-        }
-    .end annotation
 .end method
 
-.method public abstract acknowledgeNotificationToMapGrpcProxy(LO6;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LO6;
-        .annotation runtime Ljv1;
+.method public abstract acknowledgeNotificationToMapGrpcProxy(Lv7;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lv7;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p2    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/map/grpc-proxy/push/acknowledge_notification"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -61,29 +57,29 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LO6;",
+            "Lv7;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;)",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LP6;",
+            "Ljnf<",
+            "Lw7;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+        value = "/map/grpc-proxy/push/acknowledge_notification"
+    .end annotation
 .end method
 
-.method public abstract acknowledgeNotificationToPnsGrpcProxy(LO6;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LO6;
-        .annotation runtime Ljv1;
+.method public abstract acknowledgeNotificationToPnsGrpcProxy(Lv7;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # Lv7;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/pns/grpc-proxy/push/acknowledge_notification"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -92,12 +88,16 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LO6;",
+            "Lv7;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LP6;",
+            "Ljnf<",
+            "Lw7;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "/pns/grpc-proxy/push/acknowledge_notification"
     .end annotation
 .end method

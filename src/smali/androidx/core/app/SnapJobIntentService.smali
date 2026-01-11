@@ -4,12 +4,12 @@
 
 
 # virtual methods
-.method public final a()LTy9;
+.method public final a()LcI9;
     .locals 1
 
     .line 1
     :try_start_0
-    invoke-super {p0}, Landroidx/core/app/JobIntentService;->a()LTy9;
+    invoke-super {p0}, Landroidx/core/app/JobIntentService;->a()LcI9;
 
     .line 2
     .line 3

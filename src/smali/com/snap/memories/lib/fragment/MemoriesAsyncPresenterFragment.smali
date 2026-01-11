@@ -3,18 +3,18 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
-.implements LhG9;
+.implements LY2d;
+.implements LFR9;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/memories/api/MemoriesFragment<",
-        "LZAb;",
+        "LOOb;",
         ">;",
-        "LcOc;",
-        "LhG9;"
+        "LY2d;",
+        "LFR9;"
     }
 .end annotation
 
@@ -24,65 +24,65 @@
 
 
 # instance fields
-.field public F0:Lu00;
+.field public F0:Lb30;
 
-.field public G0:LwX4;
+.field public G0:Le35;
 
-.field public H0:LB73;
+.field public H0:LR93;
 
 .field public I0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 .field public J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public K0:LOB6;
+.field public K0:LmF6;
 
-.field public L0:LXZ5;
+.field public L0:LQ26;
 
-.field public M0:LkT6;
+.field public M0:LjX6;
 
-.field public N0:Lbke;
+.field public N0:LDBe;
 
-.field public O0:Lbke;
+.field public O0:LDBe;
 
-.field public P0:Lbke;
+.field public P0:LDBe;
 
-.field public Q0:LFEb;
+.field public Q0:LrSb;
 
-.field public R0:LTqc;
+.field public R0:LmGc;
 
-.field public S0:LwX4;
+.field public S0:Le35;
 
-.field public T0:LBJd;
+.field public T0:LR0e;
 
-.field public U0:Lbke;
+.field public U0:LDBe;
 
-.field public V0:LwX4;
+.field public V0:Le35;
 
-.field public W0:LwX4;
+.field public W0:Le35;
 
-.field public X0:LwX4;
+.field public X0:Le35;
 
-.field public Y0:LwX4;
+.field public Y0:Le35;
 
-.field public Z0:LPGg;
+.field public Z0:Ly2h;
 
-.field public a1:LwX4;
+.field public a1:Le35;
 
-.field public b1:LwX4;
+.field public b1:Le35;
 
-.field public c1:LwX4;
+.field public c1:Le35;
 
-.field public d1:LwX4;
+.field public d1:Le35;
 
-.field public e1:LwX4;
+.field public e1:Le35;
 
-.field public f1:Liwb;
+.field public f1:LSJb;
 
 .field public g1:Landroid/view/ViewStub;
 
 .field public h1:Lcom/snap/opera/presenter/OperaHostView;
 
-.field public final i1:LJ8;
+.field public final i1:Lr9;
 
 .field public final j1:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -96,25 +96,25 @@
 
 .field public o1:Lcom/snap/memories/lib/grid/view/MemoriesAllPagesRecyclerView;
 
-.field public p1:LQqc;
+.field public p1:LiGc;
 
 .field public final q1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 .field public final r1:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-.field public final s1:LXfi;
+.field public final s1:LREi;
 
-.field public final t1:LXfi;
+.field public final t1:LREi;
 
-.field public final u1:LXfi;
+.field public final u1:LREi;
 
-.field public final v1:LXfi;
+.field public final v1:LREi;
 
-.field public final w1:Ljwb;
+.field public final w1:LTJb;
 
-.field public final x1:LWm0;
+.field public final x1:Lnp0;
 
-.field public final y1:Lrn0;
+.field public final y1:LJp0;
 
 
 # direct methods
@@ -127,7 +127,7 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LJ8;
+    new-instance v0, Lr9;
 
     .line 5
     .line 6
@@ -135,12 +135,12 @@
 
     .line 7
     .line 8
-    invoke-direct {v0, v1, p0}, LJ8;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lr9;-><init>(ILjava/lang/Object;)V
 
     .line 9
     .line 10
     .line 11
-    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->i1:LJ8;
+    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->i1:Lr9;
 
     .line 12
     .line 13
@@ -186,111 +186,111 @@
 
     .line 34
     .line 35
-    new-instance v0, Lewb;
+    new-instance v0, LPJb;
 
     .line 36
     .line 37
     const/4 v1, 0x1
 
     .line 38
-    invoke-direct {v0, p0, v1}, Lewb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+    invoke-direct {v0, p0, v1}, LPJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
 
     .line 39
     .line 40
     .line 41
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 42
     .line 43
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 44
     .line 45
     .line 46
-    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->s1:LXfi;
+    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->s1:LREi;
 
     .line 47
     .line 48
-    new-instance v0, Lewb;
+    new-instance v0, LPJb;
 
     .line 49
     .line 50
     const/4 v1, 0x0
 
     .line 51
-    invoke-direct {v0, p0, v1}, Lewb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+    invoke-direct {v0, p0, v1}, LPJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
 
     .line 52
     .line 53
     .line 54
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 55
     .line 56
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 57
     .line 58
     .line 59
-    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->t1:LXfi;
+    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->t1:LREi;
 
     .line 60
     .line 61
-    new-instance v0, Lewb;
+    new-instance v0, LPJb;
 
     .line 62
     .line 63
     const/4 v1, 0x2
 
     .line 64
-    invoke-direct {v0, p0, v1}, Lewb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+    invoke-direct {v0, p0, v1}, LPJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
 
     .line 65
     .line 66
     .line 67
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 68
     .line 69
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 70
     .line 71
     .line 72
-    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->u1:LXfi;
+    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->u1:LREi;
 
     .line 73
     .line 74
-    new-instance v0, Lewb;
+    new-instance v0, LPJb;
 
     .line 75
     .line 76
     const/4 v1, 0x3
 
     .line 77
-    invoke-direct {v0, p0, v1}, Lewb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+    invoke-direct {v0, p0, v1}, LPJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
 
     .line 78
     .line 79
     .line 80
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 81
     .line 82
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 83
     .line 84
     .line 85
-    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->v1:LXfi;
+    iput-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->v1:LREi;
 
     .line 86
     .line 87
-    sget-object v0, Ljwb;->Z:Ljwb;
+    sget-object v0, LTJb;->Z:LTJb;
 
     .line 88
     .line 89
-    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->w1:Ljwb;
+    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->w1:LTJb;
 
     .line 90
     .line 91
@@ -298,7 +298,7 @@
 
     .line 92
     .line 93
-    invoke-static {v0, v0, v1}, LmG8;->d(Ljwb;Ljwb;Ljava/lang/String;)LWm0;
+    invoke-static {v0, v0, v1}, LBv7;->d(LTJb;LTJb;Ljava/lang/String;)Lnp0;
 
     .line 94
     .line 95
@@ -306,15 +306,15 @@
     move-result-object v0
 
     .line 97
-    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->x1:LWm0;
+    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->x1:Lnp0;
 
     .line 98
     .line 99
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 100
     .line 101
-    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->y1:Lrn0;
+    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->y1:LJp0;
 
     .line 102
     .line 103
@@ -323,1085 +323,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 9
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Ldwb;
-
-    .line 5
-    .line 6
-    const/4 v1, 0x3
-
-    .line 7
-    invoke-direct {v0, p0, v1}, Ldwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 8
-    .line 9
-    .line 10
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
-    .line 11
-    .line 12
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 13
-    .line 14
-    .line 15
-    sget-object v0, Lrha;->h0:Lrha;
-
-    .line 16
-    .line 17
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 18
-    .line 19
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    check-cast v0, LBre;
-
-    .line 27
-    .line 28
-    invoke-virtual {v0}, LBre;->d()LF06;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
-
-    .line 32
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 33
-    .line 34
-    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 35
-    .line 36
-    .line 37
-    sget-object v0, LVvb;->t:LVvb;
-
-    .line 38
-    .line 39
-    sget-object v2, LVvb;->X:LVvb;
-
-    .line 40
-    .line 41
-    iget-object v3, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->q1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 42
-    .line 43
-    invoke-virtual {v1, v0, v2, v3}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 44
-    .line 45
-    .line 46
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->v1:LXfi;
-
-    .line 47
-    .line 48
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    check-cast v0, Ljava/lang/Boolean;
-
-    .line 53
-    .line 54
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 55
-    .line 56
-    .line 57
-    move-result v0
-
-    .line 58
-    const/4 v1, 0x0
-
-    .line 59
-    if-eqz v0, :cond_1
-
-    .line 60
-    .line 61
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->Z0:LPGg;
-
-    .line 62
-    .line 63
-    if-eqz v0, :cond_0
-
-    .line 64
-    .line 65
-    invoke-virtual {v0}, LPGg;->a()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v0
-
-    .line 69
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v2
-
-    .line 73
-    check-cast v2, LBre;
-
-    .line 74
-    .line 75
-    invoke-virtual {v2}, LBre;->i()Lgn0;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v2
-
-    .line 79
-    sget-object v4, Lejb;->Y:Lejb;
-
-    .line 80
-    .line 81
-    invoke-static {v0, v2, v4}, LzP2;->a0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v0
-
-    .line 85
-    new-instance v2, Lfwb;
-
-    .line 86
-    .line 87
-    const/4 v4, 0x2
-
-    .line 88
-    invoke-direct {v2, p0, v4}, Lfwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 89
-    .line 90
-    .line 91
-    new-instance v4, Lfwb;
-
-    .line 92
-    .line 93
-    const/4 v5, 0x3
-
-    .line 94
-    invoke-direct {v4, p0, v5}, Lfwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 95
-    .line 96
-    .line 97
-    invoke-static {v0, v2, v4, v3}, LLZj;->v0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
-
-    .line 98
-    .line 99
-    .line 100
-    goto :goto_0
-
-    .line 101
-    :cond_0
-    const-string p1, "snapFeedShowMemoriesPageEvent"
-
-    .line 102
-    .line 103
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 104
-    .line 105
-    .line 106
-    throw v1
-
-    .line 107
-    :cond_1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->U0:Lbke;
-
-    .line 108
-    .line 109
-    if-eqz v0, :cond_4
-
-    .line 110
-    .line 111
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
-
-    .line 112
-    .line 113
-    .line 114
-    move-result-object v0
-
-    .line 115
-    check-cast v0, LXog;
-
-    .line 116
-    .line 117
-    invoke-virtual {v0, p0}, LXog;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 118
-    .line 119
-    .line 120
-    move-result-object v0
-
-    .line 121
-    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 122
-    .line 123
-    .line 124
-    :goto_0
-    new-instance v0, Lgwb;
-
-    .line 125
-    .line 126
-    const/4 v2, 0x6
-
-    .line 127
-    invoke-direct {v0, p0, v2}, Lgwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 128
-    .line 129
-    .line 130
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 131
-    .line 132
-    invoke-direct {v2, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 133
-    .line 134
-    .line 135
-    const-string v0, "mem:fragment:migrateAndSync"
-
-    .line 136
-    .line 137
-    invoke-static {v2, v0}, LANi;->a(Lio/reactivex/rxjava3/core/Completable;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 138
-    .line 139
-    .line 140
-    move-result-object v0
-
-    .line 141
-    sget-object v2, Li7j;->a:Li7j;
-
-    .line 142
-    .line 143
-    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Completable;->B(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
-
-    .line 144
-    .line 145
-    .line 146
-    move-result-object v0
-
-    .line 147
-    new-instance v2, Ltfb;
-
-    .line 148
-    .line 149
-    const/16 v4, 0x8
-
-    .line 150
-    .line 151
-    invoke-direct {v2, v4, p0}, Ltfb;-><init>(ILjava/lang/Object;)V
-
-    .line 152
-    .line 153
-    .line 154
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
-
-    .line 155
-    .line 156
-    invoke-direct {v4, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 157
-    .line 158
-    .line 159
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 160
-    .line 161
-    .line 162
-    move-result-object v0
-
-    .line 163
-    check-cast v0, LBre;
-
-    .line 164
-    .line 165
-    invoke-virtual {v0}, LBre;->d()LF06;
-
-    .line 166
-    .line 167
-    .line 168
-    move-result-object v0
-
-    .line 169
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 170
-    .line 171
-    invoke-direct {v2, v4, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 172
-    .line 173
-    .line 174
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
-
-    .line 175
-    .line 176
-    .line 177
-    move-result-wide v4
-
-    .line 178
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 179
-    .line 180
-    sget-object v6, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 181
-    .line 182
-    invoke-virtual {v2, v4, v5, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->i(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 183
-    .line 184
-    .line 185
-    move-result-object v2
-
-    .line 186
-    invoke-static {v2, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 187
-    .line 188
-    .line 189
-    iget-object v2, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->u1:LXfi;
-
-    .line 190
-    .line 191
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 192
-    .line 193
-    .line 194
-    move-result-object v2
-
-    .line 195
-    check-cast v2, Ljava/lang/Boolean;
-
-    .line 196
-    .line 197
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 198
-    .line 199
-    .line 200
-    move-result v2
-
-    .line 201
-    if-eqz v2, :cond_2
-
-    .line 202
-    .line 203
-    new-instance v2, Ldwb;
-
-    .line 204
-    .line 205
-    const/4 v4, 0x1
-
-    .line 206
-    invoke-direct {v2, p0, v4}, Ldwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 207
-    .line 208
-    .line 209
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
-    .line 210
-    .line 211
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 212
-    .line 213
-    .line 214
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 215
-    .line 216
-    .line 217
-    move-result-object v2
-
-    .line 218
-    check-cast v2, LBre;
-
-    .line 219
-    .line 220
-    invoke-virtual {v2}, LBre;->k()LF06;
-
-    .line 221
-    .line 222
-    .line 223
-    move-result-object v2
-
-    .line 224
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 225
-    .line 226
-    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 227
-    .line 228
-    .line 229
-    invoke-static {v5, v3}, LLZj;->q0(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 230
-    .line 231
-    .line 232
-    :cond_2
-    new-instance v2, Lgwb;
-
-    .line 233
-    .line 234
-    const/4 v4, 0x0
-
-    .line 235
-    invoke-direct {v2, p0, v4}, Lgwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 236
-    .line 237
-    .line 238
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 239
-    .line 240
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 241
-    .line 242
-    .line 243
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 244
-    .line 245
-    .line 246
-    move-result-object v2
-
-    .line 247
-    check-cast v2, LBre;
-
-    .line 248
-    .line 249
-    invoke-virtual {v2}, LBre;->d()LF06;
-
-    .line 250
-    .line 251
-    .line 252
-    move-result-object v2
-
-    .line 253
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 254
-    .line 255
-    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 256
-    .line 257
-    .line 258
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
-
-    .line 259
-    .line 260
-    .line 261
-    move-result-wide v7
-
-    .line 262
-    invoke-virtual {v5, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->i(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 263
-    .line 264
-    .line 265
-    move-result-object v2
-
-    .line 266
-    invoke-static {v2, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 267
-    .line 268
-    .line 269
-    new-instance v2, Lgwb;
-
-    .line 270
-    .line 271
-    const/4 v4, 0x1
-
-    .line 272
-    invoke-direct {v2, p0, v4}, Lgwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 273
-    .line 274
-    .line 275
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 276
-    .line 277
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 278
-    .line 279
-    .line 280
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 281
-    .line 282
-    .line 283
-    move-result-object v2
-
-    .line 284
-    check-cast v2, LBre;
-
-    .line 285
-    .line 286
-    invoke-virtual {v2}, LBre;->d()LF06;
-
-    .line 287
-    .line 288
-    .line 289
-    move-result-object v2
-
-    .line 290
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 291
-    .line 292
-    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 293
-    .line 294
-    .line 295
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
-
-    .line 296
-    .line 297
-    .line 298
-    move-result-wide v7
-
-    .line 299
-    invoke-virtual {v5, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->i(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 300
-    .line 301
-    .line 302
-    move-result-object v2
-
-    .line 303
-    invoke-static {v2, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 304
-    .line 305
-    .line 306
-    new-instance v2, Lgwb;
-
-    .line 307
-    .line 308
-    const/4 v4, 0x2
-
-    .line 309
-    invoke-direct {v2, p0, v4}, Lgwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 310
-    .line 311
-    .line 312
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 313
-    .line 314
-    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 315
-    .line 316
-    .line 317
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 318
-    .line 319
-    .line 320
-    move-result-object v2
-
-    .line 321
-    check-cast v2, LBre;
-
-    .line 322
-    .line 323
-    invoke-virtual {v2}, LBre;->d()LF06;
-
-    .line 324
-    .line 325
-    .line 326
-    move-result-object v2
-
-    .line 327
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 328
-    .line 329
-    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 330
-    .line 331
-    .line 332
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
-
-    .line 333
-    .line 334
-    .line 335
-    move-result-wide v7
-
-    .line 336
-    invoke-virtual {v5, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->i(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 337
-    .line 338
-    .line 339
-    move-result-object v2
-
-    .line 340
-    invoke-static {v2, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 341
-    .line 342
-    .line 343
-    new-instance v2, LGca;
-
-    .line 344
-    .line 345
-    const/16 v4, 0x10
-
-    .line 346
-    .line 347
-    invoke-direct {v2, p0, v4, p1}, LGca;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 348
-    .line 349
-    .line 350
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 351
-    .line 352
-    invoke-direct {p1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 353
-    .line 354
-    .line 355
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 356
-    .line 357
-    .line 358
-    move-result-object v2
-
-    .line 359
-    check-cast v2, LBre;
-
-    .line 360
-    .line 361
-    invoke-virtual {v2}, LBre;->d()LF06;
-
-    .line 362
-    .line 363
-    .line 364
-    move-result-object v2
-
-    .line 365
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 366
-    .line 367
-    invoke-direct {v4, p1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 368
-    .line 369
-    .line 370
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
-
-    .line 371
-    .line 372
-    .line 373
-    move-result-wide v7
-
-    .line 374
-    invoke-virtual {v4, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->i(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 375
-    .line 376
-    .line 377
-    move-result-object p1
-
-    .line 378
-    invoke-static {p1, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 379
-    .line 380
-    .line 381
-    new-instance p1, Lgwb;
-
-    .line 382
-    .line 383
-    const/4 v2, 0x3
-
-    .line 384
-    invoke-direct {p1, p0, v2}, Lgwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 385
-    .line 386
-    .line 387
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 388
-    .line 389
-    invoke-direct {v2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 390
-    .line 391
-    .line 392
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 393
-    .line 394
-    .line 395
-    move-result-object p1
-
-    .line 396
-    check-cast p1, LBre;
-
-    .line 397
-    .line 398
-    invoke-virtual {p1}, LBre;->d()LF06;
-
-    .line 399
-    .line 400
-    .line 401
-    move-result-object p1
-
-    .line 402
-    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 403
-    .line 404
-    invoke-direct {v4, v2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 405
-    .line 406
-    .line 407
-    invoke-static {v4, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 408
-    .line 409
-    .line 410
-    iget-object p1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->b1:LwX4;
-
-    .line 411
-    .line 412
-    if-eqz p1, :cond_3
-
-    .line 413
-    .line 414
-    invoke-virtual {p1}, LwX4;->get()Ljava/lang/Object;
-
-    .line 415
-    .line 416
-    .line 417
-    move-result-object p1
-
-    .line 418
-    check-cast p1, LoJb;
-
-    .line 419
-    .line 420
-    invoke-virtual {p1}, LoJb;->a()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 421
-    .line 422
-    .line 423
-    move-result-object p1
-
-    .line 424
-    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 425
-    .line 426
-    .line 427
-    new-instance p1, Ldwb;
-
-    .line 428
-    .line 429
-    const/4 v1, 0x2
-
-    .line 430
-    invoke-direct {p1, p0, v1}, Ldwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 431
-    .line 432
-    .line 433
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
-    .line 434
-    .line 435
-    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 436
-    .line 437
-    .line 438
-    sget-object p1, Lmha;->h0:Lmha;
-
-    .line 439
-    .line 440
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
-
-    .line 441
-    .line 442
-    invoke-direct {v2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 443
-    .line 444
-    .line 445
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 446
-    .line 447
-    .line 448
-    move-result-object p1
-
-    .line 449
-    check-cast p1, LBre;
-
-    .line 450
-    .line 451
-    invoke-virtual {p1}, LBre;->d()LF06;
-
-    .line 452
-    .line 453
-    .line 454
-    move-result-object p1
-
-    .line 455
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 456
-    .line 457
-    invoke-direct {v1, v2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 458
-    .line 459
-    .line 460
-    new-instance p1, Lfwb;
-
-    .line 461
-    .line 462
-    const/4 v2, 0x1
-
-    .line 463
-    invoke-direct {p1, p0, v2}, Lfwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 464
-    .line 465
-    .line 466
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
-
-    .line 467
-    .line 468
-    invoke-direct {v2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;)V
-
-    .line 469
-    .line 470
-    .line 471
-    invoke-static {v2, v3}, LLZj;->q0(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 472
-    .line 473
-    .line 474
-    new-instance p1, Lgwb;
-
-    .line 475
-    .line 476
-    const/4 v1, 0x4
-
-    .line 477
-    invoke-direct {p1, p0, v1}, Lgwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 478
-    .line 479
-    .line 480
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 481
-    .line 482
-    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 483
-    .line 484
-    .line 485
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 486
-    .line 487
-    .line 488
-    move-result-object p1
-
-    .line 489
-    check-cast p1, LBre;
-
-    .line 490
-    .line 491
-    invoke-virtual {p1}, LBre;->d()LF06;
-
-    .line 492
-    .line 493
-    .line 494
-    move-result-object p1
-
-    .line 495
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 496
-    .line 497
-    invoke-direct {v2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 498
-    .line 499
-    .line 500
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
-
-    .line 501
-    .line 502
-    .line 503
-    move-result-wide v4
-
-    .line 504
-    invoke-virtual {v2, v4, v5, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->i(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 505
-    .line 506
-    .line 507
-    move-result-object p1
-
-    .line 508
-    invoke-static {p1, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 509
-    .line 510
-    .line 511
-    new-instance p1, Lgwb;
-
-    .line 512
-    .line 513
-    const/4 v0, 0x5
-
-    .line 514
-    invoke-direct {p1, p0, v0}, Lgwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
-
-    .line 515
-    .line 516
-    .line 517
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 518
-    .line 519
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 520
-    .line 521
-    .line 522
-    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()Lzre;
-
-    .line 523
-    .line 524
-    .line 525
-    move-result-object p1
-
-    .line 526
-    check-cast p1, LBre;
-
-    .line 527
-    .line 528
-    invoke-virtual {p1}, LBre;->d()LF06;
-
-    .line 529
-    .line 530
-    .line 531
-    move-result-object p1
-
-    .line 532
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 533
-    .line 534
-    invoke-direct {v1, v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 535
-    .line 536
-    .line 537
-    invoke-static {v1, v3}, LLZj;->l0(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 538
-    .line 539
-    .line 540
-    return-void
-
-    .line 541
-    :cond_3
-    const-string p1, "tabSessionMetricsManager"
-
-    .line 542
-    .line 543
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 544
-    .line 545
-    .line 546
-    throw v1
-
-    .line 547
-    :cond_4
-    const-string p1, "rxBus"
-
-    .line 548
-    .line 549
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 550
-    .line 551
-    .line 552
-    throw v1
-.end method
-
-.method public final D1()V
+.method public final B1()V
     .locals 1
 
     .line 1
-    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->D1()V
+    invoke-super {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->B1()V
 
     .line 2
     .line 3
@@ -1414,7 +340,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LLZj;->R(Landroid/view/View;)V
+    invoke-static {v0}, LDz9;->R(Landroid/view/View;)V
 
     .line 9
     .line 10
@@ -1424,7 +350,7 @@
 
     .line 12
     .line 13
-    check-cast v0, LZAb;
+    check-cast v0, LOOb;
 
     .line 14
     .line 15
@@ -1432,7 +358,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0}, LZAb;->C1()V
+    invoke-virtual {v0}, LOOb;->D1()V
 
     .line 18
     .line 19
@@ -1441,11 +367,11 @@
     return-void
 .end method
 
-.method public final E1()V
+.method public final C1()V
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->E1()V
+    invoke-super {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->C1()V
 
     .line 2
     .line 3
@@ -1475,7 +401,7 @@
     .line 15
     .line 16
     .line 17
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->R0:LTqc;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->R0:LmGc;
 
     .line 18
     .line 19
@@ -1483,11 +409,11 @@
 
     .line 20
     .line 21
-    iget-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->i1:LJ8;
+    iget-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->i1:Lr9;
 
     .line 22
     .line 23
-    invoke-virtual {v0, v1}, LTqc;->N(Lxrc;)V
+    invoke-virtual {v0, v1}, LmGc;->L(LQGc;)V
 
     .line 24
     .line 25
@@ -1500,7 +426,7 @@
 
     .line 28
     .line 29
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -1513,7 +439,7 @@
 
     .line 34
     .line 35
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 36
     .line 37
@@ -1525,14 +451,14 @@
     .locals 2
 
     .line 1
-    new-instance v0, Ldwb;
+    new-instance v0, LOJb;
 
     .line 2
     .line 3
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, p0, v1}, Ldwb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+    invoke-direct {v0, p0, v1}, LOJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
 
     .line 5
     .line 6
@@ -1553,11 +479,11 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->s1:LXfi;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->s1:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -1581,7 +507,7 @@
 
     .line 14
     .line 15
-    const v0, 0x7f0e07c1
+    const v0, 0x7f0e07eb
 
     .line 16
     .line 17
@@ -1602,16 +528,16 @@
 
     .line 24
     .line 25
-    sget-object v1, LPng;->a:LPng;
+    sget-object v1, LSIg;->a:LSIg;
 
     .line 26
     .line 27
-    const v2, 0x7f0406db
+    const v2, 0x7f04079c
 
     .line 28
     .line 29
     .line 30
-    invoke-virtual {v1, v0, v2}, LPng;->a(Landroid/content/Context;I)Z
+    invoke-virtual {v1, v0, v2}, LSIg;->a(Landroid/content/Context;I)Z
 
     .line 31
     .line 32
@@ -1631,7 +557,7 @@
 
     .line 37
     .line 38
-    const v0, 0x7f0e07bf
+    const v0, 0x7f0e07e9
 
     .line 39
     .line 40
@@ -1640,7 +566,7 @@
 
     .line 42
     :cond_2
-    const v0, 0x7f0e07be
+    const v0, 0x7f0e07e8
 
     .line 43
     .line 44
@@ -1652,7 +578,7 @@
     .locals 1
 
     .line 1
-    const v0, 0x7f0e07c0
+    const v0, 0x7f0e07ea
 
     return v0
 .end method
@@ -1661,7 +587,7 @@
     .locals 14
 
     .line 1
-    const v0, 0x7f0b1606
+    const v0, 0x7f0b1742
 
     .line 2
     .line 3
@@ -1710,7 +636,7 @@
     .line 25
     .line 26
     :cond_1
-    const v0, 0x7f0b1607
+    const v0, 0x7f0b1743
 
     .line 27
     .line 28
@@ -1731,7 +657,7 @@
 
     .line 36
     .line 37
-    const v0, 0x7f0b0db8
+    const v0, 0x7f0b0ed3
 
     .line 38
     .line 39
@@ -1760,13 +686,13 @@
 
     .line 51
     :cond_2
-    invoke-virtual {v0}, LgRg;->l()V
+    invoke-virtual {v0}, Ljdh;->l()V
 
     .line 52
     .line 53
     .line 54
     :goto_0
-    const v0, 0x7f0b0d84
+    const v0, 0x7f0b0e9e
 
     .line 55
     .line 56
@@ -1787,7 +713,7 @@
 
     .line 64
     .line 65
-    const v0, 0x7f0b0d95
+    const v0, 0x7f0b0eaf
 
     .line 66
     .line 67
@@ -1808,7 +734,7 @@
 
     .line 75
     .line 76
-    const v0, 0x7f0b0265
+    const v0, 0x7f0b02b8
 
     .line 77
     .line 78
@@ -1829,11 +755,11 @@
 
     .line 86
     .line 87
-    new-instance v3, LlI9;
+    new-instance v3, LHT9;
 
     .line 88
     .line 89
-    invoke-direct {v3, v0}, LlI9;-><init>(Landroid/view/ViewStub;)V
+    invoke-direct {v3, v0}, LHT9;-><init>(Landroid/view/ViewStub;)V
 
     .line 90
     .line 91
@@ -1843,7 +769,7 @@
     .line 93
     .line 94
     .line 95
-    const v0, 0x7f0b13ec
+    const v0, 0x7f0b1524
 
     .line 96
     .line 97
@@ -1860,7 +786,7 @@
 
     .line 103
     .line 104
-    const v3, 0x7f0b0e1e
+    const v3, 0x7f0b0f3a
 
     .line 105
     .line 106
@@ -1888,7 +814,7 @@
 
     .line 117
     .line 118
-    const v4, 0x7f0b1833
+    const v4, 0x7f0b1987
 
     .line 119
     .line 120
@@ -1909,7 +835,7 @@
 
     .line 128
     .line 129
-    const v4, 0x7f0b14e9
+    const v4, 0x7f0b1621
 
     .line 130
     .line 131
@@ -1927,11 +853,11 @@
     .line 137
     .line 138
     .line 139
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->s1:LXfi;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->s1:LREi;
 
     .line 140
     .line 141
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 142
     .line 143
@@ -1955,7 +881,7 @@
 
     .line 152
     .line 153
-    const v0, 0x7f0b09da
+    const v0, 0x7f0b0ad2
 
     .line 154
     .line 155
@@ -1984,21 +910,21 @@
 
     .line 165
     .line 166
-    new-instance v12, LlI9;
+    new-instance v12, LHT9;
 
     .line 167
     .line 168
-    const v0, 0x7f0b0d9c
+    const v0, 0x7f0b0eb6
 
     .line 169
     .line 170
     .line 171
-    const v2, 0x7f0b0d9b
+    const v2, 0x7f0b0eb5
 
     .line 172
     .line 173
     .line 174
-    invoke-direct {v12, p1, v0, v2}, LlI9;-><init>(Landroid/view/View;II)V
+    invoke-direct {v12, p1, v0, v2}, LHT9;-><init>(Landroid/view/View;II)V
 
     .line 175
     .line 176
@@ -2035,7 +961,7 @@
 
     .line 192
     .line 193
-    new-instance v0, Liwb;
+    new-instance v0, LSJb;
 
     .line 194
     .line 195
@@ -2045,16 +971,16 @@
     move-object v1, p1
 
     .line 197
-    invoke-direct/range {v0 .. v12}, Liwb;-><init>(Landroid/view/View;Landroid/view/View;Lcom/snap/component/input/SnapSearchInputView;Lcom/snap/component/tabs/SnapTabLayout;Lcom/snap/memories/lib/grid/view/MemoriesAllPagesRecyclerView;Ljava/util/concurrent/atomic/AtomicReference;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;Landroid/widget/FrameLayout;LlI9;)V
+    invoke-direct/range {v0 .. v12}, LSJb;-><init>(Landroid/view/View;Landroid/view/View;Lcom/snap/component/input/SnapSearchInputView;Lcom/snap/component/tabs/SnapTabLayout;Lcom/snap/memories/lib/grid/view/MemoriesAllPagesRecyclerView;Ljava/util/concurrent/atomic/AtomicReference;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;Landroid/widget/FrameLayout;LHT9;)V
 
     .line 198
     .line 199
     .line 200
-    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->f1:Liwb;
+    iput-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->f1:LSJb;
 
     .line 201
     .line 202
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->R0:LTqc;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->R0:LmGc;
 
     .line 203
     .line 204
@@ -2062,11 +988,11 @@
 
     .line 205
     .line 206
-    iget-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->i1:LJ8;
+    iget-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->i1:Lr9;
 
     .line 207
     .line 208
-    invoke-virtual {v0, v1}, LTqc;->d(Lxrc;)V
+    invoke-virtual {v0, v1}, LmGc;->d(LQGc;)V
 
     .line 209
     .line 210
@@ -2079,7 +1005,7 @@
 
     .line 213
     .line 214
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 215
     .line 216
@@ -2092,7 +1018,7 @@
 
     .line 219
     .line 220
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 221
     .line 222
@@ -2105,7 +1031,7 @@
 
     .line 225
     .line 226
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 227
     .line 228
@@ -2114,7 +1040,7 @@
 
     .line 230
     :cond_7
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 231
     .line 232
@@ -2123,7 +1049,7 @@
 
     .line 234
     :cond_8
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 235
     .line 236
@@ -2132,7 +1058,7 @@
 
     .line 238
     :cond_9
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 239
     .line 240
@@ -2144,11 +1070,11 @@
     .locals 4
 
     .line 1
-    check-cast p1, LZAb;
+    check-cast p1, LOOb;
 
     .line 2
     .line 3
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 4
     .line 5
@@ -2156,7 +1082,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 8
     .line 9
@@ -2165,7 +1091,7 @@
 
     .line 11
     :try_start_0
-    iget-object v2, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->f1:Liwb;
+    iget-object v2, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->f1:LSJb;
 
     .line 12
     .line 13
@@ -2176,12 +1102,12 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1, v2}, LZAb;->W2(Liwb;)V
+    invoke-virtual {p1, v2}, LOOb;->g3(LSJb;)V
 
     .line 17
     .line 18
     .line 19
-    iget-object v2, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->p1:LQqc;
+    iget-object v2, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->p1:LiGc;
 
     .line 20
     .line 21
@@ -2189,12 +1115,12 @@
 
     .line 22
     .line 23
-    invoke-virtual {p1, v2}, LZAb;->U2(LQqc;)V
+    invoke-virtual {p1, v2}, LOOb;->f3(LiGc;)V
 
     .line 24
     .line 25
     .line 26
-    iput-object v3, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->p1:LQqc;
+    iput-object v3, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->p1:LiGc;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -2212,7 +1138,7 @@
     .line 31
     :cond_0
     :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 32
     .line 33
@@ -2226,7 +1152,7 @@
 
     .line 36
     .line 37
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -2237,7 +1163,7 @@
 
     .line 41
     :goto_1
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 42
     .line 43
@@ -2245,7 +1171,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
 
     .line 46
     .line 47
@@ -2266,7 +1192,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaHostView;->a()LVVc;
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaHostView;->a()LOad;
 
     .line 6
     .line 7
@@ -2278,11 +1204,11 @@
 
     .line 10
     .line 11
-    sget-object v1, LWIj;->g0:LWIj;
+    sget-object v1, Lu8k;->g0:Lu8k;
 
     .line 12
     .line 13
-    invoke-virtual {v0, v1}, LVVc;->v(LWIj;)Z
+    invoke-virtual {v0, v1}, LOad;->r(Lu8k;)Z
 
     .line 14
     .line 15
@@ -2312,11 +1238,11 @@
     return v0
 .end method
 
-.method public final d2(LQqc;)V
+.method public final d2(LiGc;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->O0:Lbke;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->O0:LDBe;
 
     .line 2
     .line 3
@@ -2324,7 +1250,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -2332,16 +1258,16 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, LpH7;
+    check-cast v0, LWM7;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, LpH7;->b()V
+    invoke-virtual {v0}, LWM7;->b()V
 
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->j2()Lbke;
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->j2()LDBe;
 
     .line 15
     .line 16
@@ -2349,11 +1275,11 @@
     move-result-object v0
 
     .line 18
-    check-cast v0, LwX4;
+    check-cast v0, Le35;
 
     .line 19
     .line 20
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 21
     .line 22
@@ -2361,15 +1287,15 @@
     move-result-object v0
 
     .line 24
-    check-cast v0, Ls1g;
+    check-cast v0, LKlg;
 
     .line 25
     .line 26
-    sget-object v1, LbV3;->s1:LbV3;
+    sget-object v1, LvZ3;->s1:LvZ3;
 
     .line 27
     .line 28
-    invoke-virtual {v0, p1, v1}, Ls1g;->i(LQqc;LbV3;)V
+    invoke-virtual {v0, p1, v1}, LKlg;->i(LiGc;LvZ3;)V
 
     .line 29
     .line 30
@@ -2387,7 +1313,7 @@
 
     .line 36
     .line 37
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -2398,16 +1324,16 @@
     throw p1
 .end method
 
-.method public final e(LQqc;)V
+.method public final e(LiGc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/memories/api/MemoriesFragment;->e(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/memories/api/MemoriesFragment;->e(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    sget-object p1, Li7j;->a:Li7j;
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 5
     .line 6
@@ -2431,7 +1357,7 @@
 
     .line 2
     .line 3
-    check-cast v0, LZAb;
+    check-cast v0, LOOb;
 
     .line 4
     .line 5
@@ -2439,13 +1365,13 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0}, LZAb;->S2()V
+    invoke-virtual {v0}, LOOb;->e3()V
 
     .line 8
     .line 9
     .line 10
     :cond_0
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->O0:Lbke;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->O0:LDBe;
 
     .line 11
     .line 12
@@ -2453,7 +1379,7 @@
 
     .line 13
     .line 14
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -2461,16 +1387,16 @@
     move-result-object v0
 
     .line 18
-    check-cast v0, LpH7;
+    check-cast v0, LWM7;
 
     .line 19
     .line 20
-    invoke-virtual {v0}, LpH7;->c()V
+    invoke-virtual {v0}, LWM7;->c()V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->j2()Lbke;
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->j2()LDBe;
 
     .line 24
     .line 25
@@ -2478,11 +1404,11 @@
     move-result-object v0
 
     .line 27
-    check-cast v0, LwX4;
+    check-cast v0, Le35;
 
     .line 28
     .line 29
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 30
     .line 31
@@ -2490,11 +1416,11 @@
     move-result-object v0
 
     .line 33
-    check-cast v0, Ls1g;
+    check-cast v0, LKlg;
 
     .line 34
     .line 35
-    invoke-virtual {v0}, Ls1g;->j()V
+    invoke-virtual {v0}, LKlg;->j()V
 
     .line 36
     .line 37
@@ -2520,7 +1446,7 @@
 
     .line 47
     .line 48
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -2531,11 +1457,11 @@
     throw v0
 .end method
 
-.method public final f2()Lu00;
+.method public final f2()Lb30;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->F0:Lu00;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->F0:Lb30;
 
     .line 2
     .line 3
@@ -2551,7 +1477,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2566,11 +1492,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->t1:LXfi;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->t1:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -2593,15 +1519,46 @@
     return-wide v0
 .end method
 
-.method public final h(LQqc;)V
-    .locals 4
+.method public final h2()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .locals 1
 
     .line 1
-    sget-object v0, Lyrc;->b:Lyrc;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 2
     .line 3
-    iget-object v1, p1, LQqc;->c:Lyrc;
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "disposeOnInactive"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public final i(LiGc;)V
+    .locals 4
+
+    .line 1
+    sget-object v0, LRGc;->b:LRGc;
+
+    .line 2
+    .line 3
+    iget-object v1, p1, LiGc;->c:LRGc;
 
     .line 4
     .line 5
@@ -2621,7 +1578,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->k2()Lbke;
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->k2()LDBe;
 
     .line 14
     .line 15
@@ -2629,11 +1586,11 @@
     move-result-object v0
 
     .line 17
-    check-cast v0, LwX4;
+    check-cast v0, Le35;
 
     .line 18
     .line 19
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 20
     .line 21
@@ -2641,11 +1598,11 @@
     move-result-object v0
 
     .line 23
-    check-cast v0, LIGg;
+    check-cast v0, Lq2h;
 
     .line 24
     .line 25
-    invoke-virtual {v0}, LIGg;->a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
+    invoke-virtual {v0}, Lq2h;->a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
 
     .line 26
     .line 27
@@ -2653,11 +1610,11 @@
     move-result-object v0
 
     .line 29
-    sget-object v1, LVvb;->Y:LVvb;
+    sget-object v1, LQhb;->A0:LQhb;
 
     .line 30
     .line 31
-    sget-object v2, LVvb;->Z:LVvb;
+    sget-object v2, LQhb;->B0:LQhb;
 
     .line 32
     .line 33
@@ -2688,7 +1645,7 @@
     .line 46
     .line 47
     :cond_0
-    invoke-super {p0, p1}, Lcom/snap/memories/api/MemoriesFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/memories/api/MemoriesFragment;->i(LiGc;)V
 
     .line 48
     .line 49
@@ -2697,7 +1654,7 @@
 
     .line 51
     .line 52
-    check-cast v0, LZAb;
+    check-cast v0, LOOb;
 
     .line 53
     .line 54
@@ -2705,7 +1662,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {v0, p1}, LZAb;->Q2(LQqc;)V
+    invoke-virtual {v0, p1}, LOOb;->d3(LiGc;)V
 
     .line 57
     .line 58
@@ -2748,42 +1705,20 @@
     return-void
 .end method
 
-.method public final h2()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.method public final i0()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    return-object v0
-
-    .line 6
-    :cond_0
-    const-string v0, "disposeOnInactive"
-
-    .line 7
-    .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 9
-    .line 10
-    .line 11
     const/4 v0, 0x0
 
-    .line 12
-    throw v0
+    return v0
 .end method
 
-.method public final i2()LOB6;
+.method public final i2()LmF6;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->K0:LOB6;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->K0:LmF6;
 
     .line 2
     .line 3
@@ -2799,7 +1734,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2810,11 +1745,11 @@
     throw v0
 .end method
 
-.method public final j2()Lbke;
+.method public final j2()LDBe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->W0:LwX4;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->W0:Le35;
 
     .line 2
     .line 3
@@ -2830,7 +1765,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2841,20 +1776,11 @@
     throw v0
 .end method
 
-.method public final k0()Z
+.method public final k2()LDBe;
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final k2()Lbke;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->X0:LwX4;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->X0:Le35;
 
     .line 2
     .line 3
@@ -2870,7 +1796,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -2892,7 +1818,7 @@
 
     .line 3
     .line 4
-    iget-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->T0:LBJd;
+    iget-object v1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->T0:LR0e;
 
     .line 5
     .line 6
@@ -2900,7 +1826,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v1}, LBJd;->a()LvJd;
+    invoke-virtual {v1}, LR0e;->a()LL0e;
 
     .line 9
     .line 10
@@ -2908,11 +1834,11 @@
     move-result-object v1
 
     .line 12
-    sget-object v2, LNxb;->z4:LNxb;
+    sget-object v2, LALb;->H4:LALb;
 
     .line 13
     .line 14
-    iget-object v3, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->H0:LB73;
+    iget-object v3, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->H0:LR93;
 
     .line 15
     .line 16
@@ -2936,12 +1862,12 @@
     move-result-object v3
 
     .line 26
-    invoke-virtual {v1, v2, v3}, LvJd;->l(LBI3;Ljava/lang/Long;)V
+    invoke-virtual {v1, v2, v3}, LL0e;->l(LcM3;Ljava/lang/Long;)V
 
     .line 27
     .line 28
     .line 29
-    invoke-virtual {v1}, LvJd;->a()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v1}, LL0e;->a()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 30
     .line 31
@@ -2957,7 +1883,7 @@
     move-result-object v2
 
     .line 37
-    invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 38
     .line 39
@@ -2970,7 +1896,7 @@
 
     .line 42
     .line 43
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -2983,7 +1909,7 @@
 
     .line 48
     .line 49
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -3068,7 +1994,7 @@
 
     .line 90
     .line 91
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 92
     .line 93
@@ -3081,7 +2007,7 @@
 
     .line 96
     .line 97
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -3094,7 +2020,7 @@
 
     .line 102
     .line 103
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 104
     .line 105
@@ -3146,7 +2072,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->j2()Lbke;
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->j2()LDBe;
 
     .line 22
     .line 23
@@ -3154,11 +2080,11 @@
     move-result-object v0
 
     .line 25
-    check-cast v0, LwX4;
+    check-cast v0, Le35;
 
     .line 26
     .line 27
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 28
     .line 29
@@ -3166,15 +2092,15 @@
     move-result-object v0
 
     .line 31
-    check-cast v0, Ls1g;
+    check-cast v0, LKlg;
 
     .line 32
     .line 33
-    sget-object v1, LbV3;->s1:LbV3;
+    sget-object v1, LvZ3;->s1:LvZ3;
 
     .line 34
     .line 35
-    invoke-virtual {v0, v1}, Ls1g;->k(LbV3;)V
+    invoke-virtual {v0, v1}, LKlg;->k(LvZ3;)V
 
     .line 36
     .line 37
@@ -3186,7 +2112,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->L0:LXZ5;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->L0:LQ26;
 
     .line 2
     .line 3
@@ -3201,7 +2127,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LXZ5;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LQ26;->get()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -3209,11 +2135,11 @@
     move-result-object v0
 
     .line 12
-    check-cast v0, LIdf;
+    check-cast v0, Liwf;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, LIdf;->b()Z
+    invoke-virtual {v0}, Liwf;->b()Z
 
     .line 15
     .line 16
@@ -3225,7 +2151,7 @@
 
     .line 19
     .line 20
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->L0:LXZ5;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->L0:LQ26;
 
     .line 21
     .line 22
@@ -3233,7 +2159,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0}, LXZ5;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LQ26;->get()Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -3241,11 +2167,11 @@
     move-result-object v0
 
     .line 28
-    check-cast v0, LIdf;
+    check-cast v0, Liwf;
 
     .line 29
     .line 30
-    invoke-virtual {v0}, LIdf;->c()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-virtual {v0}, Liwf;->c()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 31
     .line 32
@@ -3261,7 +2187,7 @@
     move-result-object v1
 
     .line 38
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 39
     .line 40
@@ -3270,7 +2196,7 @@
 
     .line 42
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 43
     .line 44
@@ -3283,7 +2209,7 @@
 
     .line 47
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 48
     .line 49
@@ -3291,9 +2217,9 @@
     throw v1
 .end method
 
-.method public final onShowMemoriesPage(Lhlg;)V
+.method public final onShowMemoriesPage(LdGg;)V
     .locals 0
-    .annotation runtime Lv6i;
+    .annotation runtime LOui;
         threadMode = .enum Lorg/greenrobot/eventbus/ThreadMode;->MAIN:Lorg/greenrobot/eventbus/ThreadMode;
     .end annotation
 
@@ -3306,11 +2232,22 @@
     return-void
 .end method
 
+.method public final p1()Lrp0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->w1:LTJb;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
 .method public final q()J
     .locals 5
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->f2()Lu00;
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->f2()Lb30;
 
     .line 2
     .line 3
@@ -3318,11 +2255,11 @@
     move-result-object v0
 
     .line 5
-    sget-object v1, LNxb;->w3:LNxb;
+    sget-object v1, LALb;->z3:LALb;
 
     .line 6
     .line 7
-    invoke-interface {v0, v1}, Lu00;->f(LBI3;)J
+    invoke-interface {v0, v1}, Lb30;->f(LcM3;)J
 
     .line 8
     .line 9
@@ -3377,27 +2314,16 @@
     return-wide v0
 .end method
 
-.method public final r1()Lan0;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->w1:Ljwb;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 4
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/memories/api/MemoriesFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/memories/api/MemoriesFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->Y0:LwX4;
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->Y0:Le35;
 
     .line 5
     .line 6
@@ -3405,7 +2331,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LwX4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -3413,11 +2339,11 @@
     move-result-object v0
 
     .line 12
-    check-cast v0, LOGg;
+    check-cast v0, Lx2h;
 
     .line 13
     .line 14
-    iget-object v0, v0, LOGg;->o:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx2h;->o:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 15
     .line 16
@@ -3439,7 +2365,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {v1, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->N0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
+    invoke-virtual {v1, v2, v3}, Lio/reactivex/rxjava3/core/Observable;->Q0(J)Lio/reactivex/rxjava3/internal/operators/observable/ObservableTake;
 
     .line 27
     .line 28
@@ -3447,20 +2373,20 @@
     move-result-object v0
 
     .line 30
-    new-instance v1, Lw9b;
+    new-instance v1, LcUa;
 
     .line 31
     .line 32
-    const/16 v2, 0xe
+    const/16 v2, 0x1d
 
     .line 33
     .line 34
-    invoke-direct {v1, v2, p0}, Lw9b;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LcUa;-><init>(ILjava/lang/Object;)V
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->f0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->i0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 38
     .line 39
@@ -3484,7 +2410,7 @@
     move-result-object v1
 
     .line 49
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 50
     .line 51
@@ -3493,7 +2419,7 @@
 
     .line 53
     .line 54
-    check-cast v0, LZAb;
+    check-cast v0, LOOb;
 
     .line 55
     .line 56
@@ -3501,7 +2427,7 @@
 
     .line 57
     .line 58
-    invoke-virtual {v0, p1}, LZAb;->U2(LQqc;)V
+    invoke-virtual {v0, p1}, LOOb;->f3(LiGc;)V
 
     .line 59
     .line 60
@@ -3510,7 +2436,7 @@
 
     .line 62
     :cond_0
-    iput-object p1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->p1:LQqc;
+    iput-object p1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->p1:LiGc;
 
     .line 63
     .line 64
@@ -3543,7 +2469,7 @@
 
     .line 77
     .line 78
-    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->k2()Lbke;
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->k2()LDBe;
 
     .line 79
     .line 80
@@ -3551,11 +2477,11 @@
     move-result-object v1
 
     .line 82
-    check-cast v1, LwX4;
+    check-cast v1, Le35;
 
     .line 83
     .line 84
-    invoke-virtual {v1}, LwX4;->get()Ljava/lang/Object;
+    invoke-virtual {v1}, Le35;->get()Ljava/lang/Object;
 
     .line 85
     .line 86
@@ -3563,11 +2489,11 @@
     move-result-object v1
 
     .line 88
-    check-cast v1, LIGg;
+    check-cast v1, Lq2h;
 
     .line 89
     .line 90
-    invoke-virtual {v1, p1}, LIGg;->b(LQqc;)Z
+    invoke-virtual {v1, p1}, Lq2h;->b(LiGc;)Z
 
     .line 91
     .line 92
@@ -3651,7 +2577,7 @@
 
     .line 128
     .line 129
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 130
     .line 131
@@ -3660,4 +2586,1078 @@
 
     .line 133
     throw p1
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 9
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, LOJb;
+
+    .line 5
+    .line 6
+    const/4 v1, 0x3
+
+    .line 7
+    invoke-direct {v0, p0, v1}, LOJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 8
+    .line 9
+    .line 10
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 11
+    .line 12
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 13
+    .line 14
+    .line 15
+    sget-object v0, LJQ7;->r0:LJQ7;
+
+    .line 16
+    .line 17
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 18
+    .line 19
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    check-cast v0, LnJe;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 33
+    .line 34
+    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 35
+    .line 36
+    .line 37
+    sget-object v0, LQhb;->y0:LQhb;
+
+    .line 38
+    .line 39
+    sget-object v2, LQhb;->z0:LQhb;
+
+    .line 40
+    .line 41
+    iget-object v3, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->q1:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 42
+    .line 43
+    invoke-virtual {v1, v0, v2, v3}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 44
+    .line 45
+    .line 46
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->v1:LREi;
+
+    .line 47
+    .line 48
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 53
+    .line 54
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v0
+
+    .line 58
+    const/4 v1, 0x0
+
+    .line 59
+    if-eqz v0, :cond_1
+
+    .line 60
+    .line 61
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->Z0:Ly2h;
+
+    .line 62
+    .line 63
+    if-eqz v0, :cond_0
+
+    .line 64
+    .line 65
+    invoke-virtual {v0}, Ly2h;->a()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v0
+
+    .line 69
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v2
+
+    .line 73
+    check-cast v2, LnJe;
+
+    .line 74
+    .line 75
+    invoke-virtual {v2}, LnJe;->i()Lxp0;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v2
+
+    .line 79
+    sget-object v4, LP3b;->z0:LP3b;
+
+    .line 80
+    .line 81
+    invoke-static {v0, v2, v4}, LTVd;->Z(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v0
+
+    .line 85
+    new-instance v2, LQJb;
+
+    .line 86
+    .line 87
+    const/4 v4, 0x2
+
+    .line 88
+    invoke-direct {v2, p0, v4}, LQJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 89
+    .line 90
+    .line 91
+    new-instance v4, LQJb;
+
+    .line 92
+    .line 93
+    const/4 v5, 0x3
+
+    .line 94
+    invoke-direct {v4, p0, v5}, LQJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 95
+    .line 96
+    .line 97
+    invoke-static {v0, v2, v4, v3}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+
+    .line 98
+    .line 99
+    .line 100
+    goto :goto_0
+
+    .line 101
+    :cond_0
+    const-string p1, "snapFeedShowMemoriesPageEvent"
+
+    .line 102
+    .line 103
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 104
+    .line 105
+    .line 106
+    throw v1
+
+    .line 107
+    :cond_1
+    iget-object v0, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->U0:LDBe;
+
+    .line 108
+    .line 109
+    if-eqz v0, :cond_4
+
+    .line 110
+    .line 111
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v0
+
+    .line 115
+    check-cast v0, LgKg;
+
+    .line 116
+    .line 117
+    invoke-virtual {v0, p0}, LgKg;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object v0
+
+    .line 121
+    invoke-virtual {v3, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 122
+    .line 123
+    .line 124
+    :goto_0
+    new-instance v0, LRJb;
+
+    .line 125
+    .line 126
+    const/4 v2, 0x6
+
+    .line 127
+    invoke-direct {v0, p0, v2}, LRJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 128
+    .line 129
+    .line 130
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 131
+    .line 132
+    invoke-direct {v2, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 133
+    .line 134
+    .line 135
+    const-string v0, "mem:fragment:migrateAndSync"
+
+    .line 136
+    .line 137
+    invoke-static {v2, v0}, LZcj;->a(Lio/reactivex/rxjava3/core/Completable;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+
+    .line 138
+    .line 139
+    .line 140
+    move-result-object v0
+
+    .line 141
+    sget-object v2, Lewj;->a:Lewj;
+
+    .line 142
+    .line 143
+    invoke-virtual {v0, v2}, Lio/reactivex/rxjava3/core/Completable;->A(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableToSingle;
+
+    .line 144
+    .line 145
+    .line 146
+    move-result-object v0
+
+    .line 147
+    new-instance v2, LQdb;
+
+    .line 148
+    .line 149
+    const/16 v4, 0xe
+
+    .line 150
+    .line 151
+    invoke-direct {v2, v4, p0}, LQdb;-><init>(ILjava/lang/Object;)V
+
+    .line 152
+    .line 153
+    .line 154
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+
+    .line 155
+    .line 156
+    invoke-direct {v4, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 157
+    .line 158
+    .line 159
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 160
+    .line 161
+    .line 162
+    move-result-object v0
+
+    .line 163
+    check-cast v0, LnJe;
+
+    .line 164
+    .line 165
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object v0
+
+    .line 169
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 170
+    .line 171
+    invoke-direct {v2, v4, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 172
+    .line 173
+    .line 174
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
+
+    .line 175
+    .line 176
+    .line 177
+    move-result-wide v4
+
+    .line 178
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 179
+    .line 180
+    sget-object v6, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
+
+    .line 181
+    .line 182
+    invoke-virtual {v2, v4, v5, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->h(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+
+    .line 183
+    .line 184
+    .line 185
+    move-result-object v2
+
+    .line 186
+    invoke-static {v2, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 187
+    .line 188
+    .line 189
+    iget-object v2, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->u1:LREi;
+
+    .line 190
+    .line 191
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 192
+    .line 193
+    .line 194
+    move-result-object v2
+
+    .line 195
+    check-cast v2, Ljava/lang/Boolean;
+
+    .line 196
+    .line 197
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 198
+    .line 199
+    .line 200
+    move-result v2
+
+    .line 201
+    if-eqz v2, :cond_2
+
+    .line 202
+    .line 203
+    new-instance v2, LOJb;
+
+    .line 204
+    .line 205
+    const/4 v4, 0x1
+
+    .line 206
+    invoke-direct {v2, p0, v4}, LOJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 207
+    .line 208
+    .line 209
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 210
+    .line 211
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 212
+    .line 213
+    .line 214
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 215
+    .line 216
+    .line 217
+    move-result-object v2
+
+    .line 218
+    check-cast v2, LnJe;
+
+    .line 219
+    .line 220
+    invoke-virtual {v2}, LnJe;->k()LA36;
+
+    .line 221
+    .line 222
+    .line 223
+    move-result-object v2
+
+    .line 224
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 225
+    .line 226
+    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 227
+    .line 228
+    .line 229
+    invoke-static {v5, v3}, LOIc;->K(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 230
+    .line 231
+    .line 232
+    :cond_2
+    new-instance v2, LRJb;
+
+    .line 233
+    .line 234
+    const/4 v4, 0x0
+
+    .line 235
+    invoke-direct {v2, p0, v4}, LRJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 236
+    .line 237
+    .line 238
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 239
+    .line 240
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 241
+    .line 242
+    .line 243
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 244
+    .line 245
+    .line 246
+    move-result-object v2
+
+    .line 247
+    check-cast v2, LnJe;
+
+    .line 248
+    .line 249
+    invoke-virtual {v2}, LnJe;->d()LA36;
+
+    .line 250
+    .line 251
+    .line 252
+    move-result-object v2
+
+    .line 253
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 254
+    .line 255
+    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 256
+    .line 257
+    .line 258
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
+
+    .line 259
+    .line 260
+    .line 261
+    move-result-wide v7
+
+    .line 262
+    invoke-virtual {v5, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->h(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+
+    .line 263
+    .line 264
+    .line 265
+    move-result-object v2
+
+    .line 266
+    invoke-static {v2, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 267
+    .line 268
+    .line 269
+    new-instance v2, LRJb;
+
+    .line 270
+    .line 271
+    const/4 v4, 0x1
+
+    .line 272
+    invoke-direct {v2, p0, v4}, LRJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 273
+    .line 274
+    .line 275
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 276
+    .line 277
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 278
+    .line 279
+    .line 280
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 281
+    .line 282
+    .line 283
+    move-result-object v2
+
+    .line 284
+    check-cast v2, LnJe;
+
+    .line 285
+    .line 286
+    invoke-virtual {v2}, LnJe;->d()LA36;
+
+    .line 287
+    .line 288
+    .line 289
+    move-result-object v2
+
+    .line 290
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 291
+    .line 292
+    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 293
+    .line 294
+    .line 295
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
+
+    .line 296
+    .line 297
+    .line 298
+    move-result-wide v7
+
+    .line 299
+    invoke-virtual {v5, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->h(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+
+    .line 300
+    .line 301
+    .line 302
+    move-result-object v2
+
+    .line 303
+    invoke-static {v2, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 304
+    .line 305
+    .line 306
+    new-instance v2, LRJb;
+
+    .line 307
+    .line 308
+    const/4 v4, 0x2
+
+    .line 309
+    invoke-direct {v2, p0, v4}, LRJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 310
+    .line 311
+    .line 312
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 313
+    .line 314
+    invoke-direct {v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 315
+    .line 316
+    .line 317
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 318
+    .line 319
+    .line 320
+    move-result-object v2
+
+    .line 321
+    check-cast v2, LnJe;
+
+    .line 322
+    .line 323
+    invoke-virtual {v2}, LnJe;->d()LA36;
+
+    .line 324
+    .line 325
+    .line 326
+    move-result-object v2
+
+    .line 327
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 328
+    .line 329
+    invoke-direct {v5, v4, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 330
+    .line 331
+    .line 332
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
+
+    .line 333
+    .line 334
+    .line 335
+    move-result-wide v7
+
+    .line 336
+    invoke-virtual {v5, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->h(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+
+    .line 337
+    .line 338
+    .line 339
+    move-result-object v2
+
+    .line 340
+    invoke-static {v2, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 341
+    .line 342
+    .line 343
+    new-instance v2, LDpa;
+
+    .line 344
+    .line 345
+    const/16 v4, 0x11
+
+    .line 346
+    .line 347
+    invoke-direct {v2, p0, v4, p1}, LDpa;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 348
+    .line 349
+    .line 350
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 351
+    .line 352
+    invoke-direct {p1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 353
+    .line 354
+    .line 355
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 356
+    .line 357
+    .line 358
+    move-result-object v2
+
+    .line 359
+    check-cast v2, LnJe;
+
+    .line 360
+    .line 361
+    invoke-virtual {v2}, LnJe;->d()LA36;
+
+    .line 362
+    .line 363
+    .line 364
+    move-result-object v2
+
+    .line 365
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 366
+    .line 367
+    invoke-direct {v4, p1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 368
+    .line 369
+    .line 370
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
+
+    .line 371
+    .line 372
+    .line 373
+    move-result-wide v7
+
+    .line 374
+    invoke-virtual {v4, v7, v8, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->h(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+
+    .line 375
+    .line 376
+    .line 377
+    move-result-object p1
+
+    .line 378
+    invoke-static {p1, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 379
+    .line 380
+    .line 381
+    new-instance p1, LRJb;
+
+    .line 382
+    .line 383
+    const/4 v2, 0x3
+
+    .line 384
+    invoke-direct {p1, p0, v2}, LRJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 385
+    .line 386
+    .line 387
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 388
+    .line 389
+    invoke-direct {v2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 390
+    .line 391
+    .line 392
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 393
+    .line 394
+    .line 395
+    move-result-object p1
+
+    .line 396
+    check-cast p1, LnJe;
+
+    .line 397
+    .line 398
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
+    .line 399
+    .line 400
+    .line 401
+    move-result-object p1
+
+    .line 402
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 403
+    .line 404
+    invoke-direct {v4, v2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 405
+    .line 406
+    .line 407
+    invoke-static {v4, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 408
+    .line 409
+    .line 410
+    iget-object p1, p0, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->b1:Le35;
+
+    .line 411
+    .line 412
+    if-eqz p1, :cond_3
+
+    .line 413
+    .line 414
+    invoke-virtual {p1}, Le35;->get()Ljava/lang/Object;
+
+    .line 415
+    .line 416
+    .line 417
+    move-result-object p1
+
+    .line 418
+    check-cast p1, LGXb;
+
+    .line 419
+    .line 420
+    invoke-virtual {p1}, LGXb;->a()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 421
+    .line 422
+    .line 423
+    move-result-object p1
+
+    .line 424
+    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 425
+    .line 426
+    .line 427
+    new-instance p1, LOJb;
+
+    .line 428
+    .line 429
+    const/4 v1, 0x2
+
+    .line 430
+    invoke-direct {p1, p0, v1}, LOJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 431
+    .line 432
+    .line 433
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 434
+    .line 435
+    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 436
+    .line 437
+    .line 438
+    sget-object p1, LiQ7;->s0:LiQ7;
+
+    .line 439
+    .line 440
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 441
+    .line 442
+    invoke-direct {v2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 443
+    .line 444
+    .line 445
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 446
+    .line 447
+    .line 448
+    move-result-object p1
+
+    .line 449
+    check-cast p1, LnJe;
+
+    .line 450
+    .line 451
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
+    .line 452
+    .line 453
+    .line 454
+    move-result-object p1
+
+    .line 455
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 456
+    .line 457
+    invoke-direct {v1, v2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 458
+    .line 459
+    .line 460
+    new-instance p1, LQJb;
+
+    .line 461
+    .line 462
+    const/4 v2, 0x1
+
+    .line 463
+    invoke-direct {p1, p0, v2}, LQJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 464
+    .line 465
+    .line 466
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
+
+    .line 467
+    .line 468
+    invoke-direct {v2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;)V
+
+    .line 469
+    .line 470
+    .line 471
+    invoke-static {v2, v3}, LOIc;->K(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 472
+    .line 473
+    .line 474
+    new-instance p1, LRJb;
+
+    .line 475
+    .line 476
+    const/4 v1, 0x4
+
+    .line 477
+    invoke-direct {p1, p0, v1}, LRJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 478
+    .line 479
+    .line 480
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 481
+    .line 482
+    invoke-direct {v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 483
+    .line 484
+    .line 485
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 486
+    .line 487
+    .line 488
+    move-result-object p1
+
+    .line 489
+    check-cast p1, LnJe;
+
+    .line 490
+    .line 491
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
+    .line 492
+    .line 493
+    .line 494
+    move-result-object p1
+
+    .line 495
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 496
+    .line 497
+    invoke-direct {v2, v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 498
+    .line 499
+    .line 500
+    invoke-virtual {p0}, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->g2()J
+
+    .line 501
+    .line 502
+    .line 503
+    move-result-wide v4
+
+    .line 504
+    invoke-virtual {v2, v4, v5, v0, v6}, Lio/reactivex/rxjava3/core/Completable;->h(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+
+    .line 505
+    .line 506
+    .line 507
+    move-result-object p1
+
+    .line 508
+    invoke-static {p1, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 509
+    .line 510
+    .line 511
+    new-instance p1, LRJb;
+
+    .line 512
+    .line 513
+    const/4 v0, 0x5
+
+    .line 514
+    invoke-direct {p1, p0, v0}, LRJb;-><init>(Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;I)V
+
+    .line 515
+    .line 516
+    .line 517
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+
+    .line 518
+    .line 519
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 520
+    .line 521
+    .line 522
+    invoke-virtual {p0}, Lcom/snap/ui/deck/AsyncPresenterFragment;->Z1()LlJe;
+
+    .line 523
+    .line 524
+    .line 525
+    move-result-object p1
+
+    .line 526
+    check-cast p1, LnJe;
+
+    .line 527
+    .line 528
+    invoke-virtual {p1}, LnJe;->d()LA36;
+
+    .line 529
+    .line 530
+    .line 531
+    move-result-object p1
+
+    .line 532
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 533
+    .line 534
+    invoke-direct {v1, v0, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 535
+    .line 536
+    .line 537
+    invoke-static {v1, v3}, LOIc;->E(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 538
+    .line 539
+    .line 540
+    return-void
+
+    .line 541
+    :cond_3
+    const-string p1, "tabSessionMetricsManager"
+
+    .line 542
+    .line 543
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 544
+    .line 545
+    .line 546
+    throw v1
+
+    .line 547
+    :cond_4
+    const-string p1, "rxBus"
+
+    .line 548
+    .line 549
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 550
+    .line 551
+    .line 552
+    throw v1
 .end method

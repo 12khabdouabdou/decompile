@@ -1,82 +1,85 @@
 .class public final Ln9c;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lo9c;
+# static fields
+.field public static final Z:Ln9c;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lo9c;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 12
 
     .line 1
-    iput p2, p0, Ln9c;->a:I
-
-    iput-object p1, p0, Ln9c;->b:Lo9c;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    iget v0, p0, Ln9c;->a:I
+    new-instance v1, Ln9c;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    sget-object v0, LNH9;->s1:LNH9;
 
     .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    const/16 v3, 0x1c
 
     .line 7
     .line 8
-    iget-object p1, p0, Ln9c;->b:Lo9c;
+    const-string v4, "MinervaFeature"
 
     .line 9
     .line 10
-    iget-object p1, p1, Lo9c;->Y:Lrn0;
+    invoke-direct {v1, v4, v0, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
 
     .line 11
     .line 12
-    return-void
-
     .line 13
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
+    sput-object v1, Ln9c;->Z:Ln9c;
 
     .line 14
     .line 15
-    iget-object p1, p0, Ln9c;->b:Lo9c;
+    new-instance v0, LL4b;
 
     .line 16
     .line 17
-    iget-object p1, p1, Lo9c;->Y:Lrn0;
+    const/4 v9, 0x0
 
     .line 18
+    const/4 v10, 0x0
+
     .line 19
-    return-void
+    const-string v2, "Minerva"
 
     .line 20
-    nop
-
     .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    const/4 v3, 0x0
+
+    .line 22
+    const/4 v4, 0x0
+
+    .line 23
+    const/4 v5, 0x0
+
+    .line 24
+    const/4 v6, 0x0
+
+    .line 25
+    const/4 v7, 0x0
+
+    .line 26
+    const/4 v8, 0x0
+
+    .line 27
+    const/16 v11, 0x7efc
+
+    .line 28
+    .line 29
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 30
+    .line 31
+    .line 32
+    return-void
 .end method

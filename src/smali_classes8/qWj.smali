@@ -2,15 +2,26 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic X:Lcom/snap/venueprofile/VenueProfilePlaceType;
 
-.field public final b:Ljava/lang/String;
+.field public final synthetic Y:LrWj;
+
+.field public final synthetic a:LzWj;
+
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:D
+
+.field public final synthetic t:D
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(LzWj;Ljava/lang/String;DDLcom/snap/venueprofile/VenueProfilePlaceType;LrWj;)V
     .locals 0
 
     .line 1
@@ -19,7 +30,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LqWj;->a:Ljava/lang/String;
+    iput-object p1, p0, LqWj;->a:LzWj;
 
     .line 5
     .line 6
@@ -27,246 +38,160 @@
 
     .line 7
     .line 8
+    iput-wide p3, p0, LqWj;->c:D
+
+    .line 9
+    .line 10
+    iput-wide p5, p0, LqWj;->t:D
+
+    .line 11
+    .line 12
+    iput-object p7, p0, LqWj;->X:Lcom/snap/venueprofile/VenueProfilePlaceType;
+
+    .line 13
+    .line 14
+    iput-object p8, p0, LqWj;->Y:LrWj;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
+.method public final run()V
+    .locals 11
 
     .line 1
-    iget-object v0, p0, LqWj;->b:Ljava/lang/String;
+    iget-object v0, p0, LqWj;->a:LzWj;
 
     .line 2
     .line 3
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    if-ne p0, p1, :cond_0
-
-    .line 2
-    .line 3
-    goto :goto_1
+    iget-object v0, v0, LzWj;->b:Lnl5;
 
     .line 4
-    :cond_0
-    instance-of v0, p1, LqWj;
-
     .line 5
+    new-instance v1, Lyab;
+
     .line 6
-    if-nez v0, :cond_1
-
     .line 7
-    .line 8
-    goto :goto_0
+    iget-wide v2, p0, LqWj;->c:D
 
+    .line 8
     .line 9
-    :cond_1
-    check-cast p1, LqWj;
+    move-wide v4, v2
 
     .line 10
-    .line 11
-    iget-object v0, p1, LqWj;->a:Ljava/lang/String;
+    invoke-static {v4, v5}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
+    .line 11
     .line 12
     .line 13
-    iget-object v1, p0, LqWj;->a:Ljava/lang/String;
+    move-result-object v3
 
     .line 14
-    .line 15
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
+    .line 15
     .line 16
     .line 17
+    move-result-object v4
+
     .line 18
-    move-result v0
+    iget-wide v5, p0, LqWj;->t:D
 
     .line 19
-    if-nez v0, :cond_2
-
     .line 20
+    move-wide v6, v5
+
     .line 21
-    goto :goto_0
+    invoke-static {v6, v7}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 22
-    :cond_2
-    iget-object v0, p0, LqWj;->b:Ljava/lang/String;
-
     .line 23
     .line 24
-    iget-object p1, p1, LqWj;->b:Ljava/lang/String;
+    move-result-object v5
 
     .line 25
-    .line 26
-    invoke-static {v0, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v7}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
+    .line 26
     .line 27
     .line 28
+    move-result-object v6
+
     .line 29
-    move-result p1
+    iget-object v2, p0, LqWj;->X:Lcom/snap/venueprofile/VenueProfilePlaceType;
 
     .line 30
-    if-nez p1, :cond_3
-
     .line 31
+    invoke-static {v2}, LQIc;->v(Ljava/lang/Enum;)I
+
     .line 32
-    goto :goto_0
-
     .line 33
-    :cond_3
-    sget-object p1, LuL6;->a:LuL6;
-
     .line 34
+    move-result v2
+
     .line 35
-    invoke-virtual {p1, p1}, LuL6;->equals(Ljava/lang/Object;)Z
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 36
     .line 37
     .line 38
-    move-result p1
+    move-result-object v8
 
     .line 39
-    if-nez p1, :cond_4
-
-    .line 40
-    .line 41
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 42
-    return p1
-
-    .line 43
-    :cond_4
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 44
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LqWj;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const/16 v1, 0x1f
-
-    .line 8
-    .line 9
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 10
-    .line 11
     iget-object v2, p0, LqWj;->b:Ljava/lang/String;
 
-    .line 12
-    .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "WebViewRequestContext(requestKey="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LqWj;->a:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", url="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LqWj;->b:Ljava/lang/String;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", headers="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    sget-object v1, LuL6;->a:LuL6;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ")"
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 39
     .line 40
     .line 41
-    move-result-object v0
+    const/4 v7, 0x0
 
     .line 42
-    return-object v0
+    const/4 v9, 0x0
+
+    .line 43
+    const/16 v10, 0x780
+
+    .line 44
+    .line 45
+    invoke-direct/range {v1 .. v10}, Lyab;-><init>(Ljava/lang/String;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Lkmh;Ljava/lang/Integer;Ljava/lang/String;I)V
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v1}, Lyab;->a()Landroid/net/Uri;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v1
+
+    .line 52
+    sget-object v2, Lkmh;->c1:Lkmh;
+
+    .line 53
+    .line 54
+    invoke-interface {v0, v1, v2}, Lnl5;->b(Landroid/net/Uri;Lkmh;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v0
+
+    .line 58
+    iget-object v1, p0, LqWj;->Y:LrWj;
+
+    .line 59
+    .line 60
+    iget-object v1, v1, LrWj;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 61
+    .line 62
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 63
+    .line 64
+    .line 65
+    return-void
 .end method

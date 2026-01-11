@@ -1,40 +1,22 @@
 .class public final Lgqi;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final b:LQ05;
-
-.field public final c:LQ05;
-
-.field public final d:LQ05;
-
-.field public final e:LQ05;
-
-.field public final f:LQ05;
-
-.field public final g:LQ05;
-
-.field public final h:LQ05;
-
-.field public final i:LQ05;
-
-.field public final j:LQ05;
-
-.field public final k:LQ05;
-
-.field public final l:LQ05;
-
-.field public final m:LBre;
-
-.field public final n:Lrn0;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'onStreakPillTap\':f?(r:\'[0]\'),\'streakData\':g<c>:\'[1]\'<r:\'[2]\'>"
+    typeReferences = {
+        Lcom/snap/composer/utils/Ref;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;,
+        Lcom/snap/profile/flatland/ProfileStreakData;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/disposables/CompositeDisposable;LQ05;LQ05;LQ05;LQ05;LQ05;LQ05;LQ05;LQ05;LQ05;LQ05;LQ05;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -43,173 +25,5 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lgqi;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lgqi;->b:LQ05;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, Lgqi;->c:LQ05;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lgqi;->d:LQ05;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, Lgqi;->e:LQ05;
-
-    .line 13
-    .line 14
-    iput-object p6, p0, Lgqi;->f:LQ05;
-
-    .line 15
-    .line 16
-    iput-object p7, p0, Lgqi;->g:LQ05;
-
-    .line 17
-    .line 18
-    iput-object p8, p0, Lgqi;->h:LQ05;
-
-    .line 19
-    .line 20
-    iput-object p9, p0, Lgqi;->i:LQ05;
-
-    .line 21
-    .line 22
-    iput-object p10, p0, Lgqi;->j:LQ05;
-
-    .line 23
-    .line 24
-    iput-object p11, p0, Lgqi;->k:LQ05;
-
-    .line 25
-    .line 26
-    iput-object p12, p0, Lgqi;->l:LQ05;
-
-    .line 27
-    .line 28
-    sget-object p1, Lhqi;->a:LWm0;
-
-    .line 29
-    .line 30
-    new-instance p2, LBre;
-
-    .line 31
-    .line 32
-    invoke-direct {p2, p1}, LBre;-><init>(LWm0;)V
-
-    .line 33
-    .line 34
-    .line 35
-    iput-object p2, p0, Lgqi;->m:LBre;
-
-    .line 36
-    .line 37
-    sget-object p1, Lrn0;->a:Lrn0;
-
-    .line 38
-    .line 39
-    iput-object p1, p0, Lgqi;->n:Lrn0;
-
-    .line 40
-    .line 41
     return-void
-.end method
-
-.method public static final a(Lgqi;Ljava/util/ArrayList;Ljava/util/Map;)Ljava/util/ArrayList;
-    .locals 1
-
-    .line 1
-    new-instance p0, Ljava/util/ArrayList;
-
-    .line 2
-    .line 3
-    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v0
-
-    .line 14
-    if-eqz v0, :cond_1
-
-    .line 15
-    .line 16
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    check-cast v0, LRxb;
-
-    .line 21
-    .line 22
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    check-cast v0, LVxb;
-
-    .line 27
-    .line 28
-    if-eqz v0, :cond_0
-
-    .line 29
-    .line 30
-    iget-object v0, v0, LVxb;->a:Ljava/util/List;
-
-    .line 31
-    .line 32
-    if-eqz v0, :cond_0
-
-    .line 33
-    .line 34
-    check-cast v0, Ljava/util/Collection;
-
-    .line 35
-    .line 36
-    goto :goto_1
-
-    .line 37
-    :cond_0
-    sget-object v0, LsL6;->a:LsL6;
-
-    .line 38
-    .line 39
-    :goto_1
-    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
-
-    .line 40
-    .line 41
-    .line 42
-    goto :goto_0
-
-    .line 43
-    :cond_1
-    return-object p0
 .end method

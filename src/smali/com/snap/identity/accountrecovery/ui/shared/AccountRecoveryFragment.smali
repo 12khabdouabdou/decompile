@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public w0:Ltm5;
+.field public w0:LE99;
 
 
 # direct methods
@@ -22,11 +22,11 @@
 
 
 # virtual methods
-.method public I1()V
+.method public G1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->w0:Ltm5;
+    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->w0:LE99;
 
     .line 2
     .line 3
@@ -34,7 +34,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, p0}, Ltm5;->g(Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;)V
+    invoke-virtual {v0, p0}, LE99;->d(Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;)V
 
     .line 6
     .line 7
@@ -47,7 +47,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -58,19 +58,19 @@
     throw v0
 .end method
 
-.method public abstract U1()LZ8d;
+.method public abstract U1()Lsod;
 .end method
 
-.method public w(LQqc;)V
+.method public v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->w0:Ltm5;
+    iget-object p1, p0, Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;->w0:LE99;
 
     .line 5
     .line 6
@@ -78,7 +78,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1, p0}, Ltm5;->i(Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;)V
+    invoke-virtual {p1, p0}, LE99;->e(Lcom/snap/identity/accountrecovery/ui/shared/AccountRecoveryFragment;)V
 
     .line 9
     .line 10
@@ -91,7 +91,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16

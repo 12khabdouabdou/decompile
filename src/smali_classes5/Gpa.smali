@@ -1,264 +1,245 @@
 .class public final LGpa;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Landroid/location/Location;
+.field public final synthetic a:I
 
-.field public final b:I
+.field public final synthetic b:LIS4;
 
 
 # direct methods
-.method public constructor <init>(Landroid/location/Location;I)V
+.method public synthetic constructor <init>(LIS4;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LGpa;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LGpa;->a:Landroid/location/Location;
+    iput-object p1, p0, LGpa;->b:LIS4;
 
-    .line 5
-    .line 6
-    iput p2, p0, LGpa;->b:I
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    if-ne p0, p1, :cond_0
-
-    .line 2
-    .line 3
-    goto :goto_1
-
-    .line 4
-    :cond_0
-    instance-of v0, p1, LGpa;
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_1
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    check-cast p1, LGpa;
-
-    .line 10
-    .line 11
-    iget-object v0, p1, LGpa;->a:Landroid/location/Location;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LGpa;->a:Landroid/location/Location;
-
-    .line 14
-    .line 15
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    if-nez v0, :cond_2
-
-    .line 20
-    .line 21
-    goto :goto_0
-
-    .line 22
-    :cond_2
-    iget v0, p0, LGpa;->b:I
-
-    .line 23
-    .line 24
-    iget p1, p1, LGpa;->b:I
-
-    .line 25
-    .line 26
-    if-eq v0, p1, :cond_3
-
-    .line 27
-    .line 28
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 29
-    return p1
-
-    .line 30
-    :cond_3
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 31
-    return p1
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LGpa;->a:Landroid/location/Location;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/location/Location;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget v1, p0, LGpa;->b:I
-
-    .line 10
-    .line 11
-    invoke-static {v1}, Llva;->L(I)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
+.method public final d()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, LGpa;->a:I
 
     .line 2
     .line 3
-    const-string v1, "LocationWithProvider(location="
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
+    iget-object v0, p0, LGpa;->b:LIS4;
+
     .line 7
     .line 8
-    iget-object v1, p0, LGpa;->a:Landroid/location/Location;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "LOOK:LensesExplorerModules.ExternalLauncherModule#scanLensesExplorerLauncher#component"
 
     .line 11
     .line 12
-    .line 13
-    const-string v1, ", provider="
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
+    .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v2
 
     .line 16
+    :try_start_0
+    invoke-virtual {v0}, LIS4;->b()Ljava/lang/Object;
+
     .line 17
     .line 18
-    iget v1, p0, LGpa;->b:I
-
     .line 19
+    move-result-object v0
+
     .line 20
-    const/4 v2, 0x1
+    check-cast v0, LJpa;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 21
-    if-eq v1, v2, :cond_2
-
     .line 22
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
+
     .line 23
-    const/4 v2, 0x2
-
     .line 24
-    if-eq v1, v2, :cond_1
-
     .line 25
+    return-object v0
+
     .line 26
-    const/4 v2, 0x3
+    :catchall_0
+    move-exception v0
 
     .line 27
-    if-eq v1, v2, :cond_0
+    sget-object v1, LOdh;->b:LtGi;
 
     .line 28
     .line 29
-    const-string v1, "null"
+    if-eqz v1, :cond_0
 
     .line 30
     .line 31
-    goto :goto_0
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
 
     .line 32
-    :cond_0
-    const-string v1, "NETWORK"
-
     .line 33
     .line 34
-    goto :goto_0
+    :cond_0
+    throw v0
 
     .line 35
-    :cond_1
-    const-string v1, "FUSED_CACHED"
+    :pswitch_0
+    iget-object v0, p0, LGpa;->b:LIS4;
 
     .line 36
     .line 37
-    goto :goto_0
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 38
-    :cond_2
-    const-string v1, "FUSED_FRESH"
-
     .line 39
-    .line 40
-    :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "LOOK:LensesExplorerModules.ExternalLauncherModule#composerLensesExplorerLauncher#component"
 
+    .line 40
     .line 41
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
+
     .line 42
     .line 43
-    const-string v1, ")"
-
     .line 44
+    move-result v2
+
     .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_start_1
+    invoke-virtual {v0}, LIS4;->b()Ljava/lang/Object;
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 49
-    .line 50
-    .line 51
     move-result-object v0
 
+    .line 49
+    check-cast v0, LJpa;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 50
+    .line 51
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
+
     .line 52
+    .line 53
+    .line 54
     return-object v0
+
+    .line 55
+    :catchall_1
+    move-exception v0
+
+    .line 56
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 57
+    .line 58
+    if-eqz v1, :cond_1
+
+    .line 59
+    .line 60
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 61
+    .line 62
+    .line 63
+    :cond_1
+    throw v0
+
+    .line 64
+    :pswitch_1
+    iget-object v0, p0, LGpa;->b:LIS4;
+
+    .line 65
+    .line 66
+    sget-object v1, LOdh;->a:LNdh;
+
+    .line 67
+    .line 68
+    const-string v2, "LOOK:LensesExplorerModules.ExternalLauncherModule#composerLensesExplorerFeedLauncher#component"
+
+    .line 69
+    .line 70
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 71
+    .line 72
+    .line 73
+    move-result v2
+
+    .line 74
+    :try_start_2
+    invoke-virtual {v0}, LIS4;->b()Ljava/lang/Object;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v0
+
+    .line 78
+    check-cast v0, LJpa;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    .line 79
+    .line 80
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
+
+    .line 81
+    .line 82
+    .line 83
+    return-object v0
+
+    .line 84
+    :catchall_2
+    move-exception v0
+
+    .line 85
+    sget-object v1, LOdh;->b:LtGi;
+
+    .line 86
+    .line 87
+    if-eqz v1, :cond_2
+
+    .line 88
+    .line 89
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 90
+    .line 91
+    .line 92
+    :cond_2
+    throw v0
+
+    .line 93
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -2,101 +2,114 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
-
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lio/reactivex/rxjava3/core/SingleEmitter;
+.field public final a:Ljava/util/concurrent/ConcurrentHashMap;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    iput p2, p0, LxA5;->a:I
-
-    iput-object p1, p0, LxA5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    iput-object v0, p0, LxA5;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public final a(LY79;)Lio/reactivex/rxjava3/subjects/Subject;
+    .locals 5
 
     .line 1
-    iget v0, p0, LxA5;->a:I
+    iget-object v0, p0, LxA5;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    move-result-object v1
 
     .line 7
+    if-nez v1, :cond_1
+
     .line 8
-    iget-object v1, p0, LxA5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
-
     .line 9
-    .line 10
-    invoke-interface {v1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    new-instance v1, LD37;
 
+    .line 10
     .line 11
+    const/16 v2, 0x1f
+
     .line 12
     .line 13
-    return-void
+    const/4 v3, 0x0
 
     .line 14
-    :pswitch_0
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    const/4 v4, 0x0
 
     .line 15
-    .line 16
-    iget-object v1, p0, LxA5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    invoke-direct {v1, v4, v4, v3, v2}, LD37;-><init>(Ljava/util/List;LV7a;ZI)V
 
+    .line 16
     .line 17
     .line 18
-    invoke-interface {v1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    new-instance v2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 19
     .line 20
+    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+
     .line 21
-    return-void
-
     .line 22
-    :pswitch_1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
     .line 23
-    .line 24
-    iget-object v1, p0, LxA5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    invoke-virtual {v0, p1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 24
     .line 25
     .line 26
-    invoke-interface {v1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    move-result-object p1
 
     .line 27
+    if-nez p1, :cond_0
+
     .line 28
     .line 29
-    return-void
+    move-object v1, v2
 
     .line 30
-    nop
+    goto :goto_0
 
     .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :cond_0
+    move-object v1, p1
+
+    .line 32
+    :cond_1
+    :goto_0
+    check-cast v1, Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 33
+    .line 34
+    return-object v1
 .end method

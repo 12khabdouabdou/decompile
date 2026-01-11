@@ -1,5 +1,5 @@
 .class public final LNgd;
-.super LrE9;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
@@ -7,324 +7,355 @@
 
 
 # instance fields
-.field public final synthetic X:I
+.field public final synthetic X:Ljava/lang/Object;
 
-.field public final synthetic Y:I
-
-.field public final synthetic Z:Z
-
-.field public final synthetic a:Ljava/lang/String;
+.field public final synthetic a:I
 
 .field public final synthetic b:J
 
 .field public final synthetic c:J
 
-.field public final synthetic e0:Ljava/lang/String;
-
-.field public final synthetic f0:Ljava/lang/String;
-
-.field public final synthetic g0:Ljava/lang/String;
-
-.field public final synthetic h0:Ljava/lang/String;
-
-.field public final synthetic t:J
+.field public final synthetic t:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;JJJLvZ7;IIZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/io/Serializable;JJI)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LNgd;->a:Ljava/lang/String;
+    iput p7, p0, LNgd;->a:I
 
-    .line 2
-    .line 3
-    iput-wide p2, p0, LNgd;->b:J
+    iput-object p1, p0, LNgd;->t:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    iput-wide p4, p0, LNgd;->c:J
+    iput-object p2, p0, LNgd;->X:Ljava/lang/Object;
 
-    .line 6
-    .line 7
-    iput-wide p6, p0, LNgd;->t:J
+    iput-wide p3, p0, LNgd;->b:J
 
-    .line 8
-    .line 9
-    iput p9, p0, LNgd;->X:I
+    iput-wide p5, p0, LNgd;->c:J
 
-    .line 10
-    .line 11
-    iput p10, p0, LNgd;->Y:I
-
-    .line 12
-    .line 13
-    iput-boolean p11, p0, LNgd;->Z:Z
-
-    .line 14
-    .line 15
-    iput-object p12, p0, LNgd;->e0:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    iput-object p13, p0, LNgd;->f0:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    iput-object p14, p0, LNgd;->g0:Ljava/lang/String;
-
-    .line 20
-    .line 21
-    iput-object p15, p0, LNgd;->h0:Ljava/lang/String;
-
-    .line 22
-    .line 23
     const/4 p1, 0x1
 
-    .line 24
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 25
-    .line 26
-    .line 27
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;JLAv0;LyC9;J)V
+    .locals 0
+
+    const/4 p4, 0x1
+
+    iput p4, p0, LNgd;->a:I
+
+    .line 2
+    iput-object p1, p0, LNgd;->t:Ljava/lang/Object;
+
+    iput-wide p2, p0, LNgd;->b:J
+
+    iput-object p5, p0, LNgd;->X:Ljava/lang/Object;
+
+    iput-wide p6, p0, LNgd;->c:J
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 2
 
     .line 1
-    check-cast p1, LxR;
+    iget v0, p0, LNgd;->a:I
 
     .line 2
     .line 3
-    iget-object v0, p0, LNgd;->a:Ljava/lang/String;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const/4 v1, 0x0
-
     .line 6
-    invoke-interface {p1, v1, v0}, LxR;->bindString(ILjava/lang/String;)V
+    check-cast p1, LFT;
 
     .line 7
     .line 8
+    const/4 v0, 0x0
+
     .line 9
-    iget-wide v2, p0, LNgd;->b:J
+    iget-object v1, p0, LNgd;->t:Ljava/lang/Object;
 
     .line 10
     .line 11
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    check-cast v1, Ljava/lang/String;
 
     .line 12
     .line 13
+    invoke-interface {p1, v0, v1}, LFT;->bindString(ILjava/lang/String;)V
+
     .line 14
-    move-result-object v0
-
     .line 15
-    const/4 v2, 0x1
-
     .line 16
-    invoke-interface {p1, v2, v0}, LxR;->b(ILjava/lang/Long;)V
+    const/4 v0, 0x1
 
     .line 17
+    iget-object v1, p0, LNgd;->X:Ljava/lang/Object;
+
     .line 18
     .line 19
-    iget-wide v2, p0, LNgd;->c:J
+    check-cast v1, [B
 
     .line 20
     .line 21
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-interface {p1, v0, v1}, LFT;->j(I[B)V
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    iget-wide v0, p0, LNgd;->b:J
 
     .line 25
-    const/4 v2, 0x2
-
     .line 26
-    invoke-interface {p1, v2, v0}, LxR;->b(ILjava/lang/Long;)V
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 27
     .line 28
     .line 29
-    iget-wide v2, p0, LNgd;->t:J
+    move-result-object v0
 
     .line 30
+    const/4 v1, 0x2
+
     .line 31
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
 
     .line 32
     .line 33
     .line 34
-    move-result-object v0
+    iget-wide v0, p0, LNgd;->c:J
 
     .line 35
-    const/4 v2, 0x3
-
     .line 36
-    invoke-interface {p1, v2, v0}, LxR;->b(ILjava/lang/Long;)V
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 37
     .line 38
     .line 39
-    iget v0, p0, LNgd;->X:I
-
-    .line 40
-    .line 41
-    int-to-long v2, v0
-
-    .line 42
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 43
-    .line 44
-    .line 45
     move-result-object v0
 
+    .line 40
+    const/4 v1, 0x3
+
+    .line 41
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
+
+    .line 42
+    .line 43
+    .line 44
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 45
     .line 46
-    const/4 v2, 0x4
+    return-object p1
 
     .line 47
-    invoke-interface {p1, v2, v0}, LxR;->b(ILjava/lang/Long;)V
+    :pswitch_0
+    check-cast p1, LFT;
 
     .line 48
     .line 49
-    .line 50
-    int-to-long v0, v1
+    iget-object v0, p0, LNgd;->t:Ljava/lang/Object;
 
+    .line 50
     .line 51
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    check-cast v0, Ljava/lang/String;
 
     .line 52
     .line 53
+    const/4 v1, 0x0
+
     .line 54
-    move-result-object v0
+    invoke-interface {p1, v1, v0}, LFT;->bindString(ILjava/lang/String;)V
 
     .line 55
-    const/4 v1, 0x5
-
     .line 56
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
-
     .line 57
+    iget-wide v0, p0, LNgd;->b:J
+
     .line 58
     .line 59
-    iget v0, p0, LNgd;->Y:I
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 60
     .line 61
-    int-to-long v0, v0
-
     .line 62
-    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 63
-    .line 64
-    .line 65
     move-result-object v0
 
-    .line 66
-    const/4 v1, 0x6
+    .line 63
+    const/4 v1, 0x1
 
+    .line 64
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
+
+    .line 65
+    .line 66
     .line 67
-    invoke-interface {p1, v1, v0}, LxR;->b(ILjava/lang/Long;)V
+    iget-object v0, p0, LNgd;->X:Ljava/lang/Object;
 
     .line 68
     .line 69
+    check-cast v0, LyC9;
+
     .line 70
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
     .line 71
+    invoke-static {v0}, Lcom/google/protobuf/nano/MessageNano;->toByteArray(Lcom/google/protobuf/nano/MessageNano;)[B
+
     .line 72
-    const/4 v1, 0x7
-
     .line 73
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
-
     .line 74
+    move-result-object v0
+
     .line 75
+    const/4 v1, 0x2
+
     .line 76
-    iget-boolean v0, p0, LNgd;->Z:Z
+    invoke-interface {p1, v1, v0}, LFT;->j(I[B)V
 
     .line 77
     .line 78
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 79
+    iget-wide v0, p0, LNgd;->c:J
+
     .line 80
     .line 81
-    move-result-object v0
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 82
-    const/16 v1, 0x8
-
     .line 83
     .line 84
-    invoke-interface {p1, v1, v0}, LxR;->h(ILjava/lang/Boolean;)V
+    move-result-object v0
 
     .line 85
-    .line 86
-    .line 87
-    iget-object v0, p0, LNgd;->e0:Ljava/lang/String;
+    const/4 v1, 0x3
 
+    .line 86
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
+
+    .line 87
     .line 88
     .line 89
-    const/16 v1, 0x9
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 90
     .line 91
-    invoke-interface {p1, v1, v0}, LxR;->bindString(ILjava/lang/String;)V
+    return-object p1
 
     .line 92
+    :pswitch_1
+    check-cast p1, LFT;
+
     .line 93
     .line 94
-    const/16 v0, 0xa
+    iget-object v0, p0, LNgd;->t:Ljava/lang/Object;
 
     .line 95
     .line 96
-    iget-object v1, p0, LNgd;->f0:Ljava/lang/String;
+    check-cast v0, LPgd;
 
     .line 97
     .line 98
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    iget-object v0, v0, LPgd;->b:LScc;
 
     .line 99
     .line 100
+    iget-object v0, v0, LScc;->c:Ljava/lang/Object;
+
     .line 101
-    const/16 v0, 0xb
-
     .line 102
+    check-cast v0, Lgx9;
+
     .line 103
-    iget-object v1, p0, LNgd;->g0:Ljava/lang/String;
-
     .line 104
-    .line 105
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    iget-object v1, p0, LNgd;->X:Ljava/lang/Object;
 
+    .line 105
     .line 106
+    check-cast v1, Ligd;
+
     .line 107
     .line 108
-    const/16 v0, 0xc
+    invoke-virtual {v0, v1}, Lgx9;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 109
     .line 110
-    iget-object v1, p0, LNgd;->h0:Ljava/lang/String;
-
     .line 111
+    move-result-object v0
+
     .line 112
-    invoke-interface {p1, v0, v1}, LxR;->bindString(ILjava/lang/String;)V
+    check-cast v0, Ljava/lang/Long;
 
     .line 113
     .line 114
+    const/4 v1, 0x0
+
     .line 115
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
 
     .line 116
     .line 117
+    .line 118
+    iget-wide v0, p0, LNgd;->b:J
+
+    .line 119
+    .line 120
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 121
+    .line 122
+    .line 123
+    move-result-object v0
+
+    .line 124
+    const/4 v1, 0x1
+
+    .line 125
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
+
+    .line 126
+    .line 127
+    .line 128
+    iget-wide v0, p0, LNgd;->c:J
+
+    .line 129
+    .line 130
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 131
+    .line 132
+    .line 133
+    move-result-object v0
+
+    .line 134
+    const/4 v1, 0x2
+
+    .line 135
+    invoke-interface {p1, v1, v0}, LFT;->b(ILjava/lang/Long;)V
+
+    .line 136
+    .line 137
+    .line 138
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 139
+    .line 140
     return-object p1
+
+    .line 141
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

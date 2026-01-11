@@ -21,17 +21,17 @@
 
 
 # instance fields
-.field public final a:LKOh;
+.field public final a:LXUf;
 
-.field public final b:LkYh;
+.field public final b:Lrdi;
 
-.field public final c:Lcli;
+.field public final c:LVJi;
 
 .field public final t:Z
 
 
 # direct methods
-.method public constructor <init>(LKOh;LkYh;Lcli;)V
+.method public constructor <init>(LXUf;Lrdi;LVJi;)V
     .locals 0
 
     .line 1
@@ -40,15 +40,15 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->a:LKOh;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->a:LXUf;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->b:LkYh;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->b:Lrdi;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->c:Lcli;
+    iput-object p3, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->c:LVJi;
 
     .line 9
     .line 10
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public final t(Lio/reactivex/rxjava3/core/CompletableObserver;)V
+.method public final s(Lio/reactivex/rxjava3/core/CompletableObserver;)V
     .locals 6
 
     .line 1
@@ -76,31 +76,31 @@
 
     .line 4
     .line 5
-    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->c:Lcli;
+    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->c:LVJi;
 
     .line 6
     .line 7
     :try_start_0
-    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->a:LKOh;
+    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->a:LXUf;
 
     .line 8
     .line 9
-    iget-object v3, v3, LKOh;->b:Ljava/lang/Object;
+    iget-object v3, v3, LXUf;->b:Ljava/lang/Object;
 
     .line 10
     .line 11
-    check-cast v3, Ldli;
+    check-cast v3, LWJi;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
     .line 12
     .line 13
     :try_start_1
-    iget-object v4, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->b:LkYh;
+    iget-object v4, p0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing;->b:Lrdi;
 
     .line 14
     .line 15
-    invoke-virtual {v4, v3}, LkYh;->apply(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v3}, Lrdi;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
     .line 17
@@ -118,7 +118,7 @@
 
     .line 22
     .line 23
-    invoke-direct {v0, p1, v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing$UsingObserver;-><init>(Lio/reactivex/rxjava3/core/CompletableObserver;Ljava/lang/Object;Lcli;Z)V
+    invoke-direct {v0, p1, v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableUsing$UsingObserver;-><init>(Lio/reactivex/rxjava3/core/CompletableObserver;Ljava/lang/Object;LVJi;Z)V
 
     .line 24
     .line 25
@@ -145,7 +145,7 @@
     .line 35
     .line 36
     :try_start_2
-    invoke-virtual {v2, v3}, Lcli;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v2, v3}, LVJi;->accept(Ljava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -224,7 +224,7 @@
     .line 72
     .line 73
     :try_start_3
-    invoke-virtual {v2, v3}, Lcli;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v2, v3}, LVJi;->accept(Ljava/lang/Object;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 

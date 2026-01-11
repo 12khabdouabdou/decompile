@@ -1,323 +1,351 @@
 .class public final Lvxk;
-.super Ljava/lang/Object;
+.super LFtk;
 .source "SourceFile"
 
 # interfaces
-.implements LOyk;
-.implements Landroid/os/IInterface;
+.implements Lcxk;
 
 
 # instance fields
-.field public final a:Landroid/os/IBinder;
+.field public final synthetic b:I
+
+.field public final synthetic c:LRMi;
 
 
 # direct methods
-.method public constructor <init>(Landroid/os/IBinder;)V
+.method public constructor <init>(ILRMi;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p1, p0, Lvxk;->b:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lvxk;->a:Landroid/os/IBinder;
+    iput-object p2, p0, Lvxk;->c:LRMi;
 
+    .line 4
     .line 5
+    const-string p1, "com.google.android.gms.common.moduleinstall.internal.IModuleInstallCallbacks"
+
     .line 6
+    .line 7
+    const/4 p2, 0x2
+
+    .line 8
+    invoke-direct {p0, p1, p2}, LFtk;-><init>(Ljava/lang/String;I)V
+
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final G(ILandroid/os/Parcel;)Landroid/os/Parcel;
-    .locals 3
+.method public h(Lcom/google/android/gms/common/api/Status;LLfc;)V
+    .locals 1
 
     .line 1
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+    iget v0, p0, Lvxk;->b:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    :try_start_0
-    iget-object v1, p0, Lvxk;->a:Landroid/os/IBinder;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
+    .line 7
     .line 8
-    invoke-interface {v1, p1, p2, v0, v2}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 9
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroid/os/Parcel;->readException()V
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    throw p1
 
     .line 12
+    :pswitch_0
+    iget-object v0, p0, Lvxk;->c:LRMi;
+
     .line 13
     .line 14
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
+    invoke-static {p1, p2, v0}, LxCj;->l(Lcom/google/android/gms/common/api/Status;Ljava/lang/Object;LRMi;)V
 
     .line 15
     .line 16
     .line 17
-    return-object v0
+    return-void
 
     .line 18
-    :catchall_0
-    move-exception p1
+    nop
 
     .line 19
-    goto :goto_0
-
-    .line 20
-    :catch_0
-    move-exception p1
-
-    .line 21
-    :try_start_1
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    .line 22
-    .line 23
-    .line 24
-    throw p1
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 25
-    :goto_0
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
-
-    .line 26
-    .line 27
-    .line 28
-    throw p1
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final asBinder()Landroid/os/IBinder;
+.method public final p(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lvxk;->a:Landroid/os/IBinder;
+    const/4 p3, 0x1
 
     .line 2
-    .line 3
-    return-object v0
-.end method
+    if-eq p1, p3, :cond_3
 
-.method public final e(ILjava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)I
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lvxk;->j()Landroid/os/Parcel;
-
-    .line 2
     .line 3
     .line 4
-    move-result-object v0
+    const/4 v0, 0x2
 
     .line 5
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
+    if-eq p1, v0, :cond_2
 
     .line 6
     .line 7
+    const/4 p3, 0x3
+
     .line 8
-    invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    if-eq p1, p3, :cond_1
 
     .line 9
     .line 10
+    const/4 p3, 0x4
+
     .line 11
-    invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    if-eq p1, p3, :cond_0
 
     .line 12
     .line 13
-    .line 14
-    sget p1, LAAk;->a:I
-
-    .line 15
-    .line 16
-    const/4 p1, 0x1
-
-    .line 17
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 18
-    .line 19
-    .line 20
     const/4 p1, 0x0
 
-    .line 21
-    invoke-virtual {p4, v0, p1}, Landroid/os/Bundle;->writeToParcel(Landroid/os/Parcel;I)V
+    .line 14
+    return p1
 
-    .line 22
-    .line 23
-    .line 24
-    const/16 p1, 0xa
+    .line 15
+    :cond_0
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    .line 25
-    .line 26
-    invoke-virtual {p0, p1, v0}, Lvxk;->G(ILandroid/os/Parcel;)Landroid/os/Parcel;
+    .line 16
+    .line 17
+    invoke-static {p2, p1}, LRwk;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
-    .line 27
-    .line 28
-    .line 29
+    .line 18
+    .line 19
+    .line 20
     move-result-object p1
 
-    .line 30
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    .line 31
-    .line 32
-    .line 33
-    move-result p2
-
-    .line 34
-    invoke-virtual {p1}, Landroid/os/Parcel;->recycle()V
-
-    .line 35
-    .line 36
-    .line 37
-    return p2
-.end method
-
-.method public final f(Ljava/lang/String;Landroid/os/Bundle;LOak;)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lvxk;->j()Landroid/os/Parcel;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    const/16 v1, 0x12
-
-    .line 6
-    .line 7
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    sget p1, LAAk;->a:I
-
-    .line 14
-    .line 15
-    const/4 p1, 0x1
-
-    .line 16
-    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
-
-    .line 17
-    .line 18
-    .line 19
-    const/4 p1, 0x0
-
-    .line 20
-    invoke-virtual {p2, v0, p1}, Landroid/os/Bundle;->writeToParcel(Landroid/os/Parcel;I)V
-
     .line 21
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
     .line 22
     .line 23
-    invoke-virtual {v0, p3}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
+    invoke-static {p2}, LRwk;->b(Landroid/os/Parcel;)V
 
     .line 24
     .line 25
     .line 26
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     .line 27
     .line 28
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
     .line 29
-    move-result-object p2
-
     .line 30
-    :try_start_0
-    iget-object p3, p0, Lvxk;->a:Landroid/os/IBinder;
-
     .line 31
+    throw p1
+
     .line 32
-    const/16 v1, 0x515
+    :cond_1
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 33
     .line 34
-    invoke-interface {p3, v1, v0, p2, p1}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    invoke-static {p2, p1}, LRwk;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     .line 35
     .line 36
     .line 37
-    invoke-virtual {p2}, Landroid/os/Parcel;->readException()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object p1
 
     .line 38
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
     .line 39
     .line 40
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+    sget-object p1, LKfc;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 41
     .line 42
-    .line 43
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
+    invoke-static {p2, p1}, LRwk;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
+    .line 43
     .line 44
     .line 45
+    move-result-object p1
+
     .line 46
-    return-void
+    check-cast p1, LKfc;
 
     .line 47
-    :catchall_0
-    move-exception p1
-
     .line 48
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
+    invoke-static {p2}, LRwk;->b(Landroid/os/Parcel;)V
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {p2}, Landroid/os/Parcel;->recycle()V
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     .line 52
     .line 53
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
     .line 54
+    .line 55
+    .line 56
     throw p1
+
+    .line 57
+    :cond_2
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 58
+    .line 59
+    invoke-static {p2, p1}, LRwk;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    .line 64
+    .line 65
+    sget-object v0, LLfc;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 66
+    .line 67
+    invoke-static {p2, v0}, LRwk;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v0
+
+    .line 71
+    check-cast v0, LLfc;
+
+    .line 72
+    .line 73
+    invoke-static {p2}, LRwk;->b(Landroid/os/Parcel;)V
+
+    .line 74
+    .line 75
+    .line 76
+    invoke-interface {p0, p1, v0}, Lcxk;->h(Lcom/google/android/gms/common/api/Status;LLfc;)V
+
+    .line 77
+    .line 78
+    .line 79
+    return p3
+
+    .line 80
+    :cond_3
+    sget-object p1, Lcom/google/android/gms/common/api/Status;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 81
+    .line 82
+    invoke-static {p2, p1}, LRwk;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p1
+
+    .line 86
+    check-cast p1, Lcom/google/android/gms/common/api/Status;
+
+    .line 87
+    .line 88
+    sget-object v0, LIfc;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 89
+    .line 90
+    invoke-static {p2, v0}, LRwk;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v0
+
+    .line 94
+    check-cast v0, LIfc;
+
+    .line 95
+    .line 96
+    invoke-static {p2}, LRwk;->b(Landroid/os/Parcel;)V
+
+    .line 97
+    .line 98
+    .line 99
+    invoke-interface {p0, p1, v0}, Lcxk;->x(Lcom/google/android/gms/common/api/Status;LIfc;)V
+
+    .line 100
+    .line 101
+    .line 102
+    return p3
 .end method
 
-.method public final j()Landroid/os/Parcel;
-    .locals 2
+.method public x(Lcom/google/android/gms/common/api/Status;LIfc;)V
+    .locals 1
 
     .line 1
-    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+    iget v0, p0, Lvxk;->b:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    const-string v1, "com.android.vending.billing.IInAppBillingService"
-
     .line 6
-    .line 7
-    invoke-virtual {v0, v1}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
+    .line 7
     .line 8
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
     .line 9
     .line 10
-    return-object v0
+    .line 11
+    throw p1
+
+    .line 12
+    :pswitch_0
+    iget-object v0, p0, Lvxk;->c:LRMi;
+
+    .line 13
+    .line 14
+    invoke-static {p1, p2, v0}, LxCj;->l(Lcom/google/android/gms/common/api/Status;Ljava/lang/Object;LRMi;)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+
+    .line 18
+    nop
+
+    .line 19
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

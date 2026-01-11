@@ -1,18 +1,18 @@
 .class public final Lcom/snap/opera/layer/LoadingLayerView;
-.super LPG9;
+.super LoS9;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LPG9;"
+        "LoS9;"
     }
 .end annotation
 
 
 # instance fields
-.field public final g:Ljua;
+.field public final g:LtGa;
 
 .field public final h:Landroid/view/ViewGroup;
 
@@ -22,7 +22,7 @@
 
 .field public final k:Landroid/view/ViewGroup$LayoutParams;
 
-.field public final l:LPWc;
+.field public final l:LKbd;
 
 
 # direct methods
@@ -30,20 +30,20 @@
     .locals 3
 
     .line 1
-    invoke-direct {p0, p1}, LPG9;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LoS9;-><init>(Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    sget-object v0, Ljua;->j:Ljua;
+    sget-object v0, LtGa;->j:LtGa;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lcom/snap/opera/layer/LoadingLayerView;->g:Ljua;
+    iput-object v0, p0, Lcom/snap/opera/layer/LoadingLayerView;->g:LtGa;
 
     .line 7
     .line 8
-    const v0, 0x7f0e03ca
+    const v0, 0x7f0e03ec
 
     .line 9
     .line 10
@@ -67,7 +67,7 @@
 
     .line 19
     .line 20
-    const v0, 0x7f0b0c23
+    const v0, 0x7f0b0d47
 
     .line 21
     .line 22
@@ -88,7 +88,7 @@
 
     .line 30
     .line 31
-    const v1, 0x7f0b0c24
+    const v1, 0x7f0b0d48
 
     .line 32
     .line 33
@@ -121,16 +121,16 @@
 
     .line 47
     .line 48
-    new-instance v2, LPWc;
+    new-instance v2, LKbd;
 
     .line 49
     .line 50
-    invoke-direct {v2, v0}, LPWc;-><init>(Landroid/view/View;)V
+    invoke-direct {v2, v0}, LKbd;-><init>(Landroid/view/View;)V
 
     .line 51
     .line 52
     .line 53
-    iput-object v2, p0, Lcom/snap/opera/layer/LoadingLayerView;->l:LPWc;
+    iput-object v2, p0, Lcom/snap/opera/layer/LoadingLayerView;->l:LKbd;
 
     .line 54
     .line 55
@@ -168,7 +168,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/layer/LoadingLayerView;->g:Ljua;
+    iget-object v0, p0, Lcom/snap/opera/layer/LoadingLayerView;->g:LtGa;
 
     .line 2
     .line 3
@@ -190,15 +190,15 @@
     .locals 4
 
     .line 1
-    check-cast p1, Ljua;
+    check-cast p1, LtGa;
 
     .line 2
     .line 3
-    check-cast p2, Ljua;
+    check-cast p2, LtGa;
 
     .line 4
     .line 5
-    iget v0, p1, Ljua;->a:F
+    iget v0, p1, LtGa;->a:F
 
     .line 6
     .line 7
@@ -225,7 +225,7 @@
     move-result v0
 
     .line 18
-    invoke-static {v1, v2, v0}, LZtk;->a(Landroid/view/View;FF)V
+    invoke-static {v1, v2, v0}, LHUk;->a(Landroid/view/View;FF)V
 
     .line 19
     .line 20
@@ -253,7 +253,7 @@
     move-result v0
 
     .line 31
-    invoke-static {v1, v2, v0}, LZtk;->a(Landroid/view/View;FF)V
+    invoke-static {v1, v2, v0}, LHUk;->a(Landroid/view/View;FF)V
 
     .line 32
     .line 33
@@ -263,24 +263,24 @@
 
     .line 35
     .line 36
-    iget-boolean v1, p1, Ljua;->b:Z
+    iget-boolean v1, p1, LtGa;->b:Z
 
     .line 37
     .line 38
-    invoke-static {v0, v1}, LLZj;->E0(Landroid/view/View;Z)V
+    invoke-static {v0, v1}, LDz9;->p0(Landroid/view/View;Z)V
 
     .line 39
     .line 40
     .line 41
-    iget-object v1, p2, Ljua;->c:Landroid/graphics/Bitmap;
+    iget-object v1, p2, LtGa;->c:Landroid/graphics/Bitmap;
 
     .line 42
     .line 43
-    iget-object v2, p1, Ljua;->c:Landroid/graphics/Bitmap;
+    iget-object v2, p1, LtGa;->c:Landroid/graphics/Bitmap;
 
     .line 44
     .line 45
-    invoke-static {v2, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 46
     .line 47
@@ -312,14 +312,14 @@
     const/4 v1, 0x0
 
     .line 60
-    invoke-virtual {v3, v1}, LCmd;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v3, v1}, LdDd;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 61
     .line 62
     .line 63
     :cond_2
     :goto_1
-    iget-boolean v1, p1, Ljua;->d:Z
+    iget-boolean v1, p1, LtGa;->d:Z
 
     .line 64
     .line 65
@@ -349,7 +349,7 @@
 
     .line 76
     .line 77
-    iget-boolean v1, p1, Ljua;->e:Z
+    iget-boolean v1, p1, LtGa;->e:Z
 
     .line 78
     .line 79
@@ -376,11 +376,11 @@
     .line 87
     .line 88
     :goto_3
-    iget v1, p2, Ljua;->f:F
+    iget v1, p2, LtGa;->f:F
 
     .line 89
     .line 90
-    iget v2, p1, Ljua;->f:F
+    iget v2, p1, LtGa;->f:F
 
     .line 91
     .line 92
@@ -418,7 +418,7 @@
     const/4 v1, -0x1
 
     .line 108
-    iget v2, p1, Ljua;->g:I
+    iget v2, p1, LtGa;->g:I
 
     .line 109
     .line 110
@@ -441,7 +441,7 @@
     .line 118
     .line 119
     .line 120
-    iget v0, p1, Ljua;->h:F
+    iget v0, p1, LtGa;->h:F
 
     .line 121
     .line 122
@@ -455,11 +455,11 @@
     .line 126
     .line 127
     .line 128
-    iget-boolean p2, p2, Ljua;->i:Z
+    iget-boolean p2, p2, LtGa;->i:Z
 
     .line 129
     .line 130
-    iget-boolean p1, p1, Ljua;->i:Z
+    iget-boolean p1, p1, LtGa;->i:Z
 
     .line 131
     .line 132
@@ -467,11 +467,11 @@
 
     .line 133
     .line 134
-    iget-object p2, p0, Lcom/snap/opera/layer/LoadingLayerView;->l:LPWc;
+    iget-object p2, p0, Lcom/snap/opera/layer/LoadingLayerView;->l:LKbd;
 
     .line 135
     .line 136
-    invoke-virtual {p2, p1}, LPWc;->b(Z)V
+    invoke-virtual {p2, p1}, LKbd;->b(Z)V
 
     .line 137
     .line 138

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map_drops/MapDropsV2InfoModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'userId\':s,\'avatarId\':s?,\'selfieId\':s?,\'icon\':s?,\'isEditablePin\':b"
     typeReferences = {}

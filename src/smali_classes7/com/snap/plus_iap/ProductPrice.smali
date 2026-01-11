@@ -1,12 +1,12 @@
 .class public final Lcom/snap/plus_iap/ProductPrice;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'millis\':d,\'currencyCode\':s"
+    schema = "\'millis\':d,\'currencyCode\':s,\'currencySymbol\':s"
     typeReferences = {}
 .end annotation
 
@@ -14,11 +14,13 @@
 # instance fields
 .field private _currencyCode:Ljava/lang/String;
 
+.field private _currencySymbol:Ljava/lang/String;
+
 .field private _millis:D
 
 
 # direct methods
-.method public constructor <init>(DLjava/lang/String;)V
+.method public constructor <init>(DLjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -35,6 +37,10 @@
 
     .line 7
     .line 8
+    iput-object p4, p0, Lcom/snap/plus_iap/ProductPrice;->_currencySymbol:Ljava/lang/String;
+
+    .line 9
+    .line 10
     return-void
 .end method
 

@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -54,12 +54,12 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTakeUntil$TakeUntilMainSubscriber;-><init>(LV6i;)V
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableTakeUntil$TakeUntilMainSubscriber;-><init>(Lmvi;)V
 
     .line 4
     .line 5
     .line 6
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 7
     .line 8
@@ -72,7 +72,7 @@
 
     .line 12
     .line 13
-    invoke-interface {p1, v1}, LZne;->subscribe(LV6i;)V
+    invoke-interface {p1, v1}, LSFe;->subscribe(Lmvi;)V
 
     .line 14
     .line 15

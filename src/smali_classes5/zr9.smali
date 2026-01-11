@@ -1,30 +1,29 @@
 .class public final Lzr9;
-.super Lcom/snap/composer/utils/b;
+.super Lxr9;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'contactAddressBookStore\':r:\'[0]\',\'inviteContactSectionLogger\':r?:\'[1]\',\'cofStore\':r?:\'[2]\',\'onPageScroll\':f?(),\'moveToNextRegScreen\':f(),\'inviteContacts\':f(a<r:\'[3]\'>),\'showMaxInviteReachDialog\':f(),\'onBeforeInviteFriend\':f?(r:\'[3]\'),\'onImpression\':f?(s?),\'hasStatusBar\':b@?,\'inviteWithPendingFriendRequest\':b@?,\'enableWhatsAppInviteTitle\':b@?,\'preSelectTopXContacts\':d@?,\'enableSendXInvitesButton\':b@?,\'preSelectPredicateRankScore\':d@?"
-    typeReferences = {
-        Lcom/snap/composer/people/ContactAddressBookEntryStoring;,
-        Lcom/snap/sharing/invite/InviteContactSectionLogger;,
-        Lcom/snap/composer/cof/ICOFStore;,
-        Lcom/snap/composer/people/InviteContactAddressBookRequest;
-    }
-.end annotation
+# static fields
+.field public static final a:Lzr9;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lzr9;
 
     .line 2
     .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
     .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lzr9;->a:Lzr9;
+
+    .line 7
+    .line 8
     return-void
 .end method

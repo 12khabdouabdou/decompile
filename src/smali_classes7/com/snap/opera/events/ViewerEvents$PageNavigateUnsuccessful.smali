@@ -1,5 +1,5 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$PageNavigateUnsuccessful;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3

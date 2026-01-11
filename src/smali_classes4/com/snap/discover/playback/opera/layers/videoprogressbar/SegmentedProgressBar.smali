@@ -46,7 +46,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/discover/playback/opera/layers/videoprogressbar/SegmentedProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/discover/playback/opera/layers/videoprogressbar/SegmentedProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/discover/playback/opera/layers/videoprogressbar/SegmentedProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/discover/playback/opera/layers/videoprogressbar/SegmentedProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -83,7 +83,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f0714ee
+    const v0, 0x7f071509    # 1.79555E38f
 
     invoke-virtual {p3, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -96,21 +96,21 @@
     .line 6
     iput p3, p0, Lcom/snap/discover/playback/opera/layers/videoprogressbar/SegmentedProgressBar;->e0:I
 
-    const v0, 0x7f0714f5
+    const v0, 0x7f071510
 
     .line 7
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    const v1, 0x7f0714f3
+    const v1, 0x7f07150e
 
     .line 8
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    const v2, 0x7f0714f4
+    const v2, 0x7f07150f
 
     .line 9
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -183,10 +183,10 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    const v2, 0x7f0604ed
+    const v2, 0x7f0605ca
 
     .line 18
-    invoke-static {p1, v2}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, v2}, LV14;->c(Landroid/content/Context;I)I
 
     move-result v2
 
@@ -206,10 +206,10 @@
     .line 22
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    const v1, 0x7f0604ec
+    const v1, 0x7f0605c9
 
     .line 23
-    invoke-static {p1, v1}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, v1}, LV14;->c(Landroid/content/Context;I)I
 
     move-result v1
 
@@ -236,7 +236,7 @@
     iput-object v0, p0, Lcom/snap/discover/playback/opera/layers/videoprogressbar/SegmentedProgressBar;->j0:Landroid/graphics/Path;
 
     .line 28
-    sget-object v0, LuL6;->a:LuL6;
+    sget-object v0, LiP6;->a:LiP6;
 
     iput-object v0, p0, Lcom/snap/discover/playback/opera/layers/videoprogressbar/SegmentedProgressBar;->k0:Ljava/lang/Object;
 
@@ -245,7 +245,7 @@
 
     move-result-object p1
 
-    sget-object v0, Lhve;->b:[I
+    sget-object v0, LPMe;->b:[I
 
     invoke-virtual {p1, p2, v0, v5, v5}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -257,7 +257,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0714f2
+    const v0, 0x7f07150d
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -275,7 +275,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0714ef
+    const v0, 0x7f07150a
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimension(I)F
 
@@ -303,7 +303,7 @@
     throw p2
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2

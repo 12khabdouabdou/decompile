@@ -29,5 +29,5 @@
 
 
 # virtual methods
-.method public abstract a(Lzo9;)V
+.method public abstract a(LBx9;)V
 .end method

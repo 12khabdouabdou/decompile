@@ -1,104 +1,58 @@
-.class public abstract LJC2;
+.class public abstract synthetic LJC2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Ljava/nio/charset/Charset;
-
-.field public static final b:Ljava/nio/charset/Charset;
-
-.field public static final c:Ljava/nio/charset/Charset;
-
-.field public static final d:Ljava/nio/charset/Charset;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 3
 
     .line 1
-    const-string v0, "US-ASCII"
+    invoke-static {}, LjIa;->values()[LjIa;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
     .line 4
-    .line 5
-    .line 6
     move-result-object v0
+
+    .line 5
+    array-length v0, v0
+
+    .line 6
+    new-array v0, v0, [I
 
     .line 7
-    sput-object v0, LJC2;->a:Ljava/nio/charset/Charset;
-
     .line 8
+    :try_start_0
+    sget-object v1, LjIa;->b:LjIa;
+
     .line 9
-    const-string v0, "ISO-8859-1"
-
     .line 10
-    .line 11
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 11
     .line 12
     .line 13
+    move-result v1
+
     .line 14
-    move-result-object v0
+    const/4 v2, 0x1
 
     .line 15
-    sput-object v0, LJC2;->b:Ljava/nio/charset/Charset;
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
     .line 17
-    const-string v0, "UTF-8"
+    :catch_0
+    sput-object v0, LJC2;->a:[I
 
     .line 18
     .line 19
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v0
-
-    .line 23
-    sput-object v0, LJC2;->c:Ljava/nio/charset/Charset;
-
-    .line 24
-    .line 25
-    const-string v0, "UTF-16BE"
-
-    .line 26
-    .line 27
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    .line 28
-    .line 29
-    .line 30
-    const-string v0, "UTF-16LE"
-
-    .line 31
-    .line 32
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    .line 33
-    .line 34
-    .line 35
-    const-string v0, "UTF-16"
-
-    .line 36
-    .line 37
-    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v0
-
-    .line 41
-    sput-object v0, LJC2;->d:Ljava/nio/charset/Charset;
-
-    .line 42
-    .line 43
     return-void
 .end method

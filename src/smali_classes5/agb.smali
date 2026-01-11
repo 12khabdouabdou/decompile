@@ -1,172 +1,115 @@
 .class public final Lagb;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements LSb0;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'actionmojis\':a?<r:\'[0]\'>,\'initialSelectedPose\':s?,\'isInGhostMode\':b@?"
+    typeReferences = {
+        LLfb;
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+.field private _actionmojis:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "LLfb;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:LKPg;
+.field private _initialSelectedPose:Ljava/lang/String;
+
+.field private _isInGhostMode:Ljava/lang/Boolean;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;LKPg;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, 0x0
+
     .line 2
+    iput-object v0, p0, Lagb;->_actionmojis:Ljava/util/List;
+
     .line 3
+    iput-object v0, p0, Lagb;->_initialSelectedPose:Ljava/lang/String;
+
     .line 4
-    iput-object p1, p0, Lagb;->a:Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
+    iput-object v0, p0, Lagb;->_isInGhostMode:Ljava/lang/Boolean;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/Boolean;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "LLfb;",
+            ">;",
+            "Ljava/lang/String;",
+            "Ljava/lang/Boolean;",
+            ")V"
+        }
+    .end annotation
 
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
-    iput-object p2, p0, Lagb;->b:LKPg;
+    iput-object p1, p0, Lagb;->_actionmojis:Ljava/util/List;
 
     .line 7
+    iput-object p2, p0, Lagb;->_initialSelectedPose:Ljava/lang/String;
+
     .line 8
+    iput-object p3, p0, Lagb;->_isInGhostMode:Ljava/lang/Boolean;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LOc0;LMda;Lu09;)Lio/reactivex/rxjava3/core/Maybe;
-    .locals 6
+.method public final a(Ljava/util/List;)V
+    .locals 0
 
     .line 1
-    sget-object p2, LNc0;->Y:LNc0;
+    iput-object p1, p0, Lagb;->_actionmojis:Ljava/util/List;
 
     .line 2
     .line 3
-    iget-object p3, p1, LOc0;->c:LNc0;
+    return-void
+.end method
 
-    .line 4
-    .line 5
-    if-eq p3, p2, :cond_0
+.method public final b(Ljava/lang/Boolean;)V
+    .locals 0
 
-    .line 6
-    .line 7
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
+    .line 1
+    iput-object p1, p0, Lagb;->_isInGhostMode:Ljava/lang/Boolean;
 
-    .line 8
-    .line 9
-    return-object p1
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 10
-    :cond_0
-    sget-object p2, LlL9;->d:LlL9;
+.method public final c(Ljava/lang/String;)V
+    .locals 0
 
-    .line 11
-    .line 12
-    iget-object p3, p1, LOc0;->b:Ljava/util/Map;
+    .line 1
+    iput-object p1, p0, Lagb;->_initialSelectedPose:Ljava/lang/String;
 
-    .line 13
-    .line 14
-    invoke-interface {p3, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p2
-
-    .line 18
-    move-object v4, p2
-
-    .line 19
-    check-cast v4, LkL9;
-
-    .line 20
-    .line 21
-    if-eqz v4, :cond_1
-
-    .line 22
-    .line 23
-    iget-object p2, v4, LkL9;->a:LKjj;
-
-    .line 24
-    .line 25
-    goto :goto_0
-
-    .line 26
-    :cond_1
-    const/4 p2, 0x0
-
-    .line 27
-    :goto_0
-    instance-of p3, p2, LIjj;
-
-    .line 28
-    .line 29
-    if-nez p3, :cond_2
-
-    .line 30
-    .line 31
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
-
-    .line 32
-    .line 33
-    return-object p1
-
-    .line 34
-    :cond_2
-    iget-object p3, p0, Lagb;->b:LKPg;
-
-    .line 35
-    .line 36
-    move-object v0, p2
-
-    .line 37
-    check-cast v0, LJjj;
-
-    .line 38
-    .line 39
-    invoke-virtual {p3, v0}, LKPg;->a(LJjj;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p3
-
-    .line 43
-    new-instance v0, LaY7;
-
-    .line 44
-    .line 45
-    move-object v2, p2
-
-    .line 46
-    check-cast v2, LIjj;
-
-    .line 47
-    .line 48
-    const/16 v5, 0xd
-
-    .line 49
-    .line 50
-    move-object v1, p0
-
-    .line 51
-    move-object v3, p1
-
-    .line 52
-    invoke-direct/range {v0 .. v5}, LaY7;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    .line 53
-    .line 54
-    .line 55
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;
-
-    .line 56
-    .line 57
-    invoke-direct {p1, p3, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 58
-    .line 59
-    .line 60
-    return-object p1
+    .line 2
+    .line 3
+    return-void
 .end method

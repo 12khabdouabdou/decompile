@@ -2,150 +2,54 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
 
+# instance fields
+.field public a:Landroid/hardware/camera2/CameraDevice;
 
-# static fields
-.field public static final a:Lytk;
+.field public final b:Ljava/util/HashMap;
+
+.field public c:Landroid/graphics/SurfaceTexture;
+
+.field public d:Landroid/view/Surface;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>()V
+    .locals 2
 
     .line 1
-    new-instance v0, Lytk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    const/4 v0, 0x0
+
     .line 5
+    iput-object v0, p0, Lytk;->a:Landroid/hardware/camera2/CameraDevice;
+
     .line 6
-    sput-object v0, Lytk;->a:Lytk;
-
     .line 7
+    new-instance v1, Ljava/util/HashMap;
+
     .line 8
-    new-instance v0, LFhk;
-
     .line 9
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
     .line 10
-    const/4 v1, 0x1
-
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
     .line 12
+    iput-object v1, p0, Lytk;->b:Ljava/util/HashMap;
+
     .line 13
     .line 14
-    const-class v1, LUhk;
+    iput-object v0, p0, Lytk;->c:Landroid/graphics/SurfaceTexture;
 
     .line 15
     .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    iput-object v0, p0, Lytk;->d:Landroid/view/Surface;
 
     .line 17
     .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    const/4 v2, 0x3
-
-    .line 30
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v0
-
-    .line 38
-    const/4 v2, 0x4
-
-    .line 39
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 48
-    .line 49
-    .line 50
     return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
 .end method

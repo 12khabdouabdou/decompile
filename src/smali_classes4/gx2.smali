@@ -3,331 +3,261 @@
 .source "SourceFile"
 
 # interfaces
-.implements LPZ0;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
-# static fields
-.field public static final a:Landroid/graphics/Paint;
+# instance fields
+.field public final synthetic a:LLw2;
+
+.field public final synthetic b:Lkx2;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(LLw2;Lkx2;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Landroid/graphics/Paint;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v1, 0x6
-
     .line 4
-    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
+    iput-object p1, p0, Lgx2;->a:LLw2;
 
     .line 5
     .line 6
-    .line 7
-    sput-object v0, Lgx2;->a:Landroid/graphics/Paint;
+    iput-object p2, p0, Lgx2;->b:Lkx2;
 
+    .line 7
     .line 8
-    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LUY0;LgJe;II)LgJe;
-    .locals 7
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 14
 
     .line 1
-    invoke-static {p2}, Lgye;->G(LgJe;)Landroid/graphics/Bitmap;
+    check-cast p1, LTw8;
 
     .line 2
     .line 3
+    invoke-virtual {p1}, LTw8;->a()LTw8$a;
+
     .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 5
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
-
-    .line 6
     .line 7
-    .line 8
-    move-result v1
+    iget-object v0, v0, LTw8$a;->t:Ljava/lang/String;
 
+    .line 8
     .line 9
-    if-ne v1, p3, :cond_0
+    iget-object v1, p0, Lgx2;->a:LLw2;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
+    iput-object v0, v1, LLw2;->j:Ljava/lang/String;
 
     .line 12
     .line 13
+    invoke-virtual {p1}, LTw8;->a()LTw8$a;
+
     .line 14
-    move-result v1
-
     .line 15
-    if-ne v1, p4, :cond_0
-
     .line 16
+    move-result-object v0
+
     .line 17
-    return-object p2
+    iget-object v0, v0, LTw8$a;->b:[LyHg;
 
     .line 18
-    :cond_0
-    sget-object p2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
-
     .line 19
+    array-length v0, v0
+
     .line 20
-    check-cast p1, LwJ0;
+    const/4 v2, 0x0
 
     .line 21
+    iget-object v3, p0, Lgx2;->b:Lkx2;
+
     .line 22
-    const-string v1, "CenterCropTransformation"
-
     .line 23
+    if-nez v0, :cond_0
+
     .line 24
-    invoke-virtual {p1, p3, p4, p2, v1}, LwJ0;->f(IILandroid/graphics/Bitmap$Config;Ljava/lang/String;)LgJe;
-
     .line 25
+    goto :goto_0
+
     .line 26
+    :cond_0
+    invoke-virtual {p1}, LTw8;->a()LTw8$a;
+
     .line 27
-    move-result-object p1
-
     .line 28
-    invoke-virtual {p1}, LgJe;->j()Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 29
-    .line 30
-    .line 31
-    move-result-object p2
+    move-result-object v0
 
+    .line 30
+    iget-object v0, v0, LTw8$a;->c:[B
+
+    .line 31
     .line 32
-    check-cast p2, LHq6;
+    array-length v0, v0
 
     .line 33
+    if-nez v0, :cond_1
+
     .line 34
-    invoke-interface {p2}, LHq6;->A2()Landroid/graphics/Bitmap;
-
     .line 35
-    .line 36
-    .line 37
-    move-result-object p2
+    :goto_0
+    const/4 v0, 0x1
 
+    .line 36
+    iput-boolean v0, v3, Lkx2;->j:Z
+
+    .line 37
     .line 38
-    new-instance v1, Landroid/graphics/Matrix;
+    iput-boolean v2, v3, Lkx2;->i:Z
 
     .line 39
     .line 40
-    invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
+    :cond_1
+    invoke-virtual {p1}, LTw8;->a()LTw8$a;
 
     .line 41
     .line 42
     .line 43
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
+    move-result-object v0
 
     .line 44
+    iget-object v0, v0, LTw8$a;->c:[B
+
     .line 45
     .line 46
-    move-result v2
+    iput-object v0, v3, Lkx2;->h:[B
 
     .line 47
-    mul-int v2, v2, p4
-
     .line 48
-    .line 49
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
+    invoke-virtual {p1}, LTw8;->a()LTw8$a;
 
+    .line 49
     .line 50
     .line 51
+    move-result-object v0
+
     .line 52
-    move-result v3
+    iget-object v0, v0, LTw8$a;->b:[LyHg;
 
     .line 53
-    mul-int v3, v3, p3
-
     .line 54
-    .line 55
-    const/4 v4, 0x0
+    new-instance v4, Ljava/util/ArrayList;
 
+    .line 55
     .line 56
-    const/high16 v5, 0x3f000000    # 0.5f
+    array-length v5, v0
 
     .line 57
-    .line 58
-    if-le v2, v3, :cond_1
+    invoke-direct {v4, v5}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 58
     .line 59
     .line 60
-    int-to-float p4, p4
+    array-length v5, v0
 
     .line 61
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
+    :goto_1
+    if-ge v2, v5, :cond_3
 
     .line 62
     .line 63
-    .line 64
-    move-result v2
+    aget-object v7, v0, v2
 
+    .line 64
     .line 65
-    int-to-float v2, v2
+    invoke-virtual {v7}, LyHg;->b()LHHg;
 
     .line 66
-    div-float/2addr p4, v2
-
     .line 67
-    int-to-float p3, p3
-
     .line 68
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
+    move-result-object v6
 
     .line 69
+    iget v6, v6, LHHg;->Y:I
+
     .line 70
     .line 71
-    move-result v2
+    if-nez v6, :cond_2
 
     .line 72
-    int-to-float v2, v2
-
     .line 73
-    mul-float v2, v2, p4
+    iget-object v6, v3, Lkx2;->d:Ljo3;
 
     .line 74
     .line 75
-    sub-float/2addr p3, v2
+    check-cast v6, Llo3;
 
     .line 76
-    mul-float p3, p3, v5
-
     .line 77
+    invoke-virtual {v6}, Llo3;->r()V
+
     .line 78
-    move v4, p3
-
     .line 79
-    const/4 p3, 0x0
-
     .line 80
-    goto :goto_0
+    :cond_2
+    new-instance v6, LGHg;
 
     .line 81
-    :cond_1
-    int-to-float p3, p3
-
     .line 82
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
+    iget-object v11, v1, LLw2;->b:Ljava/lang/String;
 
     .line 83
     .line 84
-    .line 85
-    move-result v2
+    iget-object v12, v1, LLw2;->i:Ljava/lang/String;
 
+    .line 85
     .line 86
-    int-to-float v2, v2
+    invoke-virtual {p1}, LTw8;->a()LTw8$a;
 
     .line 87
-    div-float/2addr p3, v2
-
     .line 88
-    int-to-float p4, p4
-
     .line 89
-    invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
+    move-result-object v8
 
     .line 90
+    iget-object v13, v8, LTw8$a;->t:Ljava/lang/String;
+
     .line 91
     .line 92
-    move-result v2
+    const/4 v9, 0x0
 
     .line 93
-    int-to-float v2, v2
+    iget v10, v1, LLw2;->g:I
 
     .line 94
-    mul-float v2, v2, p3
-
     .line 95
+    const/4 v8, 0x0
+
     .line 96
-    sub-float/2addr p4, v2
+    invoke-direct/range {v6 .. v13}, LGHg;-><init>(LyHg;[B[LOC9;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 97
-    mul-float p4, p4, v5
-
     .line 98
     .line 99
-    move v6, p4
+    invoke-virtual {v4, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 100
-    move p4, p3
-
     .line 101
-    move p3, v6
-
     .line 102
-    :goto_0
-    invoke-virtual {v1, p4, p4}, Landroid/graphics/Matrix;->setScale(FF)V
+    add-int/lit8 v2, v2, 0x1
 
     .line 103
     .line 104
+    goto :goto_1
+
     .line 105
-    add-float/2addr v4, v5
-
-    .line 106
-    float-to-int p4, v4
-
-    .line 107
-    int-to-float p4, p4
-
-    .line 108
-    add-float/2addr p3, v5
-
-    .line 109
-    float-to-int p3, p3
-
-    .line 110
-    int-to-float p3, p3
-
-    .line 111
-    invoke-virtual {v1, p4, p3}, Landroid/graphics/Matrix;->postTranslate(FF)Z
-
-    .line 112
-    .line 113
-    .line 114
-    new-instance p3, Landroid/graphics/Canvas;
-
-    .line 115
-    .line 116
-    invoke-direct {p3, p2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
-
-    .line 117
-    .line 118
-    .line 119
-    sget-object p2, Lgx2;->a:Landroid/graphics/Paint;
-
-    .line 120
-    .line 121
-    invoke-virtual {p3, v0, v1, p2}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;Landroid/graphics/Paint;)V
-
-    .line 122
-    .line 123
-    .line 124
-    const/4 p2, 0x0
-
-    .line 125
-    invoke-virtual {p3, p2}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
-
-    .line 126
-    .line 127
-    .line 128
-    return-object p1
-.end method
-
-.method public final getId()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "CenterCropTransformation"
-
-    .line 2
-    .line 3
-    return-object v0
+    :cond_3
+    return-object v4
 .end method

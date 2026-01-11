@@ -1,167 +1,128 @@
-.class public abstract Le63;
-.super Ljava/lang/Object;
+.class public final Le63;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
-# static fields
-.field public static final a:LtB6;
 
-.field public static final b:J
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LGs4;
+
+.field public final synthetic c:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 18
+.method public synthetic constructor <init>(LGs4;Ljava/lang/String;I)V
+    .locals 0
 
     .line 1
-    sget-object v0, LQ53;->Z:LQ53;
+    iput p3, p0, Le63;->a:I
+
+    iput-object p1, p0, Le63;->b:LGs4;
+
+    iput-object p2, p0, Le63;->c:Ljava/lang/String;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 7
+
+    .line 1
+    iget v0, p0, Le63;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    const-string v0, "ClientSearchIndexerProcessor"
+    check-cast p1, LEs4;
 
     .line 7
     .line 8
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iget-object v0, p0, Le63;->b:LGs4;
 
     .line 9
     .line 10
+    iget-object v4, v0, LGs4;->a:Ljava/lang/String;
+
     .line 11
-    sget-object v0, Lrn0;->a:Lrn0;
-
     .line 12
-    .line 13
-    new-instance v1, LtB6;
+    new-instance v1, LHs4;
 
+    .line 13
     .line 14
+    const/4 v6, 0x0
+
     .line 15
-    sget-object v3, LsL6;->a:LsL6;
+    iget-wide v2, p1, LEs4;->a:J
 
     .line 16
     .line 17
-    sget-object v4, LEB6;->b:LEB6;
+    iget-object v5, p0, Le63;->c:Ljava/lang/String;
 
     .line 18
     .line 19
-    new-instance v5, Lp7f;
+    invoke-direct/range {v1 .. v6}, LHs4;-><init>(JLjava/lang/String;Ljava/lang/String;Z)V
 
     .line 20
     .line 21
-    sget-object v6, Lv7f;->t:Lv7f;
-
     .line 22
+    return-object v1
+
     .line 23
-    const/4 v0, 0x5
+    :pswitch_0
+    check-cast p1, LEs4;
 
     .line 24
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 25
+    iget-object v0, p0, Le63;->b:LGs4;
+
     .line 26
     .line 27
-    move-result-object v9
+    iget-object v4, v0, LGs4;->a:Ljava/lang/String;
 
     .line 28
-    const/4 v10, 0x6
-
     .line 29
-    const-wide/16 v7, 0x0
+    new-instance v1, LHs4;
 
     .line 30
     .line 31
-    invoke-direct/range {v5 .. v10}, Lp7f;-><init>(Lv7f;JLjava/lang/Integer;I)V
+    const/4 v6, 0x1
 
     .line 32
+    iget-wide v2, p1, LEs4;->a:J
+
     .line 33
     .line 34
-    const/4 v14, 0x0
+    iget-object v5, p0, Le63;->c:Ljava/lang/String;
 
     .line 35
-    const/4 v15, 0x0
-
     .line 36
-    const/4 v2, 0x0
+    invoke-direct/range {v1 .. v6}, LHs4;-><init>(JLjava/lang/String;Ljava/lang/String;Z)V
 
     .line 37
-    move-object v7, v5
-
     .line 38
-    const/4 v5, 0x0
-
     .line 39
-    const/4 v6, 0x0
+    return-object v1
 
     .line 40
-    const/4 v8, 0x0
+    nop
 
     .line 41
-    const/4 v9, 0x0
-
-    .line 42
-    const/4 v10, 0x0
-
-    .line 43
-    const/4 v11, 0x0
-
-    .line 44
-    const/4 v12, 0x0
-
-    .line 45
-    const/4 v13, 0x0
-
-    .line 46
-    const/16 v16, 0x3fd9
-
-    .line 47
-    .line 48
-    const/16 v17, 0x0
-
-    .line 49
-    .line 50
-    invoke-direct/range {v1 .. v17}, LtB6;-><init>(ILjava/util/List;LEB6;Ljava/lang/String;Lnk9;Lp7f;LnCi;ZZLjava/lang/Boolean;Ljava/lang/String;LWD7;Lnk9;ZILHr5;)V
-
-    .line 51
-    .line 52
-    .line 53
-    sput-object v1, Le63;->a:LtB6;
-
-    .line 54
-    .line 55
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
-
-    .line 56
-    .line 57
-    const-wide/16 v1, 0x5
-
-    .line 58
-    .line 59
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-wide v0
-
-    .line 63
-    sput-wide v0, Le63;->b:J
-
-    .line 64
-    .line 65
-    return-void
-.end method
-
-.method public static final synthetic a()LtB6;
-    .locals 1
-
-    .line 1
-    sget-object v0, Le63;->a:LtB6;
-
-    .line 2
-    .line 3
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

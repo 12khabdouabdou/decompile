@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 7
 
     .line 1
@@ -60,7 +60,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-interface {p1, v4}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v4}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 8
     .line 9
@@ -107,7 +107,7 @@
     move-object v1, p1
 
     .line 31
-    invoke-direct/range {v0 .. v5}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRepeat$RepeatSubscriber;-><init>(LV6i;JLio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;LZne;)V
+    invoke-direct/range {v0 .. v5}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRepeat$RepeatSubscriber;-><init>(Lmvi;JLio/reactivex/rxjava3/internal/subscriptions/SubscriptionArbiter;LSFe;)V
 
     .line 32
     .line 33

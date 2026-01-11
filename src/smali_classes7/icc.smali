@@ -1,209 +1,207 @@
-.class public final Licc;
+.class public abstract Licc;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lpcc;
-
-.field public final synthetic c:Z
-
-.field public final synthetic t:J
+# static fields
+.field public static final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lpcc;ZJI)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    iput p5, p0, Licc;->a:I
-
-    iput-object p1, p0, Licc;->b:Lpcc;
-
-    iput-boolean p2, p0, Licc;->c:Z
-
-    iput-wide p3, p0, Licc;->t:J
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Licc;->a:I
+    const/4 v0, 0x2
 
     .line 2
+    const/4 v1, 0x0
+
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/4 v2, 0x1
 
     .line 4
+    new-instance v3, Li56;
+
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    invoke-direct {v3}, Li56;-><init>()V
 
     .line 7
     .line 8
-    iget-object p1, p0, Licc;->b:Lpcc;
-
     .line 9
+    const-string v4, "percgraph_snapcode_qrcode_opengl_model_0"
+
     .line 10
-    iget-object v0, p1, Lpcc;->x1:Lrn0;
-
     .line 11
+    iput-object v4, v3, Li56;->t:Ljava/lang/String;
+
     .line 12
-    iget-boolean v0, p0, Licc;->c:Z
-
     .line 13
+    iget v4, v3, Li56;->c:I
+
     .line 14
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     .line 15
-    .line 16
-    .line 17
-    move-result-object v0
+    or-int/2addr v4, v2
 
+    .line 16
+    iput v4, v3, Li56;->c:I
+
+    .line 17
     .line 18
-    iget-wide v1, p0, Licc;->t:J
+    const-string v4, "Ei8SFXhKMUpPMW9YYjZWbEt2akVDdjduRxoAGgAyAX06AQRCBgjb0e2kBkgCUBtgAQ=="
 
     .line 19
     .line 20
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    invoke-static {v4, v1}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     .line 21
     .line 22
     .line 23
-    move-result-object v1
+    move-result-object v4
 
     .line 24
-    const/4 v2, 0x0
+    iput v0, v3, Li56;->a:I
 
     .line 25
-    invoke-virtual {p1, v0, v1, v2}, Lpcc;->k0(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;)V
-
     .line 26
+    iput-object v4, v3, Li56;->b:[B
+
     .line 27
     .line 28
-    return-void
+    const-string v4, "0"
 
     .line 29
-    :pswitch_0
-    check-cast p1, Ljava/util/List;
-
     .line 30
-    .line 31
-    invoke-static {p1}, Lue3;->I0(Ljava/util/List;)Ljava/lang/Object;
+    const-string v5, "version"
 
+    .line 31
     .line 32
+    invoke-static {v5, v4}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
+
     .line 33
     .line 34
-    move-result-object p1
-
     .line 35
-    check-cast p1, LSlb;
+    move-result-object v4
 
     .line 36
+    iput-object v4, v3, Li56;->X:Ljava/util/Map;
+
     .line 37
-    if-eqz p1, :cond_0
-
     .line 38
-    .line 39
-    invoke-virtual {p1}, LSlb;->i()LSm2;
+    new-instance v4, LDpd;
 
+    .line 39
     .line 40
+    const-string v6, "snapcode_qrcode_opengl"
+
     .line 41
     .line 42
-    move-result-object p1
+    invoke-direct {v4, v6, v3}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 43
-    if-eqz p1, :cond_0
-
     .line 44
     .line 45
-    iget-object p1, p1, LSm2;->w:LbY9;
+    new-instance v3, Li56;
 
     .line 46
     .line 47
-    if-eqz p1, :cond_0
+    invoke-direct {v3}, Li56;-><init>()V
 
     .line 48
     .line 49
-    iget-object p1, p1, LbY9;->a:Ljava/lang/String;
-
     .line 50
-    .line 51
-    goto :goto_0
+    const-string v6, "fastdnn_snapcode_classification_default_BACKEND_LIBDNN_20"
 
+    .line 51
     .line 52
-    :cond_0
-    const/4 p1, 0x0
+    iput-object v6, v3, Li56;->t:Ljava/lang/String;
 
     .line 53
-    :goto_0
-    iget-object v0, p0, Licc;->b:Lpcc;
-
     .line 54
-    .line 55
-    iput-object p1, v0, Lpcc;->d1:Ljava/lang/String;
+    iget v6, v3, Li56;->c:I
 
+    .line 55
     .line 56
+    or-int/2addr v6, v2
+
     .line 57
-    iget-boolean p1, p0, Licc;->c:Z
+    iput v6, v3, Li56;->c:I
 
     .line 58
     .line 59
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    const-string v6, "Ei8SFUZvQUdnOTNSN0kzNXFieUFsNXgzeBoAGgAyAX06AQRCBgjP7ZeSBkgCUBtgAQ=="
 
     .line 60
     .line 61
+    invoke-static {v6, v1}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
     .line 62
-    move-result-object p1
-
     .line 63
-    iget-wide v1, p0, Licc;->t:J
-
     .line 64
+    move-result-object v6
+
     .line 65
-    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    iput v0, v3, Li56;->a:I
 
     .line 66
     .line 67
-    .line 68
-    move-result-object v1
+    iput-object v6, v3, Li56;->b:[B
 
+    .line 68
     .line 69
-    iget-object v2, v0, Lpcc;->d1:Ljava/lang/String;
+    const-string v6, "2"
 
     .line 70
     .line 71
-    if-nez v2, :cond_1
+    invoke-static {v5, v6}, Ljava/util/Collections;->singletonMap(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;
 
     .line 72
     .line 73
-    iget-object v2, v0, Lpcc;->e1:Ljava/lang/String;
-
     .line 74
+    move-result-object v5
+
     .line 75
-    :cond_1
-    invoke-virtual {v0, p1, v1, v2}, Lpcc;->k0(Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/String;)V
+    iput-object v5, v3, Li56;->X:Ljava/util/Map;
 
     .line 76
     .line 77
-    .line 78
-    return-void
+    new-instance v5, LDpd;
 
+    .line 78
     .line 79
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    const-string v6, "snapcode_classification_xs_v2"
+
+    .line 80
+    .line 81
+    invoke-direct {v5, v6, v3}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 82
+    .line 83
+    .line 84
+    new-array v0, v0, [LDpd;
+
+    .line 85
+    .line 86
+    aput-object v4, v0, v1
+
+    .line 87
+    .line 88
+    aput-object v5, v0, v2
+
+    .line 89
+    .line 90
+    invoke-static {v0}, Lkrb;->F0([LDpd;)Ljava/util/Map;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v0
+
+    .line 94
+    sput-object v0, Licc;->a:Ljava/lang/Object;
+
+    .line 95
+    .line 96
+    return-void
 .end method

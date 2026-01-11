@@ -1,42 +1,97 @@
 .class public abstract LQe1;
-.super Lio/reactivex/rxjava3/core/Single;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow;
+# static fields
+.field public static final a:J
 
-.field public final b:Lxe1;
+.field public static final b:J
 
-.field public final c:Z
+.field public static final synthetic c:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow;Lxe1;Z)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Lio/reactivex/rxjava3/core/Single;-><init>()V
+    new-instance v0, Log5;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LQe1;->a:Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow;
+    invoke-direct {v0}, LpN0;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LQe1;->b:Lxe1;
+    const/4 v1, 0x7
 
     .line 7
-    .line 8
-    iput-boolean p3, p0, LQe1;->c:Z
+    invoke-virtual {v0, v1}, Log5;->t(I)Log5;
 
+    .line 8
     .line 9
     .line 10
+    move-result-object v0
+
+    .line 11
+    iget-wide v2, v0, LpN0;->a:J
+
+    .line 12
+    .line 13
+    sput-wide v2, LQe1;->a:J
+
+    .line 14
+    .line 15
+    new-instance v0, Log5;
+
+    .line 16
+    .line 17
+    invoke-direct {v0}, LpN0;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    iget-object v2, v0, LpN0;->b:LIjj;
+
+    .line 21
+    .line 22
+    invoke-virtual {v2}, LIjj;->F0()LkG6;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v2
+
+    .line 26
+    iget-wide v3, v0, LpN0;->a:J
+
+    .line 27
+    .line 28
+    invoke-virtual {v2, v1, v3, v4}, LkG6;->a(IJ)J
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-wide v1
+
+    .line 32
+    invoke-virtual {v0, v1, v2}, Log5;->B(J)Log5;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v0
+
+    .line 36
+    iget-wide v0, v0, LpN0;->a:J
+
+    .line 37
+    .line 38
+    sput-wide v0, LQe1;->b:J
+
+    .line 39
+    .line 40
     return-void
-.end method
-
-
-# virtual methods
-.method public abstract L()J
 .end method

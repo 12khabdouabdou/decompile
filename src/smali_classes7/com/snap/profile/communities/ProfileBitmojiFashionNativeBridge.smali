@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Le4e;
+    proxyClass = LFle;
     schema = "\'getBitmojiFashionBannerURL\':f|m|(d): g<c>:\'[0]\'<s>,\'getBitmojiFashionDropId\':f|m|(s): g<c>:\'[0]\'<s>,\'openBitmojiAvatarBuilderDeeplink\':f?|m|(s),\'hasUserInteracted\':f?|m|(): b,\'updateUserInteracted\':f?|m|()"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;
@@ -43,12 +43,12 @@
 .end method
 
 .method public abstract hasUserInteracted()Z
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract openBitmojiAvatarBuilderDeeplink(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -56,6 +56,6 @@
 .end method
 
 .method public abstract updateUserInteracted()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

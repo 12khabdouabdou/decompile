@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lio/reactivex/rxjava3/core/FlowableSubscriber;
-.implements Lc7i;
+.implements Ltvi;
 .implements Lio/reactivex/rxjava3/functions/BooleanSupplier;
 
 
@@ -28,7 +28,7 @@
         "Ljava/util/concurrent/atomic/AtomicLong;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TT;>;",
-        "Lc7i;",
+        "Ltvi;",
         "Lio/reactivex/rxjava3/functions/BooleanSupplier;"
     }
 .end annotation
@@ -39,9 +39,9 @@
 
 .field public final Y:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-.field public Z:Lc7i;
+.field public Z:Ltvi;
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/internal/util/ArrayListSupplier;
 
@@ -59,7 +59,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
+.method public constructor <init>(Lmvi;IILio/reactivex/rxjava3/internal/util/ArrayListSupplier;)V
     .locals 0
 
     .line 1
@@ -68,7 +68,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -126,11 +126,11 @@
 
     .line 3
     .line 4
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Ltvi;
 
     .line 5
     .line 6
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 7
     .line 8
@@ -138,7 +138,7 @@
     return-void
 .end method
 
-.method public final g()Z
+.method public final f()Z
     .locals 1
 
     .line 1
@@ -231,7 +231,7 @@
 
     .line 39
     .line 40
-    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:LV6i;
+    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:Lmvi;
 
     .line 41
     .line 42
@@ -241,7 +241,7 @@
     move-object v5, p0
 
     .line 44
-    invoke-static/range {v1 .. v6}, Lio/reactivex/rxjava3/internal/util/QueueDrainHelper;->c(JLV6i;Ljava/util/ArrayDeque;Ljava/util/concurrent/atomic/AtomicLong;Lio/reactivex/rxjava3/functions/BooleanSupplier;)Z
+    invoke-static/range {v1 .. v6}, Lio/reactivex/rxjava3/internal/util/QueueDrainHelper;->c(JLmvi;Ljava/util/ArrayDeque;Ljava/util/concurrent/atomic/AtomicLong;Lio/reactivex/rxjava3/functions/BooleanSupplier;)Z
 
     .line 45
     .line 46
@@ -324,11 +324,11 @@
     move-result-wide p1
 
     .line 82
-    iget-object v0, v5, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Lc7i;
+    iget-object v0, v5, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Ltvi;
 
     .line 83
     .line 84
-    invoke-interface {v0, p1, p2}, Lc7i;->l(J)V
+    invoke-interface {v0, p1, p2}, Ltvi;->l(J)V
 
     .line 85
     .line 86
@@ -348,11 +348,11 @@
     move-result-wide p1
 
     .line 93
-    iget-object v0, v5, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Lc7i;
+    iget-object v0, v5, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Ltvi;
 
     .line 94
     .line 95
-    invoke-interface {v0, p1, p2}, Lc7i;->l(J)V
+    invoke-interface {v0, p1, p2}, Ltvi;->l(J)V
 
     .line 96
     .line 97
@@ -431,7 +431,7 @@
     move-result v0
 
     .line 26
-    iget-object v7, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:LV6i;
+    iget-object v7, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:Lmvi;
 
     .line 27
     .line 28
@@ -439,7 +439,7 @@
 
     .line 29
     .line 30
-    invoke-interface {v7}, LV6i;->onComplete()V
+    invoke-interface {v7}, Lmvi;->onComplete()V
 
     .line 31
     .line 32
@@ -462,7 +462,7 @@
     move-object v9, p0
 
     .line 40
-    invoke-static/range {v5 .. v10}, Lio/reactivex/rxjava3/internal/util/QueueDrainHelper;->c(JLV6i;Ljava/util/ArrayDeque;Ljava/util/concurrent/atomic/AtomicLong;Lio/reactivex/rxjava3/functions/BooleanSupplier;)Z
+    invoke-static/range {v5 .. v10}, Lio/reactivex/rxjava3/internal/util/QueueDrainHelper;->c(JLmvi;Ljava/util/ArrayDeque;Ljava/util/concurrent/atomic/AtomicLong;Lio/reactivex/rxjava3/functions/BooleanSupplier;)Z
 
     .line 41
     .line 42
@@ -536,7 +536,7 @@
     move-wide v5, v4
 
     .line 73
-    invoke-static/range {v5 .. v10}, Lio/reactivex/rxjava3/internal/util/QueueDrainHelper;->c(JLV6i;Ljava/util/ArrayDeque;Ljava/util/concurrent/atomic/AtomicLong;Lio/reactivex/rxjava3/functions/BooleanSupplier;)Z
+    invoke-static/range {v5 .. v10}, Lio/reactivex/rxjava3/internal/util/QueueDrainHelper;->c(JLmvi;Ljava/util/ArrayDeque;Ljava/util/concurrent/atomic/AtomicLong;Lio/reactivex/rxjava3/functions/BooleanSupplier;)Z
 
     .line 74
     .line 75
@@ -590,11 +590,11 @@
     .line 15
     .line 16
     .line 17
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:Lmvi;
 
     .line 18
     .line 19
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 20
     .line 21
@@ -744,11 +744,11 @@
 
     .line 67
     .line 68
-    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:LV6i;
+    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:Lmvi;
 
     .line 69
     .line 70
-    invoke-interface {v3, v1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v3, v1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 71
     .line 72
@@ -815,15 +815,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -835,15 +835,15 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->Z:Ltvi;
 
     .line 10
     .line 11
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableBuffer$PublisherBufferOverlappingSubscriber;->a:Lmvi;
 
     .line 12
     .line 13
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 14
     .line 15

@@ -4,19 +4,19 @@
 
 
 # instance fields
-.field private final nativeBridge:LShf;
+.field private final nativeBridge:LwAf;
 
-.field private final segmentationConfiguration:LIGf;
+.field private final segmentationConfiguration:Lh0g;
 
-.field private final segmentedMask:LTGf;
+.field private final segmentedMask:Lr0g;
 
 
 # direct methods
-.method public constructor <init>(LIGf;)V
-    .locals 13
+.method public constructor <init>(Lh0g;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LvBg;
+            Lm11;
         }
     .end annotation
 
@@ -26,135 +26,27 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LTGf;
+    new-instance p1, Lr0g;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:LTGf;
+    iput-object p1, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
 
     .line 10
     .line 11
-    iput-object p1, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentationConfiguration:LIGf;
+    invoke-static {}, Lcom/snapcv/segmentation/SegmentationWrapper;->checkNativeLibrariesLoaded()V
 
     .line 12
     .line 13
-    invoke-static {}, Lcom/snapcv/segmentation/SegmentationWrapper;->checkNativeLibrariesLoaded()V
-
     .line 14
+    const/4 p1, 0x0
+
     .line 15
-    .line 16
-    iget-object v2, p1, LIGf;->a:Ljava/lang/String;
-
-    .line 17
-    .line 18
-    const/high16 v9, 0x3f800000    # 1.0f
-
-    .line 19
-    .line 20
-    iget v10, p1, LIGf;->e:I
-
-    .line 21
-    .line 22
-    iget-object v3, p1, LIGf;->b:Ljava/lang/String;
-
-    .line 23
-    .line 24
-    const/4 v4, 0x0
-
-    .line 25
-    const/4 v5, 0x0
-
-    .line 26
-    iget-boolean v6, p1, LIGf;->c:Z
-
-    .line 27
-    .line 28
-    const/4 v7, 0x0
-
-    .line 29
-    iget v8, p1, LIGf;->d:F
-
-    .line 30
-    .line 31
-    iget v11, p1, LIGf;->f:I
-
-    .line 32
-    .line 33
-    const/16 v12, 0x168
-
-    .line 34
-    .line 35
-    move-object v1, p0
-
-    .line 36
-    invoke-direct/range {v1 .. v12}, Lcom/snapcv/segmentation/SegmentationWrapper;->nativeInit(Ljava/lang/String;Ljava/lang/String;ZZZZFFIII)J
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-wide v2
-
-    .line 40
-    const-wide/16 v4, 0x0
-
-    .line 41
-    .line 42
-    cmp-long p1, v2, v4
-
-    .line 43
-    .line 44
-    if-eqz p1, :cond_0
-
-    .line 45
-    .line 46
-    new-instance p1, LShf;
-
-    .line 47
-    .line 48
-    new-instance v0, LwVe;
-
-    .line 49
-    .line 50
-    const/16 v4, 0x13
-
-    .line 51
-    .line 52
-    invoke-direct {v0, v4, p0}, LwVe;-><init>(ILjava/lang/Object;)V
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-direct {p1, v2, v3, v0}, LShf;-><init>(JLjava/lang/Runnable;)V
-
-    .line 56
-    .line 57
-    .line 58
-    iput-object p1, v1, Lcom/snapcv/segmentation/SegmentationWrapper;->nativeBridge:LShf;
-
-    .line 59
-    .line 60
-    return-void
-
-    .line 61
-    :cond_0
-    new-instance p1, LvBg;
-
-    .line 62
-    .line 63
-    const-string v0, "Native init failed."
-
-    .line 64
-    .line 65
-    invoke-direct {p1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    .line 66
-    .line 67
-    .line 68
     throw p1
 .end method
 
@@ -174,12 +66,12 @@
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LvBg;
+            Lm11;
         }
     .end annotation
 
     .line 1
-    invoke-static {}, LBmc;->b()Z
+    invoke-static {}, LOBc;->a()Z
 
     .line 2
     .line 3
@@ -195,7 +87,7 @@
 
     .line 8
     :cond_0
-    new-instance v0, LvBg;
+    new-instance v0, Lm11;
 
     .line 9
     .line 10
@@ -225,11 +117,11 @@
 
 
 # virtual methods
-.method public getMask()LTGf;
-    .locals 7
+.method public getMask()Lr0g;
+    .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LvBg;
+            Lm11;
         }
     .end annotation
 
@@ -240,7 +132,7 @@
     const/4 v1, 0x0
 
     .line 3
-    iget-object v2, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:LTGf;
+    iget-object v2, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
 
     .line 4
     .line 5
@@ -267,11 +159,11 @@
 
     .line 14
     .line 15
-    iget-object v5, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:LTGf;
+    iget-object v5, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
 
     .line 16
     .line 17
-    iget-object v5, v5, LTGf;->a:Ljava/nio/ByteBuffer;
+    iget-object v5, v5, Lr0g;->a:Ljava/nio/ByteBuffer;
 
     .line 18
     .line 19
@@ -280,18 +172,18 @@
     .line 20
     .line 21
     .line 22
-    move-result-object v5
+    move-result-object v4
 
     .line 23
-    if-eqz v5, :cond_0
+    if-eqz v4, :cond_0
 
     .line 24
     .line 25
-    aget v6, v3, v1
+    aget v1, v3, v1
 
     .line 26
     .line 27
-    if-lez v6, :cond_0
+    if-lez v1, :cond_0
 
     .line 28
     .line 29
@@ -303,66 +195,68 @@
 
     .line 32
     .line 33
-    iget-object v3, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:LTGf;
+    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
 
     .line 34
     .line 35
-    iput-object v5, v3, LTGf;->a:Ljava/nio/ByteBuffer;
+    iput-object v4, v0, Lr0g;->a:Ljava/nio/ByteBuffer;
 
     .line 36
     .line 37
-    iput v6, v3, LTGf;->b:I
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 38
     .line 39
-    iput v0, v3, LTGf;->c:I
-
     .line 40
+    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
+
     .line 41
-    aget v0, v4, v1
-
     .line 42
-    .line 43
-    iput v0, v3, LTGf;->d:F
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 43
     .line 44
     .line 45
-    monitor-exit v2
+    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
 
     .line 46
-    return-object v3
-
     .line 47
+    monitor-exit v2
+
+    .line 48
+    return-object v0
+
+    .line 49
     :catchall_0
     move-exception v0
 
-    .line 48
+    .line 50
     goto :goto_0
 
-    .line 49
-    :cond_0
-    new-instance v0, LvBg;
-
-    .line 50
     .line 51
-    const-string v1, "Get mask failed. Get NULL mask buffer."
+    :cond_0
+    new-instance v0, Lm11;
 
     .line 52
     .line 53
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    const-string v1, "Get mask failed. Get NULL mask buffer."
 
     .line 54
     .line 55
+    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
     .line 56
+    .line 57
+    .line 58
     throw v0
 
-    .line 57
+    .line 59
     :goto_0
     monitor-exit v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 58
+    .line 60
     throw v0
 .end method
 
@@ -370,11 +264,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->nativeBridge:LShf;
+    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->nativeBridge:LwAf;
 
     .line 2
     .line 3
-    iget-wide v0, v0, LShf;->b:J
+    iget-wide v0, v0, LwAf;->b:J
 
     .line 4
     .line 5
@@ -385,11 +279,11 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->nativeBridge:LShf;
+    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->nativeBridge:LwAf;
 
     .line 2
     .line 3
-    iget-object v1, v0, LShf;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, v0, LwAf;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     .line 5
@@ -411,7 +305,7 @@
 
     .line 12
     .line 13
-    iget-object v0, v0, LShf;->c:Ljava/lang/Runnable;
+    iget-object v0, v0, LwAf;->c:Ljava/lang/Runnable;
 
     .line 14
     .line 15
@@ -421,14 +315,14 @@
     .line 17
     .line 18
     :cond_0
-    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:LTGf;
+    iget-object v0, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
 
     .line 19
     .line 20
     const/4 v1, 0x0
 
     .line 21
-    iput-object v1, v0, LTGf;->a:Ljava/nio/ByteBuffer;
+    iput-object v1, v0, Lr0g;->a:Ljava/nio/ByteBuffer;
 
     .line 22
     .line 23
@@ -439,7 +333,7 @@
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LvBg;
+            Lm11;
         }
     .end annotation
 
@@ -470,7 +364,7 @@
 
     .line 12
     :cond_0
-    new-instance p1, LvBg;
+    new-instance p1, Lm11;
 
     .line 13
     .line 14
@@ -503,7 +397,7 @@
 
     .line 25
     :goto_1
-    iget-object v8, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:LTGf;
+    iget-object v8, p0, Lcom/snapcv/segmentation/SegmentationWrapper;->segmentedMask:Lr0g;
 
     .line 26
     .line 27
@@ -555,7 +449,7 @@
 
     .line 44
     :cond_3
-    new-instance p1, LvBg;
+    new-instance p1, Lm11;
 
     .line 45
     .line 46

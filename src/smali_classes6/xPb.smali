@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements LDBe;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LAPb;
+.field public final synthetic b:LBPb;
 
 
 # direct methods
-.method public synthetic constructor <init>(LAPb;I)V
+.method public synthetic constructor <init>(LBPb;I)V
     .locals 0
 
     .line 1
     iput p2, p0, LxPb;->a:I
 
-    iput-object p1, p0, LxPb;->b:LAPb;
+    iput-object p1, p0, LxPb;->b:LBPb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,8 +28,8 @@
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final get()Ljava/lang/Object;
+    .locals 1
 
     .line 1
     iget v0, p0, LxPb;->a:I
@@ -41,19 +41,19 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/util/Map;
+    iget-object v0, p0, LxPb;->b:LBPb;
 
     .line 7
     .line 8
-    iget-object v0, p0, LxPb;->b:LAPb;
+    iget-object v0, v0, LBPb;->L0:LSch;
 
     .line 9
     .line 10
-    iget-object v0, v0, LAPb;->l:LfY4;
+    if-eqz v0, :cond_0
 
     .line 11
     .line 12
-    invoke-virtual {v0}, LfY4;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LSch;->c()LRch;
 
     .line 13
     .line 14
@@ -61,96 +61,179 @@
     move-result-object v0
 
     .line 16
-    check-cast v0, Lnmj;
+    invoke-interface {v0}, LRch;->a()Z
 
     .line 17
     .line 18
-    invoke-virtual {v0, p1}, Lnmj;->a(Ljava/util/Map;)Lio/reactivex/rxjava3/core/Observable;
-
     .line 19
+    move-result v0
+
     .line 20
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 21
-    move-result-object p1
-
     .line 22
-    return-object p1
-
     .line 23
-    :pswitch_0
-    check-cast p1, Lhad;
+    move-result-object v0
 
     .line 24
+    return-object v0
+
     .line 25
-    iget-object v0, p1, Lhad;->a:Ljava/lang/Object;
+    :cond_0
+    const-string v0, "snapTabPolicy"
 
     .line 26
     .line 27
-    check-cast v0, Ljava/util/Map;
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 28
     .line 29
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
-
     .line 30
+    const/4 v0, 0x0
+
     .line 31
-    check-cast p1, Ljava/util/List;
+    throw v0
 
     .line 32
+    :pswitch_0
+    iget-object v0, p0, LxPb;->b:LBPb;
+
     .line 33
-    iget-object v1, p0, LxPb;->b:LAPb;
-
     .line 34
+    iget-object v0, v0, LA7k;->c:Lsw;
+
     .line 35
-    iget-object v1, v1, LAPb;->l:LfY4;
-
     .line 36
-    .line 37
-    invoke-virtual {v1}, LfY4;->get()Ljava/lang/Object;
+    check-cast v0, LCPb;
 
+    .line 37
     .line 38
+    iget-boolean v0, v0, LCPb;->z0:Z
+
     .line 39
     .line 40
-    move-result-object v1
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 41
-    check-cast v1, Lnmj;
-
     .line 42
     .line 43
-    invoke-virtual {v1, v0}, Lnmj;->a(Ljava/util/Map;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 44
-    .line 45
-    .line 46
     move-result-object v0
 
+    .line 44
+    return-object v0
+
+    .line 45
+    :pswitch_1
+    iget-object v0, p0, LxPb;->b:LBPb;
+
+    .line 46
     .line 47
-    new-instance v1, LAj4;
+    iget-object v0, v0, LA7k;->c:Lsw;
 
     .line 48
     .line 49
-    const/4 v2, 0x4
+    check-cast v0, LCPb;
 
     .line 50
-    invoke-direct {v1, p1, v2}, LAj4;-><init>(Ljava/util/List;I)V
-
     .line 51
+    iget-object v0, v0, LCPb;->g0:Lteh;
+
     .line 52
     .line 53
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    return-object v0
 
     .line 54
-    .line 55
-    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    :pswitch_2
+    iget-object v0, p0, LxPb;->b:LBPb;
 
+    .line 55
     .line 56
+    invoke-virtual {v0}, LA7k;->r()LSV6;
+
     .line 57
     .line 58
-    return-object p1
-
     .line 59
+    move-result-object v0
+
+    .line 60
+    return-object v0
+
+    .line 61
+    :pswitch_3
+    iget-object v0, p0, LxPb;->b:LBPb;
+
+    .line 62
+    .line 63
+    iget-object v0, v0, LA7k;->c:Lsw;
+
+    .line 64
+    .line 65
+    check-cast v0, LCPb;
+
+    .line 66
+    .line 67
+    iget-object v0, v0, LCPb;->o0:LGI8;
+
+    .line 68
+    .line 69
+    return-object v0
+
+    .line 70
+    :pswitch_4
+    iget-object v0, p0, LxPb;->b:LBPb;
+
+    .line 71
+    .line 72
+    iget-object v0, v0, LA7k;->c:Lsw;
+
+    .line 73
+    .line 74
+    check-cast v0, LCPb;
+
+    .line 75
+    .line 76
+    invoke-virtual {v0}, LCPb;->y()LFLb;
+
+    .line 77
+    .line 78
+    .line 79
+    move-result-object v0
+
+    .line 80
+    return-object v0
+
+    .line 81
+    :pswitch_5
+    iget-object v0, p0, LxPb;->b:LBPb;
+
+    .line 82
+    .line 83
+    iget-object v0, v0, LA7k;->c:Lsw;
+
+    .line 84
+    .line 85
+    check-cast v0, LCPb;
+
+    .line 86
+    .line 87
+    iget-object v0, v0, LCPb;->y0:Landroid/net/Uri;
+
+    .line 88
+    .line 89
+    return-object v0
+
+    .line 90
+    nop
+
+    .line 91
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

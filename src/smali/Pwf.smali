@@ -1,219 +1,108 @@
-.class public final enum LPwf;
-.super Ljava/lang/Enum;
+.class public final LPwf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-# static fields
-.field public static final enum X:LPwf;
 
-.field public static final enum Y:LPwf;
+# instance fields
+.field public final a:Lq25;
 
-.field public static final synthetic Z:[LPwf;
+.field public final b:Lq25;
 
-.field public static final enum a:LPwf;
+.field public final c:Z
 
-.field public static final enum b:LPwf;
-
-.field public static final enum c:LPwf;
-
-.field public static final enum t:LPwf;
+.field public final t:LREi;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 13
+.method public constructor <init>(Lq25;Lq25;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x4
-
     .line 3
-    const/4 v2, 0x3
-
     .line 4
-    const/4 v3, 0x2
+    iput-object p1, p0, LPwf;->a:Lq25;
 
     .line 5
-    const/4 v4, 0x1
-
     .line 6
-    const/4 v5, 0x0
+    iput-object p2, p0, LPwf;->b:Lq25;
 
     .line 7
-    new-instance v6, LPwf;
-
     .line 8
+    sget-object p1, LUc4;->Z:LUc4;
+
     .line 9
-    const-string v7, "ON_CREATE"
-
     .line 10
-    .line 11
-    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 11
     .line 12
     .line 13
+    const-string p1, "RxUndeliverableExceptionConsumer"
+
     .line 14
-    sput-object v6, LPwf;->a:LPwf;
-
     .line 15
-    .line 16
-    new-instance v7, LPwf;
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 16
     .line 17
     .line 18
-    const-string v8, "ON_START"
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 19
     .line 20
-    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 p1, 0x1
 
     .line 21
+    iput-boolean p1, p0, LPwf;->c:Z
+
     .line 22
     .line 23
-    sput-object v7, LPwf;->b:LPwf;
+    new-instance p1, LvAc;
 
     .line 24
     .line 25
-    new-instance v8, LPwf;
+    const/16 p2, 0x1d
 
     .line 26
     .line 27
-    const-string v9, "ON_RESUME"
+    invoke-direct {p1, p2, p0}, LvAc;-><init>(ILjava/lang/Object;)V
 
     .line 28
     .line 29
-    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 30
+    new-instance p2, LREi;
+
     .line 31
     .line 32
-    sput-object v8, LPwf;->c:LPwf;
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 33
     .line 34
-    new-instance v9, LPwf;
-
     .line 35
+    iput-object p2, p0, LPwf;->t:LREi;
+
     .line 36
-    const-string v10, "ON_PAUSE"
-
     .line 37
-    .line 38
-    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 39
-    .line 40
-    .line 41
-    sput-object v9, LPwf;->t:LPwf;
-
-    .line 42
-    .line 43
-    new-instance v10, LPwf;
-
-    .line 44
-    .line 45
-    const-string v11, "ON_STOP"
-
-    .line 46
-    .line 47
-    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 48
-    .line 49
-    .line 50
-    sput-object v10, LPwf;->X:LPwf;
-
-    .line 51
-    .line 52
-    new-instance v11, LPwf;
-
-    .line 53
-    .line 54
-    const-string v12, "ON_DESTROY"
-
-    .line 55
-    .line 56
-    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 57
-    .line 58
-    .line 59
-    sput-object v11, LPwf;->Y:LPwf;
-
-    .line 60
-    .line 61
-    const/4 v12, 0x6
-
-    .line 62
-    new-array v12, v12, [LPwf;
-
-    .line 63
-    .line 64
-    aput-object v6, v12, v5
-
-    .line 65
-    .line 66
-    aput-object v7, v12, v4
-
-    .line 67
-    .line 68
-    aput-object v8, v12, v3
-
-    .line 69
-    .line 70
-    aput-object v9, v12, v2
-
-    .line 71
-    .line 72
-    aput-object v10, v12, v1
-
-    .line 73
-    .line 74
-    aput-object v11, v12, v0
-
-    .line 75
-    .line 76
-    sput-object v12, LPwf;->Z:[LPwf;
-
-    .line 77
-    .line 78
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LPwf;
-    .locals 1
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 5
 
     .line 1
-    const-class v0, LPwf;
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LPwf;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LPwf;
-    .locals 1
-
-    .line 1
-    sget-object v0, LPwf;->Z:[LPwf;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     .line 4
     .line 5
@@ -221,9 +110,561 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, [LPwf;
+    const/4 v1, 0x0
 
     .line 8
+    if-nez v0, :cond_0
+
     .line 9
-    return-object v0
+    .line 10
+    new-array v0, v1, [Ljava/lang/StackTraceElement;
+
+    .line 11
+    .line 12
+    invoke-virtual {p1, v0}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+
+    .line 13
+    .line 14
+    .line 15
+    :cond_0
+    instance-of v0, p1, Lio/reactivex/rxjava3/exceptions/UndeliverableException;
+
+    .line 16
+    .line 17
+    const/4 v2, 0x1
+
+    .line 18
+    if-eqz v0, :cond_1
+
+    .line 19
+    .line 20
+    goto :goto_2
+
+    .line 21
+    :cond_1
+    instance-of v0, p1, Ljava/lang/IllegalStateException;
+
+    .line 22
+    .line 23
+    if-eqz v0, :cond_2
+
+    .line 24
+    .line 25
+    const/4 v0, 0x1
+
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :cond_2
+    instance-of v0, p1, Ljava/lang/NullPointerException;
+
+    .line 28
+    .line 29
+    :goto_0
+    if-eqz v0, :cond_3
+
+    .line 30
+    .line 31
+    const/4 v0, 0x1
+
+    .line 32
+    goto :goto_1
+
+    .line 33
+    :cond_3
+    instance-of v0, p1, Ljava/lang/IllegalArgumentException;
+
+    .line 34
+    .line 35
+    :goto_1
+    if-eqz v0, :cond_4
+
+    .line 36
+    .line 37
+    new-instance v0, Lio/reactivex/rxjava3/exceptions/UndeliverableException;
+
+    .line 38
+    .line 39
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/exceptions/UndeliverableException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 40
+    .line 41
+    .line 42
+    move-object p1, v0
+
+    .line 43
+    :cond_4
+    :goto_2
+    nop
+
+    .line 44
+    instance-of v0, p1, Lio/reactivex/rxjava3/exceptions/UndeliverableException;
+
+    .line 45
+    .line 46
+    if-eqz v0, :cond_8
+
+    .line 47
+    .line 48
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v3
+
+    .line 52
+    instance-of v4, v3, LAl5;
+
+    .line 53
+    .line 54
+    if-eqz v4, :cond_5
+
+    .line 55
+    .line 56
+    :goto_3
+    const/4 v3, 0x1
+
+    .line 57
+    goto :goto_4
+
+    .line 58
+    :cond_5
+    instance-of v3, v3, LHx9;
+
+    .line 59
+    .line 60
+    if-eqz v3, :cond_6
+
+    .line 61
+    .line 62
+    goto :goto_3
+
+    .line 63
+    :cond_6
+    const/4 v3, 0x0
+
+    .line 64
+    :goto_4
+    if-eqz v3, :cond_8
+
+    .line 65
+    .line 66
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v0
+
+    .line 70
+    if-nez v0, :cond_7
+
+    .line 71
+    .line 72
+    goto :goto_5
+
+    .line 73
+    :cond_7
+    move-object p1, v0
+
+    .line 74
+    :goto_5
+    throw p1
+
+    .line 75
+    :cond_8
+    if-eqz v0, :cond_13
+
+    .line 76
+    .line 77
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v0
+
+    .line 81
+    iget-boolean v3, p0, LPwf;->c:Z
+
+    .line 82
+    .line 83
+    if-eqz v3, :cond_a
+
+    .line 84
+    .line 85
+    :cond_9
+    :goto_6
+    const/4 v1, 0x1
+
+    .line 86
+    goto :goto_7
+
+    .line 87
+    :cond_a
+    instance-of v3, v0, LHc7;
+
+    .line 88
+    .line 89
+    if-eqz v3, :cond_b
+
+    .line 90
+    .line 91
+    goto :goto_6
+
+    .line 92
+    :cond_b
+    instance-of v3, v0, LNzb;
+
+    .line 93
+    .line 94
+    if-eqz v3, :cond_c
+
+    .line 95
+    .line 96
+    goto :goto_6
+
+    .line 97
+    :cond_c
+    instance-of v3, v0, Lzp0;
+
+    .line 98
+    .line 99
+    if-nez v3, :cond_9
+
+    .line 100
+    .line 101
+    instance-of v3, v0, LiCc;
+
+    .line 102
+    .line 103
+    if-eqz v3, :cond_d
+
+    .line 104
+    .line 105
+    goto :goto_6
+
+    .line 106
+    :cond_d
+    instance-of v3, v0, LW0f;
+
+    .line 107
+    .line 108
+    if-eqz v3, :cond_e
+
+    .line 109
+    .line 110
+    goto :goto_6
+
+    .line 111
+    :cond_e
+    instance-of v3, v0, Lh3k;
+
+    .line 112
+    .line 113
+    if-eqz v3, :cond_f
+
+    .line 114
+    .line 115
+    goto :goto_6
+
+    .line 116
+    :cond_f
+    instance-of v3, v0, Ljava/sql/SQLException;
+
+    .line 117
+    .line 118
+    if-eqz v3, :cond_10
+
+    .line 119
+    .line 120
+    goto :goto_6
+
+    .line 121
+    :cond_10
+    instance-of v3, v0, LA2k;
+
+    .line 122
+    .line 123
+    if-eqz v3, :cond_11
+
+    .line 124
+    .line 125
+    goto :goto_6
+
+    .line 126
+    :cond_11
+    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 127
+    .line 128
+    const/16 v4, 0x18
+
+    .line 129
+    .line 130
+    if-lt v3, v4, :cond_12
+
+    .line 131
+    .line 132
+    invoke-static {v0}, LkW;->y(Ljava/lang/Throwable;)Z
+
+    .line 133
+    .line 134
+    .line 135
+    move-result v0
+
+    .line 136
+    if-eqz v0, :cond_12
+
+    .line 137
+    .line 138
+    goto :goto_6
+
+    .line 139
+    :cond_12
+    :goto_7
+    if-eqz v1, :cond_13
+
+    .line 140
+    .line 141
+    return-void
+
+    .line 142
+    :cond_13
+    instance-of v0, p1, Lio/reactivex/rxjava3/exceptions/CompositeException;
+
+    .line 143
+    .line 144
+    if-eqz v0, :cond_14
+
+    .line 145
+    .line 146
+    const-string v0, "CompositeException"
+
+    .line 147
+    .line 148
+    invoke-virtual {p0, v0, p1}, LPwf;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 149
+    .line 150
+    .line 151
+    return-void
+
+    .line 152
+    :cond_14
+    instance-of v0, p1, Lio/reactivex/rxjava3/exceptions/OnErrorNotImplementedException;
+
+    .line 153
+    .line 154
+    if-eqz v0, :cond_17
+
+    .line 155
+    .line 156
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 157
+    .line 158
+    .line 159
+    move-result-object v0
+
+    .line 160
+    instance-of v0, v0, LUc7;
+
+    .line 161
+    .line 162
+    if-eqz v0, :cond_15
+
+    .line 163
+    .line 164
+    const-string v0, "OnErrorNotImplementedException"
+
+    .line 165
+    .line 166
+    invoke-virtual {p0, v0, p1}, LPwf;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 167
+    .line 168
+    .line 169
+    return-void
+
+    .line 170
+    :cond_15
+    iget-object v0, p0, LPwf;->t:LREi;
+
+    .line 171
+    .line 172
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 173
+    .line 174
+    .line 175
+    move-result-object v0
+
+    .line 176
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 177
+    .line 178
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 179
+    .line 180
+    .line 181
+    move-result v0
+
+    .line 182
+    if-eqz v0, :cond_16
+
+    .line 183
+    .line 184
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+
+    .line 185
+    .line 186
+    .line 187
+    move-result-object v0
+
+    .line 188
+    instance-of v0, v0, Lbv3;
+
+    .line 189
+    .line 190
+    if-eqz v0, :cond_16
+
+    .line 191
+    .line 192
+    const-string v0, "CompletablesubscribeAndReleaseReason"
+
+    .line 193
+    .line 194
+    invoke-virtual {p0, v0, p1}, LPwf;->b(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 195
+    .line 196
+    .line 197
+    return-void
+
+    .line 198
+    :cond_16
+    throw p1
+
+    .line 199
+    :cond_17
+    throw p1
+.end method
+
+.method public final b(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .locals 3
+
+    .line 1
+    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    move-object p1, v0
+
+    .line 9
+    :goto_0
+    invoke-static {}, LuVi;->a()Lnp0;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    if-eqz v0, :cond_1
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, p1}, Lnp0;->a(Ljava/lang/String;)Lnp0;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    goto :goto_1
+
+    .line 20
+    :cond_1
+    sget-object v0, LSMi;->Z:LSMi;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 23
+    .line 24
+    .line 25
+    new-instance v1, Lnp0;
+
+    .line 26
+    .line 27
+    invoke-direct {v1, v0, p1}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
+    .line 28
+    .line 29
+    .line 30
+    move-object p1, v1
+
+    .line 31
+    :goto_1
+    iget-object v0, p0, LPwf;->a:Lq25;
+
+    .line 32
+    .line 33
+    invoke-virtual {v0}, Lq25;->get()Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    check-cast v0, LjX6;
+
+    .line 38
+    .line 39
+    new-instance v1, LtU6;
+
+    .line 40
+    .line 41
+    invoke-direct {v1}, LtU6;-><init>()V
+
+    .line 42
+    .line 43
+    .line 44
+    const/4 v2, 0x1
+
+    .line 45
+    invoke-virtual {v1, v2}, LtU6;->setNonFatalAssert(I)LtU6;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v1
+
+    .line 49
+    invoke-static {v0, v1, p2, p1}, LdWk;->e(LjX6;LtU6;Ljava/lang/Throwable;Lnp0;)V
+
+    .line 50
+    .line 51
+    .line 52
+    return-void
 .end method

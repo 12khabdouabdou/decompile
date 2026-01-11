@@ -1,35 +1,35 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
-.field public final c:LFZ0;
+.field public final c:Lq31;
 
-.field public final d:LVj6;
+.field public final d:LFe6;
 
 
 # direct methods
-.method public constructor <init>(LdXc;LFZ0;LVj6;)V
+.method public constructor <init>(LYbd;Lq31;LFe6;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LdXc;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LYbd;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:LFZ0;
+    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:Lq31;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LVj6;
+    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LFe6;
 
     .line 9
     .line 10
@@ -38,11 +38,11 @@
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LYbd;
 
     .line 2
     .line 3
@@ -77,15 +77,15 @@
 
     .line 10
     .line 11
-    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LdXc;
+    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LYbd;
 
     .line 12
     .line 13
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LYbd;
 
     .line 14
     .line 15
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 16
     .line 17
@@ -101,15 +101,15 @@
 
     .line 22
     :cond_2
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:LFZ0;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:Lq31;
 
     .line 23
     .line 24
-    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:LFZ0;
+    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:Lq31;
 
     .line 25
     .line 26
-    invoke-static {v0, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 27
     .line 28
@@ -125,11 +125,11 @@
 
     .line 33
     :cond_3
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LVj6;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LFe6;
 
     .line 34
     .line 35
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LVj6;
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LFe6;
 
     .line 36
     .line 37
@@ -163,15 +163,15 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LYbd;
 
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     move-result v0
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:LFZ0;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:Lq31;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -181,7 +181,7 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LVj6;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LFe6;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -201,7 +201,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -209,7 +209,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:LFZ0;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->c:Lq31;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -217,7 +217,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LVj6;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageSnapshotCreated;->d:LFe6;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

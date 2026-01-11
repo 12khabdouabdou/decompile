@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'displayName\':s,\'lastSeen\':s,\'userId\':s,\'isSharingLiveLocation\':b@?,\'isSelf\':b,\'isBirthday\':b,\'shouldShowShareLocationButton\':b,\'isSeenJustNow\':b,\'hasUnreadChat\':b,\'receivingLiveLocationStatus\':r?<e>:\'[0]\',\'isLiveSessionIndefinite\':b@?,\'avatarId\':s?,\'selfieId\':s?,\'storySummary\':r?:\'[1]\',\'conversationStatus\':r?:\'[2]\',\'liveLocationExpirationText\':s?,\'lastSeenLocationText\':s?,\'petAssetUrl\':s?,\'petName\':s?"
     typeReferences = {
@@ -331,6 +331,28 @@
     .locals 0
 
     .line 1
+    iput-object p1, p0, Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;->_petAssetUrl:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final m(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;->_petName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final n(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
     iput-object p1, p0, Lcom/snap/map_friend_focus_view/MapFocusViewFriendSectionDataModel;->_selfieId:Ljava/lang/String;
 
     .line 2
@@ -338,7 +360,7 @@
     return-void
 .end method
 
-.method public final m(Lcom/snap/composer/stories/StorySummaryInfo;)V
+.method public final o(Lcom/snap/composer/stories/StorySummaryInfo;)V
     .locals 0
 
     .line 1

@@ -1,146 +1,105 @@
-.class public abstract synthetic LCt1;
+.class public abstract LCt1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final a:LBt1;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 7
 
     .line 1
-    invoke-static {}, Lmv1;->values()[Lmv1;
+    new-instance v0, LBt1;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    sget-object v3, LgP6;->a:LgP6;
 
+    .line 4
     .line 5
-    array-length v0, v0
+    const/4 v6, 0x0
 
     .line 6
-    new-array v0, v0, [I
+    const-string v1, ""
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    const/4 v4, 0x0
 
     .line 9
-    :try_start_0
-    sget-object v2, Lmv1;->b:Lmv1;
+    const/4 v5, 0x0
+
+    .line 10
+    const-string v2, ""
+
+    .line 11
+    .line 12
+    invoke-direct/range {v0 .. v6}, LBt1;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;ZZZ)V
+
+    .line 13
+    .line 14
+    .line 15
+    sput-object v0, LCt1;->a:LBt1;
+
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public static final a(LBt1;)Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;
+    .locals 5
+
+    .line 1
+    new-instance v0, Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;
+
+    .line 2
+    .line 3
+    iget-boolean v1, p0, LBt1;->a:Z
+
+    .line 4
+    .line 5
+    iget-boolean v2, p0, LBt1;->c:Z
+
+    .line 6
+    .line 7
+    iget-object v3, p0, LBt1;->d:Ljava/util/List;
+
+    .line 8
+    .line 9
+    iget-boolean v4, p0, LBt1;->b:Z
 
     .line 10
     .line 11
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {v0, v3, v1, v4, v2}, Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;-><init>(Ljava/util/List;ZZZ)V
 
     .line 12
     .line 13
     .line 14
-    move-result v2
+    iget-object v1, p0, LBt1;->e:Ljava/lang/String;
 
     .line 15
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
+    invoke-virtual {v0, v1}, Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;->b(Ljava/lang/String;)V
+
     .line 17
-    :catch_0
-    const/4 v2, 0x2
-
     .line 18
-    :try_start_1
-    sget-object v3, Lmv1;->c:Lmv1;
-
     .line 19
-    .line 20
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    iget-object p0, p0, LBt1;->f:Ljava/lang/String;
 
+    .line 20
     .line 21
+    invoke-virtual {v0, p0}, Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;->a(Ljava/lang/String;)V
+
     .line 22
     .line 23
-    move-result v3
-
     .line 24
-    aput v2, v0, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    invoke-virtual {v0}, Lcom/snap/unifiedpublicprofile/CameosPublisherConfig;->c()V
 
     .line 25
     .line 26
-    :catch_1
-    const/4 v3, 0x3
-
     .line 27
-    :try_start_2
-    sget-object v4, Lmv1;->t:Lmv1;
-
-    .line 28
-    .line 29
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
-
-    .line 30
-    .line 31
-    .line 32
-    move-result v4
-
-    .line 33
-    aput v3, v0, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 34
-    .line 35
-    :catch_2
-    sput-object v0, LCt1;->a:[I
-
-    .line 36
-    .line 37
-    invoke-static {}, Lvb8;->values()[Lvb8;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v0
-
-    .line 41
-    array-length v0, v0
-
-    .line 42
-    new-array v0, v0, [I
-
-    .line 43
-    .line 44
-    :try_start_3
-    aput v1, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 45
-    .line 46
-    :catch_3
-    :try_start_4
-    aput v2, v0, v2
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 47
-    .line 48
-    :catch_4
-    const/4 v1, 0x0
-
-    .line 49
-    :try_start_5
-    aput v3, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 50
-    .line 51
-    :catch_5
-    return-void
+    return-object v0
 .end method

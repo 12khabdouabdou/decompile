@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LlV8;
+    proxyClass = LN29;
     schema = "\'loadLyricsStickerBoltForMedia\':f|m|(a<r:\'[0]\'>): g<c>:\'[1]\'<a<r:\'[2]\'>>"
     typeReferences = {
-        LYbc;,
+        LNqc;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
         Lcom/snap/music/core/composer/MusicStickerLottieData;
     }
@@ -25,7 +25,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LYbc;",
+            "LNqc;",
             ">;)",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",

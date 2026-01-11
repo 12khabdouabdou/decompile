@@ -1,113 +1,333 @@
 .class public final Lgtk;
-.super Ljava/lang/Object;
+.super Lwwk;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
 
+# instance fields
+.field public final synthetic b:I
 
-# static fields
-.field public static final a:Lgtk;
+.field public final synthetic c:Ljava/lang/Object;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
+    .locals 0
 
     .line 1
-    new-instance v0, Lgtk;
+    iput p1, p0, Lgtk;->b:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lgtk;->c:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lgtk;->a:Lgtk;
+    invoke-direct {p0}, Lwwk;-><init>()V
 
-    .line 7
-    .line 8
-    new-instance v0, LFhk;
-
-    .line 9
-    .line 10
-    const/4 v1, 0x1
-
-    .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    const-class v1, LUhk;
-
-    .line 15
-    .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 30
-    .line 31
-    .line 32
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final b()V
+    .locals 5
 
     .line 1
-    if-nez p1, :cond_0
+    iget v0, p0, Lgtk;->b:I
 
     .line 2
     .line 3
-    check-cast p2, LQJc;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const/4 p1, 0x0
-
     .line 6
-    throw p1
+    iget-object v0, p0, Lgtk;->c:Ljava/lang/Object;
 
     .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
     .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    check-cast v0, Ljtk;
 
+    .line 9
     .line 10
+    iget-object v0, v0, Ljtk;->f:Ljava/lang/Object;
+
     .line 11
     .line 12
-    throw p1
+    monitor-enter v0
+
+    .line 13
+    :try_start_0
+    iget-object v1, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 14
+    .line 15
+    check-cast v1, Ljtk;
+
+    .line 16
+    .line 17
+    iget-object v1, v1, Ljtk;->l:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 18
+    .line 19
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    const/4 v2, 0x0
+
+    .line 24
+    if-lez v1, :cond_0
+
+    .line 25
+    .line 26
+    iget-object v1, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    check-cast v1, Ljtk;
+
+    .line 29
+    .line 30
+    iget-object v1, v1, Ljtk;->l:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 31
+    .line 32
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v1
+
+    .line 36
+    if-lez v1, :cond_0
+
+    .line 37
+    .line 38
+    iget-object v1, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 39
+    .line 40
+    check-cast v1, Ljtk;
+
+    .line 41
+    .line 42
+    iget-object v1, v1, Ljtk;->b:LXuk;
+
+    .line 43
+    .line 44
+    const-string v3, "Leaving the connection open for other ongoing calls."
+
+    .line 45
+    .line 46
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    invoke-virtual {v1, v3, v2}, LXuk;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 49
+    .line 50
+    .line 51
+    monitor-exit v0
+
+    .line 52
+    goto :goto_0
+
+    .line 53
+    :catchall_0
+    move-exception v1
+
+    .line 54
+    goto :goto_1
+
+    .line 55
+    :cond_0
+    iget-object v1, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 56
+    .line 57
+    check-cast v1, Ljtk;
+
+    .line 58
+    .line 59
+    iget-object v3, v1, Ljtk;->n:Landroid/os/IInterface;
+
+    .line 60
+    .line 61
+    if-eqz v3, :cond_1
+
+    .line 62
+    .line 63
+    iget-object v1, v1, Ljtk;->b:LXuk;
+
+    .line 64
+    .line 65
+    const-string v3, "Unbind from service."
+
+    .line 66
+    .line 67
+    new-array v4, v2, [Ljava/lang/Object;
+
+    .line 68
+    .line 69
+    invoke-virtual {v1, v3, v4}, LXuk;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 70
+    .line 71
+    .line 72
+    iget-object v1, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 73
+    .line 74
+    check-cast v1, Ljtk;
+
+    .line 75
+    .line 76
+    iget-object v3, v1, Ljtk;->a:Landroid/content/Context;
+
+    .line 77
+    .line 78
+    iget-object v1, v1, Ljtk;->m:LjCa;
+
+    .line 79
+    .line 80
+    invoke-virtual {v3, v1}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+
+    .line 81
+    .line 82
+    .line 83
+    iget-object v1, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 84
+    .line 85
+    check-cast v1, Ljtk;
+
+    .line 86
+    .line 87
+    iput-boolean v2, v1, Ljtk;->g:Z
+
+    .line 88
+    .line 89
+    const/4 v2, 0x0
+
+    .line 90
+    iput-object v2, v1, Ljtk;->n:Landroid/os/IInterface;
+
+    .line 91
+    .line 92
+    iput-object v2, v1, Ljtk;->m:LjCa;
+
+    .line 93
+    .line 94
+    :cond_1
+    iget-object v1, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 95
+    .line 96
+    check-cast v1, Ljtk;
+
+    .line 97
+    .line 98
+    invoke-virtual {v1}, Ljtk;->e()V
+
+    .line 99
+    .line 100
+    .line 101
+    monitor-exit v0
+
+    .line 102
+    :goto_0
+    return-void
+
+    .line 103
+    :goto_1
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 104
+    throw v1
+
+    .line 105
+    :pswitch_0
+    iget-object v0, p0, Lgtk;->c:Ljava/lang/Object;
+
+    .line 106
+    .line 107
+    check-cast v0, LjCa;
+
+    .line 108
+    .line 109
+    iget-object v0, v0, LjCa;->b:Ljava/lang/Object;
+
+    .line 110
+    .line 111
+    check-cast v0, Ljtk;
+
+    .line 112
+    .line 113
+    iget-object v1, v0, Ljtk;->b:LXuk;
+
+    .line 114
+    .line 115
+    const/4 v2, 0x0
+
+    .line 116
+    new-array v3, v2, [Ljava/lang/Object;
+
+    .line 117
+    .line 118
+    const-string v4, "unlinkToDeath"
+
+    .line 119
+    .line 120
+    invoke-virtual {v1, v4, v3}, LXuk;->b(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    .line 121
+    .line 122
+    .line 123
+    iget-object v1, v0, Ljtk;->n:Landroid/os/IInterface;
+
+    .line 124
+    .line 125
+    invoke-interface {v1}, Landroid/os/IInterface;->asBinder()Landroid/os/IBinder;
+
+    .line 126
+    .line 127
+    .line 128
+    move-result-object v1
+
+    .line 129
+    iget-object v3, v0, Ljtk;->k:Lxwk;
+
+    .line 130
+    .line 131
+    invoke-interface {v1, v3, v2}, Landroid/os/IBinder;->unlinkToDeath(Landroid/os/IBinder$DeathRecipient;I)Z
+
+    .line 132
+    .line 133
+    .line 134
+    const/4 v1, 0x0
+
+    .line 135
+    iput-object v1, v0, Ljtk;->n:Landroid/os/IInterface;
+
+    .line 136
+    .line 137
+    iput-boolean v2, v0, Ljtk;->g:Z
+
+    .line 138
+    .line 139
+    return-void
+
+    .line 140
+    nop
+
+    .line 141
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

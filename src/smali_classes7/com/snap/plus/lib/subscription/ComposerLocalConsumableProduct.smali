@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LKZd;
+.implements Ljhe;
 
 
 # annotations
@@ -12,35 +12,35 @@
 
 
 # instance fields
-.field private final callsite:LWm0;
+.field private final callsite:Lnp0;
 
 .field private final compositeDisposable:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field private final graphene:LFM5;
+.field private final graphene:LRQ5;
 
-.field private final grapheneProvider:Lbke;
+.field private final grapheneProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private final product:Lusj;
+.field private final product:LGRj;
 
-.field private final purchaseFlowDelegate:Laqe;
+.field private final purchaseFlowDelegate:LNHe;
 
 
 # direct methods
-.method public constructor <init>(Lusj;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lbke;)V
+.method public constructor <init>(LGRj;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lusj;",
-            "Laqe;",
+            "LGRj;",
+            "LNHe;",
             "Lio/reactivex/rxjava3/disposables/CompositeDisposable;",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
@@ -51,11 +51,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iput-object p2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
     .line 7
     .line 8
@@ -63,24 +63,24 @@
 
     .line 9
     .line 10
-    iput-object p4, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iput-object p4, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
     .line 11
     .line 12
-    new-instance p1, LFM5;
+    new-instance p1, LRQ5;
 
     .line 13
     .line 14
-    invoke-direct {p1, p4}, LFM5;-><init>(Lbke;)V
+    invoke-direct {p1, p4}, LRQ5;-><init>(LDBe;)V
 
     .line 15
     .line 16
     .line 17
-    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->graphene:LFM5;
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->graphene:LRQ5;
 
     .line 18
     .line 19
-    sget-object p1, LRLg;->Z:LRLg;
+    sget-object p1, LB7h;->Z:LB7h;
 
     .line 20
     .line 21
@@ -88,7 +88,7 @@
 
     .line 22
     .line 23
-    invoke-static {p1, p1, p2}, LEU0;->l(LRLg;LRLg;Ljava/lang/String;)LWm0;
+    invoke-static {p1, p1, p2}, LJF0;->j(LB7h;LB7h;Ljava/lang/String;)Lnp0;
 
     .line 24
     .line 25
@@ -96,40 +96,40 @@
     move-result-object p1
 
     .line 27
-    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->callsite:LWm0;
+    iput-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->callsite:Lnp0;
 
     .line 28
     .line 29
     return-void
 .end method
 
-.method public static final synthetic access$getCallsite$p(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;)LWm0;
+.method public static final synthetic access$getCallsite$p(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;)Lnp0;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->callsite:LWm0;
+    iget-object p0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->callsite:Lnp0;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static final synthetic access$getGraphene$p(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;)LFM5;
+.method public static final synthetic access$getGraphene$p(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;)LRQ5;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->graphene:LFM5;
+    iget-object p0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->graphene:LRQ5;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static final synthetic access$handleResult(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;LBZ8;)Lcom/snap/plus/PurchaseResult;
+.method public static final synthetic access$handleResult(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;Lk79;)Lcom/snap/modules/plus_api/PurchaseResult;
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->handleResult(LBZ8;)Lcom/snap/plus/PurchaseResult;
+    invoke-direct {p0, p1}, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->handleResult(Lk79;)Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 2
     .line 3
@@ -140,7 +140,7 @@
     return-object p0
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;Lusj;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lbke;ILjava/lang/Object;)Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;
+.method public static synthetic copy$default(Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;LGRj;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LDBe;ILjava/lang/Object;)Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;
     .locals 0
 
     .line 1
@@ -152,7 +152,7 @@
 
     .line 4
     .line 5
-    iget-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object p1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 6
     .line 7
@@ -165,7 +165,7 @@
 
     .line 10
     .line 11
-    iget-object p2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object p2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
     .line 12
     .line 13
@@ -191,12 +191,12 @@
 
     .line 22
     .line 23
-    iget-object p4, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iget-object p4, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
     .line 24
     .line 25
     :cond_3
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->copy(Lusj;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lbke;)Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->copy(LGRj;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LDBe;)Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;
 
     .line 26
     .line 27
@@ -207,11 +207,11 @@
     return-object p0
 .end method
 
-.method private final handleResult(LBZ8;)Lcom/snap/plus/PurchaseResult;
+.method private final handleResult(Lk79;)Lcom/snap/modules/plus_api/PurchaseResult;
     .locals 1
 
     .line 1
-    iget-object p1, p1, LBZ8;->a:Lma9;
+    iget-object p1, p1, Lk79;->a:Lsi9;
 
     .line 2
     .line 3
@@ -262,7 +262,7 @@
 
     .line 23
     .line 24
-    sget-object p1, Lcom/snap/plus/PurchaseResult;->Purchased:Lcom/snap/plus/PurchaseResult;
+    sget-object p1, Lcom/snap/modules/plus_api/PurchaseResult;->Purchased:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 25
     .line 26
@@ -270,7 +270,7 @@
 
     .line 27
     :cond_0
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 28
     .line 29
@@ -283,7 +283,7 @@
 
     .line 33
     :cond_1
-    sget-object p1, Lcom/snap/plus/PurchaseResult;->Purchased:Lcom/snap/plus/PurchaseResult;
+    sget-object p1, Lcom/snap/modules/plus_api/PurchaseResult;->Purchased:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 34
     .line 35
@@ -291,7 +291,7 @@
 
     .line 36
     :cond_2
-    sget-object p1, Lcom/snap/plus/PurchaseResult;->PurchasedNoSync:Lcom/snap/plus/PurchaseResult;
+    sget-object p1, Lcom/snap/modules/plus_api/PurchaseResult;->PurchasedNoSync:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 37
     .line 38
@@ -299,7 +299,7 @@
 
     .line 39
     :cond_3
-    sget-object p1, Lcom/snap/plus/PurchaseResult;->Deferred:Lcom/snap/plus/PurchaseResult;
+    sget-object p1, Lcom/snap/modules/plus_api/PurchaseResult;->Deferred:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 40
     .line 41
@@ -307,7 +307,7 @@
 
     .line 42
     :cond_4
-    sget-object p1, Lcom/snap/plus/PurchaseResult;->Failed:Lcom/snap/plus/PurchaseResult;
+    sget-object p1, Lcom/snap/modules/plus_api/PurchaseResult;->Failed:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 43
     .line 44
@@ -315,7 +315,7 @@
 
     .line 45
     :cond_5
-    sget-object p1, Lcom/snap/plus/PurchaseResult;->Cancelled:Lcom/snap/plus/PurchaseResult;
+    sget-object p1, Lcom/snap/modules/plus_api/PurchaseResult;->Cancelled:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 46
     .line 47
@@ -324,22 +324,22 @@
 
 
 # virtual methods
-.method public final component1()Lusj;
+.method public final component1()LGRj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final component2()Laqe;
+.method public final component2()LNHe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
     .line 2
     .line 3
@@ -354,32 +354,32 @@
     return-object v0
 .end method
 
-.method public final component4()Lbke;
+.method public final component4()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final copy(Lusj;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lbke;)Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;
+.method public final copy(LGRj;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LDBe;)Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lusj;",
-            "Laqe;",
+            "LGRj;",
+            "LNHe;",
             "Lio/reactivex/rxjava3/disposables/CompositeDisposable;",
-            "Lbke;",
+            "LDBe;",
             ")",
             "Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;"
         }
@@ -390,7 +390,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2, p3, p4}, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;-><init>(Lusj;Laqe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lbke;)V
+    invoke-direct {v0, p1, p2, p3, p4}, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;-><init>(LGRj;LNHe;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LDBe;)V
 
     .line 4
     .line 5
@@ -419,11 +419,11 @@
     :cond_1
     check-cast p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;
 
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -432,11 +432,11 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
-    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -449,7 +449,7 @@
 
     iget-object v3, p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->compositeDisposable:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -458,11 +458,11 @@
     return v2
 
     :cond_4
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
-    iget-object p1, p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iget-object p1, p1, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -472,6 +472,21 @@
 
     :cond_5
     return v0
+.end method
+
+.method public getAllowedMemoriesStorageGb()Ljava/lang/Double;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, LGRj;->e:Ljava/lang/Double;
+
+    .line 4
+    .line 5
+    return-object v0
 .end method
 
 .method public final getCompositeDisposable()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
@@ -501,36 +516,36 @@
     return-object v0
 .end method
 
-.method public final getGrapheneProvider()Lbke;
+.method public final getGrapheneProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public getPeriod()Lcom/snap/plus/SubscriptionPeriod;
+.method public getPeriod()Lcom/snap/modules/plus_api/SubscriptionPeriod;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lusj;->d:LjM3;
+    iget-object v0, v0, LGRj;->d:LJP3;
 
     .line 4
     .line 5
-    invoke-static {v0}, Lyuk;->o(LjM3;)Lcom/snap/plus/SubscriptionPeriod;
+    invoke-static {v0}, LnTk;->s(LJP3;)Lcom/snap/modules/plus_api/SubscriptionPeriod;
 
     .line 6
     .line 7
@@ -545,15 +560,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lusj;->c:LC0e;
+    iget-object v0, v0, LGRj;->c:Laie;
 
     .line 4
     .line 5
-    invoke-static {v0}, Lyuk;->c(LC0e;)Lcom/snap/plus_iap/ProductPrice;
+    invoke-static {v0}, LnTk;->g(Laie;)Lcom/snap/plus_iap/ProductPrice;
 
     .line 6
     .line 7
@@ -564,22 +579,22 @@
     return-object v0
 .end method
 
-.method public final getProduct()Lusj;
+.method public final getProduct()LGRj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final getPurchaseFlowDelegate()Laqe;
+.method public final getPurchaseFlowDelegate()LNHe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
     .line 2
     .line 3
@@ -606,22 +621,22 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lusj;->a:Ljava/lang/String;
+    iget-object v0, v0, LGRj;->a:Ljava/lang/String;
 
     .line 4
     .line 5
     return-object v0
 .end method
 
-.method public getTier()Lcom/snap/plus/SubscriptionTier;
+.method public getTier()Lcom/snap/modules/plus_api/SubscriptionTier;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/snap/plus/SubscriptionTier;->NORMAL:Lcom/snap/plus/SubscriptionTier;
+    sget-object v0, Lcom/snap/modules/plus_api/SubscriptionTier;->NORMAL:Lcom/snap/modules/plus_api/SubscriptionTier;
 
     .line 2
     .line 3
@@ -631,15 +646,15 @@
 .method public hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
-    invoke-virtual {v0}, Lusj;->hashCode()I
+    invoke-virtual {v0}, LGRj;->hashCode()I
 
     move-result v0
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -659,7 +674,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -686,6 +701,14 @@
     return v0
 .end method
 
+.method public isStorage()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
 .method public purchase(Lkotlin/jvm/functions/Function1;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
@@ -697,23 +720,23 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->graphene:LFM5;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->graphene:LRQ5;
 
     .line 2
     .line 3
-    sget-object v1, LABd;->Y:LABd;
+    sget-object v1, LRSd;->Y:LRSd;
 
     .line 4
     .line 5
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->callsite:LWm0;
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->callsite:Lnp0;
 
     .line 6
     .line 7
-    iget-object v0, v0, LFM5;->a:Lbke;
+    iget-object v0, v0, LRQ5;->a:LDBe;
 
     .line 8
     .line 9
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -721,7 +744,7 @@
     move-result-object v0
 
     .line 13
-    check-cast v0, LaA8;
+    check-cast v0, LcH8;
 
     .line 14
     .line 15
@@ -729,7 +752,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v2}, LWm0;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lnp0;->toString()Ljava/lang/String;
 
     .line 18
     .line 19
@@ -737,7 +760,7 @@
     move-result-object v2
 
     .line 21
-    invoke-static {v1, v3, v2}, LOtc;->O(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
+    invoke-static {v1, v3, v2}, LOIc;->V(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 22
     .line 23
@@ -745,20 +768,20 @@
     move-result-object v1
 
     .line 25
-    invoke-static {v0, v1}, LYz8;->e(LaA8;LqTb;)V
+    invoke-static {v0, v1}, LaH8;->e(LcH8;LV7c;)V
 
     .line 26
     .line 27
     .line 28
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 29
     .line 30
-    iget-object v0, v0, Lusj;->c:LC0e;
+    iget-object v0, v0, LGRj;->c:Laie;
 
     .line 31
     .line 32
-    invoke-virtual {v0}, LC0e;->a()Ly0e;
+    invoke-virtual {v0}, Laie;->a()LWhe;
 
     .line 33
     .line 34
@@ -770,7 +793,7 @@
 
     .line 37
     .line 38
-    sget-object v0, Lcom/snap/plus/PurchaseResult;->Failed:Lcom/snap/plus/PurchaseResult;
+    sget-object v0, Lcom/snap/modules/plus_api/PurchaseResult;->Failed:Lcom/snap/modules/plus_api/PurchaseResult;
 
     .line 39
     .line 40
@@ -783,35 +806,35 @@
 
     .line 44
     :cond_0
-    new-instance v1, Lla9;
+    new-instance v1, Lri9;
 
     .line 45
     .line 46
-    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
     .line 47
     .line 48
-    iget-object v2, v2, Lusj;->c:LC0e;
+    iget-object v2, v2, LGRj;->c:Laie;
 
     .line 49
     .line 50
     const/4 v3, 0x5
 
     .line 51
-    invoke-direct {v1, v3, v2, v0}, Lla9;-><init>(ILC0e;Ly0e;)V
+    invoke-direct {v1, v3, v2, v0}, Lri9;-><init>(ILaie;LWhe;)V
 
     .line 52
     .line 53
     .line 54
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
     .line 55
     .line 56
-    iget-object v2, v0, Laqe;->f:Lake;
+    iget-object v2, v0, LNHe;->f:LCBe;
 
     .line 57
     .line 58
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v2}, LDBe;->get()Ljava/lang/Object;
 
     .line 59
     .line 60
@@ -819,11 +842,11 @@
     move-result-object v2
 
     .line 62
-    check-cast v2, Lna9;
+    check-cast v2, Lti9;
 
     .line 63
     .line 64
-    iget-object v3, v0, Laqe;->a:Landroid/app/Activity;
+    iget-object v3, v0, LNHe;->a:Landroid/app/Activity;
 
     .line 65
     .line 66
@@ -834,7 +857,7 @@
     const/4 v5, 0x0
 
     .line 69
-    invoke-static {v2, v1, v3, v5, v4}, Lna9;->d(Lna9;Lla9;Landroid/app/Activity;Ljava/lang/String;I)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-static {v2, v1, v3, v5, v4}, Lti9;->d(Lti9;Lri9;Landroid/app/Activity;Ljava/lang/String;I)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 70
     .line 71
@@ -842,11 +865,11 @@
     move-result-object v1
 
     .line 73
-    iget-object v0, v0, Laqe;->j:LBre;
+    iget-object v0, v0, LNHe;->j:LnJe;
 
     .line 74
     .line 75
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 76
     .line 77
@@ -863,90 +886,92 @@
     .line 82
     .line 83
     .line 84
-    new-instance v0, LIx3;
+    new-instance v0, LLh2;
 
     .line 85
     .line 86
-    const/4 v1, 0x0
+    const/16 v1, 0x15
 
     .line 87
-    invoke-direct {v0, v1, p0}, LIx3;-><init>(ILjava/lang/Object;)V
-
     .line 88
+    invoke-direct {v0, v1, p0}, LLh2;-><init>(ILjava/lang/Object;)V
+
     .line 89
     .line 90
+    .line 91
     new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
-    .line 91
     .line 92
+    .line 93
     invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 93
     .line 94
     .line 95
-    new-instance v0, LJx3;
-
     .line 96
-    .line 97
-    const/4 v2, 0x0
+    new-instance v0, Ljz2;
 
+    .line 97
     .line 98
-    invoke-direct {v0, v2, p0}, LJx3;-><init>(ILjava/lang/Object;)V
+    const/16 v2, 0x1c
 
     .line 99
     .line 100
-    .line 101
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    invoke-direct {v0, v2, p0}, Ljz2;-><init>(ILjava/lang/Object;)V
 
+    .line 101
     .line 102
     .line 103
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 104
     .line 105
-    .line 106
-    new-instance v0, LTU2;
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 106
     .line 107
     .line 108
-    const/16 v1, 0x18
+    new-instance v0, LWM2;
 
     .line 109
     .line 110
-    invoke-direct {v0, p0, v1, p1}, LTU2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    const/16 v1, 0x1c
 
     .line 111
     .line 112
-    .line 113
-    new-instance v1, LPH;
+    invoke-direct {v0, p0, v1, p1}, LWM2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 113
     .line 114
     .line 115
-    const/4 v3, 0x7
+    new-instance v1, LKJ;
 
     .line 116
-    invoke-direct {v1, v3, p1}, LPH;-><init>(ILkotlin/jvm/functions/Function1;)V
-
     .line 117
-    .line 118
-    .line 119
-    invoke-static {v2, v0, v1}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->f(Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/disposables/Disposable;
+    const/4 v3, 0x7
 
+    .line 118
+    invoke-direct {v1, v3, p1}, LKJ;-><init>(ILkotlin/jvm/functions/Function1;)V
+
+    .line 119
     .line 120
     .line 121
+    invoke-static {v2, v0, v1}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->f(Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 122
+    .line 123
+    .line 124
     move-result-object p1
 
-    .line 123
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->compositeDisposable:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 124
     .line 125
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->compositeDisposable:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 126
     .line 127
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 128
+    .line 129
+    .line 130
     return-void
 .end method
 
@@ -954,7 +979,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lpuk;->o(LKZd;Lcom/snap/composer/utils/ComposerMarshaller;)I
+    invoke-static {p0, p1}, LfTk;->f(Ljhe;Lcom/snap/composer/utils/ComposerMarshaller;)I
 
     .line 2
     .line 3
@@ -968,13 +993,13 @@
 .method public toString()Ljava/lang/String;
     .locals 6
 
-    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:Lusj;
+    iget-object v0, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->product:LGRj;
 
-    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:Laqe;
+    iget-object v1, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->purchaseFlowDelegate:LNHe;
 
     iget-object v2, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->compositeDisposable:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-    iget-object v3, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:Lbke;
+    iget-object v3, p0, Lcom/snap/plus/lib/subscription/ComposerLocalConsumableProduct;->grapheneProvider:LDBe;
 
     new-instance v4, Ljava/lang/StringBuilder;
 

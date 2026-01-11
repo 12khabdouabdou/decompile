@@ -1,118 +1,153 @@
 .class public final LjE0;
-.super Ljava/lang/Object;
+.super LlE0;
 .source "SourceFile"
-
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LQD0;
-
-.field public final synthetic c:LcE0;
+.field public final a:LPgj;
 
 
 # direct methods
-.method public synthetic constructor <init>(LQD0;LcE0;I)V
+.method public constructor <init>(LPgj;)V
     .locals 0
 
     .line 1
-    iput p3, p0, LjE0;->a:I
-
-    iput-object p1, p0, LjE0;->b:LQD0;
-
-    iput-object p2, p0, LjE0;->c:LcE0;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LjE0;->a:LPgj;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 4
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    iget v0, p0, LjE0;->a:I
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LjE0;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LjE0;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LjE0;->a:LPgj;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, LjE0;->a:LPgj;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LjE0;->a:LPgj;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {v0}, LPgj;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/Throwable;
+    move-result v0
 
     .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Final(transcription="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
-    new-instance v0, LU77;
+    iget-object v1, p0, LjE0;->a:LPgj;
 
     .line 9
     .line 10
-    new-instance v1, Ll87;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    sget-object v2, LRT3;->b:LRT3;
-
     .line 13
-    .line 14
-    const/4 v3, 0x0
+    const-string v1, ")"
 
+    .line 14
     .line 15
-    invoke-direct {v1, v2, p1, v3}, Ll87;-><init>(LRT3;Ljava/lang/Throwable;LAZe;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
     .line 18
-    invoke-direct {v0, v1, v3}, LU77;-><init>(Ll87;LsTb;)V
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
     .line 20
     .line 21
-    iget-object p1, p0, LjE0;->b:LQD0;
+    move-result-object v0
 
     .line 22
-    .line 23
-    iget-object v1, p0, LjE0;->c:LcE0;
-
-    .line 24
-    .line 25
-    invoke-virtual {p1, v1, v0}, LQD0;->a(LcE0;LMT3;)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-void
-
-    .line 29
-    :pswitch_0
-    check-cast p1, LMT3;
-
-    .line 30
-    .line 31
-    iget-object v0, p0, LjE0;->b:LQD0;
-
-    .line 32
-    .line 33
-    iget-object v1, p0, LjE0;->c:LcE0;
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1, p1}, LQD0;->a(LcE0;LMT3;)V
-
-    .line 36
-    .line 37
-    .line 38
-    return-void
-
-    .line 39
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

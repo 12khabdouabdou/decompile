@@ -1,176 +1,88 @@
 .class public final LyB5;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function2;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Lom7;
 
-.field public final synthetic b:Lcom/snap/lenses/explorer/categories/feed/DefaultItemFeedView;
+.field public final synthetic b:Lxbf;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/snap/lenses/explorer/categories/feed/DefaultItemFeedView;I)V
+.method public constructor <init>(Lom7;Lxbf;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LyB5;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, LyB5;->b:Lcom/snap/lenses/explorer/categories/feed/DefaultItemFeedView;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LyB5;->a:Lom7;
 
-    const/4 p1, 0x2
+    .line 5
+    .line 6
+    iput-object p2, p0, LyB5;->b:Lxbf;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget v0, p0, LyB5;->a:I
+    check-cast p1, Ljava/lang/Number;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, LmB5;
+    move-result p1
 
     .line 7
+    new-instance v0, LZN;
+
     .line 8
-    check-cast p2, LMKj;
-
     .line 9
+    iget-object v1, p0, LyB5;->a:Lom7;
+
     .line 10
-    iget-object p2, p1, LmB5;->b:Lcom/snap/imageloading/view/SnapImageView;
-
     .line 11
-    .line 12
-    const/4 v0, 0x0
+    check-cast v1, Ljm7;
 
+    .line 12
     .line 13
-    invoke-static {p2, v0}, LU52;->b(Lcom/snap/imageloading/view/SnapImageView;Z)V
+    iget-object v1, v1, Ljm7;->c:LY79;
 
     .line 14
     .line 15
+    iget-object v2, p0, LyB5;->b:Lxbf;
+
     .line 16
-    iget-object p2, p1, LmB5;->c:Landroid/widget/TextView;
-
     .line 17
-    .line 18
-    const-string v0, ""
+    invoke-static {v2}, LEB5;->a(Lxbf;)LQN;
 
+    .line 18
     .line 19
     .line 20
-    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    move-result-object v2
 
     .line 21
+    invoke-direct {v0, v1, p1, v2}, LZN;-><init>(LY79;ILQN;)V
+
     .line 22
     .line 23
-    iget-object p1, p1, LmB5;->d:Landroid/widget/TextView;
-
     .line 24
-    .line 25
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 26
-    .line 27
-    .line 28
-    const/4 p1, 0x0
-
-    .line 29
-    iget-object p2, p0, LyB5;->b:Lcom/snap/lenses/explorer/categories/feed/DefaultItemFeedView;
-
-    .line 30
-    .line 31
-    invoke-virtual {p2, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 32
-    .line 33
-    .line 34
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 35
-    .line 36
-    return-object p1
-
-    .line 37
-    :pswitch_0
-    check-cast p1, LmB5;
-
-    .line 38
-    .line 39
-    check-cast p2, LMKj;
-
-    .line 40
-    .line 41
-    iget-object p2, p1, LmB5;->b:Lcom/snap/imageloading/view/SnapImageView;
-
-    .line 42
-    .line 43
-    const/4 v0, 0x0
-
-    .line 44
-    invoke-static {p2, v0}, LU52;->b(Lcom/snap/imageloading/view/SnapImageView;Z)V
-
-    .line 45
-    .line 46
-    .line 47
-    iget-object p2, p1, LmB5;->c:Landroid/widget/TextView;
-
-    .line 48
-    .line 49
-    const-string v0, ""
-
-    .line 50
-    .line 51
-    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 52
-    .line 53
-    .line 54
-    iget-object p1, p1, LmB5;->d:Landroid/widget/TextView;
-
-    .line 55
-    .line 56
-    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 57
-    .line 58
-    .line 59
-    const/4 p1, 0x0
-
-    .line 60
-    iget-object p2, p0, LyB5;->b:Lcom/snap/lenses/explorer/categories/feed/DefaultItemFeedView;
-
-    .line 61
-    .line 62
-    invoke-virtual {p2, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 63
-    .line 64
-    .line 65
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 66
-    .line 67
-    return-object p1
-
-    .line 68
-    nop
-
-    .line 69
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

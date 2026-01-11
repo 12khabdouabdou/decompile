@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public final C0(Landroidx/recyclerview/widget/RecyclerView;)Z
+.method public final H0(Landroidx/recyclerview/widget/RecyclerView;)Z
     .locals 0
 
     .line 1
@@ -14,18 +14,18 @@
     return p1
 .end method
 
-.method public final E()LxGe;
+.method public final J()LgYe;
     .locals 2
 
     .line 1
-    new-instance v0, Ljf6;
+    new-instance v0, LHi6;
 
     .line 2
     .line 3
     const/4 v1, -0x1
 
     .line 4
-    invoke-direct {v0, v1, v1}, LKB8;-><init>(II)V
+    invoke-direct {v0, v1, v1}, LHI8;-><init>(II)V
 
     .line 5
     .line 6
@@ -33,15 +33,15 @@
     return-object v0
 .end method
 
-.method public final F(Landroid/content/Context;Landroid/util/AttributeSet;)LxGe;
+.method public final K(Landroid/content/Context;Landroid/util/AttributeSet;)LgYe;
     .locals 1
 
     .line 1
-    new-instance v0, Ljf6;
+    new-instance v0, LHi6;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, LKB8;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {v0, p1, p2}, LHI8;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 4
     .line 5
@@ -49,15 +49,15 @@
     return-object v0
 .end method
 
-.method public final G(Landroid/view/ViewGroup$LayoutParams;)LxGe;
+.method public final L(Landroid/view/ViewGroup$LayoutParams;)LgYe;
     .locals 1
 
     .line 1
-    new-instance v0, Ljf6;
+    new-instance v0, LHi6;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, LKB8;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-direct {v0, p1}, LHI8;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 4
     .line 5

@@ -1,6 +1,46 @@
-.class public LVK7;
-.super Ljava/lang/Object;
+.class public final LVK7;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements LYK7;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'capturePhoto\':f()"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _capturePhoto:Lkotlin/jvm/functions/Function0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lkotlin/jvm/functions/Function0;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LVK7;->_capturePhoto:Lkotlin/jvm/functions/Function0;
+
+    .line 5
+    .line 6
+    return-void
+.end method

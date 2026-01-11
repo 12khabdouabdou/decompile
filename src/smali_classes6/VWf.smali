@@ -1,85 +1,78 @@
 .class public final LVWf;
-.super LoP8;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LBSf;
+.implements Ldjg;
 
 
 # instance fields
-.field public final h0:I
+.field public final a:Ljava/lang/String;
 
-.field public final i0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(LYIj;LWog;Ljava/util/ArrayList;JIIILio/reactivex/rxjava3/subjects/BehaviorSubject;)V
-    .locals 10
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    sget-object v1, LuXf;->q0:LuXf;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/4 v7, -0x2
-
     .line 4
-    move-object v0, p0
+    iput-object p1, p0, LVWf;->a:Ljava/lang/String;
 
     .line 5
-    move-object v2, p1
-
     .line 6
-    move-object v3, p2
+    iput-object p2, p0, LVWf;->b:Ljava/lang/String;
 
     .line 7
-    move-object v4, p3
-
     .line 8
-    move-wide v5, p4
+    iput-object p3, p0, LVWf;->c:Ljava/lang/String;
 
     .line 9
-    move/from16 v8, p6
-
     .line 10
-    .line 11
-    move/from16 v9, p7
-
-    .line 12
-    .line 13
-    invoke-direct/range {v0 .. v9}, LoP8;-><init>(LLu;LYIj;LWR6;Ljava/util/List;JIII)V
-
-    .line 14
-    .line 15
-    .line 16
-    move/from16 p1, p8
-
-    .line 17
-    .line 18
-    iput p1, p0, LVWf;->h0:I
-
-    .line 19
-    .line 20
-    move-object/from16 p1, p9
-
-    .line 21
-    .line 22
-    iput-object p1, p0, LVWf;->i0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 23
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final k()I
+.method public final a()Lcom/snapchat/client/messaging/MetricsMessageType;
     .locals 1
 
     .line 1
-    iget v0, p0, LVWf;->h0:I
+    sget-object v0, Lcom/snapchat/client/messaging/MetricsMessageType;->SEARCH_STORY_SNAP_SHARE:Lcom/snapchat/client/messaging/MetricsMessageType;
 
     .line 2
     .line 3
-    return v0
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final d()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lx1c;->B0:Lx1c;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lx1c;->a:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    return-object v0
 .end method

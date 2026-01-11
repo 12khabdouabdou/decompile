@@ -11,11 +11,11 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    new-instance v0, LGMi;
+    new-instance v0, LN2j;
 
-    const/16 v1, 0x9
+    const/16 v1, 0x8
 
-    invoke-direct {v0, v1}, LGMi;-><init>(I)V
+    invoke-direct {v0, v1}, LN2j;-><init>(I)V
 
     return-void
 .end method
@@ -165,7 +165,7 @@
     move-result-wide v0
 
     .line 7
-    invoke-static {v0, v1}, LGMi;->e(J)Ljava/lang/Object;
+    invoke-static {v0, v1}, LN2j;->j(J)Ljava/lang/Object;
 
     .line 8
     .line 9

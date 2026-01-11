@@ -1,14 +1,14 @@
 .class public final Lcom/snap/camera_mode_widgets/FlashFeatureWidgetViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'colorOptions\':a<r:\'[0]\'>,\'flashSelection\':r?<e>:\'[1]\',\'sliderValue\':d@?"
     typeReferences = {
-        LMe3;,
+        LCh3;,
         Lcom/snap/camera_mode_widgets/FlashSelection;
     }
 .end annotation
@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LMe3;",
+            "LCh3;",
             ">;"
         }
     .end annotation
@@ -57,7 +57,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LMe3;",
+            "LCh3;",
             ">;",
             "Lcom/snap/camera_mode_widgets/FlashSelection;",
             "Ljava/lang/Double;",

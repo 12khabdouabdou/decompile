@@ -1,9 +1,9 @@
 .class public final Lkotlinx/coroutines/android/AndroidExceptionPreHandler;
-.super LV1;
+.super Lo2;
 .source "SourceFile"
 
 # interfaces
-.implements Lf44;
+.implements LM84;
 
 
 # instance fields
@@ -15,11 +15,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lk12;->r0:Lk12;
+    sget-object v0, Lve2;->u0:Lve2;
 
     .line 2
     .line 3
-    invoke-direct {p0, v0}, LV1;-><init>(LZ34;)V
+    invoke-direct {p0, v0}, Lo2;-><init>(LG84;)V
 
     .line 4
     .line 5
@@ -33,7 +33,7 @@
 
 
 # virtual methods
-.method public final n(La44;Ljava/lang/Throwable;)V
+.method public final n(LH84;Ljava/lang/Throwable;)V
     .locals 2
 
     .line 1

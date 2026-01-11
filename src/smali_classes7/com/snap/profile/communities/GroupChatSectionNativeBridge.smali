@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LyC8;
+    proxyClass = LuJ8;
     schema = "\'friendStore\':r:\'[0]\',\'getUsersFromIds\':f|m|(a<s>, f(a<r:\'[1]\'>)),\'onOpenGroupChat\':f|m|(s),\'onOpenGroupChatV2\':f?|m|(s, s, s, d),\'onCreateGroupChat\':f?|m|(s),\'getCommunityDisplayName\':f?|m|(s): g<c>:\'[2]\'<s>,\'reloadGroupChatsList\':f?|m|(): g<c>:\'[2]\'<s>,\'onJoinGroupChat\':f?|m|(s, s, s, d)"
     typeReferences = {
         Lcom/snap/composer/people/FriendStoring;,
@@ -21,9 +21,6 @@
 
 # virtual methods
 .method public abstract getCommunityDisplayName(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -33,6 +30,9 @@
             "Ljava/lang/String;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -53,12 +53,12 @@
 .end method
 
 .method public abstract onCreateGroupChat(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onJoinGroupChat(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;D)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -66,7 +66,7 @@
 .end method
 
 .method public abstract onOpenGroupChatV2(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;D)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -74,9 +74,6 @@
 .end method
 
 .method public abstract reloadGroupChatsList()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -84,5 +81,8 @@
             "Ljava/lang/String;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method

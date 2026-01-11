@@ -3,19 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lxx3;
+.implements LKv3;
 
 
 # instance fields
-.field public final a:LAG4;
-
-.field public final b:LY05;
-
-.field public final c:Lake;
+.field public final a:Lz45;
 
 
 # direct methods
-.method public constructor <init>(LAG4;LY05;)V
+.method public constructor <init>(Lz45;)V
     .locals 0
 
     .line 1
@@ -24,87 +20,47 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LuY4;->a:LAG4;
+    iput-object p1, p0, LuY4;->a:Lz45;
 
     .line 5
     .line 6
-    iput-object p2, p0, LuY4;->b:LY05;
-
-    .line 7
-    .line 8
-    new-instance p1, LSo4;
-
-    .line 9
-    .line 10
-    const/16 p2, 0xe
-
-    .line 11
-    .line 12
-    invoke-direct {p1, p2}, LSo4;-><init>(I)V
-
-    .line 13
-    .line 14
-    .line 15
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    iput-object p1, p0, LuY4;->c:Lake;
-
-    .line 20
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final D()Lq79;
+.method public final o()LCC6;
     .locals 3
 
     .line 1
-    iget-object v0, p0, LuY4;->c:Lake;
+    new-instance v0, LCC6;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    iget-object v1, p0, LuY4;->a:Lz45;
 
     .line 4
     .line 5
+    invoke-virtual {v1}, Lz45;->N()Lyzi;
+
     .line 6
-    move-result-object v0
-
     .line 7
-    check-cast v0, LLs3;
-
     .line 8
+    move-result-object v2
+
     .line 9
-    iget-object v1, p0, LuY4;->a:LAG4;
+    invoke-virtual {v1}, Lz45;->w()LOF3;
 
     .line 10
     .line 11
-    iget-object v2, p0, LuY4;->b:LY05;
-
     .line 12
+    move-result-object v1
+
     .line 13
-    invoke-static {v0, v1, v2}, LFok;->b(LLs3;LAG4;LY05;)LXQ4;
+    invoke-direct {v0, v1, v2}, LCC6;-><init>(LOF3;Lyzi;)V
 
     .line 14
     .line 15
     .line 16
-    move-result-object v0
-
-    .line 17
-    invoke-static {v0}, LBxk;->h(LXQ4;)Lq79;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
     return-object v0
 .end method

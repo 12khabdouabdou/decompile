@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lqu8;
+    proxyClass = LWA8;
     schema = "\'getAvailibility\':f|m|(f(r<e>:\'[0]\')),\'fetchProducts\':f|m|(s, f(a?<r:\'[1]\'>, r?:\'[2]\')),\'fetchRedeemProduct\':f|m|(s, t, f(r?:\'[1]\', r?<e>:\'[3]\'))"
     typeReferences = {
         Lcom/snap/plus/AvailabilityState;,
-        LKZd;,
+        Ljhe;,
         Lcom/snap/composer/foundation/Error;,
         Lcom/snap/plus/FetchRedeemProductErrorCode;
     }

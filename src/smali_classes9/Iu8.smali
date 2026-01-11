@@ -1,192 +1,165 @@
-.class public final LIu8;
-.super Lo17;
+.class public LIu8;
+.super LMy0;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
+    value = LJu8;
+.end annotation
+
+.annotation runtime LnJ9;
+    value = Ldkh;
+.end annotation
+
+
 # instance fields
-.field public a:LuI1;
+.field public e:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "new_password"
+    .end annotation
+.end field
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, LMy0;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    iput-object v0, p0, LIu8;->a:LuI1;
-
-    .line 6
-    .line 7
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 8
-    .line 9
-    const/4 v0, -0x1
-
-    .line 10
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
+.method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p1, p0, :cond_0
+
     .line 3
     .line 4
-    move-result v0
-
-    .line 5
-    iget-object v1, p0, LIu8;->a:LuI1;
-
-    .line 6
-    .line 7
-    if-eqz v1, :cond_0
-
-    .line 8
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v1
-
-    .line 14
-    add-int/2addr v1, v0
-
-    .line 15
-    return v1
-
-    .line 16
-    :cond_0
     return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
 
     .line 5
-    if-eqz v0, :cond_3
+    :cond_0
+    const/4 v1, 0x0
 
     .line 6
+    if-eqz p1, :cond_2
+
     .line 7
-    const/16 v1, 0xa
-
     .line 8
+    instance-of v2, p1, LIu8;
+
     .line 9
-    if-eq v0, v1, :cond_1
-
     .line 10
+    if-nez v2, :cond_1
+
     .line 11
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
     .line 12
-    .line 13
-    .line 14
-    move-result v0
+    goto :goto_0
 
+    .line 13
+    :cond_1
+    check-cast p1, LIu8;
+
+    .line 14
     .line 15
-    if-nez v0, :cond_0
+    invoke-super {p0, p1}, LMy0;->equals(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
-    goto :goto_1
-
     .line 18
-    :cond_1
-    iget-object v0, p0, LIu8;->a:LuI1;
+    move-result v2
 
     .line 19
+    if-eqz v2, :cond_2
+
     .line 20
-    if-nez v0, :cond_2
-
     .line 21
+    iget-object v2, p0, LIu8;->e:Ljava/lang/String;
+
     .line 22
-    new-instance v0, LuI1;
-
     .line 23
-    .line 24
-    invoke-direct {v0}, LuI1;-><init>()V
+    iget-object p1, p1, LIu8;->e:Ljava/lang/String;
 
+    .line 24
     .line 25
+    invoke-static {v2, p1}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 26
     .line 27
-    iput-object v0, p0, LIu8;->a:LuI1;
-
     .line 28
+    move-result p1
+
     .line 29
-    :cond_2
-    iget-object v0, p0, LIu8;->a:LuI1;
+    if-eqz p1, :cond_2
 
     .line 30
     .line 31
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    return v0
 
     .line 32
-    .line 33
-    .line 34
-    goto :goto_0
-
-    .line 35
-    :cond_3
-    :goto_1
-    return-object p0
+    :cond_2
+    :goto_0
+    return v1
 .end method
 
-.method public final writeTo(Lsa3;)V
+.method public final hashCode()I
     .locals 2
 
     .line 1
-    iget-object v0, p0, LIu8;->a:LuI1;
+    invoke-super {p0}, LMy0;->hashCode()I
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
-
     .line 4
+    move-result v0
+
     .line 5
-    const/4 v1, 0x1
+    add-int/lit8 v0, v0, 0x11
 
     .line 6
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
-
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
     .line 9
-    :cond_0
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    iget-object v1, p0, LIu8;->e:Ljava/lang/String;
 
     .line 10
     .line 11
+    if-nez v1, :cond_0
+
     .line 12
-    return-void
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 20
+    return v0
 .end method

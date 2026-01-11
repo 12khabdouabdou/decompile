@@ -25,11 +25,11 @@
 
 
 # instance fields
-.field public final Y:LGCh;
+.field public final Y:LL0i;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/operators/ConditionalSubscriber;LGCh;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/operators/ConditionalSubscriber;LL0i;)V
     .locals 0
 
     .line 1
@@ -38,7 +38,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LGCh;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LL0i;
 
     .line 5
     .line 6
@@ -64,11 +64,11 @@
 
     .line 7
     :try_start_0
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LGCh;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LL0i;
 
     .line 8
     .line 9
-    invoke-virtual {v1, p1}, LGCh;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v1, p1}, LL0i;->accept(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -98,7 +98,7 @@
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 4
     .line 5
@@ -112,11 +112,11 @@
     .line 9
     .line 10
     :try_start_0
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LGCh;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LL0i;
 
     .line 11
     .line 12
-    invoke-virtual {v0, p1}, LGCh;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v0, p1}, LL0i;->accept(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -159,11 +159,11 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LGCh;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDoAfterNext$DoAfterConditionalSubscriber;->Y:LL0i;
 
     .line 10
     .line 11
-    invoke-virtual {v1, v0}, LGCh;->accept(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, LL0i;->accept(Ljava/lang/Object;)V
 
     .line 12
     .line 13

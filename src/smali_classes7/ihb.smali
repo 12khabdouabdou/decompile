@@ -2,24 +2,24 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/places/suggestattribute/MapPlaceSuggestAttributeTrayActionHandler;
+
 
 # instance fields
-.field public final a:I
-
-.field public final b:Ljava/lang/String;
-
-.field public c:J
-
-.field public d:J
-
-.field public e:J
-
-.field public final synthetic f:Lkhb;
+.field public final a:Lkotlin/jvm/functions/Function1;
 
 
 # direct methods
-.method public constructor <init>(Lkhb;)V
-    .locals 2
+.method public constructor <init>(Lkotlin/jvm/functions/Function1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -27,45 +27,67 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lihb;->f:Lkhb;
+    iput-object p1, p0, Lihb;->a:Lkotlin/jvm/functions/Function1;
 
     .line 5
     .line 6
-    invoke-static {}, Landroid/view/ViewConfiguration;->getDoubleTapTimeout()I
+    return-void
+.end method
+
+
+# virtual methods
+.method public handleCloseTray(Z)V
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    iget-object v0, p0, Lihb;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 6
+    .line 7
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    .line 9
-    move-result p1
+    const-class v1, Lcom/snap/places/suggestattribute/MapPlaceSuggestAttributeTrayActionHandler;
 
+    .line 9
     .line 10
-    iput p1, p0, Lihb;->a:I
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
-    const-string p1, "media_controls_scrub"
-
     .line 13
+    move-result p1
+
     .line 14
-    iput-object p1, p0, Lihb;->b:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    const-wide/16 v0, -0x1
-
-    .line 17
-    .line 18
-    iput-wide v0, p0, Lihb;->c:J
-
-    .line 19
-    .line 20
-    iput-wide v0, p0, Lihb;->d:J
-
-    .line 21
-    .line 22
-    iput-wide v0, p0, Lihb;->e:J
-
-    .line 23
-    .line 24
-    return-void
+    return p1
 .end method

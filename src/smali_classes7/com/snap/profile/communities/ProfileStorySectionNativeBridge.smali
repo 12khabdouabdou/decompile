@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lxce;
+    proxyClass = LVte;
     schema = "\'launchPostToGroupStoryFlow\':f|m|(s)"
     typeReferences = {}
 .end annotation

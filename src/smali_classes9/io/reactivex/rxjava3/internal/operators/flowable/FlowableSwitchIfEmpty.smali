@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -56,7 +56,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;-><init>(Lio/reactivex/rxjava3/core/Flowable;LV6i;)V
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSwitchIfEmpty$SwitchIfEmptySubscriber;-><init>(Lio/reactivex/rxjava3/core/Flowable;Lmvi;)V
 
     .line 6
     .line 7
@@ -65,7 +65,7 @@
 
     .line 9
     .line 10
-    invoke-interface {p1, v1}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v1}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 11
     .line 12

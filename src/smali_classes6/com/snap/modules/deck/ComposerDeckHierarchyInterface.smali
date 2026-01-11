@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Ljv3;
+    proxyClass = Loy3;
     schema = "\'deckContainerFactory\':r:\'[0]\',\'deckTransitionEvents\':g<c>:\'[1]\'<r:\'[2]\'>"
     typeReferences = {
         Lcom/snap/modules/deck/ComposerDeckContainerFactoryInterface;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lnv3;
+        Lsy3;
     }
 .end annotation
 
@@ -28,7 +28,7 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lnv3;",
+            "Lsy3;",
             ">;"
         }
     .end annotation

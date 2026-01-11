@@ -1,124 +1,126 @@
 .class public final Lr92;
-.super LMJ0;
+.super Landroid/database/ContentObserver;
 .source "SourceFile"
 
 
 # instance fields
-.field public final Z:Lk92;
-
-.field public final e0:LrBb;
-
-.field public final f0:Z
-
-.field public final g0:Z
+.field public final a:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
-.method public constructor <init>(Lk92;ZZ)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/ObservableEmitter;)V
     .locals 1
 
     .line 1
-    sget-object v0, LrBb;->m0:LrBb;
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    invoke-direct {p0, p1, v0, p2, p3}, LMJ0;-><init>(Lp72;LLu;ZZ)V
+    invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
+    .line 3
     .line 4
     .line 5
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
     .line 6
-    iput-object p1, p0, Lr92;->Z:Lk92;
-
     .line 7
-    .line 8
-    iput-object v0, p0, Lr92;->e0:LrBb;
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
+    .line 8
     .line 9
     .line 10
-    iput-boolean p2, p0, Lr92;->f0:Z
+    iput-object v0, p0, Lr92;->a:Ljava/lang/ref/WeakReference;
 
     .line 11
     .line 12
-    iput-boolean p3, p0, Lr92;->g0:Z
-
-    .line 13
-    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final A()LLu;
-    .locals 1
+.method public final onChange(Z)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lr92;->e0:LrBb;
-
-    .line 2
-    .line 3
-    return-object v0
+    return-void
 .end method
 
-.method public final B()Z
-    .locals 1
+.method public final onChange(ZLandroid/net/Uri;)V
+    .locals 2
 
-    .line 1
-    iget-boolean v0, p0, Lr92;->g0:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final C()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lr92;->f0:Z
+    if-eqz p2, :cond_3
 
     .line 2
+    iget-object p1, p0, Lr92;->a:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lio/reactivex/rxjava3/core/ObservableEmitter;
+
+    if-nez p1, :cond_0
+
+    goto :goto_1
+
     .line 3
-    return v0
-.end method
+    :cond_0
+    invoke-interface {p1}, Lio/reactivex/rxjava3/core/ObservableEmitter;->d()Z
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+    move-result v0
 
-    .line 1
-    invoke-super {p0}, LMJ0;->toString()Ljava/lang/String;
+    if-nez v0, :cond_3
 
-    .line 2
-    .line 3
     .line 4
+    invoke-virtual {p2}, Landroid/net/Uri;->getQueryParameterNames()Ljava/util/Set;
+
     move-result-object v0
+
+    const-string v1, "blocking"
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
 
     .line 5
-    const-string v1, "CameraRollVideoViewModel ["
+    invoke-virtual {p2}, Landroid/net/Uri;->getQueryParameterNames()Ljava/util/Set;
 
-    .line 6
-    .line 7
-    const-string v2, "]"
-
-    .line 8
-    .line 9
-    invoke-static {v1, v0, v2}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 10
-    .line 11
-    .line 12
     move-result-object v0
 
-    .line 13
-    return-object v0
-.end method
+    const-string v1, "orig_id"
 
-.method public final z()Lp72;
-    .locals 1
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    .line 1
-    iget-object v0, p0, Lr92;->Z:Lk92;
+    move-result v0
 
-    .line 2
-    .line 3
-    return-object v0
+    if-eqz v0, :cond_2
+
+    .line 6
+    invoke-virtual {p2}, Landroid/net/Uri;->getQueryParameterNames()Ljava/util/Set;
+
+    move-result-object v0
+
+    const-string v1, "group_id"
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    return-void
+
+    .line 7
+    :cond_2
+    :goto_0
+    invoke-interface {p1, p2}, Lio/reactivex/rxjava3/core/Emitter;->onNext(Ljava/lang/Object;)V
+
+    :cond_3
+    :goto_1
+    return-void
 .end method

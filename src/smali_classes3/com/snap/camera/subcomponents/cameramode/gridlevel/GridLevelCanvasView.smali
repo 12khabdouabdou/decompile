@@ -43,7 +43,7 @@
 
     move-result-object p1
 
-    const v0, 0x7f06020b
+    const v0, 0x7f060263
 
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -100,7 +100,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f06020b
+    const p2, 0x7f060263
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -157,7 +157,7 @@
 
     move-result-object p1
 
-    const p2, 0x7f06020b
+    const p2, 0x7f060263
 
     invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -217,7 +217,7 @@
     move-result-object v0
 
     .line 5
-    const v1, 0x7f07022a
+    const v1, 0x7f070238
 
     .line 6
     .line 7
@@ -238,7 +238,7 @@
     move-result-object v1
 
     .line 16
-    const v2, 0x7f070229
+    const v2, 0x7f070237
 
     .line 17
     .line 18
@@ -303,12 +303,12 @@
     move-result-object v2
 
     .line 49
-    const v4, 0x7f0405b7
+    const v4, 0x7f040669
 
     .line 50
     .line 51
     .line 52
-    invoke-static {v2, v4}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v2, v4}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 53
     .line 54
@@ -372,12 +372,12 @@
     move-result-object v1
 
     .line 86
-    const v3, 0x7f0405b8
+    const v3, 0x7f04066a
 
     .line 87
     .line 88
     .line 89
-    invoke-static {v1, v3}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v1, v3}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     .line 90
     .line 91

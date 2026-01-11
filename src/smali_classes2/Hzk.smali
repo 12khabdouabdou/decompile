@@ -1,106 +1,162 @@
 .class public final LHzk;
-.super Ljava/lang/Object;
+.super Ljzk;
 .source "SourceFile"
 
-# interfaces
-.implements LGzk;
+
+# static fields
+.field public static final f0:LHzk;
 
 
 # instance fields
-.field public final a:Ljava/util/ArrayList;
+.field public final transient Z:[Ljava/lang/Object;
+
+.field public final transient e0:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LFzk;)V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LHzk;
 
     .line 2
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    new-instance v0, Ljava/util/ArrayList;
+    new-array v2, v1, [Ljava/lang/Object;
 
     .line 5
     .line 6
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v0, v1, v2}, LHzk;-><init>(I[Ljava/lang/Object;)V
 
     .line 7
     .line 8
     .line 9
-    iput-object v0, p0, LHzk;->a:Ljava/util/ArrayList;
+    sput-object v0, LHzk;->f0:LHzk;
 
     .line 10
     .line 11
-    new-instance v1, LRzk;
+    return-void
+.end method
 
-    .line 12
-    .line 13
-    invoke-direct {v1, p1, p2}, LRzk;-><init>(Landroid/content/Context;LFzk;)V
+.method public constructor <init>(I[Ljava/lang/Object;)V
+    .locals 1
 
-    .line 14
-    .line 15
-    .line 16
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 1
+    const/4 v0, 0x0
 
-    .line 17
-    .line 18
-    .line 19
+    .line 2
+    invoke-direct {p0, v0}, LWyk;-><init>(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    iput-object p2, p0, LHzk;->Z:[Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    iput p1, p0, LHzk;->e0:I
+
+    .line 8
+    .line 9
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LC3j;)V
-    .locals 2
+.method public final b([Ljava/lang/Object;)I
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LHzk;->a:Ljava/util/ArrayList;
+    iget-object v0, p0, LHzk;->Z:[Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    const/4 v1, 0x0
+
+    .line 4
+    iget v2, p0, LHzk;->e0:I
+
+    .line 5
+    .line 6
+    invoke-static {v0, v1, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 7
+    .line 8
+    .line 9
+    return v2
+.end method
+
+.method public final d()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LHzk;->e0:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final f()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final get(I)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LHzk;->e0:I
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, LFVk;->r(II)V
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    iget-object v0, p0, LHzk;->Z:[Ljava/lang/Object;
 
     .line 7
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
     .line 8
+    aget-object p1, v0, p1
+
     .line 9
     .line 10
-    move-result v1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 11
-    if-eqz v1, :cond_0
-
     .line 12
     .line 13
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    return-object p1
+.end method
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
+.method public final h()[Ljava/lang/Object;
+    .locals 1
 
-    .line 17
-    check-cast v1, LGzk;
+    .line 1
+    iget-object v0, p0, LHzk;->Z:[Ljava/lang/Object;
 
-    .line 18
-    .line 19
-    invoke-interface {v1, p1}, LGzk;->a(LC3j;)V
+    .line 2
+    .line 3
+    return-object v0
+.end method
 
-    .line 20
-    .line 21
-    .line 22
-    goto :goto_0
+.method public final size()I
+    .locals 1
 
-    .line 23
-    :cond_0
-    return-void
+    .line 1
+    iget v0, p0, LHzk;->e0:I
+
+    .line 2
+    .line 3
+    return v0
 .end method

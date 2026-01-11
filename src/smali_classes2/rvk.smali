@@ -3,111 +3,99 @@
 .source "SourceFile"
 
 # interfaces
-.implements LPJc;
+.implements Ljava/io/Serializable;
 
 
 # static fields
-.field public static final a:Lrvk;
+.field public static X:I
+
+
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:Z
+
+.field public final t:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Lrvk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    const-string v0, "name"
+
     .line 5
     .line 6
-    sput-object v0, Lrvk;->a:Lrvk;
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     .line 7
     .line 8
-    new-instance v0, LFhk;
-
     .line 9
+    move-result-object v0
+
     .line 10
-    const/4 v1, 0x1
+    iput-object v0, p0, Lrvk;->a:Ljava/lang/String;
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
     .line 12
+    const-string v0, "id"
+
     .line 13
     .line 14
-    const-class v1, LUhk;
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     .line 15
     .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
     .line 17
-    .line 18
-    .line 19
     move-result-object v0
 
+    .line 18
+    iput-object v0, p0, Lrvk;->b:Ljava/lang/String;
+
+    .line 19
     .line 20
-    const/4 v2, 0x2
+    const-string v0, "criticalityIndicator"
 
     .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
     .line 22
+    const/4 v1, 0x1
+
     .line 23
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+
     .line 24
-    move-result-object v0
-
     .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
     .line 26
-    .line 27
-    .line 28
-    move-result-object v0
+    move-result v0
 
+    .line 27
+    iput-boolean v0, p0, Lrvk;->c:Z
+
+    .line 28
     .line 29
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
+    const-string v0, "data"
 
     .line 30
     .line 31
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
     .line 32
+    .line 33
+    .line 34
+    move-result-object p1
+
+    .line 35
+    iput-object p1, p0, Lrvk;->t:Ljava/lang/String;
+
+    .line 36
+    .line 37
     return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
 .end method

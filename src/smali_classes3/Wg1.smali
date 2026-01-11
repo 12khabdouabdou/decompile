@@ -1,203 +1,126 @@
-.class public abstract synthetic LWg1;
-.super Ljava/lang/Object;
+.class public final LWg1;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Ljava/lang/String;
+
+.field public final synthetic c:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    const/16 v0, 0x11
+    iput p1, p0, LWg1;->a:I
+
+    iput-object p2, p0, LWg1;->b:Ljava/lang/String;
+
+    iput-object p3, p0, LWg1;->c:Ljava/lang/String;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    iget v0, p0, LWg1;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0}, Llva;->M(I)[I
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    new-instance v0, Lwhg;
 
     .line 7
-    array-length v0, v0
-
     .line 8
-    new-array v0, v0, [I
+    iget-object v1, p0, LWg1;->c:Ljava/lang/String;
 
     .line 9
     .line 10
-    const/4 v1, 0x1
+    const-string v2, ""
 
     .line 11
-    const/4 v2, 0x2
-
     .line 12
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    iget-object v3, p0, LWg1;->b:Ljava/lang/String;
 
     .line 13
     .line 14
-    :catch_0
-    const/16 v1, 0xc
+    invoke-direct {v0, v3, v2, v1}, Lwhg;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 15
     .line 16
-    :try_start_1
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 17
+    return-object v0
+
     .line 18
-    :catch_1
-    const/4 v2, 0x3
+    :pswitch_0
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 19
-    const/4 v3, 0x0
-
     .line 20
-    :try_start_2
-    aput v2, v0, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 21
     .line 22
-    :catch_2
-    const/4 v2, 0x4
-
     .line 23
-    const/4 v3, 0x6
+    iget-object v1, p0, LWg1;->b:Ljava/lang/String;
 
     .line 24
-    :try_start_3
-    aput v2, v0, v3
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
     .line 25
-    .line 26
-    :catch_3
-    const/16 v4, 0xe
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 26
     .line 27
     .line 28
-    const/4 v5, 0x5
+    const-string v1, " upload fail. "
 
     .line 29
-    :try_start_4
-    aput v5, v0, v4
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
     .line 30
-    .line 31
-    :catch_4
-    const/16 v4, 0xa
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 31
     .line 32
     .line 33
-    :try_start_5
-    aput v3, v0, v4
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    iget-object v1, p0, LWg1;->c:Ljava/lang/String;
 
     .line 34
     .line 35
-    :catch_5
-    const/4 v3, 0x7
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
-    const/16 v6, 0xf
-
     .line 37
     .line 38
-    :try_start_6
-    aput v3, v0, v6
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 39
     .line 40
-    :catch_6
-    const/16 v3, 0x8
-
     .line 41
+    move-result-object v0
+
     .line 42
-    const/16 v6, 0xb
+    return-object v0
 
     .line 43
-    .line 44
-    :try_start_7
-    aput v3, v0, v6
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 45
-    .line 46
-    :catch_7
-    const/16 v3, 0x9
-
-    .line 47
-    .line 48
-    :try_start_8
-    aput v3, v0, v2
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 49
-    .line 50
-    :catch_8
-    const/16 v2, 0xd
-
-    .line 51
-    .line 52
-    :try_start_9
-    aput v4, v0, v2
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    .line 53
-    .line 54
-    :catch_9
-    const/16 v4, 0x10
-
-    .line 55
-    .line 56
-    :try_start_a
-    aput v6, v0, v4
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
-
-    .line 57
-    .line 58
-    :catch_a
-    :try_start_b
-    aput v1, v0, v5
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
-
-    .line 59
-    .line 60
-    :catch_b
-    :try_start_c
-    aput v2, v0, v3
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
-
-    .line 61
-    .line 62
-    :catch_c
-    sput-object v0, LWg1;->a:[I
-
-    .line 63
-    .line 64
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

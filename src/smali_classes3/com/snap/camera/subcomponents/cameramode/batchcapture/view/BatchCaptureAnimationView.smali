@@ -185,14 +185,14 @@
     move-result-object p1
 
     .line 84
-    new-instance p2, LBL0;
+    new-instance p2, LtH0;
 
     .line 85
     .line 86
-    const/4 v0, 0x4
+    const/4 v0, 0x7
 
     .line 87
-    invoke-direct {p2, v0, p0}, LBL0;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v0, p0}, LtH0;-><init>(ILjava/lang/Object;)V
 
     .line 88
     .line 89

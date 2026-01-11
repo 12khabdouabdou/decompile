@@ -18,7 +18,7 @@
 .method public abstract a()V
 .end method
 
-.method public abstract d(Lio/reactivex/rxjava3/internal/observers/InnerQueuedObserver;Ljava/lang/Object;)V
+.method public abstract b(Lio/reactivex/rxjava3/internal/observers/InnerQueuedObserver;Ljava/lang/Object;)V
 .end method
 
 .method public abstract f(Lio/reactivex/rxjava3/internal/observers/InnerQueuedObserver;)V

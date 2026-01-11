@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LGy3;
+    proxyClass = LTB3;
     schema = "\'disableSwipeGestureDismissal\':b@?"
     typeReferences = {}
 .end annotation

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LtDf;
+    proxyClass = LNWf;
     schema = "\'reportSingleSnapStory\':f?|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/safety/safetyreporting/api/SpotlightSnapReportParams;
@@ -22,6 +22,6 @@
 .end method
 
 .method public abstract reportSingleSnapStory(Lcom/snap/safety/safetyreporting/api/SpotlightSnapReportParams;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

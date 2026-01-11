@@ -1,24 +1,22 @@
 .class public final Lbh2;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'eventType\':r<e>:\'[0]\'"
-    typeReferences = {
-        Lcom/snap/modules/creative_tools/captions/CaptionEditorEventType;
-    }
+    schema = "\'currentZoomRatio\':d"
+    typeReferences = {}
 .end annotation
 
 
 # instance fields
-.field private _eventType:Lcom/snap/modules/creative_tools/captions/CaptionEditorEventType;
+.field private _currentZoomRatio:D
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/modules/creative_tools/captions/CaptionEditorEventType;)V
+.method public constructor <init>(D)V
     .locals 0
 
     .line 1
@@ -27,7 +25,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lbh2;->_eventType:Lcom/snap/modules/creative_tools/captions/CaptionEditorEventType;
+    iput-wide p1, p0, Lbh2;->_currentZoomRatio:D
 
     .line 5
     .line 6

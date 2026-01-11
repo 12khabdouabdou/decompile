@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LzB3;
+.implements LcF3;
 
 
 # annotations
@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final Companion:LAB3;
+.field public static final Companion:LdF3;
 
 
 # instance fields
@@ -23,12 +23,20 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, LAB3;
+    .line 1
+    new-instance v0, LdF3;
 
-    invoke-direct {v0}, LAB3;-><init>()V
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
@@ -36,36 +44,41 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
-    invoke-static {v0}, LAB3;->a(LAB3;)J
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    move-result-wide v0
+    invoke-static {}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeCreate()J
 
     .line 7
-    invoke-direct {p0, v0, v1}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;-><init>(J)V
-
     .line 8
     .line 9
+    move-result-wide v0
+
     .line 10
-    new-instance v0, Lcom/snap/composer/schema/a;
+    invoke-direct {p0, v0, v1}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;-><init>(J)V
 
     .line 11
     .line 12
-    invoke-direct {v0}, Lcom/snap/composer/schema/a;-><init>()V
-
     .line 13
+    new-instance v0, Lcom/snap/composer/schema/a;
+
     .line 14
     .line 15
-    iput-object v0, p0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->classDelegateManager:Lcom/snap/composer/schema/a;
+    invoke-direct {v0}, Lcom/snap/composer/schema/a;-><init>()V
 
     .line 16
     .line 17
+    .line 18
+    iput-object v0, p0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->classDelegateManager:Lcom/snap/composer/schema/a;
+
+    .line 19
+    .line 20
     return-void
 .end method
 
@@ -208,7 +221,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/snap/composer/schema/a;->b(Ljava/lang/Class;)LEu3;
+    invoke-virtual {v0, p1}, Lcom/snap/composer/schema/a;->b(Ljava/lang/Class;)LIx3;
 
     .line 4
     .line 5
@@ -216,7 +229,7 @@
     move-result-object p1
 
     .line 7
-    invoke-interface {p1, p2}, LEu3;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p1, p2}, LIx3;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -231,15 +244,20 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
-    invoke-static {v0, p1, p2}, LAB3;->b(LAB3;J)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
+    invoke-static {p1, p2}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeDestroy(J)V
+
+    .line 7
+    .line 8
+    .line 9
     return-void
 .end method
 
@@ -260,7 +278,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/snap/composer/schema/a;->b(Ljava/lang/Class;)LEu3;
+    invoke-virtual {v0, p1}, Lcom/snap/composer/schema/a;->b(Ljava/lang/Class;)LIx3;
 
     .line 4
     .line 5
@@ -268,7 +286,7 @@
     move-result-object p1
 
     .line 7
-    invoke-interface {p1, p2}, LEu3;->c(Ljava/lang/Object;)V
+    invoke-interface {p1, p2}, LIx3;->c(Ljava/lang/Object;)V
 
     .line 8
     .line 9
@@ -289,7 +307,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
@@ -309,71 +327,76 @@
     move-result-object v3
 
     .line 11
-    invoke-static {v0, v1, v2, v3, p2}, LAB3;->c(LAB3;JLjava/lang/String;Ljava/lang/Enum;)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
     .line 14
-    move-result-object p2
+    invoke-static {v1, v2, v3, p2}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeGetEnumValue(JLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
-    instance-of v0, p2, Ljava/lang/Integer;
-
     .line 16
     .line 17
-    if-eqz v0, :cond_0
+    move-result-object p2
 
     .line 18
+    instance-of v0, p2, Ljava/lang/Integer;
+
     .line 19
+    .line 20
+    if-eqz v0, :cond_0
+
+    .line 21
+    .line 22
     check-cast p2, Ljava/lang/Number;
 
-    .line 20
-    .line 21
-    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
-
-    .line 22
     .line 23
     .line 24
-    move-result p1
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
 
     .line 25
+    .line 26
+    .line 27
+    move-result p1
+
+    .line 28
     return p1
 
-    .line 26
+    .line 29
     :cond_0
     new-instance p2, Lcom/snap/composer/exceptions/ComposerException;
 
-    .line 27
-    .line 28
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    .line 29
     .line 30
     .line 31
-    move-result-object p1
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 32
-    const-string v0, "Enum "
-
     .line 33
     .line 34
-    const-string v1, " is not a int enum"
-
-    .line 35
-    .line 36
-    invoke-static {v0, p1, v1}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 37
-    .line 38
-    .line 39
     move-result-object p1
 
-    .line 40
-    invoke-direct {p2, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+    .line 35
+    const-string v0, "Enum "
 
+    .line 36
+    .line 37
+    const-string v1, " is not a int enum"
+
+    .line 38
+    .line 39
+    invoke-static {v0, p1, v1}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 40
     .line 41
     .line 42
+    move-result-object p1
+
     .line 43
+    invoke-direct {p2, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
     throw p2
 .end method
 
@@ -391,7 +414,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
@@ -411,63 +434,68 @@
     move-result-object v3
 
     .line 11
-    invoke-static {v0, v1, v2, v3, p2}, LAB3;->c(LAB3;JLjava/lang/String;Ljava/lang/Enum;)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
     .line 14
-    move-result-object p2
+    invoke-static {v1, v2, v3, p2}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeGetEnumValue(JLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
-    instance-of v0, p2, Ljava/lang/String;
-
     .line 16
     .line 17
-    if-eqz v0, :cond_0
+    move-result-object p2
 
     .line 18
+    instance-of v0, p2, Ljava/lang/String;
+
     .line 19
-    check-cast p2, Ljava/lang/String;
-
     .line 20
-    .line 21
-    return-object p2
+    if-eqz v0, :cond_0
 
+    .line 21
     .line 22
-    :cond_0
-    new-instance p2, Lcom/snap/composer/exceptions/ComposerException;
+    check-cast p2, Ljava/lang/String;
 
     .line 23
     .line 24
-    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    return-object p2
 
     .line 25
+    :cond_0
+    new-instance p2, Lcom/snap/composer/exceptions/ComposerException;
+
     .line 26
     .line 27
-    move-result-object p1
+    invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     .line 28
-    const-string v0, "Enum "
-
     .line 29
     .line 30
-    const-string v1, " is not a string enum"
-
-    .line 31
-    .line 32
-    invoke-static {v0, p1, v1}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
     move-result-object p1
 
-    .line 36
-    invoke-direct {p2, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+    .line 31
+    const-string v0, "Enum "
 
+    .line 32
+    .line 33
+    const-string v1, " is not a string enum"
+
+    .line 34
+    .line 35
+    invoke-static {v0, p1, v1}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 36
     .line 37
     .line 38
+    move-result-object p1
+
     .line 39
+    invoke-direct {p2, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 40
+    .line 41
+    .line 42
     throw p2
 .end method
 
@@ -485,7 +513,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
@@ -513,17 +541,22 @@
     move-result-wide v4
 
     .line 15
-    move-object v6, p3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
-    invoke-static/range {v0 .. v6}, LAB3;->d(LAB3;JLjava/lang/String;JLjava/lang/Object;)I
-
     .line 17
     .line 18
+    move-object v6, p3
+
     .line 19
-    move-result p1
+    invoke-static/range {v1 .. v6}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeMarshallObject(JLjava/lang/String;JLjava/lang/Object;)I
 
     .line 20
+    .line 21
+    .line 22
+    move-result p1
+
+    .line 23
     return p1
 .end method
 
@@ -544,7 +577,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
@@ -564,18 +597,23 @@
     move-result-object p1
 
     .line 11
-    invoke-static {v0, v1, v2, p1, p2}, LAB3;->e(LAB3;JLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
+    invoke-static {v1, v2, p1, p2}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeMarshallObjectAsMap(JLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
-    check-cast p1, Ljava/util/Map;
-
     .line 16
     .line 17
+    move-result-object p1
+
+    .line 18
+    check-cast p1, Ljava/util/Map;
+
+    .line 19
+    .line 20
     return-object p1
 .end method
 
@@ -597,7 +635,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/snap/composer/schema/a;->b(Ljava/lang/Class;)LEu3;
+    invoke-virtual {v0, p1}, Lcom/snap/composer/schema/a;->b(Ljava/lang/Class;)LIx3;
 
     .line 4
     .line 5
@@ -605,7 +643,7 @@
     move-result-object p1
 
     .line 7
-    invoke-interface {p1, p2, p3}, LEu3;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-interface {p1, p2, p3}, LIx3;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 8
     .line 9
@@ -617,7 +655,7 @@
 .end method
 
 .method public setActiveSchemaOfClassToMarshaller(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;)V
-    .locals 6
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
@@ -631,7 +669,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
@@ -648,7 +686,7 @@
     .line 8
     .line 9
     .line 10
-    move-result-object v3
+    move-result-object p1
 
     .line 11
     invoke-virtual {p2}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->getNativeHandle()J
@@ -656,14 +694,19 @@
     .line 12
     .line 13
     .line 14
-    move-result-wide v4
+    move-result-wide v3
 
     .line 15
-    invoke-static/range {v0 .. v5}, LAB3;->f(LAB3;JLjava/lang/String;J)V
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
     .line 17
     .line 18
+    invoke-static {v1, v2, p1, v3, v4}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeSetActiveSchema(JLjava/lang/String;J)V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method
 
@@ -682,7 +725,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LAB3;
+    sget-object v0, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->Companion:LdF3;
 
     .line 2
     .line 3
@@ -710,16 +753,21 @@
     move-result-wide v4
 
     .line 15
-    move v6, p3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 16
-    invoke-static/range {v0 .. v6}, LAB3;->g(LAB3;JLjava/lang/String;JI)Ljava/lang/Object;
-
     .line 17
     .line 18
+    move v6, p3
+
     .line 19
-    move-result-object p1
+    invoke-static/range {v1 .. v6}, Lcom/snap/composer/schema/ComposerValueMarshallerRegistryCpp;->access$nativeUnmarshallObject(JLjava/lang/String;JI)Ljava/lang/Object;
 
     .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
     return-object p1
 .end method

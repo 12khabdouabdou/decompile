@@ -3,23 +3,39 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LDa0;
+.field public final synthetic b:I
+
+.field public final synthetic c:LDa0;
+
+.field public final synthetic d:Ljava/lang/String;
+
+.field public final synthetic e:Lkmh;
+
+.field public final synthetic f:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(LDa0;I)V
+.method public synthetic constructor <init>(ILDa0;Ljava/lang/String;Lkmh;Ljava/lang/String;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, LCa0;->a:I
+    iput p6, p0, LCa0;->a:I
 
-    iput-object p1, p0, LCa0;->b:LDa0;
+    iput p1, p0, LCa0;->b:I
+
+    iput-object p2, p0, LCa0;->c:LDa0;
+
+    iput-object p3, p0, LCa0;->d:Ljava/lang/String;
+
+    iput-object p4, p0, LCa0;->e:Lkmh;
+
+    iput-object p5, p0, LCa0;->f:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,8 +44,8 @@
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 4
+.method public final run()V
+    .locals 7
 
     .line 1
     iget v0, p0, LCa0;->a:I
@@ -41,134 +57,138 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, Lcom/snapchat/client/messaging/Conversation;
+    iget v0, p0, LCa0;->b:I
 
     .line 7
     .line 8
-    iget-object p1, p0, LCa0;->b:LDa0;
+    if-lez v0, :cond_0
 
     .line 9
     .line 10
-    iget-object v0, p1, LDa0;->h:LXfi;
+    sget-object v0, Lcom/snapchat/client/messaging/NotificationPreference;->SILENT:Lcom/snapchat/client/messaging/NotificationPreference;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    :goto_0
+    move-object v3, v0
 
     .line 13
-    .line 14
-    .line 15
-    move-result-object v0
+    goto :goto_1
 
+    .line 14
+    :cond_0
+    sget-object v0, Lcom/snapchat/client/messaging/NotificationPreference;->ALL_MESSAGES:Lcom/snapchat/client/messaging/NotificationPreference;
+
+    .line 15
     .line 16
-    check-cast v0, LB73;
+    goto :goto_0
 
     .line 17
+    :goto_1
+    iget-object v0, p0, LCa0;->c:LDa0;
+
     .line 18
-    check-cast v0, LOze;
-
     .line 19
-    .line 20
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, LDa0;->m0()Lz64;
 
+    .line 20
     .line 21
     .line 22
+    move-result-object v1
+
     .line 23
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    iget-object v5, p0, LCa0;->f:Ljava/lang/String;
 
     .line 24
     .line 25
-    .line 26
-    move-result-wide v0
+    iget v6, p0, LCa0;->b:I
 
+    .line 26
     .line 27
-    iget-wide v2, p1, LDa0;->f:J
+    iget-object v2, p0, LCa0;->d:Ljava/lang/String;
 
     .line 28
     .line 29
-    sub-long/2addr v0, v2
+    iget-object v4, p0, LCa0;->e:Lkmh;
 
     .line 30
-    iget-object p1, p1, LDa0;->g:LXfi;
-
     .line 31
-    .line 32
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual/range {v1 .. v6}, Lz64;->g(Ljava/lang/String;Lcom/snapchat/client/messaging/NotificationPreference;Lkmh;Ljava/lang/String;I)V
 
+    .line 32
     .line 33
     .line 34
-    .line 35
-    move-result-object p1
-
-    .line 36
-    check-cast p1, LaA8;
-
-    .line 37
-    .line 38
-    sget-object v2, LcL2;->h1:LcL2;
-
-    .line 39
-    .line 40
-    invoke-interface {p1, v2, v0, v1}, LaA8;->e(LcTb;J)V
-
-    .line 41
-    .line 42
-    .line 43
     return-void
 
-    .line 44
+    .line 35
     :pswitch_0
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
+    iget v0, p0, LCa0;->b:I
 
+    .line 36
+    .line 37
+    if-lez v0, :cond_1
+
+    .line 38
+    .line 39
+    sget-object v0, Lcom/snapchat/client/messaging/NotificationPreference;->SILENT:Lcom/snapchat/client/messaging/NotificationPreference;
+
+    .line 40
+    .line 41
+    :goto_2
+    move-object v3, v0
+
+    .line 42
+    goto :goto_3
+
+    .line 43
+    :cond_1
+    sget-object v0, Lcom/snapchat/client/messaging/NotificationPreference;->ALL_MESSAGES:Lcom/snapchat/client/messaging/NotificationPreference;
+
+    .line 44
     .line 45
+    goto :goto_2
+
     .line 46
-    iget-object p1, p0, LCa0;->b:LDa0;
+    :goto_3
+    iget-object v0, p0, LCa0;->c:LDa0;
 
     .line 47
     .line 48
-    iget-object v0, p1, LDa0;->h:LXfi;
+    invoke-virtual {v0}, LDa0;->m0()Lz64;
 
     .line 49
     .line 50
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 51
-    .line 52
-    .line 53
-    move-result-object v0
+    move-result-object v1
 
+    .line 52
+    iget-object v5, p0, LCa0;->f:Ljava/lang/String;
+
+    .line 53
     .line 54
-    check-cast v0, LB73;
+    iget v6, p0, LCa0;->b:I
 
     .line 55
     .line 56
-    check-cast v0, LOze;
+    iget-object v2, p0, LCa0;->d:Ljava/lang/String;
 
     .line 57
     .line 58
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v4, p0, LCa0;->e:Lkmh;
 
     .line 59
     .line 60
-    .line 61
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    invoke-virtual/range {v1 .. v6}, Lz64;->d(Ljava/lang/String;Lcom/snapchat/client/messaging/NotificationPreference;Lkmh;Ljava/lang/String;I)V
 
+    .line 61
     .line 62
     .line 63
-    .line 64
-    move-result-wide v0
-
-    .line 65
-    iput-wide v0, p1, LDa0;->f:J
-
-    .line 66
-    .line 67
     return-void
 
-    .line 68
+    .line 64
     nop
 
-    .line 69
+    .line 65
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

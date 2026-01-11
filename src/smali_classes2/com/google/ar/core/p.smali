@@ -62,7 +62,7 @@
 
     .line 10
     .line 11
-    invoke-virtual/range {v0 .. v5}, Lcom/google/ar/core/ArImage;->c(IJJ)Ljava/nio/ByteBuffer;
+    invoke-virtual/range {v0 .. v5}, Lcom/google/ar/core/ArImage;->d(IJJ)Ljava/nio/ByteBuffer;
 
     .line 12
     .line 13
@@ -105,7 +105,7 @@
 
     .line 10
     .line 11
-    invoke-virtual/range {v0 .. v5}, Lcom/google/ar/core/ArImage;->b(IJJ)I
+    invoke-virtual/range {v0 .. v5}, Lcom/google/ar/core/ArImage;->c(IJJ)I
 
     .line 12
     .line 13

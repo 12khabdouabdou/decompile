@@ -3,18 +3,18 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGs3;
+.implements LKv3;
 
 
 # instance fields
-.field public final a:Lake;
+.field public final a:LOlc;
 
-.field public final b:Lake;
+.field public final b:LDKj;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 3
+.method public constructor <init>(LOlc;LDKj;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -22,57 +22,83 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LI45;
+    iput-object p1, p0, Lt65;->a:LOlc;
 
     .line 5
     .line 6
-    const/4 v1, 0x1
+    iput-object p2, p0, Lt65;->b:LDKj;
 
     .line 7
-    const/16 v2, 0x18
-
     .line 8
-    .line 9
-    invoke-direct {v0, p0, v1, v2}, LI45;-><init>(LGs3;II)V
+    return-void
+.end method
 
+
+# virtual methods
+.method public final o()LYIj;
+    .locals 5
+
+    .line 1
+    new-instance v0, LPv3;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, LPv3;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v1, p0, Lt65;->a:LOlc;
+
+    .line 7
+    .line 8
+    invoke-virtual {v1}, LOlc;->d()Lu65;
+
+    .line 9
     .line 10
     .line 11
+    move-result-object v2
+
     .line 12
-    invoke-static {v0}, LVr6;->b(Lake;)Lake;
+    iget-object v1, v1, LOlc;->c:LJ65;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object v0
+    new-instance v3, Le36;
 
+    .line 15
     .line 16
-    iput-object v0, p0, Lt65;->a:Lake;
+    const/16 v4, 0x14
 
     .line 17
     .line 18
-    new-instance v0, LI45;
+    invoke-direct {v3, v2, v1, v4}, Le36;-><init>(Lu65;LJ65;I)V
 
     .line 19
     .line 20
+    .line 21
     const/4 v1, 0x0
 
-    .line 21
-    invoke-direct {v0, p0, v1, v2}, LI45;-><init>(LGs3;II)V
-
     .line 22
+    const-string v2, "com.snap.content.UriHandlerRegistry"
+
     .line 23
     .line 24
-    invoke-static {v0}, LVr6;->b(Lake;)Lake;
+    const-class v4, LH65;
 
     .line 25
     .line 26
+    invoke-virtual {v0, v2, v4, v1, v3}, LPv3;->a(Ljava/lang/Object;Ljava/lang/Class;ZLkotlin/jvm/functions/Function0;)LKv3;
+
     .line 27
+    .line 28
+    .line 29
     move-result-object v0
 
-    .line 28
-    iput-object v0, p0, Lt65;->b:Lake;
-
-    .line 29
     .line 30
-    return-void
+    check-cast v0, LYIj;
+
+    .line 31
+    .line 32
+    return-object v0
 .end method

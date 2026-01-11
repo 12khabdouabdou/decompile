@@ -1,510 +1,616 @@
 .class public final LQ0f;
-.super LcUb;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Cloneable;
+.implements Lio/reactivex/rxjava3/disposables/Disposable;
 
 
 # instance fields
-.field public final synthetic c:I
+.field public a:Lio/reactivex/rxjava3/disposables/Disposable;
 
-.field public final d:Landroid/content/Context;
+.field public b:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
+.method public constructor <init>(Lio/reactivex/rxjava3/disposables/Disposable;Ljava/util/concurrent/atomic/AtomicInteger;)V
+    .locals 0
 
-    const/4 v0, 0x1
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput v0, p0, LQ0f;->c:I
-
-    const/16 v0, 0x9
-
-    const/16 v1, 0xa
-
+    .line 2
     .line 3
-    invoke-direct {p0, v0, v1}, LcUb;-><init>(II)V
+    .line 4
+    iput-object p1, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
 
-    iput-object p1, p0, LQ0f;->d:Landroid/content/Context;
+    .line 5
+    .line 6
+    iput-object p2, p0, LQ0f;->b:Ljava/util/concurrent/atomic/AtomicInteger;
 
+    .line 7
+    .line 8
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;II)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, LQ0f;->c:I
+.method public static e(LQ0f;)LQ0f;
+    .locals 0
 
     .line 1
-    invoke-direct {p0, p2, p3}, LcUb;-><init>(II)V
+    if-nez p0, :cond_0
 
     .line 2
-    iput-object p1, p0, LQ0f;->d:Landroid/content/Context;
+    .line 3
+    const/4 p0, 0x0
 
+    .line 4
+    return-object p0
+
+    .line 5
+    :cond_0
+    invoke-virtual {p0}, LQ0f;->b()LQ0f;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p0
+
+    .line 9
+    return-object p0
+.end method
+
+.method public static l(Lio/reactivex/rxjava3/disposables/Disposable;)LQ0f;
+    .locals 3
+
+    .line 1
+    new-instance v0, LQ0f;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x1
+
+    .line 6
+    invoke-direct {v1, v2}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-direct {v0, p0, v1}, LQ0f;-><init>(Lio/reactivex/rxjava3/disposables/Disposable;Ljava/util/concurrent/atomic/AtomicInteger;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object v0
+.end method
+
+.method public static m(LQ0f;)V
+    .locals 1
+
+    .line 1
+    if-eqz p0, :cond_0
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, LQ0f;->d()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    invoke-virtual {p0}, LQ0f;->dispose()V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LGbi;)V
-    .locals 13
+.method public final declared-synchronized a()LQ0f;
+    .locals 3
 
     .line 1
-    const-string v0, "INSERT OR REPLACE INTO `Preference` (`key`, `long_value`) VALUES (@key, @long_value)"
+    monitor-enter p0
 
     .line 2
-    .line 3
-    const-string v1, "reschedule_needed"
+    :try_start_0
+    invoke-virtual {p0}, LQ0f;->d()Z
 
+    .line 3
     .line 4
     .line 5
-    const-string v2, "androidx.work.util.preferences"
+    move-result v0
 
     .line 6
+    if-nez v0, :cond_0
+
     .line 7
-    iget-object v3, p0, LQ0f;->d:Landroid/content/Context;
-
     .line 8
-    .line 9
-    const/4 v4, 0x2
+    iget-object v0, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 9
     .line 10
-    const/4 v5, 0x1
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
 
     .line 11
-    const/4 v6, 0x0
-
     .line 12
-    iget v7, p0, LQ0f;->c:I
-
     .line 13
+    move-result v0
+
     .line 14
-    packed-switch v7, :pswitch_data_0
+    if-nez v0, :cond_0
 
     .line 15
     .line 16
+    iget-object v0, p0, LQ0f;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+
     .line 17
-    const-string v7, "CREATE TABLE IF NOT EXISTS `Preference` (`key` TEXT NOT NULL, `long_value` INTEGER, PRIMARY KEY(`key`))"
-
     .line 18
-    .line 19
-    invoke-interface {p1, v7}, LGbi;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
+    .line 19
     .line 20
     .line 21
-    .line 22
-    invoke-virtual {v3, v2, v6}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    new-instance v0, LQ0f;
 
+    .line 22
     .line 23
+    iget-object v1, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 24
     .line 25
-    move-result-object v2
+    iget-object v2, p0, LQ0f;->b:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 26
-    invoke-interface {v2, v1}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
     .line 27
+    invoke-direct {v0, v1, v2}, LQ0f;-><init>(Lio/reactivex/rxjava3/disposables/Disposable;Ljava/util/concurrent/atomic/AtomicInteger;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 28
     .line 29
-    move-result v7
-
     .line 30
-    const-string v8, "last_cancel_all_time_ms"
+    monitor-exit p0
 
     .line 31
+    return-object v0
+
     .line 32
-    if-nez v7, :cond_0
-
-    .line 33
-    .line 34
-    invoke-interface {v2, v8}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    .line 35
-    .line 36
-    .line 37
-    move-result v7
-
-    .line 38
-    if-eqz v7, :cond_2
-
-    .line 39
-    .line 40
-    :cond_0
-    const-wide/16 v9, 0x0
-
-    .line 41
-    .line 42
-    invoke-interface {v2, v8, v9, v10}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-wide v11
-
-    .line 46
-    invoke-interface {v2, v1, v6}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v7
-
-    .line 50
-    if-eqz v7, :cond_1
-
-    .line 51
-    .line 52
-    const-wide/16 v9, 0x1
-
-    .line 53
-    .line 54
-    :cond_1
-    invoke-interface {p1}, LGbi;->beginTransaction()V
-
-    .line 55
-    .line 56
-    .line 57
-    :try_start_0
-    invoke-static {v11, v12}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object v7
-
-    .line 61
-    new-array v11, v4, [Ljava/lang/Object;
-
-    .line 62
-    .line 63
-    aput-object v8, v11, v6
-
-    .line 64
-    .line 65
-    aput-object v7, v11, v5
-
-    .line 66
-    .line 67
-    invoke-interface {p1, v0, v11}, LGbi;->execSQL(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 68
-    .line 69
-    .line 70
-    invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v7
-
-    .line 74
-    new-array v8, v4, [Ljava/lang/Object;
-
-    .line 75
-    .line 76
-    aput-object v1, v8, v6
-
-    .line 77
-    .line 78
-    aput-object v7, v8, v5
-
-    .line 79
-    .line 80
-    invoke-interface {p1, v0, v8}, LGbi;->execSQL(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 81
-    .line 82
-    .line 83
-    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    .line 84
-    .line 85
-    .line 86
-    move-result-object v1
-
-    .line 87
-    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-object v1
-
-    .line 91
-    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    .line 92
-    .line 93
-    .line 94
-    invoke-interface {p1}, LGbi;->setTransactionSuccessful()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 95
-    .line 96
-    .line 97
-    invoke-interface {p1}, LGbi;->endTransaction()V
-
-    .line 98
-    .line 99
-    .line 100
-    :cond_2
-    const-string v1, "androidx.work.util.id"
-
-    .line 101
-    .line 102
-    invoke-virtual {v3, v1, v6}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v1
-
-    .line 106
-    const-string v2, "next_job_scheduler_id"
-
-    .line 107
-    .line 108
-    invoke-interface {v1, v2}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v3
-
-    .line 112
-    if-nez v3, :cond_3
-
-    .line 113
-    .line 114
-    invoke-interface {v1, v2}, Landroid/content/SharedPreferences;->contains(Ljava/lang/String;)Z
-
-    .line 115
-    .line 116
-    .line 117
-    move-result v3
-
-    .line 118
-    if-eqz v3, :cond_4
-
-    .line 119
-    .line 120
-    :cond_3
-    invoke-interface {v1, v2, v6}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    .line 121
-    .line 122
-    .line 123
-    move-result v3
-
-    .line 124
-    const-string v7, "next_alarm_manager_id"
-
-    .line 125
-    .line 126
-    invoke-interface {v1, v7, v6}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
-
-    .line 127
-    .line 128
-    .line 129
-    move-result v8
-
-    .line 130
-    invoke-interface {p1}, LGbi;->beginTransaction()V
-
-    .line 131
-    .line 132
-    .line 133
-    :try_start_1
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 134
-    .line 135
-    .line 136
-    move-result-object v3
-
-    .line 137
-    new-array v9, v4, [Ljava/lang/Object;
-
-    .line 138
-    .line 139
-    aput-object v2, v9, v6
-
-    .line 140
-    .line 141
-    aput-object v3, v9, v5
-
-    .line 142
-    .line 143
-    invoke-interface {p1, v0, v9}, LGbi;->execSQL(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 144
-    .line 145
-    .line 146
-    invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 147
-    .line 148
-    .line 149
-    move-result-object v2
-
-    .line 150
-    new-array v3, v4, [Ljava/lang/Object;
-
-    .line 151
-    .line 152
-    aput-object v7, v3, v6
-
-    .line 153
-    .line 154
-    aput-object v2, v3, v5
-
-    .line 155
-    .line 156
-    invoke-interface {p1, v0, v3}, LGbi;->execSQL(Ljava/lang/String;[Ljava/lang/Object;)V
-
-    .line 157
-    .line 158
-    .line 159
-    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    .line 160
-    .line 161
-    .line 162
-    move-result-object v0
-
-    .line 163
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->clear()Landroid/content/SharedPreferences$Editor;
-
-    .line 164
-    .line 165
-    .line 166
-    move-result-object v0
-
-    .line 167
-    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    .line 168
-    .line 169
-    .line 170
-    invoke-interface {p1}, LGbi;->setTransactionSuccessful()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 171
-    .line 172
-    .line 173
-    invoke-interface {p1}, LGbi;->endTransaction()V
-
-    .line 174
-    .line 175
-    .line 176
-    :cond_4
-    return-void
-
-    .line 177
     :catchall_0
     move-exception v0
 
-    .line 178
-    invoke-interface {p1}, LGbi;->endTransaction()V
+    .line 33
+    goto :goto_0
 
-    .line 179
-    .line 180
-    .line 181
+    .line 34
+    :cond_0
+    :try_start_1
+    new-instance v0, LW0f;
+
+    .line 35
+    .line 36
+    invoke-direct {v0}, LW0f;-><init>()V
+
+    .line 37
+    .line 38
+    .line 39
     throw v0
 
-    .line 182
+    .line 40
+    :goto_0
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 41
+    throw v0
+.end method
+
+.method public final declared-synchronized b()LQ0f;
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, LQ0f;->d()Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    goto :goto_0
+
+    .line 10
+    :cond_0
+    invoke-virtual {p0}, LQ0f;->a()LQ0f;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 14
+    :goto_0
+    monitor-exit p0
+
+    .line 15
+    return-object v0
+
+    .line 16
+    :catchall_0
+    move-exception v0
+
+    .line 17
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 18
+    throw v0
+.end method
+
+.method public final clone()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, LQ0f;->a()LQ0f;
+
+    .line 3
+    .line 4
+    .line 5
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6
+    monitor-exit p0
+
+    .line 7
+    return-object v0
+
+    .line 8
+    :catchall_0
+    move-exception v0
+
+    .line 9
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 10
+    throw v0
+.end method
+
+.method public final declared-synchronized d()Z
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    iget-object v0, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 3
+    .line 4
+    if-nez v0, :cond_0
+
+    .line 5
+    .line 6
+    const/4 v0, 0x1
+
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 9
+    :goto_0
+    monitor-exit p0
+
+    .line 10
+    return v0
+
+    .line 11
+    :catchall_0
+    move-exception v0
+
+    .line 12
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 13
+    throw v0
+.end method
+
+.method public final declared-synchronized dispose()V
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, LQ0f;->d()Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    monitor-exit p0
+
+    .line 9
+    return-void
+
+    .line 10
+    :cond_0
+    :try_start_1
+    iget-object v0, p0, LQ0f;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    if-nez v0, :cond_1
+
+    .line 17
+    .line 18
+    iget-object v0, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 19
+    .line 20
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 21
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :catchall_0
+    move-exception v0
+
+    .line 25
+    goto :goto_1
+
+    .line 26
+    :cond_1
+    :goto_0
+    const/4 v0, 0x0
+
+    .line 27
+    iput-object v0, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 28
+    .line 29
+    iput-object v0, p0, LQ0f;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 30
+    .line 31
+    monitor-exit p0
+
+    .line 32
+    return-void
+
+    .line 33
+    :goto_1
+    :try_start_2
+    monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 34
+    throw v0
+.end method
+
+.method public final declared-synchronized finalize()V
+    .locals 1
+
+    .line 1
+    monitor-enter p0
+
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, LQ0f;->d()Z
+
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    :try_start_1
+    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 9
+    .line 10
+    .line 11
+    monitor-exit p0
+
+    .line 12
+    return-void
+
+    .line 13
+    :catchall_0
+    move-exception v0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
+    :cond_0
+    :try_start_2
+    invoke-super {p0}, Ljava/lang/Object;->finalize()V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 16
+    .line 17
+    .line 18
+    monitor-exit p0
+
+    .line 19
+    return-void
+
+    .line 20
     :catchall_1
     move-exception v0
 
-    .line 183
-    invoke-interface {p1}, LGbi;->endTransaction()V
+    .line 21
+    :try_start_3
+    invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
-    .line 184
-    .line 185
-    .line 186
+    .line 22
+    .line 23
+    .line 24
     throw v0
 
-    .line 187
-    :pswitch_0
-    iget v7, p0, LcUb;->b:I
+    .line 25
+    :goto_0
+    monitor-exit p0
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 188
-    .line 189
-    const/16 v8, 0xa
+    .line 26
+    throw v0
+.end method
 
-    .line 190
-    .line 191
-    if-lt v7, v8, :cond_5
+.method public final declared-synchronized j()Lio/reactivex/rxjava3/disposables/Disposable;
+    .locals 1
 
-    .line 192
-    .line 193
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 1
+    monitor-enter p0
 
-    .line 194
-    .line 195
-    .line 196
-    move-result-object v2
+    .line 2
+    :try_start_0
+    invoke-virtual {p0}, LQ0f;->d()Z
 
-    .line 197
-    new-array v3, v4, [Ljava/lang/Object;
+    .line 3
+    .line 4
+    .line 5
+    move-result v0
 
-    .line 198
-    .line 199
-    aput-object v1, v3, v6
+    .line 6
+    if-nez v0, :cond_0
 
-    .line 200
-    .line 201
-    aput-object v2, v3, v5
+    .line 7
+    .line 8
+    iget-object v0, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 202
-    .line 203
-    invoke-interface {p1, v0, v3}, LGbi;->execSQL(Ljava/lang/String;[Ljava/lang/Object;)V
+    .line 9
+    .line 10
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
 
-    .line 204
-    .line 205
-    .line 206
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    if-nez v0, :cond_0
+
+    .line 15
+    .line 16
+    iget-object v0, p0, LQ0f;->a:Lio/reactivex/rxjava3/disposables/Disposable;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 17
+    .line 18
+    monitor-exit p0
+
+    .line 19
+    return-object v0
+
+    .line 20
+    :catchall_0
+    move-exception v0
+
+    .line 21
     goto :goto_0
 
-    .line 207
-    :cond_5
-    invoke-virtual {v3, v2, v6}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+    .line 22
+    :cond_0
+    :try_start_1
+    new-instance v0, LW0f;
 
-    .line 208
-    .line 209
-    .line 210
-    move-result-object p1
+    .line 23
+    .line 24
+    invoke-direct {v0}, LW0f;-><init>()V
 
-    .line 211
-    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    .line 25
+    .line 26
+    .line 27
+    throw v0
 
-    .line 212
-    .line 213
-    .line 214
-    move-result-object p1
-
-    .line 215
-    invoke-interface {p1, v1, v5}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    .line 216
-    .line 217
-    .line 218
-    move-result-object p1
-
-    .line 219
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
-
-    .line 220
-    .line 221
-    .line 222
+    .line 28
     :goto_0
-    return-void
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 223
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 29
+    throw v0
 .end method

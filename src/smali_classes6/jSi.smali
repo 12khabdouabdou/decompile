@@ -1,44 +1,35 @@
-.class public LjSi;
-.super LNDb;
+.class public final LjSi;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# instance fields
-.field public final X:Lbgj;
-
-.field public final t:Z
-
-
-# direct methods
-.method public constructor <init>(Ljava/lang/String;ZILjava/lang/Integer;Lbgj;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p3, p4, p1}, LNDb;-><init>(ILjava/lang/Integer;Ljava/lang/String;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-boolean p2, p0, LjSi;->t:Z
-
-    .line 5
-    .line 6
-    iput-object p5, p0, LjSi;->X:Lbgj;
-
-    .line 7
-    .line 8
-    return-void
-.end method
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # virtual methods
-.method public final getCause()Ljava/lang/Throwable;
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LjSi;->X:Lbgj;
+    new-instance v0, LlSi;
 
     .line 2
     .line 3
+    invoke-direct {v0, p1}, LlSi;-><init>(Landroid/os/Parcel;)V
+
+    .line 4
+    .line 5
+    .line 6
     return-object v0
+.end method
+
+.method public final newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    new-array p1, p1, [LlSi;
+
+    .line 2
+    .line 3
+    return-object p1
 .end method

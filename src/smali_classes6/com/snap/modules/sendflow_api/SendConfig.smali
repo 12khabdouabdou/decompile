@@ -1,12 +1,12 @@
 .class public final Lcom/snap/modules/sendflow_api/SendConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'analytics\':t?,\'encryptionInfo\':r?:\'[0]\',\'destinations\':r:\'[1]\',\'localMediaReferences\':a<t>,\'localPlatformData\':t?"
+    schema = "\'analytics\':t?,\'encryptionInfo\':r?:\'[0]\',\'destinations\':r:\'[1]\',\'localMediaReferences\':a<t>,\'localPlatformData\':t?,\'externalContentData\':t?"
     typeReferences = {
         Lcom/snap/modules/sendflow_api/EncryptionInfo;,
         Lcom/snap/modules/sendflow_api/Destinations;
@@ -21,6 +21,8 @@
 
 .field private _encryptionInfo:Lcom/snap/modules/sendflow_api/EncryptionInfo;
 
+.field private _externalContentData:[B
+
 .field private _localMediaReferences:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -34,7 +36,7 @@
 
 
 # direct methods
-.method public constructor <init>([BLcom/snap/modules/sendflow_api/EncryptionInfo;Lcom/snap/modules/sendflow_api/Destinations;Ljava/util/List;[B)V
+.method public constructor <init>([BLcom/snap/modules/sendflow_api/EncryptionInfo;Lcom/snap/modules/sendflow_api/Destinations;Ljava/util/List;[B[B)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -42,7 +44,7 @@
             "Lcom/snap/modules/sendflow_api/EncryptionInfo;",
             "Lcom/snap/modules/sendflow_api/Destinations;",
             "Ljava/util/List<",
-            "[B>;[B)V"
+            "[B>;[B[B)V"
         }
     .end annotation
 
@@ -72,5 +74,9 @@
 
     .line 13
     .line 14
+    iput-object p6, p0, Lcom/snap/modules/sendflow_api/SendConfig;->_externalContentData:[B
+
+    .line 15
+    .line 16
     return-void
 .end method

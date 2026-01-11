@@ -1,49 +1,43 @@
-.class public abstract synthetic LbH2;
+.class public final LbH2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic a:[I
+# instance fields
+.field public final a:Ljava/lang/String;
+
+.field public final b:LX2c;
+
+.field public final c:LjEd;
+
+.field public d:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+.field public e:Lx29;
+
+.field public f:Ljava/lang/Double;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>(Ljava/lang/String;LX2c;LjEd;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, LRG2;->values()[LRG2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
+    iput-object p1, p0, LbH2;->a:Ljava/lang/String;
 
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    iput-object p2, p0, LbH2;->b:LX2c;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    iput-object p3, p0, LbH2;->c:LjEd;
 
     .line 9
-    const/4 v2, 0x2
-
     .line 10
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 11
-    .line 12
-    :catch_0
-    sput-object v0, LbH2;->a:[I
-
-    .line 13
-    .line 14
     return-void
 .end method

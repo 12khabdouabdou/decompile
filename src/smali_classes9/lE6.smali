@@ -1,826 +1,555 @@
-.class public final LlE6;
-.super Lo17;
+.class public LlE6;
+.super Lgh1;
 .source "SourceFile"
+
+# interfaces
+.implements LDab;
 
 
 # instance fields
-.field public X:F
+.field public b:Ljava/lang/Boolean;
 
-.field public Y:Ljava/lang/String;
+.field public c:Ljava/lang/Long;
 
-.field public Z:Ljava/lang/String;
+.field public d:Ljava/lang/Double;
 
-.field public a:J
+.field public e:Ljava/lang/String;
 
-.field public b:F
+.field public f:LS50;
 
-.field public c:F
-
-.field public t:F
+.field public g:LgE6;
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const-wide/16 v0, 0x0
-
-    .line 5
-    .line 6
-    iput-wide v0, p0, LlE6;->a:J
-
-    .line 7
-    .line 8
-    const/4 v0, 0x0
-
-    .line 9
-    iput v0, p0, LlE6;->b:F
-
-    .line 10
-    .line 11
-    iput v0, p0, LlE6;->c:F
-
-    .line 12
-    .line 13
-    iput v0, p0, LlE6;->t:F
-
-    .line 14
-    .line 15
-    iput v0, p0, LlE6;->X:F
-
-    .line 16
-    .line 17
-    const-string v0, ""
-
-    .line 18
-    .line 19
-    iput-object v0, p0, LlE6;->Y:Ljava/lang/String;
-
-    .line 20
-    .line 21
-    iput-object v0, p0, LlE6;->Z:Ljava/lang/String;
-
-    .line 22
-    .line 23
-    const/4 v0, 0x0
-
-    .line 24
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 25
-    .line 26
-    const/4 v0, -0x1
-
-    .line 27
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 28
-    .line 29
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 6
+.method public final b()Ljava/util/HashMap;
+    .locals 2
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    new-instance v0, Ljava/util/HashMap;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    const/16 v1, 0x80
 
+    .line 4
     .line 5
-    iget-wide v1, p0, LlE6;->a:J
+    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
     .line 6
     .line 7
-    const-wide/16 v3, 0x0
+    .line 8
+    invoke-virtual {p0, v0}, LlE6;->g(Ljava/util/Map;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object v0
+.end method
+
+.method public d(LeO3;Ljava/util/Set;)V
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    new-array v0, v0, [B
+
+    .line 3
+    .line 4
+    const/4 v1, 0x2
+
+    .line 5
+    iget-object v2, p0, LlE6;->b:Ljava/lang/Boolean;
+
+    .line 6
+    .line 7
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->U(LeO3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
 
     .line 8
     .line 9
-    cmp-long v5, v1, v3
-
     .line 10
+    const/4 v1, 0x3
+
     .line 11
-    if-eqz v5, :cond_0
+    iget-object v2, p0, LlE6;->g:LgE6;
 
     .line 12
     .line 13
-    const/4 v3, 0x1
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->Y(LeO3;I[BLjBe;Ljava/util/Set;)V
 
     .line 14
-    invoke-static {v3, v1, v2}, Lsa3;->k(IJ)I
-
     .line 15
     .line 16
+    const/4 v1, 0x4
+
     .line 17
-    move-result v1
+    iget-object v2, p0, LlE6;->d:Ljava/lang/Double;
 
     .line 18
-    add-int/2addr v0, v1
-
     .line 19
-    :cond_0
-    iget v1, p0, LlE6;->b:F
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->V(LeO3;I[BLjava/lang/Double;Ljava/util/Set;)V
 
     .line 20
     .line 21
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
-
     .line 22
-    .line 23
-    .line 24
-    move-result v1
+    const/4 v1, 0x5
 
+    .line 23
+    iget-object v2, p0, LlE6;->f:LS50;
+
+    .line 24
     .line 25
-    const/4 v2, 0x0
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->W(LeO3;I[BLUT6;Ljava/util/Set;)V
 
     .line 26
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
-
     .line 27
     .line 28
+    const/4 v1, 0x6
+
     .line 29
-    move-result v3
+    iget-object v2, p0, LlE6;->c:Ljava/lang/Long;
 
     .line 30
-    if-eq v1, v3, :cond_1
-
     .line 31
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->X(LeO3;I[BLjava/lang/Long;Ljava/util/Set;)V
+
     .line 32
-    const/4 v1, 0x2
-
     .line 33
-    invoke-static {v1}, Lsa3;->h(I)I
-
     .line 34
-    .line 35
-    .line 36
-    move-result v1
+    const/4 v1, 0x7
 
+    .line 35
+    iget-object v2, p0, LlE6;->e:Ljava/lang/String;
+
+    .line 36
     .line 37
-    add-int/2addr v0, v1
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->Z(LeO3;I[BLjava/lang/String;Ljava/util/Set;)V
 
     .line 38
-    :cond_1
-    iget v1, p0, LlE6;->c:F
-
     .line 39
     .line 40
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-virtual {p1, v0}, LeO3;->k([B)V
 
     .line 41
     .line 42
     .line 43
-    move-result v1
+    return-void
+.end method
 
+.method public f(Ljava/util/Map;)I
+    .locals 4
+
+    .line 1
+    const-string v0, "dummy_nested_parent_in_a_list_boolean"
+
+    .line 2
+    .line 3
+    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Ljava/lang/Boolean;
+
+    .line 8
+    .line 9
+    iput-object v0, p0, LlE6;->b:Ljava/lang/Boolean;
+
+    .line 10
+    .line 11
+    const/4 v1, 0x1
+
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    const/4 v0, 0x1
+
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 17
+    :goto_0
+    new-instance v2, LgE6;
+
+    .line 18
+    .line 19
+    invoke-direct {v2}, LgE6;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    iput-object v2, p0, LlE6;->g:LgE6;
+
+    .line 23
+    .line 24
+    invoke-virtual {v2, p1}, LgE6;->f(Ljava/util/Map;)I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v2
+
+    .line 28
+    if-nez v2, :cond_1
+
+    .line 29
+    .line 30
+    const/4 v3, 0x0
+
+    .line 31
+    iput-object v3, p0, LlE6;->g:LgE6;
+
+    .line 32
+    .line 33
+    :cond_1
+    add-int/2addr v0, v2
+
+    .line 34
+    const-string v2, "dummy_nested_parent_in_a_list_double"
+
+    .line 35
+    .line 36
+    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v2
+
+    .line 40
+    check-cast v2, Ljava/lang/Double;
+
+    .line 41
+    .line 42
+    iput-object v2, p0, LlE6;->d:Ljava/lang/Double;
+
+    .line 43
     .line 44
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
+    if-eqz v2, :cond_2
 
     .line 45
     .line 46
-    .line 47
-    move-result v3
+    add-int/lit8 v0, v0, 0x1
 
+    .line 47
     .line 48
-    if-eq v1, v3, :cond_2
+    :cond_2
+    const-string v2, "dummy_nested_parent_in_a_list_enum"
 
     .line 49
     .line 50
-    const/4 v1, 0x3
+    invoke-interface {p1, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     .line 51
-    invoke-static {v1}, Lsa3;->h(I)I
-
     .line 52
     .line 53
+    move-result v3
+
     .line 54
-    move-result v1
+    if-eqz v3, :cond_4
 
     .line 55
-    add-int/2addr v0, v1
-
     .line 56
-    :cond_2
-    iget v1, p0, LlE6;->t:F
+    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 57
     .line 58
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
-
     .line 59
-    .line 60
-    .line 61
-    move-result v1
+    move-result-object v2
 
+    .line 60
+    instance-of v3, v2, Ljava/lang/String;
+
+    .line 61
     .line 62
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
+    if-eqz v3, :cond_3
 
     .line 63
     .line 64
-    .line 65
-    move-result v3
+    check-cast v2, Ljava/lang/String;
 
+    .line 65
     .line 66
-    if-eq v1, v3, :cond_3
+    invoke-static {v2}, LS50;->valueOf(Ljava/lang/String;)LS50;
 
     .line 67
     .line 68
-    const/4 v1, 0x4
-
     .line 69
-    invoke-static {v1}, Lsa3;->h(I)I
+    move-result-object v2
 
     .line 70
+    iput-object v2, p0, LlE6;->f:LS50;
+
     .line 71
     .line 72
-    move-result v1
+    goto :goto_1
 
     .line 73
-    add-int/2addr v0, v1
+    :cond_3
+    check-cast v2, LS50;
 
     .line 74
-    :cond_3
-    iget v1, p0, LlE6;->X:F
-
     .line 75
-    .line 76
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+    iput-object v2, p0, LlE6;->f:LS50;
 
+    .line 76
     .line 77
+    :goto_1
+    add-int/lit8 v0, v0, 0x1
+
     .line 78
     .line 79
-    move-result v1
+    :cond_4
+    const-string v2, "dummy_nested_parent_in_a_list_long"
 
     .line 80
-    invoke-static {v2}, Ljava/lang/Float;->floatToIntBits(F)I
-
     .line 81
+    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 82
     .line 83
-    move-result v2
-
     .line 84
-    if-eq v1, v2, :cond_4
+    move-result-object v2
 
     .line 85
-    .line 86
-    const/4 v1, 0x5
+    check-cast v2, Ljava/lang/Long;
 
+    .line 86
     .line 87
-    invoke-static {v1}, Lsa3;->h(I)I
+    iput-object v2, p0, LlE6;->c:Ljava/lang/Long;
 
     .line 88
     .line 89
-    .line 90
-    move-result v1
+    if-eqz v2, :cond_5
 
+    .line 90
     .line 91
-    add-int/2addr v0, v1
+    add-int/lit8 v0, v0, 0x1
 
     .line 92
-    :cond_4
-    iget-object v1, p0, LlE6;->Y:Ljava/lang/String;
-
     .line 93
+    :cond_5
+    const-string v2, "dummy_nested_parent_in_a_list_string"
+
     .line 94
-    const-string v2, ""
-
     .line 95
-    .line 96
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 96
     .line 97
     .line 98
+    move-result-object p1
+
     .line 99
-    move-result v1
+    check-cast p1, Ljava/lang/String;
 
     .line 100
-    if-nez v1, :cond_5
-
     .line 101
-    .line 102
-    const/4 v1, 0x6
+    iput-object p1, p0, LlE6;->e:Ljava/lang/String;
 
+    .line 102
     .line 103
-    iget-object v3, p0, LlE6;->Y:Ljava/lang/String;
+    if-eqz p1, :cond_6
 
     .line 104
     .line 105
-    invoke-static {v1, v3}, Lsa3;->q(ILjava/lang/String;)I
-
-    .line 106
-    .line 107
-    .line 108
-    move-result v1
-
-    .line 109
     add-int/2addr v0, v1
 
-    .line 110
-    :cond_5
-    iget-object v1, p0, LlE6;->Z:Ljava/lang/String;
-
-    .line 111
-    .line 112
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 113
-    .line 114
-    .line 115
-    move-result v1
-
-    .line 116
-    if-nez v1, :cond_6
-
-    .line 117
-    .line 118
-    const/4 v1, 0x7
-
-    .line 119
-    iget-object v2, p0, LlE6;->Z:Ljava/lang/String;
-
-    .line 120
-    .line 121
-    invoke-static {v1, v2}, Lsa3;->q(ILjava/lang/String;)I
-
-    .line 122
-    .line 123
-    .line 124
-    move-result v1
-
-    .line 125
-    add-int/2addr v1, v0
-
-    .line 126
-    return v1
-
-    .line 127
+    .line 106
     :cond_6
     return v0
 .end method
 
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
+.method public g(Ljava/util/Map;)V
+    .locals 3
 
     .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    iget-object v0, p0, LlE6;->b:Ljava/lang/Boolean;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_8
-
-    .line 6
-    .line 7
-    const/16 v1, 0x8
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_7
-
-    .line 10
-    .line 11
-    const/16 v1, 0x15
-
-    .line 12
-    .line 13
-    if-eq v0, v1, :cond_6
-
-    .line 14
-    .line 15
-    const/16 v1, 0x1d
-
-    .line 16
-    .line 17
-    if-eq v0, v1, :cond_5
-
-    .line 18
-    .line 19
-    const/16 v1, 0x25
-
-    .line 20
-    .line 21
-    if-eq v0, v1, :cond_4
-
-    .line 22
-    .line 23
-    const/16 v1, 0x2d
-
-    .line 24
-    .line 25
-    if-eq v0, v1, :cond_3
-
-    .line 26
-    .line 27
-    const/16 v1, 0x32
-
-    .line 28
-    .line 29
-    if-eq v0, v1, :cond_2
-
-    .line 30
-    .line 31
-    const/16 v1, 0x3a
-
-    .line 32
-    .line 33
-    if-eq v0, v1, :cond_1
-
-    .line 34
-    .line 35
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v0
-
-    .line 39
-    if-nez v0, :cond_0
-
-    .line 40
-    .line 41
-    goto :goto_1
-
-    .line 42
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v0
-
-    .line 46
-    iput-object v0, p0, LlE6;->Z:Ljava/lang/String;
-
-    .line 47
-    .line 48
-    goto :goto_0
-
-    .line 49
-    :cond_2
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v0
-
-    .line 53
-    iput-object v0, p0, LlE6;->Y:Ljava/lang/String;
-
-    .line 54
-    .line 55
-    goto :goto_0
-
-    .line 56
-    :cond_3
-    invoke-virtual {p1}, Lqa3;->i()F
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v0
-
-    .line 60
-    iput v0, p0, LlE6;->X:F
-
-    .line 61
-    .line 62
-    goto :goto_0
-
-    .line 63
-    :cond_4
-    invoke-virtual {p1}, Lqa3;->i()F
-
-    .line 64
-    .line 65
-    .line 66
-    move-result v0
-
-    .line 67
-    iput v0, p0, LlE6;->t:F
-
-    .line 68
-    .line 69
-    goto :goto_0
-
-    .line 70
-    :cond_5
-    invoke-virtual {p1}, Lqa3;->i()F
-
-    .line 71
-    .line 72
-    .line 73
-    move-result v0
-
-    .line 74
-    iput v0, p0, LlE6;->c:F
-
-    .line 75
-    .line 76
-    goto :goto_0
-
-    .line 77
-    :cond_6
-    invoke-virtual {p1}, Lqa3;->i()F
-
-    .line 78
-    .line 79
-    .line 80
-    move-result v0
-
-    .line 81
-    iput v0, p0, LlE6;->b:F
-
-    .line 82
-    .line 83
-    goto :goto_0
-
-    .line 84
-    :cond_7
-    invoke-virtual {p1}, Lqa3;->r()J
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-wide v0
-
-    .line 88
-    iput-wide v0, p0, LlE6;->a:J
-
-    .line 89
-    .line 90
-    goto :goto_0
-
-    .line 91
-    :cond_8
-    :goto_1
-    return-object p0
-.end method
-
-.method public final writeTo(Lsa3;)V
-    .locals 5
-
-    .line 1
-    iget-wide v0, p0, LlE6;->a:J
-
-    .line 2
-    .line 3
-    const-wide/16 v2, 0x0
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    cmp-long v4, v0, v2
+    const-string v1, "dummy_nested_parent_in_a_list_boolean"
 
     .line 6
     .line 7
-    if-eqz v4, :cond_0
+    move-object v2, p1
 
     .line 8
-    .line 9
-    const/4 v2, 0x1
+    check-cast v2, Ljava/util/HashMap;
 
+    .line 9
     .line 10
-    invoke-virtual {p1, v2, v0, v1}, Lsa3;->J(IJ)V
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
     .line 13
     :cond_0
-    iget v0, p0, LlE6;->b:F
+    iget-object v0, p0, LlE6;->c:Ljava/lang/Long;
 
     .line 14
     .line 15
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+    if-eqz v0, :cond_1
 
     .line 16
     .line 17
-    .line 18
-    move-result v0
+    const-string v1, "dummy_nested_parent_in_a_list_long"
 
+    .line 18
     .line 19
-    const/4 v1, 0x0
+    move-object v2, p1
 
     .line 20
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+    check-cast v2, Ljava/util/HashMap;
 
     .line 21
     .line 22
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 23
-    move-result v2
-
     .line 24
-    if-eq v0, v2, :cond_1
-
     .line 25
-    .line 26
-    const/4 v0, 0x2
+    :cond_1
+    iget-object v0, p0, LlE6;->d:Ljava/lang/Double;
 
+    .line 26
     .line 27
-    iget v2, p0, LlE6;->b:F
+    if-eqz v0, :cond_2
 
     .line 28
     .line 29
-    invoke-virtual {p1, v0, v2}, Lsa3;->G(IF)V
+    const-string v1, "dummy_nested_parent_in_a_list_double"
 
     .line 30
     .line 31
+    move-object v2, p1
+
     .line 32
-    :cond_1
-    iget v0, p0, LlE6;->c:F
+    check-cast v2, Ljava/util/HashMap;
 
     .line 33
     .line 34
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
     .line 36
     .line 37
-    move-result v0
+    :cond_2
+    iget-object v0, p0, LlE6;->e:Ljava/lang/String;
 
     .line 38
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
-
     .line 39
+    if-eqz v0, :cond_3
+
     .line 40
     .line 41
-    move-result v2
+    const-string v1, "dummy_nested_parent_in_a_list_string"
 
     .line 42
-    if-eq v0, v2, :cond_2
-
     .line 43
+    move-object v2, p1
+
     .line 44
-    const/4 v0, 0x3
+    check-cast v2, Ljava/util/HashMap;
 
     .line 45
-    iget v2, p0, LlE6;->c:F
-
     .line 46
-    .line 47
-    invoke-virtual {p1, v0, v2}, Lsa3;->G(IF)V
+    invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 47
     .line 48
     .line 49
+    :cond_3
+    iget-object v0, p0, LlE6;->f:LS50;
+
     .line 50
-    :cond_2
-    iget v0, p0, LlE6;->t:F
-
     .line 51
-    .line 52
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+    if-eqz v0, :cond_4
 
+    .line 52
     .line 53
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 54
     .line 55
-    move-result v0
-
     .line 56
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
+    move-result-object v0
 
     .line 57
-    .line 58
-    .line 59
-    move-result v2
+    move-object v1, p1
 
+    .line 58
+    check-cast v1, Ljava/util/HashMap;
+
+    .line 59
     .line 60
-    if-eq v0, v2, :cond_3
+    const-string v2, "dummy_nested_parent_in_a_list_enum"
 
     .line 61
     .line 62
-    const/4 v0, 0x4
+    invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 63
-    iget v2, p0, LlE6;->t:F
-
     .line 64
     .line 65
-    invoke-virtual {p1, v0, v2}, Lsa3;->G(IF)V
+    :cond_4
+    iget-object v0, p0, LlE6;->g:LgE6;
 
     .line 66
     .line 67
+    if-eqz v0, :cond_5
+
     .line 68
-    :cond_3
-    iget v0, p0, LlE6;->X:F
-
     .line 69
-    .line 70
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+    iget-object v0, v0, LgE6;->b:Ljava/lang/String;
 
+    .line 70
     .line 71
+    if-eqz v0, :cond_5
+
     .line 72
     .line 73
-    move-result v0
+    const-string v1, "dummy_nested_parent_in_a_list_concrete_class_string"
 
     .line 74
-    invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
-
     .line 75
+    check-cast p1, Ljava/util/HashMap;
+
     .line 76
     .line 77
-    move-result v1
+    invoke-virtual {p1, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 78
-    if-eq v0, v1, :cond_4
-
     .line 79
     .line 80
-    const/4 v0, 0x5
-
-    .line 81
-    iget v1, p0, LlE6;->X:F
-
-    .line 82
-    .line 83
-    invoke-virtual {p1, v0, v1}, Lsa3;->G(IF)V
-
-    .line 84
-    .line 85
-    .line 86
-    :cond_4
-    iget-object v0, p0, LlE6;->Y:Ljava/lang/String;
-
-    .line 87
-    .line 88
-    const-string v1, ""
-
-    .line 89
-    .line 90
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 91
-    .line 92
-    .line 93
-    move-result v0
-
-    .line 94
-    if-nez v0, :cond_5
-
-    .line 95
-    .line 96
-    const/4 v0, 0x6
-
-    .line 97
-    iget-object v2, p0, LlE6;->Y:Ljava/lang/String;
-
-    .line 98
-    .line 99
-    invoke-virtual {p1, v0, v2}, Lsa3;->R(ILjava/lang/String;)V
-
-    .line 100
-    .line 101
-    .line 102
     :cond_5
-    iget-object v0, p0, LlE6;->Z:Ljava/lang/String;
-
-    .line 103
-    .line 104
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 105
-    .line 106
-    .line 107
-    move-result v0
-
-    .line 108
-    if-nez v0, :cond_6
-
-    .line 109
-    .line 110
-    const/4 v0, 0x7
-
-    .line 111
-    iget-object v1, p0, LlE6;->Z:Ljava/lang/String;
-
-    .line 112
-    .line 113
-    invoke-virtual {p1, v0, v1}, Lsa3;->R(ILjava/lang/String;)V
-
-    .line 114
-    .line 115
-    .line 116
-    :cond_6
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 117
-    .line 118
-    .line 119
     return-void
 .end method

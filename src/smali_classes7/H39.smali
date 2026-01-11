@@ -1,17 +1,46 @@
 .class public final LH39;
-.super LSpk;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/profile/communities/IMembersDataProvider;
 
 
 # instance fields
-.field public final a:Lr1f;
+.field public final X:Lkotlin/jvm/functions/Function2;
 
-.field public final b:Ljava/lang/String;
+.field public final Y:Lkotlin/jvm/functions/Function1;
+
+.field public final Z:Lkotlin/jvm/functions/Function0;
+
+.field public final a:Lcom/snap/composer/people/FriendmojiProviding;
+
+.field public final b:Lcom/snap/composer/people/FriendscoreProviding;
+
+.field public final c:Lkotlin/jvm/functions/Function1;
+
+.field public final e0:Lkotlin/jvm/functions/Function0;
+
+.field public final t:Lkotlin/jvm/functions/Function3;
 
 
 # direct methods
-.method public constructor <init>(Lr1f;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/snap/composer/people/FriendmojiProviding;Lcom/snap/composer/people/FriendscoreProviding;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/people/FriendmojiProviding;",
+            "Lcom/snap/composer/people/FriendscoreProviding;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function3;",
+            "Lkotlin/jvm/functions/Function2;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function0;",
+            "Lkotlin/jvm/functions/Function0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -19,202 +48,303 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LH39;->a:Lr1f;
+    iput-object p1, p0, LH39;->a:Lcom/snap/composer/people/FriendmojiProviding;
 
     .line 5
     .line 6
-    iput-object p2, p0, LH39;->b:Ljava/lang/String;
+    iput-object p2, p0, LH39;->b:Lcom/snap/composer/people/FriendscoreProviding;
 
     .line 7
     .line 8
+    iput-object p3, p0, LH39;->c:Lkotlin/jvm/functions/Function1;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LH39;->t:Lkotlin/jvm/functions/Function3;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LH39;->X:Lkotlin/jvm/functions/Function2;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, LH39;->Y:Lkotlin/jvm/functions/Function1;
+
+    .line 15
+    .line 16
+    iput-object p7, p0, LH39;->Z:Lkotlin/jvm/functions/Function0;
+
+    .line 17
+    .line 18
+    iput-object p8, p0, LH39;->e0:Lkotlin/jvm/functions/Function0;
+
+    .line 19
+    .line 20
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public getFriendScoreProvider()Lcom/snap/composer/people/FriendscoreProviding;
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    iget-object v0, p0, LH39;->b:Lcom/snap/composer/people/FriendscoreProviding;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LH39;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LH39;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, LH39;->a:Lr1f;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, LH39;->a:Lr1f;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, LH39;->b:Ljava/lang/String;
-
-    .line 25
-    .line 26
-    iget-object p1, p1, LH39;->b:Ljava/lang/String;
-
-    .line 27
-    .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
-    return v0
+    return-object v0
 .end method
 
-.method public final hashCode()I
-    .locals 2
+.method public getFriendmojiProvider()Lcom/snap/composer/people/FriendmojiProviding;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LH39;->a:Lr1f;
+    iget-object v0, p0, LH39;->a:Lcom/snap/composer/people/FriendmojiProviding;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lr1f;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LH39;->b:Ljava/lang/String;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
+    return-object v0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+.method public getGroupMembers(Ljava/lang/String;Ljava/lang/Double;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/Double;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Lcom/snap/composer/people/User;",
+            ">;>;"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, LH39;->X:Lkotlin/jvm/functions/Function2;
 
     .line 2
     .line 3
-    const-string v1, "Success(resolution="
+    invoke-interface {v0, p1, p2}, Lkotlin/jvm/functions/Function2;->R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
     .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LH39;->a:Lr1f;
+    move-result-object p1
 
+    .line 7
+    check-cast p1, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public getGroupMembersCount(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LH39;->Y:Lkotlin/jvm/functions/Function1;
+
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 8
+    .line 9
+    return-object p1
+.end method
+
+.method public getRankedGroupMembers(Ljava/lang/String;DLjava/lang/Double;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "D",
+            "Ljava/lang/Double;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "LrPj;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LH39;->t:Lkotlin/jvm/functions/Function3;
+
+    .line 2
+    .line 3
+    invoke-static {p2, p3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p2
+
+    .line 7
+    invoke-interface {v0, p1, p2, p4}, Lkotlin/jvm/functions/Function3;->H(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
     .line 11
+    check-cast p1, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 12
     .line 13
-    const-string v1, ", mediaEncoding="
+    return-object p1
+.end method
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public observeGroupMembersWithActiveGroupSnap(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
 
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LH39;->b:Ljava/lang/String;
+    .line 1
+    iget-object v0, p0, LH39;->c:Lkotlin/jvm/functions/Function1;
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 2
+    .line 3
+    invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 7
+    check-cast p1, Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 8
+    .line 9
+    return-object p1
+.end method
 
-    .line 29
-    .line 30
-    .line 31
+.method public observeIncomingFriends()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "LKl9;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LH39;->Z:Lkotlin/jvm/functions/Function0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
     move-result-object v0
 
-    .line 32
+    .line 7
+    check-cast v0, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 8
+    .line 9
     return-object v0
+.end method
+
+.method public observeOutgoingFriends()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Lcom/snap/composer/people/Friend;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LH39;->e0:Lkotlin/jvm/functions/Function0;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 8
+    .line 9
+    return-object v0
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/profile/communities/IMembersDataProvider;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
 .end method

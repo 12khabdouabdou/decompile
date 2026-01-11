@@ -5,7 +5,7 @@
 # interfaces
 .implements Lio/reactivex/rxjava3/core/FlowableSubscriber;
 .implements Lio/reactivex/rxjava3/core/CompletableObserver;
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -24,18 +24,18 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/util/concurrent/atomic/AtomicReference<",
-        "Lc7i;",
+        "Ltvi;",
         ">;",
         "Lio/reactivex/rxjava3/core/FlowableSubscriber<",
         "TR;>;",
         "Lio/reactivex/rxjava3/core/CompletableObserver;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public b:Lio/reactivex/rxjava3/internal/operators/flowable/FlowableJust;
 
@@ -45,7 +45,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableJust;)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/internal/operators/flowable/FlowableJust;)V
     .locals 0
 
     .line 1
@@ -54,7 +54,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -129,11 +129,11 @@
 
     .line 4
     .line 5
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:Lmvi;
 
     .line 6
     .line 7
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 8
     .line 9
@@ -149,7 +149,7 @@
 
     .line 13
     .line 14
-    invoke-interface {v0, p0}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v0, p0}, LSFe;->subscribe(Lmvi;)V
 
     .line 15
     .line 16
@@ -161,11 +161,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 4
     .line 5
@@ -177,26 +177,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:Lmvi;
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, p1}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
-
-.method public final onSubscribe(Lc7i;)V
-    .locals 1
-
-    .line 4
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->t:Ljava/util/concurrent/atomic/AtomicLong;
-
-    invoke-static {p0, v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Lc7i;)V
-
     return-void
 .end method
 
@@ -206,7 +195,7 @@
     .line 1
     iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->c:Lio/reactivex/rxjava3/disposables/Disposable;
 
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->s(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/disposables/DisposableHelper;->r(Lio/reactivex/rxjava3/disposables/Disposable;Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     move-result v0
 
@@ -216,10 +205,21 @@
     iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->c:Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 3
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:LV6i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->a:Lmvi;
 
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     :cond_0
+    return-void
+.end method
+
+.method public final onSubscribe(Ltvi;)V
+    .locals 1
+
+    .line 4
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;->t:Ljava/util/concurrent/atomic/AtomicLong;
+
+    invoke-static {p0, v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->c(Ljava/util/concurrent/atomic/AtomicReference;Ljava/util/concurrent/atomic/AtomicLong;Ltvi;)V
+
     return-void
 .end method

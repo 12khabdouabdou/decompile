@@ -1,17 +1,17 @@
-.class public final Lgeg;
-.super Ljava/lang/Exception;
+.class public interface abstract Lgeg;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+# virtual methods
+.method public abstract a()Ljava/lang/Long;
+.end method
 
-    .line 1
-    invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+.method public abstract b()Z
+.end method
 
-    .line 2
-    .line 3
-    .line 4
-    return-void
+.method public abstract c()LMQ9;
+.end method
+
+.method public abstract getIdentifier()Ljava/lang/String;
 .end method

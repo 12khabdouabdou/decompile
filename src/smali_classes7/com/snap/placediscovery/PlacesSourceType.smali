@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'PLACES_TRAY_SEARCH\':0,\'PLACES_SEARCH_PRE_TYPE\':1,\'PLACES_SEARCH_POST_TYPE\':2"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

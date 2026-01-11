@@ -35,7 +35,7 @@
     .locals 5
 
     .line 1
-    invoke-static {p3}, Lrsb;->c(Landroid/os/Bundle;)V
+    invoke-static {p3}, LTFb;->d(Landroid/os/Bundle;)V
 
     .line 2
     .line 3
@@ -186,13 +186,13 @@
 
     .line 76
     .line 77
-    invoke-static {p2, p1}, Lh49;->i(ILjava/lang/String;)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
+    invoke-static {p2, p1}, LD93;->k(ILjava/lang/String;)Landroid/media/session/MediaSessionManager$RemoteUserInfo;
 
     .line 78
     .line 79
     .line 80
     :cond_2
-    invoke-virtual {v2}, Landroidx/media/MediaBrowserServiceCompat;->a()Liok;
+    invoke-virtual {v2}, Landroidx/media/MediaBrowserServiceCompat;->a()LDNk;
 
     .line 81
     .line 82

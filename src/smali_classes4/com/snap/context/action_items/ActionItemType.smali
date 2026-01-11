@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'Camera\':0,\'Attachment\':1,\'Chat\':2,\'ChatAccessory\':3,\'Profile\':4,\'Context\':5,\'Share\':6,\'Edit\':7,\'Post\':8,\'Onboarding\':9,\'ActionMenu\':10,\'Notifications\':11,\'Subscribe\':12,\'Attribution\':13,\'Badge\':14,\'Favorite\':15,\'Mention\':16,\'Sponsor\':17,\'Comment\':18,\'Scan\':19,\'Poster\':20,\'Rating\':21,\'CreatorInfo\':22,\'ViewCount\':23,\'PostCaption\':24,\'TitleAttachment\':25,\'SecondaryAttribution\':26,\'SaveToCameraRoll\':27"
-    type = .enum LJv3;->a:LJv3;
+    schema = "\'Camera\':0,\'Attachment\':1,\'Chat\':2,\'ChatAccessory\':3,\'Profile\':4,\'Context\':5,\'Share\':6,\'Edit\':7,\'Post\':8,\'Onboarding\':9,\'ActionMenu\':10,\'Notifications\':11,\'Subscribe\':12,\'Attribution\':13,\'Badge\':14,\'Favorite\':15,\'Mention\':16,\'Sponsor\':17,\'Comment\':18,\'Scan\':19,\'Poster\':20,\'Rating\':21,\'CreatorInfo\':22,\'ViewCount\':23,\'PostCaption\':24,\'TitleAttachment\':25,\'SecondaryAttribution\':26,\'SaveToCameraRoll\':27,\'CopyLink\':28,\'Save\':29,\'TopLevelReaction\':30"
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -38,6 +38,8 @@
 
 .field public static final enum Context:Lcom/snap/context/action_items/ActionItemType;
 
+.field public static final enum CopyLink:Lcom/snap/context/action_items/ActionItemType;
+
 .field public static final enum CreatorInfo:Lcom/snap/context/action_items/ActionItemType;
 
 .field public static final enum Edit:Lcom/snap/context/action_items/ActionItemType;
@@ -60,6 +62,8 @@
 
 .field public static final enum Rating:Lcom/snap/context/action_items/ActionItemType;
 
+.field public static final enum Save:Lcom/snap/context/action_items/ActionItemType;
+
 .field public static final enum SaveToCameraRoll:Lcom/snap/context/action_items/ActionItemType;
 
 .field public static final enum Scan:Lcom/snap/context/action_items/ActionItemType;
@@ -74,6 +78,8 @@
 
 .field public static final enum TitleAttachment:Lcom/snap/context/action_items/ActionItemType;
 
+.field public static final enum TopLevelReaction:Lcom/snap/context/action_items/ActionItemType;
+
 .field public static final enum ViewCount:Lcom/snap/context/action_items/ActionItemType;
 
 .field public static final synthetic a:[Lcom/snap/context/action_items/ActionItemType;
@@ -81,7 +87,7 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 52
+    .locals 55
 
     .line 1
     const/16 v8, 0xd
@@ -776,186 +782,285 @@
 
     .line 356
     .line 357
-    const/16 v1, 0x1c
+    new-instance v1, Lcom/snap/context/action_items/ActionItemType;
 
     .line 358
     .line 359
-    new-array v1, v1, [Lcom/snap/context/action_items/ActionItemType;
+    const-string v8, "CopyLink"
 
     .line 360
     .line 361
-    aput-object v6, v1, v24
+    move-object/from16 v52, v0
 
     .line 362
     .line 363
-    aput-object v7, v1, v25
+    const/16 v0, 0x1c
 
     .line 364
     .line 365
-    aput-object v5, v1, v26
+    invoke-direct {v1, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 366
     .line 367
-    aput-object v4, v1, v27
-
     .line 368
+    sput-object v1, Lcom/snap/context/action_items/ActionItemType;->CopyLink:Lcom/snap/context/action_items/ActionItemType;
+
     .line 369
-    aput-object v3, v1, v28
-
     .line 370
+    new-instance v0, Lcom/snap/context/action_items/ActionItemType;
+
     .line 371
-    aput-object v2, v1, v29
-
     .line 372
+    const-string v8, "Save"
+
     .line 373
-    aput-object v39, v1, v30
-
     .line 374
+    move-object/from16 v53, v1
+
     .line 375
-    aput-object v38, v1, v31
-
     .line 376
+    const/16 v1, 0x1d
+
     .line 377
-    aput-object v15, v1, v32
-
     .line 378
-    .line 379
-    aput-object v14, v1, v33
+    invoke-direct {v0, v8, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 379
     .line 380
     .line 381
-    aput-object v13, v1, v34
+    sput-object v0, Lcom/snap/context/action_items/ActionItemType;->Save:Lcom/snap/context/action_items/ActionItemType;
 
     .line 382
     .line 383
-    aput-object v12, v1, v35
+    new-instance v1, Lcom/snap/context/action_items/ActionItemType;
 
     .line 384
     .line 385
-    aput-object v11, v1, v36
+    const-string v8, "TopLevelReaction"
 
     .line 386
     .line 387
-    aput-object v10, v1, v37
+    move-object/from16 v54, v0
 
     .line 388
     .line 389
-    const/16 v23, 0xe
+    const/16 v0, 0x1e
 
     .line 390
     .line 391
-    aput-object v9, v1, v23
+    invoke-direct {v1, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 392
     .line 393
+    .line 394
+    sput-object v1, Lcom/snap/context/action_items/ActionItemType;->TopLevelReaction:Lcom/snap/context/action_items/ActionItemType;
+
+    .line 395
+    .line 396
+    const/16 v0, 0x1f
+
+    .line 397
+    .line 398
+    new-array v0, v0, [Lcom/snap/context/action_items/ActionItemType;
+
+    .line 399
+    .line 400
+    aput-object v6, v0, v24
+
+    .line 401
+    .line 402
+    aput-object v7, v0, v25
+
+    .line 403
+    .line 404
+    aput-object v5, v0, v26
+
+    .line 405
+    .line 406
+    aput-object v4, v0, v27
+
+    .line 407
+    .line 408
+    aput-object v3, v0, v28
+
+    .line 409
+    .line 410
+    aput-object v2, v0, v29
+
+    .line 411
+    .line 412
+    aput-object v39, v0, v30
+
+    .line 413
+    .line 414
+    aput-object v38, v0, v31
+
+    .line 415
+    .line 416
+    aput-object v15, v0, v32
+
+    .line 417
+    .line 418
+    aput-object v14, v0, v33
+
+    .line 419
+    .line 420
+    aput-object v13, v0, v34
+
+    .line 421
+    .line 422
+    aput-object v12, v0, v35
+
+    .line 423
+    .line 424
+    aput-object v11, v0, v36
+
+    .line 425
+    .line 426
+    aput-object v10, v0, v37
+
+    .line 427
+    .line 428
+    const/16 v23, 0xe
+
+    .line 429
+    .line 430
+    aput-object v9, v0, v23
+
+    .line 431
+    .line 432
     const/16 v22, 0xf
 
-    .line 394
-    .line 395
-    aput-object v40, v1, v22
+    .line 433
+    .line 434
+    aput-object v40, v0, v22
 
-    .line 396
-    .line 397
+    .line 435
+    .line 436
     const/16 v21, 0x10
 
-    .line 398
-    .line 399
-    aput-object v41, v1, v21
+    .line 437
+    .line 438
+    aput-object v41, v0, v21
 
-    .line 400
-    .line 401
+    .line 439
+    .line 440
     const/16 v20, 0x11
 
-    .line 402
-    .line 403
-    aput-object v42, v1, v20
+    .line 441
+    .line 442
+    aput-object v42, v0, v20
 
-    .line 404
-    .line 405
+    .line 443
+    .line 444
     const/16 v19, 0x12
 
-    .line 406
-    .line 407
-    aput-object v43, v1, v19
+    .line 445
+    .line 446
+    aput-object v43, v0, v19
 
-    .line 408
-    .line 409
+    .line 447
+    .line 448
     const/16 v18, 0x13
 
-    .line 410
-    .line 411
-    aput-object v44, v1, v18
+    .line 449
+    .line 450
+    aput-object v44, v0, v18
 
-    .line 412
-    .line 413
+    .line 451
+    .line 452
     const/16 v17, 0x14
 
-    .line 414
-    .line 415
-    aput-object v45, v1, v17
+    .line 453
+    .line 454
+    aput-object v45, v0, v17
 
-    .line 416
-    .line 417
+    .line 455
+    .line 456
     const/16 v16, 0x15
 
-    .line 418
-    .line 419
-    aput-object v46, v1, v16
+    .line 457
+    .line 458
+    aput-object v46, v0, v16
 
-    .line 420
-    .line 421
+    .line 459
+    .line 460
     const/16 v2, 0x16
 
-    .line 422
-    .line 423
-    aput-object v47, v1, v2
+    .line 461
+    .line 462
+    aput-object v47, v0, v2
 
-    .line 424
-    .line 425
+    .line 463
+    .line 464
     const/16 v2, 0x17
 
-    .line 426
-    .line 427
-    aput-object v48, v1, v2
+    .line 465
+    .line 466
+    aput-object v48, v0, v2
 
-    .line 428
-    .line 429
+    .line 467
+    .line 468
     const/16 v2, 0x18
 
-    .line 430
-    .line 431
-    aput-object v49, v1, v2
+    .line 469
+    .line 470
+    aput-object v49, v0, v2
 
-    .line 432
-    .line 433
+    .line 471
+    .line 472
     const/16 v2, 0x19
 
-    .line 434
-    .line 435
-    aput-object v50, v1, v2
+    .line 473
+    .line 474
+    aput-object v50, v0, v2
 
-    .line 436
-    .line 437
+    .line 475
+    .line 476
     const/16 v2, 0x1a
 
-    .line 438
-    .line 439
-    aput-object v51, v1, v2
+    .line 477
+    .line 478
+    aput-object v51, v0, v2
 
-    .line 440
-    .line 441
+    .line 479
+    .line 480
     const/16 v2, 0x1b
 
-    .line 442
-    .line 443
-    aput-object v0, v1, v2
+    .line 481
+    .line 482
+    aput-object v52, v0, v2
 
-    .line 444
-    .line 445
-    sput-object v1, Lcom/snap/context/action_items/ActionItemType;->a:[Lcom/snap/context/action_items/ActionItemType;
+    .line 483
+    .line 484
+    const/16 v2, 0x1c
 
-    .line 446
-    .line 447
+    .line 485
+    .line 486
+    aput-object v53, v0, v2
+
+    .line 487
+    .line 488
+    const/16 v2, 0x1d
+
+    .line 489
+    .line 490
+    aput-object v54, v0, v2
+
+    .line 491
+    .line 492
+    const/16 v2, 0x1e
+
+    .line 493
+    .line 494
+    aput-object v1, v0, v2
+
+    .line 495
+    .line 496
+    sput-object v0, Lcom/snap/context/action_items/ActionItemType;->a:[Lcom/snap/context/action_items/ActionItemType;
+
+    .line 497
+    .line 498
     return-void
 .end method
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LZz3;
+.implements LsD3;
 
 
 # annotations
@@ -99,11 +99,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$setViewModel(Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;LuB3;)V
+.method public static final synthetic access$setViewModel(Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;LWE3;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;->setViewModel(LuB3;)V
+    invoke-direct {p0, p1}, Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;->setViewModel(LWE3;)V
 
     .line 2
     .line 3
@@ -115,7 +115,7 @@
     .locals 1
 
     .line 1
-    const v0, 0x7f0e0169
+    const v0, 0x7f0e0171
 
     .line 2
     .line 3
@@ -128,7 +128,7 @@
     move-result-object p1
 
     .line 8
-    const v0, 0x7f0b063f
+    const v0, 0x7f0b06d4
 
     .line 9
     .line 10
@@ -149,7 +149,7 @@
 
     .line 18
     .line 19
-    const v0, 0x7f0b165c
+    const v0, 0x7f0b179b
 
     .line 20
     .line 21
@@ -170,7 +170,7 @@
 
     .line 29
     .line 30
-    const v0, 0x7f0b1654
+    const v0, 0x7f0b1793
 
     .line 31
     .line 32
@@ -187,7 +187,7 @@
 
     .line 38
     .line 39
-    const v0, 0x7f0b1663
+    const v0, 0x7f0b17a2    # 1.848854E38f
 
     .line 40
     .line 41
@@ -208,7 +208,7 @@
 
     .line 49
     .line 50
-    const v0, 0x7f0b19db
+    const v0, 0x7f0b1b41
 
     .line 51
     .line 52
@@ -229,7 +229,7 @@
 
     .line 60
     .line 61
-    const v0, 0x7f0b19e5
+    const v0, 0x7f0b1b4c
 
     .line 62
     .line 63
@@ -250,7 +250,7 @@
 
     .line 71
     .line 72
-    const v0, 0x7f0b0993
+    const v0, 0x7f0b0a87
 
     .line 73
     .line 74
@@ -366,7 +366,7 @@
 
     .line 42
     .line 43
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -379,7 +379,7 @@
 
     .line 48
     .line 49
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -392,7 +392,7 @@
 
     .line 54
     .line 55
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 56
     .line 57
@@ -405,7 +405,7 @@
 
     .line 60
     .line 61
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 62
     .line 63
@@ -418,7 +418,7 @@
 
     .line 66
     .line 67
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 68
     .line 69
@@ -426,7 +426,7 @@
     throw v1
 .end method
 
-.method private final setViewModel(LuB3;)V
+.method private final setViewModel(LWE3;)V
     .locals 8
 
     .line 3
@@ -465,15 +465,15 @@
     if-eqz v0, :cond_0
 
     .line 7
-    iget-object v4, p1, LuB3;->a:LDEd;
+    iget-object v4, p1, LWE3;->a:LAzf;
 
     .line 8
-    invoke-virtual {v0, v4}, Lcom/caverock/androidsvg/SVGImageView;->c(LDEd;)V
+    invoke-virtual {v0, v4}, Lcom/caverock/androidsvg/SVGImageView;->c(LAzf;)V
 
     goto :goto_0
 
     :cond_0
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
     :try_end_0
@@ -482,14 +482,14 @@
     .line 9
     :catch_0
     :goto_0
-    iget-boolean v0, p1, LuB3;->e:Z
+    iget-boolean v0, p1, LWE3;->e:Z
 
     if-eqz v0, :cond_3
 
     .line 10
-    new-instance v0, LWL3;
+    new-instance v0, LwP3;
 
-    invoke-direct {v0}, LWL3;-><init>()V
+    invoke-direct {v0}, LwP3;-><init>()V
 
     .line 11
     iget-object v4, p0, Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;->constraintLayout:Landroidx/constraintlayout/widget/ConstraintLayout;
@@ -498,54 +498,54 @@
 
     if-eqz v4, :cond_2
 
-    invoke-virtual {v0, v4}, LWL3;->e(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-virtual {v0, v4}, LwP3;->e(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
-    const v4, 0x7f0b19db
+    const v4, 0x7f0b1b41
 
     .line 12
-    invoke-virtual {v0, v4}, LWL3;->n(I)LRL3;
+    invoke-virtual {v0, v4}, LwP3;->n(I)LrP3;
 
     move-result-object v6
 
-    iget-object v6, v6, LRL3;->d:LSL3;
+    iget-object v6, v6, LrP3;->d:LsP3;
 
     const v7, 0x3ecccccd    # 0.4f
 
-    iput v7, v6, LSL3;->Y:F
+    iput v7, v6, LsP3;->Y:F
 
     .line 13
-    invoke-virtual {v0, v4}, LWL3;->n(I)LRL3;
+    invoke-virtual {v0, v4}, LwP3;->n(I)LrP3;
 
     move-result-object v4
 
-    iget-object v4, v4, LRL3;->d:LSL3;
+    iget-object v4, v4, LrP3;->d:LsP3;
 
-    iput v7, v4, LSL3;->Z:F
+    iput v7, v4, LsP3;->Z:F
 
     .line 14
     iget-object v4, p0, Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;->constraintLayout:Landroidx/constraintlayout/widget/ConstraintLayout;
 
     if-eqz v4, :cond_1
 
-    invoke-virtual {v0, v4}, LWL3;->a(Landroidx/constraintlayout/widget/ConstraintLayout;)V
+    invoke-virtual {v0, v4}, LwP3;->a(Landroidx/constraintlayout/widget/ConstraintLayout;)V
 
     goto :goto_1
 
     :cond_1
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 15
     :cond_2
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 16
     :cond_3
     :goto_1
-    iget-object v0, p1, LuB3;->b:LTB0;
+    iget-object v0, p1, LWE3;->b:LOE0;
 
     const-string v4, "userAvatarView"
 
@@ -567,9 +567,9 @@
 
     const/16 v4, 0x2e
 
-    iget-object p1, p1, LuB3;->d:Lbwh;
+    iget-object p1, p1, LWE3;->d:LcUh;
 
-    invoke-static {v3, v0, v1, p1, v4}, Lcom/snap/ui/avatar/AvatarView;->c(Lcom/snap/ui/avatar/AvatarView;LTB0;Lyj7;LQ1j;I)V
+    invoke-static {v3, v0, v1, p1, v4}, Lcom/snap/ui/avatar/AvatarView;->c(Lcom/snap/ui/avatar/AvatarView;LOE0;LFo7;Lcrj;I)V
 
     .line 19
     iget-object p1, p0, Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;->userSilhouetteView:Lcom/snap/imageloading/view/SnapImageView;
@@ -581,19 +581,19 @@
     goto :goto_3
 
     :cond_4
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 20
     :cond_5
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 21
     :cond_6
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
@@ -606,7 +606,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 23
-    iget-boolean v0, p1, LuB3;->c:Z
+    iget-boolean v0, p1, LWE3;->c:Z
 
     if-nez v0, :cond_9
 
@@ -620,14 +620,14 @@
     goto :goto_2
 
     :cond_8
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 25
     :cond_9
     :goto_2
-    iget-boolean p1, p1, LuB3;->e:Z
+    iget-boolean p1, p1, LWE3;->e:Z
 
     const-string v4, "ghostPlaceholder"
 
@@ -650,13 +650,13 @@
     goto :goto_3
 
     :cond_a
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 28
     :cond_b
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
@@ -680,7 +680,7 @@
     goto :goto_3
 
     :cond_d
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
@@ -690,19 +690,19 @@
 
     .line 31
     :cond_f
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 32
     :cond_10
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
     .line 33
     :cond_11
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
@@ -710,7 +710,7 @@
     :cond_12
     const-string p1, "snapcodeBackgroundView"
 
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 
@@ -718,7 +718,7 @@
     :cond_13
     const-string p1, "snapcodePlaceholderView"
 
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     throw v1
 .end method
@@ -760,23 +760,23 @@
         value = {
             "(",
             "Lio/reactivex/rxjava3/core/Observable<",
-            "Lm3d;",
+            "Lmid;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    new-instance v0, LrB3;
+    new-instance v0, LTE3;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, LrB3;-><init>(Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;I)V
+    invoke-direct {v0, p0, v1}, LTE3;-><init>(Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;I)V
 
-    new-instance v1, LrB3;
+    new-instance v1, LTE3;
 
     const/4 v2, 0x1
 
-    invoke-direct {v1, p0, v2}, LrB3;-><init>(Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;I)V
+    invoke-direct {v1, p0, v2}, LTE3;-><init>(Lcom/snap/composer/snapcode/lib/ComposerUserSnapcodeView;I)V
 
     invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 

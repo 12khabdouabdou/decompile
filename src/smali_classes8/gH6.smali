@@ -1,129 +1,67 @@
-.class public final enum LgH6;
-.super Ljava/lang/Enum;
+.class public final synthetic LgH6;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LgH6;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # static fields
-.field public static final enum a:LgH6;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "GALLERY_EDIT"
-    .end annotation
-.end field
-
-.field public static final synthetic b:[LgH6;
+.field public static final f0:LgH6;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 3
+    .locals 6
 
     .line 1
-    const/4 v0, 0x0
+    new-instance v0, LgH6;
 
     .line 2
-    new-instance v1, LgH6;
-
     .line 3
-    .line 4
-    const-string v2, "GALLERY_EDIT"
+    const-string v5, "onDestroy()V"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    invoke-direct {v1, v2, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const/4 v1, 0x1
 
     .line 7
+    const-class v3, LFD5;
+
     .line 8
     .line 9
-    sput-object v1, LgH6;->a:LgH6;
+    const-string v4, "onDestroy"
 
     .line 10
     .line 11
-    const/4 v2, 0x1
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
-    new-array v2, v2, [LgH6;
-
     .line 13
     .line 14
-    aput-object v1, v2, v0
+    sput-object v0, LgH6;->f0:LgH6;
 
     .line 15
     .line 16
-    sput-object v2, LgH6;->b:[LgH6;
-
-    .line 17
-    .line 18
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LgH6;
-    .locals 1
-
-    .line 1
-    const-class v0, LgH6;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LgH6;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LgH6;
-    .locals 1
-
-    .line 1
-    sget-object v0, LgH6;->b:[LgH6;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [LgH6;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LgH6;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    const/4 v0, 0x0
+    check-cast p1, LFD5;
 
     .line 2
-    return v0
+    .line 3
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 4
+    .line 5
+    return-object p1
 .end method

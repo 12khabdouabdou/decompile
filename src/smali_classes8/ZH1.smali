@@ -1,98 +1,117 @@
 .class public final LZH1;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lfk9;
+# static fields
+.field public static final Z:LZH1;
 
-.field public final b:Lnp9;
+.field public static final e0:LL4b;
 
-.field public final c:Lrn0;
-
-.field public final d:LBre;
-
-.field public final e:Ljava/util/LinkedHashMap;
+.field public static final f0:LxFc;
 
 
 # direct methods
-.method public constructor <init>(Lfk9;Lnp9;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 12
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, LZH1;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LZH1;->a:Lfk9;
+    sget-object v0, LNH9;->q1:LNH9;
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    iput-object p2, p0, LZH1;->b:Lnp9;
+    const/16 v3, 0x1c
 
     .line 7
     .line 8
-    sget-object p1, LODh;->Z:LODh;
+    const-string v4, "COS"
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v1, v4, v0, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
 
     .line 11
     .line 12
     .line 13
-    const-string p2, "CTPlatformPreloaderImpl"
+    sput-object v1, LZH1;->Z:LZH1;
 
     .line 14
     .line 15
-    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    new-instance v0, LL4b;
 
     .line 16
     .line 17
+    const/4 v9, 0x0
+
     .line 18
-    sget-object v0, Lrn0;->a:Lrn0;
+    const/4 v10, 0x0
 
     .line 19
-    .line 20
-    iput-object v0, p0, LZH1;->c:Lrn0;
+    const-string v2, "COS"
 
+    .line 20
     .line 21
+    const/4 v3, 0x0
+
     .line 22
-    new-instance v0, LWm0;
+    const/4 v4, 0x0
 
     .line 23
+    const/4 v5, 0x0
+
     .line 24
-    invoke-direct {v0, p1, p2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    const/4 v6, 0x0
 
     .line 25
+    const/4 v7, 0x0
+
     .line 26
+    const/4 v8, 0x0
+
     .line 27
-    new-instance p1, LBre;
+    const/16 v11, 0x7ffc
 
     .line 28
     .line 29
-    invoke-direct {p1, v0}, LBre;-><init>(LWm0;)V
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
 
     .line 30
     .line 31
     .line 32
-    iput-object p1, p0, LZH1;->d:LBre;
+    sput-object v0, LZH1;->e0:LL4b;
 
     .line 33
     .line 34
-    new-instance p1, Ljava/util/LinkedHashMap;
+    sget-object v1, Luld;->O:LtOc;
 
     .line 35
     .line 36
-    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
+    const/4 v2, 0x1
 
     .line 37
+    invoke-static {v1, v0, v2}, LJea;->h(Luld;LL4b;Z)LxFc;
+
     .line 38
     .line 39
-    iput-object p1, p0, LZH1;->e:Ljava/util/LinkedHashMap;
-
     .line 40
+    move-result-object v0
+
     .line 41
+    sput-object v0, LZH1;->f0:LxFc;
+
+    .line 42
+    .line 43
+    invoke-virtual {v0}, LxFc;->p()LuFc;
+
+    .line 44
+    .line 45
+    .line 46
     return-void
 .end method

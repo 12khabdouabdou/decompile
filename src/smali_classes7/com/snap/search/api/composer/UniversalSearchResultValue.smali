@@ -1,10 +1,10 @@
 .class public final Lcom/snap/search/api/composer/UniversalSearchResultValue;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'user\':r?:\'[0]\',\'group\':r?:\'[1]\',\'contact\':r?:\'[2]\',\'creator\':r?:\'[3]\'"
     typeReferences = {

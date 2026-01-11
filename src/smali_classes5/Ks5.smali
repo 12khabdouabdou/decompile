@@ -1,72 +1,37 @@
-.class public final synthetic LKs5;
-.super Lj28;
+.class public final LKs5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
+# instance fields
+.field public final a:LeLj;
 
-# static fields
-.field public static final f0:LKs5;
+.field public final b:LTq5;
+
+.field public final c:Lnl5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(LeLj;LTq5;Lnl5;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LKs5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;)V"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, LKs5;->a:LeLj;
 
+    .line 5
     .line 6
-    const/4 v1, 0x1
+    iput-object p2, p0, LKs5;->b:LTq5;
 
     .line 7
-    const-class v3, Lmp5;
-
     .line 8
+    iput-object p3, p0, LKs5;->c:Lnl5;
+
     .line 9
-    const-string v4, "<init>"
-
     .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, LKs5;->f0:LKs5;
-
-    .line 15
-    .line 16
     return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    check-cast p1, LAC5;
-
-    .line 2
-    .line 3
-    new-instance v0, Lmp5;
-
-    .line 4
-    .line 5
-    invoke-direct {v0, p1}, Lmp5;-><init>(LAC5;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-object v0
 .end method

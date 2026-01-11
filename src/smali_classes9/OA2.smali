@@ -1,213 +1,279 @@
-.class public final LOA2;
-.super Ljava/lang/Object;
+.class public LOA2;
+.super LMy0;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/util/Iterator;
-.implements LlC9;
+
+# annotations
+.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
+    value = LPA2;
+.end annotation
+
+.annotation runtime LnJ9;
+    value = Ldkh;
+.end annotation
 
 
 # instance fields
-.field public final a:I
+.field public e:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "new_password"
+    .end annotation
+.end field
 
-.field public final b:I
+.field public f:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "pre_auth_token"
+    .end annotation
+.end field
 
-.field public c:Z
-
-.field public t:I
+.field public g:Ljava/lang/String;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "username_or_email"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(CCI)V
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, LMy0;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput p3, p0, LOA2;->a:I
-
-    .line 5
-    .line 6
-    iput p2, p0, LOA2;->b:I
-
-    .line 7
-    .line 8
-    const/4 v0, 0x0
-
-    .line 9
-    const/4 v1, 0x1
-
-    .line 10
-    if-lez p3, :cond_0
-
-    .line 11
-    .line 12
-    invoke-static {p1, p2}, LDq9;->r(II)I
-
-    .line 13
-    .line 14
-    .line 15
-    move-result p3
-
-    .line 16
-    if-gtz p3, :cond_1
-
-    .line 17
-    .line 18
-    :goto_0
-    const/4 v0, 0x1
-
-    .line 19
-    goto :goto_1
-
-    .line 20
-    :cond_0
-    invoke-static {p1, p2}, LDq9;->r(II)I
-
-    .line 21
-    .line 22
-    .line 23
-    move-result p3
-
-    .line 24
-    if-ltz p3, :cond_1
-
-    .line 25
-    .line 26
-    goto :goto_0
-
-    .line 27
-    :cond_1
-    :goto_1
-    iput-boolean v0, p0, LOA2;->c:Z
-
-    .line 28
-    .line 29
-    if-eqz v0, :cond_2
-
-    .line 30
-    .line 31
-    goto :goto_2
-
-    .line 32
-    :cond_2
-    move p1, p2
-
-    .line 33
-    :goto_2
-    iput p1, p0, LOA2;->t:I
-
-    .line 34
-    .line 35
     return-void
 .end method
 
 
 # virtual methods
-.method public final hasNext()Z
-    .locals 1
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget-boolean v0, p0, LOA2;->c:Z
+    const/4 v0, 0x1
 
     .line 2
+    if-ne p1, p0, :cond_0
+
     .line 3
-    return v0
-.end method
-
-.method public final next()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LOA2;->t:I
-
-    .line 2
-    .line 3
-    iget v1, p0, LOA2;->b:I
-
     .line 4
+    return v0
+
     .line 5
-    if-ne v0, v1, :cond_1
-
-    .line 6
-    .line 7
-    iget-boolean v1, p0, LOA2;->c:Z
-
-    .line 8
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
+    :cond_0
     const/4 v1, 0x0
 
-    .line 12
-    iput-boolean v1, p0, LOA2;->c:Z
+    .line 6
+    if-eqz p1, :cond_2
 
-    .line 13
-    .line 14
+    .line 7
+    .line 8
+    instance-of v2, p1, LOA2;
+
+    .line 9
+    .line 10
+    if-nez v2, :cond_1
+
+    .line 11
+    .line 12
     goto :goto_0
 
+    .line 13
+    :cond_1
+    check-cast p1, LOA2;
+
+    .line 14
     .line 15
-    :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    invoke-super {p0, p1}, LMy0;->equals(Ljava/lang/Object;)Z
 
     .line 16
     .line 17
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
     .line 18
-    .line 19
-    .line 20
-    throw v0
+    move-result v2
 
+    .line 19
+    if-eqz v2, :cond_2
+
+    .line 20
     .line 21
-    :cond_1
-    iget v1, p0, LOA2;->a:I
+    iget-object v2, p0, LOA2;->e:Ljava/lang/String;
 
     .line 22
     .line 23
-    add-int/2addr v1, v0
+    iget-object v3, p1, LOA2;->e:Ljava/lang/String;
 
     .line 24
-    iput v1, p0, LOA2;->t:I
-
     .line 25
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 26
-    :goto_0
-    int-to-char v0, v0
-
     .line 27
-    invoke-static {v0}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
-
     .line 28
-    .line 29
-    .line 30
-    move-result-object v0
+    move-result v2
 
+    .line 29
+    if-eqz v2, :cond_2
+
+    .line 30
     .line 31
-    return-object v0
+    iget-object v2, p0, LOA2;->f:Ljava/lang/String;
+
+    .line 32
+    .line 33
+    iget-object v3, p1, LOA2;->f:Ljava/lang/String;
+
+    .line 34
+    .line 35
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v2
+
+    .line 39
+    if-eqz v2, :cond_2
+
+    .line 40
+    .line 41
+    iget-object v2, p0, LOA2;->g:Ljava/lang/String;
+
+    .line 42
+    .line 43
+    iget-object p1, p1, LOA2;->g:Ljava/lang/String;
+
+    .line 44
+    .line 45
+    invoke-static {v2, p1}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p1
+
+    .line 49
+    if-eqz p1, :cond_2
+
+    .line 50
+    .line 51
+    return v0
+
+    .line 52
+    :cond_2
+    :goto_0
+    return v1
 .end method
 
-.method public final remove()V
-    .locals 2
+.method public final hashCode()I
+    .locals 3
 
     .line 1
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
+    invoke-super {p0}, LMy0;->hashCode()I
 
     .line 2
     .line 3
-    const-string v1, "Operation is not supported for read-only collection"
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+    add-int/lit8 v0, v0, 0x11
 
     .line 6
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
-    throw v0
+    .line 9
+    iget-object v1, p0, LOA2;->e:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    if-nez v1, :cond_0
+
+    .line 13
+    .line 14
+    const/4 v1, 0x0
+
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 21
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 22
+    .line 23
+    iget-object v1, p0, LOA2;->f:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    if-nez v1, :cond_1
+
+    .line 26
+    .line 27
+    const/4 v1, 0x0
+
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_1
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v1
+
+    .line 33
+    :goto_1
+    add-int/2addr v0, v1
+
+    .line 34
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 35
+    .line 36
+    iget-object v1, p0, LOA2;->g:Ljava/lang/String;
+
+    .line 37
+    .line 38
+    if-nez v1, :cond_2
+
+    .line 39
+    .line 40
+    goto :goto_2
+
+    .line 41
+    :cond_2
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v2
+
+    .line 45
+    :goto_2
+    add-int/2addr v0, v2
+
+    .line 46
+    return v0
 .end method

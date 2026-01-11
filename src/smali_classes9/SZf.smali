@@ -1,308 +1,796 @@
 .class public final LSZf;
-.super Lo17;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public a:I
+.field private final a:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "offset"
+    .end annotation
+.end field
 
-.field public b:I
+.field private final b:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "duration"
+    .end annotation
+.end field
 
-.field public c:Ljava/lang/String;
+.field private final c:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "preSplitIndex"
+    .end annotation
+.end field
+
+.field private final d:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "preSplitCount"
+    .end annotation
+.end field
+
+.field private final e:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "postSplitIndex"
+    .end annotation
+.end field
+
+.field private final f:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "postSplitCount"
+    .end annotation
+.end field
+
+.field private final g:Z
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "trimmed"
+    .end annotation
+.end field
+
+.field private final h:I
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "captureSessionSegmentIndex"
+    .end annotation
+.end field
+
+.field private final i:Z
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "image_segment_info"
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(IIIIIIZIZ)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput p1, p0, LSZf;->a:I
+
+    .line 3
+    iput p2, p0, LSZf;->b:I
+
+    .line 4
+    iput p3, p0, LSZf;->c:I
+
+    .line 5
+    iput p4, p0, LSZf;->d:I
+
+    .line 6
+    iput p5, p0, LSZf;->e:I
+
+    .line 7
+    iput p6, p0, LSZf;->f:I
+
+    .line 8
+    iput-boolean p7, p0, LSZf;->g:Z
+
+    .line 9
+    iput p8, p0, LSZf;->h:I
+
+    .line 10
+    iput-boolean p9, p0, LSZf;->i:Z
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(IIIIIIZIZI)V
+    .locals 2
+
+    and-int/lit8 v0, p10, 0x40
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    const/4 p7, 0x0
+
+    :cond_0
+    and-int/lit16 v0, p10, 0x80
+
+    if-eqz v0, :cond_1
+
+    const/4 p8, 0x0
+
+    :cond_1
+    and-int/lit16 p10, p10, 0x100
+
+    if-eqz p10, :cond_2
+
+    const/4 p10, 0x0
+
+    :goto_0
+    move p9, p8
+
+    move p8, p7
+
+    move p7, p6
+
+    move p6, p5
+
+    move p5, p4
+
+    move p4, p3
+
+    move p3, p2
+
+    move p2, p1
+
+    move-object p1, p0
+
+    goto :goto_1
+
+    :cond_2
+    move p10, p9
+
+    goto :goto_0
+
+    .line 11
+    :goto_1
+    invoke-direct/range {p1 .. p10}, LSZf;-><init>(IIIIIIZIZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(IIZZ)V
+    .locals 10
+
+    const/4 v6, 0x1
+
+    const/4 v8, 0x0
+
+    const/4 v3, -0x1
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    move-object v0, p0
+
+    move v1, p1
+
+    move v2, p2
+
+    move v9, p3
+
+    move v7, p4
+
+    .line 12
+    invoke-direct/range {v0 .. v9}, LSZf;-><init>(IIIIIIZIZ)V
+
+    return-void
+.end method
+
+.method public static a(LSZf;I)LSZf;
+    .locals 10
+
+    .line 1
+    iget v3, p0, LSZf;->c:I
 
     .line 2
     .line 3
-    .line 4
-    const/4 v0, 0x0
+    iget v4, p0, LSZf;->d:I
 
+    .line 4
     .line 5
-    iput v0, p0, LSZf;->a:I
+    iget v5, p0, LSZf;->e:I
 
     .line 6
     .line 7
-    iput v0, p0, LSZf;->b:I
+    iget v6, p0, LSZf;->f:I
 
     .line 8
     .line 9
-    const-string v0, ""
+    iget-boolean v7, p0, LSZf;->g:Z
 
     .line 10
     .line 11
-    iput-object v0, p0, LSZf;->c:Ljava/lang/String;
+    iget v8, p0, LSZf;->h:I
 
     .line 12
     .line 13
-    const/4 v0, 0x0
+    iget-boolean v9, p0, LSZf;->i:Z
 
     .line 14
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
     .line 15
-    .line 16
-    const/4 v0, -0x1
+    new-instance v0, LSZf;
 
+    .line 16
     .line 17
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+    const/4 v1, 0x0
 
     .line 18
+    move v2, p1
+
     .line 19
-    return-void
+    invoke-direct/range {v0 .. v9}, LSZf;-><init>(IIIIIIZIZ)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public final b()I
+    .locals 1
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    iget v0, p0, LSZf;->h:I
 
     .line 2
     .line 3
+    return v0
+.end method
+
+.method public final c()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LSZf;->b:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final d()I
+    .locals 2
+
+    .line 1
+    iget v0, p0, LSZf;->a:I
+
+    .line 2
+    .line 3
+    iget v1, p0, LSZf;->b:I
+
     .line 4
-    move-result v0
+    .line 5
+    add-int/2addr v0, v1
+
+    .line 6
+    return v0
+.end method
+
+.method public final e()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LSZf;->a:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
 
     .line 5
-    iget v1, p0, LSZf;->a:I
+    :cond_0
+    instance-of v1, p1, LSZf;
 
     .line 6
     .line 7
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     .line 8
-    and-int/2addr v1, v2
+    if-nez v1, :cond_1
 
     .line 9
-    if-eqz v1, :cond_0
-
     .line 10
+    return v2
+
     .line 11
-    iget v1, p0, LSZf;->b:I
+    :cond_1
+    check-cast p1, LSZf;
 
     .line 12
     .line 13
-    invoke-static {v2, v1}, Lsa3;->i(II)I
+    iget v1, p0, LSZf;->a:I
 
     .line 14
     .line 15
-    .line 16
-    move-result v1
+    iget v3, p1, LSZf;->a:I
 
+    .line 16
+    .line 17
+    if-eq v1, v3, :cond_2
+
+    .line 18
+    .line 19
+    return v2
+
+    .line 20
+    :cond_2
+    iget v1, p0, LSZf;->b:I
+
+    .line 21
+    .line 22
+    iget v3, p1, LSZf;->b:I
+
+    .line 23
+    .line 24
+    if-eq v1, v3, :cond_3
+
+    .line 25
+    .line 26
+    return v2
+
+    .line 27
+    :cond_3
+    iget v1, p0, LSZf;->c:I
+
+    .line 28
+    .line 29
+    iget v3, p1, LSZf;->c:I
+
+    .line 30
+    .line 31
+    if-eq v1, v3, :cond_4
+
+    .line 32
+    .line 33
+    return v2
+
+    .line 34
+    :cond_4
+    iget v1, p0, LSZf;->d:I
+
+    .line 35
+    .line 36
+    iget v3, p1, LSZf;->d:I
+
+    .line 37
+    .line 38
+    if-eq v1, v3, :cond_5
+
+    .line 39
+    .line 40
+    return v2
+
+    .line 41
+    :cond_5
+    iget v1, p0, LSZf;->e:I
+
+    .line 42
+    .line 43
+    iget v3, p1, LSZf;->e:I
+
+    .line 44
+    .line 45
+    if-eq v1, v3, :cond_6
+
+    .line 46
+    .line 47
+    return v2
+
+    .line 48
+    :cond_6
+    iget v1, p0, LSZf;->f:I
+
+    .line 49
+    .line 50
+    iget v3, p1, LSZf;->f:I
+
+    .line 51
+    .line 52
+    if-eq v1, v3, :cond_7
+
+    .line 53
+    .line 54
+    return v2
+
+    .line 55
+    :cond_7
+    iget-boolean v1, p0, LSZf;->g:Z
+
+    .line 56
+    .line 57
+    iget-boolean v3, p1, LSZf;->g:Z
+
+    .line 58
+    .line 59
+    if-eq v1, v3, :cond_8
+
+    .line 60
+    .line 61
+    return v2
+
+    .line 62
+    :cond_8
+    iget v1, p0, LSZf;->h:I
+
+    .line 63
+    .line 64
+    iget v3, p1, LSZf;->h:I
+
+    .line 65
+    .line 66
+    if-eq v1, v3, :cond_9
+
+    .line 67
+    .line 68
+    return v2
+
+    .line 69
+    :cond_9
+    iget-boolean v1, p0, LSZf;->i:Z
+
+    .line 70
+    .line 71
+    iget-boolean p1, p1, LSZf;->i:Z
+
+    .line 72
+    .line 73
+    if-eq v1, p1, :cond_a
+
+    .line 74
+    .line 75
+    return v2
+
+    .line 76
+    :cond_a
+    return v0
+.end method
+
+.method public final f()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LSZf;->f:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final g()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LSZf;->e:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final h()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LSZf;->d:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 4
+
+    .line 1
+    iget v0, p0, LSZf;->a:I
+
+    .line 2
+    .line 3
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 4
+    .line 5
+    iget v1, p0, LSZf;->b:I
+
+    .line 6
+    .line 7
+    add-int/2addr v0, v1
+
+    .line 8
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 9
+    .line 10
+    iget v1, p0, LSZf;->c:I
+
+    .line 11
+    .line 12
+    add-int/2addr v0, v1
+
+    .line 13
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 14
+    .line 15
+    iget v1, p0, LSZf;->d:I
+
+    .line 16
     .line 17
     add-int/2addr v0, v1
 
     .line 18
-    :cond_0
-    iget v1, p0, LSZf;->a:I
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 19
     .line 20
-    const/4 v2, 0x2
+    iget v1, p0, LSZf;->e:I
 
     .line 21
-    and-int/2addr v1, v2
-
     .line 22
-    if-eqz v1, :cond_1
+    add-int/2addr v0, v1
 
     .line 23
-    .line 24
-    iget-object v1, p0, LSZf;->c:Ljava/lang/String;
+    mul-int/lit8 v0, v0, 0x1f
 
-    .line 25
-    .line 26
-    invoke-static {v2, v1}, Lsa3;->q(ILjava/lang/String;)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v1
-
-    .line 30
-    add-int/2addr v1, v0
-
-    .line 31
-    return v1
-
-    .line 32
-    :cond_1
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_3
-
-    .line 6
-    .line 7
-    const/16 v1, 0x8
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_2
-
-    .line 10
-    .line 11
-    const/16 v1, 0x12
-
-    .line 12
-    .line 13
-    if-eq v0, v1, :cond_1
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v0
-
-    .line 19
-    if-nez v0, :cond_0
-
-    .line 20
-    .line 21
-    goto :goto_1
-
-    .line 22
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
-
-    .line 23
     .line 24
     .line 25
-    move-result-object v0
+    iget v1, p0, LSZf;->f:I
 
     .line 26
-    iput-object v0, p0, LSZf;->c:Ljava/lang/String;
-
     .line 27
+    add-int/2addr v0, v1
+
     .line 28
-    iget v0, p0, LSZf;->a:I
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 29
     .line 30
-    or-int/lit8 v0, v0, 0x2
+    iget-boolean v1, p0, LSZf;->g:Z
 
     .line 31
     .line 32
-    iput v0, p0, LSZf;->a:I
+    const/16 v2, 0x4d5
 
     .line 33
     .line 34
-    goto :goto_0
+    const/16 v3, 0x4cf
 
     .line 35
-    :cond_2
-    invoke-virtual {p1}, Lqa3;->q()I
-
     .line 36
+    if-eqz v1, :cond_0
+
     .line 37
     .line 38
-    move-result v0
+    const/16 v1, 0x4cf
 
     .line 39
-    iput v0, p0, LSZf;->b:I
-
     .line 40
+    goto :goto_0
+
     .line 41
-    iget v0, p0, LSZf;->a:I
+    :cond_0
+    const/16 v1, 0x4d5
 
     .line 42
     .line 43
-    or-int/lit8 v0, v0, 0x1
+    :goto_0
+    add-int/2addr v0, v1
 
     .line 44
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 45
-    iput v0, p0, LSZf;->a:I
-
     .line 46
-    .line 47
-    goto :goto_0
+    iget v1, p0, LSZf;->h:I
 
+    .line 47
     .line 48
-    :cond_3
-    :goto_1
-    return-object p0
+    add-int/2addr v0, v1
+
+    .line 49
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 50
+    .line 51
+    iget-boolean v1, p0, LSZf;->i:Z
+
+    .line 52
+    .line 53
+    if-eqz v1, :cond_1
+
+    .line 54
+    .line 55
+    const/16 v2, 0x4cf
+
+    .line 56
+    .line 57
+    :cond_1
+    add-int/2addr v0, v2
+
+    .line 58
+    return v0
 .end method
 
-.method public final writeTo(Lsa3;)V
-    .locals 2
+.method public final i()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LSZf;->c:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final j()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, LSZf;->g:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final k()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, LSZf;->i:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 12
 
     .line 1
     iget v0, p0, LSZf;->a:I
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    iget v1, p0, LSZf;->b:I
 
     .line 4
-    and-int/2addr v0, v1
-
     .line 5
-    if-eqz v0, :cond_0
+    iget v2, p0, LSZf;->c:I
 
     .line 6
     .line 7
-    iget v0, p0, LSZf;->b:I
+    iget v3, p0, LSZf;->d:I
 
     .line 8
     .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->I(II)V
+    iget v4, p0, LSZf;->e:I
 
     .line 10
     .line 11
+    iget v5, p0, LSZf;->f:I
+
     .line 12
-    :cond_0
-    iget v0, p0, LSZf;->a:I
-
     .line 13
-    .line 14
-    const/4 v1, 0x2
+    iget-boolean v6, p0, LSZf;->g:Z
 
+    .line 14
     .line 15
-    and-int/2addr v0, v1
+    iget v7, p0, LSZf;->h:I
 
     .line 16
-    if-eqz v0, :cond_1
-
     .line 17
+    iget-boolean v8, p0, LSZf;->i:Z
+
     .line 18
-    iget-object v0, p0, LSZf;->c:Ljava/lang/String;
-
     .line 19
-    .line 20
-    invoke-virtual {p1, v1, v0}, Lsa3;->R(ILjava/lang/String;)V
+    const-string v9, "SegmentInfo(offset="
 
+    .line 20
     .line 21
+    const-string v10, ", duration="
+
     .line 22
     .line 23
-    :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    const-string v11, ", preSplitIndex="
 
     .line 24
     .line 25
+    invoke-static {v9, v10, v11, v0, v1}, Lve4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/StringBuilder;
+
     .line 26
-    return-void
+    .line 27
+    .line 28
+    move-result-object v0
+
+    .line 29
+    const-string v1, ", preSplitCount="
+
+    .line 30
+    .line 31
+    const-string v9, ", postSplitIndex="
+
+    .line 32
+    .line 33
+    invoke-static {v2, v3, v1, v9, v0}, LToi;->r(IILjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 34
+    .line 35
+    .line 36
+    const-string v1, ", postSplitCount="
+
+    .line 37
+    .line 38
+    const-string v2, ", trimmed="
+
+    .line 39
+    .line 40
+    invoke-static {v4, v5, v1, v2, v0}, LToi;->r(IILjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 44
+    .line 45
+    .line 46
+    const-string v1, ", captureSessionSegmentIndex="
+
+    .line 47
+    .line 48
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 52
+    .line 53
+    .line 54
+    const-string v1, ", isImageSegmentInfo="
+
+    .line 55
+    .line 56
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 57
+    .line 58
+    .line 59
+    const-string v1, ")"
+
+    .line 60
+    .line 61
+    invoke-static {v1, v0, v8}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v0
+
+    .line 65
+    return-object v0
 .end method

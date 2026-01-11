@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public a:LaA8;
+.field public a:LcH8;
 
 
 # direct methods
@@ -85,7 +85,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p0}, LCq9;->x0(Landroid/app/Service;)V
+    invoke-static {p0}, LbS2;->v(Landroid/app/Service;)V
 
     .line 5
     .line 6
@@ -128,11 +128,11 @@
     .line 14
     .line 15
     :cond_0
-    iget-object v0, p0, Lcom/snap/mushroom/startup/BackgroundService;->a:LaA8;
+    iget-object v0, p0, Lcom/snap/mushroom/startup/BackgroundService;->a:LcH8;
 
     .line 16
     .line 17
-    sget-object v1, Levd;->J2:Levd;
+    sget-object v1, LRLd;->M2:LRLd;
 
     .line 18
     .line 19
@@ -144,7 +144,7 @@
 
     .line 22
     .line 23
-    invoke-static {v1, v2, v3}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
+    invoke-static {v1, v2, v3}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 24
     .line 25
@@ -156,7 +156,7 @@
 
     .line 28
     .line 29
-    invoke-interface {v0, v1, v2, v3}, LaA8;->d(LqTb;J)V
+    invoke-interface {v0, v1, v2, v3}, LcH8;->d(LV7c;J)V
 
     .line 30
     .line 31

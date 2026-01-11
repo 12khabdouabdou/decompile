@@ -2,16 +2,15 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljab;
-
 
 # instance fields
-.field public final a:LXai;
+.field public final a:Lcom/snap/core/application/SnapResourcesContextWrapper;
+
+.field public final b:La5f;
 
 
 # direct methods
-.method public constructor <init>(LXai;)V
+.method public constructor <init>(Lcom/snap/core/application/SnapResourcesContextWrapper;LOF3;La5f;LR93;)V
     .locals 0
 
     .line 1
@@ -20,283 +19,96 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lpab;->a:LXai;
+    iput-object p1, p0, Lpab;->a:Lcom/snap/core/application/SnapResourcesContextWrapper;
 
     .line 5
     .line 6
-    return-void
-.end method
+    iput-object p3, p0, Lpab;->b:La5f;
 
-
-# virtual methods
-.method public final a()Lio/reactivex/rxjava3/core/Single;
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
-    .line 4
-    .line 5
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
-    .line 6
     .line 7
     .line 8
-    return-object v1
-.end method
+    new-instance p1, LV9b;
 
-.method public final b()Lank;
-    .locals 6
-
-    .line 1
-    new-instance v0, Lkab;
-
-    .line 2
-    .line 3
-    sget-object v1, LI9b;->j0:LI9b;
-
-    .line 4
-    .line 5
-    sget-object v2, LI9b;->k0:LI9b;
-
-    .line 6
-    .line 7
-    new-instance v3, Landroid/graphics/PorterDuffColorFilter;
-
-    .line 8
     .line 9
-    const-string v4, "#0EADFF"
-
     .line 10
+    const/4 p2, 0x2
+
     .line 11
-    invoke-static {v4}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+    invoke-direct {p1, p2, p0}, LV9b;-><init>(ILjava/lang/Object;)V
 
     .line 12
     .line 13
     .line 14
-    move-result v4
+    new-instance p2, LREi;
 
     .line 15
-    sget-object v5, Landroid/graphics/PorterDuff$Mode;->MULTIPLY:Landroid/graphics/PorterDuff$Mode;
-
     .line 16
-    .line 17
-    invoke-direct {v3, v4, v5}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
-
-    .line 18
-    .line 19
-    .line 20
-    const/4 v4, -0x1
-
-    .line 21
-    invoke-direct {v0, v1, v2, v3, v4}, Lkab;-><init>(Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroid/graphics/PorterDuffColorFilter;I)V
-
-    .line 22
-    .line 23
-    .line 24
-    return-object v0
-.end method
-
-.method public final c()Lio/reactivex/rxjava3/core/Completable;
-    .locals 2
-
-    .line 1
-    new-instance v0, LG4b;
-
-    .line 2
-    .line 3
-    const/16 v1, 0xe
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1, p0}, LG4b;-><init>(ILjava/lang/Object;)V
-
-    .line 6
-    .line 7
-    .line 8
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
-
-    .line 9
-    .line 10
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-object v1
-.end method
-
-.method public final d()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final e()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final f()Lmab;
-    .locals 10
-
-    .line 1
-    new-instance v0, Lmab;
-
-    .line 2
-    .line 3
-    const/16 v1, 0x15
-
-    .line 4
-    .line 5
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
-
-    .line 9
-    const/16 v2, 0xa
-
-    .line 10
-    .line 11
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v2
-
-    .line 15
-    const/4 v3, 0x2
-
-    .line 16
-    new-array v4, v3, [Ljava/lang/Integer;
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 17
     .line 18
-    const/4 v5, 0x0
-
     .line 19
-    aput-object v1, v4, v5
+    sget-object p1, LP3b;->Z:LP3b;
 
     .line 20
     .line 21
-    const/4 v1, 0x1
+    new-instance p2, LREi;
 
     .line 22
-    aput-object v2, v4, v1
-
     .line 23
-    .line 24
-    invoke-static {v4}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 24
     .line 25
     .line 26
-    .line 27
-    move-result-object v2
+    new-instance p1, Ljava/util/ArrayList;
 
+    .line 27
     .line 28
-    const/16 v4, 0x14
+    invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     .line 29
     .line 30
-    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 31
+    new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 32
     .line 33
-    move-result-object v4
+    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
 
     .line 34
-    const/16 v6, 0xc
-
     .line 35
     .line 36
-    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    sget-object p1, Loab;->Z:Loab;
 
     .line 37
     .line 38
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 39
-    move-result-object v6
-
     .line 40
-    const/16 v7, 0xe
-
     .line 41
-    .line 42
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    new-instance p2, Lnp0;
 
+    .line 42
     .line 43
+    const-string p3, "MapDebugLogWindow"
+
     .line 44
     .line 45
-    move-result-object v7
+    invoke-direct {p2, p1, p3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 46
-    const/4 v8, 0x3
-
     .line 47
-    new-array v8, v8, [Ljava/lang/Integer;
-
     .line 48
+    new-instance p1, LnJe;
+
     .line 49
-    aput-object v4, v8, v5
-
     .line 50
-    .line 51
-    aput-object v6, v8, v1
+    invoke-direct {p1, p2}, LnJe;-><init>(Lnp0;)V
 
+    .line 51
     .line 52
     .line 53
-    aput-object v7, v8, v3
-
-    .line 54
-    .line 55
-    invoke-static {v8}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object v1
-
-    .line 59
-    sget-object v3, LI9b;->f0:LI9b;
-
-    .line 60
-    .line 61
-    sget-object v4, LI9b;->g0:LI9b;
-
-    .line 62
-    .line 63
-    sget-object v5, LI9b;->h0:LI9b;
-
-    .line 64
-    .line 65
-    sget-object v6, LI9b;->i0:LI9b;
-
-    .line 66
-    .line 67
-    move-object v9, v2
-
-    .line 68
-    move-object v2, v1
-
-    .line 69
-    move-object v1, v9
-
-    .line 70
-    invoke-direct/range {v0 .. v6}, Lmab;-><init>(Ljava/util/List;Ljava/util/List;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
-
-    .line 71
-    .line 72
-    .line 73
-    return-object v0
+    return-void
 .end method

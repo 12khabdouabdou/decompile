@@ -1,519 +1,774 @@
 .class public final LSI;
-.super LqM0;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
-.field public final Z:Landroid/content/Context;
+.field public X:Z
 
-.field public final e0:LTI;
+.field public Y:Z
 
-.field public final f0:LBre;
+.field public Z:Z
 
-.field public g0:Landroid/widget/TextView;
+.field public a:I
 
-.field public h0:Landroid/widget/TextView;
+.field public b:I
+
+.field public c:I
+
+.field public e0:Z
+
+.field public t:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LTI;LBre;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, LqM0;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LSI;->Z:Landroid/content/Context;
+    const/4 v0, 0x0
 
     .line 5
+    iput v0, p0, LSI;->a:I
+
     .line 6
-    iput-object p2, p0, LSI;->e0:LTI;
-
     .line 7
-    .line 8
-    iput-object p3, p0, LSI;->f0:LBre;
+    iput v0, p0, LSI;->b:I
 
+    .line 8
     .line 9
+    iput v0, p0, LSI;->c:I
+
     .line 10
+    .line 11
+    iput v0, p0, LSI;->t:I
+
+    .line 12
+    .line 13
+    iput-boolean v0, p0, LSI;->X:Z
+
+    .line 14
+    .line 15
+    iput-boolean v0, p0, LSI;->Y:Z
+
+    .line 16
+    .line 17
+    iput-boolean v0, p0, LSI;->Z:Z
+
+    .line 18
+    .line 19
+    iput-boolean v0, p0, LSI;->e0:Z
+
+    .line 20
+    .line 21
+    const/4 v0, 0x0
+
+    .line 22
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
+
+    .line 23
+    .line 24
+    const/4 v0, -0x1
+
+    .line 25
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+
+    .line 26
+    .line 27
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic O2(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, Lhad;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1}, LSI;->U2(Lhad;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final Q2(Landroid/widget/TextView;)V
+.method public final computeSerializedSize()I
     .locals 4
 
     .line 1
-    sget-object v0, LxSg;->a:LBre;
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
-    iget-object v0, p0, LSI;->f0:LBre;
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-virtual {v0}, LBre;->d()LF06;
+    iget v1, p0, LSI;->a:I
 
     .line 6
     .line 7
+    const/4 v2, 0x1
+
     .line 8
-    move-result-object v1
+    and-int/2addr v1, v2
 
     .line 9
-    iget-object v2, p0, LSI;->Z:Landroid/content/Context;
+    if-eqz v1, :cond_0
 
     .line 10
     .line 11
-    const/4 v3, 0x1
-
-    .line 12
-    invoke-static {v2, v3, v1}, LxSg;->b(Landroid/content/Context;ILF06;)Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v1
-
-    .line 16
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
-
-    .line 21
-    .line 22
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 23
-    .line 24
-    .line 25
-    new-instance v0, LRI;
-
-    .line 26
-    .line 27
-    const/4 v1, 0x0
-
-    .line 28
-    invoke-direct {v0, p1, v1}, LRI;-><init>(Landroid/widget/TextView;I)V
-
-    .line 29
-    .line 30
-    .line 31
-    sget-object p1, LoA;->h0:LoA;
-
-    .line 32
-    .line 33
-    invoke-virtual {v2, v0, p1}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object p1
-
-    .line 37
-    invoke-static {p0, p1, p0}, LqM0;->F2(LqM0;Lio/reactivex/rxjava3/disposables/Disposable;LqM0;)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-.end method
-
-.method public final S2(LWI$b;)V
-    .locals 6
-
-    .line 1
-    sget-object v0, LWI$b;->c:LWI$b;
-
-    .line 2
-    .line 3
-    const/16 v1, 0x8
-
-    .line 4
-    .line 5
-    const-string v2, "altitudeDisplayFeet"
-
-    .line 6
-    .line 7
-    const/4 v3, 0x0
-
-    .line 8
-    const-string v4, "altitudeDisplayMeters"
-
-    .line 9
-    .line 10
-    const/4 v5, 0x0
-
-    .line 11
-    if-ne p1, v0, :cond_2
+    iget v1, p0, LSI;->b:I
 
     .line 12
     .line 13
-    iget-object p1, p0, LSI;->g0:Landroid/widget/TextView;
+    invoke-static {v2, v1}, Lbd3;->i(II)I
 
     .line 14
     .line 15
-    if-eqz p1, :cond_1
-
     .line 16
+    move-result v1
+
     .line 17
-    invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
+    add-int/2addr v0, v1
 
     .line 18
-    .line 19
-    .line 20
-    iget-object p1, p0, LSI;->h0:Landroid/widget/TextView;
-
-    .line 21
-    .line 22
-    if-eqz p1, :cond_0
-
-    .line 23
-    .line 24
-    invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 25
-    .line 26
-    .line 27
-    return-void
-
-    .line 28
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    iget v1, p0, LSI;->a:I
 
-    .line 29
-    .line 30
-    .line 31
-    throw v5
-
-    .line 32
-    :cond_1
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 33
-    .line 34
-    .line 35
-    throw v5
-
-    .line 36
-    :cond_2
-    iget-object p1, p0, LSI;->g0:Landroid/widget/TextView;
-
-    .line 37
-    .line 38
-    if-eqz p1, :cond_4
-
-    .line 39
-    .line 40
-    invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 41
-    .line 42
-    .line 43
-    iget-object p1, p0, LSI;->h0:Landroid/widget/TextView;
-
-    .line 44
-    .line 45
-    if-eqz p1, :cond_3
-
-    .line 46
-    .line 47
-    invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
-
-    .line 48
-    .line 49
-    .line 50
-    return-void
-
-    .line 51
-    :cond_3
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 52
-    .line 53
-    .line 54
-    throw v5
-
-    .line 55
-    :cond_4
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 56
-    .line 57
-    .line 58
-    throw v5
-.end method
-
-.method public final U2(Lhad;)V
-    .locals 9
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const/4 v1, 0x1
-
-    .line 3
-    invoke-super {p0, p1}, LqM0;->O2(Ljava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v2, p1, Lhad;->a:Ljava/lang/Object;
-
-    .line 7
-    .line 8
-    check-cast v2, Landroid/view/View;
-
-    .line 9
-    .line 10
-    const v3, 0x7f0b0154
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v3
-
-    .line 17
-    check-cast v3, Landroid/widget/TextView;
-
-    .line 18
     .line 19
-    invoke-virtual {p0, v3}, LSI;->Q2(Landroid/widget/TextView;)V
-
     .line 20
+    const/4 v2, 0x2
+
     .line 21
+    and-int/2addr v1, v2
+
     .line 22
-    iput-object v3, p0, LSI;->g0:Landroid/widget/TextView;
+    if-eqz v1, :cond_1
 
     .line 23
     .line 24
-    const v3, 0x7f0b0153
+    iget v1, p0, LSI;->c:I
 
     .line 25
     .line 26
-    .line 27
-    invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-static {v2, v1}, Lbd3;->i(II)I
 
+    .line 27
     .line 28
     .line 29
+    move-result v1
+
     .line 30
-    move-result-object v2
+    add-int/2addr v0, v1
 
     .line 31
-    check-cast v2, Landroid/widget/TextView;
+    :cond_1
+    iget v1, p0, LSI;->a:I
 
     .line 32
     .line 33
-    invoke-virtual {p0, v2}, LSI;->Q2(Landroid/widget/TextView;)V
+    const/4 v2, 0x4
 
     .line 34
-    .line 35
-    .line 36
-    iput-object v2, p0, LSI;->h0:Landroid/widget/TextView;
+    and-int/2addr v1, v2
 
+    .line 35
+    if-eqz v1, :cond_2
+
+    .line 36
     .line 37
+    const/4 v1, 0x3
+
     .line 38
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
+    iget v3, p0, LSI;->t:I
 
     .line 39
     .line 40
-    check-cast p1, LWI$b;
+    invoke-static {v1, v3}, Lbd3;->i(II)I
 
     .line 41
     .line 42
-    invoke-virtual {p0, p1}, LSI;->S2(LWI$b;)V
-
     .line 43
+    move-result v1
+
     .line 44
+    add-int/2addr v0, v1
+
     .line 45
-    iget-object p1, p0, LSI;->e0:LTI;
+    :cond_2
+    iget v1, p0, LSI;->a:I
 
     .line 46
     .line 47
-    invoke-virtual {p1}, LTI;->h()I
+    and-int/lit8 v1, v1, 0x8
 
     .line 48
     .line 49
-    .line 50
-    move-result v2
+    if-eqz v1, :cond_3
 
+    .line 50
     .line 51
-    iget-object v3, p0, LSI;->g0:Landroid/widget/TextView;
+    invoke-static {v2}, Lbd3;->a(I)I
 
     .line 52
     .line 53
-    const/4 v4, 0x0
-
     .line 54
-    if-eqz v3, :cond_1
+    move-result v1
 
     .line 55
+    add-int/2addr v0, v1
+
     .line 56
-    sget-object v5, LTT0;->a:Ljava/util/HashSet;
+    :cond_3
+    iget v1, p0, LSI;->a:I
 
     .line 57
     .line 58
-    iget-object v5, p0, LSI;->Z:Landroid/content/Context;
+    and-int/lit8 v1, v1, 0x10
 
     .line 59
     .line 60
-    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    if-eqz v1, :cond_4
 
     .line 61
     .line 62
+    const/4 v1, 0x5
+
     .line 63
-    move-result-object v6
+    invoke-static {v1}, Lbd3;->a(I)I
 
     .line 64
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 65
     .line 66
+    move-result v1
+
     .line 67
-    move-result-object v7
+    add-int/2addr v0, v1
 
     .line 68
-    new-array v8, v1, [Ljava/lang/Object;
+    :cond_4
+    iget v1, p0, LSI;->a:I
 
     .line 69
     .line 70
-    aput-object v7, v8, v0
+    and-int/lit8 v1, v1, 0x20
 
     .line 71
     .line 72
-    const v7, 0x7f110057
+    if-eqz v1, :cond_5
 
     .line 73
     .line 74
+    const/4 v1, 0x6
+
     .line 75
-    invoke-static {v6, v7, v2, v8}, LSvk;->c(Landroid/content/res/Resources;II[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {v1}, Lbd3;->a(I)I
 
     .line 76
     .line 77
     .line 78
-    move-result-object v2
+    move-result v1
 
     .line 79
-    invoke-virtual {v3, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    add-int/2addr v0, v1
+
+    .line 80
+    :cond_5
+    iget v1, p0, LSI;->a:I
+
+    .line 81
+    .line 82
+    and-int/lit8 v1, v1, 0x40
+
+    .line 83
+    .line 84
+    if-eqz v1, :cond_6
+
+    .line 85
+    .line 86
+    const/4 v1, 0x7
+
+    .line 87
+    invoke-static {v1}, Lbd3;->a(I)I
+
+    .line 88
+    .line 89
+    .line 90
+    move-result v1
+
+    .line 91
+    add-int/2addr v1, v0
+
+    .line 92
+    return v1
+
+    .line 93
+    :cond_6
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 4
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_8
+
+    .line 6
+    .line 7
+    const/16 v1, 0x8
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_7
+
+    .line 10
+    .line 11
+    const/16 v2, 0x10
+
+    .line 12
+    .line 13
+    if-eq v0, v2, :cond_6
+
+    .line 14
+    .line 15
+    const/16 v3, 0x18
+
+    .line 16
+    .line 17
+    if-eq v0, v3, :cond_5
+
+    .line 18
+    .line 19
+    const/16 v3, 0x20
+
+    .line 20
+    .line 21
+    if-eq v0, v3, :cond_4
+
+    .line 22
+    .line 23
+    const/16 v1, 0x28
+
+    .line 24
+    .line 25
+    if-eq v0, v1, :cond_3
+
+    .line 26
+    .line 27
+    const/16 v1, 0x30
+
+    .line 28
+    .line 29
+    if-eq v0, v1, :cond_2
+
+    .line 30
+    .line 31
+    const/16 v1, 0x38
+
+    .line 32
+    .line 33
+    if-eq v0, v1, :cond_1
+
+    .line 34
+    .line 35
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    if-nez v0, :cond_0
+
+    .line 40
+    .line 41
+    goto :goto_1
+
+    .line 42
+    :cond_1
+    invoke-virtual {p1}, LZc3;->g()Z
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v0
+
+    .line 46
+    iput-boolean v0, p0, LSI;->e0:Z
+
+    .line 47
+    .line 48
+    iget v0, p0, LSI;->a:I
+
+    .line 49
+    .line 50
+    or-int/lit8 v0, v0, 0x40
+
+    .line 51
+    .line 52
+    iput v0, p0, LSI;->a:I
+
+    .line 53
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :cond_2
+    invoke-virtual {p1}, LZc3;->g()Z
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v0
+
+    .line 59
+    iput-boolean v0, p0, LSI;->Z:Z
+
+    .line 60
+    .line 61
+    iget v0, p0, LSI;->a:I
+
+    .line 62
+    .line 63
+    or-int/2addr v0, v3
+
+    .line 64
+    iput v0, p0, LSI;->a:I
+
+    .line 65
+    .line 66
+    goto :goto_0
+
+    .line 67
+    :cond_3
+    invoke-virtual {p1}, LZc3;->g()Z
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v0
+
+    .line 71
+    iput-boolean v0, p0, LSI;->Y:Z
+
+    .line 72
+    .line 73
+    iget v0, p0, LSI;->a:I
+
+    .line 74
+    .line 75
+    or-int/2addr v0, v2
+
+    .line 76
+    iput v0, p0, LSI;->a:I
+
+    .line 77
+    .line 78
+    goto :goto_0
+
+    .line 79
+    :cond_4
+    invoke-virtual {p1}, LZc3;->g()Z
 
     .line 80
     .line 81
     .line 82
-    invoke-virtual {p1}, LTI;->g()D
+    move-result v0
 
     .line 83
+    iput-boolean v0, p0, LSI;->X:Z
+
     .line 84
     .line 85
-    move-result-wide v2
+    iget v0, p0, LSI;->a:I
 
     .line 86
-    double-to-int p1, v2
-
     .line 87
-    iget-object v2, p0, LSI;->h0:Landroid/widget/TextView;
+    or-int/2addr v0, v1
 
     .line 88
-    .line 89
-    if-eqz v2, :cond_0
+    iput v0, p0, LSI;->a:I
 
+    .line 89
     .line 90
+    goto :goto_0
+
     .line 91
-    invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    :cond_5
+    invoke-virtual {p1}, LZc3;->r()I
 
     .line 92
     .line 93
     .line 94
-    move-result-object v3
+    move-result v0
 
     .line 95
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iput v0, p0, LSI;->t:I
 
     .line 96
     .line 97
-    .line 98
-    move-result-object v4
+    iget v0, p0, LSI;->a:I
 
+    .line 98
     .line 99
-    new-array v1, v1, [Ljava/lang/Object;
+    or-int/lit8 v0, v0, 0x4
 
     .line 100
     .line 101
-    aput-object v4, v1, v0
+    iput v0, p0, LSI;->a:I
 
     .line 102
     .line 103
-    const v0, 0x7f110056
+    goto :goto_0
 
     .line 104
+    :cond_6
+    invoke-virtual {p1}, LZc3;->r()I
+
     .line 105
     .line 106
-    invoke-static {v3, v0, p1, v1}, LSvk;->c(Landroid/content/res/Resources;II[Ljava/lang/Object;)Ljava/lang/String;
-
     .line 107
-    .line 108
-    .line 109
-    move-result-object p1
+    move-result v0
 
+    .line 108
+    iput v0, p0, LSI;->c:I
+
+    .line 109
     .line 110
-    invoke-virtual {v2, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    iget v0, p0, LSI;->a:I
 
     .line 111
     .line 112
-    .line 113
-    return-void
+    or-int/lit8 v0, v0, 0x2
 
+    .line 113
     .line 114
-    :cond_0
-    const-string p1, "altitudeDisplayFeet"
+    iput v0, p0, LSI;->a:I
 
     .line 115
     .line 116
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    goto :goto_0
 
     .line 117
+    :cond_7
+    invoke-virtual {p1}, LZc3;->r()I
+
     .line 118
     .line 119
-    throw v4
-
     .line 120
-    :cond_1
-    const-string p1, "altitudeDisplayMeters"
+    move-result v0
 
     .line 121
-    .line 122
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    iput v0, p0, LSI;->b:I
 
+    .line 122
     .line 123
+    iget v0, p0, LSI;->a:I
+
     .line 124
     .line 125
-    throw v4
+    or-int/lit8 v0, v0, 0x1
+
+    .line 126
+    .line 127
+    iput v0, p0, LSI;->a:I
+
+    .line 128
+    .line 129
+    goto/16 :goto_0
+
+    .line 130
+    .line 131
+    :cond_8
+    :goto_1
+    return-object p0
+.end method
+
+.method public final writeTo(Lbd3;)V
+    .locals 3
+
+    .line 1
+    iget v0, p0, LSI;->a:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    and-int/2addr v0, v1
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget v0, p0, LSI;->b:I
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, v1, v0}, Lbd3;->I(II)V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    iget v0, p0, LSI;->a:I
+
+    .line 13
+    .line 14
+    const/4 v1, 0x2
+
+    .line 15
+    and-int/2addr v0, v1
+
+    .line 16
+    if-eqz v0, :cond_1
+
+    .line 17
+    .line 18
+    iget v0, p0, LSI;->c:I
+
+    .line 19
+    .line 20
+    invoke-virtual {p1, v1, v0}, Lbd3;->I(II)V
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_1
+    iget v0, p0, LSI;->a:I
+
+    .line 24
+    .line 25
+    const/4 v1, 0x4
+
+    .line 26
+    and-int/2addr v0, v1
+
+    .line 27
+    if-eqz v0, :cond_2
+
+    .line 28
+    .line 29
+    const/4 v0, 0x3
+
+    .line 30
+    iget v2, p0, LSI;->t:I
+
+    .line 31
+    .line 32
+    invoke-virtual {p1, v0, v2}, Lbd3;->I(II)V
+
+    .line 33
+    .line 34
+    .line 35
+    :cond_2
+    iget v0, p0, LSI;->a:I
+
+    .line 36
+    .line 37
+    and-int/lit8 v0, v0, 0x8
+
+    .line 38
+    .line 39
+    if-eqz v0, :cond_3
+
+    .line 40
+    .line 41
+    iget-boolean v0, p0, LSI;->X:Z
+
+    .line 42
+    .line 43
+    invoke-virtual {p1, v1, v0}, Lbd3;->z(IZ)V
+
+    .line 44
+    .line 45
+    .line 46
+    :cond_3
+    iget v0, p0, LSI;->a:I
+
+    .line 47
+    .line 48
+    and-int/lit8 v0, v0, 0x10
+
+    .line 49
+    .line 50
+    if-eqz v0, :cond_4
+
+    .line 51
+    .line 52
+    const/4 v0, 0x5
+
+    .line 53
+    iget-boolean v1, p0, LSI;->Y:Z
+
+    .line 54
+    .line 55
+    invoke-virtual {p1, v0, v1}, Lbd3;->z(IZ)V
+
+    .line 56
+    .line 57
+    .line 58
+    :cond_4
+    iget v0, p0, LSI;->a:I
+
+    .line 59
+    .line 60
+    and-int/lit8 v0, v0, 0x20
+
+    .line 61
+    .line 62
+    if-eqz v0, :cond_5
+
+    .line 63
+    .line 64
+    const/4 v0, 0x6
+
+    .line 65
+    iget-boolean v1, p0, LSI;->Z:Z
+
+    .line 66
+    .line 67
+    invoke-virtual {p1, v0, v1}, Lbd3;->z(IZ)V
+
+    .line 68
+    .line 69
+    .line 70
+    :cond_5
+    iget v0, p0, LSI;->a:I
+
+    .line 71
+    .line 72
+    and-int/lit8 v0, v0, 0x40
+
+    .line 73
+    .line 74
+    if-eqz v0, :cond_6
+
+    .line 75
+    .line 76
+    const/4 v0, 0x7
+
+    .line 77
+    iget-boolean v1, p0, LSI;->e0:Z
+
+    .line 78
+    .line 79
+    invoke-virtual {p1, v0, v1}, Lbd3;->z(IZ)V
+
+    .line 80
+    .line 81
+    .line 82
+    :cond_6
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 83
+    .line 84
+    .line 85
+    return-void
 .end method

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LUY8;
+    proxyClass = LD69;
     schema = "\'onDismiss\':f?|m|(),\'onCtItemPicked\':f?|m|(t)"
     typeReferences = {}
 .end annotation
@@ -17,12 +17,12 @@
 
 # virtual methods
 .method public abstract onCtItemPicked([B)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onDismiss()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

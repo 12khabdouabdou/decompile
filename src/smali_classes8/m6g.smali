@@ -1,716 +1,551 @@
-.class public final enum Lm6g;
-.super Ljava/lang/Enum;
+.class public final Lm6g;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LgQ6;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lm6g;",
-        ">;",
-        "LgQ6;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final enum X:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "EMAIL_SETTINGS_PASSWORDFEEDBACK"
-    .end annotation
-.end field
-
-.field public static final enum Y:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "LOCATION_SHARING_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum Z:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PASSWORD_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum b:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "BIRTHDAY_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum c:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "DISPLAY_USERNAME_SETTINGS_PASSWORD"
-    .end annotation
-.end field
-
-.field public static final enum e0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PASSWORD_SETTINGS_REAUTH"
-    .end annotation
-.end field
-
-.field public static final enum f0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PHONE_SETTINGS_PASSWORD"
-    .end annotation
-.end field
-
-.field public static final enum g0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PREVIEW_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum h0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "QUICKADD_PRIVACY_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum i0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SEARCHMOBILE_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum j0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum k0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SNAP_PRIVACY_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum l0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SNAP_RECEIVE_NOTIFS_FROM_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum m0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "STORY_PRIVACY_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum n0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "USERNAME_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final enum o0:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "THIRD_PARTY_ACCOUNTS_SETTINGS"
-    .end annotation
-.end field
-
-.field public static final synthetic p0:[Lm6g;
-
-.field public static final enum t:Lm6g;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "DOWNLOAD_MY_DATA"
-    .end annotation
-.end field
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final a:I
+.field public final synthetic a:I
+
+.field public final synthetic b:Lw6g;
+
+.field public final synthetic c:LReg;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 35
-
-    .line 1
-    new-instance v0, Lm6g;
-
-    .line 2
-    .line 3
-    const-string v1, "BIRTHDAY_SETTINGS"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, Lm6g;->b:Lm6g;
-
-    .line 10
-    .line 11
-    new-instance v1, Lm6g;
-
-    .line 12
-    .line 13
-    const-string v3, "DISPLAY_USERNAME_SETTINGS_PASSWORD"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, Lm6g;->c:Lm6g;
-
-    .line 20
-    .line 21
-    new-instance v3, Lm6g;
-
-    .line 22
-    .line 23
-    const-string v5, "DOWNLOAD_MY_DATA"
-
-    .line 24
-    .line 25
-    const/4 v6, 0x2
-
-    .line 26
-    invoke-direct {v3, v5, v6, v6}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v3, Lm6g;->t:Lm6g;
-
-    .line 30
-    .line 31
-    new-instance v5, Lm6g;
-
-    .line 32
-    .line 33
-    const-string v7, "EMAIL_SETTINGS_PASSWORDFEEDBACK"
-
-    .line 34
-    .line 35
-    const/4 v8, 0x3
-
-    .line 36
-    invoke-direct {v5, v7, v8, v8}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v5, Lm6g;->X:Lm6g;
-
-    .line 40
-    .line 41
-    new-instance v7, Lm6g;
-
-    .line 42
-    .line 43
-    const-string v9, "LOCATION_SHARING_SETTINGS"
-
-    .line 44
-    .line 45
-    const/4 v10, 0x4
-
-    .line 46
-    invoke-direct {v7, v9, v10, v10}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 47
-    .line 48
-    .line 49
-    sput-object v7, Lm6g;->Y:Lm6g;
-
-    .line 50
-    .line 51
-    new-instance v9, Lm6g;
-
-    .line 52
-    .line 53
-    const-string v11, "PASSWORD_SETTINGS"
-
-    .line 54
-    .line 55
-    const/4 v12, 0x5
-
-    .line 56
-    invoke-direct {v9, v11, v12, v12}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 57
-    .line 58
-    .line 59
-    sput-object v9, Lm6g;->Z:Lm6g;
-
-    .line 60
-    .line 61
-    new-instance v11, Lm6g;
-
-    .line 62
-    .line 63
-    const-string v13, "PASSWORD_SETTINGS_REAUTH"
-
-    .line 64
-    .line 65
-    const/4 v14, 0x6
-
-    .line 66
-    invoke-direct {v11, v13, v14, v14}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v11, Lm6g;->e0:Lm6g;
-
-    .line 70
-    .line 71
-    new-instance v13, Lm6g;
-
-    .line 72
-    .line 73
-    const-string v15, "PHONE_SETTINGS_PASSWORD"
-
-    .line 74
-    .line 75
-    const/16 v16, 0x0
-
-    .line 76
-    .line 77
-    const/4 v2, 0x7
-
-    .line 78
-    invoke-direct {v13, v15, v2, v2}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 79
-    .line 80
-    .line 81
-    sput-object v13, Lm6g;->f0:Lm6g;
-
-    .line 82
-    .line 83
-    new-instance v15, Lm6g;
-
-    .line 84
-    .line 85
-    const/16 v17, 0x7
-
-    .line 86
-    .line 87
-    const-string v2, "PREVIEW_SETTINGS"
-
-    .line 88
-    .line 89
-    const/16 v18, 0x1
-
-    .line 90
-    .line 91
-    const/16 v4, 0x8
-
-    .line 92
-    .line 93
-    invoke-direct {v15, v2, v4, v4}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 94
-    .line 95
-    .line 96
-    sput-object v15, Lm6g;->g0:Lm6g;
-
-    .line 97
-    .line 98
-    new-instance v2, Lm6g;
-
-    .line 99
-    .line 100
-    const/16 v19, 0x8
-
-    .line 101
-    .line 102
-    const-string v4, "QUICKADD_PRIVACY_SETTINGS"
-
-    .line 103
-    .line 104
-    const/16 v20, 0x2
-
-    .line 105
-    .line 106
-    const/16 v6, 0x9
-
-    .line 107
-    .line 108
-    invoke-direct {v2, v4, v6, v6}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 109
-    .line 110
-    .line 111
-    sput-object v2, Lm6g;->h0:Lm6g;
-
-    .line 112
-    .line 113
-    new-instance v4, Lm6g;
-
-    .line 114
-    .line 115
-    const/16 v21, 0x9
-
-    .line 116
-    .line 117
-    const-string v6, "SEARCHMOBILE_SETTINGS"
-
-    .line 118
-    .line 119
-    const/16 v22, 0x3
-
-    .line 120
-    .line 121
-    const/16 v8, 0xa
-
-    .line 122
-    .line 123
-    invoke-direct {v4, v6, v8, v8}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 124
-    .line 125
-    .line 126
-    sput-object v4, Lm6g;->i0:Lm6g;
-
-    .line 127
-    .line 128
-    new-instance v6, Lm6g;
-
-    .line 129
-    .line 130
-    const/16 v23, 0xa
-
-    .line 131
-    .line 132
-    const-string v8, "SETTINGS"
-
-    .line 133
-    .line 134
-    const/16 v24, 0x4
-
-    .line 135
-    .line 136
-    const/16 v10, 0xb
-
-    .line 137
-    .line 138
-    invoke-direct {v6, v8, v10, v10}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 139
-    .line 140
-    .line 141
-    sput-object v6, Lm6g;->j0:Lm6g;
-
-    .line 142
-    .line 143
-    new-instance v8, Lm6g;
-
-    .line 144
-    .line 145
-    const/16 v25, 0xb
-
-    .line 146
-    .line 147
-    const-string v10, "SNAP_PRIVACY_SETTINGS"
-
-    .line 148
-    .line 149
-    const/16 v26, 0x5
-
-    .line 150
-    .line 151
-    const/16 v12, 0xc
-
-    .line 152
-    .line 153
-    invoke-direct {v8, v10, v12, v12}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 154
-    .line 155
-    .line 156
-    sput-object v8, Lm6g;->k0:Lm6g;
-
-    .line 157
-    .line 158
-    new-instance v10, Lm6g;
-
-    .line 159
-    .line 160
-    const/16 v27, 0xc
-
-    .line 161
-    .line 162
-    const-string v12, "SNAP_RECEIVE_NOTIFS_FROM_SETTINGS"
-
-    .line 163
-    .line 164
-    const/16 v28, 0x6
-
-    .line 165
-    .line 166
-    const/16 v14, 0xd
-
-    .line 167
-    .line 168
-    invoke-direct {v10, v12, v14, v14}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 169
-    .line 170
-    .line 171
-    sput-object v10, Lm6g;->l0:Lm6g;
-
-    .line 172
-    .line 173
-    new-instance v12, Lm6g;
-
-    .line 174
-    .line 175
-    const/16 v29, 0xd
-
-    .line 176
-    .line 177
-    const-string v14, "STORY_PRIVACY_SETTINGS"
-
-    .line 178
-    .line 179
-    move-object/from16 v30, v0
-
-    .line 180
-    .line 181
-    const/16 v0, 0xe
-
-    .line 182
-    .line 183
-    invoke-direct {v12, v14, v0, v0}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 184
-    .line 185
-    .line 186
-    sput-object v12, Lm6g;->m0:Lm6g;
-
-    .line 187
-    .line 188
-    new-instance v14, Lm6g;
-
-    .line 189
-    .line 190
-    const/16 v31, 0xe
-
-    .line 191
-    .line 192
-    const-string v0, "USERNAME_SETTINGS"
-
-    .line 193
-    .line 194
-    move-object/from16 v32, v1
-
-    .line 195
-    .line 196
-    const/16 v1, 0xf
-
-    .line 197
-    .line 198
-    invoke-direct {v14, v0, v1, v1}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 199
-    .line 200
-    .line 201
-    sput-object v14, Lm6g;->n0:Lm6g;
-
-    .line 202
-    .line 203
-    new-instance v0, Lm6g;
-
-    .line 204
-    .line 205
-    const/16 v33, 0xf
-
-    .line 206
-    .line 207
-    const-string v1, "THIRD_PARTY_ACCOUNTS_SETTINGS"
-
-    .line 208
-    .line 209
-    move-object/from16 v34, v2
-
-    .line 210
-    .line 211
-    const/16 v2, 0x10
-
-    .line 212
-    .line 213
-    invoke-direct {v0, v1, v2, v2}, Lm6g;-><init>(Ljava/lang/String;II)V
-
-    .line 214
-    .line 215
-    .line 216
-    sput-object v0, Lm6g;->o0:Lm6g;
-
-    .line 217
-    .line 218
-    const/16 v1, 0x11
-
-    .line 219
-    .line 220
-    new-array v1, v1, [Lm6g;
-
-    .line 221
-    .line 222
-    aput-object v30, v1, v16
-
-    .line 223
-    .line 224
-    aput-object v32, v1, v18
-
-    .line 225
-    .line 226
-    aput-object v3, v1, v20
-
-    .line 227
-    .line 228
-    aput-object v5, v1, v22
-
-    .line 229
-    .line 230
-    aput-object v7, v1, v24
-
-    .line 231
-    .line 232
-    aput-object v9, v1, v26
-
-    .line 233
-    .line 234
-    aput-object v11, v1, v28
-
-    .line 235
-    .line 236
-    aput-object v13, v1, v17
-
-    .line 237
-    .line 238
-    aput-object v15, v1, v19
-
-    .line 239
-    .line 240
-    aput-object v34, v1, v21
-
-    .line 241
-    .line 242
-    aput-object v4, v1, v23
-
-    .line 243
-    .line 244
-    aput-object v6, v1, v25
-
-    .line 245
-    .line 246
-    aput-object v8, v1, v27
-
-    .line 247
-    .line 248
-    aput-object v10, v1, v29
-
-    .line 249
-    .line 250
-    aput-object v12, v1, v31
-
-    .line 251
-    .line 252
-    aput-object v14, v1, v33
-
-    .line 253
-    .line 254
-    aput-object v0, v1, v2
-
-    .line 255
-    .line 256
-    sput-object v1, Lm6g;->p0:[Lm6g;
-
-    .line 257
-    .line 258
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public synthetic constructor <init>(Lw6g;LReg;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
     iput p3, p0, Lm6g;->a:I
 
-    .line 5
-    .line 6
+    iput-object p1, p0, Lm6g;->b:Lw6g;
+
+    iput-object p2, p0, Lm6g;->c:LReg;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)Lm6g;
-    .locals 1
-
-    .line 1
-    const-class v0, Lm6g;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, Lm6g;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lm6g;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lm6g;->p0:[Lm6g;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lm6g;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [Lm6g;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
     iget v0, p0, Lm6g;->a:I
 
     .line 2
     .line 3
-    return v0
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, LDpd;
+
+    .line 7
+    .line 8
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    check-cast v0, Ljava/util/List;
+
+    .line 11
+    .line 12
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    check-cast p1, Ljava/util/List;
+
+    .line 15
+    .line 16
+    iget-object v1, p0, Lm6g;->b:Lw6g;
+
+    .line 17
+    .line 18
+    iget-object v2, v1, Lw6g;->p:LCuf;
+
+    .line 19
+    .line 20
+    iget-object v3, p0, Lm6g;->c:LReg;
+
+    .line 21
+    .line 22
+    iget-object v3, v3, LReg;->g0:LN7g;
+
+    .line 23
+    .line 24
+    iget-object v3, v3, LN7g;->a:LJ8g;
+
+    .line 25
+    .line 26
+    move-object v4, p1
+
+    .line 27
+    check-cast v4, Ljava/lang/Iterable;
+
+    .line 28
+    .line 29
+    instance-of v5, v4, Ljava/util/Collection;
+
+    .line 30
+    .line 31
+    if-eqz v5, :cond_0
+
+    .line 32
+    .line 33
+    move-object v5, v4
+
+    .line 34
+    check-cast v5, Ljava/util/Collection;
+
+    .line 35
+    .line 36
+    invoke-interface {v5}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v5
+
+    .line 40
+    if-eqz v5, :cond_0
+
+    .line 41
+    .line 42
+    goto :goto_0
+
+    .line 43
+    :cond_0
+    invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v4
+
+    .line 47
+    :cond_1
+    invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v5
+
+    .line 51
+    if-eqz v5, :cond_2
+
+    .line 52
+    .line 53
+    invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v5
+
+    .line 57
+    check-cast v5, Lj3c;
+
+    .line 58
+    .line 59
+    instance-of v5, v5, Lcom/snap/core/model/SmsMessageRecipient;
+
+    .line 60
+    .line 61
+    if-eqz v5, :cond_1
+
+    .line 62
+    .line 63
+    iget-object v4, v2, LCuf;->c:Ljava/lang/Object;
+
+    .line 64
+    .line 65
+    check-cast v4, Ly45;
+
+    .line 66
+    .line 67
+    invoke-virtual {v4}, Ly45;->get()Ljava/lang/Object;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v4
+
+    .line 71
+    check-cast v4, LOAg;
+
+    .line 72
+    .line 73
+    sget-object v5, Lcom/snap/modules/contacts_api/SmsInviteFeature;->SEND_TO:Lcom/snap/modules/contacts_api/SmsInviteFeature;
+
+    .line 74
+    .line 75
+    invoke-interface {v4, v5}, LOAg;->a(Lcom/snap/modules/contacts_api/SmsInviteFeature;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v4
+
+    .line 79
+    new-instance v5, Lhxg;
+
+    .line 80
+    .line 81
+    const/16 v6, 0x11
+
+    .line 82
+    .line 83
+    invoke-direct {v5, v3, v6, v2}, Lhxg;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 84
+    .line 85
+    .line 86
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
+    .line 87
+    .line 88
+    invoke-direct {v2, v4, v5}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 89
+    .line 90
+    .line 91
+    goto :goto_1
+
+    .line 92
+    :cond_2
+    :goto_0
+    sget-object v2, LJTg;->a:LJTg;
+
+    .line 93
+    .line 94
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+
+    .line 95
+    .line 96
+    invoke-direct {v3, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+
+    .line 97
+    .line 98
+    .line 99
+    move-object v2, v3
+
+    .line 100
+    :goto_1
+    new-instance v3, LML2;
+
+    .line 101
+    .line 102
+    const/4 v4, 0x1
+
+    .line 103
+    invoke-direct {v3, v4, v0, p1}, LML2;-><init>(ILjava/util/List;Ljava/util/List;)V
+
+    .line 104
+    .line 105
+    .line 106
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 107
+    .line 108
+    invoke-direct {p1, v2, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 109
+    .line 110
+    .line 111
+    sget-object v0, LK8g;->X:LK8g;
+
+    .line 112
+    .line 113
+    invoke-virtual {v1, p1, v0}, Lw6g;->e(Lio/reactivex/rxjava3/core/Single;LK8g;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object p1
+
+    .line 117
+    return-object p1
+
+    .line 118
+    :pswitch_0
+    check-cast p1, Ljava/util/List;
+
+    .line 119
+    .line 120
+    iget-object v0, p0, Lm6g;->b:Lw6g;
+
+    .line 121
+    .line 122
+    iget-object v0, v0, Lw6g;->l:LI23;
+
+    .line 123
+    .line 124
+    sget-object v1, Lh4c;->m0:Lh4c;
+
+    .line 125
+    .line 126
+    new-instance v2, LQi7;
+
+    .line 127
+    .line 128
+    invoke-direct {v2}, LQi7;-><init>()V
+
+    .line 129
+    .line 130
+    .line 131
+    iget-object v3, p0, Lm6g;->c:LReg;
+
+    .line 132
+    .line 133
+    iget-object v3, v3, LReg;->g0:LN7g;
+
+    .line 134
+    .line 135
+    iget-object v3, v3, LN7g;->a:LJ8g;
+
+    .line 136
+    .line 137
+    iget-object v3, v3, LJ8g;->b:LXbh;
+
+    .line 138
+    .line 139
+    const/4 v4, 0x1
+
+    .line 140
+    if-eqz v3, :cond_3
+
+    .line 141
+    .line 142
+    invoke-virtual {v3}, Ljava/lang/Enum;->name()Ljava/lang/String;
+
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v3
+
+    .line 146
+    invoke-static {v3}, LtYk;->i(Ljava/lang/String;)I
+
+    .line 147
+    .line 148
+    .line 149
+    move-result v3
+
+    .line 150
+    iput v3, v2, LQi7;->X:I
+
+    .line 151
+    .line 152
+    iget v3, v2, LQi7;->a:I
+
+    .line 153
+    .line 154
+    or-int/2addr v3, v4
+
+    .line 155
+    iput v3, v2, LQi7;->a:I
+
+    .line 156
+    .line 157
+    :cond_3
+    check-cast p1, Ljava/lang/Iterable;
+
+    .line 158
+    .line 159
+    instance-of v3, p1, Ljava/util/Collection;
+
+    .line 160
+    .line 161
+    const/4 v5, 0x2
+
+    .line 162
+    const/4 v6, 0x0
+
+    .line 163
+    if-eqz v3, :cond_5
+
+    .line 164
+    .line 165
+    move-object v3, p1
+
+    .line 166
+    check-cast v3, Ljava/util/Collection;
+
+    .line 167
+    .line 168
+    invoke-interface {v3}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 169
+    .line 170
+    .line 171
+    move-result v3
+
+    .line 172
+    if-eqz v3, :cond_5
+
+    .line 173
+    .line 174
+    :cond_4
+    const/4 v4, 0x0
+
+    .line 175
+    goto :goto_3
+
+    .line 176
+    :cond_5
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 177
+    .line 178
+    .line 179
+    move-result-object p1
+
+    .line 180
+    :cond_6
+    :goto_2
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 181
+    .line 182
+    .line 183
+    move-result v3
+
+    .line 184
+    if-eqz v3, :cond_4
+
+    .line 185
+    .line 186
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 187
+    .line 188
+    .line 189
+    move-result-object v3
+
+    .line 190
+    check-cast v3, Luzb;
+
+    .line 191
+    .line 192
+    invoke-virtual {v3}, Luzb;->b()Ljava/util/Set;
+
+    .line 193
+    .line 194
+    .line 195
+    move-result-object v3
+
+    .line 196
+    invoke-interface {v3}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 197
+    .line 198
+    .line 199
+    move-result v7
+
+    .line 200
+    if-eqz v7, :cond_7
+
+    .line 201
+    .line 202
+    goto :goto_2
+
+    .line 203
+    :cond_7
+    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    .line 204
+    .line 205
+    .line 206
+    move-result-object v3
+
+    .line 207
+    :cond_8
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 208
+    .line 209
+    .line 210
+    move-result v7
+
+    .line 211
+    if-eqz v7, :cond_6
+
+    .line 212
+    .line 213
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v7
+
+    .line 217
+    check-cast v7, LDk8;
+
+    .line 218
+    .line 219
+    iget v7, v7, LDk8;->b:I
+
+    .line 220
+    .line 221
+    if-ne v7, v5, :cond_8
+
+    .line 222
+    .line 223
+    :goto_3
+    new-instance p1, Ldj4;
+
+    .line 224
+    .line 225
+    invoke-direct {p1}, Ldj4;-><init>()V
+
+    .line 226
+    .line 227
+    .line 228
+    iput-boolean v4, p1, Ldj4;->c:Z
+
+    .line 229
+    .line 230
+    iget v3, p1, Ldj4;->a:I
+
+    .line 231
+    .line 232
+    or-int/2addr v3, v5
+
+    .line 233
+    iput v3, p1, Ldj4;->a:I
+
+    .line 234
+    .line 235
+    iput-object p1, v2, LQi7;->g0:Ldj4;
+
+    .line 236
+    .line 237
+    invoke-interface {v0, v1, v2}, LI23;->H(LcM3;LQi7;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 238
+    .line 239
+    .line 240
+    move-result-object p1
+
+    .line 241
+    return-object p1
+
+    .line 242
+    nop
+
+    .line 243
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

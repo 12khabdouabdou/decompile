@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LbV8;
+    proxyClass = LD29;
     schema = "\'firstName\':s?,\'lastName\':s?,\'cardNumber\':s?,\'cvc\':s?,\'expMonth\':s?,\'expYear\':s?,\'address1\':s?,\'city\':s?,\'regionCode\':s?,\'postalCode\':s?,\'countryCode\':s?,\'use3ds\':b@?"
     typeReferences = {}
 .end annotation

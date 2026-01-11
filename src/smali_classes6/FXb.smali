@@ -1,202 +1,282 @@
-.class public final LFXb;
-.super Ljava/lang/Object;
+.class public abstract LFXb;
+.super Lsw;
 .source "SourceFile"
 
 # interfaces
-.implements Ls0g;
+.implements Ljava/lang/Comparable;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final X:Z
 
-.field public final b:LXfi;
+.field public final Y:Ljava/lang/Integer;
 
-.field public final c:Ljava/lang/Object;
+.field public final Z:I
+
+.field public final e0:LmPb;
+
+.field public final f0:I
+
+.field public final g0:Z
+
+.field public final h0:Lio/reactivex/rxjava3/core/Observable;
 
 
 # direct methods
-.method public constructor <init>(LDS4;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, LFXb;->a:I
-
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 7
-    iput-object p1, p0, LFXb;->c:Ljava/lang/Object;
-
-    .line 8
-    new-instance p1, LTM3;
-
-    const/4 v0, 0x3
-
-    invoke-direct {p1, p0, v0}, LTM3;-><init>(LFXb;I)V
-
-    .line 9
-    new-instance v0, LXfi;
-
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 10
-    iput-object v0, p0, LFXb;->b:LXfi;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;LkL1;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, LFXb;->a:I
+.method public constructor <init>(ZLjava/lang/Integer;ILmPb;IZLio/reactivex/rxjava3/core/Observable;I)V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    and-int/lit16 v0, p8, 0x80
 
     .line 2
-    iput-object p1, p0, LFXb;->c:Ljava/lang/Object;
-
     .line 3
-    new-instance p1, LNBb;
-
-    const/16 v0, 0xb
-
-    invoke-direct {p1, p2, v0, p0}, LNBb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    if-eqz v0, :cond_0
 
     .line 4
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
     .line 5
-    iput-object p2, p0, LFXb;->b:LXfi;
+    const/4 p6, 0x0
 
+    .line 6
+    :cond_0
+    and-int/lit16 p8, p8, 0x100
+
+    .line 7
+    .line 8
+    if-eqz p8, :cond_1
+
+    .line 9
+    .line 10
+    sget-object p7, LQch;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
+
+    .line 11
+    .line 12
+    :cond_1
+    int-to-long v0, p5
+
+    .line 13
+    invoke-direct {p0, p4, v0, v1}, Lsw;-><init>(Ltw;J)V
+
+    .line 14
+    .line 15
+    .line 16
+    iput-boolean p1, p0, LFXb;->X:Z
+
+    .line 17
+    .line 18
+    iput-object p2, p0, LFXb;->Y:Ljava/lang/Integer;
+
+    .line 19
+    .line 20
+    iput p3, p0, LFXb;->Z:I
+
+    .line 21
+    .line 22
+    iput-object p4, p0, LFXb;->e0:LmPb;
+
+    .line 23
+    .line 24
+    iput p5, p0, LFXb;->f0:I
+
+    .line 25
+    .line 26
+    iput-boolean p6, p0, LFXb;->g0:Z
+
+    .line 27
+    .line 28
+    iput-object p7, p0, LFXb;->h0:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 29
+    .line 30
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Class;)Ljava/lang/Object;
-    .locals 3
+.method public final compareTo(Ljava/lang/Object;)I
+    .locals 1
 
     .line 1
-    iget v0, p0, LFXb;->a:I
+    check-cast p1, LFXb;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    iget v0, p0, LFXb;->Z:I
 
     .line 4
     .line 5
-    .line 6
-    sget-object v0, LXRg;->a:LWRg;
+    iget p1, p1, LFXb;->Z:I
 
+    .line 6
     .line 7
+    invoke-static {v0, p1}, LDz9;->n(II)I
+
     .line 8
-    const-string v1, "aws_sf:create"
+    .line 9
+    .line 10
+    move-result p1
+
+    .line 11
+    return p1
+.end method
+
+.method public u(Lsw;)Z
+    .locals 3
+
+    .line 1
+    if-eqz p1, :cond_2
+
+    .line 2
+    .line 3
+    instance-of v0, p1, LFXb;
+
+    .line 4
+    .line 5
+    if-nez v0, :cond_0
+
+    .line 6
+    .line 7
+    goto :goto_0
+
+    .line 8
+    :cond_0
+    instance-of v0, p1, LgLb;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    if-eqz v0, :cond_1
 
     .line 11
     .line 12
+    move-object v0, p1
+
     .line 13
-    move-result v1
+    check-cast v0, LgLb;
 
     .line 14
-    :try_start_0
-    iget-object v2, p0, LFXb;->b:LXfi;
-
     .line 15
-    .line 16
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    sget-object v1, Lcom/snap/composer/memories/CameraRollAuthorizationStatus;->LIMITED:Lcom/snap/composer/memories/CameraRollAuthorizationStatus;
 
+    .line 16
     .line 17
+    iget-object v2, v0, LgLb;->j0:Lcom/snap/composer/memories/CameraRollAuthorizationStatus;
+
     .line 18
     .line 19
-    move-result-object v2
+    if-ne v2, v1, :cond_1
 
     .line 20
-    check-cast v2, Lg7f;
-
     .line 21
-    .line 22
-    invoke-virtual {v2, p1}, Lg7f;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    iget v0, v0, LgLb;->l0:I
 
+    .line 22
     .line 23
+    if-lez v0, :cond_1
+
     .line 24
     .line 25
-    move-result-object p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    goto :goto_0
 
     .line 26
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    :cond_1
+    check-cast p1, LFXb;
 
     .line 27
     .line 28
-    .line 29
-    return-object p1
+    iget-boolean v0, p0, LFXb;->X:Z
 
+    .line 29
     .line 30
-    :catchall_0
-    move-exception p1
+    iget-boolean v1, p1, LFXb;->X:Z
 
     .line 31
-    sget-object v0, LXRg;->b:Lzhi;
-
     .line 32
+    if-ne v0, v1, :cond_2
+
     .line 33
-    if-eqz v0, :cond_0
-
     .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    iget-object v0, p0, LFXb;->e0:LmPb;
 
+    .line 35
     .line 36
+    iget-object v1, p1, LFXb;->e0:LmPb;
+
     .line 37
     .line 38
-    :cond_0
-    throw p1
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 39
-    :pswitch_0
-    iget-object v0, p0, LFXb;->b:LXfi;
-
     .line 40
     .line 41
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    move-result v0
 
     .line 42
+    if-eqz v0, :cond_2
+
     .line 43
     .line 44
-    move-result-object v0
+    iget-object v0, p0, LFXb;->Y:Ljava/lang/Integer;
 
     .line 45
-    check-cast v0, Lg7f;
-
     .line 46
-    .line 47
-    invoke-virtual {v0, p1}, Lg7f;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    iget-object v1, p1, LFXb;->Y:Ljava/lang/Integer;
 
+    .line 47
     .line 48
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 49
     .line 50
-    move-result-object p1
-
     .line 51
-    return-object p1
+    move-result v0
 
     .line 52
-    nop
+    if-eqz v0, :cond_2
 
     .line 53
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 54
+    iget-boolean v0, p0, LFXb;->g0:Z
+
+    .line 55
+    .line 56
+    iget-boolean v1, p1, LFXb;->g0:Z
+
+    .line 57
+    .line 58
+    if-ne v0, v1, :cond_2
+
+    .line 59
+    .line 60
+    iget-object v0, p0, LFXb;->h0:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 61
+    .line 62
+    iget-object p1, p1, LFXb;->h0:Lio/reactivex/rxjava3/core/Observable;
+
+    .line 63
+    .line 64
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 65
+    .line 66
+    .line 67
+    move-result p1
+
+    .line 68
+    if-eqz p1, :cond_2
+
+    .line 69
+    .line 70
+    const/4 p1, 0x1
+
+    .line 71
+    return p1
+
+    .line 72
+    :cond_2
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 73
+    return p1
 .end method

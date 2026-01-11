@@ -3,8 +3,8 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lrsc;
-.implements Lssc;
+.implements LvHc;
+.implements LwHc;
 
 
 # static fields
@@ -14,15 +14,15 @@
 
 .field public static final v0:Ljava/lang/ThreadLocal;
 
-.field public static final w0:LA30;
+.field public static final w0:LIK;
 
-.field public static final x0:LpEd;
+.field public static final x0:LVVd;
 
 
 # instance fields
 .field public final a:Ljava/util/ArrayList;
 
-.field public final b:LHt2;
+.field public final b:Lnc6;
 
 .field public final c:Ljava/util/ArrayList;
 
@@ -40,11 +40,11 @@
 
 .field public k0:Landroid/view/View;
 
-.field public l0:LPp2;
+.field public l0:LFs2;
 
 .field public m0:Z
 
-.field public n0:LOYj;
+.field public n0:LHok;
 
 .field public o0:Z
 
@@ -52,9 +52,9 @@
 
 .field public q0:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
-.field public r0:LvJ3;
+.field public r0:LAT3;
 
-.field public final s0:Ltsc;
+.field public final s0:LxHc;
 
 .field public final t:Ljava/util/ArrayList;
 
@@ -100,20 +100,20 @@
 
     .line 16
     .line 17
-    new-instance v0, LA30;
+    new-instance v0, LIK;
 
     .line 18
     .line 19
-    const/16 v1, 0x19
+    const/16 v1, 0x1b
 
     .line 20
     .line 21
-    invoke-direct {v0, v1}, LA30;-><init>(I)V
+    invoke-direct {v0, v1}, LIK;-><init>(I)V
 
     .line 22
     .line 23
     .line 24
-    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w0:LA30;
+    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w0:LIK;
 
     .line 25
     .line 26
@@ -163,7 +163,7 @@
 
     .line 47
     .line 48
-    new-instance v0, LpEd;
+    new-instance v0, LVVd;
 
     .line 49
     .line 50
@@ -171,12 +171,12 @@
 
     .line 51
     .line 52
-    invoke-direct {v0, v1}, LpEd;-><init>(I)V
+    invoke-direct {v0, v1}, LVVd;-><init>(I)V
 
     .line 53
     .line 54
     .line 55
-    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LpEd;
+    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LVVd;
 
     .line 56
     .line 57
@@ -197,7 +197,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x7f04016b
+    const v0, 0x7f040183
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -223,13 +223,11 @@
     iput-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->a:Ljava/util/ArrayList;
 
     .line 5
-    new-instance v2, LHt2;
+    new-instance v2, Lnc6;
 
-    const/16 v3, 0x18
+    invoke-direct {v2}, Lnc6;-><init>()V
 
-    invoke-direct {v2, v3}, LHt2;-><init>(I)V
-
-    iput-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:LHt2;
+    iput-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:Lnc6;
 
     .line 6
     new-instance v2, Ljava/util/ArrayList;
@@ -258,20 +256,20 @@
     iput-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f0:[I
 
     .line 10
-    new-instance v2, Ltsc;
+    new-instance v2, LxHc;
 
     .line 11
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     .line 12
-    iput-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:Ltsc;
+    iput-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:LxHc;
 
     .line 13
-    sget-object v5, LIve;->a:[I
+    sget-object v5, LrNe;->a:[I
 
     if-nez p3, :cond_0
 
-    const v2, 0x7f1404fe
+    const v2, 0x7f140532
 
     .line 14
     invoke-virtual {p1, p2, v5, v1, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
@@ -302,7 +300,7 @@
     if-nez p3, :cond_2
 
     .line 17
-    invoke-static {p0, p1, v5, p2, v7}, LNC1;->v(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;)V
+    invoke-static {p0, p1, v5, p2, v7}, LAb2;->y(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;)V
 
     :cond_1
     move-object v3, p0
@@ -321,7 +319,7 @@
     move v8, p3
 
     .line 18
-    invoke-static/range {v3 .. v8}, LNC1;->w(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
+    invoke-static/range {v3 .. v8}, LAb2;->z(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;I)V
 
     .line 19
     :goto_2
@@ -387,17 +385,17 @@
     invoke-virtual {v7}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 27
-    invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y()V
+    invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->A()V
 
     .line 28
-    new-instance p1, LB34;
+    new-instance p1, Ll84;
 
-    invoke-direct {p1, v1, p0}, LB34;-><init>(ILandroid/view/ViewGroup;)V
+    invoke-direct {p1, v1, p0}, Ll84;-><init>(ILandroid/view/ViewGroup;)V
 
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
 
     .line 29
-    sget-object p1, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 30
     invoke-virtual {p0}, Landroid/view/View;->getImportantForAccessibility()I
@@ -417,11 +415,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LpEd;
+    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LVVd;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LpEd;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, LVVd;->a()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -450,11 +448,11 @@
     return-object v0
 .end method
 
-.method public static m(ILandroid/graphics/Rect;Landroid/graphics/Rect;LC34;II)V
+.method public static p(ILandroid/graphics/Rect;Landroid/graphics/Rect;Lm84;II)V
     .locals 6
 
     .line 1
-    iget v0, p3, LC34;->c:I
+    iget v0, p3, Lm84;->c:I
 
     .line 2
     .line 3
@@ -475,7 +473,7 @@
     move-result v0
 
     .line 11
-    iget p3, p3, LC34;->d:I
+    iget p3, p3, Lm84;->d:I
 
     .line 12
     .line 13
@@ -697,7 +695,7 @@
     return-void
 .end method
 
-.method public static n(Landroid/view/View;)LC34;
+.method public static q(Landroid/view/View;)Lm84;
     .locals 4
 
     .line 1
@@ -709,11 +707,11 @@
     move-result-object v0
 
     .line 5
-    check-cast v0, LC34;
+    check-cast v0, Lm84;
 
     .line 6
     .line 7
-    iget-boolean v1, v0, LC34;->b:Z
+    iget-boolean v1, v0, Lm84;->b:Z
 
     .line 8
     .line 9
@@ -721,7 +719,7 @@
 
     .line 10
     .line 11
-    instance-of v1, p0, Ly34;
+    instance-of v1, p0, Li84;
 
     .line 12
     .line 13
@@ -732,11 +730,11 @@
 
     .line 15
     .line 16
-    check-cast p0, Ly34;
+    check-cast p0, Li84;
 
     .line 17
     .line 18
-    invoke-interface {p0}, Ly34;->c()Lz34;
+    invoke-interface {p0}, Li84;->c()Lj84;
 
     .line 19
     .line 20
@@ -744,12 +742,12 @@
     move-result-object p0
 
     .line 22
-    invoke-virtual {v0, p0}, LC34;->b(Lz34;)V
+    invoke-virtual {v0, p0}, Lm84;->b(Lj84;)V
 
     .line 23
     .line 24
     .line 25
-    iput-boolean v2, v0, LC34;->b:Z
+    iput-boolean v2, v0, Lm84;->b:Z
 
     .line 26
     .line 27
@@ -776,7 +774,7 @@
 
     .line 35
     .line 36
-    const-class v3, LA34;
+    const-class v3, Lk84;
 
     .line 37
     .line 38
@@ -788,7 +786,7 @@
     move-result-object v3
 
     .line 42
-    check-cast v3, LA34;
+    check-cast v3, Lk84;
 
     .line 43
     .line 44
@@ -813,7 +811,7 @@
     .line 52
     .line 53
     :try_start_0
-    invoke-interface {v3}, LA34;->value()Ljava/lang/Class;
+    invoke-interface {v3}, Lk84;->value()Ljava/lang/Class;
 
     .line 54
     .line 55
@@ -837,11 +835,11 @@
     move-result-object p0
 
     .line 65
-    check-cast p0, Lz34;
+    check-cast p0, Lj84;
 
     .line 66
     .line 67
-    invoke-virtual {v0, p0}, LC34;->b(Lz34;)V
+    invoke-virtual {v0, p0}, Lm84;->b(Lj84;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -852,7 +850,7 @@
 
     .line 71
     :catch_0
-    invoke-interface {v3}, LA34;->value()Ljava/lang/Class;
+    invoke-interface {v3}, Lk84;->value()Ljava/lang/Class;
 
     .line 72
     .line 73
@@ -867,7 +865,7 @@
     .line 78
     :cond_2
     :goto_1
-    iput-boolean v2, v0, LC34;->b:Z
+    iput-boolean v2, v0, Lm84;->b:Z
 
     .line 79
     .line 80
@@ -875,7 +873,7 @@
     return-object v0
 .end method
 
-.method public static w(Landroid/view/View;I)V
+.method public static y(Landroid/view/View;I)V
     .locals 2
 
     .line 1
@@ -887,11 +885,11 @@
     move-result-object v0
 
     .line 5
-    check-cast v0, LC34;
+    check-cast v0, Lm84;
 
     .line 6
     .line 7
-    iget v1, v0, LC34;->i:I
+    iget v1, v0, Lm84;->i:I
 
     .line 8
     .line 9
@@ -903,12 +901,12 @@
 
     .line 12
     .line 13
-    invoke-static {p0, v1}, LDIj;->i(Landroid/view/View;I)V
+    invoke-static {p0, v1}, Lb8k;->i(Landroid/view/View;I)V
 
     .line 14
     .line 15
     .line 16
-    iput p1, v0, LC34;->i:I
+    iput p1, v0, Lm84;->i:I
 
     .line 17
     .line 18
@@ -916,7 +914,7 @@
     return-void
 .end method
 
-.method public static x(Landroid/view/View;I)V
+.method public static z(Landroid/view/View;I)V
     .locals 2
 
     .line 1
@@ -928,11 +926,11 @@
     move-result-object v0
 
     .line 5
-    check-cast v0, LC34;
+    check-cast v0, Lm84;
 
     .line 6
     .line 7
-    iget v1, v0, LC34;->j:I
+    iget v1, v0, Lm84;->j:I
 
     .line 8
     .line 9
@@ -944,12 +942,12 @@
 
     .line 12
     .line 13
-    invoke-static {p0, v1}, LDIj;->j(Landroid/view/View;I)V
+    invoke-static {p0, v1}, Lb8k;->j(Landroid/view/View;I)V
 
     .line 14
     .line 15
     .line 16
-    iput p1, v0, LC34;->j:I
+    iput p1, v0, Lm84;->j:I
 
     .line 17
     .line 18
@@ -959,6 +957,84 @@
 
 
 # virtual methods
+.method public final A()V
+    .locals 2
+
+    .line 1
+    sget-object v0, Lb8k;->a:Ljava/util/WeakHashMap;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->getFitsSystemWindows()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_1
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r0:LAT3;
+
+    .line 10
+    .line 11
+    if-nez v0, :cond_0
+
+    .line 12
+    .line 13
+    new-instance v0, LAT3;
+
+    .line 14
+    .line 15
+    const/4 v1, 0x5
+
+    .line 16
+    invoke-direct {v0, v1, p0}, LAT3;-><init>(ILjava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r0:LAT3;
+
+    .line 20
+    .line 21
+    :cond_0
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r0:LAT3;
+
+    .line 22
+    .line 23
+    invoke-static {p0, v0}, LR7k;->u(Landroid/view/View;Lq1d;)V
+
+    .line 24
+    .line 25
+    .line 26
+    const/16 v0, 0x500
+
+    .line 27
+    .line 28
+    invoke-virtual {p0, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+
+    .line 32
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 33
+    invoke-static {p0, v0}, LR7k;->u(Landroid/view/View;Lq1d;)V
+
+    .line 34
+    .line 35
+    .line 36
+    return-void
+.end method
+
 .method public final a(Landroid/view/View;Landroid/view/View;II)V
     .locals 1
 
@@ -966,7 +1042,7 @@
     const/4 p1, 0x1
 
     .line 2
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:Ltsc;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:LxHc;
 
     .line 3
     .line 4
@@ -974,7 +1050,7 @@
 
     .line 5
     .line 6
-    iput p3, v0, Ltsc;->b:I
+    iput p3, v0, LxHc;->b:I
 
     .line 7
     .line 8
@@ -982,7 +1058,7 @@
 
     .line 9
     :cond_0
-    iput p3, v0, Ltsc;->a:I
+    iput p3, v0, LxHc;->a:I
 
     .line 10
     .line 11
@@ -1023,7 +1099,7 @@
     move-result-object p3
 
     .line 28
-    check-cast p3, LC34;
+    check-cast p3, Lm84;
 
     .line 29
     .line 30
@@ -1053,7 +1129,7 @@
     const/4 v1, 0x1
 
     .line 3
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:Ltsc;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:LxHc;
 
     .line 4
     .line 5
@@ -1061,7 +1137,7 @@
 
     .line 6
     .line 7
-    iput v0, v2, Ltsc;->b:I
+    iput v0, v2, LxHc;->b:I
 
     .line 8
     .line 9
@@ -1069,7 +1145,7 @@
 
     .line 10
     :cond_0
-    iput v0, v2, Ltsc;->a:I
+    iput v0, v2, LxHc;->a:I
 
     .line 11
     .line 12
@@ -1106,11 +1182,11 @@
     move-result-object v5
 
     .line 27
-    check-cast v5, LC34;
+    check-cast v5, Lm84;
 
     .line 28
     .line 29
-    invoke-virtual {v5, p2}, LC34;->a(I)Z
+    invoke-virtual {v5, p2}, Lm84;->a(I)Z
 
     .line 30
     .line 31
@@ -1126,7 +1202,7 @@
 
     .line 36
     :cond_1
-    iget-object v6, v5, LC34;->a:Lz34;
+    iget-object v6, v5, Lm84;->a:Lj84;
 
     .line 37
     .line 38
@@ -1134,7 +1210,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v6, p0, v4, p1, p2}, Lz34;->r(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;I)V
+    invoke-virtual {v6, p0, v4, p1, p2}, Lj84;->r(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;I)V
 
     .line 41
     .line 42
@@ -1152,7 +1228,7 @@
 
     .line 48
     :cond_3
-    iput-boolean v0, v5, LC34;->n:Z
+    iput-boolean v0, v5, Lm84;->n:Z
 
     .line 49
     .line 50
@@ -1160,12 +1236,12 @@
 
     .line 51
     :cond_4
-    iput-boolean v0, v5, LC34;->m:Z
+    iput-boolean v0, v5, Lm84;->m:Z
 
     .line 52
     .line 53
     :goto_2
-    iput-boolean v0, v5, LC34;->o:Z
+    iput-boolean v0, v5, Lm84;->o:Z
 
     .line 54
     .line 55
@@ -1259,7 +1335,7 @@
     move-result-object v3
 
     .line 30
-    check-cast v3, LC34;
+    check-cast v3, Lm84;
 
     .line 31
     .line 32
@@ -1267,7 +1343,7 @@
 
     .line 33
     .line 34
-    invoke-virtual {v3, v7}, LC34;->a(I)Z
+    invoke-virtual {v3, v7}, Lm84;->a(I)Z
 
     .line 35
     .line 36
@@ -1283,7 +1359,7 @@
 
     .line 41
     :cond_1
-    iget-object v3, v3, LC34;->a:Lz34;
+    iget-object v3, v3, Lm84;->a:Lj84;
 
     .line 42
     .line 43
@@ -1320,7 +1396,7 @@
     move-object v3, p1
 
     .line 58
-    invoke-virtual/range {v0 .. v7}, Lz34;->k(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II[II)V
+    invoke-virtual/range {v0 .. v7}, Lj84;->k(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II[II)V
 
     .line 59
     .line 60
@@ -1430,7 +1506,7 @@
 
     .line 104
     .line 105
-    invoke-virtual {p0, v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p(I)V
+    invoke-virtual {p0, v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t(I)V
 
     .line 106
     .line 107
@@ -1443,7 +1519,7 @@
     .locals 1
 
     .line 1
-    instance-of v0, p1, LC34;
+    instance-of v0, p1, Lm84;
 
     .line 2
     .line 3
@@ -1551,7 +1627,7 @@
     move-result-object v3
 
     .line 32
-    check-cast v3, LC34;
+    check-cast v3, Lm84;
 
     .line 33
     .line 34
@@ -1559,7 +1635,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v3, v8}, LC34;->a(I)Z
+    invoke-virtual {v3, v8}, Lm84;->a(I)Z
 
     .line 37
     .line 38
@@ -1575,7 +1651,7 @@
 
     .line 43
     :cond_1
-    iget-object v3, v3, LC34;->a:Lz34;
+    iget-object v3, v3, Lm84;->a:Lj84;
 
     .line 44
     .line 45
@@ -1618,7 +1694,7 @@
 
     .line 63
     .line 64
-    invoke-virtual/range {v0 .. v9}, Lz34;->m(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII[I)V
+    invoke-virtual/range {v0 .. v9}, Lj84;->m(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII[I)V
 
     .line 65
     .line 66
@@ -1742,7 +1818,7 @@
 
     .line 116
     .line 117
-    invoke-virtual {v1, v15}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p(I)V
+    invoke-virtual {v1, v15}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t(I)V
 
     .line 118
     .line 119
@@ -1763,11 +1839,11 @@
     move-result-object v0
 
     .line 5
-    check-cast v0, LC34;
+    check-cast v0, Lm84;
 
     .line 6
     .line 7
-    iget-object v0, v0, LC34;->a:Lz34;
+    iget-object v0, v0, Lm84;->a:Lj84;
 
     .line 8
     .line 9
@@ -1964,11 +2040,11 @@
     move-object v11, v0
 
     .line 30
-    check-cast v11, LC34;
+    check-cast v11, Lm84;
 
     .line 31
     .line 32
-    iget-object v0, v11, LC34;->a:Lz34;
+    iget-object v0, v11, Lm84;->a:Lj84;
 
     .line 33
     .line 34
@@ -1996,7 +2072,7 @@
 
     .line 43
     .line 44
-    invoke-virtual/range {v0 .. v6}, Lz34;->q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
+    invoke-virtual/range {v0 .. v6}, Lj84;->q(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
 
     .line 45
     .line 46
@@ -2019,7 +2095,7 @@
 
     .line 54
     :cond_1
-    iput-boolean v0, v11, LC34;->n:Z
+    iput-boolean v0, v11, Lm84;->n:Z
 
     .line 55
     .line 56
@@ -2027,7 +2103,7 @@
 
     .line 57
     :cond_2
-    iput-boolean v0, v11, LC34;->m:Z
+    iput-boolean v0, v11, Lm84;->m:Z
 
     .line 58
     .line 59
@@ -2051,7 +2127,7 @@
 
     .line 67
     :cond_4
-    iput-boolean v8, v11, LC34;->n:Z
+    iput-boolean v8, v11, Lm84;->n:Z
 
     .line 68
     .line 69
@@ -2059,7 +2135,7 @@
 
     .line 70
     :cond_5
-    iput-boolean v8, v11, LC34;->m:Z
+    iput-boolean v8, v11, Lm84;->m:Z
 
     .line 71
     .line 72
@@ -2075,94 +2151,56 @@
     return v10
 .end method
 
-.method public final generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-    .locals 2
-
-    .line 1
-    new-instance v0, LC34;
-
-    .line 2
-    .line 3
-    const/4 v1, -0x2
-
-    .line 4
-    invoke-direct {v0, v1, v1}, LC34;-><init>(II)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-object v0
-.end method
-
-.method public final generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
-    .locals 2
-
-    .line 1
-    new-instance v0, LC34;
-
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-direct {v0, v1, p1}, LC34;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    return-object v0
-.end method
-
-.method public final generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+.method public bridge synthetic generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
+    .line 1
+    invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j()Lm84;
+
     .line 2
-    instance-of v0, p1, LC34;
-
-    if-eqz v0, :cond_0
-
     .line 3
-    new-instance v0, LC34;
-
-    check-cast p1, LC34;
-
-    invoke-direct {v0, p1}, LC34;-><init>(LC34;)V
-
-    return-object v0
-
     .line 4
-    :cond_0
-    instance-of v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    if-eqz v0, :cond_1
+    move-result-object v0
 
     .line 5
-    new-instance v0, LC34;
-
-    check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
-
-    invoke-direct {v0, p1}, LC34;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
-
     return-object v0
+.end method
 
-    .line 6
-    :cond_1
-    new-instance v0, LC34;
+.method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
+    .locals 0
 
-    invoke-direct {v0, p1}, LC34;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+    .line 1
+    invoke-virtual {p0, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k(Landroid/util/AttributeSet;)Lm84;
 
-    return-object v0
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l(Landroid/view/ViewGroup$LayoutParams;)Lm84;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
 .method public final getNestedScrollAxes()I
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:Ltsc;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s0:LxHc;
 
     .line 2
     .line 3
-    iget v1, v0, Ltsc;->a:I
+    iget v1, v0, LxHc;->a:I
 
     .line 4
     .line 5
-    iget v0, v0, Ltsc;->b:I
+    iget v0, v0, LxHc;->b:I
 
     .line 6
     .line 7
@@ -2256,7 +2294,7 @@
     return v0
 .end method
 
-.method public final h(LC34;Landroid/graphics/Rect;II)V
+.method public final h(Lm84;Landroid/graphics/Rect;II)V
     .locals 5
 
     .line 1
@@ -2406,19 +2444,19 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:LHt2;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:Lnc6;
 
     .line 2
     .line 3
-    iget-object v0, v0, LHt2;->t:Ljava/lang/Object;
+    iget-object v0, v0, Lnc6;->c:Ljava/lang/Object;
 
     .line 4
     .line 5
-    check-cast v0, LRog;
+    check-cast v0, LWJg;
 
     .line 6
     .line 7
-    invoke-virtual {v0, p1}, LRog;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0, p1}, LWJg;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
     .line 9
@@ -2482,11 +2520,11 @@
     move-result-object v3
 
     .line 38
-    check-cast v3, LC34;
+    check-cast v3, Lm84;
 
     .line 39
     .line 40
-    iget-object v3, v3, LC34;->a:Lz34;
+    iget-object v3, v3, Lm84;->a:Lj84;
 
     .line 41
     .line 42
@@ -2494,7 +2532,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {v3, p0, v2, p1}, Lz34;->d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+    invoke-virtual {v3, p0, v2, p1}, Lj84;->d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
 
     .line 45
     .line 46
@@ -2511,7 +2549,116 @@
     return-void
 .end method
 
-.method public final j(Landroid/view/View;Landroid/graphics/Rect;Z)V
+.method public j()Lm84;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lm84;
+
+    .line 2
+    .line 3
+    const/4 v1, -0x2
+
+    .line 4
+    invoke-direct {v0, v1, v1}, Lm84;-><init>(II)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-object v0
+.end method
+
+.method public k(Landroid/util/AttributeSet;)Lm84;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lm84;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-direct {v0, v1, p1}, Lm84;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method public l(Landroid/view/ViewGroup$LayoutParams;)Lm84;
+    .locals 1
+
+    .line 1
+    instance-of v0, p1, Lm84;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v0, Lm84;
+
+    .line 6
+    .line 7
+    check-cast p1, Lm84;
+
+    .line 8
+    .line 9
+    invoke-direct {v0, p1}, Lm84;-><init>(Lm84;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-object v0
+
+    .line 13
+    :cond_0
+    instance-of v0, p1, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 14
+    .line 15
+    if-eqz v0, :cond_1
+
+    .line 16
+    .line 17
+    new-instance v0, Lm84;
+
+    .line 18
+    .line 19
+    check-cast p1, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 20
+    .line 21
+    invoke-direct {v0, p1}, Lm84;-><init>(Landroid/view/ViewGroup$MarginLayoutParams;)V
+
+    .line 22
+    .line 23
+    .line 24
+    return-object v0
+
+    .line 25
+    :cond_1
+    new-instance v0, Lm84;
+
+    .line 26
+    .line 27
+    invoke-direct {v0, p1}, Lm84;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 28
+    .line 29
+    .line 30
+    return-object v0
+.end method
+
+.method public final m(Landroid/view/View;Landroid/graphics/Rect;Z)V
     .locals 2
 
     .line 1
@@ -2551,7 +2698,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p0, p2, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l(Landroid/graphics/Rect;Landroid/view/View;)V
+    invoke-virtual {p0, p2, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o(Landroid/graphics/Rect;Landroid/view/View;)V
 
     .line 19
     .line 20
@@ -2610,23 +2757,23 @@
     return-void
 .end method
 
-.method public final k(Landroid/view/View;)Ljava/util/ArrayList;
+.method public final n(Landroid/view/View;)Ljava/util/ArrayList;
     .locals 5
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:LHt2;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:Lnc6;
 
     .line 2
     .line 3
-    iget-object v0, v0, LHt2;->t:Ljava/lang/Object;
+    iget-object v0, v0, Lnc6;->c:Ljava/lang/Object;
 
     .line 4
     .line 5
-    check-cast v0, LRog;
+    check-cast v0, LWJg;
 
     .line 6
     .line 7
-    iget v1, v0, LRog;->c:I
+    iget v1, v0, LWJg;->c:I
 
     .line 8
     .line 9
@@ -2641,7 +2788,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v0, v3}, LRog;->m(I)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, LWJg;->l(I)Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -2683,7 +2830,7 @@
     .line 33
     .line 34
     :cond_0
-    invoke-virtual {v0, v3}, LRog;->i(I)Ljava/lang/Object;
+    invoke-virtual {v0, v3}, LWJg;->h(I)Ljava/lang/Object;
 
     .line 35
     .line 36
@@ -2727,11 +2874,11 @@
     return-object p1
 .end method
 
-.method public final l(Landroid/graphics/Rect;Landroid/view/View;)V
+.method public final o(Landroid/graphics/Rect;Landroid/view/View;)V
     .locals 4
 
     .line 1
-    sget-object v0, LhJj;->a:Ljava/lang/ThreadLocal;
+    sget-object v0, LF8k;->a:Ljava/lang/ThreadLocal;
 
     .line 2
     .line 3
@@ -2759,7 +2906,7 @@
     .line 13
     .line 14
     .line 15
-    sget-object v0, LhJj;->a:Ljava/lang/ThreadLocal;
+    sget-object v0, LF8k;->a:Ljava/lang/ThreadLocal;
 
     .line 16
     .line 17
@@ -2803,12 +2950,12 @@
     .line 36
     .line 37
     :goto_0
-    invoke-static {p0, p2, v1}, LhJj;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Matrix;)V
+    invoke-static {p0, p2, v1}, LF8k;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Matrix;)V
 
     .line 38
     .line 39
     .line 40
-    sget-object p2, LhJj;->b:Ljava/lang/ThreadLocal;
+    sget-object p2, LF8k;->b:Ljava/lang/ThreadLocal;
 
     .line 41
     .line 42
@@ -2905,68 +3052,6 @@
     return-void
 .end method
 
-.method public final o(Landroid/view/View;II)Z
-    .locals 2
-
-    .line 1
-    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LpEd;
-
-    .line 2
-    .line 3
-    invoke-static {}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g()Landroid/graphics/Rect;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v1
-
-    .line 7
-    invoke-virtual {p0, v1, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l(Landroid/graphics/Rect;Landroid/view/View;)V
-
-    .line 8
-    .line 9
-    .line 10
-    :try_start_0
-    invoke-virtual {v1, p2, p3}, Landroid/graphics/Rect;->contains(II)Z
-
-    .line 11
-    .line 12
-    .line 13
-    move-result p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 14
-    invoke-virtual {v1}, Landroid/graphics/Rect;->setEmpty()V
-
-    .line 15
-    .line 16
-    .line 17
-    invoke-virtual {v0, v1}, LpEd;->c(Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    return p1
-
-    .line 21
-    :catchall_0
-    move-exception p1
-
-    .line 22
-    invoke-virtual {v1}, Landroid/graphics/Rect;->setEmpty()V
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, LpEd;->c(Ljava/lang/Object;)Z
-
-    .line 26
-    .line 27
-    .line 28
-    throw p1
-.end method
-
 .method public final onAttachedToWindow()V
     .locals 3
 
@@ -2982,7 +3067,7 @@
     const/4 v1, 0x0
 
     .line 6
-    invoke-virtual {p0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Z)V
+    invoke-virtual {p0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Z)V
 
     .line 7
     .line 8
@@ -2995,7 +3080,7 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 14
     .line 15
@@ -3003,16 +3088,16 @@
 
     .line 16
     .line 17
-    new-instance v1, LPp2;
+    new-instance v1, LFs2;
 
     .line 18
     .line 19
-    invoke-direct {v1, v0, p0}, LPp2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v0, p0}, LFs2;-><init>(ILjava/lang/Object;)V
 
     .line 20
     .line 21
     .line 22
-    iput-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iput-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 23
     .line 24
@@ -3025,7 +3110,7 @@
     move-result-object v1
 
     .line 28
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 29
     .line 30
@@ -3035,7 +3120,7 @@
     .line 32
     .line 33
     :cond_1
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 34
     .line 35
@@ -3043,7 +3128,7 @@
 
     .line 36
     .line 37
-    sget-object v1, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v1, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 38
     .line 39
@@ -3059,7 +3144,7 @@
 
     .line 44
     .line 45
-    invoke-static {p0}, LrIj;->c(Landroid/view/View;)V
+    invoke-static {p0}, LP7k;->c(Landroid/view/View;)V
 
     .line 46
     .line 47
@@ -3084,7 +3169,7 @@
     const/4 v0, 0x0
 
     .line 5
-    invoke-virtual {p0, v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Z)V
+    invoke-virtual {p0, v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Z)V
 
     .line 6
     .line 7
@@ -3097,7 +3182,7 @@
 
     .line 11
     .line 12
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 13
     .line 14
@@ -3113,7 +3198,7 @@
     move-result-object v1
 
     .line 20
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 21
     .line 22
@@ -3169,7 +3254,7 @@
 
     .line 11
     .line 12
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 13
     .line 14
@@ -3180,7 +3265,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v1}, LOYj;->d()I
+    invoke-virtual {v1}, LHok;->d()I
 
     .line 18
     .line 19
@@ -3241,7 +3326,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Z)V
+    invoke-virtual {p0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Z)V
 
     .line 9
     .line 10
@@ -3250,7 +3335,7 @@
     const/4 v2, 0x0
 
     .line 12
-    invoke-virtual {p0, p1, v2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t(Landroid/view/MotionEvent;I)Z
+    invoke-virtual {p0, p1, v2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/MotionEvent;I)Z
 
     .line 13
     .line 14
@@ -3278,7 +3363,7 @@
     .line 23
     :cond_2
     :goto_0
-    invoke-virtual {p0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Z)V
+    invoke-virtual {p0, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Z)V
 
     .line 24
     .line 25
@@ -3290,7 +3375,7 @@
     .locals 2
 
     .line 1
-    sget-object p1, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 2
     .line 3
@@ -3362,11 +3447,11 @@
     move-result-object v0
 
     .line 35
-    check-cast v0, LC34;
+    check-cast v0, Lm84;
 
     .line 36
     .line 37
-    iget-object v0, v0, LC34;->a:Lz34;
+    iget-object v0, v0, Lm84;->a:Lj84;
 
     .line 38
     .line 39
@@ -3374,7 +3459,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {v0, p0, p5, p1}, Lz34;->h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
+    invoke-virtual {v0, p0, p5, p1}, Lj84;->h(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
 
     .line 42
     .line 43
@@ -3387,7 +3472,7 @@
     .line 46
     .line 47
     :cond_1
-    invoke-virtual {p0, p5, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q(Landroid/view/View;I)V
+    invoke-virtual {p0, p5, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Landroid/view/View;I)V
 
     .line 48
     .line 49
@@ -3425,19 +3510,19 @@
     .line 7
     .line 8
     .line 9
-    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:LHt2;
+    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->b:Lnc6;
 
     .line 10
     .line 11
-    iget-object v2, v1, LHt2;->t:Ljava/lang/Object;
+    iget-object v2, v1, Lnc6;->c:Ljava/lang/Object;
 
     .line 12
     .line 13
-    check-cast v2, LRog;
+    check-cast v2, LWJg;
 
     .line 14
     .line 15
-    iget v3, v2, LRog;->c:I
+    iget v3, v2, LWJg;->c:I
 
     .line 16
     .line 17
@@ -3445,11 +3530,11 @@
 
     .line 18
     :goto_0
-    iget-object v5, v1, LHt2;->b:Ljava/lang/Object;
+    iget-object v5, v1, Lnc6;->b:Ljava/lang/Object;
 
     .line 19
     .line 20
-    check-cast v5, LoEd;
+    check-cast v5, LUVd;
 
     .line 21
     .line 22
@@ -3457,7 +3542,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v2, v4}, LRog;->m(I)Ljava/lang/Object;
+    invoke-virtual {v2, v4}, LWJg;->l(I)Ljava/lang/Object;
 
     .line 25
     .line 26
@@ -3478,7 +3563,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-virtual {v5, v9}, LoEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v9}, LUVd;->c(Ljava/lang/Object;)Z
 
     .line 36
     .line 37
@@ -3491,7 +3576,7 @@
 
     .line 40
     :cond_1
-    invoke-virtual {v2}, LRog;->clear()V
+    invoke-virtual {v2}, LWJg;->clear()V
 
     .line 41
     .line 42
@@ -3508,11 +3593,11 @@
 
     .line 48
     :goto_1
-    iget-object v4, v1, LHt2;->t:Ljava/lang/Object;
+    iget-object v4, v1, Lnc6;->c:Ljava/lang/Object;
 
     .line 49
     .line 50
-    check-cast v4, LRog;
+    check-cast v4, LWJg;
 
     .line 51
     .line 52
@@ -3528,7 +3613,7 @@
     move-result-object v9
 
     .line 58
-    invoke-static {v9}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n(Landroid/view/View;)LC34;
+    invoke-static {v9}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q(Landroid/view/View;)Lm84;
 
     .line 59
     .line 60
@@ -3536,7 +3621,7 @@
     move-result-object v10
 
     .line 62
-    iget v11, v10, LC34;->f:I
+    iget v11, v10, Lm84;->f:I
 
     .line 63
     .line 64
@@ -3550,11 +3635,11 @@
 
     .line 67
     .line 68
-    iput-object v12, v10, LC34;->l:Landroid/view/View;
+    iput-object v12, v10, Lm84;->l:Landroid/view/View;
 
     .line 69
     .line 70
-    iput-object v12, v10, LC34;->k:Landroid/view/View;
+    iput-object v12, v10, Lm84;->k:Landroid/view/View;
 
     .line 71
     .line 72
@@ -3563,7 +3648,7 @@
     .line 73
     .line 74
     :cond_2
-    iget-object v13, v10, LC34;->k:Landroid/view/View;
+    iget-object v13, v10, Lm84;->k:Landroid/view/View;
 
     .line 75
     .line 76
@@ -3587,7 +3672,7 @@
 
     .line 85
     :cond_3
-    iget-object v13, v10, LC34;->k:Landroid/view/View;
+    iget-object v13, v10, Lm84;->k:Landroid/view/View;
 
     .line 86
     .line 87
@@ -3645,11 +3730,11 @@
     .line 110
     :cond_6
     :goto_3
-    iput-object v12, v10, LC34;->l:Landroid/view/View;
+    iput-object v12, v10, Lm84;->l:Landroid/view/View;
 
     .line 111
     .line 112
-    iput-object v12, v10, LC34;->k:Landroid/view/View;
+    iput-object v12, v10, Lm84;->k:Landroid/view/View;
 
     .line 113
     .line 114
@@ -3657,7 +3742,7 @@
 
     .line 115
     :cond_7
-    iput-object v13, v10, LC34;->l:Landroid/view/View;
+    iput-object v13, v10, Lm84;->l:Landroid/view/View;
 
     .line 116
     .line 117
@@ -3674,7 +3759,7 @@
     move-result-object v13
 
     .line 122
-    iput-object v13, v10, LC34;->k:Landroid/view/View;
+    iput-object v13, v10, Lm84;->k:Landroid/view/View;
 
     .line 123
     .line 124
@@ -3698,11 +3783,11 @@
 
     .line 133
     .line 134
-    iput-object v12, v10, LC34;->l:Landroid/view/View;
+    iput-object v12, v10, Lm84;->l:Landroid/view/View;
 
     .line 135
     .line 136
-    iput-object v12, v10, LC34;->k:Landroid/view/View;
+    iput-object v12, v10, Lm84;->k:Landroid/view/View;
 
     .line 137
     .line 138
@@ -3760,11 +3845,11 @@
 
     .line 162
     .line 163
-    iput-object v12, v10, LC34;->l:Landroid/view/View;
+    iput-object v12, v10, Lm84;->l:Landroid/view/View;
 
     .line 164
     .line 165
-    iput-object v12, v10, LC34;->k:Landroid/view/View;
+    iput-object v12, v10, Lm84;->k:Landroid/view/View;
 
     .line 166
     .line 167
@@ -3817,7 +3902,7 @@
 
     .line 188
     :cond_e
-    iput-object v13, v10, LC34;->l:Landroid/view/View;
+    iput-object v13, v10, Lm84;->l:Landroid/view/View;
 
     .line 189
     .line 190
@@ -3837,16 +3922,16 @@
 
     .line 196
     .line 197
-    iput-object v12, v10, LC34;->l:Landroid/view/View;
+    iput-object v12, v10, Lm84;->l:Landroid/view/View;
 
     .line 198
     .line 199
-    iput-object v12, v10, LC34;->k:Landroid/view/View;
+    iput-object v12, v10, Lm84;->k:Landroid/view/View;
 
     .line 200
     .line 201
     :goto_6
-    invoke-virtual {v4, v9}, LRog;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v9}, LWJg;->containsKey(Ljava/lang/Object;)Z
 
     .line 202
     .line 203
@@ -3858,7 +3943,7 @@
 
     .line 206
     .line 207
-    invoke-virtual {v4, v9, v12}, LRog;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v9, v12}, LWJg;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 208
     .line 209
@@ -3888,7 +3973,7 @@
     move-result-object v13
 
     .line 220
-    iget-object v14, v10, LC34;->l:Landroid/view/View;
+    iget-object v14, v10, Lm84;->l:Landroid/view/View;
 
     .line 221
     .line 222
@@ -3896,7 +3981,7 @@
 
     .line 223
     .line 224
-    sget-object v14, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v14, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 225
     .line 226
@@ -3916,11 +4001,11 @@
     move-result-object v15
 
     .line 234
-    check-cast v15, LC34;
+    check-cast v15, Lm84;
 
     .line 235
     .line 236
-    iget v15, v15, LC34;->g:I
+    iget v15, v15, Lm84;->g:I
 
     .line 237
     .line 238
@@ -3936,7 +4021,7 @@
 
     .line 243
     .line 244
-    iget v8, v10, LC34;->h:I
+    iget v8, v10, Lm84;->h:I
 
     .line 245
     .line 246
@@ -3959,7 +4044,7 @@
 
     .line 254
     :cond_12
-    iget-object v8, v10, LC34;->a:Lz34;
+    iget-object v8, v10, Lm84;->a:Lj84;
 
     .line 255
     .line 256
@@ -3967,7 +4052,7 @@
 
     .line 257
     .line 258
-    invoke-virtual {v8, v9, v13}, Lz34;->b(Landroid/view/View;Landroid/view/View;)Z
+    invoke-virtual {v8, v9, v13}, Lj84;->b(Landroid/view/View;Landroid/view/View;)Z
 
     .line 259
     .line 260
@@ -3981,7 +4066,7 @@
     .line 264
     :cond_13
     :goto_8
-    invoke-virtual {v4, v13}, LRog;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v13}, LWJg;->containsKey(Ljava/lang/Object;)Z
 
     .line 265
     .line 266
@@ -3993,7 +4078,7 @@
 
     .line 269
     .line 270
-    invoke-virtual {v4, v13}, LRog;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v13}, LWJg;->containsKey(Ljava/lang/Object;)Z
 
     .line 271
     .line 272
@@ -4005,13 +4090,13 @@
 
     .line 275
     .line 276
-    invoke-virtual {v4, v13, v12}, LRog;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v13, v12}, LWJg;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 277
     .line 278
     .line 279
     :cond_14
-    invoke-virtual {v4, v13}, LRog;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v13}, LWJg;->containsKey(Ljava/lang/Object;)Z
 
     .line 280
     .line 281
@@ -4023,7 +4108,7 @@
 
     .line 284
     .line 285
-    invoke-virtual {v4, v9}, LRog;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v9}, LWJg;->containsKey(Ljava/lang/Object;)Z
 
     .line 286
     .line 287
@@ -4035,7 +4120,7 @@
 
     .line 290
     .line 291
-    invoke-virtual {v4, v13}, LRog;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v13}, LWJg;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 292
     .line 293
@@ -4051,7 +4136,7 @@
 
     .line 298
     .line 299
-    invoke-virtual {v5}, LoEd;->a()Ljava/lang/Object;
+    invoke-virtual {v5}, LUVd;->a()Ljava/lang/Object;
 
     .line 300
     .line 301
@@ -4077,7 +4162,7 @@
     .line 311
     .line 312
     :cond_15
-    invoke-virtual {v4, v13, v8}, LRog;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v4, v13, v8}, LWJg;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 313
     .line 314
@@ -4191,7 +4276,7 @@
 
     .line 367
     :cond_1b
-    iget-object v2, v1, LHt2;->c:Ljava/lang/Object;
+    iget-object v2, v1, Lnc6;->t:Ljava/lang/Object;
 
     .line 368
     .line 369
@@ -4204,7 +4289,7 @@
     .line 372
     .line 373
     .line 374
-    iget-object v3, v1, LHt2;->X:Ljava/lang/Object;
+    iget-object v3, v1, Lnc6;->X:Ljava/lang/Object;
 
     .line 375
     .line 376
@@ -4217,7 +4302,7 @@
     .line 379
     .line 380
     .line 381
-    iget v5, v4, LRog;->c:I
+    iget v5, v4, LWJg;->c:I
 
     .line 382
     .line 383
@@ -4229,7 +4314,7 @@
 
     .line 385
     .line 386
-    invoke-virtual {v4, v8}, LRog;->i(I)Ljava/lang/Object;
+    invoke-virtual {v4, v8}, LWJg;->h(I)Ljava/lang/Object;
 
     .line 387
     .line 388
@@ -4237,7 +4322,7 @@
     move-result-object v9
 
     .line 390
-    invoke-virtual {v1, v9, v2, v3}, LHt2;->l(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
+    invoke-virtual {v1, v9, v2, v3}, Lnc6;->e(Ljava/lang/Object;Ljava/util/ArrayList;Ljava/util/HashSet;)V
 
     .line 391
     .line 392
@@ -4283,7 +4368,7 @@
     move-result-object v3
 
     .line 412
-    iget v5, v4, LRog;->c:I
+    iget v5, v4, LWJg;->c:I
 
     .line 413
     .line 414
@@ -4295,7 +4380,7 @@
 
     .line 416
     .line 417
-    invoke-virtual {v4, v8}, LRog;->m(I)Ljava/lang/Object;
+    invoke-virtual {v4, v8}, LWJg;->l(I)Ljava/lang/Object;
 
     .line 418
     .line 419
@@ -4368,7 +4453,7 @@
 
     .line 447
     .line 448
-    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 449
     .line 450
@@ -4376,16 +4461,16 @@
 
     .line 451
     .line 452
-    new-instance v1, LPp2;
+    new-instance v1, LFs2;
 
     .line 453
     .line 454
-    invoke-direct {v1, v6, v0}, LPp2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v6, v0}, LFs2;-><init>(ILjava/lang/Object;)V
 
     .line 455
     .line 456
     .line 457
-    iput-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iput-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 458
     .line 459
@@ -4398,7 +4483,7 @@
     move-result-object v1
 
     .line 463
-    iget-object v2, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v2, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 464
     .line 465
@@ -4424,7 +4509,7 @@
 
     .line 474
     .line 475
-    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 476
     .line 477
@@ -4440,7 +4525,7 @@
     move-result-object v1
 
     .line 483
-    iget-object v2, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LPp2;
+    iget-object v2, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l0:LFs2;
 
     .line 484
     .line 485
@@ -4491,7 +4576,7 @@
     move-result v2
 
     .line 507
-    sget-object v3, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 508
     .line 509
@@ -4574,7 +4659,7 @@
     move-result v2
 
     .line 546
-    iget-object v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 547
     .line 548
@@ -4704,11 +4789,11 @@
     move-object v6, v1
 
     .line 606
-    check-cast v6, LC34;
+    check-cast v6, Lm84;
 
     .line 607
     .line 608
-    iget v1, v6, LC34;->e:I
+    iget v1, v6, Lm84;->e:I
 
     .line 609
     .line 610
@@ -4786,7 +4871,7 @@
 
     .line 642
     :goto_14
-    iget v2, v6, LC34;->c:I
+    iget v2, v6, Lm84;->c:I
 
     .line 643
     .line 644
@@ -4946,11 +5031,11 @@
 
     .line 708
     .line 709
-    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 710
     .line 711
-    invoke-virtual {v1}, LOYj;->b()I
+    invoke-virtual {v1}, LHok;->b()I
 
     .line 712
     .line 713
@@ -4958,11 +5043,11 @@
     move-result v1
 
     .line 715
-    iget-object v2, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v2, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 716
     .line 717
-    invoke-virtual {v2}, LOYj;->c()I
+    invoke-virtual {v2}, LHok;->c()I
 
     .line 718
     .line 719
@@ -4973,11 +5058,11 @@
     add-int/2addr v2, v1
 
     .line 722
-    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 723
     .line 724
-    invoke-virtual {v1}, LOYj;->d()I
+    invoke-virtual {v1}, LHok;->d()I
 
     .line 725
     .line 726
@@ -4989,11 +5074,11 @@
 
     .line 729
     .line 730
-    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 731
     .line 732
-    invoke-virtual {v1}, LOYj;->a()I
+    invoke-virtual {v1}, LHok;->a()I
 
     .line 733
     .line 734
@@ -5042,7 +5127,7 @@
     .line 754
     .line 755
     :goto_18
-    iget-object v0, v6, LC34;->a:Lz34;
+    iget-object v0, v6, Lm84;->a:Lj84;
 
     .line 756
     .line 757
@@ -5098,7 +5183,7 @@
 
     .line 780
     .line 781
-    invoke-virtual/range {v0 .. v5}, Lz34;->i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)Z
+    invoke-virtual/range {v0 .. v5}, Lj84;->i(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)Z
 
     .line 782
     .line 783
@@ -5416,11 +5501,11 @@
     move-result-object p4
 
     .line 26
-    check-cast p4, LC34;
+    check-cast p4, Lm84;
 
     .line 27
     .line 28
-    invoke-virtual {p4, p2}, LC34;->a(I)Z
+    invoke-virtual {p4, p2}, Lm84;->a(I)Z
 
     .line 29
     .line 30
@@ -5436,7 +5521,7 @@
 
     .line 35
     :cond_1
-    iget-object p4, p4, LC34;->a:Lz34;
+    iget-object p4, p4, Lm84;->a:Lj84;
 
     .line 36
     .line 37
@@ -5514,11 +5599,11 @@
     move-result-object v2
 
     .line 27
-    check-cast v2, LC34;
+    check-cast v2, Lm84;
 
     .line 28
     .line 29
-    invoke-virtual {v2, p3}, LC34;->a(I)Z
+    invoke-virtual {v2, p3}, Lm84;->a(I)Z
 
     .line 30
     .line 31
@@ -5534,7 +5619,7 @@
 
     .line 36
     :cond_1
-    iget-object v2, v2, LC34;->a:Lz34;
+    iget-object v2, v2, Lm84;->a:Lj84;
 
     .line 37
     .line 38
@@ -5542,7 +5627,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {v2, p1}, Lz34;->j(Landroid/view/View;)Z
+    invoke-virtual {v2, p1}, Lj84;->j(Landroid/view/View;)Z
 
     .line 41
     .line 42
@@ -5648,7 +5733,7 @@
     .locals 6
 
     .line 1
-    instance-of v0, p1, LD34;
+    instance-of v0, p1, Ln84;
 
     .line 2
     .line 3
@@ -5665,11 +5750,11 @@
 
     .line 9
     :cond_0
-    check-cast p1, LD34;
+    check-cast p1, Ln84;
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lt1;->a()Landroid/os/Parcelable;
+    invoke-virtual {p1}, LM1;->a()Landroid/os/Parcelable;
 
     .line 12
     .line 13
@@ -5682,7 +5767,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object p1, p1, LD34;->c:Landroid/util/SparseArray;
+    iget-object p1, p1, Ln84;->c:Landroid/util/SparseArray;
 
     .line 19
     .line 20
@@ -5718,7 +5803,7 @@
     move-result v3
 
     .line 35
-    invoke-static {v2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n(Landroid/view/View;)LC34;
+    invoke-static {v2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q(Landroid/view/View;)Lm84;
 
     .line 36
     .line 37
@@ -5726,7 +5811,7 @@
     move-result-object v4
 
     .line 39
-    iget-object v4, v4, LC34;->a:Lz34;
+    iget-object v4, v4, Lm84;->a:Lj84;
 
     .line 40
     .line 41
@@ -5757,7 +5842,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {v4, v2, v3}, Lz34;->o(Landroid/view/View;Landroid/os/Parcelable;)V
+    invoke-virtual {v4, v2, v3}, Lj84;->o(Landroid/view/View;Landroid/os/Parcelable;)V
 
     .line 55
     .line 56
@@ -5778,7 +5863,7 @@
     .locals 8
 
     .line 1
-    new-instance v0, LD34;
+    new-instance v0, Ln84;
 
     .line 2
     .line 3
@@ -5790,7 +5875,7 @@
     move-result-object v1
 
     .line 7
-    invoke-direct {v0, v1}, Lt1;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v0, v1}, LM1;-><init>(Landroid/os/Parcelable;)V
 
     .line 8
     .line 9
@@ -5844,11 +5929,11 @@
     move-result-object v6
 
     .line 34
-    check-cast v6, LC34;
+    check-cast v6, Lm84;
 
     .line 35
     .line 36
-    iget-object v6, v6, LC34;->a:Lz34;
+    iget-object v6, v6, Lm84;->a:Lj84;
 
     .line 37
     .line 38
@@ -5863,7 +5948,7 @@
 
     .line 42
     .line 43
-    invoke-virtual {v6, v4}, Lz34;->p(Landroid/view/View;)Landroid/os/Parcelable;
+    invoke-virtual {v6, v4}, Lj84;->p(Landroid/view/View;)Landroid/os/Parcelable;
 
     .line 44
     .line 45
@@ -5889,7 +5974,7 @@
 
     .line 55
     :cond_1
-    iput-object v1, v0, LD34;->c:Landroid/util/SparseArray;
+    iput-object v1, v0, Ln84;->c:Landroid/util/SparseArray;
 
     .line 56
     .line 57
@@ -5963,7 +6048,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t(Landroid/view/MotionEvent;I)Z
+    invoke-virtual {v0, v1, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/MotionEvent;I)Z
 
     .line 16
     .line 17
@@ -6002,11 +6087,11 @@
     move-result-object v6
 
     .line 31
-    check-cast v6, LC34;
+    check-cast v6, Lm84;
 
     .line 32
     .line 33
-    iget-object v6, v6, LC34;->a:Lz34;
+    iget-object v6, v6, Lm84;->a:Lj84;
 
     .line 34
     .line 35
@@ -6018,7 +6103,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {v6, v0, v7, v1}, Lz34;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v6, v0, v7, v1}, Lj84;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 40
     .line 41
@@ -6126,7 +6211,7 @@
     .line 85
     :cond_6
     :goto_3
-    invoke-virtual {v0, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Z)V
+    invoke-virtual {v0, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Z)V
 
     .line 86
     .line 87
@@ -6134,7 +6219,247 @@
     return v6
 .end method
 
-.method public final p(I)V
+.method public final r(Landroid/view/View;II)Z
+    .locals 2
+
+    .line 1
+    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LVVd;
+
+    .line 2
+    .line 3
+    invoke-static {}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g()Landroid/graphics/Rect;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-virtual {p0, v1, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o(Landroid/graphics/Rect;Landroid/view/View;)V
+
+    .line 8
+    .line 9
+    .line 10
+    :try_start_0
+    invoke-virtual {v1, p2, p3}, Landroid/graphics/Rect;->contains(II)Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 14
+    invoke-virtual {v1}, Landroid/graphics/Rect;->setEmpty()V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, LVVd;->c(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    return p1
+
+    .line 21
+    :catchall_0
+    move-exception p1
+
+    .line 22
+    invoke-virtual {v1}, Landroid/graphics/Rect;->setEmpty()V
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, LVVd;->c(Ljava/lang/Object;)Z
+
+    .line 26
+    .line 27
+    .line 28
+    throw p1
+.end method
+
+.method public final requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
+    .locals 1
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, Lm84;
+
+    .line 6
+    .line 7
+    iget-object v0, v0, Lm84;->a:Lj84;
+
+    .line 8
+    .line 9
+    if-eqz v0, :cond_0
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, p0, p1, p2, p3}, Lj84;->n(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Rect;Z)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    const/4 p1, 0x1
+
+    .line 18
+    return p1
+
+    .line 19
+    :cond_0
+    invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result p1
+
+    .line 23
+    return p1
+.end method
+
+.method public final requestDisallowInterceptTouchEvent(Z)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
+
+    .line 2
+    .line 3
+    .line 4
+    if-eqz p1, :cond_0
+
+    .line 5
+    .line 6
+    iget-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g0:Z
+
+    .line 7
+    .line 8
+    if-nez p1, :cond_0
+
+    .line 9
+    .line 10
+    const/4 p1, 0x0
+
+    .line 11
+    invoke-virtual {p0, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Z)V
+
+    .line 12
+    .line 13
+    .line 14
+    const/4 p1, 0x1
+
+    .line 15
+    iput-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g0:Z
+
+    .line 16
+    .line 17
+    :cond_0
+    return-void
+.end method
+
+.method public final setFitsSystemWindows(Z)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->setFitsSystemWindows(Z)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->A()V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public final setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q0:Landroid/view/ViewGroup$OnHierarchyChangeListener;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setVisibility(I)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    if-nez p1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 p1, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 10
+    :goto_0
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p0:Landroid/graphics/drawable/Drawable;
+
+    .line 11
+    .line 12
+    if-eqz v1, :cond_1
+
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->isVisible()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    if-eq v2, p1, :cond_1
+
+    .line 19
+    .line 20
+    invoke-virtual {v1, p1, v0}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
+
+    .line 21
+    .line 22
+    .line 23
+    :cond_1
+    return-void
+.end method
+
+.method public final t(I)V
     .locals 25
 
     .line 1
@@ -6146,7 +6471,7 @@
 
     .line 4
     .line 5
-    sget-object v7, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v7, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 6
     .line 7
@@ -6198,7 +6523,7 @@
 
     .line 30
     :goto_0
-    sget-object v13, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LpEd;
+    sget-object v13, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LVVd;
 
     .line 31
     .line 32
@@ -6234,7 +6559,7 @@
 
     .line 47
     .line 48
-    check-cast v3, LC34;
+    check-cast v3, Lm84;
 
     .line 49
     .line 50
@@ -6315,7 +6640,7 @@
 
     .line 82
     .line 83
-    iget-object v6, v3, LC34;->l:Landroid/view/View;
+    iget-object v6, v3, Lm84;->l:Landroid/view/View;
 
     .line 84
     .line 85
@@ -6331,11 +6656,11 @@
     move-result-object v5
 
     .line 91
-    check-cast v5, LC34;
+    check-cast v5, Lm84;
 
     .line 92
     .line 93
-    iget-object v6, v5, LC34;->k:Landroid/view/View;
+    iget-object v6, v5, Lm84;->k:Landroid/view/View;
 
     .line 94
     .line 95
@@ -6378,11 +6703,11 @@
 
     .line 113
     .line 114
-    iget-object v4, v5, LC34;->k:Landroid/view/View;
+    iget-object v4, v5, Lm84;->k:Landroid/view/View;
 
     .line 115
     .line 116
-    invoke-virtual {v0, v9, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l(Landroid/graphics/Rect;Landroid/view/View;)V
+    invoke-virtual {v0, v9, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o(Landroid/graphics/Rect;Landroid/view/View;)V
 
     .line 117
     .line 118
@@ -6390,7 +6715,7 @@
     const/4 v4, 0x0
 
     .line 120
-    invoke-virtual {v0, v2, v11, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j(Landroid/view/View;Landroid/graphics/Rect;Z)V
+    invoke-virtual {v0, v2, v11, v4}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m(Landroid/view/View;Landroid/graphics/Rect;Z)V
 
     .line 121
     .line 122
@@ -6437,7 +6762,7 @@
 
     .line 142
     .line 143
-    invoke-static/range {v8 .. v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m(ILandroid/graphics/Rect;Landroid/graphics/Rect;LC34;II)V
+    invoke-static/range {v8 .. v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p(ILandroid/graphics/Rect;Landroid/graphics/Rect;Lm84;II)V
 
     .line 144
     .line 145
@@ -6490,7 +6815,7 @@
 
     .line 166
     :goto_3
-    invoke-virtual {v0, v11, v10, v12, v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h(LC34;Landroid/graphics/Rect;II)V
+    invoke-virtual {v0, v11, v10, v12, v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h(Lm84;Landroid/graphics/Rect;II)V
 
     .line 167
     .line 168
@@ -6521,7 +6846,7 @@
 
     .line 180
     .line 181
-    invoke-static {v2, v12}, LDIj;->i(Landroid/view/View;I)V
+    invoke-static {v2, v12}, Lb8k;->i(Landroid/view/View;I)V
 
     .line 182
     .line 183
@@ -6531,7 +6856,7 @@
 
     .line 185
     .line 186
-    invoke-static {v2, v13}, LDIj;->j(Landroid/view/View;I)V
+    invoke-static {v2, v13}, Lb8k;->j(Landroid/view/View;I)V
 
     .line 187
     .line 188
@@ -6541,7 +6866,7 @@
 
     .line 190
     .line 191
-    iget-object v5, v11, LC34;->a:Lz34;
+    iget-object v5, v11, Lm84;->a:Lj84;
 
     .line 192
     .line 193
@@ -6549,11 +6874,11 @@
 
     .line 194
     .line 195
-    iget-object v11, v11, LC34;->k:Landroid/view/View;
+    iget-object v11, v11, Lm84;->k:Landroid/view/View;
 
     .line 196
     .line 197
-    invoke-virtual {v5, v0, v2, v11}, Lz34;->d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+    invoke-virtual {v5, v0, v2, v11}, Lj84;->d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
 
     .line 198
     .line 199
@@ -6564,7 +6889,7 @@
     .line 201
     .line 202
     .line 203
-    invoke-virtual {v4, v9}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v9}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 204
     .line 205
@@ -6574,7 +6899,7 @@
     .line 207
     .line 208
     .line 209
-    invoke-virtual {v4, v7}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v7}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 210
     .line 211
@@ -6584,7 +6909,7 @@
     .line 213
     .line 214
     .line 215
-    invoke-virtual {v4, v10}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v10}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 216
     .line 217
@@ -6679,12 +7004,12 @@
     const/4 v5, 0x1
 
     .line 257
-    invoke-virtual {v0, v2, v6, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j(Landroid/view/View;Landroid/graphics/Rect;Z)V
+    invoke-virtual {v0, v2, v6, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m(Landroid/view/View;Landroid/graphics/Rect;Z)V
 
     .line 258
     .line 259
     .line 260
-    iget v5, v3, LC34;->g:I
+    iget v5, v3, Lm84;->g:I
 
     .line 261
     .line 262
@@ -6704,7 +7029,7 @@
 
     .line 269
     .line 270
-    iget v5, v3, LC34;->g:I
+    iget v5, v3, Lm84;->g:I
 
     .line 271
     .line 272
@@ -6875,7 +7200,7 @@
     .line 348
     :cond_c
     :goto_6
-    iget v3, v3, LC34;->h:I
+    iget v3, v3, Lm84;->h:I
 
     .line 349
     .line 350
@@ -6895,7 +7220,7 @@
 
     .line 357
     .line 358
-    sget-object v3, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v3, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 359
     .line 360
@@ -6953,11 +7278,11 @@
     move-result-object v3
 
     .line 386
-    check-cast v3, LC34;
+    check-cast v3, Lm84;
 
     .line 387
     .line 388
-    iget-object v5, v3, LC34;->a:Lz34;
+    iget-object v5, v3, Lm84;->a:Lj84;
 
     .line 389
     .line 390
@@ -7018,7 +7343,7 @@
 
     .line 418
     .line 419
-    invoke-virtual {v5, v7, v2}, Lz34;->a(Landroid/graphics/Rect;Landroid/view/View;)Z
+    invoke-virtual {v5, v7, v2}, Lj84;->a(Landroid/graphics/Rect;Landroid/view/View;)Z
 
     .line 420
     .line 421
@@ -7126,7 +7451,7 @@
     .line 472
     .line 473
     .line 474
-    invoke-virtual {v4, v9}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v9}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 475
     .line 476
@@ -7148,7 +7473,7 @@
     .line 484
     .line 485
     .line 486
-    invoke-virtual {v4, v7}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v7}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 487
     .line 488
@@ -7158,7 +7483,7 @@
     .line 490
     .line 491
     :cond_11
-    iget v5, v3, LC34;->h:I
+    iget v5, v3, Lm84;->h:I
 
     .line 492
     .line 493
@@ -7193,7 +7518,7 @@
     sub-int/2addr v10, v11
 
     .line 508
-    iget v11, v3, LC34;->j:I
+    iget v11, v3, Lm84;->j:I
 
     .line 509
     .line 510
@@ -7211,7 +7536,7 @@
     sub-int/2addr v11, v10
 
     .line 516
-    invoke-static {v2, v11}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Landroid/view/View;I)V
+    invoke-static {v2, v11}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z(Landroid/view/View;I)V
 
     .line 517
     .line 518
@@ -7265,7 +7590,7 @@
     sub-int/2addr v12, v13
 
     .line 539
-    iget v13, v3, LC34;->j:I
+    iget v13, v3, Lm84;->j:I
 
     .line 540
     .line 541
@@ -7283,7 +7608,7 @@
     sub-int/2addr v12, v13
 
     .line 547
-    invoke-static {v2, v12}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Landroid/view/View;I)V
+    invoke-static {v2, v12}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z(Landroid/view/View;I)V
 
     .line 548
     .line 549
@@ -7299,7 +7624,7 @@
     const/4 v11, 0x0
 
     .line 554
-    invoke-static {v2, v11}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x(Landroid/view/View;I)V
+    invoke-static {v2, v11}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z(Landroid/view/View;I)V
 
     .line 555
     .line 556
@@ -7327,7 +7652,7 @@
     sub-int/2addr v12, v13
 
     .line 567
-    iget v13, v3, LC34;->i:I
+    iget v13, v3, Lm84;->i:I
 
     .line 568
     .line 569
@@ -7345,7 +7670,7 @@
     sub-int/2addr v13, v12
 
     .line 575
-    invoke-static {v2, v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;I)V
+    invoke-static {v2, v13}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y(Landroid/view/View;I)V
 
     .line 576
     .line 577
@@ -7397,7 +7722,7 @@
     sub-int/2addr v5, v14
 
     .line 596
-    iget v3, v3, LC34;->i:I
+    iget v3, v3, Lm84;->i:I
 
     .line 597
     .line 598
@@ -7415,7 +7740,7 @@
     sub-int/2addr v5, v3
 
     .line 604
-    invoke-static {v2, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;I)V
+    invoke-static {v2, v5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y(Landroid/view/View;I)V
 
     .line 605
     .line 606
@@ -7431,7 +7756,7 @@
     const/4 v3, 0x0
 
     .line 611
-    invoke-static {v2, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w(Landroid/view/View;I)V
+    invoke-static {v2, v3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y(Landroid/view/View;I)V
 
     .line 612
     .line 613
@@ -7442,7 +7767,7 @@
     .line 615
     .line 616
     .line 617
-    invoke-virtual {v4, v7}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v7}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 618
     .line 619
@@ -7482,11 +7807,11 @@
     move-result-object v4
 
     .line 634
-    check-cast v4, LC34;
+    check-cast v4, Lm84;
 
     .line 635
     .line 636
-    iget-object v4, v4, LC34;->p:Landroid/graphics/Rect;
+    iget-object v4, v4, Lm84;->p:Landroid/graphics/Rect;
 
     .line 637
     .line 638
@@ -7538,11 +7863,11 @@
     move-result-object v4
 
     .line 660
-    check-cast v4, LC34;
+    check-cast v4, Lm84;
 
     .line 661
     .line 662
-    iget-object v4, v4, LC34;->p:Landroid/graphics/Rect;
+    iget-object v4, v4, Lm84;->p:Landroid/graphics/Rect;
 
     .line 663
     .line 664
@@ -7609,11 +7934,11 @@
 
     .line 692
     .line 693
-    check-cast v9, LC34;
+    check-cast v9, Lm84;
 
     .line 694
     .line 695
-    iget-object v10, v9, LC34;->a:Lz34;
+    iget-object v10, v9, Lm84;->a:Lj84;
 
     .line 696
     .line 697
@@ -7621,7 +7946,7 @@
 
     .line 698
     .line 699
-    invoke-virtual {v10, v4, v2}, Lz34;->b(Landroid/view/View;Landroid/view/View;)Z
+    invoke-virtual {v10, v4, v2}, Lj84;->b(Landroid/view/View;Landroid/view/View;)Z
 
     .line 700
     .line 701
@@ -7637,7 +7962,7 @@
 
     .line 706
     .line 707
-    iget-boolean v11, v9, LC34;->o:Z
+    iget-boolean v11, v9, Lm84;->o:Z
 
     .line 708
     .line 709
@@ -7648,7 +7973,7 @@
     const/4 v11, 0x0
 
     .line 712
-    iput-boolean v11, v9, LC34;->o:Z
+    iput-boolean v11, v9, Lm84;->o:Z
 
     .line 713
     .line 714
@@ -7666,7 +7991,7 @@
 
     .line 718
     .line 719
-    invoke-virtual {v10, v0, v4, v2}, Lz34;->d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
+    invoke-virtual {v10, v0, v4, v2}, Lj84;->d(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;)Z
 
     .line 720
     .line 721
@@ -7682,7 +8007,7 @@
 
     .line 725
     :cond_1d
-    invoke-virtual {v10, v0, v2}, Lz34;->e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)V
+    invoke-virtual {v10, v0, v2}, Lj84;->e(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)V
 
     .line 726
     .line 727
@@ -7698,7 +8023,7 @@
 
     .line 731
     .line 732
-    iput-boolean v4, v9, LC34;->o:Z
+    iput-boolean v4, v9, Lm84;->o:Z
 
     .line 733
     .line 734
@@ -7774,7 +8099,7 @@
     .line 759
     .line 760
     .line 761
-    invoke-virtual {v4, v15}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v15}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 762
     .line 763
@@ -7784,7 +8109,7 @@
     .line 765
     .line 766
     .line 767
-    invoke-virtual {v4, v6}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v6}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 768
     .line 769
@@ -7794,7 +8119,7 @@
     .line 771
     .line 772
     .line 773
-    invoke-virtual {v4, v5}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 774
     .line 775
@@ -7802,7 +8127,7 @@
     return-void
 .end method
 
-.method public final q(Landroid/view/View;I)V
+.method public final u(Landroid/view/View;I)V
     .locals 12
 
     .line 1
@@ -7814,11 +8139,11 @@
     move-result-object v0
 
     .line 5
-    check-cast v0, LC34;
+    check-cast v0, Lm84;
 
     .line 6
     .line 7
-    iget-object v1, v0, LC34;->k:Landroid/view/View;
+    iget-object v1, v0, Lm84;->k:Landroid/view/View;
 
     .line 8
     .line 9
@@ -7826,7 +8151,7 @@
 
     .line 10
     .line 11
-    iget v2, v0, LC34;->f:I
+    iget v2, v0, Lm84;->f:I
 
     .line 12
     .line 13
@@ -7859,7 +8184,7 @@
     .line 25
     :cond_1
     :goto_0
-    sget-object v2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LpEd;
+    sget-object v2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x0:LVVd;
 
     .line 26
     .line 27
@@ -7884,7 +8209,7 @@
 
     .line 37
     :try_start_0
-    invoke-virtual {p0, v4, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l(Landroid/graphics/Rect;Landroid/view/View;)V
+    invoke-virtual {p0, v4, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o(Landroid/graphics/Rect;Landroid/view/View;)V
 
     .line 38
     .line 39
@@ -7900,7 +8225,7 @@
     move-object v6, v0
 
     .line 45
-    check-cast v6, LC34;
+    check-cast v6, Lm84;
 
     .line 46
     .line 47
@@ -7923,12 +8248,12 @@
     move v3, p2
 
     .line 56
-    invoke-static/range {v3 .. v8}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m(ILandroid/graphics/Rect;Landroid/graphics/Rect;LC34;II)V
+    invoke-static/range {v3 .. v8}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p(ILandroid/graphics/Rect;Landroid/graphics/Rect;Lm84;II)V
 
     .line 57
     .line 58
     .line 59
-    invoke-virtual {p0, v6, v5, v7, v8}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h(LC34;Landroid/graphics/Rect;II)V
+    invoke-virtual {p0, v6, v5, v7, v8}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h(Lm84;Landroid/graphics/Rect;II)V
 
     .line 60
     .line 61
@@ -7961,7 +8286,7 @@
     .line 74
     .line 75
     .line 76
-    invoke-virtual {v2, v4}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 77
     .line 78
@@ -7971,7 +8296,7 @@
     .line 80
     .line 81
     .line 82
-    invoke-virtual {v2, v5}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v5}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 83
     .line 84
@@ -7991,7 +8316,7 @@
     .line 89
     .line 90
     .line 91
-    invoke-virtual {v2, v4}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v4}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 92
     .line 93
@@ -8001,7 +8326,7 @@
     .line 95
     .line 96
     .line 97
-    invoke-virtual {v2, v5}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v5}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 98
     .line 99
@@ -8013,7 +8338,7 @@
     move v3, p2
 
     .line 102
-    iget p2, v0, LC34;->e:I
+    iget p2, v0, Lm84;->e:I
 
     .line 103
     .line 104
@@ -8029,11 +8354,11 @@
     move-result-object v0
 
     .line 110
-    check-cast v0, LC34;
+    check-cast v0, Lm84;
 
     .line 111
     .line 112
-    iget v1, v0, LC34;->c:I
+    iget v1, v0, Lm84;->c:I
 
     .line 113
     .line 114
@@ -8356,7 +8681,7 @@
     move-result-object p2
 
     .line 254
-    check-cast p2, LC34;
+    check-cast p2, Lm84;
 
     .line 255
     .line 256
@@ -8455,7 +8780,7 @@
     .line 299
     .line 300
     .line 301
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 302
     .line 303
@@ -8463,7 +8788,7 @@
 
     .line 304
     .line 305
-    sget-object v0, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object v0, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 306
     .line 307
@@ -8495,11 +8820,11 @@
 
     .line 320
     .line 321
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 322
     .line 323
-    invoke-virtual {v1}, LOYj;->b()I
+    invoke-virtual {v1}, LHok;->b()I
 
     .line 324
     .line 325
@@ -8518,11 +8843,11 @@
 
     .line 331
     .line 332
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 333
     .line 334
-    invoke-virtual {v1}, LOYj;->d()I
+    invoke-virtual {v1}, LHok;->d()I
 
     .line 335
     .line 336
@@ -8541,11 +8866,11 @@
 
     .line 342
     .line 343
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 344
     .line 345
-    invoke-virtual {v1}, LOYj;->c()I
+    invoke-virtual {v1}, LHok;->c()I
 
     .line 346
     .line 347
@@ -8564,11 +8889,11 @@
 
     .line 353
     .line 354
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LOYj;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n0:LHok;
 
     .line 355
     .line 356
-    invoke-virtual {v1}, LOYj;->a()I
+    invoke-virtual {v1}, LHok;->a()I
 
     .line 357
     .line 358
@@ -8592,7 +8917,7 @@
     move-result-object v10
 
     .line 367
-    iget p2, p2, LC34;->c:I
+    iget p2, p2, Lm84;->c:I
 
     .line 368
     .line 369
@@ -8679,7 +9004,7 @@
     .line 408
     .line 409
     .line 410
-    invoke-virtual {v2, v9}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v9}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 411
     .line 412
@@ -8689,7 +9014,7 @@
     .line 414
     .line 415
     .line 416
-    invoke-virtual {v2, v10}, LpEd;->c(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v10}, LVVd;->c(Ljava/lang/Object;)Z
 
     .line 417
     .line 418
@@ -8697,7 +9022,7 @@
     return-void
 .end method
 
-.method public final r(Landroid/view/View;III)V
+.method public final v(Landroid/view/View;III)V
     .locals 6
 
     .line 1
@@ -8727,185 +9052,49 @@
     return-void
 .end method
 
-.method public final requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
+.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-super {p0, p1}, Landroid/view/ViewGroup;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
 
     .line 2
     .line 3
     .line 4
-    move-result-object v0
-
-    .line 5
-    check-cast v0, LC34;
-
-    .line 6
-    .line 7
-    iget-object v0, v0, LC34;->a:Lz34;
-
-    .line 8
-    .line 9
-    if-eqz v0, :cond_0
-
-    .line 10
-    .line 11
-    invoke-virtual {v0, p0, p1, p2, p3}, Lz34;->n(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/graphics/Rect;Z)Z
-
-    .line 12
-    .line 13
-    .line 14
     move-result v0
 
-    .line 15
-    if-eqz v0, :cond_0
-
-    .line 16
-    .line 17
-    const/4 p1, 0x1
-
-    .line 18
-    return p1
-
-    .line 19
-    :cond_0
-    invoke-super {p0, p1, p2, p3}, Landroid/view/ViewGroup;->requestChildRectangleOnScreen(Landroid/view/View;Landroid/graphics/Rect;Z)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p1
-
-    .line 23
-    return p1
-.end method
-
-.method public final requestDisallowInterceptTouchEvent(Z)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->requestDisallowInterceptTouchEvent(Z)V
-
-    .line 2
-    .line 3
-    .line 4
-    if-eqz p1, :cond_0
-
     .line 5
+    if-nez v0, :cond_1
+
     .line 6
-    iget-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g0:Z
-
     .line 7
-    .line 8
-    if-nez p1, :cond_0
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p0:Landroid/graphics/drawable/Drawable;
 
+    .line 8
     .line 9
+    if-ne p1, v0, :cond_0
+
     .line 10
-    const/4 p1, 0x0
-
     .line 11
-    invoke-virtual {p0, p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u(Z)V
-
-    .line 12
-    .line 13
-    .line 14
-    const/4 p1, 0x1
-
-    .line 15
-    iput-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g0:Z
-
-    .line 16
-    .line 17
-    :cond_0
-    return-void
-.end method
-
-.method public final setFitsSystemWindows(Z)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->setFitsSystemWindows(Z)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y()V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q0:Landroid/view/ViewGroup$OnHierarchyChangeListener;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final setVisibility(I)V
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    if-nez p1, :cond_0
-
-    .line 6
-    .line 7
-    const/4 p1, 0x1
-
-    .line 8
     goto :goto_0
 
-    .line 9
+    .line 12
     :cond_0
     const/4 p1, 0x0
 
-    .line 10
-    :goto_0
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p0:Landroid/graphics/drawable/Drawable;
-
-    .line 11
-    .line 12
-    if-eqz v1, :cond_1
-
     .line 13
+    return p1
+
     .line 14
-    invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->isVisible()Z
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
 
     .line 15
-    .line 16
-    .line 17
-    move-result v2
-
-    .line 18
-    if-eq v2, p1, :cond_1
-
-    .line 19
-    .line 20
-    invoke-virtual {v1, p1, v0}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_1
-    return-void
+    return p1
 .end method
 
-.method public final t(Landroid/view/MotionEvent;I)Z
+.method public final w(Landroid/view/MotionEvent;I)Z
     .locals 20
 
     .line 1
@@ -9004,7 +9193,7 @@
 
     .line 46
     :cond_1
-    sget-object v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w0:LA30;
+    sget-object v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w0:LIK;
 
     .line 47
     .line 48
@@ -9063,11 +9252,11 @@
     move-result-object v10
 
     .line 73
-    check-cast v10, LC34;
+    check-cast v10, Lm84;
 
     .line 74
     .line 75
-    iget-object v10, v10, LC34;->a:Lz34;
+    iget-object v10, v10, Lm84;->a:Lj84;
 
     .line 76
     .line 77
@@ -9142,7 +9331,7 @@
 
     .line 109
     :cond_5
-    invoke-virtual {v10, v0, v9, v8}, Lz34;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v10, v0, v9, v8}, Lj84;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 110
     .line 111
@@ -9151,7 +9340,7 @@
 
     .line 113
     :cond_6
-    invoke-virtual {v10, v0, v9, v8}, Lz34;->g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v10, v0, v9, v8}, Lj84;->g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 114
     .line 115
@@ -9181,7 +9370,7 @@
 
     .line 126
     :cond_8
-    invoke-virtual {v10, v0, v9, v1}, Lz34;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v10, v0, v9, v1}, Lj84;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 127
     .line 128
@@ -9193,7 +9382,7 @@
 
     .line 131
     :cond_9
-    invoke-virtual {v10, v0, v9, v1}, Lz34;->g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v10, v0, v9, v1}, Lj84;->g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 132
     .line 133
@@ -9228,7 +9417,7 @@
     return v7
 .end method
 
-.method public final u(Z)V
+.method public final x(Z)V
     .locals 13
 
     .line 1
@@ -9267,11 +9456,11 @@
     move-result-object v4
 
     .line 17
-    check-cast v4, LC34;
+    check-cast v4, Lm84;
 
     .line 18
     .line 19
-    iget-object v4, v4, LC34;->a:Lz34;
+    iget-object v4, v4, Lm84;->a:Lj84;
 
     .line 20
     .line 21
@@ -9314,7 +9503,7 @@
 
     .line 37
     .line 38
-    invoke-virtual {v4, p0, v3, v5}, Lz34;->g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v4, p0, v3, v5}, Lj84;->g(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 39
     .line 40
@@ -9323,7 +9512,7 @@
 
     .line 42
     :cond_0
-    invoke-virtual {v4, p0, v3, v5}, Lz34;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
+    invoke-virtual {v4, p0, v3, v5}, Lj84;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     .line 43
     .line 44
@@ -9367,7 +9556,7 @@
     move-result-object v2
 
     .line 62
-    check-cast v2, LC34;
+    check-cast v2, Lm84;
 
     .line 63
     .line 64
@@ -9395,126 +9584,5 @@
 
     .line 74
     .line 75
-    return-void
-.end method
-
-.method public final verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Landroid/view/ViewGroup;->verifyDrawable(Landroid/graphics/drawable/Drawable;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-nez v0, :cond_1
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p0:Landroid/graphics/drawable/Drawable;
-
-    .line 8
-    .line 9
-    if-ne p1, v0, :cond_0
-
-    .line 10
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 13
-    return p1
-
-    .line 14
-    :cond_1
-    :goto_0
-    const/4 p1, 0x1
-
-    .line 15
-    return p1
-.end method
-
-.method public final y()V
-    .locals 2
-
-    .line 1
-    sget-object v0, LDIj;->a:Ljava/util/WeakHashMap;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Landroid/view/View;->getFitsSystemWindows()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-eqz v0, :cond_1
-
-    .line 8
-    .line 9
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r0:LvJ3;
-
-    .line 10
-    .line 11
-    if-nez v0, :cond_0
-
-    .line 12
-    .line 13
-    new-instance v0, LvJ3;
-
-    .line 14
-    .line 15
-    const/16 v1, 0xa
-
-    .line 16
-    .line 17
-    invoke-direct {v0, v1, p0}, LvJ3;-><init>(ILjava/lang/Object;)V
-
-    .line 18
-    .line 19
-    .line 20
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r0:LvJ3;
-
-    .line 21
-    .line 22
-    :cond_0
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r0:LvJ3;
-
-    .line 23
-    .line 24
-    invoke-static {p0, v0}, LtIj;->u(Landroid/view/View;LxMc;)V
-
-    .line 25
-    .line 26
-    .line 27
-    const/16 v0, 0x500
-
-    .line 28
-    .line 29
-    invoke-virtual {p0, v0}, Landroid/view/View;->setSystemUiVisibility(I)V
-
-    .line 30
-    .line 31
-    .line 32
-    return-void
-
-    .line 33
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 34
-    invoke-static {p0, v0}, LtIj;->u(Landroid/view/View;LxMc;)V
-
-    .line 35
-    .line 36
-    .line 37
     return-void
 .end method

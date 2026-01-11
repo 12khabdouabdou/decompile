@@ -1,126 +1,158 @@
 .class public final LVM2;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lwc7;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Landroid/view/ViewGroup;
+.field public final synthetic a:I
 
-.field public final b:Lrl9;
+.field public final synthetic b:LXM2;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewGroup;Lrl9;)V
+.method public synthetic constructor <init>(LXM2;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LVM2;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LVM2;->a:Landroid/view/ViewGroup;
+    iput-object p1, p0, LVM2;->b:LXM2;
 
-    .line 5
-    .line 6
-    iput-object p2, p0, LVM2;->b:Lrl9;
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final start()Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 3
+.method public final d()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    iget-object v0, p0, LVM2;->b:Lrl9;
+    sget-object v0, Lewj;->a:Lewj;
 
     .line 2
     .line 3
-    iget-object v1, v0, Lrl9;->c:Ljava/lang/String;
+    const/4 v1, 0x0
 
     .line 4
+    const/4 v2, 0x1
+
     .line 5
-    if-eqz v1, :cond_0
+    iget-object v3, p0, LVM2;->b:LXM2;
 
     .line 6
     .line 7
-    iget-object v1, p0, LVM2;->a:Landroid/view/ViewGroup;
+    iget v4, p0, LVM2;->a:I
 
     .line 8
     .line 9
-    const v2, 0x7f0b04d9
+    packed-switch v4, :pswitch_data_0
 
     .line 10
     .line 11
     .line 12
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    iget-object v0, v3, LXM2;->e:Lcom/snap/mention_bar/MentionBarView;
 
     .line 13
     .line 14
-    .line 15
-    move-result-object v2
+    new-array v2, v2, [Landroid/view/View;
 
+    .line 15
     .line 16
-    check-cast v2, Landroid/view/ViewStub;
+    aput-object v0, v2, v1
 
     .line 17
     .line 18
-    invoke-virtual {v2}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+    invoke-static {v2}, LOZ;->b([Landroid/view/View;)Landroid/animation/ValueAnimator;
 
     .line 19
     .line 20
     .line 21
-    move-result-object v2
+    move-result-object v0
 
     .line 22
-    check-cast v2, Landroid/widget/TextView;
+    const-wide/16 v1, 0x1f4
 
     .line 23
     .line 24
-    iget-object v0, v0, Lrl9;->c:Ljava/lang/String;
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 25
     .line 26
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
     .line 27
+    new-instance v1, Lof7;
+
     .line 28
     .line 29
-    invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    const/4 v2, 0x2
 
     .line 30
+    invoke-direct {v1, v2}, Lof7;-><init>(I)V
+
     .line 31
     .line 32
-    move-result-object v0
-
     .line 33
-    const/4 v1, 0x5
+    invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 34
-    invoke-static {v0, v1}, LlXi;->b(Landroid/content/Context;I)Landroid/graphics/Typeface;
-
     .line 35
     .line 36
+    return-object v0
+
     .line 37
-    move-result-object v0
+    :pswitch_0
+    iget-object v1, v3, LXM2;->a:Landroid/widget/FrameLayout;
 
     .line 38
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
-
     .line 39
+    new-instance v4, LUM2;
+
     .line 40
     .line 41
-    :cond_0
-    sget-object v0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->a:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
+    invoke-direct {v4, v3, v2}, LUM2;-><init>(LXM2;I)V
 
     .line 42
     .line 43
+    .line 44
+    invoke-virtual {v1, v4}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 45
+    .line 46
+    .line 47
     return-object v0
+
+    .line 48
+    :pswitch_1
+    iget-object v2, v3, LXM2;->a:Landroid/widget/FrameLayout;
+
+    .line 49
+    .line 50
+    new-instance v4, LUM2;
+
+    .line 51
+    .line 52
+    invoke-direct {v4, v3, v1}, LUM2;-><init>(LXM2;I)V
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v2, v4}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 56
+    .line 57
+    .line 58
+    return-object v0
+
+    .line 59
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

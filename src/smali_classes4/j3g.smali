@@ -1,1006 +1,1210 @@
 .class public final Lj3g;
-.super LcIj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public X:Landroid/widget/TextView;
+.field public final a:J
 
-.field public Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+.field public final b:Z
 
-.field public Z:Lcom/snap/identity/api/sharedui/ProgressButton;
+.field public final c:Z
 
-.field public e0:Landroid/widget/TextView;
+.field public final d:Ljava/lang/String;
+
+.field public final e:Ljava/lang/String;
+
+.field public final f:Ljava/lang/String;
+
+.field public final g:LsPj;
+
+.field public final h:Ljava/lang/String;
+
+.field public final i:Ljava/lang/String;
+
+.field public final j:LfT7;
+
+.field public final k:Ljava/lang/Boolean;
+
+.field public final l:Ljava/lang/Long;
+
+.field public final m:Ljava/lang/Boolean;
+
+.field public final n:Ljava/lang/Long;
+
+.field public final o:Ljava/lang/Long;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(JZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;LsPj;Ljava/lang/String;Ljava/lang/String;LfT7;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Boolean;Ljava/lang/Long;Ljava/lang/Long;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LcIj;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
+    iput-wide p1, p0, Lj3g;->a:J
+
+    .line 5
+    .line 6
+    iput-boolean p3, p0, Lj3g;->b:Z
+
+    .line 7
+    .line 8
+    iput-boolean p4, p0, Lj3g;->c:Z
+
+    .line 9
+    .line 10
+    iput-object p5, p0, Lj3g;->d:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    iput-object p6, p0, Lj3g;->e:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    iput-object p7, p0, Lj3g;->f:Ljava/lang/String;
+
+    .line 15
+    .line 16
+    iput-object p8, p0, Lj3g;->g:LsPj;
+
+    .line 17
+    .line 18
+    iput-object p9, p0, Lj3g;->h:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    iput-object p10, p0, Lj3g;->i:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    iput-object p11, p0, Lj3g;->j:LfT7;
+
+    .line 23
+    .line 24
+    iput-object p12, p0, Lj3g;->k:Ljava/lang/Boolean;
+
+    .line 25
+    .line 26
+    iput-object p13, p0, Lj3g;->l:Ljava/lang/Long;
+
+    .line 27
+    .line 28
+    iput-object p14, p0, Lj3g;->m:Ljava/lang/Boolean;
+
+    .line 29
+    .line 30
+    iput-object p15, p0, Lj3g;->n:Ljava/lang/Long;
+
+    .line 31
+    .line 32
+    move-object/from16 p1, p16
+
+    .line 33
+    .line 34
+    iput-object p1, p0, Lj3g;->o:Ljava/lang/Long;
+
+    .line 35
+    .line 36
     return-void
 .end method
 
 
 # virtual methods
-.method public final t(LKu;LKu;)V
-    .locals 10
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    check-cast p1, Lk3g;
+    if-ne p0, p1, :cond_0
 
     .line 3
     .line 4
-    check-cast p2, Lk3g;
+    return v0
 
     .line 5
-    .line 6
-    iget-object p1, p0, LcIj;->c:LKu;
+    :cond_0
+    instance-of v1, p1, Lj3g;
 
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    check-cast p1, Lk3g;
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    iget-boolean p2, p1, Lk3g;->e0:Z
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, Lj3g;
+
     .line 12
-    xor-int/lit8 v1, p2, 0x1
-
     .line 13
+    iget-wide v3, p1, Lj3g;->a:J
+
     .line 14
-    iget-object v2, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
-
     .line 15
-    .line 16
-    const/4 v3, 0x0
+    iget-wide v5, p0, Lj3g;->a:J
 
+    .line 16
     .line 17
-    const-string v4, "phonePickerView"
+    cmp-long v1, v5, v3
 
     .line 18
     .line 19
-    if-eqz v2, :cond_1e
+    if-eqz v1, :cond_2
 
     .line 20
     .line 21
-    invoke-virtual {v2}, Landroid/view/View;->isEnabled()Z
+    return v2
 
     .line 22
+    :cond_2
+    iget-boolean v1, p0, Lj3g;->b:Z
+
     .line 23
     .line 24
-    move-result v2
+    iget-boolean v3, p1, Lj3g;->b:Z
 
     .line 25
-    if-eq v2, v1, :cond_1
-
     .line 26
-    .line 27
-    iget-object v2, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    if-eq v1, v3, :cond_3
 
+    .line 27
     .line 28
+    return v2
+
     .line 29
-    if-eqz v2, :cond_0
+    :cond_3
+    iget-boolean v1, p0, Lj3g;->c:Z
 
     .line 30
     .line 31
-    invoke-virtual {v2, v1}, Landroid/view/View;->setEnabled(Z)V
+    iget-boolean v3, p1, Lj3g;->c:Z
 
     .line 32
     .line 33
-    .line 34
-    goto :goto_0
+    if-eq v1, v3, :cond_4
 
+    .line 34
     .line 35
-    :cond_0
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    return v2
 
     .line 36
+    :cond_4
+    iget-object v1, p0, Lj3g;->d:Ljava/lang/String;
+
     .line 37
     .line 38
-    throw v3
+    iget-object v3, p1, Lj3g;->d:Ljava/lang/String;
 
     .line 39
-    :cond_1
-    :goto_0
-    iget-object v2, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
-
     .line 40
-    .line 41
-    if-eqz v2, :cond_1d
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 41
     .line 42
     .line 43
-    iget-object v2, v2, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->i0:Landroid/widget/EditText;
+    move-result v1
 
     .line 44
+    if-nez v1, :cond_5
+
     .line 45
-    invoke-virtual {v2}, Landroid/view/View;->isEnabled()Z
-
     .line 46
-    .line 47
-    .line 48
-    move-result v2
+    return v2
 
+    .line 47
+    :cond_5
+    iget-object v1, p0, Lj3g;->e:Ljava/lang/String;
+
+    .line 48
     .line 49
-    if-eq v2, v1, :cond_3
+    iget-object v3, p1, Lj3g;->e:Ljava/lang/String;
 
     .line 50
     .line 51
-    iget-object v2, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 52
     .line 53
-    if-eqz v2, :cond_2
-
     .line 54
+    move-result v1
+
     .line 55
-    iget-object v2, v2, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->i0:Landroid/widget/EditText;
+    if-nez v1, :cond_6
 
     .line 56
     .line 57
-    invoke-virtual {v2, v1}, Landroid/view/View;->setEnabled(Z)V
+    return v2
 
     .line 58
+    :cond_6
+    iget-object v1, p0, Lj3g;->f:Ljava/lang/String;
+
     .line 59
     .line 60
-    move v2, v1
+    iget-object v3, p1, Lj3g;->f:Ljava/lang/String;
 
     .line 61
-    goto :goto_1
-
     .line 62
-    :cond_2
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 63
     .line 64
     .line 65
-    throw v3
+    move-result v1
 
     .line 66
-    :cond_3
-    iget-boolean v2, p1, Lk3g;->g0:Z
+    if-nez v1, :cond_7
 
     .line 67
     .line 68
-    :goto_1
-    iget-object v5, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    return v2
 
     .line 69
+    :cond_7
+    iget-object v1, p0, Lj3g;->g:LsPj;
+
     .line 70
-    if-eqz v5, :cond_1c
-
     .line 71
+    iget-object v3, p1, Lj3g;->g:LsPj;
+
     .line 72
-    iget-object v5, v5, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->h0:Landroid/widget/TextView;
-
     .line 73
-    .line 74
-    invoke-virtual {v5}, Landroid/view/View;->isEnabled()Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 74
     .line 75
     .line 76
+    move-result v1
+
     .line 77
-    move-result v5
+    if-nez v1, :cond_8
 
     .line 78
-    if-eq v5, v1, :cond_5
-
     .line 79
+    return v2
+
     .line 80
-    iget-object v5, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    :cond_8
+    iget-object v1, p0, Lj3g;->h:Ljava/lang/String;
 
     .line 81
     .line 82
-    if-eqz v5, :cond_4
+    iget-object v3, p1, Lj3g;->h:Ljava/lang/String;
 
     .line 83
     .line 84
-    iget-object v5, v5, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->h0:Landroid/widget/TextView;
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 85
     .line 86
-    invoke-virtual {v5, v1}, Landroid/view/View;->setEnabled(Z)V
+    .line 87
+    move-result v1
+
+    .line 88
+    if-nez v1, :cond_9
+
+    .line 89
+    .line 90
+    return v2
+
+    .line 91
+    :cond_9
+    iget-object v1, p0, Lj3g;->i:Ljava/lang/String;
+
+    .line 92
+    .line 93
+    iget-object v3, p1, Lj3g;->i:Ljava/lang/String;
+
+    .line 94
+    .line 95
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 96
+    .line 97
+    .line 98
+    move-result v1
+
+    .line 99
+    if-nez v1, :cond_a
+
+    .line 100
+    .line 101
+    return v2
+
+    .line 102
+    :cond_a
+    iget-object v1, p0, Lj3g;->j:LfT7;
+
+    .line 103
+    .line 104
+    iget-object v3, p1, Lj3g;->j:LfT7;
+
+    .line 105
+    .line 106
+    if-eq v1, v3, :cond_b
+
+    .line 107
+    .line 108
+    return v2
+
+    .line 109
+    :cond_b
+    iget-object v1, p0, Lj3g;->k:Ljava/lang/Boolean;
+
+    .line 110
+    .line 111
+    iget-object v3, p1, Lj3g;->k:Ljava/lang/Boolean;
+
+    .line 112
+    .line 113
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 114
+    .line 115
+    .line 116
+    move-result v1
+
+    .line 117
+    if-nez v1, :cond_c
+
+    .line 118
+    .line 119
+    return v2
+
+    .line 120
+    :cond_c
+    iget-object v1, p0, Lj3g;->l:Ljava/lang/Long;
+
+    .line 121
+    .line 122
+    iget-object v3, p1, Lj3g;->l:Ljava/lang/Long;
+
+    .line 123
+    .line 124
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 125
+    .line 126
+    .line 127
+    move-result v1
+
+    .line 128
+    if-nez v1, :cond_d
+
+    .line 129
+    .line 130
+    return v2
+
+    .line 131
+    :cond_d
+    iget-object v1, p0, Lj3g;->m:Ljava/lang/Boolean;
+
+    .line 132
+    .line 133
+    iget-object v3, p1, Lj3g;->m:Ljava/lang/Boolean;
+
+    .line 134
+    .line 135
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 136
+    .line 137
+    .line 138
+    move-result v1
+
+    .line 139
+    if-nez v1, :cond_e
+
+    .line 140
+    .line 141
+    return v2
+
+    .line 142
+    :cond_e
+    iget-object v1, p0, Lj3g;->n:Ljava/lang/Long;
+
+    .line 143
+    .line 144
+    iget-object v3, p1, Lj3g;->n:Ljava/lang/Long;
+
+    .line 145
+    .line 146
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 147
+    .line 148
+    .line 149
+    move-result v1
+
+    .line 150
+    if-nez v1, :cond_f
+
+    .line 151
+    .line 152
+    return v2
+
+    .line 153
+    :cond_f
+    iget-object v1, p0, Lj3g;->o:Ljava/lang/Long;
+
+    .line 154
+    .line 155
+    iget-object p1, p1, Lj3g;->o:Ljava/lang/Long;
+
+    .line 156
+    .line 157
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 158
+    .line 159
+    .line 160
+    move-result p1
+
+    .line 161
+    if-nez p1, :cond_10
+
+    .line 162
+    .line 163
+    return v2
+
+    .line 164
+    :cond_10
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 5
+
+    .line 1
+    const/16 v0, 0x20
+
+    .line 2
+    .line 3
+    iget-wide v1, p0, Lj3g;->a:J
+
+    .line 4
+    .line 5
+    ushr-long v3, v1, v0
+
+    .line 6
+    .line 7
+    xor-long/2addr v1, v3
+
+    .line 8
+    long-to-int v0, v1
+
+    .line 9
+    const/16 v1, 0x1f
+
+    .line 10
+    .line 11
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 12
+    .line 13
+    const/16 v2, 0x4d5
+
+    .line 14
+    .line 15
+    const/16 v3, 0x4cf
+
+    .line 16
+    .line 17
+    iget-boolean v4, p0, Lj3g;->b:Z
+
+    .line 18
+    .line 19
+    if-eqz v4, :cond_0
+
+    .line 20
+    .line 21
+    const/16 v4, 0x4cf
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    const/16 v4, 0x4d5
+
+    .line 25
+    .line 26
+    :goto_0
+    add-int/2addr v0, v4
+
+    .line 27
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 28
+    .line 29
+    iget-boolean v4, p0, Lj3g;->c:Z
+
+    .line 30
+    .line 31
+    if-eqz v4, :cond_1
+
+    .line 32
+    .line 33
+    const/16 v2, 0x4cf
+
+    .line 34
+    .line 35
+    :cond_1
+    add-int/2addr v0, v2
+
+    .line 36
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 37
+    .line 38
+    iget-object v2, p0, Lj3g;->d:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v0
+
+    .line 44
+    const/4 v2, 0x0
+
+    .line 45
+    iget-object v3, p0, Lj3g;->e:Ljava/lang/String;
+
+    .line 46
+    .line 47
+    if-nez v3, :cond_2
+
+    .line 48
+    .line 49
+    const/4 v3, 0x0
+
+    .line 50
+    goto :goto_1
+
+    .line 51
+    :cond_2
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v3
+
+    .line 55
+    :goto_1
+    add-int/2addr v0, v3
+
+    .line 56
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 57
+    .line 58
+    iget-object v3, p0, Lj3g;->f:Ljava/lang/String;
+
+    .line 59
+    .line 60
+    if-nez v3, :cond_3
+
+    .line 61
+    .line 62
+    const/4 v3, 0x0
+
+    .line 63
+    goto :goto_2
+
+    .line 64
+    :cond_3
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v3
+
+    .line 68
+    :goto_2
+    add-int/2addr v0, v3
+
+    .line 69
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 70
+    .line 71
+    iget-object v3, p0, Lj3g;->g:LsPj;
+
+    .line 72
+    .line 73
+    if-nez v3, :cond_4
+
+    .line 74
+    .line 75
+    const/4 v3, 0x0
+
+    .line 76
+    goto :goto_3
+
+    .line 77
+    :cond_4
+    invoke-virtual {v3}, LsPj;->hashCode()I
+
+    .line 78
+    .line 79
+    .line 80
+    move-result v3
+
+    .line 81
+    :goto_3
+    add-int/2addr v0, v3
+
+    .line 82
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 83
+    .line 84
+    iget-object v3, p0, Lj3g;->h:Ljava/lang/String;
+
+    .line 85
+    .line 86
+    if-nez v3, :cond_5
 
     .line 87
     .line 88
+    const/4 v3, 0x0
+
     .line 89
-    goto :goto_2
+    goto :goto_4
 
     .line 90
-    :cond_4
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    :cond_5
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
 
     .line 91
     .line 92
     .line 93
-    throw v3
+    move-result v3
 
     .line 94
-    :cond_5
-    :goto_2
-    iget-object v1, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    :goto_4
+    add-int/2addr v0, v3
 
     .line 95
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 96
-    if-eqz v1, :cond_1b
-
     .line 97
+    iget-object v3, p0, Lj3g;->i:Ljava/lang/String;
+
     .line 98
-    iget-object v1, v1, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->c:Ljava/lang/String;
-
     .line 99
-    .line 100
-    iget-object v5, p1, Lk3g;->X:Ljava/lang/String;
+    if-nez v3, :cond_6
 
+    .line 100
     .line 101
+    const/4 v3, 0x0
+
     .line 102
-    invoke-static {v1, v5}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    goto :goto_5
 
     .line 103
+    :cond_6
+    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
+
     .line 104
     .line 105
-    move-result v1
-
     .line 106
-    if-nez v1, :cond_7
+    move-result v3
 
     .line 107
+    :goto_5
+    add-int/2addr v0, v3
+
     .line 108
-    iget-object v1, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 109
     .line 110
-    if-eqz v1, :cond_6
+    iget-object v3, p0, Lj3g;->j:LfT7;
 
     .line 111
     .line 112
-    invoke-virtual {v1, v5}, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->h(Ljava/lang/String;)V
+    if-nez v3, :cond_7
 
     .line 113
     .line 114
+    const/4 v3, 0x0
+
     .line 115
-    goto :goto_3
+    goto :goto_6
 
     .line 116
-    :cond_6
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    :cond_7
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
 
     .line 117
     .line 118
     .line 119
-    throw v3
+    move-result v3
 
     .line 120
-    :cond_7
-    :goto_3
-    iget-object v1, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    :goto_6
+    add-int/2addr v0, v3
 
     .line 121
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 122
-    if-eqz v1, :cond_1a
-
     .line 123
+    iget-object v3, p0, Lj3g;->k:Ljava/lang/Boolean;
+
     .line 124
-    iget-object v1, v1, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->t:Ljava/lang/String;
-
     .line 125
-    .line 126
-    iget-object v6, p1, Lk3g;->Z:Ljava/lang/String;
+    if-nez v3, :cond_8
 
+    .line 126
     .line 127
+    const/4 v3, 0x0
+
     .line 128
-    invoke-static {v1, v6}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    goto :goto_7
 
     .line 129
+    :cond_8
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
     .line 130
     .line 131
-    move-result v1
-
     .line 132
-    if-nez v1, :cond_9
+    move-result v3
 
     .line 133
+    :goto_7
+    add-int/2addr v0, v3
+
     .line 134
-    iget-object v1, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 135
     .line 136
-    if-eqz v1, :cond_8
+    iget-object v3, p0, Lj3g;->l:Ljava/lang/Long;
 
     .line 137
     .line 138
-    invoke-virtual {v1, v6}, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->e(Ljava/lang/String;)V
+    if-nez v3, :cond_9
 
     .line 139
     .line 140
+    const/4 v3, 0x0
+
     .line 141
-    goto :goto_4
+    goto :goto_8
 
     .line 142
-    :cond_8
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    :cond_9
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
 
     .line 143
     .line 144
     .line 145
-    throw v3
+    move-result v3
 
     .line 146
-    :cond_9
-    :goto_4
-    iget-object v1, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    :goto_8
+    add-int/2addr v0, v3
 
     .line 147
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 148
-    if-eqz v1, :cond_19
-
     .line 149
+    iget-object v3, p0, Lj3g;->m:Ljava/lang/Boolean;
+
     .line 150
-    iget-object v6, p1, Lk3g;->Y:Ljava/lang/String;
-
     .line 151
-    .line 152
-    invoke-virtual {v1, v6}, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->a(Ljava/lang/String;)V
+    if-nez v3, :cond_a
 
+    .line 152
     .line 153
+    const/4 v3, 0x0
+
     .line 154
+    goto :goto_9
+
     .line 155
-    iget-object v1, p0, Lj3g;->X:Landroid/widget/TextView;
+    :cond_a
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
 
     .line 156
     .line 157
-    const-string v6, "errorMessageView"
-
     .line 158
+    move-result v3
+
     .line 159
-    if-eqz v1, :cond_18
+    :goto_9
+    add-int/2addr v0, v3
 
     .line 160
-    .line 161
-    invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+    mul-int/lit8 v0, v0, 0x1f
 
+    .line 161
     .line 162
+    iget-object v3, p0, Lj3g;->n:Ljava/lang/Long;
+
     .line 163
     .line 164
-    move-result-object v1
+    if-nez v3, :cond_b
 
     .line 165
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
     .line 166
+    const/4 v3, 0x0
+
     .line 167
+    goto :goto_a
+
     .line 168
-    move-result-object v1
+    :cond_b
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
 
     .line 169
-    iget-object v7, p1, Lk3g;->f0:Ljava/lang/String;
-
     .line 170
     .line 171
-    invoke-static {v1, v7}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-result v3
 
     .line 172
-    .line 173
-    .line 174
-    move-result v1
+    :goto_a
+    add-int/2addr v0, v3
 
+    .line 173
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 174
     .line 175
-    if-nez v1, :cond_b
+    iget-object v1, p0, Lj3g;->o:Ljava/lang/Long;
 
     .line 176
     .line 177
-    iget-object v1, p0, Lj3g;->X:Landroid/widget/TextView;
+    if-nez v1, :cond_c
 
     .line 178
     .line 179
-    if-eqz v1, :cond_a
+    goto :goto_b
 
     .line 180
-    .line 181
-    invoke-virtual {v1, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    :cond_c
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
+    .line 181
     .line 182
     .line 183
+    move-result v2
+
     .line 184
-    goto :goto_5
+    :goto_b
+    add-int/2addr v0, v2
 
     .line 185
-    :cond_a
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 186
-    .line 187
-    .line 188
-    throw v3
-
-    .line 189
-    :cond_b
-    :goto_5
-    invoke-virtual {v7}, Ljava/lang/String;->length()I
-
-    .line 190
-    .line 191
-    .line 192
-    move-result v1
-
-    .line 193
-    const/4 v8, 0x0
-
-    .line 194
-    if-nez v1, :cond_c
-
-    .line 195
-    .line 196
-    const/16 v1, 0x8
-
-    .line 197
-    .line 198
-    goto :goto_6
-
-    .line 199
-    :cond_c
-    const/4 v1, 0x0
-
-    .line 200
-    :goto_6
-    iget-object v9, p0, Lj3g;->X:Landroid/widget/TextView;
-
-    .line 201
-    .line 202
-    if-eqz v9, :cond_17
-
-    .line 203
-    .line 204
-    invoke-virtual {v9}, Landroid/view/View;->getVisibility()I
-
-    .line 205
-    .line 206
-    .line 207
-    move-result v9
-
-    .line 208
-    if-eq v9, v1, :cond_e
-
-    .line 209
-    .line 210
-    iget-object v9, p0, Lj3g;->X:Landroid/widget/TextView;
-
-    .line 211
-    .line 212
-    if-eqz v9, :cond_d
-
-    .line 213
-    .line 214
-    invoke-virtual {v9, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 215
-    .line 216
-    .line 217
-    goto :goto_7
-
-    .line 218
-    :cond_d
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 219
-    .line 220
-    .line 221
-    throw v3
-
-    .line 222
-    :cond_e
-    :goto_7
-    iget-object v1, p0, Lj3g;->e0:Landroid/widget/TextView;
-
-    .line 223
-    .line 224
-    const-string v6, "sendMessageExplanation"
-
-    .line 225
-    .line 226
-    if-eqz v1, :cond_16
-
-    .line 227
-    .line 228
-    invoke-virtual {v1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
-
-    .line 229
-    .line 230
-    .line 231
-    move-result-object v1
-
-    .line 232
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 233
-    .line 234
-    .line 235
-    move-result-object v1
-
-    .line 236
-    iget-object p1, p1, Lk3g;->h0:Ljava/lang/String;
-
-    .line 237
-    .line 238
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 239
-    .line 240
-    .line 241
-    move-result v1
-
-    .line 242
-    if-nez v1, :cond_10
-
-    .line 243
-    .line 244
-    iget-object v1, p0, Lj3g;->e0:Landroid/widget/TextView;
-
-    .line 245
-    .line 246
-    if-eqz v1, :cond_f
-
-    .line 247
-    .line 248
-    invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 249
-    .line 250
-    .line 251
-    goto :goto_8
-
-    .line 252
-    :cond_f
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 253
-    .line 254
-    .line 255
-    throw v3
-
-    .line 256
-    :cond_10
-    :goto_8
-    if-eqz p2, :cond_11
-
-    .line 257
-    .line 258
-    const/4 v0, 0x2
-
-    .line 259
-    goto :goto_9
-
-    .line 260
-    :cond_11
-    sget-object p1, LToi;->a:LToi;
-
-    .line 261
-    .line 262
-    const-string p1, ""
-
-    .line 263
-    .line 264
-    invoke-static {v5, p1, v8, v3}, LToi;->m(Ljava/lang/String;Ljava/lang/String;ZLjava/util/LinkedHashMap;)Z
-
-    .line 265
-    .line 266
-    .line 267
-    move-result p1
-
-    .line 268
-    if-eqz p1, :cond_12
-
-    .line 269
-    .line 270
-    invoke-static {v7}, LR4i;->w1(Ljava/lang/CharSequence;)Z
-
-    .line 271
-    .line 272
-    .line 273
-    move-result p1
-
-    .line 274
-    if-eqz p1, :cond_12
-
-    .line 275
-    .line 276
-    goto :goto_9
-
-    .line 277
-    :cond_12
-    const/4 v0, 0x0
-
-    .line 278
-    :goto_9
-    iget-object p1, p0, Lj3g;->Z:Lcom/snap/identity/api/sharedui/ProgressButton;
-
-    .line 279
-    .line 280
-    if-eqz p1, :cond_15
-
-    .line 281
-    .line 282
-    invoke-virtual {p1, v0}, LOuh;->b(I)V
-
-    .line 283
-    .line 284
-    .line 285
-    if-eqz v2, :cond_14
-
-    .line 286
-    .line 287
-    invoke-virtual {p0}, LcIj;->r()LWR6;
-
-    .line 288
-    .line 289
-    .line 290
-    move-result-object p1
-
-    .line 291
-    new-instance p2, Lg3g;
-
-    .line 292
-    .line 293
-    iget-object v0, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
-
-    .line 294
-    .line 295
-    if-eqz v0, :cond_13
-
-    .line 296
-    .line 297
-    iget-object v0, v0, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->i0:Landroid/widget/EditText;
-
-    .line 298
-    .line 299
-    invoke-direct {p2, v0}, Lg3g;-><init>(Landroid/widget/EditText;)V
-
-    .line 300
-    .line 301
-    .line 302
-    invoke-interface {p1, p2}, LWR6;->a(Ljava/lang/Object;)V
-
-    .line 303
-    .line 304
-    .line 305
-    goto :goto_a
-
-    .line 306
-    :cond_13
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 307
-    .line 308
-    .line 309
-    throw v3
-
-    .line 310
-    :cond_14
-    :goto_a
-    invoke-virtual {p0}, LcIj;->r()LWR6;
-
-    .line 311
-    .line 312
-    .line 313
-    move-result-object p1
-
-    .line 314
-    new-instance p2, LiO3;
-
-    .line 315
-    .line 316
-    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
-
-    .line 317
-    .line 318
-    .line 319
-    invoke-interface {p1, p2}, LWR6;->a(Ljava/lang/Object;)V
-
-    .line 320
-    .line 321
-    .line 322
-    return-void
-
-    .line 323
-    :cond_15
-    const-string p1, "nextButton"
-
-    .line 324
-    .line 325
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 326
-    .line 327
-    .line 328
-    throw v3
-
-    .line 329
-    :cond_16
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 330
-    .line 331
-    .line 332
-    throw v3
-
-    .line 333
-    :cond_17
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 334
-    .line 335
-    .line 336
-    throw v3
-
-    .line 337
-    :cond_18
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 338
-    .line 339
-    .line 340
-    throw v3
-
-    .line 341
-    :cond_19
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 342
-    .line 343
-    .line 344
-    throw v3
-
-    .line 345
-    :cond_1a
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 346
-    .line 347
-    .line 348
-    throw v3
-
-    .line 349
-    :cond_1b
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 350
-    .line 351
-    .line 352
-    throw v3
-
-    .line 353
-    :cond_1c
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 354
-    .line 355
-    .line 356
-    throw v3
-
-    .line 357
-    :cond_1d
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 358
-    .line 359
-    .line 360
-    throw v3
-
-    .line 361
-    :cond_1e
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 362
-    .line 363
-    .line 364
-    throw v3
+    return v0
 .end method
 
-.method public final u(Landroid/view/View;)V
-    .locals 10
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
     .line 1
-    const v0, 0x7f0b1079
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    .line 4
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    const-string v1, "SelectStoryNotesViewerSearch(_id="
 
+    .line 4
     .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 6
     .line 7
-    move-result-object v0
-
     .line 8
-    check-cast v0, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    iget-wide v1, p0, Lj3g;->a:J
 
     .line 9
     .line 10
-    iput-object v0, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    const v0, 0x7f0b0e6f
-
     .line 13
+    const-string v1, ", isScreenShotted="
+
     .line 14
     .line 15
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    iget-boolean v1, p0, Lj3g;->b:Z
 
     .line 19
-    check-cast v0, Lcom/snap/identity/api/sharedui/ProgressButton;
-
     .line 20
-    .line 21
-    iput-object v0, p0, Lj3g;->Z:Lcom/snap/identity/api/sharedui/ProgressButton;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
+    .line 21
     .line 22
     .line 23
-    const v0, 0x7f0b1070
+    const-string v1, ", isSaved="
 
     .line 24
     .line 25
-    .line 26
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 26
     .line 27
     .line 28
-    .line 29
-    move-result-object v0
+    iget-boolean v1, p0, Lj3g;->c:Z
 
+    .line 29
     .line 30
-    check-cast v0, Landroid/widget/TextView;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
-    iput-object v0, p0, Lj3g;->X:Landroid/widget/TextView;
-
     .line 33
+    const-string v1, ", viewerUserId="
+
     .line 34
-    iget-object v0, p0, Lj3g;->Z:Lcom/snap/identity/api/sharedui/ProgressButton;
-
     .line 35
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 36
-    const/4 v1, 0x0
-
     .line 37
-    if-eqz v0, :cond_1
-
     .line 38
+    iget-object v1, p0, Lj3g;->d:Ljava/lang/String;
+
     .line 39
-    new-instance v2, LIFe;
-
     .line 40
-    .line 41
-    const/16 v3, 0x16
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 41
     .line 42
     .line 43
-    invoke-direct {v2, v3, p0}, LIFe;-><init>(ILjava/lang/Object;)V
+    const-string v1, ", friendDisplayName="
 
     .line 44
     .line 45
-    .line 46
-    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 46
     .line 47
     .line 48
+    iget-object v1, p0, Lj3g;->e:Ljava/lang/String;
+
     .line 49
-    iget-object v0, p0, Lj3g;->Y:Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;
-
     .line 50
-    .line 51
-    if-eqz v0, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 51
     .line 52
     .line 53
-    new-instance v2, LmXe;
+    const-string v1, ", friendUserId="
 
     .line 54
     .line 55
-    const-class v5, Lj3g;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 56
     .line 57
-    const-string v6, "onPhonePickerData"
-
     .line 58
-    .line 59
-    const/4 v3, 0x2
+    iget-object v1, p0, Lj3g;->f:Ljava/lang/String;
 
+    .line 59
     .line 60
-    const-string v7, "onPhonePickerData(Ljava/lang/String;Ljava/lang/String;)V"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 61
     .line 62
-    const/4 v8, 0x0
-
     .line 63
-    const/4 v9, 0x6
+    const-string v1, ", friendUsername="
 
     .line 64
-    move-object v4, p0
-
     .line 65
-    invoke-direct/range {v2 .. v9}, LmXe;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 66
     .line 67
     .line 68
-    iput-object v2, v0, Lcom/snap/identity/ui/shared/phonenumber/PhonePickerView;->a:Ljava/lang/Object;
+    iget-object v1, p0, Lj3g;->g:LsPj;
 
     .line 69
     .line 70
-    const v0, 0x7f0b1468
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 71
     .line 72
     .line 73
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    const-string v1, ", friendBitmojiAvatarId="
 
     .line 74
     .line 75
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 76
-    move-result-object p1
-
     .line 77
-    check-cast p1, Landroid/widget/TextView;
-
     .line 78
+    iget-object v1, p0, Lj3g;->h:Ljava/lang/String;
+
     .line 79
-    iput-object p1, v4, Lj3g;->e0:Landroid/widget/TextView;
-
     .line 80
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 81
-    return-void
-
     .line 82
-    :cond_0
-    move-object v4, p0
-
     .line 83
-    const-string p1, "phonePickerView"
+    const-string v1, ", friendBitmojiSelfieId="
 
     .line 84
     .line 85
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 86
     .line 87
     .line 88
-    throw v1
+    iget-object v1, p0, Lj3g;->i:Ljava/lang/String;
 
     .line 89
-    :cond_1
-    move-object v4, p0
-
     .line 90
-    const-string p1, "nextButton"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 91
     .line 92
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 93
+    const-string v1, ", friendLinkType="
+
     .line 94
     .line 95
-    throw v1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    .line 98
+    iget-object v1, p0, Lj3g;->j:LfT7;
+
+    .line 99
+    .line 100
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 101
+    .line 102
+    .line 103
+    const-string v1, ", storyMuted="
+
+    .line 104
+    .line 105
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 106
+    .line 107
+    .line 108
+    iget-object v1, p0, Lj3g;->k:Ljava/lang/Boolean;
+
+    .line 109
+    .line 110
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 111
+    .line 112
+    .line 113
+    const-string v1, ", storyRowId="
+
+    .line 114
+    .line 115
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 116
+    .line 117
+    .line 118
+    iget-object v1, p0, Lj3g;->l:Ljava/lang/Long;
+
+    .line 119
+    .line 120
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 121
+    .line 122
+    .line 123
+    const-string v1, ", storyViewed="
+
+    .line 124
+    .line 125
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 126
+    .line 127
+    .line 128
+    iget-object v1, p0, Lj3g;->m:Ljava/lang/Boolean;
+
+    .line 129
+    .line 130
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 131
+    .line 132
+    .line 133
+    const-string v1, ", storyLatestTimestamp="
+
+    .line 134
+    .line 135
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 136
+    .line 137
+    .line 138
+    iget-object v1, p0, Lj3g;->n:Ljava/lang/Long;
+
+    .line 139
+    .line 140
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 141
+    .line 142
+    .line 143
+    const-string v1, ", storyViewTimestamp="
+
+    .line 144
+    .line 145
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 146
+    .line 147
+    .line 148
+    iget-object v1, p0, Lj3g;->o:Ljava/lang/Long;
+
+    .line 149
+    .line 150
+    const-string v2, ")"
+
+    .line 151
+    .line 152
+    invoke-static {v0, v1, v2}, Lgn;->i(Ljava/lang/StringBuilder;Ljava/lang/Long;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object v0
+
+    .line 156
+    return-object v0
 .end method

@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'PROFILE_SNAP\':0,\'MEMORIES_SNAP\':1,\'MEDIA_LIBRARY_ITEM\':2,\'ADS_API_MEDIA\':3,\'UNSET_MEDIA_PICKER\':4"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

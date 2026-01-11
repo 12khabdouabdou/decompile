@@ -33,7 +33,7 @@
 
 .field public Z:I
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/functions/Function;
 
@@ -53,7 +53,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/functions/Function;II)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;II)V
     .locals 1
 
     .line 1
@@ -62,7 +62,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a:Lmvi;
 
     .line 5
     .line 6
@@ -203,7 +203,7 @@
     return-void
 .end method
 
-.method public final b(ZZLV6i;Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;)Z
+.method public final c(ZZLmvi;Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;)Z
     .locals 2
 
     .line 1
@@ -279,7 +279,7 @@
     .line 36
     .line 37
     .line 38
-    invoke-interface {p3, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p3, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 39
     .line 40
@@ -297,7 +297,7 @@
     .line 45
     .line 46
     .line 47
-    invoke-interface {p3}, LV6i;->onComplete()V
+    invoke-interface {p3}, Lmvi;->onComplete()V
 
     .line 48
     .line 49
@@ -312,7 +312,47 @@
     return p1
 .end method
 
-.method public final c()V
+.method public final cancel()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    iput-boolean v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->f0:Z
+
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a()V
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->d()V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public final clear()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->t:Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;->clear()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final d()V
     .locals 14
 
     .line 1
@@ -344,7 +384,7 @@
 
     .line 13
     .line 14
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a:Lmvi;
 
     .line 15
     .line 16
@@ -395,7 +435,7 @@
     .line 37
     .line 38
     .line 39
-    invoke-interface {v0, v3}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, v3}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 40
     .line 41
@@ -423,7 +463,7 @@
     const/4 v5, 0x0
 
     .line 52
-    invoke-interface {v0, v5}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, v5}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 53
     .line 54
@@ -437,7 +477,7 @@
 
     .line 58
     .line 59
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 60
     .line 61
@@ -466,7 +506,7 @@
     .line 71
     .line 72
     :cond_6
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a:Lmvi;
 
     .line 73
     .line 74
@@ -533,7 +573,7 @@
 
     .line 101
     :goto_1
-    invoke-virtual {p0, v11, v13, v0, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->b(ZZLV6i;Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;)Z
+    invoke-virtual {p0, v11, v13, v0, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->c(ZZLmvi;Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;)Z
 
     .line 102
     .line 103
@@ -584,7 +624,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 123
-    invoke-interface {v0, v10}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v0, v10}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 124
     .line 125
@@ -643,7 +683,7 @@
     move-result-object v1
 
     .line 153
-    invoke-interface {v0, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 154
     .line 155
@@ -669,7 +709,7 @@
     move-result v11
 
     .line 165
-    invoke-virtual {p0, v10, v11, v0, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->b(ZZLV6i;Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;)Z
+    invoke-virtual {p0, v10, v11, v0, v2}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->c(ZZLmvi;Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;)Z
 
     .line 166
     .line 167
@@ -740,46 +780,6 @@
     return-void
 .end method
 
-.method public final cancel()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->f0:Z
-
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->a()V
-
-    .line 5
-    .line 6
-    .line 7
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->c()V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-.end method
-
-.method public final clear()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->t:Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/operators/SpscLinkedArrayQueue;->clear()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
 .method public final isEmpty()Z
     .locals 1
 
@@ -824,7 +824,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->c()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableCombineLatest$CombineLatestCoordinator;->d()V
 
     .line 13
     .line 14
@@ -896,7 +896,7 @@
     return-object v0
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1
@@ -928,12 +928,12 @@
     return p1
 .end method
 
-.method public subscribe([LZne;I)V
+.method public subscribe([LSFe;I)V
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
-            "LZne;",
+            "LSFe;",
             "I)V"
         }
     .end annotation
@@ -979,7 +979,7 @@
 
     .line 18
     .line 19
-    invoke-interface {v2, v3}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v2, v3}, LSFe;->subscribe(Lmvi;)V
 
     .line 20
     .line 21

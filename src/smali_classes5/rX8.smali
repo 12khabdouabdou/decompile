@@ -1,85 +1,110 @@
 .class public final LrX8;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/snap/impala/snappro/snapinsights/IOverlayActionHandling;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final a:Lkotlin/jvm/functions/Function0;
+.field public final synthetic a:I
+
+.field public final synthetic b:LsX8;
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function0;)V
+.method public synthetic constructor <init>(LsX8;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function0;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LrX8;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LrX8;->a:Lkotlin/jvm/functions/Function0;
+    iput-object p1, p0, LrX8;->b:LsX8;
 
-    .line 5
-    .line 6
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public presentInsights()V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    iget-object v0, p0, LrX8;->a:Lkotlin/jvm/functions/Function0;
+    iget v0, p0, LrX8;->a:I
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
-
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
-
-    .line 1
-    sget-object v0, LzB3;->n:LyB3;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    sget-object v0, LyB3;->b:LzB3;
+    check-cast p1, Ljava/lang/Number;
 
     .line 7
     .line 8
-    const-class v1, Lcom/snap/impala/snappro/snapinsights/IOverlayActionHandling;
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     .line 9
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
-
     .line 11
+    iget-object p1, p0, LrX8;->b:LsX8;
+
     .line 12
     .line 13
-    move-result p1
+    iget p1, p1, LsX8;->a:I
 
     .line 14
-    return p1
+    .line 15
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    return-object p1
+
+    .line 20
+    :pswitch_0
+    check-cast p1, Ljava/lang/Number;
+
+    .line 21
+    .line 22
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
+
+    .line 23
+    .line 24
+    .line 25
+    iget-object p1, p0, LrX8;->b:LsX8;
+
+    .line 26
+    .line 27
+    iget p1, p1, LsX8;->a:I
+
+    .line 28
+    .line 29
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    return-object p1
+
+    .line 34
+    nop
+
+    .line 35
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

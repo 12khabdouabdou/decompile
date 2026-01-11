@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LZz3;
+.implements LsD3;
 
 
 # instance fields
@@ -13,14 +13,14 @@
 
 .field public c:Lkotlin/jvm/functions/Function1;
 
-.field public clock:LB73;
+.field public clock:LR93;
 
-.field public configProvider:LpC3;
+.field public configProvider:LOF3;
 
-.field public contentResolver:Lbke;
+.field public contentResolver:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
@@ -29,19 +29,19 @@
 
 .field public final f0:Landroid/widget/FrameLayout;
 
-.field public g0:LLrg;
+.field public g0:LRMg;
 
-.field public grapheneProvider:Lbke;
+.field public grapheneProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
 .field public final h0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public i0:LZAj;
+.field public i0:Lq0k;
 
 .field public j0:Lio/reactivex/rxjava3/core/Observable;
 
@@ -49,25 +49,25 @@
 
 .field public l0:Z
 
-.field public schedulers:Lzre;
+.field public schedulers:LlJe;
 
-.field public singleSnapPlayerBuilder:Lbke;
+.field public singleSnapPlayerBuilder:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public snapDocMediaResolverProvider:Lbke;
+.field public snapDocMediaResolverProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public storyManifestResolver:LKUh;
+.field public storyManifestResolver:Lhji;
 
 .field public final t:Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;
 
@@ -89,7 +89,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -110,7 +110,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -142,7 +142,7 @@
 
     check-cast p1, Landroid/view/LayoutInflater;
 
-    const p2, 0x7f0e0338
+    const p2, 0x7f0e0355
 
     const/4 p3, 0x0
 
@@ -154,7 +154,7 @@
     .line 9
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    const p2, 0x7f0b1a4e
+    const p2, 0x7f0b1bb7
 
     .line 10
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -165,7 +165,7 @@
 
     iput-object p2, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->t:Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;
 
-    const p2, 0x7f0b04ef
+    const p2, 0x7f0b057d
 
     .line 11
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -176,7 +176,7 @@
 
     iput-object p2, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->e0:Lcom/snap/imageloading/view/SnapImageView;
 
-    const p2, 0x7f0b04da
+    const p2, 0x7f0b0568
 
     .line 12
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -190,7 +190,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -213,11 +213,11 @@
     return-void
 .end method
 
-.method public static final access$bindCustomPlayer(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;LjCg;Ljava/lang/String;)V
+.method public static final access$bindCustomPlayer(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;LvXg;Ljava/lang/String;)V
     .locals 9
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSnapDocMediaResolverProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSnapDocMediaResolverProvider()LDBe;
 
     .line 2
     .line 3
@@ -225,7 +225,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -236,7 +236,7 @@
     move-object v1, v0
 
     .line 10
-    check-cast v1, LbDg;
+    check-cast v1, LpYg;
 
     .line 11
     .line 12
@@ -249,27 +249,27 @@
     .line 15
     .line 16
     .line 17
-    new-instance v3, LzP1;
+    new-instance v3, LgT1;
 
     .line 18
     .line 19
     const/4 p1, 0x7
 
     .line 20
-    invoke-direct {v3, p1}, LzP1;-><init>(I)V
+    invoke-direct {v3, p1}, LgT1;-><init>(I)V
 
     .line 21
     .line 22
     .line 23
-    sget-object p1, LfE1;->n0:LfE1;
+    sget-object p1, LvH1;->n0:LvH1;
 
     .line 24
     .line 25
-    iget-object p1, p1, LcSa;->a:Lin0;
+    iget-object p1, p1, LL4b;->a:LAp0;
 
     .line 26
     .line 27
-    iget-object v4, p1, Lin0;->t:Lbwh;
+    iget-object v4, p1, LAp0;->X:LcUh;
 
     .line 28
     .line 29
@@ -286,7 +286,7 @@
     move-object v5, p2
 
     .line 34
-    invoke-static/range {v1 .. v8}, Lvrk;->j(LbDg;Lio/reactivex/rxjava3/internal/operators/single/SingleJust;LFU3;LQ1j;Ljava/lang/String;Ljava/util/Set;ZI)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
+    invoke-static/range {v1 .. v8}, LdQk;->k(LpYg;Lio/reactivex/rxjava3/internal/operators/single/SingleJust;LZY3;Lcrj;Ljava/lang/String;Ljava/util/Set;ZI)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
 
     .line 35
     .line 36
@@ -294,7 +294,7 @@
     move-result-object p1
 
     .line 38
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()Lzre;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()LlJe;
 
     .line 39
     .line 40
@@ -302,11 +302,11 @@
     move-result-object p2
 
     .line 42
-    check-cast p2, LBre;
+    check-cast p2, LnJe;
 
     .line 43
     .line 44
-    invoke-virtual {p2}, LBre;->d()LF06;
+    invoke-virtual {p2}, LnJe;->d()LA36;
 
     .line 45
     .line 46
@@ -323,7 +323,7 @@
     .line 51
     .line 52
     .line 53
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()Lzre;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()LlJe;
 
     .line 54
     .line 55
@@ -331,11 +331,11 @@
     move-result-object p1
 
     .line 57
-    check-cast p1, LBre;
+    check-cast p1, LnJe;
 
     .line 58
     .line 59
-    invoke-virtual {p1}, LBre;->i()Lgn0;
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
 
     .line 60
     .line 61
@@ -352,15 +352,15 @@
     .line 66
     .line 67
     .line 68
-    new-instance p1, LEsj;
+    new-instance p1, Lx3j;
 
     .line 69
     .line 70
-    const/16 v0, 0x8
+    const/16 v0, 0x1d
 
     .line 71
     .line 72
-    invoke-direct {p1, v0, p0}, LEsj;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v0, p0}, Lx3j;-><init>(ILjava/lang/Object;)V
 
     .line 73
     .line 74
@@ -374,19 +374,19 @@
     .line 78
     .line 79
     .line 80
-    new-instance p1, LVAj;
+    new-instance p1, Lm0k;
 
     .line 81
     .line 82
     const/4 p2, 0x3
 
     .line 83
-    invoke-direct {p1, p0, p2}, LVAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {p1, p0, p2}, Lm0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 84
     .line 85
     .line 86
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Completable;->j(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 87
     .line 88
@@ -394,19 +394,19 @@
     move-result-object p1
 
     .line 90
-    new-instance p2, LUAj;
+    new-instance p2, Ll0k;
 
     .line 91
     .line 92
     const/4 v0, 0x3
 
     .line 93
-    invoke-direct {p2, p0, v0}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {p2, p0, v0}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 94
     .line 95
     .line 96
-    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 97
     .line 98
@@ -414,19 +414,19 @@
     move-result-object p1
 
     .line 100
-    new-instance p2, LVAj;
+    new-instance p2, Lm0k;
 
     .line 101
     .line 102
     const/4 v0, 0x4
 
     .line 103
-    invoke-direct {p2, p0, v0}, LVAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {p2, p0, v0}, Lm0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 104
     .line 105
     .line 106
-    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/core/Completable;->j(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 107
     .line 108
@@ -434,26 +434,26 @@
     move-result-object p1
 
     .line 110
-    new-instance p2, LVAj;
+    new-instance p2, Lm0k;
 
     .line 111
     .line 112
     const/4 v0, 0x5
 
     .line 113
-    invoke-direct {p2, p0, v0}, LVAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {p2, p0, v0}, Lm0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 114
     .line 115
     .line 116
-    new-instance v0, LUAj;
+    new-instance v0, Ll0k;
 
     .line 117
     .line 118
     const/4 v1, 0x4
 
     .line 119
-    invoke-direct {v0, p0, v1}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v0, p0, v1}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 120
     .line 121
@@ -470,7 +470,7 @@
 
     .line 127
     .line 128
-    invoke-virtual {p0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 129
     .line 130
@@ -478,11 +478,11 @@
     return-void
 .end method
 
-.method public static final access$bindSingleSnapPlayer(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;LOrg;)V
+.method public static final access$bindSingleSnapPlayer(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;LUMg;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 2
     .line 3
@@ -490,7 +490,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSingleSnapPlayerBuilder()Lbke;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSingleSnapPlayerBuilder()LDBe;
 
     .line 6
     .line 7
@@ -498,7 +498,7 @@
     move-result-object v0
 
     .line 9
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 10
     .line 11
@@ -506,11 +506,11 @@
     move-result-object v0
 
     .line 13
-    check-cast v0, LKrg;
+    check-cast v0, LQMg;
 
     .line 14
     .line 15
-    invoke-interface {v0}, LKrg;->a()LLrg;
+    invoke-interface {v0}, LQMg;->a()LRMg;
 
     .line 16
     .line 17
@@ -519,131 +519,130 @@
 
     .line 19
     :cond_0
-    iput-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iput-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 20
     .line 21
-    new-instance v1, Lcgi;
+    new-instance v1, LPSj;
 
     .line 22
     .line 23
-    const/16 v2, 0x17
+    const/4 v2, 0x4
 
     .line 24
-    .line 25
-    invoke-direct {v1, v0, p0, p1, v2}, Lcgi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v1, v0, p0, p1, v2}, LPSj;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 25
     .line 26
     .line 27
-    .line 28
     new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
 
+    .line 28
     .line 29
-    .line 30
     invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;-><init>(Lio/reactivex/rxjava3/core/ObservableOnSubscribe;)V
 
+    .line 30
     .line 31
     .line 32
-    .line 33
-    new-instance v0, LUAj;
+    new-instance v0, Ll0k;
 
+    .line 33
     .line 34
-    .line 35
     const/4 v1, 0x5
 
-    .line 36
-    invoke-direct {v0, p0, v1}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    .line 35
+    invoke-direct {v0, p0, v1}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
+    .line 36
     .line 37
     .line 38
-    .line 39
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
+    .line 39
     .line 40
     .line 41
-    .line 42
     move-result-object p1
+
+    .line 42
+    new-instance v0, Ll0k;
 
     .line 43
-    new-instance v0, LUAj;
-
     .line 44
-    .line 45
     const/4 v1, 0x6
 
-    .line 46
-    invoke-direct {v0, p0, v1}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    .line 45
+    invoke-direct {v0, p0, v1}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
+    .line 46
     .line 47
     .line 48
-    .line 49
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->W(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->Z(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
+    .line 49
     .line 50
     .line 51
-    .line 52
     move-result-object p1
+
+    .line 52
+    new-instance v0, Lm0k;
 
     .line 53
-    new-instance v0, LVAj;
-
     .line 54
-    .line 55
-    invoke-direct {v0, p0, v1}, LVAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v0, p0, v1}, Lm0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
+    .line 55
     .line 56
     .line 57
-    .line 58
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->U(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
 
+    .line 58
     .line 59
     .line 60
-    .line 61
     move-result-object p1
+
+    .line 61
+    new-instance v0, Ll0k;
 
     .line 62
-    new-instance v0, LUAj;
-
     .line 63
-    .line 64
     const/4 v1, 0x7
 
-    .line 65
-    invoke-direct {v0, p0, v1}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    .line 64
+    invoke-direct {v0, p0, v1}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
+    .line 65
     .line 66
     .line 67
-    .line 68
-    new-instance v1, LUAj;
+    new-instance v1, Ll0k;
 
+    .line 68
     .line 69
-    .line 70
     const/16 v2, 0x8
 
+    .line 70
     .line 71
-    .line 72
-    invoke-direct {v1, p0, v2}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v1, p0, v2}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
+    .line 72
     .line 73
     .line 74
-    .line 75
     invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 75
     .line 76
     .line 77
-    .line 78
     move-result-object p1
 
-    .line 79
+    .line 78
     iget-object p0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->h0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 79
     .line 80
-    .line 81
-    invoke-virtual {p0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 81
     .line 82
     .line 83
-    .line 84
     return-void
 .end method
 
@@ -651,7 +650,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 2
     .line 3
@@ -659,33 +658,37 @@
 
     .line 4
     .line 5
-    check-cast v0, Lesg;
+    check-cast v0, LSff;
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Lesg;->b()V
+    invoke-virtual {v0}, LSff;->b()V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {v0}, Lesg;->f()V
+    invoke-virtual {v0}, LSff;->f()V
 
     .line 11
     .line 12
     .line 13
-    iget-object v0, v0, Lesg;->c:Landroid/widget/FrameLayout;
+    iget-object v0, v0, LSff;->Y:Ljava/lang/Object;
 
     .line 14
     .line 15
-    iget-object p0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->f0:Landroid/widget/FrameLayout;
+    check-cast v0, Landroid/widget/FrameLayout;
 
     .line 16
     .line 17
-    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+    iget-object p0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->f0:Landroid/widget/FrameLayout;
 
     .line 18
     .line 19
+    invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
     .line 20
+    .line 21
+    .line 22
     :cond_0
     return-void
 .end method
@@ -701,11 +704,11 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getMeasurement$p(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;)LZAj;
+.method public static final synthetic access$getMeasurement$p(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;)Lq0k;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:LZAj;
+    iget-object p0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:Lq0k;
 
     .line 2
     .line 3
@@ -723,11 +726,11 @@
     return-object p0
 .end method
 
-.method public static final synthetic access$getSingleSnapPlayer$p(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;)LLrg;
+.method public static final synthetic access$getSingleSnapPlayer$p(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;)LRMg;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iget-object p0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 2
     .line 3
@@ -767,11 +770,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$setSingleSnapPlayer$p(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;LLrg;)V
+.method public static final synthetic access$setSingleSnapPlayer$p(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;LRMg;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 2
     .line 3
@@ -827,7 +830,7 @@
 
     .line 4
     .line 5
-    new-instance v1, LUAj;
+    new-instance v1, Ll0k;
 
     .line 6
     .line 7
@@ -835,12 +838,12 @@
 
     .line 8
     .line 9
-    invoke-direct {v1, p0, v2}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v1, p0, v2}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 10
     .line 11
     .line 12
-    sget-object v2, LLhj;->j0:LLhj;
+    sget-object v2, LxNj;->f0:LxNj;
 
     .line 13
     .line 14
@@ -848,7 +851,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0, v1, v2, p0}, LLZj;->v0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    invoke-static {v0, v1, v2, p0}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
     .line 17
     .line 18
@@ -857,8 +860,8 @@
     return-void
 .end method
 
-.method public static final access$toVideoAndOverlayCompletable(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;LPTa;Z)Lio/reactivex/rxjava3/core/Completable;
-    .locals 30
+.method public static final access$toVideoAndOverlayCompletable(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;Lz6b;Z)Lio/reactivex/rxjava3/core/Completable;
+    .locals 35
 
     .line 1
     move-object/from16 v0, p0
@@ -883,15 +886,15 @@
     .line 11
     .line 12
     .line 13
-    new-instance v3, Lz3i;
+    new-instance v3, LR7j;
 
     .line 14
     .line 15
-    const/16 v4, 0x12
+    const/16 v4, 0xc
 
     .line 16
     .line 17
-    invoke-direct {v3, v4, v0}, Lz3i;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v3, v4, v0}, LR7j;-><init>(ILjava/lang/Object;)V
 
     .line 18
     .line 19
@@ -910,7 +913,7 @@
     .line 26
     .line 27
     .line 28
-    sget-object v6, LS3i;->t:LS3i;
+    sget-object v6, Llsi;->t:Llsi;
 
     .line 29
     .line 30
@@ -925,11 +928,11 @@
 
     .line 34
     .line 35
-    iget-object v12, v1, LPTa;->a:Landroid/net/Uri;
+    iget-object v13, v1, Lz6b;->a:Landroid/net/Uri;
 
     .line 36
     .line 37
-    iget-object v5, v1, LPTa;->c:LPb0;
+    iget-object v5, v1, Lz6b;->c:Lae0;
 
     .line 38
     .line 39
@@ -937,7 +940,7 @@
 
     .line 40
     .line 41
-    invoke-interface {v5}, LPb0;->f()LwK0;
+    invoke-interface {v5}, Lae0;->f()LsN0;
 
     .line 42
     .line 43
@@ -945,22 +948,22 @@
     move-result-object v7
 
     .line 45
-    move-object v13, v7
+    move-object v14, v7
 
     .line 46
     goto :goto_0
 
     .line 47
     :cond_0
-    move-object v13, v4
+    move-object v14, v4
 
     .line 48
     :goto_0
-    if-eqz v13, :cond_2
+    if-eqz v14, :cond_2
 
     .line 49
     .line 50
-    new-instance v10, LR3i;
+    new-instance v11, Lksi;
 
     .line 51
     .line 52
@@ -972,19 +975,19 @@
     move-result-object v5
 
     .line 56
-    sget-object v7, LfE1;->n0:LfE1;
+    sget-object v7, LvH1;->n0:LvH1;
 
     .line 57
     .line 58
-    iget-object v7, v7, LcSa;->a:Lin0;
+    iget-object v7, v7, LL4b;->a:LAp0;
 
     .line 59
     .line 60
-    iget-object v7, v7, Lin0;->t:Lbwh;
+    iget-object v7, v7, LAp0;->X:LcUh;
 
     .line 61
     .line 62
-    iget-object v8, v13, LwK0;->b:Ljava/lang/Object;
+    iget-object v8, v14, LsN0;->b:Ljava/lang/Object;
 
     .line 63
     .line 64
@@ -992,20 +995,20 @@
 
     .line 65
     .line 66
-    invoke-direct {v10, v5, v7, v8, v3}, LR3i;-><init>(Ljava/util/List;LQ1j;Ljava/lang/String;I)V
+    invoke-direct {v11, v5, v7, v8, v3}, Lksi;-><init>(Ljava/util/List;Lcrj;Ljava/lang/String;I)V
 
     .line 67
     .line 68
     .line 69
-    iget-object v3, v13, LwK0;->t:Ljava/lang/Object;
+    iget-object v3, v14, LsN0;->t:Ljava/lang/Object;
 
     .line 70
     .line 71
-    check-cast v3, LYSb;
+    check-cast v3, LD7c;
 
     .line 72
     .line 73
-    instance-of v5, v3, LYSb;
+    instance-of v5, v3, LD7c;
 
     .line 74
     .line 75
@@ -1024,261 +1027,263 @@
 
     .line 80
     :goto_1
-    new-instance v5, LE3i;
+    new-instance v5, LWri;
 
     .line 81
     .line 82
-    const/4 v7, 0x0
-
-    .line 83
     const/4 v9, 0x0
 
+    .line 83
+    const/4 v10, 0x0
+
     .line 84
-    const/16 v11, 0x16
+    const/4 v7, 0x0
 
     .line 85
-    .line 86
-    invoke-direct/range {v5 .. v11}, LE3i;-><init>(LS3i;Ljava/util/Map;LYSb;LxKd;LR3i;I)V
+    const/16 v12, 0x36
 
+    .line 86
     .line 87
+    invoke-direct/range {v5 .. v12}, LWri;-><init>(Llsi;Ljava/util/Map;LD7c;LS1e;Ljava/lang/Boolean;Lksi;I)V
+
     .line 88
     .line 89
+    .line 90
     move-object v10, v5
 
-    .line 90
+    .line 91
     goto :goto_2
 
-    .line 91
+    .line 92
     :cond_2
     move-object v10, v4
 
-    .line 92
-    :goto_2
-    if-eqz v13, :cond_3
-
     .line 93
-    .line 94
-    iget-object v3, v13, LwK0;->c:Ljava/lang/Object;
+    :goto_2
+    if-eqz v14, :cond_3
 
+    .line 94
     .line 95
+    iget-object v3, v14, LsN0;->c:Ljava/lang/Object;
+
     .line 96
+    .line 97
     move-object v4, v3
 
-    .line 97
-    check-cast v4, LjN6;
-
     .line 98
+    check-cast v4, LUQ6;
+
     .line 99
+    .line 100
     :cond_3
     move-object v8, v4
 
-    .line 100
-    iget-object v3, v0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
-
     .line 101
+    iget-object v3, v0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
+
     .line 102
+    .line 103
     if-nez v3, :cond_4
 
-    .line 103
     .line 104
-    invoke-virtual {v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSingleSnapPlayerBuilder()Lbke;
-
     .line 105
+    invoke-virtual {v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSingleSnapPlayerBuilder()LDBe;
+
     .line 106
     .line 107
-    move-result-object v3
-
     .line 108
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
+    move-result-object v3
 
     .line 109
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
+
     .line 110
     .line 111
-    move-result-object v3
-
     .line 112
-    check-cast v3, LKrg;
+    move-result-object v3
 
     .line 113
-    .line 114
-    invoke-interface {v3}, LKrg;->a()LLrg;
+    check-cast v3, LQMg;
 
+    .line 114
     .line 115
+    invoke-interface {v3}, LQMg;->a()LRMg;
+
     .line 116
     .line 117
+    .line 118
     move-result-object v3
 
-    .line 118
-    :cond_4
-    iput-object v3, v0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
-
     .line 119
+    :cond_4
+    iput-object v3, v0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
+
     .line 120
+    .line 121
     new-instance v4, Ljava/util/ArrayList;
 
-    .line 121
     .line 122
+    .line 123
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 123
     .line 124
     .line 125
-    new-instance v5, Lfsg;
-
     .line 126
+    new-instance v5, LkNg;
+
     .line 127
-    sget-object v13, Lcom/snapchat/client/mdp_common/MediaType;->VIDEO:Lcom/snapchat/client/mdp_common/MediaType;
-
     .line 128
+    sget-object v12, Lcom/snapchat/client/mdp_common/MediaType;->VIDEO:Lcom/snapchat/client/mdp_common/MediaType;
+
     .line 129
-    new-instance v6, LIWc;
-
     .line 130
-    .line 131
-    invoke-virtual {v12}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    new-instance v6, LDbd;
 
+    .line 131
     .line 132
+    invoke-virtual {v13}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
     .line 133
     .line 134
+    .line 135
     move-result-object v7
 
-    .line 135
+    .line 136
     const/16 v11, 0x34
 
-    .line 136
     .line 137
-    const/4 v9, 0x0
-
     .line 138
-    invoke-direct/range {v6 .. v11}, LIWc;-><init>(Ljava/lang/String;LjN6;ZLE3i;I)V
+    const/4 v9, 0x0
 
     .line 139
+    invoke-direct/range {v6 .. v11}, LDbd;-><init>(Ljava/lang/String;LUQ6;ZLWri;I)V
+
     .line 140
     .line 141
+    .line 142
     const/4 v7, 0x2
 
-    .line 142
-    invoke-direct {v5, v7, v13, v6}, Lfsg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LIWc;)V
-
     .line 143
+    invoke-direct {v5, v7, v12, v6}, LkNg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LDbd;)V
+
     .line 144
     .line 145
+    .line 146
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 146
     .line 147
     .line 148
-    iget-object v1, v1, LPTa;->b:Landroid/net/Uri;
-
     .line 149
+    iget-object v1, v1, Lz6b;->b:Landroid/net/Uri;
+
     .line 150
+    .line 151
     if-eqz v1, :cond_5
 
-    .line 151
     .line 152
-    new-instance v5, Lfsg;
-
     .line 153
+    new-instance v5, LkNg;
+
     .line 154
+    .line 155
     sget-object v6, Lcom/snapchat/client/mdp_common/MediaType;->IMAGE:Lcom/snapchat/client/mdp_common/MediaType;
 
-    .line 155
     .line 156
-    new-instance v7, LIWc;
-
     .line 157
+    new-instance v7, LDbd;
+
     .line 158
+    .line 159
     invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-    .line 159
     .line 160
     .line 161
+    .line 162
     move-result-object v8
 
-    .line 162
+    .line 163
     const/4 v10, 0x0
 
-    .line 163
+    .line 164
     const/4 v11, 0x0
 
-    .line 164
+    .line 165
     const/4 v9, 0x0
 
-    .line 165
+    .line 166
     const/16 v12, 0x3e
 
-    .line 166
     .line 167
-    invoke-direct/range {v7 .. v12}, LIWc;-><init>(Ljava/lang/String;LjN6;ZLE3i;I)V
-
     .line 168
+    invoke-direct/range {v7 .. v12}, LDbd;-><init>(Ljava/lang/String;LUQ6;ZLWri;I)V
+
     .line 169
     .line 170
+    .line 171
     const/4 v1, 0x4
 
-    .line 171
-    invoke-direct {v5, v1, v6, v7}, Lfsg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LIWc;)V
-
     .line 172
+    invoke-direct {v5, v1, v6, v7}, LkNg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LDbd;)V
+
     .line 173
     .line 174
+    .line 175
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 175
     .line 176
     .line 177
-    :cond_5
-    new-instance v1, Lgsg;
-
     .line 178
+    :cond_5
+    new-instance v1, LlNg;
+
     .line 179
-    sget-object v5, LfE1;->n0:LfE1;
-
     .line 180
+    sget-object v5, LvH1;->n0:LvH1;
+
     .line 181
-    iget-object v5, v5, LcSa;->a:Lin0;
-
     .line 182
+    iget-object v5, v5, LL4b;->a:LAp0;
+
     .line 183
-    iget-object v5, v5, Lin0;->t:Lbwh;
-
     .line 184
+    iget-object v5, v5, LAp0;->X:LcUh;
+
     .line 185
-    new-instance v6, LNrg;
-
     .line 186
+    new-instance v6, LTMg;
+
     .line 187
-    sget-object v7, LExd;->c:LExd;
-
     .line 188
+    sget-object v7, LOOd;->c:LOOd;
+
     .line 189
-    sget-object v8, LbV3;->l0:LbV3;
-
     .line 190
-    .line 191
-    invoke-direct {v6, v7, v8}, LNrg;-><init>(LExd;LbV3;)V
+    sget-object v8, LvZ3;->l0:LvZ3;
 
+    .line 191
     .line 192
+    invoke-direct {v6, v7, v8}, LTMg;-><init>(LOOd;LvZ3;)V
+
     .line 193
     .line 194
+    .line 195
     const-string v7, "chatMedia"
 
-    .line 195
     .line 196
-    invoke-direct {v1, v5, v7, v4, v6}, Lgsg;-><init>(LQ1j;Ljava/lang/String;Ljava/util/List;LNrg;)V
-
     .line 197
+    invoke-direct {v1, v5, v7, v4, v6}, LlNg;-><init>(Lcrj;Ljava/lang/String;Ljava/util/List;LTMg;)V
+
     .line 198
     .line 199
-    new-instance v4, Lwfi;
-
     .line 200
-    .line 201
-    const/16 v5, 0x17
+    new-instance v4, LgVj;
 
+    .line 201
     .line 202
+    const/4 v5, 0x2
+
     .line 203
-    invoke-direct {v4, v3, v0, v1, v5}, Lwfi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v4, v3, v0, v1, v5}, LgVj;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 204
     .line 205
@@ -1302,15 +1307,15 @@
     .line 215
     .line 216
     :cond_6
-    iget-object v12, v1, LPTa;->a:Landroid/net/Uri;
+    iget-object v13, v1, Lz6b;->a:Landroid/net/Uri;
 
     .line 217
     .line 218
-    iget-object v5, v1, LPTa;->c:LPb0;
+    iget-object v5, v1, Lz6b;->c:Lae0;
 
     .line 219
     .line 220
-    iget-object v13, v0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->t:Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;
+    iget-object v14, v0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->t:Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/TopFocusedVideoView;
 
     .line 221
     .line 222
@@ -1318,27 +1323,27 @@
 
     .line 223
     .line 224
-    invoke-interface {v5}, LPb0;->f()LwK0;
+    invoke-interface {v5}, Lae0;->f()LsN0;
 
     .line 225
     .line 226
     .line 227
-    move-result-object v14
+    move-result-object v15
 
     .line 228
-    if-eqz v14, :cond_8
+    if-eqz v15, :cond_8
 
     .line 229
     .line 230
-    iget-object v7, v14, LwK0;->t:Ljava/lang/Object;
+    iget-object v7, v15, LsN0;->t:Ljava/lang/Object;
 
     .line 231
     .line 232
-    check-cast v7, LYSb;
+    check-cast v7, LD7c;
 
     .line 233
     .line 234
-    instance-of v8, v7, LYSb;
+    instance-of v8, v7, LD7c;
 
     .line 235
     .line 236
@@ -1357,7 +1362,7 @@
 
     .line 241
     :goto_3
-    new-instance v10, LR3i;
+    new-instance v11, Lksi;
 
     .line 242
     .line 243
@@ -1369,19 +1374,19 @@
     move-result-object v4
 
     .line 247
-    sget-object v5, LfE1;->n0:LfE1;
+    sget-object v5, LvH1;->n0:LvH1;
 
     .line 248
     .line 249
-    iget-object v5, v5, LcSa;->a:Lin0;
+    iget-object v5, v5, LL4b;->a:LAp0;
 
     .line 250
     .line 251
-    iget-object v5, v5, Lin0;->t:Lbwh;
+    iget-object v5, v5, LAp0;->X:LcUh;
 
     .line 252
     .line 253
-    iget-object v7, v14, LwK0;->b:Ljava/lang/Object;
+    iget-object v7, v15, LsN0;->b:Ljava/lang/Object;
 
     .line 254
     .line 255
@@ -1389,332 +1394,371 @@
 
     .line 256
     .line 257
-    invoke-direct {v10, v4, v5, v7, v3}, LR3i;-><init>(Ljava/util/List;LQ1j;Ljava/lang/String;I)V
+    invoke-direct {v11, v4, v5, v7, v3}, Lksi;-><init>(Ljava/util/List;Lcrj;Ljava/lang/String;I)V
 
     .line 258
     .line 259
     .line 260
-    new-instance v5, LE3i;
+    new-instance v5, LWri;
 
     .line 261
     .line 262
-    const/4 v7, 0x0
-
-    .line 263
     const/4 v9, 0x0
 
+    .line 263
+    const/4 v10, 0x0
+
     .line 264
-    const/16 v11, 0x16
+    const/4 v7, 0x0
 
     .line 265
-    .line 266
-    invoke-direct/range {v5 .. v11}, LE3i;-><init>(LS3i;Ljava/util/Map;LYSb;LxKd;LR3i;I)V
+    const/16 v12, 0x36
 
+    .line 266
     .line 267
+    invoke-direct/range {v5 .. v12}, LWri;-><init>(Llsi;Ljava/util/Map;LD7c;LS1e;Ljava/lang/Boolean;Lksi;I)V
+
     .line 268
     .line 269
-    sget-object v3, LXwd;->o:LXwd;
-
     .line 270
-    .line 271
-    invoke-virtual {v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getContentResolver()Lbke;
+    sget-object v3, LhOd;->s:LhOd;
 
+    .line 271
     .line 272
+    invoke-virtual {v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getContentResolver()LDBe;
+
     .line 273
     .line 274
-    move-result-object v19
-
     .line 275
-    iget-object v4, v3, LXwd;->a:LaI0;
+    move-result-object v22
 
     .line 276
+    iget-object v4, v3, LhOd;->a:LvZ3;
+
     .line 277
-    new-instance v15, LXwd;
-
     .line 278
+    new-instance v16, LhOd;
+
     .line 279
-    iget-object v6, v3, LXwd;->k:Lbke;
-
     .line 280
+    iget-object v6, v3, LhOd;->o:LDBe;
+
     .line 281
-    iget-object v7, v3, LXwd;->l:Lr1f;
-
     .line 282
+    iget-object v7, v3, LhOd;->p:Lujf;
+
     .line 283
-    iget-object v8, v3, LXwd;->b:Lq06;
-
     .line 284
+    iget-object v8, v3, LhOd;->b:LSK0;
+
     .line 285
-    iget-object v9, v3, LXwd;->c:LiYg;
-
     .line 286
+    iget-object v9, v3, LhOd;->c:Lm36;
+
     .line 287
-    iget-object v10, v3, LXwd;->e:Lt3i;
-
     .line 288
+    iget-object v10, v3, LhOd;->d:LVjh;
+
     .line 289
-    iget-object v11, v3, LXwd;->f:Lbke;
-
     .line 290
+    iget-object v11, v3, LhOd;->e:Lta0;
+
     .line 291
-    move-object/from16 v16, v4
-
     .line 292
+    iget-object v12, v3, LhOd;->g:LMri;
+
     .line 293
-    iget-object v4, v3, LXwd;->g:Lm3d;
-
     .line 294
+    move-object/from16 v17, v4
+
     .line 295
-    move-object/from16 v22, v4
-
     .line 296
+    iget-object v4, v3, LhOd;->h:LDBe;
+
     .line 297
-    iget-object v4, v3, LXwd;->h:LjOg;
-
     .line 298
-    .line 299
-    move-object/from16 v23, v4
-
-    .line 300
-    .line 301
-    iget-object v4, v3, LXwd;->i:Lbke;
-
-    .line 302
-    .line 303
     move-object/from16 v24, v4
 
-    .line 304
-    .line 305
-    iget-object v4, v3, LXwd;->j:Lbke;
+    .line 299
+    .line 300
+    iget-object v4, v3, LhOd;->i:Lmid;
 
-    .line 306
-    .line 307
+    .line 301
+    .line 302
     move-object/from16 v25, v4
 
+    .line 303
+    .line 304
+    iget-object v4, v3, LhOd;->j:Lmid;
+
+    .line 305
+    .line 306
+    move-object/from16 v26, v4
+
+    .line 307
     .line 308
+    iget-object v4, v3, LhOd;->k:LX9h;
+
     .line 309
-    iget-boolean v4, v3, LXwd;->m:Z
-
     .line 310
+    move-object/from16 v27, v4
+
     .line 311
-    iget-object v3, v3, LXwd;->n:LrZ2;
-
     .line 312
+    iget-object v4, v3, LhOd;->l:LDBe;
+
     .line 313
-    move-object/from16 v29, v3
-
     .line 314
+    move-object/from16 v28, v4
+
     .line 315
-    move/from16 v28, v4
-
     .line 316
+    iget-object v4, v3, LhOd;->m:LDBe;
+
     .line 317
-    move-object/from16 v26, v6
-
     .line 318
+    move-object/from16 v29, v4
+
     .line 319
-    move-object/from16 v27, v7
-
     .line 320
+    iget-object v4, v3, LhOd;->n:LDBe;
+
     .line 321
-    move-object/from16 v17, v8
-
     .line 322
+    move-object/from16 v30, v4
+
     .line 323
-    move-object/from16 v18, v9
-
     .line 324
+    iget-boolean v4, v3, LhOd;->q:Z
+
     .line 325
-    move-object/from16 v20, v10
-
     .line 326
+    iget-object v3, v3, LhOd;->r:LW13;
+
     .line 327
-    move-object/from16 v21, v11
-
     .line 328
-    .line 329
-    invoke-direct/range {v15 .. v29}, LXwd;-><init>(LaI0;Lq06;LiYg;Lbke;Lt3i;Lbke;Lm3d;LjOg;Lbke;Lbke;Lbke;Lr1f;ZLrZ2;)V
+    move-object/from16 v34, v3
 
+    .line 329
     .line 330
+    move/from16 v33, v4
+
     .line 331
     .line 332
-    invoke-virtual {v13, v15}, LFui;->n(LXwd;)V
+    move-object/from16 v31, v6
 
     .line 333
     .line 334
+    move-object/from16 v32, v7
+
     .line 335
-    new-instance v7, LuX7;
-
     .line 336
+    move-object/from16 v18, v8
+
     .line 337
-    iget-object v3, v14, LwK0;->c:Ljava/lang/Object;
-
     .line 338
-    .line 339
-    move-object v11, v3
+    move-object/from16 v19, v9
 
+    .line 339
     .line 340
-    check-cast v11, LjN6;
+    move-object/from16 v20, v10
 
     .line 341
     .line 342
-    move-object v9, v12
+    move-object/from16 v21, v11
 
     .line 343
-    const/16 v12, 0xf
-
     .line 344
-    .line 345
-    move-object v10, v5
+    move-object/from16 v23, v12
 
+    .line 345
     .line 346
-    move-object v8, v13
+    invoke-direct/range {v16 .. v34}, LhOd;-><init>(LvZ3;LSK0;Lm36;LVjh;Lta0;LDBe;LMri;LDBe;Lmid;Lmid;LX9h;LDBe;LDBe;LDBe;LDBe;Lujf;ZLW13;)V
 
     .line 347
-    invoke-direct/range {v7 .. v12}, LuX7;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
     .line 348
     .line 349
+    move-object/from16 v3, v16
+
     .line 350
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;
-
     .line 351
-    .line 352
-    invoke-direct {v3, v7}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;-><init>(Lio/reactivex/rxjava3/core/CompletableOnSubscribe;)V
+    invoke-virtual {v14, v3}, LETi;->n(LhOd;)V
 
+    .line 352
     .line 353
     .line 354
-    .line 355
-    goto :goto_4
+    new-instance v7, Llc6;
 
+    .line 355
     .line 356
-    :cond_8
-    move-object v9, v12
+    iget-object v3, v15, LsN0;->c:Ljava/lang/Object;
 
     .line 357
-    move-object v8, v13
-
     .line 358
-    new-instance v7, LuX7;
+    move-object v11, v3
 
     .line 359
+    check-cast v11, LUQ6;
+
     .line 360
-    const/16 v12, 0xf
-
     .line 361
-    .line 362
-    move-object v11, v4
+    const/16 v12, 0x1c
 
+    .line 362
     .line 363
-    move-object v10, v4
+    move-object v10, v5
 
     .line 364
-    invoke-direct/range {v7 .. v12}, LuX7;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    move-object v9, v13
 
     .line 365
-    .line 366
-    .line 367
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;
+    move-object v8, v14
 
+    .line 366
+    invoke-direct/range {v7 .. v12}, Llc6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    .line 367
     .line 368
     .line 369
-    invoke-direct {v3, v7}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;-><init>(Lio/reactivex/rxjava3/core/CompletableOnSubscribe;)V
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;
 
     .line 370
     .line 371
-    .line 372
-    :goto_4
-    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-direct {v3, v7}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;-><init>(Lio/reactivex/rxjava3/core/CompletableOnSubscribe;)V
 
+    .line 372
     .line 373
     .line 374
+    goto :goto_4
+
     .line 375
-    iget-object v1, v1, LPTa;->b:Landroid/net/Uri;
+    :cond_8
+    move-object v9, v13
 
     .line 376
+    move-object v8, v14
+
     .line 377
-    if-nez v1, :cond_9
+    new-instance v7, Llc6;
 
     .line 378
     .line 379
-    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+    const/16 v12, 0x1c
 
     .line 380
     .line 381
-    goto :goto_5
+    move-object v11, v4
 
     .line 382
-    :cond_9
-    new-instance v3, Ln7j;
+    move-object v10, v4
 
     .line 383
-    .line 384
-    const/16 v4, 0xe
+    invoke-direct/range {v7 .. v12}, Llc6;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 384
     .line 385
     .line 386
-    invoke-direct {v3, v0, v4, v1}, Ln7j;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;
 
     .line 387
     .line 388
-    .line 389
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
+    invoke-direct {v3, v7}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableCreate;-><init>(Lio/reactivex/rxjava3/core/CompletableOnSubscribe;)V
 
+    .line 389
     .line 390
     .line 391
-    invoke-direct {v1, v3}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
+    :goto_4
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 392
     .line 393
     .line 394
-    invoke-virtual {v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()Lzre;
+    iget-object v1, v1, Lz6b;->b:Landroid/net/Uri;
 
     .line 395
     .line 396
-    .line 397
-    move-result-object v0
+    if-nez v1, :cond_9
 
+    .line 397
     .line 398
-    check-cast v0, LBre;
+    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
 
     .line 399
     .line 400
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    goto :goto_5
 
     .line 401
+    :cond_9
+    new-instance v3, Lj3j;
+
     .line 402
     .line 403
-    move-result-object v0
+    const/16 v4, 0x1b
 
     .line 404
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
     .line 405
-    .line 406
-    invoke-direct {v3, v1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    invoke-direct {v3, v0, v4, v1}, Lj3j;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 406
     .line 407
     .line 408
-    .line 409
-    move-object v0, v3
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
 
+    .line 409
     .line 410
-    :goto_5
-    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-direct {v1, v3}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
 
     .line 411
     .line 412
     .line 413
-    :goto_6
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableConcatIterable;
+    invoke-virtual {v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()LlJe;
 
     .line 414
     .line 415
+    .line 416
+    move-result-object v0
+
+    .line 417
+    check-cast v0, LnJe;
+
+    .line 418
+    .line 419
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
+
+    .line 420
+    .line 421
+    .line 422
+    move-result-object v0
+
+    .line 423
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 424
+    .line 425
+    invoke-direct {v3, v1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 426
+    .line 427
+    .line 428
+    move-object v0, v3
+
+    .line 429
+    :goto_5
+    invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 430
+    .line 431
+    .line 432
+    :goto_6
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableConcatIterable;
+
+    .line 433
+    .line 434
     invoke-direct {v0, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableConcatIterable;-><init>(Ljava/lang/Iterable;)V
 
-    .line 416
-    .line 417
-    .line 418
+    .line 435
+    .line 436
+    .line 437
     return-object v0
 .end method
 
@@ -1751,11 +1795,11 @@
     const/4 v2, 0x0
 
     .line 4
-    new-instance v3, LZAj;
+    new-instance v3, Lq0k;
 
     .line 5
     .line 6
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getClock()LB73;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getClock()LR93;
 
     .line 7
     .line 8
@@ -1763,7 +1807,7 @@
     move-result-object v4
 
     .line 10
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getGrapheneProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getGrapheneProvider()LDBe;
 
     .line 11
     .line 12
@@ -1771,7 +1815,7 @@
     move-result-object v5
 
     .line 14
-    invoke-interface {v5}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v5}, LDBe;->get()Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -1779,7 +1823,7 @@
     move-result-object v5
 
     .line 18
-    check-cast v5, LaA8;
+    check-cast v5, LcH8;
 
     .line 19
     .line 20
@@ -1787,12 +1831,12 @@
 
     .line 21
     .line 22
-    invoke-direct {v3, v6, v4, v5}, LZAj;-><init>(Ljava/lang/String;LB73;LaA8;)V
+    invoke-direct {v3, v6, v4, v5}, Lq0k;-><init>(Ljava/lang/String;LR93;LcH8;)V
 
     .line 23
     .line 24
     .line 25
-    invoke-virtual {v3}, LZAj;->g()V
+    invoke-virtual {v3}, Lq0k;->g()V
 
     .line 26
     .line 27
@@ -1805,7 +1849,7 @@
     move-result v4
 
     .line 32
-    iget-object v5, v3, LZAj;->n:LlAd;
+    iget-object v5, v3, Lq0k;->n:LDRd;
 
     .line 33
     .line 34
@@ -1813,7 +1857,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {v5, p0}, LlAd;->onViewAttachedToWindow(Landroid/view/View;)V
+    invoke-virtual {v5, p0}, LDRd;->onViewAttachedToWindow(Landroid/view/View;)V
 
     .line 37
     .line 38
@@ -1824,7 +1868,7 @@
     .line 40
     .line 41
     .line 42
-    iput-object v3, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:LZAj;
+    iput-object v3, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:Lq0k;
 
     .line 43
     .line 44
@@ -1832,7 +1876,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getConfigProvider()LpC3;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getConfigProvider()LOF3;
 
     .line 47
     .line 48
@@ -1840,11 +1884,11 @@
     move-result-object v3
 
     .line 50
-    sget-object v4, LYTc;->n0:LYTc;
+    sget-object v4, LL8d;->p0:LL8d;
 
     .line 51
     .line 52
-    invoke-interface {v3, v4}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v3, v4}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 53
     .line 54
@@ -1852,20 +1896,20 @@
     move-result-object v3
 
     .line 56
-    new-instance v4, LEBh;
+    new-instance v4, Lljj;
 
     .line 57
     .line 58
-    const/16 v5, 0x13
+    const/16 v5, 0x9
 
     .line 59
     .line 60
-    invoke-direct {v4, v5}, LEBh;-><init>(I)V
+    invoke-direct {v4, v5}, Lljj;-><init>(I)V
 
     .line 61
     .line 62
     .line 63
-    invoke-static {p1, v3, v4}, Lio/reactivex/rxjava3/core/Single;->J(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Single;
+    invoke-static {p1, v3, v4}, Lio/reactivex/rxjava3/core/Single;->I(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Single;
 
     .line 64
     .line 65
@@ -1873,7 +1917,7 @@
     move-result-object p1
 
     .line 67
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()Lzre;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()LlJe;
 
     .line 68
     .line 69
@@ -1881,11 +1925,11 @@
     move-result-object v3
 
     .line 71
-    check-cast v3, LBre;
+    check-cast v3, LnJe;
 
     .line 72
     .line 73
-    invoke-virtual {v3}, LBre;->d()LF06;
+    invoke-virtual {v3}, LnJe;->d()LA36;
 
     .line 74
     .line 75
@@ -1902,7 +1946,7 @@
     .line 80
     .line 81
     .line 82
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()Lzre;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()LlJe;
 
     .line 83
     .line 84
@@ -1910,11 +1954,11 @@
     move-result-object p1
 
     .line 86
-    check-cast p1, LBre;
+    check-cast p1, LnJe;
 
     .line 87
     .line 88
-    invoke-virtual {p1}, LBre;->i()Lgn0;
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
 
     .line 89
     .line 90
@@ -1931,11 +1975,11 @@
     .line 95
     .line 96
     .line 97
-    new-instance p1, LUAj;
+    new-instance p1, Ll0k;
 
     .line 98
     .line 99
-    invoke-direct {p1, p0, v2}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {p1, p0, v2}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 100
     .line 101
@@ -1949,15 +1993,15 @@
     .line 105
     .line 106
     .line 107
-    new-instance p1, LsJi;
+    new-instance p1, LS7j;
 
     .line 108
     .line 109
-    const/16 v3, 0x1b
+    const/16 v3, 0x15
 
     .line 110
     .line 111
-    invoke-direct {p1, v3, p0}, LsJi;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, v3, p0}, LS7j;-><init>(ILjava/lang/Object;)V
 
     .line 112
     .line 113
@@ -1971,16 +2015,16 @@
     .line 117
     .line 118
     .line 119
-    new-instance p1, LVAj;
+    new-instance p1, Lm0k;
 
     .line 120
     .line 121
-    invoke-direct {p1, p0, v2}, LVAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {p1, p0, v2}, Lm0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 122
     .line 123
     .line 124
-    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/core/Completable;->j(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-virtual {v3, p1}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 125
     .line 126
@@ -1988,16 +2032,16 @@
     move-result-object p1
 
     .line 128
-    new-instance v2, LUAj;
+    new-instance v2, Ll0k;
 
     .line 129
     .line 130
-    invoke-direct {v2, p0, v1}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v2, p0, v1}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 131
     .line 132
     .line 133
-    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 134
     .line 135
@@ -2005,16 +2049,16 @@
     move-result-object p1
 
     .line 137
-    new-instance v2, LVAj;
+    new-instance v2, Lm0k;
 
     .line 138
     .line 139
-    invoke-direct {v2, p0, v1}, LVAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v2, p0, v1}, Lm0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 140
     .line 141
     .line 142
-    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Completable;->j(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
 
     .line 143
     .line 144
@@ -2022,20 +2066,20 @@
     move-result-object p1
 
     .line 146
-    new-instance v1, LVAj;
+    new-instance v1, Lm0k;
 
     .line 147
     .line 148
-    invoke-direct {v1, p0, v0}, LVAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v1, p0, v0}, Lm0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 149
     .line 150
     .line 151
-    new-instance v2, LUAj;
+    new-instance v2, Ll0k;
 
     .line 152
     .line 153
-    invoke-direct {v2, p0, v0}, LUAj;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
+    invoke-direct {v2, p0, v0}, Ll0k;-><init>(Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;I)V
 
     .line 154
     .line 155
@@ -2052,7 +2096,7 @@
 
     .line 161
     .line 162
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 163
     .line 164
@@ -2064,7 +2108,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:LZAj;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:Lq0k;
 
     .line 2
     .line 3
@@ -2072,13 +2116,13 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LZAj;->e()V
+    invoke-virtual {v0}, Lq0k;->e()V
 
     .line 6
     .line 7
     .line 8
     :cond_0
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:LZAj;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:Lq0k;
 
     .line 9
     .line 10
@@ -2086,7 +2130,7 @@
 
     .line 11
     .line 12
-    iget-object v0, v0, LZAj;->n:LlAd;
+    iget-object v0, v0, Lq0k;->n:LDRd;
 
     .line 13
     .line 14
@@ -2099,7 +2143,7 @@
     const/4 v0, 0x0
 
     .line 18
-    iput-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:LZAj;
+    iput-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:Lq0k;
 
     .line 19
     .line 20
@@ -2116,11 +2160,11 @@
 
     .line 26
     .line 27
-    iget-object v2, v1, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v2, v1, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 28
     .line 29
-    iput-object v0, v2, LkEj;->h0:LDpb;
+    iput-object v0, v2, LC3k;->h0:LgDb;
 
     .line 30
     .line 31
@@ -2138,7 +2182,7 @@
     .line 37
     .line 38
     .line 39
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 40
     .line 41
@@ -2146,45 +2190,49 @@
 
     .line 42
     .line 43
-    check-cast v0, Lesg;
+    check-cast v0, LSff;
 
     .line 44
     .line 45
-    invoke-virtual {v0}, Lesg;->b()V
+    invoke-virtual {v0}, LSff;->b()V
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {v0}, Lesg;->f()V
+    invoke-virtual {v0}, LSff;->f()V
 
     .line 49
     .line 50
     .line 51
-    iget-object v0, v0, Lesg;->c:Landroid/widget/FrameLayout;
+    iget-object v0, v0, LSff;->Y:Ljava/lang/Object;
 
     .line 52
     .line 53
-    iget-object v1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->f0:Landroid/widget/FrameLayout;
+    check-cast v0, Landroid/widget/FrameLayout;
 
     .line 54
     .line 55
-    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+    iget-object v1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->f0:Landroid/widget/FrameLayout;
 
     .line 56
     .line 57
+    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+
     .line 58
+    .line 59
+    .line 60
     :cond_2
     const/4 v0, 0x0
 
-    .line 59
+    .line 61
     iput-boolean v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->k0:Z
 
-    .line 60
-    .line 61
+    .line 62
+    .line 63
     return-void
 .end method
 
-.method public final bindMedia(LIUh;)V
+.method public final bindMedia(Lfji;)V
     .locals 7
 
     .line 1
@@ -2233,7 +2281,7 @@
     .line 22
     .line 23
     :cond_0
-    invoke-static {p1}, Lbpb;->a(LIUh;)LuSg;
+    invoke-static {p1}, LKCb;->a(Lfji;)Lmeh;
 
     .line 24
     .line 25
@@ -2245,7 +2293,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v1}, LuSg;->m()Z
+    invoke-virtual {v1}, Lmeh;->m()Z
 
     .line 30
     .line 31
@@ -2258,7 +2306,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getStoryManifestResolver()LKUh;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getStoryManifestResolver()Lhji;
 
     .line 36
     .line 37
@@ -2266,15 +2314,15 @@
     move-result-object v0
 
     .line 39
-    check-cast v0, LLUh;
+    check-cast v0, Liji;
 
     .line 40
     .line 41
-    iget-object v1, v0, LLUh;->b:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v1, v0, Liji;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 42
     .line 43
-    iget-object v2, p1, LIUh;->b:Ljava/lang/String;
+    iget-object v2, p1, Lfji;->b:Ljava/lang/String;
 
     .line 44
     .line 45
@@ -2286,7 +2334,7 @@
     move-result-object v1
 
     .line 49
-    check-cast v1, LPTa;
+    check-cast v1, Lz6b;
 
     .line 50
     .line 51
@@ -2307,11 +2355,11 @@
 
     .line 59
     :cond_2
-    iget-object v1, v0, LLUh;->a:LXfi;
+    iget-object v1, v0, Liji;->a:LREi;
 
     .line 60
     .line 61
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 62
     .line 63
@@ -2319,11 +2367,11 @@
     move-result-object v1
 
     .line 65
-    check-cast v1, LkAg;
+    check-cast v1, LxVg;
 
     .line 66
     .line 67
-    invoke-static {p1}, Lbpb;->a(LIUh;)LuSg;
+    invoke-static {p1}, LKCb;->a(Lfji;)Lmeh;
 
     .line 68
     .line 69
@@ -2331,11 +2379,11 @@
     move-result-object v2
 
     .line 71
-    iget-object v3, p1, LIUh;->i0:[LvPh;
+    iget-object v3, p1, Lfji;->i0:[LNdi;
 
     .line 72
     .line 73
-    invoke-static {v3}, Lv70;->z0([Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3}, LN90;->o0([Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 74
     .line 75
@@ -2343,7 +2391,7 @@
     move-result-object v3
 
     .line 77
-    check-cast v3, LvPh;
+    check-cast v3, LNdi;
 
     .line 78
     .line 79
@@ -2354,7 +2402,7 @@
 
     .line 81
     .line 82
-    invoke-virtual {v3}, LvPh;->c()LvPh$b;
+    invoke-virtual {v3}, LNdi;->c()LNdi$b;
 
     .line 83
     .line 84
@@ -2378,23 +2426,23 @@
 
     .line 91
     .line 92
-    iget-object v4, v3, LvPh$b;->b:Ljava/lang/String;
+    iget-object v4, v3, LNdi$b;->b:Ljava/lang/String;
 
     .line 93
     .line 94
-    iget-object v5, v3, LvPh$b;->Z:Ljava/lang/String;
+    iget-object v5, v3, LNdi$b;->Z:Ljava/lang/String;
 
     .line 95
     .line 96
-    iget-object v6, v3, LvPh$b;->X:Ljava/lang/String;
+    iget-object v6, v3, LNdi$b;->X:Ljava/lang/String;
 
     .line 97
     .line 98
-    iget-object v3, v3, LvPh$b;->Y:Ljava/lang/String;
+    iget-object v3, v3, LNdi$b;->Y:Ljava/lang/String;
 
     .line 99
     .line 100
-    invoke-static {v4, v2, v5, v6, v3}, LGnk;->d(Ljava/lang/String;LuSg;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+    invoke-static {v4, v2, v5, v6, v3}, LMLk;->e(Ljava/lang/String;Lmeh;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
 
     .line 101
     .line 102
@@ -2403,7 +2451,7 @@
 
     .line 104
     :cond_4
-    invoke-virtual {v0, v1, v4}, LLUh;->a(LkAg;Landroid/net/Uri;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-virtual {v0, v1, v4}, Liji;->a(LxVg;Landroid/net/Uri;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 105
     .line 106
@@ -2419,7 +2467,7 @@
 
     .line 111
     .line 112
-    invoke-static {p1}, Lbpb;->a(LIUh;)LuSg;
+    invoke-static {p1}, LKCb;->a(Lfji;)Lmeh;
 
     .line 113
     .line 114
@@ -2458,7 +2506,7 @@
     .line 131
     .line 132
     .line 133
-    invoke-static {v1}, Lio/reactivex/rxjava3/core/Single;->l(Ljava/lang/Throwable;)Lio/reactivex/rxjava3/internal/operators/single/SingleError;
+    invoke-static {v1}, Lio/reactivex/rxjava3/core/Single;->j(Ljava/lang/Throwable;)Lio/reactivex/rxjava3/internal/operators/single/SingleError;
 
     .line 134
     .line 135
@@ -2471,15 +2519,15 @@
 
     .line 138
     :goto_1
-    new-instance v1, LoCh;
+    new-instance v1, LM0i;
 
     .line 139
     .line 140
-    const/16 v3, 0xe
+    const/16 v3, 0xc
 
     .line 141
     .line 142
-    invoke-direct {v1, v0, v3, p1}, LoCh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v1, v0, v3, p1}, LM0i;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 143
     .line 144
@@ -2493,83 +2541,82 @@
     .line 148
     .line 149
     .line 150
-    new-instance v0, LeCh;
+    new-instance v0, Li7i;
 
     .line 151
     .line 152
-    const/16 v1, 0xf
+    const/4 v1, 0x4
 
     .line 153
-    .line 154
-    invoke-direct {v0, v1}, LeCh;-><init>(I)V
+    invoke-direct {v0, v1}, Li7i;-><init>(I)V
 
+    .line 154
     .line 155
     .line 156
-    .line 157
     new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
 
+    .line 157
     .line 158
-    .line 159
     invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;)V
 
+    .line 159
     .line 160
     .line 161
-    .line 162
     invoke-virtual {p0, v1}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->a(Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;)V
 
+    .line 162
     .line 163
     .line 164
-    .line 165
     return-void
 
-    .line 166
+    .line 165
     :cond_6
     sget-object p1, Lcom/snap/composer/chat_stories_common/StoryChatSharePlayerViewState;->LOAD_FAILED:Lcom/snap/composer/chat_stories_common/StoryChatSharePlayerViewState;
 
+    .line 166
     .line 167
-    .line 168
     iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->b:Lcom/snap/composer/chat_stories_common/StoryChatSharePlayerViewState;
 
+    .line 168
     .line 169
-    .line 170
     iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->c:Lkotlin/jvm/functions/Function1;
 
+    .line 170
     .line 171
-    .line 172
     iget-boolean v1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->a:Z
 
+    .line 172
     .line 173
-    .line 174
     if-eqz v1, :cond_7
 
+    .line 174
     .line 175
-    .line 176
     if-eqz p1, :cond_7
 
+    .line 176
     .line 177
-    .line 178
     if-eqz v0, :cond_7
 
+    .line 178
     .line 179
-    .line 180
     invoke-interface {v0, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    .line 180
     .line 181
     .line 182
-    .line 183
     :cond_7
     return-void
 .end method
 
-.method public final bindMediaResolverContent(LMrb;)V
+.method public final bindMediaResolverContent(LoFb;)V
     .locals 5
 
     .line 1
-    iget-object v0, p1, LMrb;->a:Landroid/net/Uri;
+    iget-object v0, p1, LoFb;->a:Landroid/net/Uri;
 
     .line 2
     .line 3
-    iget-object p1, p1, LMrb;->b:LjCg;
+    iget-object p1, p1, LoFb;->b:LvXg;
 
     .line 4
     .line 5
@@ -2630,11 +2677,11 @@
     move-result-object v0
 
     .line 33
-    new-instance v1, LZAj;
+    new-instance v1, Lq0k;
 
     .line 34
     .line 35
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getClock()LB73;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getClock()LR93;
 
     .line 36
     .line 37
@@ -2642,7 +2689,7 @@
     move-result-object v2
 
     .line 39
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getGrapheneProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getGrapheneProvider()LDBe;
 
     .line 40
     .line 41
@@ -2650,7 +2697,7 @@
     move-result-object v3
 
     .line 43
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
     .line 44
     .line 45
@@ -2658,7 +2705,7 @@
     move-result-object v3
 
     .line 47
-    check-cast v3, LaA8;
+    check-cast v3, LcH8;
 
     .line 48
     .line 49
@@ -2666,12 +2713,12 @@
 
     .line 50
     .line 51
-    invoke-direct {v1, v4, v2, v3}, LZAj;-><init>(Ljava/lang/String;LB73;LaA8;)V
+    invoke-direct {v1, v4, v2, v3}, Lq0k;-><init>(Ljava/lang/String;LR93;LcH8;)V
 
     .line 52
     .line 53
     .line 54
-    invoke-virtual {v1}, LZAj;->g()V
+    invoke-virtual {v1}, Lq0k;->g()V
 
     .line 55
     .line 56
@@ -2684,7 +2731,7 @@
     move-result v2
 
     .line 61
-    iget-object v3, v1, LZAj;->n:LlAd;
+    iget-object v3, v1, Lq0k;->n:LDRd;
 
     .line 62
     .line 63
@@ -2692,7 +2739,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {v3, p0}, LlAd;->onViewAttachedToWindow(Landroid/view/View;)V
+    invoke-virtual {v3, p0}, LDRd;->onViewAttachedToWindow(Landroid/view/View;)V
 
     .line 66
     .line 67
@@ -2703,11 +2750,11 @@
     .line 69
     .line 70
     .line 71
-    iput-object v1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:LZAj;
+    iput-object v1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->i0:Lq0k;
 
     .line 72
     .line 73
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getConfigProvider()LpC3;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getConfigProvider()LOF3;
 
     .line 74
     .line 75
@@ -2715,11 +2762,11 @@
     move-result-object v1
 
     .line 77
-    sget-object v2, LYTc;->n0:LYTc;
+    sget-object v2, LL8d;->p0:LL8d;
 
     .line 78
     .line 79
-    invoke-interface {v1, v2}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v1, v2}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 80
     .line 81
@@ -2727,7 +2774,7 @@
     move-result-object v1
 
     .line 83
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()Lzre;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()LlJe;
 
     .line 84
     .line 85
@@ -2735,11 +2782,11 @@
     move-result-object v2
 
     .line 87
-    check-cast v2, LBre;
+    check-cast v2, LnJe;
 
     .line 88
     .line 89
-    invoke-virtual {v2}, LBre;->d()LF06;
+    invoke-virtual {v2}, LnJe;->d()LA36;
 
     .line 90
     .line 91
@@ -2756,7 +2803,7 @@
     .line 96
     .line 97
     .line 98
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()Lzre;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getSchedulers()LlJe;
 
     .line 99
     .line 100
@@ -2764,11 +2811,11 @@
     move-result-object v1
 
     .line 102
-    check-cast v1, LBre;
+    check-cast v1, LnJe;
 
     .line 103
     .line 104
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    invoke-virtual {v1}, LnJe;->i()Lxp0;
 
     .line 105
     .line 106
@@ -2785,45 +2832,44 @@
     .line 111
     .line 112
     .line 113
-    new-instance v1, LSNh;
+    new-instance v1, Lo0k;
 
     .line 114
     .line 115
-    const/16 v3, 0x1a
+    const/4 v3, 0x0
 
     .line 116
-    .line 117
-    invoke-direct {v1, p0, p1, v0, v3}, LSNh;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v1, p0, p1, v0, v3}, Lo0k;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 117
     .line 118
     .line 119
-    .line 120
     invoke-virtual {v2, v1}, Lio/reactivex/rxjava3/core/Single;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 120
     .line 121
     .line 122
-    .line 123
     move-result-object p1
 
-    .line 124
+    .line 123
     iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->h0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 124
     .line 125
-    .line 126
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 126
     .line 127
     .line 128
-    .line 129
     return-void
 
-    .line 130
+    .line 129
     :cond_2
     invoke-virtual {p0, v0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->bindUri(Landroid/net/Uri;)V
 
+    .line 130
     .line 131
     .line 132
-    .line 133
     return-void
 .end method
 
@@ -2876,7 +2922,7 @@
     .line 22
     .line 23
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getStoryManifestResolver()LKUh;
+    invoke-virtual {p0}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->getStoryManifestResolver()Lhji;
 
     .line 24
     .line 25
@@ -2884,15 +2930,15 @@
     move-result-object v0
 
     .line 27
-    check-cast v0, LLUh;
+    check-cast v0, Liji;
 
     .line 28
     .line 29
-    iget-object v1, v0, LLUh;->a:LXfi;
+    iget-object v1, v0, Liji;->a:LREi;
 
     .line 30
     .line 31
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -2900,11 +2946,11 @@
     move-result-object v1
 
     .line 35
-    check-cast v1, LkAg;
+    check-cast v1, LxVg;
 
     .line 36
     .line 37
-    invoke-virtual {v0, v1, p1}, LLUh;->a(LkAg;Landroid/net/Uri;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-virtual {v0, v1, p1}, Liji;->a(LxVg;Landroid/net/Uri;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 38
     .line 39
@@ -2924,7 +2970,7 @@
 
     .line 46
     .line 47
-    invoke-static {p1, v1}, LDM4;->o(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Lve4;->s(Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     .line 48
     .line 49
@@ -2937,7 +2983,7 @@
     .line 52
     .line 53
     .line 54
-    invoke-static {v0}, Lio/reactivex/rxjava3/core/Single;->l(Ljava/lang/Throwable;)Lio/reactivex/rxjava3/internal/operators/single/SingleError;
+    invoke-static {v0}, Lio/reactivex/rxjava3/core/Single;->j(Ljava/lang/Throwable;)Lio/reactivex/rxjava3/internal/operators/single/SingleError;
 
     .line 55
     .line 56
@@ -2946,33 +2992,32 @@
 
     .line 58
     :cond_1
-    new-instance p1, LeCh;
+    new-instance p1, Li7i;
 
     .line 59
     .line 60
-    const/16 v1, 0x10
+    const/4 v1, 0x5
 
     .line 61
-    .line 62
-    invoke-direct {p1, v1}, LeCh;-><init>(I)V
+    invoke-direct {p1, v1}, Li7i;-><init>(I)V
 
+    .line 62
     .line 63
     .line 64
-    .line 65
     new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
 
+    .line 65
     .line 66
-    .line 67
     invoke-direct {v1, v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;)V
 
+    .line 67
     .line 68
     .line 69
-    .line 70
     invoke-virtual {p0, v1}, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->a(Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;)V
 
+    .line 70
     .line 71
     .line 72
-    .line 73
     return-void
 .end method
 
@@ -3118,11 +3163,11 @@
     return v0
 .end method
 
-.method public final getClock()LB73;
+.method public final getClock()LR93;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->clock:LB73;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->clock:LR93;
 
     .line 2
     .line 3
@@ -3138,7 +3183,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3149,11 +3194,11 @@
     throw v0
 .end method
 
-.method public final getConfigProvider()LpC3;
+.method public final getConfigProvider()LOF3;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->configProvider:LpC3;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->configProvider:LOF3;
 
     .line 2
     .line 3
@@ -3169,7 +3214,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3180,17 +3225,17 @@
     throw v0
 .end method
 
-.method public final getContentResolver()Lbke;
+.method public final getContentResolver()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->contentResolver:Lbke;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->contentResolver:LDBe;
 
     .line 2
     .line 3
@@ -3206,7 +3251,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3217,17 +3262,17 @@
     throw v0
 .end method
 
-.method public final getGrapheneProvider()Lbke;
+.method public final getGrapheneProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->grapheneProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->grapheneProvider:LDBe;
 
     .line 2
     .line 3
@@ -3243,7 +3288,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3260,7 +3305,7 @@
         value = {
             "()",
             "Lio/reactivex/rxjava3/core/Observable<",
-            "Lhad;",
+            "LDpd;",
             ">;"
         }
     .end annotation
@@ -3290,11 +3335,11 @@
     return-object v0
 .end method
 
-.method public final getSchedulers()Lzre;
+.method public final getSchedulers()LlJe;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->schedulers:Lzre;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->schedulers:LlJe;
 
     .line 2
     .line 3
@@ -3310,7 +3355,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3321,17 +3366,17 @@
     throw v0
 .end method
 
-.method public final getSingleSnapPlayerBuilder()Lbke;
+.method public final getSingleSnapPlayerBuilder()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->singleSnapPlayerBuilder:Lbke;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->singleSnapPlayerBuilder:LDBe;
 
     .line 2
     .line 3
@@ -3347,7 +3392,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3358,17 +3403,17 @@
     throw v0
 .end method
 
-.method public final getSnapDocMediaResolverProvider()Lbke;
+.method public final getSnapDocMediaResolverProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->snapDocMediaResolverProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->snapDocMediaResolverProvider:LDBe;
 
     .line 2
     .line 3
@@ -3384,7 +3429,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3395,11 +3440,11 @@
     throw v0
 .end method
 
-.method public final getStoryManifestResolver()LKUh;
+.method public final getStoryManifestResolver()Lhji;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->storyManifestResolver:LKUh;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->storyManifestResolver:Lhji;
 
     .line 2
     .line 3
@@ -3415,7 +3460,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3471,11 +3516,11 @@
 
     .line 21
     .line 22
-    new-instance v1, LfIj;
+    new-instance v1, LD7k;
 
     .line 23
     .line 24
-    invoke-direct {v1}, LfIj;-><init>()V
+    invoke-direct {v1}, LD7k;-><init>()V
 
     .line 25
     .line 26
@@ -3496,16 +3541,16 @@
     move-result v3
 
     .line 35
-    invoke-virtual {v1, v2, v3, v0}, LfIj;->g(IIZ)V
+    invoke-virtual {v1, v2, v3, v0}, LD7k;->g(IIZ)V
 
     .line 36
     .line 37
     .line 38
-    new-instance v0, LgIj;
+    new-instance v0, LE7k;
 
     .line 39
     .line 40
-    invoke-direct {v0, v1}, LgIj;-><init>(LfIj;)V
+    invoke-direct {v0, v1}, LE7k;-><init>(LD7k;)V
 
     .line 41
     .line 42
@@ -3514,7 +3559,7 @@
 
     .line 44
     .line 45
-    invoke-virtual {v1, v0}, Lcom/snap/imageloading/view/SnapImageView;->i(LgIj;)V
+    invoke-virtual {v1, v0}, Lcom/snap/imageloading/view/SnapImageView;->h(LE7k;)V
 
     .line 46
     .line 47
@@ -3560,7 +3605,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 7
     .line 8
@@ -3568,11 +3613,11 @@
 
     .line 9
     .line 10
-    check-cast v0, Lesg;
+    check-cast v0, LSff;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lesg;->b()V
+    invoke-virtual {v0}, LSff;->b()V
 
     .line 13
     .line 14
@@ -3606,7 +3651,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LLrg;
+    iget-object v0, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->g0:LRMg;
 
     .line 7
     .line 8
@@ -3614,11 +3659,11 @@
 
     .line 9
     .line 10
-    check-cast v0, Lesg;
+    check-cast v0, LSff;
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lesg;->c()V
+    invoke-virtual {v0}, LSff;->c()V
 
     .line 13
     .line 14
@@ -3627,58 +3672,58 @@
     return-void
 .end method
 
-.method public final setClock(LB73;)V
+.method public final setClock(LR93;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->clock:LB73;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->clock:LR93;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setConfigProvider(LpC3;)V
+.method public final setConfigProvider(LOF3;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->configProvider:LpC3;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->configProvider:LOF3;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setContentResolver(Lbke;)V
+.method public final setContentResolver(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->contentResolver:Lbke;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->contentResolver:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setGrapheneProvider(Lbke;)V
+.method public final setGrapheneProvider(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->grapheneProvider:Lbke;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->grapheneProvider:LDBe;
 
     .line 2
     .line 3
@@ -3691,7 +3736,7 @@
         value = {
             "(",
             "Lio/reactivex/rxjava3/core/Observable<",
-            "Lhad;",
+            "LDpd;",
             ">;)V"
         }
     .end annotation
@@ -3748,58 +3793,58 @@
     return-void
 .end method
 
-.method public final setSchedulers(Lzre;)V
+.method public final setSchedulers(LlJe;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->schedulers:Lzre;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->schedulers:LlJe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setSingleSnapPlayerBuilder(Lbke;)V
+.method public final setSingleSnapPlayerBuilder(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->singleSnapPlayerBuilder:Lbke;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->singleSnapPlayerBuilder:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setSnapDocMediaResolverProvider(Lbke;)V
+.method public final setSnapDocMediaResolverProvider(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->snapDocMediaResolverProvider:Lbke;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->snapDocMediaResolverProvider:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setStoryManifestResolver(LKUh;)V
+.method public final setStoryManifestResolver(Lhji;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->storyManifestResolver:LKUh;
+    iput-object p1, p0, Lcom/snap/messaging/renderingplugins/mediasharecommon/sharedui/VideoCapablePluginThumbnailView;->storyManifestResolver:Lhji;
 
     .line 2
     .line 3

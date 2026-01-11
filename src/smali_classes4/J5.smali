@@ -1,31 +1,14 @@
-.class public final LJ5;
-.super Lcom/snap/composer/utils/b;
+.class public interface abstract LJ5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'navigator\':r:\'[0]\',\'options\':a<r:\'[1]\'>,\'processChallengeResponse\':f(r:\'[2]\', f(r:\'[3]\')),\'logPageView\':f?(r<e>:\'[4]\'),\'handleDismiss\':f?()"
-    typeReferences = {
-        Lcom/snap/composer/navigation/INavigator;,
-        LH5;,
-        LC5;,
-        LL5;,
-        Lcom/snap/identity/accountrecovery/ui/pages/challengepicker/ChallengePage;
-    }
-.end annotation
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# virtual methods
+.method public abstract a()Lio/reactivex/rxjava3/core/Observable;
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
+.method public abstract e0()V
 .end method

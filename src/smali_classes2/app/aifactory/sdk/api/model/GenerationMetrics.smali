@@ -242,7 +242,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/GenerationMetrics;->scenarioId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -275,7 +275,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/GenerationMetrics;->playTimeMs:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -288,7 +288,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/GenerationMetrics;->errorTimeMs:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -310,7 +310,7 @@
 
     iget-object p1, p1, Lapp/aifactory/sdk/api/model/GenerationMetrics;->errorCode:Ljava/lang/Integer;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

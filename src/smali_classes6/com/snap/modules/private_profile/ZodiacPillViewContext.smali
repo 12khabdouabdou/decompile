@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/private_profile/ZodiacPillViewContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'onImpression\':f?(),\'birthday\':g<c>:\'[0]\'<r:\'[1]\'>,\'onTap\':f?(r:\'[2]\')"
     typeReferences = {

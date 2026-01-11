@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -25,9 +25,9 @@
 
 
 # instance fields
-.field public emoji:LW0k;
+.field public emoji:LRqk;
 
-.field public label:LW0k;
+.field public label:LRqk;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -60,7 +60,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -123,7 +123,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -136,7 +136,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
 
     move-result-object p0
 
@@ -147,7 +147,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -174,15 +174,15 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LW0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LRqk;
 
     .line 3
     .line 4
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LW0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LRqk;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 7
     .line 8
@@ -200,7 +200,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -208,7 +208,7 @@
     move-result v0
 
     .line 5
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LW0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LRqk;
 
     .line 6
     .line 7
@@ -219,7 +219,7 @@
     const/4 v2, 0x1
 
     .line 10
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 11
     .line 12
@@ -231,7 +231,7 @@
 
     .line 15
     :cond_0
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LW0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LRqk;
 
     .line 16
     .line 17
@@ -242,7 +242,7 @@
     const/4 v2, 0x2
 
     .line 20
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 21
     .line 22
@@ -260,7 +260,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -269,14 +269,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -287,7 +287,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -302,7 +302,7 @@
     if-eq v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -312,43 +312,43 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LRqk;
 
     if-nez v0, :cond_2
 
     .line 5
-    new-instance v0, LW0k;
+    new-instance v0, LRqk;
 
-    invoke-direct {v0}, LW0k;-><init>()V
+    invoke-direct {v0}, LRqk;-><init>()V
 
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LW0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LRqk;
 
     .line 6
     :cond_2
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LRqk;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
     .line 7
     :cond_3
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LRqk;
 
     if-nez v0, :cond_4
 
     .line 8
-    new-instance v0, LW0k;
+    new-instance v0, LRqk;
 
-    invoke-direct {v0}, LW0k;-><init>()V
+    invoke-direct {v0}, LRqk;-><init>()V
 
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LW0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LRqk;
 
     .line 9
     :cond_4
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LRqk;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
@@ -357,7 +357,7 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -366,7 +366,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->label:LRqk;
 
     .line 2
     .line 3
@@ -377,13 +377,13 @@
     const/4 v1, 0x1
 
     .line 6
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 7
     .line 8
     .line 9
     :cond_0
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LabelledEmoji;->emoji:LRqk;
 
     .line 10
     .line 11
@@ -394,13 +394,13 @@
     const/4 v1, 0x2
 
     .line 14
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 15
     .line 16
     .line 17
     :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 18
     .line 19

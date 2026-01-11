@@ -9,15 +9,15 @@
 
 
 # static fields
-.field public static final Companion:LIt3;
+.field public static final Companion:LKw3;
 
 .field private static final TAG:Ljava/lang/String; = "ComposerAvatarView"
 
 
 # instance fields
-.field private avatarDrawable:LQC0;
+.field private avatarDrawable:LMF0;
 
-.field private final circleDrawable:Lnw3;
+.field private final circleDrawable:Lyz3;
 
 .field private currentObservable:Lio/reactivex/rxjava3/disposables/Disposable;
 
@@ -25,7 +25,7 @@
 
 .field private lastBorderRadius:F
 
-.field private final loadingPlaceholder:Lnw3;
+.field private final loadingPlaceholder:Lyz3;
 
 .field private onAvatarTapped:Lkotlin/jvm/functions/Function2;
     .annotation system Ldalvik/annotation/Signature;
@@ -65,7 +65,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LIt3;
+    new-instance v0, LKw3;
 
     .line 2
     .line 3
@@ -74,7 +74,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/composer/people/ComposerAvatarView;->Companion:LIt3;
+    sput-object v0, Lcom/snap/composer/people/ComposerAvatarView;->Companion:LKw3;
 
     .line 7
     .line 8
@@ -90,11 +90,11 @@
     .line 2
     .line 3
     .line 4
-    new-instance p1, Lnw3;
+    new-instance p1, Lyz3;
 
     .line 5
     .line 6
-    invoke-direct {p1}, Lnw3;-><init>()V
+    invoke-direct {p1}, Lyz3;-><init>()V
 
     .line 7
     .line 8
@@ -104,15 +104,15 @@
     .line 10
     .line 11
     .line 12
-    iput-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lnw3;
+    iput-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lyz3;
 
     .line 13
     .line 14
-    new-instance p1, Lnw3;
+    new-instance p1, Lyz3;
 
     .line 15
     .line 16
-    invoke-direct {p1}, Lnw3;-><init>()V
+    invoke-direct {p1}, Lyz3;-><init>()V
 
     .line 17
     .line 18
@@ -125,7 +125,7 @@
     move-result-object v0
 
     .line 23
-    const v1, 0x7f060212
+    const v1, 0x7f06026a
 
     .line 24
     .line 25
@@ -138,33 +138,33 @@
     move-result v0
 
     .line 30
-    invoke-virtual {p1, v0}, Lnw3;->d(I)V
+    invoke-virtual {p1, v0}, Lyz3;->d(I)V
 
     .line 31
     .line 32
     .line 33
-    iput-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lnw3;
+    iput-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lyz3;
 
     .line 34
     .line 35
-    new-instance p1, Lomi;
+    new-instance p1, LfLi;
 
     .line 36
     .line 37
-    new-instance v0, LeG2;
+    new-instance v0, Ljz2;
 
     .line 38
     .line 39
-    const/16 v1, 0x19
+    const/16 v1, 0x1a
 
     .line 40
     .line 41
-    invoke-direct {v0, v1, p0}, LeG2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Ljz2;-><init>(ILjava/lang/Object;)V
 
     .line 42
     .line 43
     .line 44
-    invoke-direct {p1, p0, v0}, Lomi;-><init>(Landroid/view/View;Lpmi;)V
+    invoke-direct {p1, p0, v0}, LfLi;-><init>(Landroid/view/View;LgLi;)V
 
     .line 45
     .line 46
@@ -172,7 +172,7 @@
     const/4 v0, 0x1
 
     .line 48
-    invoke-static {p0, v0}, LzP2;->J(Landroid/view/View;Z)LKS7;
+    invoke-static {p0, v0}, LQIc;->y(Landroid/view/View;Z)LOU7;
 
     .line 49
     .line 50
@@ -180,34 +180,34 @@
     move-result-object v1
 
     .line 52
-    invoke-virtual {v1, p1}, LKS7;->a(Lew3;)V
+    invoke-virtual {v1, p1}, LOU7;->c(Loz3;)V
 
     .line 53
     .line 54
     .line 55
-    new-instance p1, LRMa;
+    new-instance p1, LxZa;
 
     .line 56
     .line 57
-    new-instance v1, LgG2;
+    new-instance v1, Llz2;
 
     .line 58
     .line 59
-    const/16 v2, 0x15
+    const/16 v2, 0x14
 
     .line 60
     .line 61
-    invoke-direct {v1, v2, p0}, LgG2;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, Llz2;-><init>(ILjava/lang/Object;)V
 
     .line 62
     .line 63
     .line 64
-    invoke-direct {p1, p0, v1}, LRMa;-><init>(Landroid/view/View;LSMa;)V
+    invoke-direct {p1, p0, v1}, LxZa;-><init>(Landroid/view/View;LyZa;)V
 
     .line 65
     .line 66
     .line 67
-    invoke-static {p0, v0}, LzP2;->J(Landroid/view/View;Z)LKS7;
+    invoke-static {p0, v0}, LQIc;->y(Landroid/view/View;Z)LOU7;
 
     .line 68
     .line 69
@@ -215,7 +215,7 @@
     move-result-object v0
 
     .line 71
-    invoke-virtual {v0, p1}, LKS7;->a(Lew3;)V
+    invoke-virtual {v0, p1}, LOU7;->c(Loz3;)V
 
     .line 72
     .line 73
@@ -243,7 +243,7 @@
     return p0
 .end method
 
-.method public static synthetic setAvatarsInfo$default(Lcom/snap/composer/people/ComposerAvatarView;Ljava/util/List;Lyj7;LQ1j;Ljava/lang/Integer;ILjava/lang/Object;)V
+.method public static synthetic setAvatarsInfo$default(Lcom/snap/composer/people/ComposerAvatarView;Ljava/util/List;LFo7;Lcrj;Ljava/lang/Integer;ILjava/lang/Object;)V
     .locals 1
 
     .line 1
@@ -278,7 +278,7 @@
 
     .line 14
     :cond_1
-    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/composer/people/ComposerAvatarView;->setAvatarsInfo(Ljava/util/List;Lyj7;LQ1j;Ljava/lang/Integer;)V
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/snap/composer/people/ComposerAvatarView;->setAvatarsInfo(Ljava/util/List;LFo7;Lcrj;Ljava/lang/Integer;)V
 
     .line 15
     .line 16
@@ -383,11 +383,11 @@
 
     .line 33
     .line 34
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lnw3;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lyz3;
 
     .line 35
     .line 36
-    new-instance v2, Ljx1;
+    new-instance v2, LwA1;
 
     .line 37
     .line 38
@@ -412,7 +412,7 @@
     move v10, v7
 
     .line 45
-    invoke-direct/range {v2 .. v10}, Ljx1;-><init>(FFFFZZZZ)V
+    invoke-direct/range {v2 .. v10}, LwA1;-><init>(FFFFZZZZ)V
 
     .line 46
     .line 47
@@ -422,136 +422,134 @@
     .line 49
     .line 50
     .line 51
-    new-instance v4, Lb67;
+    new-instance v4, Luz7;
 
     .line 52
     .line 53
-    const/16 v5, 0xd
+    const/4 v5, 0x1
 
     .line 54
-    .line 55
-    invoke-direct {v4, v5, v2}, Lb67;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v4, v5, v2}, Luz7;-><init>(ILjava/lang/Object;)V
 
+    .line 55
     .line 56
     .line 57
-    .line 58
-    iput-object v4, v0, Lnw3;->g:LNu6;
+    iput-object v4, v0, Lyz3;->g:LVx6;
 
+    .line 58
     .line 59
-    .line 60
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
+    .line 60
     .line 61
     .line 62
-    .line 63
     invoke-virtual {p0}, Lcom/snap/composer/views/ComposerImageView;->getImagePadding()I
 
+    .line 63
     .line 64
     .line 65
-    .line 66
     move-result v0
 
-    .line 67
+    .line 66
     int-to-float v0, v0
 
-    .line 68
+    .line 67
     sub-float/2addr v3, v0
 
-    .line 69
+    .line 68
     invoke-static {v3, v1}, Ljava/lang/Math;->max(FF)F
 
+    .line 69
     .line 70
     .line 71
-    .line 72
     move-result v5
 
+    .line 72
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lyz3;
+
     .line 73
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lnw3;
-
     .line 74
-    .line 75
-    new-instance v4, Ljx1;
+    new-instance v4, LwA1;
 
+    .line 75
     .line 76
-    .line 77
     const/4 v9, 0x0
 
-    .line 78
+    .line 77
     move v6, v5
 
-    .line 79
+    .line 78
     move v7, v5
 
-    .line 80
+    .line 79
     move v8, v5
 
-    .line 81
+    .line 80
     move v10, v9
 
-    .line 82
+    .line 81
     move v11, v9
 
-    .line 83
+    .line 82
     move v12, v9
 
-    .line 84
-    invoke-direct/range {v4 .. v12}, Ljx1;-><init>(FFFFZZZZ)V
+    .line 83
+    invoke-direct/range {v4 .. v12}, LwA1;-><init>(FFFFZZZZ)V
 
+    .line 84
     .line 85
     .line 86
-    .line 87
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 87
     .line 88
     .line 89
-    .line 90
-    new-instance v1, Lb67;
+    new-instance v1, Luz7;
 
+    .line 90
     .line 91
+    const/4 v2, 0x1
+
     .line 92
-    const/16 v2, 0xd
+    invoke-direct {v1, v2, v4}, Luz7;-><init>(ILjava/lang/Object;)V
 
     .line 93
     .line 94
-    invoke-direct {v1, v2, v4}, Lb67;-><init>(ILjava/lang/Object;)V
-
     .line 95
+    iput-object v1, v0, Lyz3;->g:LVx6;
+
     .line 96
     .line 97
-    iput-object v1, v0, Lnw3;->g:LNu6;
+    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     .line 98
     .line 99
-    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
-
     .line 100
+    invoke-virtual {p0}, Lcom/snap/composer/views/ComposerImageView;->getClipper()Ldi2;
+
     .line 101
     .line 102
-    invoke-virtual {p0}, Lcom/snap/composer/views/ComposerImageView;->getClipper()Lrf2;
-
     .line 103
-    .line 104
-    .line 105
     move-result-object v0
 
+    .line 104
+    iget-object v1, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lyz3;
+
+    .line 105
     .line 106
-    iget-object v1, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lnw3;
+    iget-object v1, v1, Lyz3;->g:LVx6;
 
     .line 107
     .line 108
-    iget-object v1, v1, Lnw3;->g:LNu6;
+    iput-object v1, v0, Ldi2;->b:LVx6;
 
     .line 109
     .line 110
-    iput-object v1, v0, Lrf2;->b:LNu6;
+    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     .line 111
     .line 112
-    invoke-virtual {p0}, Landroid/view/View;->invalidate()V
-
     .line 113
-    .line 114
-    .line 115
     return-void
 .end method
 
@@ -642,7 +640,7 @@
 
     .line 7
     .line 8
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lnw3;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lyz3;
 
     .line 9
     .line 10
@@ -670,11 +668,11 @@
     .line 20
     .line 21
     .line 22
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lnw3;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lyz3;
 
     .line 23
     .line 24
-    invoke-virtual {v0, p1}, Lnw3;->draw(Landroid/graphics/Canvas;)V
+    invoke-virtual {v0, p1}, Lyz3;->draw(Landroid/graphics/Canvas;)V
 
     .line 25
     .line 26
@@ -746,7 +744,7 @@
         value = {
             "(",
             "Lio/reactivex/rxjava3/core/Observable<",
-            "LGt3;",
+            "LIw3;",
             ">;)V"
         }
     .end annotation
@@ -755,13 +753,13 @@
     invoke-virtual {p0}, Lcom/snap/composer/people/ComposerAvatarView;->removeAvatarsInfo()V
 
     .line 2
-    new-instance v0, LNg3;
+    new-instance v0, Lqk3;
 
     const/16 v1, 0x10
 
-    invoke-direct {v0, v1, p0}, LNg3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lqk3;-><init>(ILjava/lang/Object;)V
 
-    sget-object v1, Lnq3;->i0:Lnq3;
+    sget-object v1, LLs3;->j0:LLs3;
 
     invoke-virtual {p1, v0, v1}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
@@ -772,16 +770,16 @@
     return-void
 .end method
 
-.method public final setAvatarsInfo(Ljava/util/List;Lyj7;LQ1j;Ljava/lang/Integer;)V
+.method public final setAvatarsInfo(Ljava/util/List;LFo7;Lcrj;Ljava/lang/Integer;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
-            "LTB0;",
+            "LOE0;",
             ">;",
-            "Lyj7;",
-            "LQ1j;",
+            "LFo7;",
+            "Lcrj;",
             "Ljava/lang/Integer;",
             ")V"
         }
@@ -797,7 +795,7 @@
     iput-boolean p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->hasStory:Z
 
     .line 4
-    iget-boolean p1, p2, Lyj7;->g:Z
+    iget-boolean p1, p2, LFo7;->g:Z
 
     if-eqz p1, :cond_0
 
@@ -809,7 +807,7 @@
 
     move-result-object p1
 
-    const p3, 0x7f060208
+    const p3, 0x7f060260
 
     invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -817,26 +815,26 @@
 
     .line 6
     :goto_0
-    iget-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lnw3;
+    iget-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lyz3;
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p3
 
-    const p4, 0x7f070f67
+    const p4, 0x7f070f8e
 
     invoke-virtual {p3, p4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p3
 
-    invoke-virtual {p1, p3, v0}, Lnw3;->e(II)V
+    invoke-virtual {p1, p3, v0}, Lyz3;->e(II)V
 
     .line 7
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    const p3, 0x7f070f66
+    const p3, 0x7f070f8d
 
     invoke-virtual {p1, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -845,12 +843,12 @@
     invoke-virtual {p0, p1}, Lcom/snap/composer/views/ComposerImageView;->setImagePadding(I)V
 
     .line 8
-    iget-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lnw3;
+    iget-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->loadingPlaceholder:Lyz3;
 
     invoke-virtual {p0, p1}, Lcom/snap/composer/views/ComposerImageView;->setPlaceholder(Landroid/graphics/drawable/Drawable;)V
 
     .line 9
-    iget-object p1, p2, Lyj7;->a:Landroid/net/Uri;
+    iget-object p1, p2, LFo7;->a:Landroid/net/Uri;
 
     invoke-virtual {p0, p1}, Lcom/snap/composer/views/ComposerImageView;->setUri(Landroid/net/Uri;)V
 
@@ -861,22 +859,22 @@
     iput-boolean v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->hasStory:Z
 
     .line 11
-    iget-object p2, p0, Lcom/snap/composer/people/ComposerAvatarView;->avatarDrawable:LQC0;
+    iget-object p2, p0, Lcom/snap/composer/people/ComposerAvatarView;->avatarDrawable:LMF0;
 
     if-nez p2, :cond_2
 
     .line 12
-    new-instance p2, LQC0;
+    new-instance p2, LMF0;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     .line 13
-    invoke-direct {p2, v1, p3, v0}, LQC0;-><init>(Landroid/content/Context;LQ1j;Z)V
+    invoke-direct {p2, v1, p3, v0}, LMF0;-><init>(Landroid/content/Context;Lcrj;Z)V
 
     .line 14
-    iput-object p2, p0, Lcom/snap/composer/people/ComposerAvatarView;->avatarDrawable:LQC0;
+    iput-object p2, p0, Lcom/snap/composer/people/ComposerAvatarView;->avatarDrawable:LMF0;
 
     :cond_2
     const/4 p2, 0x0
@@ -885,7 +883,7 @@
     invoke-virtual {p0, p2}, Lcom/snap/composer/views/ComposerImageView;->setPlaceholder(Landroid/graphics/drawable/Drawable;)V
 
     .line 16
-    iget-object v1, p0, Lcom/snap/composer/people/ComposerAvatarView;->avatarDrawable:LQC0;
+    iget-object v1, p0, Lcom/snap/composer/people/ComposerAvatarView;->avatarDrawable:LMF0;
 
     if-eqz p4, :cond_3
 
@@ -910,7 +908,7 @@
 
     .line 19
     :goto_1
-    iput p2, v1, LQC0;->i0:I
+    iput p2, v1, LMF0;->i0:I
 
     const/4 v4, 0x0
 
@@ -923,12 +921,12 @@
     move-object v2, p1
 
     .line 20
-    invoke-static/range {v1 .. v6}, LQC0;->h(LQC0;Ljava/util/List;IILlT0;I)V
+    invoke-static/range {v1 .. v6}, LMF0;->h(LMF0;Ljava/util/List;IILGv0;I)V
 
     .line 21
-    iget-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lnw3;
+    iget-object p1, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lyz3;
 
-    invoke-virtual {p1, v0, v0}, Lnw3;->e(II)V
+    invoke-virtual {p1, v0, v0}, Lyz3;->e(II)V
 
     .line 22
     invoke-virtual {p0, v0}, Lcom/snap/composer/views/ComposerImageView;->setImagePadding(I)V
@@ -1035,7 +1033,7 @@
     .end annotation
 
     .line 1
-    new-instance v0, LgI2;
+    new-instance v0, LEK2;
 
     .line 2
     .line 3
@@ -1043,7 +1041,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, p0, v1, p1}, LgI2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, LEK2;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 6
     .line 7
@@ -1063,11 +1061,11 @@
     .end annotation
 
     .line 1
-    new-instance v0, LJt3;
+    new-instance v0, LLw3;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, LJt3;-><init>(Lcom/snap/composer/callable/ComposerFunction;)V
+    invoke-direct {v0, p1}, LLw3;-><init>(Lcom/snap/composer/callable/ComposerFunction;)V
 
     .line 4
     .line 5
@@ -1079,7 +1077,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lnw3;
+    iget-object v0, p0, Lcom/snap/composer/people/ComposerAvatarView;->circleDrawable:Lyz3;
 
     .line 2
     .line 3

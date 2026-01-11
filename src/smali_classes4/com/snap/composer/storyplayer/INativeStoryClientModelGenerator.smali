@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LVW8;
+    proxyClass = Lw49;
     schema = "\'getNativeStoryClientModels\':f|m|(r:\'[0]\'): p<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/composer/storyplayer/INativeStoryClientModelGenerationRequest;,

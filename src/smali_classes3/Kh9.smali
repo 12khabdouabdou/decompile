@@ -1,194 +1,148 @@
 .class public final LKh9;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
-# interfaces
-.implements LWq;
 
+# static fields
+.field public static final Z:LKh9;
 
-# instance fields
-.field public final a:Lcom/snap/ad_format/AdStickerInfo;
+.field public static final e0:LL4b;
+
+.field public static final f0:LxFc;
+
+.field public static final g0:LL4b;
+
+.field public static final h0:LxFc;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/ad_format/AdStickerInfo;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 13
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, LKh9;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LKh9;->a:Lcom/snap/ad_format/AdStickerInfo;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 2
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LKh9;
-
-    .line 6
-    .line 7
-    if-nez v1, :cond_1
-
-    .line 8
-    .line 9
-    goto :goto_0
-
-    .line 10
-    :cond_1
-    check-cast p1, LKh9;
-
-    .line 11
-    .line 12
-    iget-object p1, p1, LKh9;->a:Lcom/snap/ad_format/AdStickerInfo;
-
-    .line 13
-    .line 14
-    iget-object v1, p0, LKh9;->a:Lcom/snap/ad_format/AdStickerInfo;
-
-    .line 15
-    .line 16
-    invoke-virtual {v1, p1}, Lcom/snap/composer/utils/b;->equals(Ljava/lang/Object;)Z
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p1
-
-    .line 20
-    if-nez p1, :cond_2
-
-    .line 21
-    .line 22
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 23
-    return p1
-
-    .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LKh9;->a:Lcom/snap/ad_format/AdStickerInfo;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    sget-object v0, LNH9;->c1:LNH9;
 
     .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    move-result v0
+    const/16 v3, 0x1c
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 8
-    .line 9
-    sget-object v1, LnDh;->a:LnDh;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "InfoCardSticker(adStickerInfo="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LKh9;->a:Lcom/snap/ad_format/AdStickerInfo;
+    const-string v4, "IN_APP_PASSWORD_CHANGE"
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-direct {v1, v4, v0, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", stickerType="
+    sput-object v1, LKh9;->Z:LKh9;
 
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, LL4b;
 
     .line 16
     .line 17
+    const/4 v9, 0x0
+
     .line 18
-    sget-object v1, LnDh;->a:LnDh;
+    const/4 v10, 0x0
 
     .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string v2, "InAppPasswordChangePage"
 
+    .line 20
     .line 21
+    const/4 v3, 0x0
+
     .line 22
+    const/4 v4, 0x0
+
     .line 23
-    const-string v1, ")"
+    const/4 v5, 0x0
 
     .line 24
+    const/4 v6, 0x0
+
     .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v7, 0x0
 
     .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v8, 0x0
 
+    .line 27
+    const/16 v11, 0x7ffc
+
+    .line 28
     .line 29
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 30
     .line 31
+    .line 32
+    sput-object v0, LKh9;->e0:LL4b;
+
+    .line 33
+    .line 34
+    sget-object v12, Luld;->O:LtOc;
+
+    .line 35
+    .line 36
+    const/4 v2, 0x0
+
+    .line 37
+    invoke-static {v12, v0, v2}, LJea;->h(Luld;LL4b;Z)LxFc;
+
+    .line 38
+    .line 39
+    .line 40
     move-result-object v0
 
-    .line 32
-    return-object v0
+    .line 41
+    sput-object v0, LKh9;->f0:LxFc;
+
+    .line 42
+    .line 43
+    new-instance v0, LL4b;
+
+    .line 44
+    .line 45
+    const-string v2, "PasswordChangeSucceededPage"
+
+    .line 46
+    .line 47
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
+    .line 48
+    .line 49
+    .line 50
+    sput-object v0, LKh9;->g0:LL4b;
+
+    .line 51
+    .line 52
+    const/4 v1, 0x1
+
+    .line 53
+    invoke-static {v12, v0, v1}, LJea;->h(Luld;LL4b;Z)LxFc;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v0
+
+    .line 57
+    sput-object v0, LKh9;->h0:LxFc;
+
+    .line 58
+    .line 59
+    return-void
 .end method

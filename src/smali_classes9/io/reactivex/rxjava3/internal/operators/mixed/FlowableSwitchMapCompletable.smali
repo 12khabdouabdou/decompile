@@ -23,11 +23,11 @@
 # instance fields
 .field public final a:Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDistinctUntilChanged;
 
-.field public final b:Lfq5;
+.field public final b:LLy5;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDistinctUntilChanged;Lfq5;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableDistinctUntilChanged;LLy5;)V
     .locals 0
 
     .line 1
@@ -40,7 +40,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapCompletable;->b:Lfq5;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapCompletable;->b:LLy5;
 
     .line 7
     .line 8
@@ -49,7 +49,7 @@
 
 
 # virtual methods
-.method public final t(Lio/reactivex/rxjava3/core/CompletableObserver;)V
+.method public final s(Lio/reactivex/rxjava3/core/CompletableObserver;)V
     .locals 2
 
     .line 1
@@ -57,11 +57,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapCompletable;->b:Lfq5;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapCompletable;->b:LLy5;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapCompletable$SwitchMapCompletableObserver;-><init>(Lio/reactivex/rxjava3/core/CompletableObserver;Lfq5;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/FlowableSwitchMapCompletable$SwitchMapCompletableObserver;-><init>(Lio/reactivex/rxjava3/core/CompletableObserver;LLy5;)V
 
     .line 6
     .line 7

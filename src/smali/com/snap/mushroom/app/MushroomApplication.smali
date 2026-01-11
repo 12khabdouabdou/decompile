@@ -3,218 +3,226 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lt36;
-.implements LKI8;
-.implements LnI3;
+.implements Lu66;
+.implements LfQ8;
+.implements LOL3;
 
 
 # static fields
-.field public static final Companion:LS6c;
+.field public static final Companion:LAlc;
 
 
 # instance fields
-.field public appDsoPostLoadInitPropertiesProvider:Lbke;
+.field public appDsoPostLoadInitPropertiesProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public appForegroundStateProvider:Lbke;
+.field public appForegroundStateProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public appNativeComponentsLayout:Lbke;
+.field public appNativeComponentsLayout:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public appNativeLoadDelegate:Lbke;
+.field public appNativeLoadDelegate:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public appStartExperimentReader:Lbke;
+.field public appStartExperimentReader:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public appStartupCompleteSignaler:Lbke;
+.field public appStartupCompleteSignaler:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public aserDependencies:Lbke;
+.field public aserDependencies:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
 .field private buildConfigInfo:Lcom/snap/framework/developer/BuildConfigInfo;
 
-.field public circumstanceEngine:Lbke;
+.field public circumstanceEngine:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public clientInitializer:Lbke;
+.field public clientInitializer:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public criticalWorkCoordinator:Lbke;
+.field public criticalWorkCoordinator:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private final ctorTimer:LiFf;
+.field private final ctorTimer:LGYf;
 
-.field public debuggingSupport:Lbke;
+.field public debuggingSupport:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private dependencyGraph:Lf7c;
+.field private dependencyGraph:LOlc;
 
-.field public disposableReleaserProvider:Lbke;
+.field public disposableReleaserProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public flipperSupport:Lbke;
+.field public flipperSupport:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private injectTimer:LiFf;
+.field private injectTimer:LGYf;
 
-.field public leakTracker:Lbke;
+.field public leakTracker:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public memoryMonitor:Lbke;
+.field public memoryMonitor:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public navigationDestinationSignaler:Lbke;
+.field public navigationDestinationSignaler:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public processAgeEstimator:Lbke;
+.field public processAgeEstimator:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public recoveryGamedayExecutor:Lbke;
+.field public recoveryGamedayExecutor:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public schedulersProvider:Lbke;
+.field public schedulersProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public startupDataStoreManager:Lkth;
+.field public startupDataStoreManager:LYQh;
 
-.field private startupJournalManager:Lqth;
+.field private startupJournalManager:LeRh;
 
-.field public startupTraceProducer:Lbke;
+.field public startupTraceProducer:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public testDependencyProvider:Lbke;
+.field public testDependencyProvider:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field private final timber:Lrn0;
+.field private final timber:LJp0;
 
-.field public undeliverableExceptionConsumer:Lbke;
+.field public undeliverableExceptionConsumer:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public userAuthStore:Lbke;
+.field public userAuthStore:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 .end field
 
-.field public workManagerConfigurationBuilder:Lbke;
+.field public userContextCoordinator:LDBe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lbke;"
+            "LDBe;"
+        }
+    .end annotation
+.end field
+
+.field public workManagerConfigurationBuilder:LDBe;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LDBe;"
         }
     .end annotation
 .end field
@@ -225,7 +233,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, LS6c;
+    new-instance v0, LAlc;
 
     .line 2
     .line 3
@@ -234,7 +242,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/mushroom/app/MushroomApplication;->Companion:LS6c;
+    sput-object v0, Lcom/snap/mushroom/app/MushroomApplication;->Companion:LAlc;
 
     .line 7
     .line 8
@@ -254,19 +262,19 @@
     move-result-object v0
 
     .line 16
-    sput-object v0, Led3;->g:Ljava/lang/Long;
+    sput-object v0, LVf3;->g:Ljava/lang/Long;
 
     .line 17
     .line 18
-    sget-object v0, LCw8;->b:LCw8;
+    sget-object v0, LkD8;->b:LkD8;
 
     .line 19
     .line 20
-    sget-object v1, Livd;->l0:Livd;
+    sget-object v1, LWLd;->l0:LWLd;
 
     .line 21
     .line 22
-    invoke-virtual {v0, v1}, LCw8;->b(Livd;)V
+    invoke-virtual {v0, v1}, LkD8;->b(LWLd;)V
 
     .line 23
     .line 24
@@ -277,37 +285,34 @@
 .method public constructor <init>()V
     .locals 3
 
-    const-string v0, "frida-gadget"
-    invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
+    .line 9
+    sget-object v0, LpRh;->c:LpRh;
 
-    .line 13
-    sget-object v0, Lzth;->c:Lzth;
-
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     move-result-object v0
 
-    .line 14
-    sget-object v1, LCw8;->b:LCw8;
+    .line 10
+    sget-object v1, LkD8;->b:LkD8;
 
-    sget-object v2, Livd;->m0:Livd;
+    sget-object v2, LWLd;->m0:LWLd;
 
-    invoke-virtual {v1, v2}, LCw8;->b(Livd;)V
+    invoke-virtual {v1, v2}, LkD8;->b(LWLd;)V
 
-    .line 15
-    invoke-direct {p0, v0}, Lcom/snap/mushroom/app/MushroomApplication;-><init>(LiFf;)V
+    .line 11
+    invoke-direct {p0, v0}, Lcom/snap/mushroom/app/MushroomApplication;-><init>(LGYf;)V
 
     return-void
 .end method
 
-.method private constructor <init>(LiFf;)V
-    .locals 3
+.method private constructor <init>(LGYf;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Lcom/snap/core/application/BaseApplication;-><init>()V
 
     .line 2
-    sget-object v0, Lmth;->Z:Lmth;
+    sget-object v0, LaRh;->Z:LaRh;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -317,10 +322,10 @@
     invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 4
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 5
-    iput-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->timber:Lrn0;
+    iput-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->timber:LJp0;
 
     const/4 v0, -0x4
 
@@ -328,78 +333,209 @@
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
     .line 7
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object v0
-
-    .line 8
-    new-instance v1, LeJe;
-
-    .line 9
-    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
-
-    .line 10
-    new-instance v2, LvNi;
-
-    invoke-direct {v2, v1}, LvNi;-><init>(LeJe;)V
-
-    invoke-static {v0, v2}, LXNa;->a(Landroid/os/Looper;Landroid/util/Printer;)V
-
-    .line 11
-    invoke-virtual {p1}, LiFf;->b()LiFf;
+    invoke-virtual {p1}, LGYf;->b()LGYf;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->ctorTimer:LiFf;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->ctorTimer:LGYf;
 
-    .line 12
-    sget-object p1, LCw8;->b:LCw8;
+    .line 8
+    sget-object p1, LkD8;->b:LkD8;
 
-    sget-object v0, Livd;->n0:Livd;
+    sget-object v0, LWLd;->n0:LWLd;
 
-    invoke-virtual {p1, v0}, LCw8;->b(Livd;)V
+    invoke-virtual {p1, v0}, LkD8;->b(LWLd;)V
 
     return-void
 .end method
 
-.method public static final synthetic access$getDependencyGraph$p(Lcom/snap/mushroom/app/MushroomApplication;)Lf7c;
+.method public static final synthetic access$getDependencyGraph$p(Lcom/snap/mushroom/app/MushroomApplication;)LOlc;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:Lf7c;
+    iget-object p0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:LOlc;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static final synthetic access$getStartupJournalManager$p(Lcom/snap/mushroom/app/MushroomApplication;)Lqth;
+.method public static final synthetic access$getStartupJournalManager$p(Lcom/snap/mushroom/app/MushroomApplication;)LeRh;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:Lqth;
+    iget-object p0, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:LeRh;
 
     .line 2
     .line 3
     return-object p0
 .end method
 
-.method public static final synthetic access$getTimber$p(Lcom/snap/mushroom/app/MushroomApplication;)Lrn0;
+.method public static final synthetic access$getTimber$p(Lcom/snap/mushroom/app/MushroomApplication;)LJp0;
     .locals 0
 
     .line 1
-    iget-object p0, p0, Lcom/snap/mushroom/app/MushroomApplication;->timber:Lrn0;
+    iget-object p0, p0, Lcom/snap/mushroom/app/MushroomApplication;->timber:LJp0;
 
     .line 2
     .line 3
     return-object p0
+.end method
+
+.method private final bindUserContextCoordinator()V
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getUserContextCoordinator()LDBe;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    check-cast v0, LOKj;
+
+    .line 10
+    .line 11
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()LDBe;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
+
+    .line 15
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v1
+
+    .line 19
+    check-cast v1, LyPf;
+
+    .line 20
+    .line 21
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getNavigationDestinationSignaler()LDBe;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    check-cast v1, LgGc;
+
+    .line 30
+    .line 31
+    sget-object v2, LPKj;->Z:LPKj;
+
+    .line 32
+    .line 33
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 34
+    .line 35
+    .line 36
+    new-instance v3, Lnp0;
+
+    .line 37
+    .line 38
+    const-string v4, "UserContextCoordinator.bindToNavigationChanges"
+
+    .line 39
+    .line 40
+    invoke-direct {v3, v2, v4}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
+
+    .line 41
+    .line 42
+    .line 43
+    new-instance v2, LnJe;
+
+    .line 44
+    .line 45
+    invoke-direct {v2, v3}, LnJe;-><init>(Lnp0;)V
+
+    .line 46
+    .line 47
+    .line 48
+    iget-object v1, v1, LgGc;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
+    .line 49
+    .line 50
+    invoke-virtual {v2}, LnJe;->g()LA36;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v2
+
+    .line 54
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 55
+    .line 56
+    .line 57
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+
+    .line 58
+    .line 59
+    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 60
+    .line 61
+    .line 62
+    new-instance v1, LaGi;
+
+    .line 63
+    .line 64
+    const/4 v2, 0x3
+
+    .line 65
+    invoke-direct {v1, v2, v0}, LaGi;-><init>(ILjava/lang/Object;)V
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v3, v1}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v0
+
+    .line 72
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 73
+    .line 74
+    .line 75
+    return-void
 .end method
 
 .method private final createStartupJournalManager(Landroid/content/Context;)V
     .locals 6
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -407,7 +543,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -416,11 +552,11 @@
 
     .line 9
     :try_start_0
-    sget v2, Led3;->b:I
+    sget v2, LVf3;->b:I
 
     .line 10
     .line 11
-    invoke-static {v2}, Llva;->L(I)I
+    invoke-static {v2}, LzHa;->L(I)I
 
     .line 12
     .line 13
@@ -449,7 +585,7 @@
 
     .line 23
     .line 24
-    sget-object v2, Led3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    sget-object v2, LVf3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 25
     .line 26
@@ -465,7 +601,7 @@
 
     .line 31
     :cond_0
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 32
     .line 33
@@ -491,16 +627,16 @@
 
     .line 41
     .line 42
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 43
     .line 44
     .line 45
-    new-instance v2, LbEe;
+    new-instance v2, Laqk;
 
     .line 46
     .line 47
-    new-instance v3, LOze;
+    new-instance v3, LFRe;
 
     .line 48
     .line 49
@@ -509,7 +645,7 @@
     .line 50
     .line 51
     .line 52
-    new-instance v4, LvX1;
+    new-instance v4, LW02;
 
     .line 53
     .line 54
@@ -517,17 +653,17 @@
 
     .line 55
     .line 56
-    invoke-direct {v4, v5, p1}, LvX1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v4, v5, p1}, LW02;-><init>(ILjava/lang/Object;)V
 
     .line 57
     .line 58
     .line 59
-    invoke-direct {v2, v3, v4}, LbEe;-><init>(LOze;LvX1;)V
+    invoke-direct {v2, v3, v4}, Laqk;-><init>(LFRe;LW02;)V
 
     .line 60
     .line 61
     .line 62
-    invoke-virtual {v2}, LbEe;->b()Lsz9;
+    invoke-virtual {v2}, Laqk;->b()LII9;
 
     .line 63
     .line 64
@@ -543,18 +679,18 @@
 
     .line 68
     :cond_3
-    sget-object v2, LGzg;->s0:LGzg;
+    sget-object v2, LlLf;->F0:LlLf;
 
     .line 69
     .line 70
     :goto_1
-    iput-object v2, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:Lqth;
+    iput-object v2, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:LeRh;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 71
     .line 72
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 73
     .line 74
@@ -563,7 +699,7 @@
 
     .line 76
     :goto_2
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 77
     .line 78
@@ -571,7 +707,7 @@
 
     .line 79
     .line 80
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
 
     .line 81
     .line 82
@@ -596,7 +732,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 8
     .line 9
@@ -609,7 +745,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 15
     .line 16
@@ -617,7 +753,7 @@
     move-result-object v0
 
     .line 18
-    iget-boolean v0, v0, LeNe;->b:Z
+    iget-boolean v0, v0, La5f;->b:Z
 
     .line 19
     .line 20
@@ -625,7 +761,7 @@
 
     .line 21
     .line 22
-    sget-object v0, Lq4i;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sget-object v0, LIsi;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 23
     .line 24
@@ -633,177 +769,176 @@
 
     .line 25
     .line 26
-    new-instance v1, LyF8;
+    new-instance v1, LBlc;
 
     .line 27
     .line 28
-    const/16 v2, 0x8
+    const/4 v2, 0x0
 
     .line 29
-    .line 30
-    invoke-direct {v1, p0, v2}, LyF8;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+    invoke-direct {v1, p0, v2}, LBlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
+    .line 30
     .line 31
     .line 32
-    .line 33
     const-string v2, "unstrict:"
 
+    .line 33
     .line 34
-    .line 35
     :try_start_0
-    sget-object v3, Lq4i;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sget-object v3, LIsi;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
+    .line 35
     .line 36
-    .line 37
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
+    .line 37
     .line 38
     .line 39
-    .line 40
     move-result v4
 
-    .line 41
+    .line 40
     const/4 v5, 0x1
 
-    .line 42
+    .line 41
     if-ne v4, v5, :cond_0
 
+    .line 42
     .line 43
+    sget-object v4, La5f;->c:LQS9;
+
     .line 44
-    sget-object v4, LeNe;->c:LrH9;
-
     .line 45
-    .line 46
-    invoke-static {}, LHHd;->q()LeNe;
+    invoke-static {}, LtOc;->n()La5f;
 
+    .line 46
     .line 47
     .line 48
-    .line 49
     :cond_0
     invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 49
     .line 50
     .line 51
-    .line 52
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
+    .line 52
     .line 53
-    .line 54
     const-string v2, "<*>"
 
+    .line 54
     .line 55
-    .line 56
-    invoke-virtual {v0, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v2}, LNdh;->e(Ljava/lang/String;)I
 
+    .line 56
     .line 57
     .line 58
-    .line 59
     move-result v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 60
+    .line 59
     :try_start_1
-    invoke-virtual {v1}, LyF8;->invoke()Ljava/lang/Object;
+    invoke-virtual {v1}, LBlc;->d()Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
+    .line 60
     .line 61
     .line 62
-    .line 63
     :try_start_2
-    invoke-virtual {v0, v2}, LWRg;->h(I)V
+    invoke-virtual {v0, v2}, LNdh;->h(I)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
+    .line 63
     .line 64
     .line 65
-    .line 66
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
+    .line 66
     .line 67
     .line 68
-    .line 69
     move-result v0
 
-    .line 70
+    .line 69
     if-nez v0, :cond_3
 
+    .line 70
     .line 71
+    sget-object v0, La5f;->c:LQS9;
+
     .line 72
-    sget-object v0, LeNe;->c:LrH9;
-
     .line 73
-    .line 74
-    invoke-static {}, LHHd;->q()LeNe;
+    invoke-static {}, LtOc;->n()La5f;
 
+    .line 74
     .line 75
     .line 76
-    .line 77
     return-void
 
-    .line 78
+    .line 77
     :catchall_0
     move-exception v0
 
-    .line 79
+    .line 78
     goto :goto_0
 
-    .line 80
+    .line 79
     :catchall_1
     move-exception v0
 
-    .line 81
+    .line 80
     :try_start_3
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
+    .line 81
     .line 82
-    .line 83
     if-eqz v1, :cond_1
 
+    .line 83
     .line 84
-    .line 85
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
 
+    .line 85
     .line 86
     .line 87
-    .line 88
     :cond_1
     throw v0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 89
+    .line 88
     :goto_0
-    sget-object v1, Lq4i;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sget-object v1, LIsi;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
+    .line 89
     .line 90
-    .line 91
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
+    .line 91
     .line 92
     .line 93
-    .line 94
     move-result v1
 
-    .line 95
+    .line 94
     if-nez v1, :cond_2
 
+    .line 95
     .line 96
+    sget-object v1, La5f;->c:LQS9;
+
     .line 97
-    sget-object v1, LeNe;->c:LrH9;
-
     .line 98
-    .line 99
-    invoke-static {}, LHHd;->q()LeNe;
+    invoke-static {}, LtOc;->n()La5f;
 
+    .line 99
     .line 100
     .line 101
-    .line 102
     :cond_2
     throw v0
 
-    .line 103
+    .line 102
     :cond_3
     return-void
 .end method
@@ -812,7 +947,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 2
     .line 3
@@ -825,7 +960,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 9
     .line 10
@@ -873,7 +1008,7 @@
 
     .line 14
     .line 15
-    invoke-static {v1, v2}, Llva;->x(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2}, LzHa;->x(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 16
     .line 17
@@ -886,24 +1021,24 @@
     .line 20
     .line 21
     .line 22
-    sget-object v1, Lq4i;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sget-object v1, LIsi;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 23
     .line 24
-    new-instance v1, LYNa;
+    new-instance v1, LKua;
 
     .line 25
     .line 26
-    const/16 v2, 0xa
+    const/16 v2, 0x17
 
     .line 27
     .line 28
-    invoke-direct {v1, v2, v0}, LYNa;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, v0}, LKua;-><init>(ILjava/lang/Object;)V
 
     .line 29
     .line 30
     .line 31
-    invoke-static {v1}, LHHd;->t(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+    invoke-static {v1}, LCHf;->r(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -930,7 +1065,7 @@
     .locals 7
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -938,7 +1073,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -947,15 +1082,15 @@
 
     .line 9
     :try_start_0
-    sget-object v1, LCw8;->b:LCw8;
+    sget-object v1, LkD8;->b:LkD8;
 
     .line 10
     .line 11
-    sget-object v2, Livd;->X:Livd;
+    sget-object v2, LWLd;->X:LWLd;
 
     .line 12
     .line 13
-    invoke-virtual {v1, v2}, LCw8;->b(Livd;)V
+    invoke-virtual {v1, v2}, LkD8;->b(LWLd;)V
 
     .line 14
     .line 15
@@ -987,7 +1122,7 @@
     .line 27
     .line 28
     :try_start_1
-    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:Lqth;
+    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:LeRh;
 
     .line 29
     .line 30
@@ -995,7 +1130,7 @@
 
     .line 31
     .line 32
-    invoke-interface {v1, p1}, Lqth;->e(Landroid/content/Context;)V
+    invoke-interface {v1, p1}, LeRh;->d(Landroid/content/Context;)V
 
     .line 33
     .line 34
@@ -1011,7 +1146,7 @@
 
     .line 38
     :cond_0
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -1024,7 +1159,7 @@
     .line 42
     :catch_0
     :try_start_2
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 43
     .line 44
@@ -1039,7 +1174,7 @@
     .line 49
     :cond_1
     :goto_0
-    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:Lqth;
+    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:LeRh;
 
     .line 50
     .line 51
@@ -1050,12 +1185,12 @@
     const/4 v3, 0x3
 
     .line 54
-    invoke-interface {v1, v3}, Lqth;->f(I)V
+    invoke-interface {v1, v3}, LeRh;->g(I)V
 
     .line 55
     .line 56
     .line 57
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 58
     .line 59
@@ -1063,7 +1198,7 @@
     move-result-object v1
 
     .line 61
-    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:Lqth;
+    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupJournalManager:LeRh;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1074,15 +1209,15 @@
     .line 64
     .line 65
     :try_start_3
-    new-instance v2, LaC6;
+    new-instance v2, LyF6;
 
     .line 66
     .line 67
-    new-instance v4, LHHd;
+    new-instance v4, LtOc;
 
     .line 68
     .line 69
-    new-instance v5, LOze;
+    new-instance v5, LFRe;
 
     .line 70
     .line 71
@@ -1091,30 +1226,30 @@
     .line 72
     .line 73
     .line 74
-    invoke-direct {v4, v5}, LHHd;-><init>(LOze;)V
+    invoke-direct {v4, v5}, LtOc;-><init>(LFRe;)V
 
     .line 75
     .line 76
     .line 77
-    new-instance v5, LcEd;
+    new-instance v5, LFVd;
 
     .line 78
     .line 79
-    invoke-direct {v5, v1}, LcEd;-><init>(LeNe;)V
+    invoke-direct {v5, v1}, LFVd;-><init>(La5f;)V
 
     .line 80
     .line 81
     .line 82
-    new-instance v6, LaA2;
+    new-instance v6, LMC2;
 
     .line 83
     .line 84
-    invoke-direct {v6, v1}, LaA2;-><init>(LeNe;)V
+    invoke-direct {v6, v1}, LMC2;-><init>(La5f;)V
 
     .line 85
     .line 86
     .line 87
-    invoke-direct {v2, v3, v4, v5, v6}, LaC6;-><init>(Lqth;LHHd;LcEd;LaA2;)V
+    invoke-direct {v2, v3, v4, v5, v6}, LyF6;-><init>(LeRh;LtOc;LFVd;LMC2;)V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -1127,36 +1262,36 @@
     .line 91
     :catch_1
     :try_start_4
-    sget-object v2, LNFe;->s0:LNFe;
+    sget-object v2, LjMd;->v0:LjMd;
 
     .line 92
     .line 93
     :goto_1
-    invoke-interface {v2, p1}, LEth;->a(Landroid/content/Context;)Z
+    invoke-interface {v2, p1}, LuRh;->a(Landroid/content/Context;)Z
 
     .line 94
     .line 95
     .line 96
-    sput-object v2, LrUi;->c:LEth;
+    sput-object v2, LMC8;->X:LuRh;
 
     .line 97
     .line 98
-    sget-object p1, LCw8;->b:LCw8;
+    sget-object p1, LkD8;->b:LkD8;
 
     .line 99
     .line 100
-    sget-object v1, Livd;->e0:Livd;
+    sget-object v1, LWLd;->e0:LWLd;
 
     .line 101
     .line 102
-    invoke-virtual {p1, v1}, LCw8;->b(Livd;)V
+    invoke-virtual {p1, v1}, LkD8;->b(LWLd;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
     .line 103
     .line 104
     .line 105
-    sget-object p1, LXRg;->b:Lzhi;
+    sget-object p1, LOdh;->b:LtGi;
 
     .line 106
     .line 107
@@ -1164,7 +1299,7 @@
 
     .line 108
     .line 109
-    invoke-virtual {p1, v0}, Lzhi;->o(I)V
+    invoke-virtual {p1, v0}, LtGi;->o(I)V
 
     .line 110
     .line 111
@@ -1175,7 +1310,7 @@
     .line 113
     :cond_3
     :try_start_5
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 114
     .line 115
@@ -1184,7 +1319,7 @@
 
     .line 117
     :cond_4
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 118
     .line 119
@@ -1195,7 +1330,7 @@
 
     .line 121
     :goto_2
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
     .line 122
     .line 123
@@ -1203,7 +1338,7 @@
 
     .line 124
     .line 125
-    invoke-virtual {v1, v0}, Lzhi;->o(I)V
+    invoke-virtual {v1, v0}, LtGi;->o(I)V
 
     .line 126
     .line 127
@@ -1216,7 +1351,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 2
     .line 3
@@ -1236,20 +1371,20 @@
     .locals 2
 
     .line 1
-    sget-object v0, LBw8;->b:LBw8;
+    sget-object v0, LjD8;->b:LjD8;
 
     .line 2
     .line 3
-    new-instance v1, LT6c;
+    new-instance v1, LClc;
 
     .line 4
     .line 5
-    invoke-direct {v1, p0}, LT6c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;)V
+    invoke-direct {v1, p0}, LClc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, LBw8;->b(LsY;)V
+    invoke-virtual {v0, v1}, LjD8;->b(LO00;)V
 
     .line 9
     .line 10
@@ -1261,7 +1396,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Ld10;->Z:Ld10;
+    sget-object v0, LI30;->Z:LI30;
 
     .line 2
     .line 3
@@ -1270,7 +1405,7 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, LWm0;
+    new-instance v1, Lnp0;
 
     .line 7
     .line 8
@@ -1278,12 +1413,12 @@
 
     .line 9
     .line 10
-    invoke-direct {v1, v0, v2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v2}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppStartupCompleteSignaler()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppStartupCompleteSignaler()LDBe;
 
     .line 14
     .line 15
@@ -1291,7 +1426,7 @@
     move-result-object v0
 
     .line 17
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 18
     .line 19
@@ -1299,15 +1434,15 @@
     move-result-object v0
 
     .line 21
-    check-cast v0, LY00;
+    check-cast v0, LD30;
 
     .line 22
     .line 23
-    iget-object v0, v0, LY00;->f:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+    iget-object v0, v0, LD30;->e:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 24
     .line 25
-    sget-object v2, Lx06;->q0:Lx06;
+    sget-object v2, LxF6;->A0:LxF6;
 
     .line 26
     .line 27
@@ -1334,7 +1469,7 @@
     .line 38
     .line 39
     .line 40
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()LDBe;
 
     .line 41
     .line 42
@@ -1342,7 +1477,7 @@
     move-result-object v2
 
     .line 44
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v2}, LDBe;->get()Ljava/lang/Object;
 
     .line 45
     .line 46
@@ -1350,15 +1485,15 @@
     move-result-object v2
 
     .line 48
-    check-cast v2, Lnwf;
+    check-cast v2, LyPf;
 
     .line 49
     .line 50
-    check-cast v2, LIP5;
+    check-cast v2, LTT5;
 
     .line 51
     .line 52
-    invoke-static {v2, v1}, Llva;->m(LIP5;LWm0;)LF06;
+    invoke-static {v2, v1}, LzHa;->n(LTT5;Lnp0;)LA36;
 
     .line 53
     .line 54
@@ -1375,26 +1510,26 @@
     .line 59
     .line 60
     .line 61
-    new-instance v0, LU6c;
+    new-instance v0, LDlc;
 
     .line 62
     .line 63
     const/4 v2, 0x0
 
     .line 64
-    invoke-direct {v0, p0, v2}, LU6c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+    invoke-direct {v0, p0, v2}, LDlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
     .line 65
     .line 66
     .line 67
-    new-instance v2, LU6c;
+    new-instance v2, LDlc;
 
     .line 68
     .line 69
     const/4 v4, 0x1
 
     .line 70
-    invoke-direct {v2, p0, v4}, LU6c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+    invoke-direct {v2, p0, v4}, LDlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
     .line 71
     .line 72
@@ -1410,7 +1545,7 @@
     move-result-object v0
 
     .line 78
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()LDBe;
 
     .line 79
     .line 80
@@ -1418,7 +1553,7 @@
     move-result-object v2
 
     .line 82
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v2}, LDBe;->get()Ljava/lang/Object;
 
     .line 83
     .line 84
@@ -1426,11 +1561,11 @@
     move-result-object v2
 
     .line 86
-    check-cast v2, LWq6;
+    check-cast v2, Liu6;
 
     .line 87
     .line 88
-    invoke-virtual {v2, v1, v0}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+    invoke-virtual {v2, v1, v0}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
 
     .line 89
     .line 90
@@ -1442,7 +1577,7 @@
     .locals 4
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()LDBe;
 
     .line 2
     .line 3
@@ -1450,7 +1585,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -1458,11 +1593,11 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, Lnwf;
+    check-cast v0, LyPf;
 
     .line 10
     .line 11
-    sget-object v1, LlA8;->Z:LlA8;
+    sget-object v1, LnH8;->Z:LnH8;
 
     .line 12
     .line 13
@@ -1471,7 +1606,7 @@
     .line 14
     .line 15
     .line 16
-    new-instance v2, LWm0;
+    new-instance v2, Lnp0;
 
     .line 17
     .line 18
@@ -1479,12 +1614,12 @@
 
     .line 19
     .line 20
-    invoke-direct {v2, v1, v3}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v2, v1, v3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 21
     .line 22
     .line 23
-    check-cast v0, LIP5;
+    check-cast v0, LTT5;
 
     .line 24
     .line 25
@@ -1493,16 +1628,16 @@
     .line 26
     .line 27
     .line 28
-    new-instance v0, LBre;
+    new-instance v0, LnJe;
 
     .line 29
     .line 30
-    invoke-direct {v0, v2}, LBre;-><init>(LWm0;)V
+    invoke-direct {v0, v2}, LnJe;-><init>(Lnp0;)V
 
     .line 31
     .line 32
     .line 33
-    invoke-virtual {v0}, LBre;->k()LF06;
+    invoke-virtual {v0}, LnJe;->k()LA36;
 
     .line 34
     .line 35
@@ -1510,14 +1645,14 @@
     move-result-object v0
 
     .line 37
-    new-instance v1, LW6c;
+    new-instance v1, LFlc;
 
     .line 38
     .line 39
     const/4 v2, 0x0
 
     .line 40
-    invoke-direct {v1, p0, v2}, LW6c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+    invoke-direct {v1, p0, v2}, LFlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
     .line 41
     .line 42
@@ -1538,11 +1673,11 @@
 
     .line 2
     .line 3
-    sget-object v1, LTy8;->f:LUIi;
+    sget-object v1, LHF8;->f:LCHf;
 
     .line 4
     .line 5
-    invoke-virtual {v1, p1}, LUIi;->d(Landroid/content/Context;)LTy8;
+    invoke-virtual {v1, p1}, LCHf;->o(Landroid/content/Context;)LHF8;
 
     .line 6
     .line 7
@@ -1550,7 +1685,7 @@
     move-result-object v1
 
     .line 9
-    invoke-virtual {v1}, LTy8;->m()Z
+    invoke-virtual {v1}, LHF8;->m()Z
 
     .line 10
     .line 11
@@ -1567,15 +1702,15 @@
     .line 16
     :cond_0
     :try_start_0
-    sget-object v1, LY69;->b:LV69;
+    sget-object v1, LBe9;->b:Lxe9;
 
     .line 17
     .line 18
-    sget-object v1, LyMe;->X:LyMe;
+    sget-object v1, Lr4f;->X:Lr4f;
 
     .line 19
     .line 20
-    invoke-static {p1, v1}, Lsc5;->F0(Landroid/content/Context;LY69;)LMb1;
+    invoke-static {p1, v1}, LQIc;->G(Landroid/content/Context;LBe9;)LRoh;
 
     .line 21
     .line 22
@@ -1583,14 +1718,14 @@
     move-result-object p1
 
     .line 24
-    invoke-virtual {p1}, LMb1;->v()V
+    invoke-virtual {p1}, LRoh;->u()V
 
     .line 25
     .line 26
     .line 27
-    sput-object v0, LTV5;->e:Ljava/lang/String;
+    sput-object v0, LpZ5;->e:Ljava/lang/String;
     :try_end_0
-    .catch Lzk9; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lct9; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 28
     .line 29
@@ -1601,7 +1736,7 @@
     move-exception p1
 
     .line 31
-    sput-object p1, LTV5;->d:Lzk9;
+    sput-object p1, LpZ5;->d:Lct9;
 
     .line 32
     .line 33
@@ -1609,11 +1744,11 @@
     return-void
 .end method
 
-.method private final readSnapSchedulersConfigOrDefault()LnPg;
+.method private final readSnapSchedulersConfigOrDefault()Ltbh;
     .locals 8
 
     .line 1
-    new-instance v0, LbEe;
+    new-instance v0, Lbph;
 
     .line 2
     .line 3
@@ -1625,12 +1760,12 @@
     move-result-object v1
 
     .line 7
-    invoke-direct {v0, v1}, LbEe;-><init>(Landroid/app/Application;)V
+    invoke-direct {v0, v1}, Lbph;-><init>(Landroid/content/ContextWrapper;)V
 
     .line 8
     .line 9
     .line 10
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 11
     .line 12
@@ -1638,7 +1773,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 15
     .line 16
@@ -1657,7 +1792,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {v1, v5}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v5}, LNdh;->e(Ljava/lang/String;)I
 
     .line 23
     .line 24
@@ -1669,11 +1804,11 @@
 
     .line 26
     :try_start_1
-    sget-object v6, Lmgi;->A0:Lh0k;
+    sget-object v6, Lcd0;->c:Llqk;
 
     .line 27
     .line 28
-    invoke-virtual {v6}, Lh0k;->b1()Z
+    invoke-virtual {v6}, Llqk;->t1()Z
 
     .line 29
     .line 30
@@ -1685,11 +1820,11 @@
 
     .line 33
     .line 34
-    sget-object v7, LRud;->S1:LRud;
+    sget-object v7, LALd;->P1:LALd;
 
     .line 35
     .line 36
-    invoke-virtual {v6, v7}, Lh0k;->H(LRud;)Z
+    invoke-virtual {v6, v7}, Llqk;->M(LALd;)Z
 
     .line 37
     .line 38
@@ -1722,7 +1857,7 @@
     .line 47
     :goto_0
     :try_start_2
-    invoke-virtual {v1, v5}, LWRg;->h(I)V
+    invoke-virtual {v1, v5}, LNdh;->h(I)V
 
     .line 48
     .line 49
@@ -1731,7 +1866,7 @@
 
     .line 51
     .line 52
-    invoke-static {}, LbEe;->r()LnPg;
+    invoke-static {}, Lbph;->m()Ltbh;
 
     .line 53
     .line 54
@@ -1761,7 +1896,7 @@
     .line 61
     :cond_1
     :try_start_3
-    invoke-virtual {v0}, LbEe;->s()LnPg;
+    invoke-virtual {v0}, Lbph;->n()Ltbh;
 
     .line 62
     .line 63
@@ -1787,7 +1922,7 @@
     .line 69
     :goto_1
     :try_start_4
-    sget-object v6, LXRg;->b:Lzhi;
+    sget-object v6, LOdh;->b:LtGi;
 
     .line 70
     .line 71
@@ -1795,7 +1930,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {v6, v5}, Lzhi;->o(I)V
+    invoke-virtual {v6, v5}, LtGi;->o(I)V
 
     .line 74
     .line 75
@@ -1809,117 +1944,114 @@
     .line 77
     :goto_2
     :try_start_5
-    sget-object v5, LeNe;->c:LrH9;
+    sget-object v5, La5f;->c:LQS9;
 
     .line 78
     .line 79
-    invoke-static {}, LHHd;->u()LeNe;
+    invoke-static {}, LtOc;->p()La5f;
 
     .line 80
     .line 81
     .line 82
-    iget-object v5, v0, LbEe;->c:Ljava/lang/Object;
+    iget-object v5, v0, Lbph;->c:Ljava/lang/Object;
 
     .line 83
     .line 84
-    check-cast v5, LkT6;
+    check-cast v5, LjX6;
 
     .line 85
     .line 86
-    const/4 v6, 0x0
-
-    .line 87
     if-eqz v5, :cond_3
 
+    .line 87
     .line 88
+    new-instance v6, LtU6;
+
     .line 89
-    new-instance v7, LFQ6;
-
     .line 90
-    .line 91
-    invoke-direct {v7}, LFQ6;-><init>()V
+    invoke-direct {v6}, LtU6;-><init>()V
 
+    .line 91
     .line 92
     .line 93
-    .line 94
-    invoke-virtual {v7, v3}, LFQ6;->setSnapSchedulerConfigs(I)LFQ6;
+    invoke-virtual {v6, v3}, LtU6;->setSnapSchedulerConfigs(I)LtU6;
 
+    .line 94
     .line 95
     .line 96
-    .line 97
     move-result-object v3
 
+    .line 97
+    iget-object v6, v0, Lbph;->t:Ljava/lang/Object;
+
     .line 98
-    iget-object v7, v0, LbEe;->t:Ljava/lang/Object;
-
     .line 99
+    check-cast v6, Lnp0;
+
     .line 100
-    check-cast v7, LWm0;
-
     .line 101
-    .line 102
-    invoke-interface {v5, v3, v1, v7, v6}, LkT6;->c(LFQ6;Ljava/lang/Throwable;LWm0;LURb;)V
+    invoke-static {v5, v3, v1, v6}, LdWk;->e(LjX6;LtU6;Ljava/lang/Throwable;Lnp0;)V
 
+    .line 102
     .line 103
     .line 104
-    .line 105
     :cond_3
     if-eqz v4, :cond_4
 
+    .line 105
     .line 106
-    .line 107
-    invoke-virtual {v0}, LbEe;->n()V
+    invoke-virtual {v0}, Lbph;->b()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
+    .line 107
     .line 108
     .line 109
-    .line 110
     :cond_4
-    move-object v0, v6
+    const/4 v0, 0x0
+
+    .line 110
+    :goto_3
+    sget-object v1, LOdh;->b:LtGi;
 
     .line 111
-    :goto_3
-    sget-object v1, LXRg;->b:Lzhi;
-
     .line 112
-    .line 113
     if-eqz v1, :cond_5
 
+    .line 113
     .line 114
-    .line 115
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
 
+    .line 115
     .line 116
     .line 117
-    .line 118
     :cond_5
     if-nez v0, :cond_6
 
+    .line 118
     .line 119
-    .line 120
-    sget-object v0, LnPg;->o:LnPg;
+    sget-object v0, Ltbh;->o:Ltbh;
 
+    .line 120
     .line 121
-    .line 122
     :cond_6
     return-object v0
 
-    .line 123
+    .line 122
     :goto_4
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
+    .line 123
     .line 124
-    .line 125
     if-eqz v1, :cond_7
 
+    .line 125
     .line 126
-    .line 127
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
 
+    .line 127
     .line 128
     .line 129
-    .line 130
     :cond_7
     throw v0
 .end method
@@ -1928,11 +2060,11 @@
     .locals 4
 
     .line 1
-    new-instance v0, LWm0;
+    new-instance v0, Lnp0;
 
     .line 2
     .line 3
-    sget-object v1, LuY;->Z:LuY;
+    sget-object v1, LQ00;->Z:LQ00;
 
     .line 4
     .line 5
@@ -1940,16 +2072,16 @@
 
     .line 6
     .line 7
-    invoke-direct {v0, v1, v2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    sget-object v1, LpPg;->a:LpPg;
+    sget-object v1, Lvbh;->a:Lvbh;
 
     .line 11
     .line 12
-    invoke-static {}, LpPg;->g()LlPg;
+    invoke-static {}, Lvbh;->g()Lrbh;
 
     .line 13
     .line 14
@@ -1957,11 +2089,11 @@
     move-result-object v1
 
     .line 16
-    iget-object v1, v1, LlPg;->j0:Lobi;
+    iget-object v1, v1, Lrbh;->j0:LiAi;
 
     .line 17
     .line 18
-    invoke-interface {v1}, Lobi;->get()Ljava/lang/Object;
+    invoke-interface {v1}, LiAi;->get()Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -1969,24 +2101,24 @@
     move-result-object v1
 
     .line 22
-    check-cast v1, Lpg4;
+    check-cast v1, Lel4;
 
     .line 23
     .line 24
-    sget-object v2, LBw8;->b:LBw8;
+    sget-object v2, LjD8;->b:LjD8;
 
     .line 25
     .line 26
-    new-instance v3, LX6c;
+    new-instance v3, LGlc;
 
     .line 27
     .line 28
-    invoke-direct {v3, v1, v0}, LX6c;-><init>(Lpg4;LWm0;)V
+    invoke-direct {v3, v1, v0}, LGlc;-><init>(Lel4;Lnp0;)V
 
     .line 29
     .line 30
     .line 31
-    invoke-virtual {v2, v3}, LBw8;->b(LsY;)V
+    invoke-virtual {v2, v3}, LjD8;->b(LO00;)V
 
     .line 32
     .line 33
@@ -2014,45 +2146,44 @@
 
     .line 8
     .line 9
-    sget-object v0, Lq4i;->a:Ljava/util/concurrent/atomic/AtomicInteger;
+    sget-object v0, LIsi;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 10
     .line 11
-    new-instance v0, LyF8;
+    new-instance v0, LBlc;
 
     .line 12
     .line 13
-    const/16 v1, 0x9
+    const/4 v1, 0x1
 
     .line 14
-    .line 15
-    invoke-direct {v0, p0, v1}, LyF8;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+    invoke-direct {v0, p0, v1}, LBlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
+    .line 15
     .line 16
     .line 17
-    .line 18
-    invoke-static {v0}, LHHd;->t(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
+    invoke-static {v0}, LCHf;->r(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;
 
+    .line 18
     .line 19
     .line 20
-    .line 21
     :cond_0
     return-void
 
-    .line 22
+    .line 21
     :cond_1
     const-string v0, "buildConfigInfo"
 
+    .line 22
     .line 23
-    .line 24
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 24
     .line 25
     .line 26
-    .line 27
     const/4 v0, 0x0
 
-    .line 28
+    .line 27
     throw v0
 .end method
 
@@ -2060,7 +2191,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppNativeLoadDelegate()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppNativeLoadDelegate()LDBe;
 
     .line 2
     .line 3
@@ -2068,7 +2199,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -2085,7 +2216,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppNativeComponentsLayout()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppNativeComponentsLayout()LDBe;
 
     .line 15
     .line 16
@@ -2093,7 +2224,7 @@
     move-result-object v0
 
     .line 18
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 19
     .line 20
@@ -2110,7 +2241,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppDsoPostLoadInitPropertiesProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppDsoPostLoadInitPropertiesProvider()LDBe;
 
     .line 28
     .line 29
@@ -2118,7 +2249,7 @@
     move-result-object v0
 
     .line 31
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 32
     .line 33
@@ -2147,7 +2278,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getUndeliverableExceptionConsumer()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getUndeliverableExceptionConsumer()LDBe;
 
     .line 5
     .line 6
@@ -2155,7 +2286,7 @@
     move-result-object v0
 
     .line 8
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -2167,28 +2298,28 @@
 
     .line 13
     .line 14
-    sget-object v1, LbPg;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v1, Lgbh;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 15
     .line 16
-    sget-object v1, Lio/reactivex/rxjava3/plugins/RxJavaPlugins;->a:Lfxc;
+    sget-object v1, Lio/reactivex/rxjava3/plugins/RxJavaPlugins;->a:Lwmc;
 
     .line 17
     .line 18
-    new-instance v2, Lfxc;
+    new-instance v2, Lwmc;
 
     .line 19
     .line 20
-    const/16 v3, 0x8
+    const/16 v3, 0xd
 
     .line 21
     .line 22
-    invoke-direct {v2, v0, v3, v1}, Lfxc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v2, v0, v3, v1}, Lwmc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 23
     .line 24
     .line 25
-    sput-object v2, Lio/reactivex/rxjava3/plugins/RxJavaPlugins;->a:Lfxc;
+    sput-object v2, Lio/reactivex/rxjava3/plugins/RxJavaPlugins;->a:Lwmc;
 
     .line 26
     .line 27
@@ -2199,11 +2330,11 @@
     .locals 2
 
     .line 1
-    sget-object v0, LpPg;->a:LpPg;
+    sget-object v0, Lvbh;->a:Lvbh;
 
     .line 2
     .line 3
-    invoke-static {}, LpPg;->g()LlPg;
+    invoke-static {}, Lvbh;->g()Lrbh;
 
     .line 4
     .line 5
@@ -2211,15 +2342,15 @@
     move-result-object v0
 
     .line 7
-    iget-object v0, v0, LlPg;->a:LnPg;
+    iget-object v0, v0, Lrbh;->a:Ltbh;
 
     .line 8
     .line 9
-    iget-object v0, v0, LnPg;->e:LfMg;
+    iget-object v0, v0, Ltbh;->e:LP7h;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, LfMg;->a()Z
+    invoke-virtual {v0}, LP7h;->a()Z
 
     .line 12
     .line 13
@@ -2235,7 +2366,7 @@
 
     .line 18
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getNavigationDestinationSignaler()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getNavigationDestinationSignaler()LDBe;
 
     .line 19
     .line 20
@@ -2243,7 +2374,7 @@
     move-result-object v0
 
     .line 22
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 23
     .line 24
@@ -2251,15 +2382,15 @@
     move-result-object v0
 
     .line 26
-    check-cast v0, LOqc;
+    check-cast v0, LgGc;
 
     .line 27
     .line 28
-    iget-object v0, v0, LOqc;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    iget-object v0, v0, LgGc;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 29
     .line 30
-    sget-object v1, LsH0;->B0:LsH0;
+    sget-object v1, Liia;->Y:Liia;
 
     .line 31
     .line 32
@@ -2268,7 +2399,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-static {}, LpPg;->g()LlPg;
+    invoke-static {}, Lvbh;->g()Lrbh;
 
     .line 36
     .line 37
@@ -2276,15 +2407,15 @@
     move-result-object v0
 
     .line 39
-    iget-object v0, v0, LlPg;->a:LnPg;
+    iget-object v0, v0, Lrbh;->a:Ltbh;
 
     .line 40
     .line 41
-    iget-object v0, v0, LnPg;->e:LfMg;
+    iget-object v0, v0, Ltbh;->e:LP7h;
 
     .line 42
     .line 43
-    iget-boolean v0, v0, LfMg;->k:Z
+    iget-boolean v0, v0, LP7h;->k:Z
 
     .line 44
     .line 45
@@ -2297,7 +2428,7 @@
 
     .line 48
     :cond_1
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getCriticalWorkCoordinator()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getCriticalWorkCoordinator()LDBe;
 
     .line 49
     .line 50
@@ -2305,7 +2436,7 @@
     move-result-object v0
 
     .line 52
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 53
     .line 54
@@ -2313,14 +2444,14 @@
     move-result-object v0
 
     .line 56
-    check-cast v0, Lpg4;
+    check-cast v0, Lel4;
 
     .line 57
     .line 58
     const/4 v1, 0x0
 
     .line 59
-    invoke-virtual {v0, v1}, Lpg4;->d(LF06;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v0, v1}, Lel4;->d(LA36;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 60
     .line 61
@@ -2328,7 +2459,7 @@
     move-result-object v0
 
     .line 63
-    sget-object v1, LY6c;->b:LY6c;
+    sget-object v1, Liia;->Z:Liia;
 
     .line 64
     .line 65
@@ -2344,11 +2475,11 @@
     .locals 4
 
     .line 1
-    sget-object v0, LpPg;->a:LpPg;
+    sget-object v0, Lvbh;->a:Lvbh;
 
     .line 2
     .line 3
-    invoke-static {}, LpPg;->g()LlPg;
+    invoke-static {}, Lvbh;->g()Lrbh;
 
     .line 4
     .line 5
@@ -2356,15 +2487,15 @@
     move-result-object v0
 
     .line 7
-    iget-object v0, v0, LlPg;->a:LnPg;
+    iget-object v0, v0, Lrbh;->a:Ltbh;
 
     .line 8
     .line 9
-    iget-object v0, v0, LnPg;->e:LfMg;
+    iget-object v0, v0, Ltbh;->e:LP7h;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, LfMg;->a()Z
+    invoke-virtual {v0}, LP7h;->a()Z
 
     .line 12
     .line 13
@@ -2376,7 +2507,7 @@
 
     .line 16
     .line 17
-    iget-boolean v0, v0, LfMg;->l:Z
+    iget-boolean v0, v0, LP7h;->l:Z
 
     .line 18
     .line 19
@@ -2384,7 +2515,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()LDBe;
 
     .line 22
     .line 23
@@ -2392,7 +2523,7 @@
     move-result-object v0
 
     .line 25
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -2400,11 +2531,11 @@
     move-result-object v0
 
     .line 29
-    check-cast v0, Lnwf;
+    check-cast v0, LyPf;
 
     .line 30
     .line 31
-    sget-object v1, Ljg4;->Z:Ljg4;
+    sget-object v1, LXk4;->Z:LXk4;
 
     .line 32
     .line 33
@@ -2413,7 +2544,7 @@
     .line 34
     .line 35
     .line 36
-    new-instance v2, LWm0;
+    new-instance v2, Lnp0;
 
     .line 37
     .line 38
@@ -2421,12 +2552,12 @@
 
     .line 39
     .line 40
-    invoke-direct {v2, v1, v3}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v2, v1, v3}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 41
     .line 42
     .line 43
-    check-cast v0, LIP5;
+    check-cast v0, LTT5;
 
     .line 44
     .line 45
@@ -2435,16 +2566,16 @@
     .line 46
     .line 47
     .line 48
-    new-instance v0, LBre;
+    new-instance v0, LnJe;
 
     .line 49
     .line 50
-    invoke-direct {v0, v2}, LBre;-><init>(LWm0;)V
+    invoke-direct {v0, v2}, LnJe;-><init>(Lnp0;)V
 
     .line 51
     .line 52
     .line 53
-    invoke-virtual {v0}, LBre;->g()LF06;
+    invoke-virtual {v0}, LnJe;->g()LA36;
 
     .line 54
     .line 55
@@ -2452,14 +2583,14 @@
     move-result-object v0
 
     .line 57
-    new-instance v1, LW6c;
+    new-instance v1, LFlc;
 
     .line 58
     .line 59
     const/4 v2, 0x1
 
     .line 60
-    invoke-direct {v1, p0, v2}, LW6c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+    invoke-direct {v1, p0, v2}, LFlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
     .line 61
     .line 62
@@ -2508,11 +2639,11 @@
 
     .line 13
     .line 14
-    sget v0, Led3;->b:I
+    sget v0, LVf3;->b:I
 
     .line 15
     .line 16
-    invoke-static {v0}, Llva;->L(I)I
+    invoke-static {v0}, LzHa;->L(I)I
 
     .line 17
     .line 18
@@ -2532,7 +2663,7 @@
 
     .line 25
     .line 26
-    sget-object v0, Led3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    sget-object v0, LVf3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 27
     .line 28
@@ -2555,7 +2686,7 @@
 
     .line 35
     :cond_1
-    new-instance v0, LFzc;
+    new-instance v0, LwOc;
 
     .line 36
     .line 37
@@ -2591,7 +2722,7 @@
 
     .line 48
     .line 49
-    sget-object v0, LtW1;->Z:LtW1;
+    sget-object v0, LVZ1;->Z:LVZ1;
 
     .line 50
     .line 51
@@ -2599,7 +2730,7 @@
 
     .line 52
     .line 53
-    invoke-static {v0, v0, v7}, LEU0;->f(LtW1;LtW1;Ljava/lang/String;)LWm0;
+    invoke-static {v0, v0, v7}, LJF0;->e(LVZ1;LVZ1;Ljava/lang/String;)Lnp0;
 
     .line 54
     .line 55
@@ -2607,7 +2738,7 @@
     move-result-object v0
 
     .line 57
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()LDBe;
 
     .line 58
     .line 59
@@ -2615,7 +2746,7 @@
     move-result-object v7
 
     .line 61
-    invoke-interface {v7}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v7}, LDBe;->get()Ljava/lang/Object;
 
     .line 62
     .line 63
@@ -2623,15 +2754,15 @@
     move-result-object v7
 
     .line 65
-    check-cast v7, Lnwf;
+    check-cast v7, LyPf;
 
     .line 66
     .line 67
-    check-cast v7, LIP5;
+    check-cast v7, LTT5;
 
     .line 68
     .line 69
-    invoke-static {v7, v0}, LEU0;->p(LIP5;LWm0;)LBre;
+    invoke-static {v7, v0}, LJF0;->k(LTT5;Lnp0;)LnJe;
 
     .line 70
     .line 71
@@ -2639,14 +2770,14 @@
     move-result-object v7
 
     .line 73
-    new-instance v8, LZ6c;
+    new-instance v8, LHlc;
 
     .line 74
     .line 75
     const/4 v9, 0x0
 
     .line 76
-    invoke-direct {v8, p0, v9}, LZ6c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+    invoke-direct {v8, p0, v9}, LHlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
     .line 77
     .line 78
@@ -2660,7 +2791,7 @@
     .line 82
     .line 83
     .line 84
-    invoke-virtual {v7}, LBre;->d()LF06;
+    invoke-virtual {v7}, LnJe;->d()LA36;
 
     .line 85
     .line 86
@@ -2677,449 +2808,447 @@
     .line 91
     .line 92
     .line 93
-    sget-object v7, LSa1;->n:LSa1;
+    sget-object v7, Lfe1;->o:Lfe1;
 
     .line 94
     .line 95
-    new-instance v9, LXW6;
+    new-instance v9, LIlc;
 
     .line 96
     .line 97
-    const/16 v10, 0xe
+    const/4 v10, 0x0
 
     .line 98
-    .line 99
-    invoke-direct {v9, v10, p0}, LXW6;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v9, p0, v10}, LIlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
+    .line 99
     .line 100
     .line 101
-    .line 102
     invoke-virtual {v8, v7, v9}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 102
     .line 103
     .line 104
-    .line 105
     move-result-object v7
+
+    .line 105
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()LDBe;
 
     .line 106
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()Lbke;
-
     .line 107
     .line 108
-    .line 109
     move-result-object v8
+
+    .line 109
+    invoke-interface {v8}, LDBe;->get()Ljava/lang/Object;
 
     .line 110
-    invoke-interface {v8}, Lbke;->get()Ljava/lang/Object;
-
     .line 111
     .line 112
-    .line 113
     move-result-object v8
 
+    .line 113
+    check-cast v8, Liu6;
+
     .line 114
-    check-cast v8, LWq6;
-
     .line 115
-    .line 116
-    invoke-virtual {v8, v0, v7}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+    invoke-virtual {v8, v0, v7}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
 
+    .line 116
     .line 117
     .line 118
-    .line 119
     goto :goto_2
 
-    .line 120
+    .line 119
     :cond_4
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppStartExperimentReader()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppStartExperimentReader()LDBe;
 
+    .line 120
     .line 121
     .line 122
-    .line 123
     move-result-object v0
+
+    .line 123
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 124
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
-
     .line 125
     .line 126
-    .line 127
     move-result-object v0
+
+    .line 127
+    check-cast v0, Lb30;
 
     .line 128
-    check-cast v0, Lu00;
-
     .line 129
+    sget-object v7, LlY1;->U5:LlY1;
+
     .line 130
-    sget-object v7, LKU1;->V5:LKU1;
-
     .line 131
-    .line 132
-    invoke-interface {v0, v7}, Lu00;->a(LBI3;)Z
+    invoke-interface {v0, v7}, Lb30;->a(LcM3;)Z
 
+    .line 132
     .line 133
     .line 134
-    .line 135
     move-result v0
 
-    .line 136
+    .line 135
     if-eqz v0, :cond_5
 
+    .line 136
     .line 137
-    .line 138
-    sget-object v0, LtW1;->Z:LtW1;
+    sget-object v0, LVZ1;->Z:LVZ1;
 
+    .line 138
     .line 139
-    .line 140
     const-string v7, "preloadCameraCharacteristics"
 
+    .line 140
     .line 141
-    .line 142
-    invoke-static {v0, v0, v7}, LEU0;->f(LtW1;LtW1;Ljava/lang/String;)LWm0;
+    invoke-static {v0, v0, v7}, LJF0;->e(LVZ1;LVZ1;Ljava/lang/String;)Lnp0;
 
+    .line 142
     .line 143
     .line 144
-    .line 145
     move-result-object v0
 
-    .line 146
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()Lbke;
+    .line 145
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()LDBe;
 
+    .line 146
     .line 147
     .line 148
-    .line 149
     move-result-object v7
+
+    .line 149
+    invoke-interface {v7}, LDBe;->get()Ljava/lang/Object;
 
     .line 150
-    invoke-interface {v7}, Lbke;->get()Ljava/lang/Object;
-
     .line 151
     .line 152
-    .line 153
     move-result-object v7
+
+    .line 153
+    check-cast v7, LyPf;
 
     .line 154
-    check-cast v7, Lnwf;
-
     .line 155
+    check-cast v7, LTT5;
+
     .line 156
-    check-cast v7, LIP5;
-
     .line 157
-    .line 158
-    invoke-static {v7, v0}, LEU0;->p(LIP5;LWm0;)LBre;
+    invoke-static {v7, v0}, LJF0;->k(LTT5;Lnp0;)LnJe;
 
+    .line 158
     .line 159
     .line 160
-    .line 161
     move-result-object v7
 
-    .line 162
-    new-instance v8, LLGb;
+    .line 161
+    new-instance v8, LHlc;
 
+    .line 162
     .line 163
+    const/4 v9, 0x1
+
     .line 164
-    const/16 v9, 0xb
+    invoke-direct {v8, p0, v9}, LHlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
 
     .line 165
     .line 166
-    invoke-direct {v8, v9, p0}, LLGb;-><init>(ILjava/lang/Object;)V
-
     .line 167
+    new-instance v9, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
+
     .line 168
     .line 169
-    new-instance v9, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
+    invoke-direct {v9, v8}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 170
     .line 171
-    invoke-direct {v9, v8}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
     .line 172
+    invoke-virtual {v7}, LnJe;->d()LA36;
+
     .line 173
     .line 174
-    invoke-virtual {v7}, LBre;->d()LF06;
-
     .line 175
-    .line 176
-    .line 177
     move-result-object v7
 
-    .line 178
+    .line 176
     new-instance v8, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 177
+    .line 178
+    invoke-direct {v8, v9, v7}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 179
     .line 180
-    invoke-direct {v8, v9, v7}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
     .line 181
+    sget-object v7, Lfe1;->p:Lfe1;
+
     .line 182
     .line 183
-    sget-object v7, LxCb;->i:LxCb;
+    new-instance v9, LIlc;
 
     .line 184
     .line 185
-    new-instance v9, Lx1c;
+    const/4 v10, 0x1
 
     .line 186
+    invoke-direct {v9, p0, v10}, LIlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+
     .line 187
-    const/4 v10, 0x7
-
     .line 188
-    invoke-direct {v9, v10, p0}, Lx1c;-><init>(ILjava/lang/Object;)V
-
     .line 189
-    .line 190
-    .line 191
     invoke-virtual {v8, v7, v9}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 190
+    .line 191
     .line 192
-    .line 193
-    .line 194
     move-result-object v7
 
+    .line 193
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()LDBe;
+
+    .line 194
     .line 195
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()Lbke;
-
     .line 196
+    move-result-object v8
+
     .line 197
+    invoke-interface {v8}, LDBe;->get()Ljava/lang/Object;
+
     .line 198
-    move-result-object v8
-
     .line 199
-    invoke-interface {v8}, Lbke;->get()Ljava/lang/Object;
-
     .line 200
-    .line 201
-    .line 202
     move-result-object v8
 
+    .line 201
+    check-cast v8, Liu6;
+
+    .line 202
     .line 203
-    check-cast v8, LWq6;
+    invoke-virtual {v8, v0, v7}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
 
     .line 204
     .line 205
-    invoke-virtual {v8, v0, v7}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
-
     .line 206
-    .line 207
-    .line 208
     :cond_5
     :goto_2
-    sget v0, Led3;->b:I
+    sget v0, LVf3;->b:I
+
+    .line 207
+    .line 208
+    invoke-static {v0}, LzHa;->L(I)I
 
     .line 209
     .line 210
-    invoke-static {v0}, Llva;->L(I)I
-
     .line 211
-    .line 212
-    .line 213
     move-result v0
 
-    .line 214
+    .line 212
     if-eqz v0, :cond_8
+
+    .line 213
+    .line 214
+    if-eq v0, v6, :cond_6
 
     .line 215
     .line 216
-    if-eq v0, v6, :cond_6
+    if-ne v0, v4, :cond_7
 
     .line 217
     .line 218
-    if-ne v0, v4, :cond_7
+    sget-object v0, LVf3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 219
     .line 220
-    sget-object v0, Led3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    if-eqz v0, :cond_6
 
     .line 221
     .line 222
-    if-eqz v0, :cond_6
+    iget v3, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->importance:I
 
     .line 223
     .line 224
-    iget v3, v0, Landroid/app/ActivityManager$RunningAppProcessInfo;->importance:I
+    goto :goto_3
 
     .line 225
+    :cond_6
+    const/4 v3, -0x1
+
     .line 226
     goto :goto_3
 
     .line 227
-    :cond_6
-    const/4 v3, -0x1
+    :cond_7
+    new-instance v0, LwOc;
 
     .line 228
-    goto :goto_3
-
     .line 229
-    :cond_7
-    new-instance v0, LFzc;
+    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
 
     .line 230
     .line 231
-    invoke-direct {v0}, Ljava/lang/RuntimeException;-><init>()V
-
     .line 232
-    .line 233
-    .line 234
     throw v0
 
-    .line 235
+    .line 233
     :cond_8
     :goto_3
     if-ne v3, v2, :cond_9
 
-    .line 236
-    .line 237
+    .line 234
+    .line 235
     const/4 v1, 0x1
 
-    .line 238
+    .line 236
     :cond_9
     if-eqz v1, :cond_a
 
+    .line 237
+    .line 238
+    new-instance v0, Lnp0;
+
     .line 239
     .line 240
-    new-instance v0, LWm0;
+    sget-object v1, LVZ1;->Z:LVZ1;
 
     .line 241
     .line 242
-    sget-object v1, LtW1;->Z:LtW1;
+    const-string v2, "preload"
 
     .line 243
     .line 244
-    const-string v2, "preload"
+    invoke-direct {v0, v1, v2}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 245
     .line 246
-    invoke-direct {v0, v1, v2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
-
     .line 247
+    new-instance v1, LHlc;
+
     .line 248
     .line 249
-    new-instance v1, LZ6c;
+    const/4 v2, 0x2
 
     .line 250
+    invoke-direct {v1, p0, v2}, LHlc;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
+
     .line 251
-    const/4 v2, 0x1
-
     .line 252
-    invoke-direct {v1, p0, v2}, LZ6c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;I)V
-
     .line 253
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
     .line 254
     .line 255
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 256
     .line 257
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
     .line 258
+    sget-object v1, LR8c;->X:LR8c;
+
     .line 259
     .line 260
-    sget-object v1, Lgjb;->h0:Lgjb;
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
     .line 261
     .line 262
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 263
     .line 264
-    invoke-direct {v3, v2, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 265
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()LDBe;
+
     .line 266
     .line 267
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getSchedulersProvider()Lbke;
-
     .line 268
+    move-result-object v1
+
     .line 269
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
+
     .line 270
-    move-result-object v1
-
     .line 271
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
-
     .line 272
-    .line 273
-    .line 274
     move-result-object v1
 
+    .line 273
+    check-cast v1, LyPf;
+
+    .line 274
     .line 275
-    check-cast v1, Lnwf;
+    check-cast v1, LTT5;
 
     .line 276
     .line 277
-    check-cast v1, LIP5;
+    invoke-static {v1, v0}, LzHa;->n(LTT5;Lnp0;)LA36;
 
     .line 278
     .line 279
-    invoke-static {v1, v0}, Llva;->m(LIP5;LWm0;)LF06;
-
     .line 280
-    .line 281
-    .line 282
     move-result-object v1
 
-    .line 283
+    .line 281
     new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+
+    .line 282
+    .line 283
+    invoke-direct {v2, v3, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 284
     .line 285
-    invoke-direct {v2, v3, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
     .line 286
-    .line 287
-    .line 288
     invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 287
+    .line 288
     .line 289
-    .line 290
-    .line 291
     move-result-object v1
 
+    .line 290
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()LDBe;
+
+    .line 291
     .line 292
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getDisposableReleaserProvider()Lbke;
-
     .line 293
+    move-result-object v2
+
     .line 294
+    invoke-interface {v2}, LDBe;->get()Ljava/lang/Object;
+
     .line 295
-    move-result-object v2
-
     .line 296
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
-
     .line 297
-    .line 298
-    .line 299
     move-result-object v2
 
+    .line 298
+    check-cast v2, Liu6;
+
+    .line 299
     .line 300
-    check-cast v2, LWq6;
+    invoke-virtual {v2, v0, v1}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
 
     .line 301
     .line 302
-    invoke-virtual {v2, v0, v1}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
-
     .line 303
-    .line 304
-    .line 305
     :cond_a
     return-void
 .end method
 
 
 # virtual methods
-.method public androidInjector()LtQ;
+.method public androidInjector()LyS;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "LtQ;"
+            "LyS;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:Lf7c;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:LOlc;
 
     .line 2
     .line 3
@@ -3127,7 +3256,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lf7c;->androidInjector()LtQ;
+    invoke-virtual {v0}, LOlc;->androidInjector()LyS;
 
     .line 6
     .line 7
@@ -3143,7 +3272,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -3163,7 +3292,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 5
     .line 6
@@ -3171,7 +3300,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 9
     .line 10
@@ -3214,7 +3343,7 @@
 
     .line 27
     .line 28
-    invoke-static {v2}, LEtk;->a(Ljava/lang/String;)Ljava/util/Locale;
+    invoke-static {v2}, LoUk;->b(Ljava/lang/String;)Ljava/util/Locale;
 
     .line 29
     .line 30
@@ -3260,11 +3389,11 @@
 
     .line 50
     .line 51
-    sget-object v4, LeU;->a:LeU;
+    sget-object v4, LlW;->a:LlW;
 
     .line 52
     .line 53
-    invoke-virtual {v4, v2, v5}, LeU;->n(Landroid/content/res/Configuration;Ljava/util/Locale;)V
+    invoke-virtual {v4, v2, v5}, LlW;->n(Landroid/content/res/Configuration;Ljava/util/Locale;)V
 
     .line 54
     .line 55
@@ -3281,7 +3410,7 @@
 
     .line 60
     :cond_2
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 61
     .line 62
@@ -3291,11 +3420,11 @@
     .line 64
     .line 65
     .line 66
-    sget-object v1, LBw8;->b:LBw8;
+    sget-object v1, LjD8;->b:LjD8;
 
     .line 67
     .line 68
-    iget-object v1, v1, LBw8;->a:LqY;
+    iget-object v1, v1, LjD8;->a:LM00;
 
     .line 69
     .line 70
@@ -3304,7 +3433,7 @@
     .line 71
     .line 72
     .line 73
-    invoke-static {p0}, LzP2;->S(Landroid/content/Context;)Landroid/app/ActivityManager$RunningAppProcessInfo;
+    invoke-static {p0}, LMsi;->m(Landroid/content/Context;)Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 74
     .line 75
@@ -3312,11 +3441,11 @@
     move-result-object v2
 
     .line 77
-    sput-object v2, Led3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    sput-object v2, LVf3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 78
     .line 79
-    sget-object v2, Led3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    sget-object v2, LVf3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 80
     .line 81
@@ -3338,15 +3467,15 @@
 
     .line 87
     :goto_0
-    sput v2, Led3;->b:I
+    sput v2, LVf3;->b:I
 
     .line 88
     .line 89
-    sget-object v2, LRRa;->a:LXfi;
+    sget-object v2, LB4b;->a:LREi;
 
     .line 90
     .line 91
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 92
     .line 93
@@ -3358,15 +3487,15 @@
 
     .line 96
     .line 97
-    new-instance v5, LCd;
+    new-instance v5, Lre;
 
     .line 98
     .line 99
-    const/16 v6, 0xb
+    const/16 v6, 0x9
 
     .line 100
     .line 101
-    invoke-direct {v5, v6, v1}, LCd;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v5, v6, v1}, Lre;-><init>(ILjava/lang/Object;)V
 
     .line 102
     .line 103
@@ -3376,11 +3505,11 @@
     .line 105
     .line 106
     .line 107
-    sget v2, Led3;->b:I
+    sget v2, LVf3;->b:I
 
     .line 108
     .line 109
-    invoke-static {v2}, Llva;->L(I)I
+    invoke-static {v2}, LzHa;->L(I)I
 
     .line 110
     .line 111
@@ -3406,7 +3535,7 @@
 
     .line 120
     .line 121
-    sget-object v2, Led3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    sget-object v2, LVf3;->c:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 122
     .line 123
@@ -3422,7 +3551,7 @@
 
     .line 128
     :cond_4
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 129
     .line 130
@@ -3448,21 +3577,21 @@
 
     .line 138
     .line 139
-    invoke-virtual {v1}, LqY;->c()V
+    invoke-virtual {v1}, LM00;->c()V
 
     .line 140
     .line 141
     .line 142
     :cond_7
-    iget-object v2, v1, LqY;->c:Ljava/lang/Object;
+    iget-object v2, v1, LM00;->c:Ljava/lang/Object;
 
     .line 143
     .line 144
-    check-cast v2, LAw8;
+    check-cast v2, LiD8;
 
     .line 145
     .line 146
-    iget-object v2, v2, LAw8;->a:LLe;
+    iget-object v2, v2, LiD8;->a:LCf;
 
     .line 147
     .line 148
@@ -3476,24 +3605,24 @@
     .line 152
     .line 153
     .line 154
-    iget-object v2, v1, LqY;->c:Ljava/lang/Object;
+    iget-object v2, v1, LM00;->c:Ljava/lang/Object;
 
     .line 155
     .line 156
-    check-cast v2, LAw8;
+    check-cast v2, LiD8;
 
     .line 157
     .line 158
-    new-instance v4, LGe;
+    new-instance v4, Lxf;
 
     .line 159
     .line 160
-    invoke-direct {v4, v1}, LGe;-><init>(LqY;)V
+    invoke-direct {v4, v1}, Lxf;-><init>(LM00;)V
 
     .line 161
     .line 162
     .line 163
-    invoke-virtual {v2, v4}, LAw8;->a(LMe;)V
+    invoke-virtual {v2, v4}, LiD8;->a(LHf;)V
 
     .line 164
     .line 165
@@ -3507,7 +3636,7 @@
 
     .line 170
     .line 171
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 172
     .line 173
@@ -3516,19 +3645,19 @@
 
     .line 175
     :try_start_1
-    invoke-static {p1, v3}, Ljfh;->c(Landroid/content/Context;Z)Z
+    invoke-static {p1, v3}, LTAh;->c(Landroid/content/Context;Z)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 176
     .line 177
     .line 178
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 179
     .line 180
     .line 181
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 182
     .line 183
@@ -3548,7 +3677,7 @@
     move-exception p1
 
     .line 190
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 191
     .line 192
@@ -3556,7 +3685,7 @@
 
     .line 193
     .line 194
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
 
     .line 195
     .line 196
@@ -3569,7 +3698,7 @@
     move-exception p1
 
     .line 199
-    sget-object v0, LXRg;->b:Lzhi;
+    sget-object v0, LOdh;->b:LtGi;
 
     .line 200
     .line 201
@@ -3577,7 +3706,7 @@
 
     .line 202
     .line 203
-    invoke-virtual {v0, v1}, Lzhi;->o(I)V
+    invoke-virtual {v0, v1}, LtGi;->o(I)V
 
     .line 204
     .line 205
@@ -3586,17 +3715,17 @@
     throw p1
 .end method
 
-.method public final getAppDsoPostLoadInitPropertiesProvider()Lbke;
+.method public final getAppDsoPostLoadInitPropertiesProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appDsoPostLoadInitPropertiesProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appDsoPostLoadInitPropertiesProvider:LDBe;
 
     .line 2
     .line 3
@@ -3612,7 +3741,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3623,17 +3752,17 @@
     throw v0
 .end method
 
-.method public final getAppForegroundStateProvider()Lbke;
+.method public final getAppForegroundStateProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appForegroundStateProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appForegroundStateProvider:LDBe;
 
     .line 2
     .line 3
@@ -3649,7 +3778,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3660,17 +3789,17 @@
     throw v0
 .end method
 
-.method public final getAppNativeComponentsLayout()Lbke;
+.method public final getAppNativeComponentsLayout()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeComponentsLayout:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeComponentsLayout:LDBe;
 
     .line 2
     .line 3
@@ -3686,7 +3815,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3697,17 +3826,17 @@
     throw v0
 .end method
 
-.method public final getAppNativeLoadDelegate()Lbke;
+.method public final getAppNativeLoadDelegate()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeLoadDelegate:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeLoadDelegate:LDBe;
 
     .line 2
     .line 3
@@ -3723,7 +3852,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3734,17 +3863,17 @@
     throw v0
 .end method
 
-.method public final getAppStartExperimentReader()Lbke;
+.method public final getAppStartExperimentReader()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartExperimentReader:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartExperimentReader:LDBe;
 
     .line 2
     .line 3
@@ -3760,7 +3889,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3771,17 +3900,17 @@
     throw v0
 .end method
 
-.method public final getAppStartupCompleteSignaler()Lbke;
+.method public final getAppStartupCompleteSignaler()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartupCompleteSignaler:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartupCompleteSignaler:LDBe;
 
     .line 2
     .line 3
@@ -3797,7 +3926,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3808,17 +3937,17 @@
     throw v0
 .end method
 
-.method public final getAserDependencies()Lbke;
+.method public final getAserDependencies()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->aserDependencies:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->aserDependencies:LDBe;
 
     .line 2
     .line 3
@@ -3834,7 +3963,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3845,17 +3974,17 @@
     throw v0
 .end method
 
-.method public final getCircumstanceEngine()Lbke;
+.method public final getCircumstanceEngine()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->circumstanceEngine:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->circumstanceEngine:LDBe;
 
     .line 2
     .line 3
@@ -3871,7 +4000,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3882,17 +4011,17 @@
     throw v0
 .end method
 
-.method public final getClientInitializer()Lbke;
+.method public final getClientInitializer()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->clientInitializer:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->clientInitializer:LDBe;
 
     .line 2
     .line 3
@@ -3908,7 +4037,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3919,17 +4048,17 @@
     throw v0
 .end method
 
-.method public final getCriticalWorkCoordinator()Lbke;
+.method public final getCriticalWorkCoordinator()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->criticalWorkCoordinator:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->criticalWorkCoordinator:LDBe;
 
     .line 2
     .line 3
@@ -3945,7 +4074,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3956,17 +4085,17 @@
     throw v0
 .end method
 
-.method public final getDebuggingSupport()Lbke;
+.method public final getDebuggingSupport()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->debuggingSupport:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->debuggingSupport:LDBe;
 
     .line 2
     .line 3
@@ -3982,7 +4111,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -3993,11 +4122,11 @@
     throw v0
 .end method
 
-.method public getDependencyGraph()Ls36;
+.method public getDependencyGraph()Lt66;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:Lf7c;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:LOlc;
 
     .line 2
     .line 3
@@ -4013,7 +4142,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4024,17 +4153,17 @@
     throw v0
 .end method
 
-.method public final getDisposableReleaserProvider()Lbke;
+.method public final getDisposableReleaserProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->disposableReleaserProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->disposableReleaserProvider:LDBe;
 
     .line 2
     .line 3
@@ -4050,7 +4179,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4061,17 +4190,17 @@
     throw v0
 .end method
 
-.method public final getFlipperSupport()Lbke;
+.method public final getFlipperSupport()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->flipperSupport:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->flipperSupport:LDBe;
 
     .line 2
     .line 3
@@ -4087,7 +4216,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4098,17 +4227,17 @@
     throw v0
 .end method
 
-.method public final getLeakTracker()Lbke;
+.method public final getLeakTracker()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->leakTracker:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->leakTracker:LDBe;
 
     .line 2
     .line 3
@@ -4124,7 +4253,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4135,17 +4264,17 @@
     throw v0
 .end method
 
-.method public final getMemoryMonitor()Lbke;
+.method public final getMemoryMonitor()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->memoryMonitor:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->memoryMonitor:LDBe;
 
     .line 2
     .line 3
@@ -4161,7 +4290,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4172,17 +4301,17 @@
     throw v0
 .end method
 
-.method public final getNavigationDestinationSignaler()Lbke;
+.method public final getNavigationDestinationSignaler()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->navigationDestinationSignaler:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->navigationDestinationSignaler:LDBe;
 
     .line 2
     .line 3
@@ -4198,7 +4327,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4209,17 +4338,17 @@
     throw v0
 .end method
 
-.method public final getProcessAgeEstimator()Lbke;
+.method public final getProcessAgeEstimator()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->processAgeEstimator:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->processAgeEstimator:LDBe;
 
     .line 2
     .line 3
@@ -4235,7 +4364,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4246,17 +4375,17 @@
     throw v0
 .end method
 
-.method public final getRecoveryGamedayExecutor()Lbke;
+.method public final getRecoveryGamedayExecutor()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->recoveryGamedayExecutor:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->recoveryGamedayExecutor:LDBe;
 
     .line 2
     .line 3
@@ -4272,7 +4401,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4283,17 +4412,17 @@
     throw v0
 .end method
 
-.method public final getSchedulersProvider()Lbke;
+.method public final getSchedulersProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->schedulersProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->schedulersProvider:LDBe;
 
     .line 2
     .line 3
@@ -4309,7 +4438,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4320,11 +4449,11 @@
     throw v0
 .end method
 
-.method public final getStartupDataStoreManager()Lkth;
+.method public final getStartupDataStoreManager()LYQh;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupDataStoreManager:Lkth;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupDataStoreManager:LYQh;
 
     .line 2
     .line 3
@@ -4340,7 +4469,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4351,17 +4480,17 @@
     throw v0
 .end method
 
-.method public final getStartupTraceProducer()Lbke;
+.method public final getStartupTraceProducer()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupTraceProducer:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupTraceProducer:LDBe;
 
     .line 2
     .line 3
@@ -4377,7 +4506,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4388,12 +4517,12 @@
     throw v0
 .end method
 
-.method public getTestBridge(Ljava/lang/Class;)Lyqi;
+.method public getTestBridge(Ljava/lang/Class;)LpPi;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T::",
-            "Lyqi;",
+            "LpPi;",
             ">(",
             "Ljava/lang/Class<",
             "TT;>;)TT;"
@@ -4401,7 +4530,7 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getTestDependencyProvider()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getTestDependencyProvider()LDBe;
 
     .line 2
     .line 3
@@ -4409,7 +4538,7 @@
     move-result-object v0
 
     .line 5
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -4417,11 +4546,11 @@
     move-result-object v0
 
     .line 9
-    check-cast v0, Lhy1;
+    check-cast v0, LuB1;
 
     .line 10
     .line 11
-    invoke-virtual {v0, p1}, Lhy1;->a(Ljava/lang/Class;)Lyqi;
+    invoke-virtual {v0, p1}, LuB1;->a(Ljava/lang/Class;)LpPi;
 
     .line 12
     .line 13
@@ -4432,17 +4561,17 @@
     return-object p1
 .end method
 
-.method public final getTestDependencyProvider()Lbke;
+.method public final getTestDependencyProvider()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->testDependencyProvider:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->testDependencyProvider:LDBe;
 
     .line 2
     .line 3
@@ -4458,7 +4587,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4469,17 +4598,17 @@
     throw v0
 .end method
 
-.method public final getUndeliverableExceptionConsumer()Lbke;
+.method public final getUndeliverableExceptionConsumer()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->undeliverableExceptionConsumer:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->undeliverableExceptionConsumer:LDBe;
 
     .line 2
     .line 3
@@ -4495,7 +4624,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4506,17 +4635,17 @@
     throw v0
 .end method
 
-.method public final getUserAuthStore()Lbke;
+.method public final getUserAuthStore()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->userAuthStore:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->userAuthStore:LDBe;
 
     .line 2
     .line 3
@@ -4532,7 +4661,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4543,11 +4672,48 @@
     throw v0
 .end method
 
-.method public getWorkManagerConfiguration()LqI3;
+.method public final getUserContextCoordinator()LDBe;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "LDBe;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->userContextCoordinator:LDBe;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_0
+    const-string v0, "userContextCoordinator"
+
+    .line 7
+    .line 8
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    const/4 v0, 0x0
+
+    .line 12
+    throw v0
+.end method
+
+.method public getWorkManagerConfiguration()LRL3;
     .locals 4
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -4555,7 +4721,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -4564,7 +4730,7 @@
 
     .line 9
     :try_start_0
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getWorkManagerConfigurationBuilder()Lbke;
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getWorkManagerConfigurationBuilder()LDBe;
 
     .line 10
     .line 11
@@ -4572,7 +4738,7 @@
     move-result-object v2
 
     .line 13
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    invoke-interface {v2}, LDBe;->get()Ljava/lang/Object;
 
     .line 14
     .line 15
@@ -4580,7 +4746,7 @@
     move-result-object v2
 
     .line 17
-    check-cast v2, LETg;
+    check-cast v2, Lxfh;
 
     .line 18
     .line 19
@@ -4596,7 +4762,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v2, v3}, LETg;->a(Z)LqI3;
+    invoke-virtual {v2, v3}, Lxfh;->a(Z)LRL3;
 
     .line 26
     .line 27
@@ -4606,7 +4772,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 29
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 30
     .line 31
@@ -4627,7 +4793,7 @@
 
     .line 36
     .line 37
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 38
     .line 39
@@ -4641,7 +4807,7 @@
 
     .line 42
     :goto_0
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 43
     .line 44
@@ -4649,7 +4815,7 @@
 
     .line 45
     .line 46
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 47
     .line 48
@@ -4658,17 +4824,17 @@
     throw v0
 .end method
 
-.method public final getWorkManagerConfigurationBuilder()Lbke;
+.method public final getWorkManagerConfigurationBuilder()LDBe;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lbke;"
+            "LDBe;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->workManagerConfigurationBuilder:Lbke;
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->workManagerConfigurationBuilder:LDBe;
 
     .line 2
     .line 3
@@ -4684,7 +4850,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -4699,7 +4865,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
     .line 3
@@ -4707,7 +4873,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
@@ -4716,7 +4882,7 @@
 
     .line 9
     :try_start_0
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->readSnapSchedulersConfigOrDefault()LnPg;
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->readSnapSchedulersConfigOrDefault()Ltbh;
 
     .line 10
     .line 11
@@ -4724,7 +4890,7 @@
     move-result-object v2
 
     .line 13
-    invoke-static {v2}, LbPg;->a(LnPg;)Z
+    invoke-static {v2}, Lgbh;->a(Ltbh;)Z
 
     .line 14
     .line 15
@@ -4736,11 +4902,11 @@
 
     .line 18
     .line 19
-    sget-object v2, LeNe;->c:LrH9;
+    sget-object v2, La5f;->c:LQS9;
 
     .line 20
     .line 21
-    invoke-static {}, LHHd;->u()LeNe;
+    invoke-static {}, LtOc;->p()La5f;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -4759,7 +4925,7 @@
     .line 27
     :cond_0
     :goto_0
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 28
     .line 29
@@ -4768,7 +4934,7 @@
 
     .line 31
     :goto_1
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 32
     .line 33
@@ -4776,7 +4942,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 36
     .line 37
@@ -4789,12 +4955,12 @@
     .locals 3
 
     .line 1
-    invoke-static {p0}, LZ2c;->d(Landroidx/multidex/MultiDexApplication;)V
+    invoke-static {p0}, LNhc;->d(Landroidx/multidex/MultiDexApplication;)V
 
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f1401f7
+    const v0, 0x7f140222
 
     .line 5
     .line 6
@@ -4808,7 +4974,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0}, Lh56;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Ll86;->a(Ljava/lang/String;)Z
 
     .line 13
     .line 14
@@ -4824,7 +4990,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0}, Lh56;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, Ll86;->a(Ljava/lang/String;)Z
 
     .line 21
     .line 22
@@ -4853,7 +5019,7 @@
     move-result-object v0
 
     .line 32
-    const v1, 0x7f14018b
+    const v1, 0x7f14018f
 
     .line 33
     .line 34
@@ -4873,24 +5039,24 @@
     .locals 12
 
     .line 1
-    sget-object v0, LCw8;->b:LCw8;
+    sget-object v0, LkD8;->b:LkD8;
 
     .line 2
     .line 3
-    sget-object v1, Livd;->q0:Livd;
+    sget-object v1, LWLd;->q0:LWLd;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LCw8;->b(Livd;)V
+    invoke-virtual {v0, v1}, LkD8;->b(LWLd;)V
 
     .line 6
     .line 7
     .line 8
-    sget-object v0, Lzth;->X:Lzth;
+    sget-object v0, LpRh;->X:LpRh;
 
     .line 9
     .line 10
-    invoke-static {v0}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v0}, LGYf;->a(Lkmg;)LGYf;
 
     .line 11
     .line 12
@@ -4898,7 +5064,7 @@
     move-result-object v0
 
     .line 14
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 15
     .line 16
@@ -4906,7 +5072,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 19
     .line 20
@@ -4925,909 +5091,914 @@
     .line 26
     .line 27
     .line 28
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupSchedulersUiPageUpdates()V
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->bindUserContextCoordinator()V
 
     .line 29
     .line 30
     .line 31
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppForegroundStateProvider()Lbke;
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupSchedulersUiPageUpdates()V
 
     .line 32
     .line 33
     .line 34
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppForegroundStateProvider()LDBe;
 
     .line 35
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
-
     .line 36
     .line 37
-    .line 38
     move-result-object v3
 
-    .line 39
-    check-cast v3, LJX;
+    .line 38
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
+    .line 39
     .line 40
     .line 41
-    iget-object v4, v3, LJX;->a:LBw8;
+    move-result-object v3
 
     .line 42
-    .line 43
-    invoke-virtual {v4}, LBw8;->c()LIY;
+    check-cast v3, Lf00;
 
+    .line 43
     .line 44
+    iget-object v4, v3, Lf00;->a:LjD8;
+
     .line 45
     .line 46
-    move-result-object v4
+    invoke-virtual {v4}, LjD8;->c()Le10;
 
     .line 47
-    new-instance v5, Ll;
-
     .line 48
     .line 49
-    const/4 v6, 0x2
+    move-result-object v4
 
     .line 50
-    invoke-direct {v5, v6, v3}, Ll;-><init>(ILjava/lang/Object;)V
+    new-instance v5, Lx;
 
     .line 51
     .line 52
+    const/4 v6, 0x2
+
     .line 53
-    invoke-virtual {v4, v5}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-direct {v5, v6, v3}, Lx;-><init>(ILjava/lang/Object;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppStartupCompleteSignaler()Lbke;
+    invoke-virtual {v4, v5}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 57
     .line 58
     .line 59
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAppStartupCompleteSignaler()LDBe;
 
     .line 60
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
-
     .line 61
     .line 62
-    .line 63
     move-result-object v3
 
-    .line 64
-    check-cast v3, LY00;
+    .line 63
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
+    .line 64
     .line 65
     .line 66
-    invoke-virtual {v3}, LY00;->c()V
+    move-result-object v3
 
     .line 67
+    check-cast v3, LD30;
+
     .line 68
     .line 69
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->preloadGraphenePartitionAndStartMemoryMonitor()V
+    invoke-virtual {v3}, LD30;->c()V
 
     .line 70
     .line 71
     .line 72
-    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:Lf7c;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->preloadGraphenePartitionAndStartMemoryMonitor()V
 
     .line 73
     .line 74
-    const/4 v4, 0x0
-
     .line 75
-    const-string v5, "dependencyGraph"
+    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:LOlc;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     .line 76
     .line 77
-    if-eqz v3, :cond_9
+    const/4 v4, 0x0
 
     .line 78
-    .line 79
-    :try_start_1
-    invoke-virtual {v3}, Lf7c;->b()LY05;
+    const-string v5, "dependencyGraph"
 
+    .line 79
     .line 80
+    if-eqz v3, :cond_9
+
     .line 81
     .line 82
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->observeAppLifecycle()V
+    :try_start_1
+    invoke-virtual {v3}, LOlc;->b()LJ65;
 
     .line 83
     .line 84
     .line 85
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupAppLaunchCriticalSection()V
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->observeAppLifecycle()V
 
     .line 86
     .line 87
     .line 88
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->enableFlipperInternal()V
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupAppLaunchCriticalSection()V
 
     .line 89
     .line 90
     .line 91
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getProcessAgeEstimator()Lbke;
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->enableFlipperInternal()V
 
     .line 92
     .line 93
     .line 94
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getProcessAgeEstimator()LDBe;
 
     .line 95
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
-
     .line 96
     .line 97
-    .line 98
     move-result-object v3
+
+    .line 98
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
     .line 99
-    check-cast v3, LNYd;
-
     .line 100
     .line 101
-    iget-object v3, v3, LNYd;->a:Lobi;
+    move-result-object v3
 
     .line 102
-    .line 103
-    invoke-interface {v3}, Lobi;->get()Ljava/lang/Object;
+    check-cast v3, Ljge;
 
+    .line 103
     .line 104
+    iget-object v3, v3, Ljge;->a:LiAi;
+
     .line 105
     .line 106
-    move-result-object v3
+    invoke-interface {v3}, LiAi;->get()Ljava/lang/Object;
 
     .line 107
+    .line 108
+    .line 109
+    move-result-object v3
+
+    .line 110
     move-object v7, v3
 
-    .line 108
+    .line 111
     check-cast v7, Ljava/lang/Long;
 
-    .line 109
-    .line 110
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getStartupTraceProducer()Lbke;
-
-    .line 111
     .line 112
     .line 113
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getStartupTraceProducer()LDBe;
 
     .line 114
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
-
     .line 115
     .line 116
-    .line 117
     move-result-object v3
 
+    .line 117
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
+
     .line 118
+    .line 119
+    .line 120
+    move-result-object v3
+
+    .line 121
     move-object v6, v3
 
-    .line 119
-    check-cast v6, LGth;
-
-    .line 120
-    .line 121
-    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->ctorTimer:LiFf;
-
     .line 122
+    check-cast v6, LwRh;
+
     .line 123
-    iget-wide v8, v3, LiFf;->b:J
-
     .line 124
+    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->ctorTimer:LGYf;
+
     .line 125
-    iget-object v3, v3, LiFf;->c:Ljava/lang/Long;
-
     .line 126
-    .line 127
-    invoke-virtual {v3}, Ljava/lang/Number;->longValue()J
+    iget-wide v8, v3, LGYf;->b:J
 
+    .line 127
     .line 128
+    iget-object v3, v3, LGYf;->c:Ljava/lang/Long;
+
     .line 129
     .line 130
-    move-result-wide v10
+    invoke-virtual {v3}, Ljava/lang/Number;->longValue()J
 
     .line 131
-    invoke-virtual/range {v6 .. v11}, LGth;->i(Ljava/lang/Long;JJ)V
-
     .line 132
     .line 133
+    move-result-wide v10
+
     .line 134
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupRx()V
+    invoke-virtual/range {v6 .. v11}, LwRh;->i(Ljava/lang/Long;JJ)V
 
     .line 135
     .line 136
     .line 137
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupDebuggingSupportInternal()V
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupRx()V
 
     .line 138
     .line 139
     .line 140
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->internalOnlyGamedayProcessing()V
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupDebuggingSupportInternal()V
 
     .line 141
     .line 142
     .line 143
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getStartupDataStoreManager()Lkth;
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->internalOnlyGamedayProcessing()V
 
     .line 144
     .line 145
     .line 146
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getStartupDataStoreManager()LYQh;
 
     .line 147
-    check-cast v3, LV4c;
-
     .line 148
     .line 149
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v3
 
     .line 150
+    check-cast v3, Lq18;
+
     .line 151
     .line 152
-    sget-object v6, Lith;->Z:Lith;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 153
     .line 154
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 155
+    sget-object v6, LWQh;->Z:LWQh;
+
     .line 156
     .line 157
-    new-instance v7, LWm0;
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 158
     .line 159
+    .line 160
+    new-instance v7, Lnp0;
+
+    .line 161
+    .line 162
     const-string v8, "prewarm"
 
-    .line 160
-    .line 161
-    invoke-direct {v7, v6, v8}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
-
-    .line 162
     .line 163
     .line 164
-    iget-object v6, v3, LV4c;->c:Ljava/lang/Object;
+    invoke-direct {v7, v6, v8}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 165
     .line 166
-    check-cast v6, Lnwf;
-
     .line 167
+    iget-object v6, v3, Lq18;->c:Ljava/lang/Object;
+
     .line 168
-    check-cast v6, LIP5;
-
     .line 169
-    .line 170
-    invoke-static {v6, v7}, Llva;->m(LIP5;LWm0;)LF06;
+    check-cast v6, LyPf;
 
+    .line 170
     .line 171
+    check-cast v6, LTT5;
+
     .line 172
     .line 173
-    move-result-object v6
+    invoke-static {v6, v7}, LzHa;->n(LTT5;Lnp0;)LA36;
 
     .line 174
-    new-instance v7, LIRa;
-
     .line 175
     .line 176
-    const/16 v8, 0xc
+    move-result-object v6
 
     .line 177
-    .line 178
-    invoke-direct {v7, v8, v3}, LIRa;-><init>(ILjava/lang/Object;)V
+    new-instance v7, LZLc;
 
+    .line 178
     .line 179
+    const/16 v8, 0xa
+
     .line 180
     .line 181
-    invoke-virtual {v6, v7}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-direct {v7, v8, v3}, LZLc;-><init>(ILjava/lang/Object;)V
 
     .line 182
     .line 183
     .line 184
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->warmupCamera()V
+    invoke-virtual {v6, v7}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 185
     .line 186
     .line 187
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getClientInitializer()Lbke;
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->warmupCamera()V
 
     .line 188
     .line 189
     .line 190
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getClientInitializer()LDBe;
 
     .line 191
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
-
     .line 192
     .line 193
-    .line 194
     move-result-object v3
+
+    .line 194
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
     .line 195
-    check-cast v3, Ly43;
-
     .line 196
     .line 197
-    check-cast v3, Lwlc;
-
-    .line 198
-    .line 199
-    iget-object v6, v3, Lwlc;->o0:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
-
-    .line 200
-    .line 201
-    iget-object v3, v3, Lwlc;->f0:LBre;
-
-    .line 202
-    .line 203
-    invoke-virtual {v3}, LBre;->g()LF06;
-
-    .line 204
-    .line 205
-    .line 206
     move-result-object v3
 
-    .line 207
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 198
+    check-cast v3, LN63;
 
+    .line 199
+    .line 200
+    check-cast v3, LMAc;
+
+    .line 201
+    .line 202
+    iget-object v6, v3, LMAc;->o0:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    .line 203
+    .line 204
+    iget-object v3, v3, LMAc;->f0:LnJe;
+
+    .line 205
+    .line 206
+    invoke-virtual {v3}, LnJe;->g()LA36;
+
+    .line 207
     .line 208
     .line 209
+    move-result-object v3
+
     .line 210
-    new-instance v7, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 211
     .line 212
-    invoke-direct {v7, v6, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
     .line 213
+    new-instance v7, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
     .line 214
     .line 215
-    invoke-virtual {v7}, Lio/reactivex/rxjava3/core/Single;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-direct {v7, v6, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 216
     .line 217
     .line 218
-    const-string v3, "setGsonWrapper"
+    invoke-virtual {v7}, Lio/reactivex/rxjava3/core/Single;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 219
     .line 220
-    invoke-virtual {v1, v3}, LWRg;->e(Ljava/lang/String;)I
-
     .line 221
+    const-string v3, "setGsonWrapper"
+
     .line 222
     .line 223
+    invoke-virtual {v1, v3}, LNdh;->e(Ljava/lang/String;)I
+
+    .line 224
+    .line 225
+    .line 226
     move-result v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 224
+    .line 227
     :try_start_2
-    sget-object v6, LV6c;->a:LV6c;
+    sget-object v6, LElc;->a:LElc;
 
-    .line 225
-    .line 226
-    sput-object v6, LKG8;->d:LV6c;
+    .line 228
+    .line 229
+    sput-object v6, LMN8;->d:LElc;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_3
 
-    .line 227
-    .line 228
-    :try_start_3
-    invoke-virtual {v1, v3}, LWRg;->h(I)V
-
-    .line 229
     .line 230
     .line 231
-    const-string v3, "io.grpc.internal.DnsNameResolverProvider.enable_jndi"
+    :try_start_3
+    invoke-virtual {v1, v3}, LNdh;->h(I)V
 
     .line 232
     .line 233
+    .line 234
+    const-string v3, "io.grpc.internal.DnsNameResolverProvider.enable_jndi"
+
+    .line 235
+    .line 236
     const-string v6, "false"
 
-    .line 234
-    .line 235
-    invoke-static {v3, v6}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 236
     .line 237
     .line 238
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->enableLeakTrackerInternal()V
+    invoke-static {v3, v6}, Ljava/lang/System;->setProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 239
     .line 240
     .line 241
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->enableLeakTrackerInternal()V
 
     .line 242
     .line 243
     .line 244
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
 
     .line 245
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 246
     .line 247
+    move-result-object v3
+
     .line 248
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getUserAuthStore()Lbke;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 249
     .line 250
     .line 251
-    move-result-object v3
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getUserAuthStore()LDBe;
 
     .line 252
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
-
     .line 253
     .line 254
-    .line 255
     move-result-object v3
 
-    .line 256
-    check-cast v3, LXSg;
+    .line 255
+    invoke-interface {v3}, LDBe;->get()Ljava/lang/Object;
 
+    .line 256
     .line 257
     .line 258
-    invoke-interface {v3}, LXSg;->B()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+    move-result-object v3
 
     .line 259
+    check-cast v3, LQeh;
+
     .line 260
     .line 261
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-interface {v3}, LQeh;->B()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     .line 262
     .line 263
     .line 264
-    const-string v2, "patchStaticConstructorMap"
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 265
     .line 266
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
-
     .line 267
+    const-string v2, "patchStaticConstructorMap"
+
     .line 268
     .line 269
-    move-result v2
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 270
+    .line 271
+    .line 272
+    move-result v2
+
+    .line 273
     :try_start_4
     sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 271
-    .line 272
+    .line 274
+    .line 275
     const/16 v6, 0x18
 
-    .line 273
-    .line 274
+    .line 276
+    .line 277
     if-lt v3, v6, :cond_0
 
-    .line 275
-    .line 276
+    .line 278
+    .line 279
     const/16 v6, 0x1a
 
-    .line 277
-    .line 278
+    .line 280
+    .line 281
     if-ge v3, v6, :cond_0
 
-    .line 279
-    .line 280
+    .line 282
+    .line 283
     :try_start_5
     const-class v3, Landroid/view/LayoutInflater;
 
-    .line 281
-    .line 282
+    .line 284
+    .line 285
     const-string v6, "sConstructorMap"
 
-    .line 283
-    .line 284
-    invoke-virtual {v3, v6}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    .line 285
     .line 286
     .line 287
-    move-result-object v3
+    invoke-virtual {v3, v6}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     .line 288
+    .line 289
+    .line 290
+    move-result-object v3
+
+    .line 291
     const/4 v6, 0x1
 
-    .line 289
-    invoke-virtual {v3, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
-
-    .line 290
-    .line 291
     .line 292
-    const-class v7, Ljava/lang/reflect/Field;
+    invoke-virtual {v3, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 293
     .line 294
+    .line 295
+    const-class v7, Ljava/lang/reflect/Field;
+
+    .line 296
+    .line 297
     const-string v8, "accessFlags"
 
-    .line 295
-    .line 296
-    invoke-virtual {v7, v8}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
-
-    .line 297
     .line 298
     .line 299
-    move-result-object v7
+    invoke-virtual {v7, v8}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     .line 300
-    invoke-virtual {v7, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
-
     .line 301
     .line 302
+    move-result-object v7
+
     .line 303
-    invoke-virtual {v3}, Ljava/lang/reflect/Field;->getModifiers()I
+    invoke-virtual {v7, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
     .line 304
     .line 305
     .line 306
-    move-result v6
+    invoke-virtual {v3}, Ljava/lang/reflect/Field;->getModifiers()I
 
     .line 307
-    and-int/lit8 v6, v6, -0x11
-
     .line 308
     .line 309
-    invoke-virtual {v7, v3, v6}, Ljava/lang/reflect/Field;->setInt(Ljava/lang/Object;I)V
+    move-result v6
 
     .line 310
+    and-int/lit8 v6, v6, -0x11
+
     .line 311
     .line 312
-    new-instance v6, Lm06;
+    invoke-virtual {v7, v3, v6}, Ljava/lang/reflect/Field;->setInt(Ljava/lang/Object;I)V
 
     .line 313
     .line 314
-    invoke-direct {v6}, Lm06;-><init>()V
-
     .line 315
+    new-instance v6, Lh36;
+
     .line 316
     .line 317
+    invoke-direct {v6}, Lh36;-><init>()V
+
+    .line 318
+    .line 319
+    .line 320
     invoke-virtual {v3, v4, v6}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_0
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 318
-    .line 319
-    .line 320
-    :catch_0
-    :cond_0
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
-
     .line 321
     .line 322
     .line 323
-    const-string v2, "patchStaticTypefaceCache"
+    :catch_0
+    :cond_0
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 324
     .line 325
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
-
     .line 326
+    const-string v2, "patchStaticTypefaceCache"
+
     .line 327
     .line 328
-    move-result v2
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 329
-    :try_start_6
-    invoke-static {}, LCq9;->I1()V
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_0
-
     .line 330
     .line 331
+    move-result v2
+
     .line 332
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    :try_start_6
+    invoke-static {}, LMsi;->u()V
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
     .line 333
     .line 334
     .line 335
-    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupNLOader()V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 336
     .line 337
     .line 338
-    iget-object v1, p0, Lcom/snap/core/application/BaseApplication;->launchTracker:LiG9;
+    invoke-direct {p0}, Lcom/snap/mushroom/app/MushroomApplication;->setupNLOader()V
 
     .line 339
     .line 340
+    .line 341
+    iget-object v1, p0, Lcom/snap/core/application/BaseApplication;->launchTracker:LGR9;
+
+    .line 342
+    .line 343
     if-eqz v1, :cond_1
 
-    .line 341
-    .line 342
-    invoke-virtual {v0}, LiFf;->b()LiFf;
-
-    .line 343
     .line 344
     .line 345
-    invoke-virtual {v1, v0}, LU1g;->k(LiFf;)V
+    invoke-virtual {v0}, LGYf;->b()LGYf;
 
     .line 346
     .line 347
     .line 348
-    :cond_1
-    sget-object v0, LCw8;->b:LCw8;
+    invoke-virtual {v1, v0}, Lmmg;->k(LGYf;)V
 
     .line 349
     .line 350
-    sget-object v1, Livd;->r0:Livd;
-
     .line 351
-    .line 352
-    invoke-virtual {v0, v1}, LCw8;->b(Livd;)V
+    :cond_1
+    sget-object v0, LkD8;->b:LkD8;
 
+    .line 352
     .line 353
+    sget-object v1, LWLd;->r0:LWLd;
+
     .line 354
     .line 355
-    iget-object v0, v0, LCw8;->a:Lx10;
+    invoke-virtual {v0, v1}, LkD8;->b(LWLd;)V
 
     .line 356
     .line 357
-    iget-object v0, v0, Lx10;->a:LiVe;
-
     .line 358
+    iget-object v0, v0, LkD8;->a:Lc40;
+
     .line 359
-    iget-object v1, v0, LiVe;->c:Ljava/util/concurrent/atomic/AtomicReference;
-
     .line 360
+    iget-object v0, v0, Lc40;->a:Lcdf;
+
     .line 361
-    iget-object v3, v0, LiVe;->a:Lio/reactivex/rxjava3/subjects/ReplaySubject;
-
     .line 362
+    iget-object v1, v0, Lcdf;->c:Ljava/util/concurrent/atomic/AtomicReference;
+
     .line 363
-    :cond_2
-    iget-object v2, v0, LiVe;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 364
-    .line 365
-    invoke-virtual {v1, v3, v2}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v3, v0, Lcdf;->a:Lio/reactivex/rxjava3/subjects/ReplaySubject;
 
+    .line 365
     .line 366
+    :cond_2
+    iget-object v2, v0, Lcdf;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 367
     .line 368
-    move-result v2
+    invoke-virtual {v1, v3, v2}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 369
-    if-eqz v2, :cond_4
-
     .line 370
     .line 371
-    iget-object v1, v0, LiVe;->a:Lio/reactivex/rxjava3/subjects/ReplaySubject;
+    move-result v2
 
     .line 372
+    if-eqz v2, :cond_4
+
     .line 373
+    .line 374
+    iget-object v1, v0, Lcdf;->a:Lio/reactivex/rxjava3/subjects/ReplaySubject;
+
+    .line 375
+    .line 376
     if-eqz v1, :cond_3
 
-    .line 374
-    .line 375
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/subjects/ReplaySubject;->onComplete()V
-
-    .line 376
     .line 377
     .line 378
-    :cond_3
-    iput-object v4, v0, LiVe;->a:Lio/reactivex/rxjava3/subjects/ReplaySubject;
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/subjects/ReplaySubject;->onComplete()V
 
     .line 379
     .line 380
-    goto :goto_0
-
     .line 381
-    :cond_4
-    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+    :cond_3
+    iput-object v4, v0, Lcdf;->a:Lio/reactivex/rxjava3/subjects/ReplaySubject;
 
     .line 382
     .line 383
+    goto :goto_0
+
     .line 384
-    move-result-object v2
+    :cond_4
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     .line 385
-    if-eq v2, v3, :cond_2
-
     .line 386
     .line 387
-    :goto_0
-    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:Lf7c;
+    move-result-object v2
 
     .line 388
+    if-eq v2, v3, :cond_2
+
     .line 389
+    .line 390
+    :goto_0
+    iget-object v0, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:LOlc;
+
+    .line 391
+    .line 392
     if-eqz v0, :cond_5
 
-    .line 390
-    .line 391
-    invoke-virtual {v0}, Lf7c;->d()LAG4;
-
-    .line 392
     .line 393
     .line 394
-    move-result-object v0
+    invoke-virtual {v0}, LOlc;->d()Lu65;
 
     .line 395
-    invoke-virtual {v0}, LAG4;->g()LFY4;
-
     .line 396
     .line 397
-    .line 398
     move-result-object v0
 
-    .line 399
-    invoke-virtual {v0}, LFY4;->P()LaA8;
+    .line 398
+    invoke-virtual {v0}, Lu65;->h()Lz45;
 
+    .line 399
     .line 400
     .line 401
+    move-result-object v0
+
     .line 402
-    sget-object v0, Lo00;->a:Lo00;
+    invoke-virtual {v0}, Lz45;->Q()LcH8;
 
     .line 403
     .line 404
-    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAserDependencies()Lbke;
-
     .line 405
+    sget-object v0, LV20;->a:LV20;
+
     .line 406
     .line 407
-    move-result-object v1
+    invoke-virtual {p0}, Lcom/snap/mushroom/app/MushroomApplication;->getAserDependencies()LDBe;
 
     .line 408
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
-
     .line 409
     .line 410
-    .line 411
     move-result-object v1
 
-    .line 412
-    check-cast v1, Lj00;
+    .line 411
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
 
+    .line 412
     .line 413
     .line 414
-    invoke-virtual {v0, v1}, Lo00;->d(Lj00;)V
+    move-result-object v1
 
     .line 415
+    check-cast v1, LQ20;
+
     .line 416
     .line 417
-    return-void
+    invoke-virtual {v0, v1}, LV20;->d(LQ20;)V
 
     .line 418
-    :cond_5
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
     .line 419
     .line 420
+    return-void
+
     .line 421
-    throw v4
+    :cond_5
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 422
+    .line 423
+    .line 424
+    throw v4
+
+    .line 425
     :catchall_0
     move-exception v0
 
-    .line 423
-    sget-object v1, LXRg;->b:Lzhi;
+    .line 426
+    sget-object v1, LOdh;->b:LtGi;
 
-    .line 424
-    .line 425
+    .line 427
+    .line 428
     if-eqz v1, :cond_6
 
-    .line 426
-    .line 427
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
-
-    .line 428
     .line 429
     .line 430
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 431
+    .line 432
+    .line 433
     :cond_6
     throw v0
 
-    .line 431
+    .line 434
     :catchall_1
     move-exception v0
 
-    .line 432
-    sget-object v1, LXRg;->b:Lzhi;
+    .line 435
+    sget-object v1, LOdh;->b:LtGi;
 
-    .line 433
-    .line 434
+    .line 436
+    .line 437
     if-eqz v1, :cond_7
 
-    .line 435
-    .line 436
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
-
-    .line 437
     .line 438
     .line 439
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 440
+    .line 441
+    .line 442
     :cond_7
     throw v0
 
-    .line 440
+    .line 443
     :catchall_2
     move-exception v0
 
-    .line 441
+    .line 444
     goto :goto_1
 
-    .line 442
+    .line 445
     :catchall_3
     move-exception v0
 
-    .line 443
+    .line 446
     :try_start_7
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
-    .line 444
-    .line 445
+    .line 447
+    .line 448
     if-eqz v1, :cond_8
 
-    .line 446
-    .line 447
-    invoke-virtual {v1, v3}, Lzhi;->o(I)V
-
-    .line 448
     .line 449
     .line 450
+    invoke-virtual {v1, v3}, LtGi;->o(I)V
+
+    .line 451
+    .line 452
+    .line 453
     :cond_8
     throw v0
 
-    .line 451
-    :cond_9
-    invoke-static {v5}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 452
-    .line 453
     .line 454
+    :cond_9
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 455
+    .line 456
+    .line 457
     throw v4
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
-    .line 455
+    .line 458
     :goto_1
-    sget-object v1, LXRg;->b:Lzhi;
+    sget-object v1, LOdh;->b:LtGi;
 
-    .line 456
-    .line 457
+    .line 459
+    .line 460
     if-eqz v1, :cond_a
 
-    .line 458
-    .line 459
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
-
-    .line 460
     .line 461
     .line 462
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 463
+    .line 464
+    .line 465
     :cond_a
     throw v0
 .end method
 
 .method public performInjection()V
-    .locals 7
+    .locals 8
 
     .line 1
-    sget-object v0, LCw8;->b:LCw8;
+    sget-object v0, LkD8;->b:LkD8;
 
     .line 2
     .line 3
-    sget-object v1, Livd;->o0:Livd;
+    sget-object v1, LWLd;->o0:LWLd;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, LCw8;->b(Livd;)V
+    invoke-virtual {v0, v1}, LkD8;->b(LWLd;)V
 
     .line 6
     .line 7
     .line 8
-    sget-object v1, Lzth;->t:Lzth;
+    sget-object v1, LpRh;->t:LpRh;
 
     .line 9
     .line 10
-    invoke-static {v1}, LiFf;->a(LS1g;)LiFf;
+    invoke-static {v1}, LGYf;->a(Lkmg;)LGYf;
 
     .line 11
     .line 12
@@ -5835,24 +6006,24 @@
     move-result-object v1
 
     .line 14
-    iput-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->injectTimer:LiFf;
+    iput-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->injectTimer:LGYf;
 
     .line 15
     .line 16
-    new-instance v1, LR1k;
+    new-instance v1, LPrk;
 
     .line 17
     .line 18
-    invoke-direct {v1, p0}, LR1k;-><init>(Lcom/snap/mushroom/app/MushroomApplication;)V
+    invoke-direct {v1, p0}, LPrk;-><init>(Lcom/snap/mushroom/app/MushroomApplication;)V
 
     .line 19
     .line 20
     .line 21
-    new-instance v2, LQ1k;
+    new-instance v2, LOrk;
 
     .line 22
     .line 23
-    invoke-direct {v2, v1}, LQ1k;-><init>(LR1k;)V
+    invoke-direct {v2, v1}, LOrk;-><init>(LPrk;)V
 
     .line 24
     .line 25
@@ -5866,11 +6037,11 @@
     .line 29
     .line 30
     .line 31
-    iget-object v1, v1, LR1k;->b:LBre;
+    iget-object v1, v1, LPrk;->b:LnJe;
 
     .line 32
     .line 33
-    invoke-virtual {v1}, LBre;->g()LF06;
+    invoke-virtual {v1}, LnJe;->g()LA36;
 
     .line 34
     .line 35
@@ -5887,7 +6058,7 @@
     .line 40
     .line 41
     .line 42
-    invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Completable;->q()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+    invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Completable;->p()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
 
     .line 43
     .line 44
@@ -5895,15 +6066,15 @@
     move-result-object v1
 
     .line 46
-    sget-object v2, Lylc;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v2, LOAc;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 47
     .line 48
-    sget-object v2, LY6c;->c:LY6c;
+    sget-object v2, Liia;->e0:Liia;
 
     .line 49
     .line 50
-    sget-object v3, Lylc;->c:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+    sget-object v3, LOAc;->c:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
     .line 51
     .line 52
@@ -5921,15 +6092,15 @@
     .line 58
     .line 59
     .line 60
-    new-instance v2, LXW6;
+    new-instance v2, LXD5;
 
     .line 61
     .line 62
-    const/16 v3, 0x10
+    const/16 v3, 0x1d
 
     .line 63
     .line 64
-    invoke-direct {v2, v3, p0}, LXW6;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, LXD5;-><init>(ILjava/lang/Object;)V
 
     .line 65
     .line 66
@@ -5957,7 +6128,7 @@
     .line 78
     .line 79
     .line 80
-    sget-object v1, LXRg;->a:LWRg;
+    sget-object v1, LOdh;->a:LNdh;
 
     .line 81
     .line 82
@@ -5965,7 +6136,7 @@
 
     .line 83
     .line 84
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 85
     .line 86
@@ -5989,7 +6160,7 @@
     .line 93
     .line 94
     .line 95
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 96
     .line 97
@@ -6002,7 +6173,7 @@
 
     .line 101
     .line 102
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
     .line 103
     .line 104
@@ -6011,707 +6182,734 @@
 
     .line 106
     :try_start_1
-    new-instance v3, Lf7c;
+    new-instance v3, Lcom/snap/core/application/SnapResourcesContextWrapper;
 
     .line 107
     .line 108
-    iget-object v4, p0, Lcom/snap/mushroom/app/MushroomApplication;->buildConfigInfo:Lcom/snap/framework/developer/BuildConfigInfo;
+    invoke-direct {v3, p0}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
 
     .line 109
     .line 110
-    const/4 v5, 0x0
-
     .line 111
-    if-eqz v4, :cond_5
+    new-instance v4, LOlc;
 
     .line 112
     .line 113
-    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()LeNe;
+    iget-object v5, p0, Lcom/snap/mushroom/app/MushroomApplication;->buildConfigInfo:Lcom/snap/framework/developer/BuildConfigInfo;
 
     .line 114
     .line 115
+    const/4 v6, 0x0
+
     .line 116
-    move-result-object v6
+    if-eqz v5, :cond_5
 
     .line 117
-    invoke-direct {v3, p0, v4, v6}, Lf7c;-><init>(Lcom/snap/mushroom/app/MushroomApplication;Lcom/snap/framework/developer/BuildConfigInfo;LeNe;)V
+    .line 118
+    invoke-virtual {p0}, Lcom/snap/core/application/BaseApplication;->getReleaseManager()La5f;
+
+    .line 119
+    .line 120
+    .line 121
+    move-result-object v7
+
+    .line 122
+    invoke-direct {v4, v3, v5, v7}, LOlc;-><init>(Lcom/snap/core/application/SnapResourcesContextWrapper;Lcom/snap/framework/developer/BuildConfigInfo;La5f;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 118
-    .line 119
-    .line 120
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
-
-    .line 121
-    .line 122
     .line 123
-    iput-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:Lf7c;
-
     .line 124
     .line 125
-    const-string v2, "inject MushroomApplication"
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 126
     .line 127
-    invoke-virtual {v1, v2}, LWRg;->e(Ljava/lang/String;)I
-
     .line 128
+    iput-object v4, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:LOlc;
+
     .line 129
     .line 130
-    move-result v2
+    const-string v2, "inject MushroomApplication"
 
     .line 131
-    :try_start_2
-    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:Lf7c;
-
     .line 132
-    .line 133
-    if-eqz v3, :cond_3
+    invoke-virtual {v1, v2}, LNdh;->e(Ljava/lang/String;)I
 
+    .line 133
     .line 134
     .line 135
-    invoke-virtual {v3}, Lf7c;->a()LlY4;
+    move-result v2
 
     .line 136
+    :try_start_2
+    iget-object v3, p0, Lcom/snap/mushroom/app/MushroomApplication;->dependencyGraph:LOlc;
+
     .line 137
     .line 138
-    move-result-object v3
+    if-eqz v3, :cond_3
 
     .line 139
-    invoke-virtual {v3, p0}, LlY4;->a(Lcom/snap/mushroom/app/MushroomApplication;)V
+    .line 140
+    invoke-virtual {v3}, LOlc;->a()Lf45;
+
+    .line 141
+    .line 142
+    .line 143
+    move-result-object v3
+
+    .line 144
+    invoke-virtual {v3, p0}, Lf45;->a(Lcom/snap/mushroom/app/MushroomApplication;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 140
-    .line 141
-    .line 142
-    invoke-virtual {v1, v2}, LWRg;->h(I)V
-
-    .line 143
-    .line 144
     .line 145
-    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->injectTimer:LiFf;
-
     .line 146
     .line 147
-    const-string v2, "injectTimer"
+    invoke-virtual {v1, v2}, LNdh;->h(I)V
 
     .line 148
     .line 149
-    if-eqz v1, :cond_2
-
     .line 150
-    .line 151
-    invoke-virtual {v1}, LiFf;->b()LiFf;
+    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->injectTimer:LGYf;
 
+    .line 151
     .line 152
+    const-string v2, "injectTimer"
+
     .line 153
     .line 154
-    sget-object v1, Livd;->p0:Livd;
+    if-eqz v1, :cond_2
 
     .line 155
     .line 156
-    invoke-virtual {v0, v1}, LCw8;->b(Livd;)V
+    invoke-virtual {v1}, LGYf;->b()LGYf;
 
     .line 157
     .line 158
     .line 159
-    iget-object v0, p0, Lcom/snap/core/application/BaseApplication;->launchTracker:LiG9;
+    sget-object v1, LWLd;->p0:LWLd;
 
     .line 160
     .line 161
-    if-eqz v0, :cond_1
+    invoke-virtual {v0, v1}, LkD8;->b(LWLd;)V
 
     .line 162
     .line 163
-    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->ctorTimer:LiFf;
-
     .line 164
-    .line 165
-    invoke-virtual {v0, v1}, LU1g;->k(LiFf;)V
+    iget-object v0, p0, Lcom/snap/core/application/BaseApplication;->launchTracker:LGR9;
 
+    .line 165
     .line 166
+    if-eqz v0, :cond_1
+
     .line 167
     .line 168
-    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->injectTimer:LiFf;
+    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->ctorTimer:LGYf;
 
     .line 169
     .line 170
-    if-eqz v1, :cond_0
+    invoke-virtual {v0, v1}, Lmmg;->k(LGYf;)V
 
     .line 171
     .line 172
-    invoke-virtual {v0, v1}, LU1g;->k(LiFf;)V
-
     .line 173
+    iget-object v1, p0, Lcom/snap/mushroom/app/MushroomApplication;->injectTimer:LGYf;
+
     .line 174
     .line 175
-    return-void
+    if-eqz v1, :cond_0
 
     .line 176
-    :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
-
     .line 177
+    invoke-virtual {v0, v1}, Lmmg;->k(LGYf;)V
+
     .line 178
     .line 179
-    throw v5
-
     .line 180
-    :cond_1
     return-void
 
     .line 181
-    :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    :cond_0
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 182
     .line 183
     .line 184
-    throw v5
+    throw v6
 
     .line 185
+    :cond_1
+    return-void
+
+    .line 186
+    :cond_2
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 187
+    .line 188
+    .line 189
+    throw v6
+
+    .line 190
     :catchall_0
     move-exception v0
 
-    .line 186
+    .line 191
     goto :goto_0
 
-    .line 187
+    .line 192
     :cond_3
     :try_start_3
     const-string v0, "dependencyGraph"
 
-    .line 188
-    .line 189
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    .line 193
+    .line 194
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 190
-    .line 191
-    .line 192
-    throw v5
+    .line 195
+    .line 196
+    .line 197
+    throw v6
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 193
-    :goto_0
-    sget-object v1, LXRg;->b:Lzhi;
-
-    .line 194
-    .line 195
-    if-eqz v1, :cond_4
-
-    .line 196
-    .line 197
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
-
     .line 198
+    :goto_0
+    sget-object v1, LOdh;->b:LtGi;
+
     .line 199
     .line 200
+    if-eqz v1, :cond_4
+
+    .line 201
+    .line 202
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 203
+    .line 204
+    .line 205
     :cond_4
     throw v0
 
-    .line 201
+    .line 206
     :catchall_1
     move-exception v0
 
-    .line 202
+    .line 207
     goto :goto_1
 
-    .line 203
+    .line 208
     :cond_5
     :try_start_4
     const-string v0, "buildConfigInfo"
 
-    .line 204
-    .line 205
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    .line 209
+    .line 210
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
-    .line 206
-    .line 207
-    .line 208
-    throw v5
+    .line 211
+    .line 212
+    .line 213
+    throw v6
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 209
-    :goto_1
-    sget-object v1, LXRg;->b:Lzhi;
-
-    .line 210
-    .line 211
-    if-eqz v1, :cond_6
-
-    .line 212
-    .line 213
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
-
     .line 214
+    :goto_1
+    sget-object v1, LOdh;->b:LtGi;
+
     .line 215
     .line 216
-    :cond_6
-    throw v0
+    if-eqz v1, :cond_6
 
     .line 217
-    :catchall_2
-    move-exception v0
-
     .line 218
-    sget-object v1, LXRg;->b:Lzhi;
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
 
     .line 219
     .line 220
-    if-eqz v1, :cond_7
-
     .line 221
+    :cond_6
+    throw v0
+
     .line 222
-    invoke-virtual {v1, v2}, Lzhi;->o(I)V
+    :catchall_2
+    move-exception v0
 
     .line 223
+    sget-object v1, LOdh;->b:LtGi;
+
     .line 224
     .line 225
+    if-eqz v1, :cond_7
+
+    .line 226
+    .line 227
+    invoke-virtual {v1, v2}, LtGi;->o(I)V
+
+    .line 228
+    .line 229
+    .line 230
     :cond_7
     throw v0
 .end method
 
-.method public final setAppDsoPostLoadInitPropertiesProvider(Lbke;)V
+.method public final setAppDsoPostLoadInitPropertiesProvider(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appDsoPostLoadInitPropertiesProvider:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appDsoPostLoadInitPropertiesProvider:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setAppForegroundStateProvider(Lbke;)V
+.method public final setAppForegroundStateProvider(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appForegroundStateProvider:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appForegroundStateProvider:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setAppNativeComponentsLayout(Lbke;)V
+.method public final setAppNativeComponentsLayout(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeComponentsLayout:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeComponentsLayout:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setAppNativeLoadDelegate(Lbke;)V
+.method public final setAppNativeLoadDelegate(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeLoadDelegate:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appNativeLoadDelegate:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setAppStartExperimentReader(Lbke;)V
+.method public final setAppStartExperimentReader(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartExperimentReader:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartExperimentReader:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setAppStartupCompleteSignaler(Lbke;)V
+.method public final setAppStartupCompleteSignaler(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartupCompleteSignaler:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->appStartupCompleteSignaler:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setAserDependencies(Lbke;)V
+.method public final setAserDependencies(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->aserDependencies:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->aserDependencies:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setCircumstanceEngine(Lbke;)V
+.method public final setCircumstanceEngine(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->circumstanceEngine:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->circumstanceEngine:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setClientInitializer(Lbke;)V
+.method public final setClientInitializer(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->clientInitializer:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->clientInitializer:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setCriticalWorkCoordinator(Lbke;)V
+.method public final setCriticalWorkCoordinator(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->criticalWorkCoordinator:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->criticalWorkCoordinator:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setDebuggingSupport(Lbke;)V
+.method public final setDebuggingSupport(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->debuggingSupport:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->debuggingSupport:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setDisposableReleaserProvider(Lbke;)V
+.method public final setDisposableReleaserProvider(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->disposableReleaserProvider:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->disposableReleaserProvider:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setFlipperSupport(Lbke;)V
+.method public final setFlipperSupport(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->flipperSupport:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->flipperSupport:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setLeakTracker(Lbke;)V
+.method public final setLeakTracker(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->leakTracker:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->leakTracker:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setMemoryMonitor(Lbke;)V
+.method public final setMemoryMonitor(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->memoryMonitor:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->memoryMonitor:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setNavigationDestinationSignaler(Lbke;)V
+.method public final setNavigationDestinationSignaler(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->navigationDestinationSignaler:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->navigationDestinationSignaler:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setProcessAgeEstimator(Lbke;)V
+.method public final setProcessAgeEstimator(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->processAgeEstimator:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->processAgeEstimator:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setRecoveryGamedayExecutor(Lbke;)V
+.method public final setRecoveryGamedayExecutor(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->recoveryGamedayExecutor:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->recoveryGamedayExecutor:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setSchedulersProvider(Lbke;)V
+.method public final setSchedulersProvider(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->schedulersProvider:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->schedulersProvider:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setStartupDataStoreManager(Lkth;)V
+.method public final setStartupDataStoreManager(LYQh;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupDataStoreManager:Lkth;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupDataStoreManager:LYQh;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setStartupTraceProducer(Lbke;)V
+.method public final setStartupTraceProducer(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupTraceProducer:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->startupTraceProducer:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setTestDependencyProvider(Lbke;)V
+.method public final setTestDependencyProvider(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->testDependencyProvider:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->testDependencyProvider:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setUndeliverableExceptionConsumer(Lbke;)V
+.method public final setUndeliverableExceptionConsumer(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->undeliverableExceptionConsumer:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->undeliverableExceptionConsumer:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setUserAuthStore(Lbke;)V
+.method public final setUserAuthStore(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->userAuthStore:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->userAuthStore:LDBe;
 
     .line 2
     .line 3
     return-void
 .end method
 
-.method public final setWorkManagerConfigurationBuilder(Lbke;)V
+.method public final setUserContextCoordinator(LDBe;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lbke;",
+            "LDBe;",
             ")V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->workManagerConfigurationBuilder:Lbke;
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->userContextCoordinator:LDBe;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final setWorkManagerConfigurationBuilder(LDBe;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LDBe;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/snap/mushroom/app/MushroomApplication;->workManagerConfigurationBuilder:LDBe;
 
     .line 2
     .line 3

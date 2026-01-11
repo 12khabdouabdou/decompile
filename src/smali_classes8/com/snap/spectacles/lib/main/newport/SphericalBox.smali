@@ -12,7 +12,7 @@
 
 .field private static final CROPPED_AREA_TOP_PIXELS:I = 0x1b2
 
-.field public static final Companion:Lueh;
+.field public static final Companion:LeAh;
 
 .field private static final FULL_PANO_HEIGHT_PIXELS:I = 0x825
 
@@ -30,7 +30,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lueh;
+    new-instance v0, LeAh;
 
     .line 2
     .line 3
@@ -39,7 +39,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/spectacles/lib/main/newport/SphericalBox;->Companion:Lueh;
+    sput-object v0, Lcom/snap/spectacles/lib/main/newport/SphericalBox;->Companion:LeAh;
 
     .line 7
     .line 8
@@ -68,7 +68,7 @@
     .line 9
     .line 10
     .line 11
-    sget-object v0, LCL8;->a:[C
+    sget-object v0, LBT8;->a:[C
 
     .line 12
     .line 13
@@ -119,7 +119,7 @@
 
     .line 34
     .line 35
-    sget-object v7, LCL8;->d:[B
+    sget-object v7, LBT8;->d:[B
 
     .line 36
     .line 37
@@ -248,7 +248,7 @@
 
     .line 11
     .line 12
-    sget-object v1, LHC2;->a:Ljava/nio/charset/Charset;
+    sget-object v1, LxF2;->a:Ljava/nio/charset/Charset;
 
     .line 13
     .line 14
@@ -306,7 +306,7 @@
     .locals 1
 
     .line 1
-    new-instance p1, LJBc;
+    new-instance p1, LwQc;
 
     .line 2
     .line 3

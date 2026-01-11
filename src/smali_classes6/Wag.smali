@@ -1,100 +1,143 @@
 .class public final LWag;
-.super Lcom/snap/composer/utils/b;
+.super LXag;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'feature\':r?:\'[0]\',\'sectionHeaderTitle\':s?,\'disableHorizontalSectionBodyPadding\':b@?,\'renderSectionContent\':f?(),\'actionButtonRenderFn\':f?()"
-    typeReferences = {
-        Lcom/snap/modules/sharable_attachments_api/SharableDrawerFeature;
-    }
-.end annotation
-
-
 # instance fields
-.field private _actionButtonRenderFn:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _disableHorizontalSectionBodyPadding:Ljava/lang/Boolean;
-
-.field private _feature:Lcom/snap/modules/sharable_attachments_api/SharableDrawerFeature;
-
-.field private _renderSectionContent:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _sectionHeaderTitle:Ljava/lang/String;
+.field public final a:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput-object v0, p0, LWag;->_feature:Lcom/snap/modules/sharable_attachments_api/SharableDrawerFeature;
-
     .line 3
-    iput-object v0, p0, LWag;->_sectionHeaderTitle:Ljava/lang/String;
-
     .line 4
-    iput-object v0, p0, LWag;->_disableHorizontalSectionBodyPadding:Ljava/lang/Boolean;
+    iput-object p1, p0, LWag;->a:Ljava/lang/String;
 
     .line 5
-    iput-object v0, p0, LWag;->_renderSectionContent:Lkotlin/jvm/functions/Function0;
-
     .line 6
-    iput-object v0, p0, LWag;->_actionButtonRenderFn:Lkotlin/jvm/functions/Function0;
-
     return-void
 .end method
 
-.method public constructor <init>(Lcom/snap/modules/sharable_attachments_api/SharableDrawerFeature;Ljava/lang/String;Ljava/lang/Boolean;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/modules/sharable_attachments_api/SharableDrawerFeature;",
-            "Ljava/lang/String;",
-            "Ljava/lang/Boolean;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function0;",
-            ")V"
-        }
-    .end annotation
 
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LWag;
+
+    .line 6
     .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x0
 
     .line 8
-    iput-object p1, p0, LWag;->_feature:Lcom/snap/modules/sharable_attachments_api/SharableDrawerFeature;
+    if-nez v1, :cond_1
 
     .line 9
-    iput-object p2, p0, LWag;->_sectionHeaderTitle:Ljava/lang/String;
-
     .line 10
-    iput-object p3, p0, LWag;->_disableHorizontalSectionBodyPadding:Ljava/lang/Boolean;
+    return v2
 
     .line 11
-    iput-object p4, p0, LWag;->_renderSectionContent:Lkotlin/jvm/functions/Function0;
+    :cond_1
+    check-cast p1, LWag;
 
     .line 12
-    iput-object p5, p0, LWag;->_actionButtonRenderFn:Lkotlin/jvm/functions/Function0;
+    .line 13
+    iget-object v1, p0, LWag;->a:Ljava/lang/String;
 
-    return-void
+    .line 14
+    .line 15
+    iget-object p1, p1, LWag;->a:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LWag;->a:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Shortcut(shortcutName="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LWag;->a:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    const-string v2, ")"
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
 .end method

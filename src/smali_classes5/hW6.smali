@@ -1,292 +1,344 @@
 .class public final LhW6;
-.super LkW6;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Lo09;
+.field public final synthetic a:Ljava/lang/String;
 
-.field public final b:Lo09;
+.field public final synthetic b:Lcom/looksery/sdk/listener/MetricsListener$Stats;
 
-.field public final c:LcW6;
+.field public final synthetic c:Lio/reactivex/rxjava3/core/ObservableEmitter;
 
 
 # direct methods
-.method public constructor <init>(LcW6;Lo09;Lo09;)V
+.method public constructor <init>(Ljava/lang/String;Lcom/looksery/sdk/listener/MetricsListener$Stats;Lio/reactivex/rxjava3/core/ObservableEmitter;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LhW6;->a:Ljava/lang/String;
 
     .line 2
     .line 3
+    iput-object p2, p0, LhW6;->b:Lcom/looksery/sdk/listener/MetricsListener$Stats;
+
     .line 4
-    iput-object p2, p0, LhW6;->a:Lo09;
-
     .line 5
-    .line 6
-    iput-object p3, p0, LhW6;->b:Lo09;
+    iput-object p3, p0, LhW6;->c:Lio/reactivex/rxjava3/core/ObservableEmitter;
 
+    .line 6
     .line 7
+    const/4 p1, 0x0
+
     .line 8
-    iput-object p1, p0, LhW6;->c:LcW6;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     .line 9
     .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final d()Ljava/lang/Object;
+    .locals 49
 
     .line 1
-    const/4 v0, 0x1
+    move-object/from16 v0, p0
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    iget-object v1, v0, LhW6;->a:Ljava/lang/String;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, LhW6;
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result-object v1
 
     .line 9
+    invoke-static {v1}, Lkti;->D0(Ljava/lang/CharSequence;)Z
+
     .line 10
-    return v2
-
     .line 11
-    :cond_1
-    check-cast p1, LhW6;
-
     .line 12
+    move-result v2
+
     .line 13
-    iget-object v1, p1, LhW6;->a:Lo09;
+    if-eqz v2, :cond_0
 
     .line 14
     .line 15
-    iget-object v3, p0, LhW6;->a:Lo09;
+    const/4 v1, 0x0
 
     .line 16
+    goto :goto_0
+
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :cond_0
+    new-instance v2, LY79;
 
     .line 18
     .line 19
+    invoke-direct {v2, v1}, LY79;-><init>(Ljava/lang/String;)V
+
     .line 20
-    move-result v1
-
     .line 21
-    if-nez v1, :cond_2
-
     .line 22
+    move-object v1, v2
+
     .line 23
-    return v2
+    :goto_0
+    if-eqz v1, :cond_1
 
     .line 24
-    :cond_2
-    iget-object v1, p0, LhW6;->b:Lo09;
-
     .line 25
+    goto :goto_1
+
     .line 26
-    iget-object v3, p1, LhW6;->b:Lo09;
+    :cond_1
+    sget-object v1, La89;->a:La89;
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :goto_1
+    instance-of v2, v1, LY79;
 
     .line 29
     .line 30
-    .line 31
-    move-result v1
+    if-eqz v2, :cond_2
 
+    .line 31
     .line 32
-    if-nez v1, :cond_3
+    iget-object v2, v0, LhW6;->c:Lio/reactivex/rxjava3/core/ObservableEmitter;
 
     .line 33
     .line 34
-    return v2
+    invoke-interface {v2}, Lio/reactivex/rxjava3/core/ObservableEmitter;->d()Z
 
     .line 35
-    :cond_3
-    iget-object v1, p0, LhW6;->c:LcW6;
-
     .line 36
     .line 37
-    iget-object p1, p1, LhW6;->c:LcW6;
+    move-result v3
 
     .line 38
-    .line 39
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-nez v3, :cond_2
 
+    .line 39
     .line 40
+    move-object/from16 v47, v1
+
     .line 41
     .line 42
-    move-result p1
+    check-cast v47, LY79;
 
     .line 43
-    if-nez p1, :cond_4
-
     .line 44
+    new-instance v4, LFue;
+
     .line 45
-    return v2
-
     .line 46
-    :cond_4
-    return v0
-.end method
+    iget-object v1, v0, LhW6;->b:Lcom/looksery/sdk/listener/MetricsListener$Stats;
 
-.method public final hashCode()I
-    .locals 3
+    .line 47
+    .line 48
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFrame()D
 
-    .line 1
-    iget-object v0, p0, LhW6;->a:Lo09;
+    .line 49
+    .line 50
+    .line 51
+    move-result-wide v5
 
-    .line 2
-    .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    .line 52
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFrameWarm()D
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    .line 53
+    .line 54
+    .line 55
+    move-result-wide v7
 
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
+    .line 56
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFrameStartup()D
 
-    .line 9
-    const/16 v1, 0x1f
+    .line 57
+    .line 58
+    .line 59
+    move-result-wide v9
 
-    .line 10
-    .line 11
-    mul-int/lit8 v0, v0, 0x1f
+    .line 60
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensGPUFrame()D
 
-    .line 12
-    .line 13
-    iget-object v2, p0, LhW6;->b:Lo09;
+    .line 61
+    .line 62
+    .line 63
+    move-result-wide v11
 
-    .line 14
-    .line 15
-    iget-object v2, v2, Lo09;->a:Ljava/lang/String;
+    .line 64
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensGPUFrameWarm()D
 
-    .line 16
-    .line 17
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    .line 65
+    .line 66
+    .line 67
+    move-result-wide v13
 
-    .line 18
-    .line 19
-    .line 20
-    move-result v0
+    .line 68
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensTrackingTime()D
 
-    .line 21
-    iget-object v1, p0, LhW6;->c:LcW6;
+    .line 69
+    .line 70
+    .line 71
+    move-result-wide v15
 
-    .line 22
-    .line 23
-    invoke-virtual {v1}, LcW6;->hashCode()I
+    .line 72
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensEngineTime()D
 
-    .line 24
-    .line 25
-    .line 26
-    move-result v1
+    .line 73
+    .line 74
+    .line 75
+    move-result-wide v17
 
-    .line 27
-    add-int/2addr v1, v0
+    .line 76
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensScriptTime()D
 
-    .line 28
-    return v1
-.end method
+    .line 77
+    .line 78
+    .line 79
+    move-result-wide v19
 
-.method public final toString()Ljava/lang/String;
-    .locals 2
+    .line 80
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getRatioSlowFrames()D
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    .line 81
+    .line 82
+    .line 83
+    move-result-wide v21
 
-    .line 2
-    .line 3
-    const-string v1, "Activated(actionId="
+    .line 84
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensLoadTime()D
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    .line 85
+    .line 86
+    .line 87
+    move-result-wide v23
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LhW6;->a:Lo09;
+    .line 88
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensLoadTimeAndFiveFrames()D
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 89
+    .line 90
+    .line 91
+    move-result-wide v25
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", ctaId="
+    .line 92
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensLoadTimeAndTwentyFrames()D
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 93
+    .line 94
+    .line 95
+    move-result-wide v27
 
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LhW6;->b:Lo09;
+    .line 96
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensUnloadTime()D
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 97
+    .line 98
+    .line 99
+    move-result-wide v29
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", cta="
+    .line 100
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFps()D
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 101
+    .line 102
+    .line 103
+    move-result-wide v31
 
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LhW6;->c:LcW6;
+    .line 104
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFpsWarm()D
 
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    .line 105
+    .line 106
+    .line 107
+    move-result-wide v33
 
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ")"
+    .line 108
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFrameStdDev()D
 
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 109
+    .line 110
+    .line 111
+    move-result-wide v35
 
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 112
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFrameStdDevWarm()D
 
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v0
+    .line 113
+    .line 114
+    .line 115
+    move-result-wide v37
 
-    .line 42
-    return-object v0
+    .line 116
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getLensFirstFrame()D
+
+    .line 117
+    .line 118
+    .line 119
+    move-result-wide v39
+
+    .line 120
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getRecording()Z
+
+    .line 121
+    .line 122
+    .line 123
+    move-result v48
+
+    .line 124
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getFastDnnLibDNNInferenceTime()D
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-wide v41
+
+    .line 128
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getFastDnnGPUInferenceTime()D
+
+    .line 129
+    .line 130
+    .line 131
+    move-result-wide v43
+
+    .line 132
+    invoke-virtual {v1}, Lcom/looksery/sdk/listener/MetricsListener$Stats;->getFastDnnOtherAcceleratorInferenceTime()D
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-wide v45
+
+    .line 136
+    invoke-direct/range {v4 .. v48}, LFue;-><init>(DDDDDDDDDDDDDDDDDDDDDLY79;Z)V
+
+    .line 137
+    .line 138
+    .line 139
+    invoke-interface {v2, v4}, Lio/reactivex/rxjava3/core/Emitter;->onNext(Ljava/lang/Object;)V
+
+    .line 140
+    .line 141
+    .line 142
+    :cond_2
+    sget-object v1, Lewj;->a:Lewj;
+
+    .line 143
+    .line 144
+    return-object v1
 .end method

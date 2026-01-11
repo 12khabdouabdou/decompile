@@ -2,154 +2,340 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
-
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LEm6;
+.field public final a:Lp3k;
 
 
 # direct methods
-.method public synthetic constructor <init>(LEm6;I)V
+.method public constructor <init>(Lp3k;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LCm6;->a:I
-
-    iput-object p1, p0, LCm6;->b:LEm6;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LCm6;->a:Lp3k;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 7
+.method public final a(Ljava/io/File;LmHb;)LEp2;
+    .locals 3
 
     .line 1
-    iget v0, p0, LCm6;->a:I
+    new-instance v0, LEp2;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0}, LEp2;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    move-object v2, p1
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 7
-    check-cast v2, Ljava/lang/Throwable;
-
     .line 8
+    iput-object v1, v0, LEp2;->c:Ljava/lang/Boolean;
+
     .line 9
-    instance-of p1, v2, Lb5f;
-
     .line 10
+    iget p2, p2, LmHb;->a:I
+
     .line 11
-    if-eqz p1, :cond_0
-
     .line 12
-    .line 13
-    sget-object p1, LC0c;->b:LC0c;
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 13
     .line 14
     .line 15
-    :goto_0
-    move-object v3, p1
+    move-result-object v1
 
     .line 16
-    goto :goto_1
+    iput-object v1, v0, LEp2;->a:Ljava/lang/Integer;
 
     .line 17
-    :cond_0
-    instance-of p1, v2, LX4f;
-
     .line 18
+    const/4 v1, 0x0
+
     .line 19
-    sget-object p1, LC0c;->c:LC0c;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 20
     .line 21
-    goto :goto_0
-
     .line 22
-    :goto_1
-    iget-object v1, p0, LCm6;->b:LEm6;
+    move-result-object v1
 
     .line 23
-    .line 24
-    const/4 v4, 0x0
+    iput-object v1, v0, LEp2;->b:Ljava/lang/Integer;
 
+    .line 24
     .line 25
-    const/4 v5, 0x4
+    packed-switch p2, :pswitch_data_0
 
     .line 26
-    const/4 v6, 0x0
-
     .line 27
-    invoke-static/range {v1 .. v6}, LEm6;->l(LEm6;Ljava/lang/Throwable;LC0c;Lce6;ILjava/lang/Object;)V
-
     .line 28
+    :pswitch_0
+    new-instance p2, Ljava/io/FileInputStream;
+
     .line 29
     .line 30
-    return-void
+    invoke-direct {p2, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
     .line 31
-    :pswitch_0
-    check-cast p1, Ljava/lang/Throwable;
-
     .line 32
     .line 33
-    iget-object v0, p0, LCm6;->b:LEm6;
+    :try_start_0
+    new-instance p1, Landroid/graphics/BitmapFactory$Options;
 
     .line 34
     .line 35
-    invoke-static {v0}, LEm6;->d(LEm6;)Lbke;
+    invoke-direct {p1}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
     .line 36
     .line 37
     .line 38
-    move-result-object v0
+    const/4 v1, 0x1
 
     .line 39
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    iput-boolean v1, p1, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
     .line 40
     .line 41
+    const/4 v1, 0x0
+
     .line 42
-    move-result-object v0
+    invoke-static {p2, v1, p1}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
     .line 43
-    check-cast v0, LaA8;
-
     .line 44
     .line 45
-    sget-object v1, LWLd;->a:LWLd;
+    iget v1, p1, Landroid/graphics/BitmapFactory$Options;->outWidth:I
 
     .line 46
     .line 47
-    const/4 v2, 0x0
+    iget p1, p1, Landroid/graphics/BitmapFactory$Options;->outHeight:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 48
-    invoke-static {v0, v1, p1, v2}, LKsk;->c(LaA8;LWLd;Ljava/lang/Throwable;Lce6;)V
-
     .line 49
+    invoke-virtual {p2}, Ljava/io/FileInputStream;->close()V
+
     .line 50
     .line 51
-    return-void
-
     .line 52
-    nop
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 53
+    .line 54
+    .line 55
+    move-result-object p2
+
+    .line 56
+    iput-object p2, v0, LEp2;->q:Ljava/lang/Integer;
+
+    .line 57
+    .line 58
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p1
+
+    .line 62
+    iput-object p1, v0, LEp2;->p:Ljava/lang/Integer;
+
+    .line 63
+    .line 64
+    return-object v0
+
+    .line 65
+    :catchall_0
+    move-exception p1
+
+    .line 66
+    :try_start_1
+    throw p1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 67
+    :catchall_1
+    move-exception v0
+
+    .line 68
+    invoke-static {p2, p1}, LrZ3;->p(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+
+    .line 69
+    .line 70
+    .line 71
+    throw v0
+
+    .line 72
+    :pswitch_1
+    invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object p1
+
+    .line 76
+    sget-object p2, Ls7c;->t:Ls7c;
+
+    .line 77
+    .line 78
+    iget-object v1, p0, LCm6;->a:Lp3k;
+
+    .line 79
+    .line 80
+    invoke-virtual {v1, p1, p2}, Lp3k;->b(Ljava/lang/String;Ls7c;)Lk3k;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object p1
+
+    .line 84
+    :try_start_2
+    invoke-interface {p1}, Lk3k;->getWidth()I
+
+    .line 85
+    .line 86
+    .line 87
+    move-result p2
+
+    .line 88
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object p2
+
+    .line 92
+    iput-object p2, v0, LEp2;->q:Ljava/lang/Integer;
+
+    .line 93
+    .line 94
+    invoke-interface {p1}, Lk3k;->getHeight()I
+
+    .line 95
+    .line 96
+    .line 97
+    move-result p2
+
+    .line 98
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 99
+    .line 100
+    .line 101
+    move-result-object p2
+
+    .line 102
+    iput-object p2, v0, LEp2;->p:Ljava/lang/Integer;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
+
+    .line 103
+    .line 104
+    :try_start_3
+    invoke-interface {p1}, Lk3k;->getDurationMs()J
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-wide v1
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 108
+    goto :goto_0
+
+    .line 109
+    :catch_0
+    const-wide/16 v1, 0x0
+
+    .line 110
+    .line 111
+    :goto_0
+    :try_start_4
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object p2
+
+    .line 115
+    iput-object p2, v0, LEp2;->u:Ljava/lang/Long;
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_2
+
+    .line 116
+    .line 117
+    invoke-interface {p1}, Lk3k;->release()V
+
+    .line 118
+    .line 119
+    .line 120
+    return-object v0
+
+    .line 121
+    :catchall_2
+    move-exception p2
+
+    .line 122
+    invoke-interface {p1}, Lk3k;->release()V
+
+    .line 123
+    .line 124
+    .line 125
+    throw p2
+
+    .line 126
+    nop
+
+    .line 127
     :pswitch_data_0
-    .packed-switch 0x0
+    .packed-switch 0x1
+        :pswitch_1
+        :pswitch_1
         :pswitch_0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_0
+        :pswitch_0
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_1
+        :pswitch_0
+        :pswitch_1
+        :pswitch_1
     .end packed-switch
 .end method

@@ -1,127 +1,199 @@
-.class public abstract synthetic LFL8;
+.class public final LFL8;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/single/SingleCache;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    iput v0, p0, LFL8;->a:I
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LFL8;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lk9h;Lio/reactivex/rxjava3/internal/operators/single/SingleCache;)V
+    .locals 0
+
+    const/4 p1, 0x1
+
+    iput p1, p0, LFL8;->a:I
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p2, p0, LFL8;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
     .line 1
-    invoke-static {}, Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;->values()[Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;
+    iget v0, p0, LFL8;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    array-length v0, v0
-
     .line 6
-    new-array v0, v0, [I
+    check-cast p1, LVai;
 
     .line 7
     .line 8
-    :try_start_0
-    sget-object v1, Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;->NotSupported:Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;
+    sget-object v0, Li9h;->a:Li9h;
 
     .line 9
     .line 10
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    iget-object v1, p0, LFL8;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
     .line 11
     .line 12
-    .line 13
-    move-result v1
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
+    .line 13
     .line 14
-    const/4 v2, 0x1
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 15
-    aput v2, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 16
     .line 17
-    :catch_0
-    :try_start_1
-    sget-object v1, Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;->V60:Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;
+    invoke-virtual {v2}, Lio/reactivex/rxjava3/core/Single;->A()Lio/reactivex/rxjava3/core/Observable;
 
     .line 18
     .line 19
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 20
+    move-result-object v0
+
     .line 21
+    invoke-static {v0}, LOlg;->i(Lio/reactivex/rxjava3/core/Observable;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+
     .line 22
-    move-result v1
-
     .line 23
-    const/4 v2, 0x2
-
     .line 24
-    aput v2, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    move-result-object v0
 
     .line 25
-    .line 26
-    :catch_1
-    :try_start_2
-    sget-object v1, Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;->V65:Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;
+    invoke-virtual {p1, v0}, LVai;->d(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
 
+    .line 26
     .line 27
     .line 28
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+    new-instance v0, Lj9h;
 
     .line 29
     .line 30
+    invoke-direct {v0, v1}, Lj9h;-><init>(Lio/reactivex/rxjava3/internal/operators/single/SingleCache;)V
+
     .line 31
-    move-result v1
-
     .line 32
-    const/4 v2, 0x3
-
     .line 33
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;
 
     .line 34
     .line 35
-    :catch_2
-    :try_start_3
-    sget-object v1, Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;->V66:Lcom/snapcv/fastdnn/HexagonNNLibraryVersion;
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 36
     .line 37
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
     .line 38
+    sget-object v0, LqMd;->q0:LqMd;
+
     .line 39
     .line 40
-    move-result v1
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
 
     .line 41
-    const/4 v2, 0x4
-
     .line 42
-    aput v2, v0, v1
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 43
     .line 44
-    :catch_3
-    sput-object v0, LFL8;->a:[I
-
     .line 45
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Maybe;->q()Lio/reactivex/rxjava3/core/Observable;
+
     .line 46
-    return-void
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    invoke-static {v0}, LOlg;->i(Lio/reactivex/rxjava3/core/Observable;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v0
+
+    .line 53
+    invoke-virtual {p1, v0}, LVai;->f(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+
+    .line 54
+    .line 55
+    .line 56
+    return-object p1
+
+    .line 57
+    :pswitch_0
+    check-cast p1, LHL8;
+
+    .line 58
+    .line 59
+    new-instance v0, LJe8;
+
+    .line 60
+    .line 61
+    const/16 v1, 0xa
+
+    .line 62
+    .line 63
+    invoke-direct {v0, v1, p1}, LJe8;-><init>(ILjava/lang/Object;)V
+
+    .line 64
+    .line 65
+    .line 66
+    iget-object p1, p0, LFL8;->b:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    .line 67
+    .line 68
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 69
+    .line 70
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 71
+    .line 72
+    .line 73
+    return-object v1
+
+    .line 74
+    nop
+
+    .line 75
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

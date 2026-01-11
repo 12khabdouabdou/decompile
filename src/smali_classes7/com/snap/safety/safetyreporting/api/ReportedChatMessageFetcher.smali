@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LnYe;
+    proxyClass = Legf;
     schema = "\'fetchChatMessages\':f|m|(s, s, d): p<a<r:\'[0]\'>>,\'fetchRecentMessages\':f|m|(s, d): p<r:\'[1]\'>"
     typeReferences = {
-        LmYe;,
-        LjYe;
+        Ldgf;,
+        Lagf;
     }
 .end annotation
 
@@ -28,7 +28,7 @@
             "D)",
             "Lcom/snap/composer/promise/Promise<",
             "Ljava/util/List<",
-            "LmYe;",
+            "Ldgf;",
             ">;>;"
         }
     .end annotation
@@ -41,7 +41,7 @@
             "Ljava/lang/String;",
             "D)",
             "Lcom/snap/composer/promise/Promise<",
-            "LjYe;",
+            "Lagf;",
             ">;"
         }
     .end annotation

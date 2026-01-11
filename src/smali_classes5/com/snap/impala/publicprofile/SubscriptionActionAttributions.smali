@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lf7i;
+    proxyClass = Lwvi;
     schema = "\'snapId\':s?,\'compositeStoryId\':s?"
     typeReferences = {}
 .end annotation

@@ -2,223 +2,319 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
+
 
 # instance fields
-.field public final a:LRT4;
+.field public final synthetic X:Ljc9;
+
+.field public final synthetic Y:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+.field public final synthetic Z:LQEb;
+
+.field public final synthetic a:I
+
+.field public final synthetic b:LQc9;
+
+.field public final synthetic c:Lnp0;
+
+.field public final synthetic t:Lyxb;
 
 
 # direct methods
-.method public constructor <init>(LRT4;)V
+.method public synthetic constructor <init>(LQc9;Lnp0;Lyxb;Ljc9;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LQEb;I)V
     .locals 0
 
     .line 1
+    iput p7, p0, LMc9;->a:I
+
+    iput-object p1, p0, LMc9;->b:LQc9;
+
+    iput-object p2, p0, LMc9;->c:Lnp0;
+
+    iput-object p3, p0, LMc9;->t:Lyxb;
+
+    iput-object p4, p0, LMc9;->X:Ljc9;
+
+    iput-object p5, p0, LMc9;->Y:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    iput-object p6, p0, LMc9;->Z:LQEb;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LMc9;->a:LRT4;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(IILjava/lang/Object;I)V
-    .locals 2
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    iget-object v0, p0, LMc9;->a:LRT4;
+    iget v0, p0, LMc9;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LRT4;->get()Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-object v4, p1
 
     .line 7
-    check-cast v0, LXXe;
+    check-cast v4, Luzb;
 
     .line 8
     .line 9
-    invoke-static {p4}, Llva;->L(I)I
+    iget-object p1, p0, LMc9;->c:Lnp0;
 
     .line 10
     .line 11
-    .line 12
-    move-result p4
+    const-string v0, "ImageRenderService"
 
+    .line 12
     .line 13
-    packed-switch p4, :pswitch_data_0
+    invoke-virtual {p1, v0}, Lnp0;->a(Ljava/lang/String;)Lnp0;
 
     .line 14
     .line 15
     .line 16
-    new-instance p1, LFzc;
+    move-result-object v3
 
     .line 17
-    .line 18
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+    iget-object p1, p0, LMc9;->t:Lyxb;
 
+    .line 18
     .line 19
+    iget-object v0, p1, Lyxb;->b:Lscf;
+
     .line 20
     .line 21
-    throw p1
+    iget-object v5, v0, Lscf;->c:Luzb;
 
     .line 22
-    :pswitch_0
-    sget-object p4, Lmt9;->i0:Lmt9;
-
     .line 23
-    .line 24
-    goto :goto_0
+    iget-object v7, p0, LMc9;->Y:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 24
     .line 25
-    :pswitch_1
-    sget-object p4, Lmt9;->X:Lmt9;
+    iget-object v1, p0, LMc9;->b:LQc9;
 
     .line 26
     .line 27
-    goto :goto_0
+    const-string v2, "processForStreaming"
 
     .line 28
-    :pswitch_2
-    sget-object p4, Lmt9;->o0:Lmt9;
-
     .line 29
-    .line 30
-    goto :goto_0
+    iget-object v6, p0, LMc9;->X:Ljc9;
 
+    .line 30
     .line 31
-    :pswitch_3
-    sget-object p4, Lmt9;->n0:Lmt9;
+    invoke-virtual/range {v1 .. v7}, LQc9;->i(Ljava/lang/String;Lnp0;Luzb;Luzb;Ljc9;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)Lio/reactivex/rxjava3/core/Observable;
 
     .line 32
     .line 33
-    goto :goto_0
-
     .line 34
-    :pswitch_4
-    sget-object p4, Lmt9;->Y:Lmt9;
+    move-result-object v0
 
     .line 35
-    .line 36
-    goto :goto_0
+    new-instance v1, LKc9;
 
+    .line 36
     .line 37
-    :pswitch_5
-    sget-object p4, Lmt9;->m0:Lmt9;
+    move-object v6, v4
 
     .line 38
-    .line 39
-    goto :goto_0
+    iget-object v4, p0, LMc9;->X:Ljc9;
 
+    .line 39
     .line 40
-    :pswitch_6
-    sget-object p4, Lmt9;->l0:Lmt9;
+    iget-object v2, p0, LMc9;->Z:LQEb;
 
     .line 41
     .line 42
-    :goto_0
-    invoke-static {p2}, Llva;->L(I)I
+    iget-object v3, p0, LMc9;->c:Lnp0;
 
     .line 43
     .line 44
+    const/4 v7, 0x1
+
     .line 45
-    move-result p2
+    move-object v5, p1
 
     .line 46
-    if-eqz p2, :cond_3
+    invoke-direct/range {v1 .. v7}, LKc9;-><init>(LQEb;Lnp0;Ljc9;Lyxb;Luzb;I)V
 
     .line 47
     .line 48
-    const/4 v1, 0x1
-
     .line 49
-    if-eq p2, v1, :cond_2
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->b0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
 
     .line 50
     .line 51
-    const/4 v1, 0x2
-
     .line 52
-    if-eq p2, v1, :cond_1
+    move-result-object p1
 
     .line 53
-    .line 54
-    const/4 v1, 0x3
+    new-instance v0, LLc9;
 
+    .line 54
     .line 55
-    if-ne p2, v1, :cond_0
+    iget-object v1, p0, LMc9;->Z:LQEb;
 
     .line 56
     .line 57
-    sget-object p2, LfYe;->X:LfYe;
+    const/4 v2, 0x1
 
     .line 58
+    invoke-direct {v0, v1, v2}, LLc9;-><init>(LQEb;I)V
+
     .line 59
-    goto :goto_1
-
     .line 60
-    :cond_0
-    new-instance p1, LFzc;
-
     .line 61
-    .line 62
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+    invoke-static {p1, v0}, LESk;->e(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
 
+    .line 62
     .line 63
     .line 64
+    move-result-object p1
+
     .line 65
-    throw p1
+    return-object p1
 
     .line 66
-    :cond_1
-    sget-object p2, LfYe;->t:LfYe;
+    :pswitch_0
+    move-object v3, p1
 
     .line 67
-    .line 68
-    goto :goto_1
+    check-cast v3, Luzb;
 
+    .line 68
     .line 69
-    :cond_2
-    sget-object p2, LfYe;->c:LfYe;
+    iget-object p1, p0, LMc9;->c:Lnp0;
 
     .line 70
     .line 71
-    goto :goto_1
+    const-string v0, "ImageRenderService"
 
     .line 72
-    :cond_3
-    sget-object p2, LfYe;->b:LfYe;
-
     .line 73
-    .line 74
-    :goto_1
-    invoke-virtual {v0, p4, p1, p2, p3}, LXXe;->a(Lmt9;ILfYe;Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Lnp0;->a(Ljava/lang/String;)Lnp0;
 
+    .line 74
     .line 75
     .line 76
+    move-result-object v2
+
     .line 77
-    return-void
+    iget-object p1, p0, LMc9;->t:Lyxb;
 
     .line 78
+    .line 79
+    iget-object v0, p1, Lyxb;->b:Lscf;
+
+    .line 80
+    .line 81
+    iget-object v4, v0, Lscf;->c:Luzb;
+
+    .line 82
+    .line 83
+    iget-object v6, p0, LMc9;->Y:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 84
+    .line 85
+    iget-object v0, p0, LMc9;->b:LQc9;
+
+    .line 86
+    .line 87
+    const-string v1, "mediaPackageProcess"
+
+    .line 88
+    .line 89
+    iget-object v5, p0, LMc9;->X:Ljc9;
+
+    .line 90
+    .line 91
+    invoke-virtual/range {v0 .. v6}, LQc9;->i(Ljava/lang/String;Lnp0;Luzb;Luzb;Ljc9;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object v7
+
+    .line 95
+    new-instance v0, LKc9;
+
+    .line 96
+    .line 97
+    move-object v5, v3
+
+    .line 98
+    iget-object v3, p0, LMc9;->X:Ljc9;
+
+    .line 99
+    .line 100
+    iget-object v1, p0, LMc9;->Z:LQEb;
+
+    .line 101
+    .line 102
+    iget-object v2, p0, LMc9;->c:Lnp0;
+
+    .line 103
+    .line 104
+    const/4 v6, 0x0
+
+    .line 105
+    move-object v4, p1
+
+    .line 106
+    invoke-direct/range {v0 .. v6}, LKc9;-><init>(LQEb;Lnp0;Ljc9;Lyxb;Luzb;I)V
+
+    .line 107
+    .line 108
+    .line 109
+    invoke-virtual {v7, v0}, Lio/reactivex/rxjava3/core/Observable;->b0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnLifecycle;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object p1
+
+    .line 113
+    new-instance v0, LLc9;
+
+    .line 114
+    .line 115
+    iget-object v1, p0, LMc9;->Z:LQEb;
+
+    .line 116
+    .line 117
+    const/4 v2, 0x0
+
+    .line 118
+    invoke-direct {v0, v1, v2}, LLc9;-><init>(LQEb;I)V
+
+    .line 119
+    .line 120
+    .line 121
+    invoke-static {p1, v0}, LESk;->e(Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function1;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 122
+    .line 123
+    .line 124
+    move-result-object p1
+
+    .line 125
+    return-object p1
+
+    .line 126
     nop
 
-    .line 79
+    .line 127
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

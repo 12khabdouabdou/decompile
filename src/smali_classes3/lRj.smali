@@ -1,66 +1,104 @@
-.class public final LlRj;
-.super Ldu3;
+.class public abstract synthetic LlRj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LUv3;
-    propertyReplacements = ""
-    schema = "\'waitlistCount\':f(r:\'[0]\', f(d@), s?)"
-    typeReferences = {
-        Lcom/snap/composer/networking/GrpcServiceProtocol;
-    }
-.end annotation
-
-
-# instance fields
-.field private _invoker:Lkotlin/jvm/functions/Function3;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function3;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Lkotlin/jvm/functions/Function3;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function3;",
-            ")V"
-        }
-    .end annotation
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, Lcom/snap/modules/ad_format/DedupeStrategy;->values()[Lcom/snap/modules/ad_format/DedupeStrategy;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LlRj;->_invoker:Lkotlin/jvm/functions/Function3;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    return-void
-.end method
+    new-array v0, v0, [I
 
+    .line 7
+    .line 8
+    :try_start_0
+    sget-object v1, Lcom/snap/modules/ad_format/DedupeStrategy;->LAST_ONLY:Lcom/snap/modules/ad_format/DedupeStrategy;
 
-# virtual methods
-.method public final a(Lcom/snap/composer/networking/GrpcServiceProtocol;Ly;Ljava/lang/String;)V
-    .locals 1
+    .line 9
+    .line 10
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
-    .line 1
-    iget-object v0, p0, LlRj;->_invoker:Lkotlin/jvm/functions/Function3;
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
 
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2, p3}, Lkotlin/jvm/functions/Function3;->I(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 14
+    const/4 v2, 0x1
 
-    .line 4
-    .line 5
-    .line 6
+    .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 16
+    .line 17
+    :catch_0
+    :try_start_1
+    sget-object v1, Lcom/snap/modules/ad_format/DedupeStrategy;->FIRST_ONLY:Lcom/snap/modules/ad_format/DedupeStrategy;
+
+    .line 18
+    .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v1
+
+    .line 23
+    const/4 v2, 0x2
+
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
+    .line 26
+    :catch_1
+    :try_start_2
+    sget-object v1, Lcom/snap/modules/ad_format/DedupeStrategy;->RETAIN_ALL:Lcom/snap/modules/ad_format/DedupeStrategy;
+
+    .line 27
+    .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    const/4 v2, 0x3
+
+    .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 34
+    .line 35
+    :catch_2
+    sput-object v0, LlRj;->a:[I
+
+    .line 36
+    .line 37
     return-void
 .end method

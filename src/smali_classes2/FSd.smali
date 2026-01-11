@@ -1,82 +1,54 @@
-.class public final synthetic LFSd;
-.super Ljava/lang/Object;
+.class public final LFSd;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Supplier;
+
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'viewModel\':r?:\'[0]\',\'context\':r?:\'[1]\'"
+    typeReferences = {
+        Lcom/snap/plus/SettingsSectionViewModel;,
+        Lcom/snap/plus/SettingsSectionViewContext;
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field private _context:Lcom/snap/plus/SettingsSectionViewContext;
 
-.field public final synthetic b:LCTd;
+.field private _viewModel:Lcom/snap/plus/SettingsSectionViewModel;
 
 
 # direct methods
-.method public synthetic constructor <init>(LCTd;I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    iput p2, p0, LFSd;->a:I
-
-    iput-object p1, p0, LFSd;->b:LCTd;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, LFSd;->_viewModel:Lcom/snap/plus/SettingsSectionViewModel;
+
+    .line 3
+    iput-object v0, p0, LFSd;->_context:Lcom/snap/plus/SettingsSectionViewContext;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget v0, p0, LFSd;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
+.method public constructor <init>(Lcom/snap/plus/SettingsSectionViewModel;Lcom/snap/plus/SettingsSectionViewContext;)V
+    .locals 0
 
     .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 5
+    iput-object p1, p0, LFSd;->_viewModel:Lcom/snap/plus/SettingsSectionViewModel;
+
     .line 6
-    iget-object v0, p0, LFSd;->b:LCTd;
+    iput-object p2, p0, LFSd;->_context:Lcom/snap/plus/SettingsSectionViewContext;
 
-    .line 7
-    .line 8
-    invoke-interface {v0}, LCTd;->c()Lio/reactivex/rxjava3/core/Completable;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    return-object v0
-
-    .line 13
-    :pswitch_0
-    iget-object v0, p0, LFSd;->b:LCTd;
-
-    .line 14
-    .line 15
-    invoke-interface {v0}, LCTd;->prepare()Lio/reactivex/rxjava3/core/Completable;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    return-object v0
-
-    .line 20
-    nop
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'UNKNOWN\':0,\'ADD_SNAP\':1,\'CREATE_STORY\':2,\'CREATE_OR_ADD_TO_STORY\':3,\'DELETE_ENTRY\':4,\'REPLACE_SNAP\':5,\'RENAME_ENTRY\':6,\'STORY_REORDER_SNAP\':7,\'ENTRY_SNAP_REMOVE\':8,\'FAVORITE_SNAP\':9,\'UPDATE_MEO_ENTRY\':10,\'ADD_DETACHED_SNAP\':13,\'UPDATE_ENTRY_AUTO_SAVE_METADATA\':11,\'UPLOAD_TAGS\':12,\'SNAP_CLIENT_GENERATION\':15,\'MEMTWO_SNAP_BACKUP\':16,\'TEST_OP_1\':50,\'TEST_OP_2\':51"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

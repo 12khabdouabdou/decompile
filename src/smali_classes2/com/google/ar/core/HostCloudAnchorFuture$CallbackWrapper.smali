@@ -50,7 +50,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0, p1, p2}, Lyb8;->x(Ljava/util/function/BiConsumer;Ljava/lang/String;Lcom/google/ar/core/Anchor$CloudAnchorState;)V
+    invoke-static {v0, p1, p2}, LXz7;->z(Ljava/util/function/BiConsumer;Ljava/lang/String;Lcom/google/ar/core/Anchor$CloudAnchorState;)V
 
     .line 8
     .line 9

@@ -38,11 +38,11 @@
 # instance fields
 .field public final X:I
 
-.field public Y:Lc7i;
+.field public Y:Ltvi;
 
 .field public volatile Z:Z
 
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:Lio/reactivex/rxjava3/internal/util/AtomicThrowable;
 
@@ -52,7 +52,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;Lio/reactivex/rxjava3/functions/Function;I)V
+.method public constructor <init>(Lmvi;Lio/reactivex/rxjava3/functions/Function;I)V
     .locals 0
 
     .line 1
@@ -61,7 +61,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:Lmvi;
 
     .line 5
     .line 6
@@ -123,11 +123,11 @@
 
     .line 3
     .line 4
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Ltvi;
 
     .line 5
     .line 6
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 7
     .line 8
@@ -194,11 +194,11 @@
 
     .line 8
     .line 9
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:LV6i;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:Lmvi;
 
     .line 10
     .line 11
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(LV6i;)V
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(Lmvi;)V
 
     .line 12
     .line 13
@@ -220,7 +220,7 @@
 
     .line 21
     .line 22
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Ltvi;
 
     .line 23
     .line 24
@@ -228,7 +228,7 @@
 
     .line 25
     .line 26
-    invoke-interface {v0, v1, v2}, Lc7i;->l(J)V
+    invoke-interface {v0, v1, v2}, Ltvi;->l(J)V
 
     .line 27
     .line 28
@@ -264,11 +264,11 @@
 
     .line 11
     .line 12
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Lc7i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Ltvi;
 
     .line 13
     .line 14
-    invoke-interface {p1}, Lc7i;->cancel()V
+    invoke-interface {p1}, Ltvi;->cancel()V
 
     .line 15
     .line 16
@@ -286,11 +286,11 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:Lmvi;
 
     .line 25
     .line 26
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(LV6i;)V
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/internal/util/AtomicThrowable;->c(Lmvi;)V
 
     .line 27
     .line 28
@@ -348,7 +348,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 24
     .line 25
@@ -378,11 +378,11 @@
     .line 35
     .line 36
     .line 37
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Ltvi;
 
     .line 38
     .line 39
-    invoke-interface {v0}, Lc7i;->cancel()V
+    invoke-interface {v0}, Ltvi;->cancel()V
 
     .line 40
     .line 41
@@ -395,15 +395,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -415,15 +415,15 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->Y:Ltvi;
 
     .line 10
     .line 11
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:LV6i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableFlatMapCompletable$FlatMapCompletableMainSubscriber;->a:Lmvi;
 
     .line 12
     .line 13
-    invoke-interface {v0, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v0, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 14
     .line 15
@@ -448,7 +448,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 29
     .line 30
@@ -460,7 +460,7 @@
     int-to-long v0, v1
 
     .line 33
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 34
     .line 35
@@ -477,7 +477,7 @@
     return-object v0
 .end method
 
-.method public final s(I)I
+.method public final r(I)I
     .locals 0
 
     .line 1

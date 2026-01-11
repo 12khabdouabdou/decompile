@@ -1,5 +1,5 @@
 .class public final Lcom/snap/core/model/SmsMessageRecipient;
-.super LPOb;
+.super Lj3c;
 .source "SourceFile"
 
 # interfaces
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;ILex5;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x2
@@ -177,7 +177,7 @@
 
     iget-object v3, p1, Lcom/snap/core/model/SmsMessageRecipient;->phone:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -190,7 +190,7 @@
 
     iget-object v3, p1, Lcom/snap/core/model/SmsMessageRecipient;->userId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -212,7 +212,7 @@
 
     iget-object p1, p1, Lcom/snap/core/model/SmsMessageRecipient;->hashedPhoneNumber:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -420,7 +420,7 @@
 
     .line 14
     .line 15
-    invoke-static {v4, v0, v5, v1, v6}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4, v0, v5, v1, v6}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17

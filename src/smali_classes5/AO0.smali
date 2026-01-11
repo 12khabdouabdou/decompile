@@ -3,195 +3,218 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/BiPredicate;
+.implements Ljava/util/concurrent/Callable;
 
 
-# static fields
-.field public static final a:LAO0;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LHO0;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(LHO0;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LAO0;
+    iput p2, p0, LAO0;->a:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LAO0;->b:LHO0;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LAO0;->a:LAO0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final m(Ljava/lang/Object;Ljava/lang/Object;)Z
-    .locals 2
+.method public final call()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    check-cast p1, Lhad;
+    iget v0, p0, LAO0;->a:I
 
     .line 2
     .line 3
-    check-cast p2, Lhad;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
-
     .line 6
+    iget-object v0, p0, LAO0;->b:LHO0;
+
     .line 7
-    check-cast p1, Ljava/util/List;
-
     .line 8
+    iget-object v0, v0, LHO0;->b:Lpzd;
+
     .line 9
-    iget-object p2, p2, Lhad;->b:Ljava/lang/Object;
-
     .line 10
+    iget-object v0, v0, Lpzd;->h:LiAi;
+
     .line 11
-    check-cast p2, Ljava/util/List;
-
     .line 12
-    .line 13
-    invoke-interface {p1}, Ljava/util/List;->size()I
+    invoke-interface {v0}, LiAi;->get()Ljava/lang/Object;
 
+    .line 13
     .line 14
     .line 15
+    move-result-object v0
+
     .line 16
-    move-result v0
+    check-cast v0, LtMj;
 
     .line 17
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
     .line 18
+    invoke-virtual {v0}, LtMj;->f()LsMj;
+
     .line 19
     .line 20
-    move-result v1
-
     .line 21
-    if-eq v0, v1, :cond_0
+    move-result-object v0
 
     .line 22
-    .line 23
-    goto :goto_0
+    sget-object v1, LsMj;->b:LsMj;
 
+    .line 23
     .line 24
-    :cond_0
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    if-ne v0, v1, :cond_0
 
     .line 25
     .line 26
+    const/4 v0, 0x1
+
     .line 27
-    move-result-object p1
+    goto :goto_0
 
     .line 28
-    invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    :cond_0
+    const/4 v0, 0x0
 
     .line 29
+    :goto_0
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 30
     .line 31
-    move-result-object p2
-
     .line 32
-    :cond_1
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+    move-result-object v0
 
     .line 33
-    .line 34
-    .line 35
-    move-result v0
+    return-object v0
 
+    .line 34
+    :pswitch_0
+    iget-object v0, p0, LAO0;->b:LHO0;
+
+    .line 35
     .line 36
-    if-eqz v0, :cond_3
+    iget-object v1, v0, LHO0;->a:LgKa;
 
     .line 37
     .line 38
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v1}, LgKa;->b()Z
 
     .line 39
     .line 40
     .line 41
-    move-result v0
+    move-result v1
 
     .line 42
-    if-nez v0, :cond_2
+    iget-object v2, v0, LHO0;->b:Lpzd;
 
     .line 43
     .line 44
-    goto :goto_0
+    invoke-virtual {v2}, Lpzd;->c()Z
 
     .line 45
-    :cond_2
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 46
     .line 47
+    move-result v2
+
     .line 48
-    move-result-object v0
+    if-eqz v2, :cond_1
 
     .line 49
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 50
+    if-nez v1, :cond_2
+
     .line 51
     .line 52
-    move-result-object v1
+    :cond_1
+    sget-object v1, LfKa;->t:LfKa;
 
     .line 53
-    check-cast v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PublicUserInfo;
-
     .line 54
+    iget-object v0, v0, LHO0;->d:LOF3;
+
     .line 55
-    check-cast v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$PublicUserInfo;
-
     .line 56
-    .line 57
-    invoke-static {v0, v1}, Lcom/google/protobuf/nano/MessageNano;->messageNanoEquals(Lcom/google/protobuf/nano/MessageNano;Lcom/google/protobuf/nano/MessageNano;)Z
+    invoke-interface {v0, v1}, LOF3;->a(LcM3;)Z
 
+    .line 57
     .line 58
     .line 59
-    .line 60
     move-result v0
 
-    .line 61
-    if-nez v0, :cond_1
+    .line 60
+    if-eqz v0, :cond_3
 
+    .line 61
     .line 62
+    :cond_2
+    const/4 v0, 0x1
+
     .line 63
-    goto :goto_0
+    goto :goto_1
 
     .line 64
     :cond_3
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+    const/4 v0, 0x0
 
     .line 65
+    :goto_1
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
     .line 66
     .line 67
-    move-result p1
-
     .line 68
-    if-nez p1, :cond_4
+    move-result-object v0
 
     .line 69
+    return-object v0
+
     .line 70
-    const/4 p1, 0x1
+    :pswitch_1
+    iget-object v0, p0, LAO0;->b:LHO0;
 
     .line 71
-    return p1
-
     .line 72
-    :cond_4
-    :goto_0
-    const/4 p1, 0x0
+    iget-object v0, v0, LHO0;->b:Lpzd;
 
     .line 73
-    return p1
+    .line 74
+    invoke-virtual {v0}, Lpzd;->c()Z
+
+    .line 75
+    .line 76
+    .line 77
+    move-result v0
+
+    .line 78
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v0
+
+    .line 82
+    return-object v0
+
+    .line 83
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

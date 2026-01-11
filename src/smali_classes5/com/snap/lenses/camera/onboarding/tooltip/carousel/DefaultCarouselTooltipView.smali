@@ -3,22 +3,22 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lw1j;
-.implements Lk06;
+.implements LJqj;
+.implements Lf36;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Landroid/widget/FrameLayout;",
-        "Lw1j;",
-        "Lk06;"
+        "LJqj;",
+        "Lf36;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LER;
+.field public final a:LNT;
 
 .field public b:Lcom/snap/lenses/common/LensesTooltipView;
 
@@ -61,17 +61,17 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    sget-object p1, Lhb4;->t0:Lhb4;
+    sget-object p1, LJc4;->y0:LJc4;
 
     .line 5
-    new-instance p2, LER;
+    new-instance p2, LNT;
 
     const-string p3, "DefaultCarouselTooltipView"
 
-    invoke-direct {p2, p0, p3, p1, p0}, LER;-><init>(Landroid/view/View;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lio/reactivex/rxjava3/functions/Consumer;)V
+    invoke-direct {p2, p0, p3, p1, p0}, LNT;-><init>(Landroid/view/View;Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 6
-    iput-object p2, p0, Lcom/snap/lenses/camera/onboarding/tooltip/carousel/DefaultCarouselTooltipView;->a:LER;
+    iput-object p2, p0, Lcom/snap/lenses/camera/onboarding/tooltip/carousel/DefaultCarouselTooltipView;->a:LNT;
 
     return-void
 .end method
@@ -82,11 +82,11 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lir2;
+    check-cast p1, LTt2;
 
     .line 2
     .line 3
-    instance-of v0, p1, Lhr2;
+    instance-of v0, p1, LSt2;
 
     .line 4
     .line 5
@@ -109,7 +109,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LLZj;->v(Landroid/view/View;)I
+    invoke-static {p1}, LDz9;->v(Landroid/view/View;)I
 
     .line 15
     .line 16
@@ -125,7 +125,7 @@
 
     .line 21
     .line 22
-    invoke-static {p1, v3}, LLZj;->Y(Landroid/view/View;I)V
+    invoke-static {p1, v3}, LDz9;->X(Landroid/view/View;I)V
 
     .line 23
     .line 24
@@ -139,7 +139,7 @@
     move-result-object p1
 
     .line 29
-    const v2, 0x7f131d01
+    const v2, 0x7f131e55
 
     .line 30
     .line 31
@@ -168,7 +168,7 @@
     move-result-object v0
 
     .line 44
-    const v1, 0x7f070910
+    const v1, 0x7f070936
 
     .line 45
     .line 46
@@ -193,7 +193,7 @@
 
     .line 56
     :cond_1
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -202,7 +202,7 @@
 
     .line 60
     :cond_2
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 61
     .line 62
@@ -211,7 +211,7 @@
 
     .line 64
     :cond_3
-    instance-of p1, p1, Lgr2;
+    instance-of p1, p1, LRt2;
 
     .line 65
     .line 66
@@ -231,7 +231,7 @@
 
     .line 73
     .line 74
-    invoke-static {p1}, LLZj;->v(Landroid/view/View;)I
+    invoke-static {p1}, LDz9;->v(Landroid/view/View;)I
 
     .line 75
     .line 76
@@ -247,7 +247,7 @@
 
     .line 81
     .line 82
-    invoke-static {p1, v3}, LLZj;->Y(Landroid/view/View;I)V
+    invoke-static {p1, v3}, LDz9;->X(Landroid/view/View;I)V
 
     .line 83
     .line 84
@@ -261,7 +261,7 @@
     move-result-object p1
 
     .line 89
-    const v2, 0x7f131d02
+    const v2, 0x7f131e56
 
     .line 90
     .line 91
@@ -294,7 +294,7 @@
 
     .line 105
     :cond_5
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 106
     .line 107
@@ -303,7 +303,7 @@
 
     .line 109
     :cond_6
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 110
     .line 111
@@ -312,7 +312,7 @@
 
     .line 113
     :cond_7
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 114
     .line 115
@@ -391,7 +391,7 @@
 
     .line 29
     .line 30
-    invoke-static {p1, p3}, LGnk;->f(Ljava/lang/String;I)Landroid/text/Spanned;
+    invoke-static {p1, p3}, LsNk;->c(Ljava/lang/String;I)Landroid/text/Spanned;
 
     .line 31
     .line 32
@@ -419,7 +419,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {p4, p2, p1}, Lcom/snap/framework/ui/views/Tooltip;->c(Landroid/view/View;Z)V
+    invoke-virtual {p4, p2, p1}, Lcom/snap/framework/ui/views/Tooltip;->b(Landroid/view/View;Z)V
 
     .line 45
     .line 46
@@ -428,7 +428,7 @@
 
     .line 48
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -437,7 +437,7 @@
 
     .line 52
     :cond_2
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 53
     .line 54
@@ -450,7 +450,7 @@
 
     .line 57
     .line 58
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 59
     .line 60
@@ -458,22 +458,11 @@
     throw v1
 .end method
 
-.method public final j()LER;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/lenses/camera/onboarding/tooltip/carousel/DefaultCarouselTooltipView;->a:LER;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final k(LgMj;LgMj;)V
+.method public final i(LNbk;LNbk;)V
     .locals 5
 
     .line 1
-    sget-object v0, LdMj;->a:LdMj;
+    sget-object v0, LKbk;->a:LKbk;
 
     .line 2
     .line 3
@@ -485,7 +474,7 @@
     move-result v1
 
     .line 7
-    sget-object v2, LGzg;->F0:LfMj;
+    sget-object v2, LjRh;->o0:LMbk;
 
     .line 8
     .line 9
@@ -529,7 +518,7 @@
 
     .line 28
     :cond_0
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 29
     .line 30
@@ -579,7 +568,7 @@
 
     .line 52
     :cond_2
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 53
     .line 54
@@ -631,7 +620,7 @@
 
     .line 77
     .line 78
-    invoke-static {p2, p1}, Ldw8;->f(LgMj;Landroid/view/View;)V
+    invoke-static {p2, p1}, LUPe;->b(LNbk;Landroid/view/View;)V
 
     .line 79
     .line 80
@@ -640,7 +629,7 @@
 
     .line 82
     :cond_5
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 83
     .line 84
@@ -649,7 +638,7 @@
 
     .line 86
     :cond_6
-    invoke-static {v4}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v4}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 87
     .line 88
@@ -657,11 +646,22 @@
     throw v3
 .end method
 
-.method public final l(Ll2j;)V
+.method public final j()LNT;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/lenses/camera/onboarding/tooltip/carousel/DefaultCarouselTooltipView;->a:LNT;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final k(Lwrj;)V
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, LDpk;->n(Lk06;Ll2j;)V
+    invoke-static {p0, p1}, LoPk;->u(Lf36;Lwrj;)V
 
     .line 2
     .line 3
@@ -673,15 +673,15 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lir2;
+    check-cast p1, LTt2;
 
     .line 2
     .line 3
-    check-cast p2, Lir2;
+    check-cast p2, LTt2;
 
     .line 4
     .line 5
-    invoke-static {p0, p1, p2}, LDpk;->a(Lk06;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {p0, p1, p2}, LoPk;->a(Lf36;Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 6
     .line 7
@@ -689,7 +689,7 @@
     return-void
 .end method
 
-.method public final n(LdGe;LdGe;)V
+.method public final n(LLXe;LLXe;)V
     .locals 3
 
     .line 1
@@ -697,7 +697,7 @@
 
     .line 2
     .line 3
-    iget v0, p2, LdGe;->d:I
+    iget v0, p2, LLXe;->d:I
 
     .line 4
     .line 5
@@ -722,7 +722,7 @@
     const/4 p1, 0x7
 
     .line 14
-    invoke-static {p0, v1, v1, v0, p1}, LLZj;->B0(Landroid/widget/FrameLayout;IIII)V
+    invoke-static {p0, v1, v1, v0, p1}, LDz9;->l0(Landroid/widget/FrameLayout;IIII)V
 
     .line 15
     .line 16
@@ -736,11 +736,11 @@
 
     .line 20
     .line 21
-    new-instance v0, LkC7;
+    new-instance v0, LAH7;
 
     .line 22
     .line 23
-    iget p2, p2, LdGe;->c:I
+    iget p2, p2, LLXe;->c:I
 
     .line 24
     .line 25
@@ -748,12 +748,12 @@
 
     .line 26
     .line 27
-    invoke-direct {v0, v1, p2, v2}, LkC7;-><init>(III)V
+    invoke-direct {v0, v1, p2, v2}, LAH7;-><init>(III)V
 
     .line 28
     .line 29
     .line 30
-    iput-object v0, p1, Lcom/snap/framework/ui/views/Tooltip;->t0:LkC7;
+    iput-object v0, p1, Lcom/snap/framework/ui/views/Tooltip;->t0:LAH7;
 
     .line 31
     .line 32
@@ -765,7 +765,7 @@
 
     .line 34
     .line 35
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 36
     .line 37
@@ -780,11 +780,11 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lv1j;
+    check-cast p1, LIqj;
 
     .line 2
     .line 3
-    iget-object p1, p1, Lv1j;->a:Ljava/lang/Integer;
+    iget-object p1, p1, LIqj;->a:Ljava/lang/Integer;
 
     .line 4
     .line 5
@@ -849,7 +849,7 @@
     move-result-object v0
 
     .line 12
-    const v1, 0x7f070866
+    const v1, 0x7f0708a9
 
     .line 13
     .line 14
@@ -866,7 +866,7 @@
 
     .line 20
     .line 21
-    const v0, 0x7f0b1928
+    const v0, 0x7f0b1a8c
 
     .line 22
     .line 23
@@ -887,7 +887,7 @@
 
     .line 31
     .line 32
-    const v0, 0x7f0b1867
+    const v0, 0x7f0b19bc
 
     .line 33
     .line 34
@@ -904,7 +904,7 @@
 
     .line 40
     .line 41
-    const v0, 0x7f0b0420
+    const v0, 0x7f0b04a9
 
     .line 42
     .line 43
@@ -953,7 +953,7 @@
 
     .line 64
     .line 65
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 66
     .line 67

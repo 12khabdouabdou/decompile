@@ -192,7 +192,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopAnalytics;->bloopsId:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -205,7 +205,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopAnalytics;->bloopsSearchQuery:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -227,7 +227,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopAnalytics;->bloopsGridIndex:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -475,7 +475,7 @@
 
     .line 51
     .line 52
-    invoke-static {v0, v1, v2}, LmG8;->q(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LBv7;->r(Ljava/lang/StringBuilder;ZC)Ljava/lang/String;
 
     .line 53
     .line 54

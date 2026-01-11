@@ -59,9 +59,9 @@
 
     iget-object v1, p0, Lrxdogtag2/d;->b:Ljava/lang/Object;
 
-    check-cast v1, Lc7i;
+    check-cast v1, Ltvi;
 
-    invoke-static {v0, v1}, Lrxdogtag2/DogTagSubscriber;->a(Lrxdogtag2/DogTagSubscriber;Lc7i;)V
+    invoke-static {v0, v1}, Lrxdogtag2/DogTagSubscriber;->a(Lrxdogtag2/DogTagSubscriber;Ltvi;)V
 
     return-void
 

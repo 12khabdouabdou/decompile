@@ -1,181 +1,37 @@
 .class public final LYxj;
-.super LzDh;
+.super Ljava/lang/Exception;
 .source "SourceFile"
 
 
+# instance fields
+.field public final a:Ljava/lang/Integer;
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:I
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(ILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LzDh;-><init>()V
+    invoke-direct {p0, p4}, Ljava/lang/Exception;-><init>(Ljava/lang/Throwable;)V
 
     .line 2
     .line 3
     .line 4
-    return-void
-.end method
-
-
-# virtual methods
-.method public final bridge synthetic H(LRxh;LRxh;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, LZxj;
-
-    .line 2
-    .line 3
-    check-cast p2, LZxj;
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, p1, p2}, LYxj;->K(LZxj;LZxj;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final K(LZxj;LZxj;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1, p2}, LzDh;->H(LRxh;LRxh;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, LcIj;->s()Landroid/view/View;
+    iput-object p2, p0, LYxj;->a:Ljava/lang/Integer;
 
     .line 5
     .line 6
-    .line 7
-    move-result-object p2
+    iput-object p3, p0, LYxj;->b:Ljava/lang/String;
 
+    .line 7
     .line 8
-    const v0, 0x7f0b1a1e
+    iput p1, p0, LYxj;->c:I
 
     .line 9
     .line 10
-    .line 11
-    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p2
-
-    .line 15
-    check-cast p2, Landroid/widget/TextView;
-
-    .line 16
-    .line 17
-    invoke-virtual {p0}, LcIj;->s()Landroid/view/View;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    const v1, 0x7f133a0c
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
-
-    .line 32
-    invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 33
-    .line 34
-    .line 35
-    invoke-virtual {p0}, LcIj;->s()Landroid/view/View;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object p2
-
-    .line 39
-    const v0, 0x7f0b1792
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object p2
-
-    .line 46
-    if-eqz p2, :cond_0
-
-    .line 47
-    .line 48
-    new-instance v0, LJTh;
-
-    .line 49
-    .line 50
-    const/16 v1, 0xb
-
-    .line 51
-    .line 52
-    invoke-direct {v0, p0, v1, p1}, LJTh;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 56
-    .line 57
-    .line 58
-    :cond_0
-    return-void
-.end method
-
-.method public final onClick(Landroid/view/View;)V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public final bridge synthetic t(LKu;LKu;)V
-    .locals 0
-
-    .line 1
-    check-cast p1, LZxj;
-
-    .line 2
-    .line 3
-    check-cast p2, LZxj;
-
-    .line 4
-    .line 5
-    invoke-virtual {p0, p1, p2}, LYxj;->K(LZxj;LZxj;)V
-
-    .line 6
-    .line 7
-    .line 8
     return-void
 .end method

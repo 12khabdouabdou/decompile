@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lvy1;
+.implements LJB1;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/coremedia/iso/boxes/sampleentry/AudioSampleEntry;->parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+    value = Lcom/coremedia/iso/boxes/sampleentry/AudioSampleEntry;->parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -90,7 +90,7 @@
     return-wide v0
 .end method
 
-.method public getParent()LRP3;
+.method public getParent()LJT3;
     .locals 1
 
     .line 1
@@ -123,7 +123,7 @@
     return-object v0
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -148,7 +148,7 @@
     throw p1
 .end method
 
-.method public setParent(LRP3;)V
+.method public setParent(LJT3;)V
     .locals 1
 
     .line 1

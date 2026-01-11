@@ -1,10 +1,10 @@
 .class public final Lcom/snap/dpa_api/DpaTemplate;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'templateType\':r<e>:\'[0]\',\'textColor\':s?,\'titleBackgroundColor\':s?,\'subtitleBackgroundColor\':s?"
     typeReferences = {

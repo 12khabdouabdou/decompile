@@ -29,7 +29,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LA8f;",
+            "LRqf;",
             ">;"
         }
     .end annotation
@@ -44,7 +44,7 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "LA8f;",
+            "LRqf;",
             ">;ZZ)V"
         }
     .end annotation
@@ -109,7 +109,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "LA8f;",
+            "LRqf;",
             ">;"
         }
     .end annotation
@@ -142,7 +142,7 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "LA8f;",
+            "LRqf;",
             ">;ZZ)",
             "Lcom/snap/discover/playback/content/model/CameraAttachmentContent;"
         }
@@ -180,7 +180,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/CameraAttachmentContent;->lenses:Ljava/util/List;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -238,7 +238,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "LA8f;",
+            "LRqf;",
             ">;"
         }
     .end annotation
@@ -387,7 +387,7 @@
 
     .line 31
     .line 32
-    invoke-static {v0, v3, v2}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+    invoke-static {v0, v3, v2}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
 
     .line 33
     .line 34

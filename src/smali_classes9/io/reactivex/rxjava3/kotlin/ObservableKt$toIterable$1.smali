@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Ljava/lang/Iterable;
-.implements LlC9;
+.implements LFL9;
 
 
 # annotations
@@ -14,7 +14,7 @@
         "Ljava/lang/Iterable<",
         "Ljava/lang/Object;",
         ">;",
-        "LlC9;"
+        "LFL9;"
     }
 .end annotation
 

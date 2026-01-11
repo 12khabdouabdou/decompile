@@ -1,61 +1,96 @@
-.class public final Lpfj;
-.super Lcom/snap/composer/utils/b;
+.class public abstract Lpfj;
+.super LUaf;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'descriptor\':r:\'[0]\',\'content\':r:\'[1]\',\'senderId\':s,\'state\':s,\'metadata\':r:\'[2]\'"
-    typeReferences = {
-        Lcom/snap/recents_ranking/UpdatedMessageDescriptor;,
-        Lcom/snap/recents_ranking/UpdatedMessageContent;,
-        Lcom/snap/recents_ranking/UpdatedMessageMetadata;
-    }
-.end annotation
-
-
-# instance fields
-.field private _content:Lcom/snap/recents_ranking/UpdatedMessageContent;
-
-.field private _descriptor:Lcom/snap/recents_ranking/UpdatedMessageDescriptor;
-
-.field private _metadata:Lcom/snap/recents_ranking/UpdatedMessageMetadata;
-
-.field private _senderId:Ljava/lang/String;
-
-.field private _state:Ljava/lang/String;
-
-
 # direct methods
-.method public constructor <init>(Lcom/snap/recents_ranking/UpdatedMessageDescriptor;Lcom/snap/recents_ranking/UpdatedMessageContent;Ljava/lang/String;Ljava/lang/String;Lcom/snap/recents_ranking/UpdatedMessageMetadata;)V
-    .locals 0
+.method public constructor <init>(I)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
     .line 2
+    if-eq p1, v0, :cond_4
+
     .line 3
     .line 4
-    iput-object p1, p0, Lpfj;->_descriptor:Lcom/snap/recents_ranking/UpdatedMessageDescriptor;
+    const/4 v0, 0x2
 
     .line 5
-    .line 6
-    iput-object p2, p0, Lpfj;->_content:Lcom/snap/recents_ranking/UpdatedMessageContent;
+    if-eq p1, v0, :cond_3
 
+    .line 6
     .line 7
+    const/4 v0, 0x3
+
     .line 8
-    iput-object p3, p0, Lpfj;->_senderId:Ljava/lang/String;
+    if-eq p1, v0, :cond_2
 
     .line 9
     .line 10
-    iput-object p4, p0, Lpfj;->_state:Ljava/lang/String;
+    const/4 v0, 0x4
 
     .line 11
-    .line 12
-    iput-object p5, p0, Lpfj;->_metadata:Lcom/snap/recents_ranking/UpdatedMessageMetadata;
+    if-eq p1, v0, :cond_1
 
+    .line 12
     .line 13
+    const/4 v0, 0x5
+
     .line 14
+    if-ne p1, v0, :cond_0
+
+    .line 15
+    .line 16
+    const-string p1, "END"
+
+    .line 17
+    .line 18
+    goto :goto_0
+
+    .line 19
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 20
+    throw p1
+
+    .line 21
+    :cond_1
+    const-string p1, "TASK_EXECUTION_END"
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_2
+    const-string p1, "TASK_EXECUTION_START"
+
+    .line 25
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :cond_3
+    const-string p1, "REQUEST_CREATED"
+
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :cond_4
+    const-string p1, "START"
+
+    .line 31
+    .line 32
+    :goto_0
+    invoke-direct {p0, p1}, LUaf;-><init>(Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
     return-void
 .end method

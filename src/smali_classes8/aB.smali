@@ -1,5 +1,5 @@
 .class public final LaB;
-.super LbB;
+.super LfTk;
 .source "SourceFile"
 
 

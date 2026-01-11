@@ -1,194 +1,158 @@
 .class public final LXh;
-.super LTpk;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-# static fields
-.field public static final a:LXh;
 
-.field public static final b:LXh;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final c:LXh;
-
-.field public static final d:LXh;
-
-.field public static final e:LXh;
-
-.field public static final f:LXh;
-
-.field public static final g:LXh;
-
-.field public static final h:LXh;
-
-.field public static final i:LXh;
-
-.field public static final j:LXh;
-
-.field public static final k:LXh;
-
-.field public static final l:LXh;
+.field public final synthetic b:LZh;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
+.method public synthetic constructor <init>(LZh;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LXh;
+    iput p2, p0, LXh;->a:I
+
+    iput-object p1, p0, LXh;->b:LZh;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 4
+
+    .line 1
+    iget v0, p0, LXh;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    sput-object v0, LXh;->a:LXh;
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 7
     .line 8
-    new-instance v0, LXh;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 9
     .line 10
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 11
+    iget-object v0, p0, LXh;->b:LZh;
+
     .line 12
     .line 13
-    sput-object v0, LXh;->b:LXh;
+    iget-object v0, v0, LZh;->s:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 14
     .line 15
-    new-instance v0, LXh;
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
     .line 16
     .line 17
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 18
+    return-void
+
     .line 19
+    :pswitch_0
+    check-cast p1, Ljava/lang/Boolean;
+
     .line 20
-    sput-object v0, LXh;->c:LXh;
-
     .line 21
-    .line 22
-    new-instance v0, LXh;
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
+    .line 22
     .line 23
     .line 24
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    move-result p1
 
     .line 25
+    iget-object v0, p0, LXh;->b:LZh;
+
     .line 26
     .line 27
-    sput-object v0, LXh;->d:LXh;
+    iget-object v1, v0, LZh;->g:LTV6;
 
     .line 28
     .line 29
-    new-instance v0, LXh;
+    const/4 v2, 0x0
 
     .line 30
-    .line 31
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    if-eqz v1, :cond_1
 
+    .line 31
     .line 32
+    new-instance v3, Lcom/snap/ads/api/AdOperaViewerEvents$AdFavoriteEvent;
+
     .line 33
     .line 34
-    sput-object v0, LXh;->e:LXh;
+    iget-object v0, v0, LZh;->f:LYbd;
 
     .line 35
     .line 36
-    new-instance v0, LXh;
+    if-eqz v0, :cond_0
 
     .line 37
     .line 38
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v2, 0x0
 
     .line 39
+    invoke-direct {v3, v0, p1, v2}, Lcom/snap/ads/api/AdOperaViewerEvents$AdFavoriteEvent;-><init>(LYbd;ZZ)V
+
     .line 40
     .line 41
-    sput-object v0, LXh;->f:LXh;
-
     .line 42
-    .line 43
-    new-instance v0, LXh;
+    invoke-virtual {v1, v3}, LTV6;->c(LxV6;)V
 
+    .line 43
     .line 44
     .line 45
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    return-void
 
     .line 46
+    :cond_0
+    const-string p1, "page"
+
     .line 47
     .line 48
-    sput-object v0, LXh;->g:LXh;
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 49
     .line 50
-    new-instance v0, LXh;
-
     .line 51
+    throw v2
+
     .line 52
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    :cond_1
+    const-string p1, "eventDispatcher"
 
     .line 53
     .line 54
-    .line 55
-    sput-object v0, LXh;->h:LXh;
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 55
     .line 56
     .line 57
-    new-instance v0, LXh;
+    throw v2
 
     .line 58
+    nop
+
     .line 59
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 60
-    .line 61
-    .line 62
-    sput-object v0, LXh;->i:LXh;
-
-    .line 63
-    .line 64
-    new-instance v0, LXh;
-
-    .line 65
-    .line 66
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v0, LXh;->j:LXh;
-
-    .line 70
-    .line 71
-    new-instance v0, LXh;
-
-    .line 72
-    .line 73
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 74
-    .line 75
-    .line 76
-    sput-object v0, LXh;->k:LXh;
-
-    .line 77
-    .line 78
-    new-instance v0, LXh;
-
-    .line 79
-    .line 80
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 81
-    .line 82
-    .line 83
-    sput-object v0, LXh;->l:LXh;
-
-    .line 84
-    .line 85
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

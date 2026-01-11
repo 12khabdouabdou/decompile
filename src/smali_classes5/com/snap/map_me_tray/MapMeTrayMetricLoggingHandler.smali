@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LE2b;
+    proxyClass = LSfb;
     schema = "\'logAction\':f|m|(r:\'[0]\'),\'logClose\':f|m|(r?:\'[1]\')"
     typeReferences = {
         Lcom/snap/map_me_tray/MapMeTrayActionInfo;,

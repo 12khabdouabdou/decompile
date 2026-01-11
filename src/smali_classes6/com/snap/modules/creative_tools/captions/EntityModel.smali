@@ -1,15 +1,15 @@
 .class public final Lcom/snap/modules/creative_tools/captions/EntityModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'entityType\':r<e>:\'[0]\',\'entityId\':s,\'title\':s,\'subtitle\':s?,\'avatars\':a?<r:\'[1]\'>,\'publicProfileURL\':s?,\'profileBadgeType\':r?<e>:\'[2]\',\'isCreator\':b@?"
     typeReferences = {
         Lcom/snap/modules/creative_tools/captions/EntityType;,
-        LSB0;,
+        LNE0;,
         Lcom/snap/modules/creative_tools/captions/ProfileBadgeType;
     }
 .end annotation
@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LSB0;",
+            "LNE0;",
             ">;"
         }
     .end annotation
@@ -101,7 +101,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "LSB0;",
+            "LNE0;",
             ">;",
             "Ljava/lang/String;",
             "Lcom/snap/modules/creative_tools/captions/ProfileBadgeType;",

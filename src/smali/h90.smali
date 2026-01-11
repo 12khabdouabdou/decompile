@@ -4,21 +4,21 @@
 
 
 # instance fields
-.field private final a:[B
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "a"
-    .end annotation
-.end field
+.field public final a:LQAc;
 
-.field private final b:J
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "b"
-    .end annotation
-.end field
+.field public final b:Lvdh;
+
+.field public final c:LDBe;
+
+.field public final d:LDBe;
+
+.field public final e:Ll90;
+
+.field public final f:LuKj;
 
 
 # direct methods
-.method public constructor <init>([BJ)V
+.method public constructor <init>(LQAc;Lvdh;LDBe;LDBe;Ll90;LuKj;)V
     .locals 0
 
     .line 1
@@ -27,240 +27,222 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lh90;->a:[B
+    iput-object p1, p0, Lh90;->a:LQAc;
 
     .line 5
     .line 6
-    iput-wide p2, p0, Lh90;->b:J
+    iput-object p2, p0, Lh90;->b:Lvdh;
 
     .line 7
     .line 8
+    iput-object p3, p0, Lh90;->c:LDBe;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, Lh90;->d:LDBe;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, Lh90;->e:Ll90;
+
+    .line 13
+    .line 14
+    iput-object p6, p0, Lh90;->f:LuKj;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()[B
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lh90;->a:[B
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final b()J
-    .locals 2
-
-    .line 1
-    iget-wide v0, p0, Lh90;->b:J
-
-    .line 2
-    .line 3
-    return-wide v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
+.method public final a()Lio/reactivex/rxjava3/internal/operators/single/SingleDelayWithCompletable;
     .locals 7
 
     .line 1
-    const/4 v0, 0x1
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    const-string v1, "ArgosClientProvider.createArgosClient"
 
+    .line 4
     .line 5
-    :cond_0
-    if-eqz p1, :cond_1
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 8
-    .line 9
-    .line 10
-    move-result-object v1
-
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_1
-    const/4 v1, 0x0
-
-    .line 13
-    :goto_0
-    const-class v2, Lh90;
-
-    .line 14
-    .line 15
-    invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
     move-result v1
 
+    .line 9
+    :try_start_0
+    new-instance v2, LO0f;
+
+    .line 10
+    .line 11
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    new-instance v3, LhN8;
+
+    .line 15
+    .line 16
+    invoke-direct {v3}, LhN8;-><init>()V
+
+    .line 17
+    .line 18
     .line 19
-    const/4 v2, 0x0
+    const-string v4, "gcp.api.snapchat.com"
 
     .line 20
-    if-nez v1, :cond_2
-
     .line 21
-    .line 22
-    return v2
+    iput-object v4, v3, LhN8;->a:Ljava/lang/String;
 
+    .line 22
     .line 23
-    :cond_2
-    check-cast p1, Lh90;
+    const-wide/16 v4, 0x4e20
 
     .line 24
     .line 25
-    iget-object v1, p0, Lh90;->a:[B
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     .line 26
     .line 27
-    iget-object v3, p1, Lh90;->a:[B
-
     .line 28
+    move-result-object v4
+
     .line 29
-    invoke-static {v1, v3}, Ljava/util/Arrays;->equals([B[B)Z
+    iput-object v4, v3, LhN8;->b:Ljava/lang/Long;
 
     .line 30
     .line 31
-    .line 32
-    move-result v1
+    iget-object v4, p0, Lh90;->f:LuKj;
 
+    .line 32
     .line 33
-    if-nez v1, :cond_3
+    check-cast v4, LIeh;
 
     .line 34
     .line 35
-    return v2
+    invoke-virtual {v4}, LIeh;->d()Ljava/lang/String;
 
     .line 36
-    :cond_3
-    iget-wide v3, p0, Lh90;->b:J
-
     .line 37
     .line 38
-    iget-wide v5, p1, Lh90;->b:J
+    move-result-object v4
 
     .line 39
+    iput-object v4, v3, LhN8;->d:Ljava/lang/String;
+
     .line 40
-    cmp-long p1, v3, v5
-
     .line 41
+    const-wide/16 v4, 0x2710
+
     .line 42
-    if-eqz p1, :cond_4
-
     .line 43
+    iput-wide v4, v3, LhN8;->e:J
+
     .line 44
-    return v2
-
     .line 45
-    :cond_4
-    return v0
-.end method
+    const/4 v4, 0x0
 
-.method public final hashCode()I
-    .locals 3
+    .line 46
+    iput-boolean v4, v3, LhN8;->h:Z
 
-    .line 1
-    iget-object v0, p0, Lh90;->a:[B
+    .line 47
+    .line 48
+    iput-object v3, v2, LO0f;->a:Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([B)I
+    .line 49
+    .line 50
+    iget-object v3, p0, Lh90;->a:LQAc;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    .line 51
+    .line 52
+    sget-object v4, LiFa;->b:LiFa;
 
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    .line 53
+    .line 54
+    invoke-virtual {v3, v4}, LQAc;->b(LiFa;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromSingle;
 
-    .line 8
-    .line 9
-    iget-wide v1, p0, Lh90;->b:J
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v3
 
-    .line 10
-    .line 11
-    invoke-static {v1, v2}, Lsv7;->e(J)I
+    .line 58
+    iget-object v4, p0, Lh90;->e:Ll90;
 
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
+    .line 59
+    .line 60
+    invoke-virtual {v4}, Ll90;->a()Lio/reactivex/rxjava3/core/Single;
 
-    .line 15
-    add-int/2addr v1, v0
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v4
 
-    .line 16
-    return v1
-.end method
+    .line 64
+    new-instance v5, Lq66;
 
-.method public final toString()Ljava/lang/String;
-    .locals 5
+    .line 65
+    .line 66
+    const/4 v6, 0x4
 
-    .line 1
-    iget-object v0, p0, Lh90;->a:[B
+    .line 67
+    invoke-direct {v5, v2, v6, p0}, Lq66;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->toString([B)Ljava/lang/String;
+    .line 68
+    .line 69
+    .line 70
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 71
+    .line 72
+    invoke-direct {v2, v4, v5}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
-    .line 7
-    iget-wide v1, p0, Lh90;->b:J
+    .line 73
+    .line 74
+    .line 75
+    new-instance v4, Lio/reactivex/rxjava3/internal/operators/single/SingleDelayWithCompletable;
 
-    .line 8
-    .line 9
-    const-string v3, "ArroyoMessageIdContainer(conversationId="
+    .line 76
+    .line 77
+    invoke-direct {v4, v2, v3}, Lio/reactivex/rxjava3/internal/operators/single/SingleDelayWithCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 10
-    .line 11
-    const-string v4, ", messageId="
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
-    .line 12
-    .line 13
-    invoke-static {v1, v2, v3, v0, v4}, LDM4;->t(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 81
+    .line 82
+    .line 83
+    return-object v4
 
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
+    .line 84
+    :catchall_0
+    move-exception v0
 
-    .line 17
-    const-string v1, ")"
+    .line 85
+    sget-object v2, LOdh;->b:LtGi;
 
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    .line 86
+    .line 87
+    if-eqz v2, :cond_0
 
-    .line 20
-    .line 21
-    .line 22
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 88
+    .line 89
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    return-object v0
+    .line 90
+    .line 91
+    .line 92
+    :cond_0
+    throw v0
 .end method

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final synthetic a:LdUe;
+.field public final synthetic a:LsCe;
 
 
 # direct methods
-.method public constructor <init>(LdUe;)V
+.method public constructor <init>(LsCe;)V
     .locals 0
 
     .line 1
@@ -20,7 +20,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/kotlin/CompletableKt$sam$java_util_concurrent_Callable$0;->a:LdUe;
+    iput-object p1, p0, Lio/reactivex/rxjava3/kotlin/CompletableKt$sam$java_util_concurrent_Callable$0;->a:LsCe;
 
     .line 5
     .line 6
@@ -32,11 +32,11 @@
 .method public final synthetic call()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lio/reactivex/rxjava3/kotlin/CompletableKt$sam$java_util_concurrent_Callable$0;->a:LdUe;
+    iget-object v0, p0, Lio/reactivex/rxjava3/kotlin/CompletableKt$sam$java_util_concurrent_Callable$0;->a:LsCe;
 
-    invoke-virtual {v0}, LdUe;->invoke()Ljava/lang/Object;
+    invoke-virtual {v0}, LsCe;->d()Ljava/lang/Object;
 
-    sget-object v0, Li7j;->a:Li7j;
+    sget-object v0, Lewj;->a:Lewj;
 
     return-object v0
 .end method

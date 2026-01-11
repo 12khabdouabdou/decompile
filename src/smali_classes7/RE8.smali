@@ -1,56 +1,33 @@
-.class public final LRE8;
-.super Lcom/snap/composer/utils/b;
+.class public abstract LRE8;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'onStreakPillTap\':f?()"
-    typeReferences = {}
-.end annotation
-
-
-# instance fields
-.field private _onStreakPillTap:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final a:Ljava/lang/reflect/Type;
 
 
 # direct methods
-.method public constructor <init>()V
+.method static constructor <clinit>()V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
+    new-instance v0, LQE8;
 
     .line 2
-    iput-object v0, p0, LRE8;->_onStreakPillTap:Lkotlin/jvm/functions/Function0;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lkotlin/jvm/functions/Function0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lkotlin/jvm/functions/Function0;",
-            ")V"
-        }
-    .end annotation
-
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {v0}, LQE8;-><init>()V
 
     .line 4
-    iput-object p1, p0, LRE8;->_onStreakPillTap:Lkotlin/jvm/functions/Function0;
+    .line 5
+    .line 6
+    iget-object v0, v0, Lhmj;->b:Ljava/lang/reflect/Type;
 
+    .line 7
+    .line 8
+    sput-object v0, LRE8;->a:Ljava/lang/reflect/Type;
+
+    .line 9
+    .line 10
     return-void
 .end method

@@ -12,11 +12,11 @@
 
 .field public final b:Landroid/view/View;
 
-.field public final c:LlI9;
+.field public final c:LHT9;
 
-.field public final e0:LlI9;
+.field public final e0:LHT9;
 
-.field public final f0:LlI9;
+.field public final f0:LHT9;
 
 .field public final g0:Lcom/snap/ui/view/RoundedCornerFrameLayout;
 
@@ -28,13 +28,13 @@
 
 .field public k0:Landroid/net/Uri;
 
-.field public l0:LbBj;
+.field public l0:LGCj;
 
-.field public m0:LaBj;
+.field public m0:Lr0k;
 
-.field public n0:Lqij;
+.field public n0:LsXj;
 
-.field public o0:LuSg;
+.field public o0:Lmeh;
 
 .field public p0:Ljava/lang/Boolean;
 
@@ -44,9 +44,9 @@
 
 .field public s0:Ljava/lang/Float;
 
-.field public final t:LlI9;
+.field public final t:LHT9;
 
-.field public t0:LZAj;
+.field public t0:Lq0k;
 
 .field public u0:Z
 
@@ -70,7 +70,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -91,7 +91,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -103,7 +103,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    sget-object p2, LZF2;->Z:LZF2;
+    sget-object p2, LYI2;->Z:LYI2;
 
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -139,7 +139,7 @@
 
     check-cast p1, Landroid/view/LayoutInflater;
 
-    const p2, 0x7f0e0110
+    const p2, 0x7f0e0112
 
     const/4 p3, 0x0
 
@@ -154,21 +154,21 @@
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 13
-    new-instance p2, LlI9;
+    new-instance p2, LHT9;
 
-    const p3, 0x7f0b04ee
+    const p3, 0x7f0b057c
 
-    const v0, 0x7f0b04ec
+    const v0, 0x7f0b057a
 
     const/4 v1, 0x0
 
     .line 14
-    invoke-direct {p2, p1, p3, v0, v1}, LlI9;-><init>(Landroid/view/View;IILkI9;)V
+    invoke-direct {p2, p1, p3, v0, v1}, LHT9;-><init>(Landroid/view/View;IILGT9;)V
 
     .line 15
-    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->e0:LlI9;
+    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->e0:LHT9;
 
-    const p2, 0x7f0b04da
+    const p2, 0x7f0b0568
 
     .line 16
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -180,48 +180,48 @@
     iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->g0:Lcom/snap/ui/view/RoundedCornerFrameLayout;
 
     .line 17
-    new-instance p2, LlI9;
+    new-instance p2, LHT9;
 
-    const p3, 0x7f0b04e1
+    const p3, 0x7f0b056f
 
-    const v0, 0x7f0b04e0
+    const v0, 0x7f0b056e
 
     .line 18
-    invoke-direct {p2, p1, p3, v0, v1}, LlI9;-><init>(Landroid/view/View;IILkI9;)V
+    invoke-direct {p2, p1, p3, v0, v1}, LHT9;-><init>(Landroid/view/View;IILGT9;)V
 
     .line 19
-    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c:LlI9;
+    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c:LHT9;
 
     .line 20
-    new-instance p2, LlI9;
+    new-instance p2, LHT9;
 
-    const p3, 0x7f0b049d
+    const p3, 0x7f0b0529
 
-    const v0, 0x7f0b049b
+    const v0, 0x7f0b0527
 
     .line 21
-    invoke-direct {p2, p1, p3, v0, v1}, LlI9;-><init>(Landroid/view/View;IILkI9;)V
+    invoke-direct {p2, p1, p3, v0, v1}, LHT9;-><init>(Landroid/view/View;IILGT9;)V
 
     .line 22
-    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->f0:LlI9;
+    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->f0:LHT9;
 
     .line 23
-    new-instance p2, LlI9;
+    new-instance p2, LHT9;
 
-    const p3, 0x7f0b04dc
+    const p3, 0x7f0b056a
 
-    const v0, 0x7f0b04db
+    const v0, 0x7f0b0569
 
     .line 24
-    invoke-direct {p2, p1, p3, v0, v1}, LlI9;-><init>(Landroid/view/View;IILkI9;)V
+    invoke-direct {p2, p1, p3, v0, v1}, LHT9;-><init>(Landroid/view/View;IILGT9;)V
 
     .line 25
-    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t:LlI9;
+    iput-object p2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t:LHT9;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -323,8 +323,8 @@
 
 
 # virtual methods
-.method public final a(Landroid/net/Uri;LuSg;LkAg;LBre;Lio/reactivex/rxjava3/core/Observable;Ltfb;LB73;Ljava/lang/String;LXF4;LpC3;Lnn9;LZAj;)V
-    .locals 24
+.method public final a(Landroid/net/Uri;Lmeh;LxVg;LnJe;Lio/reactivex/rxjava3/core/Observable;Le2b;LR93;Ljava/lang/String;LxM4;LOF3;Ljw9;Lq0k;)V
+    .locals 25
 
     .line 1
     move-object/from16 v1, p0
@@ -339,14 +339,14 @@
 
     .line 6
     .line 7
-    iget-boolean v0, v3, LuSg;->b:Z
+    iget-boolean v0, v3, Lmeh;->b:Z
 
     .line 8
     .line 9
     const/4 v10, 0x4
 
     .line 10
-    iget-object v2, v1, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c:LlI9;
+    iget-object v2, v1, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c:LHT9;
 
     .line 11
     .line 12
@@ -354,7 +354,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v3}, LuSg;->l()Z
+    invoke-virtual {v3}, Lmeh;->l()Z
 
     .line 15
     .line 16
@@ -374,24 +374,24 @@
 
     .line 23
     .line 24
-    new-instance v0, LrJ3;
+    new-instance v0, LUM3;
 
     .line 25
     .line 26
     const/4 v5, 0x6
 
     .line 27
-    invoke-direct {v0, v5, v1}, LrJ3;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v5, v1}, LUM3;-><init>(ILjava/lang/Object;)V
 
     .line 28
     .line 29
     .line 30
-    invoke-virtual {v2, v0}, LlI9;->d(LkI9;)V
+    invoke-virtual {v2, v0}, LHT9;->d(LGT9;)V
 
     .line 31
     .line 32
     .line 33
-    invoke-virtual {v2}, LlI9;->a()Landroid/view/View;
+    invoke-virtual {v2}, LHT9;->a()Landroid/view/View;
 
     .line 34
     .line 35
@@ -400,7 +400,7 @@
 
     .line 37
     :cond_0
-    iget-object v0, v1, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:Lqij;
+    iget-object v0, v1, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:LsXj;
 
     .line 38
     .line 39
@@ -408,7 +408,7 @@
 
     .line 40
     .line 41
-    iget-object v0, v0, Lqij;->b:Ljava/lang/Object;
+    iget-object v0, v0, LsXj;->b:Ljava/lang/Object;
 
     .line 42
     .line 43
@@ -434,26 +434,26 @@
     .line 52
     .line 53
     .line 54
-    invoke-virtual {v2, v10}, LlI9;->e(I)V
+    invoke-virtual {v2, v10}, LHT9;->e(I)V
 
     .line 55
     .line 56
     .line 57
     :cond_2
     :goto_0
-    sget-object v0, LfE1;->n0:LfE1;
+    sget-object v0, LvH1;->n0:LvH1;
 
     .line 58
     .line 59
-    iget-object v0, v0, LcSa;->a:Lin0;
+    iget-object v0, v0, LL4b;->a:LAp0;
 
     .line 60
     .line 61
-    iget-object v13, v0, Lin0;->t:Lbwh;
+    iget-object v13, v0, LAp0;->X:LcUh;
 
     .line 62
     .line 63
-    new-instance v14, Lo2f;
+    new-instance v14, Llkf;
 
     .line 64
     .line 65
@@ -461,11 +461,11 @@
 
     .line 66
     .line 67
-    const/16 v21, 0x0
+    const/16 v22, 0x0
 
     .line 68
     .line 69
-    const/16 v22, 0x0
+    const/16 v23, 0x0
 
     .line 70
     .line 71
@@ -488,320 +488,325 @@
 
     .line 79
     .line 80
-    const/16 v23, 0x3df
+    const/16 v21, 0x0
 
     .line 81
     .line 82
-    invoke-direct/range {v14 .. v23}, Lo2f;-><init>(Ljava/lang/String;LAGf;Ljava/lang/String;Ljava/lang/Long;Lcom/snapchat/client/mdp_common/Trigger;ILjava/lang/String;ZI)V
+    const/16 v24, 0x7df
 
     .line 83
     .line 84
+    invoke-direct/range {v14 .. v24}, Llkf;-><init>(Ljava/lang/String;La0g;Ljava/lang/String;Ljava/lang/Long;Lcom/snapchat/client/mdp_common/Trigger;ILjava/lang/String;ZZI)V
+
     .line 85
+    .line 86
+    .line 87
     const/4 v0, 0x0
 
-    .line 86
-    new-array v0, v0, [LUI1;
-
-    .line 87
     .line 88
-    const-wide/16 v17, 0x0
+    new-array v0, v0, [LpM1;
 
     .line 89
     .line 90
-    const/16 v16, 0x0
+    const-wide/16 v17, 0x0
 
     .line 91
     .line 92
-    move-object v15, v14
+    const/16 v16, 0x0
 
     .line 93
-    const/4 v14, 0x0
-
     .line 94
-    const/16 v20, 0x30
+    move-object v15, v14
 
     .line 95
+    const/4 v14, 0x0
+
     .line 96
-    move-object/from16 v12, p1
+    const/16 v20, 0x30
 
     .line 97
     .line 98
-    move-object/from16 v11, p3
+    move-object/from16 v12, p1
 
     .line 99
     .line 100
-    move-object/from16 v19, v0
+    move-object/from16 v11, p3
 
     .line 101
     .line 102
-    invoke-static/range {v11 .. v20}, LLZj;->T(LkAg;Landroid/net/Uri;LQ1j;ZLo2f;IJ[LUI1;I)Lio/reactivex/rxjava3/core/Single;
+    move-object/from16 v19, v0
 
     .line 103
     .line 104
+    invoke-static/range {v11 .. v20}, LDz9;->T(LxVg;Landroid/net/Uri;Lcrj;ZLlkf;IJ[LpM1;I)Lio/reactivex/rxjava3/core/Single;
+
     .line 105
-    move-result-object v0
-
     .line 106
-    invoke-virtual/range {p4 .. p4}, LBre;->d()LF06;
-
     .line 107
-    .line 108
-    .line 109
-    move-result-object v2
-
-    .line 110
-    invoke-static {v0, v0, v2}, Llva;->s(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/core/Single;LF06;)Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
-
-    .line 111
-    .line 112
-    .line 113
     move-result-object v0
 
-    .line 114
-    invoke-virtual/range {p4 .. p4}, LBre;->d()LF06;
+    .line 108
+    invoke-virtual/range {p4 .. p4}, LnJe;->d()LA36;
 
-    .line 115
-    .line 116
-    .line 117
+    .line 109
+    .line 110
+    .line 111
     move-result-object v2
 
-    .line 118
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
+    .line 112
+    invoke-static {v0, v0, v2}, LzHa;->s(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/core/Single;LA36;)Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
+    .line 113
+    .line 114
+    .line 115
+    move-result-object v0
+
+    .line 116
+    invoke-virtual/range {p4 .. p4}, LnJe;->d()LA36;
+
+    .line 117
+    .line 118
     .line 119
+    move-result-object v2
+
     .line 120
-    invoke-direct {v5, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    new-instance v5, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
 
     .line 121
     .line 122
-    .line 123
-    new-instance v0, LNwj;
+    invoke-direct {v5, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 123
     .line 124
     .line 125
-    const/4 v2, 0x4
+    new-instance v0, LyHj;
 
     .line 126
-    invoke-direct {v0, v1, v2, v4}, LNwj;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 127
+    const/16 v2, 0x12
+
     .line 128
     .line 129
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    invoke-direct {v0, v1, v2, v4}, LyHj;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 130
     .line 131
-    invoke-direct {v2, v5, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
     .line 132
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
     .line 133
     .line 134
-    sget-object v0, LYTc;->n0:LYTc;
+    invoke-direct {v2, v5, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 135
     .line 136
+    .line 137
+    sget-object v0, LL8d;->p0:LL8d;
+
+    .line 138
+    .line 139
     move-object/from16 v5, p10
 
-    .line 137
-    .line 138
-    invoke-interface {v5, v0}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 139
     .line 140
     .line 141
-    move-result-object v0
+    invoke-interface {v5, v0}, LOF3;->u(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 142
-    sget-object v5, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
-
     .line 143
     .line 144
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v0
 
     .line 145
+    sget-object v5, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
+
     .line 146
     .line 147
-    invoke-static {v2, v0}, Lio/reactivex/rxjava3/kotlin/Singles;->a(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;)Lio/reactivex/rxjava3/core/Single;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 148
     .line 149
     .line 150
-    move-result-object v0
+    invoke-static {v2, v0}, Lio/reactivex/rxjava3/kotlin/Singles;->a(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;)Lio/reactivex/rxjava3/core/Single;
 
     .line 151
-    invoke-virtual/range {p4 .. p4}, LBre;->i()Lgn0;
-
     .line 152
     .line 153
+    move-result-object v0
+
     .line 154
-    move-result-object v2
+    invoke-virtual/range {p4 .. p4}, LnJe;->i()Lxp0;
 
     .line 155
-    new-instance v11, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
-
     .line 156
     .line 157
-    invoke-direct {v11, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    move-result-object v2
 
     .line 158
+    new-instance v11, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
+
     .line 159
     .line 160
-    new-instance v0, LjQi;
+    invoke-direct {v11, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 161
     .line 162
-    const/4 v9, 0x5
-
     .line 163
-    move-object/from16 v2, p1
+    new-instance v0, LFfj;
 
     .line 164
     .line 165
-    move-object/from16 v6, p5
+    const/4 v9, 0x6
 
     .line 166
+    move-object/from16 v2, p1
+
     .line 167
+    .line 168
+    move-object/from16 v6, p5
+
+    .line 169
+    .line 170
     move-object/from16 v5, p7
 
-    .line 168
-    .line 169
+    .line 171
+    .line 172
     move-object/from16 v7, p11
 
-    .line 170
-    .line 171
+    .line 173
+    .line 174
     move-object/from16 v8, p12
 
-    .line 172
-    .line 173
-    invoke-direct/range {v0 .. v9}, LjQi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    .line 174
     .line 175
     .line 176
-    move-object v7, v1
+    invoke-direct/range {v0 .. v9}, LFfj;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 177
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
-
     .line 178
     .line 179
-    invoke-direct {v1, v11, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Consumer;)V
+    move-object v7, v1
 
     .line 180
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;
+
     .line 181
     .line 182
-    new-instance v0, Latj;
+    invoke-direct {v1, v11, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnSuccess;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 183
     .line 184
-    const/16 v2, 0xe
-
     .line 185
-    .line 186
-    invoke-direct {v0, v2, v7}, Latj;-><init>(ILjava/lang/Object;)V
+    new-instance v0, LKGj;
 
+    .line 186
     .line 187
+    const/16 v2, 0x17
+
     .line 188
     .line 189
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
+    invoke-direct {v0, v2, v7}, LKGj;-><init>(ILjava/lang/Object;)V
 
     .line 190
     .line 191
-    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;)V
-
     .line 192
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
+
     .line 193
     .line 194
-    new-instance v0, LVsj;
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Consumer;)V
 
     .line 195
     .line 196
-    const/16 v1, 0x9
-
     .line 197
-    .line 198
-    invoke-direct {v0, v1, v4}, LVsj;-><init>(ILjava/lang/Object;)V
+    new-instance v0, LTxj;
 
+    .line 198
     .line 199
+    const/16 v1, 0x15
+
     .line 200
     .line 201
-    new-instance v8, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnDispose;
+    invoke-direct {v0, v1, v4}, LTxj;-><init>(ILjava/lang/Object;)V
 
     .line 202
     .line 203
-    invoke-direct {v8, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnDispose;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Action;)V
-
     .line 204
+    new-instance v8, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnDispose;
+
     .line 205
     .line 206
-    new-instance v0, LZye;
+    invoke-direct {v8, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnDispose;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Action;)V
 
     .line 207
     .line 208
-    const/16 v6, 0x14
-
     .line 209
+    new-instance v0, Lntf;
+
     .line 210
+    .line 211
+    const/16 v6, 0x12
+
+    .line 212
+    .line 213
     move-object/from16 v3, p2
 
-    .line 211
-    .line 212
+    .line 214
+    .line 215
     move-object/from16 v2, p8
 
-    .line 213
-    .line 214
-    move-object/from16 v1, p9
-
-    .line 215
     .line 216
-    move-object v5, v4
-
     .line 217
-    move-object/from16 v4, p1
+    move-object/from16 v1, p9
 
     .line 218
     .line 219
-    invoke-direct/range {v0 .. v6}, LZye;-><init>(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Enum;Ljava/lang/Object;Ljava/lang/Object;I)V
+    move-object v5, v4
 
     .line 220
+    move-object/from16 v4, p1
+
     .line 221
     .line 222
-    const/4 v1, 0x2
+    invoke-direct/range {v0 .. v6}, Lntf;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
     .line 223
+    .line 224
+    .line 225
+    const/4 v1, 0x2
+
+    .line 226
     const/4 v2, 0x0
 
-    .line 224
+    .line 227
     invoke-static {v8, v0, v2, v1}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->k(Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 225
-    .line 226
-    .line 227
-    move-result-object v0
-
     .line 228
-    iget-object v1, v7, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 229
     .line 230
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    move-result-object v0
 
     .line 231
+    iget-object v1, v7, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 232
     .line 233
-    iget-object v0, v7, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t:LlI9;
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 234
     .line 235
-    invoke-virtual {v0, v10}, LlI9;->e(I)V
-
     .line 236
+    iget-object v0, v7, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t:LHT9;
+
     .line 237
     .line 238
+    invoke-virtual {v0, v10}, LHT9;->e(I)V
+
+    .line 239
+    .line 240
+    .line 241
     return-void
 .end method
 
-.method public final b(LGJ2;Ltfb;LB73;LKrg;Z)V
+.method public final b(LrM2;Le2b;LR93;LQMg;Z)V
     .locals 18
 
     .line 1
@@ -809,7 +814,7 @@
 
     .line 2
     .line 3
-    iget-object v1, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:LaBj;
+    iget-object v1, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:Lr0k;
 
     .line 4
     .line 5
@@ -821,7 +826,7 @@
 
     .line 8
     .line 9
-    invoke-interface/range {p4 .. p4}, LKrg;->a()LLrg;
+    invoke-interface/range {p4 .. p4}, LQMg;->a()LRMg;
 
     .line 10
     .line 11
@@ -829,480 +834,488 @@
     move-result-object v1
 
     .line 13
-    new-instance v2, LaBj;
+    new-instance v2, Lr0k;
 
     .line 14
     .line 15
     move-object v3, v1
 
     .line 16
-    check-cast v3, Lesg;
+    check-cast v3, LSff;
 
     .line 17
     .line 18
-    iget-object v3, v3, Lesg;->c:Landroid/widget/FrameLayout;
+    iget-object v3, v3, LSff;->Y:Ljava/lang/Object;
 
     .line 19
     .line 20
-    invoke-direct {v2, v1, v3}, LaBj;-><init>(LLrg;Landroid/widget/FrameLayout;)V
+    check-cast v3, Landroid/widget/FrameLayout;
 
     .line 21
     .line 22
-    .line 23
-    iget-object v1, v2, LaBj;->b:Landroid/widget/FrameLayout;
+    invoke-direct {v2, v1, v3}, Lr0k;-><init>(LRMg;Landroid/widget/FrameLayout;)V
 
+    .line 23
     .line 24
     .line 25
-    invoke-virtual {v7, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+    iget-object v1, v2, Lr0k;->b:Landroid/widget/FrameLayout;
 
     .line 26
     .line 27
-    .line 28
-    new-instance v3, LcBj;
+    invoke-virtual {v7, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
+    .line 28
     .line 29
     .line 30
-    const/4 v4, 0x2
+    new-instance v3, Ls0k;
 
     .line 31
-    invoke-direct {v3, v0, v4}, LcBj;-><init>(Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;I)V
-
     .line 32
-    .line 33
-    .line 34
-    invoke-virtual {v1, v3}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
+    const/4 v4, 0x2
 
+    .line 33
+    invoke-direct {v3, v0, v4}, Ls0k;-><init>(Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;I)V
+
+    .line 34
     .line 35
     .line 36
-    .line 37
-    iput-object v2, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:LaBj;
+    invoke-virtual {v1, v3}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
+    .line 37
     .line 38
     .line 39
-    :cond_0
-    iget-object v1, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:LaBj;
+    iput-object v2, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:Lr0k;
 
     .line 40
     .line 41
-    new-instance v2, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    :cond_0
+    iget-object v1, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:Lr0k;
 
     .line 42
     .line 43
-    invoke-direct {v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    new-instance v2, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 44
     .line 45
-    .line 46
-    iput-object v2, v1, LaBj;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-direct {v2}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
 
+    .line 46
     .line 47
     .line 48
-    iget-object v1, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:LaBj;
+    iput-object v2, v1, Lr0k;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 49
     .line 50
-    iget-object v8, v1, LaBj;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:Lr0k;
 
     .line 51
     .line 52
-    new-instance v5, LXuc;
+    iget-object v8, v1, Lr0k;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 53
     .line 54
-    invoke-direct {v5}, LXuc;-><init>()V
+    new-instance v5, LWJc;
 
     .line 55
     .line 56
+    invoke-direct {v5}, LWJc;-><init>()V
+
     .line 57
+    .line 58
+    .line 59
     const/4 v2, 0x0
 
-    .line 58
+    .line 60
     invoke-virtual {v7, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 59
-    .line 60
     .line 61
-    iget v3, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->j0:I
-
     .line 62
     .line 63
-    invoke-static {v7, v3}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c(Lcom/snap/ui/view/RoundedCornerFrameLayout;I)V
+    iget v3, v0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->j0:I
 
     .line 64
     .line 65
-    .line 66
-    iget-object v9, v1, LaBj;->b:Landroid/widget/FrameLayout;
+    invoke-static {v7, v3}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c(Lcom/snap/ui/view/RoundedCornerFrameLayout;I)V
 
+    .line 66
     .line 67
     .line 68
-    invoke-virtual {v9, v2}, Landroid/view/View;->setVisibility(I)V
+    iget-object v9, v1, Lr0k;->b:Landroid/widget/FrameLayout;
 
     .line 69
     .line 70
-    .line 71
-    iget-object v1, v1, LaBj;->a:LLrg;
+    invoke-virtual {v9, v2}, Landroid/view/View;->setVisibility(I)V
 
+    .line 71
     .line 72
     .line 73
-    move-object v10, v1
+    iget-object v1, v1, Lr0k;->a:LRMg;
 
     .line 74
-    check-cast v10, Lesg;
-
     .line 75
+    move-object v10, v1
+
     .line 76
-    const/4 v11, 0x1
+    check-cast v10, LSff;
 
     .line 77
-    iput-boolean v11, v10, Lesg;->i:Z
-
     .line 78
+    const/4 v11, 0x1
+
     .line 79
-    new-instance v2, LZIe;
+    iput-boolean v11, v10, LSff;->c:Z
 
     .line 80
     .line 81
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    new-instance v2, LJ0f;
 
     .line 82
     .line 83
-    .line 84
-    new-instance v1, LVzb;
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
+    .line 84
     .line 85
     .line 86
-    const/16 v6, 0x17
+    new-instance v1, LxEf;
 
     .line 87
     .line 88
-    move-object/from16 v4, p1
+    const/16 v6, 0x13
 
     .line 89
     .line 90
-    move-object/from16 v3, p2
+    move-object/from16 v4, p1
 
     .line 91
     .line 92
-    invoke-direct/range {v1 .. v6}, LVzb;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    move-object/from16 v3, p2
 
     .line 93
     .line 94
-    .line 95
-    sget-object v2, LLhj;->k0:LLhj;
+    invoke-direct/range {v1 .. v6}, LxEf;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 95
     .line 96
     .line 97
-    iget-object v3, v10, Lesg;->p:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    sget-object v2, LxNj;->g0:LxNj;
 
     .line 98
     .line 99
-    invoke-static {v3, v1, v2, v8}, LLZj;->v0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
+    iget-object v3, v10, LSff;->m0:Ljava/lang/Object;
 
     .line 100
     .line 101
+    check-cast v3, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 102
-    new-instance v1, Ljava/util/ArrayList;
-
     .line 103
-    .line 104
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    invoke-static {v3, v1, v2, v8}, LOIc;->P(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)V
 
+    .line 104
     .line 105
     .line 106
-    .line 107
-    iget-object v2, v4, LGJ2;->a:Landroid/net/Uri;
+    new-instance v1, Ljava/util/ArrayList;
 
+    .line 107
     .line 108
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
     .line 109
+    .line 110
+    .line 111
+    iget-object v2, v4, LrM2;->a:Landroid/net/Uri;
+
+    .line 112
+    .line 113
     const/4 v3, 0x2
 
-    .line 110
-    if-eqz p5, :cond_1
-
-    .line 111
-    .line 112
-    new-instance v5, Lfsg;
-
-    .line 113
     .line 114
-    sget-object v6, Lcom/snapchat/client/mdp_common/MediaType;->VIDEO:Lcom/snapchat/client/mdp_common/MediaType;
+    if-eqz p5, :cond_1
 
     .line 115
     .line 116
-    new-instance v12, LIWc;
+    new-instance v5, LkNg;
 
     .line 117
     .line 118
-    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    sget-object v6, Lcom/snapchat/client/mdp_common/MediaType;->VIDEO:Lcom/snapchat/client/mdp_common/MediaType;
 
     .line 119
     .line 120
-    .line 121
-    move-result-object v13
+    new-instance v12, LDbd;
 
+    .line 121
     .line 122
-    const/4 v15, 0x0
+    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     .line 123
-    const/16 v16, 0x0
-
     .line 124
     .line 125
-    const/4 v14, 0x0
+    move-result-object v13
 
     .line 126
-    const/16 v17, 0x3e
+    const/4 v15, 0x0
 
     .line 127
+    const/16 v16, 0x0
+
     .line 128
-    invoke-direct/range {v12 .. v17}, LIWc;-><init>(Ljava/lang/String;LjN6;ZLE3i;I)V
-
     .line 129
-    .line 130
-    .line 131
-    invoke-direct {v5, v3, v6, v12}, Lfsg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LIWc;)V
+    const/4 v14, 0x0
 
+    .line 130
+    const/16 v17, 0x3e
+
+    .line 131
     .line 132
+    invoke-direct/range {v12 .. v17}, LDbd;-><init>(Ljava/lang/String;LUQ6;ZLWri;I)V
+
     .line 133
     .line 134
-    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 135
+    invoke-direct {v5, v3, v6, v12}, LkNg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LDbd;)V
+
     .line 136
     .line 137
-    iget-object v2, v4, LGJ2;->c:Landroid/net/Uri;
-
     .line 138
-    .line 139
-    if-eqz v2, :cond_2
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 139
     .line 140
     .line 141
-    new-instance v3, Lfsg;
+    iget-object v2, v4, LrM2;->c:Landroid/net/Uri;
 
     .line 142
     .line 143
-    sget-object v5, Lcom/snapchat/client/mdp_common/MediaType;->IMAGE:Lcom/snapchat/client/mdp_common/MediaType;
+    if-eqz v2, :cond_2
 
     .line 144
     .line 145
-    new-instance v12, LIWc;
+    new-instance v3, LkNg;
 
     .line 146
     .line 147
-    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    sget-object v5, Lcom/snapchat/client/mdp_common/MediaType;->IMAGE:Lcom/snapchat/client/mdp_common/MediaType;
 
     .line 148
     .line 149
-    .line 150
-    move-result-object v13
+    new-instance v12, LDbd;
 
+    .line 150
     .line 151
-    const/4 v15, 0x0
+    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     .line 152
-    const/16 v16, 0x0
-
     .line 153
     .line 154
-    const/4 v14, 0x0
+    move-result-object v13
 
     .line 155
-    const/16 v17, 0x3e
+    const/4 v15, 0x0
 
     .line 156
+    const/16 v16, 0x0
+
     .line 157
-    invoke-direct/range {v12 .. v17}, LIWc;-><init>(Ljava/lang/String;LjN6;ZLE3i;I)V
-
     .line 158
-    .line 159
-    .line 160
-    invoke-direct {v3, v11, v5, v12}, Lfsg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LIWc;)V
+    const/4 v14, 0x0
 
+    .line 159
+    const/16 v17, 0x3e
+
+    .line 160
     .line 161
+    invoke-direct/range {v12 .. v17}, LDbd;-><init>(Ljava/lang/String;LUQ6;ZLWri;I)V
+
     .line 162
     .line 163
-    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 164
+    invoke-direct {v3, v11, v5, v12}, LkNg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LDbd;)V
+
     .line 165
     .line 166
-    goto :goto_0
-
     .line 167
-    :cond_1
-    new-instance v5, Lfsg;
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 168
     .line 169
-    sget-object v6, Lcom/snapchat/client/mdp_common/MediaType;->IMAGE:Lcom/snapchat/client/mdp_common/MediaType;
-
     .line 170
+    goto :goto_0
+
     .line 171
-    new-instance v11, LIWc;
+    :cond_1
+    new-instance v5, LkNg;
 
     .line 172
     .line 173
-    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    sget-object v6, Lcom/snapchat/client/mdp_common/MediaType;->IMAGE:Lcom/snapchat/client/mdp_common/MediaType;
 
     .line 174
     .line 175
-    .line 176
-    move-result-object v12
+    new-instance v11, LDbd;
 
+    .line 176
     .line 177
-    const/4 v14, 0x0
+    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     .line 178
-    const/4 v15, 0x0
-
     .line 179
-    const/4 v13, 0x0
-
     .line 180
-    const/16 v16, 0x3e
+    move-result-object v12
 
     .line 181
+    const/4 v14, 0x0
+
     .line 182
-    invoke-direct/range {v11 .. v16}, LIWc;-><init>(Ljava/lang/String;LjN6;ZLE3i;I)V
+    const/4 v15, 0x0
 
     .line 183
-    .line 184
-    .line 185
-    invoke-direct {v5, v3, v6, v11}, Lfsg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LIWc;)V
+    const/4 v13, 0x0
 
+    .line 184
+    const/16 v16, 0x3e
+
+    .line 185
     .line 186
+    invoke-direct/range {v11 .. v16}, LDbd;-><init>(Ljava/lang/String;LUQ6;ZLWri;I)V
+
     .line 187
     .line 188
-    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 189
+    invoke-direct {v5, v3, v6, v11}, LkNg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LDbd;)V
+
     .line 190
     .line 191
-    :cond_2
-    :goto_0
-    iget-object v2, v4, LGJ2;->b:Landroid/net/Uri;
-
     .line 192
-    .line 193
-    if-eqz v2, :cond_3
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 193
     .line 194
     .line 195
-    new-instance v3, Lfsg;
+    :cond_2
+    :goto_0
+    iget-object v2, v4, LrM2;->b:Landroid/net/Uri;
 
     .line 196
     .line 197
-    sget-object v4, Lcom/snapchat/client/mdp_common/MediaType;->IMAGE:Lcom/snapchat/client/mdp_common/MediaType;
+    if-eqz v2, :cond_3
 
     .line 198
     .line 199
-    new-instance v11, LIWc;
+    new-instance v3, LkNg;
 
     .line 200
     .line 201
-    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    sget-object v4, Lcom/snapchat/client/mdp_common/MediaType;->IMAGE:Lcom/snapchat/client/mdp_common/MediaType;
 
     .line 202
     .line 203
-    .line 204
-    move-result-object v12
+    new-instance v11, LDbd;
 
+    .line 204
     .line 205
-    const/4 v14, 0x0
+    invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     .line 206
-    const/4 v15, 0x0
-
     .line 207
-    const/4 v13, 0x0
-
     .line 208
-    const/16 v16, 0x3e
+    move-result-object v12
 
     .line 209
+    const/4 v14, 0x0
+
     .line 210
-    invoke-direct/range {v11 .. v16}, LIWc;-><init>(Ljava/lang/String;LjN6;ZLE3i;I)V
+    const/4 v15, 0x0
 
     .line 211
-    .line 212
-    .line 213
-    const/4 v2, 0x4
+    const/4 v13, 0x0
 
+    .line 212
+    const/16 v16, 0x3e
+
+    .line 213
     .line 214
-    invoke-direct {v3, v2, v4, v11}, Lfsg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LIWc;)V
+    invoke-direct/range {v11 .. v16}, LDbd;-><init>(Ljava/lang/String;LUQ6;ZLWri;I)V
 
     .line 215
     .line 216
     .line 217
-    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    const/4 v2, 0x4
 
     .line 218
+    invoke-direct {v3, v2, v4, v11}, LkNg;-><init>(ILcom/snapchat/client/mdp_common/MediaType;LDbd;)V
+
     .line 219
     .line 220
-    :cond_3
-    new-instance v2, Lgsg;
-
     .line 221
-    .line 222
-    sget-object v3, LfE1;->n0:LfE1;
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
+    .line 222
     .line 223
     .line 224
-    iget-object v3, v3, LcSa;->a:Lin0;
+    :cond_3
+    new-instance v2, LlNg;
 
     .line 225
     .line 226
-    iget-object v3, v3, Lin0;->t:Lbwh;
+    sget-object v3, LvH1;->n0:LvH1;
 
     .line 227
     .line 228
-    new-instance v4, LNrg;
+    iget-object v3, v3, LL4b;->a:LAp0;
 
     .line 229
     .line 230
-    sget-object v5, LExd;->c:LExd;
+    iget-object v3, v3, LAp0;->X:LcUh;
 
     .line 231
     .line 232
-    sget-object v6, LbV3;->l0:LbV3;
+    new-instance v4, LTMg;
 
     .line 233
     .line 234
-    invoke-direct {v4, v5, v6}, LNrg;-><init>(LExd;LbV3;)V
+    sget-object v5, LOOd;->c:LOOd;
 
     .line 235
     .line 236
+    sget-object v6, LvZ3;->l0:LvZ3;
+
     .line 237
-    const-string v5, "chatMedia"
-
     .line 238
-    .line 239
-    invoke-direct {v2, v3, v5, v1, v4}, Lgsg;-><init>(LQ1j;Ljava/lang/String;Ljava/util/List;LNrg;)V
+    invoke-direct {v4, v5, v6}, LTMg;-><init>(LOOd;LvZ3;)V
 
+    .line 239
     .line 240
     .line 241
-    .line 242
-    invoke-virtual {v10, v2}, Lesg;->d(LOrg;)V
+    const-string v5, "chatMedia"
 
+    .line 242
     .line 243
+    invoke-direct {v2, v3, v5, v1, v4}, LlNg;-><init>(Lcrj;Ljava/lang/String;Ljava/util/List;LTMg;)V
+
     .line 244
     .line 245
-    invoke-virtual {v10}, Lesg;->c()V
-
     .line 246
+    invoke-virtual {v10, v2}, LSff;->d(LUMg;)V
+
     .line 247
     .line 248
-    invoke-virtual {v0, v7}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->d(Landroid/view/View;)V
-
     .line 249
+    invoke-virtual {v10}, LSff;->c()V
+
     .line 250
     .line 251
-    invoke-virtual {v0, v9}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->k(Landroid/view/View;)V
-
     .line 252
+    invoke-virtual {v0, v7}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->d(Landroid/view/View;)V
+
     .line 253
     .line 254
+    .line 255
+    invoke-virtual {v0, v9}, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->k(Landroid/view/View;)V
+
+    .line 256
+    .line 257
+    .line 258
     return-void
 .end method
 
@@ -1402,7 +1415,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:Lqij;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:LsXj;
 
     .line 2
     .line 3
@@ -1413,7 +1426,7 @@
 
     .line 5
     .line 6
-    iget-object v0, v0, Lqij;->b:Ljava/lang/Object;
+    iget-object v0, v0, LsXj;->b:Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -1443,7 +1456,7 @@
     .line 17
     .line 18
     :goto_1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:Lqij;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:LsXj;
 
     .line 19
     .line 20
@@ -1451,7 +1464,7 @@
 
     .line 21
     .line 22
-    iget-object v0, v0, Lqij;->b:Ljava/lang/Object;
+    iget-object v0, v0, LsXj;->b:Ljava/lang/Object;
 
     .line 23
     .line 24
@@ -1481,7 +1494,7 @@
     .line 33
     .line 34
     :goto_3
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:Lqij;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:LsXj;
 
     .line 35
     .line 36
@@ -1489,7 +1502,7 @@
 
     .line 37
     .line 38
-    iget-object v0, v0, Lqij;->c:Ljava/lang/Object;
+    iget-object v0, v0, LsXj;->c:Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -1519,7 +1532,7 @@
     .line 49
     .line 50
     :goto_5
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:Lqij;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:LsXj;
 
     .line 51
     .line 52
@@ -1527,7 +1540,7 @@
 
     .line 53
     .line 54
-    iget-object v0, v0, Lqij;->c:Ljava/lang/Object;
+    iget-object v0, v0, LsXj;->c:Ljava/lang/Object;
 
     .line 55
     .line 56
@@ -1557,7 +1570,7 @@
     .line 65
     .line 66
     :goto_7
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LbBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LGCj;
 
     .line 67
     .line 68
@@ -1565,7 +1578,7 @@
 
     .line 69
     .line 70
-    iget-object v0, v0, LbBj;->b:Ljava/lang/Object;
+    iget-object v0, v0, LGCj;->b:Ljava/lang/Object;
 
     .line 71
     .line 72
@@ -1595,7 +1608,7 @@
     .line 81
     .line 82
     :goto_9
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LbBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LGCj;
 
     .line 83
     .line 84
@@ -1603,7 +1616,7 @@
 
     .line 85
     .line 86
-    iget-object v0, v0, LbBj;->b:Ljava/lang/Object;
+    iget-object v0, v0, LGCj;->b:Ljava/lang/Object;
 
     .line 87
     .line 88
@@ -1633,7 +1646,7 @@
     .line 97
     .line 98
     :goto_b
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LbBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LGCj;
 
     .line 99
     .line 100
@@ -1641,7 +1654,7 @@
 
     .line 101
     .line 102
-    iget-object v0, v0, LbBj;->c:Ljava/lang/Object;
+    iget-object v0, v0, LGCj;->c:Ljava/lang/Object;
 
     .line 103
     .line 104
@@ -1671,7 +1684,7 @@
     .line 113
     .line 114
     :goto_d
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LbBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LGCj;
 
     .line 115
     .line 116
@@ -1679,7 +1692,7 @@
 
     .line 117
     .line 118
-    iget-object v0, v0, LbBj;->c:Ljava/lang/Object;
+    iget-object v0, v0, LGCj;->c:Ljava/lang/Object;
 
     .line 119
     .line 120
@@ -1743,11 +1756,11 @@
     .line 7
     .line 8
     :goto_0
-    new-instance v1, LfIj;
+    new-instance v1, LD7k;
 
     .line 9
     .line 10
-    invoke-direct {v1}, LfIj;-><init>()V
+    invoke-direct {v1}, LD7k;-><init>()V
 
     .line 11
     .line 12
@@ -1784,7 +1797,7 @@
 
     .line 28
     .line 29
-    iget-object v2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->o0:LuSg;
+    iget-object v2, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->o0:Lmeh;
 
     .line 30
     .line 31
@@ -1795,7 +1808,7 @@
     const/4 v3, 0x1
 
     .line 34
-    iget-boolean v2, v2, LuSg;->b:Z
+    iget-boolean v2, v2, Lmeh;->b:Z
 
     .line 35
     .line 36
@@ -1831,7 +1844,7 @@
 
     .line 51
     .line 52
-    invoke-virtual {v1, v3, v4, v0}, LfIj;->g(IIZ)V
+    invoke-virtual {v1, v3, v4, v0}, LD7k;->g(IIZ)V
 
     .line 53
     .line 54
@@ -1863,7 +1876,7 @@
 
     .line 65
     .line 66
-    invoke-static {v1, p2}, Lgad;->i(LfIj;Lcom/snap/imageloading/view/SnapImageView;)V
+    invoke-static {v1, p2}, LXBd;->g(LD7k;Lcom/snap/imageloading/view/SnapImageView;)V
 
     .line 67
     .line 68
@@ -1873,19 +1886,19 @@
 
     .line 70
     .line 71
-    sget-object v0, LZF2;->Z:LZF2;
+    sget-object v0, LvH1;->n0:LvH1;
 
     .line 72
     .line 73
-    invoke-virtual {v0}, LZF2;->g()Lbwh;
+    iget-object v0, v0, LL4b;->a:LAp0;
 
     .line 74
     .line 75
-    .line 76
-    move-result-object v0
+    iget-object v0, v0, LAp0;->X:LcUh;
 
+    .line 76
     .line 77
-    invoke-virtual {p2, p1, v0}, Lcom/snap/imageloading/view/SnapImageView;->h(Landroid/net/Uri;LQ1j;)V
+    invoke-virtual {p2, p1, v0}, Lcom/snap/imageloading/view/SnapImageView;->g(Landroid/net/Uri;Lcrj;)V
 
     .line 78
     .line 79
@@ -1898,7 +1911,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:Lqij;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->n0:LsXj;
 
     .line 2
     .line 3
@@ -1906,11 +1919,11 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->f0:LlI9;
+    iget-object v1, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->f0:LHT9;
 
     .line 6
     .line 7
-    invoke-virtual {v1}, LlI9;->a()Landroid/view/View;
+    invoke-virtual {v1}, LHT9;->a()Landroid/view/View;
 
     .line 8
     .line 9
@@ -1931,7 +1944,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v1}, LlI9;->a()Landroid/view/View;
+    invoke-virtual {v1}, LHT9;->a()Landroid/view/View;
 
     .line 19
     .line 20
@@ -1951,7 +1964,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, v0, Lqij;->b:Ljava/lang/Object;
+    iget-object v1, v0, LsXj;->b:Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -1969,7 +1982,7 @@
     .line 36
     .line 37
     .line 38
-    iget-object v0, v0, Lqij;->c:Ljava/lang/Object;
+    iget-object v0, v0, LsXj;->c:Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -2009,7 +2022,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t0:LZAj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t0:Lq0k;
 
     .line 2
     .line 3
@@ -2017,7 +2030,7 @@
 
     .line 4
     .line 5
-    iget-object v0, v0, LZAj;->n:LlAd;
+    iget-object v0, v0, Lq0k;->n:LDRd;
 
     .line 6
     .line 7
@@ -2027,7 +2040,7 @@
     .line 9
     .line 10
     :cond_0
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t0:LZAj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t0:Lq0k;
 
     .line 11
     .line 12
@@ -2035,7 +2048,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {v0}, LZAj;->e()V
+    invoke-virtual {v0}, Lq0k;->e()V
 
     .line 15
     .line 16
@@ -2044,7 +2057,7 @@
     const/4 v0, 0x0
 
     .line 18
-    iput-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t0:LZAj;
+    iput-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t0:Lq0k;
 
     .line 19
     .line 20
@@ -2052,7 +2065,7 @@
 
     .line 21
     .line 22
-    iput-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->o0:LuSg;
+    iput-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->o0:Lmeh;
 
     .line 23
     .line 24
@@ -2069,23 +2082,23 @@
     .line 29
     .line 30
     .line 31
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c:LlI9;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->c:LHT9;
 
     .line 32
     .line 33
     const/4 v1, 0x4
 
     .line 34
-    invoke-virtual {v0, v1}, LlI9;->e(I)V
+    invoke-virtual {v0, v1}, LHT9;->e(I)V
 
     .line 35
     .line 36
     .line 37
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t:LlI9;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->t:LHT9;
 
     .line 38
     .line 39
-    invoke-virtual {v0, v1}, LlI9;->e(I)V
+    invoke-virtual {v0, v1}, LHT9;->e(I)V
 
     .line 40
     .line 41
@@ -2100,7 +2113,7 @@
     .line 46
     .line 47
     .line 48
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:LaBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:Lr0k;
 
     .line 49
     .line 50
@@ -2108,20 +2121,20 @@
 
     .line 51
     .line 52
-    iget-object v1, v0, LaBj;->a:LLrg;
+    iget-object v1, v0, Lr0k;->a:LRMg;
 
     .line 53
     .line 54
-    check-cast v1, Lesg;
+    check-cast v1, LSff;
 
     .line 55
     .line 56
-    invoke-virtual {v1}, Lesg;->f()V
+    invoke-virtual {v1}, LSff;->f()V
 
     .line 57
     .line 58
     .line 59
-    iget-object v1, v0, LaBj;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, Lr0k;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 60
     .line 61
@@ -2130,7 +2143,7 @@
     .line 62
     .line 63
     .line 64
-    iget-object v0, v0, LaBj;->b:Landroid/widget/FrameLayout;
+    iget-object v0, v0, Lr0k;->b:Landroid/widget/FrameLayout;
 
     .line 65
     .line 66
@@ -2167,7 +2180,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LbBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LGCj;
 
     .line 2
     .line 3
@@ -2175,11 +2188,11 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->e0:LlI9;
+    iget-object v1, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->e0:LHT9;
 
     .line 6
     .line 7
-    invoke-virtual {v1}, LlI9;->a()Landroid/view/View;
+    invoke-virtual {v1}, LHT9;->a()Landroid/view/View;
 
     .line 8
     .line 9
@@ -2200,7 +2213,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v1}, LlI9;->a()Landroid/view/View;
+    invoke-virtual {v1}, LHT9;->a()Landroid/view/View;
 
     .line 19
     .line 20
@@ -2220,7 +2233,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, v0, LbBj;->b:Ljava/lang/Object;
+    iget-object v1, v0, LGCj;->b:Ljava/lang/Object;
 
     .line 29
     .line 30
@@ -2228,14 +2241,14 @@
 
     .line 31
     .line 32
-    iget-object v2, v1, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LkEj;
+    iget-object v2, v1, Lcom/snap/opera/shared/view/TextureVideoViewPlayer;->e0:LC3k;
 
     .line 33
     .line 34
     const/4 v4, 0x0
 
     .line 35
-    iput-object v4, v2, LkEj;->h0:LDpb;
+    iput-object v4, v2, LC3k;->h0:LgDb;
 
     .line 36
     .line 37
@@ -2244,7 +2257,7 @@
     .line 38
     .line 39
     .line 40
-    iget-object v0, v0, LbBj;->c:Ljava/lang/Object;
+    iget-object v0, v0, LGCj;->c:Ljava/lang/Object;
 
     .line 41
     .line 42
@@ -2379,7 +2392,7 @@
 
     .line 44
     :cond_2
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LbBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LGCj;
 
     .line 45
     .line 46
@@ -2387,7 +2400,7 @@
 
     .line 47
     .line 48
-    iget-object v0, v0, LbBj;->b:Ljava/lang/Object;
+    iget-object v0, v0, LGCj;->b:Ljava/lang/Object;
 
     .line 49
     .line 50
@@ -2405,7 +2418,7 @@
     .line 56
     .line 57
     :cond_3
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:LaBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:Lr0k;
 
     .line 58
     .line 59
@@ -2413,7 +2426,7 @@
 
     .line 60
     .line 61
-    iget-object v0, v0, LaBj;->a:LLrg;
+    iget-object v0, v0, Lr0k;->a:LRMg;
 
     .line 62
     .line 63
@@ -2421,11 +2434,11 @@
 
     .line 64
     .line 65
-    check-cast v0, Lesg;
+    check-cast v0, LSff;
 
     .line 66
     .line 67
-    invoke-virtual {v0}, Lesg;->c()V
+    invoke-virtual {v0}, LSff;->c()V
 
     .line 68
     .line 69
@@ -2435,7 +2448,7 @@
     .line 71
     :cond_4
     :goto_1
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LbBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->l0:LGCj;
 
     .line 72
     .line 73
@@ -2443,7 +2456,7 @@
 
     .line 74
     .line 75
-    iget-object v0, v0, LbBj;->b:Ljava/lang/Object;
+    iget-object v0, v0, LGCj;->b:Ljava/lang/Object;
 
     .line 76
     .line 77
@@ -2461,7 +2474,7 @@
     .line 83
     .line 84
     :cond_5
-    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:LaBj;
+    iget-object v0, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->m0:Lr0k;
 
     .line 85
     .line 86
@@ -2469,7 +2482,7 @@
 
     .line 87
     .line 88
-    iget-object v0, v0, LaBj;->a:LLrg;
+    iget-object v0, v0, Lr0k;->a:LRMg;
 
     .line 89
     .line 90
@@ -2477,11 +2490,11 @@
 
     .line 91
     .line 92
-    check-cast v0, Lesg;
+    check-cast v0, LSff;
 
     .line 93
     .line 94
-    invoke-virtual {v0}, Lesg;->b()V
+    invoke-virtual {v0}, LSff;->b()V
 
     .line 95
     .line 96
@@ -2518,7 +2531,7 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->o0:LuSg;
+    iget-object v1, p0, Lcom/snap/messaging/chat/ui/view/VideoCapableThumbnailView;->o0:Lmeh;
 
     .line 14
     .line 15
@@ -2537,7 +2550,7 @@
     const/4 v2, 0x1
 
     .line 22
-    iget-boolean v1, v1, LuSg;->b:Z
+    iget-boolean v1, v1, Lmeh;->b:Z
 
     .line 23
     .line 24

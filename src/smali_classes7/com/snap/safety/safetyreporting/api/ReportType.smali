@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'User\':\'USER\',\'Lens\':\'LENS\',\'SpotlightSnap\':\'SPOTLIGHT_SNAP\',\'CustomStory\':\'CUSTOM_STORY\',\'MyStory\':\'MY_STORY\',\'PublicUserStory\':\'PUBLIC_USER_STORY\',\'PublisherStoryTile\':\'PUBLISHER_STORY_TILE\',\'OfficialUserStoryTile\':\'OFFICIAL_USER_STORY_TILE\',\'NonPartnerStoryTile\':\'NON_PARTNER_STORY_TILE\',\'MapStory\':\'MAP_STORY\',\'SavedStorySnap\':\'SAVED_STORY_SNAP\',\'SavedStoryTile\':\'SAVED_STORY_TILE\',\'TopicStory\':\'TOPIC_STORY\',\'SpotlightReply\':\'SPOTLIGHT_REPLY\',\'PublisherStory\':\'PUBLISHER_STORY\',\'PrivateSnap\':\'PRIVATE_SNAP\',\'ChatMedia\':\'CHAT_MEDIA\',\'ChatMessage\':\'CHAT_MESSAGE\',\'ChatWallpaper\':\'CHAT_WALLPAPER\',\'ProfileBackground\':\'PROFILE_BACKGROUND\',\'MediaShare\':\'MEDIA_SHARE\',\'StoryComment\':\'STORY_COMMENT\',\'BitmojiOutfit\':\'BITMOJI_OUTFIT\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/send_to_ranking/Subject;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'subjectId\':s,\'features\':m<s,u>"
     typeReferences = {}
@@ -61,7 +61,18 @@
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
+.method public final a()Ljava/util/Map;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/modules/send_to_ranking/Subject;->_features:Ljava/util/Map;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
     .locals 1
 
     .line 1

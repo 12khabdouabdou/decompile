@@ -1,49 +1,30 @@
-.class public final LxI2;
-.super Lcom/snap/composer/utils/b;
+.class public interface abstract LxI2;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Lcom/snap/composer/utils/ComposerMarshallable;
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    schema = "\'mediaThumbnails\':a<s>"
+    proxyClass = LyI2;
+    schema = "\'isCurrentUserNonFriendMessagingEligible\':f|m|(f(b@))"
     typeReferences = {}
 .end annotation
 
 
-# instance fields
-.field private _mediaThumbnails:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
+# virtual methods
+.method public abstract isCurrentUserNonFriendMessagingEligible(Lkotlin/jvm/functions/Function1;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
         }
     .end annotation
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LxI2;->_mediaThumbnails:Ljava/util/List;
-
-    .line 5
-    .line 6
-    return-void
+.method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
 .end method

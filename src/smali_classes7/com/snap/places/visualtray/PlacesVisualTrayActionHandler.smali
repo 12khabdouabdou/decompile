@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lgud;
+    proxyClass = LQKd;
     schema = "\'handleResultsTrayOpen\':f?|m|(r:\'[0]\', r<e>:\'[1]\', d@?),\'handlePlaceTap\':f?|m|(r:\'[2]\', r?<e>:\'[3]\'),\'handleVisualPlaceTap\':f?|m|(r:\'[4]\', r?<e>:\'[3]\'),\'handleEditSearch\':f?|m|(s),\'handleCloseTray\':f?|m|(),\'handleOpenHtmlDebug\':f?|m|(),\'handlePlacePivotTap\':f?|m|(r:\'[0]\', d@?),\'handlePlaceLongPress\':f?|m|(r:\'[4]\', a?<r:\'[0]\'>, r?:\'[0]\'),\'handleDismissKeyboard\':f?|m|(),\'handleFriendTap\':f?|m|(r:\'[5]\'),\'handleFriendsTap\':f?|m|(a<r:\'[6]\'>),\'handleFriendFavoritesPivotTap\':f?|m|(a<r:\'[6]\'>)"
     typeReferences = {
         Lcom/snap/placediscovery/PlacePivot;,
@@ -25,24 +25,21 @@
 
 # virtual methods
 .method public abstract handleCloseTray()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleDismissKeyboard()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleEditSearch(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleFriendFavoritesPivotTap(Ljava/util/List;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -50,18 +47,18 @@
             "Lcom/snap/map/takeover/MapItemData;",
             ">;)V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleFriendTap(Lcom/snap/places/FriendData;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleFriendsTap(Ljava/util/List;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -70,17 +67,17 @@
             ">;)V"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract handleOpenHtmlDebug()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handlePlaceLongPress(Lcom/snap/places/visualtray/VisualTrayPlace;Ljava/util/List;Lcom/snap/placediscovery/PlacePivot;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -92,25 +89,28 @@
             ")V"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract handlePlacePivotTap(Lcom/snap/placediscovery/PlacePivot;Ljava/lang/Double;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handlePlaceTap(Lcom/snap/placediscovery/PlaceDiscoveryModel;Lcom/snap/placediscovery/PlacesSourceType;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleResultsTrayOpen(Lcom/snap/placediscovery/PlacePivot;Lcom/snap/placediscovery/PlaceFilterType;Ljava/lang/Double;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract handleVisualPlaceTap(Lcom/snap/places/visualtray/VisualTrayPlace;Lcom/snap/placediscovery/PlacesSourceType;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

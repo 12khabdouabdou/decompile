@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LEFe;
+.implements LqXe;
 
 
 # instance fields
@@ -15,7 +15,7 @@
 
 .field public final D0:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
-.field public x0:LtFe;
+.field public x0:LfXe;
 
 .field public y0:Lcom/snap/ui/view/SnapFontTextView;
 
@@ -63,52 +63,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Lcom/snap/identity/accountrecovery/ui/pages/challenge/RecoveryUsernameChallengeFragment;->x0:LtFe;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p1, p0}, LtFe;->Q2(LEFe;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :cond_0
-    const-string p1, "presenter"
-
-    .line 13
-    .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 15
-    .line 16
-    .line 17
-    const/4 p1, 0x0
-
-    .line 18
-    throw p1
-.end method
-
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/challenge/RecoveryUsernameChallengeFragment;->x0:LtFe;
+    iget-object v0, p0, Lcom/snap/identity/accountrecovery/ui/pages/challenge/RecoveryUsernameChallengeFragment;->x0:LfXe;
 
     .line 2
     .line 3
@@ -116,7 +75,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LtFe;->C1()V
+    invoke-virtual {v0}, LfXe;->D1()V
 
     .line 6
     .line 7
@@ -129,7 +88,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -140,7 +99,7 @@
     throw v0
 .end method
 
-.method public final F1()V
+.method public final D1()V
     .locals 2
 
     .line 1
@@ -155,7 +114,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {v0, v1}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v1}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 7
     .line 8
@@ -181,7 +140,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 20
     .line 21
@@ -194,7 +153,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 26
     .line 27
@@ -202,7 +161,7 @@
     throw v1
 .end method
 
-.method public final G1()V
+.method public final E1()V
     .locals 1
 
     .line 1
@@ -219,7 +178,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {v0}, LgRg;->t()V
+    invoke-virtual {v0}, Ljdh;->t()V
 
     .line 9
     .line 10
@@ -232,7 +191,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -243,11 +202,11 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0295
+    const p3, 0x7f0e02ac
 
     .line 2
     .line 3
@@ -266,11 +225,11 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
-    const p2, 0x7f0b123f
+    const p2, 0x7f0b136b
 
     .line 2
     .line 3
@@ -291,7 +250,7 @@
 
     .line 11
     .line 12
-    const p2, 0x7f0b123d
+    const p2, 0x7f0b1369
 
     .line 13
     .line 14
@@ -312,12 +271,12 @@
 
     .line 22
     .line 23
-    invoke-virtual {p2}, LgRg;->o()V
+    invoke-virtual {p2}, Ljdh;->o()V
 
     .line 24
     .line 25
     .line 26
-    const p2, 0x7f0b123b
+    const p2, 0x7f0b1367
 
     .line 27
     .line 28
@@ -338,7 +297,7 @@
 
     .line 36
     .line 37
-    const p2, 0x7f0b123c
+    const p2, 0x7f0b1368
 
     .line 38
     .line 39
@@ -370,11 +329,11 @@
     return-void
 .end method
 
-.method public final U1()LZ8d;
+.method public final U1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->T1:LZ8d;
+    sget-object v0, Lsod;->U1:Lsod;
 
     .line 2
     .line 3
@@ -396,20 +355,20 @@
 
     .line 5
     .line 6
-    new-instance v2, LvCe;
+    new-instance v2, LMIe;
 
     .line 7
     .line 8
-    const/16 v3, 0x8
+    const/16 v3, 0x12
 
     .line 9
     .line 10
-    invoke-direct {v2, v3, p0}, LvCe;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, LMIe;-><init>(ILjava/lang/Object;)V
 
     .line 11
     .line 12
     .line 13
-    invoke-virtual {v0, v2}, LgRg;->q(Lkotlin/jvm/functions/Function1;)V
+    invoke-virtual {v0, v2}, Ljdh;->q(Lkotlin/jvm/functions/Function1;)V
 
     .line 14
     .line 15
@@ -422,15 +381,15 @@
 
     .line 19
     .line 20
-    new-instance v1, LZ3d;
+    new-instance v1, LSre;
 
     .line 21
     .line 22
-    const/16 v2, 0x1d
+    const/16 v2, 0x8
 
     .line 23
     .line 24
-    invoke-direct {v1, v2, p0}, LZ3d;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, p0}, LSre;-><init>(ILjava/lang/Object;)V
 
     .line 25
     .line 26
@@ -448,7 +407,7 @@
 
     .line 32
     .line 33
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 34
     .line 35
@@ -461,7 +420,7 @@
 
     .line 38
     .line 39
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -469,14 +428,55 @@
     throw v1
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
     return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lcom/snap/identity/accountrecovery/ui/pages/challenge/RecoveryUsernameChallengeFragment;->x0:LfXe;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, p0}, LfXe;->c3(LqXe;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+
+    .line 12
+    :cond_0
+    const-string p1, "presenter"
+
+    .line 13
+    .line 14
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 p1, 0x0
+
+    .line 18
+    throw p1
 .end method

@@ -19,7 +19,7 @@
 
 .field public final c:Ljava/lang/String;
 
-.field public final d:LV83;
+.field public final d:Lsb3;
 
 .field public final e:I
 
@@ -29,14 +29,14 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;LV83;I[BJ)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lsb3;I[BJ)V
     .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, p6, p7, v0}, Lcom/snap/scan/core/SnapScanResult;-><init>(JLHr5;)V
+    invoke-direct {p0, p6, p7, v0}, Lcom/snap/scan/core/SnapScanResult;-><init>(JLex5;)V
 
     .line 3
     .line 4
@@ -49,7 +49,7 @@
 
     .line 8
     .line 9
-    iput-object p3, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iput-object p3, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 10
     .line 11
@@ -68,7 +68,7 @@
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/scan/core/SnapScanResult$Success;Ljava/lang/String;Ljava/lang/String;LV83;I[BJILjava/lang/Object;)Lcom/snap/scan/core/SnapScanResult$Success;
+.method public static synthetic copy$default(Lcom/snap/scan/core/SnapScanResult$Success;Ljava/lang/String;Ljava/lang/String;Lsb3;I[BJILjava/lang/Object;)Lcom/snap/scan/core/SnapScanResult$Success;
     .locals 0
 
     .line 1
@@ -106,7 +106,7 @@
 
     .line 16
     .line 17
-    iget-object p3, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iget-object p3, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 18
     .line 19
@@ -171,7 +171,7 @@
     move-object p3, p1
 
     .line 44
-    invoke-virtual/range {p2 .. p9}, Lcom/snap/scan/core/SnapScanResult$Success;->copy(Ljava/lang/String;Ljava/lang/String;LV83;I[BJ)Lcom/snap/scan/core/SnapScanResult$Success;
+    invoke-virtual/range {p2 .. p9}, Lcom/snap/scan/core/SnapScanResult$Success;->copy(Ljava/lang/String;Ljava/lang/String;Lsb3;I[BJ)Lcom/snap/scan/core/SnapScanResult$Success;
 
     .line 45
     .line 46
@@ -200,11 +200,11 @@
     return-object v0
 .end method
 
-.method public final component3()LV83;
+.method public final component3()Lsb3;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iget-object v0, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 2
     .line 3
@@ -235,7 +235,7 @@
     return-wide v0
 .end method
 
-.method public final copy(Ljava/lang/String;Ljava/lang/String;LV83;I[BJ)Lcom/snap/scan/core/SnapScanResult$Success;
+.method public final copy(Ljava/lang/String;Ljava/lang/String;Lsb3;I[BJ)Lcom/snap/scan/core/SnapScanResult$Success;
     .locals 8
 
     .line 1
@@ -261,7 +261,7 @@
     move-wide v6, p6
 
     .line 9
-    invoke-direct/range {v0 .. v7}, Lcom/snap/scan/core/SnapScanResult$Success;-><init>(Ljava/lang/String;Ljava/lang/String;LV83;I[BJ)V
+    invoke-direct/range {v0 .. v7}, Lcom/snap/scan/core/SnapScanResult$Success;-><init>(Ljava/lang/String;Ljava/lang/String;Lsb3;I[BJ)V
 
     .line 10
     .line 11
@@ -293,7 +293,7 @@
 
     .line 10
     .line 11
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 12
     .line 13
@@ -305,11 +305,11 @@
 
     .line 16
     .line 17
-    iget-object v0, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iget-object v0, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 18
     .line 19
-    iget-object v1, p1, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iget-object v1, p1, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 20
     .line 21
@@ -386,11 +386,11 @@
     return p1
 .end method
 
-.method public final getCodeType()LV83;
+.method public final getCodeType()Lsb3;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iget-object v0, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 2
     .line 3
@@ -480,7 +480,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 14
     .line 15
@@ -488,7 +488,7 @@
     move-result v0
 
     .line 17
-    iget-object v2, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iget-object v2, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 18
     .line 19
@@ -522,7 +522,7 @@
 
     .line 32
     .line 33
-    invoke-static {v2, v1, v0}, LNde;->c(II[B)I
+    invoke-static {v2, v1, v0}, LmBe;->d(II[B)I
 
     .line 34
     .line 35
@@ -619,7 +619,7 @@
     .line 32
     .line 33
     .line 34
-    iget-object v2, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:LV83;
+    iget-object v2, p0, Lcom/snap/scan/core/SnapScanResult$Success;->d:Lsb3;
 
     .line 35
     .line 36
@@ -649,7 +649,7 @@
 
     .line 49
     .line 50
-    invoke-static {v1, v2, v3, v0, v4}, LmG8;->w(Ljava/lang/StringBuilder;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2, v3, v0, v4}, LBv7;->w(Ljava/lang/StringBuilder;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 51
     .line 52
@@ -662,7 +662,7 @@
 
     .line 56
     .line 57
-    invoke-static {v1, v2, v3, v0}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v3, v0}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 58
     .line 59

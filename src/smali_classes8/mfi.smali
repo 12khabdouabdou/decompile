@@ -1,328 +1,112 @@
-.class public final Lmfi;
-.super Lo17;
+.class public abstract synthetic Lmfi;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:I
-
-.field public b:Ljava/lang/String;
-
-.field public c:I
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-static {}, LH48$b;->values()[LH48$b;
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    move-result-object v0
 
     .line 5
-    iput v0, p0, Lmfi;->a:I
+    array-length v0, v0
 
     .line 6
-    .line 7
-    const-string v1, ""
+    new-array v0, v0, [I
 
+    .line 7
     .line 8
+    const/4 v1, 0x1
+
     .line 9
-    iput-object v1, p0, Lmfi;->b:Ljava/lang/String;
+    :try_start_0
+    sget-object v2, LH48$b;->b:LH48$b;
 
     .line 10
     .line 11
-    iput v0, p0, Lmfi;->c:I
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
     .line 12
     .line 13
-    const/4 v0, 0x0
-
     .line 14
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    move-result v2
 
     .line 15
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 16
-    const/4 v0, -0x1
-
     .line 17
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 18
-    .line 19
-    return-void
-.end method
-
-
-# virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
-
-    .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    iget v1, p0, Lmfi;->a:I
-
-    .line 6
-    .line 7
-    const/4 v2, 0x1
-
-    .line 8
-    and-int/2addr v1, v2
-
-    .line 9
-    if-eqz v1, :cond_0
-
-    .line 10
-    .line 11
-    iget-object v1, p0, Lmfi;->b:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-static {v2, v1}, Lsa3;->q(ILjava/lang/String;)I
-
-    .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    add-int/2addr v0, v1
-
-    .line 18
-    :cond_0
-    iget v1, p0, Lmfi;->a:I
-
-    .line 19
-    .line 20
+    :catch_0
     const/4 v2, 0x2
 
-    .line 21
-    and-int/2addr v1, v2
-
-    .line 22
-    if-eqz v1, :cond_1
-
-    .line 23
-    .line 24
-    iget v1, p0, Lmfi;->c:I
-
-    .line 25
-    .line 26
-    invoke-static {v2, v1}, Lsa3;->i(II)I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result v1
-
-    .line 30
-    add-int/2addr v1, v0
-
-    .line 31
-    return v1
-
-    .line 32
-    :cond_1
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 3
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_4
-
-    .line 6
-    .line 7
-    const/16 v1, 0xa
-
-    .line 8
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    if-eq v0, v1, :cond_3
-
-    .line 11
-    .line 12
-    const/16 v1, 0x10
-
-    .line 13
-    .line 14
-    if-eq v0, v1, :cond_1
-
-    .line 15
-    .line 16
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 17
     .line 18
-    .line 19
-    move-result v0
+    :try_start_1
+    sget-object v3, LH48$b;->c:LH48$b;
 
+    .line 19
     .line 20
-    if-nez v0, :cond_0
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
     .line 21
     .line 22
-    goto :goto_1
-
     .line 23
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->q()I
+    move-result v3
 
     .line 24
+    aput v2, v0, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
     .line 25
     .line 26
-    move-result v0
+    :catch_1
+    sput-object v0, Lmfi;->a:[I
 
     .line 27
-    const/4 v1, 0x2
-
     .line 28
-    if-eqz v0, :cond_2
+    invoke-static {}, LXkd;->values()[LXkd;
 
     .line 29
     .line 30
-    if-eq v0, v2, :cond_2
-
     .line 31
+    move-result-object v0
+
     .line 32
-    if-eq v0, v1, :cond_2
+    array-length v0, v0
 
     .line 33
-    .line 34
-    goto :goto_0
+    new-array v0, v0, [I
 
+    .line 34
     .line 35
-    :cond_2
-    iput v0, p0, Lmfi;->c:I
+    :try_start_2
+    aput v1, v0, v2
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 36
     .line 37
-    iget v0, p0, Lmfi;->a:I
+    :catch_2
+    :try_start_3
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 38
     .line 39
-    or-int/2addr v0, v1
-
-    .line 40
-    iput v0, p0, Lmfi;->a:I
-
-    .line 41
-    .line 42
-    goto :goto_0
-
-    .line 43
-    :cond_3
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    iput-object v0, p0, Lmfi;->b:Ljava/lang/String;
-
-    .line 48
-    .line 49
-    iget v0, p0, Lmfi;->a:I
-
-    .line 50
-    .line 51
-    or-int/2addr v0, v2
-
-    .line 52
-    iput v0, p0, Lmfi;->a:I
-
-    .line 53
-    .line 54
-    goto :goto_0
-
-    .line 55
-    :cond_4
-    :goto_1
-    return-object p0
-.end method
-
-.method public final writeTo(Lsa3;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lmfi;->a:I
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    and-int/2addr v0, v1
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget-object v0, p0, Lmfi;->b:Ljava/lang/String;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->R(ILjava/lang/String;)V
-
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    iget v0, p0, Lmfi;->a:I
-
-    .line 13
-    .line 14
-    const/4 v1, 0x2
-
-    .line 15
-    and-int/2addr v0, v1
-
-    .line 16
-    if-eqz v0, :cond_1
-
-    .line 17
-    .line 18
-    iget v0, p0, Lmfi;->c:I
-
-    .line 19
-    .line 20
-    invoke-virtual {p1, v1, v0}, Lsa3;->I(II)V
-
-    .line 21
-    .line 22
-    .line 23
-    :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
-
-    .line 24
-    .line 25
-    .line 26
+    :catch_3
     return-void
 .end method

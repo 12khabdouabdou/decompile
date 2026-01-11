@@ -1,10 +1,10 @@
 .class public final Lcom/snap/talkcore/Lens;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'lensId\':s,\'carouselType\':r<e>:\'[0]\',\'isSharedLens\':b"
     typeReferences = {

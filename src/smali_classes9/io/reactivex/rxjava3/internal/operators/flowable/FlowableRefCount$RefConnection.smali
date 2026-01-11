@@ -98,7 +98,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->L()V
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/flowables/ConnectableFlowable;->K()V
 
     .line 18
     .line 19
@@ -138,7 +138,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount;->J(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
+    invoke-virtual {v0, p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount;->I(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableRefCount$RefConnection;)V
 
     .line 4
     .line 5

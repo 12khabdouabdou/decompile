@@ -1,29 +1,55 @@
-.class public final Lasi;
+.class public abstract Lasi;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:Lasi;
+.field public static final a:Ljava/util/Set;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .line 1
-    new-instance v0, Lasi;
+    const-string v0, ".m3u8"
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const-string v1, ".mpd"
 
     .line 4
     .line 5
-    .line 6
-    sput-object v0, Lasi;->a:Lasi;
+    filled-new-array {v0, v1}, [Ljava/lang/String;
 
+    .line 6
     .line 7
     .line 8
+    move-result-object v0
+
+    .line 9
+    invoke-static {v0}, LN90;->P0([Ljava/lang/Object;)Ljava/util/Set;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    sput-object v0, Lasi;->a:Ljava/util/Set;
+
+    .line 14
+    .line 15
     return-void
+.end method
+
+.method public static a()Ljava/util/Set;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lasi;->a:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

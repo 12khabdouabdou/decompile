@@ -62,18 +62,7 @@
     return p1
 .end method
 
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/disposables/ListCompositeDisposable;->b:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+.method public final b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
     .locals 1
 
     .line 1
@@ -171,6 +160,17 @@
 
     .line 38
     return p1
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/disposables/ListCompositeDisposable;->b:Z
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public final dispose()V

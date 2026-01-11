@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LwU8;
+    proxyClass = LX19;
     schema = "\'onChallengeReceived\':f|m|(s),\'onChallengeAttempted\':f|m|(s, r?:\'[0]\'),\'onChallengeResult\':f|m|(s, l, l, s?, r?:\'[0]\')"
     typeReferences = {
         Lcom/snap/modules/cos/COSLoggingData;

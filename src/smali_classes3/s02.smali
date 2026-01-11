@@ -2,16 +2,21 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LDY1;
+
 
 # instance fields
-.field public final a:Lnn9;
+.field public final a:Lo84;
 
-.field public final b:LBre;
+.field public final b:LJ62;
+
+.field public c:Z
 
 
 # direct methods
-.method public constructor <init>(Lnn9;)V
-    .locals 1
+.method public constructor <init>(Lo84;LJ62;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -19,137 +24,399 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ls02;->a:Lnn9;
+    iput-object p1, p0, Ls02;->a:Lo84;
 
     .line 5
     .line 6
-    sget-object p1, LtW1;->Z:LtW1;
+    iput-object p2, p0, Ls02;->b:LJ62;
 
     .line 7
     .line 8
-    const-string v0, "CameraMemoriesNotificationBadgeToggler"
+    sget-object p1, LX22;->Z:LX22;
 
     .line 9
     .line 10
-    invoke-static {p1, p1, v0}, LEU0;->f(LtW1;LtW1;Ljava/lang/String;)LWm0;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 11
     .line 12
     .line 13
-    move-result-object p1
+    const-string p1, "CameraFlashCoordinator"
 
     .line 14
-    new-instance v0, LBre;
-
     .line 15
-    .line 16
-    invoke-direct {v0, p1}, LBre;-><init>(LWm0;)V
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 16
     .line 17
     .line 18
-    .line 19
-    iput-object v0, p0, Ls02;->b:LBre;
+    sget-object p1, LJp0;->a:LJp0;
 
+    .line 19
     .line 20
-    .line 21
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/widget/ImageView;Z)Lio/reactivex/rxjava3/disposables/Disposable;
-    .locals 3
+.method public final a(LZ52;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LIs1;
+    return-void
+.end method
+
+.method public final b()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final c()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final d(LZ52;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final e()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final f(LxOf;)V
+    .locals 2
+
+    .line 1
+    invoke-static {p1}, LSpk;->h0(LxOf;)Z
 
     .line 2
     .line 3
-    const/16 v1, 0x9
-
     .line 4
+    move-result p1
+
     .line 5
-    invoke-direct {v0, v1, p0}, LIs1;-><init>(ILjava/lang/Object;)V
+    iget-boolean v0, p0, Ls02;->c:Z
 
     .line 6
     .line 7
+    if-eq v0, p1, :cond_0
+
     .line 8
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
-
     .line 9
-    .line 10
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+    iget-object v0, p0, Ls02;->b:LJ62;
 
+    .line 10
     .line 11
+    iget-object v0, v0, LJ62;->b:LeIf;
+
     .line 12
     .line 13
-    new-instance v0, Lr02;
+    sget-object v1, LeIf;->a:LeIf;
 
     .line 14
     .line 15
-    const/4 v2, 0x0
+    if-eq v0, v1, :cond_0
 
     .line 16
-    invoke-direct {v0, p2, v2}, Lr02;-><init>(ZI)V
+    .line 17
+    invoke-virtual {p0, v1}, Ls02;->k(LeIf;)V
+
+    .line 18
+    .line 19
+    .line 20
+    :cond_0
+    iput-boolean p1, p0, Ls02;->c:Z
+
+    .line 21
+    .line 22
+    return-void
+.end method
+
+.method public final g(Z)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final h(LeIf;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final i(LaZ1;Lujf;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final j()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final k(LeIf;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Ls02;->b:LJ62;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, LJ62;->a:LZ52;
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    if-eqz v1, :cond_0
+
+    .line 7
+    .line 8
+    iget-object v1, v1, LZ52;->a:LaZ1;
+
+    .line 9
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    move-object v1, v2
+
+    .line 12
+    :goto_0
+    sget-object v3, LwQ3;->B0:LP47;
+
+    .line 13
+    .line 14
+    if-eqz v1, :cond_1
+
+    .line 15
+    .line 16
+    invoke-interface {v1, v3}, LaZ1;->a(Lhi2;)Lii2;
 
     .line 17
     .line 18
     .line 19
-    iget-object p2, p0, Ls02;->b:LBre;
+    move-result-object v1
 
     .line 20
-    .line 21
-    invoke-virtual {p2}, LBre;->d()LF06;
+    check-cast v1, LqV1;
 
+    .line 21
     .line 22
+    if-eqz v1, :cond_1
+
     .line 23
     .line 24
-    move-result-object v2
+    iget-object v1, v1, LqV1;->b:LHU1;
 
     .line 25
-    invoke-static {v1, v2, v0}, LzP2;->s0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/core/Observable;
-
     .line 26
+    iget-object v1, v1, LHU1;->u0:LREi;
+
     .line 27
     .line 28
-    move-result-object v0
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 29
-    invoke-virtual {p2}, LBre;->i()Lgn0;
-
     .line 30
     .line 31
+    move-result-object v1
+
     .line 32
-    move-result-object p2
+    check-cast v1, Ljava/util/List;
 
     .line 33
-    invoke-virtual {v0, p2}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 34
+    check-cast v1, Ljava/util/List;
+
     .line 35
     .line 36
-    move-result-object p2
+    if-eqz v1, :cond_1
 
     .line 37
-    new-instance v0, LKi1;
-
     .line 38
+    invoke-static {p1}, LUPe;->H(LeIf;)LjC7;
+
     .line 39
-    const/4 v1, 0x1
-
     .line 40
-    invoke-direct {v0, p1, v1}, LKi1;-><init>(Landroid/widget/ImageView;I)V
-
     .line 41
-    .line 42
-    .line 43
-    invoke-virtual {p2, v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    move-result-object v4
 
+    .line 42
+    invoke-interface {v1, v4}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    .line 43
     .line 44
     .line 45
+    move-result v1
+
     .line 46
-    move-result-object p1
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     .line 47
-    return-object p1
+    .line 48
+    .line 49
+    move-result-object v1
+
+    .line 50
+    goto :goto_1
+
+    .line 51
+    :cond_1
+    move-object v1, v2
+
+    .line 52
+    :goto_1
+    sget-object v4, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 53
+    .line 54
+    invoke-static {v1, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v1
+
+    .line 58
+    if-nez v1, :cond_2
+
+    .line 59
+    .line 60
+    return-void
+
+    .line 61
+    :cond_2
+    iget-object v0, v0, LJ62;->a:LZ52;
+
+    .line 62
+    .line 63
+    if-eqz v0, :cond_3
+
+    .line 64
+    .line 65
+    iget-object v0, v0, LZ52;->a:LaZ1;
+
+    .line 66
+    .line 67
+    goto :goto_2
+
+    .line 68
+    :cond_3
+    move-object v0, v2
+
+    .line 69
+    :goto_2
+    if-eqz v0, :cond_4
+
+    .line 70
+    .line 71
+    invoke-interface {v0, v3}, LaZ1;->a(Lhi2;)Lii2;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v0
+
+    .line 75
+    check-cast v0, LqV1;
+
+    .line 76
+    .line 77
+    if-eqz v0, :cond_4
+
+    .line 78
+    .line 79
+    iget-object v0, v0, LqV1;->f0:LCj1;
+
+    .line 80
+    .line 81
+    if-eqz v0, :cond_4
+
+    .line 82
+    .line 83
+    invoke-static {p1}, LUPe;->K(LeIf;)LxC7;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v1
+
+    .line 87
+    invoke-virtual {v0, v1, v2}, LCj1;->q(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V
+
+    .line 88
+    .line 89
+    .line 90
+    :cond_4
+    iget-object v0, p0, Ls02;->a:Lo84;
+
+    .line 91
+    .line 92
+    iget-object v0, v0, Lo84;->b:Ljava/util/ArrayList;
+
+    .line 93
+    .line 94
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v0
+
+    .line 98
+    :goto_3
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 99
+    .line 100
+    .line 101
+    move-result v1
+
+    .line 102
+    if-eqz v1, :cond_5
+
+    .line 103
+    .line 104
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v1
+
+    .line 108
+    check-cast v1, LDY1;
+
+    .line 109
+    .line 110
+    invoke-interface {v1, p1}, LDY1;->h(LeIf;)V
+
+    .line 111
+    .line 112
+    .line 113
+    goto :goto_3
+
+    .line 114
+    :cond_5
+    return-void
 .end method

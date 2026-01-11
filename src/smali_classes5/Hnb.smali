@@ -2,16 +2,32 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LGnb;
+
 
 # instance fields
-.field public final a:Lzmb;
+.field public final a:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-.field public final b:LrE9;
+.field public final b:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
 
 # direct methods
-.method public constructor <init>(Lzmb;Lkotlin/jvm/functions/Function2;)V
+.method public constructor <init>(Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "LNYi;",
+            ">;>;",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -19,194 +35,87 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LHnb;->a:Lzmb;
+    iput-object p1, p0, LHnb;->a:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 5
     .line 6
-    check-cast p2, LrE9;
+    iput-object p2, p0, LHnb;->b:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 7
     .line 8
-    iput-object p2, p0, LHnb;->b:LrE9;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/net/Uri;Lrwf;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-    .locals 4
+.method public getOnTileDataAdded()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "LNYi;",
+            ">;>;"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    iget-object v0, p0, LHnb;->a:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 2
     .line 3
+    return-object v0
+.end method
+
+.method public getOnTileDataRemoved()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, LHnb;->b:Lcom/snap/composer/bridge_observables/BridgeObservable;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 4
-    move-result-object v0
-
     .line 5
-    const/4 v1, 0x1
-
     .line 6
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    sget-object v0, LbF3;->b:LcF3;
 
     .line 7
     .line 8
-    .line 9
-    move-result-object v0
+    const-class v1, LGnb;
 
+    .line 9
     .line 10
-    check-cast v0, Ljava/lang/String;
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
-
     .line 13
+    move-result p1
+
     .line 14
-    .line 15
-    move-result-object v1
-
-    .line 16
-    const/4 v2, 0x3
-
-    .line 17
-    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v1
-
-    .line 21
-    check-cast v1, Ljava/lang/String;
-
-    .line 22
-    .line 23
-    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v1
-
-    .line 27
-    iget-object p2, p2, Lrwf;->a:LQ1j;
-
-    .line 28
-    .line 29
-    invoke-static {p2}, LPZj;->l(LQ1j;)LWm0;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p2
-
-    .line 33
-    iget-object v2, p0, LHnb;->a:Lzmb;
-
-    .line 34
-    .line 35
-    check-cast v2, LImb;
-
-    .line 36
-    .line 37
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 38
-    .line 39
-    .line 40
-    const/4 v3, 0x0
-
-    .line 41
-    invoke-virtual {v2, p2, v0, v3}, LImb;->o(LWm0;Ljava/lang/String;Z)Lio/reactivex/rxjava3/internal/operators/single/SingleDefer;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
-
-    .line 45
-    sget-object v2, LOga;->g0:LOga;
-
-    .line 46
-    .line 47
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;
-
-    .line 48
-    .line 49
-    invoke-direct {v3, v0, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapMaybe;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 50
-    .line 51
-    .line 52
-    new-instance v0, Lny5;
-
-    .line 53
-    .line 54
-    const/16 v2, 0x16
-
-    .line 55
-    .line 56
-    invoke-direct {v0, v1, v2}, Lny5;-><init>(II)V
-
-    .line 57
-    .line 58
-    .line 59
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;
-
-    .line 60
-    .line 61
-    invoke-direct {v1, v3, v0}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 62
-    .line 63
-    .line 64
-    new-instance v0, LN8b;
-
-    .line 65
-    .line 66
-    const/16 v2, 0x14
-
-    .line 67
-    .line 68
-    invoke-direct {v0, p0, v2, p2}, LN8b;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 69
-    .line 70
-    .line 71
-    invoke-static {v1, v0}, LrUi;->h0(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object v0
-
-    .line 75
-    new-instance v1, LGe9;
-
-    .line 76
-    .line 77
-    const/16 v2, 0x19
-
-    .line 78
-    .line 79
-    invoke-direct {v1, p1, p0, p2, v2}, LGe9;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    .line 80
-    .line 81
-    .line 82
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
-    .line 83
-    .line 84
-    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 85
-    .line 86
-    .line 87
-    return-object p1
+    return p1
 .end method

@@ -1,3 +1,3 @@
-.class public abstract LSN9;
-.super Ljava/lang/Object;
+.class public final LSN9;
+.super LwO9;
 .source "SourceFile"

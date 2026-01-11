@@ -32,7 +32,7 @@
     move-result-object p1
 
     .line 8
-    const p2, 0x7f0701fb
+    const p2, 0x7f070209
 
     .line 9
     .line 10
@@ -57,7 +57,7 @@
     move-result-object p1
 
     .line 21
-    const p2, 0x7f0701fa
+    const p2, 0x7f070208
 
     .line 22
     .line 23

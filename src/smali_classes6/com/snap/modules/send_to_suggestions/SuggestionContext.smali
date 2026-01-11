@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/send_to_suggestions/SuggestionContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'friendStore\':r:\'[0]\',\'cofStore\':r:\'[1]\',\'alertPresenter\':r?:\'[2]\',\'groupStore\':r?:\'[3]\',\'grpcClient\':r?:\'[4]\'"
     typeReferences = {

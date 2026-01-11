@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LUt8;
+    proxyClass = LEA8;
     schema = "\'launchInsufficientTokenShop\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/gift_shop/ComposerGift;

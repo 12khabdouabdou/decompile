@@ -31,7 +31,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, LVd;
+    new-instance v0, LMe;
 
     .line 2
     .line 3
@@ -39,7 +39,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p1}, LVd;-><init>(Ljava/util/function/Consumer;Lcom/google/ar/core/ArCoreApk$Availability;)V
+    invoke-direct {v0, v1, p1}, LMe;-><init>(Ljava/util/function/Consumer;Lcom/google/ar/core/ArCoreApk$Availability;)V
 
     .line 6
     .line 7

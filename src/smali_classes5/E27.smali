@@ -1,29 +1,32 @@
 .class public final LE27;
-.super LJxk;
+.super LWWk;
 .source "SourceFile"
 
 
 # static fields
-.field public static final a:LE27;
+.field public static final b:LE27;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .line 1
     new-instance v0, LE27;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x3
 
     .line 4
+    invoke-direct {v0, v1}, LWWk;-><init>(I)V
+
     .line 5
     .line 6
-    sput-object v0, LE27;->a:LE27;
-
     .line 7
+    sput-object v0, LE27;->b:LE27;
+
     .line 8
+    .line 9
     return-void
 .end method

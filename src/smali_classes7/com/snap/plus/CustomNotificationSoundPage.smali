@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "Lfl4;",
-        "Ldl4;",
+        "LGp4;",
+        "LEp4;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:Lcl4;
+.field public static final Companion:LDp4;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, Lcl4;
+    new-instance v0, LDp4;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/plus/CustomNotificationSoundPage;->Companion:Lcl4;
+    sput-object v0, Lcom/snap/plus/CustomNotificationSoundPage;->Companion:LDp4;
 
     .line 7
     .line 8
@@ -62,54 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/plus/CustomNotificationSoundPage;
-    .locals 6
-
-    sget-object v0, Lcom/snap/plus/CustomNotificationSoundPage;->Companion:Lcl4;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v2, 0x0
-
-    const/16 v5, 0x10
-
-    const/4 v3, 0x0
-
-    move-object v1, p0
-
-    move-object v4, p1
-
-    .line 1
-    invoke-static/range {v0 .. v5}, Lcl4;->a(Lcl4;LqZ8;Lfl4;Ldl4;LTB3;I)Lcom/snap/plus/CustomNotificationSoundPage;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;Lfl4;Ldl4;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/plus/CustomNotificationSoundPage;
+.method public static final create(LZ69;LGp4;LEp4;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/plus/CustomNotificationSoundPage;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "Lfl4;",
-            "Ldl4;",
-            "LTB3;",
+            "LZ69;",
+            "LGp4;",
+            "LEp4;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/plus/CustomNotificationSoundPage;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/plus/CustomNotificationSoundPage;->Companion:Lcl4;
+    sget-object v0, Lcom/snap/plus/CustomNotificationSoundPage;->Companion:LDp4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     new-instance v2, Lcom/snap/plus/CustomNotificationSoundPage;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -133,7 +108,32 @@
     move-object v7, p4
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/plus/CustomNotificationSoundPage;
+    .locals 6
+
+    sget-object v0, Lcom/snap/plus/CustomNotificationSoundPage;->Companion:LDp4;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v2, 0x0
+
+    const/16 v5, 0x10
+
+    const/4 v3, 0x0
+
+    move-object v1, p0
+
+    move-object v4, p1
+
+    .line 1
+    invoke-static/range {v0 .. v5}, LDp4;->a(LDp4;LZ69;LGp4;LEp4;LvF3;I)Lcom/snap/plus/CustomNotificationSoundPage;
+
+    move-result-object p0
+
+    return-object p0
 .end method

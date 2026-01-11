@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LV88;
+    proxyClass = Lnf8;
     schema = "\'minRollAngle\':d,\'maxRollAngle\':d,\'minYawAngle\':d,\'maxYawAngle\':d,\'minPitchAngle\':d,\'maxPitchAngle\':d"
     typeReferences = {}
 .end annotation

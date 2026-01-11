@@ -1,10 +1,10 @@
 .class public final Lcom/snap/plus/ValueProvider;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'getValue\':f(f(r:0))"
     typeReferences = {}
@@ -15,7 +15,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lcom/snap/composer/utils/b;"
+        "Lcom/snap/composer/utils/a;"
     }
 .end annotation
 

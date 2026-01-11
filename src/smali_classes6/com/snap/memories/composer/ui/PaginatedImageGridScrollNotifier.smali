@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LL9d;
+    proxyClass = Lgpd;
     schema = "\'observe\':f|m|(): g<c>:\'[0]\'<s>,\'scrollNotify\':f|m|(s)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;

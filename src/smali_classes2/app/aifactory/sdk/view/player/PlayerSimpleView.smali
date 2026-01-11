@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements LRzd;
-.implements LiGa;
+.implements LgRd;
+.implements LqSa;
 
 
 # instance fields
-.field public final a:LFii;
+.field public final a:LzHi;
 
 .field public final b:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -46,7 +46,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lapp/aifactory/sdk/view/player/PlayerSimpleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lapp/aifactory/sdk/view/player/PlayerSimpleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -67,7 +67,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lapp/aifactory/sdk/view/player/PlayerSimpleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lapp/aifactory/sdk/view/player/PlayerSimpleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -83,15 +83,15 @@
     invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
 
     .line 5
-    new-instance p1, LFii;
+    new-instance p1, LzHi;
 
     const-string p2, "PlayerSimpleView"
 
     const/4 p3, 0x0
 
-    invoke-direct {p1, p2, p3}, LFii;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p1, p2, p3}, LzHi;-><init>(Ljava/lang/String;I)V
 
-    iput-object p1, p0, Lapp/aifactory/sdk/view/player/PlayerSimpleView;->a:LFii;
+    iput-object p1, p0, Lapp/aifactory/sdk/view/player/PlayerSimpleView;->a:LzHi;
 
     .line 6
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
@@ -187,7 +187,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -591,7 +591,7 @@
     .locals 2
 
     .line 1
-    new-instance v0, LJBc;
+    new-instance v0, LwQc;
 
     .line 2
     .line 3
@@ -711,11 +711,11 @@
     throw v1
 .end method
 
-.method public final getTag()LVb0;
+.method public final getTag()Lge0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/sdk/view/player/PlayerSimpleView;->a:LFii;
+    iget-object v0, p0, Lapp/aifactory/sdk/view/player/PlayerSimpleView;->a:LzHi;
 
     .line 2
     .line 3

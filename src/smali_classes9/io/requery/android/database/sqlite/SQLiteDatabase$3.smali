@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lio/requery/android/database/sqlite/SQLiteDatabase;->query(LMbi;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
+    value = Lio/requery/android/database/sqlite/SQLiteDatabase;->query(LGAi;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,11 +20,11 @@
 # instance fields
 .field final synthetic this$0:Lio/requery/android/database/sqlite/SQLiteDatabase;
 
-.field final synthetic val$supportCancellationSignal:Lkf2;
+.field final synthetic val$supportCancellationSignal:LVh2;
 
 
 # direct methods
-.method public constructor <init>(Lio/requery/android/database/sqlite/SQLiteDatabase;Lkf2;)V
+.method public constructor <init>(Lio/requery/android/database/sqlite/SQLiteDatabase;LVh2;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,7 +37,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Lio/requery/android/database/sqlite/SQLiteDatabase$3;->val$supportCancellationSignal:Lkf2;
+    iput-object p2, p0, Lio/requery/android/database/sqlite/SQLiteDatabase$3;->val$supportCancellationSignal:LVh2;
 
     .line 4
     .line 5
@@ -55,7 +55,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/requery/android/database/sqlite/SQLiteDatabase$3;->val$supportCancellationSignal:Lkf2;
+    iget-object v0, p0, Lio/requery/android/database/sqlite/SQLiteDatabase$3;->val$supportCancellationSignal:LVh2;
 
     .line 2
     .line 3
@@ -63,7 +63,7 @@
 
     .line 4
     :try_start_0
-    iget-boolean v1, v0, Lkf2;->a:Z
+    iget-boolean v1, v0, LVh2;->a:Z
 
     .line 5
     .line 6
@@ -88,15 +88,15 @@
     const/4 v1, 0x1
 
     .line 13
-    iput-boolean v1, v0, Lkf2;->a:Z
+    iput-boolean v1, v0, LVh2;->a:Z
 
     .line 14
     .line 15
-    iput-boolean v1, v0, Lkf2;->c:Z
+    iput-boolean v1, v0, LVh2;->c:Z
 
     .line 16
     .line 17
-    iget-object v1, v0, Lkf2;->b:Ljf2;
+    iget-object v1, v0, LVh2;->b:LUh2;
 
     .line 18
     .line 19
@@ -113,7 +113,7 @@
     .line 22
     .line 23
     :try_start_1
-    invoke-interface {v1}, Ljf2;->onCancel()V
+    invoke-interface {v1}, LUh2;->onCancel()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -131,7 +131,7 @@
 
     .line 29
     :try_start_2
-    iput-boolean v2, v0, Lkf2;->c:Z
+    iput-boolean v2, v0, LVh2;->c:Z
 
     .line 30
     .line 31
@@ -167,7 +167,7 @@
 
     .line 40
     :try_start_4
-    iput-boolean v2, v0, Lkf2;->c:Z
+    iput-boolean v2, v0, LVh2;->c:Z
 
     .line 41
     .line 42

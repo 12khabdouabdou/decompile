@@ -311,7 +311,7 @@
 
     .line 105
     .line 106
-    sget-object p1, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object p1, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 107
     .line 108
@@ -480,7 +480,7 @@
 
     .line 39
     .line 40
-    invoke-static/range {v1 .. v8}, Lsc5;->o0(Landroid/graphics/Path;IIIZZZZ)V
+    invoke-static/range {v1 .. v8}, LTVd;->J(Landroid/graphics/Path;IIIZZZZ)V
 
     .line 41
     .line 42

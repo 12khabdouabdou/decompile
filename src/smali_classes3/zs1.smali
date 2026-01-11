@@ -2,37 +2,62 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+# static fields
+.field public static final a:Lzs1;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lzs1;
 
     .line 2
     .line 3
-    .line 4
-    sget-object v0, Llyh;->b:Llyh;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    sput-object v0, Lzs1;->a:Lzs1;
 
     .line 7
     .line 8
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 2
+    .line 3
+    new-instance v0, Lapp/aifactory/sdk/api/model/TargetState$Error;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p1}, Lapp/aifactory/sdk/api/model/TargetState$Error;-><init>(Ljava/lang/Throwable;)V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
 
     .line 9
     .line 10
-    .line 11
-    iput-object v1, p0, Lzs1;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
 
+    .line 11
     .line 12
     .line 13
-    return-void
+    return-object p1
 .end method

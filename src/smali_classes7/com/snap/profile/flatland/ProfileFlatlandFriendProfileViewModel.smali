@@ -1,12 +1,12 @@
 .class public final Lcom/snap/profile/flatland/ProfileFlatlandFriendProfileViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'displayName\':s,\'avatarId\':g<c>:\'[0]\'<s>,\'sceneId\':g<c>:\'[0]\'<s>,\'background\':g<c>:\'[0]\'<r:\'[1]\'>,\'currentUserAvatarId\':g?<c>:\'[0]\'<s>,\'currentUserSceneId\':g?<c>:\'[0]\'<s>,\'isFriendsBirthday\':b@?,\'isCurrentUserBirthday\':b@?,\'friendshipInfo\':r?:\'[2]\',\'tweaks\':r?:\'[3]\',\'createBitmojiImpressions\':d@?,\'expandBitmojiHeaderOnCreate\':b@?,\'isAIBot\':b@?,\'isBitmojiFriendmojiSharingSupported\':b@?,\'onCreateOption\':r<e>:\'[4]\',\'hasPublicProfile\':b@?,\'defaultViewState\':r?<e>:\'[5]\',\'userProfileV2Enabled\':b@?,\'friendPublicProfileId\':s?"
+    schema = "\'displayName\':s,\'avatarId\':g<c>:\'[0]\'<s>,\'sceneId\':g<c>:\'[0]\'<s>,\'background\':g<c>:\'[0]\'<r:\'[1]\'>,\'currentUserAvatarId\':g?<c>:\'[0]\'<s>,\'currentUserSceneId\':g?<c>:\'[0]\'<s>,\'isFriendsBirthday\':b@?,\'isCurrentUserBirthday\':b@?,\'friendshipInfo\':r?:\'[2]\',\'tweaks\':r?:\'[3]\',\'createBitmojiImpressions\':d@?,\'expandBitmojiHeaderOnCreate\':b@?,\'isAIBot\':b@?,\'isBitmojiFriendmojiSharingSupported\':b@?,\'onCreateOption\':r<e>:\'[4]\',\'hasPublicProfile\':b@?,\'defaultViewState\':r?<e>:\'[5]\',\'userProfileV2Enabled\':b@?,\'friendPublicProfileId\':s?,\'friendUserId\':s?"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
         Lcom/snap/bitmoji_profile/ProfileFlatlandBackground;,
@@ -69,6 +69,8 @@
 
 .field private _friendPublicProfileId:Ljava/lang/String;
 
+.field private _friendUserId:Ljava/lang/String;
+
 .field private _friendshipInfo:Lcom/snap/profile/flatland/BitmojiFriendshipInfo;
 
 .field private _hasPublicProfile:Ljava/lang/Boolean;
@@ -99,7 +101,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/profile/flatland/BitmojiFriendshipInfo;Lcom/snap/profile/flatland/ProfileFlatlandTweaks;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/profile/flatland/FriendProfileOnCreateOptions;Ljava/lang/Boolean;Lcom/snap/profile/flatland/FriendProfileViewState;Ljava/lang/Boolean;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/profile/flatland/BitmojiFriendshipInfo;Lcom/snap/profile/flatland/ProfileFlatlandTweaks;Ljava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/lang/Boolean;Lcom/snap/profile/flatland/FriendProfileOnCreateOptions;Ljava/lang/Boolean;Lcom/snap/profile/flatland/FriendProfileViewState;Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -132,6 +134,7 @@
             "Ljava/lang/Boolean;",
             "Lcom/snap/profile/flatland/FriendProfileViewState;",
             "Ljava/lang/Boolean;",
+            "Ljava/lang/String;",
             "Ljava/lang/String;",
             ")V"
         }
@@ -235,6 +238,14 @@
 
     .line 49
     .line 50
+    move-object/from16 p1, p20
+
+    .line 51
+    .line 52
+    iput-object p1, p0, Lcom/snap/profile/flatland/ProfileFlatlandFriendProfileViewModel;->_friendUserId:Ljava/lang/String;
+
+    .line 53
+    .line 54
     return-void
 .end method
 
@@ -251,18 +262,7 @@
     return-void
 .end method
 
-.method public final b(Ljava/lang/Boolean;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/snap/profile/flatland/ProfileFlatlandFriendProfileViewModel;->_isBitmojiFriendmojiSharingSupported:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final c(Ljava/lang/Double;)V
+.method public final b(Ljava/lang/Double;)V
     .locals 0
 
     .line 1
@@ -273,7 +273,7 @@
     return-void
 .end method
 
-.method public final d(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+.method public final c(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
     .locals 0
 
     .line 1
@@ -284,7 +284,7 @@
     return-void
 .end method
 
-.method public final e(Ljava/lang/Boolean;)V
+.method public final d(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -295,7 +295,7 @@
     return-void
 .end method
 
-.method public final f(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+.method public final e(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
     .locals 0
 
     .line 1
@@ -306,7 +306,7 @@
     return-void
 .end method
 
-.method public final g(Ljava/lang/Boolean;)V
+.method public final f(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -317,7 +317,7 @@
     return-void
 .end method
 
-.method public final h(Ljava/lang/Boolean;)V
+.method public final g(Ljava/lang/Boolean;)V
     .locals 0
 
     .line 1
@@ -328,7 +328,7 @@
     return-void
 .end method
 
-.method public final i(Lcom/snap/profile/flatland/BitmojiFriendshipInfo;)V
+.method public final h(Lcom/snap/profile/flatland/BitmojiFriendshipInfo;)V
     .locals 0
 
     .line 1

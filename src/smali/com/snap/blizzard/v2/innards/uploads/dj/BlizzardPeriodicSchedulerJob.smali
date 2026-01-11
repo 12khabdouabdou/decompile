@@ -1,5 +1,5 @@
 .class public final Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardPeriodicSchedulerJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
@@ -7,12 +7,12 @@
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "BlizzardPeriodicSchedulerJob"
     isSingleton = true
-    metadataType = Li7j;
+    metadataType = Lewj;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
@@ -21,23 +21,22 @@
 .method public constructor <init>()V
     .locals 2
 
+    .line 1
+    sget-object v0, LEg1;->a:LRE6;
+
     .line 2
-    invoke-static {}, Lod1;->a()LtB6;
+    sget-object v1, Lewj;->a:Lewj;
 
-    move-result-object v0
-
-    sget-object v1, Li7j;->a:Li7j;
-
-    invoke-direct {p0, v0, v1}, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardPeriodicSchedulerJob;-><init>(LtB6;Li7j;)V
+    invoke-direct {p0, v0, v1}, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardPeriodicSchedulerJob;-><init>(LRE6;Lewj;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LtB6;Li7j;)V
+.method public constructor <init>(LRE6;Lewj;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    .line 3
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     return-void
 .end method

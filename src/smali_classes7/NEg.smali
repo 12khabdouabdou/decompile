@@ -1,337 +1,192 @@
 .class public final LNEg;
-.super Ljava/lang/Object;
+.super Le57;
 .source "SourceFile"
-
-# interfaces
-.implements LmFg;
 
 
 # instance fields
-.field public final a:LmFg;
-
-.field public b:Ljava/util/Set;
-
-.field public c:Ljava/util/List;
-
-.field public d:Z
-
-.field public final synthetic e:LTEg;
+.field public a:LYpj;
 
 
 # direct methods
-.method public constructor <init>(LTEg;LmFg;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LNEg;->e:LTEg;
+    const/4 v0, 0x0
 
     .line 5
-    .line 6
-    iput-object p2, p0, LNEg;->a:LmFg;
+    iput-object v0, p0, LNEg;->a:LYpj;
 
+    .line 6
     .line 7
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
+
     .line 8
+    .line 9
+    const/4 v0, -0x1
+
+    .line 10
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+
+    .line 11
+    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(D)V
-    .locals 1
+.method public final computeSerializedSize()I
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
-    invoke-interface {v0, p1, p2}, LmFg;->a(D)V
-
     .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final b(Landroid/view/Surface;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, LmFg;->b(Landroid/view/Surface;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final c(Ljava/lang/String;FLlFg;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2, p3}, LmFg;->c(Ljava/lang/String;FLlFg;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final d(Ljava/util/List;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, LmFg;->d(Ljava/util/List;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final e()J
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LmFg;->e()J
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-wide v0
-
-    .line 7
-    return-wide v0
-.end method
-
-.method public final f(J)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1, p2}, LmFg;->f(J)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final g()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LmFg;->g()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final getState()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LmFg;->getState()I
-
-    .line 4
-    .line 5
-    .line 6
     move-result v0
 
+    .line 5
+    iget-object v1, p0, LNEg;->a:LYpj;
+
+    .line 6
     .line 7
+    if-eqz v1, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    add-int/2addr v1, v0
+
+    .line 15
+    return v1
+
+    .line 16
+    :cond_0
     return v0
 .end method
 
-.method public final h(I)V
-    .locals 1
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
 
     .line 2
     .line 3
-    invoke-interface {v0, p1}, LmFg;->h(I)V
-
     .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final i(LMFg;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, LmFg;->i(LMFg;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final j(LLEg;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, LmFg;->j(LLEg;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final k(Ljava/lang/String;F)V
-    .locals 1
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 3
-    .line 4
-    invoke-interface {v0, p1, p2}, LmFg;->k(Ljava/lang/String;F)V
+    move-result v0
 
     .line 5
+    if-eqz v0, :cond_3
+
     .line 6
     .line 7
-    return-void
+    const/16 v1, 0xa
+
+    .line 8
+    .line 9
+    if-eq v0, v1, :cond_1
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_0
+
+    .line 16
+    .line 17
+    goto :goto_1
+
+    .line 18
+    :cond_1
+    iget-object v0, p0, LNEg;->a:LYpj;
+
+    .line 19
+    .line 20
+    if-nez v0, :cond_2
+
+    .line 21
+    .line 22
+    new-instance v0, LYpj;
+
+    .line 23
+    .line 24
+    invoke-direct {v0}, LYpj;-><init>()V
+
+    .line 25
+    .line 26
+    .line 27
+    iput-object v0, p0, LNEg;->a:LYpj;
+
+    .line 28
+    .line 29
+    :cond_2
+    iget-object v0, p0, LNEg;->a:LYpj;
+
+    .line 30
+    .line 31
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    .line 32
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :cond_3
+    :goto_1
+    return-object p0
 .end method
 
-.method public final pause()V
-    .locals 1
+.method public final writeTo(Lbd3;)V
+    .locals 2
 
     .line 1
-    const/4 v0, 0x0
+    iget-object v0, p0, LNEg;->a:LYpj;
 
     .line 2
-    iput-boolean v0, p0, LNEg;->d:Z
-
     .line 3
-    .line 4
-    iget-object v0, p0, LNEg;->a:LmFg;
+    if-eqz v0, :cond_0
 
+    .line 4
     .line 5
+    const/4 v1, 0x1
+
     .line 6
-    invoke-interface {v0}, LmFg;->pause()V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 7
     .line 8
     .line 9
-    return-void
-.end method
+    :cond_0
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
-.method public final play()V
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    iput-boolean v0, p0, LNEg;->d:Z
-
-    .line 3
-    .line 4
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 5
-    .line 6
-    invoke-interface {v0}, LmFg;->play()V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method public final prepare(Z)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0, p1}, LmFg;->prepare(Z)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final release()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LmFg;->release()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final reset()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LNEg;->a:LmFg;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, LmFg;->reset()V
-
-    .line 4
-    .line 5
-    .line 6
+    .line 10
+    .line 11
+    .line 12
     return-void
 .end method

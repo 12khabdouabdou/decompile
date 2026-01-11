@@ -20,6 +20,8 @@
 
 .field public static final enum BACKGROUNDPREFETCH:Lcom/snapchat/client/mdp_common/Trigger;
 
+.field public static final enum BACKGROUNDPREFETCHSYSTEMNOTIFICATION:Lcom/snapchat/client/mdp_common/Trigger;
+
 .field public static final enum BCFFOREGROUNDPREFETCH:Lcom/snapchat/client/mdp_common/Trigger;
 
 .field public static final enum CHATPLAYBACK:Lcom/snapchat/client/mdp_common/Trigger;
@@ -39,6 +41,10 @@
 .field public static final enum FOREGROUNDPREFETCH:Lcom/snapchat/client/mdp_common/Trigger;
 
 .field public static final enum FOREGROUNDPREFETCHINAPPNOTIFICATION:Lcom/snapchat/client/mdp_common/Trigger;
+
+.field public static final enum FOREGROUNDPREFETCHONCHATENTER:Lcom/snapchat/client/mdp_common/Trigger;
+
+.field public static final enum FOREGROUNDPREFETCHONFRIENDSFEED:Lcom/snapchat/client/mdp_common/Trigger;
 
 .field public static final enum FOREGROUNDPREFETCHREADNOTSAVEDMESSAGE:Lcom/snapchat/client/mdp_common/Trigger;
 
@@ -88,7 +94,7 @@
     .locals 3
 
     .line 1
-    const/16 v0, 0x21
+    const/16 v0, 0x24
 
     .line 2
     .line 3
@@ -484,6 +490,42 @@
 
     .line 194
     .line 195
+    sget-object v1, Lcom/snapchat/client/mdp_common/Trigger;->FOREGROUNDPREFETCHONCHATENTER:Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 196
+    .line 197
+    const/16 v2, 0x21
+
+    .line 198
+    .line 199
+    aput-object v1, v0, v2
+
+    .line 200
+    .line 201
+    sget-object v1, Lcom/snapchat/client/mdp_common/Trigger;->FOREGROUNDPREFETCHONFRIENDSFEED:Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 202
+    .line 203
+    const/16 v2, 0x22
+
+    .line 204
+    .line 205
+    aput-object v1, v0, v2
+
+    .line 206
+    .line 207
+    sget-object v1, Lcom/snapchat/client/mdp_common/Trigger;->BACKGROUNDPREFETCHSYSTEMNOTIFICATION:Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 208
+    .line 209
+    const/16 v2, 0x23
+
+    .line 210
+    .line 211
+    aput-object v1, v0, v2
+
+    .line 212
+    .line 213
     return-object v0
 .end method
 
@@ -1176,18 +1218,81 @@
 
     .line 355
     .line 356
-    invoke-static {}, Lcom/snapchat/client/mdp_common/Trigger;->$values()[Lcom/snapchat/client/mdp_common/Trigger;
+    new-instance v0, Lcom/snapchat/client/mdp_common/Trigger;
 
     .line 357
     .line 358
-    .line 359
-    move-result-object v0
+    const-string v1, "FOREGROUNDPREFETCHONCHATENTER"
 
+    .line 359
     .line 360
-    sput-object v0, Lcom/snapchat/client/mdp_common/Trigger;->$VALUES:[Lcom/snapchat/client/mdp_common/Trigger;
+    const/16 v2, 0x21
 
     .line 361
     .line 362
+    invoke-direct {v0, v1, v2}, Lcom/snapchat/client/mdp_common/Trigger;-><init>(Ljava/lang/String;I)V
+
+    .line 363
+    .line 364
+    .line 365
+    sput-object v0, Lcom/snapchat/client/mdp_common/Trigger;->FOREGROUNDPREFETCHONCHATENTER:Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 366
+    .line 367
+    new-instance v0, Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 368
+    .line 369
+    const-string v1, "FOREGROUNDPREFETCHONFRIENDSFEED"
+
+    .line 370
+    .line 371
+    const/16 v2, 0x22
+
+    .line 372
+    .line 373
+    invoke-direct {v0, v1, v2}, Lcom/snapchat/client/mdp_common/Trigger;-><init>(Ljava/lang/String;I)V
+
+    .line 374
+    .line 375
+    .line 376
+    sput-object v0, Lcom/snapchat/client/mdp_common/Trigger;->FOREGROUNDPREFETCHONFRIENDSFEED:Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 377
+    .line 378
+    new-instance v0, Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 379
+    .line 380
+    const-string v1, "BACKGROUNDPREFETCHSYSTEMNOTIFICATION"
+
+    .line 381
+    .line 382
+    const/16 v2, 0x23
+
+    .line 383
+    .line 384
+    invoke-direct {v0, v1, v2}, Lcom/snapchat/client/mdp_common/Trigger;-><init>(Ljava/lang/String;I)V
+
+    .line 385
+    .line 386
+    .line 387
+    sput-object v0, Lcom/snapchat/client/mdp_common/Trigger;->BACKGROUNDPREFETCHSYSTEMNOTIFICATION:Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 388
+    .line 389
+    invoke-static {}, Lcom/snapchat/client/mdp_common/Trigger;->$values()[Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 390
+    .line 391
+    .line 392
+    move-result-object v0
+
+    .line 393
+    sput-object v0, Lcom/snapchat/client/mdp_common/Trigger;->$VALUES:[Lcom/snapchat/client/mdp_common/Trigger;
+
+    .line 394
+    .line 395
     return-void
 .end method
 

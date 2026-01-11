@@ -7,14 +7,14 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LHce;
+    proxyClass = Lfue;
     schema = "\'getViewModel\':f|m|(r:\'[0]\'): g<c>:\'[1]\'<r:\'[2]\'>,\'onDispose\':f|m|()"
     typeReferences = {
         Lcom/snap/modules/common_profile/HostSurface;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lvei;
+        LqDi;
     }
 .end annotation
 
@@ -27,7 +27,7 @@
             "Lcom/snap/modules/common_profile/HostSurface;",
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lvei;",
+            "LqDi;",
             ">;"
         }
     .end annotation

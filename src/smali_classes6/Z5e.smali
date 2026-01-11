@@ -1,42 +1,60 @@
 .class public final LZ5e;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'alertPresenter\':r:\'[0]\',\'navigator\':r:\'[1]\'"
-    typeReferences = {
-        Lcom/snap/composer/foundation/IAlertPresenter;,
-        Lcom/snap/composer/navigation/INavigator;
-    }
-.end annotation
-
-
-# instance fields
-.field private _alertPresenter:Lcom/snap/composer/foundation/IAlertPresenter;
-
-.field private _navigator:Lcom/snap/composer/navigation/INavigator;
-
-
 # direct methods
-.method public constructor <init>(Lcom/snap/composer/foundation/IAlertPresenter;Lcom/snap/composer/navigation/INavigator;)V
-    .locals 0
+.method public static a(LZ69;Lc6e;La6e;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/camera_director_mode/PreviewButton;
+    .locals 8
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v1, Lcom/snap/modules/camera_director_mode/PreviewButton;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LZ5e;->_alertPresenter:Lcom/snap/composer/foundation/IAlertPresenter;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LZ5e;->_navigator:Lcom/snap/composer/navigation/INavigator;
+    move-result-object v0
 
     .line 7
+    invoke-direct {v1, v0}, Lcom/snap/modules/camera_director_mode/PreviewButton;-><init>(Landroid/content/Context;)V
+
     .line 8
-    return-void
+    .line 9
+    .line 10
+    invoke-static {}, Lcom/snap/modules/camera_director_mode/PreviewButton;->access$getComponentPath$cp()Ljava/lang/String;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v2
+
+    .line 14
+    const/4 v7, 0x0
+
+    .line 15
+    move-object v0, p0
+
+    .line 16
+    move-object v3, p1
+
+    .line 17
+    move-object v4, p2
+
+    .line 18
+    move-object v5, p3
+
+    .line 19
+    move-object v6, p4
+
+    .line 20
+    invoke-interface/range {v0 .. v7}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-object v1
 .end method

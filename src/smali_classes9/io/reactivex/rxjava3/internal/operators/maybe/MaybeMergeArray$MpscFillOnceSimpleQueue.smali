@@ -63,6 +63,33 @@
 
 
 # virtual methods
+.method public final b()V
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MpscFillOnceSimpleQueue;->b:I
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->lazySet(ILjava/lang/Object;)V
+
+    .line 5
+    .line 6
+    .line 7
+    add-int/lit8 v0, v0, 0x1
+
+    .line 8
+    .line 9
+    iput v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MpscFillOnceSimpleQueue;->b:I
+
+    .line 10
+    .line 11
+    return-void
+.end method
+
 .method public final clear()V
     .locals 4
 
@@ -161,33 +188,6 @@
 
     .line 43
     :cond_3
-    return-void
-.end method
-
-.method public final d()V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MpscFillOnceSimpleQueue;->b:I
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->lazySet(ILjava/lang/Object;)V
-
-    .line 5
-    .line 6
-    .line 7
-    add-int/lit8 v0, v0, 0x1
-
-    .line 8
-    .line 9
-    iput v0, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeMergeArray$MpscFillOnceSimpleQueue;->b:I
-
-    .line 10
-    .line 11
     return-void
 .end method
 
@@ -399,7 +399,7 @@
     return-object v2
 .end method
 
-.method public final v()I
+.method public final s()I
     .locals 1
 
     .line 1

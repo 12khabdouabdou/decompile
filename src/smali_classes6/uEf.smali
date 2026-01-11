@@ -1,99 +1,313 @@
-.class public final synthetic LuEf;
-.super Lj28;
+.class public final LuEf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function3;
+.implements LI1c;
 
 
-# static fields
-.field public static final f0:LuEf;
+# instance fields
+.field public final a:LdYg;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(LdYg;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LuEf;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "<init>(Ljava/lang/String;JJ)V"
-
     .line 4
+    iput-object p1, p0, LuEf;->a:LdYg;
+
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/4 v1, 0x3
-
-    .line 7
-    const-class v3, LxRh;
-
-    .line 8
-    .line 9
-    const-string v4, "<init>"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, LuEf;->f0:LuEf;
-
-    .line 15
-    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final I(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final b(LxZ3;Ljava/util/List;ILe6c;)LoX3;
+    .locals 0
 
     .line 1
-    move-object v5, p1
+    invoke-virtual {p1}, LxZ3;->g()LXvg;
 
     .line 2
-    check-cast v5, Ljava/lang/String;
-
     .line 3
     .line 4
-    check-cast p2, Ljava/lang/Number;
+    move-result-object p1
 
     .line 5
-    .line 6
-    invoke-virtual {p2}, Ljava/lang/Number;->longValue()J
+    invoke-virtual {p1}, LXvg;->j()LSFf;
 
+    .line 6
     .line 7
     .line 8
+    move-result-object p1
+
     .line 9
-    move-result-wide v1
+    iget-object p1, p1, LSFf;->b:LvXg;
 
     .line 10
-    check-cast p3, Ljava/lang/Number;
-
     .line 11
-    .line 12
-    invoke-virtual {p3}, Ljava/lang/Number;->longValue()J
+    invoke-static {p1}, LWXg;->i(LvXg;)LEyb;
 
+    .line 12
     .line 13
     .line 14
+    move-result-object p1
+
     .line 15
-    move-result-wide v3
+    iget-object p1, p1, LEyb;->f0:Lixb;
 
     .line 16
-    new-instance v0, LxRh;
-
     .line 17
+    const/4 p3, 0x0
+
     .line 18
-    invoke-direct/range {v0 .. v5}, LxRh;-><init>(JJLjava/lang/String;)V
+    invoke-interface {p2, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 19
     .line 20
     .line 21
+    move-result-object p2
+
+    .line 22
+    check-cast p2, Lcom/snapchat/client/messaging/MediaReferenceList;
+
+    .line 23
+    .line 24
+    invoke-virtual {p2}, Lcom/snapchat/client/messaging/MediaReferenceList;->getMediaReferences()Ljava/util/ArrayList;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object p2
+
+    .line 28
+    invoke-static {p2, p1}, LOPk;->c(Ljava/util/ArrayList;Lixb;)Lcom/snapchat/client/messaging/MediaReference;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object p1
+
+    .line 32
+    invoke-virtual {p1}, Lcom/snapchat/client/messaging/MediaReference;->getContentObject()[B
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    invoke-static {p1}, LoX3;->b([B)LoX3;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p1
+
+    .line 40
+    return-object p1
+.end method
+
+.method public final c(LxZ3;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILe6c;)Lyb0;
+    .locals 0
+
+    .line 1
+    invoke-static/range {p0 .. p6}, LiTk;->k(LI1c;LxZ3;Ljava/util/List;Ljava/util/List;Ljava/lang/String;ILe6c;)Lyb0;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public final d(LxZ3;Ljava/lang/String;ILe6c;)Luxb;
+    .locals 8
+
+    .line 1
+    invoke-virtual {p1}, LxZ3;->g()LXvg;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p1}, LXvg;->j()LSFf;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object p1
+
+    .line 9
+    iget-object p1, p1, LSFf;->b:LvXg;
+
+    .line 10
+    .line 11
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object p1
+
+    .line 15
+    iget-object p3, p0, LuEf;->a:LdYg;
+
+    .line 16
+    .line 17
+    const/4 p4, 0x0
+
+    .line 18
+    invoke-virtual {p3, p2, p1, p4}, LdYg;->d(Ljava/lang/String;Ljava/util/List;I)Ljava/util/ArrayList;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p1
+
+    .line 22
+    invoke-virtual {p1, p4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p1
+
+    .line 26
+    check-cast p1, LLxb;
+
+    .line 27
+    .line 28
+    new-instance v0, Luxb;
+
+    .line 29
+    .line 30
+    sget-object p2, Lmeh;->c:Lmeh;
+
+    .line 31
+    .line 32
+    iget-object p2, p1, LLxb;->b:Ljava/lang/String;
+
+    .line 33
+    .line 34
+    invoke-static {p2}, LIjj;->t0(Ljava/lang/String;)Lmeh;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v1
+
+    .line 38
+    const/4 v5, 0x0
+
+    .line 39
+    const/4 v6, 0x0
+
+    .line 40
+    iget-object v2, p1, LLxb;->c:Ljava/lang/String;
+
+    .line 41
+    .line 42
+    iget-object v3, p1, LLxb;->d:Ljava/lang/String;
+
+    .line 43
+    .line 44
+    const/4 v4, 0x0
+
+    .line 45
+    const/16 v7, 0xf8
+
+    .line 46
+    .line 47
+    invoke-direct/range {v0 .. v7}, Luxb;-><init>(Lmeh;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Integer;Ljava/lang/String;I)V
+
+    .line 48
+    .line 49
+    .line 50
     return-object v0
+.end method
+
+.method public final f(LxZ3;Ljava/util/List;Ljava/lang/String;ILe6c;)Lyb0;
+    .locals 2
+
+    .line 1
+    new-instance v0, Lyb0;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1, p3, p4, p5}, LuEf;->d(LxZ3;Ljava/lang/String;ILe6c;)Luxb;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p3
+
+    .line 7
+    move-object v1, p2
+
+    .line 8
+    check-cast v1, Ljava/util/Collection;
+
+    .line 9
+    .line 10
+    invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    if-nez v1, :cond_0
+
+    .line 15
+    .line 16
+    invoke-virtual {p0, p1, p2, p4, p5}, LuEf;->b(LxZ3;Ljava/util/List;ILe6c;)LoX3;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    goto :goto_0
+
+    .line 21
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 22
+    :goto_0
+    invoke-direct {v0, p3, p1}, Lyb0;-><init>(Luxb;LoX3;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-object v0
+.end method
+
+.method public final i(LxZ3;Ljava/util/List;Ljava/util/List;ILe6c;)LoX3;
+    .locals 0
+
+    .line 1
+    invoke-static {p2, p3}, LiTk;->l(Ljava/util/List;Ljava/util/List;)LoX3;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
 .end method

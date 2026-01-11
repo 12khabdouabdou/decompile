@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LtO2;",
-        "LgO2;",
+        "LVQ2;",
+        "LJQ2;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LmO2;
+.field public static final Companion:LOQ2;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LmO2;
+    new-instance v0, LOQ2;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->Companion:LmO2;
+    sput-object v0, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->Companion:LOQ2;
 
     .line 7
     .line 8
@@ -62,68 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/modules/chat_snap/ChatSnapPlugin;
-    .locals 9
-
-    sget-object v0, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->Companion:LmO2;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    new-instance v2, Lcom/snap/modules/chat_snap/ChatSnapPlugin;
-
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-direct {v2, v0}, Lcom/snap/modules/chat_snap/ChatSnapPlugin;-><init>(Landroid/content/Context;)V
-
-    .line 5
-    invoke-static {}, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->access$getComponentPath$cp()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v8, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v7, 0x0
-
-    move-object v1, p0
-
-    move-object v6, p1
-
-    .line 6
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
-
-    return-object v2
-.end method
-
-.method public static final create(LqZ8;LtO2;LgO2;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_snap/ChatSnapPlugin;
+.method public static final create(LZ69;LVQ2;LJQ2;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/modules/chat_snap/ChatSnapPlugin;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LtO2;",
-            "LgO2;",
-            "LTB3;",
+            "LZ69;",
+            "LVQ2;",
+            "LJQ2;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/modules/chat_snap/ChatSnapPlugin;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->Companion:LmO2;
+    sget-object v0, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->Companion:LOQ2;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
     new-instance v2, Lcom/snap/modules/chat_snap/ChatSnapPlugin;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -147,7 +108,46 @@
     move-object v7, p4
 
     .line 3
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
+
+    return-object v2
+.end method
+
+.method public static final create(LZ69;LvF3;)Lcom/snap/modules/chat_snap/ChatSnapPlugin;
+    .locals 9
+
+    sget-object v0, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->Companion:LOQ2;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    new-instance v2, Lcom/snap/modules/chat_snap/ChatSnapPlugin;
+
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Lcom/snap/modules/chat_snap/ChatSnapPlugin;-><init>(Landroid/content/Context;)V
+
+    .line 5
+    invoke-static {}, Lcom/snap/modules/chat_snap/ChatSnapPlugin;->access$getComponentPath$cp()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v8, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v1, p0
+
+    move-object v6, p1
+
+    .line 6
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method

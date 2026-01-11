@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
+.implements LY2d;
 
 
 # direct methods

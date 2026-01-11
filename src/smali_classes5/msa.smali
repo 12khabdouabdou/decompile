@@ -3,40 +3,18 @@
 .source "SourceFile"
 
 # interfaces
-.implements LJ2f;
-
-
-# static fields
-.field public static final b:Lmsa;
+.implements Losa;
 
 
 # instance fields
-.field public final synthetic a:LH2f;
+.field public final a:LAl7;
+
+.field public final b:LFt9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lmsa;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Lmsa;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lmsa;->b:Lmsa;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(LAl7;LFt9;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,11 +22,11 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LH2f;->a:LH2f;
+    iput-object p1, p0, Lmsa;->a:LAl7;
 
     .line 5
     .line 6
-    iput-object v0, p0, Lmsa;->a:LH2f;
+    iput-object p2, p0, Lmsa;->b:LFt9;
 
     .line 7
     .line 8
@@ -57,210 +35,193 @@
 
 
 # virtual methods
-.method public final E0(Ljava/lang/String;)Z
-    .locals 0
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
 
     .line 1
-    iget-object p1, p0, Lmsa;->a:LH2f;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-ne p0, p1, :cond_0
 
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
-
-    .line 7
-    return p1
-.end method
-
-.method public final I(Ljava/lang/String;)Ljava/io/InputStream;
-    .locals 1
-
-    .line 1
-    invoke-static {}, Lcom/looksery/sdk/io/LensCoreResources;->getResolver()Lcom/looksery/sdk/io/ResourceResolver;
-
-    .line 2
     .line 3
     .line 4
-    move-result-object v0
+    return v0
 
     .line 5
-    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    :cond_0
+    instance-of v1, p1, Lmsa;
 
     .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    move-result-object p1
+    if-nez v1, :cond_1
 
     .line 9
-    invoke-interface {v0, p1}, Lcom/looksery/sdk/io/ResourceResolver;->openResource(Landroid/net/Uri;)Ljava/io/InputStream;
-
     .line 10
-    .line 11
-    .line 12
-    move-result-object p1
+    return v2
 
+    .line 11
+    :cond_1
+    check-cast p1, Lmsa;
+
+    .line 12
     .line 13
-    return-object p1
-.end method
+    iget-object v1, p1, Lmsa;->a:LAl7;
 
-.method public final M(Ljava/lang/String;)Z
-    .locals 0
+    .line 14
+    .line 15
+    iget-object v3, p0, Lmsa;->a:LAl7;
 
-    .line 1
-    iget-object p1, p0, Lmsa;->a:LH2f;
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
 
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
+    .line 21
+    if-nez v1, :cond_2
 
-    .line 7
-    return p1
-.end method
+    .line 22
+    .line 23
+    return v2
 
-.method public final M0(Ljava/lang/String;)Ljava/util/List;
-    .locals 1
+    .line 24
+    :cond_2
+    iget-object v1, p0, Lmsa;->b:LFt9;
 
-    .line 1
-    iget-object v0, p0, Lmsa;->a:LH2f;
+    .line 25
+    .line 26
+    iget-object p1, p1, Lmsa;->b:LFt9;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LH2f;->M0(Ljava/lang/String;)Ljava/util/List;
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
 
-    .line 7
-    throw p1
-.end method
+    .line 32
+    if-nez p1, :cond_3
 
-.method public final X0(Ljava/lang/String;)I
-    .locals 1
+    .line 33
+    .line 34
+    return v2
 
-    .line 1
-    iget-object v0, p0, Lmsa;->a:LH2f;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LH2f;->X0(Ljava/lang/String;)I
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
-
-    .line 7
-    throw p1
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lmsa;->a:LH2f;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    .line 5
-    .line 6
-    sget-object v0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->a:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
-
-    .line 7
-    .line 8
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->c()Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result v0
-
-    .line 12
+    .line 35
+    :cond_3
     return v0
 .end method
 
-.method public final dispose()V
-    .locals 1
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lmsa;->a:LH2f;
+    iget-object v0, p0, Lmsa;->a:LAl7;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, LAl7;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
-
-.method public final k1(Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lmsa;->a:LH2f;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LH2f;->k1(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
+    move-result v0
 
     .line 7
-    throw p1
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lmsa;->b:LFt9;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
 .end method
 
-.method public final m3(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lmsa;->a:LH2f;
+    iget-object v0, p0, Lmsa;->a:LAl7;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, LH2f;->m3(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
+    iget-object v0, v0, LAl7;->a:LY79;
 
     .line 4
     .line 5
+    new-instance v1, Ljava/lang/StringBuilder;
+
     .line 6
-    const/4 p1, 0x0
-
     .line 7
-    throw p1
-.end method
+    const-string v2, "OfflineTabRequested(feedId="
 
-.method public final p2(Ljava/lang/String;)LI2f;
-    .locals 1
+    .line 8
+    .line 9
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 1
-    iget-object v0, p0, Lmsa;->a:LH2f;
+    .line 10
+    .line 11
+    .line 12
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0, p1}, LH2f;->p2(Ljava/lang/String;)LI2f;
+    .line 13
+    .line 14
+    .line 15
+    const-string v0, "; position="
 
-    .line 4
-    .line 5
-    .line 6
-    const/4 p1, 0x0
+    .line 16
+    .line 17
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
-    throw p1
+    .line 18
+    .line 19
+    .line 20
+    iget-object v0, p0, Lmsa;->b:LFt9;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    const-string v0, ")"
+
+    .line 26
+    .line 27
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    return-object v0
 .end method

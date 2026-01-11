@@ -55,7 +55,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 3
 
     .line 1
@@ -80,7 +80,7 @@
     move-result-object v1
 
     .line 11
-    check-cast v1, LZne;
+    check-cast v1, LSFe;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -113,12 +113,12 @@
 
     .line 24
     .line 25
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 26
     .line 27
     .line 28
-    invoke-interface {p1}, LV6i;->onComplete()V
+    invoke-interface {p1}, Lmvi;->onComplete()V
 
     .line 29
     .line 30
@@ -131,12 +131,12 @@
 
     .line 33
     .line 34
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/subscriptions/ScalarSubscription;-><init>(LV6i;Ljava/lang/Object;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/subscriptions/ScalarSubscription;-><init>(Lmvi;Ljava/lang/Object;)V
 
     .line 35
     .line 36
     .line 37
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 38
     .line 39
@@ -153,12 +153,12 @@
     .line 43
     .line 44
     .line 45
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 46
     .line 47
     .line 48
-    invoke-interface {p1, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 49
     .line 50
@@ -167,7 +167,7 @@
 
     .line 52
     :cond_1
-    invoke-interface {v1, p1}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v1, p1}, LSFe;->subscribe(Lmvi;)V
 
     .line 53
     .line 54
@@ -184,12 +184,12 @@
     .line 58
     .line 59
     .line 60
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 61
     .line 62
     .line 63
-    invoke-interface {p1, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 64
     .line 65

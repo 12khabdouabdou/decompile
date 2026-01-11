@@ -12,13 +12,13 @@
 # instance fields
 .field private backgroundColorRgba:[I
 
-.field private boxRecord:LGsi;
+.field private boxRecord:LzRi;
 
 .field private displayFlags:J
 
 .field private horizontalJustification:I
 
-.field private styleRecord:LHsi;
+.field private styleRecord:LARi;
 
 .field private verticalJustification:I
 
@@ -40,20 +40,20 @@
     iput-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->backgroundColorRgba:[I
 
     .line 3
-    new-instance v0, LGsi;
+    new-instance v0, LzRi;
 
     .line 4
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 5
-    iput-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LGsi;
+    iput-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LzRi;
 
     .line 6
-    new-instance v0, LHsi;
+    new-instance v0, LARi;
 
-    invoke-direct {v0}, LHsi;-><init>()V
+    invoke-direct {v0}, LARi;-><init>()V
 
-    iput-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LHsi;
+    iput-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LARi;
 
     return-void
 .end method
@@ -72,20 +72,20 @@
     iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->backgroundColorRgba:[I
 
     .line 9
-    new-instance p1, LGsi;
+    new-instance p1, LzRi;
 
     .line 10
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     .line 11
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LGsi;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LzRi;
 
     .line 12
-    new-instance p1, LHsi;
+    new-instance p1, LARi;
 
-    invoke-direct {p1}, LHsi;-><init>()V
+    invoke-direct {p1}, LARi;-><init>()V
 
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LHsi;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LARi;
 
     return-void
 .end method
@@ -149,7 +149,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 21
     .line 22
@@ -290,78 +290,78 @@
     .line 87
     .line 88
     .line 89
-    iget-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LGsi;
+    iget-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LzRi;
 
     .line 90
     .line 91
-    iget v6, v1, LGsi;->a:I
+    iget v6, v1, LzRi;->a:I
 
     .line 92
     .line 93
-    invoke-static {v0, v6}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v6}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 94
     .line 95
     .line 96
-    iget v6, v1, LGsi;->b:I
+    iget v6, v1, LzRi;->b:I
 
     .line 97
     .line 98
-    invoke-static {v0, v6}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v6}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 99
     .line 100
     .line 101
-    iget v6, v1, LGsi;->c:I
+    iget v6, v1, LzRi;->c:I
 
     .line 102
     .line 103
-    invoke-static {v0, v6}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v6}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 104
     .line 105
     .line 106
-    iget v1, v1, LGsi;->d:I
+    iget v1, v1, LzRi;->d:I
 
     .line 107
     .line 108
-    invoke-static {v0, v1}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v1}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 109
     .line 110
     .line 111
-    iget-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LHsi;
+    iget-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LARi;
 
     .line 112
     .line 113
-    iget v6, v1, LHsi;->a:I
+    iget v6, v1, LARi;->a:I
 
     .line 114
     .line 115
-    invoke-static {v0, v6}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v6}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 116
     .line 117
     .line 118
-    iget v6, v1, LHsi;->b:I
+    iget v6, v1, LARi;->b:I
 
     .line 119
     .line 120
-    invoke-static {v0, v6}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v6}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 121
     .line 122
     .line 123
-    iget v6, v1, LHsi;->c:I
+    iget v6, v1, LARi;->c:I
 
     .line 124
     .line 125
-    invoke-static {v0, v6}, LKsk;->q(Ljava/nio/ByteBuffer;I)V
+    invoke-static {v0, v6}, LTSk;->l(Ljava/nio/ByteBuffer;I)V
 
     .line 126
     .line 127
     .line 128
-    iget v6, v1, LHsi;->d:I
+    iget v6, v1, LARi;->d:I
 
     .line 129
     .line 130
@@ -377,7 +377,7 @@
     .line 134
     .line 135
     .line 136
-    iget v6, v1, LHsi;->e:I
+    iget v6, v1, LARi;->e:I
 
     .line 137
     .line 138
@@ -393,7 +393,7 @@
     .line 142
     .line 143
     .line 144
-    iget-object v6, v1, LHsi;->f:[I
+    iget-object v6, v1, LARi;->f:[I
 
     .line 145
     .line 146
@@ -413,7 +413,7 @@
     .line 152
     .line 153
     .line 154
-    iget-object v2, v1, LHsi;->f:[I
+    iget-object v2, v1, LARi;->f:[I
 
     .line 155
     .line 156
@@ -433,7 +433,7 @@
     .line 162
     .line 163
     .line 164
-    iget-object v2, v1, LHsi;->f:[I
+    iget-object v2, v1, LARi;->f:[I
 
     .line 165
     .line 166
@@ -453,7 +453,7 @@
     .line 172
     .line 173
     .line 174
-    iget-object v1, v1, LHsi;->f:[I
+    iget-object v1, v1, LARi;->f:[I
 
     .line 175
     .line 176
@@ -498,11 +498,11 @@
     return-void
 .end method
 
-.method public getBoxRecord()LGsi;
+.method public getBoxRecord()LzRi;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LGsi;
+    iget-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LzRi;
 
     .line 2
     .line 3
@@ -589,11 +589,11 @@
     return-wide v0
 .end method
 
-.method public getStyleRecord()LHsi;
+.method public getStyleRecord()LARi;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LHsi;
+    iget-object v0, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LARi;
 
     .line 2
     .line 3
@@ -829,7 +829,7 @@
     return v0
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -850,7 +850,7 @@
     move-result-object p2
 
     .line 7
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 8
     .line 9
@@ -863,7 +863,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 15
     .line 16
@@ -875,7 +875,7 @@
 
     .line 19
     .line 20
-    invoke-static {p2}, Lkt9;->k(Ljava/nio/ByteBuffer;)J
+    invoke-static {p2}, LnC9;->k(Ljava/nio/ByteBuffer;)J
 
     .line 21
     .line 22
@@ -895,7 +895,7 @@
     move-result v0
 
     .line 30
-    invoke-static {v0}, Lkt9;->a(B)I
+    invoke-static {v0}, LnC9;->a(B)I
 
     .line 31
     .line 32
@@ -915,7 +915,7 @@
     move-result v0
 
     .line 40
-    invoke-static {v0}, Lkt9;->a(B)I
+    invoke-static {v0}, LnC9;->a(B)I
 
     .line 41
     .line 42
@@ -946,7 +946,7 @@
     move-result v2
 
     .line 55
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 56
     .line 57
@@ -973,7 +973,7 @@
     move-result v2
 
     .line 68
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 69
     .line 70
@@ -1000,7 +1000,7 @@
     move-result v2
 
     .line 81
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 82
     .line 83
@@ -1027,7 +1027,7 @@
     move-result v2
 
     .line 94
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 95
     .line 96
@@ -1042,7 +1042,7 @@
 
     .line 100
     .line 101
-    new-instance v1, LGsi;
+    new-instance v1, LzRi;
 
     .line 102
     .line 103
@@ -1051,11 +1051,11 @@
     .line 104
     .line 105
     .line 106
-    iput-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LGsi;
+    iput-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LzRi;
 
     .line 107
     .line 108
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 109
     .line 110
@@ -1063,11 +1063,11 @@
     move-result v2
 
     .line 112
-    iput v2, v1, LGsi;->a:I
+    iput v2, v1, LzRi;->a:I
 
     .line 113
     .line 114
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 115
     .line 116
@@ -1075,11 +1075,11 @@
     move-result v2
 
     .line 118
-    iput v2, v1, LGsi;->b:I
+    iput v2, v1, LzRi;->b:I
 
     .line 119
     .line 120
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 121
     .line 122
@@ -1087,11 +1087,11 @@
     move-result v2
 
     .line 124
-    iput v2, v1, LGsi;->c:I
+    iput v2, v1, LzRi;->c:I
 
     .line 125
     .line 126
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 127
     .line 128
@@ -1099,24 +1099,24 @@
     move-result v2
 
     .line 130
-    iput v2, v1, LGsi;->d:I
+    iput v2, v1, LzRi;->d:I
 
     .line 131
     .line 132
-    new-instance v1, LHsi;
+    new-instance v1, LARi;
 
     .line 133
     .line 134
-    invoke-direct {v1}, LHsi;-><init>()V
+    invoke-direct {v1}, LARi;-><init>()V
 
     .line 135
     .line 136
     .line 137
-    iput-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LHsi;
+    iput-object v1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LARi;
 
     .line 138
     .line 139
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 140
     .line 141
@@ -1124,11 +1124,11 @@
     move-result v2
 
     .line 143
-    iput v2, v1, LHsi;->a:I
+    iput v2, v1, LARi;->a:I
 
     .line 144
     .line 145
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 146
     .line 147
@@ -1136,11 +1136,11 @@
     move-result v2
 
     .line 149
-    iput v2, v1, LHsi;->b:I
+    iput v2, v1, LARi;->b:I
 
     .line 150
     .line 151
-    invoke-static {p2}, Lkt9;->i(Ljava/nio/ByteBuffer;)I
+    invoke-static {p2}, LnC9;->i(Ljava/nio/ByteBuffer;)I
 
     .line 152
     .line 153
@@ -1148,7 +1148,7 @@
     move-result v2
 
     .line 155
-    iput v2, v1, LHsi;->c:I
+    iput v2, v1, LARi;->c:I
 
     .line 156
     .line 157
@@ -1160,7 +1160,7 @@
     move-result v2
 
     .line 161
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 162
     .line 163
@@ -1168,7 +1168,7 @@
     move-result v2
 
     .line 165
-    iput v2, v1, LHsi;->d:I
+    iput v2, v1, LARi;->d:I
 
     .line 166
     .line 167
@@ -1180,7 +1180,7 @@
     move-result v2
 
     .line 171
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 172
     .line 173
@@ -1188,7 +1188,7 @@
     move-result v2
 
     .line 175
-    iput v2, v1, LHsi;->e:I
+    iput v2, v1, LARi;->e:I
 
     .line 176
     .line 177
@@ -1196,7 +1196,7 @@
 
     .line 178
     .line 179
-    iput-object v0, v1, LHsi;->f:[I
+    iput-object v0, v1, LARi;->f:[I
 
     .line 180
     .line 181
@@ -1208,7 +1208,7 @@
     move-result v2
 
     .line 185
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 186
     .line 187
@@ -1220,7 +1220,7 @@
 
     .line 190
     .line 191
-    iget-object v0, v1, LHsi;->f:[I
+    iget-object v0, v1, LARi;->f:[I
 
     .line 192
     .line 193
@@ -1232,7 +1232,7 @@
     move-result v2
 
     .line 197
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 198
     .line 199
@@ -1244,7 +1244,7 @@
 
     .line 202
     .line 203
-    iget-object v0, v1, LHsi;->f:[I
+    iget-object v0, v1, LARi;->f:[I
 
     .line 204
     .line 205
@@ -1256,7 +1256,7 @@
     move-result v2
 
     .line 209
-    invoke-static {v2}, Lkt9;->a(B)I
+    invoke-static {v2}, LnC9;->a(B)I
 
     .line 210
     .line 211
@@ -1268,7 +1268,7 @@
 
     .line 214
     .line 215
-    iget-object v0, v1, LHsi;->f:[I
+    iget-object v0, v1, LARi;->f:[I
 
     .line 216
     .line 217
@@ -1280,7 +1280,7 @@
     move-result p2
 
     .line 221
-    invoke-static {p2}, Lkt9;->a(B)I
+    invoke-static {p2}, LnC9;->a(B)I
 
     .line 222
     .line 223
@@ -1299,7 +1299,7 @@
     sub-long/2addr p3, v0
 
     .line 230
-    invoke-virtual {p0, p1, p3, p4, p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->initContainer(LI85;JLwy1;)V
+    invoke-virtual {p0, p1, p3, p4, p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->initContainer(LVe5;JLKB1;)V
 
     .line 231
     .line 232
@@ -1318,11 +1318,11 @@
     return-void
 .end method
 
-.method public setBoxRecord(LGsi;)V
+.method public setBoxRecord(LzRi;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LGsi;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->boxRecord:LzRi;
 
     .line 2
     .line 3
@@ -1567,11 +1567,11 @@
     return-void
 .end method
 
-.method public setStyleRecord(LHsi;)V
+.method public setStyleRecord(LARi;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LHsi;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/sampleentry/TextSampleEntry;->styleRecord:LARi;
 
     .line 2
     .line 3

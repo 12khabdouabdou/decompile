@@ -16,7 +16,7 @@
     .end annotation
 .end field
 
-.field private final version:LRLh;
+.field private final version:Llai;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "c"
     .end annotation
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/Long;LRLh;)V
+.method public constructor <init>(ILjava/lang/Long;Llai;)V
     .locals 0
 
     .line 1
@@ -37,12 +37,12 @@
     iput-object p2, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->learningAnimationLastShownTimeMillis:Ljava/lang/Long;
 
     .line 4
-    iput-object p3, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iput-object p3, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILjava/lang/Long;LRLh;ILHr5;)V
+.method public synthetic constructor <init>(ILjava/lang/Long;Llai;ILex5;)V
     .locals 0
 
     and-int/lit8 p4, p4, 0x4
@@ -53,12 +53,12 @@
 
     .line 5
     :cond_0
-    invoke-direct {p0, p1, p2, p3}, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;-><init>(ILjava/lang/Long;LRLh;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;-><init>(ILjava/lang/Long;Llai;)V
 
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;ILjava/lang/Long;LRLh;ILjava/lang/Object;)Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;
+.method public static synthetic copy$default(Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;ILjava/lang/Long;Llai;ILjava/lang/Object;)Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;
     .locals 0
 
     .line 1
@@ -96,12 +96,12 @@
 
     .line 16
     .line 17
-    iget-object p3, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iget-object p3, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
     .line 18
     .line 19
     :cond_2
-    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->copy(ILjava/lang/Long;LRLh;)Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->copy(ILjava/lang/Long;Llai;)Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;
 
     .line 20
     .line 21
@@ -136,18 +136,18 @@
     return-object v0
 .end method
 
-.method public final component3()LRLh;
+.method public final component3()Llai;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iget-object v0, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final copy(ILjava/lang/Long;LRLh;)Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;
+.method public final copy(ILjava/lang/Long;Llai;)Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;
     .locals 1
 
     .line 1
@@ -155,7 +155,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2, p3}, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;-><init>(ILjava/lang/Long;LRLh;)V
+    invoke-direct {v0, p1, p2, p3}, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;-><init>(ILjava/lang/Long;Llai;)V
 
     .line 4
     .line 5
@@ -197,7 +197,7 @@
 
     iget-object v3, p1, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->learningAnimationLastShownTimeMillis:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -206,9 +206,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iget-object v1, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
-    iget-object p1, p1, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iget-object p1, p1, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
     if-eq v1, p1, :cond_4
 
@@ -240,11 +240,11 @@
     return v0
 .end method
 
-.method public final getVersion()LRLh;
+.method public final getVersion()Llai;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iget-object v0, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
     .line 2
     .line 3
@@ -278,7 +278,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iget-object v1, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
     if-nez v1, :cond_1
 
@@ -302,7 +302,7 @@
 
     iget-object v1, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->learningAnimationLastShownTimeMillis:Ljava/lang/Long;
 
-    iget-object v2, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:LRLh;
+    iget-object v2, p0, Lcom/snap/discoverfeed/config/StoryCarouselHiddenSectionStats;->version:Llai;
 
     new-instance v3, Ljava/lang/StringBuilder;
 

@@ -1,210 +1,266 @@
 .class public final LhM2;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'brandName\':s,\'productName\':s,\'attachmentUrl\':s,\'productImageUrl\':s,\'adId\':s,\'impressionId\':s,\'rank\':d,\'shippingInfo\':s?,\'starRating\':d@?,\'price\':s?,\'salePrice\':s?,\'installmentInfo\':r?:\'[0]\',\'adItemPostbackInfo\':r?:\'[1]\'"
-    typeReferences = {
-        Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;,
-        Lcom/snap/modules/chat_ad_common/ChatAdItemPostbackInfoContext;
-    }
-.end annotation
-
-
 # instance fields
-.field private _adId:Ljava/lang/String;
+.field public final a:Ly45;
 
-.field private _adItemPostbackInfo:Lcom/snap/modules/chat_ad_common/ChatAdItemPostbackInfoContext;
+.field public final b:Ly45;
 
-.field private _attachmentUrl:Ljava/lang/String;
+.field public final c:LZL4;
 
-.field private _brandName:Ljava/lang/String;
-
-.field private _impressionId:Ljava/lang/String;
-
-.field private _installmentInfo:Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;
-
-.field private _price:Ljava/lang/String;
-
-.field private _productImageUrl:Ljava/lang/String;
-
-.field private _productName:Ljava/lang/String;
-
-.field private _rank:D
-
-.field private _salePrice:Ljava/lang/String;
-
-.field private _shippingInfo:Ljava/lang/String;
-
-.field private _starRating:Ljava/lang/Double;
+.field public final d:LREi;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;D)V
+.method public constructor <init>(Ly45;Ly45;LZL4;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, LhM2;->_brandName:Ljava/lang/String;
-
     .line 3
-    iput-object p2, p0, LhM2;->_productName:Ljava/lang/String;
-
     .line 4
-    iput-object p3, p0, LhM2;->_attachmentUrl:Ljava/lang/String;
+    iput-object p1, p0, LhM2;->a:Ly45;
 
     .line 5
-    iput-object p4, p0, LhM2;->_productImageUrl:Ljava/lang/String;
-
     .line 6
-    iput-object p5, p0, LhM2;->_adId:Ljava/lang/String;
+    iput-object p2, p0, LhM2;->b:Ly45;
 
     .line 7
-    iput-object p6, p0, LhM2;->_impressionId:Ljava/lang/String;
-
     .line 8
-    iput-wide p7, p0, LhM2;->_rank:D
-
-    const/4 p1, 0x0
+    iput-object p3, p0, LhM2;->c:LZL4;
 
     .line 9
-    iput-object p1, p0, LhM2;->_shippingInfo:Ljava/lang/String;
-
     .line 10
-    iput-object p1, p0, LhM2;->_starRating:Ljava/lang/Double;
+    new-instance p1, LOq2;
 
     .line 11
-    iput-object p1, p0, LhM2;->_price:Ljava/lang/String;
-
     .line 12
-    iput-object p1, p0, LhM2;->_salePrice:Ljava/lang/String;
+    const/16 p2, 0xf
 
     .line 13
-    iput-object p1, p0, LhM2;->_installmentInfo:Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;
-
     .line 14
-    iput-object p1, p0, LhM2;->_adItemPostbackInfo:Lcom/snap/modules/chat_ad_common/ChatAdItemPostbackInfoContext;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DLjava/lang/String;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;Lcom/snap/modules/chat_ad_common/ChatAdItemPostbackInfoContext;)V
-    .locals 0
+    invoke-direct {p1, p2, p0}, LOq2;-><init>(ILjava/lang/Object;)V
 
     .line 15
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 16
-    iput-object p1, p0, LhM2;->_brandName:Ljava/lang/String;
-
     .line 17
-    iput-object p2, p0, LhM2;->_productName:Ljava/lang/String;
+    new-instance p2, LREi;
 
     .line 18
-    iput-object p3, p0, LhM2;->_attachmentUrl:Ljava/lang/String;
-
     .line 19
-    iput-object p4, p0, LhM2;->_productImageUrl:Ljava/lang/String;
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 20
-    iput-object p5, p0, LhM2;->_adId:Ljava/lang/String;
-
     .line 21
-    iput-object p6, p0, LhM2;->_impressionId:Ljava/lang/String;
-
     .line 22
-    iput-wide p7, p0, LhM2;->_rank:D
+    iput-object p2, p0, LhM2;->d:LREi;
 
     .line 23
-    iput-object p9, p0, LhM2;->_shippingInfo:Ljava/lang/String;
-
     .line 24
-    iput-object p10, p0, LhM2;->_starRating:Ljava/lang/Double;
+    return-void
+.end method
+
+.method public static final a(LhM2;Lcjg;)Z
+    .locals 2
+
+    .line 1
+    instance-of p0, p1, LgM2;
+
+    .line 2
+    .line 3
+    const/4 v0, 0x1
+
+    .line 4
+    if-eqz p0, :cond_3
+
+    .line 5
+    .line 6
+    invoke-interface {p1}, Ldjg;->d()Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    sget-object v1, Lx1c;->c:Lx1c;
+
+    .line 11
+    .line 12
+    iget-object v1, v1, Lx1c;->a:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v1
+
+    .line 18
+    if-eqz v1, :cond_0
+
+    .line 19
+    .line 20
+    const/4 v1, 0x1
+
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_0
+    sget-object v1, Lx1c;->l0:Lx1c;
+
+    .line 23
+    .line 24
+    iget-object v1, v1, Lx1c;->a:Ljava/lang/String;
 
     .line 25
-    iput-object p11, p0, LhM2;->_price:Ljava/lang/String;
-
     .line 26
-    iput-object p12, p0, LhM2;->_salePrice:Ljava/lang/String;
+    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     .line 27
-    iput-object p13, p0, LhM2;->_installmentInfo:Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;
-
     .line 28
-    iput-object p14, p0, LhM2;->_adItemPostbackInfo:Lcom/snap/modules/chat_ad_common/ChatAdItemPostbackInfoContext;
+    .line 29
+    move-result v1
 
-    return-void
-.end method
+    .line 30
+    :goto_0
+    if-eqz v1, :cond_1
 
+    .line 31
+    .line 32
+    const/4 v1, 0x1
 
-# virtual methods
-.method public final a(Lcom/snap/modules/chat_ad_common/ChatAdItemPostbackInfoContext;)V
-    .locals 0
+    .line 33
+    goto :goto_1
 
-    .line 1
-    iput-object p1, p0, LhM2;->_adItemPostbackInfo:Lcom/snap/modules/chat_ad_common/ChatAdItemPostbackInfoContext;
+    .line 34
+    :cond_1
+    sget-object v1, Lx1c;->p0:Lx1c;
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 35
+    .line 36
+    iget-object v1, v1, Lx1c;->a:Ljava/lang/String;
 
-.method public final b(Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;)V
-    .locals 0
+    .line 37
+    .line 38
+    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    .line 1
-    iput-object p1, p0, LhM2;->_installmentInfo:Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;
+    .line 39
+    .line 40
+    .line 41
+    move-result v1
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 42
+    :goto_1
+    if-eqz v1, :cond_2
 
-.method public final c(Ljava/lang/String;)V
-    .locals 0
+    .line 43
+    .line 44
+    const/4 p0, 0x1
 
-    .line 1
-    iput-object p1, p0, LhM2;->_price:Ljava/lang/String;
+    .line 45
+    goto :goto_2
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 46
+    :cond_2
+    sget-object v1, Lx1c;->q0:Lx1c;
 
-.method public final d(Ljava/lang/String;)V
-    .locals 0
+    .line 47
+    .line 48
+    iget-object v1, v1, Lx1c;->a:Ljava/lang/String;
 
-    .line 1
-    iput-object p1, p0, LhM2;->_salePrice:Ljava/lang/String;
+    .line 49
+    .line 50
+    invoke-virtual {p0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 51
+    .line 52
+    .line 53
+    move-result p0
 
-.method public final e(Ljava/lang/String;)V
-    .locals 0
+    .line 54
+    :goto_2
+    if-eqz p0, :cond_4
 
-    .line 1
-    iput-object p1, p0, LhM2;->_shippingInfo:Ljava/lang/String;
+    .line 55
+    .line 56
+    check-cast p1, LgM2;
 
-    .line 2
-    .line 3
-    return-void
-.end method
+    .line 57
+    .line 58
+    iget-object p0, p1, LgM2;->d:LLxb;
 
-.method public final f(Ljava/lang/Double;)V
-    .locals 0
+    .line 59
+    .line 60
+    iget-object p0, p0, LLxb;->b:Ljava/lang/String;
 
-    .line 1
-    iput-object p1, p0, LhM2;->_starRating:Ljava/lang/Double;
+    .line 61
+    .line 62
+    const-string v1, "VIDEO_NO_SOUND"
 
-    .line 2
-    .line 3
-    return-void
+    .line 63
+    .line 64
+    invoke-static {p0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 65
+    .line 66
+    .line 67
+    move-result p0
+
+    .line 68
+    if-nez p0, :cond_4
+
+    .line 69
+    .line 70
+    iget-object p0, p1, LgM2;->d:LLxb;
+
+    .line 71
+    .line 72
+    iget-object p0, p0, LLxb;->b:Ljava/lang/String;
+
+    .line 73
+    .line 74
+    const-string p1, "VIDEO"
+
+    .line 75
+    .line 76
+    invoke-static {p0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 77
+    .line 78
+    .line 79
+    move-result p0
+
+    .line 80
+    if-nez p0, :cond_4
+
+    .line 81
+    .line 82
+    return v0
+
+    .line 83
+    :cond_3
+    instance-of p0, p1, LBU0;
+
+    .line 84
+    .line 85
+    if-eqz p0, :cond_4
+
+    .line 86
+    .line 87
+    return v0
+
+    .line 88
+    :cond_4
+    const/4 p0, 0x0
+
+    .line 89
+    return p0
 .end method

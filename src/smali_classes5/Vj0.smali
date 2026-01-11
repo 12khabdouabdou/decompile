@@ -3,23 +3,64 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements LZD1;
 
 
 # instance fields
+.field public X:Ljava/lang/Object;
+
+.field public Y:Ljava/lang/Object;
+
+.field public Z:Ljava/lang/Object;
+
 .field public final synthetic a:I
 
-.field public final synthetic b:LXfi;
+.field public b:Ljava/lang/Object;
+
+.field public c:Ljava/lang/Object;
+
+.field public e0:Ljava/lang/Object;
+
+.field public f0:Ljava/lang/Object;
+
+.field public t:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(ILXfi;)V
-    .locals 0
+.method public synthetic constructor <init>()V
+    .locals 1
 
     .line 1
-    iput p1, p0, LVj0;->a:I
+    const/4 v0, 0x2
 
-    iput-object p2, p0, LVj0;->b:LXfi;
+    iput v0, p0, LVj0;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;LCu9;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 2
+    iput p9, p0, LVj0;->a:I
+
+    iput-object p1, p0, LVj0;->b:Ljava/lang/Object;
+
+    iput-object p2, p0, LVj0;->c:Ljava/lang/Object;
+
+    iput-object p3, p0, LVj0;->t:Ljava/lang/Object;
+
+    iput-object p4, p0, LVj0;->X:Ljava/lang/Object;
+
+    iput-object p5, p0, LVj0;->Y:Ljava/lang/Object;
+
+    iput-object p6, p0, LVj0;->Z:Ljava/lang/Object;
+
+    iput-object p7, p0, LVj0;->e0:Ljava/lang/Object;
+
+    iput-object p8, p0, LVj0;->f0:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,8 +69,19 @@
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public a(LHP;)LVj0;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LVj0;->b:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final b()Ljava/lang/Object;
+    .locals 10
 
     .line 1
     iget v0, p0, LVj0;->a:I
@@ -41,179 +93,260 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/util/List;
+    iget-object v0, p0, LVj0;->b:Ljava/lang/Object;
 
     .line 7
     .line 8
-    check-cast p1, Ljava/lang/Iterable;
+    move-object v3, v0
 
     .line 9
+    check-cast v3, LHP;
+
     .line 10
-    new-instance v0, Ljava/util/ArrayList;
-
     .line 11
-    .line 12
-    const/16 v1, 0xa
+    iget-object v0, p0, LVj0;->c:Ljava/lang/Object;
 
+    .line 12
     .line 13
+    move-object v4, v0
+
     .line 14
-    invoke-static {p1, v1}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    check-cast v4, Lrp0;
 
     .line 15
     .line 16
-    .line 17
-    move-result v1
+    iget-object v0, p0, LVj0;->t:Ljava/lang/Object;
 
+    .line 17
     .line 18
-    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+    move-object v5, v0
 
     .line 19
+    check-cast v5, Lio/reactivex/rxjava3/core/Observable;
+
     .line 20
     .line 21
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    iget-object v0, p0, LVj0;->X:Ljava/lang/Object;
 
     .line 22
     .line 23
+    move-object v6, v0
+
     .line 24
-    move-result-object p1
+    check-cast v6, Lio/reactivex/rxjava3/core/Observable;
 
     .line 25
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
     .line 26
+    iget-object v0, p0, LVj0;->Y:Ljava/lang/Object;
+
     .line 27
     .line 28
-    move-result v1
+    move-object v7, v0
 
     .line 29
-    if-eqz v1, :cond_0
+    check-cast v7, Lbda;
 
     .line 30
     .line 31
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    iget-object v0, p0, LVj0;->Z:Ljava/lang/Object;
 
     .line 32
     .line 33
+    move-object v8, v0
+
     .line 34
-    move-result-object v1
+    check-cast v8, Ljava/util/Set;
 
     .line 35
-    check-cast v1, LTg6;
-
     .line 36
-    .line 37
-    iget-object v2, p0, LVj0;->b:LXfi;
+    iget-object v0, p0, LVj0;->e0:Ljava/lang/Object;
 
+    .line 37
     .line 38
+    move-object v9, v0
+
     .line 39
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    check-cast v9, Lio/reactivex/rxjava3/core/Observable;
 
     .line 40
     .line 41
-    .line 42
-    move-result-object v2
+    iget-object v0, p0, LVj0;->f0:Ljava/lang/Object;
 
+    .line 42
     .line 43
-    check-cast v2, LJh6;
+    move-object v2, v0
 
     .line 44
-    .line 45
-    invoke-virtual {v2, v1}, LJh6;->d(LTg6;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    check-cast v2, LfL5;
 
+    .line 45
     .line 46
+    new-instance v1, LgU4;
+
     .line 47
     .line 48
-    move-result-object v1
+    invoke-direct/range {v1 .. v9}, LgU4;-><init>(LfL5;LHP;Lrp0;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lbda;Ljava/util/Set;Lio/reactivex/rxjava3/core/Observable;)V
 
     .line 49
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
     .line 50
     .line 51
+    return-object v1
+
     .line 52
-    goto :goto_0
+    :pswitch_0
+    iget-object v0, p0, LVj0;->b:Ljava/lang/Object;
 
     .line 53
-    :cond_0
-    invoke-static {v0}, LMpk;->t(Ljava/util/List;)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
     .line 54
+    check-cast v0, LEi0;
+
     .line 55
     .line 56
-    move-result-object p1
+    invoke-virtual {v0}, LEi0;->b()Ljava/lang/Object;
 
     .line 57
-    return-object p1
-
     .line 58
-    :pswitch_0
-    check-cast p1, LTc2;
-
     .line 59
+    move-result-object v0
+
     .line 60
-    instance-of v0, p1, LRc2;
+    check-cast v0, LQ05;
 
     .line 61
     .line 62
-    if-eqz v0, :cond_1
+    iget-object v1, v0, LQ05;->Y:LCBe;
 
     .line 63
     .line 64
-    iget-object p1, p0, LVj0;->b:LXfi;
+    invoke-interface {v1}, LDBe;->get()Ljava/lang/Object;
 
     .line 65
     .line 66
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 67
-    .line 68
-    .line 69
-    move-result-object p1
+    move-result-object v1
 
+    .line 68
+    check-cast v1, LfI5;
+
+    .line 69
     .line 70
-    check-cast p1, Lio/reactivex/rxjava3/core/Observable;
+    invoke-virtual {v0}, LQ05;->observe()Lio/reactivex/rxjava3/core/Observable;
 
     .line 71
     .line 72
-    goto :goto_1
-
     .line 73
-    :cond_1
-    instance-of p1, p1, LSc2;
+    move-result-object v0
 
     .line 74
-    .line 75
-    if-eqz p1, :cond_2
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Observable;->H0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
+    .line 75
     .line 76
     .line 77
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableEmpty;
+    move-result-object v0
 
     .line 78
-    .line 79
-    :goto_1
-    return-object p1
+    new-instance v2, LUk0;
 
+    .line 79
     .line 80
-    :cond_2
-    new-instance p1, LFzc;
+    const/4 v3, 0x0
 
     .line 81
-    .line 82
-    invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
+    invoke-direct {v2, v0, p0, v1, v3}, LUk0;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 82
     .line 83
     .line 84
+    return-object v2
+
     .line 85
-    throw p1
+    :pswitch_1
+    new-instance v0, LWh0;
 
     .line 86
-    nop
-
     .line 87
+    const/16 v1, 0xd
+
+    .line 88
+    .line 89
+    invoke-direct {v0, p0, v1}, LWh0;-><init>(LZD1;I)V
+
+    .line 90
+    .line 91
+    .line 92
+    return-object v0
+
+    .line 93
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_1
         :pswitch_0
     .end packed-switch
+.end method
+
+.method public e(Lrp0;)LVj0;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LVj0;->c:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public f(Lio/reactivex/rxjava3/core/Observable;)LVj0;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LVj0;->t:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public g(Lio/reactivex/rxjava3/core/Observable;)LVj0;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LVj0;->X:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public h(Lbda;)LVj0;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LVj0;->Y:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public i(Ljava/util/LinkedHashSet;)LVj0;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LVj0;->Z:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public j(Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;)LVj0;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LVj0;->e0:Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    return-object p0
 .end method

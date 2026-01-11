@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lc7i;
+.implements Ltvi;
 
 
 # annotations
@@ -22,13 +22,13 @@
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;",
-        "Lc7i;"
+        "Ltvi;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:LV6i;
+.field public final a:Lmvi;
 
 .field public final b:[Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method public constructor <init>(LV6i;I)V
+.method public constructor <init>(Lmvi;I)V
     .locals 1
 
     .line 1
@@ -58,7 +58,7 @@
 
     .line 10
     .line 11
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbCoordinator;->a:LV6i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbCoordinator;->a:Lmvi;
 
     .line 12
     .line 13
@@ -318,12 +318,12 @@
     return-void
 .end method
 
-.method public subscribe([LZne;)V
+.method public subscribe([LSFe;)V
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "([",
-            "LZne;",
+            "LSFe;",
             ")V"
         }
     .end annotation
@@ -343,7 +343,7 @@
 
     .line 6
     :goto_0
-    iget-object v4, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbCoordinator;->a:LV6i;
+    iget-object v4, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbCoordinator;->a:Lmvi;
 
     .line 7
     .line 8
@@ -359,7 +359,7 @@
 
     .line 13
     .line 14
-    invoke-direct {v5, p0, v6, v4}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;-><init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbCoordinator;ILV6i;)V
+    invoke-direct {v5, p0, v6, v4}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;-><init>(Lio/reactivex/rxjava3/internal/operators/flowable/FlowableAmb$AmbCoordinator;ILmvi;)V
 
     .line 15
     .line 16
@@ -384,7 +384,7 @@
     .line 24
     .line 25
     .line 26
-    invoke-interface {v4, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v4, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 27
     .line 28
@@ -418,7 +418,7 @@
 
     .line 41
     .line 42
-    invoke-interface {v4, v5}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v4, v5}, LSFe;->subscribe(Lmvi;)V
 
     .line 43
     .line 44

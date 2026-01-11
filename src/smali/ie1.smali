@@ -1,143 +1,190 @@
-.class public final enum Lie1;
-.super Ljava/lang/Enum;
+.class public final Lie1;
+.super LJP9;
 .source "SourceFile"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lie1;",
-        ">;"
-    }
-.end annotation
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
-# static fields
-.field public static final enum a:Lie1;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "PROD"
-    .end annotation
-.end field
+# instance fields
+.field public final synthetic a:I
 
-.field public static final enum b:Lie1;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "STAGING"
-    .end annotation
-.end field
-
-.field public static final synthetic c:[Lie1;
+.field public final synthetic b:Ly45;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public synthetic constructor <init>(ILy45;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    iput p1, p0, Lie1;->a:I
 
-    .line 2
-    const/4 v1, 0x0
+    iput-object p2, p0, Lie1;->b:Ly45;
 
-    .line 3
-    new-instance v2, Lie1;
+    const/4 p1, 0x0
 
-    .line 4
-    .line 5
-    const-string v3, "PROD"
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 6
-    .line 7
-    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 8
-    .line 9
-    .line 10
-    sput-object v2, Lie1;->a:Lie1;
-
-    .line 11
-    .line 12
-    new-instance v3, Lie1;
-
-    .line 13
-    .line 14
-    const-string v4, "STAGING"
-
-    .line 15
-    .line 16
-    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v3, Lie1;->b:Lie1;
-
-    .line 20
-    .line 21
-    const/4 v4, 0x2
-
-    .line 22
-    new-array v4, v4, [Lie1;
-
-    .line 23
-    .line 24
-    aput-object v2, v4, v1
-
-    .line 25
-    .line 26
-    aput-object v3, v4, v0
-
-    .line 27
-    .line 28
-    sput-object v4, Lie1;->c:[Lie1;
-
-    .line 29
-    .line 30
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lie1;
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
     .locals 1
 
     .line 1
-    const-class v0, Lie1;
+    iget v0, p0, Lie1;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    iget-object v0, p0, Lie1;->b:Ly45;
 
     .line 7
-    check-cast p0, Lie1;
-
     .line 8
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
     .line 9
-    return-object p0
-.end method
-
-.method public static values()[Lie1;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lie1;->c:[Lie1;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, [Lie1;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
+    .line 10
+    .line 11
     move-result-object v0
 
-    .line 7
-    check-cast v0, [Lie1;
+    .line 12
+    check-cast v0, Landroid/content/Context;
 
-    .line 8
-    .line 9
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
     return-object v0
+
+    .line 19
+    :pswitch_0
+    iget-object v0, p0, Lie1;->b:Ly45;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
+    check-cast v0, LcOj;
+
+    .line 26
+    .line 27
+    return-object v0
+
+    .line 28
+    :pswitch_1
+    iget-object v0, p0, Lie1;->b:Ly45;
+
+    .line 29
+    .line 30
+    return-object v0
+
+    .line 31
+    :pswitch_2
+    iget-object v0, p0, Lie1;->b:Ly45;
+
+    .line 32
+    .line 33
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v0
+
+    .line 37
+    check-cast v0, Lmjg;
+
+    .line 38
+    .line 39
+    return-object v0
+
+    .line 40
+    :pswitch_3
+    iget-object v0, p0, Lie1;->b:Ly45;
+
+    .line 41
+    .line 42
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
+    .line 43
+    .line 44
+    .line 45
+    move-result-object v0
+
+    .line 46
+    check-cast v0, LaK3;
+
+    .line 47
+    .line 48
+    return-object v0
+
+    .line 49
+    :pswitch_4
+    iget-object v0, p0, Lie1;->b:Ly45;
+
+    .line 50
+    .line 51
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v0
+
+    .line 55
+    check-cast v0, Lizh;
+
+    .line 56
+    .line 57
+    return-object v0
+
+    .line 58
+    :pswitch_5
+    iget-object v0, p0, Lie1;->b:Ly45;
+
+    .line 59
+    .line 60
+    invoke-virtual {v0}, Ly45;->get()Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    check-cast v0, LUe1;
+
+    .line 65
+    .line 66
+    return-object v0
+
+    .line 67
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

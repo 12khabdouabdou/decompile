@@ -1,5 +1,5 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -8,19 +8,19 @@
 
 .field public final c:Ljava/lang/String;
 
-.field public final d:LdXc;
+.field public final d:LYbd;
 
-.field public final e:LOXc;
+.field public final e:LJcd;
 
 .field public final f:J
 
 
 # direct methods
-.method public constructor <init>(ZLjava/lang/String;LdXc;LOXc;J)V
+.method public constructor <init>(ZLjava/lang/String;LYbd;LJcd;J)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -33,11 +33,11 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LdXc;
+    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LYbd;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LOXc;
+    iput-object p4, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LJcd;
 
     .line 11
     .line 12
@@ -50,11 +50,11 @@
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LYbd;
 
     .line 2
     .line 3
@@ -95,7 +95,7 @@
 
     iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->c:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -104,11 +104,11 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LYbd;
 
-    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LdXc;
+    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LYbd;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -117,11 +117,11 @@
     return v2
 
     :cond_4
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LJcd;
 
-    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LOXc;
+    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LJcd;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -181,7 +181,7 @@
 
     .line 15
     .line 16
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 17
     .line 18
@@ -189,11 +189,11 @@
     move-result v0
 
     .line 20
-    iget-object v2, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LdXc;
+    iget-object v2, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LYbd;
 
     .line 21
     .line 22
-    invoke-static {v2, v0, v1}, LG0;->c(LdXc;II)I
+    invoke-static {v2, v0, v1}, LZ0;->a(LYbd;II)I
 
     .line 23
     .line 24
@@ -201,7 +201,7 @@
     move-result v0
 
     .line 26
-    iget-object v2, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LOXc;
+    iget-object v2, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LJcd;
 
     .line 27
     .line 28
@@ -297,7 +297,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->d:LYbd;
 
     .line 29
     .line 30
@@ -315,7 +315,7 @@
     .line 36
     .line 37
     .line 38
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$OperaFragmentRestorationInfo;->e:LJcd;
 
     .line 39
     .line 40
@@ -341,7 +341,7 @@
 
     .line 51
     .line 52
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v3}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 53
     .line 54

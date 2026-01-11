@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/commerce_dynamic_page/ScreenshopMemoriesConfiguration;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'nativeMediaLibrary\':r:\'[0]\',\'assetIds\':a<s>,\'initialAssetId\':s?,\'maxHeightForContext\':d@?"
     typeReferences = {

@@ -1,383 +1,282 @@
-.class public abstract LZQb;
+.class public final LZQb;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
-# static fields
-.field public static final a:Lgbd;
 
-.field public static final b:Lgbd;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final c:Lgbd;
-
-.field public static final d:Lgbd;
-
-.field public static final e:Lgbd;
-
-.field public static final f:Lgbd;
-
-.field public static final g:Lgbd;
-
-.field public static final h:Lgbd;
-
-.field public static final i:Lgbd;
-
-.field public static final j:Lgbd;
-
-.field public static final k:Lgbd;
-
-.field public static final l:Lgbd;
-
-.field public static final m:Lgbd;
-
-.field public static final n:Lgbd;
-
-.field public static final o:Lgbd;
-
-.field public static final p:Lgbd;
-
-.field public static final q:Lgbd;
-
-.field public static final r:Lfbd;
-
-.field public static final s:Lgbd;
+.field public final synthetic b:LcRb;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(LcRb;I)V
+    .locals 0
 
     .line 1
-    sget-object v0, Libd;->t:Lebd;
+    iput p2, p0, LZQb;->a:I
+
+    iput-object p1, p0, LZQb;->b:LcRb;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final accept(Ljava/lang/Object;)V
+    .locals 7
+
+    .line 1
+    iget v0, p0, LZQb;->a:I
 
     .line 2
     .line 3
-    new-instance v0, Lgbd;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const-string v1, "SNAP_METRIC_TRACKING_ID"
-
     .line 6
-    .line 7
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    check-cast p1, LFrd;
 
+    .line 7
     .line 8
+    iget-boolean p1, p1, LFrd;->a:Z
+
     .line 9
     .line 10
-    sput-object v0, LZQb;->a:Lgbd;
+    if-eqz p1, :cond_1
 
     .line 11
     .line 12
-    new-instance v0, Lgbd;
+    new-instance p1, LVZb;
 
     .line 13
     .line 14
-    const-string v1, "SNAP_IN_SAVED_STATE"
+    const/4 v0, 0x0
 
     .line 15
-    .line 16
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v0}, LVZb;-><init>(Z)V
 
+    .line 16
     .line 17
     .line 18
+    iget-object v1, p0, LZQb;->b:LcRb;
+
     .line 19
-    sput-object v0, LZQb;->b:Lgbd;
-
     .line 20
+    iget-object v2, v1, LcRb;->Z:LmGc;
+
     .line 21
-    new-instance v0, Lgbd;
-
     .line 22
-    .line 23
-    const-string v1, "MESSAGE_ID"
+    invoke-virtual {v2}, LmGc;->q()LL4b;
 
+    .line 23
     .line 24
     .line 25
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    move-result-object v3
 
     .line 26
+    sget-object v4, LaOb;->e:LL4b;
+
     .line 27
     .line 28
-    sput-object v0, LZQb;->c:Lgbd;
+    invoke-static {v3, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
-    new-instance v0, Lgbd;
-
     .line 31
+    move-result v3
+
     .line 32
-    const-string v1, "IS_REENCRYPTED"
+    if-eqz v3, :cond_0
 
     .line 33
     .line 34
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    const/4 v3, 0x0
 
     .line 35
+    iget-object v5, v1, LcRb;->Z:LmGc;
+
     .line 36
     .line 37
-    sput-object v0, LZQb;->d:Lgbd;
+    const/4 v6, 0x1
 
     .line 38
-    .line 39
-    new-instance v0, Lgbd;
+    invoke-virtual {v5, v4, v6, v0, v3}, LmGc;->D(LL4b;ZZLkFc;)V
 
+    .line 39
     .line 40
     .line 41
-    const-string v1, "MESSAGE_ENCRYPTION"
+    :cond_0
+    iget-object v3, v1, LcRb;->Y:Landroid/content/Context;
 
     .line 42
     .line 43
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    const-string v4, "input_method"
 
     .line 44
     .line 45
-    .line 46
-    sput-object v0, LZQb;->e:Lgbd;
+    invoke-virtual {v3, v4}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
+    .line 46
     .line 47
     .line 48
-    new-instance v0, Lgbd;
+    move-result-object v3
 
     .line 49
+    check-cast v3, Landroid/view/inputmethod/InputMethodManager;
+
     .line 50
-    const-string v1, "publisher_logo_uri"
-
     .line 51
-    .line 52
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    iget-object v4, v1, LcRb;->e0:Le35;
 
+    .line 52
     .line 53
+    invoke-virtual {v4}, Le35;->get()Ljava/lang/Object;
+
     .line 54
     .line 55
-    sput-object v0, LZQb;->f:Lgbd;
-
     .line 56
+    move-result-object v4
+
     .line 57
-    new-instance v0, Lgbd;
+    check-cast v4, LWQb;
 
     .line 58
     .line 59
-    const-string v1, "user_is_sender"
+    invoke-virtual {v1}, LcRb;->a()Landroid/view/View;
 
     .line 60
     .line 61
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
     .line 62
-    .line 63
-    .line 64
-    sput-object v0, LZQb;->g:Lgbd;
+    move-result-object v1
 
+    .line 63
+    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
+
+    .line 64
     .line 65
     .line 66
-    new-instance v0, Lgbd;
+    move-result-object v1
 
     .line 67
-    .line 68
-    const-string v1, "IS_MEDIA_SAVED"
+    invoke-virtual {v3, v1, v0}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
+    .line 68
     .line 69
     .line 70
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    iget-object v0, v4, LWQb;->q0:LxFc;
 
     .line 71
     .line 72
-    .line 73
-    sput-object v0, LZQb;->h:Lgbd;
+    invoke-virtual {v2, v4, v0, p1}, LmGc;->w(LG4b;LyFc;LkFc;)V
 
+    .line 73
     .line 74
     .line 75
-    new-instance v0, Lgbd;
+    :cond_1
+    return-void
 
     .line 76
+    :pswitch_0
+    check-cast p1, LDpd;
+
     .line 77
-    const-string v1, "IS_MEDIA_SAVEABLE"
-
     .line 78
-    .line 79
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
 
+    .line 79
     .line 80
+    check-cast v0, Landroid/graphics/Rect;
+
     .line 81
     .line 82
-    sput-object v0, LZQb;->i:Lgbd;
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
     .line 83
     .line 84
-    new-instance v0, Lgbd;
+    check-cast p1, Ljava/lang/Number;
 
     .line 85
     .line 86
-    const-string v1, "IS_QUOTED_MESSAGE"
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     .line 87
     .line 88
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
     .line 89
+    move-result p1
+
     .line 90
+    iget-object v1, p0, LZQb;->b:LcRb;
+
     .line 91
-    sput-object v0, LZQb;->j:Lgbd;
-
     .line 92
-    .line 93
-    new-instance v0, Lgbd;
+    invoke-virtual {v1}, LcRb;->a()Landroid/view/View;
 
+    .line 93
     .line 94
     .line 95
-    const-string v1, "IS_REPLAY"
+    move-result-object v2
 
     .line 96
-    .line 97
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v1}, LcRb;->a()Landroid/view/View;
 
+    .line 97
     .line 98
     .line 99
+    move-result-object v3
+
     .line 100
-    sput-object v0, LZQb;->k:Lgbd;
+    invoke-virtual {v3}, Landroid/view/View;->getPaddingLeft()I
 
     .line 101
     .line 102
-    new-instance v0, Lgbd;
-
     .line 103
+    move-result v3
+
     .line 104
-    const-string v1, "IS_CHAT_SNAP_VIEW"
+    iget v4, v0, Landroid/graphics/Rect;->top:I
 
     .line 105
     .line 106
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v1}, LcRb;->a()Landroid/view/View;
 
     .line 107
     .line 108
     .line 109
-    sput-object v0, LZQb;->l:Lgbd;
+    move-result-object v1
 
     .line 110
-    .line 111
-    new-instance v0, Lgbd;
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingRight()I
 
+    .line 111
     .line 112
     .line 113
-    const-string v1, "IS_BUNDLED_SNAP"
+    move-result v1
 
     .line 114
+    iget v0, v0, Landroid/graphics/Rect;->bottom:I
+
     .line 115
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
     .line 116
-    .line 117
-    .line 118
-    sput-object v0, LZQb;->m:Lgbd;
+    add-int/2addr v0, p1
 
+    .line 117
+    invoke-virtual {v2, v3, v4, v1, v0}, Landroid/view/View;->setPadding(IIII)V
+
+    .line 118
     .line 119
     .line 120
-    new-instance v0, Lgbd;
+    return-void
 
     .line 121
-    .line 122
-    const-string v1, "SENDING_SOURCE"
-
-    .line 123
-    .line 124
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
-    .line 125
-    .line 126
-    .line 127
-    sput-object v0, LZQb;->n:Lgbd;
-
-    .line 128
-    .line 129
-    new-instance v0, Lgbd;
-
-    .line 130
-    .line 131
-    const-string v1, "MEDIA_CREATE_TIMESTAMP"
-
-    .line 132
-    .line 133
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
-    .line 134
-    .line 135
-    .line 136
-    sput-object v0, LZQb;->o:Lgbd;
-
-    .line 137
-    .line 138
-    new-instance v0, Lgbd;
-
-    .line 139
-    .line 140
-    const-string v1, "EXTERNAL_MEDIA_INCLUSION"
-
-    .line 141
-    .line 142
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
-    .line 143
-    .line 144
-    .line 145
-    sput-object v0, LZQb;->p:Lgbd;
-
-    .line 146
-    .line 147
-    new-instance v0, Lgbd;
-
-    .line 148
-    .line 149
-    const-string v1, "SENT_FROM_DWEB"
-
-    .line 150
-    .line 151
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
-    .line 152
-    .line 153
-    .line 154
-    sput-object v0, LZQb;->q:Lgbd;
-
-    .line 155
-    .line 156
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 157
-    .line 158
-    new-instance v1, Lfbd;
-
-    .line 159
-    .line 160
-    const-string v2, "IS_FLASHBACK"
-
-    .line 161
-    .line 162
-    invoke-direct {v1, v2, v0}, Lfbd;-><init>(Ljava/lang/String;Ljava/lang/Object;)V
-
-    .line 163
-    .line 164
-    .line 165
-    sput-object v1, LZQb;->r:Lfbd;
-
-    .line 166
-    .line 167
-    new-instance v0, Lgbd;
-
-    .line 168
-    .line 169
-    const-string v1, "CONVO_DISPLAY_NAME"
-
-    .line 170
-    .line 171
-    invoke-direct {v0, v1}, Lgbd;-><init>(Ljava/lang/String;)V
-
-    .line 172
-    .line 173
-    .line 174
-    sput-object v0, LZQb;->s:Lgbd;
-
-    .line 175
-    .line 176
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,151 +1,244 @@
-.class public final enum LkQ6;
-.super Ljava/lang/Enum;
+.class public final LkQ6;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum a:LkQ6;
+# instance fields
+.field public final a:LEQ6;
 
-.field public static final enum b:LkQ6;
-
-.field public static final enum c:LkQ6;
-
-.field public static final synthetic t:[LkQ6;
+.field public final b:[B
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>(LEQ6;[B)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
-
     .line 4
-    new-instance v3, LkQ6;
+    if-eqz p1, :cond_1
 
     .line 5
     .line 6
-    const-string v4, "STAGING"
+    if-eqz p2, :cond_0
 
     .line 7
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p1, p0, LkQ6;->a:LEQ6;
 
     .line 9
     .line 10
-    .line 11
-    sput-object v3, LkQ6;->a:LkQ6;
+    iput-object p2, p0, LkQ6;->b:[B
 
+    .line 11
     .line 12
+    return-void
+
     .line 13
-    new-instance v4, LkQ6;
+    :cond_0
+    new-instance p1, Ljava/lang/NullPointerException;
 
     .line 14
     .line 15
-    const-string v5, "COM"
+    const-string p2, "bytes is null"
 
     .line 16
     .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
     .line 18
     .line 19
     .line 20
-    sput-object v4, LkQ6;->b:LkQ6;
+    throw p1
 
     .line 21
-    .line 22
-    new-instance v5, LkQ6;
+    :cond_1
+    new-instance p1, Ljava/lang/NullPointerException;
 
+    .line 22
     .line 23
+    const-string p2, "encoding is null"
+
     .line 24
-    const-string v6, "CHINA"
+    .line 25
+    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    throw p1
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_0
+    instance-of v0, p1, LkQ6;
+
+    .line 6
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    if-nez v0, :cond_1
+
+    .line 9
+    .line 10
+    return v1
+
+    .line 11
+    :cond_1
+    check-cast p1, LkQ6;
+
+    .line 12
+    .line 13
+    iget-object v0, p1, LkQ6;->a:LEQ6;
+
+    .line 14
+    .line 15
+    iget-object v2, p0, LkQ6;->a:LEQ6;
+
+    .line 16
+    .line 17
+    invoke-virtual {v2, v0}, LEQ6;->equals(Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    if-nez v0, :cond_2
+
+    .line 22
+    .line 23
+    return v1
+
+    .line 24
+    :cond_2
+    iget-object v0, p0, LkQ6;->b:[B
 
     .line 25
     .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iget-object p1, p1, LkQ6;->b:[B
 
     .line 27
     .line 28
-    .line 29
-    sput-object v5, LkQ6;->c:LkQ6;
+    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([B[B)Z
 
+    .line 29
     .line 30
     .line 31
-    const/4 v6, 0x3
+    move-result p1
 
     .line 32
-    new-array v6, v6, [LkQ6;
-
-    .line 33
-    .line 34
-    aput-object v3, v6, v2
-
-    .line 35
-    .line 36
-    aput-object v4, v6, v1
-
-    .line 37
-    .line 38
-    aput-object v5, v6, v0
-
-    .line 39
-    .line 40
-    sput-object v6, LkQ6;->t:[LkQ6;
-
-    .line 41
-    .line 42
-    return-void
+    return p1
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LkQ6;
-    .locals 1
+.method public final hashCode()I
+    .locals 2
 
     .line 1
-    const-class v0, LkQ6;
+    iget-object v0, p0, LkQ6;->a:LEQ6;
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-virtual {v0}, LEQ6;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    move-result v0
 
     .line 7
-    check-cast p0, LkQ6;
+    const v1, 0xf4243
 
     .line 8
     .line 9
-    return-object p0
+    .line 10
+    xor-int/2addr v0, v1
+
+    .line 11
+    mul-int v0, v0, v1
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LkQ6;->b:[B
+
+    .line 14
+    .line 15
+    invoke-static {v1}, Ljava/util/Arrays;->hashCode([B)I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    xor-int/2addr v0, v1
+
+    .line 20
+    return v0
 .end method
 
-.method public static values()[LkQ6;
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
     .line 1
-    sget-object v0, LkQ6;->t:[LkQ6;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [LkQ6;->clone()Ljava/lang/Object;
+    const-string v1, "EncodedPayload{encoding="
 
     .line 4
     .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LkQ6;->a:LEQ6;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", bytes=[...]}"
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
     move-result-object v0
 
-    .line 7
-    check-cast v0, [LkQ6;
-
-    .line 8
-    .line 9
+    .line 22
     return-object v0
 .end method

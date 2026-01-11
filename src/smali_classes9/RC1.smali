@@ -1,163 +1,111 @@
 .class public final LRC1;
-.super Lo17;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LRz0;
 
 
 # instance fields
-.field public a:I
+.field public a:LbUa;
 
-
-# direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    iput v0, p0, LRC1;->a:I
-
-    .line 6
-    .line 7
-    const/4 v0, 0x0
-
-    .line 8
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 9
-    .line 10
-    const/4 v0, -0x1
-
-    .line 11
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 12
-    .line 13
-    return-void
-.end method
+.field public b:LHv0;
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public final a(LHv0;)V
+    .locals 1
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    iput-object p1, p0, LRC1;->b:LHv0;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    iget-object v0, p0, LRC1;->a:LbUa;
 
+    .line 4
     .line 5
-    const/4 v1, 0x1
+    if-eqz v0, :cond_0
 
     .line 6
-    iget v2, p0, LRC1;->a:I
-
     .line 7
+    iput-object p1, v0, LbUa;->c:LHv0;
+
     .line 8
-    invoke-static {v1, v2}, Lsa3;->s(II)I
-
     .line 9
-    .line 10
-    .line 11
-    move-result v1
-
-    .line 12
-    add-int/2addr v1, v0
-
-    .line 13
-    return v1
+    :cond_0
+    return-void
 .end method
 
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
+.method public final b(Lcom/spotify/sdk/android/auth/LoginActivity;LTz0;)Z
+    .locals 1
 
     .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    new-instance v0, LbUa;
 
     .line 2
     .line 3
+    invoke-direct {v0, p1, p2}, LbUa;-><init>(Lcom/spotify/sdk/android/auth/LoginActivity;LTz0;)V
+
     .line 4
-    move-result v0
-
     .line 5
-    if-eqz v0, :cond_2
-
     .line 6
+    iput-object v0, p0, LRC1;->a:LbUa;
+
     .line 7
-    const/16 v1, 0x8
-
     .line 8
+    iget-object p1, p0, LRC1;->b:LHv0;
+
     .line 9
-    if-eq v0, v1, :cond_1
-
     .line 10
-    .line 11
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    iput-object p1, v0, LbUa;->c:LHv0;
 
+    .line 11
     .line 12
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+
     .line 13
     .line 14
-    move-result v0
-
     .line 15
-    if-nez v0, :cond_0
+    const/4 p1, 0x1
 
     .line 16
-    .line 17
-    goto :goto_1
-
-    .line 18
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->q()I
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v0
-
-    .line 22
-    iput v0, p0, LRC1;->a:I
-
-    .line 23
-    .line 24
-    goto :goto_0
-
-    .line 25
-    :cond_2
-    :goto_1
-    return-object p0
+    return p1
 .end method
 
-.method public final writeTo(Lsa3;)V
+.method public final stop()V
     .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    iget-object v0, p0, LRC1;->a:LbUa;
 
     .line 2
-    iget v1, p0, LRC1;->a:I
-
     .line 3
-    .line 4
-    invoke-virtual {p1, v0, v1}, Lsa3;->T(II)V
+    if-eqz v0, :cond_1
 
+    .line 4
     .line 5
+    iget-boolean v1, v0, LbUa;->X:Z
+
     .line 6
     .line 7
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    if-eqz v1, :cond_0
 
     .line 8
     .line 9
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+
     .line 10
+    .line 11
+    .line 12
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 13
+    iput-object v0, p0, LRC1;->a:LbUa;
+
+    .line 14
+    .line 15
+    :cond_1
     return-void
 .end method

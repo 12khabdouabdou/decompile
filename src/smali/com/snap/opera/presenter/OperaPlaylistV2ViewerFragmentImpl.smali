@@ -3,74 +3,76 @@
 .source "SourceFile"
 
 # interfaces
-.implements LUUc;
-.implements LZOc;
+.implements LF9d;
+.implements LT3d;
 
 
 # static fields
-.field public static final synthetic f1:I
+.field public static final synthetic c1:I
 
 
 # instance fields
-.field public B0:LOf2;
+.field public A0:LmGc;
 
-.field public C0:LPm9;
+.field public B0:LR55;
 
-.field public D0:LcYg;
+.field public C0:LEMc;
 
-.field public E0:LTqc;
+.field public D0:La5f;
 
-.field public F0:LQ05;
+.field public E0:LyPf;
 
-.field public G0:LMxc;
+.field public F0:LIUh;
 
-.field public H0:LeNe;
+.field public final G0:LJp0;
 
-.field public I0:Lnwf;
+.field public final H0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public J0:LHwh;
+.field public final I0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final K0:Lrn0;
+.field public final J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+.field public final K0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 .field public final L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public final M0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public M0:Lsfd;
 
-.field public final N0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+.field public N0:Landroid/view/View;
 
-.field public final O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public final O0:Landroid/widget/FrameLayout$LayoutParams;
 
-.field public P0:Lw0d;
+.field public P0:F
 
-.field public Q0:Landroid/view/View;
+.field public Q0:LScd;
 
-.field public final R0:Landroid/widget/FrameLayout$LayoutParams;
+.field public R0:Z
 
-.field public S0:F
+.field public S0:Z
 
-.field public T0:LXXc;
+.field public T0:Ljava/lang/Boolean;
 
-.field public U0:Z
+.field public U0:Ljava/lang/Boolean;
 
-.field public V0:Z
+.field public V0:Ljava/lang/String;
 
-.field public W0:Ljava/lang/Boolean;
+.field public W0:Z
 
-.field public X0:Ljava/lang/Boolean;
+.field public X0:Lio/reactivex/rxjava3/core/Completable;
 
-.field public Y0:Ljava/lang/String;
+.field public Y0:Lio/reactivex/rxjava3/disposables/Disposable;
 
-.field public Z0:Z
+.field public final Z0:Z
 
-.field public a1:Lio/reactivex/rxjava3/core/Completable;
+.field public a1:Ljava/lang/Integer;
 
-.field public b1:Lio/reactivex/rxjava3/disposables/Disposable;
+.field public final b1:Z
 
-.field public final c1:Z
+.field public x0:Lwi2;
 
-.field public d1:Ljava/lang/Integer;
+.field public y0:LIv9;
 
-.field public final e1:Z
+.field public z0:LPjh;
 
 
 # direct methods
@@ -83,7 +85,7 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LIUc;->Z:LIUc;
+    sget-object v0, Lt9d;->Z:Lt9d;
 
     .line 5
     .line 6
@@ -101,11 +103,11 @@
     .line 12
     .line 13
     .line 14
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 15
     .line 16
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->K0:Lrn0;
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->G0:LJp0;
 
     .line 17
     .line 18
@@ -122,386 +124,201 @@
     .line 23
     .line 24
     .line 25
-    iput-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->H0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 26
     .line 27
-    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    new-instance v0, LUcd;
 
     .line 28
     .line 29
-    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+    invoke-direct {v0}, LUcd;-><init>()V
 
     .line 30
     .line 31
     .line 32
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 33
     .line 34
-    new-instance v1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
 
     .line 35
     .line 36
-    invoke-direct {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
     .line 37
+    iput-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->I0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 38
     .line 39
-    sget-object v2, LZq6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    new-instance v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 40
     .line 41
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-direct {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
 
     .line 42
     .line 43
     .line 44
-    iput-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->N0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 45
     .line 46
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    new-instance v1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 47
     .line 48
+    invoke-direct {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
+
     .line 49
-    move-result-object v0
-
     .line 50
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 51
+    sget-object v2, Llu6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 52
-    new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
-
     .line 53
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 54
-    const/4 v1, -0x1
-
     .line 55
-    const/4 v2, 0x0
-
     .line 56
-    invoke-direct {v0, v1, v2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
+    iput-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->K0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 57
     .line 58
-    .line 59
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->R0:Landroid/widget/FrameLayout$LayoutParams;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
+    .line 59
     .line 60
     .line 61
-    const-string v0, ""
+    move-result-object v0
 
     .line 62
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 63
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y0:Ljava/lang/String;
-
     .line 64
-    .line 65
-    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+    new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
+    .line 65
     .line 66
+    const/4 v1, -0x1
+
     .line 67
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->a1:Lio/reactivex/rxjava3/core/Completable;
+    const/4 v2, 0x0
 
     .line 68
-    .line 69
-    sget-object v0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->a:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
+    invoke-direct {v0, v1, v2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
+    .line 69
     .line 70
     .line 71
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->b1:Lio/reactivex/rxjava3/disposables/Disposable;
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->O0:Landroid/widget/FrameLayout$LayoutParams;
 
     .line 72
     .line 73
-    const/4 v0, 0x1
+    const-string v0, ""
 
     .line 74
-    iput-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->c1:Z
-
     .line 75
-    .line 76
-    iput-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->e1:Z
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->V0:Ljava/lang/String;
 
+    .line 76
     .line 77
+    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+
     .line 78
+    .line 79
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->X0:Lio/reactivex/rxjava3/core/Completable;
+
+    .line 80
+    .line 81
+    sget-object v0, Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;->a:Lio/reactivex/rxjava3/internal/disposables/EmptyDisposable;
+
+    .line 82
+    .line 83
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y0:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 84
+    .line 85
+    const/4 v0, 0x1
+
+    .line 86
+    iput-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
+
+    .line 87
+    .line 88
+    iput-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->b1:Z
+
+    .line 89
+    .line 90
     return-void
 .end method
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final B(LVVc;)V
+.method public final A1()V
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
 
     .line 2
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->T0:LXXc;
-
     .line 3
-    .line 4
-    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->B(LVVc;)V
+    invoke-virtual {v0}, LI9d;->b()LOad;
 
+    .line 4
     .line 5
     .line 6
-    .line 7
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->b1:Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 8
-    .line 9
-    invoke-interface {p1}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 13
-    .line 14
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->b1:Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->e(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-.end method
-
-.method public final B1(Landroid/os/Bundle;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->B1(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->T0:LXXc;
-
-    .line 5
-    .line 6
-    if-eqz p1, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p1}, LXXc;->d()Z
-
-    .line 9
-    .line 10
-    .line 11
-    move-result p1
-
-    .line 12
-    goto :goto_0
-
-    .line 13
-    :cond_0
-    invoke-virtual {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    invoke-static {p1}, Lsc5;->w0(Landroid/content/Context;)Lr1f;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object p1
-
-    .line 21
-    invoke-virtual {p1}, Lr1f;->h()Z
-
-    .line 22
-    .line 23
-    .line 24
-    move-result p1
-
-    .line 25
-    :goto_0
-    iput-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->U0:Z
-
-    .line 26
-    .line 27
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LVVc;
-
-    .line 28
-    .line 29
-    if-nez p1, :cond_1
-
-    .line 30
-    .line 31
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->a1:Lio/reactivex/rxjava3/core/Completable;
-
-    .line 32
-    .line 33
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->m2()LBre;
-
-    .line 34
-    .line 35
-    .line 36
     move-result-object v0
 
-    .line 37
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object v0
-
-    .line 41
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 42
-    .line 43
-    .line 44
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
-
-    .line 45
-    .line 46
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 47
-    .line 48
-    .line 49
-    new-instance p1, LaYc;
-
-    .line 50
-    .line 51
-    const/4 v0, 0x1
-
-    .line 52
-    invoke-direct {p1, p0, v0}, LaYc;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;I)V
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/core/Completable;->l(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
-
-    .line 56
-    .line 57
-    .line 58
-    move-result-object p1
-
-    .line 59
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Completable;->q()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object p1
-
-    .line 63
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 64
-    .line 65
-    .line 66
-    move-result-object p1
-
-    .line 67
-    iput-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->b1:Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 68
-    .line 69
-    sget-object v0, LZq6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 70
-    .line 71
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 72
-    .line 73
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
-    .line 74
-    .line 75
-    .line 76
-    :cond_1
-    return-void
-.end method
-
-.method public final C1()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LVVc;
-
-    .line 2
-    .line 3
+    .line 7
     if-eqz v0, :cond_0
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, LVVc;->c()LQVc;
-
-    .line 6
-    .line 7
     .line 8
-    :cond_0
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->H0:LeNe;
-
     .line 9
-    .line 10
-    if-eqz v0, :cond_1
+    invoke-virtual {v0}, LOad;->c()LHad;
 
+    .line 10
     .line 11
     .line 12
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    :cond_0
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->D0:La5f;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
+    if-eqz v0, :cond_1
 
     .line 15
     .line 16
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 17
+    .line 18
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->dispose()V
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 
-    .line 18
+    .line 22
     :cond_1
     const-string v0, "releaseManager"
 
-    .line 19
-    .line 20
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 21
-    .line 22
     .line 23
+    .line 24
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
     const/4 v0, 0x0
 
-    .line 24
+    .line 28
     throw v0
 .end method
 
-.method public final I0(Z)LhYj;
+.method public final F0(Z)Laok;
     .locals 6
 
     .line 1
@@ -537,7 +354,7 @@
 
     .line 16
     .line 17
-    new-instance v0, LhYj;
+    new-instance v0, Laok;
 
     .line 18
     .line 19
@@ -557,7 +374,7 @@
 
     .line 24
     .line 25
-    invoke-direct/range {v0 .. v5}, LhYj;-><init>(Lew8;LCq9;IZI)V
+    invoke-direct/range {v0 .. v5}, Laok;-><init>(LlFg;LMsi;IZI)V
 
     .line 26
     .line 27
@@ -566,7 +383,7 @@
 
     .line 29
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->r2()Z
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->o2()Z
 
     .line 30
     .line 31
@@ -578,7 +395,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->s2()Z
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()Z
 
     .line 36
     .line 37
@@ -590,7 +407,7 @@
 
     .line 40
     .line 41
-    sget-object p1, LkYj;->t:LkYj;
+    sget-object p1, Ldok;->j:Ldok;
 
     .line 42
     .line 43
@@ -606,7 +423,7 @@
 
     .line 46
     .line 47
-    sget-object p1, LjYj;->t:LjYj;
+    sget-object p1, Lcok;->j:Lcok;
 
     .line 48
     .line 49
@@ -614,7 +431,7 @@
 
     .line 50
     :cond_2
-    sget-object p1, LiYj;->t:LiYj;
+    sget-object p1, Lbok;->j:Lbok;
 
     .line 51
     .line 52
@@ -622,7 +439,7 @@
 
     .line 53
     :goto_1
-    iget-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->U0:Z
+    iget-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->R0:Z
 
     .line 54
     .line 55
@@ -630,7 +447,7 @@
 
     .line 56
     .line 57
-    sget-object p1, LoYj;->Z:LoYj;
+    sget-object p1, Lhok;->e:Lhok;
 
     .line 58
     .line 59
@@ -648,7 +465,7 @@
 
     .line 63
     :cond_3
-    sget-object p1, LlYj;->Z:LlYj;
+    sget-object p1, Leok;->e:Leok;
 
     .line 64
     .line 65
@@ -665,11 +482,11 @@
     const/4 p1, 0x1
 
     .line 69
-    iput-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->V0:Z
+    iput-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->S0:Z
 
     .line 70
     .line 71
-    invoke-static {}, LDq9;->I()LhYj;
+    invoke-static {}, LIjj;->L()Laok;
 
     .line 72
     .line 73
@@ -677,7 +494,7 @@
     move-result-object p1
 
     .line 75
-    new-instance v0, LhYj;
+    new-instance v0, Laok;
 
     .line 76
     .line 77
@@ -685,11 +502,11 @@
 
     .line 78
     .line 79
-    iget-boolean v4, p1, LhYj;->d:Z
+    iget-boolean v4, p1, Laok;->d:Z
 
     .line 80
     .line 81
-    invoke-direct/range {v0 .. v5}, LhYj;-><init>(Lew8;LCq9;IZI)V
+    invoke-direct/range {v0 .. v5}, Laok;-><init>(LlFg;LMsi;IZI)V
 
     .line 82
     .line 83
@@ -697,7 +514,7 @@
     return-object v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 0
 
     .line 1
@@ -718,7 +535,7 @@
     .line 8
     .line 9
     .line 10
-    iget-object p2, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->P0:Lw0d;
+    iget-object p2, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lsfd;
 
     .line 11
     .line 12
@@ -766,7 +583,7 @@
     .line 33
     .line 34
     .line 35
-    iget-object p3, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->R0:Landroid/widget/FrameLayout$LayoutParams;
+    iget-object p3, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->O0:Landroid/widget/FrameLayout$LayoutParams;
 
     .line 36
     .line 37
@@ -794,12 +611,12 @@
 
     .line 47
     :goto_0
-    invoke-static {p2, p3}, LLZj;->E0(Landroid/view/View;Z)V
+    invoke-static {p2, p3}, LDz9;->p0(Landroid/view/View;Z)V
 
     .line 48
     .line 49
     .line 50
-    iput-object p2, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:Landroid/view/View;
+    iput-object p2, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->N0:Landroid/view/View;
 
     .line 51
     .line 52
@@ -808,7 +625,7 @@
     .line 53
     .line 54
     .line 55
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()V
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->m2()V
 
     .line 56
     .line 57
@@ -816,11 +633,11 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->T0:LXXc;
+    iget-object p2, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:LScd;
 
     .line 2
     .line 3
@@ -828,7 +645,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p2}, LXXc;->a()Z
+    invoke-virtual {p2}, LScd;->a()Z
 
     .line 6
     .line 7
@@ -840,15 +657,15 @@
 
     .line 10
     .line 11
-    new-instance p2, LJGc;
+    new-instance p2, LGqb;
 
     .line 12
     .line 13
-    const/16 v0, 0x9
+    const/16 v0, 0x1a
 
     .line 14
     .line 15
-    invoke-direct {p2, v0, p0}, LJGc;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p2, v0, p0}, LGqb;-><init>(ILjava/lang/Object;)V
 
     .line 16
     .line 17
@@ -862,22 +679,22 @@
     return-void
 .end method
 
-.method public final M1()Z
+.method public final K1()Z
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->e1:Z
+    iget-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->b1:Z
 
     .line 2
     .line 3
     return v0
 .end method
 
-.method public final U1(Lw0d;)V
+.method public final U1(Lsfd;)V
     .locals 2
 
     .line 1
-    iput-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->P0:Lw0d;
+    iput-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lsfd;
 
     .line 2
     .line 3
@@ -922,7 +739,7 @@
     .line 20
     .line 21
     :cond_1
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()V
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->m2()V
 
     .line 22
     .line 23
@@ -930,22 +747,22 @@
     return-void
 .end method
 
-.method public final V1(Lw0d;)V
+.method public final V1(Lsfd;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public final Y1()LOVc;
+.method public final Y1()LFad;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->d1()Ljava/lang/Object;
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -953,18 +770,18 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LOVc;
+    check-cast v0, LFad;
 
     .line 8
     .line 9
     return-object v0
 .end method
 
-.method public final b2(LQVc;)V
-    .locals 7
+.method public final Z1(LHad;)V
+    .locals 8
 
     .line 1
-    invoke-virtual {p1}, LQVc;->c()LpYc;
+    invoke-virtual {p1}, LHad;->b()Lkdd;
 
     .line 2
     .line 3
@@ -972,7 +789,7 @@
     move-result-object p1
 
     .line 5
-    invoke-virtual {p1}, LpYc;->f()LDUc;
+    invoke-virtual {p1}, Lkdd;->f()Lp9d;
 
     .line 6
     .line 7
@@ -980,7 +797,7 @@
     move-result-object p1
 
     .line 9
-    invoke-virtual {p1}, LDUc;->b()Z
+    invoke-virtual {p1}, Lp9d;->b()Z
 
     .line 10
     .line 11
@@ -988,11 +805,11 @@
     move-result p1
 
     .line 13
-    iput-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
+    iput-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->W0:Z
 
     .line 14
     .line 15
-    invoke-static {}, LBek;->j()LOVc;
+    invoke-static {}, LgAk;->f()LFad;
 
     .line 16
     .line 17
@@ -1008,7 +825,7 @@
     move-result-object p1
 
     .line 23
-    invoke-static {p1}, Lsc5;->w0(Landroid/content/Context;)Lr1f;
+    invoke-static {p1}, LTVd;->N(Landroid/content/Context;)Lujf;
 
     .line 24
     .line 25
@@ -1016,10 +833,10 @@
     move-result-object v1
 
     .line 27
-    const/4 v4, 0x0
+    const/4 v5, 0x0
 
     .line 28
-    const/4 v5, 0x0
+    const/4 v6, 0x0
 
     .line 29
     const/4 v2, 0x0
@@ -1028,272 +845,274 @@
     const/4 v3, 0x0
 
     .line 31
-    const/16 v6, 0x7e
+    const/4 v4, 0x0
 
     .line 32
-    .line 33
-    invoke-static/range {v0 .. v6}, LOVc;->a(LOVc;Lr1f;ILNm9;ILjava/util/List;I)LOVc;
+    const/16 v7, 0xfe
 
+    .line 33
     .line 34
+    invoke-static/range {v0 .. v7}, LFad;->a(LFad;Lujf;ILGv9;ILjava/util/List;Ljava/lang/Integer;I)LFad;
+
     .line 35
     .line 36
-    move-result-object p1
-
     .line 37
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    move-result-object p1
 
     .line 38
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 39
+    .line 40
     invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 40
     .line 41
     .line 42
-    new-instance v1, LYXc;
-
     .line 43
-    .line 44
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->l2()LPm9;
+    new-instance v1, LTcd;
 
+    .line 44
     .line 45
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->i2()LIv9;
+
     .line 46
     .line 47
-    move-result-object p1
-
     .line 48
-    invoke-interface {p1}, LPm9;->f()Landroid/graphics/Rect;
+    move-result-object p1
 
     .line 49
+    invoke-interface {p1}, LIv9;->f()Landroid/graphics/Rect;
+
     .line 50
     .line 51
+    .line 52
     move-result-object p1
 
-    .line 52
+    .line 53
     if-nez p1, :cond_0
 
-    .line 53
     .line 54
+    .line 55
     new-instance p1, Landroid/graphics/Rect;
 
-    .line 55
     .line 56
+    .line 57
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 57
     .line 58
     .line 59
+    .line 60
     :cond_0
     move-object v2, p1
 
-    .line 60
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->l2()LPm9;
-
     .line 61
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->i2()LIv9;
+
     .line 62
     .line 63
-    move-result-object p1
-
     .line 64
-    invoke-interface {p1}, LPm9;->k()Landroid/graphics/Rect;
+    move-result-object p1
 
     .line 65
+    invoke-interface {p1}, LIv9;->k()Landroid/graphics/Rect;
+
     .line 66
     .line 67
+    .line 68
     move-result-object p1
 
-    .line 68
+    .line 69
     if-nez p1, :cond_1
 
-    .line 69
     .line 70
+    .line 71
     new-instance p1, Landroid/graphics/Rect;
 
-    .line 71
     .line 72
+    .line 73
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 73
     .line 74
     .line 75
+    .line 76
     :cond_1
     move-object v3, p1
 
-    .line 76
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->l2()LPm9;
-
     .line 77
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->i2()LIv9;
+
     .line 78
     .line 79
-    move-result-object p1
-
     .line 80
-    invoke-interface {p1}, LPm9;->b()Landroid/graphics/Rect;
+    move-result-object p1
 
     .line 81
+    invoke-interface {p1}, LIv9;->b()Landroid/graphics/Rect;
+
     .line 82
     .line 83
+    .line 84
     move-result-object p1
 
-    .line 84
+    .line 85
     if-nez p1, :cond_2
 
-    .line 85
     .line 86
+    .line 87
     new-instance p1, Landroid/graphics/Rect;
 
-    .line 87
     .line 88
+    .line 89
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 89
     .line 90
     .line 91
+    .line 92
     :cond_2
     move-object v4, p1
 
-    .line 92
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->k2()LQVc;
-
     .line 93
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->I0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
     .line 94
     .line 95
-    move-result-object p1
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
 
     .line 96
-    if-eqz p1, :cond_4
-
     .line 97
     .line 98
-    invoke-virtual {p1}, LQVc;->b()Lb20;
-
-    .line 99
-    .line 100
-    .line 101
     move-result-object p1
 
+    .line 99
+    move-object v5, p1
+
+    .line 100
+    check-cast v5, LUcd;
+
+    .line 101
     .line 102
-    if-nez p1, :cond_3
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->h2()LHad;
 
     .line 103
     .line 104
-    goto :goto_1
-
     .line 105
-    :cond_3
-    :goto_0
-    move-object v6, p1
+    move-result-object p1
 
     .line 106
-    goto :goto_2
+    if-eqz p1, :cond_4
 
     .line 107
-    :cond_4
-    :goto_1
-    sget-object p1, Lb20;->b:Lb20;
-
     .line 108
+    invoke-virtual {p1}, LHad;->a()LG40;
+
     .line 109
-    goto :goto_0
-
     .line 110
-    :goto_2
-    const/4 v5, 0x0
-
     .line 111
-    invoke-direct/range {v1 .. v6}, LYXc;-><init>(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ILb20;)V
+    move-result-object p1
 
     .line 112
+    if-nez p1, :cond_3
+
     .line 113
     .line 114
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->j2()I
+    goto :goto_1
 
     .line 115
+    :cond_3
+    :goto_0
+    move-object v7, p1
+
     .line 116
+    goto :goto_2
+
     .line 117
-    move-result p1
+    :cond_4
+    :goto_1
+    sget-object p1, LG40;->b:LG40;
 
     .line 118
-    const/4 v2, 0x1
-
     .line 119
-    if-ne p1, v2, :cond_5
+    goto :goto_0
 
     .line 120
+    :goto_2
+    const/4 v6, 0x0
+
     .line 121
-    const/4 p1, 0x1
+    invoke-direct/range {v1 .. v7}, LTcd;-><init>(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;LUcd;ILG40;)V
 
     .line 122
-    goto :goto_3
-
     .line 123
-    :cond_5
-    const/4 p1, 0x0
-
     .line 124
-    :goto_3
-    invoke-virtual {p0, v1, v2, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->n2(LYXc;ZZ)V
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->g2()I
 
     .line 125
     .line 126
     .line 127
-    iget-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->c1:Z
+    move-result p1
 
     .line 128
+    const/4 v2, 0x1
+
     .line 129
-    if-eqz p1, :cond_6
+    if-ne p1, v2, :cond_5
 
     .line 130
     .line 131
-    sget-object p1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+    const/4 p1, 0x1
 
     .line 132
+    goto :goto_3
+
     .line 133
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    :cond_5
+    const/4 p1, 0x0
 
     .line 134
+    :goto_3
+    invoke-virtual {p0, v1, v2, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->k2(LTcd;ZZ)V
+
     .line 135
     .line 136
-    move-result-object v0
-
     .line 137
-    :cond_6
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->m2()LBre;
+    iget-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
 
     .line 138
     .line 139
-    .line 140
-    move-result-object p1
+    if-eqz p1, :cond_6
 
+    .line 140
     .line 141
-    invoke-virtual {p1}, LBre;->i()Lgn0;
+    sget-object p1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
 
     .line 142
     .line 143
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
     .line 144
-    move-result-object p1
-
     .line 145
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
-
     .line 146
+    move-result-object v0
+
     .line 147
+    :cond_6
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->j2()LnJe;
+
     .line 148
+    .line 149
+    .line 150
     move-result-object p1
 
-    .line 149
-    new-instance v0, LaYc;
-
-    .line 150
     .line 151
-    const/4 v1, 0x0
+    invoke-virtual {p1}, LnJe;->i()Lxp0;
 
     .line 152
-    invoke-direct {v0, p0, v1}, LaYc;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;I)V
-
     .line 153
     .line 154
+    move-result-object p1
+
     .line 155
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 156
     .line 157
@@ -1301,15 +1120,66 @@
     move-result-object p1
 
     .line 159
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    new-instance v0, LWcd;
 
     .line 160
     .line 161
-    invoke-static {p1, v0}, LLZj;->o0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    const/4 v1, 0x0
 
     .line 162
+    invoke-direct {v0, p0, v1}, LWcd;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;I)V
+
     .line 163
     .line 164
+    .line 165
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->a0(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+
+    .line 166
+    .line 167
+    .line 168
+    move-result-object p1
+
+    .line 169
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 170
+    .line 171
+    invoke-static {p1, v0}, LOIc;->H(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 172
+    .line 173
+    .line 174
+    return-void
+.end method
+
+.method public final a2(F)V
+    .locals 0
+
+    .line 1
+    iput p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->P0:F
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-virtual {p0, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->n2(Z)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public final c2()V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->l2()V
+
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
@@ -1317,169 +1187,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LVVc;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
-
-    .line 4
-    .line 5
-    const/4 v0, 0x0
-
-    .line 6
-    return v0
-
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, LVVc;->o()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    if-eqz v1, :cond_1
-
-    .line 12
-    .line 13
-    const/4 v0, 0x1
-
-    .line 14
-    return v0
-
-    .line 15
-    :cond_1
-    sget-object v1, LWIj;->g0:LWIj;
-
-    .line 16
-    .line 17
-    invoke-virtual {v0, v1}, LVVc;->v(LWIj;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v0
-
-    .line 21
-    return v0
-.end method
-
-.method public final d2(F)V
-    .locals 0
-
-    .line 1
-    iput p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->S0:F
-
-    .line 2
-    .line 3
-    const/4 p1, 0x0
-
-    .line 4
-    invoke-virtual {p0, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->q2(Z)V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final e2()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->o2()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final f2(LQqc;)V
-    .locals 2
-
-    .line 1
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->s2()Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_0
-
-    .line 6
-    .line 7
-    iget-object v0, p1, LQqc;->o:LPpc;
-
-    .line 8
-    .line 9
-    instance-of v0, v0, LuU6;
-
-    .line 10
-    .line 11
-    if-eqz v0, :cond_0
-
-    .line 12
-    .line 13
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LVVc;
-
-    .line 14
-    .line 15
-    if-eqz v0, :cond_0
-
-    .line 16
-    .line 17
-    sget-object v1, LWIj;->v0:LWIj;
-
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, LVVc;->y(LWIj;)V
-
-    .line 20
-    .line 21
-    .line 22
-    :cond_0
-    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->f2(LQqc;)V
-
-    .line 23
-    .line 24
-    .line 25
-    return-void
-.end method
-
-.method public final h(LQqc;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->h(LQqc;)V
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 p1, 0x1
-
-    .line 5
-    invoke-virtual {p0, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->q2(Z)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final h2()V
-    .locals 7
-
-    .line 1
-    sget-object v0, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->l2()LPm9;
+    invoke-virtual {v0}, LI9d;->b()LOad;
 
     .line 4
     .line 5
@@ -1487,7 +1199,150 @@
     move-result-object v0
 
     .line 7
-    invoke-interface {v0}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    return v0
+
+    .line 11
+    :cond_0
+    invoke-virtual {v0}, LOad;->k()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    if-eqz v1, :cond_1
+
+    .line 16
+    .line 17
+    const/4 v0, 0x1
+
+    .line 18
+    return v0
+
+    .line 19
+    :cond_1
+    sget-object v1, Lu8k;->g0:Lu8k;
+
+    .line 20
+    .line 21
+    invoke-virtual {v0, v1}, LOad;->r(Lu8k;)Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v0
+
+    .line 25
+    return v0
+.end method
+
+.method public final d2(LiGc;)V
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    iget-object p1, p1, LiGc;->o:LkFc;
+
+    .line 8
+    .line 9
+    instance-of p1, p1, LIY6;
+
+    .line 10
+    .line 11
+    if-eqz p1, :cond_0
+
+    .line 12
+    .line 13
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
+
+    .line 14
+    .line 15
+    invoke-virtual {p1}, LI9d;->b()LOad;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p1
+
+    .line 19
+    if-eqz p1, :cond_0
+
+    .line 20
+    .line 21
+    sget-object v0, Lu8k;->v0:Lu8k;
+
+    .line 22
+    .line 23
+    invoke-static {p1, v0}, LYzk;->i(LOad;Lu8k;)V
+
+    .line 24
+    .line 25
+    .line 26
+    :cond_0
+    return-void
+.end method
+
+.method public final e2(FLu54;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, LUcd;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1, p2}, LUcd;-><init>(FLu54;)V
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->I0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 7
+    .line 8
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-void
+.end method
+
+.method public final f2()V
+    .locals 8
+
+    .line 1
+    sget-object v0, Lio/reactivex/rxjava3/kotlin/Observables;->a:Lio/reactivex/rxjava3/kotlin/Observables;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->i2()LIv9;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-interface {v0}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 8
     .line 9
@@ -1495,7 +1350,7 @@
     move-result-object v1
 
     .line 11
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->l2()LPm9;
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->i2()LIv9;
 
     .line 12
     .line 13
@@ -1503,7 +1358,7 @@
     move-result-object v0
 
     .line 15
-    invoke-interface {v0}, LPm9;->i()Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {v0}, LIv9;->i()Lio/reactivex/rxjava3/core/Observable;
 
     .line 16
     .line 17
@@ -1511,7 +1366,7 @@
     move-result-object v2
 
     .line 19
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->l2()LPm9;
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->i2()LIv9;
 
     .line 20
     .line 21
@@ -1519,7 +1374,7 @@
     move-result-object v0
 
     .line 23
-    invoke-interface {v0}, LPm9;->e()Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {v0}, LIv9;->e()Lio/reactivex/rxjava3/core/Observable;
 
     .line 24
     .line 25
@@ -1527,154 +1382,176 @@
     move-result-object v3
 
     .line 27
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->D0:LcYg;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->I0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 28
     .line 29
-    const/4 v4, 0x0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 30
-    if-eqz v0, :cond_1
-
     .line 31
     .line 32
-    invoke-virtual {v0}, LcYg;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    sget-object v4, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
 
     .line 33
     .line 34
+    invoke-virtual {v0, v4}, Lio/reactivex/rxjava3/core/Observable;->V(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+
     .line 35
-    move-result-object v0
-
     .line 36
-    iget-object v5, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->G0:LMxc;
-
     .line 37
+    move-result-object v4
+
     .line 38
-    if-eqz v5, :cond_0
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->z0:LPjh;
 
     .line 39
     .line 40
-    invoke-interface {v5}, LMxc;->a()Lio/reactivex/rxjava3/core/Observable;
+    const/4 v5, 0x0
 
     .line 41
+    if-eqz v0, :cond_1
+
     .line 42
     .line 43
-    move-result-object v5
+    invoke-virtual {v0}, LPjh;->b()Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
 
     .line 44
-    new-instance v6, LMgc;
-
     .line 45
     .line 46
-    const/4 v4, 0x1
+    move-result-object v0
 
     .line 47
-    invoke-direct {v6, v4}, LMgc;-><init>(I)V
+    iget-object v6, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->C0:LEMc;
 
     .line 48
     .line 49
-    .line 50
-    move-object v4, v0
+    if-eqz v6, :cond_0
 
+    .line 50
     .line 51
-    invoke-static/range {v1 .. v6}, Lio/reactivex/rxjava3/core/Observable;->t(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function5;)Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {v6}, LEMc;->a()Lio/reactivex/rxjava3/core/Observable;
 
     .line 52
     .line 53
     .line 54
-    move-result-object v0
+    move-result-object v6
 
     .line 55
-    new-instance v1, Lb5c;
+    new-instance v7, LvQi;
 
     .line 56
     .line 57
-    const/16 v2, 0x1b
+    const/16 v5, 0x1b
 
     .line 58
     .line 59
-    invoke-direct {v1, v2, p0}, Lb5c;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v7, v5}, LvQi;-><init>(I)V
 
     .line 60
     .line 61
     .line 62
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounce;
+    move-object v5, v0
 
     .line 63
-    .line 64
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounce;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-static/range {v1 .. v7}, Lio/reactivex/rxjava3/core/Observable;->t(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function6;)Lio/reactivex/rxjava3/core/Observable;
 
+    .line 64
     .line 65
     .line 66
+    move-result-object v0
+
     .line 67
-    new-instance v0, LaYc;
+    new-instance v1, LSQc;
 
     .line 68
     .line 69
-    const/4 v1, 0x2
+    const/16 v2, 0xa
 
     .line 70
-    invoke-direct {v0, p0, v1}, LaYc;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;I)V
-
     .line 71
+    invoke-direct {v1, v2, p0}, LSQc;-><init>(ILjava/lang/Object;)V
+
     .line 72
     .line 73
-    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 74
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounce;
+
     .line 75
     .line 76
-    move-result-object v0
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDebounce;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 77
-    iget-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->N0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 78
     .line 79
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
+    new-instance v0, LWcd;
 
     .line 80
     .line 81
+    const/4 v1, 0x2
+
     .line 82
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-direct {v0, p0, v1}, LWcd;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;I)V
 
     .line 83
     .line 84
     .line 85
-    return-void
+    invoke-virtual {v2, v0}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 86
-    :cond_0
-    const-string v0, "ngsTranslucentAvailabilityChecker"
-
     .line 87
     .line 88
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    move-result-object v0
 
     .line 89
+    iget-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->K0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 90
     .line 91
-    throw v4
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
 
     .line 92
-    :cond_1
-    const-string v0, "keyboardDetector"
-
     .line 93
     .line 94
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 95
     .line 96
     .line 97
-    throw v4
+    return-void
+
+    .line 98
+    :cond_0
+    const-string v0, "ngsTranslucentAvailabilityChecker"
+
+    .line 99
+    .line 100
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 101
+    .line 102
+    .line 103
+    throw v5
+
+    .line 104
+    :cond_1
+    const-string v0, "keyboardDetector"
+
+    .line 105
+    .line 106
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 107
+    .line 108
+    .line 109
+    throw v5
 .end method
 
-.method public final j2()I
+.method public final g2()I
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->s2()Z
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()Z
 
     .line 2
     .line 3
@@ -1693,7 +1570,7 @@
 
     .line 9
     :cond_0
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->r2()Z
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->o2()Z
 
     .line 10
     .line 11
@@ -1718,57 +1595,85 @@
     return v0
 .end method
 
-.method public final k2()LQVc;
+.method public final h2()LHad;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LVVc;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    invoke-virtual {v0}, LI9d;->b()LOad;
 
     .line 4
-    if-eqz v0, :cond_0
-
     .line 5
     .line 6
-    invoke-virtual {v0}, LVVc;->c()LQVc;
-
-    .line 7
-    .line 8
-    .line 9
     move-result-object v0
 
+    .line 7
+    const/4 v1, 0x0
+
+    .line 8
+    if-eqz v0, :cond_0
+
+    .line 9
     .line 10
-    goto :goto_0
+    invoke-virtual {v0}, LOad;->c()LHad;
 
     .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    goto :goto_0
+
+    .line 15
     :cond_0
     move-object v0, v1
 
-    .line 12
-    :goto_0
-    instance-of v2, v0, LQVc;
-
-    .line 13
-    .line 14
-    if-eqz v2, :cond_1
-
-    .line 15
     .line 16
-    return-object v0
+    :goto_0
+    instance-of v2, v0, LHad;
 
     .line 17
+    .line 18
+    if-eqz v2, :cond_1
+
+    .line 19
+    .line 20
+    return-object v0
+
+    .line 21
     :cond_1
     return-object v1
 .end method
 
-.method public final l2()LPm9;
+.method public final i(LiGc;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->i(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 p1, 0x1
+
+    .line 5
+    invoke-virtual {p0, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->n2(Z)V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public final i2()LIv9;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->C0:LPm9;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->y0:LIv9;
 
     .line 2
     .line 3
@@ -1784,7 +1689,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1795,11 +1700,11 @@
     throw v0
 .end method
 
-.method public final m2()LBre;
+.method public final j2()LnJe;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->I0:Lnwf;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->E0:LyPf;
 
     .line 2
     .line 3
@@ -1807,7 +1712,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LIUc;->Z:LIUc;
+    sget-object v0, Lt9d;->Z:Lt9d;
 
     .line 6
     .line 7
@@ -1816,7 +1721,7 @@
     .line 8
     .line 9
     .line 10
-    new-instance v1, LWm0;
+    new-instance v1, Lnp0;
 
     .line 11
     .line 12
@@ -1824,16 +1729,16 @@
 
     .line 13
     .line 14
-    invoke-direct {v1, v0, v2}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v2}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 15
     .line 16
     .line 17
-    new-instance v0, LBre;
+    new-instance v0, LnJe;
 
     .line 18
     .line 19
-    invoke-direct {v0, v1}, LBre;-><init>(LWm0;)V
+    invoke-direct {v0, v1}, LnJe;-><init>(Lnp0;)V
 
     .line 20
     .line 21
@@ -1846,7 +1751,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 26
     .line 27
@@ -1857,23 +1762,23 @@
     throw v0
 .end method
 
-.method public final n2(LYXc;ZZ)V
-    .locals 21
+.method public final k2(LTcd;ZZ)V
+    .locals 23
 
     .line 1
     move-object/from16 v0, p0
 
     .line 2
     .line 3
-    const/4 v1, 0x0
+    const/4 v1, 0x2
 
     .line 4
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->r2()Z
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->o2()Z
 
     .line 5
     .line 6
     .line 7
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->s2()Z
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()Z
 
     .line 8
     .line 9
@@ -1881,2064 +1786,2213 @@
     move-result v2
 
     .line 11
-    iget-object v3, v0, Lcom/snap/opera/presenter/OperaFragment;->w0:LVVc;
+    iget-object v3, v0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
 
     .line 12
     .line 13
-    if-eqz v3, :cond_0
+    invoke-virtual {v3}, LI9d;->b()LOad;
 
     .line 14
     .line 15
-    invoke-virtual {v3}, LVVc;->f()LXTc;
-
     .line 16
-    .line 17
-    .line 18
-    move-result-object v3
+    move-result-object v4
 
+    .line 17
+    if-eqz v4, :cond_0
+
+    .line 18
     .line 19
-    invoke-virtual {v3}, LXTc;->a()LH7;
+    invoke-virtual {v4}, LOad;->e()LK8d;
 
     .line 20
     .line 21
     .line 22
-    move-result-object v3
+    move-result-object v4
 
     .line 23
-    goto :goto_0
+    invoke-virtual {v4}, LK8d;->a()Lp8;
 
     .line 24
-    :cond_0
-    const/4 v3, 0x0
-
     .line 25
-    :goto_0
-    const/4 v5, 0x1
-
     .line 26
-    if-eqz v3, :cond_1
+    move-result-object v4
 
     .line 27
+    goto :goto_0
+
     .line 28
-    invoke-virtual {v3}, LH7;->b()Z
+    :cond_0
+    const/4 v4, 0x0
 
     .line 29
-    .line 30
-    .line 31
-    move-result v6
-
-    .line 32
-    if-eqz v6, :cond_1
-
-    .line 33
-    .line 34
+    :goto_0
     const/4 v6, 0x1
 
-    .line 35
-    goto :goto_1
+    .line 30
+    const/4 v7, 0x0
 
+    .line 31
+    if-eqz v4, :cond_1
+
+    .line 32
+    .line 33
+    invoke-virtual {v4}, Lp8;->b()Z
+
+    .line 34
+    .line 35
     .line 36
-    :cond_1
-    const/4 v6, 0x0
+    move-result v8
 
     .line 37
-    :goto_1
-    if-eqz v3, :cond_2
+    if-eqz v8, :cond_1
 
     .line 38
     .line 39
-    invoke-virtual {v3}, LH7;->a()Libd;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v3
-
-    .line 43
-    if-nez v3, :cond_3
-
-    .line 44
-    .line 45
-    :cond_2
-    sget-object v3, Libd;->t:Lebd;
-
-    .line 46
-    .line 47
-    :cond_3
-    invoke-static {}, Lm04;->a()Lfbd;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v7
-
-    .line 51
-    invoke-virtual {v7, v3}, Lgbd;->a(LtL0;)Ljava/lang/Object;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v7
-
-    .line 55
-    check-cast v7, Ljava/lang/Boolean;
-
-    .line 56
-    .line 57
-    invoke-static {}, Lm04;->b()Lfbd;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object v8
-
-    .line 61
-    invoke-virtual {v8, v3}, Lgbd;->a(LtL0;)Ljava/lang/Object;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v8
-
-    .line 65
-    check-cast v8, Ljava/lang/Boolean;
-
-    .line 66
-    .line 67
-    sget-object v9, LH7;->e:Lfbd;
-
-    .line 68
-    .line 69
-    invoke-static {}, Lolk;->f()Lfbd;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v9
-
-    .line 73
-    invoke-virtual {v9, v3}, Lgbd;->a(LtL0;)Ljava/lang/Object;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object v3
-
-    .line 77
-    check-cast v3, Ljava/lang/Boolean;
-
-    .line 78
-    .line 79
-    invoke-virtual/range {p1 .. p1}, LYXc;->d()Lb20;
-
-    .line 80
-    .line 81
-    .line 82
-    move-result-object v9
-
-    .line 83
-    invoke-virtual {v9}, Lb20;->a()Z
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v9
-
-    .line 87
-    if-eqz v9, :cond_5
-
-    .line 88
-    .line 89
-    if-nez v6, :cond_5
-
-    .line 90
-    .line 91
-    invoke-virtual {v8}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 92
-    .line 93
-    .line 94
-    move-result v8
-
-    .line 95
-    if-eqz v8, :cond_4
-
-    .line 96
-    .line 97
-    goto :goto_2
-
-    .line 98
-    :cond_4
-    const/4 v8, 0x0
-
-    .line 99
-    goto :goto_3
-
-    .line 100
-    :cond_5
-    :goto_2
     const/4 v8, 0x1
 
-    .line 101
-    :goto_3
-    invoke-virtual/range {p1 .. p1}, LYXc;->a()Landroid/graphics/Rect;
+    .line 40
+    goto :goto_1
 
-    .line 102
-    .line 103
-    .line 104
+    .line 41
+    :cond_1
+    const/4 v8, 0x0
+
+    .line 42
+    :goto_1
+    if-eqz v4, :cond_2
+
+    .line 43
+    .line 44
+    invoke-virtual {v4}, Lp8;->a()LIqd;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v4
+
+    .line 48
+    if-nez v4, :cond_3
+
+    .line 49
+    .line 50
+    :cond_2
+    sget-object v4, LIqd;->t:LEqd;
+
+    .line 51
+    .line 52
+    :cond_3
+    invoke-static {}, LQ44;->a()LFqd;
+
+    .line 53
+    .line 54
+    .line 55
     move-result-object v9
 
-    .line 105
-    iget v9, v9, Landroid/graphics/Rect;->bottom:I
+    .line 56
+    invoke-virtual {v9, v4}, LGqd;->a(LpO0;)Ljava/lang/Object;
 
-    .line 106
-    .line 107
-    invoke-virtual/range {p1 .. p1}, LYXc;->e()Landroid/graphics/Rect;
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v9
 
-    .line 108
-    .line 109
-    .line 110
+    .line 60
+    check-cast v9, Ljava/lang/Boolean;
+
+    .line 61
+    .line 62
+    invoke-static {}, LQ44;->b()LFqd;
+
+    .line 63
+    .line 64
+    .line 65
     move-result-object v10
 
+    .line 66
+    invoke-virtual {v10, v4}, LGqd;->a(LpO0;)Ljava/lang/Object;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v10
+
+    .line 70
+    check-cast v10, Ljava/lang/Boolean;
+
+    .line 71
+    .line 72
+    sget-object v11, Lp8;->e:LFqd;
+
+    .line 73
+    .line 74
+    invoke-static {}, LlMk;->f()LFqd;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v11
+
+    .line 78
+    invoke-virtual {v11, v4}, LGqd;->a(LpO0;)Ljava/lang/Object;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v4
+
+    .line 82
+    check-cast v4, Ljava/lang/Boolean;
+
+    .line 83
+    .line 84
+    invoke-virtual/range {p1 .. p1}, LTcd;->d()LG40;
+
+    .line 85
+    .line 86
+    .line 87
+    move-result-object v11
+
+    .line 88
+    invoke-virtual {v11}, LG40;->a()Z
+
+    .line 89
+    .line 90
+    .line 91
+    move-result v11
+
+    .line 92
+    if-eqz v11, :cond_5
+
+    .line 93
+    .line 94
+    if-nez v8, :cond_5
+
+    .line 95
+    .line 96
+    invoke-virtual {v10}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 97
+    .line 98
+    .line 99
+    move-result v10
+
+    .line 100
+    if-eqz v10, :cond_4
+
+    .line 101
+    .line 102
+    goto :goto_2
+
+    .line 103
+    :cond_4
+    const/4 v10, 0x0
+
+    .line 104
+    goto :goto_3
+
+    .line 105
+    :cond_5
+    :goto_2
+    const/4 v10, 0x1
+
+    .line 106
+    :goto_3
+    invoke-virtual/range {p1 .. p1}, LTcd;->a()Landroid/graphics/Rect;
+
+    .line 107
+    .line 108
+    .line 109
+    move-result-object v11
+
+    .line 110
+    iget v11, v11, Landroid/graphics/Rect;->bottom:I
+
     .line 111
-    iget v10, v10, Landroid/graphics/Rect;->bottom:I
-
     .line 112
+    invoke-virtual/range {p1 .. p1}, LTcd;->e()Landroid/graphics/Rect;
+
     .line 113
-    sub-int/2addr v9, v10
-
     .line 114
-    const/4 v10, 0x2
-
     .line 115
-    const/4 v11, 0x3
+    move-result-object v12
 
     .line 116
-    if-eqz v6, :cond_6
+    iget v12, v12, Landroid/graphics/Rect;->bottom:I
 
     .line 117
     .line 118
-    invoke-virtual {v7}, Ljava/lang/Boolean;->booleanValue()Z
+    sub-int/2addr v11, v12
 
     .line 119
-    .line 120
-    .line 121
-    move-result v7
+    const/4 v12, 0x3
 
+    .line 120
+    if-eqz v8, :cond_6
+
+    .line 121
     .line 122
-    if-eqz v7, :cond_6
+    invoke-virtual {v9}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 123
     .line 124
-    const/4 v6, 0x3
-
     .line 125
-    goto :goto_4
+    move-result v9
 
     .line 126
-    :cond_6
-    if-eqz v6, :cond_7
+    if-eqz v9, :cond_6
 
     .line 127
     .line 128
-    const/4 v6, 0x2
+    const/4 v8, 0x3
 
     .line 129
     goto :goto_4
 
     .line 130
-    :cond_7
-    const/4 v6, 0x1
+    :cond_6
+    if-eqz v8, :cond_7
 
     .line 131
-    :goto_4
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->j2()I
-
     .line 132
+    const/4 v8, 0x2
+
     .line 133
+    goto :goto_4
+
     .line 134
-    move-result v7
+    :cond_7
+    const/4 v8, 0x1
 
     .line 135
-    invoke-static {v7}, Llva;->L(I)I
+    :goto_4
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->g2()I
 
     .line 136
     .line 137
     .line 138
-    move-result v7
+    move-result v9
 
     .line 139
-    if-eqz v7, :cond_b
+    invoke-static {v9}, LzHa;->L(I)I
 
     .line 140
     .line 141
-    if-eq v7, v5, :cond_a
-
     .line 142
+    move-result v9
+
     .line 143
-    if-ne v7, v10, :cond_9
+    if-eqz v9, :cond_b
 
     .line 144
     .line 145
-    if-eqz v8, :cond_8
+    if-eq v9, v6, :cond_a
 
     .line 146
     .line 147
-    invoke-virtual/range {p1 .. p1}, LYXc;->e()Landroid/graphics/Rect;
+    if-ne v9, v1, :cond_9
 
     .line 148
     .line 149
-    .line 150
-    move-result-object v7
+    if-eqz v10, :cond_8
 
+    .line 150
     .line 151
-    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+    invoke-virtual/range {p1 .. p1}, LTcd;->e()Landroid/graphics/Rect;
 
     .line 152
     .line 153
-    add-int/2addr v7, v9
-
     .line 154
-    goto :goto_5
+    move-result-object v9
 
     .line 155
-    :cond_8
-    invoke-virtual/range {p1 .. p1}, LYXc;->e()Landroid/graphics/Rect;
+    iget v9, v9, Landroid/graphics/Rect;->bottom:I
 
     .line 156
     .line 157
+    add-int/2addr v9, v11
+
     .line 158
-    move-result-object v7
+    goto :goto_5
 
     .line 159
-    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+    :cond_8
+    invoke-virtual/range {p1 .. p1}, LTcd;->e()Landroid/graphics/Rect;
 
     .line 160
     .line 161
-    goto :goto_5
-
     .line 162
-    :cond_9
-    new-instance v1, LFzc;
+    move-result-object v9
 
     .line 163
+    iget v9, v9, Landroid/graphics/Rect;->bottom:I
+
     .line 164
-    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
-
     .line 165
-    .line 166
-    .line 167
-    throw v1
+    goto :goto_5
 
+    .line 166
+    :cond_9
+    new-instance v1, LwOc;
+
+    .line 167
     .line 168
-    :cond_a
-    invoke-virtual/range {p1 .. p1}, LYXc;->e()Landroid/graphics/Rect;
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
 
     .line 169
     .line 170
     .line 171
-    move-result-object v7
+    throw v1
 
     .line 172
-    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+    :cond_a
+    invoke-virtual/range {p1 .. p1}, LTcd;->e()Landroid/graphics/Rect;
 
     .line 173
     .line 174
-    goto :goto_5
-
     .line 175
-    :cond_b
-    invoke-virtual/range {p1 .. p1}, LYXc;->b()Landroid/graphics/Rect;
+    move-result-object v9
 
     .line 176
+    iget v9, v9, Landroid/graphics/Rect;->bottom:I
+
     .line 177
     .line 178
-    move-result-object v7
+    goto :goto_5
 
     .line 179
-    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+    :cond_b
+    invoke-virtual/range {p1 .. p1}, LTcd;->b()Landroid/graphics/Rect;
 
     .line 180
     .line 181
-    :goto_5
-    if-eqz p3, :cond_c
-
     .line 182
+    move-result-object v9
+
     .line 183
-    invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget v9, v9, Landroid/graphics/Rect;->bottom:I
 
     .line 184
     .line 185
-    .line 186
-    move-result-object v12
+    :goto_5
+    if-eqz p3, :cond_c
 
+    .line 186
     .line 187
-    iput-object v12, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->d1:Ljava/lang/Integer;
+    invoke-static {v9}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 188
     .line 189
-    :cond_c
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->j2()I
-
     .line 190
-    .line 191
-    .line 192
-    move-result v12
+    move-result-object v13
 
+    .line 191
+    iput-object v13, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->a1:Ljava/lang/Integer;
+
+    .line 192
     .line 193
-    sget-object v13, LZXc;->a:[I
+    :cond_c
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->g2()I
 
     .line 194
     .line 195
-    invoke-static {v12}, Llva;->L(I)I
-
     .line 196
-    .line 197
-    .line 198
-    move-result v12
+    move-result v13
 
+    .line 197
+    sget-object v14, LVcd;->a:[I
+
+    .line 198
     .line 199
-    aget v12, v13, v12
+    invoke-static {v13}, LzHa;->L(I)I
 
     .line 200
     .line 201
-    iget-object v13, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->R0:Landroid/widget/FrameLayout$LayoutParams;
-
     .line 202
+    move-result v13
+
     .line 203
-    if-ne v12, v11, :cond_e
+    aget v13, v14, v13
 
     .line 204
     .line 205
-    const/16 v11, 0x50
+    iget-object v14, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->O0:Landroid/widget/FrameLayout$LayoutParams;
 
     .line 206
     .line 207
-    iput v11, v13, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
+    if-ne v13, v12, :cond_e
 
     .line 208
     .line 209
-    invoke-virtual/range {p1 .. p1}, LYXc;->e()Landroid/graphics/Rect;
+    const/16 v12, 0x50
 
     .line 210
     .line 211
-    .line 212
-    move-result-object v11
+    iput v12, v14, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
+    .line 212
     .line 213
-    iget v11, v11, Landroid/graphics/Rect;->bottom:I
+    invoke-virtual/range {p1 .. p1}, LTcd;->e()Landroid/graphics/Rect;
 
     .line 214
     .line 215
-    iput v11, v13, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
-
     .line 216
+    move-result-object v12
+
     .line 217
-    if-eqz v8, :cond_d
+    iget v12, v12, Landroid/graphics/Rect;->bottom:I
 
     .line 218
     .line 219
-    move v11, v9
+    iput v12, v14, Landroid/widget/FrameLayout$LayoutParams;->bottomMargin:I
 
     .line 220
-    goto :goto_6
-
     .line 221
-    :cond_d
-    const/4 v11, 0x0
+    if-eqz v10, :cond_d
 
     .line 222
-    :goto_6
-    iput v11, v13, Landroid/widget/FrameLayout$LayoutParams;->height:I
-
     .line 223
+    move v12, v11
+
     .line 224
-    goto :goto_7
+    goto :goto_6
 
     .line 225
-    :cond_e
-    iput v1, v13, Landroid/widget/FrameLayout$LayoutParams;->height:I
+    :cond_d
+    const/4 v12, 0x0
 
     .line 226
-    .line 227
-    :goto_7
-    iget-object v11, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:Landroid/view/View;
+    :goto_6
+    iput v12, v14, Landroid/widget/FrameLayout$LayoutParams;->height:I
 
+    .line 227
     .line 228
+    goto :goto_7
+
     .line 229
-    if-eqz v11, :cond_10
+    :cond_e
+    iput v7, v14, Landroid/widget/FrameLayout$LayoutParams;->height:I
 
     .line 230
     .line 231
-    iget v12, v13, Landroid/widget/FrameLayout$LayoutParams;->height:I
+    :goto_7
+    iget-object v12, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->N0:Landroid/view/View;
 
     .line 232
     .line 233
-    if-lez v12, :cond_f
+    if-eqz v12, :cond_10
 
     .line 234
     .line 235
-    const/4 v12, 0x1
+    iget v13, v14, Landroid/widget/FrameLayout$LayoutParams;->height:I
 
     .line 236
-    goto :goto_8
-
     .line 237
-    :cond_f
-    const/4 v12, 0x0
+    if-lez v13, :cond_f
 
     .line 238
-    :goto_8
-    invoke-static {v11, v12}, LLZj;->E0(Landroid/view/View;Z)V
-
     .line 239
+    const/4 v13, 0x1
+
     .line 240
+    goto :goto_8
+
     .line 241
-    :cond_10
-    iget-object v11, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->J0:LHwh;
+    :cond_f
+    const/4 v13, 0x0
 
     .line 242
-    .line 243
-    if-eqz v11, :cond_2d
+    :goto_8
+    invoke-static {v12, v13}, LDz9;->p0(Landroid/view/View;Z)V
 
+    .line 243
     .line 244
     .line 245
-    invoke-virtual {v11}, LHwh;->a()I
+    :cond_10
+    iget-object v12, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->F0:LIUh;
 
     .line 246
     .line 247
-    .line 248
-    move-result v11
+    if-eqz v12, :cond_2d
 
+    .line 248
     .line 249
-    invoke-virtual/range {p1 .. p1}, LYXc;->b()Landroid/graphics/Rect;
+    invoke-virtual {v12}, LIUh;->a()I
 
     .line 250
     .line 251
     .line 252
-    move-result-object v12
+    move-result v12
 
     .line 253
-    iget v12, v12, Landroid/graphics/Rect;->top:I
+    invoke-virtual/range {p1 .. p1}, LTcd;->b()Landroid/graphics/Rect;
 
     .line 254
     .line 255
-    if-lt v12, v11, :cond_11
-
     .line 256
+    move-result-object v13
+
     .line 257
-    const/4 v13, 0x1
+    iget v13, v13, Landroid/graphics/Rect;->top:I
 
     .line 258
-    goto :goto_9
-
     .line 259
-    :cond_11
-    const/4 v13, 0x0
+    if-lt v13, v12, :cond_11
 
     .line 260
-    :goto_9
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->k2()LQVc;
-
     .line 261
+    const/4 v14, 0x1
+
     .line 262
+    goto :goto_9
+
     .line 263
-    move-result-object v14
+    :cond_11
+    const/4 v14, 0x0
 
     .line 264
-    if-eqz v14, :cond_12
+    :goto_9
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->h2()LHad;
 
     .line 265
     .line 266
-    sget-object v14, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
     .line 267
+    move-result-object v15
+
     .line 268
-    goto :goto_a
+    if-eqz v15, :cond_12
 
     .line 269
-    :cond_12
-    const/4 v14, 0x0
-
     .line 270
-    :goto_a
-    sget-object v15, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    sget-object v15, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 271
     .line 272
-    invoke-static {v14, v15}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    :goto_a
+    const/16 v16, 0x0
 
     .line 273
     .line 274
-    .line 275
-    move-result v14
-
-    .line 276
-    if-eqz v14, :cond_13
-
-    .line 277
-    .line 278
-    const/4 v14, 0x0
-
-    .line 279
     goto :goto_b
 
-    .line 280
-    :cond_13
-    move v14, v12
+    .line 275
+    :cond_12
+    const/4 v15, 0x0
 
-    .line 281
+    .line 276
+    goto :goto_a
+
+    .line 277
     :goto_b
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->k2()LQVc;
+    sget-object v5, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
+    .line 278
+    .line 279
+    invoke-static {v15, v5}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 280
+    .line 281
     .line 282
-    .line 283
-    .line 284
-    move-result-object v16
+    move-result v15
 
+    .line 283
+    if-eqz v15, :cond_13
+
+    .line 284
     .line 285
-    if-eqz v16, :cond_14
+    const/4 v15, 0x0
 
     .line 286
-    .line 287
-    sget-object v16, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 288
-    .line 289
-    move-object/from16 v4, v16
-
-    .line 290
-    .line 291
-    :goto_c
-    const/16 v16, 0x0
-
-    .line 292
-    .line 293
-    goto :goto_d
-
-    .line 294
-    :cond_14
-    const/4 v4, 0x0
-
-    .line 295
     goto :goto_c
 
+    .line 287
+    :cond_13
+    move v15, v13
+
+    .line 288
+    :goto_c
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->h2()LHad;
+
+    .line 289
+    .line 290
+    .line 291
+    move-result-object v17
+
+    .line 292
+    if-eqz v17, :cond_14
+
+    .line 293
+    .line 294
+    sget-object v17, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 295
     .line 296
-    :goto_d
-    invoke-static {v4, v15}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    move-object/from16 v7, v17
 
     .line 297
     .line 298
+    goto :goto_d
+
     .line 299
-    move-result v4
+    :cond_14
+    move-object/from16 v7, v16
 
     .line 300
-    if-eqz v4, :cond_15
-
     .line 301
+    :goto_d
+    invoke-static {v7, v5}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 302
-    goto :goto_e
-
     .line 303
-    :cond_15
-    const/4 v12, 0x0
-
     .line 304
-    :goto_e
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->j2()I
+    move-result v7
 
     .line 305
+    if-eqz v7, :cond_15
+
     .line 306
     .line 307
-    move-result v4
+    goto :goto_e
 
     .line 308
-    invoke-static {v4}, Llva;->L(I)I
+    :cond_15
+    const/4 v13, 0x0
 
     .line 309
+    :goto_e
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->g2()I
+
     .line 310
     .line 311
-    move-result v4
-
     .line 312
-    if-eqz v4, :cond_16
+    move-result v7
 
     .line 313
-    .line 314
-    if-eq v4, v5, :cond_16
+    invoke-static {v7}, LzHa;->L(I)I
 
+    .line 314
     .line 315
     .line 316
-    if-ne v4, v10, :cond_18
+    move-result v7
 
     .line 317
+    if-eqz v7, :cond_16
+
     .line 318
-    if-eqz v8, :cond_17
-
     .line 319
-    .line 320
-    :cond_16
-    const/4 v4, 0x0
+    if-eq v7, v6, :cond_16
 
+    .line 320
     .line 321
-    goto :goto_f
+    if-ne v7, v1, :cond_18
 
     .line 322
-    :cond_17
-    invoke-virtual/range {p1 .. p1}, LYXc;->a()Landroid/graphics/Rect;
-
     .line 323
+    if-eqz v10, :cond_17
+
     .line 324
     .line 325
-    move-result-object v4
+    :cond_16
+    const/4 v6, 0x0
 
     .line 326
-    iget v4, v4, Landroid/graphics/Rect;->bottom:I
-
-    .line 327
-    .line 328
-    invoke-virtual/range {p1 .. p1}, LYXc;->e()Landroid/graphics/Rect;
-
-    .line 329
-    .line 330
-    .line 331
-    move-result-object v10
-
-    .line 332
-    iget v10, v10, Landroid/graphics/Rect;->bottom:I
-
-    .line 333
-    .line 334
-    sub-int/2addr v4, v10
-
-    .line 335
     goto :goto_f
 
+    .line 327
+    :cond_17
+    invoke-virtual/range {p1 .. p1}, LTcd;->a()Landroid/graphics/Rect;
+
+    .line 328
+    .line 329
+    .line 330
+    move-result-object v7
+
+    .line 331
+    iget v7, v7, Landroid/graphics/Rect;->bottom:I
+
+    .line 332
+    .line 333
+    invoke-virtual/range {p1 .. p1}, LTcd;->e()Landroid/graphics/Rect;
+
+    .line 334
+    .line 335
     .line 336
-    :cond_18
-    new-instance v1, LFzc;
+    move-result-object v6
 
     .line 337
-    .line 338
-    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+    iget v6, v6, Landroid/graphics/Rect;->bottom:I
 
+    .line 338
     .line 339
+    sub-int v6, v7, v6
+
     .line 340
     .line 341
-    throw v1
+    goto :goto_f
 
     .line 342
-    :goto_f
-    if-eqz p2, :cond_19
+    :cond_18
+    new-instance v1, LwOc;
 
     .line 343
     .line 344
-    goto :goto_10
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
 
     .line 345
-    :cond_19
-    iget-object v7, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->d1:Ljava/lang/Integer;
-
     .line 346
     .line 347
-    if-eqz v7, :cond_1a
+    throw v1
 
     .line 348
+    :goto_f
+    if-eqz p2, :cond_19
+
     .line 349
-    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
-
     .line 350
-    .line 351
-    .line 352
-    move-result v7
-
-    .line 353
     goto :goto_10
 
-    .line 354
-    :cond_1a
-    const/4 v7, 0x0
+    .line 351
+    :cond_19
+    iget-object v7, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->a1:Ljava/lang/Integer;
 
+    .line 352
+    .line 353
+    if-eqz v7, :cond_1a
+
+    .line 354
     .line 355
-    :goto_10
-    new-instance v10, LNm9;
+    invoke-virtual {v7}, Ljava/lang/Integer;->intValue()I
 
     .line 356
     .line 357
-    const/16 v5, 0xc
-
     .line 358
+    move-result v9
+
     .line 359
-    invoke-direct {v10, v14, v7, v5}, LNm9;-><init>(III)V
+    goto :goto_10
 
     .line 360
+    :cond_1a
+    const/4 v9, 0x0
+
     .line 361
+    :goto_10
+    new-instance v7, LGv9;
+
     .line 362
-    new-instance v7, LbYc;
-
     .line 363
-    .line 364
-    invoke-direct {v7, v1}, LbYc;-><init>(I)V
+    const/16 v1, 0xc
 
+    .line 364
     .line 365
+    invoke-direct {v7, v15, v9, v1}, LGv9;-><init>(III)V
+
     .line 366
     .line 367
-    iget-object v14, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->B0:LOf2;
-
     .line 368
-    .line 369
-    if-eqz v14, :cond_2c
+    new-instance v9, LtDc;
 
+    .line 369
     .line 370
+    const/4 v15, 0x2
+
     .line 371
-    invoke-virtual {v14}, LOf2;->d()LrC7;
+    invoke-direct {v9, v15}, LtDc;-><init>(I)V
 
     .line 372
     .line 373
     .line 374
-    invoke-static {v6}, Llva;->L(I)I
+    iget-object v1, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->x0:Lwi2;
 
     .line 375
     .line 376
-    .line 377
-    move-result v6
+    if-eqz v1, :cond_2c
 
+    .line 377
     .line 378
-    if-eqz v6, :cond_23
+    invoke-virtual {v1}, Lwi2;->d()LDH7;
 
     .line 379
     .line 380
-    const/4 v14, 0x1
-
     .line 381
-    if-eq v6, v14, :cond_20
+    invoke-static {v8}, LzHa;->L(I)I
 
     .line 382
     .line 383
-    const/4 v8, 0x2
-
     .line 384
-    if-ne v6, v8, :cond_1f
+    move-result v1
 
     .line 385
+    if-eqz v1, :cond_23
+
     .line 386
-    invoke-virtual/range {p1 .. p1}, LYXc;->c()I
-
     .line 387
-    .line 388
-    .line 389
-    move-result v6
+    const/4 v8, 0x1
 
+    .line 388
+    if-eq v1, v8, :cond_20
+
+    .line 389
     .line 390
-    if-eqz v6, :cond_1b
+    if-ne v1, v15, :cond_1f
 
     .line 391
     .line 392
-    const/4 v6, 0x1
+    invoke-virtual/range {p1 .. p1}, LTcd;->c()I
 
     .line 393
-    goto :goto_11
-
     .line 394
-    :cond_1b
-    const/4 v6, 0x0
-
     .line 395
-    :goto_11
-    invoke-virtual {v0, v10, v6}, Lcom/snap/opera/presenter/OperaFragment;->W1(LNm9;Z)LPSc;
+    move-result v1
 
     .line 396
+    if-eqz v1, :cond_1b
+
     .line 397
     .line 398
-    move-result-object v6
+    const/4 v1, 0x1
 
     .line 399
-    if-eqz v2, :cond_1d
+    goto :goto_11
 
     .line 400
+    :cond_1b
+    const/4 v1, 0x0
+
     .line 401
-    iget-boolean v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
+    :goto_11
+    invoke-virtual {v3, v7, v1}, LI9d;->a(LGv9;Z)LE7d;
 
     .line 402
     .line 403
-    if-eqz v2, :cond_1c
-
     .line 404
+    move-result-object v1
+
     .line 405
-    new-instance v7, LbYc;
+    if-eqz v2, :cond_1d
 
     .line 406
     .line 407
-    invoke-virtual {v6}, LPSc;->a()LNm9;
+    iget-boolean v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->W0:Z
 
     .line 408
     .line 409
-    .line 410
-    move-result-object v2
+    if-eqz v2, :cond_1c
 
+    .line 410
     .line 411
-    invoke-virtual {v2}, LNm9;->b()I
+    new-instance v9, LtDc;
 
     .line 412
     .line 413
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
     .line 414
-    move-result v2
-
     .line 415
-    add-int/2addr v2, v9
-
     .line 416
-    invoke-direct {v7, v2, v1}, LbYc;-><init>(II)V
+    move-result-object v2
 
     .line 417
+    invoke-virtual {v2}, LGv9;->b()I
+
     .line 418
     .line 419
-    new-instance v2, LNm9;
-
     .line 420
+    move-result v2
+
     .line 421
-    invoke-virtual {v10}, LNm9;->c()I
+    add-int/2addr v2, v11
 
     .line 422
+    const/4 v15, 0x2
+
     .line 423
+    invoke-direct {v9, v2, v15}, LtDc;-><init>(II)V
+
     .line 424
-    move-result v3
-
     .line 425
-    invoke-virtual {v6}, LPSc;->a()LNm9;
-
     .line 426
+    new-instance v2, LGv9;
+
     .line 427
     .line 428
-    move-result-object v8
+    invoke-virtual {v7}, LGv9;->c()I
 
     .line 429
-    invoke-virtual {v8}, LNm9;->c()I
-
     .line 430
     .line 431
-    .line 432
-    move-result v8
-
-    .line 433
-    add-int/2addr v8, v3
-
-    .line 434
-    invoke-virtual {v10}, LNm9;->b()I
-
-    .line 435
-    .line 436
-    .line 437
     move-result v3
 
-    .line 438
-    sub-int/2addr v3, v9
+    .line 432
+    invoke-virtual {v1}, LE7d;->a()LGv9;
 
+    .line 433
+    .line 434
+    .line 435
+    move-result-object v4
+
+    .line 436
+    invoke-virtual {v4}, LGv9;->c()I
+
+    .line 437
+    .line 438
     .line 439
-    invoke-direct {v2, v8, v3, v5}, LNm9;-><init>(III)V
+    move-result v4
 
     .line 440
+    add-int/2addr v4, v3
+
     .line 441
+    invoke-virtual {v7}, LGv9;->b()I
+
     .line 442
-    :goto_12
-    move-object v10, v2
-
     .line 443
-    goto :goto_13
-
     .line 444
-    :cond_1c
-    new-instance v2, LNm9;
+    move-result v3
 
     .line 445
+    sub-int/2addr v3, v11
+
     .line 446
-    invoke-virtual {v10}, LNm9;->c()I
+    const/16 v10, 0xc
 
     .line 447
     .line 448
+    invoke-direct {v2, v4, v3, v10}, LGv9;-><init>(III)V
+
     .line 449
-    move-result v3
-
     .line 450
-    invoke-virtual {v6}, LPSc;->a()LNm9;
-
     .line 451
+    :goto_12
+    move-object v7, v2
+
     .line 452
+    goto :goto_13
+
     .line 453
-    move-result-object v8
+    :cond_1c
+    const/16 v10, 0xc
 
     .line 454
-    invoke-virtual {v8}, LNm9;->c()I
-
     .line 455
+    new-instance v2, LGv9;
+
     .line 456
     .line 457
-    move-result v8
+    invoke-virtual {v7}, LGv9;->c()I
 
     .line 458
-    add-int/2addr v8, v3
-
     .line 459
-    invoke-virtual {v10}, LNm9;->b()I
-
     .line 460
+    move-result v3
+
     .line 461
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
     .line 462
-    move-result v3
-
     .line 463
-    invoke-virtual {v6}, LPSc;->a()LNm9;
-
     .line 464
+    move-result-object v4
+
     .line 465
+    invoke-virtual {v4}, LGv9;->c()I
+
     .line 466
-    move-result-object v9
-
     .line 467
-    invoke-virtual {v9}, LNm9;->b()I
-
     .line 468
-    .line 469
-    .line 470
-    move-result v9
-
-    .line 471
-    add-int/2addr v9, v3
-
-    .line 472
-    invoke-direct {v2, v8, v9, v5}, LNm9;-><init>(III)V
-
-    .line 473
-    .line 474
-    .line 475
-    goto :goto_12
-
-    .line 476
-    :goto_13
-    invoke-virtual {v6}, LPSc;->b()LNm9;
-
-    .line 477
-    .line 478
-    .line 479
-    move-result-object v2
-
-    .line 480
-    invoke-virtual {v6}, LPSc;->b()LNm9;
-
-    .line 481
-    .line 482
-    .line 483
-    move-result-object v3
-
-    .line 484
-    invoke-virtual {v3}, LNm9;->c()I
-
-    .line 485
-    .line 486
-    .line 487
-    move-result v3
-
-    .line 488
-    invoke-static {v3, v12}, Ljava/lang/Math;->max(II)I
-
-    .line 489
-    .line 490
-    .line 491
-    move-result v3
-
-    .line 492
-    invoke-virtual {v6}, LPSc;->b()LNm9;
-
-    .line 493
-    .line 494
-    .line 495
-    move-result-object v6
-
-    .line 496
-    invoke-virtual {v6}, LNm9;->b()I
-
-    .line 497
-    .line 498
-    .line 499
-    move-result v6
-
-    .line 500
-    invoke-static {v6, v4}, Ljava/lang/Math;->max(II)I
-
-    .line 501
-    .line 502
-    .line 503
     move-result v4
 
-    .line 504
-    invoke-static {v2, v3, v4, v5}, LNm9;->a(LNm9;III)LNm9;
+    .line 469
+    add-int/2addr v4, v3
 
+    .line 470
+    invoke-virtual {v7}, LGv9;->b()I
+
+    .line 471
+    .line 472
+    .line 473
+    move-result v3
+
+    .line 474
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
+    .line 475
+    .line 476
+    .line 477
+    move-result-object v7
+
+    .line 478
+    invoke-virtual {v7}, LGv9;->b()I
+
+    .line 479
+    .line 480
+    .line 481
+    move-result v7
+
+    .line 482
+    add-int/2addr v7, v3
+
+    .line 483
+    invoke-direct {v2, v4, v7, v10}, LGv9;-><init>(III)V
+
+    .line 484
+    .line 485
+    .line 486
+    goto :goto_12
+
+    .line 487
+    :goto_13
+    invoke-virtual {v1}, LE7d;->b()LGv9;
+
+    .line 488
+    .line 489
+    .line 490
+    move-result-object v2
+
+    .line 491
+    invoke-virtual {v1}, LE7d;->b()LGv9;
+
+    .line 492
+    .line 493
+    .line 494
+    move-result-object v3
+
+    .line 495
+    invoke-virtual {v3}, LGv9;->c()I
+
+    .line 496
+    .line 497
+    .line 498
+    move-result v3
+
+    .line 499
+    invoke-static {v3, v13}, Ljava/lang/Math;->max(II)I
+
+    .line 500
+    .line 501
+    .line 502
+    move-result v3
+
+    .line 503
+    invoke-virtual {v1}, LE7d;->b()LGv9;
+
+    .line 504
     .line 505
     .line 506
+    move-result-object v1
+
     .line 507
-    move-result-object v2
+    invoke-virtual {v1}, LGv9;->b()I
 
     .line 508
-    goto/16 :goto_19
-
     .line 509
     .line 510
-    :cond_1d
-    iget-boolean v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
+    move-result v1
 
     .line 511
-    .line 512
-    if-eqz v2, :cond_1e
+    invoke-static {v1, v6}, Ljava/lang/Math;->max(II)I
 
+    .line 512
     .line 513
     .line 514
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+    move-result v1
 
     .line 515
+    invoke-static {v2, v3, v1, v10}, LGv9;->a(LGv9;III)LGv9;
+
     .line 516
     .line 517
-    move-result v2
-
     .line 518
-    if-eqz v2, :cond_1e
+    move-result-object v1
 
     .line 519
+    goto/16 :goto_19
+
     .line 520
-    new-instance v7, LbYc;
-
     .line 521
-    .line 522
-    invoke-virtual {v6}, LPSc;->a()LNm9;
+    :cond_1d
+    iget-boolean v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->W0:Z
 
+    .line 522
     .line 523
+    if-eqz v2, :cond_1e
+
     .line 524
     .line 525
-    move-result-object v2
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 526
-    invoke-virtual {v2}, LNm9;->b()I
-
     .line 527
     .line 528
-    .line 529
     move-result v2
 
-    .line 530
-    invoke-direct {v7, v2, v1}, LbYc;-><init>(II)V
+    .line 529
+    if-eqz v2, :cond_1e
 
+    .line 530
     .line 531
+    new-instance v9, LtDc;
+
     .line 532
     .line 533
-    new-instance v2, LNm9;
+    invoke-virtual {v1}, LE7d;->a()LGv9;
 
     .line 534
     .line 535
-    invoke-virtual {v10}, LNm9;->c()I
-
     .line 536
-    .line 537
-    .line 538
-    move-result v3
-
-    .line 539
-    invoke-virtual {v6}, LPSc;->a()LNm9;
-
-    .line 540
-    .line 541
-    .line 542
-    move-result-object v8
-
-    .line 543
-    invoke-virtual {v8}, LNm9;->c()I
-
-    .line 544
-    .line 545
-    .line 546
-    move-result v8
-
-    .line 547
-    add-int/2addr v8, v3
-
-    .line 548
-    invoke-virtual {v10}, LNm9;->b()I
-
-    .line 549
-    .line 550
-    .line 551
-    move-result v3
-
-    .line 552
-    invoke-direct {v2, v8, v3, v5}, LNm9;-><init>(III)V
-
-    .line 553
-    .line 554
-    .line 555
-    :goto_14
-    move-object v10, v2
-
-    .line 556
-    goto :goto_15
-
-    .line 557
-    :cond_1e
-    new-instance v2, LNm9;
-
-    .line 558
-    .line 559
-    invoke-virtual {v10}, LNm9;->c()I
-
-    .line 560
-    .line 561
-    .line 562
-    move-result v3
-
-    .line 563
-    invoke-virtual {v6}, LPSc;->a()LNm9;
-
-    .line 564
-    .line 565
-    .line 566
-    move-result-object v8
-
-    .line 567
-    invoke-virtual {v8}, LNm9;->c()I
-
-    .line 568
-    .line 569
-    .line 570
-    move-result v8
-
-    .line 571
-    add-int/2addr v8, v3
-
-    .line 572
-    invoke-virtual {v10}, LNm9;->b()I
-
-    .line 573
-    .line 574
-    .line 575
-    move-result v3
-
-    .line 576
-    invoke-virtual {v6}, LPSc;->a()LNm9;
-
-    .line 577
-    .line 578
-    .line 579
-    move-result-object v9
-
-    .line 580
-    invoke-virtual {v9}, LNm9;->b()I
-
-    .line 581
-    .line 582
-    .line 583
-    move-result v9
-
-    .line 584
-    add-int/2addr v9, v3
-
-    .line 585
-    invoke-direct {v2, v8, v9, v5}, LNm9;-><init>(III)V
-
-    .line 586
-    .line 587
-    .line 588
-    goto :goto_14
-
-    .line 589
-    :goto_15
-    invoke-virtual {v6}, LPSc;->b()LNm9;
-
-    .line 590
-    .line 591
-    .line 592
     move-result-object v2
 
-    .line 593
-    invoke-virtual {v6}, LPSc;->b()LNm9;
+    .line 537
+    invoke-virtual {v2}, LGv9;->b()I
 
-    .line 594
-    .line 595
-    .line 596
-    move-result-object v3
+    .line 538
+    .line 539
+    .line 540
+    move-result v2
 
-    .line 597
-    invoke-virtual {v3}, LNm9;->c()I
+    .line 541
+    const/4 v15, 0x2
 
-    .line 598
-    .line 599
-    .line 600
+    .line 542
+    invoke-direct {v9, v2, v15}, LtDc;-><init>(II)V
+
+    .line 543
+    .line 544
+    .line 545
+    new-instance v2, LGv9;
+
+    .line 546
+    .line 547
+    invoke-virtual {v7}, LGv9;->c()I
+
+    .line 548
+    .line 549
+    .line 550
     move-result v3
 
+    .line 551
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
+    .line 552
+    .line 553
+    .line 554
+    move-result-object v4
+
+    .line 555
+    invoke-virtual {v4}, LGv9;->c()I
+
+    .line 556
+    .line 557
+    .line 558
+    move-result v4
+
+    .line 559
+    add-int/2addr v4, v3
+
+    .line 560
+    invoke-virtual {v7}, LGv9;->b()I
+
+    .line 561
+    .line 562
+    .line 563
+    move-result v3
+
+    .line 564
+    const/16 v10, 0xc
+
+    .line 565
+    .line 566
+    invoke-direct {v2, v4, v3, v10}, LGv9;-><init>(III)V
+
+    .line 567
+    .line 568
+    .line 569
+    :goto_14
+    move-object v7, v2
+
+    .line 570
+    goto :goto_15
+
+    .line 571
+    :cond_1e
+    new-instance v2, LGv9;
+
+    .line 572
+    .line 573
+    invoke-virtual {v7}, LGv9;->c()I
+
+    .line 574
+    .line 575
+    .line 576
+    move-result v3
+
+    .line 577
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
+    .line 578
+    .line 579
+    .line 580
+    move-result-object v4
+
+    .line 581
+    invoke-virtual {v4}, LGv9;->c()I
+
+    .line 582
+    .line 583
+    .line 584
+    move-result v4
+
+    .line 585
+    add-int/2addr v4, v3
+
+    .line 586
+    invoke-virtual {v7}, LGv9;->b()I
+
+    .line 587
+    .line 588
+    .line 589
+    move-result v3
+
+    .line 590
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
+    .line 591
+    .line 592
+    .line 593
+    move-result-object v7
+
+    .line 594
+    invoke-virtual {v7}, LGv9;->b()I
+
+    .line 595
+    .line 596
+    .line 597
+    move-result v7
+
+    .line 598
+    add-int/2addr v7, v3
+
+    .line 599
+    const/16 v10, 0xc
+
+    .line 600
     .line 601
-    invoke-static {v3, v12}, Ljava/lang/Math;->max(II)I
+    invoke-direct {v2, v4, v7, v10}, LGv9;-><init>(III)V
 
     .line 602
     .line 603
     .line 604
-    move-result v3
+    goto :goto_14
 
     .line 605
-    invoke-virtual {v6}, LPSc;->b()LNm9;
+    :goto_15
+    invoke-virtual {v1}, LE7d;->b()LGv9;
 
     .line 606
     .line 607
     .line 608
-    move-result-object v6
+    move-result-object v2
 
     .line 609
-    invoke-virtual {v6}, LNm9;->b()I
+    invoke-virtual {v1}, LE7d;->b()LGv9;
 
     .line 610
     .line 611
     .line 612
-    move-result v6
+    move-result-object v3
 
     .line 613
-    invoke-static {v6, v4}, Ljava/lang/Math;->max(II)I
+    invoke-virtual {v3}, LGv9;->c()I
 
     .line 614
     .line 615
     .line 616
-    move-result v4
+    move-result v3
 
     .line 617
-    invoke-static {v2, v3, v4, v5}, LNm9;->a(LNm9;III)LNm9;
+    invoke-static {v3, v13}, Ljava/lang/Math;->max(II)I
 
     .line 618
     .line 619
     .line 620
-    move-result-object v2
+    move-result v3
 
     .line 621
-    goto/16 :goto_19
+    invoke-virtual {v1}, LE7d;->b()LGv9;
 
     .line 622
     .line 623
-    :cond_1f
-    new-instance v1, LFzc;
-
     .line 624
+    move-result-object v1
+
     .line 625
-    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
+    invoke-virtual {v1}, LGv9;->b()I
 
     .line 626
     .line 627
     .line 628
-    throw v1
+    move-result v1
 
     .line 629
-    :cond_20
-    invoke-virtual/range {p1 .. p1}, LYXc;->c()I
+    invoke-static {v1, v6}, Ljava/lang/Math;->max(II)I
 
     .line 630
     .line 631
     .line 632
-    move-result v2
+    move-result v1
 
     .line 633
-    if-eqz v2, :cond_21
+    invoke-static {v2, v3, v1, v10}, LGv9;->a(LGv9;III)LGv9;
 
     .line 634
     .line 635
-    const/4 v2, 0x1
-
     .line 636
-    goto :goto_16
+    move-result-object v1
 
     .line 637
-    :cond_21
-    const/4 v2, 0x0
+    goto/16 :goto_19
 
     .line 638
-    :goto_16
-    invoke-virtual {v0, v10, v2}, Lcom/snap/opera/presenter/OperaFragment;->W1(LNm9;Z)LPSc;
-
     .line 639
+    :cond_1f
+    new-instance v1, LwOc;
+
     .line 640
     .line 641
-    move-result-object v2
+    invoke-direct {v1}, Ljava/lang/RuntimeException;-><init>()V
 
     .line 642
-    iget-boolean v6, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
-
     .line 643
     .line 644
-    if-eqz v6, :cond_22
+    throw v1
 
     .line 645
-    .line 646
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+    :cond_20
+    invoke-virtual/range {p1 .. p1}, LTcd;->c()I
 
+    .line 646
     .line 647
     .line 648
+    move-result v1
+
     .line 649
-    move-result v3
+    if-eqz v1, :cond_21
 
     .line 650
-    if-eqz v3, :cond_22
-
     .line 651
+    const/4 v1, 0x1
+
     .line 652
-    new-instance v7, LbYc;
+    goto :goto_16
 
     .line 653
+    :cond_21
+    const/4 v1, 0x0
+
     .line 654
-    invoke-virtual {v2}, LPSc;->a()LNm9;
+    :goto_16
+    invoke-virtual {v3, v7, v1}, LI9d;->a(LGv9;Z)LE7d;
 
     .line 655
     .line 656
     .line 657
-    move-result-object v3
+    move-result-object v1
 
     .line 658
-    invoke-virtual {v3}, LNm9;->b()I
+    iget-boolean v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->W0:Z
 
     .line 659
     .line 660
-    .line 661
-    move-result v3
+    if-eqz v2, :cond_22
 
+    .line 661
     .line 662
-    invoke-direct {v7, v3, v1}, LbYc;-><init>(II)V
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 663
     .line 664
     .line 665
-    new-instance v3, LNm9;
+    move-result v2
 
     .line 666
-    .line 667
-    invoke-virtual {v10}, LNm9;->c()I
+    if-eqz v2, :cond_22
 
+    .line 667
     .line 668
+    new-instance v9, LtDc;
+
     .line 669
     .line 670
-    move-result v6
+    invoke-virtual {v1}, LE7d;->a()LGv9;
 
     .line 671
-    invoke-virtual {v2}, LPSc;->a()LNm9;
-
     .line 672
     .line 673
+    move-result-object v2
+
     .line 674
-    move-result-object v8
+    invoke-virtual {v2}, LGv9;->b()I
 
     .line 675
-    invoke-virtual {v8}, LNm9;->c()I
-
     .line 676
     .line 677
+    move-result v2
+
     .line 678
-    move-result v8
+    const/4 v15, 0x2
 
     .line 679
-    add-int/2addr v8, v6
+    invoke-direct {v9, v2, v15}, LtDc;-><init>(II)V
 
     .line 680
-    invoke-virtual {v10}, LNm9;->b()I
-
     .line 681
     .line 682
-    .line 683
-    move-result v6
+    new-instance v2, LGv9;
 
+    .line 683
     .line 684
-    invoke-direct {v3, v8, v6, v5}, LNm9;-><init>(III)V
+    invoke-virtual {v7}, LGv9;->c()I
 
     .line 685
     .line 686
     .line 687
-    :goto_17
-    move-object v10, v3
+    move-result v3
 
     .line 688
-    goto :goto_18
+    invoke-virtual {v1}, LE7d;->a()LGv9;
 
     .line 689
-    :cond_22
-    new-instance v3, LNm9;
-
     .line 690
     .line 691
-    invoke-virtual {v10}, LNm9;->c()I
+    move-result-object v4
 
     .line 692
+    invoke-virtual {v4}, LGv9;->c()I
+
     .line 693
     .line 694
-    move-result v6
-
     .line 695
-    invoke-virtual {v2}, LPSc;->a()LNm9;
+    move-result v4
 
     .line 696
+    add-int/2addr v4, v3
+
     .line 697
+    invoke-virtual {v7}, LGv9;->b()I
+
     .line 698
-    move-result-object v8
-
     .line 699
-    invoke-virtual {v8}, LNm9;->c()I
-
     .line 700
-    .line 701
-    .line 702
-    move-result v8
+    move-result v3
 
+    .line 701
+    const/16 v10, 0xc
+
+    .line 702
     .line 703
-    add-int/2addr v8, v6
+    invoke-direct {v2, v4, v3, v10}, LGv9;-><init>(III)V
 
     .line 704
-    invoke-virtual {v10}, LNm9;->b()I
-
     .line 705
     .line 706
+    :goto_17
+    move-object v7, v2
+
     .line 707
-    move-result v6
+    goto :goto_18
 
     .line 708
-    invoke-virtual {v2}, LPSc;->a()LNm9;
+    :cond_22
+    new-instance v2, LGv9;
 
     .line 709
     .line 710
+    invoke-virtual {v7}, LGv9;->c()I
+
     .line 711
-    move-result-object v9
-
     .line 712
-    invoke-virtual {v9}, LNm9;->b()I
-
     .line 713
+    move-result v3
+
     .line 714
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
     .line 715
-    move-result v9
-
     .line 716
-    add-int/2addr v9, v6
-
     .line 717
-    invoke-direct {v3, v8, v9, v5}, LNm9;-><init>(III)V
+    move-result-object v4
 
     .line 718
+    invoke-virtual {v4}, LGv9;->c()I
+
     .line 719
     .line 720
-    goto :goto_17
-
     .line 721
-    :goto_18
-    invoke-virtual {v2}, LPSc;->b()LNm9;
+    move-result v4
 
     .line 722
+    add-int/2addr v4, v3
+
     .line 723
+    invoke-virtual {v7}, LGv9;->b()I
+
     .line 724
-    move-result-object v3
-
     .line 725
-    invoke-virtual {v2}, LPSc;->b()LNm9;
-
     .line 726
+    move-result v3
+
     .line 727
+    invoke-virtual {v1}, LE7d;->a()LGv9;
+
     .line 728
-    move-result-object v6
-
     .line 729
-    invoke-virtual {v6}, LNm9;->c()I
-
     .line 730
+    move-result-object v7
+
     .line 731
+    invoke-virtual {v7}, LGv9;->b()I
+
     .line 732
-    move-result v6
-
     .line 733
-    invoke-static {v6, v12}, Ljava/lang/Math;->max(II)I
-
     .line 734
+    move-result v7
+
     .line 735
+    add-int/2addr v7, v3
+
     .line 736
-    move-result v6
+    const/16 v10, 0xc
 
     .line 737
-    invoke-virtual {v2}, LPSc;->b()LNm9;
-
     .line 738
+    invoke-direct {v2, v4, v7, v10}, LGv9;-><init>(III)V
+
     .line 739
     .line 740
-    move-result-object v2
-
     .line 741
-    invoke-virtual {v2}, LNm9;->b()I
+    goto :goto_17
 
     .line 742
+    :goto_18
+    invoke-virtual {v1}, LE7d;->b()LGv9;
+
     .line 743
     .line 744
-    move-result v2
-
     .line 745
-    invoke-static {v2, v4}, Ljava/lang/Math;->max(II)I
-
-    .line 746
-    .line 747
-    .line 748
-    move-result v2
-
-    .line 749
-    invoke-static {v3, v6, v2, v5}, LNm9;->a(LNm9;III)LNm9;
-
-    .line 750
-    .line 751
-    .line 752
     move-result-object v2
 
+    .line 746
+    invoke-virtual {v1}, LE7d;->b()LGv9;
+
+    .line 747
+    .line 748
+    .line 749
+    move-result-object v3
+
+    .line 750
+    invoke-virtual {v3}, LGv9;->c()I
+
+    .line 751
+    .line 752
     .line 753
-    goto :goto_19
+    move-result v3
 
     .line 754
-    :cond_23
-    const/4 v14, 0x1
+    invoke-static {v3, v13}, Ljava/lang/Math;->max(II)I
 
     .line 755
-    if-eqz v2, :cond_25
-
     .line 756
     .line 757
-    if-eqz v8, :cond_25
+    move-result v3
 
     .line 758
-    .line 759
-    iget-boolean v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
+    invoke-virtual {v1}, LE7d;->b()LGv9;
 
+    .line 759
     .line 760
     .line 761
-    const/16 v3, 0xd
+    move-result-object v1
 
     .line 762
-    .line 763
-    if-eqz v2, :cond_24
+    invoke-virtual {v1}, LGv9;->b()I
 
+    .line 763
     .line 764
     .line 765
-    new-instance v7, LbYc;
+    move-result v1
 
     .line 766
-    .line 767
-    invoke-direct {v7, v9, v1}, LbYc;-><init>(II)V
+    invoke-static {v1, v6}, Ljava/lang/Math;->max(II)I
 
+    .line 767
     .line 768
     .line 769
+    move-result v1
+
     .line 770
-    invoke-virtual {v10}, LNm9;->b()I
+    invoke-static {v2, v3, v1, v10}, LGv9;->a(LGv9;III)LGv9;
 
     .line 771
     .line 772
     .line 773
-    move-result v2
+    move-result-object v1
 
     .line 774
-    sub-int/2addr v2, v9
-
-    .line 775
-    invoke-static {v10, v1, v2, v3}, LNm9;->a(LNm9;III)LNm9;
-
-    .line 776
-    .line 777
-    .line 778
-    move-result-object v10
-
-    .line 779
-    new-instance v2, LNm9;
-
-    .line 780
-    .line 781
-    invoke-direct {v2, v12, v4, v5}, LNm9;-><init>(III)V
-
-    .line 782
-    .line 783
-    .line 784
     goto :goto_19
 
-    .line 785
-    :cond_24
-    invoke-virtual {v10}, LNm9;->b()I
+    .line 775
+    :cond_23
+    const/4 v8, 0x1
 
+    .line 776
+    if-eqz v2, :cond_25
+
+    .line 777
+    .line 778
+    if-eqz v10, :cond_25
+
+    .line 779
+    .line 780
+    iget-boolean v1, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->W0:Z
+
+    .line 781
+    .line 782
+    const/16 v2, 0xd
+
+    .line 783
+    .line 784
+    if-eqz v1, :cond_24
+
+    .line 785
     .line 786
+    new-instance v9, LtDc;
+
     .line 787
     .line 788
-    move-result v2
+    const/4 v15, 0x2
 
     .line 789
-    invoke-static {v10, v1, v2, v3}, LNm9;->a(LNm9;III)LNm9;
+    invoke-direct {v9, v11, v15}, LtDc;-><init>(II)V
 
     .line 790
     .line 791
     .line 792
-    move-result-object v10
+    invoke-virtual {v7}, LGv9;->b()I
 
     .line 793
-    new-instance v2, LNm9;
-
     .line 794
     .line 795
-    invoke-direct {v2, v12, v4, v5}, LNm9;-><init>(III)V
+    move-result v1
 
     .line 796
+    sub-int/2addr v1, v11
+
     .line 797
+    const/4 v3, 0x0
+
     .line 798
-    goto :goto_19
+    invoke-static {v7, v3, v1, v2}, LGv9;->a(LGv9;III)LGv9;
 
     .line 799
-    :cond_25
-    new-instance v2, LNm9;
-
     .line 800
     .line 801
-    invoke-direct {v2, v12, v4, v5}, LNm9;-><init>(III)V
+    move-result-object v7
 
     .line 802
+    new-instance v1, LGv9;
+
     .line 803
     .line 804
-    :goto_19
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y1()LOVc;
+    const/16 v10, 0xc
 
     .line 805
     .line 806
+    invoke-direct {v1, v13, v6, v10}, LGv9;-><init>(III)V
+
     .line 807
-    move-result-object v3
-
     .line 808
-    invoke-virtual {v3}, LOVc;->c()Lr1f;
-
     .line 809
+    goto :goto_19
+
     .line 810
+    :cond_24
+    const/4 v3, 0x0
+
     .line 811
-    move-result-object v3
+    const/16 v10, 0xc
 
     .line 812
-    new-instance v4, Lr1f;
-
     .line 813
-    .line 814
-    invoke-virtual {v10}, LNm9;->c()I
+    invoke-virtual {v7}, LGv9;->b()I
 
+    .line 814
     .line 815
     .line 816
+    move-result v1
+
     .line 817
-    move-result v5
+    invoke-static {v7, v3, v1, v2}, LGv9;->a(LGv9;III)LGv9;
 
     .line 818
-    invoke-virtual {v10}, LNm9;->b()I
-
     .line 819
     .line 820
+    move-result-object v7
+
     .line 821
-    move-result v6
+    new-instance v1, LGv9;
 
     .line 822
-    add-int/2addr v6, v5
-
     .line 823
-    invoke-virtual {v7}, LbYc;->c()I
+    invoke-direct {v1, v13, v6, v10}, LGv9;-><init>(III)V
 
     .line 824
     .line 825
     .line 826
-    move-result v5
+    goto :goto_19
 
     .line 827
-    add-int/2addr v5, v6
+    :cond_25
+    const/16 v10, 0xc
 
     .line 828
-    invoke-direct {v4, v1, v5}, Lr1f;-><init>(II)V
-
     .line 829
+    new-instance v1, LGv9;
+
     .line 830
     .line 831
-    invoke-virtual {v3, v4}, Lr1f;->i(Lr1f;)Lr1f;
+    invoke-direct {v1, v13, v6, v10}, LGv9;-><init>(III)V
 
     .line 832
     .line 833
     .line 834
-    move-result-object v3
+    :goto_19
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y1()LFad;
 
     .line 835
-    iget-boolean v4, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->V0:Z
-
     .line 836
     .line 837
-    if-nez v4, :cond_28
+    move-result-object v2
 
     .line 838
-    .line 839
-    invoke-virtual {v3}, Lr1f;->b()D
+    invoke-virtual {v2}, LFad;->c()Lujf;
 
+    .line 839
     .line 840
     .line 841
+    move-result-object v2
+
     .line 842
-    move-result-wide v3
+    new-instance v3, Lujf;
 
     .line 843
-    if-nez v13, :cond_27
-
     .line 844
-    .line 845
-    const-wide/high16 v5, 0x3fe2000000000000L    # 0.5625
+    invoke-virtual {v7}, LGv9;->c()I
 
+    .line 845
     .line 846
     .line 847
-    cmpg-double v8, v3, v5
+    move-result v4
 
     .line 848
-    .line 849
-    if-gez v8, :cond_26
+    invoke-virtual {v7}, LGv9;->b()I
 
+    .line 849
     .line 850
     .line 851
-    goto :goto_1a
+    move-result v6
 
     .line 852
-    :cond_26
-    const/4 v5, 0x0
+    add-int/2addr v6, v4
 
     .line 853
-    goto :goto_1b
+    invoke-virtual {v9}, LtDc;->f()I
 
     .line 854
-    :cond_27
-    :goto_1a
-    const/4 v5, 0x1
-
     .line 855
-    :goto_1b
-    iput-boolean v5, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->U0:Z
-
     .line 856
+    move-result v4
+
     .line 857
-    :cond_28
-    iget-boolean v3, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->U0:Z
+    add-int/2addr v4, v6
 
     .line 858
+    const/4 v6, 0x0
+
     .line 859
-    if-eqz v3, :cond_2a
+    invoke-direct {v3, v6, v4}, Lujf;-><init>(II)V
 
     .line 860
     .line 861
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->k2()LQVc;
-
     .line 862
+    invoke-virtual {v2, v3}, Lujf;->i(Lujf;)Lujf;
+
     .line 863
     .line 864
-    move-result-object v3
-
     .line 865
-    if-eqz v3, :cond_29
+    move-result-object v2
 
     .line 866
+    iget-boolean v3, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->S0:Z
+
     .line 867
-    sget-object v4, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
     .line 868
-    .line 869
-    goto :goto_1c
+    if-nez v3, :cond_28
 
+    .line 869
     .line 870
-    :cond_29
-    move-object/from16 v4, v16
+    invoke-virtual {v2}, Lujf;->b()D
 
     .line 871
     .line 872
-    :goto_1c
-    invoke-static {v4, v15}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 873
-    .line 874
-    .line 875
-    move-result v3
+    move-result-wide v2
 
+    .line 874
+    if-nez v14, :cond_27
+
+    .line 875
     .line 876
-    const/16 v4, 0xe
+    const-wide/high16 v10, 0x3fe2000000000000L    # 0.5625
 
     .line 877
     .line 878
-    if-eqz v3, :cond_2b
+    cmpg-double v4, v2, v10
 
     .line 879
     .line 880
-    invoke-virtual {v2}, LNm9;->c()I
+    if-gez v4, :cond_26
 
     .line 881
     .line 882
+    goto :goto_1a
+
     .line 883
-    move-result v3
+    :cond_26
+    const/4 v6, 0x0
 
     .line 884
-    invoke-static {v3, v11}, Ljava/lang/Math;->max(II)I
+    goto :goto_1b
 
     .line 885
-    .line 886
-    .line 887
-    move-result v3
+    :cond_27
+    :goto_1a
+    const/4 v6, 0x1
 
+    .line 886
+    :goto_1b
+    iput-boolean v6, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->R0:Z
+
+    .line 887
     .line 888
-    invoke-static {v2, v3, v1, v4}, LNm9;->a(LNm9;III)LNm9;
+    :cond_28
+    iget-boolean v2, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->R0:Z
 
     .line 889
     .line 890
-    .line 891
-    move-result-object v2
+    if-eqz v2, :cond_2a
 
+    .line 891
     .line 892
-    :cond_2a
-    :goto_1d
-    move-object/from16 v17, v2
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->h2()LHad;
 
     .line 893
     .line 894
-    goto :goto_1e
-
     .line 895
-    :cond_2b
-    invoke-virtual {v10}, LNm9;->c()I
+    move-result-object v2
 
     .line 896
+    if-eqz v2, :cond_29
+
     .line 897
     .line 898
-    move-result v3
+    sget-object v2, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 899
-    invoke-static {v3, v11}, Ljava/lang/Math;->max(II)I
-
     .line 900
-    .line 901
-    .line 902
-    move-result v3
+    goto :goto_1c
 
+    .line 901
+    :cond_29
+    move-object/from16 v2, v16
+
+    .line 902
     .line 903
-    invoke-static {v10, v3, v1, v4}, LNm9;->a(LNm9;III)LNm9;
+    :goto_1c
+    invoke-static {v2, v5}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 904
     .line 905
     .line 906
-    move-result-object v10
+    move-result v2
 
     .line 907
-    goto :goto_1d
+    const/16 v3, 0xe
 
     .line 908
-    :goto_1e
-    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y1()LOVc;
-
     .line 909
+    if-eqz v2, :cond_2b
+
     .line 910
     .line 911
-    move-result-object v1
+    invoke-virtual {v1}, LGv9;->c()I
 
     .line 912
-    invoke-virtual {v1}, LOVc;->c()Lr1f;
-
     .line 913
     .line 914
+    move-result v2
+
     .line 915
-    move-result-object v14
+    invoke-static {v2, v12}, Ljava/lang/Math;->max(II)I
 
     .line 916
-    invoke-virtual {v10}, LNm9;->c()I
-
     .line 917
     .line 918
+    move-result v2
+
     .line 919
-    move-result v15
+    const/4 v6, 0x0
 
     .line 920
-    invoke-virtual {v10}, LNm9;->b()I
+    invoke-static {v1, v2, v6, v3}, LGv9;->a(LGv9;III)LGv9;
 
     .line 921
     .line 922
     .line 923
-    move-result v16
+    move-result-object v1
 
     .line 924
-    invoke-virtual {v7}, LbYc;->c()I
+    :cond_2a
+    :goto_1d
+    move-object/from16 v18, v1
 
     .line 925
     .line 926
+    goto :goto_1e
+
     .line 927
-    move-result v18
+    :cond_2b
+    const/4 v6, 0x0
 
     .line 928
-    invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v7}, LGv9;->c()I
 
     .line 929
     .line 930
     .line 931
-    move-result-object v1
+    move-result v2
 
     .line 932
-    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v2, v12}, Ljava/lang/Math;->max(II)I
 
     .line 933
     .line 934
     .line 935
-    move-result-object v20
+    move-result v2
 
     .line 936
-    new-instance v13, LOVc;
+    invoke-static {v7, v2, v6, v3}, LGv9;->a(LGv9;III)LGv9;
 
     .line 937
     .line 938
-    const/16 v19, 0x0
-
     .line 939
+    move-result-object v7
+
     .line 940
-    invoke-direct/range {v13 .. v20}, LOVc;-><init>(Lr1f;IILNm9;IILjava/util/List;)V
+    goto :goto_1d
 
     .line 941
+    :goto_1e
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y1()LFad;
+
     .line 942
     .line 943
-    iget-object v1, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
     .line 944
+    move-result-object v1
+
     .line 945
-    invoke-virtual {v1, v13}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+    invoke-virtual {v1}, LFad;->c()Lujf;
 
     .line 946
     .line 947
     .line 948
-    return-void
+    move-result-object v1
 
     .line 949
-    :cond_2c
-    const-string v1, "capriLayoutParamsProvider"
+    invoke-virtual {v1}, Lujf;->getHeight()I
 
     .line 950
     .line 951
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
-
     .line 952
+    move-result v1
+
     .line 953
+    invoke-virtual/range {p1 .. p1}, LTcd;->e()Landroid/graphics/Rect;
+
     .line 954
-    throw v16
-
     .line 955
-    :cond_2d
-    const/16 v16, 0x0
-
     .line 956
+    move-result-object v2
+
     .line 957
-    const-string v1, "statusBarUtils"
+    iget v2, v2, Landroid/graphics/Rect;->bottom:I
 
     .line 958
     .line 959
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-virtual/range {p1 .. p1}, LTcd;->f()LUcd;
 
     .line 960
     .line 961
     .line 962
+    move-result-object v3
+
+    .line 963
+    invoke-virtual {v3}, LUcd;->b()F
+
+    .line 964
+    .line 965
+    .line 966
+    move-result v3
+
+    .line 967
+    invoke-virtual/range {p1 .. p1}, LTcd;->f()LUcd;
+
+    .line 968
+    .line 969
+    .line 970
+    move-result-object v4
+
+    .line 971
+    invoke-virtual {v4}, LUcd;->a()Lu54;
+
+    .line 972
+    .line 973
+    .line 974
+    move-result-object v4
+
+    .line 975
+    invoke-static {v1, v2, v3, v4}, Lcom/snap/opera/presenter/OperaFragment;->X1(IIFLu54;)Ljava/lang/Integer;
+
+    .line 976
+    .line 977
+    .line 978
+    move-result-object v22
+
+    .line 979
+    invoke-virtual {v0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y1()LFad;
+
+    .line 980
+    .line 981
+    .line 982
+    move-result-object v1
+
+    .line 983
+    invoke-virtual {v1}, LFad;->c()Lujf;
+
+    .line 984
+    .line 985
+    .line 986
+    move-result-object v15
+
+    .line 987
+    invoke-virtual {v7}, LGv9;->c()I
+
+    .line 988
+    .line 989
+    .line 990
+    move-result v16
+
+    .line 991
+    invoke-virtual {v7}, LGv9;->b()I
+
+    .line 992
+    .line 993
+    .line 994
+    move-result v17
+
+    .line 995
+    invoke-virtual {v9}, LtDc;->f()I
+
+    .line 996
+    .line 997
+    .line 998
+    move-result v19
+
+    .line 999
+    invoke-static {v13}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1000
+    .line 1001
+    .line 1002
+    move-result-object v1
+
+    .line 1003
+    invoke-static {v1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 1004
+    .line 1005
+    .line 1006
+    move-result-object v21
+
+    .line 1007
+    new-instance v14, LFad;
+
+    .line 1008
+    .line 1009
+    const/16 v20, 0x0
+
+    .line 1010
+    .line 1011
+    invoke-direct/range {v14 .. v22}, LFad;-><init>(Lujf;IILGv9;IILjava/util/List;Ljava/lang/Integer;)V
+
+    .line 1012
+    .line 1013
+    .line 1014
+    iget-object v1, v0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 1015
+    .line 1016
+    invoke-virtual {v1, v14}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 1017
+    .line 1018
+    .line 1019
+    return-void
+
+    .line 1020
+    :cond_2c
+    const-string v1, "capriLayoutParamsProvider"
+
+    .line 1021
+    .line 1022
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 1023
+    .line 1024
+    .line 1025
+    throw v16
+
+    .line 1026
+    :cond_2d
+    const/16 v16, 0x0
+
+    .line 1027
+    .line 1028
+    const-string v1, "statusBarUtils"
+
+    .line 1029
+    .line 1030
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 1031
+    .line 1032
+    .line 1033
     throw v16
 .end method
 
-.method public final o2()V
+.method public final l2()V
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->E0:LTqc;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->A0:LmGc;
 
     .line 2
     .line 3
@@ -3946,11 +4000,11 @@
 
     .line 4
     .line 5
-    new-instance v1, LwEd;
+    new-instance v1, LcWd;
 
     .line 6
     .line 7
-    sget-object v2, LbJc;->o0:LbJc;
+    sget-object v2, LGXc;->o0:LGXc;
 
     .line 8
     .line 9
@@ -3967,12 +4021,12 @@
 
     .line 13
     .line 14
-    invoke-direct/range {v1 .. v6}, LwEd;-><init>(LcSa;ZZLPpc;I)V
+    invoke-direct/range {v1 .. v6}, LcWd;-><init>(LL4b;ZZLkFc;I)V
 
     .line 15
     .line 16
     .line 17
-    invoke-virtual {v0, v1}, LTqc;->H(LOpc;)V
+    invoke-virtual {v0, v1}, LmGc;->G(LjFc;)V
 
     .line 18
     .line 19
@@ -3985,7 +4039,7 @@
 
     .line 22
     .line 23
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 24
     .line 25
@@ -3996,33 +4050,7 @@
     throw v0
 .end method
 
-.method public final onSaveInstanceState(Landroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, LXXc;
-
-    .line 5
-    .line 6
-    invoke-direct {v0, p0}, LXXc;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;)V
-
-    .line 7
-    .line 8
-    .line 9
-    invoke-virtual {v0, p1}, LXXc;->e(Landroid/os/Bundle;)V
-
-    .line 10
-    .line 11
-    .line 12
-    return-void
-.end method
-
-.method public final p2()V
+.method public final m2()V
     .locals 3
 
     .line 1
@@ -4038,94 +4066,99 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LVVc;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
 
     .line 8
     .line 9
-    if-eqz v0, :cond_1
+    invoke-virtual {v0}, LI9d;->b()LOad;
 
     .line 10
     .line 11
-    invoke-virtual {v0}, LVVc;->f()LXTc;
-
     .line 12
-    .line 13
-    .line 14
-    move-result-object v0
+    move-result-object v1
 
+    .line 13
+    if-eqz v1, :cond_1
+
+    .line 14
     .line 15
-    invoke-virtual {v0}, LXTc;->d()Z
+    invoke-virtual {v0}, LI9d;->b()LOad;
 
     .line 16
     .line 17
     .line 18
-    move-result v0
+    move-result-object v0
 
     .line 19
-    if-eqz v0, :cond_1
+    invoke-virtual {v0}, LOad;->e()LK8d;
 
     .line 20
     .line 21
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->P0:Lw0d;
-
     .line 22
+    move-result-object v0
+
     .line 23
-    const v1, 0x3c23d70a    # 0.01f
+    invoke-virtual {v0}, LK8d;->d()Z
 
     .line 24
     .line 25
     .line 26
-    if-eqz v0, :cond_0
+    move-result v0
 
     .line 27
-    .line 28
-    sget-object v2, LDIj;->a:Ljava/util/WeakHashMap;
-
-    .line 29
-    .line 30
-    invoke-static {v0, v1}, LtIj;->s(Landroid/view/View;F)V
-
-    .line 31
-    .line 32
-    .line 33
-    :cond_0
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:Landroid/view/View;
-
-    .line 34
-    .line 35
     if-eqz v0, :cond_1
 
+    .line 28
+    .line 29
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->M0:Lsfd;
+
+    .line 30
+    .line 31
+    const v1, 0x3c23d70a    # 0.01f
+
+    .line 32
+    .line 33
+    .line 34
+    if-eqz v0, :cond_0
+
+    .line 35
     .line 36
+    sget-object v2, Lb8k;->a:Ljava/util/WeakHashMap;
+
     .line 37
-    sget-object v2, LDIj;->a:Ljava/util/WeakHashMap;
-
     .line 38
-    .line 39
-    invoke-static {v0, v1}, LtIj;->s(Landroid/view/View;F)V
+    invoke-static {v0, v1}, LR7k;->s(Landroid/view/View;F)V
 
+    .line 39
     .line 40
     .line 41
+    :cond_0
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->N0:Landroid/view/View;
+
     .line 42
+    .line 43
+    if-eqz v0, :cond_1
+
+    .line 44
+    .line 45
+    sget-object v2, Lb8k;->a:Ljava/util/WeakHashMap;
+
+    .line 46
+    .line 47
+    invoke-static {v0, v1}, LR7k;->s(Landroid/view/View;F)V
+
+    .line 48
+    .line 49
+    .line 50
     :cond_1
     return-void
 .end method
 
-.method public final q0()Lio/reactivex/rxjava3/core/Observable;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->L0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final q2(Z)V
+.method public final n2(Z)V
     .locals 6
 
     .line 1
-    iget-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Z0:Z
+    iget-boolean v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->W0:Z
 
     .line 2
     .line 3
@@ -4133,7 +4166,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->s2()Z
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()Z
 
     .line 6
     .line 7
@@ -4168,7 +4201,7 @@
 
     .line 20
     .line 21
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->F0:LQ05;
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->B0:LR55;
 
     .line 22
     .line 23
@@ -4176,7 +4209,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {p1}, LQ05;->get()Ljava/lang/Object;
+    invoke-virtual {p1}, LR55;->get()Ljava/lang/Object;
 
     .line 26
     .line 27
@@ -4184,16 +4217,16 @@
     move-result-object p1
 
     .line 29
-    check-cast p1, LFwc;
+    check-cast p1, LBLc;
 
     .line 30
     .line 31
-    invoke-virtual {p1, v3}, LFwc;->k(Z)V
+    invoke-virtual {p1, v3}, LBLc;->k(Z)V
 
     .line 32
     .line 33
     .line 34
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:Landroid/view/View;
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->N0:Landroid/view/View;
 
     .line 35
     .line 36
@@ -4214,7 +4247,7 @@
 
     .line 43
     :cond_2
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -4223,71 +4256,71 @@
 
     .line 47
     :cond_3
-    iget-boolean p1, p0, Lcom/snap/opera/presenter/OperaFragment;->x0:Z
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
 
     .line 48
     .line 49
-    if-nez p1, :cond_4
+    invoke-virtual {p1}, LI9d;->c()Z
 
     .line 50
     .line 51
-    goto :goto_2
-
     .line 52
-    :cond_4
-    iget p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->S0:F
+    move-result p1
 
     .line 53
-    .line 54
-    const/high16 v4, 0x3f000000    # 0.5f
+    if-nez p1, :cond_4
 
+    .line 54
     .line 55
+    goto :goto_2
+
     .line 56
-    cmpg-float p1, p1, v4
+    :cond_4
+    iget p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->P0:F
 
     .line 57
     .line 58
-    if-gez p1, :cond_5
+    const/high16 v4, 0x3f000000    # 0.5f
 
     .line 59
     .line 60
-    goto :goto_0
+    cmpg-float p1, p1, v4
 
     .line 61
-    :cond_5
-    const/4 v3, 0x0
-
     .line 62
-    :goto_0
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->F0:LQ05;
+    if-gez p1, :cond_5
 
     .line 63
     .line 64
-    if-eqz p1, :cond_9
+    goto :goto_0
 
     .line 65
+    :cond_5
+    const/4 v3, 0x0
+
     .line 66
-    invoke-virtual {p1}, LQ05;->get()Ljava/lang/Object;
+    :goto_0
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->B0:LR55;
 
     .line 67
     .line 68
-    .line 69
-    move-result-object p1
+    if-eqz p1, :cond_9
 
+    .line 69
     .line 70
-    check-cast p1, LFwc;
+    invoke-virtual {p1}, LR55;->get()Ljava/lang/Object;
 
     .line 71
     .line 72
-    invoke-virtual {p1}, LFwc;->c()LRwc;
-
     .line 73
-    .line 74
-    .line 75
-    move-result-object v4
+    move-result-object p1
 
+    .line 74
+    check-cast p1, LBLc;
+
+    .line 75
     .line 76
-    invoke-virtual {v4}, LRwc;->a()LQwc;
+    invoke-virtual {p1}, LBLc;->c()LMLc;
 
     .line 77
     .line 78
@@ -4295,83 +4328,82 @@
     move-result-object v4
 
     .line 80
-    sget-object v5, LbJc;->o0:LbJc;
+    invoke-virtual {v4}, LMLc;->a()LLLc;
 
     .line 81
     .line 82
-    invoke-virtual {p1, v5, v4}, LFwc;->m(LcSa;LQwc;)V
-
     .line 83
+    move-result-object v4
+
     .line 84
+    sget-object v5, LGXc;->o0:LGXc;
+
     .line 85
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->F0:LQ05;
-
     .line 86
-    .line 87
-    if-eqz p1, :cond_8
+    invoke-virtual {p1, v5, v4}, LBLc;->m(LL4b;LLLc;)V
 
+    .line 87
     .line 88
     .line 89
-    invoke-virtual {p1}, LQ05;->get()Ljava/lang/Object;
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->B0:LR55;
 
     .line 90
     .line 91
-    .line 92
-    move-result-object p1
+    if-eqz p1, :cond_8
 
+    .line 92
     .line 93
-    check-cast p1, LFwc;
+    invoke-virtual {p1}, LR55;->get()Ljava/lang/Object;
 
     .line 94
     .line 95
-    invoke-virtual {p1, v3}, LFwc;->k(Z)V
-
     .line 96
+    move-result-object p1
+
     .line 97
+    check-cast p1, LBLc;
+
     .line 98
-    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:Landroid/view/View;
-
     .line 99
-    .line 100
-    if-nez p1, :cond_6
+    invoke-virtual {p1, v3}, LBLc;->k(Z)V
 
+    .line 100
     .line 101
     .line 102
-    goto :goto_2
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->N0:Landroid/view/View;
 
     .line 103
+    .line 104
+    if-nez p1, :cond_6
+
+    .line 105
+    .line 106
+    goto :goto_2
+
+    .line 107
     :cond_6
     if-eqz v3, :cond_7
 
-    .line 104
-    .line 105
+    .line 108
+    .line 109
     goto :goto_1
 
-    .line 106
+    .line 110
     :cond_7
     const/4 v2, 0x0
 
-    .line 107
+    .line 111
     :goto_1
     invoke-virtual {p1, v2}, Landroid/view/View;->setAlpha(F)V
-
-    .line 108
-    .line 109
-    .line 110
-    return-void
-
-    .line 111
-    :cond_8
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
 
     .line 112
     .line 113
     .line 114
-    throw v0
+    return-void
 
     .line 115
-    :cond_9
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    :cond_8
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 116
     .line 117
@@ -4379,16 +4411,25 @@
     throw v0
 
     .line 119
+    :cond_9
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 120
+    .line 121
+    .line 122
+    throw v0
+
+    .line 123
     :cond_a
     :goto_2
     return-void
 .end method
 
-.method public final r2()Z
+.method public final o2()Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->T0:LXXc;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:LScd;
 
     .line 2
     .line 3
@@ -4396,7 +4437,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LXXc;->b()Z
+    invoke-virtual {v0}, LScd;->b()Z
 
     .line 6
     .line 7
@@ -4428,7 +4469,7 @@
     move-result-object v1
 
     .line 19
-    invoke-static {v1}, Lsc5;->w0(Landroid/content/Context;)Lr1f;
+    invoke-static {v1}, LTVd;->N(Landroid/content/Context;)Lujf;
 
     .line 20
     .line 21
@@ -4436,7 +4477,7 @@
     move-result-object v1
 
     .line 23
-    invoke-virtual {v1}, Lr1f;->h()Z
+    invoke-virtual {v1}, Lujf;->h()Z
 
     .line 24
     .line 25
@@ -4448,7 +4489,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->s2()Z
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->p2()Z
 
     .line 30
     .line 31
@@ -4497,18 +4538,55 @@
     move-result-object v0
 
     .line 49
-    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->W0:Ljava/lang/Boolean;
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->T0:Ljava/lang/Boolean;
 
     .line 50
     .line 51
     return v1
 .end method
 
-.method public final s2()Z
+.method public final onSaveInstanceState(Landroid/os/Bundle;)V
+    .locals 1
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, LScd;
+
+    .line 5
+    .line 6
+    invoke-direct {v0, p0}, LScd;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;)V
+
+    .line 7
+    .line 8
+    .line 9
+    invoke-virtual {v0, p1}, LScd;->e(Landroid/os/Bundle;)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public final p0()Lio/reactivex/rxjava3/core/Observable;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->H0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final p2()Z
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->T0:LXXc;
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:LScd;
 
     .line 2
     .line 3
@@ -4516,7 +4594,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LXXc;->c()Z
+    invoke-virtual {v0}, LScd;->c()Z
 
     .line 6
     .line 7
@@ -4540,7 +4618,7 @@
 
     .line 15
     :goto_0
-    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->k2()LQVc;
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->h2()LHad;
 
     .line 16
     .line 17
@@ -4573,18 +4651,18 @@
     move-result-object v1
 
     .line 30
-    iput-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->X0:Ljava/lang/Boolean;
+    iput-object v1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->U0:Ljava/lang/Boolean;
 
     .line 31
     .line 32
     return v0
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->v(LiGc;)V
 
     .line 2
     .line 3
@@ -4592,10 +4670,233 @@
     const/4 p1, 0x0
 
     .line 5
-    invoke-virtual {p0, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->q2(Z)V
+    invoke-virtual {p0, p1}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->n2(Z)V
 
     .line 6
     .line 7
     .line 8
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
+
+    .line 5
+    .line 6
+    .line 7
+    return-void
+.end method
+
+.method public final z(LOad;)V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:LScd;
+
+    .line 3
+    .line 4
+    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->z(LOad;)V
+
+    .line 5
+    .line 6
+    .line 7
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y0:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 8
+    .line 9
+    invoke-interface {p1}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 10
+    .line 11
+    .line 12
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 13
+    .line 14
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y0:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 15
+    .line 16
+    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->e(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method public final z1(Landroid/os/Bundle;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snap/opera/presenter/OperaFragment;->z1(Landroid/os/Bundle;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Q0:LScd;
+
+    .line 5
+    .line 6
+    if-eqz p1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, LScd;->d()Z
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p1
+
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    invoke-virtual {p0}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->getContext()Landroid/content/Context;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p1
+
+    .line 17
+    invoke-static {p1}, LTVd;->N(Landroid/content/Context;)Lujf;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    invoke-virtual {p1}, Lujf;->h()Z
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p1
+
+    .line 25
+    :goto_0
+    iput-boolean p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->R0:Z
+
+    .line 26
+    .line 27
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaFragment;->w0:LI9d;
+
+    .line 28
+    .line 29
+    invoke-virtual {p1}, LI9d;->b()LOad;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    if-nez p1, :cond_1
+
+    .line 34
+    .line 35
+    iget-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->X0:Lio/reactivex/rxjava3/core/Completable;
+
+    .line 36
+    .line 37
+    invoke-virtual {p0}, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->j2()LnJe;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object v0
+
+    .line 41
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 46
+    .line 47
+    .line 48
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
+
+    .line 49
+    .line 50
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+
+    .line 51
+    .line 52
+    .line 53
+    new-instance p1, LWcd;
+
+    .line 54
+    .line 55
+    const/4 v0, 0x1
+
+    .line 56
+    invoke-direct {p1, p0, v0}, LWcd;-><init>(Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    invoke-virtual {v1, p1}, Lio/reactivex/rxjava3/core/Completable;->k(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object p1
+
+    .line 63
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Completable;->p()Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object p1
+
+    .line 67
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    iput-object p1, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->Y0:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 72
+    .line 73
+    sget-object v0, Llu6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 74
+    .line 75
+    iget-object v0, p0, Lcom/snap/opera/presenter/OperaPlaylistV2ViewerFragmentImpl;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 76
+    .line 77
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
+    .line 78
+    .line 79
+    .line 80
+    :cond_1
     return-void
 .end method

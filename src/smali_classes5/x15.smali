@@ -1,55 +1,50 @@
 .class public final Lx15;
-.super LXX2;
+.super Lz03;
 .source "SourceFile"
-
-# interfaces
-.implements LHKj;
 
 
 # instance fields
-.field public X:I
+.field public b:Lxna;
 
-.field public Y:LoPc;
+.field public c:Lio/reactivex/rxjava3/core/Observable;
 
-.field public Z:Lio/reactivex/rxjava3/core/Observable;
-
-.field public b:I
-
-.field public c:Lx3f;
-
-.field public t:Z
+.field public t:Lbda;
 
 
 # virtual methods
-.method public final c()Ljava/lang/Object;
-    .locals 3
+.method public final b()Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lx15;->Y:LoPc;
+    iget-object v0, p0, Lx15;->b:Lxna;
 
     .line 2
     .line 3
-    iget-object v1, p0, Lx15;->Z:Lio/reactivex/rxjava3/core/Observable;
+    iget-object v1, p0, Lx15;->c:Lio/reactivex/rxjava3/core/Observable;
 
     .line 4
     .line 5
-    new-instance v2, Ly15;
+    iget-object v2, p0, Lx15;->t:Lbda;
 
     .line 6
     .line 7
-    invoke-direct {v2, v0, v1}, Ly15;-><init>(LoPc;Lio/reactivex/rxjava3/core/Observable;)V
+    new-instance v3, Ly15;
 
     .line 8
     .line 9
+    invoke-direct {v3, v0, v1, v2}, Ly15;-><init>(Lxna;Lio/reactivex/rxjava3/core/Observable;Lbda;)V
+
     .line 10
-    return-object v2
+    .line 11
+    .line 12
+    return-object v3
 .end method
 
-.method public final d(Lio/reactivex/rxjava3/core/Observable;)V
+.method public final e(Lio/reactivex/rxjava3/core/Observable;)V
     .locals 11
 
     .line 1
-    invoke-virtual {p0}, LXX2;->a()Ljava/lang/Object;
+    invoke-virtual {p0}, Lz03;->a()Ljava/lang/Object;
 
     .line 2
     .line 3
@@ -57,289 +52,194 @@
     move-result-object v0
 
     .line 5
-    check-cast v0, LoPc;
+    check-cast v0, Lxna;
 
     .line 6
     .line 7
-    invoke-interface {v0}, LoPc;->b()Lnwf;
+    invoke-virtual {p0}, Lz03;->a()Ljava/lang/Object;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object v1
 
     .line 11
-    invoke-virtual {p0}, LXX2;->a()Ljava/lang/Object;
+    check-cast v1, Lxna;
 
     .line 12
     .line 13
-    .line 14
-    move-result-object v1
+    iget-object v0, v0, Lxna;->c:LyPf;
 
+    .line 14
     .line 15
-    check-cast v1, LoPc;
+    check-cast v0, LTT5;
 
     .line 16
     .line 17
-    invoke-interface {v1}, LoPc;->a()Lan0;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v1
+    iget-object v0, v1, Lxna;->b:Lrp0;
 
     .line 21
-    check-cast v0, LIP5;
-
     .line 22
-    .line 23
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string v1, "LensesStatusComponent.Builder#attachToViewStub"
 
+    .line 23
     .line 24
+    invoke-static {v0, v1}, LTT5;->b(Lrp0;Ljava/lang/String;)LnJe;
+
     .line 25
     .line 26
-    const-string v0, "OnboardingComponent.Builder#attachToViewStub"
-
     .line 27
+    move-result-object v0
+
     .line 28
-    invoke-static {v1, v0}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
+    invoke-virtual {p0}, Lz03;->a()Ljava/lang/Object;
 
     .line 29
     .line 30
     .line 31
-    move-result-object v0
+    move-result-object v1
 
     .line 32
-    sget-object v1, LIGd;->Z:LIGd;
+    check-cast v1, Lxna;
 
     .line 33
     .line 34
-    iget v3, p0, Lx15;->b:I
+    new-instance v2, Lx9k;
 
     .line 35
     .line 36
-    invoke-virtual {p0}, LXX2;->a()Ljava/lang/Object;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v2
-
-    .line 40
-    check-cast v2, LoPc;
-
-    .line 41
-    .line 42
-    invoke-interface {v2}, LoPc;->d()Lkotlin/jvm/functions/Function1;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v6
-
-    .line 46
-    new-instance v2, LVJj;
-
-    .line 47
-    .line 48
     const/4 v9, 0x0
 
-    .line 49
+    .line 37
     const/4 v10, 0x0
 
-    .line 50
-    const-class v4, LhQc;
+    .line 38
+    const v3, 0x7f0e03d3
 
-    .line 51
-    .line 52
+    .line 39
+    .line 40
+    .line 41
+    const-class v4, LXva;
+
+    .line 42
+    .line 43
     const/4 v5, 0x1
 
-    .line 53
+    .line 44
+    iget-object v6, v1, Lxna;->a:Lkotlin/jvm/functions/Function1;
+
+    .line 45
+    .line 46
     const/4 v7, 0x0
 
-    .line 54
+    .line 47
     const/4 v8, 0x0
 
+    .line 48
+    invoke-direct/range {v2 .. v10}, Lx9k;-><init>(ILjava/lang/Class;ZLkotlin/jvm/functions/Function1;Lxp0;ZZZ)V
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Observable;->A(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object p1
+
     .line 55
-    invoke-direct/range {v2 .. v10}, LVJj;-><init>(ILjava/lang/Class;ZLkotlin/jvm/functions/Function1;Lgn0;ZZZ)V
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 56
     .line 57
     .line 58
-    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Observable;->z(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+    move-result-object v1
 
     .line 59
+    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+
     .line 60
     .line 61
-    move-result-object p1
-
     .line 62
-    sget-object v2, LYga;->q0:LYga;
+    move-result-object p1
 
     .line 63
-    .line 64
-    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Observable;->L0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+    sget-object v1, LdQ7;->l0:LdQ7;
 
+    .line 64
     .line 65
+    invoke-virtual {p1, v1}, Lio/reactivex/rxjava3/core/Observable;->O0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Observable;
+
     .line 66
     .line 67
-    move-result-object p1
-
     .line 68
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    move-result-object p1
 
     .line 69
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
+
     .line 70
     .line 71
-    move-result-object v2
-
     .line 72
-    invoke-static {p1, v2, v1}, LzP2;->a0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    move-result-object v1
 
     .line 73
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 74
     .line 75
-    move-result-object p1
-
     .line 76
-    iget-boolean v2, p0, Lx15;->t:Z
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
 
     .line 77
     .line 78
-    iget v3, p0, Lx15;->X:I
+    invoke-direct {v2, p1, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 79
     .line 80
-    new-instance v4, LjI3;
-
     .line 81
-    .line 82
-    invoke-direct {v4, v2, v3}, LjI3;-><init>(ZI)V
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
+    .line 82
     .line 83
     .line 84
+    move-result-object p1
+
     .line 85
-    new-instance v2, LGH3;
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableUnsubscribeOn;
 
     .line 86
     .line 87
-    const/4 v3, 0x4
+    invoke-direct {v0, v2, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableUnsubscribeOn;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 88
-    invoke-direct {v2, v3, v4}, LGH3;-><init>(ILjava/lang/Object;)V
-
     .line 89
     .line 90
-    .line 91
-    invoke-virtual {p1, v2}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Observable;->E0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
 
+    .line 91
     .line 92
     .line 93
-    .line 94
     move-result-object p1
+
+    .line 94
+    invoke-virtual {p1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->g1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 95
-    invoke-static {p1}, Lio/reactivex/rxjava3/core/Observable;->W0(Lio/reactivex/rxjava3/core/ObservableSource;)Lio/reactivex/rxjava3/core/Observable;
-
     .line 96
     .line 97
-    .line 98
     move-result-object p1
+
+    .line 98
+    iput-object p1, p0, Lx15;->c:Lio/reactivex/rxjava3/core/Observable;
 
     .line 99
-    new-instance v2, LJkc;
-
     .line 100
-    .line 101
-    invoke-direct {v2, p0, p0}, LJkc;-><init>(Lx15;Lx15;)V
-
-    .line 102
-    .line 103
-    .line 104
-    new-instance v3, LItc;
-
-    .line 105
-    .line 106
-    const/16 v4, 0x19
-
-    .line 107
-    .line 108
-    invoke-direct {v3, v4, v2}, LItc;-><init>(ILjava/lang/Object;)V
-
-    .line 109
-    .line 110
-    .line 111
-    invoke-virtual {p1, v3}, Lio/reactivex/rxjava3/core/Observable;->X(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDoOnEach;
-
-    .line 112
-    .line 113
-    .line 114
-    move-result-object p1
-
-    .line 115
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 116
-    .line 117
-    .line 118
-    move-result-object v2
-
-    .line 119
-    invoke-static {p1, v2, v1}, LzP2;->s0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Scheduler;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/core/Observable;
-
-    .line 120
-    .line 121
-    .line 122
-    move-result-object p1
-
-    .line 123
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v0
-
-    .line 127
-    invoke-static {p1, v0, v1}, LzP2;->x0(Lio/reactivex/rxjava3/core/Observable;Lgn0;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableUnsubscribeOn;
-
-    .line 128
-    .line 129
-    .line 130
-    move-result-object p1
-
-    .line 131
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/core/Observable;->B0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableReplay;
-
-    .line 132
-    .line 133
-    .line 134
-    move-result-object p1
-
-    .line 135
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/observables/ConnectableObservable;->d1()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
-
-    .line 136
-    .line 137
-    .line 138
-    move-result-object p1
-
-    .line 139
-    iput-object p1, p0, Lx15;->Z:Lio/reactivex/rxjava3/core/Observable;
-
-    .line 140
-    .line 141
     return-void
-.end method
-
-.method public final bridge synthetic g(Lio/reactivex/rxjava3/core/Observable;)LKA1;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Lx15;->d(Lio/reactivex/rxjava3/core/Observable;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-object p0
 .end method

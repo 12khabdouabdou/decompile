@@ -135,7 +135,7 @@
 
     .line 6
     .line 7
-    invoke-static {v1, v2, v0}, LNde;->c(II[B)I
+    invoke-static {v1, v2, v0}, LmBe;->d(II[B)I
 
     .line 8
     .line 9
@@ -201,7 +201,7 @@
 
     .line 18
     .line 19
-    invoke-static {v2, v0, v3, v1, v4}, Lf3j;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v3, v1, v4}, LToi;->o(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 20
     .line 21

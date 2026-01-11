@@ -1,15 +1,15 @@
 .class public final Lcom/snap/memories/composer/api/DataPaginator;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'observe\':f(): g<c>:\'[0]\'<a<r:0>>,\'observeUpdates\':f?(): g<c>:\'[0]\'<g:\'[1]\'<r:0>>,\'loadNextPage\':f(),\'hasReachedLastPage\':f(): b@"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LK9d;
+        Lfpd;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lcom/snap/composer/utils/b;"
+        "Lcom/snap/composer/utils/a;"
     }
 .end annotation
 
@@ -147,7 +147,7 @@
     return-object v0
 .end method
 
-.method public final d(LLv3;)V
+.method public final d(LUy3;)V
     .locals 0
 
     .line 1

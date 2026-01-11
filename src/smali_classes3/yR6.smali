@@ -4,43 +4,42 @@
 
 
 # instance fields
-.field public final a:Z
+.field public final a:I
 
-.field public final b:Ljava/util/List;
+.field public final b:J
+
+.field public final c:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;Z)V
+.method public constructor <init>(IJI)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-boolean p2, p0, LyR6;->a:Z
-
     .line 3
-    iput-object p1, p0, LyR6;->b:Ljava/util/List;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Z)V
-    .locals 1
-
     .line 4
-    sget-object v0, LsL6;->a:LsL6;
+    iput p1, p0, LyR6;->a:I
 
     .line 5
-    invoke-direct {p0, v0, p1}, LyR6;-><init>(Ljava/util/List;Z)V
+    .line 6
+    iput-wide p2, p0, LyR6;->b:J
 
+    .line 7
+    .line 8
+    iput p4, p0, LyR6;->c:I
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 7
 
     .line 1
     const/4 v0, 0x1
@@ -73,11 +72,11 @@
 
     .line 12
     .line 13
-    iget-boolean v1, p1, LyR6;->a:Z
+    iget v1, p1, LyR6;->a:I
 
     .line 14
     .line 15
-    iget-boolean v3, p0, LyR6;->a:Z
+    iget v3, p0, LyR6;->a:I
 
     .line 16
     .line 17
@@ -89,89 +88,101 @@
 
     .line 20
     :cond_2
-    iget-object v1, p0, LyR6;->b:Ljava/util/List;
+    iget-wide v3, p0, LyR6;->b:J
 
     .line 21
     .line 22
-    iget-object p1, p1, LyR6;->b:Ljava/util/List;
+    iget-wide v5, p1, LyR6;->b:J
 
     .line 23
     .line 24
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    cmp-long v1, v3, v5
 
     .line 25
     .line 26
+    if-eqz v1, :cond_3
+
     .line 27
-    move-result p1
-
     .line 28
-    if-nez p1, :cond_3
-
-    .line 29
-    .line 30
     return v2
 
-    .line 31
+    .line 29
     :cond_3
+    iget v1, p0, LyR6;->c:I
+
+    .line 30
+    .line 31
+    iget p1, p1, LyR6;->c:I
+
+    .line 32
+    .line 33
+    if-eq v1, p1, :cond_4
+
+    .line 34
+    .line 35
+    return v2
+
+    .line 36
+    :cond_4
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 6
 
     .line 1
-    iget-boolean v0, p0, LyR6;->a:Z
+    iget v0, p0, LyR6;->a:I
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 4
     .line 5
-    const/16 v0, 0x4cf
+    const/16 v1, 0x20
 
     .line 6
     .line 7
-    goto :goto_0
+    iget-wide v2, p0, LyR6;->b:J
 
     .line 8
-    :cond_0
-    const/16 v0, 0x4d5
-
     .line 9
-    .line 10
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
+    ushr-long v4, v2, v1
 
+    .line 10
     .line 11
+    xor-long/2addr v2, v4
+
     .line 12
-    iget-object v1, p0, LyR6;->b:Ljava/util/List;
+    long-to-int v1, v2
 
     .line 13
+    add-int/2addr v0, v1
+
     .line 14
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 15
     .line 16
-    .line 17
-    move-result v1
+    iget v1, p0, LyR6;->c:I
 
+    .line 17
     .line 18
-    add-int/2addr v1, v0
+    add-int/2addr v0, v1
 
     .line 19
-    return v1
+    return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "EvaluationResult(satisfied="
+    const-string v1, "EndCardSegmentTrackInfo(segmentIndex="
 
     .line 4
     .line 5
@@ -180,16 +191,16 @@
     .line 6
     .line 7
     .line 8
-    iget-boolean v1, p0, LyR6;->a:Z
+    iget v1, p0, LyR6;->a:I
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", ruleResultList="
+    const-string v1, ", displayTimeTsMs="
 
     .line 14
     .line 15
@@ -198,16 +209,16 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LyR6;->b:Ljava/util/List;
+    iget-wide v1, p0, LyR6;->b:J
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, ")"
+    const-string v1, ", endCardType="
 
     .line 24
     .line 25
@@ -216,13 +227,21 @@
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget v1, p0, LyR6;->c:I
 
     .line 29
     .line 30
+    const-string v2, ")"
+
     .line 31
+    .line 32
+    invoke-static {v0, v1, v2}, LJF0;->w(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
     move-result-object v0
 
-    .line 32
+    .line 36
     return-object v0
 .end method

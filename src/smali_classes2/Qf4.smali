@@ -1,170 +1,232 @@
 .class public final LQf4;
-.super LrE9;
+.super LDe4;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LRf4;
-
-.field public final synthetic c:Ljava/lang/Throwable;
+.field public final e:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(LRf4;Ljava/lang/Throwable;I)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 8
 
     .line 1
-    iput p3, p0, LQf4;->a:I
-
-    iput-object p1, p0, LQf4;->b:LRf4;
-
-    iput-object p2, p0, LQf4;->c:Ljava/lang/Throwable;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
-
-    .line 1
-    iget v0, p0, LQf4;->a:I
+    const-string v0, "displayName"
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    :try_start_0
+    new-instance v1, Lorg/json/JSONObject;
 
     .line 4
     .line 5
-    .line 6
-    iget-object v0, p0, LQf4;->b:LRf4;
+    invoke-direct {v1, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    iget-object v1, v0, LRf4;->f:Ljava/util/concurrent/Executor;
+    const-string v2, "user"
 
     .line 9
     .line 10
-    if-eqz v1, :cond_0
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     .line 11
     .line 12
-    new-instance v2, LPf4;
-
     .line 13
+    move-result-object v1
+
     .line 14
-    iget-object v3, p0, LQf4;->c:Ljava/lang/Throwable;
+    const-string v2, "name"
 
     .line 15
     .line 16
-    const/4 v4, 0x1
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     .line 17
-    invoke-direct {v2, v0, v3, v4}, LPf4;-><init>(LRf4;Ljava/lang/Throwable;I)V
-
     .line 18
     .line 19
+    move-result-object v2
+
     .line 20
-    invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {v1, v0}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
 
     .line 21
     .line 22
     .line 23
-    sget-object v0, Li7j;->a:Li7j;
+    move-result v3
 
     .line 24
+    const/4 v4, 0x0
+
     .line 25
-    return-object v0
+    if-eqz v3, :cond_0
 
     .line 26
-    :cond_0
-    const-string v0, "executor"
-
     .line 27
+    move-object v0, v4
+
     .line 28
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    goto :goto_0
 
     .line 29
+    :cond_0
+    invoke-virtual {v1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
     .line 30
     .line 31
-    const/4 v0, 0x0
-
     .line 32
-    throw v0
+    move-result-object v0
 
     .line 33
-    :pswitch_0
-    iget-object v0, p0, LQf4;->b:LRf4;
+    :goto_0
+    new-instance v1, LL;
 
     .line 34
     .line 35
-    iget-object v1, v0, LRf4;->f:Ljava/util/concurrent/Executor;
+    invoke-direct {v1, v2, v0}, LL;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
     .line 36
     .line 37
-    if-eqz v1, :cond_1
-
     .line 38
+    new-instance v0, Landroid/os/Bundle;
+
     .line 39
-    new-instance v2, LPf4;
-
     .line 40
-    .line 41
-    iget-object v3, p0, LQf4;->c:Ljava/lang/Throwable;
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
+    .line 41
     .line 42
     .line 43
-    const/4 v4, 0x0
+    const-string v2, "androidx.credentials.BUNDLE_KEY_SUBTYPE"
 
     .line 44
-    invoke-direct {v2, v0, v3, v4}, LPf4;-><init>(LRf4;Ljava/lang/Throwable;I)V
-
     .line 45
+    const-string v3, "androidx.credentials.BUNDLE_VALUE_SUBTYPE_CREATE_PUBLIC_KEY_CREDENTIAL_REQUEST"
+
     .line 46
     .line 47
-    invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 48
     .line 49
     .line 50
-    sget-object v0, Li7j;->a:Li7j;
+    const-string v5, "androidx.credentials.BUNDLE_KEY_REQUEST_JSON"
 
     .line 51
     .line 52
-    return-object v0
+    invoke-virtual {v0, v5, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 53
-    :cond_1
-    const-string v0, "executor"
-
     .line 54
     .line 55
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    const-string v6, "androidx.credentials.BUNDLE_KEY_CLIENT_DATA_HASH"
 
     .line 56
     .line 57
+    invoke-virtual {v0, v6, v4}, Landroid/os/Bundle;->putByteArray(Ljava/lang/String;[B)V
+
     .line 58
-    const/4 v0, 0x0
-
     .line 59
-    throw v0
-
     .line 60
-    nop
+    new-instance v7, Landroid/os/Bundle;
 
     .line 61
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 62
+    invoke-direct {v7}, Landroid/os/Bundle;-><init>()V
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {v7, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v7, v5, p1}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {v7, v6, v4}, Landroid/os/Bundle;->putByteArray(Ljava/lang/String;[B)V
+
+    .line 72
+    .line 73
+    .line 74
+    const-string v2, "androidx.credentials.TYPE_PUBLIC_KEY_CREDENTIAL"
+
+    .line 75
+    .line 76
+    invoke-direct {p0, v2, v0, v7, v1}, LDe4;-><init>(Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;LL;)V
+
+    .line 77
+    .line 78
+    .line 79
+    iput-object p1, p0, LQf4;->e:Ljava/lang/String;
+
+    .line 80
+    .line 81
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    .line 82
+    .line 83
+    .line 84
+    move-result v0
+
+    .line 85
+    if-eqz v0, :cond_1
+
+    .line 86
+    .line 87
+    :try_start_1
+    new-instance v0, Lorg/json/JSONObject;
+
+    .line 88
+    .line 89
+    invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 90
+    .line 91
+    .line 92
+    return-void
+
+    .line 93
+    :catch_0
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 94
+    .line 95
+    const-string v0, "requestJson must not be empty, and must be a valid JSON"
+
+    .line 96
+    .line 97
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 98
+    .line 99
+    .line 100
+    throw p1
+
+    .line 101
+    :catch_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 102
+    .line 103
+    const-string v0, "user.name must be defined in requestJson"
+
+    .line 104
+    .line 105
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 106
+    .line 107
+    .line 108
+    throw p1
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/commerce_dynamic_page/INativeFavoritesService;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'checkFavoriteStatus\':f(s): g<c>:\'[0]\'<b@>,\'storeFavoritedItem\':f(s): g<c>:\'[0]\'<b@>,\'storeUnfavoritedItem\':f(s): g<c>:\'[0]\'<b@>"
     typeReferences = {

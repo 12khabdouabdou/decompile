@@ -1,23 +1,17 @@
 .class public final Lyaf;
-.super LTp0;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final l:F
+.field public final a:LY79;
 
-.field public final m:Landroid/graphics/Rect;
-
-.field public final n:Landroid/graphics/RectF;
-
-.field public final o:Landroid/graphics/Path;
-
-.field public p:F
+.field public final b:J
 
 
 # direct methods
-.method public constructor <init>(F)V
-    .locals 1
+.method public constructor <init>(LY79;J)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -25,182 +19,21 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lyaf;->l:F
+    iput-object p1, p0, Lyaf;->a:LY79;
 
     .line 5
     .line 6
-    new-instance v0, Landroid/graphics/Rect;
+    iput-wide p2, p0, Lyaf;->b:J
 
     .line 7
     .line 8
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
-
-    .line 9
-    .line 10
-    .line 11
-    iput-object v0, p0, Lyaf;->m:Landroid/graphics/Rect;
-
-    .line 12
-    .line 13
-    new-instance v0, Landroid/graphics/RectF;
-
-    .line 14
-    .line 15
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
-
-    .line 16
-    .line 17
-    .line 18
-    iput-object v0, p0, Lyaf;->n:Landroid/graphics/RectF;
-
-    .line 19
-    .line 20
-    new-instance v0, Landroid/graphics/Path;
-
-    .line 21
-    .line 22
-    invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
-
-    .line 23
-    .line 24
-    .line 25
-    iput-object v0, p0, Lyaf;->o:Landroid/graphics/Path;
-
-    .line 26
-    .line 27
-    iput p1, p0, Lyaf;->p:F
-
-    .line 28
-    .line 29
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/graphics/Canvas;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lyaf;->p:F
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    cmpl-float v0, v0, v1
-
-    .line 5
-    .line 6
-    if-lez v0, :cond_0
-
-    .line 7
-    .line 8
-    iget-object v0, p0, Lyaf;->o:Landroid/graphics/Path;
-
-    .line 9
-    .line 10
-    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->clipPath(Landroid/graphics/Path;)Z
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-
-    .line 14
-    :cond_0
-    iget-object v0, p0, Lyaf;->m:Landroid/graphics/Rect;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/Rect;)Z
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-.end method
-
-.method public final b(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lyaf;->p:F
-
-    .line 2
-    .line 3
-    iget-object v1, p0, Lyaf;->n:Landroid/graphics/RectF;
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    cmpl-float v2, v0, v2
-
-    .line 7
-    .line 8
-    if-lez v2, :cond_0
-
-    .line 9
-    .line 10
-    invoke-virtual {p1, v1, v0, v0, p2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-void
-
-    .line 14
-    :cond_0
-    invoke-virtual {p1, v1, p2}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-.end method
-
-.method public final c()F
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lyaf;->m:Landroid/graphics/Rect;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/graphics/Rect;->exactCenterX()F
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final d()F
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lyaf;->m:Landroid/graphics/Rect;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/graphics/Rect;->exactCenterY()F
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 7
 
     .line 1
     const/4 v0, 0x1
@@ -214,281 +47,170 @@
 
     .line 5
     :cond_0
-    if-eqz p1, :cond_1
+    instance-of v1, p1, Lyaf;
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v1
-
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :cond_1
-    const/4 v1, 0x0
-
-    .line 13
-    :goto_0
-    const-class v2, Lyaf;
-
-    .line 14
-    .line 15
-    invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
     const/4 v2, 0x0
 
-    .line 20
-    if-nez v1, :cond_2
-
-    .line 21
-    .line 22
-    return v2
-
-    .line 23
-    :cond_2
-    check-cast p1, Lyaf;
-
-    .line 24
-    .line 25
-    iget v1, p0, Lyaf;->l:F
-
-    .line 26
-    .line 27
-    iget p1, p1, Lyaf;->l:F
-
-    .line 28
-    .line 29
-    cmpg-float p1, v1, p1
-
-    .line 30
-    .line 31
-    if-nez p1, :cond_3
-
-    .line 32
-    .line 33
-    return v0
-
-    .line 34
-    :cond_3
-    return v2
-.end method
-
-.method public final f(Landroid/graphics/Outline;)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lyaf;->p:F
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    iget-object v2, p0, Lyaf;->m:Landroid/graphics/Rect;
-
-    .line 5
-    .line 6
-    cmpl-float v1, v0, v1
-
-    .line 7
     .line 8
-    if-lez v1, :cond_0
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    invoke-virtual {p1, v2, v0}, Landroid/graphics/Outline;->setRoundRect(Landroid/graphics/Rect;F)V
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, Lyaf;
+
     .line 12
     .line 13
-    return-void
+    iget-object v1, p1, Lyaf;->a:LY79;
 
     .line 14
-    :cond_0
-    invoke-virtual {p1, v2}, Landroid/graphics/Outline;->setRect(Landroid/graphics/Rect;)V
-
     .line 15
+    iget-object v3, p0, Lyaf;->a:LY79;
+
     .line 16
     .line 17
-    return-void
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-wide v3, p0, Lyaf;->b:J
+
+    .line 25
+    .line 26
+    iget-wide v5, p1, Lyaf;->b:J
+
+    .line 27
+    .line 28
+    cmp-long p1, v3, v5
+
+    .line 29
+    .line 30
+    if-eqz p1, :cond_3
+
+    .line 31
+    .line 32
+    return v2
+
+    .line 33
+    :cond_3
+    return v0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 6
 
     .line 1
-    iget v0, p0, Lyaf;->l:F
+    iget-object v0, p0, Lyaf;->a:LY79;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
     .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final i(IIFLdGe;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lyaf;->o:Landroid/graphics/Path;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/graphics/Path;->reset()V
-
-    .line 4
-    .line 5
-    .line 6
-    iget v1, p4, LdGe;->c:I
-
     .line 7
     .line 8
-    sub-int/2addr p1, v1
+    move-result v0
 
     .line 9
-    iget v1, p4, LdGe;->d:I
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 10
     .line 11
-    sub-int/2addr p2, v1
+    const/16 v1, 0x20
 
     .line 12
-    iget-object v1, p0, Lyaf;->m:Landroid/graphics/Rect;
-
     .line 13
+    iget-wide v2, p0, Lyaf;->b:J
+
     .line 14
-    iget v2, p4, LdGe;->a:I
-
     .line 15
-    .line 16
-    iget p4, p4, LdGe;->b:I
+    ushr-long v4, v2, v1
 
+    .line 16
+    .line 17
+    xor-long/2addr v2, v4
+
+    .line 18
+    long-to-int v1, v2
+
+    .line 19
+    add-int/2addr v0, v1
+
+    .line 20
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "RemovedLensData(id="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lyaf;->a:LY79;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", removedTimestamp="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
     .line 17
     .line 18
-    invoke-virtual {v1, v2, p4, p1, p2}, Landroid/graphics/Rect;->set(IIII)V
+    iget-wide v1, p0, Lyaf;->b:J
 
     .line 19
     .line 20
+    const-string v3, ")"
+
     .line 21
-    iget-object p1, p0, Lyaf;->n:Landroid/graphics/RectF;
-
     .line 22
-    .line 23
-    invoke-virtual {p1, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
+    invoke-static {v0, v1, v2, v3}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
+    .line 23
     .line 24
     .line 25
+    move-result-object v0
+
     .line 26
-    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
-
-    .line 27
-    .line 28
-    .line 29
-    move-result p2
-
-    .line 30
-    invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
-
-    .line 31
-    .line 32
-    .line 33
-    move-result p4
-
-    .line 34
-    invoke-static {p2, p4}, Ljava/lang/Math;->min(II)I
-
-    .line 35
-    .line 36
-    .line 37
-    move-result p2
-
-    .line 38
-    int-to-float p2, p2
-
-    .line 39
-    const/high16 p4, 0x3f000000    # 0.5f
-
-    .line 40
-    .line 41
-    mul-float p2, p2, p4
-
-    .line 42
-    .line 43
-    iget v1, p0, Lyaf;->l:F
-
-    .line 44
-    .line 45
-    invoke-static {v1, p2}, Ljava/lang/Math;->min(FF)F
-
-    .line 46
-    .line 47
-    .line 48
-    move-result p2
-
-    .line 49
-    iput p2, p0, Lyaf;->p:F
-
-    .line 50
-    .line 51
-    const/4 p2, 0x0
-
-    .line 52
-    cmpl-float v1, p3, p2
-
-    .line 53
-    .line 54
-    if-lez v1, :cond_0
-
-    .line 55
-    .line 56
-    mul-float p3, p3, p4
-
-    .line 57
-    .line 58
-    invoke-virtual {p1, p3, p3}, Landroid/graphics/RectF;->inset(FF)V
-
-    .line 59
-    .line 60
-    .line 61
-    :cond_0
-    iget p3, p0, Lyaf;->p:F
-
-    .line 62
-    .line 63
-    cmpl-float p2, p3, p2
-
-    .line 64
-    .line 65
-    if-lez p2, :cond_1
-
-    .line 66
-    .line 67
-    sget-object p2, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
-
-    .line 68
-    .line 69
-    invoke-virtual {v0, p1, p3, p3, p2}, Landroid/graphics/Path;->addRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Path$Direction;)V
-
-    .line 70
-    .line 71
-    .line 72
-    :cond_1
-    return-void
+    return-object v0
 .end method

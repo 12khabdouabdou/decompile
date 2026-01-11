@@ -16,7 +16,7 @@
     return-void
 .end method
 
-.method public static read(LgAj;)Landroidx/media/AudioAttributesCompat;
+.method public static read(LwZj;)Landroidx/media/AudioAttributesCompat;
     .locals 3
 
     .line 1
@@ -29,14 +29,14 @@
     .line 4
     .line 5
     .line 6
-    iget-object v1, v0, Landroidx/media/AudioAttributesCompat;->a:LVn0;
+    iget-object v1, v0, Landroidx/media/AudioAttributesCompat;->a:Lrq0;
 
     .line 7
     .line 8
     const/4 v2, 0x1
 
     .line 9
-    invoke-virtual {p0, v2}, LgAj;->e(I)Z
+    invoke-virtual {p0, v2}, LwZj;->e(I)Z
 
     .line 10
     .line 11
@@ -52,7 +52,7 @@
 
     .line 16
     :cond_0
-    invoke-virtual {p0}, LgAj;->h()LiAj;
+    invoke-virtual {p0}, LwZj;->h()LyZj;
 
     .line 17
     .line 18
@@ -61,18 +61,18 @@
 
     .line 20
     :goto_0
-    check-cast v1, LVn0;
+    check-cast v1, Lrq0;
 
     .line 21
     .line 22
-    iput-object v1, v0, Landroidx/media/AudioAttributesCompat;->a:LVn0;
+    iput-object v1, v0, Landroidx/media/AudioAttributesCompat;->a:Lrq0;
 
     .line 23
     .line 24
     return-object v0
 .end method
 
-.method public static write(Landroidx/media/AudioAttributesCompat;LgAj;)V
+.method public static write(Landroidx/media/AudioAttributesCompat;LwZj;)V
     .locals 1
 
     .line 1
@@ -81,19 +81,19 @@
     .line 2
     .line 3
     .line 4
-    iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->a:LVn0;
+    iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->a:Lrq0;
 
     .line 5
     .line 6
     const/4 v0, 0x1
 
     .line 7
-    invoke-virtual {p1, v0}, LgAj;->i(I)V
+    invoke-virtual {p1, v0}, LwZj;->i(I)V
 
     .line 8
     .line 9
     .line 10
-    invoke-virtual {p1, p0}, LgAj;->k(LiAj;)V
+    invoke-virtual {p1, p0}, LwZj;->k(LyZj;)V
 
     .line 11
     .line 12

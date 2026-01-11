@@ -1,12 +1,12 @@
 .class public final Lcom/snap/presence/PlatformActiveCallInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'callerUserId\':s?,\'localPublishedMediaHasVideo\':b@?,\'remotePublishedMediaHasVideo\':b@?,\'remoteActiveCallParticipantUserIds\':a<s>"
+    schema = "\'callerUserId\':s?,\'localPublishedMediaHasVideo\':b@?,\'publishedMediaHasVideo\':b@?,\'remoteActiveCallParticipantUserIds\':a<s>"
     typeReferences = {}
 .end annotation
 
@@ -15,6 +15,8 @@
 .field private _callerUserId:Ljava/lang/String;
 
 .field private _localPublishedMediaHasVideo:Ljava/lang/Boolean;
+
+.field private _publishedMediaHasVideo:Ljava/lang/Boolean;
 
 .field private _remoteActiveCallParticipantUserIds:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -25,8 +27,6 @@
         }
     .end annotation
 .end field
-
-.field private _remotePublishedMediaHasVideo:Ljava/lang/Boolean;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/presence/PlatformActiveCallInfo;->_remotePublishedMediaHasVideo:Ljava/lang/Boolean;
+    iput-object p3, p0, Lcom/snap/presence/PlatformActiveCallInfo;->_publishedMediaHasVideo:Ljava/lang/Boolean;
 
     .line 9
     .line 10
@@ -67,4 +67,50 @@
     .line 11
     .line 12
     return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/presence/PlatformActiveCallInfo;->_callerUserId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final b()Ljava/lang/Boolean;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/presence/PlatformActiveCallInfo;->_localPublishedMediaHasVideo:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()Ljava/lang/Boolean;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/presence/PlatformActiveCallInfo;->_publishedMediaHasVideo:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final d()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/snap/presence/PlatformActiveCallInfo;->_remoteActiveCallParticipantUserIds:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

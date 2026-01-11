@@ -22,11 +22,11 @@
 
 
 # instance fields
-.field public final b:Lgn0;
+.field public final b:Lxp0;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Maybe;Lgn0;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Maybe;Lxp0;)V
     .locals 0
 
     .line 1
@@ -35,7 +35,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn;->b:Lgn0;
+    iput-object p2, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn;->b:Lxp0;
 
     .line 5
     .line 6
@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public final m(Lio/reactivex/rxjava3/core/MaybeObserver;)V
+.method public final n(Lio/reactivex/rxjava3/core/MaybeObserver;)V
     .locals 2
 
     .line 1
@@ -52,11 +52,11 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn;->b:Lgn0;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn;->b:Lxp0;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn$UnsubscribeOnMaybeObserver;-><init>(Lio/reactivex/rxjava3/core/MaybeObserver;Lgn0;)V
+    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeUnsubscribeOn$UnsubscribeOnMaybeObserver;-><init>(Lio/reactivex/rxjava3/core/MaybeObserver;Lxp0;)V
 
     .line 6
     .line 7

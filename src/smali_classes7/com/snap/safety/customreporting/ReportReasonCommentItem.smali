@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/customreporting/ReportReasonCommentItem;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'subheaderText\':s?,\'minCharLimit\':d@?,\'skipSubmit\':b@?,\'postSubmit\':r?:\'[0]\',\'submitTextOverride\':s?,\'showToggle\':b@?,\'toggleDescription\':s?,\'toggleState\':b@?,\'commentRequired\':b@?,\'descriptionLink\':s?"
     typeReferences = {

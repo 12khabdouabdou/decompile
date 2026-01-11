@@ -1,14 +1,14 @@
 .class public final Lcom/snap/composer/storyplayer/StoryPlayerModerationData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'encodedContentModerationStatusesBySnapIds\':a?<r:\'[0]\'>,\'launchDialogOnEnter\':b@?,\'snapType\':r?<e>:\'[1]\',\'snapSource\':r?<e>:\'[2]\',\'storyId\':s?"
     typeReferences = {
-        LtM6;,
+        LfQ6;,
         Lcom/snap/composer/storyplayer/ModerationSnapType;,
         Lcom/snap/composer/storyplayer/ModerationSnapSource;
     }
@@ -20,7 +20,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LtM6;",
+            "LfQ6;",
             ">;"
         }
     .end annotation
@@ -68,7 +68,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LtM6;",
+            "LfQ6;",
             ">;",
             "Ljava/lang/Boolean;",
             "Lcom/snap/composer/storyplayer/ModerationSnapType;",

@@ -1,142 +1,258 @@
-.class public final LNR7;
-.super LrE9;
+.class public abstract LNR7;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LsQ4;
 
 
 # direct methods
-.method public synthetic constructor <init>(LsQ4;I)V
-    .locals 0
+.method public static a(LOr7;)Lwr7;
+    .locals 8
 
     .line 1
-    iput p2, p0, LNR7;->a:I
-
-    iput-object p1, p0, LNR7;->b:LsQ4;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    iget v0, p0, LNR7;->a:I
+    const/4 v0, 0x0
 
     .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
+    if-eqz p0, :cond_0
 
+    .line 3
     .line 4
+    :try_start_0
+    iget-object p0, p0, LOr7;->a:Ljava/util/List;
+
     .line 5
     .line 6
-    iget-object v0, p0, LNR7;->b:LsQ4;
+    goto :goto_0
 
     .line 7
+    :cond_0
+    move-object p0, v0
+
     .line 8
-    invoke-virtual {v0}, LsQ4;->get()Ljava/lang/Object;
+    :goto_0
+    if-nez p0, :cond_1
 
     .line 9
     .line 10
+    goto :goto_2
+
     .line 11
-    move-result-object v0
+    :cond_1
+    new-instance v1, LPC7;
 
     .line 12
-    check-cast v0, Ltih;
-
     .line 13
+    const/4 v2, 0x0
+
     .line 14
-    iget-object v0, v0, Ltih;->d:LXfi;
+    invoke-direct {v1, v2}, LPC7;-><init>(I)V
 
     .line 15
     .line 16
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 17
+    check-cast p0, Ljava/lang/Iterable;
+
     .line 18
     .line 19
-    move-result-object v0
+    new-instance v3, Ljava/util/ArrayList;
 
     .line 20
-    check-cast v0, Ljava/lang/Boolean;
-
     .line 21
-    .line 22
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    const/16 v4, 0xa
 
+    .line 22
     .line 23
+    invoke-static {p0, v4}, Lnh3;->d3(Ljava/lang/Iterable;I)I
+
     .line 24
     .line 25
-    return-object v0
-
     .line 26
-    :pswitch_0
-    iget-object v0, p0, LNR7;->b:LsQ4;
+    move-result v4
 
     .line 27
-    .line 28
-    invoke-virtual {v0}, LsQ4;->get()Ljava/lang/Object;
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(I)V
 
+    .line 28
     .line 29
     .line 30
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
     .line 31
-    move-result-object v0
-
     .line 32
-    check-cast v0, LpC3;
-
     .line 33
+    move-result-object p0
+
     .line 34
-    sget-object v1, Lde6;->h3:Lde6;
+    :goto_1
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 35
     .line 36
-    invoke-interface {v0, v1}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
-
     .line 37
+    move-result v4
+
     .line 38
+    const/4 v5, 0x1
+
     .line 39
-    move-result-object v0
+    if-eqz v4, :cond_2
 
     .line 40
-    new-instance v1, LQqg;
-
     .line 41
-    .line 42
-    invoke-direct {v1, v0}, LQqg;-><init>(Lio/reactivex/rxjava3/core/Single;)V
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 42
     .line 43
     .line 44
+    move-result-object v4
+
     .line 45
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Single;->B()Lio/reactivex/rxjava3/core/Observable;
+    check-cast v4, Lur7;
 
     .line 46
     .line 47
-    .line 48
-    move-result-object v0
+    iget-object v6, v4, Lur7;->a:Ljava/lang/String;
 
+    .line 48
     .line 49
-    return-object v0
+    invoke-static {v6}, Lfqj;->i(Ljava/lang/String;)[B
 
     .line 50
-    nop
-
     .line 51
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 52
+    move-result-object v6
+
+    .line 53
+    invoke-static {v1, v6}, LVk1;->s(LPC7;[B)I
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v6
+
+    .line 57
+    iget-object v4, v4, Lur7;->b:Ljava/lang/Integer;
+
+    .line 58
+    .line 59
+    invoke-virtual {v4}, Ljava/lang/Number;->intValue()I
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v4
+
+    .line 63
+    const/4 v7, 0x2
+
+    .line 64
+    invoke-virtual {v1, v7}, LPC7;->u(I)V
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-virtual {v1, v5, v4}, LPC7;->d(II)V
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-virtual {v1, v2, v6}, LPC7;->g(II)V
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-virtual {v1}, LPC7;->k()I
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v4
+
+    .line 77
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v4
+
+    .line 81
+    invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 82
+    .line 83
+    .line 84
+    goto :goto_1
+
+    .line 85
+    :cond_2
+    invoke-static {v3}, Llh3;->s4(Ljava/util/Collection;)[I
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object p0
+
+    .line 89
+    invoke-static {v1, p0}, Lwr7;->i(LPC7;[I)I
+
+    .line 90
+    .line 91
+    .line 92
+    move-result p0
+
+    .line 93
+    invoke-virtual {v1, v5}, LPC7;->u(I)V
+
+    .line 94
+    .line 95
+    .line 96
+    invoke-virtual {v1, v2, p0}, LPC7;->g(II)V
+
+    .line 97
+    .line 98
+    .line 99
+    invoke-virtual {v1}, LPC7;->k()I
+
+    .line 100
+    .line 101
+    .line 102
+    move-result p0
+
+    .line 103
+    invoke-virtual {v1, p0}, LPC7;->m(I)V
+
+    .line 104
+    .line 105
+    .line 106
+    invoke-virtual {v1}, LPC7;->s()[B
+
+    .line 107
+    .line 108
+    .line 109
+    move-result-object p0
+
+    .line 110
+    invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object p0
+
+    .line 114
+    invoke-static {p0}, Lwr7;->j(Ljava/nio/ByteBuffer;)Lwr7;
+
+    .line 115
+    .line 116
+    .line 117
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 118
+    return-object p0
+
+    .line 119
+    :catch_0
+    :goto_2
+    return-object v0
 .end method

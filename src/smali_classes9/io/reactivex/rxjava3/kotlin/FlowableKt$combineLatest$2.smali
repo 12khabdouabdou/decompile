@@ -1,5 +1,5 @@
 .class final synthetic Lio/reactivex/rxjava3/kotlin/FlowableKt$combineLatest$2;
-.super Li28;
+.super LF88;
 .source "SourceFile"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Li28;",
+        "LF88;",
         "Lkotlin/jvm/functions/Function2;"
     }
 .end annotation
@@ -36,7 +36,7 @@
     .locals 7
 
     .line 1
-    sget-object v4, LkO1;->a:LkO1;
+    sget-object v4, LQR1;->a:LQR1;
 
     .line 2
     .line 3
@@ -58,7 +58,7 @@
     move-object v0, p0
 
     .line 9
-    invoke-direct/range {v0 .. v6}, Li28;-><init>(IILjava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v6}, LF88;-><init>(IILjava/lang/Class;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     .line 11
@@ -68,15 +68,15 @@
 
 
 # virtual methods
-.method public final N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final R(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    new-instance v0, Lhad;
+    new-instance v0, LDpd;
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2}, Lhad;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p1, p2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
     .line 5
@@ -84,15 +84,15 @@
     return-object v0
 .end method
 
-.method public final b()LkC9;
+.method public final b()LEL9;
     .locals 1
 
     .line 1
-    const-class v0, Lhad;
+    const-class v0, LDpd;
 
     .line 2
     .line 3
-    invoke-static {v0}, LsJe;->a(Ljava/lang/Class;)Lc23;
+    invoke-static {v0}, Lc1f;->a(Ljava/lang/Class;)Lm43;
 
     .line 4
     .line 5
@@ -103,7 +103,7 @@
     return-object v0
 .end method
 
-.method public final d()Ljava/lang/String;
+.method public final c()Ljava/lang/String;
     .locals 1
 
     .line 1

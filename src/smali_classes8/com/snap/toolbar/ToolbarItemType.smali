@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'ToolDraw\':0,\'ToolCaption\':1,\'ToolSticker\':2,\'ToolScissor\':3,\'ToolAttachment\':4,\'ToolTimer\':5,\'ToolAudio\':6,\'ToolTrashcan\':7,\'ToolFilterStacking\':8,\'ToolMusic\':9,\'ToolAutoCaption\':10,\'ToolCrop\':11,\'ToolSnapKitClearCross\':12,\'ToolActionMore\':13,\'ToolCommerce\':14,\'ToolLensExplorer\':15,\'ToolVoiceover\':16,\'ToolRemix\':17,\'ToolLookBuilder\':18,\'ToolEdit\':19,\'ToolAddLens\':20,\'ToolPlusSnapModes\':21"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

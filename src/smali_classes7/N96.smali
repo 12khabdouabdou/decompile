@@ -3,333 +3,298 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Lio/reactivex/rxjava3/core/SingleOnSubscribe;
+
+
+# static fields
+.field public static final synthetic t:[LNL9;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final synthetic a:Lgoj;
 
-.field public final synthetic b:F
+.field public final synthetic b:LGef;
 
-.field public final synthetic c:F
-
-.field public final synthetic d:Ljava/lang/Object;
-
-.field public final synthetic e:Ljava/lang/Object;
+.field public final synthetic c:LO96;
 
 
 # direct methods
-.method public constructor <init>(FFLS96;Landroid/view/MotionEvent;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 4
 
-    const/4 v0, 0x0
+    .line 1
+    new-instance v0, LOAe;
 
-    iput v0, p0, LN96;->a:I
+    .line 2
+    .line 3
+    const-class v1, LO96;
+
+    .line 4
+    .line 5
+    const-string v2, "emitterLocalRef"
+
+    .line 6
+    .line 7
+    const-string v3, "<v#0>"
+
+    .line 8
+    .line 9
+    invoke-direct {v0, v1, v2, v3}, LOAe;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 10
+    .line 11
+    .line 12
+    sget-object v1, Lc1f;->a:Le1f;
+
+    .line 13
+    .line 14
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 15
+    .line 16
+    .line 17
+    const/4 v1, 0x1
+
+    .line 18
+    new-array v1, v1, [LNL9;
+
+    .line 19
+    .line 20
+    const/4 v2, 0x0
+
+    .line 21
+    aput-object v0, v1, v2
+
+    .line 22
+    .line 23
+    sput-object v1, LN96;->t:[LNL9;
+
+    .line 24
+    .line 25
+    return-void
+.end method
+
+.method public constructor <init>(Lgoj;LGef;LO96;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, LN96;->b:F
-
-    iput p2, p0, LN96;->c:F
-
-    iput-object p3, p0, LN96;->d:Ljava/lang/Object;
-
-    iput-object p4, p0, LN96;->e:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(LAL5;FFLU02;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, LN96;->a:I
-
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 3
+    .line 4
+    iput-object p1, p0, LN96;->a:Lgoj;
 
-    iput-object p1, p0, LN96;->d:Ljava/lang/Object;
+    .line 5
+    .line 6
+    iput-object p2, p0, LN96;->b:LGef;
 
-    iput p2, p0, LN96;->b:F
+    .line 7
+    .line 8
+    iput-object p3, p0, LN96;->c:LO96;
 
-    iput p3, p0, LN96;->c:F
-
-    iput-object p4, p0, LN96;->e:Ljava/lang/Object;
-
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 10
+.method public final subscribe(Lio/reactivex/rxjava3/core/SingleEmitter;)V
+    .locals 5
 
     .line 1
-    iget v0, p0, LN96;->a:I
+    new-instance v0, LEM7;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0, p1}, LEM7;-><init>(Ljava/lang/Object;)V
 
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LN96;->d:Ljava/lang/Object;
+    sget-object p1, Lrdh;->c:Lrdh;
 
     .line 7
     .line 8
-    check-cast v0, LAL5;
+    new-instance p1, LDpd;
 
     .line 9
     .line 10
-    iget-object v1, v0, LAL5;->a:LGXc;
+    const-string v1, "__xsc_local__snap_token"
 
     .line 11
     .line 12
-    iget v2, p0, LN96;->c:F
+    const-string v2, "https://auth.snapchat.com/snap_token/api/api-gateway"
 
     .line 13
     .line 14
-    iget v3, p0, LN96;->b:F
+    invoke-direct {p1, v1, v2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 15
     .line 16
-    sub-float/2addr v2, v3
-
     .line 17
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
+    const/4 v1, 0x1
 
     .line 18
+    new-array v1, v1, [LDpd;
+
     .line 19
     .line 20
-    move-result v4
+    const/4 v2, 0x0
 
     .line 21
-    mul-float v4, v4, v2
+    aput-object p1, v1, v2
 
     .line 22
     .line 23
-    add-float/2addr v4, v3
+    invoke-static {v1}, Lkrb;->D0([LDpd;)Ljava/util/HashMap;
 
     .line 24
-    invoke-virtual {v1, v4}, LGXc;->f(F)V
-
     .line 25
     .line 26
+    move-result-object p1
+
     .line 27
-    iget-object v0, v0, LAL5;->a:LGXc;
+    new-instance v1, LUM8;
 
     .line 28
     .line 29
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    invoke-direct {v1}, LUM8;-><init>()V
 
     .line 30
     .line 31
     .line 32
-    move-result-object v1
+    iput-object p1, v1, LUM8;->b:Ljava/util/HashMap;
 
     .line 33
-    check-cast v1, Ljava/lang/Float;
-
     .line 34
-    .line 35
-    invoke-virtual {v1}, Ljava/lang/Float;->floatValue()F
+    iget-object p1, p0, LN96;->b:LGef;
 
+    .line 35
     .line 36
+    new-instance v2, LZ5;
+
     .line 37
     .line 38
-    move-result v1
+    iget-object v3, p0, LN96;->c:LO96;
 
     .line 39
-    iput v1, v0, LGXc;->k0:F
-
     .line 40
+    const/4 v4, 0x6
+
     .line 41
-    invoke-virtual {v0}, Landroid/view/View;->invalidate()V
+    invoke-direct {v2, v3, v4, v0}, LZ5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 42
     .line 43
     .line 44
-    invoke-virtual {v0}, Landroid/view/View;->postInvalidate()V
+    iget-object v0, p0, LN96;->a:Lgoj;
 
     .line 45
     .line 46
-    .line 47
-    iget-object v0, p0, LN96;->e:Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 47
     .line 48
     .line 49
-    check-cast v0, LU02;
+    :try_start_0
+    invoke-static {p1}, LKG1;->a(Lcom/google/protobuf/nano/MessageNano;)Ljava/nio/ByteBuffer;
 
     .line 50
     .line 51
-    invoke-virtual {v0, p1}, LU02;->onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-
     .line 52
-    .line 53
-    .line 54
-    return-void
+    move-result-object p1
 
+    .line 53
+    new-instance v3, LGG1;
+
+    .line 54
     .line 55
-    :pswitch_0
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
+    const-class v4, LHef;
 
     .line 56
     .line 57
+    invoke-direct {v3, v2, v4}, LGG1;-><init>(LqN8;Ljava/lang/Class;)V
+
     .line 58
-    move-result v0
-
     .line 59
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
-
     .line 60
+    iget-object v0, v0, Lgoj;->a:Lcom/snapchat/client/grpc/UnifiedGrpcService;
+
     .line 61
     .line 62
-    move-result-object p1
+    const-string v4, "/snapchat.notif.DeviceStateReceiver/ReportDeviceState"
 
     .line 63
-    check-cast p1, Ljava/lang/Float;
-
     .line 64
-    .line 65
-    invoke-virtual {p1}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {v0, v4, p1, v1, v3}, Lcom/snapchat/client/grpc/UnifiedGrpcService;->unaryCall(Ljava/lang/String;Ljava/nio/ByteBuffer;Lcom/snapchat/client/grpc/CallOptionsBuilder;Lcom/snapchat/client/grpc/UnaryEventHandler;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 65
     .line 66
     .line 67
-    .line 68
-    move-result p1
-
-    .line 69
-    const/4 v1, 0x1
-
-    .line 70
-    int-to-float v1, v1
-
-    .line 71
-    sub-float/2addr v1, v0
-
-    .line 72
-    iget v0, p0, LN96;->b:F
-
-    .line 73
-    .line 74
-    mul-float v4, v0, v1
-
-    .line 75
-    .line 76
-    iget v0, p0, LN96;->c:F
-
-    .line 77
-    .line 78
-    mul-float v7, v0, v1
-
-    .line 79
-    .line 80
-    iget-object v0, p0, LN96;->d:Ljava/lang/Object;
-
-    .line 81
-    .line 82
-    check-cast v0, LS96;
-
-    .line 83
-    .line 84
-    iget-object v1, v0, LS96;->m0:Ljava/util/ArrayList;
-
-    .line 85
-    .line 86
-    invoke-static {v1}, Lnc5;->g(Ljava/util/ArrayList;)Ljava/util/Iterator;
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-object v9
-
-    .line 90
-    :goto_0
-    invoke-interface {v9}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 91
-    .line 92
-    .line 93
-    move-result v2
-
-    .line 94
-    if-eqz v2, :cond_0
-
-    .line 95
-    .line 96
-    invoke-interface {v9}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v2
-
-    .line 100
-    check-cast v2, Ljava/lang/Number;
-
-    .line 101
-    .line 102
-    invoke-virtual {v2}, Ljava/lang/Number;->intValue()I
-
-    .line 103
-    .line 104
-    .line 105
-    move-result v2
-
-    .line 106
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 107
-    .line 108
-    .line 109
-    move-result-object v2
-
-    .line 110
-    check-cast v2, LKZc;
-
-    .line 111
-    .line 112
-    float-to-int v5, p1
-
-    .line 113
-    iget-object v6, v0, LS96;->V0:Landroid/graphics/PointF;
-
-    .line 114
-    .line 115
-    iget-object v3, p0, LN96;->e:Ljava/lang/Object;
-
-    .line 116
-    .line 117
-    move-object v8, v3
-
-    .line 118
-    check-cast v8, Landroid/view/MotionEvent;
-
-    .line 119
-    .line 120
-    const/4 v3, 0x4
-
-    .line 121
-    invoke-interface/range {v2 .. v8}, LKZc;->c(IFILandroid/graphics/PointF;FLandroid/view/MotionEvent;)V
-
-    .line 122
-    .line 123
-    .line 124
-    goto :goto_0
-
-    .line 125
-    :cond_0
     return-void
 
-    .line 126
-    nop
+    .line 68
+    :catch_0
+    move-exception p1
 
-    .line 127
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 69
+    goto :goto_0
+
+    .line 70
+    :catch_1
+    move-exception p1
+
+    .line 71
+    goto :goto_0
+
+    .line 72
+    :catch_2
+    move-exception p1
+
+    .line 73
+    goto :goto_0
+
+    .line 74
+    :catch_3
+    move-exception p1
+
+    .line 75
+    :goto_0
+    new-instance v0, Lcom/snapchat/client/grpc/Status;
+
+    .line 76
+    .line 77
+    sget-object v1, Lcom/snapchat/client/grpc/StatusCode;->INTERNAL:Lcom/snapchat/client/grpc/StatusCode;
+
+    .line 78
+    .line 79
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    .line 80
+    .line 81
+    .line 82
+    move-result-object p1
+
+    .line 83
+    invoke-direct {v0, v1, p1}, Lcom/snapchat/client/grpc/Status;-><init>(Lcom/snapchat/client/grpc/StatusCode;Ljava/lang/String;)V
+
+    .line 84
+    .line 85
+    .line 86
+    const/4 p1, 0x0
+
+    .line 87
+    invoke-virtual {v2, p1, v0}, LZ5;->a(Lcom/google/protobuf/nano/MessageNano;Lcom/snapchat/client/grpc/Status;)V
+
+    .line 88
+    .line 89
+    .line 90
+    return-void
 .end method

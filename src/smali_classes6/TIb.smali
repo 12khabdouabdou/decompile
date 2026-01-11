@@ -2,113 +2,288 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LP3i;
+
+# instance fields
+.field public final a:LSYg;
+
+.field public final b:Lck7;
+
+.field public final c:Ljava/lang/String;
 
 
-# virtual methods
-.method public final h(Ljava/lang/String;)LRpg;
-    .locals 10
+# direct methods
+.method public constructor <init>(LSYg;Lck7;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LDp8;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, LDp8;-><init>()V
+    .line 4
+    iput-object p1, p0, LTIb;->a:LSYg;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LTIb;->b:Lck7;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LTIb;->c:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LTIb;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LTIb;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, LTIb;->a:LSYg;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, LTIb;->a:LSYg;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, LTIb;->b:Lck7;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, LTIb;->b:Lck7;
+
+    .line 27
+    .line 28
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-nez v1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    iget-object v1, p0, LTIb;->c:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    iget-object p1, p1, LTIb;->c:Ljava/lang/String;
+
+    .line 38
+    .line 39
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result p1
+
+    .line 43
+    if-nez p1, :cond_4
+
+    .line 44
+    .line 45
+    return v2
+
+    .line 46
+    :cond_4
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LTIb;->a:LSYg;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    iput-object p1, v0, LDp8;->a:Ljava/lang/String;
+    move-result v0
 
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
-    sget-object p1, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
-
     .line 9
+    iget-object v1, p0, LTIb;->b:Lck7;
+
     .line 10
-    new-instance v4, Ljava/util/HashMap;
-
     .line 11
-    .line 12
-    invoke-direct {v4, p1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
+    .line 12
     .line 13
     .line 14
+    move-result v1
+
     .line 15
-    new-instance v1, Ljava/util/HashMap;
+    add-int/2addr v1, v0
 
     .line 16
+    mul-int/lit8 v1, v1, 0x1f
+
     .line 17
-    if-eqz p1, :cond_0
-
     .line 18
-    .line 19
-    invoke-direct {v1, p1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+    iget-object v0, p0, LTIb;->c:Ljava/lang/String;
 
+    .line 19
     .line 20
+    if-nez v0, :cond_0
+
     .line 21
     .line 22
-    :goto_0
-    move-object v6, v1
+    const/4 v0, 0x0
 
     .line 23
-    goto :goto_1
+    goto :goto_0
 
     .line 24
     :cond_0
-    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
     .line 25
     .line 26
     .line 27
-    goto :goto_0
+    move-result v0
 
     .line 28
-    :goto_1
-    const-string p1, "original_url"
+    :goto_0
+    add-int/2addr v1, v0
+
+    .line 29
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "MemTwoSaveParams(snapDocSession="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LTIb;->a:LSYg;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", saveLocation="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, LTIb;->b:Lck7;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", replaceId="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LTIb;->c:Ljava/lang/String;
 
     .line 29
     .line 30
-    const-string v2, "https://aws.api.snapchat.com/gallery/redirect"
+    const-string v2, ")"
 
     .line 31
     .line 32
-    invoke-interface {v6, p1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 33
     .line 34
     .line 35
-    new-instance v5, LcA9;
+    move-result-object v0
 
     .line 36
-    .line 37
-    invoke-direct {v5, v0}, LN46;-><init>(Ljava/lang/Object;)V
-
-    .line 38
-    .line 39
-    .line 40
-    new-instance v1, LRpg;
-
-    .line 41
-    .line 42
-    const/4 v3, 0x3
-
-    .line 43
-    const/4 v7, 0x1
-
-    .line 44
-    const/4 v8, 0x0
-
-    .line 45
-    const/4 v9, 0x0
-
-    .line 46
-    invoke-direct/range {v1 .. v9}, LRpg;-><init>(Ljava/lang/String;ILjava/util/HashMap;Ljava/lang/Object;Ljava/util/HashMap;ZZLjava/lang/Integer;)V
-
-    .line 47
-    .line 48
-    .line 49
-    return-object v1
+    return-object v0
 .end method

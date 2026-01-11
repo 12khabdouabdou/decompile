@@ -3,15 +3,43 @@
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:B
+# static fields
+.field public static final c:LMQ0;
 
-.field public final b:B
+
+# instance fields
+.field public final a:LSmk;
+
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, LMQ0;
+
+    .line 2
+    .line 3
+    const/16 v1, 0xf
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, LMQ0;-><init>(I)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, LRmk;->c:LMQ0;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public constructor <init>(LSmk;I)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -19,27 +47,13 @@
     .line 2
     .line 3
     .line 4
-    and-int/lit16 v0, p1, 0xe0
+    iput-object p1, p0, LRmk;->a:LSmk;
 
     .line 5
     .line 6
-    int-to-byte v0, v0
+    iput p2, p0, LRmk;->b:I
 
     .line 7
-    iput-byte v0, p0, LRmk;->a:B
-
     .line 8
-    .line 9
-    and-int/lit8 p1, p1, 0x1f
-
-    .line 10
-    .line 11
-    int-to-byte p1, p1
-
-    .line 12
-    iput-byte p1, p0, LRmk;->b:B
-
-    .line 13
-    .line 14
     return-void
 .end method

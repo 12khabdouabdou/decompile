@@ -3,55 +3,31 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lzid;
-
-
-# static fields
-.field public static final a:Lyid;
-
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lyid;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, Lyid;->a:Lyid;
-
-    .line 7
-    .line 8
-    return-void
-.end method
+.implements Lxid;
 
 
 # virtual methods
-.method public final a()LW0d;
-    .locals 3
+.method public final bridge synthetic b()Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    sget-object v0, LsL6;->a:LsL6;
+    sget-object v0, LBm0;->a:LBm0;
 
     .line 2
     .line 3
-    new-instance v1, LBG9;
+    return-object v0
+.end method
 
-    .line 4
-    .line 5
-    const/4 v2, 0x6
+.method public final c(Lio/reactivex/rxjava3/core/Observable;)LZD1;
+    .locals 0
 
-    .line 6
-    invoke-direct {v1, v2, v0}, LBG9;-><init>(ILjava/lang/Object;)V
+    .line 1
+    return-object p0
+.end method
 
-    .line 7
-    .line 8
-    .line 9
-    return-object v1
+.method public final d(Lio/reactivex/rxjava3/core/Observable;)LZD1;
+    .locals 0
+
+    .line 1
+    return-object p0
 .end method

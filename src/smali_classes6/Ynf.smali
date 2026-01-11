@@ -1,303 +1,222 @@
 .class public final LYnf;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements Lcom/snap/modules/streak_restore/ResurrectedConversationStreakRestoreService;
 
 
 # instance fields
-.field public final synthetic X:J
+.field public final a:LPa5;
 
-.field public final synthetic Y:I
+.field public final b:LPa5;
 
-.field public final synthetic Z:LLtb;
+.field public final c:LPa5;
 
-.field public final synthetic a:Leof;
-
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic c:LWm0;
-
-.field public final synthetic e0:Ljava/lang/String;
-
-.field public final synthetic f0:Ljava/lang/String;
-
-.field public final synthetic g0:Ljava/lang/String;
-
-.field public final synthetic t:J
+.field public final t:LPa5;
 
 
 # direct methods
-.method public constructor <init>(Leof;Ljava/lang/String;LWm0;JJILLtb;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(LPa5;LPa5;LPa5;LPa5;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LYnf;->a:Leof;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, LYnf;->b:Ljava/lang/String;
-
     .line 4
+    iput-object p1, p0, LYnf;->a:LPa5;
+
     .line 5
-    iput-object p3, p0, LYnf;->c:LWm0;
-
     .line 6
+    iput-object p2, p0, LYnf;->b:LPa5;
+
     .line 7
-    iput-wide p4, p0, LYnf;->t:J
-
     .line 8
+    iput-object p3, p0, LYnf;->c:LPa5;
+
     .line 9
-    iput-wide p6, p0, LYnf;->X:J
-
     .line 10
+    iput-object p4, p0, LYnf;->t:LPa5;
+
     .line 11
-    iput p8, p0, LYnf;->Y:I
-
     .line 12
-    .line 13
-    iput-object p9, p0, LYnf;->Z:LLtb;
-
-    .line 14
-    .line 15
-    iput-object p10, p0, LYnf;->e0:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    iput-object p11, p0, LYnf;->f0:Ljava/lang/String;
-
-    .line 18
-    .line 19
-    iput-object p12, p0, LYnf;->g0:Ljava/lang/String;
-
-    .line 20
-    .line 21
-    const/4 p1, 0x1
-
-    .line 22
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    .line 23
-    .line 24
-    .line 25
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 20
+.method public final fetchRestorableStreaks(Ljava/lang/Double;)Lcom/snap/composer/promise/Promise;
+    .locals 2
 
     .line 1
-    move-object/from16 v0, p0
+    if-eqz p1, :cond_0
 
     .line 2
     .line 3
-    move-object/from16 v1, p1
+    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
 
     .line 4
     .line 5
-    check-cast v1, LYOi;
-
     .line 6
+    move-result-wide v0
+
     .line 7
-    iget-object v1, v0, LYnf;->a:Leof;
+    double-to-long v0, v0
 
     .line 8
-    .line 9
-    iget-object v2, v1, Leof;->f:Lq8b;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
+    .line 9
     .line 10
     .line 11
-    iget-object v3, v2, Lq8b;->a:LXfi;
+    move-result-object p1
 
     .line 12
+    goto :goto_0
+
     .line 13
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    :cond_0
+    const/4 p1, 0x0
 
     .line 14
+    :goto_0
+    iget-object v0, p0, LYnf;->a:LPa5;
+
     .line 15
     .line 16
-    move-result-object v3
+    invoke-virtual {v0}, LPa5;->get()Ljava/lang/Object;
 
     .line 17
-    check-cast v3, Lib5;
-
     .line 18
     .line 19
-    invoke-virtual {v2}, Lq8b;->a()LzIb;
+    move-result-object v0
 
     .line 20
+    check-cast v0, Lhri;
+
     .line 21
     .line 22
-    move-result-object v2
+    const/4 v1, 0x4
 
     .line 23
-    check-cast v2, LAIb;
+    invoke-static {v0, p1, v1}, LmB1;->b(Lhri;Ljava/lang/Long;I)Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 24
     .line 25
-    iget-object v2, v2, LAIb;->N:LvZ7;
-
     .line 26
+    move-result-object p1
+
     .line 27
-    new-instance v4, LMgd;
+    sget-object v0, LMFd;->h0:LMFd;
 
     .line 28
     .line 29
-    iget-object v5, v0, LYnf;->b:Ljava/lang/String;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapIterableObservable;
 
     .line 30
     .line 31
-    const/4 v6, 0x1
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapIterableObservable;-><init>(Lio/reactivex/rxjava3/core/Single;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 32
-    invoke-direct {v4, v2, v5, v5, v6}, LMgd;-><init>(LvZ7;Ljava/lang/String;Ljava/lang/String;I)V
-
     .line 33
     .line 34
-    .line 35
-    invoke-interface {v3, v4}, Lib5;->m(LGre;)Ljava/lang/Object;
+    new-instance p1, LMxe;
 
+    .line 35
     .line 36
+    const/16 v0, 0x14
+
     .line 37
     .line 38
-    move-result-object v2
+    invoke-direct {p1, v0, p0}, LMxe;-><init>(ILjava/lang/Object;)V
 
     .line 39
-    check-cast v2, Ljava/lang/Long;
-
     .line 40
     .line 41
-    const-wide/16 v3, 0x0
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;
 
     .line 42
     .line 43
-    if-eqz v2, :cond_0
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFlatMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 44
     .line 45
-    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
-
     .line 46
+    const/16 p1, 0x10
+
     .line 47
     .line 48
-    move-result-wide v6
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/core/Observable;->W0(I)Lio/reactivex/rxjava3/core/Single;
 
     .line 49
-    goto :goto_0
-
     .line 50
-    :cond_0
-    move-wide v6, v3
-
     .line 51
-    :goto_0
-    cmp-long v2, v6, v3
+    move-result-object p1
 
     .line 52
+    new-instance v0, LWTe;
+
     .line 53
-    if-gtz v2, :cond_1
-
     .line 54
+    const/16 v1, 0x8
+
     .line 55
-    sget-object v14, LVP6;->b:LVP6;
-
     .line 56
-    .line 57
-    iget-object v2, v0, LYnf;->e0:Ljava/lang/String;
+    invoke-direct {v0, v1, p0}, LWTe;-><init>(ILjava/lang/Object;)V
 
+    .line 57
     .line 58
     .line 59
-    iget-object v3, v0, LYnf;->f0:Ljava/lang/String;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
 
     .line 60
     .line 61
-    iget-object v6, v1, Leof;->f:Lq8b;
+    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 62
     .line 63
-    iget-object v13, v0, LYnf;->Z:LLtb;
-
     .line 64
-    .line 65
-    const-string v18, ""
+    invoke-static {v1}, LCb3;->h(Lio/reactivex/rxjava3/internal/operators/single/SingleMap;)LqMg;
 
+    .line 65
     .line 66
     .line 67
-    iget-object v1, v0, LYnf;->g0:Ljava/lang/String;
+    move-result-object p1
 
     .line 68
-    .line 69
-    iget-object v7, v0, LYnf;->b:Ljava/lang/String;
+    return-object p1
+.end method
 
-    .line 70
-    .line 71
-    iget-wide v8, v0, LYnf;->t:J
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
 
-    .line 72
-    .line 73
-    iget-wide v10, v0, LYnf;->X:J
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
 
-    .line 74
-    .line 75
-    iget v12, v0, LYnf;->Y:I
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    .line 76
-    .line 77
-    const/4 v15, 0x0
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
 
-    .line 78
-    move-object/from16 v19, v1
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/modules/streak_restore/ResurrectedConversationStreakRestoreService;
 
-    .line 79
-    .line 80
-    move-object/from16 v16, v2
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
-    .line 81
-    .line 82
-    move-object/from16 v17, v3
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
 
-    .line 83
-    .line 84
-    invoke-virtual/range {v6 .. v19}, Lq8b;->c(Ljava/lang/String;JJILLtb;LVP6;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 85
-    .line 86
-    .line 87
-    sget-object v1, Li7j;->a:Li7j;
-
-    .line 88
-    .line 89
-    return-object v1
-
-    .line 90
-    :cond_1
-    new-instance v1, LDYe;
-
-    .line 91
-    .line 92
-    const-string v2, "duplicate snap found: "
-
-    .line 93
-    .line 94
-    invoke-virtual {v2, v5}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v2
-
-    .line 98
-    iget-object v3, v0, LYnf;->c:LWm0;
-
-    .line 99
-    .line 100
-    invoke-direct {v1, v3, v2}, LDYe;-><init>(LWm0;Ljava/lang/String;)V
-
-    .line 101
-    .line 102
-    .line 103
-    throw v1
+    .line 14
+    return p1
 .end method

@@ -3,8 +3,4 @@
 .source "SourceFile"
 
 # interfaces
-.implements LGs3;
-
-
-# instance fields
-.field public a:Lake;
+.implements LKv3;

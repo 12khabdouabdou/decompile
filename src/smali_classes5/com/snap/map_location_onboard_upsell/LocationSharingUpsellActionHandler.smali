@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LCAa;
+    proxyClass = LSMa;
     schema = "\'didSelectAudienceCell\':f|m|(a<s>, a<s>, r<e>:\'[0]\'),\'didSelectSave\':f|m|(a<s>, a<s>, r<e>:\'[0]\', b),\'didTapCancel\':f?|m|()"
     typeReferences = {
         Lcom/snap/map_location_onboard_upsell/SharingAudience;
@@ -51,7 +51,7 @@
 .end method
 
 .method public abstract didTapCancel()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

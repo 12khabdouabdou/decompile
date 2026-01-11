@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:LRx2;
+.field public final a:LAA2;
 
 .field public final b:F
 
@@ -14,7 +14,7 @@
 
 .field public f0:Landroid/view/View;
 
-.field public final g0:LXfi;
+.field public final g0:LREi;
 
 .field public h0:F
 
@@ -38,7 +38,7 @@
 
     const/4 v1, 0x2
 
-    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/PullToRefreshLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+    invoke-direct {p0, p1, v0, v1, v0}, Lcom/snap/ui/view/PullToRefreshLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
 
     return-void
 .end method
@@ -50,11 +50,11 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    new-instance v0, LRx2;
+    new-instance v0, LAA2;
 
-    invoke-direct {v0, p0}, LRx2;-><init>(Lcom/snap/ui/view/PullToRefreshLayout;)V
+    invoke-direct {v0, p0}, LAA2;-><init>(Lcom/snap/ui/view/PullToRefreshLayout;)V
 
-    iput-object v0, p0, Lcom/snap/ui/view/PullToRefreshLayout;->a:LRx2;
+    iput-object v0, p0, Lcom/snap/ui/view/PullToRefreshLayout;->a:LAA2;
 
     .line 4
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -77,19 +77,19 @@
     iput-object v0, p0, Lcom/snap/ui/view/PullToRefreshLayout;->e0:Ljava/util/ArrayList;
 
     .line 6
-    new-instance v0, LBfe;
+    new-instance v0, LYEe;
 
-    const/16 v1, 0x11
+    const/16 v1, 0x8
 
-    invoke-direct {v0, v1, p0}, LBfe;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LYEe;-><init>(ILjava/lang/Object;)V
 
     .line 7
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 8
-    iput-object v1, p0, Lcom/snap/ui/view/PullToRefreshLayout;->g0:LXfi;
+    iput-object v1, p0, Lcom/snap/ui/view/PullToRefreshLayout;->g0:LREi;
 
     const/4 v0, 0x1
 
@@ -104,7 +104,7 @@
 
     move-result-object p1
 
-    sget-object v1, LCve;->e:[I
+    sget-object v1, LlNe;->e:[I
 
     const/4 v2, 0x0
 
@@ -146,7 +146,7 @@
     throw p2
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;ILex5;)V
     .locals 0
 
     and-int/lit8 p3, p3, 0x2
@@ -164,7 +164,7 @@
 
 
 # virtual methods
-.method public final a(LSX7;)V
+.method public final a(LR38;)V
     .locals 1
 
     .line 1
@@ -327,7 +327,7 @@
 
     .line 29
     :cond_0
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -336,7 +336,7 @@
 
     .line 33
     :cond_1
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 34
     .line 35
@@ -390,7 +390,7 @@
 
     .line 18
     .line 19
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 20
     .line 21
@@ -410,11 +410,11 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/ui/view/PullToRefreshLayout;->g0:LXfi;
+    iget-object v0, p0, Lcom/snap/ui/view/PullToRefreshLayout;->g0:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -758,7 +758,7 @@
 
     .line 74
     :cond_2
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 75
     .line 76
@@ -898,11 +898,11 @@
 
     .line 142
     .line 143
-    iget-object v1, p0, Lcom/snap/ui/view/PullToRefreshLayout;->a:LRx2;
+    iget-object v1, p0, Lcom/snap/ui/view/PullToRefreshLayout;->a:LAA2;
 
     .line 144
     .line 145
-    invoke-virtual {v1, v0, p1}, LRx2;->a(Landroid/view/View;F)V
+    invoke-virtual {v1, v0, p1}, LAA2;->a(Landroid/view/View;F)V
 
     .line 146
     .line 147
@@ -911,7 +911,7 @@
 
     .line 149
     :cond_6
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 150
     .line 151
@@ -1001,7 +1001,7 @@
 
     .line 192
     :cond_a
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 193
     .line 194
@@ -1085,7 +1085,7 @@
     move-result-object p1
 
     .line 234
-    invoke-virtual {p1}, Landroid/animation/ObjectAnimator;->start()V
+    invoke-virtual {p1}, Landroid/animation/Animator;->start()V
 
     .line 235
     .line 236
@@ -1146,11 +1146,11 @@
     move-result-object v6
 
     .line 264
-    check-cast v6, LSX7;
+    check-cast v6, LR38;
 
     .line 265
     .line 266
-    iget v7, v6, LSX7;->a:I
+    iget v7, v6, LR38;->a:I
 
     .line 267
     .line 268
@@ -1159,15 +1159,15 @@
     .line 269
     .line 270
     .line 271
-    iget-object v6, v6, LSX7;->b:Ljava/lang/Object;
+    iget-object v6, v6, LR38;->b:Ljava/lang/Object;
 
     .line 272
     .line 273
-    check-cast v6, LG1k;
+    check-cast v6, LErk;
 
     .line 274
     .line 275
-    iget-object v7, v6, LG1k;->k:LCYd;
+    iget-object v7, v6, LErk;->k:LBN9;
 
     .line 276
     .line 277
@@ -1175,199 +1175,195 @@
 
     .line 278
     .line 279
-    iget-object v7, v7, LCYd;->b:Ljava/lang/Object;
+    iget-object v7, v7, LBN9;->a:Ljava/lang/ref/WeakReference;
 
     .line 280
     .line 281
-    check-cast v7, Ljava/lang/ref/WeakReference;
+    invoke-virtual {v7}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     .line 282
     .line 283
-    invoke-virtual {v7}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
     .line 284
-    .line 285
-    .line 286
     move-result-object v7
 
-    .line 287
+    .line 285
     check-cast v7, Lcom/snap/ui/ptr/PullToRefreshFragment;
+
+    .line 286
+    .line 287
+    if-eqz v7, :cond_d
 
     .line 288
     .line 289
-    if-eqz v7, :cond_d
+    invoke-virtual {v7}, Lcom/snap/ui/ptr/PullToRefreshFragment;->j2()Z
 
     .line 290
     .line 291
-    invoke-virtual {v7}, Lcom/snap/ui/ptr/PullToRefreshFragment;->j2()Z
-
     .line 292
-    .line 293
-    .line 294
     move-result v7
 
-    .line 295
+    .line 293
     goto :goto_2
 
-    .line 296
+    .line 294
     :cond_d
     const/4 v7, 0x0
 
-    .line 297
+    .line 295
     :goto_2
     if-ne v7, v3, :cond_e
 
+    .line 296
+    .line 297
+    iget-object v7, v6, LErk;->j:LREi;
+
     .line 298
     .line 299
-    iget-object v7, v6, LG1k;->j:LXfi;
+    invoke-virtual {v7}, LREi;->getValue()Ljava/lang/Object;
 
     .line 300
     .line 301
-    invoke-virtual {v7}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 302
-    .line 303
-    .line 304
     move-result-object v8
 
-    .line 305
+    .line 303
     check-cast v8, Landroid/animation/ValueAnimator;
+
+    .line 304
+    .line 305
+    iget-object v9, v6, LErk;->b:LjUa;
 
     .line 306
     .line 307
-    iget-object v9, v6, LG1k;->b:Locb;
+    invoke-virtual {v9}, LjUa;->a()Landroid/widget/ImageView;
 
     .line 308
     .line 309
-    invoke-virtual {v9}, Locb;->a()Landroid/widget/ImageView;
-
     .line 310
-    .line 311
-    .line 312
     move-result-object v10
 
-    .line 313
+    .line 311
     invoke-virtual {v10}, Landroid/view/View;->getTranslationY()F
 
+    .line 312
+    .line 313
     .line 314
-    .line 315
-    .line 316
     move-result v10
 
-    .line 317
-    invoke-virtual {v9}, Locb;->a()Landroid/widget/ImageView;
+    .line 315
+    invoke-virtual {v9}, LjUa;->a()Landroid/widget/ImageView;
 
+    .line 316
+    .line 317
     .line 318
-    .line 319
-    .line 320
     move-result-object v11
 
-    .line 321
+    .line 319
     invoke-virtual {v11}, Landroid/view/View;->getHeight()I
 
+    .line 320
+    .line 321
     .line 322
-    .line 323
-    .line 324
     move-result v11
 
-    .line 325
+    .line 323
     int-to-float v11, v11
 
-    .line 326
+    .line 324
     neg-float v11, v11
 
-    .line 327
-    iget v6, v6, LG1k;->f:I
+    .line 325
+    iget v6, v6, LErk;->f:I
 
-    .line 328
-    .line 329
+    .line 326
+    .line 327
     int-to-float v6, v6
 
-    .line 330
+    .line 328
     sub-float/2addr v11, v6
 
-    .line 331
+    .line 329
     new-array v6, v1, [F
+
+    .line 330
+    .line 331
+    aput v10, v6, v2
 
     .line 332
     .line 333
-    aput v10, v6, v2
+    aput v11, v6, v3
 
     .line 334
     .line 335
-    aput v11, v6, v3
+    invoke-virtual {v8, v6}, Landroid/animation/ValueAnimator;->setFloatValues([F)V
 
     .line 336
     .line 337
-    invoke-virtual {v8, v6}, Landroid/animation/ValueAnimator;->setFloatValues([F)V
-
     .line 338
+    invoke-virtual {v7}, LREi;->getValue()Ljava/lang/Object;
+
     .line 339
     .line 340
-    invoke-virtual {v7}, LXfi;->getValue()Ljava/lang/Object;
-
     .line 341
-    .line 342
-    .line 343
     move-result-object v6
 
-    .line 344
+    .line 342
     check-cast v6, Landroid/animation/ValueAnimator;
+
+    .line 343
+    .line 344
+    invoke-virtual {v6}, Landroid/animation/Animator;->start()V
 
     .line 345
     .line 346
-    invoke-virtual {v6}, Landroid/animation/ValueAnimator;->start()V
-
     .line 347
+    iget-object v6, v9, LjUa;->a:Landroid/view/View;
+
     .line 348
     .line 349
-    iget-object v6, v9, Locb;->a:Landroid/view/View;
+    const v7, 0x7f0b1c06
 
     .line 350
     .line 351
-    const v7, 0x7f0b1a9b
-
     .line 352
-    .line 353
-    .line 354
     invoke-virtual {v6, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 353
+    .line 354
     .line 355
-    .line 356
-    .line 357
     move-result-object v6
 
-    .line 358
+    .line 356
     check-cast v6, Lcom/snap/ui/view/progressbar/YellowHorizontalIndeterminateProgressBar;
+
+    .line 357
+    .line 358
+    iget-object v6, v6, Lcom/snap/ui/view/progressbar/YellowHorizontalIndeterminateProgressBar;->c:Landroid/animation/ValueAnimator;
 
     .line 359
     .line 360
-    iget-object v6, v6, Lcom/snap/ui/view/progressbar/YellowHorizontalIndeterminateProgressBar;->c:Landroid/animation/ValueAnimator;
+    invoke-virtual {v6, v0}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
     .line 361
     .line 362
-    invoke-virtual {v6, v0}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
-
     .line 363
+    invoke-virtual {v6}, Landroid/animation/Animator;->start()V
+
     .line 364
     .line 365
-    invoke-virtual {v6}, Landroid/animation/ValueAnimator;->start()V
-
     .line 366
-    .line 367
-    .line 368
     :cond_e
     :pswitch_0
     add-int/2addr v5, v3
 
-    .line 369
+    .line 367
     goto :goto_1
 
-    .line 370
+    .line 368
     :cond_f
     return v3
 
-    .line 371
+    .line 369
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

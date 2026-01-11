@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lmme;
+    proxyClass = LbEe;
     schema = "\'presentUserProfile\':f|m|(s),\'presentSnapProProfile\':f|m|(s),\'presentLensCreatorCommunityProfile\':f|m|(s, s)"
     typeReferences = {}
 .end annotation

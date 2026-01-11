@@ -1,10 +1,10 @@
 .class public final Lcom/snap/contextcards/lib/composer/UserInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'username\':s,\'userId\':s,\'displayName\':s?,\'bitmojiAvatarId\':s?,\'bitmojiSelfieId\':s?,\'isPopular\':b@?,\'emoji\':s?,\'hasOfficialBadge\':b@?,\'snapProInfo\':r?:\'[0]\',\'isAdded\':b@?,\'addFriendSource\':s?,\'mutableUsername\':s?"
     typeReferences = {

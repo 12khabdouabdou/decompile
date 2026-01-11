@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LVBf;
+    proxyClass = LnVf;
     schema = "\'getSearchResultAsyncDataObservable\':f|m|(s): g<c>:\'[0]\'<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LhDf;
+        LzWf;
     }
 .end annotation
 
@@ -26,7 +26,7 @@
             "Ljava/lang/String;",
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "LhDf;",
+            "LzWf;",
             ">;"
         }
     .end annotation

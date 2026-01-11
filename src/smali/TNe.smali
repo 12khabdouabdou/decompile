@@ -1,345 +1,713 @@
 .class public final LTNe;
-.super LlN0;
+.super LAFi;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime Lcom/snap/content/UriHandlerPathSpec;
-    value = "remix_story"
-.end annotation
-
-
 # instance fields
-.field private final g:Lbke;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lbke;"
-        }
-    .end annotation
-.end field
+.field public X:I
 
-.field private final h:Lrn0;
+.field public Y:Ljava/lang/String;
 
+.field public Z:Ljava/lang/String;
 
-# direct methods
-.method public constructor <init>(LqS3;LGYh;Lbke;Lbke;)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "LqS3;",
-            "LGYh;",
-            "Lbke;",
-            "Lbke;",
-            ")V"
-        }
-    .end annotation
+.field public a:J
 
-    .line 1
-    sget-object v0, Ldmc;->H0:Ldmc;
+.field public b:J
 
-    .line 2
-    .line 3
-    iget-object v0, v0, Ldmc;->a:Lcmc;
+.field public c:I
 
-    .line 4
-    .line 5
-    invoke-static {v0}, LNWi;->U(Lcmc;)Ltw1;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v3
-
-    .line 9
-    const/16 v7, 0x20
-
-    .line 10
-    .line 11
-    const/4 v6, 0x0
-
-    .line 12
-    move-object v1, p0
-
-    .line 13
-    move-object v2, p1
-
-    .line 14
-    move-object v4, p2
-
-    .line 15
-    move-object v5, p4
-
-    .line 16
-    invoke-direct/range {v1 .. v7}, LlN0;-><init>(LqS3;LmKe;LGYh;Lbke;LYYh;I)V
-
-    .line 17
-    .line 18
-    .line 19
-    iput-object p3, v1, LTNe;->g:Lbke;
-
-    .line 20
-    .line 21
-    sget-object p1, LONe;->Z:LONe;
-
-    .line 22
-    .line 23
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 24
-    .line 25
-    .line 26
-    const-string p1, "RemixCameraStoryUriHandler"
-
-    .line 27
-    .line 28
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 29
-    .line 30
-    .line 31
-    sget-object p1, Lrn0;->a:Lrn0;
-
-    .line 32
-    .line 33
-    iput-object p1, v1, LTNe;->h:Lrn0;
-
-    .line 34
-    .line 35
-    return-void
-.end method
+.field public t:J
 
 
 # virtual methods
-.method public c(Landroid/net/Uri;Lrwf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/net/Uri;",
-            "Lrwf;",
-            "Z",
-            "Ljava/util/Set<",
-            "+",
-            "LUI1;",
-            ">;)",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "LMT3;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    const-string v0, "original_uri"
-
-    .line 2
-    .line 3
-    invoke-virtual {p1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    invoke-super {p0, p1, p2, p3, p4}, LlN0;->c(Landroid/net/Uri;Lrwf;ZLjava/util/Set;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    return-object p1
-.end method
-
-.method public j(Landroid/net/Uri;)Lio/reactivex/rxjava3/core/Single;
+.method public final b(LAFi;LAFi;)LAFi;
     .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/net/Uri;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "Lm3d;",
-            ">;"
-        }
-    .end annotation
 
     .line 1
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    check-cast p1, LTNe;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    check-cast p2, LTNe;
 
+    .line 4
     .line 5
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    if-nez p2, :cond_0
 
     .line 6
     .line 7
-    .line 8
-    move-result v0
+    new-instance p2, LTNe;
 
+    .line 8
     .line 9
-    sget-object v1, Lu1;->a:Lu1;
+    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
 
     .line 10
     .line 11
-    const/4 v2, 0x4
-
     .line 12
-    if-ge v0, v2, :cond_0
+    :cond_0
+    if-nez p1, :cond_1
 
     .line 13
     .line 14
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
+    invoke-virtual {p2, p0}, LTNe;->f(LTNe;)V
 
     .line 15
     .line 16
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
     .line 17
-    .line 18
-    .line 19
-    return-object p1
+    return-object p2
 
+    .line 18
+    :cond_1
+    iget-wide v0, p0, LTNe;->a:J
+
+    .line 19
     .line 20
-    :cond_0
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    iget-wide v2, p1, LTNe;->a:J
 
     .line 21
     .line 22
+    sub-long/2addr v0, v2
+
     .line 23
-    move-result-object v0
+    iput-wide v0, p2, LTNe;->a:J
 
     .line 24
-    const/4 v2, 0x1
-
     .line 25
-    invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    iget-wide v0, p0, LTNe;->b:J
 
     .line 26
     .line 27
+    iget-wide v2, p1, LTNe;->b:J
+
     .line 28
+    .line 29
+    sub-long/2addr v0, v2
+
+    .line 30
+    iput-wide v0, p2, LTNe;->b:J
+
+    .line 31
+    .line 32
+    iget v0, p0, LTNe;->c:I
+
+    .line 33
+    .line 34
+    iget v1, p1, LTNe;->c:I
+
+    .line 35
+    .line 36
+    sub-int/2addr v0, v1
+
+    .line 37
+    iput v0, p2, LTNe;->c:I
+
+    .line 38
+    .line 39
+    iget-wide v0, p0, LTNe;->t:J
+
+    .line 40
+    .line 41
+    iget-wide v2, p1, LTNe;->t:J
+
+    .line 42
+    .line 43
+    sub-long/2addr v0, v2
+
+    .line 44
+    iput-wide v0, p2, LTNe;->t:J
+
+    .line 45
+    .line 46
+    iget v0, p0, LTNe;->X:I
+
+    .line 47
+    .line 48
+    iget p1, p1, LTNe;->X:I
+
+    .line 49
+    .line 50
+    sub-int/2addr v0, p1
+
+    .line 51
+    iput v0, p2, LTNe;->X:I
+
+    .line 52
+    .line 53
+    iget-object p1, p0, LTNe;->Y:Ljava/lang/String;
+
+    .line 54
+    .line 55
+    iput-object p1, p2, LTNe;->Y:Ljava/lang/String;
+
+    .line 56
+    .line 57
+    iget-object p1, p0, LTNe;->Z:Ljava/lang/String;
+
+    .line 58
+    .line 59
+    iput-object p1, p2, LTNe;->Z:Ljava/lang/String;
+
+    .line 60
+    .line 61
+    return-object p2
+.end method
+
+.method public final bridge synthetic c(LAFi;)LAFi;
+    .locals 0
+
+    .line 1
+    check-cast p1, LTNe;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, LTNe;->f(LTNe;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object p0
+.end method
+
+.method public final d(LAFi;LAFi;)LAFi;
+    .locals 4
+
+    .line 1
+    check-cast p1, LTNe;
+
+    .line 2
+    .line 3
+    check-cast p2, LTNe;
+
+    .line 4
+    .line 5
+    if-nez p2, :cond_0
+
+    .line 6
+    .line 7
+    new-instance p2, LTNe;
+
+    .line 8
+    .line 9
+    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
+
+    .line 10
+    .line 11
+    .line 12
+    :cond_0
+    if-nez p1, :cond_1
+
+    .line 13
+    .line 14
+    invoke-virtual {p2, p0}, LTNe;->f(LTNe;)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-object p2
+
+    .line 18
+    :cond_1
+    iget-wide v0, p0, LTNe;->a:J
+
+    .line 19
+    .line 20
+    iget-wide v2, p1, LTNe;->a:J
+
+    .line 21
+    .line 22
+    add-long/2addr v0, v2
+
+    .line 23
+    iput-wide v0, p2, LTNe;->a:J
+
+    .line 24
+    .line 25
+    iget-wide v0, p0, LTNe;->b:J
+
+    .line 26
+    .line 27
+    iget-wide v2, p1, LTNe;->b:J
+
+    .line 28
+    .line 29
+    add-long/2addr v0, v2
+
+    .line 30
+    iput-wide v0, p2, LTNe;->b:J
+
+    .line 31
+    .line 32
+    iget v0, p0, LTNe;->c:I
+
+    .line 33
+    .line 34
+    iget v1, p1, LTNe;->c:I
+
+    .line 35
+    .line 36
+    add-int/2addr v0, v1
+
+    .line 37
+    iput v0, p2, LTNe;->c:I
+
+    .line 38
+    .line 39
+    iget-wide v0, p0, LTNe;->t:J
+
+    .line 40
+    .line 41
+    iget-wide v2, p1, LTNe;->t:J
+
+    .line 42
+    .line 43
+    add-long/2addr v0, v2
+
+    .line 44
+    iput-wide v0, p2, LTNe;->t:J
+
+    .line 45
+    .line 46
+    iget v0, p0, LTNe;->X:I
+
+    .line 47
+    .line 48
+    iget v1, p1, LTNe;->X:I
+
+    .line 49
+    .line 50
+    add-int/2addr v0, v1
+
+    .line 51
+    iput v0, p2, LTNe;->X:I
+
+    .line 52
+    .line 53
+    iget-object v0, p0, LTNe;->Y:Ljava/lang/String;
+
+    .line 54
+    .line 55
+    iget-object v1, p1, LTNe;->Y:Ljava/lang/String;
+
+    .line 56
+    .line 57
+    invoke-static {v0, v1}, LzHa;->x(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 58
+    .line 59
+    .line 60
     move-result-object v0
 
+    .line 61
+    iput-object v0, p2, LTNe;->Y:Ljava/lang/String;
+
+    .line 62
+    .line 63
+    iget-object v0, p0, LTNe;->Z:Ljava/lang/String;
+
+    .line 64
+    .line 65
+    iget-object p1, p1, LTNe;->Z:Ljava/lang/String;
+
+    .line 66
+    .line 67
+    invoke-static {v0, p1}, LzHa;->x(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    iput-object p1, p2, LTNe;->Z:Ljava/lang/String;
+
+    .line 72
+    .line 73
+    return-object p2
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz p1, :cond_2
+
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v2
+
+    .line 12
+    const-class v3, LTNe;
+
+    .line 13
+    .line 14
+    if-eq v3, v2, :cond_1
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_1
+    check-cast p1, LTNe;
+
+    .line 18
+    .line 19
+    iget-wide v2, p0, LTNe;->a:J
+
+    .line 20
+    .line 21
+    iget-wide v4, p1, LTNe;->a:J
+
+    .line 22
+    .line 23
+    cmp-long v6, v2, v4
+
+    .line 24
+    .line 25
+    if-nez v6, :cond_2
+
+    .line 26
+    .line 27
+    iget-wide v2, p0, LTNe;->b:J
+
+    .line 28
     .line 29
-    check-cast v0, Ljava/lang/String;
+    iget-wide v4, p1, LTNe;->b:J
 
     .line 30
     .line 31
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    cmp-long v6, v2, v4
+
+    .line 32
+    .line 33
+    if-nez v6, :cond_2
+
+    .line 34
+    .line 35
+    iget v2, p0, LTNe;->c:I
+
+    .line 36
+    .line 37
+    iget v3, p1, LTNe;->c:I
+
+    .line 38
+    .line 39
+    if-ne v2, v3, :cond_2
+
+    .line 40
+    .line 41
+    iget-wide v2, p0, LTNe;->t:J
+
+    .line 42
+    .line 43
+    iget-wide v4, p1, LTNe;->t:J
+
+    .line 44
+    .line 45
+    cmp-long v6, v2, v4
+
+    .line 46
+    .line 47
+    if-nez v6, :cond_2
+
+    .line 48
+    .line 49
+    iget v2, p0, LTNe;->X:I
+
+    .line 50
+    .line 51
+    iget p1, p1, LTNe;->X:I
+
+    .line 52
+    .line 53
+    if-ne v2, p1, :cond_2
+
+    .line 54
+    .line 55
+    return v0
+
+    .line 56
+    :cond_2
+    :goto_0
+    return v1
+.end method
+
+.method public final f(LTNe;)V
+    .locals 2
+
+    .line 1
+    iget-wide v0, p1, LTNe;->a:J
+
+    .line 2
+    .line 3
+    iput-wide v0, p0, LTNe;->a:J
+
+    .line 4
+    .line 5
+    iget-wide v0, p1, LTNe;->b:J
+
+    .line 6
+    .line 7
+    iput-wide v0, p0, LTNe;->b:J
+
+    .line 8
+    .line 9
+    iget v0, p1, LTNe;->c:I
+
+    .line 10
+    .line 11
+    iput v0, p0, LTNe;->c:I
+
+    .line 12
+    .line 13
+    iget-wide v0, p1, LTNe;->t:J
+
+    .line 14
+    .line 15
+    iput-wide v0, p0, LTNe;->t:J
+
+    .line 16
+    .line 17
+    iget v0, p1, LTNe;->X:I
+
+    .line 18
+    .line 19
+    iput v0, p0, LTNe;->X:I
+
+    .line 20
+    .line 21
+    iget-object v0, p1, LTNe;->Y:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    iput-object v0, p0, LTNe;->Y:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    iget-object p1, p1, LTNe;->Z:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iput-object p1, p0, LTNe;->Z:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    return-void
+.end method
+
+.method public final hashCode()I
+    .locals 7
+
+    .line 1
+    iget-wide v0, p0, LTNe;->a:J
+
+    .line 2
+    .line 3
+    const/16 v2, 0x20
+
+    .line 4
+    .line 5
+    ushr-long v3, v0, v2
+
+    .line 6
+    .line 7
+    xor-long/2addr v0, v3
+
+    .line 8
+    long-to-int v1, v0
+
+    .line 9
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 10
+    .line 11
+    iget-wide v3, p0, LTNe;->b:J
+
+    .line 12
+    .line 13
+    ushr-long v5, v3, v2
+
+    .line 14
+    .line 15
+    xor-long/2addr v3, v5
+
+    .line 16
+    long-to-int v0, v3
+
+    .line 17
+    add-int/2addr v1, v0
+
+    .line 18
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 19
+    .line 20
+    iget v0, p0, LTNe;->c:I
+
+    .line 21
+    .line 22
+    add-int/2addr v1, v0
+
+    .line 23
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 24
+    .line 25
+    iget-wide v3, p0, LTNe;->t:J
+
+    .line 26
+    .line 27
+    ushr-long v5, v3, v2
+
+    .line 28
+    .line 29
+    xor-long/2addr v3, v5
+
+    .line 30
+    long-to-int v0, v3
+
+    .line 31
+    add-int/2addr v1, v0
+
+    .line 32
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 33
+    .line 34
+    iget v0, p0, LTNe;->X:I
+
+    .line 35
+    .line 36
+    add-int/2addr v1, v0
+
+    .line 37
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 12
+
+    .line 1
+    iget-wide v0, p0, LTNe;->a:J
+
+    .line 2
+    .line 3
+    iget-wide v2, p0, LTNe;->b:J
+
+    .line 4
+    .line 5
+    iget v4, p0, LTNe;->c:I
+
+    .line 6
+    .line 7
+    iget-wide v5, p0, LTNe;->t:J
+
+    .line 8
+    .line 9
+    iget v7, p0, LTNe;->X:I
+
+    .line 10
+    .line 11
+    iget-object v8, p0, LTNe;->Y:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iget-object v9, p0, LTNe;->Z:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    const-string v10, "RadioStateMetrics{mobileLowPowerActiveMs="
+
+    .line 16
+    .line 17
+    const-string v11, ", mobileHighPowerActiveMs="
+
+    .line 18
+    .line 19
+    invoke-static {v0, v1, v10, v11}, LzHa;->B(JLjava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string v1, ", mobileRadioWakeupCount="
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 32
     .line 33
     .line 34
-    move-result-object v2
+    const-string v1, ", wifiActiveMs="
 
     .line 35
-    const/4 v3, 0x2
-
     .line 36
-    invoke-interface {v2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    const-string v2, ", wifiRadioWakeupCount="
 
     .line 37
     .line 38
+    invoke-static {v5, v6, v1, v2, v0}, LBv7;->u(JLjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
     .line 39
-    move-result-object v2
-
     .line 40
-    check-cast v2, Ljava/lang/String;
-
     .line 41
-    .line 42
-    invoke-virtual {p1}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
+    const-string v1, ", requestToWakeupScore="
 
+    .line 42
     .line 43
+    const-string v2, ", requestToActivityTime="
+
     .line 44
     .line 45
-    move-result-object p1
+    invoke-static {v0, v7, v1, v8, v2}, LBv7;->w(Ljava/lang/StringBuilder;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 46
-    const/4 v3, 0x3
-
     .line 47
-    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
     .line 48
+    const-string v1, "}"
+
     .line 49
     .line 50
-    move-result-object p1
+    invoke-static {v0, v9, v1}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 51
-    check-cast p1, Ljava/lang/String;
-
     .line 52
     .line 53
-    invoke-static {p1}, LY4i;->Z0(Ljava/lang/String;)Ljava/lang/Integer;
+    move-result-object v0
 
     .line 54
-    .line 55
-    .line 56
-    move-result-object p1
-
-    .line 57
-    if-eqz p1, :cond_1
-
-    .line 58
-    .line 59
-    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result p1
-
-    .line 63
-    iget-object v1, p0, LTNe;->g:Lbke;
-
-    .line 64
-    .line 65
-    invoke-interface {v1}, Lbke;->get()Ljava/lang/Object;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v1
-
-    .line 69
-    check-cast v1, LjU5;
-
-    .line 70
-    .line 71
-    invoke-virtual {v1, p1, v0, v2}, LjU5;->a(ILjava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableSingleSingle;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object p1
-
-    .line 75
-    return-object p1
-
-    .line 76
-    :cond_1
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
-    .line 77
-    .line 78
-    invoke-direct {p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
-    .line 79
-    .line 80
-    .line 81
-    return-object p1
+    return-object v0
 .end method

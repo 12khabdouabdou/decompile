@@ -1,5 +1,5 @@
 .class public final LV37;
-.super Ljava/lang/Object;
+.super LW37;
 .source "SourceFile"
 
 

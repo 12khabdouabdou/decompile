@@ -1,54 +1,36 @@
-.class public final LLs5;
+.class public abstract LLs5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/looksery/sdk/EglContextChecker$Factory;
-
 
 # static fields
-.field public static final a:LLs5;
+.field public static final a:J
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 1
+    .locals 3
 
     .line 1
-    new-instance v0, LLs5;
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const-wide/16 v1, 0x7
 
     .line 4
     .line 5
-    .line 6
-    sput-object v0, LLs5;->a:LLs5;
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
+    .line 6
     .line 7
     .line 8
+    move-result-wide v0
+
+    .line 9
+    sput-wide v0, LLs5;->a:J
+
+    .line 10
+    .line 11
     return-void
-.end method
-
-
-# virtual methods
-.method public final create(Landroid/opengl/EGLContext;)Lcom/looksery/sdk/EglContextChecker;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lcom/looksery/sdk/DefaultEglContextChecker;
-
-    .line 2
-    .line 3
-    const-string v1, "LSCoreManagerWrapper"
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1, p1}, Lcom/looksery/sdk/DefaultEglContextChecker;-><init>(Ljava/lang/String;Landroid/opengl/EGLContext;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-object v0
 .end method

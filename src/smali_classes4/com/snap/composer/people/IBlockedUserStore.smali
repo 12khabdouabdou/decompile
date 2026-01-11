@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LeU8;
+    proxyClass = LF19;
     schema = "\'getBlockedUsers\':f|m|(f|s|(a?<r:\'[0]\'>, m?<s,u>)),\'onBlockedUsersUpdated\':f|m|(f()): f(),\'blockUser\':f?|m|(s, f|s|(m?<s,u>)),\'blockedUsersObservable\':g?<c>:\'[1]\'<a<r:\'[0]\'>>"
     typeReferences = {
-        Lzf1;,
+        LUi1;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;
     }
 .end annotation
@@ -20,9 +20,6 @@
 
 # virtual methods
 .method public abstract blockUser(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -30,6 +27,9 @@
             "Lkotlin/jvm/functions/Function1;",
             ")V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -49,7 +49,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Lzf1;",
+            "LUi1;",
             ">;>;"
         }
     .end annotation

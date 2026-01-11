@@ -3,90 +3,130 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
+.implements LG4a;
 
 
 # instance fields
-.field public final synthetic a:Lcka;
+.field public final synthetic a:I
 
-.field public final synthetic b:LuH5;
+.field public final b:Ljava/lang/Object;
+
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lcka;LuH5;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;ILjava/lang/Object;)V
     .locals 0
 
     .line 1
+    iput p2, p0, LsH5;->a:I
+
+    iput-object p1, p0, LsH5;->b:Ljava/lang/Object;
+
+    iput-object p3, p0, LsH5;->c:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LsH5;->a:Lcka;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LsH5;->b:LuH5;
-
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 6
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LsH5;->b:LuH5;
+    iget v0, p0, LsH5;->a:I
 
     .line 2
     .line 3
-    iget-object v1, v0, LuH5;->a:LIN;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    new-instance v2, LFN$X0$e;
-
     .line 6
+    iget-object v0, p0, LsH5;->b:Ljava/lang/Object;
+
     .line 7
-    iget-object v3, p0, LsH5;->a:Lcka;
-
     .line 8
+    check-cast v0, LsH5;
+
     .line 9
-    check-cast v3, Laka;
-
     .line 10
-    .line 11
-    iget-wide v3, v3, Laka;->a:J
+    invoke-virtual {v0}, LsH5;->a()Lio/reactivex/rxjava3/core/Observable;
 
+    .line 11
     .line 12
     .line 13
-    iget-object v0, v0, LuH5;->c:Ljava/util/concurrent/atomic/AtomicBoolean;
+    move-result-object v0
 
     .line 14
-    .line 15
-    const/4 v5, 0x0
+    iget-object v1, p0, LsH5;->c:Ljava/lang/Object;
 
+    .line 15
     .line 16
-    invoke-virtual {v0, v5}, Ljava/util/concurrent/atomic/AtomicBoolean;->getAndSet(Z)Z
+    check-cast v1, LFb6;
 
     .line 17
     .line 18
+    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->A(Lio/reactivex/rxjava3/core/ObservableTransformer;)Lio/reactivex/rxjava3/core/Observable;
+
     .line 19
-    move-result v0
-
     .line 20
-    invoke-direct {v2, v3, v4, v0}, LFN$X0$e;-><init>(JZ)V
-
     .line 21
+    move-result-object v0
+
     .line 22
+    return-object v0
+
     .line 23
-    invoke-interface {v1, v2}, LIN;->a(LFN;)V
+    :pswitch_0
+    iget-object v0, p0, LsH5;->c:Ljava/lang/Object;
 
     .line 24
     .line 25
+    check-cast v0, LzX3;
+
     .line 26
-    return-void
+    .line 27
+    invoke-virtual {v0}, LzX3;->a()Lio/reactivex/rxjava3/core/Observable;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    new-instance v1, Loy5;
+
+    .line 32
+    .line 33
+    const/16 v2, 0xa
+
+    .line 34
+    .line 35
+    invoke-direct {v1, v2, p0}, Loy5;-><init>(ILjava/lang/Object;)V
+
+    .line 36
+    .line 37
+    .line 38
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;
+
+    .line 39
+    .line 40
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 41
+    .line 42
+    .line 43
+    return-object v2
+
+    .line 44
+    nop
+
+    .line 45
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

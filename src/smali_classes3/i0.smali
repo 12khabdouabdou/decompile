@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public final a:LhV4;
+.field public final a:Lq25;
 
-.field public final b:Lrn0;
+.field public final b:LJp0;
 
-.field public final c:LDUb;
+.field public final c:Ll9c;
 
-.field public final d:LrUb;
+.field public final d:LW8c;
 
-.field public final e:LnUb;
+.field public final e:LV8c;
 
-.field public final f:LBre;
+.field public final f:LnJe;
 
-.field public final g:LhV4;
+.field public final g:Lq25;
 
 
 # direct methods
-.method public constructor <init>(LhV4;LhV4;LhV4;LhV4;LhV4;)V
+.method public constructor <init>(Lq25;Lq25;Lq25;Lq25;Lq25;)V
     .locals 2
 
     .line 1
@@ -29,11 +29,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Li0;->a:LhV4;
+    iput-object p1, p0, Li0;->a:Lq25;
 
     .line 5
     .line 6
-    sget-object p1, LFUb;->Z:LFUb;
+    sget-object p1, Ln9c;->Z:Ln9c;
 
     .line 7
     .line 8
@@ -42,28 +42,28 @@
     .line 9
     .line 10
     .line 11
-    new-instance v0, LWm0;
+    new-instance v0, Lnp0;
 
     .line 12
     .line 13
-    const-string v1, "AISnapGenerator"
+    const-string v1, "AICameraMediaGenerator"
 
     .line 14
     .line 15
-    invoke-direct {v0, p1, v1}, LWm0;-><init>(Lan0;Ljava/lang/String;)V
+    invoke-direct {v0, p1, v1}, Lnp0;-><init>(Lrp0;Ljava/lang/String;)V
 
     .line 16
     .line 17
     .line 18
-    sget-object p1, Lrn0;->a:Lrn0;
+    sget-object p1, LJp0;->a:LJp0;
 
     .line 19
     .line 20
-    iput-object p1, p0, Li0;->b:Lrn0;
+    iput-object p1, p0, Li0;->b:LJp0;
 
     .line 21
     .line 22
-    invoke-virtual {p2}, LhV4;->get()Ljava/lang/Object;
+    invoke-virtual {p2}, Lq25;->get()Ljava/lang/Object;
 
     .line 23
     .line 24
@@ -71,15 +71,15 @@
     move-result-object p1
 
     .line 26
-    check-cast p1, LDUb;
+    check-cast p1, Ll9c;
 
     .line 27
     .line 28
-    iput-object p1, p0, Li0;->c:LDUb;
+    iput-object p1, p0, Li0;->c:Ll9c;
 
     .line 29
     .line 30
-    invoke-virtual {p3}, LhV4;->get()Ljava/lang/Object;
+    invoke-virtual {p3}, Lq25;->get()Ljava/lang/Object;
 
     .line 31
     .line 32
@@ -87,15 +87,15 @@
     move-result-object p1
 
     .line 34
-    check-cast p1, LrUb;
+    check-cast p1, LW8c;
 
     .line 35
     .line 36
-    iput-object p1, p0, Li0;->d:LrUb;
+    iput-object p1, p0, Li0;->d:LW8c;
 
     .line 37
     .line 38
-    invoke-virtual {p4}, LhV4;->get()Ljava/lang/Object;
+    invoke-virtual {p4}, Lq25;->get()Ljava/lang/Object;
 
     .line 39
     .line 40
@@ -103,28 +103,28 @@
     move-result-object p1
 
     .line 42
-    check-cast p1, LnUb;
+    check-cast p1, LV8c;
 
     .line 43
     .line 44
-    iput-object p1, p0, Li0;->e:LnUb;
+    iput-object p1, p0, Li0;->e:LV8c;
 
     .line 45
     .line 46
-    new-instance p1, LBre;
+    new-instance p1, LnJe;
 
     .line 47
     .line 48
-    invoke-direct {p1, v0}, LBre;-><init>(LWm0;)V
+    invoke-direct {p1, v0}, LnJe;-><init>(Lnp0;)V
 
     .line 49
     .line 50
     .line 51
-    iput-object p1, p0, Li0;->f:LBre;
+    iput-object p1, p0, Li0;->f:LnJe;
 
     .line 52
     .line 53
-    iput-object p5, p0, Li0;->g:LhV4;
+    iput-object p5, p0, Li0;->g:Lq25;
 
     .line 54
     .line 55

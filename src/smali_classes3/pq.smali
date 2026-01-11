@@ -2,206 +2,186 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/safety/customreporting/ReportDelegate;
+
 
 # instance fields
-.field public final a:LpC3;
+.field public a:Ljava/lang/String;
+
+.field public b:Ljava/lang/String;
+
+.field public final synthetic c:Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # direct methods
-.method public constructor <init>(LpC3;I)V
+.method public constructor <init>(Lio/reactivex/rxjava3/functions/Consumer;)V
     .locals 0
 
     .line 1
-    packed-switch p2, :pswitch_data_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lpq;->c:Lio/reactivex/rxjava3/functions/Consumer;
 
     .line 5
     .line 6
+    const-string p1, ""
+
     .line 7
-    iput-object p1, p0, Lpq;->a:LpC3;
-
     .line 8
+    iput-object p1, p0, Lpq;->a:Ljava/lang/String;
+
     .line 9
-    sget-object p1, Lyp;->Z:Lyp;
-
     .line 10
+    iput-object p1, p0, Lpq;->b:Ljava/lang/String;
+
     .line 11
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 12
-    .line 13
-    .line 14
-    const-string p1, "AdSlugPositionHelper"
-
-    .line 15
-    .line 16
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 17
-    .line 18
-    .line 19
-    sget-object p1, Lrn0;->a:Lrn0;
-
-    .line 20
-    .line 21
     return-void
-
-    .line 22
-    :pswitch_0
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 23
-    .line 24
-    .line 25
-    iput-object p1, p0, Lpq;->a:LpC3;
-
-    .line 26
-    .line 27
-    return-void
-
-    .line 28
-    :pswitch_1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 29
-    .line 30
-    .line 31
-    iput-object p1, p0, Lpq;->a:LpC3;
-
-    .line 32
-    .line 33
-    sget-object p1, LEO8;->Z:LEO8;
-
-    .line 34
-    .line 35
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 36
-    .line 37
-    .line 38
-    const-string p1, "SnapzenHomeAssetUrlGenerator"
-
-    .line 39
-    .line 40
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 41
-    .line 42
-    .line 43
-    sget-object p1, Lrn0;->a:Lrn0;
-
-    .line 44
-    .line 45
-    return-void
-
-    .line 46
-    nop
-
-    .line 47
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method
 
 
 # virtual methods
-.method public a()Lio/reactivex/rxjava3/core/Single;
-    .locals 9
+.method public didSelectWebViewReason(Ljava/lang/String;)V
+    .locals 0
+    .annotation runtime LhC3;
+    .end annotation
 
     .line 1
-    sget-object v0, LUWa;->a2:LUWa;
+    invoke-static {p0, p1}, LEef;->didSelectWebViewReason(Lcom/snap/safety/customreporting/ReportDelegate;Ljava/lang/String;)V
 
     .line 2
     .line 3
-    iget-object v1, p0, Lpq;->a:LpC3;
+    .line 4
+    return-void
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
-    invoke-interface {v1, v0}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/safety/customreporting/ReportDelegate;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
+.end method
+
+.method public final reportDidComplete(Z)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lpq;->c:Lio/reactivex/rxjava3/functions/Consumer;
+
+    .line 2
+    .line 3
+    if-eqz p1, :cond_0
+
+    .line 4
+    .line 5
+    sget-object p1, LN1;->a:LN1;
 
     .line 6
     .line 7
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/functions/Consumer;->accept(Ljava/lang/Object;)V
+
     .line 8
-    move-result-object v2
-
     .line 9
-    sget-object v0, LUWa;->b2:LUWa;
-
     .line 10
+    return-void
+
     .line 11
-    invoke-interface {v1, v0}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    :cond_0
+    new-instance p1, Lvq;
 
     .line 12
     .line 13
-    .line 14
-    move-result-object v3
+    iget-object v1, p0, Lpq;->a:Ljava/lang/String;
 
+    .line 14
     .line 15
-    sget-object v0, LUWa;->X1:LUWa;
+    iget-object v2, p0, Lpq;->b:Ljava/lang/String;
 
     .line 16
     .line 17
-    invoke-interface {v1, v0}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-direct {p1, v1, v2}, Lvq;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 18
     .line 19
     .line 20
-    move-result-object v4
+    new-instance v1, Lr4e;
 
     .line 21
-    sget-object v0, LUWa;->d2:LUWa;
-
     .line 22
-    .line 23
-    invoke-interface {v1, v0}, LpC3;->u(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    invoke-direct {v1, p1}, Lr4e;-><init>(Ljava/lang/Object;)V
 
+    .line 23
     .line 24
     .line 25
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/functions/Consumer;->accept(Ljava/lang/Object;)V
+
     .line 26
-    move-result-object v5
-
     .line 27
-    sget-object v0, LUWa;->Y1:LUWa;
-
     .line 28
-    .line 29
-    invoke-interface {v1, v0}, LpC3;->n(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    return-void
+.end method
 
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v6
+.method public final submitReport(Ljava/lang/String;Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 0
 
-    .line 33
-    sget-object v0, LUWa;->W1:LUWa;
+    .line 1
+    iput-object p1, p0, Lpq;->a:Ljava/lang/String;
 
-    .line 34
-    .line 35
-    invoke-interface {v1, v0}, LpC3;->n(LBI3;)Lio/reactivex/rxjava3/core/Single;
+    .line 2
+    .line 3
+    iput-object p2, p0, Lpq;->b:Ljava/lang/String;
 
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v7
+    .line 4
+    .line 5
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    .line 39
-    sget-object v8, LBPi;->e0:LBPi;
+    .line 6
+    .line 7
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;
 
-    .line 40
-    .line 41
-    invoke-static/range {v2 .. v8}, Lio/reactivex/rxjava3/core/Single;->G(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function6;)Lio/reactivex/rxjava3/core/Single;
+    .line 8
+    .line 9
+    invoke-direct {p2, p1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableJust;-><init>(Ljava/lang/Object;)V
 
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {p2}, LOlg;->i(Lio/reactivex/rxjava3/core/Observable;)Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-    .line 45
-    return-object v0
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p1
+
+    .line 16
+    return-object p1
 .end method

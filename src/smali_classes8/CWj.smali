@@ -1,29 +1,49 @@
-.class public final LCWj;
-.super LXsk;
+.class public abstract LCWj;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LCWj;
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public static getDistanceKmToLocation(Lcom/snap/venueprofile/VenueProfileContextualInfoProvider;DD)Ljava/lang/Double;
+    .locals 0
+    .annotation runtime LhC3;
+    .end annotation
 
     .line 1
-    new-instance v0, LCWj;
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const-string p1, "Unimplemented method"
 
     .line 4
     .line 5
-    .line 6
-    sput-object v0, LCWj;->a:LCWj;
+    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    return-void
+    throw p0
+.end method
+
+.method public static getETADataForPlace(Lcom/snap/venueprofile/VenueProfileContextualInfoProvider;DD)V
+    .locals 0
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
+
+    .line 2
+    .line 3
+    const-string p1, "Unimplemented method"
+
+    .line 4
+    .line 5
+    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

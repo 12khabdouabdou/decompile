@@ -1,61 +1,33 @@
-.class public final synthetic LxG2;
-.super Loje;
+.class public final LxG2;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final e0:LxG2;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'text\':s"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _text:Ljava/lang/String;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    .line 1
-    new-instance v0, LxG2;
-
-    .line 2
-    .line 3
-    const-string v1, "getFirst()Ljava/lang/Object;"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    const-class v3, Lhad;
-
-    .line 7
-    .line 8
-    const-string v4, "first"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v3, v4, v1, v2}, Loje;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, LxG2;->e0:LxG2;
-
-    .line 14
-    .line 15
-    return-void
-.end method
-
-
-# virtual methods
-.method public final get(Ljava/lang/Object;)Ljava/lang/Object;
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    check-cast p1, Lhad;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget-object p1, p1, Lhad;->a:Ljava/lang/Object;
-
     .line 4
+    iput-object p1, p0, LxG2;->_text:Ljava/lang/String;
+
     .line 5
-    return-object p1
+    .line 6
+    return-void
 .end method

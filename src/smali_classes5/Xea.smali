@@ -1,186 +1,193 @@
 .class public final LXea;
-.super Ljava/lang/Object;
+.super LNE9;
 .source "SourceFile"
-
-# interfaces
-.implements LYea;
 
 
 # instance fields
-.field public final a:Lo09;
+.field public final X:LY79;
 
-.field public final b:Lo09;
+.field public final Y:LIIj;
 
-.field public final c:LoY9;
+.field public final Z:J
+
+.field public final e0:LEU7;
 
 
 # direct methods
-.method public constructor <init>(Lo09;Lo09;LoY9;)V
-    .locals 0
+.method public constructor <init>(LY79;LIIj;J)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v0, LEU7;->h0:LEU7;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LXea;->a:Lo09;
+    invoke-direct {p0, v0}, LNE9;-><init>(LME9;)V
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, LXea;->b:Lo09;
+    iput-object p1, p0, LXea;->X:LY79;
 
     .line 7
     .line 8
-    iput-object p3, p0, LXea;->c:LoY9;
+    iput-object p2, p0, LXea;->Y:LIIj;
 
     .line 9
     .line 10
+    iput-wide p3, p0, LXea;->Z:J
+
+    .line 11
+    .line 12
+    iput-object v0, p0, LXea;->e0:LEU7;
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lo09;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LXea;->b:Lo09;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
     if-ne p0, p1, :cond_0
 
+    .line 2
     .line 3
+    goto :goto_1
+
     .line 4
-    return v0
+    :cond_0
+    instance-of v0, p1, LXea;
 
     .line 5
-    :cond_0
-    instance-of v1, p1, LXea;
-
     .line 6
-    .line 7
-    const/4 v2, 0x0
+    if-nez v0, :cond_1
 
+    .line 7
     .line 8
-    if-nez v1, :cond_1
+    goto :goto_0
 
     .line 9
-    .line 10
-    return v2
-
-    .line 11
     :cond_1
     check-cast p1, LXea;
 
+    .line 10
+    .line 11
+    iget-object v0, p1, LXea;->X:LY79;
+
     .line 12
     .line 13
-    iget-object v1, p1, LXea;->a:Lo09;
+    iget-object v1, p0, LXea;->X:LY79;
 
     .line 14
     .line 15
-    iget-object v3, p0, LXea;->a:Lo09;
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
-    .line 19
-    .line 20
-    move-result v1
+    move-result v0
 
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
     .line 21
-    if-nez v1, :cond_2
+    goto :goto_0
 
     .line 22
-    .line 23
-    return v2
-
-    .line 24
     :cond_2
-    iget-object v1, p0, LXea;->b:Lo09;
+    iget-object v0, p0, LXea;->Y:LIIj;
+
+    .line 23
+    .line 24
+    iget-object v1, p1, LXea;->Y:LIIj;
 
     .line 25
     .line 26
-    iget-object v3, p1, LXea;->b:Lo09;
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 27
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 29
-    .line 30
-    .line 31
-    move-result v1
+    move-result v0
 
+    .line 30
+    if-nez v0, :cond_3
+
+    .line 31
     .line 32
-    if-nez v1, :cond_3
+    goto :goto_0
 
     .line 33
-    .line 34
-    return v2
-
-    .line 35
     :cond_3
-    iget-object v1, p0, LXea;->c:LoY9;
+    iget-wide v0, p0, LXea;->Z:J
+
+    .line 34
+    .line 35
+    iget-wide v2, p1, LXea;->Z:J
 
     .line 36
     .line 37
-    iget-object p1, p1, LXea;->c:LoY9;
+    cmp-long v4, v0, v2
 
     .line 38
     .line 39
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eqz v4, :cond_4
 
     .line 40
     .line 41
+    goto :goto_0
+
     .line 42
-    move-result p1
+    :cond_4
+    iget-object v0, p0, LXea;->e0:LEU7;
 
     .line 43
-    if-nez p1, :cond_4
-
     .line 44
+    iget-object p1, p1, LXea;->e0:LEU7;
+
     .line 45
-    return v2
-
     .line 46
-    :cond_4
-    return v0
-.end method
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-.method public final getRequestId()Lo09;
-    .locals 1
+    .line 47
+    .line 48
+    .line 49
+    move-result p1
 
-    .line 1
-    iget-object v0, p0, LXea;->a:Lo09;
+    .line 50
+    if-nez p1, :cond_5
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 51
+    .line 52
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 53
+    return p1
+
+    .line 54
+    :cond_5
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 55
+    return p1
 .end method
 
 .method public final hashCode()I
-    .locals 3
+    .locals 6
 
     .line 1
-    iget-object v0, p0, LXea;->a:Lo09;
+    iget-object v0, p0, LXea;->X:LY79;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
@@ -200,49 +207,70 @@
 
     .line 12
     .line 13
-    iget-object v2, p0, LXea;->b:Lo09;
+    iget-object v2, p0, LXea;->Y:LIIj;
 
     .line 14
     .line 15
-    iget-object v2, v2, Lo09;->a:Ljava/lang/String;
+    invoke-static {v2, v0, v1}, Lir1;->f(LIIj;II)I
 
     .line 16
     .line 17
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
-
     .line 18
-    .line 19
-    .line 20
     move-result v0
 
+    .line 19
+    iget-wide v2, p0, LXea;->Z:J
+
+    .line 20
     .line 21
-    iget-object v1, p0, LXea;->c:LoY9;
+    const/16 v4, 0x20
 
     .line 22
     .line 23
-    invoke-virtual {v1}, LoY9;->hashCode()I
+    ushr-long v4, v2, v4
 
     .line 24
     .line 25
+    xor-long/2addr v2, v4
+
     .line 26
-    move-result v1
+    long-to-int v3, v2
 
     .line 27
-    add-int/2addr v1, v0
+    add-int/2addr v0, v3
 
     .line 28
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 29
+    .line 30
+    iget-object v1, p0, LXea;->e0:LEU7;
+
+    .line 31
+    .line 32
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v1
+
+    .line 36
+    add-int/2addr v1, v0
+
+    .line 37
     return v1
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "WithMetadata(requestId="
+    const-string v1, "LensStoryItemFeedViewModel(contentId="
 
     .line 4
     .line 5
@@ -251,7 +279,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LXea;->a:Lo09;
+    iget-object v1, p0, LXea;->X:LY79;
 
     .line 9
     .line 10
@@ -260,7 +288,7 @@
     .line 11
     .line 12
     .line 13
-    const-string v1, ", lensId="
+    const-string v1, ", thumbnail="
 
     .line 14
     .line 15
@@ -269,7 +297,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LXea;->b:Lo09;
+    iget-object v1, p0, LXea;->Y:LIIj;
 
     .line 19
     .line 20
@@ -278,7 +306,7 @@
     .line 21
     .line 22
     .line 23
-    const-string v1, ", metadata="
+    const-string v1, ", viewCount="
 
     .line 24
     .line 25
@@ -287,16 +315,16 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, LXea;->c:LoY9;
+    iget-wide v1, p0, LXea;->Z:J
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
     .line 33
-    const-string v1, ")"
+    const-string v1, ", configuration="
 
     .line 34
     .line 35
@@ -305,13 +333,42 @@
     .line 36
     .line 37
     .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v1, p0, LXea;->e0:LEU7;
 
     .line 39
     .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 41
+    .line 42
+    .line 43
+    const-string v1, ")"
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 49
+    .line 50
+    .line 51
     move-result-object v0
 
-    .line 42
+    .line 52
+    return-object v0
+.end method
+
+.method public final y()LY79;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LXea;->X:LY79;
+
+    .line 2
+    .line 3
     return-object v0
 .end method

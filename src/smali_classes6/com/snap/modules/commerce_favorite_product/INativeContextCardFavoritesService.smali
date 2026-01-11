@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LKW8;
+    proxyClass = Ll49;
     schema = "\'checkFavoriteStatusByProtoAction\':f|m|(s): g<c>:\'[0]\'<b@>,\'storeFavoritedItemByProtoAction\':f|m|(s): g<c>:\'[0]\'<b@>,\'storeUnfavoritedItemByProtoAction\':f|m|(s): g<c>:\'[0]\'<b@>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;

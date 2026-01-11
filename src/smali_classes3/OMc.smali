@@ -1,27 +1,39 @@
 .class public final LOMc;
-.super LQt2;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LOMc;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'isToggleOn\':b,\'nightModeSelection\':r?<e>:\'[0]\'"
+    typeReferences = {
+        Lcom/snap/camera_mode_widgets/NightModeSelection;
+    }
+.end annotation
+
+
+# instance fields
+.field private _isToggleOn:Z
+
+.field private _nightModeSelection:Lcom/snap/camera_mode_widgets/NightModeSelection;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(ZLcom/snap/camera_mode_widgets/NightModeSelection;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LOMc;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
+    iput-boolean p1, p0, LOMc;->_isToggleOn:Z
+
     .line 5
     .line 6
-    sput-object v0, LOMc;->a:LOMc;
+    iput-object p2, p0, LOMc;->_nightModeSelection:Lcom/snap/camera_mode_widgets/NightModeSelection;
 
     .line 7
     .line 8

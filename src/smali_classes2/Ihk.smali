@@ -1,189 +1,158 @@
 .class public final LIhk;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LPJc;
+.implements Lkotlin/jvm/functions/Function0;
 
 
-# static fields
-.field public static final a:LIhk;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LJhk;
+
+.field public final synthetic c:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(LJhk;II)V
+    .locals 0
 
     .line 1
-    new-instance v0, LIhk;
+    iput p3, p0, LIhk;->a:I
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, LIhk;->b:LJhk;
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LIhk;->a:LIhk;
+    iput p2, p0, LIhk;->c:I
 
-    .line 7
-    .line 8
-    new-instance v0, Lu8k;
+    const/4 p1, 0x0
 
-    .line 9
-    .line 10
-    const/4 v1, 0x1
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 11
-    invoke-direct {v0, v1}, Lu8k;-><init>(I)V
-
-    .line 12
-    .line 13
-    .line 14
-    const-class v1, LL8k;
-
-    .line 15
-    .line 16
-    invoke-static {v1, v0}, LsMj;->k(Ljava/lang/Class;Lu8k;)Ljava/util/HashMap;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    const/4 v2, 0x2
-
-    .line 21
-    invoke-static {v0, v2}, LsMj;->o(Ljava/util/HashMap;I)Lu8k;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v0
-
-    .line 25
-    invoke-static {v1, v0}, LsMj;->k(Ljava/lang/Class;Lu8k;)Ljava/util/HashMap;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    const/4 v2, 0x3
-
-    .line 30
-    invoke-static {v0, v2}, LsMj;->o(Ljava/util/HashMap;I)Lu8k;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    invoke-static {v1, v0}, LsMj;->k(Ljava/lang/Class;Lu8k;)Ljava/util/HashMap;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v0
-
-    .line 38
-    const/4 v2, 0x4
-
-    .line 39
-    invoke-static {v0, v2}, LsMj;->o(Ljava/util/HashMap;I)Lu8k;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v0
-
-    .line 43
-    invoke-static {v1, v0}, LsMj;->k(Ljava/lang/Class;Lu8k;)Ljava/util/HashMap;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-
-    .line 47
-    const/4 v2, 0x5
-
-    .line 48
-    invoke-static {v0, v2}, LsMj;->o(Ljava/util/HashMap;I)Lu8k;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
-
-    .line 52
-    invoke-static {v1, v0}, LsMj;->k(Ljava/lang/Class;Lu8k;)Ljava/util/HashMap;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    const/4 v2, 0x6
-
-    .line 57
-    invoke-static {v0, v2}, LsMj;->o(Ljava/util/HashMap;I)Lu8k;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object v0
-
-    .line 61
-    invoke-static {v1, v0}, LsMj;->k(Ljava/lang/Class;Lu8k;)Ljava/util/HashMap;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v0
-
-    .line 65
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 66
-    .line 67
-    .line 68
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final d()Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    if-nez p1, :cond_0
+    iget v0, p0, LIhk;->a:I
 
     .line 2
     .line 3
-    check-cast p2, LQJc;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const/4 p1, 0x0
-
     .line 6
-    throw p1
+    iget-object v0, p0, LIhk;->b:LJhk;
 
     .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
     .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    iget-object v0, v0, LJhk;->a:LDhk;
 
+    .line 9
     .line 10
+    iget v1, p0, LIhk;->c:I
+
     .line 11
     .line 12
-    throw p1
+    invoke-virtual {v0, v1}, LDhk;->s(I)V
+
+    .line 13
+    .line 14
+    .line 15
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 16
+    .line 17
+    return-object v0
+
+    .line 18
+    :pswitch_0
+    iget-object v0, p0, LIhk;->b:LJhk;
+
+    .line 19
+    .line 20
+    iget-object v0, v0, LJhk;->a:LDhk;
+
+    .line 21
+    .line 22
+    iget v1, p0, LIhk;->c:I
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, LDhk;->p(I)V
+
+    .line 25
+    .line 26
+    .line 27
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 28
+    .line 29
+    return-object v0
+
+    .line 30
+    :pswitch_1
+    iget-object v0, p0, LIhk;->b:LJhk;
+
+    .line 31
+    .line 32
+    iget-object v0, v0, LJhk;->a:LDhk;
+
+    .line 33
+    .line 34
+    iget v1, p0, LIhk;->c:I
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v1}, LDhk;->t(I)V
+
+    .line 37
+    .line 38
+    .line 39
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 40
+    .line 41
+    return-object v0
+
+    .line 42
+    :pswitch_2
+    iget-object v0, p0, LIhk;->b:LJhk;
+
+    .line 43
+    .line 44
+    iget-object v0, v0, LJhk;->a:LDhk;
+
+    .line 45
+    .line 46
+    iget v1, p0, LIhk;->c:I
+
+    .line 47
+    .line 48
+    invoke-virtual {v0, v1}, LDhk;->u(I)V
+
+    .line 49
+    .line 50
+    .line 51
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 52
+    .line 53
+    return-object v0
+
+    .line 54
+    nop
+
+    .line 55
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

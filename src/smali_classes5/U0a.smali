@@ -1,101 +1,90 @@
-.class public abstract LU0a;
+.class public final LU0a;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
-# static fields
-.field public static final a:Ljava/util/Set;
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LP0a;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(LP0a;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x6
+    iput p2, p0, LU0a;->a:I
+
+    iput-object p1, p0, LU0a;->b:LP0a;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    iget v0, p0, LU0a;->a:I
 
     .line 2
-    new-array v0, v0, [LT0a;
-
     .line 3
-    .line 4
-    sget-object v1, LT0a;->b:LT0a;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    const/4 v2, 0x0
+    check-cast p1, Lcom/snap/lenses/app/explorer/data/collections/LensesExplorerCollectionsHttpInterface;
 
     .line 7
-    aput-object v1, v0, v2
-
     .line 8
+    iget-object v0, p0, LU0a;->b:LP0a;
+
     .line 9
-    sget-object v1, LT0a;->c:LT0a;
-
     .line 10
+    invoke-interface {p1, v0}, Lcom/snap/lenses/app/explorer/data/collections/LensesExplorerCollectionsHttpInterface;->fetchCollection(LP0a;)Lio/reactivex/rxjava3/core/Single;
+
     .line 11
-    const/4 v2, 0x1
-
     .line 12
-    aput-object v1, v0, v2
-
     .line 13
+    move-result-object p1
+
     .line 14
-    sget-object v1, LT0a;->t:LT0a;
+    return-object p1
 
     .line 15
-    .line 16
-    const/4 v2, 0x2
+    :pswitch_0
+    check-cast p1, Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface;
 
+    .line 16
     .line 17
-    aput-object v1, v0, v2
+    iget-object v0, p0, LU0a;->b:LP0a;
 
     .line 18
     .line 19
-    sget-object v1, LT0a;->e0:LT0a;
+    invoke-interface {p1, v0}, Lcom/snap/lenses/data/collections/LensCollectionsHttpInterface;->fetchCollection(LP0a;)Lio/reactivex/rxjava3/core/Single;
 
     .line 20
     .line 21
-    const/4 v2, 0x3
-
     .line 22
-    aput-object v1, v0, v2
+    move-result-object p1
 
     .line 23
+    return-object p1
+
     .line 24
-    sget-object v1, LT0a;->u0:LT0a;
+    nop
 
     .line 25
-    .line 26
-    const/4 v2, 0x4
-
-    .line 27
-    aput-object v1, v0, v2
-
-    .line 28
-    .line 29
-    sget-object v1, LT0a;->v0:LT0a;
-
-    .line 30
-    .line 31
-    const/4 v2, 0x5
-
-    .line 32
-    aput-object v1, v0, v2
-
-    .line 33
-    .line 34
-    invoke-static {v0}, Lv70;->c1([Ljava/lang/Object;)Ljava/util/Set;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v0
-
-    .line 38
-    sput-object v0, LU0a;->a:Ljava/util/Set;
-
-    .line 39
-    .line 40
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

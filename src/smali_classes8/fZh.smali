@@ -1,39 +1,37 @@
 .class public final LfZh;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Supplier;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LhZh;
-
-.field public final synthetic c:LdZh;
+.field public final synthetic b:LgZh;
 
 
 # direct methods
-.method public synthetic constructor <init>(LhZh;LdZh;I)V
+.method public synthetic constructor <init>(LgZh;I)V
     .locals 0
 
     .line 1
-    iput p3, p0, LfZh;->a:I
+    iput p2, p0, LfZh;->a:I
 
-    iput-object p1, p0, LfZh;->b:LhZh;
+    iput-object p1, p0, LfZh;->b:LgZh;
 
-    iput-object p2, p0, LfZh;->c:LdZh;
+    const/4 p1, 0x1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 3
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
     iget v0, p0, LfZh;->a:I
@@ -45,23 +43,23 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LfZh;->b:LhZh;
+    check-cast p1, LkWh;
 
     .line 7
     .line 8
-    iget-object v1, p0, LfZh;->c:LdZh;
+    iget-object v0, p0, LfZh;->b:LgZh;
 
     .line 9
     .line 10
-    invoke-static {v1, v0}, LhZh;->a(LdZh;LhZh;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoFinally;
+    iget-object v0, v0, LgZh;->c:LfYh;
 
     .line 11
     .line 12
-    .line 13
-    move-result-object v0
+    if-eqz v0, :cond_0
 
+    .line 13
     .line 14
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Single;->A()Lio/reactivex/rxjava3/core/Maybe;
+    invoke-virtual {v0}, LfYh;->B()Ljava/lang/ref/WeakReference;
 
     .line 15
     .line 16
@@ -69,114 +67,57 @@
     move-result-object v0
 
     .line 18
-    return-object v0
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     .line 19
-    :pswitch_0
-    iget-object v0, p0, LfZh;->b:LhZh;
-
     .line 20
     .line 21
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object v0
 
     .line 22
+    check-cast v0, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 23
     .line 24
-    new-instance v1, LgZh;
+    if-eqz v0, :cond_0
 
     .line 25
     .line 26
-    iget-object v2, p0, LfZh;->c:LdZh;
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
 
     .line 27
     .line 28
-    invoke-direct {v1, v0, v2}, LgZh;-><init>(LhZh;LdZh;)V
-
     .line 29
+    :cond_0
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 30
     .line 31
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;
+    return-object p1
 
     .line 32
-    .line 33
-    invoke-direct {v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
 
+    .line 33
     .line 34
+    iget-object p1, p0, LfZh;->b:LgZh;
+
     .line 35
     .line 36
-    return-object v0
+    iget-object p1, p1, LgZh;->Z:LJp0;
 
     .line 37
-    :pswitch_1
-    iget-object v0, p0, LfZh;->b:LhZh;
-
     .line 38
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 39
-    iget-object v1, p0, LfZh;->c:LdZh;
-
     .line 40
+    return-object p1
+
     .line 41
-    invoke-static {v1, v0}, LhZh;->a(LdZh;LhZh;)Lio/reactivex/rxjava3/internal/operators/single/SingleDoFinally;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
-
-    .line 45
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Single;->A()Lio/reactivex/rxjava3/core/Maybe;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v0
-
-    .line 49
-    return-object v0
-
-    .line 50
-    :pswitch_2
-    iget-object v0, p0, LfZh;->b:LhZh;
-
-    .line 51
-    .line 52
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 53
-    .line 54
-    .line 55
-    new-instance v1, LgZh;
-
-    .line 56
-    .line 57
-    iget-object v2, p0, LfZh;->c:LdZh;
-
-    .line 58
-    .line 59
-    invoke-direct {v1, v2, v0}, LgZh;-><init>(LdZh;LhZh;)V
-
-    .line 60
-    .line 61
-    .line 62
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;
-
-    .line 63
-    .line 64
-    invoke-direct {v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 65
-    .line 66
-    .line 67
-    return-object v0
-
-    .line 68
-    nop
-
-    .line 69
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

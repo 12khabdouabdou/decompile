@@ -49,7 +49,7 @@
 
 
 # virtual methods
-.method public final b()V
+.method public final c()V
     .locals 14
 
     .line 1
@@ -128,7 +128,7 @@
 
     .line 32
     :goto_1
-    invoke-virtual {p0, v11, v13, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->a(ZZLV6i;)Z
+    invoke-virtual {p0, v11, v13, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->a(ZZLmvi;)Z
 
     .line 33
     .line 34
@@ -190,11 +190,11 @@
 
     .line 58
     .line 59
-    iget-object v10, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Lc7i;
+    iget-object v10, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Ltvi;
 
     .line 60
     .line 61
-    invoke-interface {v10, v4, v5}, Lc7i;->l(J)V
+    invoke-interface {v10, v4, v5}, Ltvi;->l(J)V
 
     .line 62
     .line 63
@@ -219,11 +219,11 @@
 
     .line 72
     .line 73
-    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Lc7i;
+    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Ltvi;
 
     .line 74
     .line 75
-    invoke-interface {v3}, Lc7i;->cancel()V
+    invoke-interface {v3}, Ltvi;->cancel()V
 
     .line 76
     .line 77
@@ -233,7 +233,7 @@
     .line 79
     .line 80
     .line 81
-    invoke-interface {v0, v2}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, v2}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 82
     .line 83
@@ -268,7 +268,7 @@
     move-result v9
 
     .line 98
-    invoke-virtual {p0, v8, v9, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->a(ZZLV6i;)Z
+    invoke-virtual {p0, v8, v9, v0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->a(ZZLmvi;)Z
 
     .line 99
     .line 100
@@ -311,7 +311,7 @@
     return-void
 .end method
 
-.method public final c()V
+.method public final d()V
     .locals 5
 
     .line 1
@@ -345,7 +345,7 @@
     const/4 v4, 0x0
 
     .line 13
-    invoke-interface {v3, v4}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v3, v4}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 14
     .line 15
@@ -370,7 +370,7 @@
 
     .line 25
     .line 26
-    invoke-interface {v1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 27
     .line 28
@@ -383,7 +383,7 @@
 
     .line 31
     .line 32
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 33
     .line 34
@@ -497,7 +497,7 @@
 
     .line 31
     .line 32
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 33
     .line 34
@@ -550,16 +550,16 @@
 
     .line 56
     .line 57
-    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Lc7i;
+    iget-object v2, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Ltvi;
 
     .line 58
     .line 59
-    invoke-interface {v2}, Lc7i;->cancel()V
+    invoke-interface {v2}, Ltvi;->cancel()V
 
     .line 60
     .line 61
     .line 62
-    invoke-interface {v0, v1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v0, v1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 63
     .line 64
@@ -605,7 +605,7 @@
 
     .line 83
     .line 84
-    invoke-interface {v0}, LV6i;->onComplete()V
+    invoke-interface {v0}, Lmvi;->onComplete()V
 
     .line 85
     .line 86
@@ -646,15 +646,15 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Ltvi;
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Lc7i;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->h(Ltvi;Ltvi;)Z
 
     .line 4
     .line 5
@@ -666,7 +666,7 @@
 
     .line 8
     .line 9
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Lc7i;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Ltvi;
 
     .line 10
     .line 11
@@ -688,7 +688,7 @@
     const/4 v1, 0x7
 
     .line 19
-    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->s(I)I
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->r(I)I
 
     .line 20
     .line 21
@@ -719,7 +719,7 @@
 
     .line 33
     .line 34
-    invoke-interface {p1, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 35
     .line 36
@@ -747,7 +747,7 @@
 
     .line 46
     .line 47
-    invoke-interface {v0, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v0, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 48
     .line 49
@@ -759,7 +759,7 @@
     int-to-long v0, v0
 
     .line 53
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 54
     .line 55
@@ -789,7 +789,7 @@
 
     .line 67
     .line 68
-    invoke-interface {v0, p0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {v0, p0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 69
     .line 70
@@ -801,7 +801,7 @@
     int-to-long v0, v0
 
     .line 74
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 75
     .line 76
@@ -875,11 +875,11 @@
 
     .line 29
     .line 30
-    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Lc7i;
+    iget-object v3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->X:Ltvi;
 
     .line 31
     .line 32
-    invoke-interface {v3, v1, v2}, Lc7i;->l(J)V
+    invoke-interface {v3, v1, v2}, Ltvi;->l(J)V
 
     .line 33
     .line 34

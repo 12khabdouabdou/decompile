@@ -1,145 +1,83 @@
 .class public final LW98;
-.super LZ98;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LE3d;
 
 
 # instance fields
-.field public final a:Z
+.field public final synthetic a:Lio/reactivex/rxjava3/core/SingleEmitter;
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, LW98;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-boolean p1, p0, LW98;->a:Z
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public a(LV01;Ljava/util/List;)V
     .locals 1
 
     .line 1
-    if-ne p0, p1, :cond_0
+    new-instance v0, LDpd;
 
     .line 2
     .line 3
-    goto :goto_1
+    invoke-direct {v0, p1, p2}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 4
-    :cond_0
-    instance-of v0, p1, LW98;
-
     .line 5
     .line 6
-    if-nez v0, :cond_1
+    iget-object p1, p0, LW98;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
 
     .line 7
     .line 8
-    goto :goto_0
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
 
     .line 9
-    :cond_1
-    check-cast p1, LW98;
-
     .line 10
     .line 11
-    iget-boolean v0, p0, LW98;->a:Z
-
-    .line 12
-    .line 13
-    iget-boolean p1, p1, LW98;->a:Z
-
-    .line 14
-    .line 15
-    if-eq v0, p1, :cond_2
-
-    .line 16
-    .line 17
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 18
-    return p1
-
-    .line 19
-    :cond_2
-    :goto_1
-    const/4 p1, 0x1
-
-    .line 20
-    return p1
+    return-void
 .end method
 
-.method public final hashCode()I
+.method public onSuccess(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, LW98;->a:Z
+    check-cast p1, Ljava/lang/Void;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 4
     .line 5
-    const/16 v0, 0x4cf
+    new-instance v0, Lsnf;
 
     .line 6
     .line 7
-    return v0
+    invoke-direct {v0, p1}, Lsnf;-><init>(Ljava/lang/Object;)V
 
     .line 8
-    :cond_0
-    const/16 v0, 0x4d5
-
     .line 9
     .line 10
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Extend(loading="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-boolean v1, p0, LW98;->a:Z
-
-    .line 9
-    .line 10
-    const-string v2, ")"
+    iget-object p1, p0, LW98;->a:Lio/reactivex/rxjava3/core/SingleEmitter;
 
     .line 11
     .line 12
-    invoke-static {v2, v0, v1}, Llva;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
 
     .line 13
     .line 14
     .line 15
-    move-result-object v0
-
-    .line 16
-    return-object v0
+    return-void
 .end method

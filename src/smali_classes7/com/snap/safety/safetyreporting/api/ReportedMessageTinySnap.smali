@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/ReportedMessageTinySnap;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'mediaContent\':r:\'[0]\',\'textContent\':s"
     typeReferences = {

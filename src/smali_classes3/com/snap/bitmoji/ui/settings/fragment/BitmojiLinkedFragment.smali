@@ -3,13 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lg51;
+.implements Lx81;
 
 
 # instance fields
-.field public w0:LPm9;
+.field public w0:LIv9;
 
-.field public x0:Lf51;
+.field public x0:Lw81;
 
 .field public y0:Landroid/view/View;
 
@@ -29,11 +29,11 @@
 
 
 # virtual methods
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e04af
+    const p3, 0x7f0e04cf
 
     .line 2
     .line 3
@@ -52,11 +52,11 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
-    const p2, 0x7f0b0243
+    const p2, 0x7f0b028e
 
     .line 2
     .line 3
@@ -73,7 +73,7 @@
 
     .line 9
     .line 10
-    const p2, 0x7f0b0e4e
+    const p2, 0x7f0b0f6a
 
     .line 11
     .line 12
@@ -86,7 +86,7 @@
     move-result-object p2
 
     .line 17
-    iget-object v0, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiLinkedFragment;->w0:LPm9;
+    iget-object v0, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiLinkedFragment;->w0:LIv9;
 
     .line 18
     .line 19
@@ -94,7 +94,7 @@
 
     .line 20
     .line 21
-    invoke-interface {v0}, LPm9;->j()Lio/reactivex/rxjava3/core/Observable;
+    invoke-interface {v0}, LIv9;->j()Lio/reactivex/rxjava3/core/Observable;
 
     .line 22
     .line 23
@@ -102,14 +102,14 @@
     move-result-object v0
 
     .line 25
-    new-instance v1, LY41;
+    new-instance v1, Lp81;
 
     .line 26
     .line 27
     const/4 v2, 0x0
 
     .line 28
-    invoke-direct {v1, p1, p2, v2}, LY41;-><init>(Landroid/view/View;Landroid/view/View;I)V
+    invoke-direct {v1, p1, p2, v2}, Lp81;-><init>(Landroid/view/View;Landroid/view/View;I)V
 
     .line 29
     .line 30
@@ -122,15 +122,15 @@
     move-result-object p1
 
     .line 35
-    sget-object p2, LLwf;->Z:LLwf;
+    sget-object p2, LUPf;->Z:LUPf;
 
     .line 36
     .line 37
-    iget-object v0, p0, LOwf;->a:Ljava/lang/String;
+    iget-object v0, p0, LXPf;->a:Ljava/lang/String;
 
     .line 38
     .line 39
-    invoke-virtual {p0, p1, p2, v0}, LOwf;->p1(Lio/reactivex/rxjava3/disposables/Disposable;LLwf;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2, v0}, LXPf;->n1(Lio/reactivex/rxjava3/disposables/Disposable;LUPf;Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -143,7 +143,7 @@
 
     .line 44
     .line 45
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 46
     .line 47
@@ -166,7 +166,7 @@
 
     .line 4
     .line 5
-    const v1, 0x7f0b022a
+    const v1, 0x7f0b0274
 
     .line 6
     .line 7
@@ -191,7 +191,7 @@
 
     .line 16
     .line 17
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 18
     .line 19
@@ -214,7 +214,7 @@
 
     .line 4
     .line 5
-    const v1, 0x7f0b0244
+    const v1, 0x7f0b028f
 
     .line 6
     .line 7
@@ -239,7 +239,7 @@
 
     .line 16
     .line 17
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 18
     .line 19
@@ -250,7 +250,7 @@
     throw v0
 .end method
 
-.method public final W1()LZ8d;
+.method public final W1()Lsod;
     .locals 2
 
     .line 1
@@ -286,23 +286,23 @@
 
     .line 15
     :goto_0
-    check-cast v0, LZ8d;
+    check-cast v0, Lsod;
 
     .line 16
     .line 17
     return-object v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiLinkedFragment;->x0:Lf51;
+    iget-object p1, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiLinkedFragment;->x0:Lw81;
 
     .line 5
     .line 6
@@ -310,7 +310,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1, p0}, Lf51;->S2(Lg51;)V
+    invoke-virtual {p1, p0}, Lw81;->d3(Lx81;)V
 
     .line 9
     .line 10
@@ -323,7 +323,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -334,11 +334,11 @@
     throw p1
 .end method
 
-.method public final w1()V
+.method public final u1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiLinkedFragment;->x0:Lf51;
+    iget-object v0, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiLinkedFragment;->x0:Lw81;
 
     .line 2
     .line 3
@@ -346,7 +346,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lf51;->C1()V
+    invoke-virtual {v0}, Lw81;->D1()V
 
     .line 6
     .line 7
@@ -359,7 +359,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13

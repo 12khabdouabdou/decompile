@@ -7,22 +7,19 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRW8;
+    proxyClass = Ls49;
     schema = "\'processStoriesResponse\':f?|m|(a<t>): r:\'[0]\',\'processStoriesResponseByFeedType\':f?|m|(a<r:\'[1]\'>, d): r:\'[0]\'"
     typeReferences = {
         Lcom/snap/composer/foundation/Cancelable;,
-        LSW8;
+        Lt49;
     }
 .end annotation
 
 
 # virtual methods
 .method public abstract processStoriesResponse(Ljava/util/List;)Lcom/snap/composer/foundation/Cancelable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -31,21 +28,24 @@
             "Lcom/snap/composer/foundation/Cancelable;"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract processStoriesResponseByFeedType(Ljava/util/List;D)Lcom/snap/composer/foundation/Cancelable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
             "+",
-            "LSW8;",
+            "Lt49;",
             ">;D)",
             "Lcom/snap/composer/foundation/Cancelable;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

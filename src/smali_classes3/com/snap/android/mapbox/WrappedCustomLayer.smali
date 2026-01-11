@@ -19,7 +19,7 @@
 
 .field private final mBeforeLayerId:Ljava/lang/String;
 
-.field private final mImpl:LL0k;
+.field private final mImpl:LGqk;
 
 .field private final mLayerId:Ljava/lang/String;
 
@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;LL0k;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;LGqk;)V
     .locals 0
 
     .line 1
@@ -50,7 +50,7 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LL0k;
+    iput-object p3, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LGqk;
 
     .line 9
     .line 10
@@ -61,23 +61,23 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LL0k;
+    iget-object v0, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LGqk;
 
     .line 2
     .line 3
-    check-cast v0, LY80;
+    check-cast v0, Lub0;
 
     .line 4
     .line 5
-    iget-object v1, v0, LY80;->t:Ljava/lang/Object;
+    iget-object v1, v0, Lub0;->t:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v1, LQk4;
+    check-cast v1, Lrp4;
 
     .line 8
     .line 9
-    invoke-interface {v1}, LQk4;->d()V
+    invoke-interface {v1}, Lrp4;->b()V
 
     .line 10
     .line 11
@@ -86,14 +86,14 @@
 
     .line 13
     .line 14
-    iput-wide v1, v0, LY80;->b:J
+    iput-wide v1, v0, Lub0;->b:J
 
     .line 15
     .line 16
     const/4 v1, 0x0
 
     .line 17
-    iput-boolean v1, v0, LY80;->c:Z
+    iput-boolean v1, v0, Lub0;->c:Z
 
     .line 18
     .line 19
@@ -104,23 +104,23 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LL0k;
+    iget-object v0, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LGqk;
 
     .line 2
     .line 3
-    check-cast v0, LY80;
+    check-cast v0, Lub0;
 
     .line 4
     .line 5
-    iget-object v1, v0, LY80;->t:Ljava/lang/Object;
+    iget-object v1, v0, Lub0;->t:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v1, LQk4;
+    check-cast v1, Lrp4;
 
     .line 8
     .line 9
-    invoke-interface {v1}, LQk4;->d()V
+    invoke-interface {v1}, Lrp4;->b()V
 
     .line 10
     .line 11
@@ -129,14 +129,14 @@
 
     .line 13
     .line 14
-    iput-wide v1, v0, LY80;->b:J
+    iput-wide v1, v0, Lub0;->b:J
 
     .line 15
     .line 16
     const/4 v1, 0x0
 
     .line 17
-    iput-boolean v1, v0, LY80;->c:Z
+    iput-boolean v1, v0, Lub0;->c:Z
 
     .line 18
     .line 19
@@ -147,23 +147,23 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LL0k;
+    iget-object v0, p0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LGqk;
 
     .line 2
     .line 3
-    check-cast v0, LY80;
+    check-cast v0, Lub0;
 
     .line 4
     .line 5
-    iget-object v0, v0, LY80;->t:Ljava/lang/Object;
+    iget-object v0, v0, Lub0;->t:Ljava/lang/Object;
 
     .line 6
     .line 7
-    check-cast v0, LQk4;
+    check-cast v0, Lrp4;
 
     .line 8
     .line 9
-    invoke-interface {v0}, LQk4;->prepare()V
+    invoke-interface {v0}, Lrp4;->prepare()V
 
     .line 10
     .line 11
@@ -340,39 +340,39 @@
     .line 79
     .line 80
     :goto_1
-    iget-object v1, v0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LL0k;
+    iget-object v1, v0, Lcom/snap/android/mapbox/WrappedCustomLayer;->mImpl:LGqk;
 
     .line 81
     .line 82
-    check-cast v1, LY80;
+    check-cast v1, Lub0;
 
     .line 83
     .line 84
-    iget-object v2, v1, LY80;->X:Ljava/lang/Object;
+    iget-object v2, v1, Lub0;->X:Ljava/lang/Object;
 
     .line 85
     .line 86
-    check-cast v2, Lry1;
+    check-cast v2, LFB1;
 
     .line 87
     .line 88
-    iput-wide v9, v2, Lry1;->a:D
+    iput-wide v9, v2, LFB1;->a:D
 
     .line 89
     .line 90
-    iput-wide v11, v2, Lry1;->b:D
+    iput-wide v11, v2, LFB1;->b:D
 
     .line 91
     .line 92
-    iget-object v1, v1, LY80;->t:Ljava/lang/Object;
+    iget-object v1, v1, Lub0;->t:Ljava/lang/Object;
 
     .line 93
     .line 94
-    check-cast v1, LQk4;
+    check-cast v1, Lrp4;
 
     .line 95
     .line 96
-    invoke-interface {v1}, LQk4;->f()V
+    invoke-interface {v1}, Lrp4;->c()V
 
     .line 97
     .line 98
@@ -387,15 +387,6 @@
 .end method
 
 .method private static native nativeGetVisibleBounds(J[F)V
-.end method
-
-.method private static native nativeRenderHeatmapPoints(JZFFFZIIZFILjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;)I
-.end method
-
-.method private static native nativeScreenCoordinatesForHeatmapBatch(JILjava/nio/ByteBuffer;F)V
-.end method
-
-.method private static native nativeToScreenCoordinates(JI[F[FF)V
 .end method
 
 .method private static native nativeUpdateMatrices(J)V
@@ -506,80 +497,5 @@
     .line 5
     .line 6
     .line 7
-    return-void
-.end method
-
-.method public renderHeatmapPoints(JZFFFZIIZFILjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;)LK0k;
-    .locals 0
-
-    .line 1
-    invoke-direct/range {p0 .. p2}, Lcom/snap/android/mapbox/WrappedCustomLayer;->updateMatricesIfNeeded(J)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-static/range {p1 .. p15}, Lcom/snap/android/mapbox/WrappedCustomLayer;->nativeRenderHeatmapPoints(JZFFFZIIZFILjava/nio/ByteBuffer;ILjava/nio/ByteBuffer;)I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result p1
-
-    .line 8
-    if-nez p1, :cond_0
-
-    .line 9
-    .line 10
-    sget-object p1, LK0k;->a:LK0k;
-
-    .line 11
-    .line 12
-    return-object p1
-
-    .line 13
-    :cond_0
-    const/4 p2, 0x1
-
-    .line 14
-    if-ne p1, p2, :cond_1
-
-    .line 15
-    .line 16
-    sget-object p1, LK0k;->b:LK0k;
-
-    .line 17
-    .line 18
-    return-object p1
-
-    .line 19
-    :cond_1
-    sget-object p1, LK0k;->c:LK0k;
-
-    .line 20
-    .line 21
-    return-object p1
-.end method
-
-.method public toScreenCoordinates(JILjava/nio/ByteBuffer;F)V
-    .locals 0
-
-    .line 3
-    invoke-direct {p0, p1, p2}, Lcom/snap/android/mapbox/WrappedCustomLayer;->updateMatricesIfNeeded(J)V
-
-    .line 4
-    invoke-static {p1, p2, p3, p4, p5}, Lcom/snap/android/mapbox/WrappedCustomLayer;->nativeScreenCoordinatesForHeatmapBatch(JILjava/nio/ByteBuffer;F)V
-
-    return-void
-.end method
-
-.method public toScreenCoordinates(JI[F[FF)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Lcom/snap/android/mapbox/WrappedCustomLayer;->updateMatricesIfNeeded(J)V
-
-    .line 2
-    invoke-static/range {p1 .. p6}, Lcom/snap/android/mapbox/WrappedCustomLayer;->nativeToScreenCoordinates(JI[F[FF)V
-
     return-void
 .end method

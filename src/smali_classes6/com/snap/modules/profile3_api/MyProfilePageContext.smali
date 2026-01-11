@@ -1,18 +1,22 @@
 .class public final Lcom/snap/modules/profile3_api/MyProfilePageContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'myUserId\':s,\'pageSessionId\':s,\'sourcePageTypeName\':s?"
-    typeReferences = {}
+    schema = "\'myUserId\':s,\'pageSessionId\':s,\'sourcePageTypeName\':s?,\'onCreateOption\':r<e>:\'[0]\'"
+    typeReferences = {
+        Lcom/snap/profile/flatland/MyProfileViewOnCreateOptions;
+    }
 .end annotation
 
 
 # instance fields
 .field private _myUserId:Ljava/lang/String;
+
+.field private _onCreateOption:Lcom/snap/profile/flatland/MyProfileViewOnCreateOptions;
 
 .field private _pageSessionId:Ljava/lang/String;
 
@@ -20,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/snap/profile/flatland/MyProfileViewOnCreateOptions;)V
     .locals 0
 
     .line 1
@@ -41,5 +45,9 @@
 
     .line 9
     .line 10
+    iput-object p4, p0, Lcom/snap/modules/profile3_api/MyProfilePageContext;->_onCreateOption:Lcom/snap/profile/flatland/MyProfileViewOnCreateOptions;
+
+    .line 11
+    .line 12
     return-void
 .end method

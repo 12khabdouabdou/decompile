@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Ltpi;
+    proxyClass = LjOi;
     schema = "\'didSelectTemplate\':f|m|(r:\'[0]\'),\'onTapDismissDetailPage\':f|m|()"
     typeReferences = {
         Lcom/snap/templates/core/composer/Template;

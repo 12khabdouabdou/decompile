@@ -1,174 +1,129 @@
-.class public final Lqp4;
-.super Ljava/lang/Object;
+.class public final enum Lqp4;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
-# interfaces
-.implements LGs3;
 
+# static fields
+.field public static final enum a:Lqp4;
 
-# instance fields
-.field public final X:LUo4;
-
-.field public final Y:LUo4;
-
-.field public final Z:LUo4;
-
-.field public final a:LGZ4;
-
-.field public final b:LFY4;
-
-.field public final c:LwD;
-
-.field public final e0:Lnn9;
-
-.field public final f0:Lake;
-
-.field public final t:LUo4;
+.field public static final synthetic b:[Lqp4;
 
 
 # direct methods
-.method public constructor <init>(LFY4;LwD;LGZ4;LYf5;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
+    const/4 v2, 0x0
+
     .line 4
-    iput-object p3, p0, Lqp4;->a:LGZ4;
+    new-instance v3, Lqp4;
 
     .line 5
     .line 6
-    iput-object p1, p0, Lqp4;->b:LFY4;
+    const-string v4, "DEFAULT"
 
     .line 7
     .line 8
-    iput-object p2, p0, Lqp4;->c:LwD;
+    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 9
     .line 10
-    new-instance p1, LUo4;
-
     .line 11
-    .line 12
-    const/4 p2, 0x1
+    new-instance v4, Lqp4;
 
+    .line 12
     .line 13
-    const/4 p3, 0x4
+    const-string v5, "S0_AD_TRACK_CRITICAL"
 
     .line 14
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
-
     .line 15
+    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 16
     .line 17
-    iput-object p1, p0, Lqp4;->t:LUo4;
-
     .line 18
+    new-instance v5, Lqp4;
+
     .line 19
-    new-instance p1, LUo4;
-
     .line 20
-    .line 21
-    const/4 p2, 0x2
+    const-string v6, "S0_AD_TRACK_ALL"
 
+    .line 21
     .line 22
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
+    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 23
     .line 24
     .line 25
-    iput-object p1, p0, Lqp4;->X:LUo4;
+    sput-object v5, Lqp4;->a:Lqp4;
 
     .line 26
     .line 27
-    new-instance p1, LUo4;
+    const/4 v6, 0x3
 
     .line 28
-    .line 29
-    const/4 p2, 0x3
+    new-array v6, v6, [Lqp4;
 
+    .line 29
     .line 30
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
+    aput-object v3, v6, v2
 
     .line 31
     .line 32
+    aput-object v4, v6, v1
+
     .line 33
-    iput-object p1, p0, Lqp4;->Y:LUo4;
-
     .line 34
+    aput-object v5, v6, v0
+
     .line 35
-    new-instance p1, LUo4;
-
     .line 36
+    sput-object v6, Lqp4;->b:[Lqp4;
+
     .line 37
-    const/4 p2, 0x4
-
     .line 38
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
-
-    .line 39
-    .line 40
-    .line 41
-    iput-object p1, p0, Lqp4;->Z:LUo4;
-
-    .line 42
-    .line 43
-    new-instance p1, Lnn9;
-
-    .line 44
-    .line 45
-    invoke-direct {p1, p4}, Lnn9;-><init>(Ljava/lang/Object;)V
-
-    .line 46
-    .line 47
-    .line 48
-    iput-object p1, p0, Lqp4;->e0:Lnn9;
-
-    .line 49
-    .line 50
-    new-instance p1, LUo4;
-
-    .line 51
-    .line 52
-    const/4 p2, 0x0
-
-    .line 53
-    const/4 p3, 0x4
-
-    .line 54
-    invoke-direct {p1, p0, p2, p3}, LUo4;-><init>(Ljava/lang/Object;II)V
-
-    .line 55
-    .line 56
-    .line 57
-    invoke-static {p1}, LVr6;->b(Lake;)Lake;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object p1
-
-    .line 61
-    iput-object p1, p0, Lqp4;->f0:Lake;
-
-    .line 62
-    .line 63
     return-void
 .end method
 
-
-# virtual methods
-.method public final u()LUWj;
+.method public static valueOf(Ljava/lang/String;)Lqp4;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lqp4;->f0:Lake;
+    const-class v0, Lqp4;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lbke;->get()Ljava/lang/Object;
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lqp4;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lqp4;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lqp4;->b:[Lqp4;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -176,7 +131,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LUWj;
+    check-cast v0, [Lqp4;
 
     .line 8
     .line 9

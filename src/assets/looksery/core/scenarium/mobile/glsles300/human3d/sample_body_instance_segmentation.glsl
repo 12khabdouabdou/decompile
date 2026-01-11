@@ -19,9 +19,10 @@
 //attribute vec3 positionNext 15
 //attribute vec3 positionPrevious 16
 //attribute vec4 strandProperties 17
-//sampler sampler cropTextureSmpSC 0:7
-//texture texture2D cropTexture 0:0:0:7
-//texture texture2DArray cropTextureArrSC 0:14:0:7
+//output vec4 sc_FragData0 0
+//sampler sampler cropTextureSmpSC 0:8
+//texture texture2D cropTexture 0:0:0:8
+//texture texture2DArray cropTextureArrSC 0:16:0:8
 //spec_const bool INVERT_MASK 0 0
 //spec_const bool SC_USE_CLAMP_TO_BORDER_cropTexture 1 0
 //spec_const bool SC_USE_UV_MIN_MAX_cropTexture 2 0
@@ -286,10 +287,10 @@ in vec3 normal;
 in vec4 tangent;
 in vec2 texture0;
 in vec2 texture1;
-out vec3 varPos;
-out vec3 varNormal;
+out vec4 varPosAndMotion;
+out vec4 varNormalAndMotion;
 out vec4 varTangent;
-out vec4 varPackedTex;
+out vec4 varTex01;
 out vec4 varScreenPos;
 out vec2 varScreenTexturePos;
 out vec2 varShadowTex;
@@ -484,28 +485,32 @@ l9_24=l9_25;
 #endif
 #if ((sc_RenderingSpace==3)||(sc_RenderingSpace==4))
 {
-varPos=l9_24.xyz;
-varNormal=normalize(l9_14);
-vec3 l9_28=normalize(l9_13);
-varTangent=vec4(l9_28.x,l9_28.y,l9_28.z,varTangent.w);
-}
-#else
-{
-#if (sc_RenderingSpace==2)
-{
-varPos=l9_15.xyz;
-varNormal=normalize(l9_14);
+varPosAndMotion=vec4(l9_24.x,l9_24.y,l9_24.z,varPosAndMotion.w);
+vec3 l9_28=normalize(l9_14);
+varNormalAndMotion=vec4(l9_28.x,l9_28.y,l9_28.z,varNormalAndMotion.w);
 vec3 l9_29=normalize(l9_13);
 varTangent=vec4(l9_29.x,l9_29.y,l9_29.z,varTangent.w);
 }
 #else
 {
+#if (sc_RenderingSpace==2)
+{
+varPosAndMotion=vec4(l9_15.x,l9_15.y,l9_15.z,varPosAndMotion.w);
+vec3 l9_30=normalize(l9_14);
+varNormalAndMotion=vec4(l9_30.x,l9_30.y,l9_30.z,varNormalAndMotion.w);
+vec3 l9_31=normalize(l9_13);
+varTangent=vec4(l9_31.x,l9_31.y,l9_31.z,varTangent.w);
+}
+#else
+{
 #if (sc_RenderingSpace==1)
 {
-varPos=(sc_ModelMatrix*l9_15).xyz;
-varNormal=normalize(sc_NormalMatrix*l9_14);
-vec3 l9_30=normalize(sc_NormalMatrix*l9_13);
-varTangent=vec4(l9_30.x,l9_30.y,l9_30.z,varTangent.w);
+vec4 l9_32=sc_ModelMatrix*l9_15;
+varPosAndMotion=vec4(l9_32.x,l9_32.y,l9_32.z,varPosAndMotion.w);
+vec3 l9_33=normalize(sc_NormalMatrix*l9_14);
+varNormalAndMotion=vec4(l9_33.x,l9_33.y,l9_33.z,varNormalAndMotion.w);
+vec3 l9_34=normalize(sc_NormalMatrix*l9_13);
+varTangent=vec4(l9_34.x,l9_34.y,l9_34.z,varTangent.w);
 }
 #endif
 }
@@ -513,106 +518,106 @@ varTangent=vec4(l9_30.x,l9_30.y,l9_30.z,varTangent.w);
 }
 #endif
 varTangent.w=tangent.w;
-varPackedTex=vec4(l9_1.x,l9_1.y,varPackedTex.z,varPackedTex.w);
-varPackedTex=vec4(varPackedTex.x,varPackedTex.y,l9_0.x,l9_0.y);
+varTex01=vec4(l9_1.x,l9_1.y,varTex01.z,varTex01.w);
+varTex01=vec4(varTex01.x,varTex01.y,l9_0.x,l9_0.y);
 varScreenPos=l9_24;
-vec2 l9_31=((l9_24.xy/vec2(l9_24.w))*0.5)+vec2(0.5);
-vec2 l9_32;
+vec2 l9_35=((l9_24.xy/vec2(l9_24.w))*0.5)+vec2(0.5);
+vec2 l9_36;
 #if (sc_StereoRenderingMode==1)
 {
-vec3 l9_33=vec3(l9_31,0.0);
-l9_33.y=((2.0*l9_31.y)+float(sc_GetStereoViewIndex()))-1.0;
-l9_32=l9_33.xy;
+vec3 l9_37=vec3(l9_35,0.0);
+l9_37.y=((2.0*l9_35.y)+float(sc_GetStereoViewIndex()))-1.0;
+l9_36=l9_37.xy;
 }
 #else
 {
-l9_32=l9_31;
+l9_36=l9_35;
 }
 #endif
-varScreenTexturePos=l9_32;
+varScreenTexturePos=l9_36;
 #if (sc_ProjectiveShadowsReceiver)
-{
-vec4 l9_34;
-#if (sc_RenderingSpace==1)
-{
-l9_34=sc_ModelMatrix*l9_15;
-}
-#else
-{
-l9_34=l9_15;
-}
-#endif
-vec4 l9_35=sc_ProjectorMatrix*l9_34;
-varShadowTex=((l9_35.xy/vec2(l9_35.w))*0.5)+vec2(0.5);
-}
-#endif
-#if ((sc_OITDepthGatherPass||sc_OITCompositingPass)||sc_OITDepthBoundsPass)
-{
-vec4 l9_36;
-#if (sc_RenderingSpace==3)
-{
-l9_36=sc_ProjectionMatrixInverseArray[sc_GetStereoViewIndex()]*l9_15;
-}
-#else
-{
-vec4 l9_37;
-#if (sc_RenderingSpace==2)
-{
-l9_37=sc_ViewMatrixArray[sc_GetStereoViewIndex()]*l9_15;
-}
-#else
 {
 vec4 l9_38;
 #if (sc_RenderingSpace==1)
 {
-l9_38=sc_ModelViewMatrixArray[sc_GetStereoViewIndex()]*l9_15;
+l9_38=sc_ModelMatrix*l9_15;
 }
 #else
 {
 l9_38=l9_15;
 }
 #endif
-l9_37=l9_38;
+vec4 l9_39=sc_ProjectorMatrix*l9_38;
+varShadowTex=((l9_39.xy/vec2(l9_39.w))*0.5)+vec2(0.5);
 }
 #endif
-l9_36=l9_37;
-}
-#endif
-varViewSpaceDepth=-l9_36.z;
-}
-#endif
-vec4 l9_39;
-#if (sc_DepthBufferMode==1)
+#if ((sc_OITDepthGatherPass||sc_OITCompositingPass)||sc_OITDepthBoundsPass)
 {
 vec4 l9_40;
-if (sc_ProjectionMatrixArray[sc_GetStereoViewIndex()][2].w!=0.0)
+#if (sc_RenderingSpace==3)
 {
-vec4 l9_41=l9_24;
-l9_41.z=((log2(max(sc_Camera.clipPlanes.x,1.0+l9_24.w))*(2.0/log2(sc_Camera.clipPlanes.y+1.0)))-1.0)*l9_24.w;
-l9_40=l9_41;
-}
-else
-{
-l9_40=l9_24;
-}
-l9_39=l9_40;
+l9_40=sc_ProjectionMatrixInverseArray[sc_GetStereoViewIndex()]*l9_15;
 }
 #else
 {
-l9_39=l9_24;
+vec4 l9_41;
+#if (sc_RenderingSpace==2)
+{
+l9_41=sc_ViewMatrixArray[sc_GetStereoViewIndex()]*l9_15;
+}
+#else
+{
+vec4 l9_42;
+#if (sc_RenderingSpace==1)
+{
+l9_42=sc_ModelViewMatrixArray[sc_GetStereoViewIndex()]*l9_15;
+}
+#else
+{
+l9_42=l9_15;
 }
 #endif
-vec4 l9_42=l9_39*1.0;
+l9_41=l9_42;
+}
+#endif
+l9_40=l9_41;
+}
+#endif
+varViewSpaceDepth=-l9_40.z;
+}
+#endif
 vec4 l9_43;
-#if (sc_ShaderCacheConstant!=0)
+#if (sc_DepthBufferMode==1)
 {
-vec4 l9_44=l9_42;
-l9_44.x=l9_42.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+vec4 l9_44;
+if (sc_ProjectionMatrixArray[sc_GetStereoViewIndex()][2].w!=0.0)
+{
+vec4 l9_45=l9_24;
+l9_45.z=((log2(max(sc_Camera.clipPlanes.x,1.0+l9_24.w))*(2.0/log2(sc_Camera.clipPlanes.y+1.0)))-1.0)*l9_24.w;
+l9_44=l9_45;
+}
+else
+{
+l9_44=l9_24;
+}
 l9_43=l9_44;
 }
 #else
 {
-l9_43=l9_42;
+l9_43=l9_24;
+}
+#endif
+vec4 l9_46=l9_43*1.0;
+vec4 l9_47;
+#if (sc_ShaderCacheConstant!=0)
+{
+vec4 l9_48=l9_46;
+l9_48.x=l9_46.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_47=l9_48;
+}
+#else
+{
+l9_47=l9_46;
 }
 #endif
 #if (sc_StereoRenderingMode>0)
@@ -622,19 +627,19 @@ varStereoViewID=sc_StereoViewID;
 #endif
 #if (sc_StereoRenderingMode==1)
 {
-float l9_45=dot(l9_43,sc_StereoClipPlanes[sc_StereoViewID]);
+float l9_49=dot(l9_47,sc_StereoClipPlanes[sc_StereoViewID]);
 #if (sc_StereoRendering_IsClipDistanceEnabled==1)
 {
-sc_SetClipDistancePlatform(l9_45);
+sc_SetClipDistancePlatform(l9_49);
 }
 #else
 {
-varClipDistance=l9_45;
+varClipDistance=l9_49;
 }
 #endif
 }
 #endif
-gl_Position=l9_43;
+gl_Position=l9_47;
 }
 #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER
 #ifndef sc_FramebufferFetch
@@ -642,68 +647,6 @@ gl_Position=l9_43;
 #elif sc_FramebufferFetch==1
 #undef sc_FramebufferFetch
 #define sc_FramebufferFetch 1
-#endif
-#if defined(GL_ES)||__VERSION__>=420
-#if sc_FragDataCount>=1
-#define sc_DeclareFragData0(StorageQualifier) layout(location=0) StorageQualifier sc_FragmentPrecision vec4 sc_FragData0
-#endif
-#if sc_FragDataCount>=2
-#define sc_DeclareFragData1(StorageQualifier) layout(location=1) StorageQualifier sc_FragmentPrecision vec4 sc_FragData1
-#endif
-#if sc_FragDataCount>=3
-#define sc_DeclareFragData2(StorageQualifier) layout(location=2) StorageQualifier sc_FragmentPrecision vec4 sc_FragData2
-#endif
-#if sc_FragDataCount>=4
-#define sc_DeclareFragData3(StorageQualifier) layout(location=3) StorageQualifier sc_FragmentPrecision vec4 sc_FragData3
-#endif
-#ifndef sc_DeclareFragData0
-#define sc_DeclareFragData0(_) const vec4 sc_FragData0=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData1
-#define sc_DeclareFragData1(_) const vec4 sc_FragData1=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData2
-#define sc_DeclareFragData2(_) const vec4 sc_FragData2=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData3
-#define sc_DeclareFragData3(_) const vec4 sc_FragData3=vec4(0.0)
-#endif
-#if sc_FramebufferFetch
-#ifdef GL_EXT_shader_framebuffer_fetch
-sc_DeclareFragData0(inout);
-sc_DeclareFragData1(inout);
-sc_DeclareFragData2(inout);
-sc_DeclareFragData3(inout);
-mediump mat4 getFragData() { return mat4(sc_FragData0,sc_FragData1,sc_FragData2,sc_FragData3); }
-#define gl_LastFragData (getFragData())
-#elif defined(GL_ARM_shader_framebuffer_fetch)
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(gl_LastFragColorARM,vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-#ifdef FRAGMENT_SHADER
-#define sc_FragData0 gl_FragData[0]
-#define sc_FragData1 gl_FragData[1]
-#define sc_FragData2 gl_FragData[2]
-#define sc_FragData3 gl_FragData[3]
-#endif
-mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#if sc_FramebufferFetch
-#error Framebuffer fetch is requested but not supported by this device.
-#endif
 #endif
 #ifndef sc_StereoRenderingMode
 #define sc_StereoRenderingMode 0
@@ -760,15 +703,16 @@ uniform vec4 cropTextureBorderColor;
 uniform mediump sampler2DArray cropTextureArrSC;
 uniform mediump sampler2D cropTexture;
 flat in int varStereoViewID;
-in vec2 varShadowTex;
 in float varClipDistance;
-in vec4 varPackedTex;
-in vec3 varPos;
-in vec3 varNormal;
+layout(location=0) out vec4 sc_FragData0;
+in vec4 varTex01;
+in vec4 varPosAndMotion;
+in vec4 varNormalAndMotion;
 in vec4 varTangent;
 in vec4 varScreenPos;
 in vec2 varScreenTexturePos;
 in float varViewSpaceDepth;
+in vec2 varShadowTex;
 int sc_GetStereoViewIndex()
 {
 int l9_0;
@@ -856,11 +800,6 @@ l9_0=l9_1;
 }
 return l9_0;
 }
-void sc_writeFragData0Internal(vec4 col,float zero,int cacheConst)
-{
-col.x+=zero*float(cacheConst);
-sc_FragData0=col;
-}
 void main()
 {
 #if ((sc_StereoRenderingMode==1)&&(sc_StereoRendering_IsClipDistanceEnabled==0))
@@ -875,10 +814,10 @@ vec4 l9_0;
 #if (cropTextureLayout==2)
 {
 bool l9_1=(int(SC_USE_CLAMP_TO_BORDER_cropTexture)!=0)&&(!(int(SC_USE_UV_MIN_MAX_cropTexture)!=0));
-float l9_2=varPackedTex.x;
+float l9_2=varTex01.x;
 sc_SoftwareWrapEarly(l9_2,ivec2(SC_SOFTWARE_WRAP_MODE_U_cropTexture,SC_SOFTWARE_WRAP_MODE_V_cropTexture).x);
 float l9_3=l9_2;
-float l9_4=varPackedTex.y;
+float l9_4=varTex01.y;
 sc_SoftwareWrapEarly(l9_4,ivec2(SC_SOFTWARE_WRAP_MODE_U_cropTexture,SC_SOFTWARE_WRAP_MODE_V_cropTexture).y);
 float l9_5=l9_4;
 vec2 l9_6;
@@ -947,10 +886,10 @@ l9_0=l9_24;
 #else
 {
 bool l9_25=(int(SC_USE_CLAMP_TO_BORDER_cropTexture)!=0)&&(!(int(SC_USE_UV_MIN_MAX_cropTexture)!=0));
-float l9_26=varPackedTex.x;
+float l9_26=varTex01.x;
 sc_SoftwareWrapEarly(l9_26,ivec2(SC_SOFTWARE_WRAP_MODE_U_cropTexture,SC_SOFTWARE_WRAP_MODE_V_cropTexture).x);
 float l9_27=l9_26;
-float l9_28=varPackedTex.y;
+float l9_28=varTex01.y;
 sc_SoftwareWrapEarly(l9_28,ivec2(SC_SOFTWARE_WRAP_MODE_U_cropTexture,SC_SOFTWARE_WRAP_MODE_V_cropTexture).y);
 float l9_29=l9_28;
 vec2 l9_30;
@@ -1027,6 +966,19 @@ l9_49=1.0-l9_0.x;
 l9_49=l9_0.x;
 }
 #endif
-sc_writeFragData0Internal(vec4(l9_49,l9_49,l9_49,1.0),sc_UniformConstants.x,sc_ShaderCacheConstant);
+vec4 l9_50=vec4(l9_49,l9_49,l9_49,1.0);
+vec4 l9_51;
+#if (sc_ShaderCacheConstant!=0)
+{
+vec4 l9_52=l9_50;
+l9_52.x=l9_49+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_51=l9_52;
+}
+#else
+{
+l9_51=l9_50;
+}
+#endif
+sc_FragData0=l9_51;
 }
 #endif // #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bloops/inappreporting/api/MemoriesGenAIFeaturedStoryReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'genAIFeaturedStoryType\':r<e>:\'[0]\',\'snapId\':s?,\'collectionId\':s?,\'uploadReportMedia\':f(): g<c>:\'[1]\'<r:\'[2]\'>,\'promptId\':s?,\'requestId\':s?,\'generativeContentMetadata\':r?:\'[3]\'"
     typeReferences = {

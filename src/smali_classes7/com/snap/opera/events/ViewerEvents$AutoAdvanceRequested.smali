@@ -1,29 +1,29 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
 .field public final c:Z
 
-.field public final d:Lpx0;
+.field public final d:LeA0;
 
-.field public final e:Ltx0;
+.field public final e:LiA0;
 
 
 # direct methods
-.method public constructor <init>(LdXc;ZLpx0;Ltx0;)V
+.method public constructor <init>(LYbd;ZLeA0;LiA0;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LdXc;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LYbd;
 
     .line 5
     .line 6
@@ -31,11 +31,11 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:Lpx0;
+    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:LeA0;
 
     .line 9
     .line 10
-    iput-object p4, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:Ltx0;
+    iput-object p4, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:LiA0;
 
     .line 11
     .line 12
@@ -44,11 +44,11 @@
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LYbd;
 
     .line 2
     .line 3
@@ -83,15 +83,15 @@
 
     .line 10
     .line 11
-    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LdXc;
+    iget-object v0, p1, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LYbd;
 
     .line 12
     .line 13
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LYbd;
 
     .line 14
     .line 15
-    invoke-static {v1, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 16
     .line 17
@@ -123,11 +123,11 @@
 
     .line 29
     :cond_3
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:Lpx0;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:LeA0;
 
     .line 30
     .line 31
-    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:Lpx0;
+    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:LeA0;
 
     .line 32
     .line 33
@@ -147,15 +147,15 @@
 
     .line 40
     :cond_4
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:Ltx0;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:LiA0;
 
     .line 41
     .line 42
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:Ltx0;
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:LiA0;
 
     .line 43
     .line 44
-    invoke-static {v0, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 45
     .line 46
@@ -186,11 +186,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LYbd;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     .line 4
     .line 5
@@ -230,7 +230,7 @@
 
     .line 20
     .line 21
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:Lpx0;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:LeA0;
 
     .line 22
     .line 23
@@ -249,7 +249,7 @@
 
     .line 29
     .line 30
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:Ltx0;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:LiA0;
 
     .line 31
     .line 32
@@ -276,7 +276,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -292,7 +292,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:Lpx0;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->d:LeA0;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -300,7 +300,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:Ltx0;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$AutoAdvanceRequested;->e:LiA0;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

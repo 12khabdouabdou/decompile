@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LFZb;
+    proxyClass = Lkec;
     schema = "\'pageConfig\':r:\'[0]\',\'presentationDirection\':r?<e>:\'[1]\',\'modalPresentationStyle\':r?<e>:\'[2]\',\'disableSwipeGestureDismissal\':b@?,\'backgroundTransitionColor\':d@?"
     typeReferences = {
         Lcom/snap/modules/deck/ComposerDeckPageConfig;,

@@ -3,94 +3,113 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
+.implements Lly2;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Lio/reactivex/rxjava3/subjects/Subject;
 
-.field public final synthetic b:Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;
+.field public final b:LYt5;
+
+.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 3
 
     .line 1
-    iput p2, p0, LKv5;->a:I
-
-    iput-object p1, p0, LKv5;->b:Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    invoke-static {}, LzHa;->t()Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    iput-object v0, p0, LKv5;->a:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 9
+    .line 10
+    new-instance v1, LYt5;
+
+    .line 11
+    .line 12
+    const/16 v2, 0x8
+
+    .line 13
+    .line 14
+    invoke-direct {v1, v2, v0}, LYt5;-><init>(ILio/reactivex/rxjava3/subjects/Subject;)V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object v1, p0, LKv5;->b:LYt5;
+
+    .line 18
+    .line 19
+    new-instance v0, LWi4;
+
+    .line 20
+    .line 21
+    const/16 v1, 0x18
+
+    .line 22
+    .line 23
+    invoke-direct {v0, v1, p0}, LWi4;-><init>(ILjava/lang/Object;)V
+
+    .line 24
+    .line 25
+    .line 26
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;
+
+    .line 27
+    .line 28
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Observable;->H0()Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v0
+
+    .line 35
+    iput-object v0, p0, LKv5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
+
+    .line 36
+    .line 37
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
+.method public final a()Lio/reactivex/rxjava3/core/Observable;
     .locals 1
 
     .line 1
-    iget v0, p0, LKv5;->a:I
+    iget-object v0, p0, LKv5;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableRefCount;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    return-object v0
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    check-cast p1, Ljava/util/List;
+.method public final j()Lio/reactivex/rxjava3/functions/Consumer;
+    .locals 1
 
-    .line 7
-    .line 8
-    iget-object v0, p0, LKv5;->b:Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;
+    .line 1
+    iget-object v0, p0, LKv5;->b:LYt5;
 
-    .line 9
-    .line 10
-    iput-object p1, v0, Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;->l0:Ljava/util/List;
-
-    .line 11
-    .line 12
-    invoke-virtual {v0}, Landroid/view/View;->postInvalidateOnAnimation()V
-
-    .line 13
-    .line 14
-    .line 15
-    return-void
-
-    .line 16
-    :pswitch_0
-    check-cast p1, Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 17
-    .line 18
-    sget-object p1, LsL6;->a:LsL6;
-
-    .line 19
-    .line 20
-    iget-object v0, p0, LKv5;->b:Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;
-
-    .line 21
-    .line 22
-    iput-object p1, v0, Lcom/snap/lenses/app/camera/explorer/preview/DefaultExplorerPreviewView;->l0:Ljava/util/List;
-
-    .line 23
-    .line 24
-    invoke-virtual {v0}, Landroid/view/View;->postInvalidateOnAnimation()V
-
-    .line 25
-    .line 26
-    .line 27
-    return-void
-
-    .line 28
-    nop
-
-    .line 29
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    .line 3
+    return-object v0
 .end method

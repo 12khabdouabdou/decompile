@@ -1,66 +1,131 @@
 .class public final Lf4;
-.super Lo17;
+.super Ll6g;
 .source "SourceFile"
 
 
+# instance fields
+.field public final t:Ljava/lang/Object;
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, LINa;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    iput-object p1, p0, Lf4;->t:Ljava/lang/Object;
 
     .line 5
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
     .line 6
-    .line 7
-    const/4 v0, -0x1
-
-    .line 8
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public final Q()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final V()Ljava/lang/Object;
     .locals 1
 
     .line 1
-    :cond_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    iget-object v0, p0, Lf4;->t:Ljava/lang/Object;
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    return-object v0
+.end method
 
+.method public final W(Lza3;)V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public final X()Lsv7;
+    .locals 1
+
+    .line 1
+    sget-object v0, LNC8;->a:Lsv7;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SendBuffered@"
+
+    .line 4
     .line 5
-    if-eqz v0, :cond_1
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
     .line 8
+    invoke-static {p0}, LKi5;->B(Ljava/lang/Object;)Ljava/lang/String;
+
     .line 9
     .line 10
-    move-result v0
-
     .line 11
-    if-nez v0, :cond_0
+    move-result-object v1
 
     .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 13
-    :cond_1
-    return-object p0
+    .line 14
+    .line 15
+    const/16 v1, 0x28
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    iget-object v1, p0, Lf4;->t:Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    const/16 v1, 0x29
+
+    .line 26
+    .line 27
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    return-object v0
 .end method

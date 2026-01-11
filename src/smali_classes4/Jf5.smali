@@ -1,32 +1,11 @@
-.class public abstract LJf5;
+.class public interface abstract LJf5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ljava/util/List;
+# virtual methods
+.method public abstract a(LIf5;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableElementAtSingle;
+.end method
 
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    const-string v0, "snapchat://dmd-submission"
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    sput-object v0, LJf5;->a:Ljava/util/List;
-
-    .line 8
-    .line 9
-    return-void
+.method public abstract b(LIf5;)Lio/reactivex/rxjava3/core/Observable;
 .end method

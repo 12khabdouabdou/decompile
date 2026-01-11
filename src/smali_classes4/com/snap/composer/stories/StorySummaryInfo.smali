@@ -1,12 +1,12 @@
 .class public final Lcom/snap/composer/stories/StorySummaryInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'thumbnailInfo\':r:\'[0]\',\'hasUnviewedSnaps\':b"
+    schema = "\'thumbnailInfo\':r:\'[0]\',\'hasUnviewedSnaps\':b,\'numActiveStories\':d@?"
     typeReferences = {
         Lcom/snap/composer/stories/EncryptedThumbnail;
     }
@@ -15,6 +15,8 @@
 
 # instance fields
 .field private _hasUnviewedSnaps:Z
+
+.field private _numActiveStories:Ljava/lang/Double;
 
 .field private _thumbnailInfo:Lcom/snap/composer/stories/EncryptedThumbnail;
 
@@ -27,15 +29,33 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    .line 3
-    .line 4
     iput-object p1, p0, Lcom/snap/composer/stories/StorySummaryInfo;->_thumbnailInfo:Lcom/snap/composer/stories/EncryptedThumbnail;
 
-    .line 5
-    .line 6
+    .line 3
     iput-boolean p2, p0, Lcom/snap/composer/stories/StorySummaryInfo;->_hasUnviewedSnaps:Z
 
+    const/4 p1, 0x0
+
+    .line 4
+    iput-object p1, p0, Lcom/snap/composer/stories/StorySummaryInfo;->_numActiveStories:Ljava/lang/Double;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/snap/composer/stories/EncryptedThumbnail;ZLjava/lang/Double;)V
+    .locals 0
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    iput-object p1, p0, Lcom/snap/composer/stories/StorySummaryInfo;->_thumbnailInfo:Lcom/snap/composer/stories/EncryptedThumbnail;
+
     .line 7
+    iput-boolean p2, p0, Lcom/snap/composer/stories/StorySummaryInfo;->_hasUnviewedSnaps:Z
+
     .line 8
+    iput-object p3, p0, Lcom/snap/composer/stories/StorySummaryInfo;->_numActiveStories:Ljava/lang/Double;
+
     return-void
 .end method

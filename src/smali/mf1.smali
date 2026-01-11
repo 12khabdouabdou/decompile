@@ -1,10 +1,10 @@
-.class public abstract Lmf1;
+.class public final Lmf1;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic a:I
+.field public static final a:Lmf1;
 
 
 # direct methods
@@ -12,27 +12,18 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lrb1;->Z:Lrb1;
+    new-instance v0, Lmf1;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    const-string v0, "BlizzardV2Config"
+    sput-object v0, Lmf1;->a:Lmf1;
 
     .line 7
     .line 8
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 9
-    .line 10
-    .line 11
-    sget-object v0, Lrn0;->a:Lrn0;
-
-    .line 12
-    .line 13
     return-void
 .end method

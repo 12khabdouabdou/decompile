@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LIsf;
+.implements LQLf;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/perception/scanfromlens/indicator/DefaultScanFromLensIndicatorView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/perception/scanfromlens/indicator/DefaultScanFromLensIndicatorView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/perception/scanfromlens/indicator/DefaultScanFromLensIndicatorView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/perception/scanfromlens/indicator/DefaultScanFromLensIndicatorView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -87,7 +87,7 @@
     .locals 1
 
     .line 1
-    check-cast p1, LHsf;
+    check-cast p1, LPLf;
 
     .line 2
     .line 3
@@ -118,7 +118,7 @@
 
     .line 15
     :cond_0
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
     .line 16
     .line 17
@@ -152,7 +152,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b13a3
+    const v0, 0x7f0b14da
 
     .line 5
     .line 6
@@ -177,7 +177,7 @@
     move-result-object v1
 
     .line 17
-    const v2, 0x7f132e59
+    const v2, 0x7f1330e6
 
     .line 18
     .line 19
@@ -195,7 +195,7 @@
     .line 25
     .line 26
     .line 27
-    const v0, 0x7f0b13a2
+    const v0, 0x7f0b14d9
 
     .line 28
     .line 29
@@ -220,7 +220,7 @@
     move-result-object v1
 
     .line 40
-    const v2, 0x7f132e58
+    const v2, 0x7f1330e5
 
     .line 41
     .line 42

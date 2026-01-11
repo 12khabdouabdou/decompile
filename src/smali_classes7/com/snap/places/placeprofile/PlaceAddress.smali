@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/placeprofile/PlaceAddress;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'address1\':s,\'address2\':s,\'locality\':s,\'region\':s,\'postalCode\':s,\'country\':s"
     typeReferences = {}

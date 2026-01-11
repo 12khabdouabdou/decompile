@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map/layers/MapLayerApi;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'lifecycleEvents\':r:\'[0]\'"
     typeReferences = {

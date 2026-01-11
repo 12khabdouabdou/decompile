@@ -1,1129 +1,558 @@
-.class public abstract LKxk;
-.super Ljava/lang/Object;
+.class public final LKxk;
+.super Lcom/google/android/gms/common/internal/a;
 .source "SourceFile"
 
 
+# instance fields
+.field public final v0:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+
+
 # direct methods
-.method public static final a(Lql5;LSUc;LRUc;)V
-    .locals 3
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;LS20;Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;LMwk;LMwk;)V
+    .locals 15
 
     .line 1
-    iget-object v0, p0, Lql5;->X:Ljava/lang/Object;
+    move-object/from16 v0, p4
 
     .line 2
     .line 3
-    check-cast v0, Ljava/util/LinkedHashMap;
+    const/16 v4, 0x5b
 
     .line 4
     .line 5
-    invoke-interface {v0, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object v1, p0
 
     .line 6
+    move-object/from16 v2, p1
+
     .line 7
     .line 8
-    iget-object p0, p0, Lql5;->c:Ljava/lang/Object;
+    move-object/from16 v3, p2
 
     .line 9
     .line 10
-    check-cast p0, Ljava/util/ArrayList;
+    move-object/from16 v5, p3
 
     .line 11
     .line 12
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+    move-object/from16 v6, p5
 
     .line 13
     .line 14
-    .line 15
-    move-result v0
+    move-object/from16 v7, p6
 
+    .line 15
     .line 16
-    const/4 v1, 0x0
+    invoke-direct/range {v1 .. v7}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILS20;LZD8;LaE8;)V
 
     .line 17
-    :goto_0
-    if-ge v1, v0, :cond_1
-
     .line 18
     .line 19
-    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v2
-
-    .line 23
-    invoke-static {v2, p2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v2
-
-    .line 27
-    if-eqz v2, :cond_0
-
-    .line 28
-    .line 29
-    invoke-virtual {p0, v1, p1}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
-
-    .line 30
-    .line 31
-    .line 32
-    :cond_0
-    add-int/lit8 v1, v1, 0x1
-
-    .line 33
-    .line 34
-    goto :goto_0
-
-    .line 35
-    :cond_1
-    return-void
-.end method
-
-.method public static b(LxY4;LFY4;LSY4;LBlj;LqY4;LLL4;LkZb;LGZ4;LTI4;LtF4;LE65;Lp36;Lwz3;)LZJ4;
-    .locals 0
-
-    .line 1
-    new-instance p0, LZJ4;
-
-    .line 2
-    .line 3
-    move-object p2, p3
-
-    .line 4
-    move-object p3, p7
-
-    .line 5
-    move-object p4, p8
-
-    .line 6
-    move-object p5, p9
-
-    .line 7
-    move-object p6, p10
-
-    .line 8
-    move-object p7, p11
-
-    .line 9
-    move-object p8, p12
-
-    .line 10
-    invoke-direct/range {p0 .. p8}, LZJ4;-><init>(LFY4;LBlj;LGZ4;LTI4;LtF4;LE65;Lp36;Lwz3;)V
-
-    .line 11
-    .line 12
-    .line 13
-    return-object p0
-.end method
-
-.method public static c(LLs3;LfY4;)LZJ4;
-    .locals 3
-
-    .line 1
-    new-instance v0, Lqq3;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x6
-
-    .line 4
-    invoke-direct {v0, p1, v1}, Lqq3;-><init>(LfY4;I)V
-
-    .line 5
-    .line 6
-    .line 7
-    const-class p1, LZJ4;
-
-    .line 8
-    .line 9
-    const/4 v1, 0x0
-
-    .line 10
-    const-string v2, "CountdownsDetailsPageComponentInterface"
-
-    .line 11
-    .line 12
-    invoke-virtual {p0, v2, p1, v1, v0}, LLs3;->a(Ljava/lang/Object;Ljava/lang/Class;ZLkotlin/jvm/functions/Function0;)LGs3;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object p0
-
-    .line 16
-    check-cast p0, LZJ4;
-
-    .line 17
-    .line 18
-    return-object p0
-.end method
-
-.method public static synthetic d(LvTb;Ljava/lang/String;Ljava/lang/Thread;Ljava/lang/Throwable;Z)Lio/reactivex/rxjava3/core/Completable;
-    .locals 0
-
-    .line 1
-    const/4 p2, 0x0
-
-    .line 2
-    invoke-virtual {p0, p1, p3, p4, p2}, LvTb;->b(Ljava/lang/String;Ljava/lang/Throwable;ZLjava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-
-    .line 3
-    .line 4
-    .line 5
-    move-result-object p0
-
-    .line 6
-    return-object p0
-.end method
-
-.method public static e()Lh1i;
-    .locals 1
-
-    .line 1
-    new-instance v0, Lh1i;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Lh1i;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-object v0
-.end method
-
-.method public static final f(Lql5;)V
-    .locals 2
-
-    .line 1
-    sget-object v0, LyL5;->C:LzG9;
-
-    .line 2
-    .line 3
-    sget-object v1, Lvmi;->a:LzG9;
-
-    .line 4
-    .line 5
     if-eqz v0, :cond_0
 
-    .line 6
-    .line 7
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 8
-    .line 9
-    .line 10
-    :cond_0
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 11
-    .line 12
-    .line 13
-    sget-object v0, LyL5;->a:LzG9;
-
-    .line 14
-    .line 15
-    sget-object v1, Ldv1;->a:LzG9;
-
-    .line 16
-    .line 17
-    if-eqz v0, :cond_1
-
-    .line 18
-    .line 19
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
     .line 20
     .line 21
-    .line 22
-    :cond_1
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    new-instance v1, LCF8;
 
+    .line 22
     .line 23
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
     .line 24
     .line 25
-    sget-object v0, LyL5;->b:LzG9;
-
     .line 26
+    new-instance v2, Ljava/util/HashSet;
+
     .line 27
-    sget-object v1, LDDj;->a:LzG9;
-
     .line 28
-    .line 29
-    if-eqz v0, :cond_2
+    invoke-direct {v2}, Ljava/util/HashSet;-><init>()V
 
+    .line 29
     .line 30
     .line 31
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    iput-object v2, v1, LCF8;->a:Ljava/util/HashSet;
 
     .line 32
     .line 33
-    .line 34
-    :cond_2
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    new-instance v2, Ljava/util/HashMap;
 
+    .line 34
     .line 35
+    invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
+
     .line 36
     .line 37
-    sget-object v0, LyL5;->c:LzG9;
-
     .line 38
+    iput-object v2, v1, LCF8;->h:Ljava/util/HashMap;
+
     .line 39
-    sget-object v1, LYvc;->a:LzG9;
-
     .line 40
+    new-instance v2, Ljava/util/HashSet;
+
     .line 41
-    if-eqz v0, :cond_3
-
     .line 42
-    .line 43
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    iget-object v3, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->b:Ljava/util/ArrayList;
 
+    .line 43
     .line 44
+    invoke-direct {v2, v3}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
+
     .line 45
     .line 46
-    :cond_3
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
     .line 47
+    iput-object v2, v1, LCF8;->a:Ljava/util/HashSet;
+
     .line 48
     .line 49
-    sget-object v0, LyL5;->d:LzG9;
+    iget-boolean v2, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->X:Z
 
     .line 50
     .line 51
-    sget-object v1, LFpf;->a:LzG9;
+    iput-boolean v2, v1, LCF8;->b:Z
 
     .line 52
     .line 53
-    if-eqz v0, :cond_4
+    iget-boolean v2, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->Y:Z
 
     .line 54
     .line 55
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    iput-boolean v2, v1, LCF8;->c:Z
 
     .line 56
     .line 57
-    .line 58
-    :cond_4
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    iget-boolean v2, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->t:Z
 
+    .line 58
     .line 59
+    iput-boolean v2, v1, LCF8;->d:Z
+
     .line 60
     .line 61
-    sget-object v0, LyL5;->e:LzG9;
+    iget-object v2, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->Z:Ljava/lang/String;
 
     .line 62
     .line 63
-    sget-object v1, LDv7;->a:LzG9;
+    iput-object v2, v1, LCF8;->e:Ljava/lang/String;
 
     .line 64
     .line 65
-    if-eqz v0, :cond_5
+    iget-object v2, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->c:Landroid/accounts/Account;
 
     .line 66
     .line 67
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    iput-object v2, v1, LCF8;->f:Landroid/accounts/Account;
 
     .line 68
     .line 69
-    .line 70
-    :cond_5
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    iget-object v2, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->e0:Ljava/lang/String;
 
+    .line 70
     .line 71
+    iput-object v2, v1, LCF8;->g:Ljava/lang/String;
+
     .line 72
     .line 73
-    sget-object v0, LyL5;->h:LzG9;
+    iget-object v2, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->f0:Ljava/util/ArrayList;
 
     .line 74
     .line 75
-    sget-object v1, LFRe;->a:LzG9;
+    invoke-static {v2}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->b(Ljava/util/ArrayList;)Ljava/util/HashMap;
 
     .line 76
     .line 77
-    if-eqz v0, :cond_6
-
     .line 78
+    move-result-object v2
+
     .line 79
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    iput-object v2, v1, LCF8;->h:Ljava/util/HashMap;
 
     .line 80
     .line 81
-    .line 82
-    :cond_6
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    iget-object v0, v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->g0:Ljava/lang/String;
 
+    .line 82
     .line 83
+    iput-object v0, v1, LCF8;->i:Ljava/lang/String;
+
     .line 84
     .line 85
-    sget-object v0, LyL5;->i:LzG9;
+    goto :goto_0
 
     .line 86
+    :cond_0
+    new-instance v1, LCF8;
+
     .line 87
-    sget-object v1, LwRe;->a:LzG9;
-
     .line 88
-    .line 89
-    if-eqz v0, :cond_7
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
+    .line 89
     .line 90
     .line 91
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    new-instance v0, Ljava/util/HashSet;
 
     .line 92
     .line 93
-    .line 94
-    :cond_7
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
+    .line 94
     .line 95
     .line 96
+    iput-object v0, v1, LCF8;->a:Ljava/util/HashSet;
+
     .line 97
-    sget-object v0, LyL5;->k:LzG9;
-
     .line 98
+    new-instance v0, Ljava/util/HashMap;
+
     .line 99
-    sget-object v1, LM39;->a:LzG9;
-
     .line 100
-    .line 101
-    if-eqz v0, :cond_8
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
+    .line 101
     .line 102
     .line 103
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    iput-object v0, v1, LCF8;->h:Ljava/util/HashMap;
 
     .line 104
     .line 105
-    .line 106
-    :cond_8
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    :goto_0
+    invoke-static {}, LDxk;->a()Ljava/lang/String;
 
+    .line 106
     .line 107
     .line 108
+    move-result-object v0
+
     .line 109
-    sget-object v0, LyL5;->l:LzG9;
+    iput-object v0, v1, LCF8;->i:Ljava/lang/String;
 
     .line 110
     .line 111
-    sget-object v1, LFt8;->a:LzG9;
+    move-object/from16 v5, p3
 
     .line 112
     .line 113
-    if-eqz v0, :cond_9
+    iget-object v0, v5, LS20;->Y:Ljava/lang/Object;
 
     .line 114
     .line 115
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    check-cast v0, Ljava/util/Set;
 
     .line 116
     .line 117
-    .line 118
-    :cond_9
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
+    .line 118
     .line 119
     .line 120
+    move-result v2
+
     .line 121
-    sget-object v0, LyL5;->m:LzG9;
+    if-nez v2, :cond_1
 
     .line 122
     .line 123
-    sget-object v1, Lipf;->a:LzG9;
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     .line 124
     .line 125
-    if-eqz v0, :cond_a
-
     .line 126
+    move-result-object v0
+
     .line 127
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    :goto_1
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     .line 128
     .line 129
     .line 130
-    :cond_a
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    move-result v2
 
     .line 131
+    if-eqz v2, :cond_1
+
     .line 132
     .line 133
-    sget-object v0, LyL5;->s:LzG9;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 134
     .line 135
-    sget-object v1, LOR3;->a:LzG9;
-
     .line 136
+    move-result-object v2
+
     .line 137
-    if-eqz v0, :cond_b
+    check-cast v2, Lcom/google/android/gms/common/api/Scope;
 
     .line 138
     .line 139
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    const/4 v3, 0x0
 
     .line 140
+    new-array v3, v3, [Lcom/google/android/gms/common/api/Scope;
+
     .line 141
     .line 142
-    :cond_b
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    iget-object v4, v1, LCF8;->a:Ljava/util/HashSet;
 
     .line 143
     .line 144
-    .line 145
-    sget-object v0, LyL5;->n:LzG9;
+    invoke-virtual {v4, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
+    .line 145
     .line 146
     .line 147
-    sget-object v1, LJpf;->a:LzG9;
+    invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     .line 148
     .line 149
-    if-eqz v0, :cond_c
-
     .line 150
+    move-result-object v2
+
     .line 151
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    invoke-interface {v4, v2}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
     .line 152
     .line 153
     .line 154
-    :cond_c
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    goto :goto_1
 
     .line 155
+    :cond_1
+    sget-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->k0:Lcom/google/android/gms/common/api/Scope;
+
     .line 156
     .line 157
-    sget-object v0, LyL5;->o:LzG9;
+    iget-object v2, v1, LCF8;->a:Ljava/util/HashSet;
 
     .line 158
     .line 159
-    sget-object v1, LM39;->b:LzG9;
+    invoke-virtual {v2, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
     .line 160
     .line 161
-    if-eqz v0, :cond_d
-
     .line 162
+    move-result v0
+
     .line 163
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    if-eqz v0, :cond_2
 
     .line 164
     .line 165
-    .line 166
-    :cond_d
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    sget-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->j0:Lcom/google/android/gms/common/api/Scope;
 
+    .line 166
     .line 167
+    invoke-virtual {v2, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
+
     .line 168
     .line 169
-    sget-object v0, LyL5;->q:LzG9;
-
     .line 170
+    move-result v3
+
     .line 171
-    sget-object v1, LXvh;->a:LzG9;
+    if-eqz v3, :cond_2
 
     .line 172
     .line 173
-    if-eqz v0, :cond_e
+    invoke-virtual {v2, v0}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
     .line 174
     .line 175
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
     .line 176
+    :cond_2
+    iget-boolean v0, v1, LCF8;->d:Z
+
     .line 177
     .line 178
-    :cond_e
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    if-eqz v0, :cond_4
 
     .line 179
     .line 180
+    iget-object v0, v1, LCF8;->f:Landroid/accounts/Account;
+
     .line 181
-    sget-object v0, LyL5;->r:LzG9;
-
     .line 182
+    if-eqz v0, :cond_3
+
     .line 183
-    sget-object v1, LC9f;->a:LzG9;
-
     .line 184
-    .line 185
-    if-eqz v0, :cond_f
+    invoke-virtual {v2}, Ljava/util/HashSet;->isEmpty()Z
 
+    .line 185
     .line 186
     .line 187
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    move-result v0
 
     .line 188
+    if-nez v0, :cond_4
+
     .line 189
     .line 190
-    :cond_f
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    :cond_3
+    iget-object v0, v1, LCF8;->a:Ljava/util/HashSet;
 
     .line 191
     .line 192
+    sget-object v3, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->i0:Lcom/google/android/gms/common/api/Scope;
+
     .line 193
-    sget-object v0, LyL5;->p:LzG9;
-
     .line 194
-    .line 195
-    sget-object v1, LTxf;->a:LzG9;
+    invoke-virtual {v0, v3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
+    .line 195
     .line 196
     .line 197
-    if-eqz v0, :cond_10
+    :cond_4
+    new-instance v4, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     .line 198
     .line 199
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    new-instance v6, Ljava/util/ArrayList;
 
     .line 200
     .line 201
-    .line 202
-    :cond_10
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    invoke-direct {v6, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
+    .line 202
     .line 203
     .line 204
+    iget-object v14, v1, LCF8;->i:Ljava/lang/String;
+
     .line 205
-    sget-object v0, LyL5;->f:LzG9;
-
     .line 206
+    iget-object v7, v1, LCF8;->f:Landroid/accounts/Account;
+
     .line 207
-    sget-object v1, LUGj;->a:LzG9;
-
     .line 208
+    iget-boolean v8, v1, LCF8;->d:Z
+
     .line 209
-    if-eqz v0, :cond_11
-
     .line 210
-    .line 211
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
+    iget-boolean v9, v1, LCF8;->b:Z
 
+    .line 211
     .line 212
+    iget-boolean v10, v1, LCF8;->c:Z
+
     .line 213
     .line 214
-    :cond_11
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
+    iget-object v11, v1, LCF8;->e:Ljava/lang/String;
 
     .line 215
     .line 216
+    iget-object v12, v1, LCF8;->g:Ljava/lang/String;
+
     .line 217
-    sget-object v0, LyL5;->t:LzG9;
-
     .line 218
-    .line 219
-    sget-object v1, Lcsi;->a:LzG9;
+    iget-object v13, v1, LCF8;->h:Ljava/util/HashMap;
 
+    .line 219
     .line 220
+    const/4 v5, 0x3
+
     .line 221
-    if-eqz v0, :cond_12
+    invoke-direct/range {v4 .. v14}, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;-><init>(ILjava/util/ArrayList;Landroid/accounts/Account;ZZZLjava/lang/String;Ljava/lang/String;Ljava/util/HashMap;Ljava/lang/String;)V
 
     .line 222
     .line 223
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
     .line 224
+    iput-object v4, p0, LKxk;->v0:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+
     .line 225
     .line 226
-    :cond_12
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 227
-    .line 228
-    .line 229
-    sget-object v0, LyL5;->g:LzG9;
-
-    .line 230
-    .line 231
-    sget-object v1, Lup0;->a:LzG9;
-
-    .line 232
-    .line 233
-    if-eqz v0, :cond_13
-
-    .line 234
-    .line 235
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 236
-    .line 237
-    .line 238
-    :cond_13
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 239
-    .line 240
-    .line 241
-    sget-object v0, LyL5;->u:LzG9;
-
-    .line 242
-    .line 243
-    sget-object v1, LF70;->a:LzG9;
-
-    .line 244
-    .line 245
-    if-eqz v0, :cond_14
-
-    .line 246
-    .line 247
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 248
-    .line 249
-    .line 250
-    :cond_14
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 251
-    .line 252
-    .line 253
-    sget-object v0, LyL5;->I:LzG9;
-
-    .line 254
-    .line 255
-    sget-object v1, Lt8i;->a:LzG9;
-
-    .line 256
-    .line 257
-    if-eqz v0, :cond_15
-
-    .line 258
-    .line 259
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 260
-    .line 261
-    .line 262
-    :cond_15
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 263
-    .line 264
-    .line 265
-    sget-object v0, LyL5;->j:LzG9;
-
-    .line 266
-    .line 267
-    sget-object v1, Lhhb;->a:LzG9;
-
-    .line 268
-    .line 269
-    if-eqz v0, :cond_16
-
-    .line 270
-    .line 271
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 272
-    .line 273
-    .line 274
-    :cond_16
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 275
-    .line 276
-    .line 277
-    sget-object v0, LyL5;->v:LzG9;
-
-    .line 278
-    .line 279
-    sget-object v1, Liua;->a:LzG9;
-
-    .line 280
-    .line 281
-    if-eqz v0, :cond_17
-
-    .line 282
-    .line 283
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 284
-    .line 285
-    .line 286
-    :cond_17
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 287
-    .line 288
-    .line 289
-    sget-object v0, LyL5;->w:LzG9;
-
-    .line 290
-    .line 291
-    sget-object v1, LMua;->a:LzG9;
-
-    .line 292
-    .line 293
-    if-eqz v0, :cond_18
-
-    .line 294
-    .line 295
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 296
-    .line 297
-    .line 298
-    :cond_18
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 299
-    .line 300
-    .line 301
-    sget-object v0, LyL5;->x:LzG9;
-
-    .line 302
-    .line 303
-    sget-object v1, LjRj;->a:LzG9;
-
-    .line 304
-    .line 305
-    if-eqz v0, :cond_19
-
-    .line 306
-    .line 307
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 308
-    .line 309
-    .line 310
-    :cond_19
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 311
-    .line 312
-    .line 313
-    sget-object v0, LyL5;->y:LzG9;
-
-    .line 314
-    .line 315
-    sget-object v1, LUta;->a:LzG9;
-
-    .line 316
-    .line 317
-    if-eqz v0, :cond_1a
-
-    .line 318
-    .line 319
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 320
-    .line 321
-    .line 322
-    :cond_1a
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 323
-    .line 324
-    .line 325
-    sget-object v0, LyL5;->z:LzG9;
-
-    .line 326
-    .line 327
-    sget-object v1, LOta;->a:LzG9;
-
-    .line 328
-    .line 329
-    if-eqz v0, :cond_1b
-
-    .line 330
-    .line 331
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 332
-    .line 333
-    .line 334
-    :cond_1b
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 335
-    .line 336
-    .line 337
-    sget-object v0, LyL5;->A:LzG9;
-
-    .line 338
-    .line 339
-    sget-object v1, LAY2;->b:LzG9;
-
-    .line 340
-    .line 341
-    if-eqz v0, :cond_1c
-
-    .line 342
-    .line 343
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 344
-    .line 345
-    .line 346
-    :cond_1c
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 347
-    .line 348
-    .line 349
-    sget-object v0, LyL5;->B:LzG9;
-
-    .line 350
-    .line 351
-    sget-object v1, LCY2;->a:LzG9;
-
-    .line 352
-    .line 353
-    if-eqz v0, :cond_1d
-
-    .line 354
-    .line 355
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 356
-    .line 357
-    .line 358
-    :cond_1d
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 359
-    .line 360
-    .line 361
-    sget-object v0, LyL5;->D:LzG9;
-
-    .line 362
-    .line 363
-    sget-object v1, LAde;->a:LzG9;
-
-    .line 364
-    .line 365
-    if-eqz v0, :cond_1e
-
-    .line 366
-    .line 367
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 368
-    .line 369
-    .line 370
-    :cond_1e
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 371
-    .line 372
-    .line 373
-    sget-object v0, LyL5;->E:LzG9;
-
-    .line 374
-    .line 375
-    sget-object v1, LHCi;->a:LzG9;
-
-    .line 376
-    .line 377
-    if-eqz v0, :cond_1f
-
-    .line 378
-    .line 379
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 380
-    .line 381
-    .line 382
-    :cond_1f
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 383
-    .line 384
-    .line 385
-    sget-object v0, LyL5;->F:LzG9;
-
-    .line 386
-    .line 387
-    sget-object v1, LHCi;->b:LzG9;
-
-    .line 388
-    .line 389
-    if-eqz v0, :cond_20
-
-    .line 390
-    .line 391
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 392
-    .line 393
-    .line 394
-    :cond_20
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 395
-    .line 396
-    .line 397
-    sget-object v0, LyL5;->G:LzG9;
-
-    .line 398
-    .line 399
-    sget-object v1, LKBj;->a:LzG9;
-
-    .line 400
-    .line 401
-    if-eqz v0, :cond_21
-
-    .line 402
-    .line 403
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 404
-    .line 405
-    .line 406
-    :cond_21
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 407
-    .line 408
-    .line 409
-    sget-object v0, LyL5;->H:LzG9;
-
-    .line 410
-    .line 411
-    sget-object v1, LU29;->a:LzG9;
-
-    .line 412
-    .line 413
-    if-eqz v0, :cond_22
-
-    .line 414
-    .line 415
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 416
-    .line 417
-    .line 418
-    :cond_22
-    invoke-virtual {p0, v1}, Lql5;->h(LzG9;)V
-
-    .line 419
-    .line 420
-    .line 421
-    sget-object v0, Lz9k;->a:LRUc;
-
-    .line 422
-    .line 423
-    sget-object v1, LMZc;->a:LSUc;
-
-    .line 424
-    .line 425
-    invoke-static {p0, v1, v0}, LKxk;->a(Lql5;LSUc;LRUc;)V
-
-    .line 426
-    .line 427
-    .line 428
-    sget-object v0, LnY3;->b:LzG9;
-
-    .line 429
-    .line 430
-    sget-object v1, LpY3;->a:LzG9;
-
-    .line 431
-    .line 432
-    invoke-virtual {p0, v0, v1}, Lql5;->f(LzG9;LzG9;)V
-
-    .line 433
-    .line 434
-    .line 435
-    sget-object v0, Lrn9;->c:LRUc;
-
-    .line 436
-    .line 437
-    sget-object v1, LbJ5;->a:LSUc;
-
-    .line 438
-    .line 439
-    invoke-static {p0, v1, v0}, LKxk;->a(Lql5;LSUc;LRUc;)V
-
-    .line 440
-    .line 441
-    .line 442
-    sget-object v0, Lp9k;->a:LRUc;
-
-    .line 443
-    .line 444
-    sget-object v1, LbUc;->a:LSUc;
-
-    .line 445
-    .line 446
-    invoke-static {p0, v1, v0}, LKxk;->a(Lql5;LSUc;LRUc;)V
-
-    .line 447
-    .line 448
-    .line 449
     return-void
 .end method
 
-.method public static g(Ljava/lang/Object;)I
-    .locals 4
+
+# virtual methods
+.method public final l()I
+    .locals 1
 
     .line 1
-    if-nez p0, :cond_0
+    const v0, 0xbdfcb8
 
     .line 2
     .line 3
-    const/4 p0, 0x0
+    .line 4
+    return v0
+.end method
+
+.method public final n(Landroid/os/IBinder;)Landroid/os/IInterface;
+    .locals 3
+
+    .line 1
+    if-nez p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x0
 
     .line 4
-    goto :goto_0
+    return-object p1
 
     .line 5
     :cond_0
-    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+    const-string v0, "com.google.android.gms.auth.api.signin.internal.ISignInService"
 
     .line 6
     .line 7
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
     .line 8
-    move-result p0
-
     .line 9
-    :goto_0
-    int-to-long v0, p0
-
     .line 10
-    const-wide/32 v2, -0x3361d2af
+    move-result-object v1
 
     .line 11
+    instance-of v2, v1, LTxk;
+
     .line 12
     .line 13
-    mul-long v0, v0, v2
+    if-eqz v2, :cond_1
 
     .line 14
     .line 15
-    long-to-int p0, v0
+    check-cast v1, LTxk;
 
     .line 16
-    const/16 v0, 0xf
-
     .line 17
+    return-object v1
+
     .line 18
-    invoke-static {p0, v0}, Ljava/lang/Integer;->rotateLeft(II)I
+    :cond_1
+    new-instance v1, LTxk;
 
     .line 19
     .line 20
+    const/4 v2, 0x3
+
     .line 21
-    move-result p0
+    invoke-direct {v1, p1, v0, v2}, LYsk;-><init>(Landroid/os/IBinder;Ljava/lang/String;I)V
 
     .line 22
-    int-to-long v0, p0
-
     .line 23
-    const-wide/32 v2, 0x1b873593
-
     .line 24
-    .line 25
-    .line 26
-    mul-long v0, v0, v2
+    return-object v1
+.end method
 
-    .line 27
-    .line 28
-    long-to-int p0, v0
+.method public final r()Ljava/lang/String;
+    .locals 1
 
-    .line 29
-    return p0
+    .line 1
+    const-string v0, "com.google.android.gms.auth.api.signin.internal.ISignInService"
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final s()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "com.google.android.gms.auth.api.signin.service.START"
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

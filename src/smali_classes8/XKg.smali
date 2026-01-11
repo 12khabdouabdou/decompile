@@ -1,317 +1,142 @@
-.class public LXKg;
-.super Llch;
+.class public final LXKg;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public o:Ljava/lang/String;
+.field public final synthetic a:I
 
-.field public p:LTKg;
-
-.field public q:Ljava/lang/String;
+.field public final synthetic b:LYKg;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public synthetic constructor <init>(ILYKg;)V
+    .locals 0
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    iput p1, p0, LXKg;->a:I
 
-    .line 2
-    .line 3
-    const-string v1, "SNAP_OS_LENS_LAUNCH_ATTEMPT"
+    iput-object p2, p0, LXKg;->b:LYKg;
 
-    .line 4
-    .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
+    const/4 p1, 0x0
 
-    .line 6
-    .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 8
-    .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
-    .line 10
-    .line 11
-    move-object v0, p0
-
-    .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
-
-    .line 13
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final d()Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    const/4 v0, 0x1
+    iget v0, p0, LXKg;->a:I
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    const/4 v1, 0x2
-
     .line 5
-    iget-object v2, p0, Llch;->j:Ljava/lang/String;
-
     .line 6
-    .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    iget-object v0, p0, LXKg;->b:LYKg;
 
+    .line 7
     .line 8
+    iget-object v0, v0, LYKg;->c:Ljava/lang/Object;
+
     .line 9
     .line 10
-    const/4 v1, 0x3
+    check-cast v0, LREi;
 
     .line 11
-    iget-object v2, p0, Llch;->k:Ljava/lang/String;
-
     .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    const/4 v1, 0x4
-
-    .line 17
-    iget-object v2, p0, Llch;->m:Lq6h;
-
-    .line 18
-    .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 20
-    .line 21
-    .line 22
-    const/4 v1, 0x5
-
-    .line 23
-    iget-object v2, p0, Llch;->l:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 26
-    .line 27
-    .line 28
-    const/4 v1, 0x6
-
-    .line 29
-    iget-object v2, p0, LXKg;->o:Ljava/lang/String;
-
-    .line 30
-    .line 31
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 32
-    .line 33
-    .line 34
-    const/4 v1, 0x7
-
-    .line 35
-    iget-object v2, p0, LXKg;->p:LTKg;
-
-    .line 36
-    .line 37
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 38
-    .line 39
-    .line 40
-    const/16 v1, 0x8
-
-    .line 41
-    .line 42
-    iget-object v2, p0, LXKg;->q:Ljava/lang/String;
-
-    .line 43
-    .line 44
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const/16 v1, 0x9
-
-    .line 48
-    .line 49
-    iget-object v2, p0, Llch;->n:Ljava/lang/String;
-
-    .line 50
-    .line 51
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 52
-    .line 53
-    .line 54
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
-
-    .line 55
-    .line 56
-    .line 57
-    return-void
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    const/16 v0, 0x15b4
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final e(Ljava/util/Map;)I
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1}, Llch;->e(Ljava/util/Map;)I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    const-string v1, "lens_id"
-
-    .line 6
-    .line 7
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v1
-
-    .line 11
-    check-cast v1, Ljava/lang/String;
-
-    .line 12
-    .line 13
-    iput-object v1, p0, LXKg;->o:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    if-eqz v1, :cond_0
+    move-result-object v0
 
     .line 16
+    check-cast v0, Landroid/view/View;
+
     .line 17
-    add-int/lit8 v0, v0, 0x1
-
     .line 18
-    .line 19
-    :cond_0
-    const-string v1, "request_source"
+    const v1, 0x7f0b10d5
 
+    .line 19
     .line 20
     .line 21
-    invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 22
     .line 23
     .line 24
-    move-result v2
+    move-result-object v0
 
     .line 25
-    if-eqz v2, :cond_2
+    check-cast v0, Landroid/widget/TextView;
 
     .line 26
     .line 27
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    return-object v0
 
     .line 28
+    :pswitch_0
+    iget-object v0, p0, LXKg;->b:LYKg;
+
     .line 29
     .line 30
-    move-result-object v1
+    iget-object v0, v0, LYKg;->c:Ljava/lang/Object;
 
     .line 31
-    instance-of v2, v1, Ljava/lang/String;
-
     .line 32
+    check-cast v0, LREi;
+
     .line 33
-    if-eqz v2, :cond_1
-
     .line 34
-    .line 35
-    check-cast v1, Ljava/lang/String;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
+    .line 35
     .line 36
     .line 37
-    invoke-static {v1}, LTKg;->valueOf(Ljava/lang/String;)LTKg;
+    move-result-object v0
 
     .line 38
+    check-cast v0, Landroid/view/View;
+
     .line 39
     .line 40
-    move-result-object v1
+    const v1, 0x7f0b10d4
 
     .line 41
-    iput-object v1, p0, LXKg;->p:LTKg;
-
     .line 42
     .line 43
-    goto :goto_0
+    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 44
-    :cond_1
-    check-cast v1, LTKg;
-
     .line 45
     .line 46
-    iput-object v1, p0, LXKg;->p:LTKg;
+    move-result-object v0
 
     .line 47
-    .line 48
-    :goto_0
-    add-int/lit8 v0, v0, 0x1
+    check-cast v0, Lcom/snap/imageloading/view/SnapImageView;
 
+    .line 48
     .line 49
+    return-object v0
+
     .line 50
-    :cond_2
-    const-string v1, "request_source_info"
+    nop
 
     .line 51
-    .line 52
-    invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object p1
-
-    .line 56
-    check-cast p1, Ljava/lang/String;
-
-    .line 57
-    .line 58
-    iput-object p1, p0, LXKg;->q:Ljava/lang/String;
-
-    .line 59
-    .line 60
-    if-eqz p1, :cond_3
-
-    .line 61
-    .line 62
-    add-int/lit8 v0, v0, 0x1
-
-    .line 63
-    .line 64
-    :cond_3
-    return v0
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

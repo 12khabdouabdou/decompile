@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'UNKNOWN_EVENT_SOURCE\':0,\'TILE\':1,\'PILL\':2,\'GRID\':3,\'BOTTOM_SHEET\':4,\'BOTTOM_SHEET_TILE\':5,\'ROOT\':6,\'MORE_ITEMS_BUTTON\':7"
-    type = .enum LJv3;->a:LJv3;
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

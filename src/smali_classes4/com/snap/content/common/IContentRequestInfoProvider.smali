@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LZU8;
+    proxyClass = LB29;
     schema = "\'getClientInfo\':f|m|(): p<t>,\'getAdsClientInfo\':f|m|(): p<t>,\'getTweaks\':f|m|(): p<t>"
     typeReferences = {}
 .end annotation

@@ -1,5 +1,5 @@
 .class public Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
-.super LpW;
+.super LvY;
 .source "SourceFile"
 
 
@@ -39,7 +39,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x7f04004b
+    const v0, 0x7f040050
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/SearchView$SearchAutoComplete;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -51,7 +51,7 @@
     .locals 0
 
     .line 3
-    invoke-direct {p0, p1, p2, p3}, LpW;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, LvY;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
     new-instance p1, Landroidx/appcompat/widget/s;
@@ -227,7 +227,7 @@
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, LpW;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
+    invoke-super {p0, p1}, LvY;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
 
     .line 2
     .line 3
@@ -670,7 +670,7 @@
     move-result-object p1
 
     .line 27
-    sget-object v1, Landroidx/appcompat/widget/SearchView;->Y0:LW73;
+    sget-object v1, Landroidx/appcompat/widget/SearchView;->Y0:LCuf;
 
     .line 28
     .line 29
@@ -701,41 +701,45 @@
 
     .line 41
     .line 42
-    sget-object p1, Landroidx/appcompat/widget/SearchView;->Y0:LW73;
+    sget-object p1, Landroidx/appcompat/widget/SearchView;->Y0:LCuf;
 
     .line 43
     .line 44
-    iget-object p1, p1, LW73;->c:Ljava/lang/reflect/Method;
+    iget-object p1, p1, LCuf;->t:Ljava/lang/Object;
 
     .line 45
     .line 46
-    if-eqz p1, :cond_0
+    check-cast p1, Ljava/lang/reflect/Method;
 
     .line 47
     .line 48
-    :try_start_0
-    new-array v0, v0, [Ljava/lang/Object;
+    if-eqz p1, :cond_0
 
     .line 49
     .line 50
-    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    :try_start_0
+    new-array v0, v0, [Ljava/lang/Object;
 
     .line 51
     .line 52
-    const/4 v2, 0x0
+    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 53
+    .line 54
+    const/4 v2, 0x0
+
+    .line 55
     aput-object v1, v0, v2
 
-    .line 54
-    .line 55
+    .line 56
+    .line 57
     invoke-virtual {p1, p0, v0}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 56
-    .line 57
     .line 58
+    .line 59
+    .line 60
     :catch_0
     :cond_0
     return-void

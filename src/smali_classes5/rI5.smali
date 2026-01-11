@@ -3,21 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements LSt6;
 
 
 # instance fields
-.field public final synthetic a:Ljava/util/List;
+.field public final synthetic a:LSt6;
 
-.field public final synthetic b:LtI5;
+.field public final synthetic b:LSt6;
 
-.field public final synthetic c:Ljava/lang/Object;
-
-.field public final synthetic t:LjCg;
+.field public final synthetic c:Lio/reactivex/rxjava3/core/ObservableEmitter;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;LtI5;Ljava/util/Map;LjCg;)V
+.method public constructor <init>(LSt6;Lio/reactivex/rxjava3/core/ObservableEmitter;)V
     .locals 0
 
     .line 1
@@ -26,203 +24,163 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LrI5;->a:Ljava/util/List;
+    iput-object p1, p0, LrI5;->b:LSt6;
 
     .line 5
     .line 6
-    iput-object p2, p0, LrI5;->b:LtI5;
+    iput-object p2, p0, LrI5;->c:Lio/reactivex/rxjava3/core/ObservableEmitter;
 
     .line 7
     .line 8
-    iput-object p3, p0, LrI5;->c:Ljava/lang/Object;
+    iput-object p1, p0, LrI5;->a:LSt6;
 
     .line 9
     .line 10
-    iput-object p4, p0, LrI5;->t:LjCg;
-
-    .line 11
-    .line 12
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final M1(I)V
+    .locals 1
 
     .line 1
-    check-cast p1, LcOi;
+    iget-object v0, p0, LrI5;->a:LSt6;
 
     .line 2
     .line 3
-    iget-object v0, p0, LrI5;->a:Ljava/util/List;
+    invoke-interface {v0, p1}, LSt6;->M1(I)V
 
     .line 4
     .line 5
-    invoke-static {p1, v0}, LJCg;->j(LcOi;Ljava/util/List;)LFxd;
-
     .line 6
-    .line 7
-    .line 8
-    move-result-object v6
+    return-void
+.end method
 
+.method public final O0()LSdj;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LrI5;->a:LSt6;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LSt6;->O0()LSdj;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final O2()Lio/reactivex/rxjava3/disposables/Disposable;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LrI5;->a:LSt6;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LSt6;->O2()Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LrI5;->a:LSt6;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->d()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final dispose()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LrI5;->c:Lio/reactivex/rxjava3/core/ObservableEmitter;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, Lio/reactivex/rxjava3/core/ObservableEmitter;->d()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
     .line 9
-    if-eqz v6, :cond_1
+    iget-object v0, p0, LrI5;->b:LSt6;
 
     .line 10
     .line 11
-    invoke-virtual {v6}, LFxd;->a()LmG1;
+    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
 
     .line 12
     .line 13
     .line 14
-    move-result-object p1
-
-    .line 15
-    iget-object p1, p1, LmG1;->t:LmG1$a;
-
-    .line 16
-    .line 17
-    if-eqz p1, :cond_0
-
-    .line 18
-    .line 19
-    invoke-virtual {p1}, LmG1$a;->e()Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p1
-
-    .line 23
-    const/4 v0, 0x1
-
-    .line 24
-    if-ne p1, v0, :cond_0
-
-    .line 25
-    .line 26
-    invoke-virtual {v6}, LFxd;->a()LmG1;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p1
-
-    .line 30
-    iget-object p1, p1, LmG1;->t:LmG1$a;
-
-    .line 31
-    .line 32
-    invoke-virtual {p1}, LmG1$a;->d()Lglb;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p1
-
-    .line 36
-    iget-object p1, p1, Lglb;->f0:LHjb;
-
-    .line 37
-    .line 38
-    iget-wide v4, p1, LHjb;->b:J
-
-    .line 39
-    .line 40
-    iget-object v2, p0, LrI5;->b:LtI5;
-
-    .line 41
-    .line 42
-    invoke-virtual {v2}, LtI5;->g()LUCg;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object p1
-
-    .line 46
-    iget-object v0, v2, LtI5;->p:LWm0;
-
-    .line 47
-    .line 48
-    iget-object v1, p0, LrI5;->c:Ljava/lang/Object;
-
-    .line 49
-    .line 50
-    invoke-static {v4, v5, v1}, LJCg;->v(JLjava/util/Map;)LPqb;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v1
-
-    .line 54
-    invoke-interface {p1, v0, v1}, LUCg;->d(LWm0;LPqb;)Lio/reactivex/rxjava3/core/Single;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object p1
-
-    .line 58
-    new-instance v1, LqI5;
-
-    .line 59
-    .line 60
-    iget-object v3, p0, LrI5;->t:LjCg;
-
-    .line 61
-    .line 62
-    const/4 v7, 0x2
-
-    .line 63
-    invoke-direct/range {v1 .. v7}, LqI5;-><init>(LtI5;LjCg;JLFxd;I)V
-
-    .line 64
-    .line 65
-    .line 66
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 67
-    .line 68
-    .line 69
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
-
-    .line 70
-    .line 71
-    invoke-direct {v0, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
-
-    .line 72
-    .line 73
-    .line 74
-    goto :goto_0
-
-    .line 75
     :cond_0
-    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+    return-void
+.end method
 
-    .line 76
-    .line 77
-    goto :goto_0
+.method public final n()La80;
+    .locals 1
 
-    .line 78
-    :cond_1
-    const/4 v0, 0x0
+    .line 1
+    iget-object v0, p0, LrI5;->a:LSt6;
 
-    .line 79
-    :goto_0
-    if-nez v0, :cond_2
+    .line 2
+    .line 3
+    invoke-interface {v0}, LSt6;->n()La80;
 
-    .line 80
-    .line 81
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-    .line 82
-    .line 83
-    return-object p1
+    .line 7
+    return-object v0
+.end method
 
-    .line 84
-    :cond_2
+.method public final u2()LY70;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LrI5;->a:LSt6;
+
+    .line 2
+    .line 3
+    invoke-interface {v0}, LSt6;->u2()LY70;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
     return-object v0
 .end method

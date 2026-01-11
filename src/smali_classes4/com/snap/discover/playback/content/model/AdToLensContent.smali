@@ -9,7 +9,7 @@
 
 
 # instance fields
-.field private final adToLens:Lk8f;
+.field private final adToLens:LBqf;
     .annotation runtime Lcom/google/gson/annotations/SerializedName;
         value = "ad_to_lens"
     .end annotation
@@ -17,7 +17,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lk8f;)V
+.method public constructor <init>(LBqf;)V
     .locals 0
 
     .line 1
@@ -26,14 +26,14 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iput-object p1, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
     .line 5
     .line 6
     return-void
 .end method
 
-.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/AdToLensContent;Lk8f;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/AdToLensContent;
+.method public static synthetic copy$default(Lcom/snap/discover/playback/content/model/AdToLensContent;LBqf;ILjava/lang/Object;)Lcom/snap/discover/playback/content/model/AdToLensContent;
     .locals 0
 
     .line 1
@@ -45,12 +45,12 @@
 
     .line 4
     .line 5
-    iget-object p1, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iget-object p1, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
     .line 6
     .line 7
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/snap/discover/playback/content/model/AdToLensContent;->copy(Lk8f;)Lcom/snap/discover/playback/content/model/AdToLensContent;
+    invoke-virtual {p0, p1}, Lcom/snap/discover/playback/content/model/AdToLensContent;->copy(LBqf;)Lcom/snap/discover/playback/content/model/AdToLensContent;
 
     .line 8
     .line 9
@@ -63,18 +63,18 @@
 
 
 # virtual methods
-.method public final component1()Lk8f;
+.method public final component1()LBqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final copy(Lk8f;)Lcom/snap/discover/playback/content/model/AdToLensContent;
+.method public final copy(LBqf;)Lcom/snap/discover/playback/content/model/AdToLensContent;
     .locals 1
 
     .line 1
@@ -82,7 +82,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Lcom/snap/discover/playback/content/model/AdToLensContent;-><init>(Lk8f;)V
+    invoke-direct {v0, p1}, Lcom/snap/discover/playback/content/model/AdToLensContent;-><init>(LBqf;)V
 
     .line 4
     .line 5
@@ -111,11 +111,11 @@
     :cond_1
     check-cast p1, Lcom/snap/discover/playback/content/model/AdToLensContent;
 
-    iget-object v1, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iget-object v1, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
-    iget-object p1, p1, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iget-object p1, p1, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -127,11 +127,11 @@
     return v0
 .end method
 
-.method public final getAdToLens()Lk8f;
+.method public final getAdToLens()LBqf;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
     .line 2
     .line 3
@@ -141,9 +141,9 @@
 .method public hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
-    invoke-virtual {v0}, Lk8f;->hashCode()I
+    invoke-virtual {v0}, LBqf;->hashCode()I
 
     move-result v0
 
@@ -153,7 +153,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:Lk8f;
+    iget-object v0, p0, Lcom/snap/discover/playback/content/model/AdToLensContent;->adToLens:LBqf;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

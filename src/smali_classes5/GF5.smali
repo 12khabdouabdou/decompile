@@ -2,172 +2,124 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LO27;
-
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Landroid/content/Context;
 
-.field public final synthetic b:Lake;
+.field public final b:LFF5;
 
-.field public final synthetic c:Ljava/lang/Object;
+.field public final c:LNj4;
+
+.field public final d:LnJe;
+
+.field public final e:J
+
+.field public final f:Ljava/util/concurrent/TimeUnit;
+
+.field public final g:LtX9;
 
 
 # direct methods
-.method public constructor <init>(Lake;Lnwf;)V
+.method public constructor <init>(Landroid/content/Context;LFF5;LNj4;LnJe;)V
     .locals 1
 
-    const/4 v0, 0x0
-
-    iput v0, p0, LGF5;->a:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p2, p0, LGF5;->c:Ljava/lang/Object;
-
-    iput-object p1, p0, LGF5;->b:Lake;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lake;Lzre;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, LGF5;->a:I
-
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, LGF5;->b:Lake;
-
-    iput-object p2, p0, LGF5;->c:Ljava/lang/Object;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ld37;)Ljava/lang/Object;
-    .locals 4
-
-    .line 1
-    iget v0, p0, LGF5;->a:I
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    new-instance v0, LC4c;
+    iput-object p1, p0, LGF5;->a:Landroid/content/Context;
 
     .line 7
     .line 8
-    iget-object v1, p0, LGF5;->b:Lake;
+    iput-object p2, p0, LGF5;->b:LFF5;
 
     .line 9
     .line 10
-    iget-object v2, p0, LGF5;->c:Ljava/lang/Object;
+    iput-object p3, p0, LGF5;->c:LNj4;
 
     .line 11
     .line 12
-    check-cast v2, Lzre;
+    iput-object p4, p0, LGF5;->d:LnJe;
 
     .line 13
     .line 14
-    const/16 v3, 0x15
+    const-wide/16 p2, 0x1f4
 
     .line 15
     .line 16
-    invoke-direct {v0, v1, p1, v2, v3}, LC4c;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    iput-wide p2, p0, LGF5;->e:J
 
     .line 17
     .line 18
+    iput-object v0, p0, LGF5;->f:Ljava/util/concurrent/TimeUnit;
+
     .line 19
-    new-instance p1, LSr3;
-
     .line 20
-    .line 21
-    invoke-direct {p1, v0}, LSr3;-><init>(Lkotlin/jvm/functions/Function0;)V
+    sget-object p2, LwX9;->Z:LwX9;
 
+    .line 21
     .line 22
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 23
     .line 24
-    return-object p1
-
     .line 25
-    :pswitch_0
-    sget-object p1, Lw5a;->Z:Lw5a;
+    const-string p2, "DefaultLensActivityCenterEntryPointProvider"
 
     .line 26
     .line 27
-    iget-object v0, p0, LGF5;->c:Ljava/lang/Object;
+    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     .line 28
     .line 29
-    check-cast v0, Lnwf;
-
     .line 30
+    sget-object p2, LJp0;->a:LJp0;
+
     .line 31
-    check-cast v0, LIP5;
-
     .line 32
-    .line 33
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance p2, LtX9;
 
+    .line 33
     .line 34
+    const p3, 0x7f131dfa
+
     .line 35
     .line 36
-    const-string v0, "DefaultLensesExplorerExternalRegistryBindings#Module#defaultSearchExternalTriggerUseCaseFactory"
-
     .line 37
-    .line 38
-    invoke-static {p1, v0}, LIP5;->b(Lan0;Ljava/lang/String;)LBre;
+    invoke-virtual {p1, p3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
+    .line 38
     .line 39
     .line 40
-    .line 41
     move-result-object p1
 
-    .line 42
-    new-instance v0, LcD5;
+    .line 41
+    const p3, 0x7f080b19
 
+    .line 42
     .line 43
     .line 44
-    iget-object v1, p0, LGF5;->b:Lake;
+    const-string p4, ""
 
     .line 45
     .line 46
-    const/4 v2, 0x5
+    const/4 v0, 0x0
 
     .line 47
-    invoke-direct {v0, v1, v2, p1}, LcD5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p2, p1, p3, p4, v0}, LtX9;-><init>(Ljava/lang/String;ILjava/lang/String;Z)V
 
     .line 48
     .line 49
     .line 50
-    new-instance p1, LSr3;
+    iput-object p2, p0, LGF5;->g:LtX9;
 
     .line 51
     .line 52
-    invoke-direct {p1, v0}, LSr3;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 53
-    .line 54
-    .line 55
-    return-object p1
-
-    .line 56
-    nop
-
-    .line 57
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

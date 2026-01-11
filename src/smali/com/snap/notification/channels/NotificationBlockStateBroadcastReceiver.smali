@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public a:LmS6;
+.field public a:LlW6;
 
 .field public final b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final c:Lrn0;
+.field public final c:LJp0;
 
 
 # direct methods
@@ -36,7 +36,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
 
     .line 10
     .line 11
@@ -73,7 +73,7 @@
 
     .line 10
     .line 11
-    sget-object v0, LeEc;->Z:LeEc;
+    sget-object v0, LSSc;->Z:LSSc;
 
     .line 12
     .line 13
@@ -91,11 +91,11 @@
     .line 19
     .line 20
     .line 21
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 22
     .line 23
-    iput-object v0, p0, Lcom/snap/notification/channels/NotificationBlockStateBroadcastReceiver;->c:Lrn0;
+    iput-object v0, p0, Lcom/snap/notification/channels/NotificationBlockStateBroadcastReceiver;->c:LJp0;
 
     .line 24
     .line 25
@@ -176,7 +176,7 @@
 
     .line 31
     :cond_2
-    invoke-static {p0, p1}, LCq9;->A0(Landroid/content/BroadcastReceiver;Landroid/content/Context;)V
+    invoke-static {p0, p1}, LbS2;->w(Landroid/content/BroadcastReceiver;Landroid/content/Context;)V
 
     .line 32
     .line 33
@@ -189,76 +189,74 @@
     move-result-object p2
 
     .line 38
-    new-instance v0, LHWb;
+    new-instance v0, LkRc;
 
     .line 39
     .line 40
-    const/16 v1, 0x17
+    const/4 v1, 0x0
 
     .line 41
-    .line 42
-    invoke-direct {v0, p0, v1, p1}, LHWb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, v1, p1}, LkRc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
+    .line 42
     .line 43
     .line 44
-    .line 45
     new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
 
+    .line 45
     .line 46
-    .line 47
     invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
 
+    .line 47
     .line 48
     .line 49
-    .line 50
-    new-instance v0, LHWb;
+    new-instance v0, LkRc;
 
+    .line 50
     .line 51
+    const/4 v1, 0x1
+
     .line 52
-    const/16 v1, 0x18
+    invoke-direct {v0, p0, v1, p2}, LkRc;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 53
     .line 54
-    invoke-direct {v0, p0, v1, p2}, LHWb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 55
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;
+
     .line 56
     .line 57
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;
+    invoke-direct {p2, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/functions/Action;)V
 
     .line 58
     .line 59
-    invoke-direct {p2, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDoFinally;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/functions/Action;)V
-
     .line 60
+    sget-object p1, Lio/reactivex/rxjava3/internal/functions/Functions;->c:Lio/reactivex/rxjava3/functions/Action;
+
     .line 61
     .line 62
-    sget-object p1, Lio/reactivex/rxjava3/internal/functions/Functions;->c:Lio/reactivex/rxjava3/functions/Action;
+    new-instance v0, LJuc;
 
     .line 63
     .line 64
-    new-instance v0, LItc;
+    const/16 v1, 0x14
 
     .line 65
     .line 66
-    const/16 v1, 0xd
+    invoke-direct {v0, v1, p0}, LJuc;-><init>(ILjava/lang/Object;)V
 
     .line 67
     .line 68
-    invoke-direct {v0, v1, p0}, LItc;-><init>(ILjava/lang/Object;)V
-
     .line 69
+    iget-object v1, p0, Lcom/snap/notification/channels/NotificationBlockStateBroadcastReceiver;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 70
     .line 71
-    iget-object v1, p0, Lcom/snap/notification/channels/NotificationBlockStateBroadcastReceiver;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-virtual {p2, p1, v0, v1}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 72
     .line 73
-    invoke-virtual {p2, p1, v0, v1}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 74
-    .line 75
-    .line 76
     :cond_3
     :goto_1
     return-void

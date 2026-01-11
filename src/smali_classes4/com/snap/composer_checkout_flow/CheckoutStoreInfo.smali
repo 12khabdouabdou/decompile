@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer_checkout_flow/CheckoutStoreInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'iconUrl\':s,\'storeName\':s,\'itemCountDescription\':s,\'termsOfServicePolicyUrl\':s?,\'snapStoreCommercePolicyUrl\':s?,\'isThirdParty\':b"
     typeReferences = {}

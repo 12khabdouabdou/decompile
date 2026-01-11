@@ -2,16 +2,19 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/disposables/Disposable;
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:LYQe;
 
-.field public final b:Lrzh;
+.field public final b:LU91;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lrzh;)V
-    .locals 0
+.method public constructor <init>(Lcom/snap/core/application/SnapResourcesContextWrapper;LU91;)V
+    .locals 8
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -19,214 +22,163 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ln8b;->a:Ljava/lang/String;
+    new-instance v0, Ljava/util/HashMap;
 
     .line 5
     .line 6
-    iput-object p2, p0, Ln8b;->b:Lrzh;
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 7
     .line 8
+    .line 9
+    new-instance v0, LYQe;
+
+    .line 10
+    .line 11
+    invoke-direct {v0}, LYQe;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    iput-object v0, p0, Ln8b;->a:LYQe;
+
+    .line 15
+    .line 16
+    sget-object v0, Lqbb;->Z:Lqbb;
+
+    .line 17
+    .line 18
+    iput-object p2, p0, Ln8b;->b:LU91;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string p2, "MapBitmojiProvider"
+
+    .line 24
+    .line 25
+    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    check-cast v1, Ljava/util/Collection;
+
+    .line 30
+    .line 31
+    invoke-static {p2, v1}, Llh3;->X3(Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/ArrayList;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v2
+
+    .line 35
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    .line 36
+    .line 37
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 38
+    .line 39
+    .line 40
+    iget-object v0, v0, Lrp0;->a:Ljava/lang/String;
+
+    .line 41
+    .line 42
+    const-string v1, "."
+
+    .line 43
+    .line 44
+    invoke-static {p2, v0, v1}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v4
+
+    .line 48
+    const-string v3, "."
+
+    .line 49
+    .line 50
+    const/16 v7, 0x3c
+
+    .line 51
+    .line 52
+    const/4 v5, 0x0
+
+    .line 53
+    const/4 v6, 0x0
+
+    .line 54
+    invoke-static/range {v2 .. v7}, Llh3;->M3(Ljava/lang/Iterable;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function1;I)Ljava/lang/String;
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {p1}, Lcom/snap/core/application/SnapResourcesContextWrapper;->getResources()Landroid/content/res/Resources;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p1
+
+    .line 61
+    const p2, 0x7f0709dc
+
+    .line 62
+    .line 63
+    .line 64
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 65
+    .line 66
+    .line 67
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final d()Z
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
+    iget-object v0, p0, Ln8b;->b:LU91;
 
     .line 2
-    if-ne p0, p1, :cond_0
-
     .line 3
-    .line 4
-    return v0
+    iget-object v0, v0, LU91;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 4
     .line 5
-    :cond_0
-    instance-of v1, p1, Ln8b;
+    iget-boolean v0, v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b:Z
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Ln8b;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, Ln8b;->a:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, Ln8b;->a:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, Ln8b;->b:Lrzh;
-
-    .line 25
-    .line 26
-    iget-object p1, p1, Ln8b;->b:Lrzh;
-
-    .line 27
-    .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
-    return v2
-
-    .line 35
-    :cond_3
     return v0
 .end method
 
-.method public final hashCode()I
-    .locals 2
+.method public final dispose()V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Ln8b;->a:Ljava/lang/String;
+    iget-object v0, p0, Ln8b;->b:LU91;
 
     .line 2
     .line 3
-    if-nez v0, :cond_0
+    invoke-virtual {v0}, LU91;->dispose()V
 
     .line 4
     .line 5
-    const/4 v0, 0x0
-
     .line 6
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    :goto_0
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 12
-    .line 13
-    iget-object v1, p0, Ln8b;->b:Lrzh;
-
-    .line 14
-    .line 15
-    invoke-virtual {v1}, Lrzh;->hashCode()I
-
-    .line 16
-    .line 17
-    .line 18
-    move-result v1
-
-    .line 19
-    add-int/2addr v1, v0
-
-    .line 20
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "MapStatusData(statusText="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Ln8b;->a:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", stickerInfo="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, Ln8b;->b:Lrzh;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
-
-    .line 32
-    return-object v0
+    return-void
 .end method

@@ -29,11 +29,11 @@
 # instance fields
 .field public final c:Lio/reactivex/rxjava3/functions/BiFunction;
 
-.field public final t:LZne;
+.field public final t:LSFe;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/BiFunction;LZne;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/core/Flowable;Lio/reactivex/rxjava3/functions/BiFunction;LSFe;)V
     .locals 0
 
     .line 1
@@ -46,7 +46,7 @@
 
     .line 5
     .line 6
-    iput-object p3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;->t:LZne;
+    iput-object p3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;->t:LSFe;
 
     .line 7
     .line 8
@@ -55,7 +55,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -63,7 +63,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/subscribers/SerializedSubscriber;-><init>(LV6i;)V
+    invoke-direct {v0, p1}, Lio/reactivex/rxjava3/subscribers/SerializedSubscriber;-><init>(Lmvi;)V
 
     .line 4
     .line 5
@@ -81,7 +81,7 @@
     .line 11
     .line 12
     .line 13
-    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subscribers/SerializedSubscriber;->onSubscribe(Lc7i;)V
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subscribers/SerializedSubscriber;->onSubscribe(Ltvi;)V
 
     .line 14
     .line 15
@@ -95,11 +95,11 @@
     .line 19
     .line 20
     .line 21
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;->t:LZne;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableWithLatestFrom;->t:LSFe;
 
     .line 22
     .line 23
-    invoke-interface {v1, v0}, LZne;->subscribe(LV6i;)V
+    invoke-interface {v1, v0}, LSFe;->subscribe(Lmvi;)V
 
     .line 24
     .line 25

@@ -1,53 +1,49 @@
-.class public final Locg;
+.class public abstract synthetic Locg;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/core/MaybeSource;
 
-
-# instance fields
-.field public final synthetic a:Lx0e;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(Lx0e;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {}, LgFg;->values()[LgFg;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Locg;->a:Lx0e;
+    move-result-object v0
 
     .line 5
+    array-length v0, v0
+
     .line 6
-    return-void
-.end method
+    new-array v0, v0, [I
 
-
-# virtual methods
-.method public final subscribe(Lio/reactivex/rxjava3/core/MaybeObserver;)V
-    .locals 1
-
-    .line 1
-    const/4 p1, 0x7
-
-    .line 2
-    iget-object v0, p0, Locg;->a:Lx0e;
-
-    .line 3
-    .line 4
-    invoke-static {p1, v0}, Lx0e;->b(ILx0e;)V
-
-    .line 5
-    .line 6
     .line 7
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
-
     .line 8
+    const/4 v1, 0x1
+
     .line 9
+    const/4 v2, 0x2
+
+    .line 10
+    :try_start_0
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 11
+    .line 12
+    :catch_0
+    sput-object v0, Locg;->a:[I
+
+    .line 13
+    .line 14
     return-void
 .end method

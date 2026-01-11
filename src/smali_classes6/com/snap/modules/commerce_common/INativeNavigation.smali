@@ -1,15 +1,15 @@
 .class public final Lcom/snap/modules/commerce_common/INativeNavigation;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'openPDP\':f?(r:\'[0]\'),\'closeRootPage\':f?(),\'favoritedProduct\':f?(r:\'[1]\')"
     typeReferences = {
-        LQmc;,
-        LPmc;
+        LdCc;,
+        LcCc;
     }
 .end annotation
 

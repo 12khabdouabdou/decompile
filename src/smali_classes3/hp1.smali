@@ -2,26 +2,17 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lkp1;
+
 
 # instance fields
-.field public final a:LUo4;
-
-.field public final b:LBre;
-
-.field public volatile c:Landroid/graphics/Bitmap$Config;
-
-.field public volatile d:Landroid/graphics/Bitmap$Config;
-
-.field public volatile e:Z
-
-.field public volatile f:J
-
-.field public volatile g:J
+.field public final a:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public constructor <init>(LUo4;)V
-    .locals 2
+.method public constructor <init>(Ljava/lang/Throwable;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -29,98 +20,127 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lhp1;->a:LUo4;
+    iput-object p1, p0, Lhp1;->a:Ljava/lang/Throwable;
 
     .line 5
     .line 6
-    sget-object p1, Lkk1;->Z:Lkk1;
-
-    .line 7
-    .line 8
-    const-string v0, "BloopsPlayerSettingsImpl"
-
-    .line 9
-    .line 10
-    invoke-static {p1, p1, v0}, LKx6;->d(Lkk1;Lkk1;Ljava/lang/String;)LWm0;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object p1
-
-    .line 14
-    new-instance v0, LBre;
-
-    .line 15
-    .line 16
-    invoke-direct {v0, p1}, LBre;-><init>(LWm0;)V
-
-    .line 17
-    .line 18
-    .line 19
-    iput-object v0, p0, Lhp1;->b:LBre;
-
-    .line 20
-    .line 21
-    sget-object p1, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
-
-    .line 22
-    .line 23
-    iput-object p1, p0, Lhp1;->c:Landroid/graphics/Bitmap$Config;
-
-    .line 24
-    .line 25
-    iput-object p1, p0, Lhp1;->d:Landroid/graphics/Bitmap$Config;
-
-    .line 26
-    .line 27
-    const/4 p1, 0x1
-
-    .line 28
-    iput-boolean p1, p0, Lhp1;->e:Z
-
-    .line 29
-    .line 30
-    const-wide/16 v0, 0xa
-
-    .line 31
-    .line 32
-    iput-wide v0, p0, Lhp1;->f:J
-
-    .line 33
-    .line 34
-    const-wide/16 v0, 0x96
-
-    .line 35
-    .line 36
-    iput-wide v0, p0, Lhp1;->g:J
-
-    .line 37
-    .line 38
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LpC3;
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lhp1;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lhp1;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lhp1;->a:Ljava/lang/Throwable;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, Lhp1;->a:Ljava/lang/Throwable;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lhp1;->a:LUo4;
+    iget-object v0, p0, Lhp1;->a:Ljava/lang/Throwable;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LUo4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    move-result v0
 
     .line 7
-    check-cast v0, LpC3;
+    return v0
+.end method
 
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Error(throwable="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
     .line 8
+    iget-object v1, p0, Lhp1;->a:Ljava/lang/Throwable;
+
     .line 9
+    .line 10
+    const-string v2, ")"
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, LLG9;->d(Ljava/lang/StringBuilder;Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
     return-object v0
 .end method

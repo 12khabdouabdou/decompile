@@ -1,10 +1,10 @@
 .class public final Lcom/snap/placediscovery/PlaceDiscoveryModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'type\':r<e>:\'[0]\',\'placeId\':s,\'name\':s,\'lat\':d,\'lng\':d,\'iconUrl\':s,\'kindName\':s,\'isFavorited\':b,\'label\':s,\'category\':s,\'photos\':a<s>,\'addressName\':s?,\'boundingBox\':r?:\'[1]\',\'distanceFromUser\':s?,\'locality\':s?,\'orbisStoryUrl\':s?,\'providerImageUrl\':s?"
     typeReferences = {

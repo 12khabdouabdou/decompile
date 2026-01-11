@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -15,7 +15,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -37,7 +37,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -62,7 +62,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -125,7 +125,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -138,7 +138,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
 
     move-result-object p0
 
@@ -149,7 +149,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -194,7 +194,7 @@
     const/4 v0, 0x0
 
     .line 10
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 11
     .line 12
@@ -264,7 +264,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -286,7 +286,7 @@
 
     .line 10
     .line 11
-    invoke-static {v2}, Lsa3;->h(I)I
+    invoke-static {v2}, Lbd3;->h(I)I
 
     .line 12
     .line 13
@@ -312,7 +312,7 @@
 
     .line 21
     .line 22
-    invoke-static {v2}, Lsa3;->h(I)I
+    invoke-static {v2}, Lbd3;->h(I)I
 
     .line 23
     .line 24
@@ -409,7 +409,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -418,14 +418,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Point2d;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -436,7 +436,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -451,7 +451,7 @@
     if-eq v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -461,7 +461,7 @@
 
     .line 4
     :cond_1
-    invoke-virtual {p1}, Lqa3;->i()F
+    invoke-virtual {p1}, LZc3;->j()F
 
     move-result v0
 
@@ -478,7 +478,7 @@
 
     .line 6
     :cond_2
-    invoke-virtual {p1}, Lqa3;->i()F
+    invoke-virtual {p1}, LZc3;->j()F
 
     move-result v0
 
@@ -544,7 +544,7 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -571,7 +571,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->G(IF)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->G(IF)V
 
     .line 10
     .line 11
@@ -595,13 +595,13 @@
 
     .line 19
     .line 20
-    invoke-virtual {p1, v1, v0}, Lsa3;->G(IF)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->G(IF)V
 
     .line 21
     .line 22
     .line 23
     :cond_1
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 24
     .line 25

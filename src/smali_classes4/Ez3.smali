@@ -1,156 +1,100 @@
-.class public final synthetic LEz3;
-.super Lj28;
+.class public final LEz3;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LT18;
+.implements Lcom/snap/composer/networking/IGrpcServiceFactory;
 
 
-# static fields
-.field public static final f0:LEz3;
+# instance fields
+.field public final a:LkN8;
+
+.field public final b:Lrp0;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(LkN8;Lrp0;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LEz3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "toComposerSuggestedFriend(Lcom/snap/core/model/Username;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;ZZ)Lcom/snap/composer/people/SuggestedFriend;"
-
     .line 4
-    .line 5
-    const/4 v2, 0x1
+    iput-object p1, p0, LEz3;->a:LkN8;
 
+    .line 5
     .line 6
-    const/16 v1, 0xe
+    iput-object p2, p0, LEz3;->b:Lrp0;
 
     .line 7
     .line 8
-    const-class v3, Lgrj;
-
-    .line 9
-    .line 10
-    const-string v4, "toComposerSuggestedFriend"
-
-    .line 11
-    .line 12
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, LEz3;->f0:LEz3;
-
-    .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final z(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+.method public final createService(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)Lcom/snap/composer/networking/GrpcServiceProtocol;
     .locals 0
 
     .line 1
-    check-cast p1, Lsqj;
+    new-instance p4, LDz3;
 
     .line 2
     .line 3
-    check-cast p2, Ljava/lang/String;
+    invoke-direct {p4, p1, p2, p3}, LDz3;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
     .line 5
-    check-cast p3, Ljava/lang/String;
-
     .line 6
+    iget-object p1, p0, LEz3;->b:Lrp0;
+
     .line 7
-    check-cast p4, Ljava/lang/String;
-
     .line 8
+    iget-object p2, p0, LEz3;->a:LkN8;
+
     .line 9
-    check-cast p5, Ljava/lang/String;
-
     .line 10
-    .line 11
-    check-cast p6, Ljava/lang/Boolean;
+    invoke-virtual {p2, p4, p1}, LkN8;->a(LDz3;Lrp0;)LlN8;
 
+    .line 11
     .line 12
     .line 13
-    invoke-virtual {p6}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 14
-    .line 15
-    .line 16
-    move-result p6
-
-    .line 17
-    check-cast p7, Ljava/lang/Boolean;
-
-    .line 18
-    .line 19
-    invoke-virtual {p7}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p7
-
-    .line 23
-    check-cast p8, Ljava/lang/String;
-
-    .line 24
-    .line 25
-    check-cast p9, Ljava/lang/String;
-
-    .line 26
-    .line 27
-    check-cast p10, Ljava/lang/Long;
-
-    .line 28
-    .line 29
-    check-cast p11, Ljava/lang/String;
-
-    .line 30
-    .line 31
-    check-cast p12, Ljava/lang/String;
-
-    .line 32
-    .line 33
-    check-cast p13, Ljava/lang/Boolean;
-
-    .line 34
-    .line 35
-    invoke-virtual {p13}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result p13
-
-    .line 39
-    check-cast p14, Ljava/lang/Boolean;
-
-    .line 40
-    .line 41
-    invoke-virtual {p14}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 42
-    .line 43
-    .line 44
-    move-result p14
-
-    .line 45
-    invoke-static/range {p1 .. p14}, Lgrj;->H(Lsqj;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;ZZ)LW8i;
-
-    .line 46
-    .line 47
-    .line 48
     move-result-object p1
 
-    .line 49
+    .line 14
     return-object p1
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
+    .line 7
+    .line 8
+    const-class v1, Lcom/snap/composer/networking/IGrpcServiceFactory;
+
+    .line 9
+    .line 10
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result p1
+
+    .line 14
+    return p1
 .end method

@@ -1,177 +1,59 @@
-.class public final enum LlNb;
-.super Ljava/lang/Enum;
+.class public final LlNb;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final synthetic X:[LlNb;
+# instance fields
+.field public final a:LOF3;
 
-.field public static final enum a:LlNb;
+.field public final b:LCBe;
 
-.field public static final enum b:LlNb;
-
-.field public static final enum c:LlNb;
-
-.field public static final enum t:LlNb;
+.field public final c:LCBe;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 9
+.method public constructor <init>(LOF3;LCBe;LCBe;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x2
-
     .line 3
-    const/4 v2, 0x1
-
     .line 4
-    const/4 v3, 0x0
+    iput-object p1, p0, LlNb;->a:LOF3;
 
     .line 5
-    new-instance v4, LlNb;
-
     .line 6
+    iput-object p2, p0, LlNb;->b:LCBe;
+
     .line 7
-    const-string v5, "MESSAGE"
-
     .line 8
-    .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    iput-object p3, p0, LlNb;->c:LCBe;
 
+    .line 9
     .line 10
+    sget-object p1, LTJb;->Z:LTJb;
+
     .line 11
     .line 12
-    sput-object v4, LlNb;->a:LlNb;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 13
     .line 14
-    new-instance v5, LlNb;
-
     .line 15
+    const-string p1, "MemoriesEmbeddingServiceImpl"
+
     .line 16
-    const-string v6, "QUOTED"
-
     .line 17
-    .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 18
     .line 19
     .line 20
+    sget-object p1, LJp0;->a:LJp0;
+
     .line 21
-    sput-object v5, LlNb;->b:LlNb;
-
     .line 22
-    .line 23
-    new-instance v6, LlNb;
-
-    .line 24
-    .line 25
-    const-string v7, "CTA_ACCESSORY"
-
-    .line 26
-    .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 28
-    .line 29
-    .line 30
-    sput-object v6, LlNb;->c:LlNb;
-
-    .line 31
-    .line 32
-    new-instance v7, LlNb;
-
-    .line 33
-    .line 34
-    const-string v8, "BELOW_ACCESSORY"
-
-    .line 35
-    .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 37
-    .line 38
-    .line 39
-    sput-object v7, LlNb;->t:LlNb;
-
-    .line 40
-    .line 41
-    const/4 v8, 0x4
-
-    .line 42
-    new-array v8, v8, [LlNb;
-
-    .line 43
-    .line 44
-    aput-object v4, v8, v3
-
-    .line 45
-    .line 46
-    aput-object v5, v8, v2
-
-    .line 47
-    .line 48
-    aput-object v6, v8, v1
-
-    .line 49
-    .line 50
-    aput-object v7, v8, v0
-
-    .line 51
-    .line 52
-    sput-object v8, LlNb;->X:[LlNb;
-
-    .line 53
-    .line 54
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LlNb;
-    .locals 1
-
-    .line 1
-    const-class v0, LlNb;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LlNb;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LlNb;
-    .locals 1
-
-    .line 1
-    sget-object v0, LlNb;->X:[LlNb;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LlNb;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

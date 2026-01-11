@@ -4,12 +4,12 @@
 
 
 # virtual methods
-.method public final A0(LBTe;LHGe;)V
+.method public final F0(Lybf;LqYe;)V
     .locals 0
 
     .line 1
     :try_start_0
-    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/LinearLayoutManager;->A0(LBTe;LHGe;)V
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/LinearLayoutManager;->F0(Lybf;LqYe;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -20,7 +20,7 @@
     return-void
 .end method
 
-.method public final c1()Z
+.method public final h1()Z
     .locals 1
 
     .line 1

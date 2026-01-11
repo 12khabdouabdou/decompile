@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/business_ad_creation_common/PromotableContent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'snapId\':s?,\'memoriesSnap\':r?:\'[0]\',\'transcodedMemoryPromise\':p?<r:\'[1]\'>,\'mediaLibraryItem\':r?:\'[2]\',\'adsApiMediaItem\':r?:\'[3]\',\'type\':r<e>:\'[4]\'"
     typeReferences = {
@@ -156,7 +156,7 @@
     return-void
 .end method
 
-.method public final e(Ljrg;)V
+.method public final e(LqMg;)V
     .locals 0
 
     .line 1

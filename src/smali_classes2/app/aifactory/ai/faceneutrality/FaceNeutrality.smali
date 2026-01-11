@@ -522,7 +522,7 @@
     const-string v0, "Read failed, file "
 
     .line 8
-    invoke-static {v0, p2}, LEU0;->w(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p2}, LJF0;->t(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 

@@ -1,548 +1,264 @@
-.class public final LNsc;
-.super Landroid/net/ConnectivityManager$NetworkCallback;
+.class public final synthetic LNsc;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LiAi;
 
 
 # instance fields
-.field public a:Landroid/net/LinkProperties;
+.field public final synthetic a:I
 
-.field public b:Landroid/net/NetworkCapabilities;
+.field public final synthetic b:LPsc;
 
-.field public final synthetic c:Lorg/chromium/net/b;
+.field public final synthetic c:I
+
+.field public final synthetic t:Landroid/media/MediaCodec$BufferInfo;
 
 
 # direct methods
-.method public constructor <init>(Lorg/chromium/net/b;)V
+.method public synthetic constructor <init>(LPsc;ILandroid/media/MediaCodec$BufferInfo;I)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LNsc;->c:Lorg/chromium/net/b;
+    iput p4, p0, LNsc;->a:I
 
-    .line 2
-    .line 3
-    invoke-direct {p0}, Landroid/net/ConnectivityManager$NetworkCallback;-><init>()V
+    iput-object p1, p0, LNsc;->b:LPsc;
 
-    .line 4
-    .line 5
-    .line 6
+    iput p2, p0, LNsc;->c:I
+
+    iput-object p3, p0, LNsc;->t:Landroid/media/MediaCodec$BufferInfo;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/net/Network;)LUsc;
-    .locals 10
+.method public final get()Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    iget-object v0, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
+    iget v0, p0, LNsc;->a:I
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    packed-switch v0, :pswitch_data_0
 
     .line 4
-    invoke-virtual {v0, v1}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
-
     .line 5
     .line 6
-    .line 7
-    move-result v0
+    iget-object v0, p0, LNsc;->b:LPsc;
 
+    .line 7
     .line 8
-    const/4 v2, -0x1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 9
-    if-nez v0, :cond_7
-
     .line 10
     .line 11
-    iget-object v0, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
+    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     .line 12
     .line 13
-    const/4 v3, 0x5
+    iget-object v1, p0, LNsc;->t:Landroid/media/MediaCodec$BufferInfo;
 
     .line 14
-    invoke-virtual {v0, v3}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
-
     .line 15
+    iget-wide v1, v1, Landroid/media/MediaCodec$BufferInfo;->presentationTimeUs:J
+
     .line 16
     .line 17
-    move-result v0
+    iget-wide v3, v0, LPsc;->E:J
 
     .line 18
-    if-eqz v0, :cond_0
-
     .line 19
-    .line 20
-    goto :goto_3
+    iget-wide v5, v0, LPsc;->F:J
 
+    .line 20
     .line 21
-    :cond_0
-    iget-object v0, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 22
     .line 23
-    const/4 v1, 0x0
+    const-string v7, "track="
 
     .line 24
-    invoke-virtual {v0, v1}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
-
     .line 25
+    invoke-direct {v0, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 26
     .line 27
-    move-result v0
-
     .line 28
-    iget-object v3, p0, LNsc;->c:Lorg/chromium/net/b;
+    iget v7, p0, LNsc;->c:I
 
     .line 29
     .line 30
-    if-eqz v0, :cond_2
+    invoke-static {v7}, LbQa;->v(I)Ljava/lang/String;
 
     .line 31
     .line 32
-    iget-object v0, v3, Lorg/chromium/net/b;->g:LOsc;
-
     .line 33
+    move-result-object v7
+
     .line 34
-    iget-object v0, v0, LOsc;->a:Landroid/net/ConnectivityManager;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 35
     .line 36
-    :try_start_0
-    invoke-virtual {v0, p1}, Landroid/net/ConnectivityManager;->getNetworkInfo(Landroid/net/Network;)Landroid/net/NetworkInfo;
-
     .line 37
+    const-string v7, ", timeUs="
+
     .line 38
     .line 39
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 40
-    goto :goto_0
-
     .line 41
-    :catch_0
-    :try_start_1
-    invoke-virtual {v0, p1}, Landroid/net/ConnectivityManager;->getNetworkInfo(Landroid/net/Network;)Landroid/net/NetworkInfo;
-
     .line 42
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 43
     .line 44
-    move-result-object v0
-    :try_end_1
-    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 45
-    goto :goto_0
+    const-string v1, ", videoGlobalTimeUs="
 
     .line 46
-    :catch_1
-    const/4 v0, 0x0
-
     .line 47
-    :goto_0
-    if-eqz v0, :cond_1
+    const-string v2, ", audioGlobalTimeUs="
 
     .line 48
     .line 49
-    invoke-virtual {v0}, Landroid/net/NetworkInfo;->getSubtype()I
+    invoke-static {v3, v4, v1, v2, v0}, LBv7;->u(JLjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 50
     .line 51
     .line 52
-    move-result v2
+    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 53
-    :cond_1
-    move v6, v2
-
     .line 54
-    const/4 v5, 0x0
-
     .line 55
-    goto :goto_4
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 56
-    :cond_2
-    iget-object v0, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
-
     .line 57
     .line 58
-    const/4 v1, 0x3
+    move-result-object v0
 
     .line 59
-    invoke-virtual {v0, v1}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+    return-object v0
 
     .line 60
+    :pswitch_0
+    iget-object v0, p0, LNsc;->b:LPsc;
+
     .line 61
     .line 62
-    move-result v0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 63
-    if-eqz v0, :cond_3
-
     .line 64
     .line 65
-    const/16 v1, 0x9
+    sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     .line 66
     .line 67
-    const/16 v5, 0x9
+    iget-object v1, p0, LNsc;->t:Landroid/media/MediaCodec$BufferInfo;
 
     .line 68
     .line 69
-    :goto_1
-    const/4 v6, -0x1
+    iget-wide v1, v1, Landroid/media/MediaCodec$BufferInfo;->presentationTimeUs:J
 
     .line 70
-    goto :goto_4
-
     .line 71
-    :cond_3
-    iget-object v0, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
+    iget-wide v3, v0, LPsc;->E:J
 
     .line 72
     .line 73
-    const/4 v1, 0x2
+    iget-wide v5, v0, LPsc;->F:J
 
     .line 74
-    invoke-virtual {v0, v1}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
-
     .line 75
+    new-instance v0, Ljava/lang/StringBuilder;
+
     .line 76
     .line 77
-    move-result v0
+    const-string v7, "track="
 
     .line 78
-    if-eqz v0, :cond_4
-
     .line 79
+    invoke-direct {v0, v7}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 80
-    const/4 v1, 0x7
-
     .line 81
-    const/4 v5, 0x7
-
     .line 82
-    goto :goto_1
+    iget v7, p0, LNsc;->c:I
 
     .line 83
-    :cond_4
-    iget-object v0, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
-
     .line 84
+    invoke-static {v7}, LbQa;->v(I)Ljava/lang/String;
+
     .line 85
-    const/4 v1, 0x4
-
     .line 86
-    invoke-virtual {v0, v1}, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
-
     .line 87
+    move-result-object v7
+
     .line 88
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 89
-    move-result v0
-
     .line 90
-    if-eqz v0, :cond_6
-
     .line 91
+    const-string v7, ", timeUs="
+
     .line 92
-    iget-object v0, v3, Lorg/chromium/net/b;->g:LOsc;
-
     .line 93
-    .line 94
-    invoke-virtual {v0, p1}, LOsc;->d(Landroid/net/Network;)Landroid/net/NetworkInfo;
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 94
     .line 95
     .line 96
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 97
-    move-result-object v0
-
     .line 98
-    if-eqz v0, :cond_5
-
     .line 99
-    .line 100
-    invoke-virtual {v0}, Landroid/net/NetworkInfo;->getType()I
+    const-string v1, ", videoGlobalTimeUs="
 
+    .line 100
     .line 101
+    const-string v2, ", audioGlobalTimeUs="
+
     .line 102
     .line 103
-    move-result v0
+    invoke-static {v3, v4, v1, v2, v0}, LBv7;->u(JLjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
 
     .line 104
-    move v1, v0
-
     .line 105
-    goto :goto_2
-
     .line 106
-    :cond_5
-    const/16 v0, 0x11
+    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 107
     .line 108
-    const/16 v1, 0x11
-
     .line 109
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 110
-    :goto_2
-    move v5, v1
-
     .line 111
-    goto :goto_1
-
     .line 112
-    :cond_6
-    const/4 v5, -0x1
+    move-result-object v0
 
     .line 113
-    goto :goto_1
+    return-object v0
 
     .line 114
-    :cond_7
-    :goto_3
-    const/4 v5, 0x1
+    nop
 
     .line 115
-    goto :goto_1
-
-    .line 116
-    :goto_4
-    new-instance v3, LUsc;
-
-    .line 117
-    .line 118
-    invoke-static {p1}, Lorg/chromium/net/b;->e(Landroid/net/Network;)J
-
-    .line 119
-    .line 120
-    .line 121
-    move-result-wide v0
-
-    .line 122
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
-    .line 123
-    .line 124
-    .line 125
-    move-result-object v7
-
-    .line 126
-    iget-object p1, p0, LNsc;->a:Landroid/net/LinkProperties;
-
-    .line 127
-    .line 128
-    invoke-static {p1}, LkU;->p(Landroid/net/LinkProperties;)Z
-
-    .line 129
-    .line 130
-    .line 131
-    move-result v8
-
-    .line 132
-    iget-object p1, p0, LNsc;->a:Landroid/net/LinkProperties;
-
-    .line 133
-    .line 134
-    invoke-static {p1}, LkU;->g(Landroid/net/LinkProperties;)Ljava/lang/String;
-
-    .line 135
-    .line 136
-    .line 137
-    move-result-object v9
-
-    .line 138
-    const/4 v4, 0x1
-
-    .line 139
-    invoke-direct/range {v3 .. v9}, LUsc;-><init>(ZIILjava/lang/String;ZLjava/lang/String;)V
-
-    .line 140
-    .line 141
-    .line 142
-    return-object v3
-.end method
-
-.method public final onAvailable(Landroid/net/Network;)V
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    iput-object p1, p0, LNsc;->a:Landroid/net/LinkProperties;
-
-    .line 3
-    .line 4
-    iput-object p1, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final onCapabilitiesChanged(Landroid/net/Network;Landroid/net/NetworkCapabilities;)V
-    .locals 2
-
-    .line 1
-    iput-object p2, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, LNsc;->c:Lorg/chromium/net/b;
-
-    .line 4
-    .line 5
-    iget-boolean v1, v0, Lorg/chromium/net/b;->k:Z
-
-    .line 6
-    .line 7
-    if-eqz v1, :cond_0
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LNsc;->a:Landroid/net/LinkProperties;
-
-    .line 10
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    if-eqz p2, :cond_0
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, p1}, LNsc;->a(Landroid/net/Network;)LUsc;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    invoke-virtual {v0, p1}, Lorg/chromium/net/b;->b(LUsc;)V
-
-    .line 20
-    .line 21
-    .line 22
-    :cond_0
-    return-void
-.end method
-
-.method public final onLinkPropertiesChanged(Landroid/net/Network;Landroid/net/LinkProperties;)V
-    .locals 2
-
-    .line 1
-    iput-object p2, p0, LNsc;->a:Landroid/net/LinkProperties;
-
-    .line 2
-    .line 3
-    iget-object v0, p0, LNsc;->c:Lorg/chromium/net/b;
-
-    .line 4
-    .line 5
-    iget-boolean v1, v0, Lorg/chromium/net/b;->k:Z
-
-    .line 6
-    .line 7
-    if-eqz v1, :cond_0
-
-    .line 8
-    .line 9
-    if-eqz p2, :cond_0
-
-    .line 10
-    .line 11
-    iget-object p2, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
-
-    .line 12
-    .line 13
-    if-eqz p2, :cond_0
-
-    .line 14
-    .line 15
-    invoke-virtual {p0, p1}, LNsc;->a(Landroid/net/Network;)LUsc;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    invoke-virtual {v0, p1}, Lorg/chromium/net/b;->b(LUsc;)V
-
-    .line 20
-    .line 21
-    .line 22
-    :cond_0
-    return-void
-.end method
-
-.method public final onLost(Landroid/net/Network;)V
-    .locals 8
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    iput-object p1, p0, LNsc;->a:Landroid/net/LinkProperties;
-
-    .line 3
-    .line 4
-    iput-object p1, p0, LNsc;->b:Landroid/net/NetworkCapabilities;
-
-    .line 5
-    .line 6
-    iget-object p1, p0, LNsc;->c:Lorg/chromium/net/b;
-
-    .line 7
-    .line 8
-    iget-boolean v0, p1, Lorg/chromium/net/b;->k:Z
-
-    .line 9
-    .line 10
-    if-eqz v0, :cond_0
-
-    .line 11
-    .line 12
-    new-instance v1, LUsc;
-
-    .line 13
-    .line 14
-    const/4 v4, -0x1
-
-    .line 15
-    const/4 v5, 0x0
-
-    .line 16
-    const/4 v2, 0x0
-
-    .line 17
-    const/4 v3, -0x1
-
-    .line 18
-    const/4 v6, 0x0
-
-    .line 19
-    const-string v7, ""
-
-    .line 20
-    .line 21
-    invoke-direct/range {v1 .. v7}, LUsc;-><init>(ZIILjava/lang/String;ZLjava/lang/String;)V
-
-    .line 22
-    .line 23
-    .line 24
-    invoke-virtual {p1, v1}, Lorg/chromium/net/b;->b(LUsc;)V
-
-    .line 25
-    .line 26
-    .line 27
-    :cond_0
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

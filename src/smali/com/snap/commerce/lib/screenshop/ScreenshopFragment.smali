@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcOc;
+.implements LY2d;
 
 
 # static fields
@@ -11,43 +11,43 @@
 
 
 # instance fields
-.field public A0:Lfk3;
+.field public A0:Len3;
 
 .field public B0:Lcom/snap/composer/bridge_observables/BridgeObservable;
 
-.field public C0:LpC3;
+.field public C0:LOF3;
 
-.field public D0:LXai;
+.field public D0:Lyzi;
 
-.field public E0:Ld49;
+.field public E0:LGb9;
 
-.field public F0:LTqc;
+.field public F0:LmGc;
 
-.field public G0:LJ7d;
+.field public G0:LYmd;
 
-.field public H0:LBJd;
+.field public H0:LR0e;
 
-.field public I0:LeNe;
+.field public I0:La5f;
 
-.field public J0:Lnwf;
+.field public J0:LZ69;
 
-.field public K0:Lqmg;
+.field public K0:LyPf;
 
-.field public L0:LqZ8;
+.field public L0:LpHg;
 
 .field public final M0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final N0:Lrn0;
+.field public final N0:LJp0;
 
 .field public final O0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
 .field public w0:Lcom/snap/composer/blizzard/Logging;
 
-.field public x0:LB73;
+.field public x0:LR93;
 
-.field public y0:Ldk3;
+.field public y0:Lcn3;
 
-.field public z0:Lek3;
+.field public z0:Ldn3;
 
 
 # direct methods
@@ -73,7 +73,7 @@
 
     .line 10
     .line 11
-    sget-object v0, LNk3;->Z:LNk3;
+    sget-object v0, LKn3;->Z:LKn3;
 
     .line 12
     .line 13
@@ -91,15 +91,15 @@
     .line 19
     .line 20
     .line 21
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 22
     .line 23
-    iput-object v0, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->N0:Lrn0;
+    iput-object v0, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->N0:LJp0;
 
     .line 24
     .line 25
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 26
     .line 27
@@ -116,7 +116,7 @@
 
 
 # virtual methods
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
@@ -132,7 +132,7 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 11
 
     .line 1
@@ -161,15 +161,15 @@
     move-result-object v1
 
     .line 14
-    new-instance v0, Lmz3;
+    new-instance v0, LAC3;
 
     .line 15
     .line 16
-    iget-object v2, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->L0:LqZ8;
+    iget-object v2, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->J0:LZ69;
 
     .line 17
     .line 18
-    const-string p1, "viewLoader"
+    const-string p1, "runtime"
 
     .line 19
     .line 20
@@ -180,11 +180,11 @@
 
     .line 22
     .line 23
-    sget-object v3, LNk3;->k0:LcSa;
+    sget-object v3, LKn3;->k0:LL4b;
 
     .line 24
     .line 25
-    iget-object v5, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->F0:LTqc;
+    iget-object v5, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->F0:LmGc;
 
     .line 26
     .line 27
@@ -192,11 +192,11 @@
 
     .line 28
     .line 29
-    sget-object v6, Loz3;->a:LF3j;
+    sget-object v6, LCC3;->a:LH4j;
 
     .line 30
     .line 31
-    iget-object v7, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->J0:Lnwf;
+    iget-object v7, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->K0:LyPf;
 
     .line 32
     .line 33
@@ -218,16 +218,16 @@
     move-object v4, v3
 
     .line 41
-    invoke-direct/range {v0 .. v10}, Lmz3;-><init>(Landroid/content/Context;LqZ8;LcSa;LcSa;LTqc;Lpz3;Lnwf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LPm9;I)V
+    invoke-direct/range {v0 .. v10}, LAC3;-><init>(Landroid/content/Context;LZ69;LL4b;LL4b;LmGc;LDC3;LyPf;Lio/reactivex/rxjava3/disposables/CompositeDisposable;LIv9;I)V
 
     .line 42
     .line 43
     .line 44
-    sget-object v2, Lcom/snap/modules/commerce_dynamic_page/CommerceScreenshopPage;->Companion:LDm3;
+    sget-object v2, Lcom/snap/modules/commerce_dynamic_page/CommerceScreenshopPage;->Companion:LAp3;
 
     .line 45
     .line 46
-    iget-object v3, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->L0:LqZ8;
+    iget-object v3, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->J0:LZ69;
 
     .line 47
     .line 48
@@ -235,7 +235,7 @@
 
     .line 49
     .line 50
-    iget-object p1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->A0:Lfk3;
+    iget-object p1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->A0:Len3;
 
     .line 51
     .line 52
@@ -243,7 +243,7 @@
 
     .line 53
     .line 54
-    invoke-virtual {p1}, Lfk3;->getCommerceSession()Lcom/snap/modules/commerce_blizzard_logging/ICommerceSession;
+    invoke-virtual {p1}, Len3;->getCommerceSession()Lcom/snap/modules/commerce_blizzard_logging/ICommerceSession;
 
     .line 55
     .line 56
@@ -259,7 +259,7 @@
     move-result-object p1
 
     .line 62
-    sget-object v4, LVl3;->J0:LVl3;
+    sget-object v4, LRo3;->J0:LRo3;
 
     .line 63
     .line 64
@@ -271,7 +271,7 @@
     move-result-object v4
 
     .line 68
-    invoke-static {p1, v4}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v4}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 69
     .line 70
@@ -311,7 +311,7 @@
 
     .line 87
     .line 88
-    invoke-static {p1}, Lue3;->u1(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p1}, Llh3;->t4(Ljava/lang/Iterable;)Ljava/util/List;
 
     .line 89
     .line 90
@@ -327,7 +327,7 @@
 
     .line 94
     :goto_0
-    invoke-virtual {p0, v0, v1}, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->U1(Lmz3;Landroid/content/Context;)LEm3;
+    invoke-virtual {p0, v0, v1}, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->U1(LAC3;Landroid/content/Context;)LBp3;
 
     .line 95
     .line 96
@@ -367,7 +367,7 @@
 
     .line 112
     .line 113
-    iget-object v4, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->E0:Ld49;
+    iget-object v4, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->E0:LGb9;
 
     .line 114
     .line 115
@@ -422,7 +422,7 @@
     .line 138
     .line 139
     .line 140
-    invoke-virtual {v0, v1}, LEm3;->h(Lcom/snap/modules/commerce_dynamic_page/ScreenshopMemoriesConfiguration;)V
+    invoke-virtual {v0, v1}, LBp3;->h(Lcom/snap/modules/commerce_dynamic_page/ScreenshopMemoriesConfiguration;)V
 
     .line 141
     .line 142
@@ -436,7 +436,7 @@
 
     .line 146
     .line 147
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 148
     .line 149
@@ -445,7 +445,7 @@
 
     .line 151
     :cond_4
-    invoke-virtual {p0, v0, v1}, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->U1(Lmz3;Landroid/content/Context;)LEm3;
+    invoke-virtual {p0, v0, v1}, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->U1(LAC3;Landroid/content/Context;)LBp3;
 
     .line 152
     .line 153
@@ -485,7 +485,7 @@
 
     .line 169
     :goto_2
-    invoke-virtual {v0, p1}, LEm3;->n(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, LBp3;->n(Ljava/lang/String;)V
 
     .line 170
     .line 171
@@ -598,7 +598,7 @@
 
     .line 219
     .line 220
-    invoke-static {p1, v6}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v6}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 221
     .line 222
@@ -655,11 +655,11 @@
 
     .line 247
     .line 248
-    new-instance v9, LpL8;
+    new-instance v9, LnT8;
 
     .line 249
     .line 250
-    invoke-direct {v9, v7}, LpL8;-><init>(Ljava/lang/String;)V
+    invoke-direct {v9, v7}, LnT8;-><init>(Ljava/lang/String;)V
 
     .line 251
     .line 252
@@ -668,7 +668,7 @@
 
     .line 254
     .line 255
-    invoke-static {v6, v1}, Lue3;->J0(ILjava/util/List;)Ljava/lang/Object;
+    invoke-static {v6, v1}, Llh3;->H3(ILjava/util/List;)Ljava/lang/Object;
 
     .line 256
     .line 257
@@ -688,7 +688,7 @@
 
     .line 263
     :goto_7
-    invoke-virtual {v9, v7}, LpL8;->b(Ljava/lang/String;)V
+    invoke-virtual {v9, v7}, LnT8;->b(Ljava/lang/String;)V
 
     .line 264
     .line 265
@@ -697,7 +697,7 @@
 
     .line 267
     .line 268
-    invoke-static {v6, v4}, Lue3;->J0(ILjava/util/List;)Ljava/lang/Object;
+    invoke-static {v6, v4}, Llh3;->H3(ILjava/util/List;)Ljava/lang/Object;
 
     .line 269
     .line 270
@@ -717,7 +717,7 @@
 
     .line 276
     :goto_8
-    invoke-virtual {v9, v6}, LpL8;->a(Ljava/lang/String;)V
+    invoke-virtual {v9, v6}, LnT8;->a(Ljava/lang/String;)V
 
     .line 277
     .line 278
@@ -734,7 +734,7 @@
 
     .line 284
     :cond_b
-    invoke-static {}, Lve3;->f0()V
+    invoke-static {}, Lmh3;->c3()V
 
     .line 285
     .line 286
@@ -747,7 +747,7 @@
 
     .line 289
     :cond_d
-    invoke-virtual {v0, v5}, LEm3;->f(Ljava/util/ArrayList;)V
+    invoke-virtual {v0, v5}, LBp3;->f(Ljava/util/ArrayList;)V
 
     .line 290
     .line 291
@@ -758,7 +758,7 @@
 
     .line 293
     .line 294
-    invoke-static {v2, v3, v0, p3, p1}, LDm3;->a(LDm3;LqZ8;LEm3;LTB3;I)Lcom/snap/modules/commerce_dynamic_page/CommerceScreenshopPage;
+    invoke-static {v2, v3, v0, p3, p1}, LAp3;->a(LAp3;LZ69;LBp3;LvF3;I)Lcom/snap/modules/commerce_dynamic_page/CommerceScreenshopPage;
 
     .line 295
     .line 296
@@ -771,15 +771,15 @@
     .line 299
     .line 300
     .line 301
-    new-instance p3, LKhf;
+    new-instance p3, LXWe;
 
     .line 302
     .line 303
-    const/16 v0, 0xb
+    const/16 v0, 0x1c
 
     .line 304
     .line 305
-    invoke-direct {p3, v0, p1}, LKhf;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p3, v0, p1}, LXWe;-><init>(ILjava/lang/Object;)V
 
     .line 306
     .line 307
@@ -792,7 +792,7 @@
     move-result-object p1
 
     .line 312
-    sget-object p3, LZq6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    sget-object p3, Llu6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 313
     .line 314
@@ -800,7 +800,7 @@
 
     .line 315
     .line 316
-    invoke-virtual {p3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {p3, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 317
     .line 318
@@ -813,7 +813,7 @@
 
     .line 321
     .line 322
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 323
     .line 324
@@ -822,7 +822,7 @@
 
     .line 326
     :cond_10
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 327
     .line 328
@@ -835,7 +835,7 @@
 
     .line 331
     .line 332
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 333
     .line 334
@@ -848,7 +848,7 @@
 
     .line 337
     .line 338
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 339
     .line 340
@@ -857,7 +857,7 @@
 
     .line 342
     :cond_13
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 343
     .line 344
@@ -865,7 +865,7 @@
     throw p3
 .end method
 
-.method public final R(LQqc;)V
+.method public final P(LiGc;)V
     .locals 2
 
     .line 1
@@ -882,7 +882,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->R(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->P(LiGc;)V
 
     .line 9
     .line 10
@@ -890,20 +890,20 @@
     return-void
 .end method
 
-.method public final U1(Lmz3;Landroid/content/Context;)LEm3;
+.method public final U1(LAC3;Landroid/content/Context;)LBp3;
     .locals 7
 
     .line 1
-    new-instance v0, LEm3;
+    new-instance v0, LBp3;
 
     .line 2
     .line 3
-    invoke-direct {v0}, LEm3;-><init>()V
+    invoke-direct {v0}, LBp3;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->y0:Ldk3;
+    iget-object v1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->y0:Lcn3;
 
     .line 7
     .line 8
@@ -918,7 +918,7 @@
 
     .line 12
     .line 13
-    invoke-virtual {v1}, Ldk3;->b()LjG8;
+    invoke-virtual {v1}, Lcn3;->b()LlN8;
 
     .line 14
     .line 15
@@ -926,7 +926,7 @@
     move-result-object v1
 
     .line 17
-    invoke-virtual {v0, v1}, LEm3;->m(LjG8;)V
+    invoke-virtual {v0, v1}, LBp3;->m(LlN8;)V
 
     .line 18
     .line 19
@@ -939,12 +939,12 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0, v1}, LEm3;->b(Lcom/snap/composer/blizzard/Logging;)V
+    invoke-virtual {v0, v1}, LBp3;->b(Lcom/snap/composer/blizzard/Logging;)V
 
     .line 25
     .line 26
     .line 27
-    iget-object v1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->y0:Ldk3;
+    iget-object v1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->y0:Lcn3;
 
     .line 28
     .line 29
@@ -952,7 +952,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v1}, Ldk3;->a()LjG8;
+    invoke-virtual {v1}, Lcn3;->a()LlN8;
 
     .line 32
     .line 33
@@ -960,12 +960,12 @@
     move-result-object v1
 
     .line 35
-    invoke-virtual {v0, v1}, LEm3;->k(LjG8;)V
+    invoke-virtual {v0, v1}, LBp3;->k(LlN8;)V
 
     .line 36
     .line 37
     .line 38
-    iget-object v1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->I0:LeNe;
+    iget-object v1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->I0:La5f;
 
     .line 39
     .line 40
@@ -973,11 +973,11 @@
 
     .line 41
     .line 42
-    iget-object v1, v1, LeNe;->a:Ljava/lang/String;
+    iget-object v1, v1, La5f;->a:Ljava/lang/String;
 
     .line 43
     .line 44
-    invoke-static {v1}, LeNe;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, La5f;->a(Ljava/lang/String;)Ljava/lang/String;
 
     .line 45
     .line 46
@@ -985,12 +985,12 @@
     move-result-object v1
 
     .line 48
-    invoke-virtual {v0, v1}, LEm3;->a(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, LBp3;->a(Ljava/lang/String;)V
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {v0, p1}, LEm3;->j(Lcom/snap/composer/navigation/INavigator;)V
+    invoke-virtual {v0, p1}, LBp3;->j(Lcom/snap/composer/navigation/INavigator;)V
 
     .line 52
     .line 53
@@ -999,38 +999,38 @@
 
     .line 55
     .line 56
-    new-instance v2, LSyf;
+    new-instance v2, LcSf;
 
     .line 57
     .line 58
     const/4 v4, 0x0
 
     .line 59
-    invoke-direct {v2, p0, v4}, LSyf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
+    invoke-direct {v2, p0, v4}, LcSf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
 
     .line 60
     .line 61
     .line 62
-    new-instance v4, LSyf;
+    new-instance v4, LcSf;
 
     .line 63
     .line 64
     const/4 v5, 0x1
 
     .line 65
-    invoke-direct {v4, p0, v5}, LSyf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
+    invoke-direct {v4, p0, v5}, LcSf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
 
     .line 66
     .line 67
     .line 68
-    new-instance v5, LSyf;
+    new-instance v5, LcSf;
 
     .line 69
     .line 70
     const/4 v6, 0x2
 
     .line 71
-    invoke-direct {v5, p0, v6}, LSyf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
+    invoke-direct {v5, p0, v6}, LcSf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
 
     .line 72
     .line 73
@@ -1040,7 +1040,7 @@
     .line 75
     .line 76
     .line 77
-    invoke-virtual {v0, v1}, LEm3;->e(Lcom/snap/modules/commerce_dynamic_page/INativeFavoritesService;)V
+    invoke-virtual {v0, v1}, LBp3;->e(Lcom/snap/modules/commerce_dynamic_page/INativeFavoritesService;)V
 
     .line 78
     .line 79
@@ -1054,14 +1054,14 @@
     .line 83
     .line 84
     .line 85
-    new-instance v2, LSyf;
+    new-instance v2, LcSf;
 
     .line 86
     .line 87
     const/4 v4, 0x3
 
     .line 88
-    invoke-direct {v2, p0, v4}, LSyf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
+    invoke-direct {v2, p0, v4}, LcSf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;I)V
 
     .line 89
     .line 90
@@ -1071,14 +1071,14 @@
     .line 92
     .line 93
     .line 94
-    new-instance v2, LPn3;
+    new-instance v2, LNq3;
 
     .line 95
     .line 96
     const/4 v4, 0x1
 
     .line 97
-    invoke-direct {v2, p1, v4}, LPn3;-><init>(Lmz3;I)V
+    invoke-direct {v2, p1, v4}, LNq3;-><init>(LAC3;I)V
 
     .line 98
     .line 99
@@ -1088,7 +1088,7 @@
     .line 101
     .line 102
     .line 103
-    new-instance p1, Lsff;
+    new-instance p1, LXxf;
 
     .line 104
     .line 105
@@ -1096,7 +1096,7 @@
 
     .line 106
     .line 107
-    invoke-direct {p1, p0, v2, p2}, Lsff;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {p1, p0, v2, p2}, LXxf;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 108
     .line 109
@@ -1106,12 +1106,12 @@
     .line 111
     .line 112
     .line 113
-    invoke-virtual {v0, v1}, LEm3;->i(Lcom/snap/modules/commerce_common/INativeNavigation;)V
+    invoke-virtual {v0, v1}, LBp3;->i(Lcom/snap/modules/commerce_common/INativeNavigation;)V
 
     .line 114
     .line 115
     .line 116
-    iget-object p1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->A0:Lfk3;
+    iget-object p1, p0, Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;->A0:Len3;
 
     .line 117
     .line 118
@@ -1119,21 +1119,21 @@
 
     .line 119
     .line 120
-    invoke-virtual {v0, p1}, LEm3;->c(Lcom/snap/modules/commerce_blizzard_logging/ICommerceSessionService;)V
+    invoke-virtual {v0, p1}, LBp3;->c(Lcom/snap/modules/commerce_blizzard_logging/ICommerceSessionService;)V
 
     .line 121
     .line 122
     .line 123
-    new-instance p1, LTyf;
+    new-instance p1, LdSf;
 
     .line 124
     .line 125
-    invoke-direct {p1, p0}, LTyf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;)V
+    invoke-direct {p1, p0}, LdSf;-><init>(Lcom/snap/commerce/lib/screenshop/ScreenshopFragment;)V
 
     .line 126
     .line 127
     .line 128
-    invoke-virtual {v0, p1}, LEm3;->l(LTyf;)V
+    invoke-virtual {v0, p1}, LBp3;->l(LdSf;)V
 
     .line 129
     .line 130
@@ -1146,7 +1146,7 @@
 
     .line 134
     .line 135
-    invoke-virtual {v0, p1}, LEm3;->d(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    invoke-virtual {v0, p1}, LBp3;->d(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
 
     .line 136
     .line 137
@@ -1155,7 +1155,7 @@
 
     .line 139
     .line 140
-    invoke-static {p1}, Lz9k;->h(Lio/reactivex/rxjava3/core/Observable;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    invoke-static {p1}, LOlg;->i(Lio/reactivex/rxjava3/core/Observable;)Lcom/snap/composer/bridge_observables/BridgeObservable;
 
     .line 141
     .line 142
@@ -1163,7 +1163,7 @@
     move-result-object p1
 
     .line 144
-    invoke-virtual {v0, p1}, LEm3;->g(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+    invoke-virtual {v0, p1}, LBp3;->g(Lcom/snap/composer/bridge_observables/BridgeObservable;)V
 
     .line 145
     .line 146
@@ -1176,7 +1176,7 @@
 
     .line 149
     .line 150
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 151
     .line 152
@@ -1189,7 +1189,7 @@
 
     .line 155
     .line 156
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 157
     .line 158
@@ -1202,7 +1202,7 @@
 
     .line 161
     .line 162
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 163
     .line 164
@@ -1211,7 +1211,7 @@
 
     .line 166
     :cond_3
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 167
     .line 168
@@ -1224,7 +1224,7 @@
 
     .line 171
     .line 172
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 173
     .line 174
@@ -1233,7 +1233,7 @@
 
     .line 176
     :cond_5
-    invoke-static {v2}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v2}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 177
     .line 178
@@ -1250,7 +1250,19 @@
     return-wide v0
 .end method
 
-.method public final s0(LQqc;)V
+.method public final q1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final r0(LiGc;)V
     .locals 2
 
     .line 1
@@ -1267,22 +1279,10 @@
     .line 6
     .line 7
     .line 8
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->s0(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->r0(LiGc;)V
 
     .line 9
     .line 10
     .line 11
-    return-void
-.end method
-
-.method public final s1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
-
-    .line 2
-    .line 3
-    .line 4
     return-void
 .end method

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public a:LjEa;
+.field public a:LuQa;
 
-.field public b:LvEa;
+.field public b:LFQa;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LvEa;
+    iget-object p1, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LFQa;
 
     .line 2
     .line 3
@@ -39,7 +39,7 @@
 
     .line 5
     .line 6
-    iget-object p1, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LjEa;
+    iget-object p1, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LuQa;
 
     .line 7
     .line 8
@@ -47,11 +47,11 @@
 
     .line 9
     .line 10
-    iget-object p1, p1, LjEa;->p:LXfi;
+    iget-object p1, p1, LuQa;->q:LREi;
 
     .line 11
     .line 12
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 13
     .line 14
@@ -59,7 +59,7 @@
     move-result-object p1
 
     .line 16
-    check-cast p1, LiEa;
+    check-cast p1, LtQa;
 
     .line 17
     .line 18
@@ -71,7 +71,7 @@
 
     .line 20
     .line 21
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 22
     .line 23
@@ -84,7 +84,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 28
     .line 29
@@ -93,426 +93,427 @@
 .end method
 
 .method public final onCreate()V
-    .locals 8
+    .locals 9
 
     .line 1
-    const/4 v0, 0x1
+    const/16 v0, 0xc
 
     .line 2
-    const/4 v1, 0x7
-
     .line 3
-    invoke-super {p0}, Landroid/app/Service;->onCreate()V
+    const/16 v1, 0x13
 
     .line 4
     .line 5
+    const/4 v2, 0x1
+
     .line 6
-    new-instance v2, Lxj3;
+    const/4 v3, 0x2
 
     .line 7
-    .line 8
-    invoke-direct {v2, p0}, Lxj3;-><init>(Lcom/snap/location/loda/bindings/LodaDaemonService;)V
+    invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
+    .line 8
     .line 9
     .line 10
+    new-instance v4, LOx3;
+
     .line 11
-    iget-object v3, v2, Lxj3;->t:Ljava/lang/Object;
-
     .line 12
-    .line 13
-    check-cast v3, Lake;
+    invoke-direct {v4, p0}, LOx3;-><init>(Lcom/snap/location/loda/bindings/LodaDaemonService;)V
 
+    .line 13
     .line 14
     .line 15
-    invoke-interface {v3}, Lbke;->get()Ljava/lang/Object;
+    iget-object v5, v4, LOx3;->c:Ljava/lang/Object;
 
     .line 16
     .line 17
-    .line 18
-    move-result-object v3
+    check-cast v5, LCBe;
 
+    .line 18
     .line 19
-    check-cast v3, LwEa;
+    invoke-interface {v5}, LDBe;->get()Ljava/lang/Object;
 
     .line 20
     .line 21
-    const-string v4, "LodaAndroidService"
-
     .line 22
+    move-result-object v5
+
     .line 23
-    invoke-interface {v3, v4}, LwEa;->a(Ljava/lang/String;)LvEa;
+    check-cast v5, LGQa;
 
     .line 24
     .line 25
-    .line 26
-    move-result-object v3
+    const-string v6, "LodaAndroidService"
 
+    .line 26
     .line 27
-    iput-object v3, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LvEa;
+    invoke-interface {v5, v6}, LGQa;->a(Ljava/lang/String;)LFQa;
 
     .line 28
     .line 29
-    iget-object v2, v2, Lxj3;->e0:Ljava/lang/Object;
-
     .line 30
+    move-result-object v5
+
     .line 31
-    check-cast v2, Lake;
+    iput-object v5, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LFQa;
 
     .line 32
     .line 33
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    iget-object v4, v4, LOx3;->e0:Ljava/lang/Object;
 
     .line 34
     .line 35
-    .line 36
-    move-result-object v2
+    check-cast v4, LCBe;
 
+    .line 36
     .line 37
-    check-cast v2, LjEa;
+    invoke-interface {v4}, LDBe;->get()Ljava/lang/Object;
 
     .line 38
     .line 39
-    iput-object v2, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LjEa;
-
     .line 40
+    move-result-object v4
+
     .line 41
-    if-eqz v2, :cond_0
+    check-cast v4, LuQa;
 
     .line 42
     .line 43
-    iget-object v3, v2, LjEa;->q:LZUi;
+    iput-object v4, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LuQa;
 
     .line 44
     .line 45
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    if-eqz v4, :cond_0
 
     .line 46
     .line 47
+    iget-object v5, v4, LuQa;->r:LxQi;
+
     .line 48
-    iget-object v3, v2, LjEa;->i:LfEa;
-
     .line 49
-    .line 50
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 50
     .line 51
     .line 52
+    iget-object v5, v4, LuQa;->i:LqQa;
+
     .line 53
-    sget-object v4, Lio/reactivex/rxjava3/schedulers/Schedulers;->c:Lio/reactivex/rxjava3/core/Scheduler;
-
     .line 54
-    .line 55
-    iget-object v5, v3, LfEa;->d:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 55
     .line 56
     .line 57
-    invoke-virtual {v5, v4}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    sget-object v6, Lio/reactivex/rxjava3/schedulers/Schedulers;->c:Lio/reactivex/rxjava3/core/Scheduler;
 
     .line 58
     .line 59
-    .line 60
-    move-result-object v4
+    iget-object v7, v5, LqQa;->d:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
+    .line 60
     .line 61
-    new-instance v5, Lyua;
+    invoke-virtual {v7, v6}, Lio/reactivex/rxjava3/core/Observable;->x0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
 
     .line 62
     .line 63
-    invoke-direct {v5, v1, v3}, Lyua;-><init>(ILjava/lang/Object;)V
-
     .line 64
-    .line 65
-    .line 66
-    invoke-virtual {v4, v5}, Lio/reactivex/rxjava3/core/Observable;->f0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+    move-result-object v6
 
+    .line 65
+    new-instance v7, Lpaa;
+
+    .line 66
     .line 67
+    const/16 v8, 0x12
+
     .line 68
     .line 69
-    move-result-object v4
+    invoke-direct {v7, v8, v5}, Lpaa;-><init>(ILjava/lang/Object;)V
 
     .line 70
-    invoke-virtual {v4}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 71
     .line 72
+    invoke-virtual {v6, v7}, Lio/reactivex/rxjava3/core/Observable;->i0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+
     .line 73
-    move-result-object v4
-
     .line 74
-    iget-object v5, v2, LjEa;->k:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 75
+    move-result-object v6
+
     .line 76
-    invoke-virtual {v5, v4}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v6}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 77
     .line 78
     .line 79
-    new-instance v4, LUx9;
+    move-result-object v6
 
     .line 80
-    .line 81
-    invoke-direct {v4, v0, v2}, LUx9;-><init>(ILjava/lang/Object;)V
+    iget-object v7, v4, LuQa;->k:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
+    .line 81
     .line 82
+    invoke-virtual {v7, v6}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 83
     .line 84
-    invoke-static {v4}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
-
     .line 85
+    new-instance v6, Lzc4;
+
     .line 86
     .line 87
-    new-instance v4, LKCa;
+    invoke-direct {v6, v3, v4}, Lzc4;-><init>(ILjava/lang/Object;)V
 
     .line 88
     .line 89
-    invoke-direct {v4, v1, v2}, LKCa;-><init>(ILjava/lang/Object;)V
-
     .line 90
+    invoke-static {v6}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+
     .line 91
     .line 92
-    iget-object v3, v3, LfEa;->f:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 93
-    .line 94
-    invoke-virtual {v3, v4}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    new-instance v6, LgMa;
 
+    .line 94
     .line 95
+    const/16 v8, 0xf
+
     .line 96
     .line 97
-    move-result-object v3
+    invoke-direct {v6, v8, v4}, LgMa;-><init>(ILjava/lang/Object;)V
 
     .line 98
-    invoke-virtual {v5, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 99
     .line 100
+    iget-object v5, v5, LqQa;->f:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
     .line 101
-    iget-object v3, v2, LjEa;->b:LL70;
-
     .line 102
-    .line 103
-    iget-object v4, v3, LL70;->e0:Ljava/lang/Object;
+    invoke-virtual {v5, v6}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 103
     .line 104
     .line 105
-    check-cast v4, Lio/reactivex/rxjava3/disposables/SerialDisposable;
+    move-result-object v5
 
     .line 106
-    .line 107
-    iget-object v3, v3, LL70;->f0:Ljava/lang/Object;
+    invoke-virtual {v7, v5}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
+    .line 107
     .line 108
     .line 109
-    check-cast v3, Lio/reactivex/rxjava3/disposables/SerialDisposable;
+    iget-object v5, v4, LuQa;->b:Lga0;
 
     .line 110
     .line 111
-    const/4 v6, 0x2
+    iget-object v6, v5, Lga0;->e0:Ljava/lang/Object;
 
     .line 112
-    new-array v6, v6, [Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 113
-    .line 114
-    const/4 v7, 0x0
+    check-cast v6, Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
+    .line 114
     .line 115
-    aput-object v4, v6, v7
+    iget-object v5, v5, Lga0;->f0:Ljava/lang/Object;
 
     .line 116
     .line 117
-    aput-object v3, v6, v0
+    check-cast v5, Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
     .line 118
     .line 119
-    invoke-virtual {v5, v6}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->f([Lio/reactivex/rxjava3/disposables/Disposable;)V
+    new-array v3, v3, [Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 120
     .line 121
+    const/4 v8, 0x0
+
     .line 122
-    sget-object v3, LTga;->X:LTga;
+    aput-object v6, v3, v8
 
     .line 123
     .line 124
-    iget-object v4, v2, LjEa;->g:LWEa;
+    aput-object v5, v3, v2
 
     .line 125
     .line 126
-    iget-object v6, v4, LWEa;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
+    invoke-virtual {v7, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->f([Lio/reactivex/rxjava3/disposables/Disposable;)V
 
     .line 127
     .line 128
-    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 129
+    sget-object v3, LdQ7;->n0:LdQ7;
+
     .line 130
     .line 131
-    new-instance v7, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;
+    iget-object v5, v4, LuQa;->g:LdRa;
 
     .line 132
     .line 133
-    invoke-direct {v7, v6, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
+    iget-object v6, v5, LdRa;->b:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
     .line 134
     .line 135
-    .line 136
-    new-instance v3, LKCa;
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 136
     .line 137
     .line 138
-    const/16 v6, 0xb
+    new-instance v8, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;
 
     .line 139
     .line 140
-    invoke-direct {v3, v6, v4}, LKCa;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v8, v6, v3}, Lio/reactivex/rxjava3/internal/operators/mixed/ObservableSwitchMapSingle;-><init>(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 141
     .line 142
     .line 143
-    invoke-virtual {v7, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    new-instance v3, LgMa;
 
     .line 144
     .line 145
+    invoke-direct {v3, v1, v5}, LgMa;-><init>(ILjava/lang/Object;)V
+
     .line 146
-    move-result-object v3
-
     .line 147
-    invoke-virtual {v5, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 148
+    invoke-virtual {v8, v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe(Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 149
     .line 150
-    new-instance v3, LUCa;
-
     .line 151
+    move-result-object v3
+
     .line 152
-    invoke-direct {v3, v1, v4}, LUCa;-><init>(ILjava/lang/Object;)V
+    invoke-virtual {v7, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 153
     .line 154
     .line 155
-    invoke-static {v3}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
+    new-instance v3, LIGa;
 
     .line 156
     .line 157
+    invoke-direct {v3, v0, v5}, LIGa;-><init>(ILjava/lang/Object;)V
+
     .line 158
-    move-result-object v1
-
     .line 159
-    invoke-virtual {v5, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 160
+    invoke-static {v3}, Lio/reactivex/rxjava3/disposables/a;->b(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 161
     .line 162
-    iget-object v1, v2, LjEa;->e:LXEa;
-
     .line 163
+    move-result-object v3
+
     .line 164
-    iput-boolean v0, v1, LXEa;->c:Z
+    invoke-virtual {v7, v3}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 165
     .line 166
-    iget-object v0, v2, LjEa;->j:LYEa;
-
     .line 167
+    iget-object v3, v4, LuQa;->e:LeRa;
+
     .line 168
-    iget-object v1, v0, LYEa;->b:LXEa;
-
     .line 169
+    iput-boolean v2, v3, LeRa;->c:Z
+
     .line 170
-    iget-object v1, v1, LXEa;->f:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 171
+    iget-object v2, v4, LuQa;->j:LfRa;
+
     .line 172
-    new-instance v2, Lgwa;
-
     .line 173
+    iget-object v3, v2, LfRa;->b:LeRa;
+
     .line 174
-    const/16 v3, 0x9
-
     .line 175
-    .line 176
-    invoke-direct {v2, v3, v0}, Lgwa;-><init>(ILjava/lang/Object;)V
+    iget-object v3, v3, LeRa;->f:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
+    .line 176
     .line 177
+    new-instance v4, LYoa;
+
     .line 178
     .line 179
-    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/core/Observable;->f0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+    invoke-direct {v4, v0, v2}, LYoa;-><init>(ILjava/lang/Object;)V
 
     .line 180
     .line 181
     .line 182
-    move-result-object v1
+    invoke-virtual {v3, v4}, Lio/reactivex/rxjava3/core/Observable;->i0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
 
     .line 183
-    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
-
     .line 184
     .line 185
+    move-result-object v0
+
     .line 186
-    move-result-object v1
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 187
-    invoke-virtual {v5, v1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 188
     .line 189
+    move-result-object v0
+
     .line 190
-    new-instance v1, LKfa;
+    invoke-virtual {v7, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 191
     .line 192
-    const/16 v2, 0x10
-
     .line 193
-    .line 194
-    invoke-direct {v1, v2, v0}, LKfa;-><init>(ILjava/lang/Object;)V
+    new-instance v0, Lg9a;
 
+    .line 194
     .line 195
+    invoke-direct {v0, v1, v2}, Lg9a;-><init>(ILjava/lang/Object;)V
+
     .line 196
     .line 197
-    iget-object v0, v0, LYEa;->e:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
     .line 198
-    .line 199
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->f0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+    iget-object v1, v2, LfRa;->e:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
+    .line 199
     .line 200
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Observable;->i0(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/core/Completable;
+
     .line 201
     .line 202
-    move-result-object v0
-
     .line 203
-    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+    move-result-object v0
 
     .line 204
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Completable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
+
     .line 205
     .line 206
+    .line 207
     move-result-object v0
 
-    .line 207
-    invoke-virtual {v5, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
-
     .line 208
+    invoke-virtual {v7, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+
     .line 209
     .line 210
+    .line 211
     return-void
 
-    .line 211
+    .line 212
     :cond_0
     const-string v0, "delegate"
 
-    .line 212
     .line 213
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 214
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 215
     .line 216
+    .line 217
     const/4 v0, 0x0
 
-    .line 217
+    .line 218
     throw v0
 .end method
 
@@ -520,7 +521,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LvEa;
+    iget-object v0, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LFQa;
 
     .line 2
     .line 3
@@ -536,7 +537,7 @@
     .line 7
     .line 8
     .line 9
-    iget-object v0, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LjEa;
+    iget-object v0, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LuQa;
 
     .line 10
     .line 11
@@ -544,7 +545,7 @@
 
     .line 12
     .line 13
-    iget-object v1, v0, LjEa;->k:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v1, v0, LuQa;->k:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 14
     .line 15
@@ -553,14 +554,14 @@
     .line 16
     .line 17
     .line 18
-    iget-object v0, v0, LjEa;->e:LXEa;
+    iget-object v0, v0, LuQa;->e:LeRa;
 
     .line 19
     .line 20
     const/4 v1, 0x0
 
     .line 21
-    iput-boolean v1, v0, LXEa;->c:Z
+    iput-boolean v1, v0, LeRa;->c:Z
 
     .line 22
     .line 23
@@ -572,7 +573,7 @@
 
     .line 25
     .line 26
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 27
     .line 28
@@ -585,7 +586,7 @@
 
     .line 31
     .line 32
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 33
     .line 34
@@ -597,7 +598,7 @@
     .locals 10
 
     .line 1
-    iget-object p2, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LvEa;
+    iget-object p2, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->b:LFQa;
 
     .line 2
     .line 3
@@ -608,7 +609,7 @@
 
     .line 5
     .line 6
-    iget-object p2, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LjEa;
+    iget-object p2, p0, Lcom/snap/location/loda/bindings/LodaDaemonService;->a:LuQa;
 
     .line 7
     .line 8
@@ -646,7 +647,7 @@
     const/4 v0, 0x2
 
     .line 22
-    invoke-static {v0}, Llva;->M(I)[I
+    invoke-static {v0}, LzHa;->M(I)[I
 
     .line 23
     .line 24
@@ -658,7 +659,7 @@
 
     .line 27
     .line 28
-    iget-object v0, p2, LjEa;->q:LZUi;
+    iget-object v0, p2, LuQa;->r:LxQi;
 
     .line 29
     .line 30
@@ -667,7 +668,7 @@
     .line 31
     .line 32
     .line 33
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-static {p1}, LzHa;->L(I)I
 
     .line 34
     .line 35
@@ -686,11 +687,11 @@
 
     .line 41
     .line 42
-    iget-object v0, p2, LjEa;->c:LEk7;
+    iget-object v0, p2, LuQa;->c:LzW6;
 
     .line 43
     .line 44
-    iget-object v3, v0, LEk7;->c:Ljava/lang/Object;
+    iget-object v3, v0, LzW6;->c:Ljava/lang/Object;
 
     .line 45
     .line 46
@@ -726,7 +727,7 @@
 
     .line 59
     .line 60
-    iget-object v0, v0, LEk7;->b:Ljava/lang/Object;
+    iget-object v0, v0, LzW6;->b:Ljava/lang/Object;
 
     .line 61
     .line 62
@@ -743,7 +744,7 @@
     .line 67
     .line 68
     :try_start_1
-    invoke-static {v0, v3}, LNC1;->x(Lcom/snap/location/loda/bindings/LodaDaemonService;Landroid/app/Notification;)V
+    invoke-static {v0, v3}, Lby6;->q(Lcom/snap/location/loda/bindings/LodaDaemonService;Landroid/app/Notification;)V
 
     .line 69
     .line 70
@@ -779,7 +780,7 @@
 
     .line 82
     .line 83
-    iget-object v0, p2, LjEa;->q:LZUi;
+    iget-object v0, p2, LuQa;->r:LxQi;
 
     .line 84
     .line 85
@@ -788,7 +789,7 @@
     .line 86
     .line 87
     .line 88
-    iget-object v0, p2, LjEa;->l:Lio/reactivex/rxjava3/disposables/SerialDisposable;
+    iget-object v0, p2, LuQa;->l:Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
     .line 89
     .line 90
@@ -810,7 +811,7 @@
     .line 98
     .line 99
     :cond_3
-    iget-object v0, p2, LjEa;->i:LfEa;
+    iget-object v0, p2, LuQa;->i:LqQa;
 
     .line 100
     .line 101
@@ -818,12 +819,12 @@
 
     .line 102
     .line 103
-    invoke-virtual {v0, v3, p3, v2}, LfEa;->a(Ljava/lang/String;Ljava/lang/Throwable;Z)V
+    invoke-virtual {v0, v3, p3, v2}, LqQa;->a(Ljava/lang/String;Ljava/lang/Throwable;Z)V
 
     .line 104
     .line 105
     .line 106
-    iget-object p3, p2, LjEa;->b:LL70;
+    iget-object p3, p2, LuQa;->b:Lga0;
 
     .line 107
     .line 108
@@ -831,11 +832,11 @@
 
     .line 109
     :try_start_2
-    iget-object v0, p3, LL70;->Z:Ljava/lang/Object;
+    iget-object v0, p3, Lga0;->Z:Ljava/lang/Object;
 
     .line 110
     .line 111
-    check-cast v0, LvEa;
+    check-cast v0, LFQa;
 
     .line 112
     .line 113
@@ -844,7 +845,7 @@
     .line 114
     .line 115
     .line 116
-    iget-boolean v0, p3, LL70;->b:Z
+    iget-boolean v0, p3, Lga0;->b:Z
 
     .line 117
     .line 118
@@ -852,7 +853,7 @@
 
     .line 119
     .line 120
-    invoke-virtual {p3}, LL70;->u()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-virtual {p3}, Lga0;->x()Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 121
     .line 122
@@ -872,7 +873,7 @@
     .line 127
     :cond_4
     :goto_2
-    iget-object v0, p3, LL70;->f0:Ljava/lang/Object;
+    iget-object v0, p3, Lga0;->f0:Ljava/lang/Object;
 
     .line 128
     .line 129
@@ -918,166 +919,165 @@
 
     .line 145
     .line 146
-    sget-object v8, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
+    new-instance p3, LXOa;
 
     .line 147
     .line 148
-    new-instance p3, Lsra;
+    const/4 v0, 0x1
 
     .line 149
-    .line 150
-    const/16 v0, 0x9
+    invoke-direct {p3, v0, p2}, LXOa;-><init>(ILjava/lang/Object;)V
 
+    .line 150
     .line 151
     .line 152
-    invoke-direct {p3, v0, p2}, Lsra;-><init>(ILjava/lang/Object;)V
+    new-instance v9, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;
 
     .line 153
     .line 154
-    .line 155
-    new-instance v9, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;
+    invoke-direct {v9, p3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
+    .line 155
     .line 156
     .line 157
-    invoke-direct {v9, p3}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+    iget-object v4, p2, LuQa;->o:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 158
     .line 159
-    .line 160
-    iget-object v4, p2, LjEa;->o:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 160
     .line 161
     .line 162
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableTimeoutTimed;
 
     .line 163
     .line 164
-    .line 165
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/observable/ObservableTimeoutTimed;
-
-    .line 166
-    .line 167
     const-wide/16 v5, 0x3c
 
+    .line 165
+    .line 166
+    iget-object v8, p2, LuQa;->p:Lio/reactivex/rxjava3/core/Scheduler;
+
+    .line 167
     .line 168
-    .line 169
     invoke-direct/range {v3 .. v9}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableTimeoutTimed;-><init>(Lio/reactivex/rxjava3/core/Observable;JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;Lio/reactivex/rxjava3/core/Observable;)V
 
+    .line 169
     .line 170
     .line 171
-    .line 172
     invoke-virtual {v3}, Lio/reactivex/rxjava3/core/Observable;->subscribe()Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 172
     .line 173
     .line 174
-    .line 175
     move-result-object p3
 
-    .line 176
-    iget-object v0, p2, LjEa;->l:Lio/reactivex/rxjava3/disposables/SerialDisposable;
+    .line 175
+    iget-object v0, p2, LuQa;->l:Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
+    .line 176
     .line 177
-    .line 178
     invoke-virtual {v0, p3}, Lio/reactivex/rxjava3/disposables/SerialDisposable;->e(Lio/reactivex/rxjava3/disposables/Disposable;)V
 
+    .line 178
     .line 179
     .line 180
+    iget-object p3, p2, LuQa;->b:Lga0;
+
     .line 181
-    iget-object p3, p2, LjEa;->b:LL70;
-
     .line 182
-    .line 183
-    invoke-virtual {p3}, LL70;->n()V
+    invoke-virtual {p3}, Lga0;->q()V
 
+    .line 183
     .line 184
     .line 185
-    .line 186
     :goto_4
     const/4 v1, 0x1
 
-    .line 187
+    .line 186
     goto :goto_5
 
-    .line 188
+    .line 187
     :cond_7
-    new-instance p1, LFzc;
+    new-instance p1, LwOc;
 
+    .line 188
     .line 189
-    .line 190
     invoke-direct {p1}, Ljava/lang/RuntimeException;-><init>()V
 
+    .line 190
     .line 191
     .line 192
-    .line 193
     throw p1
 
-    .line 194
+    .line 193
     :cond_8
-    iget-object p3, p2, LjEa;->l:Lio/reactivex/rxjava3/disposables/SerialDisposable;
+    iget-object p3, p2, LuQa;->l:Lio/reactivex/rxjava3/disposables/SerialDisposable;
 
+    .line 194
     .line 195
-    .line 196
     invoke-virtual {p3}, Lio/reactivex/rxjava3/disposables/SerialDisposable;->a()Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 196
     .line 197
     .line 198
-    .line 199
     move-result-object p3
 
-    .line 200
+    .line 199
     if-eqz p3, :cond_9
 
+    .line 200
     .line 201
-    .line 202
     invoke-interface {p3}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
 
+    .line 202
     .line 203
     .line 204
-    .line 205
     :cond_9
-    iget-object p3, p2, LjEa;->b:LL70;
+    iget-object p3, p2, LuQa;->b:Lga0;
 
+    .line 205
     .line 206
-    .line 207
-    invoke-virtual {p3}, LL70;->l()V
+    invoke-virtual {p3}, Lga0;->o()V
 
+    .line 207
     .line 208
     .line 209
-    .line 210
     goto :goto_4
 
-    .line 211
+    .line 210
     :goto_5
-    invoke-virtual {p2, p1, v1}, LjEa;->b(IZ)V
+    invoke-virtual {p2, p1, v1}, LuQa;->b(IZ)V
 
+    .line 211
     .line 212
     .line 213
-    .line 214
     return v2
 
-    .line 215
+    .line 214
     :cond_a
     const-string p1, "delegate"
 
+    .line 215
     .line 216
-    .line 217
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 217
     .line 218
     .line 219
-    .line 220
     throw p3
 
-    .line 221
+    .line 220
     :cond_b
     const-string p1, "timber"
 
+    .line 221
     .line 222
-    .line 223
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 223
     .line 224
     .line 225
-    .line 226
     throw p3
 .end method

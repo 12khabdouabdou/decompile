@@ -1,229 +1,140 @@
-.class public final synthetic LmUf;
-.super Lj28;
+.class public final LmUf;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LX18;
-
-
-# static fields
-.field public static final f0:LmUf;
+.implements Lcom/snap/modules/mdp/SDOMMediaManager;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    new-instance v0, LmUf;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "<init>(JLjava/lang/String;Ljava/lang/String;Lcom/snap/core/model/Username;Lcom/snap/core/db/column/Friendmojis;Ljava/lang/String;Ljava/lang/Integer;Lcom/snap/core/db/column/FriendLinkType;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;Lcom/snap/core/db/column/CalendarDate;Ljava/lang/Long;ZLjava/lang/Long;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)V"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    sget-object v0, LOEb;->Z:LOEb;
 
+    .line 5
     .line 6
-    const/16 v1, 0x12
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
     .line 8
-    const-class v3, LmK7;
-
     .line 9
+    const-string v0, "SdomMediaManager"
+
     .line 10
-    const-string v4, "<init>"
-
     .line 11
-    .line 12
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 12
     .line 13
     .line 14
-    .line 15
-    sput-object v0, LmUf;->f0:LmUf;
+    sget-object v0, LJp0;->a:LJp0;
 
+    .line 15
     .line 16
-    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final H(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 21
+.method public final addBlobToLocalCache([BLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+    .locals 0
 
     .line 1
-    move-object/from16 v0, p1
+    const-string p1, ""
 
     .line 2
     .line 3
-    check-cast v0, Ljava/lang/Number;
+    invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
-
     .line 6
+    return-void
+.end method
+
+.method public final addFileToLocalCache(Ljava/lang/String;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+    .locals 0
+
+    .line 1
+    invoke-interface {p2, p1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public getBlob(Lcom/snap/modules/mdp/SDOMMediaId;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/modules/mdp/SDOMMediaId;",
+            "Lkotlin/jvm/functions/Function1;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
+
+    .line 1
+    invoke-static {p0, p1, p2, p3}, Leyf;->getBlob(Lcom/snap/modules/mdp/SDOMMediaManager;Lcom/snap/modules/mdp/SDOMMediaId;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+    .locals 2
+
+    .line 1
+    sget-object v0, LcF3;->m:LbF3;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, LbF3;->b:LcF3;
+
     .line 7
     .line 8
-    move-result-wide v2
+    const-class v1, Lcom/snap/modules/mdp/SDOMMediaManager;
 
     .line 9
-    move-object/from16 v13, p2
-
     .line 10
-    .line 11
-    check-cast v13, Ljava/lang/String;
+    invoke-interface {v0, v1, p1, p0}, LcF3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
 
+    .line 11
     .line 12
     .line 13
-    move-object/from16 v14, p3
+    move-result p1
 
     .line 14
-    .line 15
-    check-cast v14, Ljava/lang/String;
+    return p1
+.end method
 
-    .line 16
-    .line 17
-    move-object/from16 v7, p4
+.method public final removeCachedContent(Ljava/util/List;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V
+    .locals 0
 
-    .line 18
-    .line 19
-    check-cast v7, Lsqj;
+    .line 1
+    invoke-interface {p2}, Lkotlin/jvm/functions/Function0;->d()Ljava/lang/Object;
 
-    .line 20
-    .line 21
-    move-object/from16 v6, p5
-
-    .line 22
-    .line 23
-    check-cast v6, LPU7;
-
-    .line 24
-    .line 25
-    move-object/from16 v15, p6
-
-    .line 26
-    .line 27
-    check-cast v15, Ljava/lang/String;
-
-    .line 28
-    .line 29
-    move-object/from16 v8, p7
-
-    .line 30
-    .line 31
-    check-cast v8, Ljava/lang/Integer;
-
-    .line 32
-    .line 33
-    move-object/from16 v5, p8
-
-    .line 34
-    .line 35
-    check-cast v5, LBN7;
-
-    .line 36
-    .line 37
-    move-object/from16 v16, p9
-
-    .line 38
-    .line 39
-    check-cast v16, Ljava/lang/String;
-
-    .line 40
-    .line 41
-    move-object/from16 v17, p10
-
-    .line 42
-    .line 43
-    check-cast v17, Ljava/lang/String;
-
-    .line 44
-    .line 45
-    move-object/from16 v10, p11
-
-    .line 46
-    .line 47
-    check-cast v10, Ljava/lang/Long;
-
-    .line 48
-    .line 49
-    move-object/from16 v4, p12
-
-    .line 50
-    .line 51
-    check-cast v4, LcL1;
-
-    .line 52
-    .line 53
-    move-object/from16 v11, p13
-
-    .line 54
-    .line 55
-    check-cast v11, Ljava/lang/Long;
-
-    .line 56
-    .line 57
-    move-object/from16 v0, p14
-
-    .line 58
-    .line 59
-    check-cast v0, Ljava/lang/Boolean;
-
-    .line 60
-    .line 61
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 62
-    .line 63
-    .line 64
-    move-result v20
-
-    .line 65
-    move-object/from16 v12, p15
-
-    .line 66
-    .line 67
-    check-cast v12, Ljava/lang/Long;
-
-    .line 68
-    .line 69
-    move-object/from16 v18, p16
-
-    .line 70
-    .line 71
-    check-cast v18, Ljava/lang/String;
-
-    .line 72
-    .line 73
-    move-object/from16 v9, p17
-
-    .line 74
-    .line 75
-    check-cast v9, Ljava/lang/Integer;
-
-    .line 76
-    .line 77
-    move-object/from16 v19, p18
-
-    .line 78
-    .line 79
-    check-cast v19, Ljava/lang/String;
-
-    .line 80
-    .line 81
-    new-instance v1, LmK7;
-
-    .line 82
-    .line 83
-    invoke-direct/range {v1 .. v20}, LmK7;-><init>(JLcL1;LBN7;LPU7;Lsqj;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-
-    .line 84
-    .line 85
-    .line 86
-    return-object v1
+    .line 2
+    .line 3
+    .line 4
+    return-void
 .end method

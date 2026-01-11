@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements LHe2;
+.implements Lrh2;
 
 
 # instance fields
-.field public a:Lobi;
+.field public a:LiAi;
 
 
 # direct methods
@@ -25,12 +25,12 @@
     move-result-object p1
 
     .line 3
-    new-instance v0, Lubi;
+    new-instance v0, LoAi;
 
-    invoke-direct {v0, p1}, Lubi;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p1}, LoAi;-><init>(Ljava/lang/Object;)V
 
     .line 4
-    iput-object v0, p0, Lcom/snap/camera/view/CameraGestureDetectionView;->a:Lobi;
+    iput-object v0, p0, Lcom/snap/camera/view/CameraGestureDetectionView;->a:LiAi;
 
     return-void
 .end method
@@ -49,12 +49,12 @@
     move-result-object p1
 
     .line 7
-    new-instance p2, Lubi;
+    new-instance p2, LoAi;
 
-    invoke-direct {p2, p1}, Lubi;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p2, p1}, LoAi;-><init>(Ljava/lang/Object;)V
 
     .line 8
-    iput-object p2, p0, Lcom/snap/camera/view/CameraGestureDetectionView;->a:Lobi;
+    iput-object p2, p0, Lcom/snap/camera/view/CameraGestureDetectionView;->a:LiAi;
 
     return-void
 .end method
@@ -73,12 +73,12 @@
     move-result-object p1
 
     .line 11
-    new-instance p2, Lubi;
+    new-instance p2, LoAi;
 
-    invoke-direct {p2, p1}, Lubi;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p2, p1}, LoAi;-><init>(Ljava/lang/Object;)V
 
     .line 12
-    iput-object p2, p0, Lcom/snap/camera/view/CameraGestureDetectionView;->a:Lobi;
+    iput-object p2, p0, Lcom/snap/camera/view/CameraGestureDetectionView;->a:LiAi;
 
     return-void
 .end method

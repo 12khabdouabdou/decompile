@@ -1,25 +1,44 @@
 .class public final LFWj;
-.super Ljava/lang/Object;
+.super Lrp0;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:LM65;
+# static fields
+.field public static final Z:LFWj;
 
 
 # direct methods
-.method public constructor <init>(LM65;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 5
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LFWj;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LFWj;->a:LM65;
+    sget-object v1, LNH9;->P0:LNH9;
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
+    const/16 v3, 0x1c
+
+    .line 7
+    .line 8
+    const-string v4, "VenueProfile"
+
+    .line 9
+    .line 10
+    invoke-direct {v0, v4, v1, v2, v3}, Lrp0;-><init>(Ljava/lang/String;LNH9;LYRa;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    sput-object v0, LFWj;->Z:LFWj;
+
+    .line 14
+    .line 15
     return-void
 .end method

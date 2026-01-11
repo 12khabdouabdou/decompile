@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/search_api/CreatorResult;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'title\':s?,\'subtitle\':s?,\'username\':s?,\'hostAccountUserId\':s?,\'bitmojiAvatarId\':s?,\'bitmojiSelfieId\':s?,\'logoUrl\':s?"
     typeReferences = {}

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lgv3;
+    proxyClass = Lly3;
     schema = "\'props\':r?:\'[0]\',\'deckContainerFactory\':r:\'[1]\'"
     typeReferences = {
         Lcom/snap/modules/deck/ComposerDeckPagePropsInterface;,

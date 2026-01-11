@@ -1,129 +1,220 @@
-.class public final synthetic Lxz3;
-.super Lj28;
+.class public abstract synthetic Lxz3;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function2;
 
 
 # static fields
-.field public static final f0:Lxz3;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 6
+    .locals 3
 
     .line 1
-    new-instance v0, Lxz3;
+    invoke-static {}, Landroid/graphics/drawable/GradientDrawable$Orientation;->values()[Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     .line 2
     .line 3
-    const-string v5, "toComposerBlockedUser(Ljava/lang/String;Lcom/snap/core/model/Username;)Lcom/snap/composer/people/BlockedUser;"
-
     .line 4
+    move-result-object v0
+
     .line 5
+    array-length v0, v0
+
+    .line 6
+    new-array v0, v0, [I
+
+    .line 7
+    .line 8
+    :try_start_0
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->TOP_BOTTOM:Landroid/graphics/drawable/GradientDrawable$Orientation;
+
+    .line 9
+    .line 10
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
     const/4 v2, 0x1
 
-    .line 6
-    const/4 v1, 0x2
-
-    .line 7
-    const-class v3, Lgrj;
-
-    .line 8
-    .line 9
-    const-string v4, "toComposerBlockedUser"
-
-    .line 10
-    .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 12
-    .line 13
-    .line 14
-    sput-object v0, Lxz3;->f0:Lxz3;
-
     .line 15
-    .line 16
-    return-void
-.end method
-
-
-# virtual methods
-.method public final N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
-
-    .line 1
-    check-cast p1, Ljava/lang/String;
-
-    .line 2
-    .line 3
-    check-cast p2, Lsqj;
-
-    .line 4
-    .line 5
-    sget-object p2, LXRg;->a:LWRg;
-
-    .line 6
-    .line 7
-    const-string v0, "toComposerBlockedUser"
-
-    .line 8
-    .line 9
-    invoke-virtual {p2, v0}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v0
-
-    .line 13
-    :try_start_0
-    new-instance v1, Lzf1;
-
-    .line 14
-    .line 15
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 16
     .line 17
-    .line 18
-    move-result-object p1
+    :catch_0
+    :try_start_1
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->TR_BL:Landroid/graphics/drawable/GradientDrawable$Orientation;
 
+    .line 18
     .line 19
-    invoke-direct {v1, p1}, Lzf1;-><init>(Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 20
     .line 21
     .line 22
-    invoke-virtual {p2, v0}, LWRg;->h(I)V
+    move-result v1
 
     .line 23
-    .line 24
-    .line 25
-    return-object v1
+    const/4 v2, 0x2
 
+    .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
     .line 26
-    :catchall_0
-    move-exception p1
+    :catch_1
+    :try_start_2
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->RIGHT_LEFT:Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     .line 27
-    sget-object p2, LXRg;->b:Lzhi;
-
     .line 28
-    .line 29
-    if-eqz p2, :cond_0
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
+    .line 29
     .line 30
     .line 31
-    invoke-virtual {p2, v0}, Lzhi;->o(I)V
+    move-result v1
 
     .line 32
+    const/4 v2, 0x3
+
     .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 34
-    :cond_0
-    throw p1
+    .line 35
+    :catch_2
+    :try_start_3
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->BR_TL:Landroid/graphics/drawable/GradientDrawable$Orientation;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v1
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 43
+    .line 44
+    :catch_3
+    :try_start_4
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->BOTTOM_TOP:Landroid/graphics/drawable/GradientDrawable$Orientation;
+
+    .line 45
+    .line 46
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v1
+
+    .line 50
+    const/4 v2, 0x5
+
+    .line 51
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 52
+    .line 53
+    :catch_4
+    :try_start_5
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->BL_TR:Landroid/graphics/drawable/GradientDrawable$Orientation;
+
+    .line 54
+    .line 55
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v1
+
+    .line 59
+    const/4 v2, 0x6
+
+    .line 60
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 61
+    .line 62
+    :catch_5
+    :try_start_6
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->LEFT_RIGHT:Landroid/graphics/drawable/GradientDrawable$Orientation;
+
+    .line 63
+    .line 64
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v1
+
+    .line 68
+    const/4 v2, 0x7
+
+    .line 69
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 70
+    .line 71
+    :catch_6
+    :try_start_7
+    sget-object v1, Landroid/graphics/drawable/GradientDrawable$Orientation;->TL_BR:Landroid/graphics/drawable/GradientDrawable$Orientation;
+
+    .line 72
+    .line 73
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v1
+
+    .line 77
+    const/16 v2, 0x8
+
+    .line 78
+    .line 79
+    aput v2, v0, v1
+    :try_end_7
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+
+    .line 80
+    .line 81
+    :catch_7
+    sput-object v0, Lxz3;->a:[I
+
+    .line 82
+    .line 83
+    return-void
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final gender:Lvb8;
+.field private final gender:LRh8;
 
 .field private final isProcessed:Z
 
@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLvb8;)V
+.method public constructor <init>(Ljava/lang/String;ZLRh8;)V
     .locals 0
 
     .line 1
@@ -29,14 +29,14 @@
 
     .line 7
     .line 8
-    iput-object p3, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iput-object p3, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
     .line 9
     .line 10
     return-void
 .end method
 
-.method public static synthetic copy$default(Lapp/aifactory/sdk/api/model/TargetInfo;Ljava/lang/String;ZLvb8;ILjava/lang/Object;)Lapp/aifactory/sdk/api/model/TargetInfo;
+.method public static synthetic copy$default(Lapp/aifactory/sdk/api/model/TargetInfo;Ljava/lang/String;ZLRh8;ILjava/lang/Object;)Lapp/aifactory/sdk/api/model/TargetInfo;
     .locals 0
 
     .line 1
@@ -74,12 +74,12 @@
 
     .line 16
     .line 17
-    iget-object p3, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iget-object p3, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
     .line 18
     .line 19
     :cond_2
-    invoke-virtual {p0, p1, p2, p3}, Lapp/aifactory/sdk/api/model/TargetInfo;->copy(Ljava/lang/String;ZLvb8;)Lapp/aifactory/sdk/api/model/TargetInfo;
+    invoke-virtual {p0, p1, p2, p3}, Lapp/aifactory/sdk/api/model/TargetInfo;->copy(Ljava/lang/String;ZLRh8;)Lapp/aifactory/sdk/api/model/TargetInfo;
 
     .line 20
     .line 21
@@ -108,18 +108,18 @@
     return v0
 .end method
 
-.method public final component3()Lvb8;
+.method public final component3()LRh8;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iget-object v0, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final copy(Ljava/lang/String;ZLvb8;)Lapp/aifactory/sdk/api/model/TargetInfo;
+.method public final copy(Ljava/lang/String;ZLRh8;)Lapp/aifactory/sdk/api/model/TargetInfo;
     .locals 1
 
     .line 1
@@ -127,7 +127,7 @@
 
     .line 2
     .line 3
-    invoke-direct {v0, p1, p2, p3}, Lapp/aifactory/sdk/api/model/TargetInfo;-><init>(Ljava/lang/String;ZLvb8;)V
+    invoke-direct {v0, p1, p2, p3}, Lapp/aifactory/sdk/api/model/TargetInfo;-><init>(Ljava/lang/String;ZLRh8;)V
 
     .line 4
     .line 5
@@ -160,7 +160,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/TargetInfo;->uri:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -178,9 +178,9 @@
     return v2
 
     :cond_3
-    iget-object v1, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iget-object v1, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
-    iget-object p1, p1, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iget-object p1, p1, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
     if-eq v1, p1, :cond_4
 
@@ -190,11 +190,11 @@
     return v0
 .end method
 
-.method public final getGender()Lvb8;
+.method public final getGender()LRh8;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iget-object v0, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
     .line 2
     .line 3
@@ -234,7 +234,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iget-object v1, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -281,7 +281,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:Lvb8;
+    iget-object v1, p0, Lapp/aifactory/sdk/api/model/TargetInfo;->gender:LRh8;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -1,164 +1,123 @@
 .class public final LPyk;
-.super Ljava/util/concurrent/ThreadPoolExecutor;
+.super LYsk;
 .source "SourceFile"
 
-
-# instance fields
-.field public a:Z
-
-.field public final b:Ljava/util/concurrent/locks/ReentrantLock;
-
-.field public final c:Ljava/util/concurrent/locks/Condition;
-
-
-# direct methods
-.method public constructor <init>(Ljava/util/concurrent/PriorityBlockingQueue;)V
-    .locals 7
-
-    .line 1
-    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 2
-    .line 3
-    const-wide/16 v3, 0xa
-
-    .line 4
-    .line 5
-    const/4 v1, 0x3
-
-    .line 6
-    const/4 v2, 0x3
-
-    .line 7
-    move-object v0, p0
-
-    .line 8
-    move-object v6, p1
-
-    .line 9
-    invoke-direct/range {v0 .. v6}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;)V
-
-    .line 10
-    .line 11
-    .line 12
-    const/4 p1, 0x1
-
-    .line 13
-    iput-boolean p1, v0, LPyk;->a:Z
-
-    .line 14
-    .line 15
-    new-instance p1, Ljava/util/concurrent/locks/ReentrantLock;
-
-    .line 16
-    .line 17
-    invoke-direct {p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
-
-    .line 18
-    .line 19
-    .line 20
-    iput-object p1, v0, LPyk;->b:Ljava/util/concurrent/locks/ReentrantLock;
-
-    .line 21
-    .line 22
-    invoke-virtual {p1}, Ljava/util/concurrent/locks/ReentrantLock;->newCondition()Ljava/util/concurrent/locks/Condition;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object p1
-
-    .line 26
-    iput-object p1, v0, LPyk;->c:Ljava/util/concurrent/locks/Condition;
-
-    .line 27
-    .line 28
-    return-void
-.end method
+# interfaces
+.implements LXyk;
 
 
 # virtual methods
-.method public final beforeExecute(Ljava/lang/Thread;Ljava/lang/Runnable;)V
-    .locals 1
+.method public final R(LBYc;LEyk;)LLyk;
+    .locals 3
 
     .line 1
-    invoke-super {p0, p1, p2}, Ljava/util/concurrent/ThreadPoolExecutor;->beforeExecute(Ljava/lang/Thread;Ljava/lang/Runnable;)V
+    invoke-virtual {p0}, LYsk;->O()Landroid/os/Parcel;
 
     .line 2
     .line 3
     .line 4
-    iget-object p2, p0, LPyk;->b:Ljava/util/concurrent/locks/ReentrantLock;
+    move-result-object v0
 
     .line 5
-    .line 6
-    invoke-virtual {p2}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
+    invoke-static {v0, p1}, LEBk;->a(Landroid/os/Parcel;LR49;)V
 
+    .line 6
     .line 7
     .line 8
+    const/4 p1, 0x1
+
     .line 9
-    :goto_0
-    :try_start_0
-    iget-boolean v0, p0, LPyk;->a:Z
+    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 10
     .line 11
-    if-eqz v0, :cond_0
-
     .line 12
+    const/4 v1, 0x0
+
     .line 13
-    iget-object v0, p0, LPyk;->c:Ljava/util/concurrent/locks/Condition;
+    invoke-virtual {p2, v0, v1}, LEyk;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 14
     .line 15
-    invoke-interface {v0}, Ljava/util/concurrent/locks/Condition;->await()V
-    :try_end_0
-    .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 16
+    invoke-virtual {p0, p1, v0}, LYsk;->P(ILandroid/os/Parcel;)Landroid/os/Parcel;
+
     .line 17
     .line 18
-    goto :goto_0
-
     .line 19
-    :catchall_0
-    move-exception p1
+    move-result-object p1
 
     .line 20
-    goto :goto_1
+    invoke-virtual {p1}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     .line 21
-    :cond_0
-    invoke-virtual {p2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
-
     .line 22
     .line 23
+    move-result-object p2
+
     .line 24
-    return-void
+    if-nez p2, :cond_0
 
     .line 25
-    :catch_0
-    :try_start_1
-    invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
     .line 26
+    const/4 p2, 0x0
+
     .line 27
+    goto :goto_0
+
     .line 28
-    invoke-virtual {p2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
+    :cond_0
+    const-string v0, "com.google.android.gms.vision.barcode.internal.client.INativeBarcodeDetector"
 
     .line 29
     .line 30
+    invoke-interface {p2, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
     .line 31
-    return-void
-
     .line 32
-    :goto_1
-    invoke-virtual {p2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
-
     .line 33
+    move-result-object v1
+
     .line 34
+    instance-of v2, v1, LLyk;
+
     .line 35
-    throw p1
+    .line 36
+    if-eqz v2, :cond_1
+
+    .line 37
+    .line 38
+    move-object p2, v1
+
+    .line 39
+    check-cast p2, LLyk;
+
+    .line 40
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :cond_1
+    new-instance v1, LLyk;
+
+    .line 43
+    .line 44
+    const/4 v2, 0x6
+
+    .line 45
+    invoke-direct {v1, p2, v0, v2}, LYsk;-><init>(Landroid/os/IBinder;Ljava/lang/String;I)V
+
+    .line 46
+    .line 47
+    .line 48
+    move-object p2, v1
+
+    .line 49
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->recycle()V
+
+    .line 50
+    .line 51
+    .line 52
+    return-object p2
 .end method

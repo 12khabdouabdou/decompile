@@ -2,24 +2,15 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LGs3;
-
 
 # instance fields
-.field public final X:LFY4;
+.field public final a:LRL4;
 
-.field public final a:LnM4;
-
-.field public final b:LaN4;
-
-.field public final c:LqY4;
-
-.field public final t:LJO4;
+.field public final b:LW62;
 
 
 # direct methods
-.method public constructor <init>(LqY4;LFY4;LJO4;LnM4;LaN4;)V
+.method public constructor <init>(LRL4;LW62;)V
     .locals 0
 
     .line 1
@@ -28,25 +19,13 @@
     .line 2
     .line 3
     .line 4
-    iput-object p4, p0, LdM4;->a:LnM4;
+    iput-object p1, p0, LdM4;->a:LRL4;
 
     .line 5
     .line 6
-    iput-object p5, p0, LdM4;->b:LaN4;
+    iput-object p2, p0, LdM4;->b:LW62;
 
     .line 7
     .line 8
-    iput-object p1, p0, LdM4;->c:LqY4;
-
-    .line 9
-    .line 10
-    iput-object p3, p0, LdM4;->t:LJO4;
-
-    .line 11
-    .line 12
-    iput-object p2, p0, LdM4;->X:LFY4;
-
-    .line 13
-    .line 14
     return-void
 .end method

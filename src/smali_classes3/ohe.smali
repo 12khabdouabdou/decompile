@@ -1,255 +1,136 @@
-.class public final enum Lohe;
-.super Ljava/lang/Enum;
+.class public final Lohe;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Action;
 
-# static fields
-.field public static final enum X:Lohe;
 
-.field public static final enum Y:Lohe;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final enum Z:Lohe;
+.field public final synthetic b:LJ0f;
 
-.field public static final enum a:Lohe;
-
-.field public static final enum b:Lohe;
-
-.field public static final enum c:Lohe;
-
-.field public static final synthetic e0:[Lohe;
-
-.field public static final enum t:Lohe;
+.field public final synthetic c:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 15
+.method public synthetic constructor <init>(LJ0f;Lio/reactivex/rxjava3/subjects/PublishSubject;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x6
+    iput p3, p0, Lohe;->a:I
 
-    .line 2
-    const/4 v1, 0x5
+    iput-object p1, p0, Lohe;->b:LJ0f;
 
-    .line 3
-    const/4 v2, 0x4
+    iput-object p2, p0, Lohe;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 4
-    const/4 v3, 0x3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
-    const/4 v4, 0x2
-
-    .line 6
-    const/4 v5, 0x1
-
-    .line 7
-    const/4 v6, 0x0
-
-    .line 8
-    new-instance v7, Lohe;
-
-    .line 9
-    .line 10
-    const-string v8, "TILE_SERVE"
-
-    .line 11
-    .line 12
-    invoke-direct {v7, v8, v6}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v7, Lohe;->a:Lohe;
-
-    .line 16
-    .line 17
-    new-instance v8, Lohe;
-
-    .line 18
-    .line 19
-    const-string v9, "TILE_INSERT"
-
-    .line 20
-    .line 21
-    invoke-direct {v8, v9, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 22
-    .line 23
-    .line 24
-    sput-object v8, Lohe;->b:Lohe;
-
-    .line 25
-    .line 26
-    new-instance v9, Lohe;
-
-    .line 27
-    .line 28
-    const-string v10, "TILE_LANDING_VIEW"
-
-    .line 29
-    .line 30
-    invoke-direct {v9, v10, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 31
-    .line 32
-    .line 33
-    sput-object v9, Lohe;->c:Lohe;
-
-    .line 34
-    .line 35
-    new-instance v10, Lohe;
-
-    .line 36
-    .line 37
-    const-string v11, "TILE_VIEW"
-
-    .line 38
-    .line 39
-    invoke-direct {v10, v11, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 40
-    .line 41
-    .line 42
-    sput-object v10, Lohe;->t:Lohe;
-
-    .line 43
-    .line 44
-    new-instance v11, Lohe;
-
-    .line 45
-    .line 46
-    const-string v12, "TILE_TAP"
-
-    .line 47
-    .line 48
-    invoke-direct {v11, v12, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 49
-    .line 50
-    .line 51
-    sput-object v11, Lohe;->X:Lohe;
-
-    .line 52
-    .line 53
-    new-instance v12, Lohe;
-
-    .line 54
-    .line 55
-    const-string v13, "TILE_CTA_TAP"
-
-    .line 56
-    .line 57
-    invoke-direct {v12, v13, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 58
-    .line 59
-    .line 60
-    sput-object v12, Lohe;->Y:Lohe;
-
-    .line 61
-    .line 62
-    new-instance v13, Lohe;
-
-    .line 63
-    .line 64
-    const-string v14, "TILE_AD_TRACK"
-
-    .line 65
-    .line 66
-    invoke-direct {v13, v14, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 67
-    .line 68
-    .line 69
-    sput-object v13, Lohe;->Z:Lohe;
-
-    .line 70
-    .line 71
-    const/4 v14, 0x7
-
-    .line 72
-    new-array v14, v14, [Lohe;
-
-    .line 73
-    .line 74
-    aput-object v7, v14, v6
-
-    .line 75
-    .line 76
-    aput-object v8, v14, v5
-
-    .line 77
-    .line 78
-    aput-object v9, v14, v4
-
-    .line 79
-    .line 80
-    aput-object v10, v14, v3
-
-    .line 81
-    .line 82
-    aput-object v11, v14, v2
-
-    .line 83
-    .line 84
-    aput-object v12, v14, v1
-
-    .line 85
-    .line 86
-    aput-object v13, v14, v0
-
-    .line 87
-    .line 88
-    sput-object v14, Lohe;->e0:[Lohe;
-
-    .line 89
-    .line 90
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lohe;
-    .locals 1
+
+# virtual methods
+.method public final run()V
+    .locals 3
 
     .line 1
-    const-class v0, Lohe;
+    iget v0, p0, Lohe;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    iget-object v0, p0, Lohe;->b:LJ0f;
 
     .line 7
-    check-cast p0, Lohe;
-
     .line 8
+    iget-boolean v1, v0, LJ0f;->a:Z
+
     .line 9
-    return-object p0
-.end method
+    .line 10
+    if-eqz v1, :cond_0
 
-.method public static values()[Lohe;
-    .locals 1
+    .line 11
+    .line 12
+    iget-object v1, p0, Lohe;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 1
-    sget-object v0, Lohe;->e0:[Lohe;
+    .line 13
+    .line 14
+    if-eqz v1, :cond_0
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 15
+    .line 16
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 17
+    .line 18
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 7
-    check-cast v0, [Lohe;
+    .line 19
+    .line 20
+    .line 21
+    :cond_0
+    const/4 v1, 0x0
 
-    .line 8
-    .line 9
-    return-object v0
+    .line 22
+    iput-boolean v1, v0, LJ0f;->a:Z
+
+    .line 23
+    .line 24
+    return-void
+
+    .line 25
+    :pswitch_0
+    iget-object v0, p0, Lohe;->b:LJ0f;
+
+    .line 26
+    .line 27
+    iget-boolean v1, v0, LJ0f;->a:Z
+
+    .line 28
+    .line 29
+    if-eqz v1, :cond_1
+
+    .line 30
+    .line 31
+    iget-object v1, p0, Lohe;->c:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 32
+    .line 33
+    if-eqz v1, :cond_1
+
+    .line 34
+    .line 35
+    sget-object v2, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 36
+    .line 37
+    invoke-virtual {v1, v2}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 38
+    .line 39
+    .line 40
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 41
+    iput-boolean v1, v0, LJ0f;->a:Z
+
+    .line 42
+    .line 43
+    return-void
+
+    .line 44
+    nop
+
+    .line 45
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

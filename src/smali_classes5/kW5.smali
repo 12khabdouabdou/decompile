@@ -1,387 +1,373 @@
 .class public final LkW5;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function1;
+.implements LN5h;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic X:Ljava/lang/Object;
+.field public final X:Ljava/util/concurrent/ConcurrentHashMap;
 
-.field public final synthetic Y:Lkotlin/jvm/functions/Function1;
+.field public final a:LHP;
 
-.field public final synthetic a:I
+.field public final b:J
 
-.field public final synthetic b:Lio/reactivex/rxjava3/core/SingleEmitter;
+.field public final c:Ljava/util/concurrent/TimeUnit;
 
-.field public final synthetic c:Lkotlin/jvm/functions/Function0;
-
-.field public final synthetic t:LVM5;
+.field public final t:Lkotlin/jvm/functions/Function0;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/SingleEmitter;Lkotlin/jvm/functions/Function0;LVM5;Ljava/lang/Object;Lkotlin/jvm/functions/Function1;I)V
-    .locals 0
+.method public constructor <init>(LHP;)V
+    .locals 4
 
     .line 1
-    iput p6, p0, LkW5;->a:I
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    iput-object p1, p0, LkW5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    .line 2
+    .line 3
+    sget-object v1, LjW5;->f0:LjW5;
 
-    iput-object p2, p0, LkW5;->c:Lkotlin/jvm/functions/Function0;
+    .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p3, p0, LkW5;->t:LVM5;
+    .line 6
+    .line 7
+    .line 8
+    iput-object p1, p0, LkW5;->a:LHP;
 
-    iput-object p4, p0, LkW5;->X:Ljava/lang/Object;
+    .line 9
+    .line 10
+    const-wide/16 v2, 0x2710
 
-    iput-object p5, p0, LkW5;->Y:Lkotlin/jvm/functions/Function1;
+    .line 11
+    .line 12
+    iput-wide v2, p0, LkW5;->b:J
 
-    const/4 p1, 0x1
+    .line 13
+    .line 14
+    iput-object v0, p0, LkW5;->c:Ljava/util/concurrent/TimeUnit;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    .line 15
+    .line 16
+    iput-object v1, p0, LkW5;->t:Lkotlin/jvm/functions/Function0;
 
+    .line 17
+    .line 18
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 19
+    .line 20
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    iput-object p1, p0, LkW5;->X:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 24
+    .line 25
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final accept(Ljava/lang/Object;)V
+    .locals 9
 
     .line 1
-    iget v0, p0, LkW5;->a:I
+    check-cast p1, LK5h;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    monitor-enter p0
 
     .line 4
+    :try_start_0
+    iget-object v0, p0, LkW5;->X:Ljava/util/concurrent/ConcurrentHashMap;
+
     .line 5
     .line 6
-    check-cast p1, Lcom/looksery/sdk/LSCoreManagerWrapper;
+    invoke-virtual {p1}, LK5h;->a()LY79;
 
     .line 7
     .line 8
-    iget-object p1, p0, LkW5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
-
     .line 9
+    move-result-object v1
+
     .line 10
-    iget-object v0, p0, LkW5;->c:Lkotlin/jvm/functions/Function0;
+    invoke-virtual {v0, v1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 11
     .line 12
-    sget-object v1, Li7j;->a:Li7j;
-
     .line 13
+    move-result-object v2
+
     .line 14
-    iget-object v2, p0, LkW5;->t:LVM5;
+    if-nez v2, :cond_1
 
     .line 15
     .line 16
-    iget-object v3, p0, LkW5;->X:Ljava/lang/Object;
+    new-instance v3, LNwd;
 
     .line 17
     .line 18
-    iget-object v4, p0, LkW5;->Y:Lkotlin/jvm/functions/Function1;
+    iget-object v4, p0, LkW5;->a:LHP;
 
     .line 19
     .line 20
-    sget-object v5, LXRg;->a:LWRg;
+    iget-wide v5, p0, LkW5;->b:J
 
     .line 21
     .line 22
-    const-string v6, "<*>"
+    iget-object v7, p0, LkW5;->c:Ljava/util/concurrent/TimeUnit;
 
     .line 23
     .line 24
-    invoke-virtual {v5, v6}, LWRg;->e(Ljava/lang/String;)I
+    iget-object v8, p0, LkW5;->t:Lkotlin/jvm/functions/Function0;
 
     .line 25
     .line 26
+    invoke-direct/range {v3 .. v8}, LNwd;-><init>(LHP;JLjava/util/concurrent/TimeUnit;Lkotlin/jvm/functions/Function0;)V
+
     .line 27
-    move-result v6
-
     .line 28
-    :try_start_0
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
     .line 29
+    invoke-virtual {v0, v1, v3}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 30
     .line 31
-    move-result v7
-
     .line 32
-    if-nez v7, :cond_1
+    move-result-object v0
 
     .line 33
-    .line 34
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    .line 35
-    .line 36
-    .line 37
-    :try_start_1
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 38
-    .line 39
-    .line 40
-    move-result v0
-
-    .line 41
     if-nez v0, :cond_0
 
-    .line 42
-    .line 43
-    invoke-virtual {v2, v3}, LVM5;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 34
+    .line 35
+    move-object v2, v3
 
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 47
+    .line 36
     goto :goto_0
 
-    .line 48
-    :catchall_0
-    move-exception p1
-
-    .line 49
-    goto :goto_1
-
-    .line 50
+    .line 37
     :cond_0
-    move-object v0, v1
+    move-object v2, v0
 
-    .line 51
-    :goto_0
-    :try_start_2
-    invoke-interface {v4, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 38
+    goto :goto_0
 
-    .line 52
-    .line 53
-    .line 54
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    .line 39
+    :catchall_0
+    move-exception v0
 
-    .line 55
-    .line 56
-    .line 57
-    goto :goto_2
+    .line 40
+    move-object p1, v0
 
-    .line 58
-    :catchall_1
-    move-exception p1
-
-    .line 59
+    .line 41
     goto :goto_3
 
-    .line 60
-    :goto_1
-    invoke-interface {v4, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 61
-    .line 62
-    .line 63
-    throw p1
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    .line 64
+    .line 42
     :cond_1
-    :goto_2
-    invoke-virtual {v5, v6}, LWRg;->h(I)V
+    :goto_0
+    check-cast v2, LNwd;
 
-    .line 65
-    .line 66
-    .line 67
-    return-object v1
+    .line 43
+    .line 44
+    iput-object p1, v2, LNwd;->f:LK5h;
 
-    .line 68
-    :goto_3
-    sget-object v0, LXRg;->b:Lzhi;
+    .line 45
+    .line 46
+    instance-of v0, p1, LH5h;
 
-    .line 69
-    .line 70
+    .line 47
+    .line 48
+    const/4 v1, 0x1
+
+    .line 49
     if-eqz v0, :cond_2
 
+    .line 50
+    .line 51
+    const/4 v0, 0x1
+
+    .line 52
+    goto :goto_1
+
+    .line 53
+    :cond_2
+    instance-of v0, p1, LF5h;
+
+    .line 54
+    .line 55
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 56
+    .line 57
+    iget-object p1, v2, LNwd;->e:Ljava/util/concurrent/CountDownLatch;
+
+    .line 58
+    .line 59
+    invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+
+    .line 60
+    .line 61
+    .line 62
+    goto :goto_2
+
+    .line 63
+    :cond_3
+    instance-of p1, p1, LG5h;
+
+    .line 64
+    .line 65
+    if-eqz p1, :cond_4
+
+    .line 66
+    .line 67
+    new-instance p1, Ljava/util/concurrent/CountDownLatch;
+
+    .line 68
+    .line 69
+    invoke-direct {p1, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
+
+    .line 70
     .line 71
     .line 72
-    invoke-virtual {v0, v6}, Lzhi;->o(I)V
+    iput-object p1, v2, LNwd;->e:Ljava/util/concurrent/CountDownLatch;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 73
     .line 74
+    :cond_4
+    :goto_2
+    monitor-exit p0
+
     .line 75
-    :cond_2
-    throw p1
+    return-void
 
     .line 76
-    :pswitch_0
-    check-cast p1, Lcom/looksery/sdk/LSCoreManagerWrapper;
+    :goto_3
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 77
-    .line 78
-    iget-object p1, p0, LkW5;->b:Lio/reactivex/rxjava3/core/SingleEmitter;
+    throw p1
+.end method
 
-    .line 79
-    .line 80
-    iget-object v0, p0, LkW5;->c:Lkotlin/jvm/functions/Function0;
+.method public final declared-synchronized b(LY79;)Lio/reactivex/rxjava3/core/Maybe;
+    .locals 3
 
-    .line 81
-    .line 82
-    sget-object v1, Li7j;->a:Li7j;
+    .line 1
+    monitor-enter p0
 
-    .line 83
-    .line 84
-    iget-object v2, p0, LkW5;->t:LVM5;
+    .line 2
+    :try_start_0
+    iget-object v0, p0, LkW5;->X:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 85
-    .line 86
-    iget-object v3, p0, LkW5;->X:Ljava/lang/Object;
+    .line 3
+    .line 4
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 87
-    .line 88
-    iget-object v4, p0, LkW5;->Y:Lkotlin/jvm/functions/Function1;
-
-    .line 89
-    .line 90
-    sget-object v5, LXRg;->a:LWRg;
-
-    .line 91
-    .line 92
-    const-string v6, "LOOK:DefaultTracker#enableOnlineMotion"
-
-    .line 93
-    .line 94
-    invoke-virtual {v5, v6}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 95
-    .line 96
-    .line 97
-    move-result v6
-
-    .line 98
-    :try_start_3
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 99
-    .line 100
-    .line 101
-    move-result v7
-
-    .line 102
-    if-nez v7, :cond_4
-
-    .line 103
-    .line 104
-    invoke-interface {v0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_2
-
-    .line 105
-    .line 106
-    .line 107
-    :try_start_4
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/SingleEmitter;->c()Z
-
-    .line 108
-    .line 109
-    .line 110
-    move-result v0
-
-    .line 111
-    if-nez v0, :cond_3
-
-    .line 112
-    .line 113
-    invoke-virtual {v2, v3}, LVM5;->g(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 114
-    .line 115
-    .line 116
+    .line 5
+    .line 6
+    .line 7
     move-result-object v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
-    .line 117
-    goto :goto_4
+    .line 8
+    check-cast v0, LNwd;
 
-    .line 118
-    :cond_3
-    move-object v0, v1
+    .line 9
+    .line 10
+    if-eqz v0, :cond_0
 
-    .line 119
-    :goto_4
-    :try_start_5
-    invoke-interface {v4, v0}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 11
+    .line 12
+    new-instance v1, LMwd;
 
-    .line 120
-    .line 121
-    .line 122
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/SingleEmitter;->onSuccess(Ljava/lang/Object;)V
+    .line 13
+    .line 14
+    invoke-direct {v1, v0}, LMwd;-><init>(LNwd;)V
 
-    .line 123
-    .line 124
-    .line 125
-    goto :goto_5
+    .line 15
+    .line 16
+    .line 17
+    new-instance v0, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeCreate;
 
-    .line 126
-    :catchall_2
+    .line 18
+    .line 19
+    invoke-direct {v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeCreate;-><init>(Lio/reactivex/rxjava3/core/MaybeOnSubscribe;)V
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance v1, LwG5;
+
+    .line 23
+    .line 24
+    const/16 v2, 0x17
+
+    .line 25
+    .line 26
+    invoke-direct {v1, p0, v2, p1}, LwG5;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 27
+    .line 28
+    .line 29
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeDoFinally;
+
+    .line 30
+    .line 31
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeDoFinally;-><init>(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Action;)V
+
+    .line 32
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :catchall_0
     move-exception p1
 
-    .line 127
-    goto :goto_6
+    .line 36
+    goto :goto_1
 
-    .line 128
-    :catchall_3
-    move-exception p1
+    .line 37
+    :cond_0
+    const/4 p1, 0x0
 
-    .line 129
-    invoke-interface {v4, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 38
+    :goto_0
+    if-nez p1, :cond_1
 
-    .line 130
-    .line 131
-    .line 132
+    .line 39
+    .line 40
+    sget-object p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;->a:Lio/reactivex/rxjava3/internal/operators/maybe/MaybeEmpty;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 41
+    .line 42
+    :cond_1
+    monitor-exit p0
+
+    .line 43
+    return-object p1
+
+    .line 44
+    :goto_1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 45
     throw p1
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_2
-
-    .line 133
-    :cond_4
-    :goto_5
-    invoke-virtual {v5, v6}, LWRg;->h(I)V
-
-    .line 134
-    .line 135
-    .line 136
-    return-object v1
-
-    .line 137
-    :goto_6
-    sget-object v0, LXRg;->b:Lzhi;
-
-    .line 138
-    .line 139
-    if-eqz v0, :cond_5
-
-    .line 140
-    .line 141
-    invoke-virtual {v0, v6}, Lzhi;->o(I)V
-
-    .line 142
-    .line 143
-    .line 144
-    :cond_5
-    throw p1
-
-    .line 145
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

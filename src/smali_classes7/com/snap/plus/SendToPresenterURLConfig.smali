@@ -1,10 +1,10 @@
 .class public final Lcom/snap/plus/SendToPresenterURLConfig;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'url\':s,\'sourceType\':r<e>:\'[0]\',\'additionalText\':s?,\'urlAnchor\':s?,\'preselectedUsers\':a?<r:\'[1]\'>"
     typeReferences = {

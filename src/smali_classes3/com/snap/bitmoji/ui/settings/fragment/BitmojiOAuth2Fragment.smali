@@ -3,11 +3,11 @@
 .source "SourceFile"
 
 # interfaces
-.implements LI51;
+.implements LY81;
 
 
 # instance fields
-.field public w0:LH51;
+.field public w0:LX81;
 
 .field public x0:Landroid/view/View;
 
@@ -27,11 +27,11 @@
 
 
 # virtual methods
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e04b0
+    const p3, 0x7f0e04d0
 
     .line 2
     .line 3
@@ -54,16 +54,16 @@
     return-object p1
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiOAuth2Fragment;->w0:LH51;
+    iget-object p1, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiOAuth2Fragment;->w0:LX81;
 
     .line 5
     .line 6
@@ -71,7 +71,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1, p0}, LH51;->W2(LI51;)V
+    invoke-virtual {p1, p0}, LX81;->f3(LY81;)V
 
     .line 9
     .line 10
@@ -84,7 +84,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -95,11 +95,11 @@
     throw p1
 .end method
 
-.method public final w1()V
+.method public final u1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiOAuth2Fragment;->w0:LH51;
+    iget-object v0, p0, Lcom/snap/bitmoji/ui/settings/fragment/BitmojiOAuth2Fragment;->w0:LX81;
 
     .line 2
     .line 3
@@ -107,7 +107,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LH51;->C1()V
+    invoke-virtual {v0}, LX81;->D1()V
 
     .line 6
     .line 7
@@ -120,7 +120,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13

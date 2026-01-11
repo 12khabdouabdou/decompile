@@ -1,113 +1,248 @@
 .class public final Lzrk;
-.super Ljava/lang/Object;
+.super LZNe;
 .source "SourceFile"
 
 # interfaces
-.implements LPJc;
+.implements Ljava/io/Serializable;
 
 
-# static fields
-.field public static final a:Lzrk;
+# instance fields
+.field public X:I
+
+.field public Y:I
+
+.field public Z:I
+
+.field public c:I
+
+.field public e0:I
+
+.field public t:I
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>(II)V
     .locals 3
 
     .line 1
-    new-instance v0, Lzrk;
+    not-int v0, p1
 
     .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    shl-int/lit8 v1, p1, 0xa
 
+    .line 3
     .line 4
+    ushr-int/lit8 v2, p2, 0x4
+
     .line 5
     .line 6
-    sput-object v0, Lzrk;->a:Lzrk;
+    xor-int/2addr v1, v2
 
     .line 7
-    .line 8
-    new-instance v0, LFhk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 8
     .line 9
     .line 10
-    const/4 v1, 0x1
+    iput p1, p0, Lzrk;->c:I
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
     .line 12
+    iput p2, p0, Lzrk;->t:I
+
     .line 13
     .line 14
-    const-class v1, LUhk;
+    const/4 v2, 0x0
 
     .line 15
-    .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    iput v2, p0, Lzrk;->X:I
 
+    .line 16
     .line 17
+    iput v2, p0, Lzrk;->Y:I
+
     .line 18
     .line 19
-    move-result-object v0
+    iput v0, p0, Lzrk;->Z:I
 
     .line 20
-    const/4 v2, 0x2
-
     .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
+    iput v1, p0, Lzrk;->e0:I
 
     .line 22
     .line 23
+    or-int/2addr p1, p2
+
     .line 24
-    move-result-object v0
+    or-int/2addr p1, v0
 
     .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    if-eqz p1, :cond_1
 
     .line 26
     .line 27
-    .line 28
-    move-result-object v0
+    :goto_0
+    const/16 p1, 0x40
 
+    .line 28
     .line 29
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
+    if-ge v2, p1, :cond_0
 
     .line 30
     .line 31
+    invoke-virtual {p0}, Lzrk;->g()I
+
     .line 32
+    .line 33
+    .line 34
+    add-int/lit8 v2, v2, 0x1
+
+    .line 35
+    .line 36
+    goto :goto_0
+
+    .line 37
+    :cond_0
     return-void
+
+    .line 38
+    :cond_1
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 39
+    .line 40
+    const-string p2, "Initial state must have at least one non-zero element."
+
+    .line 41
+    .line 42
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 43
+    .line 44
+    .line 45
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
+.method public final a(I)I
+    .locals 2
 
     .line 1
-    if-nez p1, :cond_0
+    invoke-virtual {p0}, Lzrk;->g()I
 
     .line 2
     .line 3
-    check-cast p2, LQJc;
-
     .line 4
+    move-result v0
+
     .line 5
-    const/4 p1, 0x0
+    rsub-int/lit8 v1, p1, 0x20
 
     .line 6
-    throw p1
-
     .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
+    ushr-int/2addr v0, v1
 
     .line 8
+    neg-int p1, p1
+
     .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+    shr-int/lit8 p1, p1, 0x1f
 
     .line 10
     .line 11
+    and-int/2addr p1, v0
+
     .line 12
-    throw p1
+    return p1
+.end method
+
+.method public final g()I
+    .locals 3
+
+    .line 1
+    iget v0, p0, Lzrk;->c:I
+
+    .line 2
+    .line 3
+    ushr-int/lit8 v1, v0, 0x2
+
+    .line 4
+    .line 5
+    xor-int/2addr v0, v1
+
+    .line 6
+    iget v1, p0, Lzrk;->t:I
+
+    .line 7
+    .line 8
+    iput v1, p0, Lzrk;->c:I
+
+    .line 9
+    .line 10
+    iget v1, p0, Lzrk;->X:I
+
+    .line 11
+    .line 12
+    iput v1, p0, Lzrk;->t:I
+
+    .line 13
+    .line 14
+    iget v1, p0, Lzrk;->Y:I
+
+    .line 15
+    .line 16
+    iput v1, p0, Lzrk;->X:I
+
+    .line 17
+    .line 18
+    iget v1, p0, Lzrk;->Z:I
+
+    .line 19
+    .line 20
+    iput v1, p0, Lzrk;->Y:I
+
+    .line 21
+    .line 22
+    shl-int/lit8 v2, v0, 0x1
+
+    .line 23
+    .line 24
+    xor-int/2addr v0, v2
+
+    .line 25
+    xor-int/2addr v0, v1
+
+    .line 26
+    shl-int/lit8 v1, v1, 0x4
+
+    .line 27
+    .line 28
+    xor-int/2addr v0, v1
+
+    .line 29
+    iput v0, p0, Lzrk;->Z:I
+
+    .line 30
+    .line 31
+    iget v1, p0, Lzrk;->e0:I
+
+    .line 32
+    .line 33
+    const v2, 0x587c5
+
+    .line 34
+    .line 35
+    .line 36
+    add-int/2addr v1, v2
+
+    .line 37
+    iput v1, p0, Lzrk;->e0:I
+
+    .line 38
+    .line 39
+    add-int/2addr v0, v1
+
+    .line 40
+    return v0
 .end method

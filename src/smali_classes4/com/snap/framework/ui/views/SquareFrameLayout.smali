@@ -114,7 +114,7 @@
 
     .line 21
     .line 22
-    invoke-static {p2, v1, v2, v0}, Lngk;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v1, v2, v0}, LhGk;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

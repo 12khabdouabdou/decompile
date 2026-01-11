@@ -1,302 +1,52 @@
-.class public final LiG8;
+.class public abstract LiG8;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
 
+# static fields
+.field public static final a:Ljava/io/File;
 
-# instance fields
-.field public final synthetic a:I
+.field public static final b:LREi;
 
 
 # direct methods
-.method public synthetic constructor <init>(I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput p1, p0, LiG8;->a:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
-    .locals 0
-
-    .line 2
-    iput p1, p0, LiG8;->a:I
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method private final A()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final B()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final C()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final a()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final b()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final c()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final d()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final synthetic e()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final f()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final g()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final h()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final i()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final j()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final k()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final l()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final m()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final n()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final o()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final p()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final q()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final r()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final s()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final t()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final u()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final synthetic v()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final w()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final x()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final y()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method private final z()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 1
-
-    .line 1
-    iget v0, p0, LiG8;->a:I
+    new-instance v0, Ljava/io/File;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string v1, "/sys/class/kgsl/kgsl-3d0/gpu_busy_percentage"
 
     .line 4
     .line 5
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
     .line 6
-    :pswitch_0
-    return-void
-
     .line 7
-    :pswitch_1
-    sget-object v0, LBEb;->a:LWm0;
-
     .line 8
-    .line 9
-    :pswitch_2
-    return-void
+    sput-object v0, LiG8;->a:Ljava/io/File;
 
+    .line 9
     .line 10
-    nop
+    sget-object v0, LOX7;->u0:LOX7;
 
     .line 11
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
+    .line 12
+    new-instance v1, LREi;
+
+    .line 13
+    .line 14
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v1, LiG8;->b:LREi;
+
+    .line 18
+    .line 19
+    return-void
 .end method

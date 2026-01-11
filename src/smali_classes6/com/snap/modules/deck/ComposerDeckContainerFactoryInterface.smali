@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lfv3;
+    proxyClass = Lky3;
     schema = "\'createModalContainer\':f|m|(r:\'[0]\'): r:\'[1]\',\'createNavigationContainer\':f|m|(r:\'[2]\'): r:\'[3]\'"
     typeReferences = {
         Lcom/snap/modules/deck/ModalContainerConfig;,

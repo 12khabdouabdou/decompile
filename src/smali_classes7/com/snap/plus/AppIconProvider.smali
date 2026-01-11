@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LOX;
+    proxyClass = Lk00;
     schema = "\'setAppIconName\':f|m|(s),\'appIconNameObservable\':f|m|(): g<c>:\'[0]\'<s>,\'availableAppIconsObservable\':f|m|(): g<c>:\'[0]\'<a<r:\'[1]\'>>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        LLX;
+        Lh00;
     }
 .end annotation
 
@@ -36,7 +36,7 @@
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "LLX;",
+            "Lh00;",
             ">;>;"
         }
     .end annotation

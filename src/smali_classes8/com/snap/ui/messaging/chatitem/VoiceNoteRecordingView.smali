@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public final a:LYj;
+.field public final a:LL4;
 
 .field public final b:F
 
@@ -42,7 +42,7 @@
 
 .field public final r0:I
 
-.field public s0:LEsj;
+.field public s0:LYij;
 
 .field public final t:F
 
@@ -84,7 +84,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -105,7 +105,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -115,9 +115,9 @@
 
     const/4 v0, 0x3
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    const/4 v2, 0x0
 
     const/4 v3, 0x2
 
@@ -125,32 +125,32 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 5
-    new-instance p2, LYj;
+    new-instance p2, LL4;
 
     .line 6
-    invoke-direct {p2, v2}, LYj;-><init>(I)V
+    invoke-direct {p2, v3, v2}, LL4;-><init>(IZ)V
 
     .line 7
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p3, p2, LYj;->t:Ljava/lang/Object;
+    iput-object p3, p2, LL4;->t:Ljava/lang/Object;
 
     .line 8
     new-instance p3, Ljava/util/Random;
 
     invoke-direct {p3}, Ljava/util/Random;-><init>()V
 
-    iput-object p3, p2, LYj;->X:Ljava/lang/Object;
+    iput-object p3, p2, LL4;->X:Ljava/lang/Object;
 
     const/16 p3, 0xfff
 
     .line 9
-    iput p3, p2, LYj;->c:I
+    iput p3, p2, LL4;->c:I
 
     .line 10
-    iput-object p2, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->a:LYj;
+    iput-object p2, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->a:LL4;
 
     .line 11
     new-instance p2, Landroid/animation/AnimatorSet;
@@ -189,9 +189,9 @@
 
     new-array v9, v3, [F
 
-    aput v7, v9, v1
+    aput v7, v9, v2
 
-    aput v8, v9, v2
+    aput v8, v9, v1
 
     .line 16
     const-string v7, "translationY"
@@ -202,9 +202,9 @@
 
     new-array v9, v0, [Landroid/animation/Animator;
 
-    aput-object p3, v9, v1
+    aput-object p3, v9, v2
 
-    aput-object v5, v9, v2
+    aput-object v5, v9, v1
 
     aput-object v8, v9, v3
 
@@ -247,9 +247,9 @@
 
     new-array v8, v3, [F
 
-    aput v5, v8, v1
+    aput v5, v8, v2
 
-    aput v6, v8, v2
+    aput v6, v8, v1
 
     .line 24
     invoke-static {p0, v7, v8}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
@@ -258,9 +258,9 @@
 
     new-array v0, v0, [Landroid/animation/Animator;
 
-    aput-object p3, v0, v1
+    aput-object p3, v0, v2
 
-    aput-object v4, v0, v2
+    aput-object v4, v0, v1
 
     aput-object v5, v0, v3
 
@@ -275,7 +275,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0702d5
+    const p3, 0x7f0702dc
 
     .line 28
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -299,7 +299,7 @@
     .line 31
     iput v0, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->t:F
 
-    const v0, 0x7f0702d4
+    const v0, 0x7f0702db
 
     .line 32
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -310,7 +310,7 @@
 
     iput v0, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->e0:F
 
-    const v0, 0x7f0702d9
+    const v0, 0x7f0702e0
 
     .line 33
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -319,7 +319,7 @@
 
     iput v4, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->f0:I
 
-    const v5, 0x7f0702d8
+    const v5, 0x7f0702df
 
     .line 34
     invoke-virtual {p2, v5}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -335,14 +335,14 @@
 
     iput v0, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->h0:I
 
-    const v0, 0x7f0702dd
+    const v0, 0x7f0702e4
 
     .line 36
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     move-result v0
 
-    const v5, 0x7f0702cc
+    const v5, 0x7f0702d3
 
     .line 37
     invoke-virtual {p2, v5}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -356,17 +356,17 @@
 
     iput-object v5, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->i0:[Landroid/graphics/Path;
 
-    const v5, 0x7f060237
+    const v5, 0x7f06028f
 
     .line 39
-    invoke-static {p1, v5}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, v5}, LV14;->c(Landroid/content/Context;I)I
 
     move-result v5
 
     iput v5, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->r0:I
 
     .line 40
-    invoke-static {v5}, Lozc;->a(I)Landroid/graphics/Paint;
+    invoke-static {v5}, Lukg;->a(I)Landroid/graphics/Paint;
 
     move-result-object v6
 
@@ -392,28 +392,28 @@
 
     move-result-object v6
 
-    const v9, 0x7f0404b8
+    const v9, 0x7f040545
 
-    invoke-static {v6, v9}, LI0j;->m(Landroid/content/res/Resources$Theme;I)I
+    invoke-static {v6, v9}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
 
     move-result v6
 
     .line 45
-    invoke-static {v6}, Lozc;->a(I)Landroid/graphics/Paint;
+    invoke-static {v6}, Lukg;->a(I)Landroid/graphics/Paint;
 
     move-result-object v6
 
     iput-object v6, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->k0:Landroid/graphics/Paint;
 
-    const v6, 0x7f060213
+    const v6, 0x7f06026b
 
     .line 46
-    invoke-static {p1, v6}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, v6}, LV14;->c(Landroid/content/Context;I)I
 
     move-result v6
 
     .line 47
-    invoke-static {v6}, Lozc;->a(I)Landroid/graphics/Paint;
+    invoke-static {v6}, Lukg;->a(I)Landroid/graphics/Paint;
 
     move-result-object v6
 
@@ -423,7 +423,7 @@
     invoke-virtual {v6, v8}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 49
-    invoke-static {v5}, Lozc;->a(I)Landroid/graphics/Paint;
+    invoke-static {v5}, Lukg;->a(I)Landroid/graphics/Paint;
 
     move-result-object v5
 
@@ -478,7 +478,7 @@
     .line 58
     invoke-virtual {p3, p1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    const p1, 0x7f0800bf
+    const p1, 0x7f0800c2
 
     .line 59
     invoke-virtual {p3, p1}, Landroid/widget/ImageView;->setImageResource(I)V
@@ -504,16 +504,16 @@
     move-result-object p1
 
     .line 64
-    new-instance p2, LqPj;
+    new-instance p2, LWek;
 
-    invoke-direct {p2, p0, v2}, LqPj;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
+    invoke-direct {p2, p0, v1}, LWek;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
 
     invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 65
-    new-instance p2, LrPj;
+    new-instance p2, LXek;
 
-    invoke-direct {p2, p0, v2}, LrPj;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
+    invoke-direct {p2, p0, v1}, LXek;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
 
     invoke-virtual {p1, p2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -530,16 +530,16 @@
     move-result-object p1
 
     .line 68
-    new-instance p2, LqPj;
+    new-instance p2, LWek;
 
-    invoke-direct {p2, p0, v1}, LqPj;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
+    invoke-direct {p2, p0, v2}, LWek;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
 
     invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 69
-    new-instance p2, LrPj;
+    new-instance p2, LXek;
 
-    invoke-direct {p2, p0, v1}, LrPj;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
+    invoke-direct {p2, p0, v2}, LXek;-><init>(Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;I)V
 
     invoke-virtual {p1, p2}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -547,7 +547,7 @@
     iput-object p1, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->q0:Landroid/animation/ValueAnimator;
 
     .line 71
-    invoke-virtual {p0, v1}, Landroid/view/View;->setWillNotDraw(Z)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setWillNotDraw(Z)V
 
     return-void
 
@@ -588,7 +588,7 @@
     .end array-data
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2
@@ -625,7 +625,7 @@
     move-result-object v0
 
     .line 5
-    const v1, 0x7f0702d5
+    const v1, 0x7f0702dc
 
     .line 6
     .line 7
@@ -646,7 +646,7 @@
     move-result-object v1
 
     .line 16
-    const v2, 0x7f0702db
+    const v2, 0x7f0702e2
 
     .line 17
     .line 18
@@ -787,11 +787,11 @@
     .line 49
     .line 50
     .line 51
-    iget-object v1, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->a:LYj;
+    iget-object v1, p0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->a:LL4;
 
     .line 52
     .line 53
-    iget-object v2, v1, LYj;->t:Ljava/lang/Object;
+    iget-object v2, v1, LL4;->t:Ljava/lang/Object;
 
     .line 54
     .line 55
@@ -804,14 +804,14 @@
     .line 58
     .line 59
     .line 60
-    iput v0, v1, LYj;->b:I
+    iput v0, v1, LL4;->b:I
 
     .line 61
     .line 62
     const/4 v0, 0x0
 
     .line 63
-    iput-object v0, v1, LYj;->Y:Ljava/lang/Object;
+    iput-object v0, v1, LL4;->Y:Ljava/lang/Object;
 
     .line 64
     .line 65
@@ -819,7 +819,7 @@
 
     .line 66
     .line 67
-    iput v0, v1, LYj;->c:I
+    iput v0, v1, LL4;->c:I
 
     .line 68
     .line 69
@@ -851,7 +851,7 @@
 
     .line 7
     .line 8
-    invoke-static {p1}, Llva;->L(I)I
+    invoke-static {p1}, LzHa;->L(I)I
 
     .line 9
     .line 10
@@ -907,7 +907,7 @@
     .line 31
     .line 32
     .line 33
-    invoke-static {}, LQtc;->x()V
+    invoke-static {}, LYh7;->M()V
 
     .line 34
     .line 35
@@ -1104,7 +1104,7 @@
     .line 82
     .line 83
     .line 84
-    iget-object v2, v0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->s0:LEsj;
+    iget-object v2, v0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->s0:LYij;
 
     .line 85
     .line 86
@@ -1162,19 +1162,19 @@
     .line 108
     .line 109
     :try_start_0
-    iget-object v2, v2, LEsj;->b:Ljava/lang/Object;
+    iget-object v2, v2, LYij;->b:Ljava/lang/Object;
 
     .line 110
     .line 111
-    check-cast v2, LFq0;
+    check-cast v2, Lht0;
 
     .line 112
     .line 113
-    check-cast v2, LIq0;
+    check-cast v2, Lkt0;
 
     .line 114
     .line 115
-    iget v12, v2, LIq0;->j:I
+    iget v12, v2, Lkt0;->j:I
 
     .line 116
     .line 117
@@ -1182,7 +1182,7 @@
 
     .line 118
     .line 119
-    iget-object v2, v2, LIq0;->h:Landroid/media/MediaRecorder;
+    iget-object v2, v2, Lkt0;->h:Landroid/media/MediaRecorder;
 
     .line 120
     .line 121
@@ -1208,11 +1208,11 @@
 
     .line 128
     :goto_1
-    iget-object v12, v0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->a:LYj;
+    iget-object v12, v0, Lcom/snap/ui/messaging/chatitem/VoiceNoteRecordingView;->a:LL4;
 
     .line 129
     .line 130
-    iget-object v13, v12, LYj;->t:Ljava/lang/Object;
+    iget-object v13, v12, LL4;->t:Ljava/lang/Object;
 
     .line 131
     .line 132
@@ -1244,11 +1244,11 @@
 
     .line 145
     .line 146
-    iget-object v8, v12, LYj;->Y:Ljava/lang/Object;
+    iget-object v8, v12, LL4;->Y:Ljava/lang/Object;
 
     .line 147
     .line 148
-    check-cast v8, Ljc0;
+    check-cast v8, LLj0;
 
     .line 149
     .line 150
@@ -1274,11 +1274,11 @@
 
     .line 159
     .line 160
-    new-instance v8, Ljc0;
+    new-instance v8, LLj0;
 
     .line 161
     .line 162
-    invoke-direct {v8}, Ljc0;-><init>()V
+    invoke-direct {v8}, LLj0;-><init>()V
 
     .line 163
     .line 164
@@ -1291,7 +1291,7 @@
 
     .line 167
     .line 168
-    iget-object v14, v12, LYj;->X:Ljava/lang/Object;
+    iget-object v14, v12, LL4;->X:Ljava/lang/Object;
 
     .line 169
     .line 170
@@ -1316,7 +1316,7 @@
 
     .line 180
     .line 181
-    iget-object v15, v8, Ljc0;->b:Ljava/lang/Object;
+    iget-object v15, v8, LLj0;->b:Ljava/lang/Object;
 
     .line 182
     .line 183
@@ -1336,11 +1336,11 @@
 
     .line 190
     :cond_5
-    new-instance v15, Ljc0;
+    new-instance v15, LLj0;
 
     .line 191
     .line 192
-    invoke-direct {v15}, Ljc0;-><init>()V
+    invoke-direct {v15}, LLj0;-><init>()V
 
     .line 193
     .line 194
@@ -1349,7 +1349,7 @@
 
     .line 196
     .line 197
-    iget v8, v12, LYj;->b:I
+    iget v8, v12, LL4;->b:I
 
     .line 198
     .line 199
@@ -1450,7 +1450,7 @@
 
     .line 244
     .line 245
-    iget v4, v12, LYj;->c:I
+    iget v4, v12, LL4;->c:I
 
     .line 246
     .line 247
@@ -1769,7 +1769,7 @@
     div-float/2addr v8, v4
 
     .line 388
-    iget-object v4, v15, Ljc0;->b:Ljava/lang/Object;
+    iget-object v4, v15, LLj0;->b:Ljava/lang/Object;
 
     .line 389
     .line 390
@@ -1793,7 +1793,7 @@
 
     .line 399
     :cond_e
-    iput v14, v12, LYj;->b:I
+    iput v14, v12, LL4;->b:I
 
     .line 400
     .line 401
@@ -1814,7 +1814,7 @@
     .line 407
     .line 408
     .line 409
-    iget v3, v12, LYj;->c:I
+    iget v3, v12, LL4;->c:I
 
     .line 410
     .line 411
@@ -1826,7 +1826,7 @@
     move-result v2
 
     .line 415
-    iput v2, v12, LYj;->c:I
+    iput v2, v12, LL4;->c:I
 
     .line 416
     .line 417
@@ -1850,12 +1850,12 @@
 
     .line 426
     .line 427
-    iput v2, v12, LYj;->c:I
+    iput v2, v12, LL4;->c:I
 
     .line 428
     .line 429
     :cond_f
-    iput-object v8, v12, LYj;->Y:Ljava/lang/Object;
+    iput-object v8, v12, LL4;->Y:Ljava/lang/Object;
 
     .line 430
     .line 431
@@ -1879,7 +1879,7 @@
 
     .line 439
     .line 440
-    iget-object v2, v8, Ljc0;->b:Ljava/lang/Object;
+    iget-object v2, v8, LLj0;->b:Ljava/lang/Object;
 
     .line 441
     .line 442

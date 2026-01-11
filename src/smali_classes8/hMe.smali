@@ -1,243 +1,257 @@
-.class public LhMe;
-.super LpMe;
+.class public final LhMe;
+.super LRVh;
 .source "SourceFile"
 
 
 # instance fields
-.field public s:LvMe;
+.field public final Z:Lcrj;
 
-.field public t:LZ8d;
-
-.field public u:Ljava/lang/Boolean;
-
-.field public v:Ljava/lang/String;
+.field public final e0:LfMe;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 9
+.method public constructor <init>(Lcrj;LfMe;)V
+    .locals 3
 
     .line 1
-    sget-object v2, LCre;->c:LCre;
+    sget-object v0, Lp2i;->x0:Lp2i;
 
     .line 2
     .line 3
-    const-string v1, "REGISTRATION_USER_SIGNUP_EMAIL_PAGEVIEW"
+    invoke-virtual {p2}, LvWh;->C()J
 
     .line 4
     .line 5
-    const-wide/high16 v3, 0x3ff0000000000000L    # 1.0
-
     .line 6
+    move-result-wide v1
+
     .line 7
-    const-wide/high16 v5, 0x3ff0000000000000L    # 1.0
+    invoke-direct {p0, v0, p1, v1, v2}, LRVh;-><init>(Ltw;Lcrj;J)V
 
     .line 8
     .line 9
-    const-wide/high16 v7, 0x3ff0000000000000L    # 1.0
-
     .line 10
-    .line 11
-    move-object v0, p0
+    iput-object p1, p0, LhMe;->Z:Lcrj;
 
+    .line 11
     .line 12
-    invoke-direct/range {v0 .. v8}, LMR6;-><init>(Ljava/lang/String;LCre;DDD)V
+    iput-object p2, p0, LhMe;->e0:LfMe;
 
     .line 13
     .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
+.method public final B(LZVh;LgYh;)V
     .locals 3
 
     .line 1
-    const/4 v0, 0x2
+    check-cast p1, Ltch;
 
     .line 2
-    new-array v1, v0, [B
-
     .line 3
-    .line 4
-    iget-object v2, p0, LpMe;->k:Ljava/lang/Boolean;
+    invoke-super {p0, p1, p2}, LRVh;->B(LZVh;LgYh;)V
 
+    .line 4
     .line 5
     .line 6
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
+    iget-object v0, p0, LhMe;->e0:LfMe;
 
     .line 7
     .line 8
+    invoke-virtual {v0}, LvWh;->G()Landroid/net/Uri;
+
     .line 9
-    const/4 v0, 0x4
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    iget-object v0, v0, LfMe;->A:LzZh;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v0
+
+    .line 18
+    iget-object v2, p0, LhMe;->Z:Lcrj;
+
+    .line 19
+    .line 20
+    invoke-interface {p1, v1, v2, v0, p2}, Ltch;->l(Landroid/net/Uri;Lcrj;ILgYh;)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-void
+.end method
+
+.method public final a()Lcrj;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LhMe;->Z:Lcrj;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final e(I)F
+    .locals 1
+
+    .line 1
+    int-to-float p1, p1
+
+    .line 2
+    neg-float p1, p1
+
+    .line 3
+    const/4 v0, 0x2
+
+    .line 4
+    int-to-float v0, v0
+
+    .line 5
+    div-float/2addr p1, v0
+
+    .line 6
+    return p1
+.end method
+
+.method public final i()LvWh;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LhMe;->e0:LfMe;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final p(LuWh;F)Landroid/view/ViewGroup$LayoutParams;
+    .locals 5
+
+    .line 1
+    invoke-virtual {p1}, LuWh;->b1()D
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    const-wide/16 v2, 0x0
+
+    .line 6
+    .line 7
+    cmpg-double v4, v0, v2
+
+    .line 8
+    .line 9
+    if-nez v4, :cond_0
 
     .line 10
-    iget-object v2, p0, LhMe;->v:Ljava/lang/String;
-
     .line 11
+    goto :goto_0
+
     .line 12
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
+    :cond_0
+    invoke-virtual {p1}, LuWh;->z0()D
 
     .line 13
     .line 14
     .line 15
-    const/4 v0, 0x5
+    move-result-wide v0
 
     .line 16
-    iget-object v2, p0, LhMe;->s:LvMe;
+    cmpg-double v4, v0, v2
 
     .line 17
     .line 18
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
+    if-nez v4, :cond_1
 
     .line 19
     .line 20
+    :goto_0
+    const/4 p1, 0x0
+
     .line 21
-    const/4 v0, 0x6
+    return-object p1
 
     .line 22
-    iget-object v2, p0, LhMe;->u:Ljava/lang/Boolean;
+    :cond_1
+    new-instance v0, Landroid/view/ViewGroup$LayoutParams;
 
     .line 23
     .line 24
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
+    invoke-virtual {p1}, LuWh;->b1()D
 
     .line 25
     .line 26
     .line 27
-    const/4 v0, 0x7
+    move-result-wide v1
 
     .line 28
-    iget-object v2, p0, LhMe;->t:LZ8d;
+    float-to-double v3, p2
 
     .line 29
+    mul-double v1, v1, v3
+
     .line 30
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
     .line 31
-    .line 32
-    .line 33
-    const/16 v0, 0x9
+    double-to-int p2, v1
 
+    .line 32
+    invoke-virtual {p1}, LuWh;->z0()D
+
+    .line 33
     .line 34
     .line 35
-    iget-object v2, p0, LpMe;->p:LsLe;
+    move-result-wide v1
 
     .line 36
+    mul-double v1, v1, v3
+
     .line 37
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
     .line 38
-    .line 39
-    .line 40
-    const/16 v0, 0xa
+    double-to-int p1, v1
 
+    .line 39
+    invoke-direct {v0, p2, p1}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
+
+    .line 40
     .line 41
     .line 42
-    iget-object v2, p0, LpMe;->l:Ljava/lang/String;
-
-    .line 43
-    .line 44
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const/16 v0, 0xb
-
-    .line 48
-    .line 49
-    iget-object v2, p0, LpMe;->o:Ljava/lang/Boolean;
-
-    .line 50
-    .line 51
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->w0(LAK3;I[BLjava/lang/Boolean;Ljava/util/Set;)V
-
-    .line 52
-    .line 53
-    .line 54
-    const/16 v0, 0xc
-
-    .line 55
-    .line 56
-    iget-object v2, p0, LpMe;->n:Ljava/lang/String;
-
-    .line 57
-    .line 58
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 59
-    .line 60
-    .line 61
-    const/16 v0, 0xd
-
-    .line 62
-    .line 63
-    iget-object v2, p0, LpMe;->j:Ljava/lang/String;
-
-    .line 64
-    .line 65
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 66
-    .line 67
-    .line 68
-    const/16 v0, 0xe
-
-    .line 69
-    .line 70
-    iget-object v2, p0, LpMe;->m:Ljava/lang/String;
-
-    .line 71
-    .line 72
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->B0(LAK3;I[BLjava/lang/String;Ljava/util/Set;)V
-
-    .line 73
-    .line 74
-    .line 75
-    const/16 v0, 0xf
-
-    .line 76
-    .line 77
-    iget-object v2, p0, LpMe;->r:LJ20;
-
-    .line 78
-    .line 79
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 80
-    .line 81
-    .line 82
-    const/16 v0, 0x10
-
-    .line 83
-    .line 84
-    iget-object v2, p0, LpMe;->q:LJ20;
-
-    .line 85
-    .line 86
-    invoke-static {p1, v0, v1, v2, p2}, Lew8;->y0(LAK3;I[BLgQ6;Ljava/util/Set;)V
-
-    .line 87
-    .line 88
-    .line 89
-    invoke-virtual {p1, v1}, LAK3;->m([B)V
-
-    .line 90
-    .line 91
-    .line 92
-    return-void
+    return-object v0
 .end method
 
-.method public final d()I
+.method public final r(I)F
     .locals 1
 
     .line 1
-    const/16 v0, 0x74b
+    int-to-float p1, p1
 
     .line 2
+    neg-float p1, p1
+
     .line 3
-    return v0
+    const/4 v0, 0x2
+
+    .line 4
+    int-to-float v0, v0
+
+    .line 5
+    div-float/2addr p1, v0
+
+    .line 6
+    return p1
 .end method

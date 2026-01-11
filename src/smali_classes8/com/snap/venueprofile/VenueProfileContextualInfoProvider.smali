@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lpxj;
+    proxyClass = LDWj;
     schema = "\'getFormattedDistanceToLocation\':f|m|(d, d): s?,\'getDistanceKmToLocation\':f?|m|(d, d): d@?,\'getETADataForPlace\':f?|m|(d, d)"
     typeReferences = {}
 .end annotation
@@ -17,12 +17,12 @@
 
 # virtual methods
 .method public abstract getDistanceKmToLocation(DD)Ljava/lang/Double;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract getETADataForPlace(DD)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

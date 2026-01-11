@@ -3,20 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements LJ2f;
-.implements Lio/reactivex/rxjava3/disposables/Disposable;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final a:LMT3;
-
-.field public final b:Landroid/content/ContentResolver;
-
-.field public final c:Ljava/lang/String;
+.field public final synthetic a:LWqg;
 
 
 # direct methods
-.method public constructor <init>(LMT3;Landroid/content/ContentResolver;Ljava/lang/String;)V
+.method public constructor <init>(LWqg;)V
     .locals 0
 
     .line 1
@@ -25,593 +20,220 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LUqg;->a:LMT3;
+    iput-object p1, p0, LUqg;->a:LWqg;
 
     .line 5
     .line 6
-    iput-object p2, p0, LUqg;->b:Landroid/content/ContentResolver;
-
-    .line 7
-    .line 8
-    iput-object p3, p0, LUqg;->c:Ljava/lang/String;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final E0(Ljava/lang/String;)Z
-    .locals 2
+.method public final accept(Ljava/lang/Object;)V
+    .locals 7
 
     .line 1
-    iget-object v0, p0, LUqg;->a:LMT3;
+    check-cast p1, LjCd;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->c()Z
+    instance-of v0, p1, LhCd;
 
     .line 4
     .line 5
-    .line 6
-    move-result v1
+    if-eqz v0, :cond_0
 
+    .line 6
     .line 7
-    if-nez v1, :cond_0
+    move-object v1, p1
 
     .line 8
-    .line 9
-    invoke-interface {v0}, LMT3;->e1()Z
+    check-cast v1, LhCd;
 
+    .line 9
     .line 10
+    iget v1, v1, LhCd;->e:I
+
     .line 11
     .line 12
-    move-result v1
+    goto :goto_0
 
     .line 13
-    if-eqz v1, :cond_0
+    :cond_0
+    const/4 v1, 0x0
 
     .line 14
-    .line 15
-    invoke-interface {v0}, LMT3;->i()Ljava/util/List;
+    :goto_0
+    invoke-interface {p1}, LjCd;->a()Ljava/lang/String;
 
+    .line 15
     .line 16
     .line 17
+    move-result-object p1
+
     .line 18
+    iget-object v2, p0, LUqg;->a:LWqg;
+
+    .line 19
+    .line 20
+    if-eqz v0, :cond_2
+
+    .line 21
+    .line 22
+    iget-object v0, v2, LWqg;->h0:LQS9;
+
+    .line 23
+    .line 24
+    invoke-interface {v0}, LQS9;->get()Ljava/lang/Object;
+
+    .line 25
+    .line 26
+    .line 27
     move-result-object v0
 
-    .line 19
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    const/4 v1, 0x1
-
-    .line 24
-    if-ne v0, v1, :cond_0
-
-    .line 25
-    .line 26
-    iget-object v0, p0, LUqg;->c:Ljava/lang/String;
-
-    .line 27
     .line 28
-    invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    check-cast v0, Lj99;
 
     .line 29
     .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-eqz p1, :cond_0
-
-    .line 33
-    .line 34
-    return v1
-
-    .line 35
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 36
-    return p1
-.end method
-
-.method public final I(Ljava/lang/String;)Ljava/io/InputStream;
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, LUqg;->a:LMT3;
-
-    .line 2
-    .line 3
-    invoke-interface {p1}, LMT3;->i()Ljava/util/List;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p1
-
-    .line 7
-    invoke-static {p1}, Lue3;->G0(Ljava/util/List;)Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object p1
-
-    .line 11
-    check-cast p1, LPb0;
-
-    .line 12
-    .line 13
-    invoke-interface {p1}, LPb0;->a()Landroid/net/Uri;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p1
-
-    .line 17
-    iget-object v0, p0, LUqg;->b:Landroid/content/ContentResolver;
-
-    .line 18
-    .line 19
-    invoke-virtual {v0, p1}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object p1
-
-    .line 23
-    if-eqz p1, :cond_0
-
-    .line 24
-    .line 25
-    return-object p1
-
-    .line 26
-    :cond_0
-    new-instance p1, Ljava/io/IOException;
-
-    .line 27
-    .line 28
-    invoke-direct {p1}, Ljava/io/IOException;-><init>()V
-
-    .line 29
-    .line 30
-    .line 31
-    throw p1
-.end method
-
-.method public final M(Ljava/lang/String;)Z
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, LUqg;->E0(Ljava/lang/String;)Z
-
-    .line 2
-    .line 3
-    .line 4
-    move-result p1
-
-    .line 5
-    return p1
-.end method
-
-.method public final M0(Ljava/lang/String;)Ljava/util/List;
-    .locals 0
-
-    .line 1
-    sget-object p1, LsL6;->a:LsL6;
-
-    .line 2
-    .line 3
-    return-object p1
-.end method
-
-.method public final X0(Ljava/lang/String;)I
-    .locals 0
-
-    .line 1
-    const/4 p1, 0x1
-
-    .line 2
-    return p1
-.end method
-
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LUqg;->a:LMT3;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->c()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final dispose()V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LUqg;->a:LMT3;
-
-    .line 2
-    .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public final k1(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    sget-object p1, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v0, "LOOK:ExternalResourceOpener#resolveFileUri"
-
-    .line 4
-    .line 5
-    invoke-virtual {p1, v0}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    :try_start_0
-    iget-object v1, p0, LUqg;->a:LMT3;
-
-    .line 10
-    .line 11
-    invoke-interface {v1}, LMT3;->i()Ljava/util/List;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object v1
-
-    .line 15
-    const/4 v2, 0x0
-
-    .line 16
-    invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v1
-
-    .line 20
-    check-cast v1, LPb0;
-
-    .line 21
-    .line 22
-    invoke-interface {v1}, LPb0;->a()Landroid/net/Uri;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v1
-
-    .line 26
-    invoke-virtual {v1}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 30
-    invoke-virtual {p1, v0}, LWRg;->h(I)V
+    iget-object v3, v2, LWqg;->o0:LWBd;
 
     .line 31
     .line 32
-    .line 33
-    return-object v1
+    iget-object v3, v3, LWBd;->d:Ljava/lang/String;
 
+    .line 33
     .line 34
-    :catchall_0
-    move-exception p1
+    sget-object v4, LGr3;->X:LGr3;
 
     .line 35
-    sget-object v1, LXRg;->b:Lzhi;
-
     .line 36
+    const/4 v5, 0x1
+
     .line 37
-    if-eqz v1, :cond_0
+    invoke-virtual {v0, v5, v1, v4, v3}, Lj99;->h(ZILGr3;Ljava/lang/String;)V
 
     .line 38
     .line 39
-    invoke-virtual {v1, v0}, Lzhi;->o(I)V
-
     .line 40
+    iget-object v0, v2, LWqg;->o0:LWBd;
+
     .line 41
     .line 42
-    :cond_0
-    throw p1
-.end method
+    iget-object v3, v2, LWqg;->l0:LS09;
 
-.method public final m3(Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
-    .locals 5
-
-    .line 1
-    sget-object p1, LXRg;->a:LWRg;
-
-    .line 2
-    .line 3
-    const-string v0, "LOOK:ExternalResourceOpener#openResourceFd#createAD"
-
-    .line 4
-    .line 5
-    invoke-virtual {p1, v0}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 6
-    .line 7
-    .line 8
-    move-result v0
-
-    .line 9
-    :try_start_0
-    const-string v1, "LOOK:ExternalResourceOpener#openResourceFd#createAssetDescriptor"
-
-    .line 10
-    .line 11
-    invoke-virtual {p1, v1}, LWRg;->e(Ljava/lang/String;)I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 15
-    :try_start_1
-    iget-object v2, p0, LUqg;->b:Landroid/content/ContentResolver;
-
-    .line 16
-    .line 17
-    iget-object v3, p0, LUqg;->a:LMT3;
-
-    .line 18
-    .line 19
-    invoke-interface {v3}, LMT3;->i()Ljava/util/List;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v3
-
-    .line 23
-    invoke-static {v3}, Lue3;->G0(Ljava/util/List;)Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v3
-
-    .line 27
-    check-cast v3, LPb0;
-
-    .line 28
-    .line 29
-    invoke-interface {v3}, LPb0;->a()Landroid/net/Uri;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v3
-
-    .line 33
-    const-string v4, "r"
-
-    .line 34
-    .line 35
-    invoke-virtual {v2, v3, v4}, Landroid/content/ContentResolver;->openAssetFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/res/AssetFileDescriptor;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 39
-    if-eqz v2, :cond_0
-
-    .line 40
-    .line 41
-    :try_start_2
-    invoke-virtual {p1, v1}, LWRg;->h(I)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 42
     .line 43
     .line 44
-    invoke-virtual {p1, v0}, LWRg;->h(I)V
+    invoke-virtual {v3, v0, p1, v5}, LS09;->g(LWBd;Ljava/lang/String;I)LWBd;
 
     .line 45
     .line 46
     .line 47
-    return-object v2
+    move-result-object p1
 
     .line 48
-    :catchall_0
-    move-exception p1
+    iput-object p1, v2, LWqg;->o0:LWBd;
 
     .line 49
-    goto :goto_0
-
     .line 50
-    :cond_0
-    :try_start_3
-    new-instance p1, Ljava/io/IOException;
+    const/4 p1, 0x4
 
     .line 51
-    .line 52
-    invoke-direct {p1}, Ljava/io/IOException;-><init>()V
+    iget-object v0, v2, LWqg;->n0:Lp1c;
 
+    .line 52
     .line 53
+    if-ne v1, p1, :cond_1
+
     .line 54
     .line 55
-    throw p1
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+    iget p1, v2, LWqg;->w0:I
 
     .line 56
-    :catchall_1
-    move-exception p1
-
     .line 57
-    :try_start_4
-    sget-object v2, LXRg;->b:Lzhi;
+    int-to-long v3, p1
 
     .line 58
+    const-wide/16 v5, 0x3e8
+
     .line 59
-    if-eqz v2, :cond_1
-
     .line 60
+    mul-long v3, v3, v5
+
     .line 61
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
-
     .line 62
+    const/4 p1, 0x2
+
     .line 63
+    invoke-static {v0, v3, v4, p1}, Lp1c;->e(Lp1c;JI)V
+
     .line 64
-    :cond_1
-    throw p1
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
     .line 65
-    :goto_0
-    sget-object v1, LXRg;->b:Lzhi;
-
     .line 66
+    goto :goto_1
+
     .line 67
-    if-eqz v1, :cond_2
+    :cond_1
+    const-wide/16 v3, 0x0
 
     .line 68
     .line 69
-    invoke-virtual {v1, v0}, Lzhi;->o(I)V
+    const/4 p1, 0x3
 
     .line 70
+    invoke-static {v0, v3, v4, p1}, Lp1c;->e(Lp1c;JI)V
+
     .line 71
     .line 72
+    .line 73
+    :goto_1
+    invoke-virtual {v2}, LWqg;->h3()V
+
+    .line 74
+    .line 75
+    .line 76
+    return-void
+
+    .line 77
     :cond_2
-    throw p1
-.end method
+    if-nez p1, :cond_3
 
-.method public final p2(Ljava/lang/String;)LI2f;
-    .locals 5
+    .line 78
+    .line 79
+    iget-object p1, v2, LWqg;->i0:LQS9;
 
-    .line 1
-    new-instance p1, LI2f;
+    .line 80
+    .line 81
+    invoke-interface {p1}, LQS9;->get()Ljava/lang/Object;
 
-    .line 2
-    .line 3
-    iget-object v0, p0, LUqg;->a:LMT3;
+    .line 82
+    .line 83
+    .line 84
+    move-result-object p1
 
-    .line 4
-    .line 5
-    invoke-interface {v0}, LMT3;->h()LsTb;
+    .line 85
+    check-cast p1, Landroid/content/Context;
 
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v1
+    .line 86
+    .line 87
+    const v0, 0x7f132d84
 
-    .line 9
-    iget-object v1, v1, LsTb;->h:LPc0;
+    .line 88
+    .line 89
+    .line 90
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
-    .line 10
-    .line 11
-    if-eqz v1, :cond_0
+    .line 91
+    .line 92
+    .line 93
+    move-result-object p1
 
-    .line 12
-    .line 13
-    iget-wide v1, v1, LPc0;->b:J
+    .line 94
+    :cond_3
+    invoke-virtual {v2, p1}, LWqg;->f3(Ljava/lang/String;)V
 
-    .line 14
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_0
-    const-wide/16 v1, 0x0
-
-    .line 17
-    .line 18
-    :goto_0
-    invoke-interface {v0}, LMT3;->i()Ljava/util/List;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    const/4 v3, 0x0
-
-    .line 23
-    invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v0
-
-    .line 27
-    check-cast v0, LPb0;
-
-    .line 28
-    .line 29
-    invoke-interface {v0}, LPb0;->x()Ljava/io/File;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v0
-
-    .line 33
-    invoke-virtual {v0}, Ljava/io/File;->lastModified()J
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-wide v3
-
-    .line 37
-    invoke-direct {p1, v1, v2, v3, v4}, LI2f;-><init>(JJ)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-object p1
+    .line 95
+    .line 96
+    .line 97
+    return-void
 .end method

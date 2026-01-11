@@ -7,12 +7,12 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LLpi;
+    proxyClass = LBOi;
     schema = "\'getTemplates\':f|m|(f(a?<r:\'[0]\'>))"
     typeReferences = {
-        LTpi;
+        LJOi;
     }
 .end annotation
 

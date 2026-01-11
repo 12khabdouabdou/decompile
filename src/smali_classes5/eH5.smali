@@ -1,5 +1,5 @@
 .class public final synthetic LeH5;
-.super Lj28;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
@@ -19,7 +19,7 @@
 
     .line 2
     .line 3
-    const-string v5, "<init>(Lcom/snap/lenses/app/camera/CameraUseCaseFunnel;)V"
+    const-string v5, "<init>(Lcom/snap/lenses/processing/DefaultLensCore;)V"
 
     .line 4
     .line 5
@@ -29,7 +29,7 @@
     const/4 v1, 0x1
 
     .line 7
-    const-class v3, Lidi$a;
+    const-class v3, LxU5;
 
     .line 8
     .line 9
@@ -37,7 +37,7 @@
 
     .line 10
     .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -55,15 +55,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lwd2;
+    check-cast p1, LFG5;
 
     .line 2
     .line 3
-    new-instance v0, Lidi$a;
+    new-instance v0, LxU5;
 
     .line 4
     .line 5
-    invoke-direct {v0, p1}, Lidi$a;-><init>(Lwd2;)V
+    invoke-direct {v0, p1}, LxU5;-><init>(LFG5;)V
 
     .line 6
     .line 7

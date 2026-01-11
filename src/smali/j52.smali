@@ -1,95 +1,90 @@
-.class public interface abstract Lj52;
-.super Ljava/lang/Object;
+.class public final Lj52;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:Lk52;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lk52;I)V
+    .locals 0
+
+    .line 1
+    iput p2, p0, Lj52;->a:I
+
+    iput-object p1, p0, Lj52;->b:Lk52;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract A()[Lzof;
-.end method
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-.method public abstract B()V
-.end method
+    .line 1
+    iget v0, p0, Lj52;->a:I
 
-.method public abstract C()Lv92;
-.end method
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
 
-.method public abstract E(Lsc2;Ls32;Z)V
-.end method
+    .line 4
+    .line 5
+    .line 6
+    check-cast p1, Lewj;
 
-.method public abstract F(Lepf;)V
-.end method
+    .line 7
+    .line 8
+    iget-object p1, p0, Lj52;->b:Lk52;
 
-.method public abstract I(Lsc2;FLJc4;)V
-.end method
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Lk52;->b()V
 
-.method public abstract J()V
-.end method
+    .line 11
+    .line 12
+    .line 13
+    sget-object p1, Lewj;->a:Lewj;
 
-.method public abstract K(Lsc2;LkE;)V
-.end method
+    .line 14
+    .line 15
+    return-object p1
 
-.method public abstract N(Lmji;Llji;ILrV1;I)V
-.end method
+    .line 16
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
 
-.method public abstract O()Lr1f;
-.end method
+    .line 17
+    .line 18
+    iget-object p1, p0, Lj52;->b:Lk52;
 
-.method public abstract Q(LF6a;IIII)V
-.end method
+    .line 19
+    .line 20
+    iget-object p1, p1, Lk52;->i0:LJp0;
 
-.method public abstract R()Lepf;
-.end method
+    .line 21
+    .line 22
+    sget-object p1, Lewj;->a:Lewj;
 
-.method public abstract S(LZq0;Llji;ILrV1;)V
-.end method
+    .line 23
+    .line 24
+    return-object p1
 
-.method public abstract T(Lcz0;)V
-.end method
-
-.method public abstract W(Lrpf;ZLpXe;)Llyc;
-.end method
-
-.method public abstract b()Lxof;
-.end method
-
-.method public abstract e()Landroid/hardware/Camera;
-.end method
-
-.method public abstract f(LAQd;)V
-.end method
-
-.method public abstract g(Z)V
-.end method
-
-.method public abstract h(LjFd;)V
-.end method
-
-.method public abstract i(LAQd;)V
-.end method
-
-.method public abstract j(LNX1;)V
-.end method
-
-.method public abstract k(I)V
-.end method
-
-.method public abstract n(LjFd;)V
-.end method
-
-.method public abstract o(Z)V
-.end method
-
-.method public abstract s(Lcz0;IIII)V
-.end method
-
-.method public abstract u(LKof;)V
-.end method
-
-.method public abstract w()I
-.end method
-
-.method public abstract x(I)V
-.end method
-
-.method public abstract y(Lsc2;)Lxof;
+    .line 25
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

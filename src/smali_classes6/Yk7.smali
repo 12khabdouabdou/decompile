@@ -1,136 +1,264 @@
 .class public final LYk7;
-.super Lcom/snapchat/client/messaging/FetchLastEventUpdateTimestampsForUsersCallback;
+.super LrP0;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lio/reactivex/rxjava3/core/ObservableEmitter;
-
-.field public final b:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/ObservableEmitter;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Lcom/snapchat/client/messaging/FetchLastEventUpdateTimestampsForUsersCallback;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LYk7;->a:Lio/reactivex/rxjava3/core/ObservableEmitter;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LYk7;->b:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
 # virtual methods
-.method public final onComplete(Ljava/util/ArrayList;)V
+.method public final D1()V
     .locals 2
 
     .line 1
-    iget-object v0, p0, LYk7;->a:Lio/reactivex/rxjava3/core/ObservableEmitter;
+    iget-object v0, p0, LrP0;->t:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-interface {v0}, Lio/reactivex/rxjava3/core/ObservableEmitter;->c()Z
+    check-cast v0, LZk7;
 
     .line 4
     .line 5
-    .line 6
-    move-result v1
-
-    .line 7
-    if-nez v1, :cond_0
-
-    .line 8
-    .line 9
-    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Emitter;->onNext(Ljava/lang/Object;)V
-
-    .line 10
-    .line 11
-    .line 12
-    invoke-interface {v0}, Lio/reactivex/rxjava3/core/Emitter;->onComplete()V
-
-    .line 13
-    .line 14
-    .line 15
-    :cond_0
-    return-void
-.end method
-
-.method public final onError(Lcom/snapchat/client/messaging/CallbackStatus;)V
-    .locals 3
-
-    .line 1
-    new-instance v0, Ly80;
-
-    .line 2
-    .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 4
-    .line 5
-    const-string v2, "Error fetching lastEventUpdateTimestamps from "
+    if-eqz v0, :cond_0
 
     .line 6
     .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object v0, v0, LZk7;->b:Lcom/snap/ui/view/save/SaveButtonView;
 
     .line 8
     .line 9
-    .line 10
-    iget-object v2, p0, LYk7;->b:Ljava/lang/String;
+    if-eqz v0, :cond_0
 
+    .line 10
     .line 11
+    const/4 v1, 0x0
+
     .line 12
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iput v1, v0, Lcom/snap/ui/view/save/SaveButtonView;->e0:I
 
     .line 13
     .line 14
-    .line 15
-    const-string v2, " - "
+    invoke-virtual {v0}, Lcom/snap/ui/view/save/SaveButtonView;->a()V
 
+    .line 15
     .line 16
     .line 17
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_0
+    invoke-super {p0}, LrP0;->D1()V
 
     .line 18
     .line 19
     .line 20
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    return-void
+.end method
+
+.method public final bridge synthetic Z2(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, LZk7;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, LYk7;->c3(LZk7;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final c3(LZk7;)V
+    .locals 7
+
+    .line 1
+    invoke-super {p0, p1}, LrP0;->Z2(Ljava/lang/Object;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p1, LZk7;->d:Lql7;
+
+    .line 5
+    .line 6
+    iget-boolean v1, v0, Lql7;->s0:Z
+
+    .line 7
+    .line 8
+    if-nez v1, :cond_0
+
+    .line 9
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    iget-object v0, v0, Lql7;->e0:Lqmi;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
+
+    .line 14
+    .line 15
+    .line 16
+    move-result v0
+
+    .line 17
+    const/4 v1, 0x1
+
+    .line 18
+    iget-object v2, p1, LZk7;->a:Landroid/view/View;
+
+    .line 19
+    .line 20
+    iget-object v3, p1, LZk7;->b:Lcom/snap/ui/view/save/SaveButtonView;
 
     .line 21
     .line 22
-    .line 23
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object p1, p1, LZk7;->c:Lcom/snap/ui/view/SnapFontTextView;
 
+    .line 23
     .line 24
+    const v4, 0x7f131598
+
     .line 25
     .line 26
-    move-result-object v1
-
     .line 27
-    invoke-direct {v0, p1, v1}, Ly80;-><init>(Lcom/snapchat/client/messaging/CallbackStatus;Ljava/lang/String;)V
+    if-eqz v0, :cond_9
 
     .line 28
     .line 29
+    const/4 v5, 0x2
+
     .line 30
-    iget-object p1, p0, LYk7;->a:Lio/reactivex/rxjava3/core/ObservableEmitter;
+    const/4 v6, 0x0
 
     .line 31
-    .line 32
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/ObservableEmitter;->f(Ljava/lang/Throwable;)Z
+    if-eq v0, v1, :cond_5
 
+    .line 32
     .line 33
+    if-eq v0, v5, :cond_1
+
     .line 34
     .line 35
+    goto :goto_0
+
+    .line 36
+    :cond_1
+    if-eqz v3, :cond_2
+
+    .line 37
+    .line 38
+    const/4 v0, 0x3
+
+    .line 39
+    invoke-virtual {v3, v0}, Lcom/snap/ui/view/save/SaveButtonView;->b(I)V
+
+    .line 40
+    .line 41
+    .line 42
+    :cond_2
+    if-eqz p1, :cond_3
+
+    .line 43
+    .line 44
+    const v0, 0x7f131599
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
+
+    .line 48
+    .line 49
+    .line 50
+    :cond_3
+    if-nez v2, :cond_4
+
+    .line 51
+    .line 52
+    goto :goto_0
+
+    .line 53
+    :cond_4
+    invoke-virtual {v2, v6}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 54
+    .line 55
+    .line 56
+    return-void
+
+    .line 57
+    :cond_5
+    if-eqz v3, :cond_6
+
+    .line 58
+    .line 59
+    invoke-virtual {v3, v5}, Lcom/snap/ui/view/save/SaveButtonView;->b(I)V
+
+    .line 60
+    .line 61
+    .line 62
+    :cond_6
+    if-eqz p1, :cond_7
+
+    .line 63
+    .line 64
+    invoke-virtual {p1, v4}, Landroid/widget/TextView;->setText(I)V
+
+    .line 65
+    .line 66
+    .line 67
+    :cond_7
+    if-nez v2, :cond_8
+
+    .line 68
+    .line 69
+    goto :goto_0
+
+    .line 70
+    :cond_8
+    invoke-virtual {v2, v6}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 71
+    .line 72
+    .line 73
+    return-void
+
+    .line 74
+    :cond_9
+    if-eqz v3, :cond_a
+
+    .line 75
+    .line 76
+    invoke-virtual {v3, v1}, Lcom/snap/ui/view/save/SaveButtonView;->b(I)V
+
+    .line 77
+    .line 78
+    .line 79
+    :cond_a
+    if-eqz p1, :cond_b
+
+    .line 80
+    .line 81
+    invoke-virtual {p1, v4}, Landroid/widget/TextView;->setText(I)V
+
+    .line 82
+    .line 83
+    .line 84
+    :cond_b
+    if-nez v2, :cond_c
+
+    .line 85
+    .line 86
+    :goto_0
+    return-void
+
+    .line 87
+    :cond_c
+    invoke-virtual {v2, v1}, Landroid/view/View;->setEnabled(Z)V
+
+    .line 88
+    .line 89
+    .line 90
     return-void
 .end method

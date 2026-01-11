@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lsya;
+    proxyClass = LJKa;
     schema = "\'didSelectAudienceCell\':f|m|(),\'didSelectOkay\':f|m|(a<s>),\'didSelectChangeLocationSettings\':f|m|()"
     typeReferences = {}
 .end annotation

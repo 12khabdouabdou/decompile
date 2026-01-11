@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field public final a:Lc7i;
+.field public final a:Ltvi;
 
 .field public final b:J
 
 
 # direct methods
-.method public constructor <init>(JLc7i;)V
+.method public constructor <init>(JLtvi;)V
     .locals 0
 
     .line 1
@@ -33,7 +33,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSubscribeOn$SubscribeOnSubscriber$Request;->a:Lc7i;
+    iput-object p3, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSubscribeOn$SubscribeOnSubscriber$Request;->a:Ltvi;
 
     .line 5
     .line 6
@@ -50,7 +50,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSubscribeOn$SubscribeOnSubscriber$Request;->a:Lc7i;
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableSubscribeOn$SubscribeOnSubscriber$Request;->a:Ltvi;
 
     .line 2
     .line 3
@@ -58,7 +58,7 @@
 
     .line 4
     .line 5
-    invoke-interface {v0, v1, v2}, Lc7i;->l(J)V
+    invoke-interface {v0, v1, v2}, Ltvi;->l(J)V
 
     .line 6
     .line 7

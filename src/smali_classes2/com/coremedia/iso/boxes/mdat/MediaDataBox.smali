@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lvy1;
+.implements LJB1;
 
 
 # static fields
@@ -13,13 +13,13 @@
 
 
 # instance fields
-.field private dataSource:LI85;
+.field private dataSource:LVe5;
 
 .field largeBox:Z
 
 .field private offset:J
 
-.field parent:LRP3;
+.field parent:LJT3;
 
 .field private size:J
 
@@ -75,7 +75,7 @@
     return-void
 .end method
 
-.method private static transfer(LI85;JJLjava/nio/channels/WritableByteChannel;)V
+.method private static transfer(LVe5;JJLjava/nio/channels/WritableByteChannel;)V
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -128,7 +128,7 @@
     move-object v8, p5
 
     .line 21
-    invoke-interface/range {v3 .. v8}, LI85;->F(JJLjava/nio/channels/WritableByteChannel;)J
+    invoke-interface/range {v3 .. v8}, LVe5;->C(JJLjava/nio/channels/WritableByteChannel;)J
 
     .line 22
     .line 23
@@ -153,7 +153,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->dataSource:LI85;
+    iget-object v0, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->dataSource:LVe5;
 
     .line 2
     .line 3
@@ -168,7 +168,7 @@
     move-object v5, p1
 
     .line 8
-    invoke-static/range {v0 .. v5}, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->transfer(LI85;JJLjava/nio/channels/WritableByteChannel;)V
+    invoke-static/range {v0 .. v5}, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->transfer(LVe5;JJLjava/nio/channels/WritableByteChannel;)V
 
     .line 9
     .line 10
@@ -187,11 +187,11 @@
     return-wide v0
 .end method
 
-.method public getParent()LRP3;
+.method public getParent()LJT3;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->parent:LRP3;
+    iget-object v0, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->parent:LJT3;
 
     .line 2
     .line 3
@@ -220,7 +220,7 @@
     return-object v0
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -229,7 +229,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p1}, LI85;->position()J
+    invoke-interface {p1}, LVe5;->position()J
 
     .line 2
     .line 3
@@ -255,7 +255,7 @@
 
     .line 12
     .line 13
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->dataSource:LI85;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->dataSource:LVe5;
 
     .line 14
     .line 15
@@ -277,7 +277,7 @@
 
     .line 22
     .line 23
-    invoke-interface {p1}, LI85;->position()J
+    invoke-interface {p1}, LVe5;->position()J
 
     .line 24
     .line 25
@@ -288,7 +288,7 @@
     add-long/2addr v0, p3
 
     .line 28
-    invoke-interface {p1, v0, v1}, LI85;->a1(J)V
+    invoke-interface {p1, v0, v1}, LVe5;->N0(J)V
 
     .line 29
     .line 30
@@ -296,11 +296,11 @@
     return-void
 .end method
 
-.method public setParent(LRP3;)V
+.method public setParent(LJT3;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->parent:LRP3;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/mdat/MediaDataBox;->parent:LJT3;
 
     .line 2
     .line 3
@@ -332,7 +332,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2, v3}, LmG8;->o(Ljava/lang/StringBuilder;JC)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v3}, Lnfe;->q(Ljava/lang/StringBuilder;JC)Ljava/lang/String;
 
     .line 13
     .line 14

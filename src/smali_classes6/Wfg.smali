@@ -1,82 +1,153 @@
 .class public final LWfg;
-.super Lan0;
+.super Lofg;
 .source "SourceFile"
 
 
-# static fields
-.field public static final Z:LWfg;
+# instance fields
+.field public final a:LkKh;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public constructor <init>(LkKh;)V
+    .locals 0
 
     .line 1
-    new-instance v1, LWfg;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v0, LEy9;->D0:LEy9;
-
     .line 4
+    iput-object p1, p0, LWfg;->a:LkKh;
+
     .line 5
-    const/4 v2, 0x0
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LWfg;
 
     .line 6
-    const/16 v3, 0x1c
-
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    const-string v4, "sharing_feature"
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
-    invoke-direct {v1, v4, v0, v2, v3}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LWfg;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LWfg;->a:LkKh;
+
+    .line 14
+    .line 15
+    iget-object p1, p1, LWfg;->a:LkKh;
+
+    .line 16
+    .line 17
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result p1
+
+    .line 21
+    if-nez p1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LWfg;->a:LkKh;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LkKh;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "SendToSpotlightSelectPlaceTagDropdownEvent(placeTag="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LWfg;->a:LkKh;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    sput-object v1, LWfg;->Z:LWfg;
+    const-string v1, ")"
 
     .line 14
     .line 15
-    new-instance v0, LcSa;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
-    const/4 v8, 0x0
-
     .line 18
-    const/4 v9, 0x0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
-    const-string v2, "sharing_feature"
-
     .line 20
     .line 21
-    const/4 v3, 0x0
+    move-result-object v0
 
     .line 22
-    const/4 v4, 0x0
-
-    .line 23
-    const/4 v5, 0x0
-
-    .line 24
-    const/4 v6, 0x0
-
-    .line 25
-    const/4 v7, 0x0
-
-    .line 26
-    const/16 v10, 0x3ffc
-
-    .line 27
-    .line 28
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
+    return-object v0
 .end method

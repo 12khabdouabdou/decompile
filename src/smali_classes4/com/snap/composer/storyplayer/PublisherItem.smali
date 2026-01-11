@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/PublisherItem;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'encodedStoryDoc\':t,\'encodedWatchedState\':t?,\'publisherInfo\':r:\'[0]\',\'supplementalPublisherData\':r?:\'[1]\'"
     typeReferences = {

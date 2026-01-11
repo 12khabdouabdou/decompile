@@ -1,24 +1,13 @@
 .class public LgE6;
-.super LoYg;
+.super Lgh1;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LVz9;
-    value = LqYg;
-.end annotation
-
-.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
-    value = LhE6;
-.end annotation
+# interfaces
+.implements LDab;
 
 
 # instance fields
-.field public a:LTh2;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "caption_style"
-    .end annotation
-.end field
+.field public b:Ljava/lang/String;
 
 
 # direct methods
@@ -36,102 +25,112 @@
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
+.method public final b()Ljava/util/HashMap;
+    .locals 3
 
     .line 1
-    if-ne p1, p0, :cond_0
+    new-instance v0, Ljava/util/HashMap;
 
     .line 2
     .line 3
-    const/4 p1, 0x1
+    const/16 v1, 0x80
 
     .line 4
-    return p1
-
     .line 5
-    :cond_0
-    if-eqz p1, :cond_2
+    invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
     .line 6
     .line 7
-    instance-of v0, p1, LgE6;
-
     .line 8
+    iget-object v1, p0, LgE6;->b:Ljava/lang/String;
+
     .line 9
-    if-nez v0, :cond_1
-
     .line 10
-    .line 11
-    goto :goto_0
+    if-eqz v1, :cond_0
 
+    .line 11
     .line 12
-    :cond_1
-    check-cast p1, LgE6;
+    const-string v2, "dummy_nested_parent_in_a_list_concrete_class_string"
 
     .line 13
     .line 14
-    iget-object v0, p0, LgE6;->a:LTh2;
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
     .line 16
-    iget-object p1, p1, LgE6;->a:LTh2;
-
     .line 17
-    .line 18
-    invoke-static {v0, p1}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result p1
-
-    .line 22
-    return p1
-
-    .line 23
-    :cond_2
-    :goto_0
-    const/4 p1, 0x0
-
-    .line 24
-    return p1
+    :cond_0
+    return-object v0
 .end method
 
-.method public final hashCode()I
-    .locals 2
+.method public final d(LeO3;Ljava/util/Set;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LgE6;->a:LTh2;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    if-nez v0, :cond_0
+    new-array v0, v0, [B
 
+    .line 3
     .line 4
+    const/4 v1, 0x2
+
     .line 5
-    const/4 v0, 0x0
+    iget-object v2, p0, LgE6;->b:Ljava/lang/String;
 
     .line 6
-    goto :goto_0
-
     .line 7
-    :cond_0
-    invoke-virtual {v0}, LTh2;->hashCode()I
+    invoke-static {p1, v1, v0, v2, p2}, Lfqj;->Z(LeO3;I[BLjava/lang/String;Ljava/util/Set;)V
 
     .line 8
     .line 9
     .line 10
-    move-result v0
+    invoke-virtual {p1, v0}, LeO3;->k([B)V
 
     .line 11
-    :goto_0
-    const/16 v1, 0x20f
+    .line 12
+    .line 13
+    return-void
+.end method
+
+.method public final f(Ljava/util/Map;)I
+    .locals 1
+
+    .line 1
+    const-string v0, "dummy_nested_parent_in_a_list_concrete_class_string"
+
+    .line 2
+    .line 3
+    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    check-cast p1, Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iput-object p1, p0, LgE6;->b:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    if-eqz p1, :cond_0
 
     .line 12
     .line 13
-    add-int/2addr v1, v0
+    const/4 p1, 0x1
 
     .line 14
-    return v1
+    return p1
+
+    .line 15
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 16
+    return p1
 .end method

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/places/visualtray/VisualTrayConfigs;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'isNewIconography\':b,\'isTrayOnByDefault\':b,\'showHtmlDebugButton\':b@?,\'customSearchServiceDeployment\':s?,\'enableTappablePlacePivots\':b@?,\'showFavoritesCount\':b@?,\'showFriendFavorites\':b@?,\'hideStoryCarousel\':b@?"
     typeReferences = {}
@@ -158,14 +158,18 @@
     return-void
 .end method
 
-.method public final e(Ljava/lang/Boolean;)V
-    .locals 0
+.method public final e()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/snap/places/visualtray/VisualTrayConfigs;->_showFriendFavorites:Ljava/lang/Boolean;
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 2
     .line 3
+    iput-object v0, p0, Lcom/snap/places/visualtray/VisualTrayConfigs;->_showFriendFavorites:Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
     return-void
 .end method
 

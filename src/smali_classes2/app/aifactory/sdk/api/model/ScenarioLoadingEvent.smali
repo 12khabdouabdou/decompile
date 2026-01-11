@@ -40,7 +40,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;JILjava/lang/String;LHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;JILjava/lang/String;Lex5;)V
     .locals 0
 
     .line 1

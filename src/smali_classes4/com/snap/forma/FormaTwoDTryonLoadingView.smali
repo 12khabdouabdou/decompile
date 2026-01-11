@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LFF7;",
-        "LCF7;",
+        "LgL7;",
+        "LdL7;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LEF7;
+.field public static final Companion:LfL7;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LEF7;
+    new-instance v0, LfL7;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/forma/FormaTwoDTryonLoadingView;->Companion:LEF7;
+    sput-object v0, Lcom/snap/forma/FormaTwoDTryonLoadingView;->Companion:LfL7;
 
     .line 7
     .line 8
@@ -62,29 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LFF7;LCF7;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/forma/FormaTwoDTryonLoadingView;
+.method public static final create(LZ69;LgL7;LdL7;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/forma/FormaTwoDTryonLoadingView;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LFF7;",
-            "LCF7;",
-            "LTB3;",
+            "LZ69;",
+            "LgL7;",
+            "LdL7;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/forma/FormaTwoDTryonLoadingView;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/forma/FormaTwoDTryonLoadingView;->Companion:LEF7;
+    sget-object v0, Lcom/snap/forma/FormaTwoDTryonLoadingView;->Companion:LfL7;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     new-instance v2, Lcom/snap/forma/FormaTwoDTryonLoadingView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -108,22 +108,22 @@
     move-object v7, p4
 
     .line 6
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/forma/FormaTwoDTryonLoadingView;
+.method public static final create(LZ69;LvF3;)Lcom/snap/forma/FormaTwoDTryonLoadingView;
     .locals 9
 
-    sget-object v0, Lcom/snap/forma/FormaTwoDTryonLoadingView;->Companion:LEF7;
+    sget-object v0, Lcom/snap/forma/FormaTwoDTryonLoadingView;->Companion:LfL7;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
     new-instance v2, Lcom/snap/forma/FormaTwoDTryonLoadingView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -147,7 +147,7 @@
     move-object v6, p1
 
     .line 3
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method

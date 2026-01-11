@@ -4,22 +4,109 @@
 
 
 # instance fields
-.field public a:I
+.field public final a:LFAd;
 
-.field public b:I
+.field public final b:Z
 
-.field public c:I
+.field public final c:LS64;
 
-.field public d:I
+.field public final d:Ljava/util/List;
 
-.field public e:I
+.field public final e:Z
 
-.field public f:J
+
+# direct methods
+.method public constructor <init>(LFAd;ZLS64;Ljava/util/List;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LB64;->a:LFAd;
+
+    .line 5
+    .line 6
+    iput-boolean p2, p0, LB64;->b:Z
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LB64;->c:LS64;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LB64;->d:Ljava/util/List;
+
+    .line 11
+    .line 12
+    iput-boolean p5, p0, LB64;->e:Z
+
+    .line 13
+    .line 14
+    return-void
+.end method
 
 
 # virtual methods
+.method public final a()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, LB64;->b:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public final b()Ljava/util/List;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LB64;->d:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final c()LFAd;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LB64;->a:LFAd;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final d()LS64;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LB64;->c:LS64;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public final e()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, LB64;->e:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 7
+    .locals 4
 
     .line 1
     const/4 v0, 0x1
@@ -52,106 +139,110 @@
 
     .line 12
     .line 13
-    iget v1, p0, LB64;->a:I
+    iget-object v1, p1, LB64;->a:LFAd;
 
     .line 14
     .line 15
-    iget v3, p1, LB64;->a:I
+    iget-object v3, p0, LB64;->a:LFAd;
 
     .line 16
     .line 17
-    if-eq v1, v3, :cond_2
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
-    return v2
-
     .line 20
-    :cond_2
-    iget v1, p0, LB64;->b:I
+    move-result v1
 
     .line 21
-    .line 22
-    iget v3, p1, LB64;->b:I
+    if-nez v1, :cond_2
 
+    .line 22
     .line 23
+    return v2
+
     .line 24
-    if-eq v1, v3, :cond_3
+    :cond_2
+    iget-boolean v1, p0, LB64;->b:Z
 
     .line 25
     .line 26
-    return v2
+    iget-boolean v3, p1, LB64;->b:Z
 
     .line 27
-    :cond_3
-    iget v1, p0, LB64;->c:I
-
     .line 28
-    .line 29
-    iget v3, p1, LB64;->c:I
+    if-eq v1, v3, :cond_3
 
+    .line 29
     .line 30
+    return v2
+
     .line 31
-    if-eq v1, v3, :cond_4
+    :cond_3
+    iget-object v1, p0, LB64;->c:LS64;
 
     .line 32
     .line 33
-    return v2
+    iget-object v3, p1, LB64;->c:LS64;
 
     .line 34
-    :cond_4
-    iget v1, p0, LB64;->d:I
-
     .line 35
-    .line 36
-    iget v3, p1, LB64;->d:I
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
+    .line 36
     .line 37
     .line 38
-    if-eq v1, v3, :cond_5
+    move-result v1
 
     .line 39
-    .line 40
-    return v2
+    if-nez v1, :cond_4
 
+    .line 40
     .line 41
-    :cond_5
-    iget v1, p0, LB64;->e:I
+    return v2
 
     .line 42
+    :cond_4
+    iget-object v1, p0, LB64;->d:Ljava/util/List;
+
     .line 43
-    iget v3, p1, LB64;->e:I
-
     .line 44
+    iget-object v3, p1, LB64;->d:Ljava/util/List;
+
     .line 45
-    if-eq v1, v3, :cond_6
-
     .line 46
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 47
-    return v2
-
     .line 48
-    :cond_6
-    iget-wide v3, p0, LB64;->f:J
-
     .line 49
+    move-result v1
+
     .line 50
-    iget-wide v5, p1, LB64;->f:J
+    if-nez v1, :cond_5
 
     .line 51
     .line 52
-    cmp-long p1, v3, v5
-
-    .line 53
-    .line 54
-    if-eqz p1, :cond_7
-
-    .line 55
-    .line 56
     return v2
 
+    .line 53
+    :cond_5
+    iget-boolean v1, p0, LB64;->e:Z
+
+    .line 54
+    .line 55
+    iget-boolean p1, p1, LB64;->e:Z
+
+    .line 56
     .line 57
-    :cond_7
+    if-eq v1, p1, :cond_6
+
+    .line 58
+    .line 59
+    return v2
+
+    .line 60
+    :cond_6
     return v0
 .end method
 
@@ -159,116 +250,179 @@
     .locals 5
 
     .line 1
-    iget v0, p0, LB64;->a:I
+    iget-object v0, p0, LB64;->a:LFAd;
 
+    .line 2
+    .line 3
+    iget-object v0, v0, LFAd;->a:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v0
+
+    .line 9
+    const/16 v1, 0x1f
+
+    .line 10
+    .line 11
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, LB64;->b:I
+    .line 12
+    .line 13
+    const/16 v2, 0x4d5
 
-    add-int/2addr v0, v1
+    .line 14
+    .line 15
+    const/16 v3, 0x4cf
 
+    .line 16
+    .line 17
+    iget-boolean v4, p0, LB64;->b:Z
+
+    .line 18
+    .line 19
+    if-eqz v4, :cond_0
+
+    .line 20
+    .line 21
+    const/16 v4, 0x4cf
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    const/16 v4, 0x4d5
+
+    .line 25
+    .line 26
+    :goto_0
+    add-int/2addr v0, v4
+
+    .line 27
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, LB64;->c:I
+    .line 28
+    .line 29
+    iget-object v4, p0, LB64;->c:LS64;
 
-    add-int/2addr v0, v1
+    .line 30
+    .line 31
+    invoke-virtual {v4}, LS64;->hashCode()I
 
-    mul-int/lit8 v0, v0, 0x1f
+    .line 32
+    .line 33
+    .line 34
+    move-result v4
 
-    iget v1, p0, LB64;->d:I
+    .line 35
+    add-int/2addr v4, v0
 
-    add-int/2addr v0, v1
+    .line 36
+    mul-int/lit8 v4, v4, 0x1f
 
-    mul-int/lit8 v0, v0, 0x1f
+    .line 37
+    .line 38
+    iget-object v0, p0, LB64;->d:Ljava/util/List;
 
-    iget v1, p0, LB64;->e:I
+    .line 39
+    .line 40
+    invoke-static {v4, v1, v0}, LmBe;->c(IILjava/util/List;)I
 
-    add-int/2addr v0, v1
+    .line 41
+    .line 42
+    .line 43
+    move-result v0
 
-    mul-int/lit8 v0, v0, 0x1f
+    .line 44
+    iget-boolean v1, p0, LB64;->e:Z
 
-    iget-wide v1, p0, LB64;->f:J
+    .line 45
+    .line 46
+    if-eqz v1, :cond_1
 
-    const/16 v3, 0x20
+    .line 47
+    .line 48
+    const/16 v2, 0x4cf
 
-    ushr-long v3, v1, v3
-
-    xor-long/2addr v1, v3
-
-    long-to-int v2, v1
-
+    .line 49
+    .line 50
+    :cond_1
     add-int/2addr v0, v2
 
+    .line 51
     return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 10
+    .locals 3
 
     .line 1
-    iget v0, p0, LB64;->a:I
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    iget v1, p0, LB64;->b:I
+    const-string v1, "ConversationModel(person="
 
     .line 4
     .line 5
-    iget v2, p0, LB64;->c:I
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
-    iget v3, p0, LB64;->d:I
-
     .line 8
+    iget-object v1, p0, LB64;->a:LFAd;
+
     .line 9
-    iget v4, p0, LB64;->e:I
-
     .line 10
-    .line 11
-    iget-wide v5, p0, LB64;->f:J
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 11
     .line 12
     .line 13
-    const-string v7, "LayerStats(put="
+    const-string v1, ", includeBitmoji="
 
     .line 14
     .line 15
-    const-string v8, ", get="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
-    const-string v9, ", hit="
-
     .line 18
-    .line 19
-    invoke-static {v7, v8, v9, v0, v1}, LEU0;->z(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)Ljava/lang/StringBuilder;
+    iget-boolean v1, p0, LB64;->b:Z
 
+    .line 19
     .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
     .line 21
     .line 22
-    move-result-object v0
-
     .line 23
-    const-string v1, ", max="
+    const-string v1, ", shortcut="
 
     .line 24
     .line 25
-    const-string v7, ", instantiations="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
-    invoke-static {v2, v3, v1, v7, v0}, Lf3j;->i(IILjava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
-
     .line 28
+    iget-object v1, p0, LB64;->c:LS64;
+
     .line 29
     .line 30
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
     .line 33
-    const-string v1, ", instantiationMaxTime="
+    const-string v1, ", messages="
 
     .line 34
     .line 35
@@ -277,27 +431,39 @@
     .line 36
     .line 37
     .line 38
-    invoke-virtual {v0, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    iget-object v1, p0, LB64;->d:Ljava/util/List;
 
     .line 39
     .line 40
-    .line 41
-    const-string v1, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
+    .line 41
     .line 42
     .line 43
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v1, ", isMessagingNotification="
 
     .line 44
     .line 45
-    .line 46
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 46
     .line 47
     .line 48
+    iget-boolean v1, p0, LB64;->e:Z
+
     .line 49
+    .line 50
+    const-string v2, ")"
+
+    .line 51
+    .line 52
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+
+    .line 53
+    .line 54
+    .line 55
     move-result-object v0
 
-    .line 50
+    .line 56
     return-object v0
 .end method

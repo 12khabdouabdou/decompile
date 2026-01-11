@@ -60,6 +60,17 @@
     :pswitch_1
     iget-object v0, p0, Lrxdogtag2/c;->b:Lio/reactivex/rxjava3/observers/LambdaConsumerIntrospection;
 
+    check-cast v0, Lrxdogtag2/DogTagMaybeObserver;
+
+    check-cast p1, Ljava/lang/Throwable;
+
+    invoke-static {v0, p1}, Lrxdogtag2/DogTagMaybeObserver;->b(Lrxdogtag2/DogTagMaybeObserver;Ljava/lang/Throwable;)V
+
+    return-void
+
+    :pswitch_2
+    iget-object v0, p0, Lrxdogtag2/c;->b:Lio/reactivex/rxjava3/observers/LambdaConsumerIntrospection;
+
     check-cast v0, Lrxdogtag2/DogTagCompletableObserver;
 
     check-cast p1, Ljava/lang/Throwable;
@@ -72,6 +83,7 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_2
         :pswitch_1
         :pswitch_0
     .end packed-switch

@@ -1,88 +1,110 @@
 .class public final LU9b;
-.super Lan0;
+.super LJP9;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
-# static fields
-.field public static final Z:LU9b;
 
-.field public static final e0:LcSa;
+# instance fields
+.field public final synthetic a:I
+
+.field public final synthetic b:LaLa;
+
+.field public final synthetic c:LL4b;
+
+.field public final synthetic t:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 11
+.method public synthetic constructor <init>(LaLa;LL4b;Lio/reactivex/rxjava3/disposables/CompositeDisposable;I)V
+    .locals 0
 
     .line 1
-    new-instance v1, LU9b;
+    iput p4, p0, LU9b;->a:I
+
+    iput-object p1, p0, LU9b;->b:LaLa;
+
+    iput-object p2, p0, LU9b;->c:LL4b;
+
+    iput-object p3, p0, LU9b;->t:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final d()Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    iget v0, p0, LU9b;->a:I
 
     .line 2
     .line 3
-    sget-object v0, LEy9;->N0:LEy9;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
-    const/4 v2, 0x0
-
     .line 6
-    const/16 v3, 0x1c
+    iget-object v0, p0, LU9b;->t:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 7
     .line 8
-    const-string v4, "MapTakeover"
+    iget-object v1, p0, LU9b;->b:LaLa;
 
     .line 9
     .line 10
-    invoke-direct {v1, v4, v0, v2, v3}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
+    iget-object v2, p0, LU9b;->c:LL4b;
 
     .line 11
     .line 12
-    .line 13
-    sput-object v1, LU9b;->Z:LU9b;
+    invoke-static {v1, v2, v0}, LaLa;->a(LaLa;LL4b;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
 
+    .line 13
     .line 14
     .line 15
-    new-instance v0, LcSa;
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 16
     .line 17
-    const/4 v8, 0x0
+    return-object v0
 
     .line 18
-    const/4 v9, 0x0
+    :pswitch_0
+    iget-object v0, p0, LU9b;->t:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 19
-    const-string v2, "MapTakeover"
-
     .line 20
-    .line 21
-    const/4 v3, 0x0
+    iget-object v1, p0, LU9b;->b:LaLa;
 
+    .line 21
     .line 22
-    const/4 v4, 0x1
+    iget-object v2, p0, LU9b;->c:LL4b;
 
     .line 23
-    const/4 v5, 0x0
-
     .line 24
-    const/4 v6, 0x0
+    invoke-static {v1, v2, v0}, LaLa;->a(LaLa;LL4b;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
 
     .line 25
-    const/4 v7, 0x0
-
     .line 26
-    const/16 v10, 0x3ff4
-
     .line 27
+    sget-object v0, Lewj;->a:Lewj;
+
     .line 28
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
-
     .line 29
-    .line 30
-    .line 31
-    sput-object v0, LU9b;->e0:LcSa;
+    return-object v0
 
-    .line 32
-    .line 33
-    return-void
+    .line 30
+    nop
+
+    .line 31
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -14,7 +14,7 @@
 
 
 # static fields
-.field private static final synthetic $ENTRIES:LcQ6;
+.field private static final synthetic $ENTRIES:LOT6;
 
 .field private static final synthetic $VALUES:[Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;
 
@@ -148,7 +148,7 @@
 
     .line 28
     .line 29
-    sget-object v13, LsL6;->a:LsL6;
+    sget-object v13, LgP6;->a:LgP6;
 
     .line 30
     .line 31
@@ -182,7 +182,7 @@
 
     .line 44
     .line 45
-    invoke-direct/range {v9 .. v18}, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;ZZILHr5;)V
+    invoke-direct/range {v9 .. v18}, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;ZZILex5;)V
 
     .line 46
     .line 47
@@ -234,7 +234,7 @@
 
     .line 70
     .line 71
-    invoke-direct/range {v10 .. v19}, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;ZZILHr5;)V
+    invoke-direct/range {v10 .. v19}, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;-><init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;ZZILex5;)V
 
     .line 72
     .line 73
@@ -255,16 +255,16 @@
 
     .line 81
     .line 82
-    new-instance v1, LdQ6;
+    new-instance v1, LPT6;
 
     .line 83
     .line 84
-    invoke-direct {v1, v0}, LdQ6;-><init>([Ljava/lang/Enum;)V
+    invoke-direct {v1, v0}, LPT6;-><init>([Ljava/lang/Enum;)V
 
     .line 85
     .line 86
     .line 87
-    sput-object v1, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;->$ENTRIES:LcQ6;
+    sput-object v1, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;->$ENTRIES:LOT6;
 
     .line 88
     .line 89
@@ -306,7 +306,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;ZZILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;ILjava/lang/String;Ljava/util/List;Lcom/snap/blizzard/v2/innards/uploads/windows/UploadWindow$a;ZZILex5;)V
     .locals 1
 
     and-int/lit8 p9, p8, 0x8
@@ -353,17 +353,17 @@
     return-void
 .end method
 
-.method public static getEntries()LcQ6;
+.method public static getEntries()LOT6;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "LcQ6;"
+            "LOT6;"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;->$ENTRIES:LcQ6;
+    sget-object v0, Lcom/snap/blizzard/v2/innards/uploads/dj/BlizzardV2DurableJobType;->$ENTRIES:LOT6;
 
     .line 2
     .line 3

@@ -1,37 +1,37 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
-.field public final c:LKtb;
+.field public final c:LlHb;
 
-.field public final d:Lnib;
+.field public final d:LQvb;
 
 .field public final e:Ljava/lang/Throwable;
 
 
 # direct methods
-.method public constructor <init>(LdXc;LKtb;Lnib;Ljava/lang/Throwable;)V
+.method public constructor <init>(LYbd;LlHb;LQvb;Ljava/lang/Throwable;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LdXc;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LYbd;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LKtb;
+    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LlHb;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:Lnib;
+    iput-object p3, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:LQvb;
 
     .line 9
     .line 10
@@ -44,11 +44,11 @@
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LYbd;
 
     .line 2
     .line 3
@@ -76,11 +76,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;
 
-    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LdXc;
+    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LYbd;
 
-    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LdXc;
+    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LYbd;
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -89,18 +89,18 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LKtb;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LlHb;
 
-    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LKtb;
+    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LlHb;
 
     if-eq v1, v3, :cond_3
 
     return v2
 
     :cond_3
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:Lnib;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:LQvb;
 
-    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:Lnib;
+    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:LQvb;
 
     if-eq v1, v3, :cond_4
 
@@ -111,7 +111,7 @@
 
     iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->e:Ljava/lang/Throwable;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -126,15 +126,15 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LYbd;
 
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     move-result v0
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LKtb;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LlHb;
 
     if-nez v1, :cond_0
 
@@ -152,7 +152,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:Lnib;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:LQvb;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -182,7 +182,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -190,7 +190,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LKtb;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->c:LlHb;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -198,7 +198,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:Lnib;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$PageResolutionFailed;->d:LQvb;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

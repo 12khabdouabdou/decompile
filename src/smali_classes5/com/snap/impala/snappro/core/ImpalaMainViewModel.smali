@@ -1,10 +1,10 @@
 .class public final Lcom/snap/impala/snappro/core/ImpalaMainViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'routeName\':s,\'businessProfileAndUserDataBytes\':t?,\'newBadgePresent\':b,\'inAppFeedbackEnabled\':b@?,\'isCameosInSpotlight\':b@?,\'userId\':s,\'useStandardTierNuxes\':b@?,\'midrollNotificationEnabled\':b@?,\'milestoneNotificationEnabled\':b@?,\'profileNewBadgeEnabled\':b@?,\'savedStoriesNewBadgeEnabled\':b@?,\'sourceNotificationId\':s?,\'storiesPinnedTooltipEnabled\':b@?,\'spotlightPinnedTooltipEnabled\':b@?,\'defaultTab\':s?,\'deeplinkReferrer\':s?,\'deeplinkAction\':r?<e>:\'[0]\',\'deeplinkHandlingId\':d@?,\'deeplinkAdId\':s?,\'multiProfileContext\':r?:\'[1]\'"
     typeReferences = {

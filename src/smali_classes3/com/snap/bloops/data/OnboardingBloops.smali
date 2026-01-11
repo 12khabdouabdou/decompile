@@ -165,7 +165,7 @@
 
     iget-object v3, p1, Lcom/snap/bloops/data/OnboardingBloops;->loading:Lapp/aifactory/sdk/api/model/dto/ScenarioRemoteInfo;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -178,7 +178,7 @@
 
     iget-object v3, p1, Lcom/snap/bloops/data/OnboardingBloops;->friend:Lapp/aifactory/sdk/api/model/dto/ScenarioRemoteInfo;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -191,7 +191,7 @@
 
     iget-object v3, p1, Lcom/snap/bloops/data/OnboardingBloops;->loop:Lapp/aifactory/sdk/api/model/dto/ScenarioRemoteInfo;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -204,7 +204,7 @@
 
     iget-object p1, p1, Lcom/snap/bloops/data/OnboardingBloops;->oneFrame:Lapp/aifactory/sdk/api/model/dto/ScenarioRemoteInfo;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

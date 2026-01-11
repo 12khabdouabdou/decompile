@@ -1,36 +1,34 @@
 .class public final LVIb;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LXIb;
+.field public final synthetic b:LWIb;
 
 
 # direct methods
-.method public synthetic constructor <init>(LXIb;I)V
+.method public synthetic constructor <init>(LWIb;I)V
     .locals 0
 
     .line 1
     iput p2, p0, LVIb;->a:I
 
-    iput-object p1, p0, LVIb;->b:LXIb;
+    iput-object p1, p0, LVIb;->b:LWIb;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
+.method public final accept(Ljava/lang/Object;)V
     .locals 2
 
     .line 1
@@ -43,53 +41,55 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LVIb;->b:LXIb;
+    check-cast p1, LReg;
 
     .line 7
     .line 8
-    iget-object v0, v0, LXIb;->Z:Landroid/content/Context;
+    iget-object v0, p0, LVIb;->b:LWIb;
 
     .line 9
     .line 10
-    const v1, 0x7f06048d
+    iget-object v0, v0, LWIb;->Y:LCBe;
 
     .line 11
     .line 12
-    .line 13
-    invoke-static {v0, v1}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
+    .line 13
     .line 14
     .line 15
-    .line 16
-    move-result v0
-
-    .line 17
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 18
-    .line 19
-    .line 20
     move-result-object v0
 
-    .line 21
-    return-object v0
+    .line 16
+    check-cast v0, Loag;
 
+    .line 17
+    .line 18
+    const/4 v1, 0x0
+
+    .line 19
+    invoke-interface {v0, p1, v1}, Loag;->f(LReg;Lkotlin/jvm/functions/Function1;)V
+
+    .line 20
+    .line 21
     .line 22
-    :pswitch_0
-    iget-object v0, p0, LVIb;->b:LXIb;
+    return-void
 
     .line 23
+    :pswitch_0
+    check-cast p1, LReg;
+
     .line 24
-    iget-object v0, v0, LXIb;->Z:Landroid/content/Context;
-
     .line 25
-    .line 26
-    const v1, 0x7f0405b2
+    iget-object v0, p0, LVIb;->b:LWIb;
 
+    .line 26
     .line 27
+    iget-object v0, v0, LWIb;->Y:LCBe;
+
     .line 28
     .line 29
-    invoke-static {v0, v1}, Ln9f;->l(Landroid/content/Context;I)Ljava/lang/Integer;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 30
     .line 31
@@ -97,40 +97,26 @@
     move-result-object v0
 
     .line 33
-    return-object v0
+    check-cast v0, Loag;
 
     .line 34
-    :pswitch_1
-    iget-object v0, p0, LVIb;->b:LXIb;
-
     .line 35
+    const/4 v1, 0x0
+
     .line 36
-    iget-object v0, v0, LXIb;->Z:Landroid/content/Context;
+    invoke-interface {v0, p1, v1}, Loag;->f(LReg;Lkotlin/jvm/functions/Function1;)V
 
     .line 37
     .line 38
-    const v1, 0x7f040601
-
     .line 39
+    return-void
+
     .line 40
-    .line 41
-    invoke-static {v0, v1}, Ln9f;->l(Landroid/content/Context;I)Ljava/lang/Integer;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v0
-
-    .line 45
-    return-object v0
-
-    .line 46
     nop
 
-    .line 47
+    .line 41
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

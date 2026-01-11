@@ -359,7 +359,7 @@
     move-result-object v0
 
     .line 94
-    check-cast v0, Lnq8;
+    check-cast v0, LUw8;
 
     .line 95
     .line 96
@@ -383,7 +383,7 @@
 
     .line 105
     .line 106
-    invoke-static {v1}, Lspk;->h(Landroid/app/Activity;)LA7k;
+    invoke-static {v1}, LkPk;->c(Landroid/app/Activity;)LAxk;
 
     .line 107
     .line 108
@@ -391,45 +391,45 @@
     move-result-object v5
 
     .line 110
-    iget-object v10, v0, Lnq8;->a:Ljava/lang/String;
+    iget-object v10, v0, LUw8;->a:Ljava/lang/String;
 
     .line 111
     .line 112
-    invoke-static {v10}, Ldw8;->s(Ljava/lang/Object;)V
+    invoke-static {v10}, LNpk;->k(Ljava/lang/Object;)V
 
     .line 113
     .line 114
     .line 115
-    new-instance v8, Lnq8;
+    new-instance v8, LUw8;
 
     .line 116
     .line 117
-    iget-boolean v14, v0, Lnq8;->X:Z
+    iget-boolean v14, v0, LUw8;->X:Z
 
     .line 118
     .line 119
-    iget v9, v0, Lnq8;->Y:I
+    iget v9, v0, LUw8;->Y:I
 
     .line 120
     .line 121
-    iget-object v11, v0, Lnq8;->b:Ljava/lang/String;
+    iget-object v11, v0, LUw8;->b:Ljava/lang/String;
 
     .line 122
     .line 123
-    iget-object v12, v5, LA7k;->k:Ljava/lang/String;
+    iget-object v12, v5, LAxk;->k:Ljava/lang/String;
 
     .line 124
     .line 125
-    iget-object v13, v0, Lnq8;->t:Ljava/lang/String;
+    iget-object v13, v0, LUw8;->t:Ljava/lang/String;
 
     .line 126
     .line 127
-    invoke-direct/range {v8 .. v14}, Lnq8;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct/range {v8 .. v14}, LUw8;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 128
     .line 129
     .line 130
-    invoke-static {}, LdQ3;->f()LdQ3;
+    invoke-static {}, LNX5;->f()LNX5;
 
     .line 131
     .line 132
@@ -437,11 +437,11 @@
     move-result-object v0
 
     .line 134
-    new-array v3, v3, [Lsc7;
+    new-array v3, v3, [Lhh7;
 
     .line 135
     .line 136
-    sget-object v9, Ldjk;->c:Lsc7;
+    sget-object v9, LwIk;->c:Lhh7;
 
     .line 137
     .line 138
@@ -449,20 +449,20 @@
 
     .line 139
     .line 140
-    iput-object v3, v0, LdQ3;->X:Ljava/lang/Object;
+    iput-object v3, v0, LNX5;->X:Ljava/lang/Object;
 
     .line 141
     .line 142
-    new-instance v3, LvJj;
+    new-instance v3, LEZj;
 
     .line 143
     .line 144
-    invoke-direct {v3, v5, v8}, LvJj;-><init>(LA7k;Lnq8;)V
+    invoke-direct {v3, v5, v8}, LEZj;-><init>(LAxk;LUw8;)V
 
     .line 145
     .line 146
     .line 147
-    iput-object v3, v0, LdQ3;->t:Ljava/lang/Object;
+    iput-object v3, v0, LNX5;->t:Ljava/lang/Object;
 
     .line 148
     .line 149
@@ -470,11 +470,11 @@
 
     .line 150
     .line 151
-    iput v3, v0, LdQ3;->b:I
+    iput v3, v0, LNX5;->b:I
 
     .line 152
     .line 153
-    invoke-virtual {v0}, LdQ3;->a()LdQ3;
+    invoke-virtual {v0}, LNX5;->e()LNX5;
 
     .line 154
     .line 155
@@ -482,7 +482,7 @@
     move-result-object v0
 
     .line 157
-    invoke-virtual {v5, v7, v0}, Lrx8;->c(ILdQ3;)LrAk;
+    invoke-virtual {v5, v7, v0}, LYD8;->c(ILNX5;)Lf0l;
 
     .line 158
     .line 159
@@ -490,24 +490,24 @@
     move-result-object v5
 
     .line 161
-    new-instance v0, LJL8;
+    new-instance v0, LIT8;
 
     .line 162
     .line 163
-    invoke-direct {v0, v1, v4, v2}, LJL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
+    invoke-direct {v0, v1, v4, v2}, LIT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
 
     .line 164
     .line 165
     .line 166
-    new-instance v2, Lvy7;
+    new-instance v2, LjO7;
 
     .line 167
     .line 168
-    const/16 v3, 0xd
+    const/16 v3, 0xb
 
     .line 169
     .line 170
-    invoke-direct {v2, v3, v0}, Lvy7;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, v0}, LjO7;-><init>(ILjava/lang/Object;)V
 
     .line 171
     .line 172
@@ -517,25 +517,25 @@
     .line 174
     .line 175
     .line 176
-    sget-object v0, Ldoi;->a:LVuc;
+    sget-object v0, LTMi;->a:LUJc;
 
     .line 177
     .line 178
-    invoke-virtual {v5, v0, v2}, LrAk;->c(Ljava/util/concurrent/Executor;LKOc;)LrAk;
+    invoke-virtual {v5, v0, v2}, Lf0l;->c(Ljava/util/concurrent/Executor;LE3d;)Lf0l;
 
     .line 179
     .line 180
     .line 181
-    new-instance v2, LIL8;
+    new-instance v2, LHT8;
 
     .line 182
     .line 183
-    invoke-direct {v2, v1, v6}, LIL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
+    invoke-direct {v2, v1, v6}, LHT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
 
     .line 184
     .line 185
     .line 186
-    invoke-virtual {v5, v0, v2}, LrAk;->b(Ljava/util/concurrent/Executor;LANc;)LrAk;
+    invoke-virtual {v5, v0, v2}, Lf0l;->b(Ljava/util/concurrent/Executor;Lx2d;)Lf0l;
 
     .line 187
     .line 188
@@ -591,7 +591,7 @@
     move-result-object v0
 
     .line 213
-    check-cast v0, LMkf;
+    check-cast v0, LIDf;
 
     .line 214
     .line 215
@@ -615,11 +615,11 @@
 
     .line 224
     .line 225
-    new-instance v4, LA7k;
+    new-instance v4, LAxk;
 
     .line 226
     .line 227
-    new-instance v5, LN7k;
+    new-instance v5, LNxk;
 
     .line 228
     .line 229
@@ -628,33 +628,33 @@
     .line 230
     .line 231
     .line 232
-    invoke-direct {v4, v1, v5}, LA7k;-><init>(Landroidx/credentials/playservices/HiddenActivity;LN7k;)V
+    invoke-direct {v4, v1, v5}, LAxk;-><init>(Landroidx/credentials/playservices/HiddenActivity;LNxk;)V
 
     .line 233
     .line 234
     .line 235
-    new-instance v5, LMkf;
+    new-instance v5, LIDf;
 
     .line 236
     .line 237
-    iget-object v6, v0, LMkf;->a:LWng;
+    iget-object v6, v0, LIDf;->a:LZIg;
 
     .line 238
     .line 239
-    iget-object v8, v4, LA7k;->k:Ljava/lang/String;
+    iget-object v8, v4, LAxk;->k:Ljava/lang/String;
 
     .line 240
     .line 241
-    iget v0, v0, LMkf;->c:I
+    iget v0, v0, LIDf;->c:I
 
     .line 242
     .line 243
-    invoke-direct {v5, v6, v8, v0}, LMkf;-><init>(LWng;Ljava/lang/String;I)V
+    invoke-direct {v5, v6, v8, v0}, LIDf;-><init>(LZIg;Ljava/lang/String;I)V
 
     .line 244
     .line 245
     .line 246
-    invoke-static {}, LdQ3;->f()LdQ3;
+    invoke-static {}, LNX5;->f()LNX5;
 
     .line 247
     .line 248
@@ -662,11 +662,11 @@
     move-result-object v0
 
     .line 250
-    new-array v6, v3, [Lsc7;
+    new-array v6, v3, [Lhh7;
 
     .line 251
     .line 252
-    sget-object v8, Ldjk;->b:Lsc7;
+    sget-object v8, LwIk;->b:Lhh7;
 
     .line 253
     .line 254
@@ -674,24 +674,24 @@
 
     .line 255
     .line 256
-    iput-object v6, v0, LdQ3;->X:Ljava/lang/Object;
+    iput-object v6, v0, LNX5;->X:Ljava/lang/Object;
 
     .line 257
     .line 258
-    new-instance v6, Lztj;
+    new-instance v6, LFxj;
 
     .line 259
     .line 260
-    invoke-direct {v6, v4, v5}, Lztj;-><init>(LA7k;LMkf;)V
+    invoke-direct {v6, v4, v5}, LFxj;-><init>(LAxk;LIDf;)V
 
     .line 261
     .line 262
     .line 263
-    iput-object v6, v0, LdQ3;->t:Ljava/lang/Object;
+    iput-object v6, v0, LNX5;->t:Ljava/lang/Object;
 
     .line 264
     .line 265
-    iput-boolean v7, v0, LdQ3;->c:Z
+    iput-boolean v7, v0, LNX5;->c:Z
 
     .line 266
     .line 267
@@ -699,11 +699,11 @@
 
     .line 268
     .line 269
-    iput v5, v0, LdQ3;->b:I
+    iput v5, v0, LNX5;->b:I
 
     .line 270
     .line 271
-    invoke-virtual {v0}, LdQ3;->a()LdQ3;
+    invoke-virtual {v0}, LNX5;->e()LNX5;
 
     .line 272
     .line 273
@@ -711,7 +711,7 @@
     move-result-object v0
 
     .line 275
-    invoke-virtual {v4, v7, v0}, Lrx8;->c(ILdQ3;)LrAk;
+    invoke-virtual {v4, v7, v0}, LYD8;->c(ILNX5;)Lf0l;
 
     .line 276
     .line 277
@@ -719,24 +719,24 @@
     move-result-object v5
 
     .line 279
-    new-instance v0, LJL8;
+    new-instance v0, LIT8;
 
     .line 280
     .line 281
-    invoke-direct {v0, v1, v2, v3}, LJL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
+    invoke-direct {v0, v1, v2, v3}, LIT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
 
     .line 282
     .line 283
     .line 284
-    new-instance v2, Lvy7;
+    new-instance v2, LjO7;
 
     .line 285
     .line 286
-    const/16 v4, 0xc
+    const/16 v4, 0xa
 
     .line 287
     .line 288
-    invoke-direct {v2, v4, v0}, Lvy7;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v4, v0}, LjO7;-><init>(ILjava/lang/Object;)V
 
     .line 289
     .line 290
@@ -746,25 +746,25 @@
     .line 292
     .line 293
     .line 294
-    sget-object v0, Ldoi;->a:LVuc;
+    sget-object v0, LTMi;->a:LUJc;
 
     .line 295
     .line 296
-    invoke-virtual {v5, v0, v2}, LrAk;->c(Ljava/util/concurrent/Executor;LKOc;)LrAk;
+    invoke-virtual {v5, v0, v2}, Lf0l;->c(Ljava/util/concurrent/Executor;LE3d;)Lf0l;
 
     .line 297
     .line 298
     .line 299
-    new-instance v2, LIL8;
+    new-instance v2, LHT8;
 
     .line 300
     .line 301
-    invoke-direct {v2, v1, v3}, LIL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
+    invoke-direct {v2, v1, v3}, LHT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
 
     .line 302
     .line 303
     .line 304
-    invoke-virtual {v5, v0, v2}, LrAk;->b(Ljava/util/concurrent/Executor;LANc;)LrAk;
+    invoke-virtual {v5, v0, v2}, Lf0l;->b(Ljava/util/concurrent/Executor;Lx2d;)Lf0l;
 
     .line 305
     .line 306
@@ -823,7 +823,7 @@
     move-object v9, v0
 
     .line 332
-    check-cast v9, Lole;
+    check-cast v9, LcDe;
 
     .line 333
     .line 334
@@ -847,475 +847,479 @@
 
     .line 343
     .line 344
-    new-instance v0, LIo7;
+    new-instance v0, LMt7;
 
     .line 345
     .line 346
-    sget-object v4, LWT;->g:LVT;
+    sget-object v4, LdW;->g:LcW;
 
     .line 347
     .line 348
-    new-instance v2, Ll2k;
+    new-instance v2, LjRh;
 
     .line 349
     .line 350
-    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+    const/16 v3, 0x1c
 
     .line 351
     .line 352
-    .line 353
-    invoke-virtual {v1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+    invoke-direct {v2, v3}, LjRh;-><init>(I)V
 
+    .line 353
     .line 354
     .line 355
+    invoke-virtual {v1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+
     .line 356
+    .line 357
+    .line 358
     move-result-object v3
 
-    .line 357
-    const-string v5, "Looper must not be null."
-
-    .line 358
     .line 359
-    invoke-static {v3, v5}, Ldw8;->t(Ljava/lang/Object;Ljava/lang/String;)V
+    const-string v5, "Looper must not be null."
 
     .line 360
     .line 361
-    .line 362
-    new-instance v5, Lqx8;
+    invoke-static {v3, v5}, LNpk;->l(Ljava/lang/Object;Ljava/lang/String;)V
 
+    .line 362
     .line 363
     .line 364
-    invoke-direct {v5, v2, v3}, Lqx8;-><init>(Ll2k;Landroid/os/Looper;)V
+    new-instance v5, LXD8;
 
     .line 365
     .line 366
-    .line 367
-    sget-object v3, LIo7;->k:Lp36;
+    invoke-direct {v5, v2, v3}, LXD8;-><init>(LjRh;Landroid/os/Looper;)V
 
+    .line 367
     .line 368
     .line 369
-    move-object/from16 v2, p0
+    sget-object v3, LMt7;->k:Lq66;
 
     .line 370
     .line 371
-    invoke-direct/range {v0 .. v5}, Lrx8;-><init>(Landroid/content/Context;Landroid/app/Activity;Lp36;LWT;Lqx8;)V
+    move-object/from16 v2, p0
 
     .line 372
     .line 373
-    .line 374
-    invoke-static {}, LdQ3;->f()LdQ3;
+    invoke-direct/range {v0 .. v5}, LYD8;-><init>(Landroid/content/Context;Landroid/app/Activity;Lq66;LdW;LXD8;)V
 
+    .line 374
     .line 375
     .line 376
+    invoke-static {}, LNX5;->f()LNX5;
+
     .line 377
+    .line 378
+    .line 379
     move-result-object v2
 
-    .line 378
-    new-instance v3, LWsj;
-
-    .line 379
     .line 380
-    invoke-direct {v3, v0, v9}, LWsj;-><init>(LIo7;Lole;)V
+    new-instance v3, LRsk;
 
     .line 381
     .line 382
-    .line 383
-    iput-object v3, v2, LdQ3;->t:Ljava/lang/Object;
+    invoke-direct {v3, v0, v9}, LRsk;-><init>(LMt7;LcDe;)V
 
+    .line 383
     .line 384
     .line 385
-    const/16 v3, 0x151f
+    iput-object v3, v2, LNX5;->t:Ljava/lang/Object;
 
     .line 386
     .line 387
-    iput v3, v2, LdQ3;->b:I
+    const/16 v3, 0x151f
 
     .line 388
     .line 389
-    invoke-virtual {v2}, LdQ3;->a()LdQ3;
+    iput v3, v2, LNX5;->b:I
 
     .line 390
     .line 391
+    invoke-virtual {v2}, LNX5;->e()LNX5;
+
     .line 392
+    .line 393
+    .line 394
     move-result-object v2
 
-    .line 393
-    invoke-virtual {v0, v7, v2}, Lrx8;->c(ILdQ3;)LrAk;
-
-    .line 394
     .line 395
+    invoke-virtual {v0, v7, v2}, LYD8;->c(ILNX5;)Lf0l;
+
     .line 396
+    .line 397
+    .line 398
     move-result-object v5
 
-    .line 397
-    new-instance v0, LJL8;
-
-    .line 398
     .line 399
-    invoke-direct {v0, v1, v8, v6}, LJL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
+    new-instance v0, LIT8;
 
     .line 400
     .line 401
-    .line 402
-    new-instance v2, Lvy7;
+    invoke-direct {v0, v1, v8, v6}, LIT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
 
+    .line 402
     .line 403
     .line 404
-    const/16 v3, 0xb
+    new-instance v2, LjO7;
 
     .line 405
     .line 406
-    invoke-direct {v2, v3, v0}, Lvy7;-><init>(ILjava/lang/Object;)V
+    const/16 v3, 0x9
 
     .line 407
     .line 408
-    .line 409
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v2, v3, v0}, LjO7;-><init>(ILjava/lang/Object;)V
 
+    .line 409
     .line 410
     .line 411
-    .line 412
-    sget-object v0, Ldoi;->a:LVuc;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 412
     .line 413
     .line 414
-    invoke-virtual {v5, v0, v2}, LrAk;->c(Ljava/util/concurrent/Executor;LKOc;)LrAk;
+    sget-object v0, LTMi;->a:LUJc;
 
     .line 415
     .line 416
-    .line 417
-    new-instance v2, LIL8;
+    invoke-virtual {v5, v0, v2}, Lf0l;->c(Ljava/util/concurrent/Executor;LE3d;)Lf0l;
 
+    .line 417
     .line 418
     .line 419
-    invoke-direct {v2, v1, v7}, LIL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
+    new-instance v2, LHT8;
 
     .line 420
     .line 421
-    .line 422
-    invoke-virtual {v5, v0, v2}, LrAk;->b(Ljava/util/concurrent/Executor;LANc;)LrAk;
+    invoke-direct {v2, v1, v7}, LHT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
 
+    .line 422
     .line 423
     .line 424
+    invoke-virtual {v5, v0, v2}, Lf0l;->b(Ljava/util/concurrent/Executor;Lx2d;)Lf0l;
+
     .line 425
+    .line 426
+    .line 427
     :cond_8
     if-nez v5, :cond_b
 
-    .line 426
-    .line 427
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
-
     .line 428
     .line 429
+    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+
     .line 430
+    .line 431
+    .line 432
     return-void
 
-    .line 431
+    .line 433
     :sswitch_3
     const-string v0, "BEGIN_SIGN_IN"
 
-    .line 432
-    .line 433
-    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 434
     .line 435
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 436
+    .line 437
+    .line 438
     move-result v0
 
-    .line 437
-    if-nez v0, :cond_9
-
-    .line 438
     .line 439
-    goto/16 :goto_1
+    if-nez v0, :cond_9
 
     .line 440
     .line 441
-    :cond_9
-    invoke-virtual {v1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    goto/16 :goto_1
 
     .line 442
     .line 443
+    :cond_9
+    invoke-virtual {v1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
     .line 444
+    .line 445
+    .line 446
     move-result-object v0
 
-    .line 445
+    .line 447
     invoke-virtual {v0, v9}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
-    .line 446
-    .line 447
     .line 448
+    .line 449
+    .line 450
     move-result-object v0
 
-    .line 449
-    check-cast v0, LES0;
-
-    .line 450
     .line 451
-    invoke-virtual {v1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    check-cast v0, LTV0;
 
     .line 452
     .line 453
+    invoke-virtual {v1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+
     .line 454
+    .line 455
+    .line 456
     move-result-object v4
 
-    .line 455
+    .line 457
     invoke-virtual {v4, v8, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
-    .line 456
-    .line 457
     .line 458
+    .line 459
+    .line 460
     move-result v4
 
-    .line 459
-    if-eqz v0, :cond_a
-
-    .line 460
     .line 461
-    invoke-static {v1}, Lspk;->h(Landroid/app/Activity;)LA7k;
+    if-eqz v0, :cond_a
 
     .line 462
     .line 463
+    invoke-static {v1}, LkPk;->c(Landroid/app/Activity;)LAxk;
+
     .line 464
+    .line 465
+    .line 466
     move-result-object v5
 
-    .line 465
-    invoke-static {}, LAS0;->a()Ld80;
-
-    .line 466
     .line 467
+    invoke-static {}, LPV0;->a()LAa0;
+
     .line 468
+    .line 469
+    .line 470
     move-result-object v6
 
-    .line 469
-    iput-boolean v7, v6, Ld80;->b:Z
-
-    .line 470
     .line 471
-    invoke-virtual {v6}, Ld80;->a()LAS0;
+    iput-boolean v7, v6, LAa0;->b:Z
 
     .line 472
     .line 473
-    .line 474
-    iget-object v10, v0, LES0;->b:LAS0;
+    invoke-virtual {v6}, LAa0;->l()LPV0;
 
+    .line 474
     .line 475
     .line 476
-    invoke-static {v10}, Ldw8;->s(Ljava/lang/Object;)V
+    iget-object v10, v0, LTV0;->b:LPV0;
 
     .line 477
     .line 478
-    .line 479
-    iget-object v9, v0, LES0;->a:LDS0;
+    invoke-static {v10}, LNpk;->k(Ljava/lang/Object;)V
 
+    .line 479
     .line 480
     .line 481
-    invoke-static {v9}, Ldw8;->s(Ljava/lang/Object;)V
+    iget-object v9, v0, LTV0;->a:LSV0;
 
     .line 482
     .line 483
-    .line 484
-    iget-object v14, v0, LES0;->Y:LCS0;
+    invoke-static {v9}, LNpk;->k(Ljava/lang/Object;)V
 
+    .line 484
     .line 485
     .line 486
-    invoke-static {v14}, Ldw8;->s(Ljava/lang/Object;)V
+    iget-object v14, v0, LTV0;->Y:LRV0;
 
     .line 487
     .line 488
-    .line 489
-    iget-object v15, v0, LES0;->Z:LBS0;
+    invoke-static {v14}, LNpk;->k(Ljava/lang/Object;)V
 
+    .line 489
     .line 490
     .line 491
-    invoke-static {v15}, Ldw8;->s(Ljava/lang/Object;)V
+    iget-object v15, v0, LTV0;->Z:LQV0;
 
     .line 492
     .line 493
-    .line 494
-    new-instance v8, LES0;
+    invoke-static {v15}, LNpk;->k(Ljava/lang/Object;)V
 
+    .line 494
     .line 495
     .line 496
-    iget v13, v0, LES0;->X:I
+    new-instance v8, LTV0;
 
     .line 497
     .line 498
-    iget-boolean v6, v0, LES0;->e0:Z
+    iget v13, v0, LTV0;->X:I
 
     .line 499
     .line 500
-    iget-object v11, v5, LA7k;->k:Ljava/lang/String;
+    iget-boolean v6, v0, LTV0;->e0:Z
 
     .line 501
     .line 502
-    iget-boolean v12, v0, LES0;->t:Z
+    iget-object v11, v5, LAxk;->k:Ljava/lang/String;
 
     .line 503
     .line 504
-    move/from16 v16, v6
+    iget-boolean v12, v0, LTV0;->t:Z
 
     .line 505
     .line 506
-    invoke-direct/range {v8 .. v16}, LES0;-><init>(LDS0;LAS0;Ljava/lang/String;ZILCS0;LBS0;Z)V
+    move/from16 v16, v6
 
     .line 507
     .line 508
-    .line 509
-    invoke-static {}, LdQ3;->f()LdQ3;
+    invoke-direct/range {v8 .. v16}, LTV0;-><init>(LSV0;LPV0;Ljava/lang/String;ZILRV0;LQV0;Z)V
 
+    .line 509
     .line 510
     .line 511
+    invoke-static {}, LNX5;->f()LNX5;
+
     .line 512
+    .line 513
+    .line 514
     move-result-object v0
 
-    .line 513
-    new-instance v6, Lsc7;
-
-    .line 514
     .line 515
-    const-string v9, "auth_api_credentials_begin_sign_in"
+    new-instance v6, Lhh7;
 
     .line 516
     .line 517
-    const-wide/16 v10, 0x8
+    const-string v9, "auth_api_credentials_begin_sign_in"
 
     .line 518
     .line 519
-    invoke-direct {v6, v9, v10, v11}, Lsc7;-><init>(Ljava/lang/String;J)V
+    const-wide/16 v10, 0x8
 
     .line 520
     .line 521
-    .line 522
-    new-array v3, v3, [Lsc7;
+    invoke-direct {v6, v9, v10, v11}, Lhh7;-><init>(Ljava/lang/String;J)V
 
+    .line 522
     .line 523
     .line 524
-    aput-object v6, v3, v7
+    new-array v3, v3, [Lhh7;
 
     .line 525
     .line 526
-    iput-object v3, v0, LdQ3;->X:Ljava/lang/Object;
+    aput-object v6, v3, v7
 
     .line 527
     .line 528
-    new-instance v3, LEsj;
+    iput-object v3, v0, LNX5;->X:Ljava/lang/Object;
 
     .line 529
     .line 530
-    invoke-direct {v3, v5, v8}, LEsj;-><init>(LA7k;LES0;)V
+    new-instance v3, LDsk;
 
     .line 531
     .line 532
-    .line 533
-    iput-object v3, v0, LdQ3;->t:Ljava/lang/Object;
+    invoke-direct {v3, v5, v8}, LDsk;-><init>(LAxk;LTV0;)V
 
+    .line 533
     .line 534
     .line 535
-    iput-boolean v7, v0, LdQ3;->c:Z
+    iput-object v3, v0, LNX5;->t:Ljava/lang/Object;
 
     .line 536
     .line 537
-    const/16 v3, 0x611
+    iput-boolean v7, v0, LNX5;->c:Z
 
     .line 538
     .line 539
-    iput v3, v0, LdQ3;->b:I
+    const/16 v3, 0x611
 
     .line 540
     .line 541
-    invoke-virtual {v0}, LdQ3;->a()LdQ3;
+    iput v3, v0, LNX5;->b:I
 
     .line 542
     .line 543
+    invoke-virtual {v0}, LNX5;->e()LNX5;
+
     .line 544
+    .line 545
+    .line 546
     move-result-object v0
 
-    .line 545
-    invoke-virtual {v5, v7, v0}, Lrx8;->c(ILdQ3;)LrAk;
-
-    .line 546
     .line 547
+    invoke-virtual {v5, v7, v0}, LYD8;->c(ILNX5;)Lf0l;
+
     .line 548
+    .line 549
+    .line 550
     move-result-object v5
 
-    .line 549
-    new-instance v0, LJL8;
-
-    .line 550
     .line 551
-    invoke-direct {v0, v1, v4, v7}, LJL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
+    new-instance v0, LIT8;
 
     .line 552
     .line 553
-    .line 554
-    new-instance v3, Lvy7;
+    invoke-direct {v0, v1, v4, v7}, LIT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;II)V
 
+    .line 554
     .line 555
     .line 556
-    const/16 v4, 0xe
+    new-instance v3, LjO7;
 
     .line 557
     .line 558
-    invoke-direct {v3, v4, v0}, Lvy7;-><init>(ILjava/lang/Object;)V
+    const/16 v4, 0xc
 
     .line 559
     .line 560
-    .line 561
-    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-direct {v3, v4, v0}, LjO7;-><init>(ILjava/lang/Object;)V
 
+    .line 561
     .line 562
     .line 563
-    .line 564
-    sget-object v0, Ldoi;->a:LVuc;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 564
     .line 565
     .line 566
-    invoke-virtual {v5, v0, v3}, LrAk;->c(Ljava/util/concurrent/Executor;LKOc;)LrAk;
+    sget-object v0, LTMi;->a:LUJc;
 
     .line 567
     .line 568
-    .line 569
-    new-instance v3, LIL8;
+    invoke-virtual {v5, v0, v3}, Lf0l;->c(Ljava/util/concurrent/Executor;LE3d;)Lf0l;
 
+    .line 569
     .line 570
     .line 571
-    invoke-direct {v3, v1, v2}, LIL8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
+    new-instance v3, LHT8;
 
     .line 572
     .line 573
-    .line 574
-    invoke-virtual {v5, v0, v3}, LrAk;->b(Ljava/util/concurrent/Executor;LANc;)LrAk;
+    invoke-direct {v3, v1, v2}, LHT8;-><init>(Landroidx/credentials/playservices/HiddenActivity;I)V
 
+    .line 574
     .line 575
     .line 576
+    invoke-virtual {v5, v0, v3}, Lf0l;->b(Ljava/util/concurrent/Executor;Lx2d;)Lf0l;
+
     .line 577
+    .line 578
+    .line 579
     :cond_a
     if-nez v5, :cond_b
 
-    .line 578
-    .line 579
-    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
-
     .line 580
     .line 581
+    invoke-virtual {v1}, Landroid/app/Activity;->finish()V
+
     .line 582
+    .line 583
+    .line 584
     :cond_b
     :goto_0
     return-void
 
-    .line 583
+    .line 585
     :cond_c
     :goto_1
     invoke-virtual {v1}, Landroid/app/Activity;->finish()V
 
-    .line 584
-    .line 585
     .line 586
+    .line 587
+    .line 588
     return-void
 
-    .line 587
+    .line 589
     :sswitch_data_0
     .sparse-switch
         -0x1a4a0ecf -> :sswitch_3

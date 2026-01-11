@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/storyplayer/INativeStoryCardFetcherRequest;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'compositeStoryId\':s,\'pageType\':r<e>:\'[0]\'"
     typeReferences = {

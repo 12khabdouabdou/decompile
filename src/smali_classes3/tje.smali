@@ -1,23 +1,17 @@
 .class public final Ltje;
-.super Ljava/lang/Object;
+.super Lvje;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:LiC1;
+.field public final a:J
 
-.field public final b:Z
-
-.field public final c:Z
-
-.field public final d:Z
-
-.field public final e:Z
+.field public final b:J
 
 
 # direct methods
-.method public constructor <init>(LiC1;)V
-    .locals 1
+.method public constructor <init>(JJ)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -25,49 +19,21 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Ltje;->a:LiC1;
+    iput-wide p1, p0, Ltje;->a:J
 
     .line 5
     .line 6
-    iget-boolean v0, p1, LiC1;->Y:Z
+    iput-wide p3, p0, Ltje;->b:J
 
     .line 7
     .line 8
-    iput-boolean v0, p0, Ltje;->b:Z
-
-    .line 9
-    .line 10
-    iget-boolean v0, p1, LiC1;->Z:Z
-
-    .line 11
-    .line 12
-    iput-boolean v0, p0, Ltje;->c:Z
-
-    .line 13
-    .line 14
-    iget-boolean v0, p1, LiC1;->h0:Z
-
-    .line 15
-    .line 16
-    iput-boolean v0, p0, Ltje;->d:Z
-
-    .line 17
-    .line 18
-    iget-boolean p1, p1, LiC1;->n0:Z
-
-    .line 19
-    .line 20
-    iput-boolean p1, p0, Ltje;->e:Z
-
-    .line 21
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 7
 
     .line 1
     const/4 v0, 0x1
@@ -100,61 +66,104 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Ltje;->a:LiC1;
+    iget-wide v3, p1, Ltje;->a:J
 
     .line 14
     .line 15
-    iget-object p1, p1, Ltje;->a:LiC1;
+    iget-wide v5, p0, Ltje;->a:J
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    cmp-long v1, v5, v3
 
     .line 18
     .line 19
+    if-eqz v1, :cond_2
+
     .line 20
-    move-result p1
-
     .line 21
-    if-nez p1, :cond_2
-
-    .line 22
-    .line 23
     return v2
 
-    .line 24
+    .line 22
     :cond_2
+    iget-wide v3, p0, Ltje;->b:J
+
+    .line 23
+    .line 24
+    iget-wide v5, p1, Ltje;->b:J
+
+    .line 25
+    .line 26
+    cmp-long p1, v3, v5
+
+    .line 27
+    .line 28
+    if-eqz p1, :cond_3
+
+    .line 29
+    .line 30
+    return v2
+
+    .line 31
+    :cond_3
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 7
 
     .line 1
-    iget-object v0, p0, Ltje;->a:LiC1;
+    iget-wide v0, p0, Ltje;->a:J
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    const/16 v2, 0x20
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
+    ushr-long v3, v0, v2
 
+    .line 6
     .line 7
-    return v0
+    xor-long/2addr v0, v3
+
+    .line 8
+    long-to-int v1, v0
+
+    .line 9
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 10
+    .line 11
+    iget-wide v3, p0, Ltje;->b:J
+
+    .line 12
+    .line 13
+    ushr-long v5, v3, v2
+
+    .line 14
+    .line 15
+    xor-long/2addr v3, v5
+
+    .line 16
+    long-to-int v0, v3
+
+    .line 17
+    add-int/2addr v1, v0
+
+    .line 18
+    return v1
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 4
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "ProtoBusinessProfileFeatures(proto="
+    const-string v1, "NativeLink(lensId="
 
     .line 4
     .line 5
@@ -163,16 +172,16 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Ltje;->a:LiC1;
+    iget-wide v1, p0, Ltje;->a:J
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ")"
+    const-string v1, ", productId="
 
     .line 14
     .line 15
@@ -181,13 +190,21 @@
     .line 16
     .line 17
     .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-wide v1, p0, Ltje;->b:J
 
     .line 19
     .line 20
+    const-string v3, ")"
+
     .line 21
+    .line 22
+    invoke-static {v0, v1, v2, v3}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
     move-result-object v0
 
-    .line 22
+    .line 26
     return-object v0
 .end method

@@ -1,244 +1,198 @@
 .class public final LWLa;
-.super Lo17;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public a:I
+.field public final synthetic a:I
 
-.field public b:I
+.field public final synthetic b:Lceh;
+
+.field public final synthetic c:Lqxg;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public synthetic constructor <init>(LNJ0;Lceh;Lqxg;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    iput p4, p0, LWLa;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
+    iput-object p2, p0, LWLa;->b:Lceh;
 
-    .line 5
-    iput v0, p0, LWLa;->a:I
+    iput-object p3, p0, LWLa;->c:Lqxg;
 
-    .line 6
-    .line 7
-    iput v0, p0, LWLa;->b:I
+    const/4 p1, 0x1
 
-    .line 8
-    .line 9
-    const/4 v0, 0x0
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 10
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
-    .line 11
-    .line 12
-    const/4 v0, -0x1
-
-    .line 13
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 14
-    .line 15
     return-void
 .end method
 
 
 # virtual methods
-.method public final computeSerializedSize()I
-    .locals 3
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    iget v0, p0, LWLa;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result v0
-
     .line 5
-    iget v1, p0, LWLa;->a:I
-
     .line 6
-    .line 7
-    const/4 v2, 0x1
+    check-cast p1, Landroid/view/View;
 
+    .line 7
     .line 8
-    and-int/2addr v1, v2
+    sget-object p1, LlSj;->f0:LlSj;
 
     .line 9
-    if-eqz v1, :cond_0
-
     .line 10
-    .line 11
-    iget v1, p0, LWLa;->b:I
+    iget-object v0, p0, LWLa;->b:Lceh;
 
+    .line 11
     .line 12
+    const/4 v1, 0x1
+
     .line 13
-    invoke-static {v2, v1}, Lsa3;->i(II)I
+    const/4 v2, 0x0
 
     .line 14
-    .line 15
-    .line 16
-    move-result v1
-
-    .line 17
-    add-int/2addr v1, v0
-
-    .line 18
-    return v1
-
-    .line 19
-    :cond_0
-    return v0
-.end method
-
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 2
-
-    .line 1
-    :cond_0
-    :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_2
-
-    .line 6
-    .line 7
-    const/16 v1, 0x8
-
-    .line 8
-    .line 9
-    if-eq v0, v1, :cond_1
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
+    iget-object v3, p0, LWLa;->c:Lqxg;
 
     .line 15
-    if-nez v0, :cond_0
-
     .line 16
+    invoke-virtual {v0, v1, v2, v3, p1}, Lceh;->z(ZZLqxg;LlSj;)V
+
     .line 17
-    goto :goto_1
-
     .line 18
-    :cond_1
-    invoke-virtual {p1}, Lqa3;->q()I
-
     .line 19
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 20
     .line 21
-    move-result v0
+    return-object p1
 
     .line 22
-    packed-switch v0, :pswitch_data_0
+    :pswitch_0
+    check-cast p1, Landroid/view/View;
 
     .line 23
     .line 24
-    .line 25
-    goto :goto_0
+    sget-object p1, LlSj;->f0:LlSj;
 
+    .line 25
     .line 26
-    :pswitch_0
-    iput v0, p0, LWLa;->b:I
+    iget-object v0, p0, LWLa;->b:Lceh;
 
     .line 27
     .line 28
-    iget v0, p0, LWLa;->a:I
+    const/4 v1, 0x1
 
     .line 29
+    const/4 v2, 0x0
+
     .line 30
-    or-int/lit8 v0, v0, 0x1
+    iget-object v3, p0, LWLa;->c:Lqxg;
 
     .line 31
     .line 32
-    iput v0, p0, LWLa;->a:I
+    invoke-virtual {v0, v1, v2, v3, p1}, Lceh;->z(ZZLqxg;LlSj;)V
 
     .line 33
     .line 34
-    goto :goto_0
-
     .line 35
-    :cond_2
-    :goto_1
-    return-object p0
+    sget-object p1, Lewj;->a:Lewj;
 
     .line 36
-    nop
-
     .line 37
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-        :pswitch_0
-    .end packed-switch
-.end method
+    return-object p1
 
-.method public final writeTo(Lsa3;)V
-    .locals 2
+    .line 38
+    :pswitch_1
+    check-cast p1, Landroid/view/View;
 
-    .line 1
-    iget v0, p0, LWLa;->a:I
+    .line 39
+    .line 40
+    sget-object p1, LlSj;->f0:LlSj;
 
-    .line 2
-    .line 3
+    .line 41
+    .line 42
+    iget-object v0, p0, LWLa;->b:Lceh;
+
+    .line 43
+    .line 44
     const/4 v1, 0x1
 
-    .line 4
-    and-int/2addr v0, v1
+    .line 45
+    const/4 v2, 0x0
 
-    .line 5
-    if-eqz v0, :cond_0
+    .line 46
+    iget-object v3, p0, LWLa;->c:Lqxg;
 
-    .line 6
-    .line 7
-    iget v0, p0, LWLa;->b:I
+    .line 47
+    .line 48
+    invoke-virtual {v0, v1, v2, v3, p1}, Lceh;->z(ZZLqxg;LlSj;)V
 
-    .line 8
-    .line 9
-    invoke-virtual {p1, v1, v0}, Lsa3;->I(II)V
+    .line 49
+    .line 50
+    .line 51
+    sget-object p1, Lewj;->a:Lewj;
 
-    .line 10
-    .line 11
-    .line 12
-    :cond_0
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    .line 52
+    .line 53
+    return-object p1
 
-    .line 13
-    .line 14
-    .line 15
-    return-void
+    .line 54
+    :pswitch_2
+    check-cast p1, Landroid/view/View;
+
+    .line 55
+    .line 56
+    sget-object p1, LlSj;->f0:LlSj;
+
+    .line 57
+    .line 58
+    iget-object v0, p0, LWLa;->b:Lceh;
+
+    .line 59
+    .line 60
+    const/4 v1, 0x1
+
+    .line 61
+    const/4 v2, 0x0
+
+    .line 62
+    iget-object v3, p0, LWLa;->c:Lqxg;
+
+    .line 63
+    .line 64
+    invoke-virtual {v0, v1, v2, v3, p1}, Lceh;->z(ZZLqxg;LlSj;)V
+
+    .line 65
+    .line 66
+    .line 67
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 68
+    .line 69
+    return-object p1
+
+    .line 70
+    nop
+
+    .line 71
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -1,5 +1,5 @@
 .class public Lcom/snap/opera/view/FitWidthImageView;
-.super LCmd;
+.super LdDd;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public final c:Lrgi;
+.field public final c:LjFi;
 
 .field public e0:Ljava/lang/Integer;
 
@@ -26,7 +26,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, LCmd;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, LdDd;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x0
 
@@ -48,15 +48,15 @@
     iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->h0:Ljava/lang/Boolean;
 
     .line 7
-    new-instance p1, Lrgi;
+    new-instance p1, LjFi;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-direct {p1, v0}, Lrgi;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, v0}, LjFi;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:Lrgi;
+    iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:LjFi;
 
     const/4 p1, 0x0
 
@@ -72,7 +72,7 @@
     const/4 v0, 0x0
 
     .line 17
-    invoke-direct {p0, p1, p2, v0}, LCmd;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, LdDd;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x0
 
@@ -94,15 +94,15 @@
     iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->h0:Ljava/lang/Boolean;
 
     .line 23
-    new-instance p1, Lrgi;
+    new-instance p1, LjFi;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
-    invoke-direct {p1, p2}, Lrgi;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, p2}, LjFi;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:Lrgi;
+    iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:LjFi;
 
     .line 24
     invoke-virtual {p0, v0}, Lcom/snap/opera/view/FitWidthImageView;->a(Z)V
@@ -114,7 +114,7 @@
     .locals 0
 
     .line 9
-    invoke-direct {p0, p1, p2, p3}, LCmd;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, p3}, LdDd;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x0
 
@@ -136,15 +136,15 @@
     iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->h0:Ljava/lang/Boolean;
 
     .line 15
-    new-instance p1, Lrgi;
+    new-instance p1, LjFi;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
-    invoke-direct {p1, p2}, Lrgi;-><init>(Landroid/content/Context;)V
+    invoke-direct {p1, p2}, LjFi;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:Lrgi;
+    iput-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:LjFi;
 
     const/4 p1, 0x0
 
@@ -172,7 +172,7 @@
 
     .line 6
     .line 7
-    invoke-super {p0, p1}, LCmd;->a(Z)V
+    invoke-super {p0, p1}, LdDd;->a(Z)V
 
     .line 8
     .line 9
@@ -184,11 +184,11 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, LCmd;->a:LFmd;
+    iget-object p1, p0, LdDd;->a:LgDd;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LFmd;->j()F
+    invoke-virtual {p1}, LgDd;->j()F
 
     .line 4
     .line 5
@@ -226,11 +226,11 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, LCmd;->a:LFmd;
+    iget-object p1, p0, LdDd;->a:LgDd;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LFmd;->d()Landroid/graphics/RectF;
+    invoke-virtual {p1}, LgDd;->d()Landroid/graphics/RectF;
 
     .line 4
     .line 5
@@ -238,11 +238,11 @@
     move-result-object p1
 
     .line 7
-    iget-object v0, p0, LCmd;->a:LFmd;
+    iget-object v0, p0, LdDd;->a:LgDd;
 
     .line 8
     .line 9
-    invoke-virtual {v0}, LFmd;->j()F
+    invoke-virtual {v0}, LgDd;->j()F
 
     .line 10
     .line 11
@@ -302,7 +302,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0}, LCmd;->onAttachedToWindow()V
+    invoke-super {p0}, LdDd;->onAttachedToWindow()V
 
     .line 2
     .line 3
@@ -315,11 +315,11 @@
 
     .line 7
     .line 8
-    iget-object v1, p0, LCmd;->a:LFmd;
+    iget-object v1, p0, LdDd;->a:LgDd;
 
     .line 9
     .line 10
-    iget-object v1, v1, LFmd;->w0:Landroid/widget/ImageView$ScaleType;
+    iget-object v1, v1, LgDd;->w0:Landroid/widget/ImageView$ScaleType;
 
     .line 11
     .line 12
@@ -341,11 +341,11 @@
 
     .line 20
     .line 21
-    iget-object v1, p0, LCmd;->a:LFmd;
+    iget-object v1, p0, LdDd;->a:LgDd;
 
     .line 22
     .line 23
-    iget-boolean v1, v1, LFmd;->v0:Z
+    iget-boolean v1, v1, LgDd;->v0:Z
 
     .line 24
     .line 25
@@ -377,33 +377,33 @@
 
     .line 38
     .line 39
-    invoke-super {p0, v1}, LCmd;->a(Z)V
+    invoke-super {p0, v1}, LdDd;->a(Z)V
 
     .line 40
     .line 41
     .line 42
     :cond_1
-    new-instance v0, LQ1;
+    new-instance v0, Lj2;
 
     .line 43
     .line 44
     const/4 v1, 0x5
 
     .line 45
-    invoke-direct {v0, v1, p0}, LQ1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, Lj2;-><init>(ILjava/lang/Object;)V
 
     .line 46
     .line 47
     .line 48
-    new-instance v1, Lqx1;
+    new-instance v1, LDA1;
 
     .line 49
     .line 50
-    const/16 v2, 0xb
+    const/16 v2, 0xd
 
     .line 51
     .line 52
-    invoke-direct {v1, v2, v0}, Lqx1;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v1, v2, v0}, LDA1;-><init>(ILjava/lang/Object;)V
 
     .line 53
     .line 54
@@ -441,11 +441,11 @@
     move-result-object p1
 
     .line 12
-    iget-object p2, p0, LCmd;->a:LFmd;
+    iget-object p2, p0, LdDd;->a:LgDd;
 
     .line 13
     .line 14
-    iget-boolean p2, p2, LFmd;->v0:Z
+    iget-boolean p2, p2, LgDd;->v0:Z
 
     .line 15
     .line 16
@@ -473,11 +473,11 @@
 
     .line 27
     :cond_0
-    iget-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:Lrgi;
+    iget-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:LjFi;
 
     .line 28
     .line 29
-    invoke-virtual {p1}, Lrgi;->b()I
+    invoke-virtual {p1}, LjFi;->b()I
 
     .line 30
     .line 31
@@ -518,11 +518,11 @@
 
     .line 48
     :cond_1
-    iget-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:Lrgi;
+    iget-object p1, p0, Lcom/snap/opera/view/FitWidthImageView;->c:LjFi;
 
     .line 49
     .line 50
-    invoke-virtual {p1}, Lrgi;->a()I
+    invoke-virtual {p1}, LjFi;->a()I
 
     .line 51
     .line 52
@@ -644,7 +644,7 @@
 
     .line 2
     .line 3
-    invoke-super {p0, p1}, LCmd;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
+    invoke-super {p0, p1}, LdDd;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     .line 4
     .line 5

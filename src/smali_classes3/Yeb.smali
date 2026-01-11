@@ -1,74 +1,38 @@
 .class public final LYeb;
-.super LXq6;
+.super LZeb;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/core/MaybeObserver;
+
+# instance fields
+.field public final t:LZeb;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Object;ILZeb;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p2, p1}, LZeb;-><init>(ILjava/lang/Object;)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p3, p0, LYeb;->t:LZeb;
+
+    .line 5
+    .line 6
+    return-void
+.end method
 
 
 # virtual methods
-.method public final e()V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0}, LXq6;->d()V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public final onComplete()V
+.method public final c()LQeb;
     .locals 1
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-virtual {p0, v0}, LF1f;->c(Ljava/lang/Object;)V
-
-    .line 3
-    .line 4
-    .line 5
-    invoke-virtual {p0}, LXq6;->d()V
-
-    .line 6
-    .line 7
-    .line 8
-    return-void
-.end method
-
-.method public final onError(Ljava/lang/Throwable;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, LF1f;->b(Ljava/lang/Throwable;)V
+    iget-object v0, p0, LYeb;->t:LZeb;
 
     .line 2
     .line 3
-    .line 4
-    invoke-virtual {p0}, LXq6;->d()V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
-.end method
-
-.method public final onSuccess(Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, LF1f;->c(Ljava/lang/Object;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, LXq6;->d()V
-
-    .line 5
-    .line 6
-    .line 7
-    return-void
+    return-object v0
 .end method

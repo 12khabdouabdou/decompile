@@ -1,96 +1,149 @@
 .class public final Lrli;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:Ltli;
+.field public final synthetic a:I
+
+.field public final synthetic b:LGki;
 
 
 # direct methods
-.method public constructor <init>(Ltli;)V
+.method public synthetic constructor <init>(LGki;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, Lrli;->a:I
+
+    iput-object p1, p0, Lrli;->b:LGki;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(LGki;Ljava/lang/Object;I)V
+    .locals 0
 
     .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lrli;->a:Ltli;
+    iput p3, p0, Lrli;->a:I
 
-    .line 5
-    .line 6
+    iput-object p1, p0, Lrli;->b:LGki;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    invoke-static {}, Lorg/webrtc/ContextUtils;->getApplicationContext()Landroid/content/Context;
+    iget v0, p0, Lrli;->a:I
 
     .line 2
     .line 3
+    packed-switch v0, :pswitch_data_0
+
     .line 4
-    move-result-object v0
-
     .line 5
-    if-nez v0, :cond_0
-
     .line 6
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 7
-    iget-object v0, p0, Lrli;->a:Ltli;
-
     .line 8
+    iget-object p1, p0, Lrli;->b:LGki;
+
     .line 9
-    iget-object v1, v0, Ltli;->b:Ljava/lang/Object;
-
     .line 10
+    iget-object p1, p1, LGki;->f0:Ljava/lang/Object;
+
     .line 11
-    check-cast v1, Lcom/snap/mushroom/app/MushroomApplication;
-
     .line 12
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 13
-    invoke-static {v1}, Lcom/snapchat/talkcorev3/TalkCore;->setAndroidContext(Ljava/lang/Object;)V
-
     .line 14
+    return-object p1
+
     .line 15
+    :pswitch_0
+    check-cast p1, Ljava/lang/Throwable;
+
     .line 16
-    iget-object v0, v0, Ltli;->X:Ljava/lang/Object;
-
     .line 17
+    iget-object p1, p0, Lrli;->b:LGki;
+
     .line 18
-    check-cast v0, LQ05;
-
     .line 19
-    .line 20
-    invoke-virtual {v0}, LQ05;->get()Ljava/lang/Object;
+    iget-object p1, p1, LGki;->f0:Ljava/lang/Object;
 
+    .line 20
     .line 21
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 22
     .line 23
-    move-result-object v0
+    return-object p1
 
     .line 24
-    check-cast v0, LeNe;
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 25
     .line 26
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object p1, p0, Lrli;->b:LGki;
 
     .line 27
     .line 28
-    .line 29
-    :cond_0
-    sget-object v0, Li7j;->a:Li7j;
+    iget-object p1, p1, LGki;->f0:Ljava/lang/Object;
 
+    .line 29
     .line 30
+    sget-object p1, Lewj;->a:Lewj;
+
     .line 31
-    return-object v0
+    .line 32
+    return-object p1
+
+    .line 33
+    :pswitch_2
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 34
+    .line 35
+    iget-object p1, p0, Lrli;->b:LGki;
+
+    .line 36
+    .line 37
+    iget-object p1, p1, LGki;->f0:Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    sget-object p1, Lewj;->a:Lewj;
+
+    .line 40
+    .line 41
+    return-object p1
+
+    .line 42
+    nop
+
+    .line 43
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

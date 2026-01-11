@@ -1,64 +1,44 @@
 .class public final LPy7;
-.super LnKj;
+.super LQy7;
 .source "SourceFile"
 
 
-# instance fields
-.field public final synthetic a:Lcom/snap/payments/lib/views/FloatLabelLayout;
+# static fields
+.field public static final a:LPy7;
+
+.field public static final b:LPy7;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/payments/lib/views/FloatLabelLayout;)V
-    .locals 0
+.method static synthetic constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LPy7;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LPy7;->a:Lcom/snap/payments/lib/views/FloatLabelLayout;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LPy7;->a:Lcom/snap/payments/lib/views/FloatLabelLayout;
-
-    .line 2
-    .line 3
-    iget-object v1, v0, Lcom/snap/payments/lib/views/FloatLabelLayout;->b:Landroid/widget/TextView;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    const/16 v2, 0x8
-
     .line 6
+    sput-object v0, LPy7;->a:LPy7;
+
     .line 7
-    invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
-
     .line 8
+    new-instance v0, LPy7;
+
     .line 9
     .line 10
-    iget-object v1, v0, Lcom/snap/payments/lib/views/FloatLabelLayout;->a:Landroid/widget/EditText;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 11
     .line 12
-    iget-object v0, v0, Lcom/snap/payments/lib/views/FloatLabelLayout;->c:Ljava/lang/CharSequence;
-
     .line 13
-    .line 14
-    invoke-virtual {v1, v0}, Landroid/widget/TextView;->setHint(Ljava/lang/CharSequence;)V
+    sput-object v0, LPy7;->b:LPy7;
 
+    .line 14
     .line 15
-    .line 16
-    .line 17
     return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/snap/media/provider/MediaPackageFileProvider;
-.super LPp7;
+.super LVu7;
 .source "SourceFile"
 
 
@@ -10,11 +10,11 @@
 # instance fields
 .field public final Y:[Ljava/lang/String;
 
-.field public Z:LlW4;
+.field public Z:LB15;
 
-.field public final e0:LXfi;
+.field public final e0:LREi;
 
-.field public final f0:LXfi;
+.field public final f0:LREi;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .locals 4
 
     .line 1
-    invoke-direct {p0}, LPp7;-><init>()V
+    invoke-direct {p0}, LVu7;-><init>()V
 
     .line 2
     .line 3
@@ -55,53 +55,53 @@
 
     .line 17
     .line 18
-    new-instance v0, Lqmb;
+    new-instance v0, LSzb;
 
     .line 19
     .line 20
     const/4 v1, 0x0
 
     .line 21
-    invoke-direct {v0, p0, v1}, Lqmb;-><init>(Lcom/snap/media/provider/MediaPackageFileProvider;I)V
+    invoke-direct {v0, p0, v1}, LSzb;-><init>(Lcom/snap/media/provider/MediaPackageFileProvider;I)V
 
     .line 22
     .line 23
     .line 24
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 25
     .line 26
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 27
     .line 28
     .line 29
-    iput-object v1, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LXfi;
+    iput-object v1, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LREi;
 
     .line 30
     .line 31
-    new-instance v0, Lqmb;
+    new-instance v0, LSzb;
 
     .line 32
     .line 33
     const/4 v1, 0x1
 
     .line 34
-    invoke-direct {v0, p0, v1}, Lqmb;-><init>(Lcom/snap/media/provider/MediaPackageFileProvider;I)V
+    invoke-direct {v0, p0, v1}, LSzb;-><init>(Lcom/snap/media/provider/MediaPackageFileProvider;I)V
 
     .line 35
     .line 36
     .line 37
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 38
     .line 39
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 40
     .line 41
     .line 42
-    iput-object v1, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->f0:LXfi;
+    iput-object v1, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->f0:LREi;
 
     .line 43
     .line 44
@@ -114,7 +114,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->Z:LlW4;
+    iget-object v0, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->Z:LB15;
 
     .line 2
     .line 3
@@ -122,7 +122,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LXRg;->a:LWRg;
+    sget-object v0, LOdh;->a:LNdh;
 
     .line 6
     .line 7
@@ -130,7 +130,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0, v1}, LWRg;->e(Ljava/lang/String;)I
+    invoke-virtual {v0, v1}, LNdh;->e(Ljava/lang/String;)I
 
     .line 10
     .line 11
@@ -139,14 +139,14 @@
 
     .line 13
     :try_start_0
-    invoke-static {p0}, LCq9;->H0(Lcom/snap/media/provider/MediaPackageFileProvider;)V
+    invoke-static {p0}, LbS2;->x(Lcom/snap/media/provider/MediaPackageFileProvider;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 14
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, LWRg;->h(I)V
+    invoke-virtual {v0, v1}, LNdh;->h(I)V
 
     .line 17
     .line 18
@@ -158,7 +158,7 @@
     move-exception v0
 
     .line 21
-    sget-object v2, LXRg;->b:Lzhi;
+    sget-object v2, LOdh;->b:LtGi;
 
     .line 22
     .line 23
@@ -166,7 +166,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v2, v1}, Lzhi;->o(I)V
+    invoke-virtual {v2, v1}, LtGi;->o(I)V
 
     .line 26
     .line 27
@@ -189,11 +189,11 @@
     .line 3
     .line 4
     :try_start_0
-    iget-object p2, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LXfi;
+    iget-object p2, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LREi;
 
     .line 5
     .line 6
-    invoke-virtual {p2}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p2}, LREi;->getValue()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -201,7 +201,7 @@
     move-result-object p2
 
     .line 10
-    check-cast p2, Lib5;
+    check-cast p2, Lzh5;
 
     .line 11
     .line 12
@@ -209,35 +209,36 @@
 
     .line 13
     .line 14
-    new-instance v0, Lrmb;
+    new-instance v0, Lrva;
 
     .line 15
     .line 16
-    const/4 v1, 0x0
+    const/16 v1, 0x1c
 
     .line 17
-    invoke-direct {v0, p0, v1, p1}, Lrmb;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 18
+    invoke-direct {v0, p0, v1, p1}, Lrva;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 19
     .line 20
-    invoke-interface {p2, p3, v0}, Lib5;->i(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+    .line 21
+    invoke-interface {p2, p3, v0}, Lzh5;->j(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 21
     .line 22
     .line 23
+    .line 24
     const/4 p1, 0x1
 
-    .line 24
+    .line 25
     return p1
 
-    .line 25
+    .line 26
     :catch_0
     const/4 p1, 0x0
 
-    .line 26
+    .line 27
     return p1
 .end method
 
@@ -250,11 +251,11 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LXfi;
+    iget-object v0, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LREi;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -262,15 +263,15 @@
     move-result-object v0
 
     .line 10
-    check-cast v0, Lib5;
+    check-cast v0, Lzh5;
 
     .line 11
     .line 12
-    iget-object v1, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->f0:LXfi;
+    iget-object v1, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->f0:LREi;
 
     .line 13
     .line 14
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 15
     .line 16
@@ -278,11 +279,11 @@
     move-result-object v1
 
     .line 18
-    check-cast v1, Llhb;
+    check-cast v1, LOub;
 
     .line 19
     .line 20
-    invoke-virtual {v1}, Llhb;->e()LvZ7;
+    invoke-virtual {v1}, LOub;->e()Lh10;
 
     .line 21
     .line 22
@@ -298,7 +299,7 @@
     move-result-object p1
 
     .line 28
-    invoke-virtual {v1, p1}, LvZ7;->i(Ljava/lang/String;)Ldw9;
+    invoke-virtual {v1, p1}, Lh10;->n(Ljava/lang/String;)LhF9;
 
     .line 29
     .line 30
@@ -306,7 +307,7 @@
     move-result-object p1
 
     .line 32
-    invoke-interface {v0, p1}, Lib5;->m(LGre;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lzh5;->n(LtJe;)Ljava/lang/Object;
 
     .line 33
     .line 34
@@ -331,11 +332,11 @@
     .line 3
     .line 4
     :try_start_0
-    iget-object v0, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LXfi;
+    iget-object v0, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->e0:LREi;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 7
     .line 8
@@ -343,7 +344,7 @@
     move-result-object v0
 
     .line 10
-    check-cast v0, Lib5;
+    check-cast v0, Lzh5;
 
     .line 11
     .line 12
@@ -351,33 +352,32 @@
 
     .line 13
     .line 14
-    new-instance v2, LUza;
+    new-instance v2, LRSa;
 
     .line 15
     .line 16
-    const/16 v3, 0x9
+    const/4 v3, 0x5
 
     .line 17
-    .line 18
-    invoke-direct {v2, p0, p2, p1, v3}, LUza;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-direct {v2, p0, p2, p1, v3}, LRSa;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 18
     .line 19
     .line 20
-    .line 21
-    invoke-interface {v0, v1, v2}, Lib5;->i(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
+    invoke-interface {v0, v1, v2}, Lzh5;->j(Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 21
     .line 22
     .line 23
-    .line 24
     return-object p1
 
-    .line 25
+    .line 24
     :catch_0
     const/4 p1, 0x0
 
-    .line 26
+    .line 25
     return-object p1
 .end method
 
@@ -430,7 +430,7 @@
 
     .line 18
     .line 19
-    invoke-static {p2, p1, p3}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1, p3}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 20
     .line 21
@@ -486,7 +486,7 @@
     move-result-object p1
 
     .line 46
-    iget-object p2, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->Z:LlW4;
+    iget-object p2, p0, Lcom/snap/media/provider/MediaPackageFileProvider;->Z:LB15;
 
     .line 47
     .line 48
@@ -494,7 +494,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {p2}, LlW4;->get()Ljava/lang/Object;
+    invoke-virtual {p2}, LB15;->get()Ljava/lang/Object;
 
     .line 51
     .line 52
@@ -502,11 +502,11 @@
     move-result-object p2
 
     .line 54
-    check-cast p2, Lhnb;
+    check-cast p2, LOAb;
 
     .line 55
     .line 56
-    invoke-virtual {p2}, Lhnb;->e()Lib5;
+    invoke-virtual {p2}, LOAb;->e()Lzh5;
 
     .line 57
     .line 58
@@ -514,7 +514,7 @@
     move-result-object p2
 
     .line 60
-    invoke-interface {p2, p1}, Lib5;->l(Ljava/lang/String;)LUP;
+    invoke-interface {p2, p1}, Lzh5;->m(Ljava/lang/String;)LUR;
 
     .line 61
     .line 62
@@ -522,7 +522,7 @@
     move-result-object p1
 
     .line 64
-    invoke-static {p1}, LXqk;->m(LUP;)Landroid/database/Cursor;
+    invoke-static {p1}, LqRk;->i(LUR;)Landroid/database/Cursor;
 
     .line 65
     .line 66
@@ -538,7 +538,7 @@
 
     .line 70
     .line 71
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 72
     .line 73

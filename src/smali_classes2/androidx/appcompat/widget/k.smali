@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LzLb;
+.implements LQZb;
 
 
 # instance fields
@@ -29,11 +29,11 @@
 
 
 # virtual methods
-.method public final b(LfLb;Z)V
+.method public final b(LwZb;Z)V
     .locals 2
 
     .line 1
-    instance-of v0, p1, LU5i;
+    instance-of v0, p1, Lnui;
 
     .line 2
     .line 3
@@ -44,15 +44,15 @@
     move-object v0, p1
 
     .line 6
-    check-cast v0, LU5i;
+    check-cast v0, Lnui;
 
     .line 7
     .line 8
-    iget-object v0, v0, LU5i;->z:LfLb;
+    iget-object v0, v0, Lnui;->z:LwZb;
 
     .line 9
     .line 10
-    invoke-virtual {v0}, LfLb;->m()LfLb;
+    invoke-virtual {v0}, LwZb;->m()LwZb;
 
     .line 11
     .line 12
@@ -63,7 +63,7 @@
     const/4 v1, 0x0
 
     .line 15
-    invoke-virtual {v0, v1}, LfLb;->d(Z)V
+    invoke-virtual {v0, v1}, LwZb;->d(Z)V
 
     .line 16
     .line 17
@@ -73,7 +73,7 @@
 
     .line 19
     .line 20
-    iget-object v0, v0, LYL0;->X:LzLb;
+    iget-object v0, v0, LZO0;->X:LQZb;
 
     .line 21
     .line 22
@@ -81,7 +81,7 @@
 
     .line 23
     .line 24
-    invoke-interface {v0, p1, p2}, LzLb;->b(LfLb;Z)V
+    invoke-interface {v0, p1, p2}, LQZb;->b(LwZb;Z)V
 
     .line 25
     .line 26
@@ -90,7 +90,7 @@
     return-void
 .end method
 
-.method public final c(LU5i;)Z
+.method public final d(Lnui;)Z
     .locals 2
 
     .line 1
@@ -106,7 +106,7 @@
 
     .line 5
     .line 6
-    iget-object v1, p1, LU5i;->A:LnLb;
+    iget-object v1, p1, Lnui;->A:LEZb;
 
     .line 7
     .line 8
@@ -124,7 +124,7 @@
 
     .line 15
     .line 16
-    iget-object v0, v0, LYL0;->X:LzLb;
+    iget-object v0, v0, LZO0;->X:LQZb;
 
     .line 17
     .line 18
@@ -132,7 +132,7 @@
 
     .line 19
     .line 20
-    invoke-interface {v0, p1}, LzLb;->c(LU5i;)Z
+    invoke-interface {v0, p1}, LQZb;->d(Lnui;)Z
 
     .line 21
     .line 22

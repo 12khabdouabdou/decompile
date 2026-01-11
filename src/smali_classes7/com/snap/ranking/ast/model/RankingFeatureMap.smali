@@ -51,7 +51,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-direct {v0, v1}, Lcom/snap/ranking/ast/model/RankingFeatureMap$Companion;-><init>(LHr5;)V
+    invoke-direct {v0, v1}, Lcom/snap/ranking/ast/model/RankingFeatureMap$Companion;-><init>(Lex5;)V
 
     .line 5
     .line 6
@@ -240,7 +240,7 @@
 
     iget-object v3, p1, Lcom/snap/ranking/ast/model/RankingFeatureMap;->clientSideFeatures:Landroid/util/LongSparseArray;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -253,7 +253,7 @@
 
     iget-object p1, p1, Lcom/snap/ranking/ast/model/RankingFeatureMap;->serverSideFeatures:Landroid/util/LongSparseArray;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

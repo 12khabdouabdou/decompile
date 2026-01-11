@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LtX3;
+    proxyClass = LW14;
     schema = "\'handleAction\':f|m|(s)"
     typeReferences = {}
 .end annotation

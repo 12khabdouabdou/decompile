@@ -16,7 +16,7 @@
 
 .field private static session:Landroid/view/contentcapture/ContentCaptureSession;
 
-.field private static final timber$delegate:LsH9;
+.field private static final timber$delegate:LRS9;
 
 
 # direct methods
@@ -44,20 +44,20 @@
 
     .line 10
     .line 11
-    sget-object v0, LCq3;->k0:LCq3;
+    sget-object v0, LAA3;->n0:LAA3;
 
     .line 12
     .line 13
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 14
     .line 15
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 16
     .line 17
     .line 18
-    sput-object v1, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->timber$delegate:LsH9;
+    sput-object v1, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->timber$delegate:LRS9;
 
     .line 19
     .line 20
@@ -84,11 +84,11 @@
     return-void
 .end method
 
-.method public static final synthetic access$getFeature(Lcom/snap/framework/contentcapture/ContentCaptureHelper;)Lan0;
+.method public static final synthetic access$getFeature(Lcom/snap/framework/contentcapture/ContentCaptureHelper;)Lrp0;
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->getFeature()Lan0;
+    invoke-direct {p0}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->getFeature()Lrp0;
 
     .line 2
     .line 3
@@ -111,18 +111,18 @@
     return-void
 .end method
 
-.method private final getFeature()Lan0;
+.method private final getFeature()Lrp0;
     .locals 2
 
     .line 1
-    new-instance v0, LGp;
+    new-instance v0, Llr;
 
     .line 2
     .line 3
     const/4 v1, 0x5
 
     .line 4
-    invoke-direct {v0, v1}, LGp;-><init>(I)V
+    invoke-direct {v0, v1}, Llr;-><init>(I)V
 
     .line 5
     .line 6
@@ -130,15 +130,15 @@
     return-object v0
 .end method
 
-.method private final getTimber()Lrn0;
+.method private final getTimber()LJp0;
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->timber$delegate:LsH9;
+    sget-object v0, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->timber$delegate:LRS9;
 
     .line 2
     .line 3
-    invoke-interface {v0}, LsH9;->getValue()Ljava/lang/Object;
+    invoke-interface {v0}, LRS9;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -146,7 +146,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, Lrn0;
+    check-cast v0, LJp0;
 
     .line 8
     .line 9
@@ -157,7 +157,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->getTimber()Lrn0;
+    invoke-direct {p0}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->getTimber()LJp0;
 
     .line 2
     .line 3
@@ -165,7 +165,7 @@
     return-void
 .end method
 
-.method public static synthetic onContentCaptureViewInitialize$default(Lcom/snap/framework/contentcapture/ContentCaptureHelper;Landroid/view/View;LpQ3;ILjava/lang/Object;)V
+.method public static synthetic onContentCaptureViewInitialize$default(Lcom/snap/framework/contentcapture/ContentCaptureHelper;Landroid/view/View;LkU3;ILjava/lang/Object;)V
     .locals 0
 
     .line 1
@@ -181,7 +181,7 @@
 
     .line 6
     :cond_0
-    invoke-virtual {p0, p1, p2}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->onContentCaptureViewInitialize(Landroid/view/View;LpQ3;)V
+    invoke-virtual {p0, p1, p2}, Lcom/snap/framework/contentcapture/ContentCaptureHelper;->onContentCaptureViewInitialize(Landroid/view/View;LkU3;)V
 
     .line 7
     .line 8
@@ -197,7 +197,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2, v0}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
     .line 5
@@ -229,7 +229,7 @@
 
     .line 17
     .line 18
-    invoke-static {v0, v1, v2, p2}, Lngk;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, p2}, LhGk;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 19
     .line 20
@@ -246,7 +246,7 @@
 
     .line 26
     .line 27
-    invoke-static {p2}, LNC1;->c(Ljava/lang/String;)Landroid/content/LocusId;
+    invoke-static {p2}, LAb2;->b(Ljava/lang/String;)Landroid/content/LocusId;
 
     .line 28
     .line 29
@@ -258,7 +258,7 @@
 
     .line 32
     .line 33
-    invoke-static {p1, p2}, Lz4;->t(Landroid/app/Activity;Landroid/content/LocusId;)V
+    invoke-static {p1, p2}, Le5;->t(Landroid/app/Activity;Landroid/content/LocusId;)V
 
     .line 34
     .line 35
@@ -290,7 +290,7 @@
     return v0
 .end method
 
-.method public final notifyTextViewChanged(Landroid/view/View;LpQ3;Ljava/lang/CharSequence;)V
+.method public final notifyTextViewChanged(Landroid/view/View;LkU3;Ljava/lang/CharSequence;)V
     .locals 2
 
     .line 1
@@ -306,7 +306,7 @@
 
     .line 6
     .line 7
-    invoke-static {p3}, LR4i;->w1(Ljava/lang/CharSequence;)Z
+    invoke-static {p3}, Lkti;->D0(Ljava/lang/CharSequence;)Z
 
     .line 8
     .line 9
@@ -334,7 +334,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0, v1}, Ln9f;->m(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22
@@ -347,11 +347,11 @@
     .line 25
     .line 26
     .line 27
-    check-cast p2, Lcgi;
+    check-cast p2, LBmi;
 
     .line 28
     .line 29
-    invoke-virtual {p2, p3}, Lcgi;->g(Ljava/lang/CharSequence;)Z
+    invoke-virtual {p2, p3}, LBmi;->h(Ljava/lang/CharSequence;)Z
 
     .line 30
     .line 31
@@ -367,17 +367,17 @@
 
     .line 36
     :cond_1
-    invoke-virtual {p2}, Lcgi;->c()V
+    invoke-virtual {p2}, LBmi;->d()V
 
     .line 37
     .line 38
     .line 39
-    invoke-static {}, LqU;->p()V
+    invoke-static {}, LxW;->p()V
 
     .line 40
     .line 41
     .line 42
-    invoke-static {p1}, Lu4;->i(Landroid/view/View;)Landroid/view/autofill/AutofillId;
+    invoke-static {p1}, LZ4;->k(Landroid/view/View;)Landroid/view/autofill/AutofillId;
 
     .line 43
     .line 44
@@ -385,7 +385,7 @@
     move-result-object p2
 
     .line 46
-    invoke-static {p2}, LqU;->j(Landroid/view/autofill/AutofillId;)Landroid/view/translation/ViewTranslationResponse$Builder;
+    invoke-static {p2}, LxW;->j(Landroid/view/autofill/AutofillId;)Landroid/view/translation/ViewTranslationResponse$Builder;
 
     .line 47
     .line 48
@@ -393,7 +393,7 @@
     move-result-object p2
 
     .line 50
-    invoke-static {p2}, LqU;->l(Landroid/view/translation/ViewTranslationResponse$Builder;)Landroid/view/translation/ViewTranslationResponse;
+    invoke-static {p2}, LxW;->l(Landroid/view/translation/ViewTranslationResponse$Builder;)Landroid/view/translation/ViewTranslationResponse;
 
     .line 51
     .line 52
@@ -401,7 +401,7 @@
     move-result-object p2
 
     .line 54
-    invoke-static {p1, p2}, LqU;->u(Landroid/view/View;Landroid/view/translation/ViewTranslationResponse;)V
+    invoke-static {p1, p2}, LxW;->u(Landroid/view/View;Landroid/view/translation/ViewTranslationResponse;)V
 
     .line 55
     .line 56
@@ -418,12 +418,12 @@
 
     .line 62
     :cond_2
-    invoke-static {p1, p2}, LNC1;->r(Landroid/view/View;Landroid/view/contentcapture/ContentCaptureSession;)V
+    invoke-static {p1, p2}, LAb2;->v(Landroid/view/View;Landroid/view/contentcapture/ContentCaptureSession;)V
 
     .line 63
     .line 64
     .line 65
-    invoke-static {p1}, Lu4;->i(Landroid/view/View;)Landroid/view/autofill/AutofillId;
+    invoke-static {p1}, LZ4;->k(Landroid/view/View;)Landroid/view/autofill/AutofillId;
 
     .line 66
     .line 67
@@ -431,7 +431,7 @@
     move-result-object p1
 
     .line 69
-    invoke-static {p2, p1, p3}, LNC1;->t(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
+    invoke-static {p2, p1, p3}, LAb2;->x(Landroid/view/contentcapture/ContentCaptureSession;Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
 
     .line 70
     .line 71
@@ -469,7 +469,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1}, Ln9f;->m(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -482,7 +482,7 @@
     .line 17
     .line 18
     .line 19
-    invoke-static {}, LNC1;->l()Ljava/lang/Class;
+    invoke-static {}, LAb2;->o()Ljava/lang/Class;
 
     .line 20
     .line 21
@@ -490,7 +490,7 @@
     move-result-object v0
 
     .line 23
-    invoke-static {p1, v0}, LUO1;->l(Landroid/app/Activity;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-static {p1, v0}, LBS1;->m(Landroid/app/Activity;Ljava/lang/Class;)Ljava/lang/Object;
 
     .line 24
     .line 25
@@ -498,7 +498,7 @@
     move-result-object v0
 
     .line 27
-    invoke-static {v0}, LNC1;->g(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureManager;
+    invoke-static {v0}, LAb2;->i(Ljava/lang/Object;)Landroid/view/contentcapture/ContentCaptureManager;
 
     .line 28
     .line 29
@@ -514,7 +514,7 @@
 
     .line 34
     .line 35
-    invoke-static {v0}, LNC1;->A(Landroid/view/contentcapture/ContentCaptureManager;)Z
+    invoke-static {v0}, LAb2;->C(Landroid/view/contentcapture/ContentCaptureManager;)Z
 
     .line 36
     .line 37
@@ -545,7 +545,7 @@
     move-result-object p1
 
     .line 50
-    invoke-static {p1}, LNC1;->h(Landroid/view/View;)Landroid/view/contentcapture/ContentCaptureSession;
+    invoke-static {p1}, LAb2;->j(Landroid/view/View;)Landroid/view/contentcapture/ContentCaptureSession;
 
     .line 51
     .line 52
@@ -596,7 +596,7 @@
 
     .line 11
     .line 12
-    invoke-static {p1, v0}, Ln9f;->m(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -623,16 +623,16 @@
     return-void
 .end method
 
-.method public final onContentCaptureViewInitialize(Landroid/view/View;LpQ3;)V
+.method public final onContentCaptureViewInitialize(Landroid/view/View;LkU3;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Landroid/view/View;",
             ":",
-            "LqQ3;",
+            "LlU3;",
             ">(TT;",
-            "LpQ3;",
+            "LkU3;",
             ")V"
         }
     .end annotation
@@ -703,7 +703,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-static {p1}, Lz4;->c(Landroid/view/View;)I
+    invoke-static {p1}, Le5;->c(Landroid/view/View;)I
 
     .line 36
     .line 37
@@ -715,7 +715,7 @@
 
     .line 40
     .line 41
-    invoke-static {p1}, Lz4;->v(Landroid/view/View;)V
+    invoke-static {p1}, Le5;->v(Landroid/view/View;)V
 
     .line 42
     .line 43
@@ -725,20 +725,20 @@
 
     .line 45
     .line 46
-    new-instance v0, LmQ3;
+    new-instance v0, LhU3;
 
     .line 47
     .line 48
-    invoke-direct {v0, p2}, LmQ3;-><init>(LpQ3;)V
+    invoke-direct {v0, p2}, LhU3;-><init>(LkU3;)V
 
     .line 49
     .line 50
     .line 51
-    check-cast p1, LqQ3;
+    check-cast p1, LlU3;
 
     .line 52
     .line 53
-    invoke-interface {p1, v0}, LqQ3;->l(LmQ3;)V
+    invoke-interface {p1, v0}, LlU3;->l(LhU3;)V
 
     .line 54
     .line 55
@@ -789,7 +789,7 @@
 
     .line 18
     .line 19
-    invoke-static {}, LNC1;->i()Landroid/view/contentcapture/DataRemovalRequest$Builder;
+    invoke-static {}, LAb2;->k()Landroid/view/contentcapture/DataRemovalRequest$Builder;
 
     .line 20
     .line 21
@@ -797,7 +797,7 @@
     move-result-object v1
 
     .line 23
-    invoke-static {p1}, LNC1;->c(Ljava/lang/String;)Landroid/content/LocusId;
+    invoke-static {p1}, LAb2;->b(Ljava/lang/String;)Landroid/content/LocusId;
 
     .line 24
     .line 25
@@ -805,7 +805,7 @@
     move-result-object p1
 
     .line 27
-    invoke-static {v1, p1}, LNC1;->j(Landroid/view/contentcapture/DataRemovalRequest$Builder;Landroid/content/LocusId;)Landroid/view/contentcapture/DataRemovalRequest$Builder;
+    invoke-static {v1, p1}, LAb2;->l(Landroid/view/contentcapture/DataRemovalRequest$Builder;Landroid/content/LocusId;)Landroid/view/contentcapture/DataRemovalRequest$Builder;
 
     .line 28
     .line 29
@@ -813,7 +813,7 @@
     move-result-object p1
 
     .line 31
-    invoke-static {p1}, LNC1;->k(Landroid/view/contentcapture/DataRemovalRequest$Builder;)Landroid/view/contentcapture/DataRemovalRequest;
+    invoke-static {p1}, LAb2;->m(Landroid/view/contentcapture/DataRemovalRequest$Builder;)Landroid/view/contentcapture/DataRemovalRequest;
 
     .line 32
     .line 33
@@ -821,7 +821,7 @@
     move-result-object p1
 
     .line 35
-    invoke-static {v0, p1}, LNC1;->s(Landroid/view/contentcapture/ContentCaptureManager;Landroid/view/contentcapture/DataRemovalRequest;)V
+    invoke-static {v0, p1}, LAb2;->w(Landroid/view/contentcapture/ContentCaptureManager;Landroid/view/contentcapture/DataRemovalRequest;)V
 
     .line 36
     .line 37
@@ -831,7 +831,7 @@
     return-void
 .end method
 
-.method public final onCreateViewTranslationRequest(Ljava/util/function/Consumer;LpQ3;Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
+.method public final onCreateViewTranslationRequest(Ljava/util/function/Consumer;LkU3;Landroid/view/autofill/AutofillId;Ljava/lang/CharSequence;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -839,7 +839,7 @@
             "Ljava/util/function/Consumer<",
             "Landroid/view/translation/ViewTranslationRequest;",
             ">;",
-            "LpQ3;",
+            "LkU3;",
             "Landroid/view/autofill/AutofillId;",
             "Ljava/lang/CharSequence;",
             ")V"
@@ -855,11 +855,11 @@
 
     .line 4
     .line 5
-    check-cast p2, Lcgi;
+    check-cast p2, LBmi;
 
     .line 6
     .line 7
-    invoke-virtual {p2}, Lcgi;->f()Z
+    invoke-virtual {p2}, LBmi;->g()Z
 
     .line 8
     .line 9
@@ -893,7 +893,7 @@
     .line 22
     .line 23
     :cond_1
-    invoke-static {p4}, LqU;->e(Ljava/lang/CharSequence;)Landroid/view/translation/TranslationRequestValue;
+    invoke-static {p4}, LxW;->e(Ljava/lang/CharSequence;)Landroid/view/translation/TranslationRequestValue;
 
     .line 24
     .line 25
@@ -901,7 +901,7 @@
     move-result-object p2
 
     .line 27
-    invoke-static {p3}, LqU;->g(Landroid/view/autofill/AutofillId;)Landroid/view/translation/ViewTranslationRequest$Builder;
+    invoke-static {p3}, LxW;->g(Landroid/view/autofill/AutofillId;)Landroid/view/translation/ViewTranslationRequest$Builder;
 
     .line 28
     .line 29
@@ -909,7 +909,7 @@
     move-result-object p3
 
     .line 31
-    invoke-static {p3, p2}, LqU;->h(Landroid/view/translation/ViewTranslationRequest$Builder;Landroid/view/translation/TranslationRequestValue;)Landroid/view/translation/ViewTranslationRequest$Builder;
+    invoke-static {p3, p2}, LxW;->h(Landroid/view/translation/ViewTranslationRequest$Builder;Landroid/view/translation/TranslationRequestValue;)Landroid/view/translation/ViewTranslationRequest$Builder;
 
     .line 32
     .line 33
@@ -917,7 +917,7 @@
     move-result-object p2
 
     .line 35
-    invoke-static {p2}, LqU;->i(Landroid/view/translation/ViewTranslationRequest$Builder;)Landroid/view/translation/ViewTranslationRequest;
+    invoke-static {p2}, LxW;->i(Landroid/view/translation/ViewTranslationRequest$Builder;)Landroid/view/translation/ViewTranslationRequest;
 
     .line 36
     .line 37
@@ -925,7 +925,7 @@
     move-result-object p2
 
     .line 39
-    invoke-static {p1, p2}, LWqj;->n(Ljava/util/function/Consumer;Ljava/lang/Object;)V
+    invoke-static {p1, p2}, LCkk;->j(Ljava/util/function/Consumer;Ljava/lang/Object;)V
 
     .line 40
     .line 41
@@ -967,7 +967,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v1, v2, p2}, Lngk;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, p2}, LhGk;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 15
     .line 16
@@ -1032,7 +1032,7 @@
 
     .line 13
     .line 14
-    invoke-static {v0, v1, v2, p2}, Lngk;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, p2}, LhGk;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 15
     .line 16
@@ -1081,7 +1081,7 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1}, Ln9f;->m(ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, LToi;->l(ILjava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14
@@ -1106,7 +1106,7 @@
     return-void
 .end method
 
-.method public final provideViewContactCaptureStructure(Landroid/view/ViewStructure;LnQ3;Ljava/lang/String;)V
+.method public final provideViewContactCaptureStructure(Landroid/view/ViewStructure;LiU3;Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -1139,7 +1139,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-virtual {p2}, LnQ3;->a()Ljava/lang/CharSequence;
+    invoke-virtual {p2}, LiU3;->a()Ljava/lang/CharSequence;
 
     .line 16
     .line 17
@@ -1147,22 +1147,22 @@
     move-result-object v0
 
     .line 19
-    invoke-static {p1, v0}, LUO1;->v(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
+    invoke-static {p1, v0}, LBS1;->v(Landroid/view/ViewStructure;Ljava/lang/CharSequence;)V
 
     .line 20
     .line 21
     .line 22
-    invoke-static {p1}, LDF0;->v(Landroid/view/ViewStructure;)V
+    invoke-static {p1}, LD93;->w(Landroid/view/ViewStructure;)V
 
     .line 23
     .line 24
     .line 25
-    invoke-static {p1}, LDF0;->B(Landroid/view/ViewStructure;)V
+    invoke-static {p1}, LD93;->A(Landroid/view/ViewStructure;)V
 
     .line 26
     .line 27
     .line 28
-    invoke-virtual {p2}, LnQ3;->c()F
+    invoke-virtual {p2}, LiU3;->c()F
 
     .line 29
     .line 30
@@ -1170,7 +1170,7 @@
     move-result v0
 
     .line 32
-    invoke-virtual {p2}, LnQ3;->b()I
+    invoke-virtual {p2}, LiU3;->b()I
 
     .line 33
     .line 34
@@ -1178,12 +1178,12 @@
     move-result p2
 
     .line 36
-    invoke-static {p1, v0, p2}, LUO1;->u(Landroid/view/ViewStructure;FI)V
+    invoke-static {p1, v0, p2}, LBS1;->u(Landroid/view/ViewStructure;FI)V
 
     .line 37
     .line 38
     .line 39
-    invoke-static {p1}, LUO1;->h(Landroid/view/ViewStructure;)Landroid/os/Bundle;
+    invoke-static {p1}, LBS1;->k(Landroid/view/ViewStructure;)Landroid/os/Bundle;
 
     .line 40
     .line 41
@@ -1225,7 +1225,7 @@
     return-void
 .end method
 
-.method public final setViewTranslationCallback(Landroid/view/View;LmQ3;)V
+.method public final setViewTranslationCallback(Landroid/view/View;LhU3;)V
     .locals 1
 
     .line 1
@@ -1241,7 +1241,7 @@
 
     .line 6
     :cond_0
-    invoke-static {p1, p2}, LqU;->t(Landroid/view/View;Landroid/view/translation/ViewTranslationCallback;)V
+    invoke-static {p1, p2}, LxW;->t(Landroid/view/View;Landroid/view/translation/ViewTranslationCallback;)V
 
     .line 7
     .line 8

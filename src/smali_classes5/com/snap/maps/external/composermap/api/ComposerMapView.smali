@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LcB3;
+.implements LCE3;
 
 
 # annotations
@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field private center:LBF9;
+.field private center:LYQ9;
 
-.field private mapAdapter:LJUa;
+.field private mapAdapter:Ls7b;
 
 .field private mapContainer:Landroid/widget/FrameLayout;
 
@@ -46,7 +46,7 @@
 
 .field private rotation:D
 
-.field private snapMapOptions:LvJg;
+.field private snapMapOptions:Lc5h;
 
 .field private zoom:Ljava/lang/Double;
 
@@ -171,7 +171,7 @@
 
     .line 42
     .line 43
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 44
     .line 45
@@ -229,7 +229,7 @@
 
     .line 15
     .line 16
-    iget-object v6, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->center:LBF9;
+    iget-object v6, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->center:LYQ9;
 
     .line 17
     .line 18
@@ -237,7 +237,7 @@
 
     .line 19
     .line 20
-    iget-object v7, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v7, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 21
     .line 22
@@ -256,11 +256,11 @@
 
     .line 28
     .line 29
-    iget-object v10, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->snapMapOptions:LvJg;
+    iget-object v10, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->snapMapOptions:Lc5h;
 
     .line 30
     .line 31
-    check-cast v7, LPUa;
+    check-cast v7, Lx7b;
 
     .line 32
     .line 33
@@ -273,11 +273,11 @@
     .line 36
     .line 37
     .line 38
-    iput-object v11, v7, LPUa;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iput-object v11, v7, Lx7b;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 39
     .line 40
-    iget-object v11, v7, LPUa;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v11, v7, Lx7b;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 41
     .line 42
@@ -286,23 +286,23 @@
     .line 43
     .line 44
     .line 45
-    iput-wide v0, v7, LPUa;->p:D
+    iput-wide v0, v7, Lx7b;->p:D
 
     .line 46
     .line 47
-    iput-wide v2, v7, LPUa;->q:D
+    iput-wide v2, v7, Lx7b;->q:D
 
     .line 48
     .line 49
-    iput-wide v4, v7, LPUa;->r:D
+    iput-wide v4, v7, Lx7b;->r:D
 
     .line 50
     .line 51
-    sget-object v0, Lq0h;->K0:Lq0h;
+    sget-object v0, Lkmh;->K0:Lkmh;
 
     .line 52
     .line 53
-    iget-object v1, v7, LPUa;->a:LDG9;
+    iget-object v1, v7, Lx7b;->a:LSR9;
 
     .line 54
     .line 55
@@ -310,28 +310,28 @@
 
     .line 56
     .line 57
-    new-instance v10, LvJg;
+    new-instance v10, Lc5h;
 
     .line 58
     .line 59
     const/4 v2, 0x2
 
     .line 60
-    invoke-direct {v10, v2}, LvJg;-><init>(I)V
+    invoke-direct {v10, v2}, Lc5h;-><init>(I)V
 
     .line 61
     .line 62
     .line 63
     :cond_1
-    new-instance v2, LWrh;
+    new-instance v2, LyPh;
 
     .line 64
     .line 65
-    sget-object v3, LpYa;->Z:LpYa;
+    sget-object v3, Lqbb;->Z:Lqbb;
 
     .line 66
     .line 67
-    invoke-virtual {v3}, Lan0;->c()Lbwh;
+    invoke-virtual {v3}, Lrp0;->c()LcUh;
 
     .line 68
     .line 69
@@ -343,22 +343,22 @@
 
     .line 72
     .line 73
-    iput-object v4, v10, LvJg;->b:Ljava/lang/String;
+    iput-object v4, v10, Lc5h;->b:Ljava/lang/String;
 
     .line 74
     .line 75
     const/4 v4, 0x1
 
     .line 76
-    iput-boolean v4, v10, LvJg;->c:Z
+    iput-boolean v4, v10, Lc5h;->c:Z
 
     .line 77
     .line 78
-    iput-boolean v4, v10, LvJg;->d:Z
+    iput-boolean v4, v10, Lc5h;->d:Z
 
     .line 79
     .line 80
-    new-instance v4, LXy7;
+    new-instance v4, LQD7;
 
     .line 81
     .line 82
@@ -366,29 +366,29 @@
 
     .line 83
     .line 84
-    invoke-direct {v4, v5}, LXy7;-><init>(F)V
+    invoke-direct {v4, v5}, LQD7;-><init>(F)V
 
     .line 85
     .line 86
     .line 87
-    iput-object v4, v10, LvJg;->e:LXy7;
+    iput-object v4, v10, Lc5h;->e:LQD7;
 
     .line 88
     .line 89
-    invoke-direct {v2, v3, v10, v0}, LWrh;-><init>(Lbwh;LvJg;Lq0h;)V
+    invoke-direct {v2, v3, v10, v0}, LyPh;-><init>(LcUh;Lc5h;Lkmh;)V
 
     .line 90
     .line 91
     .line 92
-    iget-object v0, v1, LDG9;->b:Ljava/lang/Object;
+    iget-object v0, v1, LSR9;->b:Ljava/lang/Object;
 
     .line 93
     .line 94
-    check-cast v0, LWo4;
+    check-cast v0, LGt4;
 
     .line 95
     .line 96
-    invoke-virtual {v0}, LWo4;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, LGt4;->get()Ljava/lang/Object;
 
     .line 97
     .line 98
@@ -396,11 +396,11 @@
     move-result-object v0
 
     .line 100
-    check-cast v0, LJ7d;
+    check-cast v0, LYmd;
 
     .line 101
     .line 102
-    invoke-interface {v0, v2}, LJ7d;->c(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Single;
+    invoke-interface {v0, v2}, LYmd;->c(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Single;
 
     .line 103
     .line 104
@@ -408,7 +408,7 @@
     move-result-object v0
 
     .line 106
-    sget-object v1, Lsja;->t:Lsja;
+    sget-object v1, LSU7;->m0:LSU7;
 
     .line 107
     .line 108
@@ -421,15 +421,15 @@
     .line 111
     .line 112
     .line 113
-    new-instance v0, Luza;
+    new-instance v0, LtKa;
 
     .line 114
     .line 115
-    const/16 v1, 0x10
+    const/16 v1, 0xe
 
     .line 116
     .line 117
-    invoke-direct {v0, v7, v1, v8}, Luza;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, v7, v1, v8}, LtKa;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 118
     .line 119
@@ -443,11 +443,11 @@
     .line 123
     .line 124
     .line 125
-    iget-object v0, v7, LPUa;->f:LBre;
+    iget-object v0, v7, Lx7b;->f:LnJe;
 
     .line 126
     .line 127
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {v0}, LnJe;->i()Lxp0;
 
     .line 128
     .line 129
@@ -464,80 +464,81 @@
     .line 134
     .line 135
     .line 136
-    new-instance v0, LUCa;
+    new-instance v0, LIGa;
 
     .line 137
     .line 138
-    const/16 v1, 0x10
+    const/16 v1, 0x15
 
     .line 139
     .line 140
-    invoke-direct {v0, v1, v7}, LUCa;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, v7}, LIGa;-><init>(ILjava/lang/Object;)V
 
     .line 141
     .line 142
     .line 143
-    new-instance v1, LVPa;
+    new-instance v1, LZXa;
 
     .line 144
     .line 145
-    const/4 v3, 0x4
+    const/16 v3, 0xc
 
     .line 146
-    invoke-direct {v1, v3, v7}, LVPa;-><init>(ILjava/lang/Object;)V
-
     .line 147
+    invoke-direct {v1, v3, v7}, LZXa;-><init>(ILjava/lang/Object;)V
+
     .line 148
     .line 149
-    iget-object v3, v7, LPUa;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 150
+    iget-object v3, v7, Lx7b;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 151
+    .line 152
     if-eqz v3, :cond_2
 
-    .line 152
     .line 153
+    .line 154
     invoke-virtual {v2, v0, v1, v3}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
-    .line 154
     .line 155
     .line 156
+    .line 157
     goto :goto_1
 
-    .line 157
+    .line 158
     :cond_2
     const-string v0, "disposable"
 
-    .line 158
     .line 159
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 160
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 161
     .line 162
+    .line 163
     throw v9
 
-    .line 163
+    .line 164
     :cond_3
     const-string v0, "mapContainer"
 
-    .line 164
     .line 165
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
-
     .line 166
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
+
     .line 167
     .line 168
+    .line 169
     throw v9
 
-    .line 169
+    .line 170
     :cond_4
     :goto_1
     invoke-super {p0}, Landroid/widget/FrameLayout;->onAttachedToWindow()V
 
-    .line 170
     .line 171
     .line 172
+    .line 173
     return-void
 .end method
 
@@ -550,7 +551,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 5
     .line 6
@@ -558,11 +559,11 @@
 
     .line 7
     .line 8
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 9
     .line 10
-    iget-object v0, v0, LPUa;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, v0, Lx7b;->c:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 11
     .line 12
@@ -583,7 +584,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 21
     .line 22
@@ -598,7 +599,7 @@
     return-void
 .end method
 
-.method public processTouchEvent(Landroid/view/MotionEvent;)LaB3;
+.method public processTouchEvent(Landroid/view/MotionEvent;)LAE3;
     .locals 0
 
     .line 1
@@ -614,7 +615,7 @@
 
     .line 6
     .line 7
-    sget-object p1, LaB3;->a:LaB3;
+    sget-object p1, LAE3;->a:LAE3;
 
     .line 8
     .line 9
@@ -622,7 +623,7 @@
 
     .line 10
     :cond_0
-    sget-object p1, LaB3;->b:LaB3;
+    sget-object p1, LAE3;->b:LAE3;
 
     .line 11
     .line 12
@@ -636,7 +637,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->center:LBF9;
+    iput-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->center:LYQ9;
 
     .line 3
     .line 4
@@ -647,7 +648,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 2
     .line 3
@@ -655,11 +656,11 @@
 
     .line 4
     .line 5
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 6
     .line 7
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 8
     .line 9
@@ -667,11 +668,11 @@
     move-result-object v1
 
     .line 11
-    iput-object v1, v0, LPUa;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object v1, v0, Lx7b;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 12
     .line 13
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 14
     .line 15
@@ -679,11 +680,11 @@
     move-result-object v1
 
     .line 17
-    iput-object v1, v0, LPUa;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object v1, v0, Lx7b;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 18
     .line 19
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 20
     .line 21
@@ -691,11 +692,11 @@
     move-result-object v1
 
     .line 23
-    iput-object v1, v0, LPUa;->i:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object v1, v0, Lx7b;->i:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 24
     .line 25
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 26
     .line 27
@@ -703,11 +704,11 @@
     move-result-object v1
 
     .line 29
-    iput-object v1, v0, LPUa;->j:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object v1, v0, Lx7b;->j:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 30
     .line 31
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 32
     .line 33
@@ -715,7 +716,7 @@
     move-result-object v1
 
     .line 35
-    iput-object v1, v0, LPUa;->k:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object v1, v0, Lx7b;->k:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 36
     .line 37
@@ -741,7 +742,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 2
     .line 3
@@ -752,11 +753,11 @@
 
     .line 5
     .line 6
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 7
     .line 8
-    iget-object v0, v0, LPUa;->d:Lesh;
+    iget-object v0, v0, Lx7b;->d:LHPh;
 
     .line 9
     .line 10
@@ -764,11 +765,11 @@
 
     .line 11
     .line 12
-    iget-object v2, v0, Lesh;->L:Lbsh;
+    iget-object v2, v0, LHPh;->L:LFPh;
 
     .line 13
     .line 14
-    iget-object v3, v0, Lesh;->a:LeK9;
+    iget-object v3, v0, LHPh;->a:LJV9;
 
     .line 15
     .line 16
@@ -776,21 +777,21 @@
 
     .line 17
     .line 18
-    iget-object v4, v3, LeK9;->a:LXab;
+    iget-object v4, v3, LJV9;->a:LCob;
 
     .line 19
     .line 20
-    invoke-virtual {v4, v2}, LXab;->o(LYab;)V
+    invoke-virtual {v4, v2}, LCob;->n(LDob;)V
 
     .line 21
     .line 22
     .line 23
     :cond_0
-    iput-object v1, v0, Lesh;->L:Lbsh;
+    iput-object v1, v0, LHPh;->L:LFPh;
 
     .line 24
     .line 25
-    iget-object v2, v0, Lesh;->K:Lbsh;
+    iget-object v2, v0, LHPh;->K:LFPh;
 
     .line 26
     .line 27
@@ -798,17 +799,17 @@
 
     .line 28
     .line 29
-    iget-object v3, v3, LeK9;->a:LXab;
+    iget-object v3, v3, LJV9;->a:LCob;
 
     .line 30
     .line 31
-    invoke-virtual {v3, v2}, LXab;->o(LYab;)V
+    invoke-virtual {v3, v2}, LCob;->n(LDob;)V
 
     .line 32
     .line 33
     .line 34
     :cond_1
-    iput-object v1, v0, Lesh;->K:Lbsh;
+    iput-object v1, v0, LHPh;->K:LFPh;
 
     .line 35
     .line 36
@@ -868,7 +869,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 2
     .line 3
@@ -876,11 +877,11 @@
 
     .line 4
     .line 5
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 6
     .line 7
-    iget-object v1, v0, LPUa;->t:LKUa;
+    iget-object v1, v0, Lx7b;->t:Lt7b;
 
     .line 8
     .line 9
@@ -892,11 +893,11 @@
 
     .line 12
     :cond_0
-    iget-object v1, v1, LKUa;->a:Ljava/lang/String;
+    iget-object v1, v1, Lt7b;->a:Ljava/lang/String;
 
     .line 13
     .line 14
-    invoke-virtual {v0, v1}, LPUa;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lx7b;->b(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -920,15 +921,15 @@
     return-void
 .end method
 
-.method public final setCenter(LBF9;)V
+.method public final setCenter(LYQ9;)V
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->center:LBF9;
+    iput-object p1, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->center:LYQ9;
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 4
     .line 5
@@ -936,11 +937,11 @@
 
     .line 6
     .line 7
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 8
     .line 9
-    iget-object v0, v0, LPUa;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 10
     .line 11
@@ -1078,7 +1079,7 @@
 
     .line 57
     :cond_0
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 58
     .line 59
@@ -1087,7 +1088,7 @@
 
     .line 61
     :cond_1
-    invoke-static {v3}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v3}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 62
     .line 63
@@ -1095,11 +1096,11 @@
     throw v2
 .end method
 
-.method public final setMapAdapter(LJUa;)V
+.method public final setMapAdapter(Ls7b;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iput-object p1, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 2
     .line 3
@@ -1121,7 +1122,7 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 4
     .line 5
@@ -1129,11 +1130,11 @@
 
     .line 6
     .line 7
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 8
     .line 9
-    iget-object v0, v0, LPUa;->j:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->j:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 10
     .line 11
@@ -1161,7 +1162,7 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 4
     .line 5
@@ -1169,11 +1170,11 @@
 
     .line 6
     .line 7
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 8
     .line 9
-    iget-object v0, v0, LPUa;->l:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->l:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 10
     .line 11
@@ -1201,7 +1202,7 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 4
     .line 5
@@ -1209,11 +1210,11 @@
 
     .line 6
     .line 7
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 8
     .line 9
-    iget-object v0, v0, LPUa;->k:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->k:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 10
     .line 11
@@ -1248,7 +1249,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 2
     .line 3
@@ -1256,11 +1257,11 @@
 
     .line 4
     .line 5
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 6
     .line 7
-    iget-object v0, v0, LPUa;->m:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->m:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 8
     .line 9
@@ -1281,7 +1282,7 @@
 
     .line 2
     .line 3
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 4
     .line 5
@@ -1289,11 +1290,11 @@
 
     .line 6
     .line 7
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 8
     .line 9
-    iget-object v0, v0, LPUa;->i:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->i:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 10
     .line 11
@@ -1318,7 +1319,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 2
     .line 3
@@ -1326,7 +1327,7 @@
 
     .line 4
     .line 5
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 6
     .line 7
@@ -1338,7 +1339,7 @@
     move-result-object p1
 
     .line 11
-    iget-object v0, v0, LPUa;->n:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->n:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 12
     .line 13
@@ -1355,7 +1356,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 2
     .line 3
@@ -1363,15 +1364,15 @@
 
     .line 4
     .line 5
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 6
     .line 7
-    iput-boolean p1, v0, LPUa;->u:Z
+    iput-boolean p1, v0, Lx7b;->u:Z
 
     .line 8
     .line 9
-    iget-object v1, v0, LPUa;->t:LKUa;
+    iget-object v1, v0, Lx7b;->t:Lt7b;
 
     .line 10
     .line 11
@@ -1387,7 +1388,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, LPUa;->a(LKUa;)V
+    invoke-virtual {v0, v1}, Lx7b;->a(Lt7b;)V
 
     .line 17
     .line 18
@@ -1396,11 +1397,11 @@
 
     .line 20
     :cond_1
-    iget-object p1, v1, LKUa;->a:Ljava/lang/String;
+    iget-object p1, v1, Lt7b;->a:Ljava/lang/String;
 
     .line 21
     .line 22
-    invoke-virtual {v0, p1}, LPUa;->b(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lx7b;->b(Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -1410,11 +1411,11 @@
     return-void
 .end method
 
-.method public final setSnapMapOptions(LvJg;)V
+.method public final setSnapMapOptions(Lc5h;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->snapMapOptions:LvJg;
+    iput-object p1, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->snapMapOptions:Lc5h;
 
     .line 2
     .line 3
@@ -1437,7 +1438,7 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:LJUa;
+    iget-object v0, p0, Lcom/snap/maps/external/composermap/api/ComposerMapView;->mapAdapter:Ls7b;
 
     .line 8
     .line 9
@@ -1445,11 +1446,11 @@
 
     .line 10
     .line 11
-    check-cast v0, LPUa;
+    check-cast v0, Lx7b;
 
     .line 12
     .line 13
-    iget-object v0, v0, LPUa;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget-object v0, v0, Lx7b;->h:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 14
     .line 15

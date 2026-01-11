@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/ISafetyReportTweaks;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'shepherdRouteTag\':s?,\'shepherdTimeoutMs\':d@?,\'shepherdForceTestReport\':b@?,\'previousChatsCount\':d@?,\'previousGroupChatsCount\':d@?,\'chatWithAccountChatsCount\':d@?,\'contentIllegalEnabled\':b@?,\'chatIllegalEnabled\':b@?,\'accountIllegalEnabled\':b@?,\'lensNewReasonsEnabled\':b@?,\'toggleState\':b@?,\'under13ReportingReason\':b@?"
     typeReferences = {}

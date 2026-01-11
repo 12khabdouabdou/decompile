@@ -226,11 +226,11 @@
 
     .line 34
     .line 35
-    iget-object v1, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:LV6i;
+    iget-object v1, v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:Lmvi;
 
     .line 36
     .line 37
-    invoke-interface {v1}, LV6i;->onComplete()V
+    invoke-interface {v1}, Lmvi;->onComplete()V
 
     .line 38
     .line 39
@@ -255,44 +255,7 @@
     return v0
 .end method
 
-.method public final c()Z
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->t:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    sget-object v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->i0:[Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;
-
-    .line 8
-    .line 9
-    if-ne v0, v1, :cond_0
-
-    .line 10
-    .line 11
-    const/4 v0, 0x1
-
-    .line 12
-    return v0
-
-    .line 13
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 14
-    return v0
-.end method
-
-.method public final d()V
+.method public final b()V
     .locals 20
 
     .line 1
@@ -572,11 +535,11 @@
 
     .line 120
     .line 121
-    iget-object v14, v6, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:LV6i;
+    iget-object v14, v6, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:Lmvi;
 
     .line 122
     .line 123
-    invoke-interface {v14, v12}, LV6i;->onNext(Ljava/lang/Object;)V
+    invoke-interface {v14, v12}, Lmvi;->onNext(Ljava/lang/Object;)V
 
     .line 124
     .line 125
@@ -630,14 +593,14 @@
     move-result-object v0
 
     .line 149
-    check-cast v0, Lc7i;
+    check-cast v0, Ltvi;
 
     .line 150
     .line 151
     int-to-long v12, v3
 
     .line 152
-    invoke-interface {v0, v12, v13}, Lc7i;->l(J)V
+    invoke-interface {v0, v12, v13}, Ltvi;->l(J)V
 
     .line 153
     .line 154
@@ -699,11 +662,11 @@
     move-result-object v3
 
     .line 181
-    check-cast v3, Lc7i;
+    check-cast v3, Ltvi;
 
     .line 182
     .line 183
-    invoke-interface {v3}, Lc7i;->cancel()V
+    invoke-interface {v3}, Ltvi;->cancel()V
 
     .line 184
     .line 185
@@ -788,6 +751,43 @@
     .line 221
     .line 222
     goto/16 :goto_1
+.end method
+
+.method public final d()Z
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->t:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    sget-object v1, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->i0:[Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;
+
+    .line 8
+    .line 9
+    if-ne v0, v1, :cond_0
+
+    .line 10
+    .line 11
+    const/4 v0, 0x1
+
+    .line 12
+    return v0
+
+    .line 13
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 14
+    return v0
 .end method
 
 .method public final dispose()V
@@ -1062,11 +1062,11 @@
 
     .line 22
     .line 23
-    iget-object v3, v3, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:LV6i;
+    iget-object v3, v3, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$InnerSubscription;->a:Lmvi;
 
     .line 24
     .line 25
-    invoke-interface {v3, p1}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {v3, p1}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 26
     .line 27
@@ -1094,7 +1094,7 @@
 
     .line 3
     .line 4
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->d()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->b()V
 
     .line 5
     .line 6
@@ -1134,7 +1134,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->d()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->b()V
 
     .line 15
     .line 16
@@ -1188,7 +1188,7 @@
 
     .line 22
     :cond_0
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->d()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->b()V
 
     .line 23
     .line 24
@@ -1196,7 +1196,7 @@
     return-void
 .end method
 
-.method public final onSubscribe(Lc7i;)V
+.method public final onSubscribe(Ltvi;)V
     .locals 3
 
     .line 1
@@ -1204,7 +1204,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Lc7i;)Z
+    invoke-static {v0, p1}, Lio/reactivex/rxjava3/internal/subscriptions/SubscriptionHelper;->f(Ljava/util/concurrent/atomic/AtomicReference;Ltvi;)Z
 
     .line 4
     .line 5
@@ -1234,7 +1234,7 @@
     const/4 v1, 0x7
 
     .line 17
-    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->s(I)I
+    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/operators/QueueFuseable;->r(I)I
 
     .line 18
     .line 19
@@ -1261,7 +1261,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->d()V
+    invoke-virtual {p0}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowablePublish$PublishConnection;->b()V
 
     .line 31
     .line 32
@@ -1292,7 +1292,7 @@
     int-to-long v0, v0
 
     .line 44
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 45
     .line 46
@@ -1325,7 +1325,7 @@
     int-to-long v0, v0
 
     .line 60
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 61
     .line 62

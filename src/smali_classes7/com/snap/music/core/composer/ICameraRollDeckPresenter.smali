@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LIU8;
+    proxyClass = Lj29;
     schema = "\'presentCameraRollView\':f|m|(r:\'[0]\', f(r:\'[1]\'))"
     typeReferences = {
         Lcom/snap/modules/deck/ComposerDeckContainerInterface;,

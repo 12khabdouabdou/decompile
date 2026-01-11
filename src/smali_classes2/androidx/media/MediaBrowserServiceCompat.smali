@@ -8,7 +8,7 @@
 
 
 # virtual methods
-.method public abstract a()Liok;
+.method public abstract a()LDNk;
 .end method
 
 .method public abstract b()V
@@ -68,7 +68,7 @@
 
     .line 9
     .line 10
-    new-instance v0, Ldgb;
+    new-instance v0, LFtb;
 
     .line 11
     .line 12

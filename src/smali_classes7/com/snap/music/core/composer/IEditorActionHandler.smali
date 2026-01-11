@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LkV8;
+    proxyClass = LM29;
     schema = "\'onConfirm\':f|m|(d, r?:\'[0]\'),\'onCancel\':f|m|(),\'onStartOffsetWillChange\':f|m|(),\'onStartOffsetChanged\':f|m|(d),\'observeExternalCurrentTimeMs\':f|m|(f(d@)): r:\'[1]\',\'onMusicButtonClicked\':f|m|(r:\'[2]\'),\'onMuteSnapAudioToggleChanged\':f?|m|(b),\'onMusicPlaybackEventTriggered\':f?|m|(r:\'[3]\', r<e>:\'[4]\', d, d)"
     typeReferences = {
         Lcom/snap/music/core/composer/MusicStickerLottieData;,
@@ -43,12 +43,12 @@
 .end method
 
 .method public abstract onMusicPlaybackEventTriggered(Lcom/snap/composer/foundation/Long;Lcom/snap/music/core/composer/MusicPlaybackEvent;DD)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract onMuteSnapAudioToggleChanged(Z)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

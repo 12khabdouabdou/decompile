@@ -1,86 +1,93 @@
 .class public final LkA3;
-.super Lvu1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lcom/snap/modules/sup/SUPStringRepo;
+.implements Landroid/widget/NumberPicker$OnValueChangeListener;
+
+
+# instance fields
+.field public final synthetic a:Lcom/snap/composer/views/ComposerIndexPicker;
+
+.field public final synthetic b:Lcom/snap/composer/views/ComposerIndexPicker;
 
 
 # direct methods
-.method public constructor <init>(LXai;)V
-    .locals 1
+.method public constructor <init>(Lcom/snap/composer/views/ComposerIndexPicker;Lcom/snap/composer/views/ComposerIndexPicker;)V
+    .locals 0
 
     .line 1
-    const-class v0, Ljava/lang/String;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-static {v0}, LsJe;->a(Ljava/lang/Class;)Lc23;
-
     .line 4
+    iput-object p1, p0, LkA3;->a:Lcom/snap/composer/views/ComposerIndexPicker;
+
     .line 5
     .line 6
-    move-result-object v0
+    iput-object p2, p0, LkA3;->b:Lcom/snap/composer/views/ComposerIndexPicker;
 
     .line 7
-    invoke-direct {p0, p1, v0}, Lvu1;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
-
     .line 8
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final onValueChange(Landroid/widget/NumberPicker;II)V
     .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    iget-object p2, p0, LkA3;->a:Lcom/snap/composer/views/ComposerIndexPicker;
 
     .line 2
     .line 3
-    new-instance v0, Lcom/snap/modules/sup/SUPString;
-
-    .line 4
-    .line 5
-    invoke-direct {v0, p1}, Lcom/snap/modules/sup/SUPString;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-object v0
-.end method
-
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
-
-    .line 1
-    sget-object v0, LzB3;->n:LyB3;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-static {p2}, Lcom/snap/composer/views/ComposerIndexPicker;->access$isSettingValueCount$p(Lcom/snap/composer/views/ComposerIndexPicker;)I
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, LyB3;->b:LzB3;
+    move-result p2
 
     .line 7
-    .line 8
-    const-class v1, Lcom/snap/modules/sup/SUPStringRepo;
+    if-lez p2, :cond_0
 
+    .line 8
     .line 9
+    return-void
+
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+    :cond_0
+    invoke-static {}, Lcom/snap/composer/views/ComposerIndexPicker;->access$getIndexProperty$cp()Llz9;
 
     .line 11
     .line 12
     .line 13
-    move-result p1
+    move-result-object p2
 
     .line 14
-    return p1
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    invoke-static {p1, p2, v0}, LQIc;->N(Landroid/view/View;Llz9;Ljava/lang/Object;)V
+
+    .line 19
+    .line 20
+    .line 21
+    iget-object p1, p0, LkA3;->b:Lcom/snap/composer/views/ComposerIndexPicker;
+
+    .line 22
+    .line 23
+    invoke-static {p1, p3}, Lcom/snap/composer/views/ComposerIndexPicker;->access$notifySelectRow(Lcom/snap/composer/views/ComposerIndexPicker;I)V
+
+    .line 24
+    .line 25
+    .line 26
+    return-void
 .end method

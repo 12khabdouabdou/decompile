@@ -1,39 +1,145 @@
 .class public final Lk3i;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'snapchatUserId\':s?,\'streamerUserId\':s"
-    typeReferences = {}
-.end annotation
+# interfaces
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field private _snapchatUserId:Ljava/lang/String;
+.field public final synthetic a:I
 
-.field private _streamerUserId:Ljava/lang/String;
+.field public final synthetic b:Lm3i;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Lm3i;I)V
     .locals 0
 
     .line 1
+    iput p2, p0, Lk3i;->a:I
+
+    iput-object p1, p0, Lk3i;->b:Lm3i;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final call()Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget v0, p0, Lk3i;->a:I
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lk3i;->_snapchatUserId:Ljava/lang/String;
+    packed-switch v0, :pswitch_data_0
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lk3i;->_streamerUserId:Ljava/lang/String;
+    iget-object v0, p0, Lk3i;->b:Lm3i;
 
     .line 7
     .line 8
-    return-void
+    iget-object v0, v0, Lm3i;->b:Lc3i;
+
+    .line 9
+    .line 10
+    invoke-static {}, Lc3i;->a()J
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-wide v0
+
+    .line 14
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v0
+
+    .line 18
+    return-object v0
+
+    .line 19
+    :pswitch_0
+    iget-object v0, p0, Lk3i;->b:Lm3i;
+
+    .line 20
+    .line 21
+    iget-object v1, v0, Lm3i;->b:Lc3i;
+
+    .line 22
+    .line 23
+    invoke-static {}, Lc3i;->a()J
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-wide v1
+
+    .line 27
+    iget-object v3, v0, Lm3i;->f:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 28
+    .line 29
+    invoke-virtual {v3}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->g1()Ljava/lang/Object;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v3
+
+    .line 33
+    check-cast v3, Ljava/lang/Long;
+
+    .line 34
+    .line 35
+    if-nez v3, :cond_0
+
+    .line 36
+    .line 37
+    const-wide/16 v3, 0x0
+
+    .line 38
+    .line 39
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v3
+
+    .line 43
+    :cond_0
+    invoke-virtual {v3}, Ljava/lang/Number;->longValue()J
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-wide v3
+
+    .line 47
+    invoke-virtual {v0, v1, v2, v3, v4}, Lm3i;->b(JJ)V
+
+    .line 48
+    .line 49
+    .line 50
+    sget-object v0, Lewj;->a:Lewj;
+
+    .line 51
+    .line 52
+    return-object v0
+
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

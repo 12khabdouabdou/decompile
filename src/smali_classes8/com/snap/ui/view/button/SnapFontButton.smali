@@ -1,9 +1,9 @@
 .class public final Lcom/snap/ui/view/button/SnapFontButton;
-.super LrW;
+.super LxY;
 .source "SourceFile"
 
 # interfaces
-.implements LbXi;
+.implements Ltmj;
 
 
 # instance fields
@@ -11,7 +11,7 @@
 
 .field public final e0:I
 
-.field public final f0:LRSb;
+.field public final f0:LtOc;
 
 .field public t:Lio/reactivex/rxjava3/disposables/Disposable;
 
@@ -25,7 +25,7 @@
     const/4 v1, 0x0
 
     .line 1
-    invoke-direct {p0, p1, v0, v1}, LrW;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, LxY;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -40,36 +40,38 @@
     iput p1, p0, Lcom/snap/ui/view/button/SnapFontButton;->e0:I
 
     .line 4
-    sget-object p1, LeNe;->c:LrH9;
+    sget-object p1, La5f;->c:LQS9;
 
-    invoke-static {}, LHHd;->u()LeNe;
+    invoke-static {}, LtOc;->p()La5f;
 
     .line 5
-    new-instance p1, LRSb;
+    new-instance p1, LtOc;
 
-    const/4 v0, 0x1
+    const/4 v0, 0x2
 
     .line 6
-    invoke-direct {p1, v0}, LRSb;-><init>(I)V
+    invoke-direct {p1, v0}, LtOc;-><init>(I)V
 
     .line 7
-    iput-object p1, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LRSb;
+    iput-object p1, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LtOc;
 
     return-void
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-    .locals 3
+    .locals 4
 
-    const/4 v0, 0x1
+    const/4 v0, 0x2
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
 
     .line 8
-    invoke-direct {p0, p1, p2, v1}, LrW;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v2}, LxY;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 9
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
@@ -81,60 +83,60 @@
     iput p1, p0, Lcom/snap/ui/view/button/SnapFontButton;->e0:I
 
     .line 11
-    sget-object p1, LeNe;->c:LrH9;
+    sget-object p1, La5f;->c:LQS9;
 
-    invoke-static {}, LHHd;->u()LeNe;
+    invoke-static {}, LtOc;->p()La5f;
 
     .line 12
-    new-instance p1, LRSb;
+    new-instance p1, LtOc;
 
     .line 13
-    invoke-direct {p1, v0}, LRSb;-><init>(I)V
+    invoke-direct {p1, v0}, LtOc;-><init>(I)V
 
     .line 14
-    iput-object p1, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LRSb;
+    iput-object p1, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LtOc;
 
     .line 15
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    sget-object v2, LCve;->q:[I
+    sget-object v3, LlNe;->q:[I
 
-    invoke-virtual {p1, p2, v2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
+    invoke-virtual {p1, p2, v3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
     .line 16
     :try_start_0
-    invoke-virtual {p1, v1, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
+    invoke-virtual {p1, v2, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result p2
 
     .line 17
-    invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
+    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
-    move-result v1
+    move-result v2
 
-    if-eqz v1, :cond_0
+    if-eqz v2, :cond_0
 
-    const/high16 v1, 0x41200000    # 10.0f
+    const/high16 v2, 0x41200000    # 10.0f
 
     .line 18
-    invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getDimension(IF)F
+    invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
-    move-result v1
+    move-result v2
 
     .line 19
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object v2
+    move-result-object v3
 
-    invoke-static {v1, v2}, Lsc5;->Z(FLandroid/content/Context;)I
+    invoke-static {v2, v3}, LTVd;->x(FLandroid/content/Context;)I
 
-    move-result v1
+    move-result v2
 
-    iput v1, p0, Lcom/snap/ui/view/button/SnapFontButton;->e0:I
+    iput v2, p0, Lcom/snap/ui/view/button/SnapFontButton;->e0:I
 
     goto :goto_0
 
@@ -154,38 +156,36 @@
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
-    move-result-object v1
+    move-result-object v2
 
-    invoke-static {p2, v1}, Lsc5;->Z(FLandroid/content/Context;)I
+    invoke-static {p2, v2}, LTVd;->x(FLandroid/content/Context;)I
 
     move-result p2
 
     .line 21
-    iget v1, p0, Lcom/snap/ui/view/button/SnapFontButton;->e0:I
+    iget v2, p0, Lcom/snap/ui/view/button/SnapFontButton;->e0:I
 
-    if-le v1, p2, :cond_1
+    if-le v2, p2, :cond_1
 
-    add-int/lit8 v1, p2, -0x1
+    add-int/lit8 v2, p2, -0x1
 
     goto :goto_1
 
     :cond_1
-    if-ne v1, p2, :cond_2
+    if-ne v2, p2, :cond_2
 
-    sub-int/2addr v1, v0
-
-    :cond_2
-    :goto_1
-    const/4 v2, 0x2
+    sub-int/2addr v2, v1
 
     .line 22
-    invoke-static {p0, v1, p2, v0, v2}, Ldbk;->g(Landroid/widget/TextView;IIII)V
+    :cond_2
+    :goto_1
+    invoke-static {p0, v2, p2, v1, v0}, LMC8;->E1(Landroid/widget/TextView;IIII)V
 
     goto :goto_2
 
     .line 23
     :cond_3
-    invoke-static {p0}, Ldbk;->h(Landroid/widget/TextView;)V
+    invoke-static {p0}, LMC8;->I1(Landroid/widget/TextView;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -223,7 +223,7 @@
     .line 2
     .line 3
     .line 4
-    iget-object v0, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LRSb;
+    iget-object v0, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LtOc;
 
     .line 5
     .line 6
@@ -258,7 +258,7 @@
     .line 10
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LRSb;
+    iget-object v0, p0, Lcom/snap/ui/view/button/SnapFontButton;->f0:LtOc;
 
     .line 12
     .line 13
@@ -274,7 +274,7 @@
     .locals 0
 
     .line 1
-    invoke-super/range {p0 .. p5}, LrW;->onLayout(ZIIII)V
+    invoke-super/range {p0 .. p5}, LxY;->onLayout(ZIIII)V
 
     .line 2
     .line 3
@@ -282,7 +282,7 @@
     move-object p1, p0
 
     .line 5
-    iget-object p2, p1, Lcom/snap/ui/view/button/SnapFontButton;->f0:LRSb;
+    iget-object p2, p1, Lcom/snap/ui/view/button/SnapFontButton;->f0:LtOc;
 
     .line 6
     .line 7
@@ -309,7 +309,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, LxSg;->a:LBre;
+    sget-object v0, Loeh;->a:LnJe;
 
     .line 2
     .line 3
@@ -347,7 +347,7 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1, p0, p2}, LxSg;->c(Landroid/content/Context;LbXi;I)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {p1, p0, p2}, Loeh;->c(Landroid/content/Context;Ltmj;I)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 13
     .line 14

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bloops/inappreporting/api/AIContentReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'contentType\':r<e>:\'[0]\',\'selfieSource\':r<e>:\'[1]\',\'inputContent\':r?:\'[2]\',\'outputContent\':r?:\'[2]\',\'lensID\':s,\'templateId\':s,\'mlModelId\':s,\'friendUserIds\':a?<s>,\'inputContentList\':a?<r:\'[2]\'>"
     typeReferences = {

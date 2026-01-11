@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LmV8;
+    proxyClass = LO29;
     schema = "\'launchEmailApp\':f|m|(): p<b@>,\'enterComposePage\':f|m|(r:\'[0]\'): p<b@>"
     typeReferences = {
         Lcom/snap/modules/business/EnterComposePageParams;

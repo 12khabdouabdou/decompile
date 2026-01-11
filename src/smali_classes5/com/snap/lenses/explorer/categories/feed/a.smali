@@ -15,7 +15,7 @@
     const/4 v0, 0x2
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
+    invoke-static {v0}, LzHa;->M(I)[I
 
     .line 3
     .line 4

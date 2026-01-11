@@ -1,71 +1,65 @@
 .class public final LP56;
-.super LUVi;
+.super Le57;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lobi;
+.field public a:I
+
+.field public b:Ljg7;
+
+.field public c:I
 
 
 # direct methods
-.method public constructor <init>(LAG8;)V
-    .locals 3
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    new-instance v0, LYVi;
+    const/4 v0, 0x0
 
     .line 5
-    .line 6
-    new-instance v1, LPWi;
+    iput v0, p0, LP56;->a:I
 
+    .line 6
     .line 7
+    const/4 v1, 0x0
+
     .line 8
-    const-class v2, LKxf;
+    iput-object v1, p0, LP56;->b:Ljg7;
 
     .line 9
     .line 10
-    invoke-direct {v1, v2}, LPWi;-><init>(Ljava/lang/reflect/Type;)V
+    iput v0, p0, LP56;->c:I
 
     .line 11
     .line 12
+    iput-object v1, p0, Le57;->unknownFieldData:LPt7;
+
     .line 13
-    invoke-direct {v0, p1, v1}, LYVi;-><init>(LAG8;LPWi;)V
-
     .line 14
+    const/4 v0, -0x1
+
     .line 15
+    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+
     .line 16
-    invoke-static {v0}, LCq9;->c1(Lobi;)Lobi;
-
     .line 17
-    .line 18
-    .line 19
-    move-result-object p1
-
-    .line 20
-    iput-object p1, p0, LP56;->a:Lobi;
-
-    .line 21
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public a(LDB9;)LL56;
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final computeSerializedSize()I
+    .locals 3
 
     .line 1
-    invoke-virtual {p1}, LDB9;->C()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -73,111 +67,191 @@
     move-result v0
 
     .line 5
-    const/16 v1, 0x9
+    iget-object v1, p0, LP56;->b:Ljg7;
 
     .line 6
     .line 7
-    if-ne v0, v1, :cond_0
+    const/4 v2, 0x1
+
+    .line 8
+    if-eqz v1, :cond_0
+
+    .line 9
+    .line 10
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v1
+
+    .line 14
+    add-int/2addr v0, v1
+
+    .line 15
+    :cond_0
+    iget v1, p0, LP56;->a:I
+
+    .line 16
+    .line 17
+    and-int/2addr v1, v2
+
+    .line 18
+    if-eqz v1, :cond_1
+
+    .line 19
+    .line 20
+    const/4 v1, 0x2
+
+    .line 21
+    iget v2, p0, LP56;->c:I
+
+    .line 22
+    .line 23
+    invoke-static {v1, v2}, Lbd3;->i(II)I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    add-int/2addr v1, v0
+
+    .line 28
+    return v1
+
+    .line 29
+    :cond_1
+    return v0
+.end method
+
+.method public final mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
+    .locals 3
+
+    .line 1
+    :cond_0
+    :goto_0
+    invoke-virtual {p1}, LZc3;->v()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    if-eqz v0, :cond_5
+
+    .line 6
+    .line 7
+    const/16 v1, 0xa
 
     .line 8
     .line 9
-    invoke-virtual {p1}, LDB9;->y()V
+    if-eq v0, v1, :cond_3
 
     .line 10
     .line 11
-    .line 12
-    const/4 p1, 0x0
+    const/16 v1, 0x10
 
+    .line 12
     .line 13
-    return-object p1
+    if-eq v0, v1, :cond_1
 
     .line 14
-    :cond_0
-    new-instance v0, LL56;
-
     .line 15
-    .line 16
-    invoke-direct {v0}, LL56;-><init>()V
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
+    .line 16
     .line 17
     .line 18
+    move-result v0
+
     .line 19
-    const/4 v2, 0x1
+    if-nez v0, :cond_0
 
     .line 20
-    iput-boolean v2, p1, LDB9;->b:Z
-
     .line 21
+    goto :goto_1
+
     .line 22
-    invoke-virtual {p1}, LDB9;->b()V
+    :cond_1
+    invoke-virtual {p1}, LZc3;->r()I
 
     .line 23
     .line 24
     .line 25
-    :goto_0
-    invoke-virtual {p1}, LDB9;->i()Z
+    move-result v0
 
     .line 26
-    .line 27
-    .line 28
-    move-result v2
+    const/4 v1, 0x1
 
+    .line 27
+    if-eqz v0, :cond_2
+
+    .line 28
     .line 29
-    if-eqz v2, :cond_3
+    if-eq v0, v1, :cond_2
 
     .line 30
     .line 31
-    invoke-virtual {p1}, LDB9;->w()Ljava/lang/String;
+    const/4 v2, 0x2
 
     .line 32
+    if-eq v0, v2, :cond_2
+
     .line 33
     .line 34
-    move-result-object v2
+    goto :goto_0
 
     .line 35
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :cond_2
+    iput v0, p0, LP56;->c:I
 
     .line 36
     .line 37
-    .line 38
-    const-string v3, "screen_dimension"
+    iget v0, p0, LP56;->a:I
 
+    .line 38
     .line 39
+    or-int/2addr v0, v1
+
     .line 40
-    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    iput v0, p0, LP56;->a:I
 
     .line 41
     .line 42
-    .line 43
-    move-result v2
-
-    .line 44
-    if-nez v2, :cond_1
-
-    .line 45
-    .line 46
-    invoke-virtual {p1}, LDB9;->K()V
-
-    .line 47
-    .line 48
-    .line 49
     goto :goto_0
 
-    .line 50
-    :cond_1
-    invoke-virtual {p1}, LDB9;->C()I
+    .line 43
+    :cond_3
+    iget-object v0, p0, LP56;->b:Ljg7;
 
+    .line 44
+    .line 45
+    if-nez v0, :cond_4
+
+    .line 46
+    .line 47
+    new-instance v0, Ljg7;
+
+    .line 48
+    .line 49
+    invoke-direct {v0}, Ljg7;-><init>()V
+
+    .line 50
     .line 51
     .line 52
-    .line 53
-    move-result v2
+    iput-object v0, p0, LP56;->b:Ljg7;
 
+    .line 53
     .line 54
-    if-ne v2, v1, :cond_2
+    :cond_4
+    iget-object v0, p0, LP56;->b:Ljg7;
 
     .line 55
     .line 56
-    invoke-virtual {p1}, LDB9;->y()V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     .line 57
     .line 58
@@ -185,173 +259,60 @@
     goto :goto_0
 
     .line 60
-    :cond_2
-    iget-object v2, p0, LP56;->a:Lobi;
-
-    .line 61
-    .line 62
-    invoke-interface {v2}, Lobi;->get()Ljava/lang/Object;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object v2
-
-    .line 66
-    check-cast v2, LUVi;
-
-    .line 67
-    .line 68
-    invoke-virtual {v2, p1}, LUVi;->read(LDB9;)Ljava/lang/Object;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object v2
-
-    .line 72
-    check-cast v2, LKxf;
-
-    .line 73
-    .line 74
-    iput-object v2, v0, LL56;->a:LKxf;
-
-    .line 75
-    .line 76
-    goto :goto_0
-
-    .line 77
-    :cond_3
-    invoke-virtual {p1}, LDB9;->g()V
-
-    .line 78
-    .line 79
-    .line 80
-    return-object v0
+    :cond_5
+    :goto_1
+    return-object p0
 .end method
 
-.method public b(LaC9;LL56;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final writeTo(Lbd3;)V
+    .locals 2
 
     .line 1
-    if-nez p2, :cond_0
+    iget-object v0, p0, LP56;->b:Ljg7;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LaC9;->j()LaC9;
+    const/4 v1, 0x1
 
     .line 4
+    if-eqz v0, :cond_0
+
     .line 5
     .line 6
-    return-void
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 7
-    :cond_0
-    const/4 v0, 0x1
-
     .line 8
-    iput-boolean v0, p1, LaC9;->Y:Z
-
     .line 9
+    :cond_0
+    iget v0, p0, LP56;->a:I
+
     .line 10
-    invoke-virtual {p1}, LaC9;->c()V
-
     .line 11
-    .line 12
-    .line 13
-    iget-object v0, p2, LL56;->a:LKxf;
+    and-int/2addr v0, v1
 
-    .line 14
-    .line 15
+    .line 12
     if-eqz v0, :cond_1
+
+    .line 13
+    .line 14
+    const/4 v0, 0x2
+
+    .line 15
+    iget v1, p0, LP56;->c:I
 
     .line 16
     .line 17
-    const-string v0, "screen_dimension"
+    invoke-virtual {p1, v0, v1}, Lbd3;->I(II)V
 
     .line 18
     .line 19
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
-
     .line 20
+    :cond_1
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
     .line 21
     .line 22
-    iget-object v0, p0, LP56;->a:Lobi;
-
     .line 23
-    .line 24
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v0
-
-    .line 28
-    check-cast v0, LUVi;
-
-    .line 29
-    .line 30
-    iget-object p2, p2, LL56;->a:LKxf;
-
-    .line 31
-    .line 32
-    invoke-virtual {v0, p1, p2}, LUVi;->write(LaC9;Ljava/lang/Object;)V
-
-    .line 33
-    .line 34
-    .line 35
-    :cond_1
-    invoke-virtual {p1}, LaC9;->g()V
-
-    .line 36
-    .line 37
-    .line 38
-    return-void
-.end method
-
-.method public bridge synthetic read(LDB9;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p1}, LP56;->a(LDB9;)LL56;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public bridge synthetic write(LaC9;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    check-cast p2, LL56;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1, p2}, LP56;->b(LaC9;LL56;)V
-
-    .line 4
-    .line 5
-    .line 6
     return-void
 .end method

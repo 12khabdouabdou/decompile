@@ -1,29 +1,63 @@
 .class public final Ld3a;
-.super Lf3a;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:Ld3a;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'config\':r?:\'[0]\',\'lensExplorerAdapter\':r?:\'[1]\',\'pageLauncher\':r?:\'[2]\'"
+    typeReferences = {
+        Lcom/snap/modules/snap_editor_lens_tool/LensExplorerConfig;,
+        Lcom/snap/modules/snap_editor_lens_tool/LensExplorerAdapter;,
+        Lcom/snap/composer/page_launcher/IPageLauncher;
+    }
+.end annotation
+
+
+# instance fields
+.field private _config:Lcom/snap/modules/snap_editor_lens_tool/LensExplorerConfig;
+
+.field private _lensExplorerAdapter:Lcom/snap/modules/snap_editor_lens_tool/LensExplorerAdapter;
+
+.field private _pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
 
 
 # direct methods
-.method static constructor <clinit>()V
+.method public constructor <init>()V
     .locals 1
 
     .line 1
-    new-instance v0, Ld3a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
 
     .line 2
+    iput-object v0, p0, Ld3a;->_config:Lcom/snap/modules/snap_editor_lens_tool/LensExplorerConfig;
+
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    iput-object v0, p0, Ld3a;->_lensExplorerAdapter:Lcom/snap/modules/snap_editor_lens_tool/LensExplorerAdapter;
 
     .line 4
+    iput-object v0, p0, Ld3a;->_pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/snap/modules/snap_editor_lens_tool/LensExplorerConfig;Lcom/snap/modules/snap_editor_lens_tool/LensExplorerAdapter;Lcom/snap/composer/page_launcher/IPageLauncher;)V
+    .locals 0
+
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
-    sput-object v0, Ld3a;->a:Ld3a;
+    iput-object p1, p0, Ld3a;->_config:Lcom/snap/modules/snap_editor_lens_tool/LensExplorerConfig;
 
     .line 7
+    iput-object p2, p0, Ld3a;->_lensExplorerAdapter:Lcom/snap/modules/snap_editor_lens_tool/LensExplorerAdapter;
+
     .line 8
+    iput-object p3, p0, Ld3a;->_pageLauncher:Lcom/snap/composer/page_launcher/IPageLauncher;
+
     return-void
 .end method

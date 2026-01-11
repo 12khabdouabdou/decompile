@@ -1,27 +1,27 @@
 .class public final Lcom/snap/tinsel/lib/durablejob/TinselScanContentJob;
-.super LqB6;
+.super LOE6;
 .source "SourceFile"
 
 
 # annotations
 .annotation runtime Lcom/snap/durablejob/DurableJobIdentifier;
     identifier = "Tinsel Scan Content Job"
-    metadataType = LzDi;
+    metadataType = Lb3j;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "LqB6;"
+        "LOE6;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(LtB6;LzDi;)V
+.method public constructor <init>(LRE6;Lb3j;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, LqB6;-><init>(LtB6;Ljava/lang/Object;)V
+    invoke-direct {p0, p1, p2}, LOE6;-><init>(LRE6;Ljava/lang/Object;)V
 
     .line 2
     .line 3

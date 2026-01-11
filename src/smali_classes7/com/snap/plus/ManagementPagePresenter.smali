@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LCTa;
+    proxyClass = Lo6b;
     schema = "\'switchToManagement\':f|m|(b)"
     typeReferences = {}
 .end annotation

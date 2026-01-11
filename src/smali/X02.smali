@@ -2,14 +2,35 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LSfd;
+
 
 # instance fields
-.field public final a:Ljava/util/LinkedHashMap;
+.field public final synthetic a:LY02;
+
+.field public final synthetic b:Labf;
+
+.field public final synthetic c:Lujf;
+
+.field public final synthetic d:I
+
+.field public final synthetic e:Lujf;
+
+.field public final synthetic f:Z
+
+.field public final synthetic g:Z
+
+.field public final synthetic h:Z
+
+.field public final synthetic i:LF77;
+
+.field public final synthetic j:Z
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 7
+.method public constructor <init>(LY02;Labf;Lujf;ILujf;ZZZLF77;Z)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -17,190 +38,112 @@
     .line 2
     .line 3
     .line 4
-    sget-object v0, LtW1;->Z:LtW1;
+    iput-object p1, p0, LX02;->a:LY02;
 
     .line 5
     .line 6
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iput-object p2, p0, LX02;->b:Labf;
 
     .line 7
     .line 8
+    iput-object p3, p0, LX02;->c:Lujf;
+
     .line 9
-    const-string v0, "CameraModeIconLocationOnScreenProviderImpl"
-
     .line 10
-    .line 11
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iput p4, p0, LX02;->d:I
 
+    .line 11
     .line 12
+    iput-object p5, p0, LX02;->e:Lujf;
+
     .line 13
     .line 14
-    sget-object v0, Lrn0;->a:Lrn0;
+    iput-boolean p6, p0, LX02;->f:Z
 
     .line 15
     .line 16
-    invoke-static {}, Lc12;->values()[Lc12;
+    iput-boolean p7, p0, LX02;->g:Z
 
     .line 17
     .line 18
-    .line 19
-    move-result-object v0
+    iput-boolean p8, p0, LX02;->h:Z
 
+    .line 19
     .line 20
-    new-instance v1, Ljava/util/LinkedHashMap;
+    iput-object p9, p0, LX02;->i:LF77;
 
     .line 21
     .line 22
-    array-length v2, v0
+    iput-boolean p10, p0, LX02;->j:Z
 
     .line 23
-    invoke-static {v2}, LFdb;->d0(I)I
-
     .line 24
-    .line 25
-    .line 26
-    move-result v2
-
-    .line 27
-    const/16 v3, 0x10
-
-    .line 28
-    .line 29
-    if-ge v2, v3, :cond_0
-
-    .line 30
-    .line 31
-    const/16 v2, 0x10
-
-    .line 32
-    .line 33
-    :cond_0
-    invoke-direct {v1, v2}, Ljava/util/LinkedHashMap;-><init>(I)V
-
-    .line 34
-    .line 35
-    .line 36
-    array-length v2, v0
-
-    .line 37
-    const/4 v3, 0x0
-
-    .line 38
-    :goto_0
-    if-ge v3, v2, :cond_1
-
-    .line 39
-    .line 40
-    aget-object v4, v0, v3
-
-    .line 41
-    .line 42
-    sget-object v5, Lt12;->a:Landroid/graphics/Rect;
-
-    .line 43
-    .line 44
-    new-instance v6, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 45
-    .line 46
-    invoke-direct {v6, v5}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
-
-    .line 47
-    .line 48
-    .line 49
-    invoke-interface {v1, v4, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 50
-    .line 51
-    .line 52
-    add-int/lit8 v3, v3, 0x1
-
-    .line 53
-    .line 54
-    goto :goto_0
-
-    .line 55
-    :cond_1
-    new-instance v0, Ljava/util/LinkedHashMap;
-
-    .line 56
-    .line 57
-    invoke-direct {v0, v1}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
-
-    .line 58
-    .line 59
-    .line 60
-    iput-object v0, p0, LX02;->a:Ljava/util/LinkedHashMap;
-
-    .line 61
-    .line 62
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lc12;)[I
-    .locals 1
+.method public final execute()V
+    .locals 10
 
     .line 1
-    iget-object v0, p0, LX02;->a:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, LX02;->a:LY02;
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v1, v0, LY02;->I:LJp0;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object p1
+    iget-boolean v1, v0, LY02;->T:Z
 
+    .line 6
     .line 7
-    check-cast p1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    if-eqz v1, :cond_0
 
     .line 8
     .line 9
-    if-eqz p1, :cond_0
+    iget-object v1, p0, LX02;->b:Labf;
 
     .line 10
     .line 11
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->d1()Ljava/lang/Object;
+    iget-boolean v6, p0, LX02;->g:Z
 
     .line 12
     .line 13
-    .line 14
-    move-result-object p1
+    iget-boolean v7, p0, LX02;->h:Z
 
+    .line 14
     .line 15
-    check-cast p1, Landroid/graphics/Rect;
+    iget-object v2, p0, LX02;->c:Lujf;
 
     .line 16
     .line 17
-    if-eqz p1, :cond_0
+    iget v3, p0, LX02;->d:I
 
     .line 18
     .line 19
-    iget v0, p1, Landroid/graphics/Rect;->left:I
+    iget-object v4, p0, LX02;->e:Lujf;
 
     .line 20
     .line 21
-    iget p1, p1, Landroid/graphics/Rect;->top:I
+    iget-boolean v5, p0, LX02;->f:Z
 
     .line 22
     .line 23
-    filled-new-array {v0, p1}, [I
+    iget-object v8, p0, LX02;->i:LF77;
 
     .line 24
     .line 25
-    .line 26
-    move-result-object p1
+    iget-boolean v9, p0, LX02;->j:Z
 
+    .line 26
     .line 27
-    return-object p1
+    invoke-static/range {v0 .. v9}, LY02;->a(LY02;Labf;Lujf;ILujf;ZZZLF77;Z)V
 
     .line 28
-    :cond_0
-    const/4 p1, 0x0
-
     .line 29
-    return-object p1
+    .line 30
+    :cond_0
+    return-void
 .end method

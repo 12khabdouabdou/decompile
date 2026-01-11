@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'FHP\':\'fhp\',\'FST\':\'fst\',\'MY_PROFILE\':\'my_profile\',\'FRIEND_PROFILE\':\'friend_profile\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

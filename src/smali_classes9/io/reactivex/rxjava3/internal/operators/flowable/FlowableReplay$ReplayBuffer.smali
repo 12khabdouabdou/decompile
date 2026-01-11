@@ -24,10 +24,10 @@
 
 
 # virtual methods
-.method public abstract c(Ljava/lang/Throwable;)V
+.method public abstract b()V
 .end method
 
-.method public abstract d()V
+.method public abstract d(Ljava/lang/Throwable;)V
 .end method
 
 .method public abstract h(Ljava/lang/Object;)V

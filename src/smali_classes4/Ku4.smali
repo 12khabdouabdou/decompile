@@ -4,35 +4,15 @@
 
 
 # instance fields
-.field public final a:LGZ4;
+.field public final a:LYRg;
 
-.field public final b:LRZ4;
+.field public final b:Lz45;
 
-.field public final c:LBlj;
-
-.field public final d:LFY4;
-
-.field public final e:LOS4;
-
-.field public final f:Lvz3;
-
-.field public final g:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final h:LZS4;
-
-.field public final i:Lru4;
-
-.field public final j:Lru4;
-
-.field public final k:Lru4;
-
-.field public final l:Lru4;
-
-.field public final m:Lru4;
+.field public final c:LAt4;
 
 
 # direct methods
-.method public constructor <init>(LRZ4;LFY4;LGZ4;LBlj;LZS4;Lvz3;LOS4;Lio/reactivex/rxjava3/disposables/CompositeDisposable;)V
+.method public constructor <init>(Lz45;LYRg;)V
     .locals 0
 
     .line 1
@@ -41,121 +21,30 @@
     .line 2
     .line 3
     .line 4
-    iput-object p3, p0, LKu4;->a:LGZ4;
+    iput-object p2, p0, LKu4;->a:LYRg;
 
     .line 5
     .line 6
-    iput-object p1, p0, LKu4;->b:LRZ4;
+    iput-object p1, p0, LKu4;->b:Lz45;
 
     .line 7
     .line 8
-    iput-object p4, p0, LKu4;->c:LBlj;
+    new-instance p1, LAt4;
 
     .line 9
     .line 10
-    iput-object p2, p0, LKu4;->d:LFY4;
+    const/16 p2, 0x9
 
     .line 11
     .line 12
-    iput-object p7, p0, LKu4;->e:LOS4;
+    invoke-direct {p1, p2, p0}, LAt4;-><init>(ILjava/lang/Object;)V
 
     .line 13
     .line 14
-    iput-object p6, p0, LKu4;->f:Lvz3;
-
     .line 15
+    iput-object p1, p0, LKu4;->c:LAt4;
+
     .line 16
-    iput-object p8, p0, LKu4;->g:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 17
-    .line 18
-    iput-object p5, p0, LKu4;->h:LZS4;
-
-    .line 19
-    .line 20
-    new-instance p1, Lru4;
-
-    .line 21
-    .line 22
-    const/4 p2, 0x1
-
-    .line 23
-    const/16 p3, 0x8
-
-    .line 24
-    .line 25
-    invoke-direct {p1, p0, p2, p3}, Lru4;-><init>(Ljava/lang/Object;II)V
-
-    .line 26
-    .line 27
-    .line 28
-    iput-object p1, p0, LKu4;->i:Lru4;
-
-    .line 29
-    .line 30
-    new-instance p1, Lru4;
-
-    .line 31
-    .line 32
-    const/4 p2, 0x2
-
-    .line 33
-    invoke-direct {p1, p0, p2, p3}, Lru4;-><init>(Ljava/lang/Object;II)V
-
-    .line 34
-    .line 35
-    .line 36
-    iput-object p1, p0, LKu4;->j:Lru4;
-
-    .line 37
-    .line 38
-    new-instance p1, Lru4;
-
-    .line 39
-    .line 40
-    const/4 p2, 0x3
-
-    .line 41
-    invoke-direct {p1, p0, p2, p3}, Lru4;-><init>(Ljava/lang/Object;II)V
-
-    .line 42
-    .line 43
-    .line 44
-    iput-object p1, p0, LKu4;->k:Lru4;
-
-    .line 45
-    .line 46
-    new-instance p1, Lru4;
-
-    .line 47
-    .line 48
-    const/4 p2, 0x0
-
-    .line 49
-    invoke-direct {p1, p0, p2, p3}, Lru4;-><init>(Ljava/lang/Object;II)V
-
-    .line 50
-    .line 51
-    .line 52
-    iput-object p1, p0, LKu4;->l:Lru4;
-
-    .line 53
-    .line 54
-    new-instance p1, Lru4;
-
-    .line 55
-    .line 56
-    const/4 p2, 0x4
-
-    .line 57
-    invoke-direct {p1, p0, p2, p3}, Lru4;-><init>(Ljava/lang/Object;II)V
-
-    .line 58
-    .line 59
-    .line 60
-    iput-object p1, p0, LKu4;->m:Lru4;
-
-    .line 61
-    .line 62
     return-void
 .end method

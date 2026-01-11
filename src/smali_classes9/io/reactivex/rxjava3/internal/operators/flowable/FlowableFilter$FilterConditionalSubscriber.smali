@@ -163,7 +163,7 @@
 
     .line 6
     .line 7
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableConditionalSubscriber;->b:Lc7i;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/subscribers/BasicFuseableConditionalSubscriber;->b:Ltvi;
 
     .line 8
     .line 9
@@ -171,7 +171,7 @@
 
     .line 10
     .line 11
-    invoke-interface {p1, v0, v1}, Lc7i;->l(J)V
+    invoke-interface {p1, v0, v1}, Ltvi;->l(J)V
 
     .line 12
     .line 13
@@ -244,7 +244,7 @@
 
     .line 26
     .line 27
-    invoke-interface {v0, v1, v2}, Lc7i;->l(J)V
+    invoke-interface {v0, v1, v2}, Ltvi;->l(J)V
 
     .line 28
     .line 29

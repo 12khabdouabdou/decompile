@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field final faceCache:LT4k;
+.field final faceCache:LUuk;
 
 .field final nativeSymbolTableHandle:J
 
@@ -33,11 +33,11 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, LT4k;
+    new-instance v0, LUuk;
 
-    invoke-direct {v0}, LT4k;-><init>()V
+    invoke-direct {v0}, LUuk;-><init>()V
 
-    iput-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LT4k;
+    iput-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LUuk;
 
     const/4 v0, 0x0
 
@@ -58,11 +58,11 @@
     .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, LT4k;
+    new-instance v0, LUuk;
 
-    invoke-direct {v0}, LT4k;-><init>()V
+    invoke-direct {v0}, LUuk;-><init>()V
 
-    iput-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LT4k;
+    iput-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LUuk;
 
     const/4 v0, 0x0
 
@@ -128,11 +128,11 @@
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    new-instance v0, LT4k;
+    new-instance v0, LUuk;
 
-    invoke-direct {v0}, LT4k;-><init>()V
+    invoke-direct {v0}, LUuk;-><init>()V
 
-    iput-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LT4k;
+    iput-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LUuk;
 
     const/4 v0, 0x0
 
@@ -519,7 +519,7 @@
     const/4 v0, 0x1
 
     .line 2
-    invoke-static {}, Ll3k;->values()[Ll3k;
+    invoke-static {}, Lntk;->values()[Lntk;
 
     move-result-object v1
 
@@ -535,12 +535,12 @@
     aget-object v5, v1, v4
 
     .line 3
-    iget v6, v5, Ll3k;->a:I
+    iget v6, v5, Lntk;->a:I
 
     if-ne v6, p1, :cond_9
 
     .line 4
-    iget-object p1, v5, Ll3k;->b:Ljava/lang/Class;
+    iget-object p1, v5, Lntk;->b:Ljava/lang/Class;
 
     if-nez p1, :cond_0
 
@@ -562,7 +562,7 @@
 
     .line 5
     :cond_2
-    iget-object v2, v5, Ll3k;->c:Ljava/lang/String;
+    iget-object v2, v5, Lntk;->c:Ljava/lang/String;
 
     if-nez v2, :cond_4
 
@@ -1192,7 +1192,7 @@
     move-result v0
 
     .line 7
-    invoke-static {}, Ln3k;->values()[Ln3k;
+    invoke-static {}, Lptk;->values()[Lptk;
 
     .line 8
     .line 9
@@ -1218,7 +1218,7 @@
 
     .line 17
     .line 18
-    iget v6, v5, Ln3k;->a:I
+    iget v6, v5, Lptk;->a:I
 
     .line 19
     .line 20
@@ -1327,7 +1327,7 @@
 
     .line 66
     :pswitch_4
-    iget-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LT4k;
+    iget-object v0, p0, Lcom/google/ar/core/Session;->faceCache:LUuk;
 
     .line 67
     .line 68
@@ -1335,7 +1335,7 @@
 
     .line 69
     :try_start_0
-    iget-object v1, v0, LT4k;->a:Lx18;
+    iget-object v1, v0, LUuk;->a:Lz78;
 
     .line 70
     .line 71
@@ -1372,7 +1372,7 @@
     .line 86
     .line 87
     .line 88
-    iget-object p1, v0, LT4k;->a:Lx18;
+    iget-object p1, v0, LUuk;->a:Lz78;
 
     .line 89
     .line 90
@@ -1594,7 +1594,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Ln3k;->values()[Ln3k;
+    invoke-static {}, Lptk;->values()[Lptk;
 
     .line 2
     .line 3
@@ -1609,7 +1609,7 @@
 
     .line 7
     :goto_0
-    sget-object v3, Ln3k;->c:Ln3k;
+    sget-object v3, Lptk;->c:Lptk;
 
     .line 8
     .line 9
@@ -1621,7 +1621,7 @@
 
     .line 12
     .line 13
-    iget-object v5, v4, Ln3k;->b:Ljava/lang/Class;
+    iget-object v5, v4, Lptk;->b:Ljava/lang/Class;
 
     .line 14
     .line 15
@@ -1670,7 +1670,7 @@
 
     .line 33
     .line 34
-    iget v2, v4, Ln3k;->a:I
+    iget v2, v4, Lptk;->a:I
 
     .line 35
     .line 36

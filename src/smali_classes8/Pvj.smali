@@ -2,127 +2,76 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lcom/snap/venueeditor/VenueEditorDismissCallback;
-
-
-# instance fields
-.field public final synthetic a:LSvj;
-
-.field public final synthetic b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-.field public final synthetic c:Z
-
 
 # direct methods
-.method public constructor <init>(LSvj;Lio/reactivex/rxjava3/disposables/CompositeDisposable;Z)V
-    .locals 0
+.method public static a(LPvj;LZ69;Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileViewModel;LIvj;LvF3;I)Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileView;
+    .locals 8
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    and-int/lit8 p5, p5, 0x8
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LPvj;->a:LSvj;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LPvj;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 7
-    .line 8
-    iput-boolean p3, p0, LPvj;->c:Z
-
-    .line 9
-    .line 10
-    return-void
-.end method
-
-
-# virtual methods
-.method public final dismissEditorRoot(Z)V
-    .locals 4
-
-    .line 1
-    if-eqz p1, :cond_0
-
-    .line 2
-    .line 3
-    iget-object p1, p0, LPvj;->a:LSvj;
+    if-eqz p5, :cond_0
 
     .line 4
     .line 5
-    iget-object v0, p1, LSvj;->p:LBre;
+    const/4 p4, 0x0
 
     .line 6
+    :cond_0
+    move-object v5, p4
+
     .line 7
-    invoke-virtual {v0}, LBre;->i()Lgn0;
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    new-instance v1, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileView;
 
     .line 11
-    new-instance v1, Lqd0;
-
     .line 12
-    .line 13
-    iget-boolean v2, p0, LPvj;->c:Z
+    invoke-interface {p1}, LZ69;->getContext()Landroid/content/Context;
 
+    .line 13
     .line 14
     .line 15
-    const/16 v3, 0x19
+    move-result-object p0
 
     .line 16
-    .line 17
-    invoke-direct {v1, v2, p1, v3}, Lqd0;-><init>(ZLjava/lang/Object;I)V
+    invoke-direct {v1, p0}, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileView;-><init>(Landroid/content/Context;)V
 
+    .line 17
     .line 18
     .line 19
-    .line 20
-    iget-object p1, p0, LPvj;->b:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    invoke-static {}, Lcom/snap/unifiedpublicprofile/UnifiedPublicProfileView;->access$getComponentPath$cp()Ljava/lang/String;
 
+    .line 20
     .line 21
     .line 22
-    invoke-static {v0, v1, p1}, LLZj;->V(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    move-result-object v2
 
     .line 23
+    const/4 v7, 0x0
+
     .line 24
+    const/4 v6, 0x0
+
     .line 25
-    :cond_0
-    return-void
-.end method
+    move-object v0, p1
 
-.method public final pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
+    .line 26
+    move-object v3, p2
 
-    .line 1
-    sget-object v0, LzB3;->n:LyB3;
+    .line 27
+    move-object v4, p3
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 28
+    invoke-interface/range {v0 .. v7}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
-    .line 4
-    .line 5
-    .line 6
-    sget-object v0, LyB3;->b:LzB3;
-
-    .line 7
-    .line 8
-    const-class v1, Lcom/snap/venueeditor/VenueEditorDismissCallback;
-
-    .line 9
-    .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result p1
-
-    .line 14
-    return p1
+    .line 29
+    .line 30
+    .line 31
+    return-object v1
 .end method

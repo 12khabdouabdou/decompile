@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lvy1;
+.implements LJB1;
 
 
 # static fields
@@ -17,13 +17,13 @@
 
 .field private offset:J
 
-.field private parent:LRP3;
+.field private parent:LJT3;
 
 .field replacers:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lvy1;",
+            "LJB1;",
             ">;"
         }
     .end annotation
@@ -83,7 +83,7 @@
 
 
 # virtual methods
-.method public addAndReplace(Lvy1;)V
+.method public addAndReplace(LJB1;)V
     .locals 3
 
     .line 1
@@ -91,7 +91,7 @@
 
     .line 2
     .line 3
-    invoke-interface {p1}, Lvy1;->getSize()J
+    invoke-interface {p1}, LJB1;->getSize()J
 
     .line 4
     .line 5
@@ -99,7 +99,7 @@
     move-result-wide v1
 
     .line 7
-    invoke-static {v1, v2}, Lskk;->s(J)I
+    invoke-static {v1, v2}, LXJk;->f(J)I
 
     .line 8
     .line 9
@@ -402,11 +402,11 @@
     move-result-object v1
 
     .line 69
-    check-cast v1, Lvy1;
+    check-cast v1, LJB1;
 
     .line 70
     .line 71
-    invoke-interface {v1, p1}, Lvy1;->getBox(Ljava/nio/channels/WritableByteChannel;)V
+    invoke-interface {v1, p1}, LJB1;->getBox(Ljava/nio/channels/WritableByteChannel;)V
 
     .line 72
     .line 73
@@ -467,11 +467,11 @@
     return-wide v0
 .end method
 
-.method public getParent()LRP3;
+.method public getParent()LJT3;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/coremedia/iso/boxes/FreeBox;->parent:LRP3;
+    iget-object v0, p0, Lcom/coremedia/iso/boxes/FreeBox;->parent:LJT3;
 
     .line 2
     .line 3
@@ -541,11 +541,11 @@
     move-result-object v3
 
     .line 28
-    check-cast v3, Lvy1;
+    check-cast v3, LJB1;
 
     .line 29
     .line 30
-    invoke-interface {v3}, Lvy1;->getSize()J
+    invoke-interface {v3}, LJB1;->getSize()J
 
     .line 31
     .line 32
@@ -600,7 +600,7 @@
     return v0
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -609,7 +609,7 @@
     .end annotation
 
     .line 1
-    invoke-interface {p1}, LI85;->position()J
+    invoke-interface {p1}, LVe5;->position()J
 
     .line 2
     .line 3
@@ -648,7 +648,7 @@
 
     .line 19
     .line 20
-    invoke-interface {p1}, LI85;->position()J
+    invoke-interface {p1}, LVe5;->position()J
 
     .line 21
     .line 22
@@ -656,7 +656,7 @@
     move-result-wide v0
 
     .line 24
-    invoke-interface {p1, v0, v1, p3, p4}, LI85;->u2(JJ)Ljava/nio/ByteBuffer;
+    invoke-interface {p1, v0, v1, p3, p4}, LVe5;->m2(JJ)Ljava/nio/ByteBuffer;
 
     .line 25
     .line 26
@@ -668,7 +668,7 @@
 
     .line 29
     .line 30
-    invoke-interface {p1}, LI85;->position()J
+    invoke-interface {p1}, LVe5;->position()J
 
     .line 31
     .line 32
@@ -679,7 +679,7 @@
     add-long/2addr v0, p3
 
     .line 35
-    invoke-interface {p1, v0, v1}, LI85;->a1(J)V
+    invoke-interface {p1, v0, v1}, LVe5;->N0(J)V
 
     .line 36
     .line 37
@@ -688,7 +688,7 @@
 
     .line 39
     :cond_0
-    invoke-static {p3, p4}, Lskk;->s(J)I
+    invoke-static {p3, p4}, LXJk;->f(J)I
 
     .line 40
     .line 41
@@ -708,7 +708,7 @@
 
     .line 48
     .line 49
-    invoke-interface {p1, p2}, LI85;->read(Ljava/nio/ByteBuffer;)I
+    invoke-interface {p1, p2}, LVe5;->read(Ljava/nio/ByteBuffer;)I
 
     .line 50
     .line 51
@@ -727,11 +727,11 @@
     return-void
 .end method
 
-.method public setParent(LRP3;)V
+.method public setParent(LJT3;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/coremedia/iso/boxes/FreeBox;->parent:LRP3;
+    iput-object p1, p0, Lcom/coremedia/iso/boxes/FreeBox;->parent:LJT3;
 
     .line 2
     .line 3

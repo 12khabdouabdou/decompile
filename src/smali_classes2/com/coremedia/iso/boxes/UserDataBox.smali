@@ -43,7 +43,7 @@
     return-void
 .end method
 
-.method public parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+.method public parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -52,7 +52,7 @@
     .end annotation
 
     .line 1
-    invoke-super/range {p0 .. p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->parse(LI85;Ljava/nio/ByteBuffer;JLwy1;)V
+    invoke-super/range {p0 .. p5}, Lcom/googlecode/mp4parser/AbstractContainerBox;->parse(LVe5;Ljava/nio/ByteBuffer;JLKB1;)V
 
     .line 2
     .line 3

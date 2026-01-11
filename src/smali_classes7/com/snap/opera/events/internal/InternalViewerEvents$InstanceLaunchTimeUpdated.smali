@@ -1,5 +1,5 @@
 .class public final Lcom/snap/opera/events/internal/InternalViewerEvents$InstanceLaunchTimeUpdated;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -14,7 +14,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -167,7 +167,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v3}, LBv7;->q(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24

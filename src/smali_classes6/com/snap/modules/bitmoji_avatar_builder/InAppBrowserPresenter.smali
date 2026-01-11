@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Ld99;
+    proxyClass = LXg9;
     schema = "\'present\':f|m|(s): g<c>:\'[0]\'<s>,\'presentSystemBrowser\':f|m|(s)"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;

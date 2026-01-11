@@ -11,11 +11,11 @@
 
 .field public final synthetic b:Lcom/google/ar/core/j;
 
-.field public final synthetic c:LB6k;
+.field public final synthetic c:LCwk;
 
 
 # direct methods
-.method public constructor <init>(LB6k;Landroid/content/Context;Lcom/google/ar/core/j;)V
+.method public constructor <init>(LCwk;Landroid/content/Context;Lcom/google/ar/core/j;)V
     .locals 0
 
     .line 1
@@ -32,7 +32,7 @@
 
     .line 7
     .line 8
-    iput-object p1, p0, Lcom/google/ar/core/b;->c:LB6k;
+    iput-object p1, p0, Lcom/google/ar/core/b;->c:LCwk;
 
     .line 9
     .line 10
@@ -50,11 +50,11 @@
     .line 2
     .line 3
     :try_start_0
-    iget-object v1, p0, Lcom/google/ar/core/b;->c:LB6k;
+    iget-object v1, p0, Lcom/google/ar/core/b;->c:LCwk;
 
     .line 4
     .line 5
-    iget-object v1, v1, LB6k;->c:Lcom/google/ar/core/dependencies/h;
+    iget-object v1, v1, LCwk;->c:Lcom/google/ar/core/dependencies/h;
 
     .line 6
     .line 7

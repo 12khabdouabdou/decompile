@@ -1,94 +1,38 @@
-.class public final Lahd;
+.class public abstract Lahd;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final c:LzGd;
-
-.field public static final d:LzGd;
-
-
-# instance fields
-.field public final a:Ljava/util/HashMap;
-
-.field public final b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public static final synthetic a:I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
     .line 1
-    new-instance v0, LzGd;
+    sget-object v0, LTJb;->Z:LTJb;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    invoke-direct {v0, v1}, LzGd;-><init>(Z)V
-
     .line 5
     .line 6
-    .line 7
-    sput-object v0, Lahd;->c:LzGd;
-
-    .line 8
-    .line 9
-    new-instance v0, LzGd;
-
-    .line 10
-    .line 11
-    const/4 v1, 0x0
-
-    .line 12
-    invoke-direct {v0, v1}, LzGd;-><init>(Z)V
-
-    .line 13
-    .line 14
-    .line 15
-    sput-object v0, Lahd;->d:LzGd;
-
-    .line 16
-    .line 17
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 2
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    new-instance v0, Ljava/util/HashMap;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    const-string v0, "OpportunisticUploader"
 
     .line 7
     .line 8
-    .line 9
-    iput-object v0, p0, Lahd;->a:Ljava/util/HashMap;
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
+    .line 9
     .line 10
     .line 11
-    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 12
     .line 13
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
-
-    .line 14
-    .line 15
-    .line 16
-    iput-object v1, p0, Lahd;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 17
-    .line 18
     return-void
 .end method

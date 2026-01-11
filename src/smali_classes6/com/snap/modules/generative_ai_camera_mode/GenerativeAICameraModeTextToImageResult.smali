@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/generative_ai_camera_mode/GenerativeAICameraModeTextToImageResult;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'boltUrl\':s?,\'encryptionInfo\':r?:\'[0]\',\'prompt\':s?,\'latency\':d@?,\'mlModelType\':s?,\'mediaResponseRequestId\':s?,\'errorCode\':d@?"
     typeReferences = {

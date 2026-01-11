@@ -1,80 +1,92 @@
 .class public final LZTe;
-.super LrE9;
+.super Lsw;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic a:Z
-
-.field public final synthetic b:J
-
-.field public final synthetic c:J
+.field public final X:Ljava/lang/CharSequence;
 
 
 # direct methods
-.method public constructor <init>(ZJJ)V
+.method public constructor <init>(Ljava/lang/CharSequence;Lt08;)V
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, LZTe;->a:Z
+    invoke-direct {p0, p2}, Lsw;-><init>(Ltw;)V
 
     .line 2
     .line 3
-    iput-wide p2, p0, LZTe;->b:J
-
     .line 4
+    iput-object p1, p0, LZTe;->X:Ljava/lang/CharSequence;
+
     .line 5
-    iput-wide p4, p0, LZTe;->c:J
-
     .line 6
-    .line 7
-    const/4 p1, 0x1
-
-    .line 8
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    .line 9
-    .line 10
-    .line 11
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final u(Lsw;)Z
+    .locals 2
 
     .line 1
-    move-object v0, p1
+    instance-of v0, p1, LZTe;
 
     .line 2
-    check-cast v0, LcUe;
-
     .line 3
+    const/4 v1, 0x0
+
     .line 4
-    iget-boolean v5, p0, LZTe;->a:Z
+    if-eqz v0, :cond_0
 
     .line 5
     .line 6
-    iget-wide v1, p0, LZTe;->b:J
+    check-cast p1, LZTe;
 
     .line 7
     .line 8
-    iget-wide v3, p0, LZTe;->c:J
+    goto :goto_0
 
     .line 9
+    :cond_0
+    move-object p1, v1
+
     .line 10
-    invoke-interface/range {v0 .. v5}, LcUe;->k0(JJZ)V
+    :goto_0
+    if-eqz p1, :cond_1
 
     .line 11
     .line 12
-    .line 13
-    sget-object p1, Li7j;->a:Li7j;
+    iget-object v1, p1, LZTe;->X:Ljava/lang/CharSequence;
 
+    .line 13
     .line 14
+    :cond_1
+    iget-object p1, p0, LZTe;->X:Ljava/lang/CharSequence;
+
     .line 15
-    return-object p1
+    .line 16
+    invoke-static {p1, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result p1
+
+    .line 20
+    if-eqz p1, :cond_2
+
+    .line 21
+    .line 22
+    const/4 p1, 0x1
+
+    .line 23
+    return p1
+
+    .line 24
+    :cond_2
+    const/4 p1, 0x0
+
+    .line 25
+    return p1
 .end method

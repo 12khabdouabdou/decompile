@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -22,7 +22,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -32,9 +32,9 @@
 
 
 # instance fields
-.field public isSimplifiedLocationShare:LU0k;
+.field public isSimplifiedLocationShare:LPqk;
 
-.field public isUpgradedToLiveOnly:LU0k;
+.field public isUpgradedToLiveOnly:LPqk;
 
 .field public liveLocationSharingSettings:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences$LiveLocationSharingSettings;
 
@@ -46,7 +46,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -71,7 +71,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -134,7 +134,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -147,7 +147,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
 
     move-result-object p0
 
@@ -158,7 +158,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -193,15 +193,15 @@
 
     .line 5
     .line 6
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LPqk;
 
     .line 7
     .line 8
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LPqk;
 
     .line 9
     .line 10
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v0, p0, Le57;->unknownFieldData:LPt7;
 
     .line 11
     .line 12
@@ -219,7 +219,7 @@
     .locals 3
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -238,7 +238,7 @@
     const/4 v2, 0x1
 
     .line 10
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 11
     .line 12
@@ -261,7 +261,7 @@
     const/4 v2, 0x2
 
     .line 20
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 21
     .line 22
@@ -273,7 +273,7 @@
 
     .line 25
     :cond_1
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LU0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LPqk;
 
     .line 26
     .line 27
@@ -284,7 +284,7 @@
     const/4 v2, 0x3
 
     .line 30
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 31
     .line 32
@@ -296,7 +296,7 @@
 
     .line 35
     :cond_2
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LU0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LPqk;
 
     .line 36
     .line 37
@@ -307,7 +307,7 @@
     const/4 v2, 0x4
 
     .line 40
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 41
     .line 42
@@ -325,7 +325,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -334,14 +334,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -352,7 +352,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -375,7 +375,7 @@
     if-eq v0, v1, :cond_1
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -385,43 +385,43 @@
 
     .line 4
     :cond_1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LPqk;
 
     if-nez v0, :cond_2
 
     .line 5
-    new-instance v0, LU0k;
+    new-instance v0, LPqk;
 
-    invoke-direct {v0}, LU0k;-><init>()V
+    invoke-direct {v0}, LPqk;-><init>()V
 
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LPqk;
 
     .line 6
     :cond_2
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LPqk;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
     .line 7
     :cond_3
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LPqk;
 
     if-nez v0, :cond_4
 
     .line 8
-    new-instance v0, LU0k;
+    new-instance v0, LPqk;
 
-    invoke-direct {v0}, LU0k;-><init>()V
+    invoke-direct {v0}, LPqk;-><init>()V
 
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LU0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LPqk;
 
     .line 9
     :cond_4
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LPqk;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
@@ -442,7 +442,7 @@
     :cond_6
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->liveLocationSharingSettings:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences$LiveLocationSharingSettings;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
@@ -463,7 +463,7 @@
     :cond_8
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->locationSharingSettings:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences$LocationSharingSettings;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
@@ -472,7 +472,7 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -492,7 +492,7 @@
     const/4 v1, 0x1
 
     .line 6
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 7
     .line 8
@@ -509,13 +509,13 @@
     const/4 v1, 0x2
 
     .line 14
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 15
     .line 16
     .line 17
     :cond_1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isUpgradedToLiveOnly:LPqk;
 
     .line 18
     .line 19
@@ -526,13 +526,13 @@
     const/4 v1, 0x3
 
     .line 22
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 23
     .line 24
     .line 25
     :cond_2
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LU0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LocationSharingPreferences;->isSimplifiedLocationShare:LPqk;
 
     .line 26
     .line 27
@@ -543,13 +543,13 @@
     const/4 v1, 0x4
 
     .line 30
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 31
     .line 32
     .line 33
     :cond_3
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
 
     .line 34
     .line 35

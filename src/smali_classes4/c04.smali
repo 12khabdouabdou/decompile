@@ -1,31 +1,8 @@
-.class public final Lc04;
+.class public interface abstract Lc04;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lwfi;
-
-.field public final b:LJmi;
-
-
-# direct methods
-.method public constructor <init>(Lwfi;LJmi;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lc04;->a:Lwfi;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lc04;->b:LJmi;
-
-    .line 7
-    .line 8
-    return-void
+# virtual methods
+.method public abstract a(Lio/reactivex/rxjava3/disposables/CompositeDisposable;Lv44;Lj14;Ljava/lang/String;LL4b;)Z
 .end method

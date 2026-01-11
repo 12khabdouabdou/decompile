@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/chat_creative_tools_item/ChatCreativeToolsItemSize;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'width\':d,\'height\':d"
     typeReferences = {}

@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method public final a()LuLb;
+.method public final a()LLZb;
     .locals 1
 
     .line 1
@@ -42,7 +42,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0}, LwLb;->a()LuLb;
+    invoke-virtual {v0}, LNZb;->a()LLZb;
 
     .line 8
     .line 9

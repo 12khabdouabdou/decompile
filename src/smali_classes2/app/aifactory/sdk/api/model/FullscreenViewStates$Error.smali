@@ -27,7 +27,7 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-direct {p0, p1, v0}, Lapp/aifactory/sdk/api/model/FullscreenViewStates;-><init>(Ljava/lang/String;LHr5;)V
+    invoke-direct {p0, p1, v0}, Lapp/aifactory/sdk/api/model/FullscreenViewStates;-><init>(Ljava/lang/String;Lex5;)V
 
     .line 3
     iput-object p2, p0, Lapp/aifactory/sdk/api/model/FullscreenViewStates$Error;->userMessage:Ljava/lang/String;
@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;ILex5;)V
     .locals 1
 
     and-int/lit8 p5, p4, 0x2

@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/filter_item/FilterAttribution;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'icon\':s?,\'name\':s?,\'creator\':s?,\'isSponsored\':b"
     typeReferences = {}

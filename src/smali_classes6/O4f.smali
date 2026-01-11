@@ -1,51 +1,28 @@
 .class public final LO4f;
-.super Lcom/snap/composer/utils/b;
+.super LJdi;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'streaks\':a<r:\'[0]\'>"
-    typeReferences = {
-        LF4f;
-    }
-.end annotation
-
-
 # instance fields
-.field private _streaks:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "LF4f;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "LF4f;",
-            ">;)V"
-        }
-    .end annotation
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
     .line 2
+    invoke-direct {p0, p1, v0}, LJdi;-><init>(Ljava/lang/String;I)V
+
     .line 3
     .line 4
-    iput-object p1, p0, LO4f;->_streaks:Ljava/util/List;
-
     .line 5
+    iput-object p1, p0, LO4f;->c:Ljava/lang/String;
+
     .line 6
+    .line 7
     return-void
 .end method

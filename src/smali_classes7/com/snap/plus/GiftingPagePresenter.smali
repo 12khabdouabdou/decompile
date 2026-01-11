@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lku8;
+    proxyClass = LQA8;
     schema = "\'presentGiftingPage\':f|m|()"
     typeReferences = {}
 .end annotation

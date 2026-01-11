@@ -86,6 +86,9 @@
 .method public abstract queryCachedContentMetadataWithAttribution(Lcom/snapchat/client/mdp_common/MediaContextType;ILcom/snapchat/client/content_manager/QueryCachedContentMetadataCallback;)V
 .end method
 
+.method public abstract queryContentRetrievalMetricsAsync(Lcom/snapchat/client/content_manager/ContentKey;Lcom/snapchat/client/content_manager/ContentRetrievalMetricsCallback;)V
+.end method
+
 .method public abstract queryContentStatus(Lcom/snapchat/client/content_manager/ContentKey;)Lcom/snapchat/client/content_manager/ContentStatus;
 .end method
 

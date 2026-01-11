@@ -79,7 +79,7 @@
 
     .line 22
     .line 23
-    invoke-static {v1}, Ljvc;->a(Landroid/net/ProxyInfo;)Ljvc;
+    invoke-static {v1}, LhKc;->a(Landroid/net/ProxyInfo;)LhKc;
 
     .line 24
     .line 25
@@ -92,7 +92,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0, v1}, Lorg/chromium/net/ProxyChangeListener;->a(Ljvc;)V
+    invoke-virtual {v0, v1}, Lorg/chromium/net/ProxyChangeListener;->a(LhKc;)V
 
     .line 30
     .line 31

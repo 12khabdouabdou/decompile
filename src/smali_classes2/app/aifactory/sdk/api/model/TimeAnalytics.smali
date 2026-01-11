@@ -40,7 +40,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v8}, Lapp/aifactory/sdk/api/model/TimeAnalytics;-><init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;ILHr5;)V
+    invoke-direct/range {v0 .. v8}, Lapp/aifactory/sdk/api/model/TimeAnalytics;-><init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;ILex5;)V
 
     return-void
 .end method
@@ -72,7 +72,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Long;ILex5;)V
     .locals 1
 
     and-int/lit8 p8, p7, 0x1
@@ -308,7 +308,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/TimeAnalytics;->loadingTime:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -321,7 +321,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/TimeAnalytics;->preparingTime:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -334,7 +334,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/TimeAnalytics;->generationTime:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -347,7 +347,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/TimeAnalytics;->loadLatencyMs:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -360,7 +360,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/TimeAnalytics;->showTimeMs:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -373,7 +373,7 @@
 
     iget-object p1, p1, Lapp/aifactory/sdk/api/model/TimeAnalytics;->playTimeMs:Ljava/lang/Long;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

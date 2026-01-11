@@ -29,11 +29,11 @@
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/core/ObservableSource;
+.field public final a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
 
 # direct methods
-.method public constructor <init>(Lio/reactivex/rxjava3/core/ObservableSource;)V
+.method public constructor <init>(Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;)V
     .locals 0
 
     .line 1
@@ -42,7 +42,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCountSingle;->a:Lio/reactivex/rxjava3/core/ObservableSource;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCountSingle;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
     .line 5
     .line 6
@@ -59,7 +59,7 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCountSingle;->a:Lio/reactivex/rxjava3/core/ObservableSource;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCountSingle;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
     .line 4
     .line 5
@@ -71,7 +71,7 @@
     return-object v0
 .end method
 
-.method public final u(Lio/reactivex/rxjava3/core/SingleObserver;)V
+.method public final t(Lio/reactivex/rxjava3/core/SingleObserver;)V
     .locals 1
 
     .line 1
@@ -84,7 +84,7 @@
     .line 4
     .line 5
     .line 6
-    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCountSingle;->a:Lio/reactivex/rxjava3/core/ObservableSource;
+    iget-object p1, p0, Lio/reactivex/rxjava3/internal/operators/observable/ObservableCountSingle;->a:Lio/reactivex/rxjava3/internal/operators/observable/ObservableFilter;
 
     .line 7
     .line 8

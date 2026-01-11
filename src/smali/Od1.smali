@@ -3,203 +3,88 @@
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Lzre;
+# static fields
+.field public static final a:LOd1;
 
-.field public final b:Lio/reactivex/rxjava3/core/Scheduler;
-
-.field public final c:LF06;
-
-.field public final d:Lio/reactivex/rxjava3/core/Scheduler;
-
-.field public final e:Lio/reactivex/rxjava3/core/Scheduler;
-
-.field public final f:LlHe;
-
-.field public final g:Lio/reactivex/rxjava3/internal/schedulers/ImmediateThinScheduler;
-
-.field public final h:Lgn0;
+.field public static final b:Ljava/util/concurrent/atomic/AtomicInteger;
 
 
 # direct methods
-.method public constructor <init>(Lzre;)V
+.method static constructor <clinit>()V
     .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LOd1;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LOd1;->a:Lzre;
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    new-instance v0, Lrd1;
+    sput-object v0, LOd1;->a:LOd1;
 
     .line 7
     .line 8
-    const/4 v1, 0x1
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 9
-    invoke-direct {v0, p0, v1}, Lrd1;-><init>(LOd1;I)V
-
     .line 10
-    .line 11
-    .line 12
-    new-instance v1, LXfi;
+    const/4 v1, 0x0
 
+    .line 11
+    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
+
+    .line 12
     .line 13
     .line 14
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    sput-object v0, LOd1;->b:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 15
     .line 16
-    .line 17
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v0
-
-    .line 21
-    check-cast v0, Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 22
-    .line 23
-    iput-object v0, p0, LOd1;->b:Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 24
-    .line 25
-    check-cast p1, LBre;
-
-    .line 26
-    .line 27
-    invoke-virtual {p1}, LBre;->f()LF06;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v0
-
-    .line 31
-    iput-object v0, p0, LOd1;->c:LF06;
-
-    .line 32
-    .line 33
-    invoke-virtual {v1}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v0
-
-    .line 37
-    check-cast v0, Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 38
-    .line 39
-    iput-object v0, p0, LOd1;->d:Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 40
-    .line 41
-    iput-object v0, p0, LOd1;->e:Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 42
-    .line 43
-    const/4 v1, 0x1
-
-    .line 44
-    invoke-virtual {p0, v0, v1}, LOd1;->b(Lio/reactivex/rxjava3/core/Scheduler;I)LlHe;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v0
-
-    .line 48
-    iput-object v0, p0, LOd1;->f:LlHe;
-
-    .line 49
-    .line 50
-    sget-object v0, Lio/reactivex/rxjava3/internal/schedulers/ImmediateThinScheduler;->c:Lio/reactivex/rxjava3/internal/schedulers/ImmediateThinScheduler;
-
-    .line 51
-    .line 52
-    iput-object v0, p0, LOd1;->g:Lio/reactivex/rxjava3/internal/schedulers/ImmediateThinScheduler;
-
-    .line 53
-    .line 54
-    invoke-virtual {p1}, LBre;->i()Lgn0;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object p1
-
-    .line 58
-    iput-object p1, p0, LOd1;->h:Lgn0;
-
-    .line 59
-    .line 60
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()J
-    .locals 2
-
-    .line 1
-    sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    .line 2
-    .line 3
-    iget-object v1, p0, LOd1;->e:Lio/reactivex/rxjava3/core/Scheduler;
-
-    .line 4
-    .line 5
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-static {v0}, Lio/reactivex/rxjava3/core/Scheduler;->e(Ljava/util/concurrent/TimeUnit;)J
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-wide v0
-
-    .line 12
-    return-wide v0
-.end method
-
-.method public final b(Lio/reactivex/rxjava3/core/Scheduler;I)LlHe;
+.method public final declared-synchronized a()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, LOd1;->a:Lzre;
+    monitor-enter p0
 
     .line 2
+    :try_start_0
+    sget-object v0, LOd1;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+
     .line 3
-    check-cast v0, LBre;
-
     .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
 
+    .line 5
     .line 6
     .line 7
+    move-result v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 8
-    invoke-static {p1, p2}, LnEd;->U(Lio/reactivex/rxjava3/core/Scheduler;I)LlHe;
+    monitor-exit p0
 
     .line 9
+    return v0
+
     .line 10
+    :catchall_0
+    move-exception v0
+
     .line 11
-    move-result-object p1
+    :try_start_1
+    monitor-exit p0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 12
-    return-object p1
+    throw v0
 .end method

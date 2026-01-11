@@ -1,73 +1,66 @@
 .class public final Lyd1;
-.super Ljava/lang/Object;
+.super LSHj;
 .source "SourceFile"
+
+# interfaces
+.implements Lb26;
 
 
 # instance fields
-.field public final a:LYNa;
+.field public final b:LFi1;
 
-.field public final b:I
-
-.field public final c:Ljava/util/HashMap;
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:LCre;
-
-.field public final f:D
-
-.field public final g:D
-
-.field public final h:Lob1;
-
-.field public final i:D
+.field public final c:LmF6;
 
 
 # direct methods
-.method public constructor <init>(LYNa;ILjava/util/HashMap;Ljava/lang/String;LCre;DDLob1;D)V
+.method public constructor <init>(LFi1;LmF6;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, LSHj;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lyd1;->a:LYNa;
+    iput-object p1, p0, Lyd1;->b:LFi1;
 
     .line 5
     .line 6
-    iput p2, p0, Lyd1;->b:I
+    iput-object p2, p0, Lyd1;->c:LmF6;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lyd1;->c:Ljava/util/HashMap;
-
-    .line 9
-    .line 10
-    iput-object p4, p0, Lyd1;->d:Ljava/lang/String;
-
-    .line 11
-    .line 12
-    iput-object p5, p0, Lyd1;->e:LCre;
-
-    .line 13
-    .line 14
-    iput-wide p6, p0, Lyd1;->f:D
-
-    .line 15
-    .line 16
-    iput-wide p8, p0, Lyd1;->g:D
-
-    .line 17
-    .line 18
-    iput-object p10, p0, Lyd1;->h:Lob1;
-
-    .line 19
-    .line 20
-    iput-wide p11, p0, Lyd1;->i:D
-
-    .line 21
-    .line 22
     return-void
+.end method
+
+
+# virtual methods
+.method public final a(LCd1;)Lio/reactivex/rxjava3/core/Single;
+    .locals 1
+
+    .line 1
+    sget v0, Lzd1;->a:I
+
+    .line 2
+    .line 3
+    invoke-super {p0, p1}, LSHj;->a(LCd1;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p1
+
+    .line 7
+    return-object p1
+.end method
+
+.method public final c()Lio/reactivex/rxjava3/core/Completable;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
+
+    .line 2
+    .line 3
+    return-object v0
 .end method

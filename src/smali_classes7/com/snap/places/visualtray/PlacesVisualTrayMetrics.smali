@@ -7,16 +7,16 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Llud;
+    proxyClass = LVKd;
     schema = "\'blizzardLogger\':r:\'[0]\',\'onMetricDataEvent\':g?<c>:\'[1]\'<r:\'[2]\'>,\'onEnterSearchSubject\':g?<c>:\'[3]\'<b@>,\'getSessionIdsHolderObservable\':f?|m|(): g<c>:\'[1]\'<r:\'[4]\'>"
     typeReferences = {
         Lcom/snap/composer/blizzard/Logging;,
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Ljud;,
+        LTKd;,
         Lcom/snap/composer/bridge_observables/BridgeSubject;,
-        Lrud;
+        LbLd;
     }
 .end annotation
 
@@ -41,23 +41,23 @@
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Ljud;",
+            "LTKd;",
             ">;"
         }
     .end annotation
 .end method
 
 .method public abstract getSessionIdsHolderObservable()Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
-            "Lrud;",
+            "LbLd;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

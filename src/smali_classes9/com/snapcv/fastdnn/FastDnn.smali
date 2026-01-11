@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final nativeBridge:LShf;
+.field private final nativeBridge:LwAf;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LvBg;
+            Lm11;
         }
     .end annotation
 
@@ -47,7 +47,7 @@
 
     .line 16
     .line 17
-    new-instance p3, LShf;
+    new-instance p3, LwAf;
 
     .line 18
     .line 19
@@ -60,12 +60,12 @@
     .line 22
     .line 23
     .line 24
-    invoke-direct {p3, p1, p2, v0}, LShf;-><init>(JLjava/lang/Runnable;)V
+    invoke-direct {p3, p1, p2, v0}, LwAf;-><init>(JLjava/lang/Runnable;)V
 
     .line 25
     .line 26
     .line 27
-    iput-object p3, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LShf;
+    iput-object p3, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LwAf;
 
     .line 28
     .line 29
@@ -73,7 +73,7 @@
 
     .line 30
     :cond_0
-    new-instance p1, LvBg;
+    new-instance p1, Lm11;
 
     .line 31
     .line 32
@@ -105,12 +105,12 @@
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LvBg;
+            Lm11;
         }
     .end annotation
 
     .line 1
-    invoke-static {}, LBmc;->b()Z
+    invoke-static {}, LOBc;->a()Z
 
     .line 2
     .line 3
@@ -126,7 +126,7 @@
 
     .line 8
     :cond_0
-    new-instance v0, LvBg;
+    new-instance v0, Lm11;
 
     .line 9
     .line 10
@@ -171,11 +171,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LShf;
+    iget-object v0, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LwAf;
 
     .line 2
     .line 3
-    iget-wide v0, v0, LShf;->b:J
+    iget-wide v0, v0, LwAf;->b:J
 
     .line 4
     .line 5
@@ -203,11 +203,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LShf;
+    iget-object v0, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LwAf;
 
     .line 2
     .line 3
-    iget-object v0, v0, LShf;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, v0, LwAf;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     .line 5
@@ -349,11 +349,11 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LShf;
+    iget-object v0, p0, Lcom/snapcv/fastdnn/FastDnn;->nativeBridge:LwAf;
 
     .line 2
     .line 3
-    iget-object v1, v0, LShf;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, v0, LwAf;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
     .line 5
@@ -375,7 +375,7 @@
 
     .line 12
     .line 13
-    iget-object v0, v0, LShf;->c:Ljava/lang/Runnable;
+    iget-object v0, v0, LwAf;->c:Ljava/lang/Runnable;
 
     .line 14
     .line 15

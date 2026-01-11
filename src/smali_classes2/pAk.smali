@@ -1,6 +1,3 @@
-.class public interface abstract LpAk;
-.super Ljava/lang/Object;
+.class public final LpAk;
+.super Ljava/lang/Exception;
 .source "SourceFile"
-
-# interfaces
-.implements Landroid/os/IInterface;

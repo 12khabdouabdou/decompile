@@ -1,27 +1,35 @@
-.class public final LEhg;
-.super Lcom/snap/composer/utils/b;
+.class public interface abstract LEhg;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'name\':s,\'imageUrl\':s,\'storedId\':s,\'unitPrice\':d,\'currency\':s,\'id\':s,\'editQuantity\':f(d@),\'maxQuantity\':d,\'bitmojiItem\':r?:\'[0]\',\'numOfQuantity\':d"
-    typeReferences = {
-        Lcom/snap/composer_checkout_flow/CheckoutBitmojiAssetInfo;
-    }
-.end annotation
+# virtual methods
+.method public abstract a()V
+.end method
 
+.method public abstract b(LdH2;Ljava/util/List;Lnp0;LlJe;ZLMUb;LwP2;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public abstract c(LdH2;Lnp0;LnJe;LdBb;LwP2;Ljava/lang/String;)V
+.end method
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+.method public abstract d(LdH2;LvWh;ILjava/lang/String;LwP2;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 2
-    .line 3
-    .line 4
-    return-void
+.method public abstract e(LdH2;Ljava/util/List;Lzxb;Lnp0;LnJe;LWk1;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LLxb;LfI3;LwP2;ZLjava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract f(LdH2;Ljava/lang/String;LnJe;Ljava/util/ArrayList;LqZb;LwP2;Ljava/lang/String;)V
+.end method
+
+.method public abstract g(Ljava/lang/String;LdH2;Ljava/lang/String;Ljava/util/ArrayList;Lnp0;)V
+.end method
+
+.method public abstract h(LdH2;Lcom/snap/chat_reactions/ChatReactionType;LwP2;ILjava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract i(LdH2;LqJ1;Ljava/lang/String;LwP2;)Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract j()J
 .end method

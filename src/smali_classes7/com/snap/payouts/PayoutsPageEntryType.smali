@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
     schema = "\'DEFAULT\':\'DEFAULT\',\'BADGE\':\'BADGE\',\'IN_APP_PAYOUT\':\'IN_APP_PAYOUT\',\'ACTIVITY_FEED\':\'ACTIVITY_FEED\'"
-    type = .enum LJv3;->b:LJv3;
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;

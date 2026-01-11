@@ -1,10 +1,10 @@
 .class public final Lcom/snap/venueprofile/VenueProfileMetricsData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'mapZoomLevel\':d@?,\'openSource\':s?,\'uiTapTimeMs\':d@?,\'traceCookie\':d@?,\'basemapAnnotationState\':r?:\'[0]\',\'annotations\':s?,\'placesSourceType\':s?,\'layerSource\':s?,\'dropsPinId\':s?,\'hasMediaPin\':b@?,\'sourceSessionId\':s?"
     typeReferences = {

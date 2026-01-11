@@ -1,10 +1,10 @@
 .class public final Lcom/snap/safety/safetyreporting/api/SafetyReportDependencies;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'grpcServiceFactory\':r?:\'[0]\',\'tweaks\':r?:\'[1]\',\'reportedChatMessageFetcher\':r?:\'[2]\',\'cofStore\':r?:\'[3]\',\'startedAtMs\':d@?"
     typeReferences = {

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LKY8;
+    proxyClass = Lt69;
     schema = "\'launchRepostMention\':f|m|(s, d, s, s, u?),\'launchPlayback\':f?|m|(t)"
     typeReferences = {}
 .end annotation
@@ -17,7 +17,7 @@
 
 # virtual methods
 .method public abstract launchPlayback([B)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

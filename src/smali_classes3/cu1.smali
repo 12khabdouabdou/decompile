@@ -4,15 +4,13 @@
 
 
 # instance fields
-.field public final a:I
+.field public final a:Z
 
-.field public final b:I
-
-.field public final c:Lau1;
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(IILau1;)V
+.method public constructor <init>(ZLjava/lang/String;)V
     .locals 0
 
     .line 1
@@ -21,18 +19,14 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lcu1;->a:I
+    iput-boolean p1, p0, Lcu1;->a:Z
 
     .line 5
     .line 6
-    iput p2, p0, Lcu1;->b:I
+    iput-object p2, p0, Lcu1;->b:Ljava/lang/String;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lcu1;->c:Lau1;
-
-    .line 9
-    .line 10
     return-void
 .end method
 
@@ -72,11 +66,11 @@
 
     .line 12
     .line 13
-    iget v1, p1, Lcu1;->a:I
+    iget-boolean v1, p1, Lcu1;->a:Z
 
     .line 14
     .line 15
-    iget v3, p0, Lcu1;->a:I
+    iget-boolean v3, p0, Lcu1;->a:Z
 
     .line 16
     .line 17
@@ -88,38 +82,30 @@
 
     .line 20
     :cond_2
-    iget v1, p0, Lcu1;->b:I
+    iget-object v1, p0, Lcu1;->b:Ljava/lang/String;
 
     .line 21
     .line 22
-    iget v3, p1, Lcu1;->b:I
+    iget-object p1, p1, Lcu1;->b:Ljava/lang/String;
 
     .line 23
     .line 24
-    if-eq v1, v3, :cond_3
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
-    return v2
-
     .line 27
-    :cond_3
-    iget-object v1, p0, Lcu1;->c:Lau1;
+    move-result p1
 
     .line 28
+    if-nez p1, :cond_3
+
     .line 29
-    iget-object p1, p1, Lcu1;->c:Lau1;
-
     .line 30
-    .line 31
-    if-eq v1, p1, :cond_4
-
-    .line 32
-    .line 33
     return v2
 
-    .line 34
-    :cond_4
+    .line 31
+    :cond_3
     return v0
 .end method
 
@@ -127,40 +113,46 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcu1;->a:I
+    iget-boolean v0, p0, Lcu1;->a:Z
 
     .line 2
     .line 3
-    mul-int/lit8 v0, v0, 0x1f
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
-    iget v1, p0, Lcu1;->b:I
+    const/16 v0, 0x4cf
 
     .line 6
     .line 7
-    add-int/2addr v0, v1
+    goto :goto_0
 
     .line 8
-    mul-int/lit8 v0, v0, 0x1f
+    :cond_0
+    const/16 v0, 0x4d5
 
     .line 9
     .line 10
-    iget-object v1, p0, Lcu1;->c:Lau1;
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 11
     .line 12
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    iget-object v1, p0, Lcu1;->b:Ljava/lang/String;
 
     .line 13
     .line 14
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
     .line 15
+    .line 16
+    .line 17
     move-result v1
 
-    .line 16
+    .line 18
     add-int/2addr v1, v0
 
-    .line 17
+    .line 19
     return v1
 .end method
 
@@ -172,7 +164,7 @@
 
     .line 2
     .line 3
-    const-string v1, "BloopsVideoEncoderConfiguration(widthAlignment="
+    const-string v1, "ThumbnailsSettings(enabled="
 
     .line 4
     .line 5
@@ -181,16 +173,16 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Lcu1;->a:I
+    iget-boolean v1, p0, Lcu1;->a:Z
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", heightAlignment="
+    const-string v1, ", searchConfig="
 
     .line 14
     .line 15
@@ -199,16 +191,16 @@
     .line 16
     .line 17
     .line 18
-    iget v1, p0, Lcu1;->b:I
+    iget-object v1, p0, Lcu1;->b:Ljava/lang/String;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v1, ", alignmentType="
+    const-string v1, ")"
 
     .line 24
     .line 25
@@ -217,31 +209,13 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, Lcu1;->c:Lau1;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 31
-    .line 32
-    .line 33
-    const-string v1, ")"
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 39
-    .line 40
-    .line 41
     move-result-object v0
 
-    .line 42
+    .line 32
     return-object v0
 .end method

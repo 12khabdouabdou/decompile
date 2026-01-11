@@ -1,47 +1,70 @@
 .class public final LLyk;
-.super Ljava/lang/Object;
+.super LYsk;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/os/IInterface;
 
-
-# instance fields
-.field public final a:Landroid/os/IBinder;
-
-.field public final b:Ljava/lang/String;
-
-
-# direct methods
-.method public constructor <init>(Landroid/os/IBinder;Ljava/lang/String;)V
-    .locals 0
+# virtual methods
+.method public final R(LBYc;Lazk;)[LyZk;
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-virtual {p0}, LYsk;->O()Landroid/os/Parcel;
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LLyk;->a:Landroid/os/IBinder;
+    move-result-object v0
 
     .line 5
-    .line 6
-    iput-object p2, p0, LLyk;->b:Ljava/lang/String;
+    invoke-static {v0, p1}, LEBk;->a(Landroid/os/Parcel;LR49;)V
 
+    .line 6
     .line 7
     .line 8
-    return-void
-.end method
+    const/4 p1, 0x1
 
+    .line 9
+    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V
 
-# virtual methods
-.method public final asBinder()Landroid/os/IBinder;
-    .locals 1
+    .line 10
+    .line 11
+    .line 12
+    const/4 v1, 0x0
 
-    .line 1
-    iget-object v0, p0, LLyk;->a:Landroid/os/IBinder;
+    .line 13
+    invoke-virtual {p2, v0, v1}, Lazk;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 2
-    .line 3
-    return-object v0
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p0, p1, v0}, LYsk;->P(ILandroid/os/Parcel;)Landroid/os/Parcel;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p1
+
+    .line 20
+    sget-object p2, LyZk;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 21
+    .line 22
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->createTypedArray(Landroid/os/Parcelable$Creator;)[Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object p2
+
+    .line 26
+    check-cast p2, [LyZk;
+
+    .line 27
+    .line 28
+    invoke-virtual {p1}, Landroid/os/Parcel;->recycle()V
+
+    .line 29
+    .line 30
+    .line 31
+    return-object p2
 .end method

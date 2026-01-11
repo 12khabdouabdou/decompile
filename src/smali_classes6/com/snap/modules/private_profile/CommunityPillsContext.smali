@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/private_profile/CommunityPillsContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'onCommunityPillTap\':f(s),\'onCommunityPillLongPress\':f(s),\'onAddCollegeTap\':f?(),\'onAddCommunityTap\':f(),\'launchWaitlistDialog\':f(b@, f(r<e>:\'[0]\'), s?),\'onPendingCommunityPillLongPress\':f(s),\'communityStore\':r?:\'[1]\',\'cofStore\':r?:\'[2]\',\'grpcService\':r?:\'[3]\',\'communityOrgServiceRouteTag\':s?,\'alertPresenter\':r?:\'[4]\',\'enableCommunities\':g<c>:\'[5]\'<b@>,\'disableCommunitiesEntryPoint\':g<c>:\'[5]\'<b@>,\'enableMultipleCommunities\':g?<c>:\'[5]\'<b@>"
     typeReferences = {
@@ -109,7 +109,7 @@
 
 
 # direct methods
-.method public constructor <init>(LRg2;LRg2;LR92;LiT0;LRg2;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
+.method public constructor <init>(LDs2;LDs2;LJs2;LZz;LDs2;Lcom/snap/composer/bridge_observables/BridgeObservable;Lcom/snap/composer/bridge_observables/BridgeObservable;)V
     .locals 0
 
     .line 1
@@ -306,7 +306,7 @@
     return-void
 .end method
 
-.method public final g(LR92;)V
+.method public final g(LJs2;)V
     .locals 0
 
     .line 1

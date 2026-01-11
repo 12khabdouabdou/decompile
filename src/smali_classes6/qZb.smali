@@ -1,44 +1,75 @@
 .class public final LqZb;
-.super Lan0;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# static fields
-.field public static final Z:LqZb;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'searchWithoutAtSymbolCount\':d@?,\'searchWithAtSymbolCount\':d@?"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _searchWithAtSymbolCount:Ljava/lang/Double;
+
+.field private _searchWithoutAtSymbolCount:Ljava/lang/Double;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
-    new-instance v0, LqZb;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x0
+
+    .line 2
+    iput-object v0, p0, LqZb;->_searchWithoutAtSymbolCount:Ljava/lang/Double;
+
+    .line 3
+    iput-object v0, p0, LqZb;->_searchWithAtSymbolCount:Ljava/lang/Double;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/Double;Ljava/lang/Double;)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iput-object p1, p0, LqZb;->_searchWithoutAtSymbolCount:Ljava/lang/Double;
+
+    .line 6
+    iput-object p2, p0, LqZb;->_searchWithAtSymbolCount:Ljava/lang/Double;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/lang/Double;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LqZb;->_searchWithAtSymbolCount:Ljava/lang/Double;
 
     .line 2
     .line 3
-    sget-object v1, LEy9;->X:LEy9;
+    return-object v0
+.end method
 
-    .line 4
-    .line 5
-    const/4 v2, 0x0
+.method public final b()Ljava/lang/Double;
+    .locals 1
 
-    .line 6
-    const/16 v3, 0x1c
+    .line 1
+    iget-object v0, p0, LqZb;->_searchWithoutAtSymbolCount:Ljava/lang/Double;
 
-    .line 7
-    .line 8
-    const-string v4, "mobile-services"
-
-    .line 9
-    .line 10
-    invoke-direct {v0, v4, v1, v2, v3}, Lan0;-><init>(Ljava/lang/String;LEy9;LQFa;I)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, LqZb;->Z:LqZb;
-
-    .line 14
-    .line 15
-    return-void
+    .line 2
+    .line 3
+    return-object v0
 .end method

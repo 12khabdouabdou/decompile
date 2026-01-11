@@ -1,34 +1,30 @@
 .class public final LxAi;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
-# instance fields
-.field public a:Ljava/lang/Number;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'navigator\':r:\'[0]\',\'blizzardLogger\':r:\'[1]\',\'loggingContext\':r:\'[2]\',\'inAppBrowserPresenter\':r?:\'[3]\'"
+    typeReferences = {
+        Lcom/snap/composer/navigation/INavigator;,
+        Lcom/snap/composer/blizzard/Logging;,
+        Lcom/snap/modules/streak_restore/SupportPageLoggingContext;,
+        Lcom/snap/plus/InAppBrowserPresenter;
+    }
+.end annotation
 
-.field public b:Ljava/lang/Number;
 
-.field public c:Ljava/lang/Number;
-
-.field public d:J
-
-
-# virtual methods
-.method public final a(Ljava/lang/Number;Ljava/lang/Number;J)V
+# direct methods
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, LxAi;->b:Ljava/lang/Number;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, LxAi;->c:Ljava/lang/Number;
-
     .line 4
-    .line 5
-    iput-wide p3, p0, LxAi;->d:J
-
-    .line 6
-    .line 7
     return-void
 .end method

@@ -1,241 +1,154 @@
 .class public final LO02;
-.super Lcom/snap/composer/utils/b;
+.super LAuk;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'mode\':r<e>:\'[0]\',\'iconVersion\':d,\'state\':r<e>:\'[1]\',\'secondaryButtonType\':r?<e>:\'[2]\',\'albumArtMedia\':r?:\'[3]\',\'enabledSubtitle\':s?,\'onAddButtonTap\':f(),\'onCellTap\':f(),\'onToolbarButtonTap\':f(),\'secondaryOnToolbarButtonTap\':f?(),\'showBadge\':b@?,\'accessibilityId\':s?"
-    typeReferences = {
-        Lcom/snap/camera_control_center/CameraMode;,
-        Lcom/snap/camera_control_center/CameraModeState;,
-        Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;,
-        Lcom/snap/music/core/composer/PickerMediaInfo;
-    }
-.end annotation
-
-
 # instance fields
-.field private _accessibilityId:Ljava/lang/String;
-
-.field private _albumArtMedia:Lcom/snap/music/core/composer/PickerMediaInfo;
-
-.field private _enabledSubtitle:Ljava/lang/String;
-
-.field private _iconVersion:D
-
-.field private _mode:Lcom/snap/camera_control_center/CameraMode;
-
-.field private _onAddButtonTap:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _onCellTap:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _onToolbarButtonTap:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _secondaryButtonType:Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;
-
-.field private _secondaryOnToolbarButtonTap:Lkotlin/jvm/functions/Function0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lkotlin/jvm/functions/Function0;"
-        }
-    .end annotation
-.end field
-
-.field private _showBadge:Ljava/lang/Boolean;
-
-.field private _state:Lcom/snap/camera_control_center/CameraModeState;
+.field public final g:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/camera_control_center/CameraMode;DLcom/snap/camera_control_center/CameraModeState;Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;Lcom/snap/music/core/composer/PickerMediaInfo;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Ljava/lang/Boolean;Ljava/lang/String;)V
+.method public constructor <init>(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/snap/camera_control_center/CameraMode;",
-            "D",
-            "Lcom/snap/camera_control_center/CameraModeState;",
-            "Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;",
-            "Lcom/snap/music/core/composer/PickerMediaInfo;",
-            "Ljava/lang/String;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Lkotlin/jvm/functions/Function0;",
-            "Ljava/lang/Boolean;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, LO02;->_mode:Lcom/snap/camera_control_center/CameraMode;
-
     .line 3
-    iput-wide p2, p0, LO02;->_iconVersion:D
-
     .line 4
-    iput-object p4, p0, LO02;->_state:Lcom/snap/camera_control_center/CameraModeState;
+    iput-boolean p1, p0, LO02;->g:Z
 
     .line 5
-    iput-object p5, p0, LO02;->_secondaryButtonType:Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;
-
     .line 6
-    iput-object p6, p0, LO02;->_albumArtMedia:Lcom/snap/music/core/composer/PickerMediaInfo;
-
-    .line 7
-    iput-object p7, p0, LO02;->_enabledSubtitle:Ljava/lang/String;
-
-    .line 8
-    iput-object p8, p0, LO02;->_onAddButtonTap:Lkotlin/jvm/functions/Function0;
-
-    .line 9
-    iput-object p9, p0, LO02;->_onCellTap:Lkotlin/jvm/functions/Function0;
-
-    .line 10
-    iput-object p10, p0, LO02;->_onToolbarButtonTap:Lkotlin/jvm/functions/Function0;
-
-    .line 11
-    iput-object p11, p0, LO02;->_secondaryOnToolbarButtonTap:Lkotlin/jvm/functions/Function0;
-
-    .line 12
-    iput-object p12, p0, LO02;->_showBadge:Ljava/lang/Boolean;
-
-    .line 13
-    iput-object p13, p0, LO02;->_accessibilityId:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/snap/camera_control_center/CameraMode;Lcom/snap/camera_control_center/CameraModeState;LcD5;)V
-    .locals 4
-
-    sget-object v0, LPN5;->s0:LPN5;
-
-    sget-object v1, LPN5;->t0:LPN5;
-
-    .line 14
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 15
-    iput-object p1, p0, LO02;->_mode:Lcom/snap/camera_control_center/CameraMode;
-
-    const-wide/16 v2, 0x0
-
-    .line 16
-    iput-wide v2, p0, LO02;->_iconVersion:D
-
-    .line 17
-    iput-object p2, p0, LO02;->_state:Lcom/snap/camera_control_center/CameraModeState;
-
-    const/4 p1, 0x0
-
-    .line 18
-    iput-object p1, p0, LO02;->_secondaryButtonType:Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;
-
-    .line 19
-    iput-object p1, p0, LO02;->_albumArtMedia:Lcom/snap/music/core/composer/PickerMediaInfo;
-
-    .line 20
-    iput-object p1, p0, LO02;->_enabledSubtitle:Ljava/lang/String;
-
-    .line 21
-    iput-object v0, p0, LO02;->_onAddButtonTap:Lkotlin/jvm/functions/Function0;
-
-    .line 22
-    iput-object v1, p0, LO02;->_onCellTap:Lkotlin/jvm/functions/Function0;
-
-    .line 23
-    iput-object p3, p0, LO02;->_onToolbarButtonTap:Lkotlin/jvm/functions/Function0;
-
-    .line 24
-    iput-object p1, p0, LO02;->_secondaryOnToolbarButtonTap:Lkotlin/jvm/functions/Function0;
-
-    .line 25
-    iput-object p1, p0, LO02;->_showBadge:Ljava/lang/Boolean;
-
-    .line 26
-    iput-object p1, p0, LO02;->_accessibilityId:Ljava/lang/String;
-
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lcom/snap/camera_control_center/CameraMode;
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LO02;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, LO02;
+
+    .line 12
+    .line 13
+    iget-boolean v1, p0, LO02;->g:Z
+
+    .line 14
+    .line 15
+    iget-boolean p1, p1, LO02;->g:Z
+
+    .line 16
+    .line 17
+    if-eq v1, p1, :cond_2
+
+    .line 18
+    .line 19
+    return v2
+
+    .line 20
+    :cond_2
+    return v0
+.end method
+
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    iget-object v0, p0, LO02;->_mode:Lcom/snap/camera_control_center/CameraMode;
+    iget-boolean v0, p0, LO02;->g:Z
 
     .line 2
     .line 3
-    return-object v0
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    const/16 v0, 0x4cf
+
+    .line 6
+    .line 7
+    return v0
+
+    .line 8
+    :cond_0
+    const/16 v0, 0x4d5
+
+    .line 9
+    .line 10
+    return v0
 .end method
 
-.method public final b()Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;
+.method public final l()Z
     .locals 1
 
     .line 1
-    iget-object v0, p0, LO02;->_secondaryButtonType:Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;
+    iget-boolean v0, p0, LO02;->g:Z
 
     .line 2
     .line 3
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Failure(onLastClientUnregistered="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-boolean v1, p0, LO02;->g:Z
+
+    .line 9
+    .line 10
+    const-string v2, ")"
+
+    .line 11
+    .line 12
+    invoke-static {v2, v0, v1}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
     return-object v0
-.end method
-
-.method public final c(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LO02;->_accessibilityId:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final d(Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LO02;->_secondaryButtonType:Lcom/snap/modules/camera_control_center/CameraModeSecondaryButtonType;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final e(Lha6;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, LO02;->_secondaryOnToolbarButtonTap:Lkotlin/jvm/functions/Function0;
-
-    .line 2
-    .line 3
-    return-void
 .end method

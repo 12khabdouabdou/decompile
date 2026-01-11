@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'UNKNOWN\':0,\'MAX_SAVED_LIST_COUNT\':1,\'MAX_RECIPIENT_COUNT\':2"
-    type = .enum LJv3;->a:LJv3;
+    schema = "\'UNKNOWN\':0,\'MAX_SAVED_LIST_COUNT\':1,\'MAX_RECIPIENT_COUNT\':2,\'NAME_IN_USE\':3,\'NOT_FOUND\':4,\'INTERNAL\':5"
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -20,9 +20,15 @@
 
 
 # static fields
+.field public static final enum INTERNAL:Lcom/snap/modules/send_to_lists/MutationError;
+
 .field public static final enum MAX_RECIPIENT_COUNT:Lcom/snap/modules/send_to_lists/MutationError;
 
 .field public static final enum MAX_SAVED_LIST_COUNT:Lcom/snap/modules/send_to_lists/MutationError;
+
+.field public static final enum NAME_IN_USE:Lcom/snap/modules/send_to_lists/MutationError;
+
+.field public static final enum NOT_FOUND:Lcom/snap/modules/send_to_lists/MutationError;
 
 .field public static final enum UNKNOWN:Lcom/snap/modules/send_to_lists/MutationError;
 
@@ -31,92 +37,164 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 7
+    .locals 13
 
     .line 1
-    const/4 v0, 0x2
+    const/4 v0, 0x5
 
     .line 2
-    const/4 v1, 0x1
+    const/4 v1, 0x4
 
     .line 3
-    const/4 v2, 0x0
+    const/4 v2, 0x3
 
     .line 4
-    new-instance v3, Lcom/snap/modules/send_to_lists/MutationError;
+    const/4 v3, 0x2
 
     .line 5
+    const/4 v4, 0x1
+
     .line 6
-    const-string v4, "UNKNOWN"
+    const/4 v5, 0x0
 
     .line 7
-    .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v6, Lcom/snap/modules/send_to_lists/MutationError;
 
+    .line 8
     .line 9
+    const-string v7, "UNKNOWN"
+
     .line 10
     .line 11
-    sput-object v3, Lcom/snap/modules/send_to_lists/MutationError;->UNKNOWN:Lcom/snap/modules/send_to_lists/MutationError;
+    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 12
     .line 13
-    new-instance v4, Lcom/snap/modules/send_to_lists/MutationError;
-
     .line 14
+    sput-object v6, Lcom/snap/modules/send_to_lists/MutationError;->UNKNOWN:Lcom/snap/modules/send_to_lists/MutationError;
+
     .line 15
-    const-string v5, "MAX_SAVED_LIST_COUNT"
-
     .line 16
-    .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v7, Lcom/snap/modules/send_to_lists/MutationError;
 
+    .line 17
     .line 18
+    const-string v8, "MAX_SAVED_LIST_COUNT"
+
     .line 19
     .line 20
-    sput-object v4, Lcom/snap/modules/send_to_lists/MutationError;->MAX_SAVED_LIST_COUNT:Lcom/snap/modules/send_to_lists/MutationError;
+    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 21
     .line 22
-    new-instance v5, Lcom/snap/modules/send_to_lists/MutationError;
-
     .line 23
+    sput-object v7, Lcom/snap/modules/send_to_lists/MutationError;->MAX_SAVED_LIST_COUNT:Lcom/snap/modules/send_to_lists/MutationError;
+
     .line 24
-    const-string v6, "MAX_RECIPIENT_COUNT"
-
     .line 25
-    .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    new-instance v8, Lcom/snap/modules/send_to_lists/MutationError;
 
+    .line 26
     .line 27
+    const-string v9, "MAX_RECIPIENT_COUNT"
+
     .line 28
     .line 29
-    sput-object v5, Lcom/snap/modules/send_to_lists/MutationError;->MAX_RECIPIENT_COUNT:Lcom/snap/modules/send_to_lists/MutationError;
+    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 30
     .line 31
-    const/4 v6, 0x3
-
     .line 32
-    new-array v6, v6, [Lcom/snap/modules/send_to_lists/MutationError;
+    sput-object v8, Lcom/snap/modules/send_to_lists/MutationError;->MAX_RECIPIENT_COUNT:Lcom/snap/modules/send_to_lists/MutationError;
 
     .line 33
     .line 34
-    aput-object v3, v6, v2
+    new-instance v9, Lcom/snap/modules/send_to_lists/MutationError;
 
     .line 35
     .line 36
-    aput-object v4, v6, v1
+    const-string v10, "NAME_IN_USE"
 
     .line 37
     .line 38
-    aput-object v5, v6, v0
+    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 39
     .line 40
-    sput-object v6, Lcom/snap/modules/send_to_lists/MutationError;->a:[Lcom/snap/modules/send_to_lists/MutationError;
-
     .line 41
+    sput-object v9, Lcom/snap/modules/send_to_lists/MutationError;->NAME_IN_USE:Lcom/snap/modules/send_to_lists/MutationError;
+
     .line 42
+    .line 43
+    new-instance v10, Lcom/snap/modules/send_to_lists/MutationError;
+
+    .line 44
+    .line 45
+    const-string v11, "NOT_FOUND"
+
+    .line 46
+    .line 47
+    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 48
+    .line 49
+    .line 50
+    sput-object v10, Lcom/snap/modules/send_to_lists/MutationError;->NOT_FOUND:Lcom/snap/modules/send_to_lists/MutationError;
+
+    .line 51
+    .line 52
+    new-instance v11, Lcom/snap/modules/send_to_lists/MutationError;
+
+    .line 53
+    .line 54
+    const-string v12, "INTERNAL"
+
+    .line 55
+    .line 56
+    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    sput-object v11, Lcom/snap/modules/send_to_lists/MutationError;->INTERNAL:Lcom/snap/modules/send_to_lists/MutationError;
+
+    .line 60
+    .line 61
+    const/4 v12, 0x6
+
+    .line 62
+    new-array v12, v12, [Lcom/snap/modules/send_to_lists/MutationError;
+
+    .line 63
+    .line 64
+    aput-object v6, v12, v5
+
+    .line 65
+    .line 66
+    aput-object v7, v12, v4
+
+    .line 67
+    .line 68
+    aput-object v8, v12, v3
+
+    .line 69
+    .line 70
+    aput-object v9, v12, v2
+
+    .line 71
+    .line 72
+    aput-object v10, v12, v1
+
+    .line 73
+    .line 74
+    aput-object v11, v12, v0
+
+    .line 75
+    .line 76
+    sput-object v12, Lcom/snap/modules/send_to_lists/MutationError;->a:[Lcom/snap/modules/send_to_lists/MutationError;
+
+    .line 77
+    .line 78
     return-void
 .end method
 

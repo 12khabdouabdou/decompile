@@ -1,29 +1,11 @@
-.class public final LS21;
+.class public interface abstract LS21;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LS21;
+# virtual methods
+.method public abstract b(LUc7;)V
+.end method
 
-
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, LS21;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LS21;->a:LS21;
-
-    .line 7
-    .line 8
-    return-void
+.method public abstract w(LW21;)V
 .end method

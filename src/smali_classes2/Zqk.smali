@@ -1,170 +1,139 @@
-.class public final LZqk;
+.class public LZqk;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LPJc;
-
-
-# static fields
-.field public static final a:LZqk;
-
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 0
 
     .line 1
-    new-instance v0, LZqk;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
-    sput-object v0, LZqk;->a:LZqk;
+    return-void
+.end method
 
+.method public static a([B)Ljava/security/cert/X509Certificate;
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-eqz p0, :cond_2
+
+    .line 3
+    .line 4
+    :try_start_0
+    array-length v1, p0
+
+    .line 5
+    if-nez v1, :cond_0
+
+    .line 6
     .line 7
+    goto :goto_0
+
     .line 8
-    new-instance v0, LFhk;
+    :cond_0
+    const-string v1, "X.509"
 
     .line 9
     .line 10
-    const/4 v1, 0x1
+    invoke-static {v1}, Ljava/security/cert/CertificateFactory;->getInstance(Ljava/lang/String;)Ljava/security/cert/CertificateFactory;
 
     .line 11
-    invoke-direct {v0, v1}, LFhk;-><init>(I)V
-
     .line 12
     .line 13
+    move-result-object v1
+
     .line 14
-    const-class v1, LUhk;
+    new-instance v2, Ljava/io/ByteArrayInputStream;
 
     .line 15
     .line 16
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    invoke-direct {v2, p0}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    invoke-virtual {v1, v2}, Ljava/security/cert/CertificateFactory;->generateCertificate(Ljava/io/InputStream;)Ljava/security/cert/Certificate;
 
     .line 20
-    const/4 v2, 0x2
-
     .line 21
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
     .line 22
-    .line 23
-    .line 24
-    move-result-object v0
+    move-result-object p0
 
+    .line 23
+    instance-of v1, p0, Ljava/security/cert/X509Certificate;
+
+    .line 24
     .line 25
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    if-eqz v1, :cond_1
 
     .line 26
     .line 27
-    .line 28
-    move-result-object v0
+    check-cast p0, Ljava/security/cert/X509Certificate;
 
+    .line 28
     .line 29
-    const/4 v2, 0x3
+    return-object p0
 
     .line 30
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
+    :cond_1
+    new-instance v1, Ljava/security/cert/CertificateException;
 
     .line 31
     .line 32
-    .line 33
-    move-result-object v0
+    new-instance v2, Ljava/lang/StringBuilder;
 
+    .line 33
     .line 34
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    const-string v3, "Not a X.509 certificate: "
 
     .line 35
     .line 36
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
     .line 37
-    move-result-object v0
-
     .line 38
-    const/4 v2, 0x4
-
     .line 39
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
+    invoke-virtual {p0}, Ljava/security/cert/Certificate;->getType()Ljava/lang/String;
 
     .line 40
     .line 41
     .line 42
-    move-result-object v0
+    move-result-object p0
 
     .line 43
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
     .line 46
-    move-result-object v0
+    invoke-virtual {v2}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 47
-    const/4 v2, 0x5
-
     .line 48
-    invoke-static {v0, v2}, Lngk;->c(Ljava/util/HashMap;I)LFhk;
-
     .line 49
+    move-result-object p0
+
     .line 50
+    invoke-direct {v1, p0}, Ljava/security/cert/CertificateException;-><init>(Ljava/lang/String;)V
+
     .line 51
-    move-result-object v0
-
     .line 52
-    invoke-static {v1, v0}, Lngk;->b(Ljava/lang/Class;LFhk;)Ljava/util/HashMap;
-
     .line 53
+    throw v1
+    :try_end_0
+    .catch Ljava/security/cert/CertificateException; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    invoke-static {v0}, Lngk;->d(Ljava/util/HashMap;)V
-
-    .line 57
-    .line 58
-    .line 59
-    return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    if-nez p1, :cond_0
-
-    .line 2
-    .line 3
-    check-cast p2, LQJc;
-
-    .line 4
-    .line 5
-    const/4 p1, 0x0
-
-    .line 6
-    throw p1
-
-    .line 7
-    :cond_0
-    new-instance p1, Ljava/lang/ClassCastException;
-
-    .line 8
-    .line 9
-    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
-
-    .line 10
-    .line 11
-    .line 12
-    throw p1
+    :catch_0
+    :cond_2
+    :goto_0
+    return-object v0
 .end method

@@ -1,15 +1,15 @@
 .class public Lcom/snapchat/soju/android/Geofence;
-.super LoYg;
+.super Lbkh;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LVz9;
-    value = LqYg;
+.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
+    value = Lfm8;
 .end annotation
 
-.annotation runtime Lcom/snapchat/soju/android/SojuJsonAdapter;
-    value = LCf8;
+.annotation runtime LnJ9;
+    value = Ldkh;
 .end annotation
 
 
@@ -22,7 +22,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Ln34;",
+            "LX74;",
             ">;"
         }
     .end annotation
@@ -96,7 +96,7 @@
 
     .line 18
     .line 19
-    invoke-static {v2, v3}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 20
     .line 21
@@ -116,7 +116,7 @@
 
     .line 28
     .line 29
-    invoke-static {v2, p1}, Lsc5;->h0(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p1}, LSpk;->Z(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 30
     .line 31

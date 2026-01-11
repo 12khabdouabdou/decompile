@@ -6,12 +6,13 @@
 //attribute vec2 texture1 4
 //attribute vec3 normal 1
 //attribute vec4 tangent 2
-//sampler sampler bgTextureAlphaSmpSC 0:8
-//sampler sampler bgTextureSmpSC 0:9
-//texture texture2D bgTexture 0:0:0:9
-//texture texture2D bgTextureAlpha 0:1:0:8
-//texture texture2DArray bgTextureAlphaArrSC 0:16:0:8
-//texture texture2DArray bgTextureArrSC 0:17:0:9
+//output vec4 sc_FragData0 0
+//sampler sampler bgTextureAlphaSmpSC 0:9
+//sampler sampler bgTextureSmpSC 0:10
+//texture texture2D bgTexture 0:0:0:10
+//texture texture2D bgTextureAlpha 0:1:0:9
+//texture texture2DArray bgTextureAlphaArrSC 0:18:0:9
+//texture texture2DArray bgTextureArrSC 0:19:0:10
 //spec_const bool ALPHA_EXISTS 0 0
 //spec_const bool SC_USE_CLAMP_TO_BORDER_bgTexture 1 0
 //spec_const bool SC_USE_CLAMP_TO_BORDER_bgTextureAlpha 2 0
@@ -190,11 +191,11 @@ flat out int varStereoViewID;
 in vec4 position;
 in vec2 texture0;
 in vec2 texture1;
-out vec3 varPos;
-out vec4 varPackedTex;
+out vec4 varPosAndMotion;
+out vec4 varTex01;
 out vec4 varScreenPos;
 out vec2 varScreenTexturePos;
-out vec3 varNormal;
+out vec4 varNormalAndMotion;
 out vec4 varTangent;
 out vec2 varShadowTex;
 in vec3 normal;
@@ -234,9 +235,9 @@ l9_1=l9_2;
 l9_1=l9_0;
 }
 #endif
-varPos=l9_1.xyz;
-varPackedTex=vec4(texture0.x,texture0.y,varPackedTex.z,varPackedTex.w);
-varPackedTex=vec4(varPackedTex.x,varPackedTex.y,texture1.x,texture1.y);
+varPosAndMotion=vec4(l9_1.x,l9_1.y,l9_1.z,varPosAndMotion.w);
+varTex01=vec4(texture0.x,texture0.y,varTex01.z,varTex01.w);
+varTex01=vec4(varTex01.x,varTex01.y,texture1.x,texture1.y);
 varScreenPos=l9_1;
 vec2 l9_3=((l9_1.xy/vec2(l9_1.w))*0.5)+vec2(0.5);
 vec2 l9_4;
@@ -293,68 +294,6 @@ gl_Position=l9_7;
 #undef sc_FramebufferFetch
 #define sc_FramebufferFetch 1
 #endif
-#if defined(GL_ES)||__VERSION__>=420
-#if sc_FragDataCount>=1
-#define sc_DeclareFragData0(StorageQualifier) layout(location=0) StorageQualifier sc_FragmentPrecision vec4 sc_FragData0
-#endif
-#if sc_FragDataCount>=2
-#define sc_DeclareFragData1(StorageQualifier) layout(location=1) StorageQualifier sc_FragmentPrecision vec4 sc_FragData1
-#endif
-#if sc_FragDataCount>=3
-#define sc_DeclareFragData2(StorageQualifier) layout(location=2) StorageQualifier sc_FragmentPrecision vec4 sc_FragData2
-#endif
-#if sc_FragDataCount>=4
-#define sc_DeclareFragData3(StorageQualifier) layout(location=3) StorageQualifier sc_FragmentPrecision vec4 sc_FragData3
-#endif
-#ifndef sc_DeclareFragData0
-#define sc_DeclareFragData0(_) const vec4 sc_FragData0=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData1
-#define sc_DeclareFragData1(_) const vec4 sc_FragData1=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData2
-#define sc_DeclareFragData2(_) const vec4 sc_FragData2=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData3
-#define sc_DeclareFragData3(_) const vec4 sc_FragData3=vec4(0.0)
-#endif
-#if sc_FramebufferFetch
-#ifdef GL_EXT_shader_framebuffer_fetch
-sc_DeclareFragData0(inout);
-sc_DeclareFragData1(inout);
-sc_DeclareFragData2(inout);
-sc_DeclareFragData3(inout);
-mediump mat4 getFragData() { return mat4(sc_FragData0,sc_FragData1,sc_FragData2,sc_FragData3); }
-#define gl_LastFragData (getFragData())
-#elif defined(GL_ARM_shader_framebuffer_fetch)
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(gl_LastFragColorARM,vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-#ifdef FRAGMENT_SHADER
-#define sc_FragData0 gl_FragData[0]
-#define sc_FragData1 gl_FragData[1]
-#define sc_FragData2 gl_FragData[2]
-#define sc_FragData3 gl_FragData[3]
-#endif
-mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#if sc_FramebufferFetch
-#error Framebuffer fetch is requested but not supported by this device.
-#endif
-#endif
 #ifndef sc_StereoRenderingMode
 #define sc_StereoRenderingMode 0
 #endif
@@ -367,23 +306,20 @@ mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
 #undef bgTextureHasSwappedViews
 #define bgTextureHasSwappedViews 1
 #endif
-#ifndef bgTextureLayout
-#define bgTextureLayout 0
-#endif
 #ifndef bgTextureAlphaHasSwappedViews
 #define bgTextureAlphaHasSwappedViews 0
 #elif bgTextureAlphaHasSwappedViews==1
 #undef bgTextureAlphaHasSwappedViews
 #define bgTextureAlphaHasSwappedViews 1
 #endif
-#ifndef bgTextureAlphaLayout
-#define bgTextureAlphaLayout 0
-#endif
 #ifndef ALPHA_EXISTS
 #define ALPHA_EXISTS 0
 #elif ALPHA_EXISTS==1
 #undef ALPHA_EXISTS
 #define ALPHA_EXISTS 1
+#endif
+#ifndef bgTextureAlphaLayout
+#define bgTextureAlphaLayout 0
 #endif
 #ifndef SC_USE_UV_TRANSFORM_bgTextureAlpha
 #define SC_USE_UV_TRANSFORM_bgTextureAlpha 0
@@ -414,6 +350,9 @@ mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
 #elif TEXTURE_EXISTS==1
 #undef TEXTURE_EXISTS
 #define TEXTURE_EXISTS 1
+#endif
+#ifndef bgTextureLayout
+#define bgTextureLayout 0
 #endif
 #ifndef SC_USE_UV_TRANSFORM_bgTexture
 #define SC_USE_UV_TRANSFORM_bgTexture 0
@@ -452,14 +391,15 @@ uniform mediump sampler2D bgTextureAlpha;
 uniform mediump sampler2DArray bgTextureArrSC;
 uniform mediump sampler2D bgTexture;
 flat in int varStereoViewID;
-in vec2 varShadowTex;
-in float varClipDistance;
-in vec4 varPackedTex;
-in vec3 varPos;
-in vec3 varNormal;
+layout(location=0) out vec4 sc_FragData0;
+in vec4 varTex01;
+in vec4 varPosAndMotion;
+in vec4 varNormalAndMotion;
 in vec4 varTangent;
 in vec4 varScreenPos;
 in vec2 varScreenTexturePos;
+in vec2 varShadowTex;
+in float varClipDistance;
 int sc_GetStereoViewIndex()
 {
 int l9_0;
@@ -683,11 +623,6 @@ l9_0=sc_GetStereoViewIndex();
 #endif
 return l9_0;
 }
-void sc_writeFragData0Internal(vec4 col,float zero,int cacheConst)
-{
-col.x+=zero*float(cacheConst);
-sc_FragData0=col;
-}
 void main()
 {
 float l9_0;
@@ -696,11 +631,11 @@ float l9_0;
 vec4 l9_1;
 #if (bgTextureAlphaLayout==2)
 {
-l9_1=sc_SampleTextureBias(bgTextureAlphaLayout,bgTextureAlphaGetStereoViewIndex(),varPackedTex.zw,(int(SC_USE_UV_TRANSFORM_bgTextureAlpha)!=0),bgTextureAlphaTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTextureAlpha,SC_SOFTWARE_WRAP_MODE_V_bgTextureAlpha),(int(SC_USE_UV_MIN_MAX_bgTextureAlpha)!=0),bgTextureAlphaUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTextureAlpha)!=0),bgTextureAlphaBorderColor,0.0,bgTextureAlphaArrSC);
+l9_1=sc_SampleTextureBias(bgTextureAlphaLayout,bgTextureAlphaGetStereoViewIndex(),varTex01.zw,(int(SC_USE_UV_TRANSFORM_bgTextureAlpha)!=0),bgTextureAlphaTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTextureAlpha,SC_SOFTWARE_WRAP_MODE_V_bgTextureAlpha),(int(SC_USE_UV_MIN_MAX_bgTextureAlpha)!=0),bgTextureAlphaUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTextureAlpha)!=0),bgTextureAlphaBorderColor,0.0,bgTextureAlphaArrSC);
 }
 #else
 {
-l9_1=sc_SampleTextureBias(bgTextureAlphaLayout,bgTextureAlphaGetStereoViewIndex(),varPackedTex.zw,(int(SC_USE_UV_TRANSFORM_bgTextureAlpha)!=0),bgTextureAlphaTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTextureAlpha,SC_SOFTWARE_WRAP_MODE_V_bgTextureAlpha),(int(SC_USE_UV_MIN_MAX_bgTextureAlpha)!=0),bgTextureAlphaUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTextureAlpha)!=0),bgTextureAlphaBorderColor,0.0,bgTextureAlpha);
+l9_1=sc_SampleTextureBias(bgTextureAlphaLayout,bgTextureAlphaGetStereoViewIndex(),varTex01.zw,(int(SC_USE_UV_TRANSFORM_bgTextureAlpha)!=0),bgTextureAlphaTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTextureAlpha,SC_SOFTWARE_WRAP_MODE_V_bgTextureAlpha),(int(SC_USE_UV_MIN_MAX_bgTextureAlpha)!=0),bgTextureAlphaUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTextureAlpha)!=0),bgTextureAlphaBorderColor,0.0,bgTextureAlpha);
 }
 #endif
 l9_0=l9_1.x;
@@ -716,11 +651,11 @@ vec4 l9_2;
 vec4 l9_3;
 #if (bgTextureLayout==2)
 {
-l9_3=sc_SampleTextureBias(bgTextureLayout,bgTextureGetStereoViewIndex(),varPackedTex.xy,(int(SC_USE_UV_TRANSFORM_bgTexture)!=0),bgTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTexture,SC_SOFTWARE_WRAP_MODE_V_bgTexture),(int(SC_USE_UV_MIN_MAX_bgTexture)!=0),bgTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTexture)!=0),bgTextureBorderColor,0.0,bgTextureArrSC);
+l9_3=sc_SampleTextureBias(bgTextureLayout,bgTextureGetStereoViewIndex(),varTex01.xy,(int(SC_USE_UV_TRANSFORM_bgTexture)!=0),bgTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTexture,SC_SOFTWARE_WRAP_MODE_V_bgTexture),(int(SC_USE_UV_MIN_MAX_bgTexture)!=0),bgTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTexture)!=0),bgTextureBorderColor,0.0,bgTextureArrSC);
 }
 #else
 {
-l9_3=sc_SampleTextureBias(bgTextureLayout,bgTextureGetStereoViewIndex(),varPackedTex.xy,(int(SC_USE_UV_TRANSFORM_bgTexture)!=0),bgTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTexture,SC_SOFTWARE_WRAP_MODE_V_bgTexture),(int(SC_USE_UV_MIN_MAX_bgTexture)!=0),bgTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTexture)!=0),bgTextureBorderColor,0.0,bgTexture);
+l9_3=sc_SampleTextureBias(bgTextureLayout,bgTextureGetStereoViewIndex(),varTex01.xy,(int(SC_USE_UV_TRANSFORM_bgTexture)!=0),bgTextureTransform,ivec2(SC_SOFTWARE_WRAP_MODE_U_bgTexture,SC_SOFTWARE_WRAP_MODE_V_bgTexture),(int(SC_USE_UV_MIN_MAX_bgTexture)!=0),bgTextureUvMinMax,(int(SC_USE_CLAMP_TO_BORDER_bgTexture)!=0),bgTextureBorderColor,0.0,bgTexture);
 }
 #endif
 l9_2=vec4(l9_3.xyz,l9_0);
@@ -730,6 +665,18 @@ l9_2=vec4(l9_3.xyz,l9_0);
 l9_2=bgColor;
 }
 #endif
-sc_writeFragData0Internal(l9_2,sc_UniformConstants.x,sc_ShaderCacheConstant);
+vec4 l9_4;
+#if (sc_ShaderCacheConstant!=0)
+{
+vec4 l9_5=l9_2;
+l9_5.x=l9_2.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_4=l9_5;
+}
+#else
+{
+l9_4=l9_2;
+}
+#endif
+sc_FragData0=l9_4;
 }
 #endif // #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER

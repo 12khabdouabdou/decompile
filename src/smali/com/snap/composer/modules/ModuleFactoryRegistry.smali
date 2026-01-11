@@ -115,7 +115,7 @@
 .end method
 
 .method public final registerModuleFactory(Lkotlin/jvm/functions/Function0;)V
-    .locals 2
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -125,23 +125,20 @@
     .end annotation
 
     .line 1
-    new-instance v0, LpB3;
+    new-instance v0, LJfc;
 
     .line 2
     .line 3
-    const/4 v1, 0x1
+    invoke-direct {v0, p1}, LJfc;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 4
-    invoke-direct {v0, v1, p1}, LpB3;-><init>(ILjava/lang/Object;)V
-
     .line 5
     .line 6
-    .line 7
     invoke-static {v0}, Lcom/snap/composer/modules/ModuleFactoryRegistry;->nativeRegister(Ljava/lang/Object;)V
 
+    .line 7
     .line 8
     .line 9
-    .line 10
     return-void
 .end method
 
@@ -156,15 +153,15 @@
     .end annotation
 
     .line 1
-    new-instance v0, LPFb;
+    new-instance v0, LFVb;
 
     .line 2
     .line 3
-    const/16 v1, 0x1a
+    const/16 v1, 0x18
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p1}, LPFb;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, LFVb;-><init>(ILjava/lang/Object;)V
 
     .line 6
     .line 7

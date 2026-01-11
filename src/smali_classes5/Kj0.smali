@@ -1,77 +1,75 @@
-.class public final LKj0;
+.class public abstract synthetic LKj0;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ljava/lang/Runnable;
 
-
-# instance fields
-.field public final synthetic a:LMj0;
-
-.field public final synthetic b:LR3a;
+# static fields
+.field public static final synthetic a:[I
 
 
 # direct methods
-.method public constructor <init>(LMj0;LR3a;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v0, 0x8
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LKj0;->a:LMj0;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LKj0;->b:LR3a;
-
-    .line 7
-    .line 8
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, LKj0;->a:LMj0;
-
-    .line 2
-    .line 3
-    new-instance v1, LFN$F0;
+    invoke-static {v0}, LzHa;->M(I)[I
 
     .line 4
     .line 5
-    iget-object v2, p0, LKj0;->b:LR3a;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    iget v3, v2, LR3a;->a:F
+    array-length v0, v0
 
     .line 8
+    new-array v0, v0, [I
+
     .line 9
-    iget v2, v2, LR3a;->b:F
-
     .line 10
+    const/4 v1, 0x1
+
     .line 11
-    invoke-direct {v1, v3, v2}, LFN$F0;-><init>(FF)V
+    :try_start_0
+    aput v1, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 12
     .line 13
+    :catch_0
+    const/4 v1, 0x2
+
     .line 14
-    iget-object v0, v0, LMj0;->j0:LIN;
+    const/4 v2, 0x3
 
     .line 15
-    .line 16
-    invoke-interface {v0, v1}, LIN;->a(LFN;)V
+    :try_start_1
+    aput v1, v0, v2
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
+    .line 16
     .line 17
+    :catch_1
+    const/4 v1, 0x4
+
     .line 18
+    :try_start_2
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 19
+    .line 20
+    :catch_2
+    sput-object v0, LKj0;->a:[I
+
+    .line 21
+    .line 22
     return-void
 .end method

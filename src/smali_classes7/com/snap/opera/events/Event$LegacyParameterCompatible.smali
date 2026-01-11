@@ -1,5 +1,5 @@
 .class public abstract Lcom/snap/opera/events/Event$LegacyParameterCompatible;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -18,23 +18,23 @@
 
 
 # virtual methods
-.method public abstract b(Libd;)V
+.method public abstract b(LIqd;)V
 .end method
 
-.method public final c()Libd;
+.method public final c()LIqd;
     .locals 6
 
     .line 1
-    new-instance v0, Libd;
+    new-instance v0, LIqd;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Libd;-><init>()V
+    invoke-direct {v0}, LIqd;-><init>()V
 
     .line 4
     .line 5
     .line 6
-    iget-wide v1, p0, LLR6;->a:J
+    iget-wide v1, p0, LxV6;->a:J
 
     .line 7
     .line 8
@@ -50,7 +50,7 @@
 
     .line 13
     .line 14
-    sget-object v3, LAS6;->w:Lfbd;
+    sget-object v3, LAW6;->w:LFqd;
 
     .line 15
     .line 16
@@ -62,13 +62,13 @@
     move-result-object v1
 
     .line 20
-    invoke-virtual {v0, v3, v1}, Libd;->J(Lgbd;Ljava/lang/Object;)V
+    invoke-virtual {v0, v3, v1}, LIqd;->O(LGqd;Ljava/lang/Object;)V
 
     .line 21
     .line 22
     .line 23
     :cond_0
-    invoke-virtual {p0, v0}, Lcom/snap/opera/events/Event$LegacyParameterCompatible;->b(Libd;)V
+    invoke-virtual {p0, v0}, Lcom/snap/opera/events/Event$LegacyParameterCompatible;->b(LIqd;)V
 
     .line 24
     .line 25

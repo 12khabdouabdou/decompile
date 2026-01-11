@@ -26,11 +26,11 @@
 
 
 # virtual methods
-.method public getFileChannel()LI85;
+.method public getFileChannel()LVe5;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/googlecode/mp4parser/a;->dataSource:LI85;
+    iget-object v0, p0, Lcom/googlecode/mp4parser/a;->dataSource:LVe5;
 
     .line 2
     .line 3
@@ -108,11 +108,11 @@
     move-result-object v5
 
     .line 28
-    check-cast v5, LBif;
+    check-cast v5, LgBf;
 
     .line 29
     .line 30
-    iget v5, v5, LBif;->a:I
+    iget v5, v5, LgBf;->a:I
 
     .line 31
     .line 32

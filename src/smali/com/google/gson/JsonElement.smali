@@ -344,7 +344,7 @@
     throw v0
 .end method
 
-.method public getAsJsonNull()LqB9;
+.method public getAsJsonNull()LIK9;
     .locals 3
 
     .line 1
@@ -363,7 +363,7 @@
     move-object v0, p0
 
     .line 8
-    check-cast v0, LqB9;
+    check-cast v0, LIK9;
 
     .line 9
     .line 10
@@ -682,7 +682,7 @@
     .locals 1
 
     .line 1
-    instance-of v0, p0, LqB9;
+    instance-of v0, p0, LIK9;
 
     .line 2
     .line 3
@@ -725,11 +725,11 @@
     .line 4
     .line 5
     .line 6
-    new-instance v1, LaC9;
+    new-instance v1, LrL9;
 
     .line 7
     .line 8
-    invoke-direct {v1, v0}, LaC9;-><init>(Ljava/io/Writer;)V
+    invoke-direct {v1, v0}, LrL9;-><init>(Ljava/io/Writer;)V
 
     .line 9
     .line 10
@@ -737,11 +737,11 @@
     const/4 v2, 0x1
 
     .line 12
-    iput-boolean v2, v1, LaC9;->Y:Z
+    iput-boolean v2, v1, LrL9;->Y:Z
 
     .line 13
     .line 14
-    invoke-static {v1, p0}, LI0j;->b0(LaC9;Lcom/google/gson/JsonElement;)V
+    invoke-static {v1, p0}, LDz9;->y0(LrL9;Lcom/google/gson/JsonElement;)V
 
     .line 15
     .line 16

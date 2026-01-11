@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/deck/ComposerDeckTransitionEventData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'prevPage\':d,\'newPage\':d,\'type\':r<e>:\'[0]\',\'appearance\':r:\'[1]\'"
     typeReferences = {

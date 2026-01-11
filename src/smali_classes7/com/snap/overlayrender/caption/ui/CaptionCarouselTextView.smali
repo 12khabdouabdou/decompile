@@ -3,15 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements LAj2;
+.implements Lhm2;
 
 
 # instance fields
-.field public final a:LXfi;
+.field public final a:LREi;
 
-.field public b:LNi2;
+.field public b:Lul2;
 
-.field public final c:LXfi;
+.field public final c:LREi;
 
 
 # direct methods
@@ -33,34 +33,34 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 3
-    new-instance p1, Lug2;
+    new-instance p1, Ldj2;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, Lug2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
+    invoke-direct {p1, p0, p2}, Ldj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
 
     .line 4
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 5
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->a:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->a:LREi;
 
     .line 6
-    new-instance p1, Lug2;
+    new-instance p1, Ldj2;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, Lug2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
+    invoke-direct {p1, p0, p2}, Ldj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
 
     .line 7
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 8
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LREi;
 
     return-void
 .end method
@@ -72,41 +72,41 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 10
-    new-instance p1, Lug2;
+    new-instance p1, Ldj2;
 
     const/4 p2, 0x0
 
-    invoke-direct {p1, p0, p2}, Lug2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
+    invoke-direct {p1, p0, p2}, Ldj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
 
     .line 11
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 12
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->a:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->a:LREi;
 
     .line 13
-    new-instance p1, Lug2;
+    new-instance p1, Ldj2;
 
     const/4 p2, 0x1
 
-    invoke-direct {p1, p0, p2}, Lug2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
+    invoke-direct {p1, p0, p2}, Ldj2;-><init>(Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;I)V
 
     .line 14
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 15
-    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LXfi;
+    iput-object p2, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LREi;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LNi2;ZZ)V
+.method public final a(Lul2;ZZ)V
     .locals 19
 
     .line 1
@@ -121,15 +121,15 @@
     const/4 v2, 0x0
 
     .line 6
-    iput-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b:LNi2;
+    iput-object v2, v0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b:Lul2;
 
     .line 7
     .line 8
-    iget-object v3, v1, LNi2;->n:Landroid/graphics/Typeface;
+    iget-object v3, v1, Lul2;->n:Landroid/graphics/Typeface;
 
     .line 9
     .line 10
-    iget v4, v1, LNi2;->o:I
+    iget v4, v1, Lul2;->o:I
 
     .line 11
     .line 12
@@ -154,11 +154,11 @@
     move-result-object v3
 
     .line 23
-    iget-object v4, v1, LNi2;->i:LMi2;
+    iget-object v4, v1, Lul2;->i:Ltl2;
 
     .line 24
     .line 25
-    iget-object v4, v4, LMi2;->a:Lji2;
+    iget-object v4, v4, Ltl2;->a:LNk2;
 
     .line 26
     .line 27
@@ -243,7 +243,7 @@
     move-result v3
 
     .line 65
-    iget v4, v1, LNi2;->m:F
+    iget v4, v1, Lul2;->m:F
 
     .line 66
     .line 67
@@ -265,15 +265,15 @@
     .line 74
     .line 75
     :goto_1
-    iget-object v3, v1, LNi2;->e:LIi2;
+    iget-object v3, v1, Lul2;->e:Lpl2;
 
     .line 76
     .line 77
-    iget-object v4, v3, LIi2;->h:LKi2;
+    iget-object v4, v3, Lpl2;->h:Lrl2;
 
     .line 78
     .line 79
-    iget-boolean v5, v4, LKi2;->a:Z
+    iget-boolean v5, v4, Lrl2;->a:Z
 
     .line 80
     .line 81
@@ -281,7 +281,7 @@
 
     .line 82
     .line 83
-    iget-object v5, v4, LKi2;->b:Ljava/util/List;
+    iget-object v5, v4, Lrl2;->b:Ljava/util/List;
 
     .line 84
     .line 85
@@ -308,7 +308,7 @@
 
     .line 95
     .line 96
-    invoke-static {v5}, Lue3;->t1(Ljava/util/Collection;)[I
+    invoke-static {v5}, Llh3;->s4(Ljava/util/Collection;)[I
 
     .line 97
     .line 98
@@ -316,7 +316,7 @@
     move-result-object v11
 
     .line 100
-    iget-object v5, v4, LKi2;->c:Ljava/util/List;
+    iget-object v5, v4, Lrl2;->c:Ljava/util/List;
 
     .line 101
     .line 102
@@ -328,7 +328,7 @@
 
     .line 105
     .line 106
-    invoke-static {v5}, Lue3;->r1(Ljava/util/Collection;)[F
+    invoke-static {v5}, Llh3;->q4(Ljava/util/Collection;)[F
 
     .line 107
     .line 108
@@ -362,7 +362,7 @@
 
     .line 120
     :cond_4
-    iget-object v5, v1, LNi2;->g:LLi2;
+    iget-object v5, v1, Lul2;->g:Lsl2;
 
     .line 121
     .line 122
@@ -370,19 +370,19 @@
 
     .line 123
     .line 124
-    iget v6, v5, LLi2;->b:I
+    iget v6, v5, Lsl2;->b:I
 
     .line 125
     .line 126
-    iget v7, v5, LLi2;->d:I
+    iget v7, v5, Lsl2;->d:I
 
     .line 127
     .line 128
-    iget v8, v5, LLi2;->a:I
+    iget v8, v5, Lsl2;->a:I
 
     .line 129
     .line 130
-    iget v5, v5, LLi2;->c:I
+    iget v5, v5, Lsl2;->c:I
 
     .line 131
     .line 132
@@ -392,11 +392,11 @@
     .line 134
     .line 135
     :cond_5
-    iget-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LXfi;
+    iget-object v5, v0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LREi;
 
     .line 136
     .line 137
-    invoke-virtual {v5}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v5}, LREi;->getValue()Ljava/lang/Object;
 
     .line 138
     .line 139
@@ -404,28 +404,28 @@
     move-result-object v5
 
     .line 141
-    check-cast v5, LIh2;
+    check-cast v5, Lmk2;
 
     .line 142
     .line 143
-    iget-object v6, v1, LNi2;->d:LJi2;
+    iget-object v6, v1, Lul2;->d:Lql2;
 
     .line 144
     .line 145
-    iget-object v6, v6, LJi2;->a:Ljava/lang/Float;
+    iget-object v6, v6, Lql2;->a:Ljava/lang/Float;
 
     .line 146
     .line 147
-    iget-object v7, v3, LIi2;->e:Ljava/util/List;
+    iget-object v7, v3, Lpl2;->e:Ljava/util/List;
 
     .line 148
     .line 149
-    invoke-virtual {v5, v7, v6}, LIh2;->c(Ljava/util/List;Ljava/lang/Float;)V
+    invoke-virtual {v5, v7, v6}, Lmk2;->c(Ljava/util/List;Ljava/lang/Float;)V
 
     .line 150
     .line 151
     .line 152
-    iget v5, v3, LIi2;->b:I
+    iget v5, v3, Lpl2;->b:I
 
     .line 153
     .line 154
@@ -434,7 +434,7 @@
     .line 155
     .line 156
     .line 157
-    invoke-static {v4, v2}, LKi2;->a(LKi2;Landroid/graphics/LinearGradient;)LKi2;
+    invoke-static {v4, v2}, Lrl2;->a(Lrl2;Landroid/graphics/LinearGradient;)Lrl2;
 
     .line 158
     .line 159
@@ -449,7 +449,7 @@
     const/4 v5, 0x0
 
     .line 164
-    invoke-static {v3, v5, v2, v4}, LIi2;->a(LIi2;ILKi2;I)LIi2;
+    invoke-static {v3, v5, v2, v4}, Lpl2;->a(Lpl2;ILrl2;I)Lpl2;
 
     .line 165
     .line 166
@@ -509,7 +509,7 @@
     .line 186
     .line 187
     .line 188
-    invoke-static/range {v1 .. v18}, LNi2;->a(LNi2;Ljava/lang/String;Ljava/lang/String;LHi2;LJi2;LIi2;LGi2;LLi2;ILMi2;ZZFIFFII)LNi2;
+    invoke-static/range {v1 .. v18}, Lul2;->a(Lul2;Ljava/lang/String;Ljava/lang/String;Lol2;Lql2;Lpl2;Lnl2;Lsl2;ILtl2;ZZFIFFII)Lul2;
 
     .line 189
     .line 190
@@ -517,22 +517,22 @@
     move-result-object v1
 
     .line 192
-    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b:LNi2;
+    iput-object v1, v0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b:Lul2;
 
     .line 193
     .line 194
     return-void
 .end method
 
-.method public final b()LEj2;
+.method public final b()Llm2;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->a:LXfi;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->a:LREi;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 4
     .line 5
@@ -540,7 +540,7 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, LEj2;
+    check-cast v0, Llm2;
 
     .line 8
     .line 9
@@ -566,7 +566,7 @@
     .locals 13
 
     .line 1
-    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b:LNi2;
+    iget-object v0, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b:Lul2;
 
     .line 2
     .line 3
@@ -579,11 +579,11 @@
     .line 6
     .line 7
     :cond_0
-    iget-object v1, v0, LNi2;->f:LGi2;
+    iget-object v1, v0, Lul2;->f:Lnl2;
 
     .line 8
     .line 9
-    iget-boolean v2, v1, LGi2;->f:Z
+    iget-boolean v2, v1, Lnl2;->f:Z
 
     .line 10
     .line 11
@@ -611,7 +611,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 24
     .line 25
@@ -624,7 +624,7 @@
     .line 28
     .line 29
     .line 30
-    iget v4, v1, LGi2;->e:F
+    iget v4, v1, Lnl2;->e:F
 
     .line 31
     .line 32
@@ -632,25 +632,25 @@
 
     .line 33
     .line 34
-    sget-object v9, Lki2;->Z:Lki2;
+    sget-object v9, LOk2;->Z:LOk2;
 
     .line 35
     .line 36
-    iget-object v7, v1, LGi2;->h:Lii2;
+    iget-object v7, v1, Lnl2;->h:LMk2;
 
     .line 37
     .line 38
     const/4 v8, 0x0
 
     .line 39
-    iget v5, v1, LGi2;->d:I
+    iget v5, v1, Lnl2;->d:I
 
     .line 40
     .line 41
     move-object v4, p1
 
     .line 42
-    invoke-virtual/range {v3 .. v9}, LEj2;->c(Landroid/graphics/Canvas;IFLii2;Lhi2;Lki2;)V
+    invoke-virtual/range {v3 .. v9}, Llm2;->c(Landroid/graphics/Canvas;IFLMk2;LLk2;LOk2;)V
 
     .line 43
     .line 44
@@ -663,11 +663,11 @@
 
     .line 47
     :goto_0
-    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LXfi;
+    iget-object p1, p0, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->c:LREi;
 
     .line 48
     .line 49
-    invoke-virtual {p1}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
 
     .line 50
     .line 51
@@ -675,24 +675,24 @@
     move-result-object p1
 
     .line 53
-    check-cast p1, LIh2;
+    check-cast p1, Lmk2;
 
     .line 54
     .line 55
-    invoke-virtual {p1, v4, p0}, LIh2;->b(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
+    invoke-virtual {p1, v4, p0}, Lmk2;->b(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
 
     .line 56
     .line 57
     .line 58
-    iget-object p1, v0, LNi2;->e:LIi2;
+    iget-object p1, v0, Lul2;->e:Lpl2;
 
     .line 59
     .line 60
-    iget-object v1, p1, LIi2;->h:LKi2;
+    iget-object v1, p1, Lpl2;->h:Lrl2;
 
     .line 61
     .line 62
-    iget-boolean v2, v1, LKi2;->a:Z
+    iget-boolean v2, v1, Lrl2;->a:Z
 
     .line 63
     .line 64
@@ -700,7 +700,7 @@
 
     .line 65
     .line 66
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 67
     .line 68
@@ -708,7 +708,7 @@
     move-result-object v2
 
     .line 70
-    invoke-virtual {v2}, LEj2;->f()V
+    invoke-virtual {v2}, Llm2;->f()V
 
     .line 71
     .line 72
@@ -721,7 +721,7 @@
     move-result-object v2
 
     .line 77
-    iget-object v3, v1, LKi2;->d:Landroid/graphics/LinearGradient;
+    iget-object v3, v1, Lrl2;->d:Landroid/graphics/LinearGradient;
 
     .line 78
     .line 79
@@ -735,7 +735,7 @@
     .line 83
     .line 84
     .line 85
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 86
     .line 87
@@ -743,17 +743,17 @@
     move-result-object v2
 
     .line 89
-    invoke-virtual {v2}, LEj2;->e()V
+    invoke-virtual {v2}, Llm2;->e()V
 
     .line 90
     .line 91
     .line 92
     :cond_2
-    iget-object p1, p1, LIi2;->i:LKi2;
+    iget-object p1, p1, Lpl2;->i:Lrl2;
 
     .line 93
     .line 94
-    iget-boolean v2, p1, LKi2;->a:Z
+    iget-boolean v2, p1, Lrl2;->a:Z
 
     .line 95
     .line 96
@@ -761,7 +761,7 @@
 
     .line 97
     .line 98
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 99
     .line 100
@@ -769,12 +769,12 @@
     move-result-object v3
 
     .line 102
-    invoke-virtual {v3}, LEj2;->f()V
+    invoke-virtual {v3}, Llm2;->f()V
 
     .line 103
     .line 104
     .line 105
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 106
     .line 107
@@ -785,7 +785,7 @@
     const/4 v3, 0x0
 
     .line 110
-    iget-object v6, p1, LKi2;->b:Ljava/util/List;
+    iget-object v6, p1, Lrl2;->b:Ljava/util/List;
 
     .line 111
     .line 112
@@ -797,7 +797,7 @@
 
     .line 115
     .line 116
-    invoke-static {v6}, Lue3;->t1(Ljava/util/Collection;)[I
+    invoke-static {v6}, Llh3;->s4(Ljava/util/Collection;)[I
 
     .line 117
     .line 118
@@ -821,7 +821,7 @@
 
     .line 125
     :goto_2
-    iget-object p1, p1, LKi2;->c:Ljava/util/List;
+    iget-object p1, p1, Lrl2;->c:Ljava/util/List;
 
     .line 126
     .line 127
@@ -833,7 +833,7 @@
 
     .line 130
     .line 131
-    invoke-static {p1}, Lue3;->r1(Ljava/util/Collection;)[F
+    invoke-static {p1}, Llh3;->q4(Ljava/util/Collection;)[F
 
     .line 132
     .line 133
@@ -857,7 +857,7 @@
 
     .line 140
     :goto_4
-    sget-object v12, LsL6;->a:LsL6;
+    sget-object v12, LgP6;->a:LgP6;
 
     .line 141
     .line 142
@@ -874,7 +874,7 @@
     const/4 v9, 0x3
 
     .line 147
-    invoke-virtual/range {v5 .. v12}, LEj2;->h(F[I[FIIILjava/util/List;)V
+    invoke-virtual/range {v5 .. v12}, Llm2;->h(F[I[FIIILjava/util/List;)V
 
     .line 148
     .line 149
@@ -884,7 +884,7 @@
     .line 151
     .line 152
     .line 153
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 154
     .line 155
@@ -892,13 +892,13 @@
     move-result-object p1
 
     .line 157
-    invoke-virtual {p1}, LEj2;->e()V
+    invoke-virtual {p1}, Llm2;->e()V
 
     .line 158
     .line 159
     .line 160
     :cond_5
-    iget-boolean p1, v1, LKi2;->a:Z
+    iget-boolean p1, v1, Lrl2;->a:Z
 
     .line 161
     .line 162
@@ -916,11 +916,11 @@
     .line 168
     .line 169
     :cond_6
-    iget-object p1, v0, LNi2;->c:LHi2;
+    iget-object p1, v0, Lul2;->c:Lol2;
 
     .line 170
     .line 171
-    iget-boolean v0, p1, LHi2;->a:Z
+    iget-boolean v0, p1, Lol2;->a:Z
 
     .line 172
     .line 173
@@ -928,7 +928,7 @@
 
     .line 174
     .line 175
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 176
     .line 177
@@ -936,7 +936,7 @@
     move-result-object v0
 
     .line 179
-    invoke-virtual {v0}, LEj2;->f()V
+    invoke-virtual {v0}, Llm2;->f()V
 
     .line 180
     .line 181
@@ -946,7 +946,7 @@
     .line 183
     .line 184
     .line 185
-    iget v1, p1, LHi2;->b:F
+    iget v1, p1, Lol2;->b:F
 
     .line 186
     .line 187
@@ -954,7 +954,7 @@
 
     .line 188
     .line 189
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 190
     .line 191
@@ -962,21 +962,21 @@
     move-result-object v0
 
     .line 193
-    iget p1, p1, LHi2;->c:I
+    iget p1, p1, Lol2;->c:I
 
     .line 194
     .line 195
-    invoke-virtual {v0, p1, v1}, LEj2;->g(IF)V
+    invoke-virtual {v0, p1, v1}, Llm2;->g(IF)V
 
     .line 196
     .line 197
     .line 198
-    invoke-static {v4, p0}, Lvek;->d(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
+    invoke-static {v4, p0}, LqEk;->b(Landroid/graphics/Canvas;Landroid/widget/TextView;)V
 
     .line 199
     .line 200
     .line 201
-    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()LEj2;
+    invoke-virtual {p0}, Lcom/snap/overlayrender/caption/ui/CaptionCarouselTextView;->b()Llm2;
 
     .line 202
     .line 203
@@ -984,7 +984,7 @@
     move-result-object p1
 
     .line 205
-    invoke-virtual {p1}, LEj2;->e()V
+    invoke-virtual {p1}, Llm2;->e()V
 
     .line 206
     .line 207

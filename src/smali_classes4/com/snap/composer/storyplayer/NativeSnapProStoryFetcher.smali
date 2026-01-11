@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LZoc;
+    proxyClass = LtEc;
     schema = "\'getNativeSnapProStory\':f|m|(t, f|s|(r?:\'[0]\', r?:\'[1]\'))"
     typeReferences = {
         Lcom/snap/composer/storyplayer/INativeItem;,

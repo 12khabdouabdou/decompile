@@ -1,5 +1,5 @@
 .class public final Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
-.super Lo17;
+.super Le57;
 .source "SourceFile"
 
 
@@ -22,7 +22,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lo17;"
+        "Le57;"
     }
 .end annotation
 
@@ -34,11 +34,11 @@
 # instance fields
 .field public appInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$ApplicationInfo;
 
-.field public assetsPath:LW0k;
+.field public assetsPath:LRqk;
 
 .field private bitField0_:I
 
-.field public cachePath:LW0k;
+.field public cachePath:LRqk;
 
 .field private clearCache_:Z
 
@@ -46,11 +46,13 @@
 
 .field public deviceLocationHint:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
-.field public documentsPath:LW0k;
+.field public documentsPath:LRqk;
 
 .field private locale_:Ljava/lang/String;
 
 .field public localizedStrings:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$LocalizedString;
+
+.field private preferredLocalization_:Ljava/lang/String;
 
 .field private satelliteModeEnabled_:Z
 
@@ -62,7 +64,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0}, Le57;-><init>()V
 
     .line 2
     .line 3
@@ -87,7 +89,7 @@
 
     .line 4
     .line 5
-    sget-object v0, LTp9;->b:Ljava/lang/Object;
+    sget-object v0, LWy9;->b:Ljava/lang/Object;
 
     .line 6
     .line 7
@@ -150,7 +152,7 @@
     return-object v0
 .end method
 
-.method public static parseFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
+.method public static parseFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -163,7 +165,7 @@
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;-><init>()V
 
-    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
+    invoke-virtual {v0, p0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
 
     move-result-object p0
 
@@ -174,7 +176,7 @@
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            LYq9;
+            LYz9;
         }
     .end annotation
 
@@ -236,11 +238,11 @@
 
     .line 18
     .line 19
-    iput-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LW0k;
+    iput-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LRqk;
 
     .line 20
     .line 21
-    iput-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LW0k;
+    iput-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LRqk;
 
     .line 22
     .line 23
@@ -260,7 +262,7 @@
 
     .line 30
     .line 31
-    iput-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LW0k;
+    iput-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LRqk;
 
     .line 32
     .line 33
@@ -272,17 +274,21 @@
 
     .line 36
     .line 37
-    iput-object v1, p0, Lo17;->unknownFieldData:LLo7;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->preferredLocalization_:Ljava/lang/String;
 
     .line 38
     .line 39
-    const/4 v0, -0x1
+    iput-object v1, p0, Le57;->unknownFieldData:LPt7;
 
     .line 40
+    .line 41
+    const/4 v0, -0x1
+
+    .line 42
     iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
 
-    .line 41
-    .line 42
+    .line 43
+    .line 44
     return-object p0
 .end method
 
@@ -329,6 +335,33 @@
     .line 6
     .line 7
     and-int/lit8 v0, v0, -0x9
+
+    .line 8
+    .line 9
+    iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
+
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public clearPreferredLocalization()Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
+    .locals 1
+
+    .line 1
+    const-string v0, ""
+
+    .line 2
+    .line 3
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->preferredLocalization_:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
+
+    .line 6
+    .line 7
+    and-int/lit8 v0, v0, -0x11
 
     .line 8
     .line 9
@@ -395,7 +428,7 @@
     .locals 7
 
     .line 1
-    invoke-super {p0}, Lo17;->computeSerializedSize()I
+    invoke-super {p0}, Le57;->computeSerializedSize()I
 
     .line 2
     .line 3
@@ -414,7 +447,7 @@
 
     .line 9
     .line 10
-    invoke-static {v2, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v2, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 11
     .line 12
@@ -470,7 +503,7 @@
 
     .line 33
     .line 34
-    invoke-static {v3, v5}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v5}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 35
     .line 36
@@ -531,7 +564,7 @@
     const/4 v5, 0x3
 
     .line 60
-    invoke-static {v5, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v5, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 61
     .line 62
@@ -554,7 +587,7 @@
 
     .line 69
     :cond_4
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LW0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LRqk;
 
     .line 70
     .line 71
@@ -565,7 +598,7 @@
 
     .line 73
     .line 74
-    invoke-static {v4, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v4, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 75
     .line 76
@@ -577,7 +610,7 @@
 
     .line 79
     :cond_5
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LW0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LRqk;
 
     .line 80
     .line 81
@@ -588,7 +621,7 @@
     const/4 v5, 0x5
 
     .line 84
-    invoke-static {v5, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v5, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 85
     .line 86
@@ -614,7 +647,7 @@
     const/4 v1, 0x6
 
     .line 95
-    invoke-static {v1}, Lsa3;->a(I)I
+    invoke-static {v1}, Lbd3;->a(I)I
 
     .line 96
     .line 97
@@ -644,7 +677,7 @@
 
     .line 107
     .line 108
-    invoke-static {v1, v2}, Lsa3;->i(II)I
+    invoke-static {v1, v2}, Lbd3;->i(II)I
 
     .line 109
     .line 110
@@ -671,7 +704,7 @@
 
     .line 119
     .line 120
-    invoke-static {v2}, Lsa3;->a(I)I
+    invoke-static {v2}, Lbd3;->a(I)I
 
     .line 121
     .line 122
@@ -695,7 +728,7 @@
 
     .line 130
     .line 131
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 132
     .line 133
@@ -707,7 +740,7 @@
 
     .line 136
     :cond_a
-    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LW0k;
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LRqk;
 
     .line 137
     .line 138
@@ -719,7 +752,7 @@
 
     .line 141
     .line 142
-    invoke-static {v3, v1}, Lsa3;->l(ILcom/google/protobuf/nano/MessageNano;)I
+    invoke-static {v3, v1}, Lbd3;->l(ILcom/google/protobuf/nano/MessageNano;)I
 
     .line 143
     .line 144
@@ -750,7 +783,7 @@
 
     .line 155
     .line 156
-    invoke-static {v1, v2}, Lsa3;->q(ILjava/lang/String;)I
+    invoke-static {v1, v2}, Lbd3;->q(ILjava/lang/String;)I
 
     .line 157
     .line 158
@@ -758,13 +791,45 @@
     move-result v1
 
     .line 160
-    add-int/2addr v1, v0
+    add-int/2addr v0, v1
 
     .line 161
-    return v1
+    :cond_c
+    iget v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
 
     .line 162
-    :cond_c
+    .line 163
+    and-int/lit8 v1, v1, 0x10
+
+    .line 164
+    .line 165
+    if-eqz v1, :cond_d
+
+    .line 166
+    .line 167
+    const/16 v1, 0xc
+
+    .line 168
+    .line 169
+    iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->preferredLocalization_:Ljava/lang/String;
+
+    .line 170
+    .line 171
+    invoke-static {v1, v2}, Lbd3;->q(ILjava/lang/String;)I
+
+    .line 172
+    .line 173
+    .line 174
+    move-result v1
+
+    .line 175
+    add-int/2addr v1, v0
+
+    .line 176
+    return v1
+
+    .line 177
+    :cond_d
     return v0
 .end method
 
@@ -784,6 +849,17 @@
 
     .line 1
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->locale_:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getPreferredLocalization()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->preferredLocalization_:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -869,6 +945,35 @@
     return v0
 .end method
 
+.method public hasPreferredLocalization()Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
+
+    .line 2
+    .line 3
+    and-int/lit8 v0, v0, 0x10
+
+    .line 4
+    .line 5
+    if-eqz v0, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    return v0
+.end method
+
 .method public hasSatelliteModeEnabled()Z
     .locals 1
 
@@ -927,7 +1032,7 @@
     return v0
 .end method
 
-.method public bridge synthetic mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
+.method public bridge synthetic mergeFrom(LZc3;)Lcom/google/protobuf/nano/MessageNano;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -936,14 +1041,14 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
+    invoke-virtual {p0, p1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public mergeFrom(Lqa3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
+.method public mergeFrom(LZc3;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -954,7 +1059,7 @@
     .line 2
     :cond_0
     :goto_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    invoke-virtual {p1}, LZc3;->v()I
 
     move-result v0
 
@@ -965,7 +1070,7 @@
     sparse-switch v0, :sswitch_data_0
 
     .line 3
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    invoke-virtual {p0, p1, v0}, Le57;->storeUnknownField(LZc3;I)Z
 
     move-result v0
 
@@ -975,13 +1080,30 @@
 
     .line 4
     :sswitch_0
-    invoke-virtual {p1}, Lqa3;->t()Ljava/lang/String;
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->preferredLocalization_:Ljava/lang/String;
+
+    .line 5
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
+
+    or-int/lit8 v0, v0, 0x10
+
+    iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
+
+    goto :goto_0
+
+    .line 6
+    :sswitch_1
+    invoke-virtual {p1}, LZc3;->u()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->locale_:Ljava/lang/String;
 
-    .line 5
+    .line 7
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x8
@@ -990,57 +1112,57 @@
 
     goto :goto_0
 
-    .line 6
-    :sswitch_1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LW0k;
+    .line 8
+    :sswitch_2
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LRqk;
 
     if-nez v0, :cond_1
 
-    .line 7
-    new-instance v0, LW0k;
+    .line 9
+    new-instance v0, LRqk;
 
-    invoke-direct {v0}, LW0k;-><init>()V
+    invoke-direct {v0}, LRqk;-><init>()V
 
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LW0k;
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LRqk;
 
-    .line 8
+    .line 10
     :cond_1
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LRqk;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
-    .line 9
-    :sswitch_2
+    .line 11
+    :sswitch_3
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->deviceLocationHint:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
     if-nez v0, :cond_2
 
-    .line 10
+    .line 12
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->deviceLocationHint:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
-    .line 11
+    .line 13
     :cond_2
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->deviceLocationHint:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$LatLng;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto :goto_0
 
-    .line 12
-    :sswitch_3
-    invoke-virtual {p1}, Lqa3;->f()Z
+    .line 14
+    :sswitch_4
+    invoke-virtual {p1}, LZc3;->g()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->satelliteModeEnabled_:Z
 
-    .line 13
+    .line 15
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x4
@@ -1049,9 +1171,9 @@
 
     goto :goto_0
 
-    .line 14
-    :sswitch_4
-    invoke-virtual {p1}, Lqa3;->q()I
+    .line 16
+    :sswitch_5
+    invoke-virtual {p1}, LZc3;->r()I
 
     move-result v0
 
@@ -1065,11 +1187,11 @@
 
     goto :goto_0
 
-    .line 15
+    .line 17
     :cond_3
     iput v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->theme_:I
 
-    .line 16
+    .line 18
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
 
     or-int/2addr v0, v1
@@ -1078,15 +1200,15 @@
 
     goto :goto_0
 
-    .line 17
-    :sswitch_5
-    invoke-virtual {p1}, Lqa3;->f()Z
+    .line 19
+    :sswitch_6
+    invoke-virtual {p1}, LZc3;->g()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->clearCache_:Z
 
-    .line 18
+    .line 20
     iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
 
     or-int/2addr v0, v2
@@ -1095,57 +1217,57 @@
 
     goto :goto_0
 
-    .line 19
-    :sswitch_6
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LW0k;
+    .line 21
+    :sswitch_7
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LRqk;
 
     if-nez v0, :cond_4
 
-    .line 20
-    new-instance v0, LW0k;
-
-    invoke-direct {v0}, LW0k;-><init>()V
-
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LW0k;
-
-    .line 21
-    :cond_4
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LW0k;
-
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
-
-    goto :goto_0
-
     .line 22
-    :sswitch_7
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LW0k;
+    new-instance v0, LRqk;
 
-    if-nez v0, :cond_5
+    invoke-direct {v0}, LRqk;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LRqk;
 
     .line 23
-    new-instance v0, LW0k;
+    :cond_4
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LRqk;
 
-    invoke-direct {v0}, LW0k;-><init>()V
-
-    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LW0k;
-
-    .line 24
-    :cond_5
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LW0k;
-
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
+    .line 24
     :sswitch_8
-    const/16 v0, 0x1a
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LRqk;
+
+    if-nez v0, :cond_5
 
     .line 25
-    invoke-static {p1, v0}, Ldw8;->E(Lqa3;I)I
+    new-instance v0, LRqk;
+
+    invoke-direct {v0}, LRqk;-><init>()V
+
+    iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LRqk;
+
+    .line 26
+    :cond_5
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LRqk;
+
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
+
+    goto/16 :goto_0
+
+    :sswitch_9
+    const/16 v0, 0x1a
+
+    .line 27
+    invoke-static {p1, v0}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
-    .line 26
+    .line 28
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->localizedStrings:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$LocalizedString;
 
     if-nez v2, :cond_6
@@ -1160,12 +1282,12 @@
     :goto_1
     add-int/2addr v0, v3
 
-    .line 27
+    .line 29
     new-array v4, v0, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$LocalizedString;
 
     if-eqz v3, :cond_7
 
-    .line 28
+    .line 30
     invoke-static {v2, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_7
@@ -1174,24 +1296,24 @@
 
     if-ge v3, v1, :cond_8
 
-    .line 29
+    .line 31
     new-instance v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$LocalizedString;
 
     invoke-direct {v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$LocalizedString;-><init>()V
 
     aput-object v1, v4, v3
 
-    .line 30
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 32
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 31
-    invoke-virtual {p1}, Lqa3;->u()I
+    .line 33
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_2
 
-    .line 32
+    .line 34
     :cond_8
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$LocalizedString;
 
@@ -1199,23 +1321,23 @@
 
     aput-object v0, v4, v3
 
-    .line 33
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 35
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 34
+    .line 36
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->localizedStrings:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$LocalizedString;
 
     goto/16 :goto_0
 
-    :sswitch_9
+    :sswitch_a
     const/16 v0, 0x12
 
-    .line 35
-    invoke-static {p1, v0}, Ldw8;->E(Lqa3;I)I
+    .line 37
+    invoke-static {p1, v0}, LNpk;->A(LZc3;I)I
 
     move-result v0
 
-    .line 36
+    .line 38
     iget-object v2, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->configs:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
     if-nez v2, :cond_9
@@ -1230,12 +1352,12 @@
     :goto_3
     add-int/2addr v0, v3
 
-    .line 37
+    .line 39
     new-array v4, v0, [Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
     if-eqz v3, :cond_a
 
-    .line 38
+    .line 40
     invoke-static {v2, v1, v4, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     :cond_a
@@ -1244,24 +1366,24 @@
 
     if-ge v3, v1, :cond_b
 
-    .line 39
+    .line 41
     new-instance v1, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
     invoke-direct {v1}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;-><init>()V
 
     aput-object v1, v4, v3
 
-    .line 40
-    invoke-virtual {p1, v1}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 42
+    invoke-virtual {p1, v1}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 41
-    invoke-virtual {p1}, Lqa3;->u()I
+    .line 43
+    invoke-virtual {p1}, LZc3;->v()I
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_4
 
-    .line 42
+    .line 44
     :cond_b
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
@@ -1269,55 +1391,56 @@
 
     aput-object v0, v4, v3
 
-    .line 43
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    .line 45
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
-    .line 44
+    .line 46
     iput-object v4, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->configs:[Lsnap/snap_maps_sdk/nano/SnapMapsSdk$Config;
 
     goto/16 :goto_0
 
-    .line 45
-    :sswitch_a
+    .line 47
+    :sswitch_b
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->appInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$ApplicationInfo;
 
     if-nez v0, :cond_c
 
-    .line 46
+    .line 48
     new-instance v0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$ApplicationInfo;
 
     invoke-direct {v0}, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$ApplicationInfo;-><init>()V
 
     iput-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->appInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$ApplicationInfo;
 
-    .line 47
+    .line 49
     :cond_c
     iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->appInfo:Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams$ApplicationInfo;
 
-    invoke-virtual {p1, v0}, Lqa3;->k(Lcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v0}, LZc3;->l(Lcom/google/protobuf/nano/MessageNano;)V
 
     goto/16 :goto_0
 
     :goto_5
-    :sswitch_b
+    :sswitch_c
     return-object p0
 
     nop
 
     :sswitch_data_0
     .sparse-switch
-        0x0 -> :sswitch_b
-        0xa -> :sswitch_a
-        0x12 -> :sswitch_9
-        0x1a -> :sswitch_8
-        0x22 -> :sswitch_7
-        0x2a -> :sswitch_6
-        0x30 -> :sswitch_5
-        0x38 -> :sswitch_4
-        0x40 -> :sswitch_3
-        0x4a -> :sswitch_2
-        0x52 -> :sswitch_1
-        0x5a -> :sswitch_0
+        0x0 -> :sswitch_c
+        0xa -> :sswitch_b
+        0x12 -> :sswitch_a
+        0x1a -> :sswitch_9
+        0x22 -> :sswitch_8
+        0x2a -> :sswitch_7
+        0x30 -> :sswitch_6
+        0x38 -> :sswitch_5
+        0x40 -> :sswitch_4
+        0x4a -> :sswitch_3
+        0x52 -> :sswitch_2
+        0x5a -> :sswitch_1
+        0x62 -> :sswitch_0
     .end sparse-switch
 .end method
 
@@ -1362,6 +1485,34 @@
     .line 7
     .line 8
     or-int/lit8 p1, p1, 0x8
+
+    .line 9
+    .line 10
+    iput p1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
+
+    .line 11
+    .line 12
+    return-object p0
+.end method
+
+.method public setPreferredLocalization(Ljava/lang/String;)Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->preferredLocalization_:Ljava/lang/String;
+
+    .line 5
+    .line 6
+    iget p1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
+
+    .line 7
+    .line 8
+    or-int/lit8 p1, p1, 0x10
 
     .line 9
     .line 10
@@ -1418,7 +1569,7 @@
     return-object p0
 .end method
 
-.method public writeTo(Lsa3;)V
+.method public writeTo(Lbd3;)V
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -1438,7 +1589,7 @@
 
     .line 5
     .line 6
-    invoke-virtual {p1, v1, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 7
     .line 8
@@ -1488,7 +1639,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p1, v2, v4}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v4}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 29
     .line 30
@@ -1540,7 +1691,7 @@
     const/4 v4, 0x3
 
     .line 51
-    invoke-virtual {p1, v4, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v4, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 52
     .line 53
@@ -1554,7 +1705,7 @@
 
     .line 57
     :cond_4
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->cachePath:LRqk;
 
     .line 58
     .line 59
@@ -1565,13 +1716,13 @@
 
     .line 61
     .line 62
-    invoke-virtual {p1, v3, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v3, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 63
     .line 64
     .line 65
     :cond_5
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->assetsPath:LRqk;
 
     .line 66
     .line 67
@@ -1582,7 +1733,7 @@
     const/4 v4, 0x5
 
     .line 70
-    invoke-virtual {p1, v4, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v4, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 71
     .line 72
@@ -1606,7 +1757,7 @@
 
     .line 80
     .line 81
-    invoke-virtual {p1, v0, v1}, Lsa3;->z(IZ)V
+    invoke-virtual {p1, v0, v1}, Lbd3;->z(IZ)V
 
     .line 82
     .line 83
@@ -1630,7 +1781,7 @@
 
     .line 91
     .line 92
-    invoke-virtual {p1, v0, v1}, Lsa3;->I(II)V
+    invoke-virtual {p1, v0, v1}, Lbd3;->I(II)V
 
     .line 93
     .line 94
@@ -1655,7 +1806,7 @@
 
     .line 103
     .line 104
-    invoke-virtual {p1, v1, v0}, Lsa3;->z(IZ)V
+    invoke-virtual {p1, v1, v0}, Lbd3;->z(IZ)V
 
     .line 105
     .line 106
@@ -1673,13 +1824,13 @@
 
     .line 112
     .line 113
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 114
     .line 115
     .line 116
     :cond_a
-    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LW0k;
+    iget-object v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->documentsPath:LRqk;
 
     .line 117
     .line 118
@@ -1691,7 +1842,7 @@
 
     .line 121
     .line 122
-    invoke-virtual {p1, v2, v0}, Lsa3;->K(ILcom/google/protobuf/nano/MessageNano;)V
+    invoke-virtual {p1, v2, v0}, Lbd3;->K(ILcom/google/protobuf/nano/MessageNano;)V
 
     .line 123
     .line 124
@@ -1716,16 +1867,42 @@
 
     .line 133
     .line 134
-    invoke-virtual {p1, v0, v1}, Lsa3;->R(ILjava/lang/String;)V
+    invoke-virtual {p1, v0, v1}, Lbd3;->R(ILjava/lang/String;)V
 
     .line 135
     .line 136
     .line 137
     :cond_c
-    invoke-super {p0, p1}, Lo17;->writeTo(Lsa3;)V
+    iget v0, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->bitField0_:I
 
     .line 138
     .line 139
+    and-int/lit8 v0, v0, 0x10
+
     .line 140
+    .line 141
+    if-eqz v0, :cond_d
+
+    .line 142
+    .line 143
+    const/16 v0, 0xc
+
+    .line 144
+    .line 145
+    iget-object v1, p0, Lsnap/snap_maps_sdk/nano/SnapMapsSdk$MapSdkInitializationParams;->preferredLocalization_:Ljava/lang/String;
+
+    .line 146
+    .line 147
+    invoke-virtual {p1, v0, v1}, Lbd3;->R(ILjava/lang/String;)V
+
+    .line 148
+    .line 149
+    .line 150
+    :cond_d
+    invoke-super {p0, p1}, Le57;->writeTo(Lbd3;)V
+
+    .line 151
+    .line 152
+    .line 153
     return-void
 .end method

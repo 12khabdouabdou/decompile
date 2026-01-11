@@ -1,112 +1,73 @@
-.class public final LmM8;
+.class public abstract LmM8;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Action;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LnM8;
-
 
 # direct methods
-.method public synthetic constructor <init>(LnM8;I)V
+.method public static getMostRecentlyInteractedGroupByParticipants(Lcom/snap/composer/people/GroupStoring;Ljava/util/List;Lkotlin/jvm/functions/Function2;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/people/GroupStoring;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lkotlin/jvm/functions/Function2;",
+            ")V"
+        }
+    .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 
     .line 1
-    iput p2, p0, LmM8;->a:I
-
-    iput-object p1, p0, LmM8;->b:LnM8;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 4
-
-    .line 1
-    iget v0, p0, LmM8;->a:I
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string p1, "Unimplemented method"
 
     .line 4
     .line 5
-    .line 6
-    iget-object v0, p0, LmM8;->b:LnM8;
+    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    invoke-virtual {v0}, LnM8;->a()LTqc;
+    throw p0
+.end method
 
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
+.method public static observeTopGroupsIds(Lcom/snap/composer/people/GroupStoring;)Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/snap/composer/people/GroupStoring;",
+            ")",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;>;"
+        }
+    .end annotation
 
-    .line 12
-    sget-object v1, Laa;->Z:LcSa;
+    .annotation runtime LhC3;
+    .end annotation
 
-    .line 13
-    .line 14
-    const/4 v2, 0x0
+    .line 1
+    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
 
-    .line 15
-    const/4 v3, 0x1
+    .line 2
+    .line 3
+    const-string v0, "Unimplemented method"
 
-    .line 16
-    invoke-virtual {v0, v1, v3, v3, v2}, LTqc;->D(LcSa;ZZLPpc;)V
+    .line 4
+    .line 5
+    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
 
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_0
-    iget-object v0, p0, LmM8;->b:LnM8;
-
-    .line 21
-    .line 22
-    invoke-virtual {v0}, LnM8;->a()LTqc;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    sget-object v1, Laa;->Z:LcSa;
-
-    .line 27
-    .line 28
-    const/4 v2, 0x0
-
-    .line 29
-    const/4 v3, 0x1
-
-    .line 30
-    invoke-virtual {v0, v1, v3, v3, v2}, LTqc;->D(LcSa;ZZLPpc;)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-void
-
-    .line 34
-    nop
-
-    .line 35
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 6
+    .line 7
+    .line 8
+    throw p0
 .end method

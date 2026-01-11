@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lv9c;
+    proxyClass = Lgoc;
     schema = "\'audioDataLoader\':r?:\'[0]\',\'playerFactory\':r?:\'[1]\',\'audioFactory\':r?:\'[2]\',\'favoritesService\':r?:\'[3]\',\'recentsService\':r?:\'[4]\',\'notificationPresenter\':r?:\'[5]\',\'actionSheetPresenter\':r?:\'[6]\',\'featureSettings\':r?:\'[7]\',\'audioRecorder\':r?:\'[8]\',\'openModularCamera\':f?|m|(r:\'[9]\')"
     typeReferences = {
         Lcom/snap/music/core/composer/IAudioDataLoader;,
@@ -55,7 +55,7 @@
 .end method
 
 .method public abstract openModularCamera(Lcom/snap/music/core/composer/PickerTrack;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

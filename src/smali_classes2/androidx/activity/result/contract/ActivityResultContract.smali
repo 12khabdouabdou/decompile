@@ -31,15 +31,15 @@
 
 
 # virtual methods
-.method public abstract a(Landroid/content/Context;Lzo9;)Landroid/content/Intent;
+.method public abstract a(Landroid/content/Context;LBx9;)Landroid/content/Intent;
 .end method
 
-.method public b(Lzo9;)V
+.method public b(LBx9;)V
     .locals 0
 
     .line 1
     return-void
 .end method
 
-.method public abstract c(ILandroid/content/Intent;)Ljava/lang/Object;
+.method public abstract c(Landroid/content/Intent;I)Ljava/lang/Object;
 .end method

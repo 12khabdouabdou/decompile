@@ -1,37 +1,36 @@
 .class public final Lk6;
-.super LrE9;
+.super LDPk;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:Lio/reactivex/rxjava3/core/CompletableEmitter;
+.field public final synthetic b:Ljava/util/List;
+
+.field public final synthetic c:Ljava/util/ArrayList;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/reactivex/rxjava3/core/CompletableEmitter;I)V
+.method public synthetic constructor <init>(Ljava/util/List;Ljava/util/ArrayList;I)V
     .locals 0
 
     .line 1
-    iput p2, p0, Lk6;->a:I
+    iput p3, p0, Lk6;->a:I
 
-    iput-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
+    iput-object p1, p0, Lk6;->b:Ljava/util/List;
 
-    const/4 p1, 0x1
+    iput-object p2, p0, Lk6;->c:Ljava/util/ArrayList;
 
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+.method public final a(II)Z
+    .locals 2
 
     .line 1
     iget v0, p0, Lk6;->a:I
@@ -43,494 +42,359 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, Ljava/lang/String;
+    const/4 p1, 0x1
 
     .line 7
+    return p1
+
     .line 8
-    iget-object v0, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
+    :pswitch_0
+    iget-object v0, p0, Lk6;->b:Ljava/util/List;
 
     .line 9
     .line 10
-    if-eqz p1, :cond_0
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 11
     .line 12
-    new-instance v1, Ljava/lang/RuntimeException;
+    .line 13
+    move-result-object p1
+
+    .line 14
+    check-cast p1, LA5;
+
+    .line 15
+    .line 16
+    iget-object v0, p0, Lk6;->c:Ljava/util/ArrayList;
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p2
+
+    .line 22
+    check-cast p2, LA5;
+
+    .line 23
+    .line 24
+    iget-object v0, p1, LA5;->a:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    iget-object v1, p2, LA5;->a:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-static {v0, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v0
+
+    .line 32
+    if-eqz v0, :cond_0
+
+    .line 33
+    .line 34
+    iget-boolean v0, p1, LA5;->g:Z
+
+    .line 35
+    .line 36
+    iget-boolean v1, p2, LA5;->g:Z
+
+    .line 37
+    .line 38
+    if-ne v0, v1, :cond_0
+
+    .line 39
+    .line 40
+    iget-boolean v0, p1, LA5;->i:Z
+
+    .line 41
+    .line 42
+    iget-boolean v1, p2, LA5;->i:Z
+
+    .line 43
+    .line 44
+    if-ne v0, v1, :cond_0
+
+    .line 45
+    .line 46
+    iget-boolean p1, p1, LA5;->f:Z
+
+    .line 47
+    .line 48
+    iget-boolean p2, p2, LA5;->f:Z
+
+    .line 49
+    .line 50
+    if-ne p1, p2, :cond_0
+
+    .line 51
+    .line 52
+    const/4 p1, 0x1
+
+    .line 53
+    goto :goto_0
+
+    .line 54
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 55
+    :goto_0
+    return p1
+
+    .line 56
+    nop
+
+    .line 57
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final b(II)Z
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lk6;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lk6;->b:Ljava/util/List;
+
+    .line 7
+    .line 8
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    iget-object v0, p0, Lk6;->c:Ljava/util/ArrayList;
 
     .line 13
     .line 14
-    invoke-direct {v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     .line 15
     .line 16
     .line 17
-    invoke-interface {v0, v1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onError(Ljava/lang/Throwable;)V
+    move-result-object p2
 
     .line 18
+    invoke-static {p1, p2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 19
     .line 20
-    goto :goto_0
-
     .line 21
-    :cond_0
-    invoke-interface {v0}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
+    move-result p1
 
     .line 22
+    return p1
+
     .line 23
-    .line 24
-    :goto_0
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 25
-    .line 26
-    return-object p1
-
-    .line 27
     :pswitch_0
-    check-cast p1, Ljava/lang/String;
+    iget-object v0, p0, Lk6;->b:Ljava/util/List;
 
+    .line 24
+    .line 25
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 26
+    .line 27
     .line 28
+    move-result-object p1
+
     .line 29
-    new-instance v0, Ljava/lang/Throwable;
+    check-cast p1, LA5;
 
     .line 30
     .line 31
-    invoke-direct {v0, p1}, Ljava/lang/Throwable;-><init>(Ljava/lang/String;)V
+    iget-object v0, p0, Lk6;->c:Ljava/util/ArrayList;
 
     .line 32
     .line 33
-    .line 34
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
+    invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
+    .line 34
     .line 35
     .line 36
-    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onError(Ljava/lang/Throwable;)V
+    move-result-object p2
 
     .line 37
+    check-cast p2, LA5;
+
     .line 38
     .line 39
-    sget-object p1, Li7j;->a:Li7j;
+    if-eq p1, p2, :cond_1
 
     .line 40
     .line 41
-    return-object p1
+    iget-object p1, p1, LA5;->a:Ljava/lang/String;
 
     .line 42
-    :pswitch_1
-    check-cast p1, Ljava/lang/Boolean;
-
     .line 43
-    .line 44
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    iget-object p2, p2, LA5;->a:Ljava/lang/String;
 
+    .line 44
     .line 45
+    invoke-static {p1, p2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
     .line 46
     .line 47
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
     .line 48
+    move-result p1
+
     .line 49
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
+    if-eqz p1, :cond_0
 
     .line 50
     .line 51
+    goto :goto_0
+
     .line 52
-    sget-object p1, Li7j;->a:Li7j;
+    :cond_0
+    const/4 p1, 0x0
 
     .line 53
-    .line 54
-    return-object p1
-
-    .line 55
-    :pswitch_2
-    check-cast p1, Landroid/view/View;
-
-    .line 56
-    .line 57
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 58
-    .line 59
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 60
-    .line 61
-    .line 62
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 63
-    .line 64
-    return-object p1
-
-    .line 65
-    :pswitch_3
-    check-cast p1, Landroid/view/View;
-
-    .line 66
-    .line 67
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 68
-    .line 69
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 70
-    .line 71
-    .line 72
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 73
-    .line 74
-    return-object p1
-
-    .line 75
-    :pswitch_4
-    check-cast p1, Landroid/view/View;
-
-    .line 76
-    .line 77
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 78
-    .line 79
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 80
-    .line 81
-    .line 82
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 83
-    .line 84
-    return-object p1
-
-    .line 85
-    :pswitch_5
-    check-cast p1, Landroid/view/View;
-
-    .line 86
-    .line 87
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 88
-    .line 89
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 90
-    .line 91
-    .line 92
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 93
-    .line 94
-    return-object p1
-
-    .line 95
-    :pswitch_6
-    check-cast p1, Landroid/view/View;
-
-    .line 96
-    .line 97
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 98
-    .line 99
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 100
-    .line 101
-    .line 102
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 103
-    .line 104
-    return-object p1
-
-    .line 105
-    :pswitch_7
-    check-cast p1, LHU9;
-
-    .line 106
-    .line 107
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 108
-    .line 109
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 110
-    .line 111
-    .line 112
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 113
-    .line 114
-    return-object p1
-
-    .line 115
-    :pswitch_8
-    check-cast p1, Landroid/view/View;
-
-    .line 116
-    .line 117
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 118
-    .line 119
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 120
-    .line 121
-    .line 122
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 123
-    .line 124
-    return-object p1
-
-    .line 125
-    :pswitch_9
-    check-cast p1, Landroid/view/View;
-
-    .line 126
-    .line 127
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 128
-    .line 129
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 130
-    .line 131
-    .line 132
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 133
-    .line 134
-    return-object p1
-
-    .line 135
-    :pswitch_a
-    check-cast p1, Landroid/view/View;
-
-    .line 136
-    .line 137
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 138
-    .line 139
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 140
-    .line 141
-    .line 142
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 143
-    .line 144
-    return-object p1
-
-    .line 145
-    :pswitch_b
-    check-cast p1, Ljava/lang/Number;
-
-    .line 146
-    .line 147
-    invoke-virtual {p1}, Ljava/lang/Number;->doubleValue()D
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-wide v0
-
-    .line 151
-    const-wide/16 v2, 0x0
-
-    .line 152
-    .line 153
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 154
-    .line 155
-    cmpl-double v4, v0, v2
-
-    .line 156
-    .line 157
-    if-lez v4, :cond_1
-
-    .line 158
-    .line 159
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 160
-    .line 161
-    .line 162
     goto :goto_1
 
-    .line 163
+    .line 54
     :cond_1
-    new-instance v2, Ljava/lang/IllegalStateException;
+    :goto_0
+    const/4 p1, 0x1
 
-    .line 164
-    .line 165
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    .line 166
-    .line 167
-    const-string v4, "Failed with status: "
-
-    .line 168
-    .line 169
-    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 170
-    .line 171
-    .line 172
-    invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
-
-    .line 173
-    .line 174
-    .line 175
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 176
-    .line 177
-    .line 178
-    move-result-object v0
-
-    .line 179
-    invoke-direct {v2, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 180
-    .line 181
-    .line 182
-    invoke-interface {p1, v2}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onError(Ljava/lang/Throwable;)V
-
-    .line 183
-    .line 184
-    .line 185
+    .line 55
     :goto_1
-    sget-object p1, Li7j;->a:Li7j;
+    return p1
 
-    .line 186
-    .line 187
-    return-object p1
-
-    .line 188
-    :pswitch_c
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 189
-    .line 190
-    iget-object v0, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 191
-    .line 192
-    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onError(Ljava/lang/Throwable;)V
-
-    .line 193
-    .line 194
-    .line 195
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 196
-    .line 197
-    return-object p1
-
-    .line 198
-    :pswitch_d
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 199
-    .line 200
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 201
-    .line 202
-    .line 203
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 204
-    .line 205
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 206
-    .line 207
-    .line 208
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 209
-    .line 210
-    return-object p1
-
-    .line 211
-    :pswitch_e
-    check-cast p1, Ljava/lang/Boolean;
-
-    .line 212
-    .line 213
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 214
-    .line 215
-    .line 216
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 217
-    .line 218
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 219
-    .line 220
-    .line 221
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 222
-    .line 223
-    return-object p1
-
-    .line 224
-    :pswitch_f
-    check-cast p1, Landroid/view/View;
-
-    .line 225
-    .line 226
-    iget-object p1, p0, Lk6;->b:Lio/reactivex/rxjava3/core/CompletableEmitter;
-
-    .line 227
-    .line 228
-    invoke-interface {p1}, Lio/reactivex/rxjava3/core/CompletableEmitter;->onComplete()V
-
-    .line 229
-    .line 230
-    .line 231
-    sget-object p1, Li7j;->a:Li7j;
-
-    .line 232
-    .line 233
-    return-object p1
-
-    .line 234
+    .line 56
     nop
 
-    .line 235
+    .line 57
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_f
-        :pswitch_e
-        :pswitch_d
-        :pswitch_c
-        :pswitch_b
-        :pswitch_a
-        :pswitch_9
-        :pswitch_8
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final h()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lk6;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lk6;->c:Ljava/util/ArrayList;
+
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    return v0
+
+    .line 13
+    :pswitch_0
+    iget-object v0, p0, Lk6;->c:Ljava/util/ArrayList;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    return v0
+
+    .line 20
+    nop
+
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public final i()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lk6;->a:I
+
+    .line 2
+    .line 3
+    packed-switch v0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    iget-object v0, p0, Lk6;->b:Ljava/util/List;
+
+    .line 7
+    .line 8
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 9
+    .line 10
+    .line 11
+    move-result v0
+
+    .line 12
+    return v0
+
+    .line 13
+    :pswitch_0
+    iget-object v0, p0, Lk6;->b:Ljava/util/List;
+
+    .line 14
+    .line 15
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    return v0
+
+    .line 20
+    nop
+
+    .line 21
+    :pswitch_data_0
+    .packed-switch 0x0
         :pswitch_0
     .end packed-switch
 .end method

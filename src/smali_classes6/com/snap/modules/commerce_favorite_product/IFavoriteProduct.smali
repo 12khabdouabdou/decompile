@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LrV8;
+    proxyClass = LT29;
     schema = "\'nativeFavoritesService\':r:\'[0]\',\'nativeFavoritesTooltipService\':r:\'[1]\',\'nativeContextCardFavoritesNotificationService\':r:\'[2]\',\'shouldEnableFavoriteButton\':g<c>:\'[3]\'<b@>"
     typeReferences = {
         Lcom/snap/modules/commerce_favorite_product/INativeContextCardFavoritesService;,

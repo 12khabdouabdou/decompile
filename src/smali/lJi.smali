@@ -1,76 +1,150 @@
 .class public final LlJi;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field public final synthetic a:I
+
+.field public final synthetic b:LmJi;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public synthetic constructor <init>(LmJi;I)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LlJi;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    sget-object v0, LrPb;->Z:LrPb;
+    iput-object p1, p0, LlJi;->b:LmJi;
 
-    .line 5
-    .line 6
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
-    .line 9
-    const-string v0, "TopGroupsProvider"
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 10
-    .line 11
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    .line 12
-    .line 13
-    .line 14
-    sget-object v0, Lrn0;->a:Lrn0;
-
-    .line 15
-    .line 16
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    iput-object v0, p0, LlJi;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 21
-    .line 22
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
-    .locals 1
+.method public final d()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LlJi;->a:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iget v0, p0, LlJi;->a:I
 
     .line 2
     .line 3
-    invoke-static {v0, v0}, LEU0;->r(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    iget-object v0, p0, LlJi;->b:LmJi;
 
     .line 7
-    return-object v0
+    .line 8
+    iget-object v0, v0, LmJi;->f:Lq85;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, Lq85;->get()Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    check-cast v0, LI23;
+
+    .line 15
+    .line 16
+    sget-object v1, LBY0;->F0:LBY0;
+
+    .line 17
+    .line 18
+    sget-object v2, Lk33;->a:LQi7;
+
+    .line 19
+    .line 20
+    invoke-interface {v0, v1, v2}, LI23;->u(LcM3;LQi7;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    .line 25
+    .line 26
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-object v1
+
+    .line 30
+    :pswitch_0
+    iget-object v0, p0, LlJi;->b:LmJi;
+
+    .line 31
+    .line 32
+    iget-object v0, v0, LmJi;->f:Lq85;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0}, Lq85;->get()Ljava/lang/Object;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v0
+
+    .line 38
+    check-cast v0, LI23;
+
+    .line 39
+    .line 40
+    sget-object v1, LBY0;->G0:LBY0;
+
+    .line 41
+    .line 42
+    sget-object v2, Lk33;->a:LQi7;
+
+    .line 43
+    .line 44
+    invoke-interface {v0, v1, v2}, LI23;->u(LcM3;LQi7;)Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v0
+
+    .line 48
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    .line 49
+    .line 50
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
+
+    .line 51
+    .line 52
+    .line 53
+    return-object v1
+
+    .line 54
+    nop
+
+    .line 55
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

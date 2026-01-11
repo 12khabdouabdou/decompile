@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/chat_product_ad/ChatProductAdItemInstallmentInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'installmentPayment\':s,\'installmentDescription\':s,\'downPayment\':s?"
     typeReferences = {}

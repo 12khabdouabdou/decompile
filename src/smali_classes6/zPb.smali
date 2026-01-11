@@ -3,23 +3,23 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LAPb;
+.field public final synthetic b:LBPb;
 
 
 # direct methods
-.method public synthetic constructor <init>(LAPb;I)V
+.method public synthetic constructor <init>(LBPb;I)V
     .locals 0
 
     .line 1
     iput p2, p0, LzPb;->a:I
 
-    iput-object p1, p0, LzPb;->b:LAPb;
+    iput-object p1, p0, LzPb;->b:LBPb;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,8 +28,8 @@
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 11
+.method public final accept(Ljava/lang/Object;)V
+    .locals 10
 
     .line 1
     iget v0, p0, LzPb;->a:I
@@ -41,277 +41,550 @@
     .line 4
     .line 5
     .line 6
-    check-cast p1, LsPb;
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 7
     .line 8
-    const/4 v0, 0x0
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 9
-    iget-object v1, p0, LzPb;->b:LAPb;
-
     .line 10
     .line 11
-    invoke-virtual {v1, p1, v0}, LAPb;->k(LsPb;Z)Lio/reactivex/rxjava3/core/Observable;
+    move-result p1
 
     .line 12
+    if-eqz p1, :cond_0
+
     .line 13
     .line 14
-    move-result-object v0
+    const/4 p1, 0x4
 
     .line 15
-    new-instance v1, Lrwb;
+    goto :goto_0
 
     .line 16
+    :cond_0
+    const/4 p1, 0x0
+
     .line 17
-    const/16 v2, 0xc
+    :goto_0
+    iget-object v0, p0, LzPb;->b:LBPb;
 
     .line 18
     .line 19
-    invoke-direct {v1, v2, p1}, Lrwb;-><init>(ILjava/lang/Object;)V
+    iget-object v0, v0, LBPb;->o0:LHT9;
 
     .line 20
     .line 21
+    if-eqz v0, :cond_1
+
     .line 22
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
-
     .line 23
-    .line 24
-    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    invoke-virtual {v0, p1}, LHT9;->e(I)V
 
+    .line 24
     .line 25
     .line 26
+    return-void
+
     .line 27
-    return-object p1
+    :cond_1
+    const-string p1, "incompatibleMediaIcon"
 
     .line 28
-    :pswitch_0
-    check-cast p1, Ljava/util/Map;
-
     .line 29
-    .line 30
-    new-instance v0, Ljava/util/ArrayList;
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
+    .line 30
     .line 31
     .line 32
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    const/4 p1, 0x0
 
     .line 33
-    .line 34
-    .line 35
-    invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    throw p1
 
+    .line 34
+    :pswitch_0
+    check-cast p1, LDpd;
+
+    .line 35
     .line 36
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
+
     .line 37
     .line 38
-    move-result-object p1
+    check-cast v0, Lryh;
 
     .line 39
-    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
     .line 40
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
+
     .line 41
     .line 42
-    move-result-object p1
+    check-cast p1, LDjj;
 
     .line 43
-    :cond_0
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
     .line 44
+    iget-object v1, p1, LDjj;->c:Ljava/lang/Object;
+
     .line 45
     .line 46
-    move-result v1
+    check-cast v1, LVgj;
 
     .line 47
-    if-eqz v1, :cond_3
-
     .line 48
-    .line 49
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    instance-of v2, v0, LWsh;
 
+    .line 49
     .line 50
+    const/4 v3, 0x1
+
     .line 51
+    const/4 v4, 0x0
+
     .line 52
-    move-result-object v1
+    if-nez v2, :cond_2
 
     .line 53
-    check-cast v1, Ljava/util/Map$Entry;
-
     .line 54
-    .line 55
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    instance-of v2, v0, LZsh;
 
+    .line 55
     .line 56
+    if-eqz v2, :cond_3
+
     .line 57
     .line 58
-    move-result-object v2
+    :cond_2
+    sget-object v2, LVgj;->c:LVgj;
 
     .line 59
-    check-cast v2, Lcom/snapchat/client/messaging/FeedEntry;
-
     .line 60
-    .line 61
-    invoke-virtual {v2}, Lcom/snapchat/client/messaging/FeedEntry;->getConversationSubType()Lcom/snapchat/client/messaging/ConversationSubType;
+    if-eq v1, v2, :cond_3
 
+    .line 61
     .line 62
+    const/4 v2, 0x1
+
     .line 63
+    goto :goto_1
+
     .line 64
-    move-result-object v2
+    :cond_3
+    const/4 v2, 0x0
 
     .line 65
-    sget-object v3, Lcom/snapchat/client/messaging/ConversationSubType;->CAMPAIGN:Lcom/snapchat/client/messaging/ConversationSubType;
+    :goto_1
+    iget-object p1, p1, LDjj;->b:Ljava/lang/Object;
 
     .line 66
     .line 67
-    if-eq v2, v3, :cond_2
+    check-cast p1, Ljava/lang/Number;
 
     .line 68
     .line 69
-    iget-object v2, p0, LzPb;->b:LAPb;
+    invoke-virtual {p1}, Ljava/lang/Number;->intValue()I
 
     .line 70
     .line 71
-    iget-object v2, v2, LAPb;->f:LxV7;
-
     .line 72
+    move-result p1
+
     .line 73
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    sget-object v5, LVgj;->b:LVgj;
 
     .line 74
     .line 75
-    .line 76
-    move-result-object v3
+    if-ne v1, v5, :cond_4
 
+    .line 76
     .line 77
-    check-cast v3, Lcom/snapchat/client/messaging/FeedEntry;
+    instance-of v1, v0, LXsh;
 
     .line 78
     .line 79
-    iget-object v2, v2, LxV7;->h:LBh7;
+    if-nez v1, :cond_4
 
     .line 80
     .line 81
-    invoke-virtual {v2, v3}, LBh7;->b(Lcom/snapchat/client/messaging/FeedEntry;)Z
+    const/4 v1, 0x1
 
     .line 82
+    goto :goto_2
+
     .line 83
+    :cond_4
+    const/4 v1, 0x0
+
     .line 84
-    move-result v2
+    :goto_2
+    instance-of v5, v0, Leyh;
 
     .line 85
-    if-eqz v2, :cond_2
-
     .line 86
+    if-nez v5, :cond_6
+
     .line 87
-    new-instance v3, LOP0;
-
     .line 88
-    .line 89
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    instance-of v5, v0, Lcyh;
 
+    .line 89
     .line 90
+    if-eqz v5, :cond_5
+
     .line 91
     .line 92
-    move-result-object v2
+    goto :goto_3
 
     .line 93
-    move-object v7, v2
+    :cond_5
+    const/4 v5, 0x0
 
     .line 94
-    check-cast v7, Ljava/lang/String;
+    goto :goto_4
 
     .line 95
+    :cond_6
+    :goto_3
+    const/4 v5, 0x1
+
     .line 96
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    :goto_4
+    if-nez v2, :cond_8
 
     .line 97
     .line 98
-    .line 99
-    move-result-object v1
+    if-eqz v1, :cond_7
 
+    .line 99
     .line 100
-    check-cast v1, Lcom/snapchat/client/messaging/FeedEntry;
+    goto :goto_5
 
     .line 101
+    :cond_7
+    const/4 v3, 0x0
+
     .line 102
-    invoke-virtual {v1}, Lcom/snapchat/client/messaging/FeedEntry;->getConversationType()Lcom/snapchat/client/messaging/ConversationType;
+    :cond_8
+    :goto_5
+    iget-object v2, p0, LzPb;->b:LBPb;
 
     .line 103
     .line 104
-    .line 105
-    move-result-object v1
+    iget-object v6, v2, LBPb;->q0:LHT9;
 
+    .line 105
     .line 106
-    sget-object v2, Lcom/snapchat/client/messaging/ConversationType;->USERCREATEDGROUP:Lcom/snapchat/client/messaging/ConversationType;
+    const/4 v7, 0x0
 
     .line 107
-    .line 108
-    if-ne v1, v2, :cond_1
+    if-eqz v6, :cond_16
 
+    .line 108
     .line 109
+    const/4 v8, 0x4
+
     .line 110
-    const/4 v1, 0x1
+    if-eqz v3, :cond_9
 
     .line 111
-    const/4 v10, 0x1
-
     .line 112
-    goto :goto_1
-
-    .line 113
-    :cond_1
-    const/4 v1, 0x0
-
-    .line 114
-    const/4 v10, 0x0
-
-    .line 115
-    :goto_1
     const/4 v9, 0x0
 
-    .line 116
-    const/16 v4, 0xfa
+    .line 113
+    goto :goto_6
 
+    .line 114
+    :cond_9
+    const/4 v9, 0x4
+
+    .line 115
+    :goto_6
+    invoke-virtual {v6, v9}, LHT9;->e(I)V
+
+    .line 116
     .line 117
     .line 118
-    const/4 v8, 0x0
+    iget-object v6, v2, LBPb;->i0:Lcom/snap/ui/view/LazyIconView;
 
     .line 119
-    const-wide/16 v5, 0x0
-
     .line 120
-    .line 121
-    invoke-direct/range {v3 .. v10}, LOP0;-><init>(IJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    const-string v9, "spectaclesIconView"
 
+    .line 121
     .line 122
+    if-eqz v6, :cond_15
+
     .line 123
     .line 124
-    goto :goto_2
+    if-eqz v3, :cond_a
 
     .line 125
-    :cond_2
-    const/4 v3, 0x0
-
     .line 126
-    :goto_2
-    if-eqz v3, :cond_0
+    const/4 v3, 0x4
 
     .line 127
+    goto :goto_7
+
     .line 128
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :cond_a
+    const/4 v3, 0x0
 
     .line 129
+    :goto_7
+    invoke-virtual {v6, v3}, Lcom/snap/ui/view/LazyIconView;->setVisibility(I)V
+
     .line 130
     .line 131
-    goto :goto_0
-
     .line 132
-    :cond_3
-    return-object v0
+    if-eqz v5, :cond_c
 
     .line 133
+    .line 134
+    iget-object v3, v2, LBPb;->h0:Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 135
+    .line 136
+    if-eqz v3, :cond_b
+
+    .line 137
+    .line 138
+    invoke-virtual {v3}, Lcom/snap/imageloading/view/SnapImageView;->clear()V
+
+    .line 139
+    .line 140
+    .line 141
+    iget-object v3, v2, LA7k;->c:Lsw;
+
+    .line 142
+    .line 143
+    check-cast v3, LCPb;
+
+    .line 144
+    .line 145
+    invoke-virtual {v2, v3, v7, v1}, LBPb;->K(LCPb;LCPb;Z)V
+
+    .line 146
+    .line 147
+    .line 148
+    goto :goto_8
+
+    .line 149
+    :cond_b
+    const-string p1, "imageView"
+
+    .line 150
+    .line 151
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 152
+    .line 153
+    .line 154
+    throw v7
+
+    .line 155
+    :cond_c
+    :goto_8
+    iget-object v3, v2, LBPb;->u0:LHT9;
+
+    .line 156
+    .line 157
+    const-string v5, "importingProgressView"
+
+    .line 158
+    .line 159
+    if-eqz v3, :cond_14
+
+    .line 160
+    .line 161
+    if-eqz v1, :cond_d
+
+    .line 162
+    .line 163
+    const/4 v8, 0x0
+
+    .line 164
+    :cond_d
+    invoke-virtual {v3, v8}, LHT9;->e(I)V
+
+    .line 165
+    .line 166
+    .line 167
+    if-eqz v1, :cond_10
+
+    .line 168
+    .line 169
+    iget-object v1, v2, LBPb;->u0:LHT9;
+
+    .line 170
+    .line 171
+    if-eqz v1, :cond_f
+
+    .line 172
+    .line 173
+    invoke-virtual {v1}, LHT9;->a()Landroid/view/View;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object v1
+
+    .line 177
+    check-cast v1, Lcom/snap/ui/view/PercentProgressView;
+
+    .line 178
+    .line 179
+    invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
+
+    .line 180
+    .line 181
+    .line 182
+    move-result v3
+
+    .line 183
+    if-nez v3, :cond_11
+
+    .line 184
+    .line 185
+    iget v3, v1, Lcom/snap/ui/view/PercentProgressView;->g0:I
+
+    .line 186
+    .line 187
+    if-gt p1, v3, :cond_e
+
+    .line 188
+    .line 189
+    goto :goto_9
+
+    .line 190
+    :cond_e
+    iget-object v1, v1, Lcom/snap/ui/view/PercentProgressView;->f0:Landroid/animation/ValueAnimator;
+
+    .line 191
+    .line 192
+    filled-new-array {v3, p1}, [I
+
+    .line 193
+    .line 194
+    .line 195
+    move-result-object p1
+
+    .line 196
+    invoke-virtual {v1, p1}, Landroid/animation/ValueAnimator;->setIntValues([I)V
+
+    .line 197
+    .line 198
+    .line 199
+    invoke-virtual {v1}, Landroid/animation/ValueAnimator;->start()V
+
+    .line 200
+    .line 201
+    .line 202
+    goto :goto_9
+
+    .line 203
+    :cond_f
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 204
+    .line 205
+    .line 206
+    throw v7
+
+    .line 207
+    :cond_10
+    invoke-virtual {v2}, LBPb;->I()V
+
+    .line 208
+    .line 209
+    .line 210
+    :cond_11
+    :goto_9
+    instance-of p1, v0, LXsh;
+
+    .line 211
+    .line 212
+    if-eqz p1, :cond_13
+
+    .line 213
+    .line 214
+    iget-object p1, v2, LBPb;->i0:Lcom/snap/ui/view/LazyIconView;
+
+    .line 215
+    .line 216
+    if-eqz p1, :cond_12
+
+    .line 217
+    .line 218
+    invoke-virtual {p1, v4}, Lcom/snap/ui/view/LazyIconView;->setVisibility(I)V
+
+    .line 219
+    .line 220
+    .line 221
+    iget-object p1, v2, LBPb;->G0:Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 222
+    .line 223
+    if-eqz p1, :cond_13
+
+    .line 224
+    .line 225
+    invoke-interface {p1}, Lio/reactivex/rxjava3/disposables/Disposable;->dispose()V
+
+    .line 226
+    .line 227
+    .line 228
+    goto :goto_a
+
+    .line 229
+    :cond_12
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 230
+    .line 231
+    .line 232
+    throw v7
+
+    .line 233
+    :cond_13
+    :goto_a
+    return-void
+
+    .line 234
+    :cond_14
+    invoke-static {v5}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 235
+    .line 236
+    .line 237
+    throw v7
+
+    .line 238
+    :cond_15
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 239
+    .line 240
+    .line 241
+    throw v7
+
+    .line 242
+    :cond_16
+    const-string p1, "importingSpinnerLoadingView"
+
+    .line 243
+    .line 244
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
+
+    .line 245
+    .line 246
+    .line 247
+    throw v7
+
+    .line 248
+    nop
+
+    .line 249
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

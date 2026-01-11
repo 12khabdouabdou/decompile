@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:LFY4;
+.field public final a:LG75;
 
-.field public final b:LPwg;
+.field public final b:LL75;
 
 
 # direct methods
-.method public constructor <init>(LFY4;LPwg;)V
+.method public constructor <init>(LG75;LL75;)V
     .locals 0
 
     .line 1
@@ -19,11 +19,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LRE4;->a:LFY4;
+    iput-object p1, p0, LRE4;->a:LG75;
 
     .line 5
     .line 6
-    iput-object p2, p0, LRE4;->b:LPwg;
+    iput-object p2, p0, LRE4;->b:LL75;
 
     .line 7
     .line 8

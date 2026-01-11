@@ -3,53 +3,50 @@
 .source "SourceFile"
 
 
+# static fields
+.field public static final a:Ljava/util/List;
+
+
 # direct methods
-.method public static a(Landroid/graphics/drawable/Icon;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Action$Builder;
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 4
 
     .line 1
-    new-instance v0, Landroid/app/Notification$Action$Builder;
+    const-string v0, "mischief_chat"
 
     .line 2
     .line 3
-    invoke-direct {v0, p0, p1, p2}, Landroid/app/Notification$Action$Builder;-><init>(Landroid/graphics/drawable/Icon;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
+    const-string v1, "mischief_snap"
 
     .line 4
     .line 5
+    const-string v2, "chat"
+
     .line 6
-    return-object v0
-.end method
-
-.method public static b(Landroid/app/Notification$Builder;Landroid/graphics/drawable/Icon;)Landroid/app/Notification$Builder;
-    .locals 0
-
-    .line 1
-    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setLargeIcon(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$Builder;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
-
-    .line 5
-    return-object p0
-.end method
-
-.method public static c(Landroid/app/Notification$Builder;Ljava/lang/Object;)Landroid/app/Notification$Builder;
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroid/graphics/drawable/Icon;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setSmallIcon(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$Builder;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
     .line 7
-    return-object p0
+    const-string v3, "snap"
+
+    .line 8
+    .line 9
+    filled-new-array {v2, v3, v0, v1}, [Ljava/lang/String;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    invoke-static {v0}, Lmh3;->H2([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    sput-object v0, LcDc;->a:Ljava/util/List;
+
+    .line 18
+    .line 19
+    return-void
 .end method

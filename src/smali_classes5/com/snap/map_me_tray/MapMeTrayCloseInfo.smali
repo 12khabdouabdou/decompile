@@ -1,10 +1,10 @@
 .class public final Lcom/snap/map_me_tray/MapMeTrayCloseInfo;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'stickerId\':s,\'carId\':s?,\'petId\':s?,\'homeGridIndex\':a?<d@>,\'homeName\':s?"
     typeReferences = {}

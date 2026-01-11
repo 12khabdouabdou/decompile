@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRpb;
+    proxyClass = LuDb;
     schema = "\'audio\':r:\'[0]\',\'video\':r?:\'[1]\',\'screen\':r?:\'[1]\'"
     typeReferences = {
         Lcom/snap/talkcore/AudioPublishStatus;,

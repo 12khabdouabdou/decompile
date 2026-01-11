@@ -1,10 +1,10 @@
 .class public final Lcom/snap/composer/people/InviteContactAddressBookRequest;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'name\':s,\'phone\':s,\'displayIndex\':d@?,\'hashedPhoneNumber\':s?,\'contactCellSubtitle\':s?"
     typeReferences = {}

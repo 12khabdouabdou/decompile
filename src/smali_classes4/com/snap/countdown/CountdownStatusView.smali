@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LO54;",
-        "LM54;",
+        "Lxa4;",
+        "Lva4;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LL54;
+.field public static final Companion:Lua4;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LL54;
+    new-instance v0, Lua4;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/countdown/CountdownStatusView;->Companion:LL54;
+    sput-object v0, Lcom/snap/countdown/CountdownStatusView;->Companion:Lua4;
 
     .line 7
     .line 8
@@ -62,68 +62,17 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LO54;LM54;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/countdown/CountdownStatusView;
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "LqZ8;",
-            "LO54;",
-            "LM54;",
-            "LTB3;",
-            "Lkotlin/jvm/functions/Function1;",
-            ")",
-            "Lcom/snap/countdown/CountdownStatusView;"
-        }
-    .end annotation
-
-    sget-object v0, Lcom/snap/countdown/CountdownStatusView;->Companion:LL54;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    new-instance v2, Lcom/snap/countdown/CountdownStatusView;
-
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-direct {v2, v0}, Lcom/snap/countdown/CountdownStatusView;-><init>(Landroid/content/Context;)V
-
-    .line 5
-    invoke-static {}, Lcom/snap/countdown/CountdownStatusView;->access$getComponentPath$cp()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v8, 0x0
-
-    move-object v1, p0
-
-    move-object v4, p1
-
-    move-object v5, p2
-
-    move-object v6, p3
-
-    move-object v7, p4
-
-    .line 6
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
-
-    return-object v2
-.end method
-
-.method public static final create(LqZ8;LTB3;)Lcom/snap/countdown/CountdownStatusView;
+.method public static final create(LZ69;LvF3;)Lcom/snap/countdown/CountdownStatusView;
     .locals 9
 
-    sget-object v0, Lcom/snap/countdown/CountdownStatusView;->Companion:LL54;
+    sget-object v0, Lcom/snap/countdown/CountdownStatusView;->Companion:Lua4;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
     new-instance v2, Lcom/snap/countdown/CountdownStatusView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -147,7 +96,58 @@
     move-object v6, p1
 
     .line 3
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
+
+    return-object v2
+.end method
+
+.method public static final create(LZ69;Lxa4;Lva4;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/countdown/CountdownStatusView;
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "LZ69;",
+            "Lxa4;",
+            "Lva4;",
+            "LvF3;",
+            "Lkotlin/jvm/functions/Function1;",
+            ")",
+            "Lcom/snap/countdown/CountdownStatusView;"
+        }
+    .end annotation
+
+    sget-object v0, Lcom/snap/countdown/CountdownStatusView;->Companion:Lua4;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 4
+    new-instance v2, Lcom/snap/countdown/CountdownStatusView;
+
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Lcom/snap/countdown/CountdownStatusView;-><init>(Landroid/content/Context;)V
+
+    .line 5
+    invoke-static {}, Lcom/snap/countdown/CountdownStatusView;->access$getComponentPath$cp()Ljava/lang/String;
+
+    move-result-object v3
+
+    const/4 v8, 0x0
+
+    move-object v1, p0
+
+    move-object v4, p1
+
+    move-object v5, p2
+
+    move-object v6, p3
+
+    move-object v7, p4
+
+    .line 6
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method

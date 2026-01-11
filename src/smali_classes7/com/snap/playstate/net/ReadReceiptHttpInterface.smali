@@ -4,27 +4,23 @@
 
 
 # virtual methods
-.method public abstract batchUploadReadReceipts(Ljava/lang/String;LoR0;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract batchUploadReadReceipts(Ljava/lang/String;LuU0;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Ludd;
+        .annotation runtime Lvtd;
             encoded = true
             value = "path"
         .end annotation
     .end param
-    .param p2    # LoR0;
-        .annotation runtime Ljv1;
+    .param p2    # LuU0;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Access-Token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/{path}"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf",
             "Content-Type: application/x-protobuf",
@@ -36,48 +32,52 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LoR0;",
+            "LuU0;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LpR0;",
+            "Ljnf<",
+            "LvU0;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+        value = "/{path}"
+    .end annotation
 .end method
 
-.method public abstract downloadUGCReadReceipts(Ljava/lang/String;Llqj;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract downloadUGCReadReceipts(Ljava/lang/String;LlPj;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Ludd;
+        .annotation runtime Lvtd;
             encoded = true
             value = "path"
         .end annotation
     .end param
-    .param p2    # Llqj;
-        .annotation runtime Ljv1;
+    .param p2    # LlPj;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "X-Snap-Access-Token"
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/{path}"
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
-            "Llqj;",
+            "LlPj;",
             "Ljava/lang/String;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lmqj;",
+            "Ljnf<",
+            "LmPj;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "/{path}"
     .end annotation
 .end method

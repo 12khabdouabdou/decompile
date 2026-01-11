@@ -1,12 +1,12 @@
 .class public final Lcom/snap/composer/topics/ComposerTopicPageAnalyticsContext;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'sourcePageType\':r<e>:\'[0]\',\'sourcePageSessionId\':s?"
+    schema = "\'sourcePageType\':r<e>:\'[0]\',\'sourcePageSessionId\':s?,\'sourceType\':s?"
     typeReferences = {
         Lcom/snap/composer/blizzard/schema/ComposerPageType;
     }
@@ -18,9 +18,11 @@
 
 .field private _sourcePageType:Lcom/snap/composer/blizzard/schema/ComposerPageType;
 
+.field private _sourceType:Ljava/lang/String;
+
 
 # direct methods
-.method public constructor <init>(Lcom/snap/composer/blizzard/schema/ComposerPageType;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/snap/composer/blizzard/schema/ComposerPageType;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .line 1
@@ -37,6 +39,10 @@
 
     .line 7
     .line 8
+    iput-object p3, p0, Lcom/snap/composer/topics/ComposerTopicPageAnalyticsContext;->_sourceType:Ljava/lang/String;
+
+    .line 9
+    .line 10
     return-void
 .end method
 

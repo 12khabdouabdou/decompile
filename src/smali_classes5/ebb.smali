@@ -1,145 +1,185 @@
 .class public final Lebb;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'initialPinTitle\':s,\'lat\':d,\'lng\':d,\'createdByMe\':b,\'userLat\':d@?,\'userLng\':d@?,\'pinId\':s?,\'openSource\':s?,\'addressFromSearch\':s?,\'v2Info\':r?:\'[0]\'"
+    typeReferences = {
+        Lcom/snap/map_drops/MapDropsV2InfoModel;
+    }
+.end annotation
+
+
 # instance fields
-.field public a:LzLj;
+.field private _addressFromSearch:Ljava/lang/String;
 
-.field public final b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field private _createdByMe:Z
 
-.field public final c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+.field private _initialPinTitle:Ljava/lang/String;
 
-.field public final d:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field private _lat:D
 
-.field public final e:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+.field private _lng:D
+
+.field private _openSource:Ljava/lang/String;
+
+.field private _pinId:Ljava/lang/String;
+
+.field private _userLat:Ljava/lang/Double;
+
+.field private _userLng:Ljava/lang/Double;
+
+.field private _v2Info:Lcom/snap/map_drops/MapDropsV2InfoModel;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 4
+.method public constructor <init>(DDZLjava/lang/String;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-object p6, p0, Lebb;->_initialPinTitle:Ljava/lang/String;
+
     .line 3
+    iput-wide p1, p0, Lebb;->_lat:D
+
     .line 4
-    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->c1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-wide p3, p0, Lebb;->_lng:D
 
     .line 5
+    iput-boolean p5, p0, Lebb;->_createdByMe:Z
+
+    const/4 p1, 0x0
+
     .line 6
+    iput-object p1, p0, Lebb;->_userLat:Ljava/lang/Double;
+
     .line 7
-    move-result-object v0
+    iput-object p1, p0, Lebb;->_userLng:Ljava/lang/Double;
 
     .line 8
-    iput-object v0, p0, Lebb;->b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+    iput-object p1, p0, Lebb;->_pinId:Ljava/lang/String;
 
     .line 9
+    iput-object p1, p0, Lebb;->_openSource:Ljava/lang/String;
+
     .line 10
-    sget-object v1, Lio/reactivex/rxjava3/internal/functions/Functions;->a:Lio/reactivex/rxjava3/functions/Function;
+    iput-object p1, p0, Lebb;->_addressFromSearch:Ljava/lang/String;
 
     .line 11
+    iput-object p1, p0, Lebb;->_v2Info:Lcom/snap/map_drops/MapDropsV2InfoModel;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;DDZLjava/lang/Double;Ljava/lang/Double;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/snap/map_drops/MapDropsV2InfoModel;)V
+    .locals 0
+
     .line 12
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Observable;->S(Lio/reactivex/rxjava3/functions/Function;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 13
+    iput-object p1, p0, Lebb;->_initialPinTitle:Ljava/lang/String;
+
     .line 14
+    iput-wide p2, p0, Lebb;->_lat:D
+
     .line 15
-    move-result-object v0
+    iput-wide p4, p0, Lebb;->_lng:D
 
     .line 16
-    iput-object v0, p0, Lebb;->c:Lio/reactivex/rxjava3/internal/operators/observable/ObservableDistinctUntilChanged;
+    iput-boolean p6, p0, Lebb;->_createdByMe:Z
 
     .line 17
+    iput-object p7, p0, Lebb;->_userLat:Ljava/lang/Double;
+
     .line 18
-    new-instance v0, Ldbb;
+    iput-object p8, p0, Lebb;->_userLng:Ljava/lang/Double;
 
     .line 19
+    iput-object p9, p0, Lebb;->_pinId:Ljava/lang/String;
+
     .line 20
-    new-instance v1, Landroid/graphics/Rect;
+    iput-object p10, p0, Lebb;->_openSource:Ljava/lang/String;
 
     .line 21
+    iput-object p11, p0, Lebb;->_addressFromSearch:Ljava/lang/String;
+
     .line 22
-    invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
+    iput-object p12, p0, Lebb;->_v2Info:Lcom/snap/map_drops/MapDropsV2InfoModel;
 
-    .line 23
-    .line 24
-    .line 25
-    new-instance v2, Landroid/graphics/Rect;
-
-    .line 26
-    .line 27
-    invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
-
-    .line 28
-    .line 29
-    .line 30
-    new-instance v3, Landroid/graphics/Rect;
-
-    .line 31
-    .line 32
-    invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
-
-    .line 33
-    .line 34
-    .line 35
-    invoke-direct {v0, v1, v2, v3}, Ldbb;-><init>(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
-
-    .line 36
-    .line 37
-    .line 38
-    new-instance v1, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 39
-    .line 40
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;-><init>(Ljava/lang/Object;)V
-
-    .line 41
-    .line 42
-    .line 43
-    iput-object v1, p0, Lebb;->d:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 44
-    .line 45
-    iput-object v1, p0, Lebb;->e:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 46
-    .line 47
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a()LzLj;
-    .locals 1
+.method public final a(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    monitor-enter p0
+    iput-object p1, p0, Lebb;->_addressFromSearch:Ljava/lang/String;
 
     .line 2
-    :try_start_0
-    iget-object v0, p0, Lebb;->a:LzLj;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 3
-    .line 4
-    monitor-exit p0
+    return-void
+.end method
 
-    .line 5
-    return-object v0
+.method public final b(Ljava/lang/String;)V
+    .locals 0
 
-    .line 6
-    :catchall_0
-    move-exception v0
+    .line 1
+    iput-object p1, p0, Lebb;->_openSource:Ljava/lang/String;
 
-    .line 7
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    .line 2
+    .line 3
+    return-void
+.end method
 
-    .line 8
-    throw v0
+.method public final c(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lebb;->_pinId:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final d(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lebb;->_userLat:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final e(Ljava/lang/Double;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lebb;->_userLng:Ljava/lang/Double;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final f(Lcom/snap/map_drops/MapDropsV2InfoModel;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lebb;->_v2Info:Lcom/snap/map_drops/MapDropsV2InfoModel;
+
+    .line 2
+    .line 3
+    return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$GroupSnapshotLoaded;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
@@ -20,7 +20,7 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
@@ -70,7 +70,7 @@
 
     .line 8
     .line 9
-    invoke-static {v0, v2}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 10
     .line 11
@@ -112,11 +112,11 @@
     move-result-object v3
 
     .line 30
-    check-cast v3, LOXc;
+    check-cast v3, LJcd;
 
     .line 31
     .line 32
-    invoke-interface {v3}, LOXc;->getId()Ljava/lang/String;
+    invoke-interface {v3}, LJcd;->getId()Ljava/lang/String;
 
     .line 33
     .line 34
@@ -145,7 +145,7 @@
 
     .line 45
     .line 46
-    invoke-static {v0, v2}, Lwe3;->g0(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lnh3;->d3(Ljava/lang/Iterable;I)I
 
     .line 47
     .line 48
@@ -187,11 +187,11 @@
     move-result-object v2
 
     .line 67
-    check-cast v2, LOXc;
+    check-cast v2, LJcd;
 
     .line 68
     .line 69
-    invoke-interface {v2}, LOXc;->getId()Ljava/lang/String;
+    invoke-interface {v2}, LJcd;->getId()Ljava/lang/String;
 
     .line 70
     .line 71

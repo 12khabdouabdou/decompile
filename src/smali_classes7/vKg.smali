@@ -1,24 +1,16 @@
 .class public final LvKg;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'entryInfo\':r:\'[0]\'"
-    typeReferences = {
-        Lcom/snap/plus/EntryInfo;
-    }
-.end annotation
-
-
 # instance fields
-.field private _entryInfo:Lcom/snap/plus/EntryInfo;
+.field public final a:LyPf;
+
+.field public final b:La5f;
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/plus/EntryInfo;)V
+.method public constructor <init>(LyPf;La5f;Landroid/content/Context;)V
     .locals 0
 
     .line 1
@@ -27,9 +19,13 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LvKg;->_entryInfo:Lcom/snap/plus/EntryInfo;
+    iput-object p1, p0, LvKg;->a:LyPf;
 
     .line 5
     .line 6
+    iput-object p2, p0, LvKg;->b:La5f;
+
+    .line 7
+    .line 8
     return-void
 .end method

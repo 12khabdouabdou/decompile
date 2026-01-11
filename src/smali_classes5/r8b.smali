@@ -1,35 +1,50 @@
 .class public final Lr8b;
-.super Ljava/lang/Object;
+.super Lt8b;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/util/LinkedHashMap;
+# static fields
+.field public static final b:Lr8b;
+
+.field public static final c:Lr8b;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 1
-
-    .line 3
-    new-instance v0, Ljava/util/LinkedHashMap;
-
-    invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
-
-    .line 4
-    invoke-direct {p0, v0}, Lr8b;-><init>(Ljava/util/LinkedHashMap;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/LinkedHashMap;)V
-    .locals 0
+.method static synthetic constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lr8b;
 
     .line 2
-    iput-object p1, p0, Lr8b;->a:Ljava/util/LinkedHashMap;
+    .line 3
+    const/4 v1, 0x0
 
+    .line 4
+    invoke-direct {v0, v1}, Lt8b;-><init>(Z)V
+
+    .line 5
+    .line 6
+    .line 7
+    sput-object v0, Lr8b;->b:Lr8b;
+
+    .line 8
+    .line 9
+    new-instance v0, Lr8b;
+
+    .line 10
+    .line 11
+    const/4 v1, 0x0
+
+    .line 12
+    invoke-direct {v0, v1}, Lt8b;-><init>(Z)V
+
+    .line 13
+    .line 14
+    .line 15
+    sput-object v0, Lr8b;->c:Lr8b;
+
+    .line 16
+    .line 17
     return-void
 .end method

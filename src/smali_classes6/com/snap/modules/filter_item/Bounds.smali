@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/filter_item/Bounds;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'left\':d,\'top\':d,\'right\':d,\'bottom\':d"
     typeReferences = {}

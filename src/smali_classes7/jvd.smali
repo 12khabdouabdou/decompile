@@ -1,61 +1,73 @@
 .class public final Ljvd;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'userId\':s,\'presentOnPlatform\':r<e>:\'[0]\',\'typingActivity\':r<e>:\'[1]\',\'typingActivityType\':r<e>:\'[2]\',\'isPeeking\':b"
-    typeReferences = {
-        Lcom/snap/presence/Platform;,
-        Lcom/snap/presence/PlatformTypingActivity;,
-        Lcom/snap/presence/PlatformTypingActivityType;
-    }
-.end annotation
-
-
 # instance fields
-.field private _isPeeking:Z
-
-.field private _presentOnPlatform:Lcom/snap/presence/Platform;
-
-.field private _typingActivity:Lcom/snap/presence/PlatformTypingActivity;
-
-.field private _typingActivityType:Lcom/snap/presence/PlatformTypingActivityType;
-
-.field private _userId:Ljava/lang/String;
+.field public final a:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lcom/snap/presence/Platform;Lcom/snap/presence/PlatformTypingActivity;Lcom/snap/presence/PlatformTypingActivityType;Z)V
+.method public synthetic constructor <init>(Landroid/content/Context;)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Ljvd;->a:Landroid/content/Context;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(II)Landroid/graphics/drawable/Drawable;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Ljvd;->a:Landroid/content/Context;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Ljvd;->_userId:Ljava/lang/String;
+    invoke-static {v0, p1}, LV14;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Ljvd;->_presentOnPlatform:Lcom/snap/presence/Platform;
+    move-result-object p1
 
     .line 7
-    .line 8
-    iput-object p3, p0, Ljvd;->_typingActivity:Lcom/snap/presence/PlatformTypingActivity;
+    invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
+    .line 8
     .line 9
     .line 10
-    iput-object p4, p0, Ljvd;->_typingActivityType:Lcom/snap/presence/PlatformTypingActivityType;
+    move-result-object p1
 
     .line 11
-    .line 12
-    iput-boolean p5, p0, Ljvd;->_isPeeking:Z
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
+    .line 12
     .line 13
     .line 14
-    return-void
+    move-result-object v0
+
+    .line 15
+    invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 16
+    .line 17
+    .line 18
+    move-result p2
+
+    .line 19
+    const/4 v0, 0x0
+
+    .line 20
+    invoke-virtual {p1, v0, v0, p2, p2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
+
+    .line 21
+    .line 22
+    .line 23
+    return-object p1
 .end method

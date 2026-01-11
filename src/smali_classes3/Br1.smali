@@ -2,16 +2,21 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
-
 
 # instance fields
-.field public final synthetic a:LCr1;
+.field public final a:LDBe;
+
+.field public final b:LDBe;
+
+.field public final c:LDBe;
+
+.field public final d:LYK4;
+
+.field public final e:LDBe;
 
 
 # direct methods
-.method public constructor <init>(LCr1;)V
+.method public constructor <init>(LDBe;LDBe;LDBe;LYK4;LDBe;)V
     .locals 0
 
     .line 1
@@ -20,80 +25,114 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LBr1;->a:LCr1;
+    iput-object p1, p0, LBr1;->a:LDBe;
 
     .line 5
     .line 6
+    iput-object p2, p0, LBr1;->b:LDBe;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LBr1;->c:LDBe;
+
+    .line 9
+    .line 10
+    iput-object p4, p0, LBr1;->d:LYK4;
+
+    .line 11
+    .line 12
+    iput-object p5, p0, LBr1;->e:LDBe;
+
+    .line 13
+    .line 14
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 5
+.method public final a()Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;
+    .locals 3
 
     .line 1
-    check-cast p1, Lwj1;
+    iget-object v0, p0, LBr1;->a:LDBe;
 
     .line 2
     .line 3
-    sget-object v0, Lapp/aifactory/sdk/api/model/ResourceId$EmptyResourceId;->INSTANCE:Lapp/aifactory/sdk/api/model/ResourceId$EmptyResourceId;
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 4
     .line 5
-    iget-object v1, p0, LBr1;->a:LCr1;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    iget-object v2, v1, LCr1;->b:Lbke;
+    check-cast v0, Lkm1;
 
     .line 8
     .line 9
-    invoke-interface {v2}, Lbke;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Lkm1;->h()Lio/reactivex/rxjava3/core/Observable;
 
     .line 10
     .line 11
     .line 12
-    move-result-object v2
+    move-result-object v0
 
     .line 13
-    check-cast v2, Lnj1;
+    invoke-virtual {v0}, Lio/reactivex/rxjava3/core/Observable;->f0()Lio/reactivex/rxjava3/core/Single;
 
     .line 14
     .line 15
-    new-instance v3, Liq1;
-
     .line 16
+    move-result-object v0
+
     .line 17
-    const/4 v4, 0x2
+    sget-object v1, LLo1;->i0:LLo1;
 
     .line 18
-    invoke-direct {v3, v1, v4, v0}, Liq1;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
     .line 19
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;
+
     .line 20
     .line 21
-    invoke-virtual {v2, v0, v3}, Lnj1;->a(Lapp/aifactory/sdk/api/model/ResourceId;Lkotlin/jvm/functions/Function0;)LPp9;
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Predicate;)V
 
     .line 22
     .line 23
     .line 24
-    move-result-object v0
+    new-instance v0, Lwt0;
 
     .line 25
-    const/4 v1, 0x0
-
     .line 26
-    const/4 v2, 0x0
+    const/16 v1, 0x1b
 
     .line 27
-    invoke-virtual {p1, v0, v1, v2}, Lwj1;->a(LPp9;ZLhm1;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
-
     .line 28
+    invoke-direct {v0, v1, p0}, Lwt0;-><init>(ILjava/lang/Object;)V
+
     .line 29
     .line 30
-    move-result-object p1
-
     .line 31
-    return-object p1
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapSingle;
+
+    .line 32
+    .line 33
+    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapSingle;-><init>(Lio/reactivex/rxjava3/core/Maybe;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 34
+    .line 35
+    .line 36
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 37
+    .line 38
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;
+
+    .line 39
+    .line 40
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeToSingle;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Ljava/lang/Object;)V
+
+    .line 41
+    .line 42
+    .line 43
+    return-object v2
 .end method

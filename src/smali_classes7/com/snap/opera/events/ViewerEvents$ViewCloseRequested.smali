@@ -1,49 +1,49 @@
 .class public final Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LdXc;
+.field public final b:LYbd;
 
-.field public final c:LWIj;
+.field public final c:Lu8k;
 
 
 # direct methods
-.method public synthetic constructor <init>(LdXc;)V
+.method public synthetic constructor <init>(LYbd;)V
     .locals 1
 
     .line 1
-    sget-object v0, LWIj;->a:LWIj;
+    sget-object v0, Lu8k;->a:Lu8k;
 
     .line 2
-    invoke-direct {p0, p1, v0}, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;-><init>(LdXc;LWIj;)V
+    invoke-direct {p0, p1, v0}, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;-><init>(LYbd;Lu8k;)V
 
     return-void
 .end method
 
-.method public constructor <init>(LdXc;LWIj;)V
+.method public constructor <init>(LYbd;Lu8k;)V
     .locals 0
 
     .line 3
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LdXc;
+    iput-object p1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LYbd;
 
     .line 5
-    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:LWIj;
+    iput-object p2, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:Lu8k;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LdXc;
+.method public final a()LYbd;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LYbd;
 
     .line 2
     .line 3
@@ -71,11 +71,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;
 
-    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LdXc;
+    iget-object v1, p1, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LYbd;
 
-    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LdXc;
+    iget-object v3, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LYbd;
 
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -84,9 +84,9 @@
     return v2
 
     :cond_2
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:LWIj;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:Lu8k;
 
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:LWIj;
+    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:Lu8k;
 
     if-eq v1, p1, :cond_3
 
@@ -99,15 +99,15 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LdXc;
+    iget-object v0, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LYbd;
 
-    invoke-virtual {v0}, LdXc;->hashCode()I
+    invoke-virtual {v0}, LYbd;->hashCode()I
 
     move-result v0
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:LWIj;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:Lu8k;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -127,7 +127,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LdXc;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->b:LYbd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -135,7 +135,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:LWIj;
+    iget-object v1, p0, Lcom/snap/opera/events/ViewerEvents$ViewCloseRequested;->c:Lu8k;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

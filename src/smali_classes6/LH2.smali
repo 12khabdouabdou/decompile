@@ -1,164 +1,143 @@
 .class public final LLH2;
-.super LrE9;
+.super LA7k;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Lb5k;
+.field public X:Lcom/snap/ui/view/SnapFontTextView;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lb5k;I)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
-    iput p2, p0, LLH2;->a:I
+    invoke-direct {p0}, LA7k;-><init>()V
 
-    iput-object p1, p0, LLH2;->b:Lb5k;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 2
+    .line 3
+    .line 4
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
+.method public final t(Lsw;Lsw;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, LLH2;->a:I
+    check-cast p1, LMH2;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    check-cast p2, LMH2;
 
     .line 4
     .line 5
+    iget-object p2, p0, LLH2;->X:Lcom/snap/ui/view/SnapFontTextView;
+
     .line 6
-    iget-object v0, p0, LLH2;->b:Lb5k;
-
     .line 7
+    if-eqz p2, :cond_0
+
     .line 8
-    iget-object v0, v0, Lb5k;->b:Ljava/lang/Object;
-
     .line 9
+    iget-object p1, p1, LMH2;->X:Ljava/lang/String;
+
     .line 10
-    check-cast v0, Landroid/content/Context;
-
     .line 11
-    .line 12
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p2, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
+    .line 12
     .line 13
     .line 14
+    invoke-virtual {p0}, LA7k;->r()LSV6;
+
     .line 15
-    move-result-object v0
-
     .line 16
-    const v1, 0x7f130a50
-
     .line 17
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    move-result-object p1
 
+    .line 18
+    new-instance p2, LKH2;
+
+    .line 19
     .line 20
+    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
+
     .line 21
     .line 22
-    move-result-object v0
-
     .line 23
-    return-object v0
+    invoke-interface {p1, p2}, LSV6;->a(Ljava/lang/Object;)V
 
     .line 24
-    :pswitch_0
-    iget-object v0, p0, LLH2;->b:Lb5k;
-
     .line 25
     .line 26
-    iget-object v0, v0, Lb5k;->b:Ljava/lang/Object;
+    invoke-virtual {p0}, LA7k;->r()LSV6;
 
     .line 27
     .line 28
-    check-cast v0, Landroid/content/Context;
-
     .line 29
+    move-result-object p1
+
     .line 30
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    new-instance p2, LjP6;
 
     .line 31
     .line 32
+    invoke-direct {p2}, Ljava/lang/Object;-><init>()V
+
     .line 33
-    move-result-object v0
-
     .line 34
-    const v1, 0x7f130a4c
-
     .line 35
+    invoke-interface {p1, p2}, LSV6;->a(Ljava/lang/Object;)V
+
     .line 36
     .line 37
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
     .line 38
-    .line 39
-    .line 40
-    move-result-object v0
+    return-void
 
+    .line 39
+    :cond_0
+    const-string p1, "textView"
+
+    .line 40
     .line 41
-    return-object v0
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 42
-    :pswitch_1
-    iget-object v0, p0, LLH2;->b:Lb5k;
-
     .line 43
     .line 44
-    iget-object v0, v0, Lb5k;->b:Ljava/lang/Object;
+    const/4 p1, 0x0
 
     .line 45
-    .line 46
-    check-cast v0, Landroid/content/Context;
+    throw p1
+.end method
 
-    .line 47
-    .line 48
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+.method public final u(Landroid/view/View;)V
+    .locals 1
 
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v0
+    .line 1
+    const v0, 0x7f0b1898
 
-    .line 52
-    const v1, 0x7f130a4b
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
 
-    .line 56
-    .line 57
-    .line 58
-    move-result-object v0
+    .line 8
+    check-cast p1, Lcom/snap/ui/view/SnapFontTextView;
 
-    .line 59
-    return-object v0
+    .line 9
+    .line 10
+    iput-object p1, p0, LLH2;->X:Lcom/snap/ui/view/SnapFontTextView;
 
-    .line 60
-    nop
-
-    .line 61
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 11
+    .line 12
+    return-void
 .end method

@@ -1,3 +1,3 @@
 .class public abstract LPea;
-.super Ljava/lang/Object;
+.super LRea;
 .source "SourceFile"

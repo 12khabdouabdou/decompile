@@ -1,279 +1,416 @@
 .class public final LxD8;
-.super Ljava/lang/Object;
+.super LJP9;
 .source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public final a:LOXc;
+.field public final synthetic a:I
 
-.field public final b:Lg96;
-
-.field public final c:LOXc;
+.field public final synthetic b:LyD8;
 
 
 # direct methods
-.method public constructor <init>(Lg96;LOXc;LOXc;)V
+.method public synthetic constructor <init>(LyD8;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p2, p0, LxD8;->a:I
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p2, p0, LxD8;->a:LOXc;
+    iput-object p1, p0, LxD8;->b:LyD8;
 
-    .line 5
-    .line 6
-    iput-object p1, p0, LxD8;->b:Lg96;
+    const/4 p1, 0x0
 
-    .line 7
-    .line 8
-    iput-object p3, p0, LxD8;->c:LOXc;
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
 
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final d()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LxD8;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LxD8;
-
-    .line 12
-    .line 13
-    iget-object v1, p1, LxD8;->a:LOXc;
-
-    .line 14
-    .line 15
-    iget-object v3, p0, LxD8;->a:LOXc;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    iget-object v1, p0, LxD8;->b:Lg96;
-
-    .line 25
-    .line 26
-    iget-object v3, p1, LxD8;->b:Lg96;
-
-    .line 27
-    .line 28
-    if-eq v1, v3, :cond_3
-
-    .line 29
-    .line 30
-    return v2
-
-    .line 31
-    :cond_3
-    iget-object v1, p0, LxD8;->c:LOXc;
-
-    .line 32
-    .line 33
-    iget-object p1, p1, LxD8;->c:LOXc;
-
-    .line 34
-    .line 35
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result p1
-
-    .line 39
-    if-nez p1, :cond_4
-
-    .line 40
-    .line 41
-    return v2
-
-    .line 42
-    :cond_4
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LxD8;->a:LOXc;
+    iget v0, p0, LxD8;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    iget-object v0, p0, LxD8;->b:LyD8;
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 8
-    .line 9
-    iget-object v1, p0, LxD8;->b:Lg96;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    mul-int/lit8 v1, v1, 0x1f
-
-    .line 17
-    .line 18
-    iget-object v0, p0, LxD8;->c:LOXc;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 21
-    .line 22
-    .line 23
-    move-result v0
-
-    .line 24
-    add-int/2addr v0, v1
-
-    .line 25
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "GroupNavigationOverrideInfo(fromGroup="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LxD8;->a:LOXc;
+    iget-object v0, v0, LyD8;->a:Landroid/widget/TextView;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", direction="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LxD8;->b:Lg96;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", destinationOverride="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LxD8;->c:LOXc;
-
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ")"
-
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 39
-    .line 40
-    .line 41
     move-result-object v0
 
-    .line 42
+    .line 14
+    const v1, 0x7f070758
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object v0
+
+    .line 25
     return-object v0
+
+    .line 26
+    :pswitch_0
+    iget-object v0, p0, LxD8;->b:LyD8;
+
+    .line 27
+    .line 28
+    iget-object v0, v0, LyD8;->a:Landroid/widget/TextView;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    const v1, 0x7f070756
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v0
+
+    .line 41
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v0
+
+    .line 45
+    return-object v0
+
+    .line 46
+    :pswitch_1
+    new-instance v0, Landroid/graphics/Paint;
+
+    .line 47
+    .line 48
+    const/4 v1, 0x1
+
+    .line 49
+    invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
+
+    .line 50
+    .line 51
+    .line 52
+    iget-object v2, p0, LxD8;->b:LyD8;
+
+    .line 53
+    .line 54
+    iget-object v3, v2, LyD8;->a:Landroid/widget/TextView;
+
+    .line 55
+    .line 56
+    invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v3
+
+    .line 60
+    const v4, 0x106000b
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-static {v3, v4}, LV14;->c(Landroid/content/Context;I)I
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v3
+
+    .line 67
+    invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 68
+    .line 69
+    .line 70
+    sget-object v3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+
+    .line 71
+    .line 72
+    invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setDither(Z)V
+
+    .line 76
+    .line 77
+    .line 78
+    iget-object v1, v2, LyD8;->g:LREi;
+
+    .line 79
+    .line 80
+    invoke-virtual {v1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object v1
+
+    .line 84
+    check-cast v1, Ljava/lang/Number;
+
+    .line 85
+    .line 86
+    invoke-virtual {v1}, Ljava/lang/Number;->floatValue()F
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v1
+
+    .line 90
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 91
+    .line 92
+    .line 93
+    sget-object v1, Landroid/graphics/Paint$Cap;->ROUND:Landroid/graphics/Paint$Cap;
+
+    .line 94
+    .line 95
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeCap(Landroid/graphics/Paint$Cap;)V
+
+    .line 96
+    .line 97
+    .line 98
+    sget-object v1, Landroid/graphics/Paint$Join;->ROUND:Landroid/graphics/Paint$Join;
+
+    .line 99
+    .line 100
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeJoin(Landroid/graphics/Paint$Join;)V
+
+    .line 101
+    .line 102
+    .line 103
+    return-object v0
+
+    .line 104
+    :pswitch_2
+    iget-object v0, p0, LxD8;->b:LyD8;
+
+    .line 105
+    .line 106
+    iget-object v0, v0, LyD8;->a:Landroid/widget/TextView;
+
+    .line 107
+    .line 108
+    invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 109
+    .line 110
+    .line 111
+    move-result-object v0
+
+    .line 112
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object v0
+
+    .line 116
+    const/4 v1, 0x1
+
+    .line 117
+    const/high16 v2, 0x42800000    # 64.0f
+
+    .line 118
+    .line 119
+    invoke-static {v1, v2, v0}, Landroid/util/TypedValue;->applyDimension(IFLandroid/util/DisplayMetrics;)F
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v0
+
+    .line 123
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object v0
+
+    .line 127
+    return-object v0
+
+    .line 128
+    :pswitch_3
+    iget-object v0, p0, LxD8;->b:LyD8;
+
+    .line 129
+    .line 130
+    iget-object v0, v0, LyD8;->a:Landroid/widget/TextView;
+
+    .line 131
+    .line 132
+    invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object v0
+
+    .line 136
+    const v1, 0x7f070757
+
+    .line 137
+    .line 138
+    .line 139
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    .line 140
+    .line 141
+    .line 142
+    move-result v0
+
+    .line 143
+    float-to-int v0, v0
+
+    .line 144
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object v0
+
+    .line 148
+    return-object v0
+
+    .line 149
+    :pswitch_4
+    iget-object v0, p0, LxD8;->b:LyD8;
+
+    .line 150
+    .line 151
+    iget-object v0, v0, LyD8;->a:Landroid/widget/TextView;
+
+    .line 152
+    .line 153
+    invoke-virtual {v0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object v0
+
+    .line 157
+    const v1, 0x7f070755
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimension(I)F
+
+    .line 161
+    .line 162
+    .line 163
+    move-result v0
+
+    .line 164
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v0
+
+    .line 168
+    return-object v0
+
+    .line 169
+    :pswitch_5
+    iget-object v0, p0, LxD8;->b:LyD8;
+
+    .line 170
+    .line 171
+    iget-object v0, v0, LyD8;->a:Landroid/widget/TextView;
+
+    .line 172
+    .line 173
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object v0
+
+    .line 177
+    const v1, 0x7f0803cc
+
+    .line 178
+    .line 179
+    .line 180
+    invoke-static {v0, v1}, LV14;->e(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
+
+    .line 181
+    .line 182
+    .line 183
+    move-result-object v0
+
+    .line 184
+    return-object v0
+
+    .line 185
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

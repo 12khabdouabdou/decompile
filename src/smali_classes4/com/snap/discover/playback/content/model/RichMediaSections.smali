@@ -124,7 +124,7 @@
 
     iget-object p1, p1, Lcom/snap/discover/playback/content/model/RichMediaSections;->sections:Ljava/util/List;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

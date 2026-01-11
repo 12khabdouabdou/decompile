@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lbvj;
+    proxyClass = LmUj;
     schema = "\'sendPlaceProfile\':f?|m|(s, s, r:\'[0]\', r<e>:\'[1]\'),\'logCTAButtonTap\':f?|m|(r<e>:\'[2]\')"
     typeReferences = {
         Lcom/snap/composer/location/GeoRect;,
@@ -21,7 +21,7 @@
 
 # virtual methods
 .method public abstract logCTAButtonTap(Lcom/snap/venueprofile/VenueProfileCTAMetricType;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -29,6 +29,6 @@
 .end method
 
 .method public abstract sendPlaceProfile(Ljava/lang/String;Ljava/lang/String;Lcom/snap/composer/location/GeoRect;Lcom/snap/venueprofile/VenueProfilePlaceType;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method

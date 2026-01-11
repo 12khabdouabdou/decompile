@@ -1,16 +1,16 @@
 .class public final LIha;
-.super LKha;
+.super LJha;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Lo09;
+.field public final a:LY79;
 
-.field public final b:Lo09;
+.field public final b:LBha;
 
 
 # direct methods
-.method public constructor <init>(Lo09;Lo09;)V
+.method public constructor <init>(LY79;LBha;)V
     .locals 0
 
     .line 1
@@ -19,11 +19,11 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LIha;->a:Lo09;
+    iput-object p1, p0, LIha;->a:LY79;
 
     .line 5
     .line 6
-    iput-object p2, p0, LIha;->b:Lo09;
+    iput-object p2, p0, LIha;->b:LBha;
 
     .line 7
     .line 8
@@ -66,15 +66,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, LIha;->a:Lo09;
+    iget-object v1, p1, LIha;->a:LY79;
 
     .line 14
     .line 15
-    iget-object v3, p0, LIha;->a:Lo09;
+    iget-object v3, p0, LIha;->a:LY79;
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -90,29 +90,21 @@
 
     .line 24
     :cond_2
-    iget-object v1, p0, LIha;->b:Lo09;
+    iget-object v1, p0, LIha;->b:LBha;
 
     .line 25
     .line 26
-    iget-object p1, p1, LIha;->b:Lo09;
+    iget-object p1, p1, LIha;->b:LBha;
 
     .line 27
     .line 28
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eq v1, p1, :cond_3
 
     .line 29
     .line 30
-    .line 31
-    move-result p1
-
-    .line 32
-    if-nez p1, :cond_3
-
-    .line 33
-    .line 34
     return v2
 
-    .line 35
+    .line 31
     :cond_3
     return v0
 .end method
@@ -121,11 +113,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, LIha;->a:Lo09;
+    iget-object v0, p0, LIha;->a:LY79;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lo09;->a:Ljava/lang/String;
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
@@ -141,37 +133,33 @@
 
     .line 10
     .line 11
-    iget-object v1, p0, LIha;->b:Lo09;
+    iget-object v1, p0, LIha;->b:LBha;
 
     .line 12
     .line 13
-    iget-object v1, v1, Lo09;->a:Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
     .line 14
     .line 15
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
-
     .line 16
-    .line 17
-    .line 18
     move-result v1
 
-    .line 19
+    .line 17
     add-int/2addr v1, v0
 
-    .line 20
+    .line 18
     return v1
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "Delete(uriRequestId="
+    const-string v1, "TurnedOff(lensId="
 
     .line 4
     .line 5
@@ -180,7 +168,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LIha;->a:Lo09;
+    iget-object v1, p0, LIha;->a:LY79;
 
     .line 9
     .line 10
@@ -189,7 +177,7 @@
     .line 11
     .line 12
     .line 13
-    const-string v1, ", apiSpecId="
+    const-string v1, ", feature="
 
     .line 14
     .line 15
@@ -198,21 +186,31 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LIha;->b:Lo09;
+    iget-object v1, p0, LIha;->b:LBha;
 
     .line 19
     .line 20
-    const-string v2, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2}, LUl;->h(Ljava/lang/StringBuilder;Lo09;Ljava/lang/String;)Ljava/lang/String;
-
     .line 23
+    const-string v1, ")"
+
     .line 24
     .line 25
-    move-result-object v0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
     return-object v0
 .end method

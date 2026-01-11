@@ -2,36 +2,33 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Landroid/os/Parcelable;
-
 
 # static fields
-.field public static final CREATOR:Landroid/os/Parcelable$Creator;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Landroid/os/Parcelable$Creator<",
-            "LBS9;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final i:LBS9;
 
-.field public static final Z:LBS9;
+.field public static final j:LBS9;
+
+.field public static final k:LBS9;
+
+.field public static final l:LBS9;
 
 
 # instance fields
-.field public final X:LsS9;
+.field public final a:I
 
-.field public final Y:Lu09;
+.field public final b:Ljava/lang/Integer;
 
-.field public final a:LrS9;
+.field public final c:Ljava/lang/Integer;
 
-.field public final b:LRR9;
+.field public final d:Ljava/lang/Integer;
 
-.field public final c:LaS9;
+.field public final e:Ljava/lang/Integer;
 
-.field public final t:LAS9;
+.field public final f:Ljava/lang/Integer;
+
+.field public final g:I
+
+.field public final h:Ljava/lang/Integer;
 
 
 # direct methods
@@ -43,149 +40,246 @@
 
     .line 2
     .line 3
-    const/16 v1, 0x3f
+    const/16 v1, 0x40
 
     .line 4
     .line 5
-    const/4 v2, 0x0
+    const v2, 0x7f0e0379
 
     .line 6
-    invoke-direct {v0, v2, v2, v2, v1}, LBS9;-><init>(LrS9;LaS9;Lo09;I)V
-
     .line 7
     .line 8
-    .line 9
-    sput-object v0, LBS9;->Z:LBS9;
+    invoke-direct {v0, v2, v1}, LBS9;-><init>(II)V
 
+    .line 9
     .line 10
     .line 11
-    new-instance v0, LaN3;
+    sput-object v0, LBS9;->i:LBS9;
 
     .line 12
     .line 13
-    const/16 v1, 0x1d
+    new-instance v0, LBS9;
 
     .line 14
     .line 15
-    invoke-direct {v0, v1}, LaN3;-><init>(I)V
+    const/16 v1, 0xfe
 
     .line 16
     .line 17
-    .line 18
-    sput-object v0, LBS9;->CREATOR:Landroid/os/Parcelable$Creator;
+    const v2, 0x7f0e037b
 
+    .line 18
     .line 19
     .line 20
+    invoke-direct {v0, v2, v1}, LBS9;-><init>(II)V
+
+    .line 21
+    .line 22
+    .line 23
+    sput-object v0, LBS9;->j:LBS9;
+
+    .line 24
+    .line 25
+    new-instance v0, LBS9;
+
+    .line 26
+    .line 27
+    const v1, 0x7f0e037a
+
+    .line 28
+    .line 29
+    .line 30
+    const/16 v2, 0x70
+
+    .line 31
+    .line 32
+    invoke-direct {v0, v1, v2}, LBS9;-><init>(II)V
+
+    .line 33
+    .line 34
+    .line 35
+    sput-object v0, LBS9;->k:LBS9;
+
+    .line 36
+    .line 37
+    new-instance v0, LBS9;
+
+    .line 38
+    .line 39
+    invoke-direct {v0, v1, v2}, LBS9;-><init>(II)V
+
+    .line 40
+    .line 41
+    .line 42
+    sput-object v0, LBS9;->l:LBS9;
+
+    .line 43
+    .line 44
     return-void
 .end method
 
-.method public constructor <init>(LrS9;LRR9;LaS9;LAS9;LsS9;Lu09;)V
-    .locals 0
+.method public synthetic constructor <init>(II)V
+    .locals 18
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move/from16 v0, p2
 
-    .line 2
-    iput-object p1, p0, LBS9;->a:LrS9;
+    const v1, 0x7f0b0ca7
 
-    .line 3
-    iput-object p2, p0, LBS9;->b:LRR9;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 4
-    iput-object p3, p0, LBS9;->c:LaS9;
+    move-result-object v1
 
-    .line 5
-    iput-object p4, p0, LBS9;->t:LAS9;
+    const v2, 0x7f0b0ca1
 
-    .line 6
-    iput-object p5, p0, LBS9;->X:LsS9;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 7
-    iput-object p6, p0, LBS9;->Y:Lu09;
+    move-result-object v2
 
-    return-void
-.end method
+    const v3, 0x7f0b0c73
 
-.method public constructor <init>(LrS9;LaS9;Lo09;I)V
-    .locals 9
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    sget-object v0, LxS9;->a:LxS9;
+    move-result-object v3
 
-    sget-object v1, LsS9;->c:LsS9;
+    const v4, 0x7f0b0c7a
 
-    and-int/lit8 v2, p4, 0x1
+    invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-eqz v2, :cond_0
+    move-result-object v4
 
-    .line 8
-    sget-object p1, LrS9;->a:LkS9;
+    const v5, 0x7f0b0c96
+
+    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    const v6, 0x7f0b0cb5
+
+    invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v6
+
+    and-int/lit8 v7, v0, 0x2
+
+    const/4 v8, 0x0
+
+    if-eqz v7, :cond_0
+
+    move-object v11, v8
+
+    goto :goto_0
 
     :cond_0
-    move-object v3, p1
+    move-object v11, v1
 
-    .line 9
-    sget-object v4, LNR9;->a:LNR9;
+    :goto_0
+    and-int/lit8 v1, v0, 0x4
 
-    and-int/lit8 p1, p4, 0x4
+    if-eqz v1, :cond_1
 
-    if-eqz p1, :cond_1
+    move-object v12, v8
 
-    .line 10
-    sget-object p2, LaS9;->g0:LaS9;
+    goto :goto_1
 
     :cond_1
-    move-object v5, p2
+    move-object v12, v2
 
-    and-int/lit8 p1, p4, 0x8
+    :goto_1
+    and-int/lit8 v1, v0, 0x8
 
-    if-eqz p1, :cond_2
+    if-eqz v1, :cond_2
 
-    .line 11
-    sget-object v0, LuS9;->a:LuS9;
+    move-object v13, v8
+
+    goto :goto_2
 
     :cond_2
-    move-object v6, v0
+    move-object v13, v3
 
-    and-int/lit8 p1, p4, 0x10
+    :goto_2
+    and-int/lit8 v1, v0, 0x10
 
-    if-eqz p1, :cond_3
+    if-eqz v1, :cond_3
 
-    .line 12
-    sget-object v1, LsS9;->b:LsS9;
+    move-object v14, v8
+
+    goto :goto_3
 
     :cond_3
-    move-object v7, v1
+    move-object v14, v4
 
-    and-int/lit8 p1, p4, 0x20
+    :goto_3
+    and-int/lit8 v1, v0, 0x20
 
-    if-eqz p1, :cond_4
+    if-eqz v1, :cond_4
 
-    .line 13
-    sget-object p3, Lr09;->a:Lr09;
+    move-object v15, v8
+
+    goto :goto_4
 
     :cond_4
-    move-object v2, p0
+    move-object v15, v5
 
-    move-object v8, p3
+    :goto_4
+    and-int/lit16 v0, v0, 0x80
 
-    .line 14
-    invoke-direct/range {v2 .. v8}, LBS9;-><init>(LrS9;LRR9;LaS9;LAS9;LsS9;Lu09;)V
+    if-eqz v0, :cond_5
+
+    move-object/from16 v17, v8
+
+    goto :goto_5
+
+    :cond_5
+    move-object/from16 v17, v6
+
+    :goto_5
+    const v16, 0x7f0b0cb9
+
+    move-object/from16 v9, p0
+
+    move/from16 v10, p1
+
+    .line 1
+    invoke-direct/range {v9 .. v17}, LBS9;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;ILjava/lang/Integer;)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput p1, p0, LBS9;->a:I
+
+    .line 4
+    iput-object p2, p0, LBS9;->b:Ljava/lang/Integer;
+
+    .line 5
+    iput-object p3, p0, LBS9;->c:Ljava/lang/Integer;
+
+    .line 6
+    iput-object p4, p0, LBS9;->d:Ljava/lang/Integer;
+
+    .line 7
+    iput-object p5, p0, LBS9;->e:Ljava/lang/Integer;
+
+    .line 8
+    iput-object p6, p0, LBS9;->f:Ljava/lang/Integer;
+
+    .line 9
+    iput p7, p0, LBS9;->g:I
+
+    .line 10
+    iput-object p8, p0, LBS9;->h:Ljava/lang/Integer;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final describeContents()I
-    .locals 1
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
     .locals 4
 
@@ -220,111 +314,111 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, LBS9;->a:LrS9;
+    iget v1, p1, LBS9;->a:I
 
     .line 14
     .line 15
-    iget-object v3, p0, LBS9;->a:LrS9;
+    iget v3, p0, LBS9;->a:I
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-eq v3, v1, :cond_2
 
     .line 18
     .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
     return v2
 
-    .line 24
+    .line 20
     :cond_2
-    iget-object v1, p0, LBS9;->b:LRR9;
+    iget-object v1, p0, LBS9;->b:Ljava/lang/Integer;
+
+    .line 21
+    .line 22
+    iget-object v3, p1, LBS9;->b:Ljava/lang/Integer;
+
+    .line 23
+    .line 24
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
     .line 26
-    iget-object v3, p1, LBS9;->b:LRR9;
-
     .line 27
+    move-result v1
+
     .line 28
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-nez v1, :cond_3
 
     .line 29
     .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    if-nez v1, :cond_3
-
-    .line 33
-    .line 34
     return v2
 
-    .line 35
+    .line 31
     :cond_3
-    iget-object v1, p0, LBS9;->c:LaS9;
+    iget-object v1, p0, LBS9;->c:Ljava/lang/Integer;
+
+    .line 32
+    .line 33
+    iget-object v3, p1, LBS9;->c:Ljava/lang/Integer;
+
+    .line 34
+    .line 35
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 36
     .line 37
-    iget-object v3, p1, LBS9;->c:LaS9;
-
     .line 38
+    move-result v1
+
     .line 39
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-nez v1, :cond_4
 
     .line 40
     .line 41
-    .line 42
-    move-result v1
-
-    .line 43
-    if-nez v1, :cond_4
-
-    .line 44
-    .line 45
     return v2
 
-    .line 46
+    .line 42
     :cond_4
-    iget-object v1, p0, LBS9;->t:LAS9;
+    iget-object v1, p0, LBS9;->d:Ljava/lang/Integer;
+
+    .line 43
+    .line 44
+    iget-object v3, p1, LBS9;->d:Ljava/lang/Integer;
+
+    .line 45
+    .line 46
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 47
     .line 48
-    iget-object v3, p1, LBS9;->t:LAS9;
-
     .line 49
+    move-result v1
+
     .line 50
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    if-nez v1, :cond_5
 
     .line 51
     .line 52
-    .line 53
-    move-result v1
-
-    .line 54
-    if-nez v1, :cond_5
-
-    .line 55
-    .line 56
     return v2
 
-    .line 57
+    .line 53
     :cond_5
-    iget-object v1, p0, LBS9;->X:LsS9;
+    iget-object v1, p0, LBS9;->e:Ljava/lang/Integer;
+
+    .line 54
+    .line 55
+    iget-object v3, p1, LBS9;->e:Ljava/lang/Integer;
+
+    .line 56
+    .line 57
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 58
     .line 59
-    iget-object v3, p1, LBS9;->X:LsS9;
-
     .line 60
+    move-result v1
+
     .line 61
-    if-eq v1, v3, :cond_6
+    if-nez v1, :cond_6
 
     .line 62
     .line 63
@@ -332,23 +426,23 @@
 
     .line 64
     :cond_6
-    iget-object v1, p0, LBS9;->Y:Lu09;
+    iget-object v1, p0, LBS9;->f:Ljava/lang/Integer;
 
     .line 65
     .line 66
-    iget-object p1, p1, LBS9;->Y:Lu09;
+    iget-object v3, p1, LBS9;->f:Ljava/lang/Integer;
 
     .line 67
     .line 68
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 69
     .line 70
     .line 71
-    move-result p1
+    move-result v1
 
     .line 72
-    if-nez p1, :cond_7
+    if-nez v1, :cond_7
 
     .line 73
     .line 74
@@ -356,132 +450,266 @@
 
     .line 75
     :cond_7
+    iget v1, p0, LBS9;->g:I
+
+    .line 76
+    .line 77
+    iget v3, p1, LBS9;->g:I
+
+    .line 78
+    .line 79
+    if-eq v1, v3, :cond_8
+
+    .line 80
+    .line 81
+    return v2
+
+    .line 82
+    :cond_8
+    iget-object v1, p0, LBS9;->h:Ljava/lang/Integer;
+
+    .line 83
+    .line 84
+    iget-object p1, p1, LBS9;->h:Ljava/lang/Integer;
+
+    .line 85
+    .line 86
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 87
+    .line 88
+    .line 89
+    move-result p1
+
+    .line 90
+    if-nez p1, :cond_9
+
+    .line 91
+    .line 92
+    return v2
+
+    .line 93
+    :cond_9
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LBS9;->a:LrS9;
+    iget v0, p0, LBS9;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 4
     .line 5
+    const/4 v1, 0x0
+
     .line 6
-    move-result v0
+    iget-object v2, p0, LBS9;->b:Ljava/lang/Integer;
 
     .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 8
-    .line 9
-    iget-object v1, p0, LBS9;->b:LRR9;
+    if-nez v2, :cond_0
 
+    .line 9
     .line 10
+    const/4 v2, 0x0
+
     .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    goto :goto_0
 
     .line 12
+    :cond_0
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
     .line 13
     .line 14
-    move-result v1
-
     .line 15
-    add-int/2addr v1, v0
+    move-result v2
 
     .line 16
-    mul-int/lit8 v1, v1, 0x1f
+    :goto_0
+    add-int/2addr v0, v2
 
     .line 17
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 18
-    iget-object v0, p0, LBS9;->c:LaS9;
-
     .line 19
-    .line 20
-    invoke-virtual {v0}, LaS9;->hashCode()I
+    iget-object v2, p0, LBS9;->c:Ljava/lang/Integer;
 
+    .line 20
     .line 21
+    if-nez v2, :cond_1
+
     .line 22
     .line 23
-    move-result v0
+    const/4 v2, 0x0
 
     .line 24
-    add-int/2addr v0, v1
+    goto :goto_1
 
     .line 25
-    mul-int/lit8 v0, v0, 0x1f
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 26
     .line 27
-    iget-object v1, p0, LBS9;->t:LAS9;
-
     .line 28
+    move-result v2
+
     .line 29
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    :goto_1
+    add-int/2addr v0, v2
 
     .line 30
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 31
     .line 32
-    move-result v1
+    iget-object v2, p0, LBS9;->d:Ljava/lang/Integer;
 
     .line 33
-    add-int/2addr v1, v0
-
     .line 34
-    mul-int/lit8 v1, v1, 0x1f
+    if-nez v2, :cond_2
 
     .line 35
     .line 36
-    iget-object v0, p0, LBS9;->X:LsS9;
+    const/4 v2, 0x0
 
     .line 37
+    goto :goto_2
+
     .line 38
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    :cond_2
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 39
     .line 40
     .line 41
-    move-result v0
+    move-result v2
 
     .line 42
-    add-int/2addr v0, v1
+    :goto_2
+    add-int/2addr v0, v2
 
     .line 43
     mul-int/lit8 v0, v0, 0x1f
 
     .line 44
     .line 45
-    iget-object v1, p0, LBS9;->Y:Lu09;
+    iget-object v2, p0, LBS9;->e:Ljava/lang/Integer;
 
     .line 46
     .line 47
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+    if-nez v2, :cond_3
 
     .line 48
     .line 49
+    const/4 v2, 0x0
+
     .line 50
-    move-result v1
+    goto :goto_3
 
     .line 51
-    add-int/2addr v1, v0
+    :cond_3
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
     .line 52
-    return v1
+    .line 53
+    .line 54
+    move-result v2
+
+    .line 55
+    :goto_3
+    add-int/2addr v0, v2
+
+    .line 56
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 57
+    .line 58
+    iget-object v2, p0, LBS9;->f:Ljava/lang/Integer;
+
+    .line 59
+    .line 60
+    if-nez v2, :cond_4
+
+    .line 61
+    .line 62
+    const/4 v2, 0x0
+
+    .line 63
+    goto :goto_4
+
+    .line 64
+    :cond_4
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v2
+
+    .line 68
+    :goto_4
+    add-int/2addr v0, v2
+
+    .line 69
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 70
+    .line 71
+    iget v2, p0, LBS9;->g:I
+
+    .line 72
+    .line 73
+    add-int/2addr v0, v2
+
+    .line 74
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 75
+    .line 76
+    iget-object v2, p0, LBS9;->h:Ljava/lang/Integer;
+
+    .line 77
+    .line 78
+    if-nez v2, :cond_5
+
+    .line 79
+    .line 80
+    goto :goto_5
+
+    .line 81
+    :cond_5
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 82
+    .line 83
+    .line 84
+    move-result v1
+
+    .line 85
+    :goto_5
+    add-int/2addr v0, v1
+
+    .line 86
+    return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 2
+    .locals 3
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "LensExplorerConfiguration(headerConfiguration="
+    const-string v1, "LayoutConfiguration(root="
 
     .line 4
     .line 5
@@ -490,16 +718,16 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LBS9;->a:LrS9;
+    iget v1, p0, LBS9;->a:I
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", bannerConfiguration="
+    const-string v1, ", loadingOverlayViewStubIdRes="
 
     .line 14
     .line 15
@@ -508,7 +736,7 @@
     .line 16
     .line 17
     .line 18
-    iget-object v1, p0, LBS9;->b:LRR9;
+    iget-object v1, p0, LBS9;->b:Ljava/lang/Integer;
 
     .line 19
     .line 20
@@ -517,7 +745,7 @@
     .line 21
     .line 22
     .line 23
-    const-string v1, ", contentConfiguration="
+    const-string v1, ", hintViewStubIdRes="
 
     .line 24
     .line 25
@@ -526,7 +754,7 @@
     .line 26
     .line 27
     .line 28
-    iget-object v1, p0, LBS9;->c:LaS9;
+    iget-object v1, p0, LBS9;->c:Ljava/lang/Integer;
 
     .line 29
     .line 30
@@ -535,7 +763,7 @@
     .line 31
     .line 32
     .line 33
-    const-string v1, ", onboardingConfiguration="
+    const-string v1, ", tooltipViewStubIdRes="
 
     .line 34
     .line 35
@@ -544,7 +772,7 @@
     .line 36
     .line 37
     .line 38
-    iget-object v1, p0, LBS9;->t:LAS9;
+    iget-object v1, p0, LBS9;->d:Ljava/lang/Integer;
 
     .line 39
     .line 40
@@ -553,7 +781,7 @@
     .line 41
     .line 42
     .line 43
-    const-string v1, ", withExternalFeedsMode="
+    const-string v1, ", carouselTooltipViewStubIdRes="
 
     .line 44
     .line 45
@@ -562,7 +790,7 @@
     .line 46
     .line 47
     .line 48
-    iget-object v1, p0, LBS9;->X:LsS9;
+    iget-object v1, p0, LBS9;->e:Ljava/lang/Integer;
 
     .line 49
     .line 50
@@ -571,7 +799,7 @@
     .line 51
     .line 52
     .line 53
-    const-string v1, ", ctaUseCaseId="
+    const-string v1, ", explorerHintViewStubIdRes="
 
     .line 54
     .line 55
@@ -580,7 +808,7 @@
     .line 56
     .line 57
     .line 58
-    iget-object v1, p0, LBS9;->Y:Lu09;
+    iget-object v1, p0, LBS9;->f:Ljava/lang/Integer;
 
     .line 59
     .line 60
@@ -589,7 +817,7 @@
     .line 61
     .line 62
     .line 63
-    const-string v1, ")"
+    const-string v1, ", videoEditorViewStubIdRes="
 
     .line 64
     .line 65
@@ -598,85 +826,39 @@
     .line 66
     .line 67
     .line 68
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget v1, p0, LBS9;->g:I
 
     .line 69
     .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 71
+    .line 72
+    .line 73
+    const-string v1, ", topLeftViewStubIdRes="
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    iget-object v1, p0, LBS9;->h:Ljava/lang/Integer;
+
+    .line 79
+    .line 80
+    const-string v2, ")"
+
+    .line 81
+    .line 82
+    invoke-static {v0, v1, v2}, Lir1;->k(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 83
+    .line 84
+    .line 85
     move-result-object v0
 
-    .line 72
+    .line 86
     return-object v0
-.end method
-
-.method public final writeToParcel(Landroid/os/Parcel;I)V
-    .locals 1
-
-    .line 1
-    iget-object p2, p0, LBS9;->a:LrS9;
-
-    .line 2
-    .line 3
-    const/4 v0, 0x0
-
-    .line 4
-    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
-
-    .line 5
-    .line 6
-    .line 7
-    iget-object p2, p0, LBS9;->b:LRR9;
-
-    .line 8
-    .line 9
-    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p2, p0, LBS9;->c:LaS9;
-
-    .line 13
-    .line 14
-    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
-
-    .line 15
-    .line 16
-    .line 17
-    iget-object p2, p0, LBS9;->t:LAS9;
-
-    .line 18
-    .line 19
-    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
-
-    .line 20
-    .line 21
-    .line 22
-    iget-object p2, p0, LBS9;->X:LsS9;
-
-    .line 23
-    .line 24
-    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
-
-    .line 25
-    .line 26
-    .line 27
-    iget-object p2, p0, LBS9;->Y:Lu09;
-
-    .line 28
-    .line 29
-    invoke-static {p2}, Lrpk;->m(Lu09;)Ljava/lang/String;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p2
-
-    .line 33
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 34
-    .line 35
-    .line 36
-    return-void
 .end method

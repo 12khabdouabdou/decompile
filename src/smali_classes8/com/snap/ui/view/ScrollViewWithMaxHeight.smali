@@ -49,7 +49,7 @@
 
     move-result-object p1
 
-    sget-object v0, LCve;->l:[I
+    sget-object v0, LlNe;->l:[I
 
     const/4 v1, 0x0
 

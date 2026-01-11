@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lw98;
+    proxyClass = LOf8;
     schema = "\'oneShotPrivacyPolicyScreenOnAgreeTapped\':f|m|(),\'oneShotPrivacyPolicyScreenOnCancelTapped\':f|m|(),\'oneShotPrivacyPolicyScreenOnSettingsTapped\':f|m|()"
     typeReferences = {}
 .end annotation

@@ -3,218 +3,294 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lmt3;
+.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final a:LqS3;
+.field public final synthetic a:I
+
+.field public final synthetic b:Lvr5;
+
+.field public final synthetic c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(LqS3;)V
+.method public synthetic constructor <init>(Lvr5;Ljava/lang/String;I)V
     .locals 0
 
     .line 1
+    iput p3, p0, Ltr5;->a:I
+
+    iput-object p1, p0, Ltr5;->b:Lvr5;
+
+    iput-object p2, p0, Ltr5;->c:Ljava/lang/String;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Ltr5;->a:LqS3;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
-    .locals 16
+.method public final accept(Ljava/lang/Object;)V
+    .locals 6
 
     .line 1
-    new-instance v0, LTr5;
+    const-string v0, "throwable"
 
     .line 2
     .line 3
-    sget-object v1, Ljava/util/Collections;->EMPTY_MAP:Ljava/util/Map;
+    const-string v1, "rule"
 
     .line 4
     .line 5
-    new-instance v5, Ljava/util/HashMap;
+    const/16 v2, 0x40
 
     .line 6
     .line 7
-    invoke-direct {v5, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+    iget-object v3, p0, Ltr5;->c:Ljava/lang/String;
 
     .line 8
     .line 9
+    iget-object v4, p0, Ltr5;->b:Lvr5;
+
     .line 10
-    new-instance v2, Ljava/util/HashMap;
-
     .line 11
+    iget v5, p0, Ltr5;->a:I
+
     .line 12
-    if-eqz v1, :cond_0
-
     .line 13
-    .line 14
-    invoke-direct {v2, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+    packed-switch v5, :pswitch_data_0
 
+    .line 14
     .line 15
     .line 16
-    .line 17
-    :goto_0
-    move-object v7, v2
+    check-cast p1, Ljava/lang/Throwable;
 
+    .line 17
     .line 18
-    goto :goto_1
+    invoke-virtual {v4}, Lvr5;->d()LCZ0;
 
     .line 19
-    :cond_0
-    invoke-direct {v2}, Ljava/util/HashMap;-><init>()V
-
     .line 20
     .line 21
+    move-result-object v0
+
     .line 22
-    goto :goto_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 23
-    :goto_1
-    const-string v1, "original_url"
-
     .line 24
     .line 25
-    move-object/from16 v3, p1
+    move-result-object p1
 
     .line 26
-    .line 27
-    invoke-interface {v7, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
+    .line 27
     .line 28
     .line 29
+    move-result-object p1
+
     .line 30
-    new-instance v2, LRpg;
+    invoke-virtual {v0, v3, p1}, LCZ0;->p(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 31
     .line 32
-    const/4 v9, 0x0
-
     .line 33
-    const/4 v10, 0x0
+    return-void
 
     .line 34
-    const/4 v4, 0x1
+    :pswitch_0
+    check-cast p1, [LU74;
 
     .line 35
-    const/4 v6, 0x0
-
     .line 36
-    const/4 v8, 0x1
+    iget-object v0, v4, Lvr5;->r:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 37
-    invoke-direct/range {v2 .. v10}, LRpg;-><init>(Ljava/lang/String;ILjava/util/HashMap;Ljava/lang/Object;Ljava/util/HashMap;ZZLjava/lang/Integer;)V
-
     .line 38
+    invoke-virtual {v0, v3, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 39
     .line 40
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
     .line 41
+    return-void
+
     .line 42
-    invoke-direct {v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
+    :pswitch_1
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 43
     .line 44
+    sget-object v5, Lvr5;->t:Ljava/util/Set;
+
     .line 45
-    sget-object v6, Llt3;->q:Llt3;
-
     .line 46
-    .line 47
-    sget-object v8, LIL6;->a:LIL6;
+    invoke-virtual {v4}, Lvr5;->d()LCZ0;
 
+    .line 47
     .line 48
     .line 49
-    const/4 v13, 0x0
+    move-result-object v4
 
     .line 50
-    const/4 v14, 0x0
+    sget-object v5, LEZ0;->k0:LEZ0;
 
     .line 51
-    const/4 v3, 0x0
-
     .line 52
-    const/4 v4, 0x0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 53
-    const/4 v5, 0x0
-
     .line 54
-    const/4 v7, 0x0
-
     .line 55
-    const/4 v9, 0x0
+    move-result-object p1
 
     .line 56
-    const/4 v10, 0x0
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     .line 57
-    const/4 v11, 0x0
-
     .line 58
-    const/4 v12, 0x0
-
     .line 59
-    const/16 v15, 0x7f5c
+    move-result-object p1
 
     .line 60
+    invoke-virtual {v4}, LCZ0;->a()LcH8;
+
     .line 61
-    move-object v2, v1
-
     .line 62
-    move-object/from16 v1, p1
-
     .line 63
+    move-result-object v4
+
     .line 64
-    invoke-direct/range {v0 .. v15}, LTr5;-><init>(Ljava/lang/String;Lio/reactivex/rxjava3/core/Single;LSv1;LuT3;Lxed;LCU3;Lrwf;Ljava/util/Set;LFd7;ZLjava/lang/String;Ljava/lang/String;LlR3;LXFd;I)V
+    invoke-static {v2, v3}, Lkti;->d1(ILjava/lang/String;)Ljava/lang/String;
 
     .line 65
     .line 66
     .line 67
-    move-object v1, v0
+    move-result-object v2
 
     .line 68
-    move-object/from16 v0, p0
+    invoke-static {v5, v1, v2}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
 
     .line 69
     .line 70
-    iget-object v2, v0, Ltr5;->a:LqS3;
-
     .line 71
+    move-result-object v1
+
     .line 72
-    invoke-interface {v2, v1}, LqS3;->h(LvT3;)Lqpg;
+    invoke-virtual {v1, v0, p1}, LV7c;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 73
     .line 74
     .line 75
-    move-result-object v1
+    invoke-static {v4, v1}, LaH8;->e(LcH8;LV7c;)V
 
     .line 76
-    iget-object v1, v1, Lqpg;->a:Lio/reactivex/rxjava3/core/Single;
-
     .line 77
     .line 78
-    sget-object v2, LTF2;->p0:LTF2;
+    return-void
 
     .line 79
+    :pswitch_2
+    check-cast p1, Ljava/util/Map;
+
     .line 80
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
-
     .line 81
-    .line 82
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    iget-object v0, v4, Lvr5;->s:Ljava/util/concurrent/ConcurrentHashMap;
 
+    .line 82
     .line 83
+    invoke-virtual {v0, v3, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     .line 84
     .line 85
-    return-object v3
+    .line 86
+    return-void
+
+    .line 87
+    :pswitch_3
+    check-cast p1, Ljava/lang/Throwable;
+
+    .line 88
+    .line 89
+    sget-object v5, Lvr5;->t:Ljava/util/Set;
+
+    .line 90
+    .line 91
+    invoke-virtual {v4}, Lvr5;->d()LCZ0;
+
+    .line 92
+    .line 93
+    .line 94
+    move-result-object v4
+
+    .line 95
+    sget-object v5, LEZ0;->l0:LEZ0;
+
+    .line 96
+    .line 97
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object p1
+
+    .line 101
+    invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object p1
+
+    .line 105
+    invoke-virtual {v4}, LCZ0;->a()LcH8;
+
+    .line 106
+    .line 107
+    .line 108
+    move-result-object v4
+
+    .line 109
+    invoke-static {v2, v3}, Lkti;->d1(ILjava/lang/String;)Ljava/lang/String;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v2
+
+    .line 113
+    invoke-static {v5, v1, v2}, LDz9;->t0(LH7c;Ljava/lang/String;Ljava/lang/String;)LV7c;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object v1
+
+    .line 117
+    invoke-virtual {v1, v0, p1}, LV7c;->d(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-static {v4, v1}, LaH8;->e(LcH8;LV7c;)V
+
+    .line 121
+    .line 122
+    .line 123
+    return-void
+
+    .line 124
+    nop
+
+    .line 125
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

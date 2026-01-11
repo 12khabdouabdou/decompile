@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'PlatformJobScheduler\':\'PlatformJobScheduler\',\'PlatformManualExposureCofStore\':\'PlatformManualExposureCofStore\',\'PlatformDuplexClient\':\'PlatformDuplexClient\',\'PlatformBoltUploader\':\'PlatformBoltUploader\'"
-    type = .enum LJv3;->b:LJv3;
+    schema = "\'PlatformJobScheduler\':\'PlatformJobScheduler\',\'PlatformManualExposureCofStore\':\'PlatformManualExposureCofStore\',\'PlatformDuplexClient\':\'PlatformDuplexClient\',\'PlatformBoltUploader\':\'PlatformBoltUploader\',\'PlatformIapProductFetcher\':\'PlatformIapProductFetcher\',\'PlatformSUPStore\':\'PlatformSUPStore\'"
+    type = .enum LRy3;->b:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -24,125 +24,177 @@
 
 .field public static final enum PlatformDuplexClient:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
+.field public static final enum PlatformIapProductFetcher:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+
 .field public static final enum PlatformJobScheduler:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
 .field public static final enum PlatformManualExposureCofStore:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+
+.field public static final enum PlatformSUPStore:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
 .field public static final synthetic a:[Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 13
 
     .line 1
-    const/4 v0, 0x3
+    const/4 v0, 0x5
 
     .line 2
-    const/4 v1, 0x2
+    const/4 v1, 0x4
 
     .line 3
-    const/4 v2, 0x1
+    const/4 v2, 0x3
 
     .line 4
-    const/4 v3, 0x0
+    const/4 v3, 0x2
 
     .line 5
-    new-instance v4, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    const/4 v4, 0x1
 
     .line 6
+    const/4 v5, 0x0
+
     .line 7
-    const-string v5, "PlatformJobScheduler"
+    new-instance v6, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 8
     .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v7, "PlatformJobScheduler"
 
     .line 10
     .line 11
-    .line 12
-    sput-object v4, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformJobScheduler:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 12
     .line 13
     .line 14
-    new-instance v5, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    sput-object v6, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformJobScheduler:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 15
     .line 16
-    const-string v6, "PlatformManualExposureCofStore"
+    new-instance v7, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 17
     .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v8, "PlatformManualExposureCofStore"
 
     .line 19
     .line 20
-    .line 21
-    sput-object v5, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformManualExposureCofStore:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 21
     .line 22
     .line 23
-    new-instance v6, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    sput-object v7, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformManualExposureCofStore:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 24
     .line 25
-    const-string v7, "PlatformDuplexClient"
+    new-instance v8, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 26
     .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v9, "PlatformDuplexClient"
 
     .line 28
     .line 29
-    .line 30
-    sput-object v6, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformDuplexClient:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 30
     .line 31
     .line 32
-    new-instance v7, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    sput-object v8, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformDuplexClient:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 33
     .line 34
-    const-string v8, "PlatformBoltUploader"
+    new-instance v9, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 35
     .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v10, "PlatformBoltUploader"
 
     .line 37
     .line 38
-    .line 39
-    sput-object v7, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformBoltUploader:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 39
     .line 40
     .line 41
-    const/4 v8, 0x4
+    sput-object v9, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformBoltUploader:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 42
-    new-array v8, v8, [Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
-
     .line 43
+    new-instance v10, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+
     .line 44
-    aput-object v4, v8, v3
-
     .line 45
+    const-string v11, "PlatformIapProductFetcher"
+
     .line 46
-    aput-object v5, v8, v2
-
     .line 47
-    .line 48
-    aput-object v6, v8, v1
+    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
+    .line 48
     .line 49
     .line 50
-    aput-object v7, v8, v0
+    sput-object v10, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformIapProductFetcher:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 51
     .line 52
-    sput-object v8, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->a:[Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+    new-instance v11, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
 
     .line 53
     .line 54
+    const-string v12, "PlatformSUPStore"
+
+    .line 55
+    .line 56
+    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 57
+    .line 58
+    .line 59
+    sput-object v11, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->PlatformSUPStore:Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+
+    .line 60
+    .line 61
+    const/4 v12, 0x6
+
+    .line 62
+    new-array v12, v12, [Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+
+    .line 63
+    .line 64
+    aput-object v6, v12, v5
+
+    .line 65
+    .line 66
+    aput-object v7, v12, v4
+
+    .line 67
+    .line 68
+    aput-object v8, v12, v3
+
+    .line 69
+    .line 70
+    aput-object v9, v12, v2
+
+    .line 71
+    .line 72
+    aput-object v10, v12, v1
+
+    .line 73
+    .line 74
+    aput-object v11, v12, v0
+
+    .line 75
+    .line 76
+    sput-object v12, Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;->a:[Lcom/snap/modules/di/api/PlatformUserSessionServiceKey;
+
+    .line 77
+    .line 78
     return-void
 .end method
 

@@ -4,11 +4,31 @@
 
 
 # instance fields
-.field public final a:LlR3;
+.field public final a:Liu6;
+
+.field public final b:LcH8;
+
+.field public final c:LQS9;
+
+.field public final d:LQ2i;
+
+.field public final e:Lnp0;
+
+.field public final f:LnJe;
+
+.field public final g:Ljava/util/concurrent/ConcurrentHashMap;
+
+.field public final h:Ljava/util/concurrent/ConcurrentHashMap;
+
+.field public final i:Ljava/util/concurrent/ConcurrentHashMap;
+
+.field public final j:Ljava/util/concurrent/ConcurrentHashMap;
+
+.field public volatile k:I
 
 
 # direct methods
-.method public constructor <init>(LlR3;)V
+.method public constructor <init>(LQS9;LR93;Liu6;LcH8;)V
     .locals 0
 
     .line 1
@@ -17,148 +37,172 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LVS3;->a:LlR3;
+    iput-object p3, p0, LVS3;->a:Liu6;
 
     .line 5
     .line 6
+    iput-object p4, p0, LVS3;->b:LcH8;
+
+    .line 7
+    .line 8
+    iput-object p1, p0, LVS3;->c:LQS9;
+
+    .line 9
+    .line 10
+    new-instance p1, LQ2i;
+
+    .line 11
+    .line 12
+    invoke-direct {p1, p2}, LQ2i;-><init>(LR93;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iput-object p1, p0, LVS3;->d:LQ2i;
+
+    .line 16
+    .line 17
+    sget-object p1, LtXa;->Z:LtXa;
+
+    .line 18
+    .line 19
+    const-string p2, "ContactsNotOnSnapchatAnalyticsReporter"
+
+    .line 20
+    .line 21
+    invoke-static {p1, p1, p2}, LzHa;->l(LtXa;LtXa;Ljava/lang/String;)Lnp0;
+
+    .line 22
+    .line 23
+    .line 24
+    move-result-object p1
+
+    .line 25
+    iput-object p1, p0, LVS3;->e:Lnp0;
+
+    .line 26
+    .line 27
+    new-instance p2, LnJe;
+
+    .line 28
+    .line 29
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 30
+    .line 31
+    .line 32
+    iput-object p2, p0, LVS3;->f:LnJe;
+
+    .line 33
+    .line 34
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 35
+    .line 36
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 37
+    .line 38
+    .line 39
+    iput-object p1, p0, LVS3;->g:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 40
+    .line 41
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 42
+    .line 43
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 44
+    .line 45
+    .line 46
+    iput-object p1, p0, LVS3;->h:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 47
+    .line 48
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 49
+    .line 50
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 51
+    .line 52
+    .line 53
+    iput-object p1, p0, LVS3;->i:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 54
+    .line 55
+    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 56
+    .line 57
+    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    .line 58
+    .line 59
+    .line 60
+    iput-object p1, p0, LVS3;->j:Ljava/util/concurrent/ConcurrentHashMap;
+
+    .line 61
+    .line 62
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()LlR3;
-    .locals 1
+.method public final a(Lkotlin/jvm/functions/Function0;)V
+    .locals 4
 
     .line 1
-    iget-object v0, p0, LVS3;->a:LlR3;
+    iget-object v0, p0, LVS3;->e:Lnp0;
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    iget-object v1, p0, LVS3;->f:LnJe;
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LVS3;
+    invoke-virtual {v1}, LnJe;->d()LA36;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result-object v1
 
     .line 9
-    .line 10
-    return v2
+    new-instance v2, LjA;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, LVS3;
+    const/4 v3, 0x2
 
     .line 12
-    .line 13
-    iget-object v1, p0, LVS3;->a:LlR3;
+    invoke-direct {v2, v3, p1}, LjA;-><init>(ILkotlin/jvm/functions/Function0;)V
 
+    .line 13
     .line 14
     .line 15
-    iget-object p1, p1, LVS3;->a:LlR3;
+    const/4 p1, 0x0
 
     .line 16
-    .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2, p1}, LOIc;->C(Lio/reactivex/rxjava3/core/Scheduler;Ljava/lang/Runnable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
+    .line 17
     .line 18
     .line 19
+    move-result-object p1
+
     .line 20
-    move-result p1
+    iget-object v1, p0, LVS3;->a:Liu6;
 
     .line 21
-    if-nez p1, :cond_2
-
     .line 22
+    invoke-virtual {v1, v0, p1}, Liu6;->a(Lnp0;Lio/reactivex/rxjava3/disposables/Disposable;)V
+
     .line 23
-    return v2
-
     .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LVS3;->a:LlR3;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "ContentMetadataEntry(metadata="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LVS3;->a:LlR3;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
+    .line 25
+    return-void
 .end method

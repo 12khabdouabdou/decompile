@@ -3,208 +3,159 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lobd;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LJn1;
+.field public final a:Lnv4;
 
 
 # direct methods
-.method public synthetic constructor <init>(LJn1;I)V
+.method public constructor <init>(Lnv4;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LIn1;->a:I
-
-    iput-object p1, p0, LIn1;->b:LJn1;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LIn1;->a:Lnv4;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 3
+.method public final Y(LJtk;)V
+    .locals 11
 
     .line 1
-    iget v0, p0, LIn1;->a:I
+    new-instance v2, LxP0;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const/16 v0, 0x1a
 
     .line 4
     .line 5
-    .line 6
-    new-instance v0, LKn1;
+    invoke-direct {v2, v0, p0}, LxP0;-><init>(ILjava/lang/Object;)V
 
+    .line 6
     .line 7
     .line 8
-    iget-object v1, p0, LIn1;->b:LJn1;
+    new-instance v3, LwX0;
 
     .line 9
     .line 10
-    iget-object v2, v1, LJn1;->c:LUo4;
+    const-class v6, LIn1;
 
     .line 11
     .line 12
-    iget-object v1, v1, LJn1;->a:Lbke;
+    const-string v7, "needToShow"
 
     .line 13
     .line 14
-    invoke-direct {v0, v2, v1}, LKn1;-><init>(LUo4;Lbke;)V
+    const/4 v4, 0x1
 
     .line 15
+    const-string v8, "needToShow(Lcom/snap/opera/model/OperaPageModel;)Z"
+
     .line 16
     .line 17
-    return-object v0
+    const/4 v9, 0x0
 
     .line 18
-    :pswitch_0
-    new-instance v0, LUi1;
+    const/16 v10, 0x19
 
     .line 19
     .line 20
-    iget-object v1, p0, LIn1;->b:LJn1;
+    move-object v5, p0
 
     .line 21
-    .line 22
-    iget-object v1, v1, LJn1;->a:Lbke;
+    invoke-direct/range {v3 .. v10}, LwX0;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
 
+    .line 22
     .line 23
     .line 24
-    invoke-direct {v0, v1}, LUi1;-><init>(Lbke;)V
+    move-object v0, v3
 
     .line 25
+    new-instance v3, LwX0;
+
     .line 26
     .line 27
-    return-object v0
+    const-class v6, LIn1;
 
     .line 28
-    :pswitch_1
-    new-instance v0, LPt1;
-
     .line 29
-    .line 30
-    iget-object v1, p0, LIn1;->b:LJn1;
+    const-string v7, "createLayerParam"
 
+    .line 30
     .line 31
+    const/4 v4, 0x1
+
     .line 32
-    iget-object v2, v1, LJn1;->a:Lbke;
+    const-string v8, "createLayerParam(Lcom/snap/opera/model/OperaPageModel;)Lcom/snap/bloops/ui/fullscreen/fallback/BloopsFallbackUxLayerParams;"
 
     .line 33
     .line 34
-    iget-object v1, v1, LJn1;->b:LUo4;
+    const/4 v9, 0x0
 
     .line 35
+    const/16 v10, 0x1a
+
     .line 36
-    invoke-direct {v0, v1, v2}, LPt1;-><init>(LUo4;Lbke;)V
-
     .line 37
+    move-object v5, p0
+
     .line 38
+    invoke-direct/range {v3 .. v10}, LwX0;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+
     .line 39
-    return-object v0
-
     .line 40
-    :pswitch_2
-    new-instance v0, LZq1;
-
     .line 41
+    const/4 v6, 0x0
+
     .line 42
-    iget-object v1, p0, LIn1;->b:LJn1;
+    const/4 v1, 0x0
 
     .line 43
+    move-object v4, v3
+
     .line 44
-    iget-object v1, v1, LJn1;->a:Lbke;
+    move-object v3, v0
 
     .line 45
+    const-string v0, "BLOOPS_FALLBACK_UX_LAYER"
+
     .line 46
-    invoke-direct {v0, v1}, LZq1;-><init>(Lbke;)V
-
     .line 47
-    .line 48
-    .line 49
-    return-object v0
+    const/4 v5, 0x0
 
+    .line 48
+    const/16 v7, 0x62
+
+    .line 49
     .line 50
-    :pswitch_3
-    new-instance v0, LYq1;
+    invoke-static/range {v0 .. v7}, LV0j;->k(Ljava/lang/String;ILkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;ZII)LZR9;
 
     .line 51
     .line 52
-    iget-object v1, p0, LIn1;->b:LJn1;
-
     .line 53
+    move-result-object v0
+
     .line 54
-    iget-object v1, v1, LJn1;->a:Lbke;
+    sget-object v1, LRP5;->f:LZR9;
 
     .line 55
     .line 56
-    invoke-direct {v0, v1}, LYq1;-><init>(Lbke;)V
+    invoke-virtual {p1, v0, v1}, LJtk;->m(LZR9;LZR9;)V
 
     .line 57
     .line 58
     .line 59
-    return-object v0
-
-    .line 60
-    :pswitch_4
-    new-instance v0, Lgm1;
-
-    .line 61
-    .line 62
-    iget-object v1, p0, LIn1;->b:LJn1;
-
-    .line 63
-    .line 64
-    iget-object v1, v1, LJn1;->a:Lbke;
-
-    .line 65
-    .line 66
-    invoke-direct {v0, v1}, Lgm1;-><init>(Lbke;)V
-
-    .line 67
-    .line 68
-    .line 69
-    return-object v0
-
-    .line 70
-    :pswitch_5
-    new-instance v0, Ltg1;
-
-    .line 71
-    .line 72
-    iget-object v1, p0, LIn1;->b:LJn1;
-
-    .line 73
-    .line 74
-    iget-object v1, v1, LJn1;->a:Lbke;
-
-    .line 75
-    .line 76
-    invoke-direct {v0, v1}, Ltg1;-><init>(Lbke;)V
-
-    .line 77
-    .line 78
-    .line 79
-    return-object v0
-
-    .line 80
-    nop
-
-    .line 81
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

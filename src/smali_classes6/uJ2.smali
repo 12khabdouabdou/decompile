@@ -1,475 +1,339 @@
 .class public final LuJ2;
-.super LcZc;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements LyUc;
+.implements LoJb;
 
 
 # instance fields
-.field public final X:Ljava/lang/Object;
+.field public final A:LCBe;
 
-.field public Y:Ljava/lang/Object;
+.field public final B:LCBe;
 
-.field public Z:Ljava/lang/Object;
+.field public final C:LCBe;
+
+.field public final D:LCBe;
 
 .field public final synthetic a:I
 
-.field public b:Ljava/lang/Object;
+.field public final b:LCBe;
 
-.field public final c:Ljava/lang/String;
+.field public final c:LCBe;
 
-.field public final t:Ljava/lang/Object;
+.field public final d:LCBe;
+
+.field public final e:LCBe;
+
+.field public final f:LCBe;
+
+.field public final g:LCBe;
+
+.field public final h:LCBe;
+
+.field public final i:LCBe;
+
+.field public final j:LCBe;
+
+.field public final k:LCBe;
+
+.field public final l:LCBe;
+
+.field public final m:LCBe;
+
+.field public final n:LCBe;
+
+.field public final o:LCBe;
+
+.field public final p:LCBe;
+
+.field public final q:LCBe;
+
+.field public final r:LCBe;
+
+.field public final s:LCBe;
+
+.field public final t:LCBe;
+
+.field public final u:LCBe;
+
+.field public final v:LCBe;
+
+.field public final w:LCBe;
+
+.field public final x:LCBe;
+
+.field public final y:LCBe;
+
+.field public final z:LCBe;
 
 
 # direct methods
-.method public constructor <init>(LB99;LWq6;)V
-    .locals 1
+.method public constructor <init>(Le35;Le35;Le35;Le35;Le35;Le35;LCBe;LCBe;Le35;LQ26;Le35;LCBe;LCBe;Le35;Le35;Le35;Le35;LCBe;LCBe;Le35;Le35;Le35;LCBe;Le35;Le35;Le35;Le35;Le35;Le35;Le35;Le35;)V
+    .locals 0
 
-    const/4 v0, 0x2
+    const/4 p5, 0x1
 
-    iput v0, p0, LuJ2;->a:I
-
-    .line 15
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 16
-    iput-object p1, p0, LuJ2;->t:Ljava/lang/Object;
-
-    .line 17
-    iput-object p2, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 18
-    sget-object p1, Lve6;->Z:Lve6;
-
-    .line 19
-    const-string p2, "PlaybackInAppNotificationPolicyModifierPlugin"
-
-    .line 20
-    invoke-static {p1, p1, p2}, LEU0;->i(Lve6;Lve6;Ljava/lang/String;)LWm0;
-
-    move-result-object p1
-
-    .line 21
-    iput-object p1, p0, LuJ2;->Y:Ljava/lang/Object;
-
-    .line 22
-    new-instance v0, LBre;
-
-    invoke-direct {v0, p1}, LBre;-><init>(LWm0;)V
-
-    .line 23
-    iput-object v0, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 24
-    iput-object p2, p0, LuJ2;->c:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(LJ7d;LBre;LPYh;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, LuJ2;->a:I
-
-    .line 25
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 26
-    iput-object p1, p0, LuJ2;->t:Ljava/lang/Object;
-
-    .line 27
-    iput-object p2, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 28
-    iput-object p3, p0, LuJ2;->Y:Ljava/lang/Object;
-
-    .line 29
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
-    iput-object p1, p0, LuJ2;->b:Ljava/lang/Object;
-
-    .line 30
-    const-string p1, "ImpalaChromeClick"
-
-    iput-object p1, p0, LuJ2;->c:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(LYYg;LWq6;)V
-    .locals 2
-
-    const/4 v0, 0x3
-
-    iput v0, p0, LuJ2;->a:I
+    iput p5, p0, LuJ2;->a:I
 
     .line 31
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p2, p0, LuJ2;->t:Ljava/lang/Object;
+    iput-object p1, p0, LuJ2;->c:LCBe;
 
     .line 33
-    sget-object p2, LFkh;->Z:LFkh;
+    iput-object p2, p0, LuJ2;->d:LCBe;
 
     .line 34
-    const-string v0, "SpotlightForUsFeedSuppressNotificationPlugin"
+    iput-object p3, p0, LuJ2;->e:LCBe;
 
     .line 35
-    invoke-static {p2, p2, v0}, Ln9f;->i(LFkh;LFkh;Ljava/lang/String;)LWm0;
-
-    move-result-object p2
+    iput-object p4, p0, LuJ2;->f:LCBe;
 
     .line 36
-    iput-object p2, p0, LuJ2;->X:Ljava/lang/Object;
+    iput-object p6, p0, LuJ2;->g:LCBe;
 
     .line 37
-    sget-object p2, Lrn0;->a:Lrn0;
+    iput-object p7, p0, LuJ2;->b:LCBe;
 
     .line 38
-    iput-object p2, p0, LuJ2;->Y:Ljava/lang/Object;
+    iput-object p8, p0, LuJ2;->h:LCBe;
 
     .line 39
-    sget-object p2, Lkmh;->b:Lkmh;
+    iput-object p9, p0, LuJ2;->i:LCBe;
 
     .line 40
-    new-instance v1, LJkh;
+    iput-object p10, p0, LuJ2;->j:LCBe;
 
     .line 41
-    iget-object p1, p1, LYYg;->b:Ljava/lang/Object;
-
-    check-cast p1, LB99;
+    iput-object p11, p0, LuJ2;->k:LCBe;
 
     .line 42
-    invoke-direct {v1, p1, p2}, LJkh;-><init>(LB99;Lkmh;)V
+    iput-object p12, p0, LuJ2;->l:LCBe;
 
     .line 43
-    iput-object v1, p0, LuJ2;->Z:Ljava/lang/Object;
+    iput-object p13, p0, LuJ2;->m:LCBe;
 
     .line 44
-    iput-object v0, p0, LuJ2;->c:Ljava/lang/String;
+    iput-object p14, p0, LuJ2;->n:LCBe;
+
+    .line 45
+    iput-object p15, p0, LuJ2;->o:LCBe;
+
+    move-object/from16 p1, p16
+
+    .line 46
+    iput-object p1, p0, LuJ2;->p:LCBe;
+
+    move-object/from16 p1, p17
+
+    .line 47
+    iput-object p1, p0, LuJ2;->q:LCBe;
+
+    move-object/from16 p1, p18
+
+    .line 48
+    iput-object p1, p0, LuJ2;->r:LCBe;
+
+    move-object/from16 p1, p19
+
+    .line 49
+    iput-object p1, p0, LuJ2;->s:LCBe;
+
+    move-object/from16 p1, p20
+
+    .line 50
+    iput-object p1, p0, LuJ2;->t:LCBe;
+
+    move-object/from16 p1, p21
+
+    .line 51
+    iput-object p1, p0, LuJ2;->u:LCBe;
+
+    move-object/from16 p1, p22
+
+    .line 52
+    iput-object p1, p0, LuJ2;->v:LCBe;
+
+    move-object/from16 p1, p23
+
+    .line 53
+    iput-object p1, p0, LuJ2;->w:LCBe;
+
+    move-object/from16 p1, p24
+
+    .line 54
+    iput-object p1, p0, LuJ2;->x:LCBe;
+
+    move-object/from16 p1, p26
+
+    .line 55
+    iput-object p1, p0, LuJ2;->y:LCBe;
+
+    move-object/from16 p1, p27
+
+    .line 56
+    iput-object p1, p0, LuJ2;->z:LCBe;
+
+    move-object/from16 p1, p28
+
+    .line 57
+    iput-object p1, p0, LuJ2;->A:LCBe;
+
+    move-object/from16 p1, p29
+
+    .line 58
+    iput-object p1, p0, LuJ2;->B:LCBe;
+
+    move-object/from16 p1, p30
+
+    .line 59
+    iput-object p1, p0, LuJ2;->C:LCBe;
+
+    move-object/from16 p1, p31
+
+    .line 60
+    iput-object p1, p0, LuJ2;->D:LCBe;
 
     return-void
 .end method
 
-.method public constructor <init>(LiE2;LIzf;LdE2;Lzre;)V
-    .locals 1
+.method public constructor <init>(LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LCBe;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;LxM4;)V
+    .locals 0
 
-    const/4 v0, 0x0
+    const/4 p3, 0x0
 
-    iput v0, p0, LuJ2;->a:I
+    iput p3, p0, LuJ2;->a:I
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, LuJ2;->t:Ljava/lang/Object;
+    iput-object p1, p0, LuJ2;->c:LCBe;
 
     .line 3
-    iput-object p2, p0, LuJ2;->X:Ljava/lang/Object;
+    iput-object p2, p0, LuJ2;->d:LCBe;
 
     .line 4
-    iput-object p3, p0, LuJ2;->Y:Ljava/lang/Object;
+    iput-object p4, p0, LuJ2;->e:LCBe;
 
     .line 5
-    iput-object p4, p0, LuJ2;->Z:Ljava/lang/Object;
+    iput-object p5, p0, LuJ2;->f:LCBe;
 
     .line 6
-    new-instance p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    invoke-direct {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;-><init>()V
-
-    iput-object p1, p0, LuJ2;->b:Ljava/lang/Object;
+    iput-object p6, p0, LuJ2;->g:LCBe;
 
     .line 7
-    const-string p1, "ChatMedia"
-
-    iput-object p1, p0, LuJ2;->c:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(LpC3;LvAd;)V
-    .locals 1
-
-    const/4 v0, 0x4
-
-    iput v0, p0, LuJ2;->a:I
+    iput-object p7, p0, LuJ2;->h:LCBe;
 
     .line 8
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p8, p0, LuJ2;->i:LCBe;
 
     .line 9
-    iput-object p1, p0, LuJ2;->t:Ljava/lang/Object;
+    iput-object p9, p0, LuJ2;->j:LCBe;
 
     .line 10
-    iput-object p2, p0, LuJ2;->X:Ljava/lang/Object;
+    iput-object p10, p0, LuJ2;->k:LCBe;
 
     .line 11
-    new-instance p1, LTgh;
-
-    const/16 p2, 0xf
-
-    invoke-direct {p1, p2, p0}, LTgh;-><init>(ILjava/lang/Object;)V
+    iput-object p11, p0, LuJ2;->b:LCBe;
 
     .line 12
-    new-instance p2, LXfi;
-
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    iput-object p12, p0, LuJ2;->l:LCBe;
 
     .line 13
-    iput-object p2, p0, LuJ2;->b:Ljava/lang/Object;
+    iput-object p14, p0, LuJ2;->m:LCBe;
 
     .line 14
-    const-string p1, "SpotlightTabSwapSwipePlugin"
+    iput-object p15, p0, LuJ2;->n:LCBe;
 
-    iput-object p1, p0, LuJ2;->c:Ljava/lang/String;
+    move-object/from16 p1, p16
 
-    return-void
-.end method
+    .line 15
+    iput-object p1, p0, LuJ2;->o:LCBe;
 
-.method private final J(LpYc;)V
-    .locals 0
+    move-object/from16 p1, p17
 
-    .line 1
-    return-void
-.end method
+    .line 16
+    iput-object p1, p0, LuJ2;->p:LCBe;
 
-.method private final K(LpYc;)V
-    .locals 0
+    move-object/from16 p1, p18
 
-    .line 1
-    return-void
-.end method
+    .line 17
+    iput-object p1, p0, LuJ2;->q:LCBe;
 
-.method private final L(LpYc;)V
-    .locals 0
+    move-object/from16 p1, p19
 
-    .line 1
-    return-void
-.end method
+    .line 18
+    iput-object p1, p0, LuJ2;->r:LCBe;
 
-.method private final M(LpYc;)V
-    .locals 0
+    move-object/from16 p1, p20
 
-    .line 1
-    return-void
-.end method
+    .line 19
+    iput-object p1, p0, LuJ2;->s:LCBe;
 
-.method private final N(LpYc;)V
-    .locals 0
+    move-object/from16 p1, p21
 
-    .line 1
+    .line 20
+    iput-object p1, p0, LuJ2;->t:LCBe;
+
+    move-object/from16 p1, p22
+
+    .line 21
+    iput-object p1, p0, LuJ2;->u:LCBe;
+
+    move-object/from16 p1, p23
+
+    .line 22
+    iput-object p1, p0, LuJ2;->v:LCBe;
+
+    move-object/from16 p1, p24
+
+    .line 23
+    iput-object p1, p0, LuJ2;->w:LCBe;
+
+    move-object/from16 p1, p26
+
+    .line 24
+    iput-object p1, p0, LuJ2;->x:LCBe;
+
+    move-object/from16 p1, p27
+
+    .line 25
+    iput-object p1, p0, LuJ2;->y:LCBe;
+
+    move-object/from16 p1, p28
+
+    .line 26
+    iput-object p1, p0, LuJ2;->z:LCBe;
+
+    move-object/from16 p1, p29
+
+    .line 27
+    iput-object p1, p0, LuJ2;->A:LCBe;
+
+    move-object/from16 p1, p30
+
+    .line 28
+    iput-object p1, p0, LuJ2;->B:LCBe;
+
+    move-object/from16 p1, p31
+
+    .line 29
+    iput-object p1, p0, LuJ2;->C:LCBe;
+
+    move-object/from16 p1, p32
+
+    .line 30
+    iput-object p1, p0, LuJ2;->D:LCBe;
+
     return-void
 .end method
 
 
 # virtual methods
-.method public G(Lcom/snap/opera/events/ViewerEvents$StopViewer;)V
-    .locals 2
-
-    .line 1
-    iget p1, p0, LuJ2;->a:I
-
-    .line 2
-    .line 3
-    packed-switch p1, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-
-    .line 7
-    :pswitch_0
-    iget-object p1, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    check-cast p1, LBre;
-
-    .line 10
-    .line 11
-    invoke-virtual {p1}, LBre;->i()Lgn0;
-
-    .line 12
-    .line 13
-    .line 14
-    move-result-object p1
-
-    .line 15
-    new-instance v0, Lsxd;
-
-    .line 16
-    .line 17
-    const/4 v1, 0x0
-
-    .line 18
-    invoke-direct {v0, p0, v1}, Lsxd;-><init>(LuJ2;I)V
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object p1
-
-    .line 25
-    iget-object v0, p0, LuJ2;->Y:Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    check-cast v0, LWm0;
-
-    .line 28
-    .line 29
-    iget-object v1, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 30
-    .line 31
-    check-cast v1, LWq6;
-
-    .line 32
-    .line 33
-    invoke-virtual {v1, v0, p1}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 34
-    .line 35
-    .line 36
-    return-void
-
-    .line 37
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public I(Lcom/snap/opera/events/ViewerEvents$ResumeViewer;)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, LuJ2;->a:I
-
-    .line 2
-    .line 3
-    packed-switch p1, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-
-    .line 7
-    :pswitch_0
-    invoke-virtual {p0}, LuJ2;->O()V
-
-    .line 8
-    .line 9
-    .line 10
-    return-void
-
-    .line 11
-    :pswitch_data_0
-    .packed-switch 0x2
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public O()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LuJ2;->b:Ljava/lang/Object;
-
-    .line 2
-    .line 3
-    check-cast v0, LC99;
-
-    .line 4
-    .line 5
-    if-nez v0, :cond_0
-
-    .line 6
-    .line 7
-    sget-object v0, LC99;->c:LC99;
-
-    .line 8
-    .line 9
-    iput-object v0, p0, LuJ2;->b:Ljava/lang/Object;
-
-    .line 10
-    .line 11
-    :cond_0
-    iget-object v0, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 12
-    .line 13
-    check-cast v0, LBre;
-
-    .line 14
-    .line 15
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object v0
-
-    .line 19
-    new-instance v1, Lsxd;
-
-    .line 20
-    .line 21
-    const/4 v2, 0x1
-
-    .line 22
-    invoke-direct {v1, p0, v2}, Lsxd;-><init>(LuJ2;I)V
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    iget-object v1, p0, LuJ2;->Y:Ljava/lang/Object;
-
-    .line 30
-    .line 31
-    check-cast v1, LWm0;
-
-    .line 32
-    .line 33
-    iget-object v2, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 34
-    .line 35
-    check-cast v2, LWq6;
-
-    .line 36
-    .line 37
-    invoke-virtual {v2, v1, v0}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-.end method
-
-.method public final P(LpYc;)LcZc;
+.method public final a(Ljava/lang/Object;)V
     .locals 1
 
     .line 1
@@ -482,1308 +346,1020 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1}, LpYc;->d()LaS6;
+    check-cast p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;
 
     .line 7
     .line 8
+    iget-object v0, p0, LuJ2;->c:LCBe;
+
     .line 9
+    .line 10
+    check-cast v0, Le35;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
     move-result-object v0
 
-    .line 10
-    iput-object v0, p0, LuJ2;->Y:Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    iget-object p1, p1, LpYc;->Y:LSC2;
-
-    .line 13
-    .line 14
-    iput-object p1, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 15
     .line 16
-    return-object p0
-
-    .line 17
-    :pswitch_0
-    iget-object p1, p1, LpYc;->Y:LSC2;
-
-    .line 18
-    .line 19
-    iput-object p1, p0, LuJ2;->b:Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    :pswitch_1
-    return-object p0
-
-    .line 22
-    :pswitch_2
-    iput-object p1, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    :pswitch_3
-    return-object p0
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public a(LLR6;)V
-    .locals 11
-
-    .line 1
-    const/16 v0, 0x15
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    iget-object v2, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 5
-    .line 6
-    iget v3, p0, LuJ2;->a:I
-
-    .line 7
-    .line 8
-    sparse-switch v3, :sswitch_data_0
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-
-    .line 12
-    :sswitch_0
-    iget-object v0, p0, LuJ2;->Y:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    check-cast v0, LaS6;
-
-    .line 15
-    .line 16
-    if-nez v0, :cond_0
+    check-cast v0, LOF3;
 
     .line 17
     .line 18
-    goto :goto_0
+    iput-object v0, p1, Lcom/snap/ui/deck/AsyncPresenterFragment;->B0:LOF3;
 
     .line 19
-    :cond_0
-    iget-object v3, p0, LuJ2;->Z:Ljava/lang/Object;
-
     .line 20
+    iget-object v0, p0, LuJ2;->d:LCBe;
+
     .line 21
-    check-cast v3, LSC2;
-
     .line 22
+    check-cast v0, Le35;
+
     .line 23
-    if-nez v3, :cond_1
-
     .line 24
-    .line 25
-    goto :goto_0
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
+    .line 25
     .line 26
-    :cond_1
-    check-cast v2, LvAd;
-
     .line 27
+    move-result-object v0
+
     .line 28
-    invoke-interface {v2}, LvAd;->p()Z
+    check-cast v0, LyPf;
 
     .line 29
     .line 30
-    .line 31
-    move-result v2
+    iput-object v0, p1, Lcom/snap/ui/deck/AsyncPresenterFragment;->C0:LyPf;
 
+    .line 31
     .line 32
-    if-nez v2, :cond_2
+    iget-object v0, p0, LuJ2;->e:LCBe;
 
     .line 33
     .line 34
-    goto :goto_0
+    check-cast v0, Le35;
 
     .line 35
-    :cond_2
-    instance-of v2, p1, Lcom/snap/opera/events/ViewerEvents$OpenView;
-
     .line 36
-    .line 37
-    if-eqz v2, :cond_3
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
+    .line 37
     .line 38
     .line 39
-    iget-object v2, p0, LuJ2;->b:Ljava/lang/Object;
+    move-result-object v0
 
     .line 40
+    check-cast v0, Lb30;
+
     .line 41
-    check-cast v2, LXfi;
-
     .line 42
-    .line 43
-    invoke-virtual {v2}, LXfi;->getValue()Ljava/lang/Object;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->F0:Lb30;
 
+    .line 43
     .line 44
+    iget-object v0, p0, LuJ2;->f:LCBe;
+
     .line 45
     .line 46
-    move-result-object v2
+    check-cast v0, Le35;
 
     .line 47
-    check-cast v2, Lio/reactivex/rxjava3/core/Single;
-
     .line 48
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->G0:Le35;
+
     .line 49
-    sget-object v4, Lm9h;->q0:Lm9h;
-
     .line 50
-    .line 51
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, LuJ2;->g:LCBe;
 
+    .line 51
     .line 52
+    check-cast v0, Le35;
+
     .line 53
     .line 54
-    new-instance v5, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 55
     .line 56
-    invoke-direct {v5, v2, v4}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFilterSingle;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Predicate;)V
-
     .line 57
-    .line 58
-    .line 59
-    new-instance v2, Lf6h;
-
-    .line 60
-    .line 61
-    const/16 v4, 0x11
-
-    .line 62
-    .line 63
-    invoke-direct {v2, v0, v4, p1}, Lf6h;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
-
-    .line 64
-    .line 65
-    .line 66
-    const/4 v0, 0x3
-
-    .line 67
-    invoke-static {v5, v1, v2, v0}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->i(Lio/reactivex/rxjava3/core/Maybe;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 68
-    .line 69
-    .line 70
     move-result-object v0
 
+    .line 58
+    check-cast v0, LR93;
+
+    .line 59
+    .line 60
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->H0:LR93;
+
+    .line 61
+    .line 62
+    iget-object v0, p0, LuJ2;->b:LCBe;
+
+    .line 63
+    .line 64
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object v0
+
+    .line 68
+    check-cast v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 69
+    .line 70
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->I0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 71
-    check-cast p1, Lcom/snap/opera/events/ViewerEvents$OpenView;
-
     .line 72
+    iget-object v0, p0, LuJ2;->h:LCBe;
+
     .line 73
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$OpenView;->b:LdXc;
-
     .line 74
-    .line 75
-    invoke-static {v0, v3, p1}, LVck;->b(Lio/reactivex/rxjava3/disposables/Disposable;LSC2;LdXc;)V
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
+    .line 75
     .line 76
     .line 77
+    move-result-object v0
+
     .line 78
-    :cond_3
-    :goto_0
-    return-void
+    check-cast v0, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 79
-    :sswitch_1
-    instance-of v3, p1, Lcom/snap/discover/playback/opera/events/DiscoverChromeClickEvent;
-
     .line 80
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->J0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
     .line 81
-    iget-object v4, p0, LuJ2;->b:Ljava/lang/Object;
-
     .line 82
+    iget-object v0, p0, LuJ2;->i:LCBe;
+
     .line 83
-    check-cast v4, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 84
+    check-cast v0, Le35;
+
     .line 85
-    if-eqz v3, :cond_5
-
     .line 86
-    .line 87
-    check-cast p1, Lcom/snap/discover/playback/opera/events/DiscoverChromeClickEvent;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
+    .line 87
     .line 88
     .line 89
-    iget-object p1, p1, Lcom/snap/discover/playback/opera/events/DiscoverChromeClickEvent;->b:LdXc;
+    move-result-object v0
 
     .line 90
-    .line 91
-    invoke-static {p1}, Lifk;->G(LdXc;)LOXc;
+    check-cast v0, LmF6;
 
+    .line 91
     .line 92
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->K0:LmF6;
+
     .line 93
     .line 94
-    move-result-object p1
+    iget-object v0, p0, LuJ2;->j:LCBe;
 
     .line 95
-    instance-of v3, p1, LFk6;
-
     .line 96
+    check-cast v0, LQ26;
+
     .line 97
-    if-eqz v3, :cond_4
-
     .line 98
-    .line 99
-    move-object v1, p1
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->L0:LQ26;
 
+    .line 99
     .line 100
-    check-cast v1, LFk6;
+    iget-object v0, p0, LuJ2;->k:LCBe;
 
     .line 101
     .line 102
-    :cond_4
-    if-eqz v1, :cond_b
+    check-cast v0, Le35;
 
     .line 103
     .line 104
-    iget-object p1, v1, LFk6;->g:Libd;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 105
     .line 106
-    if-eqz p1, :cond_b
-
     .line 107
+    move-result-object v0
+
     .line 108
-    sget-object v1, LCj6;->g:Lgbd;
+    check-cast v0, LjX6;
 
     .line 109
     .line 110
-    invoke-virtual {v1, p1}, Lgbd;->a(LtL0;)Ljava/lang/Object;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->M0:LjX6;
 
     .line 111
     .line 112
-    .line 113
-    move-result-object p1
+    iget-object v0, p0, LuJ2;->l:LCBe;
 
+    .line 113
     .line 114
-    check-cast p1, Ljava/lang/String;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->N0:LDBe;
 
     .line 115
     .line 116
-    if-eqz p1, :cond_b
+    iget-object v0, p0, LuJ2;->m:LCBe;
 
     .line 117
     .line 118
-    new-instance v1, LCoe;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->O0:LDBe;
 
     .line 119
     .line 120
-    new-instance v3, LFoe;
+    iget-object v0, p0, LuJ2;->n:LCBe;
 
     .line 121
     .line 122
-    invoke-direct {v3, p1}, LFoe;-><init>(Ljava/lang/String;)V
+    check-cast v0, Le35;
 
     .line 123
     .line 124
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->c1:Le35;
+
     .line 125
-    sget-object p1, LZ8d;->m0:LZ8d;
-
     .line 126
+    iget-object v0, p0, LuJ2;->o:LCBe;
+
     .line 127
-    sget-object v5, Lp7d;->b:Lp7d;
-
     .line 128
-    .line 129
-    invoke-direct {v1, v3, p1, v5}, LCoe;-><init>(LFoe;LZ8d;Lp7d;)V
+    check-cast v0, Le35;
 
+    .line 129
     .line 130
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
+
     .line 131
     .line 132
-    iget-object p1, p0, LuJ2;->t:Ljava/lang/Object;
-
     .line 133
+    move-result-object v0
+
     .line 134
-    check-cast p1, LJ7d;
+    check-cast v0, LIv9;
 
     .line 135
     .line 136
-    invoke-interface {p1, v1}, LJ7d;->a(Ljava/lang/Object;)Lio/reactivex/rxjava3/core/Completable;
+    iget-object v0, p0, LuJ2;->p:LCBe;
 
     .line 137
     .line 138
-    .line 139
-    move-result-object p1
+    check-cast v0, Le35;
 
+    .line 139
     .line 140
-    check-cast v2, LBre;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->d1:Le35;
 
     .line 141
     .line 142
-    invoke-virtual {v2}, LBre;->i()Lgn0;
+    iget-object v0, p0, LuJ2;->q:LCBe;
 
     .line 143
     .line 144
-    .line 145
-    move-result-object v1
+    check-cast v0, Le35;
 
+    .line 145
     .line 146
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->e1:Le35;
 
     .line 147
     .line 148
-    invoke-direct {v2, p1, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    iget-object v0, p0, LuJ2;->r:LCBe;
 
     .line 149
     .line 150
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->P0:LDBe;
+
     .line 151
-    new-instance p1, LYU7;
-
     .line 152
-    .line 153
-    const/4 v1, 0x1
+    iget-object v0, p0, LuJ2;->s:LCBe;
 
+    .line 153
     .line 154
-    invoke-direct {p1, v1, v0}, LYU7;-><init>(II)V
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
 
     .line 155
     .line 156
     .line 157
-    const/4 v0, 0x2
+    move-result-object v0
 
     .line 158
-    invoke-static {v2, p1, v0}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->g(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
+    check-cast v0, LrSb;
 
     .line 159
     .line 160
-    .line 161
-    move-result-object p1
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->Q0:LrSb;
 
+    .line 161
     .line 162
-    sget-object v0, LZq6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object v0, p0, LuJ2;->t:LCBe;
 
     .line 163
     .line 164
-    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    check-cast v0, Le35;
 
     .line 165
     .line 166
-    .line 167
-    goto/16 :goto_4
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
+    .line 167
     .line 168
     .line 169
-    :cond_5
-    instance-of v2, p1, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;
+    move-result-object v0
 
     .line 170
+    check-cast v0, LmGc;
+
     .line 171
-    if-eqz v2, :cond_b
-
     .line 172
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->R0:LmGc;
+
     .line 173
-    check-cast p1, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;
-
     .line 174
+    iget-object v0, p0, LuJ2;->u:LCBe;
+
     .line 175
-    sget-object v2, Ly1j;->i:LWSc;
-
     .line 176
+    check-cast v0, Le35;
+
     .line 177
-    iget-object v3, p1, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;->c:LWSc;
-
     .line 178
-    .line 179
-    invoke-static {v3, v2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->S0:Le35;
 
+    .line 179
     .line 180
+    iget-object v0, p0, LuJ2;->v:LCBe;
+
     .line 181
     .line 182
-    move-result v2
+    check-cast v0, Le35;
 
     .line 183
-    if-eqz v2, :cond_b
-
     .line 184
-    .line 185
-    iget-object p1, p1, Lcom/snap/opera/events/ViewerEvents$ActionMenuItemClicked;->b:LdXc;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
+    .line 185
     .line 186
     .line 187
-    invoke-static {p1}, Lifk;->G(LdXc;)LOXc;
+    move-result-object v0
 
     .line 188
+    check-cast v0, LR0e;
+
     .line 189
     .line 190
-    move-result-object v2
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->T0:LR0e;
 
     .line 191
-    instance-of v3, v2, LFk6;
-
     .line 192
+    iget-object v0, p0, LuJ2;->w:LCBe;
+
     .line 193
-    if-eqz v3, :cond_6
-
     .line 194
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->U0:LDBe;
+
     .line 195
-    check-cast v2, LFk6;
-
     .line 196
-    .line 197
-    goto :goto_1
+    iget-object v0, p0, LuJ2;->x:LCBe;
 
+    .line 197
     .line 198
-    :cond_6
-    move-object v2, v1
+    check-cast v0, Le35;
 
     .line 199
-    :goto_1
-    if-eqz v2, :cond_7
-
     .line 200
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->V0:Le35;
+
     .line 201
-    iget-object v2, v2, LFk6;->g:Libd;
-
     .line 202
-    .line 203
-    goto :goto_2
+    iget-object v0, p0, LuJ2;->y:LCBe;
 
+    .line 203
     .line 204
-    :cond_7
-    move-object v2, v1
+    check-cast v0, Le35;
 
     .line 205
-    :goto_2
-    if-eqz v2, :cond_8
-
     .line 206
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->W0:Le35;
+
     .line 207
-    sget-object v3, Lek6;->v:Lgbd;
-
     .line 208
-    .line 209
-    invoke-virtual {v3, v2}, Lgbd;->a(LtL0;)Ljava/lang/Object;
+    iget-object v0, p0, LuJ2;->z:LCBe;
 
+    .line 209
     .line 210
+    check-cast v0, Le35;
+
     .line 211
     .line 212
-    move-result-object v3
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->X0:Le35;
 
     .line 213
-    check-cast v3, LGE3;
-
     .line 214
+    iget-object v0, p0, LuJ2;->A:LCBe;
+
     .line 215
-    if-eqz v3, :cond_8
-
     .line 216
+    check-cast v0, Le35;
+
     .line 217
-    iget-object v3, v3, LGE3;->b:Ljava/lang/String;
-
     .line 218
-    .line 219
-    move-object v6, v3
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->Y0:Le35;
 
+    .line 219
     .line 220
-    goto :goto_3
+    iget-object v0, p0, LuJ2;->B:LCBe;
 
     .line 221
-    :cond_8
-    move-object v6, v1
-
     .line 222
-    :goto_3
-    if-eqz v6, :cond_b
+    check-cast v0, Le35;
 
     .line 223
     .line 224
-    new-instance v5, Lc26;
+    invoke-virtual {v0}, Le35;->get()Ljava/lang/Object;
 
     .line 225
     .line 226
-    sget-object v7, LJSh;->i0:LJSh;
-
     .line 227
+    move-result-object v0
+
     .line 228
-    const-string v8, ""
+    check-cast v0, Ly2h;
 
     .line 229
     .line 230
-    sget-object v9, LhNb;->Z:LhNb;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->Z0:Ly2h;
 
     .line 231
     .line 232
-    move-object v10, v6
+    iget-object v0, p0, LuJ2;->C:LCBe;
 
     .line 233
-    invoke-direct/range {v5 .. v10}, Lc26;-><init>(Ljava/lang/String;LJSh;Ljava/lang/String;LhNb;Ljava/lang/String;)V
-
     .line 234
+    check-cast v0, Le35;
+
     .line 235
     .line 236
-    invoke-static {v5}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->a1:Le35;
 
     .line 237
     .line 238
-    .line 239
-    move-result-object v3
+    iget-object v0, p0, LuJ2;->D:LCBe;
 
+    .line 239
     .line 240
-    sget-object v5, LB79;->f0:LcSa;
+    check-cast v0, Le35;
 
     .line 241
     .line 242
-    iget-object v6, p0, LuJ2;->Y:Ljava/lang/Object;
+    iput-object v0, p1, Lcom/snap/memories/lib/fragment/MemoriesAsyncPresenterFragment;->b1:Le35;
 
     .line 243
     .line 244
-    check-cast v6, LPYh;
+    return-void
 
     .line 245
-    .line 246
-    invoke-virtual {v6, v3, v5}, LPYh;->d(Ljava/util/List;LcSa;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    :pswitch_0
+    check-cast p1, Lcom/snap/messaging/chat/ChatFragment;
 
+    .line 246
     .line 247
+    iget-object v0, p0, LuJ2;->c:LCBe;
+
     .line 248
     .line 249
-    move-result-object v3
+    check-cast v0, LxM4;
 
     .line 250
-    iget-object v5, p0, LuJ2;->Z:Ljava/lang/Object;
-
     .line 251
-    .line 252
-    check-cast v5, LpYc;
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
 
+    .line 252
     .line 253
     .line 254
-    const-string v6, "operaPresenterContext"
+    move-result-object v0
 
     .line 255
+    check-cast v0, Lb30;
+
     .line 256
-    if-eqz v5, :cond_a
-
     .line 257
-    .line 258
-    invoke-virtual {v5}, LpYc;->r()Lzre;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 258
     .line 259
     .line 260
-    .line 261
-    move-result-object v5
+    iget-object v0, p0, LuJ2;->d:LCBe;
 
+    .line 261
     .line 262
-    check-cast v5, LBre;
+    check-cast v0, LxM4;
 
     .line 263
     .line 264
-    invoke-virtual {v5}, LBre;->g()LF06;
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->w0:LxM4;
 
     .line 265
     .line 266
-    .line 267
-    move-result-object v5
+    iget-object v0, p0, LuJ2;->e:LCBe;
 
+    .line 267
     .line 268
-    new-instance v7, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
+    check-cast v0, LxM4;
 
     .line 269
     .line 270
-    invoke-direct {v7, v3, v5}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
 
     .line 271
     .line 272
     .line 273
-    iget-object v3, p0, LuJ2;->Z:Ljava/lang/Object;
+    move-result-object v0
 
     .line 274
+    check-cast v0, LyR1;
+
     .line 275
-    check-cast v3, LpYc;
-
     .line 276
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->x0:LyR1;
+
     .line 277
-    if-eqz v3, :cond_9
-
     .line 278
-    .line 279
-    invoke-virtual {v3}, LpYc;->r()Lzre;
+    iget-object v0, p0, LuJ2;->f:LCBe;
 
+    .line 279
     .line 280
+    check-cast v0, LxM4;
+
     .line 281
     .line 282
-    move-result-object v1
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
 
     .line 283
-    check-cast v1, LBre;
-
     .line 284
     .line 285
-    invoke-virtual {v1}, LBre;->i()Lgn0;
+    move-result-object v0
 
     .line 286
+    check-cast v0, LYG2;
+
     .line 287
     .line 288
-    move-result-object v1
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->y0:LYG2;
 
     .line 289
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
-
     .line 290
-    .line 291
-    invoke-direct {v3, v7, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
+    iget-object v0, p0, LuJ2;->g:LCBe;
 
+    .line 291
     .line 292
+    check-cast v0, LxM4;
+
     .line 293
     .line 294
-    new-instance v1, LJj7;
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->z0:LxM4;
 
     .line 295
     .line 296
-    invoke-direct {v1, v2, p0, p1, v0}, LJj7;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    iget-object v0, p0, LuJ2;->h:LCBe;
 
     .line 297
     .line 298
+    check-cast v0, LxM4;
+
     .line 299
-    sget-object p1, LHJ8;->v0:LHJ8;
-
     .line 300
-    .line 301
-    invoke-virtual {v3, v1, p1}, Lio/reactivex/rxjava3/core/Completable;->subscribe(Lio/reactivex/rxjava3/functions/Action;Lio/reactivex/rxjava3/functions/Consumer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->A0:LxM4;
 
+    .line 301
     .line 302
+    iget-object v0, p0, LuJ2;->i:LCBe;
+
     .line 303
     .line 304
-    move-result-object p1
+    check-cast v0, LxM4;
 
     .line 305
-    sget-object v0, LZq6;->a:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
     .line 306
-    .line 307
-    invoke-virtual {v4, p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
 
+    .line 307
     .line 308
     .line 309
-    .line 310
-    goto :goto_4
-
-    .line 311
-    :cond_9
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 312
-    .line 313
-    .line 314
-    throw v1
-
-    .line 315
-    :cond_a
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 316
-    .line 317
-    .line 318
-    throw v1
-
-    .line 319
-    :cond_b
-    :goto_4
-    return-void
-
-    .line 320
-    nop
-
-    .line 321
-    :sswitch_data_0
-    .sparse-switch
-        0x1 -> :sswitch_1
-        0x4 -> :sswitch_0
-    .end sparse-switch
-.end method
-
-.method public final m0()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget v0, p0, LuJ2;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, LuJ2;->c:Ljava/lang/String;
-
-    .line 7
-    .line 8
-    return-object v0
-
-    .line 9
-    :pswitch_0
-    iget-object v0, p0, LuJ2;->c:Ljava/lang/String;
-
-    .line 10
-    .line 11
-    return-object v0
-
-    .line 12
-    :pswitch_1
-    iget-object v0, p0, LuJ2;->c:Ljava/lang/String;
-
-    .line 13
-    .line 14
-    return-object v0
-
-    .line 15
-    :pswitch_2
-    iget-object v0, p0, LuJ2;->c:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    return-object v0
-
-    .line 18
-    :pswitch_3
-    iget-object v0, p0, LuJ2;->c:Ljava/lang/String;
-
-    .line 19
-    .line 20
-    return-object v0
-
-    .line 21
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public p(Lcom/snap/opera/events/ViewerEvents$CloseViewer;)V
-    .locals 2
-
-    .line 1
-    iget p1, p0, LuJ2;->a:I
-
-    .line 2
-    .line 3
-    packed-switch p1, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-
-    .line 7
-    :pswitch_0
-    iget-object p1, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 8
-    .line 9
-    check-cast p1, LJkh;
-
-    .line 10
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 12
-    .line 13
-    .line 14
-    new-instance v0, Lb7h;
-
-    .line 15
-    .line 16
-    const/16 v1, 0xd
-
-    .line 17
-    .line 18
-    invoke-direct {v0, v1, p1}, Lb7h;-><init>(ILjava/lang/Object;)V
-
-    .line 19
-    .line 20
-    .line 21
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;
-
-    .line 22
-    .line 23
-    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 24
-    .line 25
-    .line 26
-    iget-object p1, p1, LJkh;->b:Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    check-cast p1, LBre;
-
-    .line 29
-    .line 30
-    invoke-virtual {p1}, LBre;->i()Lgn0;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object p1
-
-    .line 34
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;
-
-    .line 35
-    .line 36
-    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/Scheduler;)V
-
-    .line 37
-    .line 38
-    .line 39
-    new-instance p1, Lnlh;
-
-    .line 40
-    .line 41
-    const/4 v1, 0x1
-
-    .line 42
-    invoke-direct {p1, p0, v1}, Lnlh;-><init>(LuJ2;I)V
-
-    .line 43
-    .line 44
-    .line 45
-    const/4 v1, 0x2
-
-    .line 46
-    invoke-static {v0, p1, v1}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->g(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object p1
-
-    .line 50
-    iget-object v0, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 51
-    .line 52
-    check-cast v0, LWm0;
-
-    .line 53
-    .line 54
-    iget-object v1, p0, LuJ2;->t:Ljava/lang/Object;
-
-    .line 55
-    .line 56
-    check-cast v1, LWq6;
-
-    .line 57
-    .line 58
-    invoke-virtual {v1, v0, p1}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 59
-    .line 60
-    .line 61
-    return-void
-
-    .line 62
-    :pswitch_1
-    iget-object p1, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 63
-    .line 64
-    check-cast p1, LBre;
-
-    .line 65
-    .line 66
-    invoke-virtual {p1}, LBre;->i()Lgn0;
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-object p1
-
-    .line 70
-    new-instance v0, Lsxd;
-
-    .line 71
-    .line 72
-    const/4 v1, 0x0
-
-    .line 73
-    invoke-direct {v0, p0, v1}, Lsxd;-><init>(LuJ2;I)V
-
-    .line 74
-    .line 75
-    .line 76
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Scheduler;->j(Ljava/lang/Runnable;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 77
-    .line 78
-    .line 79
-    move-result-object p1
-
-    .line 80
-    iget-object v0, p0, LuJ2;->Y:Ljava/lang/Object;
-
-    .line 81
-    .line 82
-    check-cast v0, LWm0;
-
-    .line 83
-    .line 84
-    iget-object v1, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 85
-    .line 86
-    check-cast v1, LWq6;
-
-    .line 87
-    .line 88
-    invoke-virtual {v1, v0, p1}, LWq6;->a(LWm0;Lio/reactivex/rxjava3/disposables/Disposable;)V
-
-    .line 89
-    .line 90
-    .line 91
-    return-void
-
-    .line 92
-    :pswitch_2
-    iget-object p1, p0, LuJ2;->b:Ljava/lang/Object;
-
-    .line 93
-    .line 94
-    check-cast p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 95
-    .line 96
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 97
-    .line 98
-    .line 99
-    return-void
-
-    .line 100
-    :pswitch_3
-    iget-object p1, p0, LuJ2;->b:Ljava/lang/Object;
-
-    .line 101
-    .line 102
-    check-cast p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 103
-    .line 104
-    invoke-virtual {p1}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->j()V
-
-    .line 105
-    .line 106
-    .line 107
-    return-void
-
-    .line 108
-    nop
-
-    .line 109
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final s0()Z
-    .locals 1
-
-    .line 1
-    iget v0, p0, LuJ2;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    :pswitch_0
-    const/4 v0, 0x0
-
-    return v0
-
-    :pswitch_1
-    const/4 v0, 0x0
-
-    return v0
-
-    :pswitch_2
-    const/4 v0, 0x0
-
-    return v0
-
-    :pswitch_3
-    const/4 v0, 0x0
-
-    return v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final v(LpYc;)V
-    .locals 0
-
-    .line 1
-    iget p1, p0, LuJ2;->a:I
-
-    return-void
-.end method
-
-.method public y(Lcom/snap/opera/events/ViewerEvents$OpenViewer;)V
-    .locals 4
-
-    .line 1
-    const/4 p1, 0x0
-
-    .line 2
-    const/4 v0, 0x2
-
-    .line 3
-    iget v1, p0, LuJ2;->a:I
-
-    .line 4
-    .line 5
-    packed-switch v1, :pswitch_data_0
-
-    .line 6
-    .line 7
-    .line 8
-    :pswitch_0
-    return-void
-
-    .line 9
-    :pswitch_1
-    new-array v1, v0, [Ljmh;
-
-    .line 10
-    .line 11
-    sget-object v2, Ljmh;->a:Ljmh;
-
-    .line 12
-    .line 13
-    aput-object v2, v1, p1
-
-    .line 14
-    .line 15
-    sget-object v2, Ljmh;->b:Ljmh;
-
-    .line 16
-    .line 17
-    const/4 v3, 0x1
-
-    .line 18
-    aput-object v2, v1, v3
-
-    .line 19
-    .line 20
-    invoke-static {v1}, Lve3;->Y([Ljava/lang/Object;)Ljava/util/List;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v1
-
-    .line 24
-    iget-object v2, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    check-cast v2, LJkh;
-
-    .line 27
-    .line 28
-    invoke-virtual {v2, v1}, LJkh;->v(Ljava/util/List;)Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v1
-
-    .line 32
-    new-instance v2, Lnlh;
-
-    .line 33
-    .line 34
-    invoke-direct {v2, p0, p1}, Lnlh;-><init>(LuJ2;I)V
-
-    .line 35
-    .line 36
-    .line 37
-    invoke-static {v1, v2, v0}, Lio/reactivex/rxjava3/kotlin/SubscribersKt;->g(Lio/reactivex/rxjava3/core/Completable;Lkotlin/jvm/functions/Function1;I)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 38
-    .line 39
-    .line 40
-    move-result-object p1
-
-    .line 41
-    iget-object v0, p0, LuJ2;->b:Ljava/lang/Object;
-
-    .line 42
-    .line 43
-    check-cast v0, LSC2;
-
-    .line 44
-    .line 45
-    const/4 v1, 0x0
-
-    .line 46
-    if-eqz v0, :cond_0
-
-    .line 47
-    .line 48
-    invoke-static {p1, v0, v1}, LVck;->b(Lio/reactivex/rxjava3/disposables/Disposable;LSC2;LdXc;)V
-
-    .line 49
-    .line 50
-    .line 51
-    return-void
-
-    .line 52
-    :cond_0
-    const-string p1, "operaDisposables"
-
-    .line 53
-    .line 54
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    throw v1
-
-    .line 58
-    :pswitch_2
-    invoke-virtual {p0}, LuJ2;->O()V
-
-    .line 59
-    .line 60
-    .line 61
-    return-void
-
-    .line 62
-    :pswitch_3
-    const-string p1, "UNDEFINED_SESSION"
-
-    .line 63
-    .line 64
-    iget-object v0, p0, LuJ2;->X:Ljava/lang/Object;
-
-    .line 65
-    .line 66
-    check-cast v0, LIzf;
-
-    .line 67
-    .line 68
-    invoke-virtual {v0, p1}, LIzf;->c(Ljava/lang/String;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableCreate;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object p1
-
-    .line 72
-    iget-object v0, p0, LuJ2;->Z:Ljava/lang/Object;
-
-    .line 73
-    .line 74
-    check-cast v0, Lzre;
-
-    .line 75
-    .line 76
-    check-cast v0, LBre;
-
-    .line 77
-    .line 78
-    invoke-virtual {v0}, LBre;->i()Lgn0;
-
-    .line 79
-    .line 80
-    .line 81
     move-result-object v0
 
-    .line 82
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/core/Observable;->u0(Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableObserveOn;
+    .line 310
+    check-cast v0, LsJ2;
 
-    .line 83
-    .line 84
-    .line 85
-    move-result-object p1
+    .line 311
+    .line 312
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->B0:LsJ2;
 
-    .line 86
-    new-instance v0, Lzz1;
+    .line 313
+    .line 314
+    iget-object v0, p0, LuJ2;->j:LCBe;
 
-    .line 87
-    .line 88
-    const/16 v1, 0x1d
+    .line 315
+    .line 316
+    check-cast v0, LxM4;
 
-    .line 89
-    .line 90
-    invoke-direct {v0, v1, p0}, Lzz1;-><init>(ILjava/lang/Object;)V
+    .line 317
+    .line 318
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->C0:LxM4;
 
-    .line 91
-    .line 92
-    .line 93
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;
+    .line 319
+    .line 320
+    iget-object v0, p0, LuJ2;->k:LCBe;
 
-    .line 94
-    .line 95
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/observable/ObservableMap;-><init>(Lio/reactivex/rxjava3/core/ObservableSource;Lio/reactivex/rxjava3/functions/Function;)V
+    .line 321
+    .line 322
+    check-cast v0, LxM4;
 
-    .line 96
-    .line 97
-    .line 98
-    iget-object p1, p0, LuJ2;->b:Ljava/lang/Object;
+    .line 323
+    .line 324
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
 
-    .line 99
-    .line 100
-    check-cast p1, Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    .line 325
+    .line 326
+    .line 327
+    move-result-object v0
 
-    .line 101
-    .line 102
-    invoke-static {v1, p1}, LLZj;->o0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    .line 328
+    check-cast v0, LQN2;
 
-    .line 103
-    .line 104
-    .line 105
+    .line 329
+    .line 330
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->D0:LQN2;
+
+    .line 331
+    .line 332
+    iget-object v0, p0, LuJ2;->b:LCBe;
+
+    .line 333
+    .line 334
+    invoke-interface {v0}, LDBe;->get()Ljava/lang/Object;
+
+    .line 335
+    .line 336
+    .line 337
+    move-result-object v0
+
+    .line 338
+    check-cast v0, LiO2;
+
+    .line 339
+    .line 340
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->E0:LiO2;
+
+    .line 341
+    .line 342
+    iget-object v0, p0, LuJ2;->l:LCBe;
+
+    .line 343
+    .line 344
+    check-cast v0, LxM4;
+
+    .line 345
+    .line 346
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->F0:LxM4;
+
+    .line 347
+    .line 348
+    iget-object v0, p0, LuJ2;->m:LCBe;
+
+    .line 349
+    .line 350
+    check-cast v0, LxM4;
+
+    .line 351
+    .line 352
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->G0:LxM4;
+
+    .line 353
+    .line 354
+    iget-object v0, p0, LuJ2;->n:LCBe;
+
+    .line 355
+    .line 356
+    check-cast v0, LxM4;
+
+    .line 357
+    .line 358
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 359
+    .line 360
+    .line 361
+    move-result-object v0
+
+    .line 362
+    check-cast v0, LjX6;
+
+    .line 363
+    .line 364
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->H0:LjX6;
+
+    .line 365
+    .line 366
+    iget-object v0, p0, LuJ2;->o:LCBe;
+
+    .line 367
+    .line 368
+    check-cast v0, LxM4;
+
+    .line 369
+    .line 370
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 371
+    .line 372
+    .line 373
+    move-result-object v0
+
+    .line 374
+    check-cast v0, LHn7;
+
+    .line 375
+    .line 376
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->I0:LHn7;
+
+    .line 377
+    .line 378
+    iget-object v0, p0, LuJ2;->p:LCBe;
+
+    .line 379
+    .line 380
+    check-cast v0, LxM4;
+
+    .line 381
+    .line 382
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->J0:LxM4;
+
+    .line 383
+    .line 384
+    iget-object v0, p0, LuJ2;->q:LCBe;
+
+    .line 385
+    .line 386
+    check-cast v0, LxM4;
+
+    .line 387
+    .line 388
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 389
+    .line 390
+    .line 391
+    move-result-object v0
+
+    .line 392
+    check-cast v0, LAh9;
+
+    .line 393
+    .line 394
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->K0:LAh9;
+
+    .line 395
+    .line 396
+    iget-object v0, p0, LuJ2;->r:LCBe;
+
+    .line 397
+    .line 398
+    check-cast v0, LxM4;
+
+    .line 399
+    .line 400
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 401
+    .line 402
+    .line 403
+    move-result-object v0
+
+    .line 404
+    check-cast v0, LIv9;
+
+    .line 405
+    .line 406
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->L0:LIv9;
+
+    .line 407
+    .line 408
+    iget-object v0, p0, LuJ2;->s:LCBe;
+
+    .line 409
+    .line 410
+    check-cast v0, LxM4;
+
+    .line 411
+    .line 412
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 413
+    .line 414
+    .line 415
+    move-result-object v0
+
+    .line 416
+    check-cast v0, LPjh;
+
+    .line 417
+    .line 418
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->M0:LPjh;
+
+    .line 419
+    .line 420
+    iget-object v0, p0, LuJ2;->t:LCBe;
+
+    .line 421
+    .line 422
+    check-cast v0, LxM4;
+
+    .line 423
+    .line 424
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->N0:LxM4;
+
+    .line 425
+    .line 426
+    iget-object v0, p0, LuJ2;->u:LCBe;
+
+    .line 427
+    .line 428
+    check-cast v0, LxM4;
+
+    .line 429
+    .line 430
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->O0:LxM4;
+
+    .line 431
+    .line 432
+    iget-object v0, p0, LuJ2;->v:LCBe;
+
+    .line 433
+    .line 434
+    check-cast v0, LxM4;
+
+    .line 435
+    .line 436
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->P0:LxM4;
+
+    .line 437
+    .line 438
+    iget-object v0, p0, LuJ2;->w:LCBe;
+
+    .line 439
+    .line 440
+    check-cast v0, LxM4;
+
+    .line 441
+    .line 442
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 443
+    .line 444
+    .line 445
+    move-result-object v0
+
+    .line 446
+    check-cast v0, LmGc;
+
+    .line 447
+    .line 448
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->Q0:LmGc;
+
+    .line 449
+    .line 450
+    iget-object v0, p0, LuJ2;->x:LCBe;
+
+    .line 451
+    .line 452
+    check-cast v0, LxM4;
+
+    .line 453
+    .line 454
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->R0:LxM4;
+
+    .line 455
+    .line 456
+    iget-object v0, p0, LuJ2;->y:LCBe;
+
+    .line 457
+    .line 458
+    check-cast v0, LxM4;
+
+    .line 459
+    .line 460
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->S0:LxM4;
+
+    .line 461
+    .line 462
+    iget-object v0, p0, LuJ2;->z:LCBe;
+
+    .line 463
+    .line 464
+    check-cast v0, LxM4;
+
+    .line 465
+    .line 466
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 467
+    .line 468
+    .line 469
+    move-result-object v0
+
+    .line 470
+    check-cast v0, LIM4;
+
+    .line 471
+    .line 472
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->T0:LIM4;
+
+    .line 473
+    .line 474
+    iget-object v0, p0, LuJ2;->A:LCBe;
+
+    .line 475
+    .line 476
+    check-cast v0, LxM4;
+
+    .line 477
+    .line 478
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->U0:LxM4;
+
+    .line 479
+    .line 480
+    iget-object v0, p0, LuJ2;->B:LCBe;
+
+    .line 481
+    .line 482
+    check-cast v0, LxM4;
+
+    .line 483
+    .line 484
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 485
+    .line 486
+    .line 487
+    move-result-object v0
+
+    .line 488
+    check-cast v0, LyPf;
+
+    .line 489
+    .line 490
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->V0:LyPf;
+
+    .line 491
+    .line 492
+    iget-object v0, p0, LuJ2;->C:LCBe;
+
+    .line 493
+    .line 494
+    check-cast v0, LxM4;
+
+    .line 495
+    .line 496
+    invoke-virtual {v0}, LxM4;->get()Ljava/lang/Object;
+
+    .line 497
+    .line 498
+    .line 499
+    move-result-object v0
+
+    .line 500
+    check-cast v0, LSSf;
+
+    .line 501
+    .line 502
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->W0:LSSf;
+
+    .line 503
+    .line 504
+    iget-object v0, p0, LuJ2;->D:LCBe;
+
+    .line 505
+    .line 506
+    check-cast v0, LxM4;
+
+    .line 507
+    .line 508
+    iput-object v0, p1, Lcom/snap/messaging/chat/ChatFragment;->X0:LxM4;
+
+    .line 509
+    .line 510
     return-void
 
-    .line 106
-    nop
-
-    .line 107
+    .line 511
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_3
         :pswitch_0
-        :pswitch_2
-        :pswitch_1
     .end packed-switch
 .end method

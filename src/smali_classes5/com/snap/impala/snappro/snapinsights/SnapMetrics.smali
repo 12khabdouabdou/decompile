@@ -1,17 +1,21 @@
 .class public final Lcom/snap/impala/snappro/snapinsights/SnapMetrics;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'views\':d,\'screenshots\':d,\'storyReplies\':d@?,\'boosts\':d@?,\'shares\':d@?,\'subscribes\':d@?,\'reach\':d@?,\'tapForwards\':d@?,\'tapBackwards\':d@?,\'swipeUps\':d@?,\'swipeAways\':d@?,\'combinedViews\':d@?,\'combinedReach\':d@?,\'paidViews\':d@?,\'paidReach\':d@?,\'rewatches\':d@?"
+    schema = "\'views\':d,\'screenshots\':d,\'storyReplies\':d@?,\'boosts\':d@?,\'shares\':d@?,\'subscribes\':d@?,\'reach\':d@?,\'tapForwards\':d@?,\'tapBackwards\':d@?,\'swipeUps\':d@?,\'swipeAways\':d@?,\'combinedViews\':d@?,\'combinedReach\':d@?,\'paidViews\':d@?,\'paidReach\':d@?,\'rewatches\':d@?,\'avgViewTime\':d@?,\'avgViewRate\':d@?"
     typeReferences = {}
 .end annotation
 
 
 # instance fields
+.field private _avgViewRate:Ljava/lang/Double;
+
+.field private _avgViewTime:Ljava/lang/Double;
+
 .field private _boosts:Ljava/lang/Double;
 
 .field private _combinedReach:Ljava/lang/Double;
@@ -102,127 +106,214 @@
     .line 17
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_rewatches:Ljava/lang/Double;
 
+    .line 18
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewTime:Ljava/lang/Double;
+
+    .line 19
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewRate:Ljava/lang/Double;
+
+    return-void
+.end method
+
+.method public constructor <init>(DDLjava/lang/Double;I)V
+    .locals 0
+
+    .line 20
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 21
+    iput-wide p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_views:D
+
+    .line 22
+    iput-wide p3, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_screenshots:D
+
+    const/4 p1, 0x0
+
+    .line 23
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_storyReplies:Ljava/lang/Double;
+
+    .line 24
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_boosts:Ljava/lang/Double;
+
+    .line 25
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_shares:Ljava/lang/Double;
+
+    .line 26
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_subscribes:Ljava/lang/Double;
+
+    .line 27
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_reach:Ljava/lang/Double;
+
+    .line 28
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_tapForwards:Ljava/lang/Double;
+
+    .line 29
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_tapBackwards:Ljava/lang/Double;
+
+    .line 30
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_swipeUps:Ljava/lang/Double;
+
+    .line 31
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_swipeAways:Ljava/lang/Double;
+
+    .line 32
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_combinedViews:Ljava/lang/Double;
+
+    .line 33
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_combinedReach:Ljava/lang/Double;
+
+    .line 34
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_paidViews:Ljava/lang/Double;
+
+    .line 35
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_paidReach:Ljava/lang/Double;
+
+    .line 36
+    iput-object p5, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_rewatches:Ljava/lang/Double;
+
+    .line 37
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewTime:Ljava/lang/Double;
+
+    .line 38
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewRate:Ljava/lang/Double;
+
     return-void
 .end method
 
 .method public constructor <init>(DDLjava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
     .locals 0
 
-    .line 18
+    .line 39
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 19
+    .line 40
     iput-wide p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_views:D
 
-    .line 20
+    .line 41
     iput-wide p3, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_screenshots:D
 
-    .line 21
+    .line 42
     iput-object p5, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_storyReplies:Ljava/lang/Double;
 
-    .line 22
+    .line 43
     iput-object p6, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_boosts:Ljava/lang/Double;
 
-    .line 23
+    .line 44
     iput-object p7, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_shares:Ljava/lang/Double;
 
-    .line 24
+    .line 45
     iput-object p8, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_subscribes:Ljava/lang/Double;
 
-    .line 25
+    .line 46
     iput-object p9, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_reach:Ljava/lang/Double;
 
     const/4 p1, 0x0
 
-    .line 26
+    .line 47
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_tapForwards:Ljava/lang/Double;
 
-    .line 27
+    .line 48
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_tapBackwards:Ljava/lang/Double;
 
-    .line 28
+    .line 49
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_swipeUps:Ljava/lang/Double;
 
-    .line 29
+    .line 50
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_swipeAways:Ljava/lang/Double;
 
-    .line 30
+    .line 51
     iput-object p10, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_combinedViews:Ljava/lang/Double;
 
-    .line 31
+    .line 52
     iput-object p11, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_combinedReach:Ljava/lang/Double;
 
-    .line 32
+    .line 53
     iput-object p12, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_paidViews:Ljava/lang/Double;
 
-    .line 33
+    .line 54
     iput-object p13, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_paidReach:Ljava/lang/Double;
 
-    .line 34
+    .line 55
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_rewatches:Ljava/lang/Double;
+
+    .line 56
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewTime:Ljava/lang/Double;
+
+    .line 57
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewRate:Ljava/lang/Double;
 
     return-void
 .end method
 
-.method public constructor <init>(DDLjava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
+.method public constructor <init>(DDLjava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;)V
     .locals 0
 
-    .line 35
+    .line 58
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 36
+    .line 59
     iput-wide p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_views:D
 
-    .line 37
+    .line 60
     iput-wide p3, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_screenshots:D
 
-    .line 38
+    .line 61
     iput-object p5, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_storyReplies:Ljava/lang/Double;
 
-    .line 39
+    .line 62
     iput-object p6, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_boosts:Ljava/lang/Double;
 
-    .line 40
+    .line 63
     iput-object p7, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_shares:Ljava/lang/Double;
 
-    .line 41
+    .line 64
     iput-object p8, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_subscribes:Ljava/lang/Double;
 
-    .line 42
+    .line 65
     iput-object p9, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_reach:Ljava/lang/Double;
 
-    .line 43
+    .line 66
     iput-object p10, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_tapForwards:Ljava/lang/Double;
 
-    .line 44
+    .line 67
     iput-object p11, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_tapBackwards:Ljava/lang/Double;
 
-    .line 45
+    .line 68
     iput-object p12, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_swipeUps:Ljava/lang/Double;
 
-    .line 46
+    .line 69
     iput-object p13, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_swipeAways:Ljava/lang/Double;
 
-    .line 47
+    .line 70
     iput-object p14, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_combinedViews:Ljava/lang/Double;
 
-    .line 48
+    .line 71
     iput-object p15, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_combinedReach:Ljava/lang/Double;
 
     move-object/from16 p1, p16
 
-    .line 49
+    .line 72
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_paidViews:Ljava/lang/Double;
 
     move-object/from16 p1, p17
 
-    .line 50
+    .line 73
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_paidReach:Ljava/lang/Double;
 
     move-object/from16 p1, p18
 
-    .line 51
+    .line 74
     iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_rewatches:Ljava/lang/Double;
+
+    move-object/from16 p1, p19
+
+    .line 75
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewTime:Ljava/lang/Double;
+
+    move-object/from16 p1, p20
+
+    .line 76
+    iput-object p1, p0, Lcom/snap/impala/snappro/snapinsights/SnapMetrics;->_avgViewRate:Ljava/lang/Double;
 
     return-void
 .end method

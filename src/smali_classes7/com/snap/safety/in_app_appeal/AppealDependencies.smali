@@ -1,22 +1,22 @@
 .class public final Lcom/snap/safety/in_app_appeal/AppealDependencies;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'deckHierarchy\':r:\'[0]\',\'openUrl\':f(s),\'onComplete\':f(),\'nativeAppealService\':r:\'[1]\',\'openAgeCompliance\':f(s),\'appealBlizzard\':r:\'[2]\',\'minCharLimitCofVal\':d@?,\'maxCharLimitCofVal\':d@?"
+    schema = "\'deckHierarchy\':r:\'[0]\',\'openUrl\':f(s),\'onComplete\':f(),\'nativeAppealService\':r:\'[1]\',\'openAgeCompliance\':f(s),\'blizzardLogger\':r:\'[2]\',\'minCharLimitCofVal\':d@?,\'maxCharLimitCofVal\':d@?"
     typeReferences = {
         Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;,
         Lcom/snap/safety/in_app_appeal/NativeAppealService;,
-        Lcom/snap/safety/in_app_appeal/IAppealBlizzard;
+        Lcom/snap/composer/blizzard/Logging;
     }
 .end annotation
 
 
 # instance fields
-.field private _appealBlizzard:Lcom/snap/safety/in_app_appeal/IAppealBlizzard;
+.field private _blizzardLogger:Lcom/snap/composer/blizzard/Logging;
 
 .field private _deckHierarchy:Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;
 
@@ -52,7 +52,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/snap/safety/in_app_appeal/NativeAppealService;Lkotlin/jvm/functions/Function1;Lcom/snap/safety/in_app_appeal/IAppealBlizzard;Ljava/lang/Double;Ljava/lang/Double;)V
+.method public constructor <init>(Lcom/snap/modules/deck/ComposerDeckHierarchyInterface;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lcom/snap/safety/in_app_appeal/NativeAppealService;Lkotlin/jvm/functions/Function1;Lcom/snap/composer/blizzard/Logging;Ljava/lang/Double;Ljava/lang/Double;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -62,7 +62,7 @@
             "Lkotlin/jvm/functions/Function0;",
             "Lcom/snap/safety/in_app_appeal/NativeAppealService;",
             "Lkotlin/jvm/functions/Function1;",
-            "Lcom/snap/safety/in_app_appeal/IAppealBlizzard;",
+            "Lcom/snap/composer/blizzard/Logging;",
             "Ljava/lang/Double;",
             "Ljava/lang/Double;",
             ")V"
@@ -88,7 +88,7 @@
     iput-object p5, p0, Lcom/snap/safety/in_app_appeal/AppealDependencies;->_openAgeCompliance:Lkotlin/jvm/functions/Function1;
 
     .line 16
-    iput-object p6, p0, Lcom/snap/safety/in_app_appeal/AppealDependencies;->_appealBlizzard:Lcom/snap/safety/in_app_appeal/IAppealBlizzard;
+    iput-object p6, p0, Lcom/snap/safety/in_app_appeal/AppealDependencies;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
 
     .line 17
     iput-object p7, p0, Lcom/snap/safety/in_app_appeal/AppealDependencies;->_minCharLimitCofVal:Ljava/lang/Double;
@@ -99,7 +99,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Liv3;LU89;LR89;Lcom/snap/safety/in_app_appeal/NativeAppealService;LS89;Lcom/snap/safety/in_app_appeal/IAppealBlizzard;)V
+.method public constructor <init>(Lny3;LQg9;LNg9;Lcom/snap/safety/in_app_appeal/NativeAppealService;LOg9;LDf0;)V
     .locals 0
 
     .line 1
@@ -121,7 +121,7 @@
     iput-object p5, p0, Lcom/snap/safety/in_app_appeal/AppealDependencies;->_openAgeCompliance:Lkotlin/jvm/functions/Function1;
 
     .line 7
-    iput-object p6, p0, Lcom/snap/safety/in_app_appeal/AppealDependencies;->_appealBlizzard:Lcom/snap/safety/in_app_appeal/IAppealBlizzard;
+    iput-object p6, p0, Lcom/snap/safety/in_app_appeal/AppealDependencies;->_blizzardLogger:Lcom/snap/composer/blizzard/Logging;
 
     const/4 p1, 0x0
 

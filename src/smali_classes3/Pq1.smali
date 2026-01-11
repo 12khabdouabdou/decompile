@@ -1,141 +1,120 @@
-.class public final enum LPq1;
-.super Ljava/lang/Enum;
+.class public final LPq1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum a:LPq1;
-
-.field public static final enum b:LPq1;
-
-.field public static final enum c:LPq1;
-
-.field public static final synthetic t:[LPq1;
+# instance fields
+.field public final a:[F
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 7
+.method public constructor <init>([F)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    const/4 v1, 0x1
-
     .line 3
-    const/4 v2, 0x0
-
     .line 4
-    new-instance v3, LPq1;
+    iput-object p1, p0, LPq1;->a:[F
 
     .line 5
     .line 6
-    const-string v4, "VALID"
+    return-void
+.end method
 
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LPq1;
+
+    .line 6
     .line 7
+    const/4 v2, 0x0
+
     .line 8
-    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
+    return v2
+
     .line 11
-    sput-object v3, LPq1;->a:LPq1;
+    :cond_1
+    check-cast p1, LPq1;
 
     .line 12
     .line 13
-    new-instance v4, LPq1;
+    iget-object v1, p0, LPq1;->a:[F
 
     .line 14
     .line 15
-    const-string v5, "INVALID"
+    iget-object p1, p1, LPq1;->a:[F
 
     .line 16
     .line 17
-    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
     .line 20
-    sput-object v4, LPq1;->b:LPq1;
+    move-result p1
 
     .line 21
+    if-nez p1, :cond_2
+
     .line 22
-    new-instance v5, LPq1;
-
     .line 23
+    return v2
+
     .line 24
-    const-string v6, "NOT_SUPPORTED"
-
-    .line 25
-    .line 26
-    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    sput-object v5, LPq1;->c:LPq1;
-
-    .line 30
-    .line 31
-    const/4 v6, 0x3
-
-    .line 32
-    new-array v6, v6, [LPq1;
-
-    .line 33
-    .line 34
-    aput-object v3, v6, v2
-
-    .line 35
-    .line 36
-    aput-object v4, v6, v1
-
-    .line 37
-    .line 38
-    aput-object v5, v6, v0
-
-    .line 39
-    .line 40
-    sput-object v6, LPq1;->t:[LPq1;
-
-    .line 41
-    .line 42
-    return-void
+    :cond_2
+    return v0
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LPq1;
+.method public final hashCode()I
     .locals 1
 
     .line 1
-    const-class v0, LPq1;
+    iget-object v0, p0, LPq1;->a:[F
 
     .line 2
     .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([F)I
 
     .line 4
     .line 5
     .line 6
-    move-result-object p0
+    move-result v0
 
     .line 7
-    check-cast p0, LPq1;
-
-    .line 8
-    .line 9
-    return-object p0
+    return v0
 .end method
 
-.method public static values()[LPq1;
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
     .line 1
-    sget-object v0, LPq1;->t:[LPq1;
+    iget-object v0, p0, LPq1;->a:[F
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    invoke-static {v0}, Ljava/util/Arrays;->toString([F)Ljava/lang/String;
 
     .line 4
     .line 5
@@ -143,9 +122,21 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, [LPq1;
+    const-string v1, "BloopsLensesLandmarks(landmarks="
 
     .line 8
     .line 9
+    const-string v2, ")"
+
+    .line 10
+    .line 11
+    invoke-static {v1, v0, v2}, LJF0;->A(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
     return-object v0
 .end method

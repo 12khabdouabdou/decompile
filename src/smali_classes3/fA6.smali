@@ -1,211 +1,250 @@
-.class public final enum LfA6;
-.super Ljava/lang/Enum;
+.class public final LfA6;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Function;
 
-# static fields
-.field public static final enum a:LfA6;
 
-.field public static final enum b:LfA6;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final enum c:LfA6;
-
-.field public static final synthetic t:[LfA6;
+.field public final synthetic b:LZl9;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 13
+.method public synthetic constructor <init>(LZl9;I)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x5
+    iput p2, p0, LfA6;->a:I
+
+    iput-object p1, p0, LfA6;->b:LZl9;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
+
+    .line 1
+    iget v0, p0, LfA6;->a:I
 
     .line 2
-    const/4 v1, 0x4
-
     .line 3
-    const/4 v2, 0x3
+    packed-switch v0, :pswitch_data_0
 
     .line 4
-    const/4 v3, 0x2
-
     .line 5
-    const/4 v4, 0x1
-
     .line 6
-    const/4 v5, 0x0
+    check-cast p1, Lp5c;
 
     .line 7
-    new-instance v6, LfA6;
-
     .line 8
-    .line 9
-    const-string v7, "CAMERA_MODE"
+    invoke-interface {p1}, Lp5c;->h()Lf64;
 
+    .line 9
     .line 10
     .line 11
-    invoke-direct {v6, v7, v5}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    move-result-object p1
 
     .line 12
+    new-instance v0, LIKi;
+
     .line 13
     .line 14
-    sput-object v6, LfA6;->a:LfA6;
+    iget-object v1, p0, LfA6;->b:LZl9;
 
     .line 15
     .line 16
-    new-instance v7, LfA6;
+    iget-object v2, v1, LZl9;->j:Landroid/os/Bundle;
 
     .line 17
     .line 18
-    const-string v8, "DIRECTOR_MODE_VERTICAL_TOOLBAR"
+    const-string v3, "talk_core_payload"
 
     .line 19
     .line 20
-    invoke-direct {v7, v8, v4}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-virtual {v2, v3}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     .line 21
     .line 22
     .line 23
-    sput-object v7, LfA6;->b:LfA6;
+    move-result-object v2
 
     .line 24
-    .line 25
-    new-instance v8, LfA6;
+    if-nez v2, :cond_0
 
+    .line 25
     .line 26
+    goto :goto_0
+
     .line 27
-    const-string v9, "CAMERA_CONTROL_CENTER"
+    :cond_0
+    iget-object v3, v1, LZl9;->j:Landroid/os/Bundle;
 
     .line 28
     .line 29
-    invoke-direct {v8, v9, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v4, "sender_userid"
 
     .line 30
     .line 31
-    .line 32
-    new-instance v9, LfA6;
+    invoke-virtual {v3, v4}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 32
     .line 33
     .line 34
-    const-string v10, "LENS"
+    move-result-object v3
 
     .line 35
+    if-nez v3, :cond_1
+
     .line 36
-    invoke-direct {v9, v10, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
     .line 37
-    .line 38
-    .line 39
-    new-instance v10, LfA6;
+    goto :goto_0
 
+    .line 38
+    :cond_1
+    if-nez p1, :cond_2
+
+    .line 39
     .line 40
+    :goto_0
+    const/4 v0, 0x0
+
     .line 41
-    const-string v11, "STATE_PROPAGATION"
+    goto :goto_1
 
     .line 42
-    .line 43
-    invoke-direct {v10, v11, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :cond_2
+    invoke-direct {v0, v1, v2, v3, p1}, LIKi;-><init>(LZl9;Ljava/lang/String;Ljava/lang/String;Lf64;)V
 
+    .line 43
     .line 44
     .line 45
-    .line 46
-    sput-object v10, LfA6;->c:LfA6;
+    :goto_1
+    if-eqz v0, :cond_3
 
+    .line 46
     .line 47
+    return-object v0
+
     .line 48
-    new-instance v11, LfA6;
+    :cond_3
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 49
     .line 50
-    const-string v12, "CONTEXT_CARD"
+    const-string v0, "TalkContext can\'t be null"
 
     .line 51
     .line 52
-    invoke-direct {v11, v12, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     .line 53
     .line 54
     .line 55
-    const/4 v12, 0x6
+    throw p1
 
     .line 56
-    new-array v12, v12, [LfA6;
+    :pswitch_0
+    check-cast p1, LDpd;
 
     .line 57
     .line 58
-    aput-object v6, v12, v5
+    iget-object v0, p1, LDpd;->a:Ljava/lang/Object;
 
     .line 59
     .line 60
-    aput-object v7, v12, v4
+    check-cast v0, Ljava/lang/Boolean;
 
     .line 61
     .line 62
-    aput-object v8, v12, v3
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
     .line 63
     .line 64
-    aput-object v9, v12, v2
+    check-cast p1, Ljava/lang/Boolean;
 
     .line 65
     .line 66
-    aput-object v10, v12, v1
+    iget-object v1, p0, LfA6;->b:LZl9;
 
     .line 67
     .line 68
-    aput-object v11, v12, v0
+    iget-boolean v2, v1, LZl9;->l:Z
 
     .line 69
     .line 70
-    sput-object v12, LfA6;->t:[LfA6;
+    if-eqz v2, :cond_4
 
     .line 71
     .line 72
-    return-void
-.end method
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-.method public static valueOf(Ljava/lang/String;)LfA6;
-    .locals 1
+    .line 73
+    .line 74
+    .line 75
+    move-result v0
 
-    .line 1
-    const-class v0, LfA6;
+    .line 76
+    if-nez v0, :cond_5
 
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    .line 77
+    .line 78
+    :cond_4
+    iget-boolean v0, v1, LZl9;->l:Z
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
+    .line 79
+    .line 80
+    if-nez v0, :cond_6
 
-    .line 7
-    check-cast p0, LfA6;
+    .line 81
+    .line 82
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    .line 8
-    .line 9
-    return-object p0
-.end method
+    .line 83
+    .line 84
+    .line 85
+    move-result p1
 
-.method public static values()[LfA6;
-    .locals 1
+    .line 86
+    if-eqz p1, :cond_6
 
-    .line 1
-    sget-object v0, LfA6;->t:[LfA6;
+    .line 87
+    .line 88
+    :cond_5
+    const/4 p1, 0x1
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+    .line 89
+    goto :goto_2
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 90
+    :cond_6
+    const/4 p1, 0x0
 
-    .line 7
-    check-cast v0, [LfA6;
+    .line 91
+    :goto_2
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    .line 8
-    .line 9
-    return-object v0
+    .line 92
+    .line 93
+    .line 94
+    move-result-object p1
+
+    .line 95
+    return-object p1
+
+    .line 96
+    nop
+
+    .line 97
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

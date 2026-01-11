@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LBX8;
+    proxyClass = Le59;
     schema = "\'presentCrystalsHub\':f|m|(r:\'[0]\'),\'presentOnboardingChecklist\':f|m|(r:\'[0]\')"
     typeReferences = {
         Lcom/snap/payouts/PayoutsPageEntryType;

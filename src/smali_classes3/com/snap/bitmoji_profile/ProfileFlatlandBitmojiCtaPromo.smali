@@ -7,27 +7,21 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lc5e;
-    schema = "\'promoText\':s?,\'badgeText\':s?,\'showFloatingButtonToast\':b@?,\'brandId\':s?,\'categoryTabType\':r?<e>:\'[0]\',\'brandName\':s?"
+    proxyClass = LBme;
+    schema = "\'promoText\':s?,\'showFloatingButtonToast\':b@?,\'brandId\':s?,\'categoryTabType\':r?<e>:\'[0]\'"
     typeReferences = {
-        Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;
+        Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract getBadgeText()Ljava/lang/String;
-.end method
-
 .method public abstract getBrandId()Ljava/lang/String;
 .end method
 
-.method public abstract getBrandName()Ljava/lang/String;
-.end method
-
-.method public abstract getCategoryTabType()Lcom/snap/modules/bitmoji_avatar_builder/CategoryTabType;
+.method public abstract getCategoryTabType()Lcom/snap/modules/bitmoji_customization_core/CategoryTabType;
 .end method
 
 .method public abstract getPromoText()Ljava/lang/String;

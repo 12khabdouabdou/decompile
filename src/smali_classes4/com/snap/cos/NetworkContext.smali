@@ -4,10 +4,10 @@
 
 
 # annotations
-.annotation runtime LIv3;
+.annotation runtime LQy3;
     propertyReplacements = ""
-    schema = "\'REGISTRATION\':0,\'LOGIN\':1"
-    type = .enum LJv3;->a:LJv3;
+    schema = "\'REGISTRATION\':0,\'ARCP\':1,\'LOGIN\':2"
+    type = .enum LRy3;->a:LRy3;
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
@@ -20,6 +20,8 @@
 
 
 # static fields
+.field public static final enum ARCP:Lcom/snap/cos/NetworkContext;
+
 .field public static final enum LOGIN:Lcom/snap/cos/NetworkContext;
 
 .field public static final enum REGISTRATION:Lcom/snap/cos/NetworkContext;
@@ -29,68 +31,92 @@
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 7
 
     .line 1
-    const/4 v0, 0x1
+    const/4 v0, 0x2
 
     .line 2
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     .line 3
-    new-instance v2, Lcom/snap/cos/NetworkContext;
+    const/4 v2, 0x0
 
     .line 4
-    .line 5
-    const-string v3, "REGISTRATION"
-
-    .line 6
-    .line 7
-    invoke-direct {v2, v3, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 8
-    .line 9
-    .line 10
-    sput-object v2, Lcom/snap/cos/NetworkContext;->REGISTRATION:Lcom/snap/cos/NetworkContext;
-
-    .line 11
-    .line 12
     new-instance v3, Lcom/snap/cos/NetworkContext;
 
+    .line 5
+    .line 6
+    const-string v4, "REGISTRATION"
+
+    .line 7
+    .line 8
+    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    sput-object v3, Lcom/snap/cos/NetworkContext;->REGISTRATION:Lcom/snap/cos/NetworkContext;
+
+    .line 12
     .line 13
+    new-instance v4, Lcom/snap/cos/NetworkContext;
+
     .line 14
-    const-string v4, "LOGIN"
-
     .line 15
-    .line 16
-    invoke-direct {v3, v4, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    const-string v5, "ARCP"
 
+    .line 16
     .line 17
+    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
     .line 18
     .line 19
-    sput-object v3, Lcom/snap/cos/NetworkContext;->LOGIN:Lcom/snap/cos/NetworkContext;
-
     .line 20
-    .line 21
-    const/4 v4, 0x2
+    sput-object v4, Lcom/snap/cos/NetworkContext;->ARCP:Lcom/snap/cos/NetworkContext;
 
+    .line 21
     .line 22
-    new-array v4, v4, [Lcom/snap/cos/NetworkContext;
+    new-instance v5, Lcom/snap/cos/NetworkContext;
 
     .line 23
     .line 24
-    aput-object v2, v4, v1
+    const-string v6, "LOGIN"
 
     .line 25
     .line 26
-    aput-object v3, v4, v0
+    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 27
     .line 28
-    sput-object v4, Lcom/snap/cos/NetworkContext;->a:[Lcom/snap/cos/NetworkContext;
-
     .line 29
+    sput-object v5, Lcom/snap/cos/NetworkContext;->LOGIN:Lcom/snap/cos/NetworkContext;
+
     .line 30
+    .line 31
+    const/4 v6, 0x3
+
+    .line 32
+    new-array v6, v6, [Lcom/snap/cos/NetworkContext;
+
+    .line 33
+    .line 34
+    aput-object v3, v6, v2
+
+    .line 35
+    .line 36
+    aput-object v4, v6, v1
+
+    .line 37
+    .line 38
+    aput-object v5, v6, v0
+
+    .line 39
+    .line 40
+    sput-object v6, Lcom/snap/cos/NetworkContext;->a:[Lcom/snap/cos/NetworkContext;
+
+    .line 41
+    .line 42
     return-void
 .end method
 

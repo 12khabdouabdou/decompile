@@ -1,31 +1,32 @@
-.class public final Lfs1;
-.super Lhs1;
+.class public abstract Lfs1;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/String;
+# static fields
+.field public static final a:LGqd;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "bloops_onboarding_enabled"
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, Lfs1;->a:Ljava/lang/String;
+    invoke-static {v0}, LIqd;->K(Ljava/lang/String;)LGqd;
 
+    .line 4
     .line 5
     .line 6
-    iput-object p2, p0, Lfs1;->b:Ljava/lang/String;
+    move-result-object v0
 
     .line 7
+    sput-object v0, Lfs1;->a:LGqd;
+
     .line 8
+    .line 9
     return-void
 .end method

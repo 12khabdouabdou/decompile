@@ -12,14 +12,14 @@
 
 
 # virtual methods
-.method public abstract query(LHh9;)Lio/reactivex/rxjava3/core/Maybe;
+.method public abstract query(Ldq9;)Lio/reactivex/rxjava3/core/Maybe;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LHh9;",
+            "Ldq9;",
             ")",
             "Lio/reactivex/rxjava3/core/Maybe<",
-            "LIh9;",
+            "Leq9;",
             ">;"
         }
     .end annotation

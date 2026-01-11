@@ -1,433 +1,143 @@
 .class public final LWMf;
-.super Ljava/lang/Object;
+.super LjNf;
 .source "SourceFile"
-
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LbNf;
-
-.field public final synthetic c:LfVf;
+.field public final a:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>(LbNf;LfVf;I)V
+.method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
     .line 1
-    iput p3, p0, LWMf;->a:I
-
-    iput-object p1, p0, LWMf;->b:LbNf;
-
-    iput-object p2, p0, LWMf;->c:LfVf;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LWMf;->a:Ljava/lang/String;
+
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 9
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 3
 
     .line 1
-    iget-object v0, p0, LWMf;->c:LfVf;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    iget-object v1, p0, LWMf;->b:LbNf;
+    if-ne p0, p1, :cond_0
 
+    .line 3
     .line 4
+    return v0
+
     .line 5
-    iget v2, p0, LWMf;->a:I
+    :cond_0
+    instance-of v1, p1, LWMf;
 
     .line 6
     .line 7
-    packed-switch v2, :pswitch_data_0
+    const/4 v2, 0x0
 
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
     .line 10
-    check-cast p1, Ljava/lang/Throwable;
+    return v2
 
     .line 11
+    :cond_1
+    check-cast p1, LWMf;
+
     .line 12
-    iget-object v1, v1, LbNf;->r:LJsg;
-
     .line 13
-    .line 14
-    invoke-virtual {v1}, LJsg;->s()LRaj;
+    iget-object v1, p0, LWMf;->a:Ljava/lang/String;
 
+    .line 14
     .line 15
+    iget-object p1, p1, LWMf;->a:Ljava/lang/String;
+
     .line 16
     .line 17
-    move-result-object v1
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
-    :goto_0
-    move-object v2, v1
-
     .line 19
-    check-cast v2, LXw9;
-
     .line 20
+    move-result p1
+
     .line 21
-    invoke-virtual {v2}, LXw9;->hasNext()Z
+    if-nez p1, :cond_2
 
     .line 22
     .line 23
+    return v2
+
     .line 24
-    move-result v3
-
-    .line 25
-    if-eqz v3, :cond_4
-
-    .line 26
-    .line 27
-    invoke-virtual {v2}, LXw9;->next()Ljava/lang/Object;
-
-    .line 28
-    .line 29
-    .line 30
-    move-result-object v2
-
-    .line 31
-    check-cast v2, LMNf;
-
-    .line 32
-    .line 33
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 34
-    .line 35
-    .line 36
-    :try_start_0
-    iget-object v3, v0, LfVf;->f0:LpNb;
-
-    .line 37
-    .line 38
-    invoke-virtual {v3}, LpNb;->a()Lcom/snapchat/client/messaging/MetricsMessageType;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v3
-
-    .line 42
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 43
-    .line 44
-    .line 45
-    move-result-object v3
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 46
-    goto :goto_1
-
-    .line 47
-    :catch_0
-    const-string v3, "UNRECOGNIZED_VALUE"
-
-    .line 48
-    .line 49
-    :goto_1
-    iget-object v2, v2, LMNf;->a:LfY4;
-
-    .line 50
-    .line 51
-    invoke-virtual {v2}, LfY4;->get()Ljava/lang/Object;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v2
-
-    .line 55
-    check-cast v2, LaA8;
-
-    .line 56
-    .line 57
-    sget-object v4, LIOf;->b:LIOf;
-
-    .line 58
-    .line 59
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object v5
-
-    .line 63
-    invoke-virtual {v5}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    .line 64
-    .line 65
-    .line 66
-    move-result-object v5
-
-    .line 67
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v6
-
-    .line 71
-    if-nez v6, :cond_0
-
-    .line 72
-    .line 73
-    const-string v5, "unknown"
-
-    .line 74
-    .line 75
-    :cond_0
-    const-string v6, "error"
-
-    .line 76
-    .line 77
-    invoke-static {v4, v6, v5}, LDq9;->X(LcTb;Ljava/lang/String;Ljava/lang/String;)LqTb;
-
-    .line 78
-    .line 79
-    .line 80
-    move-result-object v4
-
-    .line 81
-    iget-object v5, v0, LfVf;->g0:LpOf;
-
-    .line 82
-    .line 83
-    iget-object v6, v5, LpOf;->g:Ljava/lang/Long;
-
-    .line 84
-    .line 85
-    if-eqz v6, :cond_3
-
-    .line 86
-    .line 87
-    invoke-virtual {v6}, Ljava/lang/Number;->longValue()J
-
-    .line 88
-    .line 89
-    .line 90
-    move-result-wide v6
-
-    .line 91
-    long-to-int v7, v6
-
-    .line 92
-    sget-object v6, Lmmb;->a:Ljava/util/ArrayList;
-
-    .line 93
-    .line 94
-    invoke-static {}, LKtb;->values()[LKtb;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v6
-
-    .line 98
-    if-ltz v7, :cond_2
-
-    .line 99
-    .line 100
-    array-length v8, v6
-
-    .line 101
-    if-lt v7, v8, :cond_1
-
-    .line 102
-    .line 103
-    goto :goto_2
-
-    .line 104
-    :cond_1
-    aget-object v6, v6, v7
-
-    .line 105
-    .line 106
-    goto :goto_3
-
-    .line 107
     :cond_2
-    :goto_2
-    const/4 v6, 0x0
+    return v0
+.end method
 
-    .line 108
-    :goto_3
-    invoke-static {v6}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+.method public final hashCode()I
+    .locals 1
 
-    .line 109
-    .line 110
-    .line 111
-    move-result-object v6
+    .line 1
+    iget-object v0, p0, LWMf;->a:Ljava/lang/String;
 
-    .line 112
-    goto :goto_4
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
-    .line 113
-    :cond_3
-    const-string v6, "none"
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
 
-    .line 114
-    .line 115
-    :goto_4
-    const-string v7, "media_type"
+    .line 7
+    return v0
+.end method
 
-    .line 116
-    .line 117
-    invoke-virtual {v4, v7, v6}, LqTb;->d(Ljava/lang/String;Ljava/lang/String;)V
+.method public final toString()Ljava/lang/String;
+    .locals 3
 
-    .line 118
-    .line 119
-    .line 120
-    const-string v6, "message_type"
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    .line 121
-    .line 122
-    invoke-virtual {v4, v6, v3}, LqTb;->d(Ljava/lang/String;Ljava/lang/String;)V
+    .line 2
+    .line 3
+    const-string v1, "LensStudioPairing(pairingKey="
 
-    .line 123
-    .line 124
-    .line 125
-    const-string v3, "source"
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 126
-    .line 127
-    iget-object v5, v5, LpOf;->a:LmPf;
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LWMf;->a:Ljava/lang/String;
 
-    .line 128
-    .line 129
-    invoke-virtual {v4, v3, v5}, LqTb;->b(Ljava/lang/String;Ljava/lang/Enum;)V
+    .line 9
+    .line 10
+    const-string v2, ")"
 
-    .line 130
-    .line 131
-    .line 132
-    invoke-static {v2, v4}, LYz8;->e(LaA8;LqTb;)V
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, LJF0;->x(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 133
-    .line 134
-    .line 135
-    goto :goto_0
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
 
-    .line 136
-    :cond_4
-    return-void
-
-    .line 137
-    :pswitch_0
-    check-cast p1, LmId;
-
-    .line 138
-    .line 139
-    iget-boolean v2, p1, LmId;->a:Z
-
-    .line 140
-    .line 141
-    if-eqz v2, :cond_5
-
-    .line 142
-    .line 143
-    iget-boolean v2, p1, LmId;->b:Z
-
-    .line 144
-    .line 145
-    if-eqz v2, :cond_5
-
-    .line 146
-    .line 147
-    iget-object p1, p1, LmId;->c:Ljava/util/List;
-
-    .line 148
-    .line 149
-    if-eqz p1, :cond_5
-
-    .line 150
-    .line 151
-    move-object v2, p1
-
-    .line 152
-    check-cast v2, Ljava/util/Collection;
-
-    .line 153
-    .line 154
-    invoke-interface {v2}, Ljava/util/Collection;->isEmpty()Z
-
-    .line 155
-    .line 156
-    .line 157
-    move-result v2
-
-    .line 158
-    const/4 v3, 0x1
-
-    .line 159
-    xor-int/2addr v2, v3
-
-    .line 160
-    if-ne v2, v3, :cond_5
-
-    .line 161
-    .line 162
-    iget-object v1, v1, LbNf;->b:LfY4;
-
-    .line 163
-    .line 164
-    invoke-virtual {v1}, LfY4;->get()Ljava/lang/Object;
-
-    .line 165
-    .line 166
-    .line 167
-    move-result-object v1
-
-    .line 168
-    check-cast v1, LTNf;
-
-    .line 169
-    .line 170
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;
-
-    .line 171
-    .line 172
-    invoke-direct {v2, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleJust;-><init>(Ljava/lang/Object;)V
-
-    .line 173
-    .line 174
-    .line 175
-    iget p1, v0, LfVf;->i1:I
-
-    .line 176
-    .line 177
-    iget-object v0, v0, LfVf;->g0:LpOf;
-
-    .line 178
-    .line 179
-    iget-object v0, v0, LpOf;->a:LmPf;
-
-    .line 180
-    .line 181
-    invoke-virtual {v1, v2, p1, v0}, LTNf;->d(Lio/reactivex/rxjava3/core/Single;ILmPf;)V
-
-    .line 182
-    .line 183
-    .line 184
-    :cond_5
-    return-void
-
-    .line 185
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 16
+    return-object v0
 .end method

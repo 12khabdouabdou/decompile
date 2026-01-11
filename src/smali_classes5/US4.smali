@@ -1,53 +1,110 @@
 .class public final LUS4;
-.super LXX2;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements LKv3;
 
 
 # instance fields
-.field public X:LB7a;
+.field public final X:Lt55;
 
-.field public Y:Lio/reactivex/rxjava3/core/Observable;
+.field public final Y:LoBh;
 
-.field public Z:Lio/reactivex/rxjava3/core/Observable;
+.field public final Z:Lz45;
 
-.field public b:Lio/reactivex/rxjava3/core/Observable;
+.field public final a:LTR4;
 
-.field public c:Lio/reactivex/rxjava3/core/Observable;
+.field public final b:LPR4;
 
-.field public e0:Lio/reactivex/rxjava3/core/Observable;
+.field public final c:LLR4;
 
-.field public t:I
+.field public final e0:LzSh;
+
+.field public final t:LfS4;
 
 
-# virtual methods
-.method public final c()Ljava/lang/Object;
-    .locals 5
+# direct methods
+.method public constructor <init>(Lz45;Lt55;LLR4;LTR4;LPR4;LfS4;LzSh;LoBh;)V
+    .locals 0
 
     .line 1
-    iget-object v0, p0, LUS4;->X:LB7a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iget-object v1, p0, LUS4;->Y:Lio/reactivex/rxjava3/core/Observable;
+    .line 4
+    iput-object p4, p0, LUS4;->a:LTR4;
+
+    .line 5
+    .line 6
+    iput-object p5, p0, LUS4;->b:LPR4;
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LUS4;->c:LLR4;
+
+    .line 9
+    .line 10
+    iput-object p6, p0, LUS4;->t:LfS4;
+
+    .line 11
+    .line 12
+    iput-object p2, p0, LUS4;->X:Lt55;
+
+    .line 13
+    .line 14
+    iput-object p8, p0, LUS4;->Y:LoBh;
+
+    .line 15
+    .line 16
+    iput-object p1, p0, LUS4;->Z:Lz45;
+
+    .line 17
+    .line 18
+    iput-object p7, p0, LUS4;->e0:LzSh;
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()LyPf;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, LUS4;->Z:Lz45;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lz45;->v0()LyPf;
 
     .line 4
     .line 5
-    iget-object v2, p0, LUS4;->Z:Lio/reactivex/rxjava3/core/Observable;
-
     .line 6
+    move-result-object v0
+
     .line 7
-    iget-object v3, p0, LUS4;->e0:Lio/reactivex/rxjava3/core/Observable;
+    return-object v0
+.end method
 
-    .line 8
-    .line 9
-    new-instance v4, LVS4;
+.method public final b()Lrp0;
+    .locals 1
 
-    .line 10
-    .line 11
-    invoke-direct {v4, v0, v1, v2, v3}, LVS4;-><init>(LB7a;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/core/Observable;)V
+    .line 1
+    iget-object v0, p0, LUS4;->a:LTR4;
 
-    .line 12
-    .line 13
-    .line 14
-    return-object v4
+    .line 2
+    .line 3
+    invoke-virtual {v0}, LTR4;->b()Lrp0;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    return-object v0
 .end method

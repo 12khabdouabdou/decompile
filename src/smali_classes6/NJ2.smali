@@ -1,41 +1,35 @@
 .class public final LNJ2;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Lkotlin/jvm/functions/Function0;
+.implements Lio/reactivex/rxjava3/functions/Action;
 
 
 # instance fields
 .field public final synthetic a:I
 
-.field public final synthetic b:LeLj;
-
-.field public final synthetic c:I
+.field public final synthetic b:LTJ2;
 
 
 # direct methods
-.method public synthetic constructor <init>(LeLj;II)V
+.method public synthetic constructor <init>(LTJ2;I)V
     .locals 0
 
     .line 1
-    iput p3, p0, LNJ2;->a:I
+    iput p2, p0, LNJ2;->a:I
 
-    iput-object p1, p0, LNJ2;->b:LeLj;
+    iput-object p1, p0, LNJ2;->b:LTJ2;
 
-    iput p2, p0, LNJ2;->c:I
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 2
+.method public final run()V
+    .locals 3
 
     .line 1
     iget v0, p0, LNJ2;->a:I
@@ -47,68 +41,110 @@
     .line 4
     .line 5
     .line 6
-    iget-object v0, p0, LNJ2;->b:LeLj;
+    iget-object v0, p0, LNJ2;->b:LTJ2;
 
     .line 7
     .line 8
-    iget v1, p0, LNJ2;->c:I
+    iget-object v0, v0, LTJ2;->c:LXJ2;
 
     .line 9
     .line 10
-    invoke-static {v0, v1}, Lpuk;->p(LeLj;I)Ljava/lang/String;
+    invoke-virtual {v0}, LXJ2;->a()V
 
     .line 11
     .line 12
     .line 13
-    move-result-object v0
+    iget-object v1, v0, LXJ2;->a:Landroid/widget/RelativeLayout;
 
     .line 14
-    return-object v0
-
     .line 15
-    :pswitch_0
-    iget-object v0, p0, LNJ2;->b:LeLj;
+    const/4 v2, 0x0
 
     .line 16
-    .line 17
-    iget v1, p0, LNJ2;->c:I
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 17
     .line 18
     .line 19
-    invoke-static {v0, v1}, Lpuk;->p(LeLj;I)Ljava/lang/String;
+    iget-object v0, v0, LXJ2;->c:LREi;
 
     .line 20
     .line 21
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
     .line 22
-    move-result-object v0
-
     .line 23
-    return-object v0
-
     .line 24
-    :pswitch_1
-    iget-object v0, p0, LNJ2;->b:LeLj;
+    move-result-object v0
 
     .line 25
+    check-cast v0, Lcom/snap/imageloading/view/SnapImageView;
+
     .line 26
-    iget v1, p0, LNJ2;->c:I
-
     .line 27
-    .line 28
-    invoke-static {v0, v1}, Lpuk;->p(LeLj;I)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    .line 28
     .line 29
     .line 30
+    return-void
+
     .line 31
-    move-result-object v0
+    :pswitch_0
+    iget-object v0, p0, LNJ2;->b:LTJ2;
 
     .line 32
-    return-object v0
-
     .line 33
+    iget-object v0, v0, LTJ2;->c:LXJ2;
+
+    .line 34
+    .line 35
+    invoke-virtual {v0}, LXJ2;->a()V
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v1, v0, LXJ2;->a:Landroid/widget/RelativeLayout;
+
+    .line 39
+    .line 40
+    const/4 v2, 0x0
+
+    .line 41
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 42
+    .line 43
+    .line 44
+    iget-object v0, v0, LXJ2;->c:LREi;
+
+    .line 45
+    .line 46
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v0
+
+    .line 50
+    check-cast v0, Lcom/snap/imageloading/view/SnapImageView;
+
+    .line 51
+    .line 52
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 53
+    .line 54
+    .line 55
+    return-void
+
+    .line 56
+    nop
+
+    .line 57
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

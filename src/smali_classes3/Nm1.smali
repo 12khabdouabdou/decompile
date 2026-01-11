@@ -3,17 +3,19 @@
 .source "SourceFile"
 
 # interfaces
-.implements LPm1;
+.implements Lio/reactivex/rxjava3/functions/Function;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;
 
-.field public final b:LAm1;
+.field public final synthetic b:Z
+
+.field public final synthetic c:Ljava/util/List;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;LAm1;)V
+.method public constructor <init>(Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;ZLjava/util/List;)V
     .locals 0
 
     .line 1
@@ -22,205 +24,97 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LNm1;->a:Ljava/lang/String;
+    iput-object p1, p0, LNm1;->a:Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;
 
     .line 5
     .line 6
-    iput-object p2, p0, LNm1;->b:LAm1;
+    iput-boolean p2, p0, LNm1;->b:Z
 
     .line 7
     .line 8
+    iput-object p3, p0, LNm1;->c:Ljava/util/List;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/String;
-    .locals 1
+.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget-object v0, p0, LNm1;->a:Ljava/lang/String;
+    check-cast p1, LBm6;
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    iget-object v0, p0, LNm1;->c:Ljava/util/List;
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LNm1;
+    invoke-static {v0}, LZYk;->g(Ljava/util/List;)Ljava/util/ArrayList;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
-
     .line 8
-    if-nez v1, :cond_1
+    move-result-object v7
 
     .line 9
-    .line 10
-    return v2
+    iget-object v1, p1, LBm6;->g0:LKZe;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, LNm1;
+    iget-object v2, p0, LNm1;->a:Lapp/aifactory/sdk/api/model/ResourceId$ContentObjectResourceId;
 
     .line 12
     .line 13
-    iget-object v1, p1, LNm1;->a:Ljava/lang/String;
+    sget-object v5, LgP6;->a:LgP6;
 
     .line 14
     .line 15
-    iget-object v3, p0, LNm1;->a:Ljava/lang/String;
+    const/4 v6, 0x0
 
     .line 16
+    iget-boolean v3, p0, LNm1;->b:Z
+
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
     .line 18
-    .line 19
-    .line 20
-    move-result v1
+    const/4 v4, 0x0
 
+    .line 19
+    const/16 v8, 0x34
+
+    .line 20
     .line 21
-    if-nez v1, :cond_2
+    invoke-static/range {v1 .. v8}, LAXk;->d(LKZe;Lapp/aifactory/sdk/api/model/ResourceId;ZLSy9;Ljava/util/List;ZLjava/util/List;I)Lio/reactivex/rxjava3/internal/operators/single/SingleDoOnError;
 
     .line 22
     .line 23
-    return v2
-
     .line 24
-    :cond_2
-    iget-object v1, p0, LNm1;->b:LAm1;
-
-    .line 25
-    .line 26
-    iget-object p1, p1, LNm1;->b:LAm1;
-
-    .line 27
-    .line 28
-    if-eq v1, p1, :cond_3
-
-    .line 29
-    .line 30
-    return v2
-
-    .line 31
-    :cond_3
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, LNm1;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 8
-    .line 9
-    iget-object v1, p0, LNm1;->b:LAm1;
-
-    .line 10
-    .line 11
-    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v1
-
-    .line 15
-    add-int/2addr v1, v0
-
-    .line 16
-    return v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "LensId(lensId="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LNm1;->a:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", applyingStrategy="
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    iget-object v1, p0, LNm1;->b:LAm1;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ")"
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
     move-result-object v0
 
+    .line 25
+    new-instance v1, Lym6;
+
+    .line 26
+    .line 27
+    const/4 v2, 0x1
+
+    .line 28
+    invoke-direct {v1, p1, v2}, Lym6;-><init>(LBm6;I)V
+
+    .line 29
+    .line 30
+    .line 31
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
     .line 32
-    return-object v0
+    .line 33
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 34
+    .line 35
+    .line 36
+    return-object p1
 .end method

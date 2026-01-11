@@ -4,16 +4,12 @@
 
 
 # virtual methods
-.method public abstract getLogUploadUrl(Lpq8;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Lpq8;
-        .annotation runtime Ljv1;
+.method public abstract getLogUploadUrl(LWw8;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LWw8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/snapair/noauth/getSignedUrl"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -22,26 +18,26 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lpq8;",
+            "LWw8;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/String;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+        value = "/snapair/noauth/getSignedUrl"
+    .end annotation
 .end method
 
-.method public abstract uploadCrashTicket(LqH;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # LqH;
-        .annotation runtime Ljv1;
+.method public abstract uploadCrashTicket(LmJ;)Lio/reactivex/rxjava3/core/Single;
+    .param p1    # LmJ;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-        value = "/c2r/create_protobuf"
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -50,12 +46,16 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqH;",
+            "LmJ;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
+            "Ljnf<",
             "Ljava/lang/Object;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
+        value = "/c2r/create_protobuf"
     .end annotation
 .end method

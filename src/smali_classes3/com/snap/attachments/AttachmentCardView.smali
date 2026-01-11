@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LQk0;",
+        "Lcn0;",
         "Ljava/lang/Object;",
         ">;"
     }
@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final Companion:LPk0;
+.field public static final Companion:Lbn0;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LPk0;
+    new-instance v0, Lbn0;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/attachments/AttachmentCardView;->Companion:LPk0;
+    sput-object v0, Lcom/snap/attachments/AttachmentCardView;->Companion:Lbn0;
 
     .line 7
     .line 8
@@ -62,29 +62,29 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LQk0;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/attachments/AttachmentCardView;
+.method public static final create(LZ69;Lcn0;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/attachments/AttachmentCardView;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LQk0;",
+            "LZ69;",
+            "Lcn0;",
             "Ljava/lang/Object;",
-            "LTB3;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/attachments/AttachmentCardView;"
         }
     .end annotation
 
-    sget-object v0, Lcom/snap/attachments/AttachmentCardView;->Companion:LPk0;
+    sget-object v0, Lcom/snap/attachments/AttachmentCardView;->Companion:Lbn0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
     new-instance v2, Lcom/snap/attachments/AttachmentCardView;
 
-    invoke-interface {p0}, LqZ8;->getContext()Landroid/content/Context;
+    invoke-interface {p0}, LZ69;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -108,15 +108,15 @@
     move-object v7, p4
 
     .line 4
-    invoke-interface/range {v1 .. v8}, LqZ8;->l(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LTB3;Lkotlin/jvm/functions/Function1;LYj;)V
+    invoke-interface/range {v1 .. v8}, LZ69;->w0(Lcom/snap/composer/views/ComposerRootView;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;LvF3;Lkotlin/jvm/functions/Function1;LL4;)V
 
     return-object v2
 .end method
 
-.method public static final create(LqZ8;LTB3;)Lcom/snap/attachments/AttachmentCardView;
+.method public static final create(LZ69;LvF3;)Lcom/snap/attachments/AttachmentCardView;
     .locals 3
 
-    sget-object v0, Lcom/snap/attachments/AttachmentCardView;->Companion:LPk0;
+    sget-object v0, Lcom/snap/attachments/AttachmentCardView;->Companion:Lbn0;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -125,7 +125,7 @@
     const/16 v2, 0x10
 
     .line 1
-    invoke-static {v0, p0, v1, p1, v2}, LPk0;->a(LPk0;LqZ8;LQk0;LTB3;I)Lcom/snap/attachments/AttachmentCardView;
+    invoke-static {v0, p0, v1, p1, v2}, Lbn0;->a(Lbn0;LZ69;Lcn0;LvF3;I)Lcom/snap/attachments/AttachmentCardView;
 
     move-result-object p0
 

@@ -1,221 +1,601 @@
-.class public final LYt5;
+.class public final synthetic LYt5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lio/reactivex/rxjava3/functions/Consumer;
+
 
 # instance fields
-.field public final a:Landroid/app/Activity;
+.field public final synthetic a:I
 
-.field public final b:LBre;
-
-.field public final c:LVD3;
-
-.field public final d:LD5c;
-
-.field public final e:Ltma;
-
-.field public final f:Lkotlin/jvm/functions/Function1;
-
-.field public final g:Lkotlin/jvm/functions/Function2;
+.field public final synthetic b:Lio/reactivex/rxjava3/subjects/Subject;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;LBre;LVD3;Ltma;)V
-    .locals 3
+.method public synthetic constructor <init>(ILio/reactivex/rxjava3/subjects/Subject;)V
+    .locals 0
 
     .line 1
-    sget-object v0, LD5c;->X:LD5c;
+    iput p1, p0, LYt5;->a:I
 
-    .line 2
-    .line 3
-    sget-object v1, LVt5;->f0:LVt5;
+    iput-object p2, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
 
-    .line 4
-    .line 5
-    sget-object v2, LAT2;->p0:LAT2;
-
-    .line 6
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
-    .line 9
-    .line 10
-    iput-object p1, p0, LYt5;->a:Landroid/app/Activity;
-
-    .line 11
-    .line 12
-    iput-object p2, p0, LYt5;->b:LBre;
-
-    .line 13
-    .line 14
-    iput-object p3, p0, LYt5;->c:LVD3;
-
-    .line 15
-    .line 16
-    iput-object v0, p0, LYt5;->d:LD5c;
-
-    .line 17
-    .line 18
-    iput-object p4, p0, LYt5;->e:Ltma;
-
-    .line 19
-    .line 20
-    iput-object v1, p0, LYt5;->f:Lkotlin/jvm/functions/Function1;
-
-    .line 21
-    .line 22
-    iput-object v2, p0, LYt5;->g:Lkotlin/jvm/functions/Function2;
-
-    .line 23
-    .line 24
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(ILGjj;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;
-    .locals 3
+.method public final accept(Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LYt5;->d:LD5c;
+    iget v0, p0, LYt5;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {v0}, LD5c;->invoke()Ljava/lang/Object;
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    move-result-object v0
+    check-cast p1, Lco9;
 
     .line 7
-    check-cast v0, Ljava/lang/String;
-
     .line 8
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 9
-    iget-object v1, p0, LYt5;->g:Lkotlin/jvm/functions/Function2;
-
     .line 10
-    .line 11
-    invoke-interface {v1, p2, v0}, Lkotlin/jvm/functions/Function2;->N(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
+    .line 11
     .line 12
     .line 13
+    return-void
+
     .line 14
-    move-result-object p2
+    :pswitch_0
+    check-cast p1, LWn9;
 
     .line 15
-    check-cast p2, LGjj;
-
     .line 16
-    .line 17
-    invoke-virtual {p2}, LGjj;->a()Ljava/lang/String;
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
 
+    .line 17
     .line 18
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
     .line 19
     .line 20
-    move-result-object v1
-
     .line 21
-    iget-object v2, p0, LYt5;->f:Lkotlin/jvm/functions/Function1;
+    return-void
 
     .line 22
-    .line 23
-    invoke-interface {v2, v1}, Lkotlin/jvm/functions/Function1;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    :pswitch_1
+    check-cast p1, LLn9;
 
+    .line 23
     .line 24
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 25
     .line 26
-    move-result-object v1
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 27
-    check-cast v1, Landroid/net/Uri;
-
     .line 28
     .line 29
-    iget-object v2, p0, LYt5;->e:Ltma;
+    return-void
 
     .line 30
-    .line 31
-    invoke-interface {v2, v1, p1}, Ltma;->a(Landroid/net/Uri;I)Lio/reactivex/rxjava3/core/Single;
+    :pswitch_2
+    check-cast p1, Lb88;
 
+    .line 31
     .line 32
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 33
     .line 34
-    move-result-object p1
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 35
-    sget-object v1, LHG2;->q0:LHG2;
-
     .line 36
     .line 37
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+    return-void
 
     .line 38
-    .line 39
-    invoke-direct {v2, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    :pswitch_3
+    check-cast p1, LVf7;
 
+    .line 39
     .line 40
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 41
     .line 42
-    iget-object p1, p0, LYt5;->b:LBre;
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 43
     .line 44
-    invoke-virtual {p1}, LBre;->i()Lgn0;
-
     .line 45
-    .line 46
-    .line 47
-    move-result-object p1
+    return-void
 
+    .line 46
+    :pswitch_4
+    check-cast p1, LKf7;
+
+    .line 47
     .line 48
-    sget-object v1, LFe5;->s0:LFe5;
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
 
     .line 49
     .line 50
-    invoke-static {p1, v2, v1}, LzP2;->b0(Lio/reactivex/rxjava3/core/Scheduler;Lio/reactivex/rxjava3/core/Single;Lkotlin/jvm/functions/Function0;)Lio/reactivex/rxjava3/internal/operators/single/SingleObserveOn;
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 51
     .line 52
     .line 53
-    move-result-object p1
+    return-void
 
     .line 54
-    new-instance v1, LEo4;
+    :pswitch_5
+    check-cast p1, Lw67;
 
     .line 55
     .line 56
-    const/16 v2, 0xc
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
 
     .line 57
     .line 58
-    invoke-direct {v1, p2, v0, p0, v2}, LEo4;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 59
     .line 60
     .line 61
-    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    return-void
 
     .line 62
-    .line 63
-    invoke-direct {p2, p1, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+    :pswitch_6
+    check-cast p1, LT37;
 
+    .line 63
     .line 64
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 65
     .line 66
-    sget-object p1, Ltg5;->a:Ltg5;
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
 
     .line 67
     .line 68
-    invoke-virtual {p2, p1}, Lio/reactivex/rxjava3/core/Single;->s(Ljava/lang/Object;)Lio/reactivex/rxjava3/internal/operators/single/SingleOnErrorReturn;
-
     .line 69
-    .line 70
-    .line 71
-    move-result-object p1
+    return-void
 
+    .line 70
+    :pswitch_7
+    check-cast p1, Lssa;
+
+    .line 71
     .line 72
-    return-object p1
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 73
+    .line 74
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 75
+    .line 76
+    .line 77
+    return-void
+
+    .line 78
+    :pswitch_8
+    check-cast p1, LW27;
+
+    .line 79
+    .line 80
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 81
+    .line 82
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 83
+    .line 84
+    .line 85
+    return-void
+
+    .line 86
+    :pswitch_9
+    check-cast p1, LV27;
+
+    .line 87
+    .line 88
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 89
+    .line 90
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 91
+    .line 92
+    .line 93
+    return-void
+
+    .line 94
+    :pswitch_a
+    check-cast p1, Lv07;
+
+    .line 95
+    .line 96
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 97
+    .line 98
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 99
+    .line 100
+    .line 101
+    return-void
+
+    .line 102
+    :pswitch_b
+    check-cast p1, LmY6;
+
+    .line 103
+    .line 104
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 105
+    .line 106
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 107
+    .line 108
+    .line 109
+    return-void
+
+    .line 110
+    :pswitch_c
+    check-cast p1, Ljava/util/Map;
+
+    .line 111
+    .line 112
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 113
+    .line 114
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 115
+    .line 116
+    .line 117
+    return-void
+
+    .line 118
+    :pswitch_d
+    check-cast p1, LNi5;
+
+    .line 119
+    .line 120
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 121
+    .line 122
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 123
+    .line 124
+    .line 125
+    return-void
+
+    .line 126
+    :pswitch_e
+    check-cast p1, Lns4;
+
+    .line 127
+    .line 128
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 129
+    .line 130
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 131
+    .line 132
+    .line 133
+    return-void
+
+    .line 134
+    :pswitch_f
+    check-cast p1, LKm4;
+
+    .line 135
+    .line 136
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 137
+    .line 138
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 139
+    .line 140
+    .line 141
+    return-void
+
+    .line 142
+    :pswitch_10
+    check-cast p1, Lgg3;
+
+    .line 143
+    .line 144
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 145
+    .line 146
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 147
+    .line 148
+    .line 149
+    return-void
+
+    .line 150
+    :pswitch_11
+    check-cast p1, LBy2;
+
+    .line 151
+    .line 152
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 153
+    .line 154
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 155
+    .line 156
+    .line 157
+    return-void
+
+    .line 158
+    :pswitch_12
+    check-cast p1, Lry2;
+
+    .line 159
+    .line 160
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 161
+    .line 162
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 163
+    .line 164
+    .line 165
+    return-void
+
+    .line 166
+    :pswitch_13
+    check-cast p1, Lmy2;
+
+    .line 167
+    .line 168
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 169
+    .line 170
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 171
+    .line 172
+    .line 173
+    return-void
+
+    .line 174
+    :pswitch_14
+    check-cast p1, Lby2;
+
+    .line 175
+    .line 176
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 177
+    .line 178
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 179
+    .line 180
+    .line 181
+    return-void
+
+    .line 182
+    :pswitch_15
+    check-cast p1, LLx2;
+
+    .line 183
+    .line 184
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 185
+    .line 186
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 187
+    .line 188
+    .line 189
+    return-void
+
+    .line 190
+    :pswitch_16
+    check-cast p1, LBx2;
+
+    .line 191
+    .line 192
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 193
+    .line 194
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 195
+    .line 196
+    .line 197
+    return-void
+
+    .line 198
+    :pswitch_17
+    check-cast p1, Lbu2;
+
+    .line 199
+    .line 200
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 201
+    .line 202
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 203
+    .line 204
+    .line 205
+    return-void
+
+    .line 206
+    :pswitch_18
+    check-cast p1, LJl2;
+
+    .line 207
+    .line 208
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 209
+    .line 210
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 211
+    .line 212
+    .line 213
+    return-void
+
+    .line 214
+    :pswitch_19
+    if-nez p1, :cond_0
+
+    .line 215
+    .line 216
+    iget-object p1, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 217
+    .line 218
+    const/4 v0, 0x0
+
+    .line 219
+    invoke-interface {p1, v0}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 220
+    .line 221
+    .line 222
+    return-void
+
+    .line 223
+    :cond_0
+    new-instance p1, Ljava/lang/ClassCastException;
+
+    .line 224
+    .line 225
+    invoke-direct {p1}, Ljava/lang/ClassCastException;-><init>()V
+
+    .line 226
+    .line 227
+    .line 228
+    throw p1
+
+    .line 229
+    :pswitch_1a
+    check-cast p1, Ln52;
+
+    .line 230
+    .line 231
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 232
+    .line 233
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 234
+    .line 235
+    .line 236
+    return-void
+
+    .line 237
+    :pswitch_1b
+    check-cast p1, Lw22;
+
+    .line 238
+    .line 239
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 240
+    .line 241
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 242
+    .line 243
+    .line 244
+    return-void
+
+    .line 245
+    :pswitch_1c
+    check-cast p1, Lc22;
+
+    .line 246
+    .line 247
+    iget-object v0, p0, LYt5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
+    .line 248
+    .line 249
+    invoke-interface {v0, p1}, Lio/reactivex/rxjava3/core/Observer;->onNext(Ljava/lang/Object;)V
+
+    .line 250
+    .line 251
+    .line 252
+    return-void
+
+    .line 253
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1c
+        :pswitch_1b
+        :pswitch_1a
+        :pswitch_19
+        :pswitch_18
+        :pswitch_17
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LeUf;
+    proxyClass = LOdg;
     schema = "\'presentSendToForURL\':f|m|(r:\'[0]\'): p<b@>"
     typeReferences = {
         Lcom/snap/plus/SendToPresenterURLConfig;

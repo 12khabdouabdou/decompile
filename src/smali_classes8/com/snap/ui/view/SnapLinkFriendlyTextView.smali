@@ -13,12 +13,12 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f060204
+    const v0, 0x7f06025c
 
     .line 5
     .line 6
     .line 7
-    invoke-static {p1, v0}, LsX3;->c(Landroid/content/Context;I)I
+    invoke-static {p1, v0}, LV14;->c(Landroid/content/Context;I)I
 
     .line 8
     .line 9
@@ -26,7 +26,7 @@
     move-result v0
 
     .line 11
-    new-instance v1, Ltzc;
+    new-instance v1, LWig;
 
     .line 12
     .line 13
@@ -35,12 +35,12 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {p0, v0, v1}, Lqsk;->p(Lcom/snap/ui/view/SnapFontTextView;ILcJg;)V
+    invoke-static {p0, v0, v1}, LjRk;->m(Lcom/snap/ui/view/SnapFontTextView;ILI4h;)V
 
     .line 17
     .line 18
     .line 19
-    sget-object v1, LCve;->s:[I
+    sget-object v1, LlNe;->s:[I
 
     .line 20
     .line 21

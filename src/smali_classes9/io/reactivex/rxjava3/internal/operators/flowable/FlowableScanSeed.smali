@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 4
 
     .line 1
@@ -83,7 +83,7 @@
 
     .line 12
     .line 13
-    invoke-direct {v1, p1, v2, v0, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableScanSeed$ScanSeedSubscriber;-><init>(LV6i;Lio/reactivex/rxjava3/functions/BiFunction;Ljava/lang/Object;I)V
+    invoke-direct {v1, p1, v2, v0, v3}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableScanSeed$ScanSeedSubscriber;-><init>(Lmvi;Lio/reactivex/rxjava3/functions/BiFunction;Ljava/lang/Object;I)V
 
     .line 14
     .line 15
@@ -113,12 +113,12 @@
 
     .line 27
     .line 28
-    invoke-interface {p1, v1}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v1}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 29
     .line 30
     .line 31
-    invoke-interface {p1, v0}, LV6i;->onError(Ljava/lang/Throwable;)V
+    invoke-interface {p1, v0}, Lmvi;->onError(Ljava/lang/Throwable;)V
 
     .line 32
     .line 33

@@ -4,15 +4,11 @@
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:I
-
-.field public final c:I
+.field public final a:Loc6;
 
 
 # direct methods
-.method public constructor <init>(III)V
+.method public constructor <init>(Loc6;)V
     .locals 0
 
     .line 1
@@ -21,58 +17,17 @@
     .line 2
     .line 3
     .line 4
-    iput p1, p0, Lpod;->a:I
+    iput-object p1, p0, Lpod;->a:Loc6;
 
     .line 5
     .line 6
-    iput p2, p0, Lpod;->b:I
-
-    .line 7
-    .line 8
-    iput p3, p0, Lpod;->c:I
-
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lpod;->b:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final b()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lpod;->a:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
-.method public final c()I
-    .locals 1
-
-    .line 1
-    iget v0, p0, Lpod;->c:I
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .locals 3
 
     .line 1
     const/4 v0, 0x1
@@ -105,15 +60,15 @@
 
     .line 12
     .line 13
-    iget v1, p1, Lpod;->a:I
+    iget-object v1, p0, Lpod;->a:Loc6;
 
     .line 14
     .line 15
-    iget v3, p0, Lpod;->a:I
+    iget-object p1, p1, Lpod;->a:Loc6;
 
     .line 16
     .line 17
-    if-eq v3, v1, :cond_2
+    if-eq v1, p1, :cond_2
 
     .line 18
     .line 19
@@ -121,83 +76,37 @@
 
     .line 20
     :cond_2
-    iget v1, p0, Lpod;->b:I
-
-    .line 21
-    .line 22
-    iget v3, p1, Lpod;->b:I
-
-    .line 23
-    .line 24
-    if-eq v1, v3, :cond_3
-
-    .line 25
-    .line 26
-    return v2
-
-    .line 27
-    :cond_3
-    iget v1, p0, Lpod;->c:I
-
-    .line 28
-    .line 29
-    iget p1, p1, Lpod;->c:I
-
-    .line 30
-    .line 31
-    if-eq v1, p1, :cond_4
-
-    .line 32
-    .line 33
-    return v2
-
-    .line 34
-    :cond_4
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 2
+    .locals 1
 
     .line 1
-    iget v0, p0, Lpod;->a:I
+    iget-object v0, p0, Lpod;->a:Loc6;
 
     .line 2
     .line 3
-    mul-int/lit8 v0, v0, 0x1f
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
-    iget v1, p0, Lpod;->b:I
-
     .line 6
+    move-result v0
+
     .line 7
-    add-int/2addr v0, v1
-
-    .line 8
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 9
-    .line 10
-    iget v1, p0, Lpod;->c:I
-
-    .line 11
-    .line 12
-    add-int/2addr v0, v1
-
-    .line 13
     return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     .line 2
     .line 3
-    const-string v1, "PillColorSpec(startColor="
+    const-string v1, "To(direction="
 
     .line 4
     .line 5
@@ -206,16 +115,16 @@
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Lpod;->a:I
+    iget-object v1, p0, Lpod;->a:Loc6;
 
     .line 9
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
     .line 13
-    const-string v1, ", endColor="
+    const-string v1, ")"
 
     .line 14
     .line 15
@@ -224,39 +133,13 @@
     .line 16
     .line 17
     .line 18
-    iget v1, p0, Lpod;->b:I
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 19
     .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 21
-    .line 22
-    .line 23
-    const-string v1, ", strokeColor="
-
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget v1, p0, Lpod;->c:I
-
-    .line 29
-    .line 30
-    const-string v2, ")"
-
-    .line 31
-    .line 32
-    invoke-static {v0, v1, v2}, LEU0;->y(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
     move-result-object v0
 
-    .line 36
+    .line 22
     return-object v0
 .end method

@@ -1,153 +1,358 @@
 .class public final Lvi6;
-.super Lwi6;
+.super Lsw;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/util/Map;
+.field public final X:Lmk6;
+
+.field public final Y:Z
+
+.field public final Z:LvZ3;
+
+.field public final e0:Landroid/text/SpannedString;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Map;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;JLmk6;ZLvZ3;)V
+    .locals 7
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x2
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
+    const/4 v2, 0x0
+
     .line 4
-    iput-object p1, p0, Lvi6;->a:Ljava/util/Map;
+    const/4 v3, 0x3
 
     .line 5
+    sget-object v4, Lam6;->g0:Lam6;
+
     .line 6
+    .line 7
+    invoke-direct {p0, v4, p3, p4}, Lsw;-><init>(Ltw;J)V
+
+    .line 8
+    .line 9
+    .line 10
+    iput-object p5, p0, Lvi6;->X:Lmk6;
+
+    .line 11
+    .line 12
+    iput-boolean p6, p0, Lvi6;->Y:Z
+
+    .line 13
+    .line 14
+    iput-object p7, p0, Lvi6;->Z:LvZ3;
+
+    .line 15
+    .line 16
+    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p3
+
+    .line 20
+    const p4, 0x7f040664
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-static {p3, p4}, LNC8;->i(Landroid/content/res/Resources$Theme;I)I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result p3
+
+    .line 27
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object p4
+
+    .line 31
+    const p6, 0x7f0603af
+
+    .line 32
+    .line 33
+    .line 34
+    invoke-virtual {p4, p6}, Landroid/content/res/Resources;->getColor(I)I
+
+    .line 35
+    .line 36
+    .line 37
+    move-result p4
+
+    .line 38
+    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p6
+
+    .line 42
+    const p7, 0x7f0407b3
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-static {p6, p7}, LNC8;->n(Landroid/content/res/Resources$Theme;I)I
+
+    .line 46
+    .line 47
+    .line 48
+    move-result p6
+
+    .line 49
+    invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p7
+
+    .line 53
+    const v4, 0x7f0407c1
+
+    .line 54
+    .line 55
+    .line 56
+    invoke-static {p7, v4}, LNC8;->n(Landroid/content/res/Resources$Theme;I)I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result p7
+
+    .line 60
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v4
+
+    .line 64
+    const v5, 0x7f06026c
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getColor(I)I
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v4
+
+    .line 71
+    invoke-static {}, Lcom/snap/framework/misc/AppContext;->get()Landroid/app/Application;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v5
+
+    .line 75
+    new-instance v6, LRXg;
+
+    .line 76
+    .line 77
+    invoke-direct {v6, v5}, LRXg;-><init>(Landroid/content/Context;)V
+
+    .line 78
+    .line 79
+    .line 80
+    sget-object v5, Lsk6;->t:Lsk6;
+
+    .line 81
+    .line 82
+    iget-object p5, p5, Lmk6;->f:Lsk6;
+
+    .line 83
+    .line 84
+    if-ne p5, v5, :cond_0
+
+    .line 85
+    .line 86
+    move p3, p4
+
+    .line 87
+    :cond_0
+    invoke-virtual {v6}, LRXg;->j()LGr4;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object p4
+
+    .line 91
+    new-instance p5, Landroid/text/style/ForegroundColorSpan;
+
+    .line 92
+    .line 93
+    invoke-direct {p5, p3}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    .line 94
+    .line 95
+    .line 96
+    new-instance p3, Landroid/text/style/AbsoluteSizeSpan;
+
+    .line 97
+    .line 98
+    invoke-direct {p3, p6}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
+
+    .line 99
+    .line 100
+    .line 101
+    new-array p6, v3, [Ljava/lang/Object;
+
+    .line 102
+    .line 103
+    aput-object p4, p6, v2
+
+    .line 104
+    .line 105
+    aput-object p5, p6, v1
+
+    .line 106
+    .line 107
+    aput-object p3, p6, v0
+
+    .line 108
+    .line 109
+    invoke-virtual {v6, p2, p6}, LRXg;->b(Ljava/lang/CharSequence;[Ljava/lang/Object;)V
+
+    .line 110
+    .line 111
+    .line 112
+    invoke-virtual {v6}, LRXg;->h()Landroid/text/SpannedString;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object p2
+
+    .line 116
+    iput-object p2, p0, Lvi6;->e0:Landroid/text/SpannedString;
+
+    .line 117
+    .line 118
+    invoke-static {}, Lcom/snap/framework/misc/AppContext;->get()Landroid/app/Application;
+
+    .line 119
+    .line 120
+    .line 121
+    move-result-object p2
+
+    .line 122
+    new-instance p3, LRXg;
+
+    .line 123
+    .line 124
+    invoke-direct {p3, p2}, LRXg;-><init>(Landroid/content/Context;)V
+
+    .line 125
+    .line 126
+    .line 127
+    invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 128
+    .line 129
+    .line 130
+    move-result-object p1
+
+    .line 131
+    const p2, 0x7f133514
+
+    .line 132
+    .line 133
+    .line 134
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
+
+    .line 135
+    .line 136
+    .line 137
+    move-result-object p1
+
+    .line 138
+    invoke-virtual {p3}, LRXg;->i()LGr4;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object p2
+
+    .line 142
+    new-instance p4, Landroid/text/style/ForegroundColorSpan;
+
+    .line 143
+    .line 144
+    invoke-direct {p4, v4}, Landroid/text/style/ForegroundColorSpan;-><init>(I)V
+
+    .line 145
+    .line 146
+    .line 147
+    new-instance p5, Landroid/text/style/AbsoluteSizeSpan;
+
+    .line 148
+    .line 149
+    invoke-direct {p5, p7}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
+
+    .line 150
+    .line 151
+    .line 152
+    new-array p6, v3, [Ljava/lang/Object;
+
+    .line 153
+    .line 154
+    aput-object p2, p6, v2
+
+    .line 155
+    .line 156
+    aput-object p4, p6, v1
+
+    .line 157
+    .line 158
+    aput-object p5, p6, v0
+
+    .line 159
+    .line 160
+    invoke-virtual {p3, p1, p6}, LRXg;->b(Ljava/lang/CharSequence;[Ljava/lang/Object;)V
+
+    .line 161
+    .line 162
+    .line 163
+    invoke-virtual {p3}, LRXg;->h()Landroid/text/SpannedString;
+
+    .line 164
+    .line 165
+    .line 166
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+.method public final u(Lsw;)Z
+    .locals 0
 
     .line 1
-    const/4 v0, 0x1
+    const/4 p1, 0x0
 
     .line 2
-    if-ne p0, p1, :cond_0
+    xor-int/lit8 p1, p1, 0x1
 
     .line 3
     .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, Lvi6;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, Lvi6;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, Lvi6;->a:Ljava/util/Map;
-
-    .line 14
-    .line 15
-    iget-object p1, p1, Lvi6;->a:Ljava/util/Map;
-
-    .line 16
-    .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result p1
-
-    .line 21
-    if-nez p1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lvi6;->a:Ljava/util/Map;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "BySection(sectionsWithCacheState="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, Lvi6;->a:Ljava/util/Map;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
+    return p1
 .end method

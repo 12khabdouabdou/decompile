@@ -1,1090 +1,482 @@
-.class public final Lpr7;
-.super LUVi;
+.class public final enum Lpr7;
+.super Ljava/lang/Enum;
 .source "SourceFile"
+
+# interfaces
+.implements LUT6;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lpr7;",
+        ">;",
+        "LUT6;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final enum X:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DB_CLOSE_ERROR"
+    .end annotation
+.end field
+
+.field public static final enum Y:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DB_UPDATE_SUCCESS"
+    .end annotation
+.end field
+
+.field public static final enum Z:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DB_QUERY_SUCCESS"
+    .end annotation
+.end field
+
+.field public static final enum b:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "CREATE_USER_DB_TABLES_FAILURE"
+    .end annotation
+.end field
+
+.field public static final enum c:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DB_UPDATE_ERROR"
+    .end annotation
+.end field
+
+.field public static final enum e0:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "USER_DB_LOADED"
+    .end annotation
+.end field
+
+.field public static final enum f0:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "RECREATE_USER_DB"
+    .end annotation
+.end field
+
+.field public static final enum g0:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DELETE_DB"
+    .end annotation
+.end field
+
+.field public static final enum h0:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DB_SIZE"
+    .end annotation
+.end field
+
+.field public static final enum i0:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DB_INTEGRITY_ERROR"
+    .end annotation
+.end field
+
+.field public static final synthetic j0:[Lpr7;
+
+.field public static final enum t:Lpr7;
+    .annotation runtime Lcom/google/gson/annotations/SerializedName;
+        value = "DB_QUERY_ERROR"
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final a:Lobi;
-
-.field public final b:Lobi;
-
-.field public final c:Lobi;
+.field public final a:I
 
 
 # direct methods
-.method public constructor <init>(LAG8;)V
-    .locals 3
+.method static constructor <clinit>()V
+    .locals 23
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lpr7;
 
     .line 2
     .line 3
-    .line 4
-    new-instance v0, LYVi;
+    const-string v1, "CREATE_USER_DB_TABLES_FAILURE"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
-    new-instance v1, LPWi;
+    invoke-direct {v0, v1, v2, v2}, Lpr7;-><init>(Ljava/lang/String;II)V
 
     .line 7
     .line 8
-    const-class v2, LL56;
-
     .line 9
-    .line 10
-    invoke-direct {v1, v2}, LPWi;-><init>(Ljava/lang/reflect/Type;)V
+    sput-object v0, Lpr7;->b:Lpr7;
 
+    .line 10
     .line 11
+    new-instance v1, Lpr7;
+
     .line 12
     .line 13
-    invoke-direct {v0, p1, v1}, LYVi;-><init>(LAG8;LPWi;)V
+    const-string v3, "DB_UPDATE_ERROR"
 
     .line 14
     .line 15
+    const/4 v4, 0x1
+
     .line 16
-    invoke-static {v0}, LCq9;->c1(Lobi;)Lobi;
+    invoke-direct {v1, v3, v4, v4}, Lpr7;-><init>(Ljava/lang/String;II)V
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    sput-object v1, Lpr7;->c:Lpr7;
 
     .line 20
-    iput-object v0, p0, Lpr7;->a:Lobi;
-
     .line 21
+    new-instance v3, Lpr7;
+
     .line 22
-    new-instance v0, LYVi;
-
     .line 23
-    .line 24
-    new-instance v1, LPWi;
+    const-string v5, "DB_QUERY_ERROR"
 
+    .line 24
     .line 25
+    const/4 v6, 0x2
+
     .line 26
-    const-class v2, Lcs7;
+    invoke-direct {v3, v5, v6, v6}, Lpr7;-><init>(Ljava/lang/String;II)V
 
     .line 27
     .line 28
-    invoke-direct {v1, v2}, LPWi;-><init>(Ljava/lang/reflect/Type;)V
-
     .line 29
+    sput-object v3, Lpr7;->t:Lpr7;
+
     .line 30
     .line 31
-    invoke-direct {v0, p1, v1}, LYVi;-><init>(LAG8;LPWi;)V
+    new-instance v5, Lpr7;
 
     .line 32
     .line 33
+    const-string v7, "DB_CLOSE_ERROR"
+
     .line 34
-    invoke-static {v0}, LCq9;->c1(Lobi;)Lobi;
-
     .line 35
+    const/4 v8, 0x3
+
     .line 36
+    invoke-direct {v5, v7, v8, v8}, Lpr7;-><init>(Ljava/lang/String;II)V
+
     .line 37
-    move-result-object v0
-
     .line 38
-    iput-object v0, p0, Lpr7;->b:Lobi;
-
     .line 39
+    sput-object v5, Lpr7;->X:Lpr7;
+
     .line 40
-    new-instance v0, LYVi;
-
     .line 41
+    new-instance v7, Lpr7;
+
     .line 42
-    new-instance v1, LPWi;
-
     .line 43
-    .line 44
-    const-class v2, LbBg;
+    const-string v9, "DB_UPDATE_SUCCESS"
 
+    .line 44
     .line 45
+    const/4 v10, 0x4
+
     .line 46
-    invoke-direct {v1, v2}, LPWi;-><init>(Ljava/lang/reflect/Type;)V
+    invoke-direct {v7, v9, v10, v10}, Lpr7;-><init>(Ljava/lang/String;II)V
 
     .line 47
     .line 48
     .line 49
-    invoke-direct {v0, p1, v1}, LYVi;-><init>(LAG8;LPWi;)V
+    sput-object v7, Lpr7;->Y:Lpr7;
 
     .line 50
     .line 51
-    .line 52
-    invoke-static {v0}, LCq9;->c1(Lobi;)Lobi;
+    new-instance v9, Lpr7;
 
+    .line 52
     .line 53
+    const-string v11, "DB_QUERY_SUCCESS"
+
     .line 54
     .line 55
-    move-result-object p1
+    const/4 v12, 0x5
 
     .line 56
-    iput-object p1, p0, Lpr7;->c:Lobi;
+    invoke-direct {v9, v11, v12, v12}, Lpr7;-><init>(Ljava/lang/String;II)V
 
     .line 57
     .line 58
+    .line 59
+    sput-object v9, Lpr7;->Z:Lpr7;
+
+    .line 60
+    .line 61
+    new-instance v11, Lpr7;
+
+    .line 62
+    .line 63
+    const-string v13, "USER_DB_LOADED"
+
+    .line 64
+    .line 65
+    const/4 v14, 0x6
+
+    .line 66
+    invoke-direct {v11, v13, v14, v14}, Lpr7;-><init>(Ljava/lang/String;II)V
+
+    .line 67
+    .line 68
+    .line 69
+    sput-object v11, Lpr7;->e0:Lpr7;
+
+    .line 70
+    .line 71
+    new-instance v13, Lpr7;
+
+    .line 72
+    .line 73
+    const-string v15, "RECREATE_USER_DB"
+
+    .line 74
+    .line 75
+    const/16 v16, 0x0
+
+    .line 76
+    .line 77
+    const/4 v2, 0x7
+
+    .line 78
+    invoke-direct {v13, v15, v2, v2}, Lpr7;-><init>(Ljava/lang/String;II)V
+
+    .line 79
+    .line 80
+    .line 81
+    sput-object v13, Lpr7;->f0:Lpr7;
+
+    .line 82
+    .line 83
+    new-instance v15, Lpr7;
+
+    .line 84
+    .line 85
+    const/16 v17, 0x7
+
+    .line 86
+    .line 87
+    const-string v2, "DELETE_DB"
+
+    .line 88
+    .line 89
+    const/16 v18, 0x1
+
+    .line 90
+    .line 91
+    const/16 v4, 0x8
+
+    .line 92
+    .line 93
+    invoke-direct {v15, v2, v4, v4}, Lpr7;-><init>(Ljava/lang/String;II)V
+
+    .line 94
+    .line 95
+    .line 96
+    sput-object v15, Lpr7;->g0:Lpr7;
+
+    .line 97
+    .line 98
+    new-instance v2, Lpr7;
+
+    .line 99
+    .line 100
+    const/16 v19, 0x8
+
+    .line 101
+    .line 102
+    const-string v4, "DB_SIZE"
+
+    .line 103
+    .line 104
+    const/16 v20, 0x2
+
+    .line 105
+    .line 106
+    const/16 v6, 0x9
+
+    .line 107
+    .line 108
+    invoke-direct {v2, v4, v6, v6}, Lpr7;-><init>(Ljava/lang/String;II)V
+
+    .line 109
+    .line 110
+    .line 111
+    sput-object v2, Lpr7;->h0:Lpr7;
+
+    .line 112
+    .line 113
+    new-instance v4, Lpr7;
+
+    .line 114
+    .line 115
+    const/16 v21, 0x9
+
+    .line 116
+    .line 117
+    const-string v6, "DB_INTEGRITY_ERROR"
+
+    .line 118
+    .line 119
+    const/16 v22, 0x3
+
+    .line 120
+    .line 121
+    const/16 v8, 0xa
+
+    .line 122
+    .line 123
+    invoke-direct {v4, v6, v8, v8}, Lpr7;-><init>(Ljava/lang/String;II)V
+
+    .line 124
+    .line 125
+    .line 126
+    sput-object v4, Lpr7;->i0:Lpr7;
+
+    .line 127
+    .line 128
+    const/16 v6, 0xb
+
+    .line 129
+    .line 130
+    new-array v6, v6, [Lpr7;
+
+    .line 131
+    .line 132
+    aput-object v0, v6, v16
+
+    .line 133
+    .line 134
+    aput-object v1, v6, v18
+
+    .line 135
+    .line 136
+    aput-object v3, v6, v20
+
+    .line 137
+    .line 138
+    aput-object v5, v6, v22
+
+    .line 139
+    .line 140
+    aput-object v7, v6, v10
+
+    .line 141
+    .line 142
+    aput-object v9, v6, v12
+
+    .line 143
+    .line 144
+    aput-object v11, v6, v14
+
+    .line 145
+    .line 146
+    aput-object v13, v6, v17
+
+    .line 147
+    .line 148
+    aput-object v15, v6, v19
+
+    .line 149
+    .line 150
+    aput-object v2, v6, v21
+
+    .line 151
+    .line 152
+    aput-object v4, v6, v8
+
+    .line 153
+    .line 154
+    sput-object v6, Lpr7;->j0:[Lpr7;
+
+    .line 155
+    .line 156
     return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 2
+    .line 3
+    .line 4
+    iput p3, p0, Lpr7;->a:I
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)Lpr7;
+    .locals 1
+
+    .line 1
+    const-class v0, Lpr7;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, Lpr7;
+
+    .line 8
+    .line 9
+    return-object p0
+.end method
+
+.method public static values()[Lpr7;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lpr7;->j0:[Lpr7;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [Lpr7;->clone()Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    check-cast v0, [Lpr7;
+
+    .line 8
+    .line 9
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public a(LDB9;)Lor7;
-    .locals 6
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final a()I
+    .locals 1
 
     .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 3
-    .line 4
-    .line 5
-    move-result v1
-
-    .line 6
-    const/16 v2, 0x9
-
-    .line 7
-    .line 8
-    if-ne v1, v2, :cond_0
-
-    .line 9
-    .line 10
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 11
-    .line 12
-    .line 13
-    const/4 p1, 0x0
-
-    .line 14
-    return-object p1
-
-    .line 15
-    :cond_0
-    new-instance v1, Lor7;
-
-    .line 16
-    .line 17
-    invoke-direct {v1}, Lor7;-><init>()V
-
-    .line 18
-    .line 19
-    .line 20
-    iput-boolean v0, p1, LDB9;->b:Z
-
-    .line 21
-    .line 22
-    invoke-virtual {p1}, LDB9;->b()V
-
-    .line 23
-    .line 24
-    .line 25
-    :cond_1
-    :goto_0
-    invoke-virtual {p1}, LDB9;->i()Z
-
-    .line 26
-    .line 27
-    .line 28
-    move-result v3
-
-    .line 29
-    if-eqz v3, :cond_f
-
-    .line 30
-    .line 31
-    invoke-virtual {p1}, LDB9;->w()Ljava/lang/String;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v3
-
-    .line 35
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 36
-    .line 37
-    .line 38
-    const/4 v4, -0x1
-
-    .line 39
-    invoke-virtual {v3}, Ljava/lang/String;->hashCode()I
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v5
-
-    .line 43
-    sparse-switch v5, :sswitch_data_0
-
-    .line 44
-    .line 45
-    .line 46
-    goto :goto_1
-
-    .line 47
-    :sswitch_0
-    const-string v5, "carousel_size"
-
-    .line 48
-    .line 49
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 50
-    .line 51
-    .line 52
-    move-result v3
-
-    .line 53
-    if-nez v3, :cond_2
-
-    .line 54
-    .line 55
-    goto :goto_1
-
-    .line 56
-    :cond_2
-    const/4 v4, 0x4
-
-    .line 57
-    goto :goto_1
-
-    .line 58
-    :sswitch_1
-    const-string v5, "filter_impressions"
-
-    .line 59
-    .line 60
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 61
-    .line 62
-    .line 63
-    move-result v3
-
-    .line 64
-    if-nez v3, :cond_3
-
-    .line 65
-    .line 66
-    goto :goto_1
-
-    .line 67
-    :cond_3
-    const/4 v4, 0x3
-
-    .line 68
-    goto :goto_1
-
-    .line 69
-    :sswitch_2
-    const-string v5, "snap_creation_info"
-
-    .line 70
-    .line 71
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 72
-    .line 73
-    .line 74
-    move-result v3
-
-    .line 75
-    if-nez v3, :cond_4
-
-    .line 76
-    .line 77
-    goto :goto_1
-
-    .line 78
-    :cond_4
-    const/4 v4, 0x2
-
-    .line 79
-    goto :goto_1
-
-    .line 80
-    :sswitch_3
-    const-string v5, "snap_session_id"
-
-    .line 81
-    .line 82
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 83
-    .line 84
-    .line 85
-    move-result v3
-
-    .line 86
-    if-nez v3, :cond_5
-
-    .line 87
-    .line 88
-    goto :goto_1
-
-    .line 89
-    :cond_5
-    const/4 v4, 0x1
-
-    .line 90
-    goto :goto_1
-
-    .line 91
-    :sswitch_4
-    const-string v5, "device_info"
-
-    .line 92
-    .line 93
-    invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 94
-    .line 95
-    .line 96
-    move-result v3
-
-    .line 97
-    if-nez v3, :cond_6
-
-    .line 98
-    .line 99
-    goto :goto_1
-
-    .line 100
-    :cond_6
-    const/4 v4, 0x0
-
-    .line 101
-    :goto_1
-    packed-switch v4, :pswitch_data_0
-
-    .line 102
-    .line 103
-    .line 104
-    invoke-virtual {p1}, LDB9;->K()V
-
-    .line 105
-    .line 106
-    .line 107
-    goto :goto_0
-
-    .line 108
-    :pswitch_0
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v3
-
-    .line 112
-    if-ne v3, v2, :cond_7
-
-    .line 113
-    .line 114
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 115
-    .line 116
-    .line 117
-    goto :goto_0
-
-    .line 118
-    :cond_7
-    invoke-virtual {p1}, LDB9;->q()J
-
-    .line 119
-    .line 120
-    .line 121
-    move-result-wide v3
-
-    .line 122
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    .line 123
-    .line 124
-    .line 125
-    move-result-object v3
-
-    .line 126
-    iput-object v3, v1, Lor7;->c:Ljava/lang/Long;
-
-    .line 127
-    .line 128
-    goto :goto_0
-
-    .line 129
-    :pswitch_1
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 130
-    .line 131
-    .line 132
-    move-result v3
-
-    .line 133
-    if-ne v3, v2, :cond_8
-
-    .line 134
-    .line 135
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 136
-    .line 137
-    .line 138
-    goto :goto_0
-
-    .line 139
-    :cond_8
-    if-ne v3, v0, :cond_1
-
-    .line 140
-    .line 141
-    invoke-static {p1}, Lkka;->g(LDB9;)Ljava/util/ArrayList;
-
-    .line 142
-    .line 143
-    .line 144
-    move-result-object v3
-
-    .line 145
-    iget-object v4, p0, Lpr7;->b:Lobi;
-
-    .line 146
-    .line 147
-    invoke-interface {v4}, Lobi;->get()Ljava/lang/Object;
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-object v4
-
-    .line 151
-    check-cast v4, LUVi;
-
-    .line 152
-    .line 153
-    :goto_2
-    invoke-virtual {p1}, LDB9;->i()Z
-
-    .line 154
-    .line 155
-    .line 156
-    move-result v5
-
-    .line 157
-    if-eqz v5, :cond_a
-
-    .line 158
-    .line 159
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 160
-    .line 161
-    .line 162
-    move-result v5
-
-    .line 163
-    if-ne v5, v2, :cond_9
-
-    .line 164
-    .line 165
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 166
-    .line 167
-    .line 168
-    goto :goto_2
-
-    .line 169
-    :cond_9
-    invoke-virtual {v4, p1}, LUVi;->read(LDB9;)Ljava/lang/Object;
-
-    .line 170
-    .line 171
-    .line 172
-    move-result-object v5
-
-    .line 173
-    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 174
-    .line 175
-    .line 176
-    goto :goto_2
-
-    .line 177
-    :cond_a
-    invoke-virtual {p1}, LDB9;->f()V
-
-    .line 178
-    .line 179
-    .line 180
-    iput-object v3, v1, Lor7;->d:Ljava/util/List;
-
-    .line 181
-    .line 182
-    goto/16 :goto_0
-
-    .line 183
-    .line 184
-    :pswitch_2
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 185
-    .line 186
-    .line 187
-    move-result v3
-
-    .line 188
-    if-ne v3, v2, :cond_b
-
-    .line 189
-    .line 190
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 191
-    .line 192
-    .line 193
-    goto/16 :goto_0
-
-    .line 194
-    .line 195
-    :cond_b
-    iget-object v3, p0, Lpr7;->c:Lobi;
-
-    .line 196
-    .line 197
-    invoke-interface {v3}, Lobi;->get()Ljava/lang/Object;
-
-    .line 198
-    .line 199
-    .line 200
-    move-result-object v3
-
-    .line 201
-    check-cast v3, LUVi;
-
-    .line 202
-    .line 203
-    invoke-virtual {v3, p1}, LUVi;->read(LDB9;)Ljava/lang/Object;
-
-    .line 204
-    .line 205
-    .line 206
-    move-result-object v3
-
-    .line 207
-    check-cast v3, LbBg;
-
-    .line 208
-    .line 209
-    iput-object v3, v1, Lor7;->a:LbBg;
-
-    .line 210
-    .line 211
-    goto/16 :goto_0
-
-    .line 212
-    .line 213
-    :pswitch_3
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 214
-    .line 215
-    .line 216
-    move-result v3
-
-    .line 217
-    if-ne v3, v2, :cond_c
-
-    .line 218
-    .line 219
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 220
-    .line 221
-    .line 222
-    goto/16 :goto_0
-
-    .line 223
-    .line 224
-    :cond_c
-    const/16 v4, 0x8
-
-    .line 225
-    .line 226
-    if-ne v3, v4, :cond_d
-
-    .line 227
-    .line 228
-    invoke-virtual {p1}, LDB9;->n()Z
-
-    .line 229
-    .line 230
-    .line 231
-    move-result v3
-
-    .line 232
-    invoke-static {v3}, Ljava/lang/Boolean;->toString(Z)Ljava/lang/String;
-
-    .line 233
-    .line 234
-    .line 235
-    move-result-object v3
-
-    .line 236
-    goto :goto_3
-
-    .line 237
-    :cond_d
-    invoke-virtual {p1}, LDB9;->A()Ljava/lang/String;
-
-    .line 238
-    .line 239
-    .line 240
-    move-result-object v3
-
-    .line 241
-    :goto_3
-    iput-object v3, v1, Lor7;->b:Ljava/lang/String;
-
-    .line 242
-    .line 243
-    goto/16 :goto_0
-
-    .line 244
-    .line 245
-    :pswitch_4
-    invoke-virtual {p1}, LDB9;->C()I
-
-    .line 246
-    .line 247
-    .line 248
-    move-result v3
-
-    .line 249
-    if-ne v3, v2, :cond_e
-
-    .line 250
-    .line 251
-    invoke-virtual {p1}, LDB9;->y()V
-
-    .line 252
-    .line 253
-    .line 254
-    goto/16 :goto_0
-
-    .line 255
-    .line 256
-    :cond_e
-    iget-object v3, p0, Lpr7;->a:Lobi;
-
-    .line 257
-    .line 258
-    invoke-interface {v3}, Lobi;->get()Ljava/lang/Object;
-
-    .line 259
-    .line 260
-    .line 261
-    move-result-object v3
-
-    .line 262
-    check-cast v3, LUVi;
-
-    .line 263
-    .line 264
-    invoke-virtual {v3, p1}, LUVi;->read(LDB9;)Ljava/lang/Object;
-
-    .line 265
-    .line 266
-    .line 267
-    move-result-object v3
-
-    .line 268
-    check-cast v3, LL56;
-
-    .line 269
-    .line 270
-    iput-object v3, v1, Lor7;->e:LL56;
-
-    .line 271
-    .line 272
-    goto/16 :goto_0
-
-    .line 273
-    .line 274
-    :cond_f
-    invoke-virtual {p1}, LDB9;->g()V
-
-    .line 275
-    .line 276
-    .line 277
-    return-object v1
-
-    .line 278
-    nop
-
-    .line 279
-    :sswitch_data_0
-    .sparse-switch
-        -0x5bfb7b09 -> :sswitch_4
-        -0x33d89d07 -> :sswitch_3
-        0x33f7a59 -> :sswitch_2
-        0x55696543 -> :sswitch_1
-        0x6aaa1380 -> :sswitch_0
-    .end sparse-switch
-
-    .line 280
-    .line 281
-    .line 282
-    .line 283
-    .line 284
-    .line 285
-    .line 286
-    .line 287
-    .line 288
-    .line 289
-    .line 290
-    .line 291
-    .line 292
-    .line 293
-    .line 294
-    .line 295
-    .line 296
-    .line 297
-    .line 298
-    .line 299
-    .line 300
-    .line 301
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public b(LaC9;Lor7;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    if-nez p2, :cond_0
+    iget v0, p0, Lpr7;->a:I
 
     .line 2
     .line 3
-    invoke-virtual {p1}, LaC9;->j()LaC9;
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
-
-    .line 7
-    :cond_0
-    const/4 v0, 0x1
-
-    .line 8
-    iput-boolean v0, p1, LaC9;->Y:Z
-
-    .line 9
-    .line 10
-    invoke-virtual {p1}, LaC9;->c()V
-
-    .line 11
-    .line 12
-    .line 13
-    iget-object v0, p2, Lor7;->a:LbBg;
-
-    .line 14
-    .line 15
-    if-eqz v0, :cond_1
-
-    .line 16
-    .line 17
-    const-string v0, "snap_creation_info"
-
-    .line 18
-    .line 19
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
-
-    .line 20
-    .line 21
-    .line 22
-    iget-object v0, p0, Lpr7;->c:Lobi;
-
-    .line 23
-    .line 24
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v0
-
-    .line 28
-    check-cast v0, LUVi;
-
-    .line 29
-    .line 30
-    iget-object v1, p2, Lor7;->a:LbBg;
-
-    .line 31
-    .line 32
-    invoke-virtual {v0, p1, v1}, LUVi;->write(LaC9;Ljava/lang/Object;)V
-
-    .line 33
-    .line 34
-    .line 35
-    :cond_1
-    iget-object v0, p2, Lor7;->b:Ljava/lang/String;
-
-    .line 36
-    .line 37
-    if-eqz v0, :cond_2
-
-    .line 38
-    .line 39
-    const-string v0, "snap_session_id"
-
-    .line 40
-    .line 41
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
-
-    .line 42
-    .line 43
-    .line 44
-    iget-object v0, p2, Lor7;->b:Ljava/lang/String;
-
-    .line 45
-    .line 46
-    invoke-virtual {p1, v0}, LaC9;->p(Ljava/lang/String;)LaC9;
-
-    .line 47
-    .line 48
-    .line 49
-    :cond_2
-    iget-object v0, p2, Lor7;->c:Ljava/lang/Long;
-
-    .line 50
-    .line 51
-    if-eqz v0, :cond_3
-
-    .line 52
-    .line 53
-    const-string v0, "carousel_size"
-
-    .line 54
-    .line 55
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
-
-    .line 56
-    .line 57
-    .line 58
-    iget-object v0, p2, Lor7;->c:Ljava/lang/Long;
-
-    .line 59
-    .line 60
-    invoke-virtual {p1, v0}, LaC9;->x(Ljava/lang/Number;)V
-
-    .line 61
-    .line 62
-    .line 63
-    :cond_3
-    iget-object v0, p2, Lor7;->d:Ljava/util/List;
-
-    .line 64
-    .line 65
-    if-eqz v0, :cond_5
-
-    .line 66
-    .line 67
-    const-string v0, "filter_impressions"
-
-    .line 68
-    .line 69
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
-
-    .line 70
-    .line 71
-    .line 72
-    iget-object v0, p0, Lpr7;->b:Lobi;
-
-    .line 73
-    .line 74
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object v0
-
-    .line 78
-    check-cast v0, LUVi;
-
-    .line 79
-    .line 80
-    invoke-virtual {p1}, LaC9;->b()V
-
-    .line 81
-    .line 82
-    .line 83
-    iget-object v1, p2, Lor7;->d:Ljava/util/List;
-
-    .line 84
-    .line 85
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object v1
-
-    .line 89
-    :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 90
-    .line 91
-    .line 92
-    move-result v2
-
-    .line 93
-    if-eqz v2, :cond_4
-
-    .line 94
-    .line 95
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-object v2
-
-    .line 99
-    check-cast v2, Lcs7;
-
-    .line 100
-    .line 101
-    invoke-virtual {v0, p1, v2}, LUVi;->write(LaC9;Ljava/lang/Object;)V
-
-    .line 102
-    .line 103
-    .line 104
-    goto :goto_0
-
-    .line 105
-    :cond_4
-    invoke-virtual {p1}, LaC9;->f()V
-
-    .line 106
-    .line 107
-    .line 108
-    :cond_5
-    iget-object v0, p2, Lor7;->e:LL56;
-
-    .line 109
-    .line 110
-    if-eqz v0, :cond_6
-
-    .line 111
-    .line 112
-    const-string v0, "device_info"
-
-    .line 113
-    .line 114
-    invoke-virtual {p1, v0}, LaC9;->h(Ljava/lang/String;)LaC9;
-
-    .line 115
-    .line 116
-    .line 117
-    iget-object v0, p0, Lpr7;->a:Lobi;
-
-    .line 118
-    .line 119
-    invoke-interface {v0}, Lobi;->get()Ljava/lang/Object;
-
-    .line 120
-    .line 121
-    .line 122
-    move-result-object v0
-
-    .line 123
-    check-cast v0, LUVi;
-
-    .line 124
-    .line 125
-    iget-object p2, p2, Lor7;->e:LL56;
-
-    .line 126
-    .line 127
-    invoke-virtual {v0, p1, p2}, LUVi;->write(LaC9;Ljava/lang/Object;)V
-
-    .line 128
-    .line 129
-    .line 130
-    :cond_6
-    invoke-virtual {p1}, LaC9;->g()V
-
-    .line 131
-    .line 132
-    .line 133
-    return-void
-.end method
-
-.method public bridge synthetic read(LDB9;)Ljava/lang/Object;
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0, p1}, Lpr7;->a(LDB9;)Lor7;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p1
-
-    .line 5
-    return-object p1
-.end method
-
-.method public bridge synthetic write(LaC9;Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    check-cast p2, Lor7;
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, p1, p2}, Lpr7;->b(LaC9;Lor7;)V
-
-    .line 4
-    .line 5
-    .line 6
-    return-void
+    return v0
 .end method

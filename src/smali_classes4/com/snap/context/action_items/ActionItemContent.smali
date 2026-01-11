@@ -1,10 +1,10 @@
 .class public final Lcom/snap/context/action_items/ActionItemContent;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'title\':s,\'subtitles\':a?<s>,\'image\':r?:\'[0]\',\'preferredComposition\':r<e>:\'[1]\',\'preferedStyling\':r?:\'[2]\'"
     typeReferences = {

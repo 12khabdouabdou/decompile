@@ -6,7 +6,7 @@
 # static fields
 .field public static final f0:[I
 
-.field public static final g0:LLRi;
+.field public static final g0:Lu1j;
 
 
 # instance fields
@@ -16,7 +16,7 @@
 
 .field public final c:Landroid/graphics/Rect;
 
-.field public final e0:LBh2;
+.field public final e0:LBe2;
 
 .field public final t:Landroid/graphics/Rect;
 
@@ -43,20 +43,20 @@
 
     .line 9
     .line 10
-    new-instance v0, LLRi;
+    new-instance v0, Lu1j;
 
     .line 11
     .line 12
-    const/16 v1, 0xc
+    const/16 v1, 0xb
 
     .line 13
     .line 14
-    invoke-direct {v0, v1}, LLRi;-><init>(I)V
+    invoke-direct {v0, v1}, Lu1j;-><init>(I)V
 
     .line 15
     .line 16
     .line 17
-    sput-object v0, Landroidx/cardview/widget/CardView;->g0:LLRi;
+    sput-object v0, Landroidx/cardview/widget/CardView;->g0:Lu1j;
 
     .line 18
     .line 19
@@ -77,7 +77,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x7f0400bb
+    const v0, 0x7f0400c3
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Landroidx/cardview/widget/CardView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -106,16 +106,16 @@
     iput-object v1, p0, Landroidx/cardview/widget/CardView;->t:Landroid/graphics/Rect;
 
     .line 6
-    new-instance v1, LBh2;
+    new-instance v1, LBe2;
 
-    invoke-direct {v1, p0}, LBh2;-><init>(Landroidx/cardview/widget/CardView;)V
+    invoke-direct {v1, p0}, LBe2;-><init>(Landroidx/cardview/widget/CardView;)V
 
-    iput-object v1, p0, Landroidx/cardview/widget/CardView;->e0:LBh2;
+    iput-object v1, p0, Landroidx/cardview/widget/CardView;->e0:LBe2;
 
     .line 7
-    sget-object v2, Lxve;->a:[I
+    sget-object v2, LfNe;->a:[I
 
-    const v3, 0x7f14015a
+    const v3, 0x7f14015d
 
     invoke-virtual {p1, p2, v2, p3, v3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -181,7 +181,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f060052
+    const p3, 0x7f060059
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -195,7 +195,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f060051
+    const p3, 0x7f060058
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getColor(I)I
 
@@ -309,15 +309,15 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 32
-    sget-object p1, Landroidx/cardview/widget/CardView;->g0:LLRi;
+    sget-object p1, Landroidx/cardview/widget/CardView;->g0:Lu1j;
 
     .line 33
-    new-instance v0, LX9f;
+    new-instance v0, Lnsf;
 
-    invoke-direct {v0, p2, v2}, LX9f;-><init>(Landroid/content/res/ColorStateList;F)V
+    invoke-direct {v0, p2, v2}, Lnsf;-><init>(Landroid/content/res/ColorStateList;F)V
 
     .line 34
-    iput-object v0, v1, LBh2;->b:Ljava/lang/Object;
+    iput-object v0, v1, LBe2;->b:Ljava/lang/Object;
 
     .line 35
     invoke-virtual {p0, v0}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
@@ -329,25 +329,25 @@
     invoke-virtual {p0, v4}, Landroid/view/View;->setElevation(F)V
 
     .line 38
-    iget-object p2, v1, LBh2;->b:Ljava/lang/Object;
+    iget-object p2, v1, LBe2;->b:Ljava/lang/Object;
 
     check-cast p2, Landroid/graphics/drawable/Drawable;
 
     .line 39
-    check-cast p2, LX9f;
+    check-cast p2, Lnsf;
 
     .line 40
-    iget v0, p2, LX9f;->e:F
+    iget v0, p2, Lnsf;->e:F
 
     cmpl-float v0, p3, v0
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p2, LX9f;->f:Z
+    iget-boolean v0, p2, Lnsf;->f:Z
 
     if-ne v0, v5, :cond_3
 
-    iget-boolean v0, p2, LX9f;->g:Z
+    iget-boolean v0, p2, Lnsf;->g:Z
 
     if-ne v0, v6, :cond_3
 
@@ -355,25 +355,25 @@
 
     .line 41
     :cond_3
-    iput p3, p2, LX9f;->e:F
+    iput p3, p2, Lnsf;->e:F
 
     .line 42
-    iput-boolean v5, p2, LX9f;->f:Z
+    iput-boolean v5, p2, Lnsf;->f:Z
 
     .line 43
-    iput-boolean v6, p2, LX9f;->g:Z
+    iput-boolean v6, p2, Lnsf;->g:Z
 
     const/4 p3, 0x0
 
     .line 44
-    invoke-virtual {p2, p3}, LX9f;->b(Landroid/graphics/Rect;)V
+    invoke-virtual {p2, p3}, Lnsf;->b(Landroid/graphics/Rect;)V
 
     .line 45
     invoke-virtual {p2}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     .line 46
     :goto_2
-    invoke-virtual {p1, v1}, LLRi;->x(LBh2;)V
+    invoke-virtual {p1, v1}, Lu1j;->h(LBe2;)V
 
     return-void
 .end method
@@ -392,6 +392,62 @@
 
 
 # virtual methods
+.method public final b(F)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroidx/cardview/widget/CardView;->e0:LBe2;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, LBe2;->b:Ljava/lang/Object;
+
+    .line 4
+    .line 5
+    check-cast v0, Landroid/graphics/drawable/Drawable;
+
+    .line 6
+    .line 7
+    check-cast v0, Lnsf;
+
+    .line 8
+    .line 9
+    iget v1, v0, Lnsf;->a:F
+
+    .line 10
+    .line 11
+    cmpl-float v1, p1, v1
+
+    .line 12
+    .line 13
+    if-nez v1, :cond_0
+
+    .line 14
+    .line 15
+    return-void
+
+    .line 16
+    :cond_0
+    iput p1, v0, Lnsf;->a:F
+
+    .line 17
+    .line 18
+    const/4 p1, 0x0
+
+    .line 19
+    invoke-virtual {v0, p1}, Lnsf;->b(Landroid/graphics/Rect;)V
+
+    .line 20
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
+
+    .line 23
+    .line 24
+    .line 25
+    return-void
+.end method
+
 .method public onMeasure(II)V
     .locals 0
 

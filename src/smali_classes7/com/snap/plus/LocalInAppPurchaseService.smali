@@ -7,16 +7,16 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lewa;
+    proxyClass = LzIa;
     schema = "\'getAvailibility\':f|m|(f(r<e>:\'[0]\')),\'fetchProducts\':f|m|(f(r?:\'[1]\', r?:\'[2]\')),\'fetchReferralProducts\':f?|m|(s): p<r:\'[3]\'>,\'restorePurchases\':f|m|(f(r<e>:\'[4]\'))"
     typeReferences = {
         Lcom/snap/plus/AvailabilityState;,
-        Lil7;,
+        Lhq7;,
         Lcom/snap/composer/foundation/Error;,
-        Lkl7;,
-        Lcom/snap/plus/RestoreResult;
+        Ljq7;,
+        Lcom/snap/modules/plus_api/RestoreResult;
     }
 .end annotation
 
@@ -33,18 +33,18 @@
 .end method
 
 .method public abstract fetchReferralProducts(Ljava/lang/String;)Lcom/snap/composer/promise/Promise;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Lkl7;",
+            "Ljq7;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

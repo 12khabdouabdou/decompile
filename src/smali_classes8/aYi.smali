@@ -1,66 +1,31 @@
 .class public final LaYi;
-.super Lo17;
+.super LnXi;
 .source "SourceFile"
 
 
+# instance fields
+.field public final b:I
+
+.field public final c:Ljava/lang/Integer;
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(ILjava/lang/Integer;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    invoke-direct {p0, p3}, LnXi;-><init>(Ljava/lang/String;)V
 
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    iput p1, p0, LaYi;->b:I
 
     .line 5
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
-
     .line 6
+    iput-object p2, p0, LaYi;->c:Ljava/lang/Integer;
+
     .line 7
-    const/4 v0, -0x1
-
     .line 8
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
-
-    .line 9
-    .line 10
     return-void
-.end method
-
-
-# virtual methods
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 1
-
-    .line 1
-    :cond_0
-    invoke-virtual {p1}, Lqa3;->u()I
-
-    .line 2
-    .line 3
-    .line 4
-    move-result v0
-
-    .line 5
-    if-eqz v0, :cond_1
-
-    .line 6
-    .line 7
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    if-nez v0, :cond_0
-
-    .line 12
-    .line 13
-    :cond_1
-    return-object p0
 .end method

@@ -1,581 +1,671 @@
-.class public final LSq2;
+.class public abstract synthetic LSq2;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:I
-
-.field public final c:Lu09;
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:LU3a;
-
-.field public final f:Ljava/lang/String;
-
-.field public final g:Ljava/lang/String;
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ILu09;Ljava/lang/String;LU3a;Ljava/lang/String;Ljava/lang/String;)V
+.method public static a(ILeni;)F
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    packed-switch p0, :pswitch_data_0
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LSq2;->a:Ljava/lang/String;
+    iget p0, p1, Leni;->e:F
 
     .line 5
     .line 6
-    iput p2, p0, LSq2;->b:I
+    return p0
 
     .line 7
-    .line 8
-    iput-object p3, p0, LSq2;->c:Lu09;
+    :pswitch_0
+    iget p0, p1, Leni;->p:F
 
+    .line 8
     .line 9
+    return p0
+
     .line 10
-    iput-object p4, p0, LSq2;->d:Ljava/lang/String;
+    :pswitch_1
+    iget p0, p1, Leni;->o:F
 
     .line 11
     .line 12
-    iput-object p5, p0, LSq2;->e:LU3a;
+    return p0
 
     .line 13
-    .line 14
-    iput-object p6, p0, LSq2;->f:Ljava/lang/String;
+    :pswitch_2
+    iget p0, p1, Leni;->n:F
 
+    .line 14
     .line 15
+    return p0
+
     .line 16
-    iput-object p7, p0, LSq2;->g:Ljava/lang/String;
+    :pswitch_3
+    iget p0, p1, Leni;->m:F
 
     .line 17
     .line 18
-    return-void
+    return p0
+
+    .line 19
+    :pswitch_4
+    iget p0, p1, Leni;->l:F
+
+    .line 20
+    .line 21
+    return p0
+
+    .line 22
+    :pswitch_5
+    iget p0, p1, Leni;->k:I
+
+    .line 23
+    .line 24
+    int-to-float p0, p0
+
+    .line 25
+    return p0
+
+    .line 26
+    :pswitch_6
+    iget p0, p1, Leni;->g:F
+
+    .line 27
+    .line 28
+    return p0
+
+    .line 29
+    :pswitch_7
+    iget p0, p1, Leni;->j:F
+
+    .line 30
+    .line 31
+    return p0
+
+    .line 32
+    :pswitch_8
+    iget p0, p1, Leni;->a:F
+
+    .line 33
+    .line 34
+    return p0
+
+    .line 35
+    :pswitch_9
+    iget p0, p1, Leni;->c:F
+
+    .line 36
+    .line 37
+    return p0
+
+    .line 38
+    :pswitch_a
+    iget p0, p1, Leni;->b:F
+
+    .line 39
+    .line 40
+    return p0
+
+    .line 41
+    :pswitch_b
+    iget p0, p1, Leni;->d:F
+
+    .line 42
+    .line 43
+    return p0
+
+    .line 44
+    :pswitch_c
+    iget p0, p1, Leni;->f:F
+
+    .line 45
+    .line 46
+    return p0
+
+    .line 47
+    :pswitch_d
+    iget p0, p1, Leni;->i:F
+
+    .line 48
+    .line 49
+    return p0
+
+    .line 50
+    :pswitch_e
+    iget p0, p1, Leni;->h:F
+
+    .line 51
+    .line 52
+    return p0
+
+    .line 53
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method
 
+.method public static final b(I)LY79;
+    .locals 1
 
-# virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+    .line 1
+    new-instance v0, LY79;
+
+    .line 2
+    .line 3
+    packed-switch p0, :pswitch_data_0
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 p0, 0x0
+
+    .line 7
+    throw p0
+
+    .line 8
+    :pswitch_0
+    const-string p0, "SHOW_LOADING_INDICATOR"
+
+    .line 9
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :pswitch_1
+    const-string p0, "SHOW_LENSES_PLUS_TIER_FREEMIUM"
+
+    .line 12
+    .line 13
+    goto :goto_0
+
+    .line 14
+    :pswitch_2
+    const-string p0, "SHOW_LENSES_PLUS_TIER_DAILY_LIMIT_REACHED"
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :pswitch_3
+    const-string p0, "SHOW_LENSES_PLUS_TIER_JOIN_FOR_MORE"
+
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :pswitch_4
+    const-string p0, "SHOW_LENSES_PLUS_TIER"
+
+    .line 21
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :pswitch_5
+    const-string p0, "SHOW_LENSES_PLATINUM_TIER"
+
+    .line 24
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :pswitch_6
+    const-string p0, "SHOW_LENSES_PLUS_UPSELL"
+
+    .line 27
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :pswitch_7
+    const-string p0, "SHOW_AR_BAR_SNAP_PLUS_UPSELL"
+
+    .line 30
+    .line 31
+    goto :goto_0
+
+    .line 32
+    :pswitch_8
+    const-string p0, "SHOW_EMPTY_STATE_LENS_EXPLORER"
+
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :pswitch_9
+    const-string p0, "SHOW_LENS_EXPLORER"
+
+    .line 36
+    .line 37
+    :goto_0
+    invoke-direct {v0, p0}, LY79;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    return-object v0
+
+    .line 41
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static synthetic c(I)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    packed-switch p0, :pswitch_data_0
+
+    const/4 p0, 0x0
+
+    throw p0
+
+    :pswitch_0
+    const-string p0, "qualified_long_impression_score"
+
+    return-object p0
+
+    :pswitch_1
+    const-string p0, "total_impression_time"
+
+    return-object p0
+
+    :pswitch_2
+    const-string p0, "total_watch_time"
+
+    return-object p0
+
+    :pswitch_3
+    const-string p0, "num_snaps_viewed"
+
+    return-object p0
+
+    :pswitch_4
+    const-string p0, "total_impression_time_on_latest_version"
+
+    return-object p0
+
+    :pswitch_5
+    const-string p0, "total_watch_time_on_latest_version"
+
+    return-object p0
+
+    :pswitch_6
+    const-string p0, "num_snaps_viewed_from_latest_version"
+
+    return-object p0
+
+    :pswitch_7
+    const-string p0, "view_utility"
+
+    return-object p0
+
+    :pswitch_8
+    const-string p0, "unfavorite_timestamp"
+
+    return-object p0
+
+    :pswitch_9
+    const-string p0, "short_views_score"
+
+    return-object p0
+
+    :pswitch_a
+    const-string p0, "short_impressions_score"
+
+    return-object p0
+
+    :pswitch_b
+    const-string p0, "long_views_score"
+
+    return-object p0
+
+    :pswitch_c
+    const-string p0, "long_impressions_score"
+
+    return-object p0
+
+    :pswitch_d
+    const-string p0, "impression_utility"
+
+    return-object p0
+
+    :pswitch_e
+    const-string p0, "hide_timestamp"
+
+    return-object p0
+
+    :pswitch_f
+    const-string p0, "favorite_timestamp"
+
+    return-object p0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_f
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static d(IILsod;)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p2}, Ljava/lang/Object;->hashCode()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p2
+
+    .line 5
+    add-int/2addr p2, p0
+
+    .line 6
+    mul-int p2, p2, p1
+
+    .line 7
+    .line 8
+    return p2
+.end method
+
+.method public static e(LxM4;II)I
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    .line 2
+    .line 3
+    .line 4
+    move-result p0
+
+    .line 5
+    add-int/2addr p0, p1
+
+    .line 6
+    mul-int p0, p0, p2
+
+    .line 7
+    .line 8
+    return p0
+.end method
+
+.method public static f(Landroidx/recyclerview/widget/RecyclerView;Ljava/lang/StringBuilder;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView;->H()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+
+    .line 12
+    return-object p0
+.end method
+
+.method public static synthetic g(I)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    packed-switch p0, :pswitch_data_0
+
+    const/4 p0, 0x0
+
+    throw p0
+
+    :pswitch_0
+    const-string p0, "B81_OR_MORE"
+
+    return-object p0
+
+    :pswitch_1
+    const-string p0, "B41_80"
+
+    return-object p0
+
+    :pswitch_2
+    const-string p0, "B21_40"
+
+    return-object p0
+
+    :pswitch_3
+    const-string p0, "B11_20"
+
+    return-object p0
+
+    :pswitch_4
+    const-string p0, "B6_10"
+
+    return-object p0
+
+    :pswitch_5
+    const-string p0, "B1_5"
+
+    return-object p0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method public static synthetic h(I)Ljava/lang/String;
+    .locals 1
 
     .line 1
     const/4 v0, 0x1
 
-    .line 2
-    if-ne p0, p1, :cond_0
+    if-eq p0, v0, :cond_2
 
-    .line 3
-    .line 4
-    return v0
+    const/4 v0, 0x2
 
-    .line 5
+    if-eq p0, v0, :cond_1
+
+    const/4 v0, 0x3
+
+    if-eq p0, v0, :cond_0
+
+    const-string p0, "null"
+
+    return-object p0
+
     :cond_0
-    instance-of v1, p1, LSq2;
+    const-string p0, "FF_CAROUSEL_5_TAB"
 
-    .line 6
-    .line 7
-    const/4 v2, 0x0
+    return-object p0
 
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
     :cond_1
-    check-cast p1, LSq2;
+    const-string p0, "MIXED_CAROUSEL"
 
-    .line 12
-    .line 13
-    iget-object v1, p1, LSq2;->a:Ljava/lang/String;
+    return-object p0
 
-    .line 14
-    .line 15
-    iget-object v3, p0, LSq2;->a:Ljava/lang/String;
-
-    .line 16
-    .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-nez v1, :cond_2
-
-    .line 22
-    .line 23
-    return v2
-
-    .line 24
     :cond_2
-    iget v1, p0, LSq2;->b:I
+    const-string p0, "DEFAULT"
 
-    .line 25
-    .line 26
-    iget v3, p1, LSq2;->b:I
-
-    .line 27
-    .line 28
-    if-eq v1, v3, :cond_3
-
-    .line 29
-    .line 30
-    return v2
-
-    .line 31
-    :cond_3
-    iget-object v1, p0, LSq2;->c:Lu09;
-
-    .line 32
-    .line 33
-    iget-object v3, p1, LSq2;->c:Lu09;
-
-    .line 34
-    .line 35
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v1
-
-    .line 39
-    if-nez v1, :cond_4
-
-    .line 40
-    .line 41
-    return v2
-
-    .line 42
-    :cond_4
-    iget-object v1, p0, LSq2;->d:Ljava/lang/String;
-
-    .line 43
-    .line 44
-    iget-object v3, p1, LSq2;->d:Ljava/lang/String;
-
-    .line 45
-    .line 46
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v1
-
-    .line 50
-    if-nez v1, :cond_5
-
-    .line 51
-    .line 52
-    return v2
-
-    .line 53
-    :cond_5
-    iget-object v1, p0, LSq2;->e:LU3a;
-
-    .line 54
-    .line 55
-    iget-object v3, p1, LSq2;->e:LU3a;
-
-    .line 56
-    .line 57
-    if-eq v1, v3, :cond_6
-
-    .line 58
-    .line 59
-    return v2
-
-    .line 60
-    :cond_6
-    iget-object v1, p0, LSq2;->f:Ljava/lang/String;
-
-    .line 61
-    .line 62
-    iget-object v3, p1, LSq2;->f:Ljava/lang/String;
-
-    .line 63
-    .line 64
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 65
-    .line 66
-    .line 67
-    move-result v1
-
-    .line 68
-    if-nez v1, :cond_7
-
-    .line 69
-    .line 70
-    return v2
-
-    .line 71
-    :cond_7
-    iget-object v1, p0, LSq2;->g:Ljava/lang/String;
-
-    .line 72
-    .line 73
-    iget-object p1, p1, LSq2;->g:Ljava/lang/String;
-
-    .line 74
-    .line 75
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 76
-    .line 77
-    .line 78
-    move-result p1
-
-    .line 79
-    if-nez p1, :cond_8
-
-    .line 80
-    .line 81
-    return v2
-
-    .line 82
-    :cond_8
-    return v0
+    return-object p0
 .end method
 
-.method public final hashCode()I
-    .locals 3
+.method public static synthetic i(I)Ljava/lang/String;
+    .locals 1
 
     .line 1
-    iget-object v0, p0, LSq2;->a:Ljava/lang/String;
+    const/4 v0, 0x1
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    if-eq p0, v0, :cond_1
 
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
+    const/4 v0, 0x2
 
-    .line 7
-    mul-int/lit8 v0, v0, 0x1f
+    if-eq p0, v0, :cond_0
 
-    .line 8
-    .line 9
-    iget v1, p0, LSq2;->b:I
+    const-string p0, "null"
 
-    .line 10
-    .line 11
-    add-int/2addr v0, v1
+    return-object p0
 
-    .line 12
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 13
-    .line 14
-    const/4 v1, 0x0
-
-    .line 15
-    iget-object v2, p0, LSq2;->c:Lu09;
-
-    .line 16
-    .line 17
-    if-nez v2, :cond_0
-
-    .line 18
-    .line 19
-    const/4 v2, 0x0
-
-    .line 20
-    goto :goto_0
-
-    .line 21
     :cond_0
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    const-string p0, "LANDING"
 
-    .line 22
-    .line 23
-    .line 24
-    move-result v2
+    return-object p0
 
-    .line 25
-    :goto_0
-    add-int/2addr v0, v2
-
-    .line 26
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 27
-    .line 28
-    iget-object v2, p0, LSq2;->d:Ljava/lang/String;
-
-    .line 29
-    .line 30
-    if-nez v2, :cond_1
-
-    .line 31
-    .line 32
-    const/4 v2, 0x0
-
-    .line 33
-    goto :goto_1
-
-    .line 34
     :cond_1
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+    const-string p0, "TAKEOFF"
 
-    .line 35
-    .line 36
-    .line 37
-    move-result v2
-
-    .line 38
-    :goto_1
-    add-int/2addr v0, v2
-
-    .line 39
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 40
-    .line 41
-    iget-object v2, p0, LSq2;->e:LU3a;
-
-    .line 42
-    .line 43
-    if-nez v2, :cond_2
-
-    .line 44
-    .line 45
-    const/4 v2, 0x0
-
-    .line 46
-    goto :goto_2
-
-    .line 47
-    :cond_2
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    .line 48
-    .line 49
-    .line 50
-    move-result v2
-
-    .line 51
-    :goto_2
-    add-int/2addr v0, v2
-
-    .line 52
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 53
-    .line 54
-    iget-object v2, p0, LSq2;->f:Ljava/lang/String;
-
-    .line 55
-    .line 56
-    if-nez v2, :cond_3
-
-    .line 57
-    .line 58
-    const/4 v2, 0x0
-
-    .line 59
-    goto :goto_3
-
-    .line 60
-    :cond_3
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
-
-    .line 61
-    .line 62
-    .line 63
-    move-result v2
-
-    .line 64
-    :goto_3
-    add-int/2addr v0, v2
-
-    .line 65
-    mul-int/lit8 v0, v0, 0x1f
-
-    .line 66
-    .line 67
-    iget-object v2, p0, LSq2;->g:Ljava/lang/String;
-
-    .line 68
-    .line 69
-    if-nez v2, :cond_4
-
-    .line 70
-    .line 71
-    goto :goto_4
-
-    .line 72
-    :cond_4
-    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
-
-    .line 73
-    .line 74
-    .line 75
-    move-result v1
-
-    .line 76
-    :goto_4
-    add-int/2addr v0, v1
-
-    .line 77
-    return v0
+    return-object p0
 .end method
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+.method public static synthetic j(I)Ljava/lang/String;
+    .locals 1
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x1
 
-    .line 2
-    .line 3
-    const-string v1, "CarouselSnapshotItem(itemId="
+    if-eq p0, v0, :cond_1
 
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    const/4 v0, 0x2
 
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LSq2;->a:Ljava/lang/String;
+    if-eq p0, v0, :cond_0
 
-    .line 9
-    .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p0, "null"
 
-    .line 11
-    .line 12
-    .line 13
-    const-string v1, ", itemIndexPos="
+    return-object p0
 
-    .line 14
-    .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_0
+    const-string p0, "EMAIL"
 
-    .line 16
-    .line 17
-    .line 18
-    iget v1, p0, LSq2;->b:I
+    return-object p0
 
-    .line 19
-    .line 20
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    :cond_1
+    const-string p0, "UNSET"
 
-    .line 21
-    .line 22
-    .line 23
-    const-string v1, ", mixerRequestId="
+    return-object p0
+.end method
 
-    .line 24
-    .line 25
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+.method public static synthetic k(I)Ljava/lang/String;
+    .locals 0
 
-    .line 26
-    .line 27
-    .line 28
-    iget-object v1, p0, LSq2;->c:Lu09;
+    .line 1
+    packed-switch p0, :pswitch_data_0
 
-    .line 29
-    .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    const-string p0, "null"
 
-    .line 31
-    .line 32
-    .line 33
-    const-string v1, ", adServeItemId="
+    return-object p0
 
-    .line 34
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_0
+    const-string p0, "AUDIO_NOTE"
 
-    .line 36
-    .line 37
-    .line 38
-    iget-object v1, p0, LSq2;->d:Ljava/lang/String;
+    return-object p0
 
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_1
+    const-string p0, "TEXT"
 
-    .line 41
-    .line 42
-    .line 43
-    const-string v1, ", lensType="
+    return-object p0
 
-    .line 44
-    .line 45
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_2
+    const-string p0, "OPEN_BLOOPS"
 
-    .line 46
-    .line 47
-    .line 48
-    iget-object v1, p0, LSq2;->e:LU3a;
+    return-object p0
 
-    .line 49
-    .line 50
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    :pswitch_3
+    const-string p0, "OPEN_BITMOJI_GREETINGS"
 
-    .line 51
-    .line 52
-    .line 53
-    const-string v1, ", checksum="
+    return-object p0
 
-    .line 54
-    .line 55
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_4
+    const-string p0, "STICKER"
 
-    .line 56
-    .line 57
-    .line 58
-    iget-object v1, p0, LSq2;->f:Ljava/lang/String;
+    return-object p0
 
-    .line 59
-    .line 60
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_5
+    const-string p0, "CAMERA"
 
-    .line 61
-    .line 62
-    .line 63
-    const-string v1, ", namespace="
+    return-object p0
 
-    .line 64
-    .line 65
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :pswitch_6
+    const-string p0, "GALLERY"
 
-    .line 66
-    .line 67
-    .line 68
-    iget-object v1, p0, LSq2;->g:Ljava/lang/String;
+    return-object p0
 
-    .line 69
-    .line 70
-    const-string v2, ")"
+    nop
 
-    .line 71
-    .line 72
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object v0
-
-    .line 76
-    return-object v0
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

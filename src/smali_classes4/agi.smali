@@ -1,627 +1,194 @@
 .class public final Lagi;
-.super Landroid/util/SparseArray;
+.super LtJe;
 .source "SourceFile"
 
 
+# instance fields
+.field public final X:D
+
+.field public final Y:J
+
+.field public final Z:J
+
+.field public final c:Z
+
+.field public final synthetic e0:LELb;
+
+.field public final t:J
+
+
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(LELb;ZJDJJLggh;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x3
+    iput-object p1, p0, Lagi;->e0:LELb;
 
     .line 2
-    invoke-direct {p0, v0}, Landroid/util/SparseArray;-><init>(I)V
-
     .line 3
+    const/4 p1, 0x3
+
     .line 4
+    invoke-direct {p0, p1, p11}, LpO0;-><init>(ILjava/lang/Object;)V
+
     .line 5
+    .line 6
+    .line 7
+    iput-boolean p2, p0, Lagi;->c:Z
+
+    .line 8
+    .line 9
+    iput-wide p3, p0, Lagi;->t:J
+
+    .line 10
+    .line 11
+    iput-wide p5, p0, Lagi;->X:D
+
+    .line 12
+    .line 13
+    iput-wide p7, p0, Lagi;->Y:J
+
+    .line 14
+    .line 15
+    iput-wide p9, p0, Lagi;->Z:J
+
+    .line 16
+    .line 17
     return-void
 .end method
 
 
 # virtual methods
-.method public final append(ILjava/lang/Object;)V
-    .locals 0
+.method public final B(LuE7;)V
+    .locals 2
 
     .line 1
-    check-cast p2, Landroid/util/SparseArray;
+    iget-object v0, p0, Lagi;->e0:LELb;
 
     .line 2
     .line 3
-    monitor-enter p0
+    const-string v1, "StoryInteractionSignals"
 
     .line 4
-    :try_start_0
-    invoke-static {p2}, LZfi;->a(Landroid/util/SparseArray;)LZfi;
-
     .line 5
+    filled-new-array {v1}, [Ljava/lang/String;
+
     .line 6
     .line 7
-    move-result-object p2
-
     .line 8
-    invoke-super {p0, p1, p2}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    move-result-object v1
 
     .line 9
+    iget-object v0, v0, Lvej;->a:Lkch;
+
     .line 10
     .line 11
-    monitor-exit p0
+    invoke-virtual {v0, p1, v1}, Lkch;->a(LuE7;[Ljava/lang/String;)V
 
     .line 12
-    return-void
-
     .line 13
-    :catchall_0
-    move-exception p1
-
     .line 14
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 15
-    throw p1
+    return-void
 .end method
 
-.method public final declared-synchronized clear()V
+.method public final C(LuE7;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lagi;->e0:LELb;
+
+    .line 2
+    .line 3
+    iget-object v0, v0, Lvej;->a:Lkch;
+
+    .line 4
+    .line 5
+    const-string v1, "StoryInteractionSignals"
+
+    .line 6
+    .line 7
+    filled-new-array {v1}, [Ljava/lang/String;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    invoke-virtual {v0, p1, v1}, Lkch;->h(LuE7;[Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+.end method
+
+.method public final p(Lkotlin/jvm/functions/Function1;)LJJe;
+    .locals 8
+
+    .line 1
+    iget-object v0, p0, Lagi;->e0:LELb;
+
+    .line 2
+    .line 3
+    const v1, -0x6cdeef95
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object v3
+
+    .line 10
+    new-instance v7, LL9i;
+
+    .line 11
+    .line 12
+    const/16 v1, 0x14
+
+    .line 13
+    .line 14
+    invoke-direct {v7, v1, p0}, LL9i;-><init>(ILjava/lang/Object;)V
+
+    .line 15
+    .line 16
+    .line 17
+    iget-object v2, v0, Lvej;->a:Lkch;
+
+    .line 18
+    .line 19
+    const-string v4, "SELECT * FROM StoryInteractionSignals\nWHERE isSpotlightTile = 0 AND isFriendStory = ? AND totalImpressionTimeScoreTimestampSecs >= ? AND (totalImpressionTime >= ? OR lastVersionLongImpressionCount >= ?)\nORDER BY maxSnapCompletionPercent DESC, lastUpdatedTimestampSecs DESC LIMIT ?"
+
+    .line 20
+    .line 21
+    const/4 v6, 0x5
+
+    .line 22
+    move-object v5, p1
+
+    .line 23
+    invoke-virtual/range {v2 .. v7}, Lkch;->e(Ljava/lang/Integer;Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILkotlin/jvm/functions/Function1;)LJJe;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object p1
+
+    .line 27
+    return-object p1
+.end method
+
+.method public final toString()Ljava/lang/String;
     .locals 1
 
     .line 1
-    monitor-enter p0
+    const-string v0, "StoryInteractionSignals.sq:getUserStoryTileImpressionInteractionFeatures"
 
     .line 2
-    :try_start_0
-    invoke-super {p0}, Landroid/util/SparseArray;->clear()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 3
-    .line 4
-    .line 5
-    monitor-exit p0
-
-    .line 6
-    return-void
-
-    .line 7
-    :catchall_0
-    move-exception v0
-
-    .line 8
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 9
-    throw v0
-.end method
-
-.method public final declared-synchronized clone()Landroid/util/SparseArray;
-    .locals 1
-
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0}, Landroid/util/SparseArray;->clone()Landroid/util/SparseArray;
-
-    move-result-object v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
     return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
-.end method
-
-.method public final bridge synthetic clone()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Lagi;->clone()Landroid/util/SparseArray;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final declared-synchronized delete(I)V
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->delete(I)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    .line 4
-    .line 5
-    monitor-exit p0
-
-    .line 6
-    return-void
-
-    .line 7
-    :catchall_0
-    move-exception p1
-
-    .line 8
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 9
-    throw p1
-.end method
-
-.method public final get(I)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/util/SparseArray;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-object p1
-
-    :catchall_0
-    move-exception p1
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p1
-.end method
-
-.method public final get(ILjava/lang/Object;)Ljava/lang/Object;
-    .locals 0
-
-    .line 3
-    check-cast p2, Landroid/util/SparseArray;
-
-    .line 4
-    monitor-enter p0
-
-    .line 5
-    :try_start_0
-    invoke-super {p0, p1, p2}, Landroid/util/SparseArray;->get(ILjava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/util/SparseArray;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-object p1
-
-    :catchall_0
-    move-exception p1
-
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p1
-.end method
-
-.method public final declared-synchronized indexOfKey(I)I
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
-
-    .line 3
-    .line 4
-    .line 5
-    move-result p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6
-    monitor-exit p0
-
-    .line 7
-    return p1
-
-    .line 8
-    :catchall_0
-    move-exception p1
-
-    .line 9
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 10
-    throw p1
-.end method
-
-.method public final indexOfValue(Ljava/lang/Object;)I
-    .locals 0
-
-    .line 1
-    check-cast p1, Landroid/util/SparseArray;
-
-    .line 2
-    .line 3
-    monitor-enter p0
-
-    .line 4
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->indexOfValue(Ljava/lang/Object;)I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 8
-    monitor-exit p0
-
-    .line 9
-    return p1
-
-    .line 10
-    :catchall_0
-    move-exception p1
-
-    .line 11
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 12
-    throw p1
-.end method
-
-.method public final declared-synchronized keyAt(I)I
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->keyAt(I)I
-
-    .line 3
-    .line 4
-    .line 5
-    move-result p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6
-    monitor-exit p0
-
-    .line 7
-    return p1
-
-    .line 8
-    :catchall_0
-    move-exception p1
-
-    .line 9
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 10
-    throw p1
-.end method
-
-.method public final put(ILjava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p2, Landroid/util/SparseArray;
-
-    .line 2
-    .line 3
-    monitor-enter p0
-
-    .line 4
-    :try_start_0
-    invoke-static {p2}, LZfi;->a(Landroid/util/SparseArray;)LZfi;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p2
-
-    .line 8
-    invoke-super {p0, p1, p2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 9
-    .line 10
-    .line 11
-    monitor-exit p0
-
-    .line 12
-    return-void
-
-    .line 13
-    :catchall_0
-    move-exception p1
-
-    .line 14
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 15
-    throw p1
-.end method
-
-.method public final declared-synchronized remove(I)V
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->remove(I)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    .line 4
-    .line 5
-    monitor-exit p0
-
-    .line 6
-    return-void
-
-    .line 7
-    :catchall_0
-    move-exception p1
-
-    .line 8
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 9
-    throw p1
-.end method
-
-.method public final declared-synchronized removeAt(I)V
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->removeAt(I)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    .line 4
-    .line 5
-    monitor-exit p0
-
-    .line 6
-    return-void
-
-    .line 7
-    :catchall_0
-    move-exception p1
-
-    .line 8
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 9
-    throw p1
-.end method
-
-.method public final declared-synchronized removeAtRange(II)V
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1, p2}, Landroid/util/SparseArray;->removeAtRange(II)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    .line 4
-    .line 5
-    monitor-exit p0
-
-    .line 6
-    return-void
-
-    .line 7
-    :catchall_0
-    move-exception p1
-
-    .line 8
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 9
-    throw p1
-.end method
-
-.method public final setValueAt(ILjava/lang/Object;)V
-    .locals 0
-
-    .line 1
-    check-cast p2, Landroid/util/SparseArray;
-
-    .line 2
-    .line 3
-    monitor-enter p0
-
-    .line 4
-    :try_start_0
-    invoke-static {p2}, LZfi;->a(Landroid/util/SparseArray;)LZfi;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p2
-
-    .line 8
-    invoke-super {p0, p1, p2}, Landroid/util/SparseArray;->setValueAt(ILjava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 9
-    .line 10
-    .line 11
-    monitor-exit p0
-
-    .line 12
-    return-void
-
-    .line 13
-    :catchall_0
-    move-exception p1
-
-    .line 14
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 15
-    throw p1
-.end method
-
-.method public final declared-synchronized size()I
-    .locals 1
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0}, Landroid/util/SparseArray;->size()I
-
-    .line 3
-    .line 4
-    .line 5
-    move-result v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6
-    monitor-exit p0
-
-    .line 7
-    return v0
-
-    .line 8
-    :catchall_0
-    move-exception v0
-
-    .line 9
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 10
-    throw v0
-.end method
-
-.method public final valueAt(I)Ljava/lang/Object;
-    .locals 0
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    invoke-super {p0, p1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
-
-    .line 3
-    .line 4
-    .line 5
-    move-result-object p1
-
-    .line 6
-    check-cast p1, Landroid/util/SparseArray;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 7
-    .line 8
-    monitor-exit p0
-
-    .line 9
-    return-object p1
-
-    .line 10
-    :catchall_0
-    move-exception p1
-
-    .line 11
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 12
-    throw p1
 .end method

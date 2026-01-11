@@ -1,14 +1,14 @@
 .class public final Lh47;
-.super Li47;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:LY79;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(LY79;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lh47;->a:Ljava/lang/String;
+    iput-object p1, p0, Lh47;->a:LY79;
 
     .line 5
     .line 6
@@ -60,15 +60,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p0, Lh47;->a:Ljava/lang/String;
+    iget-object v1, p0, Lh47;->a:LY79;
 
     .line 14
     .line 15
-    iget-object p1, p1, Lh47;->a:Ljava/lang/String;
+    iget-object p1, p1, Lh47;->a:LY79;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -91,18 +91,22 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lh47;->a:Ljava/lang/String;
+    iget-object v0, p0, Lh47;->a:LY79;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+    iget-object v0, v0, LY79;->a:Ljava/lang/String;
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
     .line 6
+    .line 7
+    .line 8
     move-result v0
 
-    .line 7
+    .line 9
     return v0
 .end method
 
@@ -114,7 +118,7 @@
 
     .line 2
     .line 3
-    const-string v1, "NoUcoMetadata(cause="
+    const-string v1, "QueryCriteria.ById["
 
     .line 4
     .line 5
@@ -123,15 +127,15 @@
     .line 6
     .line 7
     .line 8
-    iget-object v1, p0, Lh47;->a:Ljava/lang/String;
+    iget-object v1, p0, Lh47;->a:LY79;
 
     .line 9
     .line 10
-    const-string v2, ")"
+    const-string v2, "]"
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2}, Llva;->C(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, LAM;->b(Ljava/lang/StringBuilder;LY79;Ljava/lang/String;)Ljava/lang/String;
 
     .line 13
     .line 14

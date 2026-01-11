@@ -1,104 +1,139 @@
-.class public interface abstract LXSg;
-.super Ljava/lang/Object;
+.class public final enum LXSg;
+.super Ljava/lang/Enum;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract A()Z
+# static fields
+.field public static final enum a:LXSg;
+
+.field public static final synthetic b:[LXSg;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    const/4 v2, 0x0
+
+    .line 4
+    new-instance v3, LXSg;
+
+    .line 5
+    .line 6
+    const-string v4, "DISABLED"
+
+    .line 7
+    .line 8
+    invoke-direct {v3, v4, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    sput-object v3, LXSg;->a:LXSg;
+
+    .line 12
+    .line 13
+    new-instance v4, LXSg;
+
+    .line 14
+    .line 15
+    const-string v5, "APP_INSTALL"
+
+    .line 16
+    .line 17
+    invoke-direct {v4, v5, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 18
+    .line 19
+    .line 20
+    new-instance v5, LXSg;
+
+    .line 21
+    .line 22
+    const-string v6, "WEBVIEW"
+
+    .line 23
+    .line 24
+    invoke-direct {v5, v6, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 25
+    .line 26
+    .line 27
+    const/4 v6, 0x3
+
+    .line 28
+    new-array v6, v6, [LXSg;
+
+    .line 29
+    .line 30
+    aput-object v3, v6, v2
+
+    .line 31
+    .line 32
+    aput-object v4, v6, v1
+
+    .line 33
+    .line 34
+    aput-object v5, v6, v0
+
+    .line 35
+    .line 36
+    sput-object v6, LXSg;->b:[LXSg;
+
+    .line 37
+    .line 38
+    return-void
 .end method
 
-.method public abstract B()V
+.method public static valueOf(Ljava/lang/String;)LXSg;
+    .locals 1
+
+    .line 1
+    const-class v0, LXSg;
+
+    .line 2
+    .line 3
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    check-cast p0, LXSg;
+
+    .line 8
+    .line 9
+    return-object p0
 .end method
 
-.method public abstract C([B)Lio/reactivex/rxjava3/core/Completable;
-.end method
+.method public static values()[LXSg;
+    .locals 1
 
-.method public abstract D()Lio/reactivex/rxjava3/core/Observable;
-.end method
+    .line 1
+    sget-object v0, LXSg;->b:[LXSg;
 
-.method public abstract E(Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-.end method
+    .line 2
+    .line 3
+    invoke-virtual {v0}, [LXSg;->clone()Ljava/lang/Object;
 
-.method public abstract F()Lio/reactivex/rxjava3/core/Completable;
-.end method
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
 
-.method public abstract a()LLSg;
-.end method
+    .line 7
+    check-cast v0, [LXSg;
 
-.method public abstract b()Ljava/lang/String;
-.end method
-
-.method public abstract c()Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract d(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract e(LLSg;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract f()Z
-.end method
-
-.method public abstract g(LLSg;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract getUserId()Ljava/lang/String;
-.end method
-
-.method public abstract h()Lio/reactivex/rxjava3/core/Observable;
-.end method
-
-.method public abstract i()Lio/reactivex/rxjava3/core/Observable;
-.end method
-
-.method public abstract j(Z)V
-.end method
-
-.method public abstract k(Ljava/lang/Long;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract l()Lio/reactivex/rxjava3/core/Observable;
-.end method
-
-.method public abstract m(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract n()Lio/reactivex/rxjava3/core/Single;
-.end method
-
-.method public abstract o()Z
-.end method
-
-.method public abstract p(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract q(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract r()Lio/reactivex/rxjava3/core/Observable;
-.end method
-
-.method public abstract s()LClj;
-.end method
-
-.method public abstract t()LClj;
-.end method
-
-.method public abstract u()Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract v()Lio/reactivex/rxjava3/core/Single;
-.end method
-
-.method public abstract w()I
-.end method
-
-.method public abstract x()LLSg;
-.end method
-
-.method public abstract y(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-.end method
-
-.method public abstract z(Z)Lio/reactivex/rxjava3/core/Completable;
+    .line 8
+    .line 9
+    return-object v0
 .end method

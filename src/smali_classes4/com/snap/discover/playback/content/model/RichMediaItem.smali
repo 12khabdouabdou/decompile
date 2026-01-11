@@ -271,7 +271,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/RichMediaItem;->name:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -284,7 +284,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/RichMediaItem;->id:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -297,7 +297,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/RichMediaItem;->type:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -310,7 +310,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/RichMediaItem;->channels:Ljava/util/List;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -323,7 +323,7 @@
 
     iget-object v3, p1, Lcom/snap/discover/playback/content/model/RichMediaItem;->properties:Lcom/snap/discover/playback/content/model/RichMediaItemProperties;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -336,7 +336,7 @@
 
     iget-object p1, p1, Lcom/snap/discover/playback/content/model/RichMediaItem;->swipeUpArrowTextKey:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -450,7 +450,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 14
     .line 15
@@ -462,7 +462,7 @@
 
     .line 18
     .line 19
-    invoke-static {v0, v1, v2}, Ln9f;->c(IILjava/lang/String;)I
+    invoke-static {v0, v1, v2}, LToi;->g(IILjava/lang/String;)I
 
     .line 20
     .line 21
@@ -474,7 +474,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0, v1, v2}, LYHe;->e(IILjava/util/List;)I
+    invoke-static {v0, v1, v2}, LmBe;->c(IILjava/util/List;)I
 
     .line 26
     .line 27
@@ -571,7 +571,7 @@
 
     .line 18
     .line 19
-    invoke-static {v6, v0, v7, v1, v8}, LDM4;->v(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v6, v0, v7, v1, v8}, Lve4;->x(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 20
     .line 21

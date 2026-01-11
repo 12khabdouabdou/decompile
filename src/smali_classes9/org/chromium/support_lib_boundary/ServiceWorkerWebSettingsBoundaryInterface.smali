@@ -16,6 +16,9 @@
 .method public abstract getCacheMode()I
 .end method
 
+.method public abstract getIncludeCookiesOnIntercept()Z
+.end method
+
 .method public abstract getRequestedWithHeaderOriginAllowList()Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,6 +40,9 @@
 .end method
 
 .method public abstract setCacheMode(I)V
+.end method
+
+.method public abstract setIncludeCookiesOnIntercept(Z)V
 .end method
 
 .method public abstract setRequestedWithHeaderOriginAllowList(Ljava/util/Set;)V

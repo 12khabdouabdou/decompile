@@ -473,7 +473,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p0, p1}, Lro0;->b(Lorg/webrtc/audio/AudioDeviceModule;F)Z
+    invoke-static {p0, p1}, LQq0;->b(Lorg/webrtc/audio/AudioDeviceModule;F)Z
 
     move-result p1
 

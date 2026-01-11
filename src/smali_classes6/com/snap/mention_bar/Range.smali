@@ -1,10 +1,10 @@
 .class public final Lcom/snap/mention_bar/Range;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'start\':d,\'endExclusive\':d"
     typeReferences = {}

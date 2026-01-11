@@ -18,23 +18,23 @@
 
 
 # virtual methods
-.method public final f()LHoa;
+.method public final f()LVAa;
     .locals 2
 
     .line 1
-    iget-object v0, p0, LJoa;->b:Landroidx/work/WorkerParameters;
+    iget-object v0, p0, LXAa;->b:Landroidx/work/WorkerParameters;
 
     .line 2
     .line 3
-    iget-object v0, v0, Landroidx/work/WorkerParameters;->b:LH75;
+    iget-object v0, v0, Landroidx/work/WorkerParameters;->b:LTd5;
 
     .line 4
     .line 5
-    new-instance v1, LHoa;
+    new-instance v1, LVAa;
 
     .line 6
     .line 7
-    invoke-direct {v1, v0}, LHoa;-><init>(LH75;)V
+    invoke-direct {v1, v0}, LVAa;-><init>(LTd5;)V
 
     .line 8
     .line 9

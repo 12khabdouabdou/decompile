@@ -1,72 +1,114 @@
-.class public final Lsv3;
+.class public final synthetic Lsv3;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements LJv3;
+.implements Lio/reactivex/rxjava3/functions/Function3;
 
 
 # instance fields
-.field public final synthetic a:Luv3;
+.field public final a:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Luv3;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
     .line 1
+    iput-object p1, p0, Lsv3;->a:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lsv3;->a:Luv3;
-
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
+.method public d(LOmf;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lsv3;->a:Luv3;
+    iget-object p1, p0, Lsv3;->a:Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Luv3;->b()V
+    return-object p1
+.end method
+
+.method public t(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    check-cast p1, Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 4
     .line 5
     .line 6
-    sget-object v1, Lcom/snap/composer/utils/ComposerMarshaller;->Companion:Lcom/snap/composer/utils/ComposerMarshaller$Companion;
+    move-result p1
 
     .line 7
-    .line 8
-    invoke-virtual {v1}, Lcom/snap/composer/utils/ComposerMarshaller$Companion;->create()Lcom/snap/composer/utils/ComposerMarshaller;
+    check-cast p2, Ljava/lang/Boolean;
 
+    .line 8
     .line 9
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+
     .line 10
     .line 11
-    move-result-object v1
-
     .line 12
-    iget-object v0, v0, Luv3;->n0:Lgu3;
+    move-result p2
 
     .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Lgu3;->a(Lcom/snap/composer/utils/ComposerMarshaller;)V
+    check-cast p3, LRh3;
 
+    .line 14
     .line 15
+    iget-object v0, p0, Lsv3;->a:Ljava/lang/Object;
+
     .line 16
     .line 17
-    invoke-virtual {v1}, Lcom/snapchat/client/valdi/utils/NativeHandleWrapper;->destroy()V
+    instance-of v1, v0, LqL3;
 
     .line 18
     .line 19
+    if-eqz v1, :cond_0
+
     .line 20
-    return-void
+    .line 21
+    move-object v1, v0
+
+    .line 22
+    check-cast v1, LqL3;
+
+    .line 23
+    .line 24
+    new-instance v2, LpL3;
+
+    .line 25
+    .line 26
+    iget-object p3, p3, LRh3;->c:Ljava/lang/Integer;
+
+    .line 27
+    .line 28
+    invoke-direct {v2, p1, p3, p2}, LpL3;-><init>(ZLjava/lang/Integer;Z)V
+
+    .line 29
+    .line 30
+    .line 31
+    check-cast v1, Lcom/snap/lenses/app/camera/favorites/action/BadgeFavoriteActionView;
+
+    .line 32
+    .line 33
+    invoke-virtual {v1, v2}, Lcom/snap/lenses/app/camera/favorites/action/BadgeFavoriteActionView;->o(Ljava/lang/Object;)V
+
+    .line 34
+    .line 35
+    .line 36
+    :cond_0
+    return-object v0
 .end method

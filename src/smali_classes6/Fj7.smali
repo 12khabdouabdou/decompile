@@ -1,168 +1,254 @@
-.class public final LFj7;
+.class public abstract LFj7;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Supplier;
 
+# static fields
+.field public static final a:Lnp0;
 
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:Ljj7;
+.field public static final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljj7;I)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 10
 
     .line 1
-    iput p2, p0, LFj7;->a:I
-
-    iput-object p1, p0, LFj7;->b:Ljj7;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget v0, p0, LFj7;->a:I
+    sget-object v0, LTJb;->Z:LTJb;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    const-string v1, "FeaturedStoriesManager"
 
     .line 4
     .line 5
-    .line 6
-    iget-object v0, p0, LFj7;->b:Ljj7;
+    invoke-static {v0, v0, v1}, LBv7;->d(LTJb;LTJb;Ljava/lang/String;)Lnp0;
 
+    .line 6
     .line 7
     .line 8
-    invoke-virtual {v0}, Ljj7;->c()LE80;
-
-    .line 9
-    .line 10
-    .line 11
     move-result-object v0
 
-    .line 12
-    return-object v0
+    .line 9
+    sput-object v0, LFj7;->a:Lnp0;
 
+    .line 10
+    .line 11
+    sget-object v0, LJp0;->a:LJp0;
+
+    .line 12
     .line 13
-    :pswitch_0
-    iget-object v0, p0, LFj7;->b:Ljj7;
+    sget-object v0, Lna8;->R0:Lna8;
 
     .line 14
     .line 15
-    iget-object v0, v0, Ljj7;->a:Ljava/util/ArrayList;
+    sget-object v1, LALb;->V3:LALb;
 
     .line 16
     .line 17
-    return-object v0
+    new-instance v2, LDpd;
 
     .line 18
-    :pswitch_1
-    iget-object v0, p0, LFj7;->b:Ljj7;
-
     .line 19
-    .line 20
-    invoke-virtual {v0}, Ljj7;->c()LE80;
+    invoke-direct {v2, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
+    .line 20
     .line 21
     .line 22
-    .line 23
-    move-result-object v0
+    sget-object v0, Lna8;->g1:Lna8;
 
+    .line 23
     .line 24
-    return-object v0
+    sget-object v1, LALb;->W3:LALb;
 
     .line 25
-    :pswitch_2
-    iget-object v0, p0, LFj7;->b:Ljj7;
-
     .line 26
+    new-instance v3, LDpd;
+
     .line 27
-    iget-object v0, v0, Ljj7;->a:Ljava/util/ArrayList;
-
     .line 28
+    invoke-direct {v3, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
     .line 29
-    return-object v0
-
     .line 30
-    :pswitch_3
-    iget-object v0, p0, LFj7;->b:Ljj7;
-
     .line 31
-    .line 32
-    invoke-virtual {v0}, Ljj7;->c()LE80;
+    sget-object v0, Lna8;->S0:Lna8;
 
+    .line 32
     .line 33
+    sget-object v1, LALb;->X3:LALb;
+
     .line 34
     .line 35
-    move-result-object v0
+    new-instance v4, LDpd;
 
     .line 36
-    return-object v0
-
     .line 37
-    :pswitch_4
-    iget-object v0, p0, LFj7;->b:Ljj7;
+    invoke-direct {v4, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 38
     .line 39
-    iget-object v0, v0, Ljj7;->a:Ljava/util/ArrayList;
-
     .line 40
-    .line 41
-    return-object v0
+    sget-object v0, Lna8;->T0:Lna8;
 
+    .line 41
     .line 42
-    :pswitch_5
-    iget-object v0, p0, LFj7;->b:Ljj7;
+    sget-object v1, LALb;->Y3:LALb;
 
     .line 43
     .line 44
-    invoke-virtual {v0}, Ljj7;->c()LE80;
+    new-instance v5, LDpd;
 
     .line 45
     .line 46
+    invoke-direct {v5, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
     .line 47
-    move-result-object v0
-
     .line 48
-    return-object v0
-
     .line 49
-    :pswitch_6
-    iget-object v0, p0, LFj7;->b:Ljj7;
+    sget-object v0, Lna8;->b1:Lna8;
 
     .line 50
     .line 51
-    iget-object v0, v0, Ljj7;->a:Ljava/util/ArrayList;
+    sget-object v1, LALb;->Z3:LALb;
 
     .line 52
     .line 53
-    return-object v0
+    new-instance v6, LDpd;
 
     .line 54
-    nop
-
     .line 55
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    invoke-direct {v6, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 56
+    .line 57
+    .line 58
+    sget-object v0, Lna8;->c1:Lna8;
+
+    .line 59
+    .line 60
+    sget-object v1, LALb;->a4:LALb;
+
+    .line 61
+    .line 62
+    new-instance v7, LDpd;
+
+    .line 63
+    .line 64
+    invoke-direct {v7, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 65
+    .line 66
+    .line 67
+    sget-object v0, Lna8;->d1:Lna8;
+
+    .line 68
+    .line 69
+    sget-object v1, LALb;->b4:LALb;
+
+    .line 70
+    .line 71
+    new-instance v8, LDpd;
+
+    .line 72
+    .line 73
+    invoke-direct {v8, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 74
+    .line 75
+    .line 76
+    sget-object v0, Lna8;->e1:Lna8;
+
+    .line 77
+    .line 78
+    sget-object v1, LALb;->c4:LALb;
+
+    .line 79
+    .line 80
+    new-instance v9, LDpd;
+
+    .line 81
+    .line 82
+    invoke-direct {v9, v0, v1}, LDpd;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 83
+    .line 84
+    .line 85
+    const/16 v0, 0x8
+
+    .line 86
+    .line 87
+    new-array v0, v0, [LDpd;
+
+    .line 88
+    .line 89
+    const/4 v1, 0x0
+
+    .line 90
+    aput-object v2, v0, v1
+
+    .line 91
+    .line 92
+    const/4 v1, 0x1
+
+    .line 93
+    aput-object v3, v0, v1
+
+    .line 94
+    .line 95
+    const/4 v1, 0x2
+
+    .line 96
+    aput-object v4, v0, v1
+
+    .line 97
+    .line 98
+    const/4 v1, 0x3
+
+    .line 99
+    aput-object v5, v0, v1
+
+    .line 100
+    .line 101
+    const/4 v1, 0x4
+
+    .line 102
+    aput-object v6, v0, v1
+
+    .line 103
+    .line 104
+    const/4 v1, 0x5
+
+    .line 105
+    aput-object v7, v0, v1
+
+    .line 106
+    .line 107
+    const/4 v1, 0x6
+
+    .line 108
+    aput-object v8, v0, v1
+
+    .line 109
+    .line 110
+    const/4 v1, 0x7
+
+    .line 111
+    aput-object v9, v0, v1
+
+    .line 112
+    .line 113
+    invoke-static {v0}, Lkrb;->F0([LDpd;)Ljava/util/Map;
+
+    .line 114
+    .line 115
+    .line 116
+    move-result-object v0
+
+    .line 117
+    sput-object v0, LFj7;->b:Ljava/lang/Object;
+
+    .line 118
+    .line 119
+    return-void
 .end method

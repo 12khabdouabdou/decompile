@@ -1,153 +1,196 @@
-.class public final enum LJRd;
-.super Ljava/lang/Enum;
+.class public final LJRd;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final enum b:LJRd;
-
-.field public static final enum c:LJRd;
-
-.field public static final synthetic t:[LJRd;
-
-
 # instance fields
-.field public final a:LxPd;
+.field public final a:LKRd;
+
+.field public final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(LKRd;I)V
+    .locals 0
 
     .line 1
-    new-instance v0, LJRd;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    sget-object v1, LxPd;->C1:LxPd;
-
     .line 4
+    iput-object p1, p0, LJRd;->a:LKRd;
+
     .line 5
-    const-string v2, "CAPTION"
+    .line 6
+    iput p2, p0, LJRd;->b:I
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, LJRd;
 
     .line 6
     .line 7
-    const/4 v3, 0x0
+    const/4 v2, 0x0
 
     .line 8
-    invoke-direct {v0, v2, v3, v1}, LJRd;-><init>(Ljava/lang/String;ILxPd;)V
+    if-nez v1, :cond_1
 
     .line 9
     .line 10
+    return v2
+
     .line 11
-    sput-object v0, LJRd;->b:LJRd;
+    :cond_1
+    check-cast p1, LJRd;
 
     .line 12
     .line 13
-    new-instance v1, LJRd;
+    iget-object v1, p1, LJRd;->a:LKRd;
 
     .line 14
     .line 15
-    sget-object v2, LxPd;->D1:LxPd;
+    iget-object v3, p0, LJRd;->a:LKRd;
 
     .line 16
     .line 17
-    const-string v4, "STICKER"
+    if-eq v3, v1, :cond_2
 
     .line 18
     .line 19
-    const/4 v5, 0x1
+    return v2
 
     .line 20
-    invoke-direct {v1, v4, v5, v2}, LJRd;-><init>(Ljava/lang/String;ILxPd;)V
+    :cond_2
+    iget v1, p0, LJRd;->b:I
+
+    .line 21
+    .line 22
+    iget p1, p1, LJRd;->b:I
+
+    .line 23
+    .line 24
+    if-eq v1, p1, :cond_3
+
+    .line 25
+    .line 26
+    return v2
+
+    .line 27
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LJRd;->a:LKRd;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget v1, p0, LJRd;->b:I
+
+    .line 10
+    .line 11
+    add-int/2addr v0, v1
+
+    .line 12
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "PlusAcknowledgeDurableJobResult(stage="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LJRd;->a:LKRd;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", tier="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, LJRd;->b:I
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    sput-object v1, LJRd;->c:LJRd;
+    const-string v1, ")"
 
     .line 24
     .line 25
-    const/4 v2, 0x2
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
-    new-array v2, v2, [LJRd;
-
     .line 27
     .line 28
-    aput-object v0, v2, v3
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
     .line 30
-    aput-object v1, v2, v5
-
     .line 31
-    .line 32
-    sput-object v2, LJRd;->t:[LJRd;
-
-    .line 33
-    .line 34
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;ILxPd;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
-
-    .line 2
-    .line 3
-    .line 4
-    iput-object p3, p0, LJRd;->a:LxPd;
-
-    .line 5
-    .line 6
-    return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LJRd;
-    .locals 1
-
-    .line 1
-    const-class v0, LJRd;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LJRd;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LJRd;
-    .locals 1
-
-    .line 1
-    sget-object v0, LJRd;->t:[LJRd;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
     move-result-object v0
 
-    .line 7
-    check-cast v0, [LJRd;
-
-    .line 8
-    .line 9
+    .line 32
     return-object v0
 .end method

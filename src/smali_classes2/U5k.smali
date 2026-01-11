@@ -1,192 +1,135 @@
-.class public final LU5k;
+.class public final synthetic LU5k;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 # interfaces
-.implements Ldx9;
-.implements Ljava/io/Serializable;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final synthetic a:I
+
+.field public final synthetic b:LyHj;
+
+.field public final synthetic c:J
+
+.field public final synthetic t:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 0
+.method public synthetic constructor <init>(LyHj;IJ)V
+    .locals 1
 
     .line 1
+    const/4 v0, 0x0
+
+    iput v0, p0, LU5k;->a:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, LU5k;->a:Ljava/lang/String;
+    iput-object p1, p0, LU5k;->b:LyHj;
 
-    .line 5
-    .line 6
+    iput p2, p0, LU5k;->t:I
+
+    iput-wide p3, p0, LU5k;->c:J
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(LyHj;JI)V
+    .locals 1
+
+    .line 2
+    const/4 v0, 0x1
+
+    iput v0, p0, LU5k;->a:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, LU5k;->b:LyHj;
+
+    iput-wide p2, p0, LU5k;->c:J
+
+    iput p4, p0, LU5k;->t:I
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final d()Ljava/lang/String;
-    .locals 2
+.method public final run()V
+    .locals 5
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, LU5k;->t:I
 
     .line 2
     .line 3
-    const-string v1, "\""
+    iget-wide v1, p0, LU5k;->c:J
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    iget-object v3, p0, LU5k;->b:LyHj;
 
     .line 6
     .line 7
+    iget v4, p0, LU5k;->a:I
+
     .line 8
-    sget v1, Lfx9;->a:I
-
     .line 9
-    .line 10
-    iget-object v1, p0, LU5k;->a:Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 10
     .line 11
     .line 12
-    invoke-static {v1}, Llx9;->a(Ljava/lang/String;)Ljava/lang/String;
+    packed-switch v4, :pswitch_data_0
 
     .line 13
     .line 14
     .line 15
-    move-result-object v1
+    sget v4, LaQj;->a:I
 
     .line 16
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 17
+    iget-object v3, v3, LyHj;->c:Ljava/lang/Object;
+
     .line 18
     .line 19
-    const/16 v1, 0x22
+    check-cast v3, LW5k;
 
     .line 20
     .line 21
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+    invoke-interface {v3, v0, v1, v2}, LW5k;->i(IJ)V
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    return-void
 
     .line 25
-    .line 26
-    .line 27
-    move-result-object v0
-
-    .line 28
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 1
-
-    .line 1
-    instance-of v0, p1, LU5k;
-
-    .line 2
-    .line 3
-    if-eqz v0, :cond_0
-
-    .line 4
-    .line 5
-    iget-object v0, p0, LU5k;->a:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    .line 8
-    .line 9
-    .line 10
-    move-result-object v0
-
-    .line 11
-    check-cast p1, LU5k;
-
-    .line 12
-    .line 13
-    iget-object p1, p1, LU5k;->a:Ljava/lang/String;
-
-    .line 14
-    .line 15
-    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    .line 16
-    .line 17
-    .line 18
-    move-result-object p1
-
-    .line 19
-    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result p1
-
-    .line 23
-    if-eqz p1, :cond_0
-
-    .line 24
-    .line 25
-    const/4 p1, 0x1
+    :pswitch_0
+    sget v4, LaQj;->a:I
 
     .line 26
-    return p1
-
     .line 27
-    :cond_0
-    const/4 p1, 0x0
+    iget-object v3, v3, LyHj;->c:Ljava/lang/Object;
 
     .line 28
-    return p1
-.end method
+    .line 29
+    check-cast v3, LW5k;
 
-.method public final hashCode()I
-    .locals 1
+    .line 30
+    .line 31
+    invoke-interface {v3, v0, v1, v2}, LW5k;->p(IJ)V
 
-    .line 1
-    iget-object v0, p0, LU5k;->a:Ljava/lang/String;
+    .line 32
+    .line 33
+    .line 34
+    return-void
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
-
-    .line 11
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LU5k;->a:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-object v0
+    .line 35
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

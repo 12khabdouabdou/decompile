@@ -2,16 +2,13 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Ln1b;
-
 
 # instance fields
-.field public final synthetic a:LJTa;
+.field public final a:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
 
 # direct methods
-.method public constructor <init>(LJTa;)V
+.method public constructor <init>(Lcom/snap/core/application/SnapResourcesContextWrapper;LCob;LR93;LlMj;)V
     .locals 0
 
     .line 1
@@ -20,27 +17,43 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LV7b;->a:LJTa;
+    sget-object p1, Lqbb;->Z:Lqbb;
 
     .line 5
     .line 6
-    return-void
-.end method
+    const-string p2, "MapBannerCreator"
 
+    .line 7
+    .line 8
+    invoke-static {p1, p1, p2}, Lnfe;->e(Lqbb;Lqbb;Ljava/lang/String;)Lnp0;
 
-# virtual methods
-.method public final a()V
-    .locals 1
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
 
-    .line 1
-    iget-object v0, p0, LV7b;->a:LJTa;
+    .line 12
+    new-instance p2, LnJe;
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 13
+    .line 14
+    invoke-direct {p2, p1}, LnJe;-><init>(Lnp0;)V
 
-    .line 4
-    .line 5
-    .line 6
+    .line 15
+    .line 16
+    .line 17
+    new-instance p1, Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 18
+    .line 19
+    invoke-direct {p1}, Lio/reactivex/rxjava3/subjects/PublishSubject;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    iput-object p1, p0, LV7b;->a:Lio/reactivex/rxjava3/subjects/PublishSubject;
+
+    .line 23
+    .line 24
     return-void
 .end method

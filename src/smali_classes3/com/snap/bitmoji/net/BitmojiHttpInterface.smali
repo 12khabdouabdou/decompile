@@ -6,28 +6,24 @@
 # virtual methods
 .method public abstract getSingleBitmoji(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime Ludd;
+        .annotation runtime Lvtd;
             value = "comicId"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Ludd;
+        .annotation runtime Lvtd;
             value = "avatarId"
         .end annotation
     .end param
     .param p3    # Ljava/lang/String;
-        .annotation runtime Ludd;
+        .annotation runtime Lvtd;
             value = "imageType"
         .end annotation
     .end param
     .param p4    # Ljava/util/Map;
-        .annotation runtime LTre;
+        .annotation runtime LCJe;
         .end annotation
     .end param
-    .annotation runtime Lb38;
-        value = "/render/panel/{comicId}-{avatarId}-v1.{imageType}"
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -39,8 +35,12 @@
             "Ljava/lang/String;",
             ">;)",
             "Lio/reactivex/rxjava3/core/Single<",
-            "LY3f;",
+            "LUlf;",
             ">;"
         }
+    .end annotation
+
+    .annotation runtime Lw98;
+        value = "/render/panel/{comicId}-{avatarId}-v1.{imageType}"
     .end annotation
 .end method

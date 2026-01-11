@@ -1,19 +1,20 @@
-.class public LTK7;
-.super Ljava/lang/Object;
+.class public final LTK7;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
-# interfaces
-.implements LYK7;
 
-
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/lang/String;
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'onTapTryOn\':f(),\'getAvatarCompleteObservable\':g<c>:\'[0]\'<b@>"
+    typeReferences = {
+        Lcom/snap/composer/bridge_observables/BridgeObservable;
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>()V
     .locals 0
 
     .line 1
@@ -22,39 +23,5 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LTK7;->a:Ljava/lang/String;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, LTK7;->b:Ljava/lang/String;
-
-    .line 7
-    .line 8
     return-void
-.end method
-
-
-# virtual methods
-.method public a()Ljava/lang/Exception;
-    .locals 3
-
-    .line 1
-    new-instance v0, LxK7;
-
-    .line 2
-    .line 3
-    const-string v1, "Unknown error"
-
-    .line 4
-    .line 5
-    iget-object v2, p0, LTK7;->b:Ljava/lang/String;
-
-    .line 6
-    .line 7
-    invoke-direct {v0, v1, v2}, LxK7;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 8
-    .line 9
-    .line 10
-    return-object v0
 .end method

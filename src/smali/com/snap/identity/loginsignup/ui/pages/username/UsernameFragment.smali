@@ -3,13 +3,13 @@
 .source "SourceFile"
 
 # interfaces
-.implements LSqj;
+.implements LSPj;
 
 
 # static fields
-.field public static final T0:LKXb;
+.field public static final T0:LHFf;
 
-.field public static final synthetic U0:[LtC9;
+.field public static final synthetic U0:[LNL9;
 
 
 # instance fields
@@ -39,77 +39,80 @@
 
 .field public Q0:Landroid/view/View;
 
-.field public final R0:LbJ3;
+.field public final R0:LEM3;
 
-.field public S0:LHqj;
+.field public S0:LHPj;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 5
+    .locals 4
 
     .line 1
-    const/4 v0, 0x0
+    new-instance v0, Lmsc;
 
     .line 2
-    new-instance v1, Ltdc;
-
     .line 3
+    const-class v1, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;
+
     .line 4
-    const-class v2, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;
-
     .line 5
+    const-string v2, "hideSuggestionsOnValidUsername"
+
     .line 6
-    const-string v3, "hideSuggestionsOnValidUsername"
-
     .line 7
+    const-string v3, "getHideSuggestionsOnValidUsername()Z"
+
     .line 8
-    const-string v4, "getHideSuggestionsOnValidUsername()Z"
-
     .line 9
-    .line 10
-    invoke-direct {v1, v2, v3, v4}, Ltdc;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2, v3}, Lmsc;-><init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
 
+    .line 10
     .line 11
     .line 12
+    sget-object v1, Lc1f;->a:Le1f;
+
     .line 13
-    sget-object v2, LsJe;->a:LuJe;
-
     .line 14
-    .line 15
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
+    .line 15
     .line 16
     .line 17
+    const/4 v1, 0x1
+
     .line 18
-    const/4 v2, 0x1
+    new-array v1, v1, [LNL9;
 
     .line 19
-    new-array v2, v2, [LtC9;
-
     .line 20
+    const/4 v2, 0x0
+
     .line 21
-    aput-object v1, v2, v0
+    aput-object v0, v1, v2
 
     .line 22
     .line 23
-    sput-object v2, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->U0:[LtC9;
+    sput-object v1, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->U0:[LNL9;
 
     .line 24
     .line 25
-    new-instance v1, LKXb;
+    new-instance v0, LHFf;
 
     .line 26
     .line 27
-    invoke-direct {v1, v0}, LKXb;-><init>(Z)V
+    const/4 v1, 0x5
 
     .line 28
+    invoke-direct {v0, v1}, LHFf;-><init>(I)V
+
     .line 29
     .line 30
-    sput-object v1, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->T0:LKXb;
-
     .line 31
+    sput-object v0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->T0:LHFf;
+
     .line 32
+    .line 33
     return-void
 .end method
 
@@ -122,19 +125,19 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, LbJ3;
+    new-instance v0, LEM3;
 
     .line 5
     .line 6
     const/4 v1, 0x4
 
     .line 7
-    invoke-direct {v0, v1}, LbJ3;-><init>(I)V
+    invoke-direct {v0, v1}, LEM3;-><init>(I)V
 
     .line 8
     .line 9
     .line 10
-    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->R0:LbJ3;
+    iput-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->R0:LEM3;
 
     .line 11
     .line 12
@@ -143,36 +146,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHqj;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p1, p0}, LHqj;->o3(LSqj;)V
-
-    .line 9
-    .line 10
-    .line 11
-    return-void
-.end method
-
-.method public final C1()V
+.method public final A1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHqj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHPj;
 
     .line 2
     .line 3
@@ -180,7 +158,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LHqj;->C1()V
+    invoke-virtual {v0}, LHPj;->D1()V
 
     .line 6
     .line 7
@@ -188,11 +166,11 @@
     return-void
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
-    const p3, 0x7f0e0284
+    const p3, 0x7f0e029a
 
     .line 2
     .line 3
@@ -211,11 +189,11 @@
     return-object p1
 .end method
 
-.method public final J1(Landroid/view/View;Landroid/os/Bundle;)V
+.method public final H1(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 3
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->J1(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->H1(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
     .line 3
@@ -255,7 +233,7 @@
 
     .line 19
     :goto_0
-    sget-object v1, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->U0:[LtC9;
+    sget-object v1, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->U0:[LNL9;
 
     .line 20
     .line 21
@@ -271,15 +249,15 @@
     move-result-object p2
 
     .line 27
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->R0:LbJ3;
+    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->R0:LEM3;
 
     .line 28
     .line 29
-    iput-object p2, v1, LbJ3;->b:Ljava/lang/Object;
+    iput-object p2, v1, LEM3;->b:Ljava/lang/Object;
 
     .line 30
     .line 31
-    const p2, 0x7f0b19f6
+    const p2, 0x7f0b1b5d
 
     .line 32
     .line 33
@@ -300,7 +278,7 @@
 
     .line 41
     .line 42
-    const p2, 0x7f0b19f3
+    const p2, 0x7f0b1b5a
 
     .line 43
     .line 44
@@ -321,7 +299,7 @@
 
     .line 52
     .line 53
-    const p2, 0x7f0b19ed
+    const p2, 0x7f0b1b54
 
     .line 54
     .line 55
@@ -338,7 +316,7 @@
 
     .line 61
     .line 62
-    const p2, 0x7f0b0691
+    const p2, 0x7f0b0728
 
     .line 63
     .line 64
@@ -359,7 +337,7 @@
 
     .line 72
     .line 73
-    const p2, 0x7f0b19fc
+    const p2, 0x7f0b1b65
 
     .line 74
     .line 75
@@ -376,7 +354,7 @@
 
     .line 81
     .line 82
-    const p2, 0x7f0b19ef
+    const p2, 0x7f0b1b56
 
     .line 83
     .line 84
@@ -393,7 +371,7 @@
 
     .line 90
     .line 91
-    const p2, 0x7f0b1859
+    const p2, 0x7f0b19b1
 
     .line 92
     .line 93
@@ -410,7 +388,7 @@
 
     .line 99
     .line 100
-    const p2, 0x7f0b1857
+    const p2, 0x7f0b19af
 
     .line 101
     .line 102
@@ -431,7 +409,7 @@
 
     .line 110
     .line 111
-    const p2, 0x7f0b185a
+    const p2, 0x7f0b19b2
 
     .line 112
     .line 113
@@ -452,7 +430,7 @@
 
     .line 121
     .line 122
-    const p2, 0x7f0b1858
+    const p2, 0x7f0b19b0
 
     .line 123
     .line 124
@@ -473,7 +451,7 @@
 
     .line 132
     .line 133
-    const p2, 0x7f0b19ee
+    const p2, 0x7f0b1b55
 
     .line 134
     .line 135
@@ -490,7 +468,7 @@
 
     .line 141
     .line 142
-    const p2, 0x7f0b19f4
+    const p2, 0x7f0b1b5b
 
     .line 143
     .line 144
@@ -507,7 +485,7 @@
 
     .line 150
     .line 151
-    const p2, 0x7f0b19f2
+    const p2, 0x7f0b1b59
 
     .line 152
     .line 153
@@ -524,7 +502,7 @@
 
     .line 159
     .line 160
-    const p2, 0x7f0b0e75
+    const p2, 0x7f0b0f91
 
     .line 161
     .line 162
@@ -541,7 +519,7 @@
 
     .line 168
     .line 169
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LpLa;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LWXa;
 
     .line 170
     .line 171
@@ -549,7 +527,7 @@
     move-result-object v1
 
     .line 173
-    invoke-interface {v1}, LpLa;->p()LmLa;
+    invoke-interface {v1}, LWXa;->q()LTXa;
 
     .line 174
     .line 175
@@ -557,7 +535,7 @@
     move-result-object v1
 
     .line 177
-    iget-object v1, v1, LmLa;->k0:Ljava/lang/String;
+    iget-object v1, v1, LTXa;->k0:Ljava/lang/String;
 
     .line 178
     .line 179
@@ -573,7 +551,7 @@
 
     .line 184
     .line 185
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LpLa;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Z1()LWXa;
 
     .line 186
     .line 187
@@ -581,7 +559,7 @@
     move-result-object v1
 
     .line 189
-    invoke-interface {v1}, LpLa;->p()LmLa;
+    invoke-interface {v1}, LWXa;->q()LTXa;
 
     .line 190
     .line 191
@@ -589,7 +567,7 @@
     move-result-object v1
 
     .line 193
-    iget-object v1, v1, LmLa;->l0:Ljava/lang/String;
+    iget-object v1, v1, LTXa;->l0:Ljava/lang/String;
 
     .line 194
     .line 195
@@ -605,7 +583,7 @@
 
     .line 200
     .line 201
-    const v1, 0x7f0b0e76
+    const v1, 0x7f0b0f92
 
     .line 202
     .line 203
@@ -622,7 +600,7 @@
 
     .line 209
     .line 210
-    const v1, 0x7f131792
+    const v1, 0x7f131883
 
     .line 211
     .line 212
@@ -641,7 +619,7 @@
     .line 219
     .line 220
     :cond_1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Y1()Lm89;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->Y1()LEI5;
 
     .line 221
     .line 222
@@ -649,11 +627,11 @@
     move-result-object p1
 
     .line 224
-    sget-object v1, LZ8d;->Y0:LZ8d;
+    sget-object v1, Lsod;->Y0:Lsod;
 
     .line 225
     .line 226
-    invoke-virtual {p1, v1}, Lm89;->a(LZ8d;)Lhad;
+    invoke-virtual {p1, v1}, LEI5;->a(Lsod;)LDpd;
 
     .line 227
     .line 228
@@ -661,7 +639,7 @@
     move-result-object p1
 
     .line 230
-    iget-object v1, p1, Lhad;->a:Ljava/lang/Object;
+    iget-object v1, p1, LDpd;->a:Ljava/lang/Object;
 
     .line 231
     .line 232
@@ -677,7 +655,7 @@
     move-result v1
 
     .line 238
-    iget-object p1, p1, Lhad;->b:Ljava/lang/Object;
+    iget-object p1, p1, LDpd;->b:Ljava/lang/Object;
 
     .line 239
     .line 240
@@ -727,7 +705,7 @@
 
     .line 261
     .line 262
-    const p1, 0x7f132334
+    const p1, 0x7f132501
 
     .line 263
     .line 264
@@ -748,11 +726,11 @@
     return-void
 .end method
 
-.method public final V1()LZ8d;
+.method public final V1()Lsod;
     .locals 1
 
     .line 1
-    sget-object v0, LZ8d;->Y0:LZ8d;
+    sget-object v0, Lsod;->Y0:Lsod;
 
     .line 2
     .line 3
@@ -779,7 +757,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -810,7 +788,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -841,7 +819,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -856,7 +834,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->U0:[LtC9;
+    sget-object v0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->U0:[LNL9;
 
     .line 2
     .line 3
@@ -867,11 +845,11 @@
 
     .line 5
     .line 6
-    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->R0:LbJ3;
+    iget-object v1, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->R0:LEM3;
 
     .line 7
     .line 8
-    invoke-virtual {v1, v0, p0}, LbJ3;->b(LtC9;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v1, v0, p0}, LEM3;->b(LNL9;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
     .line 10
@@ -898,7 +876,7 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHqj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHPj;
 
     .line 2
     .line 3
@@ -906,7 +884,7 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LHqj;->W2()V
+    invoke-virtual {v0}, LHPj;->f3()V
 
     .line 6
     .line 7
@@ -922,11 +900,11 @@
     return v0
 .end method
 
-.method public final d2()LHqj;
+.method public final d2()LHPj;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->S0:LHqj;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->S0:LHPj;
 
     .line 2
     .line 3
@@ -942,7 +920,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -973,7 +951,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1004,7 +982,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1035,7 +1013,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1066,7 +1044,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1097,7 +1075,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1128,7 +1106,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1159,7 +1137,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1190,7 +1168,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1221,7 +1199,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1232,11 +1210,11 @@
     throw v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
@@ -1244,16 +1222,16 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
+.method public final v(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->w(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snap/identity/loginsignup/ui/shared/BaseLoginSignupFragment;->v(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHqj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHPj;
 
     .line 5
     .line 6
@@ -1261,7 +1239,7 @@
     move-result-object p1
 
     .line 8
-    invoke-virtual {p1}, LHqj;->a3()V
+    invoke-virtual {p1}, LHPj;->g3()V
 
     .line 9
     .line 10
@@ -1269,11 +1247,11 @@
     return-void
 .end method
 
-.method public final z1()V
+.method public final x1()V
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHqj;
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHPj;
 
     .line 2
     .line 3
@@ -1281,10 +1259,35 @@
     move-result-object v0
 
     .line 5
-    invoke-virtual {v0}, LHqj;->onStop()V
+    invoke-virtual {v0}, LHPj;->onStop()V
 
     .line 6
     .line 7
     .line 8
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/identity/loginsignup/ui/pages/username/UsernameFragment;->d2()LHPj;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p1, p0}, LHPj;->l3(LSPj;)V
+
+    .line 9
+    .line 10
+    .line 11
     return-void
 .end method

@@ -1,72 +1,39 @@
-.class public final synthetic LvB5;
-.super Lj28;
+.class public final LvB5;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
+# instance fields
+.field public final a:LlJe;
 
-# static fields
-.field public static final f0:LvB5;
+.field public final b:Lio/reactivex/rxjava3/subjects/Subject;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 6
+.method public constructor <init>(LlJe;)V
+    .locals 0
 
     .line 1
-    new-instance v0, LvB5;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const-string v5, "<init>(Lcom/snap/component/sectionheader/SnapSectionHeader;)V"
-
     .line 4
-    .line 5
-    const/4 v2, 0x0
+    iput-object p1, p0, LvB5;->a:LlJe;
 
+    .line 5
     .line 6
-    const/4 v1, 0x1
+    invoke-static {}, LzHa;->t()Lio/reactivex/rxjava3/subjects/Subject;
 
     .line 7
-    const-class v3, LnB5;
-
     .line 8
     .line 9
-    const-string v4, "<init>"
+    move-result-object p1
 
     .line 10
+    iput-object p1, p0, LvB5;->b:Lio/reactivex/rxjava3/subjects/Subject;
+
     .line 11
-    invoke-direct/range {v0 .. v5}, Lj28;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 12
-    .line 13
-    .line 14
-    sput-object v0, LvB5;->f0:LvB5;
-
-    .line 15
-    .line 16
     return-void
-.end method
-
-
-# virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    check-cast p1, Lcom/snap/component/sectionheader/SnapSectionHeader;
-
-    .line 2
-    .line 3
-    new-instance v0, LnB5;
-
-    .line 4
-    .line 5
-    invoke-direct {v0, p1}, LnB5;-><init>(Lcom/snap/component/sectionheader/SnapSectionHeader;)V
-
-    .line 6
-    .line 7
-    .line 8
-    return-object v0
 .end method

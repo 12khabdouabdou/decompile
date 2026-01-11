@@ -1,197 +1,250 @@
 .class public final Lcwk;
-.super Ljava/lang/Object;
+.super LwG9;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:I
-
-.field public final b:J
+.field public final h0:LVL0;
 
 
 # direct methods
-.method public constructor <init>(IJ)V
-    .locals 0
+.method public constructor <init>(LVL0;Lswk;Ljava/util/LinkedHashSet;Lqwk;Ljava/lang/String;Ljava/net/URI;LVL0;LVL0;Ljava/util/LinkedList;)V
+    .locals 10
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    sget-object v1, Lzvk;->t:Lzvk;
 
     .line 2
     .line 3
+    move-object v0, p0
+
     .line 4
-    iput p1, p0, Lcwk;->a:I
+    move-object v2, p2
 
     .line 5
+    move-object v3, p3
+
     .line 6
-    iput-wide p2, p0, Lcwk;->b:J
+    move-object v4, p4
 
     .line 7
+    move-object v5, p5
+
     .line 8
+    move-object/from16 v6, p6
+
+    .line 9
+    .line 10
+    move-object/from16 v7, p7
+
+    .line 11
+    .line 12
+    move-object/from16 v8, p8
+
+    .line 13
+    .line 14
+    move-object/from16 v9, p9
+
+    .line 15
+    .line 16
+    invoke-direct/range {v0 .. v9}, LwG9;-><init>(Lzvk;Lswk;Ljava/util/LinkedHashSet;Lqwk;Ljava/lang/String;Ljava/net/URI;LVL0;LVL0;Ljava/util/LinkedList;)V
+
+    .line 17
+    .line 18
+    .line 19
+    if-eqz p1, :cond_0
+
+    .line 20
+    .line 21
+    iput-object p1, p0, Lcwk;->h0:LVL0;
+
+    .line 22
+    .line 23
     return-void
+
+    .line 24
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
+
+    .line 25
+    .line 26
+    const-string p2, "The key value must not be null"
+
+    .line 27
+    .line 28
+    invoke-direct {p1, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 4
+.method public final a()LiG9;
+    .locals 3
 
     .line 1
-    if-ne p1, p0, :cond_0
+    invoke-super {p0}, LwG9;->a()LiG9;
 
     .line 2
     .line 3
-    goto :goto_0
+    .line 4
+    move-result-object v0
+
+    .line 5
+    iget-object v1, p0, Lcwk;->h0:LVL0;
+
+    .line 6
+    .line 7
+    iget-object v1, v1, LSL0;->a:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    const-string v2, "k"
+
+    .line 10
+    .line 11
+    invoke-virtual {v0, v2, v1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    const/4 p1, 0x1
 
     .line 4
+    return p1
+
+    .line 5
     :cond_0
     instance-of v0, p1, Lcwk;
 
-    .line 5
     .line 6
-    if-eqz v0, :cond_1
-
     .line 7
+    const/4 v1, 0x0
+
     .line 8
-    check-cast p1, Lcwk;
+    if-nez v0, :cond_1
 
     .line 9
     .line 10
-    iget v0, p1, Lcwk;->a:I
+    return v1
 
     .line 11
-    .line 12
-    iget v1, p0, Lcwk;->a:I
+    :cond_1
+    invoke-super {p0, p1}, LwG9;->equals(Ljava/lang/Object;)Z
 
+    .line 12
     .line 13
     .line 14
-    if-ne v1, v0, :cond_1
+    move-result v0
 
     .line 15
-    .line 16
-    iget-wide v0, p0, Lcwk;->b:J
+    if-nez v0, :cond_2
 
+    .line 16
     .line 17
+    return v1
+
     .line 18
-    iget-wide v2, p1, Lcwk;->b:J
+    :cond_2
+    check-cast p1, Lcwk;
 
     .line 19
     .line 20
-    cmp-long p1, v0, v2
+    iget-object v0, p0, Lcwk;->h0:LVL0;
 
     .line 21
     .line 22
-    if-nez p1, :cond_1
+    iget-object p1, p1, Lcwk;->h0:LVL0;
 
     .line 23
     .line 24
-    :goto_0
-    const/4 p1, 0x1
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 25
-    return p1
-
     .line 26
-    :cond_1
-    const/4 p1, 0x0
-
     .line 27
+    move-result p1
+
+    .line 28
     return p1
 .end method
 
-.method public final hashCode()I
-    .locals 6
+.method public final f()Z
+    .locals 1
 
     .line 1
-    iget v0, p0, Lcwk;->a:I
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
-    const v1, 0xf4243
-
-    .line 4
-    .line 5
-    .line 6
-    xor-int/2addr v0, v1
-
-    .line 7
-    iget-wide v2, p0, Lcwk;->b:J
-
-    .line 8
-    .line 9
-    const/16 v4, 0x20
-
-    .line 10
-    .line 11
-    ushr-long v4, v2, v4
-
-    .line 12
-    .line 13
-    xor-long/2addr v2, v4
-
-    .line 14
-    mul-int v0, v0, v1
-
-    .line 15
-    .line 16
-    long-to-int v1, v2
-
-    .line 17
-    xor-int/2addr v0, v1
-
-    .line 18
     return v0
 .end method
 
-.method public final toString()Ljava/lang/String;
+.method public final hashCode()I
     .locals 4
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-super {p0}, LwG9;->hashCode()I
 
     .line 2
     .line 3
-    const-string v1, "EventRecord{eventType="
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 6
     .line 7
     .line 8
-    iget v1, p0, Lcwk;->a:I
+    move-result-object v0
 
     .line 9
+    iget-object v1, p0, Lcwk;->h0:LVL0;
+
     .line 10
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 11
-    .line 12
-    .line 13
-    const-string v1, ", eventTimestamp="
+    const/4 v2, 0x2
 
+    .line 12
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 13
     .line 14
+    const/4 v3, 0x0
+
     .line 15
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object v0, v2, v3
 
     .line 16
     .line 17
+    const/4 v0, 0x1
+
     .line 18
-    iget-wide v1, p0, Lcwk;->b:J
+    aput-object v1, v2, v0
 
     .line 19
     .line 20
-    const-string v3, "}"
+    invoke-static {v2}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     .line 21
     .line 22
-    invoke-static {v0, v1, v2, v3}, LmG8;->p(Ljava/lang/StringBuilder;JLjava/lang/String;)Ljava/lang/String;
-
     .line 23
-    .line 24
-    .line 25
-    move-result-object v0
+    move-result v0
 
-    .line 26
-    return-object v0
+    .line 24
+    return v0
 .end method

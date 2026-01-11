@@ -22,11 +22,11 @@
 
 
 # instance fields
-.field public final b:[LZne;
+.field public final b:[LSFe;
 
 
 # direct methods
-.method public constructor <init>([LZne;)V
+.method public constructor <init>([LSFe;)V
     .locals 0
 
     .line 1
@@ -35,7 +35,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray;->b:[LZne;
+    iput-object p1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray;->b:[LSFe;
 
     .line 5
     .line 6
@@ -44,7 +44,7 @@
 
 
 # virtual methods
-.method public final C(LV6i;)V
+.method public final C(Lmvi;)V
     .locals 2
 
     .line 1
@@ -52,16 +52,16 @@
 
     .line 2
     .line 3
-    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray;->b:[LZne;
+    iget-object v1, p0, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray;->b:[LSFe;
 
     .line 4
     .line 5
-    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray$ConcatArraySubscriber;-><init>([LZne;LV6i;)V
+    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/flowable/FlowableConcatArray$ConcatArraySubscriber;-><init>([LSFe;Lmvi;)V
 
     .line 6
     .line 7
     .line 8
-    invoke-interface {p1, v0}, LV6i;->onSubscribe(Lc7i;)V
+    invoke-interface {p1, v0}, Lmvi;->onSubscribe(Ltvi;)V
 
     .line 9
     .line 10

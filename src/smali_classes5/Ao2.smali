@@ -1,3 +1,3 @@
 .class public abstract LAo2;
-.super Ljava/lang/Object;
+.super LBo2;
 .source "SourceFile"

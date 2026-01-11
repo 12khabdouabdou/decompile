@@ -1,10 +1,10 @@
 .class public final Lcom/snap/venueprofile/BasemapPlaceAnnotationState;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'isFavorite\':b,\'isPromoted\':b,\'isVisited\':b,\'isPopular\':b"
     typeReferences = {}

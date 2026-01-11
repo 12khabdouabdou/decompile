@@ -1,66 +1,118 @@
 .class public final LnKe;
-.super Lo17;
+.super Lxs9;
 .source "SourceFile"
 
 
+# instance fields
+.field public final Y:Lio/reactivex/rxjava3/core/Single;
+
+.field public final Z:I
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(LjX6;Lio/reactivex/rxjava3/core/Single;)V
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lo17;-><init>()V
+    sget-object p1, Lc2i;->Z:Lc2i;
 
     .line 2
     .line 3
-    .line 4
-    const/4 v0, 0x0
+    const-string v0, "QuestionStickerService"
 
+    .line 4
     .line 5
-    iput-object v0, p0, Lo17;->unknownFieldData:LLo7;
+    invoke-static {p1, p1, v0}, LoVh;->b(Lc2i;Lc2i;Ljava/lang/String;)Lnp0;
 
     .line 6
     .line 7
-    const/4 v0, -0x1
-
     .line 8
-    iput v0, p0, Lcom/google/protobuf/nano/MessageNano;->cachedSize:I
+    move-result-object p1
 
     .line 9
+    new-instance v0, LnJe;
+
     .line 10
+    .line 11
+    invoke-direct {v0, p1}, LnJe;-><init>(Lnp0;)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-direct {p0, v0}, Lxs9;-><init>(LnJe;)V
+
+    .line 15
+    .line 16
+    .line 17
+    iput-object p2, p0, LnKe;->Y:Lio/reactivex/rxjava3/core/Single;
+
+    .line 18
+    .line 19
+    const/16 p1, 0x12
+
+    .line 20
+    .line 21
+    iput p1, p0, LnKe;->Z:I
+
+    .line 22
+    .line 23
     return-void
 .end method
 
 
 # virtual methods
-.method public final mergeFrom(Lqa3;)Lcom/google/protobuf/nano/MessageNano;
-    .locals 1
+.method public final a(Lj1i;)Lio/reactivex/rxjava3/core/Flowable;
+    .locals 2
 
     .line 1
-    :cond_0
-    invoke-virtual {p1}, Lqa3;->u()I
+    new-instance p1, LMxe;
 
     .line 2
     .line 3
+    const/4 v0, 0x6
+
     .line 4
-    move-result v0
+    invoke-direct {p1, v0, p0}, LMxe;-><init>(ILjava/lang/Object;)V
 
     .line 5
-    if-eqz v0, :cond_1
-
     .line 6
     .line 7
-    invoke-virtual {p0, p1, v0}, Lo17;->storeUnknownField(Lqa3;I)Z
+    iget-object v0, p0, LnKe;->Y:Lio/reactivex/rxjava3/core/Single;
 
     .line 8
     .line 9
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
     .line 10
-    move-result v0
-
     .line 11
-    if-nez v0, :cond_0
-
     .line 12
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
     .line 13
-    :cond_1
-    return-object p0
+    .line 14
+    invoke-direct {v1, v0, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v1}, Lio/reactivex/rxjava3/core/Single;->y()Lio/reactivex/rxjava3/core/Flowable;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    return-object p1
+.end method
+
+.method public final s()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, LnKe;->Z:I
+
+    .line 2
+    .line 3
+    return v0
 .end method

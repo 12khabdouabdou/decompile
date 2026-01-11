@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public v0:Lq4e;
+.field public v0:LRle;
 
 
 # direct methods
@@ -22,22 +22,22 @@
 
 
 # virtual methods
-.method public final getIdentifier()Lq4e;
+.method public final getIdentifier()LRle;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/profile/sharedui/view/ProfileComposerRootView;->v0:Lq4e;
+    iget-object v0, p0, Lcom/snap/profile/sharedui/view/ProfileComposerRootView;->v0:LRle;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final setIdentifier(Lq4e;)V
+.method public final setIdentifier(LRle;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/snap/profile/sharedui/view/ProfileComposerRootView;->v0:Lq4e;
+    iput-object p1, p0, Lcom/snap/profile/sharedui/view/ProfileComposerRootView;->v0:LRle;
 
     .line 2
     .line 3

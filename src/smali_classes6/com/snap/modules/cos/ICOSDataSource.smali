@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LvU8;
+    proxyClass = LW19;
     schema = "\'blizzardClientId\':f|m|(): s,\'registrationFlowSessionId\':f|m|(): s?,\'loginFlowSessionId\':f|m|(): s?,\'clientNetworkRequestId\':f|m|(): s,\'loginAttemptId\':f|m|(): s?,\'cofDeviceId\':f|m|(): s,\'clientAuthenticationSessionId\':f|m|(): s,\'persistentAttestationDeviceId\':f|m|(): s?,\'cofTags\':f|m|(): p<t?>,\'cofConfigData\':f|m|(): t?,\'fideliusClientInit\':f|m|(): t?,\'predictedPhoneNumberCountryCode\':f|m|(): s?,\'deviceTokenId\':f|m|(): s,\'userAgentString\':f|m|(): s,\'networkContext\':f|m|(): r<e>:\'[0]\',\'setClientNetworkRequestId\':f|m|(s),\'routeTag\':f|m|(): s,\'shouldUseNativeErrorMessage\':f|m|(): b"
     typeReferences = {
         Lcom/snap/cos/NetworkContext;

@@ -1,108 +1,264 @@
-.class public abstract LUBa;
+.class public final LUBa;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# static fields
-.field public static final a:LtB6;
+# instance fields
+.field public final a:Landroid/location/Location;
+
+.field public final b:I
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 17
+.method public constructor <init>(Landroid/location/Location;I)V
+    .locals 0
 
     .line 1
-    sget-object v3, LEB6;->a:LEB6;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    const/16 v0, 0x8
+    .line 4
+    iput-object p1, p0, LUBa;->a:Landroid/location/Location;
+
+    .line 5
+    .line 6
+    iput p2, p0, LUBa;->b:I
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, LUBa;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, LUBa;
+
+    .line 10
+    .line 11
+    iget-object v0, p1, LUBa;->a:Landroid/location/Location;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LUBa;->a:Landroid/location/Location;
+
+    .line 14
+    .line 15
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_2
+    iget v0, p0, LUBa;->b:I
+
+    .line 23
+    .line 24
+    iget p1, p1, LUBa;->b:I
+
+    .line 25
+    .line 26
+    if-eq v0, p1, :cond_3
+
+    .line 27
+    .line 28
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 29
+    return p1
+
+    .line 30
+    :cond_3
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 31
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LUBa;->a:Landroid/location/Location;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Landroid/location/Location;->hashCode()I
 
     .line 4
     .line 5
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget v1, p0, LUBa;->b:I
+
+    .line 10
+    .line 11
+    invoke-static {v1}, LzHa;->L(I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "LocationWithProvider(location="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    move-result-object v0
+    iget-object v1, p0, LUBa;->a:Landroid/location/Location;
 
     .line 9
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
     .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
     .line 11
     .line 12
-    move-result-object v2
-
     .line 13
-    new-instance v0, LtB6;
+    const-string v1, ", provider="
 
     .line 14
     .line 15
-    const/16 v15, 0x3ff9
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
-    const/16 v16, 0x0
-
     .line 18
-    .line 19
-    const/4 v1, 0x0
+    iget v1, p0, LUBa;->b:I
 
+    .line 19
     .line 20
-    const/4 v4, 0x0
+    const/4 v2, 0x1
 
     .line 21
-    const/4 v5, 0x0
+    if-eq v1, v2, :cond_2
 
     .line 22
-    const/4 v6, 0x0
-
     .line 23
-    const/4 v7, 0x0
+    const/4 v2, 0x2
 
     .line 24
-    const/4 v8, 0x0
+    if-eq v1, v2, :cond_1
 
     .line 25
-    const/4 v9, 0x0
-
     .line 26
-    const/4 v10, 0x0
+    const/4 v2, 0x3
 
     .line 27
-    const/4 v11, 0x0
+    if-eq v1, v2, :cond_0
 
     .line 28
-    const/4 v12, 0x0
-
     .line 29
-    const/4 v13, 0x0
+    const-string v1, "null"
 
     .line 30
-    const/4 v14, 0x0
-
     .line 31
-    invoke-direct/range {v0 .. v16}, LtB6;-><init>(ILjava/util/List;LEB6;Ljava/lang/String;Lnk9;Lp7f;LnCi;ZZLjava/lang/Boolean;Ljava/lang/String;LWD7;Lnk9;ZILHr5;)V
+    goto :goto_0
 
     .line 32
+    :cond_0
+    const-string v1, "NETWORK"
+
     .line 33
     .line 34
-    sput-object v0, LUBa;->a:LtB6;
+    goto :goto_0
 
     .line 35
+    :cond_1
+    const-string v1, "FUSED_CACHED"
+
     .line 36
-    return-void
-.end method
+    .line 37
+    goto :goto_0
 
-.method public static final synthetic a()LtB6;
-    .locals 1
+    .line 38
+    :cond_2
+    const-string v1, "FUSED_FRESH"
 
-    .line 1
-    sget-object v0, LUBa;->a:LtB6;
+    .line 39
+    .line 40
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
-    .line 3
+    .line 41
+    .line 42
+    .line 43
+    const-string v1, ")"
+
+    .line 44
+    .line 45
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v0
+
+    .line 52
     return-object v0
 .end method

@@ -1,316 +1,292 @@
-.class public LUDe;
-.super LPd1;
+.class public final LUDe;
+.super LJP9;
 .source "SourceFile"
 
 # interfaces
-.implements LAXa;
+.implements Lkotlin/jvm/functions/Function0;
 
 
 # instance fields
-.field public b:Ljava/lang/Long;
+.field public final synthetic X:LDwc;
 
-.field public c:Ljava/lang/Long;
+.field public final synthetic a:I
 
-.field public d:Ljava/lang/Long;
+.field public final synthetic b:LVDe;
 
-.field public e:Ljava/lang/Long;
+.field public final synthetic c:Lcom/snap/composer/context/ComposerContext;
 
-.field public f:Ljava/lang/Long;
-
-.field public g:Ljava/lang/Long;
+.field public final synthetic t:Lcom/snap/composer/impala/snappro/nux/PublicProfileNuxView;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>(LVDe;Lcom/snap/composer/context/ComposerContext;Lcom/snap/composer/impala/snappro/nux/PublicProfileNuxView;LDwc;I)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p5, p0, LUDe;->a:I
 
-    .line 2
-    .line 3
-    .line 4
+    iput-object p1, p0, LUDe;->b:LVDe;
+
+    iput-object p2, p0, LUDe;->c:Lcom/snap/composer/context/ComposerContext;
+
+    iput-object p3, p0, LUDe;->t:Lcom/snap/composer/impala/snappro/nux/PublicProfileNuxView;
+
+    iput-object p4, p0, LUDe;->X:LDwc;
+
+    const/4 p1, 0x0
+
+    invoke-direct {p0, p1}, LJP9;-><init>(I)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(LAK3;Ljava/util/Set;)V
-    .locals 3
+.method public final d()Ljava/lang/Object;
+    .locals 19
 
     .line 1
-    const/4 v0, 0x1
+    move-object/from16 v0, p0
 
     .line 2
-    new-array v0, v0, [B
-
     .line 3
-    .line 4
-    const/4 v1, 0x2
+    iget v1, v0, LUDe;->a:I
 
+    .line 4
     .line 5
-    iget-object v2, p0, LUDe;->e:Ljava/lang/Long;
+    packed-switch v1, :pswitch_data_0
 
     .line 6
     .line 7
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
-
     .line 8
+    new-instance v2, LUDe;
+
     .line 9
     .line 10
-    const/4 v1, 0x3
+    iget-object v3, v0, LUDe;->b:LVDe;
 
     .line 11
-    iget-object v2, p0, LUDe;->c:Ljava/lang/Long;
-
     .line 12
-    .line 13
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    iget-object v5, v0, LUDe;->t:Lcom/snap/composer/impala/snappro/nux/PublicProfileNuxView;
 
+    .line 13
     .line 14
+    iget-object v6, v0, LUDe;->X:LDwc;
+
     .line 15
     .line 16
-    const/4 v1, 0x4
+    iget-object v4, v0, LUDe;->c:Lcom/snap/composer/context/ComposerContext;
 
     .line 17
-    iget-object v2, p0, LUDe;->g:Ljava/lang/Long;
-
     .line 18
+    const/4 v7, 0x0
+
     .line 19
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    invoke-direct/range {v2 .. v7}, LUDe;-><init>(LVDe;Lcom/snap/composer/context/ComposerContext;Lcom/snap/composer/impala/snappro/nux/PublicProfileNuxView;LDwc;I)V
 
     .line 20
     .line 21
     .line 22
-    const/4 v1, 0x5
+    invoke-static {v2}, LV4b;->c(Lkotlin/jvm/functions/Function0;)V
 
     .line 23
-    iget-object v2, p0, LUDe;->f:Ljava/lang/Long;
-
     .line 24
     .line 25
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    sget-object v1, Lewj;->a:Lewj;
 
     .line 26
     .line 27
+    return-object v1
+
     .line 28
-    const/4 v1, 0x6
+    :pswitch_0
+    new-instance v2, Laeh;
 
     .line 29
-    iget-object v2, p0, LUDe;->d:Ljava/lang/Long;
-
     .line 30
-    .line 31
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    iget-object v1, v0, LUDe;->b:LVDe;
 
+    .line 31
     .line 32
+    new-instance v3, LSdh;
+
     .line 33
     .line 34
-    const/4 v1, 0x7
+    new-instance v4, LWdh;
 
     .line 35
-    iget-object v2, p0, LUDe;->b:Ljava/lang/Long;
-
     .line 36
-    .line 37
-    invoke-static {p1, v1, v0, v2, p2}, Lew8;->z0(LAK3;I[BLjava/lang/Long;Ljava/util/Set;)V
+    iget-object v5, v0, LUDe;->c:Lcom/snap/composer/context/ComposerContext;
 
+    .line 37
     .line 38
+    iget-object v10, v1, LVDe;->a:Landroid/content/Context;
+
     .line 39
     .line 40
-    invoke-virtual {p1, v0}, LAK3;->m([B)V
+    invoke-static {v10, v5}, LRw9;->g(Landroid/content/Context;Lcom/snap/composer/context/ComposerContext;)I
 
     .line 41
     .line 42
     .line 43
-    return-void
-.end method
-
-.method public final e(Ljava/util/Map;)I
-    .locals 3
-
-    .line 1
-    const-string v0, "cached_resolver_results"
-
-    .line 2
-    .line 3
-    invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, Ljava/lang/Long;
-
-    .line 8
-    .line 9
-    iput-object v0, p0, LUDe;->e:Ljava/lang/Long;
-
-    .line 10
-    .line 11
-    const/4 v1, 0x1
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    const/4 v0, 0x1
-
-    .line 15
-    goto :goto_0
-
-    .line 16
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 17
-    :goto_0
-    const-string v2, "duration_ms"
-
-    .line 18
-    .line 19
-    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v2
-
-    .line 23
-    check-cast v2, Ljava/lang/Long;
-
-    .line 24
-    .line 25
-    iput-object v2, p0, LUDe;->c:Ljava/lang/Long;
-
-    .line 26
-    .line 27
-    if-eqz v2, :cond_1
-
-    .line 28
-    .line 29
-    add-int/lit8 v0, v0, 0x1
-
-    .line 30
-    .line 31
-    :cond_1
-    const-string v2, "num_reachability_changes"
-
-    .line 32
-    .line 33
-    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v2
-
-    .line 37
-    check-cast v2, Ljava/lang/Long;
-
-    .line 38
-    .line 39
-    iput-object v2, p0, LUDe;->g:Ljava/lang/Long;
-
-    .line 40
-    .line 41
-    if-eqz v2, :cond_2
-
-    .line 42
-    .line 43
-    add-int/lit8 v0, v0, 0x1
+    move-result v5
 
     .line 44
-    .line 45
-    :cond_2
-    const-string v2, "quic_connection_attempts"
+    invoke-direct {v4, v5}, LWdh;-><init>(I)V
 
+    .line 45
     .line 46
     .line 47
-    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v6, 0x0
 
     .line 48
+    const/16 v9, 0x1e
+
     .line 49
     .line 50
-    move-result-object v2
+    const/4 v5, 0x0
 
     .line 51
-    check-cast v2, Ljava/lang/Long;
+    const/4 v7, 0x0
 
     .line 52
+    const/4 v8, 0x0
+
     .line 53
-    iput-object v2, p0, LUDe;->f:Ljava/lang/Long;
+    invoke-direct/range {v3 .. v9}, LSdh;-><init>(LpSk;Lieh;LUdh;LP07;Lkotlin/jvm/functions/Function0;I)V
 
     .line 54
     .line 55
-    if-eqz v2, :cond_3
-
     .line 56
-    .line 57
-    add-int/lit8 v0, v0, 0x1
+    iget-object v5, v0, LUDe;->t:Lcom/snap/composer/impala/snappro/nux/PublicProfileNuxView;
 
+    .line 57
     .line 58
+    move-object v4, v3
+
     .line 59
-    :cond_3
-    const-string v2, "resolve_requests_sent"
+    move-object v3, v10
 
     .line 60
+    iget-object v10, v1, LVDe;->X:LZdh;
+
     .line 61
-    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 62
-    .line 63
-    .line 64
-    move-result-object v2
+    const/4 v15, 0x0
 
+    .line 63
+    const/16 v18, 0x6e00
+
+    .line 64
     .line 65
-    check-cast v2, Ljava/lang/Long;
+    iget-object v6, v1, LVDe;->e0:LmGc;
 
     .line 66
     .line 67
-    iput-object v2, p0, LUDe;->d:Ljava/lang/Long;
+    iget-object v7, v1, LVDe;->c:LIv9;
 
     .line 68
     .line 69
-    if-eqz v2, :cond_4
+    iget-object v8, v1, LVDe;->t:LeRf;
 
     .line 70
     .line 71
-    add-int/lit8 v0, v0, 0x1
+    iget-object v9, v1, LVDe;->b:LyPf;
 
     .line 72
     .line 73
-    :cond_4
-    const-string v2, "start_time_ms"
+    iget-object v11, v1, LVDe;->l0:Lio/reactivex/rxjava3/internal/operators/observable/ObservableHide;
 
     .line 74
     .line 75
-    invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v12, 0x0
 
     .line 76
+    const/4 v13, 0x0
+
     .line 77
+    const/4 v14, 0x0
+
     .line 78
-    move-result-object p1
+    const/16 v16, 0x0
 
     .line 79
-    check-cast p1, Ljava/lang/Long;
-
     .line 80
+    const/16 v17, 0x0
+
     .line 81
-    iput-object p1, p0, LUDe;->b:Ljava/lang/Long;
-
     .line 82
-    .line 83
-    if-eqz p1, :cond_5
+    invoke-direct/range {v2 .. v18}, Laeh;-><init>(Landroid/content/Context;LSdh;Landroid/view/View;LmGc;LIv9;LeRf;LyPf;LZdh;Lio/reactivex/rxjava3/core/Observable;LL4b;Lio/reactivex/rxjava3/core/Observable;Lkotlin/jvm/functions/Function0;ZLio/reactivex/rxjava3/core/Observable;Ljava/lang/Integer;I)V
 
+    .line 83
     .line 84
     .line 85
-    add-int/2addr v0, v1
+    new-instance v4, LcVb;
 
     .line 86
-    :cond_5
-    return v0
+    .line 87
+    invoke-direct {v4}, LcVb;-><init>()V
+
+    .line 88
+    .line 89
+    .line 90
+    new-instance v5, Ldqe;
+
+    .line 91
+    .line 92
+    iget-object v6, v0, LUDe;->X:LDwc;
+
+    .line 93
+    .line 94
+    const/16 v7, 0x9
+
+    .line 95
+    .line 96
+    invoke-direct {v5, v1, v7, v6}, Ldqe;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 97
+    .line 98
+    .line 99
+    iput-object v5, v4, LcVb;->X:Ljava/lang/Object;
+
+    .line 100
+    .line 101
+    iput-object v4, v2, Laeh;->k0:LcVb;
+
+    .line 102
+    .line 103
+    const/4 v4, 0x6
+
+    .line 104
+    const/4 v5, 0x0
+
+    .line 105
+    invoke-static {v10, v3, v5, v4}, LZdh;->b(LZdh;Landroid/content/Context;LL4b;I)LxFc;
+
+    .line 106
+    .line 107
+    .line 108
+    move-result-object v3
+
+    .line 109
+    iget-object v1, v1, LVDe;->e0:LmGc;
+
+    .line 110
+    .line 111
+    invoke-virtual {v1, v2, v3, v5}, LmGc;->H(LG4b;LyFc;LkFc;)V
+
+    .line 112
+    .line 113
+    .line 114
+    sget-object v1, Lewj;->a:Lewj;
+
+    .line 115
+    .line 116
+    return-object v1
+
+    .line 117
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

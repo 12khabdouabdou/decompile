@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LRhj;
+    proxyClass = LQGj;
     schema = "\'upload\':f|m|(r:\'[0]\'): p<r:\'[1]\'>"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupStepData;,
-        Lxhj;
+        LxGj;
     }
 .end annotation
 
@@ -29,7 +29,7 @@
             "Lcom/snap/modules/memories/backup/BackupStepData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Lxhj;",
+            "LxGj;",
             ">;"
         }
     .end annotation

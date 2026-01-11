@@ -1,12 +1,12 @@
 .class public final Lcom/snap/composer/views/AnimatedImageView;
-.super LoEg;
+.super LFZg;
 .source "SourceFile"
 
 # interfaces
-.implements LTv3;
-.implements LZz3;
-.implements LKu3;
-.implements LEt3;
+.implements Ldz3;
+.implements LsD3;
+.implements LPx3;
+.implements LFw3;
 
 
 # annotations
@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final Companion:LAS;
+.field public static final Companion:LJU;
 
 
 # instance fields
@@ -23,7 +23,7 @@
 
 .field private final clipToBoundsDefaultValue:Z
 
-.field private final clipper:Lrf2;
+.field private final clipper:Ldi2;
 
 .field private final clipperBounds:Landroid/graphics/Rect;
 
@@ -36,34 +36,34 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, LAS;
+    new-instance v0, LJU;
 
-    invoke-direct {v0}, LAS;-><init>()V
+    invoke-direct {v0}, LJU;-><init>()V
 
-    sput-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sput-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     return-void
 .end method
 
-.method public constructor <init>(LrEg;Lcom/snap/composer/logger/Logger;LvEg;Landroid/content/Context;)V
+.method public constructor <init>(LJZg;Lcom/snap/composer/logger/Logger;LNZg;Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, LoEg;-><init>(LrEg;Lcom/snap/composer/logger/Logger;LvEg;Landroid/content/Context;)V
+    invoke-direct {p0, p1, p2, p3, p4}, LFZg;-><init>(LJZg;Lcom/snap/composer/logger/Logger;LNZg;Landroid/content/Context;)V
 
     .line 2
     .line 3
     .line 4
-    new-instance p1, Lrf2;
+    new-instance p1, Ldi2;
 
     .line 5
     .line 6
-    invoke-direct {p1}, Lrf2;-><init>()V
+    invoke-direct {p1}, Ldi2;-><init>()V
 
     .line 7
     .line 8
     .line 9
-    iput-object p1, p0, Lcom/snap/composer/views/AnimatedImageView;->clipper:Lrf2;
+    iput-object p1, p0, Lcom/snap/composer/views/AnimatedImageView;->clipper:Ldi2;
 
     .line 10
     .line 11
@@ -83,11 +83,11 @@
 
     .line 18
     .line 19
-    sget-object p1, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object p1, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 20
     .line 21
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 22
     .line 23
@@ -103,7 +103,7 @@
     move-result-wide p2
 
     .line 29
-    invoke-static {p1, p2, p3}, LAS;->b(LAS;J)V
+    invoke-static {p1, p2, p3}, LJU;->b(LJU;J)V
 
     .line 30
     .line 31
@@ -296,7 +296,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {p0}, Lcom/snap/composer/views/AnimatedImageView;->getClipper()Lrf2;
+    invoke-virtual {p0}, Lcom/snap/composer/views/AnimatedImageView;->getClipper()Ldi2;
 
     .line 24
     .line 25
@@ -308,7 +308,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {v0, p1, v1}, Lrf2;->a(Landroid/graphics/Canvas;Landroid/graphics/Rect;)V
+    invoke-virtual {v0, p1, v1}, Ldi2;->a(Landroid/graphics/Canvas;Landroid/graphics/Rect;)V
 
     .line 30
     .line 31
@@ -322,7 +322,7 @@
     move-result-object v0
 
     .line 36
-    instance-of v1, v0, LTy3;
+    instance-of v1, v0, LgC3;
 
     .line 37
     .line 38
@@ -333,7 +333,7 @@
 
     .line 40
     .line 41
-    check-cast v0, LTy3;
+    check-cast v0, LgC3;
 
     .line 42
     .line 43
@@ -349,7 +349,7 @@
 
     .line 46
     .line 47
-    iget-object v2, v0, LTy3;->j0:LZcb;
+    iget-object v2, v0, LgC3;->j0:LDpb;
 
     .line 48
     .line 49
@@ -358,7 +358,7 @@
 
     .line 50
     .line 51
-    invoke-virtual {v2}, LZcb;->f()Z
+    invoke-virtual {v2}, LDpb;->v()Z
 
     .line 52
     .line 53
@@ -386,7 +386,7 @@
     move-result v1
 
     .line 65
-    invoke-virtual {v2, v0, v1, p1}, LZcb;->g(IILandroid/graphics/Canvas;)V
+    invoke-virtual {v2, v0, v1, p1}, LDpb;->x(IILandroid/graphics/Canvas;)V
 
     .line 66
     .line 67
@@ -396,7 +396,7 @@
     .line 69
     .line 70
     .line 71
-    invoke-virtual {v2, p1}, LZcb;->a(Landroid/graphics/Canvas;)V
+    invoke-virtual {v2, p1}, LDpb;->u(Landroid/graphics/Canvas;)V
 
     .line 72
     .line 73
@@ -411,7 +411,7 @@
     .line 77
     .line 78
     :goto_1
-    invoke-interface {p0}, LTv3;->getComposerForeground()Landroid/graphics/drawable/Drawable;
+    invoke-interface {p0}, Ldz3;->getComposerForeground()Landroid/graphics/drawable/Drawable;
 
     .line 79
     .line 80
@@ -423,7 +423,7 @@
 
     .line 83
     .line 84
-    invoke-interface {p0}, LTv3;->getWidth()I
+    invoke-interface {p0}, Ldz3;->getWidth()I
 
     .line 85
     .line 86
@@ -431,7 +431,7 @@
     move-result v1
 
     .line 88
-    invoke-interface {p0}, LTv3;->getHeight()I
+    invoke-interface {p0}, Ldz3;->getHeight()I
 
     .line 89
     .line 90
@@ -478,11 +478,11 @@
     return v0
 .end method
 
-.method public getClipper()Lrf2;
+.method public getClipper()Ldi2;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/composer/views/AnimatedImageView;->clipper:Lrf2;
+    iget-object v0, p0, Lcom/snap/composer/views/AnimatedImageView;->clipper:Ldi2;
 
     .line 2
     .line 3
@@ -666,11 +666,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 4
     .line 5
@@ -686,7 +686,7 @@
     move-result-wide v1
 
     .line 11
-    invoke-static {v0, v1, v2, p1, p2}, LAS;->a(LAS;JD)V
+    invoke-static {v0, v1, v2, p1, p2}, LJU;->a(LJU;JD)V
 
     .line 12
     .line 13
@@ -698,11 +698,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 4
     .line 5
@@ -718,7 +718,7 @@
     move-result-wide v1
 
     .line 11
-    invoke-static {v0, v1, v2, p1, p2}, LAS;->c(LAS;JD)V
+    invoke-static {v0, v1, v2, p1, p2}, LJU;->c(LJU;JD)V
 
     .line 12
     .line 13
@@ -730,11 +730,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 4
     .line 5
@@ -750,7 +750,7 @@
     move-result-wide v1
 
     .line 11
-    invoke-static {v0, v1, v2, p1, p2}, LAS;->d(LAS;JD)V
+    invoke-static {v0, v1, v2, p1, p2}, LJU;->d(LJU;JD)V
 
     .line 12
     .line 13
@@ -784,11 +784,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 4
     .line 5
@@ -804,7 +804,7 @@
     move-result-wide v1
 
     .line 11
-    invoke-static {v0, v1, v2, p1, p2}, LAS;->e(LAS;JD)V
+    invoke-static {v0, v1, v2, p1, p2}, LJU;->e(LJU;JD)V
 
     .line 12
     .line 13
@@ -816,11 +816,11 @@
     .locals 6
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 4
     .line 5
@@ -872,7 +872,7 @@
 
     .line 26
     :goto_1
-    invoke-static/range {v0 .. v5}, LAS;->f(LAS;JJZ)V
+    invoke-static/range {v0 .. v5}, LJU;->f(LJU;JJZ)V
 
     .line 27
     .line 28
@@ -891,13 +891,13 @@
     return-void
 .end method
 
-.method public final setOnProgress(LBS;)V
+.method public final setOnProgress(LKU;)V
     .locals 0
 
     .line 2
-    new-instance p1, LCS;
+    new-instance p1, LLU;
 
-    invoke-direct {p1}, LCS;-><init>()V
+    invoke-direct {p1}, LLU;-><init>()V
 
     invoke-virtual {p0, p1}, Lcom/snap/composer/views/AnimatedImageView;->setOnProgress(Lcom/snap/composer/callable/ComposerFunction;)V
 
@@ -908,9 +908,9 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     move-result-object v1
 
@@ -918,7 +918,7 @@
 
     move-result-wide v1
 
-    invoke-static {v0, v1, v2, p1}, LAS;->g(LAS;JLcom/snap/composer/callable/ComposerFunction;)V
+    invoke-static {v0, v1, v2, p1}, LJU;->g(LJU;JLcom/snap/composer/callable/ComposerFunction;)V
 
     return-void
 .end method
@@ -927,11 +927,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 4
     .line 5
@@ -947,7 +947,7 @@
     move-result-wide v1
 
     .line 11
-    invoke-static {v0, v1, v2, p1}, LAS;->h(LAS;JLjava/lang/String;)V
+    invoke-static {v0, v1, v2, p1}, LJU;->h(LJU;JLjava/lang/String;)V
 
     .line 12
     .line 13
@@ -959,11 +959,11 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LAS;
+    sget-object v0, Lcom/snap/composer/views/AnimatedImageView;->Companion:LJU;
 
     .line 2
     .line 3
-    invoke-virtual {p0}, LoEg;->getSnapDrawingRootHandle()LtEg;
+    invoke-virtual {p0}, LFZg;->getSnapDrawingRootHandle()LLZg;
 
     .line 4
     .line 5
@@ -979,7 +979,7 @@
     move-result-wide v1
 
     .line 11
-    invoke-static {v0, v1, v2, p1}, LAS;->i(LAS;JZ)V
+    invoke-static {v0, v1, v2, p1}, LJU;->i(LJU;JZ)V
 
     .line 12
     .line 13
@@ -991,7 +991,7 @@
     .locals 3
 
     .line 1
-    invoke-interface {p0}, LTv3;->getComposerForeground()Landroid/graphics/drawable/Drawable;
+    invoke-interface {p0}, Ldz3;->getComposerForeground()Landroid/graphics/drawable/Drawable;
 
     .line 2
     .line 3

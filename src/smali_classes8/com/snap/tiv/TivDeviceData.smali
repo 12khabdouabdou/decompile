@@ -1,10 +1,10 @@
 .class public final Lcom/snap/tiv/TivDeviceData;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'userAgent\':s,\'device\':s,\'os\':s,\'browser\':s"
     typeReferences = {}

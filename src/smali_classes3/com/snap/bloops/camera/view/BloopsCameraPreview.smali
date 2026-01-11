@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public a:LOLf;
+.field public a:Lf5g;
 
 .field public final b:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
@@ -42,7 +42,7 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 2
-    sget-object p1, Lah1;->b:Lah1;
+    sget-object p1, LAk1;->b:LAk1;
 
     .line 3
     new-instance p2, Lio/reactivex/rxjava3/subjects/BehaviorSubject;
@@ -117,7 +117,7 @@
     .locals 1
 
     .line 1
-    sget-object p1, Lah1;->a:Lah1;
+    sget-object p1, LAk1;->a:LAk1;
 
     .line 2
     .line 3
@@ -137,7 +137,7 @@
     .locals 1
 
     .line 1
-    sget-object p1, Lah1;->b:Lah1;
+    sget-object p1, LAk1;->b:LAk1;
 
     .line 2
     .line 3

@@ -4,15 +4,21 @@
 
 
 # instance fields
-.field public final a:LTqc;
+.field public final a:LYK4;
 
-.field public final b:Landroid/content/Context;
+.field public final b:LYK4;
 
-.field public final c:Lso1;
+.field public final c:LYK4;
+
+.field public final d:LnJe;
+
+.field public final e:LDBe;
+
+.field public final f:LJp0;
 
 
 # direct methods
-.method public constructor <init>(LTqc;Landroid/content/Context;Lso1;)V
+.method public constructor <init>(LYK4;LYK4;LYK4;LDBe;)V
     .locals 0
 
     .line 1
@@ -21,214 +27,280 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lqo1;->a:LTqc;
+    iput-object p1, p0, Lqo1;->a:LYK4;
 
     .line 5
     .line 6
-    iput-object p2, p0, Lqo1;->b:Landroid/content/Context;
+    iput-object p2, p0, Lqo1;->b:LYK4;
 
     .line 7
     .line 8
-    iput-object p3, p0, Lqo1;->c:Lso1;
+    iput-object p3, p0, Lqo1;->c:LYK4;
 
     .line 9
     .line 10
-    sget-object p1, Lkk1;->Z:Lkk1;
+    sget-object p1, LNn1;->Z:LNn1;
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const-string p2, "BloopsFriendPolicyProviderImpl"
 
     .line 13
     .line 14
-    .line 15
-    const-string p1, "BloopsOnboardingLegalDialogControllerImpl"
+    invoke-static {p1, p1, p2}, LAx6;->d(LNn1;LNn1;Ljava/lang/String;)Lnp0;
 
+    .line 15
     .line 16
     .line 17
-    invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+    move-result-object p1
 
     .line 18
+    new-instance p3, LnJe;
+
     .line 19
     .line 20
-    sget-object p1, Lrn0;->a:Lrn0;
+    invoke-direct {p3, p1}, LnJe;-><init>(Lnp0;)V
 
     .line 21
     .line 22
+    .line 23
+    iput-object p3, p0, Lqo1;->d:LnJe;
+
+    .line 24
+    .line 25
+    iput-object p4, p0, Lqo1;->e:LDBe;
+
+    .line 26
+    .line 27
+    invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 28
+    .line 29
+    .line 30
+    sget-object p1, LJp0;->a:LJp0;
+
+    .line 31
+    .line 32
+    iput-object p1, p0, Lqo1;->f:LJp0;
+
+    .line 33
+    .line 34
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/view/View;)V
-    .locals 8
+.method public final a()Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    .locals 3
 
     .line 1
-    sget-object v0, Lkk1;->Z:Lkk1;
+    new-instance v0, LUu0;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/16 v1, 0x15
 
     .line 4
     .line 5
-    .line 6
-    sget-object v4, Lkk1;->j0:LcSa;
+    invoke-direct {v0, v1, p0}, LUu0;-><init>(ILjava/lang/Object;)V
 
+    .line 6
     .line 7
     .line 8
-    new-instance v1, LO76;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
 
     .line 9
     .line 10
-    const/4 v5, 0x0
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 11
-    const/4 v6, 0x0
-
     .line 12
-    iget-object v2, p0, Lqo1;->b:Landroid/content/Context;
-
     .line 13
+    sget-object v0, LOR8;->p0:LOR8;
+
     .line 14
-    iget-object v3, p0, Lqo1;->a:LTqc;
-
     .line 15
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
     .line 16
-    const/16 v7, 0xf0
-
     .line 17
-    .line 18
-    invoke-direct/range {v1 .. v7}, LO76;-><init>(Landroid/content/Context;LTqc;LcSa;ZLcYg;I)V
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
+    .line 18
     .line 19
     .line 20
+    return-object v2
+.end method
+
+.method public final b(Loo1;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+    .locals 3
+
+    .line 1
+    new-instance v0, LUu0;
+
+    .line 2
+    .line 3
+    const/16 v1, 0x15
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1, p0}, LUu0;-><init>(ILjava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
+
+    .line 9
+    .line 10
+    invoke-direct {v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-object v0, p0, Lqo1;->d:LnJe;
+
+    .line 14
+    .line 15
+    invoke-virtual {v0}, LnJe;->d()LA36;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v0
+
+    .line 19
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
+
+    .line 20
     .line 21
-    iget-object v0, v1, LO76;->i:Landroid/widget/LinearLayout;
+    invoke-direct {v2, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
     .line 22
     .line 23
-    invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
-
     .line 24
+    new-instance v0, Lkg1;
+
     .line 25
     .line 26
-    invoke-virtual {v1}, LO76;->b()LP76;
+    const/16 v1, 0x9
 
     .line 27
     .line 28
+    invoke-direct {v0, v1, p1}, Lkg1;-><init>(ILjava/lang/Object;)V
+
     .line 29
-    move-result-object p1
-
     .line 30
-    new-instance v0, LfNd;
-
     .line 31
-    .line 32
-    const/4 v1, 0x0
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
+    .line 32
     .line 33
-    iget-object v2, p0, Lqo1;->a:LTqc;
+    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 34
     .line 35
-    iget-object v3, p1, LP76;->m0:Lcqc;
-
     .line 36
-    .line 37
-    invoke-direct {v0, v2, p1, v3, v1}, LfNd;-><init>(LTqc;LWRa;Ldqc;LPpc;)V
+    new-instance v0, LRO0;
 
+    .line 37
     .line 38
+    const/16 v2, 0xe
+
     .line 39
     .line 40
-    invoke-virtual {v2, v0}, LTqc;->H(LOpc;)V
+    invoke-direct {v0, p0, v2, p1}, LRO0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 41
     .line 42
     .line 43
-    return-void
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/core/Completable;->i(Lio/reactivex/rxjava3/functions/Action;)Lio/reactivex/rxjava3/internal/operators/completable/CompletablePeek;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object p1
+
+    .line 47
+    return-object p1
 .end method
 
-.method public final b(Lwo1;)V
-    .locals 5
+.method public final c(Loo1;LMs1;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+    .locals 3
 
     .line 1
-    const/4 v0, 0x0
+    invoke-virtual {p0}, Lqo1;->a()Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 2
-    iget-object v1, p0, Lqo1;->b:Landroid/content/Context;
-
     .line 3
     .line 4
-    const v2, 0x7f0e008a
+    move-result-object v0
 
     .line 5
+    iget-object v1, p0, Lqo1;->d:LnJe;
+
     .line 6
     .line 7
-    invoke-static {v1, v2, v0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
+    invoke-virtual {v1}, LnJe;->d()LA36;
 
     .line 8
     .line 9
     .line 10
-    move-result-object v0
+    move-result-object v1
 
     .line 11
-    const v1, 0x7f0b076a
+    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;
 
     .line 12
     .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleSubscribeOn;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/Scheduler;)V
 
+    .line 14
     .line 15
     .line 16
-    .line 17
-    move-result-object v1
+    new-instance v0, LSv0;
 
+    .line 17
     .line 18
-    check-cast v1, Lcom/snap/component/button/SnapCheckBox;
+    const/16 v1, 0x1c
 
     .line 19
     .line 20
-    const v2, 0x7f0b028c
+    invoke-direct {v0, p0, v1, p1}, LSv0;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 21
     .line 22
     .line 23
-    invoke-virtual {v0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    new-instance v1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
 
     .line 24
     .line 25
+    invoke-direct {v1, v2, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 26
-    move-result-object v2
-
     .line 27
-    check-cast v2, Lcom/snap/ui/view/SnapFontTextView;
-
     .line 28
+    new-instance v0, LiR0;
+
     .line 29
-    new-instance v3, Lca;
-
     .line 30
+    const/16 v2, 0x8
+
     .line 31
-    const/16 v4, 0xc
-
     .line 32
-    .line 33
-    invoke-direct {v3, v1, v4, p1}, Lca;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+    invoke-direct {v0, p0, p1, p2, v2}, LiR0;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
 
+    .line 33
     .line 34
     .line 35
-    .line 36
-    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
 
+    .line 36
     .line 37
+    invoke-direct {p1, v1, v0}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
     .line 38
     .line 39
-    invoke-virtual {p0, v0}, Lqo1;->a(Landroid/view/View;)V
-
     .line 40
-    .line 41
-    .line 42
-    return-void
+    return-object p1
 .end method

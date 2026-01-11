@@ -6,7 +6,6 @@
 //texture texture2D rightTexture 2:1:2:3
 //SG_REFLECTION_END
 #if defined VERTEX_SHADER
-#include <required2.glsl>
 #include <std2_vs.glsl>
 #include <std2_fs.glsl>
 #include <std2_texture.glsl>
@@ -16,7 +15,6 @@ sc_Vertex_t l9_0=sc_LoadVertexAttributes();
 sc_ProcessVertex(sc_Vertex_t(vec4(position.xy,0.0,1.0),l9_0.normal,l9_0.tangent,l9_0.texture0,l9_0.texture1));
 }
 #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER
-#include <required2.glsl>
 #include <std2_vs.glsl>
 #include <std2_fs.glsl>
 #include <std2_texture.glsl>

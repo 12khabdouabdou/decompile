@@ -1,130 +1,302 @@
 .class public final LDbf;
-.super LrE9;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function1;
 
 
 # instance fields
-.field public final synthetic X:Ljava/lang/String;
+.field public final a:LFE0;
 
-.field public final synthetic a:I
+.field public final b:Z
 
-.field public final synthetic b:Ljava/lang/String;
-
-.field public final synthetic c:I
-
-.field public final synthetic t:Lq0h;
+.field public final c:LErd;
 
 
 # direct methods
-.method public synthetic constructor <init>(IILq0h;Ljava/lang/String;Ljava/lang/String;)V
+.method public constructor <init>(LFE0;ZLErd;)V
     .locals 0
 
     .line 1
-    iput p2, p0, LDbf;->a:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p4, p0, LDbf;->b:Ljava/lang/String;
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LDbf;->a:LFE0;
 
-    iput p1, p0, LDbf;->c:I
+    .line 5
+    .line 6
+    iput-boolean p2, p0, LDbf;->b:Z
 
-    iput-object p3, p0, LDbf;->t:Lq0h;
+    .line 7
+    .line 8
+    iput-object p3, p0, LDbf;->c:LErd;
 
-    iput-object p5, p0, LDbf;->X:Ljava/lang/String;
-
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
     .line 1
-    iget v0, p0, LDbf;->a:I
+    if-ne p0, p1, :cond_0
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, LDbf;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, LDbf;
+
+    .line 10
+    .line 11
+    iget-object v0, p1, LDbf;->a:LFE0;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, LDbf;->a:LFE0;
+
+    .line 14
+    .line 15
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v0
+
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    goto :goto_0
+
+    .line 22
+    :cond_2
+    iget-boolean v0, p0, LDbf;->b:Z
+
+    .line 23
+    .line 24
+    iget-boolean v1, p1, LDbf;->b:Z
+
+    .line 25
+    .line 26
+    if-eq v0, v1, :cond_3
+
+    .line 27
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_3
+    iget-object v0, p0, LDbf;->c:LErd;
+
+    .line 30
+    .line 31
+    iget-object p1, p1, LDbf;->c:LErd;
+
+    .line 32
+    .line 33
+    invoke-static {v0, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p1
+
+    .line 37
+    if-nez p1, :cond_4
+
+    .line 38
+    .line 39
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 40
+    return p1
+
+    .line 41
+    :cond_4
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 42
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, LDbf;->a:LFE0;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     .line 4
     .line 5
     .line 6
-    check-cast p1, LdE2;
+    move-result v0
 
     .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
     .line 8
-    iget-object v0, p0, LDbf;->t:Lq0h;
-
     .line 9
+    iget-boolean v1, p0, LDbf;->b:Z
+
     .line 10
-    iget-object v1, p0, LDbf;->X:Ljava/lang/String;
-
     .line 11
+    if-eqz v1, :cond_0
+
     .line 12
-    iget-object v2, p0, LDbf;->b:Ljava/lang/String;
-
     .line 13
-    .line 14
-    iget v3, p0, LDbf;->c:I
+    const/16 v1, 0x4cf
 
+    .line 14
     .line 15
+    goto :goto_0
+
     .line 16
-    invoke-interface {p1, v2, v3, v0, v1}, LdE2;->e0(Ljava/lang/String;ILq0h;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+    :cond_0
+    const/16 v1, 0x4d5
 
     .line 17
     .line 18
+    :goto_0
+    add-int/2addr v0, v1
+
     .line 19
-    sget-object p1, Li7j;->a:Li7j;
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 20
     .line 21
-    return-object p1
+    iget-object v1, p0, LDbf;->c:LErd;
 
     .line 22
-    :pswitch_0
-    check-cast p1, LdE2;
-
     .line 23
-    .line 24
-    iget-object v0, p0, LDbf;->t:Lq0h;
+    if-nez v1, :cond_1
 
+    .line 24
     .line 25
+    const/4 v1, 0x0
+
     .line 26
-    iget-object v1, p0, LDbf;->X:Ljava/lang/String;
+    goto :goto_1
 
     .line 27
+    :cond_1
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
     .line 28
-    iget-object v2, p0, LDbf;->b:Ljava/lang/String;
+    .line 29
+    .line 30
+    move-result v1
+
+    .line 31
+    :goto_1
+    add-int/2addr v0, v1
+
+    .line 32
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "RendererComponent(avSyncer="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LDbf;->a:LFE0;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", keepDefaultAudioOutput="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-boolean v1, p0, LDbf;->b:Z
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ", audioOutput="
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object v1, p0, LDbf;->c:LErd;
 
     .line 29
     .line 30
-    iget v3, p0, LDbf;->c:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
-    invoke-interface {p1, v2, v3, v0, v1}, LdE2;->z(Ljava/lang/String;ILq0h;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
-
     .line 33
+    const-string v1, ")"
+
     .line 34
     .line 35
-    sget-object p1, Li7j;->a:Li7j;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
     .line 37
-    return-object p1
-
     .line 38
-    nop
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 39
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 40
+    .line 41
+    move-result-object v0
+
+    .line 42
+    return-object v0
 .end method

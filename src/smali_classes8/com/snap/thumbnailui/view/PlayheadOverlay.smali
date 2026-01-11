@@ -26,7 +26,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/thumbnailui/view/PlayheadOverlay;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/thumbnailui/view/PlayheadOverlay;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v5}, Lcom/snap/thumbnailui/view/PlayheadOverlay;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+    invoke-direct/range {v0 .. v5}, Lcom/snap/thumbnailui/view/PlayheadOverlay;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
 
     return-void
 .end method
@@ -68,7 +68,7 @@
 
     move-result-object p3
 
-    const v0, 0x7f06031c
+    const v0, 0x7f0603a4
 
     .line 7
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
@@ -76,7 +76,7 @@
     move-result-object p1
 
     .line 8
-    invoke-static {p3, v0, p1}, LM3f;->b(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
+    invoke-static {p3, v0, p1}, LIlf;->b(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)I
 
     move-result p1
 
@@ -98,7 +98,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILHr5;)V
+.method public synthetic constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IILex5;)V
     .locals 0
 
     and-int/lit8 p5, p4, 0x2

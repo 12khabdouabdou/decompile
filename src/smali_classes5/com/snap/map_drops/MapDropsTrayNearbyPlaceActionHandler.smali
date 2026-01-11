@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LWXa;
+    proxyClass = Labb;
     schema = "\'onNearbyPlaceTap\':f|m|(r:\'[0]\'),\'onNearbyPlaceSend\':f|m|(r:\'[0]\'),\'onSuggestAPlaceTap\':f|m|(),\'getNearbyPlacePreviewThumbnailObservable\':f?|m|(s): g<c>:\'[1]\'<s>,\'onNearbyPlaceStoryTap\':f?|m|(s),\'getVenueStoryAnalytics\':f?|m|(): r:\'[2]\',\'onViewMoreOrLessTap\':f?|m|(b)"
     typeReferences = {
         Lcom/snap/places/placeprofile/PlaceCardData;,
@@ -21,9 +21,6 @@
 
 # virtual methods
 .method public abstract getNearbyPlacePreviewThumbnailObservable(Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -34,10 +31,13 @@
             ">;"
         }
     .end annotation
+
+    .annotation runtime LhC3;
+    .end annotation
 .end method
 
 .method public abstract getVenueStoryAnalytics()Lcom/snap/venues/api/VenueStoryAnalytics;
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -45,7 +45,7 @@
 .end method
 
 .method public abstract onNearbyPlaceStoryTap(Ljava/lang/String;)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
@@ -56,7 +56,7 @@
 .end method
 
 .method public abstract onViewMoreOrLessTap(Z)V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

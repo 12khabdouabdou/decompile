@@ -1,10 +1,10 @@
 .class public final Lcom/snap/client/composer/Point;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'x\':d,\'y\':d"
     typeReferences = {}

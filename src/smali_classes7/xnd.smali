@@ -1,43 +1,16 @@
 .class public final Lxnd;
-.super Lcom/snap/composer/utils/b;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation runtime LDu3;
-    propertyReplacements = ""
-    schema = "\'actionHandler\':r:\'[0]\',\'audioDataLoader\':r:\'[1]\',\'playerFactory\':r:\'[2]\',\'audioFactory\':r:\'[3]\',\'alertPresenter\':r:\'[4]\',\'musicGrpcService\':r:\'[5]\',\'navigator\':r?:\'[6]\',\'pickerDeckContainer\':f?(): r:\'[7]\',\'cameraRollDeckPresenter\':r?:\'[8]\',\'cameraRollPresenter\':r?:\'[9]\',\'searchGrpcService\':r?:\'[5]\',\'userInfoProvider\':r?:\'[10]\',\'blizzardLogger\':r:\'[11]\',\'boltUploader\':r?:\'[12]\',\'actionSheetPresenter\':r?:\'[13]\',\'audioRecorder\':r?:\'[14]\',\'application\':r?:\'[15]\',\'favoritesService\':r?:\'[16]\',\'topicPagePresenter\':r?:\'[17]\',\'notificationPresenter\':r?:\'[18]\',\'featureSettings\':r?:\'[19]\',\'recentsService\':r?:\'[20]\',\'bitmojiAvatarId\':s?,\'tweaks\':r?:\'[21]\',\'startupStartTimeMs\':d@?,\'isDebugBuild\':b@?,\'pickerStartupLoader\':r?:\'[22]\',\'userAgentInfo\':r?:\'[23]\',\'callHandlerOnDestroy\':b@?"
-    typeReferences = {
-        Lcom/snap/music/core/composer/IPickerActionHandler;,
-        Lcom/snap/music/core/composer/IAudioDataLoader;,
-        Lcom/snap/impala/common/media/IPlayerFactory;,
-        Lcom/snap/impala/common/media/IAudioFactory;,
-        Lcom/snap/composer/foundation/IAlertPresenter;,
-        Lcom/snap/composer/networking/GrpcServiceProtocol;,
-        Lcom/snap/composer/navigation/INavigator;,
-        Lcom/snap/modules/deck/ComposerDeckContainerInterface;,
-        Lcom/snap/music/core/composer/ICameraRollDeckPresenter;,
-        Lcom/snap/music/core/composer/ICameraRollPresenter;,
-        Lcom/snap/composer/people/userinfo/UserInfoProviding;,
-        Lcom/snap/composer/blizzard/Logging;,
-        Lcom/snap/composer/networking/IBoltUploader;,
-        Lcom/snap/composer/foundation/IActionSheetPresenter;,
-        Lcom/snap/impala/common/media/IAudioRecorder;,
-        Lcom/snap/composer/foundation/IApplication;,
-        Lcom/snap/music/core/composer/FavoritesService;,
-        Lcom/snap/impala/common/media/ITopicPagePresenter;,
-        Lcom/snap/composer/music/INotificationPresenter;,
-        Lcom/snap/music/core/composer/FeatureSettings;,
-        Lcom/snap/music/core/composer/RecentsService;,
-        Lcom/snap/music/core/composer/IPickerTweaks;,
-        Lcom/snap/music/core/composer/IPickerStartupLoader;,
-        Lcom/snap/modules/creative_tools/platform/CreativeToolsPlatformComposerUserAgentInfo;
-    }
-.end annotation
+# instance fields
+.field public final a:Lwt9;
+
+.field public final b:LGbd;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lwt9;LGbd;)V
     .locals 0
 
     .line 1
@@ -46,5 +19,202 @@
     .line 2
     .line 3
     .line 4
+    iput-object p1, p0, Lxnd;->a:Lwt9;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, Lxnd;->b:LGbd;
+
+    .line 7
+    .line 8
     return-void
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lxnd;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lxnd;
+
+    .line 12
+    .line 13
+    iget-object v1, p1, Lxnd;->a:Lwt9;
+
+    .line 14
+    .line 15
+    iget-object v3, p0, Lxnd;->a:Lwt9;
+
+    .line 16
+    .line 17
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Lxnd;->b:LGbd;
+
+    .line 25
+    .line 26
+    iget-object p1, p1, Lxnd;->b:LGbd;
+
+    .line 27
+    .line 28
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    return v0
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lxnd;->a:Lwt9;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lxnd;->b:LGbd;
+
+    .line 10
+    .line 11
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "InjectedPage(injectionPoint="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lxnd;->a:Lwt9;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", models="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget-object v1, p0, Lxnd;->b:LGbd;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 21
+    .line 22
+    .line 23
+    const-string v1, ")"
+
+    .line 24
+    .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v0
+
+    .line 32
+    return-object v0
 .end method

@@ -1,177 +1,196 @@
-.class public final enum LUTd;
-.super Ljava/lang/Enum;
+.class public abstract synthetic LUTd;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # static fields
-.field public static final synthetic X:[LUTd;
-
-.field public static final enum a:LUTd;
-
-.field public static final enum b:LUTd;
-
-.field public static final enum c:LUTd;
-
-.field public static final enum t:LUTd;
+.field public static final synthetic a:[I
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 9
+    .locals 3
 
     .line 1
-    const/4 v0, 0x3
+    invoke-static {}, Lcom/snap/plus/LocalSubscribePageExperienceType;->values()[Lcom/snap/plus/LocalSubscribePageExperienceType;
 
     .line 2
-    const/4 v1, 0x2
-
     .line 3
-    const/4 v2, 0x1
-
     .line 4
-    const/4 v3, 0x0
+    move-result-object v0
 
     .line 5
-    new-instance v4, LUTd;
+    array-length v0, v0
 
     .line 6
+    new-array v0, v0, [I
+
     .line 7
-    const-string v5, "SAVE_STARTED"
-
     .line 8
-    .line 9
-    invoke-direct {v4, v5, v3}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :try_start_0
+    sget-object v1, Lcom/snap/plus/LocalSubscribePageExperienceType;->NONE:Lcom/snap/plus/LocalSubscribePageExperienceType;
 
+    .line 9
     .line 10
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 11
     .line 12
-    sput-object v4, LUTd;->a:LUTd;
-
     .line 13
+    move-result v1
+
     .line 14
-    new-instance v5, LUTd;
+    const/4 v2, 0x1
 
     .line 15
+    aput v2, v0, v1
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 16
-    const-string v6, "SAVE_FINISHED"
-
     .line 17
-    .line 18
-    invoke-direct {v5, v6, v2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :catch_0
+    :try_start_1
+    sget-object v1, Lcom/snap/plus/LocalSubscribePageExperienceType;->AD_FREE:Lcom/snap/plus/LocalSubscribePageExperienceType;
 
+    .line 18
     .line 19
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 20
     .line 21
-    sput-object v5, LUTd;->b:LUTd;
-
     .line 22
+    move-result v1
+
     .line 23
-    new-instance v6, LUTd;
+    const/4 v2, 0x2
 
     .line 24
+    aput v2, v0, v1
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
     .line 25
-    const-string v7, "SAVE_ERRORED"
-
     .line 26
-    .line 27
-    invoke-direct {v6, v7, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :catch_1
+    :try_start_2
+    sget-object v1, Lcom/snap/plus/LocalSubscribePageExperienceType;->LENS_PASS:Lcom/snap/plus/LocalSubscribePageExperienceType;
 
+    .line 27
     .line 28
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 29
     .line 30
-    sput-object v6, LUTd;->c:LUTd;
-
     .line 31
+    move-result v1
+
     .line 32
-    new-instance v7, LUTd;
+    const/4 v2, 0x3
 
     .line 33
+    aput v2, v0, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
     .line 34
-    const-string v8, "NOT_SAVED"
-
     .line 35
-    .line 36
-    invoke-direct {v7, v8, v0}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    :catch_2
+    :try_start_3
+    sget-object v1, Lcom/snap/plus/LocalSubscribePageExperienceType;->BUDDY_PASS:Lcom/snap/plus/LocalSubscribePageExperienceType;
 
+    .line 36
     .line 37
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
     .line 38
     .line 39
-    sput-object v7, LUTd;->t:LUTd;
-
     .line 40
+    move-result v1
+
     .line 41
-    const/4 v8, 0x4
+    const/4 v2, 0x4
 
     .line 42
-    new-array v8, v8, [LUTd;
+    aput v2, v0, v1
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
 
     .line 43
     .line 44
-    aput-object v4, v8, v3
+    :catch_3
+    :try_start_4
+    sget-object v1, Lcom/snap/plus/LocalSubscribePageExperienceType;->FAMILY:Lcom/snap/plus/LocalSubscribePageExperienceType;
 
     .line 45
     .line 46
-    aput-object v5, v8, v2
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     .line 47
     .line 48
-    aput-object v6, v8, v1
-
     .line 49
+    move-result v1
+
     .line 50
-    aput-object v7, v8, v0
+    const/4 v2, 0x5
 
     .line 51
+    aput v2, v0, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
     .line 52
-    sput-object v8, LUTd;->X:[LUTd;
-
     .line 53
+    :catch_4
+    :try_start_5
+    sget-object v1, Lcom/snap/plus/LocalSubscribePageExperienceType;->RENEW:Lcom/snap/plus/LocalSubscribePageExperienceType;
+
     .line 54
+    .line 55
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v1
+
+    .line 59
+    const/4 v2, 0x6
+
+    .line 60
+    aput v2, v0, v1
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 61
+    .line 62
+    :catch_5
+    :try_start_6
+    sget-object v1, Lcom/snap/plus/LocalSubscribePageExperienceType;->STORAGE:Lcom/snap/plus/LocalSubscribePageExperienceType;
+
+    .line 63
+    .line 64
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v1
+
+    .line 68
+    const/4 v2, 0x7
+
+    .line 69
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 70
+    .line 71
+    :catch_6
+    sput-object v0, LUTd;->a:[I
+
+    .line 72
+    .line 73
     return-void
-.end method
-
-.method public static valueOf(Ljava/lang/String;)LUTd;
-    .locals 1
-
-    .line 1
-    const-class v0, LUTd;
-
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    check-cast p0, LUTd;
-
-    .line 8
-    .line 9
-    return-object p0
-.end method
-
-.method public static values()[LUTd;
-    .locals 1
-
-    .line 1
-    sget-object v0, LUTd;->X:[LUTd;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    check-cast v0, [LUTd;
-
-    .line 8
-    .line 9
-    return-object v0
 .end method

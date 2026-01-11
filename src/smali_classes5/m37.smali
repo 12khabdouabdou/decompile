@@ -1,150 +1,274 @@
 .class public final Lm37;
-.super Ljava/lang/Object;
+.super Ln37;
 .source "SourceFile"
-
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Consumer;
 
 
 # instance fields
-.field public final synthetic X:LYAg;
+.field public final a:Ljava/util/Set;
 
-.field public final synthetic Y:LJjb;
-
-.field public final synthetic Z:Z
-
-.field public final synthetic a:I
-
-.field public final synthetic b:Lo37;
-
-.field public final synthetic c:LWm0;
-
-.field public final synthetic t:LLtb;
+.field public final b:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Lo37;LWm0;LLtb;LYAg;LJjb;ZI)V
+.method public constructor <init>(Ljava/util/Set;I)V
     .locals 0
 
     .line 1
-    iput p7, p0, Lm37;->a:I
-
-    iput-object p1, p0, Lm37;->b:Lo37;
-
-    iput-object p2, p0, Lm37;->c:LWm0;
-
-    iput-object p3, p0, Lm37;->t:LLtb;
-
-    iput-object p4, p0, Lm37;->X:LYAg;
-
-    iput-object p5, p0, Lm37;->Y:LJjb;
-
-    iput-boolean p6, p0, Lm37;->Z:Z
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final accept(Ljava/lang/Object;)V
-    .locals 8
-
-    .line 1
-    iget v0, p0, Lm37;->a:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    .line 4
+    iput-object p1, p0, Lm37;->a:Ljava/util/Set;
+
+    .line 5
+    .line 6
+    iput p2, p0, Lm37;->b:I
+
+    .line 7
+    .line 8
+    return-void
+.end method
+
+.method public static a(Lm37;Ljava/util/Set;)Lm37;
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lm37;->b:I
+
+    .line 2
+    .line 3
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
     .line 5
     .line 6
-    move-object v7, p1
+    new-instance p0, Lm37;
 
     .line 7
-    check-cast v7, Ljava/lang/Throwable;
-
     .line 8
+    invoke-direct {p0, p1, v0}, Lm37;-><init>(Ljava/util/Set;I)V
+
     .line 9
-    iget-object v5, p0, Lm37;->Y:LJjb;
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    if-ne p0, p1, :cond_0
+
+    .line 2
+    .line 3
+    goto :goto_1
+
+    .line 4
+    :cond_0
+    instance-of v0, p1, Lm37;
+
+    .line 5
+    .line 6
+    if-nez v0, :cond_1
+
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_1
+    check-cast p1, Lm37;
 
     .line 10
     .line 11
-    iget-boolean v6, p0, Lm37;->Z:Z
+    iget-object v0, p1, Lm37;->a:Ljava/util/Set;
 
     .line 12
     .line 13
-    iget-object v1, p0, Lm37;->b:Lo37;
+    iget-object v1, p0, Lm37;->a:Ljava/util/Set;
 
     .line 14
     .line 15
-    iget-object v2, p0, Lm37;->c:LWm0;
+    invoke-static {v1, v0}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 16
     .line 17
-    iget-object v3, p0, Lm37;->t:LLtb;
-
     .line 18
+    move-result v0
+
     .line 19
-    iget-object v4, p0, Lm37;->X:LYAg;
+    if-nez v0, :cond_2
 
     .line 20
     .line 21
-    invoke-virtual/range {v1 .. v7}, Lo37;->j(LWm0;LLtb;LYAg;LJjb;ZLjava/lang/Throwable;)V
+    goto :goto_0
+
+    .line 22
+    :cond_2
+    iget v0, p0, Lm37;->b:I
+
+    .line 23
+    .line 24
+    iget p1, p1, Lm37;->b:I
+
+    .line 25
+    .line 26
+    if-eq v0, p1, :cond_3
+
+    .line 27
+    .line 28
+    :goto_0
+    const/4 p1, 0x0
+
+    .line 29
+    return p1
+
+    .line 30
+    :cond_3
+    :goto_1
+    const/4 p1, 0x1
+
+    .line 31
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lm37;->a:Ljava/util/Set;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget v1, p0, Lm37;->b:I
+
+    .line 10
+    .line 11
+    invoke-static {v1}, LzHa;->L(I)I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Success(feeds="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, Lm37;->a:Ljava/util/Set;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", source="
+
+    .line 14
+    .line 15
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    iget v1, p0, Lm37;->b:I
+
+    .line 19
+    .line 20
+    const/4 v2, 0x1
+
+    .line 21
+    if-eq v1, v2, :cond_1
 
     .line 22
     .line 23
+    const/4 v2, 0x2
+
     .line 24
-    return-void
+    if-eq v1, v2, :cond_0
 
     .line 25
-    :pswitch_0
-    check-cast p1, LSlb;
-
     .line 26
-    .line 27
-    iget-boolean v5, p0, Lm37;->Z:Z
+    const-string v1, "null"
 
+    .line 27
     .line 28
+    goto :goto_0
+
     .line 29
-    const/4 v6, 0x0
+    :cond_0
+    const-string v1, "REMOTE"
 
     .line 30
-    iget-object v0, p0, Lm37;->b:Lo37;
-
     .line 31
+    goto :goto_0
+
     .line 32
-    iget-object v1, p0, Lm37;->c:LWm0;
+    :cond_1
+    const-string v1, "CACHE"
 
     .line 33
     .line 34
-    iget-object v2, p0, Lm37;->t:LLtb;
+    :goto_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 35
     .line 36
-    iget-object v3, p0, Lm37;->X:LYAg;
-
     .line 37
+    const-string v1, ")"
+
     .line 38
-    iget-object v4, p0, Lm37;->Y:LJjb;
-
     .line 39
-    .line 40
-    invoke-virtual/range {v0 .. v6}, Lo37;->j(LWm0;LLtb;LYAg;LJjb;ZLjava/lang/Throwable;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 40
     .line 41
     .line 42
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 43
-    return-void
-
     .line 44
-    nop
-
     .line 45
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    move-result-object v0
+
+    .line 46
+    return-object v0
 .end method

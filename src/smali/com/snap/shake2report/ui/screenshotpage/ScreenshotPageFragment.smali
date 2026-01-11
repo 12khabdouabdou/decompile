@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lvzf;
+.implements LFSf;
 
 
 # instance fields
@@ -15,9 +15,9 @@
 
 .field public D0:Landroid/util/DisplayMetrics;
 
-.field public E0:Z
+.field public final E0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-.field public w0:Luzf;
+.field public w0:LESf;
 
 .field public x0:Lcom/snap/imageloading/view/SnapImageView;
 
@@ -28,7 +28,7 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Lcom/snapchat/deck/fragment/MainPageFragment;-><init>()V
@@ -36,16 +36,28 @@
     .line 2
     .line 3
     .line 4
+    invoke-static {}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->f1()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object v0
+
+    .line 8
+    iput-object v0, p0, Lcom/snap/shake2report/ui/screenshotpage/ScreenshotPageFragment;->E0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 9
+    .line 10
     return-void
 .end method
 
 
 # virtual methods
-.method public final E1()V
+.method public final C1()V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/shake2report/ui/screenshotpage/ScreenshotPageFragment;->w0:Luzf;
+    iget-object v0, p0, Lcom/snap/shake2report/ui/screenshotpage/ScreenshotPageFragment;->w0:LESf;
 
     .line 2
     .line 3
@@ -53,7 +65,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Luzf;->C1()V
+    invoke-virtual {v0}, LESf;->D1()V
 
     .line 6
     .line 7
@@ -66,7 +78,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 12
     .line 13
@@ -77,7 +89,7 @@
     throw v0
 .end method
 
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 1
 
     .line 1
@@ -115,7 +127,7 @@
     .line 17
     .line 18
     :cond_0
-    const p3, 0x7f0e060a
+    const p3, 0x7f0e062b
 
     .line 19
     .line 20
@@ -131,7 +143,7 @@
     move-result-object p1
 
     .line 26
-    const p2, 0x7f0b12c8
+    const p2, 0x7f0b13f9
 
     .line 27
     .line 28
@@ -152,7 +164,7 @@
 
     .line 36
     .line 37
-    const p2, 0x7f0b12c9
+    const p2, 0x7f0b13fa
 
     .line 38
     .line 39
@@ -173,7 +185,7 @@
 
     .line 47
     .line 48
-    const p2, 0x7f0b12cc
+    const p2, 0x7f0b13fd
 
     .line 49
     .line 50
@@ -194,7 +206,7 @@
 
     .line 58
     .line 59
-    const p2, 0x7f0b12d0
+    const p2, 0x7f0b1401
 
     .line 60
     .line 61
@@ -215,7 +227,7 @@
 
     .line 69
     .line 70
-    const p2, 0x7f0b12d1
+    const p2, 0x7f0b1402
 
     .line 71
     .line 72
@@ -236,7 +248,7 @@
 
     .line 80
     .line 81
-    const p2, 0x7f0b12cd
+    const p2, 0x7f0b13fe
 
     .line 82
     .line 83
@@ -307,15 +319,15 @@
     .line 116
     .line 117
     .line 118
-    sget-object p2, LCCe;->e0:LCCe;
+    sget-object p2, LSvd;->k0:LSvd;
 
     .line 119
     .line 120
-    sget-object p3, LDIj;->a:Ljava/util/WeakHashMap;
+    sget-object p3, Lb8k;->a:Ljava/util/WeakHashMap;
 
     .line 121
     .line 122
-    invoke-static {p1, p2}, LtIj;->u(Landroid/view/View;LxMc;)V
+    invoke-static {p1, p2}, LR7k;->u(Landroid/view/View;Lq1d;)V
 
     .line 123
     .line 124
@@ -328,7 +340,7 @@
 
     .line 127
     .line 128
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 129
     .line 130
@@ -359,7 +371,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -370,16 +382,16 @@
     throw v0
 .end method
 
-.method public final s1(Landroid/content/Context;)V
+.method public final q1(Landroid/content/Context;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, LOtc;->z(Landroidx/fragment/app/g;)V
+    invoke-static {p0}, LKi5;->H(Landroidx/fragment/app/g;)V
 
     .line 2
     .line 3
     .line 4
-    iget-object p1, p0, Lcom/snap/shake2report/ui/screenshotpage/ScreenshotPageFragment;->w0:Luzf;
+    iget-object p1, p0, Lcom/snap/shake2report/ui/screenshotpage/ScreenshotPageFragment;->w0:LESf;
 
     .line 5
     .line 6
@@ -387,7 +399,7 @@
 
     .line 7
     .line 8
-    invoke-virtual {p1, p0}, Luzf;->S2(Lvzf;)V
+    invoke-virtual {p1, p0}, LESf;->c3(LFSf;)V
 
     .line 9
     .line 10
@@ -400,7 +412,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 15
     .line 16
@@ -411,16 +423,16 @@
     throw p1
 .end method
 
-.method public final w0(LPpc;)V
+.method public final w0(LkFc;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LPpc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->w0(LkFc;)V
 
     .line 2
     .line 3
     .line 4
-    instance-of v0, p1, Lpzf;
+    instance-of v0, p1, LzSf;
 
     .line 5
     .line 6
@@ -428,22 +440,27 @@
 
     .line 7
     .line 8
-    check-cast p1, Lpzf;
+    check-cast p1, LzSf;
 
     .line 9
     .line 10
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p1}, LzSf;->a()Ljava/lang/String;
 
     .line 11
     .line 12
     .line 13
-    const/4 p1, 0x1
+    move-result-object p1
 
     .line 14
-    iput-boolean p1, p0, Lcom/snap/shake2report/ui/screenshotpage/ScreenshotPageFragment;->E0:Z
+    iget-object v0, p0, Lcom/snap/shake2report/ui/screenshotpage/ScreenshotPageFragment;->E0:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
     .line 15
     .line 16
+    invoke-virtual {v0, p1}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
+
+    .line 17
+    .line 18
+    .line 19
     :cond_0
     return-void
 .end method

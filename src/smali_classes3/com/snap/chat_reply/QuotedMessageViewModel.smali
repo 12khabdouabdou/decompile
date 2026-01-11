@@ -1,10 +1,10 @@
 .class public final Lcom/snap/chat_reply/QuotedMessageViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'contentStatus\':r<e>:\'[0]\',\'content\':r?:\'[1]\',\'onTap\':f?(b@, d@?, r?:\'[2]\')"
     typeReferences = {

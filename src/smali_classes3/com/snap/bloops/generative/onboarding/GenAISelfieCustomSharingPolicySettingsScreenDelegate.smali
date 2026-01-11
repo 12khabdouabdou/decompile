@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LI98;
+    proxyClass = Leg8;
     schema = "\'genAISelfieCustomSharingPolicySettingsOnCloseTapped\':f?|m|(),\'genAISelfieCustomSharingPolicySettingsOnDoneTapped\':f?|m|(a<s>)"
     typeReferences = {}
 .end annotation
@@ -17,14 +17,11 @@
 
 # virtual methods
 .method public abstract genAISelfieCustomSharingPolicySettingsOnCloseTapped()V
-    .annotation runtime LUy3;
+    .annotation runtime LhC3;
     .end annotation
 .end method
 
 .method public abstract genAISelfieCustomSharingPolicySettingsOnDoneTapped(Ljava/util/List;)V
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -32,6 +29,9 @@
             "Ljava/lang/String;",
             ">;)V"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

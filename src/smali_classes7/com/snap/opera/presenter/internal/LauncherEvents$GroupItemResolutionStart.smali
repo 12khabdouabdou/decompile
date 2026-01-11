@@ -1,23 +1,23 @@
 .class public final Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;
-.super LLR6;
+.super LxV6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final b:LOXc;
+.field public final b:LJcd;
 
 
 # direct methods
-.method public constructor <init>(LOXc;)V
+.method public constructor <init>(LJcd;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, LLR6;-><init>()V
+    invoke-direct {p0}, LxV6;-><init>()V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LOXc;
+    iput-object p1, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LJcd;
 
     .line 5
     .line 6
@@ -47,11 +47,11 @@
     :cond_1
     check-cast p1, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;
 
-    iget-object v1, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LJcd;
 
-    iget-object p1, p1, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LOXc;
+    iget-object p1, p1, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LJcd;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -66,7 +66,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LOXc;
+    iget-object v0, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LJcd;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -84,7 +84,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    iget-object v1, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LOXc;
+    iget-object v1, p0, Lcom/snap/opera/presenter/internal/LauncherEvents$GroupItemResolutionStart;->b:LJcd;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

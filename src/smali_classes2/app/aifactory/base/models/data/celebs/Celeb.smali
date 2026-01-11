@@ -42,7 +42,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, Lapp/aifactory/base/models/data/celebs/Celeb;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/util/List;ILHr5;)V
+    invoke-direct/range {v0 .. v6}, Lapp/aifactory/base/models/data/celebs/Celeb;-><init>(Ljava/lang/String;Ljava/lang/String;ILjava/util/List;ILex5;)V
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/util/List;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Ljava/lang/String;ILjava/util/List;ILex5;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x1
@@ -111,7 +111,7 @@
     if-eqz p5, :cond_3
 
     .line 8
-    sget-object p4, LsL6;->a:LsL6;
+    sget-object p4, LgP6;->a:LgP6;
 
     .line 9
     :cond_3

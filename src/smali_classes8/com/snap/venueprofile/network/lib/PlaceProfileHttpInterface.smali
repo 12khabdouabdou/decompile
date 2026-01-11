@@ -4,24 +4,21 @@
 
 
 # virtual methods
-.method public abstract getFriendFavoritePlaces(Ljava/lang/String;Ljava/lang/String;LKs8;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getOrbisStoryPreviewResponse(Ljava/lang/String;Ljava/lang/String;Lgy8;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LKs8;
-        .annotation runtime Ljv1;
+    .param p3    # Lgy8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -32,34 +29,34 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LKs8;",
+            "Lgy8;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LLs8;",
+            "Ljnf<",
+            "Lhy8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getFriendsWithFavoritesResponse(Ljava/lang/String;Ljava/lang/String;LCl8;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getOrbisStoryResponse(Ljava/lang/String;Ljava/lang/String;Liy8;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # LCl8;
-        .annotation runtime Ljv1;
+    .param p3    # Liy8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -70,34 +67,34 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "LCl8;",
+            "Liy8;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Ljava/lang/Object;",
+            "Ljnf<",
+            "Ljy8;",
             ">;>;"
         }
     .end annotation
+
+    .annotation runtime Llmd;
+    .end annotation
 .end method
 
-.method public abstract getOrbisStoryPreviewResponse(Ljava/lang/String;Ljava/lang/String;Lxr8;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getPlaceComponents(Ljava/lang/String;Ljava/lang/String;LZu8;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
+        .annotation runtime LQQ8;
             value = "__xsc_local__snap_token"
         .end annotation
     .end param
     .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p3    # Lxr8;
-        .annotation runtime Ljv1;
+    .param p3    # LZu8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -108,147 +105,33 @@
             "(",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
-            "Lxr8;",
+            "LZu8;",
             ")",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lyr8;",
+            "Ljnf<",
+            "Lav8;",
             ">;>;"
         }
     .end annotation
-.end method
 
-.method public abstract getOrbisStoryResponse(Ljava/lang/String;Ljava/lang/String;Lzr8;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "__xsc_local__snap_token"
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
-        .end annotation
-    .end param
-    .param p3    # Lzr8;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
-        value = {
-            "Accept: application/x-protobuf"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Lzr8;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LAr8;",
-            ">;>;"
-        }
+    .annotation runtime Llmd;
     .end annotation
 .end method
 
-.method public abstract getPlaceComponents(Ljava/lang/String;Ljava/lang/String;Lwo8;)Lio/reactivex/rxjava3/core/Single;
+.method public abstract getPlacePivots(Ljava/lang/String;Ldv8;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
     .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "__xsc_local__snap_token"
+        .annotation runtime LoJj;
         .end annotation
     .end param
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
-        .end annotation
-    .end param
-    .param p3    # Lwo8;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
-        value = {
-            "Accept: application/x-protobuf"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Lwo8;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lxo8;",
-            ">;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract getPlaceFriendFavoritesResponse(Ljava/lang/String;Ljava/lang/String;Lyo8;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Ljava/lang/String;
-        .annotation runtime LrJ8;
-            value = "__xsc_local__snap_token"
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/String;
-        .annotation runtime Lnkj;
-        .end annotation
-    .end param
-    .param p3    # Lyo8;
-        .annotation runtime Ljv1;
-        .end annotation
-    .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
-        value = {
-            "Accept: application/x-protobuf"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Lyo8;",
-            ")",
-            "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "Lzo8;",
-            ">;>;"
-        }
-    .end annotation
-.end method
-
-.method public abstract getPlacePivots(Ljava/lang/String;LAo8;Ljava/util/Map;)Lio/reactivex/rxjava3/core/Single;
-    .param p1    # Ljava/lang/String;
-        .annotation runtime Lnkj;
-        .end annotation
-    .end param
-    .param p2    # LAo8;
-        .annotation runtime Ljv1;
+    .param p2    # Ldv8;
+        .annotation runtime Lzy1;
         .end annotation
     .end param
     .param p3    # Ljava/util/Map;
-        .annotation runtime LFJ8;
+        .annotation runtime LhR8;
         .end annotation
     .end param
-    .annotation runtime LX6d;
-    .end annotation
-
-    .annotation runtime LaK8;
+    .annotation runtime LIR8;
         value = {
             "Accept: application/x-protobuf"
         }
@@ -258,15 +141,18 @@
         value = {
             "(",
             "Ljava/lang/String;",
-            "LAo8;",
+            "Ldv8;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             ">;)",
             "Lio/reactivex/rxjava3/core/Single<",
-            "Lj5f<",
-            "LBo8;",
+            "Ljnf<",
+            "Lev8;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime Llmd;
     .end annotation
 .end method

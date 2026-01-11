@@ -34,17 +34,6 @@
 
 
 # virtual methods
-.method public final c()Z
-    .locals 1
-
-    .line 1
-    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/fuseable/CancellableQueueFuseable;->a:Z
-
-    .line 2
-    .line 3
-    return v0
-.end method
-
 .method public final cancel()V
     .locals 1
 
@@ -57,6 +46,17 @@
     .line 3
     .line 4
     return-void
+.end method
+
+.method public final d()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lio/reactivex/rxjava3/internal/fuseable/CancellableQueueFuseable;->a:Z
+
+    .line 2
+    .line 3
+    return v0
 .end method
 
 .method public final dispose()V

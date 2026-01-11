@@ -1,39 +1,60 @@
 .class public final LnBh;
-.super LKu;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# instance fields
-.field public final X:Ljava/lang/String;
+# static fields
+.field public static final c:LnBh;
 
-.field public Y:Z
+
+# instance fields
+.field public final a:LLXe;
+
+.field public final b:LLXe;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
-    .locals 1
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    sget-object v0, LoBh;->c:LoBh;
+    new-instance v0, LnBh;
 
     .line 2
     .line 3
-    invoke-direct {p0, v0}, LKu;-><init>(LLu;)V
+    sget-object v1, LLXe;->e:LLXe;
 
     .line 4
     .line 5
+    invoke-direct {v0, v1, v1}, LnBh;-><init>(LLXe;LLXe;)V
+
     .line 6
-    iput-object p1, p0, LnBh;->X:Ljava/lang/String;
+    .line 7
+    .line 8
+    sput-object v0, LnBh;->c:LnBh;
+
+    .line 9
+    .line 10
+    return-void
+.end method
+
+.method public constructor <init>(LLXe;LLXe;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, LnBh;->a:LLXe;
+
+    .line 5
+    .line 6
+    iput-object p2, p0, LnBh;->b:LLXe;
 
     .line 7
     .line 8
-    const/4 p1, 0x0
-
-    .line 9
-    iput-boolean p1, p0, LnBh;->Y:Z
-
-    .line 10
-    .line 11
     return-void
 .end method
 
@@ -73,15 +94,15 @@
 
     .line 12
     .line 13
-    iget-object v1, p1, LnBh;->X:Ljava/lang/String;
+    iget-object v1, p1, LnBh;->a:LLXe;
 
     .line 14
     .line 15
-    iget-object v3, p0, LnBh;->X:Ljava/lang/String;
+    iget-object v3, p0, LnBh;->a:LLXe;
 
     .line 16
     .line 17
-    invoke-static {v3, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 18
     .line 19
@@ -97,21 +118,29 @@
 
     .line 24
     :cond_2
-    iget-boolean v1, p0, LnBh;->Y:Z
+    iget-object v1, p0, LnBh;->b:LLXe;
 
     .line 25
     .line 26
-    iget-boolean p1, p1, LnBh;->Y:Z
+    iget-object p1, p1, LnBh;->b:LLXe;
 
     .line 27
     .line 28
-    if-eq v1, p1, :cond_3
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 29
     .line 30
+    .line 31
+    move-result p1
+
+    .line 32
+    if-nez p1, :cond_3
+
+    .line 33
+    .line 34
     return v2
 
-    .line 31
+    .line 35
     :cond_3
     return v0
 .end method
@@ -120,85 +149,94 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, LnBh;->X:Ljava/lang/String;
-
-    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
-
-    move-result v0
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-boolean v1, p0, LnBh;->Y:Z
-
-    if-eqz v1, :cond_0
-
-    const/16 v1, 0x4cf
-
-    goto :goto_0
-
-    :cond_0
-    const/16 v1, 0x4d5
-
-    :goto_0
-    add-int/2addr v0, v1
-
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    iget-boolean v0, p0, LnBh;->Y:Z
+    iget-object v0, p0, LnBh;->a:LLXe;
 
     .line 2
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, LLXe;->hashCode()I
 
     .line 4
     .line 5
-    const-string v2, "StickerPickerSearchChatSearchCandidateViewModel(query="
-
     .line 6
+    move-result v0
+
     .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 8
     .line 9
+    iget-object v1, p0, LnBh;->b:LLXe;
+
     .line 10
-    iget-object v2, p0, LnBh;->X:Ljava/lang/String;
+    .line 11
+    invoke-virtual {v1}, LLXe;->hashCode()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v1
+
+    .line 15
+    add-int/2addr v1, v0
+
+    .line 16
+    return v1
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "Zone(bounds="
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object v1, p0, LnBh;->a:LLXe;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 13
+    const-string v1, ", insets="
+
     .line 14
     .line 15
-    const-string v2, ", selected="
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 18
+    iget-object v1, p0, LnBh;->b:LLXe;
+
     .line 19
     .line 20
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
     .line 23
-    const-string v0, ")"
+    const-string v1, ")"
 
     .line 24
     .line 25
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
     .line 28
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
     .line 30
@@ -207,55 +245,4 @@
 
     .line 32
     return-object v0
-.end method
-
-.method public final v(LKu;)Z
-    .locals 2
-
-    .line 1
-    instance-of v0, p1, LnBh;
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    if-eqz v0, :cond_0
-
-    .line 5
-    .line 6
-    check-cast p1, LnBh;
-
-    .line 7
-    .line 8
-    goto :goto_0
-
-    .line 9
-    :cond_0
-    move-object p1, v1
-
-    .line 10
-    :goto_0
-    if-eqz p1, :cond_1
-
-    .line 11
-    .line 12
-    iget-object v1, p1, LnBh;->X:Ljava/lang/String;
-
-    .line 13
-    .line 14
-    :cond_1
-    iget-object p1, p0, LnBh;->X:Ljava/lang/String;
-
-    .line 15
-    .line 16
-    invoke-static {p1, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 17
-    .line 18
-    .line 19
-    move-result p1
-
-    .line 20
-    return p1
 .end method

@@ -1,71 +1,63 @@
-.class public abstract synthetic LFt5;
+.class public final LFt5;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final a:LHt5;
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(LHt5;)V
+    .locals 0
 
     .line 1
-    const/4 v0, 0x3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {v0}, Llva;->M(I)[I
-
     .line 3
     .line 4
+    iput-object p1, p0, LFt5;->a:LHt5;
+
     .line 5
-    move-result-object v1
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    check-cast p1, LY79;
+
+    .line 2
+    .line 3
+    new-instance v0, LxW3;
+
+    .line 4
+    .line 5
+    const/16 v1, 0x18
 
     .line 6
-    array-length v1, v1
-
     .line 7
-    new-array v1, v1, [I
+    invoke-direct {v0, p1, v1, p0}, LxW3;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
 
     .line 8
     .line 9
-    const/4 v2, 0x1
-
     .line 10
-    :try_start_0
-    aput v2, v1, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
 
     .line 11
     .line 12
-    :catch_0
-    const/4 v2, 0x0
+    invoke-direct {p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
 
     .line 13
-    const/4 v3, 0x2
-
     .line 14
-    :try_start_1
-    aput v3, v1, v2
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 15
-    .line 16
-    :catch_1
-    :try_start_2
-    aput v0, v1, v3
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 17
-    .line 18
-    :catch_2
-    sput-object v1, LFt5;->a:[I
-
-    .line 19
-    .line 20
-    return-void
+    return-object p1
 .end method

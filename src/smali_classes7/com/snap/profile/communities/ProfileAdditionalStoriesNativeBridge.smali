@@ -7,13 +7,13 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LS3e;
+    proxyClass = Lrle;
     schema = "\'getAdjacentStories\':f|m|(s): g<c>:\'[0]\'<a<r:\'[1]\'>>,\'playGroupStory\':f|m|(s, r:\'[2]\'),\'getAdjacentStoriesByOrgId\':f?|m|(s, s): g<c>:\'[0]\'<a<r:\'[1]\'>>"
     typeReferences = {
         Lcom/snap/composer/bridge_observables/BridgeObservable;,
-        Lq0i;,
+        LLoi;,
         Lcom/snap/composer/utils/Ref;
     }
 .end annotation
@@ -28,16 +28,13 @@
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Lq0i;",
+            "LLoi;",
             ">;>;"
         }
     .end annotation
 .end method
 
 .method public abstract getAdjacentStoriesByOrgId(Ljava/lang/String;Ljava/lang/String;)Lcom/snap/composer/bridge_observables/BridgeObservable;
-    .annotation runtime LUy3;
-    .end annotation
-
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -46,9 +43,12 @@
             ")",
             "Lcom/snap/composer/bridge_observables/BridgeObservable<",
             "Ljava/util/List<",
-            "Lq0i;",
+            "LLoi;",
             ">;>;"
         }
+    .end annotation
+
+    .annotation runtime LhC3;
     .end annotation
 .end method
 

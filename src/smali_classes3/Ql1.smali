@@ -2,18 +2,23 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
-
 
 # instance fields
-.field public final synthetic a:LYl1;
+.field public final a:LuKj;
 
-.field public final synthetic b:Lfgj;
+.field public final b:LYK4;
+
+.field public final c:LYK4;
+
+.field public final d:LREi;
+
+.field public final e:LYK4;
+
+.field public final f:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
 
 # direct methods
-.method public constructor <init>(LYl1;Lfgj;)V
+.method public constructor <init>(LYK4;LYK4;LuKj;LYK4;LYK4;LYK4;)V
     .locals 0
 
     .line 1
@@ -22,214 +27,324 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LQl1;->a:LYl1;
+    iput-object p3, p0, LQl1;->a:LuKj;
 
     .line 5
     .line 6
-    iput-object p2, p0, LQl1;->b:Lfgj;
+    iput-object p5, p0, LQl1;->b:LYK4;
 
     .line 7
     .line 8
+    iput-object p6, p0, LQl1;->c:LYK4;
+
+    .line 9
+    .line 10
+    new-instance p3, LPl1;
+
+    .line 11
+    .line 12
+    const/4 p5, 0x0
+
+    .line 13
+    invoke-direct {p3, p4, p5}, LPl1;-><init>(LYK4;I)V
+
+    .line 14
+    .line 15
+    .line 16
+    new-instance p4, LREi;
+
+    .line 17
+    .line 18
+    invoke-direct {p4, p3}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 19
+    .line 20
+    .line 21
+    iput-object p4, p0, LQl1;->d:LREi;
+
+    .line 22
+    .line 23
+    iput-object p1, p0, LQl1;->e:LYK4;
+
+    .line 24
+    .line 25
+    invoke-virtual {p2}, LYK4;->get()Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p2
+
+    .line 29
+    check-cast p2, LfN8;
+
+    .line 30
+    .line 31
+    invoke-virtual {p2, p5}, LfN8;->c(Z)Lio/reactivex/rxjava3/internal/operators/completable/CompletableObserveOn;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object p2
+
+    .line 35
+    sget-object p3, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
+
+    .line 36
+    .line 37
+    invoke-virtual {p1}, LYK4;->get()Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p3
+
+    .line 41
+    check-cast p3, LOF3;
+
+    .line 42
+    .line 43
+    sget-object p4, Lex1;->v0:Lex1;
+
+    .line 44
+    .line 45
+    invoke-interface {p3, p4}, LOF3;->n(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object p3
+
+    .line 49
+    invoke-virtual {p1}, LYK4;->get()Ljava/lang/Object;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object p1
+
+    .line 53
+    check-cast p1, LOF3;
+
+    .line 54
+    .line 55
+    sget-object p4, Lex1;->x0:Lex1;
+
+    .line 56
+    .line 57
+    invoke-interface {p1, p4}, LOF3;->y(LcM3;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object p1
+
+    .line 61
+    new-instance p4, LU0;
+
+    .line 62
+    .line 63
+    const/16 p6, 0x15
+
+    .line 64
+    .line 65
+    invoke-direct {p4, p6, p0}, LU0;-><init>(ILjava/lang/Object;)V
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-static {p3, p1, p4}, Lio/reactivex/rxjava3/core/Single;->I(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Single;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object p1
+
+    .line 72
+    new-instance p3, Lio/reactivex/rxjava3/internal/operators/single/SingleDelayWithCompletable;
+
+    .line 73
+    .line 74
+    invoke-direct {p3, p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleDelayWithCompletable;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
+
+    .line 75
+    .line 76
+    .line 77
+    new-instance p1, LOl1;
+
+    .line 78
+    .line 79
+    invoke-direct {p1, p5, p0}, LOl1;-><init>(ILjava/lang/Object;)V
+
+    .line 80
+    .line 81
+    .line 82
+    new-instance p2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+
+    .line 83
+    .line 84
+    invoke-direct {p2, p3, p1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+
+    .line 85
+    .line 86
+    .line 87
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    .line 88
+    .line 89
+    invoke-direct {p1, p2}, Lio/reactivex/rxjava3/internal/operators/single/SingleCache;-><init>(Lio/reactivex/rxjava3/core/SingleSource;)V
+
+    .line 90
+    .line 91
+    .line 92
+    iput-object p1, p0, LQl1;->f:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+
+    .line 93
+    .line 94
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final a(Ljava/lang/String;[BLjava/lang/Class;)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+    .locals 5
 
     .line 1
-    check-cast p1, Lapp/aifactory/sdk/api/model/TargetState$Success;
+    sget-object v0, Lio/reactivex/rxjava3/kotlin/Singles;->a:Lio/reactivex/rxjava3/kotlin/Singles;
 
     .line 2
     .line 3
-    iget-object v0, p0, LQl1;->a:LYl1;
+    iget-object v0, p0, LQl1;->d:LREi;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LYl1;->f()Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapSingle;
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
 
     .line 6
     .line 7
     .line 8
-    move-result-object v1
+    move-result-object v0
 
     .line 9
-    new-instance v2, LTZ0;
+    check-cast v0, Lio/reactivex/rxjava3/core/Single;
 
     .line 10
     .line 11
-    const/16 v3, 0xd
+    iget-object v1, p0, LQl1;->e:LYK4;
 
     .line 12
     .line 13
-    invoke-direct {v2, v3, v0}, LTZ0;-><init>(ILjava/lang/Object;)V
+    invoke-virtual {v1}, LYK4;->get()Ljava/lang/Object;
 
     .line 14
     .line 15
     .line 16
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapSingle;
+    move-result-object v2
 
     .line 17
-    .line 18
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapSingle;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+    check-cast v2, LOF3;
 
+    .line 18
     .line 19
+    sget-object v3, Lex1;->w0:Lex1;
+
     .line 20
     .line 21
-    sget-object v1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
+    invoke-interface {v2, v3}, LOF3;->n(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 22
     .line 23
-    sget-object v2, Lio/reactivex/rxjava3/schedulers/Schedulers;->b:Lio/reactivex/rxjava3/core/Scheduler;
-
     .line 24
+    move-result-object v2
+
     .line 25
-    const-wide/16 v4, 0xb4
+    invoke-virtual {v1}, LYK4;->get()Ljava/lang/Object;
 
     .line 26
     .line 27
-    invoke-virtual {v3, v4, v5, v1, v2}, Lio/reactivex/rxjava3/core/Maybe;->n(JLjava/util/concurrent/TimeUnit;Lio/reactivex/rxjava3/core/Scheduler;)Lio/reactivex/rxjava3/internal/operators/maybe/MaybeTimeoutMaybe;
-
     .line 28
-    .line 29
-    .line 30
     move-result-object v1
 
+    .line 29
+    check-cast v1, LOF3;
+
+    .line 30
     .line 31
-    new-instance v2, LKl1;
+    sget-object v3, Lex1;->x0:Lex1;
 
     .line 32
     .line 33
-    invoke-direct {v2, v0}, LKl1;-><init>(LYl1;)V
+    invoke-interface {v1, v3}, LOF3;->y(LcM3;)Lio/reactivex/rxjava3/core/Single;
 
     .line 34
     .line 35
     .line 36
-    new-instance v3, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;
+    move-result-object v1
 
     .line 37
-    .line 38
-    invoke-direct {v3, v1, v2}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatten;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+    new-instance v3, LLJ0;
 
+    .line 38
     .line 39
+    const/16 v4, 0x14
+
     .line 40
     .line 41
-    new-instance v1, LLl1;
+    invoke-direct {v3, v4, p0}, LLJ0;-><init>(ILjava/lang/Object;)V
 
     .line 42
     .line 43
-    invoke-direct {v1, p1}, LLl1;-><init>(Lapp/aifactory/sdk/api/model/TargetState$Success;)V
-
     .line 44
+    invoke-static {v0, v2, v1, v3}, Lio/reactivex/rxjava3/core/Single;->H(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function3;)Lio/reactivex/rxjava3/core/Single;
+
     .line 45
     .line 46
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;
-
     .line 47
+    move-result-object v0
+
     .line 48
-    invoke-direct {p1, v3, v1}, Lio/reactivex/rxjava3/internal/operators/maybe/MaybeFlatMapCompletable;-><init>(Lio/reactivex/rxjava3/core/MaybeSource;Lio/reactivex/rxjava3/functions/Function;)V
+    new-instance v1, Lzl0;
 
     .line 49
     .line 50
+    const/16 v2, 0x10
+
     .line 51
-    new-instance v1, LMl1;
-
     .line 52
-    .line 53
-    iget-object v2, p0, LQl1;->b:Lfgj;
+    invoke-direct {v1, v2}, Lzl0;-><init>(I)V
 
+    .line 53
     .line 54
     .line 55
-    invoke-direct {v1, v0, v2}, LMl1;-><init>(LYl1;Lfgj;)V
+    iget-object v2, p0, LQl1;->f:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
 
     .line 56
     .line 57
-    .line 58
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
+    invoke-static {v2, v0, v1}, Lio/reactivex/rxjava3/core/Single;->I(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/BiFunction;)Lio/reactivex/rxjava3/core/Single;
 
+    .line 58
     .line 59
     .line 60
-    invoke-direct {v2, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
+    move-result-object v0
 
     .line 61
+    new-instance v1, LJtk;
+
     .line 62
     .line 63
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
+    invoke-direct {v1, p0, p1, p2, p3}, LJtk;-><init>(LQl1;Ljava/lang/String;[BLjava/lang/Class;)V
 
     .line 64
     .line 65
-    invoke-direct {v1, p1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
-
     .line 66
+    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;
+
     .line 67
     .line 68
-    new-instance p1, LNl1;
+    invoke-direct {p1, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
 
     .line 69
     .line 70
-    invoke-direct {p1, v0}, LNl1;-><init>(LYl1;)V
-
     .line 71
-    .line 72
-    .line 73
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;
-
-    .line 74
-    .line 75
-    invoke-direct {v2, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableDefer;-><init>(Lio/reactivex/rxjava3/functions/Supplier;)V
-
-    .line 76
-    .line 77
-    .line 78
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 79
-    .line 80
-    invoke-direct {p1, v1, v2}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
-
-    .line 81
-    .line 82
-    .line 83
-    new-instance v1, LOl1;
-
-    .line 84
-    .line 85
-    invoke-direct {v1, v0}, LOl1;-><init>(LYl1;)V
-
-    .line 86
-    .line 87
-    .line 88
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;
-
-    .line 89
-    .line 90
-    invoke-direct {v0, v1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableFromAction;-><init>(Lio/reactivex/rxjava3/functions/Action;)V
-
-    .line 91
-    .line 92
-    .line 93
-    new-instance v1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;
-
-    .line 94
-    .line 95
-    invoke-direct {v1, p1, v0}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableAndThenCompletable;-><init>(Lio/reactivex/rxjava3/core/CompletableSource;Lio/reactivex/rxjava3/core/CompletableSource;)V
-
-    .line 96
-    .line 97
-    .line 98
-    sget-object p1, LPl1;->a:LPl1;
-
-    .line 99
-    .line 100
-    new-instance v0, Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;
-
-    .line 101
-    .line 102
-    invoke-direct {v0, v1, p1}, Lio/reactivex/rxjava3/internal/operators/completable/CompletableOnErrorComplete;-><init>(Lio/reactivex/rxjava3/core/Completable;Lio/reactivex/rxjava3/functions/Predicate;)V
-
-    .line 103
-    .line 104
-    .line 105
-    return-object v0
+    return-object p1
 .end method

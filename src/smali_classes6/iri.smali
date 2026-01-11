@@ -2,20 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LJZ7;
-.implements LyFi;
-
 
 # instance fields
-.field public final a:LXfi;
+.field public final a:LnJe;
 
-.field public final b:LXfi;
+.field public final b:LREi;
+
+.field public final c:LREi;
 
 
 # direct methods
-.method public constructor <init>(LNG4;LNG4;)V
-    .locals 9
+.method public constructor <init>(Lg4c;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -23,208 +21,135 @@
     .line 2
     .line 3
     .line 4
-    new-instance v0, Lhkh;
+    sget-object v0, LO3c;->Z:LO3c;
 
     .line 5
     .line 6
-    const-class v3, Lbke;
+    const-string v1, "StreaksClient"
 
     .line 7
     .line 8
-    const-string v4, "get"
+    invoke-static {v0, v0, v1}, Lnfe;->f(LO3c;LO3c;Ljava/lang/String;)Lnp0;
 
     .line 9
     .line 10
-    const/4 v1, 0x0
-
     .line 11
-    const-string v5, "get()Ljava/lang/Object;"
+    move-result-object v0
 
     .line 12
-    .line 13
-    const/4 v6, 0x0
+    new-instance v1, LnJe;
 
+    .line 13
     .line 14
-    const/16 v7, 0x19
+    invoke-direct {v1, v0}, LnJe;-><init>(Lnp0;)V
 
     .line 15
     .line 16
-    move-object v2, p1
-
     .line 17
-    invoke-direct/range {v0 .. v7}, Lhkh;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    iput-object v1, p0, Liri;->a:LnJe;
 
     .line 18
     .line 19
+    new-instance v0, Lpbi;
+
     .line 20
-    new-instance p1, LXfi;
-
     .line 21
-    .line 22
-    invoke-direct {p1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    const/16 v1, 0xf
 
+    .line 22
     .line 23
+    invoke-direct {v0, p1, v1, p0}, Lpbi;-><init>(Ljava/lang/Object;ILjava/lang/Object;)V
+
     .line 24
     .line 25
-    iput-object p1, p0, Liri;->a:LXfi;
-
     .line 26
+    new-instance p1, LREi;
+
     .line 27
-    new-instance v1, Lhkh;
-
     .line 28
-    .line 29
-    const-class v4, Lbke;
+    invoke-direct {p1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 29
     .line 30
     .line 31
-    const-string v5, "get"
+    iput-object p1, p0, Liri;->b:LREi;
 
     .line 32
     .line 33
-    const/4 v2, 0x0
+    new-instance p1, Ls9i;
 
     .line 34
-    const-string v6, "get()Ljava/lang/Object;"
-
     .line 35
-    .line 36
-    const/4 v7, 0x0
+    const/16 v0, 0x14
 
+    .line 36
     .line 37
-    const/16 v8, 0x1a
+    invoke-direct {p1, v0, p0}, Ls9i;-><init>(ILjava/lang/Object;)V
 
     .line 38
     .line 39
-    move-object v3, p2
-
     .line 40
-    invoke-direct/range {v1 .. v8}, Lhkh;-><init>(ILjava/lang/Object;Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;II)V
+    new-instance v0, LREi;
 
     .line 41
     .line 42
-    .line 43
-    new-instance p1, LXfi;
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
+    .line 43
     .line 44
     .line 45
-    invoke-direct {p1, v1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    iput-object v0, p0, Liri;->c:LREi;
 
     .line 46
     .line 47
-    .line 48
-    iput-object p1, p0, Liri;->b:LXfi;
-
-    .line 49
-    .line 50
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(LdV3;Ljava/lang/String;Lcom/snapchat/client/messaging/Conversation;Ljava/util/Map;)LbZf;
-    .locals 6
+.method public final a(Z)Lio/reactivex/rxjava3/core/Observable;
+    .locals 0
 
     .line 1
-    invoke-virtual {p1}, LdV3;->m()LHqi;
+    if-eqz p1, :cond_0
 
     .line 2
     .line 3
+    iget-object p1, p0, Liri;->c:LREi;
+
     .line 4
+    .line 5
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 6
+    .line 7
+    .line 8
     move-result-object p1
 
-    .line 5
-    iget-object p2, p0, Liri;->a:LXfi;
-
-    .line 6
-    .line 7
-    invoke-virtual {p2}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 8
     .line 9
-    .line 10
-    move-result-object p2
+    check-cast p1, Lio/reactivex/rxjava3/core/Observable;
 
+    .line 10
     .line 11
-    check-cast p2, LXqi;
+    return-object p1
 
     .line 12
+    :cond_0
+    iget-object p1, p0, Liri;->b:LREi;
+
     .line 13
-    iget-object p3, p1, LHqi;->c:[LUqi;
-
     .line 14
-    .line 15
-    check-cast p2, LZqi;
+    invoke-virtual {p1}, LREi;->getValue()Ljava/lang/Object;
 
+    .line 15
     .line 16
     .line 17
-    invoke-virtual {p2, p3}, LZqi;->b([LUqi;)Lari;
+    move-result-object p1
 
     .line 18
+    check-cast p1, Lio/reactivex/rxjava3/core/Observable;
+
     .line 19
     .line 20
-    move-result-object p2
-
-    .line 21
-    new-instance v0, Lxsi;
-
-    .line 22
-    .line 23
-    iget-object v1, p1, LHqi;->b:Ljava/lang/String;
-
-    .line 24
-    .line 25
-    iget-object v2, p2, Lari;->a:Ljava/lang/Object;
-
-    .line 26
-    .line 27
-    const/16 v5, 0x8
-
-    .line 28
-    .line 29
-    iget-object v3, p2, Lari;->b:Ljava/util/List;
-
-    .line 30
-    .line 31
-    const/4 v4, 0x0
-
-    .line 32
-    invoke-direct/range {v0 .. v5}, Lxsi;-><init>(Ljava/lang/String;Ljava/util/List;Ljava/util/List;ZI)V
-
-    .line 33
-    .line 34
-    .line 35
-    return-object v0
-.end method
-
-.method public final e(LbZf;LpOf;LQqb;)Lio/reactivex/rxjava3/core/Single;
-    .locals 1
-
-    .line 1
-    check-cast p1, Lxsi;
-
-    .line 2
-    .line 3
-    new-instance p3, LUpi;
-
-    .line 4
-    .line 5
-    const/4 v0, 0x1
-
-    .line 6
-    invoke-direct {p3, p1, p0, p2, v0}, LUpi;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;I)V
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance p1, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;
-
-    .line 10
-    .line 11
-    invoke-direct {p1, p3}, Lio/reactivex/rxjava3/internal/operators/single/SingleFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
-
-    .line 12
-    .line 13
-    .line 14
     return-object p1
 .end method

@@ -16,14 +16,14 @@
 
     .line 4
     .line 5
-    new-instance v0, Lw9b;
+    new-instance v0, LOnb;
 
     .line 6
     .line 7
-    const/4 v1, 0x6
+    const/4 v1, 0x3
 
     .line 8
-    invoke-direct {v0, v1, p2}, Lw9b;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p2}, LOnb;-><init>(ILjava/lang/Object;)V
 
     .line 9
     .line 10
@@ -35,7 +35,7 @@
     const/4 p1, 0x0
 
     .line 14
-    iget-object p2, v0, Lw9b;->b:Ljava/lang/Object;
+    iget-object p2, v0, LOnb;->b:Ljava/lang/Object;
 
     .line 15
     .line 16

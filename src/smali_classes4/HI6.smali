@@ -1,175 +1,218 @@
 .class public final LHI6;
-.super LII6;
+.super Lkq6;
 .source "SourceFile"
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
+.field public final c:Ljava/util/List;
+
+.field public final d:LCbd;
+
+.field public final e:LJPd;
+
+.field public final f:LCBe;
+
+.field public final g:LCBe;
+
+.field public final h:LWp6;
+
+.field public final i:LCBe;
+
+.field public final j:LCBe;
+
+.field public final k:LCBe;
+
+.field public final l:LUg6;
+
+.field public final m:LCBe;
+
+.field public final n:Lobc;
+
+.field public final o:Z
+
+.field public final p:Lrbc;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public constructor <init>(Ljava/lang/Long;Ljava/lang/String;LvQi;Lv6j;Ljava/util/List;LCbd;LJPd;LCBe;LCBe;LWp6;LCBe;LCBe;LCBe;LCBe;LUg6;LCBe;Lobc;ZLrbc;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1, p2, p4}, Lkq6;-><init>(Ljava/lang/Long;Ljava/lang/String;Lv6j;)V
 
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LHI6;->a:Ljava/lang/Object;
+    iput-object p5, p0, LHI6;->c:Ljava/util/List;
 
     .line 5
     .line 6
+    iput-object p6, p0, LHI6;->d:LCbd;
+
+    .line 7
+    .line 8
+    iput-object p7, p0, LHI6;->e:LJPd;
+
+    .line 9
+    .line 10
+    iput-object p8, p0, LHI6;->f:LCBe;
+
+    .line 11
+    .line 12
+    iput-object p9, p0, LHI6;->g:LCBe;
+
+    .line 13
+    .line 14
+    iput-object p10, p0, LHI6;->h:LWp6;
+
+    .line 15
+    .line 16
+    iput-object p11, p0, LHI6;->i:LCBe;
+
+    .line 17
+    .line 18
+    iput-object p12, p0, LHI6;->j:LCBe;
+
+    .line 19
+    .line 20
+    iput-object p14, p0, LHI6;->k:LCBe;
+
+    .line 21
+    .line 22
+    iput-object p15, p0, LHI6;->l:LUg6;
+
+    .line 23
+    .line 24
+    move-object/from16 p1, p16
+
+    .line 25
+    .line 26
+    iput-object p1, p0, LHI6;->m:LCBe;
+
+    .line 27
+    .line 28
+    move-object/from16 p1, p17
+
+    .line 29
+    .line 30
+    iput-object p1, p0, LHI6;->n:Lobc;
+
+    .line 31
+    .line 32
+    move/from16 p1, p18
+
+    .line 33
+    .line 34
+    iput-boolean p1, p0, LHI6;->o:Z
+
+    .line 35
+    .line 36
+    move-object/from16 p1, p19
+
+    .line 37
+    .line 38
+    iput-object p1, p0, LHI6;->p:Lrbc;
+
+    .line 39
+    .line 40
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic a()Ljava/lang/Object;
-    .locals 1
+.method public final b(Lkdd;LUn6;)Lhje;
+    .locals 16
 
     .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    return-object v0
-.end method
-
-.method public final b()Ljava/lang/Object;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LHI6;->a:Ljava/lang/Object;
+    move-object/from16 v0, p0
 
     .line 2
     .line 3
-    return-object v0
-.end method
+    move-object/from16 v11, p2
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
     .line 4
-    return v0
-
     .line 5
-    :cond_0
-    instance-of v1, p1, LHI6;
+    check-cast v11, LQn6;
 
     .line 6
     .line 7
-    const/4 v2, 0x0
+    new-instance v1, Lio6;
 
     .line 8
-    if-nez v1, :cond_1
-
     .line 9
-    .line 10
-    return v2
+    iget-object v12, v0, LHI6;->m:LCBe;
 
+    .line 10
     .line 11
-    :cond_1
-    check-cast p1, LHI6;
+    iget-object v3, v0, LHI6;->e:LJPd;
 
     .line 12
     .line 13
-    iget-object v1, p0, LHI6;->a:Ljava/lang/Object;
+    iget-object v4, v0, LHI6;->f:LCBe;
 
     .line 14
     .line 15
-    iget-object p1, p1, LHI6;->a:Ljava/lang/Object;
+    iget-object v5, v0, LHI6;->g:LCBe;
 
     .line 16
     .line 17
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    iget-object v6, v0, LHI6;->h:LWp6;
 
     .line 18
     .line 19
-    .line 20
-    move-result p1
+    iget-object v7, v0, LHI6;->i:LCBe;
 
+    .line 20
     .line 21
-    if-nez p1, :cond_2
+    iget-object v8, v0, LHI6;->j:LCBe;
 
     .line 22
     .line 23
-    return v2
+    iget-object v9, v0, LHI6;->k:LCBe;
 
     .line 24
-    :cond_2
-    return v0
-.end method
+    .line 25
+    iget-object v10, v0, LHI6;->l:LUg6;
 
-.method public final hashCode()I
-    .locals 1
+    .line 26
+    .line 27
+    iget-boolean v14, v0, LHI6;->o:Z
 
-    .line 1
-    iget-object v0, p0, LHI6;->a:Ljava/lang/Object;
+    .line 28
+    .line 29
+    iget-object v15, v0, LHI6;->p:Lrbc;
 
-    .line 2
-    .line 3
-    if-nez v0, :cond_0
+    .line 30
+    .line 31
+    iget-object v2, v0, LHI6;->d:LCbd;
 
-    .line 4
-    .line 5
-    const/4 v0, 0x0
+    .line 32
+    .line 33
+    iget-object v13, v0, LHI6;->n:Lobc;
 
-    .line 6
-    return v0
+    .line 34
+    .line 35
+    invoke-direct/range {v1 .. v15}, Lio6;-><init>(LCbd;LJPd;LCBe;LCBe;LWp6;LCBe;LCBe;LCBe;LUg6;LQn6;LCBe;Lobc;ZLrbc;)V
 
-    .line 7
-    :cond_0
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+    .line 36
+    .line 37
+    .line 38
+    new-instance v2, Lhje;
 
-    .line 8
-    .line 9
-    .line 10
-    move-result v0
+    .line 39
+    .line 40
+    iget-object v3, v0, LHI6;->c:Ljava/util/List;
 
-    .line 11
-    return v0
-.end method
+    .line 41
+    .line 42
+    move-object/from16 v4, p1
 
-.method public final toString()Ljava/lang/String;
-    .locals 3
+    .line 43
+    .line 44
+    invoke-direct {v2, v4, v11, v1, v3}, Lhje;-><init>(Lkdd;LJcd;LGf0;Ljava/util/List;)V
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    const-string v1, "Right(value="
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    iget-object v1, p0, LHI6;->a:Ljava/lang/Object;
-
-    .line 9
-    .line 10
-    const-string v2, ")"
-
-    .line 11
-    .line 12
-    invoke-static {v0, v1, v2}, Lgad;->g(Ljava/lang/StringBuilder;Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    return-object v0
+    .line 45
+    .line 46
+    .line 47
+    return-object v2
 .end method

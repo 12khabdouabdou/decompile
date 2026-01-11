@@ -1,10 +1,10 @@
 .class public final Lcom/snap/apps_from_snap/AppInfoViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'app_icon_url_2x\':s,\'app_icon_url_3x\':s,\'app_intro_icon_url_2x\':s,\'app_intro_icon_url_3x\':s,\'app_name\':s,\'app_prefix_url_for_ios\':s,\'app_package_name_for_android\':s,\'app_description\':s,\'background_image_url_2x\':s,\'background_image_url_3x\':s,\'app_install_link_ios\':s,\'app_install_link_android\':s,\'installed\':b"
     typeReferences = {}

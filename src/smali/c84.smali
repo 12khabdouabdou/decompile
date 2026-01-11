@@ -2,476 +2,324 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements LmZ1;
+
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final synthetic a:I
 
-.field public final b:LBre;
-
-.field public final c:LXfi;
-
-.field public final d:LXfi;
-
-.field public e:Lcom/snap/android/ferrite/core/CrashHint;
-
-.field public f:Ljava/lang/String;
-
-.field public g:Z
-
-.field public final h:Ljava/util/concurrent/ConcurrentHashMap;
+.field public final synthetic b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;LBre;)V
+.method public synthetic constructor <init>(ILjava/lang/Object;)V
     .locals 0
 
     .line 1
+    iput p1, p0, Lc84;->a:I
+
+    iput-object p2, p0, Lc84;->b:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    .line 4
-    iput-object p1, p0, Lc84;->a:Landroid/content/Context;
-
-    .line 5
-    .line 6
-    iput-object p2, p0, Lc84;->b:LBre;
-
-    .line 7
-    .line 8
-    sget-object p1, LaZ;->y0:LaZ;
-
-    .line 9
-    .line 10
-    new-instance p2, LXfi;
-
-    .line 11
-    .line 12
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 13
-    .line 14
-    .line 15
-    iput-object p2, p0, Lc84;->c:LXfi;
-
-    .line 16
-    .line 17
-    new-instance p1, Ll14;
-
-    .line 18
-    .line 19
-    const/4 p2, 0x2
-
-    .line 20
-    invoke-direct {p1, p2, p0}, Ll14;-><init>(ILjava/lang/Object;)V
-
-    .line 21
-    .line 22
-    .line 23
-    new-instance p2, LXfi;
-
-    .line 24
-    .line 25
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
-
-    .line 26
-    .line 27
-    .line 28
-    iput-object p2, p0, Lc84;->d:LXfi;
-
-    .line 29
-    .line 30
-    new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 31
-    .line 32
-    invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
-
-    .line 33
-    .line 34
-    .line 35
-    iput-object p1, p0, Lc84;->h:Ljava/util/concurrent/ConcurrentHashMap;
-
-    .line 36
-    .line 37
     return-void
-.end method
-
-.method public static final a(Lc84;Ljava/lang/String;)V
-    .locals 2
-
-    .line 1
-    monitor-enter p0
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lc84;->e:Lcom/snap/android/ferrite/core/CrashHint;
-
-    .line 3
-    .line 4
-    if-nez v0, :cond_1
-
-    .line 5
-    .line 6
-    invoke-static {}, Lcom/snap/android/ferrite/core/Ferrite;->getFerrite()Lcom/snap/android/ferrite/core/Ferrite;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v0
-
-    .line 10
-    if-eqz v0, :cond_0
-
-    .line 11
-    .line 12
-    const-string v1, "APP_BREADCRUMB_DATA"
-
-    .line 13
-    .line 14
-    invoke-virtual {v0, v1}, Lcom/snap/android/ferrite/core/Ferrite;->newCrashHint(Ljava/lang/String;)Lcom/snap/android/ferrite/core/CrashHint;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v0
-
-    .line 18
-    goto :goto_0
-
-    .line 19
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 20
-    :goto_0
-    iput-object v0, p0, Lc84;->e:Lcom/snap/android/ferrite/core/CrashHint;
-
-    .line 21
-    .line 22
-    :cond_1
-    iget-object v0, p0, Lc84;->e:Lcom/snap/android/ferrite/core/CrashHint;
-
-    .line 23
-    .line 24
-    if-eqz v0, :cond_2
-
-    .line 25
-    .line 26
-    invoke-virtual {v0, p1}, Lcom/snap/android/ferrite/core/CrashHint;->setMessage(Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 27
-    .line 28
-    .line 29
-    goto :goto_1
-
-    .line 30
-    :catchall_0
-    move-exception p1
-
-    .line 31
-    goto :goto_2
-
-    .line 32
-    :cond_2
-    :goto_1
-    monitor-exit p0
-
-    .line 33
-    return-void
-
-    .line 34
-    :goto_2
-    :try_start_1
-    monitor-exit p0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 35
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)Ljava/lang/String;
-    .locals 7
+.method public final a(II)V
+    .locals 6
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget v0, p0, Lc84;->a:I
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    packed-switch v0, :pswitch_data_0
 
     .line 4
     .line 5
     .line 6
-    const-string v1, "\n"
+    const-string v0, "ScCameraServiceImpl.onCameraDisconnected"
 
     .line 7
     .line 8
-    if-eqz p3, :cond_0
+    iget-object v1, p0, Lc84;->b:Ljava/lang/Object;
 
     .line 9
     .line 10
-    invoke-interface {p3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    check-cast v1, LHHf;
 
     .line 11
     .line 12
-    .line 13
-    move-result-object p3
+    sget-object v2, LOdh;->a:LNdh;
 
+    .line 13
     .line 14
-    :goto_0
-    invoke-interface {p3}, Ljava/util/Iterator;->hasNext()Z
+    invoke-virtual {v2, v0}, LNdh;->e(Ljava/lang/String;)I
 
     .line 15
     .line 16
     .line 17
-    move-result v2
+    move-result v0
 
     .line 18
-    if-eqz v2, :cond_0
+    :try_start_0
+    iget-object v3, v1, LHHf;->d:Lwe2;
 
     .line 19
     .line 20
-    invoke-interface {p3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    monitor-enter v3
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 21
+    :try_start_1
+    iget-object v4, v1, LHHf;->d:Lwe2;
+
     .line 22
     .line 23
-    move-result-object v2
+    iget v4, v4, Lwe2;->i:I
 
     .line 24
-    check-cast v2, LM74;
-
     .line 25
+    const/4 v5, 0x1
+
     .line 26
-    iget-object v3, p0, Lc84;->c:LXfi;
+    if-eq v4, v5, :cond_0
 
     .line 27
     .line 28
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    iget-object v4, v1, LHHf;->x:Lnp0;
 
     .line 29
     .line 30
-    .line 31
-    move-result-object v3
+    const-string v5, "onCameraDisconnected"
 
+    .line 31
     .line 32
-    check-cast v3, Ljava/text/SimpleDateFormat;
+    invoke-virtual {v4, v5}, Lnp0;->a(Ljava/lang/String;)Lnp0;
 
     .line 33
     .line 34
-    new-instance v4, Ljava/util/Date;
-
     .line 35
+    move-result-object v4
+
     .line 36
-    iget-object v5, v2, LM74;->k:Ljava/lang/Long;
+    invoke-virtual {v1, v4}, LHHf;->c(Lnp0;)V
 
     .line 37
     .line 38
-    invoke-virtual {v5}, Ljava/lang/Number;->longValue()J
-
     .line 39
+    invoke-virtual {v1}, LHHf;->e()V
+
     .line 40
     .line 41
-    move-result-wide v5
-
     .line 42
-    invoke-direct {v4, v5, v6}, Ljava/util/Date;-><init>(J)V
+    iget-object v4, v1, LHHf;->d:Lwe2;
 
     .line 43
     .line 44
-    .line 45
-    invoke-virtual {v3, v4}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    iget-object v4, v4, Lwe2;->b:Lc72;
 
+    .line 45
     .line 46
+    iget-object v4, v4, Lc72;->a:Ljava/util/ArrayDeque;
+
     .line 47
     .line 48
-    move-result-object v3
+    invoke-virtual {v4}, Ljava/util/ArrayDeque;->isEmpty()Z
 
     .line 49
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 50
     .line 51
+    const/16 v4, 0xc
+
     .line 52
-    const-string v3, " "
-
     .line 53
-    .line 54
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v4}, LHHf;->b(LHHf;I)V
 
+    .line 54
     .line 55
     .line 56
+    goto :goto_0
+
     .line 57
-    iget-object v2, v2, LM74;->l:Ljava/lang/String;
+    :catchall_0
+    move-exception p1
 
     .line 58
+    goto :goto_1
+
     .line 59
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_0
+    :goto_0
+    iget-object v1, v1, LHHf;->r:LHO4;
 
     .line 60
     .line 61
-    .line 62
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, LHO4;->get()Ljava/lang/Object;
 
+    .line 62
     .line 63
     .line 64
+    move-result-object v1
+
     .line 65
-    goto :goto_0
+    check-cast v1, LoZ1;
 
     .line 66
-    :cond_0
-    if-eqz p1, :cond_1
-
     .line 67
-    .line 68
-    const-string p3, "USER_ID "
+    invoke-virtual {v1, p1}, LoZ1;->a(I)LrP7;
 
+    .line 68
     .line 69
     .line 70
-    invoke-static {v0, p3, p1, v1}, Llva;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object p1
 
     .line 71
+    invoke-virtual {p1, p2}, LrP7;->d(I)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
     .line 72
     .line 73
-    :cond_1
-    if-eqz p2, :cond_2
-
     .line 74
+    :try_start_2
+    monitor-exit v3
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
     .line 75
-    const-string p1, "APP_VERSION "
+    invoke-virtual {v2, v0}, LNdh;->h(I)V
 
     .line 76
     .line 77
-    invoke-static {v0, p1, p2, v1}, Llva;->I(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 78
+    return-void
+
     .line 79
+    :catchall_1
+    move-exception p1
+
     .line 80
-    :cond_2
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    goto :goto_2
 
     .line 81
+    :goto_1
+    :try_start_3
+    monitor-exit v3
+
     .line 82
+    throw p1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
     .line 83
-    move-result-object p1
+    :goto_2
+    sget-object p2, LOdh;->b:LtGi;
 
     .line 84
-    return-object p1
-.end method
+    .line 85
+    if-eqz p2, :cond_1
 
-.method public final c()Ljava/util/ArrayList;
-    .locals 5
+    .line 86
+    .line 87
+    invoke-virtual {p2, v0}, LtGi;->o(I)V
 
-    .line 1
-    iget-object v0, p0, Lc84;->h:Ljava/util/concurrent/ConcurrentHashMap;
+    .line 88
+    .line 89
+    .line 90
+    :cond_1
+    throw p1
 
-    .line 2
-    .line 3
-    new-instance v1, Ljava/util/ArrayList;
+    .line 91
+    :pswitch_0
+    iget-object p1, p0, Lc84;->b:Ljava/lang/Object;
 
-    .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->size()I
+    .line 92
+    .line 93
+    check-cast p1, Lg84;
 
-    .line 6
-    .line 7
-    .line 8
-    move-result v2
+    .line 94
+    .line 95
+    iget-object p2, p1, Lg84;->c:LJp0;
 
-    .line 9
-    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+    .line 96
+    .line 97
+    iget-object p1, p1, Lg84;->e:LAE0;
 
-    .line 10
-    .line 11
-    .line 12
-    invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->entrySet()Ljava/util/Set;
+    .line 98
+    .line 99
+    invoke-virtual {p1}, LAE0;->a()V
 
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
+    .line 100
+    .line 101
+    .line 102
+    new-instance p2, LdJ3;
 
-    .line 16
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    .line 103
+    .line 104
+    const/4 v0, 0x2
 
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
+    .line 105
+    const/16 v1, 0xc
 
-    .line 20
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    .line 106
+    .line 107
+    invoke-direct {p2, v0, v1}, LdJ3;-><init>(II)V
 
-    .line 21
-    .line 22
-    .line 23
-    move-result v2
+    .line 108
+    .line 109
+    .line 110
+    iget-object v0, p1, LAE0;->f:Lio/reactivex/rxjava3/subjects/PublishSubject;
 
-    .line 24
-    if-eqz v2, :cond_0
+    .line 111
+    .line 112
+    invoke-virtual {v0, p2}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 25
-    .line 26
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 113
+    .line 114
+    .line 115
+    iget-object p2, p1, LAE0;->b:LeO3;
 
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v2
+    .line 116
+    .line 117
+    iget-object p2, p2, LeO3;->b:Ljava/lang/Object;
 
-    .line 30
-    check-cast v2, Ljava/util/Map$Entry;
+    .line 118
+    .line 119
+    check-cast p2, LH62;
 
-    .line 31
-    .line 32
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    .line 120
+    .line 121
+    const/4 v0, 0x0
 
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v3
+    .line 122
+    invoke-virtual {p2, v1, v0}, LH62;->e(ILL62;)V
 
-    .line 36
-    check-cast v3, Ljava/lang/String;
+    .line 123
+    .line 124
+    .line 125
+    sget-object p2, LyE0;->a:LyE0;
 
-    .line 37
-    .line 38
-    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+    .line 126
+    .line 127
+    iget-object p1, p1, LAE0;->g:Lio/reactivex/rxjava3/subjects/BehaviorSubject;
 
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v2
+    .line 128
+    .line 129
+    invoke-virtual {p1, p2}, Lio/reactivex/rxjava3/subjects/BehaviorSubject;->onNext(Ljava/lang/Object;)V
 
-    .line 42
-    check-cast v2, Ljava/lang/String;
+    .line 130
+    .line 131
+    .line 132
+    return-void
 
-    .line 43
-    .line 44
-    new-instance v4, Lb84;
-
-    .line 45
-    .line 46
-    invoke-direct {v4, v3, v2}, Lb84;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 47
-    .line 48
-    .line 49
-    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 50
-    .line 51
-    .line 52
-    goto :goto_0
-
-    .line 53
-    :cond_0
-    return-object v1
+    .line 133
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

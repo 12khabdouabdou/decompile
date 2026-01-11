@@ -7,15 +7,15 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = LTGb;
+    proxyClass = LeVb;
     schema = "\'updateEntries\':f|m|(r:\'[0]\'): p<r:\'[1]\'>,\'deleteEntries\':f|m|(r:\'[0]\'): p<r:\'[2]\'>,\'uploadTags\':f|m|(r:\'[0]\'): p<r:\'[3]\'>"
     typeReferences = {
         Lcom/snap/modules/memories/backup/BackupStepData;,
-        LFdj;,
-        Lo16;,
-        LIij;
+        LyCj;,
+        Lm46;,
+        LGHj;
     }
 .end annotation
 
@@ -28,7 +28,7 @@
             "Lcom/snap/modules/memories/backup/BackupStepData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "Lo16;",
+            "Lm46;",
             ">;"
         }
     .end annotation
@@ -44,7 +44,7 @@
             "Lcom/snap/modules/memories/backup/BackupStepData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "LFdj;",
+            "LyCj;",
             ">;"
         }
     .end annotation
@@ -57,7 +57,7 @@
             "Lcom/snap/modules/memories/backup/BackupStepData;",
             ")",
             "Lcom/snap/composer/promise/Promise<",
-            "LIij;",
+            "LGHj;",
             ">;"
         }
     .end annotation

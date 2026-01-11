@@ -1,84 +1,71 @@
-.class public final LpI5;
-.super Ljava/lang/Object;
+.class public final synthetic LpI5;
+.super LG88;
 .source "SourceFile"
 
 # interfaces
-.implements Lio/reactivex/rxjava3/functions/Function;
+.implements Lkotlin/jvm/functions/Function1;
 
 
-# instance fields
-.field public final synthetic a:LFxd;
+# static fields
+.field public static final f0:LpI5;
 
 
 # direct methods
-.method public constructor <init>(LFxd;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, LpI5;
 
     .line 2
     .line 3
-    .line 4
-    iput-object p1, p0, LpI5;->a:LFxd;
+    const-string v5, "parse(Ljava/lang/String;)Landroid/net/Uri;"
 
+    .line 4
     .line 5
+    const/4 v2, 0x0
+
     .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    const-class v3, Landroid/net/Uri;
+
+    .line 8
+    .line 9
+    const-string v4, "parse"
+
+    .line 10
+    .line 11
+    invoke-direct/range {v0 .. v5}, LG88;-><init>(IILjava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 12
+    .line 13
+    .line 14
+    sput-object v0, LpI5;->f0:LpI5;
+
+    .line 15
+    .line 16
     return-void
 .end method
 
 
 # virtual methods
-.method public final apply(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
     .line 1
     check-cast p1, Ljava/lang/String;
 
     .line 2
     .line 3
-    iget-object v0, p0, LpI5;->a:LFxd;
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, LFxd;->a()LmG1;
-
     .line 6
-    .line 7
-    .line 8
-    move-result-object v0
-
-    .line 9
-    iget-object v0, v0, LmG1;->t:LmG1$a;
-
-    .line 10
-    .line 11
-    sget-object v1, LHC2;->a:Ljava/nio/charset/Charset;
-
-    .line 12
-    .line 13
-    invoke-virtual {p1, v1}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
-
-    .line 14
-    .line 15
-    .line 16
     move-result-object p1
 
-    .line 17
-    const/4 v1, 0x6
-
-    .line 18
-    iput v1, v0, LmG1$a;->a:I
-
-    .line 19
-    .line 20
-    iput-object p1, v0, LmG1$a;->b:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    sget-object p1, Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;->a:Lio/reactivex/rxjava3/internal/operators/completable/CompletableEmpty;
-
-    .line 23
-    .line 24
+    .line 7
     return-object p1
 .end method

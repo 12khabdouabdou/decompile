@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/create_post/PlaceTagsMetadata;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'latitude\':d,\'longitude\':d,\'placePickerCell\':r?:\'[0]\',\'suggestedPlaceVenueIds\':a?<s>,\'placeItemIndex\':d@?,\'source\':r<e>:\'[1]\',\'type\':r<e>:\'[2]\'"
     typeReferences = {
@@ -139,22 +139,22 @@
     return-object v0
 .end method
 
-.method public final c()Ljava/util/List;
+.method public final c()Lcom/snap/modules/create_post/PlaceTagsSelectionSource;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/modules/create_post/PlaceTagsMetadata;->_suggestedPlaceVenueIds:Ljava/util/List;
+    iget-object v0, p0, Lcom/snap/modules/create_post/PlaceTagsMetadata;->_source:Lcom/snap/modules/create_post/PlaceTagsSelectionSource;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public final d()Lcom/snap/modules/create_post/PlaceTagsSelectionType;
+.method public final d()Ljava/util/List;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/modules/create_post/PlaceTagsMetadata;->_type:Lcom/snap/modules/create_post/PlaceTagsSelectionType;
+    iget-object v0, p0, Lcom/snap/modules/create_post/PlaceTagsMetadata;->_suggestedPlaceVenueIds:Ljava/util/List;
 
     .line 2
     .line 3

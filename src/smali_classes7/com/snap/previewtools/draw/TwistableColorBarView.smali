@@ -12,7 +12,7 @@
 
 .field public final e0:Landroid/graphics/Rect;
 
-.field public final f0:LXfi;
+.field public final f0:LREi;
 
 .field public t:Landroid/animation/ValueAnimator;
 
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0705ed
+    const v1, 0x7f070619
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -69,7 +69,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0705ec
+    const v3, 0x7f070618
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -86,7 +86,7 @@
 
     move-result-object v3
 
-    const v4, 0x7f0705e7
+    const v4, 0x7f070613
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -101,15 +101,15 @@
     iput-object p1, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->e0:Landroid/graphics/Rect;
 
     .line 10
-    sget-object p1, Leui;->p0:Leui;
+    sget-object p1, LbSi;->o0:LbSi;
 
     .line 11
-    new-instance v0, LXfi;
+    new-instance v0, LREi;
 
-    invoke-direct {v0, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v0, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 12
-    iput-object v0, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LXfi;
+    iput-object v0, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LREi;
 
     return-void
 .end method
@@ -148,7 +148,7 @@
 
     move-result-object p2
 
-    const v0, 0x7f0705ed
+    const v0, 0x7f070619
 
     invoke-virtual {p2, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -165,7 +165,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0705ec
+    const v2, 0x7f070618
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -182,7 +182,7 @@
 
     move-result-object v2
 
-    const v3, 0x7f0705e7
+    const v3, 0x7f070613
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -197,15 +197,15 @@
     iput-object p1, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->e0:Landroid/graphics/Rect;
 
     .line 22
-    sget-object p1, Leui;->p0:Leui;
+    sget-object p1, LbSi;->o0:LbSi;
 
     .line 23
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 24
-    iput-object p2, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LXfi;
+    iput-object p2, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LREi;
 
     return-void
 .end method
@@ -244,7 +244,7 @@
 
     move-result-object p2
 
-    const p3, 0x7f0705ed
+    const p3, 0x7f070619
 
     invoke-virtual {p2, p3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -261,7 +261,7 @@
 
     move-result-object v0
 
-    const v1, 0x7f0705ec
+    const v1, 0x7f070618
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -278,7 +278,7 @@
 
     move-result-object v1
 
-    const v2, 0x7f0705e7
+    const v2, 0x7f070613
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
@@ -293,15 +293,15 @@
     iput-object p1, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->e0:Landroid/graphics/Rect;
 
     .line 34
-    sget-object p1, Leui;->p0:Leui;
+    sget-object p1, LbSi;->o0:LbSi;
 
     .line 35
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 36
-    iput-object p2, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LXfi;
+    iput-object p2, p0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LREi;
 
     return-void
 .end method
@@ -474,14 +474,14 @@
     .line 78
     .line 79
     .line 80
-    new-instance v2, LvYg;
+    new-instance v2, Likh;
 
     .line 81
     .line 82
     const/4 v3, 0x6
 
     .line 83
-    invoke-direct {v2, v3, p0}, LvYg;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v2, v3, p0}, Likh;-><init>(ILjava/lang/Object;)V
 
     .line 84
     .line 85
@@ -491,7 +491,7 @@
     .line 87
     .line 88
     .line 89
-    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
+    invoke-virtual {v0}, Landroid/animation/Animator;->start()V
 
     .line 90
     .line 91
@@ -565,7 +565,6 @@
     .line 122
     return p1
 
-    .line 123
     :array_0
     .array-data 4
         0x3f800000    # 1.0f
@@ -819,11 +818,11 @@
     div-float/2addr v1, v3
 
     .line 114
-    iget-object v3, v0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LXfi;
+    iget-object v3, v0, Lcom/snap/previewtools/draw/TwistableColorBarView;->f0:LREi;
 
     .line 115
     .line 116
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 117
     .line 118
@@ -960,7 +959,7 @@
 
     .line 176
     .line 177
-    invoke-static {v0, v2, v6}, LMeb;->a(FFF)F
+    invoke-static {v0, v2, v6}, Losb;->a(FFF)F
 
     .line 178
     .line 179
@@ -1014,7 +1013,7 @@
 
     .line 201
     :cond_5
-    invoke-virtual {v3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {v3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 202
     .line 203

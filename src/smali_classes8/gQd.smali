@@ -1,157 +1,157 @@
-.class public final enum LgQd;
-.super Ljava/lang/Enum;
+.class public final LgQd;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
-
-# interfaces
-.implements LgQ6;
 
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "LgQd;",
-        ">;",
-        "LgQ6;"
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'senderColor\':d,\'durationMs\':d@?,\'isSaved\':b@?,\'isMessagingPlugin\':b@?,\'staticSamples\':a?<d@>,\'isTranscribable\':b@?,\'containerWidth\':d@?,\'createdAtMs\':d@?,\'mediaIdentifier\':r?:\'[0]\',\'locale\':s?"
+    typeReferences = {
+        Lcom/snap/modules/chat_media/ChatMediaIdentifier;
     }
 .end annotation
 
 
-# static fields
-.field public static final enum b:LgQd;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SENDFLOW"
-    .end annotation
-.end field
-
-.field public static final enum c:LgQd;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "SAVE"
-    .end annotation
-.end field
-
-.field public static final synthetic t:[LgQd;
-
-
 # instance fields
-.field public final a:I
+.field private _containerWidth:Ljava/lang/Double;
+
+.field private _createdAtMs:Ljava/lang/Double;
+
+.field private _durationMs:Ljava/lang/Double;
+
+.field private _isMessagingPlugin:Ljava/lang/Boolean;
+
+.field private _isSaved:Ljava/lang/Boolean;
+
+.field private _isTranscribable:Ljava/lang/Boolean;
+
+.field private _locale:Ljava/lang/String;
+
+.field private _mediaIdentifier:Lcom/snap/modules/chat_media/ChatMediaIdentifier;
+
+.field private _senderColor:D
+
+.field private _staticSamples:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/Double;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method static constructor <clinit>()V
-    .locals 5
-
-    .line 1
-    new-instance v0, LgQd;
-
-    .line 2
-    .line 3
-    const-string v1, "SENDFLOW"
-
-    .line 4
-    .line 5
-    const/4 v2, 0x0
-
-    .line 6
-    invoke-direct {v0, v1, v2, v2}, LgQd;-><init>(Ljava/lang/String;II)V
-
-    .line 7
-    .line 8
-    .line 9
-    sput-object v0, LgQd;->b:LgQd;
-
-    .line 10
-    .line 11
-    new-instance v1, LgQd;
-
-    .line 12
-    .line 13
-    const-string v3, "SAVE"
-
-    .line 14
-    .line 15
-    const/4 v4, 0x1
-
-    .line 16
-    invoke-direct {v1, v3, v4, v4}, LgQd;-><init>(Ljava/lang/String;II)V
-
-    .line 17
-    .line 18
-    .line 19
-    sput-object v1, LgQd;->c:LgQd;
-
-    .line 20
-    .line 21
-    const/4 v3, 0x2
-
-    .line 22
-    new-array v3, v3, [LgQd;
-
-    .line 23
-    .line 24
-    aput-object v0, v3, v2
-
-    .line 25
-    .line 26
-    aput-object v1, v3, v4
-
-    .line 27
-    .line 28
-    sput-object v3, LgQd;->t:[LgQd;
-
-    .line 29
-    .line 30
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;II)V
+.method public constructor <init>(D)V
     .locals 0
 
     .line 1
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
+    iput-wide p1, p0, LgQd;->_senderColor:D
+
+    const/4 p1, 0x0
+
     .line 3
+    iput-object p1, p0, LgQd;->_durationMs:Ljava/lang/Double;
+
     .line 4
-    iput p3, p0, LgQd;->a:I
+    iput-object p1, p0, LgQd;->_isSaved:Ljava/lang/Boolean;
 
     .line 5
+    iput-object p1, p0, LgQd;->_isMessagingPlugin:Ljava/lang/Boolean;
+
     .line 6
+    iput-object p1, p0, LgQd;->_staticSamples:Ljava/util/List;
+
+    .line 7
+    iput-object p1, p0, LgQd;->_isTranscribable:Ljava/lang/Boolean;
+
+    .line 8
+    iput-object p1, p0, LgQd;->_containerWidth:Ljava/lang/Double;
+
+    .line 9
+    iput-object p1, p0, LgQd;->_createdAtMs:Ljava/lang/Double;
+
+    .line 10
+    iput-object p1, p0, LgQd;->_mediaIdentifier:Lcom/snap/modules/chat_media/ChatMediaIdentifier;
+
+    .line 11
+    iput-object p1, p0, LgQd;->_locale:Ljava/lang/String;
+
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)LgQd;
-    .locals 1
+.method public constructor <init>(DLjava/lang/Double;Ljava/lang/Boolean;Ljava/lang/Boolean;Ljava/util/List;Ljava/lang/Boolean;Ljava/lang/Double;Ljava/lang/Double;Lcom/snap/modules/chat_media/ChatMediaIdentifier;Ljava/lang/String;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(D",
+            "Ljava/lang/Double;",
+            "Ljava/lang/Boolean;",
+            "Ljava/lang/Boolean;",
+            "Ljava/util/List<",
+            "Ljava/lang/Double;",
+            ">;",
+            "Ljava/lang/Boolean;",
+            "Ljava/lang/Double;",
+            "Ljava/lang/Double;",
+            "Lcom/snap/modules/chat_media/ChatMediaIdentifier;",
+            "Ljava/lang/String;",
+            ")V"
+        }
+    .end annotation
 
-    .line 1
-    const-class v0, LgQd;
+    .line 12
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    .line 3
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    .line 13
+    iput-wide p1, p0, LgQd;->_senderColor:D
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
+    .line 14
+    iput-object p3, p0, LgQd;->_durationMs:Ljava/lang/Double;
 
-    .line 7
-    check-cast p0, LgQd;
+    .line 15
+    iput-object p4, p0, LgQd;->_isSaved:Ljava/lang/Boolean;
 
-    .line 8
-    .line 9
-    return-object p0
+    .line 16
+    iput-object p5, p0, LgQd;->_isMessagingPlugin:Ljava/lang/Boolean;
+
+    .line 17
+    iput-object p6, p0, LgQd;->_staticSamples:Ljava/util/List;
+
+    .line 18
+    iput-object p7, p0, LgQd;->_isTranscribable:Ljava/lang/Boolean;
+
+    .line 19
+    iput-object p8, p0, LgQd;->_containerWidth:Ljava/lang/Double;
+
+    .line 20
+    iput-object p9, p0, LgQd;->_createdAtMs:Ljava/lang/Double;
+
+    .line 21
+    iput-object p10, p0, LgQd;->_mediaIdentifier:Lcom/snap/modules/chat_media/ChatMediaIdentifier;
+
+    .line 22
+    iput-object p11, p0, LgQd;->_locale:Ljava/lang/String;
+
+    return-void
 .end method
 
-.method public static values()[LgQd;
-    .locals 1
+
+# virtual methods
+.method public final a()V
+    .locals 2
 
     .line 1
-    sget-object v0, LgQd;->t:[LgQd;
+    const-wide/high16 v0, 0x4059000000000000L    # 100.0
 
     .line 2
     .line 3
-    invoke-virtual {v0}, [LgQd;->clone()Ljava/lang/Object;
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     .line 4
     .line 5
@@ -159,22 +159,68 @@
     move-result-object v0
 
     .line 7
-    check-cast v0, [LgQd;
+    iput-object v0, p0, LgQd;->_containerWidth:Ljava/lang/Double;
 
     .line 8
     .line 9
-    return-object v0
+    return-void
 .end method
 
-
-# virtual methods
-.method public final a()I
-    .locals 1
+.method public final b(Ljava/lang/Double;)V
+    .locals 0
 
     .line 1
-    iget v0, p0, LgQd;->a:I
+    iput-object p1, p0, LgQd;->_durationMs:Ljava/lang/Double;
 
     .line 2
     .line 3
-    return v0
+    return-void
+.end method
+
+.method public final c(Lcom/snap/modules/chat_media/ChatMediaIdentifier;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LgQd;->_mediaIdentifier:Lcom/snap/modules/chat_media/ChatMediaIdentifier;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final d()V
+    .locals 1
+
+    .line 1
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    iput-object v0, p0, LgQd;->_isMessagingPlugin:Ljava/lang/Boolean;
+
+    .line 4
+    .line 5
+    return-void
+.end method
+
+.method public final e(Ljava/util/ArrayList;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LgQd;->_staticSamples:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public final f(Ljava/lang/Boolean;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LgQd;->_isTranscribable:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    return-void
 .end method

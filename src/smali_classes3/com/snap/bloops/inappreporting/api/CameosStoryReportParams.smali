@@ -1,10 +1,10 @@
 .class public final Lcom/snap/bloops/inappreporting/api/CameosStoryReportParams;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'publisherId\':s,\'publisherName\':s,\'storyId\':s,\'cameoId\':s,\'additionalUserIds\':a<s>,\'uploadReportMedia\':f?(): g<c>:\'[0]\'<r:\'[1]\'>"
     typeReferences = {

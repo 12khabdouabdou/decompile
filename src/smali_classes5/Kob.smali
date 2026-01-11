@@ -1,29 +1,53 @@
-.class public final LKob;
-.super LOob;
+.class public interface abstract LKob;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
+# interfaces
+.implements Lcom/snap/composer/utils/ComposerMarshallable;
 
-# static fields
-.field public static final a:LKob;
+
+# annotations
+.annotation runtime LpA3;
+    propertyReplacements = ""
+    proxyClass = Ldpb;
+    schema = "\'setVisibleRect\':f|m|(r:\'[0]\', r?:\'[1]\'),\'setCenter\':f|m|(r:\'[2]\', r?:\'[1]\'),\'onVisibleRectChanged\':g<c>:\'[3]\'<r:\'[0]\'>,\'onViewportInteraction\':g<c>:\'[3]\'<b@>"
+    typeReferences = {
+        Lcom/snap/composer/location/GeoRect;,
+        Lcom/snap/map/layers/api/MapViewportChangeParameters;,
+        Lcom/snap/composer/location/GeoPoint;,
+        Lcom/snap/composer/bridge_observables/BridgeObservable;
+    }
+.end annotation
 
 
-# direct methods
-.method static constructor <clinit>()V
-    .locals 1
+# virtual methods
+.method public abstract getOnViewportInteraction()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 1
-    new-instance v0, LKob;
+.method public abstract getOnVisibleRectChanged()Lcom/snap/composer/bridge_observables/BridgeObservable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lcom/snap/composer/bridge_observables/BridgeObservable<",
+            "Lcom/snap/composer/location/GeoRect;",
+            ">;"
+        }
+    .end annotation
+.end method
 
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+.method public abstract pushToMarshaller(Lcom/snap/composer/utils/ComposerMarshaller;)I
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    sput-object v0, LKob;->a:LKob;
+.method public abstract setCenter(Lcom/snap/composer/location/GeoPoint;Lcom/snap/map/layers/api/MapViewportChangeParameters;)V
+.end method
 
-    .line 7
-    .line 8
-    return-void
+.method public abstract setVisibleRect(Lcom/snap/composer/location/GeoRect;Lcom/snap/map/layers/api/MapViewportChangeParameters;)V
 .end method

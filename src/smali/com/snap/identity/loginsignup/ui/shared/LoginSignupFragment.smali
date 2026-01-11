@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public A0:LPpa;
+.field public A0:LPG9;
 
-.field public B0:LTqc;
+.field public B0:LmGc;
 
-.field public C0:Lm89;
+.field public C0:LEI5;
 
-.field public D0:LpLa;
+.field public D0:LWXa;
 
 
 # direct methods
@@ -28,11 +28,11 @@
 
 
 # virtual methods
-.method public final U1()LJL0;
+.method public final U1()LKO0;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->A0:LPpa;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->A0:LPG9;
 
     .line 2
     .line 3
@@ -48,7 +48,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -59,11 +59,11 @@
     throw v0
 .end method
 
-.method public final Y1()Lm89;
+.method public final Y1()LEI5;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->C0:Lm89;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->C0:LEI5;
 
     .line 2
     .line 3
@@ -79,7 +79,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -90,11 +90,11 @@
     throw v0
 .end method
 
-.method public final Z1()LpLa;
+.method public final Z1()LWXa;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->D0:LpLa;
+    iget-object v0, p0, Lcom/snap/identity/loginsignup/ui/shared/LoginSignupFragment;->D0:LWXa;
 
     .line 2
     .line 3
@@ -110,7 +110,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10

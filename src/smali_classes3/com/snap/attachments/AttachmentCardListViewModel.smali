@@ -1,14 +1,14 @@
 .class public final Lcom/snap/attachments/AttachmentCardListViewModel;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'models\':a<r:\'[0]\'>"
     typeReferences = {
-        LQk0;
+        Lcn0;
     }
 .end annotation
 
@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LQk0;",
+            "Lcn0;",
             ">;"
         }
     .end annotation
@@ -32,7 +32,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "LQk0;",
+            "Lcn0;",
             ">;)V"
         }
     .end annotation

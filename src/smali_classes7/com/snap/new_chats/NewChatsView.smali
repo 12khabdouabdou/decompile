@@ -7,15 +7,15 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lcom/snap/composer/views/ComposerGeneratedRootView<",
-        "LBvc;",
-        "Lwvc;",
+        "LzKc;",
+        "LuKc;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final Companion:LAvc;
+.field public static final Companion:LyKc;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 1
 
     .line 1
-    new-instance v0, LAvc;
+    new-instance v0, LyKc;
 
     .line 2
     .line 3
@@ -32,7 +32,7 @@
     .line 4
     .line 5
     .line 6
-    sput-object v0, Lcom/snap/new_chats/NewChatsView;->Companion:LAvc;
+    sput-object v0, Lcom/snap/new_chats/NewChatsView;->Companion:LyKc;
 
     .line 7
     .line 8
@@ -62,15 +62,32 @@
     return-object v0
 .end method
 
-.method public static final create(LqZ8;LBvc;Lwvc;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/new_chats/NewChatsView;
+.method public static final create(LZ69;LvF3;)Lcom/snap/new_chats/NewChatsView;
+    .locals 1
+
+    sget-object v0, Lcom/snap/new_chats/NewChatsView;->Companion:LyKc;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-static {p0, v0, v0, p1, v0}, LyKc;->a(LZ69;LzKc;LuKc;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/new_chats/NewChatsView;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final create(LZ69;LzKc;LuKc;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/new_chats/NewChatsView;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "LqZ8;",
-            "LBvc;",
-            "Lwvc;",
-            "LTB3;",
+            "LZ69;",
+            "LzKc;",
+            "LuKc;",
+            "LvF3;",
             "Lkotlin/jvm/functions/Function1;",
             ")",
             "Lcom/snap/new_chats/NewChatsView;"
@@ -78,28 +95,11 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/snap/new_chats/NewChatsView;->Companion:LAvc;
+    sget-object v0, Lcom/snap/new_chats/NewChatsView;->Companion:LyKc;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-static {p0, p1, p2, p3, p4}, LAvc;->a(LqZ8;LBvc;Lwvc;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/new_chats/NewChatsView;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final create(LqZ8;LTB3;)Lcom/snap/new_chats/NewChatsView;
-    .locals 1
-
-    sget-object v0, Lcom/snap/new_chats/NewChatsView;->Companion:LAvc;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    const/4 v0, 0x0
-
-    .line 2
-    invoke-static {p0, v0, v0, p1, v0}, LAvc;->a(LqZ8;LBvc;Lwvc;LTB3;Lkotlin/jvm/functions/Function1;)Lcom/snap/new_chats/NewChatsView;
+    invoke-static {p0, p1, p2, p3, p4}, LyKc;->a(LZ69;LzKc;LuKc;LvF3;Lkotlin/jvm/functions/Function1;)Lcom/snap/new_chats/NewChatsView;
 
     move-result-object p0
 

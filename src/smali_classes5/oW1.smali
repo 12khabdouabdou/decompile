@@ -1,3 +1,3 @@
 .class public abstract LoW1;
-.super LrW1;
+.super LpW1;
 .source "SourceFile"

@@ -3,1135 +3,619 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/app/Application$ActivityLifecycleCallbacks;
+.implements Landroid/os/Parcelable;
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/os/Parcelable$Creator<",
+            "Lnc7;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final g0:Lf6j;
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final X:I
 
-.field public final b:Ljava/lang/Object;
+.field public final Y:Ljava/lang/String;
+
+.field public final Z:Ljava/lang/String;
+
+.field public final a:Ljava/lang/String;
+
+.field public final b:LLb7;
+
+.field public final c:I
+
+.field public final e0:Ljava/lang/String;
+
+.field public final f0:Ljava/lang/Object;
+
+.field public final t:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lnc7;->a:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    new-instance v0, Ljava/util/WeakHashMap;
-
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
-
-    .line 4
-    invoke-static {v0}, Ljava/util/Collections;->newSetFromMap(Ljava/util/Map;)Ljava/util/Set;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lnc7;->b:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(ILjava/lang/Object;)V
-    .locals 0
+.method static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    iput p1, p0, Lnc7;->a:I
-
-    iput-object p2, p0, Lnc7;->b:Ljava/lang/Object;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a(Landroid/content/Intent;)V
-    .locals 8
-
-    .line 1
-    const/4 v0, 0x0
+    new-instance v0, Lf6j;
 
     .line 2
-    :try_start_0
-    invoke-virtual {p0}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
-
     .line 3
+    const/16 v1, 0x11
+
     .line 4
     .line 5
-    move-result-object p0
+    invoke-direct {v0, v1}, Lf6j;-><init>(I)V
 
     .line 6
-    if-eqz p0, :cond_0
-
     .line 7
     .line 8
-    const-string v1, "gcm.n.analytics_data"
+    sput-object v0, Lnc7;->g0:Lf6j;
 
     .line 9
     .line 10
-    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
+    new-instance v0, LVp2;
 
     .line 11
     .line 12
-    .line 13
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
+    const/16 v1, 0x1a
 
+    .line 13
     .line 14
-    goto :goto_0
+    invoke-direct {v0, v1}, LVp2;-><init>(I)V
 
     .line 15
-    :catch_0
-    nop
-
     .line 16
-    :cond_0
-    :goto_0
-    const-string p0, "1"
-
     .line 17
+    sput-object v0, Lnc7;->CREATOR:Landroid/os/Parcelable$Creator;
+
     .line 18
-    if-nez v0, :cond_1
-
     .line 19
-    .line 20
-    const/4 v1, 0x0
+    return-void
+.end method
 
-    .line 21
+.method public constructor <init>(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;LLb7;Z)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput p1, p0, Lnc7;->c:I
+
+    iput p2, p0, Lnc7;->t:I
+
+    iput p3, p0, Lnc7;->X:I
+
+    iput-object p4, p0, Lnc7;->Y:Ljava/lang/String;
+
+    iput-object p6, p0, Lnc7;->Z:Ljava/lang/String;
+
+    iput-object p7, p0, Lnc7;->e0:Ljava/lang/String;
+
+    iput-object p8, p0, Lnc7;->f0:Ljava/lang/Object;
+
+    .line 2
+    iput-object p5, p0, Lnc7;->a:Ljava/lang/String;
+
+    .line 3
+    sget-object p1, Lnc7;->g0:Lf6j;
+
+    const/4 p4, 0x2
+
+    if-eqz p9, :cond_0
+
+    .line 4
+    iput-object p9, p0, Lnc7;->b:LLb7;
+
+    goto/16 :goto_1
+
+    .line 5
+    :cond_0
+    new-instance p5, Lqc7;
+
+    invoke-virtual {p0}, Lnc7;->a()Ljava/lang/String;
+
+    move-result-object p6
+
+    invoke-direct {p5, p0, p6}, Lqc7;-><init>(Lnc7;Ljava/lang/String;)V
+
+    iput-object p5, p0, Lnc7;->b:LLb7;
+
+    .line 6
+    invoke-virtual {p1}, Lf6j;->k()LAic;
+
+    move-result-object p5
+
+    const/4 p6, 0x3
+
+    if-eqz p10, :cond_2
+
+    :cond_1
+    :goto_0
+    const/4 p4, 0x3
+
+    goto/16 :goto_1
+
+    .line 7
+    :cond_2
+    iget-object p7, p5, LAic;->b:Ljava/lang/Object;
+
+    check-cast p7, Ljava/util/HashMap;
+
+    if-eqz p7, :cond_3
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p8
+
+    invoke-interface {p7, p8}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p8
+
+    if-eqz p8, :cond_3
+
+    .line 8
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p8
+
+    invoke-interface {p7, p8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p7
+
+    check-cast p7, Ljava/util/Set;
+
+    if-eqz p7, :cond_6
+
+    .line 9
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p8
+
+    invoke-interface {p7, p8}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result p7
+
+    if-eqz p7, :cond_3
+
     goto :goto_1
 
-    .line 22
-    :cond_1
-    const-string v1, "google.c.a.e"
-
-    .line 23
-    .line 24
-    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v1
-
-    .line 28
-    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v1
-
-    .line 32
-    :goto_1
-    if-eqz v1, :cond_5
-
-    .line 33
-    .line 34
-    if-nez v0, :cond_2
-
-    .line 35
-    .line 36
-    goto :goto_3
-
-    .line 37
-    :cond_2
-    const-string v1, "google.c.a.tc"
-
-    .line 38
-    .line 39
-    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object v1
-
-    .line 43
-    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 44
-    .line 45
-    .line 46
-    move-result p0
-
-    .line 47
-    if-eqz p0, :cond_4
-
-    .line 48
-    .line 49
-    invoke-static {}, Lbv7;->b()Lbv7;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object p0
-
-    .line 53
-    invoke-virtual {p0}, Lbv7;->a()V
-
-    .line 54
-    .line 55
-    .line 56
-    iget-object p0, p0, Lbv7;->d:LPs3;
-
-    .line 57
-    .line 58
-    const-class v1, LxK;
-
-    .line 59
-    .line 60
-    invoke-virtual {p0, v1}, Ltkk;->a(Ljava/lang/Class;)Ljava/lang/Object;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object p0
-
-    .line 64
-    check-cast p0, LxK;
-
-    .line 65
-    .line 66
-    if-eqz p0, :cond_4
-
-    .line 67
-    .line 68
-    const-string v1, "google.c.a.c_id"
-
-    .line 69
-    .line 70
-    invoke-virtual {v0, v1}, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v6
-
-    .line 74
-    check-cast p0, LyK;
-
-    .line 75
-    .line 76
-    const-string v1, "fcm"
-
-    .line 77
-    .line 78
-    sget-object v2, LUbk;->b:Ljava/util/List;
-
-    .line 79
-    .line 80
-    invoke-interface {v2, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    .line 81
-    .line 82
-    .line 83
-    move-result v1
-
-    .line 84
-    if-eqz v1, :cond_3
-
-    .line 85
-    .line 86
-    goto :goto_2
-
-    .line 87
+    .line 10
     :cond_3
-    iget-object v1, p0, LyK;->a:LBx;
+    iget-object p7, p5, LAic;->t:Ljava/lang/Object;
 
-    .line 88
-    .line 89
-    iget-object v1, v1, LBx;->b:Ljava/lang/Object;
+    check-cast p7, Ljava/util/HashMap;
 
-    .line 90
-    .line 91
-    move-object v3, v1
+    if-eqz p7, :cond_5
 
-    .line 92
-    check-cast v3, Lmgk;
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 93
-    .line 94
-    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    move-result-object p8
 
-    .line 95
-    .line 96
-    .line 97
-    new-instance v2, Lqfk;
+    invoke-interface {p7, p8}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
-    .line 98
-    .line 99
-    const-string v5, "_ln"
+    move-result p8
 
-    .line 100
-    .line 101
-    const/4 v7, 0x1
+    if-eqz p8, :cond_5
 
-    .line 102
-    const-string v4, "fcm"
+    .line 11
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 103
-    .line 104
-    invoke-direct/range {v2 .. v7}, Lqfk;-><init>(Lmgk;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    move-result-object p8
 
-    .line 105
-    .line 106
-    .line 107
-    invoke-virtual {v3, v2}, Lmgk;->b(Lufk;)V
+    invoke-interface {p7, p8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 108
-    .line 109
-    .line 110
-    :goto_2
-    new-instance v1, Landroid/os/Bundle;
+    move-result-object p7
 
-    .line 111
-    .line 112
-    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+    check-cast p7, Ljava/util/Set;
 
-    .line 113
-    .line 114
-    .line 115
-    const-string v2, "source"
+    if-eqz p7, :cond_4
 
-    .line 116
-    .line 117
-    const-string v3, "Firebase"
+    .line 12
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    .line 118
-    .line 119
-    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object p8
 
-    .line 120
-    .line 121
-    .line 122
-    const-string v2, "medium"
+    invoke-interface {p7, p8}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
-    .line 123
-    .line 124
-    const-string v3, "notification"
+    move-result p7
 
-    .line 125
-    .line 126
-    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+    if-eqz p7, :cond_5
 
-    .line 127
-    .line 128
-    .line 129
-    const-string v2, "campaign"
-
-    .line 130
-    .line 131
-    invoke-virtual {v1, v2, v6}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 132
-    .line 133
-    .line 134
-    const-string v2, "_cmp"
-
-    .line 135
-    .line 136
-    invoke-virtual {p0, v1, v2}, LyK;->a(Landroid/os/Bundle;Ljava/lang/String;)V
-
-    .line 137
-    .line 138
-    .line 139
     :cond_4
-    :goto_3
-    const-string p0, "_no"
+    const/4 p4, 0x1
 
-    .line 140
-    .line 141
-    invoke-static {v0, p0}, Lew8;->f0(Landroid/os/Bundle;Ljava/lang/String;)V
+    goto :goto_1
 
-    .line 142
-    .line 143
-    .line 144
+    .line 13
     :cond_5
+    iget-object p5, p5, LAic;->c:Ljava/lang/Object;
+
+    check-cast p5, Ljava/util/HashMap;
+
+    if-eqz p5, :cond_6
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p7
+
+    invoke-interface {p5, p7}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p7
+
+    if-eqz p7, :cond_6
+
+    .line 14
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    invoke-interface {p5, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/util/Set;
+
+    if-eqz p2, :cond_1
+
+    .line 15
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p3
+
+    invoke-interface {p2, p3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_6
+
+    goto :goto_0
+
+    .line 16
+    :cond_6
+    :goto_1
+    invoke-virtual {p1}, Lf6j;->k()LAic;
+
+    .line 17
+    invoke-static {p4}, LzHa;->L(I)I
+
     return-void
 .end method
 
-.method private final b(Landroid/app/Activity;Landroid/os/Bundle;)V
-    .locals 0
+.method public constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
+    .locals 11
 
-    .line 1
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    const/4 v1, -0x1
+
+    const/4 v3, -0x1
+
+    const/4 v6, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    move-object v0, p0
+
+    move v2, p1
+
+    move-object v4, p2
+
+    move-object v5, p3
+
+    .line 21
+    invoke-direct/range {v0 .. v10}, Lnc7;-><init>(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;LLb7;Z)V
+
     return-void
 .end method
 
-.method private final c(Landroid/app/Activity;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/Exception;)V
+    .locals 12
 
-    .line 1
-    return-void
-.end method
+    .line 18
+    instance-of v0, p1, LLb7;
 
-.method private final d(Landroid/app/Activity;)V
-    .locals 0
+    if-eqz v0, :cond_0
 
-    .line 1
-    return-void
-.end method
+    check-cast p1, LLb7;
 
-.method private final e(Landroid/app/Activity;)V
-    .locals 0
+    move-object v10, p1
 
-    .line 1
-    return-void
-.end method
+    goto :goto_0
 
-.method private final f(Landroid/app/Activity;Landroid/os/Bundle;)V
-    .locals 0
+    :cond_0
+    new-instance v0, LLb7;
 
-    .line 1
-    return-void
-.end method
+    .line 19
+    invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
-.method private final g(Landroid/app/Activity;Landroid/os/Bundle;)V
-    .locals 0
+    move-object v10, v0
 
-    .line 1
-    return-void
-.end method
+    :goto_0
+    const/4 v8, 0x0
 
-.method private final h(Landroid/app/Activity;)V
-    .locals 0
+    const/4 v9, 0x0
 
-    .line 1
-    return-void
-.end method
+    const/4 v2, -0x1
 
-.method private final i(Landroid/app/Activity;)V
-    .locals 0
+    const/4 v3, -0x1
 
-    .line 1
-    return-void
-.end method
+    const/4 v4, -0x1
 
-.method private final j(Landroid/app/Activity;)V
-    .locals 0
+    const/4 v5, 0x0
 
-    .line 1
-    return-void
-.end method
+    const/4 v6, 0x0
 
-.method private final k(Landroid/app/Activity;)V
-    .locals 0
+    const/4 v7, 0x0
 
-    .line 1
+    const/4 v11, 0x0
+
+    move-object v1, p0
+
+    .line 20
+    invoke-direct/range {v1 .. v11}, Lnc7;-><init>(IIILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Object;LLb7;Z)V
+
     return-void
 .end method
 
 
 # virtual methods
-.method public final onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
+.method public final a()Ljava/lang/String;
     .locals 1
 
     .line 1
-    iget v0, p0, Lnc7;->a:I
+    iget-object v0, p0, Lnc7;->a:Ljava/lang/String;
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
+    return-object v0
+
     .line 6
-    new-instance v0, LKdk;
+    :cond_0
+    iget-object v0, p0, Lnc7;->b:LLb7;
 
     .line 7
     .line 8
-    invoke-direct {v0, p0, p2, p1}, LKdk;-><init>(Lnc7;Landroid/os/Bundle;Landroid/app/Activity;)V
+    if-eqz v0, :cond_1
 
     .line 9
     .line 10
-    .line 11
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
 
+    .line 11
     .line 12
     .line 13
-    check-cast p1, Lmgk;
+    move-result-object v0
+
+    .line 14
+    return-object v0
+
+    .line 15
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 16
+    return-object v0
+.end method
+
+.method public final describeContents()I
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    const-string v1, "{HttpStatus: "
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget v1, p0, Lnc7;->c:I
+
+    .line 9
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v1, ", errorCode: "
 
     .line 14
     .line 15
-    invoke-virtual {p1, v0}, Lmgk;->b(Lufk;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
     .line 18
-    :pswitch_0
-    return-void
+    iget v1, p0, Lnc7;->t:I
 
     .line 19
-    :pswitch_1
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
     .line 20
-    .line 21
-    check-cast p1, Lcom/mapbox/android/telemetry/MapboxTelemetryService;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 21
     .line 22
     .line 23
-    const/4 p2, 0x2
+    const-string v1, ", subErrorCode: "
 
     .line 24
-    invoke-static {p1, p2}, Lcom/mapbox/android/telemetry/MapboxTelemetryService;->a(Lcom/mapbox/android/telemetry/MapboxTelemetryService;I)V
-
     .line 25
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 26
     .line 27
-    return-void
-
     .line 28
-    :pswitch_2
-    invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+    iget v1, p0, Lnc7;->X:I
 
     .line 29
     .line 30
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 31
-    move-result-object p1
-
     .line 32
-    if-eqz p1, :cond_2
-
     .line 33
+    const-string v1, ", errorType: "
+
     .line 34
-    iget-object p2, p0, Lnc7;->b:Ljava/lang/Object;
-
     .line 35
-    .line 36
-    check-cast p2, Ljava/util/Set;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 36
     .line 37
     .line 38
-    invoke-interface {p2, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
+    iget-object v1, p0, Lnc7;->Y:Ljava/lang/String;
 
     .line 39
     .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 41
-    move-result p2
-
     .line 42
-    if-nez p2, :cond_0
-
     .line 43
-    .line 44
-    goto :goto_0
+    const-string v1, ", errorMessage: "
 
+    .line 44
     .line 45
-    :cond_0
-    sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 46
     .line 47
-    const/16 v0, 0x19
-
     .line 48
-    .line 49
-    if-gt p2, v0, :cond_1
+    invoke-virtual {p0}, Lnc7;->a()Ljava/lang/String;
 
+    .line 49
     .line 50
     .line 51
-    new-instance p2, Landroid/os/Handler;
+    move-result-object v1
 
     .line 52
-    .line 53
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 53
     .line 54
     .line 55
-    .line 56
-    move-result-object v0
+    const-string v1, "}"
 
+    .line 56
     .line 57
-    invoke-direct {p2, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 58
     .line 59
     .line 60
-    new-instance v0, LD1;
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 61
     .line 62
-    invoke-direct {v0, p0, p1}, LD1;-><init>(Lnc7;Landroid/content/Intent;)V
-
     .line 63
+    move-result-object v0
+
     .line 64
-    .line 65
-    invoke-virtual {p2, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
-    .line 66
-    .line 67
-    .line 68
-    goto :goto_0
-
-    .line 69
-    :cond_1
-    invoke-static {p1}, Lnc7;->a(Landroid/content/Intent;)V
-
-    .line 70
-    .line 71
-    .line 72
-    :cond_2
-    :goto_0
-    return-void
-
-    .line 73
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method
 
-.method public final onActivityDestroyed(Landroid/app/Activity;)V
-    .locals 2
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .locals 0
 
     .line 1
-    iget v0, p0, Lnc7;->a:I
+    iget p2, p0, Lnc7;->c:I
 
     .line 2
     .line 3
-    packed-switch v0, :pswitch_data_0
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 4
     .line 5
     .line 6
-    new-instance v0, LJfk;
+    iget p2, p0, Lnc7;->t:I
 
     .line 7
     .line 8
-    const/4 v1, 0x4
-
-    .line 9
-    invoke-direct {v0, p0, p1, v1}, LJfk;-><init>(Lnc7;Landroid/app/Activity;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    check-cast p1, Lmgk;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lmgk;->b(Lufk;)V
-
-    .line 17
-    .line 18
-    .line 19
-    :pswitch_0
-    return-void
-
-    .line 20
-    :pswitch_1
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    check-cast p1, Lcom/mapbox/android/telemetry/MapboxTelemetryService;
-
-    .line 23
-    .line 24
-    const/16 v0, 0x8
-
-    .line 25
-    .line 26
-    invoke-static {p1, v0}, Lcom/mapbox/android/telemetry/MapboxTelemetryService;->a(Lcom/mapbox/android/telemetry/MapboxTelemetryService;I)V
-
-    .line 27
-    .line 28
-    .line 29
-    :pswitch_2
-    return-void
-
-    .line 30
-    nop
-
-    .line 31
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onActivityPaused(Landroid/app/Activity;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lnc7;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance v0, LJfk;
-
-    .line 7
-    .line 8
-    const/4 v1, 0x2
-
-    .line 9
-    invoke-direct {v0, p0, p1, v1}, LJfk;-><init>(Lnc7;Landroid/app/Activity;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    check-cast p1, Lmgk;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lmgk;->b(Lufk;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_0
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    check-cast p1, Laqe;
-
-    .line 23
-    .line 24
-    iget-object p1, p1, Laqe;->m:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 25
-    .line 26
-    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 27
-    .line 28
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-
-    .line 32
-    :pswitch_1
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 33
-    .line 34
-    check-cast p1, Lcom/mapbox/android/telemetry/MapboxTelemetryService;
-
-    .line 35
-    .line 36
-    const/4 v0, 0x5
-
-    .line 37
-    invoke-static {p1, v0}, Lcom/mapbox/android/telemetry/MapboxTelemetryService;->a(Lcom/mapbox/android/telemetry/MapboxTelemetryService;I)V
-
-    .line 38
-    .line 39
-    .line 40
-    return-void
-
-    .line 41
-    :pswitch_2
-    invoke-virtual {p1}, Landroid/app/Activity;->isFinishing()Z
-
-    .line 42
-    .line 43
-    .line 44
-    move-result v0
-
-    .line 45
-    if-eqz v0, :cond_0
-
-    .line 46
-    .line 47
-    iget-object v0, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 48
-    .line 49
-    check-cast v0, Ljava/util/Set;
-
-    .line 50
-    .line 51
-    invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object p1
-
-    .line 55
-    invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
-
-    .line 56
-    .line 57
-    .line 58
-    :cond_0
-    return-void
-
-    .line 59
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onActivityResumed(Landroid/app/Activity;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lnc7;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance v0, LJfk;
-
-    .line 7
-    .line 8
-    const/4 v1, 0x1
-
-    .line 9
-    invoke-direct {v0, p0, p1, v1}, LJfk;-><init>(Lnc7;Landroid/app/Activity;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    check-cast p1, Lmgk;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lmgk;->b(Lufk;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-
-    .line 20
-    :pswitch_0
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    check-cast p1, Laqe;
-
-    .line 23
-    .line 24
-    iget-object p1, p1, Laqe;->m:Lio/reactivex/rxjava3/subjects/PublishSubject;
-
-    .line 25
-    .line 26
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 27
-    .line 28
-    invoke-virtual {p1, v0}, Lio/reactivex/rxjava3/subjects/PublishSubject;->onNext(Ljava/lang/Object;)V
-
-    .line 29
-    .line 30
-    .line 31
-    return-void
-
-    .line 32
-    :pswitch_1
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 33
-    .line 34
-    check-cast p1, Lcom/mapbox/android/telemetry/MapboxTelemetryService;
-
-    .line 35
-    .line 36
-    const/4 v0, 0x4
-
-    .line 37
-    invoke-static {p1, v0}, Lcom/mapbox/android/telemetry/MapboxTelemetryService;->a(Lcom/mapbox/android/telemetry/MapboxTelemetryService;I)V
-
-    .line 38
-    .line 39
-    .line 40
-    :pswitch_2
-    return-void
-
-    .line 41
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
-    .locals 3
-
-    .line 1
-    iget v0, p0, Lnc7;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance v0, LBbk;
-
-    .line 7
-    .line 8
-    invoke-direct {v0}, LBbk;-><init>()V
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 9
     .line 10
     .line 11
-    new-instance v1, LKdk;
+    iget p2, p0, Lnc7;->X:I
 
     .line 12
     .line 13
-    invoke-direct {v1, p0, p1, v0}, LKdk;-><init>(Lnc7;Landroid/app/Activity;LBbk;)V
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 14
     .line 15
     .line 16
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
+    iget-object p2, p0, Lnc7;->Y:Ljava/lang/String;
 
     .line 17
     .line 18
-    check-cast p1, Lmgk;
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 19
     .line 20
-    invoke-virtual {p1, v1}, Lmgk;->b(Lufk;)V
-
     .line 21
+    invoke-virtual {p0}, Lnc7;->a()Ljava/lang/String;
+
     .line 22
     .line 23
-    const-wide/16 v1, 0x32
-
     .line 24
+    move-result-object p2
+
     .line 25
-    invoke-virtual {v0, v1, v2}, LBbk;->N(J)Landroid/os/Bundle;
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 26
     .line 27
     .line 28
-    move-result-object p1
+    iget-object p2, p0, Lnc7;->Z:Ljava/lang/String;
 
     .line 29
-    if-eqz p1, :cond_0
-
     .line 30
-    .line 31
-    invoke-virtual {p2, p1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 31
     .line 32
     .line 33
-    .line 34
-    :cond_0
-    :pswitch_0
-    return-void
+    iget-object p2, p0, Lnc7;->e0:Ljava/lang/String;
 
+    .line 34
     .line 35
-    :pswitch_1
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 36
     .line 37
-    check-cast p1, Lcom/mapbox/android/telemetry/MapboxTelemetryService;
-
     .line 38
-    .line 39
-    const/4 p2, 0x7
-
-    .line 40
-    invoke-static {p1, p2}, Lcom/mapbox/android/telemetry/MapboxTelemetryService;->a(Lcom/mapbox/android/telemetry/MapboxTelemetryService;I)V
-
-    .line 41
-    .line 42
-    .line 43
-    :pswitch_2
     return-void
-
-    .line 44
-    nop
-
-    .line 45
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onActivityStarted(Landroid/app/Activity;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lnc7;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance v0, LJfk;
-
-    .line 7
-    .line 8
-    const/4 v1, 0x0
-
-    .line 9
-    invoke-direct {v0, p0, p1, v1}, LJfk;-><init>(Lnc7;Landroid/app/Activity;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    check-cast p1, Lmgk;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lmgk;->b(Lufk;)V
-
-    .line 17
-    .line 18
-    .line 19
-    :pswitch_0
-    return-void
-
-    .line 20
-    :pswitch_1
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    check-cast p1, Lcom/mapbox/android/telemetry/MapboxTelemetryService;
-
-    .line 23
-    .line 24
-    const/4 v0, 0x3
-
-    .line 25
-    invoke-static {p1, v0}, Lcom/mapbox/android/telemetry/MapboxTelemetryService;->a(Lcom/mapbox/android/telemetry/MapboxTelemetryService;I)V
-
-    .line 26
-    .line 27
-    .line 28
-    :pswitch_2
-    return-void
-
-    .line 29
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
-.end method
-
-.method public final onActivityStopped(Landroid/app/Activity;)V
-    .locals 2
-
-    .line 1
-    iget v0, p0, Lnc7;->a:I
-
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
-
-    .line 4
-    .line 5
-    .line 6
-    new-instance v0, LJfk;
-
-    .line 7
-    .line 8
-    const/4 v1, 0x3
-
-    .line 9
-    invoke-direct {v0, p0, p1, v1}, LJfk;-><init>(Lnc7;Landroid/app/Activity;I)V
-
-    .line 10
-    .line 11
-    .line 12
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 13
-    .line 14
-    check-cast p1, Lmgk;
-
-    .line 15
-    .line 16
-    invoke-virtual {p1, v0}, Lmgk;->b(Lufk;)V
-
-    .line 17
-    .line 18
-    .line 19
-    :pswitch_0
-    return-void
-
-    .line 20
-    :pswitch_1
-    iget-object p1, p0, Lnc7;->b:Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    check-cast p1, Lcom/mapbox/android/telemetry/MapboxTelemetryService;
-
-    .line 23
-    .line 24
-    const/4 v0, 0x6
-
-    .line 25
-    invoke-static {p1, v0}, Lcom/mapbox/android/telemetry/MapboxTelemetryService;->a(Lcom/mapbox/android/telemetry/MapboxTelemetryService;I)V
-
-    .line 26
-    .line 27
-    .line 28
-    :pswitch_2
-    return-void
-
-    .line 29
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

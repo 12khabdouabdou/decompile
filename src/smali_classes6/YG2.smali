@@ -1,244 +1,191 @@
-.class public final LYG2;
-.super LrE9;
+.class public interface abstract LYG2;
+.super Ljava/lang/Object;
 .source "SourceFile"
-
-# interfaces
-.implements Lkotlin/jvm/functions/Function0;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final synthetic b:LfH2;
-
-
-# direct methods
-.method public synthetic constructor <init>(LfH2;I)V
-    .locals 0
-
-    .line 1
-    iput p2, p0, LYG2;->a:I
-
-    iput-object p1, p0, LYG2;->b:LfH2;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, LrE9;-><init>(I)V
-
-    return-void
-.end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 3
+.method public abstract A(Ljava/lang/String;ILkmh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 1
-    iget v0, p0, LYG2;->a:I
+.method public abstract B(Ljava/lang/String;Z)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 2
-    .line 3
-    packed-switch v0, :pswitch_data_0
+.method public abstract C(Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 4
-    .line 5
-    .line 6
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract D(Lcom/snapchat/client/messaging/UUID;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 7
-    .line 8
-    iget-object v1, v0, LfH2;->X:LiE2;
+.method public abstract E(LqRi;LdH2;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 9
-    .line 10
-    iget-object v1, v1, LiE2;->b:Ljava/lang/String;
+.method public abstract F(Ljava/lang/String;Ljava/util/ArrayList;)Lio/reactivex/rxjava3/core/Single;
+.end method
 
-    .line 11
-    .line 12
-    invoke-static {v0, v1}, LfH2;->c(LfH2;Ljava/lang/String;)V
+.method public abstract G(LdH2;JLjava/lang/String;Lkmh;)V
+.end method
 
-    .line 13
-    .line 14
-    .line 15
-    sget-object v0, Li7j;->a:Li7j;
+.method public abstract H(LdH2;Ljava/lang/String;ZZLkmh;)V
+.end method
 
-    .line 16
-    .line 17
-    return-object v0
+.method public abstract I(LdH2;Ljava/lang/String;ZZLkmh;Z)V
+.end method
 
-    .line 18
-    :pswitch_0
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract J(Ljava/lang/String;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 19
-    .line 20
-    iget-object v1, v0, LfH2;->X:LiE2;
+.method public abstract K(Ljava/lang/String;Ljava/lang/String;Lcom/snapchat/client/messaging/MessageUpdate;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 21
-    .line 22
-    iget-object v1, v1, LiE2;->b:Ljava/lang/String;
+.method public abstract L(Ljava/lang/String;Ljava/lang/String;Z)Lio/reactivex/rxjava3/core/Single;
+.end method
 
-    .line 23
-    .line 24
-    invoke-static {v0, v1}, LfH2;->c(LfH2;Ljava/lang/String;)V
+.method public abstract M(Ljava/lang/String;)V
+.end method
 
-    .line 25
-    .line 26
-    .line 27
-    sget-object v0, Li7j;->a:Li7j;
+.method public abstract N(LdH2;Ljava/lang/String;Ldjg;LuEb;LN7g;Ljava/lang/Boolean;Ljava/lang/String;)V
+.end method
 
-    .line 28
-    .line 29
-    return-object v0
+.method public abstract O(LdH2;Ljava/lang/String;Ldjg;LuEb;LN7g;Ljava/lang/Boolean;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 30
-    :pswitch_1
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract P(Ljava/lang/Long;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 31
-    .line 32
-    invoke-static {v0}, LfH2;->d(LfH2;)V
+.method public abstract Q(Ljava/lang/String;Ljava/util/ArrayList;)Lio/reactivex/rxjava3/core/Single;
+.end method
 
-    .line 33
-    .line 34
-    .line 35
-    sget-object v0, Li7j;->a:Li7j;
+.method public abstract R(Ljava/lang/String;Lcom/snapchat/client/messaging/SnapPostOpenViewingPolicy;LBI2;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 36
-    .line 37
-    return-object v0
+.method public abstract S(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 38
-    :pswitch_2
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract T(LdH2;Ljava/lang/String;)V
+.end method
 
-    .line 39
-    .line 40
-    invoke-static {v0}, LfH2;->d(LfH2;)V
+.method public abstract U(Lcom/snapchat/client/messaging/UUID;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 41
-    .line 42
-    .line 43
-    sget-object v0, Li7j;->a:Li7j;
+.method public abstract V(Ljava/lang/Long;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 44
-    .line 45
-    return-object v0
+.method public abstract W(Ljava/util/List;Lcom/snapchat/client/messaging/SourcePage;Lkmh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.end method
 
-    .line 46
-    :pswitch_3
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract X(Ljava/lang/String;Lcom/snapchat/client/messaging/NotificationPreference;Lkmh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 47
-    .line 48
-    iget-object v0, v0, LfH2;->c:LjH2;
+.method public abstract Y(LdH2;Ljava/lang/String;Ldjg;LN7g;Ljava/lang/Boolean;Ljava/lang/String;)V
+.end method
 
-    .line 49
-    .line 50
-    invoke-virtual {v0}, LjH2;->a()V
+.method public abstract Z(Ljava/lang/String;Lcom/snapchat/client/messaging/ReactionContent;LJO2;)V
+.end method
 
-    .line 51
-    .line 52
-    .line 53
-    sget-object v0, Li7j;->a:Li7j;
+.method public abstract a0(Ljava/lang/String;Ljava/util/List;)V
+.end method
 
-    .line 54
-    .line 55
-    return-object v0
+.method public abstract b(Ljava/lang/String;LJO2;)V
+.end method
 
-    .line 56
-    :pswitch_4
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract b0(ILjava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 57
-    .line 58
-    invoke-static {v0}, LfH2;->d(LfH2;)V
+.method public abstract c(Ljava/lang/String;Lcom/snapchat/client/messaging/SourcePage;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 59
-    .line 60
-    .line 61
-    sget-object v0, Li7j;->a:Li7j;
+.method public abstract c0(Lcom/snapchat/client/messaging/SyncFeedAnalyticsScenarioType;Lcom/snapchat/client/messaging/MaybeSyncFeedMetadata;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 62
-    .line 63
-    return-object v0
+.method public abstract d(LdH2;LBEf;)V
+.end method
 
-    .line 64
-    :pswitch_5
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract d0(Ljava/lang/String;Lcom/snapchat/client/messaging/PinnedConversationStatus;Ljava/lang/String;Z)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 65
-    .line 66
-    iget-object v0, v0, LfH2;->c:LjH2;
+.method public abstract e(Lcom/snapchat/client/messaging/UUID;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 67
-    .line 68
-    invoke-virtual {v0}, LjH2;->a()V
+.method public abstract e0(Lap7;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 69
-    .line 70
-    .line 71
-    sget-object v0, Li7j;->a:Li7j;
+.method public abstract f(JLcom/snapchat/client/messaging/UUID;)Lio/reactivex/rxjava3/core/Single;
+.end method
 
-    .line 72
-    .line 73
-    return-object v0
+.method public abstract f0(Ljava/lang/String;ILkmh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 74
-    :pswitch_6
-    iget-object v0, p0, LYG2;->b:LfH2;
+.method public abstract g(Ljava/lang/String;Lcom/snapchat/client/messaging/NotificationPreference;Lkmh;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 75
-    .line 76
-    iget-object v0, v0, LfH2;->p0:LXF4;
+.method public abstract g0(LdH2;J)Lio/reactivex/rxjava3/internal/operators/single/SingleFlatMapCompletable;
+.end method
 
-    .line 77
-    .line 78
-    invoke-virtual {v0}, LXF4;->get()Ljava/lang/Object;
+.method public abstract h(LdH2;Ljava/lang/String;Lkmh;)V
+.end method
 
-    .line 79
-    .line 80
-    .line 81
-    move-result-object v0
+.method public abstract h0(Ljava/lang/String;LsH2;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 82
-    check-cast v0, LLPb;
+.method public abstract i(Lcom/snapchat/client/messaging/UUID;)Lio/reactivex/rxjava3/core/Single;
+.end method
 
-    .line 83
-    .line 84
-    iget-object v0, v0, LLPb;->d:Lio/reactivex/rxjava3/internal/operators/single/SingleCache;
+.method public abstract i0(LdH2;)V
+.end method
 
-    .line 85
-    .line 86
-    sget-object v1, LXG2;->b:LXG2;
+.method public abstract j(Lcom/snapchat/client/messaging/UUID;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 87
-    .line 88
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public abstract j0(Ljava/lang/String;Lcom/snapchat/client/messaging/ChatWallpaperUpdate;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 89
-    .line 90
-    .line 91
-    new-instance v2, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;
+.method public abstract k(LdH2;)V
+.end method
 
-    .line 92
-    .line 93
-    invoke-direct {v2, v0, v1}, Lio/reactivex/rxjava3/internal/operators/single/SingleMap;-><init>(Lio/reactivex/rxjava3/core/SingleSource;Lio/reactivex/rxjava3/functions/Function;)V
+.method public abstract k0(JLcom/snapchat/client/messaging/UUID;)Lio/reactivex/rxjava3/core/Single;
+.end method
 
-    .line 94
-    .line 95
-    .line 96
-    return-object v2
+.method public abstract l(Ljava/util/List;)Lio/reactivex/rxjava3/core/Completable;
+.end method
 
-    .line 97
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+.method public abstract m(Ljava/lang/String;ILBI2;Ljava/lang/String;)Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract n(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.end method
+
+.method public abstract o(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.end method
+
+.method public abstract p(LdH2;LOQf;)V
+.end method
+
+.method public abstract q(Ljava/util/List;Ljava/lang/String;Lkmh;Ljava/lang/String;Ljava/util/ArrayList;)Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract r(Ljava/util/ArrayList;)Lio/reactivex/rxjava3/core/Maybe;
+.end method
+
+.method public abstract s(Ljava/lang/String;)Lio/reactivex/rxjava3/core/Single;
+.end method
+
+.method public abstract t(LdH2;Ljava/lang/String;LI4e;)V
+.end method
+
+.method public abstract u()Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract v(Lap7;)Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract w()Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract x(LdH2;LOQf;)V
+.end method
+
+.method public abstract y(Ljava/lang/String;Lcom/snapchat/client/messaging/JoinGroupConversationMetadata;)Lio/reactivex/rxjava3/core/Completable;
+.end method
+
+.method public abstract z(LdH2;)V
 .end method

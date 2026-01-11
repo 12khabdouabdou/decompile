@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field private final a:LQW;
+.field private final a:LWY;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    const v0, 0x7f040443
+    const v0, 0x7f0404cc
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/AppCompatRatingBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -37,14 +37,14 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RatingBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 4
-    new-instance p1, LQW;
+    new-instance p1, LWY;
 
-    invoke-direct {p1, p0}, LQW;-><init>(Landroid/widget/AbsSeekBar;)V
+    invoke-direct {p1, p0}, LWY;-><init>(Landroid/widget/AbsSeekBar;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->a:LQW;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->a:LWY;
 
     .line 5
-    invoke-virtual {p1, p2, p3}, LQW;->a(Landroid/util/AttributeSet;I)V
+    invoke-virtual {p1, p2, p3}, LWY;->a(Landroid/util/AttributeSet;I)V
 
     return-void
 .end method
@@ -64,11 +64,11 @@
     .line 3
     .line 4
     .line 5
-    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->a:LQW;
+    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->a:LWY;
 
     .line 6
     .line 7
-    iget-object p2, p2, LQW;->b:Landroid/graphics/Bitmap;
+    iget-object p2, p2, LWY;->b:Landroid/graphics/Bitmap;
 
     .line 8
     .line 9

@@ -2,17 +2,18 @@
 .super Ljava/lang/Object;
 .source "SourceFile"
 
-# interfaces
-.implements LZ64;
-
 
 # instance fields
-.field public final a:[I
+.field public a:Z
+
+.field public b:Z
+
+.field public c:Z
 
 
 # direct methods
-.method public constructor <init>([I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -20,17 +21,28 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LY64;->a:[I
+    const/4 v0, 0x0
 
     .line 5
+    iput-boolean v0, p0, LY64;->a:Z
+
     .line 6
+    .line 7
+    iput-boolean v0, p0, LY64;->b:Z
+
+    .line 8
+    .line 9
+    iput-boolean v0, p0, LY64;->c:Z
+
+    .line 10
+    .line 11
     return-void
 .end method
 
 
 # virtual methods
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 3
+    .locals 4
 
     .line 1
     const/4 v0, 0x1
@@ -44,130 +56,207 @@
 
     .line 5
     :cond_0
-    if-eqz p1, :cond_1
+    instance-of v1, p1, LY64;
 
     .line 6
     .line 7
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v2, 0x0
 
     .line 8
+    if-nez v1, :cond_1
+
     .line 9
     .line 10
-    move-result-object v1
+    return v2
 
     .line 11
-    goto :goto_0
+    :cond_1
+    check-cast p1, LY64;
 
     .line 12
-    :cond_1
-    const/4 v1, 0x0
-
     .line 13
-    :goto_0
-    const-class v2, LY64;
+    iget-boolean v1, p0, LY64;->a:Z
 
     .line 14
     .line 15
-    invoke-virtual {v2, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+    iget-boolean v3, p1, LY64;->a:Z
 
     .line 16
     .line 17
-    .line 18
-    move-result v1
+    if-eq v1, v3, :cond_2
 
+    .line 18
     .line 19
-    const/4 v2, 0x0
+    return v2
 
     .line 20
-    if-nez v1, :cond_2
+    :cond_2
+    iget-boolean v1, p0, LY64;->b:Z
 
     .line 21
     .line 22
-    return v2
+    iget-boolean v3, p1, LY64;->b:Z
 
     .line 23
-    :cond_2
-    check-cast p1, LY64;
-
     .line 24
-    .line 25
-    iget-object v1, p0, LY64;->a:[I
+    if-eq v1, v3, :cond_3
 
+    .line 25
     .line 26
+    return v2
+
     .line 27
-    iget-object p1, p1, LY64;->a:[I
+    :cond_3
+    iget-boolean v1, p0, LY64;->c:Z
 
     .line 28
     .line 29
-    invoke-static {v1, p1}, Ljava/util/Arrays;->equals([I[I)Z
+    iget-boolean p1, p1, LY64;->c:Z
 
     .line 30
     .line 31
+    if-eq v1, p1, :cond_4
+
     .line 32
-    move-result p1
-
     .line 33
-    if-nez p1, :cond_3
-
-    .line 34
-    .line 35
     return v2
 
-    .line 36
-    :cond_3
+    .line 34
+    :cond_4
     return v0
 .end method
 
 .method public final hashCode()I
-    .locals 1
+    .locals 4
 
     .line 1
-    iget-object v0, p0, LY64;->a:[I
+    iget-boolean v0, p0, LY64;->a:Z
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([I)I
+    const/16 v1, 0x4d5
 
     .line 4
     .line 5
-    .line 6
-    move-result v0
+    const/16 v2, 0x4cf
 
+    .line 6
     .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    const/16 v0, 0x4cf
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    const/16 v0, 0x4d5
+
+    .line 13
+    .line 14
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 15
+    .line 16
+    iget-boolean v3, p0, LY64;->b:Z
+
+    .line 17
+    .line 18
+    if-eqz v3, :cond_1
+
+    .line 19
+    .line 20
+    const/16 v3, 0x4cf
+
+    .line 21
+    .line 22
+    goto :goto_1
+
+    .line 23
+    :cond_1
+    const/16 v3, 0x4d5
+
+    .line 24
+    .line 25
+    :goto_1
+    add-int/2addr v0, v3
+
+    .line 26
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 27
+    .line 28
+    iget-boolean v3, p0, LY64;->c:Z
+
+    .line 29
+    .line 30
+    if-eqz v3, :cond_2
+
+    .line 31
+    .line 32
+    const/16 v1, 0x4cf
+
+    .line 33
+    .line 34
+    :cond_2
+    add-int/2addr v0, v1
+
+    .line 35
     return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 6
 
     .line 1
-    iget-object v0, p0, LY64;->a:[I
+    iget-boolean v0, p0, LY64;->a:Z
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/util/Arrays;->toString([I)Ljava/lang/String;
+    iget-boolean v1, p0, LY64;->b:Z
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    iget-boolean v2, p0, LY64;->c:Z
 
+    .line 6
     .line 7
-    const-string v1, "Blocked(countryCodes="
+    const-string v3, "UnreadInteractions(unreadChat="
 
     .line 8
     .line 9
-    const-string v2, ")"
+    const-string v4, ", unopenedSnapWithSound="
 
     .line 10
     .line 11
-    invoke-static {v1, v0, v2}, LEU0;->B(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v5, ", unopenedSnapWithoutSound="
 
     .line 12
     .line 13
+    invoke-static {v3, v4, v5, v0, v1}, LBv7;->t(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/StringBuilder;
+
     .line 14
+    .line 15
+    .line 16
     move-result-object v0
 
-    .line 15
+    .line 17
+    const-string v1, ")"
+
+    .line 18
+    .line 19
+    invoke-static {v1, v0, v2}, LzHa;->A(Ljava/lang/String;Ljava/lang/StringBuilder;Z)Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v0
+
+    .line 23
     return-object v0
 .end method

@@ -7,9 +7,9 @@
 
 
 # annotations
-.annotation runtime LZw3;
+.annotation runtime LpA3;
     propertyReplacements = ""
-    proxyClass = Lacd;
+    proxyClass = Lzrd;
     schema = "\'snapchatUserId\':s,\'callState\':r<e>:\'[0]\',\'mediaPublishStatus\':r?:\'[1]\',\'isConnectionFrozen\':b,\'platform\':r?<e>:\'[2]\',\'selectedLens\':r?:\'[3]\',\'isPublishingSharedLensSelfStream\':b,\'backgroundImageState\':r?:\'[4]\'"
     typeReferences = {
         Lcom/snap/talkcore/CallState;,

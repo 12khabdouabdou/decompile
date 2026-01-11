@@ -1,20 +1,23 @@
 .class public final Lcom/snap/composer/people/Group;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
-    schema = "\'groupId\':s,\'name\':s?,\'participants\':a<r:\'[0]\'>,\'lastInteractionTimestampMs\':d,\'pinnedTimestamp\':d@?"
+    schema = "\'groupId\':s,\'name\':s?,\'participants\':a<r:\'[0]\'>,\'lastInteractionTimestampMs\':d,\'pinnedTimestamp\':d@?,\'groupType\':r<e>:\'[1]\'"
     typeReferences = {
-        LYD8;
+        LYK8;,
+        Lcom/snap/composer/people/GroupType;
     }
 .end annotation
 
 
 # instance fields
 .field private _groupId:Ljava/lang/String;
+
+.field private _groupType:Lcom/snap/composer/people/GroupType;
 
 .field private _lastInteractionTimestampMs:D
 
@@ -24,7 +27,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "LYD8;",
+            "LYK8;",
             ">;"
         }
     .end annotation
@@ -34,7 +37,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;DLjava/lang/Double;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;DLjava/lang/Double;Lcom/snap/composer/people/GroupType;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -42,9 +45,10 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "LYD8;",
+            "LYK8;",
             ">;D",
             "Ljava/lang/Double;",
+            "Lcom/snap/composer/people/GroupType;",
             ")V"
         }
     .end annotation
@@ -75,5 +79,9 @@
 
     .line 13
     .line 14
+    iput-object p7, p0, Lcom/snap/composer/people/Group;->_groupType:Lcom/snap/composer/people/GroupType;
+
+    .line 15
+    .line 16
     return-void
 .end method

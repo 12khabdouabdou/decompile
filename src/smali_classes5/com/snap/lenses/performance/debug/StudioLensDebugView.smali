@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements LMc5;
+.implements Lej5;
 
 
 # instance fields
@@ -27,13 +27,13 @@
 
 .field public k0:Lcom/snap/lenses/performance/debug/LogListView;
 
-.field public l0:LsFa;
+.field public l0:LARa;
 
 .field public m0:Landroid/widget/ImageButton;
 
 .field public final n0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
-.field public final o0:LXfi;
+.field public final o0:LREi;
 
 .field public t:Landroid/widget/TextView;
 
@@ -75,19 +75,19 @@
     iput-object p1, p0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->n0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 5
-    new-instance p1, LA3i;
+    new-instance p1, Ls9i;
 
-    const/4 p2, 0x5
+    const/16 p2, 0x1c
 
-    invoke-direct {p1, p2, p0}, LA3i;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p1, p2, p0}, Ls9i;-><init>(ILjava/lang/Object;)V
 
     .line 6
-    new-instance p2, LXfi;
+    new-instance p2, LREi;
 
-    invoke-direct {p2, p1}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {p2, p1}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 7
-    iput-object p2, p0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->o0:LXfi;
+    iput-object p2, p0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->o0:LREi;
 
     return-void
 .end method
@@ -112,11 +112,11 @@
 
     .line 6
     .line 7
-    check-cast v3, LLc5;
+    check-cast v3, Ldj5;
 
     .line 8
     .line 9
-    instance-of v4, v3, LKc5;
+    instance-of v4, v3, Lcj5;
 
     .line 10
     .line 11
@@ -130,7 +130,7 @@
     .line 15
     .line 16
     :cond_0
-    instance-of v4, v3, LFc5;
+    instance-of v4, v3, LXi5;
 
     .line 17
     .line 18
@@ -290,7 +290,7 @@
 
     .line 99
     :cond_1
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 100
     .line 101
@@ -299,7 +299,7 @@
 
     .line 103
     :cond_2
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 104
     .line 105
@@ -308,7 +308,7 @@
 
     .line 107
     :cond_3
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 108
     .line 109
@@ -317,7 +317,7 @@
 
     .line 111
     :cond_4
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 112
     .line 113
@@ -326,7 +326,7 @@
 
     .line 115
     :cond_5
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 116
     .line 117
@@ -335,7 +335,7 @@
 
     .line 119
     :cond_6
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 120
     .line 121
@@ -344,7 +344,7 @@
 
     .line 123
     :cond_7
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 124
     .line 125
@@ -353,7 +353,7 @@
 
     .line 127
     :cond_8
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 128
     .line 129
@@ -362,7 +362,7 @@
 
     .line 131
     :cond_9
-    instance-of v4, v3, LGc5;
+    instance-of v4, v3, LYi5;
 
     .line 132
     .line 133
@@ -439,7 +439,7 @@
 
     .line 171
     :cond_a
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 172
     .line 173
@@ -448,7 +448,7 @@
 
     .line 175
     :cond_b
-    invoke-static/range {v16 .. v16}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static/range {v16 .. v16}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 176
     .line 177
@@ -457,7 +457,7 @@
 
     .line 179
     :cond_c
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 180
     .line 181
@@ -466,7 +466,7 @@
 
     .line 183
     :cond_d
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 184
     .line 185
@@ -475,7 +475,7 @@
 
     .line 187
     :cond_e
-    instance-of v4, v3, LIc5;
+    instance-of v4, v3, Laj5;
 
     .line 188
     .line 189
@@ -491,7 +491,7 @@
 
     .line 194
     .line 195
-    const v11, 0x7f08043a
+    const v11, 0x7f0804a9
 
     .line 196
     .line 197
@@ -535,18 +535,18 @@
 
     .line 218
     .line 219
-    check-cast v3, LIc5;
+    check-cast v3, Laj5;
 
     .line 220
     .line 221
-    iget-wide v10, v3, LIc5;->b:J
+    iget-wide v10, v3, Laj5;->b:J
 
     .line 222
     .line 223
     long-to-double v10, v10
 
     .line 224
-    invoke-static {v10, v11}, LJD1;->a(D)Ljava/lang/String;
+    invoke-static {v10, v11}, LXG1;->a(D)Ljava/lang/String;
 
     .line 225
     .line 226
@@ -567,14 +567,14 @@
 
     .line 234
     .line 235
-    iget-wide v9, v3, LIc5;->c:J
+    iget-wide v9, v3, Laj5;->c:J
 
     .line 236
     .line 237
     long-to-double v9, v9
 
     .line 238
-    invoke-static {v9, v10}, LJD1;->a(D)Ljava/lang/String;
+    invoke-static {v9, v10}, LXG1;->a(D)Ljava/lang/String;
 
     .line 239
     .line 240
@@ -603,18 +603,18 @@
     move-result-object v8
 
     .line 253
-    sget-object v9, LE5i;->d:Ljava/text/DecimalFormat;
+    sget-object v9, LXti;->d:Ljava/text/DecimalFormat;
 
     .line 254
     .line 255
-    iget-wide v10, v3, LIc5;->t:J
+    iget-wide v10, v3, Laj5;->t:J
 
     .line 256
     .line 257
     long-to-double v10, v10
 
     .line 258
-    sget-wide v12, LE5i;->c:D
+    sget-wide v12, LXti;->c:D
 
     .line 259
     .line 260
@@ -637,7 +637,7 @@
 
     .line 268
     .line 269
-    const v2, 0x7f13366b
+    const v2, 0x7f133949
 
     .line 270
     .line 271
@@ -671,7 +671,7 @@
 
     .line 286
     .line 287
-    iget-wide v3, v3, LIc5;->X:J
+    iget-wide v3, v3, Laj5;->X:J
 
     .line 288
     .line 289
@@ -683,11 +683,11 @@
 
     .line 292
     .line 293
-    sget-object v7, LE5i;->a:Lea5;
+    sget-object v7, LXti;->a:Lsg5;
 
     .line 294
     .line 295
-    invoke-virtual {v7, v3, v4}, Lea5;->b(J)Ljava/lang/String;
+    invoke-virtual {v7, v3, v4}, Lsg5;->b(J)Ljava/lang/String;
 
     .line 296
     .line 297
@@ -720,11 +720,11 @@
 
     .line 309
     .line 310
-    sget-object v2, LE5i;->b:Lea5;
+    sget-object v2, LXti;->b:Lsg5;
 
     .line 311
     .line 312
-    invoke-virtual {v2, v3, v4}, Lea5;->b(J)Ljava/lang/String;
+    invoke-virtual {v2, v3, v4}, Lsg5;->b(J)Ljava/lang/String;
 
     .line 313
     .line 314
@@ -742,7 +742,7 @@
 
     .line 320
     :cond_11
-    invoke-static {v6}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v6}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 321
     .line 322
@@ -751,7 +751,7 @@
 
     .line 324
     :cond_12
-    invoke-static {v7}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v7}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 325
     .line 326
@@ -760,7 +760,7 @@
 
     .line 328
     :cond_13
-    invoke-static {v8}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v8}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 329
     .line 330
@@ -769,7 +769,7 @@
 
     .line 332
     :cond_14
-    invoke-static {v9}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v9}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 333
     .line 334
@@ -778,7 +778,7 @@
 
     .line 336
     :cond_15
-    invoke-static {v10}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v10}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 337
     .line 338
@@ -787,7 +787,7 @@
 
     .line 340
     :cond_16
-    invoke-static/range {v16 .. v16}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static/range {v16 .. v16}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 341
     .line 342
@@ -796,7 +796,7 @@
 
     .line 344
     :cond_17
-    invoke-static {v12}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v12}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 345
     .line 346
@@ -805,7 +805,7 @@
 
     .line 348
     :cond_18
-    invoke-static {v13}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v13}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 349
     .line 350
@@ -814,7 +814,7 @@
 
     .line 352
     :cond_19
-    instance-of v4, v3, LHc5;
+    instance-of v4, v3, LZi5;
 
     .line 353
     .line 354
@@ -830,11 +830,11 @@
 
     .line 359
     .line 360
-    check-cast v3, LHc5;
+    check-cast v3, LZi5;
 
     .line 361
     .line 362
-    iget-wide v2, v3, LHc5;->X:D
+    iget-wide v2, v3, LZi5;->X:D
 
     .line 363
     .line 364
@@ -863,7 +863,7 @@
 
     .line 376
     :cond_1a
-    invoke-static {v11}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v11}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 377
     .line 378
@@ -872,7 +872,7 @@
 
     .line 380
     :cond_1b
-    instance-of v4, v3, LJc5;
+    instance-of v4, v3, Lbj5;
 
     .line 381
     .line 382
@@ -888,11 +888,11 @@
 
     .line 387
     .line 388
-    check-cast v3, LJc5;
+    check-cast v3, Lbj5;
 
     .line 389
     .line 390
-    iget-object v3, v3, LJc5;->a:Ljava/util/List;
+    iget-object v3, v3, Lbj5;->a:Ljava/util/List;
 
     .line 391
     .line 392
@@ -918,7 +918,7 @@
     .line 401
     .line 402
     .line 403
-    iget-object v2, v0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->l0:LsFa;
+    iget-object v2, v0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->l0:LARa;
 
     .line 404
     .line 405
@@ -926,27 +926,27 @@
 
     .line 406
     .line 407
-    iget-object v4, v2, LsFa;->c:Ljava/util/List;
+    iget-object v4, v2, LARa;->c:Ljava/util/List;
 
     .line 408
     .line 409
-    iput-object v3, v2, LsFa;->c:Ljava/util/List;
+    iput-object v3, v2, LARa;->c:Ljava/util/List;
 
     .line 410
     .line 411
-    new-instance v6, LS4;
+    new-instance v6, Lx5;
 
     .line 412
     .line 413
     const/4 v7, 0x2
 
     .line 414
-    invoke-direct {v6, v7, v4, v3}, LS4;-><init>(ILjava/util/List;Ljava/util/List;)V
+    invoke-direct {v6, v7, v4, v3}, Lx5;-><init>(ILjava/util/List;Ljava/util/List;)V
 
     .line 415
     .line 416
     .line 417
-    invoke-static {v6, v1}, Lupa;->f(LQpk;Z)LT76;
+    invoke-static {v6, v1}, Lwi9;->b(LDPk;Z)Ldb6;
 
     .line 418
     .line 419
@@ -954,7 +954,7 @@
     move-result-object v3
 
     .line 421
-    invoke-virtual {v3, v2}, LT76;->b(LrGe;)V
+    invoke-virtual {v3, v2}, Ldb6;->b(LZXe;)V
 
     .line 422
     .line 423
@@ -967,11 +967,11 @@
 
     .line 427
     .line 428
-    iget-object v3, v2, Landroidx/recyclerview/widget/RecyclerView;->l0:LrGe;
+    iget-object v3, v2, Landroidx/recyclerview/widget/RecyclerView;->l0:LZXe;
 
     .line 429
     .line 430
-    invoke-virtual {v3}, LrGe;->getItemCount()I
+    invoke-virtual {v3}, LZXe;->getItemCount()I
 
     .line 431
     .line 432
@@ -995,7 +995,7 @@
 
     .line 440
     .line 441
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 442
     .line 443
@@ -1008,7 +1008,7 @@
 
     .line 446
     .line 447
-    invoke-static {v1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 448
     .line 449
@@ -1017,7 +1017,7 @@
 
     .line 451
     :cond_1f
-    invoke-static {v15}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v15}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 452
     .line 453
@@ -1046,27 +1046,27 @@
 
     .line 7
     .line 8
-    new-instance v1, LqIj;
+    new-instance v1, LO7k;
 
     .line 9
     .line 10
     const/4 v2, 0x0
 
     .line 11
-    invoke-direct {v1, v0, v2}, LqIj;-><init>(Landroid/view/View;I)V
+    invoke-direct {v1, v0, v2}, LO7k;-><init>(Landroid/view/View;I)V
 
     .line 12
     .line 13
     .line 14
-    new-instance v0, LSOh;
+    new-instance v0, LO8i;
 
     .line 15
     .line 16
-    const/16 v2, 0xc
+    const/16 v2, 0x16
 
     .line 17
     .line 18
-    invoke-direct {v0, v2, p0}, LSOh;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v2, p0}, LO8i;-><init>(ILjava/lang/Object;)V
 
     .line 19
     .line 20
@@ -1083,7 +1083,7 @@
 
     .line 26
     .line 27
-    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->d(Lio/reactivex/rxjava3/disposables/Disposable;)Z
+    invoke-virtual {v1, v0}, Lio/reactivex/rxjava3/disposables/CompositeDisposable;->b(Lio/reactivex/rxjava3/disposables/Disposable;)Z
 
     .line 28
     .line 29
@@ -1096,7 +1096,7 @@
 
     .line 32
     .line 33
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 34
     .line 35
@@ -1137,7 +1137,7 @@
     .line 2
     .line 3
     .line 4
-    const v0, 0x7f0b03c5
+    const v0, 0x7f0b0451
 
     .line 5
     .line 6
@@ -1158,7 +1158,7 @@
 
     .line 14
     .line 15
-    const v0, 0x7f0b1827
+    const v0, 0x7f0b197b
 
     .line 16
     .line 17
@@ -1179,7 +1179,7 @@
 
     .line 25
     .line 26
-    const v0, 0x7f0b1829
+    const v0, 0x7f0b197d
 
     .line 27
     .line 28
@@ -1200,7 +1200,7 @@
 
     .line 36
     .line 37
-    const v0, 0x7f0b181d
+    const v0, 0x7f0b1971
 
     .line 38
     .line 39
@@ -1221,7 +1221,7 @@
 
     .line 47
     .line 48
-    const v0, 0x7f0b1822
+    const v0, 0x7f0b1976
 
     .line 49
     .line 50
@@ -1242,7 +1242,7 @@
 
     .line 58
     .line 59
-    const v0, 0x7f0b1821
+    const v0, 0x7f0b1975
 
     .line 60
     .line 61
@@ -1263,7 +1263,7 @@
 
     .line 69
     .line 70
-    const v0, 0x7f0b181e
+    const v0, 0x7f0b1972
 
     .line 71
     .line 72
@@ -1284,7 +1284,7 @@
 
     .line 80
     .line 81
-    const v0, 0x7f0b1820
+    const v0, 0x7f0b1974
 
     .line 82
     .line 83
@@ -1305,7 +1305,7 @@
 
     .line 91
     .line 92
-    const v0, 0x7f0b181f
+    const v0, 0x7f0b1973
 
     .line 93
     .line 94
@@ -1326,7 +1326,7 @@
 
     .line 102
     .line 103
-    const v0, 0x7f0b1823
+    const v0, 0x7f0b1977
 
     .line 104
     .line 105
@@ -1347,28 +1347,28 @@
 
     .line 113
     .line 114
-    new-instance v0, LsFa;
+    new-instance v0, LARa;
 
     .line 115
     .line 116
-    sget-object v1, LsL6;->a:LsL6;
+    sget-object v1, LgP6;->a:LgP6;
 
     .line 117
     .line 118
-    invoke-direct {v0}, LrGe;-><init>()V
+    invoke-direct {v0}, LZXe;-><init>()V
 
     .line 119
     .line 120
     .line 121
-    iput-object v1, v0, LsFa;->c:Ljava/util/List;
+    iput-object v1, v0, LARa;->c:Ljava/util/List;
 
     .line 122
     .line 123
-    iput-object v0, p0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->l0:LsFa;
+    iput-object v0, p0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->l0:LARa;
 
     .line 124
     .line 125
-    const v0, 0x7f0b1825
+    const v0, 0x7f0b1979
 
     .line 126
     .line 127
@@ -1388,7 +1388,7 @@
 
     .line 134
     .line 135
-    iget-object v2, p0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->l0:LsFa;
+    iget-object v2, p0, Lcom/snap/lenses/performance/debug/StudioLensDebugView;->l0:LARa;
 
     .line 136
     .line 137
@@ -1396,7 +1396,7 @@
 
     .line 138
     .line 139
-    invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView;->C0(LrGe;)V
+    invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView;->C0(LZXe;)V
 
     .line 140
     .line 141
@@ -1409,7 +1409,7 @@
 
     .line 145
     .line 146
-    const v0, 0x7f0b1824
+    const v0, 0x7f0b1978
 
     .line 147
     .line 148
@@ -1447,7 +1447,7 @@
 
     .line 164
     .line 165
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 166
     .line 167

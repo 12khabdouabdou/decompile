@@ -6,9 +6,10 @@
 //attribute vec4 tangent 2
 //attribute vec2 texture0 3
 //attribute vec2 texture1 4
-//sampler sampler texMainSmpSC 0:13
-//texture texture2D texMain 0:6:0:13
-//texture texture2DArray texMainArrSC 0:17:0:13
+//output vec4 sc_FragData0 0
+//sampler sampler texMainSmpSC 0:15
+//texture texture2D texMain 0:7:0:15
+//texture texture2DArray texMainArrSC 0:19:0:15
 //spec_const bool SC_USE_CLAMP_TO_BORDER_texMain 0 0
 //spec_const bool SC_USE_UV_MIN_MAX_texMain 1 0
 //spec_const bool texMainHasSwappedViews 2 0
@@ -178,13 +179,13 @@ uniform vec2 blurVector;
 out float varClipDistance;
 flat out int varStereoViewID;
 in vec4 position;
-out vec3 varPos;
+out vec4 varPosAndMotion;
 out vec4 varScreenPos;
 out vec2 varScreenTexturePos;
 out vec2 blurCoordinates[7];
-out vec3 varNormal;
+out vec4 varNormalAndMotion;
 out vec4 varTangent;
-out vec4 varPackedTex;
+out vec4 varTex01;
 out vec2 varShadowTex;
 in vec3 normal;
 in vec4 tangent;
@@ -224,7 +225,7 @@ l9_0=l9_1;
 l9_0=position;
 }
 #endif
-varPos=l9_0.xyz;
+varPosAndMotion=vec4(l9_0.x,l9_0.y,l9_0.z,varPosAndMotion.w);
 varScreenPos=l9_0;
 vec2 l9_2=((l9_0.xy/vec2(l9_0.w))*0.5)+vec2(0.5);
 vec2 l9_3;
@@ -293,68 +294,6 @@ blurCoordinates[6]=l9_10-l9_14;
 #undef sc_FramebufferFetch
 #define sc_FramebufferFetch 1
 #endif
-#if defined(GL_ES)||__VERSION__>=420
-#if sc_FragDataCount>=1
-#define sc_DeclareFragData0(StorageQualifier) layout(location=0) StorageQualifier sc_FragmentPrecision vec4 sc_FragData0
-#endif
-#if sc_FragDataCount>=2
-#define sc_DeclareFragData1(StorageQualifier) layout(location=1) StorageQualifier sc_FragmentPrecision vec4 sc_FragData1
-#endif
-#if sc_FragDataCount>=3
-#define sc_DeclareFragData2(StorageQualifier) layout(location=2) StorageQualifier sc_FragmentPrecision vec4 sc_FragData2
-#endif
-#if sc_FragDataCount>=4
-#define sc_DeclareFragData3(StorageQualifier) layout(location=3) StorageQualifier sc_FragmentPrecision vec4 sc_FragData3
-#endif
-#ifndef sc_DeclareFragData0
-#define sc_DeclareFragData0(_) const vec4 sc_FragData0=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData1
-#define sc_DeclareFragData1(_) const vec4 sc_FragData1=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData2
-#define sc_DeclareFragData2(_) const vec4 sc_FragData2=vec4(0.0)
-#endif
-#ifndef sc_DeclareFragData3
-#define sc_DeclareFragData3(_) const vec4 sc_FragData3=vec4(0.0)
-#endif
-#if sc_FramebufferFetch
-#ifdef GL_EXT_shader_framebuffer_fetch
-sc_DeclareFragData0(inout);
-sc_DeclareFragData1(inout);
-sc_DeclareFragData2(inout);
-sc_DeclareFragData3(inout);
-mediump mat4 getFragData() { return mat4(sc_FragData0,sc_FragData1,sc_FragData2,sc_FragData3); }
-#define gl_LastFragData (getFragData())
-#elif defined(GL_ARM_shader_framebuffer_fetch)
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(gl_LastFragColorARM,vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-sc_DeclareFragData0(out);
-sc_DeclareFragData1(out);
-sc_DeclareFragData2(out);
-sc_DeclareFragData3(out);
-mediump mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#endif
-#else
-#ifdef FRAGMENT_SHADER
-#define sc_FragData0 gl_FragData[0]
-#define sc_FragData1 gl_FragData[1]
-#define sc_FragData2 gl_FragData[2]
-#define sc_FragData3 gl_FragData[3]
-#endif
-mat4 getFragData() { return mat4(vec4(0.0),vec4(0.0),vec4(0.0),vec4(0.0)); }
-#define gl_LastFragData (getFragData())
-#if sc_FramebufferFetch
-#error Framebuffer fetch is requested but not supported by this device.
-#endif
-#endif
 #ifndef sc_StereoRenderingMode
 #define sc_StereoRenderingMode 0
 #endif
@@ -397,15 +336,16 @@ uniform vec4 texMainBorderColor;
 uniform mediump sampler2DArray texMainArrSC;
 uniform mediump sampler2D texMain;
 flat in int varStereoViewID;
-in vec2 varShadowTex;
 in float varClipDistance;
+layout(location=0) out vec4 sc_FragData0;
 in vec2 blurCoordinates[7];
-in vec3 varPos;
-in vec3 varNormal;
+in vec4 varPosAndMotion;
+in vec4 varNormalAndMotion;
 in vec4 varTangent;
-in vec4 varPackedTex;
+in vec4 varTex01;
 in vec4 varScreenPos;
 in vec2 varScreenTexturePos;
+in vec2 varShadowTex;
 int sc_GetStereoViewIndex()
 {
 int l9_0;
@@ -629,11 +569,6 @@ l9_0=sc_SampleTextureBias(texMainLayout,texMainGetStereoViewIndex(),uv,false,mat
 #endif
 return l9_0;
 }
-void sc_writeFragData0Internal(vec4 col,float zero,int cacheConst)
-{
-col.x+=zero*float(cacheConst);
-sc_FragData0=col;
-}
 void main()
 {
 #if ((sc_StereoRenderingMode==1)&&(sc_StereoRendering_IsClipDistanceEnabled==0))
@@ -644,6 +579,26 @@ discard;
 }
 }
 #endif
-sc_writeFragData0Internal((((sampleMainTex(blurCoordinates[0])*0.137023)+((sampleMainTex(blurCoordinates[1])+sampleMainTex(blurCoordinates[2]))*0.239337))+((sampleMainTex(blurCoordinates[3])+sampleMainTex(blurCoordinates[4]))*0.13944))+((sampleMainTex(blurCoordinates[5])+sampleMainTex(blurCoordinates[6]))*0.052710999),sc_UniformConstants.x,sc_ShaderCacheConstant);
+vec4 l9_0=sampleMainTex(blurCoordinates[0]);
+vec4 l9_1=sampleMainTex(blurCoordinates[1]);
+vec4 l9_2=sampleMainTex(blurCoordinates[2]);
+vec4 l9_3=sampleMainTex(blurCoordinates[3]);
+vec4 l9_4=sampleMainTex(blurCoordinates[4]);
+vec4 l9_5=sampleMainTex(blurCoordinates[5]);
+vec4 l9_6=sampleMainTex(blurCoordinates[6]);
+vec4 l9_7=(((l9_0*0.137023)+((l9_1+l9_2)*0.239337))+((l9_3+l9_4)*0.13944))+((l9_5+l9_6)*0.052710999);
+vec4 l9_8;
+#if (sc_ShaderCacheConstant!=0)
+{
+vec4 l9_9=l9_7;
+l9_9.x=l9_7.x+(sc_UniformConstants.x*float(sc_ShaderCacheConstant));
+l9_8=l9_9;
+}
+#else
+{
+l9_8=l9_7;
+}
+#endif
+sc_FragData0=l9_8;
 }
 #endif // #elif defined FRAGMENT_SHADER // #if defined VERTEX_SHADER

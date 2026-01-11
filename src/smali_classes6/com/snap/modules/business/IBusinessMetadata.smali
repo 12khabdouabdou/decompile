@@ -1,10 +1,10 @@
 .class public final Lcom/snap/modules/business/IBusinessMetadata;
-.super Lcom/snap/composer/utils/b;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
 # annotations
-.annotation runtime LDu3;
+.annotation runtime LHx3;
     propertyReplacements = ""
     schema = "\'pageWorkflow\':r?:\'[0]\',\'pageWorkflowData\':s?,\'pageDetail\':s?,\'profileId\':s?,\'organizationId\':s?,\'adAccountId\':s?,\'adId\':s?"
     typeReferences = {
@@ -94,29 +94,22 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)V
-    .locals 0
+.method public final a()V
+    .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/snap/modules/business/IBusinessMetadata;->_adAccountId:Ljava/lang/String;
+    const-string v0, "PromoteButtonV2"
 
     .line 2
     .line 3
+    iput-object v0, p0, Lcom/snap/modules/business/IBusinessMetadata;->_pageDetail:Ljava/lang/String;
+
+    .line 4
+    .line 5
     return-void
 .end method
 
-.method public final b(Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iput-object p1, p0, Lcom/snap/modules/business/IBusinessMetadata;->_pageDetail:Ljava/lang/String;
-
-    .line 2
-    .line 3
-    return-void
-.end method
-
-.method public final c(Lcom/snap/modules/business/BusinessPageWorkflow;)V
+.method public final b(Lcom/snap/modules/business/BusinessPageWorkflow;)V
     .locals 0
 
     .line 1
@@ -127,22 +120,18 @@
     return-void
 .end method
 
-.method public final d()V
-    .locals 1
+.method public final c(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    const-string v0, ""
+    iput-object p1, p0, Lcom/snap/modules/business/IBusinessMetadata;->_pageWorkflowData:Ljava/lang/String;
 
     .line 2
     .line 3
-    iput-object v0, p0, Lcom/snap/modules/business/IBusinessMetadata;->_pageWorkflowData:Ljava/lang/String;
-
-    .line 4
-    .line 5
     return-void
 .end method
 
-.method public final e(Ljava/lang/String;)V
+.method public final d(Ljava/lang/String;)V
     .locals 0
 
     .line 1

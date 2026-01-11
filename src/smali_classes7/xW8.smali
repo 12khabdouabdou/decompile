@@ -1,125 +1,51 @@
-.class public abstract LxW8;
-.super Ljava/lang/Object;
+.class public final LxW8;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'isSCPlusUser\':b,\'isCurrentUserHomeSet\':b,\'homeImageLight\':s?,\'homeImageDark\':s?"
+    typeReferences = {}
+.end annotation
+
+
+# instance fields
+.field private _homeImageDark:Ljava/lang/String;
+
+.field private _homeImageLight:Ljava/lang/String;
+
+.field private _isCurrentUserHomeSet:Z
+
+.field private _isSCPlusUser:Z
+
+
 # direct methods
-.method public static a(Lcom/snap/music/core/composer/IMusicPillActionHandler;Lcom/snap/composer/utils/ComposerMarshaller;)I
-    .locals 2
+.method public constructor <init>(ZZLjava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    sget-object v0, LzB3;->n:LyB3;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 4
+    iput-boolean p1, p0, LxW8;->_isSCPlusUser:Z
+
     .line 5
     .line 6
-    sget-object v0, LyB3;->b:LzB3;
+    iput-boolean p2, p0, LxW8;->_isCurrentUserHomeSet:Z
 
     .line 7
     .line 8
-    const-class v1, Lcom/snap/music/core/composer/IMusicPillActionHandler;
+    iput-object p3, p0, LxW8;->_homeImageLight:Ljava/lang/String;
 
     .line 9
     .line 10
-    invoke-interface {v0, v1, p1, p0}, LzB3;->marshallObject(Ljava/lang/Class;Lcom/snap/composer/utils/ComposerMarshaller;Ljava/lang/Object;)I
+    iput-object p4, p0, LxW8;->_homeImageDark:Ljava/lang/String;
 
     .line 11
     .line 12
-    .line 13
-    move-result p0
-
-    .line 14
-    return p0
-.end method
-
-.method public static pickRecommendation(Lcom/snap/music/core/composer/IMusicPillActionHandler;Lcom/snap/music/core/composer/PickerSelectedTrack;)V
-    .locals 0
-    .annotation runtime LUy3;
-    .end annotation
-
-    .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
-
-    .line 2
-    .line 3
-    const-string p1, "Unimplemented method"
-
-    .line 4
-    .line 5
-    invoke-direct {p0, p1}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p0
-.end method
-
-.method public static pickToAddSound(Lcom/snap/music/core/composer/IMusicPillActionHandler;)V
-    .locals 1
-    .annotation runtime LUy3;
-    .end annotation
-
-    .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
-
-    .line 2
-    .line 3
-    const-string v0, "Unimplemented method"
-
-    .line 4
-    .line 5
-    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p0
-.end method
-
-.method public static presentScrubber(Lcom/snap/music/core/composer/IMusicPillActionHandler;)V
-    .locals 1
-    .annotation runtime LUy3;
-    .end annotation
-
-    .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
-
-    .line 2
-    .line 3
-    const-string v0, "Unimplemented method"
-
-    .line 4
-    .line 5
-    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p0
-.end method
-
-.method public static removeSound(Lcom/snap/music/core/composer/IMusicPillActionHandler;)V
-    .locals 1
-    .annotation runtime LUy3;
-    .end annotation
-
-    .line 1
-    new-instance p0, Lcom/snap/composer/exceptions/ComposerException;
-
-    .line 2
-    .line 3
-    const-string v0, "Unimplemented method"
-
-    .line 4
-    .line 5
-    invoke-direct {p0, v0}, Lcom/snap/composer/exceptions/ComposerException;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    throw p0
+    return-void
 .end method

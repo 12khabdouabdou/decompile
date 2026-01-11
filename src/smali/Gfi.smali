@@ -1,18 +1,28 @@
 .class public final LGfi;
-.super Ljava/lang/Object;
+.super Lcom/snap/composer/utils/a;
 .source "SourceFile"
 
 
+# annotations
+.annotation runtime LHx3;
+    propertyReplacements = ""
+    schema = "\'storyId\':s,\'storyData\':t,\'type\':r<e>:\'[0]\'"
+    typeReferences = {
+        Lcom/snap/modules/sendflow_api/StoryType;
+    }
+.end annotation
+
+
 # instance fields
-.field private final a:Lql7;
-    .annotation runtime Lcom/google/gson/annotations/SerializedName;
-        value = "a"
-    .end annotation
-.end field
+.field private _storyData:[B
+
+.field private _storyId:Ljava/lang/String;
+
+.field private _type:Lcom/snap/modules/sendflow_api/StoryType;
 
 
 # direct methods
-.method public constructor <init>(Lql7;)V
+.method public constructor <init>(Ljava/lang/String;[BLcom/snap/modules/sendflow_api/StoryType;)V
     .locals 0
 
     .line 1
@@ -21,140 +31,17 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, LGfi;->a:Lql7;
+    iput-object p1, p0, LGfi;->_storyId:Ljava/lang/String;
 
     .line 5
     .line 6
+    iput-object p2, p0, LGfi;->_storyData:[B
+
+    .line 7
+    .line 8
+    iput-object p3, p0, LGfi;->_type:Lcom/snap/modules/sendflow_api/StoryType;
+
+    .line 9
+    .line 10
     return-void
-.end method
-
-
-# virtual methods
-.method public final a()Lql7;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LGfi;->a:Lql7;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x1
-
-    .line 2
-    if-ne p0, p1, :cond_0
-
-    .line 3
-    .line 4
-    return v0
-
-    .line 5
-    :cond_0
-    instance-of v1, p1, LGfi;
-
-    .line 6
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    if-nez v1, :cond_1
-
-    .line 9
-    .line 10
-    return v2
-
-    .line 11
-    :cond_1
-    check-cast p1, LGfi;
-
-    .line 12
-    .line 13
-    iget-object v1, p0, LGfi;->a:Lql7;
-
-    .line 14
-    .line 15
-    iget-object p1, p1, LGfi;->a:Lql7;
-
-    .line 16
-    .line 17
-    if-eq v1, p1, :cond_2
-
-    .line 18
-    .line 19
-    return v2
-
-    .line 20
-    :cond_2
-    return v0
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, LGfi;->a:Lql7;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    return v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, LGfi;->a:Lql7;
-
-    .line 2
-    .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 4
-    .line 5
-    const-string v2, "SyncSuggestionsDurableJobMetadata(source="
-
-    .line 6
-    .line 7
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
-
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v0, ")"
-
-    .line 14
-    .line 15
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v0
-
-    .line 22
-    return-object v0
 .end method

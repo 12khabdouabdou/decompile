@@ -40,7 +40,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ILHr5;)V
+.method public synthetic constructor <init>(Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ILex5;)V
     .locals 1
 
     and-int/lit8 p7, p6, 0x2
@@ -243,7 +243,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopsStickerQuery;->userCustomizedText:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -274,7 +274,7 @@
 
     iget-object v3, p1, Lapp/aifactory/sdk/api/model/BloopsStickerQuery;->velocity:Ljava/lang/String;
 
-    invoke-static {v1, v3}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -287,7 +287,7 @@
 
     iget-object p1, p1, Lapp/aifactory/sdk/api/model/BloopsStickerQuery;->temperature:Ljava/lang/String;
 
-    invoke-static {v1, p1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

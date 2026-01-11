@@ -3,73 +3,154 @@
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/Object;)Ljava/lang/Object;
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
+# direct methods
+.method public static a(Landroid/app/Notification$Builder;Landroid/app/Notification$Action;)Landroid/app/Notification$Builder;
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->addAction(Landroid/app/Notification$Action;)Landroid/app/Notification$Builder;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static b(Landroid/app/Notification$Action$Builder;Landroid/os/Bundle;)Landroid/app/Notification$Action$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Action$Builder;->addExtras(Landroid/os/Bundle;)Landroid/app/Notification$Action$Builder;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static c(Landroid/app/Notification$Action$Builder;Landroid/app/RemoteInput;)Landroid/app/Notification$Action$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Action$Builder;->addRemoteInput(Landroid/app/RemoteInput;)Landroid/app/Notification$Action$Builder;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static d(Landroid/app/Notification$Action$Builder;)Landroid/app/Notification$Action;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/app/Notification$Action$Builder;->build()Landroid/app/Notification$Action;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static e(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)Landroid/app/Notification$Action$Builder;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/app/Notification$Action$Builder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0, p1, p2}, Landroid/app/Notification$Action$Builder;-><init>(ILjava/lang/CharSequence;Landroid/app/PendingIntent;)V
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object v1
-
-    .line 10
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v1
-
-    .line 14
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 15
-    .line 16
-    .line 17
-    const/16 v1, 0x40
-
-    .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    .line 20
-    .line 21
-    .line 22
-    invoke-static {p0}, Lsc5;->s0(Ljava/lang/Object;)Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v1
-
-    .line 26
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v0
-
-    .line 33
     return-object v0
+.end method
+
+.method public static f(Landroid/app/Notification;)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0}, Landroid/app/Notification;->getGroup()Ljava/lang/String;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static g(Landroid/app/Notification$Builder;Ljava/lang/String;)Landroid/app/Notification$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setGroup(Ljava/lang/String;)Landroid/app/Notification$Builder;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static h(Landroid/app/Notification$Builder;Z)Landroid/app/Notification$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setGroupSummary(Z)Landroid/app/Notification$Builder;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static i(Landroid/app/Notification$Builder;Z)Landroid/app/Notification$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setLocalOnly(Z)Landroid/app/Notification$Builder;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
+.end method
+
+.method public static j(Landroid/app/Notification$Builder;Ljava/lang/String;)Landroid/app/Notification$Builder;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/app/Notification$Builder;->setSortKey(Ljava/lang/String;)Landroid/app/Notification$Builder;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    return-object p0
 .end method

@@ -13,7 +13,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p0}, LZ2c;->d(Landroidx/multidex/MultiDexApplication;)V
+    invoke-static {p0}, LNhc;->d(Landroidx/multidex/MultiDexApplication;)V
 
     .line 5
     .line 6

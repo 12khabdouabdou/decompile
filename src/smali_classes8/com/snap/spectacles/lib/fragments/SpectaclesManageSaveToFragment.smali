@@ -3,15 +3,15 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lj8h;
+.implements LVth;
 
 
 # static fields
-.field public static final M0:LcSa;
+.field public static final M0:LL4b;
 
-.field public static final N0:Lcqc;
+.field public static final N0:LxFc;
 
-.field public static final O0:LZpc;
+.field public static final O0:LuFc;
 
 
 # instance fields
@@ -37,30 +37,30 @@
 
 .field public final K0:Ljava/util/LinkedHashMap;
 
-.field public final L0:LXfi;
+.field public final L0:LREi;
 
-.field public y0:Li8h;
+.field public y0:LUth;
 
-.field public z0:LTqc;
+.field public z0:LmGc;
 
 
 # direct methods
 .method static constructor <clinit>()V
-    .locals 11
+    .locals 12
 
     .line 1
-    new-instance v0, LcSa;
+    new-instance v0, LL4b;
 
     .line 2
     .line 3
-    sget-object v1, Ly5h;->Z:Ly5h;
+    sget-object v1, Lqrh;->Z:Lqrh;
 
     .line 4
     .line 5
-    const/4 v8, 0x0
+    const/4 v9, 0x0
 
     .line 6
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
     .line 7
     const-string v2, "SpectaclesManageSaveToFragment"
@@ -82,50 +82,53 @@
     const/4 v7, 0x0
 
     .line 14
-    const/16 v10, 0x3ffc
+    const/4 v8, 0x0
 
     .line 15
-    .line 16
-    invoke-direct/range {v0 .. v10}, LcSa;-><init>(Lan0;Ljava/lang/String;ZZZLlq7;Ljava/lang/String;IZI)V
+    const/16 v11, 0x7ffc
 
+    .line 16
     .line 17
+    invoke-direct/range {v0 .. v11}, LL4b;-><init>(Lrp0;Ljava/lang/String;ZZZLsv7;Ljava/lang/String;IZLNKj;I)V
+
     .line 18
     .line 19
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->M0:LcSa;
-
     .line 20
-    .line 21
-    sget-object v1, LW5d;->N:Lm7b;
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->M0:LL4b;
 
+    .line 21
     .line 22
+    sget-object v1, Luld;->O:LtOc;
+
     .line 23
+    .line 24
     const/4 v2, 0x1
 
-    .line 24
-    invoke-static {v1, v0, v2}, Lm7b;->i(LW5d;LcSa;Z)Lcqc;
-
     .line 25
+    invoke-static {v1, v0, v2}, LJea;->h(Luld;LL4b;Z)LxFc;
+
     .line 26
     .line 27
-    move-result-object v0
-
     .line 28
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->N0:Lcqc;
+    move-result-object v0
 
     .line 29
-    .line 30
-    invoke-virtual {v0}, Lcqc;->p()LZpc;
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->N0:LxFc;
 
+    .line 30
     .line 31
+    invoke-virtual {v0}, LxFc;->p()LuFc;
+
     .line 32
     .line 33
+    .line 34
     move-result-object v0
 
-    .line 34
-    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->O0:LZpc;
-
     .line 35
+    sput-object v0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->O0:LuFc;
+
     .line 36
+    .line 37
     return-void
 .end method
 
@@ -164,24 +167,24 @@
 
     .line 17
     .line 18
-    sget-object v0, LX4h;->o0:LX4h;
+    sget-object v0, LRdh;->r0:LRdh;
 
     .line 19
     .line 20
-    new-instance v1, LXfi;
+    new-instance v1, LREi;
 
     .line 21
     .line 22
-    invoke-direct {v1, v0}, LXfi;-><init>(Lkotlin/jvm/functions/Function0;)V
+    invoke-direct {v1, v0}, LREi;-><init>(Lkotlin/jvm/functions/Function0;)V
 
     .line 23
     .line 24
     .line 25
-    iput-object v1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->L0:LXfi;
+    iput-object v1, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->L0:LREi;
 
     .line 26
     .line 27
-    sget-object v0, Ly5h;->Z:Ly5h;
+    sget-object v0, Lqrh;->Z:Lqrh;
 
     .line 28
     .line 29
@@ -199,7 +202,7 @@
     .line 35
     .line 36
     .line 37
-    sget-object v0, Lrn0;->a:Lrn0;
+    sget-object v0, LJp0;->a:LJp0;
 
     .line 38
     .line 39
@@ -208,94 +211,11 @@
 
 
 # virtual methods
-.method public final A1(Landroid/content/Context;)V
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->A1(Landroid/content/Context;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()Li8h;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    if-eqz v0, :cond_0
-
-    .line 13
-    .line 14
-    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
-
-    .line 15
-    .line 16
-    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    if-eqz v0, :cond_0
-
-    .line 21
-    .line 22
-    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    if-nez v0, :cond_1
-
-    .line 27
-    .line 28
-    :cond_0
-    const-string v0, ""
-
-    .line 29
-    .line 30
-    :cond_1
-    iput-object v0, p1, Li8h;->f0:Ljava/lang/String;
-
-    .line 31
-    .line 32
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()Li8h;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p1
-
-    .line 36
-    invoke-virtual {p1, p0}, Li8h;->c3(Lj8h;)V
-
-    .line 37
-    .line 38
-    .line 39
-    return-void
-.end method
-
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 3
 
     .line 1
-    const p3, 0x7f0e03f6
+    const p3, 0x7f0e041a
 
     .line 2
     .line 3
@@ -311,7 +231,7 @@
     move-result-object p1
 
     .line 9
-    const p2, 0x7f0b1303
+    const p2, 0x7f0b1439
 
     .line 10
     .line 11
@@ -332,7 +252,7 @@
 
     .line 19
     .line 20
-    const p2, 0x7f0b1300
+    const p2, 0x7f0b1436
 
     .line 21
     .line 22
@@ -353,7 +273,7 @@
 
     .line 30
     .line 31
-    const p2, 0x7f0b16c2
+    const p2, 0x7f0b1803
 
     .line 32
     .line 33
@@ -374,7 +294,7 @@
 
     .line 41
     .line 42
-    const p2, 0x7f0b12ff
+    const p2, 0x7f0b1435
 
     .line 43
     .line 44
@@ -395,7 +315,7 @@
 
     .line 52
     .line 53
-    const p2, 0x7f0b12fa
+    const p2, 0x7f0b1430
 
     .line 54
     .line 55
@@ -416,7 +336,7 @@
 
     .line 63
     .line 64
-    const p2, 0x7f0b12fe
+    const p2, 0x7f0b1434
 
     .line 65
     .line 66
@@ -437,7 +357,7 @@
 
     .line 74
     .line 75
-    const p2, 0x7f0b12fc
+    const p2, 0x7f0b1432
 
     .line 76
     .line 77
@@ -458,7 +378,7 @@
 
     .line 85
     .line 86
-    const p2, 0x7f0b12fb
+    const p2, 0x7f0b1431
 
     .line 87
     .line 88
@@ -479,7 +399,7 @@
 
     .line 96
     .line 97
-    const p2, 0x7f0b12fd
+    const p2, 0x7f0b1433
 
     .line 98
     .line 99
@@ -531,7 +451,7 @@
 
     .line 122
     .line 123
-    const v0, 0x7f0b16c1
+    const v0, 0x7f0b1802
 
     .line 124
     .line 125
@@ -612,7 +532,7 @@
 
     .line 160
     .line 161
-    invoke-static {p2, v1}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, v1}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 162
     .line 163
@@ -624,7 +544,7 @@
 
     .line 166
     .line 167
-    const p2, 0x7f133477
+    const p2, 0x7f13373f
 
     .line 168
     .line 169
@@ -633,7 +553,7 @@
 
     .line 171
     :cond_2
-    const p2, 0x7f130c04
+    const p2, 0x7f130c87
 
     .line 172
     .line 173
@@ -645,7 +565,7 @@
     .line 176
     .line 177
     :cond_3
-    const p2, 0x7f0b1304
+    const p2, 0x7f0b143a
 
     .line 178
     .line 179
@@ -658,7 +578,7 @@
     move-result-object p2
 
     .line 184
-    const v0, 0x7f0b1301
+    const v0, 0x7f0b1437
 
     .line 185
     .line 186
@@ -671,14 +591,14 @@
     move-result-object v0
 
     .line 191
-    new-instance v1, Lf8h;
+    new-instance v1, LRth;
 
     .line 192
     .line 193
     const/4 v2, 0x0
 
     .line 194
-    invoke-direct {v1, p0, v2}, Lf8h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;I)V
+    invoke-direct {v1, p0, v2}, LRth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;I)V
 
     .line 195
     .line 196
@@ -688,14 +608,14 @@
     .line 198
     .line 199
     .line 200
-    new-instance p2, Lf8h;
+    new-instance p2, LRth;
 
     .line 201
     .line 202
     const/4 v1, 0x1
 
     .line 203
-    invoke-direct {p2, p0, v1}, Lf8h;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;I)V
+    invoke-direct {p2, p0, v1}, LRth;-><init>(Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;I)V
 
     .line 204
     .line 205
@@ -709,7 +629,7 @@
 
     .line 210
     .line 211
-    sget-object v0, LUib;->c:LUib;
+    sget-object v0, Lvwb;->c:Lvwb;
 
     .line 212
     .line 213
@@ -726,7 +646,7 @@
     .line 218
     .line 219
     .line 220
-    sget-object v0, LTib;->c:LTib;
+    sget-object v0, Luwb;->c:Luwb;
 
     .line 221
     .line 222
@@ -743,7 +663,7 @@
     .line 227
     .line 228
     .line 229
-    sget-object v0, LZib;->c:LZib;
+    sget-object v0, LAwb;->c:LAwb;
 
     .line 230
     .line 231
@@ -760,7 +680,7 @@
     .line 236
     .line 237
     .line 238
-    sget-object v0, LWib;->c:LWib;
+    sget-object v0, Lxwb;->c:Lxwb;
 
     .line 239
     .line 240
@@ -777,7 +697,7 @@
     .line 245
     .line 246
     .line 247
-    sget-object v0, LVib;->c:LVib;
+    sget-object v0, Lwwb;->c:Lwwb;
 
     .line 248
     .line 249
@@ -794,7 +714,7 @@
     .line 254
     .line 255
     .line 256
-    sget-object v0, LYib;->c:LYib;
+    sget-object v0, Lzwb;->c:Lzwb;
 
     .line 257
     .line 258
@@ -868,14 +788,14 @@
 
     .line 292
     .line 293
-    new-instance v0, Lk6h;
+    new-instance v0, LWlh;
 
     .line 294
     .line 295
-    const/4 v1, 0x2
+    const/4 v1, 0x7
 
     .line 296
-    invoke-direct {v0, v1, p0}, Lk6h;-><init>(ILjava/lang/Object;)V
+    invoke-direct {v0, v1, p0}, LWlh;-><init>(ILjava/lang/Object;)V
 
     .line 297
     .line 298
@@ -884,7 +804,7 @@
 
     .line 300
     .line 301
-    invoke-static {p3, v0, v1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+    invoke-static {p3, v0, v1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
 
     .line 302
     .line 303
@@ -901,7 +821,7 @@
 
     .line 307
     .line 308
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 309
     .line 310
@@ -914,7 +834,7 @@
 
     .line 313
     .line 314
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 315
     .line 316
@@ -927,7 +847,7 @@
 
     .line 319
     .line 320
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 321
     .line 322
@@ -940,7 +860,7 @@
 
     .line 325
     .line 326
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 327
     .line 328
@@ -953,7 +873,7 @@
 
     .line 331
     .line 332
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 333
     .line 334
@@ -966,7 +886,7 @@
 
     .line 337
     .line 338
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 339
     .line 340
@@ -974,11 +894,11 @@
     throw p3
 .end method
 
-.method public final W1()Li8h;
+.method public final W1()LUth;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->y0:Li8h;
+    iget-object v0, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->y0:LUth;
 
     .line 2
     .line 3
@@ -994,7 +914,7 @@
 
     .line 7
     .line 8
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -1005,7 +925,7 @@
     throw v0
 .end method
 
-.method public final X1(ZLajb;ZLh4h;)V
+.method public final X1(ZLBwb;ZLZph;)V
     .locals 3
 
     .line 1
@@ -1042,7 +962,7 @@
     .line 16
     .line 17
     .line 18
-    instance-of p4, p4, LAU2;
+    instance-of p4, p4, LfX2;
 
     .line 19
     .line 20
@@ -1135,11 +1055,11 @@
     move-result-object p1
 
     .line 61
-    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->L0:LXfi;
+    iget-object p3, p0, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->L0:LREi;
 
     .line 62
     .line 63
-    invoke-virtual {p3}, LXfi;->getValue()Ljava/lang/Object;
+    invoke-virtual {p3}, LREi;->getValue()Ljava/lang/Object;
 
     .line 64
     .line 65
@@ -1217,7 +1137,7 @@
     move-result-object p4
 
     .line 102
-    check-cast p4, Lajb;
+    check-cast p4, LBwb;
 
     .line 103
     .line 104
@@ -1233,7 +1153,7 @@
 
     .line 109
     .line 110
-    invoke-static {p4, p2}, LDq9;->j(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p4, p2}, LDz9;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 111
     .line 112
@@ -1263,7 +1183,7 @@
 
     .line 125
     :cond_2
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 126
     .line 127
@@ -1272,7 +1192,7 @@
 
     .line 129
     :cond_3
-    invoke-static {v0}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {v0}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 130
     .line 131
@@ -1289,7 +1209,7 @@
 
     .line 135
     .line 136
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 137
     .line 138
@@ -1302,7 +1222,7 @@
 
     .line 141
     .line 142
-    invoke-static {p1}, LDq9;->T(Ljava/lang/String;)V
+    invoke-static {p1}, LDz9;->i0(Ljava/lang/String;)V
 
     .line 143
     .line 144
@@ -1310,16 +1230,16 @@
     throw v1
 .end method
 
-.method public final h(LQqc;)V
+.method public final i(LiGc;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->h(LQqc;)V
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->i(LiGc;)V
 
     .line 2
     .line 3
     .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()Li8h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()LUth;
 
     .line 5
     .line 6
@@ -1327,7 +1247,7 @@
     move-result-object p1
 
     .line 8
-    iget-object p1, p1, Li8h;->j0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+    iget-object p1, p1, LUth;->j0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
 
     .line 9
     .line 10
@@ -1339,100 +1259,7 @@
     return-void
 .end method
 
-.method public final w(LQqc;)V
-    .locals 3
-
-    .line 1
-    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->w(LQqc;)V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()Li8h;
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-object p1
-
-    .line 8
-    iget-object v0, p1, Li8h;->m0:LXfi;
-
-    .line 9
-    .line 10
-    invoke-virtual {v0}, LXfi;->getValue()Ljava/lang/Object;
-
-    .line 11
-    .line 12
-    .line 13
-    move-result-object v0
-
-    .line 14
-    check-cast v0, Lv3h;
-
-    .line 15
-    .line 16
-    invoke-virtual {v0}, Lv3h;->S1()Lj5h;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    invoke-virtual {v0}, Lj5h;->e()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    iget-object v1, p1, Li8h;->l0:LBre;
-
-    .line 25
-    .line 26
-    invoke-virtual {v1}, LBre;->d()LF06;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v1
-
-    .line 30
-    invoke-static {v0, v0, v1}, LEU0;->s(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;LF06;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v0
-
-    .line 34
-    new-instance v1, Lg8h;
-
-    .line 35
-    .line 36
-    const/4 v2, 0x2
-
-    .line 37
-    invoke-direct {v1, p1, v2}, Lg8h;-><init>(Li8h;I)V
-
-    .line 38
-    .line 39
-    .line 40
-    iget-object p1, p1, Li8h;->j0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
-
-    .line 41
-    .line 42
-    invoke-static {v0, v1, p1}, LLZj;->p0(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
-
-    .line 43
-    .line 44
-    .line 45
-    return-void
-.end method
-
-.method public final w1()V
+.method public final u1()V
     .locals 1
 
     .line 1
@@ -1445,7 +1272,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()Li8h;
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()LUth;
 
     .line 7
     .line 8
@@ -1453,10 +1280,186 @@
     move-result-object v0
 
     .line 10
-    invoke-virtual {v0}, Li8h;->C1()V
+    invoke-virtual {v0}, LUth;->D1()V
 
     .line 11
     .line 12
     .line 13
+    return-void
+.end method
+
+.method public final v(LiGc;)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/MainPageFragment;->v(LiGc;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()LUth;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    iget-object v0, p1, LUth;->m0:LREi;
+
+    .line 9
+    .line 10
+    invoke-virtual {v0}, LREi;->getValue()Ljava/lang/Object;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v0
+
+    .line 14
+    check-cast v0, Lkph;
+
+    .line 15
+    .line 16
+    invoke-virtual {v0}, Lkph;->f2()Lbrh;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    invoke-virtual {v0}, Lbrh;->e()Lio/reactivex/rxjava3/subjects/BehaviorSubject;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    iget-object v1, p1, LUth;->l0:LnJe;
+
+    .line 25
+    .line 26
+    invoke-virtual {v1}, LnJe;->d()LA36;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v1
+
+    .line 30
+    invoke-static {v0, v0, v1}, LJF0;->o(Lio/reactivex/rxjava3/subjects/BehaviorSubject;Lio/reactivex/rxjava3/subjects/BehaviorSubject;LA36;)Lio/reactivex/rxjava3/internal/operators/observable/ObservableSubscribeOn;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    new-instance v1, LSth;
+
+    .line 35
+    .line 36
+    const/4 v2, 0x2
+
+    .line 37
+    invoke-direct {v1, p1, v2}, LSth;-><init>(LUth;I)V
+
+    .line 38
+    .line 39
+    .line 40
+    iget-object p1, p1, LUth;->j0:Lio/reactivex/rxjava3/disposables/CompositeDisposable;
+
+    .line 41
+    .line 42
+    invoke-static {v0, v1, p1}, LOIc;->I(Lio/reactivex/rxjava3/core/Observable;Lio/reactivex/rxjava3/functions/Consumer;Lio/reactivex/rxjava3/disposables/DisposableContainer;)Lio/reactivex/rxjava3/disposables/Disposable;
+
+    .line 43
+    .line 44
+    .line 45
+    return-void
+.end method
+
+.method public final y1(Landroid/content/Context;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Lcom/snapchat/deck/fragment/DelegateMainPageFragment;->y1(Landroid/content/Context;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()LUth;
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-object p1
+
+    .line 8
+    invoke-virtual {p0}, Landroidx/fragment/app/g;->getArguments()Landroid/os/Bundle;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    const-string v1, "ARG_KEY_DEVICE_SERIAL_NUMBER"
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getCharSequence(Ljava/lang/String;)Ljava/lang/CharSequence;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    if-eqz v0, :cond_0
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    if-nez v0, :cond_1
+
+    .line 27
+    .line 28
+    :cond_0
+    const-string v0, ""
+
+    .line 29
+    .line 30
+    :cond_1
+    iput-object v0, p1, LUth;->f0:Ljava/lang/String;
+
+    .line 31
+    .line 32
+    invoke-virtual {p0}, Lcom/snap/spectacles/lib/fragments/SpectaclesManageSaveToFragment;->W1()LUth;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p1
+
+    .line 36
+    invoke-virtual {p1, p0}, LUth;->h3(LVth;)V
+
+    .line 37
+    .line 38
+    .line 39
     return-void
 .end method

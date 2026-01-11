@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final w0:LIvk;
+.field public final w0:LhUk;
 
 
 # direct methods
-.method public constructor <init>(LIvk;)V
+.method public constructor <init>(LhUk;)V
     .locals 0
 
     .line 1
@@ -17,7 +17,7 @@
     .line 2
     .line 3
     .line 4
-    iput-object p1, p0, Lcom/snap/composer/people/webview/WebViewFragment;->w0:LIvk;
+    iput-object p1, p0, Lcom/snap/composer/people/webview/WebViewFragment;->w0:LhUk;
 
     .line 5
     .line 6
@@ -26,11 +26,11 @@
 
 
 # virtual methods
-.method public final J0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public final G0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
     .locals 6
 
     .line 1
-    new-instance v0, LbO0;
+    new-instance v0, LfR0;
 
     .line 2
     .line 3
@@ -42,11 +42,11 @@
     move-result-object p1
 
     .line 7
-    sget-object p2, LMA8;->a:LMA8;
+    sget-object p2, LNH8;->a:LNH8;
 
     .line 8
     .line 9
-    invoke-direct {v0, p1, p2}, LbO0;-><init>(Landroid/content/Context;LNA8;)V
+    invoke-direct {v0, p1, p2}, LfR0;-><init>(Landroid/content/Context;LOH8;)V
 
     .line 10
     .line 11
@@ -166,11 +166,11 @@
     .line 73
     .line 74
     .line 75
-    iget-object p2, p0, Lcom/snap/composer/people/webview/WebViewFragment;->w0:LIvk;
+    iget-object p2, p0, Lcom/snap/composer/people/webview/WebViewFragment;->w0:LhUk;
 
     .line 76
     .line 77
-    instance-of p3, p2, LpWj;
+    instance-of p3, p2, Lhmk;
 
     .line 78
     .line 79
@@ -178,11 +178,11 @@
 
     .line 80
     .line 81
-    check-cast p2, LpWj;
+    check-cast p2, Lhmk;
 
     .line 82
     .line 83
-    iget-object p2, p2, LpWj;->a:Ljava/lang/String;
+    iget-object p2, p2, Lhmk;->b:Ljava/lang/String;
 
     .line 84
     .line 85
@@ -195,7 +195,7 @@
 
     .line 89
     :cond_0
-    instance-of p3, p2, LoWj;
+    instance-of p3, p2, Lgmk;
 
     .line 90
     .line 91
@@ -203,11 +203,11 @@
 
     .line 92
     .line 93
-    check-cast p2, LoWj;
+    check-cast p2, Lgmk;
 
     .line 94
     .line 95
-    iget-object v2, p2, LoWj;->a:Ljava/lang/String;
+    iget-object v2, p2, Lgmk;->b:Ljava/lang/String;
 
     .line 96
     .line 97
